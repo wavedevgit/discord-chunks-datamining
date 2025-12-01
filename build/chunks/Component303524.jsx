@@ -2,27 +2,25 @@
 /** chunk id: 303524, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
-  Chunk44315 = require("./44315.js"),
-  Chunk231338 = require("./231338.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk80568 = require("./80568.js");
-let u = 14,
-  d = Chunk231338.Il.BRAND_345;
+let c = 14;
 
-function f(e) {
+function u(e) {
   let {
     className: t
-  } = e, n = (0, s.Sl)(d).hex;
+  } = e;
   return (0, r.jsx)(o.qDn, {
-    className: a()(c.questsIcon, t),
+    className: a()(l.questsIcon, t),
     size: "custom",
-    height: u,
-    width: u,
-    color: n
+    height: c,
+    width: c,
+    color: s.Z.unsafe_rawColors.BRAND_345.css
   })
 }

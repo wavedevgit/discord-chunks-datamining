@@ -2,10 +2,10 @@
 /** chunk id: 81063, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Vh: () => S,
-  f: () => I,
-  hR: () => R,
-  xF: () => T
+  Vh: () => T,
+  f: () => S,
+  hR: () => P,
+  xF: () => I
 }), require("./35282.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -17,25 +17,25 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js");
 let d = "mp",
   f = 36e5,
-  _ = "https://i.scdn.co/image/",
-  p = (e, t, n) => "https://static-cdn.jtvnw.net/previews-ttv/live_user_".concat(e, "-").concat(t, "x").concat(n, ".jpg"),
-  h = /https:\/\/static-cdn\.jtvnw\.net\/previews-ttv\/live_user_(.+)-\{width\}x\{height\}.jpg/,
-  m = e => "https://i.ytimg.com/vi/".concat(e, "/hqdefault_live.jpg"),
+  p = "https://i.scdn.co/image/",
+  _ = (e, t, n) => "https://static-cdn.jtvnw.net/previews-ttv/live_user_".concat(e, "-").concat(t, "x").concat(n, ".jpg"),
+  m = /https:\/\/static-cdn\.jtvnw\.net\/previews-ttv\/live_user_(.+)-\{width\}x\{height\}.jpg/,
+  h = e => "https://i.ytimg.com/vi/".concat(e, "/hqdefault_live.jpg"),
   g = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/hqdefault_live\.jpg/,
   E = {
     [Chunk981631.ABu.SPOTIFY]: {
-      deserialize: e => "".concat(_).concat(encodeURIComponent(e)),
-      serialize: e => e.split(_)[1]
+      deserialize: e => "".concat(p).concat(encodeURIComponent(e)),
+      serialize: e => e.split(p)[1]
     },
     [Chunk981631.ABu.TWITCH]: {
-      deserialize: (e, t) => p(encodeURIComponent(e), t[0], t[1]),
+      deserialize: (e, t) => _(encodeURIComponent(e), t[0], t[1]),
       serialize: e => {
-        let t = e.match(h);
+        let t = e.match(m);
         return null != t ? t[1] : null
       }
     },
     [Chunk981631.ABu.YOUTUBE]: {
-      deserialize: e => m(encodeURIComponent(e)),
+      deserialize: e => h(encodeURIComponent(e)),
       serialize: e => {
         let t = e.match(g);
         return null != t ? t[1] : null
@@ -78,12 +78,12 @@ function v(e) {
   return null == t || y(t.lastUpdated) ? O(e) : Promise.resolve(t)
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = E[e].serialize(t);
   return n ? "".concat(e, ":").concat(n.toString()) : null
 }
 
-function T(e, t, n) {
+function I(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "png";
   if (null != t && t.includes(":")) {
     let [e, r] = t.split(":");
@@ -94,7 +94,7 @@ function T(e, t, n) {
     o = "number" == typeof i ? "?size=".concat((0, c.oO)(i)) : "";
   return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/app-assets/").concat(e, "/").concat(t, ".").concat(r).concat(o) : "".concat((0, a.K0)(), "/applications/").concat(e, "/app-assets/").concat(t, ".").concat(r).concat(o)
 }
-async function S(e) {
+async function T(e) {
   let t = await v(e);
   return null == t ? true : t.assets
 }
@@ -125,7 +125,7 @@ function C(e, t) {
       let i = e[r];
       if (null == i) continue;
       let a = Object.prototype.hasOwnProperty.call(b, i) ? b[i] : true;
-      null != a && (t[r] = I(d, a), n++)
+      null != a && (t[r] = S(d, a), n++)
     }
   return n === e.length
 }
@@ -147,7 +147,7 @@ function N(e, t, n, r) {
   }
   return i
 }
-async function R(e, t) {
+async function P(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 1;
   o.Z.dispatch({
     type: "APPLICATION_ASSETS_FETCH",
@@ -159,12 +159,12 @@ async function R(e, t) {
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r;
-  let a = await S(e);
+  let a = await T(e);
   return (o.Z.dispatch({
     type: "APPLICATION_ASSETS_UPDATE",
     applicationId: e,
     assets: a
-  }), N(t, r, a, n)) ? O(e).then(() => R(e, t, n - 1)) : (o.Z.dispatch({
+  }), N(t, r, a, n)) ? O(e).then(() => P(e, t, n - 1)) : (o.Z.dispatch({
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r)

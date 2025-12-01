@@ -2,7 +2,7 @@
 /** chunk id: 260430, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./472816.js"), require("./794429.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,24 +17,24 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk282320 = require("./282320.js");
 
-function p(e) {
+function _(e) {
   let {
     text: t,
     error: n,
     isFake: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: _.scope,
+    className: p.scope,
     children: [i ? (0, r.jsx)(c.k$p, {
       size: "md",
       color: "currentColor",
-      className: a()(_.icon, _.fakeScopeIcon)
+      className: a()(p.icon, p.fakeScopeIcon)
     }) : (0, r.jsx)(c.owK, {
       size: "md",
       color: "currentColor",
-      className: a()(_.icon, _.scopeIcon)
+      className: a()(p.icon, p.scopeIcon)
     }), (0, r.jsxs)("div", {
-      className: _.scopeInner,
+      className: p.scopeInner,
       children: [(0, r.jsx)(l.x, {
         variant: "text-md/normal",
         color: i ? "text-muted" : true,
@@ -48,38 +48,38 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   var t;
   let {
     application: n,
     accountScopes: i,
     requestedScopes: l,
-    integrationType: h,
-    errors: m,
+    integrationType: m,
+    errors: h,
     isTrustedName: g = false,
     noDivider: E = false
   } = e, b = (0, u.Z)(() => d.ZW[Math.floor(Math.random() * d.ZW.length)]);
   if (0 === i.length) return null;
   let y = b(),
     O = g ? f.t.PZpY9c : f.t["1Hz+Sl"],
-    v = h === o.Y.USER_INSTALL && l.includes(s.x.APPLICATIONS_COMMANDS);
+    v = m === o.Y.USER_INSTALL && l.includes(s.x.APPLICATIONS_COMMANDS);
   return (0, r.jsxs)("div", {
-    className: a()(_.scopes, E ? _.noDivider : true),
+    className: a()(p.scopes, E ? p.noDivider : true),
     children: [(0, r.jsx)(c.Heading, {
       variant: "heading-sm/normal",
-      className: _.sectionLabel,
+      className: p.sectionLabel,
       children: f.intl.format(O, {
         application: null != (t = null == n ? true : n.name) ? t : ""
       })
     }), i.map(e => (0, d.CI)(e, i).map((t, n) => {
       var i;
-      return (0, r.jsx)(p, {
+      return (0, r.jsx)(_, {
         text: t,
-        error: 0 === n ? null == m || null == (i = m[e]) ? true : i[0] : true
+        error: 0 === n ? null == h || null == (i = h[e]) ? true : i[0] : true
       }, "".concat(e, "-").concat(n))
-    })).flat(), v && (0, r.jsx)(p, {
+    })).flat(), v && (0, r.jsx)(_, {
       text: f.intl.string(f.t.Ls2XRq)
-    }), (0, r.jsx)(p, {
+    }), (0, r.jsx)(_, {
       text: y,
       isFake: true
     })]

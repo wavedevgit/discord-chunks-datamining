@@ -22,10 +22,10 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = new Chunk710845.Z("GatewaySocket"),
-  _ = new Set(["INITIAL_GUILD", "READY"]),
-  p = new Set(["READY", "INITIAL_GUILD"]),
-  h = new Set(["READY", "READY_SUPPLEMENTAL", "RESUMED"]),
-  m = new Set(["READY", "INITIAL_GUILD", "READY_SUPPLEMENTAL", "RESUMED", "VOICE_CHANNEL_SELECT", "VOICE_STATE_UPDATE", "VOICE_SERVER_UPDATE", "RTC_CONNECTION_STATE", "RTC_CONNECTION_VIDEO", "RTC_CONNECTION_CLIENT_CONNECT", "RTC_CONNECTION_PING", "MEDIA_SESSION_JOINED", "MEDIA_ENGINE_PERMISSION", "SESSIONS_REPLACE"]),
+  p = new Set(["INITIAL_GUILD", "READY"]),
+  _ = new Set(["READY", "INITIAL_GUILD"]),
+  m = new Set(["READY", "READY_SUPPLEMENTAL", "RESUMED"]),
+  h = new Set(["READY", "INITIAL_GUILD", "READY_SUPPLEMENTAL", "RESUMED", "VOICE_CHANNEL_SELECT", "VOICE_STATE_UPDATE", "VOICE_SERVER_UPDATE", "RTC_CONNECTION_STATE", "RTC_CONNECTION_VIDEO", "RTC_CONNECTION_CLIENT_CONNECT", "RTC_CONNECTION_PING", "MEDIA_SESSION_JOINED", "MEDIA_ENGINE_PERMISSION", "SESSIONS_REPLACE"]),
   g = {};
 
 function E(e, t) {
@@ -72,7 +72,7 @@ class y {
     this.queue.push(r), this.maybePreload(r) || this.scheduleFlush(t)
   }
   maybePreload(e) {
-    if (this.paused && !_.has(e.type)) returnfalse;
+    if (this.paused && !p.has(e.type)) returnfalse;
     if (0 === e.status) {
       var t;
       let n = null == (t = this.getDispatchHandler(e.type)) ? true : t.preload(e.data);
@@ -86,7 +86,7 @@ class y {
     returnfalse
   }
   scheduleFlush(e) {
-    !this.paused && (p.has(e) ? (this.scheduler.clearWorkTimeout(), this.flush()) : this.scheduler.hasWorkScheduled || this.scheduler.requestWorkTimeout(this.flush), m.has(e) && this.scheduler.markCriticalWorkScheduled())
+    !this.paused && (_.has(e) ? (this.scheduler.clearWorkTimeout(), this.flush()) : this.scheduler.hasWorkScheduled || this.scheduler.requestWorkTimeout(this.flush), h.has(e) && this.scheduler.markCriticalWorkScheduled())
   }
   getDispatchTimings() {
     return g
@@ -115,7 +115,7 @@ class y {
       if (r.ZP.Emitter.batched(() => {
           for (let r = 0; r < e.length; r++) {
             let a = e[r];
-            n = a.type, i = i || h.has(a.type);
+            n = a.type, i = i || m.has(a.type);
             let o = performance.now();
             if (this.dispatchOne(a), l = performance.now() - o, E(a.type, l), b(e, r, t)) {
               s = e.slice(r + 1), null != t && 0 >= t.timeRemaining() && this.scheduler.telemetry.timeTrack(c.JV.TIME_OVER_DEADLINE, t.timeSinceExpiration);

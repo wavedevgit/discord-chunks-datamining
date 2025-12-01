@@ -2,7 +2,7 @@
 /** chunk id: 309739, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,13 +19,13 @@ var Chunk524437 = require("./524437.js"),
   Chunk779334 = require("./779334.js"),
   Chunk85240 = require("./85240.js");
 
-function m(e) {
+function h(e) {
   let {
     className: t
   } = e;
   return (0, r.jsxs)(u.Z, {
     className: t,
-    title: _.intl.string(_.t.Cq98yL),
+    title: p.intl.string(p.t.Cq98yL),
     children: [(0, r.jsx)(b, {}), (0, r.jsx)(a.izJ, {
       gap: 32
     }), (0, r.jsx)(g, {}), (0, r.jsx)(a.izJ, {

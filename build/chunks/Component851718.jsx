@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk10970 = require("./10970.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -92,7 +92,7 @@ class y extends Chunk473749.PureComponent {
     }) : this.props.children
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), p(this, "state", {
       hasError: false
     })
   }
@@ -102,16 +102,16 @@ function O(e) {
   let {
     subscriptions: t,
     updateHeader: n
-  } = e, [a, _] = i.useState({
+  } = e, [a, p] = i.useState({
     route: u.j.HOME
   }), {
-    route: h
+    route: m
   } = a, E = () => {
-    _({
+    p({
       route: u.j.HOME
     })
   }, b = e => {
-    _(p({
+    p(_({
       route: u.j.SWITCH_APP_PLANS
     }, e)), n(f.intl.string(f.t.VFqtkP), E)
   }, [O, v] = i.useState({});
@@ -119,23 +119,23 @@ function O(e) {
     for (let n of t) {
       var e;
       let t = null == (e = n.items[0]) ? true : e.planId;
-      null != t && (v(e => m(p({}, e), {
+      null != t && (v(e => h(_({}, e), {
         [n.id]: c.G.LOADING
       })), (0, s.vY)(t).then(() => {
-        v(e => m(p({}, e), {
+        v(e => h(_({}, e), {
           [n.id]: c.G.DONE
         }))
       }).catch(() => {
-        v(e => m(p({}, e), {
+        v(e => h(_({}, e), {
           [n.id]: c.G.ERROR
         }))
       }))
     }
   }, [t]);
   let {
-    loadState: I
-  } = (0, l.qz)(), T = I !== l.jd.LOADED;
-  switch (h) {
+    loadState: S
+  } = (0, l.qz)(), I = S !== l.jd.LOADED;
+  switch (m) {
     case u.j.HOME:
       return (0, r.jsx)(r.Fragment, {
         children: t.map(e => {
@@ -145,19 +145,19 @@ function O(e) {
             children: (0, r.jsx)(c.Z, {
               subscription: e,
               navigateToSwitchPlan: b,
-              loadingState: T ? c.G.LOADING : null != (t = O[e.id]) ? t : c.G.LOADING
+              loadingState: I ? c.G.LOADING : null != (t = O[e.id]) ? t : c.G.LOADING
             })
           }, e.id)
         })
       });
     case u.j.SWITCH_APP_PLANS:
       let {
-        route: S
+        route: T
       } = a, A = g(a, ["route"]);
-      return (0, r.jsx)(d.Z, m(p({}, A), {
+      return (0, r.jsx)(d.Z, h(_({}, A), {
         navigateToHome: E
       }));
     default:
-      (0, o.vE)(h)
+      (0, o.vE)(m)
   }
 }

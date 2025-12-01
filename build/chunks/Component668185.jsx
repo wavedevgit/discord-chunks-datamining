@@ -19,13 +19,13 @@ function d(e) {
     permissions: n,
     deniedPermissions: d,
     onPermissionsChange: f,
-    guild: _
-  } = e, p = i.useMemo(() => a.U_(_.permissions), [_.permissions]);
+    guild: p
+  } = e, _ = i.useMemo(() => a.U_(p.permissions), [p.permissions]);
   i.useEffect(() => {
-    f(false, a.hX(n, p))
-  }, [p, f, n]);
-  let h = l.VY.filter(e => a.e$(n, e)),
-    m = h.filter(e => !a.e$(p, e)).map(e => {
+    f(false, a.hX(n, _))
+  }, [_, f, n]);
+  let m = l.VY.filter(e => a.e$(n, e)),
+    h = m.filter(e => !a.e$(_, e)).map(e => {
       let t = (0, l.wt)(e),
         n = !a.e$(d, e);
       return (0, r.jsx)("li", {
@@ -37,7 +37,7 @@ function d(e) {
         })
       }, String(e))
     }),
-    g = h.filter(e => a.e$(p, e)).map(e => {
+    g = m.filter(e => a.e$(_, e)).map(e => {
       let t = (0, l.wt)(e);
       return (0, r.jsxs)("li", {
         className: u.permission,
@@ -56,17 +56,17 @@ function d(e) {
     });
   return (0, r.jsxs)("div", {
     className: u.botPermissions,
-    children: [m.length > 0 ? (0, r.jsxs)("div", {
+    children: [h.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.x, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: c.intl.format(c.t.sOaT2j, {
           applicationName: t.name,
-          guildName: _.name
+          guildName: p.name
         })
       }), (0, r.jsx)("ul", {
         className: u.permissionsList,
-        children: m
+        children: h
       })]
     }) : null, g.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.x, {

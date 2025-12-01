@@ -21,30 +21,30 @@ function f() {
       claimableRewards: n
     } = (0, Chunk987209.wD)(),
     f = (0, Chunk347896.Z)(),
-    _ = null == f ? true : f.planSelection;
-  if (null == _ || null == require || 0 === require.length) return null;
-  let p = (0, Chunk717401.Yr)(null == (e = _.getBannerImageUrl) ? true : module.call(_)),
-    h = (0, Chunk717401.Tl)(_.gradientConfig, {
+    p = null == f ? true : f.planSelection;
+  if (null == p || null == require || 0 === require.length) return null;
+  let _ = (0, Chunk717401.Yr)(null == (e = p.getBannerImageUrl) ? true : module.call(p)),
+    m = (0, Chunk717401.Tl)(p.gradientConfig, {
       defaultAngle: 180
     });
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk897159.promotionalGiftMessage,
-    style: null != p ? p : h,
+    style: null != _ ? _ : m,
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk897159.promotionalTextSection,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
-        children: _.heading()
-      }), null != _.subheading && (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: p.heading()
+      }), null != p.subheading && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "always-white",
-        children: _.subheading(require.length)
+        children: p.subheading(require.length)
       })]
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk897159.avatar,
       children: (0, Chunk54381.jsx)(Chunk897942.Z, {
-        maxRewardImageSrc: _.getImageUrl(true, exports),
+        maxRewardImageSrc: p.getImageUrl(true, exports),
         claimableRewards: require,
         size: Chunk481060.EFr.SIZE_80
       })

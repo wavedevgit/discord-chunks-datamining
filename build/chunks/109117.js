@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,10 +35,10 @@ function _(e) {
   }
   return e
 }
-let p = window.DiscordNative,
-  h = "".concat(Chunk981631.rMx.APP_NATIVE_CRASH, "Storage");
+let _ = window.DiscordNative,
+  m = "".concat(Chunk981631.rMx.APP_NATIVE_CRASH, "Storage");
 
-function m(e) {
+function h(e) {
   var t, n, r, i;
   return {
     did_crash: true,
@@ -50,21 +50,21 @@ function m(e) {
 }
 
 function g(e, t) {
-  let n = m(t);
+  let n = h(t);
   s.default.track(d.rMx.APP_NATIVE_CRASH, n)
 }
 async function E() {
   var e;
   if (__OVERLAY__) return;
-  let t = null == p || null == (e = p.processUtils) ? true : module.getLastCrash;
+  let t = null == _ || null == (e = _.processUtils) ? true : module.getLastCrash;
   if ((0, Chunk358085.isDesktop)() && Chunk998502.ZP.on("CRASH_REPORTER_NEW_CRASH", g), null == exports) return void console.log("AppCrashedFatalReport: getLastCrash not supported.");
   let n = await exports(),
     {
       didCrashReporterSeeCrash: r,
       didCrashOrUncleanExit: a
-    } = b(Chunk433517.K.get(h, {}), require),
+    } = b(Chunk433517.K.get(m, {}), require),
     o = O(Chunk268146, Chunk131951, require);
-  Chunk626135.default.track(Chunk981631.rMx.APP_NATIVE_CRASH, Chunk594174), Chunk433517.K.set(h, {
+  Chunk626135.default.track(Chunk981631.rMx.APP_NATIVE_CRASH, Chunk594174), Chunk433517.K.set(m, {
     lastId: null == require ? true : require.id
   }), Chunk131951 && setTimeout(async () => await y(), 1e4)
 }
@@ -89,13 +89,13 @@ async function y() {
 }
 
 function O(e, t, n) {
-  var i, a, o, s, l, c, u, d, f, p, h, m, g, E, b, y, O, v, I;
+  var i, a, o, s, l, c, u, d, f, _, m, h, g, E, b, y, O, v, S;
 
-  function T(e) {
+  function I(e) {
     return (null == n ? true : n.storedInformation) != null && 1 === n.storedInformation[e]
   }
 
-  function S(e) {
+  function T(e) {
     return (null == n ? true : n.storedInformation) == null || null == n.storedInformation[e] ? null : n.storedInformation[e]
   }
   let A = {
@@ -105,21 +105,21 @@ function O(e, t, n) {
     child_process_crash_type: null,
     child_process_crash_reason: null,
     child_process_crash_exit_code: null,
-    had_rtc_connection: T(r.X4.HasRTCConnection),
-    was_sending_video: T(r.X4.IsSendingVideo),
-    was_sending_stream: T(r.X4.IsSendingStream),
-    was_receiving_video: T(r.X4.IsReceivingVideo),
-    was_receiving_stream: T(r.X4.IsReceivingStream),
-    video_media_session_id: S(r.X4.VideoMediaSessionId),
-    stream_media_session_id: S(r.X4.StreamMediaSessionId),
+    had_rtc_connection: I(r.X4.HasRTCConnection),
+    was_sending_video: I(r.X4.IsSendingVideo),
+    was_sending_stream: I(r.X4.IsSendingStream),
+    was_receiving_video: I(r.X4.IsReceivingVideo),
+    was_receiving_stream: I(r.X4.IsReceivingStream),
+    video_media_session_id: T(r.X4.VideoMediaSessionId),
+    stream_media_session_id: T(r.X4.StreamMediaSessionId),
     last_memory_usage_kb: null != (f = null == n || null == (i = n.lastMemoryInformation) ? true : i.memoryUsageKB) ? f : null,
-    last_used_js_heap_size_kb: null != (p = null == n || null == (a = n.lastMemoryInformation) ? true : a.usedJSHeapSizeKB) ? p : null,
-    last_memory_usage_uptime: null != (h = null == n || null == (o = n.lastMemoryInformation) ? true : o.uptimeSeconds) ? h : null,
-    highest_memory_usage_kb: null != (m = null == n || null == (s = n.highestMemoryInformation) ? true : s.memoryUsageKB) ? m : null,
+    last_used_js_heap_size_kb: null != (_ = null == n || null == (a = n.lastMemoryInformation) ? true : a.usedJSHeapSizeKB) ? _ : null,
+    last_memory_usage_uptime: null != (m = null == n || null == (o = n.lastMemoryInformation) ? true : o.uptimeSeconds) ? m : null,
+    highest_memory_usage_kb: null != (h = null == n || null == (s = n.highestMemoryInformation) ? true : s.memoryUsageKB) ? h : null,
     highest_used_js_heap_size_kb: null != (g = null == n || null == (l = n.highestMemoryInformation) ? true : l.usedJSHeapSizeKB) ? g : null,
     highest_memory_usage_uptime: null != (E = null == n || null == (c = n.highestMemoryInformation) ? true : c.uptimeSeconds) ? E : null
   };
-  if (!e || null == n) return _({
+  if (!e || null == n) return p({
     electron_crash_reporter_did_crash: false,
     minidump_exception_type: null,
     minidump_exception_module_name: null,
@@ -129,12 +129,12 @@ function O(e, t, n) {
   }, A);
   console.log("AppCrashedFatalReport lastCrash:", n, e);
   let C = null == n ? true : n.minidumpInformation;
-  return _({
+  return p({
     electron_crash_reporter_did_crash: e,
     minidump_exception_type: null != (b = null == C ? true : C.exceptionString) ? b : null,
     minidump_exception_module_name: null != (y = null == C ? true : C.exceptionModuleName) ? y : null,
     minidump_relative_crash_address: null != (O = null == C ? true : C.relativeCrashAddress) ? O : null,
     minidump_exception_module_version: null != (v = null == C ? true : C.exceptionModuleVersion) ? v : null,
-    minidump_exception_module_code_id: null != (I = null == C ? true : C.exceptionModuleCodeId) ? I : null
+    minidump_exception_module_code_id: null != (S = null == C ? true : C.exceptionModuleCodeId) ? S : null
   }, A)
 }

@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => B
+  Z: () => Z
 }), require("./259475.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./415506.js"), require("./457542.js");
 var Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -25,22 +25,22 @@ var Chunk512722 = require("./512722.js"),
   Chunk70722 = require("./70722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
-let T = 3e5,
-  S = 6e4,
+let I = 3e5,
+  T = 6e4,
   A = {},
   C = new Chunk846519.V7,
   N = false,
-  R = window.document.createElement("canvas"),
-  P = 512,
-  D = 288;
-R.width = 512, R.height = D;
-let w = R.getContext("2d");
+  P = window.document.createElement("canvas"),
+  R = 512,
+  w = 288;
+P.width = 512, P.height = w;
+let D = P.getContext("2d");
 
-function L() {
+function x() {
   C.stop(), null != r && (Chunk649754.Z.removeSink(r, A), r = null)
 }
-let x = s().debounce((e, t, n, r) => {
-  k(e, (0, y.V9)({
+let L = s().debounce((e, t, n, r) => {
+  M(e, (0, y.V9)({
     streamType: null != t ? O.lo.GUILD : O.lo.CALL,
     guildId: t,
     channelId: n,
@@ -48,27 +48,27 @@ let x = s().debounce((e, t, n, r) => {
   }))
 }, 500);
 
-function M(e) {
-  let t = Math.min(P / e.width, D / e.height),
+function j(e) {
+  let t = Math.min(R / e.width, w / e.height),
     n = e.width * t,
     r = e.height * t;
-  R.width = n, R.height = r;
+  P.width = n, P.height = r;
   let i = window.document.createElement("canvas"),
     a = i.getContext("2d");
   i.width = e.width, i.height = e.height;
   let o = new ImageData(e.data, e.width, e.height);
   return null == a || a.putImageData(o, 0, 0), new Promise(t => {
-    null == w || w.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r), t()
+    null == D || D.drawImage(i, 0, 0, e.width, e.height, 0, 0, n, r), t()
   })
 }
-async function k(e, t) {
-  if (r !== e || (0, E.isWeb)() && h.I0.getSetting() || m.Z.getIsActiveStreamPreviewDisabled(t)) return;
-  let n = () => k(e, t);
+async function M(e, t) {
+  if (r !== e || (0, E.isWeb)() && m.I0.getSetting() || h.Z.getIsActiveStreamPreviewDisabled(t)) return;
+  let n = () => M(e, t);
   if (!N) try {
-    let n = await j(e, 60);
-    await M(n);
-    let r = R.toDataURL("image/jpeg");
-    if (_.Z.dispatch({
+    let n = await k(e, 60);
+    await j(n);
+    let r = P.toDataURL("image/jpeg");
+    if (p.Z.dispatch({
         type: "STREAM_PREVIEW_FETCH_SUCCESS",
         streamKey: t,
         previewURL: r
@@ -89,13 +89,13 @@ async function k(e, t) {
       rejectWithError: false
     })
   } catch (t) {
-    new p.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && C.start(S, n);
+    new _.Z("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", t), r === e && C.start(T, n);
     return
   }
-  r === e && (N ? C.start(S, n) : C.start(T, n))
+  r === e && (N ? C.start(T, n) : C.start(I, n))
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = 0;
   return (E.isPlatformEmbedded ? G : U)(e, e => {
     if (new Uint32Array(e.data.buffer).some(e => 0 !== e)) returntrue;
@@ -111,7 +111,7 @@ function U(e, t) {
     width: r,
     height: i
   } = n.getVideoTracks()[0].getSettings(), a = document.createElement("video"), o = document.createElement("canvas");
-  a.width = o.width = null != r ? r : P, a.height = o.height = null != i ? i : D, a.srcObject = n, a.play();
+  a.width = o.width = null != r ? r : R, a.height = o.height = null != i ? i : w, a.srcObject = n, a.play();
   let s = o.getContext("2d");
   return new Promise((e, n) => {
     a.ontimeupdate = () => {
@@ -146,9 +146,9 @@ function G(e, t) {
     i || u.Z.removeSink(e, A)
   })
 }
-let B = {
+let Z = {
   init() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", L), Chunk570140.Z.subscribe("LOGOUT", L), Chunk570140.Z.subscribe("STREAM_DELETE", L), Chunk570140.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", x), Chunk570140.Z.subscribe("LOGOUT", x), Chunk570140.Z.subscribe("STREAM_DELETE", x), Chunk570140.Z.subscribe("RTC_CONNECTION_VIDEO", e => {
       let {
         guildId: t,
         channelId: n,
@@ -156,7 +156,7 @@ let B = {
         streamId: a,
         context: o
       } = e;
-      null == a || o !== I.Yn.STREAM || i !== g.default.getId() || __OVERLAY__ || (L(), r = a, x(a, t, n, i))
+      null == a || o !== S.Yn.STREAM || i !== g.default.getId() || __OVERLAY__ || (x(), r = a, L(a, t, n, i))
     }), Chunk570140.Z.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
       let {
         videoState: t

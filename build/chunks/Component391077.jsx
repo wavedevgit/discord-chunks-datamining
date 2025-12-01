@@ -2,7 +2,7 @@
 /** chunk id: 391077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -39,24 +39,24 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     showChargingUpState: t,
     rowValueText: n,
     endsAt: i,
     fractionalState: s,
     activationDate: l
-  } = e, f = t ? u.intl.string(u.t["hT6i/0"]) : u.intl.string(u.t["3G0CTC"]), _ = t ? true === l ? null : u.intl.format(u.t["0Vwb/l"], {
+  } = e, f = t ? u.intl.string(u.t["hT6i/0"]) : u.intl.string(u.t["3G0CTC"]), p = t ? true === l ? null : u.intl.format(u.t["0Vwb/l"], {
     activateDate: l
   }) : s === c.a$.FP_SUB_PAUSED ? u.intl.format(u.t.MMvaIG, {
     resumeDate: i.toDate()
-  }) : null, p = a()({
+  }) : null, _ = a()({
     [d.fractionalUnactivatedPill]: t,
     [d.fractionalTimeRemainingPill]: !t
-  }), h = a()({
+  }), m = a()({
     [d.fractionalUnactivatedPillText]: t,
     [d.fractionalTimeRemainingPillText]: !t
-  }), m = a()({
+  }), h = a()({
     [d.fractionalTimeRemainingRowHeader]: !t
   });
   return (0, r.jsxs)("div", {
@@ -65,40 +65,40 @@ function _(e) {
       className: d.fractionalTimeRemainingRowDetails,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-md/semibold",
-        className: m,
+        className: h,
         children: f
-      }), null !== _ && (0, r.jsx)(o.Text, {
+      }), null !== p && (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: _
+        children: p
       })]
     }), (0, r.jsx)("div", {
       className: d.fractionalTimeRemainingPillWrapper,
       children: (0, r.jsx)("div", {
-        className: p,
+        className: _,
         children: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
-          className: h,
+          className: m,
           children: n
         })
       })
     })]
   })
 }
-let p = function(e) {
+let _ = function(e) {
   let {
     fractionalPremiumInfo: t,
     className: n,
     activationDate: i
-  } = e, o = (0, l.jp)(t), c = o.length > 0, u = (0, s.ZP)(t.endsAt, s.aj.SHORT_TIME), p = c ? o : u;
+  } = e, o = (0, l.jp)(t), c = o.length > 0, u = (0, s.ZP)(t.endsAt, s.aj.SHORT_TIME), _ = c ? o : u;
   return (0, r.jsx)("div", {
     children: (0, r.jsxs)("div", {
       className: a()(n, d.fractionalPremiumAccountCredit),
       children: [(0, r.jsx)("div", {
         className: d.accountCreditsContainer,
         children: f(o)
-      }), (0, r.jsx)(_, {
+      }), (0, r.jsx)(p, {
         showChargingUpState: c,
-        rowValueText: p,
+        rowValueText: _,
         endsAt: t.endsAt,
         fractionalState: t.fractionalState,
         activationDate: i

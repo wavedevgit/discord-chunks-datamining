@@ -2,8 +2,8 @@
 /** chunk id: 685756, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => w,
-  Z: () => L
+  V: () => D,
+  Z: () => x
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./388685.js"), require("./49124.js"), require("./997841.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -16,7 +16,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk358085 = require("./358085.js"),
   Chunk65154 = require("./65154.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,9 +61,9 @@ function b() {}
 let y = 20 * Chunk70956.Z.Millis.SECOND,
   O = 3,
   v = +Chunk70956.Z.Millis.MINUTE,
-  I = .25,
-  T = .1,
-  S = 5 * Chunk70956.Z.Millis.SECOND,
+  S = .25,
+  I = .1,
+  T = 5 * Chunk70956.Z.Millis.SECOND,
   A = 2,
   C = 8;
 
@@ -79,7 +79,7 @@ function N(e) {
   }))
 }
 
-function R(e) {
+function P(e) {
   return null == e ? true : e.map(e => ({
     type: e.type,
     rid: e.rid,
@@ -97,14 +97,14 @@ function R(e) {
   }))
 }
 
-function P(e) {
+function R(e) {
   return "audio" === e ? f.Tr.AUDIO : "test" === e ? f.Tr.TEST : "screen" === e ? f.Tr.SCREEN : f.Tr.VIDEO
 }
 
-function D(e) {
+function w(e) {
   var t;
   return null != (t = null == e ? true : e.map(e => ({
-    type: P(e.type),
+    type: R(e.type),
     rid: e.rid,
     ssrc: e.ssrc,
     rtxSsrc: e.rtx_ssrc,
@@ -119,10 +119,10 @@ function D(e) {
     } : true
   }))) ? t : []
 }
-var w = function(e) {
+var D = function(e) {
   return e.Connecting = "connecting", e.Connect = "connect", e.Disconnect = "disconnect", e.Resuming = "resuming", e.Ready = "ready", e.Speaking = "speaking", e.Video = "video", e.Ping = "ping", e.ClientConnect = "client-connect", e.ClientDisconnect = "client-disconnect", e.Codecs = "codecs", e.MediaSessionId = "media-session-id", e.MediaSinkWants = "media-sink-wants", e.VoiceBackendVersion = "voice-backend-version", e.KeyframeInterval = "keyframe-interval", e.ChannelOptionsUpdateSecureFramesProtocol = "update-secure-frames-protocol", e.Flags = "flags", e.Platform = "platform", e.SDP = "sdp", e.Encryption = "encryption", e.BandwidthEstimationExperiment = "bandwidth-estimation-experiment", e.SecureFramesInit = "secure-frames-init", e.SecureFramesPrepareTransition = "secure-frames-prepare-transition", e.SecureFramesExecuteTransition = "secure-frames-execute-transition", e.SecureFramesPrepareEpoch = "secure-frames-prepare-epoch", e.MLSExternalSenderPackage = "mls-external-sender-package", e.MLSProposals = "mls-proposals", e.MLSPrepareCommitTransition = "mls-prepare-commit-transition", e.MLSWelcome = "mls-welcome", e.ReceiveMessage = "receive-message", e.SendMessage = "send-message", e
 }({});
-class L extends Chunk47770.Z {
+class x extends Chunk47770.Z {
   createWebSocket() {
     this.logger.info("[CONNECT] ".concat(this.url)), null !== this.webSocket && (this.logger.error("Connect called with already existing websocket"), this.cleanupWebSocket(e => e.close(4e3))), this.connectionStartTime = (0, Chunk379649.zO)(), this.helloTimeout = setTimeout(() => {
       let e = (0, Chunk379649.zO)() - this.connectionStartTime;
@@ -168,7 +168,7 @@ class L extends Chunk47770.Z {
           this.handleHeartbeatAck(r);
           break;
         case 12:
-          this.emit("video", r.user_id, r.audio_ssrc, r.video_ssrc, D(r.streams));
+          this.emit("video", r.user_id, r.audio_ssrc, r.video_ssrc, w(r.streams));
           break;
         case 11:
           this.emit("client-connect", r.user_ids);
@@ -273,16 +273,16 @@ class L extends Chunk47770.Z {
   handleHello(e) {
     var t, n, r;
     if (this.serverVersion = null != (t = e.v) ? t : g, this.serverVersion <= 3) {
-      let t = d.isPlatformEmbedded ? I : T;
+      let t = d.isPlatformEmbedded ? S : I;
       this.heartbeatInterval = e.heartbeat_interval * t
-    } else this.heartbeatInterval = e.heartbeat_interval * this.heartbeatIntervalModifier, d.isPlatformEmbedded || (this.heartbeatInterval = Math.min(S, null != (n = this.heartbeatInterval) ? n : NaN));
+    } else this.heartbeatInterval = e.heartbeat_interval * this.heartbeatIntervalModifier, d.isPlatformEmbedded || (this.heartbeatInterval = Math.min(T, null != (n = this.heartbeatInterval) ? n : NaN));
     let i = (0, s.zO)() - this.connectionStartTime;
     this.logger.info("[HELLO] heartbeat interval: ".concat(null != (r = this.heartbeatInterval) ? r : "??", ", version: ").concat(this.serverVersion, ", took ").concat(i, " ms")), this.startHeartbeater()
   }
   handleReady(e) {
     this.backoff.succeed();
     let t = (0, s.zO)() - this.connectionStartTime;
-    this.logger.info("[READY] took ".concat(t, " ms")), this.serverVersion >= 6 && this.send(16, {}), this.emit("ready", e.ip, e.port, e.modes, e.ssrc, D(e.streams), e.experiments)
+    this.logger.info("[READY] took ".concat(t, " ms")), this.serverVersion >= 6 && this.send(16, {}), this.emit("ready", e.ip, e.port, e.modes, e.ssrc, w(e.streams), e.experiments)
   }
   handleResumed(e) {
     this.backoff.succeed()
@@ -377,7 +377,7 @@ class L extends Chunk47770.Z {
       token: a,
       max_dave_protocol_version: o,
       video: s,
-      streams: R(l)
+      streams: P(l)
     })
   }
   expeditedHeartbeat(e) {
@@ -404,18 +404,18 @@ class L extends Chunk47770.Z {
   }
   selectProtocol(e, t, n, r) {
     let i, a = {};
-    null == n ? i = null : "sdp" in n && null != n.sdp && "" !== n.sdp ? (i = n.sdp, a = m(p({}, n), {
+    null == n ? i = null : "sdp" in n && null != n.sdp && "" !== n.sdp ? (i = n.sdp, a = h(_({}, n), {
       codecs: N(n.codecs),
       rtc_connection_id: t
     })) : "address" in n && null != n.address && "" !== n.address && n.port && null != n.mode && "" !== n.mode && (i = {
       address: n.address,
       port: n.port,
       mode: n.mode
-    }, a = m(p({}, n), {
+    }, a = h(_({}, n), {
       codecs: N(n.codecs),
       rtc_connection_id: t,
       experiments: r
-    })), this.send(1, p({
+    })), this.send(1, _({
       protocol: e,
       data: i
     }, a))
@@ -439,7 +439,7 @@ class L extends Chunk47770.Z {
       audio_ssrc: e,
       video_ssrc: t,
       rtx_ssrc: n,
-      streams: R(r)
+      streams: P(r)
     })
   }
   mediaSinkWants(e) {
@@ -468,6 +468,6 @@ class L extends Chunk47770.Z {
     this.heartbeatIntervalModifier = e
   }
   constructor(e, t = f.Yn.DEFAULT) {
-    super(), _(this, "url", true), _(this, "logger", true), _(this, "backoff", new a.Z(1e3, 5e3)), _(this, "webSocket", true), _(this, "connectionState", true), _(this, "heartbeatInterval", true), _(this, "helloTimeout", true), _(this, "heartbeater", true), _(this, "lastHeartbeatAckTime", true), _(this, "expeditedHeartbeatTimeout", true), _(this, "heartbeatAck", true), _(this, "heartbeatIntervalModifier", true), _(this, "connectionStartTime", true), _(this, "lastRecvSeqNum", true), _(this, "sessionId", true), _(this, "serverId", true), _(this, "channelId", true), _(this, "token", true), _(this, "resumable", true), _(this, "serverVersion", 0), this.url = e, this.logger = new l.Z("RTCControlSocket(".concat(t, ")")), this.logger.enableNativeLogger(true), this.webSocket = null, this.connectionState = 0, this.helloTimeout = null, this.lastHeartbeatAckTime = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = true, this.expeditedHeartbeatTimeout = null, this.heartbeatIntervalModifier = 1, this.connectionStartTime = 0, this.lastRecvSeqNum = null, this.sessionId = null, this.serverId = null, this.channelId = null, this.token = null, this.resumable = false
+    super(), p(this, "url", true), p(this, "logger", true), p(this, "backoff", new a.Z(1e3, 5e3)), p(this, "webSocket", true), p(this, "connectionState", true), p(this, "heartbeatInterval", true), p(this, "helloTimeout", true), p(this, "heartbeater", true), p(this, "lastHeartbeatAckTime", true), p(this, "expeditedHeartbeatTimeout", true), p(this, "heartbeatAck", true), p(this, "heartbeatIntervalModifier", true), p(this, "connectionStartTime", true), p(this, "lastRecvSeqNum", true), p(this, "sessionId", true), p(this, "serverId", true), p(this, "channelId", true), p(this, "token", true), p(this, "resumable", true), p(this, "serverVersion", 0), this.url = e, this.logger = new l.Z("RTCControlSocket(".concat(t, ")")), this.logger.enableNativeLogger(true), this.webSocket = null, this.connectionState = 0, this.helloTimeout = null, this.lastHeartbeatAckTime = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = true, this.expeditedHeartbeatTimeout = null, this.heartbeatIntervalModifier = 1, this.connectionStartTime = 0, this.lastRecvSeqNum = null, this.sessionId = null, this.serverId = null, this.channelId = null, this.token = null, this.resumable = false
   }
 }

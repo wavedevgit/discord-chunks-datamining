@@ -2,7 +2,7 @@
 /** chunk id: 651941, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk974167 = require("./974167.js"),
@@ -44,13 +44,13 @@ function f(e) {
   return 0 === Object.keys(r).length && (delete c[t], a = true), i || a
 }
 
-function _(e) {
+function p(e) {
   let {
     userId: t
   } = e;
   return null != c[t] && delete c[t]
 }
-class p extends(r = Chunk442837.ZP.PersistedStore) {
+class _ extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     c = null != (t = null == e ? true : e.users) ? t : {}
@@ -75,9 +75,9 @@ class p extends(r = Chunk442837.ZP.PersistedStore) {
     return c[e]
   }
 }
-l(p, "displayName", "VerifiedKeyStore"), l(p, "persistKey", "VerifiedKeyStore");
-let h = new p(Chunk570140.Z, {
+l(_, "displayName", "VerifiedKeyStore"), l(_, "persistKey", "VerifiedKeyStore");
+let m = new _(Chunk570140.Z, {
   SECURE_FRAMES_VERIFIED_KEY_CREATE: d,
   SECURE_FRAMES_VERIFIED_KEY_DELETE: f,
-  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: _
+  SECURE_FRAMES_USER_VERIFIED_KEYS_DELETE: p
 })

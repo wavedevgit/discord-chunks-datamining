@@ -2,7 +2,7 @@
 /** chunk id: 693546, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -15,7 +15,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk937111 = require("./937111.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let p = {
+let _ = {
   fetchGuildJoinRequest: async e => {
     let t = await r.tn.get({
         url: f.ANM.GUILD_JOIN_REQUEST_BY_ID(e),
@@ -35,13 +35,13 @@ let p = {
       after: o,
       limit: s = u.tB,
       force: l = false
-    } = e, _ = l || !c.Z.hasFetched(t);
-    if (!c.Z.isFetching() && _) {
+    } = e, p = l || !c.Z.hasFetched(t);
+    if (!c.Z.isFetching() && p) {
       i.Z.dispatch({
         type: "GUILD_JOIN_REQUESTS_FETCH_START"
       });
       try {
-        var p;
+        var _;
         let e = await r.tn.get({
             url: f.ANM.GUILD_JOIN_REQUESTS(t),
             query: {
@@ -53,7 +53,7 @@ let p = {
             rejectWithError: false
           }),
           l = e.body.total,
-          c = (null != (p = e.body.guild_join_requests) ? p : []).map(d.j);
+          c = (null != (_ = e.body.guild_join_requests) ? _ : []).map(d.j);
         return i.Z.dispatch({
           type: "GUILD_JOIN_REQUESTS_FETCH_SUCCESS",
           status: n,
@@ -114,8 +114,8 @@ let p = {
       },
       rejectWithError: false
     }).catch(e => (e && e.body && e.body.code === f.evJ.REQUEST_TO_JOIN_USER_INELIGIBLE && a.Z.show({
-      title: _.intl.string(_.t.DxJj4e),
-      body: _.intl.string(_.t.rSAOk9)
+      title: p.intl.string(p.t.DxJj4e),
+      body: p.intl.string(p.t.rSAOk9)
     }), Promise.reject(e)));
     i.Z.dispatch({
       type: "GUILD_JOIN_REQUEST_UPDATE",

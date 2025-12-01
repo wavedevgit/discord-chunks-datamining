@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   B4: () => O,
-  Nx: () => h,
+  Nx: () => m,
   UV: () => b,
   WR: () => E,
   Yi: () => y,
   lr: () => g,
-  t7: () => m
+  t7: () => h
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk913527 = require("./913527.js"),
@@ -23,14 +23,14 @@ var Chunk473749 = require("./473749.js"),
   Chunk639119 = require("./639119.js"),
   Chunk474936 = require("./474936.js");
 
-function h() {
+function m() {
   let e = (0, Chunk639119.N)(),
     t = (0, Chunk775412._O)(),
     n = (0, Chunk622909.N)(),
-    r = m();
+    r = h();
   return null != module || exports || null != require || Chunk473749
 }
-let m = () => {
+let h = () => {
     var e;
     let t = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
       n = null == exports || null == (e = exports.metadata) ? true : module.active_discount_expires_at;
@@ -88,7 +88,7 @@ let m = () => {
   },
   b = () => {
     let e = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-      t = m(),
+      t = h(),
       n = null !== module && module.hasPremiumNitroMonthly,
       r = !!(null == module ? true : module.hasActiveTrial);
     return require && !Chunk473749 && !exports
@@ -97,11 +97,11 @@ let m = () => {
     for (let t of e.invoiceItems) {
       let e = t.discounts.find(e => e.type === s.eW.SUBSCRIPTION_PLAN);
       if (null != e) switch (e.discount_id) {
-        case p.dT:
+        case _.dT:
           return {
             duration: 1, percentage: e.percentage_amount, discountId: e.discount_id
           };
-        case p.dB:
+        case _.dB:
           return {
             duration: 3, percentage: e.percentage_amount, discountId: e.discount_id
           }

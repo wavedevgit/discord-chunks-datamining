@@ -19,7 +19,7 @@ let u = Chunk473749.forwardRef(function(e, t) {
     children: u,
     id: d,
     role: f,
-    "aria-label": _
+    "aria-label": p
   } = e;
   return (0, r.jsxs)("div", {
     className: o()(n, {
@@ -30,7 +30,7 @@ let u = Chunk473749.forwardRef(function(e, t) {
     ref: t,
     id: d,
     role: f,
-    "aria-label": _,
+    "aria-label": p,
     children: [null != u ? (0, r.jsx)("span", {
       className: o()(c.content, i),
       children: u

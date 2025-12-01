@@ -82,17 +82,17 @@ function q() {
   })
 }
 
-function X(e, t) {
+function Q(e, t) {
   return (0, r.jsxs)("section", {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-md/bold",
       className: K.accountCreditTitle,
-      children: Y.intl.string(Y.t.Obre8v)
+      children: W.intl.string(W.t.Obre8v)
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       className: K.accountCreditDescription,
-      children: Y.intl.format(Y.t["7Zi06b"], {
-        helpCenterLink: M.Z.getArticleURL(V.BhN.FRACTIONAL_PREMIUM_ABOUT)
+      children: W.intl.format(W.t["7Zi06b"], {
+        helpCenterLink: j.Z.getArticleURL(V.BhN.FRACTIONAL_PREMIUM_ABOUT)
       })
     }), (0, r.jsx)(U.Z, {
       className: K.accountCredit,
@@ -102,7 +102,7 @@ function X(e, t) {
   })
 }
 
-function Q() {
+function X() {
   return (0, Chunk54381.jsx)("hr", {
     className: Chunk49122.hr
   })
@@ -110,19 +110,19 @@ function Q() {
 let J = function() {
   let e = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
     t = (0, Chunk167354.Z)({
-      subscriptionFilter: e => Z.eS.has(e.status)
+      subscriptionFilter: e => B.eS.has(e.status)
     }),
     n = exports.length > 1,
     a = (0, Chunk442837.e7)([Chunk853872.Z], () => null != module && null != module.paymentSourceId ? Chunk853872.Z.getPaymentSource(module.paymentSourceId) : null, [module]),
     f = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.hasFetchedSubscriptions()),
     b = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk351402.Z.isBusy),
     y = (0, Chunk15640.V)(),
-    L = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
-    M = (0, Chunk442837.e7)([Chunk78839.Z], () => {
+    x = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
+    j = (0, Chunk442837.e7)([Chunk78839.Z], () => {
       var e, t;
       return null != (t = null == (e = Chunk78839.Z.getActiveApplicationSubscriptions()) ? true : module.length) ? exports : 0
     }),
-    k = (0, Chunk442837.e7)([Chunk78839.Z], () => {
+    M = (0, Chunk442837.e7)([Chunk78839.Z], () => {
       var e;
       return Object.values(null != (e = Chunk78839.Z.getSubscriptions()) ? module : {}).filter(e => e.type === V.NYc.GUILD).filter(e => e.status !== V.O0b.ENDED).length
     }),
@@ -130,7 +130,7 @@ let J = function() {
       forceFetch: true
     }),
     G = (0, Chunk695349.W)(),
-    Y = null !== module ? module.currentPeriodEnd : true,
+    W = null !== module ? module.currentPeriodEnd : true,
     z = !(Chunk639056 && !(Chunk391077.unactivatedUnits.length > 0)) && (Chunk391077.fractionalState !== Chunk474936.a$.NONE || Chunk391077.unactivatedUnits.length > 0);
   return (Chunk473749.useEffect(() => (Chunk570140.Z.wait(() => {
     (0, Chunk821849.Y2)(), Chunk355467.jg(), (0, Chunk179360.X8)(), Chunk355467.tZ()
@@ -149,11 +149,11 @@ let J = function() {
         paymentSource: Chunk120356,
         busy: Chunk600164,
         subscriptions: exports
-      }) : (0, Chunk54381.jsx)(Chunk91430.MM, {}), z && X(Chunk391077, Chunk388032), (0, Chunk54381.jsx)(Chunk921801.F, {
+      }) : (0, Chunk54381.jsx)(Chunk91430.MM, {}), z && Q(Chunk391077, Chunk388032), (0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.SUBSCRIPTIONS_CREDITS,
         children: (0, Chunk54381.jsx)(q, {})
       }), Chunk74538 > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Q, {}), (0, Chunk54381.jsx)(Chunk406174.Z, {
+        children: [(0, Chunk54381.jsx)(X, {}), (0, Chunk54381.jsx)(Chunk406174.Z, {
           count: Chunk74538,
           onClickManageSubscription: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
             section: Chunk981631.oAB.SUBSCRIPTIONS,
@@ -161,7 +161,7 @@ let J = function() {
           })
         })]
       }), Chunk63063 > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(Q, {}), (0, Chunk54381.jsx)(Chunk681833.Z, {
+        children: [(0, Chunk54381.jsx)(X, {}), (0, Chunk54381.jsx)(Chunk681833.Z, {
           count: Chunk63063,
           onClickManageSubscription: () => {
             (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
@@ -170,7 +170,7 @@ let J = function() {
             }), Chunk626135.default.track(Chunk981631.rMx.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
           }
         })]
-      }), (0, Chunk54381.jsx)(Q, {}), null != module ? (0, Chunk54381.jsx)(Chunk52164.Z, {
+      }), (0, Chunk54381.jsx)(X, {}), null != module ? (0, Chunk54381.jsx)(Chunk52164.Z, {
         subscription: module,
         withOverheadSeparator: false
       }) : null]

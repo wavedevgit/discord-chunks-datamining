@@ -29,20 +29,20 @@ function j(e) {
   } = e, O = l.useMemo(() => (0, g.Gb)(f, j), [f, j]), {
     channel_id: E,
     name: N,
-    image: P,
-    description: C
-  } = O, S = (0, i.e7)([c.Z], () => c.Z.getChannel(E), [E]), I = (0, i.e7)([u.Z], () => u.Z.getGuild(j), [j]), T = (0, m.cS)(O), Z = (0, i.e7)([d.default], () => null != f.creatorId ? d.default.getUser(f.creatorId) : d.default.getCurrentUser(), [f.creatorId]), w = (0, i.e7)([o.Z], () => o.Z.isLurking(j), [j]), D = (0, s.KS)(S, I);
+    image: C,
+    description: P
+  } = O, S = (0, i.e7)([c.Z], () => c.Z.getChannel(E), [E]), I = (0, i.e7)([u.Z], () => u.Z.getGuild(j), [j]), Z = (0, m.cS)(O), T = (0, i.e7)([d.default], () => null != f.creatorId ? d.default.getUser(f.creatorId) : d.default.getCurrentUser(), [f.creatorId]), w = (0, i.e7)([o.Z], () => o.Z.isLurking(j), [j]), D = (0, s.KS)(S, I);
   return (0, r.jsxs)("div", {
     className: p.content,
     children: [(0, r.jsx)(h.Z, {
       className: p.previewCard,
       guild: I,
       channel: S,
-      location: null != T ? T : true,
-      creator: Z,
+      location: null != Z ? Z : true,
+      creator: T,
       name: N,
-      description: C,
-      imageSource: (n = (0, g.Gb)(f, j, b), null == P && null == n.image ? null : null != P && /^data:/.test(P) ? P : (0, x.Z)(n)),
+      description: P,
+      imageSource: (n = (0, g.Gb)(f, j, b), null == C && null == n.image ? null : null != C && /^data:/.test(C) ? C : (0, x.Z)(n)),
       isActive: false,
       isUserLurking: w,
       speakers: [],
@@ -77,7 +77,7 @@ function j(e) {
                 height: 18,
                 width: 18,
                 className: p.locationIcon
-              }), null != (e = null == S ? true : S.name) ? e : T]
+              }), null != (e = null == S ? true : S.name) ? e : Z]
             })
           }
         })

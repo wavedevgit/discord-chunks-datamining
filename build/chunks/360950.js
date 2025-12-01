@@ -70,7 +70,7 @@ module.exports = function(e) {
         contains: [u(t.end)]
       }))
     },
-    _ = {
+    p = {
       className: "regex",
       variants: [{
         begin: "~r(?=" + l + ")",
@@ -86,7 +86,7 @@ module.exports = function(e) {
         }))
       }]
     },
-    p = {
+    _ = {
       className: "string",
       contains: [e.BACKSLASH_ESCAPE, a],
       variants: [{
@@ -119,7 +119,7 @@ module.exports = function(e) {
         end: /"/
       }]
     },
-    h = {
+    m = {
       className: "function",
       beginKeywords: "def defp defmacro defmacrop",
       end: /\B\b/,
@@ -128,17 +128,17 @@ module.exports = function(e) {
         endsParent: true
       })]
     },
-    m = e.inherit(h, {
+    h = e.inherit(m, {
       className: "class",
       beginKeywords: "defimpl defmodule defprotocol defrecord",
       end: /\bdo\b|$|;/
     }),
-    g = [p, _, f, d, e.HASH_COMMENT_MODE, m, h, {
+    g = [_, p, f, d, e.HASH_COMMENT_MODE, h, m, {
       begin: "::"
     }, {
       className: "symbol",
       begin: ":(?![\\s:])",
-      contains: [p, {
+      contains: [_, {
         begin: r
       }],
       relevance: 0

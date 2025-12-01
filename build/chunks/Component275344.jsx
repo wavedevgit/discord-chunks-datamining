@@ -2,7 +2,7 @@
 /** chunk id: 275344, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p,
+  Z: () => _,
   v: () => f
 });
 var Chunk54381 = require("./54381.js"),
@@ -21,7 +21,7 @@ function f(e) {
   return o()(null != n, "Using PollReferenceMessageContext without a provider (or a fallback)"), n
 }
 
-function _(e) {
+function p(e) {
   let {
     message: t,
     children: n
@@ -37,12 +37,12 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     message: t,
     children: n
   } = e;
-  return (0, u.r8)(t) ? n : (0, r.jsx)(_, {
+  return (0, u.r8)(t) ? n : (0, r.jsx)(p, {
     message: t,
     children: n
   })

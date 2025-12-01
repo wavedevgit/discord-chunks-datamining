@@ -56,12 +56,12 @@ function b(e) {
         text: g.intl.string(g.t.ASZTf3),
         icon: l.FmF,
         onClick: () => {
-          _.default.track(m.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
+          p.default.track(h.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
             message_id: t.id,
             channel_id: a.id,
             guild_id: a.guild_id,
             action_type: "upload_file"
-          }), p.S.dispatch(m.CkL.UPLOAD_FILE, {
+          }), _.S.dispatch(h.CkL.UPLOAD_FILE, {
             channelId: a.id
           }), (0, u.fE)({
             message: t,
@@ -78,12 +78,12 @@ function b(e) {
           component: f.Z
         } : l.EO4,
         onClick: () => {
-          _.default.track(m.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
+          p.default.track(h.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
             message_id: t.id,
             channel_id: a.id,
             guild_id: a.guild_id,
             action_type: "sticker"
-          }), (0, h.O)(t.id, a)
+          }), (0, m.O)(t.id, a)
         }
       })]
     })]

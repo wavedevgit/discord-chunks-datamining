@@ -2,7 +2,7 @@
 /** chunk id: 765592, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk610388 = require("./610388.js"),
   Chunk822632 = require("./822632.js");
@@ -14,12 +14,12 @@ let a = 0,
   u = 5,
   d = 6,
   f = 7,
-  _ = 8,
-  p = 24,
-  h = {
+  p = 8,
+  _ = 24,
+  m = {
     2e3: {
       name: "PathInformation",
-      description: m
+      description: h
     },
     2999: {
       name: "ClippingPathName",
@@ -30,11 +30,11 @@ let a = 0,
     }
   };
 
-function m(e) {
+function h(e) {
   let t = 2,
     n = {},
     i = [];
-  for (let a = 0; a < e.byteLength; a += t + p) {
+  for (let a = 0; a < e.byteLength; a += t + _) {
     let o = r.Z.getShortAt(e, a);
     g[o] && (n[o] || (n[o] = g[o].description), i.push({
       type: o,
@@ -75,7 +75,7 @@ let g = {
     description: "Path fill rule",
     path: () => []
   },
-  [_]: {
+  [p]: {
     description: "Initial fill rule",
     path: (e, t) => [r.Z.getShortAt(e, t)]
   },
@@ -88,7 +88,7 @@ let g = {
 function E(e, t) {
   let n = 8,
     r = [];
-  for (let i = 0; i < p; i += n) r.push(b(e, t + i));
+  for (let i = 0; i < _; i += n) r.push(b(e, t + i));
   return r
 }
 

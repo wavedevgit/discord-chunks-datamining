@@ -15,9 +15,9 @@ var Chunk570140 = require("./570140.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js");
-let h = new Chunk710845.Z("NativeDispatchUtils");
+let m = new Chunk710845.Z("NativeDispatchUtils");
 
-function m() {
+function h() {
   return null != r ? Promise.resolve(r) : (0, Chunk358085.isDesktop)() ? Promise.all([Chunk998502.ZP.ensureModule("discord_dispatch"), Chunk998502.ZP.ensureModule("discord_modules")]).then(() => {
     Chunk998502.ZP.requireModule("discord_modules");
     let e = Chunk998502.ZP.getDispatch();
@@ -26,12 +26,12 @@ function m() {
 }
 
 function g() {
-  return null == i && h.warn("Tried getting Dispatch instance before instantiated"), i
+  return null == i && m.warn("Tried getting Dispatch instance before instantiated"), i
 }
 
 function E(e) {
   let t = JSON.parse(e);
-  return h.log("Native Dispatch error", t), new o.Z(t)
+  return m.log("Native Dispatch error", t), new o.Z(t)
 }
 
 function b(e, t) {
@@ -43,13 +43,13 @@ function y(e) {
     properties: t
   } = e;
   switch (null != t.stage && null != t.stage.type && (t.stage = t.stage.type), e.event_name) {
-    case _.rMx.DISPATCH_PATCH_STARTED:
-    case _.rMx.DISPATCH_PATCH_PAUSED:
-    case _.rMx.DISPATCH_PATCH_FAILED:
-    case _.rMx.DISPATCH_PATCH_VERIFICATION_FAILED:
-    case _.rMx.DISPATCH_PATCH_COMPLETE:
-    case _.rMx.DISPATCH_PATCH_CANCELLED:
-    case _.rMx.DISPATCH_APPLICATION_UNINSTALLED:
+    case p.rMx.DISPATCH_PATCH_STARTED:
+    case p.rMx.DISPATCH_PATCH_PAUSED:
+    case p.rMx.DISPATCH_PATCH_FAILED:
+    case p.rMx.DISPATCH_PATCH_VERIFICATION_FAILED:
+    case p.rMx.DISPATCH_PATCH_COMPLETE:
+    case p.rMx.DISPATCH_PATCH_CANCELLED:
+    case p.rMx.DISPATCH_APPLICATION_UNINSTALLED:
       u.default.track(e.event_name, t)
   }
 }
@@ -63,10 +63,10 @@ let O = {
       stateCallback: o,
       errorCallback: s
     } = e;
-    null == i && m().then(e => {
+    null == i && h().then(e => {
       let c = {
           environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          build_number: "473819"
+          build_number: "473833"
         },
         u = l.default.getCurrentUser();
       null != u && (c.user_id = u.id, c.user_name = u.tag, null != u.email && (c.email = u.email));
@@ -212,7 +212,7 @@ let O = {
         a.Z.dispatch({
           type: "DISPATCH_APPLICATION_ERROR",
           error: t
-        }), null != t.code && t.code === p.ff.POST_INSTALL_CANCELLED ? r(t) : n();
+        }), null != t.code && t.code === _.ff.POST_INSTALL_CANCELLED ? r(t) : n();
         return
       }
       if ("" !== t) {

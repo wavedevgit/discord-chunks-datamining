@@ -15,14 +15,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk369171 = require("./369171.js"),
   Chunk111173 = require("./111173.js");
 let f = 24,
-  _ = 36,
-  p = 76,
-  h = 88,
-  m = 272;
+  p = 36,
+  _ = 76,
+  m = 88,
+  h = 272;
 
 function g(e, t) {
-  let n = window.innerWidth - (e ? p : f) * 2,
-    r = window.innerHeight - 2 * h;
+  let n = window.innerWidth - (e ? _ : f) * 2,
+    r = window.innerHeight - 2 * m;
   if (!(0, l._H)(t)) return {
     width: n,
     height: r
@@ -30,7 +30,7 @@ function g(e, t) {
   let {
     width: i,
     height: a
-  } = t, o = window.innerWidth - 2 * m, s = window.innerHeight - (e ? h : _) * 2, c = (0, l.Tj)({
+  } = t, o = window.innerWidth - 2 * h, s = window.innerHeight - (e ? m : p) * 2, c = (0, l.Tj)({
     width: i,
     height: a,
     maxWidth: n,
@@ -52,9 +52,9 @@ function E(e) {
   } = e, l = t[n], f = g(t.length > 1, {
     width: l.width,
     height: l.height
-  }), [_, p] = i.useState(0);
+  }), [p, _] = i.useState(0);
   return i.useEffect(() => {
-    let e = () => p(e => e + 1);
+    let e = () => _(e => e + 1);
     return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }), i.useEffect(() => {
     if (t.length > 1) {

@@ -2,7 +2,7 @@
 /** chunk id: 87051, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js"), require("./997841.js");
 var Chunk95015 = require("./95015.js"),
   Chunk544891 = require("./544891.js"),
@@ -16,7 +16,7 @@ var Chunk95015 = require("./95015.js"),
   Chunk468788 = require("./468788.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
-let h = {
+let m = {
   open(e) {
     o.Z.dispatch({
       type: "NOTIFICATION_SETTINGS_MODAL_OPEN",
@@ -80,7 +80,7 @@ let h = {
       guildId: e,
       channelId: t,
       settings: n
-    }), a.uv.announce(p.intl.string(p.t.MlIsJ8)), (0, c.jz)({
+    }), a.uv.announce(_.intl.string(_.t.MlIsJ8)), (0, c.jz)({
       guildId: e,
       channelId: t,
       change: n,
@@ -120,7 +120,7 @@ let h = {
       guildId: e,
       channelId: t,
       settings: r
-    }), a.uv.announce(p.intl.string(p.t.MlIsJ8)), (0, c.jz)({
+    }), a.uv.announce(_.intl.string(_.t.MlIsJ8)), (0, c.jz)({
       updateType: f.I.AUTHORIZED_APP_DM,
       guildId: e,
       channelId: t,
@@ -131,8 +131,8 @@ let h = {
     })
   },
   setForumThreadsCreated(e, t) {
-    let n = t ? _.ic.NEW_FORUM_THREADS_ON : _.ic.NEW_FORUM_THREADS_OFF,
-      r = t ? _.ic.NEW_FORUM_THREADS_OFF : _.ic.NEW_FORUM_THREADS_ON,
+    let n = t ? p.ic.NEW_FORUM_THREADS_ON : p.ic.NEW_FORUM_THREADS_OFF,
+      r = t ? p.ic.NEW_FORUM_THREADS_OFF : p.ic.NEW_FORUM_THREADS_ON,
       i = l.ZP.getChannelFlags(e) & ~r | n;
     this.updateChannelOverrideSettings(e.guild_id, e.id, {
       flags: i

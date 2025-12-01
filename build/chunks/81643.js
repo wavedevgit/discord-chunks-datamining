@@ -2,21 +2,21 @@
 /** chunk id: 81643, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  AY: () => M,
-  F5: () => x,
-  Jm: () => S,
-  L0: () => R,
-  L5: () => I,
+  AY: () => j,
+  F5: () => L,
+  Jm: () => T,
+  L0: () => P,
+  L5: () => S,
   M$: () => A,
-  WD: () => L,
+  WD: () => x,
   bj: () => O,
   g0: () => N,
   gD: () => C,
-  kJ: () => D,
-  l6: () => w,
-  pY: () => P,
+  kJ: () => w,
+  l6: () => D,
+  pY: () => R,
   sf: () => v,
-  yo: () => T
+  yo: () => I
 }), require("./388685.js"), require("./35282.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -43,17 +43,17 @@ function v() {
   return (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.VERIFIED_ADULT
 }
 
-function I() {
+function S() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   return (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.VERIFIED_ADULT
 }
 
-function T() {
+function I() {
   let e = Chunk594174.default.getCurrentUser();
   return (null == module ? true : module.ageVerificationStatus) === Chunk911969.F$.VERIFIED_TEEN
 }
 
-function S() {
+function T() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   return (null == module ? true : module.ageVerificationStatus) === Chunk911969.F$.VERIFIED_TEEN
 }
@@ -70,28 +70,28 @@ function C() {
 var N = function(e) {
     return e.CTAS = "ctas", e.CONTENT_TYPE = "content_type", e
   }({}),
-  R = function(e) {
+  P = function(e) {
     return e.VERIFIED_ADULT = "verified_adult", e.VERIFIED_TEEN = "verified_teen", e.ERROR = "error", e
   }({});
 
-function P(e, t) {
+function R(e, t) {
   let n = f.Z.getMessage(e, t);
   if (null == n || null == n.embeds || 0 === n.embeds.length || null == n.embeds[0].fields || n.embeds[0].type !== g.hBH.AGE_VERIFICATION_SYSTEM_NOTIFICATION) returnfalse;
   let r = n.embeds[0].fields.find(e => "ctas" === e.rawName);
   return null == r ? true : r.rawValue.split(",").includes("retry")
 }
 
-function D() {
+function w() {
   let e = Chunk594174.default.getCurrentUser();
   return (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.UNVERIFIED && (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.CLIENT_ONLY_PENDING
 }
 
-function w() {
+function D() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   return (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.UNVERIFIED && (null == module ? true : module.ageVerificationStatus) !== Chunk911969.F$.CLIENT_ONLY_PENDING
 }
 
-function L(e) {
+function x(e) {
   let {
     onComplete: t,
     entryPoint: n,
@@ -99,7 +99,7 @@ function L(e) {
     visibleContent: s = null,
     shouldShowExpressiveModal: d = false,
     classificationId: f = null
-  } = e, [m, g] = r.useState(false), E = (0, i.e7)([_.default], () => _.default.getCurrentUser()), {
+  } = e, [h, g] = r.useState(false), E = (0, i.e7)([p.default], () => p.default.getCurrentUser()), {
     current: y
   } = r.useRef(null == E ? true : E.ageVerificationStatus), O = (0, c.GE)(), v = r.useCallback(() => {
     a.Z.dispatch({
@@ -109,17 +109,17 @@ function L(e) {
       location: "age_verification_intro_screen",
       visibleContent: s
     })
-  }, [y, o, s, O]), I = r.useCallback(async e => {
+  }, [y, o, s, O]), S = r.useCallback(async e => {
     g(true);
     try {
       a.Z.dispatch({
         type: "INITIATE_AGE_VERIFICATION"
       });
-      let r = await (0, h.pU)({
+      let r = await (0, m.pU)({
         method: e,
         classificationId: null != f ? f : true
       });
-      p.Z.showAgeVerification({
+      _.Z.showAgeVerification({
         webviewUrl: r.verification_webview_url,
         verificationRequestId: r.verification_request_id,
         verificationVendorName: r.verification_vendor_name,
@@ -136,15 +136,15 @@ function L(e) {
     }
   }, [t, v, d, f, n]);
   return {
-    loading: m,
-    initiateAgeVerification: I
+    loading: h,
+    initiateAgeVerification: S
   }
 }
 
-function x(e) {
-  let t = (0, i.e7)([_.default], () => {
+function L(e) {
+  let t = (0, i.e7)([p.default], () => {
       var e;
-      return null == (e = _.default.getCurrentUser()) ? true : e.ageVerificationStatus
+      return null == (e = p.default.getCurrentUser()) ? true : e.ageVerificationStatus
     }),
     n = (0, s.Z)(t),
     a = (0, i.e7)([d.default], () => null != d.default.getSuspendedUserToken()),
@@ -156,6 +156,6 @@ function x(e) {
   }, [e, l, c])
 }
 
-function M(e) {
-  return null != e && m.dx.has(e)
+function j(e) {
+  return null != e && h.dx.has(e)
 }

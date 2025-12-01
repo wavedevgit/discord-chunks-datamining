@@ -85,7 +85,7 @@ function s(e, t) {
     null == r || r(), n.forEach(e => t(e))
   }
 
-  function _(e) {
+  function p(e) {
     let {
       pins: n
     } = e;
@@ -97,7 +97,7 @@ function s(e, t) {
     })
   }
 
-  function p(e) {
+  function _(e) {
     let {
       data: n
     } = e;
@@ -120,9 +120,9 @@ function s(e, t) {
     LOAD_MESSAGES_SUCCESS: d,
     LOAD_MESSAGES_AROUND_SUCCESS: d,
     LOAD_RECENT_MENTIONS_SUCCESS: f,
-    LOAD_PINNED_MESSAGES_SUCCESS: _,
-    SEARCH_MESSAGES_SUCCESS: p,
-    MOD_VIEW_SEARCH_MESSAGES_SUCCESS: p,
+    LOAD_PINNED_MESSAGES_SUCCESS: p,
+    SEARCH_MESSAGES_SUCCESS: _,
+    MOD_VIEW_SEARCH_MESSAGES_SUCCESS: _,
     CHANNEL_SELECT: {
       callback: c,
       autoSubscribe: false

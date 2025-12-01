@@ -2,11 +2,11 @@
 /** chunk id: 822869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ad: () => m,
+  Ad: () => h,
   Lb: () => d,
-  ZF: () => p,
-  gP: () => _,
-  mh: () => h,
+  ZF: () => _,
+  gP: () => p,
+  mh: () => m,
   sF: () => f
 });
 var Chunk473749 = require("./473749.js"),
@@ -61,7 +61,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     channelId: t,
     messageId: n,
@@ -70,8 +70,8 @@ function _(e) {
     numDestinations: c,
     numDestinationChanges: d,
     numQueryChanges: f,
-    anyDestinationHasSlowmode: _,
-    source: p
+    anyDestinationHasSlowmode: p,
+    source: _
   } = e;
   if (s.default.track(l.rMx.FORWARD_MESSAGE_SENT, {
       channel_id: t,
@@ -81,8 +81,8 @@ function _(e) {
       num_destinations: c,
       num_destination_changes: d,
       num_query_changes: f,
-      any_destination_has_slowmode: _
-    }), "message-shortcut" === p) {
+      any_destination_has_slowmode: p
+    }), "message-shortcut" === _) {
     let e = o.Z.getChannel(t);
     s.default.track(l.rMx.MESSAGE_SHORTCUT_ACTION_SENT, u({
       action: "forward",
@@ -91,7 +91,7 @@ function _(e) {
   }
 }
 
-function p() {
+function _() {
   return Chunk473749.useMemo(() => (0, Chunk392711.once)((e, t, n) => {
     s.default.track(l.rMx.FORWARD_ADD_RECIPIENT, {
       channel_id: e,
@@ -101,7 +101,7 @@ function p() {
   }), [])
 }
 
-function h() {
+function m() {
   return Chunk473749.useMemo(() => (0, Chunk392711.once)((e, t) => {
     s.default.track(l.rMx.FORWARD_EDIT_SEARCH, {
       channel_id: e,
@@ -110,7 +110,7 @@ function h() {
   }), [])
 }
 
-function m() {
+function h() {
   return Chunk473749.useMemo(() => (0, Chunk392711.once)((e, t) => {
     s.default.track(l.rMx.FORWARD_EDIT_CONTEXT_MESSAGE, {
       channel_id: e,

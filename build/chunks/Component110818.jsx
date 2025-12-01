@@ -5,7 +5,7 @@ require.d(exports, {
   Db: () => C,
   HC: () => O,
   NQ: () => E,
-  fe: () => x
+  fe: () => L
 }), require("./388685.js");
 var r, i, a, o, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var r, i, a, o, Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk298185 = require("./298185.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,9 +24,9 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var m = function(e) {
+var h = function(e) {
   return e.NORMAL = "normal", e.SPEED_START = "speed_start", e.SPEED_LOOP = "speed_loop", e.FINISH = "finish", e.IDLE = "idle", e
-}(m || {});
+}(h || {});
 let g = {
   normal: {
     BEG: 0,
@@ -90,7 +90,7 @@ class E extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-h(E, "Scenes", m);
+m(E, "Scenes", h);
 var b = function(e) {
   return e.NORMAL = "normal", e.SPEED_START = "speed_start", e.SPEED_LOOP = "speed_loop", e.FINISH = "finish", e.IDLE = "idle", e
 }(b || {});
@@ -157,11 +157,11 @@ class O extends(i = Chunk473749.PureComponent) {
     })
   }
 }
-h(O, "Scenes", b);
+m(O, "Scenes", b);
 var v = function(e) {
   return e.IDLE_ENTRY = "idle_entry", e.IDLE_LOOP = "idle_loop", e.BOOST_START = "boost_start", e.BOOST_LOOP = "boost_loop", e.BOOST_END = "boost_end", e.VICTORY = "victory", e.ERROR = "error", e
 }(v || {});
-let I = {
+let S = {
   idle_entry: {
     BEG: 0,
     END: 50
@@ -192,7 +192,7 @@ let I = {
     END: 375
   }
 };
-class T extends Chunk473749.PureComponent {
+class I extends Chunk473749.PureComponent {
   getStyle(e) {
     let {
       animation: t
@@ -227,7 +227,7 @@ class T extends Chunk473749.PureComponent {
     })
   }
 }
-let S = Object.freeze({
+let T = Object.freeze({
     IDLE_ENTRY: {
       toValue: 1,
       duration: 1500
@@ -289,23 +289,23 @@ class C extends(a = Chunk473749.PureComponent) {
     })]).start()
   }
   animateIdleEntry() {
-    this.animateEntry(S.IDLE_ENTRY)
+    this.animateEntry(T.IDLE_ENTRY)
   }
   animateError() {
-    this.animateEntry(S.ERROR)
+    this.animateEntry(T.ERROR)
   }
   animateIdleLoop() {
     this.animateIdleLoopBackground(), this.animateIdleLoopForeground()
   }
   animateBoostStart() {
     Chunk748780.Z.parallel([Chunk748780.Z.timing(this.foregroundAnimation.y, {
-      toValue: S.BOOST_START.toValue,
-      duration: S.BOOST_START.duration,
-      delay: S.BOOST_START.delay
+      toValue: T.BOOST_START.toValue,
+      duration: T.BOOST_START.duration,
+      delay: T.BOOST_START.delay
     }), Chunk748780.Z.timing(this.backgroundAnimation.y, {
-      toValue: S.BOOST_START.toValue,
-      duration: S.BOOST_START.duration * A,
-      delay: S.BOOST_START.delay
+      toValue: T.BOOST_START.toValue,
+      duration: T.BOOST_START.duration * A,
+      delay: T.BOOST_START.delay
     })]).start()
   }
   render() {
@@ -325,10 +325,10 @@ class C extends(a = Chunk473749.PureComponent) {
           className: Chunk298185.tier2Foreground
         })]
       }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(T, {
+        children: [(0, Chunk54381.jsx)(I, {
           className: Chunk298185.tier2Background,
           animation: this.backgroundAnimation
-        }), (0, Chunk54381.jsx)(T, {
+        }), (0, Chunk54381.jsx)(I, {
           className: Chunk298185.tier2Foreground,
           animation: this.foregroundAnimation
         })]
@@ -336,7 +336,7 @@ class C extends(a = Chunk473749.PureComponent) {
         className: Chunk298185.sequencedAnimation,
         importData: this.importData,
         nextScene: require ? "idle_loop" : exports,
-        sceneSegments: I,
+        sceneSegments: S,
         onScenePlay: this.handleScenePlay,
         onSceneComplete: r,
         pauseWhileUnfocused: false,
@@ -345,25 +345,25 @@ class C extends(a = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "backgroundAnimation", new f.Z.ValueXY({
+    super(...e), m(this, "backgroundAnimation", new f.Z.ValueXY({
       x: 0,
       y: 0
-    })), h(this, "foregroundAnimation", new f.Z.ValueXY({
+    })), m(this, "foregroundAnimation", new f.Z.ValueXY({
       x: 0,
       y: 0
-    })), h(this, "didUnmount", false), h(this, "animateIdleLoopBackground", () => {
+    })), m(this, "didUnmount", false), m(this, "animateIdleLoopBackground", () => {
       this.didUnmount || (this.backgroundAnimation.x.setValue(0), f.Z.timing(this.backgroundAnimation.x, {
-        toValue: S.IDLE_LOOP.toValue,
-        duration: S.IDLE_LOOP.duration * A,
+        toValue: T.IDLE_LOOP.toValue,
+        duration: T.IDLE_LOOP.duration * A,
         easing: f.Z.Easing.linear
       }).start(this.animateIdleLoopBackground))
-    }), h(this, "animateIdleLoopForeground", () => {
+    }), m(this, "animateIdleLoopForeground", () => {
       this.didUnmount || (this.foregroundAnimation.x.setValue(0), f.Z.timing(this.foregroundAnimation.x, {
-        toValue: S.IDLE_LOOP.toValue,
-        duration: S.IDLE_LOOP.duration,
-        easing: S.IDLE_LOOP.easing
+        toValue: T.IDLE_LOOP.toValue,
+        duration: T.IDLE_LOOP.duration,
+        easing: T.IDLE_LOOP.easing
       }).start(this.animateIdleLoopForeground))
-    }), h(this, "handleScenePlay", e => {
+    }), m(this, "handleScenePlay", e => {
       switch (e) {
         case "idle_entry":
           this.animateIdleEntry(), this.animateIdleLoop();
@@ -381,11 +381,11 @@ class C extends(a = Chunk473749.PureComponent) {
     })
   }
 }
-h(C, "Scenes", v);
+m(C, "Scenes", v);
 var N = function(e) {
   return e.ENTRY = "entry", e.IDLE = "idle", e.STARS = "stars", e.ERROR = "error", e.SUCCESS = "success", e
 }(N || {});
-let R = {
+let P = {
     entry: {
       BEG: 0,
       END: 180
@@ -409,36 +409,36 @@ let R = {
       END: 778
     }
   },
-  P = Object.freeze({
+  R = Object.freeze({
     WHITE: "#ebf0f7",
     PINK: "#fa6ef6"
   }),
-  D = [{
+  w = [{
     left: 29,
     top: 100,
-    color: P.WHITE
+    color: R.WHITE
   }, {
     left: 245,
     top: 11,
-    color: P.PINK
+    color: R.PINK
   }, {
     left: 393,
     top: 22,
-    color: P.WHITE
+    color: R.WHITE
   }, {
     left: 74,
     top: 30,
-    color: P.PINK
+    color: R.PINK
   }, {
     left: 188,
     top: 9,
-    color: P.WHITE
+    color: R.WHITE
   }, {
     left: 379,
     top: 97,
-    color: P.PINK
+    color: R.PINK
   }],
-  w = Object.freeze({
+  D = Object.freeze({
     SCALE_INITIAL: 0,
     SCALE_MIDDLE: 1,
     SCALE_END: 0,
@@ -456,16 +456,16 @@ let R = {
     EASING_END: Chunk748780.Z.Easing.bezier(0, false, .99, 0)
   });
 
-function L(e) {
+function x(e) {
   let {
     animate: t
-  } = e, [n, r] = l.useState(0), i = (0, _.bYB)(D.length, D.map((e, i) => {
-    let a = i > 0 ? w.DELAY_STAGGER * i + Math.random() * (w.DELAY_MAX - w.DELAY_MIN) + w.DELAY_MIN : 0,
-      o = Math.random() * (w.SIZE_MAX - w.SIZE_MIN) + w.SIZE_MIN;
+  } = e, [n, r] = l.useState(0), i = (0, p.bYB)(w.length, w.map((e, i) => {
+    let a = i > 0 ? D.DELAY_STAGGER * i + Math.random() * (D.DELAY_MAX - D.DELAY_MIN) + D.DELAY_MIN : 0,
+      o = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
     return {
       from: {
-        scale: w.SCALE_INITIAL,
-        rotate: w.ROTATE_INITIAL,
+        scale: D.SCALE_INITIAL,
+        rotate: D.ROTATE_INITIAL,
         top: e.top,
         left: e.left,
         width: o,
@@ -473,37 +473,37 @@ function L(e) {
       },
       to: async e => {
         t ? (await e({
-          scale: w.SCALE_MIDDLE,
-          rotate: w.ROTATE_MIDDLE,
+          scale: D.SCALE_MIDDLE,
+          rotate: D.ROTATE_MIDDLE,
           delay: a,
           config: {
-            duration: w.DURATION_MIDDLE,
-            easing: w.EASING_MIDDLE
+            duration: D.DURATION_MIDDLE,
+            easing: D.EASING_MIDDLE
           }
         }), await e({
-          scale: w.SCALE_END,
-          rotate: w.ROTATE_END,
+          scale: D.SCALE_END,
+          rotate: D.ROTATE_END,
           config: {
-            duration: w.DURATION_END,
-            easing: w.EASING_END
+            duration: D.DURATION_END,
+            easing: D.EASING_END
           }
         }), await e({
-          scale: w.SCALE_INITIAL,
-          rotate: w.ROTATE_INITIAL,
+          scale: D.SCALE_INITIAL,
+          rotate: D.ROTATE_INITIAL,
           immediate: true
-        }), i === D.length - 1 && r(n + 1)) : await e({
-          scale: w.SCALE_INITIAL,
-          rotate: w.ROTATE_INITIAL
+        }), i === w.length - 1 && r(n + 1)) : await e({
+          scale: D.SCALE_INITIAL,
+          rotate: D.ROTATE_INITIAL
         })
       }
     }
   }));
   return (0, s.jsx)(s.Fragment, {
     children: i.map((e, t) => {
-      let n = D[t];
+      let n = w[t];
       return (0, s.jsx)(d.animated.svg, {
         style: e,
-        className: p.guildStar,
+        className: _.guildStar,
         xmlns: "http://www.w3.org/2000/svg",
         viewBox: "0 0 12.14 12.24",
         children: (0, s.jsx)("path", {
@@ -514,7 +514,7 @@ function L(e) {
     })
   })
 }
-class x extends(o = Chunk473749.PureComponent) {
+class L extends(o = Chunk473749.PureComponent) {
   static getNextScene(e) {
     switch (e) {
       case "entry":
@@ -548,15 +548,15 @@ class x extends(o = Chunk473749.PureComponent) {
         className: Chunk298185.guildBackground,
         importData: this.importData,
         nextScene: require ? "idle" : exports,
-        sceneSegments: R,
+        sceneSegments: P,
         onScenePlay: r,
         onSceneComplete: i,
         pauseWhileUnfocused: a,
         pause: require
-      }), (0, Chunk54381.jsx)(L, {
+      }), (0, Chunk54381.jsx)(x, {
         animate: !require && "stars" === exports
       })]
     })
   }
 }
-h(x, "Scenes", N)
+m(L, "Scenes", N)

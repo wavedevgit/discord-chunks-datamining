@@ -24,8 +24,8 @@ let b = e => {
     let {
       channel: t,
       message: n
-    } = e, a = (0, h.y6)(n.id), c = i.useCallback(() => {
-      (0, p.v)({
+    } = e, a = (0, m.y6)(n.id), c = i.useCallback(() => {
+      (0, _.v)({
         type: s.Ie.FORM,
         content: "",
         channel: t
@@ -33,7 +33,7 @@ let b = e => {
         let {
           valid: r
         } = e;
-        r && (0, h.TZ)(t, n, a.id)
+        r && (0, m.TZ)(t, n, a.id)
       })
     }, [t, n, a]);
     return (0, r.jsx)("div", {
@@ -54,16 +54,16 @@ let b = e => {
     let {
       message: t,
       channel: n
-    } = e, i = n.getGuildId(), o = (0, a.e7)([_.default, f.Z, d.Z, u.ZP], () => {
+    } = e, i = n.getGuildId(), o = (0, a.e7)([p.default, f.Z, d.Z, u.ZP], () => {
       var e;
-      let r = _.default.getCurrentUser(),
+      let r = p.default.getCurrentUser(),
         a = (0, c.xl)(n),
-        o = f.Z.can(m.Plq.SEND_MESSAGES, n),
+        o = f.Z.can(h.Plq.SEND_MESSAGES, n),
         s = null != i && null != r && (null == (e = u.ZP.getMember(i, r.id)) ? true : e.isPending),
         l = t.author.bot,
-        p = d.Z.getGuild(i),
-        h = null != p && (p.systemChannelFlags & m.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
-      return o && !a && !s && !l && h
+        _ = d.Z.getGuild(i),
+        m = null != _ && (_.systemChannelFlags & h.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
+      return o && !a && !s && !l && m
     });
     return null != i && o ? (0, r.jsx)(b, {
       message: t,

@@ -4,23 +4,23 @@
 require.d(exports, {
   Ac: () => b,
   DI: () => C,
-  HA: () => P,
-  HV: () => I,
-  J4: () => h,
+  HA: () => R,
+  HV: () => S,
+  J4: () => m,
   JL: () => g,
   Ln: () => d,
-  Om: () => T,
-  P0: () => p,
+  Om: () => I,
+  P0: () => _,
   PI: () => O,
   Vb: () => A,
   fR: () => y,
-  gG: () => m,
-  hf: () => R,
+  gG: () => h,
+  hf: () => P,
   u7: () => N,
-  uf: () => S,
+  uf: () => T,
   w8: () => E,
   z3: () => v,
-  zW: () => _
+  zW: () => p
 });
 var Chunk473749 = require("./473749.js"),
   Chunk704215 = require("./704215.js"),
@@ -34,22 +34,22 @@ var Chunk473749 = require("./473749.js"),
     return e.APPEARANCE_SETTINGS = "appearance_settings", e.PREVIEW_THEMES = "preview_themes", e
   }({});
 let f = "manual",
-  _ = () => {
+  p = () => {
     f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "hex_input"
     })
   },
-  p = () => {
+  _ = () => {
     f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "color_picker"
     })
   },
-  h = () => {
+  m = () => {
     Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "eye_dropper"
     })
   },
-  m = () => {
+  h = () => {
     f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "add_color"
     })
@@ -84,15 +84,15 @@ let f = "manual",
       control_name: "color_intensity"
     })
   },
-  I = () => {
+  S = () => {
     f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "base_theme"
     })
   },
-  T = () => {
+  I = () => {
     f = "surprise_me", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_SURPRISE_BUTTON_CLICKED, {})
   },
-  S = () => {
+  T = () => {
     f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEME_RESET_BUTTON_CLICKED, {})
   },
   A = () => {
@@ -113,7 +113,7 @@ let f = "manual",
       creation_method: f
     }), f = "manual"
   },
-  R = (e, t) => {
+  P = (e, t) => {
     let {
       analyticsLocations: n
     } = (0, a.ZP)(t);
@@ -124,7 +124,7 @@ let f = "manual",
       })
     }, [e, n])
   },
-  P = (e, t) => {
+  R = (e, t) => {
     let n = (0, s.Nj)(i.z.CUSTOM_THEME_COACHMARK);
     r.useEffect(() => {
       if (e && !n && t !== i.z.CUSTOM_THEME_COACHMARK) {

@@ -2,7 +2,7 @@
 /** chunk id: 248687, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk365861 = require("./365861.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -58,7 +58,7 @@ function A() {
   })
 }
 let C = o().throttle(e => {
-  m.Z.increment({
+  h.Z.increment({
     name: c.V.APP_CRASHED,
     tags: ["reason:".concat(s.v.UNHANDLED_JS_ERROR), "level:".concat(l.c.FATAL), "modded_client:".concat(e)]
   }, true)
@@ -133,10 +133,10 @@ class N extends Chunk473749.PureComponent {
     return module
   }
   constructor(...e) {
-    super(...e), S(this, "state", {
+    super(...e), T(this, "state", {
       error: null,
       info: null
-    }), S(this, "discordErrorsSet", false)
+    }), T(this, "discordErrorsSet", false)
   }
 }
-let R = N
+let P = N

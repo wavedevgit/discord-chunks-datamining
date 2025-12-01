@@ -50,11 +50,11 @@ module.exports = {
     }
     var f = i(e / 1.7, 0, 20);
     f = a(f, 0, .8);
-    var _ = a(i(r / 1.7, 0, 20), .5, 200),
-      p = s(f, d(_), .01);
+    var p = a(i(r / 1.7, 0, 20), .5, 200),
+      _ = s(f, d(p), .01);
     return {
-      tension: t(_),
-      friction: n(p)
+      tension: t(p),
+      friction: n(_)
     }
   }
 }

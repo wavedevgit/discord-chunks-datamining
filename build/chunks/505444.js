@@ -134,9 +134,9 @@ d.thatReturns = u, d.thatReturnsFalse = u(false), d.thatReturnsTrue = u(true), d
 };
 var f = false;
 if (s.canUseDOM) {
-  var _ = document.createElement("div").style;
+  var p = document.createElement("div").style;
   try {
-    _.font = ""
+    p.font = ""
   } catch (e) {
     f = true
   }

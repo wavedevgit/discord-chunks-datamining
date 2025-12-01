@@ -2,7 +2,7 @@
 /** chunk id: 430824, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var Chunk516888 = require("./516888.js"),
   Chunk601964 = require("./601964.js"),
@@ -44,7 +44,7 @@ class f extends Chunk516888.f {
   }
 }
 u(f, "displayName", "GuildStore");
-let _ = new f({
+let p = new f({
   BACKGROUND_SYNC: (e, t) => {
     let {
       guilds: n

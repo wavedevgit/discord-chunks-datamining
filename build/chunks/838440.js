@@ -2,7 +2,7 @@
 /** chunk id: 838440, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => h
+  v: () => m
 }), require("./388685.js"), require("./473749.js");
 var Chunk570140 = require("./570140.js"),
   Chunk668781 = require("./668781.js"),
@@ -15,7 +15,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t) {
+function p(e, t) {
   i.Z.show({
     title: f.intl.string(f.t.l8rYLt),
     body: f.intl.formatToPlainString(f.t.FfjF15, {
@@ -29,39 +29,39 @@ function _(e, t) {
   })
 }
 
-function p(e) {
+function _(e) {
   var t;
   let {
     openWarningPopout: n,
     type: s,
     content: l,
     stickers: u,
-    uploads: p,
-    channel: h,
-    restrictMentions: m,
+    uploads: _,
+    channel: m,
+    restrictMentions: h,
     respectCooldown: g,
     userCanUsePremiumMessageLength: E,
     resolve: b
   } = e;
-  if (0 === l.length && !(null == (t = s.submit) ? true : t.allowEmptyMessage) && (null == u || 0 === u.length) && (null == p || 0 === p.length)) return void b({
+  if (0 === l.length && !(null == (t = s.submit) ? true : t.allowEmptyMessage) && (null == u || 0 === u.length) && (null == _ || 0 === _.length)) return void b({
     valid: false,
     failureReason: d.zYc.EMPTY_MESSAGE
   });
   let y = E ? d.en1 : d.J6R,
     O = !E;
   if (l.length > y) {
-    O && null != h ? r.Z.dispatch({
+    O && null != m ? r.Z.dispatch({
       type: "MESSAGE_LENGTH_UPSELL",
-      channel: h,
+      channel: m,
       content: l
-    }) : _(l.length, y), b({
+    }) : p(l.length, y), b({
       valid: false,
       failureReason: d.zYc.MESSAGE_TOO_LONG
     });
     return
   }
-  if (null != h) {
-    if (null != h.getGuildId() && g && o.Z.getSlowmodeCooldownGuess(h.id) > 0) return void b({
+  if (null != m) {
+    if (null != m.getGuildId() && g && o.Z.getSlowmodeCooldownGuess(m.id) > 0) return void b({
       valid: false,
       failureReason: d.zYc.SLOWMODE_COOLDOWN
     });
@@ -72,10 +72,10 @@ function p(e) {
           animation: r
         }
         of c.$) {
-        let i = e(l, h, m);
+        let i = e(l, m, h);
         if (false !== i) return void n({
           analyticsType: t,
-          channel: h,
+          channel: m,
           onCancel: () => b({
             valid: false,
             failureReason: d.zYc.SHOUTING_CANCELLED
@@ -104,7 +104,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     openWarningPopout: t,
     type: n,
@@ -115,7 +115,7 @@ function h(e) {
     restrictMentions: l = true,
     respectCooldown: c = true
   } = e, d = u.ZP.canUseIncreasedMessageLength(s.default.getCurrentUser());
-  return new Promise(e => p({
+  return new Promise(e => _({
     openWarningPopout: t,
     type: n,
     content: r,

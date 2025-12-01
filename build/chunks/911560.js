@@ -15,12 +15,12 @@ var Chunk828700 = require("./828700.js"),
   Chunk944486 = require("./944486.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
-let p = {},
-  h = false;
+let _ = {},
+  m = false;
 
-function m() {
-  h || (h = true, Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
-    p = {};
+function h() {
+  m || (m = true, Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
+    _ = {};
     let e = Chunk944486.Z.getChannelId(),
       t = Chunk592125.Z.getChannel(module);
     null != module && null == exports && g(module)
@@ -28,8 +28,8 @@ function m() {
 }
 
 function g(e) {
-  if (null == e || e === o.V || (0, _.AB)(e) || null != u.Z.getChannel(e) || (m(), !s.Z.isConnected())) return Promise.resolve();
-  let t = p[e];
+  if (null == e || e === o.V || (0, p.AB)(e) || null != u.Z.getChannel(e) || (h(), !s.Z.isConnected())) return Promise.resolve();
+  let t = _[e];
   if (null != t)
     if ("LOADING" === t.type) return t.promise;
     else return Promise.resolve();
@@ -44,7 +44,7 @@ function g(e) {
       let {
         body: r
       } = t;
-      if (p[e] = {
+      if (_[e] = {
           type: "LOADED"
         }, c.Ec.has(r.type)) {
         var i;
@@ -56,7 +56,7 @@ function g(e) {
       }
     }).catch(() => {
       var t;
-      p[e] = {
+      _[e] = {
         type: "NOT_FOUND"
       }, a.Z.dispatch({
         type: "CHANNEL_DELETE",
@@ -67,7 +67,7 @@ function g(e) {
         }
       })
     });
-  return p[e] = {
+  return _[e] = {
     type: "LOADING",
     promise: d
   }, d

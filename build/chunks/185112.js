@@ -2,7 +2,7 @@
 /** chunk id: 185112, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => p
+  l: () => _
 });
 var Chunk314897 = require("./314897.js"),
   Chunk131951 = require("./131951.js"),
@@ -34,15 +34,15 @@ function d(e) {
   return e
 }
 let f = 10,
-  _ = 20 * Chunk70956.Z.Millis.SECOND,
-  p = {
+  p = 20 * Chunk70956.Z.Millis.SECOND,
+  _ = {
     getActiveErrors: () => {
       let e = Chunk19780.Z.getRTCConnection();
       if (null == module) return null;
       let t = module.getMediaEngineConnectionId();
       if (null == exports || !Chunk131951.Z.isVideoEnabled()) return null;
       let n = Chunk19780.Z.getLastNonZeroRemoteVideoSinkWantsTime();
-      if (null != require && performance.now() - require < _ || !module.hasActiveRemoteWants()) return null;
+      if (null != require && performance.now() - require < p || !module.hasActiveRemoteWants()) return null;
       let o = (0, Chunk150457.hj)(exports, Chunk314897.default.getId());
       return null == Chunk70956 ? null : Chunk70956.short.frameRate < f || Chunk70956.long.frameRate < f ? [d({
         type: Chunk458725.u.CAMERA_SEND_LOW_FPS,

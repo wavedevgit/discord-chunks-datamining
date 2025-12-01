@@ -54,10 +54,10 @@ if (exports.unstable_now = true, "object" == typeof performance && "function" ==
 var u = [],
   d = [],
   f = 1,
-  _ = null,
-  p = 3,
-  h = false,
+  p = null,
+  _ = 3,
   m = false,
+  h = false,
   g = false,
   E = false,
   b = "function" == typeof setTimeout ? setTimeout : null,
@@ -73,16 +73,16 @@ function v(e) {
   }
 }
 
-function I(e) {
-  if (g = false, v(e), !m)
-    if (null !== r(u)) m = true, T || (T = true, o());
+function S(e) {
+  if (g = false, v(e), !h)
+    if (null !== r(u)) h = true, I || (I = true, o());
     else {
       var t = r(d);
-      null !== t && w(I, t.startTime - e)
+      null !== t && D(S, t.startTime - e)
     }
 }
-var T = false,
-  S = false,
+var I = false,
+  T = false,
   A = 5,
   C = false;
 
@@ -90,65 +90,65 @@ function N() {
   return !!E || !(exports.unstable_now() - C < A)
 }
 
-function R() {
-  if (E = false, T) {
+function P() {
+  if (E = false, I) {
     var e = exports.unstable_now();
     C = module;
     var n = true;
     try {
       e: {
-        m = false,
-        g && (g = false, y(S), S = false),
-        h = true;
-        var a = p;
+        h = false,
+        g && (g = false, y(T), T = false),
+        m = true;
+        var a = _;
         try {
           a: {
-            for (v(module), _ = r(u); null !== _ && !(_.expirationTime > module && N());) {
-              var s = _.callback;
+            for (v(module), p = r(u); null !== p && !(p.expirationTime > module && N());) {
+              var s = p.callback;
               if ("function" == typeof s) {
-                _.callback = null, p = _.priorityLevel;
-                var l = s(_.expirationTime <= module);
+                p.callback = null, _ = p.priorityLevel;
+                var l = s(p.expirationTime <= module);
                 if (e = exports.unstable_now(), "function" == typeof l) {
-                  _.callback = l, v(module), n = true;
+                  p.callback = l, v(module), n = true;
                   break a
                 }
-                _ === r(u) && i(u), v(module)
+                p === r(u) && i(u), v(module)
               } else i(u);
-              _ = r(u)
+              p = r(u)
             }
-            if (null !== _) n = true;
+            if (null !== p) n = true;
             else {
               var c = r(d);
-              null !== c && w(I, c.startTime - module), n = false
+              null !== c && D(S, c.startTime - module), n = false
             }
           }
           break e
         }
         finally {
-          _ = null, p = a, h = false
+          p = null, _ = a, m = false
         }
       }
     }
     finally {
-      n ? o() : T = false
+      n ? o() : I = false
     }
   }
 }
 if ("function" == typeof O) o = function() {
-  O(R)
+  O(P)
 };
 else if ("undefined" != typeof MessageChannel) {
-  var P = new MessageChannel,
-    D = P.port2;
-  P.port1.onmessage = R, o = function() {
-    D.postMessage(null)
+  var R = new MessageChannel,
+    w = R.port2;
+  R.port1.onmessage = P, o = function() {
+    w.postMessage(null)
   }
 } else o = function() {
-  b(R, 0)
+  b(P, 0)
 };
 
-function w(e, n) {
-  S = b(function() {
+function D(e, n) {
+  T = b(function() {
     e(t.unstable_now())
   }, n)
 }
@@ -157,23 +157,23 @@ exports.unstable_IdlePriority = 5, exports.unstable_ImmediatePriority = 1, expor
 }, exports.unstable_forceFrameRate = function(e) {
   0 > e || 125 < e ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported") : A = 0 < e ? Math.floor(1e3 / e) : 5
 }, exports.unstable_getCurrentPriorityLevel = function() {
-  return p
+  return _
 }, exports.unstable_next = function(e) {
-  switch (p) {
+  switch (_) {
     case 1:
     case 2:
     case 3:
       var t = 3;
       break;
     default:
-      t = p
+      t = _
   }
-  var n = p;
-  p = t;
+  var n = _;
+  _ = t;
   try {
     return e()
   } finally {
-    p = n
+    _ = n
   }
 }, exports.unstable_requestPaint = function() {
   E = true
@@ -188,12 +188,12 @@ exports.unstable_IdlePriority = 5, exports.unstable_ImmediatePriority = 1, expor
     default:
       e = 3
   }
-  var n = p;
-  p = e;
+  var n = _;
+  _ = e;
   try {
     return t()
   } finally {
-    p = n
+    _ = n
   }
 }, exports.unstable_scheduleCallback = function(e, i, a) {
   var s = t.unstable_now();
@@ -220,16 +220,16 @@ exports.unstable_IdlePriority = 5, exports.unstable_ImmediatePriority = 1, expor
     startTime: a,
     expirationTime: l,
     sortIndex: false
-  }, a > s ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (y(S), S = false) : g = true, w(I, a - s))) : (e.sortIndex = l, n(u, e), m || h || (m = true, T || (T = true, o()))), e
+  }, a > s ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (y(T), T = false) : g = true, D(S, a - s))) : (e.sortIndex = l, n(u, e), h || m || (h = true, I || (I = true, o()))), e
 }, exports.unstable_shouldYield = N, exports.unstable_wrapCallback = function(e) {
-  var t = p;
+  var t = _;
   return function() {
-    var n = p;
-    p = t;
+    var n = _;
+    _ = t;
     try {
       return e.apply(this, arguments)
     } finally {
-      p = n
+      _ = n
     }
   }
 }

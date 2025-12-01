@@ -2,7 +2,7 @@
 /** chunk id: 346479, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./997841.js");
 var Chunk697988 = require("./697988.js"),
   Chunk544891 = require("./544891.js"),
@@ -25,7 +25,7 @@ var Chunk697988 = require("./697988.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx");
 
-function I(e, t) {
+function S(e, t) {
   return i.tn.patch({
     url: y.ANM.CHANNEL(e.id),
     body: t,
@@ -39,7 +39,7 @@ function I(e, t) {
   }), t))
 }
 
-function T(e, t) {
+function I(e, t) {
   a.Z.dispatch({
     type: "THREAD_MEMBER_LOCAL_UPDATE",
     id: e.id,
@@ -48,23 +48,23 @@ function T(e, t) {
     isJoining: t
   })
 }
-let S = {
+let T = {
   archiveThread(e, t) {
     let n = {
       archived: true
     };
-    return t && (n.locked = true), I(e, n)
+    return t && (n.locked = true), S(e, n)
   },
   async lockThread(e) {
     let t = e.isArchivedThread();
-    return t && await this.unarchiveThread(e, false), I(e, {
+    return t && await this.unarchiveThread(e, false), S(e, {
       locked: true,
       archived: t
     })
   },
   async unlockThread(e) {
     let t = e.isArchivedThread();
-    return t && await this.unarchiveThread(e, true), I(e, {
+    return t && await this.unarchiveThread(e, true), S(e, {
       locked: false,
       archived: t
     })
@@ -76,7 +76,7 @@ let S = {
       r = e.isForumPost();
     t && (n.locked = false);
     try {
-      return await I(e, n)
+      return await S(e, n)
     } catch (e) {
       var i, a;
       throw (null == (i = e.body) ? true : i.code) === y.evJ.TOO_MANY_THREADS ? o.Z.show({
@@ -97,14 +97,14 @@ let S = {
   async unarchiveThreadIfNecessary(e) {
     var t;
     let n = f.Z.getChannel(e),
-      r = _.Z.can(y.Plq.MANAGE_THREADS, n);
+      r = p.Z.can(y.Plq.MANAGE_THREADS, n);
     null != n && n.isArchivedThread() && (r || (null == (t = n.threadMetadata) ? true : t.locked) !== true) && await this.unarchiveThread(n, false)
   },
-  setInvitable: (e, t) => I(e, {
+  setInvitable: (e, t) => S(e, {
     invitable: t
   }),
   async joinThread(e, t) {
-    e.isForumPost() && T(e, true);
+    e.isForumPost() && I(e, true);
     try {
       return await i.tn.post({
         url: y.ANM.THREAD_MEMBER(e.id),
@@ -125,7 +125,7 @@ let S = {
         title: v.intl.string(v.t.j2d6Km),
         body: v.intl.string(v.t.fEptJP)
       });
-      e.isForumPost() && T(e, false)
+      e.isForumPost() && I(e, false)
     }
   },
   async addMember(e, t, n) {
@@ -151,7 +151,7 @@ let S = {
       })
     }
   },
-  leaveThread: (e, t) => (e.isForumPost() && T(e, false), i.tn.del({
+  leaveThread: (e, t) => (e.isForumPost() && I(e, false), i.tn.del({
     url: y.ANM.THREAD_MEMBER(e.id),
     query: {
       location: t
@@ -268,7 +268,7 @@ let S = {
     })
   },
   async setNotificationSettings(e, t) {
-    return (0, E.ZJ)(e, t), m.Z.hasJoined(e.id) || await this.joinThread(e, "Change Notification Settings"), i.tn.patch({
+    return (0, E.ZJ)(e, t), h.Z.hasJoined(e.id) || await this.joinThread(e, "Change Notification Settings"), i.tn.patch({
       url: y.ANM.THREAD_MEMBER_SETTINGS(e.id),
       body: t,
       rejectWithError: false
@@ -283,7 +283,7 @@ let S = {
       tagSetting: s,
       offset: l
     } = e;
-    h.Z.isLoading(n, r, o, s) || (a.Z.dispatch({
+    m.Z.isLoading(n, r, o, s) || (a.Z.dispatch({
       type: "LOAD_ARCHIVED_THREADS",
       channelId: n,
       sortOrder: r,
@@ -295,7 +295,7 @@ let S = {
         archived: true,
         sort_by: "last_message_time",
         sort_order: "desc",
-        limit: h.I,
+        limit: m.I,
         tag: o.size > 0 ? Array.from(o).join(",") : true,
         tag_setting: s,
         offset: l
@@ -330,7 +330,7 @@ let S = {
         firstMessages: d,
         mostRecentMessages: f,
         members: (null != c ? c : []).map(e => (0, b.Z)(e)),
-        owners: i.map(e => e.owner).filter(p.lm),
+        owners: i.map(e => e.owner).filter(_.lm),
         hasMore: u
       })
     }, () => {

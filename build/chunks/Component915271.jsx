@@ -2,7 +2,7 @@
 /** chunk id: 915271, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk975060 = require("./975060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk496758 = require("./496758.js");
-class _ extends Chunk473749.PureComponent {
+class p extends Chunk473749.PureComponent {
   componentDidMount() {
     null != this.props.venmoClient && Chunk873115.by()
   }
@@ -53,7 +53,7 @@ class _ extends Chunk473749.PureComponent {
     })
   }
 }
-let p = Chunk442837.ZP.connectStores([Chunk618541.Z, Chunk975060.Z], () => ({
+let _ = Chunk442837.ZP.connectStores([Chunk618541.Z, Chunk975060.Z], () => ({
   venmoUsername: Chunk975060.Z.venmoUsername,
   venmoClient: Chunk618541.Z.getVenmoClient()
-}))(_)
+}))(p)

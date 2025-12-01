@@ -41,13 +41,13 @@ class i {
     return this.range
   }
   parseRange(e) {
-    let t = ((this.options.includePrerelease && h) | (this.options.loose && m)) + ":" + e,
+    let t = ((this.options.includePrerelease && m) | (this.options.loose && h)) + ":" + e,
       n = a.get(t);
     if (n) return n;
     let r = this.options.loose,
       i = r ? u[d.HYPHENRANGELOOSE] : u[d.HYPHENRANGE];
-    l("hyphen replace", e = e.replace(i, P(this.options.includePrerelease))), l("comparator trim", e = e.replace(u[d.COMPARATORTRIM], f)), l("tilde trim", e = e.replace(u[d.TILDETRIM], _)), l("caret trim", e = e.replace(u[d.CARETTRIM], p));
-    let o = e.split(" ").map(e => y(e, this.options)).join(" ").split(/\s+/).map(e => R(e, this.options));
+    l("hyphen replace", e = e.replace(i, R(this.options.includePrerelease))), l("comparator trim", e = e.replace(u[d.COMPARATORTRIM], f)), l("tilde trim", e = e.replace(u[d.TILDETRIM], p)), l("caret trim", e = e.replace(u[d.CARETTRIM], _));
+    let o = e.split(" ").map(e => y(e, this.options)).join(" ").split(/\s+/).map(e => P(e, this.options));
     r && (o = o.filter(e => (l("loose invalid filter", e, this.options), !!e.match(u[d.COMPARATORLOOSE])))), l("range list", o);
     let c = new Map;
     for (let e of o.map(e => new s(e, this.options))) {
@@ -70,7 +70,7 @@ class i {
       returnfalse
     }
     for (let t = 0; t < this.set.length; t++)
-      if (D(this.set[t], e, this.options)) returntrue;
+      if (w(this.set[t], e, this.options)) returntrue;
     returnfalse
   }
 }
@@ -91,18 +91,18 @@ let a = new(require("./147567.js")),
     for (; n && r.length;) n = r.every(e => i.intersects(e, t)), i = r.pop();
     return n
   },
-  y = (e, t) => (l("comp", e, t), l("caret", e = T(e, t)), l("tildes", e = v(e, t)), l("xrange", e = A(e, t)), l("stars", e = N(e, t)), e),
+  y = (e, t) => (l("comp", e, t), l("caret", e = I(e, t)), l("tildes", e = v(e, t)), l("xrange", e = A(e, t)), l("stars", e = N(e, t)), e),
   O = e => !e || "x" === e.toLowerCase() || "*" === e,
-  v = (e, t) => e.trim().split(/\s+/).map(e => I(e, t)).join(" "),
-  I = (e, t) => {
+  v = (e, t) => e.trim().split(/\s+/).map(e => S(e, t)).join(" "),
+  S = (e, t) => {
     let n = t.loose ? u[d.TILDELOOSE] : u[d.TILDE];
     return e.replace(n, (t, n, r, i, a) => {
       let o;
       return l("tilde", e, t, n, r, i, a), O(n) ? o = "" : O(r) ? o = `>=${n}.0.0 <${+n+1}.0.0-0` : O(i) ? o = `>=${n}.${r}.0 <${n}.${+r+1}.0-0` : a ? (l("replaceTilde pr", a), o = `>=${n}.${r}.${i}-${a} <${n}.${+r+1}.0-0`) : o = `>=${n}.${r}.${i} <${n}.${+r+1}.0-0`, l("tilde return", o), o
     })
   },
-  T = (e, t) => e.trim().split(/\s+/).map(e => S(e, t)).join(" "),
-  S = (e, t) => {
+  I = (e, t) => e.trim().split(/\s+/).map(e => T(e, t)).join(" "),
+  T = (e, t) => {
     l("caret", e, t);
     let n = t.loose ? u[d.CARETLOOSE] : u[d.CARET],
       r = t.includePrerelease ? "-0" : "";
@@ -125,9 +125,9 @@ let a = new(require("./147567.js")),
     })
   },
   N = (e, t) => (l("replaceStars", e, t), e.trim().replace(u[d.STAR], "")),
-  R = (e, t) => (l("replaceGTE0", e, t), e.trim().replace(u[t.includePrerelease ? d.GTE0PRE : d.GTE0], "")),
-  P = e => (t, n, r, i, a, o, s, l, c, u, d, f) => (n = O(r) ? "" : O(i) ? `>=${r}.0.0${e?"-0":""}` : O(a) ? `>=${r}.${i}.0${e?"-0":""}` : o ? `>=${n}` : `>=${n}${e?"-0":""}`, l = O(c) ? "" : O(u) ? `<${+c+1}.0.0-0` : O(d) ? `<${c}.${+u+1}.0-0` : f ? `<=${c}.${u}.${d}-${f}` : e ? `<${c}.${u}.${+d+1}-0` : `<=${l}`, `${n} ${l}`.trim()),
-  D = (e, t, n) => {
+  P = (e, t) => (l("replaceGTE0", e, t), e.trim().replace(u[t.includePrerelease ? d.GTE0PRE : d.GTE0], "")),
+  R = e => (t, n, r, i, a, o, s, l, c, u, d, f) => (n = O(r) ? "" : O(i) ? `>=${r}.0.0${e?"-0":""}` : O(a) ? `>=${r}.${i}.0${e?"-0":""}` : o ? `>=${n}` : `>=${n}${e?"-0":""}`, l = O(c) ? "" : O(u) ? `<${+c+1}.0.0-0` : O(d) ? `<${c}.${+u+1}.0-0` : f ? `<=${c}.${u}.${d}-${f}` : e ? `<${c}.${u}.${+d+1}-0` : `<=${l}`, `${n} ${l}`.trim()),
+  w = (e, t, n) => {
     for (let n = 0; n < e.length; n++)
       if (!e[n].test(t)) returnfalse;
     if (t.prerelease.length && !n.includePrerelease) {

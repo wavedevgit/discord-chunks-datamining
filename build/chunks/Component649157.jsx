@@ -70,20 +70,20 @@ function O() {
       }
       return y(E({}, e), {
         name: (0, r.jsxs)("div", {
-          className: h.option,
+          className: m.option,
           children: [(0, r.jsx)("span", {
-            className: h.localeName,
+            className: m.localeName,
             children: e.name
           }), (0, r.jsx)("span", {
-            className: h.localizedName,
-            children: p.intl.string(e.localizedName)
+            className: m.localizedName,
+            children: _.intl.string(e.localizedName)
           }), (0, r.jsx)("div", {
-            className: h.flag,
+            className: m.flag,
             "aria-hidden": true,
             children: (0, r.jsx)("img", {
               alt: "",
               src: t,
-              className: h.flagImage
+              className: m.flagImage
             })
           })]
         })
@@ -93,9 +93,9 @@ function O() {
       let {
         value: t
       } = e;
-      g(t), m.nextTick(() => {
+      g(t), h.nextTick(() => {
         l.ZP.updateLocale(t), (0, s.Mr3)(f.USER_SETTINGS_MODAL_KEY) && (0, f.openUserSettings)(u.n.LOCALE_PANEL, {
-          section: _.oAB.LOCALE
+          section: p.oAB.LOCALE
         })
       })
     }, []);

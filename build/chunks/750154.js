@@ -2,10 +2,10 @@
 /** chunk id: 750154, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  JE: () => m,
-  Lw: () => _,
-  dS: () => h,
-  rq: () => p
+  JE: () => h,
+  Lw: () => p,
+  dS: () => m,
+  rq: () => _
 }), require("./388685.js"), require("./35282.js");
 var Chunk314897 = require("./314897.js"),
   Chunk592125 = require("./592125.js"),
@@ -18,17 +18,17 @@ let c = "stage:",
   d = 2,
   f = 4;
 
-function _(e, t) {
+function p(e, t) {
   let n = 0,
     i = r.default.getId();
   o.ZP.isSpeaker(i, e.id) && (n |= u);
   let s = a.Z.getGuild(e.getGuildId());
   null != s && (s.features.has(l.GuildFeatures.PARTNERED) && (n |= d), s.features.has(l.GuildFeatures.VERIFIED) && (n |= f));
-  let _ = n.toString(16);
-  return "".concat(c).concat(e.guild_id, ":").concat(e.id, ":").concat(_, ":").concat(t.id)
+  let p = n.toString(16);
+  return "".concat(c).concat(e.guild_id, ":").concat(e.id, ":").concat(p, ":").concat(t.id)
 }
 
-function p(e) {
+function _(e) {
   if (null == e || null == e.party) return;
   let {
     id: t,
@@ -51,12 +51,12 @@ function p(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   return (null == e ? true : e.application_id) === s.gD
 }
 
-function m(e) {
-  let t = p(e);
+function h(e) {
+  let t = _(e);
   if (null == t) returnfalse;
   let {
     channelId: n

@@ -16,13 +16,13 @@ async function s(e, t, s) {
     isEligibleForFeedback: u = true,
     isAuthenticated: d = true,
     emailToken: f,
-    appContext: _
-  } = s, p = (0, a.Gwq)();
+    appContext: p
+  } = s, _ = (0, a.Gwq)();
   try {
-    let s, h = d ? i.s.REPORT_TO_MOD.has(e.name) ? await (0, o.Lo)(e, t) : await (0, o.Nt)(e, t) : await (0, o.B0)(e, t),
-      m = [],
+    let s, m = d ? i.s.REPORT_TO_MOD.has(e.name) ? await (0, o.Lo)(e, t) : await (0, o.Nt)(e, t) : await (0, o.B0)(e, t),
+      h = [],
       g = e => {
-        m.push(e)
+        h.push(e)
       },
       E = e => {
         s = e, null == l || l()
@@ -32,7 +32,7 @@ async function s(e, t, s) {
         default: t
       } = await Promise.all([n.e("61924"), n.e("21976"), n.e("13587"), n.e("62880"), n.e("39380"), n.e("44097"), n.e("54844")]).then(n.bind(n, 186023));
       return n => (0, r.jsx)(t, {
-        menu: h,
+        menu: m,
         reportType: e,
         modalProps: n,
         onNavigate: g,
@@ -42,9 +42,9 @@ async function s(e, t, s) {
       })
     }, {
       onCloseCallback: () => {
-        (0, o.k8)(e, m, s), null == c || c(), u && (0, o.X)(e, null != s ? s : null)
+        (0, o.k8)(e, h, s), null == c || c(), u && (0, o.X)(e, null != s ? s : null)
       },
-      contextKey: null != _ ? (0, a.VnL)(_) : p
+      contextKey: null != p ? (0, a.VnL)(p) : _
     })
   } catch (e) {}
 }

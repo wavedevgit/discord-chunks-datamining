@@ -2,7 +2,7 @@
 /** chunk id: 513202, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -45,8 +45,8 @@ function O(e) {
   return e
 }
 let v = false,
-  I = false;
-class T extends Chunk287545.Z {
+  S = false;
+class I extends Chunk287545.Z {
   _initialize() {
     super._initialize(), Chunk522474.Z.addChangeListener(this.handlePopoutWindowUpdate), Chunk570140.Z.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
   }
@@ -103,8 +103,8 @@ class T extends Chunk287545.Z {
     let {
       location: t,
       applicationId: n
-    } = e, r = (0, m.Z)(t.id, n);
-    (0, h.RI)(r)
+    } = e, r = (0, h.Z)(t.id, n);
+    (0, m.RI)(r)
   }
   releaseWebView() {}
   constructor(...e) {
@@ -121,19 +121,19 @@ class T extends Chunk287545.Z {
       let {
         key: t
       } = e;
-      t === E.KJ3.ACTIVITY_POPOUT && (I = false)
+      t === E.KJ3.ACTIVITY_POPOUT && (S = false)
     }), y(this, "popInActivity", () => {
-      I = true, l.close(E.KJ3.ACTIVITY_POPOUT);
-      let e = _.ZP.getCurrentEmbeddedActivity();
+      S = true, l.close(E.KJ3.ACTIVITY_POPOUT);
+      let e = p.ZP.getCurrentEmbeddedActivity();
       if (null != e) {
-        let t = (0, p.p)(e.location);
+        let t = (0, _.p)(e.location);
         null != t && (0, c.Kh)(t), (0, d.tg)(g.Ez.PANEL)
       }
     }), y(this, "handlePopoutWindowUpdate", () => {
       let e = v,
         t = s.Z.getWindowOpen(E.KJ3.ACTIVITY_POPOUT);
-      if (e && !t && !I) {
-        let e = _.ZP.getCurrentEmbeddedActivity();
+      if (e && !t && !S) {
+        let e = p.ZP.getCurrentEmbeddedActivity();
         null != e && this.leaveActivity({
           location: e.location,
           applicationId: e.applicationId
@@ -143,4 +143,4 @@ class T extends Chunk287545.Z {
     })
   }
 }
-let S = new T
+let T = new I

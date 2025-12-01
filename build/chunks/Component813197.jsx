@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Fq: () => f,
-  ZP: () => p,
+  ZP: () => _,
   Zj: () => u
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
@@ -49,7 +49,7 @@ function f(e, t, n) {
     }
   })
 }
-class _ extends(r = Chunk473749.PureComponent) {
+class p extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this._isMounted = true
   }
@@ -109,9 +109,9 @@ class _ extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-c(_, "defaultProps", {
+c(p, "defaultProps", {
   multiple: true,
   tabIndex: false,
   maxFileSizeBytes: 1 / 0
 });
-let p = _
+let _ = p

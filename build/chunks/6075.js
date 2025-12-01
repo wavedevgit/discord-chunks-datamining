@@ -4,7 +4,7 @@
 require.r(exports), require.d(exports, {
   default: () => C,
   errors: () => N,
-  load: () => R,
+  load: () => P,
   loadView: () => V
 });
 var Chunk822632 = require("./822632.js"),
@@ -32,25 +32,25 @@ var Chunk822632 = require("./822632.js"),
   Chunk890742 = require("./890742.js"),
   A = require("./413135.js").Buffer;
 let C = {
-    load: R,
+    load: P,
     loadView: V,
     errors: Chunk890742.Z
   },
   N = Chunk890742.Z;
 
-function R(e, t = {}) {
-  return P(e) ? (t.async = true, D(e, t).then(e => B(e, t))) : U(e) ? (t.async = true, G(e).then(e => B(e, t))) : B(e, t)
+function P(e, t = {}) {
+  return R(e) ? (t.async = true, w(e, t).then(e => Z(e, t))) : U(e) ? (t.async = true, G(e).then(e => Z(e, t))) : Z(e, t)
 }
 
-function P(e) {
+function R(e) {
   return "string" == typeof e
 }
 
-function D(e, t) {
-  return /^\w+:\/\//.test(e) ? "undefined" != typeof fetch ? w(e, t) : L(e, t) : M(e) ? Promise.resolve((0, r.u0)(e)) : k(e, t)
+function w(e, t) {
+  return /^\w+:\/\//.test(e) ? "undefined" != typeof fetch ? D(e, t) : x(e, t) : j(e) ? Promise.resolve((0, r.u0)(e)) : M(e, t)
 }
 
-function w(e, {
+function D(e, {
   length: t
 } = {}) {
   let n = {
@@ -61,14 +61,14 @@ function w(e, {
   }), fetch(e, n).then(e => e.arrayBuffer())
 }
 
-function L(e, {
+function x(e, {
   length: t
 } = {}) {
   return new Promise((n, r) => {
     let i = {};
     Number.isInteger(t) && t >= 0 && (i.headers = {
       range: `bytes=0-${t-1}`
-    }), x(e)(e, i, e => {
+    }), L(e)(e, i, e => {
       if (e.statusCode >= 200 && e.statusCode <= 299) {
         let t = [];
         e.on("data", e => t.push(A.from(e))), e.on("error", e => r(e)), e.on("end", () => n(A.concat(t)))
@@ -77,19 +77,19 @@ function L(e, {
   })
 }
 
-function x(e) {
+function L(e) {
   return /^https:\/\//.test(e) ? require("https").get : require("http").get
 }
 
-function M(e) {
+function j(e) {
   return /^data:[^;,]*(;base64)?,/.test(e)
 }
 
-function k(e, {
+function M(e, {
   length: t
 } = {}) {
   return new Promise((n, r) => {
-    let i = j();
+    let i = k();
     i.open(e, (a, o) => {
       a ? r(a) : i.stat(e, (a, s) => {
         if (a) r(a);
@@ -111,7 +111,7 @@ function k(e, {
   })
 }
 
-function j() {
+function k() {
   try {
     return require("fs")
   } catch (e) {
@@ -130,11 +130,11 @@ function G(e) {
   })
 }
 
-function B(e, t) {
-  return Z(e) && (e = new Uint8Array(e).buffer), V(F(e), t)
+function Z(e, t) {
+  return B(e) && (e = new Uint8Array(e).buffer), V(F(e), t)
 }
 
-function Z(e) {
+function B(e) {
   try {
     return A.isBuffer(e)
   } catch (e) {
@@ -165,50 +165,50 @@ function V(e, {
     C = {},
     N = [],
     {
-      fileType: R,
-      fileDataOffset: P,
-      jfifDataOffset: D,
-      tiffHeaderOffset: w,
-      iptcDataOffset: L,
-      xmpChunks: x,
-      iccChunks: M,
-      mpfDataOffset: k,
-      pngHeaderOffset: j,
+      fileType: P,
+      fileDataOffset: R,
+      jfifDataOffset: w,
+      tiffHeaderOffset: D,
+      iptcDataOffset: x,
+      xmpChunks: L,
+      iccChunks: j,
+      mpfDataOffset: M,
+      pngHeaderOffset: k,
       pngTextChunks: U,
       pngChunkOffsets: G,
-      vp8xChunkOffset: B,
-      gifHeaderOffset: Z
+      vp8xChunkOffset: Z,
+      gifHeaderOffset: B
     } = s.Z.parseAppMarkers(e, n);
-  if (a.Z.USE_JPEG && a.Z.USE_FILE && H(P)) {
+  if (a.Z.USE_JPEG && a.Z.USE_FILE && H(R)) {
     A = true;
-    let n = u.Z.read(e, P);
+    let n = u.Z.read(e, R);
     t ? C.file = n : C = (0, r.wB)({}, C, n)
   }
-  if (a.Z.USE_JPEG && a.Z.USE_JFIF && W(D)) {
+  if (a.Z.USE_JPEG && a.Z.USE_JFIF && Y(w)) {
     A = true;
-    let n = d.Z.read(e, D);
+    let n = d.Z.read(e, w);
     t ? C.jfif = n : C = (0, r.wB)({}, C, n)
   }
-  if (a.Z.USE_EXIF && Y(w)) {
+  if (a.Z.USE_EXIF && W(D)) {
     A = true;
     let {
       tags: n,
       byteOrder: s
-    } = l.Z.read(e, w, i);
-    if (n.Thumbnail && (C.Thumbnail = n.Thumbnail, delete n.Thumbnail), t ? (C.exif = n, K(C)) : C = (0, r.wB)({}, C, n), a.Z.USE_TIFF && a.Z.USE_IPTC && n["IPTC-NAA"] && !z(L)) {
+    } = l.Z.read(e, D, i);
+    if (n.Thumbnail && (C.Thumbnail = n.Thumbnail, delete n.Thumbnail), t ? (C.exif = n, K(C)) : C = (0, r.wB)({}, C, n), a.Z.USE_TIFF && a.Z.USE_IPTC && n["IPTC-NAA"] && !z(x)) {
       let e = f.Z.read(n["IPTC-NAA"].value, 0, i);
       t ? C.iptc = e : C = (0, r.wB)({}, C, e)
     }
-    if (a.Z.USE_TIFF && a.Z.USE_XMP && n.ApplicationNotes && !q(x)) {
-      let e = _.Z.read((0, r.nZ)(n.ApplicationNotes.value), true, o);
+    if (a.Z.USE_TIFF && a.Z.USE_XMP && n.ApplicationNotes && !q(L)) {
+      let e = p.Z.read((0, r.nZ)(n.ApplicationNotes.value), true, o);
       t ? C.xmp = e : (delete e._raw, C = (0, r.wB)({}, C, e))
     }
     if (a.Z.USE_PHOTOSHOP && n.ImageSourceData && n.PhotoshopSettings) {
-      let e = p.Z.read(n.PhotoshopSettings.value, i);
+      let e = _.Z.read(n.PhotoshopSettings.value, i);
       t ? C.photoshop = e : C = (0, r.wB)({}, C, e)
     }
-    if (a.Z.USE_TIFF && a.Z.USE_ICC && n.ICC_Profile && !X(M)) {
-      let e = h.Z.read(n.ICC_Profile.value, [{
+    if (a.Z.USE_TIFF && a.Z.USE_ICC && n.ICC_Profile && !Q(j)) {
+      let e = m.Z.read(n.ICC_Profile.value, [{
         offset: 0,
         length: n.ICC_Profile.value.length,
         chunkNumber: 1,
@@ -217,39 +217,39 @@ function V(e, {
       t ? C.icc = e : C = (0, r.wB)({}, C, e)
     }
     if (a.Z.USE_MAKER_NOTES && n.MakerNote) {
-      if (Q(n)) {
-        let a = m.Z.read(e, w, n.MakerNote.__offset, s, i);
+      if (X(n)) {
+        let a = h.Z.read(e, D, n.MakerNote.__offset, s, i);
         t ? C.makerNotes = a : C = (0, r.wB)({}, C, a)
       } else if (J(n)) {
-        let a = g.Z.read(e, w, n.MakerNote.__offset, i);
+        let a = g.Z.read(e, D, n.MakerNote.__offset, i);
         t ? C.makerNotes = a : C = (0, r.wB)({}, C, a)
       }
     }
     n.MakerNote && delete n.MakerNote.__offset
   }
-  if (a.Z.USE_JPEG && a.Z.USE_IPTC && z(L)) {
+  if (a.Z.USE_JPEG && a.Z.USE_IPTC && z(x)) {
     A = true;
-    let n = f.Z.read(e, L, i);
+    let n = f.Z.read(e, x, i);
     t ? C.iptc = n : C = (0, r.wB)({}, C, n)
   }
-  if (a.Z.USE_XMP && q(x)) {
+  if (a.Z.USE_XMP && q(L)) {
     A = true;
-    let n = _.Z.read(e, x, o);
+    let n = p.Z.read(e, L, o);
     t ? C.xmp = n : (delete n._raw, C = (0, r.wB)({}, C, n))
   }
-  if ((a.Z.USE_JPEG || a.Z.USE_WEBP) && a.Z.USE_ICC && X(M)) {
+  if ((a.Z.USE_JPEG || a.Z.USE_WEBP) && a.Z.USE_ICC && Q(j)) {
     A = true;
-    let t = h.Z.read(e, M, n);
+    let t = m.Z.read(e, j, n);
     t instanceof Promise ? N.push(t.then(eo)) : eo(t)
   }
-  if (a.Z.USE_MPF && $(k)) {
+  if (a.Z.USE_MPF && $(M)) {
     A = true;
-    let n = c.Z.read(e, k, i);
+    let n = c.Z.read(e, M, i);
     t ? C.mpf = n : C = (0, r.wB)({}, C, n)
   }
-  if (a.Z.USE_PNG && a.Z.USE_PNG_FILE && ee(j)) {
+  if (a.Z.USE_PNG && a.Z.USE_PNG_FILE && ee(k)) {
     A = true;
-    let n = E.Z.read(e, j);
+    let n = E.Z.read(e, k);
     t ? (C.png = C.png ? (0, r.wB)({}, C.png, n) : n, C.pngFile = n) : C = (0, r.wB)({}, C, n)
   }
   if (a.Z.USE_PNG && et(U)) {
@@ -265,20 +265,20 @@ function V(e, {
     let n = y.Z.read(e, G);
     t ? C.png = C.png ? (0, r.wB)({}, C.png, n) : n : C = (0, r.wB)({}, C, n)
   }
-  if (a.Z.USE_WEBP && er(B)) {
+  if (a.Z.USE_WEBP && er(Z)) {
     A = true;
-    let n = O.Z.read(e, B);
+    let n = O.Z.read(e, Z);
     t ? C.riff = C.riff ? (0, r.wB)({}, C.riff, n) : n : C = (0, r.wB)({}, C, n)
   }
-  if (a.Z.USE_GIF && ei(Z)) {
+  if (a.Z.USE_GIF && ei(B)) {
     A = true;
-    let n = v.Z.read(e, Z);
+    let n = v.Z.read(e, B);
     t ? C.gif = C.gif ? (0, r.wB)({}, C.gif, n) : n : C = (0, r.wB)({}, C, n)
   }
-  let F = T.Z.get(C, t);
+  let F = I.Z.get(C, t);
   F && (t ? C.composite = F : C = (0, r.wB)({}, C, F));
-  let ea = (a.Z.USE_JPEG || a.Z.USE_WEBP) && a.Z.USE_EXIF && a.Z.USE_THUMBNAIL && I.Z.get(e, C.Thumbnail, w);
-  if (ea ? (A = true, C.Thumbnail = ea) : delete C.Thumbnail, R && (t ? (C.file || (C.file = {}), C.file.FileType = R) : C.FileType = R, A = true), !A) throw new S.Z.MetadataMissingError;
+  let ea = (a.Z.USE_JPEG || a.Z.USE_WEBP) && a.Z.USE_EXIF && a.Z.USE_THUMBNAIL && S.Z.get(e, C.Thumbnail, D);
+  if (ea ? (A = true, C.Thumbnail = ea) : delete C.Thumbnail, P && (t ? (C.file || (C.file = {}), C.file.FileType = P) : C.FileType = P, A = true), !A) throw new T.Z.MetadataMissingError;
   if (n) return Promise.all(N).then(() => C);
   return C;
 
@@ -301,11 +301,11 @@ function H(e) {
   return true !== e
 }
 
-function W(e) {
+function Y(e) {
   return true !== e
 }
 
-function Y(e) {
+function W(e) {
   return true !== e
 }
 
@@ -331,11 +331,11 @@ function q(e) {
   return Array.isArray(e) && e.length > 0
 }
 
-function X(e) {
+function Q(e) {
   return Array.isArray(e) && e.length > 0
 }
 
-function Q(e) {
+function X(e) {
   return e.Make && e.Make.value && Array.isArray(e.Make.value) && "Canon" === e.Make.value[0] && e.MakerNote && e.MakerNote.__offset
 }
 

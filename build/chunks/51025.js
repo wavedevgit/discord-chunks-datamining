@@ -5,16 +5,16 @@ require.d(exports, {
   A1: () => C,
   LO: () => y,
   S1: () => E,
-  Wx: () => P,
-  XT: () => D,
+  Wx: () => R,
+  XT: () => w,
   al: () => N,
   cG: () => O,
-  li: () => I,
+  li: () => S,
   ob: () => b,
-  pC: () => T,
-  v4: () => S,
+  pC: () => I,
+  v4: () => T,
   wO: () => A,
-  wi: () => R
+  wi: () => P
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -33,7 +33,7 @@ var Chunk544891 = require("./544891.js"),
 let g = 64;
 
 function E(e, t) {
-  _.Z.init({
+  p.Z.init({
     userToken: e,
     userId: t,
     installPaths: c.Z.installationPaths,
@@ -66,7 +66,7 @@ function y(e) {
     installationPath: o,
     analyticsLocation: s
   } = e;
-  _.Z.setTargetManifest({
+  p.Z.setTargetManifest({
     applicationId: t.id,
     applicationName: t.name,
     applicationIcon: t.icon,
@@ -79,7 +79,7 @@ function y(e) {
     applicationId: t.id,
     branchId: n,
     installationPath: o
-  }), u.default.track(h.rMx.LIBRARY_INSTALL_INITIATED, {
+  }), u.default.track(m.rMx.LIBRARY_INSTALL_INITIATED, {
     application_id: t.id,
     application_name: t.name,
     sku_id: t.primarySkuId,
@@ -88,13 +88,13 @@ function y(e) {
 }
 
 function O(e, t, n) {
-  (0, p.l)(e.id, t).then(() => {
+  (0, _.l)(e.id, t).then(() => {
     i.Z.dispatch({
       type: "DISPATCH_APPLICATION_REPAIR",
       applicationId: e.id,
       branchId: t
     })
-  }), u.default.track(h.rMx.LIBRARY_REPAIR_INITIATED, {
+  }), u.default.track(m.rMx.LIBRARY_REPAIR_INITIATED, {
     application_id: e.id,
     application_name: e.name,
     sku_id: e.primarySkuId,
@@ -106,7 +106,7 @@ function v(e, t, n, r) {
   if (o.ZP.getRunningDiscordApplicationIds().includes(e.id)) return;
   let i = c.Z.getInstallationPath(e.id, t);
   if (null == i) throw Error("Missing installation path for application: ".concat(e.id, " ").concat(t));
-  _.Z.setTargetManifest({
+  p.Z.setTargetManifest({
     applicationId: e.id,
     applicationName: e.name,
     applicationIcon: e.icon,
@@ -117,7 +117,7 @@ function v(e, t, n, r) {
   })
 }
 
-function I(e, t, n, r) {
+function S(e, t, n, r) {
   let a = arguments.length > 4 && true !== arguments[4] && arguments[4];
   v(e, t, n, r), i.Z.dispatch({
     type: "DISPATCH_APPLICATION_UPDATE",
@@ -127,21 +127,21 @@ function I(e, t, n, r) {
   })
 }
 
-function T(e, t, n) {
+function I(e, t, n) {
   let r = a.Z.getApplication(e);
-  null != r && (f.Z.removeShortcuts(r.name), u.default.track(h.rMx.LIBRARY_UNINSTALL_INITIATED, {
+  null != r && (f.Z.removeShortcuts(r.name), u.default.track(m.rMx.LIBRARY_UNINSTALL_INITIATED, {
     application_id: r.id,
     application_name: r.name,
     sku_id: r.primarySkuId,
     location: n
-  })), _.Z.uninstall(e, t), i.Z.dispatch({
+  })), p.Z.uninstall(e, t), i.Z.dispatch({
     type: "DISPATCH_APPLICATION_UNINSTALL",
     applicationId: e,
     branchId: t
   })
 }
 
-function S() {
+function T() {
   Chunk830168.Z.resume()
 }
 
@@ -158,14 +158,14 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  _.Z.cancel(e, t), i.Z.dispatch({
+  p.Z.cancel(e, t), i.Z.dispatch({
     type: "DISPATCH_APPLICATION_CANCEL",
     applicationId: e,
     branchId: t
   })
 }
 
-function R(e, t) {
+function P(e, t) {
   i.Z.dispatch({
     type: "DISPATCH_APPLICATION_REMOVE_FINISHED",
     applicationId: e,
@@ -173,27 +173,27 @@ function R(e, t) {
   })
 }
 
-function P(e, t) {
+function R(e, t) {
   let n = a.Z.getApplication(e);
   null != n && f.Z.createShortcuts(l.Xc.getSetting(), l.Pe.getSetting(), n.name, n.id, t.installPath)
 }
 
-function D(e, t) {
+function w(e, t) {
   let i = a.Z.getApplication(e);
   r.tn.post({
-    url: h.ANM.LIBRARY_APPLICATION_INSTALLED(e, e),
+    url: m.ANM.LIBRARY_APPLICATION_INSTALLED(e, e),
     oldFormErrors: true,
     rejectWithError: true
   }), null != i && (f.Z.createShortcuts(l.Xc.getSetting(), l.Pe.getSetting(), i.name, i.id, t.installPath), Promise.resolve().then(n.bind(n, 292556)).then(e => {
     let {
       default: t
     } = e;
-    t.showNotification(i.getIconURL(g), m.intl.string(m.t["1wR7yI"]), m.intl.formatToPlainString(m.t["89VAgW"], {
+    t.showNotification(i.getIconURL(g), h.intl.string(h.t["1wR7yI"]), h.intl.formatToPlainString(h.t["89VAgW"], {
       name: i.name
     }), {
       notif_type: "Game Library Game Installed"
     }, {
-      onClick: () => (0, s.uL)(h.Z5c.APPLICATION_LIBRARY),
+      onClick: () => (0, s.uL)(m.Z5c.APPLICATION_LIBRARY),
       omitViewTracking: true,
       isUserAvatar: false
     })

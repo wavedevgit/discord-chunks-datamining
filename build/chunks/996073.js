@@ -2,7 +2,7 @@
 /** chunk id: 996073, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -46,7 +46,7 @@ let f = Object.freeze({
     [Chunk526761.KQ.ContentAndSocialScrollPositions.RESTRICTED_ACCOUNTS]: Chunk981631.oAB.CONTENT_AND_SOCIAL,
     [Chunk526761.KQ.AccountScrollPositions.DISABLE_ACCOUNT]: Chunk981631.oAB.ACCOUNT
   }),
-  _ = function(e, t, n) {
+  p = function(e, t, n) {
     let l = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 0,
       c = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
       u = (0, i.e7)([s.Z], () => s.Z.getScrollPosition());

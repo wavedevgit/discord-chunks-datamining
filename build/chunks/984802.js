@@ -2,8 +2,8 @@
 /** chunk id: 984802, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A6: () => _,
-  Ll: () => p,
+  A6: () => p,
+  Ll: () => _,
   Zp: () => f
 });
 var Chunk442837 = require("./442837.js"),
@@ -35,12 +35,12 @@ function f() {
   return d(Chunk210887.Z, Chunk740492.ZP, Chunk514361.Z, module, exports)
 }
 
-function _() {
+function p() {
   let e = Chunk695346.L1.useSetting(),
     t = (0, Chunk233398.Ig)(e => e.isEditorActive());
   return (0, Chunk442837.e7)([Chunk210887.Z, Chunk740492.ZP, Chunk514361.Z], () => d(Chunk210887.Z, Chunk740492.ZP, Chunk514361.Z, module, exports))
 }
 
-function p() {
-  return _() ? Chunk981631.BRd.DARK : true
+function _() {
+  return p() ? Chunk981631.BRd.DARK : true
 }

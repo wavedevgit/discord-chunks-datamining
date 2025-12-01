@@ -2,32 +2,32 @@
 /** chunk id: 290511, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BN: () => M,
+  BN: () => j,
   FN: () => v,
   NE: () => d,
   NO: () => f,
-  Ni: () => w,
-  Oq: () => D,
-  RF: () => S,
-  Un: () => I,
+  Ni: () => D,
+  Oq: () => w,
+  RF: () => T,
+  Un: () => S,
   X: () => b,
-  YW: () => _,
-  a4: () => x,
+  YW: () => p,
+  a4: () => L,
   ae: () => A,
   b3: () => g,
-  cf: () => P,
+  cf: () => R,
   dr: () => N,
   fY: () => y,
   iU: () => u,
-  kk: () => m,
+  kk: () => h,
   l7: () => O,
   md: () => E,
-  qm: () => p,
-  rZ: () => j,
-  t9: () => k,
+  qm: () => _,
+  rZ: () => k,
+  t9: () => M,
   yZ: () => C,
-  yx: () => h,
-  zz: () => T
+  yx: () => m,
+  zz: () => I
 }), require("./953529.js"), require("./388685.js"), require("./35282.js"), require("./539854.js");
 var Chunk348327 = require("./348327.js"),
   i = require.n(Chunk348327),
@@ -55,10 +55,10 @@ function c(e, t) {
 let u = 100,
   d = 50,
   f = 100,
-  _ = 15,
-  p = 50,
-  h = 10,
-  m = 100,
+  p = 15,
+  _ = 50,
+  m = 10,
+  h = 100,
   g = 4,
   E = 7,
   b = 5,
@@ -69,14 +69,14 @@ var O = function(e) {
   v = function(e) {
     return e[e.MULTIPLE_CHOICE = 0] = "MULTIPLE_CHOICE", e[e.DROPDOWN = 1] = "DROPDOWN", e
   }({}),
-  I = function(e) {
+  S = function(e) {
     return e[e.ONBOARDING_DEFAULT = 0] = "ONBOARDING_DEFAULT", e[e.ONBOARDING_ADVANCED = 1] = "ONBOARDING_ADVANCED", e
   }({}),
-  T = function(e) {
+  I = function(e) {
     return e[e.APPLICATION = 0] = "APPLICATION", e[e.PROVIDER_CONNECTED_ACCOUNT = 1] = "PROVIDER_CONNECTED_ACCOUNT", e
   }({});
 
-function S(e) {
+function T(e) {
   if (e.options.length > 0) returnfalse;
   let t = A(),
     {
@@ -140,7 +140,7 @@ function N(e) {
   }
 }
 
-function R(e) {
+function P(e) {
   return {
     id: e.id,
     options: e.options.map(e => {
@@ -163,10 +163,10 @@ function R(e) {
   }
 }
 
-function P(e) {
+function R(e) {
   var t, n, r, i;
   return {
-    prompts: e.prompts.map(R),
+    prompts: e.prompts.map(P),
     defaultChannelIds: e.default_channel_ids,
     responses: null != (t = e.responses) ? t : [],
     mode: e.mode,
@@ -178,17 +178,17 @@ function P(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   return null == e || null == e.id && null == e.name
 }
-let w = new Set([Chunk981631.ABu.PLAYSTATION_STAGING, Chunk981631.ABu.CONTACTS, Chunk981631.ABu.DOMAIN, Chunk981631.ABu.TWITTER_LEGACY, Chunk981631.ABu.MASTODON, Chunk981631.ABu.INSTAGRAM, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.SKYPE]),
-  L = Object.values(Chunk981631.ABu).filter(e => !w.has(e));
+let D = new Set([Chunk981631.ABu.PLAYSTATION_STAGING, Chunk981631.ABu.CONTACTS, Chunk981631.ABu.DOMAIN, Chunk981631.ABu.TWITTER_LEGACY, Chunk981631.ABu.MASTODON, Chunk981631.ABu.INSTAGRAM, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.SKYPE]),
+  x = Object.values(Chunk981631.ABu).filter(e => !D.has(e));
 
-function x(e) {
+function L(e) {
   return 0 === e.connection_type ? "app:".concat(e.application_id) : "provider:".concat(e.provider_id)
 }
 
-function M(e) {
+function j(e) {
   let [t, n] = e.split(":");
   return "app" === t && true !== n && "" !== n ? {
     type: 0,
@@ -199,18 +199,18 @@ function M(e) {
   } : null
 }
 
-function k(e) {
+function M(e) {
   let t = [];
-  return 0 !== e.connection_type && 1 !== e.connection_type ? t.push("Invalid connection type") : (0 === e.connection_type ? ((0, a.Ew)(e.application_id) && t.push("Application ID is required for application connections"), (0, a.Ew)(e.provider_id) || t.push("Platform ID not allowed for application connections")) : 1 === e.connection_type && ((0, a.Ew)(e.provider_id) ? t.push("Platform ID is required for platform connections") : L.includes(e.provider_id) || t.push("Invalid platform ID"), (0, a.Ew)(e.application_id) || t.push("Application ID not allowed for platform connections")), null != e.description && e.description.length > m && t.push("Description must be ".concat(m, " characters or less"))), t
+  return 0 !== e.connection_type && 1 !== e.connection_type ? t.push("Invalid connection type") : (0 === e.connection_type ? ((0, a.Ew)(e.application_id) && t.push("Application ID is required for application connections"), (0, a.Ew)(e.provider_id) || t.push("Platform ID not allowed for application connections")) : 1 === e.connection_type && ((0, a.Ew)(e.provider_id) ? t.push("Platform ID is required for platform connections") : x.includes(e.provider_id) || t.push("Invalid platform ID"), (0, a.Ew)(e.application_id) || t.push("Application ID not allowed for platform connections")), null != e.description && e.description.length > h && t.push("Description must be ".concat(h, " characters or less"))), t
 }
 
-function j(e) {
+function k(e) {
   let t = [],
     n = new Set;
   for (let [r, i] of e.entries()) {
-    let e = k(i);
+    let e = M(i);
     t.push(...e.map(e => "Connection ".concat(r + 1, ": ").concat(e)));
-    let a = x(i);
+    let a = L(i);
     n.has(a) && t.push("Duplicate connection configuration"), n.add(a)
   }
   return t

@@ -24,7 +24,7 @@ var r, Chunk348327 = require("./348327.js"),
   Chunk797258 = require("./797258.js"),
   Chunk981631 = require("./981631.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,20 +32,20 @@ function I(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = false,
-  S = Chunk981631.Skl.ONLINE,
+let I = false,
+  T = Chunk981631.Skl.ONLINE,
   A = Chunk981631.Skl.UNKNOWN,
   C = 0,
   N = [],
-  R = [],
-  P = false,
-  D = true,
-  w = Object.freeze([]),
-  L = Object.freeze([]),
-  x = [],
-  M = [];
+  P = [],
+  R = false,
+  w = true,
+  D = Object.freeze([]),
+  x = Object.freeze([]),
+  L = [],
+  j = [];
 
-function k(e) {
+function M(e) {
   if (0 === e.length) return e;
   let t = [],
     n = [];
@@ -53,13 +53,13 @@ function k(e) {
   return 0 === n.length || 1 === n.length ? e : [...t, [...n].sort(y.f)[0]].sort(y.f)
 }
 
-function j(e) {
-  return (0, h.OT)(e, E.Z)
+function k(e) {
+  return (0, m.OT)(e, E.Z)
 }
 
 function U(e) {
-  let t = m.Z.getGameByName(e);
-  return null != t ? j(t.id) : _.G6.getSetting()
+  let t = h.Z.getGameByName(e);
+  return null != t ? k(t.id) : p.G6.getSetting()
 }
 
 function G(e) {
@@ -68,79 +68,79 @@ function G(e) {
   switch (e.type) {
     case v.IIU.LISTENING:
       if ((0, d.Z)(e)) return f.Z.shouldShowActivity();
-      if (null != e.application_id) return j(e.application_id);
+      if (null != e.application_id) return k(e.application_id);
       returnfalse;
     case v.IIU.PLAYING:
-      return null != e.application_id ? j(e.application_id) : U(e.name);
+      return null != e.application_id ? k(e.application_id) : U(e.name);
     case v.IIU.STREAMING:
     case v.IIU.WATCHING:
     default:
-      return null == e.application_id || j(e.application_id)
+      return null == e.application_id || k(e.application_id)
   }
-}
-
-function B() {
-  D = true, A = S, Z()
 }
 
 function Z() {
+  w = true, A = T, B()
+}
+
+function B() {
   var e;
-  if (C = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, P = Chunk517100.Z.isAFK(), D) S = A;
-  else if (T) S = Chunk981631.Skl.INVISIBLE;
+  if (C = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, R = Chunk517100.Z.isAFK(), w) T = A;
+  else if (I) T = Chunk981631.Skl.INVISIBLE;
   else {
     let e = Chunk695346.co.getSetting();
-    S = module !== Chunk981631.Skl.UNKNOWN ? module : Chunk981631.Skl.ONLINE
+    T = module !== Chunk981631.Skl.UNKNOWN ? module : Chunk981631.Skl.ONLINE
   }
-  S === Chunk981631.Skl.ONLINE && C > 0 && (S = Chunk981631.Skl.IDLE);
+  T === Chunk981631.Skl.ONLINE && C > 0 && (T = Chunk981631.Skl.IDLE);
   let t = false,
-    n = D || S === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
-  a()(N, require) || (N = require, R = k(require), t = true);
+    n = w || T === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
+  a()(N, require) || (N = require, P = M(require), t = true);
   let r = Chunk797258.Z.getRemoteActivities();
-  w !== r && (w = r, t = true);
+  D !== r && (D = r, t = true);
   let i = Chunk797258.Z.getHiddenActivities();
-  L !== Chunk348327 && (L = Chunk348327), exports && (M = k(x = s()([...N, ...w.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
+  x !== Chunk348327 && (x = Chunk348327), exports && (j = M(L = s()([...N, ...D.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
 }
 
 function F(e) {
-  return T = e.invisible, Z()
+  return I = e.invisible, B()
 }
 
 function V() {
-  return T = false, Z()
+  return I = false, B()
 }
 
 function H() {
-  D = false, A = Chunk981631.Skl.UNKNOWN, Z(), Chunk158776.Z.setCurrentUserOnConnectionOpen(S, x)
+  w = false, A = Chunk981631.Skl.UNKNOWN, B(), Chunk158776.Z.setCurrentUserOnConnectionOpen(T, L)
 }
 
-function W() {
+function Y() {
   H()
 }
-class Y extends(r = Chunk442837.ZP.Store) {
+class W extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk77498.Z, Chunk517100.Z, Chunk283595.Z, Chunk293273.Z, Chunk158776.Z, Chunk797258.Z, Chunk768419.Z, Chunk581883.Z), this.syncWith([Chunk293273.Z], Z)
+    this.waitFor(Chunk77498.Z, Chunk517100.Z, Chunk283595.Z, Chunk293273.Z, Chunk158776.Z, Chunk797258.Z, Chunk768419.Z, Chunk581883.Z), this.syncWith([Chunk293273.Z], B)
   }
   getLocalPresence() {
     return {
-      status: S,
+      status: T,
       since: C,
-      activities: R,
-      afk: P
+      activities: P,
+      afk: R
     }
   }
   getStatus() {
-    return S
+    return T
   }
   getActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return module ? M : R
+    return module ? j : P
   }
   getUnfilteredActivities() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return module ? x : N
+    return module ? L : N
   }
   getHiddenActivities() {
-    return L
+    return x
   }
   getPrimaryActivity() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
@@ -155,27 +155,27 @@ class Y extends(r = Chunk442837.ZP.Store) {
     return this.getActivities(t).find(e)
   }
 }
-I(Y, "displayName", "SelfPresenceStore");
-let K = new Y(Chunk570140.Z, {
-  START_SESSION: Z,
-  CONNECTION_OPEN: W,
+S(W, "displayName", "SelfPresenceStore");
+let K = new W(Chunk570140.Z, {
+  START_SESSION: B,
+  CONNECTION_OPEN: Y,
   CONNECTION_OPEN_SUPPLEMENTAL: H,
   OVERLAY_INITIALIZE: H,
-  CONNECTION_CLOSED: Z,
-  IDLE: Z,
-  AFK: Z,
-  RUNNING_GAMES_CHANGE: Z,
-  STREAMING_UPDATE: Z,
-  USER_SETTINGS_PROTO_UPDATE: Z,
-  LOCAL_ACTIVITY_UPDATE: Z,
-  SPOTIFY_PLAYER_STATE: Z,
-  SPOTIFY_PLAYER_PLAY: Z,
-  USER_CONNECTIONS_UPDATE: Z,
-  SESSIONS_REPLACE: Z,
-  RPC_APP_DISCONNECTED: Z,
-  LIBRARY_FETCH_SUCCESS: Z,
-  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: Z,
-  LOGOUT: B,
+  CONNECTION_CLOSED: B,
+  IDLE: B,
+  AFK: B,
+  RUNNING_GAMES_CHANGE: B,
+  STREAMING_UPDATE: B,
+  USER_SETTINGS_PROTO_UPDATE: B,
+  LOCAL_ACTIVITY_UPDATE: B,
+  SPOTIFY_PLAYER_STATE: B,
+  SPOTIFY_PLAYER_PLAY: B,
+  USER_CONNECTIONS_UPDATE: B,
+  SESSIONS_REPLACE: B,
+  RPC_APP_DISCONNECTED: B,
+  LIBRARY_FETCH_SUCCESS: B,
+  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: B,
+  LOGOUT: Z,
   FORCE_INVISIBLE: F,
   WINDOW_FOCUS: V
 })

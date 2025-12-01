@@ -2,30 +2,30 @@
 /** chunk id: 267642, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A3: () => S,
-  FZ: () => T,
-  Hl: () => Q,
+  A3: () => T,
+  FZ: () => I,
+  Hl: () => X,
   Je: () => N,
-  Jh: () => x,
-  KK: () => Y,
-  Oe: () => I,
+  Jh: () => L,
+  KK: () => W,
+  Oe: () => S,
   Qi: () => F,
   Ro: () => O,
   _k: () => G,
-  _p: () => w,
-  aq: () => j,
-  cP: () => R,
-  e9: () => D,
+  _p: () => D,
+  aq: () => k,
+  cP: () => P,
+  e9: () => w,
   ee: () => z,
-  gZ: () => Z,
-  ge: () => L,
+  gZ: () => B,
+  ge: () => x,
   ig: () => A,
   nL: () => H,
-  nW: () => P,
-  tb: () => M,
+  nW: () => R,
+  tb: () => j,
   tl: () => K,
-  vx: () => k,
-  y4: () => W,
+  vx: () => M,
+  y4: () => Y,
   yw: () => V
 }), require("./583741.js"), require("./415506.js"), require("./388685.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
@@ -62,12 +62,12 @@ var O = function(e) {
   return e[e.EMOJI = 1] = "EMOJI", e[e.AUDIO = 2] = "AUDIO", e[e.ANIMATED = 3] = "ANIMATED", e[e.CUSTOMIZATION = 4] = "CUSTOMIZATION", e[e.UPLOAD = 5] = "UPLOAD", e[e.VANITY = 6] = "VANITY", e[e.STREAM = 7] = "STREAM", e[e.STICKER = 8] = "STICKER", e[e.CUSTOM_ROLE_ICON = 11] = "CUSTOM_ROLE_ICON", e[e.STAGE_VIDEO = 12] = "STAGE_VIDEO", e[e.SOUNDBOARD = 13] = "SOUNDBOARD", e
 }({});
 let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, Chunk981631.Eu4.TIER_3],
-  I = v.slice().reverse(),
-  T = e => {
+  S = v.slice().reverse(),
+  I = e => {
     var t;
-    return e === g.Eu4.NONE ? g.Eu4.TIER_1 : null == (t = B.find(t => t.tier === e)) ? true : t.nextTier
+    return e === g.Eu4.NONE ? g.Eu4.TIER_1 : null == (t = Z.find(t => t.tier === e)) ? true : t.nextTier
   },
-  S = (e, t) => null != t && t.features.has(g.GuildFeatures.MORE_STICKERS) && e === g.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : b.$8[e],
+  T = (e, t) => null != t && t.features.has(g.GuildFeatures.MORE_STICKERS) && e === g.Eu4.TIER_3 ? a.D.MAX_STICKER_SLOTS : b.$8[e],
   A = e => b.pH[e],
   C = (e, t) => null != t && t.features.has(g.GuildFeatures.MORE_SOUNDBOARD) ? b.w1 : b._k[e],
   N = e => {
@@ -75,7 +75,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     let t = v[v.indexOf(e) - 1];
     return b._k[e] - b._k[t]
   },
-  R = e => [{
+  P = e => [{
     tier: g.Eu4.TIER_1,
     title: y.intl.string(y.t["lK+WOT"]),
     perks: [{
@@ -88,7 +88,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.formatToPlainString(y.t["/9p2/g"], {
         adding: A(g.Eu4.TIER_1),
-        total: S(g.Eu4.TIER_1)
+        total: T(g.Eu4.TIER_1)
       }),
       description: y.intl.string(y.t.JfsnDQ),
       icon: 8
@@ -117,7 +117,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
       title: y.intl.string(y.t.cObMZD),
       description: y.intl.string(y.t["puH/9R"]),
       icon: 7
-    }].filter(_.lm)
+    }].filter(p.lm)
   }, {
     tier: g.Eu4.TIER_2,
     title: y.intl.string(y.t["34GpBc"]),
@@ -131,7 +131,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.formatToPlainString(y.t["/9p2/g"], {
         adding: A(g.Eu4.TIER_2),
-        total: S(g.Eu4.TIER_2)
+        total: T(g.Eu4.TIER_2)
       }),
       description: y.intl.string(y.t.t4TM28),
       icon: 8
@@ -176,7 +176,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
         limit: g.eez
       }),
       icon: 12
-    } : null].filter(_.lm)
+    } : null].filter(p.lm)
   }, {
     tier: g.Eu4.TIER_3,
     title: y.intl.string(y.t.P7LdcQ),
@@ -190,7 +190,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.formatToPlainString(y.t["/9p2/g"], {
         adding: A(g.Eu4.TIER_3),
-        total: S(g.Eu4.TIER_3)
+        total: T(g.Eu4.TIER_3)
       }),
       description: y.intl.string(y.t["+ZI4QZ"]),
       icon: 8
@@ -210,7 +210,7 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
     }, {
       title: y.intl.string(y.t.C2w2cM),
       description: y.intl.format(y.t["3Reosx"], {
-        helpdeskArticle: p.Z.getArticleURL(g.BhN.GUILD_VANITY_URL)
+        helpdeskArticle: _.Z.getArticleURL(g.BhN.GUILD_VANITY_URL)
       }),
       icon: 6
     }, {
@@ -233,10 +233,10 @@ let v = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, C
         limit: g.RcX
       }),
       icon: 12
-    } : null].filter(_.lm)
+    } : null].filter(p.lm)
   }];
 
-function P(e) {
+function R(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
       useLevels: n = true
@@ -255,7 +255,7 @@ function P(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   switch (e) {
     case g.Eu4.NONE:
       return y.intl.string(y.t.LcKgJd);
@@ -269,29 +269,29 @@ function D(e) {
       throw Error("Not a valid tier type")
   }
 }
-let w = i().memoize(e => b.HO[g.Eu4.TIER_1].features.includes(e) ? g.Eu4.TIER_1 : b.HO[g.Eu4.TIER_2].features.includes(e) ? g.Eu4.TIER_2 : b.HO[g.Eu4.TIER_3].features.includes(e) ? g.Eu4.TIER_3 : null),
-  L = e => e === g.Eu4.NONE ? g.AnalyticsObjectTypes.NONE : e === g.Eu4.TIER_1 ? g.AnalyticsObjectTypes.TIER_1 : e === g.Eu4.TIER_2 ? g.AnalyticsObjectTypes.TIER_2 : e === g.Eu4.TIER_3 ? g.AnalyticsObjectTypes.TIER_3 : null;
+let D = i().memoize(e => b.HO[g.Eu4.TIER_1].features.includes(e) ? g.Eu4.TIER_1 : b.HO[g.Eu4.TIER_2].features.includes(e) ? g.Eu4.TIER_2 : b.HO[g.Eu4.TIER_3].features.includes(e) ? g.Eu4.TIER_3 : null),
+  x = e => e === g.Eu4.NONE ? g.AnalyticsObjectTypes.NONE : e === g.Eu4.TIER_1 ? g.AnalyticsObjectTypes.TIER_1 : e === g.Eu4.TIER_2 ? g.AnalyticsObjectTypes.TIER_2 : e === g.Eu4.TIER_3 ? g.AnalyticsObjectTypes.TIER_3 : null;
 
-function x(e) {
+function L(e) {
   var t;
   let n = null == (t = c.Z.getGuild(e)) ? true : t.premiumTier;
   return null != n ? n : g.Eu4.NONE
 }
 
-function M(e, t) {
+function j(e, t) {
   return null == t || null != e && e >= t
 }
 
-function k(e) {
+function M(e) {
   return i().values(e).filter(e => e.isAvailable())
 }
 
-function j(e) {
+function k(e) {
   let {
     fractionalState: t
   } = e, n = d.Z.getPremiumTypeSubscription();
   u.Z.hasFetched || u.Z.isFetching || (0, o.X8)();
-  let r = k(u.Z.boostSlots),
+  let r = M(u.Z.boostSlots),
     i = null == n ? true : n.isPausedOrPausePending,
     a = r.length > 0;
   if (i && t === b.a$.NONE && !a) return y.intl.string(y.t.mOWsF1);
@@ -307,8 +307,8 @@ function j(e) {
   if (n.status === g.O0b.ACCOUNT_HOLD) return y.intl.string(y.t.JakNQ8);
   if (l > 0) return y.intl.string(y.t.x25mZR);
   if (null == n.renewalMutations) return null;
-  let c = h.uV(n.renewalMutations.additionalPlans);
-  return h.uV(n.additionalPlans) > c ? y.intl.string(y.t.x25mZR) : y.intl.string(y.t["W/bb8f"])
+  let c = m.uV(n.renewalMutations.additionalPlans);
+  return m.uV(n.additionalPlans) > c ? y.intl.string(y.t.x25mZR) : y.intl.string(y.t["W/bb8f"])
 }
 
 function U(e) {
@@ -318,12 +318,12 @@ function U(e) {
 function G(e, t) {
   var n;
   if ((null == (n = c.Z.getGuild(t)) ? true : n.features.has(g.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true) return 0;
-  let r = x(t),
+  let r = L(t),
     i = g.oCV[r],
     a = e.filter(e => null != e.endsAt);
   return i - (e.length - a.length)
 }
-let B = [{
+let Z = [{
   tier: Chunk981631.Eu4.TIER_3,
   amount: Chunk981631.oCV[Chunk981631.Eu4.TIER_3],
   nextTier: null
@@ -337,17 +337,17 @@ let B = [{
   nextTier: Chunk981631.Eu4.TIER_2
 }];
 
-function Z(e, t) {
+function B(e, t) {
   let n = G(e, t);
   if (n > 0) {
     let r = U(e).filter(e => null != e.endsAt),
       i = r.length - n;
-    i < 0 && m.Z.addBreadcrumb({
+    i < 0 && h.Z.addBreadcrumb({
       category: "premium",
       message: "Negative index while checking grace period ending date.",
       data: {
         subscriptionLength: e.length,
-        subscriptionsNeededForPremiumTier: g.oCV[x(t)],
+        subscriptionsNeededForPremiumTier: g.oCV[L(t)],
         endingSubscriptionLength: r.length
       }
     });
@@ -362,8 +362,8 @@ function F(e, t) {
     r = v.indexOf(t);
   if (false === r) return 0;
   let i = v[r - 1],
-    a = null != i ? S(i) : 0,
-    o = S(t);
+    a = null != i ? T(i) : 0,
+    o = T(t);
   return Math.max(0, n - e.slice(a, o).length)
 }
 
@@ -377,13 +377,13 @@ function H(e) {
   return Math.max(e.features.has(g.GuildFeatures.MORE_SOUNDBOARD) ? b.w1 : b.XB, r)
 }
 
-function W(e) {
+function Y(e) {
   var t, n;
   let r = E.xD + (null != (n = null == (t = e.premiumFeatures) ? true : t.additionalEmojiSlots) ? n : 0);
   return Math.max(e.features.has(g.GuildFeatures.MORE_EMOJI) ? E.IE : E.xD, r)
 }
 
-function Y(e, t) {
+function W(e, t) {
   let n = (0, s.I)(e.id).available;
   return Math.max(0, g.oCV[t] - n)
 }
@@ -395,28 +395,28 @@ function K(e) {
 
 function z(e) {
   var t;
-  return null != (t = I.find(t => e >= g.oCV[t])) ? t : g.Eu4.NONE
+  return null != (t = S.find(t => e >= g.oCV[t])) ? t : g.Eu4.NONE
 }
 
 function q(e) {
   var t;
   return null != (t = v.find(t => e < g.oCV[t])) ? t : g.Eu4.TIER_3
 }
-let X = {
+let Q = {
   [Chunk981631.Eu4.NONE]: 0,
   [Chunk981631.Eu4.TIER_1]: 1 / 3,
   [Chunk981631.Eu4.TIER_2]: 2 / 3,
   [Chunk981631.Eu4.TIER_3]: 1
 };
 
-function Q(e) {
+function X(e) {
   let t = (0, l.I)(e.id),
     n = z(t),
     r = q(t),
     i = g.oCV[n],
     a = (t - i) / (g.oCV[r] - i),
-    o = X[n],
-    s = X[r];
+    o = Q[n],
+    s = Q[r];
   return {
     fillFactor: n === g.Eu4.TIER_3 ? 1 : a * (s - o) + o,
     totalAvailableBoostsCount: t

@@ -55,15 +55,15 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function I(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,7 +71,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -86,24 +86,24 @@ let A = e => {
   } = e, {
     giftRecipient: y,
     selectedGiftStyle: v,
-    setSelectedGiftStyle: S,
+    setSelectedGiftStyle: T,
     emojiConfetti: A,
     soundEffect: C,
     setEmojiConfetti: N,
-    setSoundEffect: R
-  } = (0, c.wD)(), [P, D] = i.useState(false), w = i.useRef(null), L = (0, s.Jb)({
+    setSoundEffect: P
+  } = (0, c.wD)(), [R, w] = i.useState(false), D = i.useRef(null), x = (0, s.Jb)({
     orientation: "horizontal"
   }), {
-    ref: x
-  } = L, M = T(L, ["ref"]), k = (0, d.MY)(y, t), j = k === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = k !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.Z)({
+    ref: L
+  } = x, j = I(x, ["ref"]), M = (0, d.MY)(y, t), k = M === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== d.xr.DEFAULT, G = (0, _.m)(), Z = (0, p.Z)({
     location: "GiftAnimationOptions"
-  }), Z = e => {
-    null != R && R(null == e ? true : e)
+  }), B = e => {
+    null != P && P(null == e ? true : e)
   };
   return (0, r.jsxs)("div", {
     children: [U && (0, r.jsxs)("div", {
       className: o()(b.giftMainAnimation, n),
-      children: [null != v ? (0, r.jsx)(h.Z, {
+      children: [null != v ? (0, r.jsx)(m.Z, {
         giftStyle: v,
         defaultAnimationState: f.SR.ACTION,
         idleAnimationState: f.SR.LOOP,
@@ -111,33 +111,33 @@ let A = e => {
         className: b.animation
       }) : (0, r.jsx)(l.$jN, {
         className: b.spinner
-      }), j && (0, r.jsxs)("div", {
-        className: o()(b.soundEmojiContainer, B && b.refresh),
+      }), k && (0, r.jsxs)("div", {
+        className: o()(b.soundEmojiContainer, Z && b.refresh),
         children: [(0, r.jsx)(u.Z, {
           sound: C,
-          onSelect: Z
-        }), (0, r.jsx)(m.Z, {
+          onSelect: B
+        }), (0, r.jsx)(h.Z, {
           setEmojiConfetti: N,
           emojiConfetti: null == A ? true : A
         })]
       })]
-    }), (0, r.jsx)("div", I(O({
-      tabIndex: null != v || P ? true : 0,
+    }), (0, r.jsx)("div", S(O({
+      tabIndex: null != v || R ? true : 0,
       onFocus: e => {
         var t;
-        e.target === e.currentTarget && (null == (t = w.current) || t.focus())
+        e.target === e.currentTarget && (null == (t = D.current) || t.focus())
       },
       className: o()(b.giftBoxOptionContainer, a),
       "aria-label": E.intl.string(E.t.v54NrN),
-      ref: x
-    }, M), {
-      children: null != G && !B && G.map((e, t) => (0, r.jsx)(g.m, {
+      ref: L
+    }, j), {
+      children: null != G && !Z && G.map((e, t) => (0, r.jsx)(g.m, {
         isSelected: v === e,
         giftStyle: e,
-        setSelectedGiftStyle: S,
-        ref: 0 === t ? w : null,
-        onFocus: () => D(true),
-        onBlur: () => D(false)
+        setSelectedGiftStyle: T,
+        ref: 0 === t ? D : null,
+        onFocus: () => w(true),
+        onBlur: () => w(false)
       }, e))
     })), (0, r.jsx)("div", {
       className: b.__invalid_selectPlanDivider

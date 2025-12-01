@@ -70,7 +70,7 @@ let f = {
       parsedUserId: l,
       roleId: u,
       roleName: f,
-      viewingChannelId: _
+      viewingChannelId: p
     } = e;
     return null == i && (null != u || "@everyone" === f || "@here" === f) ? (0, r.jsx)(a.Z, d(c({
       inlinePreview: n.formatInline
@@ -80,7 +80,7 @@ let f = {
       className: "mention",
       userId: i,
       channelId: s,
-      viewingChannelId: _,
+      viewingChannelId: p,
       parsedUserId: l,
       content: t(e.content, n),
       inlinePreview: n.noStyleAndInteraction

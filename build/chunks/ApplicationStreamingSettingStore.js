@@ -2,7 +2,7 @@
 /** chunk id: 361291, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -22,7 +22,7 @@ let c = Chunk37113.ApplicationStreamPresets.PRESET_VIDEO,
   d = Chunk37113.ApplicationStreamFPS.FPS_30,
   f = true;
 
-function _(e) {
+function p(e) {
   let {
     settings: t
   } = e;
@@ -31,7 +31,7 @@ function _(e) {
   return c !== t.qualityOptions.preset && (c = t.qualityOptions.preset, n = true), u !== t.qualityOptions.resolution && (u = t.qualityOptions.resolution, n = true), d !== t.qualityOptions.frameRate && (d = t.qualityOptions.frameRate, n = true), n
 }
 
-function p(e) {
+function _(e) {
   let {
     preset: t,
     resolution: n,
@@ -40,7 +40,7 @@ function p(e) {
   } = e, a = false;
   return null != t && t !== c && (c = t, a = true), null != n && n !== u && (u = n, a = true), null != r && r !== d && (d = r, a = true), null != i && i !== f && (f = i, a = true), a
 }
-class h extends(r = Chunk442837.ZP.PersistedStore) {
+class m extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n;
@@ -56,8 +56,8 @@ class h extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-l(h, "displayName", "ApplicationStreamingSettingsStore"), l(h, "persistKey", "ApplicationStreamingSettingStore");
-let m = new h(Chunk570140.Z, {
-  MEDIA_ENGINE_SET_GO_LIVE_SOURCE: _,
-  STREAM_UPDATE_SETTINGS: p
+l(m, "displayName", "ApplicationStreamingSettingsStore"), l(m, "persistKey", "ApplicationStreamingSettingStore");
+let h = new m(Chunk570140.Z, {
+  MEDIA_ENGINE_SET_GO_LIVE_SOURCE: p,
+  STREAM_UPDATE_SETTINGS: _
 })

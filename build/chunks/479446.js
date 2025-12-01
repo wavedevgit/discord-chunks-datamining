@@ -2,7 +2,7 @@
 /** chunk id: 479446, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ou: () => _,
+  Ou: () => p,
   SR: () => d,
   YD: () => f
 }), require("./415506.js");
@@ -32,4 +32,4 @@ let f = async (e, t) => {
     isGiftLinkSentOnBehalfOfUser: true,
     location: u.dy.GIFTING
   })
-}, _ = e => {}
+}, p = e => {}

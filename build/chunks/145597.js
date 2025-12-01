@@ -3,20 +3,20 @@
 "use strict";
 let r;
 require.r(exports), require.d(exports, {
-  DEV_PID: () => p,
+  DEV_PID: () => _,
   OVERLAY_DEFAULT_RESOLUTION: () => d,
-  OVERLAY_LAYOUT_ID: () => _,
+  OVERLAY_LAYOUT_ID: () => p,
   OVERLAY_MIN_RESOLUTION: () => f,
   OVERLAY_VERSION: () => u,
-  UNSET_PID: () => h,
+  UNSET_PID: () => m,
   getPID: () => g,
   getRPCAuthToken: () => y,
   isValidGamePID: () => b,
   log: () => O,
-  setOutOfProcessSupport: () => I,
+  setOutOfProcessSupport: () => S,
   setPID: () => E,
-  supportsLegacy: () => S,
-  supportsOutOfProcess: () => T,
+  supportsLegacy: () => T,
+  supportsOutOfProcess: () => I,
   validResolution: () => v
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js");
 var Chunk887278 = require("./887278.js"),
@@ -34,16 +34,16 @@ let u = 2,
     width: 768,
     height: 432
   },
-  _ = "overlay_default",
-  p = false,
-  h = false,
-  m = false;
+  p = "overlay_default",
+  _ = false,
+  m = false,
+  h = false;
 
 function g() {
   var e;
-  if (true !== r && r !== h) return r;
+  if (true !== r && r !== m) return r;
   let t = parseInt(null != (e = new URLSearchParams(window.location.search).get("pid")) ? module : "", 10);
-  return isNaN(exports) && (t = h), r = exports
+  return isNaN(exports) && (t = m), r = exports
 }
 
 function E(e) {
@@ -51,7 +51,7 @@ function E(e) {
 }
 
 function b(e) {
-  return null != e && 0 !== e && e !== h
+  return null != e && 0 !== e && e !== m
 }
 
 function y() {
@@ -71,15 +71,15 @@ function v(e) {
   return !o.isPlatformEmbedded || e.width >= f.width && e.height >= f.height
 }
 
-function I(e) {
-  m = e
+function S(e) {
+  h = e
+}
+
+function I() {
+  return h
 }
 
 function T() {
-  return m
-}
-
-function S() {
   let e = (0, Chunk358085.isWindows)() && "arm64" === Chunk998502.ZP.architecture;
   return Chunk987650.iP && !module && !(0, Chunk887278.$1)()
 }

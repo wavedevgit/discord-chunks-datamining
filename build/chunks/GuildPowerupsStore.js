@@ -48,11 +48,11 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = 864e5,
-  p = 36e5,
-  h = {};
+let p = 864e5,
+  _ = 36e5,
+  m = {};
 
-function m() {
+function h() {
   return {
     allPowerups: {},
     powerupCatalog: {},
@@ -66,7 +66,7 @@ function g(e) {
       id: t
     }
   } = e;
-  h[t] = f(u({}, y(t)), {
+  m[t] = f(u({}, y(t)), {
     appliedBoosts: b(t)
   })
 }
@@ -75,7 +75,7 @@ function E(e) {
   let {
     guildId: t
   } = e;
-  h[t] = f(u({}, y(t)), {
+  m[t] = f(u({}, y(t)), {
     appliedBoosts: b(t)
   })
 }
@@ -92,13 +92,13 @@ function b(e) {
 }
 
 function y(e) {
-  if (null == h[e]) {
+  if (null == m[e]) {
     let t = b(e);
-    h[e] = f(u({}, m()), {
+    m[e] = f(u({}, h()), {
       appliedBoosts: t
     })
   }
-  return h[e]
+  return m[e]
 }
 
 function O(e) {
@@ -107,7 +107,7 @@ function O(e) {
     allPowerups: n,
     powerupCatalog: r
   } = e, i = y(t);
-  h = f(u({}, h), {
+  m = f(u({}, m), {
     [t]: f(u({}, i), {
       allPowerups: n,
       powerupCatalog: r,
@@ -122,7 +122,7 @@ function v(e) {
     guildId: t,
     unlockedPowerups: n
   } = e, r = y(t), i = b(t);
-  h = f(u({}, h), {
+  m = f(u({}, m), {
     [t]: f(u({}, r), {
       unlockedPowerups: n,
       appliedBoosts: i,
@@ -132,58 +132,58 @@ function v(e) {
   })
 }
 
-function I(e, t) {
+function S(e, t) {
   let {
     guildId: n,
     entitlements: r
   } = e, i = y(n);
   r.forEach(e => {
     t ? i.unlockedPowerups[e.sku_id] = e : delete i.unlockedPowerups[e.sku_id]
-  }), h = f(u({}, h), {
+  }), m = f(u({}, m), {
     [n]: f(u({}, i), {
       appliedBoosts: b(n)
     })
   })
 }
 
-function T(e) {
-  I(e, true)
+function I(e) {
+  S(e, true)
 }
 
-function S(e) {
-  I(e, false)
+function T(e) {
+  S(e, false)
 }
 
 function A() {
-  h = {}
+  m = {}
 }
 class C extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(o.Z), null != e && (h = e)
+    this.waitFor(o.Z), null != e && (m = e)
   }
   getState() {
-    return h
+    return m
   }
   getStateForGuild(e) {
-    return null != e ? h[e] : true
+    return null != e ? m[e] : true
   }
   shouldFetchCatalogForGuild(e) {
     var t;
-    let n = null == (t = h[e]) ? true : t.catalogFetchCooldown;
-    return null == n || n + _ < Date.now()
+    let n = null == (t = m[e]) ? true : t.catalogFetchCooldown;
+    return null == n || n + p < Date.now()
   }
   shouldFetchPowerupsForGuild(e) {
     var t;
-    let n = null == (t = h[e]) ? true : t.unlockedPowerupsFetchCooldown;
-    return null == n || n + p < Date.now()
+    let n = null == (t = m[e]) ? true : t.unlockedPowerupsFetchCooldown;
+    return null == n || n + _ < Date.now()
   }
   hasFetchedPowerupCatalog(e) {
     var t;
-    return null != e && (null == (t = h[e]) ? true : t.hasFetchedPowerupCatalog) === true
+    return null != e && (null == (t = m[e]) ? true : t.hasFetchedPowerupCatalog) === true
   }
   hasFetchedUnlockedPowerups(e) {
     var t;
-    return null != e && (null == (t = h[e]) ? true : t.hasFetchedUnlockedPowerups) === true
+    return null != e && (null == (t = m[e]) ? true : t.hasFetchedUnlockedPowerups) === true
   }
 }
 c(C, "displayName", "GuildPowerupsStore"), c(C, "persistKey", "GuildPowerupsStore"), c(C, "migrations", [e => null == e ? e : Object.fromEntries(Object.entries(e).filter(e => {
@@ -202,8 +202,8 @@ let N = new C(Chunk570140.Z, {
   LOGOUT: A,
   GUILD_POWERUP_CATALOG_FETCH_SUCCESS: O,
   GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: v,
-  GUILD_POWERUP_ENTITLEMENTS_CREATE: T,
-  GUILD_POWERUP_ENTITLEMENTS_DELETE: S,
+  GUILD_POWERUP_ENTITLEMENTS_CREATE: I,
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: T,
   GUILD_UPDATE: g,
   GAME_SERVER_FETCH_INSTANCES_SUCCESS: E
 })

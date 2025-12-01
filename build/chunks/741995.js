@@ -22,7 +22,7 @@ let c = Chunk723642.OA,
   d = false,
   f = {};
 
-function _(e) {
+function p(e) {
   var t;
   let {
     id: n,
@@ -36,7 +36,7 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     id: t
   } = e;
@@ -45,7 +45,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     id: t,
     query: n
@@ -55,7 +55,7 @@ function h(e) {
   }))
 }
 
-function m(e) {
+function h(e) {
   return Object.keys(e).forEach(t => {
     Array.isArray(e[t]) && (e[t] = e[t].filter(e => "string" == typeof e && e.trim())), Array.isArray(e[t]) && 0 !== e[t].length || delete e[t]
   }), e
@@ -67,7 +67,7 @@ function g() {
 class E extends(r = Chunk442837.ZP.Store) {
   initialize() {
     let e = Chunk433517.K.get(c);
-    (null == module ? true : module.history) != null && (f = m(module.history)), d = !!Chunk433517.K.get(u)
+    (null == module ? true : module.history) != null && (f = h(module.history)), d = !!Chunk433517.K.get(u)
   }
   isTokenized() {
     return d
@@ -78,8 +78,8 @@ class E extends(r = Chunk442837.ZP.Store) {
 }
 l(E, "displayName", Chunk723642.zn);
 let b = new E(Chunk570140.Z, {
-  SEARCH_HISTORY_WEB_CLEAR_ITEMS: p,
-  SEARCH_HISTORY_WEB_REMOVE_ITEM: h,
-  SEARCH_HISTORY_WEB_ADD_ITEM: _,
+  SEARCH_HISTORY_WEB_CLEAR_ITEMS: _,
+  SEARCH_HISTORY_WEB_REMOVE_ITEM: m,
+  SEARCH_HISTORY_WEB_ADD_ITEM: p,
   LOGOUT: g
 })

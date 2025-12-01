@@ -2,7 +2,7 @@
 /** chunk id: 903250, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,19 +31,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk181960 = require("./181960.js"),
   Chunk313199 = require("./313199.js"),
   Chunk821969 = require("./821969.js");
-let P = (e, t) => {
+let R = (e, t) => {
     let {
       className: n,
       buttonClassName: i,
       subscriptionTier: a,
-      isDarkMode: P,
-      isEligibleForBogoPromotion: D,
-      videoRef: w
+      isDarkMode: R,
+      isEligibleForBogoPromotion: w,
+      videoRef: D
     } = e, {
-      analyticsLocations: L
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), x = (0, g._O)(), M = (0, m.Nx)(), k = (0, s.e7)([h.Z], () => h.Z.affinities), j = (0, E.Z)(), U = null != j, G = P ? l.Tt.WHITE : l.Tt.BRAND, B = k.length > 0, Z = S.intl.string(S.t.YCZldK), F = (0, p.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+      analyticsLocations: x
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), L = (0, g._O)(), j = (0, h.Nx)(), M = (0, s.e7)([m.Z], () => m.Z.affinities), k = (0, E.Z)(), U = null != k, G = R ? l.Tt.WHITE : l.Tt.BRAND, Z = M.length > 0, B = T.intl.string(T.t.YCZldK), F = (0, _.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
     return (0, r.jsx)(f.Gt, {
-      value: L,
+      value: x,
       children: (0, r.jsxs)("div", {
         className: o()(A.container, A.heroHeadingContainer, n),
         ref: t,
@@ -52,23 +52,23 @@ let P = (e, t) => {
           className: A.container,
           children: (0, r.jsxs)("div", {
             className: A.marketingPageTextContainer,
-            children: [M && (0, r.jsx)(I.Z, {}), (0, r.jsx)(c.Heading, {
+            children: [j && (0, r.jsx)(S.Z, {}), (0, r.jsx)(c.Heading, {
               className: A.marketingPageHeading,
               variant: "display-sm",
               color: "header-primary",
-              children: Z
+              children: B
             }), U ? (0, r.jsx)(O.Z, {
-              referrer: j
-            }) : B && (0, r.jsx)("div", {
+              referrer: k
+            }) : Z && (0, r.jsx)("div", {
               className: A.affinityDescriptionContainer,
               children: (0, r.jsx)(y.Z, {
                 textColor: "text-default",
                 smallerText: false,
                 isApplicationHome: true
               })
-            }), x ? (0, r.jsx)("div", {
+            }), L ? (0, r.jsx)("div", {
               className: o()(A.buttonContainer, A.marketingPageCTAContainer, {
-                [A.marketingPageCTAMargin]: !(B || U)
+                [A.marketingPageCTAMargin]: !(Z || U)
               }),
               children: (0, r.jsx)(b.Z, {
                 className: o()(A.button, i),
@@ -76,14 +76,14 @@ let P = (e, t) => {
               })
             }) : (0, r.jsx)(v.PK, {
               subscriptionTier: a,
-              inOfferExperience: M,
+              inOfferExperience: j,
               containerClassName: o()(A.marketingPageCTAContainer, {
-                [A.marketingPageCTAMargin]: !(B || U)
+                [A.marketingPageCTAMargin]: !(Z || U)
               }),
               buttonClassName: i,
               isApplicationHome: true,
-              isDarkMode: P,
-              isEligibleForBogoPromotion: D
+              isDarkMode: R,
+              isEligibleForBogoPromotion: w
             }), (0, r.jsx)(v._O, {
               variant: "text-sm/normal",
               withBottomMargin: false,
@@ -92,21 +92,21 @@ let P = (e, t) => {
           })
         }), (0, r.jsx)("div", {
           className: A.heroHeadingV2ArtContainer,
-          children: (0, r.jsx)(_.Z, {
+          children: (0, r.jsx)(p.Z, {
             autoPlay: !V,
             playsInline: true,
             preload: V ? "none" : "auto",
             poster: N.Z,
             loop: true,
             className: A.heroHeadingV2Art,
-            ref: w,
+            ref: D,
             children: (0, r.jsx)("source", {
-              src: F ? C.Z : R.Z,
-              type: F ? T.m.MP4 : T.m.WEBM
+              src: F ? C.Z : P.Z,
+              type: F ? I.m.MP4 : I.m.WEBM
             })
           })
         })]
       })
     })
   },
-  D = Chunk473749.forwardRef(P)
+  w = Chunk473749.forwardRef(R)

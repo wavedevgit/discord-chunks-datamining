@@ -41,7 +41,7 @@ function E() {
       group: "input-modes",
       label: i,
       disabled: b,
-      checked: E === h.KW.ON ? "system" === e : e === n,
+      checked: E === m.KW.ON ? "system" === e : e === n,
       action: () => {
         (0, d.Yk)({
           isPersisted: true,

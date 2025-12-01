@@ -43,21 +43,21 @@ module.exports = function(e) {
     u = "[\\w-]+",
     d = "(" + u + "|@\\{" + u + "\\})",
     f = [],
-    _ = [],
-    p = function(e) {
+    p = [],
+    _ = function(e) {
       return {
         className: "string",
         begin: "~?" + e + ".*?" + e
       }
     },
-    h = function(e, t, n) {
+    m = function(e, t, n) {
       return {
         className: e,
         begin: t,
         relevance: n
       }
     },
-    m = {
+    h = {
       $pattern: /[a-z-]+/,
       keyword: "and or not only",
       attribute: r.join(" ")
@@ -65,18 +65,18 @@ module.exports = function(e) {
     g = {
       begin: "\\(",
       end: "\\)",
-      contains: _,
-      keywords: m,
+      contains: p,
+      keywords: h,
       relevance: 0
     };
-  _.push(e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, p("'"), p('"'), l.CSS_NUMBER_MODE, {
+  p.push(e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, _("'"), _('"'), l.CSS_NUMBER_MODE, {
     begin: "(url|data-uri)\\(",
     starts: {
       className: "string",
       end: "[\\)\\n]",
       excludeEnd: true
     }
-  }, l.HEXCOLOR, g, h("variable", "@@?" + u, 10), h("variable", "@\\{" + u + "\\}"), h("built_in", "~?`[^`]*?`"), {
+  }, l.HEXCOLOR, g, m("variable", "@@?" + u, 10), m("variable", "@\\{" + u + "\\}"), m("built_in", "~?`[^`]*?`"), {
     className: "attribute",
     begin: u + "\\s*:",
     end: ":",
@@ -85,7 +85,7 @@ module.exports = function(e) {
   }, l.IMPORTANT, {
     beginKeywords: "and not"
   }, l.FUNCTION_DISPATCH);
-  let E = _.concat({
+  let E = p.concat({
       begin: /\{/,
       end: /\}/,
       contains: f
@@ -95,7 +95,7 @@ module.exports = function(e) {
       endsWithParent: true,
       contains: [{
         beginKeywords: "and not"
-      }].concat(_)
+      }].concat(p)
     },
     y = {
       begin: d + "\\s*:",
@@ -112,7 +112,7 @@ module.exports = function(e) {
           endsWithParent: true,
           illegal: "[<=$]",
           relevance: 0,
-          contains: _
+          contains: p
         }
       }]
     },
@@ -121,9 +121,9 @@ module.exports = function(e) {
       begin: "@(import|media|charset|font-face|(-[a-z]+-)?keyframes|supports|document|namespace|page|viewport|host)\\b",
       starts: {
         end: "[;{}]",
-        keywords: m,
+        keywords: h,
         returnEnd: true,
-        contains: _,
+        contains: p,
         relevance: 0
       }
     },
@@ -141,7 +141,7 @@ module.exports = function(e) {
         contains: E
       }
     },
-    I = {
+    S = {
       variants: [{
         begin: "[\\.#:&\\[>]",
         end: "[;{}]"
@@ -153,10 +153,10 @@ module.exports = function(e) {
       returnEnd: true,
       illegal: "[<='$\"]",
       relevance: 0,
-      contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, b, h("keyword", "all\\b"), h("variable", "@\\{" + u + "\\}"), {
+      contains: [e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, b, m("keyword", "all\\b"), m("variable", "@\\{" + u + "\\}"), {
         begin: "\\b(" + n.join("|") + ")\\b",
         className: "selector-tag"
-      }, l.CSS_NUMBER_MODE, h("selector-tag", d, 0), h("selector-id", "#" + d), h("selector-class", "\\." + d, 0), h("selector-tag", "&", 0), l.ATTRIBUTE_SELECTOR_MODE, {
+      }, l.CSS_NUMBER_MODE, m("selector-tag", d, 0), m("selector-id", "#" + d), m("selector-class", "\\." + d, 0), m("selector-tag", "&", 0), l.ATTRIBUTE_SELECTOR_MODE, {
         className: "selector-pseudo",
         begin: ":(" + i.join("|") + ")"
       }, {
@@ -171,12 +171,12 @@ module.exports = function(e) {
         begin: "!important"
       }, l.FUNCTION_DISPATCH]
     },
-    T = {
+    I = {
       begin: u + ":(:)?" + `(${c.join("|")})`,
       returnBegin: true,
-      contains: [I]
+      contains: [S]
     };
-  return f.push(e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, O, v, T, y, I, b, l.FUNCTION_DISPATCH), {
+  return f.push(e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, O, v, I, y, S, b, l.FUNCTION_DISPATCH), {
     name: "Less",
     case_insensitive: true,
     illegal: "[=>'/<($\"]",

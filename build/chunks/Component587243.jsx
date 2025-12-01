@@ -1,13 +1,12 @@
 /** Chunk was on 837 **/
 /** chunk id: 587243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => v,
-  I: () => j
+  F: () => b,
+  I: () => v
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk722770 = require("./722770.js"),
-  Chunk481060 = require("./481060.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk734934 = require("./734934.js"),
   Chunk158238 = require("./158238.js"),
   Chunk695346 = require("./695346.js"),
@@ -18,7 +17,7 @@ var Chunk722770 = require("./722770.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk54482 = require("./54482.js");
-let g = [{
+let x = [{
     duration: 15 * Chunk70956.Z.Millis.MINUTE,
     label: () => Chunk388032.intl.string(Chunk388032.t["8ot6gv"])
   }, {
@@ -37,173 +36,173 @@ let g = [{
     duration: true,
     label: () => Chunk388032.intl.string(Chunk388032.t["46dqJY"])
   }],
-  f = "forever";
+  g = "forever";
 
-function b(e) {
+function f(e) {
   let {
     status: t,
     currentStatus: n,
     description: l
-  } = e, r = t !== p.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
-    children: g.map(e => {
+  } = e, i = t !== m.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
+    children: x.map(e => {
       let {
         duration: l,
-        label: r
+        label: i
       } = e;
-      return (0, a.jsx)(i.sNh, {
+      return (0, a.jsx)(r.sNh, {
         id: "".concat(t, "-").concat(l),
-        label: r(),
-        action: () => (0, m.Z)({
+        label: i(),
+        action: () => (0, u.Z)({
           nextStatus: t,
           prevStatus: n,
           durationMillis: l
         }),
         dontCloseOnAction: true
-      }, null != l ? l : f)
+      }, null != l ? l : g)
     })
   });
-  return (0, a.jsx)(i.sNh, {
+  return (0, a.jsx)(r.sNh, {
     id: t,
-    className: x.expiringStatusMenuItem,
+    className: h.expiringStatusMenuItem,
     keepItemStyles: true,
-    hasSubmenu: r,
+    hasSubmenu: i,
     label: e => {
       let {
         isFocused: n
       } = e;
       return (0, a.jsxs)("div", {
-        className: x.statusItem,
-        children: [(0, a.jsx)(i.qbd, {
+        className: h.statusItem,
+        children: [(0, a.jsx)(r.qbd, {
           status: t,
-          className: x.icon,
+          className: h.icon,
           size: 10,
           color: n ? "currentColor" : true
         }), (0, a.jsx)("div", {
-          className: x.status,
-          children: (0, d.u5)(t)
+          className: h.status,
+          children: (0, c.u5)(t)
         }), null != l && (0, a.jsx)("div", {
-          className: x.description,
+          className: h.description,
           children: l
         })]
       })
     },
     action: () => {
-      (0, m.Z)({
+      (0, u.Z)({
         nextStatus: t,
         prevStatus: n
       })
     },
     dontCloseOnAction: true,
-    children: r ? s : true
+    children: i ? s : true
   })
 }
 
-function v(e) {
+function b(e) {
   if (null == e || "0" === e) return;
   let {
     kind: t,
     dateString: n,
     timeString: a
-  } = (0, u.k)(e);
-  return "today" === t ? h.intl.formatToPlainString(h.t.ZxxHIO, {
+  } = (0, d.k)(e);
+  return "today" === t ? p.intl.formatToPlainString(p.t.ZxxHIO, {
     timeString: a
-  }) : h.intl.formatToPlainString(h.t["9OFjSe"], {
+  }) : p.intl.formatToPlainString(p.t["9OFjSe"], {
     dateString: n,
     timeString: a
   })
 }
 
-function j(e) {
-  let t = o.Cr.useSetting(),
-    n = (0, r.p)(),
-    c = s.e.useExperiment({
+function v(e) {
+  let t = s.Cr.useSetting(),
+    n = (0, l.p)(),
+    o = i.e.useExperiment({
       location: "UserProfileAccountPopout"
     }).allowQuietMode || n,
-    d = o.fv.useSetting(),
-    u = e === p.Skl.DND,
-    m = n => {
-      let a = v(t);
+    c = s.fv.useSetting(),
+    d = e === m.Skl.DND,
+    u = n => {
+      let a = b(t);
       if (e === n && null != a) return a;
       switch (n) {
-        case p.Skl.DND:
-          return c ? h.intl.string(h.t.day5A6) : h.intl.string(h.t["tq/fMK"]);
-        case p.Skl.INVISIBLE:
-          return h.intl.string(h.t.zPc6Mc);
+        case m.Skl.DND:
+          return o ? p.intl.string(p.t.day5A6) : p.intl.string(p.t["tq/fMK"]);
+        case m.Skl.INVISIBLE:
+          return p.intl.string(p.t.zPc6Mc);
         default:
           return
       }
     },
-    j = (0, a.jsx)(a.Fragment, {
-      children: g.map(t => {
+    v = (0, a.jsx)(a.Fragment, {
+      children: x.map(t => {
         let {
           duration: n,
-          label: l
+          label: i
         } = t;
-        return (0, a.jsx)(i.sNh, {
+        return (0, a.jsx)(r.sNh, {
           id: "".concat(e, "-").concat(n),
-          label: l(),
+          label: i(),
           action: () => {
-            (0, r.oW)(true, n)
+            (0, l.oW)(true, n)
           },
           dontCloseOnAction: true
-        }, null != n ? n : f)
+        }, null != n ? n : g)
       })
     }),
-    _ = b({
-      status: p.Skl.ONLINE,
+    j = f({
+      status: m.Skl.ONLINE,
       currentStatus: e
     }),
-    y = b({
-      status: p.Skl.IDLE,
+    _ = f({
+      status: m.Skl.IDLE,
       currentStatus: e,
-      description: m(p.Skl.IDLE)
+      description: u(m.Skl.IDLE)
     }),
-    C = b({
-      status: p.Skl.DND,
+    y = f({
+      status: m.Skl.DND,
       currentStatus: e,
-      description: m(p.Skl.DND)
+      description: u(m.Skl.DND)
     }),
-    S = b({
-      status: p.Skl.INVISIBLE,
+    C = f({
+      status: m.Skl.INVISIBLE,
       currentStatus: e,
-      description: m(p.Skl.INVISIBLE)
+      description: u(m.Skl.INVISIBLE)
     });
   return (0, a.jsxs)(a.Fragment, {
-    children: [_, (0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), y, C, S, c || n ? (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(i.sNh, {
+    children: [j, (0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), _, y, C, o || n ? (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(r.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
-        className: x.expiringStatusMenuItem,
+        className: h.expiringStatusMenuItem,
         keepItemStyles: true,
         hasSubmenu: true,
         label: () => (0, a.jsxs)("div", {
-          className: x.statusItem,
-          children: [(0, a.jsx)(i.owu, {
+          className: h.statusItem,
+          children: [(0, a.jsx)(r.owu, {
             size: "xxs",
-            className: x.icon
+            className: h.icon
           }), (0, a.jsxs)("div", {
-            className: x.focusModeTitle,
-            children: [h.intl.string(h.t.gJRnwK), (0, a.jsx)(i.IGR, {
-              text: n ? h.intl.string(h.t.ApAu9f) : u ? h.intl.string(h.t.gH3Frd) : h.intl.string(h.t["64pl82"]),
-              color: n ? l.Z.BRAND_500 : u ? l.Z.RED_400 : l.Z.PRIMARY_500
+            className: h.focusModeTitle,
+            children: [p.intl.string(p.t.gJRnwK), (0, a.jsx)(r.IGR, {
+              text: n ? p.intl.string(p.t.ApAu9f) : d ? p.intl.string(p.t.gH3Frd) : p.intl.string(p.t["64pl82"]),
+              color: n ? r.TVs.unsafe_rawColors.BRAND_500.css : d ? r.TVs.unsafe_rawColors.RED_400.css : r.TVs.unsafe_rawColors.PRIMARY_500.css
             })]
           }), (0, a.jsx)("div", {
-            className: x.description,
-            children: n && null != d && "0" !== d ? h.intl.formatToPlainString(h.t.BWD8fs, {
-              endTime: new Date(Number(d)).toLocaleString(h.intl.currentLocale, {
+            className: h.description,
+            children: n && null != c && "0" !== c ? p.intl.formatToPlainString(p.t.BWD8fs, {
+              endTime: new Date(Number(c)).toLocaleString(p.intl.currentLocale, {
                 month: "numeric",
                 day: "numeric",
                 hour: "numeric",
                 minute: "2-digit"
               })
-            }) : h.intl.string(h.t["Br1q+x"])
+            }) : p.intl.string(p.t["Br1q+x"])
           })]
         }),
         action: () => {
-          (0, r.oW)(!n)
+          (0, l.oW)(!n)
         },
         dontCloseOnAction: true,
-        children: j
+        children: v
       }, "quiet-mode")]
     }) : null]
   })

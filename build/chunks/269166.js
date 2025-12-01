@@ -16,13 +16,13 @@ module.exports = function(e) {
   s === u ? (t = o.set("anchorOffset", s - 1), n = o) : n = (t = o.set("focusOffset", s + 1)).set("anchorOffset", s + 1);
   var d = a(c, t),
     f = r.removeRange(c, t, "backward"),
-    _ = f.getSelectionAfter(),
-    p = _.getAnchorOffset() - 1,
-    h = _.merge({
-      anchorOffset: p,
-      focusOffset: p
+    p = f.getSelectionAfter(),
+    _ = p.getAnchorOffset() - 1,
+    m = p.merge({
+      anchorOffset: _,
+      focusOffset: _
     }),
-    m = r.replaceWithFragment(f, h, d),
-    g = i.push(e, m, "insert-fragment");
+    h = r.replaceWithFragment(f, m, d),
+    g = i.push(e, h, "insert-fragment");
   return i.acceptSelection(g, n)
 }

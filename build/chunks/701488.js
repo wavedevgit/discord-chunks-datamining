@@ -2,33 +2,33 @@
 /** chunk id: 701488, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $y: () => M,
+  $y: () => j,
   Cr: () => O,
   Ev: () => s,
-  Fu: () => m,
-  GM: () => x,
-  Gu: () => w,
-  JT: () => h,
+  Fu: () => h,
+  GM: () => L,
+  Gu: () => D,
+  JT: () => m,
   K8: () => v,
-  OF: () => L,
+  OF: () => x,
   P9: () => y,
   Pc: () => A,
-  S4: () => T,
+  S4: () => I,
   Si: () => E,
-  Ws: () => I,
-  Zc: () => p,
+  Ws: () => S,
+  Zc: () => _,
   cE: () => N,
   cc: () => a,
   d: () => o,
   eB: () => b,
-  jT: () => _,
+  jT: () => p,
   qm: () => c,
   sI: () => g,
   u2: () => l,
   um: () => C,
-  wP: () => D,
-  wT: () => P,
-  xK: () => S
+  wP: () => w,
+  wT: () => R,
+  xK: () => T
 }), require("./388685.js");
 var Chunk911969 = require("./911969.js"),
   Chunk981631 = require("./981631.js");
@@ -40,10 +40,10 @@ let a = 160,
   u = "755600276941176913",
   d = "880218832743055411",
   f = "1050941315912835122",
-  _ = "880218394199220334",
-  p = "755827207812677713",
-  h = "1234546995360694434",
-  m = "1214629548377768066",
+  p = "880218394199220334",
+  _ = "755827207812677713",
+  m = "1234546995360694434",
+  h = "1214629548377768066",
   g = "https://discord.com/blog/server-activities-games-voice-watch-together",
   E = {
     SMALL: 64,
@@ -55,28 +55,28 @@ let a = 160,
 var v = function(e) {
     return e.ADS = "ADS", e.FAILED_LOAD = "FAILED_LOAD", e.LAGGING = "LAGGING", e.CONFUSING = "CONFUSING", e.NOT_FUN = "NOT_FUN", e.OTHER = "OTHER", e
   }({}),
-  I = function(e) {
+  S = function(e) {
     return e[e.PLAY = 0] = "PLAY", e[e.SPECTATE = 1] = "SPECTATE", e
   }({}),
-  T = function(e) {
+  I = function(e) {
     return e.DESKTOP = "desktop", e.MOBILE = "mobile", e
   }({}),
-  S = function(e) {
+  T = function(e) {
     return e[e.UNLOCKED = 1] = "UNLOCKED", e[e.PORTRAIT = 2] = "PORTRAIT", e[e.LANDSCAPE = 3] = "LANDSCAPE", e
   }({});
-let A = new Set([u, d, f, _]),
-  C = new Set([d, f, _]);
+let A = new Set([u, d, f, p]),
+  C = new Set([d, f, p]);
 var N = function(e) {
   return e[e.FOCUSED = 0] = "FOCUSED", e[e.PIP = 1] = "PIP", e[e.GRID = 2] = "GRID", e
 }({});
-let R = {
+let P = {
     label_type: Chunk911969.ww.NONE,
     release_phase: "",
     label_from: null,
     label_until: null,
     omit_badge_from_surfaces: []
   },
-  P = {
+  R = {
     application_id: "",
     requires_age_gate: false,
     legacy_responsive_aspect_ratio: false,
@@ -84,19 +84,19 @@ let R = {
     tablet_default_orientation_lock_state: 1,
     supported_platforms: [Chunk911969.C3.WEB],
     client_platform_config: {
-      [Chunk911969.C3.WEB]: R,
-      [Chunk911969.C3.IOS]: R,
-      [Chunk911969.C3.ANDROID]: R
+      [Chunk911969.C3.WEB]: P,
+      [Chunk911969.C3.IOS]: P,
+      [Chunk911969.C3.ANDROID]: P
     },
     has_csp_exception: false,
     displays_advertisements: false,
     blocked_locales: [],
     supported_locales: []
   },
-  D = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
-  w = [...D, Chunk981631.d4z.GUILD_VOICE],
-  L = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
-var x = function(e) {
+  w = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
+  D = [...w, Chunk981631.d4z.GUILD_VOICE],
+  x = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
+var L = function(e) {
   return e.NORMAL = "normal", e.FULL_SCREEN = "full-screen", e
 }({});
-let M = 216e5
+let j = 216e5

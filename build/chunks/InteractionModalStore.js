@@ -39,16 +39,16 @@ function y(e) {
     preflight: c
   } = e;
   switch (l.interactionType) {
-    case p.B8.APPLICATION_COMMAND:
+    case _.B8.APPLICATION_COMMAND:
       return a = t, o = l.channelId, s = n, false;
-    case p.B8.MODAL_SUBMIT:
+    case _.B8.MODAL_SUBMIT:
       u()(null == r || 1 === i || 2 === i, "cannot submit multiple modals at once"), r = n, i = 0;
       let d = e => {
         setTimeout(() => {
-          r === n && 0 === i && (0, h.yr)(n)
+          r === n && 0 === i && (0, m.yr)(n)
         }, e)
       };
-      return null != c ? (d(2 * m.Z.Millis.MINUTE), c.then(() => d(10 * m.Z.Millis.SECOND)).catch(() => (0, h.yr)(n))) : d(10 * m.Z.Millis.SECOND), true;
+      return null != c ? (d(2 * h.Z.Millis.MINUTE), c.then(() => d(10 * h.Z.Millis.SECOND)).catch(() => (0, m.yr)(n))) : d(10 * h.Z.Millis.SECOND), true;
     default:
       returnfalse
   }
@@ -58,40 +58,40 @@ function O(e) {
   let {
     nonce: t
   } = e;
-  return t === s && (_.Z.deleteMessage(o, a, true), a = null, o = null, s = null), false
+  return t === s && (p.Z.deleteMessage(o, a, true), a = null, o = null, s = null), false
 }
 
 function v(e) {
   let {
     nonce: t
   } = e;
-  return t === s && (_.Z.deleteMessage(o, a, true), a = null, o = null, s = null), false
+  return t === s && (p.Z.deleteMessage(o, a, true), a = null, o = null, s = null), false
 }
 
-function I(e) {
+function S(e) {
   let {
     nonce: t
   } = e;
   return null != t && t === r && (i = 2, true)
 }
 
-function T(e) {
+function I(e) {
   let {
     nonce: t
   } = e;
   return null != t && t === r && (i = 1, true)
 }
-class S extends(l = Chunk442837.ZP.Store) {
+class T extends(l = Chunk442837.ZP.Store) {
   getModalState(e) {
     return e !== r ? null : i
   }
 }
-g(S, "displayName", "InteractionModalStore");
-let A = new S(Chunk570140.Z, {
+g(T, "displayName", "InteractionModalStore");
+let A = new T(Chunk570140.Z, {
   LOGOUT: b,
   INTERACTION_MODAL_CREATE: O,
   INTERACTION_IFRAME_MODAL_CREATE: v,
   INTERACTION_QUEUE: y,
-  INTERACTION_SUCCESS: I,
-  INTERACTION_FAILURE: T
+  INTERACTION_SUCCESS: S,
+  INTERACTION_FAILURE: I
 })

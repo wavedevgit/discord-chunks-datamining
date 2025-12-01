@@ -2,7 +2,7 @@
 /** chunk id: 737013, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,22 +47,22 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   let d = (0, a.vRw)(),
     {
-      videoEnabled: _,
-      hasVideoDevice: h
+      videoEnabled: p,
+      hasVideoDevice: m
     } = (0, i.cj)([l.Z], () => ({
       videoEnabled: l.Z.isVideoEnabled(),
       hasVideoDevice: l.Z.isVideoAvailable()
     })),
-    m = (0, i.e7)([s.default], () => s.default.getId() === e),
+    h = (0, i.e7)([s.default], () => s.default.getId() === e),
     g = (0, o.Z)();
 
   function E() {
@@ -70,21 +70,21 @@ function h(e, t) {
       let {
         default: e
       } = await n.e("91018").then(n.bind(n, 601572));
-      return t => (0, r.jsx)(e, p(f({}, t), {
-        videoEnabled: _
+      return t => (0, r.jsx)(e, _(f({}, t), {
+        videoEnabled: p
       }))
     }, {
       modalKey: "camera-preview",
       contextKey: null != t ? (0, a.VnL)(t) : d
     })
   }
-  return (!_ || g) && m && h ? (0, r.jsx)(a.sNh, {
+  return (!p || g) && h && m ? (0, r.jsx)(a.sNh, {
     id: "change-video-background",
     label: (0, r.jsx)("div", {
       className: u.item,
-      children: _ ? c.intl.string(c.t.mZKxHb) : c.intl.string(c.t["vkV93/"])
+      children: p ? c.intl.string(c.t.mZKxHb) : c.intl.string(c.t["vkV93/"])
     }),
     action: E,
-    icon: _ ? a.yMH : a.tEF
+    icon: p ? a.yMH : a.tEF
   }) : null
 }

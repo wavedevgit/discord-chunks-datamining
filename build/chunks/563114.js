@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   T: () => l,
-  Z: () => p
+  Z: () => _
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk336317 = require("./336317.js"),
   Chunk768581 = require("./768581.js"),
@@ -50,17 +50,17 @@ async function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     channelId: t,
     messageId: n,
     emoji: r
   } = e
 }
-let p = {
+let _ = {
   getURL: Chunk753090.Z.makeMemoizer(c),
   filterUnsupportedEmojis: u,
   applyPlatformToThemedEmojiColorPalette: d,
   getEmojiColors: f,
-  triggerFullscreenAnimation: _
+  triggerFullscreenAnimation: p
 }

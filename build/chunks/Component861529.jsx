@@ -2,7 +2,7 @@
 /** chunk id: 861529, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk709136 = require("./709136.js"),
   Chunk430864 = require("./430864.js");
 
-function p(e) {
+function _(e) {
   let t = (0, c.CJ)();
   return (0, i.useMemo)(() => {
     let n;
@@ -27,13 +27,13 @@ function p(e) {
   }, [e, t])
 }
 
-function h(e) {
+function m(e) {
   let {
     content: t,
     className: n
-  } = e, i = p(t), a = (0, u._)();
+  } = e, i = _(t), a = (0, u._)();
   return (0, r.jsx)("div", {
-    className: o()(n, _.markup, f.markdownContainer, a.className),
+    className: o()(n, p.markup, f.markdownContainer, a.className),
     children: i
   })
 }

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Yn: () => f,
-  tJ: () => _
+  tJ: () => p
 }), require("./415506.js");
 var Chunk664751 = require("./664751.js"),
   Chunk544891 = require("./544891.js"),
@@ -76,7 +76,7 @@ class f extends d {
     })
   }
 }
-class _ extends d {
+class p extends d {
   getEndpoint() {
     switch (this.searchType) {
       case Chunk981631.aib.DMS:

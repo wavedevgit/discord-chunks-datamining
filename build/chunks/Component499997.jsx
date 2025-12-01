@@ -15,10 +15,10 @@ let u = e => {
   let {
     className: t,
     animationState: n = "on"
-  } = e, u = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), [d, f] = (0, i.useState)(false), _ = (0, i.useRef)(null), p = "on" === n || "on_hover" === n && d;
+  } = e, u = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), [d, f] = (0, i.useState)(false), p = (0, i.useRef)(null), _ = "on" === n || "on_hover" === n && d;
   return (0, i.useEffect)(() => {
-    null !== _.current && (p ? _.current.play() : (_.current.currentTime = 0, _.current.pause()))
-  }, [p]), (0, r.jsx)("div", {
+    null !== p.current && (_ ? p.current.play() : (p.current.currentTime = 0, p.current.pause()))
+  }, [_]), (0, r.jsx)("div", {
     onMouseEnter: "on_hover" === n ? () => f(true) : true,
     onMouseLeave: "on_hover" === n ? () => f(false) : true,
     children: u ? (0, r.jsx)("img", {
@@ -29,7 +29,7 @@ let u = e => {
       className: t,
       autoPlay: true,
       loop: true,
-      ref: _,
+      ref: p,
       children: [(0, r.jsx)("source", {
         src: c.Z,
         type: "video/webm"

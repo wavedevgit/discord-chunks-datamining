@@ -2,8 +2,8 @@
 /** chunk id: 843693, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => k,
-  wU: () => w
+  ZP: () => M,
+  wU: () => D
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
@@ -17,7 +17,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk524484 = require("./524484.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -75,8 +75,8 @@ function y(e, t) {
 }
 let O = 7,
   v = 1e3,
-  I = new Set,
-  T = new Chunk759174.h(function(e) {
+  S = new Set,
+  I = new Chunk759174.h(function(e) {
     let {
       userId: t,
       channelId: n
@@ -90,7 +90,7 @@ let O = 7,
     return "".concat(n, "-").concat(t)
   });
 
-function S(e) {
+function T(e) {
   return null != e && (e.value > 0 || (null == e ? true : e.multiplier) > 1)
 }
 let A = new Chunk759174.h(function(e) {
@@ -123,34 +123,34 @@ let A = new Chunk759174.h(function(e) {
 function N(e) {
   var t, n, r, i, a, s;
   let l = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    c = T.get(C(e)),
-    u = E(m({}, c, e), {
+    c = I.get(C(e)),
+    u = E(h({}, c, e), {
       value: null != (n = null != (t = e.value) ? t : null == c ? true : c.value) ? n : 0,
       multiplier: Math.min(null != (i = null != (r = e.multiplier) ? r : null == c ? true : c.multiplier) ? i : 1, O),
       decayInterval: null != (a = null == c ? true : c.decayInterval) ? a : new o.Xp
     });
-  T.set(C(e), u), l && (null == (s = u.decayInterval) || s.start(v, () => {
-    let e = T.get(C(u));
+  I.set(C(e), u), l && (null == (s = u.decayInterval) || s.start(v, () => {
+    let e = I.get(C(u));
     if (null != e) {
       let n = u.multiplier !== e.multiplier && u.value !== e.value;
       if (e.value <= 0 || n) {
         var t;
-        null == (t = e.decayInterval) || t.stop(), e.value <= 0 && (N(E(m({}, e), {
+        null == (t = e.decayInterval) || t.stop(), e.value <= 0 && (N(E(h({}, e), {
           value: 0,
           multiplier: 1
-        })), M.emitChange())
-      } else N(E(m({}, e), {
+        })), j.emitChange())
+      } else N(E(h({}, e), {
         value: e.value - 1
-      })), M.emitChange()
+      })), j.emitChange()
     }
   }))
 }
 
-function R(e) {
+function P(e) {
   A.set(e.messageId, e)
 }
 
-function P(e) {
+function R(e) {
   var {
     type: t
   } = e, n = b(e, ["type"]);
@@ -158,19 +158,19 @@ function P(e) {
   N(n)
 }
 
-function D(e) {
+function w(e) {
   let {
     comboMessage: t
   } = e;
   if (!d.Z.isEnabled()) returnfalse;
-  R(t)
+  P(t)
 }
 
-function w(e, t, n, r) {
+function D(e, t, n, r) {
   return !(e !== t || null == n || r.has(n)) && (r.add(n), true)
 }
 
-function L(e) {
+function x(e) {
   var t, n;
   let {
     channelId: r,
@@ -182,40 +182,40 @@ function L(e) {
   } = e;
   if (!d.Z.isEnabled()) returnfalse;
   let s = l.default.getId();
-  if (!w(null == a ? true : a.id, s, o, I)) returnfalse;
-  let c = T.get(C({
+  if (!D(null == a ? true : a.id, s, o, S)) returnfalse;
+  let c = I.get(C({
     userId: null != (t = null == a ? true : a.id) ? t : "???",
     channelId: r
   }));
-  if (d.Z.screenshakeEnabled && d.Z.screenshakeEnabledLocations[_.oZ.MENTION] && null != i && null != i.find(e => e.id === s)) {
-    let e = null != c ? null != (n = (0, f.KH)(c, _.qi.LEVEL_4)) ? n : .001 : 4 * Math.random();
-    return u.S.dispatch(p.CkL.SHAKE_APP, {
+  if (d.Z.screenshakeEnabled && d.Z.screenshakeEnabledLocations[p.oZ.MENTION] && null != i && null != i.find(e => e.id === s)) {
+    let e = null != c ? null != (n = (0, f.KH)(c, p.qi.LEVEL_4)) ? n : .001 : 4 * Math.random();
+    return u.S.dispatch(_.CkL.SHAKE_APP, {
       duration: 1e3,
       intensity: e
     }), true
   }
   returnfalse
 }
-class x extends(r = Chunk442837.ZP.Store) {
+class L extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk351780.Z, Chunk944486.Z)
   }
   getComboScore(e, t) {
-    let n = T.get(C({
+    let n = I.get(C({
       userId: e,
       channelId: t
     }));
     return null == n ? 0 : (0, f.Eo)(n)
   }
   getUserCombo(e, t) {
-    return T.get(C({
+    return I.get(C({
       userId: e,
       channelId: t
     }))
   }
   isComboing(e, t) {
     let n = this.getUserCombo(e, t);
-    return null != n && n.value >= d.Z.combosRequiredCount && S(n)
+    return null != n && n.value >= d.Z.combosRequiredCount && T(n)
   }
   getMessageCombo(e) {
     var t;
@@ -231,10 +231,10 @@ class x extends(r = Chunk442837.ZP.Store) {
     return null != i ? (0, f.KH)(i, r) * n : 0
   }
 }
-h(x, "displayName", "PoggermodeStore");
-let M = new x(Chunk570140.Z, {
-    POGGERMODE_UPDATE_COMBO: P,
-    POGGERMODE_UPDATE_MESSAGE_COMBO: D,
-    MESSAGE_CREATE: L
+m(L, "displayName", "PoggermodeStore");
+let j = new L(Chunk570140.Z, {
+    POGGERMODE_UPDATE_COMBO: R,
+    POGGERMODE_UPDATE_MESSAGE_COMBO: w,
+    MESSAGE_CREATE: x
   }),
-  k = M
+  M = j

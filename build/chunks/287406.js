@@ -11,20 +11,20 @@ var Chunk288537 = require("./288537.js"),
   u = 4,
   d = 0,
   f = 1,
-  _ = 2,
-  p = false,
-  h = 0,
-  m = 8;
+  p = 2,
+  _ = false,
+  m = 0,
+  h = 8;
 
 function g(e) {
   if (!(this instanceof g)) return new g(e);
   this.options = i.assign({
-    level: p,
-    method: m,
+    level: _,
+    method: h,
     chunkSize: 16384,
     windowBits: 15,
     memLevel: 8,
-    strategy: h,
+    strategy: m,
     to: ""
   }, e || {});
   var t, n = this.options;
@@ -52,14 +52,14 @@ function y(e, t) {
 }
 g.prototype.push = function(e, t) {
   var n, o, s = this.strm,
-    p = this.options.chunkSize;
+    _ = this.options.chunkSize;
   if (this.ended) returnfalse;
   o = t === ~~t ? t : true === t ? u : c, "string" == typeof e ? s.input = a.string2buf(e) : "[object ArrayBuffer]" === l.call(e) ? s.input = new Uint8Array(e) : s.input = e, s.next_in = 0, s.avail_in = s.input.length;
   do {
-    if (0 === s.avail_out && (s.output = new i.Buf8(p), s.next_out = 0, s.avail_out = p), (n = r.deflate(s, o)) !== f && n !== d) return this.onEnd(n), this.ended = true, false;
-    (0 === s.avail_out || 0 === s.avail_in && (o === u || o === _)) && ("string" === this.options.to ? this.onData(a.buf2binstring(i.shrinkBuf(s.output, s.next_out))) : this.onData(i.shrinkBuf(s.output, s.next_out)))
+    if (0 === s.avail_out && (s.output = new i.Buf8(_), s.next_out = 0, s.avail_out = _), (n = r.deflate(s, o)) !== f && n !== d) return this.onEnd(n), this.ended = true, false;
+    (0 === s.avail_out || 0 === s.avail_in && (o === u || o === p)) && ("string" === this.options.to ? this.onData(a.buf2binstring(i.shrinkBuf(s.output, s.next_out))) : this.onData(i.shrinkBuf(s.output, s.next_out)))
   } while ((s.avail_in > 0 || 0 === s.avail_out) && n !== f);
-  return o === u ? (n = r.deflateEnd(this.strm), this.onEnd(n), this.ended = true, n === d) : (o === _ && (this.onEnd(d), s.avail_out = 0), true)
+  return o === u ? (n = r.deflateEnd(this.strm), this.onEnd(n), this.ended = true, n === d) : (o === p && (this.onEnd(d), s.avail_out = 0), true)
 }, g.prototype.onData = function(e) {
   this.chunks.push(e)
 }, g.prototype.onEnd = function(e) {

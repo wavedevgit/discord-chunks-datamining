@@ -19,9 +19,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk490684 = require("./490684.js");
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -29,7 +29,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -45,13 +45,13 @@ function g(e) {
   return {
     header: t,
     isLargeModal: n,
-    stepProps: h(e, ["header", "isLargeModal"])
+    stepProps: m(e, ["header", "isLargeModal"])
   }
 }
 
 function E(e) {
-  var t, n, a, s, c, h;
-  let m, {
+  var t, n, a, s, c, m;
+  let h, {
       header: E,
       isLargeModal: b,
       stepProps: y
@@ -59,64 +59,64 @@ function E(e) {
     {
       step: O,
       stepConfigs: v,
-      setBodyNode: I,
-      setFooterNode: T,
-      setModalOverlayNode: S,
+      setBodyNode: S,
+      setFooterNode: I,
+      setModalOverlayNode: T,
       setReadySlideId: A,
       premiumBrandRefreshBackgroundClassName: C,
       selectedSkuId: N,
-      isDisplayingWowMomentConfirmation: R,
-      isGift: P
+      isDisplayingWowMomentConfirmation: P,
+      isGift: R
     } = (0, d.JL)(),
-    D = null != N && N in _.y7,
-    w = v.find(e => e.key === O);
+    w = null != N && N in p.y7,
+    D = v.find(e => e.key === O);
   i.useEffect(() => {
-    S(null)
-  }, [O, S]), l()(null != w, "Unknown step for current payment flow.");
-  let L = null != (c = null == w || null == (t = w.options) ? true : t.hideSlider) && c,
-    x = null == w || null == (n = w.options) ? true : n.bodyClassName,
-    M = null == w || null == (a = w.options) ? true : a.sliderBodyClassName;
-  switch (true !== b && b && (M = p.sliderBodyLarge), O) {
+    T(null)
+  }, [O, T]), l()(null != D, "Unknown step for current payment flow.");
+  let x = null != (c = null == D || null == (t = D.options) ? true : t.hideSlider) && c,
+    L = null == D || null == (n = D.options) ? true : n.bodyClassName,
+    j = null == D || null == (a = D.options) ? true : a.sliderBodyClassName;
+  switch (true !== b && b && (j = _.sliderBodyLarge), O) {
     case f.h8.ADD_PAYMENT_STEPS:
-      m = 408;
+      h = 408;
       break;
     case f.h8.REVIEW:
-      m = 392;
+      h = 392;
       break;
     case f.h8.PLAN_SELECT:
-      D && !P && (m = "100%")
+      w && !R && (h = "100%")
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [null == (h = null == w || null == (s = w.options) ? true : s.renderHeader) || h ? E : null, w.renderStep(y), null == O || L ? null : (0, r.jsxs)(r.Fragment, {
+    children: [null == (m = null == D || null == (s = D.options) ? true : s.renderHeader) || m ? E : null, D.renderStep(y), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         "data-migration-pending": true,
-        className: o()(x, p.body, C, {
-          [p.reviewStep]: O === f.h8.REVIEW,
-          [p.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && D
+        className: o()(L, _.body, C, {
+          [_.reviewStep]: O === f.h8.REVIEW,
+          [_.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && w
         }),
         children: (0, r.jsx)(u.MyZ, {
           activeSlide: O,
           centered: false,
           onSlideReady: e => A(e),
-          width: m,
-          overflow: R ? "visible" : true,
+          width: h,
+          overflow: P ? "visible" : true,
           shouldUseMediaQueriesForSizing: true,
           children: v.filter(e => null != e.key).map(e => (0, r.jsx)(u.Mi4, {
             id: e.key,
             children: (0, r.jsx)("form", {
-              className: o()(p.sliderBody, M),
+              className: o()(_.sliderBody, j),
               ref: e => {
-                I(e)
+                S(e)
               },
               onSubmit: e => e.preventDefault()
             })
           }, e.key))
         })
       }), (0, r.jsx)("div", {
-        ref: e => T(e)
+        ref: e => I(e)
       }), (0, r.jsx)("div", {
         ref: e => {
-          S(e)
+          T(e)
         }
       })]
     })]

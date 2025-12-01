@@ -31,26 +31,26 @@ function O(e) {
   let {
     onClose: E,
     event: N
-  } = e, P = null == N ? true : N.guild_id, C = (0, l.e7)([u.ZP], () => {
+  } = e, C = null == N ? true : N.guild_id, P = (0, l.e7)([u.ZP], () => {
     var e;
-    return null != P ? null == (e = u.ZP.getDefaultChannel(P)) ? true : e.id : null
-  }, [P]), S = (0, l.e7)([d.Z], () => d.Z.getGuild(P), [P]), {
+    return null != C ? null == (e = u.ZP.getDefaultChannel(C)) ? true : e.id : null
+  }, [C]), S = (0, l.e7)([d.Z], () => d.Z.getGuild(C), [C]), {
     channel_id: I,
-    id: T
-  } = null != N ? N : {}, Z = (0, l.e7)([g.Z], () => {
-    let e = null != I ? I : C;
+    id: Z
+  } = null != N ? N : {}, T = (0, l.e7)([g.Z], () => {
+    let e = null != I ? I : P;
     return null == e ? null : g.Z.getInvite(e)
-  }, [I, C]);
+  }, [I, P]);
   if (null == N) return E(), null;
-  let w = null != (t = null == S ? true : S.vanityURLCode) ? t : null == Z ? true : Z.code,
+  let w = null != (t = null == S ? true : S.vanityURLCode) ? t : null == T ? true : T.code,
     D = null != w ? (0, a.tV)({
       baseCode: w,
-      guildScheduledEventId: T
+      guildScheduledEventId: Z
     }) : null,
-    k = null == D || null == Z,
+    k = null == D || null == T,
     R = (0, s.Z)(null != D ? D : ""),
-    A = null != (n = null == Z ? true : Z.maxAge) ? n : b.value,
-    _ = null != (O = null == Z ? true : Z.maxUses) ? O : y.value;
+    _ = null != (n = null == T ? true : T.maxAge) ? n : b.value,
+    A = null != (O = null == T ? true : T.maxUses) ? O : y.value;
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)(i.P3F, {
@@ -95,7 +95,7 @@ function O(e) {
             channel: I,
             channel_type: t,
             location: p.t4x.GUILD_EVENTS,
-            code: Z.code,
+            code: T.code,
             guild_scheduled_event_id: null == N ? true : N.id
           })
         }
@@ -103,7 +103,7 @@ function O(e) {
         variant: "text-xs/normal",
         color: "header-secondary",
         className: f.inviteDetail,
-        children: (0, h.Vg)(A, _)
+        children: (0, h.Vg)(_, A)
       })]
     })]
   })

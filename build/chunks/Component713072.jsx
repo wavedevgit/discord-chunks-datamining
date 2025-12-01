@@ -20,16 +20,16 @@ function u(e) {
     leading: a,
     trailing: u,
     inInput: f = false
-  } = e, _ = null;
-  null != a && (_ = (0, r.jsx)("div", {
+  } = e, p = null;
+  null != a && (p = (0, r.jsx)("div", {
     className: l.leading,
     children: (0, r.jsx)(d, {
       accessory: a,
       leading: true
     })
   }));
-  let p = null;
-  return null != u && (p = (0, r.jsx)("div", {
+  let _ = null;
+  return null != u && (_ = (0, r.jsx)("div", {
     className: l.trailing,
     children: (0, r.jsx)(d, {
       accessory: u
@@ -40,16 +40,16 @@ function u(e) {
     }),
     onClick: n,
     "aria-hidden": i,
-    children: [_, (0, r.jsx)(s.xvT, {
+    children: [p, (0, r.jsx)(s.xvT, {
       variant: "text-md/normal",
       color: "currentColor",
       lineClamp: 1,
       style: {
-        gridColumnStart: null != _ ? "2" : "1",
-        gridColumnEnd: null != p ? "2" : "3"
+        gridColumnStart: null != p ? "2" : "1",
+        gridColumnEnd: null != _ ? "2" : "3"
       },
       children: t
-    }), p]
+    }), _]
   })
 }
 

@@ -2,7 +2,7 @@
 /** chunk id: 981283, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -35,7 +35,7 @@ function f(e) {
   }
   return e
 }
-class _ extends Chunk20528.Z {
+class p extends Chunk20528.Z {
   _initialize() {
     super._initialize(), Chunk960861.ZP.initializeIfNeeded()
   }
@@ -61,4 +61,4 @@ class _ extends Chunk20528.Z {
     })
   }
 }
-let p = new _
+let _ = new p

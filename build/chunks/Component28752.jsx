@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk430864 = require("./430864.js"),
   Chunk413097 = require("./413097.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -46,11 +46,11 @@ function b(e) {
     application: t,
     onSelect: n
   } = e, c = (0, d.X)(), {
-    iconURL: p
+    iconURL: _
   } = i.useMemo(() => (0, s.sl)(t, {
-    fakeAppIconURL: h,
+    fakeAppIconURL: m,
     size: E
-  }), [t]), m = i.useMemo(() => [{
+  }), [t]), h = i.useMemo(() => [{
     type: a.Y.USER_INSTALL,
     icon: o.oLu,
     title: f.intl.string(f.t.aCg60P),
@@ -67,13 +67,13 @@ function b(e) {
     return (null == (r = t.integrationTypesConfig) || null == (n = r[e.type]) ? true : n.oauth2InstallParams) != null
   }), [t.integrationTypesConfig]);
   return (0, r.jsxs)("div", {
-    className: _.container,
+    className: p.container,
     children: [(0, r.jsxs)("header", {
       id: c,
-      className: _.header,
+      className: p.header,
       children: [(0, r.jsx)(l.Z, {
-        src: p,
-        className: _.appIcon,
+        src: _,
+        className: p.appIcon,
         rendersPlaceholder: true
       }), (0, r.jsx)(O, {
         application: t
@@ -81,19 +81,19 @@ function b(e) {
         application: t
       })]
     }), (0, r.jsx)("ul", {
-      className: _.rows,
-      children: m.map(e => (0, r.jsxs)(o.P3F, {
+      className: p.rows,
+      children: h.map(e => (0, r.jsxs)(o.P3F, {
         tag: "li",
-        className: _.row,
+        className: p.row,
         onClick: () => n(e.type),
         children: [(0, r.jsx)(e.icon, {
           size: "md",
           color: "currentColor",
-          className: _.leftIcon
+          className: p.leftIcon
         }), (0, r.jsxs)("div", {
-          className: _.rowInner,
+          className: p.rowInner,
           children: [(0, r.jsxs)("div", {
-            className: _.rowDetails,
+            className: p.rowDetails,
             children: [(0, r.jsx)(o.Text, {
               variant: "text-md/medium",
               color: "interactive-active",
@@ -106,7 +106,7 @@ function b(e) {
           }), e.beta && (0, r.jsx)(u.Z, {}), (0, r.jsx)(o.Fbu, {
             size: "md",
             color: "currentColor",
-            className: _.rightIcon
+            className: p.rightIcon
           })]
         })]
       }, e.type))
@@ -119,10 +119,10 @@ function y(e) {
     application: t
   } = e, n = t.description;
   return null == n || 0 === n.length ? null : (0, r.jsx)("div", {
-    className: _.detailsContainer,
+    className: p.detailsContainer,
     children: (0, r.jsx)("div", {
-      className: _.overviewContainerNoVideo,
-      children: null != n && n.length > 0 ? (0, r.jsx)(I, {
+      className: p.overviewContainerNoVideo,
+      children: null != n && n.length > 0 ? (0, r.jsx)(S, {
         description: n
       }) : null
     })
@@ -134,13 +134,13 @@ function O(e) {
     application: t
   } = e, n = t.name, i = (0, s.vJ)(t);
   return (0, r.jsxs)("div", {
-    className: _.titleContainer,
+    className: p.titleContainer,
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xl/extrabold",
       lineClamp: 1,
       children: n
     }), i ? (0, r.jsx)("div", {
-      className: _.partnerLabelContainer,
+      className: p.partnerLabelContainer,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-default",
@@ -151,7 +151,7 @@ function O(e) {
 }
 let v = 3;
 
-function I(e) {
+function S(e) {
   let {
     description: t
   } = e, [a, s] = i.useState(true);
@@ -165,45 +165,45 @@ function I(e) {
     {
       ref: u,
       lineHeight: d,
-      lineCount: h
-    } = T(),
-    m = i.useMemo(() => {
-      if (null == d || null == h) return {
+      lineCount: m
+    } = I(),
+    h = i.useMemo(() => {
+      if (null == d || null == m) return {
         key: 0
       };
-      let e = d * h;
+      let e = d * m;
       return {
         key: 1,
         minHeightOverride: Math.min(e, v * d),
         maxHeightOverride: e
       }
-    }, [h, d]),
+    }, [m, d]),
     {
       ref: E,
       isTransitioning: b,
       onTransitionEnd: y
     } = (0, c.Z)(g({
       isExpanded: a
-    }, m)),
+    }, h)),
     O = a || b;
   return (0, r.jsxs)("div", {
-    className: _.descriptionContainer,
+    className: p.descriptionContainer,
     children: [(0, r.jsx)("div", {
       ref: E,
-      className: _.overflowHidden,
+      className: p.overflowHidden,
       onTransitionEnd: y,
       children: (0, r.jsx)(o.Text, {
         ref: u,
-        className: p.markup,
+        className: _.markup,
         variant: "text-sm/medium",
         lineClamp: O ? true : v,
         style: {
-          maxHeight: O ? true : m.minHeightOverride
+          maxHeight: O ? true : h.minHeightOverride
         },
         children: l
       })
-    }), null != h && h > v ? (0, r.jsxs)(o.P3F, {
-      className: _.expandableDescriptionClickable,
+    }), null != m && m > v ? (0, r.jsxs)(o.P3F, {
+      className: p.expandableDescriptionClickable,
       onClick: () => s(e => !e),
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
@@ -220,7 +220,7 @@ function I(e) {
   })
 }
 
-function T() {
+function I() {
   let e = Chunk473749.useRef(null),
     [t, n] = Chunk473749.useState(null),
     [r, a] = Chunk473749.useState(null);

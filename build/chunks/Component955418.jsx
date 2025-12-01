@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk391022 = require("./391022.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -66,27 +66,27 @@ function O(e) {
     user: t,
     guildId: n,
     channelId: c,
-    onClose: _,
-    disableAutoFocus: m = false
+    onClose: p,
+    disableAutoFocus: h = false
   } = e, {
     newestAnalyticsLocation: E
   } = (0, a.ZP)(), {
     trackUserProfileAction: O
-  } = (0, d.KZ)(), [v, I] = i.useState(""), [T, S] = i.useState((0, s.JM)(v)), A = i.useRef(false), C = i.useMemo(() => b(g({}, o.Ie.USER_PROFILE), {
-    disableAutoFocus: m
-  }), [m]);
+  } = (0, d.KZ)(), [v, S] = i.useState(""), [I, T] = i.useState((0, s.JM)(v)), A = i.useRef(false), C = i.useMemo(() => b(g({}, o.Ie.USER_PROFILE), {
+    disableAutoFocus: h
+  }), [h]);
   return (0, r.jsx)(l.ZP, {
-    className: h.container,
-    editorClassName: h.editor,
+    className: m.container,
+    editorClassName: m.editor,
     type: C,
-    placeholder: p.intl.formatToPlainString(p.t["0ZQw/X"], {
+    placeholder: _.intl.formatToPlainString(_.t["0ZQw/X"], {
       name: u.ZP.getName(n, c, t)
     }),
     channel: y,
     textValue: v,
-    richValue: T,
+    richValue: I,
     onChange: (e, t, n) => {
-      t !== v && (I(t), S(n))
+      t !== v && (S(t), T(n))
     },
     focused: A.current,
     onFocus: () => {
@@ -108,7 +108,7 @@ function O(e) {
           openChannel: true,
           whenReady: true,
           location: E
-        }), null == _ || _(), {
+        }), null == p || p(), {
           shouldClear: true,
           shouldRefocus: false
         }

@@ -23,10 +23,10 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = new Set(["APP_STATE_UPDATE", "CLEAR_CACHES", "CONNECTION_CLOSED", "CONNECTION_OPEN", "CONNECTION_RESUMED", "LOGIN_SUCCESS", "LOGIN", "LOGOUT", "MESSAGE_SEND_FAILED", "PUSH_NOTIFICATION_CLICK", "RESET_SOCKET", "SESSION_START", "UPLOAD_FAIL", "WRITE_CACHES"]),
-  p = new Chunk579092.Yd("Flux"),
-  h = 100,
-  m = 10,
+let p = new Set(["APP_STATE_UPDATE", "CLEAR_CACHES", "CONNECTION_CLOSED", "CONNECTION_OPEN", "CONNECTION_RESUMED", "LOGIN_SUCCESS", "LOGIN", "LOGOUT", "MESSAGE_SEND_FAILED", "PUSH_NOTIFICATION_CLICK", "RESET_SOCKET", "SESSION_START", "UPLOAD_FAIL", "WRITE_CACHES"]),
+  _ = new Chunk579092.Yd("Flux"),
+  m = 100,
+  h = 10,
   g = "__subscriptions";
 class E {
   isDispatching() {
@@ -59,7 +59,7 @@ class E {
         if (++exports > 100) {
           var e;
           let t = Chunk625306.qC();
-          throw p.error("LastFewActions", exports), null == (e = this._sentryUtils) || module.addBreadcrumb({
+          throw _.error("LastFewActions", exports), null == (e = this._sentryUtils) || module.addBreadcrumb({
             message: "Dispatcher: Dispatch loop detected",
             data: {
               lastFewActions: exports
@@ -77,7 +77,7 @@ class E {
     this._dispatchWithLogging(e)
   }
   _dispatchWithLogging(e) {
-    a()(null == this._currentDispatchActionType, "Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch. Action: ".concat(e.type, " Already dispatching: ").concat(this._currentDispatchActionType)), a()(e.type, "Dispatch.dispatch(...) called without an action type"), _.has(e.type) && p.log("Dispatching ".concat(e.type)), (0, s.B1)(e.type), u.IH(e.type);
+    a()(null == this._currentDispatchActionType, "Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch. Action: ".concat(e.type, " Already dispatching: ").concat(this._currentDispatchActionType)), a()(e.type, "Dispatch.dispatch(...) called without an action type"), p.has(e.type) && _.log("Dispatching ".concat(e.type)), (0, s.B1)(e.type), u.IH(e.type);
     let t = this.actionLogger.log(e, t => {
       try {
         this._currentDispatchActionType = e.type, this._dispatch(e, t)
@@ -85,7 +85,7 @@ class E {
         this._currentDispatchActionType = null
       }
     });
-    t.totalTime > h && p.verbose("Slow dispatch on ".concat(e.type, ": ").concat(t.totalTime, "ms"));
+    t.totalTime > m && _.verbose("Slow dispatch on ".concat(e.type, ": ").concat(t.totalTime, "ms"));
     try {
       (0, s.L8)("DISPATCH[".concat(e.type, "]"), e.type)
     } catch (e) {}
@@ -132,7 +132,7 @@ class E {
   }
   constructor(e = 0, t, n) {
     (f(this, "_defaultBand", true), f(this, "_interceptors", []), f(this, "_subscriptions", {}), f(this, "_waitQueue", []), f(this, "_processingWaitQueue", false), f(this, "_currentDispatchActionType", null), f(this, "_actionHandlers", new b), f(this, "_sentryUtils", true), f(this, "actionLogger", true), f(this, "functionCache", {}), this._defaultBand = e, this._sentryUtils = n, null != t) ? this.actionLogger = t: ("undefined" == typeof window || 1, this.actionLogger = new d.Z), this.actionLogger.on("trace", (e, t, n) => {
-      o.Z.isTracing && n >= m && o.Z.mark("\uD83E\uDDA5", t, n)
+      o.Z.isTracing && n >= h && o.Z.mark("\uD83E\uDDA5", t, n)
     })
   }
 }

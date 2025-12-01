@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk724913 = require("./724913.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -62,34 +62,34 @@ let E = Chunk473749.memo(function(e) {
       children: t,
       className: n,
       compact: a = false,
-      timestamp: _,
-      timestampFormat: p,
-      isVisibleOnlyOnHover: h = false,
-      cozyAlt: m = false,
+      timestamp: p,
+      timestampFormat: _,
+      isVisibleOnlyOnHover: m = false,
+      cozyAlt: h = false,
       isInline: E = true,
       id: y,
       isEdited: O = false,
       application: v,
-      tooltipPosition: I
-    } = e, T = i.useMemo(() => g(_), [_]), S = i.useMemo(() => (0, l.Hg)(T), [T]), A = i.useMemo(() => null != p ? (0, l.vc)(T, p) : a ? (0, l.vc)(T, "LT") : (0, l.Y4)(T, true), [T, p, a]), C = i.useMemo(() => a ? (0, u.Z)(A) : null, [a, A]), N = i.useMemo(() => O ? d.intl.formatToPlainString(d.t.CDzOFd, {
-      timeFormatted: S
-    }) : S, [O, S]);
+      tooltipPosition: S
+    } = e, I = i.useMemo(() => g(p), [p]), T = i.useMemo(() => (0, l.Hg)(I), [I]), A = i.useMemo(() => null != _ ? (0, l.vc)(I, _) : a ? (0, l.vc)(I, "LT") : (0, l.Y4)(I, true), [I, _, a]), C = i.useMemo(() => a ? (0, u.Z)(A) : null, [a, A]), N = i.useMemo(() => O ? d.intl.formatToPlainString(d.t.CDzOFd, {
+      timeFormatted: T
+    }) : T, [O, T]);
     return (0, r.jsx)("span", {
       className: o()(n, C, {
         [f.timestamp]: true,
-        [f.timestampVisibleOnHover]: h,
+        [f.timestampVisibleOnHover]: m,
         [f.timestampInline]: E,
-        [f.alt]: m
+        [f.alt]: h
       }),
       children: null == v ? (0, r.jsx)(s.u, {
         asContainer: true,
-        __unsupportedReactNodeAsText: (0, l.vc)(T, "LLLL"),
+        __unsupportedReactNodeAsText: (0, l.vc)(I, "LLLL"),
         "aria-label": N,
-        position: I,
+        position: S,
         delay: 750,
         children: (0, r.jsx)(b, {
           timeFormatted: A,
-          timestamp: T,
+          timestamp: I,
           id: y,
           compact: a,
           children: t
@@ -99,7 +99,7 @@ let E = Chunk473749.memo(function(e) {
         compact: a,
         children: (0, r.jsx)(b, {
           timeFormatted: A,
-          timestamp: T,
+          timestamp: I,
           id: y,
           compact: a,
           children: t
@@ -116,7 +116,7 @@ let E = Chunk473749.memo(function(e) {
       timestamp: o,
       id: s
     } = e;
-    return (0, r.jsx)("time", m(p({}, t), {
+    return (0, r.jsx)("time", h(_({}, t), {
       id: s,
       dateTime: o.toISOString(),
       children: null != i ? i : (0, r.jsxs)(r.Fragment, {

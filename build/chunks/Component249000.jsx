@@ -58,11 +58,11 @@ function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   return [null == e.bottom ? "TOP" : "BOTTOM", null == e.right ? "LEFT" : "RIGHT"]
 }
 
-function p(e) {
+function _(e) {
   let {
     top: t,
     left: n,
@@ -77,7 +77,7 @@ function p(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   let {
     top: t,
     left: n,
@@ -92,7 +92,7 @@ function h(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   let {
     top: t,
     left: n,
@@ -204,9 +204,9 @@ class E extends(r = Chunk473749.PureComponent) {
       } = this.props, {
         target: u
       } = e, {
-        current: _
+        current: p
       } = this.draggableRef;
-      if (null != _ && e.button === o.AeJ.PRIMARY && (a || null != u && null != s && "" !== s && null != u.closest(s))) {
+      if (null != p && e.button === o.AeJ.PRIMARY && (a || null != u && null != s && "" !== s && null != u.closest(s))) {
         let {
           x: a,
           y: o
@@ -215,7 +215,7 @@ class E extends(r = Chunk473749.PureComponent) {
           left: n,
           bottom: r,
           right: i
-        }, l, c, _.clientWidth, _.clientHeight));
+        }, l, c, p.clientWidth, p.clientHeight));
         this._dragStart = {
           x: e.clientX,
           y: e.clientY
@@ -235,7 +235,7 @@ class E extends(r = Chunk473749.PureComponent) {
         flipHorizontal: s,
         onDragStart: u,
         onDrag: f,
-        onFlip: h,
+        onFlip: m,
         snapOrientation: g
       } = this.props, {
         dragging: E,
@@ -249,24 +249,24 @@ class E extends(r = Chunk473749.PureComponent) {
         }) < c) return;
       E = true;
       let {
-        clientWidth: I,
-        clientHeight: T
-      } = r, S = m(d({
+        clientWidth: S,
+        clientHeight: I
+      } = r, T = h(d({
         top: n - this._offsetY,
         left: t - this._offsetX
-      }, i, a, I, T));
+      }, i, a, S, I));
       if (g) {
-        let e = _(S = p(S));
+        let e = p(T = _(T));
         y = e[0], O = e[1]
-      } else S = {
-        top: S.top,
-        left: S.left
+      } else T = {
+        top: T.top,
+        left: T.left
       };
-      2 === s && O !== this.state.horizontalOrientation && (this._offsetX = I - this._offsetX, v = true), 2 === o && y !== this.state.verticalOrientation && (this._offsetY = T - this._offsetY, v = true), this.setDOMPositions(S), b || null == u || u(S, r), null == f || f(S, r), v && (null == h || h([y, O])), this.setState({
+      2 === s && O !== this.state.horizontalOrientation && (this._offsetX = S - this._offsetX, v = true), 2 === o && y !== this.state.verticalOrientation && (this._offsetY = I - this._offsetY, v = true), this.setDOMPositions(T), b || null == u || u(T, r), null == f || f(T, r), v && (null == m || m([y, O])), this.setState({
         dragging: E,
         verticalOrientation: y,
         horizontalOrientation: O,
-        atTopEdge: 0 === S.top
+        atTopEdge: 0 === T.top
       })
     }), s(this, "handleMouseUp", () => {
       window.removeEventListener("mousemove", this.handleMouseMove), window.removeEventListener("mouseup", this.handleMouseUp), this.state.dragging && this.setState({
@@ -303,13 +303,13 @@ class E extends(r = Chunk473749.PureComponent) {
       let {
         clientHeight: u,
         clientWidth: f
-      } = r, h = d(t, i, a, f, u);
-      if (h = m(h), s) {
-        let t = _(e = p(h));
+      } = r, m = d(t, i, a, f, u);
+      if (m = h(m), s) {
+        let t = p(e = _(m));
         l = t[0], c = t[1]
       } else e = {
-        top: h.top,
-        left: h.left,
+        top: m.top,
+        left: m.left,
         right: null,
         bottom: null
       };
@@ -322,8 +322,8 @@ class E extends(r = Chunk473749.PureComponent) {
         atTopEdge: g
       })
     });
-    let [t, n] = _(e.initialPosition);
-    this.position = h(e.initialPosition), this.state = {
+    let [t, n] = p(e.initialPosition);
+    this.position = m(e.initialPosition), this.state = {
       dragging: false,
       verticalOrientation: t,
       horizontalOrientation: n,

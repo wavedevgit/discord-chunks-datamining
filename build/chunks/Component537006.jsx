@@ -2,7 +2,7 @@
 /** chunk id: 537006, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,23 +32,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk131151 = require("./131151.js");
 
-function P(e) {
+function R(e) {
   let {
     onClose: t
   } = e;
   return (0, r.jsx)(u.P3F, {
     "aria-label": N.intl.string(N.t.WAI6xu),
     onClick: t,
-    className: R.upsellCloseIconWrapper,
+    className: P.upsellCloseIconWrapper,
     children: (0, r.jsx)(u.Dio, {
       size: "xs",
-      className: R.upsellCloseIcon,
+      className: P.upsellCloseIcon,
       color: "currentColor"
     })
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     tiny: t,
     isPremiumUser: n,
@@ -60,23 +60,23 @@ function D(e) {
     trackUserProfileAction: s
   } = (0, y.KZ)();
   return (0, r.jsxs)("div", {
-    className: R.upsellButtons,
+    className: P.upsellButtons,
     children: [(0, r.jsx)("div", {
-      className: R.upsellButtonWrapper,
+      className: P.upsellButtonWrapper,
       children: n ? (0, r.jsx)(v.O1, {
-        action: I.yM.VIEW_PREMIUM_PERKS,
+        action: S.yM.VIEW_PREMIUM_PERKS,
         fullWidth: true,
         size: "sm",
         variant: "secondary",
         icon: u.SrA,
         text: N.intl.string(N.t["0Q61kF"]),
         onClick: () => {
-          (0, E.uL)(T.Z5c.APPLICATION_STORE), null == i || i()
+          (0, E.uL)(I.Z5c.APPLICATION_STORE), null == i || i()
         }
       }) : (0, r.jsx)(g.Z, {
         onClick: () => {
           s({
-            action: I.yM.GET_PREMIUM
+            action: S.yM.GET_PREMIUM
           }), null == i || i()
         },
         textOptions: {
@@ -84,9 +84,9 @@ function D(e) {
         },
         subscriptionTier: A.Si.TIER_2,
         premiumModalAnalyticsLocation: {
-          section: T.jXE.USER_PROFILE
+          section: I.jXE.USER_PROFILE
         },
-        className: R.matchManaColors,
+        className: P.matchManaColors,
         size: t ? c.zx.Sizes.TINY : c.zx.Sizes.SMALL,
         look: c.zx.Looks.FILLED,
         color: c.zx.Colors.PRIMARY,
@@ -94,9 +94,9 @@ function D(e) {
         fullWidth: true
       })
     }), (0, r.jsx)("div", {
-      className: R.upsellButtonWrapper,
+      className: P.upsellButtonWrapper,
       children: (0, r.jsx)(v.O1, {
-        action: I.yM.VISIT_SHOP,
+        action: S.yM.VISIT_SHOP,
         fullWidth: true,
         icon: u.EOn,
         text: N.intl.string(N.t.b2d0N0),
@@ -113,17 +113,17 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     isPremiumUser: t,
     onInteraction: n,
     className: a
-  } = e, c = (0, _.Dt)(), {
+  } = e, c = (0, p.Dt)(), {
     themeType: d
-  } = (0, O.z)(), f = d === C.l.MODAL, g = (0, h.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, s.e7)([b.Z], () => b.Z.getGuildId());
+  } = (0, O.z)(), f = d === C.l.MODAL, g = (0, m.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, s.e7)([b.Z], () => b.Z.getGuildId());
   if (i.useEffect(() => {
-      if (!g) return (0, m.kk)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), () => {
-        (0, p.gE)({
+      if (!g) return (0, h.kk)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), () => {
+        (0, _.gE)({
           content: l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS
         }, false)
       }
@@ -133,45 +133,45 @@ function w(e) {
       id: c,
       children: N.intl.string(N.t.EIYbj6)
     }),
-    v = (0, r.jsx)(P, {
+    v = (0, r.jsx)(R, {
       onClose: () => {
-        (0, h.Q3)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS, {
-          dismissAction: S.L.USER_DISMISS,
+        (0, m.Q3)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS, {
+          dismissAction: T.L.USER_DISMISS,
           guildId: E,
           forceTrack: true
         })
       }
     }),
-    I = (0, r.jsx)(D, {
+    S = (0, r.jsx)(w, {
       isPremiumUser: t,
       onInteraction: n,
       tiny: f
     });
   return f ? (0, r.jsx)("aside", {
-    className: o()(R.upsellContainer, a),
+    className: o()(P.upsellContainer, a),
     "aria-labelledby": c,
     children: (0, r.jsxs)("div", {
-      className: o()(R.upsellContent, R.upsellRowContent),
+      className: o()(P.upsellContent, P.upsellRowContent),
       children: [y, (0, r.jsxs)("div", {
-        className: R.upsellRowRight,
+        className: P.upsellRowRight,
         children: [(0, r.jsx)("div", {
-          children: I
+          children: S
         }), (0, r.jsx)("div", {
           children: v
         })]
       })]
     })
   }) : (0, r.jsx)("aside", {
-    className: o()(R.upsellContainer, a),
+    className: o()(P.upsellContainer, a),
     "aria-labelledby": c,
     children: (0, r.jsxs)("div", {
-      className: o()(R.upsellContent, R.upsellDefaultContent),
+      className: o()(P.upsellContent, P.upsellDefaultContent),
       children: [(0, r.jsxs)("div", {
-        className: R.upsellHeader,
+        className: P.upsellHeader,
         children: [y, (0, r.jsx)("div", {
           children: v
         })]
-      }), I]
+      }), S]
     })
   })
 }

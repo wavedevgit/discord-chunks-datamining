@@ -60,7 +60,7 @@ function v(e, t) {
   }), e
 }
 
-function I(e) {
+function S(e) {
   let {
     channel: t,
     message: n,
@@ -78,16 +78,16 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     assets: t,
     currentUser: n,
     message: r
-  } = e, i = (h.default.extractTimestamp(n.id) + h.default.extractTimestamp(r.id)) % t.length;
+  } = e, i = (m.default.extractTimestamp(n.id) + m.default.extractTimestamp(r.id)) % t.length;
   return t[i]
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t,
     message: n,
@@ -107,7 +107,7 @@ function A(e) {
     event: n,
     eventProperties: r
   } = e;
-  null != n && p.default.track(n, v(y({}, r), {
+  null != n && _.default.track(n, v(y({}, r), {
     sticker_id: t.id
   }))
 }
@@ -121,40 +121,40 @@ function C(e) {
     stickers: u,
     event: d,
     eventProperties: f
-  } = e, _ = i.useMemo(() => T({
+  } = e, p = i.useMemo(() => I({
     assets: u,
     currentUser: t,
     message: a
-  }), [u, t, a]), p = i.useMemo(() => T({
+  }), [u, t, a]), _ = i.useMemo(() => I({
     assets: s,
     currentUser: t,
     message: a
-  }), [s, t, a]), h = i.useCallback(async () => {
+  }), [s, t, a]), m = i.useCallback(async () => {
     let {
       valid: e
-    } = await (0, m.v)({
+    } = await (0, h.v)({
       type: l.Ie.FORM,
       content: "",
       channel: n
     });
-    e && (S({
+    e && (T({
       channel: n,
       message: a,
-      sticker: _
+      sticker: p
     }), A({
-      sticker: _,
+      sticker: p,
       event: d,
       eventProperties: f
     }))
-  }, [n, a, _, d, f]);
+  }, [n, a, p, d, f]);
   return (0, r.jsx)(o.zxk, {
     icon: {
       type: "sticker",
-      asset: _,
+      asset: p,
       component: c.Z
     },
-    text: p,
-    onClick: h,
+    text: _,
+    onClick: m,
     variant: "secondary"
   })
 }
@@ -167,7 +167,7 @@ function N(e) {
     stickers: a,
     event: o,
     eventProperties: s
-  } = e, l = _.default.getCurrentUser(), c = I({
+  } = e, l = p.default.getCurrentUser(), c = S({
     channel: t,
     message: n,
     currentUser: l

@@ -2,9 +2,9 @@
 /** chunk id: 814225, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P3: () => _,
+  P3: () => p,
   ZK: () => f,
-  en: () => h
+  en: () => m
 }), require("./704826.js"), require("./35282.js"), require("./388685.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -45,7 +45,7 @@ function f(e) {
   return null != t ? t.params.skuId : null
 }
 
-function _(e) {
+function p(e) {
   switch (e) {
     case o.EKQ.ACTION:
       return s.intl.string(s.t["1o2/IM"]);
@@ -194,7 +194,7 @@ Object.keys(d).forEach(e => {
     n = d[e];
   c[t] = n, u[n] = t
 });
-let p = [
+let _ = [
   ["YYYY-MM-DD", "MMMM DD, Y"],
   ["YYYY-MM", "MMMM Y"],
   ["MM-DD", "MMMM DD"],
@@ -202,15 +202,15 @@ let p = [
   ["YYYY", "Y"]
 ];
 
-function h(e) {
+function m(e) {
   let {
     preorderReleaseAt: t,
     preorderApproximateReleaseDate: n
   } = e;
   if (null != t) return t.format("MMMM DD");
   if (null == n) return null;
-  for (let e = 0; e < p.length; e++) {
-    let [t, r] = p[e], a = i()(n, t, true);
+  for (let e = 0; e < _.length; e++) {
+    let [t, r] = _[e], a = i()(n, t, true);
     if (a.isValid()) return a.format(r)
   }
   return n

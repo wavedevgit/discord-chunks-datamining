@@ -20,21 +20,21 @@ function d(e) {
     message: n,
     compact: d,
     usernameHook: f,
-    onClickThread: _,
-    onClickViewThreads: p,
-    onContextMenuThread: h
-  } = e, m = (0, s.ZP)(n), g = f(m), E = (0, i.e7)([o.Z], () => {
+    onClickThread: p,
+    onClickViewThreads: _,
+    onContextMenuThread: m
+  } = e, h = (0, s.ZP)(n), g = f(h), E = (0, i.e7)([o.Z], () => {
     var e;
     return o.Z.getChannel(null == (e = n.messageReference) ? true : e.channel_id)
   }), b = c.intl.format(c.t.cZ9Uf2, {
-    actorName: m.nick,
+    actorName: h.nick,
     actorHook: g,
     threadName: null != (t = null == E ? true : E.name) ? t : n.content,
     threadOnClick: {
-      onClick: _,
-      onContextMenu: h
+      onClick: p,
+      onContextMenu: m
     },
-    viewThreadsOnClick: p
+    viewThreadsOnClick: _
   });
   return (0, r.jsx)(l.Z, {
     iconNode: (0, r.jsx)(a.or_, {

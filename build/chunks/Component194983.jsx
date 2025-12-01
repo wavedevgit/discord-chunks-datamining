@@ -2,7 +2,7 @@
 /** chunk id: 194983, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,9 +50,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,26 +60,26 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = 500;
+let m = 500;
 
-function m(e) {
+function h(e) {
   let {
     children: t,
     "aria-label": n,
     className: a,
     position: c,
     delay: d
-  } = e, p = _(e, ["children", "aria-label", "className", "position", "delay"]), m = i.useRef(null), g = null != n ? n : "string" == typeof t && t;
-  return (0, r.jsx)(s.aML, f(u({}, p), {
+  } = e, _ = p(e, ["children", "aria-label", "className", "position", "delay"]), h = i.useRef(null), g = null != n ? n : "string" == typeof t && t;
+  return (0, r.jsx)(s.aML, f(u({}, _), {
     position: null != c ? c : "top",
-    delay: null != d ? d : h,
+    delay: null != d ? d : m,
     text: t,
     "aria-label": g,
     children: n => {
@@ -89,12 +89,12 @@ function m(e) {
       } = n;
       return (0, r.jsx)("div", {
         className: o()(a, l.overflow),
-        ref: m,
+        ref: h,
         "aria-hidden": e["aria-hidden"],
         onMouseEnter: () => {
           let {
             current: e
-          } = m;
+          } = h;
           null != e && e.offsetWidth < e.scrollWidth && (null == i || i())
         },
         onMouseLeave: s,

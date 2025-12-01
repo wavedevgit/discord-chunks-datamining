@@ -2,7 +2,7 @@
 /** chunk id: 55589, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk913527 = require("./913527.js"),
   a = require.n(Chunk913527),
@@ -43,13 +43,13 @@ let y = e => {
   },
   v = new Chunk759174.h(O, y);
 
-function I() {
+function S() {
   v.clear()
 }
 
-function T(e) {
+function I(e) {
   var t, n;
-  let r = null != (n = null != (t = h.ZP.lastMessageId(e.id)) ? t : e.lastMessageId) ? n : e.id,
+  let r = null != (n = null != (t = m.ZP.lastMessageId(e.id)) ? t : e.lastMessageId) ? n : e.id,
     i = e.isMessageRequestTimestamp;
   if (null != i) {
     let e = a()(i).valueOf(),
@@ -59,8 +59,8 @@ function T(e) {
   return r
 }
 
-function S(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : T(e);
+function T(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : I(e);
   return {
     channelId: e.id,
     lastMessageId: t,
@@ -71,7 +71,7 @@ function S(e) {
 
 function A() {
   v.clear(), Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
-    v.set(e.id, S(e))
+    v.set(e.id, T(e))
   })
 }
 
@@ -80,7 +80,7 @@ function C(e) {
     channel: t
   } = e;
   if (!(0, f.hv)(t.type) || t.id === c.V) returnfalse;
-  v.set(t.id, S(t))
+  v.set(t.id, T(t))
 }
 
 function N(e) {
@@ -88,37 +88,37 @@ function N(e) {
     channels: t
   } = e;
   t.forEach(e => {
-    ((0, f.hv)(e.type) || v.has(e.id)) && v.set(e.id, S(e))
+    ((0, f.hv)(e.type) || v.has(e.id)) && v.set(e.id, T(e))
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     channel: t
   } = e;
   return v.delete(t.id)
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t,
     message: n
   } = e;
   if (!v.has(t)) returnfalse;
-  let r = _.Z.getChannel(t);
-  return null != r && v.set(t, S(r, n.id))
+  let r = p.Z.getChannel(t);
+  return null != r && v.set(t, T(r, n.id))
 }
 
-function D(e) {
+function w(e) {
   let t = e.guild.id;
   return v.delete(t)
 }
 
-function w() {
+function D() {
   let e = Chunk592125.Z.getMutablePrivateChannels();
-  for (let t in module) v.set(exports, S(module[exports]))
+  for (let t in module) v.set(exports, T(module[exports]))
 }
-let L = (() => {
+let x = (() => {
   let e = [],
     t = [],
     n = [];
@@ -138,12 +138,12 @@ let L = (() => {
     }), t = Chunk913527), require
   }
 })();
-class x extends(r = Chunk442837.ZP.Store) {
+class L extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk355298.Z, Chunk306680.ZP, Chunk333984.Z, Chunk9156.ZP, Chunk594174.default), this.syncWith([Chunk9156.ZP, Chunk355298.Z], A)
   }
   getPrivateChannelIds() {
-    return L()
+    return x()
   }
   getSortedChannels() {
     return [v.values("FAVORITE"), v.values("DEFAULT")]
@@ -159,17 +159,17 @@ class x extends(r = Chunk442837.ZP.Store) {
     }), module
   }
 }
-b(x, "displayName", "PrivateChannelSortStore");
-let M = new x(Chunk570140.Z, {
+b(L, "displayName", "PrivateChannelSortStore");
+let j = new L(Chunk570140.Z, {
   CONNECTION_OPEN: A,
   CONNECTION_OPEN_SUPPLEMENTAL: A,
   OVERLAY_INITIALIZE: A,
-  CACHE_LOADED: w,
-  CACHE_LOADED_LAZY: w,
+  CACHE_LOADED: D,
+  CACHE_LOADED_LAZY: D,
   CHANNEL_UPDATES: N,
   CHANNEL_CREATE: C,
-  CHANNEL_DELETE: R,
-  MESSAGE_CREATE: P,
-  GUILD_CREATE: D,
-  LOGOUT: I
+  CHANNEL_DELETE: P,
+  MESSAGE_CREATE: R,
+  GUILD_CREATE: w,
+  LOGOUT: S
 })

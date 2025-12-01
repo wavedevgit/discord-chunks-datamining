@@ -2,7 +2,7 @@
 /** chunk id: 429155, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,112 +14,112 @@ var Chunk54381 = require("./54381.js"),
   Chunk98528 = require("./98528.js"),
   Chunk557340 = require("./557340.js");
 let f = 20,
-  _ = Chunk473749.forwardRef(function(e, t) {
+  p = Chunk473749.forwardRef(function(e, t) {
     let {
       categories: n,
       store: a,
       hasSearchResults: c,
-      listPadding: _,
-      renderRow: h,
-      renderSection: m,
+      listPadding: p,
+      renderRow: m,
+      renderSection: h,
       renderSectionHeader: g,
       renderSectionFooter: E,
       renderInspector: b,
       renderEmptySearchState: y,
       rowCount: O,
       rowCountBySection: v,
-      rowHeight: I,
-      sectionHeaderHeight: T,
-      sectionFooterHeight: S,
+      rowHeight: S,
+      sectionHeaderHeight: I,
+      sectionFooterHeight: T,
       renderUpsell: A,
       onScroll: C
-    } = e, N = i.useRef(false), R = i.useRef(null), P = (0, l.Iu)(e => e.searchQuery), D = a.useStore(e => e.activeCategoryIndex), w = i.useMemo(() => n.map(e => (0, s._O)(e.categoryInfo) ? {
+    } = e, N = i.useRef(false), P = i.useRef(null), R = (0, l.Iu)(e => e.searchQuery), w = a.useStore(e => e.activeCategoryIndex), D = i.useMemo(() => n.map(e => (0, s._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: false
-    }), [n]), L = (0, u.Qs)({
-      activeCategoryIndex: D,
+    }), [n]), x = (0, u.Qs)({
+      activeCategoryIndex: w,
       isScrolling: N,
-      listRef: R,
+      listRef: P,
       onActiveCategoryIndexChange: a.setActiveCategoryIndex,
       scrollOffset: f,
-      searchQuery: P
-    }), x = i.useCallback(e => {
-      L(e), p({
-        listRef: R,
-        searchQuery: P,
-        nitroLockedSectionStates: w,
+      searchQuery: R
+    }), L = i.useCallback(e => {
+      x(e), _({
+        listRef: P,
+        searchQuery: R,
+        nitroLockedSectionStates: D,
         scrollTop: e
       }), null == C || C(e)
-    }, [L, P, w, C]);
+    }, [x, R, D, C]);
     return i.useEffect(() => {
-      null != R.current && x(0)
-    }, [x, R]), (0, u.Xs)({
-      searchQuery: P,
-      activeCategoryIndex: D,
-      listRef: R
+      null != P.current && L(0)
+    }, [L, P]), (0, u.Xs)({
+      searchQuery: R,
+      activeCategoryIndex: w,
+      listRef: P
     }), i.useImperativeHandle(t, () => ({
       scrollTo: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = R.current) ? true : e.scrollTo(...n)
+        return null == (e = P.current) ? true : e.scrollTo(...n)
       },
       getRowDescriptors: () => {
         var e, t;
-        return null != (t = null == (e = R.current) ? true : e.getRowDescriptors()) ? t : []
+        return null != (t = null == (e = P.current) ? true : e.getRowDescriptors()) ? t : []
       },
       getSectionDescriptors: () => {
         var e, t;
-        return null != (t = null == (e = R.current) ? true : e.getSectionDescriptors()) ? t : []
+        return null != (t = null == (e = P.current) ? true : e.getSectionDescriptors()) ? t : []
       },
       scrollToSectionTop: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = R.current) ? true : e.scrollToSectionTop(...n)
+        return null == (e = P.current) ? true : e.scrollToSectionTop(...n)
       },
       scrollRowIntoView: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = R.current) ? true : e.scrollRowIntoView(...n)
+        return null == (e = P.current) ? true : e.scrollRowIntoView(...n)
       },
       getScrollerNode: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = R.current) ? true : e.getScrollerNode(...n)
+        return null == (e = P.current) ? true : e.getScrollerNode(...n)
       },
       scrollIntoViewNode: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = R.current) ? true : e.scrollIntoViewNode(...n)
+        return null == (e = P.current) ? true : e.scrollIntoViewNode(...n)
       },
       getListDimensions: function() {
         for (var e, t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-        return null != (t = null == (e = R.current) ? true : e.getListDimensions(...r)) ? t : {
+        return null != (t = null == (e = P.current) ? true : e.getListDimensions(...r)) ? t : {
           height: false,
           totalHeight: false
         }
       }
     }), []), (0, r.jsxs)("div", {
       className: d.wrapper,
-      children: [P.length > 0 && !c && null != y ? y() : (0, r.jsx)(o.Z, {
+      children: [R.length > 0 && !c && null != y ? y() : (0, r.jsx)(o.Z, {
         role: "none presentation",
-        listPadding: _,
-        onScroll: x,
-        renderRow: h,
-        renderSection: m,
+        listPadding: p,
+        onScroll: L,
+        renderRow: m,
+        renderSection: h,
         renderSectionHeader: g,
         renderSectionFooter: E,
         rowCount: O,
         rowCountBySection: v,
-        rowHeight: I,
-        sectionHeaderHeight: T,
-        sectionFooterHeight: S,
+        rowHeight: S,
+        sectionHeaderHeight: I,
+        sectionFooterHeight: T,
         stickyHeaders: true,
-        ref: R
+        ref: P
       }), null == A ? true : A(), null == b ? true : b()]
     })
   }),
-  p = (0, Chunk392711.throttle)(h, 300, {
+  _ = (0, Chunk392711.throttle)(m, 300, {
     leading: false,
     trailing: true
   });
 
-function h(e) {
+function m(e) {
   let {
     listRef: t,
     searchQuery: n,
@@ -138,4 +138,4 @@ function h(e) {
     areOnlyNitroLockedSectionsVisible: a.areOnlyNitroLockedSectionsVisible
   })
 }
-let m = _
+let h = p

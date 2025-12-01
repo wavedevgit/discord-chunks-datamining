@@ -20,7 +20,7 @@ let f = {
     APPLE_AND_GPAY_DISABLED: "Express Checkout Element - Google Pay and Apple Pay Disabled",
     CONFIGURABLE: "Express Checkout Element - Configurable"
   },
-  _ = {
+  p = {
     GPAY_FILTERED: {
       wallets: {
         googlePay: "always",
@@ -40,7 +40,7 @@ let f = {
       }
     }
   },
-  p = {
+  _ = {
     appearance: {
       theme: "flat",
       variables: {
@@ -49,7 +49,7 @@ let f = {
       }
     }
   },
-  h = {
+  m = {
     buttonType: {
       googlePay: "pay",
       applePay: "book"
@@ -60,24 +60,24 @@ let f = {
     },
     buttonHeight: 40
   },
-  m = e => true !== e ? JSON.stringify(e, null, 2) : "undefined",
+  h = e => true !== e ? JSON.stringify(e, null, 2) : "undefined",
   g = "``";
 
 function E() {
-  let [e, t] = Chunk473749.useState(m(p)), [n, c] = Chunk473749.useState(p), [_, E] = Chunk473749.useState(m(h)), [b, y] = Chunk473749.useState(h), [O, v] = Chunk473749.useState(null), [I, T] = Chunk473749.useState((0, Chunk54381.jsx)(Chunk261538.DS, {
+  let [e, t] = Chunk473749.useState(h(_)), [n, c] = Chunk473749.useState(_), [p, E] = Chunk473749.useState(h(m)), [b, y] = Chunk473749.useState(m), [O, v] = Chunk473749.useState(null), [S, I] = Chunk473749.useState((0, Chunk54381.jsx)(Chunk261538.DS, {
     errorLabel: f.CONFIGURABLE,
-    elementOptions: p,
+    elementOptions: _,
     children: (0, Chunk54381.jsx)(Chunk575053.ExpressCheckoutElement, {
       onConfirm: e => {
         console.log("ExpressCheckoutElement onConfirm event: ", e)
       },
-      options: h
+      options: m
     })
-  })), S = () => {
+  })), T = () => {
     try {
       let t = JSON.parse(module),
-        n = JSON.parse(_);
-      T(null), T((0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        n = JSON.parse(p);
+      I(null), I((0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsxs)(Chunk481060.Text, {
           variant: "text-md/normal",
           className: Chunk591627.labelSpacing,
@@ -134,7 +134,7 @@ function E() {
       children: (0, Chunk54381.jsx)(Chunk481060.Kx8, {
         placeholder: "Stripe Express Checkout Element Options",
         showCharacterCount: true,
-        value: _,
+        value: p,
         onChange: E,
         rows: 7
       })
@@ -149,7 +149,7 @@ function E() {
         variant: "primary",
         size: "sm",
         text: "Apply Changes",
-        onClick: S
+        onClick: T
       })
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
@@ -159,7 +159,7 @@ function E() {
       variant: "text-md/normal",
       children: (0, Chunk54381.jsx)(Chunk241209.Z, {
         className: Chunk591627.markdown,
-        children: "".concat(g, " ").concat(m(require), " ").concat(g)
+        children: "".concat(g, " ").concat(h(require), " ").concat(g)
       })
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
@@ -169,9 +169,9 @@ function E() {
       variant: "text-md/normal",
       children: (0, Chunk54381.jsx)(Chunk241209.Z, {
         className: Chunk591627.markdown,
-        children: "".concat(g, " ").concat(m(b), " ").concat(g)
+        children: "".concat(g, " ").concat(h(b), " ").concat(g)
       })
-    }), I]
+    }), S]
   })
 }
 let b = {
@@ -212,7 +212,7 @@ let b = {
                 variant: "text-md/normal",
                 children: (0, r.jsx)(l.Z, {
                   className: d.markdown,
-                  children: "".concat(g).concat(m(_[e]), " ").concat(g)
+                  children: "".concat(g).concat(h(p[e]), " ").concat(g)
                 })
               }), (0, r.jsx)(u.DS, {
                 errorLabel: t,
@@ -220,7 +220,7 @@ let b = {
                   onConfirm: e => {
                     console.log("ExpressCheckoutElement onConfirm event: ", e)
                   },
-                  options: _[e]
+                  options: p[e]
                 })
               })]
             })

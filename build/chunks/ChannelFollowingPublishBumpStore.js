@@ -2,7 +2,7 @@
 /** chunk id: 212342, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./388685.js"), require("./997841.js");
 var r, Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,7 +15,7 @@ var r, Chunk95015 = require("./95015.js"),
   Chunk110630 = require("./110630.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,8 +23,8 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = "ChannelFollowingBumpChannels",
-  m = new Set,
+let m = "ChannelFollowingBumpChannels",
+  h = new Set,
   g = new Set;
 
 function E(e) {
@@ -34,10 +34,10 @@ function E(e) {
     message: r,
     optimistic: a
   } = e;
-  if (a || m.has(n)) returnfalse;
+  if (a || h.has(n)) returnfalse;
   let o = c.Z.getChannel(n),
     s = d.default.getCurrentUser();
-  if (!(null != o && o.type === _.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != s && (null == (t = r.author) ? true : t.id) === s.id ? u.Z.can(_.Plq.SEND_MESSAGES, o) : u.Z.can(_.Plq.MANAGE_MESSAGES, o)) && !i.yE(Number(r.flags), _.iLy.CROSSPOSTED))) returnfalse;
+  if (!(null != o && o.type === p.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != s && (null == (t = r.author) ? true : t.id) === s.id ? u.Z.can(p.Plq.SEND_MESSAGES, o) : u.Z.can(p.Plq.MANAGE_MESSAGES, o)) && !i.yE(Number(r.flags), p.iLy.CROSSPOSTED))) returnfalse;
   g.add(r.id)
 }
 
@@ -45,7 +45,7 @@ function b(e) {
   let {
     message: t
   } = e;
-  g.has(t.id) && i.yE(Number(t.flags), _.iLy.CROSSPOSTED) && g.delete(t.id)
+  g.has(t.id) && i.yE(Number(t.flags), p.iLy.CROSSPOSTED) && g.delete(t.id)
 }
 
 function y(e) {
@@ -59,22 +59,22 @@ function O(e) {
   let {
     channelId: t
   } = e;
-  m.add(t), o.K.set(h, m), g.clear()
+  h.add(t), o.K.set(m, h), g.clear()
 }
 
 function v(e) {
   g.clear()
 }
-class I extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk496675.Z, Chunk594174.default), m = new Set(Chunk433517.K.get(h))
+    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk496675.Z, Chunk594174.default), h = new Set(Chunk433517.K.get(m))
   }
   shouldShowBump(e) {
     return g.has(e)
   }
 }
-p(I, "displayName", "ChannelFollowingPublishBumpStore");
-let T = new I(Chunk570140.Z, {
+_(S, "displayName", "ChannelFollowingPublishBumpStore");
+let I = new S(Chunk570140.Z, {
   MESSAGE_CREATE: E,
   MESSAGE_UPDATE: b,
   CHANNEL_SELECT: v,

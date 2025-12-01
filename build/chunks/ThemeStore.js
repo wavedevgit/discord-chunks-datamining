@@ -2,7 +2,7 @@
 /** chunk id: 210887, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -17,7 +17,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk874893 = require("./874893.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -58,20 +58,20 @@ function b(e, t) {
 let y = 0,
   O = Chunk874893.K2,
   v = (0, Chunk541049.Z)(),
-  I = O[v],
-  T = null;
+  S = O[v],
+  I = null;
 
-function S() {
-  return __OVERLAY__ || null == T ? (0, Chunk765287.Z)(v, O, I) : T
+function T() {
+  return __OVERLAY__ || null == I ? (0, Chunk765287.Z)(v, O, S) : I
 }
 
 function A() {
-  let e = S();
-  return module !== I && (I = module, (0, Chunk49214.Z)(I), true)
+  let e = T();
+  return module !== S && (S = module, (0, Chunk49214.Z)(S), true)
 }
 class C extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    (null == e ? true : e.theme) != null && (y = 1, I = e.theme, (0, u.Z)(I), null != e.preferences && (O = e.preferences), (0, a.wj)(I) && (O[p.zd.DARK] = I)), this.waitFor(f.ZP, d.Z, _.Z, s.Z)
+    (null == e ? true : e.theme) != null && (y = 1, S = e.theme, (0, u.Z)(S), null != e.preferences && (O = e.preferences), (0, a.wj)(S) && (O[_.zd.DARK] = S)), this.waitFor(f.ZP, d.Z, p.Z, s.Z)
   }
   getState() {
     return {
@@ -81,7 +81,7 @@ class C extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
   get theme() {
-    return I
+    return S
   }
   get systemTheme() {
     return v
@@ -97,55 +97,55 @@ function N() {
   }), y = 1), A()
 }
 
-function R() {
-  return (0, Chunk780384.ap)(S())
+function P() {
+  return (0, Chunk780384.ap)(T())
 }
 
-function P(e) {
-  return T = null, !e.isSwitchingAccount && I !== h.BRd.DARK && (I = h.BRd.DARK, (0, u.Z)(I), A())
+function R(e) {
+  return I = null, !e.isSwitchingAccount && S !== m.BRd.DARK && (S = m.BRd.DARK, (0, u.Z)(S), A())
 }
 
-function D(e) {
+function w(e) {
   let {
     systemTheme: t
   } = e;
   return v = t, A()
 }
 
-function w(e) {
+function D(e) {
   return O = g({}, O, e.preferences), A()
 }
 
-function L(e) {
-  return T = e.theme, A()
+function x(e) {
+  return I = e.theme, A()
 }
 
-function x() {
-  return T = null, A()
+function L() {
+  return I = null, A()
 }
 
-function M() {
+function j() {
   return A()
 }
-m(C, "displayName", "ThemeStore"), m(C, "persistKey", "ThemeStore"), m(C, "migrations", [e => {
+h(C, "displayName", "ThemeStore"), h(C, "persistKey", "ThemeStore"), h(C, "migrations", [e => {
   let t = e.theme;
   return "amoled" === t && (t = "midnight"), b(g({}, e), {
     theme: t
   })
 }, e => e]);
-let k = new C(Chunk570140.Z, {
+let M = new C(Chunk570140.Z, {
   CACHE_LOADED: A,
   CONNECTION_OPEN: N,
-  LOGOUT: P,
+  LOGOUT: R,
   OVERLAY_INITIALIZE: A,
   SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: A,
   UNSYNCED_USER_SETTINGS_UPDATE: A,
   USER_SETTINGS_PROTO_UPDATE: A,
   RESET_PREVIEW_CLIENT_THEME: A,
-  SYSTEM_THEME_CHANGE: D,
-  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: R,
-  UPDATE_THEME_PREFERENCES: w,
-  SET_THEME_OVERRIDE: L,
-  CLEAR_THEME_OVERRIDE: x,
-  REFRESH_THEME: M
+  SYSTEM_THEME_CHANGE: w,
+  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: P,
+  UPDATE_THEME_PREFERENCES: D,
+  SET_THEME_OVERRIDE: x,
+  CLEAR_THEME_OVERRIDE: L,
+  REFRESH_THEME: j
 })

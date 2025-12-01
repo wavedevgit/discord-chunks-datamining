@@ -14,17 +14,17 @@ var Chunk524437 = require("./524437.js"),
   Chunk94752 = require("./94752.js");
 let d = Chunk94752.E.NONE,
   f = window.matchMedia("(prefers-color-scheme: dark)"),
-  _ = window.matchMedia("(prefers-color-scheme: light)"),
-  p = window.matchMedia("(inverted-colors: inverted)"),
-  h = window.matchMedia("(prefers-contrast: more)"),
-  m = window.matchMedia("(forced-colors: active)");
+  p = window.matchMedia("(prefers-color-scheme: light)"),
+  _ = window.matchMedia("(inverted-colors: inverted)"),
+  m = window.matchMedia("(prefers-contrast: more)"),
+  h = window.matchMedia("(forced-colors: active)");
 
 function g(e, t) {
   t ? d |= e : d &= ~e
 }
 let E = {
   init() {
-    Chunk607070.Z.addChangeListener(this.handleAccessibilityStoreChanged), Chunk210887.Z.addChangeListener(this.handleAccessibilityStoreChanged), Chunk581883.Z.addChangeListener(this.handleUiDensityChanged), f.addListener(this.handlePrefersColorSchemeDarkChanged), this.handlePrefersColorSchemeDarkChanged(f), _.addListener(this.handlePrefersColorSchemeLightChanged), this.handlePrefersColorSchemeLightChanged(_), h.addListener(this.handlePrefersMoreContrastChanged), this.handlePrefersMoreContrastChanged(h), m.addListener(this.handlePrefersForcedColorsChanged), this.handlePrefersForcedColorsChanged(m), p.addListener(this.handleInvertColorsChanged), this.handleInvertColorsChanged(p), Chunk626135.default.setSystemAccessibilityFeatures(this.getActiveFeatures)
+    Chunk607070.Z.addChangeListener(this.handleAccessibilityStoreChanged), Chunk210887.Z.addChangeListener(this.handleAccessibilityStoreChanged), Chunk581883.Z.addChangeListener(this.handleUiDensityChanged), f.addListener(this.handlePrefersColorSchemeDarkChanged), this.handlePrefersColorSchemeDarkChanged(f), p.addListener(this.handlePrefersColorSchemeLightChanged), this.handlePrefersColorSchemeLightChanged(p), m.addListener(this.handlePrefersMoreContrastChanged), this.handlePrefersMoreContrastChanged(m), h.addListener(this.handlePrefersForcedColorsChanged), this.handlePrefersForcedColorsChanged(h), _.addListener(this.handleInvertColorsChanged), this.handleInvertColorsChanged(_), Chunk626135.default.setSystemAccessibilityFeatures(this.getActiveFeatures)
   },
   getActiveFeatures: () => d,
   handlePrefersColorSchemeDarkChanged(e) {

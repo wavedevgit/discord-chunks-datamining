@@ -131,8 +131,8 @@ module.exports = function(e) {
       begin: e.C_NUMBER_RE + "\\b",
       relevance: 0
     }, u, d, a, o],
-    _ = [...f];
-  return _.pop(), _.push(s), c.contains = _, {
+    p = [...f];
+  return p.pop(), p.push(s), c.contains = p, {
     name: "YAML",
     case_insensitive: true,
     aliases: ["yml"],

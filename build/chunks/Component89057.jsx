@@ -26,27 +26,27 @@ var Chunk120356 = require("./120356.js"),
 function E(e) {
   let {
     className: t
-  } = e, n = (0, c.ZP)(), i = (0, s.wj)(n) ? m : g;
+  } = e, n = (0, c.ZP)(), i = (0, s.wj)(n) ? h : g;
   return (0, r.jsxs)("div", {
-    className: a()(h.container, t),
+    className: a()(m.container, t),
     children: [(0, r.jsx)(l.Heading, {
-      className: h.header,
+      className: m.header,
       variant: "heading-xl/semibold",
-      children: p.intl.string(p.t.vwMEHS)
+      children: _.intl.string(_.t.vwMEHS)
     }), (0, r.jsxs)(l.Text, {
-      className: h.description,
+      className: m.description,
       variant: "text-md/normal",
       color: "header-secondary",
       children: [(0, r.jsx)("p", {
-        children: p.intl.string(p.t.fev8MQ)
+        children: _.intl.string(_.t.fev8MQ)
       }), (0, r.jsx)("p", {
-        children: p.intl.format(p.t.IHxEJU, {
-          helpdeskArticle: d.Z.getArticleURL(_.BhN.BLOCKED_PAYMENTS)
+        children: _.intl.format(_.t.IHxEJU, {
+          helpdeskArticle: d.Z.getArticleURL(p.BhN.BLOCKED_PAYMENTS)
         })
       })]
     }), (0, r.jsx)("img", {
       src: i,
-      className: h.splashImage,
+      className: m.splashImage,
       alt: "Blocked Payments"
     })]
   })
@@ -64,7 +64,7 @@ function y(e) {
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.xBx, {
-      className: h.blockedPaymentsModalHeader,
+      className: m.blockedPaymentsModalHeader,
       justify: u.Z.Justify.END,
       "data-migration-pending": true,
       children: (0, r.jsx)(l.olH, {
@@ -72,10 +72,10 @@ function y(e) {
         "data-migration-pending": true
       })
     }), (0, r.jsx)(l.hzk, {
-      className: h.blockedPaymentsModalContent,
+      className: m.blockedPaymentsModalContent,
       "data-migration-pending": true,
       children: (0, r.jsx)(E, {
-        className: h.modal
+        className: m.modal
       })
     })]
   })
@@ -86,18 +86,18 @@ function O(e) {
     className: t
   } = e;
   return (0, f.Q)() ? (0, r.jsxs)(l.Zbd, {
-    className: a()(h.blockedPaymentsWarning, t),
+    className: a()(m.blockedPaymentsWarning, t),
     type: l.Zbd.Types.CUSTOM,
     children: [(0, r.jsx)(l.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
-      className: h.blockedPaymentsWarningIcon,
+      className: m.blockedPaymentsWarningIcon,
       color: o.Z.unsafe_rawColors.YELLOW_300.css
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: p.intl.format(p.t.NYkcCh, {
-        helpdeskArticle: d.Z.getArticleURL(_.BhN.BLOCKED_PAYMENTS)
+      children: _.intl.format(_.t.NYkcCh, {
+        helpdeskArticle: d.Z.getArticleURL(p.BhN.BLOCKED_PAYMENTS)
       })
     })]
   }) : null

@@ -78,7 +78,7 @@ module.exports = function(e) {
       subLanguage: "javascript"
     }];
   u.contains = f;
-  let _ = {
+  let p = {
       className: "params",
       begin: "\\(",
       returnBegin: true,
@@ -89,10 +89,10 @@ module.exports = function(e) {
         contains: ["self"].concat(f)
       }]
     },
-    p = {
+    _ = {
       begin: "(#=>|=>|\\|>>|-?->|!->)"
     },
-    h = {
+    m = {
       variants: [{
         match: [/class\s+/, l, /\s+extends\s+/, l]
       }, {
@@ -109,9 +109,9 @@ module.exports = function(e) {
     aliases: ["ls"],
     keywords: s,
     illegal: /\/\*/,
-    contains: f.concat([e.COMMENT("\\/\\*", "\\*\\/"), e.HASH_COMMENT_MODE, p, {
+    contains: f.concat([e.COMMENT("\\/\\*", "\\*\\/"), e.HASH_COMMENT_MODE, _, {
       className: "function",
-      contains: [c, _],
+      contains: [c, p],
       returnBegin: true,
       variants: [{
         begin: "(" + l + "\\s*(?:=|:=)\\s*)?(\\(.*\\)\\s*)?\\B->\\*?",
@@ -123,7 +123,7 @@ module.exports = function(e) {
         begin: "(" + l + "\\s*(?:=|:=)\\s*)?(\\(.*\\)\\s*)?\\B!?[-~]{1,2}>\\*?",
         end: "!?[-~]{1,2}>\\*?"
       }]
-    }, h, {
+    }, m, {
       begin: l + ":",
       end: ":",
       returnBegin: true,

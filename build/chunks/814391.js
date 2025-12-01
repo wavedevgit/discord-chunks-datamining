@@ -2,7 +2,7 @@
 /** chunk id: 814391, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -21,43 +21,43 @@ let o = 60,
     years: Chunk388032.t.KjKr2P
   }),
   f = (e, t) => null != t && null != t[e],
-  _ = (e, t, n) => {
+  p = (e, t, n) => {
     var r, i, a;
     return f(e, t) ? null != (i = null != (r = t[e]) ? r : null == n ? true : n[e]) ? i : null : null != (a = null == n ? true : n[e]) ? a : null
   },
-  p = function(e, t) {
+  _ = function(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
       r = i()().diff(i()(e), "s"),
       f = null != t ? t() : true,
-      p = d(),
-      h = (e, t) => {
-        let r = _(e, f, n ? p : true);
+      _ = d(),
+      m = (e, t) => {
+        let r = p(e, f, n ? _ : true);
         return null == r ? null : "string" == typeof r ? r : a.intl.formatToPlainString(r, {
           count: t
         })
       };
     if (r < o) {
-      let e = (null == f ? true : f.seconds) != null ? h("seconds", r) : h("minutes", 1);
+      let e = (null == f ? true : f.seconds) != null ? m("seconds", r) : m("minutes", 1);
       if (null != e) return e
     }
     if (r < s) {
-      let e = h("minutes", Math.floor(r / o));
+      let e = m("minutes", Math.floor(r / o));
       if (null != e) return e
     }
     if (r < l) {
-      let e = h("hours", Math.floor(r / s));
+      let e = m("hours", Math.floor(r / s));
       if (null != e) return e
     }
     if (r < c) {
-      let e = h("days", Math.floor(r / l));
+      let e = m("days", Math.floor(r / l));
       if (null != e) return e
     }
     if (r < u) {
-      let e = h("months", Math.floor(r / c));
+      let e = m("months", Math.floor(r / c));
       if (null != e) return e
     }
     if (r >= u && (null == f ? true : f.years) != null) {
-      let e = h("years", Math.floor(r / u));
+      let e = m("years", Math.floor(r / u));
       if (null != e) return e
     }
     return i()(e).format("LL")

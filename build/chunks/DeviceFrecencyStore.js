@@ -2,7 +2,7 @@
 /** chunk id: 145016, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -14,7 +14,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk594174 = require("./594174.js"),
   Chunk65154 = require("./65154.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,12 +22,12 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = {
+let _ = {
     inputDeviceFrecency: Chunk65154.h7.AUDIO_INPUT,
     outputDeviceFrecency: Chunk65154.h7.AUDIO_OUTPUT,
     videoDeviceFrecency: Chunk65154.h7.VIDEO_INPUT
   },
-  h = {
+  m = {
     afterCompute: () => {},
     computeBonus: () => 100,
     lookupKey: e => e,
@@ -35,7 +35,7 @@ let p = {
     numFrequentlyItems: 1 / 0
   };
 
-function m(e) {
+function h(e) {
   return ({
     [f.h7.AUDIO_INPUT]: {
       getCurrentDeviceId: e => e.getInputDeviceId()
@@ -53,8 +53,8 @@ function g(e, t) {
   let {
     oldId: n
   } = t;
-  if (!T.isSampling(e)) returnfalse;
-  T.stopSampling(e, n), T.startSampling(e)
+  if (!I.isSampling(e)) returnfalse;
+  I.stopSampling(e, n), I.startSampling(e)
 }
 
 function E(e) {
@@ -68,15 +68,15 @@ function E(e) {
   let a = null == (t = d.default.getCurrentUser()) ? true : t.id;
   if (null == a) returnfalse;
   let o = r === a ? f.h7.AUDIO_INPUT : f.h7.AUDIO_OUTPUT;
-  if (i === f.Dg.NONE && T.isSampling(o)) T.stopSampling(o);
+  if (i === f.Dg.NONE && I.isSampling(o)) I.stopSampling(o);
   else {
-    if (i === f.Dg.NONE || T.isSampling(o)) returnfalse;
-    T.startSampling(o)
+    if (i === f.Dg.NONE || I.isSampling(o)) returnfalse;
+    I.startSampling(o)
   }
 }
 
 function b() {
-  T.reset()
+  I.reset()
 }
 let y = {
     [Chunk65154.h7.AUDIO_INPUT]: new Chunk379649.G9,
@@ -89,11 +89,11 @@ let y = {
     [Chunk65154.h7.VIDEO_INPUT]: {}
   },
   v = {
-    [Chunk65154.h7.AUDIO_INPUT]: new Chunk704907.Z(h),
-    [Chunk65154.h7.AUDIO_OUTPUT]: new Chunk704907.Z(h),
-    [Chunk65154.h7.VIDEO_INPUT]: new Chunk704907.Z(h)
+    [Chunk65154.h7.AUDIO_INPUT]: new Chunk704907.Z(m),
+    [Chunk65154.h7.AUDIO_OUTPUT]: new Chunk704907.Z(m),
+    [Chunk65154.h7.VIDEO_INPUT]: new Chunk704907.Z(m)
   };
-class I extends(r = Chunk442837.ZP.PersistedStore) {
+class S extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(u.Z, d.default), [f.h7.AUDIO_INPUT, f.h7.AUDIO_OUTPUT, f.h7.VIDEO_INPUT].forEach(t => {
       (null == e ? true : e[t]) != null && v[t].overwriteHistory(e[t]), y[t].reset()
@@ -120,7 +120,7 @@ class I extends(r = Chunk442837.ZP.PersistedStore) {
     n.stop();
     let r = n.elapsed().asMilliseconds();
     if (r > 0) {
-      let n = null != t ? t : m(e).getCurrentDeviceId(u.Z);
+      let n = null != t ? t : h(e).getCurrentDeviceId(u.Z);
       this.track(e, n, r)
     }
     n.reset()
@@ -163,12 +163,12 @@ class I extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-_(I, "displayName", "DeviceFrecencyStore"), _(I, "persistKey", "DeviceFrecencyStore"), _(I, "migrations", [e => a().mapKeys(e, (e, t) => p[t])]);
-let T = new I(Chunk570140.Z, {
+p(S, "displayName", "DeviceFrecencyStore"), p(S, "persistKey", "DeviceFrecencyStore"), p(S, "migrations", [e => a().mapKeys(e, (e, t) => _[t])]);
+let I = new S(Chunk570140.Z, {
     AUDIO_SET_INPUT_DEVICE: e => g(f.h7.AUDIO_INPUT, e),
     AUDIO_SET_OUTPUT_DEVICE: e => g(f.h7.AUDIO_OUTPUT, e),
     MEDIA_ENGINE_SET_VIDEO_DEVICE: e => g(f.h7.VIDEO_INPUT, e),
     SPEAKING: E,
     RTC_CONNECTION_CLIENT_CONNECT: b
   }),
-  S = T
+  T = I

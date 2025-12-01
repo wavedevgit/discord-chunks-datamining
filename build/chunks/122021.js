@@ -17,13 +17,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk70956 = require("./70956.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js");
-let p = {
+let _ = {
     [Chunk981631.ABu.INSTAGRAM]: ["1036753656588017764"]
   },
-  h = new Map([
+  m = new Map([
     [Chunk981631.ABu.INSTAGRAM, new Date(2023, 1, 18).getTime()]
   ]),
-  m = 30 * Chunk70956.Z.Millis.DAY;
+  h = 30 * Chunk70956.Z.Millis.DAY;
 
 function g(e) {
   let {
@@ -35,7 +35,7 @@ function g(e) {
   }).allowPlayStationStaging;
   return e => {
     var i;
-    return e.type === f.ABu.PLAYSTATION_STAGING ? r : !!(true !== n && (null == (i = p[e.type]) ? true : i.includes(n.id))) || !!t || e.enabled
+    return e.type === f.ABu.PLAYSTATION_STAGING ? r : !!(true !== n && (null == (i = _[e.type]) ? true : i.includes(n.id))) || !!t || e.enabled
   }
 }
 
@@ -50,7 +50,7 @@ function E() {
     }, [module]);
   return Chunk473749.useMemo(() => a().sortBy(Chunk726542.Z.filter(exports), [e => {
     var t;
-    return !(h.has(e.type) && Date.now() < (null != (t = h.get(e.type)) ? t : 0) + m)
+    return !(m.has(e.type) && Date.now() < (null != (t = m.get(e.type)) ? t : 0) + h)
   }, e => n.has(e.type), e => e.hasMetadata, e => !f.vbS.has(e.type), e => e.name]), [require, exports])
 }
 
@@ -61,14 +61,14 @@ function b(e) {
     let {
       key: t
     } = e;
-    t === _.vn.SHIFT && n(true)
+    t === p.vn.SHIFT && n(true)
   }
 
   function a(e) {
     let {
       key: t
     } = e;
-    t === _.vn.SHIFT && n(false)
+    t === p.vn.SHIFT && n(false)
   }
   return (r.useEffect(() => (window.addEventListener("keydown", i), window.addEventListener("keyup", a), () => {
     window.removeEventListener("keydown", i), window.removeEventListener("keyup", a)

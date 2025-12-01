@@ -4,14 +4,14 @@
 let r, i, a, o;
 require.d(exports, {
   Z: () => U,
-  o: () => S
+  o: () => T
 }), require("./388685.js"), require("./539854.js");
 var s, Chunk348327 = require("./348327.js"),
   c = require.n(Chunk348327),
   Chunk512722 = require("./512722.js"),
   d = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
-  _ = require.n(Chunk392711),
+  p = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk594190 = require("./594190.js"),
@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,12 +53,12 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = 6,
+let T = 6,
   A = 7,
   C = N();
 
@@ -70,11 +70,11 @@ function N() {
   }
 }
 
-function R() {
+function P() {
   C = N()
 }
 
-function P(e) {
+function R(e) {
   let {
     status: t,
     guildId: n,
@@ -103,7 +103,7 @@ function P(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     status: t,
     emoji: n,
@@ -114,7 +114,7 @@ function D(e) {
     emoji: n
   };
   let l = [...C.recentStatuses],
-    c = l.findIndex(e => !(0, E.Z)(e) && e.status === t && _().isEqual(e.emoji, n));
+    c = l.findIndex(e => !(0, E.Z)(e) && e.status === t && p().isEqual(e.emoji, n));
   c >= 0 ? l.splice(c, 1) : l.length === A && l.splice(A - 1, 1), C.recentStatuses = [i, ...l], s && (C.currentDefaultStatus = {
     status: r,
     customHangStatus: i,
@@ -128,7 +128,7 @@ function D(e) {
   }
 }
 
-function w(e) {
+function D(e) {
   let {
     applicationId: t,
     saveAsDefault: n
@@ -140,7 +140,7 @@ function w(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     saveAsDefault: t
   } = e;
@@ -151,18 +151,18 @@ function L(e) {
   }), a = null
 }
 
-function x(e) {
+function L(e) {
   let {
     status: t,
     emoji: n
-  } = e, r = false, i = [...C.favoritedStatuses], a = i.findIndex(e => (0, E.Z)(e) ? e === t : e.status === t && _().isEqual(e.emoji, n)), o = null == n ? t : {
+  } = e, r = false, i = [...C.favoritedStatuses], a = i.findIndex(e => (0, E.Z)(e) ? e === t : e.status === t && p().isEqual(e.emoji, n)), o = null == n ? t : {
     status: t,
     emoji: n
   };
-  return false === a && i.length < S ? (i.push(o), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (C.favoritedStatuses = i, true)
+  return false === a && i.length < T ? (i.push(o), r = true) : a >= 0 && (i.splice(a, 1), r = true), !!r && (C.favoritedStatuses = i, true)
 }
 
-function M() {
+function j() {
   if (null == o) returnfalse;
   if (!Chunk594190.ZP.getRunningVerifiedApplicationIds().includes(o)) {
     var e;
@@ -171,7 +171,7 @@ function M() {
   returnfalse
 }
 
-function k(e) {
+function M(e) {
   let {
     statuses: t
   } = e, n = [...C.recentStatuses], s = [...C.favoritedStatuses];
@@ -179,13 +179,13 @@ function k(e) {
     let {
       status: t,
       emoji: l
-    } = e, c = n.findIndex(e => (0, E.Z)(e) ? e === t : e.status === t && _().isEqual(e.emoji, l)), u = s.findIndex(e => (0, E.Z)(e) ? e === t : e.status === t && _().isEqual(e.emoji, l));
-    c >= 0 && n.splice(c, 1), u >= 0 && s.splice(u, 1), t === (null == i ? true : i.status) && _().isEqual(l, null == i ? true : i.emoji) && (r = null, i = null, o = null, C.currentDefaultStatus = null, a = null)
+    } = e, c = n.findIndex(e => (0, E.Z)(e) ? e === t : e.status === t && p().isEqual(e.emoji, l)), u = s.findIndex(e => (0, E.Z)(e) ? e === t : e.status === t && p().isEqual(e.emoji, l));
+    c >= 0 && n.splice(c, 1), u >= 0 && s.splice(u, 1), t === (null == i ? true : i.status) && p().isEqual(l, null == i ? true : i.emoji) && (r = null, i = null, o = null, C.currentDefaultStatus = null, a = null)
   }), C.recentStatuses = n, C.favoritedStatuses = s
 }
-class j extends(s = Chunk442837.ZP.PersistedStore) {
+class k extends(s = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    C = v({}, N(), null != e ? e : {}), this.waitFor(m.ZP), this.syncWith([m.ZP], M)
+    C = v({}, N(), null != e ? e : {}), this.waitFor(h.ZP), this.syncWith([h.ZP], j)
   }
   getState() {
     return C
@@ -216,24 +216,24 @@ class j extends(s = Chunk442837.ZP.PersistedStore) {
     return C.favoritedStatuses.some(n => (0, E.Z)(n) && t && n === e || !(0, E.Z)(n) && !t && e.status === n.status && c()(e.emoji, n.emoji))
   }
 }
-O(j, "displayName", "HangStatusStore"), O(j, "persistKey", "HangStatusStore"), O(j, "migrations", [e => {
+O(k, "displayName", "HangStatusStore"), O(k, "persistKey", "HangStatusStore"), O(k, "migrations", [e => {
   if (null != e.currentDefaultStatus && null == e.currentDefaultStatus.gameActivityHangStatus) {
-    let t = T(v({}, e.currentDefaultStatus), {
+    let t = I(v({}, e.currentDefaultStatus), {
       gameActivityHangStatus: null
     });
-    return T(v({}, e), {
+    return I(v({}, e), {
       currentDefaultStatus: t
     })
   }
   return e
 }, e => ("recentCustomStatuses" in e && delete e.recentCustomStatuses, e), e => (null != e.currentDefaultStatus && "expiresAt" in e.currentDefaultStatus && delete e.currentDefaultStatus.expiresAt, e)]);
-let U = new j(Chunk570140.Z, {
-  LOGOUT: R,
-  UPDATE_HANG_STATUS: P,
-  UPDATE_HANG_STATUS_CUSTOM: D,
-  UPDATE_HANG_STATUS_GAME_ACTIVITY: w,
-  DELETE_INVALID_HANG_STATUSES: k,
-  CLEAR_HANG_STATUS: L,
-  UPDATE_FAVORITE_HANG_STATUS: x,
-  RESET_HANG_STATUS_STATE: R
+let U = new k(Chunk570140.Z, {
+  LOGOUT: P,
+  UPDATE_HANG_STATUS: R,
+  UPDATE_HANG_STATUS_CUSTOM: w,
+  UPDATE_HANG_STATUS_GAME_ACTIVITY: D,
+  DELETE_INVALID_HANG_STATUSES: M,
+  CLEAR_HANG_STATUS: x,
+  UPDATE_FAVORITE_HANG_STATUS: L,
+  RESET_HANG_STATUS_STATE: P
 })

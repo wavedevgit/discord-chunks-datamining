@@ -2,7 +2,7 @@
 /** chunk id: 70655, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk70780 = require("./70780.js"),
   Chunk147913 = require("./147913.js"),
@@ -22,10 +22,10 @@ function u(e, t, n) {
 }
 let d = +Chunk70956.Z.Millis.SECOND,
   f = 30 * Chunk70956.Z.Millis.SECOND,
-  _ = 360,
-  p = new Chunk710845.Z("RTCLatencyTestManager");
-p.enableNativeLogger(true);
-class h extends Chunk147913.Z {
+  p = 360,
+  _ = new Chunk710845.Z("RTCLatencyTestManager");
+_.enableNativeLogger(true);
+class m extends Chunk147913.Z {
   _terminate() {
     null != this.refetchTimeout && clearTimeout(this.refetchTimeout)
   }
@@ -35,10 +35,10 @@ class h extends Chunk147913.Z {
     }), u(this, "_handleTestRegionsResponse", e => {
       let t = e.map(e => e.region);
       s.Z.shouldPerformLatencyTest(t) ? o.Z.getMediaEngine().rankRtcRegions(e).then(e => {
-        p.verbose("RTC region latency test completed, ranked regions are: ", e), (0, r.o)(e, t)
-      }).catch(e => p.warn(e)) : p.verbose("RTC cached ranked preferred regions are ".concat(s.Z.getPreferredRegions()))
+        _.verbose("RTC region latency test completed, ranked regions are: ", e), (0, r.o)(e, t)
+      }).catch(e => _.warn(e)) : _.verbose("RTC cached ranked preferred regions are ".concat(s.Z.getPreferredRegions()))
     }), u(this, "_fetchAndScheduleRefetch", () => {
-      (0, r.J)().then(e => this._handleTestRegionsResponse(e.body)).catch(e => p.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, _ * l.Z.Millis.MINUTE)
+      (0, r.J)().then(e => this._handleTestRegionsResponse(e.body)).catch(e => _.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, p * l.Z.Millis.MINUTE)
     }), u(this, "_handleConnectionOpen", () => {
       if (c.isPlatformEmbedded && !__OVERLAY__) {
         let e = Math.floor(d + Math.random() * f);
@@ -47,4 +47,4 @@ class h extends Chunk147913.Z {
     })
   }
 }
-let m = new h
+let h = new m

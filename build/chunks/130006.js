@@ -21,20 +21,20 @@ var Chunk98405 = require("./98405.js"),
   y = Chunk112493.BUGGY_SAFARI_ITERATORS,
   O = Chunk751736("iterator"),
   v = "keys",
-  I = "values",
-  T = "entries",
-  S = function() {
+  S = "values",
+  I = "entries",
+  T = function() {
     return this
   };
-module.exports = function(e, t, n, o, p, m, A) {
+module.exports = function(e, t, n, o, _, h, A) {
   l(n, t, o);
-  var C, N, R, P = function(e) {
-      if (e === p && M) return M;
-      if (!y && e && e in L) return L[e];
+  var C, N, P, R = function(e) {
+      if (e === _ && j) return j;
+      if (!y && e && e in x) return x[e];
       switch (e) {
         case v:
+        case S:
         case I:
-        case T:
           return function() {
             return new n(this, e)
           }
@@ -43,27 +43,27 @@ module.exports = function(e, t, n, o, p, m, A) {
         return new n(this)
       }
     },
-    D = t + " Iterator",
-    w = false,
-    L = e.prototype,
-    x = L[O] || L["@@iterator"] || p && L[p],
-    M = !y && x || P(p),
-    k = "Array" === t && L.entries || x;
-  if (k && (C = c(k.call(new e))) !== Object.prototype && C.next && (!a && c(C) !== b && (u ? u(C, b) : s(C[O]) || _(C, O, S)), d(C, D, true, true), a && (h[D] = S)), g && p === I && x && x.name !== I && (!a && E ? f(L, "name", I) : (w = true, M = function() {
-      return i(x, this)
-    })), p)
+    w = t + " Iterator",
+    D = false,
+    x = e.prototype,
+    L = x[O] || x["@@iterator"] || _ && x[_],
+    j = !y && L || R(_),
+    M = "Array" === t && x.entries || L;
+  if (M && (C = c(M.call(new e))) !== Object.prototype && C.next && (!a && c(C) !== b && (u ? u(C, b) : s(C[O]) || p(C, O, T)), d(C, w, true, true), a && (m[w] = T)), g && _ === S && L && L.name !== S && (!a && E ? f(x, "name", S) : (D = true, j = function() {
+      return i(L, this)
+    })), _)
     if (N = {
-        values: P(I),
-        keys: m ? M : P(v),
-        entries: P(T)
+        values: R(S),
+        keys: h ? j : R(v),
+        entries: R(I)
       }, A)
-      for (R in N) !y && !w && R in L || _(L, R, N[R]);
+      for (P in N) !y && !D && P in x || p(x, P, N[P]);
     else r({
       target: t,
       proto: true,
-      forced: y || w
+      forced: y || D
     }, N);
-  return (!a || A) && L[O] !== M && _(L, O, M, {
-    name: p
-  }), h[t] = M, N
+  return (!a || A) && x[O] !== j && p(x, O, j, {
+    name: _
+  }), m[t] = j, N
 }

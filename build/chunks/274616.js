@@ -2,7 +2,7 @@
 /** chunk id: 274616, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _,
+  Z: () => p,
   o: () => f
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
@@ -40,7 +40,7 @@ async function f() {
     }), []
   }
 }
-async function _(e) {
+async function p(e) {
   try {
     let t = await a.tn.get({
         url: u.ANM.OWNED_APPLICATION_BRANCHES(e),

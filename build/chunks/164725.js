@@ -20,19 +20,19 @@ function c(e) {
 }
 
 function u(e, t) {
-  var n, r, i, a, o, s, l, u, d, f, _, p;
-  let h = e.getIconURL(16),
-    m = null == t || null == (i = t.profile) || null == (r = i.data) || null == (n = r.primary) ? true : n.season,
+  var n, r, i, a, o, s, l, u, d, f, p, _;
+  let m = e.getIconURL(16),
+    h = null == t || null == (i = t.profile) || null == (r = i.data) || null == (n = r.primary) ? true : n.season,
     g = null == t || null == (s = t.profile) || null == (o = s.data) || null == (a = o.primary) ? true : a.rank_name,
     E = c(null == t || null == (d = t.profile) || null == (u = d.data) || null == (l = u.primary) ? true : l.rank_image),
-    b = c(null == t || null == (p = t.profile) || null == (_ = p.data) || null == (f = _.primary) ? true : f.featured_played_character_image);
-  return null == e || null == h || null == m || null == g || null == b ? null : {
+    b = c(null == t || null == (_ = t.profile) || null == (p = _.data) || null == (f = p.primary) ? true : f.featured_played_character_image);
+  return null == e || null == m || null == h || null == g || null == b ? null : {
     application: {
       id: e.id,
       name: e.name,
-      icon: h
+      icon: m
     },
-    season: m,
+    season: h,
     currentRankName: g,
     currentRankImage: E,
     featuredCharacterImage: b

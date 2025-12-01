@@ -16,7 +16,7 @@ var Chunk95015 = require("./95015.js"),
 
 function f(e, t) {
   var n, f;
-  let _ = o.Z.getGuild(e),
-    p = i.Z.getChannel(t);
-  return null != _ && null != p && (0, c.Z)(_) && _.features.has(u.GuildFeatures.GUILD_SERVER_GUIDE) && !r.yE(null != (f = null == (n = a.ZP.getSelfMember(_.id)) ? true : n.flags) ? f : 0, d.q.COMPLETED_HOME_ACTIONS) && s.Z.hasMemberAction(_.id, p.id) && !l.Z.hasCompletedActionForChannel(_.id, p.id)
+  let p = o.Z.getGuild(e),
+    _ = i.Z.getChannel(t);
+  return null != p && null != _ && (0, c.Z)(p) && p.features.has(u.GuildFeatures.GUILD_SERVER_GUIDE) && !r.yE(null != (f = null == (n = a.ZP.getSelfMember(p.id)) ? true : n.flags) ? f : 0, d.q.COMPLETED_HOME_ACTIONS) && s.Z.hasMemberAction(p.id, _.id) && !l.Z.hasCompletedActionForChannel(p.id, _.id)
 }

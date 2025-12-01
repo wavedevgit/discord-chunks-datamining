@@ -2,7 +2,7 @@
 /** chunk id: 253118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -51,13 +51,13 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function p(e) {
   let {
     message: t,
     usernameHook: n,
     onClickPins: c,
     compact: d
-  } = e, _ = (0, o.ZP)(t), p = _.nick, h = n(_), m = () => {
+  } = e, p = (0, o.ZP)(t), _ = p.nick, m = n(p), h = () => {
     if (null == t.messageReference) return;
     let {
       channel_id: e,
@@ -69,20 +69,20 @@ function _(e) {
       flash: true
     })
   }, g = () => null != t.messageReference ? null == c ? l.intl.format(l.t.lD5tup, {
-    usernameHook: h,
-    username: p,
-    messageOnClick: m
+    usernameHook: m,
+    username: _,
+    messageOnClick: h
   }) : l.intl.format(l.t.yIDvPL, {
-    usernameHook: h,
-    username: p,
+    usernameHook: m,
+    username: _,
     pinsActionOnClick: c,
-    messageOnClick: m
+    messageOnClick: h
   }) : null == c ? l.intl.format(l.t.vfkjqx, {
-    usernameHook: h,
-    username: p
+    usernameHook: m,
+    username: _
   }) : l.intl.format(l.t.R7vZGZ, {
-    usernameHook: h,
-    username: p,
+    usernameHook: m,
+    username: _,
     pinsActionOnClick: c
   }), E = {
     iconNode: (0, r.jsx)(i.qQX, {

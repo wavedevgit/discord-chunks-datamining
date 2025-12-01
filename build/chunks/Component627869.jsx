@@ -2,8 +2,8 @@
 /** chunk id: 627869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m,
-  j: () => h
+  Z: () => h,
+  j: () => m
 }), require("./388685.js"), require("./781311.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,13 +47,13 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h() {
+function m() {
   let e = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().autoClipPhrases),
     [t, n] = Chunk473749.useState(""),
     c = Chunk473749.useMemo(() => module.map(e => ({
@@ -73,7 +73,7 @@ function h() {
         l.a2(t)
       }
     }, [exports, module]),
-    _ = Chunk473749.useCallback(t => {
+    p = Chunk473749.useCallback(t => {
       let n = Array.from(t)[0],
         r = e.filter(e => e !== n);
       l.a2(r)
@@ -86,26 +86,26 @@ function h() {
     leading: Chunk356659.length > 0 ? {
       type: "tags",
       items: Chunk356659,
-      onRemove: _
+      onRemove: p
     } : true
   })
 }
 
-function m() {
+function h() {
   let {
     maxAutoClips: e,
     clipSignals: t
   } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()), n = Chunk473749.useCallback(e => {
-    l.Rr(p(f({}, t), {
+    l.Rr(_(f({}, t), {
       enableGameSignals: e
     }))
   }, [exports]), d = Chunk473749.useCallback(e => {
-    l.Rr(p(f({}, t), {
+    l.Rr(_(f({}, t), {
       enablePhraseSignals: e
     }))
-  }, [exports]), _ = Chunk473749.useCallback(e => {
+  }, [exports]), p = Chunk473749.useCallback(e => {
     l.W6(Math.floor(e))
-  }, []), m = Chunk473749.useMemo(() => {
+  }, []), h = Chunk473749.useMemo(() => {
     let e = [Chunk356659.qb];
     for (let t = 10; exports <= Chunk356659.b0; t += 10) module.push(exports);
     return module[module.length - 1] !== Chunk356659.b0 && module.push(Chunk356659.b0), module
@@ -119,8 +119,8 @@ function m() {
       onValueRender: e => "".concat(Math.floor(e)),
       minValue: Chunk356659.qb,
       maxValue: Chunk356659.b0,
-      onValueChange: _,
-      markers: m,
+      onValueChange: p,
+      markers: h,
       onMarkerRender: e => "".concat(Math.floor(e))
     }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.iV6KcI),
@@ -132,6 +132,6 @@ function m() {
       description: Chunk388032.intl.string(Chunk388032.t["s6wq+m"]),
       checked: exports.enablePhraseSignals,
       onChange: d
-    }), exports.enablePhraseSignals && (0, Chunk54381.jsx)(h, {})]
+    }), exports.enablePhraseSignals && (0, Chunk54381.jsx)(m, {})]
   })
 }

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $: () => c,
-  a: () => _
+  a: () => p
 });
 var Chunk231053 = require("./231053.js"),
   Chunk388032 = require("./388032.jsx");
@@ -71,12 +71,12 @@ let u = e => {
       userIsRoleSubscriber: u,
       isRoleSubscriptionEmoji: d,
       shouldHideRoleSubscriptionCTA: f,
-      onOpenPremiumSettings: _
-    } = e, p = null;
+      onOpenPremiumSettings: p
+    } = e, _ = null;
     return t === r.w6.APPLICATION && null != n ? i.intl.formatToPlainString(i.t.uERlTd, {
       appName: n.name
     }) : a ? o ? d ? f && s ? i.intl.string(i.t.xFb68j) : s ? u ? i.intl.string(i.t.vLklfF) : i.intl.string(i.t["g8i/bf"]) : i.intl.string(i.t.Eoynp0) : c ? i.intl.string(i.t.hU4kIe) : i.intl.string(i.t.GM0xaX) : l ? i.intl.string(i.t.xE9WGt) : i.intl.string(i.t["0LMpW+"]) : o ? f && s ? i.intl.string(i.t.xFb68j) : s ? u ? i.intl.string(i.t.vLklfF) : i.intl.string(i.t["g8i/bf"]) : c ? i.intl.string(i.t.ICPhqa) : i.intl.string(i.t.jQy3aM) : l ? i.intl.string(i.t.FJ6Z01) : i.intl.format(i.t.U6vLcA, {
-      openPremiumSettings: _
+      openPremiumSettings: p
     })
   },
   f = e => {
@@ -100,7 +100,7 @@ let u = e => {
       description: null
     }
   },
-  _ = e => {
+  p = e => {
     let t = d(e),
       n = u(e);
     return l(o({}, f(e)), {

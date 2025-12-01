@@ -55,34 +55,34 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = Chunk473749.forwardRef(function(e, t) {
+let I = Chunk473749.forwardRef(function(e, t) {
   let {
     type: n
   } = e, {
     tooltipsWithKeybinds: a
-  } = h.n.useConfig({
+  } = m.n.useConfig({
     location: "ChannelAppLauncherButton"
-  }), y = (0, l.e7)([_.Z], () => _.Z.shouldShowPopup() && _.Z.activeViewType() === n), {
+  }), y = (0, l.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === n), {
     Component: v,
-    events: T,
-    play: S
-  } = (0, c.w)(), A = i.useContext(m.ZP);
+    events: I,
+    play: T
+  } = (0, c.w)(), A = i.useContext(h.ZP);
   i.useEffect(() => {
     let e = () => {
-      T.onMouseEnter()
+      I.onMouseEnter()
     };
     return A.on("command-sentinel-typed", e), () => {
       A.off("command-sentinel-typed", e)
     }
-  }, [A, T]);
+  }, [A, I]);
   let C = i.useCallback(() => {
-      y ? f.y(p.ti.DISMISSED) : (f._(p._b.TEXT, n), d.ux()), S()
-    }, [y, n, S]),
+      y ? f.y(_.ti.DISMISSED) : (f._(_._b.TEXT, n), d.ux()), T()
+    }, [y, n, T]),
     N = (0, r.jsx)(v, {
       size: "refresh_sm",
       color: "currentColor"
@@ -93,7 +93,7 @@ let T = Chunk473749.forwardRef(function(e, t) {
     children: (0, r.jsx)(u.u, {
       text: E.intl.string(E.t.dHDxOF),
       shouldShow: a,
-      children: (0, r.jsx)(s.P3F, I(O({
+      children: (0, r.jsx)(s.P3F, S(O({
         tabIndex: 0,
         className: o()(b.button, {
           [b.buttonActive]: y
@@ -110,19 +110,19 @@ let T = Chunk473749.forwardRef(function(e, t) {
             right: false
           }
         }
-      }, T), {
+      }, I), {
         children: N
       }))
     })
   })
 });
 
-function S(e) {
+function T(e) {
   let {
     type: t
   } = e;
-  return (0, r.jsx)(T, {
+  return (0, r.jsx)(I, {
     type: t
   })
 }
-let A = Chunk473749.memo(S)
+let A = Chunk473749.memo(T)

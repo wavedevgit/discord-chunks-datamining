@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,18 +47,18 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e) {
+function h(e) {
   if (null == e.channelId) return e;
   let t = s.Z.getChannel(e.channelId);
   if (null == t) return e;
   let n = (0, r.e)(t);
-  return h(_({}, e), {
+  return m(p({}, e), {
     guildId: null != n ? n : d.ME
   })
 }
@@ -68,6 +68,6 @@ async function g(e, t) {
     kind: "channel"
   });
   if (null == n) return void(0, a.uL)(e, t);
-  let r = m(n);
+  let r = h(n);
   return null == r.channelId ? void(0, o.X)(r.guildId) : (0, i.WF)(r.channelId) && (0, i.WF)(r.threadId) ? void(null != r.threadId ? (0, a.uL)(d.Z5c.CHANNEL_THREAD_VIEW(r.guildId, r.channelId, r.threadId, r.messageId), t) : (0, a.uL)(d.Z5c.CHANNEL(r.guildId, r.channelId, r.messageId), t)) : void(0, u.V)()
 }

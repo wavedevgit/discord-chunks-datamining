@@ -2,7 +2,7 @@
 /** chunk id: 966902, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => _
+  $: () => p
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ let d = 12,
     return Math.max(-n, Math.min(n, e))
   };
 
-function _(e) {
+function p(e) {
   let {
     className: t
   } = e, n = i.useContext(s.I);
@@ -27,16 +27,16 @@ function _(e) {
   let {
     position: a,
     caretConfig: d
-  } = n, _ = (0, c.z)(a), {
-    align: p,
-    customOffset: h
-  } = d, m = "custom" === p && true !== h ? {
-    "--custom-caret-offset-x": ["top", "bottom"].includes(_) ? "".concat(f(h), "px") : "0px",
-    "--custom-caret-offset-y": ["left", "right"].includes(_) ? "".concat(f(h), "px") : "0px"
-  } : true, g = o()(u.caret, u["caret--".concat(_)], u["caret--".concat(p)], t);
+  } = n, p = (0, c.z)(a), {
+    align: _,
+    customOffset: m
+  } = d, h = "custom" === _ && true !== m ? {
+    "--custom-caret-offset-x": ["top", "bottom"].includes(p) ? "".concat(f(m), "px") : "0px",
+    "--custom-caret-offset-y": ["left", "right"].includes(p) ? "".concat(f(m), "px") : "0px"
+  } : true, g = o()(u.caret, u["caret--".concat(p)], u["caret--".concat(_)], t);
   return (0, r.jsx)("div", {
     className: g,
-    style: m,
+    style: h,
     children: (0, r.jsx)(l.v, {})
   })
 }

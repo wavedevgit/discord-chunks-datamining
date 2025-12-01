@@ -2,7 +2,7 @@
 /** chunk id: 817899, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => _
+  o: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -66,15 +66,15 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let p = e => {
   var t, n, {
       size: s = "md",
       width: c,
       height: f,
-      secondaryColor: _ = "transparent",
-      secondaryColorClass: p = "",
-      color: h = i.Z.colors.INTERACTIVE_NORMAL,
-      colorClass: m = ""
+      secondaryColor: p = "transparent",
+      secondaryColorClass: _ = "",
+      color: m = i.Z.colors.INTERACTIVE_NORMAL,
+      colorClass: h = ""
     } = e,
     g = d(e, ["size", "width", "height", "secondaryColor", "secondaryColorClass", "color", "colorClass"]);
   let E = (0, o.m)(s),
@@ -90,14 +90,14 @@ let _ = e => {
       cx: "12",
       cy: "12",
       r: "10",
-      fill: "string" == typeof _ ? _ : _.css,
-      className: p
+      fill: "string" == typeof p ? p : p.css,
+      className: _
     }), (0, r.jsx)("path", {
-      fill: "string" == typeof h ? h : h.css,
+      fill: "string" == typeof m ? m : m.css,
       fillRule: "evenodd",
       d: "M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z",
       clipRule: "evenodd",
-      className: m
+      className: h
     })]
   }))
 }

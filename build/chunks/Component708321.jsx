@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => g,
-  o: () => m
+  o: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function h(e) {
   let {
     guildId: t,
     ctaType: n,
@@ -27,66 +27,66 @@ function m(e) {
     onGoToGuild: s,
     onAcceptInvite: u,
     onStartApplication: f,
-    onComplete: m
+    onComplete: h
   } = e, [g, E] = i.useState(false), b = (0, l.Z)(t), y = i.useCallback(() => {
-    (0, c.uL)(p.Z5c.GUILD_MEMBER_VERIFICATION(t))
+    (0, c.uL)(_.Z5c.GUILD_MEMBER_VERIFICATION(t))
   }, [t]), O = i.useCallback(async () => {
     await (0, d.Ub)(t, {
-      object: p.qAy.GUILD_PROFILE
+      object: _.qAy.GUILD_PROFILE
     })
   }, [t]), {
     text: v,
-    onClick: I
+    onClick: S
   } = i.useMemo(() => {
     switch (n) {
-      case _.sE.IS_MEMBER:
+      case p.sE.IS_MEMBER:
         return {
-          text: h.intl.string(h.t.IRoQXr), onClick: s
+          text: m.intl.string(m.t.IRoQXr), onClick: s
         };
-      case _.sE.ADOPT_TAG:
+      case p.sE.ADOPT_TAG:
         return {
-          text: h.intl.string(h.t.cQDYRu), onClick: b
+          text: m.intl.string(m.t.cQDYRu), onClick: b
         };
-      case _.sE.HAS_APPLICATION:
+      case p.sE.HAS_APPLICATION:
         return {
-          text: h.intl.string(h.t["4yfIDk"]), onClick: y
+          text: m.intl.string(m.t["4yfIDk"]), onClick: y
         };
-      case _.sE.APPLY_TO_JOIN:
+      case p.sE.APPLY_TO_JOIN:
         return {
-          text: h.intl.string(h.t["7XdMW2"]), onClick: f
+          text: m.intl.string(m.t["7XdMW2"]), onClick: f
         };
-      case _.sE.LURK_DISCOVERABLE:
+      case p.sE.LURK_DISCOVERABLE:
         return {
-          text: h.intl.string(h.t.VJlc0S), onClick: O
+          text: m.intl.string(m.t.VJlc0S), onClick: O
         };
-      case _.sE.JOIN_VIA_INVITE:
+      case p.sE.JOIN_VIA_INVITE:
         return {
-          text: h.intl.string(h.t.VJlc0S), onClick: u
+          text: m.intl.string(m.t.VJlc0S), onClick: u
         };
-      case _.sE.ACCEPT_ROLES:
+      case p.sE.ACCEPT_ROLES:
         return {
-          text: h.intl.string(h.t.MMlhsr), onClick: u
+          text: m.intl.string(m.t.MMlhsr), onClick: u
         };
       default:
         return {
           text: null, onClick: null
         }
     }
-  }, [n, y, O, u, s, f, b]), T = i.useCallback(async e => {
+  }, [n, y, O, u, s, f, b]), I = i.useCallback(async e => {
     e.stopPropagation(), E(true);
     try {
-      await (null == I ? true : I())
+      await (null == S ? true : S())
     } catch (e) {} finally {
-      null == m || m(), E(false)
+      null == h || h(), E(false)
     }
-  }, [I, m]);
+  }, [S, h]);
   return null == v ? null : (0, r.jsx)(a.Button, {
     variant: "active",
     size: "sm",
     text: v,
     fullWidth: true,
     loading: g || o,
-    onClick: T
+    onClick: I
   })
 }
 
@@ -98,22 +98,22 @@ function g(e) {
     guildId: a,
     validInviteKey: l,
     ctaType: c
-  } = (0, _.ZP)(t), d = i.useCallback(() => (0, u.X)(a), [a]), p = i.useCallback(() => {
+  } = (0, p.ZP)(t), d = i.useCallback(() => (0, u.X)(a), [a]), _ = i.useCallback(() => {
     null != l && o.ZP.acceptInvite({
       inviteKey: l,
       context: {
         location: "guild_profile"
       }
     })
-  }, [l]), h = i.useCallback(() => {
-    t.visibility !== f.k.PUBLIC_WITH_RECRUITMENT && null != l ? p() : s.Z.openMemberVerificationModal(a, true, l)
-  }, [p, a, t.visibility, l]);
-  return null == c ? null : (0, r.jsx)(m, {
+  }, [l]), m = i.useCallback(() => {
+    t.visibility !== f.k.PUBLIC_WITH_RECRUITMENT && null != l ? _() : s.Z.openMemberVerificationModal(a, true, l)
+  }, [_, a, t.visibility, l]);
+  return null == c ? null : (0, r.jsx)(h, {
     guildId: a,
     ctaType: c,
     onGoToGuild: d,
-    onAcceptInvite: p,
-    onStartApplication: h,
+    onAcceptInvite: _,
+    onStartApplication: m,
     onComplete: n
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 676053, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => S
+  M: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -60,9 +60,9 @@ function v(e, t) {
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,7 +70,7 @@ function I(e, t) {
   return i
 }
 
-function T(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -78,66 +78,66 @@ function T(e, t) {
   return i
 }
 
-function S(e) {
+function T(e) {
   var t, n, b, {
       title: O,
-      body: T,
-      assetUrl: S,
-      previewUrl: A = S,
+      body: I,
+      assetUrl: T,
+      previewUrl: A = T,
       disableMediaViewer: C = false,
       action: N,
-      caretConfig: R = {
+      caretConfig: P = {
         align: "center"
       },
-      badge: P,
-      textLink: D,
-      onWatchVideo: w,
-      onRequestClose: L,
-      popoverRef: x,
-      position: M
+      badge: R,
+      textLink: w,
+      onWatchVideo: D,
+      onRequestClose: x,
+      popoverRef: L,
+      position: j
     } = e,
-    k = I(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef", "position"]);
+    M = S(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef", "position"]);
   let {
-    reducedMotion: j
-  } = i.useContext(o.Sfi), U = (0, a.C)(), G = null != (b = null == (t = (n = (0, o.ZFG)()).isWindowFocused) ? true : t.call(n)) ? b : U, B = i.useRef(null), Z = (0, o.j1L)(A), F = i.useCallback(() => ({
+    reducedMotion: k
+  } = i.useContext(o.Sfi), U = (0, a.C)(), G = null != (b = null == (t = (n = (0, o.ZFG)()).isWindowFocused) ? true : t.call(n)) ? b : U, Z = i.useRef(null), B = (0, o.j1L)(A), F = i.useCallback(() => ({
     type: "VIDEO",
-    url: S,
-    proxyUrl: S,
+    url: T,
+    proxyUrl: T,
     alt: O,
     width: 1280,
     height: 720,
     className: E.media
-  }), [S, O]);
+  }), [T, O]);
   i.useEffect(() => {
     var e, t;
-    null != B.current && (!j.enabled && G ? null == (e = B.current) || e.play().catch(h.dG) : null == (t = B.current) || t.pause())
-  }, [G, j.enabled]);
+    null != Z.current && (!k.enabled && G ? null == (e = Z.current) || e.play().catch(m.dG) : null == (t = Z.current) || t.pause())
+  }, [G, k.enabled]);
   let V = i.useCallback(() => {
-      null !== B.current && B.current.pause(), null == L || L()
-    }, [L]),
+      null !== Z.current && Z.current.pause(), null == x || x()
+    }, [x]),
     H = i.useCallback(() => {
-      null !== B.current && B.current.pause(), null == L || L()
-    }, [L]),
-    W = i.useCallback(() => {
-      null !== B.current && B.current.pause();
+      null !== Z.current && Z.current.pause(), null == x || x()
+    }, [x]),
+    Y = i.useCallback(() => {
+      null !== Z.current && Z.current.pause();
       let e = F();
       (0, c.K)({
         items: [e],
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: true
-      }), null == L || L(), null == w || w()
-    }, [F, w, L]),
-    Y = Z ? (0, r.jsx)(o.zsu, {
+      }), null == x || x(), null == D || D()
+    }, [F, D, x]),
+    W = B ? (0, r.jsx)(o.zsu, {
       type: "image",
       src: A
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Z, {
-        ref: B,
+        ref: Z,
         src: A,
         width: 232,
         height: 131,
-        autoPlay: !j.enabled && G,
+        autoPlay: !k.enabled && G,
         muted: true,
         loop: true,
         playsInline: true,
@@ -148,38 +148,38 @@ function S(e) {
         children: (0, r.jsx)(s.JM1, {
           playing: false,
           size: "sm",
-          "aria-label": g.intl.string(m.default.YpT3kk),
-          onClick: W
+          "aria-label": g.intl.string(h.default.YpT3kk),
+          onClick: Y
         })
       })]
     }),
     K = y({
-      targetElementRef: k.targetElementRef,
-      shouldShow: k.shouldShow,
-      scrollBehavior: k.scrollBehavior,
-      position: M,
+      targetElementRef: M.targetElementRef,
+      shouldShow: M.shouldShow,
+      scrollBehavior: M.scrollBehavior,
+      position: j,
       onRequestClose: V,
       hasVideo: true,
-      caretConfig: R
-    }, "edge" === k.alignmentStrategy ? {
+      caretConfig: P
+    }, "edge" === M.alignmentStrategy ? {
       alignmentStrategy: "edge",
-      align: k.align
+      align: M.align
     } : {
       alignmentStrategy: "trigger-center"
     });
   return (0, r.jsx)(u.m, v(y({}, K), {
     children: (0, r.jsxs)("div", {
-      ref: x,
-      children: [(0, r.jsx)(p.N, {
+      ref: L,
+      children: [(0, r.jsx)(_.N, {
         onClick: H
       }), (0, r.jsx)(f.$, {}), (0, r.jsx)("div", {
         className: E.assetContainer,
-        children: Y
-      }), (0, r.jsx)(_.Y, {
+        children: W
+      }), (0, r.jsx)(p.Y, {
         title: O,
-        body: T,
-        badge: P,
-        textLink: D
+        body: I,
+        badge: R,
+        textLink: w
       }), null != N ? (0, r.jsx)(d.k, {
         actions: [N]
       }) : null]

@@ -2,9 +2,9 @@
 /** chunk id: 223143, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  QN: () => h,
-  ZP: () => m,
-  c7: () => p,
+  QN: () => m,
+  ZP: () => h,
+  c7: () => _,
   mw: () => g
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
@@ -52,9 +52,9 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = Chunk311570.v.VARIANTS_GROUP;
+let p = Chunk311570.v.VARIANTS_GROUP;
 
-function p() {
+function _() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     [t, n, i, l, c, u] = (0, Chunk399606.Wu)([Chunk1870.Z], () => [Chunk1870.Z.isFetching, Chunk1870.Z.isClaiming, Chunk1870.Z.fetchError, Chunk1870.Z.claimError, Chunk1870.Z.purchases, Chunk1870.Z.hasPreviouslyFetched]),
     d = (0, Chunk473749.useRef)(Chunk1870.Z.hasPreviouslyFetched);
@@ -65,12 +65,12 @@ function p() {
   (0, Chunk473749.useEffect)(() => {
     f.current = Chunk311570
   }, [Chunk311570]);
-  let p = (0, Chunk473749.useRef)(Chunk1870.Z.isFetching);
+  let _ = (0, Chunk473749.useRef)(Chunk1870.Z.isFetching);
   return (0, Chunk473749.useEffect)(() => {
-    p.current = exports
+    _.current = exports
   }, [exports]), (0, Chunk473749.useEffect)(() => {
-    p.current || true === module && d.current && null == f.current || (0, Chunk335131.qg)({
-      variantsReturnStyle: _
+    _.current || true === module && d.current && null == f.current || (0, Chunk335131.qg)({
+      variantsReturnStyle: p
     })
   }, [module]), {
     isClaiming: require,
@@ -81,9 +81,9 @@ function p() {
     hasPreviouslyFetched: u
   }
 }
-let h = () => p(true);
+let m = () => _(true);
 
-function m(e, t) {
+function h(e, t) {
   let n = null == e ? true : e.paymentGateway,
     {
       isFetching: r,
@@ -102,8 +102,8 @@ function m(e, t) {
       claimError: u,
       isFetching: d,
       purchases: f,
-      hasPreviouslyFetched: _
-    } = p(null == e ? true : e.stalePurchasesOK);
+      hasPreviouslyFetched: p
+    } = _(null == e ? true : e.stalePurchasesOK);
   return {
     isFetching: r || d,
     isFetchingCategories: r,
@@ -115,9 +115,9 @@ function m(e, t) {
     fetchPurchasesError: c,
     claimError: u,
     refreshCategories: o,
-    hasPreviouslyFetched: _
+    hasPreviouslyFetched: p
   }
 }
-let g = e => m(f(u({}, null != e ? e : {}), {
+let g = e => h(f(u({}, null != e ? e : {}), {
   stalePurchasesOK: true
 }))

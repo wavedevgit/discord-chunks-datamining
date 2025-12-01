@@ -2,7 +2,7 @@
 /** chunk id: 729345, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => I
+  E: () => S
 }), require("./49124.js");
 var Chunk544891 = require("./544891.js"),
   Chunk668757 = require("./668757.js"),
@@ -40,9 +40,9 @@ function v(e) {
       return
   }
 }
-async function I(e, t) {
+async function S(e, t) {
   try {
-    await T(e), await (0, o.u)(E, t)
+    await I(e), await (0, o.u)(E, t)
   } catch (t) {
     let e;
     throw t instanceof a.n0 && (e = v(t)), (0, s.kr)({
@@ -52,7 +52,7 @@ async function I(e, t) {
     }), t
   }
 }
-async function T(e) {
+async function I(e) {
   try {
     let n, a, o, s;
     try {
@@ -66,7 +66,7 @@ async function T(e) {
       a = "System Logs failed ".concat(e)
     }
     try {
-      o = await (0, _.Z)().then(e => (0, h.Z)(e, true))
+      o = await (0, p.Z)().then(e => (0, m.Z)(e, true))
     } catch (e) {
       o = "Push logs failed: ".concat(e)
     }
@@ -82,9 +82,9 @@ async function T(e) {
       n = n.slice(n.length - Math.floor(n.length * e)), a = a.slice(a.length - Math.floor(a.length * e)), o = o.slice(o.length - Math.floor(o.length * e)), s = s.slice(s.length - Math.floor(s.length * e))
     }
     let E = (null == O ? true : O.AppOpenedTimestamp) != null ? O.AppOpenedTimestamp : null,
-      b = "\n    ".concat((0, p.Z)(E), "\n\n    ").concat((0, l.EA)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, f.Z)(), true, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(c.Z.getDebugInfo(), true, 2), "\n\n    Logs:\n    ").concat(n, "\n\n    System logs:\n    ").concat(a, "\n\n    LibDiscore logs:\n    ").concat(s, "\n\n    Push Notifications:\n    ").concat(o, "\n    ");
+      b = "\n    ".concat((0, _.Z)(E), "\n\n    ").concat((0, l.EA)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, f.Z)(), true, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(c.Z.getDebugInfo(), true, 2), "\n\n    Logs:\n    ").concat(n, "\n\n    System logs:\n    ").concat(a, "\n\n    LibDiscore logs:\n    ").concat(s, "\n\n    Push Notifications:\n    ").concat(o, "\n    ");
     u.ZH();
-    let v = m.ANM.DEBUG_LOG(e, "discord_app_logs");
+    let v = h.ANM.DEBUG_LOG(e, "discord_app_logs");
     await r.tn.post({
       url: v,
       body: b,

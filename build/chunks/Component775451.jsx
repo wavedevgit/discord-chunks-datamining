@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   V9: () => g,
-  ek: () => m
+  ek: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk152935 = require("./152935.js");
-let m = {
+let h = {
     START: Chunk152935.alignLeft,
     END: Chunk152935.alignRight
   },
@@ -28,32 +28,32 @@ let m = {
       ctaText: n,
       ctaOnClick: a,
       analyticsPage: g,
-      linkText: E = p.intl.string(p.t.XRdyjz),
-      cardAlignment: b = m.START,
+      linkText: E = _.intl.string(_.t.XRdyjz),
+      cardAlignment: b = h.START,
       className: y
     } = e, {
       balance: O
-    } = (0, c.A)(), [v, I] = i.useState(u.b.DEFAULT), [T, S] = i.useState(false), [A, C] = i.useState(false), N = i.useRef(null), R = i.useCallback(() => {
-      let e = !T;
+    } = (0, c.A)(), [v, S] = i.useState(u.b.DEFAULT), [I, T] = i.useState(false), [A, C] = i.useState(false), N = i.useRef(null), P = i.useCallback(() => {
+      let e = !I;
       e && null != g && (0, l.Y)({
         pageType: g,
-        sectionType: _.jXE.ORBS_BALANCE_MENU,
-        ctaObject: _.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
-      }), I(e ? u.b.SELECTED : u.b.DEFAULT), S(e)
-    }, [T, g]), P = i.useCallback(() => {
-      T && R()
-    }, [T, R]), D = (0, s.Z)(null, P), w = i.useMemo(() => (0, r.jsx)(d.L, {
+        sectionType: p.jXE.ORBS_BALANCE_MENU,
+        ctaObject: p.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
+      }), S(e ? u.b.SELECTED : u.b.DEFAULT), T(e)
+    }, [I, g]), R = i.useCallback(() => {
+      I && P()
+    }, [I, P]), w = (0, s.Z)(null, R), D = i.useMemo(() => (0, r.jsx)(d.L, {
       analyticsPage: g,
       ctaText: n,
       ctaOnClick: () => {
-        R(), a()
+        P(), a()
       },
       linkText: E
-    }), [g, n, E, R, a]);
+    }), [g, n, E, P, a]);
     return (0, r.jsxs)("div", {
-      className: o()(h.container, y, {
-        [h.hidden]: A,
-        [h.visible]: !A
+      className: o()(m.container, y, {
+        [m.hidden]: A,
+        [m.visible]: !A
       }),
       children: [(0, r.jsx)(f.y, {
         pillRef: N,
@@ -62,16 +62,16 @@ let m = {
         onMouseDown: e => {
           e.stopPropagation()
         },
-        onClick: R,
+        onClick: P,
         showNotificationBadge: t
-      }), T && (0, r.jsx)("div", {
-        className: o()(h.cardContainer, b, {
-          [h.hidden]: A,
-          [h.visible]: !A
+      }), I && (0, r.jsx)("div", {
+        className: o()(m.cardContainer, b, {
+          [m.hidden]: A,
+          [m.visible]: !A
         }),
-        ref: D,
-        children: w
+        ref: w,
+        children: D
       })]
     })
   };
-g.CardAlignment = m
+g.CardAlignment = h

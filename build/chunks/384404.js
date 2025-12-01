@@ -31,7 +31,7 @@ var Chunk131522 = require("./131522.js"),
   u = Chunk65183.OrderedSet,
   d = Chunk65183.Record,
   f = Chunk65183.Stack,
-  _ = d({
+  p = d({
     allowUndo: true,
     currentContent: null,
     decorator: null,
@@ -46,7 +46,7 @@ var Chunk131522 = require("./131522.js"),
     treeMap: null,
     undoStack: f()
   }),
-  p = function() {
+  _ = function() {
     exports.createEmpty = function(e) {
       return t.createWithContent(o.createFromText(""), e)
     }, exports.createWithContent = function(e, n) {
@@ -62,8 +62,8 @@ var Chunk131522 = require("./131522.js"),
     }, exports.create = function(e) {
       var n = e.currentContent,
         i = e.decorator;
-      return new t(new _(r({}, e, {
-        treeMap: m(n, i),
+      return new t(new p(r({}, e, {
+        treeMap: h(n, i),
         directionMap: s.getDirectionMap(n)
       })))
     }, exports.set = function(e, n) {
@@ -74,7 +74,7 @@ var Chunk131522 = require("./131522.js"),
         var a = n.currentContent || e.getCurrentContent();
         if (i !== r) {
           var o, s = t.get("treeMap");
-          o = i && r ? E(a, a.getBlockMap(), s, i, r) : m(a, i), t.merge({
+          o = i && r ? E(a, a.getBlockMap(), s, i, r) : h(a, i), t.merge({
             decorator: i,
             treeMap: o,
             nativelyRenderedContent: null
@@ -135,9 +135,9 @@ var Chunk131522 = require("./131522.js"),
     }, module.getDirectionMap = function() {
       return this.getImmutable().get("directionMap")
     }, exports.acceptSelection = function(e, t) {
-      return h(e, t, false)
+      return m(e, t, false)
     }, exports.forceSelection = function(e, t) {
-      return t.getHasFocus() || (t = t.set("hasFocus", true)), h(e, t, true)
+      return t.getHasFocus() || (t = t.set("hasFocus", true)), m(e, t, true)
     }, exports.moveSelectionToEnd = function(e) {
       var n = e.getCurrentContent().getLastBlock(),
         r = n.getKey(),
@@ -171,7 +171,7 @@ var Chunk131522 = require("./131522.js"),
       o !== l.getSelectionAfter() || b(e, r) ? (c = c.push(l), u = u.set("selectionBefore", o)) : ("insert-characters" === r || "backspace-character" === r || "delete-character" === r) && (u = u.set("selectionBefore", l.getSelectionBefore()));
       var d = e.getInlineStyleOverride();
       false === ["adjust-depth", "change-block-type", "split-block"].indexOf(r) && (d = null);
-      var _ = {
+      var p = {
         currentContent: u,
         directionMap: a,
         undoStack: c,
@@ -181,7 +181,7 @@ var Chunk131522 = require("./131522.js"),
         forceSelection: i,
         inlineStyleOverride: d
       };
-      return t.set(e, _)
+      return t.set(e, p)
     }, exports.undo = function(e) {
       if (!e.getAllowUndo()) return e;
       var n = e.getUndoStack(),
@@ -223,8 +223,8 @@ var Chunk131522 = require("./131522.js"),
     }, exports
   }();
 
-function h(e, t, n) {
-  return p.set(e, {
+function m(e, t, n) {
+  return _.set(e, {
     selection: t,
     forceSelection: n,
     nativelyRenderedContent: null,
@@ -232,7 +232,7 @@ function h(e, t, n) {
   })
 }
 
-function m(e, t) {
+function h(e, t) {
   return e.getBlockMap().map(function(n) {
     return a.generate(e, n, t)
   }).toOrderedMap()
@@ -282,4 +282,4 @@ function v(e, t) {
   }).first();
   return n ? n.getInlineStyleAt(n.getLength() - 1) : u()
 }
-module.exports = p
+module.exports = _

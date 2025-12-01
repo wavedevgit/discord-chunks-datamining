@@ -18,54 +18,54 @@ let d = e => {
   let {
     title: d,
     titleClassName: f,
-    buttonClassName: _,
-    perkImage: p,
-    isCarousel: h,
-    onCtaClick: m,
+    buttonClassName: p,
+    perkImage: _,
+    isCarousel: m,
+    onCtaClick: h,
     perkComponent: g,
     subtitle: E = "",
     descriptionCta: b = "",
     customContent: y,
     cardVariant: O,
     subtitleClassName: v,
-    imageOverlayText: I
-  } = e, T = e => (null == e ? true : e.onlyShowOnHover) !== true, S = (0, l._)(O), A = null != I;
+    imageOverlayText: S
+  } = e, I = e => (null == e ? true : e.onlyShowOnHover) !== true, T = (0, l._)(O), A = null != S;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: a()(u.cover, u.below)
     }), (0, r.jsx)(c.Z, {
       title: d,
-      shouldShowElement: T,
-      cardVariantStyleInfo: S,
+      shouldShowElement: I,
+      cardVariantStyleInfo: T,
       titleClassName: f,
       subtitle: E,
       subtitleClassName: v
-    }), null != p && (0, r.jsxs)("div", {
+    }), null != _ && (0, r.jsxs)("div", {
       className: a()(u.relative, {
-        [u.cardImage]: !h,
-        [u.hoverCardImage]: !h && !(null == S || null == (t = S.perkImage) ? true : t.disableHoverAnimation)
-      }, null == S || null == (n = S.perkImage) ? true : n.className),
+        [u.cardImage]: !m,
+        [u.hoverCardImage]: !m && !(null == T || null == (t = T.perkImage) ? true : t.disableHoverAnimation)
+      }, null == T || null == (n = T.perkImage) ? true : n.className),
       children: [(0, r.jsx)("img", {
-        src: p,
+        src: _,
         alt: "",
-        className: h ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
+        className: m ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
       }), A ? (0, r.jsx)("div", {
         className: u.imageOverlayTextContainer,
         children: (0, r.jsx)(s.Text, {
           className: u.imageOverlayText,
           variant: "text-md/bold",
-          children: I
+          children: S
         })
       }) : null]
     }), null != g && (0, r.jsxs)("div", {
       className: u.cardIllustrationNoHover,
-      children: [g, 0 !== b.length && null != m && (0, r.jsx)(o.zx, {
+      children: [g, 0 !== b.length && null != h && (0, r.jsx)(o.zx, {
         "data-migration-pending": true,
-        className: _,
+        className: p,
         fullWidth: true,
-        onClick: m,
+        onClick: h,
         children: (0, r.jsx)("div", {
-          className: null == S || null == (i = S.descriptionCta) ? true : i.className,
+          className: null == T || null == (i = T.descriptionCta) ? true : i.className,
           children: b
         })
       })]

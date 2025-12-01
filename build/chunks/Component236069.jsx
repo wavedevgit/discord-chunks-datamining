@@ -2,7 +2,7 @@
 /** chunk id: 236069, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,7 +19,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -83,7 +83,7 @@ function v(e) {
   } = e, [i, o] = (0, f.ww)({
     guildId: t,
     analyticsLocations: n
-  }), s = o ? h.intl.string(h.t["6ndMcq"]) : h.intl.string(h.t["0eiu6J"]), l = o ? h.intl.string(h.t.S09nw4) : h.intl.string(h.t.tEttXd);
+  }), s = o ? m.intl.string(m.t["6ndMcq"]) : m.intl.string(m.t["0eiu6J"]), l = o ? m.intl.string(m.t.S09nw4) : m.intl.string(m.t.tEttXd);
   return (0, r.jsxs)(a.qXd, {
     color: a.DM8.DANGER,
     children: [s, (0, r.jsx)(a.EyT, {
@@ -93,7 +93,7 @@ function v(e) {
   })
 }
 
-function I() {
+function S() {
   let e = (0, Chunk300284.Z)({
     scrollPosition: Chunk526761.Y_.GUILD_TAG
   });
@@ -106,7 +106,7 @@ function I() {
   })
 }
 
-function T(e) {
+function I(e) {
   var {
     analyticsLocations: t
   } = e, n = y(e, ["analyticsLocations"]);
@@ -117,9 +117,9 @@ function T(e) {
     let e = c.default.getId();
     return (0, d.no)(u.ZP.getMember(n.guildId, e))
   }, [n.guildId]);
-  return l.has(_.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || l.has(_.q.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(v, b(g({}, n), {
+  return l.has(p.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || l.has(p.q.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(v, b(g({}, n), {
     analyticsLocations: a
-  })) : l.has(_.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(I, {}) : (0, r.jsx)(v, b(g({}, n), {
+  })) : l.has(p.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(S, {}) : (0, r.jsx)(v, b(g({}, n), {
     analyticsLocations: a
   }))
 }

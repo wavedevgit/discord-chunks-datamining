@@ -15,7 +15,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,10 +23,10 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = 5 * Chunk70956.Z.Millis.MINUTE,
-  h = .5 * Chunk70956.Z.Millis.MINUTE;
+let _ = 5 * Chunk70956.Z.Millis.MINUTE,
+  m = .5 * Chunk70956.Z.Millis.MINUTE;
 
-function m() {
+function h() {
   return Chunk290505.Z.getCurrentConfig({
     location: "FriendOnlineTimer"
   }).useOnlineTimer
@@ -35,10 +35,10 @@ function m() {
 function g() {
   return Chunk290505.Z.getCurrentConfig({
     location: "FriendOnlineTimer"
-  }).useTestTimerDuration ? h : p
+  }).useTestTimerDuration ? m : _
 }
 async function E() {
-  if (m()) try {
+  if (h()) try {
     await Chunk544891.tn.post({
       url: Chunk981631.ANM.USER_MEANINGFULLY_ONLINE,
       rejectWithError: true
@@ -64,17 +64,17 @@ class y extends Chunk147913.Z {
     this.clear()
   }
   constructor(...e) {
-    super(...e), _(this, "timerId", null), _(this, "actions", {
+    super(...e), p(this, "timerId", null), p(this, "actions", {
       POST_CONNECTION_OPEN: () => this.start(),
       CONNECTION_RESUMED: () => this.start(),
       CONNECTION_CLOSED: () => this.clear(),
       CONNECTION_INTERRUPTED: () => this.clear(),
       SELF_PRESENCE_STORE_UPDATE: () => this.start()
-    }), _(this, "start", () => {
-      m() && u.Z.isCooldownElapsed() && null == this.timerId && b(o.Z.getStatus()) && (this.timerId = setTimeout(() => {
+    }), p(this, "start", () => {
+      h() && u.Z.isCooldownElapsed() && null == this.timerId && b(o.Z.getStatus()) && (this.timerId = setTimeout(() => {
         this.timerId = null, b(o.Z.getStatus()) && u.Z.isCooldownElapsed() && E()
       }, g()))
-    }), _(this, "clear", () => {
+    }), p(this, "clear", () => {
       null != this.timerId && (clearTimeout(this.timerId), this.timerId = null)
     })
   }

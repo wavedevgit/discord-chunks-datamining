@@ -2,7 +2,7 @@
 /** chunk id: 344185, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,13 +45,13 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = {},
-  m = new Set;
+let m = {},
+  h = new Set;
 
 function g(e) {
   return {
@@ -61,21 +61,21 @@ function g(e) {
 }
 
 function E(e) {
-  e in h && delete h[e]
+  e in m && delete m[e]
 }
 
 function b(e) {
-  null != e.threads && e.threads.length > 0 && (h[e.id] = {}, e.threads.filter(e => l.AW.has(e.type)).forEach(t => y(e.id, t))), e.hasThreadsSubscription && m.add(e.id)
+  null != e.threads && e.threads.length > 0 && (m[e.id] = {}, e.threads.filter(e => l.AW.has(e.type)).forEach(t => y(e.id, t))), e.hasThreadsSubscription && h.add(e.id)
 }
 
 function y(e, t) {
-  let n = h[e],
+  let n = m[e],
     r = t.parent_id;
-  r in n || (n[r] = {}), h[e][r][t.id] = g(t)
+  r in n || (n[r] = {}), m[e][r][t.id] = g(t)
 }
 
 function O(e) {
-  h = {}, m.clear(), e.guilds.forEach(e => {
+  m = {}, h.clear(), e.guilds.forEach(e => {
     b(e)
   })
 }
@@ -84,26 +84,26 @@ function v(e) {
   let {
     channels: t
   } = e;
-  h = {}, a()(t).filter(e => l.Ec.has(e.type)).groupBy("guild_id").forEach((e, t) => {
-    h[t] = {}, e.forEach(e => y(t, e))
+  m = {}, a()(t).filter(e => l.Ec.has(e.type)).groupBy("guild_id").forEach((e, t) => {
+    m[t] = {}, e.forEach(e => y(t, e))
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     guild: t
   } = e;
   E(t.id), b(t)
 }
 
-function T(e) {
+function I(e) {
   let {
     guild: t
   } = e;
   E(t.id)
 }
 
-function S(e) {
+function T(e) {
   var t, n;
   let {
     channel: r
@@ -111,9 +111,9 @@ function S(e) {
   if (!l.AW.has(r.type)) returnfalse;
   if ((null == (t = r.threadMetadata) ? true : t.archived) === true) return C(r);
   {
-    let e = null != (n = h[r.guild_id]) ? n : {};
-    h[r.guild_id] = p(f({}, e), {
-      [r.parent_id]: p(f({}, e[r.parent_id]), {
+    let e = null != (n = m[r.guild_id]) ? n : {};
+    m[r.guild_id] = _(f({}, e), {
+      [r.parent_id]: _(f({}, e[r.parent_id]), {
         [r.id]: g(r)
       })
     })
@@ -126,7 +126,7 @@ function A(e) {
     threads: n,
     channelIds: r
   } = e;
-  for (let e in null == r && m.add(t), h[t] = f({}, h[t]), h[t]) h[t][e] = f({}, h[t][e]);
+  for (let e in null == r && h.add(t), m[t] = f({}, m[t]), m[t]) m[t][e] = f({}, m[t][e]);
   n.forEach(e => y(t, e))
 }
 
@@ -136,10 +136,10 @@ function C(e) {
     parent_id: n,
     id: r
   } = e;
-  if (null == t || null == n || !(t in h) || !(n in h[t]) || !(r in h[t][n])) returnfalse;
-  h[t] = p(f({}, h[t]), {
-    [n]: f({}, h[t][n])
-  }), delete h[t][n][r], a().isEmpty(h[t][n]) && delete h[t][n]
+  if (null == t || null == n || !(t in m) || !(n in m[t]) || !(r in m[t][n])) returnfalse;
+  m[t] = _(f({}, m[t]), {
+    [n]: f({}, m[t][n])
+  }), delete m[t][n][r], a().isEmpty(m[t][n]) && delete m[t][n]
 }
 
 function N(e) {
@@ -149,15 +149,15 @@ function N(e) {
   return C(t)
 }
 
-function R(e) {
+function P(e) {
   let {
     channel: t
   } = e;
-  if (null == t.guild_id || !(t.guild_id in h)) returnfalse;
-  h[t.guild_id] = f({}, h[t.guild_id]), delete h[t.guild_id][t.id]
+  if (null == t.guild_id || !(t.guild_id in m)) returnfalse;
+  m[t.guild_id] = f({}, m[t.guild_id]), delete m[t.guild_id][t.id]
 }
-let P = {};
-class D extends(r = Chunk442837.ZP.Store) {
+let R = {};
+class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z)
   }
@@ -166,33 +166,33 @@ class D extends(r = Chunk442837.ZP.Store) {
   }
   getThreadsForGuild(e) {
     var t;
-    return null != (t = h[e]) ? t : P
+    return null != (t = m[e]) ? t : R
   }
   getThreadsForParent(e, t) {
     var n;
-    return null != (n = this.getThreadsForGuild(e)[t]) ? n : P
+    return null != (n = this.getThreadsForGuild(e)[t]) ? n : R
   }
   hasThreadsForChannel(e, t) {
     return !a().isEmpty(this.getThreadsForParent(e, t))
   }
   forEachGuild(e) {
-    u.default.keys(h).forEach(t => {
-      e(t, h[t])
+    u.default.keys(m).forEach(t => {
+      e(t, m[t])
     })
   }
   hasLoaded(e) {
-    return m.has(e)
+    return h.has(e)
   }
 }
-d(D, "displayName", "ActiveThreadsStore");
-let w = new D(Chunk570140.Z, {
+d(w, "displayName", "ActiveThreadsStore");
+let D = new w(Chunk570140.Z, {
   CONNECTION_OPEN: O,
   OVERLAY_INITIALIZE: v,
-  GUILD_CREATE: I,
-  GUILD_DELETE: T,
-  THREAD_CREATE: S,
-  THREAD_UPDATE: S,
+  GUILD_CREATE: S,
+  GUILD_DELETE: I,
+  THREAD_CREATE: T,
+  THREAD_UPDATE: T,
   THREAD_LIST_SYNC: A,
   THREAD_DELETE: N,
-  CHANNEL_DELETE: R
+  CHANNEL_DELETE: P
 })

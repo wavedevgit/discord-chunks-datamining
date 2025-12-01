@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk788457 = require("./788457.js");
-let m = .2,
+let h = .2,
   g = 41;
 
 function E() {
@@ -69,43 +69,43 @@ let b = function(e) {
   let {
     glowOpacity: t,
     className: n,
-    colorOpacity: i = m,
+    colorOpacity: i = h,
     enableBrandRefresh: a = false
   } = e, s = (0, u.ZP)(), l = (0, c.apv)(s);
   return (0, r.jsxs)("div", {
-    className: o()(h.nitroTopDividerContainer, n),
+    className: o()(m.nitroTopDividerContainer, n),
     children: [(0, r.jsx)("div", {
-      className: h.nitroTopDividerUpper
+      className: m.nitroTopDividerUpper
     }), (0, r.jsx)("div", {
       style: {
         opacity: a ? 0 : t
       },
-      className: h.nitroTopDividerShadow
+      className: m.nitroTopDividerShadow
     }), (0, r.jsxs)("div", {
-      className: h.nitroTopDividerLockContainer,
+      className: m.nitroTopDividerLockContainer,
       children: [(0, r.jsx)("div", {
-        className: o()(h.nitroTopDividerLockBorder, {
-          [h.brandRefresh]: a
+        className: o()(m.nitroTopDividerLockBorder, {
+          [m.brandRefresh]: a
         })
       }), (0, r.jsx)("div", {
-        className: o()(h.nitroTopDividerLockCircle, {
-          [h.brandRefresh]: a
+        className: o()(m.nitroTopDividerLockCircle, {
+          [m.brandRefresh]: a
         }),
         children: (0, r.jsx)(c.mBM, {
           size: "xs",
           color: a && l ? "black" : "white"
         })
       }), (0, r.jsx)("div", {
-        className: o()(h.nitroTopDividerLockBorderReversed, {
-          [h.brandRefresh]: a
+        className: o()(m.nitroTopDividerLockBorderReversed, {
+          [m.brandRefresh]: a
         })
       })]
     }), (0, r.jsx)("div", {
       style: {
         opacity: a ? 1 : i
       },
-      className: o()(h.nitroTopDividerLower, {
-        [h.brandRefresh]: a
+      className: o()(m.nitroTopDividerLower, {
+        [m.brandRefresh]: a
       })
     })]
   })

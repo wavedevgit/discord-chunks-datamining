@@ -12,46 +12,46 @@ var Chunk98405 = require("./98405.js"),
   Chunk992174 = require("./992174.js"),
   Chunk380297 = require("./380297.js"),
   Chunk504290 = require("./504290.js"),
-  p = String,
-  h = Chunk154028("JSON", "stringify"),
-  m = Chunk46015(/./.exec),
+  _ = String,
+  m = Chunk154028("JSON", "stringify"),
+  h = Chunk46015(/./.exec),
   g = Chunk46015("".charAt),
   E = Chunk46015("".charCodeAt),
   b = Chunk46015("".replace),
   y = Chunk46015(1..toString),
   O = /[\uD800-\uDFFF]/g,
   v = /^[\uD800-\uDBFF]$/,
-  I = /^[\uDC00-\uDFFF]$/,
-  T = !Chunk504290 || Chunk621523(function() {
+  S = /^[\uDC00-\uDFFF]$/,
+  I = !Chunk504290 || Chunk621523(function() {
     var e = Chunk154028("Symbol")("stringify detection");
-    return "[null]" !== h([module]) || "{}" !== h({
+    return "[null]" !== m([module]) || "{}" !== m({
       a: module
-    }) || "{}" !== h(Object(module))
+    }) || "{}" !== m(Object(module))
   }),
-  S = Chunk621523(function() {
-    return '"\udf06\ud834"' !== h("\uDF06\uD834") || '"\udead"' !== h("\uDEAD")
+  T = Chunk621523(function() {
+    return '"\udf06\ud834"' !== m("\uDF06\uD834") || '"\udead"' !== m("\uDEAD")
   }),
   A = function(e, t) {
     var n = d(arguments),
       r = f(t);
     if (!(!c(r) && (true === e || u(e)))) return n[1] = function(e, t) {
-      if (c(r) && (t = o(r, this, p(e), t)), !u(t)) return t
-    }, a(h, null, n)
+      if (c(r) && (t = o(r, this, _(e), t)), !u(t)) return t
+    }, a(m, null, n)
   },
   C = function(e, t, n) {
     var r = g(n, t - 1),
       i = g(n, t + 1);
-    return m(v, e) && !m(I, i) || m(I, e) && !m(v, r) ? "\\u" + y(E(e, 0), 16) : e
+    return h(v, e) && !h(S, i) || h(S, e) && !h(v, r) ? "\\u" + y(E(e, 0), 16) : e
   };
-h && Chunk98405({
+m && Chunk98405({
   target: "JSON",
   stat: true,
   arity: 3,
-  forced: T || S
+  forced: I || T
 }, {
   stringify: function(e, t, n) {
     var r = d(arguments),
-      i = a(T ? A : h, null, r);
-    return S && "string" == typeof i ? b(i, O, C) : i
+      i = a(I ? A : m, null, r);
+    return T && "string" == typeof i ? b(i, O, C) : i
   }
 })

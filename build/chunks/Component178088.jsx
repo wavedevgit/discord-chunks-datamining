@@ -91,7 +91,7 @@ function Z(e) {
   let q = i.useCallback(e => {
       e.shiftKey || V()
     }, [V]),
-    X = (0, b.Us)({
+    Q = (0, b.Us)({
       location: "ForYou"
     });
   return (0, r.jsx)(f.Gt, {
@@ -110,7 +110,7 @@ function Z(e) {
           className: D,
           children: (0, r.jsx)("div", {
             className: o()(N.container, {
-              [N.widerInbox]: X
+              [N.widerInbox]: Q
             }),
             children: (0, r.jsx)(u.y5t, {
               component: (0, r.jsx)(x.Z, {

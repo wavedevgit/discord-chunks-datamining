@@ -43,8 +43,8 @@ async function d(e) {
     onRedeemStart: o,
     onRedeemSucceed: d,
     onRedeemFail: f,
-    shouldRefetchBalance: _ = true,
-    isRental: p = false
+    shouldRefetchBalance: p = true,
+    isRental: _ = false
   } = e;
   i.Z.wait(() => {
     i.Z.dispatch({
@@ -55,7 +55,7 @@ async function d(e) {
   try {
     let e = {
         checkout_session_id: n,
-        is_rental: p
+        is_rental: _
       },
       a = (await r.tn.post({
         url: l.ANM.VIRTUAL_CURRENCY_SKU_REDEEM(t),
@@ -75,13 +75,13 @@ async function d(e) {
       type: "VIRTUAL_CURRENCY_REDEEM_SUCCESS",
       skuId: t,
       entitlements: a
-    }), _ && u(), null == d || d(a), a
+    }), p && u(), null == d || d(a), a
   } catch (n) {
     let e = n instanceof a.HF ? n : new a.HF(n);
     i.Z.dispatch({
       type: "VIRTUAL_CURRENCY_REDEEM_FAIL",
       skuId: t,
       error: e
-    }), _ && u(), null == f || f(e)
+    }), p && u(), null == f || f(e)
   }
 }

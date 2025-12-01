@@ -2,7 +2,7 @@
 /** chunk id: 747017, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,26 +25,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk80568 = require("./80568.js");
 
-function I(e) {
+function S(e) {
   let {
     user: t,
     activities: n,
     applicationStream: a,
-    voiceChannel: I,
-    textClassName: T,
-    iconClassName: S,
+    voiceChannel: S,
+    textClassName: I,
+    iconClassName: T,
     textSize: A = "xs",
     animateEmoji: C = true,
     hasQuest: N = false,
-    hideEmoji: R = false,
-    hideTooltip: P = false
+    hideEmoji: P = false,
+    hideTooltip: R = false
   } = e;
   (0, u.Z)(null == t ? true : t.id);
-  let D = (null == a ? true : a.discoverable) !== false ? a : null,
-    w = (0, f.E)("ActivityStatus", I),
-    L = (0, l.e7)([_.default], () => _.default.getId() === (null == t ? true : t.id)),
-    x = (0, l.e7)([d.Z], () => w ? L ? d.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === O.IIU.HANG_STATUS) : null : null),
-    M = i.useMemo(() => {
+  let w = (null == a ? true : a.discoverable) !== false ? a : null,
+    D = (0, f.E)("ActivityStatus", S),
+    x = (0, l.e7)([p.default], () => p.default.getId() === (null == t ? true : t.id)),
+    L = (0, l.e7)([d.Z], () => D ? x ? d.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === O.IIU.HANG_STATUS) : null : null),
+    j = i.useMemo(() => {
       var e, t;
       let r = null == n ? true : n.find(e => {
         let {
@@ -56,19 +56,19 @@ function I(e) {
       let i = null != (t = null == (e = r.state) ? true : e.trim()) ? t : null;
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]);
-  if ((0, l.e7)([p.Z], () => p.Z.isBlockedOrIgnored(null == t ? true : t.id))) return null;
-  let k = (null == t ? true : t.bot) === true,
-    j = ((null == M ? true : M.state) != null || null != x) && "xs" === A,
+  if ((0, l.e7)([_.Z], () => _.Z.isBlockedOrIgnored(null == t ? true : t.id))) return null;
+  let M = (null == t ? true : t.bot) === true,
+    k = ((null == j ? true : j.state) != null || null != L) && "xs" === A,
     U = () => {
-      if (null != D) return (0, r.jsx)(m.Z, {
-        stream: D,
+      if (null != w) return (0, r.jsx)(h.Z, {
+        stream: w,
         game: null == n ? true : n.find(c.Z),
         textVariant: "text-".concat(A, "/medium"),
-        textClassName: T,
-        iconClassName: S,
-        hideText: j,
-        hideIcon: k,
-        hideTooltip: P
+        textClassName: I,
+        iconClassName: T,
+        hideText: k,
+        hideIcon: M,
+        hideTooltip: R
       });
       let e = null == n ? true : n.find(e => {
         let {
@@ -79,43 +79,43 @@ function I(e) {
       return null != e ? (0, r.jsx)(E.Z, {
         activity: e,
         textVariant: "text-".concat(A, "/medium"),
-        textClassName: T,
-        iconClassName: S,
-        hideText: j,
-        hideIcon: k,
-        hideTooltip: P
-      }) : null != I ? (0, r.jsx)(b.Z, {
-        channel: I,
+        textClassName: I,
+        iconClassName: T,
+        hideText: k,
+        hideIcon: M,
+        hideTooltip: R
+      }) : null != S ? (0, r.jsx)(b.Z, {
+        channel: S,
         textVariant: "text-".concat(A, "/medium"),
-        textClassName: T,
-        iconClassName: S,
-        hideText: j,
-        hideTooltip: P
+        textClassName: I,
+        iconClassName: T,
+        hideText: k,
+        hideTooltip: R
       }) : null
     },
     G = o()(v.container, {
       [v.textXs]: "xs" === A,
       [v.textSm]: "sm" === A
     }),
-    B = () => null == M && null == x ? null : (0, r.jsx)(g.Z, {
-      customStatusActivity: M,
+    Z = () => null == j && null == L ? null : (0, r.jsx)(g.Z, {
+      customStatusActivity: j,
       textSize: A,
       animateEmoji: C,
-      hideEmoji: R,
-      hideTooltip: P,
-      textClassName: T,
-      iconClassName: S,
+      hideEmoji: P,
+      hideTooltip: R,
+      textClassName: I,
+      iconClassName: T,
       tooltipClassName: G,
-      voiceChannel: I,
-      hangStatus: x,
+      voiceChannel: S,
+      hangStatus: L,
       userId: null == t ? true : t.id
     });
   return (0, r.jsxs)("div", {
     className: G,
     children: [U(), (0, r.jsx)(s.xvT, {
       variant: "text-".concat(A, "/normal"),
-      className: o()(v.truncated, v.dot, T),
+      className: o()(v.truncated, v.dot, I),
       children: y.l
-    }), B(), N && (0, r.jsx)(h.Z, {})]
+    }), Z(), N && (0, r.jsx)(m.Z, {})]
   })
 }

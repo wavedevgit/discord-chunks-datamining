@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk790604 = require("./790604.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -64,41 +64,41 @@ function y() {
   let {
     selectedGuildId: e,
     setSelectedGuildId: t
-  } = (0, Chunk997950.xu)(), n = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), _ = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), {
-    hideGuildOptions: h,
+  } = (0, Chunk997950.xu)(), n = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), p = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), {
+    hideGuildOptions: m,
     hideGlobalOption: g
   } = (0, Chunk816108.b)(), y = require[0];
   Chunk473749.useEffect(() => {
-    g && h || (module === Chunk997950.Th && module !== y && g && exports(y), module !== Chunk997950.Th && h && exports(Chunk997950.Th))
-  }, [module, exports, g, h, y]);
+    g && m || (module === Chunk997950.Th && module !== y && g && exports(y), module !== Chunk997950.Th && m && exports(Chunk997950.Th))
+  }, [module, exports, g, m, y]);
   let O = e => {
       t(e)
     },
     v = Chunk473749.useMemo(() => {
-      let e = h ? [] : require.map(e => {
-        let t = _[e];
+      let e = m ? [] : require.map(e => {
+        let t = p[e];
         return null == t ? null : {
           label: t.name,
           value: t.id
         }
       }).filter(Chunk823379.lm);
-      return g || module.unshift(E(m({}, b), {
+      return g || module.unshift(E(h({}, b), {
         label: b.label()
       })), module
-    }, [h, require, g, Chunk388032]),
-    I = Chunk473749.useCallback(e => {
+    }, [m, require, g, Chunk388032]),
+    S = Chunk473749.useCallback(e => {
       let t = (null == e ? true : e.label) === b.label() && (null == e ? true : e.value) === b.value;
       return null == e || "" === e.value || t ? (0, r.jsx)("div", {
-        className: p.clydeIconContainer,
+        className: _.clydeIconContainer,
         children: (0, r.jsx)(o.gw7, {
           size: "sm",
           color: "white",
           "aria-hidden": true,
-          className: p.guildSelectOptionIcon
+          className: _.guildSelectOptionIcon
         })
       }) : (0, r.jsx)(s.Z, {
-        className: p.guildSelectOptionIcon,
-        guild: _[e.value],
+        className: _.guildSelectOptionIcon,
+        guild: p[e.value],
         size: s.Z.Sizes.SMALLER,
         active: true
       })
@@ -108,6 +108,6 @@ function y() {
     onChange: O,
     value: module,
     options: v,
-    renderOptionPrefix: I
+    renderOptionPrefix: S
   })
 }

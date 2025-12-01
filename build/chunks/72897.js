@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Fh: () => A,
-  Ls: () => S,
-  p6: () => T,
+  Ls: () => T,
+  p6: () => I,
   rX: () => v
 }), require("./704826.js"), require("./35282.js"), require("./413496.js"), require("./433524.js");
 var Chunk473749 = require("./473749.js"),
@@ -20,7 +20,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,14 +29,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -61,26 +61,26 @@ function E(e, t) {
 
 function b(e) {
   return ({
-    [_.h7.AUDIO_INPUT]: {
+    [p.h7.AUDIO_INPUT]: {
       getRawDevices: e => e.getInputDevices(),
-      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(_.h7.AUDIO_INPUT),
+      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(p.h7.AUDIO_INPUT),
       getCurrentDeviceId: e => e.getInputDeviceId(),
       getSelectedDeviceId: e => e.getSettings().inputDeviceId,
-      getNoDevicesMessage: () => p.intl.string(p.t["/QIjDA"])
+      getNoDevicesMessage: () => _.intl.string(_.t["/QIjDA"])
     },
-    [_.h7.AUDIO_OUTPUT]: {
+    [p.h7.AUDIO_OUTPUT]: {
       getRawDevices: e => e.getOutputDevices(),
-      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(_.h7.AUDIO_OUTPUT),
+      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(p.h7.AUDIO_OUTPUT),
       getCurrentDeviceId: e => e.getOutputDeviceId(),
       getSelectedDeviceId: e => e.getSettings().outputDeviceId,
-      getNoDevicesMessage: () => p.intl.string(p.t.xlUg0v)
+      getNoDevicesMessage: () => _.intl.string(_.t.xlUg0v)
     },
-    [_.h7.VIDEO_INPUT]: {
+    [p.h7.VIDEO_INPUT]: {
       getRawDevices: e => e.getVideoDevices(),
-      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(_.h7.VIDEO_INPUT),
+      getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(p.h7.VIDEO_INPUT),
       getCurrentDeviceId: e => e.getVideoDeviceId(),
       getSelectedDeviceId: e => e.getSettings().videoDeviceId,
-      getNoDevicesMessage: () => p.intl.string(p.t.WKWARY)
+      getNoDevicesMessage: () => _.intl.string(_.t.WKWARY)
     }
   })[e]
 }
@@ -98,7 +98,7 @@ function O(e, t) {
   let {
     getNoDevicesMessage: n
   } = b(e);
-  return t.disabled ? n() : t.name.replace(_.fU, y())
+  return t.disabled ? n() : t.name.replace(p.fU, y())
 }
 
 function v(e) {
@@ -106,48 +106,48 @@ function v(e) {
   return null == (t = new RegExp("^(?<prefix>".concat(y(), ") \\((?<subName>.+)\\)$")).exec(e)) ? true : t.groups
 }
 
-function I(e) {
+function S(e) {
   let {
     getRawDevices: t
   } = b(e), n = (0, a.e7)([l.Z], () => t(l.Z));
   return (0, r.useMemo)(() => {
-    let t = m({}, n),
-      r = t[_.w5];
-    return null != r && (t[_.w5] = E(m({}, r), {
+    let t = h({}, n),
+      r = t[p.w5];
+    return null != r && (t[p.w5] = E(h({}, r), {
       name: O(e, r)
     })), t
   }, [e, n])
 }
 
-function T(e) {
-  let t = I(e),
+function I(e) {
+  let t = S(e),
     {
       getCurrentDeviceId: n
     } = b(e);
   return t[(0, a.e7)([l.Z], () => n(l.Z))]
 }
 
-function S(e, t) {
+function T(e, t) {
   let {
     location: n
   } = t, {
     showDeviceSelectionImprovements: s
   } = (0, f.V)({
     location: n
-  }), l = I(e), {
+  }), l = S(e), {
     getAllDeviceIdsSortedByFrecency: u
-  } = b(e), p = (0, o.Z)((0, a.Wu)([d.Z], () => u(d.Z))), {
-    id: h
-  } = T(e);
+  } = b(e), _ = (0, o.Z)((0, a.Wu)([d.Z], () => u(d.Z))), {
+    id: m
+  } = I(e);
   return (0, r.useMemo)(() => {
     let t = e => e.map(e => l[e]).filter(c.lm),
       n = Object.keys(l),
-      r = s && e !== _.h7.VIDEO_INPUT ? [_.w5] : [],
-      a = (0, i.intersection)(p, n),
-      o = (0, i.difference)(n, p),
-      u = (0, i.difference)(o, r, [h]);
-    return (null == a ? true : a.length) === 0 || u.length <= 1 ? [(0, i.union)(r, [h], a, o), []].map(t) : [(0, i.union)(r, [h], a), u].map(t)
-  }, [l, e, p, h, s])
+      r = s && e !== p.h7.VIDEO_INPUT ? [p.w5] : [],
+      a = (0, i.intersection)(_, n),
+      o = (0, i.difference)(n, _),
+      u = (0, i.difference)(o, r, [m]);
+    return (null == a ? true : a.length) === 0 || u.length <= 1 ? [(0, i.union)(r, [m], a, o), []].map(t) : [(0, i.union)(r, [m], a), u].map(t)
+  }, [l, e, _, m, s])
 }
 
 function A(e) {
@@ -161,6 +161,6 @@ function A(e) {
   } = (0, a.cj)([l.Z], () => ({
     resolvedId: r(l.Z),
     selectedId: i(l.Z)
-  })), u = null != (t = (0, s.Z)(o)) ? t : o, d = o !== u, f = null != (n = (0, s.Z)(c)) ? n : c, _ = c !== f;
-  return d && !_
+  })), u = null != (t = (0, s.Z)(o)) ? t : o, d = o !== u, f = null != (n = (0, s.Z)(c)) ? n : c, p = c !== f;
+  return d && !p
 }

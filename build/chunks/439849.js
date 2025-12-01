@@ -3,8 +3,8 @@
 "use strict";
 let r;
 require.d(exports, {
-  F: () => p,
-  Z: () => h
+  F: () => _,
+  Z: () => m
 }), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -19,11 +19,11 @@ function f(e) {
   return e = e.toLowerCase(), (0, l.isWindows)() && (e = (e = e.replace(/^[a-z]:/, "")).replace(/\\/g, "/")), e
 }
 
-function _(e) {
+function p(e) {
   null != e && "" !== e && ((e = f(e)).endsWith("/") || (e += "/"), u.push(e), (0, l.isLinux)() && u.push("/var" + e))
 }
 
-function p(e) {
+function _(e) {
   e = f(e);
   let t = false;
   if (u.forEach(n => {
@@ -35,7 +35,7 @@ function p(e) {
   }
   return e = e.includes(d) ? e.split("/").slice(false).join("/") : e.split("/").slice(false).join("/")
 }
-async function h() {
+async function m() {
   if (null != r) return r;
   try {
     await Chunk998502.ZP.ensureModule("discord_game_utils"), r = await Chunk998502.ZP.requireModule("discord_game_utils")
@@ -44,8 +44,8 @@ async function h() {
   }
   if ((0, Chunk358085.isWindows)()) {
     let e = Chunk579806.Z.process.env;
-    _(module.LOCALAPPDATA), _(module["PROGRAMFILES(X86)"]), _(module.PROGRAMFILES), _(module.PROGRAMW6432), _(module.PROGRAMDATA), _("/games/"), _("/steamlibrary/steamapps/common/")
-  } else(0, Chunk358085.isMac)() ? _("/Applications") : (0, Chunk358085.isLinux)() && (_("/app/bin"), _("/usr/bin"), _("/usr/local/bin"));
+    p(module.LOCALAPPDATA), p(module["PROGRAMFILES(X86)"]), p(module.PROGRAMFILES), p(module.PROGRAMW6432), p(module.PROGRAMDATA), p("/games/"), p("/steamlibrary/steamapps/common/")
+  } else(0, Chunk358085.isMac)() ? p("/Applications") : (0, Chunk358085.isLinux)() && (p("/app/bin"), p("/usr/bin"), p("/usr/local/bin"));
   let e = Chunk579806.Z.remoteApp.getPath;
-  return _(await module("home")), _(await module("appData")), _(await module("desktop")), _(await module("documents")), _(await module("downloads")), (u = a().uniq(u)).sort((e, t) => t.length - e.length), r
+  return p(await module("home")), p(await module("appData")), p(await module("desktop")), p(await module("documents")), p(await module("downloads")), (u = a().uniq(u)).sort((e, t) => t.length - e.length), r
 }

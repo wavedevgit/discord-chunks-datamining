@@ -21,6 +21,6 @@ function c() {
     location: "useDisplayNameStyles"
   }), d = (0, Chunk442837.e7)([Chunk594174.default], () => null != exports ? Chunk594174.default.getUser(exports) : Chunk594174.default.getCurrentUser()), f = (0, Chunk473749.useContext)(Chunk372900.Z);
   null == require && (n = f);
-  let _ = (0, Chunk442837.e7)([Chunk271383.ZP], () => null != require && null != d ? Chunk271383.ZP.getMember(require, d.id) : null);
-  return u ? true !== c ? null === c && null != require ? null == d ? true : d.displayNameStyles : c : null != (e = null == _ ? true : _.displayNameStyles) ? module : null == d ? true : d.displayNameStyles : null
+  let p = (0, Chunk442837.e7)([Chunk271383.ZP], () => null != require && null != d ? Chunk271383.ZP.getMember(require, d.id) : null);
+  return u ? true !== c ? null === c && null != require ? null == d ? true : d.displayNameStyles : c : null != (e = null == p ? true : p.displayNameStyles) ? module : null == d ? true : d.displayNameStyles : null
 }

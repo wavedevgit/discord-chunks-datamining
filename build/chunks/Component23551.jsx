@@ -2,7 +2,7 @@
 /** chunk id: 23551, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,12 +18,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk391475 = require("./391475.js");
-let m = e => {
+let h = e => {
   let {
     disabled: t = false,
     type: n,
     className: i,
-    innerClassName: m,
+    innerClassName: h,
     onConnect: g
   } = e, E = (0, c.ZP)();
 
@@ -32,7 +32,7 @@ let m = e => {
     (0, f.Z)({
       platformType: t.type,
       location: "Friends List"
-    }), _.default.track(p.rMx.ACCOUNT_LINK_STEP, {
+    }), p.default.track(_.rMx.ACCOUNT_LINK_STEP, {
       previous_step: "desktop connections",
       current_step: "desktop oauth",
       platform_type: t.type
@@ -42,10 +42,10 @@ let m = e => {
   return (0, r.jsx)(o.u, {
     text: y.name,
     children: (0, r.jsx)("div", {
-      className: a()(h.wrapper, i),
+      className: a()(m.wrapper, i),
       children: (0, r.jsx)(l.tEY, {
         children: (0, r.jsx)("button", {
-          className: a()(h.inner, m),
+          className: a()(m.inner, h),
           type: "button",
           disabled: t,
           style: {

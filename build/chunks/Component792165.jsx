@@ -32,14 +32,14 @@ function v(e) {
   let {
     onClose: t,
     markAsDismissed: n
-  } = e, v = (0, i.e7)([_.default], () => _.default.getCurrentUser()), I = O(null == v ? true : v.premiumType), T = p.ZP.canUseCustomCallSounds(v);
+  } = e, v = (0, i.e7)([p.default], () => p.default.getCurrentUser()), S = O(null == v ? true : v.premiumType), I = _.ZP.canUseCustomCallSounds(v);
 
-  function S() {
+  function T() {
     let e = (0, d.Ml)("CustomCallSoundUpsell") ? u.n.SOUNDBOARD_CATEGORY : u.n.VOICE_AND_VIDEO_PANEL;
     (0, f.openUserSettings)(e, {
-      section: h.oAB.VOICE,
+      section: m.oAB.VOICE,
       subsection: E.GA
-    }), null == t || t(), null == n || n(m.L.PRIMARY)
+    }), null == t || t(), null == n || n(h.L.PRIMARY)
   }
   return (0, r.jsxs)(c.Z, {
     isShown: true,
@@ -48,7 +48,7 @@ function v(e) {
     backgroundClassName: y.upsellInner,
     children: [null != n ? (0, r.jsx)(s.P3F, {
       className: y.close,
-      onClick: () => null == n ? true : n(m.L.DISMISS),
+      onClick: () => null == n ? true : n(h.L.DISMISS),
       "aria-label": b.intl.string(b.t.cpT0Cq),
       children: (0, r.jsx)(s.Dio, {
         size: "xs",
@@ -67,9 +67,9 @@ function v(e) {
       })]
     }), (0, r.jsx)(a.x, {
       variant: "text-sm/normal",
-      children: I
-    }), T ? (0, r.jsx)(s.Button, {
-      onClick: S,
+      children: S
+    }), I ? (0, r.jsx)(s.Button, {
+      onClick: T,
       text: b.intl.string(b.t.RzWDqY),
       fullWidth: true
     }) : (0, r.jsx)(l.Z, {
@@ -78,11 +78,11 @@ function v(e) {
       },
       subscriptionTier: g.Si.TIER_2,
       premiumModalAnalyticsLocation: {
-        section: h.jXE.SOUNDBOARD_SOUND_PICKER,
-        object: h.qAy.BUTTON_CTA
+        section: m.jXE.SOUNDBOARD_SOUND_PICKER,
+        object: m.qAy.BUTTON_CTA
       },
       color: o.zx.Colors.GREEN,
-      onSubscribeModalClose: () => null == n ? true : n(m.L.PRIMARY)
+      onSubscribeModalClose: () => null == n ? true : n(h.L.PRIMARY)
     })]
   })
 }

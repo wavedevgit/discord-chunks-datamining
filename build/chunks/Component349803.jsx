@@ -2,7 +2,7 @@
 /** chunk id: 349803, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,43 +16,43 @@ var Chunk120356 = require("./120356.js"),
   Chunk784238 = require("./784238.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk679865 = require("./679865.js");
-let p = function(e) {
+let _ = function(e) {
   let {
     isVisible: t,
     subscriptionTier: n,
     isApplicationHome: i,
-    isEligibleForBogoPromotion: p
-  } = e, h = (0, l.q_F)({
+    isEligibleForBogoPromotion: _
+  } = e, m = (0, l.q_F)({
     transform: t ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!t,
     config: {
       tension: 120,
       friction: 12
     }
-  }), m = {
+  }), h = {
     section: f.jXE.MARKETING_FLOATING_CTA
   }, g = (0, c.ZP)(), E = (0, l.wjy)(g);
   return (0, r.jsx)(o.animated.div, {
-    className: a()(_.wrapper, {
-      [_.fullscreenWrapper]: i,
-      [_.invisible]: !t
+    className: a()(p.wrapper, {
+      [p.fullscreenWrapper]: i,
+      [p.invisible]: !t
     }),
-    style: h,
+    style: m,
     children: (0, r.jsxs)("div", {
-      className: i ? _.innerWrapperApplicationHome : _.innerWrapper,
+      className: i ? p.innerWrapperApplicationHome : p.innerWrapper,
       children: [(0, r.jsx)(d.Z, {
         color: E ? s.Tt.BRAND_INVERTED : true,
-        className: a()(_.button, {
-          [_.subButton]: E
+        className: a()(p.button, {
+          [p.subButton]: E
         }),
         subscriptionTier: n,
-        premiumModalAnalyticsLocation: m,
+        premiumModalAnalyticsLocation: h,
         isPersistentCTA: true,
-        hasActivePromotion: p,
-        shinyButtonClassName: E ? true : _.tier2Gradient
+        hasActivePromotion: _,
+        shinyButtonClassName: E ? true : p.tier2Gradient
       }), (0, r.jsx)(u.Z, {
-        className: _.button,
-        premiumModalAnalyticsLocation: m
+        className: p.button,
+        premiumModalAnalyticsLocation: h
       })]
     })
   })

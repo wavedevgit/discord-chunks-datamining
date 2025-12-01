@@ -2,7 +2,7 @@
 /** chunk id: 848966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk37258 = require("./37258.jsx"),
   Chunk652853 = require("./652853.jsx"),
@@ -16,18 +16,18 @@ var Chunk37258 = require("./37258.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function _(e) {
   let {
     onAction: t
   } = e, {
     themeType: n
-  } = (0, i.z)(), p = (0, r.Z)({
+  } = (0, i.z)(), _ = (0, r.Z)({
     userId: e.user.id,
     section: d.oh.ACTIVITY,
-    label: _.intl.string(_.t.pD1L1u),
+    label: p.intl.string(p.t.pD1L1u),
     onAction: () => null == t ? true : t({
       action: "PRESS_VIEW_ALL_ACTIVITY_MENU_ITEM"
     })
   });
-  return [n === f.l.POPOUT ? p : null, (0, c.Z)(e), (0, s.ZP)(e), (0, s.uj)(e), (0, u.Z)(e), (0, l.Z)(e), (0, a.Z)(e), (0, o.B)(e)].filter(e => null != e)
+  return [n === f.l.POPOUT ? _ : null, (0, c.Z)(e), (0, s.ZP)(e), (0, s.uj)(e), (0, u.Z)(e), (0, l.Z)(e), (0, a.Z)(e), (0, o.B)(e)].filter(e => null != e)
 }

@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk892001 = require("./892001.js"),
   Chunk326218 = require("./326218.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -58,8 +58,8 @@ let g = e => {
     userId: t,
     children: n,
     isLast: a,
-    className: _
-  } = e, h = 1, [g, E] = i.useState(false), {
+    className: p
+  } = e, m = 1, [g, E] = i.useState(false), {
     analyticsLocations: b
   } = (0, u.ZP)(), y = i.useCallback(() => {
     (0, d.openUserProfileModal)({
@@ -78,11 +78,11 @@ let g = e => {
         left: false,
         right: false
       },
-      children: (0, r.jsx)(s.Z.div, m(p({
+      children: (0, r.jsx)(s.Z.div, h(_({
         style: {
-          opacity: h
+          opacity: m
         },
-        className: o()(f.rowItem, _, {
+        className: o()(f.rowItem, p, {
           [f.last]: a,
           [f.active]: g
         }),

@@ -43,8 +43,8 @@ function f(t) {
     onClose: g
   });
   return (0, c.Z)({
-    type: i.ImpressionTypes.MODAL,
-    name: i.ImpressionNames.MASKED_LINK_MODAL
+    type: s.ImpressionTypes.MODAL,
+    name: s.ImpressionNames.MASKED_LINK_MODAL
   }), (0, a.jsxs)(l.Modal, {
     size: "md",
     transitionState: p,
@@ -70,19 +70,19 @@ function f(t) {
       },
       variant: "primary"
     }],
-    children: [(0, a.jsxs)(s.Ttm, {
+    children: [(0, a.jsxs)(i.Ttm, {
       className: _.linkCalloutContainer,
-      children: [(0, a.jsxs)(s.Text, {
+      children: [(0, a.jsxs)(i.Text, {
         tag: "span",
         variant: f ? "text-md/semibold" : "text-md/normal",
         color: f ? "text-default" : "text-muted",
         children: [k, N]
-      }), (0, a.jsx)(s.Text, {
+      }), (0, a.jsx)(i.Text, {
         tag: "span",
         variant: f ? "text-md/normal" : "text-md/semibold",
         color: f ? "text-muted" : "text-default",
         children: v
-      }), (0, a.jsx)(s.Text, {
+      }), (0, a.jsx)(i.Text, {
         tag: "span",
         variant: "text-md/normal",
         color: "text-muted",
@@ -90,7 +90,7 @@ function f(t) {
       })]
     }), (0, a.jsx)("div", {
       className: _.checkboxMana,
-      children: (0, a.jsx)(s.Checkbox, {
+      children: (0, a.jsx)(i.Checkbox, {
         checked: b,
         onChange: t => T(t),
         label: f ? x.intl.format(x.t["haA+Xw"], {

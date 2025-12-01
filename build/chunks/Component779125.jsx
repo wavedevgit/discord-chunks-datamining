@@ -26,11 +26,11 @@ var Chunk442837 = require("./442837.js"),
 function y(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (null == e || null == t) return;
-  let r = p.Z.getGuild(e);
+  let r = _.Z.getGuild(e);
   if ((null == r ? true : r.joinedAt) == null) return void E.Ub(e, {}, {
     channelId: t
   });
-  let i = _.Z.getChannel(t);
+  let i = p.Z.getChannel(t);
   if (null != i && (0, f.bw)(i.type)) {
     if (n) {
       s.Z.updateChatOpen(i.id, true), (0, d.uL)(b.Z5c.CHANNEL(e, t));
@@ -48,7 +48,7 @@ function O(e) {
     beforeTransition: s,
     className: l,
     openChatWithoutConnecting: d
-  } = e, f = (0, i.e7)([m.default, h.Z], () => null == t ? "" : (0, c.F6)(t, m.default, h.Z), [t]);
+  } = e, f = (0, i.e7)([h.default, m.Z], () => null == t ? "" : (0, c.F6)(t, h.default, m.Z), [t]);
   return (0, r.jsx)(a.u, {
     "data-pending-richtooltip-migration": true,
     __unsupportedReactNodeAsText: f,

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Ox: () => C,
-  QP: () => I,
-  ob: () => R,
+  QP: () => S,
+  ob: () => P,
   q4: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -62,7 +62,7 @@ function O(e, t) {
   }), e
 }
 let v = (0, Chunk624138.Mg)(Chunk477690.Z.FULL_SCREEN_LAYER_ANIMATION_DURATION),
-  I = (0, Chunk663042.U)(e => ({
+  S = (0, Chunk663042.U)(e => ({
     fullScreenLayers: [],
     addLayer: t => (0, u.j)(() => {
       e(e => {
@@ -76,13 +76,13 @@ let v = (0, Chunk624138.Mg)(Chunk477690.Z.FULL_SCREEN_LAYER_ANIMATION_DURATION),
     })
   }));
 
-function T(e) {
+function I(e) {
   let {
     item: t,
     containerRef: n
   } = e;
-  return (0, f.Tbt)(n), i.useEffect(() => (_.Z.disable(), t.key !== m.CV && _.Z.enableTemp(P(t.key)), () => {
-    _.Z.disableTemp()
+  return (0, f.Tbt)(n), i.useEffect(() => (p.Z.disable(), t.key !== h.CV && p.Z.enableTemp(R(t.key)), () => {
+    p.Z.disableTemp()
   }), [t.key]), (0, r.jsx)(t.LayerComponent, {
     children: (0, r.jsxs)("div", {
       className: g.root,
@@ -91,12 +91,12 @@ function T(e) {
         className: g.drag
       }), t.render({
         transitionState: null != t ? t.transitionState : 3,
-        closeLayer: () => R(t.key)
+        closeLayer: () => P(t.key)
       })]
     })
   })
 }
-let S = {
+let T = {
     enter: Chunk102521.enter,
     enterActive: Chunk102521.enterActive,
     enterDone: Chunk102521.enterDone,
@@ -116,7 +116,7 @@ let S = {
 function C() {
   let {
     reducedMotion: e
-  } = Chunk473749.useContext(Chunk481060.Sfi), t = module.enabled ? A : S, n = I(e => e.fullScreenLayers), a = require.map(e => ({
+  } = Chunk473749.useContext(Chunk481060.Sfi), t = module.enabled ? A : T, n = S(e => e.fullScreenLayers), a = require.map(e => ({
     item: e,
     nodeRef: i.createRef()
   }));
@@ -132,7 +132,7 @@ function C() {
         timeout: v,
         onEntered: () => {
           (0, u.j)(() => {
-            I.setState({
+            S.setState({
               fullScreenLayers: n.map(e => e.key === i.key ? O(b({}, e), {
                 transitionState: 2
               }) : e)
@@ -140,7 +140,7 @@ function C() {
           })
         },
         unmountOnExit: true,
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(I, {
           containerRef: a,
           item: i
         })
@@ -157,32 +157,32 @@ function N(e) {
     } = t,
     i = null != n ? n : o()();
   return (0, u.j)(() => {
-    I.setState(t => ({
+    S.setState(t => ({
       fullScreenLayers: [...t.fullScreenLayers, {
         key: i,
         transitionState: 1,
-        LayerComponent: null != r ? r : h.ZP,
+        LayerComponent: null != r ? r : m.ZP,
         render: e
       }]
     }))
   }), i
 }
 
-function R(e) {
+function P(e) {
   (0, u.j)(() => {
-    I.setState(t => ({
+    S.setState(t => ({
       fullScreenLayers: t.fullScreenLayers.filter(t => t.key !== e)
     }))
   })
 }
 
-function P(e) {
+function R(e) {
   return {
     POP_LAYER: {
       binds: ["esc"],
       comboKeysBindGlobal: true,
       action() {
-        R(e)
+        P(e)
       }
     }
   }

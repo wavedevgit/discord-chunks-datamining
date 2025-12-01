@@ -16,7 +16,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk358085 = require("./358085.js"),
   Chunk37113 = require("./37113.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,30 +49,30 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e, t, _) {
+function g(e, t, p) {
   if (d.isPlatformEmbedded)(0, i.ZDy)(async () => {
     let {
       default: t
     } = await Promise.all([n.e("38697"), n.e("4093"), n.e("47863"), n.e("59416")]).then(n.bind(n, 60594));
     return n => {
       var i;
-      return (0, r.jsx)(t, m(p({}, n), {
+      return (0, r.jsx)(t, h(_({}, n), {
         guildId: e,
-        analyticsLocation: null != (i = _[_.length - 1]) ? i : "unknown location",
-        analyticsLocations: _
+        analyticsLocation: null != (i = p[p.length - 1]) ? i : "unknown location",
+        analyticsLocations: p
       }))
     }
   });
   else {
-    var h;
+    var m;
     let n = s.Z.getChannel(t),
-      r = (0, o.Z)(f.ApplicationStreamPresets.PRESET_CUSTOM, f.ApplicationStreamResolutions.RESOLUTION_1080, f.ApplicationStreamFPS.FPS_30, u.default.getCurrentUser(), null == (h = l.Z.getGuild(e)) ? true : h.premiumTier, n) ? {
+      r = (0, o.Z)(f.ApplicationStreamPresets.PRESET_CUSTOM, f.ApplicationStreamResolutions.RESOLUTION_1080, f.ApplicationStreamFPS.FPS_30, u.default.getCurrentUser(), null == (m = l.Z.getGuild(e)) ? true : m.premiumTier, n) ? {
         width: 1920,
         height: 1080
       } : {
@@ -84,7 +84,7 @@ function g(e, t, _) {
         pid: null,
         sourceId: n,
         sourceName: null,
-        analyticsLocations: _
+        analyticsLocations: p
       })
     })
   }

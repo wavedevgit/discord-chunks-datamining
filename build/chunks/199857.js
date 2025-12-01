@@ -2,7 +2,7 @@
 /** chunk id: 199857, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./539854.js"), require("./415506.js"), require("./388685.js"), require("./49124.js"), require("./290780.js"), require("./35282.js");
 var r, Chunk74514 = require("./74514.js"),
   a = require.n(Chunk74514),
@@ -32,10 +32,10 @@ let y = 10,
   O = 10,
   v = null == (r = c().name) ? true : r.toLowerCase().includes("firefox");
 
-function I(e, t) {
+function S(e, t) {
   e.sender.replaceTrack(t), e.direction = null != t ? "sendrecv" : "recvonly"
 }
-class T extends Chunk912095.Z {
+class I extends Chunk912095.Z {
   destroy() {
     super.destroy(), "closed" !== this.signalingState && this.pc.close()
   }
@@ -46,7 +46,7 @@ class T extends Chunk912095.Z {
   }
   setStream(e) {
     let t = "closed" === this.iceConnectionState;
-    null != e && !t && (I(this.audioTransceiver, e.getAudioTracks()[0]), this.videoSupported && I(this.videoTransceiver, e.getVideoTracks()[0])), this.logger.info("Renegotiating: Streams changed"), this.handleNegotiationNeeded()
+    null != e && !t && (S(this.audioTransceiver, e.getAudioTracks()[0]), this.videoSupported && S(this.videoTransceiver, e.getVideoTracks()[0])), this.logger.info("Renegotiating: Streams changed"), this.handleNegotiationNeeded()
   }
   createUser(e, t, n) {
     var r, i, a;
@@ -105,7 +105,7 @@ class T extends Chunk912095.Z {
     this.enableAudioNack = e > 0
   }
   setSDP(e) {
-    if (!(0, m.$6)(e)) throw Error("Incorrect SDP received from rtc-worker: ".concat(e));
+    if (!(0, h.$6)(e)) throw Error("Incorrect SDP received from rtc-worker: ".concat(e));
     if ("have-local-offer" !== this.signalingState) throw Error("Invalid signaling state ".concat(this.signalingState));
     let {
       outboundStreams: t
@@ -285,7 +285,7 @@ class T extends Chunk912095.Z {
           ssrc: s.ssrc,
           cname: s.cname,
           type: a,
-          direction: (0, m.Mg)(o),
+          direction: (0, h.Mg)(o),
           mid: i
         }
       }),
@@ -304,14 +304,14 @@ class T extends Chunk912095.Z {
       f = this.sdp;
     if (null == o || null == s || null == l || null == c || null == d || null == f) throw Error("Invalid payload: audioCodec: ".concat(o, ", audioPayloadType: ").concat(null == s ? "null" : s, ", videoCodec: ").concat(l, ", videoCodecPayloadType: ").concat(null == c ? "null" : c, ", rtxPayloadType: ").concat(null == d ? "null" : d, ", sdp: ").concat(null == f ? "null" : f));
     let {
-      ssrcs: _,
-      remainingAudioStreams: p,
-      remainingVideoStreams: h
+      ssrcs: p,
+      remainingAudioStreams: _,
+      remainingVideoStreams: m
     } = this.buildSSRCsFromOutboundStreams(e, t, n, r);
     return {
-      remainingAudioStreams: p,
-      remainingVideoStreams: h,
-      answer: (0, m.Rx)({
+      remainingAudioStreams: _,
+      remainingVideoStreams: m,
+      answer: (0, h.Rx)({
         type: "answer",
         baseSDP: f,
         audioCodec: o,
@@ -322,7 +322,7 @@ class T extends Chunk912095.Z {
         videoBitRate: 2500,
         sendingVideo: u,
         rtxPayloadType: d,
-        ssrcs: _,
+        ssrcs: p,
         extensions: this.extensions,
         enableAudioNack: this.enableAudioNack
       })
@@ -368,9 +368,9 @@ class T extends Chunk912095.Z {
       outboundStreams: c,
       codecs: u,
       audioSSRC: f,
-      videoSSRC: _,
-      rtxSSRC: p,
-      extensions: h
+      videoSSRC: p,
+      rtxSSRC: _,
+      extensions: m
     } = this.parseLocalDescription();
     if (this.codecs = Chunk579092, this.extensions = Chunk586021, Chunk912095 !== this.audioSSRC || Chunk405475 !== this.videoSSRC) {
       var E;
@@ -439,7 +439,7 @@ class T extends Chunk912095.Z {
       }
     }), this.logger = new u.Yd("UnifiedConnection(".concat(e.context, ")"));
     let n = e.dave;
-    null == n || (0, h.IT)() || (this.logger.warn("DAVE is initialized but encoded transforms are not supported"), n = null), null != n && (this.daveSessionManager = new _.j(n, e.transientKeys, this.userId), this.daveSessionManager.on(d.Sh.MLSFailure, (e, t) => {
+    null == n || (0, m.IT)() || (this.logger.warn("DAVE is initialized but encoded transforms are not supported"), n = null), null != n && (this.daveSessionManager = new p.j(n, e.transientKeys, this.userId), this.daveSessionManager.on(d.Sh.MLSFailure, (e, t) => {
       this.emit(d.Sh.MLSFailure, e, t)
     }), this.daveSessionManager.on(d.Sh.SecureFramesUpdate, e => {
       this.emit(d.Sh.SecureFramesUpdate, e)

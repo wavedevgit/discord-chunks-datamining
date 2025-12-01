@@ -2,8 +2,8 @@
 /** chunk id: 674180, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  eC: () => p,
-  gX: () => _,
+  eC: () => _,
+  gX: () => p,
   uP: () => f
 });
 var Chunk473749 = require("./473749.js"),
@@ -42,7 +42,7 @@ let d = e => {
       restrictionsLoading: a
     }
   },
-  _ = e => {
+  p = e => {
     var t;
     let n = (0, i.e7)([l.Z], () => l.Z.getGuild(e), [e]),
       {
@@ -57,7 +57,7 @@ let d = e => {
       restrictionsLoading: a
     }
   },
-  p = e => {
+  _ = e => {
     let {
       restrictions: t,
       restrictionsLoading: n

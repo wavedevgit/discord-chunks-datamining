@@ -27,28 +27,28 @@ function O(e) {
   let {
     code: t
   } = e, [n, O, v] = t.split("-"), {
-    analyticsLocations: I
+    analyticsLocations: S
   } = (0, s.ZP)(), {
-    guildScheduledEvent: T,
-    guild: S,
+    guildScheduledEvent: I,
+    guild: T,
     channel: A,
     isMember: C
-  } = (0, a.cj)([g.ZP, p.Z, f.Z, _.ZP, h.default], () => {
+  } = (0, a.cj)([g.ZP, _.Z, f.Z, p.ZP, m.default], () => {
     var e, t;
     let r = null != (t = g.ZP.getGuildScheduledEvent(O)) ? t : true,
-      i = p.Z.getGuild(n),
+      i = _.Z.getGuild(n),
       a = f.Z.getChannel(null == r ? true : r.channel_id);
     return {
       guildScheduledEvent: r,
       guild: i,
       channel: a,
-      isMember: _.ZP.isMember(n, null == (e = h.default.getCurrentUser()) ? true : e.id)
+      isMember: p.ZP.isMember(n, null == (e = m.default.getCurrentUser()) ? true : e.id)
     }
   }, [n, O]), N = () => {
     if ((0, u.o)({
-        guild: S,
+        guild: T,
         isMember: C,
-        analyticsLocations: I
+        analyticsLocations: S
       }) === u.e.PROCEED) {
       if ((0, c.n)(n)) return void(0, l.hk)(n);
       o.Z.joinGuild(n, {
@@ -57,19 +57,19 @@ function O(e) {
     }
   };
 
-  function R() {
+  function P() {
     if ((0, c.n)(n)) return void(0, l.hk)(n);
     (null == A ? true : A.isGuildStageVoice()) ? (0, d.Cq)(A) : (null == A ? true : A.isGuildVoice()) && E.Z.joinVoiceEvent(A.guild_id, A.id)
   }
   return i.useEffect(() => {
-    (null == T ? true : T.id) == null && E.Z.fetchGuildEvent(n, O), m.Z.getGuildEventUserCounts(n, O, null != v ? [v] : []), m.Z.getGuildEventsForCurrentUser(n)
-  }, [O, n, null == T ? true : T.id, v]), (0, r.jsx)(b.ZP, {
-    guild: S,
+    (null == I ? true : I.id) == null && E.Z.fetchGuildEvent(n, O), h.Z.getGuildEventUserCounts(n, O, null != v ? [v] : []), h.Z.getGuildEventsForCurrentUser(n)
+  }, [O, n, null == I ? true : I.id, v]), (0, r.jsx)(b.ZP, {
+    guild: T,
     channel: A,
-    guildScheduledEvent: T,
+    guildScheduledEvent: I,
     isMember: C,
     onAcceptInstantInvite: N,
-    onTransitionToInviteChannel: R,
+    onTransitionToInviteChannel: P,
     recurrenceId: v
   })
 }

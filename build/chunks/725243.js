@@ -22,7 +22,7 @@ function f(e) {
     affinityThreshold: i
   } = d.Z.useConfig({
     location: t
-  }), f = (0, o.Wu)([c.Z], () => c.Z.getFriendIDs()), _ = (0, o.Wu)([s.Z], () => s.Z.getUserAffinities().filter(e => {
+  }), f = (0, o.Wu)([c.Z], () => c.Z.getFriendIDs()), p = (0, o.Wu)([s.Z], () => s.Z.getUserAffinities().filter(e => {
     let {
       isFriend: t,
       communicationProbability: n,
@@ -35,9 +35,9 @@ function f(e) {
       otherUserId: t
     } = e;
     return t
-  })), p = r.useMemo(() => a().uniq([...f, ...n ? _ : []]), [f, n, _]);
-  return (0, o.Wu)([u.default], () => p.reduce((e, t) => {
+  })), _ = r.useMemo(() => a().uniq([...f, ...n ? p : []]), [f, n, p]);
+  return (0, o.Wu)([u.default], () => _.reduce((e, t) => {
     let n = u.default.getUser(t);
     return null == n || n.bot || e.push(n), e
-  }, []), [p])
+  }, []), [_])
 }

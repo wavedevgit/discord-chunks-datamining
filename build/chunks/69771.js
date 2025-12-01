@@ -33,7 +33,7 @@ function f(e) {
     onHoverChange: n,
     onHoverEnd: l,
     isDisabled: c
-  } = e, [u, f] = (0, o.useState)(false), _ = (0, o.useRef)({
+  } = e, [u, f] = (0, o.useState)(false), p = (0, o.useRef)({
     isHovered: false,
     ignoreEmulatedMouseEvents: false,
     pointerType: "",
@@ -41,18 +41,18 @@ function f(e) {
   }).current;
   (0, o.useEffect)(d, []);
   let {
-    addGlobalListener: p,
-    removeAllGlobalListeners: h
+    addGlobalListener: _,
+    removeAllGlobalListeners: m
   } = (0, r.x)(), {
-    hoverProps: m,
+    hoverProps: h,
     triggerHoverEnd: g
   } = (0, o.useMemo)(() => {
     let e = (e, o) => {
-        if (_.pointerType = o, c || "touch" === o || _.isHovered || !e.currentTarget.contains(e.target)) return;
-        _.isHovered = true;
+        if (p.pointerType = o, c || "touch" === o || p.isHovered || !e.currentTarget.contains(e.target)) return;
+        p.isHovered = true;
         let s = e.currentTarget;
-        _.target = s, p((0, i.r3)(e.target), "pointerover", e => {
-          _.isHovered && _.target && !(0, a.bE)(_.target, e.target) && r(e, e.pointerType)
+        p.target = s, _((0, i.r3)(e.target), "pointerover", e => {
+          p.isHovered && p.target && !(0, a.bE)(p.target, e.target) && r(e, e.pointerType)
         }, {
           capture: true
         }), t && t({
@@ -62,8 +62,8 @@ function f(e) {
         }), n && n(true), f(true)
       },
       r = (e, t) => {
-        let r = _.target;
-        _.pointerType = "", _.target = null, "touch" !== t && _.isHovered && r && (_.isHovered = false, h(), l && l({
+        let r = p.target;
+        p.pointerType = "", p.target = null, "touch" !== t && p.isHovered && r && (p.isHovered = false, m(), l && l({
           type: "hoverend",
           target: r,
           pointerType: t
@@ -78,13 +78,13 @@ function f(e) {
       hoverProps: o,
       triggerHoverEnd: r
     }
-  }, [t, n, l, c, _, p, h]);
+  }, [t, n, l, c, p, _, m]);
   return (0, o.useEffect)(() => {
     c && g({
-      currentTarget: _.target
-    }, _.pointerType)
+      currentTarget: p.target
+    }, p.pointerType)
   }, [c]), {
-    hoverProps: m,
+    hoverProps: h,
     isHovered: u
   }
 }

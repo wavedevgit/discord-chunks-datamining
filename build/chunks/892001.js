@@ -2,8 +2,8 @@
 /** chunk id: 892001, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  closeUserProfileModal: () => m,
-  openUserProfileModal: () => h
+  closeUserProfileModal: () => h,
+  openUserProfileModal: () => m
 });
 var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -15,8 +15,8 @@ var Chunk481060 = require("./481060.js"),
   Chunk9161 = require("./9161.js"),
   Chunk484459 = require("./484459.js");
 let f = (0, Chunk481060.pxk)(Chunk481060.EFr.SIZE_120),
-  _ = new Chunk710845.Z("UserProfileModalActionCreators"),
-  p = async e => {
+  p = new Chunk710845.Z("UserProfileModalActionCreators"),
+  _ = async e => {
     let t = l.default.getId() === e,
       {
         recentActivityTabEnabled: n
@@ -26,10 +26,10 @@ let f = (0, Chunk481060.pxk)(Chunk481060.EFr.SIZE_120),
     if (n || t) try {
       await (0, o.Z)(e)
     } catch (t) {
-      _.log("Failed to fetch content inventory outbox for ".concat(e, ":"), t)
+      p.log("Failed to fetch content inventory outbox for ".concat(e, ":"), t)
     }
   };
-async function h(e) {
+async function m(e) {
   let {
     userId: t,
     guildId: n,
@@ -38,25 +38,25 @@ async function h(e) {
     roleId: s,
     sessionId: l,
     joinRequestId: u,
-    section: _,
-    subsection: h,
-    showGuildProfile: m,
+    section: p,
+    subsection: m,
+    showGuildProfile: h,
     hideRestrictedProfile: g,
     sourceAnalyticsLocations: E,
     appContext: b,
     customStatusPrompt: y = null,
     disableActionsForPreview: O = false
   } = e, v = c.default.getUser(t);
-  p(t), null == v ? await (0, a.In)(t, {
+  _(t), null == v ? await (0, a.In)(t, {
     type: "modal",
-    guildId: m && null != n ? n : true,
+    guildId: h && null != n ? n : true,
     withMutualFriendsCount: true,
     withMutualFriends: false,
     withMutualGuilds: true,
     joinRequestId: u
   }) : (0, d.Z)(v.id, v.getAvatarURL(true, f), {
     type: "modal",
-    guildId: m && null != n ? n : true,
+    guildId: h && null != n ? n : true,
     withMutualFriendsCount: !v.bot,
     withMutualFriends: false,
     withMutualGuilds: true,
@@ -71,9 +71,9 @@ async function h(e) {
     sessionId: null != l ? l : true,
     openedAt: Date.now(),
     customStatusPrompt: y,
-    section: _,
-    subsection: h,
-    showGuildProfile: m,
+    section: p,
+    subsection: m,
+    showGuildProfile: h,
     hideRestrictedProfile: g,
     sourceAnalyticsLocations: E,
     appContext: b,
@@ -81,7 +81,7 @@ async function h(e) {
   })
 }
 
-function m() {
+function h() {
   Chunk570140.Z.dispatch({
     type: "USER_PROFILE_MODAL_CLOSE"
   })

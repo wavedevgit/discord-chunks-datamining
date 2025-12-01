@@ -18,16 +18,16 @@ function o(e) {
     inputType: l,
     textInputValue: c,
     onTextInputChange: u
-  } = e, d = "true" === n.TextEntry, f = "choice-label-".concat(t), _ = () => {
+  } = e, d = "true" === n.TextEntry, f = "choice-label-".concat(t), p = () => {
     s(t)
-  }, p = e => {
+  }, _ = e => {
     o || s(t), null == u || u(t, e)
   };
   return (0, r.jsxs)("div", {
     className: a.optionContainer,
     children: [(0, r.jsxs)(i.P3F, {
       className: a.clickableRow,
-      onClick: _,
+      onClick: p,
       role: l,
       "aria-checked": o,
       "aria-labelledby": f,
@@ -54,7 +54,7 @@ function o(e) {
       className: a.textInputWrapper,
       children: (0, r.jsx)(i.oil, {
         value: null != c ? c : "",
-        onChange: p,
+        onChange: _,
         disabled: !o
       })
     })]

@@ -2,15 +2,15 @@
 /** chunk id: 873115, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dz: () => m,
+  Dz: () => h,
   Nj: () => y,
   RS: () => O,
   by: () => E,
-  eI: () => p,
+  eI: () => _,
   f6: () => g,
   i0: () => v,
-  ib: () => h,
-  og: () => I
+  ib: () => m,
+  og: () => S
 }), require("./415506.js"), require("./388685.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -23,12 +23,12 @@ var Chunk544891 = require("./544891.js"),
 let d = "https://www.paypal.com",
   f = "https://sandbox.paypal.com";
 
-function _(e) {
+function p(e) {
   let t = u.Ai1.BRAINTREE.KEY.startsWith("production_") ? d : f;
   return "".concat(t, "/agreements/approve?nolegacy=1&ba_token=").concat(e)
 }
 
-function p() {
+function _() {
   (0, Chunk751767.S)().then(e => {
     e.client.create({
       authorization: u.Ai1.BRAINTREE.KEY
@@ -36,14 +36,14 @@ function p() {
       i.Z.dispatch({
         type: "BRAINTREE_CREATE_CLIENT_SUCCESS",
         client: e
-      }), m(), h()
+      }), h(), m()
     }).catch(() => i.Z.dispatch({
       type: "BRAINTREE_CREATE_CLIENT_FAIL"
     }))
   })
 }
 
-function h() {
+function m() {
   let e = Chunk618541.Z.getClient();
   if (null == module) throw Error("Braintree client must be initialized before creating Venmo client.");
   (0, Chunk751767.S)().then(t => {
@@ -64,7 +64,7 @@ function h() {
   })
 }
 
-function m() {
+function h() {
   let e = Chunk618541.Z.getClient();
   if (null == module) throw Error("braintree client must be initialized before calling this");
   (0, Chunk751767.S)().then(t => {
@@ -88,7 +88,7 @@ function m() {
               token: t
             }
           } = e;
-          this._frameService.redirect(_(t))
+          this._frameService.redirect(p(t))
         }).catch(e => (this._frameService.close(), this._authorizationInProgress = false, Promise.reject(Error(e.body && e.body.message))))
       }, i.Z.dispatch({
         type: "BRAINTREE_CREATE_PAYPAL_CLIENT_SUCCESS",
@@ -205,6 +205,6 @@ function v() {
   }), window.open(module))
 }
 
-function I() {
+function S() {
   E()
 }

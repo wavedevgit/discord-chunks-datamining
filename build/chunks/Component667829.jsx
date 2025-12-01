@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk564355 = require("./564355.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,20 +43,20 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,16 +67,16 @@ function x(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 new Chunk710845.Z("ChannelEditor.tsx");
-let k = function() {
+let M = function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require]
   },
-  j = 1e3;
+  k = 1e3;
 class U extends Chunk473749.Component {
   _getEditorWindow() {
     var e, t, n, r, i;
@@ -88,7 +88,7 @@ class U extends Chunk473749.Component {
     return this._cachedEditorWindow
   }
   componentDidMount() {
-    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), j)
+    this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), k)
   }
   componentDidUpdate(e) {
     if (this.fixFocus(e), this.props.useSlate !== e.useSlate) {
@@ -96,7 +96,7 @@ class U extends Chunk473749.Component {
       let e;
       e = this.props.useSlate ? this.props.textValue : (0, N.sk)(this.props.richValue, {
         mode: "plain"
-      }), null == (t = (n = this.props).onChange) || t.call(n, null, e, (0, I.JM)(e))
+      }), null == (t = (n = this.props).onChange) || t.call(n, null, e, (0, S.JM)(e))
     } else this.props.textValue !== e.textValue && this.saveCurrentTextThrottled()
   }
   componentWillUnmount() {
@@ -215,26 +215,26 @@ class U extends Chunk473749.Component {
       richValue: c,
       disabled: d,
       onChange: f,
-      onKeyDown: _,
-      onResize: p,
-      onSubmit: h,
-      channel: m,
+      onKeyDown: p,
+      onResize: _,
+      onSubmit: m,
+      channel: h,
       type: g,
       useSlate: E,
       spellcheckEnabled: y,
       useNewSlashCommands: O,
-      canOnlyUseTextCommands: T,
-      className: S,
+      canOnlyUseTextCommands: I,
+      className: T,
       id: N,
-      required: P,
-      maxCharacterCount: w,
-      allowNewLines: x,
-      isEditorIdle: k,
-      currentAutocompleteType: j,
+      required: R,
+      maxCharacterCount: D,
+      allowNewLines: L,
+      isEditorIdle: M,
+      currentAutocompleteType: k,
       "aria-describedby": U,
       "aria-labelledby": G,
-      accessibilityLabel: B,
-      showValueWhenDisabled: Z
+      accessibilityLabel: Z,
+      showValueWhenDisabled: B
     } = this.props, {
       submitting: F,
       popup: V
@@ -247,7 +247,7 @@ class U extends Chunk473749.Component {
       id: Chunk925994,
       placeholder: this.getPlaceholder(),
       required: Chunk388032,
-      accessibilityLabel: B,
+      accessibilityLabel: Z,
       disabled: Chunk430742 || false,
       submitting: F,
       isEdit: Chunk710845 === Chunk541716.Ie.EDIT,
@@ -259,7 +259,7 @@ class U extends Chunk473749.Component {
       moveSelection: this.handleMoveSelection,
       maybeShowAutocomplete: this.maybeShowAutocomplete,
       hideAutocomplete: this.hideAutocomplete,
-      allowNewLines: x,
+      allowNewLines: L,
       onChange: Chunk166459,
       onResize: Chunk911969,
       onKeyDown: Chunk531643,
@@ -272,29 +272,29 @@ class U extends Chunk473749.Component {
       }),
       spellcheckEnabled: Chunk403182,
       useNewSlashCommands: Chunk137058,
-      isEditorIdle: k,
-      currentAutocompleteType: j,
+      isEditorIdle: M,
+      currentAutocompleteType: k,
       disableAutoFocus: Chunk873546.tq || null != (n = Chunk710845.disableAutoFocus) && require,
       disableEnterToSubmit: null != (i = null == (e = Chunk710845.submit) ? true : module.disableEnterToSubmit) && Chunk473749,
       "aria-controls": null != (a = V.id) ? Chunk120356 : true,
       "aria-haspopup": "listbox",
       "aria-expanded": null !== V.id || true,
       "aria-activedescendant": null != (s = V.activeDescendant) ? Chunk392711 : true,
-      "aria-invalid": l.length > w,
+      "aria-invalid": l.length > D,
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, W = Chunk117530 ? (0, Chunk54381.jsx)(Chunk4484.Z, M(L({
+    }, Y = Chunk117530 ? (0, Chunk54381.jsx)(Chunk4484.Z, j(x({
       ref: this.ref
     }, H), {
       type: Chunk710845,
-      value: Chunk430742 && !Z ? (0, Chunk752305.JM)("") : Chunk729594,
+      value: Chunk430742 && !B ? (0, Chunk752305.JM)("") : Chunk729594,
       canUseCommands: null == (t = Chunk710845.commands) ? true : exports.enabled,
       canOnlyUseTextCommands: Chunk30465
-    })) : (0, Chunk54381.jsx)(Chunk140963.Z, M(L({
+    })) : (0, Chunk54381.jsx)(Chunk140963.Z, j(x({
       ref: this.ref
     }, H), {
-      value: Chunk430742 && !Z ? "" : l
+      value: Chunk430742 && !B ? "" : l
     }));
     return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)(Chunk459273.d9, {
@@ -303,17 +303,17 @@ class U extends Chunk473749.Component {
       }), (0, Chunk54381.jsx)(Chunk459273.d9, {
         event: Chunk981631.CkL.CLEAR_TEXT,
         handler: this.handleClearText
-      }), W]
+      }), Y]
     })
   }
   constructor(e) {
     var t;
-    super(e), t = this, w(this, "ref", i.createRef()), w(this, "_focusBlurQueue", Promise.resolve()), w(this, "_unsubscribe", true), w(this, "_initTimeoutId", null), w(this, "_cachedEditorWindow", null), w(this, "handleSelectionChange", () => {
+    super(e), t = this, D(this, "ref", i.createRef()), D(this, "_focusBlurQueue", Promise.resolve()), D(this, "_unsubscribe", true), D(this, "_initTimeoutId", null), D(this, "_cachedEditorWindow", null), D(this, "handleSelectionChange", () => {
       if (this.props.focused) {
         var e, t, n;
         this.props.onSelectionChanged(null == (t = (n = document).getSelection) || null == (e = t.call(n)) ? true : e.toString())
       }
-    }), w(this, "focus", () => {
+    }), D(this, "focus", () => {
       var e;
       null == (e = this._focusBlurQueue) || e.then(() => {
         this.setState({
@@ -323,41 +323,41 @@ class U extends Chunk473749.Component {
           null != e && e.focus()
         })
       })
-    }), w(this, "saveCurrentText", function() {
+    }), D(this, "saveCurrentText", function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
         {
           type: n,
           channel: r
         } = t.props;
       n.drafts.autoSave && (e && t.saveCurrentTextThrottled.cancel(), t.handleSaveCurrentText(r.id))
-    }), w(this, "handleBeforeUnload", () => this.saveCurrentText()), w(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, false), 500)), w(this, "handleEnter", e => {
+    }), D(this, "handleBeforeUnload", () => this.saveCurrentText()), D(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, false), 500)), D(this, "handleEnter", e => {
       var t, n;
       return null == (t = (n = this.props).onEnter) ? true : t.call(n, e)
-    }), w(this, "handleTab", () => {
+    }), D(this, "handleTab", () => {
       var e, t;
       return null == (e = (t = this.props).onTab) ? true : e.call(t)
-    }), w(this, "handleMoveSelection", e => {
+    }), D(this, "handleMoveSelection", e => {
       var t, n;
       return null == (t = (n = this.props).onMoveSelection) ? true : t.call(n, e)
-    }), w(this, "maybeShowAutocomplete", () => {
+    }), D(this, "maybeShowAutocomplete", () => {
       var e, t;
       return null == (e = (t = this.props).onMaybeShowAutocomplete) ? true : e.call(t)
-    }), w(this, "hideAutocomplete", () => {
+    }), D(this, "hideAutocomplete", () => {
       var e, t;
       return null == (e = (t = this.props).onHideAutocomplete) ? true : e.call(t)
-    }), w(this, "handleSaveCurrentText", e => {
+    }), D(this, "handleSaveCurrentText", e => {
       d.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
-    }), w(this, "handleClearText", () => {
+    }), D(this, "handleClearText", () => {
       var e, t;
-      null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, I.JM)(""))
-    }), w(this, "handleInsertText", e => {
+      null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, S.JM)(""))
+    }), D(this, "handleInsertText", e => {
       let {
         plainText: t,
         rawText: n,
         addSpace: r = false
       } = e;
       this.props.disabled || (this.appendText(t, n, r), this.focus())
-    }), w(this, "handleFocus", e => {
+    }), D(this, "handleFocus", e => {
       let {
         onFocus: t
       } = this.props, {
@@ -366,7 +366,7 @@ class U extends Chunk473749.Component {
       null == t || t(e), n || this.setState({
         focused: true
       })
-    }), w(this, "handleBlur", e => {
+    }), D(this, "handleBlur", e => {
       let {
         onBlur: t
       } = this.props, {
@@ -375,7 +375,7 @@ class U extends Chunk473749.Component {
       null == t || t(e), n && this.setState({
         focused: false
       })
-    }), w(this, "handlePaste", e => {
+    }), D(this, "handlePaste", e => {
       var t, n, r;
       let i = null == (n = e.target) || null == (t = n.ownerDocument) ? true : t.defaultView,
         {
@@ -386,14 +386,14 @@ class U extends Chunk473749.Component {
           maxCharacterCount: c,
           type: u
         } = this.props,
-        d = null != i ? (0, S.im)(i) : null,
-        g = (0, S.Mo)(),
+        d = null != i ? (0, T.im)(i) : null,
+        g = (0, T.Mo)(),
         b = null != (r = null != d ? d : g) ? r : a,
-        y = (0, S._K)(i, this._getEditorWindow()) ? a : b;
+        y = (0, T._K)(i, this._getEditorWindow()) ? a : b;
       if (null == l || !y.isPrivate() && !o || y.isPrivate() && y.isManaged()) returnfalse;
       let O = (e, t) => {
           var n, r;
-          let i = m.Z.getActiveCommand(y.id);
+          let i = h.Z.getActiveCommand(y.id);
           if (null == i) return l(e, y, u.drafts.type, {
             requireConfirm: true,
             showLargeMessageDialog: t,
@@ -401,26 +401,26 @@ class U extends Chunk473749.Component {
           });
           let a = null != (n = u.drafts.commandType) ? n : u.drafts.type,
             o = null,
-            s = m.Z.getActiveOption(y.id);
-          null != (o = (null == s ? true : s.type) === p.jw.ATTACHMENT ? s : null == (r = i.options) ? true : r.find(e => {
-            if (e.type === p.jw.ATTACHMENT) return null == E.Z.getUpload(y.id, e.name, a)
+            s = h.Z.getActiveOption(y.id);
+          null != (o = (null == s ? true : s.type) === _.jw.ATTACHMENT ? s : null == (r = i.options) ? true : r.find(e => {
+            if (e.type === _.jw.ATTACHMENT) return null == E.Z.getUpload(y.id, e.name, a)
           })) && f.Z.setFile({
             channelId: y.id,
             id: o.name,
             draftType: a,
             file: {
               id: o.name,
-              platform: h.ow.WEB,
+              platform: m.ow.WEB,
               file: e[0]
             }
           })
         },
         v = null != s ? s : c,
         {
-          files: I,
-          errors: T
+          files: S,
+          errors: I
         } = G(e.clipboardData, u.uploadLongMessages ? v : null);
-      return (k("onPaste", [...e.clipboardData.items].map(e => {
+      return (M("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type
@@ -434,16 +434,16 @@ class U extends Chunk473749.Component {
             path: null == t ? true : t.path
           }
         }
-      })), 0 === I.length) ? ((null == T ? true : T.some(e => {
+      })), 0 === S.length) ? ((null == I ? true : I.some(e => {
         let {
           error: t
         } = e;
         return "is_directory" === t
-      })) && (0, _.openUploadError)({
-        title: P.intl.string(P.t.azO1Pe),
-        help: P.intl.string(P.t["Koklr/"])
-      }), false) : (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), O(I), this.focus(), true)
-    }), this._unsubscribe = T.p8.subscribe(e => {
+      })) && (0, p.openUploadError)({
+        title: R.intl.string(R.t.azO1Pe),
+        help: R.intl.string(R.t["Koklr/"])
+      }), false) : (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), O(S), this.focus(), true)
+    }), this._unsubscribe = I.p8.subscribe(e => {
       requestAnimationFrame(() => {
         this.setState({
           popup: e
@@ -452,7 +452,7 @@ class U extends Chunk473749.Component {
     }), this.state = {
       focused: false,
       submitting: false,
-      popup: T.p8.getState()
+      popup: I.p8.getState()
     }
   }
 }
@@ -485,7 +485,7 @@ function G(e, t) {
   if (l.length > 0) {
     if (1 === l.length && "image/png" === l[0].type && null != u) {
       let t = l[0],
-        n = null != (o = B(e.getData(u.type))) ? o : t.name;
+        n = null != (o = Z(e.getData(u.type))) ? o : t.name;
       return {
         files: [(0, y.dp)(t, n, t.type)],
         errors: d
@@ -515,7 +515,7 @@ function G(e, t) {
   }
 }
 
-function B(e) {
+function Z(e) {
   let t = new DOMParser().parseFromString(e, "text/html").querySelector("img");
   if (null != t) {
     let e;

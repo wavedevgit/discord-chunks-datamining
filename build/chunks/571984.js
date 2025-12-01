@@ -16,7 +16,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk998502 = require("./998502.js"),
   Chunk45652 = require("./45652.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -60,7 +60,7 @@ class b extends Chunk147913.Z {
     let {
       channelId: t
     } = e;
-    if (_.d.getState().isEnabled)
+    if (p.d.getState().isEnabled)
       if (null != t) this.findAndWatchStream();
       else {
         let e = await f.ZP.getSetting("conferenceModeSettings", {});
@@ -75,7 +75,7 @@ class b extends Chunk147913.Z {
       }
   }
   getResetMediaEngineSettings(e) {
-    return i().pickBy(g(h({}, e), {
+    return i().pickBy(g(m({}, e), {
       inputVolume: null != e.inputVolume ? (0, c.A)(e.inputVolume) : true,
       outputVolume: null != e.outputVolume ? (0, c.A)(e.outputVolume) : true
     }), e => null != e)
@@ -87,14 +87,14 @@ class b extends Chunk147913.Z {
     null != exports && (0, Chunk872810.rn)(exports)
   }
   constructor(...e) {
-    super(...e), p(this, "actions", {
+    super(...e), _(this, "actions", {
       VOICE_CHANNEL_SELECT: e => this.handleVoiceChannelSelect(e),
       VOICE_STATE_UPDATES: e => this.handleVoiceStateUpdates(e)
-    }), p(this, "handleVoiceStateUpdates", i().debounce(e => {
+    }), _(this, "handleVoiceStateUpdates", i().debounce(e => {
       let {
         voiceStates: t
       } = e;
-      _.d.getState().isEnabled && t.forEach(e => {
+      p.d.getState().isEnabled && t.forEach(e => {
         let t = u.Z.getStreamForUser(e.userId, e.guildId),
           n = u.Z.getActiveStreamForUser(e.userId, e.guildId);
         null != t && null == n ? (0, o.rn)(t) : null == t && null != n && ((0, o.g)((0, l.V9)(n), false, true), this.findAndWatchStream())

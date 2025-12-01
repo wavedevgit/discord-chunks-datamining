@@ -2,7 +2,7 @@
 /** chunk id: 893447, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => _
+  Q: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,36 +50,36 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function p(e) {
   let {
     listRef: t,
     label: n,
     disabledKeys: c,
     selectionMode: d = "none",
-    layout: _ = "default",
-    items: p,
-    onRemove: h,
-    children: m
+    layout: p = "default",
+    items: _,
+    onRemove: m,
+    children: h
   } = e, [g, E] = i.useState(() => new Set), b = i.useContext(o.z);
   return (0, r.jsxs)(a.QS, {
     "aria-label": n,
     id: null == b ? true : b.controlId,
     "aria-describedby": null == b ? true : b.describedById,
-    "data-layout": _,
+    "data-layout": p,
     className: l.tagGroup,
     selectionMode: d,
     selectedKeys: g,
     onSelectionChange: E,
     disabledKeys: c,
-    onRemove: h,
+    onRemove: m,
     children: [(0, r.jsx)(a.PS, {
       ref: t,
       className: l.tagList,
-      children: p.map(e => (0, i.createElement)(s.V, f(u({}, e), {
+      children: _.map(e => (0, i.createElement)(s.V, f(u({}, e), {
         key: e.id,
-        layout: _,
+        layout: p,
         accessibilityHint: e.accessibilityHint
       })))
-    }), m]
+    }), h]
   })
 }

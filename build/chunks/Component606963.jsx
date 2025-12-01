@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,13 +47,13 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -75,9 +75,9 @@ function E(e) {
   let t, n;
   var {
     afk: a
-  } = e, s = m(e, ["afk"]);
+  } = e, s = h(e, ["afk"]);
   let [c, u] = i.useState(false);
-  return a ? (t = d.intl.string(d.t.Y40Jke), n = d.intl.string(d.t["5J4yGc"])) : (t = d.intl.string(d.t.FJSZVM), n = d.intl.string(d.t.etJjgW)), (0, r.jsx)(o.u_l, _({
+  return a ? (t = d.intl.string(d.t.Y40Jke), n = d.intl.string(d.t["5J4yGc"])) : (t = d.intl.string(d.t.FJSZVM), n = d.intl.string(d.t.etJjgW)), (0, r.jsx)(o.u_l, p({
     size: "md",
     title: t,
     subtitle: n,
@@ -103,7 +103,7 @@ let b = () => {
     null !== module.current && ((0, Chunk481060.Mr3)(module.current), module.current = null)
   }
   let [o, l] = (0, Chunk442837.Wu)([Chunk209590.Z], () => [Chunk209590.Z.shouldShowWarning(), Chunk209590.Z.isAFKChannel()], []), d = Chunk473749.useCallback(() => {
-    module.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(E, _({
+    module.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(E, p({
       afk: l
     }, e)))
   }, [Chunk923928]), f = Chunk473749.useCallback(() => {
@@ -111,7 +111,7 @@ let b = () => {
       let {
         default: e
       } = await require.e("41281").then(require.bind(require, 669732));
-      return t => (0, r.jsx)(e, h(_({}, t), {
+      return t => (0, r.jsx)(e, m(p({}, t), {
         showHideSuppressWarning: true
       }))
     }).then(t => {

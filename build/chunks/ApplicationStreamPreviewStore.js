@@ -2,7 +2,7 @@
 /** chunk id: 543882, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -21,13 +21,13 @@ function u(e, t, n) {
 }
 let d = 12e4,
   f = 1e4,
-  _ = 5,
-  p = {},
-  h = {},
-  m = new Set;
+  p = 5,
+  _ = {},
+  m = {},
+  h = new Set;
 
 function g() {
-  p = {}, h = {}
+  _ = {}, m = {}
 }
 
 function E(e) {
@@ -35,10 +35,10 @@ function E(e) {
     streamKey: t,
     previewURL: n
   } = e;
-  p[t] = {
+  _[t] = {
     url: n,
     expires: Date.now() + d
-  }, h[t] = 0, m.delete(t)
+  }, m[t] = 0, h.delete(t)
 }
 
 function b(e) {
@@ -46,10 +46,10 @@ function b(e) {
     streamKey: t,
     retryAfter: n
   } = e;
-  p[t] = {
+  _[t] = {
     url: null,
-    expires: Date.now() + (null != n ? n : f * h[t])
-  }, m.delete(t)
+    expires: Date.now() + (null != n ? n : f * m[t])
+  }, h.delete(t)
 }
 
 function y(e) {
@@ -57,14 +57,14 @@ function y(e) {
   let {
     streamKey: n
   } = e;
-  h[n] = (null != (t = h[n]) ? t : 0) + 1, m.add(n)
+  m[n] = (null != (t = m[n]) ? t : 0) + 1, h.add(n)
 }
 
 function O(e) {
   let {
     voiceStates: t
   } = e;
-  return !(a().isEmpty(p) && a().isEmpty(h)) && t.reduce((e, t) => {
+  return !(a().isEmpty(_) && a().isEmpty(m)) && t.reduce((e, t) => {
     let {
       userId: n,
       guildId: r,
@@ -78,12 +78,12 @@ function O(e) {
       channelId: i,
       ownerId: n
     });
-    return delete p[o], delete h[o], true
+    return delete _[o], delete m[o], true
   }, false)
 }
 class v extends(r = Chunk442837.ZP.Store) {
   getPreviewURL(e, t, n) {
-    let r = p[(0, l.V9)({
+    let r = _[(0, l.V9)({
       streamType: null != e ? c.lo.GUILD : c.lo.CALL,
       guildId: e,
       channelId: t,
@@ -99,10 +99,10 @@ class v extends(r = Chunk442837.ZP.Store) {
         channelId: t,
         ownerId: n
       }),
-      a = p[i],
-      o = null != (r = h[i]) ? r : 0,
+      a = _[i],
+      o = null != (r = m[i]) ? r : 0,
       s = null != a && Date.now() > a.expires;
-    return (null == a && o < _ || s) && !m.has(i)
+    return (null == a && o < p || s) && !h.has(i)
   }
   getPreviewURLForStreamKey(e) {
     let {
@@ -119,11 +119,11 @@ class v extends(r = Chunk442837.ZP.Store) {
       channelId: t,
       ownerId: n
     });
-    return m.has(r)
+    return h.has(r)
   }
 }
 u(v, "displayName", "ApplicationStreamPreviewStore");
-let I = new v(Chunk570140.Z, {
+let S = new v(Chunk570140.Z, {
   CONNECTION_OPEN: g,
   LOGOUT: g,
   STREAM_PREVIEW_FETCH_START: y,

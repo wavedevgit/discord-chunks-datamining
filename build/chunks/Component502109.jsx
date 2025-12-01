@@ -61,22 +61,22 @@ function v(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let I = new Chunk710845.Z("PaymentRequest"),
-  T = Object.values({
+let S = new Chunk710845.Z("PaymentRequest"),
+  I = Object.values({
     applePay: "applePay",
     googlePay: "googlePay",
     link: "link",
     browserCard: "browserCard"
   });
-class S extends Chunk473749.Component {
+class T extends Chunk473749.Component {
   componentDidMount() {
-    (0, Chunk358085.isDesktop)() || (this.disableWallets = T.filter(e => e !== this.paymentRequestWallet).sort(), (0, Chunk622999.d2)().then(e => {
+    (0, Chunk358085.isDesktop)() || (this.disableWallets = I.filter(e => e !== this.paymentRequestWallet).sort(), (0, Chunk622999.d2)().then(e => {
       this.initPaymentRequest(e)
     }))
   }
   logInfo(e) {
     for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
-    (this.isUserStaff || d.default.isLoggingAnalyticsEvents) && I.info("[".concat(this.paymentRequestWalletName, "] ").concat(e), ...n)
+    (this.isUserStaff || d.default.isLoggingAnalyticsEvents) && S.info("[".concat(this.paymentRequestWalletName, "] ").concat(e), ...n)
   }
   validatePaymentRequest() {
     let {
@@ -146,7 +146,7 @@ class S extends Chunk473749.Component {
           type: t
         })
       }
-    }, i), m.HeQ.PAYMENT_REQUEST)
+    }, i), h.HeQ.PAYMENT_REQUEST)
   }
   renderConnectorView() {
     return (0, Chunk54381.jsxs)("div", {
@@ -182,7 +182,7 @@ class S extends Chunk473749.Component {
       submitting: true,
       paymentRequest: null,
       canMakePaymentResult: null
-    }), b(this, "state", y({}, this.initialState)), b(this, "disableWallets", []), b(this, "isUserStaff", (0, h.vP)()), b(this, "initPaymentRequest", async e => {
+    }), b(this, "state", y({}, this.initialState)), b(this, "disableWallets", []), b(this, "isUserStaff", (0, m.vP)()), b(this, "initPaymentRequest", async e => {
       if (null == e) return;
       this.setState({
         submitting: true,
@@ -210,7 +210,7 @@ class S extends Chunk473749.Component {
           paymentMethod: r,
           payerName: i
         } = e;
-        n(r, i), this.trackAnalyticsEvent(m.rMx.PAYMENT_REQUEST_COMPLETED), t("success")
+        n(r, i), this.trackAnalyticsEvent(h.rMx.PAYMENT_REQUEST_COMPLETED), t("success")
       }), t.on("cancel", () => {
         n(null)
       });
@@ -223,7 +223,7 @@ class S extends Chunk473749.Component {
         this.initPaymentRequestCallback(r)
       }), r
     }), b(this, "attemptPaymentRequest", () => {
-      if ((0, _.isDesktop)()) return void this.props.onChooseType(m.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet);
+      if ((0, p.isDesktop)()) return void this.props.onChooseType(h.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet);
       let {
         available: e
       } = this.validatePaymentRequest();
@@ -231,11 +231,11 @@ class S extends Chunk473749.Component {
       let {
         paymentRequest: t
       } = this.state;
-      e && null != t && (t.show(), this.props.onChooseType(m.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet))
+      e && null != t && (t.show(), this.props.onChooseType(h.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet))
     })
   }
 }
-class A extends S {
+class A extends T {
   validatePaymentRequest() {
     let {
       paymentRequest: e,
@@ -285,7 +285,7 @@ class A extends S {
     super(...e), b(this, "state", y({}, this.initialState)), b(this, "paymentRequestWallet", "googlePay"), b(this, "paymentRequestWalletName", "Google Pay")
   }
 }
-class C extends S {
+class C extends T {
   validatePaymentRequest() {
     let {
       paymentRequest: e,

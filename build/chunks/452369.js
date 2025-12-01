@@ -22,18 +22,18 @@ function f() {
   let e = Chunk979651.Z.getAllVoiceStates(),
     t = false;
   for (let n of Object.values(module))
-    for (let e of Object.values(require)) null != module.channelId && (t = h(module.channelId, module.userId) || exports);
+    for (let e of Object.values(require)) null != module.channelId && (t = m(module.channelId, module.userId) || exports);
   return exports
 }
 
-function _(e) {
+function p(e) {
   let {
     relationship: t
   } = e, n = o.Z.getVoiceStateForUser(t.id);
-  return null != n && null != n.channelId && h(n.channelId, t.id)
+  return null != n && null != n.channelId && m(n.channelId, t.id)
 }
 
-function p(e) {
+function _(e) {
   let {
     voiceStates: t
   } = e, n = false;
@@ -42,11 +42,11 @@ function p(e) {
       var t, r;
       null != l[e.oldChannelId] && (null == (t = l[e.oldChannelId]) || t.delete(e.userId), n = true), null != c[e.oldChannelId] && (null == (r = c[e.oldChannelId]) || r.delete(e.userId), n = true)
     }
-    null != e.channelId && (n = h(e.channelId, e.userId) || n)
+    null != e.channelId && (n = m(e.channelId, e.userId) || n)
   }), n
 }
 
-function h(e, t) {
+function m(e, t) {
   let n = false,
     r = false,
     i = new Set(l[e]),
@@ -56,7 +56,7 @@ function h(e, t) {
     d = a.Z.isIgnored(t);
   return d && !u.has(t) ? (u.add(t), r = true, n = true) : d || (n = u.delete(t)), 0 === u.size && n ? delete c[e] : n && (c[e] = u), r && s.ZP.handleBlockedOrIgnoredUserVoiceChannelJoin(e, t), n
 }
-class m extends Chunk442837.ZP.Store {
+class h extends Chunk442837.ZP.Store {
   initialize() {
     this.waitFor(Chunk699516.Z, Chunk979651.Z)
   }
@@ -69,12 +69,12 @@ class m extends Chunk442837.ZP.Store {
     return null != (t = c[e]) ? t : u
   }
 }
-let g = new m(Chunk570140.Z, {
+let g = new h(Chunk570140.Z, {
   CONNECTION_OPEN: d,
   LOGOUT: d,
   OVERLAY_INITIALIZE: f,
-  VOICE_STATE_UPDATES: p,
-  RELATIONSHIP_ADD: _,
-  RELATIONSHIP_REMOVE: _,
-  RELATIONSHIP_UPDATE: _
+  VOICE_STATE_UPDATES: _,
+  RELATIONSHIP_ADD: p,
+  RELATIONSHIP_REMOVE: p,
+  RELATIONSHIP_UPDATE: p
 })

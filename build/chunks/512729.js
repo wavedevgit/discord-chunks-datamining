@@ -16,35 +16,35 @@ let c = "line",
 function d(e, t, n, d) {
   var f;
   let {
-    enabled: _,
-    highlightDesign: p
+    enabled: p,
+    highlightDesign: _
   } = (0, a.kB)("decorateMentionSuggestion", {
     autoTrackExposure: false
-  }), h = e.selection, {
-    currentAutocompleteType: m
-  } = d, g = null !== m && m !== i.eq.MENTION_SUGGESTIONS;
-  if (!_ || n.isDM() || g || l.bN.areStylesDisabled(e) || !(null == (f = e.chatInputType.autocomplete) ? true : f.mentionSuggestions) || !s.HV.getSetting() || null == h || l.M8.isExpanded(h)) return u;
+  }), m = e.selection, {
+    currentAutocompleteType: h
+  } = d, g = null !== h && h !== i.eq.MENTION_SUGGESTIONS;
+  if (!p || n.isDM() || g || l.bN.areStylesDisabled(e) || !(null == (f = e.chatInputType.autocomplete) ? true : f.mentionSuggestions) || !s.HV.getSetting() || null == m || l.M8.isExpanded(m)) return u;
   let [E, b] = t;
   if (!l.LC.isText(E)) return u;
   let [y] = l.bN.node(e, l.C0.parent(b));
-  if (!l.aj.isType(y, c) || !r.e6.includes(l.bN.range(e, b), h.anchor)) return u;
-  let O = h.anchor.offset,
+  if (!l.aj.isType(y, c) || !r.e6.includes(l.bN.range(e, b), m.anchor)) return u;
+  let O = m.anchor.offset,
     {
       results: {
         suggestions: v,
-        queryInfo: I
+        queryInfo: S
       }
     } = (0, o.r)(n, E.text, O, d);
   return 0 === v.length ? u : [{
     anchor: {
       path: b,
-      offset: I.startIndex
+      offset: S.startIndex
     },
     focus: {
       path: b,
-      offset: I.startIndex + I.query.length
+      offset: S.startIndex + S.query.length
     },
     mentionSuggestion: true,
-    mentionSuggestionSimpleColorVariant: "simple" === p
+    mentionSuggestionSimpleColorVariant: "simple" === _
   }]
 }

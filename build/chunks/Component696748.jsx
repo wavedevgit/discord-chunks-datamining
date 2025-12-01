@@ -2,7 +2,7 @@
 /** chunk id: 696748, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  a: () => T
+  a: () => I
 }), require("./953529.js"), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -174,7 +174,7 @@ class v extends Chunk473749.PureComponent {
           libraryApplication: r,
           analyticsParams: i
         } = t.props;
-      t.onClose(), T(r.id, r, {
+      t.onClose(), I(r.id, r, {
         analyticsParams: i,
         cloudSync: e,
         cloudSyncForceHash: n
@@ -183,26 +183,26 @@ class v extends Chunk473749.PureComponent {
       let {
         cloudSyncState: e
       } = this.props;
-      e.type === m.TzF.CONFLICT && this.handlePlay(true, e.remote.hash)
+      e.type === h.TzF.CONFLICT && this.handlePlay(true, e.remote.hash)
     }), y(this, "handleChooseUpload", () => {
       let {
         cloudSyncState: e
       } = this.props;
-      e.type === m.TzF.CONFLICT && this.handlePlay(true, e.next.hash)
+      e.type === h.TzF.CONFLICT && this.handlePlay(true, e.next.hash)
     })
   }
 }
-let I = Chunk442837.ZP.connectStores([Chunk293245.Z, Chunk812206.Z], e => {
+let S = Chunk442837.ZP.connectStores([Chunk293245.Z, Chunk812206.Z], e => {
   let {
     libraryApplication: t,
     branchId: n
   } = e;
   return {
-    cloudSyncState: p.Z.getState(t.id, n),
+    cloudSyncState: _.Z.getState(t.id, n),
     application: f.Z.getApplication(t.id)
   }
 })(v);
-async function T(e, t, n) {
+async function I(e, t, n) {
   let i = f.Z.getApplication(e);
   if (null == i) return;
   let {
@@ -215,7 +215,7 @@ async function T(e, t, n) {
     try {
       await u.Z(t.id, e, o)
     } catch (n) {
-      (0, c.h7j)(n => (0, r.jsx)(I, O({
+      (0, c.h7j)(n => (0, r.jsx)(S, O({
         libraryApplication: t,
         analyticsParams: s,
         branchId: e
@@ -223,10 +223,10 @@ async function T(e, t, n) {
       return
     }
   }
-  return h.default.track(m.rMx.APPLICATION_OPENED, O({
+  return m.default.track(h.rMx.APPLICATION_OPENED, O({
     application_id: i.id,
     application_name: i.name,
-    type: m.q5t.LAUNCH,
+    type: h.q5t.LAUNCH,
     distributor: null != t ? t.getDistributor() : null
   }, s)), d.Z.launch({
     applicationId: i.id,

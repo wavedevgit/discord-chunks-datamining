@@ -2,32 +2,32 @@
 /** chunk id: 324805, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $z: () => S,
+  $z: () => T,
   Dp: () => O,
-  Ew: () => j,
+  Ew: () => k,
   HO: () => E,
-  Jk: () => T,
-  Jp: () => P,
+  Jk: () => I,
+  Jp: () => R,
   Lv: () => N,
   NH: () => b,
   Ot: () => f,
-  R4: () => p,
+  R4: () => _,
   S7: () => Chunk670081.S,
   Ts: () => y,
-  UP: () => L,
-  V6: () => I,
+  UP: () => x,
+  V6: () => S,
   V_: () => v,
-  XZ: () => _,
+  XZ: () => p,
   a_: () => Chunk438954.a,
-  cd: () => h,
+  cd: () => m,
   dr: () => d,
-  fI: () => M,
+  fI: () => j,
   l$: () => C,
-  oH: () => w,
+  oH: () => D,
   tD: () => g,
-  tt: () => R,
+  tt: () => P,
   v6: () => A,
-  yq: () => D
+  yq: () => w
 }), require("./388685.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   Chunk754700 = require("./754700.js"),
@@ -41,21 +41,21 @@ var Chunk392711 = require("./392711.js"),
     return e.ACTIVITY_PANEL = "quests_bar_activity_panel", e.QUESTS_MANAGER = "quests_manager", e.QUESTS_CONSOLE_OPTIMISTIC_UPDATES_MANAGER = "quests_console_optimistic_updates_manager", e.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", e.USER_SETTINGS_SEARCH_GIFT_INVENTORY = "user_settings_search_gift_inventory", e.USE_QUESTS = "use_quests", e.STREAM_SOURCE_SELECT = "stream_source_select", e.MEMBERS_LIST = "members_list", e.QUESTS_BAR = "quests_bar", e.QUESTS_BAR_MOBILE = "quests_bar_mobile", e.REWARD_CODE_MODAL = "reward_code_modal", e.INGAME_REWARD_MODAL = "ingame_reward_modal", e.COLLECTIBLE_REWARD_MODAL = "collectible_reward_modal", e.ORBS_REWARD_MODAL = "orbs_reward_modal", e.QUEST_PREVIEW_TOOL = "quest_preview_tool", e.QUEST_PREVIEW_TOOL_2 = "quest_preview_tool_2", e.QUESTS_MINOR_REWARD_CAPPING_CONFIG = "QUESTS_MINOR_REWARD_CAPPING_CONFIG", e.QUESTS_CARD = "quests_card", e.QUESTS_STORE = "quests_store", e.QUEST_CHANNEL_CALL_HEADER = "quests_channel_call_header", e.QUEST_HOME_DESKTOP = "quest_home_desktop", e.QUEST_HOME_MOBILE = "quest_home_mobile", e.QUEST_PROGRESS_BAR = "quest_progress_bar", e.EMBED_MOBILE = "embed_mobile", e.EMBED_DESKTOP = "embed_desktop", e.QUEST_CONTEXT_MENU = "context_menu", e.CODED_LINK = "coded_link", e.QUEST_DISCLOSURE_MODAL = "quest_disclosure_modal", e.DISCOVERY_SIDEBAR = "discovery_sidebar", e.DISCOVERY_COMPASS = "discovery_compass", e.BADGE = "badge", e.COLLECTIBLES_SHOP_HEADER_BAR = "collectibles_shop_header_bar", e.ORBS_ANNOUNCEMENT_MODAL = "orbs_announcement_modal", e.CONFLICT_CHECKS = "conflict_checks", e.VIDEO_MODAL = "video_modal", e.VIDEO_MODAL_MOBILE = "video_modal_mobile", e.GAME_WIDGETS_POPOVER = "game_widgets_popover", e.PRIVATE_CHANNELS_LIST = "private_channels_list", e.INTERNAL_TOOLING = "internal_tooling", e.QUEST_HOME_MOVED_CALLOUT = "quest_home_moved_callout", e.IN_APP_NAVIGATION = "in_app_navigation", e.NAVIGATE_TO_QUEST_HOME_UTIL = "navigate_to_quest_home_util", e.QUEST_DEEP_LINK_UTIL = "quest_deep_link_util", e.YOU_TAB_PROFILE_HEADER = "you_tab_profile_header", e
   }({});
 let f = Chunk70956.Z.Millis.MINUTE * Chunk758846.c.ConsecutiveHeartbeatPeriodMinutes,
-  _ = {
+  p = {
     tension: 900,
     friction: 45,
     clamp: true
   },
-  p = {
+  _ = {
     tension: 360,
     friction: 30,
     clamp: true
   };
-var h = function(e) {
+var m = function(e) {
   return e.CONSOLE = "CONSOLE", e.DESKTOP = "DESKTOP", e
 }({});
-let m = (0, Chunk544891.K0)(),
-  g = false !== m.indexOf("localhost") || false !== m.indexOf("127.0.0.1") ? "".concat(m, "/_cdn_storage/") : "https://cdn.discordapp.com/",
+let h = (0, Chunk544891.K0)(),
+  g = false !== h.indexOf("localhost") || false !== h.indexOf("127.0.0.1") ? "".concat(h, "/_cdn_storage/") : "https://cdn.discordapp.com/",
   E = g + "quests/";
 var b = function(e) {
   return e.COLLAPSED = "collapsed", e.EXPANDED = "expanded", e.CLOSED = "closed", e.SOFT_DISMISSED = "soft-dismissed", e.RESET_TO_PREVIOUS = "reset-to-previous", e
@@ -65,26 +65,26 @@ let y = "545364944258990091",
 var v = function(e) {
   return e.EXCLUDED_QUEST = "excluded_quest", e.UNKNOWN_QUEST = "unknown_quest", e.NOT_SHAREABLE_QUEST = "not_shareable_quest", e
 }({});
-let I = "1333839522189938740",
-  T = "1420556874629251124",
-  S = "1402418703554842694",
+let S = "1333839522189938740",
+  I = "1420556874629251124",
+  T = "1402418703554842694",
   A = new Set([Chunk49436.Ok.DESKTOP_ACCOUNT_PANEL_AREA, Chunk49436.Ok.MOBILE_HOME_DOCK_AREA]),
   C = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
   N = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
-  R = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
-  P = {
+  P = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
+  R = {
     is_targeted: false
   };
-var D = function(e) {
+var w = function(e) {
     return e.SUGGESTED = "suggested", e.MOST_RECENT = "most_recent", e.EXPIRING_SOON = "expiring_soon", e.RECENTLY_ENROLLED = "recently_enrolled", e
   }({}),
-  w = function(e) {
+  D = function(e) {
     return e.VIDEO = "task_video", e.PLAY = "task_play", e
   }({}),
-  L = function(e) {
+  x = function(e) {
     return e.VIRTUAL_CURRENCY = "reward_virtual_currency", e.COLLECTIBLE = "reward_collectible", e.IN_GAME = "reward_in_game", e
   }({});
-let x = [{
+let L = [{
   group: "task",
   filter: "task_play"
 }, {
@@ -101,18 +101,18 @@ let x = [{
   filter: "reward_in_game"
 }];
 
-function M(e) {
-  return Object.values(w).includes(e) ? {
+function j(e) {
+  return Object.values(D).includes(e) ? {
     group: "task",
     filter: e
-  } : Object.values(L).includes(e) ? {
+  } : Object.values(x).includes(e) ? {
     group: "reward",
     filter: e
   } : null
 }
-let k = ["reward", "task"],
-  j = Object.entries((0, Chunk392711.groupBy)(x, "group")).sort((e, t) => {
-    let n = k.indexOf(e[0]),
-      r = k.indexOf(t[0]);
+let M = ["reward", "task"],
+  k = Object.entries((0, Chunk392711.groupBy)(L, "group")).sort((e, t) => {
+    let n = M.indexOf(e[0]),
+      r = M.indexOf(t[0]);
     return n < r ? false : +(r < n)
   })

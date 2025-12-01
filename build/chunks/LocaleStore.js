@@ -28,36 +28,36 @@ async function d() {
   return Chunk388032.systemLocale
 }
 let f = Chunk388032.intl.currentLocale,
-  _ = Chunk388032.systemLocale;
+  p = Chunk388032.systemLocale;
 
-function p() {
+function _() {
   var e, t;
   let n = null == (t = Chunk581883.Z.settings.localization) || null == (e = exports.locale) ? true : module.value;
   return null != require && "" !== require && require !== f && (f = require, (0, Chunk241601._2)(f), true)
 }
 
-function h(e) {
+function m(e) {
   f = e.locale, (0, o._2)(f)
 }
 d().then(e => {
-  _ = e
+  p = e
 });
-class m extends(r = Chunk442837.ZP.Store) {
+class h extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk581883.Z), p(), (0, Chunk241601._2)(f)
+    this.waitFor(Chunk581883.Z), _(), (0, Chunk241601._2)(f)
   }
   get locale() {
     return f
   }
   get systemLocale() {
-    return _
+    return p
   }
 }
-u(m, "displayName", "LocaleStore");
-let g = new m(Chunk570140.Z, {
-  OVERLAY_INITIALIZE: p,
-  CACHE_LOADED: p,
-  CONNECTION_OPEN: p,
-  USER_SETTINGS_PROTO_UPDATE: p,
-  USER_SETTINGS_LOCALE_OVERRIDE: h
+u(h, "displayName", "LocaleStore");
+let g = new h(Chunk570140.Z, {
+  OVERLAY_INITIALIZE: _,
+  CACHE_LOADED: _,
+  CONNECTION_OPEN: _,
+  USER_SETTINGS_PROTO_UPDATE: _,
+  USER_SETTINGS_LOCALE_OVERRIDE: m
 })

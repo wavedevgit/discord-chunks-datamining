@@ -2,7 +2,7 @@
 /** chunk id: 530618, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -49,9 +49,9 @@ function u(e, t) {
 }
 let d = 50,
   f = 10,
-  _ = 100;
+  p = 100;
 
-function p(e, t) {
+function _(e, t) {
   return t = null != t ? t : 1, u(l({}, o.We), {
     position: {
       type: "static-random",
@@ -81,23 +81,23 @@ function p(e, t) {
     }
   })
 }
-let h = function(e) {
+let m = function(e) {
   let {
     confettiTarget: t,
     confettiCanvas: n,
     confettiVelocityMultiplier: s,
     sprites: l,
     colors: c
-  } = e, [u, h] = i.useState(null), m = (0, a.uR)(n, u), [g, E] = i.useState(false);
+  } = e, [u, m] = i.useState(null), h = (0, a.uR)(n, u), [g, E] = i.useState(false);
   return i.useEffect(() => {
     let e = Array(f).fill(0);
-    return null != t && m.isReady && !g && (e = e.map((n, r) => setTimeout(() => {
-      r === e.length - 1 && E(true), m.createMultipleConfetti(p(t.getBoundingClientRect(), s), d)
-    }, r * _))), () => {
+    return null != t && h.isReady && !g && (e = e.map((n, r) => setTimeout(() => {
+      r === e.length - 1 && E(true), h.createMultipleConfetti(_(t.getBoundingClientRect(), s), d)
+    }, r * p))), () => {
       for (let t of e) clearTimeout(t)
     }
-  }, [m, t, g, s]), (0, r.jsx)(a.Ji, {
-    ref: h,
+  }, [h, t, g, s]), (0, r.jsx)(a.Ji, {
+    ref: m,
     sprites: null != l ? l : o.CA,
     colors: null != c ? c : o.Br,
     spriteWidth: o.Ko,

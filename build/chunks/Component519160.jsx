@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,17 +46,17 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = {
+let m = {
     tension: 7,
     friction: 5,
     overshootClamping: true
   },
-  m = 100,
+  h = 100,
   g = "center",
   E = "right";
 
@@ -75,7 +75,7 @@ class y extends(r = Chunk473749.Component) {
       items: i,
       width: a
     } = this.props, o = b(r, i.length), s = b(e.currentIndex, i.length);
-    (o !== s || i.length !== e.items.length) && this.updateAnimatedIndex(o, s), a !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || o !== s) && l.Z.spring(this.animatedAlignmentOffset, p(f({}, h), {
+    (o !== s || i.length !== e.items.length) && this.updateAnimatedIndex(o, s), a !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || o !== s) && l.Z.spring(this.animatedAlignmentOffset, _(f({}, m), {
       toValue: this.getAlignmentOffset(t)
     })).start()
   }
@@ -103,7 +103,7 @@ class y extends(r = Chunk473749.Component) {
       items: r,
       edgeItems: i
     } = this.props;
-    i > 0 && (0 === e && t === r.length - 1 ? n.setValue(false) : 0 === t && e === r.length - 1 && r.length > 2 && n.setValue(r.length)), l.Z.spring(n, p(f({}, h), {
+    i > 0 && (0 === e && t === r.length - 1 ? n.setValue(false) : 0 === t && e === r.length - 1 && r.length > 2 && n.setValue(r.length)), l.Z.spring(n, _(f({}, m), {
       toValue: e
     })).start()
   }
@@ -117,12 +117,12 @@ class y extends(r = Chunk473749.Component) {
     i ? this.animateToIndex(e, t) : l.Z.timing(r, {
       fromValue: 1,
       toValue: 0,
-      duration: m
+      duration: h
     }).start(() => {
       n.setValue(e), l.Z.timing(r, {
         fromValue: 0,
         toValue: 1,
-        duration: m
+        duration: h
       }).start()
     })
   }
@@ -160,12 +160,12 @@ class y extends(r = Chunk473749.Component) {
       } = this.props,
       {
         margin: f,
-        width: _
+        width: p
       } = s,
-      p = this.getCarouselTranslate(),
-      h = this.getItemStyle(),
-      m = (e = Chunk112724 > 0 ? [...Chunk120356.slice(-Chunk112724), ...Chunk120356, ...Chunk120356.slice(0, Chunk112724)] : Chunk120356).map((e, t) => (0, i.jsx)("div", {
-        style: h,
+      _ = this.getCarouselTranslate(),
+      m = this.getItemStyle(),
+      h = (e = Chunk112724 > 0 ? [...Chunk120356.slice(-Chunk112724), ...Chunk120356, ...Chunk120356.slice(0, Chunk112724)] : Chunk120356).map((e, t) => (0, i.jsx)("div", {
+        style: m,
         className: u.item,
         children: a(e, t - c, this.interpolateValueForItem(t - c))
       }, t));
@@ -175,10 +175,10 @@ class y extends(r = Chunk473749.Component) {
         opacity: r,
         left: Chunk748780.Z.add(exports.interpolate({
           inputRange: [0, 1],
-          outputRange: [-p, -f - _ - p - d * (Chunk120356.length - 1)]
+          outputRange: [-_, -f - p - _ - d * (Chunk120356.length - 1)]
         }), require)
       },
-      children: m
+      children: h
     })
   }
   render() {

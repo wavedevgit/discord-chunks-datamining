@@ -2,7 +2,7 @@
 /** chunk id: 157813, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,7 +33,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     className: t,
     isVertical: n
@@ -52,23 +52,23 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     channelId: t,
     className: n,
     isParticipantsOpen: a,
     isVertical: s = false,
-    hideTooltip: p = false
+    hideTooltip: _ = false
   } = e;
 
-  function h() {
+  function m() {
     l.Z.toggleParticipants(t, !a)
   }
-  let m = i.useCallback(e => {
+  let h = i.useCallback(e => {
     let {
       className: t
     } = e;
-    return a ? (0, r.jsx)(_, {
+    return a ? (0, r.jsx)(p, {
       className: t,
       isVertical: s
     }) : (0, r.jsx)(f, {
@@ -79,8 +79,8 @@ function p(e) {
   return (0, r.jsx)(c.Z, {
     label: a ? u.intl.string(u.t.QJMRUB) : u.intl.string(u.t.vZiwmG),
     className: o()(d.participantsButton, n),
-    onClick: h,
-    iconComponent: m,
-    shouldShowTooltip: !p
+    onClick: m,
+    iconComponent: h,
+    shouldShowTooltip: !_
   })
 }

@@ -48,23 +48,23 @@ function u(e, t) {
 }
 
 function d(e) {
-  var t = p();
+  var t = _();
   return function() {
-    var n, r = h(e);
-    return n = t ? Reflect.construct(r, arguments, h(this).constructor) : r.apply(this, arguments), f(this, n)
+    var n, r = m(e);
+    return n = t ? Reflect.construct(r, arguments, m(this).constructor) : r.apply(this, arguments), f(this, n)
   }
 }
 
 function f(e, t) {
-  return t && ("object" === a(t) || "function" == typeof t) ? t : _(e)
+  return t && ("object" === a(t) || "function" == typeof t) ? t : p(e)
 }
 
-function _(e) {
+function p(e) {
   if (true === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return e
 }
 
-function p() {
+function _() {
   if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) returnfalse;
   if ("function" == typeof Proxy) returntrue;
   try {
@@ -74,13 +74,13 @@ function p() {
   }
 }
 
-function h(e) {
-  return (h = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
+function m(e) {
+  return (m = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
     return e.__proto__ || Object.getPrototypeOf(e)
   })(e)
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -96,7 +96,7 @@ var g = function(e) {
     var e;
     o(this, n);
     for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
-    return m(_(e = t.call.apply(t, [this].concat(i))), "priority", 120), m(_(e), "incompatibleTokens", ["Y", "R", "q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]), e
+    return h(p(e = t.call.apply(t, [this].concat(i))), "priority", 120), h(p(e), "incompatibleTokens", ["Y", "R", "q", "M", "L", "w", "I", "d", "D", "i", "e", "c", "t", "T"]), e
   }
   return l(n, [{
     key: "parse",

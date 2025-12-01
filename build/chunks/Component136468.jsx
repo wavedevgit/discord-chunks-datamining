@@ -2,7 +2,7 @@
 /** chunk id: 136468, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => _
+  r: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,15 +50,15 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function p(e) {
   var t, n;
   let c = i.useContext(o.KJ),
     d = null == c || null == (n = c.experiments) || null == (t = n.enabledExperiments) ? true : t.includes("mana-toggle-inputs"),
     {
-      switchIconsEnabled: _
+      switchIconsEnabled: p
     } = i.useContext(a.S);
   if (d) {
-    let t = true !== e.hasIcon ? e.hasIcon : _;
+    let t = true !== e.hasIcon ? e.hasIcon : p;
     return (0, r.jsx)(s.k, f(u({}, e), {
       hasIcon: t
     }))

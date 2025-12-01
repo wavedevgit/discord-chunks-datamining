@@ -2,8 +2,8 @@
 /** chunk id: 734934, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  oW: () => p,
-  p: () => _
+  oW: () => _,
+  p: () => p
 });
 var Chunk381499 = require("./381499.js"),
   Chunk668781 = require("./668781.js"),
@@ -16,13 +16,13 @@ var Chunk381499 = require("./381499.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _() {
+function p() {
   let e = Chunk695346.QZ.useSetting(),
     t = Chunk695346.fv.useSetting();
   return module && ("0" === exports || new Date(Number(exports)).getTime() - new Date().getTime() > 0)
 }
 
-function p(e, t) {
+function _(e, t) {
   let n = o.QZ.getSetting();
   s.hW.updateAsync("notifications", n => {
     n.quietMode = r.D5.create({

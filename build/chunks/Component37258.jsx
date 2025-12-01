@@ -2,7 +2,7 @@
 /** chunk id: 37258, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -36,9 +36,9 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -46,7 +46,7 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -54,25 +54,25 @@ function p(e, t) {
   return i
 }
 
-function h(e) {
+function m(e) {
   var {
     label: t,
     onAction: n,
     icon: d
-  } = e, p = _(e, ["label", "onAction", "icon"]);
+  } = e, _ = p(e, ["label", "onAction", "icon"]);
   let {
-    analyticsLocations: h
+    analyticsLocations: m
   } = (0, a.ZP)(), {
-    context: m
+    context: h
   } = (0, s.KZ)(), g = (0, o.Aq)(), E = (0, o.bp)();
   return (0, r.jsx)(i.sNh, {
     id: "user-profile",
     label: null != t ? t : u.intl.string(u.t.LYju5J),
     action: () => {
       null == n || n(), (0, l.openUserProfileModal)(f({
-        sourceAnalyticsLocations: h,
+        sourceAnalyticsLocations: m,
         appContext: E
-      }, m, p)), g.dispatch(c.CkL.POPOUT_CLOSE)
+      }, h, _)), g.dispatch(c.CkL.POPOUT_CLOSE)
     },
     icon: d
   })

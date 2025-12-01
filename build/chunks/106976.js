@@ -5,7 +5,7 @@ require.d(exports, {
   i1: () => d,
   rx: () => u,
   sB: () => f,
-  vY: () => _
+  vY: () => p
 }), require("./953529.js"), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk821849 = require("./821849.js"),
@@ -105,7 +105,7 @@ function f(e) {
     guildId: e
   })
 }
-async function _(e) {
+async function p(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
   r.Z.dispatch({
     type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN",
@@ -123,7 +123,7 @@ async function _(e) {
       if (t.subscription_plans[0].id === e) return i.GZ(t.id, true, true, true)
     })), c(o)
   } catch (n) {
-    if ("status" in n && 429 === n.status && t < 10) await _(e, ++t);
+    if ("status" in n && 429 === n.status && t < 10) await p(e, ++t);
     else throw n
   }
 }

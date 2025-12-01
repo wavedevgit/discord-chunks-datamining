@@ -4,13 +4,13 @@
 require.d(exports, {
   C5: () => b,
   Ff: () => v,
-  Ij: () => h,
+  Ij: () => m,
   L0: () => o,
-  MY: () => p,
+  MY: () => _,
   N8: () => f,
-  PB: () => I,
+  PB: () => S,
   SW: () => O,
-  Uo: () => _,
+  Uo: () => p,
   WV: () => y,
   X_: () => l,
   _T: () => c,
@@ -19,8 +19,8 @@ require.d(exports, {
   pC: () => i,
   qj: () => E,
   sX: () => g,
-  u: () => T,
-  ut: () => m,
+  u: () => I,
+  ut: () => h,
   vJ: () => a,
   xT: () => d
 });
@@ -36,17 +36,17 @@ let a = 432,
   u = 2400,
   d = 960,
   f = 2400,
-  _ = 600,
-  p = 17 / 6,
-  h = 16 / 9,
-  m = 2.5,
+  p = 600,
+  _ = 17 / 6,
+  m = 16 / 9,
+  h = 2.5,
   g = 4,
   E = 432 / (17 / 6),
   b = 432 / (16 / 9),
   y = 172.8,
   O = 108,
   v = Chunk678916.HE.width / Chunk678916.HE.height,
-  I = a / v;
-var T = function(e) {
+  S = a / v;
+var I = function(e) {
   return e[e.CROP_GIF_START = 0] = "CROP_GIF_START", e[e.CROP_GIF_COMPLETE = 1] = "CROP_GIF_COMPLETE", e[e.CROP_GIF_ERROR = 2] = "CROP_GIF_ERROR", e
 }({})

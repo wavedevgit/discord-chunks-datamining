@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   E: () => d,
-  H: () => p
+  H: () => _
 });
 var Chunk31775 = require("./31775.js"),
   i = require.n(Chunk31775),
@@ -41,15 +41,15 @@ let f = new(i())({
   maxAge: 1e4
 });
 
-function _(e, t) {
+function p(e, t) {
   return a.tn.get({
     url: c.ANM.GUILD_ROLE_MEMBER_IDS(e, t),
     rejectWithError: false
   }).then(t => (s.Z.requestMembersById(e, t.body, false), t.body.length))
 }
 
-function p(e, t) {
+function _(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     r = "".concat(e, "-").concat(t);
-  return n && null != f.get(r) ? Promise.resolve(null) : (f.set(r, true), _(e, t))
+  return n && null != f.get(r) ? Promise.resolve(null) : (f.set(r, true), p(e, t))
 }

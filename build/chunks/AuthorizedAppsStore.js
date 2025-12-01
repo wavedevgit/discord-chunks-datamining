@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   FetchState: () => u,
-  default: () => I
+  default: () => S
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -24,26 +24,26 @@ var u = function(e) {
 }({});
 let d = new Map,
   f = [],
-  _ = [],
-  p = "NOT_FETCHED",
-  h = new Map;
+  p = [],
+  _ = "NOT_FETCHED",
+  m = new Map;
 
-function m() {
-  p = "FETCHING", h.clear()
+function h() {
+  _ = "FETCHING", m.clear()
 }
 
 function g(e) {
-  h.set(e.applicationId, "FETCHING")
+  m.set(e.applicationId, "FETCHING")
 }
 
 function E(e) {
-  h.set(e.applicationId, "FETCHED"), e.tokens.forEach(e => {
-    f = f.filter(t => t.id !== e.id), d.set(e.application.id, e), f.push(e), null == e.application.parent_id && _.push(e)
+  m.set(e.applicationId, "FETCHED"), e.tokens.forEach(e => {
+    f = f.filter(t => t.id !== e.id), d.set(e.application.id, e), f.push(e), null == e.application.parent_id && p.push(e)
   })
 }
 
 function b(e) {
-  p = "FETCHED", h.clear(), d = new Map(e.tokens.map(e => [e.application.id, e])), _ = (f = e.tokens).filter(e => {
+  _ = "FETCHED", m.clear(), d = new Map(e.tokens.map(e => [e.application.id, e])), p = (f = e.tokens).filter(e => {
     let {
       application: t
     } = e;
@@ -62,7 +62,7 @@ function y(e) {
       application: t
     } = e;
     return t.id !== i.application.id
-  }), _ = _.filter(e => {
+  }), p = p.filter(e => {
     let {
       application: t
     } = e;
@@ -73,7 +73,7 @@ function y(e) {
     application: n,
     scopes: r
   };
-  d.set(a.application.id, a), f = [...f, a], null == a.application.parent_id && (_ = [..._, a])
+  d.set(a.application.id, a), f = [...f, a], null == a.application.parent_id && (p = [...p, a])
 }
 
 function O(e) {
@@ -87,7 +87,7 @@ function O(e) {
       id: t
     } = e;
     return t !== r.id
-  }), _ = _.filter(e => {
+  }), p = p.filter(e => {
     let {
       id: t
     } = e;
@@ -106,19 +106,19 @@ class v extends(r = Chunk442837.ZP.Store) {
     return f
   }
   getNewestTokensForNonChildrenApplications() {
-    return _
+    return p
   }
   getFetchState() {
-    return p
+    return _
   }
   getFetchStateForApplication(e) {
     var t;
-    return "FETCHED" === p ? p : null != (t = h.get(e)) ? t : p
+    return "FETCHED" === _ ? _ : null != (t = m.get(e)) ? t : _
   }
 }
 c(v, "displayName", "AuthorizedAppsStore");
-let I = new v(Chunk570140.Z, {
-  USER_AUTHORIZED_APPS_REQUEST: m,
+let S = new v(Chunk570140.Z, {
+  USER_AUTHORIZED_APPS_REQUEST: h,
   USER_AUTHORIZED_APPS_REQUEST_BY_ID: g,
   USER_AUTHORIZED_APPS_UPDATE: b,
   USER_AUTHORIZED_APPS_UPDATE_BY_ID: E,

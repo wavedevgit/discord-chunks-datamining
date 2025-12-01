@@ -46,14 +46,14 @@ function f(e) {
   return (0, r.jsxs)("div", {
     className: a()(c.header, u),
     children: [(0, r.jsxs)("div", {
-      children: [(0, r.jsx)(_, {
+      children: [(0, r.jsx)(p, {
         badge: o
       }), (0, r.jsx)(l.Heading, {
         variant: "heading-md/semibold",
         className: c.title,
         children: n
       })]
-    }), (0, r.jsx)(p, {
+    }), (0, r.jsx)(_, {
       body: i
     }), null != d && (0, r.jsx)(s.Anchor, {
       onClick: d.onClick,
@@ -69,7 +69,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     badge: t
   } = e;
@@ -81,7 +81,7 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     body: t
   } = e;

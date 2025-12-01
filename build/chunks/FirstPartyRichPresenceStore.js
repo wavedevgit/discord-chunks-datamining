@@ -2,7 +2,7 @@
 /** chunk id: 406066, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk348327 = require("./348327.js"),
   a = require.n(Chunk348327),
@@ -37,4 +37,4 @@ class f extends(r = Chunk442837.ZP.Store) {
   }
 }
 l(f, "displayName", "FirstPartyRichPresenceStore");
-let _ = new f(Chunk570140.Z)
+let p = new f(Chunk570140.Z)

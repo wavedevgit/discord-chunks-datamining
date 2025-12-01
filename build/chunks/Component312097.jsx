@@ -2,8 +2,8 @@
 /** chunk id: 312097, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => p,
-  Q: () => _
+  K: () => _,
+  Q: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -51,26 +51,26 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = "Media Viewer Modal";
+let p = "Media Viewer Modal";
 
-function p(e, t) {
-  var c, f, p, {
-      location: h,
-      contextKey: m
+function _(e, t) {
+  var c, f, _, {
+      location: m,
+      contextKey: h
     } = e,
     g = d(e, ["location", "contextKey"]);
-  let E = null == (f = g.items[null != (p = g.startingIndex) ? p : 0]) || null == (c = f.sourceMetadata) ? true : c.message,
+  let E = null == (f = g.items[null != (_ = g.startingIndex) ? _ : 0]) || null == (c = f.sourceMetadata) ? true : c.message,
     b = a.Z.getChannel(null == E ? true : E.channel_id);
   (0, s.fS)({
     guildId: null == b ? true : b.guild_id,
     channelId: null == b ? true : b.id,
     channelType: null == b ? true : b.type,
     numMediaItems: g.items.length,
-    source: h,
+    source: m,
     hasMediaOptions: !g.shouldHideMediaOptions
   }), o.default.track(l.rMx.OPEN_MODAL, {
     type: l.jXE.MEDIA_VIEWER,
-    source: h,
+    source: m,
     guild_id: null == b ? true : b.guild_id,
     channel_id: null == b ? true : b.id,
     channel_type: null == b ? true : b.type
@@ -80,8 +80,8 @@ function p(e, t) {
     } = await n.e("39476").then(n.bind(n, 97594));
     return t => (0, r.jsx)(e, u({}, t, g))
   }, {
-    modalKey: _,
-    contextKey: m,
+    modalKey: p,
+    contextKey: h,
     onCloseCallback: s.VO,
     backdropStyle: i.fCB.LIGHTBOX,
     stackingBehavior: t

@@ -18,7 +18,7 @@ var Chunk95015 = require("./95015.js"),
   Chunk176505 = require("./176505.js"),
   Chunk372897 = require("./372897.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,35 +30,35 @@ let g = null,
   E = null;
 class b extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), m(this, "actions", {
+    super(...e), h(this, "actions", {
       GUILD_DELETE: e => this.handleGuildDelete(e),
       CHANNEL_SELECT: e => this.handleChannelSelect(e),
       POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
-    }), m(this, "handleConnectionOpen", e => {
+    }), h(this, "handleConnectionOpen", e => {
       var t;
       null != (g = null != (t = null != g ? g : l.Z.getGuildId()) ? t : null) && this._openOnboardingIfIncomplete(g)
-    }), m(this, "handleChannelSelect", e => {
+    }), h(this, "handleChannelSelect", e => {
       let {
         guildId: t,
         channelId: n
       } = e;
       if (g === t && E === n || (g = null != t ? t : null, E = null != n ? n : null, null == g || null == E)) return;
       let r = s.Z.getGuild(t);
-      null != r && r.features.has(_.GuildFeatures.COMMUNITY) && d.Z.shouldFetchPrompts(g, 8 * c.Z.Millis.HOUR) && (0, u.rj)(g), this._openOnboardingIfIncomplete(g, n)
-    }), m(this, "handleGuildDelete", e => {
+      null != r && r.features.has(p.GuildFeatures.COMMUNITY) && d.Z.shouldFetchPrompts(g, 8 * c.Z.Millis.HOUR) && (0, u.rj)(g), this._openOnboardingIfIncomplete(g, n)
+    }), h(this, "handleGuildDelete", e => {
       let {
         guild: t
       } = e;
       (0, f.EI)(t.id)
-    }), m(this, "_openOnboardingIfIncomplete", async (e, t) => {
+    }), h(this, "_openOnboardingIfIncomplete", async (e, t) => {
       var n, i;
-      if ((0, f.hz)(e)) return void(0, a.uL)(_.Z5c.CHANNEL(e, p.oC.GUILD_ONBOARDING));
+      if ((0, f.hz)(e)) return void(0, a.uL)(p.Z5c.CHANNEL(e, _.oC.GUILD_ONBOARDING));
       let l = s.Z.getGuild(e);
-      if (null == l || !l.features.has(_.GuildFeatures.GUILD_ONBOARDING)) return;
+      if (null == l || !l.features.has(p.GuildFeatures.GUILD_ONBOARDING)) return;
       let c = o.ZP.getSelfMember(e);
-      !(null == c || (0, r.yE)(null != (n = c.flags) ? n : 0, h.q.COMPLETED_ONBOARDING)) && (0, r.yE)(null != (i = c.flags) ? i : 0, h.q.STARTED_ONBOARDING) && (await (0, f.default)({
+      !(null == c || (0, r.yE)(null != (n = c.flags) ? n : 0, m.q.COMPLETED_ONBOARDING)) && (0, r.yE)(null != (i = c.flags) ? i : 0, m.q.STARTED_ONBOARDING) && (await (0, f.default)({
         guildId: e
-      }), (0, a.uL)(_.Z5c.CHANNEL(e, t)))
+      }), (0, a.uL)(p.Z5c.CHANNEL(e, t)))
     })
   }
 }

@@ -92,11 +92,11 @@ let v = [{
       useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHq)
     }
   }],
-  I = () => (0, Chunk54381.jsx)(Chunk481060.Text, {
+  S = () => (0, Chunk54381.jsx)(Chunk481060.Text, {
     variant: "text-sm/normal",
     children: "Purchase button is disabled for this story"
   }),
-  T = e => {
+  I = e => {
     let {
       skuId: t,
       isGift: n,
@@ -105,13 +105,13 @@ let v = [{
       analyticsLocations: a,
       loadId: o,
       handleClose: c,
-      handleComplete: _,
-      isFetching: h,
-      sku: m
+      handleComplete: p,
+      isFetching: m,
+      sku: h
     } = (0, d.a0)({
       skuId: t,
       isGift: n,
-      applicationId: p.XAJ
+      applicationId: _.XAJ
     }), E = (e, t, i) => n ? (0, r.jsx)(s.Z, {
       step: i,
       onClose: () => t(false)
@@ -119,27 +119,27 @@ let v = [{
       step: i,
       onClose: () => t(false)
     }), b = u.ZP.isPremiumSku(t);
-    return h || null == m || b ? (0, r.jsx)(f.T, {}) : (0, r.jsxs)("div", {
+    return m || null == h || b ? (0, r.jsx)(f.T, {}) : (0, r.jsxs)("div", {
       className: g.verticalContainerCentered,
       children: [(0, r.jsx)(d.Vy, {
         stepConfigs: v,
         analyticsLocations: a,
-        applicationId: p.XAJ,
+        applicationId: _.XAJ,
         initialPlanId: true,
         skuId: t,
         isGift: n,
         hideErrors: i,
         loadId: o,
-        purchaseType: p.GZQ.ONE_TIME,
+        purchaseType: _.GZQ.ONE_TIME,
         disablePurchases: true,
         excludeSubscriptionPlansBySKU: true,
         renderHeader: E,
         onClose: c,
-        onComplete: _
-      }), (0, r.jsx)(I, {})]
+        onComplete: p
+      }), (0, r.jsx)(S, {})]
     })
   },
-  S = e => {
+  T = e => {
     let {
       skuId: t,
       isGift: n,
@@ -149,34 +149,34 @@ let v = [{
       loadId: s,
       handleClose: l,
       handleComplete: c,
-      isFetching: _,
-      sku: m
+      isFetching: p,
+      sku: h
     } = (0, d.a0)({
       skuId: t,
       isGift: n,
-      applicationId: h.CL
-    }), E = u.ZP.isPremiumSku(t), b = E ? h.mn[t] : true, [y, O] = i.useState(b), T = i.useRef(false);
+      applicationId: m.CL
+    }), E = u.ZP.isPremiumSku(t), b = E ? m.mn[t] : true, [y, O] = i.useState(b), I = i.useRef(false);
     i.useEffect(() => {
-      T.current || null == b || (T.current = true, O(b))
+      I.current || null == b || (I.current = true, O(b))
     }, [b, y]);
     let {
-      isLoadedForPremiumSKUs: S,
+      isLoadedForPremiumSKUs: T,
       selectedPlan: A
     } = (0, d.rC)({
       subscriptionPlanId: y
     });
-    return !_ && null != m && S && E && null != A ? (0, r.jsxs)("div", {
+    return !p && null != h && T && E && null != A ? (0, r.jsxs)("div", {
       className: g.verticalContainerCentered,
       children: [(0, r.jsx)(d.Vy, {
         stepConfigs: v,
         analyticsLocations: o,
-        applicationId: h.CL,
+        applicationId: m.CL,
         initialPlanId: b,
         skuId: t,
         isGift: n,
         hideErrors: a,
         loadId: s,
-        purchaseType: p.GZQ.SUBSCRIPTION,
+        purchaseType: _.GZQ.SUBSCRIPTION,
         disablePurchases: true,
         onClose: l,
         onComplete: c,
@@ -184,7 +184,7 @@ let v = [{
           selectedPlan: A,
           setSelectedPlanId: O
         }
-      }), (0, r.jsx)(I, {})]
+      }), (0, r.jsx)(S, {})]
     }) : (0, r.jsx)(f.T, {})
   },
   A = {
@@ -205,7 +205,7 @@ let v = [{
     stories: [{
       name: "Collectibles Review Step",
       id: "collectibles-checkout-review-step",
-      component: T,
+      component: I,
       controls: b({
         skuId: {
           label: "SKU ID",
@@ -217,7 +217,7 @@ let v = [{
     }, {
       name: "Premium Review Step",
       id: "premium-checkout-review-step",
-      component: S,
+      component: T,
       controls: b({
         skuId: {
           label: "SKU ID",

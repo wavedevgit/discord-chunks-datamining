@@ -2,7 +2,7 @@
 /** chunk id: 251728, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => h
+  Y: () => m
 });
 var Chunk685816 = require("./685816.js"),
   Chunk549616 = require("./549616.js"),
@@ -16,7 +16,7 @@ var Chunk685816 = require("./685816.js"),
   Chunk690913 = require("./690913.js"),
   Chunk608413 = require("./608413.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,13 +24,13 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h {
+class m {
   static fromServer(e) {
-    return new h(e)
+    return new m(e)
   }
   constructor(e) {
     var t;
-    p(this, "shopBlocks", true), p(this, "categories", true), p(this, "userDiscounts", true), this.shopBlocks = e.shop_blocks.map(e => {
+    _(this, "shopBlocks", true), _(this, "categories", true), _(this, "userDiscounts", true), this.shopBlocks = e.shop_blocks.map(e => {
       switch (e.type) {
         case r.z.HERO:
           return c.s.fromServer(e);
@@ -39,7 +39,7 @@ class h {
         case r.z.FEED:
           return l.K.fromServer(e);
         case r.z.WIDE_BANNER:
-          return _.j.fromServer(e);
+          return p.j.fromServer(e);
         case r.z.SHELF:
           return f.O.fromServer(e);
         case r.z.COUNTDOWN_TIMER:

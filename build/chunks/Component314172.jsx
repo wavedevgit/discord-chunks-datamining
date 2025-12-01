@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk880033 = require("./880033.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -61,7 +61,7 @@ function b(e) {
   let {
     guild: t,
     guildMember: n,
-    numRoles: h,
+    numRoles: m,
     highestRole: g,
     onAddRole: b,
     buttonRef: y
@@ -86,22 +86,22 @@ function b(e) {
     },
     children: e => (0, r.jsx)(o.u, {
       asContainer: true,
-      text: _.intl.string(_.t.icyMgc),
+      text: p.intl.string(p.t.icyMgc),
       "aria-label": false,
-      shouldShow: h > 0,
-      children: (0, r.jsxs)(s.P3F, E(m({
+      shouldShow: m > 0,
+      children: (0, r.jsxs)(s.P3F, E(h({
         innerRef: y,
-        className: p.button,
+        className: _.button,
         role: "button",
-        "aria-label": _.intl.string(_.t.icyMgc)
+        "aria-label": p.intl.string(p.t.icyMgc)
       }, e), {
         children: [(0, r.jsx)(s.qJs, {
           size: "xs",
           color: "currentColor"
-        }), 0 === h && (0, r.jsx)(s.Text, {
+        }), 0 === m && (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: _.intl.string(_.t.icyMgc)
+          children: p.intl.string(p.t.icyMgc)
         })]
       }))
     })

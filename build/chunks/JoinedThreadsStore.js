@@ -2,7 +2,7 @@
 /** chunk id: 569471, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 }), require("./388685.js"), require("./997841.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,17 +45,17 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = {},
-  m = new Chunk798140.ZP,
+let m = {},
+  h = new Chunk798140.ZP,
   g = new Set;
 
 function E(e) {
-  h = a()(h).reject(t => t.guildId === e).keyBy("threadId").value()
+  m = a()(m).reject(t => t.guildId === e).keyBy("threadId").value()
 }
 
 function b(e) {
@@ -64,7 +64,7 @@ function b(e) {
 }
 
 function y(e) {
-  c.AW.has(e.type) && null != e.member && (h[e.id] = {
+  c.AW.has(e.type) && null != e.member && (m[e.id] = {
     threadId: e.id,
     guildId: e.guild_id,
     flags: e.member.flags,
@@ -75,35 +75,35 @@ function y(e) {
 }
 
 function O(e) {
-  let t = h[e];
-  m.clearTimer(e), true === t.muted ? ((g = new Set(g)).add(e), m.setTimer(e, t.muteConfig, () => {
-    h[e].muted = false, (g = new Set(g)).delete(e), x.emitChange()
-  }) && (h[e].muted = false, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
+  let t = m[e];
+  h.clearTimer(e), true === t.muted ? ((g = new Set(g)).add(e), h.setTimer(e, t.muteConfig, () => {
+    m[e].muted = false, (g = new Set(g)).delete(e), L.emitChange()
+  }) && (m[e].muted = false, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
 function v(e) {
-  m.reset(), g = new Set, h = {}, e.guilds.forEach(e => {
+  h.reset(), g = new Set, m = {}, e.guilds.forEach(e => {
     b(e)
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     joinedThreads: t
   } = e;
-  h = a()(t).map(e => p(f({}, e), {
+  m = a()(t).map(e => _(f({}, e), {
     joinTimestamp: new Date(e.joinTimestamp)
   })).keyBy("threadId").value()
 }
 
-function T(e) {
+function I(e) {
   let {
     guild: t
   } = e;
   E(t.id), b(t)
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: t
   } = e;
@@ -123,7 +123,7 @@ function C(e) {
     members: n
   } = e;
   null != t && null != n && n.forEach(e => {
-    h[e.id] = {
+    m[e.id] = {
       threadId: e.id,
       guildId: t,
       flags: e.flags,
@@ -144,7 +144,7 @@ function N(e) {
       members: n
     } = e;
     n.forEach(e => {
-      h[e.id] = {
+      m[e.id] = {
         threadId: e.id,
         guildId: t,
         flags: e.flags,
@@ -156,17 +156,17 @@ function N(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     channel: t
   } = e;
-  if (!(t.id in h)) returnfalse;
-  h = f({}, h), delete h[t.id]
+  if (!(t.id in m)) returnfalse;
+  m = f({}, m), delete m[t.id]
 }
 
-function P(e) {
+function R(e) {
   if (u.default.getId() !== e.userId) returnfalse;
-  h[e.id] = {
+  m[e.id] = {
     threadId: e.id,
     guildId: e.guildId,
     flags: e.flags,
@@ -176,7 +176,7 @@ function P(e) {
   }, O(e.id)
 }
 
-function D(e) {
+function w(e) {
   let {
     id: t,
     userId: n,
@@ -184,7 +184,7 @@ function D(e) {
     isJoining: i
   } = e;
   if (u.default.getId() !== n || null === r) returnfalse;
-  i ? h[t] = {
+  i ? m[t] = {
     threadId: t,
     guildId: r,
     flags: 0,
@@ -193,14 +193,14 @@ function D(e) {
       end_time: true
     },
     joinTimestamp: new Date
-  } : delete h[t]
+  } : delete m[t]
 }
 
-function w(e) {
+function D(e) {
   var t, n;
   let r = false;
-  return (null == (t = e.removedMemberIds) ? true : t.includes(u.default.getId())) && e.id in h && (h = f({}, h), delete h[e.id], r = true), null == (n = e.addedMembers) || n.forEach(t => {
-    t.userId === u.default.getId() && ((h = f({}, h))[e.id] = {
+  return (null == (t = e.removedMemberIds) ? true : t.includes(u.default.getId())) && e.id in m && (m = f({}, m), delete m[e.id], r = true), null == (n = e.addedMembers) || n.forEach(t => {
+    t.userId === u.default.getId() && ((m = f({}, m))[e.id] = {
       threadId: e.id,
       guildId: e.guildId,
       flags: t.flags,
@@ -210,27 +210,27 @@ function w(e) {
     }, O(e.id), r = true)
   }), r
 }
-class L extends(r = Chunk442837.ZP.Store) {
+class x extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default)
   }
   hasJoined(e) {
-    return e in h
+    return e in m
   }
   joinTimestamp(e) {
     var t;
-    return null == (t = h[e]) ? true : t.joinTimestamp
+    return null == (t = m[e]) ? true : t.joinTimestamp
   }
   flags(e) {
     var t;
-    return null == (t = h[e]) ? true : t.flags
+    return null == (t = m[e]) ? true : t.flags
   }
   getInitialOverlayState() {
-    return Object.values(h)
+    return Object.values(m)
   }
   getMuteConfig(e) {
     var t;
-    return null == (t = h[e]) ? true : t.muteConfig
+    return null == (t = m[e]) ? true : t.muteConfig
   }
   getMutedThreads() {
     return g
@@ -239,21 +239,21 @@ class L extends(r = Chunk442837.ZP.Store) {
     return g.has(e)
   }
 }
-d(L, "displayName", "JoinedThreadsStore");
-let x = new L(Chunk570140.Z, {
+d(x, "displayName", "JoinedThreadsStore");
+let L = new x(Chunk570140.Z, {
     CONNECTION_OPEN: v,
-    OVERLAY_INITIALIZE: I,
-    GUILD_CREATE: T,
-    GUILD_DELETE: S,
+    OVERLAY_INITIALIZE: S,
+    GUILD_CREATE: I,
+    GUILD_DELETE: T,
     THREAD_CREATE: A,
     THREAD_LIST_SYNC: C,
     SEARCH_MESSAGES_SUCCESS: N,
     MOD_VIEW_SEARCH_MESSAGES_SUCCESS: N,
     LOAD_THREADS_SUCCESS: C,
     LOAD_ARCHIVED_THREADS_SUCCESS: C,
-    THREAD_DELETE: R,
-    THREAD_MEMBER_UPDATE: P,
-    THREAD_MEMBER_LOCAL_UPDATE: D,
-    THREAD_MEMBERS_UPDATE: w
+    THREAD_DELETE: P,
+    THREAD_MEMBER_UPDATE: R,
+    THREAD_MEMBER_LOCAL_UPDATE: w,
+    THREAD_MEMBERS_UPDATE: D
   }),
-  M = x
+  j = L

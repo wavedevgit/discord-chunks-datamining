@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk430864 = require("./430864.js");
 
 function g(e, t) {
-  return e.type === _.uaV.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(_.iLy.SOURCE_MESSAGE_DELETED) ? p.intl.string(p.t.JOtgSw) : t
+  return e.type === p.uaV.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(p.iLy.SOURCE_MESSAGE_DELETED) ? _.intl.string(_.t.JOtgSw) : t
 }
 
 function E(e) {
@@ -32,26 +32,26 @@ function E(e) {
     message: a,
     children: s,
     content: c,
-    onUpdate: p,
+    onUpdate: _,
     contentRef: E,
     compact: b
-  } = e, y = a.state === _.yb.SEND_FAILED, O = a.state === _.yb.SENDING, v = a.isCommandType(), I = null == (t = a.editedTimestamp) ? true : t.toString(), T = i.useRef(false);
+  } = e, y = a.state === p.yb.SEND_FAILED, O = a.state === p.yb.SENDING, v = a.isCommandType(), S = null == (t = a.editedTimestamp) ? true : t.toString(), I = i.useRef(false);
   i.useLayoutEffect(() => {
-    T.current ? null != p && p() : T.current = true
-  }, [p, a.content, c, I, s]);
-  let S = u.Y.useConfig({
+    I.current ? null != _ && _() : I.current = true
+  }, [_, a.content, c, S, s]);
+  let T = u.Y.useConfig({
     location: "MessageContent"
   }).alignMessagesStart;
   return (0, r.jsxs)("div", {
     id: (0, d.ut)(a),
     ref: E,
-    className: o()(n, m.markup, {
-      [h.messageContent]: true,
-      [h.isSending]: O && !v,
-      [h.markupBidi]: S,
-      [h.markupRtl]: !S && "rtl" === l()(a.content),
-      [h.isFailed]: y,
-      [h.isUnsupported]: a.isUnsupported
+    className: o()(n, h.markup, {
+      [m.messageContent]: true,
+      [m.isSending]: O && !v,
+      [m.markupBidi]: T,
+      [m.markupRtl]: !T && "rtl" === l()(a.content),
+      [m.isFailed]: y,
+      [m.isUnsupported]: a.isUnsupported
     }),
     children: [null != s ? s : g(a, c), (0, r.jsx)(f.Z, {
       message: a,

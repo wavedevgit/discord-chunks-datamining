@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   $V: () => C,
-  Bz: () => R,
-  ZP: () => L,
-  hc: () => P
+  Bz: () => P,
+  ZP: () => x,
+  hc: () => R
 }), require("./539854.js"), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -48,7 +48,7 @@ function v(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,13 +59,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -86,10 +86,10 @@ var C = function(e) {
   return e[e.SEND = 0] = "SEND", e[e.EDIT = 1] = "EDIT", e[e.COMMAND = 2] = "COMMAND", e[e.SEND_ANNOUNCEMENT = 3] = "SEND_ANNOUNCEMENT", e
 }({});
 let N = e => 0 === e.type || 3 === e.type,
-  R = e => 1 === e.type,
-  P = e => N(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
-  D = [+Chunk70956.Z.Millis.MINUTE, 5 * Chunk70956.Z.Millis.MINUTE];
-class w extends Chunk651655.Z {
+  P = e => 1 === e.type,
+  R = e => N(e) ? e.message.nonce : P(e) ? e.message.messageId : e.message.data.id,
+  w = [+Chunk70956.Z.Millis.MINUTE, 5 * Chunk70956.Z.Millis.MINUTE];
+class D extends Chunk651655.Z {
   isFull() {
     return this.queue.length >= this.maxSize
   }
@@ -125,7 +125,7 @@ class w extends Chunk651655.Z {
     return this.queue.push(...n), this.logger.log("Cancel pending send requests", t.length), t
   }
   startQueueMetricTimers(e) {
-    let t = D.map(e => setTimeout(() => {
+    let t = w.map(e => setTimeout(() => {
       (0, s.yw)(b.rMx.SEND_MESSAGE_QUEUED, {
         queued_duration_ms: e
       })
@@ -143,7 +143,7 @@ class w extends Chunk651655.Z {
       else if (429 === n.status) {
         let e = parseInt(n.headers["retry-after"]);
         isNaN(e) ? t(null, n) : t({
-          retryAfter: e * p.Z.Millis.SECOND
+          retryAfter: e * _.Z.Millis.SECOND
         })
       } else t(null, n)
     }
@@ -153,10 +153,10 @@ class w extends Chunk651655.Z {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
+    } = e, o = T(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
       location: s
-    } : true, f = (0, u.d)(), p = v({
-      mobile_network_type: _.Z.getType()
+    } : true, f = (0, u.d)(), _ = v({
+      mobile_network_type: p.Z.getType()
     }, o, null != f && {
       signal_strength: f
     });
@@ -171,30 +171,30 @@ class w extends Chunk651655.Z {
       });
       return
     }
-    let h = this.createResponseHandler(e.nonce, t),
-      m = new AbortController;
-    this.startQueueMetricTimers(e.nonce), a.tn.post(T(v({
+    let m = this.createResponseHandler(e.nonce, t),
+      h = new AbortController;
+    this.startQueueMetricTimers(e.nonce), a.tn.post(I(v({
       url: b.ANM.MESSAGES(r),
-      body: p,
+      body: _,
       context: l,
       oldFormErrors: true
     }, y.hs), {
-      signal: m.signal,
+      signal: h.signal,
       rejectWithError: true,
       onRequestCreated: () => {
-        null != e.nonce && this.requests.set(e.nonce, m)
+        null != e.nonce && this.requests.set(e.nonce, h)
       }
-    }), h)
+    }), m)
   }
   handleSendAnnouncement(e, t) {
     var n;
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
+    } = e, o = T(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
       location: s
-    } : true, f = (0, u.d)(), p = v({
-      mobile_network_type: _.Z.getType()
+    } : true, f = (0, u.d)(), _ = v({
+      mobile_network_type: p.Z.getType()
     }, o, null != f && {
       signal_strength: f
     });
@@ -209,20 +209,20 @@ class w extends Chunk651655.Z {
       });
       return
     }
-    let h = this.createResponseHandler(e.nonce, t),
-      m = new AbortController;
-    this.startQueueMetricTimers(e.nonce), a.tn.post(T(v({
+    let m = this.createResponseHandler(e.nonce, t),
+      h = new AbortController;
+    this.startQueueMetricTimers(e.nonce), a.tn.post(I(v({
       url: b.ANM.MESSAGES_ANNOUNCEMENT(r),
-      body: p,
+      body: _,
       context: l,
       oldFormErrors: true
     }, y.hs), {
-      signal: m.signal,
+      signal: h.signal,
       rejectWithError: true,
       onRequestCreated: () => {
-        null != e.nonce && this.requests.set(e.nonce, m)
+        null != e.nonce && this.requests.set(e.nonce, h)
       }
-    }), h)
+    }), m)
   }
   handleCommand(e, t) {
     let {
@@ -233,9 +233,9 @@ class w extends Chunk651655.Z {
       nonce: c,
       attachments: u,
       maxSizeCallback: d,
-      analytics_location: _,
-      sectionName: p,
-      source: m
+      analytics_location: p,
+      sectionName: _,
+      source: h
     } = e, y = {
       type: o.B8.APPLICATION_COMMAND,
       application_id: n,
@@ -244,9 +244,9 @@ class w extends Chunk651655.Z {
       session_id: f.default.getSessionId(),
       data: l,
       nonce: c,
-      analytics_location: _,
-      section_name: p,
-      source: m
+      analytics_location: p,
+      section_name: _,
+      source: h
     };
     null != u && (y.data.attachments = u.map((e, t) => (i()(e.status === E.mw.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t))));
     let O = new AbortController;
@@ -259,7 +259,7 @@ class w extends Chunk651655.Z {
         this.requests.set(c, O), e.on("progress", e => {
           let {
             total: t
-          } = e, n = (0, h.dg)(r);
+          } = e, n = (0, m.dg)(r);
           null != t && t > n && (this.cancelRequest(c), null == d || d(n))
         })
       }
@@ -271,7 +271,7 @@ class w extends Chunk651655.Z {
         channelId: n,
         messageId: r,
         isCrossposted: i
-      } = e, o = S(e, ["channelId", "messageId", "isCrossposted"]);
+      } = e, o = T(e, ["channelId", "messageId", "isCrossposted"]);
       let s = new AbortController,
         l = this.createResponseHandler(r, t),
         c = {
@@ -289,4 +289,4 @@ class w extends Chunk651655.Z {
     }
   }
 }
-let L = new w
+let x = new D

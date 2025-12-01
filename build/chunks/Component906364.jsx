@@ -22,7 +22,7 @@ function l(e) {
     disabled: f = false
   } = e;
 
-  function _(e) {
+  function p(e) {
     l(e === d ? true : e)
   }
   return (0, r.jsx)(a.Z, {
@@ -33,7 +33,7 @@ function l(e) {
       placeholder: null != u ? u : o.intl.string(o.t.NPEUUu),
       maxLength: s,
       value: null != c ? c : d,
-      onChange: _,
+      onChange: p,
       disabled: f
     })
   })

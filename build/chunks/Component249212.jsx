@@ -2,7 +2,7 @@
 /** chunk id: 249212, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk46973 = require("./46973.js"),
@@ -15,15 +15,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 let Chunk66737 = require("./66737.js");
 
-function _(e) {
+function p(e) {
   var t;
   let {
     userId: n,
-    width: _,
-    avError: p,
-    selected: h = false,
-    noArt: m = false
-  } = e, g = null == (t = (0, s.hp)(p)) ? true : t.errorCode;
+    width: p,
+    avError: _,
+    selected: m = false,
+    noArt: h = false
+  } = e, g = null == (t = (0, s.hp)(_)) ? true : t.errorCode;
 
   function E() {
     (0, o.w)(i.Yn.DEFAULT, n), a.Z.setDisableLocalVideo(n, u.ZUi.DISABLED, i.Yn.DEFAULT, false), setTimeout(() => {
@@ -33,9 +33,9 @@ function _(e) {
   return (0, r.jsx)(c.Z, {
     artURL: f,
     header: d.intl.string(d.t["z+mxvo"]),
-    size: (0, c.L)(_),
-    noArt: m,
-    selected: h,
+    size: (0, c.L)(p),
+    noArt: h,
+    selected: m,
     description: d.intl.format(d.t.d486Wm, {
       helpUrl: l.Z.getArticleURL(u.BhN.VOICE_VIDEO_TROUBLESHOOTING)
     }),

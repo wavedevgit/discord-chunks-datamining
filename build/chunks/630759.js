@@ -3,18 +3,18 @@
 "use strict";
 require.d(exports, {
   J6: () => G,
-  LO: () => w,
-  TQ: () => D,
+  LO: () => D,
+  TQ: () => w,
   UB: () => H,
-  ZU: () => L,
-  Zn: () => x,
-  aZ: () => R,
-  bo: () => M,
-  fz: () => Y,
-  kK: () => k,
-  lg: () => W,
+  ZU: () => x,
+  Zn: () => L,
+  aZ: () => P,
+  bo: () => j,
+  fz: () => W,
+  kK: () => M,
+  lg: () => Y,
   om: () => F,
-  pL: () => P,
+  pL: () => R,
   uV: () => N,
   uX: () => V
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./388685.js");
@@ -48,97 +48,97 @@ function N() {
   return Chunk63063.Z.getArticleURL(Chunk981631.BhN.END_TO_END_ENCRYPTION)
 }
 
-function R() {
-  return Chunk63063.Z.getArticleURL(Chunk981631.BhN.END_TO_END_ENCRYPTION)
-}
-
 function P() {
   return Chunk63063.Z.getArticleURL(Chunk981631.BhN.END_TO_END_ENCRYPTION)
 }
 
-function D(e, t, n, r, i) {
-  n ? O.Z.createSecureFramesVerifiedKey(e, t) : O.Z.createSecureFramesTransientKey(e, t), (0, T.M1)({
+function R() {
+  return Chunk63063.Z.getArticleURL(Chunk981631.BhN.END_TO_END_ENCRYPTION)
+}
+
+function w(e, t, n, r, i) {
+  n ? O.Z.createSecureFramesVerifiedKey(e, t) : O.Z.createSecureFramesTransientKey(e, t), (0, I.M1)({
     channelId: r,
     userId: e,
     analyticsLocation: i
   })
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   if (n) {
     let n = (0, c.MK)(new Uint8Array(t));
     O.Z.deleteSecureFramesVerifiedKey(e, n)
   } else O.Z.deleteSecureFramesTransientKey(e)
 }
 
-function L(e, t) {
-  I.Z.openSecureFramesUpdateConfirmation({
+function x(e, t) {
+  S.Z.openSecureFramesUpdateConfirmation({
     title: C.intl.string(C.t.hdL152),
     subtitle: C.intl.string(C.t["8VGYKg"]),
     onConfirm: () => {
-      O.Z.deleteSecureFramesVerifiedKey(e, t), (0, T.Pn)()
+      O.Z.deleteSecureFramesVerifiedKey(e, t), (0, I.Pn)()
     }
   })
 }
 
-function x(e) {
-  let t = h.default.getUser(e),
+function L(e) {
+  let t = m.default.getUser(e),
     n = y.ZP.getName(t);
-  I.Z.openSecureFramesUpdateConfirmation({
+  S.Z.openSecureFramesUpdateConfirmation({
     title: C.intl.formatToPlainString(C.t.K6NGBy, {
       username: n
     }),
     subtitle: C.intl.string(C.t.F1BQK3),
     onConfirm: () => {
-      O.Z.deleteSecureFramesUserVerifiedKeys(e), (0, T.DF)()
+      O.Z.deleteSecureFramesUserVerifiedKeys(e), (0, I.DF)()
     }
   })
 }
 
-function M(e) {
+function j(e) {
   let t = s()(e),
     n = s()().diff(t, "s");
-  if (n > 12 * m.Z.Seconds.DAYS_30) {
-    let e = Math.round(n / (12 * m.Z.Seconds.DAYS_30));
+  if (n > 12 * h.Z.Seconds.DAYS_30) {
+    let e = Math.round(n / (12 * h.Z.Seconds.DAYS_30));
     return C.intl.formatToPlainString(C.t.F1wqkD, {
       count: e
     })
   }
-  if (n > m.Z.Seconds.DAYS_30) {
-    let e = Math.round(n / m.Z.Seconds.DAYS_30);
+  if (n > h.Z.Seconds.DAYS_30) {
+    let e = Math.round(n / h.Z.Seconds.DAYS_30);
     return C.intl.formatToPlainString(C.t["iT+b+2"], {
       count: e
     })
   }
-  if (n > 7 * m.Z.Seconds.DAY) {
-    let e = Math.round(n / (7 * m.Z.Seconds.DAY));
+  if (n > 7 * h.Z.Seconds.DAY) {
+    let e = Math.round(n / (7 * h.Z.Seconds.DAY));
     return C.intl.formatToPlainString(C.t.dLurKZ, {
       count: e
     })
   }
-  if (n > m.Z.Seconds.DAY) {
-    let e = Math.round(n / m.Z.Seconds.DAY);
+  if (n > h.Z.Seconds.DAY) {
+    let e = Math.round(n / h.Z.Seconds.DAY);
     return C.intl.formatToPlainString(C.t.LE8a2H, {
       count: e
     })
   }
-  if (n > m.Z.Seconds.HOUR) {
-    let e = Math.round(n / m.Z.Seconds.HOUR);
+  if (n > h.Z.Seconds.HOUR) {
+    let e = Math.round(n / h.Z.Seconds.HOUR);
     return C.intl.formatToPlainString(C.t.KULxVS, {
       count: e
     })
   } else {
-    if (!(n > m.Z.Seconds.MINUTE)) return C.intl.formatToPlainString(C.t["/w0Qpw"], {
+    if (!(n > h.Z.Seconds.MINUTE)) return C.intl.formatToPlainString(C.t["/w0Qpw"], {
       count: n
     });
-    let e = Math.round(n / m.Z.Seconds.MINUTE);
+    let e = Math.round(n / h.Z.Seconds.MINUTE);
     return C.intl.formatToPlainString(C.t.ws6rWq, {
       count: e
     })
   }
 }
 
-function k(e) {
+function M(e) {
   let {
     isCurrentUserKeyPersistent: t,
     isOtherUserKeyPersistent: n,
@@ -155,7 +155,7 @@ function k(e) {
     helpArticle: N()
   })
 }
-async function j(e) {
+async function k(e) {
   let t = d.default.getStaticAuthSessionId();
   return a()(null != t, "[getCurrentUserPublicKey] session id should not be null"), await f.Z.getMLSSigningKey(t, e)
 }
@@ -178,11 +178,11 @@ async function G(e, t, n) {
     throw b.Z.captureException(e), e
   }
 }
-async function B(e) {
+async function Z(e) {
   let {
     key: t,
     signature: n
-  } = await j(e);
+  } = await k(e);
   try {
     await l.tn.put({
       url: A.ANM.VOICE_PUBLIC_KEYS(),
@@ -198,20 +198,20 @@ async function B(e) {
   }
 }
 
-function Z(e) {
+function B(e) {
   return v.Z.getUploadedKeyVersionsCached().includes(e)
 }
 async function F(e) {
-  Z(e) || await B(e)
+  B(e) || await Z(e)
 }
 async function V(e) {
-  if (!Z(e)) return await B(e), true;
+  if (!B(e)) return await Z(e), true;
   let t = d.default.getId(),
     {
       key: n
-    } = await j(e),
+    } = await k(e),
     r = await G(t, n, e);
-  return r || (0, T.KA)(e), r
+  return r || (0, I.KA)(e), r
 }
 
 function H(e, t) {
@@ -222,7 +222,7 @@ function H(e, t) {
   let a = new Uint8Array(i);
   for (let t of r.getAllActiveStreamKeys()) {
     if (!r.isUserConnected(t, e)) continue;
-    let n = p.Z.getSecureFramesRosterMapEntry(t, e);
+    let n = _.Z.getSecureFramesRosterMapEntry(t, e);
     if (null == n) returntrue;
     let i = new Uint8Array(n);
     for (let e = 0; e < a.length; e++)
@@ -231,17 +231,17 @@ function H(e, t) {
   returnfalse
 }
 
-function W(e) {
+function Y(e) {
   let {
     userId: t,
     channelId: n,
     nickname: r
   } = e;
-  (0, T.CW)({
+  (0, I.CW)({
     userId: t,
     channelId: n,
-    keyVersion: S.GB,
-    reason: S.Xe.OTHER_USER_INCONSISTENT_KEYS
+    keyVersion: T.GB,
+    reason: T.Xe.OTHER_USER_INCONSISTENT_KEYS
   }), u.Z.show({
     title: C.intl.string(C.t.mznLyR),
     body: C.intl.format(C.t.WY6IKb, {
@@ -250,17 +250,17 @@ function W(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     userId: t,
     guildId: n,
     channelId: r
   } = e;
-  if (!H(t, [_.Z, p.Z])) returntrue;
+  if (!H(t, [p.Z, _.Z])) returntrue;
   {
-    let e = h.default.getUser(t),
+    let e = m.default.getUser(t),
       i = E.ZP.getName(n, r, e);
-    return W({
+    return Y({
       userId: t,
       channelId: r,
       nickname: i

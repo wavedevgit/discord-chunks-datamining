@@ -2,7 +2,7 @@
 /** chunk id: 208156, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => I
+  J: () => S
 }), require("./388685.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -69,37 +69,37 @@ function v(e) {
     queryParams: E,
     allowPopups: y = false,
     referrerPolicy: v = "origin"
-  } = e, I = (0, f.sU)({}), T = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), S = i.useRef(null), A = (0, _.Z)(S, g, null == I ? window : I), C = O(b({}, E), {
-    frame_id: T,
-    platform: h.S4.DESKTOP
-  }), [N, R] = i.useState(false), P = u.Z.theme, D = b({}, a);
+  } = e, S = (0, f.sU)({}), I = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), A = (0, p.Z)(T, g, null == S ? window : S), C = O(b({}, E), {
+    frame_id: I,
+    platform: m.S4.DESKTOP
+  }), [N, P] = i.useState(false), R = u.Z.theme, w = b({}, a);
 
-  function w(e) {
+  function D(e) {
     var n;
-    null == o || o(e.target), S.current = e.target, A(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, C], null != t ? t : "")
+    null == o || o(e.target), T.current = e.target, A(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, C], null != t ? t : "")
   }
-  return P === m.BRd.LIGHT ? D.colorScheme = "light" : D.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(m.CkL.IFRAME_MOUNT, {
-    id: T
+  return R === h.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(h.CkL.IFRAME_MOUNT, {
+    id: I
   }), () => {
-    d.S.dispatch(m.CkL.IFRAME_UNMOUNT, {
-      id: T
+    d.S.dispatch(h.CkL.IFRAME_UNMOUNT, {
+      id: I
     })
-  }), [T]), i.useEffect(() => {
+  }), [I]), i.useEffect(() => {
     let e = e => {
       let {
         resizing: t
       } = e;
-      R(t)
+      P(t)
     };
-    return d.S.subscribe(m.CkL.MANUAL_IFRAME_RESIZING, e), () => {
-      d.S.unsubscribe(m.CkL.MANUAL_IFRAME_RESIZING, e)
+    return d.S.subscribe(h.CkL.MANUAL_IFRAME_RESIZING, e), () => {
+      d.S.unsubscribe(h.CkL.MANUAL_IFRAME_RESIZING, e)
     }
-  }, []), N && (D.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
-    style: D,
+  }, []), N && (w.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
+    style: w,
     allow: "autoplay; encrypted-media",
     referrerPolicy: v,
-    onLoad: w,
-    sandbox: (0, p.Z)({
+    onLoad: D,
+    sandbox: (0, _.Z)({
       allowPopups: y
     }),
     className: n,
@@ -107,7 +107,7 @@ function v(e) {
   }) : null
 }
 
-function I(e) {
+function S(e) {
   let {
     onLoad: t
   } = e, [n, a] = i.useState(false), s = i.useCallback(e => {

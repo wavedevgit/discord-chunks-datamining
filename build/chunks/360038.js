@@ -2,7 +2,7 @@
 /** chunk id: 360038, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  u: () => _
+  u: () => p
 }), require("./539854.js"), require("./35282.js");
 var Chunk853856 = require("./853856.js"),
   Chunk706590 = require("./706590.js"),
@@ -14,7 +14,7 @@ var Chunk853856 = require("./853856.js"),
   Chunk914010 = require("./914010.js"),
   Chunk771845 = require("./771845.js"),
   Chunk981631 = require("./981631.js");
-let _ = {
+let p = {
   binds: (() => {
     let e = 10,
       t = [];
@@ -23,12 +23,12 @@ let _ = {
   })(),
   comboKeysBindGlobal: true,
   action(e, t) {
-    let n, _ = parseInt(t.split("+")[1], 10);
-    if (0 === _ && (_ = 10), isNaN(_) || 0 === _) return;
-    let p = a.o.getConfig({
+    let n, p = parseInt(t.split("+")[1], 10);
+    if (0 === p && (p = 10), isNaN(p) || 0 === p) return;
+    let _ = a.o.getConfig({
         location: "jumptoguild"
       }).dmsTab,
-      h = +!!p;
-    if (null != (n = 1 === _ || p && 2 === _ ? f.ME : (0, i.z)(r.Z, l.Z, c.Z) ? _ === 2 + h ? f.I_8 : d.ZP.getFlattenedGuildIds()[_ - 3 - h] : d.ZP.getFlattenedGuildIds()[_ - 2 - h])) return n === f.ME && p && 2 === _ ? (0, o.uL)(f.Z5c.ME_DMS) : n === f.ME && null == u.Z.getGuildId() ? (0, o.uL)(f.Z5c.CHANNEL(n)) : (0, s.X)(n), false
+      m = +!!_;
+    if (null != (n = 1 === p || _ && 2 === p ? f.ME : (0, i.z)(r.Z, l.Z, c.Z) ? p === 2 + m ? f.I_8 : d.ZP.getFlattenedGuildIds()[p - 3 - m] : d.ZP.getFlattenedGuildIds()[p - 2 - m])) return n === f.ME && _ && 2 === p ? (0, o.uL)(f.Z5c.ME_DMS) : n === f.ME && null == u.Z.getGuildId() ? (0, o.uL)(f.Z5c.CHANNEL(n)) : (0, s.X)(n), false
   }
 }

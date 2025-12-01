@@ -2,7 +2,7 @@
 /** chunk id: 54936, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  n: () => h
+  n: () => m
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk84637 = require("./84637.js");
-let _ = {
+let p = {
   [Chunk981631.TaA.WINDOWS]: {
     icon: Chunk723851.Z,
     getLabel: () => Chunk388032.intl.string(Chunk388032.t["0/xHFO"])
@@ -30,11 +30,11 @@ let _ = {
   }
 };
 
-function p(e) {
+function _(e) {
   let {
     operatingSystem: t,
     className: n
-  } = e, i = _[t];
+  } = e, i = p[t];
   if (null == i) throw Error("Unexpected operating system: ".concat(t));
   let a = i.icon;
   return (0, r.jsx)(o.u, {
@@ -44,7 +44,7 @@ function p(e) {
     })
   })
 }
-let h = e => {
+let m = e => {
   let {
     systems: t,
     className: n,
@@ -52,7 +52,7 @@ let h = e => {
   } = e;
   return (0, r.jsx)("div", {
     className: a()(f.OSSection, n),
-    children: t.map(e => (0, r.jsx)(p, {
+    children: t.map(e => (0, r.jsx)(_, {
       operatingSystem: e,
       className: a()(f.purchaseUnitOperatingSystem, i)
     }, e))

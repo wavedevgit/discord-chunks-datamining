@@ -184,9 +184,9 @@ let k = Chunk473749.memo(function(e) {
         channel: i
       }))
     })
-  }, [t.id]), q = null == k ? 0 : k.length, X = (0, a.JA)(t.id), {
-    role: Q
-  } = X, J = function(e, t) {
+  }, [t.id]), q = null == k ? 0 : k.length, Q = (0, a.JA)(t.id), {
+    role: X
+  } = Q, J = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -200,7 +200,7 @@ let k = Chunk473749.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(X, ["role"]), $ = i.useRef(null), ee = B > 0 ? Z.intl.formatToPlainString(Z.t["ZL7+I6"], {
+  }(Q, ["role"]), $ = i.useRef(null), ee = B > 0 ? Z.intl.formatToPlainString(Z.t["ZL7+I6"], {
     channelName: t.name,
     mentionCount: B
   }) : U ? Z.intl.formatToPlainString(Z.t.YlVvmc, {
@@ -209,7 +209,7 @@ let k = Chunk473749.memo(function(e) {
     channelName: t.name
   });
   return (0, r.jsxs)("li", {
-    role: Q,
+    role: X,
     className: o()(w.containerDefault, {
       [w.selected]: l
     }),

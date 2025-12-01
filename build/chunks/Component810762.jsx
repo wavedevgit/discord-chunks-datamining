@@ -2,7 +2,7 @@
 /** chunk id: 810762, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk873546 = require("./873546.js"),
@@ -14,13 +14,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk949914 = require("./949914.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk343447 = require("./343447.js");
-let _ = e => {
+let p = e => {
   let {
     onGoBack: t
   } = e, n = (0, c.Z)(), {
-    loading: _
+    loading: p
   } = (0, l.sp)(n);
-  return ((0, s.Z)(i.tq ? "role-subscriptions-user-setting" : true), _) ? (0, r.jsx)(o.$jN, {}) : 0 === n.length ? null : (0, r.jsxs)("div", {
+  return ((0, s.Z)(i.tq ? "role-subscriptions-user-setting" : true), p) ? (0, r.jsx)(o.$jN, {}) : 0 === n.length ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(a.zxk, {
       text: d.intl.string(d.t.hqyhKQ),
       icon: o.wj7,

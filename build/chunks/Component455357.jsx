@@ -2,9 +2,9 @@
 /** chunk id: 455357, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fl: () => p,
-  kC: () => h,
-  x8: () => _
+  Fl: () => _,
+  kC: () => m,
+  x8: () => p
 }), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,18 +32,18 @@ function f(e) {
   return (0, a.kK)(e, HTMLImageElement) ? e.getAttribute("src") : (0, a.kK)(e, HTMLVideoElement) ? null != (n = null == (t = e.querySelectorAll("source")[0]) ? true : t.getAttribute("src")) ? n : "video" : ((0, a.kK)(e, HTMLDivElement), e.tagName)
 }
 
-function _(e) {
+function p(e) {
   let {
     children: t,
     isPreview: n = false,
     source: a,
-    questId: _
-  } = e, [p, h] = i.useState(false), [m, g] = i.useState(new Set), [E, b] = i.useState(false), y = i.useRef(false);
+    questId: p
+  } = e, [_, m] = i.useState(false), [h, g] = i.useState(new Set), [E, b] = i.useState(false), y = i.useRef(false);
   i.useEffect(() => {
     let e = new Set;
-    for (let t of m) u(t) || e.add(t);
-    e.size !== m.size && g(e)
-  }, [m]);
+    for (let t of h) u(t) || e.add(t);
+    e.size !== h.size && g(e)
+  }, [h]);
   let O = i.useCallback(e => {
       let {
         assetNode: t,
@@ -53,21 +53,21 @@ function _(e) {
       } = e;
       n || null == a || (o.default.track(l.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: a,
-        quest_id: _,
+        quest_id: p,
         asset_id: f(t)
       }), s.Z.captureException(Error("".concat(i, ": ").concat(null != c ? "".concat(c, ", ") : "").concat(f(t), ", ").concat(r)), {
         tags: {
           source: a
         }
-      }), h(true))
-    }, [n, a, _]),
+      }), m(true))
+    }, [n, a, p]),
     v = i.useCallback(e => {
       g(t => {
         let n = new Set(t);
         return n.delete(e), n
       })
     }, []),
-    I = i.useCallback((e, t) => {
+    S = i.useCallback((e, t) => {
       if (b(true), u(e)) return;
       g(t => {
         let n = new Set(t);
@@ -89,23 +89,23 @@ function _(e) {
       }
       e.addEventListener(n, r), e.addEventListener("error", i)
     }, [O, v]),
-    T = i.useMemo(() => m.size > 0 || !E, [E, m]);
+    I = i.useMemo(() => h.size > 0 || !E, [E, h]);
   i.useEffect(() => {
-    T || (y.current = true)
-  }, [T]);
-  let S = i.useMemo(() => ({
-    registerAsset: I,
+    I || (y.current = true)
+  }, [I]);
+  let T = i.useMemo(() => ({
+    registerAsset: S,
     unregisterAsset: v,
-    hasError: p,
-    isLoading: T && !y.current
-  }), [I, v, p, T]);
+    hasError: _,
+    isLoading: I && !y.current
+  }), [S, v, _, I]);
   return (0, r.jsx)(c.Provider, {
-    value: S,
+    value: T,
     children: t
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     id: t,
     children: n
@@ -121,7 +121,7 @@ function p(e) {
   }, [r, a, t]), n(o)
 }
 
-function h() {
+function m() {
   let {
     hasError: e,
     isLoading: t

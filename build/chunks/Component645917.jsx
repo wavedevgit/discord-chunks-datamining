@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk420153 = require("./420153.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -99,75 +99,75 @@ function y(e) {
   var t, {
       title: n,
       body: a,
-      graphic: _,
-      size: h = "md",
+      graphic: p,
+      size: m = "md",
       actions: E,
       gradientColor: y,
       onRequestClose: O,
       position: v,
-      caretConfig: I,
-      scrollBehavior: T,
-      showCloseButton: S = true,
+      caretConfig: S,
+      scrollBehavior: I,
+      showCloseButton: T = true,
       isCaretHoverable: A = false,
       shouldTrapFocus: C = false,
       returnRef: N,
-      onNudgeChange: R
+      onNudgeChange: P
     } = e,
-    P = g(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isCaretHoverable", "shouldTrapFocus", "returnRef", "onNudgeChange"]);
-  let [D, w] = i.useState(null != v ? v : "top");
+    R = g(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isCaretHoverable", "shouldTrapFocus", "returnRef", "onNudgeChange"]);
+  let [w, D] = i.useState(null != v ? v : "top");
   i.useEffect(() => {
-    null != v && w(v)
+    null != v && D(v)
   }, [v]);
-  let L = i.useMemo(() => {
+  let x = i.useMemo(() => {
       var e;
       return {
-        align: null != (e = null == I ? true : I.align) ? e : "center",
-        customOffset: null == I ? true : I.customOffset
+        align: null != (e = null == S ? true : S.align) ? e : "center",
+        customOffset: null == S ? true : S.customOffset
       }
-    }, [I]),
-    x = i.useCallback(() => {
+    }, [S]),
+    L = i.useCallback(() => {
       null == O || O()
     }, [O]),
-    M = i.useCallback(e => {
+    j = i.useCallback(e => {
       null == O || O(e)
     }, [O]),
-    k = i.useCallback(e => {
-      w(e)
+    M = i.useCallback(e => {
+      D(e)
     }, []),
-    j = A ? f.caretHoverable : true,
-    U = p({
-      targetElementRef: P.targetElementRef,
-      shouldShow: P.shouldShow,
-      hasVideo: P.hasVideo,
-      position: D,
-      caretConfig: L,
-      onRequestClose: x,
+    k = A ? f.caretHoverable : true,
+    U = _({
+      targetElementRef: R.targetElementRef,
+      shouldShow: R.shouldShow,
+      hasVideo: R.hasVideo,
+      position: w,
+      caretConfig: x,
+      onRequestClose: L,
       gradientColor: y,
-      onPositionChange: k,
-      onNudgeChange: R,
-      scrollBehavior: T,
+      onPositionChange: M,
+      onNudgeChange: P,
+      scrollBehavior: I,
       modal: C,
       returnRef: N,
       gradientOffsetBottom: 0,
       experimental_ignoreModalClicks: false
-    }, "edge" === P.alignmentStrategy ? {
+    }, "edge" === R.alignmentStrategy ? {
       alignmentStrategy: "edge",
-      align: P.align
+      align: R.align
     } : {
       alignmentStrategy: "trigger-center"
     });
-  return (0, r.jsx)(s.m, m(p({}, U), {
+  return (0, r.jsx)(s.m, h(_({}, U), {
     children: (0, r.jsxs)("div", {
       "data-mana-component": "popover",
-      children: [S && (0, r.jsx)(u.u, {
-        onClick: M,
+      children: [T && (0, r.jsx)(u.u, {
+        onClick: j,
         variant: null != y ? "color-mix" : true
-      }), null != _ && (0, r.jsx)("div", {
+      }), null != p && (0, r.jsx)("div", {
         className: o()(f.graphic, {
-          [f["graphic--".concat(h)]]: null != h
+          [f["graphic--".concat(m)]]: null != m
         }),
-        children: (0, r.jsx)(d.zsu, m(p({}, _), {
-          aspectRatio: null != (t = _.aspectRatio) ? t : "sm" === h ? "2/1" : "16/9"
+        children: (0, r.jsx)(d.zsu, h(_({}, p), {
+          aspectRatio: null != (t = p.aspectRatio) ? t : "sm" === m ? "2/1" : "16/9"
         }))
       }), (0, r.jsx)(b, {
         title: n,
@@ -175,8 +175,8 @@ function y(e) {
       }), null != E && E.length > 0 ? (0, r.jsx)(l.k, {
         actions: E,
         className: f.actionBar
-      }) : null, null != L && (0, r.jsx)(c.$, {
-        className: j
+      }) : null, null != x && (0, r.jsx)(c.$, {
+        className: k
       })]
     })
   }))

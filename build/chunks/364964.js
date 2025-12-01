@@ -2,7 +2,7 @@
 /** chunk id: 364964, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => _
+  default: () => p
 }), require("./388685.js"), require("./35282.js"), require("./415506.js"), require("./704826.js");
 var Chunk466332 = require("./466332.js"),
   Chunk392711 = require("./392711.js"),
@@ -28,9 +28,9 @@ for (let [e, t] of d)
 function f(e) {
   return d.get(e.toLowerCase())
 }
-let _ = {
+let p = {
     highlight(e, t, n) {
-      if (!h(t, e)) return null;
+      if (!m(t, e)) return null;
       Date.now();
       let i = r.Z.highlight(t, {
         ignoreIllegals: n,
@@ -42,10 +42,10 @@ let _ = {
     isKnownLanguage: e => d.has(e.toLowerCase()),
     resolveLanguageName: f
   },
-  p = a().repeat("/", 15);
+  _ = a().repeat("/", 15);
 
-function h(e, t) {
-  if (e.indexOf(p) >= 0) returnfalse;
+function m(e, t) {
+  if (e.indexOf(_) >= 0) returnfalse;
   let n = 0;
   for (let t of e.split("\n")) {
     if (t.length > 1e3) returnfalse;

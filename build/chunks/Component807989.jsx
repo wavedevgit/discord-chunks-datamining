@@ -39,11 +39,11 @@ function b(e) {
       redirectUri: b,
       approximateGuildCount: O,
       isEmbeddedFlow: v,
-      disclosures: I
+      disclosures: S
     } = e,
-    T = new Date(f.default.extractTimestamp(i.id)),
-    S = (0, p.W3)(l),
-    A = (0, s.yE)(null != (t = i.flags) ? t : 0, h.udG.EMBEDDED);
+    I = new Date(f.default.extractTimestamp(i.id)),
+    T = (0, _.W3)(l),
+    A = (0, s.yE)(null != (t = i.flags) ? t : 0, m.udG.EMBEDDED);
   if (null != b && !A && !v) try {
     let e = new URL(b);
     n = null != e.host && e.host.length > 0 ? e.origin : e.href
@@ -59,26 +59,26 @@ function b(e) {
     }),
     children: [null != n ? (0, r.jsx)(y, {
       icon: c.xPt,
-      text: m.intl.format(m.t["5k5OKD"], {
+      text: h.intl.format(h.t["5k5OKD"], {
         origin: n
       })
     }) : null, (0, r.jsx)(y, {
       icon: c.mBM,
-      text: (0, _.i)(i)
+      text: (0, p.i)(i)
     }), (0, r.jsx)(y, {
       icon: c.T39,
-      text: m.intl.formatToPlainString(m.t["+1bjc8"], {
-        date: T
+      text: h.intl.formatToPlainString(h.t["+1bjc8"], {
+        date: I
       })
     }), l.includes(o.x.BOT) && null != O ? (0, r.jsx)(y, {
       icon: c.wGt,
-      text: m.intl.formatToPlainString(m.t.UHGHSP, {
+      text: h.intl.formatToPlainString(h.t.UHGHSP, {
         guildCount: O
       })
     }) : null, (0, r.jsx)(y, {
       icon: c.b7C,
-      text: S
-    }), null != I ? I.map(e => {
+      text: T
+    }), null != S ? S.map(e => {
       let t = (0, d.PM)(e),
         n = E(e);
       return null != n && null != t ? (0, r.jsx)(y, {

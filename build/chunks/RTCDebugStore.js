@@ -25,7 +25,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,9 +37,9 @@ function _(e) {
   }
   return e
 }
-let p = A(Chunk65154.Yn.DEFAULT, Chunk981631._s_.TRANSPORT, 0),
-  h = p,
-  m = {},
+let _ = A(Chunk65154.Yn.DEFAULT, Chunk981631._s_.TRANSPORT, 0),
+  m = _,
+  h = {},
   g = new Map,
   E = {
     availableOutgoingBitrate: true,
@@ -81,10 +81,10 @@ class v {
   }
   put(e, t, n, r) {
     if ("" === r) {
-      let r = _({}, this.state);
+      let r = p({}, this.state);
       return delete r[y(e, t, n)], new v(r)
     }
-    return new v(_({
+    return new v(p({
       [y(e, t, n)]: r
     }, this.state))
   }
@@ -96,9 +96,9 @@ class v {
     f(this, "state", true), this.state = e
   }
 }
-let I = v.empty(),
-  T = false,
-  S = null;
+let S = v.empty(),
+  I = false,
+  T = null;
 
 function A(e, t, n) {
   return "".concat(e, ":").concat(t, ":").concat(n)
@@ -114,39 +114,39 @@ function C(e) {
 
 function N() {
   Object.values(Chunk65154.Yn).forEach(e => {
-    m[e] = {}
+    h[e] = {}
   })
 }
 
-function R() {
-  null != S && (S.destroy(), S = null)
+function P() {
+  null != T && (T.destroy(), T = null)
 }
 
-function P(e) {
+function R(e) {
   var t;
-  h = null != (t = e.section) ? t : p
+  m = null != (t = e.section) ? t : _
 }
 
-function D() {
-  R()
+function w() {
+  P()
 }
 
-function w(e) {
+function D(e) {
   null != e.channelId && (N(), g.clear())
 }
 
-function L(e) {
+function x(e) {
   if (null === e.streamId) {
     let t = O(e.userId, e.context);
     g.set(t, d.Z.NO_OVERRIDE)
   }
 }
 
-function x(e) {
-  h = e.section
+function L(e) {
+  m = e.section
 }
 
-function M(e) {
+function j(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Date.now(),
     r = {};
@@ -159,12 +159,12 @@ function M(e) {
         for (let e = 0; e < a.length; e++) {
           let r = t[e],
             i = "object" == typeof r ? r : {};
-          o.push(M(a[e], i, n))
+          o.push(j(a[e], i, n))
         }
       } else r[i] = a;
     else if ("object" == typeof a && null !== a) {
       let t = "object" == typeof e && null !== e ? e : {};
-      r[i] = M(a, t, n)
+      r[i] = j(a, t, n)
     } else if (i in E && "number" == typeof a) {
       let t = r[i] = Array.isArray(e) ? e : [];
       t.push({
@@ -176,7 +176,7 @@ function M(e) {
   return r
 }
 
-function k(e) {
+function M(e) {
   let {
     connectionStats: t
   } = e;
@@ -187,7 +187,7 @@ function k(e) {
       } = t;
       return n === e
     }).forEach((t, n) => {
-      j({
+      k({
         context: e,
         stats: t.stats,
         index: n
@@ -196,23 +196,23 @@ function k(e) {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     context: t,
     stats: n,
     index: r
-  } = e, i = m[t];
+  } = e, i = h[t];
   if (null != n) {
-    let [e, a, o] = h.split(":");
+    let [e, a, o] = m.split(":");
     if (e === t && parseInt(o) === r && null != c.default.getUser(a)) {
       let {
         rtp: {
           inbound: e
         }
       } = n;
-      Object.keys(e).includes(a) || (h = p)
+      Object.keys(e).includes(a) || (m = _)
     }
-    i[r] = M(n, i[r])
+    i[r] = j(n, i[r])
   } else delete i[r]
 }
 
@@ -224,9 +224,9 @@ function G(e) {
   let {
     path: t
   } = e, n = l.Z.getMediaEngine();
-  if (R(), !n.supports(d.AN.CONNECTION_REPLAY) || 0 === t.length) return;
+  if (P(), !n.supports(d.AN.CONNECTION_REPLAY) || 0 === t.length) return;
   let r = n.createReplayConnection(d.Yn.DEFAULT, t);
-  null != r && (S = r, r.on(a.Sh.Video, (e, t, n, i, a) => {
+  null != r && (T = r, r.on(a.Sh.Video, (e, t, n, i, a) => {
     o.Z.dispatch({
       type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT",
       mediaEngineConnectionId: r.mediaEngineConnectionId,
@@ -237,15 +237,15 @@ function G(e) {
   }), o.Z.wait(() => s.bA()))
 }
 
-function B(e) {
-  I = I.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
+function Z(e) {
+  S = S.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
 }
 
-function Z(e) {
+function B(e) {
   let {
     value: t
   } = e;
-  T = t
+  I = t
 }
 
 function F(e) {
@@ -262,7 +262,7 @@ class V extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk131951.Z, Chunk594174.default)
   }
   getSection() {
-    return h
+    return m
   }
   getInboundStats(e, t) {
     var n, r;
@@ -288,13 +288,13 @@ class V extends(r = Chunk442837.ZP.Store) {
   }
   getAllStats() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return Object.values(m[module])
+    return Object.values(h[module])
   }
   getVideoStreams() {
-    return I
+    return S
   }
   shouldRecordNextConnection() {
-    return T
+    return I
   }
   getSimulcastDebugOverride(e, t) {
     let n = O(e, t);
@@ -303,15 +303,15 @@ class V extends(r = Chunk442837.ZP.Store) {
 }
 f(V, "displayName", "RTCDebugStore");
 let H = new V(Chunk570140.Z, {
-  RTC_DEBUG_MODAL_OPEN: P,
-  RTC_DEBUG_MODAL_CLOSE: D,
-  RTC_DEBUG_MODAL_SET_SECTION: x,
+  RTC_DEBUG_MODAL_OPEN: R,
+  RTC_DEBUG_MODAL_CLOSE: w,
+  RTC_DEBUG_MODAL_SET_SECTION: L,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
-  RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: B,
-  RTC_DEBUG_SET_RECORDING_FLAG: Z,
+  RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: Z,
+  RTC_DEBUG_SET_RECORDING_FLAG: B,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
-  VOICE_CHANNEL_SELECT: w,
-  RTC_CONNECTION_VIDEO: L,
-  MEDIA_ENGINE_CONNECTION_STATS: k
+  VOICE_CHANNEL_SELECT: D,
+  RTC_CONNECTION_VIDEO: x,
+  MEDIA_ENGINE_CONNECTION_STATS: M
 })

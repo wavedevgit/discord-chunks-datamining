@@ -2,7 +2,7 @@
 /** chunk id: 333031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -41,12 +41,12 @@ function v(e, t) {
     bottom: Math.ceil(t.bottom)
   }
 }
-class I {
+class S {
   observe(e) {
     var t;
     if (null == this.resizeObserver && (this.resizeObserver = new this.window.ResizeObserver(this.handleResize)), null == this.mutationObserver) {
       this.mutationObserver = new MutationObserver(this.handleMutations);
-      let e = _.Z.getWindow(b.$J);
+      let e = p.Z.getWindow(b.$J);
       null != e && this.mutationObserver.observe(null == e ? true : e.document.body, {
         subtree: true,
         attributes: true
@@ -106,17 +106,17 @@ class I {
     })), this.window = e
   }
 }
-let T = Chunk473749.createContext(new I((0, Chunk561064.i)()));
+let I = Chunk473749.createContext(new S((0, Chunk561064.i)()));
 
-function S(e) {
+function T(e) {
   let {
     observe: t = true,
     className: n,
     style: a,
     children: s
-  } = e, l = i.useContext(T), c = (0, u.e7)([g.Z], () => g.Z.hasRenderDebugMode(m.GO.ClickZones)), d = (0, u.e7)([p.default], () => p.default.disableClickableRegions), [{
+  } = e, l = i.useContext(I), c = (0, u.e7)([g.Z], () => g.Z.hasRenderDebugMode(h.GO.ClickZones)), d = (0, u.e7)([_.default], () => _.default.disableClickableRegions), [{
     refHandler: f,
-    setObserve: _
+    setObserve: p
   }] = i.useState(() => {
     let e = null;
     return {
@@ -129,8 +129,8 @@ function S(e) {
     }
   });
   return i.useLayoutEffect(() => {
-    d ? _(false) : _(t)
-  }, [t, _, d]), (0, r.jsx)("div", {
+    d ? p(false) : p(t)
+  }, [t, p, d]), (0, r.jsx)("div", {
     ref: f,
     style: a,
     className: o()(n, y.clickable, c && y.debugMode),

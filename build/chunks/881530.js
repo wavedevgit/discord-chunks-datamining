@@ -2,7 +2,7 @@
 /** chunk id: 881530, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk394821 = require("./394821.js"),
   Chunk841784 = require("./841784.js"),
@@ -35,29 +35,29 @@ function f(e) {
   return e
 }
 
-function _(e) {
+function p(e) {
   let {
     location: t,
     user: n,
     currentUser: d,
-    activity: _,
-    application: p,
-    entry: h,
-    onClose: m
+    activity: p,
+    application: _,
+    entry: m,
+    onClose: h
   } = e, g = (0, s.Z)(f({
     location: t,
     source: o.m1.UserProfile,
     trackEntryPointImpression: true
   }, (0, c.nK)({
     user: n,
-    activity: _,
-    entry: h
+    activity: p,
+    entry: m
   }))), E = (0, u.Z)({
-    applicationId: null == p ? true : p.id,
-    onClose: m
-  }), b = (0, i.Z)(_);
-  return b && null != p ? E : !b && (0, a.Z)(_) ? g : (0, r.Z)(_) && n.id !== d.id ? () => (0, l.s)({
-    activity: _,
+    applicationId: null == _ ? true : _.id,
+    onClose: h
+  }), b = (0, i.Z)(p);
+  return b && null != _ ? E : !b && (0, a.Z)(p) ? g : (0, r.Z)(p) && n.id !== d.id ? () => (0, l.s)({
+    activity: p,
     user: n,
     index: 0
   }) : true

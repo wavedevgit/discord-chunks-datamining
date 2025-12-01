@@ -2,7 +2,7 @@
 /** chunk id: 664915, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -45,7 +45,7 @@ function f() {
   if (0 === l.size) returnfalse;
   l = new Set
 }
-class _ extends(r = Chunk442837.ZP.PersistedStore) {
+class p extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (l = new Set(e.expandedFolders)), this.waitFor(o.Z)
   }
@@ -61,8 +61,8 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
     return l.has(e)
   }
 }
-s(_, "displayName", "ExpandedGuildFolderStore"), s(_, "persistKey", "ExpandedGuildFolderStore");
-let p = new _(Chunk570140.Z, {
+s(p, "displayName", "ExpandedGuildFolderStore"), s(p, "persistKey", "ExpandedGuildFolderStore");
+let _ = new p(Chunk570140.Z, {
   TOGGLE_GUILD_FOLDER_EXPAND: u,
   SET_GUILD_FOLDER_EXPANDED: d,
   USER_SETTINGS_PROTO_UPDATE: c,

@@ -2,7 +2,7 @@
 /** chunk id: 541099, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -71,18 +71,18 @@ function f() {
   })
 }
 
-function _() {
+function p() {
   u({
     closeReason: Chunk827498.ti.COMMAND
   })
 }
 s(d, "displayName", "AppLauncherStore");
-let p = new d(Chunk570140.Z, {
+let _ = new d(Chunk570140.Z, {
   APP_LAUNCHER_SHOW: c,
   APP_LAUNCHER_DISMISS: u,
   CONNECTION_OPEN: f,
   LOGOUT: f,
   CHANNEL_SELECT: f,
-  APPLICATION_COMMAND_SET_ACTIVE_COMMAND: _,
-  APP_LAUNCHER_SET_ACTIVE_COMMAND: _
+  APPLICATION_COMMAND_SET_ACTIVE_COMMAND: p,
+  APP_LAUNCHER_SET_ACTIVE_COMMAND: p
 })

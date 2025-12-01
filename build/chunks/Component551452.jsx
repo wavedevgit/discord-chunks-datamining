@@ -2,7 +2,7 @@
 /** chunk id: 551452, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -66,24 +66,24 @@ async function v(e, t, n) {
       channelId: t,
       messageId: n
     }), null != e) {
-    let r = p.Z.getGuild(e);
+    let r = _.Z.getGuild(e);
     if ((null == r ? true : r.joinedAt) == null) try {
-      await h.Ub(e, {}, {
+      await m.Ub(e, {}, {
         channelId: t,
         messageId: n
       });
       return
     } catch (e) {}
   }
-  let r = _.Z.getChannel(t);
+  let r = p.Z.getChannel(t);
   if (null != r && null == n && (0, f.bw)(r.type) && (0, l.YO)(r)) return void o.default.selectVoiceChannel(r.id);
   (0, c.Z)(g.Z5c.CHANNEL(e, t, n))
 }
 
-function I(e) {
+function S(e) {
   return {
     react(t, o, s) {
-      let l = _.Z.getChannel(t.channelId),
+      let l = p.Z.getChannel(t.channelId),
         c = s.noStyleAndInteraction ? true : n => {
           e.shouldStopPropagation && (null == n || n.stopPropagation()), v(t.guildId, t.channelId, t.messageId), e.shouldCloseDefaultModals && (0, i.pTH)()
         },
@@ -108,7 +108,7 @@ function I(e) {
         onClick: c,
         onContextMenu: f,
         className: "channelMention",
-        children: [null != t.inContent ? o(t.inContent, s) : null, null != t.inContent ? (0, r.jsx)(d.Z, {}) : null, (0, m.S)(t, o, s)]
+        children: [null != t.inContent ? o(t.inContent, s) : null, null != t.inContent ? (0, r.jsx)(d.Z, {}) : null, (0, h.S)(t, o, s)]
       }, s.key)
     }
   }

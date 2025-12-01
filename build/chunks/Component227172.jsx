@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => U,
-  v: () => j
+  v: () => k
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk797342 = require("./797342.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let j = {
+let k = {
     [Chunk758713.z.DESKTOP]: null,
     [Chunk758713.z.LINUX]: null,
     [Chunk758713.z.MACOS]: null,
@@ -56,8 +56,8 @@ let j = {
       entry: y,
       disableGameProfileLinks: U,
       onReaction: G,
-      onVoiceChannelPreview: B,
-      onUserPopoutClosed: Z,
+      onVoiceChannelPreview: Z,
+      onUserPopoutClosed: B,
       trackRankingItemInteraction: F
     } = e, {
       largeImage: V
@@ -65,24 +65,24 @@ let j = {
       entry: y
     }), {
       user: H,
-      details: W,
-      appName: Y,
+      details: Y,
+      appName: W,
       activity: K,
       embeddedActivity: z
-    } = (0, x.n)(y), {
+    } = (0, L.n)(y), {
       primaryColor: q,
-      secondaryColor: X
-    } = (0, R.Z)(null == V ? true : V.src), Q = (0, o.e7)([E.default], () => E.default.locale), {
+      secondaryColor: Q
+    } = (0, P.Z)(null == V ? true : V.src), X = (0, o.e7)([E.default], () => E.default.locale), {
       streamPreviewUrl: J,
       stream: $
-    } = (0, T.Z)(y), {
+    } = (0, I.Z)(y), {
       displayParticipants: ee,
       participant1: et,
       participant2: en,
       numOtherParticipants: er
-    } = (0, I.Z)(y, 3), ei = y.extra.platform, ea = null != ei ? j[ei] : null, eo = ei === a.z.XBOX ? M.ABu.XBOX : ei === a.z.PLAYSTATION ? M.ABu.PLAYSTATION : true, es = (0, N.Z)(eo), {
+    } = (0, S.Z)(y, 3), ei = y.extra.platform, ea = null != ei ? k[ei] : null, eo = ei === a.z.XBOX ? j.ABu.XBOX : ei === a.z.PLAYSTATION ? j.ABu.PLAYSTATION : true, es = (0, N.Z)(eo), {
       data: el
-    } = (0, m.IX)(y.extra.application_id), ec = (0, d.q)(el), eu = (0, g.L)(null != (n = null != (t = null == K ? true : K.application_id) ? t : null == z ? true : z.applicationId) ? n : null == el ? true : el.id), ed = i.useCallback(e => {
+    } = (0, h.IX)(y.extra.application_id), ec = (0, d.q)(el), eu = (0, g.L)(null != (n = null != (t = null == K ? true : K.application_id) ? t : null == z ? true : z.applicationId) ? n : null == el ? true : el.id), ed = i.useCallback(e => {
       if ((null == V ? true : V.src) == null || null == b || null == H) return;
       let t = er > 0 ? (0, C.VY)({
         entry: y,
@@ -95,71 +95,71 @@ let j = {
         applicationImageSrc: null == V ? true : V.src,
         avatarSrcs: ee.map(e => e.getAvatarURL(b.guild_id, 128)),
         description: t,
-        timestamp: (0, S.yh)(y, Q),
-        colors: [q, X],
+        timestamp: (0, T.yh)(y, X),
+        colors: [q, Q],
         channelId: e
       })
-    }, [null == V ? true : V.src, b, ee, y, Q, er, et, en, q, X, H]);
+    }, [null == V ? true : V.src, b, ee, y, X, er, et, en, q, Q, H]);
     if (null == H) return null;
-    let ef = (0, r.jsx)(D.Gk, {
-        location: null == J ? D.Gt.POPOUT : D.Gt.STREAMING_POPOUT,
-        children: P.W.map((e, t) => (0, r.jsx)(e, {
+    let ef = (0, r.jsx)(w.Gk, {
+        location: null == J ? w.Gt.POPOUT : w.Gt.STREAMING_POPOUT,
+        children: R.W.map((e, t) => (0, r.jsx)(e, {
           entry: y
         }, t))
       }),
-      e_ = null == $ ? (0, r.jsx)(w.wG, {
+      ep = null == $ ? (0, r.jsx)(D.wG, {
         channel: b,
-        headerIcons: null == ea ? null : (0, r.jsx)(L.Z, {
+        headerIcons: null == ea ? null : (0, r.jsx)(x.Z, {
           onClick: es,
           Icon: ea,
-          "aria-label": k.intl.string(k.t.YR4cHH)
+          "aria-label": M.intl.string(M.t.YR4cHH)
         }),
-        userDescription: (0, S.kr)(y) ? k.t.vPg1JT : k.t.rPqqts,
-        title: Y,
-        subtitle: W,
+        userDescription: (0, T.kr)(y) ? M.t.vPg1JT : M.t.rPqqts,
+        title: W,
+        subtitle: Y,
         badges: ef,
         entry: y,
         disableGameProfileLinks: U,
-        onUserPopoutClosed: Z,
+        onUserPopoutClosed: B,
         trackRankingItemInteraction: F
-      }) : (0, r.jsx)(w.jL, {
+      }) : (0, r.jsx)(D.jL, {
         channel: b,
         title: y.extra.game_name,
-        subtitle: W,
+        subtitle: Y,
         badges: ef,
-        userDescription: k.t["6oWFUN"],
+        userDescription: M.t["6oWFUN"],
         entry: y,
         stream: $,
-        onUserPopoutClosed: Z,
+        onUserPopoutClosed: B,
         trackRankingItemInteraction: F
       }),
-      ep = !eu && ec ? (0, r.jsx)(f.Z, {
+      e_ = !eu && ec ? (0, r.jsx)(f.Z, {
         application: el,
-        analyticsLocation: h.Z.MEMBER_LIST_GAMING_CONTENT_POPOUT
+        analyticsLocation: m.Z.MEMBER_LIST_GAMING_CONTENT_POPOUT
       }, "cloud-play") : null,
-      eh = [null == ep && ((0, l.Z)(K, M.xjy.JOIN) || (0, c.Z)(K)) ? (0, r.jsx)(_.Z, {
+      em = [null == e_ && ((0, l.Z)(K, j.xjy.JOIN) || (0, c.Z)(K)) ? (0, r.jsx)(p.Z, {
         activity: K,
         user: H,
         variant: "primary",
         size: "md",
         icon: s.iWm
-      }, "join") : null, (0, u.Z)(K) ? (0, r.jsx)(p.Z, {
+      }, "join") : null, (0, u.Z)(K) ? (0, r.jsx)(_.Z, {
         activity: K,
         size: "md",
         variant: "primary",
         icon: s.tEF
-      }, "watch") : null, ep].filter(O.lm);
-    return (0, r.jsxs)(w.yR, {
-      children: [e_, (0, r.jsx)(w.St, {
-        children: (0, r.jsx)(w.WT, {
+      }, "watch") : null, e_].filter(O.lm);
+    return (0, r.jsxs)(D.yR, {
+      children: [ep, (0, r.jsx)(D.St, {
+        children: (0, r.jsx)(D.WT, {
           onReaction: G,
-          onVoiceChannelPreview: B,
+          onVoiceChannelPreview: Z,
           user: H,
           channel: b,
           generateReactionImage: ed,
           reactionImageAltText: (0, C.IS)(y, H),
           entry: y,
-          buttons: eh
+          buttons: em
         })
       })]
     })

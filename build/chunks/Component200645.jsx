@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk761588 = require("./761588.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,23 +30,23 @@ function m(e, t, n) {
 function g(e) {
   switch (e.state) {
     case "unknown":
-      return p.intl.string(p.t["KW+nqT"]);
+      return _.intl.string(_.t["KW+nqT"]);
     case "disabled":
-      return p.intl.string(p.t["Q/wAF7"]);
+      return _.intl.string(_.t["Q/wAF7"]);
     case "disconnected":
-      return p.intl.string(p.t.Xvs9IM);
+      return _.intl.string(_.t.Xvs9IM);
     case "initializing":
-      return p.intl.string(p.t.h4qz8W);
+      return _.intl.string(_.t.h4qz8W);
     case "connecting":
-      return p.intl.string(p.t.fSu9XF);
+      return _.intl.string(_.t.fSu9XF);
     case "handshaking":
-      return p.intl.string(p.t["00aYLJ"]);
+      return _.intl.string(_.t["00aYLJ"]);
     case "running":
-      return p.intl.string(p.t["54TB7Z"]);
+      return _.intl.string(_.t["54TB7Z"]);
     case "waiting-for-retry":
-      return p.intl.string(p.t["0FONwi"]);
+      return _.intl.string(_.t["0FONwi"]);
     case "failure":
-      return p.intl.string(p.t.Ic0nkd);
+      return _.intl.string(_.t.Ic0nkd);
     default:
       (0, c.vE)(e.state)
   }
@@ -57,7 +57,7 @@ function E() {
     [t, n] = Chunk473749.useState(false),
     [c, d] = Chunk473749.useState(() => (0, Chunk865066.aL)()),
     f = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getSystemServiceStatus("input-service")),
-    m = Chunk473749.useCallback(async () => {
+    h = Chunk473749.useCallback(async () => {
       require(true), Chunk823379 ? await (0, Chunk865066.OK)("windows-settings") : await (0, Chunk865066.sU)("windows-settings"), require(false), Chunk358085((0, Chunk865066.aL)())
     }, [Chunk823379]);
   if (!module) return null;
@@ -86,7 +86,7 @@ function E() {
     }), (0, Chunk54381.jsx)(Chunk481060.Button, {
       variant: Chunk823379 ? "critical-secondary" : "primary",
       loading: exports,
-      onClick: m,
+      onClick: h,
       text: Chunk823379 ? Chunk388032.intl.string(Chunk388032.t.pAwbdL) : Chunk388032.intl.string(Chunk388032.t["1iI46O"])
     })]
   })
@@ -133,17 +133,17 @@ class b extends Chunk473749.PureComponent {
     })
   }
   constructor(e) {
-    super(e), m(this, "handleToggleOpenOnStartup", () => {
+    super(e), h(this, "handleToggleOpenOnStartup", () => {
       let e = !this.state.openOnStartup;
       this.setState({
         openOnStartup: e
       }), f.ZP.send("TOGGLE_OPEN_ON_STARTUP", e)
-    }), m(this, "handleToggleStartMinimized", () => {
+    }), h(this, "handleToggleStartMinimized", () => {
       let e = !this.state.startMinimized;
       this.setState({
         startMinimized: e
       }), f.ZP.send("TOGGLE_START_MINIMIZED", e)
-    }), m(this, "handleToggleMinimizeToTray", () => {
+    }), h(this, "handleToggleMinimizeToTray", () => {
       let e = !this.state.minimizeToTray;
       this.setState({
         minimizeToTray: e

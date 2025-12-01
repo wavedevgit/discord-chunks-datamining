@@ -17,7 +17,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -69,7 +69,7 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   var t, n;
   if (null != y[e]) return;
   let r = o.ZP.getGameOrTransformedSubgameForPID(e),
@@ -92,12 +92,12 @@ function I(e) {
   }
 }
 
-function T(e) {
+function I(e) {
   var t;
   return null != (t = y[e]) ? t : {}
 }
 
-function S(e, t) {
+function T(e, t) {
   var n, r;
   let i = null == (n = y[e]) ? true : n.error,
     a = null == (r = y[e]) ? true : r.error_description;
@@ -105,11 +105,11 @@ function S(e, t) {
 }
 
 function A(e) {
-  s.default.track(h.rMx.OVERLAY_HOOK_RESULT, T(e))
+  s.default.track(m.rMx.OVERLAY_HOOK_RESULT, I(e))
 }
 
 function C(e, t) {
-  e !== l.UNSET_PID && S(e, {
+  e !== l.UNSET_PID && T(e, {
     host_crash_count: 1,
     error: t.message,
     error_description: t.stack
@@ -117,18 +117,18 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  e !== l.UNSET_PID && S(e, {
+  e !== l.UNSET_PID && T(e, {
     renderer_crash_count: 1,
     error: t.message,
     error_description: t.stack
   })
 }
 
-function R() {
+function P() {
   y = {}
 }
 
-function P(e, t) {
+function R(e, t) {
   let n = o.ZP.getGameOrTransformedSubgameForPID(e);
   return {
     crash_type: t,
@@ -136,70 +136,70 @@ function P(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     pid: t,
     error: n,
     crashType: r
   } = e, i = n instanceof Error ? n : Error(null != n ? n : "Unknown error");
   return "native" === r ? (C(t, i), (0, c.V6)(i, u.gl.OutOfProcess, {
-    extra: P(t, "host")
+    extra: R(t, "host")
   })) : (N(t, i), (0, c.V6)(i, u.gl.OutOfProcess, {
-    extra: P(t, "renderer")
+    extra: R(t, "renderer")
   })), true
 }
 
-function w(e) {
+function D(e) {
   let {
     createWindowTriggeringPID: t
   } = e;
-  return S(t, {
+  return T(t, {
     mounting_started_at: new Date().getTime()
   }), true
-}
-
-function L(e) {
-  var t, n;
-  let {
-    createWindowTriggeringPID: r
-  } = e, i = null != (n = null == (t = T(r)) ? true : t.mounting_started_at) ? n : new Date().getTime(), a = {
-    renderer_started: true,
-    fullscreen_type: (0, f.hs)(r),
-    graphics_info_after: new Date().getTime() - i
-  };
-  return S(r, a), true
 }
 
 function x(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
-  } = e, i = null != (n = null == (t = T(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
-  return S(r, {
+  } = e, i = null != (n = null == (t = I(r)) ? true : t.mounting_started_at) ? n : new Date().getTime(), a = {
+    renderer_started: true,
+    fullscreen_type: (0, f.hs)(r),
+    graphics_info_after: new Date().getTime() - i
+  };
+  return T(r, a), true
+}
+
+function L(e) {
+  var t, n;
+  let {
+    createWindowTriggeringPID: r
+  } = e, i = null != (n = null == (t = I(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
+  return T(r, {
     renderer_started_after: new Date().getTime() - i
   }), true
 }
 
-function M(e) {
+function j(e) {
   let {
     pid: t
   } = e;
-  return I(t), true
+  return S(t), true
 }
 
-function k(e) {
+function M(e) {
   let {
     lastAssociatedPID: t
   } = e;
-  if (t !== l.UNSET_PID) return A(t), R(), true
+  if (t !== l.UNSET_PID) return A(t), P(), true
 }
 
-function j(e) {
+function k(e) {
   var t, n;
   let {
     pid: r
-  } = e, i = null != (n = null == (t = T(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
-  return S(r, {
+  } = e, i = null != (n = null == (t = I(r)) ? true : t.mounting_started_at) ? n : new Date().getTime();
+  return T(r, {
     total_mount_time_ms: null != i ? new Date().getTime() - i : true,
     success: true
   }), v(r), true
@@ -209,19 +209,19 @@ class U extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk371651.default, Chunk509140.Z, Chunk594190.ZP)
   }
   getData(e) {
-    return T(e)
+    return I(e)
   }
   getCrashExtra(e, t) {
-    return P(e, t)
+    return R(e, t)
   }
 }
-m(U, "displayName", "Overlay-v3-Native-Analytics-Store");
+h(U, "displayName", "Overlay-v3-Native-Analytics-Store");
 let G = new U(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
-  OVERLAY_V3_PRE_CREATE_POPOUT: w,
-  OVERLAY_V3_POST_CREATE_POPOUT: L,
-  OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: x,
-  OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: k,
-  OVERLAY_SUCCESSFULLY_SHOWN: j,
-  OVERLAY_CRASHED: D,
-  OVERLAY_V3_NATIVE_TRACK_GAME: M
+  OVERLAY_V3_PRE_CREATE_POPOUT: D,
+  OVERLAY_V3_POST_CREATE_POPOUT: x,
+  OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: L,
+  OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: M,
+  OVERLAY_SUCCESSFULLY_SHOWN: k,
+  OVERLAY_CRASHED: w,
+  OVERLAY_V3_NATIVE_TRACK_GAME: j
 })

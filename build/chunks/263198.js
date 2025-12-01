@@ -39,7 +39,7 @@ function u() {
       r = c[Math.floor(Math.random() * c.length)];
     return {
       type: "gradient",
-      colors: h(module, Chunk688619),
+      colors: m(module, Chunk688619),
       angle: require,
       intensity: exports,
       gradientType: Chunk688619
@@ -57,19 +57,19 @@ function f(e, t, n, r) {
   return [e, i().mix(e, o, .5).hex(), o]
 }
 
-function _(e, t, n, r) {
+function p(e, t, n, r) {
   let a = (r + 150) % 360,
     o = (r + 210) % 360;
   return [e, i().hsl(a, t, n).hex(), i().hsl(o, t, n).hex()]
 }
 
-function p(e, t, n, r) {
+function _(e, t, n, r) {
   let a = (r + 120) % 360,
     o = (r + 240) % 360;
   return [e, i().hsl(a, t, n).hex(), i().hsl(o, t, n).hex()]
 }
 
-function h(e, t) {
+function m(e, t) {
   try {
     let n = i()(e),
       r = n.get("hsl.h"),
@@ -81,9 +81,9 @@ function h(e, t) {
       case "complementary":
         return f(e, a, o, r);
       case "split-complementary":
-        return _(e, a, o, r);
-      case "triadic":
         return p(e, a, o, r);
+      case "triadic":
+        return _(e, a, o, r);
       default:
         return [e]
     }

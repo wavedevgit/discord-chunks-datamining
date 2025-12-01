@@ -29,30 +29,30 @@ function b() {
     y = Chunk695346.cC.useSetting(),
     O = Chunk695346.vF.useSetting(),
     v = Chunk695346.H1.useSetting(),
-    I = Chunk695346.ev.useSetting(),
-    T = Chunk695346.x4.useSetting(),
-    S = Chunk695346.RS.useSetting(),
+    S = Chunk695346.ev.useSetting(),
+    I = Chunk695346.x4.useSetting(),
+    T = Chunk695346.RS.useSetting(),
     A = Chunk695346.NA.useSetting(),
     C = Chunk695346.nc.useSetting(),
     N = Chunk695346.HV.useSetting(),
-    R = (0, Chunk945577.xy)({
+    P = (0, Chunk945577.xy)({
       location: "UserSettingsTextImages"
     }),
-    P = null != (e = Chunk695346.rR.useSetting()) ? module : R,
+    R = null != (e = Chunk695346.rR.useSetting()) ? module : P,
     {
-      analyticsLocations: D
+      analyticsLocations: w
     } = (0, Chunk906732.ZP)(Chunk100527.Z.TEXT_AND_IMAGES),
-    w = Chunk473749.useCallback(e => {
+    D = Chunk473749.useCallback(e => {
       let t = 1 === e;
       t ? u.Z.cleanUpPrivateChannelSearchState() : u.Z.cleanUpSearchState({
         type: g.aib.DMS
       }), (0, d.yn)({
-        prevIsCrossDMSettingEnabled: p.rR.getSetting(),
+        prevIsCrossDMSettingEnabled: _.rR.getSetting(),
         isCrossDMSettingEnabled: t,
         location: d.Ix.USER_SETTINGS
-      }), p.rR.updateSetting(t)
+      }), _.rR.updateSetting(t)
     }, []),
-    L = () => (0, Chunk54381.jsx)(Chunk481060.FXm, {
+    x = () => (0, Chunk54381.jsx)(Chunk481060.FXm, {
       label: Chunk388032.intl.string(Chunk388032.t.QgwmVz),
       description: Chunk388032.intl.string(Chunk388032.t.TYnRkS),
       options: [{
@@ -65,7 +65,7 @@ function b() {
         name: Chunk388032.intl.string(Chunk388032.t.Pe1RbL),
         value: Chunk981631.A2N.ALWAYS
       }],
-      onChange: e => p.cC.updateSetting(e),
+      onChange: e => _.cC.updateSetting(e),
       value: y
     });
   return (0, Chunk54381.jsx)(Chunk273313.Z, {
@@ -80,14 +80,14 @@ function b() {
           children: [(0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_INLINE_MEDIA_LINKS,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: S,
+              checked: T,
               onChange: Chunk695346.RS.updateSetting,
               label: Chunk388032.intl.string(Chunk388032.t.U47N1p)
             })
           }), (0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_INLINE_MEDIA_UPLOADS,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: T,
+              checked: I,
               description: Chunk388032.intl.formatToPlainString(Chunk388032.t.qjjvqO, {
                 maxSize: 10
               }),
@@ -131,7 +131,7 @@ function b() {
           }), (0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_EMOJI_EMOTICONS,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: I,
+              checked: S,
               description: Chunk454585.Z.parse(Chunk388032.intl.string(Chunk388032.t["20dvuQ"])),
               onChange: Chunk695346.ev.updateSetting,
               label: Chunk388032.intl.string(Chunk388032.t["79qal8"])
@@ -148,13 +148,13 @@ function b() {
               checked: exports,
               description: Chunk388032.intl.string(Chunk388032.t["/eVrj8"]),
               onChange: e => {
-                _.default.track(g.rMx.STICKERS_IN_AUTOCOMPLETE_TOGGLED, {
+                p.default.track(g.rMx.STICKERS_IN_AUTOCOMPLETE_TOGGLED, {
                   enabled: e,
                   location: {
                     section: g.jXE.SETTINGS_TEXT_AND_IMAGES
                   },
-                  location_stack: D
-                }), p.fq.updateSetting(e)
+                  location_stack: w
+                }), _.fq.updateSetting(e)
               },
               label: Chunk388032.intl.string(Chunk388032.t["29xPVZ"])
             })
@@ -170,12 +170,12 @@ function b() {
               checked: require,
               description: Chunk388032.intl.string(Chunk388032.t.hrSIhN),
               onChange: e => {
-                _.default.track(g.rMx.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
+                p.default.track(g.rMx.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
                   checked: e,
                   location: {
                     section: g.jXE.SETTINGS_TEXT_AND_IMAGES
                   }
-                }), p.eR.updateSetting(e)
+                }), _.eR.updateSetting(e)
               },
               label: Chunk388032.intl.string(Chunk388032.t["CtYr+U"])
             })
@@ -190,12 +190,12 @@ function b() {
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
               checked: b,
               onChange: e => {
-                _.default.track(g.rMx.PREVIEW_MARKDOWN_TOGGLED, {
+                p.default.track(g.rMx.PREVIEW_MARKDOWN_TOGGLED, {
                   enabled: e,
                   location: {
                     section: g.jXE.SETTINGS_TEXT_AND_IMAGES
                   }
-                }), p.R$.updateSetting(e)
+                }), _.R$.updateSetting(e)
               },
               label: Chunk388032.intl.string(Chunk388032.t.AqGrEI)
             })
@@ -205,7 +205,7 @@ function b() {
               checked: N,
               description: Chunk388032.intl.string(Chunk388032.t.AaXigo),
               onChange: e => {
-                p.HV.updateSetting(e)
+                _.HV.updateSetting(e)
               },
               label: Chunk388032.intl.string(Chunk388032.t.uXQ2xT)
             })
@@ -237,13 +237,13 @@ function b() {
               name: Chunk388032.intl.string(Chunk388032.t.MwlEGN),
               value: 1
             }],
-            onChange: w,
-            value: +!!P
+            onChange: D,
+            value: +!!R
           })
         })]
       }), (0, Chunk54381.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.CHAT_SPOILERS,
-        children: [(0, Chunk54381.jsx)(Chunk481060.izJ, {}), L()]
+        children: [(0, Chunk54381.jsx)(Chunk481060.izJ, {}), x()]
       })]
     })
   })

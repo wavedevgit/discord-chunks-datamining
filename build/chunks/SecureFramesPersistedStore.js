@@ -2,7 +2,7 @@
 /** chunk id: 615830, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -35,7 +35,7 @@ function d(e) {
 function f() {
   c = s
 }
-class _ extends(r = Chunk442837.ZP.PersistedStore) {
+class p extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t, n;
     l = null != (t = null == e ? true : e.persistentCodesEnabled) && t, c = null != (n = null == e ? true : e.uploadedKeyVersions) ? n : s
@@ -53,8 +53,8 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
     return c
   }
 }
-o(_, "displayName", "SecureFramesPersistedStore"), o(_, "persistKey", "SecureFramesPersistedStore");
-let p = new _(Chunk570140.Z, {
+o(p, "displayName", "SecureFramesPersistedStore"), o(p, "persistKey", "SecureFramesPersistedStore");
+let _ = new p(Chunk570140.Z, {
   SECURE_FRAMES_SETTINGS_UPDATE: u,
   SECURE_FRAMES_UPLOADED_KEY_VERSION_ADD: d,
   SECURE_FRAMES_UPLOADED_KEY_VERSION_CLEAR: f

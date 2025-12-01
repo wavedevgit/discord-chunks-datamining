@@ -2,7 +2,7 @@
 /** chunk id: 396352, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -39,7 +39,7 @@ function f(e) {
   } = e;
   l.topEmojisByGuildId[t] = n.map(e => e.emojiId), c[t] = false
 }
-class _ extends(r = Chunk442837.ZP.PersistedStore) {
+class p extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     l = null != e ? e : s
   }
@@ -53,8 +53,8 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
     return c[e]
   }
 }
-o(_, "displayName", "TopEmojiStore"), o(_, "persistKey", "TopEmojiStore");
-let p = new _(Chunk570140.Z, {
+o(p, "displayName", "TopEmojiStore"), o(p, "persistKey", "TopEmojiStore");
+let _ = new p(Chunk570140.Z, {
   LOGOUT: u,
   TOP_EMOJIS_FETCH: d,
   TOP_EMOJIS_FETCH_SUCCESS: f

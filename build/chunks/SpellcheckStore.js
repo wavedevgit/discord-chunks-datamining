@@ -2,7 +2,7 @@
 /** chunk id: 398327, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -22,13 +22,13 @@ let u = "SpellcheckStore",
   d = true,
   f = new Set;
 
-function _() {
+function p() {
   Chunk433517.K.set(u, {
     enabled: d,
     learnedWords: f
   })
 }
-class p extends(r = Chunk442837.ZP.Store) {
+class _ extends(r = Chunk442837.ZP.Store) {
   initialize() {
     let e = Chunk433517.K.get(u);
     null != module && (d = module.enabled, f = new Set(module.learnedWords), (0, Chunk601993.gL)(d), (0, Chunk601993.fG)(f)), (0, Chunk241601.Ql)(Chunk601993._2)
@@ -40,21 +40,21 @@ class p extends(r = Chunk442837.ZP.Store) {
     return f.has(e.toLocaleLowerCase())
   }
 }
-c(p, "displayName", "SpellcheckStore");
-let h = new p(Chunk570140.Z, {
+c(_, "displayName", "SpellcheckStore");
+let m = new _(Chunk570140.Z, {
   SPELLCHECK_TOGGLE() {
-    d = !d, (0, Chunk601993.gL)(d), _()
+    d = !d, (0, Chunk601993.gL)(d), p()
   },
   SPELLCHECK_LEARN_WORD(e) {
     let {
       word: t
     } = e;
-    f.add(t.toLocaleLowerCase()), (0, l.fG)(f), _()
+    f.add(t.toLocaleLowerCase()), (0, l.fG)(f), p()
   },
   SPELLCHECK_UNLEARN_WORD(e) {
     let {
       word: t
     } = e;
-    f.delete(t.toLocaleLowerCase()), (0, l.fG)(f), _()
+    f.delete(t.toLocaleLowerCase()), (0, l.fG)(f), p()
   }
 })

@@ -85,10 +85,10 @@ class s {
       let e = new s(null != (n = f.legacyEnabled) ? require : Chunk987650.iP, f.oopEnabled || Chunk987650.iP);
       return module.save(), Chunk433517.K.remove("OverlayStore5"), module
     }
-    let _ = Chunk433517.K.get("OverlayStore6");
-    if (null != _) return new s(null != (a = _.legacyEnabled) ? a : Chunk987650.iP, null != (o = _.oopEnabled) ? o : Chunk987650.iP);
-    let p = new s(Chunk987650.iP, Chunk987650.iP);
-    return p.save(), p
+    let p = Chunk433517.K.get("OverlayStore6");
+    if (null != p) return new s(null != (a = p.legacyEnabled) ? a : Chunk987650.iP, null != (o = p.oopEnabled) ? o : Chunk987650.iP);
+    let _ = new s(Chunk987650.iP, Chunk987650.iP);
+    return _.save(), _
   }
   constructor(e, t) {
     a(this, "legacyEnabled", true), a(this, "oopEnabled", true), this.legacyEnabled = e, this.oopEnabled = t

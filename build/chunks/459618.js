@@ -2,7 +2,7 @@
 /** chunk id: 459618, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -66,7 +66,7 @@ function b(e) {
   let n = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
     r = null == e.gatewaySeenTimestamp ? null : e.gatewaySeenTimestamp - e.initialSendTimestamp,
     i = (0, s.d)();
-  d.default.track(f.rMx.SEND_MESSAGE_ROUNDTRIP, p(m(p({}, (0, o.Z)()), {
+  d.default.track(f.rMx.SEND_MESSAGE_ROUNDTRIP, _(h(_({}, (0, o.Z)()), {
     api_latency_ms: n,
     gateway_latency_ms: r,
     channel_id: t.id,
@@ -110,7 +110,7 @@ class O extends Chunk442837.ZP.Store {
   recordMessageSendApiResponse(e) {
     let t = this.pendingMessages.get(e);
     if (null != t) {
-      let n = m(p({}, t), {
+      let n = h(_({}, t), {
         apiResponseTimestamp: Date.now()
       });
       E(n) ? (b(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
@@ -119,17 +119,17 @@ class O extends Chunk442837.ZP.Store {
   recordGatewayResponse(e) {
     let t = this.pendingMessages.get(e);
     if (null != t) {
-      let n = m(p({}, t), {
+      let n = h(_({}, t), {
         gatewaySeenTimestamp: Date.now()
       });
       E(n) ? (b(n), this.pendingMessages.delete(e)) : this.pendingMessages.set(e, n)
     }
   }
   constructor(...e) {
-    super(...e), _(this, "pendingMessages", new Map)
+    super(...e), p(this, "pendingMessages", new Map)
   }
 }
 let v = new O(Chunk570140.Z, {
     MESSAGE_CREATE: y
   }),
-  I = v
+  S = v

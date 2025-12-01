@@ -18,10 +18,10 @@ function s(e) {
       index: c,
       timestamp: d,
       logs: f,
-      nativeLogs: _,
-      serverTrace: p
-    } = r, h = 0 === c ? null != (s = null == (a = i().find(f, e => e.log.indexOf("Logger loaded") >= 0)) ? true : a.timestamp) ? s : e : d, m = l(u(f, _, t, n), h), g = "Trace #".concat(c + 1, " started ").concat((0, o.Ye)(d), "\n").concat(m);
-    return null != p && (g += "\n Server trace for trace #".concat(c + 1).concat(p)), g
+      nativeLogs: p,
+      serverTrace: _
+    } = r, m = 0 === c ? null != (s = null == (a = i().find(f, e => e.log.indexOf("Logger loaded") >= 0)) ? true : a.timestamp) ? s : e : d, h = l(u(f, p, t, n), m), g = "Trace #".concat(c + 1, " started ").concat((0, o.Ye)(d), "\n").concat(h);
+    return null != _ && (g += "\n Server trace for trace #".concat(c + 1).concat(_)), g
   }).join("\n\n")
 }
 
@@ -77,7 +77,7 @@ function u(e, t, n, r) {
       log: r,
       shouldKeep: l
     };
-    _(e, u), c && (a += "| ", o.push(u))
+    p(e, u), c && (a += "| ", o.push(u))
   });
   let s = false;
   return e.filter(e => !(s && e.log.includes("↪")) && !(s = !r && "\uD83C\uDFA8" === e.emoji || false === e.shouldKeep))
@@ -92,7 +92,7 @@ function f(e) {
   return t.includes("_START") && (t = "Start " + t.replace("_START", "")), t.includes("_END") && (t = "Finish " + t.replace("_END", "")), t
 }
 
-function _(e, t) {
+function p(e, t) {
   let n = 0;
   for (; n < e.length; n++) {
     let {

@@ -2,7 +2,7 @@
 /** chunk id: 825209, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,8 +22,8 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = Chunk358085.isPlatformEmbedded && null != Chunk998502.ZP.getDiscordUtils().inputCaptureRegisterElement;
-class p extends Chunk473749.PureComponent {
+let p = Chunk358085.isPlatformEmbedded && null != Chunk998502.ZP.getDiscordUtils().inputCaptureRegisterElement;
+class _ extends Chunk473749.PureComponent {
   componentDidMount() {
     this._mounted = true
   }
@@ -56,19 +56,19 @@ class p extends Chunk473749.PureComponent {
       {
         disabled: a
       } = this.props;
-    return _ ? (t = Chunk998502.ZP.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : Chunk358085.isPlatformEmbedded || (e = this.handleComboKeys), (0, Chunk54381.jsx)(Chunk455279.Z, {
+    return p ? (t = Chunk998502.ZP.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : Chunk358085.isPlatformEmbedded || (e = this.handleComboKeys), (0, Chunk54381.jsx)(Chunk455279.Z, {
       disabled: Chunk921738,
       value: require,
       mode: Chunk473749,
       onClick: this.toggleRecordMode,
       onChange: module,
       registerNativeRecorder: exports,
-      disableOnClickWhileRecording: _
+      disableOnClickWhileRecording: p
     })
   }
   constructor(e) {
     super(e), f(this, "_input", true), f(this, "gs", true), f(this, "_mounted", false), f(this, "recordStart", () => {
-      c.isPlatformEmbedded && !_ && (this.gs = new s.Z, this.gs.on("change", this.handleGSChange)), this.setState({
+      c.isPlatformEmbedded && !p && (this.gs = new s.Z, this.gs.on("change", this.handleGSChange)), this.setState({
         mode: l.c.RECORDING
       })
     }), f(this, "recordEnd", () => {
@@ -104,4 +104,4 @@ class p extends Chunk473749.PureComponent {
     }
   }
 }
-let h = p
+let m = _

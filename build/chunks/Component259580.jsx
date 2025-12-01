@@ -2,7 +2,7 @@
 /** chunk id: 259580, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -71,7 +71,7 @@ let f = {
     DOWN: Chunk279737.directionDown,
     LEFT: Chunk279737.directionLeft
   },
-  _ = e => {
+  p = e => {
     var {
       direction: t = f.DOWN,
       width: n = 24,
@@ -79,17 +79,17 @@ let f = {
       color: o = "currentColor",
       className: l,
       foreground: d,
-      expanded: _
-    } = e, p = u(e, ["direction", "width", "height", "color", "className", "foreground", "expanded"]);
-    let h = t;
-    true === _ ? h = f.DOWN : false === _ && (h = f.RIGHT);
-    let m = {
+      expanded: p
+    } = e, _ = u(e, ["direction", "width", "height", "color", "className", "foreground", "expanded"]);
+    let m = t;
+    true === p ? m = f.DOWN : false === p && (m = f.RIGHT);
+    let h = {
       [f.UP]: i.u04,
       [f.DOWN]: i.CJ0,
       [f.LEFT]: i.V7D,
       [f.RIGHT]: i.Fbu
-    } [h];
-    return (0, r.jsx)(m, c(s({}, p), {
+    } [m];
+    return (0, r.jsx)(h, c(s({}, _), {
       className: l,
       size: "custom",
       width: n,
@@ -98,5 +98,5 @@ let f = {
       colorClass: d
     }))
   };
-_.Directions = f;
-let p = _
+p.Directions = f;
+let _ = p

@@ -9,28 +9,28 @@ module.exports = function(e, t, n, o, s, l) {
     d = u.length;
   if (d != r(t).length && !c) returnfalse;
   for (var f = d; f--;) {
-    var _ = u[f];
-    if (!(c ? _ in t : a.call(t, _))) returnfalse
+    var p = u[f];
+    if (!(c ? p in t : a.call(t, p))) returnfalse
   }
-  var p = l.get(e),
-    h = l.get(t);
-  if (p && h) return p == t && h == e;
-  var m = true;
+  var _ = l.get(e),
+    m = l.get(t);
+  if (_ && m) return _ == t && m == e;
+  var h = true;
   l.set(e, t), l.set(t, e);
   for (var g = c; ++f < d;) {
-    var E = e[_ = u[f]],
-      b = t[_];
-    if (o) var y = c ? o(b, E, _, t, e, l) : o(E, b, _, e, t, l);
+    var E = e[p = u[f]],
+      b = t[p];
+    if (o) var y = c ? o(b, E, p, t, e, l) : o(E, b, p, e, t, l);
     if (!(true === y ? E === b || s(E, b, n, o, l) : y)) {
-      m = false;
+      h = false;
       break
     }
-    g || (g = "constructor" == _)
+    g || (g = "constructor" == p)
   }
-  if (m && !g) {
+  if (h && !g) {
     var O = e.constructor,
       v = t.constructor;
-    O != v && "constructor" in e && "constructor" in t && !("function" == typeof O && O instanceof O && "function" == typeof v && v instanceof v) && (m = false)
+    O != v && "constructor" in e && "constructor" in t && !("function" == typeof O && O instanceof O && "function" == typeof v && v instanceof v) && (h = false)
   }
-  return l.delete(e), l.delete(t), m
+  return l.delete(e), l.delete(t), h
 }

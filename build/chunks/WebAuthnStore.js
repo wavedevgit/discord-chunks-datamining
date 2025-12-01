@@ -29,19 +29,19 @@ function f() {
   u = true
 }
 
-function _() {
+function p() {
   if (!u) returnfalse;
   u = false
 }
 
-function p(e) {
+function _(e) {
   let {
     credentials: t
   } = e, n = false;
   return c !== t && (c = t, n = true), l || (l = true, n = true), n
 }
 
-function h(e) {
+function m(e) {
   let {
     credential: t
   } = e;
@@ -49,7 +49,7 @@ function h(e) {
   c = [...c, t]
 }
 
-function m(e) {
+function h(e) {
   let {
     credential: t
   } = e;
@@ -81,10 +81,10 @@ class E extends(r = Chunk442837.ZP.Store) {
 s(E, "displayName", "WebAuthnStore");
 let b = new E(Chunk570140.Z, {
   LOGOUT: d,
-  MFA_WEBAUTHN_CREDENTIALS_LOADED: p,
-  AUTHENTICATOR_CREATE: h,
-  AUTHENTICATOR_UPDATE: m,
+  MFA_WEBAUTHN_CREDENTIALS_LOADED: _,
+  AUTHENTICATOR_CREATE: m,
+  AUTHENTICATOR_UPDATE: h,
   AUTHENTICATOR_DELETE: g,
   WEBAUTHN_TRIGGER_REGISTER: f,
-  WEBAUTHN_CLEAR_REGISTER_TRIGGER: _
+  WEBAUTHN_CLEAR_REGISTER_TRIGGER: p
 })

@@ -2,7 +2,7 @@
 /** chunk id: 98474, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -59,29 +59,29 @@ function y(e, t) {
 }
 let O = 450,
   v = .5,
-  I = [];
+  S = [];
 
-function T(e) {
+function I(e) {
   let {
     messageId: t,
     emoji: n,
     startPosition: g,
     targetPosition: b
-  } = e, [T, S] = i.useState(0), [A, C] = i.useState(0), [N, R] = i.useState(null), {
-    confettiCanvas: P
-  } = i.useContext(u.h), D = (0, a.uR)(P, N), w = i.useMemo(() => [{
-    src: null == n.id ? p.ZP.getURL(n.name) : _.ZP.getEmojiURL({
+  } = e, [I, T] = i.useState(0), [A, C] = i.useState(0), [N, P] = i.useState(null), {
+    confettiCanvas: R
+  } = i.useContext(u.h), w = (0, a.uR)(R, N), D = i.useMemo(() => [{
+    src: null == n.id ? _.ZP.getURL(n.name) : p.ZP.getEmojiURL({
       id: n.id,
       animated: false,
       size: 22
     }),
     colorize: false
-  }], [n.name, n.id]), L = b.x - b.width / 2 * v, x = b.y - b.height / 2 * v, M = (0, l.q_F)({
+  }], [n.name, n.id]), x = b.x - b.width / 2 * v, L = b.y - b.height / 2 * v, j = (0, l.q_F)({
     from: {
       y: g.y
     },
     to: {
-      y: x
+      y: L
     },
     config: {
       duration: O,
@@ -93,14 +93,14 @@ function T(e) {
       } = e;
       C(t)
     }
-  }), k = (0, l.q_F)({
+  }), M = (0, l.q_F)({
     from: {
       x: g.x,
       scale: 1,
       opacity: 1
     },
     to: {
-      x: L,
+      x: x,
       scale: v,
       opacity: .4
     },
@@ -115,36 +115,36 @@ function T(e) {
       let {
         x: t
       } = e;
-      S(t)
+      T(t)
     }
   });
   return i.useEffect(() => {
-    T > 0 && A > 0 && D.createConfetti(y(E({}, h.We), {
+    I > 0 && A > 0 && w.createConfetti(y(E({}, m.We), {
       position: {
         type: "static",
         value: {
-          x: T,
+          x: I,
           y: A
         }
       }
     }))
-  }, [D, T, A]), (0, r.jsxs)(r.Fragment, {
+  }, [w, I, A]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Ji, {
-      ref: R,
-      sprites: w,
-      colors: I,
-      spriteWidth: h.Ko,
-      spriteHeight: h.Ko
+      ref: P,
+      sprites: D,
+      colors: S,
+      spriteWidth: m.Ko,
+      spriteHeight: m.Ko
     }), (0, r.jsx)(d.ZP, {
       children: (0, r.jsx)(o.animated.div, {
-        style: E({}, M),
-        className: m.emojiContainer,
+        style: E({}, j),
+        className: h.emojiContainer,
         children: (0, r.jsx)(o.animated.div, {
-          style: y(E({}, k), {
-            opacity: k.opacity
+          style: y(E({}, M), {
+            opacity: M.opacity
           }),
           children: (0, r.jsx)(c.Z, {
-            className: m.emoji,
+            className: h.emoji,
             emojiId: n.id,
             emojiName: n.name,
             animated: n.animated,

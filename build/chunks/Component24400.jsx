@@ -2,7 +2,7 @@
 /** chunk id: 24400, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk604849 = require("./604849.js"),
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _() {
+function p() {
   let e = (0, Chunk604849.c)();
   return (0, Chunk54381.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_SAFETY_ALERTS_V2,

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $X: () => c,
-  IO: () => _,
+  IO: () => p,
   M_: () => o,
   U3: () => d,
   b4: () => l,
@@ -22,6 +22,6 @@ let a = "publicSuccessModalSeen",
   u = Chunk149765.$e(...c),
   d = 1e3,
   f = "Enable Community Modal";
-var _ = function(e) {
+var p = function(e) {
   return e.SAFETY_CHECK = "safety_check", e.BASICS = "basics", e.FINISH = "finish", e
 }({})

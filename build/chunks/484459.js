@@ -2,7 +2,7 @@
 /** chunk id: 484459, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk570140 = require("./570140.js"),
   Chunk232567 = require("./232567.js"),
@@ -15,52 +15,52 @@ var Chunk570140 = require("./570140.js"),
   Chunk271383 = require("./271383.js"),
   Chunk621853 = require("./621853.js"),
   Chunk120569 = require("./120569.js");
-let p = 6e4;
+let _ = 6e4;
 
-function h(e, t) {
-  var n, h, m, g;
+function m(e, t) {
+  var n, m, h, g;
   let {
     type: E,
     withMutualGuilds: b = false,
     withMutualFriendsCount: y = false,
     withMutualFriends: O = false,
     dispatchWait: v = false,
-    waitForRefetch: I = true,
-    guildId: T,
-    channelId: S,
+    waitForRefetch: S = true,
+    guildId: I,
+    channelId: T,
     joinRequestId: A,
     abortSignal: C
   } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-  if ("" === e || f.Z.isFetchingProfile(e, T)) return Promise.resolve();
+  if ("" === e || f.Z.isFetchingProfile(e, I)) return Promise.resolve();
   let N = f.Z.getUserProfile(e),
-    R = Date.now() - (null != (g = null == N ? true : N.fetchEndedAt) ? g : 0) >= p;
-  if (((null == N || null == (n = N.fetchError) ? true : n.status) === 404 || (null == N || null == (h = N.fetchError) ? true : h.status) === 429) && !R) return Promise.resolve();
-  let P = f.Z.getGuildMemberProfile(e, T),
-    D = f.Z.getMutualGuilds(e),
-    w = f.Z.getMutualFriends(e),
-    L = f.Z.getMutualFriendsCount(e),
-    x = null == w && O,
-    M = null == L && y,
-    k = null == D && b || x || M,
-    j = null == T ? null == N : null == P,
-    U = !j && (R || k);
-  if (!j && !U) return Promise.resolve();
-  let G = null != T ? null == P ? true : P.profileEffect : null == N ? true : N.profileEffect;
+    P = Date.now() - (null != (g = null == N ? true : N.fetchEndedAt) ? g : 0) >= _;
+  if (((null == N || null == (n = N.fetchError) ? true : n.status) === 404 || (null == N || null == (m = N.fetchError) ? true : m.status) === 429) && !P) return Promise.resolve();
+  let R = f.Z.getGuildMemberProfile(e, I),
+    w = f.Z.getMutualGuilds(e),
+    D = f.Z.getMutualFriends(e),
+    x = f.Z.getMutualFriendsCount(e),
+    L = null == D && O,
+    j = null == x && y,
+    M = null == w && b || L || j,
+    k = null == I ? null == N : null == R,
+    U = !k && (P || M);
+  if (!k && !U) return Promise.resolve();
+  let G = null != I ? null == R ? true : R.profileEffect : null == N ? true : N.profileEffect;
   null != G && ((0, s.c)("maybeFetchUserProfile") ? (0, o.lW)(G.skuId) : (0, c.t)()), null != t && (0, a.vM)(t);
-  let B = {
+  let Z = {
     type: E,
     withMutualGuilds: b,
     withMutualFriends: O,
     withMutualFriendsCount: y,
-    guildId: T,
+    guildId: I,
     joinRequestId: A,
     abortSignal: C,
-    connectionsRoleId: null == T || null == (m = (0, l.Ur)({
-      guildMember: d.ZP.getMember(T, e),
-      channel: u.Z.getChannel(S)
-    })) ? true : m.id
+    connectionsRoleId: null == I || null == (h = (0, l.Ur)({
+      guildMember: d.ZP.getMember(I, e),
+      channel: u.Z.getChannel(T)
+    })) ? true : h.id
   };
-  if (v) return r.Z.wait(() => (0, i.In)(e, B, _.Z)), Promise.resolve();
-  let Z = (0, i.In)(e, B, _.Z);
-  return U && !I ? Promise.resolve() : Z
+  if (v) return r.Z.wait(() => (0, i.In)(e, Z, p.Z)), Promise.resolve();
+  let B = (0, i.In)(e, Z, p.Z);
+  return U && !S ? Promise.resolve() : B
 }

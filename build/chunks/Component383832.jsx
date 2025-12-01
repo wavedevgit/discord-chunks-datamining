@@ -52,18 +52,18 @@ function c() {
       default: e
     } = await Promise.all([require.e("52030"), require.e("41619"), require.e("24374")]).then(require.bind(require, 153069));
     return t => {
-      var n, l;
-      return (0, a.jsx)(e, (n = s({}, t), l = l = {
+      var n, r;
+      return (0, a.jsx)(e, (n = s({}, t), r = r = {
         onBackPressed: o
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e);
           n.push.apply(n, a)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n))
     }
   }, {

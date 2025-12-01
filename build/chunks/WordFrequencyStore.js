@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./642613.js"), require("./368063.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -21,10 +21,10 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = 5,
-  _ = 250,
-  p = .001,
-  h = .01,
-  m = 10,
+  p = 250,
+  _ = .001,
+  m = .01,
+  h = 10,
   g = new Map,
   E = 0;
 
@@ -50,28 +50,28 @@ function v(e, t) {
   }
 }
 
-function I() {
+function S() {
   let e = 1e3,
     t = 5e3,
     n = .05;
   return E < 1e3 || Math.random() < (1 - require) * Math.max(0, 1 - (E - module) / (exports - module)) + require
 }
 
-function T(e) {
-  null == r && (r = l.t.createEstimate(p, h));
+function I(e) {
+  null == r && (r = l.t.createEstimate(_, m));
   let t = false;
   for (let n of e)
-    if (I())
+    if (S())
       for (let e of y(n.content.toLowerCase())) {
         if (0 === e.length || e.length > f) continue;
         r.update(e);
         let n = r.query(e);
         g.set(e, n), n > E && (E = n), t = true
       }
-  v(g, _), t && w.emitChange()
+  v(g, p), t && D.emitChange()
 }
 
-function S() {
+function T() {
   let e = Chunk240458.V.getCurrentConfig({
       location: "WordFrequencyStore"
     }, {
@@ -95,23 +95,23 @@ let C = () => {
 };
 
 function N(e) {
-  return S() ? (requestIdleCallback(() => {
-    T(e)
+  return T() ? (requestIdleCallback(() => {
+    I(e)
   }), false) : !!A() && g.size > 0 && (C(), true)
 }
-let R = e => {
+let P = e => {
     let {
       messages: t
     } = e;
     return N(t)
   },
-  P = e => {
+  R = e => {
     let {
       message: t
     } = e;
     return N([t])
   };
-class D extends(i = Chunk442837.ZP.PersistedStore) {
+class w extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (this.waitFor(s.Z), null != e) {
       var t;
@@ -142,13 +142,13 @@ class D extends(i = Chunk442837.ZP.PersistedStore) {
   }
   isFrequentlyUsedWord(e) {
     let t = g.get(e.toLowerCase());
-    return null != t && t > m
+    return null != t && t > h
   }
 }
-d(D, "displayName", "WordFrequencyStore"), d(D, "persistKey", "WordFrequencyStore");
-let w = new D(Chunk570140.Z, {
-    LOAD_MESSAGES_SUCCESS: R,
-    MESSAGE_CREATE: P,
+d(w, "displayName", "WordFrequencyStore"), d(w, "persistKey", "WordFrequencyStore");
+let D = new w(Chunk570140.Z, {
+    LOAD_MESSAGES_SUCCESS: P,
+    MESSAGE_CREATE: R,
     DEV_TOOLS_WORD_FREQUENCY_RESET: C
   }),
-  L = w
+  x = D

@@ -2,9 +2,9 @@
 /** chunk id: 829883, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _b: () => h,
+  _b: () => m,
   o: () => f,
-  zt: () => p,
+  zt: () => _,
   zy: () => d
 }), require("./704826.js"), require("./35282.js");
 var Chunk633302 = require("./633302.js"),
@@ -19,12 +19,12 @@ let l = "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/
     if (null == e) return null;
     let n = null != e.unicodeEmoji ? r.ZP.getByName(r.ZP.convertSurrogateToName(e.unicodeEmoji, false)) : true;
     return {
-      customIconSrc: _(e, t),
+      customIconSrc: p(e, t),
       unicodeEmoji: null != n ? n : true
     }
   },
   f = (e, t) => e.replace(/size=[0-9]+/g, "size=".concat((0, i.oO)(t * (0, i.x_)()))),
-  _ = (e, t) => {
+  p = (e, t) => {
     let {
       id: n,
       icon: r
@@ -36,8 +36,8 @@ let l = "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/
       f = "quality=lossless";
     return (null != t && (d = "size=" + (0, i.oO)(t * (0, i.x_)()), f = u ? "" : "&" + f), null != window.GLOBAL_ENV.CDN_HOST) ? "".concat(l, "/").concat(n, "/").concat(r, ".").concat(o, "?").concat(d).concat(f) : "".concat(c).concat(s.ANM.ROLE_ICON(n, r), "?").concat(d)
   },
-  p = e => e.startsWith(l) || e.startsWith("".concat(c, "/roles")) && e.includes("/icons/"),
-  h = (e, t) => {
+  _ = e => e.startsWith(l) || e.startsWith("".concat(c, "/roles")) && e.includes("/icons/"),
+  m = (e, t) => {
     var n;
     return (null == t || null == (n = t.tags) ? true : n.subscription_listing_id) != null || e.features.has(s.GuildFeatures.ROLE_ICONS)
   }

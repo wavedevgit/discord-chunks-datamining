@@ -16,35 +16,35 @@ function u(e, t, n) {
   var u;
   let d = i.default.getUser(t),
     f = r.Z.getChannel(n),
-    _ = null != (u = a.ZP.getName(null == f ? true : f.guild_id, null == f ? true : f.id, d)) ? u : o.ZP.getGlobalName(d);
+    p = null != (u = a.ZP.getName(null == f ? true : f.guild_id, null == f ? true : f.id, d)) ? u : o.ZP.getGlobalName(d);
   switch (e) {
     case s.wQ.IGNORE_SUCCESS:
       return l.intl.formatToPlainString(l.t["+joqrP"], {
-        username: _
+        username: p
       });
     case s.wQ.UNIGNORE_SUCCESS:
       return l.intl.formatToPlainString(l.t.THExKa, {
-        username: _
+        username: p
       });
     case s.wQ.BLOCK_SUCCESS:
       return l.intl.formatToPlainString(l.t.XXPrIs, {
-        username: _
+        username: p
       });
     case s.wQ.UNBLOCK_SUCCESS:
       return l.intl.formatToPlainString(l.t.uExcGX, {
-        username: _
+        username: p
       });
     case s.wQ.MUTE_SUCCESS:
       return l.intl.formatToPlainString(l.t.X4NtYb, {
-        username: _
+        username: p
       });
     case s.wQ.UNMUTE_SUCCESS:
       return l.intl.formatToPlainString(l.t.tRaBfY, {
-        username: _
+        username: p
       });
     case s.wQ.REPORT_SUCCESS:
       return l.intl.formatToPlainString(l.t.FOptFU, {
-        username: _
+        username: p
       });
     case s.wQ.TIGGER_PAWTECT_ERROR:
       return l.intl.string(l.t.c6kn6F);

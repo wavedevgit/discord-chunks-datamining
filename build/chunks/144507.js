@@ -2,10 +2,10 @@
 /** chunk id: 144507, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $D: () => m,
+  $D: () => h,
   H2: () => g,
-  MO: () => h,
-  X$: () => p,
+  MO: () => m,
+  X$: () => _,
   d5: () => d
 });
 var Chunk442837 = require("./442837.js"),
@@ -33,7 +33,7 @@ function f(e) {
   return !!r && (!s || !!n) && (!!(t.features.has(u.GuildFeatures.CREATOR_MONETIZABLE) || t.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) || !!t.features.has(u.GuildFeatures.COMMUNITY) && (!!i || !!a) && n && o)
 }
 
-function _(e) {
+function p(e) {
   if (e.guild.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_DISABLED)) return 0;
   if (f(e)) return 3;
   let {
@@ -47,24 +47,24 @@ function _(e) {
   return n && !r && i ? 1 : n && i && (a || o) && !t.features.has(u.GuildFeatures.COMMUNITY) ? 2 : 0
 }
 
-function p(e) {
-  return 0 !== _(e)
+function _(e) {
+  return 0 !== p(e)
 }
 
-function h(e) {
+function m(e) {
   let t = (0, c.Bt)(null == e ? true : e.id),
     n = (0, i.Ob)(e),
     s = (0, i.gS)(null == e ? true : e.id),
-    u = m(e),
+    u = h(e),
     d = (0, r.e7)([l.default], () => {
       let t = l.default.getCurrentUser();
       return null != e && (0, o.eM)(e, t)
     }),
     f = (0, i.Sd)(),
     {
-      shouldRestrictUpdatingCreatorMonetizationSettings: p
+      shouldRestrictUpdatingCreatorMonetizationSettings: _
     } = (0, a.gX)(null == e ? true : e.id);
-  return null == e ? 0 : _({
+  return null == e ? 0 : p({
     guild: e,
     isOwner: d,
     canManageGuildRoleSubscriptions: u,
@@ -72,11 +72,11 @@ function h(e) {
     isMonetizationWaitlistEnabledForGuild: s,
     isExpeditedMonetizationOnboardingGuild: n,
     isUserInCreatorMonetizationEligibleCountry: f,
-    shouldRestrictUpdatingRoleSubscriptionSettings: p
+    shouldRestrictUpdatingRoleSubscriptionSettings: _
   })
 }
 
-function m(e) {
+function h(e) {
   return (0, r.e7)([s.Z], () => g(e), [e])
 }
 

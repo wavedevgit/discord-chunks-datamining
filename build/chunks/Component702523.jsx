@@ -51,9 +51,9 @@ function d(e, t) {
 }
 
 function f(e, t, l, u, f) {
-  let _ = s.Z.getInstallationPath(e.id, t),
-    p = null != e.eulaId && !o.Z.hasAcceptedEULA(e.eulaId);
-  null == _ || p ? (0, i.ZDy)(async () => {
+  let p = s.Z.getInstallationPath(e.id, t),
+    _ = null != e.eulaId && !o.Z.hasAcceptedEULA(e.eulaId);
+  null == p || _ ? (0, i.ZDy)(async () => {
     let {
       default: i
     } = await n.e("226").then(n.bind(n, 472064));
@@ -67,7 +67,7 @@ function f(e, t, l, u, f) {
     branchId: t,
     buildId: l,
     manifestIds: u,
-    installationPath: _,
+    installationPath: p,
     analyticsLocation: f
   })
 }

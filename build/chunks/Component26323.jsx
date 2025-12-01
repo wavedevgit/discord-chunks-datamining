@@ -2,7 +2,7 @@
 /** chunk id: 26323, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -52,7 +52,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   let c = null != t ? t : "".concat(l.jXE.PREMIUM_GUILD_UPSELL_MODAL);
   null != e.targetBoostedGuildTier && (c += " - Tier ".concat(e.targetBoostedGuildTier));
   let f = () => {
@@ -66,17 +66,17 @@ function _(e, t) {
     location: e.analyticsSourceLocation
   });
   let {
-    openInPopoutEnabled: _
-  } = e, p = d(e, ["openInPopoutEnabled"]), h = a.Z.getWindowOpen(l.KJ3.CHANNEL_CALL_POPOUT) && null != _ && _;
-  h && (0, o.Z)(l.KJ3.CHANNEL_CALL_POPOUT);
-  let m = h ? i.u1M : i.z1l;
+    openInPopoutEnabled: p
+  } = e, _ = d(e, ["openInPopoutEnabled"]), m = a.Z.getWindowOpen(l.KJ3.CHANNEL_CALL_POPOUT) && null != p && p;
+  m && (0, o.Z)(l.KJ3.CHANNEL_CALL_POPOUT);
+  let h = m ? i.u1M : i.z1l;
   (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("89675").then(n.bind(n, 146747));
-    return t => (0, r.jsx)(e, u({}, p, t))
+    return t => (0, r.jsx)(e, u({}, _, t))
   }, {
     onCloseCallback: f,
-    contextKey: m
+    contextKey: h
   })
 }

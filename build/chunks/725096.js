@@ -2,7 +2,7 @@
 /** chunk id: 725096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -27,7 +27,7 @@ function f(e, t, n) {
   r && ((0, o.xw)(), (0, o.w)(t, n))
 }
 
-function _(e) {
+function p(e) {
   let t = (0, r.useRef)(null),
     n = (0, i.e7)([s.Z], () => s.Z.questDeliveryOverride),
     a = (0, i.e7)([s.Z], () => {

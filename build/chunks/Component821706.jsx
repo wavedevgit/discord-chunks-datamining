@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +28,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,7 +53,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -91,7 +91,7 @@ function y(e) {
   return {
     action: d.yM.SEND_FRIEND_REQUEST,
     icon: a.oLu,
-    text: _.intl.string(_.t.w5uwoI),
+    text: p.intl.string(p.t.w5uwoI),
     onClick: r
   }
 }
@@ -105,7 +105,7 @@ function O(e) {
     userId: t,
     analyticsLocation: n
   });
-  return (0, r.jsx)(l.O1, h({}, a, i))
+  return (0, r.jsx)(l.O1, m({}, a, i))
 }
 
 function v(e) {
@@ -118,12 +118,12 @@ function v(e) {
   }), {
     text: a
   } = i, o = E(i, ["text"]);
-  return (0, r.jsx)(l.f6, h({
+  return (0, r.jsx)(l.f6, m({
     tooltipText: a
   }, o))
 }
 
-function I(e) {
+function S(e) {
   var {
     type: t,
     user: n,
@@ -135,24 +135,24 @@ function I(e) {
     }),
     u = i.useRef(null),
     d = t === s.j8.ICON ? s.ef : s.oY;
-  return 0 === l.length ? (0, r.jsx)(d, g(h({}, o), {
+  return 0 === l.length ? (0, r.jsx)(d, g(m({}, o), {
     disabled: true
   })) : (0, r.jsx)(c.Z, {
     targetElementRef: u,
     menuItems: l,
-    children: e => (0, r.jsx)("div", g(h({
+    children: e => (0, r.jsx)("div", g(m({
       ref: u
     }, e), {
-      children: (0, r.jsx)(d, h({}, o))
+      children: (0, r.jsx)(d, m({}, o))
     }))
   })
 }
-let T = {
+let I = {
     [Chunk981631.OGo.FRIEND]: Chunk481060._uN,
     [Chunk981631.OGo.PENDING_OUTGOING]: Chunk481060.iHX,
     [Chunk981631.OGo.PENDING_INCOMING]: Chunk481060.iHX
   },
-  S = {
+  T = {
     [Chunk981631.OGo.FRIEND]: () => Chunk388032.intl.string(Chunk388032.t.G7jMpU),
     [Chunk981631.OGo.PENDING_OUTGOING]: () => Chunk388032.intl.string(Chunk388032.t["s/+byI"]),
     [Chunk981631.OGo.PENDING_INCOMING]: () => Chunk388032.intl.string(Chunk388032.t["6QQCQ+"])
@@ -166,9 +166,9 @@ function A(e) {
     analyticsLocation: a,
     shouldShowTooltip: o
   } = e, s = E(e, ["type", "user", "relationshipType", "analyticsLocation", "shouldShowTooltip"]);
-  let l = T[i],
-    c = S[i]();
-  return (0, r.jsx)(I, h({
+  let l = I[i],
+    c = T[i]();
+  return (0, r.jsx)(S, m({
     type: t,
     user: n,
     icon: l,
@@ -191,21 +191,21 @@ function C(e) {
   let {
     tooltipText: d,
     onMouseEnter: f,
-    ariaLabel: _,
-    icon: p
+    ariaLabel: p,
+    icon: _
   } = (0, u.N)({
     gameFriends: i,
     hasOutgoingPendingGameFriends: a,
     hasIncomingPendingGameFriends: o
   });
-  return (0, r.jsx)(I, h({
+  return (0, r.jsx)(S, m({
     type: t,
     tooltipText: d,
     tooltipPosition: "left",
     tooltipAlign: "top",
-    ariaLabel: _,
+    ariaLabel: p,
     shouldShowTooltip: l,
-    icon: p,
+    icon: _,
     onMouseEnter: f,
     user: n,
     analyticsLocation: s

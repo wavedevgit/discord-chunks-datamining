@@ -2,7 +2,7 @@
 /** chunk id: 824096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  y: () => p
+  y: () => _
 }), require("./539854.js"), require("./388685.js");
 var Chunk873546 = require("./873546.js"),
   Chunk379649 = require("./379649.js"),
@@ -22,8 +22,8 @@ function c(e, t, n) {
 let u = 16,
   d = 600,
   f = 900,
-  _ = false;
-class p {
+  p = false;
+class _ {
   calculateFps(e, t, n) {
     if (false === this.prevFramesCodec[e] || t < this.prevFramesCodec[e] || n < this.prevTimestamp[e] || n > this.prevTimestamp[e] + 1e3 * this.windowLength) return this.prevFramesCodec[e] = t, this.prevTimestamp[e] = n, this.perUserFpsWindow[e] = [], NaN;
     if (n < this.prevTimestamp[e] + f) return NaN;
@@ -35,7 +35,7 @@ class p {
   updateFps(e, t, n) {
     if (!this.disabled && !this.streamDisabledUsers.has(e)) {
       let r = this.calculateFps(e, t, n);
-      if (_ && this.logger.info("frames=".concat(t, ", timestamp=").concat(n, " fps=").concat(r)), !(r < 0) && Number.isFinite(r)) this.perUserFpsWindow[e].push(r), this.perUserFpsWindow[e].length < this.windowLength || (this.perUserFpsWindow[e].length > this.windowLength && this.perUserFpsWindow[e].shift(), this.perUserFpsWindow[e].filter(e => e < this.fpsThreshold).length >= this.fpsWindowBorderlineCount ? (this.logger.info("".concat(e, ": detected poor network quality, turning off video")), this.streamDisabledUsers.add(e), this.currentVideoAutoToggleState[e] = l.ZUi.DISABLED, (0, o.Z)(e, l.ZUi.DISABLED), this.startReenableBackoffTimer(e)) : this.currentVideoAutoToggleState[e] === l.ZUi.AUTO_PROBING && (this.currentVideoAutoToggleState[e] = l.ZUi.AUTO_ENABLED, this.logger.info("acceptable conditions reached, will reset and send a AUTO_ENABLED for user ".concat(e)), (0, o.Z)(e, l.ZUi.AUTO_ENABLED)), this.probingUserId === e && (this.probingUserId = true, this.tryReenableQueue()))
+      if (p && this.logger.info("frames=".concat(t, ", timestamp=").concat(n, " fps=").concat(r)), !(r < 0) && Number.isFinite(r)) this.perUserFpsWindow[e].push(r), this.perUserFpsWindow[e].length < this.windowLength || (this.perUserFpsWindow[e].length > this.windowLength && this.perUserFpsWindow[e].shift(), this.perUserFpsWindow[e].filter(e => e < this.fpsThreshold).length >= this.fpsWindowBorderlineCount ? (this.logger.info("".concat(e, ": detected poor network quality, turning off video")), this.streamDisabledUsers.add(e), this.currentVideoAutoToggleState[e] = l.ZUi.DISABLED, (0, o.Z)(e, l.ZUi.DISABLED), this.startReenableBackoffTimer(e)) : this.currentVideoAutoToggleState[e] === l.ZUi.AUTO_PROBING && (this.currentVideoAutoToggleState[e] = l.ZUi.AUTO_ENABLED, this.logger.info("acceptable conditions reached, will reset and send a AUTO_ENABLED for user ".concat(e)), (0, o.Z)(e, l.ZUi.AUTO_ENABLED)), this.probingUserId === e && (this.probingUserId = true, this.tryReenableQueue()))
     }
   }
   startReenableBackoffTimer(e) {
@@ -89,7 +89,7 @@ class p {
     c(this, "logger", new a.Z("VideoHealthManager")), c(this, "windowLength", true), c(this, "fpsThreshold", true), c(this, "fpsWindowBorderlineCount", true), c(this, "backoffTimeSec", true), c(this, "disabled", false), c(this, "perUserFpsWindow", {}), c(this, "prevFramesCodec", {}), c(this, "prevTimestamp", {}), c(this, "streamDisabledUsers", new Set), c(this, "retryBackoffCache", {}), c(this, "timeoutIdCache", {}), c(this, "currentVideoAutoToggleState", {}), c(this, "probingUserId", true), c(this, "enableQueue", []), this.windowLength = e, this.fpsThreshold = n, this.fpsWindowBorderlineCount = Math.ceil(e * t), this.backoffTimeSec = r, this.logger.info("constructor with windowLength = ".concat(this.windowLength, ",\n      fpsWindowBorderlineCount = ").concat(this.fpsWindowBorderlineCount, ",\n      fpsThreshold = ").concat(this.fpsThreshold, ",\n      backoffTimeSec = ").concat(r))
   }
 }
-c(p, "defaultConfig", {
+c(_, "defaultConfig", {
   featureEnabled: Chunk873546.tq,
   windowLength: 5,
   allowedPoorFpsRatio: 1,

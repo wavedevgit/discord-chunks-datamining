@@ -2,7 +2,7 @@
 /** chunk id: 293706, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => h
+  A: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -51,9 +51,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,7 +61,7 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -69,26 +69,26 @@ function p(e, t) {
   return i
 }
 
-function h(e) {
+function m(e) {
   var {
     focusProps: t,
     lineClamp: n = 1,
     role: i = "button",
     text: c,
     textVariant: d = "text-md/medium",
-    type: p = "button",
-    variant: h = "primary",
-    buttonRef: m,
+    type: _ = "button",
+    variant: m = "primary",
+    buttonRef: h,
     className: g,
     style: E
-  } = e, b = _(e, ["focusProps", "lineClamp", "role", "text", "textVariant", "type", "variant", "buttonRef", "className", "style"]);
+  } = e, b = p(e, ["focusProps", "lineClamp", "role", "text", "textVariant", "type", "variant", "buttonRef", "className", "style"]);
   return (0, r.jsx)(o.tE, f(u({}, t), {
     children: (0, r.jsx)("button", f(u({
-      className: a()(l.textButton, l[h]),
+      className: a()(l.textButton, l[m]),
       "data-mana-component": "text-button",
       role: i,
-      type: p,
-      ref: m
+      type: _,
+      ref: h
     }, b), {
       children: (0, r.jsx)(s.x, {
         tag: "span",

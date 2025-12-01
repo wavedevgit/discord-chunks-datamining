@@ -2,7 +2,7 @@
 /** chunk id: 290799, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -43,7 +43,7 @@ let f = [{
     getQuestion: () => Chunk388032.intl.string(Chunk388032.t.f5B4EW),
     getAnswer: () => Chunk388032.intl.string(Chunk388032.t.Aje8Pb)
   }],
-  _ = function(e) {
+  p = function(e) {
     let {
       className: t
     } = e, [n, a] = i.useState(null);

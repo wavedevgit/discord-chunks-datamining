@@ -29,45 +29,45 @@ let E = () => {
     applyOffer: y,
     churnUserDiscountOffer: O,
     discountedPrice: v,
-    fullPrice: I
-  } = (0, Chunk594135.a)(), [T, S] = (0, Chunk473749.useState)(false), [A, C] = (0, Chunk473749.useState)(false), N = async () => {
+    fullPrice: S
+  } = (0, Chunk594135.a)(), [I, T] = (0, Chunk473749.useState)(false), [A, C] = (0, Chunk473749.useState)(false), N = async () => {
     if (null === O) return void C(true);
-    S(true), C(false);
+    T(true), C(false);
     try {
       await y(), b(Chunk45474.R.DISCOUNT_APPLIED)
     } catch (e) {
-      C(true), S(false)
+      C(true), T(false)
     }
   };
   if (null === O || null === v) return (0, Chunk54381.jsx)("div", {
     className: Chunk950728.spinnerContainer,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   });
-  let R = require === Chunk474936.PremiumTypes.TIER_2,
-    P = [{
+  let P = require === Chunk474936.PremiumTypes.TIER_2,
+    R = [{
       text: Chunk388032.intl.string(Chunk388032.t.zl7LZp),
       onClick: () => exports(),
       variant: "secondary",
-      disabled: T
+      disabled: I
     }, {
       text: Chunk388032.intl.string(Chunk388032.t.CKSuZJ),
       onClick: () => N(),
       variant: "primary",
       icon: Chunk481060.SrA,
-      loading: T,
-      disabled: T
+      loading: I,
+      disabled: I
     }];
   return (0, Chunk54381.jsxs)(Chunk793030.ExpressiveModal, {
     graphic: {
       type: "image",
-      src: R ? Chunk21299.Z : Chunk997892
+      src: P ? Chunk21299.Z : Chunk997892
     },
-    gradientColor: R ? "nitro-pink" : "nitro-green",
+    gradientColor: P ? "nitro-pink" : "nitro-green",
     transitionState: module,
     title: E.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.string(Chunk388032.t["2Otzti"]) : "".concat(Chunk388032.intl.format(Chunk388032.t.q9Vxu4, {
       percent: O.discount.amount
     })),
-    actions: P,
+    actions: R,
     onClose: async () => exports(),
     children: [(0, Chunk54381.jsx)("div", {
       className: Chunk950728.offerDetailContainer,
@@ -84,13 +84,13 @@ let E = () => {
           discountedPrice: v,
           billingPeriod: (0, Chunk74538.JP)(O.discount.user_usage_limit_interval),
           numMonths: O.discount.user_usage_limit,
-          fullPrice: I,
+          fullPrice: S,
           paidURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         }) : Chunk388032.intl.format(Chunk388032.t.hrGTjG, {
           discountedPrice: v,
           billingPeriod: (0, Chunk74538.JP)(O.discount.user_usage_limit_interval),
           numMonths: O.discount.user_usage_limit,
-          fullPrice: I,
+          fullPrice: S,
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
       })

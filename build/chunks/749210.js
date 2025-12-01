@@ -2,7 +2,7 @@
 /** chunk id: 749210, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => B,
+  V: () => Z,
   Z: () => F
 }), require("./415506.js"), require("./358797.js"), require("./781311.js");
 var Chunk990547 = require("./990547.js"),
@@ -34,7 +34,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk723359 = require("./723359.js"),
   Chunk388032 = require("./388032.jsx");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,20 +43,20 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
 }
 
-function L(e, t) {
+function x(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,15 +67,15 @@ function L(e, t) {
   return n
 }
 
-function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
+function L(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function M(e, t) {
+function j(e, t) {
   if (null == e) return {};
-  var n, r, i = k(e, t);
+  var n, r, i = M(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -83,17 +83,17 @@ function M(e, t) {
   return i
 }
 
-function k(e, t) {
+function M(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let j = e => {
+let k = e => {
     C.Z.show({
-      title: P.intl.string(P.t.cTaRxF),
-      body: P.intl.formatToPlainString(P.t["VSd+Aj"], {
+      title: R.intl.string(R.t.cTaRxF),
+      body: R.intl.formatToPlainString(R.t["VSd+Aj"], {
         quantity: e
       })
     })
@@ -113,34 +113,34 @@ let j = e => {
     })
   };
 
-function B(e) {
+function Z(e) {
   return new Promise(t => b.Z.addConditionalChangeListener(() => {
     let n = b.Z.getGuild(e);
     return null == n || (t(n), false)
   }))
 }
 
-function Z(e, t) {
-  return null != t ? t : (0, p.V)(e)
+function B(e, t) {
+  return null != t ? t : (0, _.V)(e)
 }
 let F = {
   joinGuild: async function(e) {
     var t, r, i, s, u, d;
     let f = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       {
-        source: p,
+        source: _,
         loadId: g,
         lurkLocation: E
       } = f,
-      I = null != (t = f.lurker) && t,
-      T = v.default.getCurrentUser();
-    if (null != (r = null == T ? true : T.hasFlag(N.xW$.QUARANTINED)) && r) return (0, _.default)(), new Promise((e, t) => t(Error()));
-    if ((0, c.hO)(e)) return (0, l.mN)(R.L0.JOIN_LARGE_GUILD_UNDERAGE), new Promise((e, t) => t(Error()));
+      S = null != (t = f.lurker) && t,
+      I = v.default.getCurrentUser();
+    if (null != (r = null == I ? true : I.hasFlag(N.xW$.QUARANTINED)) && r) return (0, p.default)(), new Promise((e, t) => t(Error()));
+    if ((0, c.hO)(e)) return (0, l.mN)(P.L0.JOIN_LARGE_GUILD_UNDERAGE), new Promise((e, t) => t(Error()));
     o.Z.wait(() => o.Z.dispatch({
       type: "GUILD_JOIN",
       guildId: e,
-      lurker: I,
-      source: p,
+      lurker: S,
+      source: _,
       loadId: g
     }));
     try {
@@ -149,13 +149,13 @@ let F = {
         i = await a.tn.put({
           url: N.ANM.GUILD_JOIN(e),
           query: {
-            lurker: I,
-            session_id: I ? m.default.getSessionId() : null,
+            lurker: S,
+            session_id: S ? h.default.getSessionId() : null,
             recommendation_load_id: g,
-            location: I && null != E ? E : null
+            location: S && null != E ? E : null
           },
           context: {
-            source: p
+            source: _
           },
           oldFormErrors: true,
           body: {},
@@ -165,7 +165,7 @@ let F = {
           type: "USER_GUILD_JOIN_REQUEST_UPDATE",
           guildId: e,
           request: i.body.join_request
-        }), null == b.Z.getGuild(e) && i.body.show_verification_form) return (0, h.uL)(N.Z5c.GUILD_MEMBER_VERIFICATION(e)), i;
+        }), null == b.Z.getGuild(e) && i.body.show_verification_form) return (0, m.uL)(N.Z5c.GUILD_MEMBER_VERIFICATION(e)), i;
       if (null != i.body.welcome_screen && o.Z.dispatch({
           type: "WELCOME_SCREEN_UPDATE",
           guildId: i.body.id,
@@ -174,7 +174,7 @@ let F = {
           type: "ONLINE_GUILD_MEMBER_COUNT_UPDATE",
           guildId: i.body.id,
           count: i.body.approximate_presence_count
-        }), !I) {
+        }), !S) {
         let {
           default: t
         } = await Promise.resolve().then(n.bind(n, 17181));
@@ -185,18 +185,18 @@ let F = {
       }
       return i
     } catch (t) {
-      if ((null == (i = t.body) ? true : i.code) === N.evJ.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED && (0, l.mN)(R.L0.JOIN_LARGE_GUILD_UNDERAGE), (null == (s = t.body) ? true : s.code) === N.evJ.TOO_MANY_USER_GUILDS) {
+      if ((null == (i = t.body) ? true : i.code) === N.evJ.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED && (0, l.mN)(P.L0.JOIN_LARGE_GUILD_UNDERAGE), (null == (s = t.body) ? true : s.code) === N.evJ.TOO_MANY_USER_GUILDS) {
         let e = v.default.getCurrentUser();
-        S.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? j(N.tHP) : j(N.DZw)
+        T.ZP.canUseIncreasedGuildCap(e) || (null == e ? true : e.isStaff()) ? k(N.tHP) : k(N.DZw)
       }
-      throw (null == (u = t.body) ? true : u.code) === N.evJ.GUILD_AT_CAPACITY && G(), I && (null == (d = t.body) ? true : d.code) === N.evJ.UNKNOWN_GUILD && U(e), t
+      throw (null == (u = t.body) ? true : u.code) === N.evJ.GUILD_AT_CAPACITY && G(), S && (null == (d = t.body) ? true : d.code) === N.evJ.UNKNOWN_GUILD && U(e), t
     }
   },
-  waitForGuild: B,
+  waitForGuild: Z,
   async transitionToGuildSync(e, t, n, r) {
-    let i = Z((await B(e)).id, n),
+    let i = B((await Z(e)).id, n),
       a = t;
-    (null == t ? true : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = x(w({}, t), {
+    (null == t ? true : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = L(D({}, t), {
       welcomeModalChannelId: null != i ? i : true
     })), (0, d.Z)(N.Z5c.CHANNEL(e, i, r), a), await new Promise(setImmediate)
   },
@@ -320,14 +320,14 @@ let F = {
   }),
   async createRole(e, t, n, r) {
     let l = {
-      name: null != t && "" !== t ? t : P.intl.string(P.t.QBMHvB),
+      name: null != t && "" !== t ? t : R.intl.string(R.t.QBMHvB),
       color: null != n ? n : 0,
       colors: null != r ? r : {
         primary_color: null != n ? n : 0,
         secondary_color: null,
         tertiary_color: null
       },
-      permissions: T.Hn
+      permissions: I.Hn
     };
     try {
       let t = await a.tn.post({
@@ -350,9 +350,9 @@ let F = {
     let {
       icon: r,
       unicodeEmoji: i
-    } = n, o = M(n, ["icon", "unicodeEmoji"]), s = null === r || (null == r ? true : r.startsWith("data:")) ? r : true, l = await a.tn.patch({
+    } = n, o = j(n, ["icon", "unicodeEmoji"]), s = null === r || (null == r ? true : r.startsWith("data:")) ? r : true, l = await a.tn.patch({
       url: N.ANM.GUILD_ROLE(e, t),
-      body: x(w({}, o), {
+      body: L(D({}, o), {
         icon: s,
         unicode_emoji: i
       }),
@@ -451,7 +451,7 @@ let F = {
     })
   },
   createGuildFolderLocal(e, t) {
-    I.default.track(N.rMx.GUILD_FOLDER_CREATED), o.Z.dispatch({
+    S.default.track(N.rMx.GUILD_FOLDER_CREATED), o.Z.dispatch({
       type: "GUILD_FOLDER_CREATE_LOCAL",
       sourceIds: e,
       name: t
@@ -473,7 +473,7 @@ let F = {
   },
   toggleGuildFolderExpand(e) {
     let t = g.Z.isFolderExpanded(e);
-    I.default.track(N.rMx.GUILD_FOLDER_CLICKED, {
+    S.default.track(N.rMx.GUILD_FOLDER_CLICKED, {
       source: "sidebar",
       action: t ? "collapsed" : "expanded"
     }), o.Z.dispatch({
@@ -501,19 +501,19 @@ let F = {
   },
   nsfwReturnToSafety(e) {
     let t = (0, c._I)(e);
-    if (null == e || t) return void(0, h.uL)(N.Z5c.FRIENDS, {
+    if (null == e || t) return void(0, m.uL)(N.Z5c.FRIENDS, {
       navigationReplace: false,
       openChannel: true
     });
     let n = E.ZP.getDefaultChannel(e);
-    null == n || (0, c.Y3)(n) ? (0, h.uL)(N.Z5c.FRIENDS, {
+    null == n || (0, c.Y3)(n) ? (0, m.uL)(N.Z5c.FRIENDS, {
       navigationReplace: false,
       openChannel: true
-    }) : (0, h.uL)(N.Z5c.CHANNEL(e, n.id))
+    }) : (0, m.uL)(N.Z5c.CHANNEL(e, n.id))
   },
   escapeToDefaultChannel(e) {
     let t = E.ZP.getDefaultChannel(e);
-    null != t ? (0, h.uL)(N.Z5c.CHANNEL(e, t.id)) : (0, h.uL)(N.Z5c.FRIENDS)
+    null != t ? (0, m.uL)(N.Z5c.CHANNEL(e, t.id)) : (0, m.uL)(N.Z5c.FRIENDS)
   },
   async fetchApplications(e, t) {
     let n = {

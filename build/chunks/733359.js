@@ -26,7 +26,7 @@ function f(e) {
   return t
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   if (t = t || 0, n = true === n ? 1 / 0 : n || 0, !u(e)) return e.substr(t, n);
   var r = e.length;
   if (r <= 0 || t > r || n <= 0) return "";
@@ -61,7 +61,7 @@ module.exports = {
   substring: function(e, t, n) {
     (t = t || 0) < 0 && (t = 0), (n = true === n ? 1 / 0 : n || 0) < 0 && (n = 0);
     var r = Math.abs(n - t);
-    return _(e, t = t < n ? t : n, r)
+    return p(e, t = t < n ? t : n, r)
   },
-  substr: _
+  substr: p
 }

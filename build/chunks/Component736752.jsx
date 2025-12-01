@@ -2,7 +2,7 @@
 /** chunk id: 736752, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => Y,
+  D: () => W,
   Z: () => z
 });
 var Chunk54381 = require("./54381.js"),
@@ -78,12 +78,12 @@ function H(e, t) {
   return n
 }
 
-function W(e, t) {
+function Y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : H(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var Y = function(e) {
+var W = function(e) {
   return e.SECURITY = "SECURITY", e.STANDING = "STANDING", e
 }({});
 class K extends Chunk473749.PureComponent {
@@ -166,7 +166,7 @@ class K extends Chunk473749.PureComponent {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t["FRep5/"]),
-          onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(k.default, W(V({}, e), {
+          onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(M.default, Y(V({}, e), {
             onSuccess: e.onClose
           })))
         })
@@ -297,7 +297,7 @@ class K extends Chunk473749.PureComponent {
         panelClassName: Chunk343396.tabPanel,
         onTabChange: e => {
           C.default.track(U.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-            target_tab_name: e === j.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
+            target_tab_name: e === k.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
           })
         },
         defaultTabIndex: "ACCOUNT_STANDING" === module ? 1 : true,
@@ -338,11 +338,11 @@ class K extends Chunk473749.PureComponent {
       shouldRenderOwnedTeamsModal: true
     }) : Chunk512722.length > 0 ? void this.setState({
       shouldRenderOwnedGuildsModal: true
-    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(O.Z, W(V({}, e), {
+    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(O.Z, Y(V({}, e), {
       handleSubmit: e => this.handleSubmitDisableAccount(e, t),
-      title: t ? B.intl.string(B.t["8lQ2rR"]) : B.intl.string(B.t.jf5GGb),
-      actionText: t ? B.intl.string(B.t["8lQ2rR"]) : B.intl.string(B.t.jf5GGb),
-      children: t ? B.intl.string(B.t.FB4H1D) : B.intl.string(B.t.gk7h32)
+      title: t ? Z.intl.string(Z.t["8lQ2rR"]) : Z.intl.string(Z.t.jf5GGb),
+      actionText: t ? Z.intl.string(Z.t["8lQ2rR"]) : Z.intl.string(Z.t.jf5GGb),
+      children: t ? Z.intl.string(Z.t.FB4H1D) : Z.intl.string(Z.t.gk7h32)
     }))) : this.setState({
       shouldRenderDeleteAccountConfirmModal: true
     }))

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   dR: () => d,
-  qK: () => h
+  qK: () => m
 }), require("./980754.js"), require("./388685.js"), require("./953529.js"), require("./539854.js"), require("./415506.js");
 var Chunk230367 = require("./230367.js"),
   Chunk320215 = require("./320215.js"),
@@ -21,16 +21,16 @@ var Chunk230367 = require("./230367.js"),
   f = function(e) {
     return e[e.ENABLED = 0] = "ENABLED", e[e.DISABLED = 1] = "DISABLED", e
   }({}),
-  _ = function(e) {
+  p = function(e) {
     return e[e.FULL = 0] = "FULL", e[e.FORCE_CONTROL = 3] = "FORCE_CONTROL", e[e.OVERRIDES_ONLY = 4] = "OVERRIDES_ONLY", e[e.OFF = 5] = "OFF", e
   }({}),
-  p = function(e) {
+  _ = function(e) {
     return e[e.DEFAULT = 0] = "DEFAULT", e[e.HOLDOUT = 1] = "HOLDOUT", e
   }({}),
-  h = function(e) {
+  m = function(e) {
     return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.CONTROL = 1] = "CONTROL", e[e.TREATMENT = 2] = "TREATMENT", e[e.OVERRIDE = 3] = "OVERRIDE", e
   }({}),
-  m = function(e) {
+  h = function(e) {
     return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ACTIVE = 1] = "ACTIVE", e[e.UNUSED = 2] = "UNUSED", e[e.BURNED = 3] = "BURNED", e
   }({}),
   g = function(e) {
@@ -164,7 +164,7 @@ class E extends Chunk495852.C {
           a.engineFeatureFlags.push(e.string());
           break;
         case 30:
-          a.debugConfig = T.internalBinaryRead(e, e.uint32(), n, a.debugConfig);
+          a.debugConfig = I.internalBinaryRead(e, e.uint32(), n, a.debugConfig);
           break;
         case 31:
           a.expectedEndDate = c.E.internalBinaryRead(e, e.uint32(), n, a.expectedEndDate);
@@ -193,7 +193,7 @@ class E extends Chunk495852.C {
       t.join()
     }
     for (let n = 0; n < e.engineFeatureFlags.length; n++) t.tag(29, r.TD.LengthDelimited).string(e.engineFeatureFlags[n]);
-    e.debugConfig && T.internalBinaryWrite(e.debugConfig, t.tag(30, r.TD.LengthDelimited).fork(), n).join(), e.expectedEndDate && c.E.internalBinaryWrite(e.expectedEndDate, t.tag(31, r.TD.LengthDelimited).fork(), n).join();
+    e.debugConfig && I.internalBinaryWrite(e.debugConfig, t.tag(30, r.TD.LengthDelimited).fork(), n).join(), e.expectedEndDate && c.E.internalBinaryWrite(e.expectedEndDate, t.tag(31, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -310,7 +310,7 @@ class E extends Chunk495852.C {
       no: 25,
       name: "assignment_mode",
       kind: "enum",
-      T: () => ["discord_protos.discord_experimentation.v1.Experiment.AssignmentMode", _]
+      T: () => ["discord_protos.discord_experimentation.v1.Experiment.AssignmentMode", p]
     }, {
       no: 23,
       name: "enable_edit_raw_json_ui",
@@ -325,7 +325,7 @@ class E extends Chunk495852.C {
       no: 26,
       name: "type",
       kind: "enum",
-      T: () => ["discord_protos.discord_experimentation.v1.Experiment.Type", p]
+      T: () => ["discord_protos.discord_experimentation.v1.Experiment.Type", _]
     }, {
       no: 27,
       name: "is_template",
@@ -347,7 +347,7 @@ class E extends Chunk495852.C {
       no: 30,
       name: "debug_config",
       kind: "message",
-      T: () => T
+      T: () => I
     }, {
       no: 31,
       name: "expected_end_date",
@@ -437,7 +437,7 @@ class b extends Chunk495852.C {
       no: 5,
       name: "type",
       kind: "enum",
-      T: () => ["discord_protos.discord_experimentation.v1.Variation.Type", h]
+      T: () => ["discord_protos.discord_experimentation.v1.Variation.Type", m]
     }, {
       no: 6,
       name: "configuration",
@@ -503,12 +503,12 @@ class O extends Chunk495852.C {
       no: 3,
       name: "type",
       kind: "enum",
-      T: () => ["discord_protos.discord_experimentation.v1.Bucket.Type", m]
+      T: () => ["discord_protos.discord_experimentation.v1.Bucket.Type", h]
     }])
   }
 }
 let v = new O;
-class I extends Chunk495852.C {
+class S extends Chunk495852.C {
   create(e) {
     let t = {
       enableDecisionLogging: false,
@@ -595,4 +595,4 @@ class I extends Chunk495852.C {
     }])
   }
 }
-let T = new I
+let I = new S

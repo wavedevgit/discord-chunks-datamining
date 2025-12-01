@@ -2,7 +2,7 @@
 /** chunk id: 258609, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => T
+  default: () => I
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -21,17 +21,17 @@ let c = null,
   u = null,
   d = new Set,
   f = {},
-  _ = {},
-  p = new Set;
+  p = {},
+  _ = new Set;
 
-function h(e) {
+function m(e) {
   let {
     sessionId: t
   } = e;
   c = t, u = null
 }
 
-function m() {
+function h() {
   c = null, u = null
 }
 
@@ -57,7 +57,7 @@ function E(e) {
   let {
     platform: t
   } = e;
-  p.add(t)
+  _.add(t)
 }
 
 function b(e) {
@@ -65,18 +65,18 @@ function b(e) {
     platform: t,
     devices: n
   } = e;
-  p.delete(t);
+  _.delete(t);
   let r = f[t] = {},
     i = {};
-  for (let e of n) r[e.id] = e, _[t] === e.id && (i[t] = e.id);
-  _ = i
+  for (let e of n) r[e.id] = e, p[t] === e.id && (i[t] = e.id);
+  p = i
 }
 
 function y(e) {
   let {
     platform: t
   } = e;
-  p.delete(t)
+  _.delete(t)
 }
 
 function O(e) {
@@ -84,16 +84,16 @@ function O(e) {
     platform: t,
     deviceId: n
   } = e;
-  _[t] = n
+  p[t] = n
 }
 let v = Object.freeze({});
-class I extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class S extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
-    null != e && (_ = e.lastSelectedDeviceByPlatform), this.waitFor(o.Z, s.Z)
+    null != e && (p = e.lastSelectedDeviceByPlatform), this.waitFor(o.Z, s.Z)
   }
   getUserAgnosticState() {
     return {
-      lastSelectedDeviceByPlatform: _
+      lastSelectedDeviceByPlatform: p
     }
   }
   getDevicesForPlatform(e) {
@@ -101,14 +101,14 @@ class I extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return null != (t = f[e]) ? t : v
   }
   getLastSelectedDeviceByPlatform(e) {
-    return _[e]
+    return p[e]
   }
   getDevice(e, t) {
     var n;
     return null == (n = f[e]) ? true : n[t]
   }
   getFetchingDevices(e) {
-    return p.has(e)
+    return _.has(e)
   }
   getPendingDeviceCommands() {
     return d
@@ -120,10 +120,10 @@ class I extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return u
   }
 }
-l(I, "displayName", "GameConsoleStore"), l(I, "persistKey", "GameConsoleStore");
-let T = new I(Chunk570140.Z, {
-  REMOTE_SESSION_CONNECT: h,
-  REMOTE_SESSION_DISCONNECT: m,
+l(S, "displayName", "GameConsoleStore"), l(S, "persistKey", "GameConsoleStore");
+let I = new S(Chunk570140.Z, {
+  REMOTE_SESSION_CONNECT: m,
+  REMOTE_SESSION_DISCONNECT: h,
   WAIT_FOR_REMOTE_SESSION: g,
   GAME_CONSOLE_FETCH_DEVICES_START: E,
   GAME_CONSOLE_FETCH_DEVICES_SUCCESS: b,

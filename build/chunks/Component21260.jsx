@@ -2,9 +2,9 @@
 /** chunk id: 21260, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  AJ: () => p,
-  Ep: () => m,
-  te: () => _,
+  AJ: () => _,
+  Ep: () => h,
+  te: () => p,
   zP: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -45,7 +45,7 @@ function f(e) {
     items: n,
     maxLines: r,
     containerWidth: a
-  } = e, [o, s] = i.useState(0), l = i.useRef([]), c = i.useRef(0), u = i.useRef(0), f = i.useRef(null), _ = i.useCallback((e, t) => {
+  } = e, [o, s] = i.useState(0), l = i.useRef([]), c = i.useRef(0), u = i.useRef(0), f = i.useRef(null), p = i.useCallback((e, t) => {
     l.current[e] = t
   }, []);
   return i.useLayoutEffect(() => {
@@ -63,14 +63,14 @@ function f(e) {
     i !== u.current && (u.current = i, s(e => e + 1))
   }, [a, t, n, r]), i.useMemo(() => ({
     lastVisibleIndex: u.current,
-    onItemLayout: _,
+    onItemLayout: p,
     overflowItemsRef: f,
     itemWidthsRef: l,
     version: o
-  }), [_, o])
+  }), [p, o])
 }
 
-function _(e) {
+function p(e) {
   let {
     items: t,
     renderItem: n
@@ -89,7 +89,7 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     onItemLayout: t,
     index: n,
@@ -103,18 +103,18 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   return "string" == typeof e ? e : e.key
 }
 
-function m(e) {
+function h(e) {
   let {
     className: t,
     items: n,
     renderItem: a,
     itemGapPx: s = 0,
     maxLines: d,
-    renderOverflow: m
+    renderOverflow: h
   } = e, {
     ref: g,
     width: E = 0
@@ -127,10 +127,10 @@ function m(e) {
     itemGapPx: s,
     maxLines: d,
     containerWidth: E
-  }), v = i.useCallback(e => (0, r.jsx)(_, {
+  }), v = i.useCallback(e => (0, r.jsx)(p, {
     items: e,
     renderItem: a
-  }), [a]), I = null != m ? m : v, T = i.useMemo(() => n.slice(0, b + 1), [n, b]), S = i.useMemo(() => n.slice(b + 1), [n, b]);
+  }), [a]), S = null != h ? h : v, I = i.useMemo(() => n.slice(0, b + 1), [n, b]), T = i.useMemo(() => n.slice(b + 1), [n, b]);
   return (0, r.jsxs)("div", {
     className: o()(t, u.items),
     ref: g,
@@ -139,11 +139,11 @@ function m(e) {
       className: u.measurements,
       children: [(0, r.jsx)("div", {
         className: u.itemMeasurements,
-        children: n.map((e, t) => (0, r.jsx)(p, {
+        children: n.map((e, t) => (0, r.jsx)(_, {
           index: t,
           onItemLayout: y,
           children: a(e)
-        }, h(e)))
+        }, m(e)))
       }), (0, r.jsx)("div", {
         className: u.overflowMeasurement,
         ref: O,
@@ -151,6 +151,6 @@ function m(e) {
           count: Number("1".concat(n.length))
         }))
       })]
-    }), T.map(a), S.length > 0 && I(S)]
+    }), I.map(a), T.length > 0 && S(T)]
   })
 }

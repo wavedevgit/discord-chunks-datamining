@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,41 +47,41 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = "x-science-test",
+let h = "x-science-test",
   g = 1500,
   E = 1e4,
   b = 36e5,
   y = 6e4,
   O = 36e5,
   v = b,
-  I = y,
-  T = O,
-  S = g,
+  S = y,
+  I = O,
+  T = g,
   A = 0,
   C = 0,
   N = 0,
-  R = 0,
   P = 0,
-  D = null,
-  w = 0,
-  L = Number.MAX_SAFE_INTEGER,
-  x = 0,
-  M = 0,
-  k = null,
-  j = false,
+  R = 0,
+  w = null,
+  D = 0,
+  x = Number.MAX_SAFE_INTEGER,
+  L = 0,
+  j = 0,
+  M = null,
+  k = false,
   U = null,
   G = null;
 
-function B() {
-  C = 0, N = 0, R = 0, w = 0, L = Number.MAX_SAFE_INTEGER, x = 0, M = 0, D = Date.now(), P = A
+function Z() {
+  C = 0, N = 0, P = 0, D = 0, x = Number.MAX_SAFE_INTEGER, L = 0, j = 0, w = Date.now(), R = A
 }
 
-function Z(e) {
+function B(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1;
   return e + t
 }
@@ -93,8 +93,8 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     handleFingerprint: () => {},
     handleTrack: () => {}
   },
-  W = [],
-  Y = null,
+  Y = [],
+  W = null,
   K = () => Promise.resolve({
     sessionId: true
   }),
@@ -104,7 +104,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       dispatcher: n,
       actionHandler: a,
       getFingerprint: u,
-      getSessionId: p = K,
+      getSessionId: _ = K,
       TRACKING_URL: b,
       drainTimeoutOverride: y,
       waitFor: O,
@@ -112,40 +112,40 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       getLaunchSignature: q = () => null
     } = e;
 
-    function X(e) {
+    function Q(e) {
       var t;
       if (null != i) return i;
       let n = null != (t = e.fingerprint) ? t : u();
       return null != n ? (0, s.s)(n) : null
     }
 
-    function Q() {
-      return 0 !== W.length && (null != i ? null != r : null != u())
+    function X() {
+      return 0 !== Y.length && (null != i ? null != r : null != u())
     }
 
     function J(e) {
       let {
         shouldFlushOnNextTick: t = false
       } = e;
-      null == Y && Q() && (Y = t ? setTimeout($, 0) : z($, {
-        timeout: S
+      null == W && X() && (W = t ? setTimeout($, 0) : z($, {
+        timeout: T
       }))
     }
 
     function $() {
-      if (Y = null, !Q()) return Promise.resolve();
-      let e = W.slice();
-      W = [], w = Z(w);
+      if (W = null, !X()) return Promise.resolve();
+      let e = Y.slice();
+      Y = [], D = B(D);
       let t = e.length;
-      L = Math.min(L, t), x = Math.max(x, t), M = Z(M, t);
+      x = Math.min(x, t), L = Math.max(L, t), j = B(j, t);
       let n = ee(e);
       return n.then(() => {
         e.forEach(e => {
           var t;
           null == (t = e.resolve) || t.call(e)
-        }), N = Z(N)
+        }), N = B(N)
       }, t => {
-        W.unshift(...e), R = Z(R);
+        Y.unshift(...e), P = B(P);
         let {
           message: n
         } = t.body || t;
@@ -156,13 +156,13 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     function ee(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b,
         n = Date.now(),
-        i = e.map(e => h(_({}, e), {
-          properties: h(_({}, e.properties), {
+        i = e.map(e => m(p({}, e), {
+          properties: m(p({}, e.properties), {
             client_send_timestamp: n
           })
         })),
         a = {};
-      return j || (G = (0, o.Z)(), a[m] = G, j = true), c.tn.post({
+      return k || (G = (0, o.Z)(), a[h] = G, k = true), c.tn.post({
         url: t,
         headers: a,
         body: {
@@ -172,9 +172,9 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         retries: 3,
         rejectWithError: false
       }).then(e => {
-        if (a[m]) {
+        if (a[h]) {
           var t, n;
-          U = null != (n = null == e || null == (t = e.headers) ? true : t[m]) ? n : null
+          U = null != (n = null == e || null == (t = e.headers) ? true : t[h]) ? n : null
         }
         return e
       })
@@ -186,62 +186,62 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         properties: {
           client_track_timestamp: Date.now(),
           rpc_success_count: N,
-          rpc_failure_count: R,
-          first_seen_event_sequence_number: P,
+          rpc_failure_count: P,
+          first_seen_event_sequence_number: R,
           last_seen_event_sequence_number: A,
-          telemetry_period_start_timestamp: D,
+          telemetry_period_start_timestamp: w,
           telemetry_period_end_timestamp: Date.now(),
           event_queue_rejection_count: C,
-          event_queue_batch_count: w,
-          event_queue_batch_min_size: L === Number.MAX_SAFE_INTEGER ? 0 : L,
-          event_queue_batch_max_size: x,
-          event_queue_batch_avg_size: w > 0 ? M / w : 0,
+          event_queue_batch_count: D,
+          event_queue_batch_min_size: x === Number.MAX_SAFE_INTEGER ? 0 : x,
+          event_queue_batch_max_size: L,
+          event_queue_batch_avg_size: D > 0 ? j / D : 0,
           science_request_id: G,
           science_response: U,
           launch_signature: q()
         }
       };
-      return B(), ee([e], d.tx.CLIENT_TELEMETRY)
+      return Z(), ee([e], d.tx.CLIENT_TELEMETRY)
     }
 
     function en() {
-      if (null == k) returnfalse;
-      switch (k.type) {
+      if (null == M) returnfalse;
+      switch (M.type) {
         case "timeout":
-          clearTimeout(k.id);
+          clearTimeout(M.id);
           break;
         case "interval":
-          clearInterval(k.id);
+          clearInterval(M.id);
           break;
         default:
-          k.type
+          M.type
       }
-      return k = null, true
+      return M = null, true
     }
 
     function er() {
-      if (null != k) return;
+      if (null != M) return;
       let e = () => {
         let t = .1 * v;
-        k = {
+        M = {
           type: "timeout",
           id: setTimeout(() => {
             et(), e()
-          }, Math.max(v + (Math.floor(Math.random() * t * 2) - t), I))
+          }, Math.max(v + (Math.floor(Math.random() * t * 2) - t), S))
         }
       };
-      k = {
+      M = {
         type: "timeout",
         id: setTimeout(() => {
           et(), e()
-        }, Math.floor(Math.random() * (T - I) + I))
+        }, Math.floor(Math.random() * (I - S) + S))
       }
     }
 
     function ei() {
       if (!en()) return
     }
-    S = null != y ? y : g, H.handleConnectionOpen = function(e) {
+    T = null != y ? y : g, H.handleConnectionOpen = function(e) {
       let {
         analyticsToken: t,
         user: n
@@ -261,22 +261,22 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         fingerprint: i,
         resolve: a
       } = e;
-      return p().then(e => {
+      return _().then(e => {
         let {
           sessionId: o
         } = e, s = {
           type: t,
           fingerprint: i,
-          properties: _({
+          properties: p({
             client_track_timestamp: Date.now(),
             client_heartbeat_session_id: o,
             event_sequence_number: ++A
           }, n),
           resolve: a
-        }, l = X(s);
-        if (null != l && (s.properties.client_uuid = V.generate(l)), W.push(s), W.length > E) {
-          let e = W.length - E;
-          C = Z(C, e), W = W.slice(-E)
+        }, l = Q(s);
+        if (null != l && (s.properties.client_uuid = V.generate(l)), Y.push(s), Y.length > E) {
+          let e = Y.length - E;
+          C = B(C, e), Y = Y.slice(-E)
         }
         r ? J({
           shouldFlushOnNextTick: true

@@ -2,10 +2,10 @@
 /** chunk id: 176354, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B6: () => I,
+  B6: () => S,
   ZP: () => v,
-  nY: () => S,
-  qc: () => T
+  nY: () => T,
+  qc: () => I
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./539854.js");
 var Chunk738774 = require("./738774.js"),
   Chunk906411 = require("./906411.js"),
@@ -19,9 +19,9 @@ var Chunk738774 = require("./738774.js"),
   Chunk74538 = require("./74538.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js");
-let h = 2097152,
-  m = new Set([Chunk185923.Z5.PREMIUM_LOCKED, Chunk185923.Z5.ROLE_SUBSCRIPTION_LOCKED]),
-  g = new Set([...m, Chunk185923.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, Chunk185923.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE]),
+let m = 2097152,
+  h = new Set([Chunk185923.Z5.PREMIUM_LOCKED, Chunk185923.Z5.ROLE_SUBSCRIPTION_LOCKED]),
+  g = new Set([...h, Chunk185923.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, Chunk185923.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE]),
   E = new Set([Chunk185923.Z5.DISALLOW_CUSTOM, Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE, Chunk185923.Z5.ONLY_GUILD_EMOJIS_ALLOWED]);
 
 function b(e) {
@@ -41,24 +41,24 @@ function O(e) {
     forceIncludeExternalGuilds: u
   } = e;
   if (!b(t)) return null;
-  if (c === p.Hz.GUILD_PROFILE) return p.Z5.DISALLOW_CUSTOM;
+  if (c === _.Hz.GUILD_PROFILE) return _.Z5.DISALLOW_CUSTOM;
   let d = null != n && (0, o.zi)(n.type),
-    h = null != n && (0, o.bw)(n.type),
-    m = y(t, i),
-    g = s.Z.can(_.Plq.USE_EXTERNAL_EMOJIS, n);
-  if (c === p.Hz.COMMUNITY_CONTENT) return m && null != t.guildId && t.available ? null : p.Z5.DISALLOW_EXTERNAL;
-  if (!(0, p.Gt)(c) && !y(t, i) && !u || (d || h) && !m && !g) return p.Z5.DISALLOW_EXTERNAL;
-  if (null != t.id && !t.available) return p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE;
+    m = null != n && (0, o.bw)(n.type),
+    h = y(t, i),
+    g = s.Z.can(p.Plq.USE_EXTERNAL_EMOJIS, n);
+  if (c === _.Hz.COMMUNITY_CONTENT) return h && null != t.guildId && t.available ? null : _.Z5.DISALLOW_EXTERNAL;
+  if (!(0, _.Gt)(c) && !y(t, i) && !u || (d || m) && !h && !g) return _.Z5.DISALLOW_EXTERNAL;
+  if (null != t.id && !t.available) return _.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE;
   let E = l.default.getCurrentUser();
-  if (!f.ZP.canUseEmojisEverywhere(E) && !m) {
-    if (c === p.Hz.STATUS) return p.Z5.PREMIUM_LOCKED;
-    else if (!t.managed) return p.Z5.PREMIUM_LOCKED
+  if (!f.ZP.canUseEmojisEverywhere(E) && !h) {
+    if (c === _.Hz.STATUS) return _.Z5.PREMIUM_LOCKED;
+    else if (!t.managed) return _.Z5.PREMIUM_LOCKED
   }
-  return (0, a.Fv)(t, null != i ? i : true) ? (0, r.Ol)(t.guildId) ? p.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE : p.Z5.ROLE_SUBSCRIPTION_LOCKED : !t.animated || f.ZP.canUseAnimatedEmojis(E) || (0, a.yH)(t) ? null : p.Z5.PREMIUM_LOCKED
+  return (0, a.Fv)(t, null != i ? i : true) ? (0, r.Ol)(t.guildId) ? _.Z5.ROLE_SUBSCRIPTION_UNAVAILABLE : _.Z5.ROLE_SUBSCRIPTION_LOCKED : !t.animated || f.ZP.canUseAnimatedEmojis(E) || (0, a.yH)(t) ? null : _.Z5.PREMIUM_LOCKED
 }
 let v = {
   sanitizeEmojiName(e) {
-    for (e = e.replace(p.sW, "").slice(0, p.Yc); e.length < 2;) e += "_";
+    for (e = e.replace(_.sW, "").slice(0, _.Yc); e.length < 2;) e += "_";
     return e
   },
   filterUnsupportedEmojis: Chunk563114.Z.filterUnsupportedEmojis,
@@ -84,7 +84,7 @@ let v = {
         o.push(e);
         continue
       }
-      E.has(t) || o.push(e), g.has(t) && (null != e.id && a.add(e.id), m.has(t) && (l || t !== p.Z5.PREMIUM_LOCKED || (l = true), s++))
+      E.has(t) || o.push(e), g.has(t) && (null != e.id && a.add(e.id), h.has(t) && (l || t !== _.Z5.PREMIUM_LOCKED || (l = true), s++))
     }
     return {
       emojisDisabled: a,
@@ -99,7 +99,7 @@ let v = {
   },
   isEmojiPremiumLocked(e) {
     let t = O(e);
-    return m.has(t)
+    return h.has(t)
   },
   isEmojiCategoryNitroLocked(e) {
     let {
@@ -115,7 +115,7 @@ let v = {
         intention: i,
         guildId: r
       });
-      t === p.Z5.PREMIUM_LOCKED ? (a = true, o++) : t === p.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE && o++
+      t === _.Z5.PREMIUM_LOCKED ? (a = true, o++) : t === _.Z5.GUILD_SUBSCRIPTION_UNAVAILABLE && o++
     }
     return a && o === t.length
   },
@@ -126,14 +126,14 @@ let v = {
     let t = O(e);
     return g.has(t)
   },
-  isFileTooBig: e => e.size > h,
-  isDataTooBig: e => (0, d.QB)(e) > p.h_
+  isFileTooBig: e => e.size > m,
+  isDataTooBig: e => (0, d.QB)(e) > _.h_
 };
-async function I(e) {
+async function S(e) {
   return await u.Z.getEmojiColors(e)
 }
 
-function T(e) {
+function I(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 32,
     {
       id: n,
@@ -147,6 +147,6 @@ function T(e) {
   }) : u.Z.getURL(r)
 }
 
-function S(e) {
+function T(e) {
   return "allNamesString" in e ? e.allNamesString : ":".concat(e.name, ":")
 }

@@ -7,14 +7,14 @@ require.d(exports, {
   E: () => d,
   P: () => ee,
   S: () => u,
-  a: () => S,
+  a: () => T,
   b: () => g,
-  c: () => W,
+  c: () => Y,
   d: () => en,
   e: () => O,
-  f: () => R,
-  g: () => B,
-  h: () => I,
+  f: () => P,
+  g: () => Z,
+  h: () => S,
   i: () => $,
   j: () => er,
   k: () => z,
@@ -26,7 +26,7 @@ require.d(exports, {
   q: () => v,
   r: () => et,
   s: () => F,
-  v: () => m
+  v: () => h
 });
 var o = Object.defineProperty,
   s = (e, t, n) => t in e ? o(e, t, {
@@ -68,22 +68,22 @@ let d = {
   },
   f = new Uint8Array(16);
 
-function _() {
+function p() {
   if (!r && !(r = "u" > typeof crypto && crypto.getRandomValues && crypto.getRandomValues.bind(crypto))) throw Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
   return r(f)
 }
-let p = [];
-for (let e = 0; module < 256; ++module) p.push((module + 256).toString(16).slice(1));
-let h = {
+let _ = [];
+for (let e = 0; module < 256; ++module) _.push((module + 256).toString(16).slice(1));
+let m = {
   randomUUID: "u" > typeof crypto && crypto.randomUUID && crypto.randomUUID.bind(crypto)
 };
 
-function m(e, t, n) {
-  if (h.randomUUID && !e) return h.randomUUID();
-  let r = (e = e || {}).random || (e.rng || _)();
+function h(e, t, n) {
+  if (m.randomUUID && !e) return m.randomUUID();
+  let r = (e = e || {}).random || (e.rng || p)();
   return r[6] = 15 & r[6] | 64, r[8] = 63 & r[8] | 128,
     function(e, t = 0) {
-      return p[e[t + 0]] + p[e[t + 1]] + p[e[t + 2]] + p[e[t + 3]] + "-" + p[e[t + 4]] + p[e[t + 5]] + "-" + p[e[t + 6]] + p[e[t + 7]] + "-" + p[e[t + 8]] + p[e[t + 9]] + "-" + p[e[t + 10]] + p[e[t + 11]] + p[e[t + 12]] + p[e[t + 13]] + p[e[t + 14]] + p[e[t + 15]]
+      return _[e[t + 0]] + _[e[t + 1]] + _[e[t + 2]] + _[e[t + 3]] + "-" + _[e[t + 4]] + _[e[t + 5]] + "-" + _[e[t + 6]] + _[e[t + 7]] + "-" + _[e[t + 8]] + _[e[t + 9]] + "-" + _[e[t + 10]] + _[e[t + 11]] + _[e[t + 12]] + _[e[t + 13]] + _[e[t + 14]] + _[e[t + 15]]
     }(r)
 }
 let g = new class {
@@ -236,13 +236,13 @@ let O = new y,
     await new Promise(t => {
       setTimeout(t, e)
     })
-  }, I = ({
+  }, S = ({
     "userleap-platform": e
   }) => {
     var t;
     return (null == (t = window.UserLeap) ? true : t.forceDirectEmbed) || "web" !== e
   };
-class T {
+class I {
   constructor(e) {
     l(this, "storage"), l(this, "tempStorage", {}), l(this, "isStorageAvailable");
     try {
@@ -282,8 +282,8 @@ class T {
     this.isStorageAvailable && this.storage ? this.storage.clear() : this.tempStorage = {}
   }
 }
-let S = new T("sessionStorage"),
-  A = new T("localStorage");
+let T = new I("sessionStorage"),
+  A = new I("localStorage");
 class C {
   constructor(e) {
     l(this, "payload"), l(this, "promise"), l(this, "reject", () => {}), l(this, "resolve", () => {}), this.payload = e, this.promise = new Promise((e, t) => {
@@ -297,39 +297,39 @@ class C {
 let N = {
     replay: null
   },
-  R = e => {
+  P = e => {
     N.replay = e
   },
-  P = () => {
+  R = () => {
     let e = [];
     return N.replay && module.push("replay"), module.join(",")
   },
-  D = 10,
-  w = false,
-  L = "",
-  x = false,
-  M = false,
-  k = [],
-  j = e => e._config && e._config.installationMethod ? e._config.installationMethod : e._gtm ? "web-gtm" : e._segment ? "web-segment" : "web-snippet",
+  w = 10,
+  D = false,
+  x = "",
+  L = false,
+  j = false,
+  M = [],
+  k = e => e._config && e._config.installationMethod ? e._config.installationMethod : e._gtm ? "web-gtm" : e._segment ? "web-segment" : "web-snippet",
   U = e => {
     var t;
-    null != (t = null == e ? true : e.blockedURI) && t.includes(window.UserLeap._API_URL) && (M = true, console.warn(`[Sprig] ${e.blockedURI} is blocked by Content-Security-Policy`))
+    null != (t = null == e ? true : e.blockedURI) && t.includes(window.UserLeap._API_URL) && (j = true, console.warn(`[Sprig] ${e.blockedURI} is blocked by Content-Security-Policy`))
   },
   G = (e = "") => {
-    w = true, L = e
+    D = true, x = e
   };
 
-function B(e = {}) {
+function Z(e = {}) {
   let t = {
     "Content-Type": "application/json",
     "userleap-platform": "web",
     "x-ul-sdk-version": "2.34.0",
-    "x-ul-installation-method": j(e),
-    "sprig-modules": P()
+    "x-ul-installation-method": k(e),
+    "sprig-modules": R()
   };
   return e.envId && (t["x-ul-environment-id"] = e.envId), e.token && (t.Authorization = "Bearer " + e.token), e.userId && (t["x-ul-user-id"] = e.userId), e.visitorId && (t["x-ul-visitor-id"] = e.visitorId), e.partnerAnonymousId && (t["x-ul-anonymous-id"] = e.partnerAnonymousId), e.mobileHeadersJSON && Object.assign(t, JSON.parse(e.mobileHeadersJSON)), e.locale && (t["accept-language"] = e.locale), window.previewMode && (t["x-ul-preview-mode"] = "1"), t
 }
-let Z = async ({
+let B = async ({
   shouldDropOnRateLimit: e,
   ...t
 }) => {
@@ -338,7 +338,7 @@ let Z = async ({
   };
   {
     let e = new C(t);
-    return k.push(e), e.promise
+    return M.push(e), e.promise
   }
 }, F = async (e, t) => {
   let {
@@ -352,27 +352,27 @@ let Z = async ({
     retries: n,
     shouldDropOnRateLimit: r
   };
-  if (x && !i) return Z(o);
+  if (L && !i) return B(o);
   let s = {
     ok: false,
     reportError: false
   };
-  if (w) return console.info(`UserLeap - ${L}`), s;
+  if (D) return console.info(`UserLeap - ${x}`), s;
   try {
     let t = await fetch(e, a);
     if (429 === t.status) {
-      if (!x && !r || i) {
-        x = true;
-        let n = t.headers.has("ratelimit-reset") ? Number(t.headers.get("ratelimit-reset")) : D;
+      if (!L && !r || i) {
+        L = true;
+        let n = t.headers.has("ratelimit-reset") ? Number(t.headers.get("ratelimit-reset")) : w;
         return await v(1e3 * n), F(e, {
           ...a,
           shouldDropOnRateLimit: r,
           shouldRetryRequest: true
         })
       }
-      return Z(o)
+      return B(o)
     }
-    if (x = false, k.length && (k.map(e => {
+    if (L = false, M.length && (M.map(e => {
         let t = e.payload;
         F(t.url, {
           ...t.options,
@@ -381,7 +381,7 @@ let Z = async ({
         }).then(t => {
           e.resolveRequest(t)
         })
-      }), k = []), t.ok) {
+      }), M = []), t.ok) {
       if (249 === t.status) return G(), s;
       let n = await t.text();
       try {
@@ -397,7 +397,7 @@ let Z = async ({
     return t
   } catch (r) {
     let t = n + 1;
-    return t > 5 || M ? {
+    return t > 5 || j ? {
       ok: false,
       reportError: false,
       error: r
@@ -430,35 +430,35 @@ function H(e, t) {
   }
   return a
 }
-let W = e => {
+let Y = e => {
     let {
       pageUrlEvents: t
     } = window.UserLeap._config, n = null == t ? true : t.find(t => t.id === e);
     return !!n && H(n, window.location.href)
   },
-  Y = true,
+  W = true,
   K = false,
   z = () => K = true,
   q = ["sdk_event_queue_latency_seconds", "sdk_replay_add_event_batch_seconds", "sdk_replay_cleanup_seconds", "sdk_replay_compression_seconds", "sdk_replay_get_events_between_seconds", "sdk_replay_snapshot_seconds", "sdk_mutations_nodes_added", "sdk_mutations_nodes_removed", "sdk_mutations_attributes_changed", "sdk_mutations_character_data", "sdk_dom_nodes_count", "sdk_page_html_characters"],
-  X, Q = {};
+  Q, X = {};
 class J {
   constructor(e) {
     l(this, "_values", []), l(this, "_isWebMetric"), this.name = e, this._isWebMetric = q.includes(this.name)
   }
   report(e) {
-    if (Y && this._values.push({
+    if (W && this._values.push({
         time: Date.now(),
         value: e
       }), K || !this._isWebMetric) return;
     let t = this.findExceededThreshold(e);
-    t && X && X(e, t)
+    t && Q && Q(e, t)
   }
   collect() {
     let e = this._values;
     return this._values = [], module
   }
   findExceededThreshold(e) {
-    let t = Q[this.name];
+    let t = X[this.name];
     if (t) return t.find(t => this.valueExceedsThreshold(e, t))
   }
   valueExceedsThreshold(e, t) {
@@ -466,10 +466,10 @@ class J {
   }
 }
 let $ = (e, t) => {
-    Q = {}, K = false, null == e || e.forEach(e => {
+    X = {}, K = false, null == e || e.forEach(e => {
       var t;
-      e.metric in Q || (Q[e.metric] = []), null == (t = Q[e.metric]) || t.push(e)
-    }), X = t
+      e.metric in X || (X[e.metric] = []), null == (t = X[e.metric]) || t.push(e)
+    }), Q = t
   },
   ee = {},
   et = e => {
@@ -501,5 +501,5 @@ let $ = (e, t) => {
           })
         }
       })(t)
-    }, 1e3 * e) : Y = false
+    }, 1e3 * e) : W = false
   }

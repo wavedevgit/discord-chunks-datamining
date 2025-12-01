@@ -72,7 +72,7 @@ function v(e) {
         otherUser: t
       }))
     })
-  }, [y, t]), I = i.useCallback(() => {
+  }, [y, t]), S = i.useCallback(() => {
     o()(true !== y, "User must be logged in to decline a link request"), (0, l.ZDy)(async () => {
       let {
         default: e
@@ -82,7 +82,7 @@ function v(e) {
         otherUser: t
       }))
     })
-  }, [y, t]), T = i.useCallback(() => {
+  }, [y, t]), I = i.useCallback(() => {
     o()(true !== y, "User must be logged in to decline a link request"), (0, l.ZDy)(async () => {
       let {
         default: e
@@ -97,25 +97,25 @@ function v(e) {
     className: g.container,
     children: [(0, r.jsx)("div", {
       className: g.details,
-      children: (0, r.jsx)(_.Z, {
+      children: (0, r.jsx)(p.Z, {
         otherUser: t,
-        status: p.ne.PENDING
+        status: _.ne.PENDING
       })
     }), (0, r.jsx)("div", {
       className: g.actions,
       children: a ? (0, r.jsx)(f.Z, {
         icon: l.Dio,
-        tooltip: m.intl.string(h.default.e5iHmZ),
-        onClick: T
+        tooltip: h.intl.string(m.default.e5iHmZ),
+        onClick: I
       }) : (0, r.jsxs)(r.Fragment, {
         children: [E ? null : (0, r.jsx)(f.Z, {
           icon: l.dz2,
-          tooltip: m.intl.string(h.default.krWQZK),
+          tooltip: h.intl.string(m.default.krWQZK),
           onClick: v
         }), (0, r.jsx)(f.Z, {
           icon: l.Dio,
-          tooltip: m.intl.string(h.default.bBDeNI),
-          onClick: I
+          tooltip: h.intl.string(m.default.bBDeNI),
+          onClick: S
         })]
       })
     })]

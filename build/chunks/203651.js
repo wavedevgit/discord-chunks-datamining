@@ -72,8 +72,8 @@ let Chunk206339 = require("./206339.js"),
   Chunk615252 = require("./615252.js"),
   Chunk517024 = require("./517024.js"),
   f = Chunk517024.isObject,
-  _ = Chunk517024.mixin,
-  p = Chunk517024.hasOwn,
+  p = Chunk517024.mixin,
+  _ = Chunk517024.hasOwn,
   Chunk509337 = require("./509337.js"),
   Chunk675246 = require("./675246.js");
 
@@ -91,7 +91,7 @@ let b = "".trim ? e => e.trim() : e => e.replace(/(^\s*|\s*$)/g, "");
 function y(e) {
   if (!f(e)) return e;
   let t = [];
-  for (let n in e) p(e, n) && O(t, n, e[n]);
+  for (let n in e) _(e, n) && O(t, n, e[n]);
   return t.join("&")
 }
 
@@ -111,7 +111,7 @@ function O(e, t, n) {
         a.f()
       }
     } else if (f(n))
-      for (let r in n) p(n, r) && O(e, `${t}[${r}]`, n[r]);
+      for (let r in n) _(n, r) && O(e, `${t}[${r}]`, n[r]);
     else e.push(encodeURI(t) + "=" + encodeURIComponent(n))
   }
 }
@@ -123,21 +123,21 @@ function v(e) {
   return r
 }
 
-function I(e) {
+function S(e) {
   let t, n, r, i, a = e.split(/\r?\n/),
     o = {};
   for (let e = 0, s = a.length; e < s; ++e) false !== (t = (n = a[e]).indexOf(":")) && (r = n.slice(0, t).toLowerCase(), i = b(n.slice(t + 1)), o[r] = i);
   return o
 }
 
-function T(e) {
+function I(e) {
   return /[/+]json($|[^-\w])/i.test(e)
 }
 
-function S(e) {
+function T(e) {
   this.req = e, this.xhr = this.req.xhr, this.text = "HEAD" !== this.req.method && ("" === this.xhr.responseType || "text" === this.xhr.responseType) || true === this.xhr.responseType ? this.xhr.responseText : null, this.statusText = this.req.xhr.statusText;
   let t = this.xhr.status;
-  1223 === t && (t = 204), this._setStatusProperties(t), this.headers = I(this.xhr.getAllResponseHeaders()), this.header = this.headers, this.header["content-type"] = this.xhr.getResponseHeader("content-type"), this._setHeaderProperties(this.header), null === this.text && e._responseType ? this.body = this.xhr.response : this.body = "HEAD" === this.req.method ? null : this._parseBody(this.text ? this.text : this.xhr.response)
+  1223 === t && (t = 204), this._setStatusProperties(t), this.headers = S(this.xhr.getAllResponseHeaders()), this.header = this.headers, this.header["content-type"] = this.xhr.getResponseHeader("content-type"), this._setHeaderProperties(this.header), null === this.text && e._responseType ? this.body = this.xhr.response : this.body = "HEAD" === this.req.method ? null : this._parseBody(this.text ? this.text : this.xhr.response)
 }
 
 function A(e, t) {
@@ -146,7 +146,7 @@ function A(e, t) {
     let e, t = null,
       r = null;
     try {
-      r = new S(n)
+      r = new T(n)
     } catch (e) {
       return (t = Error("Parser is unable to parse the response")).parse = true, t.original = e, n.xhr ? (t.rawResponse = true === n.xhr.responseType ? n.xhr.responseText : n.xhr.response, t.status = n.xhr.status ? n.xhr.status : null, t.statusCode = t.status) : (t.rawResponse = null, t.status = null), n.callback(t)
     }
@@ -172,16 +172,16 @@ E.serializeObject = y, E.parseString = v, E.types = {
 }, E.parse = {
   "application/x-www-form-urlencoded": v,
   "application/json": JSON.parse
-}, _(S.prototype, Chunk509337.prototype), S.prototype._parseBody = function(e) {
+}, p(T.prototype, Chunk509337.prototype), T.prototype._parseBody = function(e) {
   let t = E.parse[this.type];
-  return this.req._parser ? this.req._parser(this, e) : (!t && T(this.type) && (t = E.parse["application/json"]), t && e && (e.length > 0 || e instanceof Object) ? t(e) : null)
-}, S.prototype.toError = function() {
+  return this.req._parser ? this.req._parser(this, e) : (!t && I(this.type) && (t = E.parse["application/json"]), t && e && (e.length > 0 || e instanceof Object) ? t(e) : null)
+}, T.prototype.toError = function() {
   let e = this.req,
     t = module.method,
     n = module.url,
     r = Error(`cannot ${exports} ${require} (${this.status})`);
   return r.status = this.status, r.method = exports, r.url = require, r
-}, E.Response = S, Chunk206339(A.prototype), _(A.prototype, Chunk615252.prototype), A.prototype.type = function(e) {
+}, E.Response = T, Chunk206339(A.prototype), p(A.prototype, Chunk615252.prototype), A.prototype.type = function(e) {
   return this.set("Content-Type", E.types[e] || e), this
 }, A.prototype.accept = function(e) {
   return this.set("Accept", E.types[e] || e), this
@@ -260,9 +260,9 @@ E.serializeObject = y, E.parseString = v, E.types = {
   if (this._withCredentials && (exports.withCredentials = true), !this._formData && "GET" !== this.method && "HEAD" !== this.method && "string" != typeof require && !this._isHost(require)) {
     let e = this._header["content-type"],
       t = this._serializer || E.serialize[module ? module.split(";")[0] : ""];
-    !exports && T(module) && (t = E.serialize["application/json"]), exports && (n = exports(require))
+    !exports && I(module) && (t = E.serialize["application/json"]), exports && (n = exports(require))
   }
-  for (let e in this.header) null !== this.header[module] && p(this.header, module) && exports.setRequestHeader(module, this.header[module]);
+  for (let e in this.header) null !== this.header[module] && _(this.header, module) && exports.setRequestHeader(module, this.header[module]);
   this._responseType && (exports.responseType = this._responseType), this.emit("request", this), exports.send(true === require ? null : require)
 }, E.agent = () => new Chunk675246;
 for (var C = 0, N = ["GET", "POST", "OPTIONS", "PATCH", "PUT", "DELETE"]; C < N.length; C++) {
@@ -273,7 +273,7 @@ for (var C = 0, N = ["GET", "POST", "OPTIONS", "PATCH", "PUT", "DELETE"]; C < N.
   }
 }
 
-function R(e, t, n) {
+function P(e, t, n) {
   let r = E("DELETE", e);
   return "function" == typeof t && (n = t, t = null), t && r.send(t), n && r.end(n), r
 }
@@ -286,7 +286,7 @@ Chunk675246.prototype.del = Chunk675246.prototype.delete, E.get = (e, t, n) => {
 }, E.options = (e, t, n) => {
   let r = E("OPTIONS", e);
   return "function" == typeof t && (n = t, t = null), t && r.send(t), n && r.end(n), r
-}, E.del = R, E.delete = R, E.patch = (e, t, n) => {
+}, E.del = P, E.delete = P, E.patch = (e, t, n) => {
   let r = E("PATCH", e);
   return "function" == typeof t && (n = t, t = null), t && r.send(t), n && r.end(n), r
 }, E.post = (e, t, n) => {

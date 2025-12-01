@@ -2,7 +2,7 @@
 /** chunk id: 179237, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  createStringInterpolator: () => _
+  createStringInterpolator: () => p
 });
 var r, Chunk109393 = require("./109393.js"),
   Chunk414776 = require("./414776.js"),
@@ -15,7 +15,7 @@ var r, Chunk109393 = require("./109393.js"),
   f = function(e, t, n, r, i) {
     return "rgba(" + Math.round(t) + ", " + Math.round(n) + ", " + Math.round(r) + ", " + i + ")"
   },
-  _ = function(e) {
+  p = function(e) {
     r || (r = l.colorNames ? RegExp("(" + Object.keys(l.colorNames).join("|") + ")", "g") : /^\b$/);
     var t = e.output.map(function(e) {
         return (0, a.je)(e).replace(u, s.c).replace(r, s.c)
@@ -23,7 +23,7 @@ var r, Chunk109393 = require("./109393.js"),
       n = t.map(function(e) {
         return e.match(c).map(Number)
       }),
-      _ = n[0].map(function(e, t) {
+      p = n[0].map(function(e, t) {
         return n.map(function(e) {
           if (!(t in e)) throw Error('The arity of each "output" value must be equal');
           return e[t]
@@ -36,7 +36,7 @@ var r, Chunk109393 = require("./109393.js"),
     return function(e) {
       var n = 0;
       return t[0].replace(c, function() {
-        return String(_[n++](e))
+        return String(p[n++](e))
       }).replace(d, f)
     }
   }

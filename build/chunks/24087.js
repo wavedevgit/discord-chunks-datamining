@@ -38,13 +38,13 @@ function f() {
     if (!e.every(e => e.guildId === n)) return e;
     let r = t.get(n);
     return null == r ? c(e) : d(e, r.map(e => e.soundId))
-  }, [exports]), _ = Chunk473749.useCallback(e => d(e, a.map(e => e.soundId)), [Chunk709054]);
+  }, [exports]), p = Chunk473749.useCallback(e => d(e, a.map(e => e.soundId)), [Chunk709054]);
   if (__OVERLAY__) return c;
   switch (module) {
     case Chunk771784.du.TOP_SOUNDS:
       return f;
     case Chunk771784.du.RECENTLY_USED_BY_USER:
-      return _;
+      return p;
     case Chunk771784.du.NEWEST_CREATION_DATE:
       return u;
     default:

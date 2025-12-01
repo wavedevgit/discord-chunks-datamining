@@ -2,8 +2,8 @@
 /** chunk id: 309006, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m,
-  a: () => h
+  Z: () => h,
+  a: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk353368 = require("./353368.js"),
   Chunk472470 = require("./472470.js");
-let p = 50;
+let _ = 50;
 
-function h(e) {
+function m(e) {
   var t;
   let n = null == e || null == (t = e.parentElement) ? true : t.getBoundingClientRect();
   return null == n ? {
@@ -29,12 +29,12 @@ function h(e) {
     height: n.height
   }
 }
-let m = Chunk473749.forwardRef(function(e, t) {
+let h = Chunk473749.forwardRef(function(e, t) {
   let {
     sound: n,
-    containerDimensions: h
-  } = e, m = (0, s.e7)([d.default], () => d.default.getCurrentUser()), g = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), [E, b] = i.useState([]), y = E.length < p, O = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, v = i.useCallback(() => {
-    if (!g && y && O && null != m) {
+    containerDimensions: m
+  } = e, h = (0, s.e7)([d.default], () => d.default.getCurrentUser()), g = (0, s.e7)([l.Z], () => l.Z.useReducedMotion), [E, b] = i.useState([]), y = E.length < _, O = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, v = i.useCallback(() => {
+    if (!g && y && O && null != h) {
       var e;
       let t = (0, c._r)({
           id: n.emojiId,
@@ -50,15 +50,15 @@ let m = Chunk473749.forwardRef(function(e, t) {
           animationType: i,
           shouldResize: r,
           url: t,
-          userId: m.id
+          userId: h.id
         };
       b(e => [...e, l])
     }
-  }, [g, y, O, m, n]);
+  }, [g, y, O, h, n]);
   i.useImperativeHandle(t, () => ({
     addAnimation: v
   }));
-  let I = i.useCallback(e => {
+  let S = i.useCallback(e => {
     b(t => {
       let n = [...t],
         r = n.findIndex(t => t.id === e);
@@ -66,15 +66,15 @@ let m = Chunk473749.forwardRef(function(e, t) {
     })
   }, []);
   return g || !O ? null : (0, r.jsx)("div", {
-    className: _.effects,
+    className: p.effects,
     style: {
-      width: h.width,
-      height: h.height
+      width: m.width,
+      height: m.height
     },
     children: E.map(e => (0, r.jsx)(u.Z, {
-      containerDimensions: h,
+      containerDimensions: m,
       effect: e,
-      onComplete: I
+      onComplete: S
     }, e.id))
   })
 })

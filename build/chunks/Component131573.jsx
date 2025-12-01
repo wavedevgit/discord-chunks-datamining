@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $: () => E,
-  R: () => m
+  R: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -46,15 +46,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,14 +62,14 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var m = function(e) {
+var h = function(e) {
   return e.WANDERING_CUBES = "wanderingCubes", e.CHASING_DOTS = "chasingDots", e.PULSING_ELLIPSIS = "pulsingEllipsis", e.SPINNING_CIRCLE = "spinningCircle", e.SPINNING_CIRCLE_SIMPLE = "spinningCircleSimple", e.LOW_MOTION = "lowMotion", e
 }({});
 
@@ -90,18 +90,18 @@ function E(e) {
       className: u,
       itemClassName: f
     } = e,
-    h = p(e, ["type", "animated", "className", "itemClassName"]);
+    m = _(e, ["type", "animated", "className", "itemClassName"]);
   let {
-    i18n: m
+    i18n: h
   } = (0, l.ZF)(), {
     reducedMotion: E
-  } = i.useContext(s.S), b = E.enabled ? g(n) : n, y = null != (t = h["aria-label"]) ? t : m.SPINNER_LOADING_LABEL;
-  if ("spinningCircle" === b || "spinningCircleSimple" === b) return (0, r.jsx)("div", _(d({
+  } = i.useContext(s.S), b = E.enabled ? g(n) : n, y = null != (t = m["aria-label"]) ? t : h.SPINNER_LOADING_LABEL;
+  if ("spinningCircle" === b || "spinningCircleSimple" === b) return (0, r.jsx)("div", p(d({
     className: o()(c.spinner, c[b], u, {
       [c.stopAnimation]: !a
     }),
     role: "img"
-  }, h), {
+  }, m), {
     "aria-label": y,
     children: (0, r.jsx)("div", {
       className: c.spinningCircleInner,
@@ -130,13 +130,13 @@ function E(e) {
     })
   }));
   let O = o()(c.item, f);
-  return (0, r.jsx)("span", _(d({
+  return (0, r.jsx)("span", p(d({
     className: o()(c.spinner, u, {
       [c.stopAnimation]: !a
     }),
     role: "img",
     "aria-label": y
-  }, h), {
+  }, m), {
     children: (0, r.jsxs)("span", {
       className: o()(c.inner, c[b]),
       children: [(0, r.jsx)("span", {
@@ -149,4 +149,4 @@ function E(e) {
     })
   }))
 }
-E.Type = m
+E.Type = h

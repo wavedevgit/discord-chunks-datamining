@@ -12,13 +12,13 @@ var Chunk580983 = require("./580983.js"),
   u = RegExp.prototype;
 module.exports = function(e, t, n, d) {
   var f = s(e),
-    _ = !o(function() {
+    p = !o(function() {
       var t = {};
       return t[f] = function() {
         return 7
       }, 7 !== "" [e](t)
     }),
-    p = _ && !o(function() {
+    _ = p && !o(function() {
       var t = false,
         n = /a/;
       return "split" === e && ((n = {}).constructor = {}, n.constructor[c] = function() {
@@ -27,13 +27,13 @@ module.exports = function(e, t, n, d) {
         return t = true, null
       }, n[f](""), !t
     });
-  if (!_ || !p || n) {
-    var h = /./ [f],
-      m = t(f, "" [e], function(e, t, n, i, o) {
+  if (!p || !_ || n) {
+    var m = /./ [f],
+      h = t(f, "" [e], function(e, t, n, i, o) {
         var s = t.exec;
-        return s === a || s === u.exec ? _ && !o ? {
+        return s === a || s === u.exec ? p && !o ? {
           done: true,
-          value: r(h, t, n, i)
+          value: r(m, t, n, i)
         } : {
           done: true,
           value: r(e, n, t, i)
@@ -41,7 +41,7 @@ module.exports = function(e, t, n, d) {
           done: false
         }
       });
-    i(String.prototype, e, m[0]), i(u, f, m[1])
+    i(String.prototype, e, h[0]), i(u, f, h[1])
   }
   d && l(u[f], "sham", true)
 }

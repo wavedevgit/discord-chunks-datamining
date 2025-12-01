@@ -2,8 +2,8 @@
 /** chunk id: 594914, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => p,
-  b: () => h
+  P: () => _,
+  b: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk772848 = require("./772848.js"),
@@ -46,45 +46,45 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   let {
     isGift: u,
     giftRecipient: f,
-    giftingOrigin: p
+    giftingOrigin: _
   } = t, {
-    analyticsLocations: h
-  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, m = false, g = (0, i.Z)();
+    analyticsLocations: m
+  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, h = false, g = (0, i.Z)();
   (0, a.ZDy)(async () => {
     let {
       default: t
     } = await n.e("45227").then(n.bind(n, 556266));
-    return n => (0, r.jsx)(t, _(d({}, n), {
+    return n => (0, r.jsx)(t, p(d({}, n), {
       loadId: g,
       applicationId: e.applicationId,
       skuId: e.id,
-      analyticsLocations: null != h ? h : [],
+      analyticsLocations: null != m ? m : [],
       isGift: u,
       giftRecipient: f,
-      giftingOrigin: p,
+      giftingOrigin: _,
       onComplete: () => {
-        m = true
+        h = true
       }
     }))
   }, {
     onCloseCallback: () => {
-      m || l.default.track(c.rMx.PAYMENT_FLOW_CANCELED, {
+      h || l.default.track(c.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: g,
         payment_type: c.Zuq[c.GZQ.ONE_TIME],
         is_gift: u,
         sku_id: e.id,
         application_id: e.applicationId,
-        location_stack: h,
+        location_stack: m,
         sku_product_line: e.productLine
       }), (0, o.fw)(), (0, s.p)()
     },
@@ -92,7 +92,7 @@ function p(e, t) {
   })
 }
 
-function h() {
+function m() {
   (0, Chunk481060.ZDy)(async () => {
     let {
       default: e

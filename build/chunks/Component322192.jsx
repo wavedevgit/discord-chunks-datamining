@@ -20,17 +20,17 @@ let d = e => {
   if (true === n) return null;
   let {
     name: d
-  } = n, f = (0, s.EB)(n, 40, true), _ = null, p = 10;
-  return null == n.icon && null != d && (_ = (0, i.Zg)(d), p = (0, c.o)(_)), (0, r.jsx)("div", {
+  } = n, f = (0, s.EB)(n, 40, true), p = null, _ = 10;
+  return null == n.icon && null != d && (p = (0, i.Zg)(d), _ = (0, c.o)(p)), (0, r.jsx)("div", {
     className: u.container,
     children: (0, r.jsxs)("div", {
       style: {
-        fontSize: p
+        fontSize: _
       },
-      children: [null != _ ? (0, r.jsx)("div", {
+      children: [null != p ? (0, r.jsx)("div", {
         className: u.guildAvatar,
         "aria-hidden": true,
-        children: _
+        children: p
       }) : null, null != f ? (0, r.jsx)(o.qEK, {
         src: f,
         size: o.EFr.SIZE_40,

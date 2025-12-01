@@ -20,10 +20,10 @@ function f(e) {
     heading: n,
     headingIcon: a,
     introText: f,
-    className: _,
-    scrollIntoView: p = false,
-    headingClassName: h,
-    headingVariant: m = "text-xs/semibold",
+    className: p,
+    scrollIntoView: _ = false,
+    headingClassName: m,
+    headingVariant: h = "text-xs/semibold",
     headingColor: g = "header-secondary"
   } = e, E = (0, u.Dt)(), b = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), y = i.useRef(null);
   return i.useEffect(() => {
@@ -36,17 +36,17 @@ function f(e) {
     });
     return () => cancelAnimationFrame(t)
   }, [b]), (0, r.jsxs)("section", {
-    ref: p ? y : true,
-    className: o()(d.section, _),
+    ref: _ ? y : true,
+    className: o()(d.section, p),
     "aria-labelledby": null != n ? E : true,
     children: [null != n && (0, r.jsxs)("div", {
       className: d.headings,
       children: [(0, r.jsxs)("div", {
         className: d.header,
         children: [(0, r.jsx)(l.Heading, {
-          variant: m,
+          variant: h,
           color: g,
-          className: h,
+          className: m,
           id: E,
           children: n
         }), a]

@@ -9,9 +9,9 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
-  Chunk831209 = require("./831209.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk26151 = require("./26151.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -30,8 +30,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk604570 = require("./604570.js");
 
 function E(e, n) {
-  let t = (0, o.e7)([j.Z], () => j.Z.getVoiceChannelId()),
-    l = (0, o.e7)([P.Z], () => {
+  let t = (0, u.e7)([j.Z], () => j.Z.getVoiceChannelId()),
+    l = (0, u.e7)([P.Z], () => {
       var e, n;
       return null != (n = null == (e = P.Z.getChannel(t)) ? true : e.getGuildId()) ? n : true
     }),
@@ -45,14 +45,14 @@ function E(e, n) {
 }
 
 function _(e, n) {
-  let [t, i] = (0, o.Wu)([f.Z], () => [null != n ? f.Z.getParticipants(n) : null, null != n ? f.Z.getParticipant(n, e.id) : null], [n, e.id]), u = (0, o.e7)([P.Z], () => P.Z.getChannel(n)), O = (0, b.s)(e, "context_menu", n), {
+  let [t, i] = (0, u.Wu)([f.Z], () => [null != n ? f.Z.getParticipants(n) : null, null != n ? f.Z.getParticipant(n, e.id) : null], [n, e.id]), s = (0, u.e7)([P.Z], () => P.Z.getChannel(n)), O = (0, b.s)(e, "context_menu", n), {
     enabled: j
   } = p.Z.useExperiment({
-    guildId: null == u ? true : u.guild_id,
+    guildId: null == s ? true : s.guild_id,
     location: "useRingHangupItem"
-  }), E = !O || (null == t ? true : t.length) === 0 || null == n, _ = j && (null == u ? true : u.guild_id) != null, S = null == i, T = null != i && i.type === v.fO.USER && i.ringing, A = [];
-  _ && !E && (S || T) && A.push(s.z.RING_USER_TO_VC_NEW_BADGE);
-  let [U, M] = (0, m.US)(A), k = U === s.z.RING_USER_TO_VC_NEW_BADGE, {
+  }), E = !O || (null == t ? true : t.length) === 0 || null == n, _ = j && (null == s ? true : s.guild_id) != null, S = null == i, T = null != i && i.type === v.fO.USER && i.ringing, A = [];
+  _ && !E && (S || T) && A.push(o.z.RING_USER_TO_VC_NEW_BADGE);
+  let [U, M] = (0, m.US)(A), k = U === o.z.RING_USER_TO_VC_NEW_BADGE, {
     analyticsLocations: w
   } = (0, g.ZP)();
   return ((0, Z.Z)({
@@ -60,7 +60,7 @@ function _(e, n) {
     name: a.ImpressionNames.RING_TO_GUILD_VC_MENU_ITEM_SHOWN,
     properties: {
       voice_channel_id: n,
-      voice_guild_id: null == u ? true : u.guild_id,
+      voice_guild_id: null == s ? true : s.guild_id,
       location_stack: w
     }
   }, {
@@ -72,7 +72,7 @@ function _(e, n) {
       children: [N.intl.string(N.t["3Hv9qQ"]), k && (0, l.jsx)(I, {})]
     }) : N.intl.string(N.t.bHa9kN),
     subtext: _ ? (0, l.jsx)(C, {
-      channel: u
+      channel: s
     }) : null,
     action: () => {
       k && M(y.L.TAKE_ACTION), c.Z.ring(n, [e.id], "user_context_menu"), _ && null != n && (0, h.Kh)(n)
@@ -89,7 +89,7 @@ function _(e, n) {
       className: r()(x.subtext, x.ringing),
       children: N.intl.format(N.t.dwfzZi, {
         channelName: (0, l.jsx)(C, {
-          channel: u
+          channel: s
         })
       })
     }) : null,
@@ -115,6 +115,6 @@ let C = e => {
     })
   },
   I = () => (0, Chunk54381.jsx)(Chunk481060.IGR, {
-    color: Chunk831209.Z.BG_BRAND,
+    color: Chunk692547.Z.colors.BG_BRAND.css,
     text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
   })

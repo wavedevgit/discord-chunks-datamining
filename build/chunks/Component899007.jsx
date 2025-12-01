@@ -2,7 +2,7 @@
 /** chunk id: 899007, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => R
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk671955 = require("./671955.js"),
   Chunk66856 = require("./66856.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -65,67 +65,67 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
+let P = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function P(e) {
+function R(e) {
   let {
     user: t,
     displayProfile: n,
     guildId: a,
-    channelId: h,
-    themeType: S,
+    channelId: m,
+    themeType: T,
     animateOnHover: C,
-    onOpenProfile: P,
-    className: D,
-    previewStatus: w
+    onOpenProfile: R,
+    className: w,
+    previewStatus: D
   } = e, {
-    theme: L
+    theme: x
   } = (0, b.z)(), {
-    analyticsLocations: x
+    analyticsLocations: L
   } = (0, d.ZP)(u.Z.AVATAR), {
-    trackUserProfileAction: M
-  } = (0, m.KZ)(), k = p.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.PremiumTypes.TIER_2), j = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, h), [t, h]), {
+    trackUserProfileAction: j
+  } = (0, h.KZ)(), M = _.ZP.isPremiumAtLeast(null == n ? true : n.premiumType, v.PremiumTypes.TIER_2), k = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, m), [t, m]), {
     live: U
   } = (0, g.Z)(t.id), [G] = U, {
-    status: B,
-    isMobileOnline: Z
-  } = (0, s.cj)([_.Z], () => ({
-    status: (0, c.Z)(G) ? O.Skl.STREAMING : _.Z.getStatus(t.id),
-    isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), F = true !== w ? w : B, V = [I.l.MODAL, I.l.MODAL_V2].includes(S) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(T.avatar, D), {
-    avatarDecorationSrc: W,
-    avatarSrc: Y,
+    status: Z,
+    isMobileOnline: B
+  } = (0, s.cj)([p.Z], () => ({
+    status: (0, c.Z)(G) ? O.Skl.STREAMING : p.Z.getStatus(t.id),
+    isMobileOnline: p.Z.isMobileOnline(t.id)
+  })), F = true !== D ? D : Z, V = [S.l.MODAL, S.l.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(I.avatar, w), {
+    avatarDecorationSrc: Y,
+    avatarSrc: W,
     eventHandlers: K
   } = (0, E.Z)({
     userId: t.id,
     guildId: null != n ? n.guildId : a,
     size: V,
     animateOnHover: C
-  }), z = (0, r.jsx)(R, {
-    src: Y,
-    avatarDecoration: W,
+  }), z = (0, r.jsx)(P, {
+    src: W,
+    avatarDecoration: Y,
     size: V,
     "aria-label": t.username,
-    imageClassName: null != P ? T.overlay : true,
-    status: j ? O.Skl.UNKNOWN : F,
-    statusBackdropColor: k && !j ? (0, l.QFD)(L) : true,
-    isMobile: Z,
+    imageClassName: null != R ? I.overlay : true,
+    status: k ? O.Skl.UNKNOWN : F,
+    statusBackdropColor: M && !k ? (0, l.QFD)(x) : true,
+    isMobile: B,
     statusTooltip: true,
     statusTooltipDelay: y.vB
   });
-  return null == P ? (0, r.jsx)("div", N(A({}, K), {
+  return null == R ? (0, r.jsx)("div", N(A({}, K), {
     className: H,
     children: z
   })) : (0, r.jsx)(l.P3F, N(A({}, K), {
-    className: o()(H, T.clickable),
+    className: o()(H, I.clickable),
     focusProps: {
-      ringClassName: T.focusRing
+      ringClassName: I.focusRing
     },
     onClick: () => {
-      M({
+      j({
         action: "PRESS_VIEW_PROFILE",
-        analyticsLocations: x
-      }), null == P || P()
+        analyticsLocations: L
+      }), null == R || R()
     },
     children: z
   }))

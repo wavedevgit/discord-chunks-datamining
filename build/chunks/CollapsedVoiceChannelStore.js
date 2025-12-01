@@ -2,7 +2,7 @@
 /** chunk id: 58468, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -40,12 +40,12 @@ function f(e) {
   d[t] ? delete d[t] : d[t] = true, d = c({}, d)
 }
 
-function _() {
+function p() {
   Chunk709054.default.keys(d).forEach(e => {
     null == s.Z.getChannel(e) && delete d[e]
   })
 }
-class p extends(r = Chunk442837.ZP.PersistedStore) {
+class _ extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(s.Z), d = null != e ? e : u
   }
@@ -59,9 +59,9 @@ class p extends(r = Chunk442837.ZP.PersistedStore) {
     return d[e] || false
   }
 }
-l(p, "displayName", "CollapsedVoiceChannelStore"), l(p, "persistKey", "collapsedChannels");
-let h = new p(Chunk570140.Z, {
-  CONNECTION_OPEN: _,
-  OVERLAY_INITIALIZE: _,
+l(_, "displayName", "CollapsedVoiceChannelStore"), l(_, "persistKey", "collapsedChannels");
+let m = new _(Chunk570140.Z, {
+  CONNECTION_OPEN: p,
+  OVERLAY_INITIALIZE: p,
   CHANNEL_COLLAPSE: f
 })

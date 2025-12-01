@@ -2,7 +2,7 @@
 /** chunk id: 606925, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -52,29 +52,29 @@ function f(e, t) {
   return i
 }
 
-function _(e) {
+function p(e) {
   var {
     platform: t,
     variant: n = "secondary",
     size: c = "sm",
     onAction: f,
-    icon: _
-  } = e, p = d(e, ["platform", "variant", "size", "onAction", "icon"]);
+    icon: p
+  } = e, _ = d(e, ["platform", "variant", "size", "onAction", "icon"]);
   if ((0, i.e7)([s.Z], () => s.Z.getAccounts().some(e => e.type === t.type))) return null;
-  let h = () => {
+  let m = () => {
     null == f || f(), (0, o.Z)({
       platformType: t.type,
       location: "Activity Action"
     })
   };
   return (0, r.jsx)(a.Button, u({
-    onClick: h,
+    onClick: m,
     variant: n,
     size: c,
-    icon: _,
+    icon: p,
     text: l.intl.format(l.t.XWSHTb, {
       platform: t.name
     }),
     fullWidth: true
-  }, p))
+  }, _))
 }

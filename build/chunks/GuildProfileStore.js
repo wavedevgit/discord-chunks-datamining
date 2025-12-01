@@ -51,8 +51,8 @@ function d(e, t) {
 var f = function(e) {
   return e.NOT_FETCHED = "NOT_FETCHED", e.FETCHING = "FETCHING", e.FETCHED = "FETCHED", e
 }({});
-let _ = new Map,
-  p = {
+let p = new Map,
+  _ = {
     profile: null,
     lastSyncTimestamp: null,
     fetchStatus: "NOT_FETCHED",
@@ -60,27 +60,27 @@ let _ = new Map,
     error: null
   };
 
-function h(e) {
+function m(e) {
   let {
     guildId: t
-  } = e, n = _.get(t);
-  null == n ? _.set(t, d(c({}, p), {
+  } = e, n = p.get(t);
+  null == n ? p.set(t, d(c({}, _), {
     fetchStatus: "FETCHING"
-  })) : _.set(t, d(c({}, n), {
+  })) : p.set(t, d(c({}, n), {
     fetchStatus: "FETCHING"
   }))
 }
 
-function m(e) {
+function h(e) {
   let {
     guildId: t,
     profile: n
-  } = e, r = _.get(t);
-  null == r ? _.set(t, d(c({}, p), {
+  } = e, r = p.get(t);
+  null == r ? p.set(t, d(c({}, _), {
     profile: n,
     lastSyncTimestamp: Date.now(),
     fetchStatus: "FETCHED"
-  })) : _.set(t, d(c({}, r), {
+  })) : p.set(t, d(c({}, r), {
     profile: n,
     lastSyncTimestamp: Date.now(),
     fetchStatus: "FETCHED"
@@ -91,11 +91,11 @@ function g(e) {
   let {
     guildId: t,
     error: n
-  } = e, r = _.get(t);
-  null == r ? _.set(t, d(c({}, p), {
+  } = e, r = p.get(t);
+  null == r ? p.set(t, d(c({}, _), {
     error: n,
     fetchStatus: "FETCHED"
-  })) : _.set(t, d(c({}, r), {
+  })) : p.set(t, d(c({}, r), {
     error: n,
     fetchStatus: "FETCHED"
   }))
@@ -104,10 +104,10 @@ function g(e) {
 function E(e) {
   let {
     guildId: t
-  } = e, n = _.get(t);
-  null == n ? _.set(t, d(c({}, p), {
+  } = e, n = p.get(t);
+  null == n ? p.set(t, d(c({}, _), {
     isUpdating: true
-  })) : _.set(t, d(c({}, n), {
+  })) : p.set(t, d(c({}, n), {
     isUpdating: true
   }))
 }
@@ -116,10 +116,10 @@ function b(e) {
   let {
     guildId: t,
     profile: n
-  } = e, r = _.get(t);
-  null == r ? _.set(t, d(c({}, p), {
+  } = e, r = p.get(t);
+  null == r ? p.set(t, d(c({}, _), {
     profile: n
-  })) : _.set(t, d(c({}, r), {
+  })) : p.set(t, d(c({}, r), {
     profile: n,
     isUpdating: false
   }))
@@ -129,10 +129,10 @@ function y(e) {
   let {
     guildId: t,
     error: n
-  } = e, r = _.get(t);
-  null == r ? _.set(t, d(c({}, p), {
+  } = e, r = p.get(t);
+  null == r ? p.set(t, d(c({}, _), {
     error: n
-  })) : _.set(t, d(c({}, r), {
+  })) : p.set(t, d(c({}, r), {
     error: n,
     isUpdating: false
   }))
@@ -142,8 +142,8 @@ function O(e) {
   let {
     guildId: t,
     visibility: n
-  } = e, r = _.get(t), i = null == r ? true : r.profile;
-  null != r && null != i && _.set(t, d(c({}, r), {
+  } = e, r = p.get(t), i = null == r ? true : r.profile;
+  null != r && null != i && p.set(t, d(c({}, r), {
     isUpdating: false,
     profile: d(c({}, i), {
       visibility: n
@@ -157,13 +157,33 @@ function v(e) {
     guildId: n
   } = e, r = null == t ? true : t.profile;
   if (null == r) return;
-  let i = _.get(n);
-  null == i ? _.set(n, d(c({}, p), {
+  let i = p.get(n);
+  null == i ? p.set(n, d(c({}, _), {
     profile: r,
     lastSyncTimestamp: Date.now(),
     fetchStatus: "FETCHED"
-  })) : _.set(n, d(c({}, i), {
+  })) : p.set(n, d(c({}, i), {
     profile: r,
+    lastSyncTimestamp: Date.now(),
+    fetchStatus: "FETCHED"
+  }))
+}
+
+function S(e) {
+  let {
+    invite: t
+  } = e, {
+    profile: n
+  } = t;
+  if (null == n) return;
+  let r = p.get(n.id),
+    i = (0, o.xo)(n);
+  null == r ? p.set(n.id, d(c({}, _), {
+    profile: i,
+    lastSyncTimestamp: Date.now(),
+    fetchStatus: "FETCHED"
+  })) : p.set(n.id, d(c({}, r), {
+    profile: i,
     lastSyncTimestamp: Date.now(),
     fetchStatus: "FETCHED"
   }))
@@ -171,44 +191,24 @@ function v(e) {
 
 function I(e) {
   let {
-    invite: t
-  } = e, {
-    profile: n
-  } = t;
-  if (null == n) return;
-  let r = _.get(n.id),
-    i = (0, o.xo)(n);
-  null == r ? _.set(n.id, d(c({}, p), {
-    profile: i,
-    lastSyncTimestamp: Date.now(),
-    fetchStatus: "FETCHED"
-  })) : _.set(n.id, d(c({}, r), {
-    profile: i,
-    lastSyncTimestamp: Date.now(),
-    fetchStatus: "FETCHED"
-  }))
+    channel: t
+  } = e;
+  t.type === s.d4z.GUILD_ANNOUNCEMENT && null != t.guild_id && p.delete(t.guild_id)
 }
 
 function T(e) {
   let {
-    channel: t
-  } = e;
-  t.type === s.d4z.GUILD_ANNOUNCEMENT && null != t.guild_id && _.delete(t.guild_id)
-}
-
-function S(e) {
-  let {
     guildId: t,
     enabled: n
   } = e;
-  null != t && n && _.delete(t)
+  null != t && n && p.delete(t)
 }
 
 function A(e) {
   var t, n, r;
   let {
     guild: i
-  } = e, a = _.get(i.id);
+  } = e, a = p.get(i.id);
   if (null == a || null == a.profile) returnfalse;
   let o = d(c({}, a.profile), {
     name: i.name,
@@ -216,45 +216,45 @@ function A(e) {
     description: null != (n = i.description) ? n : "",
     customBanner: null != (r = i.discovery_splash) ? r : null
   });
-  _.set(i.id, d(c({}, a), {
+  p.set(i.id, d(c({}, a), {
     profile: o
   }))
 }
 class C extends(r = Chunk442837.ZP.Store) {
   getProfile(e) {
     var t, n;
-    return null == e ? null : null != (n = null == (t = _.get(e)) ? true : t.profile) ? n : null
+    return null == e ? null : null != (n = null == (t = p.get(e)) ? true : t.profile) ? n : null
   }
   getFetchStatus(e) {
     var t, n;
-    return null == e ? "NOT_FETCHED" : null != (n = null == (t = _.get(e)) ? true : t.fetchStatus) ? n : "NOT_FETCHED"
+    return null == e ? "NOT_FETCHED" : null != (n = null == (t = p.get(e)) ? true : t.fetchStatus) ? n : "NOT_FETCHED"
   }
   getLastSyncTimestamp(e) {
     var t, n;
-    return null == e ? null : null != (n = null == (t = _.get(e)) ? true : t.lastSyncTimestamp) ? n : null
+    return null == e ? null : null != (n = null == (t = p.get(e)) ? true : t.lastSyncTimestamp) ? n : null
   }
   getIsUpdating(e) {
     var t, n;
-    return null != e && null != (n = null == (t = _.get(e)) ? true : t.isUpdating) && n
+    return null != e && null != (n = null == (t = p.get(e)) ? true : t.isUpdating) && n
   }
   getErrorCode(e) {
     var t, n, r;
-    return null == e ? null : null != (r = null == (n = _.get(e)) || null == (t = n.error) ? true : t.code) ? r : null
+    return null == e ? null : null != (r = null == (n = p.get(e)) || null == (t = n.error) ? true : t.code) ? r : null
   }
 }
 l(C, "displayName", "GuildProfileStore");
 let N = new C(Chunk570140.Z, {
-  GUILD_PROFILE_FETCH: h,
-  GUILD_PROFILE_FETCH_SUCCESS: m,
+  GUILD_PROFILE_FETCH: m,
+  GUILD_PROFILE_FETCH_SUCCESS: h,
   GUILD_PROFILE_FETCH_FAILURE: g,
   GUILD_PROFILE_UPDATE: E,
   GUILD_PROFILE_UPDATE_SUCCESS: b,
   GUILD_PROFILE_UPDATE_FAILURE: y,
   MEMBER_VERIFICATION_FORM_UPDATE: v,
-  INVITE_RESOLVE_SUCCESS: I,
-  INSTANT_INVITE_CREATE_SUCCESS: I,
-  CHANNEL_CREATE: T,
-  GUILD_SETTINGS_SET_WIDGET: S,
+  INVITE_RESOLVE_SUCCESS: S,
+  INSTANT_INVITE_CREATE_SUCCESS: S,
+  CHANNEL_CREATE: I,
+  GUILD_SETTINGS_SET_WIDGET: T,
   GUILD_UPDATE: A,
   GUILD_PROFILE_UPDATE_VISIBILITY: E,
   GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS: O,

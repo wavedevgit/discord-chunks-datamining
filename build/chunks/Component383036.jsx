@@ -17,8 +17,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk277790 = require("./277790.js");
 let g = e => {
-    let [t, n] = l.useState(0);
-    return l.useLayoutEffect(() => {
+    let [t, n] = r.useState(0);
+    return r.useLayoutEffect(() => {
       let e = d.Z.getPurchase;
       return d.Z.getPurchase = e => true, d.Z.emitChange(), n(1), () => {
         d.Z.getPurchase = e, d.Z.emitChange()
@@ -60,15 +60,15 @@ let g = e => {
       _ = f || !b && j.size > 0,
       [y, C] = Chunk473749.useState(""),
       [S, E] = Chunk473749.useState(null),
-      [N, T] = Chunk473749.useState(null);
+      [T, N] = Chunk473749.useState(null);
     return (Chunk473749.useEffect(() => {
       if ("" === y.trim() || !_) {
-        E(null), T(null);
+        E(null), N(null);
         return
       }
       let e = Chunk597688.Z.getProduct(y),
         t = Chunk597688.Z.getCategoryForProduct(y);
-      null != module && null != exports ? (E(module), T(exports)) : (E(null), T(null))
+      null != module && null != exports ? (E(module), N(exports)) : (E(null), N(null))
     }, [y, _]), b) ? (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "Loading categories and collectibles..."
@@ -111,12 +111,12 @@ let g = e => {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Preview"
-        }), null != S && null != N ? (0, Chunk54381.jsxs)("div", {
+        }), null != S && null != T ? (0, Chunk54381.jsxs)("div", {
           className: Chunk277790.previewContainer,
           children: [(0, Chunk54381.jsx)(g, {
             product: S,
             user: module,
-            category: N,
+            category: T,
             tab: Chunk215023.AW.HOME
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",

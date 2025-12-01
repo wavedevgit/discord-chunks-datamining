@@ -17,7 +17,7 @@ var Chunk275726 = require("./275726.js"),
   Chunk96052 = require("./96052.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk147913.Z {
+class h extends Chunk147913.Z {
   handleVoiceStateUpdates(e) {
     let {
       voiceStates: t
@@ -35,22 +35,22 @@ class m extends Chunk147913.Z {
         channelId: t,
         userId: n,
         suppress: a,
-        requestToSpeakTimestamp: h
+        requestToSpeakTimestamp: m
       } = e;
       if (u.Z.getVoiceChannelId() === t && a && null != t && n !== o.default.getId() && c.Z.can(f.yP, s.Z.getChannel(t)))
-        if (null != h) {
+        if (null != m) {
           let e = d.default.getUser(n);
-          null != e && (0, _.U)(t, e, h)
+          null != e && (0, p.U)(t, e, m)
         } else {
-          let e = l.Z.getMessages(t).findNewest(e => e.type === r.u.STAGE_RAISE_HAND && e.hasFlag(p.iLy.EPHEMERAL) && e.author.id === n);
+          let e = l.Z.getMessages(t).findNewest(e => e.type === r.u.STAGE_RAISE_HAND && e.hasFlag(_.iLy.EPHEMERAL) && e.author.id === n);
           null != e && i.Z.deleteMessage(t, e.id, true)
         }
     })
   }
   constructor(...e) {
-    super(...e), h(this, "actions", {
+    super(...e), m(this, "actions", {
       VOICE_STATE_UPDATES: this.handleVoiceStateUpdates
     })
   }
 }
-let g = new m
+let g = new h

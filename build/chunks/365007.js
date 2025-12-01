@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   Sr: () => E,
-  WQ: () => m,
-  cT: () => h,
-  d$: () => _,
+  WQ: () => h,
+  cT: () => m,
+  d$: () => p,
   ef: () => b,
-  hL: () => p,
+  hL: () => _,
   startRegisterWebAuthnCredential: () => g,
   us: () => f,
   vg: () => y
@@ -65,7 +65,7 @@ async function f() {
     rejectWithError: false
   })).body
 }
-async function _() {
+async function p() {
   let {
     challenge: e,
     ticket: t
@@ -79,7 +79,7 @@ async function _() {
   }
 }
 
-function p() {
+function _() {
   Chunk544891.tn.get({
     url: Chunk981631.ANM.MFA_WEBAUTHN_CREDENTIALS,
     rejectWithError: true
@@ -99,7 +99,7 @@ function p() {
   })
 }
 
-function h(e) {
+function m(e) {
   i.tn.del({
     url: s.ANM.MFA_WEBAUTHN_CREDENTIAL(e.id),
     rejectWithError: true
@@ -110,7 +110,7 @@ function h(e) {
     })
   })
 }
-async function m(e, t) {
+async function h(e, t) {
   let n = await i.tn.patch({
     url: s.ANM.MFA_WEBAUTHN_CREDENTIAL(e),
     body: {

@@ -4,8 +4,8 @@
 require.d(exports, {
   Pv: () => d,
   _j: () => f,
-  nm: () => _,
-  xS: () => p
+  nm: () => p,
+  xS: () => _
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -114,21 +114,21 @@ function f(e, t) {
     guildId: d
   } = t, f = c(t, ["user", "channel", "moderationAlertId", "guildId"]);
   if ((null == s ? true : s.isGroupDM()) || (null == s ? true : s.isDM())) throw Error("Cannot moderate user in DM or group DM");
-  let _ = null != d ? d : null == s ? true : s.getGuildId();
-  null != _ && (0, i.jW)(e, async () => {
+  let p = null != d ? d : null == s ? true : s.getGuildId();
+  null != p && (0, i.jW)(e, async () => {
     let {
       default: e
     } = await n.e("16120").then(n.bind(n, 833737));
     return t => (0, r.jsx)(e, o(l(o({}, t), {
       user: a,
       channelId: null == s ? true : s.id,
-      guildId: _,
+      guildId: p,
       moderationAlertId: u
     }), f))
   })
 }
 
-function _(e, t) {
+function p(e, t) {
   let {
     user: a,
     guildId: s,
@@ -150,7 +150,7 @@ function _(e, t) {
   })
 }
 
-function p(e, t, a) {
+function _(e, t, a) {
   null != a && (0, i.jW)(e, async () => {
     let {
       default: e

@@ -6,8 +6,8 @@ require.d(exports, {
   KH: () => o,
   yz: () => l
 }), require("./388685.js");
-var Chunk524484 = require("./524484.js"),
-  Chunk981631 = require("./981631.js");
+var Chunk900089 = require("./900089.js"),
+  Chunk524484 = require("./524484.js");
 let a = function(e, t) {
     let {
       multiplier: n,
@@ -26,8 +26,8 @@ let a = function(e, t) {
     }, 0))
   },
   o = function(e) {
-    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.qi.LEVEL_3;
-    return a(e, [r.JR[t], r.u4[t]], 1e5)
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : i.qi.LEVEL_3;
+    return a(e, [i.JR[t], i.u4[t]], 1e5)
   },
   s = [
     [1, .001],
@@ -45,17 +45,17 @@ let a = function(e, t) {
     let [t, n] = e;
     return n
   }), e => 1 === e ? {
-    color: i.Ilk.BRAND_500
+    color: (0, r.Fw)("BRAND_500")
   } : 2 === e || 3 === e ? {
-    color: i.Ilk.GREEN_360
+    color: (0, r.Fw)("GREEN_360")
   } : 4 === e || 5 === e ? {
-    color: i.Ilk.YELLOW_300,
+    color: (0, r.Fw)("YELLOW_300"),
     square: true
   } : 6 === e ? {
-    color: i.Ilk.RED_400,
+    color: (0, r.Fw)("RED_400"),
     square: true
   } : {
-    color: i.Ilk.ORANGE_345,
+    color: (0, r.Fw)("ORANGE_345"),
     flair: true
   });
 

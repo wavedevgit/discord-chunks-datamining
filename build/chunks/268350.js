@@ -2,17 +2,17 @@
 /** chunk id: 268350, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $p: () => T,
-  FQ: () => I,
-  Il: () => S,
-  Jf: () => R,
-  SA: () => L,
+  $p: () => I,
+  FQ: () => S,
+  Il: () => T,
+  Jf: () => P,
+  SA: () => x,
   SV: () => A,
   Um: () => C,
-  eu: () => P,
-  hW: () => x,
+  eu: () => R,
+  hW: () => L,
   lY: () => N,
-  qB: () => D
+  qB: () => w
 }), require("./415506.js"), require("./953529.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -69,11 +69,11 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = async (e, t) => {
+let S = async (e, t) => {
   let {
     body: n
-  } = await (0, _.Kb)({
-    url: m.ANM.STICKER_PACK(e),
+  } = await (0, p.Kb)({
+    url: h.ANM.STICKER_PACK(e),
     rejectWithError: false
   });
   return o.Z.dispatch({
@@ -82,7 +82,7 @@ let I = async (e, t) => {
     pack: n,
     ingestStickers: t
   }), n
-}, T = async function() {
+}, I = async function() {
   let {
     locale: e = Chunk706454.default.locale
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
@@ -107,18 +107,18 @@ let I = async (e, t) => {
     type: "STICKER_PACKS_FETCH_SUCCESS",
     packs: exports
   })
-}, S = async e => {
+}, T = async e => {
   let {
     body: t
   } = await a.tn.get({
-    url: m.ANM.STICKER(e),
+    url: h.ANM.STICKER(e),
     rejectWithError: false
   });
-  if ((0, h.J8)(t)) o.Z.dispatch({
+  if ((0, m.J8)(t)) o.Z.dispatch({
     type: "GUILD_STICKER_FETCH_SUCCESS",
     sticker: t
   });
-  else if ((0, h.jl)(t)) o.Z.dispatch({
+  else if ((0, m.jl)(t)) o.Z.dispatch({
     type: "PACK_STICKER_FETCH_SUCCESS",
     sticker: t
   });
@@ -127,7 +127,7 @@ let I = async (e, t) => {
   let {
     body: n
   } = await a.tn.get({
-    url: m.ANM.GUILD_STICKER_PACKS(e),
+    url: h.ANM.GUILD_STICKER_PACKS(e),
     rejectWithError: false,
     signal: t
   });
@@ -141,7 +141,7 @@ let I = async (e, t) => {
   })
 }, C = async e => {
   await a.tn.del({
-    url: m.ANM.GUILD_STICKER(e.guild_id, e.id),
+    url: h.ANM.GUILD_STICKER(e.guild_id, e.id),
     rejectWithError: false
   })
 }, N = async e => {
@@ -149,7 +149,7 @@ let I = async (e, t) => {
   let {
     guildId: n
   } = e, r = await a.tn.post({
-    url: m.ANM.GUILD_STICKER_PACKS(n),
+    url: h.ANM.GUILD_STICKER_PACKS(n),
     body: "web" === e.platform ? e.body : true,
     fields: "mobile" === e.platform ? [{
       name: "name",
@@ -178,13 +178,13 @@ let I = async (e, t) => {
       user_id: null == (t = f.default.getCurrentUser()) ? true : t.id
     })
   }), r.body
-}, R = async (e, t, n) => (await a.tn.patch({
-  url: m.ANM.GUILD_STICKER(e, t),
+}, P = async (e, t, n) => (await a.tn.patch({
+  url: h.ANM.GUILD_STICKER(e, t),
   body: n,
   rejectWithError: false
 })).body;
 
-function P(e, t, n) {
+function R(e, t, n) {
   o.Z.dispatch({
     type: "ADD_STICKER_PREVIEW",
     channelId: e,
@@ -193,7 +193,7 @@ function P(e, t, n) {
   })
 }
 
-function D(e, t) {
+function w(e, t) {
   o.Z.dispatch({
     type: "CLEAR_STICKER_PREVIEW",
     channelId: e,
@@ -201,12 +201,12 @@ function D(e, t) {
   })
 }
 
-function w(e) {
-  return d.Z.totalUnavailableGuilds > 0 || !l.Z.isConnected() ? e : e.filter(e => null != p.Z.getStickerById(e))
+function D(e) {
+  return d.Z.totalUnavailableGuilds > 0 || !l.Z.isConnected() ? e : e.filter(e => null != _.Z.getStickerById(e))
 }
 
-function L(e) {
-  u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = w(t.stickerIds), i().size(t.stickerIds) >= g.oX) ? (s.Z.show({
+function x(e) {
+  u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = D(t.stickerIds), i().size(t.stickerIds) >= g.oX) ? (s.Z.show({
     title: E.intl.string(E.t["+XYXtZ"]),
     body: E.intl.formatToPlainString(E.t.JaIyFi, {
       count: g.oX
@@ -214,8 +214,8 @@ function L(e) {
   }), false) : !t.stickerIds.includes(e) && void t.stickerIds.push(e), g.fy.INFREQUENT_USER_ACTION)
 }
 
-function x(e) {
+function L(e) {
   u.DZ.updateAsync("favoriteStickers", t => {
-    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = w(t.stickerIds)
+    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = D(t.stickerIds)
   }, g.fy.INFREQUENT_USER_ACTION)
 }

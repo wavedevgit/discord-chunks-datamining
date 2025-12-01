@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   aB: () => f,
-  rJ: () => _,
+  rJ: () => p,
   yF: () => d
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
@@ -82,7 +82,7 @@ function f(e) {
   }))
 }
 
-function _(e) {
+function p(e) {
   let t = e.item.originalItem.media,
     n = a.Z.toURLSafe(t.proxyUrl);
   return null == n ? null : (n.searchParams.append("format", "webp"), (0, o.lV)(u(l({}, e), {

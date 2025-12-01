@@ -657,7 +657,7 @@ class eh extends(r = Chunk473749.PureComponent) {
               canBeNewChannel: h && t === u.recentsSectionNumber,
               isFavoriteCategory: y,
               withGuildIcon: g
-            }), _.threadCount > 0 ? (0, i.jsx)(X.Z, {
+            }), _.threadCount > 0 ? (0, i.jsx)(Q.Z, {
               withGuildIcon: g,
               channel: j,
               sortedThreadIds: _.threadIds,
@@ -667,7 +667,7 @@ class eh extends(r = Chunk473749.PureComponent) {
           }, x);
         case eo.d4z.GUILD_STAGE_VOICE:
           var I, P;
-          return (0, i.jsx)(Q.Z, {
+          return (0, i.jsx)(X.Z, {
             channel: j,
             guild: r,
             position: _.position,

@@ -18,7 +18,7 @@ var Chunk579806 = require("./579806.js"),
   Chunk367907 = require("./367907.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -59,29 +59,29 @@ function g() {
   }
 }
 async function E(e, t) {
-  var n, l, c, h, g, E;
+  var n, l, c, m, g, E;
   let b = arguments.length > 2 && true !== arguments[2] && arguments[2],
     y = __OVERLAY__ ? d.Z.getGame() : (0, s.pL)(),
     O = i.ZP.getRunningGames().find(e => e.name === (null == y ? true : y.name)),
     v = (null == O ? true : O.pid) != null ? o.default.getTrackedGameByPid(null == O ? true : O.pid) : null,
-    I = null != (c = null == v ? true : v.source) ? c : null,
-    T = null != (g = null != (h = null == v ? true : v.overlayMethod) ? h : o.default.getRenderMethod(null == O ? true : O.pid)) ? g : null,
-    S = {
-      overlay_game_source: I,
+    S = null != (c = null == v ? true : v.source) ? c : null,
+    I = null != (g = null != (m = null == v ? true : v.overlayMethod) ? m : o.default.getRenderMethod(null == O ? true : O.pid)) ? g : null,
+    T = {
+      overlay_game_source: S,
       overlay_game_name: null != y ? y.name : "Unknown Game",
       overlay_app_id: null != y ? y.id : null,
-      overlay_render_method: null != T ? a.gl[T] : null,
+      overlay_render_method: null != I ? a.gl[I] : null,
       media_session_id: u.Z.getMediaSessionId(),
       overlay_game_elevated: null == O ? true : O.elevated,
       input_service_initialized: i.ZP.isSystemServiceInitialized("input-service"),
       hardware_display_count: null != (E = await (null === r.Z || true === r.Z || null == (l = r.Z.hardware) || null == (n = l.getDisplayCount) ? true : n.call(l))) ? E : null
     };
-  switch (__OVERLAY__ && (S.overlay_render_method = a.gl[a.gl.Hook]), t = m({}, S, t), e) {
-    case p.rMx.VOICE_CHANNEL_SELECTED:
-    case p.rMx.SETTINGS_PANE_VIEWED:
-    case p.rMx.GUILD_VIEWED:
-    case p.rMx.CHANNEL_OPENED:
-      return (0, _.yw)(e, t, b);
+  switch (__OVERLAY__ && (T.overlay_render_method = a.gl[a.gl.Hook]), t = h({}, T, t), e) {
+    case _.rMx.VOICE_CHANNEL_SELECTED:
+    case _.rMx.SETTINGS_PANE_VIEWED:
+    case _.rMx.GUILD_VIEWED:
+    case _.rMx.CHANNEL_OPENED:
+      return (0, p.yw)(e, t, b);
     default:
       return f.default.track(e, t, {
         flush: b

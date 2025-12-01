@@ -49,13 +49,13 @@ function y(e) {
     viewProfileItem: E
   } = e, y = i.useRef(null), {
     trackUserProfileAction: O
-  } = (0, p.KZ)(), {
+  } = (0, _.KZ)(), {
     analyticsLocations: v,
-    newestAnalyticsLocation: I
-  } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), T = (0, a.e7)([h.Z], () => h.Z.getUserProfile(t.id)), S = null == T ? true : T.application, A = (0, f.Z)({
+    newestAnalyticsLocation: S
+  } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), I = (0, a.e7)([m.Z], () => m.Z.getUserProfile(t.id)), T = null == I ? true : I.application, A = (0, f.Z)({
     user: t,
     guildId: n,
-    location: I,
+    location: S,
     color: "danger",
     onBlock: () => O({
       action: "BLOCK",
@@ -65,10 +65,10 @@ function y(e) {
       action: "UNBLOCK",
       analyticsLocations: v
     })
-  }), C = (0, _.Z)({
+  }), C = (0, p.Z)({
     user: t,
     guildId: n,
-    location: I,
+    location: S,
     onIgnore: () => O({
       action: "IGNORE",
       analyticsLocations: v
@@ -78,7 +78,7 @@ function y(e) {
       analyticsLocations: v
     })
   }), N = (0, u.Z)({
-    applicationId: null == S ? true : S.id,
+    applicationId: null == T ? true : T.id,
     user: t,
     guildId: n,
     onSubmit: () => O({
@@ -86,26 +86,26 @@ function y(e) {
       analyticsLocations: v
     }),
     color: "danger"
-  }), R = (0, d.Z)({
-    id: null == S ? true : S.id,
+  }), P = (0, d.Z)({
+    id: null == T ? true : T.id,
     label: g.intl.string(g.t["+NP/b2"]),
     onSuccess: () => O({
       action: "COPY_APP_ID",
       analyticsLocations: v
     })
-  }), P = [
+  }), R = [
     [E],
     [C, A, N],
     [(0, c.Z)({
-      application: S,
+      application: T,
       label: g.intl.string(g.t.WqhZss),
       onSuccess: () => O({
         action: "COPY_APP_LINK",
         analyticsLocations: v
       })
-    }), R]
+    }), P]
   ];
-  return P.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
+  return R.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     targetElementRef: y,
     renderPopout: e => {
       let {
@@ -116,12 +116,12 @@ function y(e) {
         onSelect: true,
         onClose: t,
         "aria-label": g.intl.string(g.t.AXIHpV),
-        children: P.map((e, t) => (0, r.jsx)(o.kSQ, {
+        children: R.map((e, t) => (0, r.jsx)(o.kSQ, {
           children: e.map(e => e)
         }, t))
       })
     },
-    children: e => (0, r.jsx)(m.oY, b({
+    children: e => (0, r.jsx)(h.oY, b({
       ref: y,
       action: "PRESS_OPTIONS",
       icon: o.xhG,

@@ -439,10 +439,10 @@ class eN extends Chunk473749.PureComponent {
         embeddedActivity: n,
         isActivityPopoutOpen: r
       } = this.props;
-      s()(null != n, "Activity cannot be null during navigation click"), s()(null != t, "Channel cannot be null during navigation click"), _.Z.channelListScrollTo(null != (e = t.guild_id) ? e : e_.ME, t.id), !r && ((0, Q.vd)(t.type) && b.Z.selectParticipant(t.id, (0, Z.gN)({
+      s()(null != n, "Activity cannot be null during navigation click"), s()(null != t, "Channel cannot be null during navigation click"), _.Z.channelListScrollTo(null != (e = t.guild_id) ? e : e_.ME, t.id), !r && ((0, X.vd)(t.type) && b.Z.selectParticipant(t.id, (0, Z.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
-      })), (0, Q.Qm)(t.type) && (0, x.tg)(ey.Ez.PANEL))
+      })), (0, X.Qm)(t.type) && (0, x.tg)(ey.Ez.PANEL))
     }), eE(this, "handleFrameLinkClick", () => {
       let {
         frame: e
@@ -498,7 +498,7 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     {
       hasAlreadyLinked: z,
       canStartAuthorization: q,
-      connectionApp: Q,
+      connectionApp: X,
       startAuthorization: ed
     } = (0, P.F)(O, {
       allowedFlows: [P.r.RPC, P.r.WEB]
@@ -506,7 +506,7 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     {
       isQuestBarEmpty: eh,
       hasLoadedQuestBar: eg
-    } = (0, X.Ws)({
+    } = (0, Q.Ws)({
       location: ej.dr.CONFLICT_CHECKS
     }),
     {
@@ -516,11 +516,11 @@ let eZ = (0, Chunk730749.Z)(function(e) {
       location: "ActivityPanelGameCard"
     }),
     ey = (0, c.O)(e => {
-      if (e && null != Q) {
+      if (e && null != X) {
         var t;
         eu.default.track(e_.rMx.ACTIVITY_PANEL_SDK_LINK_VIEWED, {
           game_id: null != (t = null == a ? true : a.id) ? t : null,
-          application_id: Q.id
+          application_id: X.id
         })
       }
     });

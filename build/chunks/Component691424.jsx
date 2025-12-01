@@ -50,7 +50,7 @@ function G(e, t, n) {
   }) : e[t] = n, e
 }
 
-function B(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,7 +63,7 @@ function B(e) {
   return e
 }
 
-function Z(e, t) {
+function B(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -75,7 +75,7 @@ function Z(e, t) {
 }
 
 function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -121,7 +121,7 @@ function H(e) {
       } = a, d = f.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
       if (null != d) {
         let t = d.require_colons;
-        e = F(B({}, e), {
+        e = F(Z({}, e), {
           name: t ? ":".concat(d.name, ":") : d.name
         })
       }
@@ -137,28 +137,28 @@ function H(e) {
   }
 }
 
-function W(e, t, n) {
-  let r = T.Z.getGuild(e);
+function Y(e, t, n) {
+  let r = I.Z.getGuild(e);
   if (null == e || null == r) return;
   let i = t => {
-    r.features.has(M.GuildFeatures.COMMUNITY) && (0, y.uL)(M.Z5c.CHANNEL(e, t))
+    r.features.has(j.GuildFeatures.COMMUNITY) && (0, y.uL)(j.Z5c.CHANNEL(e, t))
   };
   switch (t) {
     case "home":
     case "guide":
-      i(k.oC.GUILD_HOME);
+      i(M.oC.GUILD_HOME);
       break;
     case "browse":
-      i(k.oC.CHANNEL_BROWSER);
+      i(M.oC.CHANNEL_BROWSER);
       break;
     case "customize":
-      i(k.oC.CUSTOMIZE_COMMUNITY);
+      i(M.oC.CUSTOMIZE_COMMUNITY);
       break;
     case "linked-roles":
       if (null != n) {
         let t = v.ZP.getSelfMember(e);
         if (null == t) return null;
-        let r = I.Z.getRole(e, n);
+        let r = S.Z.getRole(e, n);
         null == r || t.roles.includes(r.id) ? c.Z.dispatch({
           type: "GUILD_ROLE_CONNECTIONS_MODAL_SHOW",
           guildId: e
@@ -174,11 +174,11 @@ function W(e, t, n) {
   }
 }
 
-function Y(e) {
+function W(e) {
   let {
     text: t
   } = e, [n, a] = i.useState(false), o = () => {
-    (0, S.JG)(t, () => a(true), () => a(false))
+    (0, T.JG)(t, () => a(true), () => a(false))
   };
   return (0, r.jsx)(l.P3F, {
     onClick: o,
@@ -195,9 +195,9 @@ require("./324509.js");
 let K = {
   blockQuote: {
     react: (e, t, n) => (0, r.jsxs)("div", {
-      className: j.blockquoteContainer,
+      className: k.blockquoteContainer,
       children: [(0, r.jsx)("div", {
-        className: j.blockquoteDivider
+        className: k.blockquoteDivider
       }), (0, r.jsx)("blockquote", {
         children: t(e.content, n)
       })]
@@ -233,10 +233,10 @@ let K = {
       });
       return (0, r.jsx)("pre", {
         children: (0, r.jsxs)("div", {
-          className: j.codeContainer,
-          children: [S.wS ? (0, r.jsx)("div", {
-            className: j.codeActions,
-            children: (0, r.jsx)(Y, {
+          className: k.codeContainer,
+          children: [T.wS ? (0, r.jsx)("div", {
+            className: k.codeActions,
+            children: (0, r.jsx)(W, {
               text: e.content
             })
           }) : null, (0, r.jsx)(d.GI, {
@@ -289,14 +289,14 @@ let K = {
   staticRouteLink: {
     react(e, t, n) {
       let i = () => {
-        W(e.guildId, e.id, e.itemId)
+        Y(e.guildId, e.id, e.itemId)
       };
-      return (0, A.k)(e.id) ? (0, r.jsxs)(h.Z, {
+      return (0, A.k)(e.id) ? (0, r.jsxs)(m.Z, {
         role: "link",
         onClick: i,
         className: "channelMention",
         iconType: e.id,
-        children: [t(e.mainContent, n), null != e.itemContent ? (0, r.jsx)(m.Z, {}) : null, null != e.itemContent ? t(e.itemContent, n) : null]
+        children: [t(e.mainContent, n), null != e.itemContent ? (0, r.jsx)(h.Z, {}) : null, null != e.itemContent ? t(e.itemContent, n) : null]
       }, n.key) : null
     }
   },
@@ -311,7 +311,7 @@ let K = {
         a = null == e.start ? true : (e.start + (e.items.length - 1)).toString().length;
       return (0, s.reactElement)(i, "".concat(n.key), {
         start: e.start,
-        className: n.formatInline ? j.inlineFormat : null,
+        className: n.formatInline ? k.inlineFormat : null,
         style: {
           "--totalCharacters": a
         },
@@ -337,21 +337,21 @@ let K = {
         children: [i, (0, r.jsx)(l.nn4, {
           children: ","
         }, "screen-reader-pause")],
-        className: n.formatInline ? j.inlineFormat : null
+        className: n.formatInline ? k.inlineFormat : null
       })
     }
   },
   guild: {
     react: (e, t, n) => {
-      let i = T.Z.getGuild(e.guildId);
-      return (0, r.jsx)(p.Z, {
+      let i = I.Z.getGuild(e.guildId);
+      return (0, r.jsx)(_.Z, {
         guild: i,
         children: (0, A.S)(e, t, n)
       }, n.key)
     }
   },
   channel: {
-    react: (e, t, n) => (0, r.jsx)(_.Z, {
+    react: (e, t, n) => (0, r.jsx)(p.Z, {
       iconType: e.iconType,
       children: (0, A.S)(e, t, n)
     }, n.key)
@@ -366,7 +366,7 @@ let K = {
       });
       return (0, s.reactElement)("small", (null == n ? true : n.key) != null ? "".concat(n.key) : null, {
         children: r,
-        className: n.formatInline ? j.inlineFormat : null
+        className: n.formatInline ? k.inlineFormat : null
       })
     }
   },
@@ -380,15 +380,15 @@ let K = {
 };
 
 function z(e) {
-  return F(B({}, K), {
-    link: (0, L.Z)(e),
-    devLink: (0, D.Z)(e),
+  return F(Z({}, K), {
+    link: (0, x.Z)(e),
+    devLink: (0, w.Z)(e),
     emoji: V(e),
     customEmoji: H(e),
-    channelMention: (0, R.Z)(e),
-    commandMention: (0, P.ZP)(e),
+    channelMention: (0, P.Z)(e),
+    commandMention: (0, R.ZP)(e),
     attachmentLink: (0, N.Z)(e),
-    shopLink: (0, x.Z)(e),
-    gameMention: w.Z
+    shopLink: (0, L.Z)(e),
+    gameMention: D.Z
   })
 }

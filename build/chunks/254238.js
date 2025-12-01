@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   LO: () => N,
-  On: () => S,
-  Vv: () => I,
-  _: () => T,
-  bp: () => R,
+  On: () => T,
+  Vv: () => S,
+  _: () => I,
+  bp: () => P,
   ef: () => v,
   s6: () => O,
-  sh: () => w
+  sh: () => D
 }), require("./539854.js"), require("./388685.js");
 var Chunk434179 = require("./434179.js"),
   Chunk771649 = require("./771649.js"),
@@ -51,7 +51,7 @@ function b(e) {
 
 function y(e, t) {
   var n, r;
-  d.default.track(m.rMx.REMOTE_COMMAND_SENT, {
+  d.default.track(h.rMx.REMOTE_COMMAND_SENT, {
     command_type: e,
     remote_platform: null == (r = u.Z.getSessionById(t)) || null == (n = r.clientInfo) ? true : n.os
   })
@@ -63,7 +63,7 @@ async function O() {
     type: "REMOTE_SESSION_DISCONNECT"
   });
   let n = [];
-  ((null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION || (null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION_STAGING) && (null == module ? true : module.commandId) != null && (null == module ? true : module.deviceId) != null && require.push(D(module.type, module.deviceId, module.commandId)), null != exports && require.push(C(exports));
+  ((null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION || (null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION_STAGING) && (null == module ? true : module.commandId) != null && (null == module ? true : module.deviceId) != null && require.push(w(module.type, module.deviceId, module.commandId)), null != exports && require.push(C(exports));
   try {
     await Promise.all(require)
   } catch (e) {
@@ -81,7 +81,7 @@ function v(e) {
   })
 }
 
-function I(e, t) {
+function S(e, t) {
   let {
     selfMute: n,
     selfDeaf: r
@@ -97,7 +97,7 @@ function I(e, t) {
   }), y("VOICE_STATE_UPDATE", e)
 }
 
-function T(e) {
+function I(e) {
   o.Z.dispatch({
     type: "REMOTE_COMMAND",
     sessionId: e,
@@ -107,7 +107,7 @@ function T(e) {
   }), y("DISCONNECT", e), O()
 }
 
-function S(e, t, n, r) {
+function T(e, t, n, r) {
   let i = (0, l.z)(n);
   null != i && (o.Z.dispatch({
     type: "REMOTE_COMMAND",
@@ -140,7 +140,7 @@ async function A() {
 
 function C(e) {
   return a.tn.del({
-    url: m.ANM.CONNECT_REQUEST(e),
+    url: h.ANM.CONNECT_REQUEST(e),
     rejectWithError: false
   })
 }
@@ -152,7 +152,7 @@ async function N(e) {
   });
   try {
     t = await a.tn.get({
-      url: m.ANM.CONSOLES_DEVICES(e),
+      url: h.ANM.CONSOLES_DEVICES(e),
       rejectWithError: false
     })
   } catch (t) {
@@ -170,14 +170,14 @@ async function N(e) {
   }), n
 }
 
-function R(e, t) {
+function P(e, t) {
   o.Z.dispatch({
     type: "GAME_CONSOLE_SELECT_DEVICE",
     platform: e,
     deviceId: t
   })
 }
-async function P(e, t, n, i) {
+async function R(e, t, n, i) {
   let s;
   o.Z.dispatch({
     type: "GAME_CONSOLE_DEVICE_SEND_COMMAND_START",
@@ -185,7 +185,7 @@ async function P(e, t, n, i) {
   });
   try {
     s = await a.tn.post({
-      url: m.ANM.CONSOLES_DEVICES_COMMANDS(e, t),
+      url: h.ANM.CONSOLES_DEVICES_COMMANDS(e, t),
       body: {
         command: r.n.CONNECT_VOICE,
         channel_id: n.id,
@@ -211,7 +211,7 @@ async function P(e, t, n, i) {
     commandId: l
   }), l
 }
-async function D(e, t, n) {
+async function w(e, t, n) {
   o.Z.dispatch({
     type: "GAME_CONSOLE_DEVICE_CANCEL_COMMAND_START",
     platform: e,
@@ -220,7 +220,7 @@ async function D(e, t, n) {
   });
   try {
     await a.tn.del({
-      url: m.ANM.CONSOLES_DEVICES_COMMAND(e, t, n),
+      url: h.ANM.CONSOLES_DEVICES_COMMAND(e, t, n),
       rejectWithError: false
     })
   } catch (r) {
@@ -239,8 +239,8 @@ async function D(e, t, n) {
     commandId: n
   })
 }
-async function w(e, t, n) {
-  await _.Z.maybeShowPTTAlert(e), await O();
+async function D(e, t, n) {
+  await p.Z.maybeShowPTTAlert(e), await O();
   let r = await A();
-  await P(e, t, n, r), (0, h.Z)(n.id, e)
+  await R(e, t, n, r), (0, m.Z)(n.id, e)
 }

@@ -6,7 +6,7 @@ require.d(exports, {
   Ql: () => u,
   R_: () => c,
   _2: () => d,
-  jY: () => h
+  jY: () => m
 }), require("./539854.js"), require("./388685.js"), require("./35282.js");
 var Chunk502922 = require("./502922.js"),
   Chunk150924 = require("./150924.js"),
@@ -61,7 +61,7 @@ async function d(e) {
   let n = [];
   s.intl.setLocale(e), n.push(), n.push((async () => {
     await (0, l.f)(), await (0, i.loadAllMessagesInLocale)(e)
-  })()), null != r && (r.setLocale(e), n.push(r.loadPromise)), n.push(f(e)), n.push(_(e)), n.push(p(e)), await Promise.all(n).catch(n => t.setLoadingFailed(n, e)), t.setLoadingSucceeded(e)
+  })()), null != r && (r.setLocale(e), n.push(r.loadPromise)), n.push(f(e)), n.push(p(e)), n.push(_(e)), await Promise.all(n).catch(n => t.setLoadingFailed(n, e)), t.setLoadingSucceeded(e)
 }
 async function f(e) {
   let t = c.getState(),
@@ -76,7 +76,7 @@ async function f(e) {
   }
   t.setLocaleData(i)
 }
-async function _(e) {
+async function p(e) {
   let t = n(352968).y[e];
   null != t && await t();
   let r = [],
@@ -85,7 +85,7 @@ async function _(e) {
   r.push("en-US"), n(913527).locale(r)
 }
 
-function p(e) {
+function _(e) {
   let {
     setTags: t
   } = n(960048).Z;
@@ -94,7 +94,7 @@ function p(e) {
   }), Promise.resolve()
 }
 
-function h() {
+function m() {
   let e = c(e => e.localeData);
   return null != module ? module : Chunk150924.default
 }

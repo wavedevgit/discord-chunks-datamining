@@ -38,6 +38,6 @@ function c(e) {
     c = e;
   "animate-always" !== t && ("respect-motion-settings" !== t || s) && (c = "function" == typeof e ? () => l({}, e(), o.F) : l({}, e, o.F));
   let u = "function" == typeof c,
-    [d, f, _] = (0, i.useSpring)(c, n);
-  return u || 3 == arguments.length ? [d, f, _] : d
+    [d, f, p] = (0, i.useSpring)(c, n);
+  return u || 3 == arguments.length ? [d, f, p] : d
 }

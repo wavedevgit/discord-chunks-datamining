@@ -2,7 +2,7 @@
 /** chunk id: 269647, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -15,7 +15,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk979651 = require("./979651.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,8 +23,8 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = true,
-  m = true,
+let m = true,
+  h = true,
   g = true;
 
 function E(e) {
@@ -47,11 +47,11 @@ function b() {
   }
   let r = module || !require,
     i = module || require;
-  if (h === module && m === Chunk442837) returnfalse;
-  g = r, h = r, m = Chunk442837, Chunk570140.Z.dispatch({
+  if (m === module && h === Chunk442837) returnfalse;
+  g = r, m = r, h = Chunk442837, Chunk570140.Z.dispatch({
     type: "SET_VAD_PERMISSION",
-    hasPermission: h,
-    hasLatchPermission: m
+    hasPermission: m,
+    hasLatchPermission: h
   })
 }
 
@@ -72,9 +72,9 @@ function O() {
 }
 
 function v() {
-  g = h
+  g = m
 }
-class I extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk131951.Z, Chunk496675.Z, Chunk19780.Z, Chunk979651.Z)
   }
@@ -82,14 +82,14 @@ class I extends(r = Chunk442837.ZP.Store) {
     return !g
   }
   canUseVoiceActivity() {
-    return h
-  }
-  canUseLatching() {
     return m
   }
+  canUseLatching() {
+    return h
+  }
 }
-p(I, "displayName", "PermissionVADStore");
-let T = new I(Chunk570140.Z, {
+_(S, "displayName", "PermissionVADStore");
+let I = new S(Chunk570140.Z, {
   RTC_CONNECTION_STATE: b,
   MEDIA_ENGINE_SET_AUDIO_ENABLED: b,
   AUDIO_SET_MODE: b,

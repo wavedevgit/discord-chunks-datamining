@@ -26,7 +26,7 @@ let b = e => {
     } = e;
     return null == t ? null : (0, r.jsx)("div", {
       className: E.previewContainer,
-      children: (0, r.jsx)(p.o, {
+      children: (0, r.jsx)(_.o, {
         userDiscountOffer: t
       })
     })
@@ -37,7 +37,7 @@ let b = e => {
       onClose: t,
       premiumType: n,
       setStep: a,
-      churnUserDiscountOffer: p,
+      churnUserDiscountOffer: _,
       isFetchingChurnDiscountOffer: E
     } = (0, Chunk594135.a)(), y = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
@@ -56,17 +56,17 @@ let b = e => {
         exports()
       }
     });
-    let I = [];
-    return null != Chunk10508 ? I.push({
+    let S = [];
+    return null != Chunk10508 ? S.push({
       text: Chunk388032.intl.string(Chunk388032.t.zrCzVB),
       onClick: () => Chunk512722(Chunk45474.R.CONFIRM_DISCOUNT),
       variant: "secondary",
       icon: Chunk481060.SrA
-    }) : I.push({
+    }) : S.push({
       text: Chunk388032.intl.string(Chunk388032.t.h9tkAK),
       onClick: () => exports(),
       variant: "secondary"
-    }), I.push({
+    }), S.push({
       text: v ? Chunk388032.intl.string(Chunk388032.t.PfnxqD) : Chunk388032.intl.string(Chunk388032.t["3PatSz"]),
       onClick: () => Chunk512722(Chunk45474.R.CONFIRM),
       variant: "primary"
@@ -74,7 +74,7 @@ let b = e => {
       transitionState: module,
       title: Chunk388032.intl.string(Chunk388032.t.PWq8TL),
       subtitle: Chunk388032.intl.formatToPlainString(Chunk388032.t.nsGVzg, {}),
-      actions: I,
+      actions: S,
       preview: null !== Chunk10508 && (0, Chunk54381.jsx)(b, {
         churnUserDiscountOffer: Chunk10508
       }),

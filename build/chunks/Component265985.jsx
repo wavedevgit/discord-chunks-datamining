@@ -2,7 +2,7 @@
 /** chunk id: 265985, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  h: () => S,
+  h: () => T,
   x: () => A
 });
 var Chunk54381 = require("./54381.js");
@@ -26,17 +26,17 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk673854 = require("./673854.js");
 let v = 440,
-  I = 80,
-  T = 4,
-  S = e => {
+  S = 80,
+  I = 4,
+  T = e => {
     let {
       onClose: t,
       listing: n,
       step: i,
       guildId: o
-    } = e, s = (0, h.YB)(o), c = (0, u.Z)(b.Xy), f = () => {
+    } = e, s = (0, m.YB)(o), c = (0, u.Z)(b.Xy), f = () => {
       if (i !== d.h8.CONFIRM) return null;
-      let e = null == n.image_asset ? true : (0, _._W)(n.application_id, n.image_asset, I);
+      let e = null == n.image_asset ? true : (0, p._W)(n.application_id, n.image_asset, S);
       return (0, r.jsx)("div", {
         className: O.tierImageContainer,
         children: (0, r.jsx)("img", {
@@ -45,10 +45,10 @@ let v = 440,
           className: O.tierImage
         })
       })
-    }, p = (() => {
+    }, _ = (() => {
       var e;
       if (c) return null;
-      let t = (null == s || null == (e = s.cover_image_asset) ? true : e.application_id) != null ? (0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, v) : true;
+      let t = (null == s || null == (e = s.cover_image_asset) ? true : e.application_id) != null ? (0, p._W)(s.cover_image_asset.application_id, s.cover_image_asset, v) : true;
       return null == t && i !== d.h8.CONFIRM ? null : null == t ? (0, r.jsx)("div", {
         className: O.headerImageEmpty
       }) : (0, r.jsx)("img", {
@@ -59,9 +59,9 @@ let v = 440,
     })();
     return (0, r.jsxs)("div", {
       className: a()(O.headerContainer, {
-        [O.headerEmpty]: c || null == p
+        [O.headerEmpty]: c || null == _
       }),
-      children: [p, f(), (0, r.jsx)(l.P3F, {
+      children: [_, f(), (0, r.jsx)(l.P3F, {
         className: O.closeContainer,
         onClick: () => t(false),
         "aria-label": y.intl.string(y.t.cpT0Cq),
@@ -78,7 +78,7 @@ let v = 440,
       onClose: t,
       listing: n,
       guildId: i
-    } = e, a = (0, o.e7)([f.Z], () => f.Z.getGuild(i), [i]), u = (0, m.Z)(i).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(p.rC).slice(0, null === u.length ? T : T - 1), _ = (0, g.Z)(d).slice(0, null === u.length ? T : T - 1), h = () => {
+    } = e, a = (0, o.e7)([f.Z], () => f.Z.getGuild(i), [i]), u = (0, h.Z)(i).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(_.rC).slice(0, null === u.length ? I : I - 1), p = (0, g.Z)(d).slice(0, null === u.length ? I : I - 1), m = () => {
       var e;
       if (0 === u.length) return null;
       let t = u[0];
@@ -128,7 +128,7 @@ let v = 440,
         children: y.intl.format(y.t.oi3gip, {
           tier: n.name
         })
-      }), _.length > 0 && (0, r.jsxs)(r.Fragment, {
+      }), p.length > 0 && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
@@ -136,13 +136,13 @@ let v = 440,
           children: y.intl.string(y.t.w0CQ01)
         }), (0, r.jsx)("div", {
           className: O.confirmationBenefits,
-          children: _.map(e => (0, r.jsx)(E.Z, {
+          children: p.map(e => (0, r.jsx)(E.Z, {
             benefit: e,
             guildId: i,
             onClick: () => t(true)
-          }, (0, p.ab)(e)))
+          }, (0, _.ab)(e)))
         })]
-      }), h(), (0, r.jsx)("div", {
+      }), m(), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: O.confirmationButton,
         children: (0, r.jsx)(s.zxk, {

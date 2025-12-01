@@ -2,7 +2,7 @@
 /** chunk id: 151662, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -52,10 +52,10 @@ function f(e) {
   l = s({}, l, t)
 }
 
-function _() {
+function p() {
   l = {}, c = null
 }
-class p extends(r = Chunk442837.ZP.Store) {
+class _ extends(r = Chunk442837.ZP.Store) {
   getEmailSettings() {
     return {
       categories: l,
@@ -63,10 +63,10 @@ class p extends(r = Chunk442837.ZP.Store) {
     }
   }
 }
-o(p, "displayName", "EmailSettingsStore");
-let h = new p(Chunk570140.Z, {
-  CONNECTION_OPEN: _,
-  LOGOUT: _,
+o(_, "displayName", "EmailSettingsStore");
+let m = new _(Chunk570140.Z, {
+  CONNECTION_OPEN: p,
+  LOGOUT: p,
   EMAIL_SETTINGS_FETCH_SUCCESS: u,
   EMAIL_SETTINGS_UPDATE_SUCCESS: d,
   EMAIL_SETTINGS_UPDATE: f

@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,13 +47,13 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -75,8 +75,8 @@ let E = Chunk473749.memo(function(e) {
     children: t,
     isOverlay: n,
     contextGuildId: a
-  } = e, f = m(e, ["children", "isOverlay", "contextGuildId"]);
-  let [p, g] = i.useState({
+  } = e, f = h(e, ["children", "isOverlay", "contextGuildId"]);
+  let [_, g] = i.useState({
     maskImage: "none"
   }), E = i.useRef(null), b = (0, l.Z)(() => {
     var e, t, r, i;
@@ -105,8 +105,8 @@ let E = Chunk473749.memo(function(e) {
       children: (0, r.jsx)("span", {
         className: o()(d.chipletContainer, !O && n && d.noPadding),
         ref: E,
-        style: p,
-        children: (0, r.jsx)(u.ZP, h(_({}, f), {
+        style: _,
+        children: (0, r.jsx)(u.ZP, m(p({}, f), {
           contextGuildId: a,
           className: o()(f.className, n && d.isOverlayTag),
           disableGuildProfile: true

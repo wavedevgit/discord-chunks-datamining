@@ -2,7 +2,7 @@
 /** chunk id: 736401, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk433517 = require("./433517.js"),
   Chunk147913 = require("./147913.js"),
@@ -26,7 +26,7 @@ function f() {
   Chunk433517.K.set(d, Date.now())
 }
 
-function _() {
+function p() {
   if (!Chunk918505.w8.getCurrentConfig({
       location: "b9eb97_1"
     }, {
@@ -38,13 +38,13 @@ function _() {
     n = Chunk433517.K.get(exports);
   return !(null != require && Date.now() - require < u)
 }
-class p extends Chunk147913.Z {
+class _ extends Chunk147913.Z {
   constructor(...e) {
     super(...e), c(this, "actions", {
       POST_CONNECTION_OPEN: () => this.onPostConnectionOpen()
     }), c(this, "onPostConnectionOpen", () => {
-      _() && (0, s.a)(l.Kq.APP_START, true, false) && f()
+      p() && (0, s.a)(l.Kq.APP_START, true, false) && f()
     })
   }
 }
-let h = new p
+let m = new _

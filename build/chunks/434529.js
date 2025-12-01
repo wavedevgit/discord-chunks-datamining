@@ -137,17 +137,17 @@ function f(e, t, n) {
     y: 0
   }, {
     width: f,
-    height: _
+    height: p
   } = t;
   return [o(c(u(l({
     top: r + d,
     left: i + a,
     bottom: true,
     right: true
-  }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof _ ? _ : 0))), n), s(t, n)]
+  }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof p ? p : 0))), n), s(t, n)]
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   let {
     top: r,
     right: i
@@ -159,17 +159,17 @@ function _(e, t, n) {
     y: 0
   }, {
     width: f,
-    height: _
+    height: p
   } = t;
   return [o(c(u(l({
     top: r + d,
     left: true,
     bottom: true,
     right: i - a
-  }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof _ ? _ : 0))), n), s(t, n)]
+  }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof p ? p : 0))), n), s(t, n)]
 }
 
-function p(e, t) {
+function _(e, t) {
   let n = {
     top: true,
     bottom: true,
@@ -179,7 +179,7 @@ function p(e, t) {
   return null != t.top && (n.top = e.top), null != t.bottom && (n.bottom = e.bottom), null != t.left && (n.left = e.left), null != t.right && (n.right = e.right), n
 }
 require.d(exports, {
-  BL: () => p,
+  BL: () => _,
   KR: () => i,
   Ox: () => s,
   PY: () => l,
@@ -187,7 +187,7 @@ require.d(exports, {
   jL: () => o,
   o4: () => f,
   ou: () => u,
-  uq: () => _,
+  uq: () => p,
   vS: () => d,
   w_: () => a
 }), require("./415506.js")

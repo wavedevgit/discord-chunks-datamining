@@ -2,7 +2,7 @@
 /** chunk id: 268010, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk410441 = require("./410441.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let I = (e, t, n) => {
+let S = (e, t, n) => {
     let r = v.t.LHF6D9,
       i = u.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n),
       a = e.extra.media_title;
@@ -34,35 +34,35 @@ let I = (e, t, n) => {
       episodeDescription: e.extra.media_subtitle
     }).replaceAll("*", "")
   },
-  T = (e, t) => v.intl.formatToPlainString(v.t.kCbfbN, {
+  I = (e, t) => v.intl.formatToPlainString(v.t.kCbfbN, {
     username: t.username,
     activity: e.extra.media_title
   }),
-  S = e => {
+  T = e => {
     let {
       channel: t,
       entry: n,
       onReaction: u,
-      onVoiceChannelPreview: S
+      onVoiceChannelPreview: T
     } = e, A = (0, a.e7)([l.default], () => l.default.getUser(n.author_id)), {
       largeImage: C
     } = (0, f.rv)({
       entry: n
     }), {
       primaryColor: N,
-      secondaryColor: R
-    } = (0, m.Z)(null == C ? true : C.src), P = (0, a.e7)([s.default], () => s.default.locale), D = (0, h.Z)(O.ABu.CRUNCHYROLL), w = (0, _.ap)(n.extra.media_assets_large_text), L = i.useCallback(e => {
-      if (null != A && (null == C ? true : C.src) != null) return (0, p.B)({
+      secondaryColor: P
+    } = (0, h.Z)(null == C ? true : C.src), R = (0, a.e7)([s.default], () => s.default.locale), w = (0, m.Z)(O.ABu.CRUNCHYROLL), D = (0, p.ap)(n.extra.media_assets_large_text), x = i.useCallback(e => {
+      if (null != A && (null == C ? true : C.src) != null) return (0, _.B)({
         entry: n,
         mediaImageSrc: null == C ? true : C.src,
         avatarSrc: A.getAvatarURL(null == t ? true : t.guild_id, 128),
-        description: I(n, t, A),
-        timestamp: (0, _.yh)(n, P),
-        episodeDescription: w,
-        colors: [N, R],
+        description: S(n, t, A),
+        timestamp: (0, p.yh)(n, R),
+        episodeDescription: D,
+        colors: [N, P],
         channelId: e
       })
-    }, [t, n, w, P, null == C ? true : C.src, N, R, A]), x = () => {
+    }, [t, n, D, R, null == C ? true : C.src, N, P, A]), L = () => {
       if (null == n.extra.url) return;
       let e = d.Z.safeParseWithQuery(n.extra.url);
       null != e && null != e.protocol && null != e.hostname && (0, c.q)({
@@ -74,11 +74,11 @@ let I = (e, t, n) => {
       children: [(0, r.jsx)(b.wG, {
         channel: t,
         entry: n,
-        userDescription: (0, _.kr)(n) ? v.t["LH+Z3y"] : v.t.YuKgml,
+        userDescription: (0, p.kr)(n) ? v.t["LH+Z3y"] : v.t.YuKgml,
         title: n.extra.media_title,
         subtitle: n.extra.media_subtitle,
         headerIcons: (0, r.jsx)(y.Z, {
-          onClick: D,
+          onClick: w,
           Icon: o.omf,
           "aria-label": v.intl.string(v.t.jdJYXw)
         }),
@@ -88,16 +88,16 @@ let I = (e, t, n) => {
             entry: n
           }, t))
         }),
-        onClickTitle: x,
-        onClickThumbnail: x
+        onClickTitle: L,
+        onClickThumbnail: L
       }), (0, r.jsx)(b.St, {
         children: (0, r.jsx)(b.WT, {
           onReaction: u,
-          onVoiceChannelPreview: S,
+          onVoiceChannelPreview: T,
           user: A,
           channel: t,
-          generateReactionImage: L,
-          reactionImageAltText: T(n, A),
+          generateReactionImage: x,
+          reactionImageAltText: I(n, A),
           entry: n
         })
       })]

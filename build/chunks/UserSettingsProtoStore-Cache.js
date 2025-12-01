@@ -2,7 +2,7 @@
 /** chunk id: 581883, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var r, Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -17,7 +17,7 @@ var r, Chunk512722 = require("./512722.js"),
   Chunk48481 = require("./48481.js"),
   Chunk526761 = require("./526761.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -65,23 +65,23 @@ function v(e) {
     proto: n,
     isDirty: r,
     cleanupFuncs: i
-  } = (0, p.xt)(E.proto, _.Z[h.yP.PRELOADED_USER_SETTINGS]);
+  } = (0, _.xt)(E.proto, p.Z[m.yP.PRELOADED_USER_SETTINGS]);
   r && A(E), E.proto = n, a()("string" != typeof E.proto, "UserSettingsProto cannot be a string"), E.editInfo.triggeredMigrations = r, E.editInfo.cleanupFuncs = i, E.editInfo.loaded = true, Object.values(y).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = false, e.editInfo.loading = false)
-  }), S()
-}
-
-function I() {
-  S()
-}
-
-function T() {
-  S(), Object.values(y).forEach(e => {
-    e.proto = e.ProtoClass.create(), e.editInfo = (0, h.JC)()
-  })
+  }), T()
 }
 
 function S() {
+  T()
+}
+
+function I() {
+  T(), Object.values(y).forEach(e => {
+    e.proto = e.ProtoClass.create(), e.editInfo = (0, m.JC)()
+  })
+}
+
+function T() {
   Object.values(y).forEach(e => {
     if (null != e.editInfo.timeout) {
       var t, n;
@@ -91,14 +91,14 @@ function S() {
 }
 
 function A(e) {
-  null != e.editInfo.timeout && clearTimeout(e.editInfo.timeout), e.editInfo = (0, h.JC)()
+  null != e.editInfo.timeout && clearTimeout(e.editInfo.timeout), e.editInfo = (0, m.JC)()
 }
 
 function C(e) {
   let {
     userSettingsProto: t
   } = e;
-  E.proto = (0, p.ac)(t), a()("string" != typeof E.proto, "UserSettingsProto cannot be a string")
+  E.proto = (0, _.ac)(t), a()("string" != typeof E.proto, "UserSettingsProto cannot be a string")
 }
 
 function N(e) {
@@ -113,10 +113,10 @@ function N(e) {
   } = e;
   O = !o;
   let s = y[n];
-  i && A(s), r ? (s.proto = (0, p.re)(s.ProtoClass, s.proto, t), a()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, a()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = true, s.editInfo.loading = false)
+  i && A(s), r ? (s.proto = (0, _.re)(s.ProtoClass, s.proto, t), a()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, a()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = true, s.editInfo.loading = false)
 }
 
-function R(e) {
+function P(e) {
   let {
     settings: {
       type: t,
@@ -128,31 +128,31 @@ function R(e) {
   return r.editInfo = g({}, r.editInfo, n), false
 }
 
-function P(e) {
+function R(e) {
   let {
     userSettings: t
   } = e;
-  D(t)
+  w(t)
 }
 
-function D(e) {
+function w(e) {
   null != e && s().forEach(y, (t, n) => {
     var r, i;
     let o = e[Number(n)];
     if (null == o) return;
     let s = null != (r = null == o ? true : o.proto) ? r : "",
-      l = (0, p.d5)(t.ProtoClass, s);
+      l = (0, _.d5)(t.ProtoClass, s);
     if (null == l) return;
     t.proto = l, a()("string" != typeof t.proto, "UserSettingsProto cannot be a string");
     let c = null != (i = null == o ? true : o.protoToSave) ? i : null;
     if (null == c || null == o.offlineEditDataVersion) return;
-    let u = (0, p.d5)(t.ProtoClass, c);
+    let u = (0, _.d5)(t.ProtoClass, c);
     null != u && (t.editInfo.protoToSave = u, t.editInfo.offlineEditDataVersion = o.offlineEditDataVersion)
   })
 }
-class w extends(r = Chunk442837.ZP.PersistedStore) {
+class D extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    D(e)
+    w(e)
   }
   getState() {
     return this.computeState()
@@ -160,9 +160,9 @@ class w extends(r = Chunk442837.ZP.PersistedStore) {
   computeState() {
     return s().mapValues(y, e => {
       let t = {
-        proto: (0, p.xU)(e.ProtoClass, e.proto)
+        proto: (0, _.xU)(e.ProtoClass, e.proto)
       };
-      return null != e.editInfo.offlineEditDataVersion && null != e.editInfo.protoToSave && (t.protoToSave = (0, p.xU)(e.ProtoClass, e.editInfo.protoToSave), t.offlineEditDataVersion = e.editInfo.offlineEditDataVersion), t
+      return null != e.editInfo.offlineEditDataVersion && null != e.editInfo.protoToSave && (t.protoToSave = (0, _.xU)(e.ProtoClass, e.editInfo.protoToSave), t.offlineEditDataVersion = e.editInfo.offlineEditDataVersion), t
     })
   }
   hasLoaded(e) {
@@ -214,15 +214,15 @@ class w extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (t = null == (e = this.settings.guilds) ? true : module.guilds) ? exports : null
   }
 }
-m(w, "displayName", "UserSettingsProtoStore"), m(w, "persistKey", "UserSettingsProtoStore-Cache");
-let L = new w(Chunk570140.Z, {
-  CACHE_LOADED: P,
+h(D, "displayName", "UserSettingsProtoStore"), h(D, "persistKey", "UserSettingsProtoStore-Cache");
+let x = new D(Chunk570140.Z, {
+  CACHE_LOADED: R,
   USER_SETTINGS_PROTO_UPDATE: N,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: N,
-  USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: R,
+  USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: P,
   CONNECTION_OPEN: v,
-  CONNECTION_CLOSED: I,
-  CONNECTION_RESUMED: I,
+  CONNECTION_CLOSED: S,
+  CONNECTION_RESUMED: S,
   OVERLAY_INITIALIZE: C,
-  LOGOUT: T
+  LOGOUT: I
 })

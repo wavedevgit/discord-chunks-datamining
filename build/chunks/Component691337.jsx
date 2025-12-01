@@ -2,7 +2,7 @@
 /** chunk id: 691337, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,7 +47,7 @@ class f extends Chunk473749.PureComponent {
         breadcrumbs: a,
         renderCustomBreadcrumb: l,
         separatorClassName: d
-      } = this.props, f = e.id === n, _ = () => this.handleClick(e), p = t === a.length - 1, h = null != l ? l(e, f) : (0, r.jsx)("span", {
+      } = this.props, f = e.id === n, p = () => this.handleClick(e), _ = t === a.length - 1, m = null != l ? l(e, f) : (0, r.jsx)("span", {
         className: o()(u.breadcrumb, {
           [u.activeBreadcrumb]: f,
           [u.interactiveBreadcrumb]: null != i
@@ -56,14 +56,14 @@ class f extends Chunk473749.PureComponent {
       });
       return (0, r.jsxs)("div", {
         className: o()(u.breadcrumbWrapper, {
-          [u.breadcrumbFinalWrapper]: p
+          [u.breadcrumbFinalWrapper]: _
         }),
         children: [null != i ? (0, r.jsx)(s.P3F, {
           tag: "span",
-          onClick: _,
+          onClick: p,
           className: u.breadcrumbClickWrapper,
-          children: h
-        }) : h, p ? null : (0, r.jsx)(c.Z, {
+          children: m
+        }) : m, _ ? null : (0, r.jsx)(c.Z, {
           className: o()(u.breadcrumbArrow, d),
           direction: c.Z.Directions.RIGHT
         })]
@@ -71,4 +71,4 @@ class f extends Chunk473749.PureComponent {
     })
   }
 }
-let _ = f
+let p = f

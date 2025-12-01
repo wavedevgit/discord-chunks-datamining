@@ -2,7 +2,7 @@
 /** chunk id: 883429, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -14,7 +14,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk228392 = require("./228392.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-async function _(e, t, n) {
+async function p(e, t, n) {
   try {
     return await e()
   } catch (e) {
@@ -28,7 +28,7 @@ async function _(e, t, n) {
     })
   }
 }
-let p = {
+let _ = {
   resort(e) {
     i.Z.dispatch({
       type: "RESORT_THREADS",
@@ -56,14 +56,14 @@ let p = {
       },
       rejectWithError: false
     });
-    _(() => n, f.intl.string(f.t.T8sBLJ), f.intl.string(f.t.imcb5u))
+    p(() => n, f.intl.string(f.t.T8sBLJ), f.intl.string(f.t.imcb5u))
   },
   deleteForumTag(e, t) {
     let n = r.tn.del({
       url: d.ANM.FORUM_TAG(e, t),
       rejectWithError: false
     });
-    _(() => n, f.intl.string(f.t["0ZkNDU"]), f.intl.string(f.t.imcb5u))
+    p(() => n, f.intl.string(f.t["0ZkNDU"]), f.intl.string(f.t.imcb5u))
   },
   updateForumPostTags: async (e, t) => (await o.Z.unarchiveThreadIfNecessary(e), r.tn.patch({
     url: d.ANM.CHANNEL(e),

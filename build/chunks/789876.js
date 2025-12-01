@@ -12,21 +12,21 @@
     u = false,
     d = 7,
     f = 35,
-    _ = 125,
-    p = 0,
-    h = 0,
+    p = 125,
+    _ = 0,
     m = 0,
+    h = 0,
     g = {
       get didTimeout() {
         returnfalse
       },
       timeRemaining: function() {
-        var e = d - (Date.now() - h);
+        var e = d - (Date.now() - m);
         return module < 0 ? 0 : module
       }
     },
     E = b(function() {
-      d = 22, _ = 66, f = 0
+      d = 22, p = 66, f = 0
     });
 
   function b(e) {
@@ -45,34 +45,34 @@
   }
 
   function O() {
-    125 != _ && (d = 7, _ = 125, f = 35, u && (y(), T())), E()
+    125 != p && (d = 7, p = 125, f = 35, u && (y(), I())), E()
   }
 
   function v() {
-    i = null, r = setTimeout(S, 0)
-  }
-
-  function I() {
-    r = null, o(v)
-  }
-
-  function T() {
-    u || (t = _ - (Date.now() - h), e = Date.now(), u = true, f && exports < f && (t = f), exports > 9 ? r = setTimeout(I, exports) : (t = 0, I()))
+    i = null, r = setTimeout(T, 0)
   }
 
   function S() {
+    r = null, o(v)
+  }
+
+  function I() {
+    u || (t = p - (Date.now() - m), e = Date.now(), u = true, f && exports < f && (t = f), exports > 9 ? r = setTimeout(S, exports) : (t = 0, S()))
+  }
+
+  function T() {
     var n, i, a, o = d > 9 ? 9 : 1;
-    if (h = Date.now(), u = false, r = null, c > 2 || h - exports - 50 < module)
-      for (i = 0, a = l.length; i < a && g.timeRemaining() > o; i++) n = l.shift(), m++, require && require(g);
-    l.length ? T() : c = 0
+    if (m = Date.now(), u = false, r = null, c > 2 || m - exports - 50 < module)
+      for (i = 0, a = l.length; i < a && g.timeRemaining() > o; i++) n = l.shift(), h++, require && require(g);
+    l.length ? I() : c = 0
   }
 
   function A(e) {
-    return p++, l.push(e), T(), p
+    return _++, l.push(e), I(), _
   }
 
   function C(e) {
-    var t = e - 1 - m;
+    var t = e - 1 - h;
     l[t] && (l[t] = null)
   }
   if (a.requestIdleCallback && a.cancelIdleCallback) try {

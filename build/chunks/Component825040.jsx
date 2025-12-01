@@ -2,7 +2,7 @@
 /** chunk id: 825040, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -51,48 +51,48 @@ function f(e, t) {
   return i
 }
 
-function _(e) {
+function p(e) {
   var {
     streamId: t,
     paused: n = false,
     onReady: a,
     onResize: c,
     className: f
-  } = e, _ = d(e, ["streamId", "paused", "onReady", "onResize", "className"]);
-  let p = i.useRef(null),
-    h = i.useRef({
+  } = e, p = d(e, ["streamId", "paused", "onReady", "onResize", "className"]);
+  let _ = i.useRef(null),
+    m = i.useRef({
       width: 0,
       height: 0
     });
   i.useLayoutEffect(() => {
-    let e = p.current;
+    let e = _.current;
     if (null != e) return (0, s.rY)(t), e.srcObject = (0, l.aG)(t), () => {
       (0, s.Bw)(t), e.srcObject = null, e.load()
     }
   }, [t]), i.useEffect(() => {
     var e, r;
-    return n ? (null == (e = p.current) || e.pause(), (0, s.Bw)(t)) : null == (r = p.current) || r.play().catch(() => {}), () => {
+    return n ? (null == (e = _.current) || e.pause(), (0, s.Bw)(t)) : null == (r = _.current) || r.play().catch(() => {}), () => {
       n && (0, s.rY)(t)
     }
   }, [n]);
-  let m = i.useCallback(() => {
+  let h = i.useCallback(() => {
     var e, t, n, r;
     let {
       width: i,
       height: a
-    } = h.current, o = null != (n = null == (e = p.current) ? true : e.videoWidth) ? n : 0, s = null != (r = null == (t = p.current) ? true : t.videoHeight) ? r : 0;
+    } = m.current, o = null != (n = null == (e = _.current) ? true : e.videoWidth) ? n : 0, s = null != (r = null == (t = _.current) ? true : t.videoHeight) ? r : 0;
     if (i !== o || a !== s) {
       let e = {
         width: o,
         height: s
       };
-      null == c || c(e), h.current = e
+      null == c || c(e), m.current = e
     }
   }, [c]);
   i.useLayoutEffect(() => {
-    let e = p.current;
-    if (null != e) return e.addEventListener("resize", m), () => e.removeEventListener("resize", m)
-  }, [m]);
+    let e = _.current;
+    if (null != e) return e.addEventListener("resize", h), () => e.removeEventListener("resize", h)
+  }, [h]);
   let g = i.useCallback(() => {
       null == a || a()
     }, [a]),
@@ -101,10 +101,10 @@ function _(e) {
     }, [n]);
   return (0, r.jsx)("video", u({
     className: o()("media-engine-video", f),
-    ref: p,
+    ref: _,
     autoPlay: true,
     onPause: E,
     onCanPlayThrough: g,
     muted: true
-  }, _))
+  }, p))
 }

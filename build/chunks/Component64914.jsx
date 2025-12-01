@@ -2,7 +2,7 @@
 /** chunk id: 64914, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => P,
+  ZP: () => R,
   fD: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +35,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,7 +60,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,25 +74,25 @@ function N() {
   return Chunk998502.ZP.getEnableHardwareAcceleration()
 }
 
-function R(e) {
-  (0, d.Y)("DesktopNativeUtils") ? (o.K.set(C, e), p.ZP.setEnableHardwareAcceleration(true)) : p.ZP.setEnableHardwareAcceleration(e)
+function P(e) {
+  (0, d.Y)("DesktopNativeUtils") ? (o.K.set(C, e), _.ZP.setEnableHardwareAcceleration(true)) : _.ZP.setEnableHardwareAcceleration(e)
 }
 
-function P() {
-  let [e] = Chunk473749.useState(() => N()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), d = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), p = Chunk473749.useCallback(e => {
-    m.bm.updateSetting(!e)
-  }, []), I = Chunk473749.useCallback(e => {
-    e ? (0, s.h7j)(e => (0, r.jsx)(E.Z, T({}, e))) : l.mc()
+function R() {
+  let [e] = Chunk473749.useState(() => N()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), d = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), _ = Chunk473749.useCallback(e => {
+    h.bm.updateSetting(!e)
   }, []), S = Chunk473749.useCallback(e => {
+    e ? (0, s.h7j)(e => (0, r.jsx)(E.Z, I({}, e))) : l.mc()
+  }, []), T = Chunk473749.useCallback(e => {
     (0, u.BV)(e, c.Z.USER_SETTINGS)
   }, []), C = Chunk473749.useCallback(e => {
     (0, s.h7j)(t => {
       let n = e ? v.intl.format(v.t.LYXRxL, {}) : v.intl.format(v.t.uDP3Kz, {});
-      return (0, r.jsx)(s.ConfirmModal, A(T({
+      return (0, r.jsx)(s.ConfirmModal, A(I({
         header: v.intl.string(v.t.aqpAvn),
         confirmText: v.intl.string(v.t.vT7ckk),
         cancelText: v.intl.string(v.t["ETE/oC"]),
-        onConfirm: () => R(e)
+        onConfirm: () => P(e)
       }, t), {
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
@@ -143,7 +143,7 @@ function P() {
           label: Chunk388032.intl.string(Chunk388032.t.erOqlh),
           description: Chunk388032.intl.string(Chunk388032.t["52hMnD"]),
           checked: null != Chunk433517,
-          onChange: I
+          onChange: S
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
       }), (0, Chunk54381.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN,
@@ -151,7 +151,7 @@ function P() {
           label: Chunk388032.intl.string(Chunk388032.t.qDZryG),
           description: Chunk388032.intl.string(Chunk388032.t["B/qU4K"]),
           checked: Chunk947851,
-          onChange: S
+          onChange: T
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
       })]
     })

@@ -29,34 +29,34 @@ function f() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "";
   return module
 }
-let _ = h(),
-  p = null;
+let p = m(),
+  _ = null;
 
-function h() {
+function m() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return module
 }
-_ && (p = setInterval(b, a));
-let m = new Map;
+p && (_ = setInterval(b, a));
+let h = new Map;
 
 function g(e) {
   return "anonymous" !== e.name && ("" === d || e.name === d) && (e.execCount > c || e.execTime > s)
 }
 
 function E() {
-  for (let [e, t] of m)
+  for (let [e, t] of h)
     if (g(exports)) returntrue;
   returnfalse
 }
 
 function b() {
-  for (let [e, t] of(E() || "" !== d ? y() : i.log("No violators found"), m)) exports.warned = false, exports.execTime = 0, exports.execCount = 0
+  for (let [e, t] of(E() || "" !== d ? y() : i.log("No violators found"), h)) exports.warned = false, exports.execTime = 0, exports.execCount = 0
 }
 let y = function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 34,
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 20,
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 20,
     r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : module + exports + require + 6;
-  for (let [a, o] of(i.log("|".padEnd(Chunk579092, "-") + "|"), i.log("| Consumers of `useStateFromStores` exceeding warning thresholds:".padEnd(Chunk579092, " ") + "|"), i.log("|".padEnd(Chunk579092, "-") + "|"), i.log("| ".concat("Function/Component Name".padEnd(module, " ")) + "| ".concat("Total Exec Time".padEnd(exports, " ")) + "| ".concat("Total Exec Count".padEnd(require, " "), "|")), i.log("|".padEnd(Chunk579092, "-") + "|"), m))("" !== d && a === d || g(o)) && i.log("| ".concat(a.padEnd(module, " ")) + "| ".concat((o.execTime.toFixed(2) + "ms").padEnd(exports, " ")) + "| ".concat(o.execCount.toString().padEnd(require, " "), "|"));
+  for (let [a, o] of(i.log("|".padEnd(Chunk579092, "-") + "|"), i.log("| Consumers of `useStateFromStores` exceeding warning thresholds:".padEnd(Chunk579092, " ") + "|"), i.log("|".padEnd(Chunk579092, "-") + "|"), i.log("| ".concat("Function/Component Name".padEnd(module, " ")) + "| ".concat("Total Exec Time".padEnd(exports, " ")) + "| ".concat("Total Exec Count".padEnd(require, " "), "|")), i.log("|".padEnd(Chunk579092, "-") + "|"), h))("" !== d && a === d || g(o)) && i.log("| ".concat(a.padEnd(module, " ")) + "| ".concat((o.execTime.toFixed(2) + "ms").padEnd(exports, " ")) + "| ".concat(o.execCount.toString().padEnd(require, " "), "|"));
   i.log("|".padEnd(Chunk579092, "-") + "|")
 }

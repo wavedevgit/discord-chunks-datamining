@@ -2,7 +2,7 @@
 /** chunk id: 216597, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => p
+  W: () => _
 });
 var Chunk455419 = require("./455419.js"),
   Chunk478906 = require("./478906.js"),
@@ -15,13 +15,13 @@ var Chunk455419 = require("./455419.js"),
   Chunk90809 = require("./90809.js"),
   Chunk218769 = require("./218769.js");
 
-function _(e) {
+function p(e) {
   return e && e.__esModule ? e.default : e
 }
 
-function p(e, t, n) {
-  var p, h;
-  let m, g, {
+function _(e, t, n) {
+  var _, m;
+  let h, g, {
       node: E
     } = e,
     b = E.props.allowsSorting,
@@ -42,20 +42,20 @@ function p(e, t, n) {
       ref: n
     }),
     {
-      focusableProps: I
+      focusableProps: S
     } = (0, u.kc)({}, n),
-    T = (null == (p = t.sortDescriptor) ? true : p.column) === E.key,
-    S = null == (h = t.sortDescriptor) ? true : h.direction;
-  E.props.allowsSorting && !(0, a.Dt)() && (g = T ? S : "none");
-  let A = (0, f.q)(_(i.Z), "@react-aria/table");
-  b && (m = `${A.format("sortable")}`, T && S && (0, a.Dt)() && (m = `${m}, ${A.format(S)}`));
-  let C = (0, o.P)(m),
+    I = (null == (_ = t.sortDescriptor) ? true : _.column) === E.key,
+    T = null == (m = t.sortDescriptor) ? true : m.direction;
+  E.props.allowsSorting && !(0, a.Dt)() && (g = I ? T : "none");
+  let A = (0, f.q)(p(i.Z), "@react-aria/table");
+  b && (h = `${A.format("sortable")}`, I && T && (0, a.Dt)() && (h = `${h}, ${A.format(T)}`));
+  let C = (0, o.P)(h),
     N = 0 === t.collection.size;
   return (0, l.useEffect)(() => {
     N && t.selectionManager.focusedKey === E.key && t.selectionManager.setFocusedKey(null)
   }, [N, t.selectionManager, E.key]), {
     columnHeaderProps: {
-      ...(0, s.d)(I, y, v, C, N ? {
+      ...(0, s.d)(S, y, v, C, N ? {
         tabIndex: false
       } : null),
       role: "columnheader",

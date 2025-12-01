@@ -25,10 +25,10 @@ function d(e, t, n) {
 }
 require("./334431.js");
 let f = 3 * Chunk70956.Z.Millis.DAY,
-  _ = 2 * Chunk70956.Z.Millis.DAY,
-  p = +Chunk70956.Z.Millis.HOUR;
+  p = 2 * Chunk70956.Z.Millis.DAY,
+  _ = +Chunk70956.Z.Millis.HOUR;
 
-function h(e) {
+function m(e) {
   let {
     channelId: t
   } = e;
@@ -45,7 +45,7 @@ function h(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   let {
     state: t
   } = e
@@ -53,7 +53,7 @@ function m(e) {
 
 function g() {
   var e;
-  return (null != (e = (0, Chunk33194.km)()) ? module : 0) > Date.now() - p
+  return (null != (e = (0, Chunk33194.km)()) ? module : 0) > Date.now() - _
 }
 
 function E(e) {
@@ -63,7 +63,7 @@ function E(e) {
 function b(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return !!(!n && g()) || (null != (t = (0, l._$)(e)) ? t : 0) > Date.now() - _
+  return !!(!n && g()) || (null != (t = (0, l._$)(e)) ? t : 0) > Date.now() - p
 }
 
 function y(e) {
@@ -77,8 +77,8 @@ class O extends Chunk147913.Z {
   }
   constructor(...e) {
     super(...e), d(this, "actions", {
-      CHANNEL_SELECT: h,
-      APP_STATE_UPDATE: m
+      CHANNEL_SELECT: m,
+      APP_STATE_UPDATE: h
     })
   }
 }

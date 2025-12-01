@@ -2,7 +2,7 @@
 /** chunk id: 325100, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ak: () => _,
+  Ak: () => p,
   uH: () => f
 }), require("./35282.js");
 var Chunk593473 = require("./593473.js"),
@@ -67,7 +67,7 @@ let c = e => {
     } = (0, r.parse)(n);
     return d(o, a, s)
   },
-  _ = function(e) {
+  p = function(e) {
     let {
       location: t
     } = e, n = arguments.length > 1 && true !== arguments[1] && arguments[1], i = window.location.pathname, {

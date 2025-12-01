@@ -51,10 +51,10 @@ var d = function(e) {
   return e[e.NotResolved = 0] = "NotResolved", e[e.Resolving = 1] = "Resolving", e[e.Resolved = 2] = "Resolved", e[e.Invalid = 3] = "Invalid", e
 }({});
 let f = 0,
-  _ = null,
-  p = {};
+  p = null,
+  _ = {};
 
-function h() {
+function m() {
   0 === f && (f = 1, (0, Chunk865427.Ce)().then(e => {
     a.Z.dispatch({
       type: "CURRENT_BUILD_OVERRIDE_RESOLVED",
@@ -63,18 +63,18 @@ function h() {
   }))
 }
 
-function m(e) {
+function h(e) {
   let {
     overrides: t
   } = e;
-  f = 2, _ = t
+  f = 2, p = t
 }
 
 function g(e) {
-  if (e in p) return;
+  if (e in _) return;
   let t = (0, o.r4)(e);
   if (null == t) {
-    p = u(l({}, p), {
+    _ = u(l({}, _), {
       [e]: {
         url: e,
         state: 3
@@ -82,7 +82,7 @@ function g(e) {
     });
     return
   }
-  p = u(l({}, p), {
+  _ = u(l({}, _), {
     [e]: {
       url: e,
       validatedURL: t.url,
@@ -103,8 +103,8 @@ function E(e) {
     url: t,
     override: n
   } = e, r = null == n ? 3 : 2;
-  p = u(l({}, p), {
-    [t]: u(l({}, p[t]), {
+  _ = u(l({}, _), {
+    [t]: u(l({}, _[t]), {
       state: r,
       override: n
     })
@@ -112,20 +112,20 @@ function E(e) {
 }
 class b extends(r = Chunk442837.ZP.Store) {
   getCurrentBuildOverride() {
-    return h(), {
+    return m(), {
       state: f,
-      overrides: _
+      overrides: p
     }
   }
   getBuildOverride(e) {
-    return g(e), p[e]
+    return g(e), _[e]
   }
   getBuildOverrides() {
-    return p
+    return _
   }
 }
 s(b, "displayName", "BuildOverrideStore");
 let y = new b(Chunk570140.Z, {
   BUILD_OVERRIDE_RESOLVED: E,
-  CURRENT_BUILD_OVERRIDE_RESOLVED: m
+  CURRENT_BUILD_OVERRIDE_RESOLVED: h
 })

@@ -20,20 +20,20 @@ function f(e) {
     labelHook: n,
     count: a,
     dismissNotice: f,
-    className: _,
-    noticeType: p
-  } = e, h = null != f;
+    className: p,
+    noticeType: _
+  } = e, m = null != f;
   i.useEffect(() => {
-    (0, l.l)(p, c.up.VIEWED)
-  }, [p]);
-  let m = i.useCallback(() => {
-      null != f && (f(), (0, l.l)(p, c.up.DISMISS))
-    }, [p, f]),
+    (0, l.l)(_, c.up.VIEWED)
+  }, [_]);
+  let h = i.useCallback(() => {
+      null != f && (f(), (0, l.l)(_, c.up.DISMISS))
+    }, [_, f]),
     g = i.useCallback(() => {
-      n(), (0, l.l)(p, c.up.LEARN_MORE)
-    }, [p, n]);
+      n(), (0, l.l)(_, c.up.LEARN_MORE)
+    }, [_, n]);
   return (0, r.jsxs)("div", {
-    className: o()(d.safetySettingsNotice, _),
+    className: o()(d.safetySettingsNotice, p),
     children: [(0, r.jsx)(s.d3s, {
       size: "md"
     }), (0, r.jsx)(s.Text, {
@@ -51,9 +51,9 @@ function f(e) {
           children: e
         }, t)
       })
-    }), h && (0, r.jsx)(s.P3F, {
+    }), m && (0, r.jsx)(s.P3F, {
       className: d.closeButton,
-      onClick: m,
+      onClick: h,
       children: (0, r.jsx)(s.Dio, {})
     })]
   })

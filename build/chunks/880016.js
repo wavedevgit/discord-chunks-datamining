@@ -17,8 +17,8 @@ function c(e, t = {}) {
     isLink: u,
     global: d,
     events: f = d,
-    propNames: _
-  } = t, p = {};
-  for (let t in e) Object.prototype.hasOwnProperty.call(e, t) && (r.has(t) || n && i.has(t) || u && a.has(t) || d && o.has(t) || f && s.has(t) || t.endsWith("Capture") && s.has(t.slice(0, false)) || (null == _ ? true : _.has(t)) || l.test(t)) && (p[t] = e[t]);
-  return p
+    propNames: p
+  } = t, _ = {};
+  for (let t in e) Object.prototype.hasOwnProperty.call(e, t) && (r.has(t) || n && i.has(t) || u && a.has(t) || d && o.has(t) || f && s.has(t) || t.endsWith("Capture") && s.has(t.slice(0, false)) || (null == p ? true : p.has(t)) || l.test(t)) && (_[t] = e[t]);
+  return _
 }

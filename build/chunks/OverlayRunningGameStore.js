@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -40,7 +40,7 @@ class f extends(i = Chunk442837.ZP.Store) {
   }
 }
 c(f, "displayName", "OverlayRunningGameStore");
-let _ = new f(Chunk570140.Z, {
+let p = new f(Chunk570140.Z, {
   OVERLAY_INITIALIZE: u,
   OVERLAY_SET_ASSOCIATED_GAME: d
 })

@@ -53,21 +53,21 @@ function y() {
       goreContentFriendDm: O,
       goreContentNonFriendDm: v
     } = (0, Chunk294602.K)(),
-    I = e => {
+    S = e => {
       let t = Object.values(e);
       if ((0, s.Ks)() && t.includes(i.Q4.SHOW)) return void a.Z.showAgeVerificationGetStartedModal({
         entryPoint: o.cU.SENSITIVE_MEDIA_FILTER_SETTINGS
       });
       (0, l.Jr)(e)
     },
-    T = [{
+    I = [{
       value: Chunk524437.Q4.BLUR,
       label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }, {
       value: Chunk524437.Q4.BLOCK,
       label: Chunk388032.intl.string(Chunk388032.t["D/157Y"])
     }],
-    S = [{
+    T = [{
       value: Chunk524437.Q4.BLUR,
       label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }],
@@ -75,7 +75,7 @@ function y() {
       value: Chunk524437.Q4.SHOW,
       label: Chunk388032.intl.string(Chunk388032.t["5k5OFp"])
     };
-  exports && (T.unshift(A), S.unshift(A));
+  exports && (I.unshift(A), T.unshift(A));
   let C = {
     isDisabled: E,
     tooltipText: require ? Chunk388032.intl.string(Chunk744038.default["6Af/cw"]) : true
@@ -86,25 +86,25 @@ function y() {
     children: [(0, Chunk54381.jsx)(Chunk947707.Z, b({
       title: Chunk388032.intl.string(Chunk388032.t["+uI23H"]),
       value: O,
-      onChange: e => I({
+      onChange: e => S({
         goreContentFriendDm: e
       }),
-      options: T
+      options: I
     }, C)), (0, Chunk54381.jsx)(Chunk947707.Z, b({
       title: Chunk388032.intl.string(Chunk388032.t["Yh+HX1"]),
       value: v,
-      onChange: e => I({
+      onChange: e => S({
         goreContentNonFriendDm: e
       }),
-      options: T
+      options: I
     }, C)), (0, Chunk54381.jsx)(Chunk947707.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["FP+a42"]),
       value: y,
-      onChange: e => I({
+      onChange: e => S({
         goreContentGuilds: e
       }),
       isDisabled: !exports || E,
-      options: S,
+      options: T,
       tooltipText: require ? Chunk388032.intl.string(Chunk744038.default["6Af/cw"]) : true
     })]
   })

@@ -11,8 +11,8 @@ var Chunk556585 = require("./556585.js"),
   u = Chunk46015(l.delete),
   d = Chunk46015(l.forEach),
   f = Chunk46015([].push),
-  _ = new s("a=1&a=2&b=3");
-_.delete("a", 1), _.delete("b", true), _ + "" != "a=2" && Chunk556585(l, "delete", function(e) {
+  p = new s("a=1&a=2&b=3");
+p.delete("a", 1), p.delete("b", true), p + "" != "a=2" && Chunk556585(l, "delete", function(e) {
   var t, n = arguments.length,
     r = n < 2 ? true : arguments[1];
   if (n && true === r) return u(this, e);
@@ -23,8 +23,8 @@ _.delete("a", 1), _.delete("b", true), _ + "" != "a=2" && Chunk556585(l, "delete
       value: e
     })
   }), o(n, 1);
-  for (var s = a(e), l = a(r), _ = 0, p = 0, h = false, m = i.length; _ < m;) t = i[_++], h || t.key === s ? (h = true, u(this, t.key)) : p++;
-  for (; p < m;)((t = i[p++]).key !== s || t.value !== l) && c(this, t.key, t.value)
+  for (var s = a(e), l = a(r), p = 0, _ = 0, m = false, h = i.length; p < h;) t = i[p++], m || t.key === s ? (m = true, u(this, t.key)) : _++;
+  for (; _ < h;)((t = i[_++]).key !== s || t.value !== l) && c(this, t.key, t.value)
 }, {
   enumerable: true,
   unsafe: true

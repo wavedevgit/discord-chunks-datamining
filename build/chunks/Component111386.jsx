@@ -2,7 +2,7 @@
 /** chunk id: 111386, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,7 +31,7 @@ let f = () => (0, Chunk54381.jsxs)("div", {
       })]
     })]
   }),
-  _ = e => {
+  p = e => {
     let {
       children: t
     } = e, [n] = (0, l.US)([a.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP]), [s, c] = i.useState(false);

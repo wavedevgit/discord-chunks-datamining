@@ -2,9 +2,9 @@
 /** chunk id: 176412, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Bm: () => P,
-  P7: () => R,
-  X: () => D,
+  Bm: () => R,
+  P7: () => P,
+  X: () => w,
   ae: () => N
 });
 var Chunk473749 = require("./473749.js"),
@@ -29,7 +29,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,7 +38,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,7 +49,7 @@ function S(e, t) {
   return n
 }
 let A = function(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
   }(function(e) {
@@ -59,13 +59,13 @@ let A = function(e, t) {
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        T(e, t, n[t])
+        I(e, t, n[t])
       })
     }
     return e
   }({}, Chunk428595.Z.RULES.commandMention), {
     parse: (e, t, n) => ({
-      content: h.Z.RULES.commandMention.parse(e, t, n).content
+      content: m.Z.RULES.commandMention.parse(e, t, n).content
     })
   }),
   C = a().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
@@ -76,36 +76,36 @@ let A = function(e, t) {
   })]), ["commandMention", "customEmoji", "em", "emoji", "emoticon", "highlight", "inlineCode", "looseEm", "s", "strong", "text", "timestamp", "u", "spoiler"]),
   N = Chunk25209.w4(C);
 
-function R(e) {
+function P(e) {
   let {
     context: t,
     application: n,
     location: i,
     sectionName: a,
     commandName: s,
-    autoDismissOnClick: p = true,
-    launchingComponentId: h,
-    submitting: m = false,
+    autoDismissOnClick: _ = true,
+    launchingComponentId: m,
+    submitting: h = false,
     fetchesApplication: g = true,
-    onConfirmActivityLaunchChecksAlertOpen: T
-  } = e, S = (0, l.O)(), A = (0, c.Qv)({
+    onConfirmActivityLaunchChecksAlertOpen: I
+  } = e, T = (0, l.O)(), A = (0, c.Qv)({
     context: t,
     applicationId: n.id,
     fetchesApplication: g
-  }), C = (0, O.Q)(A), N = (0, o.e7)([b.Z], () => b.Z.entrypoint()), R = r.useMemo(() => {
+  }), C = (0, O.Q)(A), N = (0, o.e7)([b.Z], () => b.Z.entrypoint()), P = r.useMemo(() => {
     var e, r, i;
     if ("channel" !== t.type) return null != (i = null == (e = n.bot) ? true : e.id) ? i : null == (r = (0, f.If)(t, n.id).descriptor) ? true : r.botId
-  }, [t, n.id, n.bot]), P = (0, c.w1)({
+  }, [t, n.id, n.bot]), R = (0, c.w1)({
     application: n,
-    botUserIdForAppDM: R,
+    botUserIdForAppDM: P,
     embeddedActivitiesManager: u.Z,
     context: t,
-    locationObject: S.location,
+    locationObject: T.location,
     onActivityItemSelectedProp: e => {
       let {
         applicationId: t
       } = e;
-      p && E.y(y.ti.ACTIVITY), (0, d.yw)(v.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
+      _ && E.y(y.ti.ACTIVITY), (0, d.yw)(v.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
         location: i,
         application_id: t,
         section_name: a,
@@ -113,22 +113,22 @@ function R(e) {
         source: N
       })
     },
-    launchingComponentId: h,
-    commandOrigin: _.bB.APPLICATION_LAUNCHER,
+    launchingComponentId: m,
+    commandOrigin: p.bB.APPLICATION_LAUNCHER,
     sectionName: a,
     source: N,
     fetchesApplication: g,
-    onConfirmActivityLaunchChecksAlertOpen: T
-  }), D = "primary", w = null != s ? s : I.intl.string(I.t.zKX8Nu);
-  return C === c.JS.JOIN ? (D = "active", w = I.intl.string(I.t.d9PsMj)) : C !== c.JS.LEAVE || m || (D = "critical-primary", w = I.intl.string(I.t["Hi1/aQ"])), {
-    onActivityItemSelected: P,
+    onConfirmActivityLaunchChecksAlertOpen: I
+  }), w = "primary", D = null != s ? s : S.intl.string(S.t.zKX8Nu);
+  return C === c.JS.JOIN ? (w = "active", D = S.intl.string(S.t.d9PsMj)) : C !== c.JS.LEAVE || h || (w = "critical-primary", D = S.intl.string(S.t["Hi1/aQ"])), {
+    onActivityItemSelected: R,
     activityAction: C,
-    buttonVariant: D,
-    buttonText: w
+    buttonVariant: w,
+    buttonText: D
   }
 }
 
-function P(e, t) {
+function R(e, t) {
   let n = b.Z.entrypoint(),
     a = r.useMemo(() => (0, i.debounce)((e, t) => {
       (0, d.yw)(v.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
@@ -144,7 +144,7 @@ function P(e, t) {
   }, [e, t, n, a])
 }
 
-function D(e) {
+function w(e) {
   g.S.dispatchToLastSubscribed(v.CkL.OPEN_APP_LAUNCHER, {
     applicationId: e
   })

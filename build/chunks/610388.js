@@ -34,10 +34,10 @@ let i = {
     getShortAt: u,
     getLongAt: d,
     getRationalAt: f,
-    getUndefinedAt: _,
-    getSlongAt: p,
-    getSrationalAt: h,
-    getIfdPointerAt: m,
+    getUndefinedAt: p,
+    getSlongAt: _,
+    getSrationalAt: m,
+    getIfdPointerAt: h,
     typeSizes: i,
     tagTypes: a,
     getTypeSize: g
@@ -67,19 +67,19 @@ function f(e, t, n) {
   return [d(e, t, n), d(e, t + 4, n)]
 }
 
-function _(e, t) {
+function p(e, t) {
   return l(e, t)
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   return e.getInt32(t, n === r.Z.LITTLE_ENDIAN)
 }
 
-function h(e, t, n) {
-  return [p(e, t, n), p(e, t + 4, n)]
+function m(e, t, n) {
+  return [_(e, t, n), _(e, t + 4, n)]
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   return d(e, t, n)
 }
 

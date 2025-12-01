@@ -2,7 +2,7 @@
 /** chunk id: 896797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -25,20 +25,20 @@ let u = {
   d = u,
   f = "LAST_VIEWED_PATH";
 
-function _(e) {
+function p(e) {
   let {
     path: t
   } = e;
   return d.lastViewedPath = t, true
 }
 
-function p(e) {
+function _(e) {
   let {
     path: t
   } = e;
   return d.lastViewedNonVoicePath = t, true
 }
-class h extends(r = Chunk442837.ZP.PersistedStore) {
+class m extends(r = Chunk442837.ZP.PersistedStore) {
   initialize() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : u;
     d = null != module ? module : u
@@ -65,13 +65,13 @@ class h extends(r = Chunk442837.ZP.PersistedStore) {
     return d
   }
 }
-c(h, "displayName", "DefaultRouteStore"), c(h, "persistKey", "DefaultRouteStore"), c(h, "migrations", [() => {
+c(m, "displayName", "DefaultRouteStore"), c(m, "persistKey", "DefaultRouteStore"), c(m, "migrations", [() => {
   let e = Chunk433517.K.get(f, null);
   return Chunk433517.K.remove(f), {
     lastViewedPath: module
   }
 }]);
-let m = new h(Chunk570140.Z, {
-  SAVE_LAST_ROUTE: _,
-  SAVE_LAST_NON_VOICE_ROUTE: p
+let h = new m(Chunk570140.Z, {
+  SAVE_LAST_ROUTE: p,
+  SAVE_LAST_NON_VOICE_ROUTE: _
 })

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => g,
-  y: () => m
+  y: () => h
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,16 +45,16 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var p = function(e) {
+var _ = function(e) {
   return e[e.ABOVE = 0] = "ABOVE", e[e.VISIBLE = 1] = "VISIBLE", e[e.BELOW = 2] = "BELOW", e
-}(p || {});
+}(_ || {});
 
-function h(e, t) {
+function m(e, t) {
   return {
     toValue: e,
     duration: null != t ? t : 300,
@@ -62,7 +62,7 @@ function h(e, t) {
   }
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   if (null != t) {
     let r = Math.ceil(Math.log10(e + 1));
     return null != n && n > 0 ? Math.min(r, n) * t : r * t
@@ -94,7 +94,7 @@ class g extends(r = Chunk473749.PureComponent) {
       forcePosition: r,
       animationSpeed: i
     } = this.props;
-    this.prevAnimate.setValue(1), null != r ? 0 === r ? (this.currAnimate.setValue(0), n = 2) : 2 === r && (this.currAnimate.setValue(2), n = 0) : e > t ? (this.currAnimate.setValue(0), n = 2) : (this.currAnimate.setValue(2), n = 0), l.Z.parallel([l.Z.timing(this.prevAnimate, h(n, i)), l.Z.timing(this.currAnimate, h(1, i))]).start(this.animateNext)
+    this.prevAnimate.setValue(1), null != r ? 0 === r ? (this.currAnimate.setValue(0), n = 2) : 2 === r && (this.currAnimate.setValue(2), n = 0) : e > t ? (this.currAnimate.setValue(0), n = 2) : (this.currAnimate.setValue(2), n = 0), l.Z.parallel([l.Z.timing(this.prevAnimate, m(n, i)), l.Z.timing(this.currAnimate, m(1, i))]).start(this.animateNext)
   }
   getAnimatedStyle(e) {
     let {
@@ -121,7 +121,7 @@ class g extends(r = Chunk473749.PureComponent) {
       digitWidth: t,
       padStartLength: n
     } = this.props;
-    return m(e, t, n)
+    return h(e, t, n)
   }
   padValue(e) {
     let {
@@ -137,7 +137,7 @@ class g extends(r = Chunk473749.PureComponent) {
       color: n,
       formatString: r
     } = this.props, a = s().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
-    if (null == module) return (0, Chunk54381.jsx)("div", _(d({}, Chunk473749), {
+    if (null == module) return (0, Chunk54381.jsx)("div", p(d({}, Chunk473749), {
       style: {
         color: require,
         minWidth: this.getMinWidth(exports)
@@ -145,7 +145,7 @@ class g extends(r = Chunk473749.PureComponent) {
       children: null != r ? r(this.padValue(exports)) : this.padValue(exports)
     }));
     let o = Math.max(module, exports);
-    return (0, Chunk54381.jsxs)("div", _(d({}, Chunk473749), {
+    return (0, Chunk54381.jsxs)("div", p(d({}, Chunk473749), {
       style: {
         color: require,
         position: "relative",
@@ -190,4 +190,4 @@ class g extends(r = Chunk473749.PureComponent) {
     }, this.prevAnimate = new l.Z.Value(0), this.currAnimate = new l.Z.Value(1)
   }
 }
-u(g, "Positions", p)
+u(g, "Positions", _)

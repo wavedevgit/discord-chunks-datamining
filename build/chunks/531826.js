@@ -2,9 +2,9 @@
 /** chunk id: 531826, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => _,
-  jA: () => h,
-  sU: () => m
+  ZP: () => p,
+  jA: () => m,
+  sU: () => h
 }), require("./997841.js");
 var Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,7 +17,7 @@ var Chunk95015 = require("./95015.js"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e) {
+function p(e) {
   var t;
   let {
     application: n,
@@ -29,36 +29,36 @@ function _(e) {
   }
 }
 
-function p(e) {
+function _(e) {
   let {
     channelId: t,
     EmbeddedActivitiesStore: n,
     ApplicationStore: r
   } = e, i = n.getSelfEmbeddedActivityForChannel(t), a = r.getApplication(null == i ? true : i.applicationId);
-  if (null != a) return _({
+  if (null != a) return p({
     application: a,
     channelId: t
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     applicationId: t
   } = e, n = l.ZP.getCurrentEmbeddedActivity();
   if (null == n || n.applicationId !== t) return;
   let r = a.Z.getApplication(t);
-  if (null != r) return _({
+  if (null != r) return p({
     application: r,
     channelId: (0, c.p)(n.location)
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     channelId: t
   } = e;
   return (0, i.e7)([o.Z, l.ZP, a.Z], () => {
-    let e = p({
+    let e = _({
       channelId: null != t ? t : l.ZP.getConnectedActivityChannelId(),
       EmbeddedActivitiesStore: l.ZP,
       ApplicationStore: a.Z

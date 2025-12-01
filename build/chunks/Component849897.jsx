@@ -2,7 +2,7 @@
 /** chunk id: 849897, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,10 +18,10 @@ function f(e) {
   return "".concat(u.ME).concat(e.name)
 }
 
-function _(e) {
+function p(e) {
   return "<@$".concat(e.id, ">")
 }
-let p = {
+let _ = {
   autocompleteInputElementType: "gameMentionInput",
   stores: [Chunk77498.Z],
   matches: (e, t, n, r, i) => true,
@@ -45,11 +45,11 @@ let p = {
       selected: n === t,
       index: t,
       game: e
-    }, e.id)), _ = d.t["/U2VW+"], p = d.intl.string(d.t.URyqtP);
+    }, e.id)), p = d.t["/U2VW+"], _ = d.intl.string(d.t.URyqtP);
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, l.gm)({
-        titleWithQuery: _,
-        titleWithoutQuery: p,
+        titleWithQuery: p,
+        titleWithoutQuery: _,
         query: o,
         getQuery: e => "".concat(u.ME).concat(e)
       }), f]
@@ -63,7 +63,7 @@ let p = {
       index: n,
       options: r
     } = e, i = t[n];
-    return r.replaceInlineInput("gameMentionInput", f(i), _(i)), {
+    return r.replaceInlineInput("gameMentionInput", f(i), p(i)), {
       type: c.z2.GAME_MENTION,
       metadata: {
         applicationId: i.id

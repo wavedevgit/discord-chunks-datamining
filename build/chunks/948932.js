@@ -37,34 +37,34 @@ function d(e) {
       era: u(n) || u(c),
       timeZone: e.timeZone
     }),
-    p = "anchorDate" in e ? e.anchorDate : null;
+    _ = "anchorDate" in e ? e.anchorDate : null;
   return (0, s.useMemo)(() => {
-    if (!p && n && c)
+    if (!_ && n && c)
       if ((0, i.KC)(n, c)) {
         let t = f.format(n.toDate(e.timeZone));
         return d.format("selectedDateDescription", {
           date: t
         })
       } else {
-        let t = _(f, d, n, c, e.timeZone);
+        let t = p(f, d, n, c, e.timeZone);
         return d.format("selectedRangeDescription", {
           dateRange: t
         })
       } return ""
-  }, [n, c, p, e.timeZone, d, f])
+  }, [n, c, _, e.timeZone, d, f])
 }
 
 function f(e, t, n, c) {
   let d = (0, a.q)(l(r.Z), "@react-aria/calendar"),
     f = u(e) || u(t),
-    p = (0, o.a)({
+    _ = (0, o.a)({
       month: "long",
       year: "numeric",
       era: f,
       calendar: e.calendar.identifier,
       timeZone: n
     }),
-    h = (0, o.a)({
+    m = (0, o.a)({
       month: "long",
       year: "numeric",
       day: "numeric",
@@ -76,14 +76,14 @@ function f(e, t, n, c) {
     if ((0, i.KC)(e, (0, i.Nm)(e))) {
       let r = e,
         a = t;
-      if (e.calendar.getFormattableMonth && (r = e.calendar.getFormattableMonth(e)), t.calendar.getFormattableMonth && (a = t.calendar.getFormattableMonth(t)), (0, i.KC)(t, (0, i.Vf)(e))) return p.format(r.toDate(n));
-      if ((0, i.KC)(t, (0, i.Vf)(t))) return c ? _(p, d, r, a, n) : p.formatRange(r.toDate(n), a.toDate(n))
+      if (e.calendar.getFormattableMonth && (r = e.calendar.getFormattableMonth(e)), t.calendar.getFormattableMonth && (a = t.calendar.getFormattableMonth(t)), (0, i.KC)(t, (0, i.Vf)(e))) return _.format(r.toDate(n));
+      if ((0, i.KC)(t, (0, i.Vf)(t))) return c ? p(_, d, r, a, n) : _.formatRange(r.toDate(n), a.toDate(n))
     }
-    return c ? _(h, d, e, t, n) : h.formatRange(e.toDate(n), t.toDate(n))
-  }, [e, t, p, h, d, n, c])
+    return c ? p(m, d, e, t, n) : m.formatRange(e.toDate(n), t.toDate(n))
+  }, [e, t, _, m, d, n, c])
 }
 
-function _(e, t, n, r, i) {
+function p(e, t, n, r, i) {
   let a = e.formatRangeToParts(n.toDate(i), r.toDate(i)),
     o = false;
   for (let e = 0; e < a.length; e++) {

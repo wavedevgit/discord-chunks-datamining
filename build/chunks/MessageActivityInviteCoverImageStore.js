@@ -2,7 +2,7 @@
 /** chunk id: 139212, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var r, Chunk31775 = require("./31775.js"),
   a = require.n(Chunk31775),
@@ -39,6 +39,6 @@ class f extends(r = Chunk442837.ZP.Store) {
   }
 }
 l(f, "displayName", "MessageActivityInviteCoverImageStore");
-let _ = new f(Chunk570140.Z, {
+let p = new f(Chunk570140.Z, {
   SET_MESSAGE_ACTIVITY_INVITE_COVER_IMAGE_URL: d
 })

@@ -33,8 +33,8 @@ var Chunk126182 = require("./126182.js"),
   Chunk40375 = require("./40375.js"),
   Chunk65183 = require("./65183.js"),
   Chunk423331 = require("./423331.js"),
-  h = Chunk40375("draft_tree_data_support"),
-  m = h ? Chunk309987 : Chunk117242,
+  m = Chunk40375("draft_tree_data_support"),
+  h = m ? Chunk309987 : Chunk117242,
   g = Chunk65183.List,
   E = Chunk65183.Repeat;
 module.exports = {
@@ -43,9 +43,9 @@ module.exports = {
       s = e.getSelection(),
       l = c.removeRange(i, s, "backward"),
       f = l.getSelectionAfter(),
-      _ = c.splitBlock(l, f),
-      p = _.getSelectionAfter(),
-      b = c.setBlockType(_, p, "atomic"),
+      p = c.splitBlock(l, f),
+      _ = p.getSelectionAfter(),
+      b = c.setBlockType(p, _, "atomic"),
       y = o.create({
         entity: t
       }),
@@ -59,17 +59,17 @@ module.exports = {
         key: d(),
         type: "unstyled"
       };
-    h && (O = r({}, O, {
+    m && (O = r({}, O, {
       nextSibling: v.key
     }), v = r({}, v, {
       prevSibling: O.key
     }));
-    var I = [new m(O), new m(v)],
-      T = a.createFromArray(I),
-      S = c.replaceWithFragment(b, p, T),
-      A = S.merge({
+    var S = [new h(O), new h(v)],
+      I = a.createFromArray(S),
+      T = c.replaceWithFragment(b, _, I),
+      A = T.merge({
         selectionBefore: s,
-        selectionAfter: S.getSelectionAfter().set("hasFocus", true)
+        selectionAfter: T.getSelectionAfter().set("hasFocus", true)
       });
     return u.push(e, A, "insert-fragment")
   },
@@ -78,18 +78,18 @@ module.exports = {
       o = e.getSelection();
     if ("before" === r || "after" === r) {
       var s = a.getBlockForKey("before" === r ? n.getStartKey() : n.getEndKey());
-      i = p(a, t, s, r)
+      i = _(a, t, s, r)
     } else {
       var l = c.removeRange(a, n, "backward"),
         d = l.getSelectionAfter(),
         f = l.getBlockForKey(d.getFocusKey());
-      if (0 === d.getStartOffset()) i = p(l, t, f, "before");
-      else if (d.getEndOffset() === f.getLength()) i = p(l, t, f, "after");
+      if (0 === d.getStartOffset()) i = _(l, t, f, "before");
+      else if (d.getEndOffset() === f.getLength()) i = _(l, t, f, "after");
       else {
-        var _ = c.splitBlock(l, d),
-          h = _.getSelectionAfter(),
-          m = _.getBlockForKey(h.getFocusKey());
-        i = p(_, t, m, "before")
+        var p = c.splitBlock(l, d),
+          m = p.getSelectionAfter(),
+          h = p.getBlockForKey(m.getFocusKey());
+        i = _(p, t, h, "before")
       }
     }
     var g = i.merge({

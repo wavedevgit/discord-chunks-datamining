@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Wt: () => d,
-  Y0: () => _,
+  Y0: () => p,
   zY: () => f
 });
 var Chunk720479 = require("./720479.js");
@@ -72,7 +72,7 @@ class f extends d {
     super(...e), this.identifier = "ethioaa"
   }
 }
-class _ extends d {
+class p extends d {
   fromJulianDay(e) {
     let [t, n, i] = l(a, e), o = "CE";
     return t <= 0 && (o = "BCE", t = 1 - t), new(0, r.aw)(this, o, t, n, i)

@@ -2,7 +2,7 @@
 /** chunk id: 644916, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => _
+  t: () => p
 });
 var Chunk115434 = require("./115434.js"),
   Chunk704215 = require("./704215.js"),
@@ -15,7 +15,7 @@ var Chunk115434 = require("./115434.js"),
   Chunk885472 = require("./885472.js"),
   Chunk582113 = require("./582113.js");
 
-function _(e) {
+function p(e) {
   switch (e) {
     case i.z.COLLECTIBLES_SHOP_ENTRY_MARKETING:
       var t, n;

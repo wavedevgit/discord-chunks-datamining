@@ -20,16 +20,16 @@ var Chunk54381 = require("./54381.js"),
 function g(e) {
   let {
     id: t
-  } = e, n = (0, l.e7)([o.default], () => o.default.getUser(t));
-  return null == n ? null : (0, a.jsx)(i.P3F, {
+  } = e, n = (0, r.e7)([o.default], () => o.default.getUser(t));
+  return null == n ? null : (0, a.jsx)(l.P3F, {
     className: x.entryAuthor,
     onClick: function() {
       (0, s.openUserProfileModal)({
-        sourceAnalyticsLocations: [r.Z.DEV_TOOLS],
+        sourceAnalyticsLocations: [i.Z.DEV_TOOLS],
         userId: t
       })
     },
-    children: (0, a.jsx)(i.Text, {
+    children: (0, a.jsx)(l.Text, {
       variant: "text-md/semibold",
       children: n.username
     })
@@ -40,7 +40,7 @@ function f() {
   var e;
   let t = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
     n = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFilters()),
-    r = (0, Chunk442837.cj)([Chunk719247.Z], () => {
+    i = (0, Chunk442837.cj)([Chunk719247.Z], () => {
       var e;
       let n = {};
       for (let a of null != (e = null == exports ? true : exports.entries) ? module : []) require[(0, Chunk719247.T)(Chunk54381.content)] = Chunk719247.Z.canRenderContent(Chunk54381.content);
@@ -53,19 +53,19 @@ function f() {
       content: t
     } = e;
     if (!(0, m.g)(n, t)) return [];
-    let l = r[(0, c.T)(t)];
+    let r = i[(0, c.T)(t)];
     return (0, a.jsxs)("li", {
       className: x.locatorEntry,
       children: [(0, a.jsx)(g, {
         type: t.author_type,
         id: t.author_id
-      }), !l && (0, a.jsx)(i.Text, {
+      }), !r && (0, a.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Expired or no matching presence"
-      }), (0, p.n2)(t) && (0, a.jsxs)(i.Text, {
+      }), (0, p.n2)(t) && (0, a.jsxs)(l.Text, {
         variant: "text-md/normal",
         children: ["Expired at ", t.expires_at]
-      }), s.has(t.id) && (0, a.jsx)(i.Text, {
+      }), s.has(t.id) && (0, a.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Impression capped"
       })]

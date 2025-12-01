@@ -2,7 +2,7 @@
 /** chunk id: 614716, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk442837 = require("./442837.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -15,23 +15,23 @@ var Chunk442837 = require("./442837.js"),
   Chunk944486 = require("./944486.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e) {
+function p(e) {
   let {
     applicationId: t,
     onClose: n
   } = e, {
-    newestAnalyticsLocation: _
-  } = (0, i.ZP)(), p = (0, r.e7)([u.Z, d.Z], () => u.Z.getChannel(d.Z.getChannelId())), h = (0, c.bp)() === f.IlC.POPOUT;
+    newestAnalyticsLocation: p
+  } = (0, i.ZP)(), _ = (0, r.e7)([u.Z, d.Z], () => u.Z.getChannel(d.Z.getChannelId())), m = (0, c.bp)() === f.IlC.POPOUT;
   return () => {
-    null == n || n(), null == p || (null == p ? true : p.isVocal()) ? (0, s.Z)({
-      context: null != p ? {
+    null == n || n(), null == _ || (null == _ ? true : _.isVocal()) ? (0, s.Z)({
+      context: null != _ ? {
         type: "channel",
-        channel: p
+        channel: _
       } : {
         type: "contextless"
       },
-      analyticsLocation: _,
-      openInPopout: h,
+      analyticsLocation: p,
+      openInPopout: m,
       initialState: {
         applicationId: t
       }

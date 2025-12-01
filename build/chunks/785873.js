@@ -30,8 +30,8 @@ function s(e, t, n, s) {
         isUserGuildMember: d,
         pageHasLeaderboard: f
       } = c.current, {
-        positionInSection: _,
-        analyticsLocations: p
+        positionInSection: p,
+        analyticsLocations: _
       } = u.current;
       i.default.track(a.rMx.SLAYER_STOREFRONT_CARD_IMPRESSION, {
         slayer_storefront_session_id: t,
@@ -41,10 +41,10 @@ function s(e, t, n, s) {
         page_title: o,
         page_section: s,
         page_section_title: l,
-        position_in_section: _,
+        position_in_section: p,
         is_user_guild_member: d,
         page_has_leaderboard: f,
-        location_stack: p
+        location_stack: _
       })
     }, [e]),
     f = r.useCallback(e => {

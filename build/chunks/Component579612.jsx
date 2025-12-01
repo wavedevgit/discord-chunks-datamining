@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   GQ: () => g,
-  MC: () => m,
+  MC: () => h,
   P: () => E,
   ZP: () => b
 });
@@ -22,26 +22,26 @@ var Chunk120356 = require("./120356.js"),
   Chunk51144 = require("./51144.js"),
   Chunk495824 = require("./495824.js");
 
-function m(e) {
+function h(e) {
   let {
     channel: t,
     className: n
   } = e;
   if (t.isDM()) {
     let e = t.getRecipientId(),
-      n = _.default.getUser(e);
+      n = p.default.getUser(e);
     if (null == n) return null;
     let i = n.getAvatarURL(null, 20);
     return (0, r.jsx)(o.qEK, {
       "aria-hidden": true,
-      className: h.searchResultDMChannelIcon,
+      className: m.searchResultDMChannelIcon,
       size: o.EFr.SIZE_20,
       src: i
     })
   }
   if (t.isGroupDM()) return (0, r.jsx)(c.Z, {
     "aria-hidden": true,
-    className: h.searchResultGDMChannelIcon,
+    className: m.searchResultGDMChannelIcon,
     channel: t,
     size: o.EFr.SIZE_20
   });
@@ -57,10 +57,10 @@ function g(e) {
     channel: t
   } = e;
   return t.isDM() || t.isGroupDM() ? (0, r.jsx)("span", {
-    className: h.searchResultDMChannelName,
-    children: (0, s.F6)(t, _.default, d.Z)
+    className: m.searchResultDMChannelName,
+    children: (0, s.F6)(t, p.default, d.Z)
   }) : (0, r.jsx)("strong", {
-    children: (0, s.F6)(t, _.default, d.Z)
+    children: (0, s.F6)(t, p.default, d.Z)
   })
 }
 
@@ -70,17 +70,17 @@ function E(e) {
   } = e, n = u.Z.getChannel(t.parent_id);
   if (t.isDM()) {
     let e = t.getRecipientId(),
-      n = _.default.getUser(e);
+      n = p.default.getUser(e);
     return null == n ? null : (0, r.jsx)("span", {
-      className: h.searchResultDMUserName,
-      children: p.ZP.getUserTag(n, {
+      className: m.searchResultDMUserName,
+      children: _.ZP.getUserTag(n, {
         identifiable: f.Z.enabled && f.Z.hidePersonalInformation ? "never" : "always"
       })
     })
   }
   if (null != n) return (0, r.jsx)("span", {
-    className: h.searchResultChannelCategory,
-    children: (0, s.F6)(n, _.default, d.Z)
+    className: m.searchResultChannelCategory,
+    children: (0, s.F6)(n, p.default, d.Z)
   })
 }
 
@@ -94,8 +94,8 @@ function b(e) {
   return null == t ? (0, r.jsx)("strong", {
     children: n
   }) : (0, r.jsxs)("div", {
-    className: a()(h.resultChannel, i),
-    children: [(0, r.jsx)(m, {
+    className: a()(m.resultChannel, i),
+    children: [(0, r.jsx)(h, {
       channel: t
     }), (0, r.jsxs)("div", {
       className: o,

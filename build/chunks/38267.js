@@ -35,7 +35,7 @@ function l(e) {
 }
 
 function c(e, t) {
-  let [n, o] = r.useState(t), [c, u] = r.useState(l(n)), d = r.useRef(c), f = r.useRef(null), _ = r.useCallback(e => {
+  let [n, o] = r.useState(t), [c, u] = r.useState(l(n)), d = r.useRef(c), f = r.useRef(null), p = r.useCallback(e => {
     o(t => {
       let n = s({}, t, e),
         r = l(n);
@@ -48,15 +48,15 @@ function c(e, t) {
         emojiPicker: t,
         emojiBurstPicker: n
       } = e;
-      return _({
+      return p({
         emojiPicker: t,
         emojiBurstPicker: n
       })
     };
     return i.S.subscribeKeyed(a.LPv.TOGGLE_REACTION_POPOUT, e, t), () => void i.S.unsubscribeKeyed(a.LPv.TOGGLE_REACTION_POPOUT, e, t)
-  }, [e, _]), {
+  }, [e, p]), {
     popouts: n,
-    setPopout: _,
+    setPopout: p,
     selected: c
   }
 }

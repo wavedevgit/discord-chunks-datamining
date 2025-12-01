@@ -18,7 +18,7 @@ require("./337357.js"), require("./349927.js");
 var Chunk191333 = require("./191333.js"),
   Chunk81932 = require("./81932.js"),
   Chunk770476 = require("./770476.js");
-let m = {
+let h = {
     skuId: Chunk242433.d.SEASONAL_GIFTING_2025_HEAD_IN_THE_CLOUDS_SKU_ID,
     assetId: "a_670b722e56740d11d1e6fe55b8094013",
     type: Chunk979554.Z.AVATAR_DECORATION,
@@ -47,8 +47,8 @@ let m = {
     gradient: ["rgba(74, 87, 192, 1)", "rgba(8, 5, 67, 1)"]
   },
   O = {
-    rewards: [m, g, E],
-    rewardAssetIdMap: (0, Chunk717401.YV)([m, g, E]),
+    rewards: [h, g, E],
+    rewardAssetIdMap: (0, Chunk717401.YV)([h, g, E]),
     chatGiftIcon: {
       trinketsAnimation: {
         getAnimationData: () => require.e("31675").then(require.bind(require, 177648)).then(e => {

@@ -9,9 +9,9 @@ var Chunk54381 = require("./54381.js"),
   l = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk213609 = require("./213609.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk674180 = require("./674180.js"),
   Chunk38618 = require("./38618.js"),
   Chunk312217 = require("./312217.jsx"),
@@ -46,31 +46,31 @@ function E(e) {
     loaded: o,
     subscriptionsSettings: l
   } = (0, O.H)(r), s = (0, c.e7)([g.Z], () => g.Z.getGuild(r)), {
-    selectedTab: d,
+    selectedTab: a,
     isPhantomPreview: u,
     categoryTabs: C
   } = (0, m.m)(), p = !o || null == l;
-  return null == s || !u && p ? (0, n.jsx)(a.$jN, {}) : (0, n.jsx)(x.Z, {
+  return null == s || !u && p ? (0, n.jsx)(d.$jN, {}) : (0, n.jsx)(x.Z, {
     defaultSortOption: null != (t = null == l ? true : l.store_page_guild_products_default_sort) ? t : Z.zJ.NAME,
     children: (0, n.jsxs)("div", {
       className: N.contentContainer,
       children: [(0, n.jsx)(S.C, {
         guild: s,
         subscriptionsSettings: l
-      }), (0, n.jsx)(a.LZC, {
+      }), (0, n.jsx)(d.LZC, {
         size: 32
       }), C.length > 0 && (0, n.jsx)(w.z, {
         guild: s
       }), (0, n.jsxs)("div", {
         className: N.tabContainer,
-        children: [(0, n.jsx)(a.LZC, {
+        children: [(0, n.jsx)(d.LZC, {
           size: 32
         }), u && (0, n.jsx)(P.Z, {
           guildId: r
-        }), d === v.y.GUILD_PRODUCTS && (0, n.jsx)(y.Q, {
+        }), a === v.y.GUILD_PRODUCTS && (0, n.jsx)(y.Q, {
           guildId: r,
           productId: i
-        }), d === v.y.GUILD_ROLE_SUBSCRIPTIONS && (0, n.jsx)(_.Z, {
+        }), a === v.y.GUILD_ROLE_SUBSCRIPTIONS && (0, n.jsx)(_.Z, {
           guildId: r
         })]
       })]
@@ -92,7 +92,7 @@ function V(e) {
   } = (0, m.m)(), P = o && (null == O || 0 === w.length && !_ || x && !v);
   return i.useEffect(() => {
     P && (0, h.M)(t, D.oC.GUILD_SHOP)
-  }, [t, P]), (0, d.Z)({
+  }, [t, P]), (0, u.Z)({
     type: T.n.PAGE,
     name: s.ImpressionNames.GUILD_SHOP_PAGE,
     properties: {
@@ -106,18 +106,18 @@ function V(e) {
     className: l()(R.chat, N.container),
     children: [(0, n.jsxs)(j.Z, {
       children: [(0, n.jsx)(j.Z.Icon, {
-        icon: (0, a.GSL)(I.Z),
+        icon: (0, d.GSL)(I.Z),
         "aria-hidden": true,
-        color: u.Z.INTERACTIVE_ACTIVE
+        color: a.Z.colors.INTERACTIVE_ACTIVE.css
       }), (0, n.jsx)(j.Z.Title, {
         children: k.intl.string(k.t.al5EXL)
       }), (0, n.jsx)(L.Z, {})]
-    }), (0, n.jsx)(a.u2D, {
+    }), (0, n.jsx)(d.u2D, {
       className: N.content,
       children: o ? (0, n.jsx)(E, {
         guildId: t,
         productId: r
-      }) : (0, n.jsx)(a.$jN, {})
+      }) : (0, n.jsx)(d.$jN, {})
     }), (0, n.jsx)(b.Z, {
       className: N.sparkleCloudTop
     }), (0, n.jsx)(f.Z, {

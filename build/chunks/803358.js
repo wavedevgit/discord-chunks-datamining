@@ -2,7 +2,7 @@
 /** chunk id: 803358, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./781311.js");
 var Chunk979590 = require("./979590.js"),
   i = require.n(Chunk979590),
@@ -65,12 +65,12 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => null == e ? e : {
+let p = e => null == e ? e : {
   backgroundColors: e.background_colors.map(e => i()((0, a.Rf)(e))),
   buttonColors: e.button_colors.map(e => i()((0, a.Rf)(e))),
   confettiColors: e.confetti_colors.map(e => i()((0, a.Rf)(e)))
 };
-class p extends Chunk81825.Z {
+class _ extends Chunk81825.Z {
   static fromServer(e) {
     var {
       store_listing_id: t,
@@ -79,11 +79,11 @@ class p extends Chunk81825.Z {
       styles: i
     } = e, a = d(e, ["store_listing_id", "sku_id", "unpublished_at", "styles"]);
     let o = null != r ? new Date(r) : null;
-    return new p(u(l({}, a), {
+    return new _(u(l({}, a), {
       storeListingId: t,
       skuId: n,
       unpublishedAt: o,
-      styles: _(i)
+      styles: p(i)
     }))
   }
   constructor(e) {

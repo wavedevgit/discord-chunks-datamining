@@ -58,33 +58,33 @@ function d(e) {
     onAction: u,
     location: d,
     variant: f = "secondary",
-    size: _ = "sm"
-  } = e, p = c(e, ["activity", "embeddedActivity", "user", "onAction", "location", "variant", "size"]);
-  let h = (0, o.e)({
+    size: p = "sm"
+  } = e, _ = c(e, ["activity", "embeddedActivity", "user", "onAction", "location", "variant", "size"]);
+  let m = (0, o.e)({
     activity: null != t ? t : true,
     embeddedActivity: n,
     user: s,
     onGameJoin: u,
     location: d
   });
-  if (null == h) return null;
+  if (null == m) return null;
   let {
-    isJoining: m,
+    isJoining: h,
     handleJoinRequest: g,
     buttonCTA: E,
     tooltip: b,
     isEnabled: y
-  } = h;
+  } = m;
   return (0, r.jsx)(i.u, {
     text: b,
     children: (0, r.jsx)(a.Button, l({
       variant: f,
-      size: _,
+      size: p,
       text: E,
       onClick: g,
       disabled: !y,
-      loading: m,
+      loading: h,
       fullWidth: true
-    }, p))
+    }, _))
   }, "join")
 }

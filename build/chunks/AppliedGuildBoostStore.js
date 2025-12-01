@@ -2,7 +2,7 @@
 /** chunk id: 899667, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -21,9 +21,9 @@ let s = {},
   u = false,
   d = false,
   f = null,
-  _ = null;
+  p = null;
 
-function p(e) {
+function _(e) {
   let {
     guildId: t,
     appliedBoosts: n
@@ -34,14 +34,14 @@ function p(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   let {
     appliedGuildBoosts: t
   } = e;
   u = false, c = t
 }
 
-function m(e) {
+function h(e) {
   let {
     endsAt: t
   } = e;
@@ -77,13 +77,13 @@ function O(e) {
   let {
     error: t
   } = e;
-  d = false, _ = t
+  d = false, p = t
 }
 
 function v() {
   u = true
 }
-class I extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   getAppliedGuildBoostsForGuild(e) {
     return null != s[e] ? s[e].subscriptions : null
   }
@@ -103,7 +103,7 @@ class I extends(r = Chunk442837.ZP.Store) {
     return f
   }
   get unapplyBoostError() {
-    return _
+    return p
   }
   get cooldownEndsAt() {
     return l
@@ -112,11 +112,11 @@ class I extends(r = Chunk442837.ZP.Store) {
     return u
   }
 }
-o(I, "displayName", "AppliedGuildBoostStore");
-let T = new I(Chunk570140.Z, {
-  GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: p,
-  USER_APPLIED_BOOSTS_FETCH_SUCCESS: h,
-  APPLIED_BOOSTS_COOLDOWN_FETCH_SUCCESS: m,
+o(S, "displayName", "AppliedGuildBoostStore");
+let I = new S(Chunk570140.Z, {
+  GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: _,
+  USER_APPLIED_BOOSTS_FETCH_SUCCESS: m,
+  APPLIED_BOOSTS_COOLDOWN_FETCH_SUCCESS: h,
   GUILD_UNAPPLY_BOOST_START: g,
   GUILD_APPLY_BOOST_START: g,
   GUILD_APPLY_BOOST_SUCCESS: E,

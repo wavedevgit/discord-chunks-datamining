@@ -44,30 +44,30 @@ module.exports = function(e) {
         contains: [e.PHRASAL_WORDS_MODE, d]
       }]
     },
-    _ = {
+    p = {
       $pattern: t,
       keyword: r,
       built_in: o,
       class: s,
       literal: l
     },
-    p = {
+    _ = {
       begin: "\\.\\s*" + e.UNDERSCORE_IDENT_RE,
-      keywords: _,
+      keywords: p,
       relevance: 0
     },
-    h = {
+    m = {
       className: "type",
       begin: ":[ \\t]*(" + a.trim().replace(/\s/g, "|") + ")",
       end: "[ \\t]*=",
       excludeEnd: true
     },
-    m = {
+    h = {
       className: "variable",
-      keywords: _,
+      keywords: p,
       begin: t,
       relevance: 0,
-      contains: [h, p]
+      contains: [m, _]
     },
     g = n + "\\(",
     E = {
@@ -86,15 +86,15 @@ module.exports = function(e) {
       begin: g,
       end: "\\)$",
       returnBegin: true,
-      keywords: _,
+      keywords: p,
       illegal: "[\\[\\]\\|\\$\\?%,~#@]",
-      contains: [E, p, m, u, c, f]
+      contains: [E, _, h, u, c, f]
     };
   return {
     name: "ISBL",
     case_insensitive: true,
-    keywords: _,
+    keywords: p,
     illegal: "\\$|\\?|%|,|;$|~|#|@|</",
-    contains: [b, h, p, m, u, c, f]
+    contains: [b, m, _, h, u, c, f]
   }
 }

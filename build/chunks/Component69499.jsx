@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk73346 = require("./73346.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,7 +89,7 @@ class y extends Chunk473749.PureComponent {
         onSKUSelect: o
       } = module,
       s = g(module, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
-    return (0, Chunk54381.jsx)(Chunk585237.Z, m(p({
+    return (0, Chunk54381.jsx)(Chunk585237.Z, h(_({
       onClick: this.handleClick,
       onDropdownClick: exports.length > 0 ? this.handleContextMenu : null,
       onContextMenu: exports.length > 0 ? this.handleContextMenu : true
@@ -98,7 +98,7 @@ class y extends Chunk473749.PureComponent {
     }))
   }
   constructor(...e) {
-    super(...e), _(this, "renderContextMenu", () => {
+    super(...e), p(this, "renderContextMenu", () => {
       let {
         skus: e,
         onSKUSelect: t,
@@ -117,9 +117,9 @@ class y extends Chunk473749.PureComponent {
           }
         }, "".concat(e.id)))
       })
-    }), _(this, "handleContextMenu", e => {
+    }), p(this, "handleContextMenu", e => {
       e.stopPropagation(), s.vq(e, this.renderContextMenu)
-    }), _(this, "handleClick", () => {
+    }), p(this, "handleClick", () => {
       let {
         onSKUSelect: e,
         primarySKU: t

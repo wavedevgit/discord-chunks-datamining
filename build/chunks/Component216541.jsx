@@ -30,13 +30,13 @@ let b = Chunk473749.memo(function(e) {
     containerClassName: O
   } = e, {
     firstProfileEffect: v,
-    firstAvatarDecoration: I,
-    firstNameplate: T
-  } = (0, f.Rj)(t), S = (0, p.O1)(I), A = (0, c.ZP)(), C = (0, s.ap)(A), N = i.useMemo(() => (0, _.L)(t), [t]), R = i.useMemo(() => null != T ? l.EFr.SIZE_96 : l.EFr.SIZE_120, [T]), P = i.useMemo(() => C ? E : g, [C]);
+    firstAvatarDecoration: S,
+    firstNameplate: I
+  } = (0, f.Rj)(t), T = (0, _.O1)(S), A = (0, c.ZP)(), C = (0, s.ap)(A), N = i.useMemo(() => (0, p.L)(t), [t]), P = i.useMemo(() => null != I ? l.EFr.SIZE_96 : l.EFr.SIZE_120, [I]), R = i.useMemo(() => C ? E : g, [C]);
   return (0, r.jsxs)("div", {
-    className: o()(m.container, N ? m.threeItemBundle : null, O),
+    className: o()(h.container, N ? h.threeItemBundle : null, O),
     children: [(0, r.jsx)("div", {
-      className: o()(m.profileEffectShopPreview, y ? m.profileEffectShopPreviewCollectedModal : null),
+      className: o()(h.profileEffectShopPreview, y ? h.profileEffectShopPreviewCollectedModal : null),
       children: null != v && (0, r.jsx)(d.Z, {
         isHighlighted: a,
         skuId: v.skuId,
@@ -46,26 +46,26 @@ let b = Chunk473749.memo(function(e) {
         delayProfileEffectIntro: y
       })
     }), (0, r.jsx)("div", {
-      className: o()(m.avatarDecorationPreview, y ? m.avatarDecorationPreviewCollectedModal : null, N ? m.avatarDecorationDropShadow : null),
-      children: (0, r.jsx)(h.R, {
-        item: S,
+      className: o()(h.avatarDecorationPreview, y ? h.avatarDecorationPreviewCollectedModal : null, N ? h.avatarDecorationDropShadow : null),
+      children: (0, r.jsx)(m.R, {
+        item: T,
         user: b,
-        avatarSize: R,
+        avatarSize: P,
         isPurchased: n,
         isHighlighted: a,
-        avatarPlaceholderSrc: P,
-        className: m.avatar
+        avatarPlaceholderSrc: R,
+        className: h.avatar
       })
     }), N && (0, r.jsx)("div", {
-      className: o()(m.nameplatePreview, y ? m.nameplatePreviewCollectedModal : null),
+      className: o()(h.nameplatePreview, y ? h.nameplatePreviewCollectedModal : null),
       children: (0, r.jsx)(u.Z, {
         user: b,
-        nameplate: T,
+        nameplate: I,
         isHighlighted: a,
         isPurchased: n,
         nameplatePreviewSize: "default",
         showPlaceholderUser: !a,
-        pendingAvatarDecoration: S
+        pendingAvatarDecoration: T
       })
     })]
   })

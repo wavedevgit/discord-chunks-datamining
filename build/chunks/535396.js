@@ -2,17 +2,17 @@
 /** chunk id: 535396, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A3: () => T,
-  Cp: () => p,
-  Du: () => S,
-  Fq: () => _,
+  A3: () => I,
+  Cp: () => _,
+  Du: () => T,
+  Fq: () => p,
   H2: () => g,
   Hk: () => O,
   NL: () => A,
   NO: () => d,
-  Q1: () => m,
-  Rx: () => I,
-  T1: () => h,
+  Q1: () => h,
+  Rx: () => S,
+  T1: () => m,
   Tg: () => E,
   Us: () => u,
   ad: () => f,
@@ -34,19 +34,19 @@ var Chunk494497 = require("./494497.js"),
   }({});
 let d = "1340102344645283891",
   f = new Set([Chunk494497.h_, Chunk494497.NJ, Chunk494497.XW]),
-  _ = "525479941211684874",
-  p = {
+  p = "525479941211684874",
+  _ = {
     [Chunk981631.Eu4.TIER_1]: Chunk494497.h_,
     [Chunk981631.Eu4.TIER_2]: Chunk494497.NJ,
     [Chunk981631.Eu4.TIER_3]: Chunk494497.XW,
     [Chunk981631.Eu4.NONE]: true
   },
-  h = {
+  m = {
     [Chunk494497.h_]: Chunk981631.Eu4.TIER_1,
     [Chunk494497.NJ]: Chunk981631.Eu4.TIER_2,
     [Chunk494497.XW]: Chunk981631.Eu4.TIER_3
   },
-  m = {
+  h = {
     [Chunk981631.Eu4.TIER_1]: Chunk704215.C.GUILD_POWERUP_LEVEL_1_COACHMARK,
     [Chunk981631.Eu4.TIER_2]: Chunk704215.C.GUILD_POWERUP_LEVEL_2_COACHMARK,
     [Chunk981631.Eu4.TIER_3]: Chunk704215.C.GUILD_POWERUP_LEVEL_3_COACHMARK,
@@ -144,13 +144,13 @@ let d = "1340102344645283891",
       isEnabled: e => (0, o.v$)(e, "GuildPowerupsConstants")
     }
   },
-  I = {
+  S = {
     [Chunk494497.A$]: Chunk981631.Eu4.TIER_3
   };
-var T = function(e) {
+var I = function(e) {
     return e.INACTIVE = "inactive", e.POWERUP_ACTIVATED = "powerup_activated", e.LEVEL_ACTIVATED = "level_activated", e.TIER_OVERRIDE_ACTIVATED = "tier_override_activated", e
   }({}),
-  S = function(e) {
+  T = function(e) {
     return e[e.VANITY_URL = 1] = "VANITY_URL", e[e.GUILD_TAG_BADGE_PACKS_WAVE_ONE = 2] = "GUILD_TAG_BADGE_PACKS_WAVE_ONE", e[e.GAME_SERVER_HOSTING = 3] = "GAME_SERVER_HOSTING", e
   }({});
 let A = new Set([Chunk494497.MB, Chunk494497.Vk]),

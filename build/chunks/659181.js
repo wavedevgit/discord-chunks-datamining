@@ -2,7 +2,7 @@
 /** chunk id: 659181, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js"), require("./997841.js"), require("./953529.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -27,13 +27,13 @@ function f(e) {
     socialLayer: (0, s.x6)(e.social_layer)
   }
 }
-class _ extends Chunk81825.Z {
+class p extends Chunk81825.Z {
   static createFromServer(e) {
     var t, n, r, a, o, s, c;
     let {
       price: u
     } = e;
-    return new _({
+    return new p({
       id: e.id,
       type: e.type,
       applicationId: e.application_id,

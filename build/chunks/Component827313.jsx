@@ -2,7 +2,7 @@
 /** chunk id: 827313, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,14 +16,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk925568 = require("./925568.js");
 
-function _(e) {
+function p(e) {
   let {
     userId: t,
     isVisible: n,
     onOpenProfile: i
   } = e, {
-    note: _
-  } = (0, c.Z)(t), p = null != _ && "" !== _, h = p ? s.hH0 : s.Wos, m = p ? d.intl.string(d.t["gs+qcM"]) : d.intl.string(d.t["1ZZtts"]), g = p ? _ : d.intl.string(d.t["1ZZtts"]), {
+    note: p
+  } = (0, c.Z)(t), _ = null != p && "" !== p, m = _ ? s.hH0 : s.Wos, h = _ ? d.intl.string(d.t["gs+qcM"]) : d.intl.string(d.t["1ZZtts"]), g = _ ? p : d.intl.string(d.t["1ZZtts"]), {
     trackUserProfileAction: E
   } = (0, l.KZ)(), b = () => {
     E({
@@ -36,10 +36,10 @@ function _(e) {
     asContainer: true,
     text: g,
     children: (0, r.jsx)(s.P3F, {
-      "aria-label": m,
+      "aria-label": h,
       onClick: b,
       className: a()(f.button, n && f.visible),
-      children: (0, r.jsx)(h, {
+      children: (0, r.jsx)(m, {
         size: "xs",
         color: "currentColor"
       })

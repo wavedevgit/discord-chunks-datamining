@@ -2,7 +2,7 @@
 /** chunk id: 794433, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => h,
+  F: () => m,
   Z: () => g
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,15 +35,15 @@ function _(e) {
   }
   return e
 }
-let p = Object.freeze({
+let _ = Object.freeze({
   SMALL: Chunk599684.small,
   MEDIUM: Chunk599684.medium,
   LARGE: Chunk599684.large
 });
-var h = function(e) {
+var m = function(e) {
   return e.MEMBER = "MEMBER", e.ROLE = "ROLE", e.CHANNEL = "CHANNEL", e.USER = "USER", e
 }({});
-class m extends(r = Chunk473749.Component) {
+class h extends(r = Chunk473749.Component) {
   componentDidMount() {
     let e = this.containerRef.current;
     null != module && (this.previousHeight = module.offsetHeight)
@@ -150,9 +150,9 @@ class m extends(r = Chunk473749.Component) {
       size: o,
       maxHeight: c,
       tags: f,
-      onActivate: p,
-      className: h,
-      inputProps: m,
+      onActivate: _,
+      className: m,
+      inputProps: h,
       focusAfterReady: g
     } = this.props, E = false, b = [];
     return null != f && f.length > 0 && ("string" == typeof f[0] ? f.forEach((e, t) => b.push((0, i.jsxs)(l.Anchor, {
@@ -195,7 +195,7 @@ class m extends(r = Chunk473749.Component) {
         theme: r,
         children: r => (0, i.jsx)("div", {
           ref: this.containerRef,
-          className: s()(h, d.container, o, r, {
+          className: s()(m, d.container, o, r, {
             [d.disabled]: a
           }),
           children: (0, i.jsxs)(l.zJl, {
@@ -203,7 +203,7 @@ class m extends(r = Chunk473749.Component) {
             style: {
               maxHeight: c
             },
-            children: [b, (0, i.jsx)("input", _({
+            children: [b, (0, i.jsx)("input", p({
               className: s()(d.input, {
                 [d.richTagInput]: E
               }),
@@ -218,8 +218,8 @@ class m extends(r = Chunk473749.Component) {
               disabled: a,
               "aria-disabled": a,
               autoFocus: !g && e,
-              onMouseDown: p
-            }, this.defaultInputProps, m))]
+              onMouseDown: _
+            }, this.defaultInputProps, h))]
           })
         })
       })
@@ -273,8 +273,8 @@ class m extends(r = Chunk473749.Component) {
     })
   }
 }
-f(m, "Sizes", p), f(m, "defaultProps", {
-  size: p.SMALL,
+f(h, "Sizes", _), f(h, "defaultProps", {
+  size: _.SMALL,
   query: "",
   sections: [],
   selectedSection: 0,
@@ -286,4 +286,4 @@ f(m, "Sizes", p), f(m, "defaultProps", {
   preventEscapePropagation: true,
   useKeyboardNavigation: true
 });
-let g = m
+let g = h

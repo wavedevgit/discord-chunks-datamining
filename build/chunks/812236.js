@@ -2,10 +2,10 @@
 /** chunk id: 812236, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fs: () => p,
-  Xu: () => _,
+  Fs: () => _,
+  Xu: () => p,
   ZP: () => f,
-  ms: () => m,
+  ms: () => h,
   sV: () => u
 }), require("./415506.js");
 var Chunk473749 = require("./473749.js"),
@@ -19,20 +19,20 @@ let u = "no primary app command for application",
   d = [Chunk911969.yU.PRIMARY_ENTRY_POINT];
 async function f(e, t) {
   let n, r = o.Z.getChannel(e);
-  if (null != r && null == (n = _({
+  if (null != r && null == (n = p({
       channel: r,
       type: "channel"
     }, t)) && (await (0, l.FN)({
       type: "application",
       applicationId: t
-    }), n = _({
+    }), n = p({
       channel: r,
       type: "channel"
     }, t)), null != n) return n;
   throw Error(u)
 }
 
-function _(e, t) {
+function p(e, t) {
   return l.ZP.query(e, {
     commandTypes: [a.yU.PRIMARY_ENTRY_POINT]
   }, {
@@ -44,11 +44,11 @@ function _(e, t) {
   }).commands[0]
 }
 
-function p(e, t) {
+function _(e, t) {
   let {
     commands: n,
     loading: i
-  } = h(e, t), a = n[0], o = null != a;
+  } = m(e, t), a = n[0], o = null != a;
   return r.useEffect(() => {
     o || i || (0, s.j)({
       type: "application",
@@ -57,7 +57,7 @@ function p(e, t) {
   }, [t, o, i]), a
 }
 
-function h(e, t) {
+function m(e, t) {
   return (0, l.v1)(e, {
     commandTypes: d
   }, {
@@ -69,12 +69,12 @@ function h(e, t) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     context: t,
     applicationId: n,
     botUserId: r
-  } = e, i = p(t, n);
+  } = e, i = _(t, n);
   return null != i && null != r && g(i)
 }
 

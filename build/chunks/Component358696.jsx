@@ -25,7 +25,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,12 +49,12 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = {
+let h = {
   none: true,
   default: Chunk255332.aspectRatio,
   crunchyroll: a()(Chunk255332.aspectRatio, Chunk255332.crunchyroll)
@@ -97,27 +97,27 @@ function y(e) {
   let {
     image: i,
     smallImage: f,
-    aspectRatio: p,
+    aspectRatio: _,
     onClick: g,
     size: y,
     className: O
   } = e, {
     imageSize: v,
-    smallImageSize: I,
-    mask: T
+    smallImageSize: S,
+    mask: I
   } = E[y];
   if (null == i) return (0, r.jsx)(l.f, {
     src: true,
     alt: u.intl.string(u.t["2B/phM"]),
     size: v,
-    className: a()(d.contentImage, m[null != p ? p : "default"], O),
+    className: a()(d.contentImage, h[null != _ ? _ : "default"], O),
     constrain: "width"
   });
-  let S = (0, r.jsx)(l.f, {
+  let T = (0, r.jsx)(l.f, {
     src: i.src,
     alt: null != (n = null != (t = i.alt) ? t : i.text) ? n : u.intl.string(u.t["2B/phM"]),
     size: v,
-    className: a()(d.contentImage, m[null != p ? p : "default"]),
+    className: a()(d.contentImage, h[null != _ ? _ : "default"]),
     constrain: "width"
   });
   return (0, r.jsxs)("div", {
@@ -129,15 +129,15 @@ function y(e) {
         onClick: g,
         children: (0, r.jsx)(c._, {
           href: i.url,
-          children: null != f ? (0, r.jsx)(s.ZP, h(_({}, e), {
+          children: null != f ? (0, r.jsx)(s.ZP, m(p({}, e), {
             className: d.imageContainer,
-            mask: T,
+            mask: I,
             width: v,
             height: v,
-            children: S
-          })) : (0, r.jsx)("div", h(_({}, e), {
+            children: T
+          })) : (0, r.jsx)("div", m(p({}, e), {
             className: d.imageContainer,
-            children: S
+            children: T
           }))
         })
       })
@@ -148,12 +148,12 @@ function y(e) {
         var t;
         return (0, r.jsx)(c._, {
           href: f.url,
-          children: (0, r.jsx)("div", h(_({}, e), {
+          children: (0, r.jsx)("div", m(p({}, e), {
             className: d.smallImageContainer,
             children: (0, r.jsx)(l.f, {
               src: f.src,
               alt: null != (t = f.alt) ? t : f.text,
-              size: I,
+              size: S,
               className: d.contentImage,
               constrain: "width"
             })

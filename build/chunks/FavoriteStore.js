@@ -2,7 +2,7 @@
 /** chunk id: 853856, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
@@ -22,7 +22,7 @@ function u(e, t, n) {
 let d = {},
   f = false;
 
-function _(e) {
+function p(e) {
   var t;
   return (0, l.createChannelRecord)({
     id: e.id,
@@ -33,7 +33,7 @@ function _(e) {
   })
 }
 
-function p() {
+function _() {
   var e, t, n;
   f = null != (n = null == (e = Chunk581883.Z.settings.favorites) ? true : module.muted) && require, d = {};
   let r = null == (t = Chunk581883.Z.settings.favorites) ? true : exports.favoriteChannels;
@@ -49,9 +49,9 @@ function p() {
     }
   }
 }
-class h extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk581883.Z), p(), this.syncWith([Chunk581883.Z], p)
+    this.waitFor(Chunk581883.Z), _(), this.syncWith([Chunk581883.Z], _)
   }
   getFavoriteChannels() {
     return d
@@ -66,7 +66,7 @@ class h extends(r = Chunk442837.ZP.Store) {
     if (null != e) return d[e]
   }
   getCategoryRecord(e) {
-    return e in d && d[e].type === a.Dd.CATEGORY ? _(d[e]) : null
+    return e in d && d[e].type === a.Dd.CATEGORY ? p(d[e]) : null
   }
   getNickname(e) {
     var t;
@@ -74,5 +74,5 @@ class h extends(r = Chunk442837.ZP.Store) {
     return null != (t = null == n ? true : n.nickname) ? t : true
   }
 }
-u(h, "displayName", "FavoriteStore");
-let m = new h(Chunk570140.Z, {})
+u(m, "displayName", "FavoriteStore");
+let h = new m(Chunk570140.Z, {})

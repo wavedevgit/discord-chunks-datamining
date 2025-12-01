@@ -2,7 +2,7 @@
 /** chunk id: 624864, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js"), require("./467055.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -44,26 +44,26 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p() {
+function _() {
   return g()
 }
 
-function h() {
+function m() {
   return {
     gameSettings: {},
     notificationSettings: new Set
   }
 }
-let m = h();
+let h = m();
 
 function g() {
-  m = h()
+  h = m()
 }
 
 function E(e) {
@@ -71,7 +71,7 @@ function E(e) {
     applicationId: t,
     enabled: n
   } = e;
-  return m.gameSettings[t] = {
+  return h.gameSettings[t] = {
     limitedInteractionOverride: n
   }, true
 }
@@ -81,7 +81,7 @@ function b(e) {
     setting: t,
     disabled: n
   } = e;
-  return n ? m.notificationSettings.add(t) : m.notificationSettings.delete(t), m.notificationSettings = new Set(m.notificationSettings), true
+  return n ? h.notificationSettings.add(t) : h.notificationSettings.delete(t), h.notificationSettings = new Set(h.notificationSettings), true
 }
 
 function y(e) {
@@ -120,7 +120,7 @@ function O(e) {
   let {
     overlayNotificationSettings: t
   } = e;
-  m.notificationSettings = new Set(t.notificationSettings);
+  h.notificationSettings = new Set(t.notificationSettings);
   let n = Object.fromEntries(Object.entries(t.gameSettings).filter(e => {
     let [t, n] = e;
     return null != n.limitedInteractionOverride
@@ -131,52 +131,52 @@ function O(e) {
       limitedInteractionOverride: null != (t = r.limitedInteractionOverride) ? t : true
     }]
   }));
-  m.gameSettings = d({}, m.gameSettings, n)
+  h.gameSettings = d({}, h.gameSettings, n)
 }
 class v extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    let n = h();
-    m = _(d({}, n, null != e ? e : {}), {
+    let n = m();
+    h = p(d({}, n, null != e ? e : {}), {
       notificationSettings: new Set(null != (t = null == e ? true : e.notificationSettings) ? t : n.notificationSettings)
     }), this.waitFor(o.default)
   }
   getInitialOverlayState() {
     return {
-      gameSettings: Object.fromEntries(Object.entries(m.gameSettings).map(e => {
+      gameSettings: Object.fromEntries(Object.entries(h.gameSettings).map(e => {
         var t;
         let [n, r] = e;
         return [n, {
           limitedInteractionOverride: null != (t = r.limitedInteractionOverride) ? t : null
         }]
       })),
-      notificationSettings: Array.from(m.notificationSettings)
+      notificationSettings: Array.from(h.notificationSettings)
     }
   }
   getState() {
-    return m
+    return h
   }
   isLimitedInteractionOverrideEnabled(e) {
     var t, n;
-    return null != e && null != (n = null == (t = m.gameSettings[e]) ? true : t.limitedInteractionOverride) && n
+    return null != e && null != (n = null == (t = h.gameSettings[e]) ? true : t.limitedInteractionOverride) && n
   }
   isNotificationDisabledBySetting(e) {
-    return m.notificationSettings.has(e)
+    return h.notificationSettings.has(e)
   }
   isNotificationDisabled(e) {
     let t = y(e);
-    return null != t && m.notificationSettings.has(t)
+    return null != t && h.notificationSettings.has(t)
   }
   getDisabledNotifications() {
-    return m.notificationSettings
+    return h.notificationSettings
   }
   getDisabledSettingByNotificationType(e) {
     return y(e)
   }
 }
 u(v, "displayName", "OverlaySettingsStore"), u(v, "persistKey", "OverlaySettingsStore");
-let I = new v(Chunk570140.Z, {
-  LOGOUT: p,
+let S = new v(Chunk570140.Z, {
+  LOGOUT: _,
   OVERLAY_SET_LIMITED_INTERACTION_OVERRIDE: E,
   OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: b,
   OVERLAY_INITIALIZE: O

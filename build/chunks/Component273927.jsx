@@ -2,7 +2,7 @@
 /** chunk id: 273927, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GF: () => S,
+  GF: () => T,
   ZP: () => C,
   yo: () => A
 }), require("./388685.js");
@@ -55,49 +55,49 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   var t;
   let {
     userId: n,
     last: a
-  } = e, p = (0, s.e7)([f.Z], () => f.Z.isBlocked(n)), h = (0, s.e7)([_.default], () => _.default.getUser(n)), [m, g] = i.useState(false), E = i.useCallback(() => {
-    g(true), p ? c.Z.unblockUser(n).catch(() => {
+  } = e, _ = (0, s.e7)([f.Z], () => f.Z.isBlocked(n)), m = (0, s.e7)([p.default], () => p.default.getUser(n)), [h, g] = i.useState(false), E = i.useCallback(() => {
+    g(true), _ ? c.Z.unblockUser(n).catch(() => {
       g(false)
     }) : c.Z.unignoreUser(n, d.Z.USER_SETTINGS).catch(() => {
       g(false)
     })
-  }, [p, n]);
-  return null == h ? null : (0, r.jsxs)("div", {
+  }, [_, n]);
+  return null == m ? null : (0, r.jsxs)("div", {
     className: o()(y.row, {
       [y.lastRow]: a
     }),
     children: [(0, r.jsxs)("div", {
       className: y.userInfo,
       children: [(0, r.jsx)(u.Z, {
-        user: h,
+        user: m,
         size: l.EFr.SIZE_40
       }), (0, r.jsxs)("div", {
         className: y.text,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: null != (t = h.globalName) ? t : h.username
+          children: null != (t = m.globalName) ? t : m.username
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: null != h.globalName ? h.username : null
+          children: null != m.globalName ? m.username : null
         })]
       })]
     }), (0, r.jsx)(l.Button, {
       variant: "secondary",
-      text: b.intl.string(p ? b.t.XyHpKH : b.t["8wXU9B"]),
+      text: b.intl.string(_ ? b.t.XyHpKH : b.t["8wXU9B"]),
       onClick: E,
-      loading: m
+      loading: h
     })]
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     setting: t,
     userIds: n,
@@ -105,7 +105,7 @@ function T(e) {
   } = e, [o, s] = i.useState(O), c = () => {
     s(e => e + O)
   };
-  return (0, r.jsx)(h.U, {
+  return (0, r.jsx)(m.U, {
     setting: t,
     children: (0, r.jsxs)("div", {
       className: y.card,
@@ -114,7 +114,7 @@ function T(e) {
         numberOfUsers: n.length
       }), (0, r.jsx)("div", {
         className: y.usersList,
-        children: n.slice(0, o).map((e, t) => (0, r.jsx)(I, {
+        children: n.slice(0, o).map((e, t) => (0, r.jsx)(S, {
           userId: e,
           last: t === n.length - 1
         }, e))
@@ -136,9 +136,9 @@ function T(e) {
   })
 }
 
-function S() {
+function T() {
   let e = (0, Chunk442837.Wu)([Chunk699516.Z], () => Chunk699516.Z.getBlockedIDs());
-  return (0, Chunk54381.jsx)(T, {
+  return (0, Chunk54381.jsx)(I, {
     setting: Chunk726985.s6.BLOCKED_USERS,
     userIds: module,
     listType: "blocked"
@@ -147,7 +147,7 @@ function S() {
 
 function A() {
   let e = (0, Chunk442837.Wu)([Chunk699516.Z], () => Chunk699516.Z.getIgnoredIDs());
-  return (0, Chunk54381.jsx)(T, {
+  return (0, Chunk54381.jsx)(I, {
     setting: Chunk726985.s6.IGNORED_USERS,
     userIds: module,
     listType: "ignored"
@@ -164,6 +164,6 @@ function C() {
       description: Chunk388032.intl.format(Chunk388032.t["0aNQo9"], {
         helpArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
-    }), (0, Chunk54381.jsx)(S, {}), (0, Chunk54381.jsx)(A, {})]
+    }), (0, Chunk54381.jsx)(T, {}), (0, Chunk54381.jsx)(A, {})]
   })
 }

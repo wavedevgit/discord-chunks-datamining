@@ -14,11 +14,11 @@ var l = "undefined" != typeof BigInt,
   u = s(Object.prototype.toString),
   d = s(Number.prototype.valueOf),
   f = s(String.prototype.valueOf),
-  _ = s(Boolean.prototype.valueOf);
-if (l) var p = s(BigInt.prototype.valueOf);
-if (c) var h = s(Symbol.prototype.valueOf);
+  p = s(Boolean.prototype.valueOf);
+if (l) var _ = s(BigInt.prototype.valueOf);
+if (c) var m = s(Symbol.prototype.valueOf);
 
-function m(e, t) {
+function h(e, t) {
   if ("object" != typeof e) returnfalse;
   try {
     return t(e), true
@@ -51,17 +51,17 @@ function v(e) {
   return "undefined" != typeof ArrayBuffer && (O.working ? O(e) : e instanceof ArrayBuffer)
 }
 
-function I(e) {
+function S(e) {
   return "[object DataView]" === u(e)
 }
 
-function T(e) {
-  return "undefined" != typeof DataView && (I.working ? I(e) : e instanceof DataView)
+function I(e) {
+  return "undefined" != typeof DataView && (S.working ? S(e) : e instanceof DataView)
 }
 exports.isArgumentsObject = Chunk670575, exports.isGeneratorFunction = Chunk131604, exports.isTypedArray = Chunk837447, exports.isPromise = function(e) {
   return "undefined" != typeof Promise && e instanceof Promise || null !== e && "object" == typeof e && "function" == typeof e.then && "function" == typeof e.catch
 }, exports.isArrayBufferView = function(e) {
-  return "undefined" != typeof ArrayBuffer && ArrayBuffer.isView ? ArrayBuffer.isView(e) : o(e) || T(e)
+  return "undefined" != typeof ArrayBuffer && ArrayBuffer.isView ? ArrayBuffer.isView(e) : o(e) || I(e)
 }, exports.isUint8Array = function(e) {
   return "Uint8Array" === a(e)
 }, exports.isUint8ClampedArray = function(e) {
@@ -92,35 +92,35 @@ exports.isArgumentsObject = Chunk670575, exports.isGeneratorFunction = Chunk1316
   return "undefined" != typeof WeakMap && (b.working ? b(e) : e instanceof WeakMap)
 }, y.working = "undefined" != typeof WeakSet && y(new WeakSet), exports.isWeakSet = function(e) {
   return y(e)
-}, O.working = "undefined" != typeof ArrayBuffer && O(new ArrayBuffer), exports.isArrayBuffer = v, I.working = "undefined" != typeof ArrayBuffer && "undefined" != typeof DataView && I(new DataView(new ArrayBuffer(1), 0, 1)), exports.isDataView = T;
-var S = "undefined" != typeof SharedArrayBuffer ? SharedArrayBuffer : true;
+}, O.working = "undefined" != typeof ArrayBuffer && O(new ArrayBuffer), exports.isArrayBuffer = v, S.working = "undefined" != typeof ArrayBuffer && "undefined" != typeof DataView && S(new DataView(new ArrayBuffer(1), 0, 1)), exports.isDataView = I;
+var T = "undefined" != typeof SharedArrayBuffer ? SharedArrayBuffer : true;
 
 function A(e) {
   return "[object SharedArrayBuffer]" === u(e)
 }
 
 function C(e) {
-  return true !== S && (true === A.working && (A.working = A(new S)), A.working ? A(e) : e instanceof S)
+  return true !== T && (true === A.working && (A.working = A(new T)), A.working ? A(e) : e instanceof T)
 }
 
 function N(e) {
-  return m(e, d)
-}
-
-function R(e) {
-  return m(e, f)
+  return h(e, d)
 }
 
 function P(e) {
-  return m(e, _)
+  return h(e, f)
 }
 
-function D(e) {
-  return l && m(e, p)
+function R(e) {
+  return h(e, p)
 }
 
 function w(e) {
-  return c && m(e, h)
+  return l && h(e, _)
+}
+
+function D(e) {
+  return c && h(e, m)
 }
 exports.isSharedArrayBuffer = C, exports.isAsyncFunction = function(e) {
   return "[object AsyncFunction]" === u(e)
@@ -132,8 +132,8 @@ exports.isSharedArrayBuffer = C, exports.isAsyncFunction = function(e) {
   return "[object Generator]" === u(e)
 }, exports.isWebAssemblyCompiledModule = function(e) {
   return "[object WebAssembly.Module]" === u(e)
-}, exports.isNumberObject = N, exports.isStringObject = R, exports.isBooleanObject = P, exports.isBigIntObject = D, exports.isSymbolObject = w, exports.isBoxedPrimitive = function(e) {
-  return N(e) || R(e) || P(e) || D(e) || w(e)
+}, exports.isNumberObject = N, exports.isStringObject = P, exports.isBooleanObject = R, exports.isBigIntObject = w, exports.isSymbolObject = D, exports.isBoxedPrimitive = function(e) {
+  return N(e) || P(e) || R(e) || w(e) || D(e)
 }, exports.isAnyArrayBuffer = function(e) {
   return "undefined" != typeof Uint8Array && (v(e) || C(e))
 }, ["isProxy", "isExternal", "isModuleNamespaceObject"].forEach(function(e) {

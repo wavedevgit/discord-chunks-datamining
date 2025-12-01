@@ -2,7 +2,7 @@
 /** chunk id: 270538, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk318885 = require("./318885.js"),
@@ -49,25 +49,25 @@ class f extends Chunk147913.Z {
       let o = Date.now(),
         l = null != c ? o - c : null,
         f = null,
-        _ = null;
+        p = null;
       for (let [e, t] of u.entries()) {
         let r = a.Z.getDisabledSettingByNotificationType(e);
         if (null != r && r === n) {
           let n = o - t;
-          (null == f || n < f) && (f = n, _ = {
+          (null == f || n < f) && (f = n, p = {
             notificationType: e,
             timestamp: t
           })
         }
       }
-      let p = null != d && null != _ && d.notificationType === _.notificationType && d.timestamp === _.timestamp;
+      let _ = null != d && null != p && d.notificationType === p.notificationType && d.timestamp === p.timestamp;
       (0, i.Q)(s.rMx.OVERLAY_NOTIFICATION_SETTING_UPDATED, {
         setting: n,
         disabled: r,
         time_since_last_seen_overlay: l,
         time_since_last_seen_notification: f,
-        is_most_recent_notification: p,
-        most_recent_notification_type: null == _ ? true : _.notificationType
+        is_most_recent_notification: _,
+        most_recent_notification_type: null == p ? true : p.notificationType
       })
     }), l(this, "actions", {
       OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: this.handleSetNotificationDisabledSetting,
@@ -76,4 +76,4 @@ class f extends Chunk147913.Z {
     })
   }
 }
-let _ = new f
+let p = new f

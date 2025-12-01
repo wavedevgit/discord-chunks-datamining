@@ -2,7 +2,7 @@
 /** chunk id: 9277, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -28,52 +28,52 @@ function v(e, t) {
   let {
     disabled: n,
     type: a
-  } = e, [v, I] = i.useState(false), T = (0, l.e7)([_.Z], () => {
+  } = e, [v, S] = i.useState(false), I = (0, l.e7)([p.Z], () => {
     var e, t;
-    return v && Object.values(null != (t = null == (e = _.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? true : e.gifs) ? t : {}).length <= 2
-  }), [S, A, C] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), N = i.useRef(0), R = i.useCallback(() => {
-    I(true), clearTimeout(N.current), N.current = setTimeout(() => {
-      I(false), N.current = 0
+    return v && Object.values(null != (t = null == (e = p.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? true : e.gifs) ? t : {}).length <= 2
+  }), [T, A, C] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), N = i.useRef(0), P = i.useCallback(() => {
+    S(true), clearTimeout(N.current), N.current = setTimeout(() => {
+      S(false), N.current = 0
     }, 2e3)
   }, []);
-  (0, p.yp)({
+  (0, _.yp)({
     event: E.CkL.FAVORITE_GIF,
-    handler: R
+    handler: P
   });
-  let P = i.useCallback(() => {
+  let R = i.useCallback(() => {
       (0, f.RO)(b.X1.GIF, a)
     }, [a]),
     {
-      Component: D,
-      events: w,
-      play: L
+      Component: w,
+      events: D,
+      play: x
     } = (0, c.V)(),
-    x = (0, h.v)(d.O),
-    M = a === m.Ie.NORMAL ? x : true;
+    L = (0, m.v)(d.O),
+    j = a === h.Ie.NORMAL ? L : true;
   if (n) return null;
-  let k = S === b.X1.GIF && A === a;
+  let M = T === b.X1.GIF && A === a;
   return (0, r.jsx)(u.u, {
-    keyboardShortcut: T ? true : M,
-    text: y.intl.string(T ? y.t.mE2e8A : y.t.nffuyb),
-    shouldShow: T || null != M,
-    forceOpen: T,
+    keyboardShortcut: I ? true : j,
+    text: y.intl.string(I ? y.t.mE2e8A : y.t.nffuyb),
+    shouldShow: I || null != j,
+    forceOpen: I,
     children: (0, r.jsx)("div", {
       ref: t,
       className: o()(b.CT, O.buttonContainer),
       children: (0, r.jsx)(g.Z, {
         className: O.button,
-        onMouseEnter: w.onMouseEnter,
-        onMouseLeave: w.onMouseLeave,
+        onMouseEnter: D.onMouseEnter,
+        onMouseLeave: D.onMouseLeave,
         onClick: () => {
-          P(), L()
+          R(), x()
         },
-        isActive: k,
+        isActive: M,
         pulse: v,
         "aria-label": y.intl.string(y.t.PtVpk2),
-        "aria-expanded": k,
+        "aria-expanded": M,
         "aria-haspopup": "dialog",
         "aria-controls": C,
-        children: (0, r.jsx)(D, {
+        children: (0, r.jsx)(w, {
           size: "refresh_sm",
           color: "currentColor"
         })
@@ -81,4 +81,4 @@ function v(e, t) {
     })
   })
 }
-let I = Chunk473749.memo(Chunk473749.forwardRef(v))
+let S = Chunk473749.memo(Chunk473749.forwardRef(v))

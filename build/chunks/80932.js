@@ -4,9 +4,9 @@
 require.d(exports, {
   $K: () => C,
   OQ: () => O,
-  RE: () => I,
+  RE: () => S,
   Xe: () => N,
-  dv: () => T,
+  dv: () => I,
   rS: () => v,
   t0: () => y
 }), require("./388685.js"), require("./539854.js");
@@ -29,7 +29,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk388032 = require("./388032.jsx");
 
 function y(e) {
-  _.hW.updateAsync("textAndImages", t => {
+  p.hW.updateAsync("textAndImages", t => {
     t.diversitySurrogate = o.Gm.create(), t.diversitySurrogate.value = e
   }, E.fy.FREQUENT_USER_ACTION)
 }
@@ -84,7 +84,7 @@ function v(e) {
   }), Promise.reject(e)))
 }
 
-function I(e, t, n) {
+function S(e, t, n) {
   return s.Z.dispatch({
     type: "EMOJI_DELETE",
     guildId: e,
@@ -98,7 +98,7 @@ function I(e, t, n) {
     rejectWithError: false
   })
 }
-async function T(e) {
+async function I(e) {
   let {
     guildId: t,
     emojiId: n,
@@ -120,12 +120,12 @@ async function T(e) {
   }
 }
 
-function S(e) {
-  if (p.Z.totalUnavailableGuilds > 0 || !f.Z.isConnected()) return e;
+function T(e) {
+  if (_.Z.totalUnavailableGuilds > 0 || !f.Z.isConnected()) return e;
   let t = e.map(e => {
     var t;
     return null != (t = c.ZP.getCustomEmojiById(e)) ? t : u.ZP.getByName(e)
-  }).filter(h.lm);
+  }).filter(m.lm);
   return [...(0, d.Z)(t).keys()]
 }
 
@@ -136,7 +136,7 @@ function A(e) {
 
 function C(e) {
   let t = A(e);
-  null != t && _.DZ.updateAsync("favoriteEmojis", e => (e.emojis = S(e.emojis), i().size(e.emojis) >= E.oX) ? (m.Z.show({
+  null != t && p.DZ.updateAsync("favoriteEmojis", e => (e.emojis = T(e.emojis), i().size(e.emojis) >= E.oX) ? (h.Z.show({
     title: b.intl.string(b.t["+XYXtZ"]),
     body: b.intl.formatToPlainString(b.t.JaIyFi, {
       count: E.oX
@@ -146,8 +146,8 @@ function C(e) {
 
 function N(e) {
   let t = A(e);
-  null != t && _.DZ.updateAsync("favoriteEmojis", e => {
-    if (e.emojis = S(e.emojis), !e.emojis.includes(t)) returnfalse;
+  null != t && p.DZ.updateAsync("favoriteEmojis", e => {
+    if (e.emojis = T(e.emojis), !e.emojis.includes(t)) returnfalse;
     e.emojis = e.emojis.filter(e => t !== e)
   }, E.fy.INFREQUENT_USER_ACTION)
 }

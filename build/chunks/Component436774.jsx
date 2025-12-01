@@ -4,7 +4,7 @@
 require.d(exports, {
   JX: () => l,
   Rj: () => s,
-  ZP: () => p
+  ZP: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -67,7 +67,7 @@ let s = Object.freeze({
       stopColor: Chunk692547.Z.unsafe_rawColors.GUILD_BOOSTING_PURPLE.css
     })]
   }),
-  _ = () => (0, Chunk54381.jsxs)("linearGradient", {
+  p = () => (0, Chunk54381.jsxs)("linearGradient", {
     id: s.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
     gradientTransform: "rotate(45)",
     children: [(0, Chunk54381.jsx)("stop", {
@@ -78,7 +78,7 @@ let s = Object.freeze({
       stopColor: Chunk692547.Z.unsafe_rawColors.PREMIUM_TIER_2_PINK.css
     })]
   }),
-  p = Chunk473749.memo(function() {
+  _ = Chunk473749.memo(function() {
     return (0, Chunk54381.jsxs)("svg", {
       viewBox: "0 0 1 1",
       style: {
@@ -90,6 +90,6 @@ let s = Object.freeze({
         height: 1
       },
       "aria-hidden": true,
-      children: [c(), u(), d(), f(), _()]
+      children: [c(), u(), d(), f(), p()]
     })
   }, () => true)

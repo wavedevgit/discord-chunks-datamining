@@ -11,13 +11,13 @@ var Chunk720218 = require("./720218.js"),
   Chunk843260 = require("./843260.js"),
   d = "'",
   f = "/",
-  _ = Chunk169774.isBrowser("Firefox");
+  p = Chunk169774.isBrowser("Firefox");
 
-function p(e) {
-  return _ && (e == d || e == f)
+function _(e) {
+  return p && (e == d || e == f)
 }
 
-function h(e, t, n, a, o) {
+function m(e, t, n, a, o) {
   var s = r.replaceText(e.getCurrentContent(), e.getSelection(), t, n, a);
   return i.push(e, s, "insert-characters", o)
 }
@@ -31,15 +31,15 @@ module.exports = function(e, t) {
       d = a.getStartOffset(),
       f = a.getAnchorKey();
     if (!a.isCollapsed()) {
-      t.preventDefault(), e.update(h(n, r, n.getCurrentInlineStyle(), o(n.getCurrentContent(), n.getSelection()), true));
+      t.preventDefault(), e.update(m(n, r, n.getCurrentInlineStyle(), o(n.getCurrentContent(), n.getSelection()), true));
       return
     }
-    var _ = h(n, r, n.getCurrentInlineStyle(), o(n.getCurrentContent(), n.getSelection()), false),
-      m = false;
-    if (m || (m = l(e._latestCommittedEditorState)), !m) {
+    var p = m(n, r, n.getCurrentInlineStyle(), o(n.getCurrentContent(), n.getSelection()), false),
+      h = false;
+    if (h || (h = l(e._latestCommittedEditorState)), !h) {
       var g = n.getBlockTree(f),
-        E = _.getBlockTree(f);
-      m = g.size !== E.size || g.zip(E).some(function(e) {
+        E = p.getBlockTree(f);
+      h = g.size !== E.size || g.zip(E).some(function(e) {
         var t = e[0],
           n = e[1],
           i = t.get("start"),
@@ -52,15 +52,15 @@ module.exports = function(e, t) {
         return t.get("decoratorKey") !== u || t.get("leaves").size !== n.get("leaves").size || a !== l || s !== c || null != u && c - l != o - i
       })
     }
-    if (m || (m = p(r)), m || (m = c(_.getDirectionMap()).get(f) !== c(n.getDirectionMap()).get(f)), m) {
-      t.preventDefault(), _ = i.set(_, {
+    if (h || (h = _(r)), h || (h = c(p.getDirectionMap()).get(f) !== c(n.getDirectionMap()).get(f)), h) {
+      t.preventDefault(), p = i.set(p, {
         forceSelection: true
-      }), e.update(_);
+      }), e.update(p);
       return
     }
-    _ = i.set(_, {
-      nativelyRenderedContent: _.getCurrentContent()
-    }), e._pendingStateFromBeforeInput = _, u(function() {
+    p = i.set(p, {
+      nativelyRenderedContent: p.getCurrentContent()
+    }), e._pendingStateFromBeforeInput = p, u(function() {
       true !== e._pendingStateFromBeforeInput && (e.update(e._pendingStateFromBeforeInput), e._pendingStateFromBeforeInput = true)
     })
   }

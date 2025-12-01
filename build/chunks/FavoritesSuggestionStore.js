@@ -21,32 +21,32 @@ function c(e, t, n) {
 let u = 50,
   d = {},
   f = {},
-  _ = {};
+  p = {};
 
-function p() {
+function _() {
   let e = Chunk944486.Z.getChannelId();
   if (null == module) return;
   let t = Chunk592125.Z.getChannel(module);
   if (null == exports || null == exports.guild_id) return;
   let n = exports.guild_id;
-  if (null == _[module] && (_[module] = 0), exports.isThread() || Chunk9156.ZP.isOptInEnabled(require) && !Chunk9156.ZP.isChannelOrParentOptedIn(require, exports.id)) {
-    delete _[module], null != d[require] && d[require].delete(module);
+  if (null == p[module] && (p[module] = 0), exports.isThread() || Chunk9156.ZP.isOptInEnabled(require) && !Chunk9156.ZP.isChannelOrParentOptedIn(require, exports.id)) {
+    delete p[module], null != d[require] && d[require].delete(module);
     return
   }
-  return (_[module]++, null == d[require] && (d[require] = new Set), Chunk9156.ZP.isFavorite(require, module)) ? void d[require].delete(module) : (null == f[require] || !f[require].has(module)) && _[module] > u ? (d[require].add(module), true) : true
+  return (p[module]++, null == d[require] && (d[require] = new Set), Chunk9156.ZP.isFavorite(require, module)) ? void d[require].delete(module) : (null == f[require] || !f[require].has(module)) && p[module] > u ? (d[require].add(module), true) : true
 }
 
-function h(e) {
+function m(e) {
   let {
     guildId: t,
     channelId: n
   } = e;
   return null == f[t] && (f[t] = new Set), f[t].add(n), d[t].delete(n), true
 }
-class m extends(r = Chunk442837.ZP.PersistedStore) {
+class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t, n;
-    if (this.waitFor(o.Z, s.Z, l.ZP), this.syncWith([s.Z], p), null == e) return;
+    if (this.waitFor(o.Z, s.Z, l.ZP), this.syncWith([s.Z], _), null == e) return;
     let {
       suggestedChannels: r,
       dismissedSuggestions: i,
@@ -56,7 +56,7 @@ class m extends(r = Chunk442837.ZP.PersistedStore) {
       for (let e in r) t = new Set(r[e]), d[e] = true !== t ? t : new Set;
     if (null != i)
       for (let e in i) n = new Set(i[e]), f[e] = true !== n ? n : new Set;
-    _ = null != a ? a : {}
+    p = null != a ? a : {}
   }
   getSuggestedChannelId(e) {
     return null
@@ -69,7 +69,7 @@ class m extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-c(m, "displayName", "FavoritesSuggestionStore"), c(m, "persistKey", "FavoritesSuggestionStore");
-let g = new m(Chunk570140.Z, {
-  DISMISS_FAVORITE_SUGGESTION: h
+c(h, "displayName", "FavoritesSuggestionStore"), c(h, "persistKey", "FavoritesSuggestionStore");
+let g = new h(Chunk570140.Z, {
+  DISMISS_FAVORITE_SUGGESTION: m
 })

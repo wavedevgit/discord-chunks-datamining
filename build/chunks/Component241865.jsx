@@ -12,9 +12,9 @@ var Chunk54381 = require("./54381.js"),
   o = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   u = require.n(Chunk392711),
-  Chunk831209 = require("./831209.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk333848 = require("./333848.js"),
   Chunk749210 = require("./749210.js"),
@@ -97,7 +97,7 @@ function et(e) {
   returntrue === t ? r = (0, i.jsx)(g.IGR, {
     text: Q.intl.string(Q.t.psHMa6),
     className: K.newBadge,
-    color: d.Z.BUTTON_OUTLINE_BRAND_BACKGROUND_HOVER
+    color: p.Z.colors.BUTTON_OUTLINE_BRAND_BACKGROUND_HOVER.css
   }) : true === n && (r = (0, i.jsx)(T.Z, {
     className: K.newBadge
   })), r
@@ -112,7 +112,7 @@ function en(e) {
       error: o,
       name: c,
       guildId: u,
-      onBack: d,
+      onBack: p,
       canSubmit: m,
       onMembersChange: C,
       pendingPermissionOverwrites: f
@@ -120,7 +120,7 @@ function en(e) {
     [O, b] = r.useState(""),
     [E, I] = r.useState({}),
     v = r.useRef(null),
-    S = (0, p.e7)([R.Z], () => R.Z.getGuild(u)),
+    S = (0, h.e7)([R.Z], () => R.Z.getGuild(u)),
     j = s === Y.d4z.GUILD_STAGE_VOICE,
     {
       roles: x,
@@ -142,7 +142,7 @@ function en(e) {
     roles: x,
     members: P,
     getRichTag: T,
-    children: (0, i.jsx)(h.Modal, {
+    children: (0, i.jsx)(d.Modal, {
       transitionState: n,
       onClose: l,
       title: j ? Q.intl.string(Q.t["S/6zHM"]) : Q.intl.string(Q.t.dMJ3Y6),
@@ -177,7 +177,7 @@ function en(e) {
       actions: [{
         variant: "secondary",
         text: Q.intl.string(Q.t["13/7kX"]),
-        onClick: d
+        onClick: p
       }, {
         variant: "primary",
         text: t,
@@ -560,7 +560,7 @@ class er extends Chunk473749.PureComponent {
         cloneChannel: o,
         categoryId: c,
         onClose: u,
-        channelType: d
+        channelType: h
       } = this.props,
       p = null != o ? Chunk388032.intl.string(Chunk388032.t.dEaPc4) : Chunk473749 === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t["ISN+NM"]) : Chunk388032.intl.string(Chunk388032.t["fUYU+j"]);
     if (null != Chunk392711) {
@@ -569,14 +569,14 @@ class er extends Chunk473749.PureComponent {
         categoryName: null != (e = null == require ? true : require.name) ? module : ""
       })
     }
-    n = Chunk831209 === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t["ISN+NM"]) : Chunk388032.intl.string(Chunk388032.t["fUYU+j"]);
+    n = Chunk442837 === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t["ISN+NM"]) : Chunk388032.intl.string(Chunk388032.t["fUYU+j"]);
     let g = Chunk120356 || Chunk473749 === Chunk981631.d4z.GUILD_STAGE_VOICE;
     return (0, Chunk54381.jsx)("form", {
       onSubmit: this.handleSubmit,
       children: (0, Chunk54381.jsx)(Chunk793030.Modal, {
         transitionState: Chunk512722,
         onClose: u,
-        title: Chunk442837,
+        title: Chunk692547,
         subtitle: exports,
         preview: this.renderError(),
         actions: [{
@@ -601,7 +601,7 @@ class er extends Chunk473749.PureComponent {
         }],
         children: (0, Chunk54381.jsxs)("div", {
           className: Chunk305048.createChannelContent,
-          children: [this.renderType(), this.renderName(), Chunk831209 === Chunk981631.d4z.GUILD_STORE ? this.renderStoreOptions() : null, (0, Chunk54381.jsx)(Chunk636816.Z, {
+          children: [this.renderType(), this.renderName(), Chunk442837 === Chunk981631.d4z.GUILD_STORE ? this.renderStoreOptions() : null, (0, Chunk54381.jsx)(Chunk636816.Z, {
             guildId: s,
             channelType: Chunk473749,
             className: Chunk305048.channelTypeDescription
@@ -811,7 +811,7 @@ let el = Chunk473749.forwardRef(function(e, t) {
     channelType: n,
     guildId: r,
     cloneChannelId: l
-  } = e, s = (0, p.cj)([R.Z, B.default, M.Z, D.Z, Z.ZP], () => {
+  } = e, s = (0, h.cj)([R.Z, B.default, M.Z, D.Z, Z.ZP], () => {
     var e, t, i;
     let s = R.Z.getGuild(r),
       a = B.default.getCurrentUser();
@@ -834,14 +834,14 @@ let el = Chunk473749.forwardRef(function(e, t) {
       canManageRoles: M.Z.can(Y.Plq.MANAGE_ROLES, s),
       canManageChannels: M.Z.can(Y.Plq.MANAGE_CHANNELS, s)
     }
-  }), a = (0, p.Wu)([I.Z], () => I.Z.getGuildApplicationIds(r).map(e => I.Z.getApplication(e)).filter(k.lm)), c = new Set(s.memberRoles), {
+  }), a = (0, h.Wu)([I.Z], () => I.Z.getGuildApplicationIds(r).map(e => I.Z.getApplication(e)).filter(k.lm)), c = new Set(s.memberRoles), {
     canManageRoles: u,
     canManageChannels: d
-  } = s, h = (0, U.m)(r) && u && d, g = (0, A.Ui)(null == s ? true : s.guild);
+  } = s, p = (0, U.m)(r) && u && d, g = (0, A.Ui)(null == s ? true : s.guild);
   return (0, i.jsx)(er, ee($({}, e, s), {
     memberRoleIds: c,
     applications: a,
-    canCreateStageChannel: h,
+    canCreateStageChannel: p,
     canCreateMediaChannel: g,
     ref: t,
     width: 496

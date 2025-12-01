@@ -21,16 +21,16 @@ function a(e, t, n) {
       var a;
       let u = n(s, e),
         [d, f] = (0, i.Wu)([t], () => t.getEvaluationAndAssignment(s, u, o), [u]),
-        _ = null == f ? true : f.variantId,
-        p = null != (a = null == f ? true : f.trackedVariantId) ? a : _,
-        h = null == f ? true : f.revision,
-        m = null == f ? true : f.isOverride,
+        p = null == f ? true : f.variantId,
+        _ = null != (a = null == f ? true : f.trackedVariantId) ? a : p,
+        m = null == f ? true : f.revision,
+        h = null == f ? true : f.isOverride,
         g = null == f ? true : f.exposureTrackingEnabled;
       if ((0, r.useEffect)(() => {
-          null != d && null != p && null != h && false === m && true === g && t.trackExperimentExposure(d, o, e.location, s, h, p)
-        }, [u, d, p, h, e.location, m, g]), null == _) return c;
+          null != d && null != _ && null != m && false === h && true === g && t.trackExperimentExposure(d, o, e.location, s, m, _)
+        }, [u, d, _, m, e.location, h, g]), null == p) return c;
       {
-        let e = l[_];
+        let e = l[p];
         return null != e ? e : c
       }
     },
@@ -40,10 +40,10 @@ function a(e, t, n) {
         [a, u] = t.getEvaluationAndAssignment(s, i, o),
         d = null == u ? true : u.variantId,
         f = null != (r = null == u ? true : u.trackedVariantId) ? r : d,
-        _ = null == u ? true : u.revision,
-        p = null == u ? true : u.isOverride,
-        h = null == u ? true : u.exposureTrackingEnabled;
-      if (null != a && null != f && null != _ && false === p && true === h && t.trackExperimentExposure(a, o, e.location, s, _, f), null == d) return c;
+        p = null == u ? true : u.revision,
+        _ = null == u ? true : u.isOverride,
+        m = null == u ? true : u.exposureTrackingEnabled;
+      if (null != a && null != f && null != p && false === _ && true === m && t.trackExperimentExposure(a, o, e.location, s, p, f), null == d) return c;
       {
         let e = l[d];
         return null != e ? e : c

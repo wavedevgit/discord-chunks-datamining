@@ -17,11 +17,11 @@ let c = null,
     suggestedGamesIds: [],
     suggestedWishlistGamesIds: []
   },
-  _ = false,
   p = false,
-  h = false;
+  _ = false,
+  m = false;
 
-function m(e) {
+function h(e) {
   let {
     widgets: t
   } = e;
@@ -44,15 +44,15 @@ function E(e) {
     suggestedGamesIds: t,
     suggestedWishlistGamesIds: n
   } = e;
-  f.suggestedGamesIds = t, f.suggestedWishlistGamesIds = n, p = false, _ = false
+  f.suggestedGamesIds = t, f.suggestedWishlistGamesIds = n, _ = false, p = false
 }
 
 function b() {
-  _ = true, p = false
+  p = true, _ = false
 }
 
 function y() {
-  p = true, _ = false, h = true
+  _ = true, p = false, m = true
 }
 
 function O(e) {
@@ -63,17 +63,17 @@ function v(e) {
   d = false, null !== c && (u = null, c = null)
 }
 
-function I(e) {
+function S(e) {
   d = false
 }
 
-function T(e) {
+function I(e) {
   let {
     applicationId: t
   } = e;
   f.suggestedGamesIds = f.suggestedGamesIds.filter(e => e !== t), f.suggestedWishlistGamesIds = f.suggestedWishlistGamesIds.filter(e => e !== t)
 }
-class S extends Chunk442837.ZP.Store {
+class T extends Chunk442837.ZP.Store {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
@@ -140,26 +140,26 @@ class S extends Chunk442837.ZP.Store {
     return d
   }
   get suggestedFetchError() {
-    return _
-  }
-  get suggestedFetchIsLoading() {
     return p
   }
+  get suggestedFetchIsLoading() {
+    return _
+  }
   get suggestedFetchAttempted() {
-    return h
+    return m
   }
   get suggestedGameIds() {
     return f
   }
 }
-let A = new S(Chunk570140.Z, {
-  WIDGET_PENDING_SET: m,
+let A = new T(Chunk570140.Z, {
+  WIDGET_PENDING_SET: h,
   WIDGET_PENDING_SAVE_START: O,
   WIDGET_PENDING_SAVE_SUCCESS: v,
-  WIDGET_PENDING_SAVE_FAILURE: I,
+  WIDGET_PENDING_SAVE_FAILURE: S,
   WIDGET_SUGGESTED_FETCH_SUCCESS: E,
   WIDGET_SUGGESTED_FETCH_FAILURE: b,
   WIDGET_SUGGESTED_FETCH_START: y,
   WIDGET_PENDING_CLEAR: g,
-  WIDGET_SUGGESTED_REMOVE_GAME: T
+  WIDGET_SUGGESTED_REMOVE_GAME: I
 })

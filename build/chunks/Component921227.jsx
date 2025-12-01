@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,13 +47,13 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -90,44 +90,44 @@ function b(e) {
       inputClassName: a,
       disabled: l = false,
       editable: f,
-      inputRef: p,
+      inputRef: _,
       prefixElement: g,
       focusProps: b,
       name: y = "",
       type: O = "text",
       placeholder: v = "",
-      maxLength: I = 999,
-      value: T,
-      defaultValue: S,
+      maxLength: S = 999,
+      value: I,
+      defaultValue: T,
       minLength: A,
       error: C,
       defaultDirty: N = false
     } = e,
-    R = m(e, ["className", "inputClassName", "disabled", "editable", "inputRef", "prefixElement", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty"]);
-  let [P, D] = i.useState(N), w = E(T, S), L = e => {
+    P = h(e, ["className", "inputClassName", "disabled", "editable", "inputRef", "prefixElement", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty"]);
+  let [R, w] = i.useState(N), D = E(I, T), x = e => {
     var t, n;
-    null == (t = R.onChange) || t.call(R, e.currentTarget.value, y), D(true), null == (n = w.setHasValue) || n.call(w, "" !== e.currentTarget.value)
-  }, x = e => {
+    null == (t = P.onChange) || t.call(P, e.currentTarget.value, y), w(true), null == (n = D.setHasValue) || n.call(D, "" !== e.currentTarget.value)
+  }, L = e => {
     var t, n;
-    null == (t = R.onFocus) || t.call(R, e, y), null == (n = w.setIsFocused) || n.call(w, true)
-  }, M = e => {
+    null == (t = P.onFocus) || t.call(P, e, y), null == (n = D.setIsFocused) || n.call(D, true)
+  }, j = e => {
     var t, n;
-    null == (t = R.onBlur) || t.call(R, e, y), null == (n = w.setIsFocused) || n.call(w, false)
-  }, k = i.useMemo(() => {
+    null == (t = P.onBlur) || t.call(P, e, y), null == (n = D.setIsFocused) || n.call(D, false)
+  }, M = i.useMemo(() => {
     var e, t;
-    return null === C || "" === C ? null : null != C ? C : P ? null != A && (null != (e = null == T ? true : T.length) ? e : 0) < A ? u.intl.formatToPlainString(u.t["62rk1K"], {
+    return null === C || "" === C ? null : null != C ? C : R ? null != A && (null != (e = null == I ? true : I.length) ? e : 0) < A ? u.intl.formatToPlainString(u.t["62rk1K"], {
       minLength: A
-    }) : null != I && (null != (t = null == T ? true : T.length) ? t : 0) > I ? u.intl.formatToPlainString(u.t.ICT5S6, {
-      maxLength: I
+    }) : null != S && (null != (t = null == I ? true : I.length) ? t : 0) > S ? u.intl.formatToPlainString(u.t.ICT5S6, {
+      maxLength: S
     }) : null : null
-  }, [C, P, A, I, null == T ? true : T.length]), j = null != C && "" !== C || null != k;
+  }, [C, R, A, S, null == I ? true : I.length]), k = null != C && "" !== C || null != M;
   return (0, r.jsxs)("div", {
     className: o()(d.inputWrapper, n),
-    children: [null != g && g, (0, r.jsx)(s.tEY, h(_({}, b), {
-      children: (0, r.jsx)("input", h(_({
+    children: [null != g && g, (0, r.jsx)(s.tEY, m(p({}, b), {
+      children: (0, r.jsx)("input", m(p({
         name: y,
         className: o()(d.input, a, {
-          [d.error]: j,
+          [d.error]: k,
           [d.disabled]: l,
           [d.editable]: f
         }),
@@ -135,19 +135,19 @@ function b(e) {
         readOnly: false === f || true,
         type: O,
         placeholder: v,
-        maxLength: I,
+        maxLength: S,
         minLength: A,
-        value: T,
-        defaultValue: S
-      }, R), {
-        "aria-labelledby": null != (t = R["aria-labelledby"]) ? t : w.titleId,
-        onChange: L,
-        onBlur: M,
-        onFocus: x,
-        ref: p
+        value: I,
+        defaultValue: T
+      }, P), {
+        "aria-labelledby": null != (t = P["aria-labelledby"]) ? t : D.titleId,
+        onChange: x,
+        onBlur: j,
+        onFocus: L,
+        ref: _
       }))
     })), (0, r.jsx)(c.V, {
-      error: k
+      error: M
     })]
   })
 }

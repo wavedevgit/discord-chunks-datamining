@@ -4,7 +4,7 @@
 require.d(exports, {
   Qy: () => u,
   Uy: () => f,
-  ZP: () => p,
+  ZP: () => _,
   hx: () => d
 }), require("./704826.js"), require("./35282.js");
 var r, Chunk54381 = require("./54381.js"),
@@ -88,7 +88,7 @@ let f = {
   LARGE: Chunk328110.cardIconLarge,
   XLARGE: Chunk328110.cardIconXLarge
 };
-class _ extends(r = Chunk473749.PureComponent) {
+class p extends(r = Chunk473749.PureComponent) {
   static getType(e) {
     return null == e ? "unknown" : u[e.replace(/[^a-z0-9_]/gi, "").toUpperCase()] || "unknown"
   }
@@ -107,8 +107,8 @@ class _ extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-c(_, "Types", u), c(_, "Sizes", f), c(_, "defaultProps", {
+c(p, "Types", u), c(p, "Sizes", f), c(p, "defaultProps", {
   size: f.SMALL,
   flipped: false
 });
-let p = _
+let _ = p

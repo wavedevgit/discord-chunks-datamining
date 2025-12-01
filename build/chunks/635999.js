@@ -16,8 +16,8 @@ var Chunk473749 = require("./473749.js"),
 function d(e, t) {
   let n = (0, i.e7)([l.Z], () => l.Z.getUserDiscountOffer(e)),
     [d, f] = r.useState((0, o.k)(n)),
-    _ = (0, i.e7)([s.default], () => (0, c.I5)(s.default.getCurrentUser())),
-    p = e === u.dT || e === u.dB;
+    p = (0, i.e7)([s.default], () => (0, c.I5)(s.default.getCurrentUser())),
+    _ = e === u.dT || e === u.dB;
   return r.useEffect(() => {
     if (null == n || null == n.expires_at) return;
     let e = new a.V7,
@@ -28,5 +28,5 @@ function d(e, t) {
         })
       };
     return t(), () => e.stop()
-  }, [d, n]), !d && (!_ || t || p) ? n : null
+  }, [d, n]), !d && (!p || t || _) ? n : null
 }

@@ -2,7 +2,7 @@
 /** chunk id: 258833, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk460181 = require("./460181.js"),
@@ -16,15 +16,15 @@ var Chunk147913 = require("./147913.js"),
   Chunk938475 = require("./938475.js"),
   Chunk358221 = require("./358221.js");
 
-function p(e, t) {
+function _(e, t) {
   if (t.has(e)) throw TypeError("Cannot initialize the same private elements twice on an object")
 }
 
-function h(e, t) {
+function m(e, t) {
   return t.get ? t.get.call(e) : t.value
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   if (t.set) t.set.call(e, n);
   else {
     if (!t.writable) throw TypeError("attempted to set read only private field");
@@ -39,16 +39,16 @@ function g(e, t, n) {
 
 function E(e, t) {
   var n = g(e, t, "get");
-  return h(e, n)
+  return m(e, n)
 }
 
 function b(e, t, n) {
-  p(e, t), t.set(e, n)
+  _(e, t), t.set(e, n)
 }
 
 function y(e, t, n) {
   var r = g(e, t, "set");
-  return m(e, r, n), n
+  return h(e, r, n), n
 }
 
 function O(e, t, n) {
@@ -60,13 +60,13 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 let v = (0, Chunk460181.uk)("call_calling", Chunk474873.Z.getSoundpack());
-var I = new WeakMap;
-class T extends Chunk147913.Z {
+var S = new WeakMap;
+class I extends Chunk147913.Z {
   _initialize() {
     this.stores = new Map().set(Chunk523746.Z, this.handleRingUpdate).set(Chunk292959.Z, this.handleRingUpdate).set(Chunk246946.Z, this.handleRingUpdate).set(Chunk979651.Z, this.handleRingUpdate).set(Chunk358221.Z, this.handleChannelRTCStoreChange).set(Chunk474873.Z, this.handleSoundpackUpdate)
   }
   constructor(...e) {
-    super(...e), b(this, I, {
+    super(...e), b(this, S, {
       writable: true,
       value: new Set
     }), O(this, "actions", {
@@ -83,38 +83,38 @@ class T extends Chunk147913.Z {
       let n = c.Z.getVoiceChannelId(),
         r = null != (t = null == (e = s.Z.getChannel(n)) ? true : e.guild_id) ? t : null,
         i = o.Z.getCalls().some(e => e.ringing.length > 0 && d.Z.getCurrentClientVoiceChannelId(null) === e.channelId);
-      this._handleRing(i || E(this, I).size > 0, r)
+      this._handleRing(i || E(this, S).size > 0, r)
     }), O(this, "handleGuildRingStart", e => {
       let {
         ringing: t,
         guildId: n
       } = e;
       t.forEach(e => {
-        E(this, I).add(e)
-      }), this._handleRing(E(this, I).size > 0, n)
+        E(this, S).add(e)
+      }), this._handleRing(E(this, S).size > 0, n)
     }), O(this, "handleGuildRingStop", e => {
       let {
         ringing: t,
         guildId: n
       } = e;
       t.forEach(e => {
-        E(this, I).delete(e)
-      }), this._handleRing(E(this, I).size > 0, n)
+        E(this, S).delete(e)
+      }), this._handleRing(E(this, S).size > 0, n)
     }), O(this, "handleChannelRTCStoreChange", () => {
       let e = c.Z.getVoiceChannelId(),
-        t = E(this, I).size > 0;
+        t = E(this, S).size > 0;
       if (!t) return;
       if (null == e && t) {
-        y(this, I, new Set), this._handleRing(E(this, I).size > 0, null);
+        y(this, S, new Set), this._handleRing(E(this, S).size > 0, null);
         return
       }
       if (null == e) return;
-      let n = _.Z.getGuildRingingUsers(e),
-        r = new Set([...E(this, I)].filter(e => !n.has(e)));
+      let n = p.Z.getGuildRingingUsers(e),
+        r = new Set([...E(this, S)].filter(e => !n.has(e)));
       r.size > 0 && (r.forEach(e => {
-        E(this, I).delete(e)
-      }), this._handleRing(E(this, I).size > 0, null))
+        E(this, S).delete(e)
+      }), this._handleRing(E(this, S).size > 0, null))
     })
   }
 }
-let S = new T
+let T = new I

@@ -2,7 +2,7 @@
 /** chunk id: 374481, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,9 +50,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +60,7 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -68,25 +68,25 @@ function p(e, t) {
   return i
 }
 
-function h(e) {
+function m(e) {
   var {
     children: t,
     gradientClassName: n
-  } = e, a = _(e, ["children", "gradientClassName"]);
+  } = e, a = p(e, ["children", "gradientClassName"]);
   let c = i.useRef(null),
-    [d, p] = i.useState(true),
-    h = () => {
+    [d, _] = i.useState(true),
+    m = () => {
       var e;
-      (null == (e = c.current) ? true : e.isScrolledToBottom()) === true ? p(false) : p(true)
+      (null == (e = c.current) ? true : e.isScrolledToBottom()) === true ? _(false) : _(true)
     };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.h21, f(u({
       fade: true
     }, a), {
       ref: e => {
-        null != e && (c.current = e, h())
+        null != e && (c.current = e, m())
       },
-      onScroll: h,
+      onScroll: m,
       children: t
     })), (0, r.jsx)("div", {
       className: o()(l.containerScrollGradient, n),

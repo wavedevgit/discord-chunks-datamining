@@ -4,20 +4,20 @@
 require.d(exports, {
   $L: () => d,
   AB: () => r,
-  Dt: () => h,
+  Dt: () => m,
   ED: () => s,
   FB: () => a,
   IJ: () => c,
-  Ij: () => I,
+  Ij: () => S,
   Qd: () => b,
   V5: () => l,
   Xf: () => y,
-  eL: () => _,
-  gn: () => m,
+  eL: () => p,
+  gn: () => h,
   jI: () => f,
   l5: () => g,
   nI: () => u,
-  ox: () => p,
+  ox: () => _,
   qU: () => E,
   qq: () => v,
   y8: () => O
@@ -53,21 +53,21 @@ function f() {
   return null != navigator.userAgent && null != navigator.userAgent.toLowerCase().match("(android ).+chrome/[.0-9]* mobile")
 }
 
-function _() {
+function p() {
   var e;
   return (null == (e = navigator.userAgent) ? true : module.match(/android/i)) != null
 }
 
-function p() {
+function _() {
   var e;
   return (null == (e = navigator.userAgent) ? true : module.match(/Macintosh/i)) != null
 }
 
-function h() {
+function m() {
   return "android" === o
 }
 
-function m() {
+function h() {
   return "ios" === o
 }
 
@@ -102,7 +102,7 @@ function v() {
   }
 }
 
-function I() {
+function S() {
   let {
     userAgent: e
   } = window.navigator;

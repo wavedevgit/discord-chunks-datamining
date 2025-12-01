@@ -58,28 +58,28 @@ function f(e) {
     channelId: l,
     guildId: d,
     source: f,
-    size: _ = "sm",
-    variant: p = "secondary",
-    onAction: h
-  } = e, m = u(e, ["activity", "user", "channelId", "guildId", "source", "size", "variant", "onAction"]);
+    size: p = "sm",
+    variant: _ = "secondary",
+    onAction: m
+  } = e, h = u(e, ["activity", "user", "channelId", "guildId", "source", "size", "variant", "onAction"]);
   let {
     tooltip: g,
     loading: E,
     disabled: b,
     onClick: y
   } = (0, s.Fe)(t, n, f, o.ZP.getNickname(d, l, n)), O = () => {
-    null == h || h(), y()
+    null == m || m(), y()
   };
   return (0, r.jsx)(i.u, {
     text: g,
     children: (0, r.jsx)(a.hU, c({
       icon: a.iOO,
-      size: _,
-      variant: p,
+      size: p,
+      variant: _,
       onClick: O,
       disabled: b,
       loading: E,
       "aria-label": null != g ? g : t.name
-    }, m))
+    }, h))
   })
 }

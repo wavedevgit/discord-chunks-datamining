@@ -23,7 +23,7 @@ let l = new Map,
   d = null,
   f = Chunk70956.Z.Millis.HOUR;
 
-function _(e) {
+function p(e) {
   return {
     id: e.id,
     tags: e.tags,
@@ -36,13 +36,13 @@ function _(e) {
   }
 }
 
-function p(e) {
+function _(e) {
   let t = {};
-  for (let n of e) t[n.id] = _(n);
+  for (let n of e) t[n.id] = p(n);
   return t
 }
 
-function h(e, t) {
+function m(e, t) {
   let n = [];
   return n.push({
     type: o.MO.STICKER_NAME,
@@ -52,7 +52,7 @@ function h(e, t) {
     value: t.name
   }), n
 }
-class m extends Chunk429091.d {
+class h extends Chunk429091.d {
   get isFetchingStickerPacks() {
     return u
   }
@@ -75,7 +75,7 @@ class m extends Chunk429091.d {
       for (let n in e)
         for (let [r, i] of Object.entries(e[n].root)) {
           let e = l.get(n);
-          t.set(r, h(i, e))
+          t.set(r, m(i, e))
         }
       return t
     })), s(this, "getStickerById", this.memoizedSecondaryIndex()), s(this, "getPremiumPacks", this.memoized(e => Array.from(c.values())))
@@ -83,10 +83,10 @@ class m extends Chunk429091.d {
 }
 
 function g(e, t, n) {
-  l.set(e.id, e), n && c.set(e.id, e), t.setPartition(e.id, p(e.stickers))
+  l.set(e.id, e), n && c.set(e.id, e), t.setPartition(e.id, _(e.stickers))
 }
-s(m, "displayName", "StickersPackStore");
-let E = new m({
+s(h, "displayName", "StickersPackStore");
+let E = new h({
   LOGOUT: (e, t) => {
     l.clear(), c.clear(), t.reset()
   },
@@ -109,6 +109,6 @@ let E = new m({
     let {
       sticker: n
     } = e;
-    t.set(n.pack_id, n.id, _(n))
+    t.set(n.pack_id, n.id, p(n))
   }
 }, "typescript")

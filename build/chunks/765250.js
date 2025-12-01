@@ -2,17 +2,17 @@
 /** chunk id: 765250, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A4: () => p,
+  A4: () => _,
   E9: () => f,
   K4: () => g,
   Os: () => c,
-  jx: () => h,
+  jx: () => m,
   n6: () => d,
   nv: () => l,
-  sz: () => _,
+  sz: () => p,
   te: () => s,
   xh: () => u,
-  zG: () => m
+  zG: () => h
 });
 var Chunk570140 = require("./570140.js"),
   Chunk444295 = require("./444295.js"),
@@ -87,25 +87,25 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   r.Z.dispatch({
     type: "LAYOUT_DELETE_ALL_WIDGETS",
     layoutId: e
   })
 }
 
-function p(e) {
-  h([e])
+function _(e) {
+  m([e])
 }
 
-function h(e) {
+function m(e) {
   r.Z.dispatch({
     type: "LAYOUT_CREATE_WIDGETS",
     widgetConfigs: e
   })
 }
 
-function m(e, t) {
+function h(e, t) {
   r.Z.dispatch({
     type: "LAYOUT_SET_WIDGET_META",
     widgetId: e,

@@ -9,8 +9,8 @@ var Chunk54381 = require("./54381.js"),
   i = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
-  Chunk831209 = require("./831209.js"),
   Chunk399606 = require("./399606.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk215569 = require("./215569.js"),
   Chunk796027 = require("./796027.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -153,7 +153,7 @@ function J(e) {
     productId: en,
     transitionState: er,
     onClose: ea
-  } = e, [ei, el] = r.useState(en), eo = (0, d.e7)([P.Z], () => null == ei ? null : P.Z.getGuildProduct(ei), [ei]), es = (0, d.e7)([P.Z], () => P.Z.getGuildProductsForGuild(eA, {
+  } = e, [ei, el] = r.useState(en), eo = (0, s.e7)([P.Z], () => null == ei ? null : P.Z.getGuildProduct(ei), [ei]), es = (0, s.e7)([P.Z], () => P.Z.getGuildProductsForGuild(eA, {
     publishedOnly: true
   }).length, [eA]), ed = (null == eo ? true : eo.published) === true, {
     application: eu
@@ -172,7 +172,7 @@ function J(e) {
     saveProductWithAttachments: eX,
     hasUnsavedAttachmentChanges: eQ,
     cancelUnusedUploads: eS
-  } = (0, O.P)(), ez = (null == eo ? true : eo.attachments) != null && (null == eo ? true : eo.attachments.length) > 0, ew = null != eW ? eW : ey, eB = null != eZ && "published" in eZ, eL = null != eZ && !eB, eD = null != (b = null == eo ? true : eo.role_id) ? b : null, [eR, ek] = r.useState(), eE = null != eR || null != eD, eG = (0, d.e7)([U.Z], () => null != eD && null !== eR ? U.Z.getRole(eA, eD) : null != eR ? eR : true, [eR, eD, eA]), eY = "";
+  } = (0, O.P)(), ez = (null == eo ? true : eo.attachments) != null && (null == eo ? true : eo.attachments.length) > 0, ew = null != eW ? eW : ey, eB = null != eZ && "published" in eZ, eL = null != eZ && !eB, eD = null != (b = null == eo ? true : eo.role_id) ? b : null, [eR, ek] = r.useState(), eE = null != eR || null != eD, eG = (0, s.e7)([U.Z], () => null != eD && null !== eR ? U.Z.getRole(eA, eD) : null != eR ? eR : true, [eR, eD, eA]), eY = "";
   eE && eK ? eY = B.intl.string(B.t.ih4QMU) : eE ? eY = B.intl.string(B.t.o9xphc) : eK && (eY = B.intl.string(B.t.DWYJua));
   let eH = () => {
       eT(false), eS()
@@ -203,8 +203,8 @@ function J(e) {
           className: L.successNoticeMessage,
           children: [(0, n.jsx)(g.owK, {
             size: "md",
-            color: s.Z.BUTTON_POSITIVE_BACKGROUND,
-            secondaryColor: s.Z.WHITE
+            color: d.Z.colors.BUTTON_POSITIVE_BACKGROUND.css,
+            secondaryColor: d.Z.colors.WHITE.css
           }), (0, n.jsx)(g.Text, {
             variant: "text-md/medium",
             children: "draft" === eM ? B.intl.string(B.t["3Rv4MB"]) : "update_publish" === eM ? B.intl.string(B.t["8fPiB3"]) : B.intl.string(B.t["3LUFnI"])

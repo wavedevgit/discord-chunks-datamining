@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   I: () => E,
-  Z: () => I
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,7 +24,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,13 +48,13 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -92,50 +92,50 @@ function O(e) {
     guildId: s,
     channelId: d,
     messageId: f,
-    roleId: p,
+    roleId: _,
     disableUserProfileLink: g,
     newAnalyticsLocations: b,
     appContext: y,
     avatarUrl: O,
     preload: v,
-    renderPopout: I,
-    onRequestOpen: T,
-    onRequestClose: S,
+    renderPopout: S,
+    onRequestOpen: I,
+    onRequestClose: T,
     onClosePopout: A,
     shouldShow: C,
     shouldPreload: N = true
-  } = e, R = m(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
-  let P = i.useRef(true),
-    D = i.useCallback(() => null != v ? v() : (0, l.Z)(n.id, null != O ? O : n.getAvatarURL(s, E), {
+  } = e, P = h(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
+  let R = i.useRef(true),
+    w = i.useCallback(() => null != v ? v() : (0, l.Z)(n.id, null != O ? O : n.getAvatarURL(s, E), {
       type: "popout",
       withMutualGuilds: n.id !== a.id,
       withMutualFriends: !n.bot && n.id !== a.id,
       guildId: s,
       channelId: d
     }), [v, a, n, O, s, d]),
-    w = i.useCallback(e => (P.current = Date.now(), null != I) ? I(e, P.current) : (0, r.jsx)(c.Z, h(_({}, e), {
+    D = i.useCallback(e => (R.current = Date.now(), null != S) ? S(e, R.current) : (0, r.jsx)(c.Z, m(p({}, e), {
       user: n,
       currentUser: a,
       guildId: s,
       channelId: d,
-      roleId: p,
+      roleId: _,
       messageId: f,
       disableUserProfileLink: g,
       newAnalyticsLocations: b,
       appContext: y,
-      openedAt: P.current,
+      openedAt: R.current,
       closePopout: () => {
         e.closePopout(), null == A || A()
       }
-    })), [n, a, I, s, d, p, f, g, b, y, A]);
-  return (0, r.jsx)(o.yRy, h(_({
+    })), [n, a, S, s, d, _, f, g, b, y, A]);
+  return (0, r.jsx)(o.yRy, m(p({
     popoutKey: u.Tg,
     shouldShow: C,
-    preload: N ? D : true,
-    renderPopout: w,
-    onRequestOpen: T,
-    onRequestClose: S
-  }, R), {
+    preload: N ? w : true,
+    renderPopout: D,
+    onRequestOpen: I,
+    onRequestClose: T
+  }, P), {
     children: t
   }))
 }
@@ -145,13 +145,13 @@ function v(e) {
     children: t,
     userId: n,
     user: i
-  } = e, o = m(e, ["children", "userId", "user"]);
+  } = e, o = h(e, ["children", "userId", "user"]);
   let l = (0, a.e7)([s.default], () => s.default.getCurrentUser()),
     c = (0, a.e7)([s.default], () => null != i ? i : s.default.getUser(n));
-  return null == c || null == l ? t(b, y) : (0, r.jsx)(O, h(_({}, o), {
+  return null == c || null == l ? t(b, y) : (0, r.jsx)(O, m(p({}, o), {
     user: c,
     currentUser: l,
     children: t
   }))
 }
-let I = Chunk473749.memo(v)
+let S = Chunk473749.memo(v)

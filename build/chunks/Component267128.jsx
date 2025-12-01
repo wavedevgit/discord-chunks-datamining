@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk724913 = require("./724913.js"),
   Chunk430864 = require("./430864.js");
 
-function w(e) {
+function D(e) {
   let {
     width: t = 12,
     height: n = 8,
@@ -56,7 +56,7 @@ function w(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     width: t = 18,
     height: n = 18,
@@ -76,7 +76,7 @@ function L(e) {
   })
 }
 
-function x(e, t, n, i, a, s) {
+function L(e, t, n, i, a, s) {
   return (0, r.jsx)("img", {
     alt: "",
     src: (null == t ? true : t.guildMemberAvatar) != null && null != n ? (0, y.JM)({
@@ -87,61 +87,61 @@ function x(e, t, n, i, a, s) {
     onClick: i,
     onContextMenu: a,
     className: o()({
-      [P.replyAvatar]: true,
-      [P.clickable]: null != i
+      [R.replyAvatar]: true,
+      [R.clickable]: null != i
     }),
     ref: s
   })
 }
 
-function M(e, t, n) {
+function j(e, t, n) {
   let {
     referencedMessage: a,
     channel: o,
     compact: s,
     isReplyAuthorBlocked: l,
     repliedAuthor: f,
-    showAvatarPopout: _,
-    onClickAvatar: p,
-    onContextMenu: h,
-    onPopoutRequestClose: m
+    showAvatarPopout: p,
+    onClickAvatar: _,
+    onContextMenu: m,
+    onPopoutRequestClose: h
   } = e, {
     analyticsLocations: E
   } = (0, d.ZP)(u.Z.AVATAR), b = i.useRef(null);
   if (s || a.state !== g.Y.LOADED || l) return n === N.uaV.CONTEXT_MENU_COMMAND ? (0, r.jsx)("div", {
-    className: P.replyChatIconContainer,
+    className: R.replyChatIconContainer,
     children: (0, r.jsx)(c.kBi, {
       size: "xs"
     })
   }) : (0, r.jsx)("div", {
-    className: P.replyBadge,
-    children: (0, r.jsx)(w, {
-      className: P.replyIcon
+    className: R.replyBadge,
+    children: (0, r.jsx)(D, {
+      className: R.replyIcon
     })
   });
-  if (a.message.type === N.uaV.USER_JOIN || a.message.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || a.message.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || a.message.type === N.uaV.GUILD_GAMING_STATS_PROMPT) return (0, r.jsx)(L, {
-    className: P.userJoinSystemMessageIcon
+  if (a.message.type === N.uaV.USER_JOIN || a.message.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || a.message.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || a.message.type === N.uaV.GUILD_GAMING_STATS_PROMPT) return (0, r.jsx)(x, {
+    className: R.userJoinSystemMessageIcon
   });
   if (a.message.type === N.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, r.jsx)(c.Prq, {
     size: "md",
     color: "currentColor",
-    className: P.ticketIcon
+    className: R.ticketIcon
   });
   if (a.message.type === N.uaV.POLL_RESULT) return (0, r.jsx)(c.QDj, {
-    className: P.repliedTextContentLeadingIcon,
+    className: R.repliedTextContentLeadingIcon,
     width: C.WW,
     height: C.WW,
     size: "custom"
   });
-  let y = () => x(a.message.author, f, o.guild_id, p, h, b);
-  return null != t && null != _ ? (0, r.jsx)(d.Gt, {
+  let y = () => L(a.message.author, f, o.guild_id, _, m, b);
+  return null != t && null != p ? (0, r.jsx)(d.Gt, {
     value: E,
     children: (0, r.jsx)(c.yRy, {
       targetElementRef: b,
       renderPopout: t,
-      shouldShow: _,
+      shouldShow: p,
       position: "right",
-      onRequestClose: m,
+      onRequestClose: h,
       children: y
     })
   }) : (0, r.jsx)(d.Gt, {
@@ -150,7 +150,7 @@ function M(e, t, n) {
   })
 }
 
-function k(e, t) {
+function M(e, t) {
   let {
     baseMessage: n,
     channel: i,
@@ -160,7 +160,7 @@ function k(e, t) {
     onContextMenu: l,
     onPopoutRequestClose: c
   } = e, u = (null == a ? true : a.state) === g.Y.LOADED ? a.message : true;
-  return null == u || u.type === N.uaV.USER_JOIN || u.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || u.type === N.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || u.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || u.type === N.uaV.GUILD_GAMING_STATS_PROMPT || u.type === N.uaV.POLL_RESULT ? null : (0, r.jsx)(S.Z, {
+  return null == u || u.type === N.uaV.USER_JOIN || u.type === N.uaV.ROLE_SUBSCRIPTION_PURCHASE || u.type === N.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || u.type === N.uaV.GUILD_DEADCHAT_REVIVE_PROMPT || u.type === N.uaV.GUILD_GAMING_STATS_PROMPT || u.type === N.uaV.POLL_RESULT ? null : (0, r.jsx)(T.Z, {
     message: u,
     channel: i,
     compact: true,
@@ -174,7 +174,7 @@ function k(e, t) {
   })
 }
 
-function j(e, t, n) {
+function k(e, t, n) {
   let {
     content: i,
     referencedMessage: a,
@@ -188,23 +188,23 @@ function j(e, t, n) {
         contentPlaceholder: e,
         renderedContent: u,
         trailingIcon: f,
-        leadingIcon: _
-      } = U(a.message, i, s, l, P.repliedTextContent, {
-        trailingIconClass: P.repliedTextContentTrailingIcon,
-        leadingIconClass: P.repliedTextContentLeadingIcon,
+        leadingIcon: p
+      } = U(a.message, i, s, l, R.repliedTextContent, {
+        trailingIconClass: R.repliedTextContentTrailingIcon,
+        leadingIconClass: R.repliedTextContentLeadingIcon,
         iconSize: C.WW
       });
       return (0, r.jsxs)(r.Fragment, {
-        children: [_, (0, r.jsx)(c.P3F, {
-          className: o()(P.repliedTextPreview, P.clickable, {
-            [P.repliedMessageClickableSpineHovered]: t
+        children: [p, (0, r.jsx)(c.P3F, {
+          className: o()(R.repliedTextPreview, R.clickable, {
+            [R.repliedMessageClickableSpineHovered]: t
           }),
           onClick: d,
           onMouseEnter: n,
           onMouseLeave: n,
           children: (0, r.jsx)(c.nuw, {
             children: null != u ? u : (0, r.jsx)("span", {
-              className: P.repliedTextPlaceholder,
+              className: R.repliedTextPlaceholder,
               children: e
             })
           })
@@ -213,19 +213,19 @@ function j(e, t, n) {
     }
     case g.Y.NOT_LOADED:
       return (0, r.jsx)(c.P3F, {
-        className: o()(P.repliedTextPreview, P.clickable),
+        className: o()(R.repliedTextPreview, R.clickable),
         onClick: d,
         children: (0, r.jsx)("span", {
-          className: P.repliedTextPlaceholder,
-          children: R.intl.string(R.t["1i+hMi"])
+          className: R.repliedTextPlaceholder,
+          children: P.intl.string(P.t["1i+hMi"])
         })
       });
     case g.Y.DELETED:
       return (0, r.jsx)("div", {
-        className: P.repliedTextPreview,
+        className: R.repliedTextPreview,
         children: (0, r.jsx)("span", {
-          className: P.repliedTextPlaceholder,
-          children: R.intl.string(R.t.mE3KJN)
+          className: R.repliedTextPlaceholder,
+          children: P.intl.string(P.t.mE3KJN)
         })
       });
     default:
@@ -234,51 +234,51 @@ function j(e, t, n) {
 }
 
 function U(e, t, n, i, a, s) {
-  let l, u, d, g, E = (0, p.Z)(e),
+  let l, u, d, g, E = (0, _.Z)(e),
     {
       trailingIconClass: y,
       leadingIconClass: O,
       iconSize: v
     } = s,
-    I = null == t || "" === t || Array.isArray(t) && 0 === t.length,
-    S = (0, b.cv)(E).length > 0,
+    S = null == t || "" === t || Array.isArray(t) && 0 === t.length,
+    T = (0, b.cv)(E).length > 0,
     A = null != E.interaction,
     C = E.hasFlag(N.iLy.IS_VOICE_MESSAGE),
-    w = E.isPoll(),
-    L = E.type === N.uaV.POLL_RESULT;
-  if ((0, _.Z)(e) && (g = (0, r.jsx)(h.Z, {
+    D = E.isPoll(),
+    x = E.type === N.uaV.POLL_RESULT;
+  if ((0, p.Z)(e) && (g = (0, r.jsx)(m.Z, {
       size: "custom",
       className: O,
       width: v,
       height: v
-    })), n) l = R.intl.string(R.t.XAkOo2);
-  else if (i) l = R.intl.string(R.t["G7p6v/"]);
-  else if (E.type === N.uaV.CHANNEL_PINNED_MESSAGE) l = R.intl.string(R.t.sCfDDl);
+    })), n) l = P.intl.string(P.t.XAkOo2);
+  else if (i) l = P.intl.string(P.t["G7p6v/"]);
+  else if (E.type === N.uaV.CHANNEL_PINNED_MESSAGE) l = P.intl.string(P.t.sCfDDl);
   else if (E.type === N.uaV.EMOJI_ADDED) u = (0, r.jsx)(f.Zh, {
     message: E,
     rendered: t
   });
-  else if (I)
-    if (w) {
-      var x, M;
+  else if (S)
+    if (D) {
+      var L, j;
       u = (0, r.jsx)("div", {
-        className: o()(P.repliedTextContent, D.markup),
-        children: null == E || null == (M = E.poll) || null == (x = M.question) ? true : x.text
+        className: o()(R.repliedTextContent, w.markup),
+        children: null == E || null == (j = E.poll) || null == (L = j.question) ? true : L.text
       })
-    } else L ? l = (0, m.N4)(E) : S ? l = R.intl.string(R.t.kHdYCW) : A ? l = R.intl.string(R.t["E+6SSY"]) : C ? l = R.intl.string(R.t.XC3A52) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6S) : (l = R.intl.string(R.t["6hGo0c"]), d = (0, r.jsx)(c.XBm, {
+    } else x ? l = (0, h.N4)(E) : T ? l = P.intl.string(P.t.kHdYCW) : A ? l = P.intl.string(P.t["E+6SSY"]) : C ? l = P.intl.string(P.t.XC3A52) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = P.intl.string(P.t.Xxat6S) : (l = P.intl.string(P.t["6hGo0c"]), d = (0, r.jsx)(c.XBm, {
       size: "custom",
       color: "currentColor",
       className: y,
       width: v,
       height: v
     }));
-  else u = (0, r.jsx)(T.ZP, {
+  else u = (0, r.jsx)(I.ZP, {
     message: E,
     content: t,
     className: a,
     compact: true
   });
-  return S ? d = (0, r.jsx)(c.B7q, {
+  return T ? d = (0, r.jsx)(c.B7q, {
     size: "custom",
     color: "currentColor",
     className: y,
@@ -296,7 +296,7 @@ function U(e, t, n, i, a, s) {
     className: y,
     width: 19 / 24 * v,
     height: v
-  }) : (E.attachments.length > 0 || E.embeds.length > 0) && !L && (d = (0, r.jsx)(c.XBm, {
+  }) : (E.attachments.length > 0 || E.embeds.length > 0) && !x && (d = (0, r.jsx)(c.XBm, {
     size: "custom",
     color: "currentColor",
     className: y,
@@ -318,31 +318,31 @@ function G(e) {
       referencedMessage: u,
       renderPopout: d,
       isReplySpineClickable: f,
-      showReplySpine: _
+      showReplySpine: p
     } = e,
-    [p, h] = i.useState(false),
-    m = i.useMemo(() => null != d && u.state === g.Y.LOADED ? e => d(e, u.message) : true, [u, d]),
-    E = i.useCallback(() => h(e => !e), []),
-    b = M(e, m, s.type),
-    y = k(e, m),
-    v = j(e, p, E),
-    T = i.useMemo(() => e.compact ? (0, A.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
-  null != n && null != a && (t = R.intl.formatToPlainString(R.t.RhbQ2K, {
+    [_, m] = i.useState(false),
+    h = i.useMemo(() => null != d && u.state === g.Y.LOADED ? e => d(e, u.message) : true, [u, d]),
+    E = i.useCallback(() => m(e => !e), []),
+    b = j(e, h, s.type),
+    y = M(e, h),
+    v = k(e, _, E),
+    I = i.useMemo(() => e.compact ? (0, A.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
+  null != n && null != a && (t = P.intl.formatToPlainString(P.t.RhbQ2K, {
     author: null == a ? true : a.nick,
     repliedAuthor: null == n ? true : n.nick
   }));
-  let S = s.type === N.uaV.CONTEXT_MENU_COMMAND;
+  let T = s.type === N.uaV.CONTEXT_MENU_COMMAND;
   return (0, r.jsxs)("div", {
-    id: (0, I.Gq)(s),
-    className: o()(P.repliedMessage, T, S ? P.contextCommandMessage : {
-      [P.messageSpine]: !f && _
+    id: (0, S.Gq)(s),
+    className: o()(R.repliedMessage, I, T ? R.contextCommandMessage : {
+      [R.messageSpine]: !f && p
     }),
     "aria-label": t,
-    children: [f && _ && (0, r.jsx)(c.P3F, {
+    children: [f && p && (0, r.jsx)(c.P3F, {
       tag: "div",
-      "aria-label": R.intl.string(R.t.dpjpOp),
-      className: o()(P.repliedMessageClickableSpine, {
-        [P.repliedMessageContentHovered]: p
+      "aria-label": P.intl.string(P.t.dpjpOp),
+      className: o()(R.repliedMessageClickableSpine, {
+        [R.repliedMessageContentHovered]: _
       }),
       onClick: e.onClickReply,
       onMouseEnter: E,

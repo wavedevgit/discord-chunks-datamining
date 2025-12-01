@@ -31,43 +31,43 @@ function O(e) {
     body: o,
     overrideKey: O,
     paymentError: v,
-    header: I,
-    footer: T,
-    isGift: S = false,
+    header: S,
+    footer: I,
+    isGift: T = false,
     giftMessage: A = E.intl.string(E.t["DrgnS+"]),
     hideBreadcrumbs: C = false,
     isLoading: N = false,
-    purchaseError: R,
-    purchaseErrorBlockRef: P,
-    planError: D,
-    onScroll: w,
-    scrollerClassName: L,
-    hasCurrencies: x = false
-  } = e, M = null;
-  null != v && null == (0, p.ly)(v) ? M = v : null != R ? M = R : null != D && (M = D);
-  let k = null != M ? M.message : "";
-  null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && x && (k += " ".concat(E.intl.string(E.t.iWvwQS))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd8)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWE)));
+    purchaseError: P,
+    purchaseErrorBlockRef: R,
+    planError: w,
+    onScroll: D,
+    scrollerClassName: x,
+    hasCurrencies: L = false
+  } = e, j = null;
+  null != v && null == (0, _.ly)(v) ? j = v : null != P ? j = P : null != w && (j = w);
+  let M = null != j ? j.message : "";
+  null != j && j instanceof d.HF && (j.code === f.SM.CARD_DECLINED && L && (M += " ".concat(E.intl.string(E.t.iWvwQS))), j.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.intl.string(E.t.ypuSd8)), j.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.intl.string(E.t.mXMmWE)));
   let {
-    stripe: j
-  } = (0, _.JL)();
-  N = N || null == j;
+    stripe: k
+  } = (0, p.JL)();
+  N = N || null == k;
   let U = i.useRef(new l.V7);
   i.useEffect(() => {
     let e = U.current;
-    return null != j || e.isStarted() ? null != j && e.stop() : e.start(10 * m.Z.Millis.SECOND, () => {
+    return null != k || e.isStarted() ? null != k && e.stop() : e.start(10 * h.Z.Millis.SECOND, () => {
       let e = Error("Stripe took too long to load");
-      (0, h.q2)(e)
+      (0, m.q2)(e)
     }), () => {
       e.stop()
     }
-  }, [j]);
-  let G = t.includes(p.h8.PAYMENT_TYPE) ? p.h8.PAYMENT_TYPE : p.h8.ADD_PAYMENT_STEPS;
+  }, [k]);
+  let G = t.includes(_.h8.PAYMENT_TYPE) ? _.h8.PAYMENT_TYPE : _.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(a.Elements, {
     options: g.OBo,
-    stripe: j,
-    children: [I, (0, r.jsxs)("div", {
+    stripe: k,
+    children: [S, (0, r.jsxs)("div", {
       className: s()("paymentModalContent", b.content),
-      children: [S && n !== p.h8.CONFIRM ? (0, r.jsx)(u.Z, {
+      children: [T && n !== _.h8.CONFIRM ? (0, r.jsx)(u.Z, {
         className: b.paymentNote,
         iconSize: u.Z.Sizes.SMALL,
         icon: c.OgN,
@@ -76,20 +76,20 @@ function O(e) {
       }) : null, C ? null : (0, r.jsx)("div", {
         className: b.breadcrumbsWrapper,
         children: (0, r.jsx)(c.OoM, {
-          activeId: p.Ck.has(n) ? G : n,
-          breadcrumbs: t.filter(e => !p.Ck.has(e) && !y.has(e)).map(e => ({
+          activeId: _.Ck.has(n) ? G : n,
+          breadcrumbs: t.filter(e => !_.Ck.has(e) && !y.has(e)).map(e => ({
             id: e,
-            label: (0, p.DJ)(e)
+            label: (0, _.DJ)(e)
           }))
         })
       }), (0, r.jsxs)("div", {
         className: b.bodyWrapper,
-        children: [null == M ? null : (0, r.jsx)("div", {
+        children: [null == j ? null : (0, r.jsx)("div", {
           className: b.errorBlockWrapper,
-          ref: P,
+          ref: R,
           children: (0, r.jsx)(c.M14, {
             type: "critical",
-            children: k
+            children: M
           })
         }), N ? (0, r.jsx)(c.$jN, {
           className: b.loadingBlock
@@ -103,12 +103,12 @@ function O(e) {
           steps: t,
           sideMargin: 20,
           children: (0, r.jsx)(c.h21, {
-            onScroll: w,
-            className: s()(b.scroller, L),
+            onScroll: D,
+            className: s()(b.scroller, x),
             children: o
           })
         })]
       })]
-    }), T]
+    }), I]
   })
 }

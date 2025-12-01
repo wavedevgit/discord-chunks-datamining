@@ -29,33 +29,33 @@ function c(e) {
       })]
     }), (0, a.jsxs)("div", {
       className: o.content,
-      children: [(0, a.jsx)(l.P3F, {
+      children: [(0, a.jsx)(r.P3F, {
         className: o.closeIcon,
-        onClick: () => t(r.L.USER_DISMISS),
-        children: (0, a.jsx)(l.Dio, {})
+        onClick: () => t(i.L.USER_DISMISS),
+        children: (0, a.jsx)(r.Dio, {})
       }), (0, a.jsx)("img", {
         src: n(414190),
         className: o.art,
         alt: ""
       }), (0, a.jsxs)("div", {
-        children: [(0, a.jsxs)(l.Heading, {
+        children: [(0, a.jsxs)(r.Heading, {
           variant: "heading-md/semibold",
           color: "header-primary",
           className: o.heading,
-          children: [s.intl.string(s.t.MLt8H4), (0, a.jsx)(i.Z, {
+          children: [s.intl.string(s.t.MLt8H4), (0, a.jsx)(l.Z, {
             className: o.betaTag
           })]
-        }), (0, a.jsx)(l.Text, {
+        }), (0, a.jsx)(r.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           children: s.intl.string(s.t["l+lSLp"])
         })]
-      }), (0, a.jsx)(l.Button, {
+      }), (0, a.jsx)(r.Button, {
         variant: "primary",
         text: s.intl.string(s.t["9WdoB+"]),
         fullWidth: true,
         onClick: () => {
-          t(r.L.TAKE_ACTION), c()
+          t(i.L.TAKE_ACTION), c()
         }
       })]
     })]

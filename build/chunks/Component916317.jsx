@@ -74,7 +74,7 @@ function f(e) {
     onClose: l,
     targetElementRef: d,
     source: f
-  } = e, _ = u(e, ["applicationId", "name", "position", "onClose", "targetElementRef", "source"]);
+  } = e, p = u(e, ["applicationId", "name", "position", "onClose", "targetElementRef", "source"]);
   return (0, r.jsx)(i.yRy, s({
     targetElementRef: d,
     position: o,
@@ -87,5 +87,5 @@ function f(e) {
       name: n,
       source: f
     }))
-  }, _))
+  }, p))
 }

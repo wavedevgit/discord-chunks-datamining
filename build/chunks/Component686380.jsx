@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk269143 = require("./269143.js"),
   Chunk295234 = require("./295234.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,20 +43,20 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
 }
 
-function x(e, t) {
+function L(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,13 +67,13 @@ function x(e, t) {
   return n
 }
 
-function M(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function j(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = "???",
-  j = e => {
+let M = "???",
+  k = e => {
     let {
       analyticsLocations: t,
       startingScreen: i
@@ -84,7 +84,7 @@ let k = "???",
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 656139));
-      return t => (0, r.jsx)(e, M(L({}, t), {
+      return t => (0, r.jsx)(e, j(x({}, t), {
         startingScreen: i
       }))
     })
@@ -104,9 +104,9 @@ class U extends Chunk473749.Component {
   }
   getTitleText() {
     let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-      t = null != module ? module.username : k,
+      t = null != module ? module.username : M,
       n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-      r = null != require ? require.username : k;
+      r = null != require ? require.username : M;
     return this.recipientHasNitro && true === this.trialOffer.redeemed_at ? Chunk388032.intl.formatToPlainString(Chunk388032.t["Mptau/"], {
       username: exports
     }) : this.offerExpired ? this.isSender ? Chunk388032.intl.string(Chunk388032.t["9SNdf4"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["H0+MxK"], {
@@ -170,9 +170,9 @@ class U extends Chunk473749.Component {
   render() {
     let e = () => {
         let e = Chunk594174.default.getUser(this.trialOffer.user_id),
-          t = null != module ? module.username : k,
+          t = null != module ? module.username : M,
           n = Chunk594174.default.getUser(this.trialOffer.referrer_id),
-          r = null != require ? require.username : k;
+          r = null != require ? require.username : M;
         if (this.isSender)
           if (this.recipientHasNitro && true === this.trialOffer.redeemed_at) return {
             headerText: Chunk388032.intl.formatToPlainString(Chunk388032.t.qABVhL, {
@@ -216,7 +216,7 @@ class U extends Chunk473749.Component {
         variant: "primary",
         disabled: false,
         size: "md",
-        onClick: () => j({
+        onClick: () => k({
           analyticsLocations: [],
           startingScreen: this.referralsSent.size === Chunk796634.Q ? Chunk656139.SelectFriendsModalScreens.REMINDER : Chunk656139.SelectFriendsModalScreens.SELECT_FRIENDS
         }),
@@ -269,7 +269,7 @@ class U extends Chunk473749.Component {
     })
   }
   constructor(e) {
-    super(e), w(this, "trialOffer", true), w(this, "referralsSent", true), w(this, "currentUser", true), w(this, "recipientHasNitro", true), w(this, "trialEndsAt", true), w(this, "analyticsLocations", true), w(this, "offerExpired", true), w(this, "isSender", true), w(this, "compact", true), this.trialOffer = e.trialOffer, this.referralsSent = e.referralsSent, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.compact = true === e.compact, this.offerExpired = (0, A.B)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
+    super(e), D(this, "trialOffer", true), D(this, "referralsSent", true), D(this, "currentUser", true), D(this, "recipientHasNitro", true), D(this, "trialEndsAt", true), D(this, "analyticsLocations", true), D(this, "offerExpired", true), D(this, "isSender", true), D(this, "compact", true), this.trialOffer = e.trialOffer, this.referralsSent = e.referralsSent, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.compact = true === e.compact, this.offerExpired = (0, A.B)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
   }
 }
 
@@ -286,26 +286,26 @@ function G(e) {
     trialOffer: n ? O.Z.getRelevantUserTrialOffer(t) : null,
     isResolving: !!n && O.Z.isResolving(t),
     referralsSent: O.Z.getRecipientStatus()
-  }), [n, t]), _ = h.default.getCurrentUser(), p = (0, l.e7)([h.default], () => null != a && (0, y.I5)(true !== _ && a.user_id === _.id ? _ : h.default.getUser(a.user_id))), g = (0, l.e7)([m.Z], () => {
+  }), [n, t]), p = m.default.getCurrentUser(), _ = (0, l.e7)([m.default], () => null != a && (0, y.I5)(true !== p && a.user_id === p.id ? p : m.default.getUser(a.user_id))), g = (0, l.e7)([h.Z], () => {
     var e;
-    return p ? null == (e = m.Z.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
+    return _ ? null == (e = h.Z.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
   }), {
     analyticsLocations: E
   } = (0, f.ZP)(d.Z.SHARE_NITRO_EMBED);
   return o ? (0, r.jsx)(u.OR, {
     isHorizontal: !s.tq
-  }) : n && null != a && true !== _ ? (0, r.jsx)(U, {
+  }) : n && null != a && true !== p ? (0, r.jsx)(U, {
     trialOffer: a,
     referralsSent: c,
-    currentUser: _,
-    recipientHasNitro: p,
+    currentUser: p,
+    recipientHasNitro: _,
     trialEndsAt: g,
     analyticsLocations: E,
     compact: i
   }) : (0, r.jsx)("div", {
-    className: P.invalidWrapper,
+    className: R.invalidWrapper,
     children: (0, r.jsx)("div", {
-      className: P.invalid
+      className: R.invalid
     })
   })
 }

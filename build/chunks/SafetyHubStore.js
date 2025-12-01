@@ -21,33 +21,33 @@ function u(e, t, n) {
 }
 let d = {},
   f = {},
-  _ = {
+  p = {
     state: Chunk531441.Sn.ALL_GOOD
   },
-  p = false,
-  h = false,
-  m = null,
+  _ = false,
+  m = false,
+  h = null,
   g = null,
   E = false,
   b = false,
   y = [],
   O = false,
   v = null,
-  I = Chunk800530.bK.DIDNT_VIOLATE_POLICY,
+  S = Chunk800530.bK.DIDNT_VIOLATE_POLICY,
+  I = "",
   T = "",
-  S = "",
   A = "",
   C = 0,
   N = null,
-  R = false,
-  P = Chunk800530.oE.NONE,
-  D = null;
+  P = false,
+  R = Chunk800530.oE.NONE,
+  w = null;
 
-function w(e) {
-  p = true
+function D(e) {
+  _ = true
 }
 
-function L(e) {
+function x(e) {
   let {
     classifications: t,
     accountStanding: n,
@@ -56,21 +56,21 @@ function L(e) {
     username: o,
     appealEligibility: s
   } = e;
-  d = a()(t, "id"), _ = n, E = r, b = i, p = false, h = true, m = null, S = o, y = s
+  d = a()(t, "id"), p = n, E = r, b = i, _ = false, m = true, h = null, T = o, y = s
 }
 
-function x(e) {
+function L(e) {
   let {
     error: t
   } = e;
-  p = false, h = false, m = t
+  _ = false, m = false, h = t
+}
+
+function j(e) {
+  f[e.classificationId] = l.OY.PENDING, _ = true
 }
 
 function M(e) {
-  f[e.classificationId] = l.OY.PENDING, p = true
-}
-
-function k(e) {
   let {
     classification: t,
     accountStanding: n,
@@ -78,15 +78,15 @@ function k(e) {
     username: i,
     isAppealEligible: a
   } = e;
-  d[t.id] = t, f[t.id] = l.OY.SUCCESS, _ = n, p = false, m = null, E = r, b = a, h = true, S = i
+  d[t.id] = t, f[t.id] = l.OY.SUCCESS, p = n, _ = false, h = null, E = r, b = a, m = true, T = i
 }
 
-function j(e) {
+function k(e) {
   let {
     error: t,
     classificationId: n
   } = e;
-  p = false, m = t, f[n] = l.OY.FAILED, h = false
+  _ = false, h = t, f[n] = l.OY.FAILED, m = false
 }
 
 function U(e) {
@@ -97,21 +97,21 @@ function U(e) {
 }
 
 function G() {
-  g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, T = ""
-}
-
-function B(e) {
-  let {
-    signal: t
-  } = e;
-  I = t
+  g = null, S = Chunk800530.bK.DIDNT_VIOLATE_POLICY, I = ""
 }
 
 function Z(e) {
   let {
+    signal: t
+  } = e;
+  S = t
+}
+
+function B(e) {
+  let {
     userInput: t
   } = e;
-  T = t
+  I = t
 }
 
 function F(e) {
@@ -135,69 +135,69 @@ function H(e) {
   O = false, v = t
 }
 
-function W(e) {
+function Y(e) {
   let {} = e;
-  A = "", N = null, R = true
+  A = "", N = null, P = true
 }
 
-function Y(e) {
+function W(e) {
   let {
     verificationWebviewUrl: t
   } = e;
-  A = t, N = null, R = false
+  A = t, N = null, P = false
 }
 
 function K(e) {
   let {
     error: t
   } = e;
-  A = "", N = t, R = false
+  A = "", N = t, P = false
 }
 
 function z(e) {
   let {} = e;
-  A = "", N = null, R = false
+  A = "", N = null, P = false
 }
 
 function q(e) {
   let {} = e;
-  for (let e in P = c.oE.LOADING, d) d[e].is_coppa && (d[e].appeal_status = {
+  for (let e in R = c.oE.LOADING, d) d[e].is_coppa && (d[e].appeal_status = {
     status: l.hQ.REVIEW_PENDING
   })
 }
 
-function X(e) {
-  let {} = e;
-  P = c.oE.LOADING, D = null
-}
-
 function Q(e) {
   let {} = e;
-  P = c.oE.LOADING, D = null, C += 1
+  R = c.oE.LOADING, w = null
+}
+
+function X(e) {
+  let {} = e;
+  R = c.oE.LOADING, w = null, C += 1
 }
 
 function J(e) {
   let {
     success: t
   } = e;
-  P = t ? c.oE.SUCCESS : C < c.o6 ? c.oE.LOADING : c.oE.FAILURE, D = null
+  R = t ? c.oE.SUCCESS : C < c.o6 ? c.oE.LOADING : c.oE.FAILURE, w = null
 }
 
 function $(e) {
   let {
     error: t
   } = e;
-  P = c.oE.ERROR, D = t
+  R = c.oE.ERROR, w = t
 }
 
 function ee() {
-  p = false, d = {}, _ = {
+  _ = false, d = {}, p = {
     state: Chunk531441.Sn.ALL_GOOD
-  }, g = null, I = Chunk800530.bK.DIDNT_VIOLATE_POLICY, T = "", y = []
+  }, g = null, S = Chunk800530.bK.DIDNT_VIOLATE_POLICY, I = "", y = []
 }
 class et extends(r = Chunk442837.ZP.Store) {
   isFetching() {
-    return p
+    return _
   }
   getClassifications() {
     return Object.values(d)
@@ -206,13 +206,13 @@ class et extends(r = Chunk442837.ZP.Store) {
     return d[e]
   }
   getAccountStanding() {
-    return _
+    return p
   }
   getFetchError() {
-    return m
+    return h
   }
   isInitialized() {
-    return h
+    return m
   }
   getClassificationRequestState(e) {
     return f[e]
@@ -230,10 +230,10 @@ class et extends(r = Chunk442837.ZP.Store) {
     return y
   }
   getAppealSignal() {
-    return I
+    return S
   }
   getFreeTextAppealReason() {
-    return T
+    return I
   }
   getIsSubmitting() {
     return O
@@ -242,7 +242,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return v
   }
   getUsername() {
-    return S
+    return T
   }
   getAgeVerificationWebviewUrl() {
     return A
@@ -251,13 +251,13 @@ class et extends(r = Chunk442837.ZP.Store) {
     return N
   }
   getIsLoadingAgeVerification() {
-    return R
-  }
-  getAgeCheckStatus() {
     return P
   }
+  getAgeCheckStatus() {
+    return R
+  }
   getAgeCheckError() {
-    return D
+    return w
   }
   getAgeCheckAttempts() {
     return C
@@ -265,27 +265,27 @@ class et extends(r = Chunk442837.ZP.Store) {
 }
 u(et, "displayName", "SafetyHubStore");
 let en = new et(Chunk570140.Z, {
-  SAFETY_HUB_FETCH_START: w,
-  SAFETY_HUB_FETCH_SUCCESS: L,
-  SAFETY_HUB_FETCH_FAILURE: x,
-  SAFETY_HUB_FETCH_CLASSIFICATION_START: M,
-  SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS: k,
-  SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE: j,
+  SAFETY_HUB_FETCH_START: D,
+  SAFETY_HUB_FETCH_SUCCESS: x,
+  SAFETY_HUB_FETCH_FAILURE: L,
+  SAFETY_HUB_FETCH_CLASSIFICATION_START: j,
+  SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS: M,
+  SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE: k,
   SAFETY_HUB_APPEAL_OPEN: U,
   SAFETY_HUB_APPEAL_CLOSE: G,
-  SAFETY_HUB_APPEAL_SIGNAL_SELECT: B,
-  SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE: Z,
+  SAFETY_HUB_APPEAL_SIGNAL_SELECT: Z,
+  SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE: B,
   SAFETY_HUB_REQUEST_REVIEW_START: F,
   SAFETY_HUB_REQUEST_REVIEW_SUCCESS: V,
   SAFETY_HUB_REQUEST_REVIEW_FAILURE: H,
-  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_START: W,
-  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: Y,
+  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_START: Y,
+  SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: W,
   SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE: K,
   SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN: z,
   SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE: z,
   SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_SUBMIT_SUCCESS: q,
-  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL: X,
-  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START: Q,
+  SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL: Q,
+  SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START: X,
   SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: J,
   SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE: $,
   LOGOUT: ee

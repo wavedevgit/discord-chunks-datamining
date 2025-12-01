@@ -197,22 +197,22 @@ class f {
     })
   }
   getGoliveLQQuality() {
-    var e, t, n, r, a, o, s, l, c, d, f, _;
-    let p = Math.min(Chunk65154.ef, null != (s = null == (e = this.goliveMaxQuality.encode) ? true : module.width) ? s : Chunk65154.ef),
-      h = Math.min(Chunk65154.ru, null != (l = null == (t = this.goliveMaxQuality.encode) ? true : exports.height) ? l : Chunk65154.ru),
-      m = Math.min(Chunk65154.R$, null != (c = null == (n = this.goliveMaxQuality.encode) ? true : require.framerate) ? c : Chunk65154.R$),
+    var e, t, n, r, a, o, s, l, c, d, f, p;
+    let _ = Math.min(Chunk65154.ef, null != (s = null == (e = this.goliveMaxQuality.encode) ? true : module.width) ? s : Chunk65154.ef),
+      m = Math.min(Chunk65154.ru, null != (l = null == (t = this.goliveMaxQuality.encode) ? true : exports.height) ? l : Chunk65154.ru),
+      h = Math.min(Chunk65154.R$, null != (c = null == (n = this.goliveMaxQuality.encode) ? true : require.framerate) ? c : Chunk65154.R$),
       g = Math.min(Chunk65154.ef, null != (d = null == (r = this.goliveMaxQuality.capture) ? true : Chunk966146.width) ? d : Chunk65154.ef);
     return new u({
       capture: {
         width: g,
         height: Math.min(Chunk65154.ru, null != (f = null == (a = this.goliveMaxQuality.capture) ? true : a.height) ? f : Chunk65154.ru),
-        framerate: Math.min(Chunk65154.R$, null != (_ = null == (o = this.goliveMaxQuality.capture) ? true : o.framerate) ? _ : Chunk65154.R$)
+        framerate: Math.min(Chunk65154.R$, null != (p = null == (o = this.goliveMaxQuality.capture) ? true : o.framerate) ? p : Chunk65154.R$)
       },
       encode: {
-        width: p,
-        height: h,
-        framerate: m,
-        pixelCount: p * h
+        width: _,
+        height: m,
+        framerate: h,
+        pixelCount: _ * m
       },
       bitrateMin: Chunk65154.UC,
       bitrateMax: this.goliveSimulcastLQBitrateMax,

@@ -12,21 +12,21 @@ var Chunk804336 = require("./804336.js"),
   Chunk848894 = require("./848894.js"),
   Chunk166691 = require("./166691.js"),
   Chunk934660 = require("./934660.js"),
-  p = Object("a"),
-  h = "a" !== p[0] || !(0 in p),
-  m = Chunk166691("String.prototype.split");
+  _ = Object("a"),
+  m = "a" !== _[0] || !(0 in _),
+  h = Chunk166691("String.prototype.split");
 module.exports = function(e) {
   var t, n = u(this),
-    f = c((h && _(n) ? m(n, "") : n).length);
+    f = c((m && p(n) ? h(n, "") : n).length);
   if (!l(e)) throw TypeError("Array.prototype.map callback must be a function");
   arguments.length > 1 && (t = arguments[1]);
-  for (var p = r(n, f), g = 0; g < f;) {
+  for (var _ = r(n, f), g = 0; g < f;) {
     var E = d(g);
     if (s(n, E)) {
       var b = i(e, t, [o(n, E), g, n]);
-      a(p, E, b)
+      a(_, E, b)
     }
     g += 1
   }
-  return p
+  return _
 }

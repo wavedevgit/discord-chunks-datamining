@@ -42,80 +42,80 @@ function O(e) {
     name: a,
     iconURL: O,
     scrollerRef: v,
-    sectionName: I
-  } = e, T = (0, l.ap)((0, u.ZP)()), S = i.useRef(null), A = i.useRef(null), C = i.useRef(null), N = i.useRef(null), R = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOW).hex(), P = (0, d.ZP)("number" == typeof O ? "" : O, null != R ? R : ""), D = i.useMemo(() => {
+    sectionName: S
+  } = e, I = (0, l.ap)((0, u.ZP)()), T = i.useRef(null), A = i.useRef(null), C = i.useRef(null), N = i.useRef(null), P = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOW).hex(), R = (0, d.ZP)("number" == typeof O ? "" : O, null != P ? P : ""), w = i.useMemo(() => {
     var e, t;
     return null != (t = null == (e = (0, f.wh)({
-      foreground: o()(P),
-      background: o()(T ? "#000000" : "#ffffff"),
+      foreground: o()(R),
+      background: o()(I ? "#000000" : "#ffffff"),
       ratio: 5,
       saturationFactor: .6
-    })) ? true : e.hex()) ? t : P
-  }, [P, T]), w = y(S), L = y(A), x = i.useCallback(() => {
+    })) ? true : e.hex()) ? t : R
+  }, [R, I]), D = y(T), x = y(A), L = i.useCallback(() => {
     var e, t, n;
     let r = v.current,
-      i = S.current,
+      i = T.current,
       a = C.current,
       o = null == N ? true : N.current,
-      l = parseInt(null != (e = null == w ? true : w.height) ? e : ""),
-      c = parseInt(null != (t = null == L ? true : L.height) ? t : "");
+      l = parseInt(null != (e = null == D ? true : D.height) ? e : ""),
+      c = parseInt(null != (t = null == x ? true : x.height) ? t : "");
     if (null != r && null != i && null != a && !isNaN(l) && !isNaN(c)) {
       let e = null != (n = r.scrollTop) ? n : 0,
         t = 0 !== r.scrollHeight ? r.scrollHeight : c + g,
         u = 0 !== r.clientHeight ? r.clientHeight : c + g,
         d = c - l,
         f = (0, s.clamp)(t - u, d + 1, c + g),
-        _ = E(e, d, f);
-      i.style.filter = "brightness(".concat(b(1, T ? 1.4 : .6, _), ")"), i.style.backgroundColor = "color-mix(in oklab,".concat(P, " ").concat((1 - _) * 100, "%, ").concat(D, ")"), a.style.opacity = "".concat(b(0, 1, _)), a.style.transform = "translateY(".concat(b(l / 4, 0, _), "px)"), null != o && (o.style.opacity = "".concat(b(1, 0, _)))
+        p = E(e, d, f);
+      i.style.filter = "brightness(".concat(b(1, I ? 1.4 : .6, p), ")"), i.style.backgroundColor = "color-mix(in oklab,".concat(R, " ").concat((1 - p) * 100, "%, ").concat(w, ")"), a.style.opacity = "".concat(b(0, 1, p)), a.style.transform = "translateY(".concat(b(l / 4, 0, p), "px)"), null != o && (o.style.opacity = "".concat(b(1, 0, p)))
     }
-  }, [D, P, null == L ? true : L.height, T, v, null == w ? true : w.height]);
+  }, [w, R, null == x ? true : x.height, I, v, null == D ? true : D.height]);
   return i.useEffect(() => {
-    x()
-  }, [x, T]), i.useEffect(() => {
+    L()
+  }, [L, I]), i.useEffect(() => {
     let e = v.current,
       t = () => {
-        x()
+        L()
       };
     return null == e || e.addEventListener("scroll", t), () => {
       null == e || e.removeEventListener("scroll", t)
     }
-  }, [v, x]), (0, r.jsxs)(r.Fragment, {
+  }, [v, L]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: m.stickyContainer,
+      className: h.stickyContainer,
       children: [(0, r.jsx)("div", {
-        className: m.stickyBannerContainer,
+        className: h.stickyBannerContainer,
         children: (0, r.jsx)("div", {
-          className: m.stickyBanner,
-          ref: S
+          className: h.stickyBanner,
+          ref: T
         })
       }), (0, r.jsx)("div", {
-        className: m.backButtonContainer,
-        children: (0, r.jsx)(p.Z, {
-          className: m.headerButton
+        className: h.backButtonContainer,
+        children: (0, r.jsx)(_.Z, {
+          className: h.headerButton
         })
       }), (0, r.jsx)("div", {
-        className: m.nameContainer,
+        className: h.nameContainer,
         children: (0, r.jsx)(c.Heading, {
           ref: C,
-          className: m.textApplicationName,
+          className: h.textApplicationName,
           variant: "heading-lg/extrabold",
           children: a
         })
       })]
-    }), (0, _.BQ)(t) ? (0, r.jsx)("div", {
+    }), (0, p.BQ)(t) ? (0, r.jsx)("div", {
       ref: N,
-      className: m.moreMenuButtonContainer,
-      children: (0, r.jsx)(h.Z, {
+      className: h.moreMenuButtonContainer,
+      children: (0, r.jsx)(m.Z, {
         application: t,
         context: n,
-        className: m.headerButton,
-        sectionName: I
+        className: h.headerButton,
+        sectionName: S
       })
     }) : null, (0, r.jsx)("div", {
       ref: A,
-      className: m.bannerBackground,
+      className: h.bannerBackground,
       style: {
-        backgroundColor: P
+        backgroundColor: R
       }
     })]
   })

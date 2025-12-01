@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk485386 = require("./485386.js"),
   Chunk724913 = require("./724913.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -78,73 +78,73 @@ let O = function(e) {
     className: t,
     compact: n = false,
     contentOnly: a = false,
-    zalgo: h = true,
+    zalgo: m = true,
     preview: g = false,
     disableInteraction: y = false,
     childrenRepliedMessage: O,
     childrenExecutedCommand: v,
-    childrenHeader: I,
-    childrenSystemMessage: T,
-    childrenButtons: S,
+    childrenHeader: S,
+    childrenSystemMessage: I,
+    childrenButtons: T,
     childrenMessageContent: A,
     childrenAccessories: C,
     messageRef: N,
-    focusProps: R = {
+    focusProps: P = {
       offset: {
         left: 4,
         right: 4
       }
     },
-    hasThread: P,
-    isSystemMessage: D,
-    hasReply: w,
-    author: L,
-    onMouseEnter: x,
-    onMouseLeave: M
-  } = e, k = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
-  let j = (0, s.e7)([_.Z], () => (null == L ? true : L.guildId) == null || (null == L ? true : L.colorRoleId) == null ? null : _.Z.getRole(L.guildId, L.colorRoleId)),
-    U = (0, f.yH)(null == L ? true : L.guildId, j) && (0, d.S2)(L),
-    [G, B] = i.useState(false),
-    Z = i.useCallback(e => {
-      B(true), null == x || x(e)
-    }, [x]),
+    hasThread: R,
+    isSystemMessage: w,
+    hasReply: D,
+    author: x,
+    onMouseEnter: L,
+    onMouseLeave: j
+  } = e, M = b(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]);
+  let k = (0, s.e7)([p.Z], () => (null == x ? true : x.guildId) == null || (null == x ? true : x.colorRoleId) == null ? null : p.Z.getRole(x.guildId, x.colorRoleId)),
+    U = (0, f.yH)(null == x ? true : x.guildId, k) && (0, d.S2)(x),
+    [G, Z] = i.useState(false),
+    B = i.useCallback(e => {
+      Z(true), null == L || L(e)
+    }, [L]),
     F = i.useCallback(e => {
-      B(false), null == M || M(e)
-    }, [M]),
+      Z(false), null == j || j(e)
+    }, [j]),
     V = (0, u.Y)({
       location: "BaseMessage"
     }),
     H = (0, r.jsx)(l.d.Provider, {
       value: {
         animate: G,
-        setAnimate: B
+        setAnimate: Z
       },
-      children: (0, r.jsx)(c.tEY, E(m({}, R), {
-        children: (0, r.jsxs)("div", E(m({
+      children: (0, r.jsx)(c.tEY, E(h({}, P), {
+        children: (0, r.jsxs)("div", E(h({
           className: o()(t, {
-            [p.gradient]: U,
-            [p.withDisplayNameStyles]: V && (null == L ? true : L.displayNameStyles) != null && (null == L ? true : L.guildId) == null,
-            [p.wrapper]: true,
-            [p.contentOnly]: a,
-            [p.compact]: n,
-            [p.preview]: g,
-            [p.cozy]: !n,
-            [p.zalgo]: h,
-            [p.hasThread]: P,
-            [p.isSystemMessage]: D,
-            [p.hasReply]: w
+            [_.gradient]: U,
+            [_.withDisplayNameStyles]: V && (null == x ? true : x.displayNameStyles) != null && (null == x ? true : x.guildId) == null,
+            [_.wrapper]: true,
+            [_.contentOnly]: a,
+            [_.compact]: n,
+            [_.preview]: g,
+            [_.cozy]: !n,
+            [_.zalgo]: m,
+            [_.hasThread]: R,
+            [_.isSystemMessage]: w,
+            [_.hasReply]: D
           }),
           ref: N
-        }, k), {
+        }, M), {
           role: "article",
-          onMouseEnter: Z,
+          onMouseEnter: B,
           onMouseLeave: F,
           children: [O, v, (0, r.jsxs)("div", {
-            className: p.contents,
-            children: [T, I, null == T && A]
-          }), C, null != S ? (0, r.jsx)("div", {
-            className: p.buttonContainer,
-            children: S
+            className: _.contents,
+            children: [I, S, null == I && A]
+          }), C, null != T ? (0, r.jsx)("div", {
+            className: _.buttonContainer,
+            children: T
           }) : null]
         }))
       }))

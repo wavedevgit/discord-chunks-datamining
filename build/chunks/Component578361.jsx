@@ -2,7 +2,7 @@
 /** chunk id: 578361, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h,
+  Z: () => m,
   n: () => f
 });
 var Chunk54381 = require("./54381.js"),
@@ -37,12 +37,12 @@ function d(e) {
 var f = function(e) {
   return e[e.RIGHT = false] = "RIGHT", e[e.LEFT = 1] = "LEFT", e
 }({});
-let _ = {
+let p = {
   friction: 7,
   tension: 40,
   clamp: true
 };
-class p extends Chunk473749.PureComponent {
+class _ extends Chunk473749.PureComponent {
   componentWillEnter(e) {
     this._animated.setValue(-this.props.direction), s.Z.spring(this._animated, d({
       toValue: 0
@@ -81,19 +81,19 @@ class p extends Chunk473749.PureComponent {
     super(e), u(this, "_animated", true), this._animated = new s.Z.Value(false * e.direction)
   }
 }
-let h = e => {
+let m = e => {
   let {
     children: t,
     step: n,
     direction: i,
     className: a,
-    springSettings: s = _,
+    springSettings: s = p,
     fadeInOut: u = false
   } = e;
   return (0, r.jsx)(l.W, {
     component: "div",
     className: o()(c.animator, a),
-    children: (0, r.jsx)(p, {
+    children: (0, r.jsx)(_, {
       direction: i,
       springSettings: s,
       fadeInOut: u,

@@ -1,7 +1,7 @@
 /** Chunk was on 77250 **/
 /** chunk id: 643087, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,10 +11,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk663993 = require("./663993.js"),
   Chunk771845 = require("./771845.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk126134 = require("./126134.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk542560 = require("./542560.js");
 
-function d(e, t, r) {
+function b(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -22,11 +23,11 @@ function d(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-let b = (0, Chunk663993.Un)({
+let f = (0, Chunk663993.Un)({
   createPromise: () => require.e("4848").then(require.bind(require, 797967)),
   webpackId: 797967
 });
-class f extends Chunk473749.PureComponent {
+class g extends Chunk473749.PureComponent {
   render() {
     let {
       transitionState: e,
@@ -57,11 +58,11 @@ class f extends Chunk473749.PureComponent {
             autoFocus: true
           }), (0, Chunk54381.jsx)(Chunk481060.gNt, {
             label: Chunk388032.intl.string(Chunk388032.t.xpurRF),
-            children: (0, Chunk54381.jsx)(b, {
+            children: (0, Chunk54381.jsx)(f, {
               className: Chunk542560.colorPicker,
-              defaultColor: Chunk981631.Wyy,
+              defaultColor: Chunk126134.Wy,
               colors: Chunk981631.pmI,
-              value: null != Chunk473749 ? Chunk473749 : Chunk981631.Wyy,
+              value: null != Chunk473749 ? Chunk473749 : Chunk126134.Wy,
               onChange: this.handleColorChange
             })
           })]
@@ -71,20 +72,20 @@ class f extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), d(this, "state", {
+    super(...e), b(this, "state", {
       name: null != (t = this.props.folderName) ? t : "",
       color: this.props.folderColor
-    }), d(this, "close", () => {
+    }), b(this, "close", () => {
       this.props.onClose()
-    }), d(this, "handleNameChange", e => {
+    }), b(this, "handleNameChange", e => {
       this.setState({
         name: e
       })
-    }), d(this, "handleColorChange", e => {
+    }), b(this, "handleColorChange", e => {
       this.setState({
         color: e
       })
-    }), d(this, "handleSubmit", e => {
+    }), b(this, "handleSubmit", e => {
       e.preventDefault();
       let {
         folderId: t
@@ -109,7 +110,7 @@ class f extends Chunk473749.PureComponent {
           "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
             return Object.getOwnPropertyDescriptor(r, e).enumerable
           }))), n.forEach(function(t) {
-            d(e, t, r[t])
+            b(e, t, r[t])
           })
         }
         return e
@@ -121,4 +122,4 @@ class f extends Chunk473749.PureComponent {
     })
   }
 }
-let g = f
+let m = g

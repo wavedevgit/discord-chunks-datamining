@@ -2,7 +2,7 @@
 /** chunk id: 485341, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p,
+  Z: () => _,
   i: () => f
 }), require("./953529.js");
 var Chunk399606 = require("./399606.js"),
@@ -50,17 +50,17 @@ function d(e, t) {
   }), e
 }
 let f = "quest_completed",
-  _ = "legacy_username";
+  p = "legacy_username";
 
-function p(e, t) {
+function _(e, t) {
   var n;
   let l = i.R_.useSetting(),
     u = true !== t ? t : l,
     f = (0, r.e7)([o.default], () => o.default.getCurrentUser()),
-    p = (0, r.e7)([a.Z], () => a.Z.hidePersonalInformation);
+    _ = (0, r.e7)([a.Z], () => a.Z.hidePersonalInformation);
   if (null == e) return [];
-  let h = null != (n = null == e ? true : e.getBadges()) ? n : [];
-  return null != f && f.id === e.userId && u && (h = h.filter(e => e.id !== _)), p && (h = h.map(e => d(c({}, e), {
-    description: e.id === _ ? s.intl.string(s.t.Br1ls3) : e.description
-  }))), h
+  let m = null != (n = null == e ? true : e.getBadges()) ? n : [];
+  return null != f && f.id === e.userId && u && (m = m.filter(e => e.id !== p)), _ && (m = m.map(e => d(c({}, e), {
+    description: e.id === p ? s.intl.string(s.t.Br1ls3) : e.description
+  }))), m
 }

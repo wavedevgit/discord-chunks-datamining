@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a;
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 }), require("./388685.js");
 var o, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -32,7 +32,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -43,13 +43,13 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = new Map,
-  m = {},
+let m = new Map,
+  h = {},
   g = Chunk981631.VD2.BOTTOM_RIGHT,
   E = {
     [Chunk354459.cL.VIDEO]: Chunk354459.l8[Chunk354459.cL.VIDEO],
@@ -63,7 +63,7 @@ function b(e) {
     component: s,
     props: l
   } = e;
-  if (null != h.get(o)) return;
+  if (null != m.get(o)) return;
   let u = {
     id: o,
     component: s,
@@ -71,25 +71,25 @@ function b(e) {
     props: l,
     docked: null != (n = l.docked) && n
   };
-  h.set(o, u), s === c.NYg.VIDEO ? null == r && (r = o) : s === c.NYg.ACTIVITY ? null == i && (i = o) : s === c.NYg.FRAME && null == a && (a = o)
+  m.set(o, u), s === c.NYg.VIDEO ? null == r && (r = o) : s === c.NYg.ACTIVITY ? null == i && (i = o) : s === c.NYg.FRAME && null == a && (a = o)
 }
 
 function y(e) {
   let {
     id: t
   } = e;
-  if (!h.has(t)) returnfalse;
+  if (!m.has(t)) returnfalse;
   {
-    h.delete(t);
-    let e = Array.from(h.keys());
+    m.delete(t);
+    let e = Array.from(m.keys());
     r === t ? r = e.find(e => {
-      let t = h.get(e);
+      let t = m.get(e);
       return null != t && t.component === c.NYg.VIDEO
     }) : i === t ? i = e.find(e => {
-      let t = h.get(e);
+      let t = m.get(e);
       return null != t && t.component === c.NYg.ACTIVITY
     }) : a === t && (a = e.find(e => {
-      let t = h.get(e);
+      let t = m.get(e);
       return null != t && t.component === c.NYg.FRAME
     }))
   }
@@ -103,11 +103,11 @@ function O(e) {
   if (null == t || r !== t && i !== t && a !== t) returnfalse;
   {
     let e = new Map;
-    h.forEach((t, r) => {
-      e.set(r, p(f({}, t), {
+    m.forEach((t, r) => {
+      e.set(r, _(f({}, t), {
         position: n
       }))
-    }), h = e, g = n
+    }), m = e, g = n
   }
 }
 
@@ -119,12 +119,26 @@ function v(e) {
   E[n] = t
 }
 
-function I(e) {
+function S(e) {
   let {
     id: t,
     rect: n
   } = e;
-  m[t] = n
+  h[t] = n
+}
+
+function I(e) {
+  let {
+    id: t
+  } = e;
+  if (r !== t && i !== t && a !== t) returnfalse;
+  {
+    let e = m.get(t);
+    if (null == e) returnfalse;
+    m.set(t, _(f({}, e), {
+      hidden: true
+    }))
+  }
 }
 
 function T(e) {
@@ -133,23 +147,9 @@ function T(e) {
   } = e;
   if (r !== t && i !== t && a !== t) returnfalse;
   {
-    let e = h.get(t);
+    let e = m.get(t);
     if (null == e) returnfalse;
-    h.set(t, p(f({}, e), {
-      hidden: true
-    }))
-  }
-}
-
-function S(e) {
-  let {
-    id: t
-  } = e;
-  if (r !== t && i !== t && a !== t) returnfalse;
-  {
-    let e = h.get(t);
-    if (null == e) returnfalse;
-    h.set(t, p(f({}, e), {
+    m.set(t, _(f({}, e), {
       hidden: false
     }))
   }
@@ -158,12 +158,12 @@ function S(e) {
 function A(e) {
   let {
     id: t
-  } = e, n = h.get(t);
+  } = e, n = m.get(t);
   null != n && (n.component === c.NYg.VIDEO ? r = t : n.component === c.NYg.ACTIVITY ? i = t : n.component === c.NYg.FRAME && (a = t))
 }
 
 function C() {
-  r = null, i = null, a = null, h = new Map
+  r = null, i = null, a = null, m = new Map
 }
 class N extends(o = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -178,19 +178,19 @@ class N extends(o = Chunk442837.ZP.PersistedStore) {
   }
   get pipWindow() {
     var e, t;
-    return null == r && null == i && null == a ? null : h.get(null != (t = null != (e = null != r ? r : i) ? module : a) ? exports : "")
+    return null == r && null == i && null == a ? null : m.get(null != (t = null != (e = null != r ? r : i) ? module : a) ? exports : "")
   }
   get pipVideoWindow() {
-    return null == r ? null : h.get(r)
+    return null == r ? null : m.get(r)
   }
   get pipActivityWindow() {
-    return null == i ? null : h.get(i)
+    return null == i ? null : m.get(i)
   }
   get pipFrameWindow() {
-    return null == a ? null : h.get(a)
+    return null == a ? null : m.get(a)
   }
   get pipWindows() {
-    return h
+    return m
   }
   pipWidth(e) {
     return E[e]
@@ -202,10 +202,10 @@ class N extends(o = Chunk442837.ZP.PersistedStore) {
     return null == a
   }
   getDockedRect(e) {
-    return m[e]
+    return h[e]
   }
   isOpen(e) {
-    return null != e && h.has(e)
+    return null != e && m.has(e)
   }
   getState() {
     return {
@@ -224,14 +224,14 @@ d(N, "displayName", "PictureInPictureStore"), d(N, "persistKey", "PictureInPictu
     openPosition: null != (n = e.openPosition) ? n : c.VD2.BOTTOM_RIGHT
   }
 }]);
-let R = new N(Chunk570140.Z, {
+let P = new N(Chunk570140.Z, {
   PICTURE_IN_PICTURE_OPEN: b,
   PICTURE_IN_PICTURE_CLOSE: y,
   PICTURE_IN_PICTURE_MOVE: O,
   PICTURE_IN_PICTURE_RESIZE: v,
-  PICTURE_IN_PICTURE_HIDE: T,
-  PICTURE_IN_PICTURE_SHOW: S,
-  PICTURE_IN_PICTURE_UPDATE_RECT: I,
+  PICTURE_IN_PICTURE_HIDE: I,
+  PICTURE_IN_PICTURE_SHOW: T,
+  PICTURE_IN_PICTURE_UPDATE_RECT: S,
   PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: A,
   LOGOUT: C
 })

@@ -51,15 +51,15 @@ var d = function(e) {
   return e[e.FETCHING = 0] = "FETCHING", e[e.FETCHED = 1] = "FETCHED", e[e.ERROR = 2] = "ERROR", e
 }({});
 let f = {},
-  _ = {},
-  p = new Set,
-  h = {};
+  p = {},
+  _ = new Set,
+  m = {};
 
-function m(e) {
+function h(e) {
   let {
     applicationId: t
   } = e;
-  _ = u(l({}, _), {
+  p = u(l({}, p), {
     [t]: 0
   })
 }
@@ -70,13 +70,13 @@ function g(e) {
   } = e;
   f = u(l({}, f), {
     [t.id]: t
-  }), _ = u(l({}, _), {
+  }), p = u(l({}, p), {
     [t.id]: 1
   });
   let n = Date.now();
-  h = u(l({}, h), {
+  m = u(l({}, m), {
     [t.id]: n
-  }), p.has(t.id) && (p.delete(t.id), p = new Set(p))
+  }), _.has(t.id) && (_.delete(t.id), _ = new Set(_))
 }
 
 function E(e) {
@@ -84,9 +84,9 @@ function E(e) {
     applicationId: t,
     isInvalidApplication: n
   } = e;
-  _ = u(l({}, _), {
+  p = u(l({}, p), {
     [t]: 2
-  }), n && (p.add(t), p = new Set(p))
+  }), n && (_.add(t), _ = new Set(_))
 }
 class b extends(r = Chunk442837.ZP.Store) {
   getApplication(e) {
@@ -101,27 +101,27 @@ class b extends(r = Chunk442837.ZP.Store) {
     return f
   }
   getApplicationFetchState(e) {
-    if (null != e) return _[e]
+    if (null != e) return p[e]
   }
   getApplicationFetchStates() {
-    return _
+    return p
   }
   isInvalidApplication(e) {
-    return null != e && p.has(e)
+    return null != e && _.has(e)
   }
   getInvalidApplicationIds() {
-    return p
+    return _
   }
   isFetching(e) {
     return 0 === this.getApplicationFetchState(e)
   }
   getApplicationLastFetchTime(e) {
-    if (null != e) return h[e]
+    if (null != e) return m[e]
   }
 }
 s(b, "displayName", "ApplicationDirectoryApplicationsStore");
 let y = new b(Chunk570140.Z, {
-  APPLICATION_DIRECTORY_FETCH_APPLICATION: m,
+  APPLICATION_DIRECTORY_FETCH_APPLICATION: h,
   APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS: g,
   APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE: E
 })

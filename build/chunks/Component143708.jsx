@@ -27,47 +27,47 @@ function g(e) {
       channelId: y
     } = e,
     O = (0, a.e7)([c.default], () => c.default.getId()),
-    v = _.ZP.useName(E),
-    I = O === E.id,
-    T = (0, a.e7)([u.Z, d.Z], () => {
+    v = p.ZP.useName(E),
+    S = O === E.id,
+    I = (0, a.e7)([u.Z, d.Z], () => {
       let e = u.Z.getChannel(y);
       if (null == e) returnfalse;
       if (e.isPrivate()) returntrue;
       if (e.isThread()) {
         let t = (0, l.xl)(e),
-          n = d.Z.can(p.Plq.SEND_MESSAGES_IN_THREADS, e);
+          n = d.Z.can(_.Plq.SEND_MESSAGES_IN_THREADS, e);
         return !t && n
       }
-      return d.Z.can(p.Plq.SEND_MESSAGES, e)
+      return d.Z.can(_.Plq.SEND_MESSAGES, e)
     });
 
-  function S() {
+  function T() {
     let {
       id: e
-    } = E, t = "@".concat(_.ZP.getUserTag(E, {
+    } = E, t = "@".concat(p.ZP.getUserTag(E, {
       decoration: "never"
     })), n = "<@".concat(e, ">");
-    f.S.dispatchToLastSubscribed(p.CkL.INSERT_TEXT, {
+    f.S.dispatchToLastSubscribed(_.CkL.INSERT_TEXT, {
       plainText: t,
       rawText: n
     }), null != y && o.Z.startTyping(y)
   }
-  return I ? (t = h.intl.string(h.t["F/OLvL"]), g = h.intl.string(h.t.C89OLE)) : (g = h.intl.string(h.t.YVub5y), b ? t = h.intl.string(h.t["57nBty"]) : null != v && T ? (t = h.intl.formatToPlainString(h.t["9Akp1s"], {
+  return S ? (t = m.intl.string(m.t["F/OLvL"]), g = m.intl.string(m.t.C89OLE)) : (g = m.intl.string(m.t.YVub5y), b ? t = m.intl.string(m.t["57nBty"]) : null != v && I ? (t = m.intl.formatToPlainString(m.t["9Akp1s"], {
     username: v
   }), n = (0, r.jsx)(i.zxk, {
-    onClick: S,
-    text: h.intl.string(h.t.P8tvKG)
-  })) : t = h.intl.string(h.t["SMJr+a"])), (0, r.jsxs)(s.Z, {
+    onClick: T,
+    text: m.intl.string(m.t.P8tvKG)
+  })) : t = m.intl.string(m.t["SMJr+a"])), (0, r.jsxs)(s.Z, {
     children: [(0, r.jsx)(s.Z.Header, {
       text: g
     }), (0, r.jsxs)(s.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: m.headerLine,
+        className: h.headerLine,
         children: [(0, r.jsx)(s.Z.Icon, {
           expired: true
         }), (0, r.jsx)(s.Z.Info, {
           expired: true,
-          title: h.intl.string(h.t["Jhx/ud"]),
+          title: m.intl.string(m.t["Jhx/ud"]),
           children: t
         })]
       }), n]

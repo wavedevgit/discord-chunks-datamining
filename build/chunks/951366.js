@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $L: () => g,
-  Oz: () => p
+  Oz: () => _
 });
 var Chunk481060 = require("./481060.js"),
   Chunk901297 = require("./901297.jsx"),
@@ -16,30 +16,30 @@ var Chunk481060 = require("./481060.js"),
   Chunk906731 = require("./906731.jsx"),
   Chunk915409 = require("./915409.js"),
   Chunk74432 = require("./74432.jsx"),
-  p = function(e) {
+  _ = function(e) {
     return e.PAYMENTS = "payments", e.VIRTUAL_CURRENCY = "virtual-currency", e.NITRO = "nitro", e
   }({});
-let h = ["Revenue Storybook", "Revenue Playground"],
-  m = {
+let m = ["Revenue Storybook", "Revenue Playground"],
+  h = {
     id: "payments",
     name: "Payments",
     groups: [Chunk690524.C, Chunk74432.iZ, Chunk473542.R, Chunk374834.pl, Chunk915409.W],
-    tags: h,
+    tags: m,
     IconComponent: Chunk481060.uMN
   },
   g = {
     playgroundBaseUrl: "revenue",
-    collections: [m, {
+    collections: [h, {
       id: "virtual-currency",
       name: "Virtual Currency",
       groups: [Chunk73166.Oi, Chunk901297.vP, Chunk266631.X, Chunk906731.R],
-      tags: h,
+      tags: m,
       IconComponent: Chunk481060.aQr
     }, {
       id: "nitro",
       name: "Nitro",
       groups: [Chunk654346.De],
-      tags: h,
+      tags: m,
       IconComponent: Chunk481060.SrA
     }]
   }

@@ -21,14 +21,14 @@ function u(e, t) {
       var n, r, i, a;
       return null != (a = null == (n = (r = t.collection).getTextValue) ? true : n.call(r, e)) ? a : null == (i = t.collection.getItem(e)) ? true : i.textValue
     }
-  } = e, u = (0, s.q)(c(r.Z), "@react-aria/grid"), f = t.selectionManager.rawSelection, _ = (0, l.useRef)(f), p = (0, a.i)(() => {
+  } = e, u = (0, s.q)(c(r.Z), "@react-aria/grid"), f = t.selectionManager.rawSelection, p = (0, l.useRef)(f), _ = (0, a.i)(() => {
     var e;
-    if (!t.selectionManager.isFocused || f === _.current) {
-      _.current = f;
+    if (!t.selectionManager.isFocused || f === p.current) {
+      p.current = f;
       return
     }
-    let r = d(f, _.current),
-      a = d(_.current, f),
+    let r = d(f, p.current),
+      a = d(p.current, f),
       o = "replace" === t.selectionManager.selectionBehavior,
       s = [];
     if (1 === t.selectionManager.selectedKeys.size && o) {
@@ -56,14 +56,14 @@ function u(e, t) {
         }))
       }
     }
-    "multiple" === t.selectionManager.selectionMode && (0 === s.length || "all" === f || f.size > 1 || "all" === _.current || (null == (e = _.current) ? true : e.size) > 1) && s.push("all" === f ? u.format("selectedAll") : u.format("selectedCount", {
+    "multiple" === t.selectionManager.selectionMode && (0 === s.length || "all" === f || f.size > 1 || "all" === p.current || (null == (e = p.current) ? true : e.size) > 1) && s.push("all" === f ? u.format("selectedAll") : u.format("selectedCount", {
       count: f.size
-    })), s.length > 0 && (0, i.xQ)(s.join(" ")), _.current = f
+    })), s.length > 0 && (0, i.xQ)(s.join(" ")), p.current = f
   });
   (0, o.r)(() => {
-    if (t.selectionManager.isFocused) p();
+    if (t.selectionManager.isFocused) _();
     else {
-      let e = requestAnimationFrame(p);
+      let e = requestAnimationFrame(_);
       return () => cancelAnimationFrame(e)
     }
   }, [f, t.selectionManager.isFocused])

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   K: () => g,
-  i: () => m
+  i: () => h
 }), require("./388685.js"), require("./35282.js");
 var Chunk933557 = require("./933557.js"),
   Chunk339085 = require("./339085.js"),
@@ -19,7 +19,7 @@ var Chunk933557 = require("./933557.js"),
   Chunk709054 = require("./709054.js"),
   Chunk752305 = require("./752305.js");
 
-function m(e, t, n, r) {
+function h(e, t, n, r) {
   let {
     allowUsers: i = true,
     allowRoles: a = true
@@ -36,8 +36,8 @@ function m(e, t, n, r) {
 }
 
 function g(e, t, n, r) {
-  let i = m(e, t, n, r);
-  return null == i ? null : (0, h.VI)(i)
+  let i = h(e, t, n, r);
+  return null == i ? null : (0, m.VI)(i)
 }
 
 function E(e, t, n, r, i) {
@@ -89,7 +89,7 @@ function y(e, t) {
   if (null == t) return null;
   n = e.length > 3 && '"' === e[1] && '"' === e[e.length - 1] ? (0, r.mA)(e.slice(2, e.length - 1)) : e.slice(1);
   let i = l.ZP.getTextChannelNameDisambiguations(t);
-  for (let e of p.default.keys(i))
+  for (let e of _.default.keys(i))
     if (i[e].name === n) return {
       type: "channelMention",
       channelId: e,
@@ -97,7 +97,7 @@ function y(e, t) {
         text: ""
       }]
     };
-  for (let e of _.k1)
+  for (let e of p.k1)
     if (e !== l.sH) {
       for (let {
           channel: r
@@ -111,8 +111,8 @@ function y(e, t) {
           }]
         }
     } let a = o.Z.getActiveJoinedThreadsForGuild(t);
-  for (let e of p.default.keys(a))
-    for (let t of p.default.keys(a[e])) {
+  for (let e of _.default.keys(a))
+    for (let t of _.default.keys(a[e])) {
       let {
         channel: r
       } = a[e][t];

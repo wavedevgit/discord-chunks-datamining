@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   C: () => O,
-  Z: () => I
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -57,7 +57,7 @@ function v(e) {
   }) : null
 }
 
-function I(e) {
+function S(e) {
   let {
     user: t,
     activity: n,
@@ -65,10 +65,10 @@ function I(e) {
     onAction: s,
     onClose: l,
     appContext: c
-  } = e, u = (0, m.Z)();
-  if (!(0, i.e7)([h.default], () => {
+  } = e, u = (0, h.Z)();
+  if (!(0, i.e7)([m.default], () => {
       var e;
-      return (null == (e = h.default.getCurrentUser()) ? true : e.id) === t.id
+      return (null == (e = m.default.getCurrentUser()) ? true : e.id) === t.id
     })) return null;
   let d = v({
     activity: n,

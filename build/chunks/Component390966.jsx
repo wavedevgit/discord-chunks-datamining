@@ -2,7 +2,7 @@
 /** chunk id: 390966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  z: () => T
+  z: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,35 +23,35 @@ let E = 20;
 
 function b(e, t) {
   let n = t.toDate(),
-    r = n.toLocaleString(m.intl.currentLocale, {
+    r = n.toLocaleString(h.intl.currentLocale, {
       weekday: "long"
     });
   switch (e) {
-    case p.z.WEEKLY:
-      return m.intl.formatToPlainString(m.t.xQM9X0, {
+    case _.z.WEEKLY:
+      return h.intl.formatToPlainString(h.t.xQM9X0, {
         weekday: r
       });
-    case p.z.BIWEEKLY:
-      return m.intl.formatToPlainString(m.t.RYscac, {
+    case _.z.BIWEEKLY:
+      return h.intl.formatToPlainString(h.t.RYscac, {
         weekday: r
       });
-    case p.z.MONTHLY:
+    case _.z.MONTHLY:
       let i = Math.ceil(n.getDate() / 7);
-      return m.intl.formatToPlainString(m.t["4ZN9Ap"], {
+      return h.intl.formatToPlainString(h.t["4ZN9Ap"], {
         weekday: r,
         nth: i
       });
-    case p.z.YEARLY:
-      return m.intl.formatToPlainString(m.t["rXUS+j"], {
-        date: n.toLocaleString(m.intl.currentLocale, {
+    case _.z.YEARLY:
+      return h.intl.formatToPlainString(h.t["rXUS+j"], {
+        date: n.toLocaleString(h.intl.currentLocale, {
           month: "short",
           day: "2-digit"
         })
       });
-    case p.z.WEEKDAY_ONLY:
-      return m.intl.string(m.t["2BX6bC"]);
-    case p.z.WEEKEND_ONLY:
-      return m.intl.string(m.t["IEi+Rw"]);
+    case _.z.WEEKDAY_ONLY:
+      return h.intl.string(h.t["2BX6bC"]);
+    case _.z.WEEKEND_ONLY:
+      return h.intl.string(h.t["IEi+Rw"]);
     default:
       return null
   }
@@ -60,13 +60,13 @@ function b(e, t) {
 function y(e, t, n, i, a) {
   switch (e) {
     case 1:
-      return a > 0 ? m.intl.formatToPlainString(m.t.PQlCWk, {
+      return a > 0 ? h.intl.formatToPlainString(h.t.PQlCWk, {
         minutes: a
-      }) : m.intl.string(m.t.WINqKV);
+      }) : h.intl.string(h.t.WINqKV);
     case 2:
-      return m.intl.string(m.t.WINqKV);
+      return h.intl.string(h.t.WINqKV);
     case 3:
-      return null != i && "" !== i ? m.intl.format(m.t.vHYgJW, {
+      return null != i && "" !== i ? h.intl.format(h.t.vHYgJW, {
         start: n,
         startHook: e => (0, r.jsx)(d.Text, {
           color: "text-feedback-positive",
@@ -127,7 +127,7 @@ function v() {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     children: t,
     className: n,
@@ -147,71 +147,71 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     startTime: t,
     status: n,
     eventType: a,
     className: s,
     endTime: u,
-    liveText: p,
-    textVariant: T = "text-sm/semibold",
-    isNew: S,
+    liveText: _,
+    textVariant: I = "text-sm/semibold",
+    isNew: T,
     recurrenceRule: A,
     guildEventId: C,
     recurrenceId: N
-  } = e, R = (0, d.dQu)(c.Z.colors.TEXT_BRAND).hex(), P = (0, d.dQu)(c.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), D = (0, d.dQu)(c.Z.colors.TEXT_DANGER).hex();
-  null == p && (p = a === h.WX.EXTERNAL ? m.intl.string(m.t.IyZxjH) : m.intl.string(m.t["X2K3/4"]));
-  let w = (0, f.Z)(N, C),
+  } = e, P = (0, d.dQu)(c.Z.colors.TEXT_BRAND).hex(), R = (0, d.dQu)(c.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), w = (0, d.dQu)(c.Z.colors.TEXT_DANGER).hex();
+  null == _ && (_ = a === m.WX.EXTERNAL ? h.intl.string(h.t.IyZxjH) : h.intl.string(h.t["X2K3/4"]));
+  let D = (0, f.Z)(N, C),
     [{
-      startDateTimeString: L,
-      endDateTimeString: x,
-      currentOrPastEvent: M,
-      upcomingEvent: k,
-      diffMinutes: j
-    }, U] = i.useState((0, _.ub)(t, u));
+      startDateTimeString: x,
+      endDateTimeString: L,
+      currentOrPastEvent: j,
+      upcomingEvent: M,
+      diffMinutes: k
+    }, U] = i.useState((0, p.ub)(t, u));
   i.useEffect(() => {
-    U((0, _.ub)(t, u));
-    let e = setInterval(() => U((0, _.ub)(t, u)), 1e3);
+    U((0, p.ub)(t, u));
+    let e = setInterval(() => U((0, p.ub)(t, u)), 1e3);
     return () => {
       clearInterval(e)
     }
   }, [t, u]);
-  let G = L;
-  null != x && "" !== x && (G = m.intl.formatToPlainString(m.t.tXbu7I, {
-    start: L,
-    end: x
+  let G = x;
+  null != L && "" !== L && (G = h.intl.formatToPlainString(h.t.tXbu7I, {
+    start: x,
+    end: L
   }));
-  let B = i.useMemo(() => n === h.p1.CANCELED || (null == w ? true : w.is_canceled) ? 5 : n === h.p1.ACTIVE ? 3 : h.$I.has(n) ? 4 : M ? 2 : +!!k, [n, null == w ? true : w.is_canceled, M, k]),
-    Z = y(B, G, p, x, j),
+  let Z = i.useMemo(() => n === m.p1.CANCELED || (null == D ? true : D.is_canceled) ? 5 : n === m.p1.ACTIVE ? 3 : m.$I.has(n) ? 4 : j ? 2 : +!!M, [n, null == D ? true : D.is_canceled, j, M]),
+    B = y(Z, G, _, L, k),
     {
       Icon: F,
       iconColor: V,
       textColor: H,
-      tooltipText: W
+      tooltipText: Y
     } = i.useMemo(() => O({
-      timeStatus: B,
-      textBrand: R,
-      textPositive: P,
-      textDanger: D,
-      endDateTimeString: x,
-      startDateTimeString: L
-    }), [B, R, P, D, x, L]),
-    Y = null;
+      timeStatus: Z,
+      textBrand: P,
+      textPositive: R,
+      textDanger: w,
+      endDateTimeString: L,
+      startDateTimeString: x
+    }), [Z, P, R, w, L, x]),
+    W = null;
   if (null != A) {
-    let e = (0, _.Ho)(A);
-    Y = m.intl.formatToPlainString(m.t.HmKEqW, {
+    let e = (0, p.Ho)(A);
+    W = h.intl.formatToPlainString(h.t.HmKEqW, {
       recurrenceRule: e.toText()
     });
     let n = l()(t);
-    Y = b((0, _.zi)(n, A), n)
+    W = b((0, p.zi)(n, A), n)
   }
-  return (0, r.jsxs)(I, {
+  return (0, r.jsxs)(S, {
     className: o()(s, {
-      [g.isRecurring]: null != Y
+      [g.isRecurring]: null != W
     }),
-    tooltipText: W,
-    children: [S && n === h.p1.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(F, {
+    tooltipText: Y,
+    children: [T && n === m.p1.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(F, {
       color: V,
       size: "custom",
       width: E,
@@ -220,12 +220,12 @@ function T(e) {
       className: g.eventStatusLabel,
       children: [(0, r.jsx)(d.Text, {
         color: H,
-        variant: T,
-        children: Z
-      }), null != Y && (0, r.jsx)(d.Text, {
+        variant: I,
+        children: B
+      }), null != W && (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-xs/normal",
-        children: Y
+        children: W
       })]
     })]
   })

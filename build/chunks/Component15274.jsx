@@ -2,9 +2,9 @@
 /** chunk id: 15274, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P3: () => _,
+  P3: () => p,
   bO: () => f,
-  lC: () => p
+  lC: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -67,7 +67,7 @@ function f(e) {
     }, n))
   })
 }
-async function _(e, t) {
+async function p(e, t) {
   let {
     guild_id: n
   } = e;
@@ -77,7 +77,7 @@ async function _(e, t) {
   })
 }
 
-function p(e, t) {
+function _(e, t) {
   (0, i.ZD)(async () => {
     let {
       default: t

@@ -15,10 +15,10 @@ var Chunk442837 = require("./442837.js"),
 
 function c(e, t) {
   let n = (0, i.e7)([o.Z], () => e === o.Z.getSelectedParticipantId(t), [t, e]);
-  return (0, i.e7)([o.Z, u.Z], () => {
-    let n = u.Z.isInChannel(t, e) && u.Z.hasVideo(t),
+  return (0, i.e7)([o.Z, s.Z], () => {
+    let n = s.Z.isInChannel(t, e) && s.Z.hasVideo(t),
       l = o.Z.getLayout(t),
-      i = l === s.AEg.MINIMUM || l === s.AEg.NORMAL;
+      i = l === u.AEg.MINIMUM || l === u.AEg.NORMAL;
     return !n || i
   }, [t, e]) ? null : (0, l.jsx)(r.sNh, {
     id: "focus-video",

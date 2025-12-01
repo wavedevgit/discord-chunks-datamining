@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var i, Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
@@ -14,7 +14,7 @@ var i, Chunk442837 = require("./442837.js"),
   Chunk300429 = require("./300429.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,20 +23,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
-let h = 10 * Chunk70956.Z.Millis.SECOND,
-  m = 1.5 * Chunk70956.Z.Millis.SECOND,
+let m = 10 * Chunk70956.Z.Millis.SECOND,
+  h = 1.5 * Chunk70956.Z.Millis.SECOND,
   g = 5,
   E = {},
   b = Object.freeze({});
@@ -53,10 +53,10 @@ function O(e) {
   if (null == n || t === l.V) returnfalse;
   null != r && r.channelId !== t && (null != r.timeout && clearTimeout(r.timeout), r = null);
   let i = Date.now(),
-    a = .8 * h;
+    a = .8 * m;
   if (null != r && (null != r.timeout || r.prevSend + a > i)) returnfalse;
   let c = setTimeout(() => {
-    null != r && r.channelId === t && n === u.default.getId() && null != r.timeout && (r.timeout = null, R(t) > g || o.tn.post({
+    null != r && r.channelId === t && n === u.default.getId() && null != r.timeout && (r.timeout = null, P(t) > g || o.tn.post({
       url: f.ANM.TYPING(t),
       oldFormErrors: true,
       rejectWithError: true
@@ -78,12 +78,12 @@ function O(e) {
         })
       }
     }))
-  }, null == r || r.prevSend > i - 2 * a ? m : 0);
+  }, null == r || r.prevSend > i - 2 * a ? h : 0);
   return r = {
     channelId: t,
     timeout: c,
     prevSend: i
-  }, S({
+  }, T({
     channelId: t,
     userId: n
   })
@@ -94,7 +94,7 @@ function v(e) {
   null != r.timeout && clearTimeout(r.timeout), r = null
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t
   } = e, n = u.default.getId();
@@ -104,22 +104,22 @@ function I(e) {
   }))
 }
 
-function T(e, t) {
+function I(e, t) {
   return setTimeout(() => {
     s.Z.dispatch({
       type: "TYPING_STOP",
       channelId: e,
       userId: t
     })
-  }, h)
+  }, m)
 }
 
-function S(e) {
+function T(e) {
   let {
     channelId: t,
     userId: n
-  } = e, r = p({}, y(t));
-  clearTimeout(r[n]), r[n] = T(t, n), E[t] = r
+  } = e, r = _({}, y(t));
+  clearTimeout(r[n]), r[n] = I(t, n), E[t] = r
 }
 
 function A(e) {
@@ -128,7 +128,7 @@ function A(e) {
     userId: n
   } = e, r = E[t];
   if (null == r || null == r[n]) returnfalse;
-  let i = p({}, r);
+  let i = _({}, r);
   clearTimeout(i[n]), delete i[n], E[t] = i
 }
 
@@ -150,11 +150,11 @@ function N() {
   E = {}
 }
 
-function R(e) {
+function P(e) {
   let t = y(e);
   return t === b ? 0 : Object.keys(t).length
 }
-class P extends(i = Chunk442837.ZP.Store) {
+class R extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default)
   }
@@ -165,12 +165,12 @@ class P extends(i = Chunk442837.ZP.Store) {
     return null != y(e)[t]
   }
 }
-_(P, "displayName", "TypingStore");
-let D = new P(Chunk570140.Z, {
-  TYPING_START: S,
+p(R, "displayName", "TypingStore");
+let w = new R(Chunk570140.Z, {
+  TYPING_START: T,
   TYPING_STOP: A,
   TYPING_START_LOCAL: O,
-  TYPING_STOP_LOCAL: I,
+  TYPING_STOP_LOCAL: S,
   CONNECTION_OPEN: N,
   OVERLAY_INITIALIZE: N,
   MESSAGE_CREATE: C

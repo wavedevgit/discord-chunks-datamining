@@ -66,20 +66,20 @@ class b extends Chunk473749.Component {
       isTrial: y,
       inReverseTrial: O,
       isDiscount: v,
-      subscriptionPlan: I,
-      finePrintClassname: T
+      subscriptionPlan: S,
+      finePrintClassname: I
     } = this.props, {
-      hasAcceptedEULA: S,
+      hasAcceptedEULA: T,
       hasAcceptedWithdrawalWaiver: A
     } = this.state;
-    return (l()(!y || null != I, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), Chunk120356 || null != module && !Chunk473749 || b) ? (0, Chunk54381.jsxs)("div", {
+    return (l()(!y || null != S, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), Chunk120356 || null != module && !Chunk473749 || b) ? (0, Chunk54381.jsxs)("div", {
       className: Chunk442837,
       children: [b && (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
         className: Chunk209857.formTitle,
         children: Chunk388032.intl.string(Chunk388032.t.Ogvn5o)
       }), null != module && (Chunk120356 || !Chunk473749) ? (0, Chunk54381.jsx)(Chunk481060.Checkbox, {
-        checked: S,
+        checked: T,
         onChange: e => this.setState({
           hasAcceptedEULA: e
         }),
@@ -98,7 +98,7 @@ class b extends Chunk473749.Component {
           }
         })
       }) : null, null == Chunk850840 ? null : (0, Chunk54381.jsx)("div", {
-        className: o()(Chunk209857.finePrint, T),
+        className: o()(Chunk209857.finePrint, I),
         children: Chunk850840
       }), b ? (0, Chunk54381.jsxs)("div", {
         className: Chunk442837,
@@ -118,30 +118,30 @@ class b extends Chunk473749.Component {
         children: ["*", Chunk388032.intl.format(Chunk388032.t["5zmY3F"], {
           documentationLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.LOCALIZED_PRICING)
         })]
-      }), y && null != I && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), y && null != S && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: Chunk388032.intl.format(Chunk388032.t["Hvo/Z5"], {
-          buttonText: (0, Chunk74538.W_)(null, I),
-          interval: Chunk74538.ZP.formatInterval(null == I ? true : I.interval),
+          buttonText: (0, Chunk74538.W_)(null, S),
+          interval: Chunk74538.ZP.formatInterval(null == S ? true : S.interval),
           cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
-      }), O && null != I && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), O && null != S && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: Chunk388032.intl.format(Chunk388032.t.Oo2FeS, {
-          buttonText: (0, Chunk74538.W_)(null, I),
-          interval: Chunk74538.ZP.formatInterval(null == I ? true : I.interval),
+          buttonText: (0, Chunk74538.W_)(null, S),
+          interval: Chunk74538.ZP.formatInterval(null == S ? true : S.interval),
           cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
-      }), v && null != I && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), v && null != S && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
         children: Chunk388032.intl.format(Chunk388032.t["Z2c+aV"], {
-          buttonText: (0, Chunk74538.W_)(null, I),
-          interval: Chunk74538.ZP.formatInterval(null == I ? true : I.interval),
+          buttonText: (0, Chunk74538.W_)(null, S),
+          interval: Chunk74538.ZP.formatInterval(null == S ? true : S.interval),
           cancelSubscriptionArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PREMIUM_DETAILS_CANCEL_SUB),
           paidServiceTermsArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })

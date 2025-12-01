@@ -4,19 +4,19 @@
 require.d(exports, {
   $5: () => y,
   B3: () => O,
-  Ee: () => p,
+  Ee: () => _,
   Qs: () => b,
   R: () => E,
-  Rj: () => I,
+  Rj: () => S,
   cL: () => C,
   dS: () => A,
-  dangerouslyConstructGuildRecordFromUntypedObject: () => S,
+  dangerouslyConstructGuildRecordFromUntypedObject: () => T,
   e: () => v,
-  lM: () => _,
-  rk: () => m,
+  lM: () => p,
+  rk: () => h,
   sp: () => g,
-  wD: () => h,
-  yS: () => T,
+  wD: () => m,
+  yS: () => I,
   z$: () => N
 }), require("./953529.js");
 var Chunk512722 = require("./512722.js"),
@@ -65,12 +65,12 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function p(e) {
   return (0, o.Wh)(s.VI, e)
 }
 
-function p(e, t, n) {
-  var r, i, l, c, u, d, f, _, p, h, m, g, E, b, y, O, v, I, T, S, A, C, N, R, D, L, x;
+function _(e, t, n) {
+  var r, i, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, A, C, N, P, w, x, L;
   return (0, o.oI)(s.VI, n, {
     id: e.id,
     joinedAt: t.joinedAt,
@@ -85,10 +85,10 @@ function p(e, t, n) {
     preferredLocale: null != (d = e.preferred_locale) ? d : s.Cx.preferredLocale,
     ownerId: e.owner_id,
     application_id: null != (f = e.application_id) ? f : null,
-    afkChannelId: null != (_ = e.afk_channel_id) ? _ : null,
-    afkTimeout: null != (p = e.afk_timeout) ? p : s.Cx.afkTimeout,
-    systemChannelId: null != (h = e.system_channel_id) ? h : null,
-    verificationLevel: null != (m = e.verification_level) ? m : s.Cx.verificationLevel,
+    afkChannelId: null != (p = e.afk_channel_id) ? p : null,
+    afkTimeout: null != (_ = e.afk_timeout) ? _ : s.Cx.afkTimeout,
+    systemChannelId: null != (m = e.system_channel_id) ? m : null,
+    verificationLevel: null != (h = e.verification_level) ? h : s.Cx.verificationLevel,
     explicitContentFilter: null != (g = e.explicit_content_filter) ? g : s.Cx.explicitContentFilter,
     defaultMessageNotifications: e.default_message_notifications,
     mfaLevel: null != (E = e.mfa_level) ? E : s.Cx.mfaLevel,
@@ -98,35 +98,35 @@ function p(e, t, n) {
     systemChannelFlags: e.system_channel_flags,
     discoverySplash: null != (O = e.discovery_splash) ? O : null,
     rulesChannelId: null != (v = e.rules_channel_id) ? v : null,
-    safetyAlertsChannelId: null != (I = e.safety_alerts_channel_id) ? I : null,
-    publicUpdatesChannelId: null != (T = e.public_updates_channel_id) ? T : null,
-    maxStageVideoChannelUsers: null != (S = e.max_stage_video_channel_users) ? S : s.Cx.maxStageVideoChannelUsers,
+    safetyAlertsChannelId: null != (S = e.safety_alerts_channel_id) ? S : null,
+    publicUpdatesChannelId: null != (I = e.public_updates_channel_id) ? I : null,
+    maxStageVideoChannelUsers: null != (T = e.max_stage_video_channel_users) ? T : s.Cx.maxStageVideoChannelUsers,
     maxVideoChannelUsers: null != (A = e.max_video_channel_users) ? A : s.Cx.maxVideoChannelUsers,
     maxMembers: null != (C = e.max_members) ? C : s.Cx.maxMembers,
     nsfwLevel: null != (N = e.nsfw_level) ? N : s.Cx.nsfwLevel,
-    ownerConfiguredContentLevel: null != (R = e.owner_configured_content_level) ? R : null,
-    hubType: null != (D = e.hub_type) ? D : null,
-    latestOnboardingQuestionId: null != (L = e.latest_onboarding_question_id) ? L : null,
-    profile: null != (x = e.profile) ? x : null,
-    premiumFeatures: null != e.premium_features ? P(e.premium_features) : null,
-    moderatorReporting: null != e.moderator_reporting ? w(e.moderator_reporting) : null
+    ownerConfiguredContentLevel: null != (P = e.owner_configured_content_level) ? P : null,
+    hubType: null != (w = e.hub_type) ? w : null,
+    latestOnboardingQuestionId: null != (x = e.latest_onboarding_question_id) ? x : null,
+    profile: null != (L = e.profile) ? L : null,
+    premiumFeatures: null != e.premium_features ? R(e.premium_features) : null,
+    moderatorReporting: null != e.moderator_reporting ? D(e.moderator_reporting) : null
   })
 }
 
-function h(e, t) {
+function m(e, t) {
   var n, r;
   let a = null != e.joined_at ? new Date(e.joined_at) : null != (n = null == t ? true : t.joinedAt) ? n : null,
     s = null != (r = e.premium_subscription_count) ? r : 0;
   return null == e.properties ? (i()(null != t, "If guild.properties is null, existingGuild must be passed in"), (0, o.TS)(t, {
     joinedAt: a,
     premiumSubscriberCount: s
-  })) : p(e.properties, {
+  })) : _(e.properties, {
     joinedAt: a,
     premiumSubscriberCount: s
   }, t)
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   return f(u({}, e), {
     joinedAt: null != e.joinedAt ? e.joinedAt.toISOString() : null,
     features: Array.from(e.features),
@@ -139,7 +139,7 @@ function m(e, t, n) {
 }
 
 function g(e, t) {
-  return null == e.properties ? t : p(e.properties, {
+  return null == e.properties ? t : _(e.properties, {
     joinedAt: t.joinedAt,
     premiumSubscriberCount: t.premiumSubscriberCount
   }, t)
@@ -147,7 +147,7 @@ function g(e, t) {
 
 function E(e, t) {
   var n;
-  return p(e, {
+  return _(e, {
     joinedAt: null != e.joined_at ? new Date(e.joined_at) : null != (n = null == t ? true : t.joinedAt) ? n : null,
     premiumSubscriberCount: e.premium_subscription_count
   }, t)
@@ -205,7 +205,7 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   var t, n, r, i;
   return N({
     id: e.id,
@@ -218,7 +218,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   var t, n, r, i;
   return N({
     id: e.id,
@@ -231,9 +231,9 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   var t, n, r, i, o, l;
-  return R({
+  return P({
     id: e.id,
     name: e.name || "",
     description: e.description || null,
@@ -299,7 +299,7 @@ function A(e) {
     vanity_url_code: null != (t = e.vanityURLCode) ? t : null,
     premium_tier: e.premiumTier,
     premium_progress_bar_enabled: e.premiumProgressBarEnabled,
-    premium_features: null != e.premiumFeatures ? D(e.premiumFeatures) : null,
+    premium_features: null != e.premiumFeatures ? w(e.premiumFeatures) : null,
     system_channel_flags: e.systemChannelFlags,
     discovery_splash: e.discoverySplash,
     rules_channel_id: e.rulesChannelId,
@@ -314,7 +314,7 @@ function A(e) {
     hub_type: e.hubType,
     latest_onboarding_question_id: e.latestOnboardingQuestionId,
     profile: e.profile,
-    moderator_reporting: null != e.moderatorReporting ? L(e.moderatorReporting) : null,
+    moderator_reporting: null != e.moderatorReporting ? x(e.moderatorReporting) : null,
     incidents_data: null
   }
 }
@@ -324,18 +324,18 @@ function C(e) {
     features: (0, a.G)(e.features),
     joinedAt: null != e.joinedAt ? new Date(e.joinedAt) : null
   });
-  return delete t.roles, delete t.member, R(t)
+  return delete t.roles, delete t.member, P(t)
 }
 
 function N(e) {
-  return R(u({}, s.Cx, e))
-}
-
-function R(e) {
-  return (0, o.bk)(s.VI, e)
+  return P(u({}, s.Cx, e))
 }
 
 function P(e) {
+  return (0, o.bk)(s.VI, e)
+}
+
+function R(e) {
   return {
     features: e.features,
     additionalEmojiSlots: e.additional_emoji_slots,
@@ -344,7 +344,7 @@ function P(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   return {
     features: e.features,
     additional_emoji_slots: e.additionalEmojiSlots,
@@ -353,14 +353,14 @@ function D(e) {
   }
 }
 
-function w(e) {
+function D(e) {
   return {
     moderatorReportingEnabled: e.moderator_reporting_enabled,
     moderatorReportChannelId: e.moderator_report_channel_id
   }
 }
 
-function L(e) {
+function x(e) {
   return {
     moderator_reporting_enabled: e.moderatorReportingEnabled,
     moderator_report_channel_id: e.moderatorReportChannelId

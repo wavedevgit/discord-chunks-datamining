@@ -30,24 +30,24 @@ let g = e => {
     descriptionCta: y = "",
     isPremiumGetCta: O,
     onCtaClick: v,
-    cardVariant: I
-  } = e, T = (0, u.N)(), S = null == T ? true : T.subscription_trial, A = (0, c.N)(), C = (0, s.Rt)({
-    intervalType: null == S ? true : S.interval,
-    intervalCount: null == S ? true : S.interval_count
+    cardVariant: S
+  } = e, I = (0, u.N)(), T = null == I ? true : I.subscription_trial, A = (0, c.N)(), C = (0, s.Rt)({
+    intervalType: null == T ? true : T.interval,
+    intervalCount: null == T ? true : T.interval_count
   }), N = (0, l._)({
-    defaultResponse: h.intl.string(h.t["8x0jKT"]),
-    onNonTier2Subscriber: h.intl.string(h.t.IJI7yk),
+    defaultResponse: m.intl.string(m.t["8x0jKT"]),
+    onNonTier2Subscriber: m.intl.string(m.t.IJI7yk),
     onTier2TrialOffer: C,
     onTier0TrialOffer: C,
-    onDiscountOffer: h.intl.formatToPlainString(h.t.bkQ4bH, {
+    onDiscountOffer: m.intl.formatToPlainString(m.t.bkQ4bH, {
       percent: null == A ? true : A.discount.amount
     })
-  }), R = (0, f._)(I), P = e => (null == e ? true : e.hideOnHoverComponent) !== true;
+  }), P = (0, f._)(S), R = e => (null == e ? true : e.hideOnHoverComponent) !== true;
   return (0, r.jsxs)("div", {
-    className: a()(m.cardDescription, null == R || null == (t = R.description) ? true : t.className),
-    children: [(0, r.jsx)(_.Z, {
+    className: a()(h.cardDescription, null == P || null == (t = P.description) ? true : t.className),
+    children: [(0, r.jsx)(p.Z, {
       title: n,
-      cardVariantStyleInfo: R,
+      cardVariantStyleInfo: P,
       titleClassName: i,
       subtitle: E,
       description: b
@@ -55,12 +55,12 @@ let g = e => {
       className: g,
       look: o.zx.Looks.BLANK,
       color: o.zx.Colors.CUSTOM,
-      subscriptionTier: p.Si.TIER_2,
+      subscriptionTier: _.Si.TIER_2,
       textOptions: {
         textOverride: N
       },
       showGradient: true
-    }), 0 !== y.length && P(null == R ? true : R.descriptionCta) && null != v && (0, r.jsx)(o.zx, {
+    }), 0 !== y.length && R(null == P ? true : P.descriptionCta) && null != v && (0, r.jsx)(o.zx, {
       "data-migration-pending": true,
       className: g,
       onClick: v,

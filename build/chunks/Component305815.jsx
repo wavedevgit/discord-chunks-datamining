@@ -19,8 +19,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk22095 = require("./22095.js"),
   Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
-  Chunk509212 = require("./509212.js"),
   Chunk475595 = require("./475595.js"),
+  Chunk115179 = require("./115179.js"),
   Chunk515108 = require("./515108.jsx"),
   Chunk291967 = require("./291967.jsx"),
   Chunk324805 = require("./324805.js"),
@@ -35,7 +35,7 @@ function A(e) {
     onUseNow: a,
     user: l,
     mode: s
-  } = e, d = (0, j.fh)(t, j.eC.REWARD).url, u = (0, C.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == i ? true : i.skuId);
+  } = e, d = (0, v.fh)(t, v.eC.REWARD).url, u = (0, C.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == i ? true : i.skuId);
   return (0, r.jsxs)("div", {
     className: w.contentContainer,
     children: [(0, r.jsx)("div", {
@@ -75,12 +75,12 @@ function P(e) {
   var n, t, o;
   let {
     initialQuest: c,
-    onClose: j,
+    onClose: v,
     transitionState: b,
     preview: w,
     location: P,
     sourceQuestContent: D
-  } = e, E = null != (t = (0, C.B4)(c.id)) ? t : c, T = i.useMemo(() => (0, v.xn)(E.config), [E]), O = (0, l.e7)([f.default], () => f.default.getCurrentUser()), [L, R] = function(e) {
+  } = e, E = null != (t = (0, C.B4)(c.id)) ? t : c, T = i.useMemo(() => (0, j.xn)(E.config), [E]), O = (0, l.e7)([f.default], () => f.default.getCurrentUser()), [L, R] = function(e) {
     let {
       product: n,
       isFetching: t
@@ -111,7 +111,7 @@ function P(e) {
       M("applying"), M(await R() ? "applied" : "claimed")
     };
   return (0, r.jsx)(_.Z, {
-    onClose: j,
+    onClose: v,
     transitionState: b,
     quest: E,
     sourceQuestContent: D,

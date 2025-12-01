@@ -17,7 +17,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk362786 = require("./362786.js"),
   Chunk474936 = require("./474936.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,20 +26,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -66,7 +66,7 @@ function E(e) {
 class b extends Chunk81825.Z {
   static createFromServer(e) {
     var t;
-    return new b(g(h({
+    return new b(g(m({
       id: e.id,
       type: e.type,
       createdAt: new Date(e.created_at),
@@ -133,10 +133,10 @@ class b extends Chunk81825.Z {
     return this.isPurchasedExternally && null != this.renewalMutations && this.paymentGatewayPlanId !== this.renewalMutations.paymentGatewayPlanId
   }
   get hasPremiumNitroMonthly() {
-    return null != this.items.find(e => e.planId === _.Xh.PREMIUM_MONTH_TIER_2)
+    return null != this.items.find(e => e.planId === p.Xh.PREMIUM_MONTH_TIER_2)
   }
   get isBoostOnly() {
-    return this.items.every(e => [_.Xh.PREMIUM_MONTH_GUILD, _.Xh.PREMIUM_YEAR_GUILD].includes(e.planId))
+    return this.items.every(e => [p.Xh.PREMIUM_MONTH_GUILD, p.Xh.PREMIUM_YEAR_GUILD].includes(e.planId))
   }
   get isPausedOrPausePending() {
     return Chunk981631.JwP.ALL_PAUSE.has(this.status)
@@ -174,24 +174,24 @@ class b extends Chunk81825.Z {
     return null != (e = this.streakStartedAt) ? module : this.createdAt
   }
   get hasAnyPremiumNitro() {
-    return this.items.some(e => _.dJ.has(e.planId))
+    return this.items.some(e => p.dJ.has(e.planId))
   }
   get hasAnyPremiumGroup() {
-    return this.items.some(e => e.planId === _.Xh.PREMIUM_GROUP_MONTH)
+    return this.items.some(e => e.planId === p.Xh.PREMIUM_GROUP_MONTH)
   }
   hasPremiumAtLeast(e) {
     return !!this.isPremium && this.items.some(t => {
-      let n = _.GP[t.planId];
+      let n = p.GP[t.planId];
       return (0, c.yd)(n.premiumType, e)
     })
   }
   constructor(e) {
-    super(), p(this, "id", true), p(this, "type", true), p(this, "items", true), p(this, "createdAt", true), p(this, "canceledAt", true), p(this, "currentPeriodStart", true), p(this, "currentPeriodEnd", true), p(this, "status", true), p(this, "paymentSourceId", true), p(this, "paymentGateway", true), p(this, "paymentGatewayPlanId", true), p(this, "paymentGatewaySubscriptionId", true), p(this, "trialId", true), p(this, "trialEndsAt", true), p(this, "renewalMutations", true), p(this, "streakStartedAt", true), p(this, "currency", true), p(this, "pauseEndsAt", true), p(this, "pauseReason", true), p(this, "planId", true), p(this, "additionalPlans", true), p(this, "metadata", true), p(this, "latestInvoice", true), p(this, "useStorekitResubscribe", true), p(this, "price", true), p(this, "userId", true), p(this, "eligiblePaymentGateways", true), p(this, "priceChange", true), this.id = e.id, this.type = e.type, this.items = e.items, this.createdAt = e.createdAt, this.canceledAt = e.canceledAt, this.currentPeriodStart = e.currentPeriodStart, this.currentPeriodEnd = e.currentPeriodEnd, this.status = e.status, this.paymentSourceId = e.paymentSourceId, this.paymentGateway = e.paymentGateway, this.paymentGatewayPlanId = e.paymentGatewayPlanId, this.paymentGatewaySubscriptionId = e.paymentGatewaySubscriptionId, this.trialId = e.trialId, this.trialEndsAt = e.trialEndsAt, this.renewalMutations = e.renewalMutations, this.currency = e.currency, this.pauseEndsAt = e.pauseEndsAt, this.pauseReason = e.pauseReason, this.metadata = e.metadata, this.latestInvoice = e.latestInvoice, this.useStorekitResubscribe = e.useStorekitResubscribe, this.price = e.price, this.userId = e.userId, this.streakStartedAt = e.streakStartedAt, this.eligiblePaymentGateways = e.eligiblePaymentGateways, this.priceChange = e.priceChange;
+    super(), _(this, "id", true), _(this, "type", true), _(this, "items", true), _(this, "createdAt", true), _(this, "canceledAt", true), _(this, "currentPeriodStart", true), _(this, "currentPeriodEnd", true), _(this, "status", true), _(this, "paymentSourceId", true), _(this, "paymentGateway", true), _(this, "paymentGatewayPlanId", true), _(this, "paymentGatewaySubscriptionId", true), _(this, "trialId", true), _(this, "trialEndsAt", true), _(this, "renewalMutations", true), _(this, "streakStartedAt", true), _(this, "currency", true), _(this, "pauseEndsAt", true), _(this, "pauseReason", true), _(this, "planId", true), _(this, "additionalPlans", true), _(this, "metadata", true), _(this, "latestInvoice", true), _(this, "useStorekitResubscribe", true), _(this, "price", true), _(this, "userId", true), _(this, "eligiblePaymentGateways", true), _(this, "priceChange", true), this.id = e.id, this.type = e.type, this.items = e.items, this.createdAt = e.createdAt, this.canceledAt = e.canceledAt, this.currentPeriodStart = e.currentPeriodStart, this.currentPeriodEnd = e.currentPeriodEnd, this.status = e.status, this.paymentSourceId = e.paymentSourceId, this.paymentGateway = e.paymentGateway, this.paymentGatewayPlanId = e.paymentGatewayPlanId, this.paymentGatewaySubscriptionId = e.paymentGatewaySubscriptionId, this.trialId = e.trialId, this.trialEndsAt = e.trialEndsAt, this.renewalMutations = e.renewalMutations, this.currency = e.currency, this.pauseEndsAt = e.pauseEndsAt, this.pauseReason = e.pauseReason, this.metadata = e.metadata, this.latestInvoice = e.latestInvoice, this.useStorekitResubscribe = e.useStorekitResubscribe, this.price = e.price, this.userId = e.userId, this.streakStartedAt = e.streakStartedAt, this.eligiblePaymentGateways = e.eligiblePaymentGateways, this.priceChange = e.priceChange;
     let t = this.renewalMutations,
       n = e.items[0].planId,
       r = null;
     if (e.type === d.NYc.PREMIUM) {
-      let i = _.GP[e.items[0].planId],
+      let i = p.GP[e.items[0].planId],
         a = i.interval,
         s = i.intervalCount;
       n = (0, o.Xr)(e.items, a, s), null != t && (r = (0, o.Xr)(t.items, a, s))

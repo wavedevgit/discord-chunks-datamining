@@ -14,7 +14,7 @@ var Chunk169774 = require("./169774.js"),
   Chunk812405 = require("./812405.js"),
   Chunk778681 = require("./778681.js"),
   Chunk266254 = require("./266254.js"),
-  m = Chunk169774.isBrowser("Chrome") ? Chunk266254 : function(e) {};
+  h = Chunk169774.isBrowser("Chrome") ? Chunk266254 : function(e) {};
 module.exports = {
   onBeforeInput: Chunk34002,
   onBlur: Chunk330770,
@@ -28,6 +28,6 @@ module.exports = {
   onKeyDown: Chunk812405,
   onPaste: Chunk778681,
   onSelect: Chunk266254,
-  onMouseUp: m,
-  onKeyUp: m
+  onMouseUp: h,
+  onKeyUp: h
 }

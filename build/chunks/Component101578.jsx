@@ -25,10 +25,10 @@ let f = e => {
   } = e, {
     analyticsLocations: u
   } = (0, o.ZP)(a.Z.INVITE_EMBED), f = d(l), {
-    data: _
-  } = (0, s.IX)(null == (t = l.application) ? true : t.id), p = null != _ ? _ : f;
-  return null == p ? null : (0, r.jsx)(i.c, {
-    app: p,
+    data: p
+  } = (0, s.IX)(null == (t = l.application) ? true : t.id), _ = null != p ? p : f;
+  return null == _ ? null : (0, r.jsx)(i.c, {
+    app: _,
     channel: n,
     message: l,
     hideParty: c,

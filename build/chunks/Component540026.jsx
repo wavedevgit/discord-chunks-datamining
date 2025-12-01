@@ -2,7 +2,7 @@
 /** chunk id: 540026, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,17 +36,17 @@ let f = {
     friction: 14,
     tension: 200
   },
-  _ = {
+  p = {
     DURATION: "DURATION",
     VOLUME: "VOLUME"
   };
 
-function p(e) {
+function _(e) {
   let t = 0 | e,
     n = t % 60;
   return "".concat((t - n) / 60, ":").concat(String(n).padStart(2, "0"))
 }
-class h extends(r = Chunk473749.Component) {
+class m extends(r = Chunk473749.Component) {
   componentDidMount() {
     let {
       previewWidth: e,
@@ -92,7 +92,7 @@ class h extends(r = Chunk473749.Component) {
       bottom: o,
       height: s
     } = n.getBoundingClientRect();
-    return Math.min(1, Math.max(0, r === _.VOLUME ? (o - t) / s : (e - i) / a))
+    return Math.min(1, Math.max(0, r === p.VOLUME ? (o - t) / s : (e - i) / a))
   }
   render() {
     let {
@@ -106,16 +106,16 @@ class h extends(r = Chunk473749.Component) {
       animatedProgress: u
     } = this.state, d = Chunk473749 ? u : Chunk120356;
     return (0, Chunk54381.jsx)("div", {
-      className: s()(require, exports === _.VOLUME ? Chunk49434.vertical : Chunk49434.horizontal),
+      className: s()(require, exports === p.VOLUME ? Chunk49434.vertical : Chunk49434.horizontal),
       children: (0, Chunk54381.jsx)("div", {
-        className: s()(r, Chunk473749 ? Chunk49434.mediaBarInteractionDragging : Chunk49434.mediaBarInteraction, exports === _.VOLUME ? Chunk49434.mediaBarInteractionVolume : null),
+        className: s()(r, Chunk473749 ? Chunk49434.mediaBarInteractionDragging : Chunk49434.mediaBarInteraction, exports === p.VOLUME ? Chunk49434.mediaBarInteractionVolume : null),
         onMouseDown: this.handleDragStart,
         onMouseMove: this.handleMouseMove,
         ref: e => {
           this.wrapper = e
         },
         children: (0, Chunk54381.jsxs)("div", {
-          className: s()(Chunk49434.mediaBarWrapper, exports === _.VOLUME ? Chunk49434.mediaBarWrapperVolume : null),
+          className: s()(Chunk49434.mediaBarWrapper, exports === p.VOLUME ? Chunk49434.mediaBarWrapperVolume : null),
           children: [null != module ? module.map((e, t) => {
             let [n, r] = e;
             return (0, i.jsx)("div", {
@@ -125,7 +125,7 @@ class h extends(r = Chunk473749.Component) {
                 left: "".concat(100 * n, "%")
               }
             }, t)
-          }) : null, exports === _.DURATION ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
+          }) : null, exports === p.DURATION ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
             className: Chunk49434.mediaBarPreview,
             style: {
               width: Chunk120356.interpolate({
@@ -144,7 +144,7 @@ class h extends(r = Chunk473749.Component) {
             children: (0, Chunk54381.jsx)("span", {
               className: Chunk49434.mediaBarGrabber
             })
-          }), exports === _.DURATION ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
+          }), exports === p.DURATION ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
             ref: this.setBubbleRef,
             className: Chunk49434.bubble,
             style: {
@@ -176,7 +176,7 @@ class h extends(r = Chunk473749.Component) {
           value: r
         }
       } = this;
-      t || null == e || (e.innerText = p(n._value * r))
+      t || null == e || (e.innerText = _(n._value * r))
     }), u(this, "handleAnimatedChange", () => {
       let {
         bubble: e,
@@ -188,7 +188,7 @@ class h extends(r = Chunk473749.Component) {
           value: r
         }
       } = this;
-      t && null != e && (e.innerText = p(n._value * r))
+      t && null != e && (e.innerText = _(n._value * r))
     }), u(this, "handleMouseMove", e => {
       let {
         dragging: t,
@@ -244,7 +244,7 @@ class h extends(r = Chunk473749.Component) {
     })
   }
 }
-u(h, "Types", _), u(h, "defaultProps", {
+u(m, "Types", p), u(m, "defaultProps", {
   currentWindow: window
 });
-let m = h
+let h = m

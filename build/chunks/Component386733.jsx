@@ -2,7 +2,7 @@
 /** chunk id: 386733, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk120472 = require("./120472.js"),
   Chunk691766 = require("./691766.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -65,7 +65,7 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = e => {
+let P = e => {
     let {
       userRecord: t,
       placement: n
@@ -82,66 +82,66 @@ let R = e => {
       size: c.EFr.SIZE_32
     }, a)) : (0, r.jsx)(c.Heading, {
       variant: "heading-md/semibold",
-      className: I.userAvatarProgressBarUnitNum,
+      className: S.userAvatarProgressBarUnitNum,
       children: n
     });
     return (0, r.jsx)(c.aML, {
       text: v.intl.string(v.t.UnKHdo),
       shouldShow: !o,
-      tooltipContentClassName: I.unsentTooltipContent,
+      tooltipContentClassName: S.unsentTooltipContent,
       children: e => (0, r.jsx)("div", N(A({
-        className: I.userAvatarProgressBarUnit
+        className: S.userAvatarProgressBarUnit
       }, e), {
         children: s
       }))
     })
   },
-  P = e => {
+  R = e => {
     let {
       numSentReferrals: t,
       placement: n
     } = e;
     return (0, r.jsxs)("div", {
-      className: I.avatarProgressBarUnitConnectorContainer,
+      className: S.avatarProgressBarUnitConnectorContainer,
       children: [(0, r.jsx)("div", {
-        className: I.avatarProgressBarUnitConnectorBase
+        className: S.avatarProgressBarUnitConnectorBase
       }), (0, r.jsx)("div", {
         className: o()({
-          [I.fullHighlight]: t > n,
-          [I.halfHighlight]: t === n
+          [S.fullHighlight]: t > n,
+          [S.halfHighlight]: t === n
         })
-      })]
-    })
-  },
-  D = e => {
-    let {
-      userRecords: t
-    } = e, n = t.length, i = n < 1 ? null : t[0], a = n < 2 ? null : t[1], o = n < 3 ? null : t[2];
-    return (0, r.jsxs)("div", {
-      className: I.userAvatarProgressBarContainer,
-      children: [(0, r.jsx)(R, {
-        userRecord: i,
-        placement: 1
-      }), (0, r.jsx)(P, {
-        numSentReferrals: n,
-        placement: 1
-      }), (0, r.jsx)(R, {
-        userRecord: a,
-        placement: 2
-      }), (0, r.jsx)(P, {
-        numSentReferrals: n,
-        placement: 2
-      }), (0, r.jsx)(R, {
-        userRecord: o,
-        placement: 3
       })]
     })
   },
   w = e => {
     let {
+      userRecords: t
+    } = e, n = t.length, i = n < 1 ? null : t[0], a = n < 2 ? null : t[1], o = n < 3 ? null : t[2];
+    return (0, r.jsxs)("div", {
+      className: S.userAvatarProgressBarContainer,
+      children: [(0, r.jsx)(P, {
+        userRecord: i,
+        placement: 1
+      }), (0, r.jsx)(R, {
+        numSentReferrals: n,
+        placement: 1
+      }), (0, r.jsx)(P, {
+        userRecord: a,
+        placement: 2
+      }), (0, r.jsx)(R, {
+        numSentReferrals: n,
+        placement: 2
+      }), (0, r.jsx)(P, {
+        userRecord: o,
+        placement: 3
+      })]
+    })
+  },
+  D = e => {
+    let {
       analyticsLocations: t
     } = e;
-    p.default.track(O.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+    _.default.track(O.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
       location_stack: t
     }), (0, c.ZDy)(async () => {
       let {
@@ -152,93 +152,93 @@ let R = e => {
       }))
     })
   },
-  L = e => {
+  x = e => {
     let {
       isInSettings: t = false
     } = e, n = (0, s.e7)([g.Z], () => g.Z.getRecipientStatus()), {
       referralSentUsers: a
-    } = (0, E.G)(), f = i.useMemo(() => a.map(e => new _.Z(e)), [a]), p = {
+    } = (0, E.G)(), f = i.useMemo(() => a.map(e => new p.Z(e)), [a]), _ = {
       redeemed: 0,
       converted: 0,
       sent: n.size
     };
     n.forEach(e => {
-      e === m.Fe.REDEEMED && p.redeemed++, e === m.Fe.CONVERTED && (p.redeemed++, p.converted++)
+      e === h.Fe.REDEEMED && _.redeemed++, e === h.Fe.CONVERTED && (_.redeemed++, _.converted++)
     });
-    let S = p.sent === E.Q,
-      A = h.Z.getArticleURL(O.BhN.REFERRAL_PROGRAM),
+    let T = _.sent === E.Q,
+      A = m.Z.getArticleURL(O.BhN.REFERRAL_PROGRAM),
       {
         analyticsLocations: C
       } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       N = i.useRef(null),
-      R = p.sent / E.Q * 100,
-      P = (0, r.jsxs)("div", {
-        className: I.referralInfoContent,
+      P = _.sent / E.Q * 100,
+      R = (0, r.jsxs)("div", {
+        className: S.referralInfoContent,
         children: [(0, r.jsx)(b.ZP, {
-          percentage: R,
+          percentage: P,
           progressCircleVariation: b.Qo.NITRO_LOGO,
           iconClassName: o()({
-            [I.referralProgressBarIcon]: !t,
-            [I.referralProgressBarIconSettings]: t
+            [S.referralProgressBarIcon]: !t,
+            [S.referralProgressBarIconSettings]: t
           })
         }), (0, r.jsxs)("div", {
-          className: I.expandedProgressBarContent,
+          className: S.expandedProgressBarContent,
           children: [(0, r.jsx)(c.Heading, {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
-            className: I.expandedProgressBarHeader,
+            className: S.expandedProgressBarHeader,
             children: (0, y.$s)({
-              hasSentAll: S
+              hasSentAll: T
             })
-          }), (0, r.jsx)(D, {
+          }), (0, r.jsx)(w, {
             userRecords: f
           }), (0, r.jsx)(c.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
             children: (0, y.Hg)({
               helpdeskArticle: A,
-              referralsStatuses: p
+              referralsStatuses: _
             })
           }), (0, r.jsx)("div", {
-            className: o()(I.expandedProgressBarButtonContainer, {
-              [I.expandedProgressBarButtonContainerLayout]: !t
+            className: o()(S.expandedProgressBarButtonContainer, {
+              [S.expandedProgressBarButtonContainerLayout]: !t
             }),
             children: (0, r.jsx)(c.gtL, {
               "data-migration-pending": true,
-              className: I.expandedProgressBarSelectFriendsCTA,
+              className: S.expandedProgressBarSelectFriendsCTA,
               color: l.Tt.CUSTOM,
-              onClick: () => w({
+              onClick: () => D({
                 analyticsLocations: C
               }),
               onlyShineOnHover: true,
               children: (0, r.jsxs)("div", {
-                className: I.expandedProgressBarSelectFriendsCTAInner,
+                className: S.expandedProgressBarSelectFriendsCTAInner,
                 children: [(0, r.jsx)("img", {
-                  src: T,
+                  src: I,
                   alt: "",
-                  className: I.expandedProgressBarSelectFriendsIcon
-                }), S ? v.intl.string(v.t.SY9tyI) : v.intl.string(v.t.Lm2nFc)]
+                  className: S.expandedProgressBarSelectFriendsIcon
+                }), T ? v.intl.string(v.t.SY9tyI) : v.intl.string(v.t.Lm2nFc)]
               })
             })
           })]
         })]
       }),
-      L = p.redeemed === E.Q;
+      x = _.redeemed === E.Q;
     return (0, r.jsx)(d.Gt, {
       value: C,
       children: (0, r.jsx)("div", {
         className: o()({
-          [I.containerWithGlowWithoutBanner]: L,
-          [I.containerWithoutGlow]: !L,
-          [I.containerWithMargins]: !t,
-          [I.containerWithGlowOnSettingsPage]: L && t
+          [S.containerWithGlowWithoutBanner]: x,
+          [S.containerWithoutGlow]: !x,
+          [S.containerWithMargins]: !t,
+          [S.containerWithGlowOnSettingsPage]: x && t
         }),
         children: (0, r.jsx)("div", {
           ref: N,
           className: o()({
-            [I.expandedProgressBarContainer]: !t,
-            [I.expandedProgressBarContainerSettingsPage]: t,
-            [I.allReferralsSentBorder]: L
+            [S.expandedProgressBarContainer]: !t,
+            [S.expandedProgressBarContainerSettingsPage]: t,
+            [S.allReferralsSentBorder]: x
           }),
-          children: P
+          children: R
         })
       })
     })

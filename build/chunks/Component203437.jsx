@@ -87,7 +87,7 @@ function C(e) {
       size: u.Z.Sizes.SMOL,
       active: true
     }), [S]),
-    M = a.useCallback(e => {
+    E = a.useCallback(e => {
       let n = null == e ? true : e.value;
       return null == n || "" === n ? null : (0, l.jsx)(w, {
         className: r()({
@@ -96,7 +96,7 @@ function C(e) {
         availableSlots: O[n]
       })
     }, [O]),
-    E = a.useCallback(e => (0, l.jsx)("div", {
+    M = a.useCallback(e => (0, l.jsx)("div", {
       className: r()({
         [N.disabledOption]: e.disabled
       }),
@@ -117,8 +117,8 @@ function C(e) {
     multi: false,
     options: Z,
     renderOptionPrefix: P,
-    renderOptionSuffix: M,
-    renderOptionLabel: E,
+    renderOptionSuffix: E,
+    renderOptionLabel: M,
     placeholder: 0 === Z.length ? x.intl.string(x.t.O3i2gV) : x.intl.string(x.t.CunCMN)
   })
 }

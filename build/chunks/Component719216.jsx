@@ -59,7 +59,7 @@ function f(e) {
     onAction: d
   } = e, f = u(e, ["activity", "user", "variant", "onAction"]);
   if ((null == t ? true : t.buttons) == null || t.buttons.length < 1) return null;
-  async function _(e, t, n) {
+  async function p(e, t, n) {
     try {
       let r = await (0, a.sd)(e, t);
       if (r.button_urls.length <= n) return;
@@ -80,7 +80,7 @@ function f(e) {
       size: "sm",
       fullWidth: true,
       onClick: () => {
-        null == d || d(), _(t, n.id, a)
+        null == d || d(), p(t, n.id, a)
       }
     }, f), "customButton-".concat(a)))
   })

@@ -44,23 +44,23 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = {
+let _ = {
   hashes: {}
 };
-async function h() {
+async function m() {
   if (!Chunk358085.isPlatformEmbedded || !(0, Chunk358085.isWindows)()) return [];
   await Chunk998502.ZP.ensureModule("discord_media");
   let e = Chunk998502.ZP.requireModule("discord_media");
   return await module.getSystemAnalyticsBlob() || []
 }
-async function m() {
+async function h() {
   try {
-    let t = (await h()).filter(e => p.hashes[e.name] !== e.hash);
+    let t = (await m()).filter(e => _.hashes[e.name] !== e.hash);
     for (let {
         name: n,
         hash: r,
@@ -68,11 +68,11 @@ async function m() {
       }
       of exports) {
       var e;
-      let t = _(d({}, Chunk442837), {
+      let t = p(d({}, Chunk442837), {
         gpus: null == (e = Chunk442837.gpus) ? true : module.map(e => JSON.stringify(e))
       });
-      Chunk626135.default.track(require, exports), (p = {
-        hashes: d({}, p.hashes)
+      Chunk626135.default.track(require, exports), (_ = {
+        hashes: d({}, _.hashes)
       }).hashes[require] = r
     }
     exports.length > 0 && b.emitChange()
@@ -80,20 +80,20 @@ async function m() {
 }
 
 function g() {
-  return m(), false
+  return h(), false
 }
 class E extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    p = null != e && "object" == typeof e.hashes ? e : {
+    _ = null != e && "object" == typeof e.hashes ? e : {
       hashes: {}
     }, this.waitFor(o.Z)
   }
   getState() {
-    return p
+    return _
   }
   async info() {
     try {
-      let e = (await h()).find(e => "hardware_detected" === e.name);
+      let e = (await m()).find(e => "hardware_detected" === e.name);
       if (null == module) return null;
       return module.data
     } catch (e) {}

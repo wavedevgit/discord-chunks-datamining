@@ -19,25 +19,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk685383 = require("./685383.js");
 
-function m(e) {
+function h(e) {
   let {
     game: t,
     application: n
   } = e;
   return null == t || null == n ? (0, r.jsx)("div", {
-    className: h.iconContainer,
+    className: m.iconContainer,
     children: (0, r.jsx)(s.Mgn, {
       size: "sm",
       color: s.TVs.colors.TEXT_FEEDBACK_WARNING
     })
   }) : (0, r.jsxs)("div", {
-    className: h.gameIconContainer,
+    className: m.gameIconContainer,
     children: [(0, r.jsx)(c.Z, {
       game: n,
       pid: t.pid,
       size: c.A.MEDIUM
     }), (0, r.jsx)("div", {
-      className: h.warningCorner,
+      className: m.warningCorner,
       children: (0, r.jsx)(s.Mgn, {
         size: "sm",
         color: s.TVs.colors.TEXT_FEEDBACK_WARNING
@@ -47,7 +47,7 @@ function m(e) {
 }
 
 function g(e, t) {
-  return "voice" === e ? p.intl.string(p.t.vxfv7v) : null != t ? p.intl.string(p.t.fAYU2G) : p.intl.string(p.t["9V4X/c"])
+  return "voice" === e ? _.intl.string(_.t.vxfv7v) : null != t ? _.intl.string(_.t.fAYU2G) : _.intl.string(_.t["9V4X/c"])
 }
 
 function E(e) {
@@ -58,7 +58,7 @@ function E(e) {
     } = (0, l.Z)();
   null == n || n.elevated || (n = true, r = true);
   let i = (0, f.hi)(),
-    a = i && null != n && t === _.pM4.PUSH_TO_TALK;
+    a = i && null != n && t === p.pM4.PUSH_TO_TALK;
   return {
     canPrompt: "voice" === e ? a : i,
     runningGame: n,
@@ -81,12 +81,12 @@ function b(e) {
     (0, f.sU)(n + (null != o ? "-with-game" : "-no-game"))
   }
   return (0, r.jsxs)("div", {
-    className: a()(h.container, t),
-    children: [(0, r.jsx)(m, {
+    className: a()(m.container, t),
+    children: [(0, r.jsx)(h, {
       game: o,
       application: l
     }), (0, r.jsxs)("div", {
-      className: h.textContainer,
+      className: m.textContainer,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-primary",
@@ -94,14 +94,14 @@ function b(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        children: p.intl.format(p.t["/y6htt"], {
-          helpCenterLink: d.Z.getArticleURL(_.BhN.SYSTEM_SERVICE)
+        children: _.intl.format(_.t["/y6htt"], {
+          helpCenterLink: d.Z.getArticleURL(p.BhN.SYSTEM_SERVICE)
         })
       })]
     }), (0, r.jsx)(s.Button, {
       variant: "secondary",
       size: "sm",
-      text: p.intl.string(p.t["1iI46O"]),
+      text: _.intl.string(_.t["1iI46O"]),
       onClick: c
     })]
   })

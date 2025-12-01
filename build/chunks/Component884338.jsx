@@ -2,8 +2,8 @@
 /** chunk id: 884338, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => D,
-  ag: () => T,
+  ZP: () => w,
+  ag: () => I,
   u8: () => b
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
@@ -18,7 +18,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk426563 = require("./426563.js"),
   Chunk245141 = require("./245141.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -65,25 +65,25 @@ let b = {
   y = 10,
   O = 15,
   v = 20,
-  I = 35,
-  T = "user-icon";
+  S = 35,
+  I = "user-icon";
 
-function S(e, t) {
-  if (e === T) return "user-icon-".concat(t);
+function T(e, t) {
+  if (e === I) return "user-icon-".concat(t);
   let n = e instanceof d.Z ? e : null != e ? e.user : null;
   return null != n ? n.id : "user-".concat(t)
 }
 
 function A(e) {
   return (0, i.jsx)("div", {
-    className: p.moreUsers,
+    className: _.moreUsers,
     children: e
   })
 }
 
 function C(e) {
   return (0, i.jsx)("div", {
-    className: s()(p.moreUsers, p.moreUsersDimmed),
+    className: s()(_.moreUsers, _.moreUsersDimmed),
     children: e
   })
 }
@@ -104,7 +104,7 @@ function N() {
   }
 }
 
-function R() {
+function P() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : b.SIZE_24;
   switch (module) {
     case b.SIZE_16:
@@ -114,12 +114,12 @@ function R() {
     case b.SIZE_32:
       return v;
     case b.SIZE_56:
-      return I;
+      return S;
     default:
       return y
   }
 }
-class P extends(r = Chunk473749.PureComponent) {
+class R extends(r = Chunk473749.PureComponent) {
   renderUsers() {
     let {
       users: e,
@@ -135,13 +135,13 @@ class P extends(r = Chunk473749.PureComponent) {
       Chunk120356.push(exports ? (0, Chunk54381.jsx)("div", {
         className: Chunk245141.avatarContainer,
         children: s
-      }, S(null != (d = module[Chunk670188]) ? Chunk598077 : null, Chunk670188)) : (0, Chunk54381.jsx)(Chunk686546.ZP, {
+      }, T(null != (d = module[Chunk670188]) ? Chunk598077 : null, Chunk670188)) : (0, Chunk54381.jsx)(Chunk686546.ZP, {
         className: Chunk245141.avatarContainerMasked,
         height: r,
         width: r,
         mask: Chunk686546.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
         children: s
-      }, S(module[Chunk670188], Chunk670188))), Chunk670188++
+      }, T(module[Chunk670188], Chunk670188))), Chunk670188++
     }
     return null != Chunk473749 ? Chunk120356.push(Chunk473749) : null != Chunk481060 && Chunk120356.push(Chunk481060), Chunk120356
   }
@@ -197,7 +197,7 @@ class P extends(r = Chunk473749.PureComponent) {
       children: [this.renderIcon(), this.renderUsers()]
     });
     let c = require.find(e => e instanceof d.Z && e.id === l),
-      _ = Chunk120356 && null == Chunk594174.default.getUser(Chunk481060);
+      p = Chunk120356 && null == Chunk594174.default.getUser(Chunk481060);
     return (0, Chunk54381.jsx)(Chunk670188.Z, {
       targetElementRef: this._ref,
       userId: Chunk481060,
@@ -209,8 +209,8 @@ class P extends(r = Chunk473749.PureComponent) {
         popoutUserId: null
       }),
       clickTrap: true,
-      children: n => (0, i.jsxs)("div", E(m({
-        className: s()(e, p.container, N(t)),
+      children: n => (0, i.jsxs)("div", E(h({
+        className: s()(e, _.container, N(t)),
         ref: this._ref
       }, n), {
         children: [this.renderIcon(), this.renderUsers()]
@@ -218,9 +218,9 @@ class P extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "state", {
+    super(...e), m(this, "state", {
       popoutUserId: null
-    }), h(this, "_ref", a.createRef()), h(this, "defaultRenderUser", (e, t, n) => {
+    }), m(this, "_ref", a.createRef()), m(this, "defaultRenderUser", (e, t, n) => {
       let r, {
         showUserPopout: a,
         guildId: o,
@@ -229,20 +229,20 @@ class P extends(r = Chunk473749.PureComponent) {
       } = this.props;
       if (null == e)
         if (!this.props.showDefaultAvatarsForNullUsers) return (0, i.jsx)("div", {
-          className: s()(p.emptyUser, {
-            [p.emptyUserDimmed]: u
+          className: s()(_.emptyUser, {
+            [_.emptyUserDimmed]: u
           })
         });
         else {
-          let e = (null != n ? n : 0) % _.Z.DEFAULT_AVATARS.length,
-            t = _.Z.DEFAULT_AVATARS[e];
+          let e = (null != n ? n : 0) % p.Z.DEFAULT_AVATARS.length,
+            t = p.Z.DEFAULT_AVATARS[e];
           return (0, i.jsx)("img", {
             src: t,
             alt: "",
-            className: p.avatar
+            className: _.avatar
           })
-        } if (e === T) {
-        let e = R(c);
+        } if (e === I) {
+        let e = P(c);
         r = (0, i.jsx)(l.tBG, {
           size: "custom",
           color: "currentColor",
@@ -252,14 +252,14 @@ class P extends(r = Chunk473749.PureComponent) {
       } else r = (0, i.jsx)("img", {
         src: e.getAvatarURL(o, c),
         alt: e.username,
-        className: p.avatar
+        className: _.avatar
       });
       let d = (0, i.jsx)("div", {
-        className: p.avatarWithBackground,
+        className: _.avatarWithBackground,
         children: r
-      }, S(e, n));
-      return a && e !== T ? (0, i.jsx)(l.P3F, {
-        className: p.clickableAvatar,
+      }, T(e, n));
+      return a && e !== I ? (0, i.jsx)(l.P3F, {
+        className: _.clickableAvatar,
         onClick: () => {
           null != this._ref.current && null != e && this.setState({
             popoutUserId: e.id
@@ -267,15 +267,15 @@ class P extends(r = Chunk473749.PureComponent) {
         },
         tabIndex: false,
         children: d
-      }, S(e, n)) : d
+      }, T(e, n)) : d
     })
   }
 }
-h(P, "defaultProps", {
+m(R, "defaultProps", {
   max: 10,
   renderMoreUsers: A,
   renderIcon: false,
   showDefaultAvatarsForNullUsers: false,
   size: b.SIZE_24
 });
-let D = P
+let w = R

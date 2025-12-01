@@ -2,8 +2,8 @@
 /** chunk id: 325808, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  XH: () => I,
-  ZP: () => T,
+  XH: () => S,
+  ZP: () => I,
   cO: () => O
 });
 var Chunk54381 = require("./54381.js"),
@@ -63,17 +63,17 @@ function v(e) {
     } = (0, f.H)({
       location: "PTTTools"
     });
-  return t = d.isPlatformEmbedded || n !== m.pM4.PUSH_TO_TALK ? (0, r.jsx)(o.Wn, {
+  return t = d.isPlatformEmbedded || n !== h.pM4.PUSH_TO_TALK ? (0, r.jsx)(o.Wn, {
     messageType: o.QYI.INFO,
     children: g.intl.format(g.t.HVvn5T, {
-      onClick: () => (0, p.openUserSettings)(_.n.KEYBINDS_PANEL, {
-        section: m.oAB.KEYBINDS
+      onClick: () => (0, _.openUserSettings)(p.n.KEYBINDS_PANEL, {
+        section: h.oAB.KEYBINDS
       })
     })
   }) : (0, r.jsx)(o.Wn, {
     messageType: o.QYI.WARNING,
     children: g.intl.format(g.t.zvMPOc, {
-      onDownloadClick: () => (0, h.y)("Help Text PTT")
+      onDownloadClick: () => (0, m.y)("Help Text PTT")
     })
   }), (0, r.jsxs)(o.Kqy, {
     gap: 20,
@@ -95,7 +95,7 @@ function v(e) {
           delay: e
         }),
         onValueRender: O,
-        maxValue: m.qhL
+        maxValue: h.qhL
       })]
     }), b && (0, r.jsx)(o.rsf, {
       label: g.intl.string(g.t.EGn1eN),
@@ -108,8 +108,8 @@ function v(e) {
   })
 }
 
-function I(e, t) {
-  e === m.pM4.PUSH_TO_TALK && y && (0, o.ZDy)(async () => {
+function S(e, t) {
+  e === h.pM4.PUSH_TO_TALK && y && (0, o.ZDy)(async () => {
     let {
       default: e
     } = await n.e("84112").then(n.bind(n, 273352));
@@ -117,7 +117,7 @@ function I(e, t) {
       title: g.intl.string(g.t.Kdt0Gb),
       confirmText: g.intl.string(g.t["1WjMbC"]),
       cancelText: g.intl.string(g.t.BddRzS),
-      onConfirm: () => (0, h.y)("PTT Limited Modal"),
+      onConfirm: () => (0, m.y)("PTT Limited Modal"),
       body: g.intl.string(g.t.NIozvt)
     }, t))
   }), s.Z.setMode(e, true, true, {
@@ -125,7 +125,7 @@ function I(e, t) {
   })
 }
 
-function T() {
+function I() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode()), n = [{
@@ -138,7 +138,7 @@ function T() {
     let {
       value: n
     } = t;
-    I(n, e)
+    S(n, e)
   }, [module]);
   return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
     gap: 20,

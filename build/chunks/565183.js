@@ -2,7 +2,7 @@
 /** chunk id: 565183, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./539854.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
@@ -22,7 +22,7 @@ function u(e, t, n) {
 }
 let d = 20,
   f = 6e4;
-class _ {
+class p {
   request(e) {
     if (this._pending.has(e)) return;
     let t = this._lastFetchedAttempted.get(e);
@@ -47,14 +47,14 @@ class _ {
     u(this, "_lastFetchedAttempted", new Map), u(this, "_pending", new Set), u(this, "_flushHandler", new Chunk846519.sW(32, () => this._flush()))
   }
 }
-let p = new _;
+let _ = new p;
 
-function h(e) {
+function m(e) {
   r.useEffect(() => {
-    null != e && "" !== e && p.request(e)
+    null != e && "" !== e && _.request(e)
   }, [e])
 }
 
-function m(e) {
-  return h(e), (0, o.e7)([c.Z], () => null != e && "" !== e ? c.Z.getApplication(e) : null, [e])
+function h(e) {
+  return m(e), (0, o.e7)([c.Z], () => null != e && "" !== e ? c.Z.getApplication(e) : null, [e])
 }

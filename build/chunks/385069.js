@@ -2,7 +2,7 @@
 /** chunk id: 385069, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => h
+  N: () => m
 });
 var Chunk822433 = require("./822433.js"),
   Chunk17042 = require("./17042.js"),
@@ -17,20 +17,20 @@ var Chunk822433 = require("./822433.js"),
   Chunk221721 = require("./221721.js"),
   Chunk587157 = require("./587157.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   let {
-    isVirtualized: h,
-    disallowTypeAhead: m,
+    isVirtualized: m,
+    disallowTypeAhead: h,
     keyboardDelegate: g,
     focusMode: E,
     scrollRef: b,
     getRowText: y,
     onRowAction: O,
     onCellAction: v,
-    escapeKeyBehavior: I = "clearSelection",
-    shouldSelectOnPressUp: T
+    escapeKeyBehavior: S = "clearSelection",
+    shouldSelectOnPressUp: I
   } = e, {
-    selectionManager: S
+    selectionManager: T
   } = t;
   e["aria-label"] || e["aria-labelledby"] || console.warn("An aria-label or aria-labelledby prop is required for accessibility.");
   let A = (0, d.X)({
@@ -41,7 +41,7 @@ function h(e, t, n) {
       direction: C
     } = (0, f.j)(),
     N = t.selectionManager.disabledBehavior,
-    R = (0, u.useMemo)(() => g || new(0, r.i)({
+    P = (0, u.useMemo)(() => g || new(0, r.i)({
       collection: t.collection,
       disabledKeys: t.disabledKeys,
       disabledBehavior: N,
@@ -51,56 +51,56 @@ function h(e, t, n) {
       focusMode: E
     }), [g, t.collection, t.disabledKeys, N, n, C, A, E]),
     {
-      collectionProps: P
-    } = (0, p.g)({
+      collectionProps: R
+    } = (0, _.g)({
       ref: n,
-      selectionManager: S,
-      keyboardDelegate: R,
-      isVirtualized: h,
+      selectionManager: T,
+      keyboardDelegate: P,
+      isVirtualized: m,
       scrollRef: b,
-      disallowTypeAhead: m,
-      escapeKeyBehavior: I
+      disallowTypeAhead: h,
+      escapeKeyBehavior: S
     }),
-    D = (0, s.Me)(e.id);
+    w = (0, s.Me)(e.id);
   i.B.set(t, {
-    keyboardDelegate: R,
+    keyboardDelegate: P,
     actions: {
       onRowAction: O,
       onCellAction: v
     },
-    shouldSelectOnPressUp: T
+    shouldSelectOnPressUp: I
   });
-  let w = (0, o.j)({
-      selectionManager: S,
+  let D = (0, o.j)({
+      selectionManager: T,
       hasItemActions: !!(O || v)
     }),
-    L = (0, l.z)(e, {
+    x = (0, l.z)(e, {
       labelable: true
     }),
-    x = (0, u.useCallback)(e => {
-      if (S.isFocused) {
-        e.currentTarget.contains(e.target) || S.setFocused(false);
+    L = (0, u.useCallback)(e => {
+      if (T.isFocused) {
+        e.currentTarget.contains(e.target) || T.setFocused(false);
         return
       }
-      e.currentTarget.contains(e.target) && S.setFocused(true)
-    }, [S]),
-    M = (0, u.useMemo)(() => ({
-      onBlur: P.onBlur,
-      onFocus: x
-    }), [x, P.onBlur]),
-    k = (0, _.p)(n, {
+      e.currentTarget.contains(e.target) && T.setFocused(true)
+    }, [T]),
+    j = (0, u.useMemo)(() => ({
+      onBlur: R.onBlur,
+      onFocus: L
+    }), [L, R.onBlur]),
+    M = (0, p.p)(n, {
       isDisabled: 0 !== t.collection.size
     }),
-    j = (0, c.d)(L, {
+    k = (0, c.d)(x, {
       role: "grid",
-      id: D,
-      "aria-multiselectable": "multiple" === S.selectionMode ? "true" : true
-    }, t.isKeyboardNavigationDisabled ? M : P, 0 === t.collection.size && {
-      tabIndex: k ? false : 0
-    } || true, w);
-  return h && (j["aria-rowcount"] = t.collection.size, j["aria-colcount"] = t.collection.columnCount), (0, a.B)({
+      id: w,
+      "aria-multiselectable": "multiple" === T.selectionMode ? "true" : true
+    }, t.isKeyboardNavigationDisabled ? j : R, 0 === t.collection.size && {
+      tabIndex: M ? false : 0
+    } || true, D);
+  return m && (k["aria-rowcount"] = t.collection.size, k["aria-colcount"] = t.collection.columnCount), (0, a.B)({
     getRowText: y
   }, t), {
-    gridProps: j
+    gridProps: k
   }
 }

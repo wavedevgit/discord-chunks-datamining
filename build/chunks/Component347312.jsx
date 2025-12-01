@@ -17,16 +17,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk607889 = require("./607889.js"),
   Chunk94432 = require("./94432.js"),
   Chunk784506 = require("./784506.js");
-let m = 40,
+let h = 40,
   g = Chunk94432.e3 / 1e3,
   E = 294,
   b = 45,
   y = 1,
   O = 4,
   v = 6,
-  I = 24,
-  T = 2,
-  S = 4,
+  S = 24,
+  I = 2,
+  T = 4,
   A = [0, 0, 0, 0, 0],
   C = 200;
 
@@ -39,11 +39,11 @@ function N(e) {
     return
   }
   let n = [];
-  for (let e = 0; e < t.length; e++) n[e] = t.charCodeAt(e) / p.Xi;
+  for (let e = 0; e < t.length; e++) n[e] = t.charCodeAt(e) / _.Xi;
   return n
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null != e && null != t) {
     if (e.length < t) {
       let n = t - e.length;
@@ -53,22 +53,22 @@ function R(e, t) {
   }
 }
 
-function P(e) {
+function R(e) {
   let t;
-  return Math.floor(((t = e <= g ? m : e >= b ? E : (Math.min(e, b) - g) / (b - g) * (E - m) + m) + O) / v) * v - O
+  return Math.floor(((t = e <= g ? h : e >= b ? E : (Math.min(e, b) - g) / (b - g) * (E - h) + h) + O) / v) * v - O
 }
 
-function D(e) {
+function w(e) {
   if (null == e) return;
   let t = 2 * y + O;
   return Math.floor((e + O) / t)
 }
 
-function w(e, t, n, r, i) {
+function D(e, t, n, r, i) {
   e.moveTo(t, n + i), e.lineTo(t, n + r - i), e.arc(t + i, n + r - i, i, Math.PI, 0, true), e.lineTo(t + 2 * i, n + i), e.arc(t + i, n + i, i, 0, Math.PI, true), e.closePath()
 }
 
-function L(e) {
+function x(e) {
   let {
     showAll: t,
     currentTime: n,
@@ -78,7 +78,7 @@ function L(e) {
   return t ? i : Math.max(0, Math.round(n / r * i))
 }
 
-function x(e) {
+function L(e) {
   let {
     context: t,
     devicePixelRatio: n,
@@ -86,20 +86,20 @@ function x(e) {
     segmentValue: i,
     segmentIndex: a,
     constrainMin: o
-  } = e, s = o ? (I - T) * i + T : I * i;
-  0 !== s && w(t, a * (2 * y + O) * n, (r / 2 - s / 2) * n, s * n, y * n)
+  } = e, s = o ? (S - I) * i + I : S * i;
+  0 !== s && D(t, a * (2 * y + O) * n, (r / 2 - s / 2) * n, s * n, y * n)
 }
 
-function M(e, t) {
+function j(e, t) {
   let n = i.useMemo(() => N(e), [e]),
-    r = i.useMemo(() => D(t), [t]);
+    r = i.useMemo(() => w(t), [t]);
   return i.useMemo(() => {
     var e;
-    return null != (e = R(null != n ? n : [], r)) ? e : A
+    return null != (e = P(null != n ? n : [], r)) ? e : A
   }, [n, r])
 }
 
-function k(e, t, n) {
+function M(e, t, n) {
   let [r, a] = i.useState(e), [o, s] = i.useState(e), l = i.useRef(o);
   return i.useLayoutEffect(() => {
     l.current = o
@@ -108,23 +108,23 @@ function k(e, t, n) {
   }, [e, t, n]), [r, o]
 }
 
-function j(e, t) {
+function k(e, t) {
   let n = (0, l.dQu)(s.Z.colors.INTERACTIVE_MUTED).hex(),
     r = (0, l.dQu)(s.Z.colors.INTERACTIVE_NORMAL).hex(),
     i = (0, l.dQu)(s.Z.colors.INTERACTIVE_ACTIVE).hex(),
     a = (0, l.dQu)(s.Z.unsafe_rawColors.BRAND_430).hex(),
     o = (0, l.dQu)(s.Z.unsafe_rawColors.WHITE_500).hex(),
     c = t ? a : n,
-    [u, d] = k(c, t, e),
-    [f, _] = k(t ? o : e ? i : r, t, e),
-    [p, h] = k(e ? c : r, t, e);
+    [u, d] = M(c, t, e),
+    [f, p] = M(t ? o : e ? i : r, t, e),
+    [_, m] = M(e ? c : r, t, e);
   return {
     lastBackgroundFillColor: u,
     backgroundFillColor: d,
     lastActiveFillColor: f,
-    activeFillColor: _,
-    lastInactiveFillColor: p,
-    inactiveFillColor: h
+    activeFillColor: p,
+    lastInactiveFillColor: _,
+    inactiveFillColor: m
   }
 }
 
@@ -143,41 +143,41 @@ function G(e) {
     played: l,
     playing: d,
     onDrag: f,
-    onDragStart: p,
-    onDragEnd: m
+    onDragStart: _,
+    onDragEnd: h
   } = e, {
     ref: g,
     width: E
-  } = (0, c.ZP)(), b = i.useMemo(() => P(s), [s]), y = i.useRef(true), O = M(n, E), v = i.useRef(l), T = i.useRef(d), A = i.useRef(null), N = window.devicePixelRatio, {
-    lastBackgroundFillColor: R,
-    backgroundFillColor: D,
-    lastActiveFillColor: w,
-    activeFillColor: k,
+  } = (0, c.ZP)(), b = i.useMemo(() => R(s), [s]), y = i.useRef(true), O = j(n, E), v = i.useRef(l), I = i.useRef(d), A = i.useRef(null), N = window.devicePixelRatio, {
+    lastBackgroundFillColor: P,
+    backgroundFillColor: w,
+    lastActiveFillColor: D,
+    activeFillColor: M,
     lastInactiveFillColor: G,
-    inactiveFillColor: B
-  } = j(l, d), Z = {
+    inactiveFillColor: Z
+  } = k(l, d), B = {
     currentTime: a,
     duration: s,
     played: l
-  }, F = i.useRef(Z);
+  }, F = i.useRef(B);
   i.useEffect(() => {
-    F.current = Z
+    F.current = B
   }), i.useEffect(() => {
     let {
       currentTime: e,
       duration: t,
       played: n
-    } = F.current, r = L({
+    } = F.current, r = x({
       showAll: !n,
       currentTime: e,
       duration: t,
       numSegments: O.length
     });
-    y.current = O.map((e, t) => new _.Z(t < r ? e : 0))
+    y.current = O.map((e, t) => new p.Z(t < r ? e : 0))
   }, [O]), i.useEffect(() => {
     let e = y.current;
     if (null == e) return;
-    let t = L({
+    let t = x({
       showAll: !l,
       currentTime: a,
       duration: s,
@@ -200,12 +200,12 @@ function G(e) {
         a = y.current;
       if (null == r || null == i || null == a) return;
       let o = false;
-      (v.current !== l || T.current !== d) && (v.current = l, T.current = d, A.current = n), null != A.current && n > A.current + C && (A.current = null);
+      (v.current !== l || I.current !== d) && (v.current = l, I.current = d, A.current = n), null != A.current && n > A.current + C && (A.current = null);
       let s = r.height / N;
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
-      let [c, u] = U(R, D, n, A.current);
+      let [c, u] = U(P, w, n, A.current);
       o = o || u, i.fillStyle = c;
-      for (let e = 0; e < O.length; e++) x({
+      for (let e = 0; e < O.length; e++) L({
         context: i,
         devicePixelRatio: N,
         canvasHeight: s,
@@ -214,14 +214,14 @@ function G(e) {
         constrainMin: true
       });
       i.fill();
-      let [f, _] = U(G, B, n, A.current);
-      o = o || _;
-      let [p, h] = U(w, k, n, A.current);
-      o = o || h;
+      let [f, p] = U(G, Z, n, A.current);
+      o = o || p;
+      let [_, m] = U(D, M, n, A.current);
+      o = o || m;
       for (let e = 0; e < a.length; e++) {
         let t = a[e],
           n = Math.max(t.getCurrentValue(), O[e] - .1);
-        i.beginPath(), i.fillStyle = t.isReset ? f : p, x({
+        i.beginPath(), i.fillStyle = t.isReset ? f : _, L({
           context: i,
           devicePixelRatio: N,
           canvasHeight: s,
@@ -235,21 +235,21 @@ function G(e) {
     return e = requestAnimationFrame(t), () => {
       null != e && cancelAnimationFrame(e)
     }
-  }, [g, N, O, E, a, s, l, d, R, D, w, k, G, B]);
+  }, [g, N, O, E, a, s, l, d, P, w, D, M, G, Z]);
   let [, V] = (0, u.Z)({
     ref: g,
     onDrag: f,
-    onDragStart: p,
-    onDragEnd: m
+    onDragStart: _,
+    onDragEnd: h
   });
   return (0, r.jsx)("canvas", {
     onMouseDown: V,
-    className: o()(h.canvas, t),
+    className: o()(m.canvas, t),
     style: {
       width: b
     },
     ref: g,
-    height: (I + 2 * S) * window.devicePixelRatio,
+    height: (S + 2 * T) * window.devicePixelRatio,
     width: (null != E ? E : 0) * window.devicePixelRatio
   })
 }

@@ -48,32 +48,32 @@ function u(e) {
     var e;
     null == (e = f.current) || e.cancel(), f.current = null
   }), [n]);
-  let _ = i.useCallback(e => {
+  let p = i.useCallback(e => {
       var t;
       u(false), d.current.add(e), null == (t = f.current) || t.cancel()
     }, [d, f, u]),
-    p = i.useCallback(e => {
+    _ = i.useCallback(e => {
       if (d.current.delete(e), 0 === d.current.size) {
         var t;
         null == (t = f.current) || t.delay()
       }
     }, [d, f]),
-    h = i.useCallback(() => {
+    m = i.useCallback(() => {
       if (u(false), 0 === d.current.size) {
         var e;
         null == (e = f.current) || e.delay()
       }
     }, [d, f, u]),
-    m = i.useCallback(() => {
+    h = i.useCallback(() => {
       var e;
       d.current.size > 0 || (null == (e = f.current) || e.cancel(), u(true))
     }, [f, u]),
     g = i.useMemo(() => ({
-      onAllowIdle: p,
-      onPreventIdle: _,
-      onActive: h,
-      onForceIdle: m
-    }), [p, _, h, m]);
+      onAllowIdle: _,
+      onPreventIdle: p,
+      onActive: m,
+      onForceIdle: h
+    }), [_, p, m, h]);
   return (0, r.jsx)(c.Provider, {
     value: o,
     children: (0, r.jsx)(l.Provider, {

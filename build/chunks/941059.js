@@ -2,7 +2,7 @@
 /** chunk id: 941059, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => _
+  r: () => p
 });
 var Chunk595490 = require("./595490.js"),
   i = require.n(Chunk595490),
@@ -57,7 +57,7 @@ function f(e) {
   if (Array.isArray(e)) return e
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   var r = s((0, a.useState)(function() {
       return t(e)
     }), 2),

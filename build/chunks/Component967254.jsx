@@ -2,7 +2,7 @@
 /** chunk id: 967254, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => x
+  N: () => L
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk712243 = require("./712243.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +34,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -128,7 +128,7 @@ let C = e => {
       children: Chunk388032.intl.string(Chunk388032.t.ERdH1o)
     })]
   }),
-  R = () => (0, Chunk54381.jsx)("div", {
+  P = () => (0, Chunk54381.jsx)("div", {
     className: Chunk712243.emptyState,
     children: (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
@@ -136,28 +136,28 @@ let C = e => {
       children: Chunk388032.intl.string(Chunk388032.t.RV3AXf)
     })
   }),
-  P = e => {
+  R = e => {
     let {
       timestamp: t
     } = e;
     return (0, r.jsx)(l.Text, {
       variant: "text-xs/normal",
       className: v.timestamp,
-      children: (0, h.XX)(t)
+      children: (0, m.XX)(t)
     })
   },
-  D = () => (0, Chunk54381.jsx)(Chunk481060.Text, {
+  w = () => (0, Chunk54381.jsx)(Chunk481060.Text, {
     variant: "text-xs/bold",
     className: Chunk712243.newBadge,
     children: Chunk388032.intl.string(Chunk388032.t.QKMRC4)
   }),
-  w = e => {
+  D = e => {
     let {
       classification: t
     } = e, {
       id: a,
       description: s
-    } = t, c = f.default.extractTimestamp(a), u = (0, m.e)(t), d = i.useMemo(() => {
+    } = t, c = f.default.extractTimestamp(a), u = (0, h.e)(t), d = i.useMemo(() => {
       var e, n, i;
       let a = {
         description: s,
@@ -167,32 +167,32 @@ let C = e => {
           children: e
         })
       };
-      return (0, h.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === _.wO.OWNER ? O.intl.format(O.t.Lb0HVv, A(T({}, a), {
+      return (0, m.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === p.wO.OWNER ? O.intl.format(O.t.Lb0HVv, A(I({}, a), {
         guildName: null == t || null == (n = t.guild_metadata) ? true : n.name
       })) : O.intl.format(O.t.rmpEPD, {
         guildName: null == t || null == (i = t.guild_metadata) ? true : i.name,
         classification_type: a.description,
         classificationHook: a.descriptionHook
       }) : O.intl.format(O.t.QY4g5t, a)
-    }, [t, s]), p = () => {
+    }, [t, s]), _ = () => {
       (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("18831").then(n.bind(n, 41164));
-        return t => (0, r.jsx)(e, T({
+        return t => (0, r.jsx)(e, I({
           classificationId: a,
           source: b.s.StandingTab
         }, t))
       })
     };
     return (0, r.jsx)(l.P3F, {
-      onClick: p,
+      onClick: _,
       className: o()(v.itemDetail, {
         [v.itemDetailNew]: u
       }),
       children: (0, r.jsxs)("div", {
         className: v.descriptionContainer,
-        children: [u ? (0, r.jsx)(D, {}) : (0, r.jsx)(P, {
+        children: [u ? (0, r.jsx)(w, {}) : (0, r.jsx)(R, {
           timestamp: c
         }), (0, r.jsx)(l.Heading, {
           variant: "heading-lg/normal",
@@ -201,22 +201,22 @@ let C = e => {
       })
     }, a)
   },
-  L = e => {
+  x = e => {
     let {
       status: t,
       classifications: n
-    } = e, [a, o] = i.useState(false), [c, u] = i.useState(3), f = (0, g.P)(), _ = (0, s.e7)([p.Z], () => p.Z.getIsDsaEligible()), h = i.useMemo(() => n.slice(0, c), [n, c]);
+    } = e, [a, o] = i.useState(false), [c, u] = i.useState(3), f = (0, g.P)(), p = (0, s.e7)([_.Z], () => _.Z.getIsDsaEligible()), m = i.useMemo(() => n.slice(0, c), [n, c]);
     i.useEffect(() => {
       a && d.default.track(y.rMx.SAFETY_HUB_ACTION, {
         action: b.n0.ViewViolationsDropdown,
         account_standing: f.state,
-        classification_ids: h.map(e => Number(e.id)),
+        classification_ids: m.map(e => Number(e.id)),
         source: b.s.StandingTab,
         is_violative_content_shown: false,
-        is_dsa_eligible: _
+        is_dsa_eligible: p
       })
-    }, [a, f.state, h, _]);
-    let m = n.length - h.length > 3 ? 3 : n.length - h.length;
+    }, [a, f.state, m, p]);
+    let h = n.length - m.length > 3 ? 3 : n.length - m.length;
     return (0, r.jsxs)("div", {
       className: v.dropdown,
       children: [(0, r.jsx)(C, {
@@ -231,9 +231,9 @@ let C = e => {
             height: "1px",
             width: "100%"
           }
-        }), h.length > 0 && h.map(e => (0, r.jsx)(w, {
+        }), m.length > 0 && m.map(e => (0, r.jsx)(D, {
           classification: e
-        }, e.id)), h.length < n.length && (0, r.jsxs)(r.Fragment, {
+        }, e.id)), m.length < n.length && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.njP.Separator, {
             style: {
               height: "1px",
@@ -241,23 +241,23 @@ let C = e => {
             }
           }), (0, r.jsx)("button", {
             className: v.paginationButton,
-            onClick: () => u(e => e + m),
+            onClick: () => u(e => e + h),
             children: O.intl.format(O.t["9Ml56H"], {
-              nextPageSize: m
+              nextPageSize: h
             })
           })]
-        }), 0 === h.length && "active" === t && (0, r.jsx)(N, {}), 0 === h.length && "expired" === t && (0, r.jsx)(R, {})]
+        }), 0 === m.length && "active" === t && (0, r.jsx)(N, {}), 0 === m.length && "expired" === t && (0, r.jsx)(P, {})]
       })]
     })
   },
-  x = () => {
+  L = () => {
     let e = (0, Chunk613734.y9)(),
       t = (0, Chunk613734.KM)();
     return 0 === module.length && 0 === exports.length ? null : (0, Chunk54381.jsxs)("div", {
-      children: [(0, Chunk54381.jsx)(L, {
+      children: [(0, Chunk54381.jsx)(x, {
         status: "active",
         classifications: module
-      }), (0, Chunk54381.jsx)(L, {
+      }), (0, Chunk54381.jsx)(x, {
         status: "expired",
         classifications: exports
       })]

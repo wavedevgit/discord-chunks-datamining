@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -77,20 +77,20 @@ function b(e) {
   var {
     variant: t = "active",
     size: n = "sm",
-    hangStatusChannel: _,
-    onAction: h,
+    hangStatusChannel: p,
+    onAction: m,
     userId: E
   } = e, b = g(e, ["variant", "size", "hangStatusChannel", "onAction", "userId"]);
-  let y = (0, i.e7)([c.Z], () => c.Z.getChannelId() === _.id),
+  let y = (0, i.e7)([c.Z], () => c.Z.getChannelId() === p.id),
     O = () => {
-      null == h || h(), o.default.selectVoiceChannel(_.id), (0, l.Kh)(_.id), u.default.track(d.rMx.HANG_STATUS_CTA_CLICKED, m(p({
+      null == m || m(), o.default.selectVoiceChannel(p.id), (0, l.Kh)(p.id), u.default.track(d.rMx.HANG_STATUS_CTA_CLICKED, h(_({
         source: "UserProfilePopout"
-      }, (0, s.Z)(_.id)), {
+      }, (0, s.Z)(p.id)), {
         other_user_id: E,
         cta_type: y ? "open" : "join"
       }))
     };
-  return (0, r.jsx)(a.Button, p({
+  return (0, r.jsx)(a.Button, _({
     text: y ? f.intl.string(f.t.BXxdl7) : f.intl.string(f.t["9C444m"]),
     onClick: O,
     variant: t,

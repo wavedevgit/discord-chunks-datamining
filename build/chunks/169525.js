@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   As: () => E,
-  BP: () => h,
+  BP: () => m,
   MC: () => y,
-  dn: () => p,
+  dn: () => _,
   hL: () => b,
-  lK: () => m
+  lK: () => h
 }), require("./997841.js");
 var Chunk95015 = require("./95015.js"),
   Chunk399606 = require("./399606.js"),
@@ -20,7 +20,7 @@ var Chunk95015 = require("./95015.js"),
   Chunk255269 = require("./255269.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let p = (e, t) => {
+let _ = (e, t) => {
     let {
       spoiler: n,
       flags: i = 0
@@ -33,7 +33,7 @@ let p = (e, t) => {
     }, t);
     return l.length > 0 ? l[0] : c ? o.wk.POTENTIAL_EXPLICIT_CONTENT : n || (0, r.yE)(i, f.J0y.IS_SPOILER) ? o.wk.SPOILER : null
   },
-  h = (e, t, n, r) => {
+  m = (e, t, n, r) => {
     let i = (0, s.LD)({
         type: a.l.Embed,
         media: e
@@ -44,7 +44,7 @@ let p = (e, t) => {
       }, r);
     return i.length > 0 ? i[0] : l ? o.wk.POTENTIAL_EXPLICIT_CONTENT : n ? o.wk.SPOILER : null
   },
-  m = function(e, t) {
+  h = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       r = arguments.length > 3 && true !== arguments[3] && arguments[3],
       i = (0, s.LD)({
@@ -98,9 +98,9 @@ let y = e => {
     case o.wk.EXPLICIT_CONTENT:
     case o.wk.GORE_CONTENT:
     case o.wk.SELF_HARM_CONTENT:
-      return _.intl.string(_.t.SEgHFh);
+      return p.intl.string(p.t.SEgHFh);
     case o.wk.SPOILER:
-      return _.intl.string(_.t["XpfDH+"]);
+      return p.intl.string(p.t["XpfDH+"]);
     default:
       return
   }

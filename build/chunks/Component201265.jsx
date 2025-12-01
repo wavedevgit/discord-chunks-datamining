@@ -59,10 +59,10 @@ function u(e) {
   } = e, d = l(e, ["confirmText", "cancelText", "onConfirm", "onCancel", "variant"]);
   let {
     i18n: f
-  } = (0, i.ZF)(), _ = f.CANCEL;
+  } = (0, i.ZF)(), p = f.CANCEL;
   return (0, r.jsx)(a.Modal, s({
     actions: [{
-      text: null != n ? n : _,
+      text: null != n ? n : p,
       variant: "secondary",
       onClick: () => {
         null == c || c(), d.onClose()

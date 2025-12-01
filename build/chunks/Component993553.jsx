@@ -2,7 +2,7 @@
 /** chunk id: 993553, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,9 +50,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +60,7 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -68,14 +68,14 @@ function p(e, t) {
   return i
 }
 
-function h(e) {
+function m(e) {
   var {
     children: t,
     lineClamp: n = 2
-  } = e, c = _(e, ["children", "lineClamp"]);
-  let [d, p] = i.useState(false), [h, m] = i.useState(null), g = null != h && (0, r.jsx)("button", {
+  } = e, c = p(e, ["children", "lineClamp"]);
+  let [d, _] = i.useState(false), [m, h] = i.useState(null), g = null != m && (0, r.jsx)("button", {
     className: l.button,
-    onClick: () => p(e => !e),
+    onClick: () => _(e => !e),
     children: (0, r.jsxs)(o.Text, {
       className: l.seeMore,
       variant: "text-sm/medium",
@@ -94,7 +94,7 @@ function h(e) {
       scrollHeight: e,
       clientHeight: t
     } = E;
-    e > t && m({
+    e > t && h({
       truncatedHeight: t,
       expandedHeight: e
     })
@@ -103,7 +103,7 @@ function h(e) {
     requestAnimationFrame(y)
   }, [y, t, n]);
   let O = "auto";
-  return null != h && (O = d ? "".concat(h.expandedHeight, "px") : "".concat(h.truncatedHeight, "px")), (0, r.jsxs)("div", {
+  return null != m && (O = d ? "".concat(m.expandedHeight, "px") : "".concat(m.truncatedHeight, "px")), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Text, f(u({}, c), {
       className: l.content,
       lineClamp: d ? true : n,

@@ -60,17 +60,17 @@ function O(e, t) {
   }), e
 }
 let v = l().defaultRules.link,
-  I = {
+  S = {
     section: Chunk981631.jXE.SETTINGS_CHANGELOG
   };
 
-function T() {
+function I() {
   Chunk626135.default.track(Chunk981631.rMx.PREMIUM_PROMOTION_OPENED, {
-    location: I
+    location: S
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   return null == t ? [] : t.split(" ").map(t => e[t])
 }
 let A = e => {
@@ -81,7 +81,7 @@ let A = e => {
       styleSheet: a = {}
     } = e, s = (0, c.xSt)(), l = parseInt(t, 10), u = s + (isNaN(l) ? 1 : l) - 1;
     return i.createElement("h".concat(u), {
-      className: o()(...S(a, r))
+      className: o()(...T(a, r))
     }, n)
   },
   C = null != Chunk454585.Z ? Chunk454585.Z.defaultRules : null,
@@ -92,18 +92,18 @@ let A = e => {
           a = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
           o = i.startsWith("/activities");
         return r = a ? e => {
-          T(), (0, p.openUserSettings)(_.n.NITRO_PANEL, {
-            section: m.oAB.PREMIUM
-          }), n.changeLog.track(m.rMx.CHANGE_LOG_CTA_CLICKED, {
+          I(), (0, _.openUserSettings)(p.n.NITRO_PANEL, {
+            section: h.oAB.PREMIUM
+          }), n.changeLog.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
             cta_type: "nitro"
           }), (0, c.Mr3)(g.Xd), e.preventDefault()
         } : o ? e => {
-          (0, f.uL)(i), n.changeLog.track(m.rMx.CHANGE_LOG_CTA_CLICKED, b({}, h.default.getCampaignParams(i))), (0, u.Ou)(), (0, c.Mr3)(g.Xd), e.preventDefault()
+          (0, f.uL)(i), n.changeLog.track(h.rMx.CHANGE_LOG_CTA_CLICKED, b({}, m.default.getCampaignParams(i))), (0, u.Ou)(), (0, c.Mr3)(g.Xd), e.preventDefault()
         } : () => {
-          n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(m.rMx.CHANGE_LOG_CTA_CLICKED, b({
+          n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(h.rMx.CHANGE_LOG_CTA_CLICKED, b({
             target: i,
             cta_type: "inline_link"
-          }, h.default.getCampaignParams(i)))
+          }, m.default.getCampaignParams(i)))
         }, O(b({}, v.parse(e, t, n)), {
           callToAction: r
         })

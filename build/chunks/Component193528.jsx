@@ -2,7 +2,7 @@
 /** chunk id: 193528, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,13 +13,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk699682 = require("./699682.js"),
-  Chunk44315 = require("./44315.js"),
   Chunk654904 = require("./654904.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk707892 = require("./707892.js");
 
-function g(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +27,20 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function E(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,15 +51,15 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function O(e, t) {
+function y(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -68,7 +67,7 @@ function O(e, t) {
   return i
 }
 
-function v(e, t) {
+function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -76,52 +75,52 @@ function v(e, t) {
   return i
 }
 
-function I(e) {
+function v(e) {
   let {
     onChange: t,
     onClose: n,
     color: a,
-    suggestedColors: g,
-    disabled: b,
-    label: v,
-    colorPickerMiddle: I,
-    colorPickerFooter: T,
-    showEyeDropper: S
-  } = e, A = i.useRef(null), C = (0, u.dQu)(c.Z.colors.BACKGROUND_BASE_LOW).hex(), N = c.Z.colors.BACKGROUND_ACCENT.css, R = (0, _.DP)(a), P = (0, l.Rf)(a), D = P === C ? N : P, w = (0, f.Lq)(R ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), L = (0, d.Z)(I), x = (0, d.Z)(T), [M, k] = i.useState((0, s.Z)());
+    suggestedColors: h,
+    disabled: E,
+    label: O,
+    colorPickerMiddle: v,
+    colorPickerFooter: S,
+    showEyeDropper: I
+  } = e, T = i.useRef(null), A = (0, u.dQu)(c.Z.colors.BACKGROUND_BASE_LOW).hex(), C = c.Z.colors.BACKGROUND_ACCENT.css, N = (0, f.DP)(a), P = (0, l.Rf)(a), R = P === A ? C : P, w = N ? c.Z.unsafe_rawColors.WHITE_500.css : c.Z.unsafe_rawColors.PRIMARY_530.css, D = (0, d.Z)(v), x = (0, d.Z)(S), [L, j] = i.useState((0, s.Z)());
   return i.useEffect(() => {
-    (L !== I || x !== T) && k((0, s.Z)())
-  }, [T, I, x, L]), (0, r.jsx)(u.yRy, {
-    targetElementRef: A,
-    positionKey: M,
-    renderPopout: e => (0, r.jsx)(u.Z$W, y(E({}, e), {
+    (D !== v || x !== S) && j((0, s.Z)())
+  }, [S, v, x, D]), (0, r.jsx)(u.yRy, {
+    targetElementRef: T,
+    positionKey: L,
+    renderPopout: e => (0, r.jsx)(u.Z$W, b(g({}, e), {
       value: a,
       onChange: t,
-      suggestedColors: g,
-      middle: I,
-      footer: T,
-      showEyeDropper: S
+      suggestedColors: h,
+      middle: v,
+      footer: S,
+      showEyeDropper: I
     })),
     onRequestClose: n,
     children: e => {
       var {
         onClick: t
-      } = e, n = O(e, ["onClick"]);
+      } = e, n = y(e, ["onClick"]);
       return (0, r.jsxs)("div", {
-        ref: A,
+        ref: T,
         className: o()(m.colorSwatch, {
-          [m.disabled]: b
+          [m.disabled]: E
         }),
-        children: [(0, r.jsx)(u.P3F, y(E({}, n), {
-          tabIndex: b ? false : 0,
-          onClick: b ? p.dG4 : t,
+        children: [(0, r.jsx)(u.P3F, b(g({}, n), {
+          tabIndex: E ? false : 0,
+          onClick: E ? p.dG4 : t,
           style: {
             backgroundColor: P,
-            borderColor: D
+            borderColor: R
           },
           className: m.swatch,
-          "aria-label": h.intl.string(h.t.Qp04hK),
+          "aria-label": _.intl.string(_.t.Qp04hK),
           focusProps: {
-            ringTarget: A
+            ringTarget: T
           },
           children: (0, r.jsx)(u.vdY, {
             size: "custom",
@@ -130,7 +129,7 @@ function I(e) {
             height: 14,
             color: w
           })
-        })), v]
+        })), O]
       })
     }
   })

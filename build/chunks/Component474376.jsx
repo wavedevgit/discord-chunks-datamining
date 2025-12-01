@@ -6,9 +6,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk44315 = require("./44315.js"),
   Chunk210887 = require("./210887.js"),
   Chunk598077 = require("./598077.js"),
   Chunk246946 = require("./246946.js"),
@@ -24,18 +24,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk681285 = require("./681285.js");
 
 function _(e) {
-  let t = (0, l.e7)([u.default], () => u.default.getCurrentUser()),
-    n = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation),
-    _ = (0, l.e7)([o.Z], () => (0, i.wj)(o.Z.theme)),
+  let t = (0, r.e7)([u.default], () => u.default.getCurrentUser()),
+    n = (0, r.e7)([d.Z], () => d.Z.hidePersonalInformation),
+    _ = (0, r.e7)([o.Z], () => (0, i.wj)(o.Z.theme)),
     {
       multiAccountUsers: y
     } = (0, g.L)(),
-    C = y.map(l => {
-      let i = new c.Z(l),
+    C = y.map(r => {
+      let i = new c.Z(r),
         o = i.id === (null == t ? true : t.id),
-        d = l.tokenStatus === x.q.INVALID,
+        d = r.tokenStatus === x.q.INVALID,
         u = n ? null : "#".concat(i.discriminator);
-      return (0, a.jsx)(r.sNh, {
+      return (0, a.jsx)(s.sNh, {
         id: i.id,
         focusedClassName: j.focused,
         label: e => {
@@ -44,32 +44,32 @@ function _(e) {
           } = e;
           return (0, a.jsxs)("div", {
             className: j.userMenuItem,
-            children: [(0, a.jsx)(r.qEK, {
+            children: [(0, a.jsx)(s.qEK, {
               src: i.getAvatarURL(true, 40),
-              size: r.EFr.SIZE_24,
-              "aria-label": l.username
+              size: s.EFr.SIZE_24,
+              "aria-label": r.username
             }), (0, a.jsxs)("div", {
               className: j.userMenuUsername,
-              children: [(0, a.jsx)(r.Text, {
+              children: [(0, a.jsx)(s.Text, {
                 className: j.userMenuText,
                 variant: "text-sm/normal",
                 children: p.ZP.getUserTag(i, {
                   mode: "username",
                   identifiable: n ? "never" : "always"
                 })
-              }), !i.hasUniqueUsername() && (0, a.jsx)(r.Text, {
+              }), !i.hasUniqueUsername() && (0, a.jsx)(s.Text, {
                 className: j.userMenuDiscriminator,
                 variant: "text-sm/normal",
                 children: u
               })]
-            }), o && (0, a.jsx)(r.owK, {
+            }), o && (0, a.jsx)(s.owK, {
               size: "sm",
-              color: (0, s.Lq)(t ? b.Ilk.WHITE_500 : b.Ilk.BRAND_500),
-              secondaryColor: (0, s.Lq)(t && _ || t && !_ ? b.Ilk.BRAND_500 : b.Ilk.WHITE_500),
+              color: t ? l.Z.unsafe_rawColors.WHITE_500.css : l.Z.unsafe_rawColors.BRAND_500.css,
+              secondaryColor: t && _ || t && !_ ? l.Z.unsafe_rawColors.BRAND_500.css : l.Z.unsafe_rawColors.WHITE_500.css,
               className: j.activeIcon
-            }), d && (0, a.jsx)(r.Mgn, {
-              color: (0, s.Lq)(b.Ilk.RED_400),
-              secondaryColor: (0, s.Lq)(t && _ || t && !_ ? b.Ilk.BRAND_500 : b.Ilk.WHITE_500),
+            }), d && (0, a.jsx)(s.Mgn, {
+              color: l.Z.unsafe_rawColors.RED_400.css,
+              secondaryColor: t && _ || t && !_ ? l.Z.unsafe_rawColors.BRAND_500.css : l.Z.unsafe_rawColors.WHITE_500.css,
               size: "xs",
               className: j.activeIcon
             })]
@@ -89,7 +89,7 @@ function _(e) {
       }, i.id)
     });
   return C.push((0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(r.Clw, {}), (0, a.jsx)(r.sNh, {
+    children: [(0, a.jsx)(s.Clw, {}), (0, a.jsx)(s.sNh, {
       id: "manage-accounts",
       label: v.intl.string(v.t.WbFpq4),
       action: () => {

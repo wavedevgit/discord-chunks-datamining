@@ -6,7 +6,7 @@ require.d(exports, {
   Pb: () => y,
   XX: () => E,
   ZP: () => v,
-  ZT: () => h,
+  ZT: () => m,
   iv: () => b,
   pk: () => g
 });
@@ -45,11 +45,11 @@ function f(e) {
   return "".concat(e / 16, "rem")
 }
 
-function _() {
+function p() {
   return Array(s().random(3, 8)).fill(null).map(() => s().random(30, 80))
 }
 
-function p() {
+function _() {
   return (0, Chunk54381.jsx)("div", {
     className: Chunk674944.avatar,
     style: {
@@ -58,7 +58,7 @@ function p() {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     width: t,
     height: n,
@@ -76,28 +76,28 @@ function h(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let t, {
       groupStart: n = false,
       compact: i = false,
       attachmentSpecs: o,
       usernameWidth: u,
       usernameOpacity: f,
-      className: m,
+      className: h,
       style: g
     } = e,
     E = i ? 50 : s().random(40, 50);
   return !i && n ? t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(p, {}), (0, r.jsx)(l.H, {
+    children: [(0, r.jsx)(_, {}), (0, r.jsx)(l.H, {
       className: c.header,
-      children: (0, r.jsx)(h, {
+      children: (0, r.jsx)(m, {
         width: u,
         opacity: f,
         className: c.__invalid_username
       })
     })]
   }) : i && (t = (0, r.jsxs)(r.Fragment, {
-    children: [i && (0, r.jsx)(h, {
+    children: [i && (0, r.jsx)(m, {
       width: E,
       className: a()({
         [c.compactTimestamp]: true,
@@ -105,14 +105,14 @@ function m(e) {
       })
     }), (0, r.jsx)(l.H, {
       className: c.header,
-      children: (0, r.jsx)(h, {
+      children: (0, r.jsx)(m, {
         width: u,
         opacity: f
       })
     })]
   })), (0, r.jsxs)("div", {
     "aria-hidden": true,
-    className: a()(m, {
+    className: a()(h, {
       [c.wrapper]: true,
       [c.compact]: i,
       [c.cozy]: !i
@@ -122,7 +122,7 @@ function m(e) {
       className: c.contents,
       children: [t, (0, r.jsx)("div", {
         className: c.content,
-        children: _().map((e, t) => (0, r.jsx)(h, {
+        children: p().map((e, t) => (0, r.jsx)(m, {
           width: e,
           opacity: .06
         }, t))
@@ -153,7 +153,7 @@ function v(e) {
     className: o
   } = e, l = null != a ? a.last ? t - 1 : s().random(0, t - 1) : false, c = s().random(80, 120), u = s().random(.1, .2);
   return (0, r.jsx)(r.Fragment, {
-    children: Array(t).fill(null).map((e, t) => (0, r.jsx)(m, {
+    children: Array(t).fill(null).map((e, t) => (0, r.jsx)(h, {
       compact: i,
       className: o,
       usernameWidth: c,

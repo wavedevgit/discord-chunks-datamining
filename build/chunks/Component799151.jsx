@@ -2,7 +2,7 @@
 /** chunk id: 799151, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  c: () => p
+  c: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk110109 = require("./110109.js");
 
-function p(e) {
+function _(e) {
   let {
     className: t
   } = e, n = [{
@@ -28,8 +28,8 @@ function p(e) {
   }, {
     keybinds: ["ESC"],
     name: f.intl.string(f.t["1ioMJQ"])
-  }], a = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), p = (0, d.zP)();
-  return (0, c.Yzy)(p, {
+  }], a = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), _ = (0, d.zP)();
+  return (0, c.Yzy)(_, {
     enter: {
       from: {
         opacity: 0,
@@ -46,9 +46,9 @@ function p(e) {
     },
     config: s.config.stiff
   }, "animate-always")((e, a) => a ? (0, r.jsx)("div", {
-    className: o()(_.positioner, t),
+    className: o()(p.positioner, t),
     children: (0, r.jsx)(s.animated.div, {
-      className: _.container,
+      className: p.container,
       style: e,
       children: n.map((e, t) => {
         let {
@@ -58,13 +58,13 @@ function p(e) {
         return (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
-            className: _.bindName,
+            className: p.bindName,
             children: o
           }), a.map(e => (0, r.jsx)(c.M2$, {
             shortcut: e,
-            className: _.shortcut
+            className: p.shortcut
           }, e)), t < n.length - 1 ? (0, r.jsx)("span", {
-            className: _.separator
+            className: p.separator
           }) : null]
         }, o)
       })

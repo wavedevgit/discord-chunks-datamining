@@ -2,7 +2,7 @@
 /** chunk id: 220779, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A7: () => S,
+  A7: () => T,
   dE: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -56,17 +56,17 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = (0, Chunk131704.createChannelRecord)({
+let I = (0, Chunk131704.createChannelRecord)({
   id: "1",
   type: Chunk981631.d4z.DM
 });
 
-function S(e) {
+function T(e) {
   let {
     placeholder: t,
     onEnter: n,
@@ -74,10 +74,10 @@ function S(e) {
     showEmojiButton: s = false,
     renderAttachButton: l,
     autoFocus: c = true,
-    onFocus: _,
-    channel: p,
-    className: h
-  } = e, [g, E] = i.useState(""), [y, v] = i.useState((0, d.JM)("")), S = () => {
+    onFocus: p,
+    channel: _,
+    className: m
+  } = e, [g, E] = i.useState(""), [y, v] = i.useState((0, d.JM)("")), T = () => {
     E(""), v((0, d.JM)(""))
   }, A = u.Ie.ATOMIC_REACTOR_REPLY_INPUT, C = i.useRef(null), N = () => {
     if (null == C.current) return "top";
@@ -88,16 +88,16 @@ function S(e) {
   return (0, r.jsx)(f.ZP, {
     ref: C,
     placeholder: t,
-    editorClassName: h,
-    className: o()(b.replyInput, h),
+    editorClassName: m,
+    className: o()(b.replyInput, m),
     showRemainingCharsAfterCount: false,
     allowNewLines: false,
-    maxCharacterCount: m.z,
-    channel: null != p ? p : T,
+    maxCharacterCount: h.z,
+    channel: null != _ ? _ : I,
     onChange: (e, t, n) => {
       E(t), v(n)
     },
-    type: s ? I(O({}, A), {
+    type: s ? S(O({}, A), {
       emojis: {
         button: true
       }
@@ -108,17 +108,17 @@ function S(e) {
       let {
         value: t
       } = e;
-      return t.length > m.z ? Promise.resolve({
+      return t.length > h.z ? Promise.resolve({
         shouldClear: false,
         shouldRefocus: true
-      }) : (n(t), S(), Promise.resolve({
+      }) : (n(t), T(), Promise.resolve({
         shouldClear: true,
         shouldRefocus: false
       }))
     },
     setEditorRef: a,
     focused: c,
-    onFocus: _,
+    onFocus: p,
     disableThemedBackground: true,
     emojiPickerCloseOnModalOuterClick: true,
     disabled: false,
@@ -156,9 +156,9 @@ let A = (e, t) => {
         children: e => (0, r.jsx)("div", {
           className: e,
           ref: d,
-          children: (0, r.jsx)(p.$, {
+          children: (0, r.jsx)(_.$, {
             messageId: g.lds,
-            channel: T,
+            channel: I,
             closePopout: () => {
               u(false)
             },
@@ -182,7 +182,7 @@ let A = (e, t) => {
         children: (0, r.jsx)("div", {
           ref: f,
           className: b.reaction,
-          children: (0, r.jsx)(_.Z, {
+          children: (0, r.jsx)(p.Z, {
             active: false,
             tabIndex: 0,
             onClick: () => {

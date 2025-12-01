@@ -2,7 +2,7 @@
 /** chunk id: 168524, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk473749 = require("./473749.js"),
   Chunk565183 = require("./565183.js"),
@@ -50,18 +50,18 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function p(e) {
   let {
     onOpened: t
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, {
     applicationId: n
-  } = e, c = (0, i.Z)(n), d = r.useMemo(() => null == c ? n : (0, o.bP)(c) ? a.eB : n, [c, n]), _ = (0, l.ZP)(f(u({}, e), {
+  } = e, c = (0, i.Z)(n), d = r.useMemo(() => null == c ? n : (0, o.bP)(c) ? a.eB : n, [c, n]), p = (0, l.ZP)(f(u({}, e), {
     applicationId: d
   }));
-  return _.shouldOpenGameProfile && null != d ? n => {
+  return p.shouldOpenGameProfile && null != d ? n => {
     n.stopPropagation(), n.preventDefault(), s.Z.openGameProfileModal(f(u({}, e), {
       applicationId: d,
-      gameProfileModalChecks: _
+      gameProfileModalChecks: p
     })), null == t || t()
   } : true
 }

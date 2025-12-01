@@ -2,7 +2,7 @@
 /** chunk id: 689425, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -42,8 +42,8 @@ let f = (e, t) => {
     } = t;
     return Math.pow(n - i, 2) + Math.pow(r - a, 2)
   },
-  _ = 9;
-class p extends(r = Chunk473749.PureComponent) {
+  p = 9;
+class _ extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     let {
       initialX: e,
@@ -162,7 +162,7 @@ class p extends(r = Chunk473749.PureComponent) {
       !i && f(this._dragStart, {
         x: e.clientX,
         y: e.clientY
-      }) > _ && (s = true), s && (this.animateToPosition(e.clientX - this._offsetX, e.clientY - this._offsetY, {
+      }) > p && (s = true), s && (this.animateToPosition(e.clientX - this._offsetX, e.clientY - this._offsetY, {
         tension: 80,
         friction: 8
       }, null, false), (0, o.flushSync)(() => {
@@ -192,7 +192,7 @@ class p extends(r = Chunk473749.PureComponent) {
     }
   }
 }
-u(p, "defaultProps", {
+u(_, "defaultProps", {
   maxX: 0,
   maxY: 0,
   initialX: 0,
@@ -200,4 +200,4 @@ u(p, "defaultProps", {
   disabled: false,
   dragAnywhere: false
 });
-let h = p
+let m = _

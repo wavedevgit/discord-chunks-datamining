@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => g,
-  f: () => m
+  f: () => h
 }), require("./781311.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -52,9 +52,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -70,25 +70,25 @@ function p(e, t) {
   return i
 }
 
-function h(e) {
+function m(e) {
   var {
     text: t,
     onClick: n,
     component: c
-  } = e, d = _(e, ["text", "onClick", "component"]);
+  } = e, d = p(e, ["text", "onClick", "component"]);
   let {
-    themeType: p
-  } = (0, o.z)(), h = "string" == typeof t ? t.trim() : t;
-  if (null == h || "" === h) return null;
-  let m = () => p === s.l.MODAL || p === s.l.MODAL_V2 ? (0, r.jsx)(c, f(u({
+    themeType: _
+  } = (0, o.z)(), m = "string" == typeof t ? t.trim() : t;
+  if (null == m || "" === m) return null;
+  let h = () => _ === s.l.MODAL || _ === s.l.MODAL_V2 ? (0, r.jsx)(c, f(u({
     color: "text-default"
   }, d), {
-    children: h
+    children: m
   })) : (0, r.jsx)(c, f(u({
     color: "text-default"
   }, d), {
     children: (0, r.jsx)(i.Z, {
-      children: h
+      children: m
     })
   }));
   return null != n ? (0, r.jsx)(a.P3F, {
@@ -96,18 +96,18 @@ function h(e) {
       e.stopPropagation(), n(e)
     },
     className: l.clickableText,
-    children: m()
-  }) : m()
+    children: h()
+  }) : h()
 }
 
-function m(e) {
-  return (0, r.jsx)(h, u({
+function h(e) {
+  return (0, r.jsx)(m, u({
     component: a.Heading
   }, e))
 }
 
 function g(e) {
-  return (0, r.jsx)(h, u({
+  return (0, r.jsx)(m, u({
     component: a.Text
   }, e))
 }

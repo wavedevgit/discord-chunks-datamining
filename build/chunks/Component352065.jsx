@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk163838 = require("./163838.js"),
   Chunk325380 = require("./325380.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -60,8 +60,8 @@ function E(e) {
   let {
     transitionState: n,
     animationVariant: a = "default",
-    returnRef: p,
-    "aria-label": m,
+    returnRef: _,
+    "aria-label": h,
     onClose: E,
     trackingProps: b,
     children: y
@@ -70,17 +70,17 @@ function E(e) {
     headingId: "heading-".concat(O),
     onClose: E,
     dismissable: true
-  }), [O, E]), I = (0, d.Ll)(), {
-    theme: T
-  } = (0, u.TCT)(), S = (0, c.hvB)(n, a);
+  }), [O, E]), S = (0, d.Ll)(), {
+    theme: I
+  } = (0, u.TCT)(), T = (0, c.hvB)(n, a);
   return (0, r.jsx)(c.tCf.Provider, {
     value: v,
-    children: (0, r.jsx)(u.VqE, g(h({
+    children: (0, r.jsx)(u.VqE, g(m({
       id: O,
       role: "dialog",
-      "aria-label": m,
-      "aria-labelledby": null != m ? true : v.headingId,
-      returnRef: p
+      "aria-label": h,
+      "aria-labelledby": null != h ? true : v.headingId,
+      returnRef: _
     }, b), {
       impressionType: null != (t = null == b ? true : b.impressionType) ? t : l.ImpressionTypes.MODAL,
       children: (0, r.jsx)(c.y5t, {
@@ -88,15 +88,15 @@ function E(e) {
         children: (0, r.jsx)("div", {
           className: f.outerContainer,
           children: (0, r.jsx)(u.f6W, {
-            theme: I,
+            theme: S,
             children: e => (0, r.jsx)(s.animated.div, {
               "data-mana-component": "layer-modal",
-              className: o()(_.container, f.modal, e),
-              style: S,
+              className: o()(p.container, f.modal, e),
+              style: T,
               children: (0, r.jsx)("div", {
                 className: f.modalContent,
                 children: (0, r.jsx)(u.f6W, {
-                  theme: T,
+                  theme: I,
                   children: e => (0, r.jsx)("div", {
                     className: o()(e, f.modalContentInner),
                     children: y

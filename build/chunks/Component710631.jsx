@@ -55,13 +55,13 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = "max_uses",
-  S = "User Invite Context Menu",
+let I = "max_uses",
+  T = "User Invite Context Menu",
   A = "context_menu";
 
 function C(e, t) {
@@ -77,28 +77,28 @@ function N(e) {
     user: t,
     guildId: n,
     onAction: s
-  } = e, c = (0, a.e7)([g.default], () => g.default.getCurrentUser(), []), d = (0, a.Wu)([m.ZP, _.Z, p.Z], () => {
-    let e = m.ZP.getFlattenedGuildIds(),
+  } = e, c = (0, a.e7)([g.default], () => g.default.getCurrentUser(), []), d = (0, a.Wu)([h.ZP, p.Z, _.Z], () => {
+    let e = h.ZP.getFlattenedGuildIds(),
       t = [];
     return e.forEach(e => {
-      let r = _.Z.getGuild(e);
-      null != r && (0, u.b)(p.Z, r) && r.id !== n && t.push(r)
+      let r = p.Z.getGuild(e);
+      null != r && (0, u.b)(_.Z, r) && r.id !== n && t.push(r)
     }), t
   }, [n]), [y, v] = i.useState({});
 
   function A(e, t) {
     let n = f.ZP.getDefaultChannel(e.id, true, E.Plq.CREATE_INSTANT_INVITE);
     if (null != n) {
-      if (v(I(O({}, y), {
+      if (v(S(O({}, y), {
           [e.id]: true
-        })), !p.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) return void C(t, e.vanityURLCode);
+        })), !_.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) return void C(t, e.vanityURLCode);
       l.ZP.createInvite(n.id, {
-        [T]: 1,
+        [I]: 1,
         unique: true
-      }, S).then(e => C(t, e.code))
+      }, T).then(e => C(t, e.code))
     }
   }
-  return (null == c ? true : c.id) === t.id || t.bot || 0 === d.length || h.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(o.sNh, {
+  return (null == c ? true : c.id) === t.id || t.bot || 0 === d.length || m.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(o.sNh, {
     id: "invite-to-server",
     label: b.intl.string(b.t.Sd8Ixw),
     children: d.map(e => y[e.id] ? (0, r.jsx)(o.sNh, {

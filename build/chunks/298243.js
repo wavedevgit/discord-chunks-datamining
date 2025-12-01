@@ -19,18 +19,18 @@ function f(e) {
   let {
     guildId: i,
     productId: f
-  } = e, _ = (0, o.e7)([l.Z], () => l.Z.getGuildProduct(f)), {
-    isLoading: p,
-    downloadAttachment: h
-  } = (0, c.Z)(i, f), m = r.useCallback(() => {
+  } = e, p = (0, o.e7)([l.Z], () => l.Z.getGuildProduct(f)), {
+    isLoading: _,
+    downloadAttachment: m
+  } = (0, c.Z)(i, f), h = r.useCallback(() => {
     var e, t;
-    let n = null == _ || null == (t = _.attachments) || null == (e = t[0]) ? true : e.id;
-    a()(null != n, "No attachment"), h(n)
-  }, [h, null == _ ? true : _.attachments]), g = r.useCallback(() => u.Z.open({
+    let n = null == p || null == (t = p.attachments) || null == (e = t[0]) ? true : e.id;
+    a()(null != n, "No attachment"), m(n)
+  }, [m, null == p ? true : p.attachments]), g = r.useCallback(() => u.Z.open({
     guildId: i,
     productId: f
   }), [i, f]);
-  return (null != (n = null == _ || null == (t = _.attachments) ? true : t.length) ? n : 0) > 1 ? {
+  return (null != (n = null == p || null == (t = p.attachments) ? true : t.length) ? n : 0) > 1 ? {
     variant: "primary",
     text: d.intl.string(d.t.UyuiUE),
     icon: s.d4D,
@@ -41,7 +41,7 @@ function f(e) {
     text: d.intl.string(d.t.t9bE9b),
     icon: s._8t,
     iconPosition: "end",
-    loading: p,
-    onClick: m
+    loading: _,
+    onClick: h
   }
 }

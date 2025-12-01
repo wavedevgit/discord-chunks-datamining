@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,15 +46,15 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -76,17 +76,17 @@ function g(e) {
     guildId: n,
     channelId: a,
     nick: d,
-    className: _,
-    textClassName: m,
+    className: p,
+    textClassName: h,
     disablePopout: g,
     ignoreModalClicks: E,
     onClick: b,
     onContextMenu: y,
     onPopoutRequestOpen: O,
     onPopoutRequestClose: v
-  } = e, I = i.useRef(null);
+  } = e, S = i.useRef(null);
   return (0, r.jsx)(c.Z, {
-    targetElementRef: I,
+    targetElementRef: S,
     user: t,
     guildId: n,
     channelId: a,
@@ -98,10 +98,10 @@ function g(e) {
     children: e => {
       var {
         onClick: i
-      } = e, a = h(e, ["onClick"]);
-      return (0, r.jsxs)(s.P3F, p(f({}, a), {
-        innerRef: I,
-        className: o()(u.userListItem, _, {
+      } = e, a = m(e, ["onClick"]);
+      return (0, r.jsxs)(s.P3F, _(f({}, a), {
+        innerRef: S,
+        className: o()(u.userListItem, p, {
           [u.popoutDisabled]: g
         }),
         onContextMenu: y,
@@ -114,7 +114,7 @@ function g(e) {
           "aria-label": t.username,
           size: s.EFr.SIZE_24
         }), (0, r.jsx)(s.Text, {
-          className: o()(u.userListItemTag, m),
+          className: o()(u.userListItemTag, h),
           variant: "text-sm/normal",
           children: (0, r.jsx)(l.Z, {
             user: t,

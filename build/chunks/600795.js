@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Tm: () => d,
-  ZP: () => p
+  ZP: () => _
 }), require("./415506.js"), require("./388685.js");
 var Chunk547545 = require("./547545.js"),
   Chunk444591 = require("./444591.js"),
@@ -53,17 +53,17 @@ function f(e) {
     y: n
   }
 }
-class _ {
+class p {
   setup() {
     var e;
-    if (_.isSetUp) throw Error("Cannot have two Keyboard backends at the same time.");
-    _.isSetUp = true, this._handlingFirstEvent = true, null == (e = this.context.window) || module.addEventListener("keydown", this.handleGlobalKeyDown, {
+    if (p.isSetUp) throw Error("Cannot have two Keyboard backends at the same time.");
+    p.isSetUp = true, this._handlingFirstEvent = true, null == (e = this.context.window) || module.addEventListener("keydown", this.handleGlobalKeyDown, {
       capture: true
     })
   }
   teardown() {
     var e;
-    _.isSetUp = false, null == (e = this.context.window) || module.removeEventListener("keydown", this.handleGlobalKeyDown, {
+    p.isSetUp = false, null == (e = this.context.window) || module.removeEventListener("keydown", this.handleGlobalKeyDown, {
       capture: true
     }), this.endDrag()
   }
@@ -117,5 +117,5 @@ class _ {
     }), this.manager = e, this.actions = e.getActions(), this.monitor = e.getMonitor(), this.context = t, this.options = n, this.sourceNodes = new Map, this.sourcePreviewNodes = new Map, this.sourcePreviewNodeOptions = new Map, this.targetNodes = new Map, this._previewer = new i.Z(t.document), this._announcer = new r.Z(null == n ? true : n.announcer)
   }
 }
-o(_, "isSetUp", true);
-let p = (e, t, n) => new _(e, t, n)
+o(p, "isSetUp", true);
+let _ = (e, t, n) => new p(e, t, n)

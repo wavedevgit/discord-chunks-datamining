@@ -2,17 +2,17 @@
 /** chunk id: 675478, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BU: () => w,
-  Cd: () => k,
-  DZ: () => R,
-  PS: () => D,
+  BU: () => D,
+  Cd: () => M,
+  DZ: () => P,
+  PS: () => w,
   T6: () => A,
   Z1: () => G,
-  aj: () => P,
+  aj: () => R,
   fy: () => Chunk526761.fy,
   hW: () => N,
-  m9: () => j,
-  nm: () => L,
+  m9: () => k,
+  nm: () => x,
   w9: () => U
 }), require("./415506.js"), require("./388685.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
 var Chunk512722 = require("./512722.js"),
@@ -56,19 +56,19 @@ function v(e) {
   }
   return e
 }
-let I = 5e3,
-  T = "UserSettingsProtoLastWriteTimes",
-  S = Date.now();
+let S = 5e3,
+  I = "UserSettingsProtoLastWriteTimes",
+  T = Date.now();
 
 function A() {}
 Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
-  S = Date.now()
+  T = Date.now()
 }), Chunk570140.Z.subscribe("CONNECTION_CLOSED", () => {
-  S = Date.now()
+  T = Date.now()
 }), "undefined" != typeof document && (document.addEventListener("mousedown", () => {
-  S = 0
+  T = 0
 }), document.addEventListener("keydown", () => {
-  S = 0
+  T = 0
 }));
 class C {
   getEditInfo() {
@@ -118,8 +118,8 @@ class C {
     });
     let o = null != (n = t.delaySeconds) ? n : 0;
     if (null != a.timeout && o < r.timeoutDelay && !r.rateLimited && (clearTimeout(a.timeout), a.timeout = true), null == a.timeout) {
-      let e = o * _.Z.Millis.SECOND;
-      t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * _.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), a.timeout = setTimeout(this.persistChanges, e), a.timeoutDelay = o
+      let e = o * p.Z.Millis.SECOND;
+      t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * p.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), a.timeout = setTimeout(this.persistChanges, e), a.timeoutDelay = o
     }
     null != t.cleanup && (a.cleanupFuncs = [...r.cleanupFuncs, ...t.cleanup]), null == r.protoToSave ? a.protoToSave = e : a.protoToSave = (0, E.re)(this.ProtoClass, r.protoToSave, e), this.dispatchChanges(a)
   }
@@ -134,11 +134,11 @@ class C {
   }
   saveLastSendTime() {
     var e;
-    let t = null != (e = Chunk433517.K.get(T)) ? module : {};
-    exports[this.type] = Date.now(), Chunk433517.K.set(T, exports)
+    let t = null != (e = Chunk433517.K.get(I)) ? module : {};
+    exports[this.type] = Date.now(), Chunk433517.K.set(I, exports)
   }
   loadIfUncached(e, t) {
-    m.Z.hasLoaded(e) && true !== t || this.loadIfNecessary(t)
+    h.Z.hasLoaded(e) && true !== t || this.loadIfNecessary(t)
   }
   async loadIfNecessary(e) {
     if (__OVERLAY__) return void u.Z.dispatch({
@@ -165,7 +165,7 @@ class C {
           loading: false,
           loaded: true
         });
-        let r = h.Z[this.type],
+        let r = m.Z[this.type],
           {
             proto: i,
             isDirty: o,
@@ -213,7 +213,7 @@ class C {
       editInfo: e
     } = this.getEditInfo();
     i()(null != module.protoToSave, "protoToSave cannot be null"), i()(null != module.offlineEditDataVersion, "offlineEditDataVersion cannot be null"), i()(null == module.timeout, "timeout must not be set already");
-    let t = I + Math.floor(Math.random() * I),
+    let t = S + Math.floor(Math.random() * S),
       n = setTimeout(this.persistChanges, exports);
     this.dispatchChanges({
       timeout: require,
@@ -266,7 +266,7 @@ class C {
           this.logger.log("Rate limited, scheduling retry");
           let t = parseInt(e.headers["retry-after"]);
           isNaN(t) && (t = 60);
-          let n = setTimeout(this.persistChanges, Math.min(30 * _.Z.Millis.SECOND, t * _.Z.Millis.SECOND));
+          let n = setTimeout(this.persistChanges, Math.min(30 * p.Z.Millis.SECOND, t * p.Z.Millis.SECOND));
           this.dispatchChanges({
             rateLimited: true,
             timeout: n
@@ -278,58 +278,58 @@ class C {
   }
 }
 let N = new C(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
-  R = new C(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
-  P = {
+  P = new C(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+  R = {
     [Chunk526761.yP.PRELOADED_USER_SETTINGS]: N,
-    [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: R
+    [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: P
   };
 
-function D(e, t, n) {
+function w(e, t, n) {
   return N.updateAsync("guilds", n => (0, E.u0)(n, e, t), n)
 }
 
-function w(e, t, n, r) {
-  return D(e, e => (0, E.uL)(e, t, n), r)
-}
-
-function L(e) {
-  return x(e), N.updateAsync("userContent", t => {
-    if ((0, p.jl)(t.dismissedContents, e)) returnfalse;
-    t.dismissedContents = (0, p.GV)(t.dismissedContents, e)
-  }, b.fy.INFREQUENT_USER_ACTION)
+function D(e, t, n, r) {
+  return w(e, e => (0, E.uL)(e, t, n), r)
 }
 
 function x(e) {
-  !m.Z.hasLoaded(b.yP.PRELOADED_USER_SETTINGS) && (M(e) || f.default.track(y.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
+  return L(e), N.updateAsync("userContent", t => {
+    if ((0, _.jl)(t.dismissedContents, e)) returnfalse;
+    t.dismissedContents = (0, _.GV)(t.dismissedContents, e)
+  }, b.fy.INFREQUENT_USER_ACTION)
+}
+
+function L(e) {
+  !h.Z.hasLoaded(b.yP.PRELOADED_USER_SETTINGS) && (j(e) || f.default.track(y.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
     content_type: o.z[e]
   }))
 }
 
-function M(e) {
+function j(e) {
   var t;
-  let n = null == (t = m.Z.settings.userContent) ? true : t.dismissedContents;
-  return null != n && (0, p.jl)(n, e)
+  let n = null == (t = h.Z.settings.userContent) ? true : t.dismissedContents;
+  return null != n && (0, _.jl)(n, e)
 }
-async function k(e, t) {
+async function M(e, t) {
   return await N.updateAsync("userContent", n => {
     n.recurringDismissibleContentStates[e] = v({}, n.recurringDismissibleContentStates[e], t)
   }, b.fy.INFREQUENT_USER_ACTION)
 }
-async function j(e, t, n) {
-  return await D(t, t => {
+async function k(e, t, n) {
+  return await w(t, t => {
     t.guildDismissibleContentStates[e] = v({}, t.guildDismissibleContentStates[e], n)
   }, b.fy.INFREQUENT_USER_ACTION)
 }
 
 function U(e) {
   return N.updateAsync("userContent", t => {
-    if (!(0, p.jl)(t.dismissedContents, e)) returnfalse;
-    t.dismissedContents = (0, p.jx)(t.dismissedContents, e)
+    if (!(0, _.jl)(t.dismissedContents, e)) returnfalse;
+    t.dismissedContents = (0, _.jx)(t.dismissedContents, e)
   }, b.fy.INFREQUENT_USER_ACTION)
 }
 
 function G(e) {
-  return k(e, {
+  return M(e, {
     lastDismissedVersion: 0,
     lastDismissedAtMs: "0",
     lastDismissedObjectId: "0",

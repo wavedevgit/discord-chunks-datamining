@@ -21,10 +21,10 @@ function u(e) {
     loading: s,
     clearable: l,
     fullWidth: u,
-    isOpen: _,
-    isInert: p,
-    hasValue: h,
-    hasError: m,
+    isOpen: p,
+    isInert: _,
+    hasValue: m,
+    hasError: h,
     showChevronButton: g = true,
     children: E,
     handleToggle: b,
@@ -36,14 +36,14 @@ function u(e) {
       [c.fullWidth]: u
     }),
     className: a()(c.selectField, {
-      [c.isFocused]: _,
-      [c.isInert]: p
+      [c.isFocused]: p,
+      [c.isInert]: _
     }),
     "data-mana-component": "select-input-field",
     disabled: n,
     readOnly: i,
     fullWidth: u,
-    validation: m ? {
+    validation: h ? {
       hasError: true
     } : true,
     "aria-busy": s,
@@ -51,12 +51,12 @@ function u(e) {
       className: c.selectFieldContent,
       children: E
     }), (0, r.jsx)(d, {
-      show: true === l && !p && true === h,
+      show: true === l && !_ && true === m,
       iconSize: g ? "xs" : "sm",
       onClick: y
     }), (0, r.jsx)(f, {
       show: g,
-      isOpen: _,
+      isOpen: p,
       onClick: b
     })]
   })

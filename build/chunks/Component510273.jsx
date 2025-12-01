@@ -2,7 +2,7 @@
 /** chunk id: 510273, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -64,25 +64,25 @@ let f = e => {
       })]
     })
   },
-  _ = 50;
+  p = 50;
 
-function p(e) {
+function _(e) {
   let {
     achievement: t,
     unlocked: n
   } = e, {
     name: a,
-    description: p,
-    rarity: h,
-    hideDescriptionUntilUnlock: m,
+    description: _,
+    rarity: m,
+    hideDescriptionUntilUnlock: h,
     onAction: g
   } = t, {
     color: E
-  } = (0, l.F7)(h);
+  } = (0, l.F7)(m);
   i.useEffect(() => {
     let e = setTimeout(() => {
       c.Z.playAchievementUnlockSound()
-    }, _);
+    }, p);
     return () => {
       clearTimeout(e)
     }
@@ -111,7 +111,7 @@ function p(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: m && !n ? "?????" : p()
+        children: h && !n ? "?????" : _()
       })]
     }), (0, r.jsx)("div", {
       className: d.flair,

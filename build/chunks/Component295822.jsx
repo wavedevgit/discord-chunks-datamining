@@ -23,7 +23,7 @@ function d() {
     goreContentNonFriendDm: d
   } = exports, f = t => {
     (0, s.Jr)(e, t)
-  }, _ = [{
+  }, p = [{
     value: Chunk524437.Q4.BLUR,
     label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
   }, {
@@ -38,14 +38,14 @@ function d() {
       onChange: e => f({
         goreContentFriendDm: e
       }),
-      options: _
+      options: p
     }), (0, Chunk54381.jsx)(Chunk947707.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["Yh+HX1"]),
       value: d,
       onChange: e => f({
         goreContentNonFriendDm: e
       }),
-      options: _
+      options: p
     })]
   })
 }

@@ -14,8 +14,8 @@ function c(e) {
   var t;
   let {
     nameplate: n
-  } = e, c = (0, l.e7)([s.default], () => s.default.getCurrentUser()), d = null != (t = o.ZP.useName(c)) ? t : "";
-  return (0, a.jsx)(r.m, {
+  } = e, c = (0, r.e7)([s.default], () => s.default.getCurrentUser()), d = null != (t = o.ZP.useName(c)) ? t : "";
+  return (0, a.jsx)(i.m, {
     username: d,
     selfMute: false,
     selfDeaf: false,
@@ -24,7 +24,7 @@ function c(e) {
     suppress: false,
     speaking: false,
     streaming: false,
-    status: i.Sk.ONLINE,
+    status: l.Sk.ONLINE,
     currentUser: c,
     activities: [],
     applicationStream: true,

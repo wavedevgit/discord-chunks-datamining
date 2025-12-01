@@ -2,7 +2,7 @@
 /** chunk id: 997292, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => p
+  r: () => _
 });
 var Chunk106351 = require("./106351.js"),
   Chunk475179 = require("./475179.js"),
@@ -15,7 +15,7 @@ var Chunk106351 = require("./106351.js"),
   Chunk944486 = require("./944486.js"),
   Chunk914010 = require("./914010.js"),
   Chunk981631 = require("./981631.js");
-let p = {
+let _ = {
   binds: ["mod+u"],
   comboKeysBindGlobal: true,
   action() {

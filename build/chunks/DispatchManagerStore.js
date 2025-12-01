@@ -31,29 +31,29 @@ function b(e, t, n) {
 let y = [Chunk186901.ff.AUTHENTICATION_FAILED, Chunk186901.ff.NOT_ENTITLED],
   O = "DispatchManagerStore",
   v = [],
-  I = [],
-  T = false,
-  S = null,
+  S = [],
+  I = false,
+  T = null,
   A = null,
   C = false,
   N = new Map,
-  R = false,
-  P = null;
+  P = false,
+  R = null;
 
-function D() {
+function w() {
   let e = {
     queue: v,
-    paused: T,
+    paused: I,
     userActions: Array.from(N)
   };
   Chunk433517.K.set(O, module)
 }
 
-function w(e, t) {
-  return null != S && S.applicationId === e && S.branchId === t || null != A && A.applicationId === e && A.branchId === t
+function D(e, t) {
+  return null != T && T.applicationId === e && T.branchId === t || null != A && A.applicationId === e && A.branchId === t
 }
 
-function L() {
+function x() {
   let e = v[0];
   if (null != module) {
     let {
@@ -63,50 +63,50 @@ function L() {
       applicationId: r,
       branchId: i
     } = (0, Chunk780570.CP)(exports);
-    if (!w(r, Chunk392711)) {
+    if (!D(r, Chunk392711)) {
       let e = Chunk314897.default.getToken(),
         t = Chunk314897.default.getId();
       if (null == module) throw Error("missing user token");
-      R = !Chunk830168.Z.setCurrentTask(r, Chunk392711, require, exports, module)
+      P = !Chunk830168.Z.setCurrentTask(r, Chunk392711, require, exports, module)
     }
   }
 }
 
-function x(e, t) {
-  let n = (0, _.Tu)(e, t);
+function L(e, t) {
+  let n = (0, p.Tu)(e, t);
   return v.findIndex(e => e.comboId === n)
 }
 
-function M(e, t, n, r) {
-  let i = (0, _.Tu)(e, t),
+function j(e, t, n, r) {
+  let i = (0, p.Tu)(e, t),
     a = {
       comboId: i,
       action: r
     },
-    o = I.indexOf(i);
-  false !== o && I.splice(o, 1);
-  let s = x(e, t);
-  0 !== s && (n ? false === s && (v.push(a), L()) : (s > 0 && v.splice(s, 1), v.unshift(a), L())), !n && T && p.Z.resume(), D()
+    o = S.indexOf(i);
+  false !== o && S.splice(o, 1);
+  let s = L(e, t);
+  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && I && _.Z.resume(), w()
 }
 
-function k(e, t) {
-  let n = (0, _.Tu)(e, t),
-    r = I.indexOf(n);
-  false !== r && I.splice(r, 1);
-  let i = x(e, t);
-  false !== i && (v.splice(i, 1), D()), L()
+function M(e, t) {
+  let n = (0, p.Tu)(e, t),
+    r = S.indexOf(n);
+  false !== r && S.splice(r, 1);
+  let i = L(e, t);
+  false !== i && (v.splice(i, 1), w()), x()
 }
 
-function j(e) {
+function k(e) {
   let {
     applicationId: t,
     branchId: n
   } = e;
-  N.set((0, _.Tu)(t, n), "Install"), M(t, n, false, "Patch")
+  N.set((0, p.Tu)(t, n), "Install"), j(t, n, false, "Patch")
 }
 
 function U(e) {
-  Z(e), V(e)
+  B(e), V(e)
 }
 
 function G(e) {
@@ -114,50 +114,50 @@ function G(e) {
     applicationId: t,
     branchId: n
   } = e;
-  N.set((0, _.Tu)(t, n), "Repair"), M(t, n, false, "Repair")
-}
-
-function B(e) {
-  let {
-    applicationId: t,
-    branchId: n,
-    automatic: r
-  } = e;
-  M(t, n, r, "Patch")
+  N.set((0, p.Tu)(t, n), "Repair"), j(t, n, false, "Repair")
 }
 
 function Z(e) {
   let {
     applicationId: t,
+    branchId: n,
+    automatic: r
+  } = e;
+  j(t, n, r, "Patch")
+}
+
+function B(e) {
+  let {
+    applicationId: t,
     branchId: n
   } = e;
-  k(t, n)
+  M(t, n)
 }
 
 function F(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, r = x(t, n);
+  } = e, r = L(t, n);
   if (r < 1) returnfalse;
-  v.splice(0, 0, v.splice(r, 1)[0]), L(), T && p.Z.resume(), D()
+  v.splice(0, 0, v.splice(r, 1)[0]), x(), I && _.Z.resume(), w()
 }
 
 function V(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, r = (0, _.Tu)(t, n), i = I.indexOf(r);
-  false !== i && I.splice(i, 1)
+  } = e, r = (0, p.Tu)(t, n), i = S.indexOf(r);
+  false !== i && S.splice(i, 1)
 }
 
 function H(e) {
   let {
     state: t
   } = e;
-  !C && (C = true, L(), T || p.Z.resume());
-  let n = T;
-  T = t.paused, S = t.currentTask, A = t.nextTask;
+  !C && (C = true, x(), I || _.Z.resume());
+  let n = I;
+  I = t.paused, T = t.currentTask, A = t.nextTask;
   let r = false;
   v = v.filter(e => {
     let {
@@ -165,9 +165,9 @@ function H(e) {
     } = e, {
       applicationId: n,
       branchId: i
-    } = (0, _.CP)(t), o = m.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
+    } = (0, p.CP)(t), o = h.Z.getState(n, i), s = f.Z.getTargetBuildId(n, i), l = f.Z.getTargetManifests(n, i);
     if (null != o && o.type === g.vxO.UP_TO_DATE && o.buildId === o.targetBuildId && o.buildId === s && a().isEqual(o.manifestIds, o.targetManifestIds) && a().isEqual(o.manifestIds, l)) {
-      if (I.push(t), N.has(t)) {
+      if (S.push(t), N.has(t)) {
         switch (N.get(t)) {
           case "Install":
             c.XT(n, o);
@@ -180,23 +180,23 @@ function H(e) {
       return r = true, false
     }
     returntrue
-  }), L(), (r || n !== T) && D()
+  }), x(), (r || n !== I) && w()
 }
 
-function W() {
+function Y() {
   let e = Chunk314897.default.getToken(),
     t = Chunk314897.default.getId();
   null != module && Chunk830168.Z.setCredentials(exports, module)
 }
 
-function Y(e) {
+function W(e) {
   let {
     error: t
   } = e, {
     code: n
   } = t;
   if (null != n) {
-    if (y.includes(n)) W();
+    if (y.includes(n)) Y();
     else if (n === E.ff.APPLICATION_NOT_FOUND) {
       let {
         context: e
@@ -206,7 +206,7 @@ function Y(e) {
           application_id: t,
           branch_id: n
         } = e;
-        k(t, n)
+        M(t, n)
       }
     }
   }
@@ -215,24 +215,24 @@ function Y(e) {
 function K() {
   for (let e of Chunk594190.ZP.getRunningDiscordApplicationIds()) Chunk51025.al(module, module);
   let e = Chunk594190.ZP.getVisibleGame();
-  return T || null == module || module.pid === P || Chunk51025.wO(), P = null == module ? null : module.pid, false
+  return I || null == module || module.pid === R || Chunk51025.wO(), R = null == module ? null : module.pid, false
 }
 
 function z() {
-  (0, Chunk358085.isDesktop)() && W()
+  (0, Chunk358085.isDesktop)() && Y()
 }
 
 function q() {
   Chunk433517.K.remove(O), (0, Chunk358085.isDesktop)() && Chunk830168.Z.pause()
 }
 
-function X(e) {
+function Q(e) {
   return e.map(e => "string" == typeof e ? {
     comboId: e,
     action: "Patch"
   } : e)
 }
-class Q extends(r = Chunk442837.ZP.Store) {
+class X extends(r = Chunk442837.ZP.Store) {
   initialize() {
     var e;
     let t = null != (e = Chunk433517.K.get(O)) ? module : {
@@ -240,40 +240,40 @@ class Q extends(r = Chunk442837.ZP.Store) {
       paused: null,
       userActions: null
     };
-    null != exports.queue && (v = X(exports.queue)), null != exports.paused && (T = exports.paused), null != exports.userActions && (N = new Map(Array.from(exports.userActions))), this.waitFor(Chunk417363.Z, Chunk594190.ZP), this.syncWith([Chunk594190.ZP], K), this.waitFor(Chunk173747.Z, Chunk314897.default, Chunk417363.Z)
+    null != exports.queue && (v = Q(exports.queue)), null != exports.paused && (I = exports.paused), null != exports.userActions && (N = new Map(Array.from(exports.userActions))), this.waitFor(Chunk417363.Z, Chunk594190.ZP), this.syncWith([Chunk594190.ZP], K), this.waitFor(Chunk173747.Z, Chunk314897.default, Chunk417363.Z)
   }
   get activeItems() {
     return v.map(e => {
       let {
         comboId: t
       } = e;
-      return (0, _.CP)(t)
+      return (0, p.CP)(t)
     })
   }
   get finishedItems() {
-    return I.map(Chunk780570.CP)
+    return S.map(Chunk780570.CP)
   }
   get paused() {
-    return T
+    return I
   }
   getQueuePosition(e, t) {
-    return x(e, t)
+    return L(e, t)
   }
   isCorruptInstallation() {
-    return R
+    return P
   }
 }
-b(Q, "displayName", "DispatchManagerStore");
-let J = new Q(Chunk570140.Z, {
-  DISPATCH_APPLICATION_INSTALL: j,
-  DISPATCH_APPLICATION_UPDATE: B,
+b(X, "displayName", "DispatchManagerStore");
+let J = new X(Chunk570140.Z, {
+  DISPATCH_APPLICATION_INSTALL: k,
+  DISPATCH_APPLICATION_UPDATE: Z,
   DISPATCH_APPLICATION_UNINSTALL: U,
-  DISPATCH_APPLICATION_CANCEL: Z,
+  DISPATCH_APPLICATION_CANCEL: B,
   DISPATCH_APPLICATION_REPAIR: G,
   DISPATCH_APPLICATION_MOVE_UP: F,
   DISPATCH_APPLICATION_REMOVE_FINISHED: V,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
-  DISPATCH_APPLICATION_ERROR: Y,
+  DISPATCH_APPLICATION_ERROR: W,
   CONNECTION_OPEN: z,
   LOGOUT: q
 })

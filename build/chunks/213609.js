@@ -2,7 +2,7 @@
 /** chunk id: 213609, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I,
+  Z: () => S,
   h: () => v
 });
 var Chunk473749 = require("./473749.js"),
@@ -72,22 +72,22 @@ function v(e) {
       type: a,
       properties: o
     } = e;
-  if (e.type === l.ImpressionTypes.MODAL && null == e.name && (0, m.Ez)().some(e => {
+  if (e.type === l.ImpressionTypes.MODAL && null == e.name && (0, h.Ez)().some(e => {
       var t;
       return null == (t = e._stackContext) ? true : t.isSlide
     })) return;
-  (0, m.Ps)(e);
-  let s = null != (t = null == o ? true : o.guild_id) ? t : _.Z.getGuildId(),
+  (0, h.Ps)(e);
+  let s = null != (t = null == o ? true : o.guild_id) ? t : p.Z.getGuildId(),
     c = null != (n = null == o ? true : o.channel_id) ? n : f.Z.getChannelId(s),
-    u = (0, p.expandEventProperties)(E({
+    u = (0, _.expandEventProperties)(E({
       impression_type: a,
-      location: (0, m.k$)()
-    }, (0, h.hH)(s), (0, h.v_)(d.Z.getChannel(c)), o));
-  if (r) return void(0, m.dT)(null, null);
-  null != i && null != a && ((0, p.debugLogEvent)(i, u), O(i, u)), (0, m.dT)(i, u)
+      location: (0, h.k$)()
+    }, (0, m.hH)(s), (0, m.v_)(d.Z.getChannel(c)), o));
+  if (r) return void(0, h.dT)(null, null);
+  null != i && null != a && ((0, _.debugLogEvent)(i, u), O(i, u)), (0, h.dT)(i, u)
 }
 
-function I(e) {
+function S(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
       disableTrack: false,
       trackOnInitialLoad: false
@@ -104,7 +104,7 @@ function I(e) {
         sequenceId: s()("impression_")
       });
       return v(c, t.disableTrack), () => {
-        null != c && (0, m.dw)(c)
+        null != c && (0, h.dw)(c)
       }
     };
   (0, u.ZP)(() => {

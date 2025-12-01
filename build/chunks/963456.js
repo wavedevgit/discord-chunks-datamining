@@ -2,8 +2,8 @@
 /** chunk id: 963456, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  a: () => p,
-  j: () => m
+  a: () => _,
+  j: () => h
 }), require("./539854.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -15,11 +15,11 @@ let c = 5e3,
   u = 3,
   d = 1e3,
   f = 1001,
-  _ = 1002;
-async function p(e, t) {
+  p = 1002;
+async function _(e, t) {
   let n, s = performance.now(),
-    p = 0,
-    m = [];
+    _ = 0,
+    h = [];
   switch (e.type) {
     case "channel":
       n = l.ANM.APPLICATION_COMMAND_INDEX_CHANNEL(e.channelId);
@@ -33,18 +33,18 @@ async function p(e, t) {
     case "application":
       n = l.ANM.APPLICATION_COMMAND_INDEX_APPLICATION(e.applicationId)
   }
-  let g = async t => p >= u ? (m.push(_), b({
+  let g = async t => _ >= u ? (h.push(p), b({
     error: true
   }), i.Z.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
     target: e
   })) : (await new Promise(e => setTimeout(e, t)), E()), E = () => r.tn.get({
     url: n,
-    retries: u - p - 1,
+    retries: u - _ - 1,
     signal: t.signal,
-    onRequestCreated: () => p++,
+    onRequestCreated: () => _++,
     rejectWithError: false
-  }).then(t => 202 === t.status ? (m.push(202), g(c)) : (b({
+  }).then(t => 202 === t.status ? (h.push(202), g(c)) : (b({
     error: false
   }), i.Z.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS",
@@ -53,12 +53,12 @@ async function p(e, t) {
   })), n => {
     var r;
     if (t.signal.aborted) {
-      m.push(f), b({
+      h.push(f), b({
         error: true
       });
       return
     }
-    return 429 === n.status ? (m.push(429), g(n.body.retry_after * o.Z.Millis.SECOND)) : (m.push(null != (r = n.status) ? r : d), b({
+    return 429 === n.status ? (h.push(429), g(n.body.retry_after * o.Z.Millis.SECOND)) : (h.push(null != (r = n.status) ? r : d), b({
       error: true
     }), i.Z.dispatch({
       type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
@@ -73,19 +73,19 @@ async function p(e, t) {
       error: i,
       aborted: t.signal.aborted,
       include_applications: true,
-      retries: Math.max(p - 1, 0),
+      retries: Math.max(_ - 1, 0),
       kind: null,
       command_type: null,
       url: n,
       target_type: e.type,
-      target_id: h(e),
-      failure_statuses: m
+      target_id: m(e),
+      failure_statuses: h
     })
   };
   await E()
 }
 
-function h(e) {
+function m(e) {
   switch (e.type) {
     case "channel":
       return e.channelId;
@@ -100,7 +100,7 @@ function h(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   i.Z.dispatch({
     type: "APPLICATION_COMMAND_INDEX_FETCH_REQUEST",
     target: e

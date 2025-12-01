@@ -2,7 +2,7 @@
 /** chunk id: 254621, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk60995 = require("./60995.js"),
   Chunk607726 = require("./607726.js"),
   Chunk773275 = require("./773275.jsx");
-let h = () => {
+let m = () => {
     let {
       installationStatus: e,
       setInstallationStatus: t,
@@ -25,7 +25,7 @@ let h = () => {
       getWarpInstallationStatus: a
     } = (0, Chunk773275.xf)(), {
       status: o
-    } = (0, Chunk442837.e7)([Chunk646834.Z], () => Chunk646834.Z.state, []), [h, m] = (0, Chunk473749.useState)(0), {
+    } = (0, Chunk442837.e7)([Chunk646834.Z], () => Chunk646834.Z.state, []), [m, h] = (0, Chunk473749.useState)(0), {
       installedDiscordPrivateBrowsingPerk: g
     } = (0, Chunk442837.e7)([Chunk607726.Z], () => Chunk607726.Z.getState(), []), [E, b] = (0, Chunk473749.useState)(false);
     return (0, Chunk473749.useEffect)(() => {
@@ -51,8 +51,8 @@ let h = () => {
           require(Chunk5900.Ij.DISCONNECTED)
       }
     }, [Chunk818710, module, require]), (0, Chunk473749.useEffect)(() => {
-      h > 10 && (exports(Chunk5900._n.ERROR), m(0))
-    }, [h, exports]), (0, Chunk473749.useEffect)(() => {
+      m > 10 && (exports(Chunk5900._n.ERROR), h(0))
+    }, [m, exports]), (0, Chunk473749.useEffect)(() => {
       module === Chunk5900._n.READY_FOR_LICENSE && Chunk54381().then(e => {
         e && t(d._n.INSTALLED)
       }).catch(e => {
@@ -68,7 +68,7 @@ let h = () => {
         let e = await Chunk734610();
         switch (module) {
           case Chunk5900._n.ERROR:
-            m(e => e + 1);
+            h(e => e + 1);
             return;
           case Chunk5900._n.NOT_INSTALLED:
             return;
@@ -84,7 +84,7 @@ let h = () => {
       }
     }, [module, exports, Chunk734610]), null
   },
-  m = () => (0, Chunk818710.nI)() ? (0, Chunk54381.jsx)(Chunk734610.SV, {
+  h = () => (0, Chunk818710.nI)() ? (0, Chunk54381.jsx)(Chunk734610.SV, {
     fallback: null,
-    children: (0, Chunk54381.jsx)(h, {})
+    children: (0, Chunk54381.jsx)(m, {})
   }) : null

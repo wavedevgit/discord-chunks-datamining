@@ -2,7 +2,7 @@
 /** chunk id: 930114, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => p
+  V: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,7 +24,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,34 +37,34 @@ function _(e) {
   return e
 }
 
-function p(e) {
+function _(e) {
   let {
     processedCode: t,
     channelContext: f,
-    customGiftMessage: p,
-    giftInfo: h
-  } = e, m = false, g = null, E = a.default.getCurrentUser(), b = (0, l.yd)(null == E ? true : E.premiumType, u.PremiumTypes.TIER_0);
+    customGiftMessage: _,
+    giftInfo: m
+  } = e, h = false, g = null, E = a.default.getCurrentUser(), b = (0, l.yd)(null == E ? true : E.premiumType, u.PremiumTypes.TIER_0);
   (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("38029").then(n.bind(n, 409858));
     return n => {
       var i, a;
-      return (0, r.jsx)(e, _({
+      return (0, r.jsx)(e, p({
         code: t,
         channelContext: f,
-        customGiftMessage: p,
-        emojiName: null == h || null == (i = h.emoji) ? true : i.name,
-        soundId: null == h || null == (a = h.sound) ? true : a.id,
+        customGiftMessage: _,
+        emojiName: null == m || null == (i = m.emoji) ? true : i.name,
+        soundId: null == m || null == (a = m.sound) ? true : a.id,
         onComplete: (e, t) => {
-          g = e, t && (m = t, e.isSubscription && null == o.Z.getPremiumSubscription(false) && (0, c.H)(true))
+          g = e, t && (h = t, e.isSubscription && null == o.Z.getPremiumSubscription(false) && (0, c.H)(true))
         }
       }, n))
     }
   }, {
     onCloseCallback: () => {
       var e;
-      m && null != g && !b && g.isSubscription && (null == g || null == (e = g.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.PremiumTypes.TIER_2 && s.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
+      h && null != g && !b && g.isSubscription && (null == g || null == (e = g.subscriptionPlan) ? true : e.premiumSubscriptionType) === u.PremiumTypes.TIER_2 && s.S.dispatch(d.CkL.PREMIUM_SUBSCRIPTION_CREATED)
     }
   })
 }

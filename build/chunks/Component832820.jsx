@@ -39,27 +39,27 @@ let b = function(e) {
   } = e, n = (0, c.z8)(t.id), s = (0, c.OG)(t.id), {
     entitlement: b,
     numPotions: y
-  } = (0, p.t6)(d.D1), O = i.useCallback(e => {
+  } = (0, _.t6)(d.D1), O = i.useCallback(e => {
     (0, c.Hi)(e, t.id)
   }, [t.id]), v = i.useCallback(() => {
     (0, c.GA)(t.id)
-  }, [t.id]), I = i.useMemo(() => null != n ? n.name.replace(/_/g, " ") : "", [n]), T = i.useCallback(() => {
+  }, [t.id]), S = i.useMemo(() => null != n ? n.name.replace(/_/g, " ") : "", [n]), I = i.useCallback(() => {
     (0, c.Hb)(t.id)
-  }, [t.id]), S = i.useMemo(() => null != y && y > 0 ? (null == b ? true : b.type) === h.qc2.DEVELOPER_GIFT ? m.intl.format(m.t["b+P6ra"], {
+  }, [t.id]), T = i.useMemo(() => null != y && y > 0 ? (null == b ? true : b.type) === m.qc2.DEVELOPER_GIFT ? h.intl.format(h.t["b+P6ra"], {
     numPotions: y
-  }) : m.intl.format(m.t.RiQ4ci, {
+  }) : h.intl.format(h.t.RiQ4ci, {
     numPotions: y
-  }) : m.intl.string(m.t.hvVgAZ), [y, b]), [A, C] = i.useState(false === s);
+  }) : h.intl.string(h.t.hvVgAZ), [y, b]), [A, C] = i.useState(false === s);
   i.useEffect(() => {
     false === s && v()
   }, [s, v]);
   let N = i.useCallback(() => {
       C(false)
     }, []),
-    R = i.useCallback(e => {
+    P = i.useCallback(e => {
       O(e), C(false)
     }, [O]),
-    P = i.useCallback(() => {
+    R = i.useCallback(() => {
       (0, f.s)({
         channelId: t.id,
         onRedeem: () => {},
@@ -67,19 +67,19 @@ let b = function(e) {
         source: u.YD.MessageConfettiBar
       })
     }, [t.id]),
-    D = i.useRef(null);
+    w = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: g.bar,
-    children: [(0, r.jsx)(_.Z, {
+    children: [(0, r.jsx)(p.Z, {
       channel: t,
       shouldShow: A,
       onRequestClose: N,
-      setEmojiConfetti: R,
-      positionRef: D,
+      setEmojiConfetti: P,
+      positionRef: w,
       position: "top",
       align: "left",
       children: () => (0, r.jsxs)(o.P3F, {
-        innerRef: D,
+        innerRef: w,
         onClick: () => C(!A),
         className: g.emojiSelectContainer,
         children: [(0, r.jsx)("div", {
@@ -89,22 +89,22 @@ let b = function(e) {
           })
         }), (0, r.jsx)(a.xvT, {
           variant: "text-sm/medium",
-          children: null == n ? m.intl.string(m.t.mzfiGW) : m.intl.format(m.t.Hcd9OU, {
-            emojiName: I
+          children: null == n ? h.intl.string(h.t.mzfiGW) : h.intl.format(h.t.Hcd9OU, {
+            emojiName: S
           })
         })]
       })
     }), (0, r.jsxs)("div", {
       className: g.end,
       children: [(0, r.jsx)(o.Button, {
-        onClick: P,
-        text: S,
+        onClick: R,
+        text: T,
         variant: "primary"
       }), (0, r.jsx)("div", {
         className: g.separator,
         "aria-hidden": true
       }), (0, r.jsx)(l.B, {
-        onClick: T
+        onClick: I
       })]
     })]
   })

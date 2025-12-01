@@ -44,7 +44,7 @@ var Chunk848643 = require("./848643.js"),
   Chunk606166 = require("./606166.js"),
   Chunk679785 = require("./679785.js"),
   Chunk467159 = require("./467159.js"),
-  p = function(e, t, n, r) {
+  _ = function(e, t, n, r) {
     return d({
       "public/DraftStyleDefault/unorderedListItem": "unordered-list-item" === e,
       "public/DraftStyleDefault/orderedListItem": "ordered-list-item" === e,
@@ -78,73 +78,73 @@ module.exports = function(e) {
       c = n.getDecorator();
     return i !== a || o !== s || l !== c || n.mustForceSelection()
   }, n.render = function() {
-    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, o = e.customStyleMap, s = e.customStyleFn, d = e.editorState, h = e.editorKey, m = e.preventScroll, g = e.textDirectionality, E = d.getCurrentContent(), b = d.getSelection(), y = d.mustForceSelection(), O = d.getDecorator(), v = _(d.getDirectionMap()), I = E.getBlocksAsArray(), T = [], S = null, A = null, C = 0; C < I.length; C++) {
-      var N = I[C],
-        R = N.getKey(),
-        P = N.getType(),
-        D = n(N),
-        w = true,
-        L = true,
-        x = true;
-      D && (w = D.component, L = D.props, x = D.editable);
-      var M = g || v.get(R),
-        k = c.encode(R, 0, 0),
-        j = {
+    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, o = e.customStyleMap, s = e.customStyleFn, d = e.editorState, m = e.editorKey, h = e.preventScroll, g = e.textDirectionality, E = d.getCurrentContent(), b = d.getSelection(), y = d.mustForceSelection(), O = d.getDecorator(), v = p(d.getDirectionMap()), S = E.getBlocksAsArray(), I = [], T = null, A = null, C = 0; C < S.length; C++) {
+      var N = S[C],
+        P = N.getKey(),
+        R = N.getType(),
+        w = n(N),
+        D = true,
+        x = true,
+        L = true;
+      w && (D = w.component, x = w.props, L = w.editable);
+      var j = g || v.get(P),
+        M = c.encode(P, 0, 0),
+        k = {
           contentState: E,
           block: N,
-          blockProps: L,
+          blockProps: x,
           blockStyleFn: r,
           customStyleMap: o,
           customStyleFn: s,
           decorator: O,
-          direction: M,
+          direction: j,
           forceSelection: y,
-          offsetKey: k,
-          preventScroll: m,
+          offsetKey: M,
+          preventScroll: h,
           selection: b,
-          tree: d.getBlockTree(R)
+          tree: d.getBlockTree(P)
         },
-        U = t.get(P) || t.get("unstyled"),
+        U = t.get(R) || t.get("unstyled"),
         G = U.wrapper,
-        B = U.element || t.get("unstyled").element,
-        Z = N.getDepth(),
+        Z = U.element || t.get("unstyled").element,
+        B = N.getDepth(),
         F = "";
-      if (r && (F = r(N)), "li" === B) {
-        var V = A !== G || null === S || Z > S;
-        F = f(F, p(P, Z, V, M))
+      if (r && (F = r(N)), "li" === Z) {
+        var V = A !== G || null === T || B > T;
+        F = f(F, _(R, B, V, j))
       }
-      var H = w || l,
-        W = {
+      var H = D || l,
+        Y = {
           className: F,
           "data-block": true,
-          "data-editor": h,
-          "data-offset-key": k,
-          key: R
+          "data-editor": m,
+          "data-offset-key": M,
+          key: P
         };
-      true !== x && (W = a({}, W, {
-        contentEditable: x,
+      true !== L && (Y = a({}, Y, {
+        contentEditable: L,
         suppressContentEditableWarning: true
       }));
-      var Y = u.createElement(B, W, u.createElement(H, i({}, j, {
-        key: R
+      var W = u.createElement(Z, Y, u.createElement(H, i({}, k, {
+        key: P
       })));
-      T.push({
-        block: Y,
+      I.push({
+        block: W,
         wrapperTemplate: G,
-        key: R,
-        offsetKey: k
-      }), S = G ? N.getDepth() : null, A = G
+        key: P,
+        offsetKey: M
+      }), T = G ? N.getDepth() : null, A = G
     }
-    for (var K = [], z = 0; z < T.length;) {
-      var q = T[z];
+    for (var K = [], z = 0; z < I.length;) {
+      var q = I[z];
       if (q.wrapperTemplate) {
-        var X = [];
-        do X.push(T[z].block), z++; while (z < T.length && T[z].wrapperTemplate === q.wrapperTemplate);
-        var Q = u.cloneElement(q.wrapperTemplate, {
+        var Q = [];
+        do Q.push(I[z].block), z++; while (z < I.length && I[z].wrapperTemplate === q.wrapperTemplate);
+        var X = u.cloneElement(q.wrapperTemplate, {
           key: q.key + "-wrap",
           "data-offset-key": q.offsetKey
-        }, X);
-        K.push(Q)
+        }, Q);
+        K.push(X)
       } else K.push(q.block), z++
     }
     return u.createElement("div", {

@@ -55,37 +55,37 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e) {
+function I(e) {
   let {
     channel: t,
     textVariant: n,
     textClassName: a,
     iconClassName: f,
-    hideText: m = false,
+    hideText: h = false,
     hideTooltip: y = false,
     canTruncate: v = true,
-    showChannelName: T = false
-  } = e, S = (0, s.vjg)(s.Skl.ONLINE), A = (0, u.ZP)(t), C = t.isDM() || t.isGroupDM(), {
+    showChannelName: I = false
+  } = e, T = (0, s.vjg)(s.Skl.ONLINE), A = (0, u.ZP)(t), C = t.isDM() || t.isGroupDM(), {
     enableTopNavButton: N
   } = (0, d.Cq)({
     location: "VoiceActivityStatus"
-  }), R = !N && T, {
-    analyticsLocations: P
-  } = (0, l.ZP)(), D = i.useCallback(() => {
-    (0, p.A)({
-      analyticsLocations: P,
+  }), P = !N && I, {
+    analyticsLocations: R
+  } = (0, l.ZP)(), w = i.useCallback(() => {
+    (0, _.A)({
+      analyticsLocations: R,
       activityType: "VOICE",
       voiceChannelId: t.id
     })
-  }, [P, t.id]), w = () => y || C ? (0, r.jsx)(_.Z, {
+  }, [R, t.id]), D = () => y || C ? (0, r.jsx)(p.Z, {
     size: "custom",
-    color: S,
+    color: T,
     channel: t,
     className: o()(b.icon, f)
   }) : (0, r.jsx)(s.aML, {
@@ -95,26 +95,26 @@ function T(e) {
       channel: t
     }),
     delay: g.X,
-    onTooltipShow: D,
-    children: e => (0, r.jsx)(_.Z, I(O({}, e), {
+    onTooltipShow: w,
+    children: e => (0, r.jsx)(p.Z, S(O({}, e), {
       size: "custom",
-      color: S,
+      color: T,
       channel: t,
       className: o()(b.icon, f)
     }))
-  }), L = () => N ? A : C ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM);
+  }), x = () => N ? A : C ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM);
   return (0, r.jsxs)(r.Fragment, {
-    children: [w(), !m && (0, r.jsxs)(h.Z, {
+    children: [D(), !h && (0, r.jsxs)(m.Z, {
       variant: n,
       className: a,
       canTruncate: v,
       hideTooltip: y,
-      children: [L(), R && null != A && " (".concat(A, ")")]
+      children: [x(), P && null != A && " (".concat(A, ")")]
     })]
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t,
     textVariant: n,
@@ -123,26 +123,26 @@ function S(e) {
     hideText: l = false,
     hideTooltip: c = false,
     canTruncate: f = true,
-    showChannelName: p = false
-  } = e, h = (0, s.vjg)(s.Skl.ONLINE), g = (0, u.ZP)(t), y = t.isDM() || t.isGroupDM(), {
+    showChannelName: _ = false
+  } = e, m = (0, s.vjg)(s.Skl.ONLINE), g = (0, u.ZP)(t), y = t.isDM() || t.isGroupDM(), {
     enableTopNavButton: O
   } = (0, d.Cq)({
     location: "VoiceActivityStatusWithCombinedTooltip"
-  }), v = O && null != g ? g : y ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM), I = null == g || O ? v : "".concat(v, " (").concat(g, ")"), T = p ? I : v;
-  return (0, r.jsx)(m.Z, {
-    icon: (0, r.jsx)(_.Z, {
+  }), v = O && null != g ? g : y ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM), S = null == g || O ? v : "".concat(v, " (").concat(g, ")"), I = _ ? S : v;
+  return (0, r.jsx)(h.Z, {
+    icon: (0, r.jsx)(p.Z, {
       size: "custom",
-      color: h,
+      color: m,
       channel: t,
       className: o()(b.icon, a)
     }),
-    text: T,
-    tooltipText: c ? true : I,
+    text: I,
+    tooltipText: c ? true : S,
     textVariant: n,
     textClassName: i,
     hideTooltip: c,
     canTruncate: f,
-    "aria-label": I,
+    "aria-label": S,
     hideText: l
   })
 }
@@ -150,5 +150,5 @@ function S(e) {
 function A(e) {
   return (0, f.b)({
     location: "VoiceActivityStatusExperimentWrapper"
-  }) ? (0, r.jsx)(S, O({}, e)) : (0, r.jsx)(T, O({}, e))
+  }) ? (0, r.jsx)(T, O({}, e)) : (0, r.jsx)(I, O({}, e))
 }

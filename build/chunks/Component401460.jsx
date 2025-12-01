@@ -2,7 +2,7 @@
 /** chunk id: 401460, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -59,37 +59,37 @@ function O(e, t) {
   }), e
 }
 let v = () => [Chunk388032.intl.string(Chunk388032.t["EgWTY+"]), Chunk388032.intl.string(Chunk388032.t.umBn5f), Chunk388032.intl.string(Chunk388032.t.dG1wD1), Chunk388032.intl.string(Chunk388032.t.SesI4S), Chunk388032.intl.string(Chunk388032.t.RnMLvl)],
-  I = () => {
+  S = () => {
     var e;
     return null != (e = l().sample(v())) ? module : Chunk388032.intl.string(Chunk388032.t["EgWTY+"])
   };
 
-function T(e) {
+function I(e) {
   let {
     id: t,
     className: n,
     onSelect: a,
     isSelected: s = false,
     tabIndex: l,
-    children: _,
-    locked: m = false
-  } = e, [E, y] = i.useState((0, p.aW)(t).name), v = t === f.Ru.PIRATE, T = (0, c.jm)({
+    children: p,
+    locked: h = false
+  } = e, [E, y] = i.useState((0, _.aW)(t).name), v = t === f.Ru.PIRATE, I = (0, c.jm)({
     label: E,
     isSelected: s
   });
   return (0, r.jsx)(u.aML, {
     text: E,
-    onTooltipShow: () => v && y(I()),
+    onTooltipShow: () => v && y(S()),
     children: e => (0, r.jsxs)("div", {
       className: g.appIconSelectionContainer,
-      children: [(0, r.jsx)(u.P3F, O(b({}, e, T), {
-        tabIndex: null != l ? l : T.tabIndex,
+      children: [(0, r.jsx)(u.P3F, O(b({}, e, I), {
+        tabIndex: null != l ? l : I.tabIndex,
         className: o()(g.appIconSelection, {
           [g.selected]: s
         }, n),
-        onClick: s ? h.dG4 : () => null == a ? true : a(t),
-        children: _
-      })), s && (0, r.jsx)(d.oK, {}), m && (0, r.jsx)("div", {
+        onClick: s ? m.dG4 : () => null == a ? true : a(t),
+        children: p
+      })), s && (0, r.jsx)(d.oK, {}), h && (0, r.jsx)("div", {
         className: g.lockedBadgeContainer,
         children: (0, r.jsx)(u.mBM, {
           className: g.lockedBadge,
@@ -100,7 +100,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     icon: t,
     isSelected: n,
@@ -109,16 +109,16 @@ function S(e) {
     onSelect: o,
     locked: s
   } = e;
-  return (0, r.jsx)(T, {
+  return (0, r.jsx)(I, {
     onSelect: i ? true : o,
     isSelected: n,
     id: t.id,
     className: i ? g.disabled : true,
     tabIndex: a,
     locked: s,
-    children: (0, r.jsx)(_.Z, {
+    children: (0, r.jsx)(p.Z, {
       id: t.id,
-      width: p.M9
+      width: _.M9
     })
   })
 }

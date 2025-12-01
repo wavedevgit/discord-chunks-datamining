@@ -24,11 +24,11 @@ let u = e => {
     variant: u,
     override: d,
     labelledBy: f
-  } = e, _ = null != d && "unset" === u, p = (0, s.ZP)(), h = null != (t = null == d ? true : d[p]) ? t : null == d ? true : d.default, m = i.useMemo(() => (n - a) / (c - a) * 100, [n, a, c]), g = n === a, E = _ ? {
-    "--custom-background": null == h ? true : h.background,
-    "--custom-gradient-start": null == h ? true : h.gradientStart,
-    "--custom-gradient-end": null == h ? true : h.gradientEnd,
-    "--custom-gradient-glow": null == h ? true : h.gradientEnd
+  } = e, p = null != d && "unset" === u, _ = (0, s.ZP)(), m = null != (t = null == d ? true : d[_]) ? t : null == d ? true : d.default, h = i.useMemo(() => (n - a) / (c - a) * 100, [n, a, c]), g = n === a, E = p ? {
+    "--custom-background": null == m ? true : m.background,
+    "--custom-gradient-start": null == m ? true : m.gradientStart,
+    "--custom-gradient-end": null == m ? true : m.gradientEnd,
+    "--custom-gradient-glow": null == m ? true : m.gradientEnd
   } : {};
   return (0, r.jsx)("div", {
     className: o()(l.progressContainer, l[u]),
@@ -38,7 +38,7 @@ let u = e => {
         [l.empty]: g
       }),
       style: {
-        width: "".concat(m, "%")
+        width: "".concat(h, "%")
       },
       role: "meter",
       "aria-valuenow": n,

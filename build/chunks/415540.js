@@ -59,31 +59,31 @@ function l(e) {
     options: u,
     loading: d,
     query: f,
-    debouncedQuery: _
-  } = l, p = r.useCallback(e => c(t => s(a({}, t), {
+    debouncedQuery: p
+  } = l, _ = r.useCallback(e => c(t => s(a({}, t), {
     loading: o,
     query: e,
     debouncedQuery: e
   })), [o]);
   return r.useEffect(() => {
-    t && p("")
-  }, [t, p]), r.useEffect(() => {
+    t && _("")
+  }, [t, _]), r.useEffect(() => {
     let e;
     return o ? (c(e => s(a({}, e), {
       loading: true,
       debouncedQuery: null
     })), e = setTimeout(() => {
-      p(f)
-    }, 500)) : p(f), () => {
+      _(f)
+    }, 500)) : _(f), () => {
       clearTimeout(e)
     }
-  }, [o, f, p]), r.useEffect(() => {
+  }, [o, f, _]), r.useEffect(() => {
     let e = false;
 
     function r() {
-      return "function" == typeof n ? n(_) : Promise.resolve(n)
+      return "function" == typeof n ? n(p) : Promise.resolve(n)
     }
-    return (t && null !== _ && o || !o) && r().then(t => {
+    return (t && null !== p && o || !o) && r().then(t => {
       e || (null != i && (t = t.map(i)), c(e => s(a({}, e), {
         options: t,
         loading: false
@@ -91,7 +91,7 @@ function l(e) {
     }), () => {
       e = true
     }
-  }, [t, n, _, i, o]), {
+  }, [t, n, p, i, o]), {
     options: u,
     loading: d,
     onQueryChange: r.useCallback(e => {

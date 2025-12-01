@@ -2,8 +2,8 @@
 /** chunk id: 566697, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => R,
-  Z: () => P
+  R: () => P,
+  Z: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -37,42 +37,42 @@ let N = {
     xsmall: Chunk481060.EFr.SIZE_20,
     default: Chunk481060.EFr.SIZE_32
   },
-  R = Chunk473749.memo(function(e) {
+  P = Chunk473749.memo(function(e) {
     let {
       user: t,
       guildId: n,
       nameplate: a,
-      nameplateData: R,
-      className: P,
-      innerClassName: D,
-      isHighlighted: w,
-      showStatus: L,
-      showPlaceholderUser: x,
-      pendingGlobalName: M,
-      pendingNickname: k,
-      pendingAvatarDecoration: j,
+      nameplateData: P,
+      className: R,
+      innerClassName: w,
+      isHighlighted: D,
+      showStatus: x,
+      showPlaceholderUser: L,
+      pendingGlobalName: j,
+      pendingNickname: M,
+      pendingAvatarDecoration: k,
       pendingDisplayNameStyles: U,
       nameplatePreviewSize: G = "default",
-      isPurchased: B = false,
-      skipEffectDisplayName: Z = false,
+      isPurchased: Z = false,
+      skipEffectDisplayName: B = false,
       width: F
-    } = e, V = (0, u.ZP)(), H = (0, l.wj)(V), W = null != a ? (0, _.EU)(a) : R, Y = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), K = H ? "#706F74" : "#aaaab2", z = i.useRef(null), q = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), X = null != t ? (0, b.Ly)({
-      pendingNickname: k,
-      pendingGlobalName: M,
+    } = e, V = (0, u.ZP)(), H = (0, l.wj)(V), Y = null != a ? (0, p.EU)(a) : P, W = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), K = H ? "#706F74" : "#aaaab2", z = i.useRef(null), q = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), Q = null != t ? (0, b.Ly)({
+      pendingNickname: M,
+      pendingGlobalName: j,
       user: t,
       guildMember: q
-    }) : true, Q = (0, E.Ys)({
-      pendingValue: j,
+    }) : true, X = (0, E.Ys)({
+      pendingValue: k,
       userValue: null == t ? true : t.avatarDecoration,
       guildValue: null == q ? true : q.avatarDecoration,
       guildId: n
-    }), J = i.useMemo(() => N[G], [G]), $ = (0, p.Z)({
+    }), J = i.useMemo(() => N[G], [G]), $ = (0, _.Z)({
       userId: null == t ? true : t.id,
       guildId: n,
       pendingDisplayNameStyles: U
-    }), ee = i.useMemo(() => null != a ? T.intl.formatToPlainString(T.t.YJig7C, {
+    }), ee = i.useMemo(() => null != a ? I.intl.formatToPlainString(I.t.YJig7C, {
       a11y_text: a.label
-    }) : T.intl.string(T.t.SZeUdR), [a]);
+    }) : I.intl.string(I.t.SZeUdR), [a]);
     return (0, r.jsx)("div", {
       role: "img",
       "aria-label": ee,
@@ -81,62 +81,62 @@ let N = {
         width: null != F ? "".concat(F, "px") : "100%"
       },
       children: (0, r.jsxs)(c.Rny, {
-        className: o()(P, S.nameplatePreview, {
-          [S.nameplatePurchased]: B && !w,
-          [S.xsmall]: "xsmall" === G,
-          [S.small]: "small" === G,
-          [S.large]: "large" === G,
-          [S.xlarge]: "xlarge" === G,
-          [S.inheritWidth]: null != F
+        className: o()(R, T.nameplatePreview, {
+          [T.nameplatePurchased]: Z && !D,
+          [T.xsmall]: "xsmall" === G,
+          [T.small]: "small" === G,
+          [T.large]: "large" === G,
+          [T.xlarge]: "xlarge" === G,
+          [T.inheritWidth]: null != F
         }),
-        children: [null != W && (0, r.jsx)(I.Z, {
-          nameplate: W,
-          hovered: w,
+        children: [null != Y && (0, r.jsx)(S.Z, {
+          nameplate: Y,
+          hovered: D,
           placement: v.i.PREVIEW,
-          content: x ? true : z
+          content: L ? true : z
         }, null == a ? true : a.skuId), (0, r.jsxs)("div", {
-          className: S.overlayContainer,
+          className: T.overlayContainer,
           children: [null != t ? (0, r.jsx)("div", {
-            className: o()(S.avatarContainer, !x && S.avatarVisible),
+            className: o()(T.avatarContainer, !L && T.avatarVisible),
             children: (0, r.jsx)(d.Z, {
               ref: z,
               avatar: (0, r.jsx)(f.Z, {
                 user: t,
                 guildId: n,
                 avatarSize: J,
-                status: L ? Y : true,
-                avatarDecorationOverride: Q,
+                status: x ? W : true,
+                avatarDecorationOverride: X,
                 "aria-hidden": true
               }),
               decorators: (0, r.jsx)(g.ZP, {
                 userId: t.id,
                 contextGuildId: n,
-                className: S.tagChiplet
+                className: T.tagChiplet
               }),
-              name: (0, r.jsx)(m.Z, {
-                userName: X,
+              name: (0, r.jsx)(h.Z, {
+                userName: Q,
                 displayNameStyles: $,
-                effectDisplayType: Z ? h.F.PLAIN : h.F.ANIMATED,
+                effectDisplayType: B ? m.F.PLAIN : m.F.ANIMATED,
                 loop: true
               }),
-              innerClassName: D,
+              innerClassName: w,
               withDisplayNameStyles: null != $
             })
           }) : null, (0, r.jsxs)("div", {
-            className: o()(S.avatarContainer, x && S.avatarVisible),
+            className: o()(T.avatarContainer, L && T.avatarVisible),
             children: [(0, r.jsx)(c.qEK, {
               src: H ? A : C,
               size: J,
               "aria-hidden": true,
               status: c.Skl.ONLINE,
               statusColor: K,
-              className: S.avatar
+              className: T.avatar
             }), (0, r.jsx)("div", {
-              className: S.placeholderUsername
+              className: T.placeholderUsername
             })]
           })]
         })]
       })
     })
   }),
-  P = R
+  R = P

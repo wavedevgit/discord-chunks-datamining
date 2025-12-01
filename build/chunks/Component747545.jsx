@@ -2,8 +2,8 @@
 /** chunk id: 747545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => D,
-  Z: () => w
+  S: () => w,
+  Z: () => D
 }), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,15 +32,15 @@ let A = ">=10.0.22000",
   C = /\{65E8773D-8F56-11D0-A3B9-00A0C9223196\}/i,
   N = "{E5323777-F976-4f5b-9B55-B94699C46E44}";
 
-function R() {
+function P() {
   return !!(0, Chunk358085.isWindows)() && !!Chunk358085.isPlatformEmbedded && o().satisfies(Chunk579806.Z.os.release, A)
 }
 
-function P(e) {
+function R(e) {
   return (0, y.getPlatform)() === y.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != e ? "?cameraId=".concat(encodeURIComponent(e.replace(C, N))) : "") : ""
 }
 
-function D() {
+function w() {
   let [e, t] = Chunk473749.useState(false), n = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isMediaFilterSettingLoading());
   return (Chunk473749.useEffect(() => {
     let e = new Chunk846519.V7;
@@ -53,7 +53,7 @@ function D() {
   }) : null
 }
 
-function w(e) {
+function D(e) {
   let {
     hideDeviceSelector: t = false,
     hideDeviceHeader: n = false,
@@ -68,45 +68,45 @@ function w(e) {
     analyticsLocations: C
   } = (0, f.ZP)(), {
     id: N
-  } = (0, p.p6)(I.h7.VIDEO_INPUT), D = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), w = m.qF.useSetting();
+  } = (0, _.p6)(S.h7.VIDEO_INPUT), w = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), D = h.qF.useSetting();
   return (0, r.jsxs)(c.Kqy, {
     gap: 20,
     children: [d(N), E.Z.isEnabled() ? null : (0, r.jsx)(c.Text, {
-      className: S.permissionWarning,
+      className: T.permissionWarning,
       color: "interactive-normal",
       variant: "text-sm/normal",
-      children: T.intl.format(T.t.stagfJ, {
+      children: I.intl.format(I.t.stagfJ, {
         onEnableClick: () => u.Z.enable(true)
       })
     }), y ? null : (0, r.jsx)(c.rsf, {
-      label: T.intl.string(T.t["3Ppr1h"]),
-      description: T.intl.string(T.t.WNbX4O),
-      checked: w,
+      label: I.intl.string(I.t["3Ppr1h"]),
+      description: I.intl.string(I.t.WNbX4O),
+      checked: D,
       onChange: e => {
-        m.qF.updateSetting(e), b.default.track(O.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+        h.qF.updateSetting(e), b.default.track(O.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
         })
       }
-    }), !t && (0, r.jsx)(h.F, {
+    }), !t && (0, r.jsx)(m.F, {
       setting: v.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
-      children: (0, r.jsx)(_.j, {
-        label: n ? true : T.intl.string(T.t.FsQ3OR),
-        helperText: !i && R() ? T.intl.format(T.t.aJYgRt, {
+      children: (0, r.jsx)(p.j, {
+        label: n ? true : I.intl.string(I.t.FsQ3OR),
+        helperText: !i && P() ? I.intl.format(I.t.aJYgRt, {
           onCameraSettingsClick: () => {
-            null == A || A(), window.open(P(N)), b.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
+            null == A || A(), window.open(R(N)), b.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
               location_stack: C
             })
           }
         }) : true,
-        deviceType: I.h7.VIDEO_INPUT,
+        deviceType: S.h7.VIDEO_INPUT,
         location: "CameraSettings",
-        isDisabled: !D,
+        isDisabled: !w,
         showAllDevices: true
       })
-    }), (0, r.jsx)(h.F, {
+    }), (0, r.jsx)(m.F, {
       setting: v.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
       children: (0, r.jsx)(g.Z, {
-        className: S.spacingTop24,
+        className: T.spacingTop24,
         onLearnMore: a,
         selectedBackgroundOption: o,
         onSelectBackgroundOption: l,

@@ -2,7 +2,7 @@
 /** chunk id: 601665, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => R
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -39,7 +39,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,62 +52,62 @@ function R(e) {
   return e
 }
 
-function P(e) {
+function R(e) {
   let {
     user: t,
     currentUser: n,
     guildId: N,
-    channelId: P,
-    messageId: D,
-    roleId: w,
-    openedAt: L,
-    closePopout: x,
-    setPopoutRef: M,
-    disableUserProfileLink: k = __OVERLAY__,
-    newAnalyticsLocations: j = [],
+    channelId: R,
+    messageId: w,
+    roleId: D,
+    openedAt: x,
+    closePopout: L,
+    setPopoutRef: j,
+    disableUserProfileLink: M = __OVERLAY__,
+    newAnalyticsLocations: k = [],
     disableAutoFocus: U = false
   } = e, {
     analyticsLocations: G
-  } = (0, l.ZP)([...j, s.Z.USER_PROFILE_POPOUT]), B = (0, _.ZB)({
+  } = (0, l.ZP)([...k, s.Z.USER_PROFILE_POPOUT]), Z = (0, p.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: N,
-    channelId: P,
-    messageId: D,
-    roleId: w
-  }), Z = (0, h.ZP)(t.id, N), F = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), {
+    channelId: R,
+    messageId: w,
+    roleId: D
+  }), B = (0, m.ZP)(t.id, N), F = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), {
     isHoveringOrFocusing: H
   } = (0, u.Z)(V);
   i.useEffect(() => {
-    null == M || M(null == V ? true : V.current)
-  }, [V, M]);
-  let W = e => {
-      null == x || x(), (0, m.openUserProfileModal)(R({
+    null == j || j(null == V ? true : V.current)
+  }, [V, j]);
+  let Y = e => {
+      null == L || L(), (0, h.openUserProfileModal)(P({
         sourceAnalyticsLocations: G,
         hideRestrictedProfile: true
-      }, B, e))
+      }, Z, e))
     },
-    Y = () => k ? null : (0, r.jsx)(o.sNh, {
+    W = () => M ? null : (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: A.intl.string(A.t["+Xp3hq"]),
       action: () => {
-        W(), (0, p.pQ)(R({
+        Y(), (0, _.pQ)(P({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: G
-        }, B))
+        }, Z))
       }
     }),
     K = U ? "div" : o.VqE,
     z = (0, c.Dt)(),
-    q = f.ZP.useName(N, P, t);
+    q = f.ZP.useName(N, R, t);
   return (0, r.jsx)(l.Gt, {
     value: G,
-    children: (0, r.jsx)(_.Mt, {
-      value: B,
-      openedAt: L,
-      fetchStartedAt: null == Z ? true : Z.fetchStartedAt,
-      fetchEndedAt: null == Z ? true : Z.fetchEndedAt,
-      isLoaded: null == Z ? true : Z.isLoaded,
+    children: (0, r.jsx)(p.Mt, {
+      value: Z,
+      openedAt: x,
+      fetchStartedAt: null == B ? true : B.fetchStartedAt,
+      fetchEndedAt: null == B ? true : B.fetchEndedAt,
+      isLoaded: null == B ? true : B.isLoaded,
       children: (0, r.jsxs)(K, {
         ref: V,
         "aria-labelledby": z,
@@ -120,48 +120,48 @@ function P(e) {
           })
         }), (0, r.jsxs)(b.Z, {
           user: t,
-          displayProfile: Z,
-          themeType: S.l.POPOUT,
+          displayProfile: B,
+          themeType: T.l.POPOUT,
           children: [(0, r.jsx)(O.Z, {
             children: (0, r.jsx)(y.Z, {
               user: t,
               guildId: N,
-              viewProfileItem: Y()
+              viewProfileItem: W()
             })
           }), (0, r.jsxs)("div", {
             className: C.header,
             children: [(0, r.jsx)(E.Z, {
               user: t,
-              displayProfile: Z,
+              displayProfile: B,
               guildId: N,
-              themeType: S.l.POPOUT
+              themeType: T.l.POPOUT
             }), (0, r.jsx)(g.Z, {
               user: t,
-              displayProfile: Z,
+              displayProfile: B,
               guildId: N,
-              channelId: P,
-              themeType: S.l.POPOUT,
-              onOpenProfile: k ? true : W
+              channelId: R,
+              themeType: T.l.POPOUT,
+              onOpenProfile: M ? true : Y
             }), (0, r.jsx)(v.Z, {
               user: t,
-              themeType: S.l.POPOUT,
-              onCloseProfile: x,
+              themeType: T.l.POPOUT,
+              onCloseProfile: L,
               disableToolbar: true
             })]
-          }), (0, r.jsx)(I.Z, {
+          }), (0, r.jsx)(S.Z, {
             user: t,
             currentUser: n,
-            displayProfile: Z,
+            displayProfile: B,
             guild: F,
             isHoveringOrFocusing: H,
-            onOpenProfile: k ? true : W,
-            channelId: P,
-            onClose: x
-          }), (0, r.jsx)(T.Z, {
+            onOpenProfile: M ? true : Y,
+            channelId: R,
+            onClose: L
+          }), (0, r.jsx)(I.Z, {
             user: t,
             guildId: N,
-            channelId: P,
-            onClose: x,
+            channelId: R,
+            onClose: L,
             disableAutoFocus: U
           })]
         })]

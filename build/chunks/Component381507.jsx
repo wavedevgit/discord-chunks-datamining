@@ -18,7 +18,7 @@ var Chunk780384 = require("./780384.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk908780 = require("./908780.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -49,15 +49,15 @@ let g = () => {
       size: Chunk268685.EF.SIZE_32,
       animateOnHover: true
     }),
-    h = (0, Chunk410030.Fg)(),
-    g = (0, Chunk780384.ap)(h),
+    m = (0, Chunk410030.Fg)(),
+    g = (0, Chunk780384.ap)(m),
     E = Chunk51144.ZP.getName(module),
     b = g ? Chunk898969.Z : Chunk703614.Z;
   return null == module ? null : (0, Chunk54381.jsxs)("div", {
     className: Chunk908780.attributionBannerContainer,
     children: [(0, Chunk54381.jsx)("div", {
       className: Chunk908780.avatarContainer,
-      children: (0, Chunk54381.jsx)(Chunk481060.qEK, m({
+      children: (0, Chunk54381.jsx)(Chunk481060.qEK, h({
         src: exports,
         "aria-label": module.username,
         size: Chunk268685.EF.SIZE_32

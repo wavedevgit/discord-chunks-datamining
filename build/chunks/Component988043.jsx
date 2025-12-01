@@ -2,7 +2,7 @@
 /** chunk id: 988043, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,11 +26,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk744038 = require("./744038.js");
 
-function T(e) {
+function I(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, E = (0, _.c_)(), T = d.h2.useSetting().includes(n), S = (0, u.q)(), A = (0, f.r)(), C = (0, o.LN)(), N = i.useCallback(e => {
+  } = e, E = (0, p.c_)(), I = d.h2.useSetting().includes(n), T = (0, u.q)(), A = (0, f.r)(), C = (0, o.LN)(), N = i.useCallback(e => {
     let r = (0, c.YK)();
     e ? r.delete(n) : r.add(n), d.h2.updateSetting(Array.from(r)), l.default.track(O.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: g.Y.DIRECT_MESSAGES_TOGGLE,
@@ -39,23 +39,23 @@ function T(e) {
     })
   }, [n, t]);
 
-  function R(e, t) {
+  function P(e, t) {
     l.default.track(O.rMx.GUILD_DEFAULT_DMS_UPDATED, {
       default_guilds_restricted: e,
       applied_to_existing_guilds: t
     })
   }
-  let P = e => {
-      D(!e)
+  let R = e => {
+      w(!e)
     },
-    D = e => {
+    w = e => {
       let t = () => {
-          d.gR.updateSetting(e), d.h2.updateSetting(e ? s.Z.getGuildIds() : []), R(e, true)
+          d.gR.updateSetting(e), d.h2.updateSetting(e ? s.Z.getGuildIds() : []), P(e, true)
         },
         n = () => {
-          d.gR.updateSetting(e), R(e, false)
+          d.gR.updateSetting(e), P(e, false)
         };
-      (0, m.V)({
+      (0, h.V)({
         header: v.intl.string(v.t["uUr+GR"]),
         body: v.intl.string(v.t.hjGJBp),
         confirmText: v.intl.string(v.t.gm1Vej),
@@ -65,31 +65,31 @@ function T(e) {
         onCancel: t
       })
     },
-    w = A ? v.intl.string(v.t.PMsfcH) : v.intl.string(v.t.RAQUSN);
-  return (0, r.jsx)(p.U, {
+    D = A ? v.intl.string(v.t.PMsfcH) : v.intl.string(v.t.RAQUSN);
+  return (0, r.jsx)(_.U, {
     setting: b.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
-    children: n === y.T ? (0, r.jsx)(h.ZP, {
-      title: w,
+    children: n === y.T ? (0, r.jsx)(m.ZP, {
+      title: D,
       note: A ? v.intl.string(v.t.XXGmuB) : v.intl.string(v.t.wbYDfT),
-      value: !S,
-      onChange: P,
-      disabled: C,
-      tooltipText: C ? v.intl.string(I.default["6Af/cw"]) : true
-    }) : (0, r.jsx)(h.ZP, {
-      title: w,
-      note: E ? v.intl.string(v.t.V0ka0Q) : A ? v.intl.string(v.t.F9WY3f) : v.intl.string(v.t.G7c3Xo),
       value: !T,
+      onChange: R,
+      disabled: C,
+      tooltipText: C ? v.intl.string(S.default["6Af/cw"]) : true
+    }) : (0, r.jsx)(m.ZP, {
+      title: D,
+      note: E ? v.intl.string(v.t.V0ka0Q) : A ? v.intl.string(v.t.F9WY3f) : v.intl.string(v.t.G7c3Xo),
+      value: !I,
       onChange: N
     })
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     ingress: t = E.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
-  } = e, i = (0, _.is)();
-  return (0, r.jsx)(T, {
+  } = e, i = (0, p.is)();
+  return (0, r.jsx)(I, {
     ingress: t,
     guildId: null != n ? n : i
   })

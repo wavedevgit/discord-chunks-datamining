@@ -49,21 +49,21 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = new Set(["darwin", "linux", "win32", "ios", "android"]);
+let p = new Set(["darwin", "linux", "win32", "ios", "android"]);
 
-function p() {
+function _() {
   if ((0, Chunk358085.isWeb)()) return "web";
   {
     let e = (0, Chunk358085.getPlatformName)();
-    return _.has(module) ? module : null
+    return p.has(module) ? module : null
   }
 }
 
-function h() {
+function m() {
   let e = Chunk747268.Z;
   return null != module && Chunk404097.e.ALL.has(module) ? module : null
 }
-let m = 12e4,
+let h = 12e4,
   g = 100;
 class E {
   _getMetricWithDefaults(e, t) {
@@ -78,9 +78,9 @@ class E {
     null != r && r.forEach(e => {
       i.tags.push(e)
     });
-    let a = p();
+    let a = _();
     null != a && i.tags.push("platform:".concat(a));
-    let o = h();
+    let o = m();
     return null != o && i.tags.push("release_channel:".concat(o)), i
   }
   increment(e) {
@@ -103,8 +103,8 @@ class E {
         body: {
           metrics: module,
           client_info: {
-            built_at: "1764622008014",
-            build_number: "473819"
+            built_at: "1764622911957",
+            build_number: "473833"
           }
         },
         retries: 1,
@@ -118,7 +118,7 @@ class E {
   constructor() {
     c(this, "_metrics", true), c(this, "_intervalId", true), this._metrics = [], this._intervalId = setInterval(() => {
       this._flush()
-    }, m)
+    }, h)
   }
 }
 let b = new E

@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -26,10 +26,10 @@ let l = [],
   f = e => {
     c = l, u = null
   },
-  _ = e => {
+  p = e => {
     e.item.skuId === r && (r = true)
   };
-class p extends(i = Chunk442837.ZP.Store) {
+class _ extends(i = Chunk442837.ZP.Store) {
   get analyticsLocations() {
     return c
   }
@@ -46,10 +46,10 @@ class p extends(i = Chunk442837.ZP.Store) {
     }
   }
 }
-s(p, "displayName", "CollectiblesShopStore");
-let h = new p(Chunk570140.Z, {
+s(_, "displayName", "CollectiblesShopStore");
+let m = new _(Chunk570140.Z, {
   COLLECTIBLES_SHOP_OPEN: d,
   COLLECTIBLES_SHOP_CLOSE: f,
-  COLLECTIBLES_PRODUCT_DETAILS_OPEN: _,
+  COLLECTIBLES_PRODUCT_DETAILS_OPEN: p,
   LOGOUT: f
 })

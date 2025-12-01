@@ -2,7 +2,7 @@
 /** chunk id: 859235, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S,
+  Z: () => T,
   q: () => v
 });
 var Chunk54381 = require("./54381.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk132045 = require("./132045.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -79,71 +79,71 @@ var v = function(e) {
   return e[e.SMALL = 0] = "SMALL", e[e.MEDIUM = 1] = "MEDIUM", e[e.CLIP = 2] = "CLIP", e[e.XXSMALL = 3] = "XXSMALL", e[e.XSMALL = 4] = "XSMALL", e
 }({});
 
-function I(e) {
+function S(e) {
   e.stopPropagation()
 }
 
-function T(e, t) {
+function I(e, t) {
   let {
     id: n,
     channelId: i,
     className: a,
-    children: m,
+    children: h,
     actions: E,
     handleEditModal: O,
     keyboardModeEnabled: v,
-    onKeyDown: T,
-    draftType: S,
+    onKeyDown: I,
+    draftType: T,
     size: A = 1
   } = e, C = (0, s.JA)(n), {
     onFocus: N
-  } = C, R = y(C, ["onFocus"]), {
-    handleFocus: P,
-    handleBlur: D
-  } = (0, f.b)(N), w = 0 === A, L = null != E, x = e => {
+  } = C, P = y(C, ["onFocus"]), {
+    handleFocus: R,
+    handleBlur: w
+  } = (0, f.b)(N), D = 0 === A, x = null != E, L = e => {
     if (v) {
       switch (e.which) {
-        case _.yXg.D:
-          e.preventDefault(), c.Z.remove(i, n, S);
+        case p.yXg.D:
+          e.preventDefault(), c.Z.remove(i, n, T);
           return;
-        case _.yXg.E:
+        case p.yXg.E:
           null != O && (e.preventDefault(), O(e));
           return;
-        case _.yXg.BACKSPACE:
-          e.ctrlKey ? (e.preventDefault(), c.Z.clearAll(i, S)) : (e.preventDefault(), c.Z.remove(i, n, S));
+        case p.yXg.BACKSPACE:
+          e.ctrlKey ? (e.preventDefault(), c.Z.clearAll(i, T)) : (e.preventDefault(), c.Z.remove(i, n, T));
           return;
-        case _.yXg.ARROW_UP:
+        case p.yXg.ARROW_UP:
           let t = e.shiftKey || e.altKey || e.ctrlKey || e.metaKey;
           if (t) return;
-          e.preventDefault(), d.S.dispatchToLastSubscribed(_.CkL.FOCUS_MESSAGES, {
+          e.preventDefault(), d.S.dispatchToLastSubscribed(p.CkL.FOCUS_MESSAGES, {
             atEnd: true
           })
       }
-      null == T || T(e)
+      null == I || I(e)
     }
   };
   return (0, r.jsx)(l.tEY, {
-    children: (0, r.jsx)("li", b(g({}, R), {
-      onFocus: P,
-      onBlur: D,
-      onKeyDown: x,
-      className: o()(h.upload, a, {
-        [h.sizeClip]: 2 === A
+    children: (0, r.jsx)("li", b(g({}, P), {
+      onFocus: R,
+      onBlur: w,
+      onKeyDown: L,
+      className: o()(m.upload, a, {
+        [m.sizeClip]: 2 === A
       }),
       ref: t,
       children: (0, r.jsxs)("div", {
-        className: h.uploadContainer,
-        children: [m, L ? (0, r.jsx)("div", {
-          className: h.actionBarContainer,
+        className: m.uploadContainer,
+        children: [h, x ? (0, r.jsx)("div", {
+          className: m.actionBarContainer,
           children: (0, r.jsx)("div", {
-            className: o()(h.actionBar, {
-              [h.smallActionBar]: w
+            className: o()(m.actionBar, {
+              [m.smallActionBar]: D
             }),
-            onContextMenu: I,
-            "aria-label": p.intl.string(p.t["8Lu3Du"]),
+            onContextMenu: S,
+            "aria-label": _.intl.string(_.t["8Lu3Du"]),
             children: (0, r.jsx)(u.ZP, {
               className: o()({
-                [h.miniPopover]: w
+                [m.miniPopover]: D
               }),
               children: E
             })
@@ -153,4 +153,4 @@ function T(e, t) {
     }))
   })
 }
-let S = Chunk473749.forwardRef(T)
+let T = Chunk473749.forwardRef(I)

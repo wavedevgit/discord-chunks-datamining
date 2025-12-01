@@ -14,19 +14,19 @@ function o(e) {
     size: n,
     names: o = a,
     format: s = "png"
-  } = e, [l, c] = r.useState(null), [u, d] = r.useState(true), f = (0, i.xF)(t, l, n, s), _ = u ? "loading" : null != f ? "fetched" : "not-found", p = r.useRef(o);
+  } = e, [l, c] = r.useState(null), [u, d] = r.useState(true), f = (0, i.xF)(t, l, n, s), p = u ? "loading" : null != f ? "fetched" : "not-found", _ = r.useRef(o);
   return r.useEffect(() => {
-    p.current = o
+    _.current = o
   }), r.useEffect(() => {
     let {
       current: e
-    } = p;
+    } = _;
     null != t && (0, i.Vh)(t).then(t => {
       for (let [n, r] of(d(false), Object.entries(t)))
         if (null != r && "" !== r.id && e.includes(r.name)) return void c(r.id)
     })
   }, [t]), {
     url: f,
-    state: _
+    state: p
   }
 }

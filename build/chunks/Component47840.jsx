@@ -19,19 +19,19 @@ let u = 120,
       isVisible: t,
       subscriptionTier: n,
       isEligibleForBogoPromotion: f
-    } = e, _ = (0, a.q_F)({
+    } = e, p = (0, a.q_F)({
       transform: t ? "translateY(-100%)" : "translateY(0%)",
       opacity: +!!t,
       config: {
         tension: u,
         friction: d
       }
-    }), p = {
+    }), _ = {
       section: l.jXE.MARKETING_FLOATING_CTA
     };
     return (0, r.jsx)(i.animated.div, {
       className: c.wrapper,
-      style: _,
+      style: p,
       "data-mtctest-ignore": "true",
       children: (0, r.jsxs)("div", {
         className: c.buttonContainer,
@@ -40,7 +40,7 @@ let u = 120,
           subscriptionTier: n,
           hasActivePromotion: !!f,
           isPersistentCTA: true,
-          premiumModalAnalyticsLocation: p
+          premiumModalAnalyticsLocation: _
         }), (0, r.jsx)(o.Z, {
           variant: "secondary",
           size: "md"

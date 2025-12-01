@@ -48,9 +48,9 @@ function d(e, t) {
   }), e
 }
 let f = {},
-  _ = {};
+  p = {};
 
-function p(e) {
+function _(e) {
   let {
     applicationId: t
   } = e;
@@ -59,7 +59,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     applicationId: t
   } = e;
@@ -68,18 +68,18 @@ function h(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     applicationId: t,
     assets: n
   } = e;
   if (null != n) {
     var r;
-    _[t] = {
+    p[t] = {
       assets: null != (r = a().keyBy(n, "name")) ? r : {},
       lastUpdated: Date.now()
     }
-  } else delete _[t]
+  } else delete p[t]
 }
 
 function g(e) {
@@ -89,7 +89,7 @@ function g(e) {
   for (let e in t) {
     var r;
     let i = t[e];
-    n[e] = 2, _[e] = {
+    n[e] = 2, p[e] = {
       assets: null != (r = a().keyBy(i, "name")) ? r : {},
       lastUpdated: Date.now()
     }
@@ -111,14 +111,14 @@ class E extends(r = Chunk442837.ZP.Store) {
     })]
   }
   getApplicationAssets(e) {
-    return _[e]
+    return p[e]
   }
 }
 l(E, "displayName", "ApplicationAssetsStore");
 let b = new E(Chunk570140.Z, {
-  APPLICATION_ASSETS_FETCH: p,
-  APPLICATION_ASSETS_FETCH_SUCCESS: h,
-  APPLICATION_ASSETS_UPDATE: m,
+  APPLICATION_ASSETS_FETCH: _,
+  APPLICATION_ASSETS_FETCH_SUCCESS: m,
+  APPLICATION_ASSETS_UPDATE: h,
   EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS: g,
   DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: g
 })

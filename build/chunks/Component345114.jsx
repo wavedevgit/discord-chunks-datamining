@@ -33,15 +33,15 @@ function b(e) {
     messageId: r.id
   })(t), {
     analyticsLocations: u
-  } = (0, s.ZP)(o.Z.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), _ = r.roleSubscriptionData, p = i.useCallback(() => {
-    (0, d.uL)(h.Z5c.CHANNEL(a, m.oC.ROLE_SUBSCRIPTIONS), {
+  } = (0, s.ZP)(o.Z.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), p = r.roleSubscriptionData, _ = i.useCallback(() => {
+    (0, d.uL)(m.Z5c.CHANNEL(a, h.oC.ROLE_SUBSCRIPTIONS), {
       sourceLocationStack: u
-    }), (null == _ ? true : _.role_subscription_listing_id) != null && (0, f.y8)(a, n.id, r.id, _.role_subscription_listing_id)
-  }, [a, n, r, _, u]);
-  return null == _ ? null : (0, f.Tn)({
+    }), (null == p ? true : p.role_subscription_listing_id) != null && (0, f.y8)(a, n.id, r.id, p.role_subscription_listing_id)
+  }, [a, n, r, p, u]);
+  return null == p ? null : (0, f.Tn)({
     username: t.nick,
     usernameOnClickHandler: l,
-    roleSubscriptionOnClickHandler: p,
+    roleSubscriptionOnClickHandler: _,
     guildId: a,
     roleSubscriptionData: r.roleSubscriptionData
   })
@@ -84,7 +84,7 @@ function O(e) {
     "aria-label": g.intl.formatToPlainString(g.t["utf8+W"], {
       username: i
     }),
-    children: [(0, r.jsx)(p.Z, {
+    children: [(0, r.jsx)(_.Z, {
       guildId: t,
       user: n,
       className: E.welcomeCardBadge
@@ -115,7 +115,7 @@ function v(e) {
       guildId: a.guild_id,
       user: o.author,
       username: c.nick
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(p.Z, {
       channel: a,
       message: o
     })]

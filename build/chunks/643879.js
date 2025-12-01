@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   SD: () => g,
-  Z1: () => _,
-  cN: () => m,
+  Z1: () => p,
+  cN: () => h,
   fD: () => d,
-  mh: () => h
+  mh: () => m
 }), require("./35282.js"), require("./953529.js");
 var Chunk664751 = require("./664751.js"),
   Chunk134432 = require("./134432.js"),
@@ -39,21 +39,21 @@ function d(e) {
     size: c
   } = e, {
     CDN_HOST: d
-  } = window.GLOBAL_ENV, f = null != d ? "https://".concat(d) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT, _ = u({
+  } = window.GLOBAL_ENV, f = null != d ? "https://".concat(d) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT, p = u({
     storageHash: a,
     canAnimate: o,
     allowWebp: s
-  }), p = "?".concat(r.stringify({
+  }), _ = "?".concat(r.stringify({
     size: (0, i.oO)(c * (0, i.x_)())
   }));
-  return "".concat(f).concat(l.ANM.ARCHIVED_AVATAR(t, n, a, _)).concat(p)
+  return "".concat(f).concat(l.ANM.ARCHIVED_AVATAR(t, n, a, p)).concat(_)
 }
 
 function f(e) {
   return null == e ? c.intl.string(c.t.lqaIxI) : e.split(",")[0]
 }
 
-function _(e) {
+function p(e) {
   let {
     filename: t,
     assetOrigin: n = s.q.NEW_ASSET
@@ -73,7 +73,7 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   switch (e) {
     case "gif":
       return "image/gif";
@@ -86,7 +86,7 @@ function p(e) {
   }
 }
 
-function h(e, t) {
+function m(e, t) {
   let n = u({
       storageHash: e,
       canAnimate: true,
@@ -95,11 +95,11 @@ function h(e, t) {
     r = f(t);
   return {
     filename: "".concat(r, ".").concat(n),
-    type: p(n)
+    type: _(n)
   }
 }
 
-function m(e) {
+function h(e) {
   let {
     assetOrigin: t = s.q.NEW_ASSET,
     imageUri: n,

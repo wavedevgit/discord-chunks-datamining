@@ -2,7 +2,7 @@
 /** chunk id: 438139, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -65,13 +65,13 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = 13;
+let p = 13;
 
-function p(e) {
-  return "".concat(e).length < _ ? 1e3 * e : e
+function _(e) {
+  return "".concat(e).length < p ? 1e3 * e : e
 }
 
-function h(e) {
+function m(e) {
   return class extends i.PureComponent {
     componentDidMount() {
       this._interval.start(1e3, () => this.setState(this.getUpdatedTime()))
@@ -86,7 +86,7 @@ function h(e) {
       let {
         timestamps: e
       } = this.props, t = Date.now() / 1e3;
-      return null != e.end ? this.getDiff(t, p(e.end) / 1e3) : null != e.start ? this.getDiff(p(e.start) / 1e3, t) : {
+      return null != e.end ? this.getDiff(t, _(e.end) / 1e3) : null != e.start ? this.getDiff(_(e.start) / 1e3, t) : {
         hours: 0,
         minutes: 0,
         seconds: 0

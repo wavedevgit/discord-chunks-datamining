@@ -24,7 +24,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk701306 = require("./701306.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,20 +33,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,13 +58,13 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 class C extends(r = Chunk473749.PureComponent) {
   get analyticsLocation() {
-    return A(T({}, this.props.analyticsContext.location), {
+    return A(I({}, this.props.analyticsContext.location), {
       object: Chunk981631.qAy.BUTTON_CTA
     })
   }
@@ -125,7 +125,7 @@ class C extends(r = Chunk473749.PureComponent) {
     } = this.props;
     if (!Chunk473749) return Chunk239091 ? null : this.renderDisabledButton(Chunk388032.intl.string(Chunk388032.t["359Pbd"]), Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk388032.t.NASLa3) : Chunk388032.intl.string(Chunk388032.t.o1bhkD));
     if (Chunk442837) return this.renderDisabledButton(Chunk388032.intl.string(Chunk388032.t["3elwAB"]));
-    let _ = Chunk28664 ? Chunk481060.gtL : Chunk755721.zx;
+    let p = Chunk28664 ? Chunk481060.gtL : Chunk755721.zx;
     return (0, Chunk54381.jsxs)(Chunk2052, {
       className: s()(Chunk701306.playButton, module),
       innerClassName: Chunk701306.playButtonContents,
@@ -141,7 +141,7 @@ class C extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), I(this, "handleDropdownClick", e => {
+    super(...e), S(this, "handleDropdownClick", e => {
       e.stopPropagation();
       let {
         libraryApplication: t,
@@ -153,14 +153,14 @@ class C extends(r = Chunk473749.PureComponent) {
         let {
           default: e
         } = await n.e("53195").then(n.bind(n, 918306));
-        return n => (0, i.jsx)(e, A(T({}, n), {
+        return n => (0, i.jsx)(e, A(I({}, n), {
           libraryApplication: t,
           onPlay: this.handleClick
         }))
       }, {
         onClose: a
       })
-    }), I(this, "handleClick", () => {
+    }), S(this, "handleClick", () => {
       let {
         applicationId: e,
         libraryApplication: t,
@@ -182,8 +182,8 @@ function N(e) {
   let {
     applicationId: t,
     libraryApplication: n
-  } = e, r = (0, _.O)(), [a, o] = (0, l.Wu)([m.Z, h.Z, g.Z], () => [m.Z.isConnected(t) || h.Z.isLaunchable(t) || null != n && g.Z.isLaunchable(n.id, n.branchId), h.Z.launchingGames.has(t)], [t, n]), s = (0, l.e7)([p.ZP], () => new Set(p.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, l.e7)([g.Z], () => null != n ? g.Z.getState(n.id, n.branchId) : null, [n]);
-  return (0, i.jsx)(C, A(T({}, e), {
+  } = e, r = (0, p.O)(), [a, o] = (0, l.Wu)([h.Z, m.Z, g.Z], () => [h.Z.isConnected(t) || m.Z.isLaunchable(t) || null != n && g.Z.isLaunchable(n.id, n.branchId), m.Z.launchingGames.has(t)], [t, n]), s = (0, l.e7)([_.ZP], () => new Set(_.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, l.e7)([g.Z], () => null != n ? g.Z.getState(n.id, n.branchId) : null, [n]);
+  return (0, i.jsx)(C, A(I({}, e), {
     analyticsContext: r,
     isLaunchable: a,
     isLaunching: o,
@@ -191,7 +191,7 @@ function N(e) {
     dispatchState: c
   }))
 }
-I(C, "defaultProps", {
+S(C, "defaultProps", {
   fullWidth: false,
   size: Chunk755721.zx.Sizes.LARGE,
   tooltipPosition: "top",

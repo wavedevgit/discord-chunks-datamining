@@ -16,20 +16,20 @@ let s = e => {
     animationType: u,
     ticking: d,
     time: f,
-    hasPlayedThrough: _,
-    setHasPlayedThrough: p,
-    urlQueryString: h,
-    maxLoops: m,
+    hasPlayedThrough: p,
+    setHasPlayedThrough: _,
+    urlQueryString: m,
+    maxLoops: h,
     loopEnd: g,
     bannerAdjustment: E
   } = e, b = true;
-  if (d || (b = false), f < c.start && (b = false), !c.loop && f > c.duration + c.start && (b = false), u === i.y.ANIMATION_TYPE_PERSISTENT && !_ && null != m && f >= g && p(true), c.loop && true !== c.loopDelay && c.loopDelay > 0) {
+  if (d || (b = false), f < c.start && (b = false), !c.loop && f > c.duration + c.start && (b = false), u === i.y.ANIMATION_TYPE_PERSISTENT && !p && null != h && f >= g && _(true), c.loop && true !== c.loopDelay && c.loopDelay > 0) {
     let e = c.duration + c.loopDelay,
       t = Math.floor((f - c.start) / e);
-    f - c.start - t * e > c.duration && (u === i.y.ANIMATION_TYPE_INTERMITTENT && !_ && null != m && t >= m && p(true), b = false)
+    f - c.start - t * e > c.duration && (u === i.y.ANIMATION_TYPE_INTERMITTENT && !p && null != h && t >= h && _(true), b = false)
   }
   return b ? (0, r.jsx)("img", {
-    src: null != h ? "".concat(c.src, "?query=").concat(h) : c.src,
+    src: null != m ? "".concat(c.src, "?query=").concat(m) : c.src,
     className: o.effect,
     style: {
       top: (null != (s = null == (t = c.position) ? true : t.y) ? s : 0) - E,

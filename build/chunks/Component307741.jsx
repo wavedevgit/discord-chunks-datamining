@@ -55,7 +55,7 @@ function O(e) {
 function v(e) {
   let {
     application: t
-  } = e, n = null == t ? true : t.getIconURL(160, p.$k ? "webp" : "png");
+  } = e, n = null == t ? true : t.getIconURL(160, _.$k ? "webp" : "png");
   return (0, r.jsx)("div", {
     className: y.iconContainer,
     children: null != n && n.length > 0 ? (0, r.jsx)("img", {
@@ -76,12 +76,12 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   var t;
   let {
     application: n,
     detectedGame: a
-  } = e, o = i.useMemo(() => null == a ? true : a.genres.map(h.P3).join(", "), [a]), l = null != (t = a.name) ? t : null == n ? true : n.name;
+  } = e, o = i.useMemo(() => null == a ? true : a.genres.map(m.P3).join(", "), [a]), l = null != (t = a.name) ? t : null == n ? true : n.name;
   return (0, r.jsxs)("div", {
     className: y.headingContainer,
     children: [(0, r.jsx)(s.X6q, {
@@ -96,7 +96,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   var t;
   let {
     detectedGame: n,
@@ -130,10 +130,10 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     application: t
-  } = e, n = (0, l.e7)([_.Z], () => _.Z.getMute(t.id)), a = i.useMemo(() => n ? b.intl.string(b.t.tpvw4T) : b.intl.string(b.t["6EwEwp"]), [n]);
+  } = e, n = (0, l.e7)([p.Z], () => p.Z.getMute(t.id)), a = i.useMemo(() => n ? b.intl.string(b.t.tpvw4T) : b.intl.string(b.t["6EwEwp"]), [n]);
   return (0, r.jsxs)("div", {
     className: y.actionButtonsContainer,
     children: [(0, r.jsx)(c.u, {
@@ -177,7 +177,7 @@ function A(e) {
   } = e, l = (0, g.Z)({
     location: "MiniGameProfile",
     applicationId: t.id,
-    source: m.m1.MiniGameProfile,
+    source: h.m1.MiniGameProfile,
     trackEntryPointImpression: true,
     sourceUserId: true
   }, {}), c = i.useCallback(e => {
@@ -187,14 +187,14 @@ function A(e) {
     className: o()(y.container, a),
     children: [(0, r.jsx)(O, {
       detectedGame: n
-    }), (0, r.jsx)(S, {
+    }), (0, r.jsx)(T, {
       application: t
     }), (0, r.jsx)(v, {
       application: t
-    }), (0, r.jsx)(I, {
+    }), (0, r.jsx)(S, {
       application: t,
       detectedGame: n
-    }), (0, r.jsx)(T, {
+    }), (0, r.jsx)(I, {
       application: t,
       detectedGame: n,
       openFullGameProfile: c

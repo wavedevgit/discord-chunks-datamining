@@ -2,7 +2,7 @@
 /** chunk id: 435935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  k: () => I
+  k: () => S
 });
 var r, i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,15 +44,15 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +60,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -106,20 +106,20 @@ class v extends(r = Chunk473749.PureComponent) {
         style: c,
         wrap: d
       } = module,
-      _ = h(module, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]),
-      m = f({
+      p = m(module, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]),
+      h = f({
         style: f({
           flexGrow: i,
           flexShrink: r,
           flexBasis: Chunk120356
         }, Chunk512250),
         className: require === Chunk156843.flexChild ? require : l()(Chunk156843.flexChild, require)
-      }, _);
+      }, p);
     if (!d && "string" != typeof exports && 1 === Chunk473749.Children.count(exports)) {
       let e = Chunk473749.Children.only(exports);
-      return m.style = f({}, m.style, module.props.style), m.className = l()(module.props.className, require), Chunk473749.cloneElement(module, m)
+      return h.style = f({}, h.style, module.props.style), h.className = l()(module.props.className, require), Chunk473749.cloneElement(module, h)
     }
-    return (0, Chunk54381.jsx)("div", p(f({}, m), {
+    return (0, Chunk54381.jsx)("div", _(f({}, h), {
       children: exports
     }))
   }
@@ -129,7 +129,7 @@ d(v, "defaultProps", {
   style: {},
   wrap: false
 });
-class I extends(i = Chunk473749.PureComponent) {
+class S extends(i = Chunk473749.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -141,17 +141,17 @@ class I extends(i = Chunk473749.PureComponent) {
         wrap: s,
         shrink: c,
         grow: d,
-        basis: _,
-        style: m,
+        basis: p,
+        style: h,
         gutter: g
       } = module,
-      E = h(module, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
+      E = m(module, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
       b = f({
         flexShrink: Chunk512250,
         flexGrow: d,
-        flexBasis: _
-      }, m);
-    return (0, Chunk54381.jsx)("div", p(f({
+        flexBasis: p
+      }, h);
+    return (0, Chunk54381.jsx)("div", _(f({
       style: b,
       className: l()(Chunk156843.flex, r, i, Chunk473749, Chunk120356, g, require)
     }, E), {
@@ -159,7 +159,7 @@ class I extends(i = Chunk473749.PureComponent) {
     }))
   }
 }
-d(I, "Child", v), d(I, "Direction", g), d(I, "Align", y), d(I, "Justify", E), d(I, "Wrap", b), d(I, "Gutter", O), d(I, "defaultProps", {
+d(S, "Child", v), d(S, "Direction", g), d(S, "Align", y), d(S, "Justify", E), d(S, "Wrap", b), d(S, "Gutter", O), d(S, "defaultProps", {
   direction: g.HORIZONTAL,
   justify: E.START,
   align: y.STRETCH,

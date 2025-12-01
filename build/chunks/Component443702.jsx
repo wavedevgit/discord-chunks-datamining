@@ -2,7 +2,7 @@
 /** chunk id: 443702, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -52,7 +52,7 @@ function C(e) {
 
 function N(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,18 +60,18 @@ function N(e, t) {
   return i
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let P = () => (0, Chunk54381.jsx)("div", {
+let R = () => (0, Chunk54381.jsx)("div", {
   className: Chunk61365.syncing,
   children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
 });
-class D extends Chunk473749.PureComponent {
+class w extends Chunk473749.PureComponent {
   componentDidMount() {
     Chunk570140.Z.wait(() => {
       Chunk355467.tZ(), Chunk355467.jg()
@@ -91,10 +91,10 @@ class D extends Chunk473749.PureComponent {
       locale: a,
       premiumSubscription: s,
       isRemovingPaymentSource: l,
-      isUpdatingPaymentSource: p
+      isUpdatingPaymentSource: _
     } = this.props;
     return exports ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsxs)("div", {
-      children: [module && 0 === Object.keys(require).length ? (0, Chunk54381.jsx)(P, {}) : (0, Chunk54381.jsx)(Chunk921801.F, {
+      children: [module && 0 === Object.keys(require).length ? (0, Chunk54381.jsx)(R, {}) : (0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.BILLING_PAYMENT_METHODS,
         children: (0, Chunk54381.jsx)(Chunk390954.Z, {
           paymentSources: require,
@@ -129,7 +129,7 @@ class D extends Chunk473749.PureComponent {
   }
 }
 
-function w() {
+function D() {
   let e = (0, Chunk442837.cj)([Chunk706454.default, Chunk351402.Z, Chunk853872.Z, Chunk594174.default, Chunk246946.Z, Chunk78839.Z], () => {
     let e = Chunk78839.Z.getPremiumTypeSubscription(),
       t = Chunk594174.default.getCurrentUser();
@@ -149,9 +149,9 @@ function w() {
       isUpdatingPaymentSource: Chunk351402.Z.isUpdatingPaymentSource
     }
   });
-  if (!module.shouldRenderBillingSettings) return (0, Chunk54381.jsx)(P, {});
+  if (!module.shouldRenderBillingSettings) return (0, Chunk54381.jsx)(R, {});
   let {
     shouldRenderBillingSettings: t
   } = module, n = N(module, ["shouldRenderBillingSettings"]);
-  return (0, Chunk54381.jsx)(D, C({}, require))
+  return (0, Chunk54381.jsx)(w, C({}, require))
 }

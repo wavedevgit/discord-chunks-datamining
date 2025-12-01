@@ -8,18 +8,18 @@ var Chunk425561 = require("./425561.js"),
 module.exports = function(e, t, n, l, c, u) {
   var d = n & o,
     f = e.length,
-    _ = t.length;
-  if (f != _ && !(d && _ > f)) returnfalse;
-  var p = u.get(e),
-    h = u.get(t);
-  if (p && h) return p == t && h == e;
-  var m = false,
+    p = t.length;
+  if (f != p && !(d && p > f)) returnfalse;
+  var _ = u.get(e),
+    m = u.get(t);
+  if (_ && m) return _ == t && m == e;
+  var h = false,
     g = true,
     E = n & s ? new r : true;
-  for (u.set(e, t), u.set(t, e); ++m < f;) {
-    var b = e[m],
-      y = t[m];
-    if (l) var O = d ? l(y, b, m, t, e, u) : l(b, y, m, e, t, u);
+  for (u.set(e, t), u.set(t, e); ++h < f;) {
+    var b = e[h],
+      y = t[h];
+    if (l) var O = d ? l(y, b, h, t, e, u) : l(b, y, h, e, t, u);
     if (true !== O) {
       if (O) continue;
       g = false;

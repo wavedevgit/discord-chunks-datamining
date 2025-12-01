@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   s: () => f,
-  y: () => _
+  y: () => p
 }), require("./368063.js"), require("./358797.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk889711 = require("./889711.js"),
@@ -58,24 +58,24 @@ function c(e) {
       }
     },
     f = getComputedStyle(l),
-    _ = [{
+    p = [{
       inlineSize: d.width,
       blockSize: d.height
     }],
-    p = [{
+    _ = [{
       inlineSize: d.width - (parseFloat(f.paddingLeft) + parseFloat(f.paddingRight)),
       blockSize: d.height - (parseFloat(f.paddingTop) + parseFloat(f.paddingBottom))
     }],
-    h = null != (s = window.devicePixelRatio) ? s : 1,
-    m = [{
-      inlineSize: p[0].inlineSize * h,
-      blockSize: p[0].blockSize * h
+    m = null != (s = window.devicePixelRatio) ? s : 1,
+    h = [{
+      inlineSize: _[0].inlineSize * m,
+      blockSize: _[0].blockSize * m
     }];
   return {
     target: l,
-    borderBoxSize: _,
-    contentBoxSize: p,
-    devicePixelContentBoxSize: m,
+    borderBoxSize: p,
+    contentBoxSize: _,
+    devicePixelContentBoxSize: h,
     contentRect: d
   }
 }
@@ -126,7 +126,7 @@ function f(e, t) {
   }, [s, o, t, e, ...n])
 }
 
-function _(e) {
+function p(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     {

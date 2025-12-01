@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk562618 = require("./562618.jsx"),
   Chunk254477 = require("./254477.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,20 +26,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -78,32 +78,32 @@ function y(e) {
   var t, {
       title: n,
       body: a,
-      badge: p,
-      graphic: m,
+      badge: _,
+      graphic: h,
       size: b = "md",
       actions: y,
       textLink: O,
       gradientColor: v,
-      onRequestClose: I,
-      popoverRef: T,
-      position: S,
+      onRequestClose: S,
+      popoverRef: I,
+      position: T,
       caretConfig: A,
       scrollBehavior: C
     } = e,
     N = E(e, ["title", "body", "badge", "graphic", "size", "actions", "textLink", "gradientColor", "onRequestClose", "popoverRef", "position", "caretConfig", "scrollBehavior"]);
-  let R = i.useCallback((e, t) => {
-      null == I || I(t)
-    }, [I]),
-    P = i.useCallback(() => {
-      null == I || I("user:explicit")
-    }, [I]),
-    D = h({
+  let P = i.useCallback((e, t) => {
+      null == S || S(t)
+    }, [S]),
+    R = i.useCallback(() => {
+      null == S || S("user:explicit")
+    }, [S]),
+    w = m({
       targetElementRef: N.targetElementRef,
       shouldShow: N.shouldShow,
       hasVideo: N.hasVideo,
-      position: S,
+      position: T,
       caretConfig: A,
-      onRequestClose: R,
+      onRequestClose: P,
       gradientColor: v,
       scrollBehavior: C
     }, "edge" === N.alignmentStrategy ? {
@@ -112,24 +112,24 @@ function y(e) {
     } : {
       alignmentStrategy: "trigger-center"
     });
-  return (0, r.jsx)(l.m, g(h({}, D), {
+  return (0, r.jsx)(l.m, g(m({}, w), {
     children: (0, r.jsxs)("div", {
-      ref: T,
+      ref: I,
       "data-mana-component": "popover",
       children: [(0, r.jsx)(d.u, {
-        onClick: P,
+        onClick: R,
         variant: null != v ? "color-mix" : true
-      }), null != m && (0, r.jsx)("div", {
-        className: o()(_.graphic, {
-          [_["graphic--".concat(b)]]: null != b
+      }), null != h && (0, r.jsx)("div", {
+        className: o()(p.graphic, {
+          [p["graphic--".concat(b)]]: null != b
         }),
-        children: (0, r.jsx)(s.zsu, g(h({}, m), {
-          aspectRatio: null != (t = m.aspectRatio) ? t : "sm" === b ? "2/1" : "16/9"
+        children: (0, r.jsx)(s.zsu, g(m({}, h), {
+          aspectRatio: null != (t = h.aspectRatio) ? t : "sm" === b ? "2/1" : "16/9"
         }))
       }), (0, r.jsx)(f.Y, {
         title: n,
         body: a,
-        badge: p,
+        badge: _,
         textLink: O
       }), null != y && y.length > 0 ? (0, r.jsx)(c.k, {
         actions: y

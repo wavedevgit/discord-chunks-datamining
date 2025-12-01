@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk939350 = require("./939350.js"),
   Chunk334405 = require("./334405.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -59,8 +59,8 @@ function g(e) {
     color: t = "default",
     label: n,
     checked: a,
-    subtext: _,
-    disabled: h,
+    subtext: p,
+    disabled: m,
     isFocused: g,
     menuItemProps: E,
     action: b,
@@ -68,37 +68,37 @@ function g(e) {
     focusedClassName: O
   } = e, {
     onInteraction: v
-  } = i.useContext(c.p), I = i.useRef(null);
+  } = i.useContext(c.p), S = i.useRef(null);
   i.useEffect(() => {
-    g && (0, u.F)(I)
+    g && (0, u.F)(S)
   }, [g]);
-  let T = i.useCallback(e => {
+  let I = i.useCallback(e => {
     b(e), null == v || v({
       type: c.U.CHECKBOX
     })
   }, [b, v]);
-  return (0, r.jsxs)(s.P3F, m(p({
-    innerRef: I,
+  return (0, r.jsxs)(s.P3F, h(_({
+    innerRef: S,
     className: o()(f.item, f.checkboxContainer, f.labelContainer, d._e[t], y, {
-      [f.disabled]: h,
+      [f.disabled]: m,
       [f.focused]: g,
       [null != O ? O : ""]: g
     }),
-    onClick: h ? true : T
+    onClick: m ? true : I
   }, E), {
     "aria-checked": a,
-    "aria-disabled": h,
+    "aria-disabled": m,
     children: [(0, r.jsxs)("div", {
       className: f.label,
-      children: [(0, l.I)(n, e), null != _ && (0, r.jsx)("div", {
+      children: [(0, l.I)(n, e), null != p && (0, r.jsx)("div", {
         className: f.subtext,
-        children: _
+        children: p
       })]
     }), (0, r.jsx)("div", {
       className: f.iconContainer,
       children: (0, r.jsx)(s.FZ5, {
         checked: a,
-        disabled: h,
+        disabled: m,
         size: 20
       })
     })]

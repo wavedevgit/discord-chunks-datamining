@@ -2,7 +2,7 @@
 /** chunk id: 784238, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -36,9 +36,9 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -46,24 +46,24 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = e => {
+let m = e => {
   var {
     textOptions: t,
     subscriptionTier: n,
     hasActivePromotion: d = false,
-    isPersistentCTA: p = false,
-    useShorterCTA: h = false,
-    showGradient: m,
+    isPersistentCTA: _ = false,
+    useShorterCTA: m = false,
+    showGradient: h,
     confirmationFooter: g,
     color: E
-  } = e, b = _(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "color"]);
+  } = e, b = p(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "color"]);
   let y = (0, o.ZP)(),
     {
       buttonText: O,
@@ -71,22 +71,22 @@ let h = e => {
     } = (0, c.G)({
       hasActivePromotion: d,
       subscriptionTier: n,
-      useShorterCTA: h,
-      isPersistentCTA: p
+      useShorterCTA: m,
+      isPersistentCTA: _
     }),
-    I = (0, s.N)(),
-    T = null == I ? true : I.subscription_trial,
-    S = null != T && v === T.sku_id,
+    S = (0, s.N)(),
+    I = null == S ? true : S.subscription_trial,
+    T = null != I && v === I.sku_id,
     A = null != E ? E : (0, i.wj)(y) ? a.Tt.BRAND_INVERTED : a.Tt.BRAND;
   return (0, r.jsx)(l.Z, f({
     color: A,
     textOptions: f({
       textOverride: O,
-      textClassName: S ? u.freeTrialText : true
+      textClassName: T ? u.freeTrialText : true
     }, t),
     onlyShineOnHover: true,
     subscriptionTier: v,
-    showGradient: m,
+    showGradient: h,
     confirmationFooter: g
   }, b))
 }

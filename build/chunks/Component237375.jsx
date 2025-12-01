@@ -22,7 +22,7 @@ let g = 200;
 
 function E(e, t, n) {
   return (0, r.jsx)(f.Z, {
-    className: m.option,
+    className: h.option,
     name: e.displayName,
     state: t,
     onClick: n
@@ -54,36 +54,36 @@ function b(e) {
       })
     }
   }, [t.options, n]), d = (0, r.jsx)("div", {
-    className: m.optionalNames,
+    className: h.optionalNames,
     children: u.map(e => (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       children: e.displayName
     }, e.name))
-  }), f = o.map(e => E(e, null == n ? true : n[e.name], a)), _ = s.length > 0 ? (0, r.jsxs)(r.Fragment, {
+  }), f = o.map(e => E(e, null == n ? true : n[e.name], a)), p = s.length > 0 ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Heading, {
-      className: m.optionalHeader,
+      className: h.optionalHeader,
       variant: "heading-deprecated-12/semibold",
-      children: h.intl.string(h.t["5C107K"])
+      children: m.intl.string(m.t["5C107K"])
     }), s.map(e => E(e, null == n ? true : n[e.name], a))]
-  }) : null, p = u.length > 0 ? (0, r.jsx)(l.u, {
+  }) : null, _ = u.length > 0 ? (0, r.jsx)(l.u, {
     __unsupportedReactNodeAsText: d,
     "aria-label": false,
     delay: g,
     children: (0, r.jsx)(c.Text, {
-      className: m.optionalCount,
+      className: h.optionalCount,
       color: "text-muted",
       variant: "text-sm/normal",
-      children: 0 === s.length ? h.intl.formatToPlainString(h.t["0mI72g"], {
+      children: 0 === s.length ? m.intl.formatToPlainString(m.t["0mI72g"], {
         count: u.length
-      }) : h.intl.formatToPlainString(h.t.BP8N0K, {
+      }) : m.intl.formatToPlainString(m.t.BP8N0K, {
         count: u.length
       })
     })
   }) : null;
   return (0, r.jsxs)(r.Fragment, {
-    children: [f, null != _ || null != p ? (0, r.jsxs)("div", {
-      className: m.optionals,
-      children: [_, p]
+    children: [f, null != p || null != _ ? (0, r.jsxs)("div", {
+      className: h.optionals,
+      children: [p, _]
     }) : null]
   })
 }
@@ -93,53 +93,53 @@ function y(e) {
   let l, {
       command: c,
       activeOptionName: f,
-      channel: h,
+      channel: m,
       showOptions: g,
       showImage: E,
       optionStates: y,
       onOptionClick: O,
       section: v,
-      isSelectable: I = true
+      isSelectable: S = true
     } = e,
-    T = i.useMemo(() => {
+    I = i.useMemo(() => {
       var e;
       return null == c || null == (e = c.options) ? true : e.find(e => e.name === f)
     }, [f, c]),
-    S = null != f ? null == y ? true : y[f] : null;
-  l = null != S && (null == (t = S.lastValidationResult) ? true : t.success) === false ? null != (n = S.lastValidationResult.error) ? n : "" : null;
-  let A = E && null != v ? (0, _.ky)(v) : null,
+    T = null != f ? null == y ? true : y[f] : null;
+  l = null != T && (null == (t = T.lastValidationResult) ? true : t.success) === false ? null != (n = T.lastValidationResult.error) ? n : "" : null;
+  let A = E && null != v ? (0, p.ky)(v) : null,
     C = (0, s.e7)([d.ZP], () => {
-      if (null != h.guild_id && (null == v ? true : v.botId) != null) {
+      if (null != m.guild_id && (null == v ? true : v.botId) != null) {
         var e;
-        return null == (e = d.ZP.getMember(h.guild_id, v.botId)) ? true : e.nick
+        return null == (e = d.ZP.getMember(m.guild_id, v.botId)) ? true : e.nick
       }
     });
   return (0, r.jsxs)("div", {
-    className: o()(m.wrapper, I ? null : m.disabled),
+    className: o()(h.wrapper, S ? null : h.disabled),
     children: [null != A ? (0, r.jsx)(A, {
-      className: m.image,
-      channel: h,
+      className: h.image,
+      channel: m,
       section: v,
       width: 32,
       height: 32
     }) : null, (0, r.jsxs)("div", {
-      className: m.infoWrapper,
+      className: h.infoWrapper,
       children: [(0, r.jsxs)("div", {
-        className: m.usageWrapper,
+        className: h.usageWrapper,
         children: [(0, r.jsx)(u.BR, {
-          className: m.title,
-          children: p.GI + c.displayName
+          className: h.title,
+          children: _.GI + c.displayName
         }), g ? (0, r.jsx)(b, {
           command: c,
           optionStates: y,
           onOptionClick: O
         }) : null]
       }), (0, r.jsx)(u.wL, {
-        className: o()(m.description, null != l ? m.error : null),
-        children: null != (a = null != l ? l : null == T ? true : T.displayDescription) ? a : c.displayDescription
+        className: o()(h.description, null != l ? h.error : null),
+        children: null != (a = null != l ? l : null == I ? true : I.displayDescription) ? a : c.displayDescription
       })]
     }), (0, r.jsx)(u.dY, {
-      className: m.source,
+      className: h.source,
       children: null != C ? C : null == v ? true : v.name
     })]
   })

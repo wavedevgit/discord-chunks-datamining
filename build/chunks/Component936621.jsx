@@ -2,7 +2,7 @@
 /** chunk id: 936621, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => h
+  F: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,9 +50,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,14 +60,14 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class h extends Chunk473749.Component {
+class m extends Chunk473749.Component {
   getDefaultAnimProps(e, t) {
     return {
       duration: null != e ? e : 300,
@@ -101,7 +101,7 @@ class h extends Chunk473749.Component {
       {
         children: t
       } = module,
-      n = _(module, ["children"]);
+      n = p(module, ["children"]);
     return (0, Chunk54381.jsx)("div", f(u({}, require), {
       ref: this.ref,
       children: exports

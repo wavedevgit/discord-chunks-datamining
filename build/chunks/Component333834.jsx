@@ -84,7 +84,7 @@ function A() {
           color: Chunk481060.TVs.colors.BACKGROUND_MOD_STRONG
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
-          color: Chunk981631.tPk.TEXT_MUTED,
+          color: "text-muted",
           style: {
             textAlign: "center"
           },
@@ -197,10 +197,10 @@ function R(e) {
       })), e
     }, [t, n]),
     q = 0 === t.length && 0 === n.length && B,
-    X = 0 === t.length && 0 === n.length && !F && U,
-    Q = i.useMemo(() => {
+    Q = 0 === t.length && 0 === n.length && !F && U,
+    X = i.useMemo(() => {
       let e = [];
-      return X ? e.push(a()) : q ? e.push((0, r.jsx)(A, {}, "empty-state")) : R ? (e.push(...n.map(e => p([e], true))), e.push(...t.map(e => p([e], false)))) : s().each(T, t => {
+      return Q ? e.push(a()) : q ? e.push((0, r.jsx)(A, {}, "empty-state")) : R ? (e.push(...n.map(e => p([e], true))), e.push(...t.map(e => p([e], false)))) : s().each(T, t => {
         0 !== Y[t].length && (e.push((0, r.jsx)(w, {
           group: t,
           isOpen: H[t],
@@ -214,13 +214,13 @@ function R(e) {
           }
         }, t)), H[t] && e.push(...Y[t].map(e => p(e, t === E.KZ.UNREAD))))
       }), e
-    }, [t, n, a, H, W, Y, R, p, q, X, D]),
-    J = Q[Q.length - 1],
+    }, [t, n, a, H, W, Y, R, p, q, Q, D]),
+    J = X[X.length - 1],
     $ = i.isValidElement(J) && J.type === w,
     ee = (0, x.d)(e => e.setInboxReadState);
   i.useEffect(() => {
-    X || ee(0 === Y.UNREAD.length)
-  }, [Y, X, ee]);
+    Q || ee(0 === Y.UNREAD.length)
+  }, [Y, Q, ee]);
   let et = (t.length > 0 || n.length > 0) && null != l && U;
   ! function(e) {
     let {
@@ -243,8 +243,8 @@ function R(e) {
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
   }, [H, Y]);
   i.useEffect(() => {
-    X || U || 0 >= en() || (!$ || z) && (null == l || l(E.X.FILL_SCROLLER))
-  }, [en, l, X, U, $, z]);
+    Q || U || 0 >= en() || (!$ || z) && (null == l || l(E.X.FILL_SCROLLER))
+  }, [en, l, Q, U, $, z]);
   let er = i.useMemo(() => {
     let e = Math.min(Math.max(2, en()), 20);
     return (0, r.jsx)(C.Z, {
@@ -312,7 +312,7 @@ function R(e) {
             onScroll: K,
             fade: true
           }, l), n = n = {
-            children: [Q, et && !$ ? er : null]
+            children: [X, et && !$ ? er : null]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

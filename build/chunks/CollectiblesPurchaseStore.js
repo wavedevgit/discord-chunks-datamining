@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a;
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var o, Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
@@ -19,19 +19,19 @@ function u(e, t, n) {
 }
 let d = new Map,
   f = d,
-  _ = false,
   p = false,
-  h = e => {
-    _ = true, i = true
-  },
+  _ = false,
   m = e => {
+    p = true, i = true
+  },
+  h = e => {
     let {
       error: t
     } = e;
-    f = d, _ = false, i = t, p = true
+    f = d, p = false, i = t, _ = true
   },
   g = e => {
-    0 === e.purchases.length ? f = d : (0, s.isEqual)([...f.values()], e.purchases) || (f = new Map(e.purchases.map(e => [e.skuId, e]))), p = true, _ = false, i = true
+    0 === e.purchases.length ? f = d : (0, s.isEqual)([...f.values()], e.purchases) || (f = new Map(e.purchases.map(e => [e.skuId, e]))), _ = true, p = false, i = true
   },
   E = e => {
     r = e.skuId, a = true
@@ -47,11 +47,11 @@ let d = new Map,
     r = n, a = t
   },
   O = e => {
-    f = d, _ = false, r = true, i = true, a = true, p = false
+    f = d, p = false, r = true, i = true, a = true, _ = false
   };
 class v extends(o = Chunk442837.ZP.Store) {
   get isFetching() {
-    return _
+    return p
   }
   get isClaiming() {
     return r
@@ -66,7 +66,7 @@ class v extends(o = Chunk442837.ZP.Store) {
     return a
   }
   get hasPreviouslyFetched() {
-    return p
+    return _
   }
   getPurchase(e) {
     return null != e ? f.get(e) : true
@@ -76,10 +76,10 @@ class v extends(o = Chunk442837.ZP.Store) {
   }
 }
 u(v, "displayName", "CollectiblesPurchaseStore");
-let I = new v(Chunk570140.Z, {
-  COLLECTIBLES_PURCHASES_FETCH: h,
+let S = new v(Chunk570140.Z, {
+  COLLECTIBLES_PURCHASES_FETCH: m,
   COLLECTIBLES_PURCHASES_FETCH_SUCCESS: g,
-  COLLECTIBLES_PURCHASES_FETCH_FAILURE: m,
+  COLLECTIBLES_PURCHASES_FETCH_FAILURE: h,
   COLLECTIBLES_CLAIM: E,
   COLLECTIBLES_CLAIM_SUCCESS: b,
   COLLECTIBLES_CLAIM_FAILURE: y,

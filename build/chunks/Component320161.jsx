@@ -2,7 +2,7 @@
 /** chunk id: 320161, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,64 +76,64 @@ let b = Chunk70956.Z.Millis.SECOND,
   O = Chunk70956.Z.Millis.HALF_SECOND,
   v = [() => Chunk388032.intl.string(Chunk388032.t.MSaeTe), () => Chunk388032.intl.string(Chunk388032.t.UmrCw7), () => Chunk388032.intl.string(Chunk388032.t.gKE0Jq), () => Chunk388032.intl.string(Chunk388032.t["4DSKbi"]), () => Chunk388032.intl.string(Chunk388032.t["+8ENdT"]), () => Chunk388032.intl.string(Chunk388032.t.GlWHv8), () => Chunk388032.intl.string(Chunk388032.t.hIzxU9), () => Chunk388032.intl.string(Chunk388032.t["26uMPL"]), () => Chunk388032.intl.string(Chunk388032.t.uFs7R2), () => Chunk388032.intl.string(Chunk388032.t.bLXdcY), () => Chunk388032.intl.string(Chunk388032.t.gPg9fS)];
 
-function I(e) {
+function S(e) {
   let {
     text: t,
     copyValue: n,
     children: u,
     onCopy: f,
-    "aria-label": _,
-    delay: h = O,
+    "aria-label": p,
+    delay: m = O,
     dataMeticulousIgnore: E
-  } = e, [I, T] = i.useState(0), [S, A] = i.useState(false), [C, N] = i.useState(false), [R] = i.useState(() => new o.V7), [P] = i.useState(() => new o.V7);
+  } = e, [S, I] = i.useState(0), [T, A] = i.useState(false), [C, N] = i.useState(false), [P] = i.useState(() => new o.V7), [R] = i.useState(() => new o.V7);
   if (i.useEffect(() => () => {
-      R.stop(), P.stop()
-    }, [R, P]), !c.wS) return (0, r.jsx)(r.Fragment, {
+      P.stop(), R.stop()
+    }, [P, R]), !c.wS) return (0, r.jsx)(r.Fragment, {
     children: u({})
   });
-  let D = I >= v.length - 1,
-    w = D ? s.r6K.RED : s.r6K.GREEN,
-    L = S ? w : s.r6K.PRIMARY,
-    x = () => {
+  let w = S >= v.length - 1,
+    D = w ? s.r6K.RED : s.r6K.GREEN,
+    x = T ? D : s.r6K.PRIMARY,
+    L = () => {
       var e;
-      if (!S) return t;
-      let n = (0, a.clamp)(I - 1, 0, v.length - 1),
+      if (!T) return t;
+      let n = (0, a.clamp)(S - 1, 0, v.length - 1),
         i = null != (e = v[n]) ? e : v[0];
       return (0, r.jsx)(s.UkV, {
-        isShaking: D,
+        isShaking: w,
         children: i()
       })
     },
-    M = (e, t) => {
-      !C && S && t.phase === d.UkZ.LEAVE && A(false)
+    j = (e, t) => {
+      !C && T && t.phase === d.UkZ.LEAVE && A(false)
     },
-    k = () => {
-      null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), C || T(I + 1), N(true), A(true), R.start(b, () => N(false)), P.start(y, () => T(0))
+    M = () => {
+      null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), C || I(S + 1), N(true), A(true), P.start(b, () => N(false)), R.start(y, () => I(0))
     };
   return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
-    text: x(),
-    delay: h,
-    "aria-label": _,
+    text: L(),
+    delay: m,
+    "aria-label": p,
     dataMeticulousIgnore: E,
-    color: L,
+    color: x,
     forceOpen: C,
-    onAnimationRest: M,
+    onAnimationRest: j,
     children: e => {
       var {
         onClick: t,
         onMouseEnter: n
       } = e;
-      return u(m(p({}, g(e, ["onClick", "onMouseEnter"])), {
+      return u(h(_({}, g(e, ["onClick", "onMouseEnter"])), {
         onClick: () => {
-          null == t || t(), k()
+          null == t || t(), M()
         },
         onMouseEnter: () => {
-          if (!S) {
+          if (!T) {
             null == n || n();
             return
           }
-          R.stop(), N(false)
+          P.stop(), N(false)
         }
       }))
     }

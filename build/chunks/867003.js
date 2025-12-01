@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   I: () => O,
-  L0: () => m,
+  L0: () => h,
   Rr: () => E,
   nH: () => y,
   tp: () => g,
@@ -19,16 +19,16 @@ var Chunk704215 = require("./704215.js"),
   Chunk982863 = require("./982863.js"),
   Chunk987562 = require("./987562.js"),
   Chunk981631 = require("./981631.js");
-let _ = 3 * Chunk70956.Z.Millis.DAY,
-  p = Chunk70956.Z.Millis.WEEK,
-  h = Chunk70956.Z.Millis.DAYS_30,
-  m = () => {
+let p = 3 * Chunk70956.Z.Millis.DAY,
+  _ = Chunk70956.Z.Millis.WEEK,
+  m = Chunk70956.Z.Millis.DAYS_30,
+  h = () => {
     if (!(0, Chunk869031.nZ)("block_user_feedback_utils")) returnfalse;
     let e = Chunk699516.Z.getSinces();
     return Object.keys(module).some(t => {
       let n = t,
         r = Date.now() - Date.parse(e[n]);
-      return a.Z.isBlocked(n) && r > p && r < h
+      return a.Z.isBlocked(n) && r > _ && r < m
     })
   },
   g = (e, t, n, r) => {
@@ -51,12 +51,12 @@ let _ = 3 * Chunk70956.Z.Millis.DAY,
       cooldownDurationMs: Chunk987562.pv
     });
     if (require) returnfalse;
-    let o = exports ? _ : p,
+    let o = exports ? p : _,
       s = Chunk711758.Z.getIgnoreTimestamps();
     return Object.keys(Chunk70956).some(e => {
       let t = e,
         n = Date.now() - Number(s[t]);
-      return a.Z.isIgnored(t) && n > o && n < h
+      return a.Z.isIgnored(t) && n > o && n < m
     })
   },
   b = (e, t, n, r) => {

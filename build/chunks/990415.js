@@ -2,7 +2,7 @@
 /** chunk id: 990415, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  WZ: () => _,
+  WZ: () => p,
   d0: () => d,
   nh: () => u,
   uR: () => f,
@@ -72,7 +72,7 @@ function d(e) {
 }
 let f = false;
 
-function _(e) {
+function p(e) {
   for (; e && !(0, a.E)(e);) e = e.parentElement;
   let t = (0, o.kR)(e),
     n = t.document.activeElement;
@@ -93,8 +93,8 @@ function _(e) {
     };
   t.addEventListener("blur", i, true), t.addEventListener("focusout", l, true), t.addEventListener("focusin", u, true), t.addEventListener("focus", c, true);
   let d = () => {
-      cancelAnimationFrame(_), t.removeEventListener("blur", i, true), t.removeEventListener("focusout", l, true), t.removeEventListener("focusin", u, true), t.removeEventListener("focus", c, true), f = false, r = false
+      cancelAnimationFrame(p), t.removeEventListener("blur", i, true), t.removeEventListener("focusout", l, true), t.removeEventListener("focusin", u, true), t.removeEventListener("focus", c, true), f = false, r = false
     },
-    _ = requestAnimationFrame(d);
+    p = requestAnimationFrame(d);
   return d
 }

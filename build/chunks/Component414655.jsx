@@ -138,7 +138,7 @@ function k(e) {
       analyticsLocations: N,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })
-  }, [N]), q = i.useCallback(() => {
+  }, [N]), V = i.useCallback(() => {
     (0, o.pT)(), (0, m.Z)({
       guildId: (0, g.ac)()
     })
@@ -171,7 +171,7 @@ function k(e) {
           size: "sm",
           icon: s.EOn,
           text: G === S.t9 ? E.intl.string(E.t["kq/75v"]) : E.intl.string(E.t.apFNLU),
-          onClick: q
+          onClick: V
         })]
       })]
     })
@@ -222,13 +222,13 @@ function k(e) {
         isSocialLayerStorefrontEnabled: U,
         isWishlistPublic: L,
         handleOpenShop: K,
-        handleOpenGameShop: q,
+        handleOpenGameShop: V,
         handleToggleWishlistVisibility: z,
         socialLayerStorefrontApplicationId: G
       }) : (0, r.jsx)(C, {
         isSocialLayerStorefrontEnabled: U,
         handleOpenShop: K,
-        handleOpenGameShop: q
+        handleOpenGameShop: V
       })]
     }), (0, r.jsx)(_.Z, {
       items: B.items,

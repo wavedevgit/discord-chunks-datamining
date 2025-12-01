@@ -2,9 +2,9 @@
 /** chunk id: 874748, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BC: () => m,
-  LR: () => p,
-  ku: () => _
+  BC: () => h,
+  LR: () => _,
+  ku: () => p
 }), require("./953529.js"), require("./997841.js");
 var Chunk830121 = require("./830121.js"),
   Chunk754688 = require("./754688.js"),
@@ -17,13 +17,13 @@ var Chunk830121 = require("./830121.js"),
   Chunk388032 = require("./388032.jsx");
 let f = 40;
 
-function _(e) {
+function p(e) {
   var t, n, r, i, a;
   let {
     mediaPostEmbedData: c,
-    guild: _,
-    parentChannel: p,
-    postThread: m,
+    guild: p,
+    parentChannel: _,
+    postThread: h,
     user: g,
     selectedGuildId: E,
     canAccess: b = false
@@ -32,15 +32,15 @@ function _(e) {
   let y = (0, l.EY)(c.thumbnail),
     O = !b && c.has_media_attachment,
     v = b ? d.intl.string(d.t.UsZEBI) : d.intl.string(d.t.ReFzYZ),
-    I = null != g ? s.ZP.getName(c.guild_id, c.channel_id, g) : true,
-    T = null == g ? true : g.getAvatarURL(null == _ ? true : _.id, f);
-  (null == T || E !== c.guild_id) && (T = o.ZP.getGuildIconURL({
+    S = null != g ? s.ZP.getName(c.guild_id, c.channel_id, g) : true,
+    I = null == g ? true : g.getAvatarURL(null == p ? true : p.id, f);
+  (null == I || E !== c.guild_id) && (I = o.ZP.getGuildIconURL({
     id: c.guild_id,
     icon: c.guild_icon,
     size: f,
     canAnimate: false
   }));
-  let S = h(c.thumbnail) && !O,
+  let T = m(c.thumbnail) && !O,
     A = (null == (t = c.thumbnail) ? true : t.filename) != null && (null == (r = c.thumbnail) || null == (n = r.filename) ? true : n.startsWith(u._j));
   return {
     title: null != (i = c.title) ? i : "",
@@ -50,17 +50,17 @@ function _(e) {
     coverImageOverlayText: O ? d.intl.string(d.t.Yonlia) : true,
     parentChannelId: c.parent_channel_id,
     threadId: c.channel_id,
-    postThread: m,
+    postThread: h,
     messageId: c.message_id,
     canAccess: b,
     guildId: c.guild_id,
-    guildName: null != (a = null == _ ? true : _.name) ? a : c.guild_name,
+    guildName: null != (a = null == p ? true : p.name) ? a : c.guild_name,
     authorId: null == c ? true : c.author_id,
-    authorName: I,
-    channelName: null == p ? true : p.name,
-    avatarUrl: T,
+    authorName: S,
+    channelName: null == _ ? true : _.name,
+    avatarUrl: I,
     shouldShowBlurredThumbnailImage: O,
-    shouldContainMediaWithBackground: S,
+    shouldContainMediaWithBackground: T,
     shouldSpoiler: A,
     obscureAwaitingScan: false,
     flags: c.flags,
@@ -68,7 +68,7 @@ function _(e) {
   }
 }
 
-function p(e) {
+function _(e) {
   if (null == e) return;
   let t = (0, r.FO)(e);
   if (null == t) return;
@@ -76,7 +76,7 @@ function p(e) {
   if (null != n) return (0, i.Qj)(n)
 }
 
-function h(e) {
+function m(e) {
   if (null == e) returnfalse;
   let {
     height: t,
@@ -85,7 +85,7 @@ function h(e) {
   return null != t && null != n && t >= n
 }
 
-function m(e, t) {
+function h(e, t) {
   let n = a.Z.getGuild(e);
   if (null == n || null == t) returnfalse;
   let r = n.features.has(c.GuildFeatures.CREATOR_MONETIZABLE) || n.features.has(c.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL);

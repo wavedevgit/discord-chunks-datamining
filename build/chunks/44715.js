@@ -16,17 +16,17 @@ function o(e, t) {
   if (0 === t.length) returnfalse;
   let n = a(e);
   return t.forEach(e => {
-    var t, i, a, o, s, l, c, u, d, f, _, p;
-    let h = n[e.userId],
-      m = null != (i = null != (t = e.joinSourceType) ? t : null == h ? true : h.joinSourceType) ? i : null;
-    (null == m || m === r.gq.UNSPECIFIED) && null != e.sourceInviteCode && (m = r.gq.INVITE), n[e.userId] = {
+    var t, i, a, o, s, l, c, u, d, f, p, _;
+    let m = n[e.userId],
+      h = null != (i = null != (t = e.joinSourceType) ? t : null == m ? true : m.joinSourceType) ? i : null;
+    (null == h || h === r.gq.UNSPECIFIED) && null != e.sourceInviteCode && (h = r.gq.INVITE), n[e.userId] = {
       userId: e.userId,
-      sourceInviteCode: null != (o = null != (a = e.sourceInviteCode) ? a : null == h ? true : h.sourceInviteCode) ? o : null,
-      joinSourceType: m,
-      inviterId: null != (l = null != (s = e.inviterId) ? s : null == h ? true : h.inviterId) ? l : null,
-      integrationType: null != (u = null != (c = e.integrationType) ? c : null == h ? true : h.integrationType) ? u : null,
-      joinSourceApplicationId: null != (f = null != (d = e.joinSourceApplicationId) ? d : null == h ? true : h.joinSourceApplicationId) ? f : null,
-      joinSourceChannelId: null != (p = null != (_ = e.joinSourceChannelId) ? _ : null == h ? true : h.joinSourceChannelId) ? p : null
+      sourceInviteCode: null != (o = null != (a = e.sourceInviteCode) ? a : null == m ? true : m.sourceInviteCode) ? o : null,
+      joinSourceType: h,
+      inviterId: null != (l = null != (s = e.inviterId) ? s : null == m ? true : m.inviterId) ? l : null,
+      integrationType: null != (u = null != (c = e.integrationType) ? c : null == m ? true : m.integrationType) ? u : null,
+      joinSourceApplicationId: null != (f = null != (d = e.joinSourceApplicationId) ? d : null == m ? true : m.joinSourceApplicationId) ? f : null,
+      joinSourceChannelId: null != (_ = null != (p = e.joinSourceChannelId) ? p : null == m ? true : m.joinSourceChannelId) ? _ : null
     }
   }), true
 }

@@ -30,23 +30,23 @@ let O = e => {
     sourceDetails: i
   } = e, a = ":".concat(t.name, ":");
   switch (r) {
-    case h.n_.ACTIVITY:
+    case m.n_.ACTIVITY:
       let o = b.intl.formatToPlainString(b.t.EUFEJt, {
           username: n
         }),
         s = "\n> ".concat(i);
-      return null != i ? "".concat(_.jd).concat(o, "*").concat(s, "\n").concat(a) : "".concat(_.jd).concat(o, "*\n").concat(a);
-    case h.n_.AVATAR:
+      return null != i ? "".concat(p.jd).concat(o, "*").concat(s, "\n").concat(a) : "".concat(p.jd).concat(o, "*\n").concat(a);
+    case m.n_.AVATAR:
       let l = b.intl.formatToPlainString(b.t.E6H15q, {
         username: n
       });
-      return "".concat(_.jd).concat(l, "*\n").concat(a);
-    case h.n_.STATUS:
+      return "".concat(p.jd).concat(l, "*\n").concat(a);
+    case m.n_.STATUS:
       let u = b.intl.formatToPlainString(b.t.XPQgL2, {
           username: n
         }),
         d = "\n> ".concat(i);
-      return null != i ? "".concat(_.jd).concat(u, "*").concat(d, "\n").concat(a) : "".concat(_.jd).concat(u, "*\n").concat(a);
+      return null != i ? "".concat(p.jd).concat(u, "*").concat(d, "\n").concat(a) : "".concat(p.jd).concat(u, "*\n").concat(a);
     default:
       (0, c.vE)(r)
   }
@@ -57,40 +57,40 @@ function v(e) {
     user: t,
     guildId: n,
     entry: c,
-    sourceType: _,
+    sourceType: p,
     sourceDetails: b,
     setPopoutRef: v,
-    onAction: I,
-    onClose: T
+    onAction: S,
+    onClose: I
   } = e, {
-    resetInteraction: S,
+    resetInteraction: T,
     setInteractionToast: A
   } = (0, f.Xo)(), {
     theme: C
-  } = (0, p.z)(), N = (0, a.e7)([l.Z], () => l.Z.theme), R = (0, o.wj)(N) ? !(0, o.wj)(C) : (0, o.wj)(C), P = i.useRef(null);
+  } = (0, _.z)(), N = (0, a.e7)([l.Z], () => l.Z.theme), P = (0, o.wj)(N) ? !(0, o.wj)(C) : (0, o.wj)(C), R = i.useRef(null);
   i.useEffect(() => {
-    null == v || v(null == P ? true : P.current)
-  }, [P, v]), i.useEffect(() => {
+    null == v || v(null == R ? true : R.current)
+  }, [R, v]), i.useEffect(() => {
     let e = e => {
-      e.key === E.vn.ESCAPE && (e.stopPropagation(), S())
+      e.key === E.vn.ESCAPE && (e.stopPropagation(), T())
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
     }
-  }, [T, S]);
-  let D = async e => {
+  }, [I, T]);
+  let w = async e => {
     if (null == e) return;
-    _ === h.n_.AVATAR ? I({
+    p === m.n_.AVATAR ? S({
       action: "SEND_REACT_AVATAR"
-    }) : _ === h.n_.STATUS ? I({
+    }) : p === m.n_.STATUS ? S({
       action: "SEND_REACT_CUSTOM_STATUS"
-    }) : I({
+    }) : S({
       action: "SEND_REACT_ACTIVITY"
     });
     let n = O({
       emoji: e,
       username: u.ZP.getName(t),
-      sourceType: _,
+      sourceType: p,
       sourceDetails: b
     });
     A(null);
@@ -104,10 +104,10 @@ function v(e) {
         entry: c
       })
     } catch (e) {}
-    A(h.P.REACT)
+    A(m.P.REACT)
   };
   return (0, r.jsx)(s.Z, {
-    headerClassName: R ? y.noBoxShadowMargin : true,
+    headerClassName: P ? y.noBoxShadowMargin : true,
     guildId: null != n ? n : true,
     closePopout: g.dG,
     onSelectEmoji: async e => {
@@ -115,8 +115,8 @@ function v(e) {
         emoji: t,
         willClose: n
       } = e;
-      await D(t), n && (S(), null == T || T())
+      await w(t), n && (T(), null == I || I())
     },
-    pickerIntention: m.Hz.PROFILE
+    pickerIntention: h.Hz.PROFILE
   })
 }

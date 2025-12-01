@@ -2,7 +2,7 @@
 /** chunk id: 100604, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => m
+  r: () => h
 });
 var Chunk933557 = require("./933557.js"),
   Chunk356264 = require("./356264.js"),
@@ -16,7 +16,7 @@ var Chunk933557 = require("./933557.js"),
 require("./978003.js");
 var Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,14 +24,14 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = 16;
+let _ = 16;
 
-function h(e, t) {
+function m(e, t) {
   return {
     originLabel: e.name,
     originIconUrl: u.ZP.getGuildIconURL({
       id: e.id,
-      size: p,
+      size: _,
       icon: e.icon,
       canAnimate: false
     }),
@@ -42,12 +42,12 @@ function h(e, t) {
     })
   }
 }
-class m {
+class h {
   getForwardInfo() {
     var e, t, n, u;
-    let _ = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk592125.Z,
-      p = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk594174.default,
-      m = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk699516.Z,
+    let p = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk592125.Z,
+      _ = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk594174.default,
+      h = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk699516.Z,
       g = arguments.length > 3 && true !== arguments[3] ? arguments[3] : Chunk496675.Z,
       E = arguments.length > 4 && true !== arguments[4] ? arguments[4] : Chunk430824.Z,
       b = arguments.length > 5 && true !== arguments[5] ? arguments[5] : Chunk356264.Z,
@@ -56,48 +56,48 @@ class m {
         parentMessage: O,
         messageSnapshot: v
       } = this,
-      I = (0, Chunk55935.Xf)(v.message.timestamp),
-      T = _.getChannel(this.parentMessage.channel_id);
-    if (null != T && T.guild_id === (null == (e = O.messageReference) ? true : module.guild_id)) {
-      let e = _.getChannel(null == (n = O.messageReference) ? true : require.channel_id);
+      S = (0, Chunk55935.Xf)(v.message.timestamp),
+      I = p.getChannel(this.parentMessage.channel_id);
+    if (null != I && I.guild_id === (null == (e = O.messageReference) ? true : module.guild_id)) {
+      let e = p.getChannel(null == (n = O.messageReference) ? true : require.channel_id);
       if (null == module) {
-        let e = E.getGuild(T.guild_id);
+        let e = E.getGuild(I.guild_id);
         return null == module ? {
           snapshotIndex: y
         } : {
           snapshotIndex: y,
-          footerInfo: h(module, I)
+          footerInfo: m(module, S)
         }
       }
       if (!g.can(module.accessPermissions, module)) return {
         snapshotIndex: y
       };
-      let t = (0, Chunk933557.F6)(module, p, m, true);
+      let t = (0, Chunk933557.F6)(module, _, h, true);
       return {
         snapshotIndex: y,
         footerInfo: {
           originLabel: exports,
-          timestampLabel: I,
+          timestampLabel: S,
           accessibilityLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["+l04BN"], {
             origin: exports,
-            timestamp: I
+            timestamp: S
           })
         }
       }
     }
-    let S = null == (t = O.messageReference) ? true : exports.guild_id;
-    if (null == S) return {
+    let T = null == (t = O.messageReference) ? true : exports.guild_id;
+    if (null == T) return {
       snapshotIndex: y
     };
-    let A = null != (u = E.getGuild(S)) ? Chunk768581 : b.getGuild(S);
+    let A = null != (u = E.getGuild(T)) ? Chunk768581 : b.getGuild(T);
     return null == A ? {
       snapshotIndex: y
     } : {
       snapshotIndex: y,
-      footerInfo: h(A, I)
+      footerInfo: m(A, S)
     }
   }
   constructor(e, t, n) {
-    _(this, "parentMessage", true), _(this, "messageSnapshot", true), _(this, "snapshotIndex", true), this.parentMessage = e, this.messageSnapshot = t, this.snapshotIndex = n
+    p(this, "parentMessage", true), p(this, "messageSnapshot", true), p(this, "snapshotIndex", true), this.parentMessage = e, this.messageSnapshot = t, this.snapshotIndex = n
   }
 }

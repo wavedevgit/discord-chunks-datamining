@@ -78,16 +78,16 @@ let d = e => {
     },
     {
       buttonText: f,
-      marketingSubscriptionTierSkuId: _
+      marketingSubscriptionTierSkuId: p
     } = (0, r.G)(d),
     {
-      subscribeButtonProps: p
+      subscribeButtonProps: _
     } = (0, i.F)(l(o({}, u), {
-      subscriptionTier: _,
+      subscriptionTier: p,
       buttonTextOverride: f
     }));
   return {
-    subscribeButtonProps: p,
-    subscriptionTier: _
+    subscribeButtonProps: _,
+    subscriptionTier: p
   }
 }

@@ -27,10 +27,10 @@ function E(e) {
     description: a
   } = e, E = (0, u.pU)(t), b = (0, s.yE)(t.flags, c.hR.IS_ANIMATED), {
     gifAutoPlay: y
-  } = (0, d.c)(), [O, v] = i.useState(n), I = e => {
+  } = (0, d.c)(), [O, v] = i.useState(n), S = e => {
     var n, i;
-    return "IMAGE" !== E ? (0, r.jsx)(p.S, {
-      className: m.imgContainer,
+    return "IMAGE" !== E ? (0, r.jsx)(_.S, {
+      className: h.imgContainer,
       media: t,
       placeholderWidth: g,
       placeholderHeight: g,
@@ -38,10 +38,10 @@ function E(e) {
       maxHeight: g,
       hiddenSpoilers: e
     }) : (0, r.jsx)(f.Yi, {
-      containerClassName: o()(m.imgContainer, {
-        [m.hiddenSpoiler]: e
+      containerClassName: o()(h.imgContainer, {
+        [h.hiddenSpoiler]: e
       }),
-      imageClassName: m.img,
+      imageClassName: h.img,
       src: t.proxyUrl,
       alt: a,
       original: t.url,
@@ -55,16 +55,16 @@ function E(e) {
       minWidth: g,
       minHeight: g,
       autoPlay: y && !e,
-      mediaLayoutType: h.hV.MOSAIC,
+      mediaLayoutType: m.hV.MOSAIC,
       reducedSizeAltTextButton: true,
       srcIsAnimated: b
     })
   };
-  return n ? (0, r.jsx)(_.ZP, {
-    type: _.ZP.Types.ATTACHMENT,
+  return n ? (0, r.jsx)(p.ZP, {
+    type: p.ZP.Types.ATTACHMENT,
     reason: l.wk.SPOILER,
     obscured: O,
     onToggleObscurity: () => v(e => !e),
-    children: e => I(e)
-  }) : I(false)
+    children: e => S(e)
+  }) : S(false)
 }

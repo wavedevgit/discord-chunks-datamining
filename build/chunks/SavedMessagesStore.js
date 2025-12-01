@@ -2,7 +2,7 @@
 /** chunk id: 768943, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => B
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
@@ -34,7 +34,7 @@ function d(e) {
 }
 let f = 1e13;
 
-function _(e) {
+function p(e) {
   if (null == e) return f;
   try {
     return new Date(e).getTime()
@@ -43,10 +43,10 @@ function _(e) {
   }
 }
 
-function p(e) {
-  return null != e.dueAt ? _(e.dueAt) : f - _(e.savedAt)
+function _(e) {
+  return null != e.dueAt ? p(e.dueAt) : f - p(e.savedAt)
 }
-let h = new Chunk759174.h(e => {
+let m = new Chunk759174.h(e => {
     let {
       saveData: t
     } = e;
@@ -55,9 +55,9 @@ let h = new Chunk759174.h(e => {
     let {
       saveData: t
     } = e;
-    return p(t)
+    return _(t)
   }),
-  m = true,
+  h = true,
   g = 0,
   E = new Set,
   b = new Set,
@@ -76,91 +76,91 @@ function v(e) {
   return "".concat(t, "-").concat(n)
 }
 
-function I(e) {
+function S(e) {
   var t;
   let n = v(e.saveData);
-  null == h.get(n) && (g = Date.now()), h.set(n, e);
+  null == m.get(n) && (g = Date.now()), m.set(n, e);
   let r = e.saveData.messageId,
     i = e.saveData.channelId,
     a = null != (t = y.get(i)) ? t : new Set;
   a.add(r), y.set(i, a), null == e.message && b.add(r), null != e.saveData.dueAt && new Date > e.saveData.dueAt ? E.add(r) : E.delete(r)
 }
 
-function T(e) {
+function I(e) {
   var t;
   let n = v(e),
-    r = h.get(n);
+    r = m.get(n);
   if (null == r) returnfalse;
-  h.delete(n);
+  m.delete(n);
   let i = e.messageId;
   null == (t = y.get(r.saveData.channelId)) || t.delete(i), b.delete(i), E.delete(i), g = Date.now()
 }
 
-function S() {
-  m = true
+function T() {
+  h = true
 }
 
 function A() {
-  m = true, h.clear(), y.clear(), b.clear()
+  h = true, m.clear(), y.clear(), b.clear()
 }
 
 function C(e) {
   let {
     savedMessages: t
   } = e;
-  for (let e of (m = false, h.clear(), y.clear(), b.clear(), t)) I(e)
+  for (let e of (h = false, m.clear(), y.clear(), b.clear(), t)) S(e)
 }
 
 function N(e) {
   let {
     savedMessage: t
   } = e;
-  I(t)
-}
-
-function R(e) {
-  let {
-    savedMessageData: t
-  } = e;
-  return T(t)
+  S(t)
 }
 
 function P(e) {
+  let {
+    savedMessageData: t
+  } = e;
+  return I(t)
+}
+
+function R(e) {
   let {
     messageId: t,
     channelId: n
   } = e, r = v({
     messageId: t,
     channelId: n
-  }), i = h.get(r);
+  }), i = m.get(r);
   if ((null == i ? true : i.message) == null) returnfalse;
   let a = d({}, i);
-  return a.message = null, h.set(r, a), true
+  return a.message = null, m.set(r, a), true
 }
 
-function D(e) {
+function w(e) {
   let {
     id: t,
     channelId: n
   } = e;
-  return P({
+  return R({
     messageId: t,
     channelId: n
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     ids: t,
     channelId: n
   } = e;
-  for (let e of t) P({
+  for (let e of t) R({
     messageId: e,
     channelId: n
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     message: t
   } = e;
@@ -169,41 +169,41 @@ function L(e) {
       messageId: t.id,
       channelId: t.channel_id
     }),
-    r = h.get(n);
+    r = m.get(n);
   if ((null == r ? true : r.message) == null) returnfalse;
   let i = d({}, r);
-  i.message = (0, s.wi)(r.message, t), h.set(n, i)
+  i.message = (0, s.wi)(r.message, t), m.set(n, i)
 }
 
-function x() {
-  if (0 === b.size || m) returnfalse;
-  m = true
-}
-
-function M(e) {
-  let {
-    channel: t
-  } = e;
-  if (0 === b.size || m || !O(t.id)) returnfalse;
-  m = true
-}
-
-function k(e) {
-  let {
-    channels: t
-  } = e;
-  if (0 === b.size || m) returnfalse;
-  let n = false;
-  for (let e of t) O(e.id) && (m = true, n = true);
-  return n
+function L() {
+  if (0 === b.size || h) returnfalse;
+  h = true
 }
 
 function j(e) {
   let {
     channel: t
   } = e;
-  if (0 === b.size || m || !O(t.id)) returnfalse;
-  m = true
+  if (0 === b.size || h || !O(t.id)) returnfalse;
+  h = true
+}
+
+function M(e) {
+  let {
+    channels: t
+  } = e;
+  if (0 === b.size || h) returnfalse;
+  let n = false;
+  for (let e of t) O(e.id) && (h = true, n = true);
+  return n
+}
+
+function k(e) {
+  let {
+    channel: t
+  } = e;
+  if (0 === b.size || h || !O(t.id)) returnfalse;
+  h = true
 }
 
 function U(e) {
@@ -211,8 +211,8 @@ function U(e) {
   let {
     user: n
   } = e;
-  if (0 === b.size || m || n.id !== (null == (t = l.default.getCurrentUser()) ? true : t.id)) returnfalse;
-  m = true
+  if (0 === b.size || h || n.id !== (null == (t = l.default.getCurrentUser()) ? true : t.id)) returnfalse;
+  h = true
 }
 
 function G(e) {
@@ -221,24 +221,24 @@ function G(e) {
   } = e;
   E.add(t.saveData.messageId)
 }
-class B extends(r = Chunk442837.ZP.Store) {
+class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
   getSavedMessages() {
-    return h.values(Chunk686478._l.ALL)
+    return m.values(Chunk686478._l.ALL)
   }
   getSavedMessage(e, t) {
-    return h.get(v({
+    return m.get(v({
       channelId: e,
       messageId: t
     }))
   }
   getMessageBookmarks() {
-    return h.values(Chunk686478._l.BOOKMARK)
+    return m.values(Chunk686478._l.BOOKMARK)
   }
   getMessageReminders() {
-    return h.values(Chunk686478._l.REMINDER)
+    return m.values(Chunk686478._l.REMINDER)
   }
   getOverdueMessageReminderCount() {
     return E.size
@@ -247,48 +247,48 @@ class B extends(r = Chunk442837.ZP.Store) {
     return E.size > 0
   }
   getSavedMessageCount() {
-    return h.size()
+    return m.size()
   }
   getIsStale() {
-    return m
+    return h
   }
   getLastChanged() {
     return g
   }
   isMessageBookmarked(e, t) {
-    let n = h.get(v({
+    let n = m.get(v({
       channelId: e,
       messageId: t
     }));
     return null != n && null == n.saveData.dueAt
   }
   isMessageReminder(e, t) {
-    let n = h.get(v({
+    let n = m.get(v({
       channelId: e,
       messageId: t
     }));
     return null != n && null != n.saveData.dueAt
   }
 }
-u(B, "displayName", "SavedMessagesStore");
-let Z = new B(Chunk570140.Z, {
-  POST_CONNECTION_OPEN: S,
+u(Z, "displayName", "SavedMessagesStore");
+let B = new Z(Chunk570140.Z, {
+  POST_CONNECTION_OPEN: T,
   LOGOUT: A,
   SAVED_MESSAGES_UPDATE: C,
   SAVED_MESSAGE_CREATE: N,
-  SAVED_MESSAGE_DELETE: R,
-  MESSAGE_DELETE: D,
-  MESSAGE_DELETE_BULK: w,
-  MESSAGE_UPDATE: L,
-  GUILD_CREATE: x,
-  GUILD_UPDATE: x,
-  GUILD_DELETE: x,
-  CHANNEL_CREATE: M,
-  CHANNEL_UPDATES: k,
-  CHANNEL_DELETE: j,
+  SAVED_MESSAGE_DELETE: P,
+  MESSAGE_DELETE: w,
+  MESSAGE_DELETE_BULK: D,
+  MESSAGE_UPDATE: x,
+  GUILD_CREATE: L,
+  GUILD_UPDATE: L,
+  GUILD_DELETE: L,
+  CHANNEL_CREATE: j,
+  CHANNEL_UPDATES: M,
+  CHANNEL_DELETE: k,
   GUILD_MEMBER_UPDATE: U,
-  GUILD_ROLE_CREATE: x,
-  GUILD_ROLE_UPDATE: x,
-  GUILD_ROLE_DELETE: x,
+  GUILD_ROLE_CREATE: L,
+  GUILD_ROLE_UPDATE: L,
+  GUILD_ROLE_DELETE: L,
   MESSAGE_REMINDER_DUE: G
 })

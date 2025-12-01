@@ -2,7 +2,7 @@
 /** chunk id: 914602, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -84,7 +84,7 @@ class v extends(r = Chunk473749.PureComponent) {
         isHorizontal: l,
         storeListing: c
       } = this.props;
-      return (0, _.K$)(o) ? (0, i.jsx)(p.A, {
+      return (0, p.K$)(o) ? (0, i.jsx)(_.A, {
         sku: o,
         shape: "custom",
         containerClassName: b.socialLayerStorefrontCardContainer,
@@ -95,8 +95,8 @@ class v extends(r = Chunk473749.PureComponent) {
           className: s()(b.splashContainer, {
             [b.splashContainerHorizontal]: l
           }),
-          video: null != c.previewVideo ? (0, h._W)(o.applicationId, c.previewVideo) : true,
-          image: null != c.thumbnail ? (0, h._W)(o.applicationId, c.thumbnail, O) : true,
+          video: null != c.previewVideo ? (0, m._W)(o.applicationId, c.previewVideo) : true,
+          image: null != c.thumbnail ? (0, m._W)(o.applicationId, c.thumbnail, O) : true,
           title: o.name,
           playing: e,
           muted: t,
@@ -124,4 +124,4 @@ y(v, "defaultProps", {
   isHorizontal: false,
   isEmbed: false
 });
-let I = v
+let S = v

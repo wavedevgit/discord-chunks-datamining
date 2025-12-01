@@ -2,7 +2,7 @@
 /** chunk id: 982370, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,31 +16,31 @@ var Chunk120356 = require("./120356.js"),
   Chunk732728 = require("./732728.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk527552 = require("./527552.js");
-let p = e => {
+let _ = e => {
   let {
     className: t,
     onBackClick: n
   } = e, i = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), {
-    visibilityPercentageRef: p,
-    visibilityPercentage: h
+    visibilityPercentageRef: _,
+    visibilityPercentage: m
   } = (0, u.E)(!i);
   return (0, r.jsxs)("div", {
-    className: a()(_.container, t),
+    className: a()(p.container, t),
     "data-testid": "all-perks-hero-header",
-    ref: p,
+    ref: _,
     children: [(0, r.jsx)("div", {
-      className: _.backButtonContainer,
+      className: p.backButtonContainer,
       children: (0, r.jsx)(s.zxk, {
         onClick: n,
         text: f.intl.string(f.t["13/7kX"]),
         variant: "overlay-secondary"
       })
     }), (0, r.jsx)("div", {
-      className: _.content,
+      className: p.content,
       children: (0, r.jsxs)("div", {
-        className: _.headerContainer,
+        className: p.headerContainer,
         children: [(0, r.jsx)(d.Z, {
-          containerVisibilityPercentage: h,
+          containerVisibilityPercentage: m,
           isMotionReduced: i
         }), (0, r.jsx)(c.Z, {
           children: f.intl.string(f.t["hqjDX/"])

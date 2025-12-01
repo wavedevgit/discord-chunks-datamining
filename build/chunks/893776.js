@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => D,
+  Z: () => w,
   c: () => N
 }), require("./415506.js"), require("./358797.js"), require("./457542.js");
 var Chunk990547 = require("./990547.js"),
@@ -46,7 +46,7 @@ function v(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,33 +57,33 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = new Chunk710845.Z("AuthenticationActionCreators"),
+let T = new Chunk710845.Z("AuthenticationActionCreators"),
   A = 5e3,
   C = null;
 var N = function(e) {
   return e.MFA = "MFA", e.SUCCESS = "SUCCESS", e
 }({});
 
-function R(e) {
+function P(e) {
   let t = v({
     type: "LOGOUT"
   }, e);
   l.Z.dispatch(t).catch(e => {
     var t;
-    throw S.error("Error while dispatching LOGOUT", e), null == (t = window.DiscordErrors) || t.softCrash(e), e
+    throw T.error("Error while dispatching LOGOUT", e), null == (t = window.DiscordErrors) || t.softCrash(e), e
   })
 }
 
-function P(e) {
+function R(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b.Z5c.DEFAULT_LOGGED_OUT;
-  if (R(), null == t) return;
+  if (P(), null == t) return;
   let n = (0, f.D)();
-  if (null == n) return void(0, _.uL)(t, {
+  if (null == n) return void(0, p.uL)(t, {
     source: e
   });
   E.Z.popAll(), n.reset({
@@ -93,7 +93,7 @@ function P(e) {
     }]
   })
 }
-let D = {
+let w = {
   startSession(e) {
     l.Z.wait(() => {
       l.Z.dispatch({
@@ -115,7 +115,7 @@ let D = {
     return l.Z.dispatch({
       type: "LOGIN",
       isPasswordAttempt: true
-    }), g.Z.post(T(v({
+    }), g.Z.post(I(v({
       url: b.ANM.LOGIN,
       body: {
         login: t,
@@ -219,7 +219,7 @@ let D = {
         ticket: n,
         login_source: r,
         gift_code_sku_id: a,
-        login_instance_id: null != c ? c : h.default.getLoginInstanceId()
+        login_instance_id: null != c ? c : m.default.getLoginInstanceId()
       },
       retries: 2,
       oldFormErrors: true,
@@ -251,7 +251,7 @@ let D = {
     } = e;
     return null == n || n.abort("Starting non-conditional mediation"), l.Z.dispatch({
       type: "PASSWORDLESS_START"
-    }), (0, p.d$)().then(e => {
+    }), (0, _.d$)().then(e => {
       let {
         challenge: n,
         ticket: a
@@ -366,13 +366,13 @@ let D = {
     })
   },
   logoutInternal(e) {
-    R(e)
+    P(e)
   },
   logout(e) {
     var t;
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b.Z5c.DEFAULT_LOGGED_OUT,
       r = arguments.length > 2 ? arguments[2] : true;
-    return g.Z.post(T(v({
+    return g.Z.post(I(v({
       url: b.ANM.LOGOUT,
       body: {
         provider: (0, y.xJ)(),
@@ -394,21 +394,21 @@ let D = {
     }), {
       rejectWithError: false
     })).finally(() => {
-      (null == r || r === h.default.getId()) && P(e, n)
+      (null == r || r === m.default.getId()) && R(e, n)
     })
   },
   switchAccountToken(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-      n = h.default.getToken();
-    return S.log("Switching accounts", {
+      n = m.default.getToken();
+    return T.log("Switching accounts", {
       wasLoggedIn: null != n,
       tokenHasChanged: e !== n
-    }), R({
+    }), P({
       isSwitchingAccount: true,
       goHomeAfterSwitching: t
     }), this.loginToken(e, true).then(() => {
-      let t = e === h.default.getToken();
-      return S.log("Switched accounts finished", {
+      let t = e === m.default.getToken();
+      return T.log("Switched accounts finished", {
         isCorrectToken: t
       }), t
     })
@@ -419,7 +419,7 @@ let D = {
       url: b.ANM.ME,
       oldFormErrors: true,
       rejectWithError: true
-    }).catch(() => P(e, t))
+    }).catch(() => R(e, t))
   },
   async verify(e) {
     let t = await g.Z.post({
@@ -604,7 +604,7 @@ let D = {
     rejectWithError: true
   }).then(e => {
     var t, n, i, a, o;
-    if (clearTimeout(r), null == m.Z.getAuthenticationConsentRequired()) {
+    if (clearTimeout(r), null == h.Z.getAuthenticationConsentRequired()) {
       let t = null == (a = null == e || null == (i = e.body) ? true : i.consent_required) || a;
       l.Z.dispatch({
         type: "SET_CONSENT_REQUIRED",

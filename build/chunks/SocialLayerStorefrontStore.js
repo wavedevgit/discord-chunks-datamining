@@ -48,56 +48,56 @@ function d(e, t) {
   }), e
 }
 let f = {},
-  _ = {};
+  p = {};
 
-function p(e) {
+function _(e) {
   let {
     guildId: t
   } = e;
-  _[t] = {
+  p[t] = {
     storefront: null,
     state: "loading",
     fetchedAt: null
-  }, _ = c({}, _)
-}
-
-function h(e) {
-  let {
-    guildId: t,
-    storefront: n
-  } = e;
-  _[t] = {
-    storefront: n,
-    state: "fetched",
-    fetchedAt: Date.now()
-  }, _ = c({}, _)
+  }, p = c({}, p)
 }
 
 function m(e) {
   let {
     guildId: t,
     storefront: n
-  } = e, r = _[t];
-  (null == r ? true : r.storefront) != null ? _[t] = d(c({}, r), {
+  } = e;
+  p[t] = {
+    storefront: n,
+    state: "fetched",
+    fetchedAt: Date.now()
+  }, p = c({}, p)
+}
+
+function h(e) {
+  let {
+    guildId: t,
+    storefront: n
+  } = e, r = p[t];
+  (null == r ? true : r.storefront) != null ? p[t] = d(c({}, r), {
     storefront: d(c({}, r.storefront), {
       assets: c({}, r.storefront.assets, n.assets)
     })
-  }) : _[t] = {
+  }) : p[t] = {
     storefront: n,
     state: "partially-fetched",
     fetchedAt: null
-  }, _ = c({}, _)
+  }, p = c({}, p)
 }
 
 function g(e) {
   let {
     guildId: t
   } = e;
-  _[t] = {
+  p[t] = {
     storefront: null,
     state: "error",
     fetchedAt: null
-  }, _ = c({}, _)
+  }, p = c({}, p)
 }
 
 function E(e) {
@@ -114,14 +114,14 @@ function E(e) {
 
 function b() {
   if (r === Chunk706454.default.locale) returnfalse;
-  r = Chunk706454.default.locale, f = {}, _ = {}
+  r = Chunk706454.default.locale, f = {}, p = {}
 }
 class y extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk706454.default), this.syncWith([Chunk706454.default], b), r = Chunk706454.default.locale
   }
   getStorefrontData(e) {
-    return _[e]
+    return p[e]
   }
   getStorefrontState(e) {
     return f[e]
@@ -129,9 +129,9 @@ class y extends(i = Chunk442837.ZP.Store) {
 }
 l(y, "displayName", "SocialLayerStorefrontStore");
 let O = new y(Chunk570140.Z, {
-  SOCIAL_LAYER_STOREFRONT_LOAD: p,
-  SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: h,
-  SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS: m,
+  SOCIAL_LAYER_STOREFRONT_LOAD: _,
+  SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: m,
+  SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS: h,
   SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE: g,
   SET_SOCIAL_LAYER_STOREFRONT_STATE: E
 })

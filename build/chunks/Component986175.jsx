@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk177475 = require("./177475.js"),
   Chunk691739 = require("./691739.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,8 +25,8 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h() {
-  return (h = Object.assign || function(e) {
+function m() {
+  return (m = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -35,7 +35,7 @@ function h() {
   }).apply(this, arguments)
 }
 
-function m(e) {
+function h(e) {
   if (null == e) throw TypeError("Cannot destructure " + e);
   return e
 }
@@ -47,7 +47,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -305,11 +305,11 @@ let v = {
           subtitleIcon: c
         } = e,
         d = y(e, ["graphic", "subtitleIcon"]);
-      let p = c ? {
+      let _ = c ? {
           text: null != (t = d.subtitle) ? t : "Default subtitle",
           leadingIcon: o.VL1
         } : d.subtitle,
-        h = i.useMemo(() => 0 === l ? {
+        m = i.useMemo(() => 0 === l ? {
           type: "image",
           src: f
         } : 1 === l ? {
@@ -321,7 +321,7 @@ let v = {
           rive: a.PerfTestRive
         } : 3 === l ? {
           type: "video",
-          src: _.Z,
+          src: p.Z,
           fallbackImageSrc: f,
           loop: true,
           loopAt: 2.5
@@ -344,8 +344,8 @@ let v = {
           text: "Open ExpressiveModal",
           onClick: () => (0, u.h7j)(e => (0, r.jsx)(o.ExpressiveModal, b(g({}, e, d), {
             title: d.title,
-            subtitle: p,
-            graphic: h,
+            subtitle: _,
+            graphic: m,
             actions: [{
               variant: "secondary",
               text: "Cancel",
@@ -558,7 +558,7 @@ let v = {
     name: "LayerModal",
     id: "layer-modal",
     component: function(e) {
-      var t = h({}, m(e));
+      var t = m({}, h(e));
       return (0, r.jsxs)(u.Kqy, {
         gap: 16,
         align: "center",

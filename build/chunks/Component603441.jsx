@@ -2,7 +2,7 @@
 /** chunk id: 603441, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => p
+  I: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -52,7 +52,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +60,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -68,16 +68,16 @@ function _(e, t) {
   return i
 }
 
-function p(e) {
+function _(e) {
   var {
     size: t = "md",
     gradientColor: n = "purple",
     graphic: l,
     badge: u,
-    title: _,
-    subtitle: p,
-    actionBarInput: h,
-    actions: m,
+    title: p,
+    subtitle: _,
+    actionBarInput: m,
+    actions: h,
     children: g
   } = e, E = f(e, ["size", "gradientColor", "graphic", "badge", "title", "subtitle", "actionBarInput", "actions", "children"]);
   return (0, r.jsxs)(i.I, d(c({}, E), {
@@ -87,16 +87,16 @@ function p(e) {
       gradientColor: n,
       graphic: l,
       badge: u,
-      title: _,
+      title: p,
       titleTextVariant: "heading-xl/semibold",
-      subtitle: p,
+      subtitle: _,
       alignCenter: true
     }), (0, r.jsx)(o.f, {
       children: g
     }), (0, r.jsx)(a.G, {
-      leading: h,
-      actions: m,
-      actionsFullWidth: null == h
+      leading: m,
+      actions: h,
+      actionsFullWidth: null == m
     })]
   }))
 }

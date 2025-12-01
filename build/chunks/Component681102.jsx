@@ -16,15 +16,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk168524 = require("./168524.js"),
   Chunk214288 = require("./214288.js"),
   Chunk638912 = require("./638912.js");
-let h = 10,
-  m = 2;
+let m = 10,
+  h = 2;
 
 function g(e) {
   let {
     game: t,
     activityLevel: n,
     hideTooltip: i
-  } = e, a = t.getIconURL(24), o = (0, _.B)(), g = (0, f.Z)({
+  } = e, a = t.getIconURL(24), o = (0, p.B)(), g = (0, f.Z)({
     location: "GuildProfile",
     source: d.m1.GuildProfile,
     trackEntryPointImpression: true,
@@ -44,22 +44,22 @@ function g(e) {
       "aria-label": t.name,
       shouldShow: E,
       children: (0, r.jsxs)("div", {
-        className: p.gameIcon,
+        className: _.gameIcon,
         children: [(0, r.jsx)("img", {
-          className: p.gameIconImage,
+          className: _.gameIconImage,
           src: a,
           alt: t.name
         }), b && (0, r.jsx)(u.ZP, {
           mask: u.QS.GAMEPLAY_HIGH_ACTIVITY_ICON,
-          width: h + 2 * m,
-          height: h + 2 * m,
-          className: p.gameActivityLevel,
+          width: m + 2 * h,
+          height: m + 2 * h,
+          className: _.gameActivityLevel,
           children: (0, r.jsx)("div", {
-            className: p.gameActivityLevelInner,
+            className: _.gameActivityLevelInner,
             children: (0, r.jsx)(c.YqE, {
               color: c.TVs.unsafe_rawColors.ORANGE_330.css,
-              width: h,
-              height: h,
+              width: m,
+              height: m,
               size: "custom"
             })
           })
@@ -68,7 +68,7 @@ function g(e) {
     });
   return o ? (0, r.jsx)(c.P3F, {
     onClick: g,
-    className: p.gameIconWrapper,
+    className: _.gameIconWrapper,
     children: O
   }) : O
 }
@@ -79,9 +79,9 @@ function E(e) {
     activity: n
   } = e;
   return (0, r.jsx)("div", {
-    className: p.extraGamesContainer,
+    className: _.extraGamesContainer,
     children: t.map(e => (0, r.jsxs)("div", {
-      className: p.extraGameRow,
+      className: _.extraGameRow,
       children: [(0, r.jsx)(g, {
         game: e,
         activityLevel: n[e.id]
@@ -100,7 +100,7 @@ function b(e) {
     activityLevel: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.favoriteGameContainer,
+    className: _.favoriteGameContainer,
     children: [(0, r.jsx)(g, {
       game: t,
       activityLevel: n,
@@ -136,15 +136,15 @@ function y(e) {
         activity: s
       }),
       children: (0, r.jsxs)("div", {
-        className: o()(p.gameIcon, p.extraGameItem),
+        className: o()(_.gameIcon, _.extraGameItem),
         children: [(0, r.jsx)("img", {
-          className: o()(p.gameIconImage, p.extraGameIconImage),
+          className: o()(_.gameIconImage, _.extraGameIconImage),
           src: e,
           alt: n.name
         }), (0, r.jsx)("div", {
-          className: p.extraGameOverlay
+          className: _.extraGameOverlay
         }), (0, r.jsx)("div", {
-          className: p.extraGameText,
+          className: _.extraGameText,
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "always-white",
@@ -155,13 +155,13 @@ function y(e) {
     })
   }, [n, a, s]);
   return null == t || 0 === t.length ? null : 1 === t.length ? (0, r.jsx)("div", {
-    className: p.container,
+    className: _.container,
     children: (0, r.jsx)(b, {
       game: t[0],
       activityLevel: s[t[0].id]
     })
   }) : (0, r.jsxs)("div", {
-    className: p.container,
+    className: _.container,
     children: [t.map(e => (0, r.jsx)(g, {
       game: e,
       activityLevel: s[e.id]

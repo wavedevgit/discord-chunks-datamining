@@ -28,7 +28,7 @@ function b(e) {
   return "IMAGE" === e.type ? (0, f.q)({
     proxyURL: e.proxyUrl,
     url: e.url
-  }) : "VIDEO" === e.type && null != e.proxyUrl ? (0, _.Dt)(e.proxyUrl) : null
+  }) : "VIDEO" === e.type && null != e.proxyUrl ? (0, p.Dt)(e.proxyUrl) : null
 }
 
 function y(e) {
@@ -43,7 +43,7 @@ function y(e) {
   }, a) ? (0, r.jsx)(s.Kqy, {
     align: "center",
     justify: "center",
-    className: m.obscured,
+    className: h.obscured,
     style: {
       width: g,
       height: g
@@ -63,7 +63,7 @@ function y(e) {
     shouldRenderAccessory: false,
     srcIsAnimated: i.srcIsAnimated,
     alt: i.alt,
-    mediaLayoutType: p.hV.MOSAIC
+    mediaLayoutType: _.hV.MOSAIC
   })
 }
 let O = Chunk473749.memo(y);
@@ -84,23 +84,23 @@ function v(e) {
       padding: g / 2
     })
   }, [n]), (0, r.jsx)("div", {
-    className: o()(m.galleryContainer, c),
+    className: o()(h.galleryContainer, c),
     children: (0, r.jsx)(s.h21, {
       orientation: "horizontal",
-      className: o()(m.gallery, c),
+      className: o()(h.gallery, c),
       ref: d,
       onClick: e => e.stopPropagation(),
       children: t.map((e, i) => {
         let l = i === n,
-          c = l ? h.t["qv/U5V"] : h.t.zviMAG;
+          c = l ? m.t["qv/U5V"] : m.t.zviMAG;
         return (0, r.jsx)(s.P3F, {
           id: E(i),
-          className: o()(m.galleryItem, {
-            [m.inactive]: !l,
-            [m.first]: 0 === i,
-            [m.last]: i === t.length - 1
+          className: o()(h.galleryItem, {
+            [h.inactive]: !l,
+            [h.first]: 0 === i,
+            [h.last]: i === t.length - 1
           }),
-          "aria-label": h.intl.formatToPlainString(c, {
+          "aria-label": m.intl.formatToPlainString(c, {
             pageNumber: i + 1,
             totalPages: t.length
           }),

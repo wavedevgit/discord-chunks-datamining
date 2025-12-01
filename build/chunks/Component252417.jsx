@@ -27,12 +27,12 @@ function x(e) {
     user: t,
     status: x,
     guildId: y,
-    channelId: P,
-    onSelect: w
+    channelId: w,
+    onSelect: _
   } = e, {
-    theme: _,
+    theme: P,
     themeType: S
-  } = (0, m.z)(), Z = n.useMemo(() => t.isNonUserBot() || (0, f.W)(t, P), [t, P]), {
+  } = (0, m.z)(), Z = n.useMemo(() => t.isNonUserBot() || (0, f.W)(t, w), [t, w]), {
     activities: E,
     isMobileOnline: A
   } = (0, a.cj)([p.Z], () => ({
@@ -61,7 +61,7 @@ function x(e) {
       }
     },
     className: b.row,
-    onClick: w,
+    onClick: _,
     onContextMenu: e => {
       (0, s.jW)(e, async () => {
         let {
@@ -106,7 +106,7 @@ function x(e) {
       "aria-label": t.username,
       size: g,
       status: Z ? h.Skl.UNKNOWN : x,
-      statusBackdropColor: Z ? true : (0, o.QFD)(_),
+      statusBackdropColor: Z ? true : (0, o.QFD)(P),
       isMobile: A,
       className: b.avatar
     }), (0, i.jsxs)("div", {

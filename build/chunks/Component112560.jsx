@@ -26,9 +26,9 @@ function u(e) {
     errorCodeMessage: u,
     size: d,
     className: f,
-    artURL: _,
-    noArt: p = false,
-    selected: h = false
+    artURL: p,
+    noArt: _ = false,
+    selected: m = false
   } = e;
   return (0, r.jsxs)(s.Z, {
     className: f,
@@ -38,10 +38,10 @@ function u(e) {
     style: {
       padding: 4
     },
-    children: [!p && null != _ && (0, r.jsx)("div", {
+    children: [!_ && null != p && (0, r.jsx)("div", {
       className: a()(l.art, l[d]),
       style: {
-        backgroundImage: "url(".concat(_, ")")
+        backgroundImage: "url(".concat(p, ")")
       }
     }), null != i ? (0, r.jsx)(o.Text, {
       color: "none",
@@ -59,7 +59,7 @@ function u(e) {
       className: l.description,
       variant: "text-sm/medium",
       children: c
-    }) : null, h || null == n ? null : (0, r.jsx)("div", {
+    }) : null, m || null == n ? null : (0, r.jsx)("div", {
       className: l.outerButton,
       children: (0, r.jsx)(o.Button, {
         size: "small" === d ? "sm" : "md",

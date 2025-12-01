@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk330746 = require("./330746.js"),
   Chunk861537 = require("./861537.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -60,11 +60,11 @@ function b(e, t) {
 
 function y(e) {
   return {
-    react(t, i, m) {
-      let E = m.noStyleAndInteraction ? true : async n => {
+    react(t, i, h) {
+      let E = h.noStyleAndInteraction ? true : async n => {
         let r = await (0, d.B_)(t.attachmentUrl);
         e.shouldStopPropagation && (null == n || n.stopPropagation()), c.Z.trackLinkClicked(r), e.shouldCloseDefaultModals && (0, o.pTH)(), (0, l.Z)(r)
-      }, y = m.noStyleAndInteraction ? _.dG4 : e => {
+      }, y = h.noStyleAndInteraction ? p.dG4 : e => {
         (0, s.jW)(e, async () => {
           let {
             default: e
@@ -83,10 +83,10 @@ function y(e) {
         className: "attachmentLink",
         children: [(0, r.jsx)(o.Ujz, {
           size: "xs",
-          className: a()(h.icon, p.icon),
+          className: a()(m.icon, _.icon),
           color: "currentColor"
-        }), (0, f.S)(t, i, m)]
-      }, m.key)
+        }), (0, f.S)(t, i, h)]
+      }, h.key)
     }
   }
 }

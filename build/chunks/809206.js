@@ -4,22 +4,22 @@
 require.d(exports, {
   FD: () => f,
   I5: () => E,
-  Mn: () => m,
-  NI: () => I,
-  OU: () => R,
+  Mn: () => h,
+  NI: () => S,
+  OU: () => P,
   P6: () => C,
-  S2: () => h,
+  S2: () => m,
   V3: () => g,
   W0: () => b,
   W3: () => A,
   ZB: () => O,
-  Zy: () => _,
-  b9: () => T,
+  Zy: () => p,
+  b9: () => I,
   e1: () => y,
   iR: () => N,
   s4: () => v,
-  si: () => S,
-  ss: () => p
+  si: () => T,
+  ss: () => _
 });
 var Chunk544891 = require("./544891.js"),
   Chunk433517 = require("./433517.js"),
@@ -37,13 +37,13 @@ function f() {
   })
 }
 
-function _() {
+function p() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_CLOSE"
   })
 }
 
-function p(e, t) {
+function _(e, t) {
   let n = t ? c.ANM.DELETE_ACCOUNT : c.ANM.DISABLE_ACCOUNT;
   return r.tn.post({
     url: n,
@@ -56,7 +56,7 @@ function p(e, t) {
     l.Z.logoutInternal(), (0, s.uL)(c.Z5c.DEFAULT_LOGGED_OUT)
   })
 }
-async function h(e) {
+async function m(e) {
   let t = await r.tn.patch({
       url: c.ANM.ME,
       oldFormErrors: true,
@@ -81,7 +81,7 @@ async function h(e) {
   }), t
 }
 
-function m(e) {
+function h(e) {
   var t, n;
   let {
     username: r,
@@ -90,9 +90,9 @@ function m(e) {
     emailToken: l,
     password: d,
     avatar: f,
-    avatarDescription: _,
-    avatarId: p,
-    avatarDecoration: m,
+    avatarDescription: p,
+    avatarId: _,
+    avatarDecoration: h,
     newPassword: g,
     globalName: E,
     legacyUsername: b,
@@ -103,27 +103,27 @@ function m(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT"
   });
-  let I = {
+  let S = {
     username: r,
     email: s,
     email_token: l,
     password: d,
     avatar: f,
-    avatar_description: _,
-    avatar_id: p,
+    avatar_description: p,
+    avatar_id: _,
     discriminator: a,
     global_name: E,
     legacy_username: b,
     new_password: g
   };
-  true !== m && (I.avatar_decoration_sku_id = null != (t = null == m ? true : m.skuId) ? t : null), true !== y && (I.nameplate_sku_id = null != (n = null == y ? true : y.skuId) ? n : null), true !== O && (I.primary_guild_id = O), null != v ? (I.display_name_font_id = v.fontId, I.display_name_effect_id = v.effectId, I.display_name_colors = v.colors) : null === v && (I.display_name_font_id = null, I.display_name_effect_id = null, I.display_name_colors = null);
-  let T = i.K.get(c.JkL),
-    S = (0, u.xJ)();
-  null != S && null != T && (I.push_provider = S, I.push_token = T);
+  true !== h && (S.avatar_decoration_sku_id = null != (t = null == h ? true : h.skuId) ? t : null), true !== y && (S.nameplate_sku_id = null != (n = null == y ? true : y.skuId) ? n : null), true !== O && (S.primary_guild_id = O), null != v ? (S.display_name_font_id = v.fontId, S.display_name_effect_id = v.effectId, S.display_name_colors = v.colors) : null === v && (S.display_name_font_id = null, S.display_name_effect_id = null, S.display_name_colors = null);
+  let I = i.K.get(c.JkL),
+    T = (0, u.xJ)();
+  null != T && null != I && (S.push_provider = T, S.push_token = I);
   let A = i.K.get(c.scU);
-  return null != u.mv && null != A && (I.push_voip_provider = u.mv, I.push_voip_token = A), h(I).then(e => (o.Z.dispatch({
+  return null != u.mv && null != A && (S.push_voip_provider = u.mv, S.push_voip_token = A), m(S).then(e => (o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS"
-  }), (null != f || null != p) && o.Z.dispatch({
+  }), (null != f || null != _) && o.Z.dispatch({
     type: "RECENT_AVATARS_UPDATE"
   }), e), e => (o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE",
@@ -177,20 +177,20 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES",
     displayNameStyles: e
   })
 }
 
-function T() {
+function I() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_CLEAR_ERRORS"
   })
 }
 
-function S() {
+function T() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
   })
@@ -214,7 +214,7 @@ function N() {
   })
 }
 
-function R() {
+function P() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES"
   })

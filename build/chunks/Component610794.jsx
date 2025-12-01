@@ -2,7 +2,7 @@
 /** chunk id: 610794, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js"), require("./457542.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -29,7 +29,7 @@ function O(e) {
     account: n,
     refreshed: o,
     handleRefresh: l
-  } = e, [c, u] = i.useState(false), f = null != (t = n.metadata) ? t : {}, h = (0, a.e7)([p.default], () => p.default.locale), O = i.useCallback(async () => {
+  } = e, [c, u] = i.useState(false), f = null != (t = n.metadata) ? t : {}, m = (0, a.e7)([_.default], () => _.default.locale), O = i.useCallback(async () => {
     u(true);
     try {
       await l(n)
@@ -39,45 +39,45 @@ function O(e) {
   }, [n, l]), v = null;
   switch (n.type) {
     case g.ABu.REDDIT:
-      v = (0, _.oP)(f, y.metadataItem);
+      v = (0, p.oP)(f, y.metadataItem);
       break;
     case g.ABu.STEAM:
-      v = (0, _.Dq)(f, y.metadataItem);
+      v = (0, p.Dq)(f, y.metadataItem);
       break;
     case g.ABu.TWITTER:
-      v = (0, _.rJ)(f, y.metadataItem);
+      v = (0, p.rJ)(f, y.metadataItem);
       break;
     case g.ABu.EBAY:
-      v = (0, _.ul)(f, y.metadataItem);
+      v = (0, p.ul)(f, y.metadataItem);
       break;
     case g.ABu.PAYPAL:
-      v = (0, _.li)(f, y.metadataItem);
+      v = (0, p.li)(f, y.metadataItem);
       break;
     case g.ABu.TIKTOK:
-      v = (0, _.hf)(f, y.metadataItem)
+      v = (0, p.hf)(f, y.metadataItem)
   }
-  let I = (0, d.FI)(f[E.PC.CREATED_AT], h),
-    T = null,
-    S = b.intl.string(b.t.wzzjk9);
-  return (null == v || 0 === v.length) && null == I && (T = (0, r.jsx)(s.Text, {
+  let S = (0, d.FI)(f[E.PC.CREATED_AT], m),
+    I = null,
+    T = b.intl.string(b.t.wzzjk9);
+  return (null == v || 0 === v.length) && null == S && (I = (0, r.jsx)(s.Text, {
     variant: "text-xs/normal",
     color: "header-secondary",
     children: b.intl.format(b.t.Up2ni7, {
-      helpdeskUrl: m.Z.getArticleURL(g.BhN.CONNECTION_DETAILS)
+      helpdeskUrl: h.Z.getArticleURL(g.BhN.CONNECTION_DETAILS)
     })
-  }, "label"), S = b.intl.string(b.t["LVh3/5"])), o && (S = b.intl.string(b.t.i4jeWR)), (0, r.jsxs)("div", {
+  }, "label"), T = b.intl.string(b.t["LVh3/5"])), o && (T = b.intl.string(b.t.i4jeWR)), (0, r.jsxs)("div", {
     className: y.metadataContainer,
-    children: [T, null == v ? true : v.map((e, t) => (0, r.jsxs)(r.Fragment, {
+    children: [I, null == v ? true : v.map((e, t) => (0, r.jsxs)(r.Fragment, {
       children: [e, t < v.length - 1 ? (0, r.jsx)("span", {
         className: y.dot
       }) : null]
-    })), null != v && v.length > 0 && null != I ? (0, r.jsx)("div", {
+    })), null != v && v.length > 0 && null != S ? (0, r.jsx)("div", {
       className: y.dot
-    }) : null, null != I ? (0, r.jsx)(s.Text, {
+    }) : null, null != S ? (0, r.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "header-secondary",
       children: b.intl.format(b.t["9rfonh"], {
-        date: I
+        date: S
       })
     }, "member-since") : null, (0, r.jsx)("div", {
       className: y.metadataRefreshButton,
@@ -88,7 +88,7 @@ function O(e) {
         disabled: o,
         "aria-label": b.intl.string(b.t.sCkLYH),
         onClick: O,
-        text: S
+        text: T
       }, "refresh-button")
     })]
   })
@@ -99,20 +99,20 @@ function v(e) {
     account: t,
     handleRefresh: n,
     refreshedAccountIds: a
-  } = e, [d, _] = i.useState(t.visibility), [p, h] = i.useState(t.metadataVisibility), m = (0, c.ZP)();
+  } = e, [d, p] = i.useState(t.visibility), [_, m] = i.useState(t.metadataVisibility), h = (0, c.ZP)();
 
   function g(e) {
     let {
       verified: n
     } = t, r = +!!e;
     if (e && !n) {
-      _(r), (0, f.Z)({
+      p(r), (0, f.Z)({
         platformType: t.type,
         location: "User Settings"
       });
       return
     }
-    _(r), l.Z.setVisibility(t.type, t.id, r)
+    p(r), l.Z.setVisibility(t.type, t.id, r)
   }
 
   function E(e) {
@@ -120,26 +120,26 @@ function v(e) {
       verified: n
     } = t, r = +!!e;
     if (e && !n) {
-      h(r), (0, f.Z)({
+      m(r), (0, f.Z)({
         platformType: t.type,
         location: "User Settings"
       });
       return
     }
-    h(r), l.Z.setMetadataVisibility(t.type, t.id, r)
+    m(r), l.Z.setMetadataVisibility(t.type, t.id, r)
   }
   i.useEffect(() => {
-    _(t.visibility), h(t.metadataVisibility)
+    p(t.visibility), m(t.metadataVisibility)
   }, [t]);
   let v = u.Z.get(t.type),
-    I = true === v.hasMetadata;
+    S = true === v.hasMetadata;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: y.activityRow,
       children: [(0, r.jsx)("img", {
         alt: v.name,
         className: y.connectionIcon,
-        src: (0, o.wj)(m) ? v.icon.darkSVG : v.icon.lightSVG
+        src: (0, o.wj)(h) ? v.icon.darkSVG : v.icon.lightSVG
       }), (0, r.jsxs)("div", {
         className: y.activitySettings,
         children: [(0, r.jsxs)("div", {
@@ -147,14 +147,14 @@ function v(e) {
             checked: 1 === d,
             onChange: g,
             label: v.name
-          }), I && (0, r.jsx)(O, {
+          }), S && (0, r.jsx)(O, {
             account: t,
             refreshed: a.includes(t.id),
             handleRefresh: n
           })]
-        }), I && (0, r.jsx)(s.rsf, {
+        }), S && (0, r.jsx)(s.rsf, {
           disabled: 1 !== d || null == t.metadata,
-          checked: 1 === p,
+          checked: 1 === _,
           onChange: E,
           label: b.intl.string(b.t["3l78wo"])
         })]
@@ -163,7 +163,7 @@ function v(e) {
   })
 }
 
-function I() {
+function S() {
   let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
     t = Chunk473749.useMemo(() => module.filter(e => u.Z.isSupported(e.type)), [module]),
     [n, o] = Chunk473749.useState([]),

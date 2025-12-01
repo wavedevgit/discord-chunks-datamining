@@ -2,7 +2,7 @@
 /** chunk id: 402113, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -46,15 +46,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -70,22 +70,22 @@ function h(e, t) {
   return i
 }
 
-function m(e) {
+function h(e) {
   var {
     location: t,
     applicationId: n,
     centerButton: u = false
-  } = e, f = p(e, ["location", "applicationId", "centerButton"]);
+  } = e, f = _(e, ["location", "applicationId", "centerButton"]);
   let {
-    parentAnalyticsLocation: h
-  } = (0, o.ZP)(), m = u ? l.d : l.Z, g = () => {
-    (0, s.v)(h, s.d.LEAVE_ACTIVITY), a.Z.leaveActivity({
+    parentAnalyticsLocation: m
+  } = (0, o.ZP)(), h = u ? l.d : l.Z, g = () => {
+    (0, s.v)(m, s.d.LEAVE_ACTIVITY), a.Z.leaveActivity({
       location: t,
       applicationId: n,
       showFeedback: true
     })
   };
-  return (0, r.jsx)(m, _(d({}, f), {
+  return (0, r.jsx)(h, p(d({}, f), {
     isTrayButton: false,
     onClick: g,
     iconComponent: i.PBZ,

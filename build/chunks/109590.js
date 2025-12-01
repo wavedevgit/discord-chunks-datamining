@@ -2,7 +2,7 @@
 /** chunk id: 109590, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  EB: () => I,
+  EB: () => S,
   cl: () => O
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
@@ -17,7 +17,7 @@ var Chunk392711 = require("./392711.js"),
 require("./682474.js");
 var Chunk981631 = require("./981631.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,9 +25,9 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = 10,
-  h = 5;
-class m {
+let _ = 10,
+  m = 5;
+class h {
   get(e) {
     return this._set.hasOwnProperty(e) || (this._set[e] = this._defaultValueFunc()), this._set[e]
   }
@@ -41,7 +41,7 @@ class m {
     return Chunk709054.default.keys(this._set)[0]
   }
   constructor(e) {
-    _(this, "_set", true), _(this, "_defaultValueFunc", true), this._set = {}, this._defaultValueFunc = e
+    p(this, "_set", true), p(this, "_defaultValueFunc", true), this._set = {}, this._defaultValueFunc = e
   }
 }
 class g {
@@ -71,7 +71,7 @@ class g {
     0 === this.requested.get(e).size && this.requested.delete(e)
   }
   constructor() {
-    _(this, "requested", true), this.requested = new m(() => new Set)
+    p(this, "requested", true), this.requested = new h(() => new Set)
   }
 }
 let E = new g,
@@ -86,7 +86,7 @@ function O(e) {
     loaded: t,
     firstMessage: n
   } = (0, a.cj)([d.Z], () => d.Z.getMessage(e.id)), r = (0, a.e7)([l.Z], () => l.Z.getChannel(e.parent_id));
-  return null != r && y(t, n) && T(r, e.id), {
+  return null != r && y(t, n) && I(r, e.id), {
     loaded: t,
     firstMessage: n
   }
@@ -100,21 +100,21 @@ function v(e, t) {
       firstMessage: i
     } = d.Z.getMessage(t);
     y(r, i) && (E.request(e.id, t), n = true)
-  }), n && null == b && (b = setTimeout(S, 0))
+  }), n && null == b && (b = setTimeout(T, 0))
 }
 
-function I(e) {
-  v(e, (0, u.U)(e.id).slice(0, p))
+function S(e) {
+  v(e, (0, u.U)(e.id).slice(0, _))
 }
 
-function T(e, t) {
+function I(e, t) {
   if (E.hasRequested(e.id, t)) return;
   let n = (0, u.U)(e.id),
     r = n.findIndex(e => e === t),
-    i = n.slice(r, r + h).filter(t => !E.hasRequested(e.id, t));
+    i = n.slice(r, r + m).filter(t => !E.hasRequested(e.id, t));
   v(e, i)
 }
-async function S() {
+async function T() {
   try {
     for (; E.hasNext();) await A(E.next())
   } finally {
@@ -122,7 +122,7 @@ async function S() {
   }
 }
 async function A(e) {
-  let t = E.getNextBatch(e, p);
+  let t = E.getNextBatch(e, _);
   try {
     var n;
     if (0 === t.length) return;

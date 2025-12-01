@@ -30,22 +30,22 @@ function O(e) {
     initialSelectedEffect: a,
     className: O,
     sectionTitle: v,
-    forcedDivider: I = false,
-    withTutorial: T = false,
-    showBorder: S = false,
+    forcedDivider: S = false,
+    withTutorial: I = false,
+    showBorder: T = false,
     isTryItOut: A = false
   } = e, {
     analyticsLocations: C
-  } = (0, c.ZP)(), N = _.ZP.canUsePremiumProfileCustomization(t), R = (0, p.nh)({
+  } = (0, c.ZP)(), N = p.ZP.canUsePremiumProfileCustomization(t), P = (0, _.nh)({
     user: t,
     guildId: null == n ? true : n.id
   }), {
-    pendingProfileEffect: P,
-    errors: D
-  } = (0, p.sY)({
+    pendingProfileEffect: R,
+    errors: w
+  } = (0, _.sY)({
     guildId: null == n ? true : n.id,
     isTryItOut: A
-  }), w = i.useCallback(() => {
+  }), D = i.useCallback(() => {
     (0, u.H)({
       analyticsLocations: C,
       guild: n,
@@ -59,37 +59,37 @@ function O(e) {
       location_stack: C
     })
   }, [N, C]);
-  let L = A || true !== P ? null != P : null != R;
+  let x = A || true !== R ? null != R : null != P;
 
-  function x() {
-    A ? (0, d.Ju)(null) : (0, p.UK)(null, null == n ? true : n.id)
+  function L() {
+    A ? (0, d.Ju)(null) : (0, _.UK)(null, null == n ? true : n.id)
   }
-  let M = T ? l.gtL : s.zx;
-  return (0, r.jsx)(h.Z, {
-    forcedDivider: I,
-    borderType: m.Y.PREMIUM,
+  let j = I ? l.gtL : s.zx;
+  return (0, r.jsx)(m.Z, {
+    forcedDivider: S,
+    borderType: h.Y.PREMIUM,
     hasBackground: true,
     title: v,
-    showBorder: S,
-    errors: D,
+    showBorder: T,
+    errors: w,
     className: O,
     children: (0, r.jsxs)("div", {
       className: y.buttonsContainer,
-      children: [(0, r.jsx)(M, {
+      children: [(0, r.jsx)(j, {
         size: s.zx.Sizes.SMALL,
-        onClick: w,
+        onClick: D,
         className: o()({
-          [y.buttonHighlighted]: T
+          [y.buttonHighlighted]: I
         }),
         children: b.intl.string(b.t["/dRfCf"])
-      }), L && (0, r.jsx)("div", {
+      }), x && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: y.removeButton,
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
           text: null != n ? b.intl.string(b.t.CHf9iJ) : b.intl.string(b.t.uMuafO),
-          onClick: x
+          onClick: L
         })
       })]
     })

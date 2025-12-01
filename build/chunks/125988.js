@@ -18,25 +18,25 @@ let d = e => {
     guildId: n,
     size: d,
     avatarDecorationOverride: f,
-    onlyAnimateOnHoverOrFocus: _ = false
-  } = e, [p, h] = r.useState(false), {
-    canAnimate: m
-  } = (0, a.j)(p, _), g = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null), E = (0, c.Z)((0, o.Ys)({
+    onlyAnimateOnHoverOrFocus: p = false
+  } = e, [_, m] = r.useState(false), {
+    canAnimate: h
+  } = (0, a.j)(_, p), g = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null), E = (0, c.Z)((0, o.Ys)({
     userValue: null == t ? true : t.avatarDecoration,
     guildValue: null == g ? true : g.avatarDecoration,
     guildId: n
   })), b = r.useMemo(() => (0, l.NZ)({
     avatarDecoration: true !== f ? f : E,
-    canAnimate: m,
+    canAnimate: h,
     size: d
-  }), [f, E, m, d]);
+  }), [f, E, h, d]);
   return {
     avatarPlaceholderSrc: u,
     avatarDecorationSrc: b,
-    isAvatarDecorationAnimating: m,
+    isAvatarDecorationAnimating: h,
     eventHandlers: {
-      onMouseEnter: r.useCallback(() => h(true), []),
-      onMouseLeave: r.useCallback(() => h(false), [])
+      onMouseEnter: r.useCallback(() => m(true), []),
+      onMouseLeave: r.useCallback(() => m(false), [])
     }
   }
 }

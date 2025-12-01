@@ -7,8 +7,8 @@ require.d(exports, {
   g4: () => E,
   m7: () => g,
   r4: () => v,
-  sO: () => T,
-  yL: () => I
+  sO: () => I,
+  yL: () => S
 }), require("./539854.js"), require("./388685.js"), require("./993155.js"), require("./953529.js");
 var Chunk991637 = require("./991637.js"),
   i = require.n(Chunk991637),
@@ -24,11 +24,11 @@ var Chunk991637 = require("./991637.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 i().shim();
-let m = {};
+let h = {};
 
 function g(e) {
   let t = (0, a.e7)([l.Z], () => l.Z.getChannel(e)),
-    n = (0, a.e7)([_.Z], () => _.Z.getChannel(e));
+    n = (0, a.e7)([p.Z], () => p.Z.getChannel(e));
   return null != t ? t : n
 }
 
@@ -48,9 +48,9 @@ function E(e, t, n) {
   if (!c.has(n)) return null;
   let f = t.indexOf(n);
   if (false === f) return null;
-  let _ = [];
-  for (let e = f + 1; e < t.length && (c.has(t[e]) || _.push(t[e]), 3 !== _.length); e++);
-  return _
+  let p = [];
+  for (let e = f + 1; e < t.length && (c.has(t[e]) || p.push(t[e]), 3 !== p.length); e++);
+  return p
 }
 
 function b(e) {
@@ -61,12 +61,12 @@ function b(e) {
     var t;
     let i = null == (t = n[e]) ? true : t.channelBenefits;
     null == i || i.forEach(e => {
-      null != _.Z.getChannel(e.ref_id) && r.add(e.ref_id)
+      null != p.Z.getChannel(e.ref_id) && r.add(e.ref_id)
     })
   });
   let i = [];
   for (let t of r) {
-    let n = _.Z.getChannel(t);
+    let n = p.Z.getChannel(t);
     if (null != n) {
       let t = n.set("guild_id", e);
       i.push(t)
@@ -77,8 +77,8 @@ function b(e) {
 
 function y(e) {
   let t = b(e);
-  m[e] = t, t.forEach(e => {
-    let t = e.set("flags", h.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
+  h[e] = t, t.forEach(e => {
+    let t = e.set("flags", m.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
     o.Z.dispatch({
       type: "CHANNEL_CREATE",
       channel: t
@@ -88,7 +88,7 @@ function y(e) {
 
 function O(e) {
   var t;
-  (null != (t = m[e]) ? t : b(e)).forEach(e => {
+  (null != (t = h[e]) ? t : b(e)).forEach(e => {
     o.Z.dispatch({
       type: "CHANNEL_DELETE",
       channel: e
@@ -99,7 +99,7 @@ async function v(e, t) {
   let n = [],
     r = [];
   t.forEach(t => {
-    let i = _.Z.getChannel(t.ref_id);
+    let i = p.Z.getChannel(t.ref_id);
     null != i && (n.push(s.Z.createRoleSubscriptionTemplateChannel(e, i.name, i.type, i.topic)), r.push(i))
   }), 0 !== n.length && (await Promise.allSettled(n)).forEach((n, i) => {
     let a = r[i].id;
@@ -121,7 +121,7 @@ async function v(e, t) {
   })
 }
 
-function I(e, t) {
+function S(e, t) {
   var n, r;
   let i = d.n.getState().listings[e],
     a = null == i ? true : i.usedTemplate;
@@ -129,7 +129,7 @@ function I(e, t) {
     templateCategory: null,
     hasChangeFromTemplate: null
   };
-  let o = _.Z.getTemplateWithCategory(t, a);
+  let o = p.Z.getTemplateWithCategory(t, a);
   if (null == o) return {
     templateCategory: null,
     hasChangeFromTemplate: null
@@ -161,6 +161,6 @@ function I(e, t) {
   }
 }
 
-function T(e) {
-  return (0, f.H2)(e) && e.features.has(p.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) && (0, c.$F)() && (0, c.hQ)(e.id)
+function I(e) {
+  return (0, f.H2)(e) && e.features.has(_.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) && (0, c.$F)() && (0, c.hQ)(e.id)
 }

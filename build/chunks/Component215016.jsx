@@ -2,8 +2,8 @@
 /** chunk id: 215016, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  PY: () => B,
-  ZP: () => Z,
+  PY: () => Z,
+  ZP: () => B,
   iR: () => U
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk898404 = require("./898404.js");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,14 +37,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -52,53 +52,53 @@ function S(e) {
 let A = [Chunk692547.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, Chunk692547.Z.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"],
   C = 220,
   N = 1220,
-  R = Array.from({
+  P = Array.from({
     length: 16
   }).map((e, t) => ({
     id: "".concat(t),
     height: Math.floor(100 * Math.random()) + 120
   }));
 
-function P(e) {
+function R(e) {
   var t;
   return null != (t = e.id) ? t : e.src
 }
 
-function D(e, t) {
-  let n = R[t];
+function w(e, t) {
+  let n = P[t];
   return null == n ? 0 : n.height
 }
 
-function w(e, t, n, i) {
-  if (!(e > 0)) return null == R[t] ? null : (0, r.jsx)("div", {
-    className: I.placeholder,
-    style: S({
+function D(e, t, n, i) {
+  if (!(e > 0)) return null == P[t] ? null : (0, r.jsx)("div", {
+    className: S.placeholder,
+    style: T({
       animationDelay: "".concat(75 * t, "ms")
     }, n)
   }, i)
 }
 
-function L(e, t) {
+function x(e, t) {
   var n, r;
-  return e > 0 ? "" : null != (r = null == (n = R[t]) ? true : n.id) ? r : ""
+  return e > 0 ? "" : null != (r = null == (n = P[t]) ? true : n.id) ? r : ""
 }
 
-function x(e) {
+function L(e) {
   return e === u.EO.VIDEO
 }
 
-function M(e) {
+function j(e) {
   return ((0, g._M)(e) || (0, g.MO)(e)) && (e.pathname.toLowerCase().endsWith(".webp") || e.pathname.toLowerCase().endsWith(".avif"))
 }
 
-function k(e) {
+function M(e) {
   return ((0, g._M)(e) || (0, g.MO)(e)) && e.pathname.toLowerCase().endsWith(".gif")
 }
 
-function j(e) {
+function k(e) {
   let t = b.Z.toURLSafe(e),
-    n = null != t && k(t);
-  return null != t && (M(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
+    n = null != t && M(t);
+  return null != t && (j(t) || n) ? (n && t.searchParams.set("format", "webp"), t.searchParams.set("animated", "true"), t.toString()) : e
 }
 class U extends Chunk473749.PureComponent {
   componentDidMount() {
@@ -147,7 +147,7 @@ class U extends Chunk473749.PureComponent {
       loaded: i
     } = this.state;
     return Chunk473749 ? (0, Chunk54381.jsx)("img", {
-      src: j(module),
+      src: k(module),
       width: exports,
       height: require,
       className: Chunk898404.gif,
@@ -175,18 +175,18 @@ class U extends Chunk473749.PureComponent {
       "data-focused": Chunk120356,
       "data-selected": o,
       onClick: this.handleClick,
-      style: S({
+      style: T({
         backgroundColor: l ? true : Chunk392711
       }, Chunk473749),
-      children: [x(require) ? null : this.renderGIF(), null != exports ? exports(module) : null]
+      children: [L(require) ? null : this.renderGIF(), null != exports ? exports(module) : null]
     })
   }
   constructor(e) {
-    super(e), T(this, "ref", null), T(this, "_video", null), T(this, "_image", null), T(this, "_mounted", true), T(this, "handleCanPlay", () => {
+    super(e), I(this, "ref", null), I(this, "_video", null), I(this, "_image", null), I(this, "_mounted", true), I(this, "handleCanPlay", () => {
       this._mounted && this.setState({
         loaded: true
       })
-    }), T(this, "handleClick", () => {
+    }), I(this, "handleClick", () => {
       let {
         onClick: e,
         item: t,
@@ -202,7 +202,7 @@ class U extends Chunk473749.PureComponent {
     this.state = {
       color: null == n ? l().sample(A) : n,
       loaded: false
-    }, x(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
+    }, L(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
       loaded: true
     }), this._image.src = e.src)
   }
@@ -224,7 +224,7 @@ class G extends Chunk473749.PureComponent {
       data: i,
       resultQuery: a
     } = this.props;
-    null != n && n(e), (0, _.R7)({
+    null != n && n(e), (0, p.R7)({
       type: r,
       index: t,
       offset: this.props.searchOffset,
@@ -241,19 +241,19 @@ class G extends Chunk473749.PureComponent {
   renderEmptyFavorite(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     return (0, r.jsx)("div", {
-      className: I.emptyHint,
+      className: S.emptyHint,
       children: null != e ? (0, r.jsxs)("div", {
-        className: I.emptyHintCard,
+        className: S.emptyHintCard,
         children: [t ? (0, r.jsx)(f.r7p, {
           size: "xs",
           color: "currentColor",
-          className: I.emptyHintFavorite
+          className: S.emptyHintFavorite
         }) : null, (0, r.jsx)("div", {
-          className: I.emptyHintText,
+          className: S.emptyHintText,
           children: e
         })]
       }) : (0, r.jsx)("div", {
-        className: I.emptyHintSpacer
+        className: S.emptyHintSpacer
       })
     })
   }
@@ -298,9 +298,9 @@ class G extends Chunk473749.PureComponent {
     }, exports)
   }
   constructor(...e) {
-    super(...e), T(this, "_masonryRef", i.createRef()), T(this, "prevResultQuery", null), T(this, "state", {
+    super(...e), I(this, "_masonryRef", i.createRef()), I(this, "prevResultQuery", null), I(this, "state", {
       focusedId: null
-    }), T(this, "handleFocus", e => {
+    }), I(this, "handleFocus", e => {
       let {
         current: t
       } = this._masonryRef;
@@ -312,15 +312,15 @@ class G extends Chunk473749.PureComponent {
       }), this.setState({
         focusedId: e
       }))
-    }), T(this, "handleSelect", e => {
+    }), I(this, "handleSelect", e => {
       let t, {
           data: n
         } = this.props,
-        r = n.findIndex(t => P(t) === e);
+        r = n.findIndex(t => R(t) === e);
       false !== r && (t = n[r]), null != t && this.selectItem(t, r)
-    }), T(this, "handleClickItem", (e, t) => {
+    }), I(this, "handleClickItem", (e, t) => {
       this.selectItem(e, t)
-    }), T(this, "handleScroll", () => {
+    }), I(this, "handleScroll", () => {
       let {
         resultQuery: e
       } = this.props, {
@@ -331,8 +331,8 @@ class G extends Chunk473749.PureComponent {
         scrollTop: n,
         scrollHeight: r
       } = t.getScrollerState();
-      r - n <= N && (e !== this.prevResultQuery && (0, _.mO)(e), this.prevResultQuery = e)
-    }), T(this, "renderItem", (e, t, n, i) => {
+      r - n <= N && (e !== this.prevResultQuery && (0, p.mO)(e), this.prevResultQuery = e)
+    }), I(this, "renderItem", (e, t, n, i) => {
       if (e > 0) return null;
       let {
         focusedId: a
@@ -340,7 +340,7 @@ class G extends Chunk473749.PureComponent {
         selectedGIF: o
       } = this.props, s = this.props.data[t];
       if (null == s) return null;
-      let l = null != o && P(o) === P(s);
+      let l = null != o && R(o) === R(s);
       return (0, r.jsx)(U, {
         item: s,
         index: t,
@@ -348,38 +348,38 @@ class G extends Chunk473749.PureComponent {
         src: s.src,
         coords: n,
         onClick: this.handleClickItem,
-        renderExtras: () => (0, r.jsx)(E.Z, S({
-          className: I.favButton
+        renderExtras: () => (0, r.jsx)(E.Z, T({
+          className: S.favButton
         }, s)),
-        focused: P(s) === a,
+        focused: R(s) === a,
         imagePool: this.props.imagePool,
         videoPool: this.props.videoPool,
         selected: l
       }, i)
-    }), T(this, "getItemHeight", (e, t, n) => {
+    }), I(this, "getItemHeight", (e, t, n) => {
       if (e > 0) return 0;
       let r = this.props.data[t];
       return null == r ? 0 : n * (r.height / r.width)
-    }), T(this, "getItemKey", (e, t) => {
+    }), I(this, "getItemKey", (e, t) => {
       var n;
       if (e > 0) return null;
       let r = this.props.data[t];
       return null != r ? null != (n = r.id) ? n : r.src : null
-    }), T(this, "renderSection", (e, t, n) => {
+    }), I(this, "renderSection", (e, t, n) => {
       let {
         onSelectSuggestion: a,
         suggestions: o
       } = this.props;
       return 1 === e ? (0, r.jsx)("div", {
-        className: I.endContainer,
+        className: S.endContainer,
         style: t,
         children: o.length > 0 ? (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)("div", {
-            className: I.endText,
+            className: S.endText,
             children: v.intl.string(v.t["3JGJo2"])
           }), (0, r.jsx)(f.ButtonGroup, {
             size: "sm",
-            className: I.searchSuggestions,
+            className: S.searchSuggestions,
             children: o.map(e => (0, r.jsx)(f.Button, {
               variant: "secondary",
               onClick: () => {
@@ -390,7 +390,7 @@ class G extends Chunk473749.PureComponent {
           })]
         }) : null
       }, n) : null
-    }), T(this, "renderContent", (e, t, n) => {
+    }), I(this, "renderContent", (e, t, n) => {
       let {
         className: i,
         data: a,
@@ -400,19 +400,19 @@ class G extends Chunk473749.PureComponent {
       } = this.props;
       return 0 === a.length && (s !== l || c === O.wI2.TRENDING_GIFS) ? (0, r.jsx)(f.GMG, {
         fade: true,
-        className: o()(I.results, i),
-        sections: [R.length],
+        className: o()(S.results, i),
+        sections: [P.length],
         columns: e,
         itemGutter: 12,
-        getItemKey: L,
-        getItemHeight: D,
-        renderItem: w,
+        getItemKey: x,
+        getItemHeight: w,
+        renderItem: D,
         chunkSize: 128
       }, s) : (0, r.jsx)(f.GMG, {
         ref: this._masonryRef,
         fade: true,
         itemGutter: 12,
-        className: o()(I.results, i),
+        className: o()(S.results, i),
         columns: e,
         sections: [a.length, 0],
         getItemKey: this.getItemKey,
@@ -423,12 +423,12 @@ class G extends Chunk473749.PureComponent {
         onScroll: this.handleScroll,
         chunkSize: 128
       }, "".concat(s, "-").concat(null != c ? c : ""))
-    }), T(this, "getItemGrid", () => {
+    }), I(this, "getItemGrid", () => {
       let {
         current: e
       } = this._masonryRef;
       return null != e ? e.getItemGrid() : []
-    }), T(this, "getCoordsMap", () => {
+    }), I(this, "getCoordsMap", () => {
       let {
         current: e
       } = this._masonryRef;
@@ -437,7 +437,7 @@ class G extends Chunk473749.PureComponent {
   }
 }
 
-function B() {
+function Z() {
   let {
     renderWindow: e
   } = Chunk473749.useContext(Chunk728285.ZP), t = module.document, [n] = Chunk473749.useState(() => new Chunk944611.w(() => exports.createElement("img"), e => {
@@ -457,7 +457,7 @@ function B() {
     videoPool: Chunk54381
   }
 }
-let Z = function(e) {
-  let t = B();
-  return (0, r.jsx)(G, S({}, e, t))
+let B = function(e) {
+  let t = Z();
+  return (0, r.jsx)(G, T({}, e, t))
 }

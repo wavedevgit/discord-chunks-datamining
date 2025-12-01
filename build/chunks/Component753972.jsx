@@ -20,8 +20,8 @@ function u(e) {
     size: u,
     botIconFirst: d,
     fallbackAvatar: f,
-    rendersPlaceholder: _ = false
-  } = e, p = i.useMemo(() => null != t ? s.ZP.getApplicationIconURL({
+    rendersPlaceholder: p = false
+  } = e, _ = i.useMemo(() => null != t ? s.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: t.bot,
@@ -29,12 +29,12 @@ function u(e) {
     botIconFirst: d,
     fallbackAvatar: f
   }) : n, [t, n, u, d, f]);
-  return null == p ? _ ? (0, r.jsx)("div", {
+  return null == _ ? p ? (0, r.jsx)("div", {
     className: o()(c.icon, c.placeholder, a)
   }) : null : (0, r.jsx)("img", {
     className: o()(c.icon, a),
     alt: l.intl.string(l.t.X4IxWL),
-    src: p,
+    src: _,
     "aria-hidden": true,
     draggable: false
   })

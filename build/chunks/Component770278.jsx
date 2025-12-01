@@ -2,7 +2,7 @@
 /** chunk id: 770278, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,9 +34,9 @@ function f(e) {
   }
   return e
 }
-let _ = 8;
+let p = 8;
 
-function p() {
+function _() {
   let e = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BG_BACKDROP_NO_OPACITY).spring({
       opacity: .25
     }),
@@ -52,23 +52,23 @@ function p() {
     [Chunk481060.fCB.TOP_RADIAL]: exports
   }
 }
-let h = Chunk473749.forwardRef(function(e, t) {
+let m = Chunk473749.forwardRef(function(e, t) {
   let {
     backdropStyle: n = l.fCB.SUBTLE,
     backdropInstant: i = false,
     zIndexBoost: a = 0,
     LayerComponent: d,
-    isVisible: h,
-    onClose: m
-  } = e, g = p()[n], E = (0, l.dQu)(l.TVs.colors.BG_BACKDROP_NO_OPACITY).spring({
+    isVisible: m,
+    onClose: h
+  } = e, g = _()[n], E = (0, l.dQu)(l.TVs.colors.BG_BACKDROP_NO_OPACITY).spring({
     opacity: 0
-  }), b = n === l.fCB.BLUR ? _ : 0, y = {
+  }), b = n === l.fCB.BLUR ? p : 0, y = {
     background: E,
     backdropFilter: "blur(0px)"
   }, O = {
     background: g,
     backdropFilter: "blur(".concat(b, "px)")
-  }, v = (0, c.Z)(i), I = (0, l.Yzy)(h, {
+  }, v = (0, c.Z)(i), S = (0, l.Yzy)(m, {
     keys: e => e ? "backdrop" : "empty",
     config: {
       duration: i || v ? 0 : 200
@@ -81,19 +81,19 @@ let h = Chunk473749.forwardRef(function(e, t) {
     let e = {
       zIndex: 1e3 + a
     };
-    return I((t, n) => n ? (0, r.jsx)(s.animated.div, {
+    return S((t, n) => n ? (0, r.jsx)(s.animated.div, {
       className: u.backdrop,
       style: f({}, t, e),
-      onClick: m
+      onClick: h
     }) : null)
   }
   return (0, r.jsx)(d, {
-    children: I((e, t) => t ? (0, r.jsx)(s.animated.div, {
+    children: S((e, t) => t ? (0, r.jsx)(s.animated.div, {
       className: o()(u.backdrop, u.withLayer),
       style: n === l.fCB.TOP_RADIAL ? {
         background: "radial-gradient(96.68% 96.68% at 50.04% 3.32%, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.00) 100%)"
       } : e,
-      onClick: m
+      onClick: h
     }) : null)
   })
 })

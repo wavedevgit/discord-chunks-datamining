@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,13 +46,13 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = 1e3 / 60,
-  m = 24,
+let m = 1e3 / 60,
+  h = 24,
   g = {
     velocity: {
       type: "static-random",
@@ -110,40 +110,40 @@ let h = 1e3 / 60,
 function y(e) {
   let {
     children: t
-  } = e, [n, s] = i.useState(false), d = (0, l.bp)(), [_, y] = i.useState(null), {
+  } = e, [n, s] = i.useState(false), d = (0, l.bp)(), [p, y] = i.useState(null), {
     confettiCanvas: O
-  } = i.useContext(o.h), v = (0, a.uR)(O, _), I = i.useMemo(() => ({
+  } = i.useContext(o.h), v = (0, a.uR)(O, p), S = i.useMemo(() => ({
     triggerAnimation: () => s(true),
     untriggerAnimation: () => s(false)
-  }), []), T = i.useCallback(() => {
+  }), []), I = i.useCallback(() => {
     let e = null == O ? true : O.getCanvas();
     if (null == e) return;
     let t = e.getBoundingClientRect();
-    v.createConfetti(p(f({}, g), {
+    v.createConfetti(_(f({}, g), {
       position: {
         type: "static-random",
         minValue: {
           x: -t.width / 2,
-          y: -m
+          y: -h
         },
         maxValue: {
           x: t.width,
-          y: -m
+          y: -h
         }
       }
     }))
   }, [v, O]);
   return (i.useEffect(() => {
-    let e = n ? setInterval(T, h) : null;
+    let e = n ? setInterval(I, m) : null;
     return () => clearInterval(e)
-  }, [n, T]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
-    value: I,
+  }, [n, I]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
+    value: S,
     children: [t, (0, r.jsx)(a.Ji, {
       ref: y,
       colors: E,
       sprites: b,
-      spriteWidth: m,
-      spriteHeight: m
+      spriteWidth: h,
+      spriteHeight: h
     })]
   })
 }

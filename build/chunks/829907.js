@@ -2,17 +2,17 @@
 /** chunk id: 829907, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DH: () => R,
+  DH: () => P,
   H8: () => A,
   HD: () => f,
-  O0: () => p,
-  PD: () => P,
+  O0: () => _,
+  PD: () => R,
   P_: () => E,
-  aW: () => _,
-  hj: () => T,
-  hs: () => h,
-  qT: () => D,
-  qc: () => S,
+  aW: () => p,
+  hj: () => I,
+  hs: () => m,
+  qT: () => w,
+  qc: () => T,
   sS: () => g
 }), require("./388685.js"), require("./642613.js");
 var Chunk593472 = require("./593472.js"),
@@ -26,15 +26,15 @@ var Chunk593472 = require("./593472.js"),
 let d = new Chunk710845.Z("OverlayRenderUtils"),
   f = 5e3;
 
-function _(e) {
+function p(e) {
   return (0, u.hS)(e).longTimeout
 }
 
-function p(e) {
+function _(e) {
   return (0, u.hS)(e).shortTimeout
 }
 
-function h(e) {
+function m(e) {
   let [t] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [a.ZP], n = t.getGameOrTransformedSubgameForPID(e);
   try {
     return null == n ? s.ZP.GetWindowFullscreenTypeByPid(e) : s.ZP.GetWindowFullscreenTypeByPid(n.pid, n.name, n.fullscreenType)
@@ -44,12 +44,12 @@ function h(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
     [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [a.ZP];
   return new Promise(r => {
     setTimeout(() => {
-      r(h(e, [n]))
+      r(m(e, [n]))
     }, t)
   })
 }
@@ -95,11 +95,11 @@ let y = {
   },
   O = new Set(["762434991303950386", "1402418239342120960", "1124351860376096858"]),
   v = 16,
-  I = true;
-async function T(e) {
+  S = true;
+async function I(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : v,
-    r = await m(e, n),
+    r = await h(e, n),
     i = a.ZP.getGameOrTransformedSubgameForPID(e);
   if (null == i || null == i.name) return r;
   let s = null == (t = o.Z.getGameByName(i.name)) ? true : t.id;
@@ -108,7 +108,7 @@ async function T(e) {
   return null != l ? l(e, i, r) : r
 }
 
-function S(e) {
+function T(e) {
   var t;
   let n = null == (t = o.Z.getGameByName(e.name)) ? true : t.id;
   return null != n && O.has(n)
@@ -116,7 +116,7 @@ function S(e) {
 
 function A(e) {
   let t = a.ZP.getGameOrTransformedSubgameForPID(e);
-  return null != t && null != t.name && S(t)
+  return null != t && null != t.name && T(t)
 }
 let C = new Set([Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.FULLSCREEN]);
 
@@ -125,7 +125,7 @@ function N(e) {
   return 0 === t.length ? r.Jx.UNKNOWN : e[t.length > 1 ? t[1] : t[0]]
 }
 
-function R(e, t, n) {
+function P(e, t, n) {
   if (e.overlayMethod !== c.gl.OutOfProcess && e.overlayMethod !== c.gl.OutOfProcessLimitedInteraction) returnfalse;
   if (!n) returntrue;
   switch (t) {
@@ -137,7 +137,7 @@ function R(e, t, n) {
   returnfalse
 }
 
-function P(e, t) {
+function R(e, t) {
   if (!t) returnfalse;
   switch (e) {
     case r.Jx.UNKNOWN:
@@ -148,11 +148,11 @@ function P(e, t) {
   returntrue
 }
 
-function D(e) {
+function w(e) {
   return null == e ? {
     source: c.d0.DEFAULT,
     enabledOOP: false,
     enabledLegacy: false,
     overlayMethod: c.gl.Disabled
-  } : (0, a.b6)(e, I)
+  } : (0, a.b6)(e, S)
 }

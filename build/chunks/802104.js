@@ -15,7 +15,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk960048 = require("./960048.js"),
   Chunk998502 = require("./998502.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,9 +23,9 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = +Chunk70956.Z.Millis.HOUR,
-  h = 7 * Chunk70956.Z.Millis.DAY,
-  m = +Chunk70956.Z.Millis.DAY,
+let _ = +Chunk70956.Z.Millis.HOUR,
+  m = 7 * Chunk70956.Z.Millis.DAY,
+  h = +Chunk70956.Z.Millis.DAY,
   g = Chunk433517.K.get("lastNonRequiredUpdateShown", Date.now()),
   E = new Chunk710845.Z("AutoUpdateManager");
 class b extends Chunk147913.Z {
@@ -43,7 +43,7 @@ class b extends Chunk147913.Z {
   }
   async handlePostConnectionOpen() {
     let e = true;
-    this.isNewUpdater() && module !== await Chunk998502.ZP.getOptionalUpdates() && await Chunk998502.ZP.setOptionalUpdates(module), this.checkForUpdates(), clearInterval(this._checkInterval), this._checkInterval = setInterval(this.checkForUpdates, p)
+    this.isNewUpdater() && module !== await Chunk998502.ZP.getOptionalUpdates() && await Chunk998502.ZP.setOptionalUpdates(module), this.checkForUpdates(), clearInterval(this._checkInterval), this._checkInterval = setInterval(this.checkForUpdates, _)
   }
   async _requestNewUpdaterBootstrap() {
     let e;
@@ -65,10 +65,10 @@ class b extends Chunk147913.Z {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, _(this, "_checkInterval", null), _(this, "_callbacks", []), _(this, "_bootstrapper", null), _(this, "updateAvailable", false), _(this, "nativeUpdateAvailable", false), _(this, "nativeUpdatesDownloaded", 0), _(this, "nativeUpdateCountThreshold", 3), _(this, "actions", {
+    super(...e), t = this, p(this, "_checkInterval", null), p(this, "_callbacks", []), p(this, "_bootstrapper", null), p(this, "updateAvailable", false), p(this, "nativeUpdateAvailable", false), p(this, "nativeUpdatesDownloaded", 0), p(this, "nativeUpdateCountThreshold", 3), p(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen(),
       AUTO_UPDATER_QUIT_AND_INSTALL: () => this.quitAndInstall()
-    }), _(this, "checkForUpdates", function() {
+    }), p(this, "checkForUpdates", function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         n = t.isNewUpdater(),
         r = n && t.nativeUpdatesDownloaded < t.nativeUpdateCountThreshold;
@@ -77,11 +77,11 @@ class b extends Chunk147913.Z {
       }) : t._handleNativeUpdateNotAvailable()), new Promise(e => {
         t.updateAvailable ? e(true) : t._callbacks.push(e)
       })
-    }), _(this, "_handleCheckingForUpdates", () => {
+    }), p(this, "_handleCheckingForUpdates", () => {
       a.Z.dispatch({
         type: "CHECKING_FOR_UPDATES"
       })
-    }), _(this, "_handleNativeUpdateNotAvailable", () => {
+    }), p(this, "_handleNativeUpdateNotAvailable", () => {
       this._handleCheckingForUpdates(), r.tn.get({
         url: "".concat(location.protocol, "//").concat(location.host).concat("/assets/", "version.").concat(window.GLOBAL_ENV.RELEASE_CHANNEL, ".json"),
         query: {
@@ -90,29 +90,29 @@ class b extends Chunk147913.Z {
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        if (null == e.body || "29228adc9a0e174ed15ada9fe94d00bb4a96f213" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "05ea398c5e1ff64d242556c30bcaa02b964dc07f" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, s.fD)()) return this._handleUpdateDownloaded(false);
-        let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : m;
+        let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? m : h;
         if (Date.now() - g > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(false)
       }, () => this._handleUpdateError())
-    }), _(this, "_handleUpdateNotAvailable", () => {
+    }), p(this, "_handleUpdateNotAvailable", () => {
       a.Z.dispatch({
         type: "UPDATE_NOT_AVAILABLE"
       }), this._emitCallbacks()
-    }), _(this, "_handleUpdateAvailable", e => {
+    }), p(this, "_handleUpdateAvailable", e => {
       this.updateAvailable = true, this.nativeUpdateAvailable = e, a.Z.dispatch({
         type: "UPDATE_AVAILABLE"
       })
-    }), _(this, "_handleUpdateManually", () => {
+    }), p(this, "_handleUpdateManually", () => {
       this.updateAvailable = true, this.nativeUpdateAvailable = true, a.Z.dispatch({
         type: "UPDATE_MANUALLY"
       })
-    }), _(this, "_handleUpdateError", e => {
+    }), p(this, "_handleUpdateError", e => {
       this.updateAvailable = false, a.Z.dispatch({
         type: "UPDATE_ERROR",
         message: e
       })
-    }), _(this, "_handleUpdateDownloaded", (e, t, n, r, i) => {
+    }), p(this, "_handleUpdateDownloaded", (e, t, n, r, i) => {
       e && (this.nativeUpdatesDownloaded += 1), this._handleUpdateAvailable(e), a.Z.dispatch({
         type: "UPDATE_DOWNLOADED",
         releaseNotes: t,

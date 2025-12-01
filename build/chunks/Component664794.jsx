@@ -2,7 +2,7 @@
 /** chunk id: 664794, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Cn: () => I,
+  Cn: () => S,
   wV: () => v
 });
 var Chunk54381 = require("./54381.js"),
@@ -64,32 +64,32 @@ function O(e) {
     user: t,
     guildId: n,
     viewProfileItem: i,
-    appContext: p,
+    appContext: _,
     popoutTargetRef: g,
     children: b
   } = e, {
     trackUserProfileAction: y
-  } = (0, _.KZ)(), {
+  } = (0, p.KZ)(), {
     analyticsLocations: O,
     newestAnalyticsLocation: v
-  } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), I = {
-    action: h.yM.PRESS_OPTIONS,
+  } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), S = {
+    action: m.yM.PRESS_OPTIONS,
     icon: a.xhG,
-    tooltipText: m.intl.string(m.t["UKOtz+"]),
-    "aria-label": m.intl.string(m.t["UKOtz+"])
-  }, T = (0, d.Z)({
+    tooltipText: h.intl.string(h.t["UKOtz+"]),
+    "aria-label": h.intl.string(h.t["UKOtz+"])
+  }, I = (0, d.Z)({
     user: t,
     guildId: n,
     onAction: () => y({
       action: "PRESS_INVITE_TO_SERVER",
       analyticsLocations: O
     })
-  }), S = (0, c.Z)({
+  }), T = (0, c.Z)({
     user: t,
     guildId: n,
     location: v,
     color: "danger",
-    appContext: p,
+    appContext: _,
     onBlock: () => y({
       action: "BLOCK",
       analyticsLocations: O
@@ -106,7 +106,7 @@ function O(e) {
     user: t,
     guildId: n,
     location: v,
-    appContext: p,
+    appContext: _,
     onBlock: () => y({
       action: "BLOCK",
       analyticsLocations: O
@@ -123,19 +123,19 @@ function O(e) {
     user: t,
     guildId: n,
     location: v,
-    appContext: p,
+    appContext: _,
     color: "danger",
     onAction: () => y({
       action: "REPORT",
       analyticsLocations: O
     })
   }), N = [
-    [i, T],
-    [A, S, C, (0, f.T)({
+    [i, I],
+    [A, T, C, (0, f.T)({
       user: t,
       guildId: n,
       location: v,
-      appContext: p,
+      appContext: _,
       color: "danger",
       onAction: () => y({
         action: "REPORT",
@@ -144,7 +144,7 @@ function O(e) {
     })],
     [(0, l.Z)({
       id: t.id,
-      label: m.intl.string(m.t["/AXYnE"]),
+      label: h.intl.string(h.t["/AXYnE"]),
       onSuccess: () => y({
         action: "COPY_USER_ID",
         analyticsLocations: O
@@ -163,13 +163,13 @@ function O(e) {
           navId: "user-profile-overflow-menu",
           onSelect: true,
           onClose: t,
-          "aria-label": m.intl.string(m.t.AXIHpV),
+          "aria-label": h.intl.string(h.t.AXIHpV),
           children: N.map((e, t) => (0, r.jsx)(a.kSQ, {
             children: e.map(e => e)
           }, t))
         })
       },
-      children: e => b(E({}, e, I))
+      children: e => b(E({}, e, S))
     })
   })
 }
@@ -178,17 +178,17 @@ function v(e) {
   let t = i.useRef(null);
   return (0, r.jsx)(O, y(E({}, e), {
     popoutTargetRef: t,
-    children: e => (0, r.jsx)(p.pt, E({
+    children: e => (0, r.jsx)(_.pt, E({
       buttonRef: t
     }, e))
   }))
 }
 
-function I(e) {
+function S(e) {
   let t = i.useRef(null);
   return (0, r.jsx)(O, y(E({}, e), {
     popoutTargetRef: t,
-    children: e => (0, r.jsx)(p.f6, E({
+    children: e => (0, r.jsx)(_.f6, E({
       buttonRef: t
     }, e))
   }))

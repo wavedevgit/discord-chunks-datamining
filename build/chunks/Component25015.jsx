@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk491068 = require("./491068.js");
-let m = Chunk473749.lazy(() => Promise.all([require.e("30385"), require.e("85831")]).then(require.bind(require, 120314)));
+let h = Chunk473749.lazy(() => Promise.all([require.e("30385"), require.e("85831")]).then(require.bind(require, 120314)));
 
 function g(e, t) {
   let {
@@ -27,37 +27,37 @@ function g(e, t) {
     isInteracting: y = false,
     allowHeading: O = false,
     allowList: v = false,
-    allowLinks: I = false,
-    allowDevLinks: T = false,
-    previewLinkTarget: S = false,
+    allowLinks: S = false,
+    allowDevLinks: I = false,
+    previewLinkTarget: T = false,
     viewingChannelId: A
   } = t, C = (0, o.p)(), N = a.d.useExperiment({
     location: "useMessageRenderedContent"
-  }).enabled, R = (0, f.o)({
+  }).enabled, P = (0, f.o)({
     location: "useMessageRenderedContent"
-  }), [P, D] = i.useState(false), w = i.useCallback(e => {
-    e && D(true)
+  }), [R, w] = i.useState(false), D = i.useCallback(e => {
+    e && w(true)
   }, []);
   return i.useEffect(() => {
-    D(false)
+    w(false)
   }, [e.content]), i.useMemo(() => {
     if (null != e.customRenderedContent) return e.customRenderedContent;
     if (e.isUnsupported) return {
-      content: p.intl.string(p.t.sWi5EU),
+      content: _.intl.string(_.t.sWi5EU),
       hasSpoilerEmbeds: false
     };
-    if (e.isCommandType() && 0 === e.content.length || e.hasFlag(_.iLy.LOADING)) return (0, u.Z)(e);
-    if (e.type === _.uaV.CHANGELOG) {
+    if (e.isCommandType() && 0 === e.content.length || e.hasFlag(p.iLy.LOADING)) return (0, u.Z)(e);
+    if (e.type === p.uaV.CHANGELOG) {
       let {
         renderChangelogMessageMarkup: t
       } = n(55406);
-      return t(e, h, {
+      return t(e, m, {
         track: (e, t) => {
           s.default.track(e, t)
         }
       })
     }
-    return R.enabled ? {
+    return P.enabled ? {
       content: (0, r.jsx)(i.Suspense, {
         children: (0, r.jsx)(d.v.Provider, {
           value: {
@@ -65,14 +65,14 @@ function g(e, t) {
             channelId: e.channel_id,
             viewingChannelId: A,
             guildId: (0, l.k)(e),
-            setHasSpoilerEmbeds: w
+            setHasSpoilerEmbeds: D
           },
-          children: (0, r.jsx)(m, {
+          children: (0, r.jsx)(h, {
             content: e.content
           })
         })
       }),
-      hasSpoilerEmbeds: P
+      hasSpoilerEmbeds: R
     } : (0, c.ZP)(e, {
       hideSimpleEmbedContent: g,
       formatInline: E,
@@ -80,12 +80,12 @@ function g(e, t) {
       isInteracting: y,
       allowHeading: O,
       allowList: v,
-      allowLinks: I,
-      allowDevLinks: T,
-      previewLinkTarget: S,
+      allowLinks: S,
+      allowDevLinks: I,
+      previewLinkTarget: T,
       shouldFilterKeywords: C,
       viewingChannelId: A,
       allowGameMentions: N
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, g, E, b, y, O, v, I, S, C, T, A, R.enabled, N, P])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, g, E, b, y, O, v, S, T, C, I, A, P.enabled, N, R])
 }

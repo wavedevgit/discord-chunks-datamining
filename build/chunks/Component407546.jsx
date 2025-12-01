@@ -20,8 +20,8 @@ function d(e) {
     selectedGuildId: n,
     onGuildChange: d,
     guilds: f,
-    disabled: _ = false
-  } = e, p = f.filter(e => i.e$(e.permissions, s.Plq.MANAGE_GUILD)).map(e => ({
+    disabled: p = false
+  } = e, _ = f.filter(e => i.e$(e.permissions, s.Plq.MANAGE_GUILD)).map(e => ({
     value: e.id,
     label: e.name
   }));
@@ -39,9 +39,9 @@ function d(e) {
       wrapperClassName: c.select,
       maxVisibleItems: u,
       placeholder: l.intl.string(l.t.oM4E1A),
-      options: p,
+      options: _,
       onChange: d,
-      isDisabled: _,
+      isDisabled: p,
       value: n
     }), (0, r.jsx)(a.x, {
       variant: "text-xs/medium",

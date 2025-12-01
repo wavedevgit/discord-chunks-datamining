@@ -2,23 +2,23 @@
 /** chunk id: 72006, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FZ: () => w,
-  Hl: () => B,
-  NJ: () => M,
-  R8: () => j,
+  FZ: () => D,
+  Hl: () => Z,
+  NJ: () => j,
+  R8: () => k,
   Sq: () => N,
   Wg: () => U,
   Zn: () => C,
-  c2: () => L,
-  eE: () => k,
-  iE: () => Z,
-  iK: () => x,
-  l8: () => D,
-  lv: () => R,
+  c2: () => x,
+  eE: () => M,
+  iE: () => B,
+  iK: () => L,
+  l8: () => w,
+  lv: () => P,
   m1: () => G,
-  nR: () => P,
+  nR: () => R,
   q0: () => a.a,
-  x0: () => S,
+  x0: () => T,
   xb: () => V,
   yd: () => A
 }), require("./388685.js"), require("./539854.js");
@@ -32,9 +32,9 @@ var Chunk923010 = require("./923010.js"),
   Chunk558094 = require("./558094.js"),
   d = require.n(Chunk558094),
   Chunk76443 = require("./76443.js"),
-  _ = require.n(Chunk76443),
+  p = require.n(Chunk76443),
   Chunk633868 = require("./633868.js"),
-  h = require.n(Chunk633868),
+  m = require.n(Chunk633868),
   Chunk277816 = require("./277816.js"),
   g = require.n(Chunk277816),
   Chunk257834 = require("./257834.js"),
@@ -42,9 +42,9 @@ var Chunk923010 = require("./923010.js"),
   Chunk259303 = require("./259303.js"),
   O = require.n(Chunk259303),
   Chunk269166 = require("./269166.js"),
-  I = require.n(Chunk269166);
+  S = require.n(Chunk269166);
 
-function T(e, t, n, i) {
+function I(e, t, n, i) {
   let a = i.getCurrentContent(),
     o = null;
   null != e && (o = (a = a.createEntity(...e)).getLastCreatedEntityKey());
@@ -60,7 +60,7 @@ function T(e, t, n, i) {
   })
 }
 
-function S(e, t, n, i) {
+function T(e, t, n, i) {
   let a, o, l = t.getCurrentContent(),
     c = l.getFirstBlock(),
     u = c.getText();
@@ -80,7 +80,7 @@ function A(e, t) {
     case "delete":
       return O()(t);
     case "delete-word":
-      return _()(t);
+      return p()(t);
     case "backspace":
       return b()(t);
     case "backspace-word":
@@ -95,11 +95,11 @@ function A(e, t) {
 function C(e, t) {
   switch (e) {
     case "transpose-characters":
-      return I()(t);
+      return S()(t);
     case "move-selection-to-start-of-block":
       return g()(t);
     case "move-selection-to-end-of-block":
-      return h()(t);
+      return m()(t);
     default:
       return t
   }
@@ -109,7 +109,7 @@ function N(e) {
   return e.getCurrentContent().getFirstBlock().getText()
 }
 
-function R(e, t) {
+function P(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     r = t.getCurrentContent(),
     i = r.getFirstBlock(),
@@ -133,50 +133,50 @@ function R(e, t) {
           start: a,
           end: o
         } = e, s = e.getFullMatch();
-        !n.processed && (n.type === i && n.start === a && n.text === s ? (n.processed = true, r = true) : (a >= n.start && a < n.end || o > n.start && o <= n.end) && (n.processed = true, t = T(null, n.start, n.end, t)))
+        !n.processed && (n.type === i && n.start === a && n.text === s ? (n.processed = true, r = true) : (a >= n.start && a < n.end || o > n.start && o <= n.end) && (n.processed = true, t = I(null, n.start, n.end, t)))
       }), r) return;
     let i = n[e.type];
-    t = T([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
+    t = I([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
       token: e
     }], e.start, e.end, t)
   }), o.forEach(e => {
-    e.processed || (t = T(null, e.start, e.end, t))
+    e.processed || (t = I(null, e.start, e.end, t))
   }), t
 }
 
-function P(e) {
+function R(e) {
   return r.EditorState.createEmpty(new r.CompositeDecorator(e))
 }
 
-function D(e, t) {
+function w(e, t) {
   return r.EditorState.createWithContent(t, new r.CompositeDecorator(e))
 }
 
-function w(e) {
+function D(e) {
   let t = r.EditorState.push(e, r.ContentState.createFromText("")),
     n = e.getSelection();
   return null != n && n.hasFocus && (t = r.EditorState.moveFocusToEnd(t)), t
 }
 
-function L(e, t) {
+function x(e, t) {
   let n = N(t);
-  return S(e, t, 0, n.length)
+  return T(e, t, 0, n.length)
 }
 
-function x(e, t) {
+function L(e, t) {
   let n = t.getSelection();
   return n = (n = n.set("focusOffset", e)).set("anchorOffset", e), r.EditorState.forceSelection(t, n)
 }
 
+function j(e) {
+  return L(e.getCurrentContent().getFirstBlock().getText().length, e)
+}
+
 function M(e) {
-  return x(e.getCurrentContent().getFirstBlock().getText().length, e)
+  return L(0, e)
 }
 
 function k(e) {
-  return x(0, e)
-}
-
-function j(e) {
   let t = e.getSelection();
   return t = (t = t.set("focusOffset", 0)).set("isBackward", true), r.EditorState.forceSelection(e, t)
 }
@@ -198,17 +198,17 @@ function G(e) {
   return r.EditorState.forceSelection(e, n)
 }
 
-function B(e) {
+function Z(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 512,
     n = N(e);
   if (n.length > t) {
     let i = e.getSelection();
-    e = S("", e, t, n.length), i.getAnchorOffset() > t && (i = i.set("anchorOffset", t)), i.getFocusOffset() > t && (i = i.set("focusOffset", t)), e = r.EditorState.forceSelection(e, i)
+    e = T("", e, t, n.length), i.getAnchorOffset() > t && (i = i.set("anchorOffset", t)), i.getFocusOffset() > t && (i = i.set("focusOffset", t)), e = r.EditorState.forceSelection(e, i)
   }
   return e
 }
 
-function Z(e) {
+function B(e) {
   let t = window.getSelection();
   if (null == t || "Caret" !== t.type || null == e) return;
   let n = t.getRangeAt(0);

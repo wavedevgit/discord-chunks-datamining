@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk642650 = require("./642650.js"),
   Chunk595475 = require("./595475.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -62,8 +62,8 @@ function g(e) {
     title: i,
     shouldLoadVideo: a,
     isReducedMotion: u,
-    includeSideGradient: _ = false,
-    startLeftAligned: h = false,
+    includeSideGradient: p = false,
+    startLeftAligned: m = false,
     enablePremiumBrandRefreshDesign: g
   } = e, E = g ? f : d;
   return (0, r.jsxs)("div", {
@@ -88,8 +88,8 @@ function g(e) {
             n = l.y$.LARGE
         }
         return (0, r.jsx)(r.Fragment, {
-          children: e.map(e => (0, r.jsx)(c.Z, m(p({
-            index: t + +!!h
+          children: e.map(e => (0, r.jsx)(c.Z, h(_({
+            index: t + +!!m
           }, e), {
             size: n,
             shouldLoadVideo: a,
@@ -98,7 +98,7 @@ function g(e) {
           }), e.name))
         })
       })
-    }), _ && (0, r.jsx)("div", {
+    }), p && (0, r.jsx)("div", {
       className: d.bentoSideGradient
     })]
   })
@@ -107,7 +107,7 @@ let E = Chunk473749.memo(function(e) {
     let {
       whatsNewBoxes: t
     } = (0, l.ZP)();
-    return (0, r.jsx)(g, p({
+    return (0, r.jsx)(g, _({
       boxLayout: t,
       title: u.intl.string(u.t.LRmNAl),
       startLeftAligned: e.enablePremiumBrandRefreshDesign
@@ -117,7 +117,7 @@ let E = Chunk473749.memo(function(e) {
     let {
       bestOfBoxes: t
     } = (0, l.ZP)();
-    return (0, r.jsx)(g, p({
+    return (0, r.jsx)(g, _({
       boxLayout: t,
       title: u.intl.string(u.t.EnzW2H),
       includeSideGradient: !e.enablePremiumBrandRefreshDesign,

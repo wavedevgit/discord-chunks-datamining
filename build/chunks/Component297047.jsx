@@ -2,8 +2,8 @@
 /** chunk id: 297047, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h,
-  q: () => p
+  Z: () => m,
+  q: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t) {
+function _(e, t) {
   let {
     id: n
   } = e, r = "@".concat(d.ZP.getUserTag(e, {
@@ -30,7 +30,7 @@ function p(e, t) {
   }), null != t && o.Z.startTyping(t)
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   let [o, u] = (0, i.Wu)([c.Z, s.Z, l.Z], () => {
     let e = c.Z.getChannelId(t),
       n = s.Z.getChannel(e);
@@ -38,12 +38,12 @@ function h(e, t, n) {
   }, [t]), d = n === f.IlC.POPOUT;
   if (!u || d) return null;
 
-  function h() {
-    p(e, o)
+  function m() {
+    _(e, o)
   }
   return (0, r.jsx)(a.sNh, {
     id: "mention",
-    label: _.intl.string(_.t.P8tvKG),
-    action: h
+    label: p.intl.string(p.t.P8tvKG),
+    action: m
   })
 }

@@ -8,33 +8,33 @@ var Chunk102074 = require("./102074.js"),
 module.exports = function(e, t, n, l, c, u) {
   var d = n & o,
     f = e.length,
-    _ = t.length;
-  if (f != _ && !(d && _ > f)) returnfalse;
-  var p = u.get(e);
-  if (p && u.get(t)) return p == t;
-  var h = false,
-    m = true,
+    p = t.length;
+  if (f != p && !(d && p > f)) returnfalse;
+  var _ = u.get(e);
+  if (_ && u.get(t)) return _ == t;
+  var m = false,
+    h = true,
     g = n & s ? new r : true;
-  for (u.set(e, t), u.set(t, e); ++h < f;) {
-    var E = e[h],
-      b = t[h];
-    if (l) var y = d ? l(b, E, h, t, e, u) : l(E, b, h, e, t, u);
+  for (u.set(e, t), u.set(t, e); ++m < f;) {
+    var E = e[m],
+      b = t[m];
+    if (l) var y = d ? l(b, E, m, t, e, u) : l(E, b, m, e, t, u);
     if (true !== y) {
       if (y) continue;
-      m = false;
+      h = false;
       break
     }
     if (g) {
       if (!i(t, function(e, t) {
           if (!a(g, t) && (E === e || c(E, e, n, l, u))) return g.push(t)
         })) {
-        m = false;
+        h = false;
         break
       }
     } else if (!(E === b || c(E, b, n, l, u))) {
-      m = false;
+      h = false;
       break
     }
   }
-  return u.delete(e), u.delete(t), m
+  return u.delete(e), u.delete(t), h
 }

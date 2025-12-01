@@ -46,7 +46,7 @@ function c(e) {
     isDarkTheme: true
   }), {
     base: f,
-    text: _
+    text: p
   } = l({
     primaryColor: n,
     secondaryColor: r,
@@ -57,7 +57,7 @@ function c(e) {
     "--custom-theme-text-color-amount": "".concat(t ? a : 0, "%"),
     "--custom-theme-base-color-light-hsl": u(f),
     "--custom-theme-base-color-light": f.css(),
-    "--custom-theme-text-color-light": _.css(),
+    "--custom-theme-text-color-light": p.css(),
     "--custom-theme-base-color-dark-hsl": u(c),
     "--custom-theme-base-color-dark": c.css(),
     "--custom-theme-text-color-dark": d.css()

@@ -50,10 +50,10 @@ let {
   url: u,
   link: d,
   strong: f,
-  u: _,
-  br: p,
-  em: h,
-  image: m,
+  u: p,
+  br: _,
+  em: m,
+  image: h,
   text: g
 } = Chunk159635.defaultRules, E = {
   newline: l,
@@ -66,10 +66,10 @@ let {
     }
   }),
   strong: f,
-  u: _,
-  br: p,
-  em: h,
-  image: m,
+  u: p,
+  br: _,
+  em: m,
+  image: h,
   hook: {
     order: g.order,
     match: (0, Chunk159635.inlineRegex)(/^\$\[(.*?)\]\((\w+)\)/),

@@ -2,7 +2,7 @@
 /** chunk id: 229555, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,24 +15,24 @@ var Chunk120356 = require("./120356.js"),
   Chunk787528 = require("./787528.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk726185 = require("./726185.js");
-let _ = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? d.intl.format(d.t.Hu4jfi, {
+let p = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? d.intl.format(d.t.Hu4jfi, {
     date: null != t ? t : new Date
   }) : (null == e ? true : e.status) === c.Vq.UPCOMING ? d.intl.format(d.t.E85fll, {
     date: null != t ? t : new Date,
     days: e.daysLeft
   }) : null,
-  p = () => {
+  _ = () => {
     var e;
     let t = (0, Chunk848572.Rw)(),
       n = null != (e = (0, Chunk848572.GG)()) ? module : new Date,
       i = (0, Chunk787528.u)(null == exports ? true : exports.id);
     if (null == exports || null == Chunk120356) return null;
     let {
-      id: p,
-      nameUnformatted: h,
-      tenureReqNumMonths: m,
+      id: _,
+      nameUnformatted: m,
+      tenureReqNumMonths: h,
       hasWideArt: g
-    } = exports, E = Chunk388032.intl.string(h), b = (0, Chunk553896.q)(p, m), y = {
+    } = exports, E = Chunk388032.intl.string(m), b = (0, Chunk553896.q)(_, h), y = {
       "--custom-badge-glow-color": (0, Chunk302221.rj)(exports.glowColor, .5)
     };
     return (0, Chunk54381.jsxs)("div", {
@@ -57,7 +57,7 @@ let _ = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? d.intl.format(
           children: b
         }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-xs/normal",
-          children: _(exports, require)
+          children: p(exports, require)
         })]
       })]
     })

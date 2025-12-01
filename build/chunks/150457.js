@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   LN: () => s,
-  dj: () => _,
+  dj: () => p,
   hj: () => l
 });
 var Chunk798681 = require("./798681.js"),
@@ -29,7 +29,7 @@ let c = 30,
   d = 8,
   f = 3;
 
-function _() {
+function p() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 30;
   return module <= 5 ? f : module <= 15 ? d : module <= 30 ? u : c
 }

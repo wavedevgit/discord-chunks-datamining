@@ -45,7 +45,7 @@ function v(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,13 +56,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -80,59 +80,59 @@ function A(e, t) {
   return i
 }
 let C = function(e) {
-  var t, n, a, O, I, A, {
+  var t, n, a, O, S, A, {
       style: C,
       src: N,
-      backgroundSrc: R,
-      userId: P,
-      guildId: D,
-      pulseSpeakingIndicator: w = false,
-      speaking: L = false
+      backgroundSrc: P,
+      userId: R,
+      guildId: w,
+      pulseSpeakingIndicator: D = false,
+      speaking: x = false
     } = e,
-    x = S(e, ["style", "src", "backgroundSrc", "userId", "guildId", "pulseSpeakingIndicator", "speaking"]);
-  let M = null != R ? R : N,
-    k = (0, c.ZP)(M, s.Z.unsafe_rawColors.PRIMARY_800.css),
-    j = (0, u.c)(true, "VideoBackground-web").enabled,
-    U = (0, _.ZP)(null != P ? P : E.lds, D),
+    L = T(e, ["style", "src", "backgroundSrc", "userId", "guildId", "pulseSpeakingIndicator", "speaking"]);
+  let j = null != P ? P : N,
+    M = (0, c.ZP)(j, s.Z.unsafe_rawColors.PRIMARY_800.css),
+    k = (0, u.c)(true, "VideoBackground-web").enabled,
+    U = (0, p.ZP)(null != R ? R : E.lds, w),
     G = null != (O = (0, f.V3)(null == U || null == (t = U.themeColors) ? true : t[0])) ? O : E.BRd.DARK,
     {
-      profileThemeStyle: B,
-      profileThemeClassName: Z
-    } = (0, p.Z)({
+      profileThemeStyle: Z,
+      profileThemeClassName: B
+    } = (0, _.Z)({
       theme: G,
       themeType: b.l.VIDEO_TILE_BACKGROUND,
-      primaryColor: null != (I = null == U || null == (n = U.themeColors) ? true : n[0]) ? I : null,
+      primaryColor: null != (S = null == U || null == (n = U.themeColors) ? true : n[0]) ? S : null,
       secondaryColor: null != (A = null == U || null == (a = U.themeColors) ? true : a[1]) ? A : null
     }),
     F = null == U ? true : U.getBannerURL({
       size: 1024,
-      canAnimate: m.QK.getSetting()
+      canAnimate: h.QK.getSetting()
     }),
     {
       useProfileColors: V
     } = (0, g.$i)("VideoBackground-web"),
-    H = V || j;
+    H = V || k;
   if (i.useEffect(() => {
-      null != P && H && (0, h.Z)(P, true, {
-        guildId: D,
+      null != R && H && (0, m.Z)(R, true, {
+        guildId: w,
         dispatchWait: true
       })
-    }, [H, P, D]), null == N) return null;
-  let W = (0, r.jsx)(l.qEK, v({
+    }, [H, R, w]), null == N) return null;
+  let Y = (0, r.jsx)(l.qEK, v({
       className: y.avatarWrapper,
       src: N
-    }, x)),
-    Y = T(v({}, C), {
-      backgroundColor: k
+    }, L)),
+    W = I(v({}, C), {
+      backgroundColor: M
     });
-  return null != F && L && j && (Y.backgroundImage = "url(".concat(F, ")"), Y.backgroundSize = "cover"), (0, r.jsx)("div", {
-    style: V ? v({}, C, B) : v({}, Y),
+  return null != F && x && k && (W.backgroundImage = "url(".concat(F, ")"), W.backgroundSize = "cover"), (0, r.jsx)("div", {
+    style: V ? v({}, C, Z) : v({}, W),
     className: o()(y.background, {
-      [Z]: V
+      [B]: V
     }),
-    children: w ? (0, r.jsx)(d.Z, {
-      shouldAnimate: L,
-      children: W
-    }) : W
+    children: D ? (0, r.jsx)(d.Z, {
+      shouldAnimate: x,
+      children: Y
+    }) : Y
   })
 }

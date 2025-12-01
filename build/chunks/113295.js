@@ -12,13 +12,13 @@ let Chunk40231 = require("./40231.js"),
   Chunk689478 = require("./689478.js"),
   Chunk725616 = require("./725616.js");
 module.exports = (e, t, n, f) => {
-  let _, p, h, m, g;
+  let p, _, m, h, g;
   switch (e = new r(e, f), t = new o(t, f), n) {
     case ">":
-      _ = l, p = u, h = c, m = ">", g = ">=";
+      p = l, _ = u, m = c, h = ">", g = ">=";
       break;
     case "<":
-      _ = c, p = d, h = l, m = "<", g = "<=";
+      p = c, _ = d, m = l, h = "<", g = "<=";
       break;
     default:
       throw TypeError('Must provide a hilo val of "<" or ">"')
@@ -29,8 +29,8 @@ module.exports = (e, t, n, f) => {
       o = null,
       s = null;
     if (r.forEach(e => {
-        e.semver === a && (e = new i(">=0.0.0")), o = o || e, s = s || e, _(e.semver, o.semver, f) ? o = e : h(e.semver, s.semver, f) && (s = e)
-      }), o.operator === m || o.operator === g || (!s.operator || s.operator === m) && p(e, s.semver) || s.operator === g && h(e, s.semver)) returnfalse
+        e.semver === a && (e = new i(">=0.0.0")), o = o || e, s = s || e, p(e.semver, o.semver, f) ? o = e : m(e.semver, s.semver, f) && (s = e)
+      }), o.operator === h || o.operator === g || (!s.operator || s.operator === h) && _(e, s.semver) || s.operator === g && m(e, s.semver)) returnfalse
   }
   returntrue
 }

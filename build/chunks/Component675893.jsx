@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -43,22 +43,22 @@ function g(e) {
   let {
     user: t,
     widgets: n = [],
-    onOpenUserProfileModal: h
+    onOpenUserProfileModal: m
   } = e, g = i.useMemo(() => n.filter(e => e instanceof s.q), [n]), {
     analyticsLocations: E
   } = (0, a.ZP)(), {
     trackUserProfileAction: b
   } = (0, o.KZ)(), y = (0, c.d)(t.id, g), O = i.useCallback(() => {
-    null == h || h({
-      section: _.oh.WIDGETS
+    null == m || m({
+      section: p.oh.WIDGETS
     })
-  }, [h]), v = i.useCallback(e => {
+  }, [m]), v = i.useCallback(e => {
     let t = false,
       i = [];
-    for (let a of n) a instanceof s.q ? null != y[a.applicationId] && i.push((0, r.jsx)(d.Z, m({
+    for (let a of n) a instanceof s.q ? null != y[a.applicationId] && i.push((0, r.jsx)(d.Z, h({
       previewData: y[a.applicationId],
       onClick: O
-    }, e), "application-widget-".concat(a.applicationId))) : a instanceof l.zy && !t && (i.push((0, r.jsx)(f.Z, m({
+    }, e), "application-widget-".concat(a.applicationId))) : a instanceof l.zy && !t && (i.push((0, r.jsx)(f.Z, h({
       widgets: n,
       onClick: O
     }, e), "collection-breadcrumb")), t = true);
@@ -66,7 +66,7 @@ function g(e) {
   }, [y, O, n]);
   return 0 === n.length ? null : (0, r.jsx)(u.Z, {
     renderCards: v,
-    heading: p.intl.string(p.t.Y55Tua),
+    heading: _.intl.string(_.t.Y55Tua),
     onExpand: () => {
       b({
         action: "PRESS_SHOW_MORE_WIDGETS",

@@ -11,17 +11,17 @@ var Chunk146063 = require("./146063.js"),
   Chunk511696 = require("./511696.js"),
   Chunk507604 = require("./507604.js"),
   f = "Array Iterator",
-  _ = Chunk199838.set,
-  p = Chunk199838.getterFor(f);
+  p = Chunk199838.set,
+  _ = Chunk199838.getterFor(f);
 module.exports = Chunk130006(Array, "Array", function(e, t) {
-  _(this, {
+  p(this, {
     type: f,
     target: r(e),
     index: 0,
     kind: t
   })
 }, function() {
-  var e = p(this),
+  var e = _(this),
     t = module.target,
     n = module.index++;
   if (!exports || require >= exports.length) return module.target = null, Chunk682564(true, true);
@@ -33,9 +33,9 @@ module.exports = Chunk130006(Array, "Array", function(e, t) {
   }
   return Chunk682564([require, exports[require]], false)
 }, "values");
-var h = Chunk933121.Arguments = Chunk933121.Array;
-if (Chunk967333("keys"), Chunk967333("values"), Chunk967333("entries"), !Chunk511696 && Chunk507604 && "values" !== h.name) try {
-  s(h, "name", {
+var m = Chunk933121.Arguments = Chunk933121.Array;
+if (Chunk967333("keys"), Chunk967333("values"), Chunk967333("entries"), !Chunk511696 && Chunk507604 && "values" !== m.name) try {
+  s(m, "name", {
     value: "values"
   })
 } catch (e) {}

@@ -28,14 +28,14 @@ function g(e) {
     skuId: y,
     guildId: O,
     transitionState: v,
-    onHeaderTitleClick: I
+    onHeaderTitleClick: S
   } = e, {
-    data: T
-  } = (0, c.H)(y), S = null == T ? true : T[0], {
+    data: I
+  } = (0, c.H)(y), T = null == I ? true : I[0], {
     data: A
   } = (0, l.Z)(y), C = i.useMemo(() => {
     var e;
-    return (null == A ? true : A.thumbnail) != null && null != (e = _.Z.toURLSafe((0, f._W)(g, A.thumbnail, 256))) ? e : true
+    return (null == A ? true : A.thumbnail) != null && null != (e = p.Z.toURLSafe((0, f._W)(g, A.thumbnail, 256))) ? e : true
   }, [g, null == A ? true : A.thumbnail]), N = i.useMemo(() => {
     let e = null == A ? true : A.benefits;
     if (null != e && 0 !== e.length) return e.map(e => ({
@@ -45,27 +45,27 @@ function g(e) {
       icon: (0, u.n)(g, e.icon)
     }))
   }, [g, null == A ? true : A.benefits]), {
-    openModal: R,
-    subscriptionPurchaseButtonState: P
+    openModal: P,
+    subscriptionPurchaseButtonState: R
   } = (0, d.Z)({
     skuId: y,
     initialSubscribeForGuild: null != O ? O : true
   });
-  return null == A ? null : (0, r.jsx)(p.A, {
+  return null == A ? null : (0, r.jsx)(_.A, {
     appId: g,
     skuId: y,
     transitionState: v,
-    onHeaderTitleClick: null != I ? I : b,
+    onHeaderTitleClick: null != S ? S : b,
     onClose: b,
-    footer: (0, r.jsx)(h.pV, {
-      onClick: R,
+    footer: (0, r.jsx)(m.pV, {
+      onClick: P,
       appId: g,
       subscriptionType: E,
       skuId: y,
-      subscriptionPlan: S,
-      state: P
+      subscriptionPlan: T,
+      state: R
     }),
-    children: (0, r.jsx)(m.i, {
+    children: (0, r.jsx)(h.i, {
       appId: g,
       skuId: y,
       benefits: null != N ? N.map(e => (0, r.jsx)(a.Gm, {
@@ -75,7 +75,7 @@ function g(e) {
       }, e.id)) : true,
       description: null != (t = A.description) ? t : true,
       imgSrc: C,
-      title: null != (n = null == S ? true : S.name) ? n : A.summary,
+      title: null != (n = null == T ? true : T.name) ? n : A.summary,
       tag: (0, r.jsx)(o.Z, {
         type: E
       }),

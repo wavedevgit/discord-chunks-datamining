@@ -20,34 +20,34 @@ let d = e => {
     className: i,
     verified: d,
     hideIcon: f = false,
-    useRemSizes: _ = false,
-    children: p = []
-  } = e, h = null, m = c.intl.string(c.t.g76OcH), g = t ? u.botTagInvert : u.botTagRegular;
+    useRemSizes: p = false,
+    children: _ = []
+  } = e, m = null, h = c.intl.string(c.t.g76OcH), g = t ? u.botTagInvert : u.botTagRegular;
   switch (n) {
     case l.Hb.SYSTEM_DM:
     case l.Hb.OFFICIAL:
-      d = true, m = c.intl.string(c.t["7s687k"]), h = c.intl.string(c.t.lKQ7Wt);
+      d = true, h = c.intl.string(c.t["7s687k"]), m = c.intl.string(c.t.lKQ7Wt);
       break;
     case l.Hb.SERVER:
-      h = c.intl.string(c.t.PuJGuM);
+      m = c.intl.string(c.t.PuJGuM);
       break;
     case l.Hb.ORIGINAL_POSTER:
-      h = c.intl.string(c.t.fyE8sH);
+      m = c.intl.string(c.t.fyE8sH);
       break;
     case l.Hb.STAFF_ONLY_DM:
-      h = c.intl.string(c.t.oMx98L);
+      m = c.intl.string(c.t.oMx98L);
       break;
     case l.Hb.NOT_STAFF_WARNING:
-      h = c.intl.string(c.t.UWhXbK), g = u.botTagNotStaffWarning;
+      m = c.intl.string(c.t.UWhXbK), g = u.botTagNotStaffWarning;
       break;
     case l.Hb.BOT:
     default:
-      h = c.intl.string(c.t["9RNkeF"])
+      m = c.intl.string(c.t["9RNkeF"])
   }
   let E = n === l.Hb.ORIGINAL_POSTER,
     b = null;
   d && (b = (0, r.jsx)(o.u, {
-    text: m,
+    text: h,
     align: "center",
     position: "top",
     children: (0, r.jsx)(s.kSu, {
@@ -56,12 +56,12 @@ let d = e => {
     })
   }));
   let y = () => (0, r.jsxs)("span", {
-    className: a()(i, g, _ ? u.rem : u.px, {
+    className: a()(i, g, p ? u.rem : u.px, {
       [u.botTagOP]: E
     }),
-    children: [f ? null : b, p, (0, r.jsx)("span", {
+    children: [f ? null : b, _, (0, r.jsx)("span", {
       className: u.botText,
-      children: h
+      children: m
     })]
   });
   return n === l.Hb.ORIGINAL_POSTER ? (0, r.jsx)(o.u, {

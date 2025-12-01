@@ -21,8 +21,8 @@ function f(e) {
     question: n,
     questionId: i,
     responses: f,
-    onResponseChange: _
-  } = e, p = (() => {
+    onResponseChange: p
+  } = e, _ = (() => {
     var e, t;
     switch (n.QuestionType) {
       case c.S.TEXT_ENTRY:
@@ -30,14 +30,14 @@ function f(e) {
           question: n,
           questionId: i,
           value: null != (e = f[i]) ? e : "",
-          onValueChange: _
+          onValueChange: p
         });
       case c.S.MULTIPLE_CHOICE:
         return (0, r.jsx)(s.Z, {
           question: n,
           questionId: i,
           value: null != (t = f[i]) ? t : "",
-          onValueChange: _
+          onValueChange: p
         });
       case c.S.DESCRIPTIVE_BLOCK:
         return (0, r.jsx)("div", {});
@@ -45,7 +45,7 @@ function f(e) {
         return null
     }
   })();
-  return null == p ? null : (0, r.jsxs)("div", {
+  return null == _ ? null : (0, r.jsxs)("div", {
     className: a()(d.markup, u.container),
     children: [(0, r.jsx)(o.xvT, {
       variant: "text-lg/normal",
@@ -55,6 +55,6 @@ function f(e) {
           __html: null != (t = n.QuestionText_Unsafe) ? t : ""
         }
       })
-    }), p]
+    }), _]
   })
 }

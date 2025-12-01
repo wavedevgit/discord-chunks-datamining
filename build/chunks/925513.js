@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   Jr: () => g,
-  O6: () => m,
+  O6: () => h,
   _i: () => f,
   v6: () => E,
-  zR: () => h
+  zR: () => m
 });
 var Chunk473749 = require("./473749.js"),
   Chunk524437 = require("./524437.js"),
@@ -46,39 +46,39 @@ let f = e => {
     if (null != t && t !== i.Q4.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
     let s = l.default.getCurrentUser(),
       c = (0, o.U)("resolveExplicitContentSettingWithDefaults");
-    return (0, a.c_)("resolveExplicitContentSettingWithDefaults") || c ? _({
+    return (0, a.c_)("resolveExplicitContentSettingWithDefaults") || c ? p({
       isDm: n,
       isFriend: r
-    }) : (null == s ? true : s.nsfwAllowed) === false ? h({
+    }) : (null == s ? true : s.nsfwAllowed) === false ? m({
       isDm: n,
       isFriend: r
-    }) : p({
+    }) : _({
       isDm: n,
       isFriend: r
     })
-  },
-  _ = e => {
-    let {
-      isDm: t = false,
-      isFriend: n = false
-    } = e;
-    return t && !n ? i.Q4.BLOCK : i.Q4.BLUR
   },
   p = e => {
     let {
       isDm: t = false,
       isFriend: n = false
     } = e;
+    return t && !n ? i.Q4.BLOCK : i.Q4.BLUR
+  },
+  _ = e => {
+    let {
+      isDm: t = false,
+      isFriend: n = false
+    } = e;
     return t && n ? i.Q4.SHOW : t ? i.Q4.BLOCK : i.Q4.SHOW
   },
-  h = e => {
+  m = e => {
     let {
       isDm: t = false,
       isFriend: n = false
     } = e;
     return t && n ? i.Q4.BLUR : t ? i.Q4.BLOCK : i.Q4.BLUR
   },
-  m = e => {
+  h = e => {
     let t = null != e ? e : s.j7.getSetting();
     return {
       goreContentGuilds: f({
@@ -96,7 +96,7 @@ let f = e => {
     }
   },
   g = e => {
-    let t = m();
+    let t = h();
     s.j7.updateSetting(d({}, t, e))
   },
   E = () => Chunk473749.useMemo(() => Chunk981631.BhN.EXPLICIT_MEDIA_REDACTION, [])

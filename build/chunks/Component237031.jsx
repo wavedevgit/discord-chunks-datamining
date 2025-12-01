@@ -2,8 +2,8 @@
 /** chunk id: 237031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => _,
-  v: () => p
+  T: () => p,
+  v: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -51,15 +51,15 @@ function d(e, t) {
   }), e
 }
 let f = "collectibles shop product details modal",
-  _ = e => {
+  p = e => {
     let {
       product: t,
       category: l,
       shouldCheckoutWithOrbs: u,
-      analyticsSource: _,
-      analyticsLocations: p,
-      returnRef: h,
-      tab: m,
+      analyticsSource: p,
+      analyticsLocations: _,
+      returnRef: m,
+      tab: h,
       rentalDuration: g
     } = e;
     if (s.y8.some(e => {
@@ -80,16 +80,16 @@ let f = "collectibles shop product details modal",
         product: t,
         category: l,
         shouldCheckoutWithOrbs: u,
-        analyticsSource: _,
-        analyticsLocations: p,
-        returnRef: h,
-        tab: m,
+        analyticsSource: p,
+        analyticsLocations: _,
+        returnRef: m,
+        tab: h,
         rentalDuration: g
       }))
     }, {
       modalKey: f
     })
   },
-  p = () => {
+  _ = () => {
     (0, Chunk481060.Mr3)(f)
   }

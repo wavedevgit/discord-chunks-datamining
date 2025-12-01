@@ -63,18 +63,18 @@ function f(e) {
   } = e, u = c(e, ["isSelfStream", "centerButton", "onMouseEnter", "onMouseLeave"]);
   let f = n ? a.d : a.Z,
     {
-      Component: _,
-      events: p
+      Component: p,
+      events: _
     } = (0, i.P)("disable");
   return (0, r.jsx)(f, l({
     label: d(t),
     isTrayButton: false,
-    iconComponent: _,
+    iconComponent: p,
     onMouseEnter: e => {
-      null == o || o(e), p.onMouseEnter()
+      null == o || o(e), _.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == s || s(e), p.onMouseLeave()
+      null == s || s(e), _.onMouseLeave()
     }
   }, u))
 }

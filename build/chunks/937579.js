@@ -2,8 +2,8 @@
 /** chunk id: 937579, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Qe: () => m,
-  Tf: () => h,
+  Qe: () => h,
+  Tf: () => m,
   ab: () => E,
   ev: () => g
 }), require("./415506.js");
@@ -26,7 +26,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,11 +38,11 @@ function _(e) {
   }
   return e
 }
-let p = () => {
+let _ = () => {
   let e = null;
   return (0, Chunk358085.isAndroid)() ? e = Chunk981631.gg$.GOOGLE : (0, Chunk358085.isIOS)() && (e = Chunk981631.gg$.APPLE), module
 };
-async function h(e) {
+async function m(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
       offerId: true,
@@ -55,14 +55,14 @@ async function h(e) {
       type: "BILLING_USER_OFFER_FETCH_START"
     });
     try {
-      var h, m, g;
+      var m, h, g;
       null != e && l.default.track(d.rMx.FETCH_USER_OFFER_STARTED, {
         call_location: e
       });
       let {
         offerId: t,
         paymentGatewayOverride: E
-      } = n, b = true !== E ? E : p(), y = null != b || null != t ? {
+      } = n, b = true !== E ? E : _(), y = null != b || null != t ? {
         payment_gateway: b,
         offer_id: t
       } : {}, O = await r.tn.post({
@@ -70,25 +70,25 @@ async function h(e) {
         body: y,
         rejectWithError: true,
         retries: null != c ? c.retries : true
-      }), v = null != (h = O.body.user_trial_offer) ? h : null, I = null != (m = O.body.user_discount) ? m : null, T = null != (g = O.body.user_discount_offer) ? g : null;
-      if (null != t && null != T && T.discount_id !== t) {
+      }), v = null != (m = O.body.user_trial_offer) ? m : null, S = null != (h = O.body.user_discount) ? h : null, I = null != (g = O.body.user_discount_offer) ? g : null;
+      if (null != t && null != I && I.discount_id !== t) {
         let e = Error("Returned user discount offer does not match offer ID request parameter");
-        throw u.Z.captureException(e, _({
+        throw u.Z.captureException(e, p({
           extra: {
             offer_id: t,
-            user_discount_offer: T
+            user_discount_offer: I
           }
         }, f)), e
       }
       return null == v && (0, o.zu)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, s.w9)(i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), a.Z.dispatch({
         type: "BILLING_USER_OFFER_FETCH_SUCCESS",
         userTrialOffer: v,
-        userDiscount: I,
-        userDiscountOffer: T
+        userDiscount: S,
+        userDiscountOffer: I
       }), {
         userTrialOffer: v,
-        userDiscount: I,
-        userDiscountOffer: T
+        userDiscount: S,
+        userDiscountOffer: I
       }
     } catch (e) {
       a.Z.dispatch({
@@ -97,7 +97,7 @@ async function h(e) {
     }
   }
 }
-async function m() {
+async function h() {
   Chunk570140.Z.dispatch({
     type: "BILLING_USER_OFFER_FETCH_START"
   });

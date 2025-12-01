@@ -2,7 +2,7 @@
 /** chunk id: 135845, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,58 +25,58 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk105341 = require("./105341.js");
 
-function I(e) {
+function S(e) {
   let t, n, {
       invite: a,
-      currentUserId: I,
-      guild: T,
-      message: S,
+      currentUserId: S,
+      guild: I,
+      message: T,
       onTransitionToInviteChannel: A,
       onAcceptInstantInvite: C
     } = e,
-    N = null == T ? true : T.id,
-    R = (0, l.e7)([h.Z], () => h.Z.getGuildId()),
-    P = (0, l.e7)([p.Z], () => null != a && null != a.target_user ? p.Z.getActiveStreamForUser(a.target_user.id, N) : null, [a, N]),
-    D = (0, l.e7)([p.Z], () => null != a && null != a.target_user ? p.Z.getStreamForUser(a.target_user.id, N) : null, [a, N]),
+    N = null == I ? true : I.id,
+    P = (0, l.e7)([m.Z], () => m.Z.getGuildId()),
+    R = (0, l.e7)([_.Z], () => null != a && null != a.target_user ? _.Z.getActiveStreamForUser(a.target_user.id, N) : null, [a, N]),
+    w = (0, l.e7)([_.Z], () => null != a && null != a.target_user ? _.Z.getStreamForUser(a.target_user.id, N) : null, [a, N]),
     {
-      analyticsLocations: w
+      analyticsLocations: D
     } = (0, d.ZP)(u.Z.INVITE_EMBED),
-    L = null != a && a.target_type === y.Iq.STREAM && null != a.target_user && null != P,
-    x = null != a && null != D && null != a.channel && null != a.guild && D.channelId === a.channel.id && D.guildId === a.guild.id;
+    x = null != a && a.target_type === y.Iq.STREAM && null != a.target_user && null != R,
+    L = null != a && null != w && null != a.channel && null != a.guild && w.channelId === a.channel.id && w.guildId === a.guild.id;
   o()(null != a, "Invite cannot be null");
   let {
-    target_type: M,
-    target_user: k
+    target_type: j,
+    target_user: M
   } = a;
-  o()(M === y.Iq.STREAM && null != k, "invalid streaming invite");
-  let j = I === k.id,
+  o()(j === y.Iq.STREAM && null != M, "invalid streaming invite");
+  let k = S === M.id,
     U = a.state === b.r2o.ACCEPTING,
     G = i.useCallback(() => {
       let e = "noop";
-      L ? (A(), e = "transition") : (C(), e = "accept"), (0, c.r$)({
+      x ? (A(), e = "transition") : (C(), e = "accept"), (0, c.r$)({
         invite: a,
         action: e,
-        inviter_id: S.author.id,
-        invite_message_id: S.id
-      }, w)
-    }, [a, S, w, L, A, C]),
-    B = null != T;
-  if (null == T) {
+        inviter_id: T.author.id,
+        invite_message_id: T.id
+      }, D)
+    }, [a, T, D, x, A, C]),
+    Z = null != I;
+  if (null == I) {
     if (null == a.guild) return (0, r.jsx)(E.Z, {});
-    T = (0, m.Qs)(a.guild)
+    I = (0, h.Qs)(a.guild)
   }
-  let Z = null != a.channel ? (0, _.jD)(a.channel) : null,
-    F = g.ZP.getName(k),
+  let B = null != a.channel ? (0, p.jD)(a.channel) : null,
+    F = g.ZP.getName(M),
     V = "active";
-  B && !x ? n = j ? O.intl.string(O.t.oBLoZJ) : O.intl.formatToPlainString(O.t["0QJmA+"], {
+  Z && !L ? n = k ? O.intl.string(O.t.oBLoZJ) : O.intl.formatToPlainString(O.t["0QJmA+"], {
     name: F
-  }) : (t = O.intl.string(O.t.I6JG46), V = "active", L && (t = O.intl.string(O.t.Q1W99y), V = "secondary"), n = j ? O.intl.string(O.t["4hyaHu"]) : O.intl.formatToPlainString(O.t.QmlLEq, {
+  }) : (t = O.intl.string(O.t.I6JG46), V = "active", x && (t = O.intl.string(O.t.Q1W99y), V = "secondary"), n = k ? O.intl.string(O.t["4hyaHu"]) : O.intl.formatToPlainString(O.t.QmlLEq, {
     name: F
   }));
-  let H = R === T.id && null != Z ? (0, r.jsx)(f.Z.Channel, {
-    channel: Z
+  let H = P === I.id && null != B ? (0, r.jsx)(f.Z.Channel, {
+    channel: B
   }) : O.intl.formatToPlainString(O.t.u0vaDE, {
-    guildName: T.name
+    guildName: I.name
   });
   return (0, r.jsxs)(f.Z, {
     children: [(0, r.jsx)(f.Z.Header, {
@@ -85,17 +85,17 @@ function I(e) {
       children: [(0, r.jsxs)("div", {
         className: v.headerLine,
         children: [(0, r.jsx)(f.Z.Icon, {
-          guild: T,
-          onClick: B && x ? G : true
+          guild: I,
+          onClick: Z && L ? G : true
         }), (0, r.jsx)(f.Z.Info, {
           title: n,
-          onClick: B && x ? G : true,
+          onClick: Z && L ? G : true,
           children: H
         })]
-      }), x ? (0, r.jsx)(s.zxk, {
+      }), L ? (0, r.jsx)(s.zxk, {
         onClick: G,
         loading: U,
-        disabled: L,
+        disabled: x,
         variant: V,
         text: t
       }) : null]

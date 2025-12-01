@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   U5: () => O,
-  ZP: () => I,
+  ZP: () => S,
   pp: () => y
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
@@ -19,7 +19,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk427679 = require("./427679.js"),
   Chunk754277 = require("./754277.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,9 +27,9 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = e => e / 400,
+let h = e => e / 400,
   g = false,
-  E = (0, Chunk460181.tu)("stage_waiting", "stage_waiting", m(Chunk131951.Z.getOutputVolume()));
+  E = (0, Chunk460181.tu)("stage_waiting", "stage_waiting", h(Chunk131951.Z.getOutputVolume()));
 
 function b() {
   let e = Chunk944486.Z.getVoiceChannelId();
@@ -43,7 +43,7 @@ function b() {
     return
   }
   if (Chunk754277.Z.shouldPlay()) {
-    E.volume = m(Chunk131951.Z.getOutputVolume()), E.loop(), g = true;
+    E.volume = h(Chunk131951.Z.getOutputVolume()), E.loop(), g = true;
     return
   }
   if (Chunk427679.Z.isLive(module)) {
@@ -55,20 +55,20 @@ function b() {
     return
   }
   let n = null != Object.values(Chunk979651.Z.getVoiceStatesForChannel(module)).find(e => !e.suppress && !e.isVoiceMuted());
-  require || g ? require && (E.pause(), g = false) : (E.volume = m(Chunk131951.Z.getOutputVolume()), E.loop(), g = true)
+  require || g ? require && (E.pause(), g = false) : (E.volume = h(Chunk131951.Z.getOutputVolume()), E.loop(), g = true)
 }
 
 function y(e) {
   let t = (0, r.e7)([l.Z], () => l.Z.getVoiceChannelId() === e),
     n = null != (0, d.w8)(e, f.pV.SPEAKER).find(e => !e.voiceState.isVoiceMuted()),
-    i = (0, r.e7)([_.Z], () => _.Z.getStageInstanceByChannel(e));
+    i = (0, r.e7)([p.Z], () => p.Z.getStageInstanceByChannel(e));
   return t && null == i && !n
 }
 
 function O(e) {
   let t = l.Z.getVoiceChannelId() === e,
     n = null != u.Z.getMutableParticipants(e, f.pV.SPEAKER).find(e => !e.voiceState.isVoiceMuted()),
-    r = _.Z.getStageInstanceByChannel(e);
+    r = p.Z.getStageInstanceByChannel(e);
   return t && null == r && !n
 }
 class v extends Chunk147913.Z {
@@ -103,13 +103,13 @@ class v extends Chunk147913.Z {
     let {
       volume: t
     } = e;
-    E.volume = m(t)
+    E.volume = h(t)
   }
   handleToggleSelfDeaf() {
     b()
   }
   constructor(...e) {
-    super(...e), h(this, "actions", {
+    super(...e), m(this, "actions", {
       VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect,
       LOGOUT: this.handleLogout,
       STAGE_MUSIC_MUTE: this.handleMute,
@@ -120,4 +120,4 @@ class v extends Chunk147913.Z {
     })
   }
 }
-let I = new v
+let S = new v

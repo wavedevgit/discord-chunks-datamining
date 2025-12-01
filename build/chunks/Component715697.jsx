@@ -2,7 +2,7 @@
 /** chunk id: 715697, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,34 +16,34 @@ var Chunk120356 = require("./120356.js"),
   Chunk902692 = require("./902692.js"),
   Chunk781452 = require("./781452.js");
 
-function _(e) {
+function p(e) {
   var t, n;
   let {
     className: i,
     embed: {
-      url: _
+      url: p
     }
-  } = e, p = (0, s.e7)([c.Z], () => (0, l.wj)(c.Z.theme));
-  if (null == _) return null;
-  let h = null,
-    m = null,
+  } = e, _ = (0, s.e7)([c.Z], () => (0, l.wj)(c.Z.theme));
+  if (null == p) return null;
+  let m = null,
+    h = null,
     g = null;
   try {
-    let e = o.parse(_, true);
-    h = e.host, m = e.pathname, g = null != (n = e.query.i) ? n : null, Array.isArray(g) && (g = g[0])
+    let e = o.parse(p, true);
+    m = e.host, h = e.pathname, g = null != (n = e.query.i) ? n : null, Array.isArray(g) && (g = g[0])
   } catch (e) {
     return null
   }
-  if (!(0, u.L)(h) || null == m) return null;
-  let E = /^\/([a-z]{2}(?:-[a-z]{2})?)\//.test(m) ? 2 : 1,
-    b = null == (t = m.split("/")[E]) ? true : t.toLowerCase();
+  if (!(0, u.L)(m) || null == h) return null;
+  let E = /^\/([a-z]{2}(?:-[a-z]{2})?)\//.test(h) ? 2 : 1,
+    b = null == (t = h.split("/")[E]) ? true : t.toLowerCase();
   null != g && (b = "song");
   let y = 450;
-  "song" === b ? y = 175 : "music-video" === b && (y = 371), m = m.substr(1);
-  let O = p ? "dark" : "light";
+  "song" === b ? y = 175 : "music-video" === b && (y = 371), h = h.substr(1);
+  let O = _ ? "dark" : "light";
   return (0, r.jsx)("iframe", {
     className: a()(f.embedAppleMusic, i),
-    src: d.P.EMBED(m, O, g),
+    src: d.P.EMBED(h, O, g),
     style: {
       maxWidth: 660,
       minWidth: 300,

@@ -18,28 +18,28 @@ function f(e) {
   var t, n;
   let {
     message: f,
-    channel: _,
-    enabled: p = true
-  } = e, h = (0, o.e7)([s.Z], () => {
+    channel: p,
+    enabled: _ = true
+  } = e, m = (0, o.e7)([s.Z], () => {
     var e;
-    let t = s.Z.getGuild(_.guild_id);
+    let t = s.Z.getGuild(p.guild_id);
     return null != (e = null == t ? true : t.features.has(u.GuildFeatures.COMMUNITY)) && e
-  }, [_.guild_id]), m = (null == (t = f.messageReference) ? true : t.guild_id) != null && null != f.webhookId && f.hasFlag(u.iLy.IS_CROSSPOST) && null != _.guild_id, g = _.type === a.d.GUILD_ANNOUNCEMENT && h, E = !f.hasFlag(u.iLy.EPHEMERAL) && (m || g), b = m && null != f.messageReference ? f.messageReference.message_id : f.id, y = m && null != f.messageReference ? f.messageReference.channel_id : _.id, O = m && (null == (n = f.messageReference) ? true : n.guild_id) != null ? f.messageReference.guild_id : _.guild_id, v = r.useCallback(e => {
+  }, [p.guild_id]), h = (null == (t = f.messageReference) ? true : t.guild_id) != null && null != f.webhookId && f.hasFlag(u.iLy.IS_CROSSPOST) && null != p.guild_id, g = p.type === a.d.GUILD_ANNOUNCEMENT && m, E = !f.hasFlag(u.iLy.EPHEMERAL) && (h || g), b = h && null != f.messageReference ? f.messageReference.message_id : f.id, y = h && null != f.messageReference ? f.messageReference.channel_id : p.id, O = h && (null == (n = f.messageReference) ? true : n.guild_id) != null ? f.messageReference.guild_id : p.guild_id, v = r.useCallback(e => {
     e ? c.Z.handleMessageBecameVisible({
       type: c.k.ANNOUNCEMENT,
       messageId: b,
-      channelId: _.id,
-      guildId: _.guild_id,
+      channelId: p.id,
+      guildId: p.guild_id,
       sourceChannelId: y,
       sourceGuildId: O
     }) : c.Z.handleMessageLostVisibility(b, c.k.ANNOUNCEMENT)
-  }, [b, _.id, _.guild_id, y, O]), I = l.Z.useExperiment({
+  }, [b, p.id, p.guild_id, y, O]), S = l.Z.useExperiment({
     location: "836a4b_1"
   }, {
-    disable: !E || !p,
+    disable: !E || !_,
     autoTrackExposure: true
-  }).enabled, T = (0, i.O)(v, d, I);
+  }).enabled, I = (0, i.O)(v, d, S);
   return r.useEffect(() => () => {
     c.Z.handleMessageLostVisibility(b, c.k.ANNOUNCEMENT)
-  }, [b]), T
+  }, [b]), I
 }

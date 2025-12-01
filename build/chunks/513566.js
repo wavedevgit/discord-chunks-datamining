@@ -2,7 +2,7 @@
 /** chunk id: 513566, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./388685.js");
 var Chunk348327 = require("./348327.js"),
   i = require.n(Chunk348327),
@@ -32,7 +32,7 @@ function v(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class I extends Chunk317770.Z {
+class S extends Chunk317770.Z {
   _initialize() {
     this.isSupported && (Chunk570140.Z.subscribe("AUDIO_SET_MODE", this.handleViewUpdate), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleViewUpdate), Chunk570140.Z.subscribe("START_SESSION", this.handleViewUpdate), Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleViewUpdate), Chunk570140.Z.subscribe("CONNECTION_CLOSED", this.handleViewUpdate), Chunk570140.Z.subscribe("CALL_CREATE", this.handleViewUpdate), Chunk570140.Z.subscribe("CALL_UPDATE", this.handleViewUpdate), Chunk570140.Z.subscribe("CALL_DELETE", this.handleViewUpdate), Chunk570140.Z.subscribe("CHANNEL_DELETE", this.handleViewUpdate), Chunk570140.Z.subscribe("VOICE_STATE_UPDATES", this.handleViewUpdate), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleViewUpdate), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", this.handleViewUpdate), Chunk570140.Z.subscribe("AUDIO_TOGGLE_LOCAL_MUTE", this.handleViewUpdate), Chunk570140.Z.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleViewUpdate), Chunk998502.ZP.on("THUMBAR_BUTTONS_CLICKED", (e, t) => this.buttonClicked(t)))
   }
@@ -45,7 +45,7 @@ class I extends Chunk317770.Z {
   constructor(...e) {
     super(...e), v(this, "callbackActions", {
       [b.tS.VIDEO]: () => {
-        m.Z.isVideoEnabled() ? l.Z.setVideoEnabled(false) : (0, p.Z)(() => l.Z.setVideoEnabled(true), y.IlC.APP)
+        h.Z.isVideoEnabled() ? l.Z.setVideoEnabled(false) : (0, _.Z)(() => l.Z.setVideoEnabled(true), y.IlC.APP)
       },
       [b.tS.MUTE]: () => l.Z.toggleSelfMute({
         location: "Thumbar"
@@ -60,11 +60,11 @@ class I extends Chunk317770.Z {
     }), v(this, "handleViewUpdate", o().debounce(() => {
       let e = g.Z.getVoiceChannelId();
       if (null == e) return void this.setThumbarButtons([]);
-      let t = m.Z.isSelfMute(),
-        n = m.Z.isSelfDeaf(),
-        r = m.Z.isVideoEnabled(),
-        i = m.Z.isVideoAvailable(),
-        a = h.Z.getChannel(e),
+      let t = h.Z.isSelfMute(),
+        n = h.Z.isSelfDeaf(),
+        r = h.Z.isVideoEnabled(),
+        i = h.Z.isVideoAvailable(),
+        a = m.Z.getChannel(e),
         o = null == a || (0, f.y)(a),
         {
           reachedLimit: s,
@@ -73,7 +73,7 @@ class I extends Chunk317770.Z {
           reachedLimit: true,
           limit: true
         },
-        c = (0, _.X)({
+        c = (0, p.X)({
           enabled: r,
           join: false,
           channel: a,
@@ -103,4 +103,4 @@ class I extends Chunk317770.Z {
     }, 100))
   }
 }
-let T = new I
+let I = new S

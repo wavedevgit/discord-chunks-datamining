@@ -2,7 +2,7 @@
 /** chunk id: 347994, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -58,4 +58,4 @@ class f {
     }), u(this, "throttledOnChange", i().debounce(this.handleUserSettingsProtoChange, 0))
   }
 }
-let _ = new f
+let p = new f

@@ -45,15 +45,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,14 +61,14 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class m extends Chunk473749.PureComponent {
+class h extends Chunk473749.PureComponent {
   componentDidUpdate(e) {
     if (this.props.formError !== e.formError) this.setState({
       changedSinceError: new Set
@@ -119,16 +119,16 @@ class m extends Chunk473749.PureComponent {
           onFieldBlur: l,
           layout: c
         } = t,
-        u = p(t, ["values", "onFieldChange", "onFieldFocus", "onFieldBlur", "layout"]),
+        u = _(t, ["values", "onFieldChange", "onFieldFocus", "onFieldBlur", "layout"]),
         {
           getClassNameForLayout: f,
-          renderInput: h,
-          title: m,
+          renderInput: m,
+          title: h,
           name: g,
           id: E,
           placeholder: b
         } = e,
-        y = _(d({}, p(e, ["getClassNameForLayout", "renderInput", "title", "name", "id", "placeholder"])), {
+        y = p(d({}, _(e, ["getClassNameForLayout", "renderInput", "title", "name", "id", "placeholder"])), {
           placeholder: null == b ? true : b(),
           error: this.getError(g),
           value: n[g],
@@ -142,8 +142,8 @@ class m extends Chunk473749.PureComponent {
         className: o()(null == f ? true : f(c)),
         children: (0, r.jsx)(s.gNt, {
           id: E,
-          label: m(),
-          children: h(y, u, c)
+          label: h(),
+          children: m(y, u, c)
         })
       }, g)
     }), u(this, "renderFormRow", e => {
@@ -155,4 +155,4 @@ class m extends Chunk473749.PureComponent {
     })
   }
 }
-let g = m
+let g = h

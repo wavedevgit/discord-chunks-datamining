@@ -2,14 +2,14 @@
 /** chunk id: 45114, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CZ: () => m,
+  CZ: () => h,
   FT: () => b,
   Ju: () => E,
-  U6: () => _,
+  U6: () => p,
   ack: () => d,
-  iV: () => h,
+  iV: () => m,
   jT: () => g,
-  y5: () => p
+  y5: () => _
 }), require("./388685.js"), require("./539854.js");
 var Chunk570140 = require("./570140.js"),
   Chunk601070 = require("./601070.js"),
@@ -60,11 +60,11 @@ function f(e, t) {
     }), f)) d(e, t, n, r)
 }
 
-function _(e, t) {
+function p(e, t) {
   e.isCategory() ? f(e.id, t, true, true) : e.isForumLikeChannel() ? d(e.id, t, true, true, c.default.fromTimestamp(Date.now())) : d(e.id, t, true, true)
 }
 
-function p(e, t) {
+function _(e, t) {
   r.Z.dispatch({
     type: "BULK_ACK",
     channels: e,
@@ -73,14 +73,14 @@ function p(e, t) {
   })
 }
 
-function h(e) {
+function m(e) {
   r.Z.dispatch({
     type: "CHANNEL_LOCAL_ACK",
     channelId: e
   })
 }
 
-function m(e, t) {
+function h(e, t) {
   r.Z.dispatch({
     type: "ENABLE_AUTOMATIC_ACK",
     channelId: e,

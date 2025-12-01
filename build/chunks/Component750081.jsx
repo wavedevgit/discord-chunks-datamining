@@ -38,7 +38,7 @@ var Chunk857192 = require("./857192.js"),
   Chunk378799 = require("./378799.js"),
   Chunk758731 = require("./758731.js");
 Chunk857192.default.cssDebuggingEnabled && require.e("95666").then(require.bind(require, 754261)), (0, Chunk378799.s5)();
-let Z = 5 * Chunk70956.Z.Millis.MINUTE,
+let B = 5 * Chunk70956.Z.Millis.MINUTE,
   F = document.getElementById("app-mount");
 d()(null != F, "Could not find app-mount"), F.className = __OVERLAY__ ? "" : Chunk113752.appMount;
 let V = (0, Chunk748721.createRoot)(F),
@@ -47,13 +47,13 @@ let V = (0, Chunk748721.createRoot)(F),
     "/one-time": Chunk758731.Z
   };
 
-function W(e, t, n) {
+function Y(e, t, n) {
   var r;
   let i = null != n ? new URLSearchParams(n) : null;
   null != (r = H[t]) && r.call(H, i) || (0, A.uL)(t)
 }
-let Y = e => V.render((0, l.jsx)(w.w, {
-  children: (0, l.jsx)(D.Z, {
+let W = e => V.render((0, l.jsx)(D.w, {
+  children: (0, l.jsx)(w.Z, {
     children: (0, l.jsx)(e, {})
   })
 }));
@@ -75,19 +75,19 @@ if (null != Chunk579806.Z) {
   let l = Object.keys(require).filter(e => null != n[e]).map(e => "".concat(e, ": ").concat(n[e])).join(", ");
   new Chunk710845.Z().log("[NATIVE INFO] host ".concat(module, ", modules: ").concat(Chunk54381, ", build: ").concat(exports)), Chunk998502.ZP.pauseFrameEvictor(), Chunk998502.ZP.initializeExitHook(), Chunk998502.ZP.initializeWERHandler()
 }
-if ((0, Chunk473159.O)(window), __OVERLAY__) Y(Chunk832037.Z.Overlay);
-else if (null != window.require && null == window.DiscordNative) Y(Chunk832037.Z.OutdatedClient);
+if ((0, Chunk473159.O)(window), __OVERLAY__) W(Chunk832037.Z.Overlay);
+else if (null != window.require && null == window.DiscordNative) W(Chunk832037.Z.OutdatedClient);
 else {
   if (document.addEventListener("scroll", e => e.preventDefault()), Chunk358085.isPlatformEmbedded) {
     window.onbeforeunload = () => Chunk998502.ZP.beforeUnload(), Chunk998502.ZP.on("HELP_OPEN", () => window.open(Chunk63063.Z.getCommunityURL()));
-    let e = new Chunk846519.sW(Z, () => Chunk998502.ZP.purgeMemory());
+    let e = new Chunk846519.sW(B, () => Chunk998502.ZP.purgeMemory());
     Chunk998502.ZP.on("MAIN_WINDOW_BLUR", () => {
       module.delay(), Chunk998502.ZP.setFocused(false), (0, Chunk284737.T_)(window, false)
     }), Chunk998502.ZP.on("MAIN_WINDOW_FOCUS", () => {
       module.cancel(), Chunk998502.ZP.setFocused(true), (0, Chunk284737.T_)(window, true)
-    }), Chunk998502.ZP.on("MAIN_WINDOW_PATH", W), Chunk998502.ZP.on("MAIN_WINDOW_HIDDEN", () => {
+    }), Chunk998502.ZP.on("MAIN_WINDOW_PATH", Y), Chunk998502.ZP.on("MAIN_WINDOW_HIDDEN", () => {
       (0, Chunk284737.al)(window)
     })
   }
-  Chunk395727.Z.initialize(), Chunk749349.Z.initialize(), Chunk464253.Z.init(), Chunk766646.Z.init(), Chunk44163.Z.init(), Chunk485359.Z.initialize(), Chunk240849.Z.initialize(), Chunk513566.Z.initialize(), Chunk471638.j(), (0, Chunk177692.Mn)(), Y(Chunk832037.Z.App)
+  Chunk395727.Z.initialize(), Chunk749349.Z.initialize(), Chunk464253.Z.init(), Chunk766646.Z.init(), Chunk44163.Z.init(), Chunk485359.Z.initialize(), Chunk240849.Z.initialize(), Chunk513566.Z.initialize(), Chunk471638.j(), (0, Chunk177692.Mn)(), W(Chunk832037.Z.App)
 }

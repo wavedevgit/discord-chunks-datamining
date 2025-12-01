@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk152599 = require("./152599.js"),
   Chunk860978 = require("./860978.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -59,16 +59,16 @@ let E = 2.1,
   b = e => {
     var {
       handleLearnMore: t
-    } = e, n = m(e, ["handleLearnMore"]);
-    let p = (0, i.e7)([a.Z], () => a.Z.getGuildId()),
+    } = e, n = h(e, ["handleLearnMore"]);
+    let _ = (0, i.e7)([a.Z], () => a.Z.getGuildId()),
       g = (0, s.iL)({
-        guildId: p,
+        guildId: _,
         onClick: () => {
           window.open(l.Z.getArticleURL(u.BhN.NITRO_FAQ), "_blank")
         }
       }),
-      b = (0, o.rO)() ? f.Z : _.Z;
-    return (0, r.jsx)(c.Z, h({
+      b = (0, o.rO)() ? f.Z : p.Z;
+    return (0, r.jsx)(c.Z, m({
       gradientColor: "nitro-pink",
       title: d.intl.string(d.t["9C+41g"]),
       subtitle: g,

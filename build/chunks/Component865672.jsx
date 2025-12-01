@@ -2,9 +2,9 @@
 /** chunk id: 865672, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  De: () => p,
-  EJ: () => h,
-  Ic: () => _,
+  De: () => _,
+  EJ: () => m,
+  Ic: () => p,
   JU: () => f
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
@@ -25,18 +25,18 @@ function f(e) {
     roleStyle: s,
     includeConvenienceGlow: l,
     animateGradient: d
-  } = e, f = "username" === s, _ = "dot" === s, p = f && l, h = null != (t = null == i ? true : i.primaryColor) ? t : c.Pbq, m = {
-    "--custom-gradient-color-1": h,
-    "--custom-gradient-color-2": null != (n = null == i ? true : i.secondaryColor) ? n : h,
-    "--custom-gradient-color-3": null != (r = null == i ? true : i.tertiaryColor) ? r : h
+  } = e, f = "username" === s, p = "dot" === s, _ = f && l, m = null != (t = null == i ? true : i.primaryColor) ? t : c.Pbq, h = {
+    "--custom-gradient-color-1": m,
+    "--custom-gradient-color-2": null != (n = null == i ? true : i.secondaryColor) ? n : m,
+    "--custom-gradient-color-3": null != (r = null == i ? true : i.tertiaryColor) ? r : m
   }, g = (null == i ? true : i.tertiaryColor) != null ? u.threeColorGradient : u.twoColorGradient;
   return {
-    gradientStyle: m,
+    gradientStyle: h,
     gradientClassname: o()(g, {
       [u.usernameGradient]: f,
-      [u.convenienceGlowGradient]: p,
-      [u.convenienceGlowGradientActive]: p && d,
-      [u.gradientDotAnimation]: !a && _,
+      [u.convenienceGlowGradient]: _,
+      [u.convenienceGlowGradientActive]: _ && d,
+      [u.gradientDotAnimation]: !a && p,
       [u.animateGradient]: d && f
     }),
     gradientGlowClassname: o()(g, u.usernameGlow, {
@@ -47,7 +47,7 @@ function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   let {
     colorStrings: t,
     roleStyle: n,
@@ -63,7 +63,7 @@ function _(e) {
   }), [t, n, r, o, a])
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   return i.useMemo(() => {
     let i = [e, t, n].filter(e => null != e),
       a = i.length >= 2,
@@ -84,7 +84,7 @@ function p(e, t, n) {
   }, [e, t, n])
 }
 
-function h(e, t) {
+function m(e, t) {
   return i.useMemo(() => {
     let n;
     if (null == e) return e;

@@ -2,7 +2,7 @@
 /** chunk id: 940276, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk378976 = require("./378976.js");
 
-function h(e) {
+function m(e) {
   let {
     guild: t,
     isActivityRestricted: n,
@@ -33,7 +33,7 @@ function h(e) {
       size: 48
     }), (0, r.jsx)(o.rsf, {
       label: t.name,
-      description: _.intl.format(_.t.zRl6XR, {
+      description: p.intl.format(p.t.zRl6XR, {
         count: null != l ? l : 0
       }),
       checked: !n,
@@ -44,7 +44,7 @@ function h(e) {
     })]
   })
 }
-let m = function() {
+let h = function() {
   let {
     guilds: e,
     searchQuery: t,
@@ -52,7 +52,7 @@ let m = function() {
     sortOrder: a,
     setSortOrder: s,
     hasActivityRestrictedGuilds: c,
-    onToggleAllActivityRestrictedGuilds: m,
+    onToggleAllActivityRestrictedGuilds: h,
     onToggleActivityRestrictedGuild: g,
     isActivityRestricted: E,
     numActivityRestrictedGuilds: b,
@@ -121,7 +121,7 @@ let m = function() {
           serialize: String
         }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
           variant: "primary",
-          onClick: m,
+          onClick: h,
           text: Chunk797670 ? Chunk388032.intl.string(Chunk388032.t["7lxcLO"]) : Chunk388032.intl.string(Chunk388032.t.zh6UEs)
         })]
       })]
@@ -142,7 +142,7 @@ let m = function() {
           variant: "text-lg/medium",
           children: Chunk388032.intl.string(Chunk388032.t["Xe+fJM"])
         })
-      }), module.map(e => (0, r.jsx)(h, {
+      }), module.map(e => (0, r.jsx)(m, {
         guild: e,
         isActivityRestricted: E(e.id),
         onToggleActivityRestrictedGuild: g

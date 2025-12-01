@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   V: () => g,
-  s: () => m
+  s: () => h
 });
 var Chunk442837 = require("./442837.js"),
   Chunk387343 = require("./387343.js"),
@@ -19,21 +19,21 @@ var Chunk442837 = require("./442837.js"),
   Chunk979651 = require("./979651.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e) {
+function h(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "useCanRing",
     n = arguments.length > 2 ? arguments[2] : true,
     i = (0, r.e7)([c.Z], () => c.Z.getChannel(n)),
     a = (0, r.e7)([s.default], () => s.default.getId() === e.id),
-    o = (0, r.e7)([_.Z], () => _.Z.isFriend(e.id)),
+    o = (0, r.e7)([p.Z], () => p.Z.isFriend(e.id)),
     l = null == i ? true : i.type,
-    u = null != l && h.TPd.CALLABLE.has(l),
+    u = null != l && m.TPd.CALLABLE.has(l),
     d = E(e, t, i) || u;
   return o && !a && !e.bot && !e.system && !e.isProvisional && d
 }
 
 function g(e) {
-  let t = h.TPd.CALLABLE.has(e.type),
-    n = e.type === h.d4z.GUILD_VOICE;
+  let t = m.TPd.CALLABLE.has(e.type),
+    n = e.type === m.d4z.GUILD_VOICE;
   if (t) {
     let t = l.Z.getCall(e.id);
     return null != t && null != t.messageId && !l.Z.isCallUnavailable(e.id)
@@ -44,7 +44,7 @@ function g(e) {
     } = o.Z.getCurrentConfig({
       guildId: e.guild_id,
       location: "ring"
-    }), n = p.Z.getVoiceState(e.guild_id, s.default.getId());
+    }), n = _.Z.getVoiceState(e.guild_id, s.default.getId());
     return t && null != n && n.channelId === e.id
   }
   returnfalse
@@ -65,11 +65,11 @@ function E(e) {
       needSubscriptionToAccess: c
     } = (0, a.Z)(null == n ? true : n.id),
     {
-      enabled: _
+      enabled: p
     } = o.Z.useExperiment({
       guildId: null == n ? true : n.guild_id,
       location: t
     }),
-    p = (null == n ? true : n.type) === h.d4z.GUILD_VOICE;
-  return _ && p && l && s && !c
+    _ = (null == n ? true : n.type) === m.d4z.GUILD_VOICE;
+  return p && _ && l && s && !c
 }

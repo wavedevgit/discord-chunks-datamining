@@ -2,7 +2,7 @@
 /** chunk id: 108427, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => h
+  e: () => m
 }), require("./388685.js"), require("./35282.js");
 var Chunk772848 = require("./772848.js"),
   Chunk579806 = require("./579806.js"),
@@ -52,11 +52,11 @@ function d(e, t) {
 function f() {
   return window.GLOBAL_ENV.HTML_TIMESTAMP
 }
-class _ {
+class p {
   trackEvent(e) {
     let t = Date.now();
     requestIdleCallback(() => {
-      a.default.track(s.rMx.APP_UI_VIEWED, d(c({}, m(), g()), {
+      a.default.track(s.rMx.APP_UI_VIEWED, d(c({}, h(), g()), {
         load_id: this.loadId,
         screen_name: e,
         duration_ms_since_app_opened: t - f(),
@@ -77,13 +77,13 @@ class _ {
     l(this, "loadId", (0, Chunk772848.Z)()), l(this, "appUIViewed", false)
   }
 }
-let p = new _;
+let _ = new p;
 
-function h(e) {
-  p.trackAppUIViewed(e)
+function m(e) {
+  _.trackAppUIViewed(e)
 }
 
-function m() {
+function h() {
   var e, t, n;
   let r = "--campaign-id=";
   for (let a of null != (n = null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getMainArgvSync) ? true : module.call(exports)) ? require : [])

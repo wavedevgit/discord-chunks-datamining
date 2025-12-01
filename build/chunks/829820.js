@@ -45,7 +45,7 @@ function E(e) {
 }
 
 function b(e, t) {
-  return (0, i.cj)([u.Z, s.default], () => (0, _.Z)(u.Z, s.default, t, e), [e, t])
+  return (0, i.cj)([u.Z, s.default], () => (0, p.Z)(u.Z, s.default, t, e), [e, t])
 }
 
 function y(e, t, n) {
@@ -60,15 +60,15 @@ function y(e, t, n) {
       startLoading: c,
       clearLoading: u
     } = E(i),
-    _ = r.useCallback(() => {
-      c(), (0, h.Z)(i, m.kG.USER_ACTIVITY_PLAY, n).catch(u)
+    p = r.useCallback(() => {
+      c(), (0, m.Z)(i, h.kG.USER_ACTIVITY_PLAY, n).catch(u)
     }, [i, n, c, u]);
   return {
-    label: (0, d.Z)(i, m.kG.USER_ACTIVITY_PLAY),
-    tooltip: (0, f.Z)(i, m.kG.USER_ACTIVITY_PLAY),
+    label: (0, d.Z)(i, h.kG.USER_ACTIVITY_PLAY),
+    tooltip: (0, f.Z)(i, h.kG.USER_ACTIVITY_PLAY),
     disabled: !l && (o || a || s),
     loading: l,
-    onClick: _,
+    onClick: p,
     spotifyData: i
   }
 }
@@ -80,21 +80,21 @@ function O(e, t, n, i) {
       notPlayable: s,
       syncingWithUser: l,
       syncingWithParty: u,
-      isCurrentUser: _
+      isCurrentUser: p
     } = o,
     {
-      loading: h,
+      loading: m,
       startLoading: g,
       clearLoading: y
     } = E(o),
     O = r.useCallback(() => {
-      g(), (0, p.Z)(o, m.kG.USER_ACTIVITY_SYNC, n).catch(y)
+      g(), (0, _.Z)(o, h.kG.USER_ACTIVITY_SYNC, n).catch(y)
     }, [o, n, g, y]);
   return {
-    label: (0, d.Z)(o, m.kG.USER_ACTIVITY_SYNC),
-    tooltip: (0, f.Z)(o, m.kG.USER_ACTIVITY_SYNC, a),
-    disabled: !h && (s || _ || l || u),
-    loading: h,
+    label: (0, d.Z)(o, h.kG.USER_ACTIVITY_SYNC),
+    tooltip: (0, f.Z)(o, h.kG.USER_ACTIVITY_SYNC, a),
+    disabled: !m && (s || p || l || u),
+    loading: m,
     onClick: O,
     spotifyData: o
   }
@@ -111,17 +111,17 @@ function v(e, t, n) {
     {
       loading: c,
       startLoading: u,
-      clearLoading: _
+      clearLoading: p
     } = E(i),
-    h = r.useCallback(() => {
-      u(), (0, p.Z)(i, m.kG.EMBED_SYNC, n).catch(_)
-    }, [i, n, u, _]);
+    m = r.useCallback(() => {
+      u(), (0, _.Z)(i, h.kG.EMBED_SYNC, n).catch(p)
+    }, [i, n, u, p]);
   return {
-    label: (0, d.Z)(i, m.kG.EMBED_SYNC),
-    tooltip: (0, f.Z)(i, m.kG.EMBED_SYNC),
+    label: (0, d.Z)(i, h.kG.EMBED_SYNC),
+    tooltip: (0, f.Z)(i, h.kG.EMBED_SYNC),
     disabled: !c && (l || o || s || a),
     loading: c,
-    onClick: h,
+    onClick: m,
     spotifyData: i
   }
 }

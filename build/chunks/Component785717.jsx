@@ -2,7 +2,7 @@
 /** chunk id: 785717, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  KZ: () => _,
+  KZ: () => p,
   Mt: () => d,
   ZB: () => f
 });
@@ -43,26 +43,26 @@ let u = Chunk473749.createContext(null),
       fetchEndedAt: d,
       isLoaded: f = false
     } = e, {
-      analyticsLocations: _
-    } = (0, o.ZP)(), p = i.useRef(true), h = {
-      analyticsLocations: _,
+      analyticsLocations: p
+    } = (0, o.ZP)(), _ = i.useRef(true), m = {
+      analyticsLocations: p,
       value: t
-    }, m = i.useRef(h);
+    }, h = i.useRef(m);
     return i.useEffect(() => {
-      m.current = h
+      h.current = m
     }), i.useEffect(() => {
       let e = Date.now();
-      if (null == p.current && null != a && (p.current = e - a), !f) return;
+      if (null == _.current && null != a && (_.current = e - a), !f) return;
       let {
         analyticsLocations: t,
         value: n
-      } = m.current;
+      } = h.current;
       (0, s.pQ)(c({
         action: "VIEW",
         analyticsLocations: t
       }, n)), (0, s.RV)(c({
         profileUi: "USER_PROFILE",
-        timeToInteractiveMs: p.current,
+        timeToInteractiveMs: _.current,
         timeToLoadMs: null != a ? e - a : true,
         timeToFetchMs: null != l && null != d ? d - l : true,
         viewStartedAt: a,
@@ -85,10 +85,10 @@ let u = Chunk473749.createContext(null),
       roleId: c,
       sourceSessionId: d,
       showGuildProfile: f = true
-    } = e, _ = null == (t = i.useContext(u)) ? true : t.sessionId;
+    } = e, p = null == (t = i.useContext(u)) ? true : t.sessionId;
     return i.useMemo(() => ({
       sessionId: (0, a.Z)(),
-      sourceSessionId: null != d ? d : _,
+      sourceSessionId: null != d ? d : p,
       layout: n,
       userId: r,
       guildId: o,
@@ -96,9 +96,9 @@ let u = Chunk473749.createContext(null),
       messageId: l,
       roleId: c,
       showGuildProfile: f
-    }), [_, n, r, o, s, l, c, d, f])
+    }), [p, n, r, o, s, l, c, d, f])
   },
-  _ = () => {
+  p = () => {
     let e = Chunk473749.useContext(u),
       {
         analyticsLocations: t

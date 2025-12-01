@@ -19,22 +19,22 @@ function f(e) {
   let {
     selectedGuildId: n,
     selectedChannelId: f,
-    onChannelChange: _,
-    error: p
-  } = e, [h, m] = i.useState(null), g = i.useRef(false);
+    onChannelChange: p,
+    error: _
+  } = e, [m, h] = i.useState(null), g = i.useRef(false);
   if (i.useEffect(() => {
       async function e(e) {
         let t = await (0, l.UR)(e);
-        n === e && (t.sort((e, t) => e.name.localeCompare(t.name)), m({
+        n === e && (t.sort((e, t) => e.name.localeCompare(t.name)), h({
           guildId: e,
           channels: t
         }), g.current = true)
       }
-      m(null), null == n ? _(null) : e(n)
-    }, [_, n]), i.useEffect(() => {
-      g.current && (null == h ? null != f && _(null) : h.channels.some(e => e.id === f) || _(null))
-    }, [h, _, f, n]), null == n) return null;
-  let E = null == h || h.guildId !== n ? [] : (null != (t = null == h ? true : h.channels) ? t : []).map(e => ({
+      h(null), null == n ? p(null) : e(n)
+    }, [p, n]), i.useEffect(() => {
+      g.current && (null == m ? null != f && p(null) : m.channels.some(e => e.id === f) || p(null))
+    }, [m, p, f, n]), null == n) return null;
+  let E = null == m || m.guildId !== n ? [] : (null != (t = null == m ? true : m.channels) ? t : []).map(e => ({
     value: e.id,
     label: e.name
   }));
@@ -44,14 +44,14 @@ function f(e) {
       variant: "heading-deprecated-12/semibold",
       className: u.sectionLabel,
       children: c.intl.string(c.t["8qKd+J"])
-    }), null != p && "" !== p ? (0, r.jsx)(o.x, {
+    }), null != _ && "" !== _ ? (0, r.jsx)(o.x, {
       variant: "text-xs/normal",
       color: "text-danger",
-      children: p
+      children: _
     }) : null, (0, r.jsx)(s.VcW, {
       wrapperClassName: u.select,
       maxVisibleItems: d,
-      onChange: _,
+      onChange: p,
       placeholder: c.intl.string(c.t["Re/64R"]),
       options: E,
       value: f,

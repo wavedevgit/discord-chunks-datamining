@@ -29,45 +29,45 @@ function E(e, t, n) {
     isVirtualized: b,
     layoutDelegate: y,
     layout: O
-  } = e, v = (0, _.X)({
+  } = e, v = (0, p.X)({
     usage: "search",
     sensitivity: "base"
   }), {
-    direction: I
-  } = (0, p.j)(), T = t.selectionManager.disabledBehavior, S = (0, m.useMemo)(() => E || new(0, a.x)({
+    direction: S
+  } = (0, _.j)(), I = t.selectionManager.disabledBehavior, T = (0, h.useMemo)(() => E || new(0, a.x)({
     collection: t.collection,
     disabledKeys: t.disabledKeys,
-    disabledBehavior: T,
+    disabledBehavior: I,
     ref: n,
-    direction: I,
+    direction: S,
     collator: v,
     layoutDelegate: y,
     layout: O
-  }), [E, t.collection, t.disabledKeys, T, n, I, v, y, O]), A = (0, l.Me)(e.id);
+  }), [E, t.collection, t.disabledKeys, I, n, S, v, y, O]), A = (0, l.Me)(e.id);
   r._e.set(t, A);
   let {
     gridProps: C
   } = (0, s.N)({
     ...e,
     id: A,
-    keyboardDelegate: S
+    keyboardDelegate: T
   }, t, n);
   b && (C["aria-rowcount"] = t.collection.size + t.collection.headerRows.length), (0, f.OV)() && "expandedKeys" in t && (C.role = "treegrid");
   let {
     column: N,
-    direction: R
-  } = t.sortDescriptor || {}, P = (0, h.q)(g(i.Z), "@react-aria/table"), D = (0, m.useMemo)(() => {
+    direction: P
+  } = t.sortDescriptor || {}, R = (0, m.q)(g(i.Z), "@react-aria/table"), w = (0, h.useMemo)(() => {
     var e, n;
     let r = null != (n = null == (e = t.collection.columns.find(e => e.key === N)) ? true : e.textValue) ? n : "";
-    return R && N ? P.format(`${R}Sort`, {
+    return P && N ? R.format(`${P}Sort`, {
       columnName: r
     }) : true
-  }, [R, N, t.collection.columns]), w = (0, c.P)(D);
+  }, [P, N, t.collection.columns]), D = (0, c.P)(w);
   return (0, u.r)(() => {
-    D && (0, o.xQ)(D, "assertive", 500)
-  }, [D]), {
-    gridProps: (0, d.d)(C, w, {
-      "aria-describedby": [w["aria-describedby"], C["aria-describedby"]].filter(Boolean).join(" ")
+    w && (0, o.xQ)(w, "assertive", 500)
+  }, [w]), {
+    gridProps: (0, d.d)(C, D, {
+      "aria-describedby": [D["aria-describedby"], C["aria-describedby"]].filter(Boolean).join(" ")
     })
   }
 }

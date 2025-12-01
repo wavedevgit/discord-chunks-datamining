@@ -2,7 +2,7 @@
 /** chunk id: 463421, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _,
+  Z: () => p,
   _: () => f
 }), require("./388685.js"), require("./997841.js");
 var Chunk473749 = require("./473749.js"),
@@ -25,7 +25,7 @@ function f(e, t) {
   return d(o.default.getId() === e ? l.Z.getActivities() : s.Z.getActivities(e, t))
 }
 
-function _(e, t) {
+function p(e, t) {
   let n = (0, a.e7)([l.Z, s.Z, o.default], () => o.default.getId() === e ? l.Z.getActivities() : s.Z.getActivities(e, t));
   return r.useMemo(() => d(n), [n])
 }

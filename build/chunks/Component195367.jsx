@@ -29,31 +29,31 @@ function y(e) {
     guildId: y,
     error: E,
     validationErrorMessage: N,
-    onChange: P,
-    canSetFocus: C = false
+    onChange: C,
+    canSetFocus: P = false
   } = e, {
     entityType: S,
     channelId: I,
-    description: T,
-    name: Z,
+    description: Z,
+    name: T,
     image: w,
     scheduledEndTime: D,
     scheduledStartTime: k,
     recurrenceRule: R
-  } = t, A = (0, u._d)(I), _ = (0, u.K3)(I), G = null != t && (0, g.xt)(t), U = l.useMemo(() => {
+  } = t, _ = (0, u._d)(I), A = (0, u.K3)(I), G = null != t && (0, g.xt)(t), U = l.useMemo(() => {
     let e = (0, x.v1)(t);
     return null != e ? e : {
       startDate: a()(k)
     }
   }, [t, k]), [L, z] = l.useState(() => (0, x.zi)(a()(k), R)), F = l.useRef(null);
   l.useEffect(() => {
-    if (C) {
+    if (P) {
       var e;
       null == (e = F.current) || e.focus()
     }
-  }, [C]);
+  }, [P]);
   let M = e => {
-      P({
+      C({
         image: e
       })
     },
@@ -99,7 +99,7 @@ function y(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: b.blockedUsersContainer,
-      children: null != I && !G && (A > 0 || _ > 0) && (0, r.jsx)(d.mv, {
+      children: null != I && !G && (_ > 0 || A > 0) && (0, r.jsx)(d.mv, {
         channelId: I
       })
     }), (0, r.jsx)("div", {
@@ -111,13 +111,13 @@ function y(e) {
           required: true,
           error: null != B ? B : W,
           onChange: e => {
-            P({
+            C({
               name: e
             })
           },
           placeholder: f.intl.string(f.t["6/yars"]),
           maxLength: p.p,
-          value: Z,
+          value: T,
           autoComplete: "off",
           inputRef: F
         }), (0, r.jsx)(v.Z, {
@@ -130,11 +130,11 @@ function y(e) {
               scheduledStartTime: null == t ? true : t.toISOString(),
               scheduledEndTime: null == n ? true : n.toISOString()
             };
-            null != t && null != D && (null == n ? true : n.isBefore(t)) && (r.scheduledEndTime = t.add(1, "hour").toISOString()), null != t && null != L && (r.recurrenceRule = (0, x.mF)(L, t)), P(r)
+            null != t && null != D && (null == n ? true : n.isBefore(t)) && (r.scheduledEndTime = t.add(1, "hour").toISOString()), null != t && null != L && (r.recurrenceRule = (0, x.mF)(L, t)), C(r)
           },
           onRecurrenceChange: e => {
             let t = U.startDate;
-            null != t && (P({
+            null != t && (C({
               recurrenceRule: (0, x.mF)(e, t)
             }), z(e))
           },
@@ -150,9 +150,9 @@ function y(e) {
           label: f.intl.string(f.t["+gRCC7"]),
           error: X,
           placeholder: f.intl.string(f.t["kWO/E8"]),
-          value: T,
+          value: Z,
           onChange: e => {
-            P({
+            C({
               description: e
             })
           },

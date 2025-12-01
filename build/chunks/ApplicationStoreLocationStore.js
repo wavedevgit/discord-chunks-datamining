@@ -2,7 +2,7 @@
 /** chunk id: 923834, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./35282.js"), require("./415506.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -57,7 +57,7 @@ class f extends(r = Chunk442837.ZP.Store) {
   }
 }
 o(f, "displayName", "ApplicationStoreLocationStore");
-let _ = new f(Chunk570140.Z, {
+let p = new f(Chunk570140.Z, {
   APPLICATION_STORE_LOCATION_CHANGE: c,
   APPLICATION_STORE_RESET_NAVIGATION: u
 })

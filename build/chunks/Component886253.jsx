@@ -30,37 +30,37 @@ function b(e) {
     onClose: y,
     children: O,
     footer: v
-  } = e, I = (0, o.e7)([l.Z, c.Z], () => {
+  } = e, S = (0, o.e7)([l.Z, c.Z], () => {
     var e;
     return null != (e = l.Z.getApplication(t)) ? e : c.Z.getApplicationRecord(t)
   }, [t]), {
-    data: T
+    data: I
   } = (0, u.Z)(n);
-  if (null == I) return null;
-  let S = (0, f.y)(I, 25),
+  if (null == S) return null;
+  let T = (0, f.y)(S, 25),
     {
       termsOfServiceUrl: A,
       privacyPolicyUrl: C
-    } = I;
-  if ((null == T ? true : T.applicationId) !== t) return (0, r.jsx)(a.Modal, {
+    } = S;
+  if ((null == I ? true : I.applicationId) !== t) return (0, r.jsx)(a.Modal, {
     actions: [{
       onClick: y,
-      text: m.intl.string(m.t.BddRzS),
+      text: h.intl.string(h.t.BddRzS),
       variant: "primary"
     }],
     onClose: y,
     size: "sm",
     transitionState: b,
-    title: m.intl.string(m.t["0Bf80I"]),
+    title: h.intl.string(h.t["0Bf80I"]),
     children: (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
       className: g.unavailableBody,
-      children: m.intl.string(m.t.omH3bq)
+      children: h.intl.string(h.t.omH3bq)
     })
   });
-  let N = null != S ? (0, r.jsx)("img", {
-    src: S.href,
+  let N = null != T ? (0, r.jsx)("img", {
+    src: T.href,
     alt: "",
     className: g.appIcon
   }) : true;
@@ -70,7 +70,7 @@ function b(e) {
     transitionState: b,
     children: [(0, r.jsx)(a.xBx, {
       leading: N,
-      title: I.name
+      title: S.name
     }), (0, r.jsx)(i.Z, {
       children: (0, r.jsx)("main", {
         className: E.bodyInner,
@@ -82,25 +82,25 @@ function b(e) {
         children: [null != A || null != C ? (0, r.jsx)(s.Text, {
           color: "header-primary",
           variant: "text-sm/normal",
-          children: (0, r.jsx)(p.Z, {
+          children: (0, r.jsx)(_.Z, {
             termsOfServiceUrl: A,
             privacyPolicyUrl: C
           })
         }) : (0, r.jsx)(s.Text, {
           color: "header-primary",
           variant: "text-xs/normal",
-          children: m.intl.string(m.t["3ZY+0D"])
+          children: h.intl.string(h.t["3ZY+0D"])
         }), (0, r.jsxs)("div", {
           className: g.footerButtons,
           children: [d.wS && (0, r.jsx)(s.hU, {
-            "aria-label": m.intl.string(m.t.WqhZss),
+            "aria-label": h.intl.string(h.t.WqhZss),
             icon: () => (0, r.jsx)(s.xPt, {
               size: "xs",
               color: "currentColor"
             }),
             onClick: () => {
-              let e = "".concat(location.protocol, "//").concat(location.host).concat(h.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t, n));
-              (0, d.JG)(e, () => (0, s.showToast)((0, s.createToast)(m.intl.string(m.t["L/PwZf"]), s.ToastType.SUCCESS))), (0, _.X)(t, _.B.DETAILS_MODAL, n)
+              let e = "".concat(location.protocol, "//").concat(location.host).concat(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t, n));
+              (0, d.JG)(e, () => (0, s.showToast)((0, s.createToast)(h.intl.string(h.t["L/PwZf"]), s.ToastType.SUCCESS))), (0, p.X)(t, p.B.DETAILS_MODAL, n)
             },
             variant: "icon-only"
           }), v]

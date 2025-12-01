@@ -2,7 +2,7 @@
 /** chunk id: 339227, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => B
+  Q: () => Z
 }), require("./388685.js"), require("./415506.js"), require("./35282.js"), require("./704826.js"), require("./539854.js"), require("./49124.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -59,8 +59,8 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = new Chunk710845.Z("MarkdownToSlate"),
-  T = {
+let S = new Chunk710845.Z("MarkdownToSlate"),
+  I = {
     link: {
       type: "skip"
     },
@@ -229,12 +229,12 @@ let I = new Chunk710845.Z("MarkdownToSlate"),
       after: ""
     }
   },
-  S = new Set(["*", "_", "\\"]),
+  T = new Set(["*", "_", "\\"]),
   A = {},
   C = {};
 for (let e in Chunk428595.Z.RULES) {
-  if (!(module in T)) throw Error("Slate: Unknown markdown rule: ".concat(module, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
-  let t = T[module];
+  if (!(module in I)) throw Error("Slate: Unknown markdown rule: ".concat(module, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
+  let t = I[module];
   "skip" !== exports.type && (A[module] = N(Chunk428595.Z.RULES[module])), "skip" !== exports.type && "inlineObject" !== exports.type && (C[module] = N("text" === module ? Chunk594199.ZP : Chunk428595.Z.RULES[module]))
 }
 
@@ -249,14 +249,14 @@ function N(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   return {
     type: "autolink",
     content: e[1],
     originalMatch: e
   }
 }
-let P = {
+let R = {
     url: {
       parse: e => null == (0, u.yw)(e[1]) ? {
         type: "text",
@@ -273,18 +273,18 @@ let P = {
         type: "text",
         content: e[0],
         originalMatch: e
-      } : R(e)
+      } : P(e)
     },
     mailto: {
-      parse: R
+      parse: P
     },
     tel: {
-      parse: R
+      parse: P
     },
     codeBlockSyntax: {
       order: Chunk159635.defaultRules.inlineCode.order - .1,
       match: e => /^(```)([a-z0-9_+\-.#]+$)?/.exec(e),
-      parse: e => null != e[2] && "" !== e[2] && h.default.isKnownLanguage(e[2]) ? [{
+      parse: e => null != e[2] && "" !== e[2] && m.default.isKnownLanguage(e[2]) ? [{
         type: "codeBlockSyntax",
         content: e[1],
         originalMatch: e
@@ -299,18 +299,18 @@ let P = {
       }
     }
   },
-  D = /(-# +)/,
-  w = (0, Chunk364458.Z)([A, P]),
-  L = (0, Chunk364458.Z)([C, P]),
-  x = Chunk25209._p(w),
-  M = Chunk25209._p(L),
-  k = {
+  w = /(-# +)/,
+  D = (0, Chunk364458.Z)([A, R]),
+  x = (0, Chunk364458.Z)([C, R]),
+  L = Chunk25209._p(D),
+  j = Chunk25209._p(x),
+  M = {
     max: 1 / 0,
     maxAge: +Chunk70956.Z.Millis.MINUTE,
     updateAgeOnGet: true
   },
-  j = new(o())(k),
-  U = new(o())(k);
+  k = new(o())(M),
+  U = new(o())(M);
 
 function G(e, t, n) {
   let r = [],
@@ -322,8 +322,8 @@ function G(e, t, n) {
       allowGameMentions: true,
       allowTimeMentionInput: true
     },
-    a = n ? M : x,
-    o = n ? U : j,
+    a = n ? j : L,
+    o = n ? U : k,
     s = o.get(e);
   if (null != s) return s;
   let l = e.replace(/\r\n/g, " \n").replace(/[\r\f]/g, " ").replace(/\t/g, " ") + "\n\n",
@@ -336,11 +336,11 @@ function G(e, t, n) {
       content: a(l, true, i)
     };
   F(r, l, c, 0, []);
-  let u = Z(r);
+  let u = B(r);
   return o.set(e, u), u
 }
 
-function B(e, t) {
+function Z(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = E.r(e);
@@ -370,7 +370,7 @@ function B(e, t) {
   return s
 }
 
-function Z(e) {
+function B(e) {
   if (0 === (e = e.filter(e => e.text.length > 0)).length) return e;
   let t = [e[0]];
   for (let n = 1; n < e.length; n++) {
@@ -398,7 +398,7 @@ function F(e, t, n, r, a) {
     case "emoji":
     case "customEmoji": {
       let i = t.substring(r);
-      if (i.startsWith(l[0]) || (r = q(e, t, r, t.length), i = t.substring(r)), i.startsWith(l[0])) return Y({
+      if (i.startsWith(l[0]) || (r = q(e, t, r, t.length), i = t.substring(r)), i.startsWith(l[0])) return W({
         result: e,
         sourceText: t,
         text: l[0],
@@ -409,7 +409,7 @@ function F(e, t, n, r, a) {
       throw Error("Slate: Unable to find emoji: ".concat(l[0], " in ").concat(t, " at ").concat(r))
     }
     case "soundboard":
-      return Y({
+      return W({
         result: e,
         sourceText: t,
         text: l[0],
@@ -430,7 +430,7 @@ function F(e, t, n, r, a) {
         text: a,
         id: o
       } = n;
-      if (null != a) return i()(a === l[0], "Slate: text mentions must exactly match the regex match"), Y({
+      if (null != a) return i()(a === l[0], "Slate: text mentions must exactly match the regex match"), W({
         result: e,
         sourceText: t,
         text: a,
@@ -440,7 +440,7 @@ function F(e, t, n, r, a) {
           text: a
         }
       });
-      return Y({
+      return W({
         result: e,
         sourceText: t,
         text: l[0],
@@ -455,7 +455,7 @@ function F(e, t, n, r, a) {
       let {
         applicationId: i
       } = n;
-      return Y({
+      return W({
         result: e,
         sourceText: t,
         text: l[0],
@@ -470,7 +470,7 @@ function F(e, t, n, r, a) {
       let {
         id: c, itemId: u
       } = n;
-      return Y({
+      return W({
         result: e,
         sourceText: t,
         text: l[0],
@@ -482,14 +482,14 @@ function F(e, t, n, r, a) {
         }
       });
     case "timestamp":
-      let d = m.Z.getConfig({
+      let d = h.Z.getConfig({
         location: "flattenMarkdown"
       }).enabled;
       if (g.Z.getCurrentConfig({
           location: "c70cbb_1"
         }, {
           autoTrackExposure: false
-        }).enabled || d) return Y({
+        }).enabled || d) return W({
         result: e,
         sourceText: t,
         text: l[0],
@@ -499,9 +499,9 @@ function F(e, t, n, r, a) {
       });
       return H(e, t, l[0], r, a);
     case "timestampMentionInput":
-      if (m.Z.getConfig({
+      if (h.Z.getConfig({
           location: "flattenMarkdown-input"
-        }).enabled) return Y({
+        }).enabled) return W({
         result: e,
         sourceText: t,
         text: l[0],
@@ -530,7 +530,7 @@ function F(e, t, n, r, a) {
         before: n,
         after: i
       } = V(t, s, r, l);
-      return r = W(e, t, n, r, "syntaxBefore"), a.push(s), r = H(e, t, null != o ? o : "", r, a), a.pop(), r = W(e, t, i, r, "syntaxAfter"), K(t, r)
+      return r = Y(e, t, n, r, "syntaxBefore"), a.push(s), r = H(e, t, null != o ? o : "", r, a), a.pop(), r = Y(e, t, i, r, "syntaxAfter"), K(t, r)
     }
     default:
       throw Error("Slate: Unknown rule type: ".concat(s))
@@ -547,16 +547,16 @@ function V(e, t, n, r) {
     after: "_"
   };
   if ("subtext" === t) return {
-    before: D.exec(r.input)[1],
+    before: w.exec(r.input)[1],
     after: ""
   };
-  let i = T["link" === t ? "url" : t];
+  let i = I["link" === t ? "url" : t];
   if ("inlineStyle" === i.type) return i;
   throw Error("Slate: rule must be an inlineStyle")
 }
 
 function H(e, t, n, r, i) {
-  return "string" == typeof n ? r = Y({
+  return "string" == typeof n ? r = W({
     result: e,
     sourceText: t,
     text: n,
@@ -568,7 +568,7 @@ function H(e, t, n, r, i) {
   })), K(t, r)
 }
 
-function W(e, t, n, r, i) {
+function Y(e, t, n, r, i) {
   if (n.length > 0) {
     let a = t.indexOf(n, r);
     if (false === a) return z('Slate: Unable to find syntax characters "'.concat(n, '" at position ').concat(r), n, r);
@@ -583,7 +583,7 @@ function W(e, t, n, r, i) {
   return r
 }
 
-function Y(e) {
+function W(e) {
   let {
     result: t,
     sourceText: n,
@@ -613,13 +613,13 @@ function K(e, t) {
 }
 
 function z(e, t, n) {
-  if (t.split("").some(e => S.has(e))) return I.error(e), n;
+  if (t.split("").some(e => T.has(e))) return S.error(e), n;
   throw Error(e)
 }
 
 function q(e, t, n, r) {
   for (; n < r;)
-    if (S.has(t[n])) n = W(e, t, t[n], n, "syntaxBefore"), n = K(t, n);
+    if (T.has(t[n])) n = Y(e, t, t[n], n, "syntaxBefore"), n = K(t, n);
     else break;
   return n
 }

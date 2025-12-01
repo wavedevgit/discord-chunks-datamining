@@ -2,7 +2,7 @@
 /** chunk id: 139117, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk120230 = require("./120230.js");
 
-function _() {
+function p() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk565138.Z.Sizes.SMALLER;
   switch (module) {
     case Chunk565138.Z.Sizes.SMOL:
@@ -29,7 +29,7 @@ function _() {
   }
 }
 
-function p() {
+function _() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk565138.Z.Sizes.SMALLER;
   switch (module) {
     case Chunk565138.Z.Sizes.SMOL:
@@ -41,33 +41,33 @@ function p() {
   }
 }
 
-function h(e) {
+function m(e) {
   let {
     className: t,
     maxGuilds: n,
     guilds: i,
     onFocus: o,
-    onClick: h,
-    size: m = d.Z.Sizes.SMALLER,
+    onClick: m,
+    size: h = d.Z.Sizes.SMALLER,
     hideOverflowCount: g = false,
     disableGuildNameTooltip: E = false
-  } = e, b = _(m);
+  } = e, b = p(h);
 
   function y() {
     let e = i.length - n,
       t = e + 1,
-      _ = e > 0 && !g,
+      p = e > 0 && !g,
       y = Math.min(i.length, n) - 1,
       O = s()(i).take(n).map((e, t) => {
         let n = e.name,
-          i = t === y && !_,
+          i = t === y && !p,
           o = a()(f.avatar, b, i && f.isLast);
         return E ? (0, r.jsx)("div", {
           className: o,
           children: (0, r.jsx)(d.Z, {
             guild: e,
-            onClick: h,
-            size: m,
+            onClick: m,
+            size: h,
             showTooltip: false
           })
         }) : (0, r.jsx)(l.u, {
@@ -75,17 +75,17 @@ function h(e) {
           text: n,
           children: (0, r.jsx)(d.Z, {
             guild: e,
-            onClick: h,
-            size: m
+            onClick: m,
+            size: h
           })
         }, e.id)
       }).value();
-    if (_) {
-      let e = p(m);
+    if (p) {
+      let e = _(h);
       O[O.length - 1] = (0, r.jsx)(c.zx, {
         className: a()(f.overflow, b),
         onFocus: o,
-        onClick: e => null == h ? true : h(e),
+        onClick: e => null == m ? true : m(e),
         look: c.zx.Looks.BLANK,
         size: c.zx.Sizes.NONE,
         children: (0, r.jsx)(u.Text, {

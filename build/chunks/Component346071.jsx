@@ -19,7 +19,7 @@ function u(e) {
     variant: n = "default",
     enablePremiumBrandRefresh: u = false,
     style: d
-  } = e, f = t.fractionalState === o.a$.FP_SUB_PAUSED, _ = (0, a.Z)(t.endsAt, f), p = "", h = {
+  } = e, f = t.fractionalState === o.a$.FP_SUB_PAUSED, p = (0, a.Z)(t.endsAt, f), _ = "", m = {
     trial: {
       days_and_hours: s.t.SQyVVd,
       days: s.t["2ifAYG"],
@@ -31,14 +31,14 @@ function u(e) {
       hours: s.t["8Xm6uL"]
     }
   };
-  return (_.days > 0 && _.hours > 0 ? p = s.intl.format(h[n].days_and_hours, {
-    days: _.days,
-    hours: _.hours
-  }) : _.days > 0 ? p = s.intl.format(h[n].days, {
-    days: _.days
-  }) : _.hours > 0 && (p = s.intl.format(h[n].hours, {
-    hours: _.hours
-  })), "" === p) ? null : u ? (0, r.jsxs)("div", {
+  return (p.days > 0 && p.hours > 0 ? _ = s.intl.format(m[n].days_and_hours, {
+    days: p.days,
+    hours: p.hours
+  }) : p.days > 0 ? _ = s.intl.format(m[n].days, {
+    days: p.days
+  }) : p.hours > 0 && (_ = s.intl.format(m[n].hours, {
+    hours: p.hours
+  })), "" === _) ? null : u ? (0, r.jsxs)("div", {
     className: l.premiumBrandRefreshContainer,
     style: d,
     children: [(0, r.jsx)("img", {
@@ -47,7 +47,7 @@ function u(e) {
       className: l.premiumBrandRefreshIcon
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/medium",
-      children: p
+      children: _
     })]
   }) : (0, r.jsxs)("div", {
     className: l.activeFractionalPremiumBannerContainer,
@@ -65,7 +65,7 @@ function u(e) {
       })]
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      children: p
+      children: _
     }), (0, r.jsx)("div", {
       className: l.activeFractionalPremiumBannerBackgroundImage
     })]

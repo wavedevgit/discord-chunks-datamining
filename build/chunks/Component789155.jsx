@@ -19,7 +19,7 @@ let f = function(e) {
     churnUserDiscountOffer: t,
     onDiscountClaim: n,
     onContinue: f
-  } = e, _ = (0, s.ZP)(), p = (0, i.wj)(_) ? u : d;
+  } = e, p = (0, s.ZP)(), _ = (0, i.wj)(p) ? u : d;
   return null == t ? null : (0, r.jsxs)("div", {
     className: c.churnFooterContainer,
     children: [(0, r.jsx)("div", {
@@ -32,7 +32,7 @@ let f = function(e) {
         className: c.churnFooterContentBody,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: p,
+          src: _,
           className: c.churnFooterIcon
         }), (0, r.jsxs)("div", {
           className: c.churnFooterContentBodyInner,

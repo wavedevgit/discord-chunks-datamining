@@ -41,7 +41,7 @@ if (!Object.keys) {
       $webkitStorageInfo: true,
       $window: true
     },
-    _ = function() {
+    p = function() {
       if ("undefined" == typeof window) returnfalse;
       for (var e in window) try {
         if (!f["$" + module] && i.call(window, module) && null !== window[module] && "object" == typeof window[module]) try {
@@ -54,8 +54,8 @@ if (!Object.keys) {
       }
       returnfalse
     }(),
-    p = function(e) {
-      if ("undefined" == typeof window || !_) return d(e);
+    _ = function(e) {
+      if ("undefined" == typeof window || !p) return d(e);
       try {
         return d(e)
       } catch (e) {
@@ -71,13 +71,13 @@ if (!Object.keys) {
     if (!t && !n && !r) throw TypeError("Object.keys called on a non-object");
     var f = c && n;
     if (s && e.length > 0 && !i.call(e, 0))
-      for (var _ = 0; _ < e.length; ++_) d.push(String(_));
+      for (var p = 0; p < e.length; ++p) d.push(String(p));
     if (r && e.length > 0)
-      for (var h = 0; h < e.length; ++h) d.push(String(h));
+      for (var m = 0; m < e.length; ++m) d.push(String(m));
     else
-      for (var m in e) !(f && "prototype" === m) && i.call(e, m) && d.push(String(m));
+      for (var h in e) !(f && "prototype" === h) && i.call(e, h) && d.push(String(h));
     if (l)
-      for (var g = p(e), E = 0; E < u.length; ++E) !(g && "constructor" === u[E]) && i.call(e, u[E]) && d.push(u[E]);
+      for (var g = _(e), E = 0; E < u.length; ++E) !(g && "constructor" === u[E]) && i.call(e, u[E]) && d.push(u[E]);
     return d
   }
 }

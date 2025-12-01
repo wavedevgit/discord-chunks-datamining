@@ -2,7 +2,7 @@
 /** chunk id: 92951, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -66,7 +66,7 @@ function f(e, t) {
   return i
 }
 
-function _(e) {
+function p(e) {
   e.removeAttribute("src"), Array.from(e.children).forEach(e => {
     (0, a.kK)(e, HTMLSourceElement) && (e.removeAttribute("src"), e.removeAttribute("type")), (0, a.kK)(e, HTMLImageElement) && e.removeAttribute("src")
   });
@@ -74,7 +74,7 @@ function _(e) {
     e.load()
   } catch (e) {}
 }
-let p = e => {
+let _ = e => {
     var {
       alt: t,
       externalRef: n,
@@ -83,18 +83,18 @@ let p = e => {
       responsive: c,
       mediaLayoutType: u,
       useReducedMotion: f
-    } = e, p = d(e, ["alt", "externalRef", "autoPlay", "playOnHover", "responsive", "mediaLayoutType", "useReducedMotion"]);
-    let h = !f && !s && a,
-      m = i.useRef(null);
+    } = e, _ = d(e, ["alt", "externalRef", "autoPlay", "playOnHover", "responsive", "mediaLayoutType", "useReducedMotion"]);
+    let m = !f && !s && a,
+      h = i.useRef(null);
 
     function g() {
       var e;
-      s && (null == m || null == (e = m.current) || e.play())
+      s && (null == h || null == (e = h.current) || e.play())
     }
 
     function E() {
       var e;
-      s && (null == m || null == (e = m.current) || e.pause())
+      s && (null == h || null == (e = h.current) || e.pause())
     }
 
     function b() {
@@ -108,8 +108,8 @@ let p = e => {
 
     function y() {
       return {
-        maxWidth: p.width,
-        maxHeight: p.height,
+        maxWidth: _.width,
+        maxHeight: _.height,
         width: "100%",
         height: "100%"
       }
@@ -117,21 +117,21 @@ let p = e => {
     return i.useLayoutEffect(() => () => {
       let {
         current: e
-      } = m;
-      null != e && _(e)
-    }, []), i.useLayoutEffect(() => ("function" == typeof n ? (n(null), n(m.current)) : null != n && (n.current = m.current), () => {
+      } = h;
+      null != e && p(e)
+    }, []), i.useLayoutEffect(() => ("function" == typeof n ? (n(null), n(h.current)) : null != n && (n.current = h.current), () => {
       "function" == typeof n ? n(null) : null != n && (n.current = null)
-    }), [n, m]), (0, r.jsx)("video", l({
+    }), [n, h]), (0, r.jsx)("video", l({
       "aria-label": t,
-      ref: m,
-      autoPlay: h,
+      ref: h,
+      autoPlay: m,
       onMouseEnter: g,
       onMouseLeave: E,
       onFocus: g,
       onBlur: E,
       style: b()
-    }, p))
+    }, _))
   },
-  h = Chunk473749.forwardRef((e, t) => (0, r.jsx)(p, u(l({}, e), {
+  m = Chunk473749.forwardRef((e, t) => (0, r.jsx)(_, u(l({}, e), {
     externalRef: t
   })))

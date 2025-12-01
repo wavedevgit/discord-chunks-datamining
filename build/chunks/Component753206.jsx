@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk845080 = require("./845080.jsx"),
   Chunk360514 = require("./360514.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -60,37 +60,37 @@ function E(e) {
   let {
     message: n,
     channel: a,
-    compact: p,
-    className: m,
+    compact: _,
+    className: h,
     isGroupStart: E,
     hideSimpleEmbedContent: b = true,
     disableInteraction: y,
     previewGuildId: O,
     preview: v,
-    author: I
-  } = e, T = null != O ? O : (0, l.k)(n), S = (0, s.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
+    author: S
+  } = e, I = null != O ? O : (0, l.k)(n), T = (0, s.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
     content: A
   } = (0, u.Z)(n, {
     hideSimpleEmbedContent: b,
-    allowList: S,
-    allowHeading: S,
+    allowList: T,
+    allowHeading: T,
     allowLinks: true,
     previewLinkTarget: true
-  }), C = i.useMemo(() => (0, f.Z)(g(h({}, e), {
+  }), C = i.useMemo(() => (0, f.Z)(g(m({}, e), {
     channel: a,
-    guildId: T
-  })), [e, a, T]);
+    guildId: I
+  })), [e, a, I]);
   return (0, r.jsx)(c.Z, {
-    compact: p,
-    className: o()(m, {
-      [_.message]: true,
-      [_.cozyMessage]: !p,
-      [_.groupStart]: E
+    compact: _,
+    className: o()(h, {
+      [p.message]: true,
+      [p.cozyMessage]: !_,
+      [p.groupStart]: E
     }),
     childrenHeader: C,
     childrenMessageContent: (0, d.Z)(e, A),
     disableInteraction: y,
-    author: I,
+    author: S,
     preview: v
   })
 }

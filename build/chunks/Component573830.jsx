@@ -2,7 +2,7 @@
 /** chunk id: 573830, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => D
+  J: () => w
 }), require("./388685.js"), require("./583741.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk635041 = require("./635041.jsx"),
   Chunk571755 = require("./571755.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -59,15 +59,15 @@ function b(e, t) {
 let y = "M4.10585 5.3837L5.37864 4.11091L11.884 10.61632L10.6112 11.88912L4.10585 5.3837Z",
   O = "M10.61632 4.11091L11.88912 5.3837L5.3837 11.88912L4.11091 10.61632L10.61632 4.11091Z",
   v = "M5.25333 8.80104L5.25333 7.17346L10.85336 7.17346L10.85336 8.80104L5.25333 8.80104Z",
-  I = "M10.84656 7.17346L10.84656 8.80104L5.24954 8.80104L5.24954 7.17346L10.84656 7.17346Z",
-  T = "M6.31649 11.88304L5.0437 10.61032L11.44792 4.20604L12.72072 5.47883L6.31649 11.88304Z",
-  S = "M3.26914 8.87224L4.54194 7.59943L7.5588 10.61632L6.28601 11.88912L3.26914 8.87224Z",
+  S = "M10.84656 7.17346L10.84656 8.80104L5.24954 8.80104L5.24954 7.17346L10.84656 7.17346Z",
+  I = "M6.31649 11.88304L5.0437 10.61032L11.44792 4.20604L12.72072 5.47883L6.31649 11.88304Z",
+  T = "M3.26914 8.87224L4.54194 7.59943L7.5588 10.61632L6.28601 11.88912L3.26914 8.87224Z",
   A = [0, .1, .4, .6, .9, 1],
   C = [0, .1, .9, 1],
   N = [0, .1, .2, .5, .7, 1],
-  R = [0, .3, .5, .8, .9, 1];
+  P = [0, .3, .5, .8, .9, 1];
 
-function P(e, t, n) {
+function R(e, t, n) {
   let i = e.to({
     range: C,
     output: [t, t, n, n],
@@ -82,14 +82,14 @@ function P(e, t, n) {
         fill: i,
         d: e.to({
           range: C,
-          output: [y, v, v, T],
+          output: [y, v, v, I],
           extrapolate: "clamp"
         })
       }), (0, r.jsx)(s.animated.path, {
         fill: i,
         d: e.to({
           range: C,
-          output: [O, I, I, S],
+          output: [O, S, S, T],
           extrapolate: "clamp"
         })
       })]
@@ -97,88 +97,88 @@ function P(e, t, n) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     checked: t,
     disabled: n,
-    id: m,
+    id: h,
     onChange: E,
     focusProps: y,
     hasIcon: O = false,
     describedBy: v,
-    labelledBy: I,
-    innerRef: T
+    labelledBy: S,
+    innerRef: I
   } = e, {
-    reducedMotion: S
-  } = i.useContext(f.S), D = i.useRef(null), w = i.useRef(null), L = null != T ? T : w, x = (0, l.l)({
+    reducedMotion: T
+  } = i.useContext(f.S), w = i.useRef(null), D = i.useRef(null), x = null != I ? I : D, L = (0, l.l)({
     isSelected: t,
     onChange: E,
     isDisabled: n
   }), {
-    inputProps: M,
-    labelProps: k,
-    isPressed: j
+    inputProps: j,
+    labelProps: M,
+    isPressed: k
   } = (0, a.h)({
-    id: m,
+    id: h,
     isDisabled: n,
     "aria-describedby": v,
-    "aria-labelledby": I
-  }, x, L), {
+    "aria-labelledby": S
+  }, L, x), {
     hoverProps: U,
     isHovered: G
   } = (0, o.X)({
     isDisabled: n
-  }), B = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), Z = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), F = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT_SELECTED).spring(), V = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), H = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT).spring(), W = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT_SELECTED).spring(), Y = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), K = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER_SELECTED).spring(), z = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER).spring(), q = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER_SELECTED).spring(), X = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_DEFAULT).spring(), Q = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_ACTIVE).spring(), J = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), $ = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT_SELECTED).spring(), {
+  }), Z = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), B = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), F = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT_SELECTED).spring(), V = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), H = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT).spring(), Y = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT_SELECTED).spring(), W = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), K = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER_SELECTED).spring(), z = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER).spring(), q = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER_SELECTED).spring(), Q = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_DEFAULT).spring(), X = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_ACTIVE).spring(), J = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), $ = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT_SELECTED).spring(), {
     state: ee,
     opacity: et
   } = (0, u.q)({
     config: {
-      duration: S.enabled ? 200 : 300
+      duration: T.enabled ? 200 : 300
     },
     opacity: n ? .5 : 1,
-    state: j ? t ? R[R.length - 2] : N[1] : +!!t
+    state: k ? t ? P[P.length - 2] : N[1] : +!!t
   }, "animate-always"), en = function(e) {
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [...e].reverse();
     return t ? ee.to({
-      range: R,
+      range: P,
       output: n
     }) : ee.to({
       range: N,
       output: e
     })
   };
-  return (0, r.jsx)(_.tE, b(g({}, y), {
-    ringTarget: D,
-    focusTarget: L,
+  return (0, r.jsx)(p.tE, b(g({}, y), {
+    ringTarget: w,
+    focusTarget: x,
     within: true,
     offset: false,
-    children: (0, r.jsxs)("label", b(g({}, k), {
-      className: h.container,
+    children: (0, r.jsxs)("label", b(g({}, M), {
+      className: m.container,
       children: [(0, r.jsx)(s.animated.div, b(g({}, U), {
-        ref: D,
-        className: h.switchIndicator,
+        ref: w,
+        className: m.switchIndicator,
         "data-size": "md",
         "data-mana-component": "switch",
         style: {
           opacity: et,
           backgroundColor: ee.to({
             range: C,
-            output: [G ? Y : B, Z, V, G ? K : F],
+            output: [G ? W : Z, B, V, G ? K : F],
             extrapolate: "clamp"
           }),
           border: "1px solid",
           borderColor: ee.to({
             range: C,
-            output: [G ? z : H, G ? z : H, G ? q : W, G ? q : W],
+            output: [G ? z : H, G ? z : H, G ? q : Y, G ? q : Y],
             extrapolate: "clamp"
           })
         },
         children: (0, r.jsxs)(s.animated.svg, {
-          className: h.thumb,
+          className: m.thumb,
           viewBox: "0 0 24 24",
           preserveAspectRatio: "xMidYMin meet",
           style: {
-            left: ee.to(S.enabled ? {
+            left: ee.to(T.enabled ? {
               range: C,
               output: [1, 1, 24, 24]
             } : {
@@ -192,16 +192,16 @@ function D(e) {
               range: C,
               output: [J, J, $, $]
             }),
-            x: S.enabled ? 4 : en([4, 4, 2.5, 1, 2.5, 4]),
-            y: S.enabled ? 4 : en([4, 7, 2.5, 7, 2.5, 4]),
-            width: S.enabled ? 16 : en([16, 16, 19, 22, 19, 16]),
-            height: S.enabled ? 16 : en([16, 10, 19, 10, 19, 16]),
-            rx: S.enabled ? 8 : en([8, 5, 9.5, 5, 9.5, 8])
-          }), O && P(ee, X, Q)]
+            x: T.enabled ? 4 : en([4, 4, 2.5, 1, 2.5, 4]),
+            y: T.enabled ? 4 : en([4, 7, 2.5, 7, 2.5, 4]),
+            width: T.enabled ? 16 : en([16, 16, 19, 22, 19, 16]),
+            height: T.enabled ? 16 : en([16, 10, 19, 10, 19, 16]),
+            rx: T.enabled ? 8 : en([8, 5, 9.5, 5, 9.5, 8])
+          }), O && R(ee, Q, X)]
         })
-      })), (0, r.jsx)(p.n, {
-        children: (0, r.jsx)("input", b(g({}, M), {
-          ref: L
+      })), (0, r.jsx)(_.n, {
+        children: (0, r.jsx)("input", b(g({}, j), {
+          ref: x
         }))
       })]
     }))

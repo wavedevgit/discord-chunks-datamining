@@ -40,13 +40,6 @@ function f(e) {
   null != t && (u = s({}, u, t), c = true)
 }
 
-function _(e) {
-  let {
-    consents: t
-  } = e;
-  u = s({}, t), l = true
-}
-
 function p(e) {
   let {
     consents: t
@@ -54,11 +47,18 @@ function p(e) {
   u = s({}, t), l = true
 }
 
-function h(e) {
+function _(e) {
+  let {
+    consents: t
+  } = e;
+  u = s({}, t), l = true
+}
+
+function m(e) {
   d = e.consentRequired
 }
 
-function m() {
+function h() {
   d = null
 }
 class g extends(r = Chunk442837.ZP.Store) {
@@ -81,8 +81,8 @@ class g extends(r = Chunk442837.ZP.Store) {
 o(g, "displayName", "ConsentStore");
 let E = new g(Chunk570140.Z, {
   CONNECTION_OPEN: f,
-  OVERLAY_INITIALIZE: _,
-  UPDATE_CONSENTS: p,
-  SET_CONSENT_REQUIRED: h,
-  LOGOUT: m
+  OVERLAY_INITIALIZE: p,
+  UPDATE_CONSENTS: _,
+  SET_CONSENT_REQUIRED: m,
+  LOGOUT: h
 })

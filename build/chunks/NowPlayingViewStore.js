@@ -2,7 +2,7 @@
 /** chunk id: 801077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eP
+  Z: () => eR
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -49,7 +49,7 @@ function G(e, t, n) {
   }) : e[t] = n, e
 }
 
-function B(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -62,7 +62,7 @@ function B(e) {
   return e
 }
 
-function Z(e, t) {
+function B(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,19 +74,19 @@ function Z(e, t) {
 }
 
 function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let V = "party-",
   H = "channel-",
-  W = "user-",
-  Y = 1e3,
+  Y = "user-",
+  W = 1e3,
   K = false,
   z = false,
   q = [],
-  X = [],
-  Q = {},
+  Q = [],
+  X = {},
   J = {},
   $ = new Set,
   ee = new Set;
@@ -97,20 +97,20 @@ function et() {
 }
 
 function en(e) {
-  return L.Z.findActivity(e, e => e.type !== U.IIU.CUSTOM_STATUS)
+  return x.Z.findActivity(e, e => e.type !== U.IIU.CUSTOM_STATUS)
 }
 
 function er(e) {
-  return null == Q[e] && (Q = F(B({}, Q), {
+  return null == X[e] && (X = F(Z({}, X), {
     [e]: new A.Z({
       name: e
     })
-  })), Q[e]
+  })), X[e]
 }
 
 function ei(e) {
-  return null == J[e] && (J = F(B({}, J), {
-    [e]: new S.Z({
+  return null == J[e] && (J = F(Z({}, J), {
+    [e]: new T.Z({
       url: e
     })
   })), J[e]
@@ -121,24 +121,24 @@ function ea(e) {
 }
 
 function eo(e) {
-  if ((0, d.Z)(e)) return T.r9;
+  if ((0, d.Z)(e)) return I.r9;
   if ((0, f.Z)(e)) return er(e.name);
-  let t = null != e.application_id ? m.Z.getApplication(e.application_id) : null;
-  return null != t ? t : (0, _.Z)(e) && null != e.url ? ei(e.url) : (null != e.application_id && ea(e.application_id), t)
+  let t = null != e.application_id ? h.Z.getApplication(e.application_id) : null;
+  return null != t ? t : (0, p.Z)(e) && null != e.url ? ei(e.url) : (null != e.application_id && ea(e.application_id), t)
 }
 
 function es(e) {
-  let t = m.Z.getApplication(e);
+  let t = h.Z.getApplication(e);
   return null != t ? t : "string" != typeof e ? (new g.Z("NowPlayingViewStore").error("Unknown type for applicationId: ".concat(typeof e, ", value: ").concat(e), {
     tags: {
       source: "ACTIVITIES"
     }
-  }), null) : e === T.XB ? T.r9 : e.startsWith(A.H) ? er(e.slice(A.H.length)) : e.startsWith(S._) ? ei(e.slice(S._.length)) : (ea(e), null)
+  }), null) : e === I.XB ? I.r9 : e.startsWith(A.H) ? er(e.slice(A.H.length)) : e.startsWith(T._) ? ei(e.slice(T._.length)) : (ea(e), null)
 }
 
 function el(e) {
-  let t = k.Z.getVoiceStateForUser(e);
-  return (null == t ? true : t.channelId) != null && w.Z.canWithPartialContext(U.Plq.VIEW_CHANNEL, {
+  let t = M.Z.getVoiceStateForUser(e);
+  return (null == t ? true : t.channelId) != null && D.Z.canWithPartialContext(U.Plq.VIEW_CHANNEL, {
     channelId: t.channelId
   }) ? t.channelId : null
 }
@@ -148,7 +148,7 @@ function ec(e) {
     var t;
     let n = el(e.id),
       r = en(e.id);
-    return null != n ? "".concat(H).concat(n) : (null == r || null == (t = r.party) ? true : t.id) != null ? "".concat(V).concat(r.party.id) : "".concat(W).concat(e.id)
+    return null != n ? "".concat(H).concat(n) : (null == r || null == (t = r.party) ? true : t.id) != null ? "".concat(V).concat(r.party.id) : "".concat(Y).concat(e.id)
   })
 }
 
@@ -158,25 +158,25 @@ function eu(e, t) {
 }
 
 function ed(e) {
-  return x.Z.isFriend(e.id)
+  return L.Z.isFriend(e.id)
 }
 
 function ef(e, t, n) {
-  let r, i = M.default.getCurrentUser(),
+  let r, i = j.default.getCurrentUser(),
     o = O.Z.getUserAffinitiesMap(),
-    s = (0, I.C)(t, o, "NowPlayingViewStore - partiedMembers"),
+    s = (0, S.C)(t, o, "NowPlayingViewStore - partiedMembers"),
     d = s.map(e => e.id),
     f = s.filter(t => e.has(t.id)),
-    _ = false,
-    h = [],
-    m = new Set,
+    p = false,
+    m = [],
+    h = new Set,
     g = false,
     E = [];
   for (let e of s) {
-    var S, A, R, x;
+    var T, A, P, L;
     let t = C.Z.getAnyStreamForUser(e.id),
       n = N.Z.getChannel(null == t ? true : t.channelId);
-    if ((0, p.Y3)(n)) continue;
+    if ((0, _.Y3)(n)) continue;
     let r = en(e.id);
     if (null != t && E.push({
         stream: t,
@@ -185,7 +185,7 @@ function ef(e, t, n) {
       }), null == r) continue;
     let o = (0, b.Z)(r);
     if (null == o) continue;
-    g = o === T.XB;
+    g = o === I.XB;
     let d = es(o);
     if ((0, u.Z)(r)) {
       let t = (0, l.a)();
@@ -193,46 +193,46 @@ function ef(e, t, n) {
           activity: r,
           userId: e.id,
           application: d,
-          channelId: null == (A = k.Z.getVoiceStateForUser(e.id)) ? true : A.channelId,
+          channelId: null == (A = M.Z.getVoiceStateForUser(e.id)) ? true : A.channelId,
           currentUser: i,
           isActivitiesEnabledForCurrentPlatform: t,
           ChannelStore: N.Z,
-          VoiceStateStore: k.Z,
-          PermissionStore: w.Z,
-          GuildStore: D.Z
+          VoiceStateStore: M.Z,
+          PermissionStore: D.Z,
+          GuildStore: w.Z
         }) !== c.Fw.CAN_JOIN) continue
     }
-    if (!y.JE(r) || null == d || m.has(d.id)) continue;
+    if (!y.JE(r) || null == d || h.has(d.id)) continue;
     let f = null != r ? eo(r) : null;
     (null == f || f.id !== d.id) && (r = null);
     let O = [];
-    O = null != r && null != r.party && null != r.party.id ? Array.from(null != (R = P.Z.getParty(r.party.id)) ? R : []).reduce((e, t) => {
-      let n = M.default.getUser(t);
+    O = null != r && null != r.party && null != r.party.id ? Array.from(null != (P = R.Z.getParty(r.party.id)) ? P : []).reduce((e, t) => {
+      let n = j.default.getUser(t);
       return null != n && e.push(n), e
     }, []) : s.filter(e => {
       let t = en(e.id),
         n = null != t ? eo(t) : null;
       return null != n && n.id === d.id
-    }), (O = a().orderBy(O, [ed], ["desc"])).length !== s.length && (_ = true), m.add(d.id), h.push({
+    }), (O = a().orderBy(O, [ed], ["desc"])).length !== s.length && (p = true), h.add(d.id), m.push({
       game: d,
       activity: r,
       activityUser: e,
-      startedPlayingTime: null != (x = null == r || null == (S = r.timestamps) ? true : S.start) ? x : null == r ? true : r.created_at,
+      startedPlayingTime: null != (L = null == r || null == (T = r.timestamps) ? true : T.start) ? L : null == r ? true : r.created_at,
       playingMembers: O
     })
   }
   let U = 1 === f.length,
     G = [],
-    B = new Set,
-    Z = new Set;
+    Z = new Set,
+    B = new Set;
   for (let e of s) {
     let t = el(e.id),
       n = N.Z.getChannel(t),
       i = null != n ? n.getGuildId() : null,
-      o = D.Z.getGuild(i);
-    if (Z.has(i) && B.has(t) || null == n || null == o || n.id === o.afkChannelId) null == n && (r = null, U = true);
+      o = w.Z.getGuild(i);
+    if (B.has(i) && Z.has(t) || null == n || null == o || n.id === o.afkChannelId) null == n && (r = null, U = true);
     else {
-      let e = k.Z.getVoiceStatesForChannel(n.id),
+      let e = M.Z.getVoiceStatesForChannel(n.id),
         l = (0, v.HG)("NowPlayingViewStore - voiceMembers"),
         c = ed;
       null != l && (c = e => {
@@ -244,9 +244,9 @@ function ef(e, t, n) {
         let {
           userId: t
         } = e;
-        return M.default.getUser(t)
-      }).filter(j.lm).orderBy([c], ["desc"]).value();
-      u.filter(e => !d.includes(e.id)).forEach(e => s.push(e)), U ? Z.has(i) || (r = null) : (r = o, U = true), Z.add(i), B.add(t), G.push({
+        return j.default.getUser(t)
+      }).filter(k.lm).orderBy([c], ["desc"]).value();
+      u.filter(e => !d.includes(e.id)).forEach(e => s.push(e)), U ? B.has(i) || (r = null) : (r = o, U = true), B.add(i), Z.add(t), G.push({
         channel: n,
         guild: o,
         members: u,
@@ -260,12 +260,12 @@ function ef(e, t, n) {
     isSpotifyActivity: g,
     priorityMembers: f.map(e => ({
       user: e,
-      status: L.Z.getStatus(e.id)
+      status: x.Z.getStatus(e.id)
     })),
     partiedMembers: s,
-    showPlayingMembers: _,
+    showPlayingMembers: p,
     guildContext: r,
-    currentActivities: eu(h, e => {
+    currentActivities: eu(m, e => {
       var t;
       return null != (t = e.startedPlayingTime) ? t : 0
     }).value(),
@@ -273,23 +273,23 @@ function ef(e, t, n) {
   }
 }
 
-function e_(e) {
+function ep(e) {
   let t = et(),
     n = ef.bind(null, t);
   return a()(e).mapValues(n)
 }
 
-function ep(e) {
+function e_(e) {
   let t = e => e.priorityMembers.map(e => e.user.username.toLowerCase()).join(" "),
     n = e => e.currentActivities.length > 0,
     r = e => e.voiceChannels.length > 0,
     i = e => e.applicationStreams.length > 0,
     a = e => e.partiedMembers.length > 1,
     o = e => e.isSpotifyActivity;
-  return e.values().orderBy([eh, a, i, r, n, o, t], ["asc", "desc", "desc", "desc", "desc", "asc", "asc"]).value()
+  return e.values().orderBy([em, a, i, r, n, o, t], ["asc", "desc", "desc", "desc", "desc", "asc", "asc"]).value()
 }
 
-function eh(e) {
+function em(e) {
   return 0 !== e.voiceChannels.length && e.voiceChannels.length > 0 && e.voiceChannels.some(e => {
     let {
       voiceStates: t
@@ -298,7 +298,7 @@ function eh(e) {
   })
 }
 
-function em(e) {
+function eh(e) {
   return 0 !== e.voiceChannels.length && e.voiceChannels.length > 0 && e.voiceChannels.every(e => {
     let {
       voiceStates: t
@@ -308,13 +308,13 @@ function em(e) {
 }
 
 function eg(e) {
-  return e.partiedMembers.some(e => x.Z.isBlockedOrIgnored(e.id))
+  return e.partiedMembers.some(e => L.Z.isBlockedOrIgnored(e.id))
 }
 
 function eE(e) {
   return e.filter(e => {
     let t = eg(e),
-      n = em(e);
+      n = eh(e);
     return (e.voiceChannels.length >= 1 || e.currentActivities.length > 0 || e.applicationStreams.length > 0) && !t && !n
   })
 }
@@ -339,25 +339,25 @@ function eO() {
 
 function ev() {
   if (!eO()) returnfalse;
-  $.clear(), X = eb(q = eE(ep(e_(ec(Array.from(et()).reduce((e, t) => {
-    let n = M.default.getUser(t);
+  $.clear(), Q = eb(q = eE(e_(ep(ec(Array.from(et()).reduce((e, t) => {
+    let n = j.default.getUser(t);
     return null == n || n.bot || e.push(n), e
   }, [])))))), ey(), z = true
 }
-let eI = a().throttle(() => {
-  ev(), eR.emitChange()
-}, Y);
+let eS = a().throttle(() => {
+  ev(), eP.emitChange()
+}, W);
 
-function eT() {
-  return !!eO() && (eI(), false)
+function eI() {
+  return !!eO() && (eS(), false)
 }
 
-function eS() {
-  K = false, q = [], X = [], $.clear()
+function eT() {
+  K = false, q = [], Q = [], $.clear()
 }
 
 function eA() {
-  K = true, eI()
+  K = true, eS()
 }
 
 function eC() {
@@ -365,13 +365,13 @@ function eC() {
 }
 class eN extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk594174.default, Chunk812206.Z, Chunk158776.Z, Chunk831506.Z, Chunk979651.Z, Chunk199902.Z, Chunk699516.Z, Chunk480294.Z, Chunk752048.Z], eT), this.waitFor(Chunk812206.Z, Chunk199902.Z, Chunk592125.Z, Chunk480294.Z, Chunk831506.Z, Chunk38618.Z, Chunk430824.Z, Chunk496675.Z, Chunk158776.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default, Chunk979651.Z)
+    this.syncWith([Chunk594174.default, Chunk812206.Z, Chunk158776.Z, Chunk831506.Z, Chunk979651.Z, Chunk199902.Z, Chunk699516.Z, Chunk480294.Z, Chunk752048.Z], eI), this.waitFor(Chunk812206.Z, Chunk199902.Z, Chunk592125.Z, Chunk480294.Z, Chunk831506.Z, Chunk38618.Z, Chunk430824.Z, Chunk496675.Z, Chunk158776.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default, Chunk979651.Z)
   }
   get currentActivityParties() {
     return q
   }
   get nowPlayingCards() {
-    return X
+    return Q
   }
   get isMounted() {
     return K
@@ -381,9 +381,9 @@ class eN extends(r = Chunk442837.ZP.Store) {
   }
 }
 G(eN, "displayName", "NowPlayingViewStore");
-let eR = new eN(Chunk570140.Z, {
-    LOGOUT: eS,
+let eP = new eN(Chunk570140.Z, {
+    LOGOUT: eT,
     NOW_PLAYING_MOUNTED: eA,
     NOW_PLAYING_UNMOUNTED: eC
   }),
-  eP = eR
+  eR = eP

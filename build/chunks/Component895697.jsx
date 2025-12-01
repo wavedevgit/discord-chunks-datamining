@@ -2,7 +2,7 @@
 /** chunk id: 895697, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -32,20 +32,20 @@ var Chunk442837 = require("./442837.js"),
   Chunk57842 = require("./57842.js"),
   Chunk116649 = require("./116649.js");
 
-function R(e) {
+function P(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: R,
-    guild: P,
-    isHoveringOrFocusing: D,
-    onOpenProfile: w,
-    channelId: L,
-    onClose: x
-  } = e, M = c.ZP.getName(null == P ? true : P.id, L, t), k = (0, i.e7)([u.Z], () => {
+    displayProfile: P,
+    guild: R,
+    isHoveringOrFocusing: w,
+    onOpenProfile: D,
+    channelId: x,
+    onClose: L
+  } = e, j = c.ZP.getName(null == R ? true : R.id, x, t), M = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? true : e.application
-  }), j = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
+  }), k = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
     location: "BotUserProfilePopoutBody"
   });
   return (0, r.jsxs)(a.Ttm, {
@@ -53,68 +53,68 @@ function R(e) {
     className: N.body,
     children: [(0, r.jsx)(E.Z, {
       user: t,
-      guildId: null == P ? true : P.id,
-      onOpenProfile: w,
-      nickname: M,
-      pronouns: null == R ? true : R.pronouns,
-      tags: (0, r.jsx)(_.Z, {
-        displayProfile: R,
-        themeType: S.l.POPOUT,
-        onClose: x
+      guildId: null == R ? true : R.id,
+      onOpenProfile: D,
+      nickname: j,
+      pronouns: null == P ? true : P.pronouns,
+      tags: (0, r.jsx)(p.Z, {
+        displayProfile: P,
+        themeType: T.l.POPOUT,
+        onClose: L
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(h.Z, {
+        children: [(0, r.jsx)(m.Z, {
           userId: t.id
         }), !U && (0, r.jsx)(O.Z, {
           userId: t.id,
-          isVisible: D,
-          onOpenProfile: w
+          isVisible: w,
+          onOpenProfile: D
         })]
       })
-    }), (0, r.jsx)(T.Z, {
+    }), (0, r.jsx)(I.Z, {
       user: t,
-      onOpenProfile: e => null == w ? true : w({
+      onOpenProfile: e => null == D ? true : D({
         section: e
       })
     }), (0, r.jsxs)("div", {
       className: C.buttons,
       children: [(0, r.jsx)(b.Z, {
         user: t,
-        closePopout: x,
+        closePopout: L,
         fullWidth: true
       }), (0, r.jsx)(y.Z, {
         user: t,
-        guildId: null == P ? true : P.id,
+        guildId: null == R ? true : R.id,
         fullWidth: true
       })]
     }), (0, r.jsx)(v.Z, {
       user: t,
-      bio: null == R ? true : R.bio,
+      bio: null == P ? true : P.bio,
       hidePersonalInformation: U,
-      onClose: x
+      onClose: L
     }), G ? (0, r.jsx)(g.Z, {
       user: t,
       currentUser: n,
-      guildId: null == P ? true : P.id,
-      onOpenUserProfileModal: w,
-      onClose: x
-    }) : (0, r.jsx)(p.Z, {
+      guildId: null == R ? true : R.id,
+      onOpenUserProfileModal: D,
+      onClose: L
+    }) : (0, r.jsx)(_.Z, {
       user: t,
       currentUser: n,
-      guildId: null == P ? true : P.id,
-      onClose: x
-    }), (null == k ? true : k.popularApplicationCommandIds) != null && null != j && (0, r.jsx)(f.Z, {
-      applicationId: k.id,
-      commandIds: k.popularApplicationCommandIds,
-      channel: j,
-      guildId: null == P ? true : P.id,
-      onClick: x
-    }), null != P && (0, r.jsx)(m.Z, {
+      guildId: null == R ? true : R.id,
+      onClose: L
+    }), (null == M ? true : M.popularApplicationCommandIds) != null && null != k && (0, r.jsx)(f.Z, {
+      applicationId: M.id,
+      commandIds: M.popularApplicationCommandIds,
+      channel: k,
+      guildId: null == R ? true : R.id,
+      onClick: L
+    }), null != R && (0, r.jsx)(h.Z, {
       heading: A.intl.string(A.t["LPJmL/"]),
-      children: (0, r.jsx)(I.Z, {
+      children: (0, r.jsx)(S.Z, {
         user: t,
         currentUser: n,
-        guild: P
+        guild: R
       })
     })]
   })

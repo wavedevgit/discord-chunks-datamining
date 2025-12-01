@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   KV: () => Chunk509848.KV,
-  ZP: () => _
+  ZP: () => p
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -38,7 +38,7 @@ function d(e) {
 function f(e) {
   return null != e && "null" !== e && e !== c.ME && "undefined" !== e && e !== c.I_8
 }
-class _ {
+class p {
   _enqueue(e, t) {
     this._pending[e] = d({}, this._pending[e], t), this._flush.delay()
   }

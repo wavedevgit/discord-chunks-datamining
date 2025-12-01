@@ -51,7 +51,7 @@ function b() {
     disableSounds: y,
     disableNotifications: O,
     enableContentProtection: v
-  } = (0, Chunk442837.cj)([Chunk246946.Z], () => E({}, Chunk246946.Z.getSettings())), I = () => (0, Chunk54381.jsxs)(Chunk481060.Zbd, {
+  } = (0, Chunk442837.cj)([Chunk246946.Z], () => E({}, Chunk246946.Z.getSettings())), S = () => (0, Chunk54381.jsxs)(Chunk481060.Zbd, {
     type: Chunk481060.Zbd.Types.PRIMARY,
     className: Chunk40086.noticeCard,
     children: [(0, Chunk54381.jsxs)("div", {
@@ -71,14 +71,14 @@ function b() {
       alt: "",
       className: Chunk40086.noticeImage
     })]
-  }), T = () => {
+  }), I = () => {
     if (Chunk358085.isPlatformEmbedded) return (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t["PKDAJ/"]),
       description: Chunk388032.intl.string(Chunk388032.t.ZPi4lM),
       checked: exports,
-      onChange: e => S("autoToggle", e)
+      onChange: e => T("autoToggle", e)
     })
-  }, S = (e, t) => {
+  }, T = (e, t) => {
     o.Z.update({
       [e]: t
     })
@@ -93,7 +93,7 @@ function b() {
       gap: 24,
       children: [(0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.STREAMER_MODE_INTEGRATIONS,
-        children: I()
+        children: S()
       }), (0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.STREAMER_MODE_ENABLE,
         children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
@@ -104,8 +104,8 @@ function b() {
               onClick: A
             }),
             checked: module,
-            onChange: e => S("enabled", e)
-          }), T(), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
+            onChange: e => T("enabled", e)
+          }), I(), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
         })
       }), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
         label: Chunk388032.intl.string(Chunk388032.t["+1H47t"]),
@@ -116,7 +116,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t.UpQziA),
             description: Chunk388032.intl.string(Chunk388032.t["+9Lra7"]),
             checked: b,
-            onChange: e => S("hidePersonalInformation", e)
+            onChange: e => T("hidePersonalInformation", e)
           })
         }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
@@ -124,7 +124,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t.q7WNGv),
             description: Chunk388032.intl.string(Chunk388032.t.m7mS2U),
             checked: g,
-            onChange: e => S("hideInstantInvites", e)
+            onChange: e => T("hideInstantInvites", e)
           })
         }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_DISABLE_SOUNDS,
@@ -132,7 +132,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t.o56OZu),
             description: Chunk388032.intl.string(Chunk388032.t.eAkaik),
             checked: y,
-            onChange: e => S("disableSounds", e)
+            onChange: e => T("disableSounds", e)
           })
         }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
@@ -140,7 +140,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t.qmYiYd),
             description: Chunk388032.intl.string(Chunk388032.t["ZAmpQ/"]),
             checked: O,
-            onChange: e => S("disableNotifications", e)
+            onChange: e => T("disableNotifications", e)
           })
         }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
@@ -148,7 +148,7 @@ function b() {
             label: Chunk388032.intl.string(Chunk388032.t["iA81+a"]),
             description: Chunk388032.intl.string(Chunk388032.t.P4vj0h),
             checked: v,
-            onChange: e => S("enableContentProtection", e)
+            onChange: e => T("enableContentProtection", e)
           })
         })]
       })]

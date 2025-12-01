@@ -11,26 +11,26 @@ var Chunk754981 = require("./754981.js"),
   Chunk708150 = require("./708150.js"),
   Chunk520480 = require("./520480.js"),
   Chunk467159 = require("./467159.js"),
-  _ = 20,
-  p = false,
-  h = false,
-  m = null;
+  p = 20,
+  _ = false,
+  m = false,
+  h = null;
 
 function g(e) {
-  m || (m = new r(c(e))).start()
+  h || (h = new r(c(e))).start()
 }
 var E = {
   onCompositionStart: function(e) {
-    h = true, g(e)
+    m = true, g(e)
   },
   onCompositionEnd: function(e) {
-    p = false, h = false, setTimeout(function() {
-      p || E.resolveComposition(e)
-    }, _)
+    _ = false, m = false, setTimeout(function() {
+      _ || E.resolveComposition(e)
+    }, p)
   },
   onSelect: Chunk266254,
   onKeyDown: function(e, t) {
-    if (!h) {
+    if (!m) {
       E.resolveComposition(e), e._onKeyDown(t);
       return
     }(t.which === s.RIGHT || t.which === s.LEFT) && t.preventDefault()
@@ -39,9 +39,9 @@ var E = {
     t.which === s.RETURN && t.preventDefault()
   },
   resolveComposition: function(e) {
-    if (!h) {
-      var t = f(m).stopAndFlushMutations();
-      m = null, p = true;
+    if (!m) {
+      var t = f(h).stopAndFlushMutations();
+      h = null, _ = true;
       var n = o.set(e._latestEditorState, {
         inCompositionMode: false
       });
@@ -53,26 +53,26 @@ var E = {
           c = s.decoratorKey,
           u = s.leafKey,
           f = n.getBlockTree(l).getIn([c, "leaves", u]),
-          _ = f.start,
-          p = f.end,
-          h = n.getSelection().merge({
+          p = f.start,
+          _ = f.end,
+          m = n.getSelection().merge({
             anchorKey: l,
             focusKey: l,
-            anchorOffset: _,
-            focusOffset: p,
+            anchorOffset: p,
+            focusOffset: _,
             isBackward: false
           }),
-          m = d(r, h),
-          g = r.getBlockForKey(l).getInlineStyleAt(_);
-        r = i.replaceText(r, h, e, g, m), n = o.set(n, {
+          h = d(r, m),
+          g = r.getBlockForKey(l).getInlineStyleAt(p);
+        r = i.replaceText(r, m, e, g, h), n = o.set(n, {
           currentContent: r
         })
       });
       var s = u(n, c(e)),
         l = s.selectionState;
       e.restoreEditorDOM();
-      var _ = o.acceptSelection(n, l);
-      e.update(o.push(_, r, "insert-characters"))
+      var p = o.acceptSelection(n, l);
+      e.update(o.push(p, r, "insert-characters"))
     }
   }
 };

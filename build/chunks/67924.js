@@ -8,12 +8,12 @@ require.r(exports), require.d(exports, {
   ParsingResult: () => Chunk86465.G5,
   ReferenceWithTimezone: () => Chunk86465.X2,
   Weekday: () => Chunk894186.OG,
-  casual: () => _,
+  casual: () => p,
   createCasualConfiguration: () => g,
   createConfiguration: () => E,
-  parse: () => h,
-  parseDate: () => m,
-  strict: () => p
+  parse: () => m,
+  parseDate: () => h,
+  strict: () => _
 });
 var Chunk717319 = require("./717319.js"),
   Chunk201129 = require("./201129.js"),
@@ -25,15 +25,15 @@ var Chunk717319 = require("./717319.js"),
   Chunk955029 = require("./955029.js"),
   Chunk991631 = require("./991631.js"),
   Chunk90338 = require("./90338.js");
-let _ = new Chunk201129.k(g()),
-  p = new Chunk201129.k(E(true));
-
-function h(e, t, n) {
-  return _.parse(e, t, n)
-}
+let p = new Chunk201129.k(g()),
+  _ = new Chunk201129.k(E(true));
 
 function m(e, t, n) {
-  return _.parseDate(e, t, n)
+  return p.parse(e, t, n)
+}
+
+function h(e, t, n) {
+  return p.parseDate(e, t, n)
 }
 
 function g(e = true) {

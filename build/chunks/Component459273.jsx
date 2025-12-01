@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   I3: () => f,
-  d9: () => p,
+  d9: () => _,
   oo: () => d,
-  yp: () => _
+  yp: () => p
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -56,7 +56,7 @@ let d = Chunk473749.createContext(new u),
     })
   });
 
-function _(e) {
+function p(e) {
   let {
     event: t,
     handler: n
@@ -77,6 +77,6 @@ function _(e) {
   }, [r, t, o]), null
 }
 
-function p(e) {
-  return _(e), null
+function _(e) {
+  return p(e), null
 }

@@ -2,7 +2,7 @@
 /** chunk id: 242297, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => T
+  _: () => I
 }), require("./415506.js"), require("./388685.js");
 var Chunk579806 = require("./579806.js"),
   Chunk710845 = require("./710845.js"),
@@ -55,13 +55,13 @@ function v(e) {
   }), (0, d.zg)(e)
 }
 
-function I(e) {
+function S(e) {
   var t, n, r, i;
   null == (t = e.setFocusCallback) || t.call(e, b), null == (n = e.setFocusLostCallback) || n.call(e, y), null == (r = e.setSuccessfullyShownCallback) || r.call(e, O), null == (i = e.setOnWindowHandleInitializedCallback) || i.call(e, v), (0, d.bs)(null, "native_module_callbacks_setup"), E.verbose("Native module callbacks setup")
 }
-class T {
+class I {
   static getInstance() {
-    return null == this.instance && (this.instance = new T), this.instance
+    return null == this.instance && (this.instance = new I), this.instance
   }
   async initialize() {
     return await this.prepareOverlayModule()
@@ -85,7 +85,7 @@ class T {
     try {
       await Chunk998502.ZP.ensureModule("discord_desktop_overlay");
       let e = Chunk998502.ZP.requireModule("discord_desktop_overlay");
-      module.init(), module.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = module, (0, Chunk932404.bs)(null, "module_loaded"), (0, Chunk145597.setOutOfProcessSupport)(true), I(this.module), (0, Chunk932404.U9)(), E.info("OverlayV3 Module Loaded")
+      module.init(), module.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = module, (0, Chunk932404.bs)(null, "module_loaded"), (0, Chunk145597.setOutOfProcessSupport)(true), S(this.module), (0, Chunk932404.U9)(), E.info("OverlayV3 Module Loaded")
     } catch (e) {
       throw E.error("failed loading overlay module", module), (0, Chunk145597.setOutOfProcessSupport)(false), (0, Chunk932404.UK)(module), this.module = null, this.modulePromise = null, module
     }
@@ -96,7 +96,7 @@ class T {
     try {
       (0, d.bs)(e, "host_window_mounting_started", {
         popoutInitializationStages: u.Z.getPopoutInitializationStages()
-      }), await (0, _.s)(), t = await this.openOverlayPopout(), await (0, d.sG)(e), (0, d.bs)(e, "host_window_created", {
+      }), await (0, p.s)(), t = await this.openOverlayPopout(), await (0, d.sG)(e), (0, d.bs)(e, "host_window_created", {
         hasWindow: null != t,
         popoutInitializationStages: u.Z.getPopoutInitializationStages()
       })
@@ -210,7 +210,7 @@ class T {
   }
   setLimitedInteraction(e) {
     var t, n;
-    null == (n = this.module) || null == (t = n.setLimitedInteraction) || t.call(n, e), o.ZP.setFocusable(m.$J, !e)
+    null == (n = this.module) || null == (t = n.setLimitedInteraction) || t.call(n, e), o.ZP.setFocusable(h.$J, !e)
   }
   setCaptureZoneCallback(e) {
     var t, n;
@@ -237,4 +237,4 @@ class T {
     g(this, "module", null), g(this, "modulePromise", null), g(this, "isCrashedDisabled", false), g(this, "lastAssociatedPID", null), g(this, "trackedGamePids", new Set)
   }
 }
-g(T, "instance", null)
+g(I, "instance", null)

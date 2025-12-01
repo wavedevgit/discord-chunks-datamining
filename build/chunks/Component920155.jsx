@@ -2,8 +2,8 @@
 /** chunk id: 920155, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => I,
-  m: () => D
+  I: () => S,
+  m: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -76,15 +76,15 @@ function v(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let I = Chunk473749.createContext(null),
-  T = 20,
-  S = 22,
+let S = Chunk473749.createContext(null),
+  I = 20,
+  T = 22,
   A = 240,
   C = 10,
   N = 4,
-  R = Chunk231338.Vq;
+  P = Chunk231338.Vq;
 
-function P() {
+function R() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "center",
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "top",
     n = arguments.length > 2 ? arguments[2] : true,
@@ -92,7 +92,7 @@ function P() {
   if ("center" === module || "custom" === module) return 0;
   let i = "left" === exports || "right" === exports,
     a = Chunk473749 ? Chunk54381 : null != require ? require : A,
-    o = Chunk473749 ? S : T;
+    o = Chunk473749 ? T : I;
   if (0 === Chunk120356) return 0;
   let s = Chunk120356 / 2 - o;
   switch (module) {
@@ -105,57 +105,57 @@ function P() {
   }
 }
 
-function D(e) {
+function w(e) {
   var t;
   let {
     children: n,
     targetElementRef: a,
-    shouldShow: h = true,
+    shouldShow: m = true,
     onRequestClose: g,
     position: b = "top",
     align: v,
-    alignmentStrategy: D = "trigger-center",
-    caretConfig: w,
-    hasVideo: L = false,
-    gradientColor: x,
-    gradientOffsetBottom: M = .4,
-    onPositionChange: k,
-    onNudgeChange: j,
+    alignmentStrategy: w = "trigger-center",
+    caretConfig: D,
+    hasVideo: x = false,
+    gradientColor: L,
+    gradientOffsetBottom: j = .4,
+    onPositionChange: M,
+    onNudgeChange: k,
     scrollBehavior: U = "sticky",
     modal: G = false,
-    returnRef: B,
-    experimental_ignoreModalClicks: Z = true
-  } = e, [F, V] = i.useState(h), [H, W] = i.useState(b), Y = i.useRef(b), K = i.useRef(0), {
+    returnRef: Z,
+    experimental_ignoreModalClicks: B = true
+  } = e, [F, V] = i.useState(m), [H, Y] = i.useState(b), W = i.useRef(b), K = i.useRef(0), {
     ref: z,
     width: q,
-    height: X
-  } = (0, d.ZP)(), Q = (0, c.e7)([f.Z], () => f.Z.getLayers()), J = null != (t = Q[Q.length - 1]) ? t : "base", $ = i.useRef(k);
+    height: Q
+  } = (0, d.ZP)(), X = (0, c.e7)([f.Z], () => f.Z.getLayers()), J = null != (t = X[X.length - 1]) ? t : "base", $ = i.useRef(M);
   i.useEffect(() => {
-    $.current = k
-  }, [k]);
+    $.current = M
+  }, [M]);
   let ee = i.useCallback(e => {
       var t;
-      null != e && e !== Y.current && (Y.current = e, W(e), null == (t = $.current) || t.call($, e))
+      null != e && e !== W.current && (W.current = e, Y(e), null == (t = $.current) || t.call($, e))
     }, []),
     et = i.useMemo(() => {
       var e, t;
       return null == a.current || (null != (t = null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) ? t : "base") === J
     }, [a, J]);
   i.useEffect(() => {
-    et && h ? V(true) : et || V(false)
-  }, [et, h]), i.useEffect(() => {
+    et && m ? V(true) : et || V(false)
+  }, [et, m]), i.useEffect(() => {
     ee(b)
   }, [b, ee]);
   let en = () => {
       V(false)
     },
-    er = (0, p.i)({
-      shouldShow: h,
-      caretPosition: (0, _.z)(H),
+    er = (0, _.i)({
+      shouldShow: m,
+      caretPosition: (0, p.z)(H),
       onExitComplete: en
     }),
     ei = i.useMemo(() => {
-      if ("edge" === D && null != v) {
+      if ("edge" === w && null != v) {
         let e = "top" === H || "bottom" === H,
           t = "left" === H || "right" === H;
         if (e) {
@@ -163,33 +163,33 @@ function D(e) {
         } else if (t && ("top" === v || "center" === v || "bottom" === v)) return v;
       }
       return "center"
-    }, [D, v, H]),
+    }, [w, v, H]),
     ea = i.useMemo(() => {
       var e;
-      if ("edge" !== D) return P(null != (e = null == w ? true : w.align) ? e : "center", H, q, X)
-    }, [D, w, H, q, X]),
+      if ("edge" !== w) return R(null != (e = null == D ? true : D.align) ? e : "center", H, q, Q)
+    }, [w, D, H, q, Q]),
     eo = i.useMemo(() => ({
       position: H,
-      caretConfig: null != w ? w : {
+      caretConfig: null != D ? D : {
         align: "center"
       }
-    }), [H, w]),
+    }), [H, D]),
     es = e => {
       var {
         setPopoutRef: t,
         position: i,
         nudge: a
       } = e, c = O(e, ["setPopoutRef", "position", "nudge"]);
-      return ee(i), a !== K.current && (K.current = a, null == j || j(a)), er((e, i) => {
+      return ee(i), a !== K.current && (K.current = a, null == k || k(a)), er((e, i) => {
         if (!i) return null;
         let a = (0, r.jsx)(l.VqE, y(E({}, c), {
           setDialogRef: t,
           modal: G,
-          className: o()(null != x ? m.popoverContentWithGradient : m.popover, {
-            [m["popover--video"]]: L
+          className: o()(null != L ? h.popoverContentWithGradient : h.popover, {
+            [h["popover--video"]]: x
           }),
-          returnRef: B,
-          children: (0, r.jsx)(I.Provider, {
+          returnRef: Z,
+          children: (0, r.jsx)(S.Provider, {
             value: eo,
             children: n
           })
@@ -198,14 +198,14 @@ function D(e) {
           ref: z,
           "data-mana-component": "popover",
           style: y(E({}, e), {
-            "--custom-caret-edge-offset-horizontal": "".concat(T, "px"),
-            "--custom-caret-edge-offset-vertical": "".concat(S, "px"),
+            "--custom-caret-edge-offset-horizontal": "".concat(I, "px"),
+            "--custom-caret-edge-offset-vertical": "".concat(T, "px"),
             "--custom-popover-width": "".concat(A, "px")
           }),
-          children: null != x ? (0, r.jsx)(l.$1m, {
-            offsetBottom: M,
-            color: x,
-            className: m.popoverGradientWrapper,
+          children: null != L ? (0, r.jsx)(l.$1m, {
+            offsetBottom: j,
+            color: L,
+            className: h.popoverGradientWrapper,
             children: a
           }) : a
         })
@@ -226,9 +226,9 @@ function D(e) {
     autoInvert: true,
     nudgeAlignIntoViewport: "top" === H || "bottom" === H,
     closeOnClickOutside: false,
-    ignoreModalClicks: Z,
+    ignoreModalClicks: B,
     scrollBehavior: U,
     renderPopout: es,
-    children: R
+    children: P
   })
 }

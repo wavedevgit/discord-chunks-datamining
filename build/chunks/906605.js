@@ -6,7 +6,7 @@ require.d(exports, {
   UP: () => y,
   XE: () => E,
   YU: () => v,
-  Zx: () => m,
+  Zx: () => h,
   _s: () => g,
   tg: () => O
 }), require("./388685.js");
@@ -21,7 +21,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk505905 = require("./505905.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,25 +30,25 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h() {
+function m() {
   var e;
   return (0, Chunk699263.Z)(null != (e = Chunk944486.Z.getVoiceChannelId()) ? module : true)
 }
 
-function m(e, t) {
+function h(e, t) {
   var n;
   let i = null == (n = a.Z.getChannel(o.Z.getVoiceChannelId())) ? true : n.guild_id;
   if (null == e || null == i) return void b(false, t);
@@ -57,10 +57,10 @@ function m(e, t) {
     status: e,
     guildId: i,
     saveAsDefault: t
-  }), s.default.track(f.rMx.SET_HANG_STATUS, p({
+  }), s.default.track(f.rMx.SET_HANG_STATUS, _({
     status_type: e,
     manual_update: !!t
-  }, h()))
+  }, m()))
 }
 
 function g(e, t, n) {
@@ -70,13 +70,13 @@ function g(e, t, n) {
     emoji: t,
     status: e,
     saveAsDefault: n
-  }), s.default.track(f.rMx.SET_HANG_STATUS, p({
+  }), s.default.track(f.rMx.SET_HANG_STATUS, _({
     status_type: d.tN.CUSTOM,
     custom_status_text: e,
     custom_status_emoji_id: t.id,
     custom_status_emoji_name: t.name,
     manual_update: !!n
-  }, h()))
+  }, m()))
 }
 
 function E(e, t) {
@@ -85,19 +85,19 @@ function E(e, t) {
     type: "UPDATE_HANG_STATUS_GAME_ACTIVITY",
     applicationId: e,
     saveAsDefault: t
-  }), s.default.track(f.rMx.SET_HANG_STATUS, p({
+  }), s.default.track(f.rMx.SET_HANG_STATUS, _({
     status_type: "game_activity",
     manual_update: !!t
-  }, h()))
+  }, m()))
 }
 
 function b(e, t) {
   r.Z.dispatch({
     type: "CLEAR_HANG_STATUS",
     saveAsDefault: t
-  }), s.default.track(f.rMx.CLEAR_HANG_STATUS, p({
+  }), s.default.track(f.rMx.CLEAR_HANG_STATUS, _({
     manual_update: !!e
-  }, h()))
+  }, m()))
 }
 
 function y() {

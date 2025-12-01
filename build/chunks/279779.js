@@ -46,19 +46,19 @@ function v(e, t, n) {
   null != e && (e.nicknames[t] = null != n && "" !== n ? n : null)
 }
 
-function I(e) {
+function S(e) {
   let t = [];
   if (null == e || !(0, l.hv)(e.type)) return t;
   let {
     recipients: n = []
   } = e;
   return n.forEach(n => {
-    let r = O(_.default.getUser(n));
+    let r = O(p.default.getUser(n));
     null != e && v(r, e.id), t.push(r)
   }), t
 }
 
-function T(e, t) {
+function I(e, t) {
   let n = [];
   return e.forEach(e => {
     let r = O(e.user);
@@ -66,7 +66,7 @@ function T(e, t) {
   }), n
 }
 
-function S(e) {
+function T(e) {
   var t;
   let {
     message: n,
@@ -146,7 +146,7 @@ class C extends Chunk147913.Z {
       _worker: n
     } = this;
     if (null != n) {
-      for (let n of e = e.filter(p.lm))(null == n ? true : n.id) == null && h.Z.addBreadcrumb({
+      for (let n of e = e.filter(_.lm))(null == n ? true : n.id) == null && m.Z.addBreadcrumb({
         category: "debug",
         message: "User missing id",
         data: {
@@ -231,13 +231,13 @@ class C extends Chunk147913.Z {
       this.rebootWebworker()
     }), b(this, "_handleConnectionOpen", () => {
       setTimeout(() => {
-        let e = _.default.getCurrentUser();
+        let e = p.default.getCurrentUser();
         if (null == e) return;
         let t = O(e),
           n = {
             [t.id]: t
           };
-        Object.values(_.default.getUsers()).forEach(e => {
+        Object.values(p.default.getUsers()).forEach(e => {
           n[e.id] = O(e)
         });
         let r = d.ZP.getMutableAllGuildsAndMembers();
@@ -255,7 +255,7 @@ class C extends Chunk147913.Z {
         guilds: t
       } = e;
       setTimeout(() => {
-        let e = i().flatMap(t, e => T(e.members, e.id)),
+        let e = i().flatMap(t, e => I(e.members, e.id)),
           n = i().flatMap(t, e => {
             var t;
             let n = [];
@@ -277,10 +277,10 @@ class C extends Chunk147913.Z {
         guildMembers: n
       } = e, r = new Map;
       for (let e of t) r.set(e.id, O(e));
-      for (let e of m.default.keys(n)) {
+      for (let e of h.default.keys(n)) {
         let t = n[e];
         if (null != t)
-          for (let n of m.default.keys(t)) {
+          for (let n of h.default.keys(t)) {
             let i = r.get(n),
               a = t[n];
             null != i && null != a && null != a.nick && (v(i, e, a.nick), r.set(n, i))
@@ -298,12 +298,12 @@ class C extends Chunk147913.Z {
       } = e, {
         members: n
       } = t;
-      this.updateUsers(T(n, t.id), "guild_create")
+      this.updateUsers(I(n, t.id), "guild_create")
     }), b(this, "_handleGuildMembersChunkBatch", e => {
       let {
         chunks: t
       } = e, n = [];
-      for (let e of t) n.push(...T(e.members, e.guildId));
+      for (let e of t) n.push(...I(e.members, e.guildId));
       this.updateUsers(n, "guild_members_chunk_batch")
     }), b(this, "_handleGuildMemberUpdate", e => {
       let {
@@ -313,33 +313,33 @@ class C extends Chunk147913.Z {
       } = e, i = O(n);
       null != i && (v(i, t, r), this.updateUsers([i], "guild_member_update"))
     }), b(this, "_handlePassiveUpdateV2", e => {
-      this.updateUsers(T(e.members, e.guildId), "passive_update_v2")
+      this.updateUsers(I(e.members, e.guildId), "passive_update_v2")
     }), b(this, "_handleRelationshipAdd", e => {
       let t = O(e.relationship.user);
       this.updateUsers([t], "relationship_add")
     }), b(this, "_handleRelationshipUpdate", e => {
-      let t = O(_.default.getUser(e.relationship.id));
+      let t = O(p.default.getUser(e.relationship.id));
       this.updateUsers([t], "relationship_update")
     }), b(this, "_handleRelationshipRemove", e => {
-      let t = O(_.default.getUser(e.relationship.id));
+      let t = O(p.default.getUser(e.relationship.id));
       this.updateUsers([t], "relationship_remove")
     }), b(this, "_handleDMCreate", e => {
       let {
         channel: {
           id: t
         }
-      } = e, n = I(u.Z.getChannel(t));
+      } = e, n = S(u.Z.getChannel(t));
       if (0 === n.length) return;
-      let r = O(_.default.getCurrentUser());
+      let r = O(p.default.getCurrentUser());
       v(r, t), n.push(r), this.updateUsers(n, "dm_create")
     }), b(this, "_handleDMUpdates", e => {
       let {
         channels: t
       } = e;
       for (let e of t) {
-        let t = I(u.Z.getChannel(e.id));
+        let t = S(u.Z.getChannel(e.id));
         if (0 === t.length) continue;
-        let n = O(_.default.getCurrentUser());
+        let n = O(p.default.getCurrentUser());
         v(n, e.id), t.push(n), this.updateUsers(t, "dm_updates")
       }
     }), b(this, "_handleRecipientChanges", e => {
@@ -359,7 +359,7 @@ class C extends Chunk147913.Z {
       if (null == n) return;
       let r = [];
       n.forEach(e => {
-        S({
+        T({
           message: e,
           nicknameContextId: t
         }).forEach(e => r.push(e))
@@ -375,18 +375,18 @@ class C extends Chunk147913.Z {
           most_recent_message: i,
           owner: a
         } = e;
-        null != n && S({
+        null != n && T({
           message: n,
           nicknameContextId: t
-        }).forEach(e => r.push(e)), null != i && S({
+        }).forEach(e => r.push(e)), null != i && T({
           message: i,
           nicknameContextId: t
-        }).forEach(e => r.push(e)), null != a && T([a], t).forEach(e => r.push(e))
+        }).forEach(e => r.push(e)), null != a && I([a], t).forEach(e => r.push(e))
       }), this.updateUsers(r, "load_forum_posts")
     }), b(this, "_handleLoadMessagesSuccess", e => {
       let {
         messages: t
-      } = e, n = t.flatMap(e => S({
+      } = e, n = t.flatMap(e => T({
         message: e
       }));
       this.updateUsers(n, "load_messages_success")
@@ -398,7 +398,7 @@ class C extends Chunk147913.Z {
         let {
           message: t
         } = e;
-        S({
+        T({
           message: t
         }).forEach(e => n.push(e))
       }), this.updateUsers(n, "load_pinned_messages_success")
@@ -412,7 +412,7 @@ class C extends Chunk147913.Z {
         } = e;
         t.forEach(e => {
           e.forEach(e => {
-            S({
+            T({
               message: e
             }).forEach(e => n.push(e))
           })
@@ -426,18 +426,18 @@ class C extends Chunk147913.Z {
         owners: i
       } = e, a = [];
       null == n || n.forEach(e => {
-        S({
+        T({
           message: e,
           nicknameContextId: t
         }).forEach(e => a.push(e))
       }), null == r || r.forEach(e => {
-        S({
+        T({
           message: e,
           nicknameContextId: t
         }).forEach(e => a.push(e))
-      }), null != i && T(i, t).forEach(e => a.push(e)), this.updateUsers(a, "load_threads_success")
+      }), null != i && I(i, t).forEach(e => a.push(e)), this.updateUsers(a, "load_threads_success")
     }), b(this, "_handleMessageCreateOrUpdate", e => {
-      let t = S({
+      let t = T({
         message: e.message
       });
       this.updateUsers(t, "message_create_or_update")

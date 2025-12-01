@@ -48,18 +48,18 @@ let O = function(e, t) {
     {
       lockVoiceStateForResume: v = false
     } = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {},
-    I = f.Z.getChannel(e),
-    T = g.Z.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
-    S = null != I ? p.Z.getCheck(I.guild_id) : null;
-  if (!(null != t && (0, s.n)(t)) && (null == S || S.canChat || (0, l.jU)(I))) {
-    if (null != I && !T) {
-      let e = (0, E.rY)(I, g.Z, _.Z);
-      if (e && I.isGuildStageVoice() && (0, c.xJ)(I.id)) return void(0, i.ZD)(async () => {
+    S = f.Z.getChannel(e),
+    I = g.Z.getCurrentClientVoiceChannelId(null != t ? t : null) === e,
+    T = null != S ? _.Z.getCheck(S.guild_id) : null;
+  if (!(null != t && (0, s.n)(t)) && (null == T || T.canChat || (0, l.jU)(S))) {
+    if (null != S && !I) {
+      let e = (0, E.rY)(S, g.Z, p.Z);
+      if (e && S.isGuildStageVoice() && (0, c.xJ)(S.id)) return void(0, i.ZD)(async () => {
         let {
           default: e
         } = await n.e("46398").then(n.bind(n, 523794));
         return t => e(y({
-          channel: I
+          channel: S
         }, t))
       });
       if (e) return void(0, i.ZD)(async () => {
@@ -68,7 +68,7 @@ let O = function(e, t) {
         } = await n.e("86465").then(n.bind(n, 997308));
         return t => e(t)
       });
-      if (!(0, o.Z)(I, h.Z)) return
+      if (!(0, o.Z)(S, m.Z)) return
     }
     b && (0, u.eH)(), (0, d.Z)(A, e, O, b)
   }
@@ -79,7 +79,7 @@ let O = function(e, t) {
       type: "VOICE_CHANNEL_SELECT",
       guildId: t,
       channelId: e,
-      currentVoiceChannelId: m.Z.getVoiceChannelId(),
+      currentVoiceChannelId: h.Z.getVoiceChannelId(),
       video: b,
       stream: O,
       lockVoiceStateForResume: v,

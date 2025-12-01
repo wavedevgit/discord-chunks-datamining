@@ -27,7 +27,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk404789 = require("./404789.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -69,49 +69,49 @@ function C(e, t) {
 function N(e) {
   let {
     currentUserId: t,
-    message: T,
+    message: I,
     application: A,
     channel: N,
-    analyticsLocations: R,
-    onView: P
+    analyticsLocations: P,
+    onView: R
   } = e, {
-    staticBannerSrc: D,
-    videoBannerSrc: w,
-    bannerAspectRatio: L
-  } = (0, d.E)(A), x = g.ZP.getApplicationIconURL({
+    staticBannerSrc: w,
+    videoBannerSrc: D,
+    bannerAspectRatio: x
+  } = (0, d.E)(A), L = g.ZP.getApplicationIconURL({
     id: A.id,
     icon: A.icon
-  }), M = (0, i.e7)([f.ZP, h.Z], () => f.ZP.getVisibleRunningGames().find(e => {
+  }), j = (0, i.e7)([f.ZP, m.Z], () => f.ZP.getVisibleRunningGames().find(e => {
     let {
       id: t
     } = e;
     if (t === A.id) returntrue;
-    let n = h.Z.getGameByApplication(A);
+    let n = m.Z.getGameByApplication(A);
     return null != n && t === n.id
-  })), k = (0, i.e7)([p.Z], () => p.Z.getCurrentUserActiveStream()), j = (0, i.e7)([m.Z], () => m.Z.getChannelId()), U = b.default.extractTimestamp(T.id) + y.O < Date.now(), G = (0, r.jsx)(r.Fragment, {
-    children: (0, o._0)(T, N, t)
+  })), M = (0, i.e7)([_.Z], () => _.Z.getCurrentUserActiveStream()), k = (0, i.e7)([h.Z], () => h.Z.getChannelId()), U = b.default.extractTimestamp(I.id) + y.O < Date.now(), G = (0, r.jsx)(r.Fragment, {
+    children: (0, o._0)(I, N, t)
   }), {
-    newestAnalyticsLocation: B
-  } = (0, l.ZP)(R, s.Z.REQUEST_TO_STREAM_INVITE_EMBED), Z = I.intl.string(v.default["5+172e"]), F = false;
-  return U ? (Z = I.intl.string(v.default.u4QmWl), F = true) : null != k ? (Z = I.intl.string(v.default.P0wwmM), F = true) : j !== N.id ? (Z = I.intl.string(v.default.qRXats), F = true) : null == M && (Z = I.intl.string(v.default["43zohO"]), F = true), (0, r.jsx)(c.W, {
-    header: I.intl.string(v.default.nAyuPp),
+    newestAnalyticsLocation: Z
+  } = (0, l.ZP)(P, s.Z.REQUEST_TO_STREAM_INVITE_EMBED), B = S.intl.string(v.default["5+172e"]), F = false;
+  return U ? (B = S.intl.string(v.default.u4QmWl), F = true) : null != M ? (B = S.intl.string(v.default.P0wwmM), F = true) : k !== N.id ? (B = S.intl.string(v.default.qRXats), F = true) : null == j && (B = S.intl.string(v.default["43zohO"]), F = true), (0, r.jsx)(c.W, {
+    header: S.intl.string(v.default.nAyuPp),
     title: A.name,
-    staticBannerSrc: D,
-    videoBannerSrc: w,
-    bannerAspectRatio: L,
-    iconSrc: null != x ? x : true,
+    staticBannerSrc: w,
+    videoBannerSrc: D,
+    bannerAspectRatio: x,
+    iconSrc: null != L ? L : true,
     info: G,
-    actions: T.author.id === t ? [] : [{
-      label: Z,
+    actions: I.author.id === t ? [] : [{
+      label: B,
       trackingArea: u.j_.STREAM,
       disabled: F,
       onClick: () => {
-        null != M && ((0, E.isWindows)() ? (0, _.Z)(M.pid) : (0, a.ZDy)(async () => {
+        null != j && ((0, E.isWindows)() ? (0, p.Z)(j.pid) : (0, a.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("4093"), n.e("47863"), n.e("59416")]).then(n.bind(n, 60594));
-          return t => (0, r.jsx)(e, C(S({}, t), {
-            analyticsLocation: B
+          return t => (0, r.jsx)(e, C(T({}, t), {
+            analyticsLocation: Z
           }))
         }))
       }
@@ -121,8 +121,8 @@ function N(e) {
       linkType: O.U.REQUEST_TO_STREAM,
       guildId: N.guild_id,
       channelId: N.id,
-      messageId: T.id,
-      onView: P,
+      messageId: I.id,
+      onView: R,
       isDeadEnd: U
     }
   })

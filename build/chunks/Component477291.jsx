@@ -2,7 +2,7 @@
 /** chunk id: 477291, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -68,7 +68,7 @@ function f(e, t, n) {
   }), (0, i.showToast)((0, i.createToast)(s.intl.string(s.t["d9+vQ8"]), i.ToastType.SUCCESS))
 }
 
-function _(e) {
+function p(e) {
   let {
     summary: t,
     channel: a,

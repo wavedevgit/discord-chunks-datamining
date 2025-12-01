@@ -18,7 +18,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk561308 = require("./561308.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function b(e) {
 }
 
 function y(e) {
-  return (0, p.n2)(e) ? null : (0, p.kr)(e) && e.author_type === o.i.USER ? u.Z.getActivities(e.author_id).find(t => t.type === h.IIU.PLAYING && (0, f.m9)(e) ? (0, _.cN)(e, t) : !!(t.type === h.IIU.LISTENING && (0, f.dU)(e)) && (0, _.pB)(e, t)) : true
+  return (0, _.n2)(e) ? null : (0, _.kr)(e) && e.author_type === o.i.USER ? u.Z.getActivities(e.author_id).find(t => t.type === m.IIU.PLAYING && (0, f.m9)(e) ? (0, p.cN)(e, t) : !!(t.type === m.IIU.LISTENING && (0, f.dU)(e)) && (0, p.pB)(e, t)) : true
 }
 
 function O(e) {
@@ -62,11 +62,11 @@ function v(e) {
   return n.size > 0
 }
 
-function I() {
+function S() {
   E.clear()
 }
 
-function T() {
+function I() {
   let e = false,
     t = Array.from(E.keys()),
     n = new Set,
@@ -83,19 +83,19 @@ function T() {
   for (let n of a().difference(exports, [...r])) E.delete(require), e = true;
   return module
 }
-class S extends(r = Chunk442837.ZP.Store) {
+class T extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk146282.Z, Chunk158776.Z), this.syncWith([Chunk158776.Z], T)
+    this.waitFor(Chunk146282.Z, Chunk158776.Z), this.syncWith([Chunk158776.Z], I)
   }
   getMatchingActivity(e) {
-    return (0, p.n2)(e) ? null : E.get(b(e))
+    return (0, _.n2)(e) ? null : E.get(b(e))
   }
   constructor(...e) {
-    super(...e), m(this, "canRenderContent", e => !(0, p.n2)(e) && (!g.has(e.content_type) || null != this.getMatchingActivity(e)))
+    super(...e), h(this, "canRenderContent", e => !(0, _.n2)(e) && (!g.has(e.content_type) || null != this.getMatchingActivity(e)))
   }
 }
-m(S, "displayName", "ContentInventoryActivityStore");
-let A = new S(Chunk570140.Z, {
-  CONNECTION_OPEN: I,
+h(T, "displayName", "ContentInventoryActivityStore");
+let A = new T(Chunk570140.Z, {
+  CONNECTION_OPEN: S,
   CONTENT_INVENTORY_SET_FEED: v
 })

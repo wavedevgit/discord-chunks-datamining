@@ -34,13 +34,13 @@ function y(e) {
     placeholder: y,
     currentBio: O,
     disabled: v = false
-  } = e, [I, T] = i.useState(null != f ? f : O), [S, A] = i.useState((0, s.JM)(I)), C = i.useRef(false);
+  } = e, [S, I] = i.useState(null != f ? f : O), [T, A] = i.useState((0, s.JM)(S)), C = i.useRef(false);
 
   function N(e, t, n) {
-    t !== I && (T(t), A(n), c(t))
+    t !== S && (I(t), A(n), c(t))
   }
 
-  function R() {
+  function P() {
     return new Promise(e => {
       e({
         shouldClear: false,
@@ -51,29 +51,29 @@ function y(e) {
   i.useEffect(() => {
     if (true === f) {
       let e = (0, s.JM)(O);
-      T(O), A(e)
+      I(O), A(e)
     }
   }, [f, O]);
-  let P = (0, u.wy)("AboutMeSection");
-  return (0, r.jsxs)(_.Z, {
+  let R = (0, u.wy)("AboutMeSection");
+  return (0, r.jsxs)(p.Z, {
     title: t,
     titleId: g,
-    description: h.intl.string(h.t.Bbw6Ac),
+    description: m.intl.string(m.t.Bbw6Ac),
     errors: n,
     disabled: v,
     children: [(0, r.jsx)(l.ZP, {
       "aria-describedby": b,
       "aria-labelledby": g,
-      className: m.bioTextAreaContainer,
-      innerClassName: m.bioTextArea,
-      maxCharacterCount: p.tPV,
+      className: h.bioTextAreaContainer,
+      innerClassName: h.bioTextArea,
+      maxCharacterCount: _.tPV,
       onChange: N,
       placeholder: y,
       channel: E,
-      textValue: I,
-      richValue: S,
-      emojiPickerCloseOnModalOuterClick: P,
-      parentModalKey: P ? d.USER_SETTINGS_MODAL_KEY : true,
+      textValue: S,
+      richValue: T,
+      emojiPickerCloseOnModalOuterClick: R,
+      parentModalKey: R ? d.USER_SETTINGS_MODAL_KEY : true,
       type: o.Ie.PROFILE_BIO_INPUT,
       onBlur: () => {
         C.current = false
@@ -82,11 +82,11 @@ function y(e) {
         C.current = true
       },
       focused: C.current,
-      onSubmit: R
+      onSubmit: P
     }), (0, r.jsx)(a.nn4, {
       id: b,
-      children: h.intl.format(h.t["+DFxLc"], {
-        maxLength: p.tPV
+      children: m.intl.format(m.t["+DFxLc"], {
+        maxLength: _.tPV
       })
     })]
   })

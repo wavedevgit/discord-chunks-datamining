@@ -2,7 +2,7 @@
 /** chunk id: 291541, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  y: () => m
+  y: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,15 +45,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,14 +61,14 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = {
+let h = {
   title: "Popover",
   stories: [{
     name: "Popover",
@@ -81,10 +81,10 @@ let m = {
         showTextLink: c,
         caretAlign: u,
         alignmentStrategy: f,
-        align: h,
-        size: m,
+        align: m,
+        size: h,
         position: g
-      } = e, E = p(e, ["showAsset", "showActions", "showTextLink", "caretAlign", "alignmentStrategy", "align", "size", "position"]);
+      } = e, E = _(e, ["showAsset", "showActions", "showTextLink", "caretAlign", "alignmentStrategy", "align", "size", "position"]);
       let [b, y] = i.useState(false), O = i.useRef(null);
       return (0, r.jsxs)("div", {
         style: {
@@ -93,17 +93,17 @@ let m = {
           alignItems: "center",
           minHeight: "400px"
         },
-        children: [(0, r.jsx)(o.J2, _(d({}, E), {
+        children: [(0, r.jsx)(o.J2, p(d({}, E), {
           position: g,
-          size: m,
-          align: h,
+          size: h,
+          align: m,
           alignmentStrategy: f,
           targetElementRef: O,
           shouldShow: b,
           onRequestClose: () => y(false),
           graphic: t ? {
             type: "image",
-            src: "sm" === m ? l.Z : s.Z
+            src: "sm" === h ? l.Z : s.Z
           } : true,
           caretConfig: {
             align: u
@@ -276,10 +276,10 @@ let m = {
     component: function(e) {
       var {
         showActions: t
-      } = e, n = p(e, ["showActions"]);
+      } = e, n = _(e, ["showActions"]);
       let [s, l] = i.useState(false), c = i.useRef(null);
       return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.Mb, _(d({}, n), {
+        children: [(0, r.jsx)(o.Mb, p(d({}, n), {
           targetElementRef: c,
           shouldShow: s,
           onRequestClose: () => l(false),
@@ -313,8 +313,8 @@ let m = {
     component: function(e) {
       var {
         showExpressive: t
-      } = e, n = p(e, ["showExpressive"]);
-      let [l, u] = i.useState(false), f = i.useRef(null), h = [{
+      } = e, n = _(e, ["showExpressive"]);
+      let [l, u] = i.useState(false), f = i.useRef(null), m = [{
         title: "Welcome to the Feature!",
         body: "This is the first step of our multi-step introduction.",
         asset: (0, r.jsx)("img", {
@@ -356,11 +356,11 @@ let m = {
         }
       }];
       return (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(o.e4, _(d({}, n), {
+        children: [(0, r.jsx)(o.e4, p(d({}, n), {
           targetElementRef: f,
           shouldShow: l,
           onRequestClose: () => u(false),
-          steps: h,
+          steps: m,
           caretConfig: {
             align: "center"
           },

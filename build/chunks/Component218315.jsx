@@ -2,7 +2,7 @@
 /** chunk id: 218315, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./388685.js"), require("./997841.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -60,7 +60,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class I extends Chunk147913.Z {
+class S extends Chunk147913.Z {
   constructor(...e) {
     super(...e), b(this, "onboardingCompleteGuilds", new Set), b(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen(),
@@ -81,7 +81,7 @@ class I extends Chunk147913.Z {
       if (o.id === l.default.getId() && !this.onboardingCompleteGuilds.has(s) && (0, i.yE)(null != t ? t : 0, E.q.COMPLETED_HOME_ACTIONS)) {
         var c, u;
         this.onboardingCompleteGuilds.add(s);
-        let e = null != (u = null == (c = _.Z.getNewMemberActions(s)) ? true : c.length) ? u : 0;
+        let e = null != (u = null == (c = p.Z.getNewMemberActions(s)) ? true : c.length) ? u : 0;
         if (0 === e) return;
         (0, a.ZDy)(async () => {
           let {
@@ -108,7 +108,7 @@ class I extends Chunk147913.Z {
         memberActions: r,
         completedActions: i
       } = await this._getOrLoadOnboardingMemberActions(t), a = null == r ? true : r.find(e => e.channelId === n);
-      (null == i ? true : i[n]) !== true && null != a && a.actionType === p.NewMemberActionTypes.VIEW && (0, f.Oh)(t, n)
+      (null == i ? true : i[n]) !== true && null != a && a.actionType === _.NewMemberActionTypes.VIEW && (0, f.Oh)(t, n)
     }), b(this, "handleMessageSend", e => {
       var t;
       let {
@@ -131,9 +131,9 @@ class I extends Chunk147913.Z {
         memberActions: n,
         completedActions: r
       } = await this._getOrLoadOnboardingMemberActions(e), i = null == n ? true : n.find(e => e.channelId === t);
-      (null == r ? true : r[t]) !== true && null != i && i.actionType === p.NewMemberActionTypes.CHAT && (0, f.Oh)(e, t)
+      (null == r ? true : r[t]) !== true && null != i && i.actionType === _.NewMemberActionTypes.CHAT && (0, f.Oh)(e, t)
     }), b(this, "_getOrLoadOnboardingMemberActions", async e => {
-      let t = (0, m.s)(e),
+      let t = (0, h.s)(e),
         n = s.Z.isFullServerPreview(e);
       if (!t && !n) return {};
       let r = u.ZP.getSelfMember(e);
@@ -144,8 +144,8 @@ class I extends Chunk147913.Z {
         completedActions: a
       }
     }), b(this, "_getOrLoadOnboardingHomeSettings", async e => {
-      let t = _.Z.getNewMemberActions(e),
-        n = _.Z.getIsLoading(e);
+      let t = p.Z.getNewMemberActions(e),
+        n = p.Z.getIsLoading(e);
       if (!(null == t && !n && (0, g.m)(e))) return t;
       {
         let t = await (0, f.cP)(e);
@@ -156,9 +156,9 @@ class I extends Chunk147913.Z {
       let {
         completedActions: r,
         loading: a
-      } = h.Z.getState(e);
+      } = m.Z.getState(e);
       return null == r && !a && (0, i.yE)(null != (n = t.flags) ? n : 0, E.q.STARTED_HOME_ACTIONS) ? await (0, f.Fg)(e) : r
     })
   }
 }
-let T = new I
+let I = new S

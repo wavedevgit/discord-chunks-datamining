@@ -41,51 +41,51 @@ function v() {
   if (null == y || !Chunk700785.oz(Chunk981631.Plq.VIEW_CHANNEL, y)) return null;
   let v = Chunk430824.Z.getGuild(y.getGuildId());
   if (null == v || !v.features.has(Chunk981631.GuildFeatures.DISCOVERABLE)) return null;
-  let I = (0, Chunk750154.Lw)(y, Chunk19780),
-    T = (null == O || null == (e = O.party) ? true : module.id) === I ? O : null,
-    S = Chunk565799.Z.getMutableParticipants(y.id, Chunk501655.pV.SPEAKER),
-    A = S.filter(e => e.type === p.Ui.STREAM).length,
-    C = S.length - A,
+  let S = (0, Chunk750154.Lw)(y, Chunk19780),
+    I = (null == O || null == (e = O.party) ? true : module.id) === S ? O : null,
+    T = Chunk565799.Z.getMutableParticipants(y.id, Chunk501655.pV.SPEAKER),
+    A = T.filter(e => e.type === _.Ui.STREAM).length,
+    C = T.length - A,
     N = Chunk565799.Z.getParticipantCount(Chunk570140) - A,
-    R = (null == T || null == (t = T.party) ? true : exports.size) != null ? T.party.size[1] : 0;
+    P = (null == I || null == (t = I.party) ? true : exports.size) != null ? I.party.size[1] : 0;
   return {
     application_id: Chunk157925.gD,
     name: null != (i = null != (r = Chunk19780.topic) ? r : y.topic) ? Chunk348327 : y.name,
     type: (0, Chunk368442.xJ)(y.id) ? Chunk981631.IIU.WATCHING : Chunk981631.IIU.LISTENING,
     timestamps: {
-      start: null != (a = null == T || null == (n = T.timestamps) ? true : require.start) ? a : new Date().getTime()
+      start: null != (a = null == I || null == (n = I.timestamps) ? true : require.start) ? a : new Date().getTime()
     },
     assets: {
       small_image: null != (o = v.icon) ? Chunk442837 : true,
       small_text: v.name
     },
     party: {
-      id: I,
-      size: [C, Math.max(N, R)]
+      id: S,
+      size: [C, Math.max(N, P)]
     }
   }
 }
 
-function I() {
+function S() {
   let e = v();
   return !a()(module, O) && (O = module, true)
 }
 
-function T(e) {
+function I(e) {
   let {
     voiceStates: t
   } = e;
   if (null == O) return;
-  let n = (0, h.rq)(O);
-  null != n && null != t.find(e => e.channelId === n.channelId) && I()
+  let n = (0, m.rq)(O);
+  null != n && null != t.find(e => e.channelId === n.channelId) && S()
 }
 
-function S(e) {
+function T(e) {
   var t, n, r;
   let {
     state: i
   } = e, a = null != (r = null == O || null == (n = O.party) || null == (t = n.size) ? true : t[1]) ? r : 0;
-  return i === b.hes.RTC_CONNECTED && !(a > 0) && I()
+  return i === b.hes.RTC_CONNECTED && !(a > 0) && S()
 }
 class A extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -97,11 +97,11 @@ class A extends(r = Chunk442837.ZP.Store) {
 }
 y(A, "displayName", "StageChannelSelfRichPresenceStore");
 let C = new A(Chunk570140.Z, {
-  CONNECTION_OPEN: I,
-  STAGE_INSTANCE_CREATE: I,
-  STAGE_INSTANCE_UPDATE: I,
-  STAGE_INSTANCE_DELETE: I,
-  VOICE_CHANNEL_SELECT: I,
-  RTC_CONNECTION_STATE: S,
-  VOICE_STATE_UPDATES: T
+  CONNECTION_OPEN: S,
+  STAGE_INSTANCE_CREATE: S,
+  STAGE_INSTANCE_UPDATE: S,
+  STAGE_INSTANCE_DELETE: S,
+  VOICE_CHANNEL_SELECT: S,
+  RTC_CONNECTION_STATE: T,
+  VOICE_STATE_UPDATES: I
 })

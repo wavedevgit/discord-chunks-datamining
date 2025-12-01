@@ -2,8 +2,8 @@
 /** chunk id: 503089, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $x: () => S,
-  ZP: () => P,
+  $x: () => T,
+  ZP: () => R,
   d7: () => C,
   w6: () => A
 }), require("./539854.js"), require("./361932.js"), require("./187205.js"), require("./388685.js");
@@ -58,17 +58,17 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = Object.freeze({
+let I = Object.freeze({
     shouldPreventNavigation: false,
     onPreventNavigation: null,
     sidebarOpen: true
   }),
-  S = 1.4,
+  T = 1.4,
   A = 15,
   C = 2;
 
@@ -86,15 +86,15 @@ function N(e) {
   });
   let c = null != (t = null == i ? true : i.element) ? t : g.VqG,
     u = null != (n = null == i ? true : i.elementProps) ? n : {};
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(m.Z, {
     section: i.section,
-    children: (0, r.jsx)(c, I(O({}, u), {
+    children: (0, r.jsx)(c, S(O({}, u), {
       setPreventNavigation: o,
       refToScroller: s
     }))
   })
 }
-class R extends Chunk473749.PureComponent {
+class P extends Chunk473749.PureComponent {
   componentDidMount() {
     this.getPredicateSections().forEach(e => {
       let {
@@ -113,7 +113,7 @@ class R extends Chunk473749.PureComponent {
     let {
       section: t
     } = e;
-    t !== this.props.section && (this._intensity = S)
+    t !== this.props.section && (this._intensity = T)
   }
   componentWillUnmount() {
     this._unmounted = true, this._subscribedStores.forEach(e => e.removeChangeListener(this.handleNoticeStoreUpdate)), this.props.sections.forEach(e => {
@@ -134,7 +134,7 @@ class R extends Chunk473749.PureComponent {
     return null != require && require.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (Chunk585483.S.dispatch(Chunk981631.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + C, A), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), false) : (this._intensity = S, true)
+    }), this._intensity = Math.min(this._intensity + C, A), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), false) : (this._intensity = T, true)
   }
   renderSidebar(e) {
     let {
@@ -159,13 +159,13 @@ class R extends Chunk473749.PureComponent {
           }) : null, e.map((e, t) => {
             if (null != e.tabPredicate && !e.tabPredicate()) return null;
             switch (e.section) {
-              case m.ID.HEADER:
+              case h.ID.HEADER:
                 return (0, r.jsx)(s.njP.Header, {
                   children: e.label
                 }, t);
-              case m.ID.DIVIDER:
+              case h.ID.DIVIDER:
                 return (0, r.jsx)(s.njP.Separator, {}, t);
-              case m.ID.CUSTOM:
+              case h.ID.CUSTOM:
                 var n;
                 let i = null != (n = e.element) ? n : g.VqG;
                 return (0, r.jsx)(i, {}, t);
@@ -227,7 +227,7 @@ class R extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "_unmounted", false), y(this, "_intensity", S), y(this, "_subscribedStores", []), y(this, "scrollerRef", i.createRef()), y(this, "state", I(O({}, T), {
+    super(...e), y(this, "_unmounted", false), y(this, "_intensity", T), y(this, "_subscribedStores", []), y(this, "scrollerRef", i.createRef()), y(this, "state", S(O({}, I), {
       sidebarOpen: this.props.section !== g.oAB.SUBSCRIPTIONS && this.props.section !== g.oAB.PROFILE_CUSTOMIZATION
     })), y(this, "setPreventNavigation", (e, t) => {
       this.setState({
@@ -249,11 +249,11 @@ class R extends Chunk473749.PureComponent {
         } = null != (r = n.find(t => e === t.section)) ? r : {}, a = null != i ? i.stores : null;
         null != a && a.forEach(e => {
           this._subscribedStores.includes(e) || (e.addChangeListener(this.handleNoticeStoreUpdate), this._subscribedStores.push(e))
-        }), this.setState(I(O({}, T), {
+        }), this.setState(S(O({}, I), {
           sidebarOpen: false
         }))
       };
-      this.validNavigation() && !r && (a(), p.Z.addBreadcrumb({
+      this.validNavigation() && !r && (a(), _.Z.addBreadcrumb({
         category: "settings",
         message: "Set section: ".concat(e)
       })), r && null != i && i(a)
@@ -265,7 +265,7 @@ class R extends Chunk473749.PureComponent {
         null == e || e()
       }
     }), y(this, "handleNoticeStoreUpdate", () => {
-      this._unmounted || (this._intensity = S, this.forceUpdate())
+      this._unmounted || (this._intensity = T, this.forceUpdate())
     }), y(this, "renderSettingsSectionTabBarItem", (e, t, n) => {
       let {
         section: i,
@@ -274,10 +274,10 @@ class R extends Chunk473749.PureComponent {
         onClick: c,
         variant: u,
         icon: f,
-        className: _,
-        newIndicator: p,
-        newIndicatorDismissibleContentTypes: h,
-        badgeCount: m
+        className: p,
+        newIndicator: _,
+        newIndicatorDismissibleContentTypes: m,
+        badgeCount: h
       } = e, y = null;
       i === g.oAB.ACCOUNT && this.props.isEligibleForPomelo ? y = (0, r.jsx)(s.Mgn, {
         size: "custom",
@@ -288,10 +288,10 @@ class R extends Chunk473749.PureComponent {
         variant: "text-md/normal",
         color: "text-muted",
         children: e.decoration
-      }) : null != n && (null == h ? true : h.includes(n)) && !t ? y = null != p ? p : (0, r.jsx)(s.IGR, {
+      }) : null != n && (null == m ? true : m.includes(n)) && !t ? y = null != _ ? _ : (0, r.jsx)(s.IGR, {
         text: E.intl.string(E.t.y2b7CA)
-      }) : null != f ? y = f : null != m && m > 0 && (y = (0, r.jsx)(s.mAB, {
-        count: m
+      }) : null != f ? y = f : null != h && h > 0 && (y = (0, r.jsx)(s.mAB, {
+        count: h
       }));
       let O = i === g.oAB.PREMIUM ? (0, r.jsx)(d.Z, {
         label: a,
@@ -305,11 +305,11 @@ class R extends Chunk473749.PureComponent {
         variant: u,
         id: i,
         onClick: c,
-        className: _,
+        className: p,
         "aria-label": l,
         children: O
       }, i)
     })
   }
 }
-let P = R
+let R = P

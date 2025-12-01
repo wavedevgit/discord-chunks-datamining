@@ -44,20 +44,20 @@ let c = {
           id: "charisma",
           label: "Charisma"
         }]
-      }, [u]), [f, _] = i.useState(d), p = i.useCallback(e => {
-        _(f.filter(t => !e.has(t.id)))
-      }, [f]), h = i.useCallback(() => {
-        _(d)
-      }, [d]), m = (0, r.jsx)(a.QSK, {
+      }, [u]), [f, p] = i.useState(d), _ = i.useCallback(e => {
+        p(f.filter(t => !e.has(t.id)))
+      }, [f]), m = i.useCallback(() => {
+        p(d)
+      }, [d]), h = (0, r.jsx)(a.QSK, {
         label: "Categories",
         selectionMode: t,
         layout: c,
         items: f,
-        onRemove: n ? p : true
+        onRemove: n ? _ : true
       }), g = n && (0, r.jsx)(s.Button, {
         disabled: f.length === d.length,
         text: "Reset",
-        onClick: h
+        onClick: m
       });
       return "inline" === c ? (0, r.jsxs)(s.Kqy, {
         gap: 24,
@@ -66,11 +66,11 @@ let c = {
             display: "flex",
             gap: 4
           },
-          children: m
+          children: h
         }), g]
       }) : (0, r.jsxs)(s.Kqy, {
         gap: 24,
-        children: [m, g]
+        children: [h, g]
       })
     },
     controls: {

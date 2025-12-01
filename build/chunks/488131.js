@@ -4,7 +4,7 @@
 require.d(exports, {
   NK: () => N,
   R6: () => A,
-  ok: () => S,
+  ok: () => T,
   vN: () => C
 });
 var Chunk512722 = require("./512722.js"),
@@ -30,17 +30,17 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function S(e, t, n) {
-  if (!(0, _.WF)(e.id)) return void(0, d.V)();
-  f.UI.dispatch(I.CkL.POPOUT_CLOSE);
+function T(e, t, n) {
+  if (!(0, p.WF)(e.id)) return void(0, d.V)();
+  f.UI.dispatch(S.CkL.POPOUT_CLOSE);
   let r = !o().isEmpty(y.Z.getVoiceStatesForChannel(e.id));
-  if (t || !m.vF.getSetting() || __OVERLAY__ || r) {
+  if (t || !h.vF.getSetting() || __OVERLAY__ || r) {
     s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
       baseChannelId: e.parent_id
-    }), null != n ? (0, h.ad)(e, {
+    }), null != n ? (0, m.ad)(e, {
       source: n
-    }) : (0, h.Kh)(e.id);
+    }) : (0, m.Kh)(e.id);
     return
   }
   i()(null != e.parent_id, "all threads must have parents");
@@ -49,27 +49,27 @@ function S(e, t, n) {
     s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
       baseChannelId: e.parent_id
-    }), null != n ? (0, h.ad)(e, {
+    }), null != n ? (0, m.ad)(e, {
       source: n
-    }) : (0, h.Kh)(e.id);
+    }) : (0, m.Kh)(e.id);
     return
   }
   let l = b.Z.getChannelId();
-  e.parent_id === l || (0, T.ME)(l) || (0, h.Kh)(e.parent_id), (0, p.uL)(I.Z5c.CHANNEL_THREAD_VIEW((0, u.e)(e), (0, T.ME)(l) ? T.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
+  e.parent_id === l || (0, I.ME)(l) || (0, m.Kh)(e.parent_id), (0, _.uL)(S.Z5c.CHANNEL_THREAD_VIEW((0, u.e)(e), (0, I.ME)(l) ? I.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
     source: v.on.FORUM
   } : true), setTimeout(() => {
-    O.S.dispatch(I.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+    O.S.dispatch(S.CkL.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: e.id
     })
   }, 0)
 }
 
 function A(e, t, n) {
-  if (i()(!e.isForumLikeChannel(), "cannot open thread creation sidebar in forums"), i()(!__OVERLAY__, "Cannot create threads in the overlay."), (0, c.yw)(I.rMx.THREAD_CREATION_STARTED, {
+  if (i()(!e.isForumLikeChannel(), "cannot open thread creation sidebar in forums"), i()(!__OVERLAY__, "Cannot create threads in the overlay."), (0, c.yw)(S.rMx.THREAD_CREATION_STARTED, {
       location: n,
       channel_id: e.id,
       guild_id: e.guild_id
-    }), f.UI.dispatch(I.CkL.POPOUT_CLOSE), b.Z.getChannelId() !== e.id && (0, h.Kh)(e.id), "" === E.Z.getDraft(e.id, E.d.FirstThreadMessage)) {
+    }), f.UI.dispatch(S.CkL.POPOUT_CLOSE), b.Z.getChannelId() !== e.id && (0, m.Kh)(e.id), "" === E.Z.getDraft(e.id, E.d.FirstThreadMessage)) {
     let t = E.Z.getDraft(e.id, E.d.ChannelMessage);
     l.Z.saveDraft(e.id, "", E.d.ChannelMessage), l.Z.saveDraft(e.id, t, E.d.FirstThreadMessage)
   }
@@ -84,7 +84,7 @@ function A(e, t, n) {
 }
 
 function C(e, t) {
-  (0, p.uL)(I.Z5c.CHANNEL(e, (0, T.ME)(t) ? T.oC.GUILD_HOME : t)), s.Z.dispatch({
+  (0, _.uL)(S.Z5c.CHANNEL(e, (0, I.ME)(t) ? I.oC.GUILD_HOME : t)), s.Z.dispatch({
     type: "SIDEBAR_CLOSE",
     baseChannelId: t
   })

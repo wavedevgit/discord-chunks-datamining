@@ -2,7 +2,7 @@
 /** chunk id: 749681, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  transitionToGlobalDiscovery: () => h
+  transitionToGlobalDiscovery: () => m
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./415506.js");
 var Chunk258971 = require("./258971.js"),
   Chunk726115 = require("./726115.js"),
@@ -17,7 +17,7 @@ var Chunk258971 = require("./258971.js"),
   Chunk979007 = require("./979007.js"),
   Chunk128449 = require("./128449.js");
 
-function h(e) {
+function m(e) {
   var t, n, g;
   let E = e.tab;
   switch (u.Z.setState({
@@ -27,9 +27,9 @@ function h(e) {
       let b = e.selectedServersTab;
       return null != b ? a.Z.setState({
         selectedTab: b,
-        entrypoint: null != (t = e.entrypoint) ? t : p.Qq.UNKNOWN
+        entrypoint: null != (t = e.entrypoint) ? t : _.Qq.UNKNOWN
       }) : a.Z.setState({
-        entrypoint: null != (n = e.entrypoint) ? n : p.Qq.UNKNOWN
+        entrypoint: null != (n = e.entrypoint) ? n : _.Qq.UNKNOWN
       }), (0, s.uL)(f.Z5c.GLOBAL_DISCOVERY_SERVERS, e.extra);
     case d.GlobalDiscoveryTab.APPS:
       if (null != e.newSessionState) {
@@ -48,12 +48,12 @@ function h(e) {
             session_id: t,
             guild_id: n,
             user_id: null == (g = l.default.getCurrentUser()) ? true : g.id
-          }), e.newSessionState.restorePreviousView) return h(m())
+          }), e.newSessionState.restorePreviousView) return m(h())
       }
       if (null != e.applicationId) {
-        if (e.section === _.GlobalDiscoveryAppsSections.STORE)
+        if (e.section === p.GlobalDiscoveryAppsSections.STORE)
           if (null != e.skuId) return (0, s.uL)(f.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(e.applicationId, e.skuId));
-          else return (0, s.uL)(f.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(e.applicationId, _.GlobalDiscoveryAppsSections.STORE));
+          else return (0, s.uL)(f.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(e.applicationId, p.GlobalDiscoveryAppsSections.STORE));
         return (0, s.uL)(f.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e.applicationId))
       }
       if (null != e.query) {
@@ -75,7 +75,7 @@ function h(e) {
   }
 }
 
-function m() {
+function h() {
   let {
     lastItem: e
   } = Chunk258971.aQ.getState();

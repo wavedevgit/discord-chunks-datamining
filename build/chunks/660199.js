@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ay: () => u,
-  He: () => _,
+  He: () => p,
   K_: () => l,
   Qh: () => s,
   ZB: () => f,
@@ -64,6 +64,6 @@ function f(e, t) {
   })
 }
 
-function _(e, t) {
+function p(e, t) {
   return null != t ? "<t:".concat(e, ":").concat(t, ">") : "<t:".concat(e, ">")
 }

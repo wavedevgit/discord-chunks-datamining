@@ -18,11 +18,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk744038 = require("./744038.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk641947 = require("./641947.js");
-let m = [18, 18, 16, 16, 14, 12, 10];
+let h = [18, 18, 16, 16, 14, 12, 10];
 
 function g(e) {
   var t;
-  return null != (t = m[e.length - 1]) ? t : m[m.length - 1]
+  return null != (t = h[e.length - 1]) ? t : h[h.length - 1]
 }
 let E = Chunk473749.memo(e => {
   let {
@@ -31,23 +31,23 @@ let E = Chunk473749.memo(e => {
     customSubtext: i
   } = e, a = (0, s.e7)([u.Z], () => u.Z.getGuild(t));
   if (true === a) return null;
-  let m = a.features.has(f.GuildFeatures.VERIFIED) || a.features.has(f.GuildFeatures.PARTNERED),
+  let h = a.features.has(f.GuildFeatures.VERIFIED) || a.features.has(f.GuildFeatures.PARTNERED),
     {
       name: g
     } = a;
   return (0, r.jsxs)("div", {
-    className: o()(h.container, n),
+    className: o()(m.container, n),
     children: [(0, r.jsx)(d.Z, {
       guildId: t
     }), (0, r.jsxs)("div", {
-      className: h.descriptors,
+      className: m.descriptors,
       children: [(0, r.jsxs)("div", {
-        className: h.header,
-        children: [m ? (0, r.jsx)(c.Z, {
+        className: m.header,
+        children: [h ? (0, r.jsx)(c.Z, {
           guild: a,
           tooltipPosition: "bottom",
           tooltipColor: l.aML.Colors.PRIMARY,
-          className: h.guildBadge
+          className: m.guildBadge
         }) : null, (0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
           children: g
@@ -55,7 +55,7 @@ let E = Chunk473749.memo(e => {
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: null != i ? i : true !== a.approximateMemberCount ? p.intl.format(_.default["5JmNgg"], {
+        children: null != i ? i : true !== a.approximateMemberCount ? _.intl.format(p.default["5JmNgg"], {
           members: a.approximateMemberCount
         }) : null
       })]

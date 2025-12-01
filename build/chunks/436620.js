@@ -6,7 +6,7 @@ require.d(exports, {
   KO: () => l,
   U8: () => u,
   WS: () => d,
-  X6: () => _,
+  X6: () => p,
   Zb: () => o,
   fi: () => c
 });
@@ -28,4 +28,4 @@ let o = parseInt(null != (r = a().version) ? r : "0", 10),
   u = "Chrome" === a().name || "Safari" === a().name || "Firefox" === a().name && o >= 80 || "Opera" === a().name || "Microsoft Edge" === a().name,
   d = s || "Firefox" === a().name && o >= 73 || "Safari" === a().name && o >= 13 || "Chrome" === a().name && o >= 80 || "Microsoft Edge" === a().name && o >= 80,
   f = "Chrome" === a().name && o >= 58 || "Safari" === a().name && o >= 15 || "Firefox" === a().name && o >= 108,
-  _ = "Chrome" === a().name && o >= 72 || "Safari" === a().name && o >= 11 || "Opera" === a().name && o >= 60 || "Microsoft Edge" === a().name && o >= 79
+  p = "Chrome" === a().name && o >= 72 || "Safari" === a().name && o >= 11 || "Opera" === a().name && o >= 60 || "Microsoft Edge" === a().name && o >= 79

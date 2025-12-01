@@ -3,16 +3,16 @@
 "use strict";
 let r, i, a;
 require.d(exports, {
-  At: () => T,
+  At: () => I,
   DB: () => N,
-  DR: () => S,
+  DR: () => T,
   Wf: () => C,
   XU: () => y,
   dL: () => v,
-  eH: () => P,
+  eH: () => R,
   m1: () => A,
-  op: () => R,
-  s1: () => I,
+  op: () => P,
+  s1: () => S,
   uL: () => b,
   uv: () => O,
   x3: () => g
@@ -44,12 +44,12 @@ function f(e) {
   }
   return e
 }
-let _ = new Chunk710845.Z("Routing/Utils"),
-  p = [Chunk981631.E07.DEVELOPER_PORTAL];
+let p = new Chunk710845.Z("Routing/Utils"),
+  _ = [Chunk981631.E07.DEVELOPER_PORTAL];
 r = __OVERLAY__ ? (0, Chunk539528.PP)() : (0, Chunk539528.lX)();
-let h = false,
-  m = r.listen((e, t) => {
-    "REPLACE" !== t && (h = true, m())
+let m = false,
+  h = r.listen((e, t) => {
+    "REPLACE" !== t && (m = true, h())
   });
 
 function g() {
@@ -57,12 +57,12 @@ function g() {
 }
 
 function E(e, t) {
-  return !!("string" == typeof e && p.some(t => e.startsWith(t))) && (_.log("".concat(t, " - route to external path ").concat(e)), window.dispatchEvent(new Event("beforeunload")), window.location[t](e), true)
+  return !!("string" == typeof e && _.some(t => e.startsWith(t))) && (p.log("".concat(t, " - route to external path ").concat(e)), window.dispatchEvent(new Event("beforeunload")), window.location[t](e), true)
 }
 
 function b(e, t) {
   if (E(e, "assign")) return;
-  _.log("transitionTo - Transitioning to ".concat(e));
+  p.log("transitionTo - Transitioning to ".concat(e));
   let n = null == t ? true : t.source;
   null == t || delete t.source;
   let o = null == t ? true : t.sourceLocationStack;
@@ -79,7 +79,7 @@ function b(e, t) {
 }
 
 function y(e, t, n, r) {
-  _.log("transitionToGuild - Transitioning to ".concat(JSON.stringify({
+  p.log("transitionToGuild - Transitioning to ".concat(JSON.stringify({
     guildId: e,
     channelId: t,
     messageId: n
@@ -91,18 +91,18 @@ function O() {
 }
 
 function v(e, t, n) {
-  E(e, "replace") || (_.log("Replacing route with ".concat(e)), "string" == typeof e ? r.replace(e, t) : r.replace(e), i = n)
-}
-
-function I() {
-  return r
-}
-
-function T() {
-  return i
+  E(e, "replace") || (p.log("Replacing route with ".concat(e)), "string" == typeof e ? r.replace(e, t) : r.replace(e), i = n)
 }
 
 function S() {
+  return r
+}
+
+function I() {
+  return i
+}
+
+function T() {
   return a
 }
 
@@ -137,13 +137,13 @@ function C(e) {
 }
 
 function N() {
-  return h
-}
-
-function R() {
-  g() && (i = null, r.goBack())
+  return m
 }
 
 function P() {
+  g() && (i = null, r.goBack())
+}
+
+function R() {
   g() && (i = null, r.goForward())
 }

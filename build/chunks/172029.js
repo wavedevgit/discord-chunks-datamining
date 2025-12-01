@@ -49,27 +49,27 @@ function d(e, t) {
   }), e
 }
 let f = {},
-  _ = {},
-  p = null;
+  p = {},
+  _ = null;
 
-function h() {
-  _ = {}, f = {}
+function m() {
+  p = {}, f = {}
 }
 
-function m(e) {
+function h(e) {
   let {
     channelId: t,
     currentVoiceChannelId: n
   } = e;
   if (t === n) returnfalse;
-  h()
+  m()
 }
 
 function g(e) {
   let {
     id: t
   } = e;
-  for (let [e, n] of(delete f[t], Object.entries(_))) t === n && delete _[e]
+  for (let [e, n] of(delete f[t], Object.entries(p))) t === n && delete p[e]
 }
 
 function E(e) {
@@ -88,7 +88,7 @@ function E(e) {
   if (null == a.nonce || (null == (t = a.activity) ? true : t.type) !== s.mFx.STREAM_REQUEST) returnfalse;
   let u = f[a.nonce];
   if (null == u) returnfalse;
-  delete f[a.nonce], _ = d(c({}, _), {
+  delete f[a.nonce], p = d(c({}, p), {
     [u]: a.id
   })
 }
@@ -99,17 +99,17 @@ function b(e) {
   } = e, {
     ownerId: n
   } = a.my(t);
-  if (null == _[n]) returnfalse;
-  delete _[n]
+  if (null == p[n]) returnfalse;
+  delete p[n]
 }
 
 function y() {
   if (Chunk19780.Z.getWasMoved()) {
-    if (Chunk19780.Z.getChannelId() === p) returnfalse;
-    p = Chunk19780.Z.getChannelId(), h()
+    if (Chunk19780.Z.getChannelId() === _) returnfalse;
+    _ = Chunk19780.Z.getChannelId(), m()
   } else {
-    if (null == p) returnfalse;
-    p = null
+    if (null == _) returnfalse;
+    _ = null
   }
 }
 class O extends Chunk442837.ZP.Store {
@@ -117,14 +117,14 @@ class O extends Chunk442837.ZP.Store {
     this.waitFor(Chunk19780.Z)
   }
   getPendingRequestForUser(e) {
-    return _[e]
+    return p[e]
   }
 }
 let v = new O(Chunk570140.Z, {
   STREAM_WATCH: b,
   MESSAGE_CREATE: E,
   MESSAGE_DELETE: g,
-  VOICE_CHANNEL_SELECT: m,
+  VOICE_CHANNEL_SELECT: h,
   VOICE_STATE_UPDATES: y,
-  LOGOUT: h
+  LOGOUT: m
 })

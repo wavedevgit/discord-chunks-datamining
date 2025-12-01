@@ -52,7 +52,7 @@ function f() {
   d = {}
 }
 
-function _(e) {
+function p(e) {
   return null == d[e] && (d[e] = {
     catalog: {},
     instances: {},
@@ -61,28 +61,15 @@ function _(e) {
   }), d[e]
 }
 
-function p(e) {
+function _(e) {
   let {
     guildId: t,
     catalog: n
   } = e;
   d = u(l({}, d), {
-    [t]: u(l({}, _(t)), {
+    [t]: u(l({}, p(t)), {
       catalog: n,
       hasFetchedCatalog: true
-    })
-  })
-}
-
-function h(e) {
-  let {
-    guildId: t,
-    instances: n
-  } = e;
-  d = u(l({}, d), {
-    [t]: u(l({}, _(t)), {
-      instances: n,
-      hasFetchedInstances: true
     })
   })
 }
@@ -90,12 +77,25 @@ function h(e) {
 function m(e) {
   let {
     guildId: t,
+    instances: n
+  } = e;
+  d = u(l({}, d), {
+    [t]: u(l({}, p(t)), {
+      instances: n,
+      hasFetchedInstances: true
+    })
+  })
+}
+
+function h(e) {
+  let {
+    guildId: t,
     skuId: n,
     instructions: r
   } = e;
   d = u(l({}, d), {
-    [t]: u(l({}, _(t)), {
-      instructions: u(l({}, _(t).instructions), {
+    [t]: u(l({}, p(t)), {
+      instructions: u(l({}, p(t).instructions), {
         [n]: r
       })
     })
@@ -106,7 +106,7 @@ function g(e) {
   let {
     guildId: t,
     instance: n
-  } = e, r = _(t);
+  } = e, r = p(t);
   d = u(l({}, d), {
     [t]: u(l({}, r), {
       instances: u(l({}, r.instances), {
@@ -129,7 +129,7 @@ function b(e) {
     unlockedGameServers: n
   } = e, r = E(t, n);
   d = u(l({}, d), {
-    [t]: u(l({}, _(t)), {
+    [t]: u(l({}, p(t)), {
       entitlements: n,
       appliedBoosts: r
     })
@@ -140,7 +140,7 @@ function y(e) {
   let {
     guildId: t,
     gameServer: n
-  } = e, r = _(t);
+  } = e, r = p(t);
   r.instances[n.id] = (0, o.Z)(n), d = u(l({}, d), {
     [t]: l({}, r)
   })
@@ -150,7 +150,7 @@ function O(e) {
   let {
     guildId: t,
     gameServerId: n
-  } = e, r = _(t);
+  } = e, r = p(t);
   delete r.instances[n], d = u(l({}, d), {
     [t]: l({}, r)
   })
@@ -160,23 +160,23 @@ function v(e) {
   let {
     guildId: t,
     entitlements: n
-  } = e, r = _(t);
+  } = e, r = p(t);
   n.forEach(e => {
     r.entitlements[e.id] = e
-  }), T(t, r)
+  }), I(t, r)
 }
 
-function I(e) {
+function S(e) {
   let {
     guildId: t,
     entitlements: n
-  } = e, r = _(t);
+  } = e, r = p(t);
   n.forEach(e => {
     delete r.entitlements[e.id]
-  }), T(t, r)
+  }), I(t, r)
 }
 
-function T(e, t) {
+function I(e, t) {
   let n = E(e, t.entitlements);
   d = u(l({}, d), {
     [e]: u(l({}, t), {
@@ -184,7 +184,7 @@ function T(e, t) {
     })
   })
 }
-class S extends(r = Chunk442837.ZP.Store) {
+class T extends(r = Chunk442837.ZP.Store) {
   getState() {
     return d
   }
@@ -207,17 +207,17 @@ class S extends(r = Chunk442837.ZP.Store) {
     return null != e && (null == (t = d[e]) ? true : t.hasFetchedInstances) === true
   }
 }
-s(S, "displayName", "GameServerStore");
-let A = new S(Chunk570140.Z, {
+s(T, "displayName", "GameServerStore");
+let A = new T(Chunk570140.Z, {
   LOGOUT: f,
-  GAME_SERVER_FETCH_CATALOG_SUCCESS: p,
-  GAME_SERVER_FETCH_INSTANCES_SUCCESS: h,
-  GAME_SERVER_FETCH_GAME_INSTRUCTIONS_SUCCESS: m,
+  GAME_SERVER_FETCH_CATALOG_SUCCESS: _,
+  GAME_SERVER_FETCH_INSTANCES_SUCCESS: m,
+  GAME_SERVER_FETCH_GAME_INSTRUCTIONS_SUCCESS: h,
   GAME_SERVER_UPDATE_INSTANCE_SUCCESS: g,
   GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: b,
   GAME_SERVER_CREATE: y,
   GAME_SERVER_UPDATE: y,
   GAME_SERVER_DELETE: O,
   GUILD_POWERUP_ENTITLEMENTS_CREATE: v,
-  GUILD_POWERUP_ENTITLEMENTS_DELETE: I
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: S
 })

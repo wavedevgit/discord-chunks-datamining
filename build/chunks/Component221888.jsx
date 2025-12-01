@@ -2,7 +2,7 @@
 /** chunk id: 221888, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk238377 = require("./238377.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -65,16 +65,16 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let R = 150;
+let P = 150;
 
-function P(e, t) {
+function R(e, t) {
   switch (e) {
     case O.fO.ACTIVITY:
-      return I.intl.formatToPlainString(I.t.TCM94S, {
+      return S.intl.formatToPlainString(S.t.TCM94S, {
         numUsers: t
       });
     case O.fO.STREAM:
-      return I.intl.formatToPlainString(I.t.BR7Tno, {
+      return S.intl.formatToPlainString(S.t.BR7Tno, {
         numViewers: t
       });
     default:
@@ -82,7 +82,7 @@ function P(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     users: t,
     disableInteraction: n,
@@ -90,26 +90,26 @@ function D(e) {
     participantType: a,
     channelId: s,
     handleUserContextMenu: l
-  } = e, c = P(a, t.length);
+  } = e, c = R(a, t.length);
   return (0, r.jsx)(f.VqE, {
     "aria-label": c,
-    className: T.popoutWrapper,
+    className: I.popoutWrapper,
     children: (0, r.jsxs)(f.Ttm, {
-      className: T.scroller,
+      className: I.scroller,
       children: [(0, r.jsx)(f.Heading, {
         variant: "heading-deprecated-12/semibold",
-        className: T.memberListHeader,
+        className: I.memberListHeader,
         children: c
       }), (0, r.jsx)("div", {
-        children: t.map(e => (0, r.jsx)(m.Z, {
+        children: t.map(e => (0, r.jsx)(h.Z, {
           user: e,
           guildId: null != i ? i : true,
           channelId: s,
           nick: y.ZP.getNickname(i, s, e),
-          className: o()(T.memberListItem, {
-            [T.popoutDisabled]: n
+          className: o()(I.memberListItem, {
+            [I.popoutDisabled]: n
           }),
-          textClassName: T.memberListItemText,
+          textClassName: I.memberListItemText,
           disablePopout: n,
           onContextMenu: t => n ? null : l(t, e)
         }, e.id))
@@ -118,7 +118,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     users: t,
     guildId: n,
@@ -126,7 +126,7 @@ function w(e) {
     maxVisibleUsers: a = 3,
     className: s,
     participantType: l
-  } = e, c = P(l, t.length), u = t.length < a ? I.intl.format(I.t["A+bT9O"], {
+  } = e, c = R(l, t.length), u = t.length < a ? S.intl.format(S.t["A+bT9O"], {
     users: t.length,
     user1: y.ZP.getName(n, i, t[0]),
     user2: y.ZP.getName(n, i, t[1]),
@@ -136,11 +136,11 @@ function w(e) {
   return (0, r.jsx)(d.u, {
     text: u,
     children: (0, r.jsxs)("div", {
-      className: o()(T.viewers, s),
+      className: o()(I.viewers, s),
       children: [(0, r.jsx)(f.tEF, {
         size: "xs",
         color: "currentColor",
-        className: T.viewersIcon
+        className: I.viewersIcon
       }), (0, r.jsx)("span", {
         "aria-hidden": "true",
         children: t.length
@@ -148,35 +148,35 @@ function w(e) {
     })
   })
 }
-let L = [];
+let x = [];
 
-function x(e) {
+function L(e) {
   let {
     channelId: t,
     guildId: a,
     participant: s,
     className: d,
-    compact: m = false,
+    compact: h = false,
     disableInteraction: y = false,
-    maxVisibleUsers: I = 3
-  } = e, S = i.useRef(null), C = (0, h.Z)(), [P, x] = i.useState(false), M = i.useRef(new u.sW(R, () => x(false))), k = (0, c.Wu)([g.Z, E.default], () => {
+    maxVisibleUsers: S = 3
+  } = e, T = i.useRef(null), C = (0, m.Z)(), [R, L] = i.useState(false), j = i.useRef(new u.sW(P, () => L(false))), M = (0, c.Wu)([g.Z, E.default], () => {
     if (s.type === O.fO.STREAM) {
       let e = g.Z.getViewerIds(s.id);
-      return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(b.lm) : L
+      return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(b.lm) : x
     }
-    return s.type === O.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => E.default.getUser(e.userId)).filter(b.lm) : L
+    return s.type === O.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => E.default.getUser(e.userId)).filter(b.lm) : x
   }, [s]);
   i.useEffect(() => {
-    C && (M.current.cancel(), x(false))
+    C && (j.current.cancel(), L(false))
   }, [C]);
-  let j = i.useCallback(() => {
-      M.current.cancel(), x(true)
+  let k = i.useCallback(() => {
+      j.current.cancel(), L(true)
     }, []),
     U = i.useCallback(() => {
-      M.current.delay()
+      j.current.delay()
     }, []),
     G = i.useCallback((e, t) => {
-      j(), (0, _.jW)(e, async () => {
+      k(), (0, p.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220"), n.e("77635")]).then(n.bind(n, 881351));
@@ -186,46 +186,46 @@ function x(e) {
       }, {
         onClose: U
       })
-    }, [U, j]);
-  if (0 === k.length) return null;
-  if (m) return (0, r.jsx)(w, {
-    maxVisibleUsers: I,
-    users: k,
+    }, [U, k]);
+  if (0 === M.length) return null;
+  if (h) return (0, r.jsx)(D, {
+    maxVisibleUsers: S,
+    users: M,
     guildId: a,
     channelId: t,
     className: d,
     participantType: s.type
   });
-  let B = l()(k).take(I).map(e => (0, r.jsx)(f.qEK, {
+  let Z = l()(M).take(S).map(e => (0, r.jsx)(f.qEK, {
     src: e.getAvatarURL(a, 24),
     "aria-label": e.username,
     size: f.EFr.SIZE_24,
-    className: T.viewer
+    className: I.viewer
   }, e.id)).value();
-  return k.length > I && (B[B.length - 1] = (0, r.jsxs)("div", {
-    className: T.overflow,
-    children: ["+", k.length - I + 1]
-  }, "overflow")), (0, r.jsx)(p.Z, {
+  return M.length > S && (Z[Z.length - 1] = (0, r.jsxs)("div", {
+    className: I.overflow,
+    children: ["+", M.length - S + 1]
+  }, "overflow")), (0, r.jsx)(_.Z, {
     section: v.jXE.STREAM_VIEWER_POPOUT,
     children: (0, r.jsx)("div", {
-      onMouseEnter: j,
+      onMouseEnter: k,
       onMouseLeave: U,
       children: (0, r.jsx)(f.yRy, {
-        targetElementRef: S,
-        renderPopout: () => (0, r.jsx)(D, {
+        targetElementRef: T,
+        renderPopout: () => (0, r.jsx)(w, {
           participantType: s.type,
           handleUserContextMenu: G,
           guildId: a,
           channelId: t,
-          users: k,
+          users: M,
           disableInteraction: y
         }),
-        shouldShow: P && !C,
+        shouldShow: R && !C,
         position: "top",
         children: () => (0, r.jsx)("div", {
-          ref: S,
-          className: o()(T.viewers, d),
-          children: B
+          ref: T,
+          className: o()(I.viewers, d),
+          children: Z
         })
       })
     })

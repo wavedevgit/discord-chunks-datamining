@@ -18,7 +18,7 @@ function i(e) {
   return btoa(n).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, "")
 }
 require.d(exports, {
-  U2: () => I,
+  U2: () => S,
   Ue: () => y
 });
 var a = "copy",
@@ -80,12 +80,12 @@ var d = {
     appidExclude: u(a),
     credProps: u(a)
   },
-  _ = {
+  p = {
     appid: u(a),
     appidExclude: u(a),
     credProps: u(a)
   },
-  p = {
+  _ = {
     publicKey: c({
       rp: c(a),
       user: c({
@@ -103,7 +103,7 @@ var d = {
     }),
     signal: u(a)
   },
-  h = {
+  m = {
     type: c(a),
     id: c(a),
     rawId: c(o),
@@ -116,9 +116,9 @@ var d = {
         return (null == (t = e.getTransports) ? true : t.call(e)) || []
       })
     }),
-    clientExtensionResults: l(_, e => e.getClientExtensionResults())
+    clientExtensionResults: l(p, e => e.getClientExtensionResults())
   },
-  m = {
+  h = {
     mediation: u(a),
     publicKey: c({
       challenge: c(o),
@@ -141,27 +141,27 @@ var d = {
       signature: c(o),
       userHandle: c(o)
     }),
-    clientExtensionResults: l(_, e => e.getClientExtensionResults())
+    clientExtensionResults: l(p, e => e.getClientExtensionResults())
   };
 
 function E(e) {
-  return s(r, p, e)
+  return s(r, _, e)
 }
 
 function b(e) {
-  return s(i, h, e)
+  return s(i, m, e)
 }
 async function y(e) {
   return b(await navigator.credentials.create(E(e)))
 }
 
 function O(e) {
-  return s(r, m, e)
+  return s(r, h, e)
 }
 
 function v(e) {
   return s(i, g, e)
 }
-async function I(e) {
+async function S(e) {
   return v(await navigator.credentials.get(O(e)))
 }

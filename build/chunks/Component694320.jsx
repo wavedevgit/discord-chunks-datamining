@@ -58,18 +58,18 @@ function v(e) {
   let {
     className: t,
     iconOnly: n
-  } = e, a = (0, s.e7)([p.Z, _.Z], () => {
-    let e = _.Z.getChannel(p.Z.getChannelId());
-    return (null == e ? true : e.isPrivate()) ? m.ZY5.DM_CHANNEL : m.ZY5.GUILD_CHANNEL
+  } = e, a = (0, s.e7)([_.Z, p.Z], () => {
+    let e = p.Z.getChannel(_.Z.getChannelId());
+    return (null == e ? true : e.isPrivate()) ? h.ZY5.DM_CHANNEL : h.ZY5.GUILD_CHANNEL
   }), {
     analyticsLocations: b
   } = (0, d.ZP)(u.Z.PREMIUM_UPSELL);
   i.useEffect(() => {
-    h.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
+    m.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: "longer messages inline",
       location: {
         location_page: a,
-        location_section: m.jXE.CHANNEL_TEXT_AREA
+        location_section: h.jXE.CHANNEL_TEXT_AREA
       },
       location_stack: b
     })

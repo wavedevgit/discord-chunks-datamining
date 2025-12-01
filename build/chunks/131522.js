@@ -48,14 +48,14 @@ module.exports = {
       }))
     }));
     var s = [],
-      _ = n ? n.getDecorations(t, e) : a(o(null, i)),
-      p = t.getCharacterList();
-    return r(_, f, l, function(e, t) {
+      p = n ? n.getDecorations(t, e) : a(o(null, i)),
+      _ = t.getCharacterList();
+    return r(p, f, l, function(e, t) {
       s.push(new u({
         start: e,
         end: t,
-        decoratorKey: _.get(e),
-        leaves: d(p.slice(e, t).toList(), e)
+        decoratorKey: p.get(e),
+        leaves: d(_.slice(e, t).toList(), e)
       }))
     }), a(s)
   }

@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk70097 = require("./70097.jsx"),
   Chunk548238 = require("./548238.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = 2e3,
+let h = 2e3,
   g = 400,
   E = .3;
 class b extends Chunk473749.Component {
@@ -73,27 +73,27 @@ class b extends Chunk473749.Component {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "_animatedValue", new s.Z.Value(1)), h(this, "state", {
+    super(...e), m(this, "_animatedValue", new s.Z.Value(1)), m(this, "state", {
       imageLoadError: false,
       imageLoading: true
-    }), h(this, "componentWillEnter", e => {
+    }), m(this, "componentWillEnter", e => {
       this._animatedValue.setValue(0), s.Z.timing(this._animatedValue, {
         toValue: 1,
         duration: g
       }).start(e)
-    }), h(this, "componentWillLeave", e => {
+    }), m(this, "componentWillLeave", e => {
       s.Z.timing(this._animatedValue, {
         toValue: 0,
         duration: g
       }).start(e)
-    }), h(this, "getImageStyle", () => ({
+    }), m(this, "getImageStyle", () => ({
       opacity: this._animatedValue
-    })), h(this, "handleImageError", () => {
+    })), m(this, "handleImageError", () => {
       this.setState({
         imageLoadError: true,
         imageLoading: false
       })
-    }), h(this, "handleImageLoaded", () => {
+    }), m(this, "handleImageLoaded", () => {
       this.setState({
         imageLoading: false
       })
@@ -133,7 +133,7 @@ class y extends Chunk473749.Component {
       title: Chunk473749
     }, "image") : (0, Chunk54381.jsx)(Chunk679056.Z, {
       onInterval: this.nextItem,
-      interval: m,
+      interval: h,
       className: Chunk548238.slideshowWrapper,
       disable: !module,
       children: (0, Chunk54381.jsx)(Chunk215569.W, {
@@ -160,25 +160,25 @@ class y extends Chunk473749.Component {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "state", {
+    super(...e), m(this, "state", {
       currentIndex: 0,
       videoLoadError: false,
       videoLoaded: false
-    }), h(this, "_video", i.createRef()), h(this, "videoTimeout", new c.V7), h(this, "videoPlaying", false), h(this, "handleToggleMute", e => {
+    }), m(this, "_video", i.createRef()), m(this, "videoTimeout", new c.V7), m(this, "videoPlaying", false), m(this, "handleToggleMute", e => {
       e.stopPropagation(), e.preventDefault();
       let {
         onToggleMute: t
       } = this.props;
       null == t || t(e)
-    }), h(this, "handleVideoError", () => {
+    }), m(this, "handleVideoError", () => {
       this.setState({
         videoLoadError: true
       })
-    }), h(this, "handleVideoLoaded", () => {
+    }), m(this, "handleVideoLoaded", () => {
       this.setState({
         videoLoaded: true
       })
-    }), h(this, "renderTypeVideo", () => {
+    }), m(this, "renderTypeVideo", () => {
       let {
         videoLoaded: e
       } = this.state, {
@@ -188,12 +188,12 @@ class y extends Chunk473749.Component {
         playing: s,
         muted: c,
         splashClassName: f,
-        splashPlaceholderClassName: h,
-        renderMediaOverlay: m
+        splashPlaceholderClassName: m,
+        renderMediaOverlay: h
       } = this.props, g = c ? d.OyP : d.gj8;
       return (0, r.jsxs)(i.Fragment, {
-        children: [l.tq ? null : (0, r.jsx)(_.Z, {
-          className: o()(p.splash, f),
+        children: [l.tq ? null : (0, r.jsx)(p.Z, {
+          className: o()(_.splash, f),
           muted: c,
           loop: true,
           preload: "none",
@@ -206,29 +206,29 @@ class y extends Chunk473749.Component {
           })
         }), (0, r.jsx)(u.W, {
           children: s && e ? null : (0, r.jsx)(b, {
-            className: o()(p.splashPlaceholder, h),
+            className: o()(_.splashPlaceholder, m),
             src: n,
             title: a
           }, 0)
         }), (0, r.jsx)(d.P3F, {
-          className: o()(p.muteContainer, {
-            [p.muteContainerPlaying]: s && e,
-            [p.muteContainerMediaOverlay]: null != m
+          className: o()(_.muteContainer, {
+            [_.muteContainerPlaying]: s && e,
+            [_.muteContainerMediaOverlay]: null != h
           }),
           onClick: this.handleToggleMute,
           children: s && e ? (0, r.jsx)(g, {
-            className: p.mute
+            className: _.mute
           }) : null
         })]
       })
-    }), h(this, "nextItem", () => {
+    }), m(this, "nextItem", () => {
       let {
         slideImages: e
       } = this.props;
       null != e && this.setState({
         currentIndex: (this.state.currentIndex + 1) % e.length
       })
-    }), h(this, "renderSlideItem", e => {
+    }), m(this, "renderSlideItem", e => {
       let {
         image: t,
         title: n,
@@ -238,11 +238,11 @@ class y extends Chunk473749.Component {
         currentIndex: s
       } = this.state;
       return i ? (0, r.jsx)(b, {
-        className: o()(p.splash, a),
+        className: o()(_.splash, a),
         src: e[s],
         title: n
       }, s) : (0, r.jsx)(b, {
-        className: o()(p.splash, a),
+        className: o()(_.splash, a),
         src: t,
         title: n
       }, "image")

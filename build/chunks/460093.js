@@ -2,7 +2,7 @@
 /** chunk id: 460093, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./388685.js");
 var Chunk481060 = require("./481060.js"),
   Chunk147913 = require("./147913.js"),
@@ -46,7 +46,7 @@ function f(e) {
   }), ": ").concat(n);
   (0, r.showToast)((0, r.createToast)(i, r.ToastType.FAILURE))
 }
-class _ extends Chunk147913.Z {
+class p extends Chunk147913.Z {
   constructor(...e) {
     super(...e), u(this, "actions", {
       RPC_APP_DISCONNECTED: e => {
@@ -55,5 +55,5 @@ class _ extends Chunk147913.Z {
     })
   }
 }
-u(_, "displayName", "FramesManager");
-let p = new _
+u(p, "displayName", "FramesManager");
+let _ = new p

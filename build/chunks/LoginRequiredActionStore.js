@@ -38,27 +38,27 @@ function f(e) {
   c = t.id
 }
 
-function _(e) {
+function p(e) {
   let {
     userId: t
   } = e;
   u(t, null)
 }
 
-function p(e) {
+function _(e) {
   let {
     isSwitchingAccount: t
   } = e;
   t || null == c || u(c, null)
 }
 
-function h(e) {
+function m(e) {
   let {
     userId: t
   } = e;
   u(t, null)
 }
-class m extends(r = Chunk442837.ZP.PersistedStore) {
+class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (s = e)
   }
@@ -77,12 +77,12 @@ class m extends(r = Chunk442837.ZP.PersistedStore) {
     return s
   }
 }
-o(m, "displayName", "LoginRequiredActionStore"), o(m, "persistKey", "LoginRequiredActionStore");
-let g = new m(Chunk570140.Z, {
+o(h, "displayName", "LoginRequiredActionStore"), o(h, "persistKey", "LoginRequiredActionStore");
+let g = new h(Chunk570140.Z, {
   LOGIN_ATTEMPTED: d,
   CONNECTION_OPEN: f,
   CURRENT_USER_UPDATE: f,
-  LOGOUT: p,
-  PASSWORD_UPDATED: _,
-  MULTI_ACCOUNT_REMOVE_ACCOUNT: h
+  LOGOUT: _,
+  PASSWORD_UPDATED: p,
+  MULTI_ACCOUNT_REMOVE_ACCOUNT: m
 })

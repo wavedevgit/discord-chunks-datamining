@@ -2,8 +2,8 @@
 /** chunk id: 103479, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p,
-  s: () => _
+  Z: () => _,
+  s: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,7 +16,7 @@ var Chunk763472 = require("./763472.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
-async function _(e) {
+async function p(e) {
   let {
     activity: t,
     user: n,
@@ -36,7 +36,7 @@ async function _(e) {
   } catch (e) {}
 }
 
-function p(e) {
+function _(e) {
   let {
     user: t,
     activity: n,
@@ -53,7 +53,7 @@ function p(e) {
       onClick: e => {
         e.stopPropagation(), null == i || i({
           action: s ? "PRESS_WATCH_ON_CRUNCHYROLL_BUTTON" : "PRESS_CUSTOM_BUTTON"
-        }), _({
+        }), p({
           user: t,
           activity: n,
           index: a
@@ -68,7 +68,7 @@ function p(e) {
       onClick: e => {
         e.stopPropagation(), null == i || i({
           action: s ? "PRESS_WATCH_ON_CRUNCHYROLL_BUTTON" : "PRESS_CUSTOM_BUTTON"
-        }), _({
+        }), p({
           user: t,
           activity: n,
           index: a

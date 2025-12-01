@@ -17,28 +17,28 @@ function s(e = {}) {
   } = e, c = (0, o.useRef)({
     isFocused: false,
     isFocusVisible: t || (0, r.E)()
-  }), [u, d] = (0, o.useState)(false), [f, _] = (0, o.useState)(() => c.current.isFocused && c.current.isFocusVisible), p = (0, o.useCallback)(() => _(c.current.isFocused && c.current.isFocusVisible), []), h = (0, o.useCallback)(e => {
-    c.current.isFocused = e, d(e), p()
-  }, [p]);
+  }), [u, d] = (0, o.useState)(false), [f, p] = (0, o.useState)(() => c.current.isFocused && c.current.isFocusVisible), _ = (0, o.useCallback)(() => p(c.current.isFocused && c.current.isFocusVisible), []), m = (0, o.useCallback)(e => {
+    c.current.isFocused = e, d(e), _()
+  }, [_]);
   (0, r.mG)(e => {
-    c.current.isFocusVisible = e, p()
+    c.current.isFocusVisible = e, _()
   }, [], {
     isTextInput: n
   });
   let {
-    focusProps: m
+    focusProps: h
   } = (0, i.K)({
     isDisabled: l,
-    onFocusChange: h
+    onFocusChange: m
   }), {
     focusWithinProps: g
   } = (0, a.L)({
     isDisabled: !l,
-    onFocusWithinChange: h
+    onFocusWithinChange: m
   });
   return {
     isFocused: u,
     isFocusVisible: f,
-    focusProps: l ? g : m
+    focusProps: l ? g : h
   }
 }

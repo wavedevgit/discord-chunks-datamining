@@ -2,7 +2,7 @@
 /** chunk id: 675993, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk208733 = require("./208733.js"),
   Chunk430864 = require("./430864.js");
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,22 +40,22 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
 }
-let D = 2,
-  w = 2e3;
+let w = 2,
+  D = 2e3;
 
-function L(e) {
+function x(e) {
   let {
     context: t,
     application: n,
@@ -63,22 +63,22 @@ function L(e) {
     imageCoverUrl: l,
     sectionName: u,
     hasCommands: f
-  } = e, _ = i.useMemo(() => {
+  } = e, p = i.useMemo(() => {
     var e;
     return null != (e = (0, y.jD)(n)) ? e : ""
-  }, [n]), p = (0, s.e7)([c.Z], () => c.Z.inDevModeForApplication(n.id)), {
-    isSlideReady: h
+  }, [n]), _ = (0, s.e7)([c.Z], () => c.Z.inDevModeForApplication(n.id)), {
+    isSlideReady: m
   } = (0, O.hH)(), [g, E] = i.useState(false);
   i.useEffect(() => {
-    h && E(true)
-  }, [h]);
+    m && E(true)
+  }, [m]);
   let b = null != a;
   return (0, r.jsxs)("div", {
     className: C.container,
     children: [(0, r.jsxs)("div", {
       children: [b ? (0, r.jsxs)("div", {
         className: C.videoContainer,
-        children: [g ? (0, r.jsx)(m.Z, {
+        children: [g ? (0, r.jsx)(h.Z, {
           className: o()(C.videoCover, C.video),
           loop: true,
           muted: true,
@@ -92,13 +92,13 @@ function L(e) {
         })]
       }) : null, (0, r.jsxs)("div", {
         className: b ? C.overviewContainerWithVideo : C.overviewContainerNoVideo,
-        children: [(0, r.jsx)(M, {
+        children: [(0, r.jsx)(j, {
           application: n
-        }), (0, r.jsx)(k, {
+        }), (0, r.jsx)(M, {
           application: n
-        }), _.length > 0 ? (0, r.jsx)(G, {
-          description: _
-        }) : null, p ? (0, r.jsx)("div", {
+        }), p.length > 0 ? (0, r.jsx)(G, {
+          description: p
+        }) : null, _ ? (0, r.jsx)("div", {
           className: C.developerShelfControlsContainer,
           children: (0, r.jsx)(d.W, {
             hideSearch: true,
@@ -108,17 +108,17 @@ function L(e) {
           context: t,
           application: n,
           sectionName: u,
-          isDeveloperOfThisApp: p,
+          isDeveloperOfThisApp: _,
           hasCommands: f
         })]
       })]
-    }), (0, r.jsx)(x, {
+    }), (0, r.jsx)(L, {
       application: n
     })]
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     application: t
   } = e, n = (0, y.Cb)(t), i = (0, y.Hu)(t);
@@ -148,7 +148,7 @@ function x(e) {
   }) : null
 }
 
-function M(e) {
+function j(e) {
   var t;
   let {
     application: n
@@ -170,7 +170,7 @@ function M(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     application: t
   } = e, n = i.useMemo(() => {
@@ -179,7 +179,7 @@ function k(e) {
   }, [t]);
   return (0, y.ye)(t) ? (0, r.jsxs)("div", {
     className: C.tagsContainer,
-    children: [(0, r.jsx)(j, {
+    children: [(0, r.jsx)(k, {
       application: t
     }), n.map((e, t) => (0, r.jsx)("div", {
       className: C.tagContainer,
@@ -192,7 +192,7 @@ function k(e) {
   }) : null
 }
 
-function j(e) {
+function k(e) {
   var t;
   let {
     application: n
@@ -220,33 +220,33 @@ function U(e) {
     sectionName: o,
     hasCommands: s,
     isDeveloperOfThisApp: c
-  } = e, u = (0, p.Fs)(n, a.id), d = (0, h.q)(a.id), m = null == d || null == (t = d.bot) ? true : t.id, g = (0, _.Z)({
+  } = e, u = (0, _.Fs)(n, a.id), d = (0, m.q)(a.id), h = null == d || null == (t = d.bot) ? true : t.id, g = (0, p.Z)({
     context: n,
     application: a,
-    botUserId: m
+    botUserId: h
   }), {
     analyticsLocations: E
   } = (0, f.ZP)();
   return (i.useEffect(() => {
     if (!(0, y.BQ)(a) || !(0, y.ye)(a)) return;
     let e = setTimeout(() => {
-      (null == u || null == m) && b.default.track(S.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
+      (null == u || null == h) && b.default.track(T.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
         application_id: a.id,
         is_primary_entry_point_command_non_null: null != u,
-        is_bot_user_id_non_null: null != m,
+        is_bot_user_id_non_null: null != h,
         show_try_it_out_button: g
       })
-    }, w);
+    }, D);
     return () => clearTimeout(e)
-  }, [a, u, m, g]), (0, y.BQ)(a) && (0, y.ye)(a)) ? null != u && null != m ? (0, r.jsxs)(l.ButtonGroup, {
+  }, [a, u, h, g]), (0, y.BQ)(a) && (0, y.ye)(a)) ? null != u && null != h ? (0, r.jsxs)(l.ButtonGroup, {
     fullWidth: true,
-    children: [(0, r.jsx)(I.Z, {
+    children: [(0, r.jsx)(S.Z, {
       context: n,
       application: a,
       sectionName: o,
       primaryEntryPointCommand: u
-    }), g && null != m ? (0, r.jsx)(T.Z, {
-      botUserId: m,
+    }), g && null != h ? (0, r.jsx)(I.Z, {
+      botUserId: h,
       applicationId: a.id,
       analyticsLocations: E
     }) : null]
@@ -267,7 +267,7 @@ function G(e) {
       ref: s,
       lineHeight: c,
       lineCount: u
-    } = B(),
+    } = Z(),
     d = i.useMemo(() => {
       if (null == c || null == u) return {
         key: 0
@@ -275,42 +275,42 @@ function G(e) {
       let e = c * u;
       return {
         key: 1,
-        minHeightOverride: Math.min(e, D * c),
+        minHeightOverride: Math.min(e, w * c),
         maxHeightOverride: e
       }
     }, [u, c]),
     {
       ref: f,
-      isTransitioning: _,
-      onTransitionEnd: p
-    } = (0, v.Z)(P({
+      isTransitioning: p,
+      onTransitionEnd: _
+    } = (0, v.Z)(R({
       isExpanded: n
     }, d)),
-    h = n || _;
+    m = n || p;
   return (0, r.jsxs)("div", {
     className: C.descriptionContainer,
     children: [(0, r.jsx)("div", {
       ref: f,
       className: C.overflowHidden,
-      onTransitionEnd: p,
+      onTransitionEnd: _,
       children: (0, r.jsx)(l.Text, {
         ref: s,
         className: N.markup,
         variant: "text-sm/medium",
-        lineClamp: h ? true : D,
+        lineClamp: m ? true : w,
         style: {
-          maxHeight: h ? true : d.minHeightOverride
+          maxHeight: m ? true : d.minHeightOverride
         },
         children: o
       })
-    }), null != u && u > D ? (0, r.jsxs)(l.P3F, {
+    }), null != u && u > w ? (0, r.jsxs)(l.P3F, {
       className: C.expandableDescriptionClickable,
       onClick: () => a(e => !e),
       children: [(0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
-        children: h ? A.intl.string(A.t.u4YJ8g) : A.intl.string(A.t["N/tajD"])
-      }), h ? (0, r.jsx)(l.u04, {
+        children: m ? A.intl.string(A.t.u4YJ8g) : A.intl.string(A.t["N/tajD"])
+      }), m ? (0, r.jsx)(l.u04, {
         size: "sm",
         color: l.TVs.colors.TEXT_BRAND
       }) : (0, r.jsx)(l.CJ0, {
@@ -321,7 +321,7 @@ function G(e) {
   })
 }
 
-function B() {
+function Z() {
   let e = Chunk473749.useRef(null),
     [t, n] = Chunk473749.useState(null),
     [r, a] = Chunk473749.useState(null);

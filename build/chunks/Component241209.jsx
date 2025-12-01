@@ -58,10 +58,10 @@ function O(e, t) {
 }
 let v = new RegExp("https?://".concat(null != (r = window.GLOBAL_ENV.CDN_HOST) ? r : ""));
 
-function I(e) {
+function S(e) {
   return "string" == typeof e.content ? e.content : A(e.content)
 }
-let T = O(b({}, u().defaultRules), {
+let I = O(b({}, u().defaultRules), {
     heading: O(b({}, u().defaultRules.heading), {
       react(e, t, n) {
         let r = "h".concat(e.level);
@@ -73,7 +73,7 @@ let T = O(b({}, u().defaultRules), {
     }),
     paragraph: O(b({}, u().defaultRules.paragraph), {
       react: (e, t, n) => (0, a.jsx)("div", {
-        className: m.paragraph,
+        className: h.paragraph,
         children: t(e.content, n)
       }, n.key)
     }),
@@ -96,8 +96,8 @@ let T = O(b({}, u().defaultRules), {
     }),
     blockQuote: O(b({}, u().defaultRules.blockQuote), {
       react: (e, t, n) => (0, a.jsx)("blockquote", {
-        className: m.blockquote,
-        children: I(e)
+        className: h.blockquote,
+        children: S(e)
       }, n.key)
     }),
     image: O(b({}, u().defaultRules.image), {
@@ -116,8 +116,8 @@ let T = O(b({}, u().defaultRules), {
     inlineCode: O(b({}, Chunk428595.Z.RULES.inlineCode), {
       order: 6,
       react: (e, t, n) => (0, a.jsx)("code", {
-        className: m.codeInline,
-        children: I(e)
+        className: h.codeInline,
+        children: S(e)
       }, n.key)
     }),
     codeBlock: O(b({}, u().defaultRules.codeBlock), {
@@ -125,7 +125,7 @@ let T = O(b({}, u().defaultRules), {
         let i = () => (0, a.jsx)("pre", {
           children: (0, a.jsx)("code", {
             className: l()(g.scrollbarGhostHairline, "hljs"),
-            children: I(e)
+            children: S(e)
           })
         }, r.key);
         return (0, a.jsx)(d.GI, {
@@ -150,8 +150,8 @@ let T = O(b({}, u().defaultRules), {
       }
     })
   }),
-  S = u().parserFor(T),
-  A = u().reactFor(u().ruleOutput(T, "react"));
+  T = u().parserFor(I),
+  A = u().reactFor(u().ruleOutput(I, "react"));
 class C extends(i = Chunk473749.PureComponent) {
   render() {
     let {
@@ -169,8 +169,8 @@ class C extends(i = Chunk473749.PureComponent) {
     })
   }
 }
-E(C, "rules", T), E(C, "defaultProps", {
-  parser: S,
+E(C, "rules", I), E(C, "defaultProps", {
+  parser: T,
   output: A
 });
 let N = C

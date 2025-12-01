@@ -2,7 +2,7 @@
 /** chunk id: 732067, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk837262 = require("./837262.js"),
   Chunk520816 = require("./520816.js");
 
-function T(e) {
+function I(e) {
   let {
     message: t,
     applicationName: n,
@@ -34,13 +34,13 @@ function T(e) {
     channel: a,
     currentUserId: s,
     viewAction: c
-  } = e, u = (0, _.ZP)(t), d = (0, p.l)({
+  } = e, u = (0, p.ZP)(t), d = (0, _.l)({
     user: t.author,
     channelId: a.id,
     guildId: a.guild_id,
     messageId: t.id
   })(u);
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(m.Z, {
     compact: false,
     children: O.intl.format(s === t.author.id ? O.t.anvg2q : O.t.AxVbYF, {
       username: u.nick,
@@ -53,7 +53,7 @@ function T(e) {
           children: [(0, r.jsx)("img", {
             alt: O.intl.string(O.t["2B/phM"]),
             src: i,
-            className: o()(I.gameIcon, f.A.XSMALL)
+            className: o()(S.gameIcon, f.A.XSMALL)
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
             color: "text-muted",
@@ -65,62 +65,62 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     message: t,
     application: n,
     applicationName: a,
     channel: o,
     header: f,
-    currentUserId: _,
-    launchableAppId: p,
-    isEmbeddedApplication: h,
-    tryWithGdnAction: I,
-    staticBannerSrc: S,
+    currentUserId: p,
+    launchableAppId: _,
+    isEmbeddedApplication: m,
+    tryWithGdnAction: S,
+    staticBannerSrc: T,
     onClickContent: A,
     iconSrc: C,
     onView: N,
-    presenceActivity: R,
-    analyticsLocations: P
-  } = e, D = (0, s.e7)([m.Z], () => m.Z.getMessages(o.id)), w = i.useMemo(() => {
+    presenceActivity: P,
+    analyticsLocations: R
+  } = e, w = (0, s.e7)([h.Z], () => h.Z.getMessages(o.id)), D = i.useMemo(() => {
     let e = [];
-    return (null != p ? e = [{
+    return (null != _ ? e = [{
       label: O.intl.string(O.t["s+J8Dl"]),
       trackingArea: d.j_.PLAY,
       isDeadEnd: true,
       onClick: () => {
         c.Z.launch({
-          applicationId: p,
-          embedded: h
+          applicationId: _,
+          embedded: m
         })
       }
-    }] : null != I && (e = [I]), e.length > 0 && !(0, E.b)(t.id, D, n.id, R)) ? [] : e
-  }, [h, p, I, D, R, n.id, t.id]), L = w.some(e => e.trackingArea === d.j_.CLOUD_PLAY);
-  (0, b.Z)(L, P);
-  let x = w.length > 0,
-    M = i.useMemo(() => (0, r.jsx)(l.Text, {
+    }] : null != S && (e = [S]), e.length > 0 && !(0, E.b)(t.id, w, n.id, P)) ? [] : e
+  }, [m, _, S, w, P, n.id, t.id]), x = D.some(e => e.trackingArea === d.j_.CLOUD_PLAY);
+  (0, b.Z)(x, R);
+  let L = D.length > 0,
+    j = i.useMemo(() => (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
       className: v.description,
       color: "none",
       lineClamp: 3,
-      children: (0, g.wR)(t, a, o, _, x)
-    }), [t, a, o, _, x]);
-  return 0 === w.length ? (0, r.jsx)(T, {
+      children: (0, g.wR)(t, a, o, p, L)
+    }), [t, a, o, p, L]);
+  return 0 === D.length ? (0, r.jsx)(I, {
     message: t,
     applicationName: a,
     iconSrc: C,
     channel: o,
-    currentUserId: _,
+    currentUserId: p,
     viewAction: A
   }) : (0, r.jsx)(u.W, {
     header: f,
     title: a,
-    staticBannerSrc: S,
+    staticBannerSrc: T,
     onClickBanner: A,
     bannerAspectRatio: u.u.ACTIVITY,
     iconSrc: null != C ? C : true,
-    info: M,
-    actions: w,
+    info: j,
+    actions: D,
     onClickContent: A,
     trackingConfig: {
       id: n.id,

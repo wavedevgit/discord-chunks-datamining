@@ -4,19 +4,19 @@
 require.d(exports, {
   AF: () => O,
   BP: () => E,
-  Cf: () => S,
+  Cf: () => T,
   Gj: () => v,
   Hk: () => d,
   KL: () => y,
-  L3: () => I,
-  MU: () => m,
-  Qq: () => h,
+  L3: () => S,
+  MU: () => h,
+  Qq: () => m,
   dc: () => u,
   gU: () => f,
   o3: () => c,
   q5: () => g,
   t0: () => b,
-  vf: () => p
+  vf: () => _
 }), require("./388685.js");
 var Chunk70956 = require("./70956.js"),
   Chunk388032 = require("./388032.jsx");
@@ -63,27 +63,27 @@ let c = 0,
   u = 13,
   d = false,
   f = false,
-  _ = false;
-var p = function(e) {
+  p = false;
+var _ = function(e) {
     return e.FEATURED = "featured", e.GAMING = "gaming", e.MUSIC = "music", e.ENTERTAINMENT = "entertainment", e.TECH = "tech", e.EDUCATION = "education", e.HUBS = "hubs", e
   }({}),
-  h = function(e) {
+  m = function(e) {
     return e.UNKNOWN = "unknown", e.GUILDS_BAR = "guilds_bar", e.RTC_PANEL = "rtc_panel", e.PROFILE = "profile", e.GAME_LINK = "game_link", e.EMBED = "embed", e
   }({});
-let m = new Set(["hubs"]),
+let h = new Set(["hubs"]),
   g = [],
   E = "q",
   b = "c",
   y = "l",
   O = 10 * Chunk70956.Z.Millis.MINUTE;
 var v = function(e) {
-  return e[e.Clans = _] = "Clans", e[e.Hub = f] = "Hub", e[e.Communities = d] = "Communities", e[e.Activity = 1] = "Activity", e[e.Music = 2] = "Music", e[e.Television = 3] = "Television", e[e.Science = 5] = "Science", e[e.Education = 6] = "Education", e
+  return e[e.Clans = p] = "Clans", e[e.Hub = f] = "Hub", e[e.Communities = d] = "Communities", e[e.Activity = 1] = "Activity", e[e.Music = 2] = "Music", e[e.Television = 3] = "Television", e[e.Science = 5] = "Science", e[e.Education = 6] = "Education", e
 }({});
-let I = [1, 2, 3, 5, 6],
-  T = ["en-GB"];
+let S = [1, 2, 3, 5, 6],
+  I = ["en-GB"];
 
-function S() {
-  return (0, Chunk388032.getLanguages)().filter(e => !T.includes(e.code)).map(e => "en-US" === e.code ? l(o({}, e), {
+function T() {
+  return (0, Chunk388032.getLanguages)().filter(e => !I.includes(e.code)).map(e => "en-US" === e.code ? l(o({}, e), {
     name: i.intl.string(i.t.LQLMGP)
   }) : e)
 }

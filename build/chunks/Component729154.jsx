@@ -2,7 +2,7 @@
 /** chunk id: 729154, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  x: () => h
+  x: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk881493 = require("./881493.jsx"),
   Chunk407965 = require("./407965.jsx"),
   Chunk981631 = require("./981631.js");
-let h = e => {
+let m = e => {
     let {
       transitionState: t,
       onClose: n,
@@ -25,16 +25,16 @@ let h = e => {
       churnDiscount: c,
       planId: u,
       renewalInvoice: f,
-      renewalInvoiceDetails: _,
-      errorOnCancel: h,
+      renewalInvoiceDetails: p,
+      errorOnCancel: m,
       errorOnRedeem: g,
       setActiveStep: E,
       activeStep: b
     } = e, {
       analyticsLocations: y
-    } = (0, o.ZP)(a.Z.USER_SETTINGS), [O, v] = i.useState(m(b));
+    } = (0, o.ZP)(a.Z.USER_SETTINGS), [O, v] = i.useState(h(b));
     return (0, i.useEffect)(() => {
-      v(m(b))
+      v(h(b))
     }, [b]), (0, r.jsx)(d.CancellationContext.Provider, {
       value: {
         setStep: E,
@@ -43,7 +43,7 @@ let h = e => {
         transitionState: t,
         premiumSubscription: s,
         analyticsLocations: y,
-        analyticsLocation: p.Sbl.USER_SETTINGS,
+        analyticsLocation: _.Sbl.USER_SETTINGS,
         confettiCanvas: null,
         churnUserDiscountOffer: c,
         isFetchingChurnDiscountOffer: false,
@@ -52,10 +52,10 @@ let h = e => {
         planId: u,
         paymentsBlocked: false,
         renewalInvoice: f,
-        renewalInvoiceDetails: _,
+        renewalInvoiceDetails: p,
         handleCancellation: () => new Promise((e, t) => {
           setTimeout(() => {
-            if (h) return void t();
+            if (m) return void t();
             e()
           }, 1e3)
         }),
@@ -71,7 +71,7 @@ let h = e => {
       children: O
     })
   },
-  m = e => {
+  h = e => {
     switch (e) {
       case u.R.DISCOUNT_APPLIED:
         return (0, r.jsx)(c.i, {});
@@ -83,6 +83,6 @@ let h = e => {
         return (0, r.jsx)(f.w, {});
       case u.R.WHAT_YOU_LOSE:
       default:
-        return (0, r.jsx)(_.n, {})
+        return (0, r.jsx)(p.n, {})
     }
   }

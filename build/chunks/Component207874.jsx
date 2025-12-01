@@ -36,7 +36,7 @@ function d() {
     };
     return window.addEventListener("keydown", module), () => window.removeEventListener("keydown", module)
   }, [f]);
-  let _ = Chunk473749.useCallback(e => {
+  let p = Chunk473749.useCallback(e => {
     c.Z.setState({
       query: e
     })
@@ -49,7 +49,7 @@ function d() {
       ref: d,
       query: module,
       onClear: require,
-      onChange: _,
+      onChange: p,
       placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
       inputProps: {
         "aria-label": Chunk388032.intl.string(Chunk388032.t.pk9BWW),

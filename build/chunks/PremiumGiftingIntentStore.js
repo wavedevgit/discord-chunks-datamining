@@ -19,7 +19,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk522558 = require("./522558.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -45,9 +45,9 @@ let E = 5,
   y = 864e5,
   O = 6048e5,
   v = 12096e5,
-  I = 1,
-  T = 5,
-  S = .7;
+  S = 1,
+  I = 5,
+  T = .7;
 
 function A() {
   return {
@@ -59,11 +59,11 @@ function A() {
 }
 let C = A(),
   N = [],
-  R = new Set,
-  P = {},
-  D = null;
+  P = new Set,
+  R = {},
+  w = null;
 
-function w(e, t) {
+function D(e, t) {
   let n = new Date,
     r = new Date(e.getTime());
   r.setFullYear(t);
@@ -73,13 +73,13 @@ function w(e, t) {
   return a.setDate(r.getDate() + b), n > i && n < a
 }
 
-function L(e) {
-  return !w(e, e.getFullYear()) && w(e, new Date().getFullYear())
+function x(e) {
+  return !D(e, e.getFullYear()) && D(e, new Date().getFullYear())
 }
 
-function x() {
-  if (null != D) return void Q(D);
-  if (j(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
+function L() {
+  if (null != w) return void X(w);
+  if (k(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
   } = Chunk522558.w.getConfig({
@@ -91,7 +91,7 @@ function x() {
       n = Chunk752048.Z.getUserAffinity(module);
     if (Chunk699516.Z.isFriend(module) && null != require && require.dmProbability > 0 && null != exports) {
       let n = new Date(exports);
-      L(require) && (N.push(module), P[module] = {
+      x(require) && (N.push(module), R[module] = {
         friendsSince: require
       })
     }
@@ -103,38 +103,38 @@ function x() {
     return (null != r ? r.communicationProbability : 0) - i
   });
   let t = 0;
-  for (let e of N) null != Chunk752048.Z.getUserAffinity(module) && Chunk752048.Z.getUserAffinity(module).dmProbability > S && exports < E && (R.add(module), exports++)
+  for (let e of N) null != Chunk752048.Z.getUserAffinity(module) && Chunk752048.Z.getUserAffinity(module).dmProbability > T && exports < E && (P.add(module), exports++)
 }
 
-function M(e) {
+function j(e) {
   return Math.round(s()().diff(e, "years", true))
 }
 
-function k() {
-  return Array.from(R).some(e => null == C.messageGiftIntentLastShownMap[e])
+function M() {
+  return Array.from(P).some(e => null == C.messageGiftIntentLastShownMap[e])
 }
 
-function j() {
-  N.length = 0, R.clear(), P = {}
+function k() {
+  N.length = 0, P.clear(), R = {}
 }
 
 function U() {
-  j()
+  k()
 }
 
 function G() {
-  C = A(), j()
+  C = A(), k()
 }
 
-function B() {
-  C.lastShownFriendsListGiftIntents = Array.from(R)
+function Z() {
+  C.lastShownFriendsListGiftIntents = Array.from(P)
 }
 
-function Z(e) {
+function B(e) {
   let {
     recipientUserId: t
   } = e;
-  W(t)
+  Y(t)
 }
 
 function F() {
@@ -149,14 +149,14 @@ function H(e) {
   let {
     recipientUserId: t
   } = e;
-  W(t)
+  Y(t)
 }
 
-function W(e) {
+function Y(e) {
   null == C.messageGiftIntentLastShownMap[e] && (C.messageGiftIntentLastShownMap[e] = Date.now())
 }
 
-function Y() {
+function W() {
   for (let e in C.messageGiftIntentLastShownMap) {
     let t = C.messageGiftIntentLastShownMap[module];
     Date.now() - exports > v && delete C.messageGiftIntentLastShownMap[module]
@@ -175,39 +175,39 @@ function q() {
   C.giftUnreadNotificationLastDismissedTimes = []
 }
 
-function X(e) {
+function Q(e) {
   let {
     total: t
   } = e;
   if (null == t) {
-    D = null, x();
+    w = null, L();
     return
   }
-  Q(t)
+  X(t)
 }
 
-function Q(e) {
-  j();
+function X(e) {
+  k();
   let {
     enabled: t
-  } = p.w.getConfig({
+  } = _.w.getConfig({
     location: "PremiumGiftingIntentStore generateFriendAnniversaries"
   });
   if (!t) return;
-  D = e;
-  let n = _.Z.getFriendIDs().filter(e => !_.Z.isIgnored(e));
+  w = e;
+  let n = p.Z.getFriendIDs().filter(e => !p.Z.isIgnored(e));
   a().sampleSize(n, e).forEach(e => {
-    let t = _.Z.getSince(e);
+    let t = p.Z.getSince(e);
     if (null != t) {
       let n = new Date(t);
-      N.push(e), P[e] = {
+      N.push(e), R[e] = {
         friendsSince: n
       }
     }
   });
   let r = 0;
   for (let e of n)
-    if (null == C.messageGiftIntentLastShownMap[e] && (R.add(e), ++r >= E)) break
+    if (null == C.messageGiftIntentLastShownMap[e] && (P.add(e), ++r >= E)) break
 }
 class J extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -215,7 +215,7 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
       var t;
       C.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, C.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), C.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap), C.giftUnreadNotificationLastDismissedTimes = Array.from(null != (t = e.giftUnreadNotificationLastDismissedTimes) ? t : [])
     }
-    this.syncWith([_.Z, d.Z, f.Z, u.Z], x), Y(), V()
+    this.syncWith([p.Z, d.Z, f.Z, u.Z], L), W(), V()
   }
   getState() {
     return C
@@ -228,31 +228,31 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
       userId: t
     } = e, {
       enabled: n
-    } = p.w.getConfig({
+    } = _.w.getConfig({
       location: "PremiumGiftingIntentStore isTopAffinityFriendAnniversary"
     });
-    return !!n && R.has(t) && null == C.messageGiftIntentLastShownMap[t]
+    return !!n && P.has(t) && null == C.messageGiftIntentLastShownMap[t]
   }
   canShowGiftUnreadNotification() {
     V();
     let e = C.giftUnreadNotificationLastDismissedTimes;
-    return !!k() && (0 === module.length || !(module.length >= T) && !(module.filter(e => Date.now() - e <= y).length >= I))
+    return !!M() && (0 === module.length || !(module.length >= I) && !(module.filter(e => Date.now() - e <= y).length >= S))
   }
   canShowFriendsTabBadge() {
-    return k()
+    return M()
   }
   getFriendAnniversaryYears(e) {
-    let t = P[e];
-    return null == t ? 0 : M(t.friendsSince)
+    let t = R[e];
+    return null == t ? 0 : j(t.friendsSince)
   }
   isGiftIntentMessageInCooldown(e) {
     return null != C.messageGiftIntentLastShownMap[e]
   }
   getDevToolTotalFriendAnniversaries() {
-    return D
+    return w
   }
 }
-m(J, "displayName", "PremiumGiftingIntentStore"), m(J, "persistKey", "PremiumGiftingIntentStore"), m(J, "migrations", [e => {
+h(J, "displayName", "PremiumGiftingIntentStore"), h(J, "persistKey", "PremiumGiftingIntentStore"), h(J, "migrations", [e => {
   var t, n;
   return null == e ? e : {
     friendsTabBadgeLastDismissedTime: null != (t = e.friendsTabBadgeLastDismissedTime) ? t : null,
@@ -271,12 +271,12 @@ m(J, "displayName", "PremiumGiftingIntentStore"), m(J, "persistKey", "PremiumGif
 let $ = new J(Chunk570140.Z, {
   CONNECTION_OPEN: U,
   LOGOUT: G,
-  MESSAGE_GIFT_INTENT_SHOWN: Z,
-  FRIENDS_LIST_GIFT_INTENTS_SHOWN: B,
+  MESSAGE_GIFT_INTENT_SHOWN: B,
+  FRIENDS_LIST_GIFT_INTENTS_SHOWN: Z,
   GIFT_UNREAD_NOTIFICATION_DISMISS: F,
   GIFT_INTENT_FLOW_PURCHASED_GIFT: H,
   DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: K,
   DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: z,
   DEV_TOOLS_GIFT_UNREAD_NOTIFICATION_COOLDOWN_RESET: q,
-  DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT: X
+  DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT: Q
 })

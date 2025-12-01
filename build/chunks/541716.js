@@ -2,7 +2,7 @@
 /** chunk id: 541716, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ie: () => P,
+  Ie: () => R,
   OW: () => c,
   gy: () => u
 });
@@ -163,7 +163,7 @@ let d = {
     showSlowmodeIndicator: true,
     showTypingIndicator: true
   },
-  _ = {
+  p = {
     analyticsName: "sidebar",
     attachments: true,
     autocomplete: {
@@ -215,7 +215,7 @@ let d = {
     showSlowmodeIndicator: true,
     showTypingIndicator: true
   },
-  p = {
+  _ = {
     analyticsName: "edit",
     autocomplete: {
       mentionSuggestions: true
@@ -243,7 +243,7 @@ let d = {
     },
     showCharacterCount: true
   },
-  h = {
+  m = {
     analyticsName: "forum",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -269,7 +269,7 @@ let d = {
     showSlowmodeIndicator: true,
     showTypingIndicator: true
   },
-  m = {
+  h = {
     analyticsName: "voice_channel_status",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -455,7 +455,7 @@ let d = {
     hideAccessoryBar: true,
     layout: 1
   },
-  I = {
+  S = {
     analyticsName: "user_profile_reply",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -479,7 +479,7 @@ let d = {
     },
     toolbarType: 2
   },
-  T = {
+  I = {
     analyticsName: "profile_bio_input",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -497,7 +497,7 @@ let d = {
     disableAutoFocus: true,
     showCharacterCount: true
   },
-  S = {
+  T = {
     analyticsName: "custom_gift_type",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -572,7 +572,7 @@ let d = {
       disableInlineCode: true
     }
   },
-  R = {
+  P = {
     analyticsName: "atomic_reator_reply_input",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -591,26 +591,26 @@ let d = {
     showCharacterCount: true,
     layout: 1
   },
-  P = {
+  R = {
     NORMAL: d,
     OVERLAY: f,
     OVERLAY_INLINE_REPLY: v,
-    SIDEBAR: _,
-    EDIT: p,
-    FORM: h,
-    VOICE_CHANNEL_STATUS: m,
+    SIDEBAR: p,
+    EDIT: _,
+    FORM: m,
+    VOICE_CHANNEL_STATUS: h,
     THREAD_CREATION: g,
     USER_PROFILE: O,
-    USER_PROFILE_REPLY: I,
-    PROFILE_BIO_INPUT: T,
-    CUSTOM_GIFT: S,
+    USER_PROFILE_REPLY: S,
+    PROFILE_BIO_INPUT: I,
+    CUSTOM_GIFT: T,
     RULES_INPUT: A,
     CREATE_FORUM_POST: b,
     CREATE_ANNOUNCEMENT_POST: E,
     CREATE_POLL: y,
     FORUM_CHANNEL_GUIDELINES: C,
     CHANNEL_TOPIC: N,
-    ATOMIC_REACTOR_REPLY_INPUT: R,
+    ATOMIC_REACTOR_REPLY_INPUT: P,
     FORWARD_MESSAGE_INPUT: {
       analyticsName: "forward_message_input",
       drafts: {

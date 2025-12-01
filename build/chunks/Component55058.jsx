@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk660770 = require("./660770.js"),
   Chunk947866 = require("./947866.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ let b = function(e) {
   let {
     isVisible: t,
     premiumSubscription: i,
-    churnDiscountOffer: h,
+    churnDiscountOffer: m,
     discountedPrice: g
   } = e, {
     analyticsLocations: b
@@ -76,7 +76,7 @@ let b = function(e) {
       let {
         PremiumBrandRefreshSubscriptionCancellationModal: e
       } = await n.e("26526").then(n.bind(n, 48813));
-      return t => (0, r.jsx)(e, E(m({}, t), {
+      return t => (0, r.jsx)(e, E(h({}, t), {
         premiumSubscription: i,
         analyticsLocations: b,
         initialStep: d.R.CONFIRM_DISCOUNT
@@ -84,31 +84,31 @@ let b = function(e) {
     })
   };
   return (0, r.jsx)(o.animated.div, {
-    className: a()(_.wrapper, {
-      [_.invisible]: !t
+    className: a()(p.wrapper, {
+      [p.invisible]: !t
     }),
     style: y,
     children: (0, r.jsxs)("div", {
-      className: _.innerWrapper,
+      className: p.innerWrapper,
       children: [(0, r.jsx)("img", {
         alt: "",
-        src: p,
-        className: _.nitroIcon
+        src: _,
+        className: p.nitroIcon
       }), (0, r.jsxs)("div", {
-        className: _.descriptionContainer,
+        className: p.descriptionContainer,
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-md/semibold",
           color: "text-primary",
           children: f.intl.format(f.t["3yZP0G"], {
-            percent: h.discount.amount
+            percent: m.discount.amount
           })
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
           children: f.intl.format(f.t["3Q4wCy"], {
-            numMonths: h.discount.user_usage_limit,
+            numMonths: m.discount.user_usage_limit,
             discountedPrice: g,
-            billingPeriod: (0, u.JP)(h.discount.user_usage_limit_interval)
+            billingPeriod: (0, u.JP)(m.discount.user_usage_limit_interval)
           })
         })]
       }), (0, r.jsx)(s.Button, {

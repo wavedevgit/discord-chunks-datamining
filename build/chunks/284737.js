@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   CO: () => f,
-  Rz: () => p,
-  S1: () => _,
+  Rz: () => _,
+  S1: () => p,
   T_: () => s,
   al: () => l,
   dx: () => u,
@@ -60,7 +60,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let t = (0, o.ZY)(e),
     n = e.document;
   i.Z.dispatch({
@@ -74,7 +74,7 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   i.Z.dispatch({
     type: "WINDOW_UNLOAD",
     windowId: (0, o.ZY)(e)

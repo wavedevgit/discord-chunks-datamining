@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  y: () => p
+  y: () => _
 }), require("./358797.js"), require("./388685.js"), require("./539854.js");
 var Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -28,7 +28,7 @@ let u = [],
     }
   });
 
-function _(e, t) {
+function p(e, t) {
   let n = null;
   return 0 === e ? function() {
     clearImmediate(n), n = setImmediate(t)
@@ -42,7 +42,7 @@ function _(e, t) {
     }, e))
   }
 }
-class p {
+class _ {
   static initialize() {
     d = true, u.forEach(e => e.initializeIfNeeded()), null != r && r()
   }
@@ -74,7 +74,7 @@ class p {
         i = () => {
           r !== l.Z.getChangeSentinel() && (r = l.Z.getChangeSentinel(), false !== t() && this.emitChange())
         };
-      i = _(null != n ? n : 0, i), e.forEach(e => e.addChangeListener(i))
+      i = p(null != n ? n : 0, i), e.forEach(e => e.addChangeListener(i))
     } else e.forEach(e => {
       e._syncWiths.push({
         func: t,
@@ -103,4 +103,4 @@ class p {
     }), c(this, "addChangeListener", this._changeCallbacks.add), c(this, "addConditionalChangeListener", this._changeCallbacks.addConditional), c(this, "removeChangeListener", this._changeCallbacks.remove), c(this, "addReactChangeListener", this._reactChangeCallbacks.add), c(this, "removeReactChangeListener", this._reactChangeCallbacks.remove), this._dispatcher = e, this._dispatchToken = this._dispatcher.createToken(), this.registerActionHandlers(null != t ? t : {}, n), u.push(this), d && this.initializeIfNeeded()
   }
 }
-c(p, "displayName", true), c(p, "initialized", f)
+c(_, "displayName", true), c(_, "initialized", f)

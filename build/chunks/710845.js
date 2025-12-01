@@ -13,10 +13,10 @@ let a = Date.now(),
   let u = Date.now(),
     d = ((u - a) / 1e3).toFixed(3),
     f = ((u - o) / 1e3).toFixed(3),
-    _ = "Σ:".concat(d, "s, Δ:").concat(f, "s");
+    p = "Σ:".concat(d, "s, Δ:").concat(f, "s");
   o = u, i.Hj({
     name: e,
-    timing: _
+    timing: p
   }, n, ...l), (0, r.Sm)(e, t, n, ...l)
 });
 let s = Chunk579092.Yd

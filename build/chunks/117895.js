@@ -11,11 +11,11 @@ var Chunk507604 = require("./507604.js"),
   u = Object.getOwnPropertyDescriptor,
   d = "enumerable",
   f = "configurable",
-  _ = "writable";
+  p = "writable";
 exports.f = Chunk507604 ? Chunk282108 ? function(e, t, n) {
-  if (o(e), t = s(t), o(n), "function" == typeof e && "prototype" === t && "value" in n && _ in n && !n[_]) {
+  if (o(e), t = s(t), o(n), "function" == typeof e && "prototype" === t && "value" in n && p in n && !n[p]) {
     var r = u(e, t);
-    r && r[_] && (e[t] = n.value, n = {
+    r && r[p] && (e[t] = n.value, n = {
       configurable: f in n ? n[f] : r[f],
       enumerable: d in n ? n[d] : r[d],
       writable: false

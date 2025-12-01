@@ -2,7 +2,7 @@
 /** chunk id: 134795, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,14 +17,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk808639 = require("./808639.js");
 
-function p(e) {
+function _(e) {
   let {
     showRemoveBannerButton: t,
     errors: n,
     onBannerChange: i,
-    guildId: p,
-    className: h,
-    disabled: m = false,
+    guildId: _,
+    className: m,
+    disabled: h = false,
     showPremiumIcon: g = true,
     isTryItOut: E = false,
     forcedDivider: b,
@@ -33,33 +33,33 @@ function p(e) {
     newestAnalyticsLocation: O
   } = (0, l.ZP)(), v = y ? s.gtL : o.zx;
   return (0, r.jsx)(u.Z, {
-    className: h,
+    className: m,
     title: f.intl.string(f.t.Vgdusv),
     showPremiumIcon: g,
     errors: n,
-    disabled: m,
+    disabled: h,
     forcedDivider: b,
     children: (0, r.jsxs)("div", {
-      className: _.buttonsContainer,
+      className: p.buttonsContainer,
       children: [(0, r.jsx)(v, {
         className: a()({
-          [_.buttonHighlighted]: y
+          [p.buttonHighlighted]: y
         }),
         size: o.zx.Sizes.SMALL,
         onClick: () => (0, c.$r)({
           uploadType: d.pC.BANNER,
           analyticsSource: O,
-          guildId: p,
+          guildId: _,
           isTryItOut: E
         }),
         children: f.intl.string(f.t.N0bC3P)
       }), t && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: _.removeButton,
+        className: p.removeButton,
         children: (0, r.jsx)(s.Button, {
           variant: "secondary",
           size: "sm",
-          text: null != p ? f.intl.string(f.t.jHlJNS) : f.intl.string(f.t.tT9n7D),
+          text: null != _ ? f.intl.string(f.t.jHlJNS) : f.intl.string(f.t.tT9n7D),
           onClick: () => i(null)
         })
       })]

@@ -2,7 +2,7 @@
 /** chunk id: 105862, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,13 +15,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk431048 = require("./431048.js");
 
-function _(e) {
+function p(e) {
   let {
     padding: t = false
   } = e, n = i.useCallback(() => {
     (0, o.Z)(s.Z.getAppsSupportURL(u.BhN.APPS_LEARN_MORE))
   }, []), {
-    trackSectionImpressionRef: _
+    trackSectionImpressionRef: p
   } = (0, c.Z)({
     sectionName: l.L3.NEW_TO_APPS,
     numItems: 1,
@@ -31,7 +31,7 @@ function _(e) {
     className: t ? f.containerPadding : true,
     children: (0, r.jsxs)("div", {
       ref: e => {
-        _.current = e
+        p.current = e
       },
       className: f.container,
       children: [(0, r.jsxs)("div", {

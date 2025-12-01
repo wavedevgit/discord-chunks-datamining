@@ -131,9 +131,9 @@ module.exports = function(e) {
       contains: []
     });
   c.contains.push(f), u.contains.push(d);
-  let _ = [n, l];
+  let p = [n, l];
   return [c, u, d, f].forEach(e => {
-    e.contains = e.contains.concat(_)
+    e.contains = e.contains.concat(p)
   }), {
     name: "Markdown",
     aliases: ["md", "mkdown", "mkd"],
@@ -142,7 +142,7 @@ module.exports = function(e) {
       variants: [{
         begin: "^#{1,6}",
         end: "$",
-        contains: _ = _.concat(c, u)
+        contains: p = p.concat(c, u)
       }, {
         begin: "(?=^.+?\\n[=-]{2,}$)",
         contains: [{
@@ -150,13 +150,13 @@ module.exports = function(e) {
         }, {
           begin: "^",
           end: "\\n",
-          contains: _
+          contains: p
         }]
       }]
     }, n, a, c, u, {
       className: "quote",
       begin: "^>\\s+",
-      contains: _,
+      contains: p,
       end: "$"
     }, i, r, l, o, {
       scope: "literal",

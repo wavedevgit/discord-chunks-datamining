@@ -48,14 +48,14 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {
+let p = {
     lastSeenNewlyAddedEmojiIds: {}
   },
-  p = _,
-  h = {};
+  _ = p,
+  m = {};
 
-function m() {
-  p = _, h = {}
+function h() {
+  _ = p, m = {}
 }
 
 function g(e) {
@@ -63,12 +63,12 @@ function g(e) {
   let {
     guildId: n,
     emojiId: r
-  } = e, i = null != (t = h[n]) ? t : p.lastSeenNewlyAddedEmojiIds[n];
-  null == i || 0 > l.default.compare(i.id, r) ? h[n] = {
+  } = e, i = null != (t = m[n]) ? t : _.lastSeenNewlyAddedEmojiIds[n];
+  null == i || 0 > l.default.compare(i.id, r) ? m[n] = {
     id: r,
     lastSeen: Date.now(),
     acknowledged: true
-  } : h[n] = f(u({}, i), {
+  } : m[n] = f(u({}, i), {
     acknowledged: true
   })
 }
@@ -78,8 +78,8 @@ function E(e) {
   let {
     guildId: n,
     emojiId: r
-  } = e, i = null != (t = h[n]) ? t : p.lastSeenNewlyAddedEmojiIds[n];
-  (null == i || 0 > l.default.compare(i.id, r)) && (h[n] = {
+  } = e, i = null != (t = m[n]) ? t : _.lastSeenNewlyAddedEmojiIds[n];
+  (null == i || 0 > l.default.compare(i.id, r)) && (m[n] = {
     id: r,
     lastSeen: Date.now(),
     acknowledged: false
@@ -87,21 +87,21 @@ function E(e) {
 }
 
 function b() {
-  for (let e in h) p.lastSeenNewlyAddedEmojiIds[module] = h[module]
+  for (let e in m) _.lastSeenNewlyAddedEmojiIds[module] = m[module]
 }
 
 function y() {
-  p = _, b()
+  _ = p, b()
 }
 class O extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    p = null != e ? e : _
+    _ = null != e ? e : p
   }
   getState() {
-    return p
+    return _
   }
   getLastSeenEmojiByGuild(e) {
-    return p.lastSeenNewlyAddedEmojiIds[e]
+    return _.lastSeenNewlyAddedEmojiIds[e]
   }
   isNewerThanLastSeen(e, t) {
     if (null == e || null == t) returnfalse;
@@ -129,7 +129,7 @@ c(O, "displayName", "NewlyAddedEmojiStore"), c(O, "persistKey", "NewlyAddedEmoji
   }
 }]);
 let v = new O(Chunk570140.Z, {
-  LOGOUT: m,
+  LOGOUT: h,
   NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED: g,
   NEWLY_ADDED_EMOJI_SEEN_PENDING: E,
   NEWLY_ADDED_EMOJI_SEEN_UPDATED: b,

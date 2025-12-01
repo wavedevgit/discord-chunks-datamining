@@ -18,7 +18,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -60,21 +60,21 @@ let b = "game_console_alert_modal",
   y = "game_console_ptt_alert_modal",
   O = {
     maybeShowPTTAlert(e) {
-      if (c.Z.getMode() !== _.pM4.PUSH_TO_TALK || (0, l.zu)(a.z.CONSOLE_PTT_DISABLE_ALERT)) return Promise.resolve();
+      if (c.Z.getMode() !== p.pM4.PUSH_TO_TALK || (0, l.zu)(a.z.CONSOLE_PTT_DISABLE_ALERT)) return Promise.resolve();
       let t = {
-        [_.ABu.XBOX]: p.intl.string(p.t.bVZ7vy),
-        [_.ABu.PLAYSTATION]: p.intl.string(p.t["6iqUsf"]),
-        [_.ABu.PLAYSTATION_STAGING]: p.intl.string(p.t["6iqUsf"])
+        [p.ABu.XBOX]: _.intl.string(_.t.bVZ7vy),
+        [p.ABu.PLAYSTATION]: _.intl.string(_.t["6iqUsf"]),
+        [p.ABu.PLAYSTATION_STAGING]: _.intl.string(_.t["6iqUsf"])
       } [e];
       return null == t ? Promise.resolve() : new Promise(e => {
         let n = () => {
             (0, l.Q3)(a.z.CONSOLE_PTT_DISABLE_ALERT), e()
           },
-          s = e => (0, r.jsx)(i.Modal, E(m({}, e), {
+          s = e => (0, r.jsx)(i.Modal, E(h({}, e), {
             title: t,
-            subtitle: p.intl.string(p.t.bL21zs),
+            subtitle: _.intl.string(_.t.bL21zs),
             actions: [{
-              text: p.intl.string(p.t.BddRzS),
+              text: _.intl.string(_.t.BddRzS),
               onClick: n
             }]
           }));
@@ -95,20 +95,20 @@ let b = "game_console_alert_modal",
         dismissCallback: () => (0, o.Mr)(b)
       });
 
-      function h() {
+      function m() {
         null != l && ((0, s.Z)({
           platformType: l
-        }), u.default.track(_.rMx.ACCOUNT_LINK_STEP, {
+        }), u.default.track(p.rMx.ACCOUNT_LINK_STEP, {
           previous_step: f.Lw,
           current_step: "desktop oauth",
           platform_type: l
         }))
       }
-      let g = e => (0, r.jsx)(i.Modal, E(m({}, e), {
+      let g = e => (0, r.jsx)(i.Modal, E(h({}, e), {
         title: t,
         actions: [{
-          text: p.intl.string(p.t.BddRzS),
-          onClick: h
+          text: _.intl.string(_.t.BddRzS),
+          onClick: m
         }],
         children: c
       }));

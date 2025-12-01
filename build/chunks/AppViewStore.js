@@ -2,7 +2,7 @@
 /** chunk id: 774343, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var r, i, a, o, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -14,7 +14,7 @@ var r, i, a, o, Chunk442837 = require("./442837.js"),
   Chunk55589 = require("./55589.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,19 +61,19 @@ function v(e) {
   if (null == t && null != n && !c.o.getConfig({
       location: "appviewstore"
     }).dmsTab) {
-    let e = h.Z5c.CHANNEL(h.ME, n);
+    let e = m.Z5c.CHANNEL(m.ME, n);
     if (e !== g) return g = e, true
   }
   returnfalse
 }
 
-function I(e) {
+function S(e) {
   let {
     channel: t
   } = e;
-  null == t.guild_id && null != t.id && null != g && g === h.Z5c.CHANNEL(h.ME, t.id) && (g = null)
+  null == t.guild_id && null != t.id && null != g && g === m.Z5c.CHANNEL(m.ME, t.id) && (g = null)
 }
-class T extends(o = Chunk442837.ZP.Store) {
+class I extends(o = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk896797.Z, Chunk55589.Z, Chunk944486.Z, Chunk430824.Z, Chunk592125.Z)
   }
@@ -81,12 +81,12 @@ class T extends(o = Chunk442837.ZP.Store) {
     return null != g ? g : Chunk896797.Z.fallbackRoute
   }
 }
-m(T, "displayName", "AppViewStore");
-let S = new T(Chunk570140.Z, {
+h(I, "displayName", "AppViewStore");
+let T = new I(Chunk570140.Z, {
   OVERLAY_INITIALIZE: E,
   APP_VIEW_SET_HOME_LINK: b,
   APPLICATION_STORE_LOCATION_CHANGE: O,
   APPLICATION_STORE_RESET_NAVIGATION: y,
   CHANNEL_SELECT: v,
-  CHANNEL_DELETE: I
+  CHANNEL_DELETE: S
 })

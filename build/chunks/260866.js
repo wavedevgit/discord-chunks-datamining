@@ -11,7 +11,7 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  $o: () => _,
+  $o: () => p,
   NE: () => d,
   P1: () => c,
   P2: () => f,
@@ -53,7 +53,7 @@ function f(e, t) {
     n || (e(...i), n = true, setTimeout(() => n = false, t))
   }
 }
-class _ {
+class p {
   get(e) {
     let t = this.handlers.get(e);
     return null == t && (t = this.makeHandler(e), this.handlers.set(e, t)), t

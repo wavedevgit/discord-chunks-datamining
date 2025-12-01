@@ -2,9 +2,9 @@
 /** chunk id: 359110, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Kh: () => _,
-  ad: () => p,
-  jd: () => h
+  Kh: () => p,
+  ad: () => _,
+  jd: () => m
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -37,7 +37,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   let n = l.Z.getChannel(e);
   if (null == n) return;
   let r = (0, s.e)(n);
@@ -46,7 +46,7 @@ function _(e, t) {
   }, t)), (null == t ? true : t.openTextInVoiceIfVoiceChannel) && n.isGuildVocal() && o.Z.updateChatOpen(n.id, true)
 }
 
-function p(e, t) {
+function _(e, t) {
   i()(null != e.parent_id, "Thread must have a parent ID.");
   let n = (0, s.e)(e);
   (0, c.uL)(u.Z5c.CHANNEL(n, e.id), f({
@@ -54,7 +54,7 @@ function p(e, t) {
   }, t))
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   let r = l.Z.getChannel(e);
   if (null == r) return;
   let i = (0, s.e)(r);

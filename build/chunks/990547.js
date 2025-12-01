@@ -11,11 +11,11 @@ require.r(exports), require.d(exports, {
   analyticsTrackingStoreMaker: () => Chunk699407.l,
   encodeProperties: () => Chunk947486.Z,
   extendSuperProperties: () => z,
-  getCampaignParams: () => L,
+  getCampaignParams: () => x,
   getDevice: () => U,
-  getOS: () => j,
-  getSuperProperties: () => X,
-  getSuperPropertiesBase64: () => Q,
+  getOS: () => k,
+  getSuperProperties: () => Q,
+  getSuperPropertiesBase64: () => X,
   isThrottled: () => K,
   trackMaker: () => q
 }), require("./35282.js"), require("./704826.js"), require("./413496.js"), require("./433524.js"), require("./388685.js");
@@ -46,7 +46,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,23 +70,23 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let A = "deviceProperties",
   C = "referralProperties",
   N = {},
-  R = {},
-  P = window.DiscordNative;
-if (null != P) {
-  let e, t = P.remoteApp.getVersion(),
-    n = P.process.platform,
-    i = P.os.release,
-    o = P.os.arch,
-    s = P.os.appArch,
-    l = P.remoteApp.getReleaseChannel(),
+  P = {},
+  R = window.DiscordNative;
+if (null != R) {
+  let e, t = R.remoteApp.getVersion(),
+    n = R.process.platform,
+    i = R.os.release,
+    o = R.os.arch,
+    s = R.os.appArch,
+    l = R.remoteApp.getReleaseChannel(),
     c = (0, Chunk627420.qf)();
   switch (require) {
     case "win32":
@@ -113,46 +113,46 @@ if (null != P) {
       has_client_mods: (0, Chunk903772.e)(),
       client_launch_id: Chunk923452.s
     }, (null == (a = d().name) ? true : a.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = d().ua || "", r.browser_version = d().version || ""), "linux" === require) {
-    let e = P.crashReporter.getMetadata();
+    let e = R.crashReporter.getMetadata();
     r.window_manager = module.wm, r.distro = module.distro, r.runtime_environment = module.runtime_environment, r.display_server = module.display_server
   } else "darwin" === require ? r.os_sdk_version = null == i ? true : i.split(".")[0] : "win32" === require && (r.os_sdk_version = null == i ? true : i.split(".")[2])
 }
-let D = "utm_source utm_medium utm_campaign utm_content utm_term".split(" ");
+let w = "utm_source utm_medium utm_campaign utm_content utm_term".split(" ");
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return "";
   t = t.replace(/[[]/, "\\[").replace(/[\]]/, "\\]");
   let n = new RegExp("[\\?&]".concat(t, "=([^&#]*)")).exec(e);
   return null === n || "string" != typeof n[1] && n[1].length ? "" : decodeURIComponent(n[1]).replace(/\+/g, " ")
 }
 
-function L(e) {
+function x(e) {
   let t = {};
-  return D.forEach(n => {
-    let r = w(e, n);
+  return w.forEach(n => {
+    let r = D(e, n);
     r.length > 0 && (t[n] = r)
   }), t
 }
 
-function x() {
+function L() {
   let e = document.referrer;
   return 0 === module.search("https?://(.*)google.([^/?]*)") ? "google" : 0 === module.search("https?://(.*)bing.com") ? "bing" : 0 === module.search("https?://(.*)yahoo.com") ? "yahoo" : 0 === module.search("https?://(.*)duckduckgo.com") ? "duckduckgo" : null
 }
 
-function M() {
+function j() {
   let e = {},
     t = document.referrer,
-    n = x(),
+    n = L(),
     r = "yahoo" !== require ? "q" : "p";
   if (null != require) {
     module.search_engine = require;
-    let i = w(exports, r);
+    let i = D(exports, r);
     i.length > 0 && (module.mp_keyword = i)
   }
   return module
 }
 
-function k() {
+function M() {
   let {
     userAgent: e,
     vendor: t = ""
@@ -174,7 +174,7 @@ function k() {
   else return ""
 }
 
-function j() {
+function k() {
   let {
     userAgent: e
   } = window.navigator;
@@ -204,14 +204,14 @@ function G() {
   return module.length >= 3 ? module[2] : ""
 }
 
-function B() {
+function Z() {
   let e = {};
-  return module.os = j(), module.browser = k(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
+  return module.os = k(), module.browser = M(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
 }
 
-function Z() {
+function B() {
   var e, t;
-  return S(I({}, {
+  return T(S({}, {
     browser_user_agent: window.navigator.userAgent || "",
     browser_version: d().version || ""
   }), {
@@ -221,7 +221,7 @@ function Z() {
 
 function F() {
   let e = {};
-  return module.referrer = document.referrer, module.referring_domain = G(), e = I({}, module, L(window.location.href), M())
+  return module.referrer = document.referrer, module.referring_domain = G(), e = S({}, module, x(window.location.href), j())
 }
 
 function V(e, t) {
@@ -231,29 +231,29 @@ function V(e, t) {
 
 function H() {
   let e = Chunk433517.K.get(A);
-  null == module && (e = B(), Chunk433517.K.set(A, module));
+  null == module && (e = Z(), Chunk433517.K.set(A, module));
   let t = Chunk433517.K.get(C);
   null == exports && (t = F(), Chunk433517.K.set(C, exports));
   let n = Chunk298444.x.get(C);
-  return null == require && (n = V(F(), "_current"), Chunk298444.x.set(C, require)), I({}, module, Z(), exports, require)
+  return null == require && (n = V(F(), "_current"), Chunk298444.x.set(C, require)), S({}, module, B(), exports, require)
 }
 
-function W() {
+function Y() {
   try {
     if (__OVERLAY__) return "OVERLAY"
   } catch (e) {}
   return null
 }
 
-function Y() {
+function W() {
   var e, t;
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("473819", 10);
+  let i = parseInt("473833", 10);
   isNaN(i) || (require.client_build_number = i);
-  let a = null == P || null == (e = (t = P.remoteApp).getBuildNumber) ? true : module.call(exports);
-  return isNaN(a) || (require.native_build_number = a), require.client_event_source = W(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require
+  let a = null == R || null == (e = (t = R.remoteApp).getBuildNumber) ? true : module.call(exports);
+  return isNaN(a) || (require.native_build_number = a), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require
 }
 
 function K(e) {
@@ -266,15 +266,15 @@ if (null == r) try {
 }
 
 function z(e) {
-  r = I({}, r, e), i = (0, E.Z)(r)
+  r = S({}, r, e), i = (0, E.Z)(r)
 }
-z(Y());
+z(W());
 let q = e => {
   let {
     analyticEventConfigs: t,
     dispatcher: r,
     TRACK_ACTION_NAME: i
-  } = e, a = (0, m.$)(r, i);
+  } = e, a = (0, h.$)(r, i);
   return function(e, r) {
     let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
     if (null != n.g.isServerRendering && true === n.g.isServerRendering) return Promise.resolve();
@@ -289,9 +289,9 @@ let q = e => {
         let t = [e, ...l.throttleKeys(o)].join("_");
         if (K(t) || "number" == typeof l.throttlePercent && Math.random() > l.throttlePercent) return Promise.resolve();
         if (l.deduplicate) {
-          let e = R[t];
+          let e = P[t];
           if (s()(e, o)) return Promise.resolve();
-          R[t] = o
+          P[t] = o
         }
         N[t] = Date.now() + l.throttlePeriod
       } else if ("throttlePercent" in l) {
@@ -301,10 +301,10 @@ let q = e => {
   }
 };
 
-function X() {
+function Q() {
   return r
 }
 
-function Q() {
+function X() {
   return i
 }

@@ -2,7 +2,7 @@
 /** chunk id: 940824, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,12 +15,12 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk698311 = require("./698311.js");
-let _ = e => {
+let p = e => {
   let {
     onClose: t
   } = e, {
     analyticsLocations: n
-  } = (0, s.ZP)(), _ = () => {
+  } = (0, s.ZP)(), p = () => {
     t(), (0, l.uL)(u.Z5c.COLLECTIBLES_SHOP), (0, c.mK)({
       analyticsSource: o.Z.PREMIUM_PAYMENT_MODAL,
       analyticsLocations: n
@@ -41,7 +41,7 @@ let _ = e => {
       children: d.intl.format(d.t.twSHte, {
         checkItOut: e => (0, r.jsx)(i.P3F, {
           className: f.link,
-          onClick: _,
+          onClick: p,
           children: e
         })
       })

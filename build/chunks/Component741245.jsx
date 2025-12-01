@@ -2,8 +2,8 @@
 /** chunk id: 741245, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Yk: () => I,
-  ZP: () => S
+  Yk: () => S,
+  ZP: () => T
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk513825 = require("./513825.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -88,10 +88,10 @@ let v = Object.freeze({
   FLASH_TIME_PERCENT: .72,
   FLASH_DURATION_PERCENT: .08
 });
-var I = function(e) {
+var S = function(e) {
   return e.PREMIUM_ACTIVATED = "PREMIUM_ACTIVATED", e.PREMIUM_UPDATED = "PREMIUM_UPDATED", e.PREMIUM_UPGRADED = "PREMIUM_UPGRADED", e.GUILD_BOOST_APPLIED = "GUILD_BOOST_APPLIED", e.PREMIUM_PAYMENT_STARTED = "PREMIUM_PAYMENT_STARTED", e
 }({});
-class T extends(r = Chunk473749.PureComponent) {
+class I extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.animate()
   }
@@ -342,20 +342,20 @@ class T extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "animation", new l.Z.Value(0))
+    super(...e), h(this, "animation", new l.Z.Value(0))
   }
 }
 
-function S(e) {
+function T(e) {
   var {
     theme: t
   } = e, n = y(e, ["theme"]);
   let r = (0, d.dQu)(c.Z.unsafe_rawColors.WHITE_500).hex(),
     a = (0, d.dQu)(c.Z.unsafe_rawColors.BRAND_500).hex(),
     o = (0, u.wj)(t) ? r : a;
-  return (0, i.jsx)(T, b(g({}, n), {
+  return (0, i.jsx)(I, b(g({}, n), {
     theme: t,
     flashColor: o
   }))
 }
-m(T, "Types", I), S.Types = I
+h(I, "Types", S), T.Types = S

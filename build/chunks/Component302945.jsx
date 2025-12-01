@@ -23,7 +23,7 @@ function f(e) {
     numFriends: t.length - 1
   }) : "", [t]);
   if (t.length <= 1) return null;
-  let _ = t.map((e, n) => (0, r.jsx)(l.O, {
+  let p = t.map((e, n) => (0, r.jsx)(l.O, {
     affinity: e,
     applyMask: n !== t.length - 1,
     size: c.EF.SIZE_20
@@ -32,7 +32,7 @@ function f(e) {
     className: o()(d.container, n),
     children: [(0, r.jsx)("div", {
       className: d.iconContainer,
-      children: _
+      children: p
     }), (0, r.jsx)("div", {
       className: d.textContainer,
       children: (0, r.jsx)(s.xvT, {

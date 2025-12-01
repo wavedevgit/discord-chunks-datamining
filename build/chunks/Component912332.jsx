@@ -2,7 +2,7 @@
 /** chunk id: 912332, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Np: () => _,
+  Np: () => p,
   l8: () => d,
   mc: () => f,
   so: () => u
@@ -59,7 +59,7 @@ function d(e) {
     initialSelectedDestinations: l = [],
     forwardOptions: d,
     onRequestSent: f,
-    customSendHandler: _
+    customSendHandler: p
   } = e;
   (0, a.Lb)(t.channel_id, t.id, o), (0, i.ZDy)(async () => {
     let {
@@ -70,7 +70,7 @@ function d(e) {
       initialSelectedDestinations: l,
       forwardOptions: d,
       onRequestSent: f,
-      customSendHandler: _
+      customSendHandler: p
     }))
   }, {
     modalKey: u
@@ -81,7 +81,7 @@ function f() {
   (0, Chunk481060.Mr3)(u)
 }
 
-function _(e) {
+function p(e) {
   let {
     message: t,
     failedDestinations: a,

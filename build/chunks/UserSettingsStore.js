@@ -16,7 +16,7 @@ var Chunk36645 = require("./36645.js"),
   Chunk957825 = require("./957825.js"),
   Chunk969943 = require("./969943.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,19 +25,19 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
-let m = (window.innerWidth - Chunk981631.PrS) / 2,
+let h = (window.innerWidth - Chunk981631.PrS) / 2,
   g = "standard",
   E = null;
 
@@ -47,7 +47,7 @@ function b() {
 let y = {};
 
 function O(e) {
-  y = h({}, y, e.settings)
+  y = m({}, y, e.settings)
 }
 
 function v() {
@@ -57,13 +57,13 @@ function v() {
   }
 }
 
-function I() {
+function S() {
   null == y && (y = {})
 }
 
-function T() {}
+function I() {}
 
-function S() {
+function T() {
   return y.darkSidebar = !y.darkSidebar, true
 }
 
@@ -110,7 +110,7 @@ class C extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   get postSidebarWidth() {
     var e;
-    return null != (e = y.postSidebarWidth) ? module : m
+    return null != (e = y.postSidebarWidth) ? module : h
   }
   get callChatSidebarWidth() {
     var e;
@@ -191,7 +191,7 @@ class C extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return null != (e = y.listDensity) ? module : Chunk969943.fx.COZY
   }
 }
-p(C, "displayName", "UnsyncedUserSettingsStore"), p(C, "persistKey", "UnsyncedUserSettingsStore"), p(C, "migrations", [() => {
+_(C, "displayName", "UnsyncedUserSettingsStore"), _(C, "persistKey", "UnsyncedUserSettingsStore"), _(C, "migrations", [() => {
   let e = Chunk433517.K.get("UserSettingsStore");
   return Chunk433517.K.remove("UserSettingsStore"), a().pick(module, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations", "showPlayAgain")
 }, e => {
@@ -200,7 +200,7 @@ p(C, "displayName", "UnsyncedUserSettingsStore"), p(C, "persistKey", "UnsyncedUs
 let N = new C(Chunk570140.Z, {
   UNSYNCED_USER_SETTINGS_UPDATE: O,
   LOGOUT: v,
-  LOGIN_SUCCESS: I,
-  REGISTER_SUCCESS: T,
-  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: S
+  LOGIN_SUCCESS: S,
+  REGISTER_SUCCESS: I,
+  ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: T
 })

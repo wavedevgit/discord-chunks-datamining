@@ -5,10 +5,10 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk28664 = require("./28664.jsx"),
+var Chunk692547 = require("./692547.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk529103 = require("./529103.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk497089 = require("./497089.js"),
   Chunk849862 = require("./849862.js"),
   Chunk626135 = require("./626135.js"),
@@ -20,25 +20,25 @@ function h(e) {
   let {
     closePopout: t
   } = e, n = (0, c.If)();
-  return (0, r.jsx)(i.u, {
+  return (0, r.jsx)(l.u, {
     asContainer: true,
     text: f.intl.string(f.t["lMR96+"]),
-    children: (0, r.jsxs)(l.P3F, {
+    children: (0, r.jsxs)(o.P3F, {
       "aria-label": "".concat(f.intl.string(f.t["lMR96+"]), ", ").concat(n),
       className: p.friendRequestsButton,
       onClick: () => {
         u.default.track(d.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: s.ud.FRIEND_REQUESTS_BUTTON_CLICK
-        }), o.Z.transitionToSection(d.pJs.PENDING, {
+        }), a.Z.transitionToSection(d.pJs.PENDING, {
           explicit: true
         }), t()
       },
-      children: [(0, r.jsx)(l.iFz, {
+      children: [(0, r.jsx)(o.iFz, {
         size: "xs",
         color: "currentColor"
-      }), (0, r.jsx)(l.mAB, {
+      }), (0, r.jsx)(o.mAB, {
         count: n,
-        color: a.Z.BACKGROUND_ACCENT
+        color: i.Z.colors.BACKGROUND_ACCENT.css
       })]
     })
   })

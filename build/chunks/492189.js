@@ -34,47 +34,47 @@ var Chunk98405 = require("./98405.js"),
   Chunk335024 = require("./335024.js"),
   Chunk199838 = require("./199838.js"),
   Chunk176682 = require("./176682.js"),
-  k = Chunk199838.get,
-  j = Chunk199838.set,
+  M = Chunk199838.get,
+  k = Chunk199838.set,
   U = Chunk199838.enforce,
   G = Chunk117895.f,
-  B = Chunk840991.f,
-  Z = Chunk127849.RangeError,
+  Z = Chunk840991.f,
+  B = Chunk127849.RangeError,
   F = Chunk391246.ArrayBuffer,
   V = F.prototype,
   H = Chunk391246.DataView,
-  W = Chunk840475.NATIVE_ARRAY_BUFFER_VIEWS,
-  Y = Chunk840475.TYPED_ARRAY_TAG,
+  Y = Chunk840475.NATIVE_ARRAY_BUFFER_VIEWS,
+  W = Chunk840475.TYPED_ARRAY_TAG,
   K = Chunk840475.TypedArray,
   z = Chunk840475.TypedArrayPrototype,
   q = Chunk840475.isTypedArray,
-  X = "BYTES_PER_ELEMENT",
-  Q = "Wrong length",
+  Q = "BYTES_PER_ELEMENT",
+  X = "Wrong length",
   J = function(e, t) {
-    P(e, t, {
+    R(e, t, {
       configurable: true,
       get: function() {
-        return k(this)[t]
+        return M(this)[t]
       }
     })
   },
   $ = function(e) {
     var t;
-    return T(V, e) || "ArrayBuffer" === (t = y(e)) || "SharedArrayBuffer" === t
+    return I(V, e) || "ArrayBuffer" === (t = y(e)) || "SharedArrayBuffer" === t
   },
   ee = function(e, t) {
-    return q(e) && !v(t) && t in e && _(+t) && t >= 0
+    return q(e) && !v(t) && t in e && p(+t) && t >= 0
   },
   et = function(e, t) {
-    return ee(e, t = E(t)) ? d(2, e[t]) : B(e, t)
+    return ee(e, t = E(t)) ? d(2, e[t]) : Z(e, t)
   },
   en = function(e, t, n) {
     return ee(e, t = E(t)) && O(n) && b(n, "value") && !b(n, "get") && !b(n, "set") && !n.configurable && (!b(n, "writable") || n.writable) && (!b(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : G(e, t, n)
   };
-Chunk507604 ? (W || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLength"), J(z, "length")), Chunk98405({
+Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z, "byteOffset"), J(z, "byteLength"), J(z, "length")), Chunk98405({
   target: "Object",
   stat: true,
-  forced: !W
+  forced: !Y
 }, {
   getOwnPropertyDescriptor: et,
   defineProperty: en
@@ -83,63 +83,63 @@ Chunk507604 ? (W || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
     l = e + (n ? "Clamped" : "") + "Array",
     c = "get" + e,
     d = "set" + e,
-    _ = i[l],
-    E = _,
+    p = i[l],
+    E = p,
     b = E && E.prototype,
     y = {},
     v = function(e, t) {
-      var n = k(e);
+      var n = M(e);
       return n.view[c](t * o + n.byteOffset, true)
     },
-    T = function(e, t, r) {
-      var i = k(e);
+    I = function(e, t, r) {
+      var i = M(e);
       i.view[d](t * o + i.byteOffset, n ? g(r) : r, true)
     },
-    P = function(e, t) {
+    R = function(e, t) {
       G(e, t, {
         get: function() {
           return v(this, t)
         },
         set: function(e) {
-          return T(this, t, e)
+          return I(this, t, e)
         },
         enumerable: true
       })
     };
-  W ? s && (E = t(function(e, t, n, r) {
-    return u(e, b), M(function() {
-      return O(t) ? $(t) ? true !== r ? new _(t, m(n, o), r) : true !== n ? new _(t, m(n, o)) : new _(t) : q(t) ? L(E, t) : a(C, E, t) : new _(h(t))
+  Y ? s && (E = t(function(e, t, n, r) {
+    return u(e, b), j(function() {
+      return O(t) ? $(t) ? true !== r ? new p(t, h(n, o), r) : true !== n ? new p(t, h(n, o)) : new p(t) : q(t) ? x(E, t) : a(C, E, t) : new p(m(t))
     }(), e, E)
-  }), S && S(E, K), N(A(_), function(e) {
-    e in E || f(E, e, _[e])
+  }), T && T(E, K), N(A(p), function(e) {
+    e in E || f(E, e, p[e])
   }), E.prototype = b) : (E = t(function(e, t, n, r) {
     u(e, b);
     var i, s, l, c = 0,
       d = 0;
     if (O(t))
       if ($(t)) {
-        i = t, d = m(n, o);
+        i = t, d = h(n, o);
         var f = t.byteLength;
         if (true === r) {
-          if (f % o || (s = f - d) < 0) throw new Z(Q)
-        } else if ((s = p(r) * o) + d > f) throw new Z(Q);
+          if (f % o || (s = f - d) < 0) throw new B(X)
+        } else if ((s = _(r) * o) + d > f) throw new B(X);
         l = s / o
-      } else if (q(t)) return L(E, t);
+      } else if (q(t)) return x(E, t);
     else return a(C, E, t);
-    else i = new F(s = (l = h(t)) * o);
-    for (j(e, {
+    else i = new F(s = (l = m(t)) * o);
+    for (k(e, {
         buffer: i,
         byteOffset: d,
         byteLength: s,
         length: l,
         view: new H(i)
-      }); c < l;) P(e, c++)
-  }), S && S(E, K), b = E.prototype = I(z)), b.constructor !== E && f(b, "constructor", E), U(b).TypedArrayConstructor = E, Y && f(b, Y, l);
-  var D = E !== _;
+      }); c < l;) R(e, c++)
+  }), T && T(E, K), b = E.prototype = S(z)), b.constructor !== E && f(b, "constructor", E), U(b).TypedArrayConstructor = E, W && f(b, W, l);
+  var w = E !== p;
   y[l] = E, r({
     global: true,
     constructor: true,
-    forced: D,
-    sham: !W
-  }, y), X in E || f(E, X, o), X in b || f(b, X, o), R(l)
+    forced: w,
+    sham: !Y
+  }, y), Q in E || f(E, Q, o), Q in b || f(b, Q, o), P(l)
 }) : module.exports = function() {}

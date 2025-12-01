@@ -7,8 +7,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk276952 = require("./276952.jsx"),
   Chunk682662 = require("./682662.jsx"),
   Chunk178088 = require("./178088.jsx"),
@@ -59,13 +59,13 @@ function E(e) {
       isSelected: e
     });
     return t === g.jP.LEGACY ? {
-      badge: i ? (0, r.jsx)(a.fWl, {
+      badge: i ? (0, r.jsx)(s.fWl, {
         style: {
           height: O.zw,
           width: O.zw,
           position: "relative"
         },
-        color: s.Z.STATUS_DANGER
+        color: a.Z.colors.STATUS_DANGER.css
       }) : null,
       unreadChannelsCount: 0,
       badgeDimensions: {
@@ -77,7 +77,7 @@ function E(e) {
       unreadChannelsCount: n.length,
       badgeDimensions: o
     }
-  }(P), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([p.Z], () => p.Z.getChannelId()), D = i.useMemo(() => {
+  }(P), A = N === g.jP.LEGACY ? s.xx7 : s.Dkj, R = (0, o.e7)([p.Z], () => p.Z.getChannelId()), D = i.useMemo(() => {
     if (N === g.jP.SIDEBAR) return v.Z5c.CHANNEL(v.STv, R)
   }, [N, R]);
   return (0, r.jsxs)(u.H, {
@@ -89,11 +89,11 @@ function E(e) {
       className: x.pill,
       disabled: N === g.jP.LEGACY
     }), (0, r.jsx)(y.Z, {
-      children: (0, r.jsx)(a.aRk, {
+      children: (0, r.jsx)(s.aRk, {
         selected: P || E,
         lowerBadge: Z,
         lowerBadgeSize: w,
-        children: (0, r.jsx)(a.LYs, (t = function(e) {
+        children: (0, r.jsx)(s.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);

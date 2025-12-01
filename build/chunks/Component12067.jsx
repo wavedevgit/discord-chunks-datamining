@@ -24,7 +24,7 @@ var Chunk95015 = require("./95015.js"),
 function E(e) {
   let {
     message: t
-  } = (0, m.CJ)(), n = (0, a.e7)([p.Z], () => p.Z.getChannel(null == t ? true : t.channel_id)), {
+  } = (0, h.CJ)(), n = (0, a.e7)([_.Z], () => _.Z.getChannel(null == t ? true : t.channel_id)), {
     shouldHideMediaOptions: E,
     enabledContentHarmTypeFlags: b,
     gifAutoPlay: y,
@@ -32,11 +32,11 @@ function E(e) {
     getOnMediaItemContextMenu: v
   } = (0, f.c)();
   if (null == t || null == n) return null;
-  let I = e.items.map(e => (0, s.ze)(e.media, t)).filter(e => "INVALID" !== e.type),
+  let S = e.items.map(e => (0, s.ze)(e.media, t)).filter(e => "INVALID" !== e.type),
     {
-      srcToOnClickOverride: T,
-      srcToHandlePreloadImage: S
-    } = I.length > 1 ? (0, l.G)(I, {
+      srcToOnClickOverride: I,
+      srcToHandlePreloadImage: T
+    } = S.length > 1 ? (0, l.G)(S, {
       shouldHideMediaOptions: E,
       enabledContentHarmTypeFlags: b
     }, "Media Mosaic") : {
@@ -81,14 +81,14 @@ function E(e) {
         canRemoveItem: false,
         onRemoveItem: g.dG4
       },
-      c = (0, h.q)({
+      c = (0, m.q)({
         proxyURL: r.proxyUrl,
         url: r.url
       });
-    return c in T && (l.onClick = T[c], l.handlePreloadImage = S[c]), l
+    return c in I && (l.onClick = I[c], l.handlePreloadImage = T[c]), l
   });
   return (0, r.jsx)("div", {
-    children: (0, r.jsx)(_.Z, {
+    children: (0, r.jsx)(p.Z, {
       items: C,
       isInAppComponentsV2: true
     })

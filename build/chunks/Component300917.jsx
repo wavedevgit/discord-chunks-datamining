@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   B: () => g,
-  QuestRewardModalUnverified: () => m
+  QuestRewardModalUnverified: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk654071 = require("./654071.js"),
   Chunk800010 = require("./800010.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,36 +26,36 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e) {
+function h(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, p = (0, o.e7)([c.default], () => {
+  } = e, _ = (0, o.e7)([c.default], () => {
     var e;
     return null == (e = c.default.getCurrentUser()) ? true : e.email
-  }), [h, m] = i.useState({
+  }), [m, h] = i.useState({
     status: "unknown"
   });
   i.useEffect(() => {
-    m({
+    h({
       status: "loading"
-    }), l.Z.verifyResend().then(() => m({
+    }), l.Z.verifyResend().then(() => h({
       status: "success"
     }), e => {
-      m({
+      h({
         status: "error"
       }), (0, u.ys)(e, {
         tags: {
@@ -64,25 +64,25 @@ function m(e) {
       })
     })
   }, []);
-  let g = "error" === h.status ? d.intl.string(d.t.vjying) : "success" === h.status ? d.intl.format(d.t.qP5xYc, {
-    emailAddress: p,
-    emailAddressLink: "mailto:".concat(p)
+  let g = "error" === m.status ? d.intl.string(d.t.vjying) : "success" === m.status ? d.intl.format(d.t.qP5xYc, {
+    emailAddress: _,
+    emailAddressLink: "mailto:".concat(_)
   }) : true;
   return (0, r.jsxs)(a.ExpressiveModal, {
     transitionState: t,
     onClose: n,
-    graphic: "loading" === h.status ? true : {
+    graphic: "loading" === m.status ? true : {
       type: "image",
-      src: _
+      src: p
     },
-    title: "loading" === h.status ? true : d.intl.string(d.t.c8eASM),
+    title: "loading" === m.status ? true : d.intl.string(d.t.c8eASM),
     subtitle: g,
-    actions: "loading" === h.status ? true : [{
+    actions: "loading" === m.status ? true : [{
       variant: "secondary",
       text: d.intl.string(d.t.cpT0Cq),
       onClick: n
     }],
-    children: ["loading" === h.status && (0, r.jsx)(s.$jN, {}), "success" === h.status && (0, r.jsxs)("div", {
+    children: ["loading" === m.status && (0, r.jsx)(s.$jN, {}), "success" === m.status && (0, r.jsxs)("div", {
       className: f.helper,
       children: [(0, r.jsx)(s.d3s, {
         size: "xs",
@@ -102,6 +102,6 @@ function g() {
     let {
       QuestRewardModalUnverified: e
     } = await Promise.resolve().then(require.bind(require, 300917));
-    return t => (0, r.jsx)(e, h({}, t))
+    return t => (0, r.jsx)(e, m({}, t))
   })
 }

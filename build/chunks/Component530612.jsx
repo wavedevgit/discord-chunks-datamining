@@ -43,12 +43,12 @@ function f(e) {
     onChange: u,
     disabled: f
   } = e, {
-    avatarSrc: _,
-    eventHandlers: p
+    avatarSrc: p,
+    eventHandlers: _
   } = (0, l.Z)({
     userId: null == n ? true : n.id,
     size: s.EFr.SIZE_32
-  }), h = null != (t = n.globalName) ? t : n.username;
+  }), m = null != (t = n.globalName) ? t : n.username;
   return (0, r.jsxs)("div", {
     className: c.container,
     children: [(0, r.jsx)("div", {
@@ -57,17 +57,17 @@ function f(e) {
         className: a()({
           [c.muted]: f
         }),
-        src: _,
-        "aria-label": h,
+        src: p,
+        "aria-label": m,
         size: s.EFr.SIZE_32
-      }, p))
+      }, _))
     }), (0, r.jsxs)("div", {
       className: c.usernameContainer,
       children: [(0, r.jsx)(s.Text, {
         className: c.userName,
         color: f ? "text-muted" : "text-default",
         variant: "text-md/semibold",
-        children: h
+        children: m
       }), (0, r.jsx)(s.Text, {
         className: c.userName,
         color: f ? "text-muted" : "text-secondary",

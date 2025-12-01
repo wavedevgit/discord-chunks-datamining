@@ -13,11 +13,11 @@ function r(e) {
     communicationDisabled: s,
     isActiveChannelOrUnarchivableThread: l,
     isAutomodQuarantined: c
-  } = e, u = t.isPrivate(), d = t.isSystemDM(), f = (true === i || u) && !d && l, _ = (n || u) && l, p = a || o || !_ || true === s || true === c;
+  } = e, u = t.isPrivate(), d = t.isSystemDM(), f = (true === i || u) && !d && l, p = (n || u) && l, _ = a || o || !p || true === s || true === c;
   return {
     disableReactionReads: !r,
-    disableReactionCreates: a || o || !_ || !f,
-    disableReactionUpdates: p
+    disableReactionCreates: a || o || !p || !f,
+    disableReactionUpdates: _
   }
 }
 require.d(exports, {

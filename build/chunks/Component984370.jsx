@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   O: () => N,
-  Z: () => w
+  Z: () => D
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -35,7 +35,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,8 +59,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -83,34 +83,34 @@ function C(e, t) {
   return i
 }
 async function N(e) {
-  if (!e && (0, m.isMac)() && m.isPlatformEmbedded) {
+  if (!e && (0, h.isMac)() && h.isPlatformEmbedded) {
     var t, n, r;
     let e = null != (r = await (null == (t = (n = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) ? true : t.call(n))) ? r : "Maximize";
     "Minimize" === e ? g.ZP.minimize() : "Maximize" === e && g.ZP.maximize()
   }
 }
 
-function R(e) {
+function P(e) {
   let {
     children: t,
     className: n,
     channelId: s,
     channelType: l,
-    guildId: m,
+    guildId: h,
     innerClassname: g,
     transparent: v = false,
-    hidden: I = false,
-    toolbar: T,
-    mobileToolbar: S,
+    hidden: S = false,
+    toolbar: I,
+    mobileToolbar: T,
     "aria-label": A,
     "aria-labelledby": C,
-    scrollable: R,
-    role: P,
-    hideSearch: D,
-    showDivider: w,
-    disableDoubleClick: L
-  } = e, x = null == s || (0, y.AB)(s) ? null : s, M = (0, a.e7)([h.Z], () => h.Z.isInChannel(x) || false), k = (0, a.e7)([c.Z], () => null != x && c.Z.getParticipantsListOpen(x)), {
-    enabled: j,
+    scrollable: P,
+    role: R,
+    hideSearch: w,
+    showDivider: D,
+    disableDoubleClick: x
+  } = e, L = null == s || (0, y.AB)(s) ? null : s, j = (0, a.e7)([m.Z], () => m.Z.isInChannel(L) || false), M = (0, a.e7)([c.Z], () => null != L && c.Z.getParticipantsListOpen(L)), {
+    enabled: k,
     inInbox: U
   } = d.Z.useExperiment({
     location: "HeaderBar"
@@ -120,18 +120,18 @@ function R(e) {
     location: "HeaderBar"
   });
 
-  function B() {
-    if (null == T) return null;
-    let e = null != s && !D;
-    return i.tq ? S : (0, r.jsxs)(r.Fragment, {
-      children: [T, e && !(0, y.AB)(s) ? (0, r.jsx)(_.ZP, {
-        guildId: m,
+  function Z() {
+    if (null == I) return null;
+    let e = null != s && !w;
+    return i.tq ? T : (0, r.jsxs)(r.Fragment, {
+      children: [I, e && !(0, y.AB)(s) ? (0, r.jsx)(p.ZP, {
+        guildId: h,
         channelId: s,
         className: O.search
-      }, null != m ? m : s) : null, w && (0, r.jsx)(E.ZP.Divider, {}), j && !U ? (0, r.jsx)(f.Z, {}) : null, G && M && null != x && !k && l === b.d4z.GROUP_DM && (0, r.jsxs)("div", {
+      }, null != h ? h : s) : null, D && (0, r.jsx)(E.ZP.Divider, {}), k && !U ? (0, r.jsx)(f.Z, {}) : null, G && j && null != L && !M && l === b.d4z.GROUP_DM && (0, r.jsxs)("div", {
         className: O.controlButtonWrapper,
-        children: [(0, r.jsx)(E.ZP.Divider, {}), (0, r.jsx)(p.Z, {
-          onClick: () => o.Z.toggleParticipantsList(x, !k)
+        children: [(0, r.jsx)(E.ZP.Divider, {}), (0, r.jsx)(_.Z, {
+          onClick: () => o.Z.toggleParticipantsList(L, !M)
         })]
       })]
     })
@@ -139,19 +139,19 @@ function R(e) {
   return (0, r.jsx)(E.ZP, {
     className: n,
     innerClassName: g,
-    toolbar: B(),
+    toolbar: Z(),
     transparent: v,
-    hidden: I,
-    onDoubleClick: () => N(L),
+    hidden: S,
+    onDoubleClick: () => N(x),
     "aria-label": A,
     "aria-labelledby": C,
-    role: P,
-    scrollable: R,
+    role: R,
+    scrollable: P,
     children: t
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     children: t,
     className: n,
@@ -170,7 +170,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   var {
     isAuthenticated: t = true
   } = e, n = A(e, ["isAuthenticated"]);
@@ -179,12 +179,12 @@ function D(e) {
   } = (0, l.ZP)(s.Z.HEADER_BAR);
   return (0, r.jsx)(l.Gt, {
     value: i,
-    children: t ? (0, r.jsx)(R, S(I({}, n), {
+    children: t ? (0, r.jsx)(P, T(S({}, n), {
       className: n.className
-    })) : (0, r.jsx)(P, S(I({}, n), {
+    })) : (0, r.jsx)(R, T(S({}, n), {
       className: n.className
     }))
   })
 }
-D.Title = Chunk665149.ZP.Title, D.Icon = Chunk665149.ZP.Icon, D.ChannelIcon = Chunk665149.ZP.ChannelIcon, D.Divider = Chunk665149.ZP.Divider, D.Caret = Chunk665149.ZP.Caret;
-let w = D
+w.Title = Chunk665149.ZP.Title, w.Icon = Chunk665149.ZP.Icon, w.ChannelIcon = Chunk665149.ZP.ChannelIcon, w.Divider = Chunk665149.ZP.Divider, w.Caret = Chunk665149.ZP.Caret;
+let D = w

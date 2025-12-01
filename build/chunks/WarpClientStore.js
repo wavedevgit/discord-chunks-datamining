@@ -14,7 +14,7 @@ var r, Chunk818710 = require("./818710.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,18 +22,18 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = 10,
-  h = {
+let _ = 10,
+  m = {
     status: ""
   },
-  m = [],
+  h = [],
   g = ["discord.com", "discordapp.com", "discordapp.net", "dl.discordapp.net", "discordcdn.com", "discord.gg", "discord.media"];
 class E extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.updateState(), this.addListener()
   }
   logEvent(e) {
-    "status" in e && "string" == typeof e.status && (h = e), m = [...m.slice(m.length < p ? 0 : 1, p), e], this.emitChange()
+    "status" in e && "string" == typeof e.status && (m = e), h = [...h.slice(h.length < _ ? 0 : 1, _), e], this.emitChange()
   }
   async updateState() {
     try {
@@ -124,10 +124,10 @@ class E extends(r = Chunk442837.ZP.Store) {
     } catch (e) {}
   }
   get state() {
-    return h
+    return m
   }
   get log() {
-    return m
+    return h
   }
   get clientEnabled() {
     return (0, Chunk818710.nI)() && Chunk299886.H.getConfig({
@@ -135,10 +135,10 @@ class E extends(r = Chunk442837.ZP.Store) {
     }).enabled
   }
   get enabled() {
-    return "Connected" === h.status || this.connecting
+    return "Connected" === m.status || this.connecting
   }
   get connecting() {
-    return "Configuring" === h.status || "Connecting" === h.status || "ConnectCommandSent" === h.status || "Installing" === h.status || "Installed" === h.status
+    return "Configuring" === m.status || "Connecting" === m.status || "ConnectCommandSent" === m.status || "Installing" === m.status || "Installed" === m.status
   }
   async connect() {
     if (this.clientEnabled) {
@@ -160,7 +160,7 @@ class E extends(r = Chunk442837.ZP.Store) {
   async disconnect() {
     if (this.clientEnabled) {
       let e = this.runCommand("disconnect");
-      return h = {
+      return m = {
         status: "DisconnectCommandSent"
       }, await module
     }
@@ -172,5 +172,5 @@ class E extends(r = Chunk442837.ZP.Store) {
     }), await this.configureExceptions(), await this.configureMode(), await this.updateState(), true
   }
 }
-_(E, "displayName", "WarpClientStore");
+p(E, "displayName", "WarpClientStore");
 let b = new E(Chunk570140.Z, {})

@@ -19,22 +19,22 @@ let f = e => {
     isHighlighted: n,
     isPurchased: a,
     removeSetHeight: f = false,
-    withScaleAnimation: _ = false,
-    delayProfileEffectIntro: p = false
-  } = e, [h, m] = i.useState(true);
+    withScaleAnimation: p = false,
+    delayProfileEffectIntro: _ = false
+  } = e, [m, h] = i.useState(true);
   return (i.useEffect(() => {
-    if (true !== _) m(false);
+    if (true !== p) h(false);
     else {
       let e = setTimeout(() => {
-        m(false)
+        h(false)
       }, s.JH);
       return () => {
         clearTimeout(e)
       }
     }
-  }, [_]), null == t) ? null : (0, r.jsxs)("div", {
+  }, [p]), null == t) ? null : (0, r.jsxs)("div", {
     className: o()(u.previewContainer, {
-      [u.previewContainerAnimation]: _,
+      [u.previewContainerAnimation]: p,
       [u.previewContainerSetHeight]: !f
     }),
     children: [(0, r.jsx)("img", {
@@ -42,18 +42,18 @@ let f = e => {
       alt: " ",
       className: u.preview,
       "aria-hidden": true
-    }), !h && (0, r.jsx)("div", {
+    }), !m && (0, r.jsx)("div", {
       className: a ? u.purchasedEffect : true,
       children: (0, r.jsx)(c.Z, {
         skuId: t,
         useThumbnail: true,
-        autoPlay: _,
+        autoPlay: p,
         restartMethod: l.Q.FromStart,
         resetOnHover: true,
         isHovering: n,
         useOpacityOnHover: false,
         urlQueryString: "ProfileEffectShopPreview",
-        delayIntro: p,
+        delayIntro: _,
         shopPreview: true
       })
     })]

@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk65448 = require("./65448.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -78,34 +78,34 @@ function O(e, t) {
 function v(e) {
   let {
     invite: t
-  } = e, n = i.useMemo(() => "invite-roles-".concat((0, a.Z)()), []), m = (0, o.ZP)({
+  } = e, n = i.useMemo(() => "invite-roles-".concat((0, a.Z)()), []), h = (0, o.ZP)({
     id: n,
     isEnabled: true,
-    scrollToStart: _.Cyb,
-    scrollToEnd: _.Cyb,
+    scrollToStart: p.Cyb,
+    scrollToEnd: p.Cyb,
     wrap: true
   }), E = (0, l.e7)([f.Z], () => null == t.guild || null == t.roles || 0 === t.roles.length ? [] : t.roles.map(e => f.Z.getRole(t.guild.id, e.id)).filter(e => null != e).sort(d.Z), [t]);
   if (0 === E.length) return null;
   let O = E.length,
-    v = p.intl.formatToPlainString(p.t.PCs0oo, {
+    v = _.intl.formatToPlainString(_.t.PCs0oo, {
       numRoles: O
     });
   return (0, r.jsx)(s.bG, {
-    navigator: m,
+    navigator: h,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
         var {
           ref: n
         } = e, i = y(e, ["ref"]);
         return (0, r.jsxs)("div", {
-          className: h.root,
+          className: m.root,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: "text-default",
-            className: h.rolesHeading,
-            children: p.intl.string(p.t.stcSfI)
+            className: m.rolesHeading,
+            children: _.intl.string(_.t.stcSfI)
           }), (0, r.jsx)("div", b(g({
-            className: h.rolesList,
+            className: m.rolesList,
             "aria-label": v,
             ref: n
           }, i), {

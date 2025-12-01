@@ -29,28 +29,28 @@ let v = e => {
     guildId: n,
     channel: a,
     shouldTrackUpsellViewed: v,
-    setTrackedUpsellViewed: I
+    setTrackedUpsellViewed: S
   } = e, {
-    location: T
+    location: I
   } = (0, c.O)(), {
-    analyticsLocations: S
-  } = (0, d.ZP)(), A = (0, s.e7)([m.Z], () => m.Z.getGuild(n)), {
+    analyticsLocations: T
+  } = (0, d.ZP)(), A = (0, s.e7)([h.Z], () => h.Z.getGuild(n)), {
     canManageAllExpressions: C
-  } = (0, h.XJ)(A), N = null != A && 0 === (0, g.A3)(A.premiumTier) && !A.features.has(E.GuildFeatures.MORE_STICKERS);
+  } = (0, m.XJ)(A), N = null != A && 0 === (0, g.A3)(A.premiumTier) && !A.features.has(E.GuildFeatures.MORE_STICKERS);
   if (i.useEffect(() => {
       C && N && v && ((0, u.yw)(E.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
-        location: T,
+        location: I,
         guild_id: null == A ? true : A.id,
         channel_id: null == a ? true : a.id,
         type: "Expression Picker Inline Sticker Upsell",
-        location_stack: S
-      }), I(true))
-    }, [N, A, a, T, v, I, S, C]), null == A || !C) return null;
+        location_stack: T
+      }), S(true))
+    }, [N, A, a, I, v, S, T, C]), null == A || !C) return null;
   if (N) {
     let e = () => {
-      (0, _.Z)({
-        analyticsLocations: S,
-        analyticsSourceLocation: T,
+      (0, p.Z)({
+        analyticsLocations: T,
+        analyticsSourceLocation: I,
         guild: A,
         perks: (0, b.hC)()
       })
@@ -76,7 +76,7 @@ let v = e => {
     })
   } {
     let e = () => {
-      (0, f._Q)(), p.Z.open(n, E.pNK.STICKERS, T)
+      (0, f._Q)(), _.Z.open(n, E.pNK.STICKERS, I)
     };
     return (0, r.jsxs)("div", {
       className: o()(O.upsell, t),

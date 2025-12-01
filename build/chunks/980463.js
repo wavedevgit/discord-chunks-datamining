@@ -2,11 +2,11 @@
 /** chunk id: 980463, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gq: () => _,
+  Gq: () => p,
   SN: () => g,
-  gA: () => p,
-  qc: () => h,
-  zI: () => m
+  gA: () => _,
+  qc: () => m,
+  zI: () => h
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk343817 = require("./343817.js"),
@@ -21,7 +21,7 @@ let f = {
     [Chunk317951.D1]: Chunk981631.ANM.FETCH_MESSAGE_CONFETTI_ENTITLEMENT,
     [Chunk317951.FX]: Chunk981631.ANM.FETCH_HD_STREAMING_ENTITLEMENT
   },
-  _ = async e => {
+  p = async e => {
     a.Z.dispatch({
       type: "CONSUMABLES_PRICE_FETCH_STARTED",
       skuId: e
@@ -51,7 +51,7 @@ let f = {
         skuId: e
       }), new i.Hx(t)
     }
-  }, p = async e => {
+  }, _ = async e => {
     if (a.Z.dispatch({
         type: "CONSUMABLES_ENTITLEMENT_FETCH_STARTED",
         skuId: e
@@ -78,14 +78,14 @@ let f = {
         skuId: e
       }), new i.Hx(t)
     }
-  }, h = async (e, t, n) => {
+  }, m = async (e, t, n) => {
     try {
       await r.tn.post({
         url: d.ANM.CONSUME_MESSAGE_CONFETTI_POTION,
         body: {
           channel_id: e,
           message_id: t,
-          emoji_name: m(n)
+          emoji_name: h(n)
         },
         rejectWithError: false
       }), a.Z.dispatch({
@@ -97,7 +97,7 @@ let f = {
     }
     let o = (0, u.NV)(n);
     (0, c.I)(o, true, true, s.LL.MessageSent)
-  }, m = e => null != e.id ? "".concat(e.name, ":").concat(e.id) : e.optionallyDiverseSequence, g = e => {
+  }, h = e => null != e.id ? "".concat(e.name, ":").concat(e.id) : e.optionallyDiverseSequence, g = e => {
     a.Z.dispatch({
       type: "CONSUMABLES_CLEAR_ERROR",
       skuId: e

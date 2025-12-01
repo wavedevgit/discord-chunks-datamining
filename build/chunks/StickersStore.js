@@ -15,7 +15,7 @@ var r, Chunk135273 = require("./135273.js"),
   Chunk149694 = require("./149694.js"),
   Chunk737406 = require("./737406.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,12 +23,12 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = 2,
-  m = async () => {
-    if (0 !== h) return;
+let m = 2,
+  h = async () => {
+    if (0 !== m) return;
     let e = Chunk287328.Z.database();
     if (null == module) return;
-    h = 2;
+    m = 2;
     let t = await (0, Chunk86670.gs)("StickerStore.loadSavedGuildStickers", () => Chunk135273.Z.timeAsync("\uD83D\uDCBE", "loadSavedGuildStickers", () => Chunk856472.Z.getAsync(module)));
     null != exports && Chunk570140.Z.dispatch({
       type: "CACHED_STICKERS_LOADED",
@@ -38,32 +38,32 @@ let h = 2,
     let {
       guilds: t
     } = e;
-    h = +!!t.every(e => null != e.stickers.items)
+    m = +!!t.every(e => null != e.stickers.items)
   }, E = () => {
-    h = 0
+    m = 0
   };
 
 function b(e) {
   let {
     guild: t
   } = e;
-  1 === h && "update" === t.stickers.op && null == t.stickers.items && (h = 0)
+  1 === m && "update" === t.stickers.op && null == t.stickers.items && (m = 0)
 }
 let y = () => {
-  h = 0
+  m = 0
 };
 class O extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk93093.Z, Chunk149694.Z, Chunk430824.Z, Chunk737406.Z), this.syncWith([Chunk149694.Z, Chunk737406.Z], () => true)
   }
   get isLoaded() {
-    return 0 !== h
+    return 0 !== m
   }
   get loadState() {
-    return h
+    return m
   }
   getStickerMetadataArrays() {
-    return m(), [Chunk149694.Z.getStickerMetadataMap(), Chunk737406.Z.getStickerMetadataMap()]
+    return h(), [Chunk149694.Z.getStickerMetadataMap(), Chunk737406.Z.getStickerMetadataMap()]
   }
   get hasLoadedStickerPacks() {
     return Chunk737406.Z.hasLoadedStickerPacks
@@ -73,31 +73,31 @@ class O extends(r = Chunk442837.ZP.Store) {
   }
   getStickerById(e) {
     var t;
-    return m(), null != (t = f.Z.getStickerById(e)) ? t : _.Z.getStickerById(e)
+    return h(), null != (t = f.Z.getStickerById(e)) ? t : p.Z.getStickerById(e)
   }
   getStickerPack(e) {
-    return _.Z.getStickerPack(e)
+    return p.Z.getStickerPack(e)
   }
   getPremiumPacks() {
     return Chunk737406.Z.getPremiumPacks()
   }
   isPremiumPack(e) {
-    return _.Z.isPremiumPack(e)
+    return p.Z.isPremiumPack(e)
   }
   getRawStickersByGuild() {
     return Chunk149694.Z.getAllGuildStickers()
   }
   getAllGuildStickers() {
-    return m(), Chunk149694.Z.getAllGuildStickers()
+    return h(), Chunk149694.Z.getAllGuildStickers()
   }
   getAllPackStickers() {
     return Chunk737406.Z.getAllPackStickers()
   }
   getStickersByGuildId(e) {
-    return m(), f.Z.getStickersByGuildId(e)
+    return h(), f.Z.getStickersByGuildId(e)
   }
 }
-p(O, "displayName", "StickersStore");
+_(O, "displayName", "StickersStore");
 let v = new O(Chunk570140.Z, {
   BACKGROUND_SYNC: E,
   CONNECTION_OPEN: g,

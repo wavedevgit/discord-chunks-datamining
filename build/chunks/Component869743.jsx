@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,12 +46,12 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = e => {
+let m = e => {
     let {
       appRecord: t,
       closePopout: n,
@@ -80,7 +80,7 @@ let h = e => {
       }), u, d]
     })
   },
-  m = e => {
+  h = e => {
     let {
       appRecord: t,
       botUser: n,
@@ -88,7 +88,7 @@ let h = e => {
       selectedGuildId: a,
       selectedChannelId: o
     } = e;
-    return (0, r.jsx)(h, {
+    return (0, r.jsx)(m, {
       appRecord: t,
       closePopout: i,
       selectedGuildId: a,
@@ -112,12 +112,12 @@ let h = e => {
         let {
           closePopout: i
         } = e;
-        return null == t.bot ? (0, r.jsx)(h, {
+        return null == t.bot ? (0, r.jsx)(m, {
           appRecord: t,
           closePopout: i,
           selectedGuildId: n,
           selectedChannelId: o
-        }) : (0, r.jsx)(m, {
+        }) : (0, r.jsx)(h, {
           appRecord: t,
           botUser: t.bot,
           closePopout: i,
@@ -127,7 +127,7 @@ let h = e => {
       },
       align: "right",
       position: "bottom",
-      children: e => (0, r.jsx)(a.P3F, p(f({
+      children: e => (0, r.jsx)(a.P3F, _(f({
         innerRef: s,
         className: u.actionMenuButton,
         "aria-label": c.intl.string(c.t["UKOtz+"])

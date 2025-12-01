@@ -18,17 +18,17 @@ var Chunk473749 = require("./473749.js"),
 function g(e) {
   let {
     userId: t
-  } = e, r = (0, c.e7)([o.default], () => o.default.getId());
+  } = e, r = (0, c.e7)([s.default], () => s.default.getId());
   i()(r !== t, "[useSecureFramesPairwiseFingerprint] Should not pass current user id.");
   let [u, g] = n.useState(null), [y, p] = n.useState(false), b = (0, c.e7)([f.Z], () => f.Z.getSecureFramesRosterMapEntry(t)), m = (0, c.e7)([f.Z], () => f.Z.getSecureFramesRosterMapEntry(r)), O = n.useCallback(e => {
     g(l.fromByteArray(e)), p(false)
   }, []), S = n.useCallback(async (e, t, r, n) => {
-    if (s.Z.supports(E.AN.MLS_PAIRWISE_FINGERPRINTS)) {
+    if (a.Z.supports(E.AN.MLS_PAIRWISE_FINGERPRINTS)) {
       var l;
       null == (l = f.Z.getRTCConnection()) || l.getMLSPairwiseFingerprint(d.Xj, r, e => {
         O(new Uint8Array(e))
       })
-    } else O(await (0, a.Il)(d.Xj, new Uint8Array(t), e, new Uint8Array(n), r))
+    } else O(await (0, o.Il)(d.Xj, new Uint8Array(t), e, new Uint8Array(n), r))
   }, [O]), _ = n.useRef(null);
   return n.useEffect(() => {
     null != b && null != m && null == _.current && (p(true), _.current = setTimeout(() => S(r, m, t, b), 0));

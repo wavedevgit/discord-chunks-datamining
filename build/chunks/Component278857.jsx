@@ -20,7 +20,7 @@ function d(e) {
     onExpand: a
   } = e, d = i.useId(), f = i.useMemo(() => t({
     className: u.card
-  }), [t]), [_] = f;
+  }), [t]), [p] = f;
   return 0 === f.length ? null : (0, r.jsxs)("section", {
     "aria-labelledby": null != n ? d : true,
     className: u.container,
@@ -35,7 +35,7 @@ function d(e) {
       tabIndex: false,
       children: [(0, r.jsx)("li", {
         className: u.firstCardContainer,
-        children: _
+        children: p
       }), f.length > 1 && (0, r.jsx)(s.P3F, {
         tag: "li",
         className: u.backgroundCardContainer,

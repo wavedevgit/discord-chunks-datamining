@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   S8: () => l,
-  t3: () => _
+  t3: () => p
 }), require("./415506.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk108131 = require("./108131.js"),
   i = require.n(Chunk108131),
@@ -76,21 +76,21 @@ async function f(e) {
     URL.revokeObjectURL(u)
   }
   let f = await n.getImageData(0, 0, t.width, t.height),
-    _ = d(l),
-    p = d(f),
-    h = _ === p,
-    m = performance.now() - o;
-  return (s.verbose("[WebP] Pixel hash results: " + "fileName=".concat(e.name, " ") + "fileLength={".concat(e.size, "} ") + "width=".concat(c.width, " ") + "height=".concat(c.height, " ") + "pixelHash=".concat(_, " ") + "mezzanineFileLength={".concat(a.size, "} ") + "mezzaninePixelHash=".concat(p, " ") + "match=".concat(h, " ") + "elapsed_ms=".concat(Math.round(m))), h) ? {
+    p = d(l),
+    _ = d(f),
+    m = p === _,
+    h = performance.now() - o;
+  return (s.verbose("[WebP] Pixel hash results: " + "fileName=".concat(e.name, " ") + "fileLength={".concat(e.size, "} ") + "width=".concat(c.width, " ") + "height=".concat(c.height, " ") + "pixelHash=".concat(p, " ") + "mezzanineFileLength={".concat(a.size, "} ") + "mezzaninePixelHash=".concat(_, " ") + "match=".concat(m, " ") + "elapsed_ms=".concat(Math.round(h))), m) ? {
     success: true,
     webpBlob: a,
-    pixelHashTimeMs: m
+    pixelHashTimeMs: h
   } : {
     success: false,
     reason: "pixel_hash_mismatch",
-    pixelHashTimeMs: m
+    pixelHashTimeMs: h
   }
 }
-async function _(e) {
+async function p(e) {
   let t;
   if (null == e) throw Error("file is null or undefined");
   s.verbose("[WebP] Starting conversion for: ".concat(e.name));
@@ -117,8 +117,8 @@ async function _(e) {
     }
     let l = o.webpBlob,
       d = e.size > 0 ? l.size / e.size : 1,
-      _ = 1 - d;
-    if (_ < c) return s.verbose("[WebP] Insufficient savings: ".concat(Math.round(100 * _), "% < ").concat(100 * c, "% (").concat(e.size, " -> ").concat(l.size, " bytes)")), r("insufficient_savings", l.size);
+      p = 1 - d;
+    if (p < c) return s.verbose("[WebP] Insufficient savings: ".concat(Math.round(100 * p), "% < ").concat(100 * c, "% (").concat(e.size, " -> ").concat(l.size, " bytes)")), r("insufficient_savings", l.size);
     return t = performance.now() - n, s.verbose("[WebP] Conversion successful: ".concat(e.name, " to WebP in ").concat(Math.round(t), "ms")), {
       success: true,
       originalFile: e,

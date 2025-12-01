@@ -64,9 +64,9 @@ function v(e) {
     guildId: t,
     role: n,
     theme: a,
-    content: E = m.intl.string(m.t["6OSasb"]),
+    content: E = h.intl.string(h.t["6OSasb"]),
     className: y
-  } = e, v = (0, s.e7)([_.default], () => _.default.getCurrentUser()), I = p.ZP.useName(t, null, v), T = (0, c.Kz)(n), S = i.useMemo(() => (0, u.e5)(O(b({}, (0, d.ZP)({
+  } = e, v = (0, s.e7)([p.default], () => p.default.getCurrentUser()), S = _.ZP.useName(t, null, v), I = (0, c.Kz)(n), T = i.useMemo(() => (0, u.e5)(O(b({}, (0, d.ZP)({
     channelId: "0",
     content: E,
     tts: true,
@@ -75,10 +75,10 @@ function v(e) {
     allowedMentions: true,
     author: v
   })), {
-    state: h.yb.SENT,
+    state: m.yb.SENT,
     id: "0"
   })), [v, E]), A = {
-    nick: I,
+    nick: S,
     colorString: n.colorString,
     colorStrings: n.colorStrings
   };
@@ -89,8 +89,8 @@ function v(e) {
       children: (0, r.jsx)(f.Z, {
         hideTimestamp: true,
         author: A,
-        roleIcon: T,
-        message: S,
+        roleIcon: I,
+        message: T,
         isGroupStart: true,
         disableInteraction: true
       })

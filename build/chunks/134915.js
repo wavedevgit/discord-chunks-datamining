@@ -4,7 +4,7 @@
 require.d(exports, {
   PS: () => o,
   Q3: () => c,
-  W0: () => h,
+  W0: () => m,
   tL: () => l
 });
 var Chunk473749 = require("./473749.js");
@@ -62,44 +62,44 @@ function u(e) {
     value: l,
     builtinValidation: c,
     validate: u,
-    validationBehavior: h = "aria"
+    validationBehavior: m = "aria"
   } = e;
   n && (t || (t = "invalid" === n));
-  let m = true !== t ? {
+  let h = true !== t ? {
       isInvalid: t,
       validationErrors: [],
       validationDetails: a
     } : null,
-    g = (0, r.useMemo)(() => u && null != l ? _(f(u, l)) : null, [u, l]);
+    g = (0, r.useMemo)(() => u && null != l ? p(f(u, l)) : null, [u, l]);
   (null == c ? true : c.validationDetails.valid) && (c = true);
   let E = (0, r.useContext)(s),
     b = (0, r.useMemo)(() => i ? Array.isArray(i) ? i.flatMap(e => d(E[e])) : d(E[i]) : [], [E, i]),
     [y, O] = (0, r.useState)(E),
-    [v, I] = (0, r.useState)(false);
-  E !== y && (O(E), I(false));
-  let T = (0, r.useMemo)(() => _(v ? [] : b), [v, b]),
-    S = (0, r.useRef)(o),
+    [v, S] = (0, r.useState)(false);
+  E !== y && (O(E), S(false));
+  let I = (0, r.useMemo)(() => p(v ? [] : b), [v, b]),
+    T = (0, r.useRef)(o),
     [A, C] = (0, r.useState)(o),
     N = (0, r.useRef)(o),
-    R = () => {
-      if (!P) return;
-      D(false);
-      let e = g || c || S.current;
-      p(e, N.current) || (N.current = e, C(e))
+    P = () => {
+      if (!R) return;
+      w(false);
+      let e = g || c || T.current;
+      _(e, N.current) || (N.current = e, C(e))
     },
-    [P, D] = (0, r.useState)(false);
-  return (0, r.useEffect)(R), {
-    realtimeValidation: m || T || g || c || o,
-    displayValidation: "native" === h ? m || T || A : m || T || g || c || A,
+    [R, w] = (0, r.useState)(false);
+  return (0, r.useEffect)(P), {
+    realtimeValidation: h || I || g || c || o,
+    displayValidation: "native" === m ? h || I || A : h || I || g || c || A,
     updateValidation(e) {
-      "aria" !== h || p(A, e) ? S.current = e : C(e)
+      "aria" !== m || _(A, e) ? T.current = e : C(e)
     },
     resetValidation() {
       let e = o;
-      p(e, N.current) || (N.current = e, C(e)), "native" === h && D(false), I(true)
+      _(e, N.current) || (N.current = e, C(e)), "native" === m && w(false), S(true)
     },
     commitValidation() {
-      "native" === h && D(true), I(true)
+      "native" === m && w(true), S(true)
     }
   }
 }
@@ -116,7 +116,7 @@ function f(e, t) {
   return []
 }
 
-function _(e) {
+function p(e) {
   return e.length ? {
     isInvalid: true,
     validationErrors: e,
@@ -124,11 +124,11 @@ function _(e) {
   } : null
 }
 
-function p(e, t) {
+function _(e, t) {
   return e === t || !!e && !!t && e.isInvalid === t.isInvalid && e.validationErrors.length === t.validationErrors.length && e.validationErrors.every((e, n) => e === t.validationErrors[n]) && Object.entries(e.validationDetails).every(([e, n]) => t.validationDetails[e] === n)
 }
 
-function h(...e) {
+function m(...e) {
   let t = new Set,
     n = false,
     r = {

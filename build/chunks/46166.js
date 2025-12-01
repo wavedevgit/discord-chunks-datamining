@@ -15,14 +15,14 @@ module.exports = function(e, t, n, s) {
   }
   for (; ++l < c;) {
     var f = (d = n[l])[0],
-      _ = e[f],
-      p = d[1];
+      p = e[f],
+      _ = d[1];
     if (u && d[2]) {
-      if (true === _ && !(f in e)) returnfalse
+      if (true === p && !(f in e)) returnfalse
     } else {
-      var h = new r;
-      if (s) var m = s(_, p, f, e, t, h);
-      if (!(true === m ? i(p, _, a | o, s, h) : m)) returnfalse
+      var m = new r;
+      if (s) var h = s(p, _, f, e, t, m);
+      if (!(true === h ? i(_, p, a | o, s, m) : h)) returnfalse
     }
   }
   returntrue

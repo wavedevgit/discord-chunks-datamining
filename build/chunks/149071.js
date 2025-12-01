@@ -2,7 +2,7 @@
 /** chunk id: 149071, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var Chunk544891 = require("./544891.js"),
   Chunk147913 = require("./147913.js"),
@@ -49,16 +49,16 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {},
-  p = 0,
-  h = 15 * Chunk70956.Z.Millis.SECOND;
+let p = {},
+  _ = 0,
+  m = 15 * Chunk70956.Z.Millis.SECOND;
 
-function m() {
-  _ = u({}, Chunk680089.Z.getCollapsedCategories())
+function h() {
+  p = u({}, Chunk680089.Z.getCollapsedCategories())
 }
 
 function g() {
-  __OVERLAY__ || (clearTimeout(p), p = setTimeout(() => b({}), h))
+  __OVERLAY__ || (clearTimeout(_), _ = setTimeout(() => b({}), m))
 }
 async function E(e, t) {
   null == e || e === l.ME ? await r.tn.patch({
@@ -70,7 +70,7 @@ async function E(e, t) {
   } : {})
 }
 async function b(e) {
-  clearTimeout(p);
+  clearTimeout(_);
   let t = 0 !== Object.keys(e).length,
     n = a.Z.getCollapsedCategories(),
     i = y();
@@ -80,7 +80,7 @@ async function b(e) {
       collapsed: i.id in n
     }), t = true)
   }
-  return t ? (_ = u({}, n), delete e[l.I_8], (await r.tn.patch({
+  return t ? (p = u({}, n), delete e[l.I_8], (await r.tn.patch({
     url: l.ANM.USER_GUILD_SETTINGS_BULK,
     body: {
       guilds: e
@@ -92,13 +92,13 @@ async function b(e) {
 function y() {
   let e = {},
     t = Chunk680089.Z.getCollapsedCategories();
-  for (let n in exports) exports[require] !== _[require] && (module[require] = true);
-  for (let n in _) exports[require] !== _[require] && (module[require] = true);
+  for (let n in exports) exports[require] !== p[require] && (module[require] = true);
+  for (let n in p) exports[require] !== p[require] && (module[require] = true);
   return module
 }
 
 function O() {
-  _ = u({}, Chunk680089.Z.getCollapsedCategories())
+  p = u({}, Chunk680089.Z.getCollapsedCategories())
 }
 class v extends Chunk147913.Z {
   constructor(...e) {
@@ -107,9 +107,9 @@ class v extends Chunk147913.Z {
       CATEGORY_EXPAND: g,
       CATEGORY_COLLAPSE_ALL: g,
       CATEGORY_EXPAND_ALL: g,
-      POST_CONNECTION_OPEN: m,
+      POST_CONNECTION_OPEN: h,
       USER_GUILD_SETTINGS_FULL_UPDATE: O
     }), c(this, "saveUserGuildSettings", E), c(this, "saveUserGuildSettingsBulk", b)
   }
 }
-let I = new v
+let S = new v

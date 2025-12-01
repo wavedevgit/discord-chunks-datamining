@@ -10,12 +10,12 @@ var r, Chunk179122 = require("./179122.js"),
   Chunk661314 = require("./661314.js"),
   d = ">",
   f = "<",
-  _ = "prototype",
-  p = "script",
-  h = Chunk661314("IE_PROTO"),
-  m = function() {},
+  p = "prototype",
+  _ = "script",
+  m = Chunk661314("IE_PROTO"),
+  h = function() {},
   g = function(e) {
-    return f + p + d + e + f + "/" + p + d
+    return f + _ + d + e + f + "/" + _ + d
   },
   E = function(e) {
     e.write(g("")), e.close();
@@ -24,7 +24,7 @@ var r, Chunk179122 = require("./179122.js"),
   },
   b = function() {
     var e, t = Chunk809290("iframe"),
-      n = "java" + p + ":";
+      n = "java" + _ + ":";
     return exports.style.display = "none", Chunk620394.appendChild(exports), exports.src = String(require), (e = exports.contentWindow.document).open(), module.write(g("document.F=Object")), module.close(), module.F
   },
   y = function() {
@@ -32,10 +32,10 @@ var r, Chunk179122 = require("./179122.js"),
       r = new ActiveXObject("htmlfile")
     } catch (e) {}
     y = "undefined" != typeof document ? document.domain && r ? E(r) : b() : E(r);
-    for (var e = Chunk344894.length; module--;) delete y[_][Chunk344894[module]];
+    for (var e = Chunk344894.length; module--;) delete y[p][Chunk344894[module]];
     return y()
   };
-Chunk485073[h] = true, module.exports = Object.create || function(e, t) {
+Chunk485073[m] = true, module.exports = Object.create || function(e, t) {
   var n;
-  return null !== e ? (m[_] = i(e), n = new m, m[_] = null, n[h] = e) : n = y(), true === t ? n : a.f(n, t)
+  return null !== e ? (h[p] = i(e), n = new h, h[p] = null, n[m] = e) : n = y(), true === t ? n : a.f(n, t)
 }

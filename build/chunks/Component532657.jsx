@@ -2,7 +2,7 @@
 /** chunk id: 532657, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,27 +45,27 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e) {
+function _(e) {
   let {
     text: t,
     tooltipText: n,
     textVariant: a = "text-xs/medium",
     textClassName: u,
     "aria-label": f,
-    icon: p,
-    canTruncate: h = true,
-    hideTooltip: m = false,
+    icon: _,
+    canTruncate: m = true,
+    hideTooltip: h = false,
     hideText: g = false
   } = e, E = i.useRef(null), b = () => {
     let e = null != n ? n : t;
     return (0, r.jsxs)(r.Fragment, {
-      children: [p, (0, r.jsx)(s.Text, {
+      children: [_, (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "none",
         className: o()(c.tooltipText, u),
@@ -75,9 +75,9 @@ function p(e) {
   }, y = {
     variant: a,
     color: "none",
-    className: o()(h && c.truncated, u)
-  }, O = null != t && null == n && h, v = !m && (null != n || O || g);
-  return null == p && g ? null : v ? (0, r.jsx)(s.aML, {
+    className: o()(m && c.truncated, u)
+  }, O = null != t && null == n && m, v = !h && (null != n || O || g);
+  return null == _ && g ? null : v ? (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: b(),
     "aria-label": f,
@@ -97,7 +97,7 @@ function p(e) {
           (null != n || t || g) && (null == i || i())
         },
         onMouseLeave: a,
-        children: [p, !g && (0, r.jsx)(s.Text, _(d({
+        children: [_, !g && (0, r.jsx)(s.Text, p(d({
           ref: E
         }, y), {
           children: t
@@ -105,7 +105,7 @@ function p(e) {
       })
     }
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [p, !g && (0, r.jsx)(s.Text, _(d({}, y), {
+    children: [_, !g && (0, r.jsx)(s.Text, p(d({}, y), {
       children: t
     }))]
   })

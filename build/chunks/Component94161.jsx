@@ -18,28 +18,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk564355 = require("./564355.js");
 
-function m(e, t) {
+function h(e, t) {
   let {
     disabled: n,
     type: a,
-    pickerView: m = _.X1.EMOJI
+    pickerView: h = p.X1.EMOJI
   } = e, [g, E, b] = (0, u.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), y = (0, d.v)(l.S), O = a === f.Ie.NORMAL, {
     tooltipsWithKeybinds: v,
-    expressionsCombinedIntoEmojiButton: I
+    expressionsCombinedIntoEmojiButton: S
   } = d.n.useConfig({
     location: "EmojiButton"
-  }), T = I ? true : O ? y : true, S = v && I && O ? p.intl.string(p.t.DSBQ6F) : true, A = i.useCallback(() => {
-    (0, u.RO)(m, a)
-  }, [a, m]);
+  }), I = S ? true : O ? y : true, T = v && S && O ? _.intl.string(_.t.DSBQ6F) : true, A = i.useCallback(() => {
+    (0, u.RO)(h, a)
+  }, [a, h]);
   return n ? null : (0, r.jsx)("div", {
-    className: o()(_.CT, h.buttonContainer),
+    className: o()(p.CT, m.buttonContainer),
     ref: t,
     children: (0, r.jsx)(c.Z, {
-      "aria-label": S,
-      tooltipText: S,
-      className: h.emojiButton,
+      "aria-label": T,
+      tooltipText: T,
+      className: m.emojiButton,
       onClick: A,
-      active: g === m && E === a,
+      active: g === h && E === a,
       "aria-controls": b,
       tabIndex: 0,
       focusProps: {
@@ -50,9 +50,9 @@ function m(e, t) {
           right: false
         }
       },
-      keyboardShortcut: T,
+      keyboardShortcut: I,
       canShowNUXPremiumTooltip: O
     })
   })
 }
-let g = Chunk473749.memo(Chunk473749.forwardRef(m))
+let g = Chunk473749.memo(Chunk473749.forwardRef(h))

@@ -2,7 +2,7 @@
 /** chunk id: 704875, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,7 +24,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,34 +48,34 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   var i, l;
   let {
     attributes: u,
     children: f,
-    element: p,
-    decorations: m
-  } = e, b = E(null != (i = null == m ? true : m[0]) ? i : {});
-  switch (p.type) {
+    element: _,
+    decorations: h
+  } = e, b = E(null != (i = null == h ? true : h[0]) ? i : {});
+  switch (_.type) {
     case "line":
-      if (null == (l = p.codeBlockState) ? true : l.isInCodeBlock) return (0, r.jsx)("div", h(_({
+      if (null == (l = _.codeBlockState) ? true : l.isInCodeBlock) return (0, r.jsx)("div", m(p({
         className: c.codeLine,
-        spellCheck: null == p.codeBlockState || null == p.codeBlockState.lang
+        spellCheck: null == _.codeBlockState || null == _.codeBlockState.lang
       }, u), {
         children: f
       }));
-      return (0, r.jsx)("div", h(_({}, u), {
+      return (0, r.jsx)("div", m(p({}, u), {
         children: f
       }));
     case "blockQuote": {
       let e = a()(d.blockquoteContainer, d.slateBlockquoteContainer);
-      return (0, r.jsxs)("div", h(_({}, u), {
+      return (0, r.jsxs)("div", m(p({}, u), {
         className: e,
         children: [(0, r.jsx)("span", {
           contentEditable: false,
@@ -90,7 +90,7 @@ function m(e, t, n) {
         attributes: u,
         className: b,
         children: [(0, r.jsx)(s.dy, {
-          emoji: p.emoji
+          emoji: _.emoji
         }), f]
       });
     case "customEmoji":
@@ -98,7 +98,7 @@ function m(e, t, n) {
         attributes: u,
         className: b,
         children: [(0, r.jsx)(s.wP, {
-          emoji: p.emoji
+          emoji: _.emoji
         }), f]
       });
     case "textMention":
@@ -106,7 +106,7 @@ function m(e, t, n) {
         attributes: u,
         className: b,
         children: [(0, r.jsx)(s.Ox, {
-          text: p.name
+          text: _.name
         }), f]
       });
     case "userMention":
@@ -114,7 +114,7 @@ function m(e, t, n) {
         attributes: u,
         className: b,
         children: [(0, r.jsx)(s.cB, {
-          id: p.userId,
+          id: _.userId,
           channelId: n,
           guildId: t
         }), f]
@@ -124,7 +124,7 @@ function m(e, t, n) {
         attributes: u,
         className: b,
         children: [(0, r.jsx)(s.Vq, {
-          id: p.roleId,
+          id: _.roleId,
           guildId: t
         }), f]
       });
@@ -133,7 +133,7 @@ function m(e, t, n) {
         attributes: u,
         className: b,
         children: [(0, r.jsx)(s.Io, {
-          id: p.channelId
+          id: _.channelId
         }), f]
       });
     case "staticRouteLink":
@@ -141,8 +141,8 @@ function m(e, t, n) {
         attributes: u,
         className: b,
         children: [(0, r.jsx)(s.NY, {
-          id: p.id,
-          itemId: p.itemId,
+          id: _.id,
+          itemId: _.itemId,
           guildId: t
         }), f]
       });
@@ -151,7 +151,7 @@ function m(e, t, n) {
         attributes: u,
         className: b,
         children: [(0, r.jsx)(o.ku, {
-          soundId: p.soundId
+          soundId: _.soundId
         }), f]
       });
     case "commandMention":
@@ -159,8 +159,8 @@ function m(e, t, n) {
         attributes: u,
         className: b,
         children: [(0, r.jsx)(s.Wf, {
-          text: p.commandName,
-          id: p.commandId
+          text: _.commandName,
+          id: _.commandId
         }), f]
       });
     case "timestamp":
@@ -168,7 +168,7 @@ function m(e, t, n) {
         attributes: u,
         className: b,
         children: [(0, r.jsx)(s.EK, {
-          timestamp: p.parsed
+          timestamp: _.parsed
         }), f]
       });
     case "gameMention":
@@ -176,7 +176,7 @@ function m(e, t, n) {
         attributes: u,
         className: b,
         children: [(0, r.jsx)(s.N1, {
-          id: p.applicationId
+          id: _.applicationId
         }), f]
       });
     default:
@@ -189,7 +189,7 @@ let g = e => {
     attributes: n,
     children: i
   } = e, o = a()(u.inlineElement, u.inlineVoid, t);
-  return (0, r.jsx)("span", h(_({}, n), {
+  return (0, r.jsx)("span", m(p({}, n), {
     className: o,
     contentEditable: false,
     children: i

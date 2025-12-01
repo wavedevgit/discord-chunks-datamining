@@ -14,12 +14,12 @@ var Chunk50153 = require("./50153.js"),
   Chunk652092 = require("./652092.js"),
   Chunk348568 = require("./348568.js"),
   Chunk20271 = require("./20271.js"),
-  m = Chunk65183.OrderedSet,
+  h = Chunk65183.OrderedSet,
   g = {
     replaceText: function(e, t, n, i, a) {
-      var o = p(_(e, t), t),
+      var o = _(p(e, t), t),
         s = r.create({
-          style: i || m(),
+          style: i || h(),
           entity: a || null
         });
       return u(o, o.getSelectionAfter(), n, s)
@@ -34,7 +34,7 @@ var Chunk50153 = require("./50153.js"),
     },
     replaceWithFragment: function(e, t, n) {
       var r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "REPLACE_WITH_NEW_DATA",
-        i = p(_(e, t), t);
+        i = _(p(e, t), t);
       return c(i, i.getSelectionAfter(), n, r)
     },
     removeRange: function(e, t, n) {
@@ -52,13 +52,13 @@ var Chunk50153 = require("./50153.js"),
         d = s.getEntityAt(c - 1);
       if (r === i && u && u === d) {
         var f = o(e.getEntityMap(), a, s, t, n);
-        return p(e, f)
+        return _(e, f)
       }
-      return p(_(e, t), t)
+      return _(p(e, t), t)
     },
     splitBlock: function(e, t) {
-      var n = p(_(e, t), t);
-      return h(n, n.getSelectionAfter())
+      var n = _(p(e, t), t);
+      return m(n, n.getSelectionAfter())
     },
     applyInlineStyle: function(e, t, n) {
       return i.add(e, t, n)
@@ -89,7 +89,7 @@ var Chunk50153 = require("./50153.js"),
       })
     },
     applyEntity: function(e, t, n) {
-      return a(_(e, t), t, n)
+      return a(p(e, t), t, n)
     }
   };
 module.exports = g

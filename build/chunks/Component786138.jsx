@@ -27,10 +27,10 @@ function y(e) {
   let {
     stream: O,
     handleGoLive: v,
-    showReportOption: I = false,
-    disableChangeWindows: T = false,
-    minimal: S = false,
-    appContext: A = m.IlC.APP
+    showReportOption: S = false,
+    disableChangeWindows: I = false,
+    minimal: T = false,
+    appContext: A = h.IlC.APP
   } = e, {
     desktopSourceId: C,
     lastPickedContent: N
@@ -43,11 +43,11 @@ function y(e) {
       desktopSourceId: null == t ? true : t.id,
       lastPickedContent: n
     }
-  }), R = (0, a.e7)([d.Z], () => d.Z.getState().soundshareEnabled), P = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), D = (0, a.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), w = (0, a.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), L = (0, h.Z)(O, A), x = (0, p.Z)(O, A, g.Vq), M = null != C && D && (!C.startsWith("screen") || w), k = (0, a.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, _.isLinux)()), j = i.useCallback(() => {
+  }), P = (0, a.e7)([d.Z], () => d.Z.getState().soundshareEnabled), R = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), w = (0, a.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), D = (0, a.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), x = (0, m.Z)(O, A), L = (0, _.Z)(O, A, g.Vq), j = null != C && w && (!C.startsWith("screen") || D), M = (0, a.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, p.isLinux)()), k = i.useCallback(() => {
     (null == C ? true : C.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
       e.context === E.Yn.STREAM && e.presentDesktopSourcePicker("window")
     }): v()
-  }, [C, v]), U = null != (t = null == C ? true : C.startsWith("prepicked:")) && t, G = (0, _.isMac)() && _.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, B = (0, _.isMac)() && _.isPlatformEmbedded && U && (null != (y = null == N ? true : N.applications.length) ? y : 0) > 0, Z = G ? b.intl.string(b.t.qDK8gQ) : B ? b.intl.string(b.t["3m8w+Q"]) : S ? b.intl.string(b.t.eAktHv) : b.intl.string(b.t.qntSal), F = i.useCallback(() => {
+  }, [C, v]), U = null != (t = null == C ? true : C.startsWith("prepicked:")) && t, G = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, Z = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (y = null == N ? true : N.applications.length) ? y : 0) > 0, B = G ? b.intl.string(b.t.qDK8gQ) : Z ? b.intl.string(b.t["3m8w+Q"]) : T ? b.intl.string(b.t.eAktHv) : b.intl.string(b.t.qntSal), F = i.useCallback(() => {
     let {
       preset: e,
       resolution: t,
@@ -62,47 +62,47 @@ function y(e) {
     };
     null != C && (r.desktopSettings = {
       sourceId: C,
-      sound: !R
+      sound: !P
     }), (0, l.Rc)({
       preset: e,
       resolution: t,
       frameRate: n,
-      soundshareEnabled: !R
+      soundshareEnabled: !P
     }), s.Z.setGoLiveSource(r)
-  }, [C, R]);
+  }, [C, P]);
   if (null == O) return (0, r.jsx)(o.sNh, {
     id: "share-your-screen",
     label: b.intl.string(b.t.fjBNo1),
     icon: o.hGI,
     action: v
   });
-  let V = _.isPlatformEmbedded ? (0, r.jsx)(o.sNh, {
+  let V = p.isPlatformEmbedded ? (0, r.jsx)(o.sNh, {
       id: "stream-settings",
       label: b.intl.string(b.t.ytAD9d),
-      children: L
+      children: x
     }) : null,
-    H = M ? (0, r.jsx)(o.S89, {
+    H = j ? (0, r.jsx)(o.S89, {
       id: "stream-settings-audio-enable",
-      label: S ? b.intl.string(b.t.af2Tw1) : b.intl.string(b.t.ZJEHt7),
-      checked: R,
+      label: T ? b.intl.string(b.t.af2Tw1) : b.intl.string(b.t.ZJEHt7),
+      checked: P,
       action: F
     }) : null,
-    W = !P || T || k ? null : (0, r.jsx)(o.sNh, {
+    Y = !R || I || M ? null : (0, r.jsx)(o.sNh, {
       id: "change-windows",
-      label: Z,
+      label: B,
       icon: o.hGI,
-      action: j
+      action: k
     }),
-    Y = (0, r.jsx)(o.sNh, {
+    W = (0, r.jsx)(o.sNh, {
       id: "stop-streaming",
       color: "danger",
       label: b.intl.string(b.t.S5anIc),
       icon: o.g5r,
       action: () => (0, u.Z)(O)
     });
-  return S ? (0, r.jsxs)(r.Fragment, {
-    children: [Y, W, V, H]
+  return T ? (0, r.jsxs)(r.Fragment, {
+    children: [W, Y, V, H]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [V, I ? x : null, H, W, Y]
+    children: [V, S ? L : null, H, Y, W]
   })
 }

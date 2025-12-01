@@ -2,7 +2,7 @@
 /** chunk id: 600397, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,31 +17,31 @@ var Chunk657707 = require("./657707.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk372563 = require("./372563.js");
 
-function p(e) {
+function _(e) {
   let {
     message: t,
     channel: n,
-    author: p,
-    compact: h
+    author: _,
+    compact: m
   } = e, {
-    nick: m
-  } = (0, l.Sw)(p, n), g = (0, c.l)({
-    user: p,
+    nick: h
+  } = (0, l.Sw)(_, n), g = (0, c.l)({
+    user: _,
     channelId: n.id,
     guildId: true,
     messageId: true
   })(), E = (0, a.q)(t.applicationId);
   if (null == E) return null;
   let b = f.intl.format(f.t.m7Lwas, {
-    username: m,
+    username: h,
     usernameHook: g,
     gameName: E.name,
     gameIconHook: e => (0, r.jsxs)("span", {
-      className: _.gameContainer,
+      className: p.gameContainer,
       children: [(0, r.jsx)(o.Z, {
         game: E,
         size: o.A.XXSMALL,
-        className: _.inlineIcon
+        className: p.inlineIcon
       }), " ", e]
     }),
     helpdeskArticle: s.Z.getArticleURL(d.BhN.SOCIAL_LAYER_CONNECTIONS)
@@ -50,8 +50,8 @@ function p(e) {
     iconNode: (0, r.jsx)(i.iWm, {
       size: "sm"
     }),
-    compact: h,
-    contentClassName: _.content,
+    compact: m,
+    contentClassName: p.content,
     children: (0, r.jsx)("div", {
       children: b
     })

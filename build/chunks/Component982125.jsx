@@ -2,7 +2,7 @@
 /** chunk id: 982125, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => p
+  C: () => _
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,20 +16,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk777207 = require("./777207.jsx"),
   Chunk726550 = require("./726550.js");
 
-function p(e) {
+function _(e) {
   let {
     checked: t,
     description: n,
     onChange: a,
-    disabled: p = false,
-    displayOnly: h,
-    label: m,
+    disabled: _ = false,
+    displayOnly: m,
+    label: h,
     labeledBy: g,
     leadingIcon: E,
     value: b,
     labelType: y = "primary",
     usageVariant: O = "single"
-  } = e, v = (0, i.useRef)(null), I = (0, i.useRef)(null), T = (0, i.useRef)(null), [S, A] = (0, i.useState)(true), C = (0, i.useRef)(false), N = null != m && "" !== m, R = null != n && "" !== n, P = null != E ? E : null;
+  } = e, v = (0, i.useRef)(null), S = (0, i.useRef)(null), I = (0, i.useRef)(null), [T, A] = (0, i.useState)(true), C = (0, i.useRef)(false), N = null != h && "" !== h, P = null != n && "" !== n, R = null != E ? E : null;
   (0, i.useEffect)(() => {
     if (!C.current) {
       C.current = true;
@@ -37,40 +37,40 @@ function p(e) {
     }
     A(t ? "animateIn" : "animateOut")
   }, [t]);
-  let D = e => {
+  let w = e => {
       null != a && a(e)
     },
-    w = o()(_.checkboxOption, "string" == typeof S && _[S], "indicator" !== O && _.spacing),
-    L = (0, r.jsxs)(r.Fragment, {
+    D = o()(p.checkboxOption, "string" == typeof T && p[T], "indicator" !== O && p.spacing),
+    x = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: _.checkboxIndicator,
+        className: p.checkboxIndicator,
         ref: v,
         "aria-hidden": true,
         children: [(0, r.jsx)("svg", {
-          className: _.checkmark,
+          className: p.checkmark,
           width: 20,
           height: 20,
           viewBox: "0 0 20 20",
           fill: "none",
           "aria-hidden": true,
           children: (0, r.jsx)("circle", {
-            className: _.dot,
+            className: p.dot,
             cx: "10",
             cy: "10",
             r: "1.1",
             fill: "currentColor"
           })
         }), (0, r.jsx)(u.kSu, {
-          className: _.checkStroke,
+          className: p.checkStroke,
           size: "sm",
           color: "currentColor"
         })]
       }), N && (0, r.jsxs)(d.K, {
         gap: 4,
         children: [(0, r.jsxs)(s._, {
-          className: _.label,
-          children: [null != P && (0, r.jsx)(P, {
-            className: _.leadingIcon,
+          className: p.label,
+          children: [null != R && (0, r.jsx)(R, {
+            className: p.leadingIcon,
             size: "sm",
             color: "currentColor",
             "aria-hidden": true,
@@ -78,35 +78,35 @@ function p(e) {
           }), (0, r.jsx)(f.x, {
             variant: "text-md/normal",
             color: "primary" === y ? "text-primary" : "text-secondary",
-            children: m
+            children: h
           })]
-        }), R && (0, r.jsx)(f.x, {
+        }), P && (0, r.jsx)(f.x, {
           variant: "text-sm/normal",
           color: "text-secondary",
           children: n
         })]
       })]
     });
-  return h ? (0, r.jsx)("div", {
-    className: w,
+  return m ? (0, r.jsx)("div", {
+    className: D,
     "data-selected": t || true,
-    "data-disabled": p || true,
-    children: L
+    "data-disabled": _ || true,
+    children: x
   }) : (0, r.jsx)(c.tE, {
-    focusTarget: I,
-    ringTarget: T,
+    focusTarget: S,
+    ringTarget: I,
     children: (0, r.jsx)(l.XZ, {
-      ref: T,
-      inputRef: I,
+      ref: I,
+      inputRef: S,
       "aria-labelledby": g,
       isSelected: t,
-      onChange: D,
-      isDisabled: p,
-      isReadOnly: h,
+      onChange: w,
+      isDisabled: _,
+      isReadOnly: m,
       "data-mana-component": "checkbox",
-      className: w,
+      className: D,
       value: String(b),
-      children: L
+      children: x
     })
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 217871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => j
 }), require("./388685.js"), require("./358797.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,7 +12,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
   Chunk607070 = require("./607070.js"),
-  Chunk44315 = require("./44315.js"),
   Chunk314897 = require("./314897.js"),
   Chunk111583 = require("./111583.js"),
   Chunk889901 = require("./889901.jsx"),
@@ -23,18 +22,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk989830 = require("./989830.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk23586 = require("./23586.js");
-let x = Chunk473749.memo(function(e) {
+let O = Chunk473749.memo(function(e) {
     let {
       channelId: t,
       width: n
-    } = e, l = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), a = (0, s.e7)([y.ZP], () => y.ZP.getMostRecentMessageCombo(t), [t]), [u, p] = r.useState(false);
+    } = e, l = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), a = (0, s.e7)([b.ZP], () => b.ZP.getMostRecentMessageCombo(t), [t]), [u, p] = r.useState(false);
     r.useEffect(() => {
       if (null == a ? true : a.displayed) return;
       p(false), setImmediate(() => {
-        p((null != a ? (0, C.Eo)(a.combo) : 0) > 0)
+        p((null != a ? (0, y.Eo)(a.combo) : 0) > 0)
       });
       let e = setTimeout(() => {
-        p(false), null != a && (0, g.ew)(a)
+        p(false), null != a && (0, m.ew)(a)
       }, 2e3);
       return () => clearTimeout(e)
     }, [a]);
@@ -47,16 +46,16 @@ let x = Chunk473749.memo(function(e) {
         config: l ? o.config.stiff : o.config.slow
       }, "animate-always");
     return null != a && (0, i.jsx)(o.animated.div, {
-      className: O.messageComboScore,
+      className: _.messageComboScore,
       style: f,
       children: (0, i.jsx)(c.Text, {
-        className: O.comboScore,
+        className: _.comboScore,
         variant: "text-sm/bold",
-        children: (0, C.Eo)(a.combo)
+        children: (0, y.Eo)(a.combo)
       })
     })
   }),
-  j = Chunk473749.memo(function(e) {
+  x = Chunk473749.memo(function(e) {
     let {
       value: t,
       multiplier: n
@@ -64,82 +63,82 @@ let x = Chunk473749.memo(function(e) {
       color: l,
       square: o,
       flair: s
-    } = r.useMemo(() => (0, C.yz)(n), [n]), u = (0, p.Lq)(l);
+    } = r.useMemo(() => (0, y.yz)(n), [n]);
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(c.Text, {
-        className: O.comboValue,
+        className: _.comboValue,
         variant: "text-sm/bold",
         children: t
       }), (0, i.jsxs)("div", {
-        className: O.comboNameplate,
+        className: _.comboNameplate,
         style: {
-          color: u
+          color: l
         },
         children: [(0, i.jsx)(c.Text, {
-          className: O.comboMultiplier,
+          className: _.comboMultiplier,
           style: {
-            color: u
+            color: l
           },
           variant: "text-sm/bold",
-          children: _.intl.format(_.t["6bgVlq"], {
+          children: v.intl.format(v.t["6bgVlq"], {
             multiplier: n
           })
         }), o && (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)("div", {
-            className: a()(O.comboSquare, O.left),
+            className: a()(_.comboSquare, _.left),
             style: {
-              backgroundColor: u
+              backgroundColor: l
             }
           }), (0, i.jsx)("div", {
-            className: a()(O.comboSquare, O.right),
+            className: a()(_.comboSquare, _.right),
             style: {
-              backgroundColor: u
+              backgroundColor: l
             }
           })]
         }), s && (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)("div", {
-            className: a()(O.confettiIcon, O.left),
-            children: (0, i.jsx)(m.Z, {
+            className: a()(_.confettiIcon, _.left),
+            children: (0, i.jsx)(f.Z, {
               width: 24,
               height: 24
             })
           }), (0, i.jsx)("div", {
-            className: a()(O.confettiIcon, O.right),
-            children: (0, i.jsx)(m.Z, {
+            className: a()(_.confettiIcon, _.right),
+            children: (0, i.jsx)(f.Z, {
               width: 24,
               height: 24
             })
           })]
         }), 1 === n && (0, i.jsx)(c.Text, {
-          className: O.tip,
+          className: _.tip,
           variant: "text-sm/bold",
-          children: _.intl.string(_.t.b5Cpof)
+          children: v.intl.string(v.t.b5Cpof)
         })]
       })]
     })
   }),
-  E = Chunk473749.memo(function(e) {
+  j = Chunk473749.memo(function(e) {
     let {
       channelId: t
-    } = e, n = (0, s.e7)([h.default], () => h.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), a = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([y.ZP], () => y.ZP.isComboing(n, t), [t, n]), {
-      ref: p,
+    } = e, n = (0, s.e7)([p.default], () => p.default.getId()), l = (0, s.e7)([h.Z], () => h.Z.isTyping(t, n), [t, n]), a = (0, s.e7)([g.Z], () => g.Z.isEnabled()), d = (0, s.e7)([b.ZP], () => b.ZP.isComboing(n, t), [t, n]), {
+      ref: f,
       width: m = 0
-    } = (0, u.ZP)(), [g, C] = r.useState(false), _ = (0, v.Z)(t), E = a && d && l;
+    } = (0, u.ZP)(), [y, v] = r.useState(false), j = (0, C.Z)(t), E = a && d && l;
     r.useEffect(() => {
-      E && C(true);
-      let e = setTimeout(() => C(E), 1e3);
+      E && v(true);
+      let e = setTimeout(() => v(E), 1e3);
       return () => clearTimeout(e)
     }, [E]);
     let S = (0, c.q_F)({
-        opacity: +!!g,
-        transform: g ? "translateY(0)" : "translateY(100%)",
+        opacity: +!!y,
+        transform: y ? "translateY(0)" : "translateY(100%)",
         pointerEvents: "none",
         config: o.config.stiff
       }),
-      P = r.useMemo(() => null != _ ? _ : {
+      P = r.useMemo(() => null != j ? j : {
         value: 0,
         multiplier: 1
-      }, [_]),
+      }, [j]),
       I = r.useRef(P);
     r.useEffect(() => {
       (P.multiplier > 1 || P.value > 0) && (I.current = P)
@@ -152,14 +151,14 @@ let x = Chunk473749.memo(function(e) {
       multiplier: E ? P.multiplier : I.current.multiplier
     }), [E, P, I]);
     return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(x, {
+      children: [(0, i.jsx)(O, {
         channelId: t,
         width: m
       }), (0, i.jsx)(o.animated.div, {
-        ref: p,
-        className: O.combo,
+        ref: f,
+        className: _.combo,
         style: S,
-        children: (0, i.jsx)(j, {
+        children: (0, i.jsx)(x, {
           value: T,
           multiplier: Z
         })

@@ -2,8 +2,8 @@
 /** chunk id: 535322, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => h,
-  Z: () => m
+  A: () => m,
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -37,7 +37,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,14 +48,14 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e) {
-  return (0, r.jsx)("svg", p(f({}, (0, s.Z)(f({}, e))), {
+function m(e) {
+  return (0, r.jsx)("svg", _(f({}, (0, s.Z)(f({}, e))), {
     width: "25",
     height: "48",
     viewBox: "0 0 25 48",
@@ -68,7 +68,7 @@ function h(e) {
   }))
 }
 
-function m(e) {
+function h(e) {
   let {
     className: t,
     forceUseColorForSparkles: n = false,

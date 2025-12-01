@@ -2,7 +2,7 @@
 /** chunk id: 734428, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => p
+  t: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -66,7 +66,7 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = {
+let p = {
   "box-wumpus": {},
   "+++1_BOX_nested_comp_0": {},
   "+++1_BOX_nested_comp_4": {},
@@ -75,7 +75,7 @@ let _ = {
   "+++1_BOX_nested_comp_3": {}
 };
 
-function p(e) {
+function _(e) {
   let {
     artboard: t = "box-wumpus"
   } = e, n = d(e, ["artboard"]), {
@@ -87,7 +87,7 @@ function p(e) {
   } : {}), {
     buffer: c,
     artboard: t,
-    artboardProperties: _
+    artboardProperties: p
   }), n))
 }
-p.riveSrc = Chunk614405.Z
+_.riveSrc = Chunk614405.Z

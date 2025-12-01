@@ -2,7 +2,7 @@
 /** chunk id: 857192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => S
+  default: () => T
 }), require("./997841.js");
 var r, Chunk261470 = require("./261470.js"),
   Chunk213919 = require("./213919.js"),
@@ -15,7 +15,7 @@ var r, Chunk261470 = require("./261470.js"),
   Chunk960048 = require("./960048.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,19 +24,19 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
-let m = (() => {
+let h = (() => {
     let e = "".concat(location.protocol, "//").concat(location.host, "/__development/source_maps"),
       t = null,
       n = new Chunk261470.Z(5 * Chunk70956.Z.Millis.SECOND, +Chunk70956.Z.Millis.MINUTE, true),
@@ -90,10 +90,10 @@ let m = (() => {
     logKeyboardMismatches: false,
     alertStartupMetrics: false
   },
-  b = h({}, E);
+  b = m({}, E);
 
 function y(e) {
-  b = h({}, E, b, e), m.set(b.sourceMapsEnabled), l.K.set(g, b)
+  b = m({}, E, b, e), h.set(b.sourceMapsEnabled), l.K.set(g, b)
 }
 
 function O(e) {
@@ -107,18 +107,18 @@ function v(e) {
   y(E)
 }
 
-function I(e) {
+function S(e) {
   var t;
-  let n = ((null != (t = e.user.flags) ? t : 0) & _.xW$.STAFF) === _.xW$.STAFF,
+  let n = ((null != (t = e.user.flags) ? t : 0) & p.xW$.STAFF) === p.xW$.STAFF,
     r = n || null != e.user.personal_connection_id;
-  n && m.set(b.sourceMapsEnabled), f.Z.setTags({
+  n && h.set(b.sourceMapsEnabled), f.Z.setTags({
     isStaff: r.toString()
   })
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
     let e = Chunk433517.K.get(g);
-    null != module && (b = h({}, E, module))
+    null != module && (b = m({}, E, module))
   }
   get isTracingRequests() {
     return b.trace
@@ -178,9 +178,9 @@ class T extends(r = Chunk442837.ZP.Store) {
     return Object.keys(b).map(e => b[e]), Object.keys(b).filter(e => b[e]).join(",")
   }
 }
-p(T, "displayName", "DeveloperOptionsStore");
-let S = new T(Chunk570140.Z, {
+_(I, "displayName", "DeveloperOptionsStore");
+let T = new I(Chunk570140.Z, {
   LOGOUT: v,
-  CONNECTION_OPEN: I,
+  CONNECTION_OPEN: S,
   DEVELOPER_OPTIONS_UPDATE_SETTINGS: O
 })

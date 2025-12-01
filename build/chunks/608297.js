@@ -71,11 +71,11 @@ function f(e, t) {
   }
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t && f(e.prototype, t), n && f(e, n), e
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -87,12 +87,12 @@ require.d(exports, {
   GT: () => E,
   gr: () => g
 });
-var h = 10,
-  m = function() {
+var m = 10,
+  h = function() {
     function e() {
-      d(this, module), p(this, "subPriority", 0)
+      d(this, module), _(this, "subPriority", 0)
     }
-    return _(module, [{
+    return p(module, [{
       key: "validate",
       value: function(e, t) {
         returntrue
@@ -107,7 +107,7 @@ var h = 10,
       var s;
       return d(this, n), (s = t.call(this)).value = e, s.validateValue = r, s.setValue = i, s.priority = a, o && (s.subPriority = o), s
     }
-    return _(n, [{
+    return p(n, [{
       key: "validate",
       value: function(e, t) {
         return this.validateValue(e, this.value, t)
@@ -118,7 +118,7 @@ var h = 10,
         return this.setValue(e, t, this.value, n)
       }
     }]), n
-  }(m),
+  }(h),
   E = function(e) {
     i(n, e);
     var t = o(n);
@@ -127,9 +127,9 @@ var h = 10,
       var e;
       d(this, n);
       for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
-      return p(l(e = t.call.apply(t, [this].concat(i))), "priority", h), p(l(e), "subPriority", false), e
+      return _(l(e = t.call.apply(t, [this].concat(i))), "priority", m), _(l(e), "subPriority", false), e
     }
-    return _(n, [{
+    return p(n, [{
       key: "set",
       value: function(e, t) {
         if (t.timestampIsSet) return e;
@@ -137,4 +137,4 @@ var h = 10,
         return n.setFullYear(e.getUTCFullYear(), e.getUTCMonth(), e.getUTCDate()), n.setHours(e.getUTCHours(), e.getUTCMinutes(), e.getUTCSeconds(), e.getUTCMilliseconds()), n
       }
     }]), n
-  }(m)
+  }(h)

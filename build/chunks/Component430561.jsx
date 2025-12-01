@@ -2,13 +2,13 @@
 /** chunk id: 430561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GY: () => D,
-  PI: () => I,
-  RT: () => w,
-  XM: () => R,
-  bc: () => T,
-  ls: () => P,
-  xZ: () => S
+  GY: () => w,
+  PI: () => S,
+  RT: () => D,
+  XM: () => P,
+  bc: () => I,
+  ls: () => R,
+  xZ: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk962967 = require("./962967.js");
 
-function I(e) {
+function S(e) {
   let {
     children: t
   } = e;
@@ -44,10 +44,10 @@ function I(e) {
     })
   })
 }
-let T = 7e3;
+let I = 7e3;
 
-function S(e, t) {
-  return C((0, s.e7)([p.Z], () => p.Z.getWidget(e), [e]), t)
+function T(e, t) {
+  return C((0, s.e7)([_.Z], () => _.Z.getWidget(e), [e]), t)
 }
 let A = (e, t) => Date.now() - e < t;
 
@@ -61,7 +61,7 @@ function C(e, t) {
     r !== n.current && (n.current = r, a(true), s.current = setTimeout(() => {
       a(false)
     }, t))
-  }, [t, null == e ? true : e.showExtrasHintTimestamp]), (0, _.ZP)(() => {
+  }, [t, null == e ? true : e.showExtrasHintTimestamp]), (0, p.ZP)(() => {
     let n = null == e ? true : e.showExtrasHintTimestamp;
     return null != n && A(n, t) && (a(true), s.current = setTimeout(() => {
       a(false)
@@ -72,24 +72,24 @@ function C(e, t) {
 }
 let N = 8e3;
 
-function R(e) {
+function P(e) {
   let {
     children: t,
     widgetId: n
-  } = e, i = (0, s.e7)([p.Z], () => p.Z.getWidget(n), [n]), a = C(i, N), o = () => (0, E.QR)((0, b.Pb)(), O.t["1XA04X"], O.intl.string(O.t.uZZGzf), {
+  } = e, i = (0, s.e7)([_.Z], () => _.Z.getWidget(n), [n]), a = C(i, N), o = () => (0, E.QR)((0, b.Pb)(), O.t["1XA04X"], O.intl.string(O.t.uZZGzf), {
     useFlexboxLayout: true,
     highlightAdminWarningIfElevated: false,
     keybindClassName: v.keybind
   });
   return a ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(m.Z, {
+    children: [(0, r.jsx)(h.Z, {
       className: v.titleWrapperWithHint,
       children: (0, r.jsx)(u.P3F, {
         className: v.titleWrapperClickable,
         onClick: () => {
-          null != i && (f.Z.setInputLocked(false, g.Z.getTargetPID()), (0, h.Ws)(i.type, {
-            type: h.Qu.KEYBIND_HINT,
-            value: h.bk.OVERLAY_UNLOCKED
+          null != i && (f.Z.setInputLocked(false, g.Z.getTargetPID()), (0, m.Ws)(i.type, {
+            type: m.Qu.KEYBIND_HINT,
+            value: m.bk.OVERLAY_UNLOCKED
           }))
         },
         children: (0, r.jsx)(u.Text, {
@@ -111,7 +111,7 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     onClick: t
   } = e;
@@ -131,7 +131,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     widgetId: t,
     showAllStreams: n
@@ -154,7 +154,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     id: t,
     pinned: n

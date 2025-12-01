@@ -2,8 +2,8 @@
 /** chunk id: 609631, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => w,
-  t: () => I
+  j: () => D,
+  t: () => S
 }), require("./388685.js"), require("./415506.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -60,11 +60,11 @@ function y(e, t) {
 let O = new WeakMap;
 
 function v(e) {
-  let t = (0, u.sK)(e, m.layer);
-  return null == t && (t = (0, u.MD)(e, p.TA)), null != t ? t : null
+  let t = (0, u.sK)(e, h.layer);
+  return null == t && (t = (0, u.MD)(e, _.TA)), null != t ? t : null
 }
 
-function I(e, t) {
+function S(e, t) {
   if (e.contains(t)) returntrue;
   let n = v(t);
   for (; null != n;) {
@@ -75,9 +75,9 @@ function I(e, t) {
   }
   returnfalse
 }
-let T = 12;
+let I = 12;
 
-function S(e) {
+function T(e) {
   let {
     positionKey: t,
     position: n,
@@ -134,7 +134,7 @@ function N(e) {
   }
 }
 
-function R(e, t, n) {
+function P(e, t, n) {
   if (null != e && e < 0 && ("top" === n.position || "bottom" === n.position) && null != t && Math.abs(e) < (null == t ? true : t.offsetHeight) && null != n.style) {
     let t = "top" === n.position ? "bottom" : "top",
       r = n.style[t];
@@ -147,7 +147,7 @@ function R(e, t, n) {
   return n
 }
 
-function P(e) {
+function R(e) {
   let {
     targetRef: t,
     overrideTargetRect: n
@@ -155,12 +155,12 @@ function P(e) {
   return null != n ? n : (c()(null != t.current, "Invalid ref"), t.current.getBoundingClientRect())
 }
 
-function D(e, t) {
-  let n = P(e),
-    r = P(t);
+function w(e, t) {
+  let n = R(e),
+    r = R(t);
   return n.top === r.top && n.left === r.left
 }
-class w extends(r = Chunk473749.Component) {
+class D extends(r = Chunk473749.Component) {
   formatDimension(e) {
     return this.props.useRawTargetDimensions ? e : Math.ceil(e)
   }
@@ -170,8 +170,8 @@ class w extends(r = Chunk473749.Component) {
     } = this.props;
     if (!r) return e;
     let i = n.offsetWidth,
-      a = e + t.offsetWidth - i + T;
-    return a > 0 ? Math.max(T, e - a) : Math.max(T, e)
+      a = e + t.offsetWidth - i + I;
+    return a > 0 ? Math.max(I, e - a) : Math.max(I, e)
   }
   nudgeRightAlignment(e, t, n) {
     let {
@@ -179,7 +179,7 @@ class w extends(r = Chunk473749.Component) {
     } = this.props;
     if (!r) return 0;
     let i = t.offsetWidth;
-    return Math.min(n.offsetWidth - e - i - T, 0)
+    return Math.min(n.offsetWidth - e - i - I, 0)
   }
   getHorizontalAlignmentStyle(e, t, n, r) {
     let {
@@ -229,16 +229,16 @@ class w extends(r = Chunk473749.Component) {
     if (!r) return e;
     if (e < 0) return 0;
     let i = t.getBoundingClientRect().height,
-      a = e + i - n.offsetHeight + T;
-    return a > 0 ? Math.max(T, e - a) : e
+      a = e + i - n.offsetHeight + I;
+    return a > 0 ? Math.max(I, e - a) : e
   }
   nudgeBottomAlignment(e, t, n) {
     let {
       nudgeAlignIntoViewport: r
     } = this.props, i = n.offsetHeight, a = i - e;
     if (!r) return a;
-    let o = a + t.offsetHeight - i + T;
-    return o > 0 ? Math.max(T, a - o) : a
+    let o = a + t.offsetHeight - i + I;
+    return o > 0 ? Math.max(I, a - o) : a
   }
   getVerticalAlignmentStyle(e, t, n, r) {
     let {
@@ -284,7 +284,7 @@ class w extends(r = Chunk473749.Component) {
   calculatePositionStyle(e, t, n, r) {
     let {
       spacing: i = 0
-    } = this.props, a = P(this.props), o = n.getBoundingClientRect(), s = C(a, o.left, o.top);
+    } = this.props, a = R(this.props), o = n.getBoundingClientRect(), s = C(a, o.left, o.top);
     switch (e) {
       case "top":
         return this.getHorizontalAlignmentStyle(s, t, n, {
@@ -308,7 +308,7 @@ class w extends(r = Chunk473749.Component) {
         });
       case "overlap_horizontal":
         return this.getVerticalAlignmentStyle(s, t, n, {
-          [r]: T
+          [r]: I
         });
       case "center":
         return this.getVerticalAlignmentStyle(s, t, n, {
@@ -362,7 +362,7 @@ class w extends(r = Chunk473749.Component) {
         }
       }
     }
-    return R(Chunk512722, require, Chunk120356)
+    return P(Chunk512722, require, Chunk120356)
   }
   componentDidMount() {
     var e, t;
@@ -377,7 +377,7 @@ class w extends(r = Chunk473749.Component) {
     c()(null != Chunk54381, "Missing elementRef"), null != require.current && O.set(Chunk54381, require.current), null == Chunk54381 || null == (t = Chunk54381.ownerDocument) || null == (e = exports.defaultView) || module.addEventListener("resize", this.updatePosition), null == r || r()
   }
   componentDidUpdate(e, t) {
-    if (S(e) === S(this.props) && D(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
+    if (T(e) === T(this.props) && w(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
       var n, r;
       null == (n = (r = this.props).onPositionChange) || n.call(r, this.state.position)
     }
@@ -392,7 +392,7 @@ class w extends(r = Chunk473749.Component) {
     if (null == module) return;
     let t = (0, Chunk168718.wL)(module),
       n = this.state.style;
-    return null != require.top ? Math.max(0, exports.offsetHeight - require.top - T) : null != require.bottom ? Math.max(0, exports.offsetHeight - require.bottom - T) : Math.max(0, exports.offsetHeight - 2 * T)
+    return null != require.top ? Math.max(0, exports.offsetHeight - require.top - I) : null != require.bottom ? Math.max(0, exports.offsetHeight - require.bottom - I) : Math.max(0, exports.offsetHeight - 2 * I)
   }
   render() {
     let {
@@ -406,7 +406,7 @@ class w extends(r = Chunk473749.Component) {
       position: l,
       isPositioned: c,
       nudge: u
-    } = this.state, p = this.calculateMaxHeight();
+    } = this.state, _ = this.calculateMaxHeight();
     return (0, Chunk54381.jsx)("div", {
       className: s()({
         [Chunk793906.clickTrapContainer]: true,
@@ -417,18 +417,18 @@ class w extends(r = Chunk473749.Component) {
           let {
             disableAdaptiveTheme: f
           } = o;
-          return (0, i.jsx)(_.f, {
+          return (0, i.jsx)(p.f, {
             disableAdaptiveTheme: f,
             children: o => (0, i.jsx)("div", {
               id: e,
-              className: s()(t, o, m.layer, {
-                [m.emptyError]: false,
-                [m.disabledPointerEvents]: a
+              className: s()(t, o, h.layer, {
+                [h.emptyError]: false,
+                [h.disabledPointerEvents]: a
               }),
               style: y(E({
                 position: r ? "fixed" : "absolute"
               }, this.state.style), {
-                "--reference-position-layer-max-height": null != p ? "".concat(p, "px") : true
+                "--reference-position-layer-max-height": null != _ ? "".concat(_, "px") : true
               }),
               ref: this.elementRef,
               children: (0, i.jsx)(d.Jc, {
@@ -456,7 +456,7 @@ class w extends(r = Chunk473749.Component) {
     })
   }
 }
-g(w, "defaultProps", {
+g(D, "defaultProps", {
   nudgeAlignIntoViewport: false,
   spacing: 0,
   autoInvert: false,

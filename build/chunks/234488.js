@@ -11,8 +11,8 @@ var Chunk46015 = require("./46015.js"),
   u = Chunk154028("Reflect", "construct"),
   d = /^\s*(?:class|function)\b/,
   f = Chunk46015(d.exec),
-  _ = !d.test(c),
-  p = function(e) {
+  p = !d.test(c),
+  _ = function(e) {
     if (!a(e)) returnfalse;
     try {
       return u(c, [], e), true
@@ -20,7 +20,7 @@ var Chunk46015 = require("./46015.js"),
       returnfalse
     }
   },
-  h = function(e) {
+  m = function(e) {
     if (!a(e)) returnfalse;
     switch (o(e)) {
       case "AsyncFunction":
@@ -29,14 +29,14 @@ var Chunk46015 = require("./46015.js"),
         returnfalse
     }
     try {
-      return _ || !!f(d, l(e))
+      return p || !!f(d, l(e))
     } catch (e) {
       returntrue
     }
   };
-h.sham = true, module.exports = !u || Chunk621523(function() {
+m.sham = true, module.exports = !u || Chunk621523(function() {
   var e;
-  return p(p.call) || !p(Object) || !p(function() {
+  return _(_.call) || !_(Object) || !_(function() {
     e = true
   }) || module
-}) ? h : p
+}) ? m : _

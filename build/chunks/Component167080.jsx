@@ -2,7 +2,7 @@
 /** chunk id: 167080, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,15 +45,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,46 +61,46 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = e => {
+let h = e => {
   var {
     href: t,
     className: n,
     iconClassName: u,
     rel: f,
-    target: h,
-    mimeType: m,
+    target: m,
+    mimeType: h,
     fileName: g,
     focusProps: E,
     onClick: b
-  } = e, y = p(e, ["href", "className", "iconClassName", "rel", "target", "mimeType", "fileName", "focusProps", "onClick"]);
+  } = e, y = _(e, ["href", "className", "iconClassName", "rel", "target", "mimeType", "fileName", "focusProps", "onClick"]);
   let O = i.useMemo(() => a.X.getDefaultLinkInterceptor(t), [t]),
     v = i.useCallback(e => {
       s.default.track(l.rMx.MEDIA_DOWNLOAD_BUTTON_TAPPED, {
-        attachment_type: null == m ? true : m[0],
-        attachment_subtype: null == m ? true : m[1]
+        attachment_type: null == h ? true : h[0],
+        attachment_subtype: null == h ? true : h[1]
       }), null == b || b(), null == O || O(e)
-    }, [O, m, b]);
-  return null != g ? (0, r.jsx)(o.Anchor, _(d({
+    }, [O, h, b]);
+  return null != g ? (0, r.jsx)(o.Anchor, p(d({
     href: t,
     onClick: v,
-    target: h,
+    target: m,
     rel: f,
     className: n,
     "aria-label": c.intl.string(c.t["1WjMbC"]),
     focusProps: E
   }, y), {
     children: g
-  })) : (0, r.jsx)(o.Anchor, _(d({
+  })) : (0, r.jsx)(o.Anchor, p(d({
     href: t,
     onClick: v,
-    target: h,
+    target: m,
     rel: f,
     className: n,
     "aria-label": c.intl.string(c.t["1WjMbC"]),

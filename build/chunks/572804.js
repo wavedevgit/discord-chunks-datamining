@@ -61,18 +61,18 @@ function d(e) {
     mentionUsers: u,
     mentionRoles: d,
     mentionGames: f,
-    suppressEveryone: _ = false,
-    suppressRoles: p = false
+    suppressEveryone: p = false,
+    suppressRoles: _ = false
   } = e;
-  if (c && !_ || u.includes(t) || f.some(e => {
+  if (c && !p || u.includes(t) || f.some(e => {
       var t;
       return !r.Z.getMute(e) && (null != (t = s.Z.getLastPlayedDateTime(e)) ? t : 0) > Date.now() - l
     })) returntrue;
-  if (p || null == d || 0 === d.length) returnfalse;
-  let h = i.Z.getChannel(n);
-  if (null == h) returnfalse;
-  let m = h.getGuildId();
-  if (null == m || null == o.Z.getGuild(m)) returnfalse;
-  let g = a.ZP.getMember(m, t);
+  if (_ || null == d || 0 === d.length) returnfalse;
+  let m = i.Z.getChannel(n);
+  if (null == m) returnfalse;
+  let h = m.getGuildId();
+  if (null == h || null == o.Z.getGuild(h)) returnfalse;
+  let g = a.ZP.getMember(h, t);
   return null != g && d.some(e => g.roles.includes(e))
 }

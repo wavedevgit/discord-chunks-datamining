@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => g,
-  _: () => p
+  _: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,17 +15,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk162168 = require("./162168.jsx"),
   Chunk624138 = require("./624138.js"),
   Chunk776421 = require("./776421.js");
-let _ = (0, Chunk624138.Mg)(Chunk477690.Z.GRADIENT_PROGRESS_NOTCH_WIDTH);
-var p = function(e) {
+let p = (0, Chunk624138.Mg)(Chunk477690.Z.GRADIENT_PROGRESS_NOTCH_WIDTH);
+var _ = function(e) {
   return e.BLACK = "BLACK", e.GRAY = "GRAY", e
 }({});
-let h = {
+let m = {
   BLACK: Chunk776421.black,
   GRAY: Chunk776421.gray
 };
 
-function m(e) {
-  return Math.round(e / _) * _
+function h(e) {
+  return Math.round(e / p) * p
 }
 
 function g(e) {
@@ -35,13 +35,13 @@ function g(e) {
     gradientStart: a = s.Z.unsafe_rawColors.YELLOW_260.css,
     gradientEnd: l = s.Z.unsafe_rawColors.GREEN_360.css,
     className: d,
-    notchClassName: _,
-    children: p
+    notchClassName: p,
+    children: _
   } = e, {
     ref: g,
     width: E
-  } = (0, c.ZP)(), b = i.useMemo(() => null != E ? m(E) : 0, [E]), y = i.useMemo(() => {
-    let e = Math.abs(m(b * (100 - Math.max(0, Math.min(100, n))) / 100) - b);
+  } = (0, c.ZP)(), b = i.useMemo(() => null != E ? h(E) : 0, [E]), y = i.useMemo(() => {
+    let e = Math.abs(h(b * (100 - Math.max(0, Math.min(100, n))) / 100) - b);
     return {
       transform: "translateX(".concat(e, "px)")
     }
@@ -60,8 +60,8 @@ function g(e) {
         style: y
       }), 0 !== b && (0, r.jsx)(u.Z, {
         width: b,
-        className: o()(f.notches, h[t], _)
+        className: o()(f.notches, m[t], p)
       })]
-    }), p]
+    }), _]
   })
 }

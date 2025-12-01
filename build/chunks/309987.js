@@ -14,7 +14,7 @@ var Chunk50153 = require("./50153.js"),
   u = Chunk65183.Record,
   d = Chunk65183.Repeat,
   f = c(),
-  _ = {
+  p = {
     parent: null,
     characterList: s(),
     data: l(),
@@ -26,13 +26,13 @@ var Chunk50153 = require("./50153.js"),
     prevSibling: null,
     nextSibling: null
   },
-  p = function(e, t) {
+  _ = function(e, t) {
     return e.getStyle() === t.getStyle()
   },
-  h = function(e, t) {
+  m = function(e, t) {
     return e.getEntity() === t.getEntity()
   },
-  m = function(e) {
+  h = function(e) {
     if (!e) return e;
     var t = e.characterList,
       n = e.text;
@@ -40,8 +40,8 @@ var Chunk50153 = require("./50153.js"),
   };
 module.exports = function(e) {
   function t() {
-    var t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : _;
-    return e.call(this, m(t)) || this
+    var t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : p;
+    return e.call(this, h(t)) || this
   }
   r(t, e);
   var n = t.prototype;
@@ -74,8 +74,8 @@ module.exports = function(e) {
   }, n.getNextSiblingKey = function() {
     return this.get("nextSibling")
   }, n.findStyleRanges = function(e, t) {
-    a(this.getCharacterList(), p, e, t)
+    a(this.getCharacterList(), _, e, t)
   }, n.findEntityRanges = function(e, t) {
-    a(this.getCharacterList(), h, e, t)
+    a(this.getCharacterList(), m, e, t)
   }, t
-}(u(_))
+}(u(p))

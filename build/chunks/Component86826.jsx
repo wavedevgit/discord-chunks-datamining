@@ -1,61 +1,57 @@
 /** Chunk was on 1272 **/
 /** chunk id: 86826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk44315 = require("./44315.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk120998 = require("./120998.jsx"),
   Chunk353042 = require("./353042.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk496034 = require("./496034.js");
-let p = function(e) {
-  var t;
+let d = function(e) {
   let {
-    title: n,
-    className: i,
-    color: p,
-    animate: f,
-    gradientStopColor: h,
-    getHistoricalTotalBytes: g
-  } = e, m = (0, a.Sl)(p).hex, _ = null == (t = (0, a.Sl)(h)) ? true : t.hex;
-  return (0, r.jsx)(c.Z, {
-    getHistoricalTotalBytes: g,
-    children: (e, t, a) => {
-      var c;
+    title: t,
+    className: n,
+    color: i,
+    animate: d,
+    getHistoricalTotalBytes: p
+  } = e;
+  return (0, r.jsx)(o.Z, {
+    getHistoricalTotalBytes: p,
+    children: (e, o, p) => {
+      var f;
       return (0, r.jsx)("div", {
-        className: l()(d.monitor, i),
-        children: (0, r.jsxs)(s.Z, {
-          align: s.Z.Align.CENTER,
-          children: [(0, r.jsxs)(s.Z, {
-            className: d.text,
-            direction: s.Z.Direction.VERTICAL,
+        className: l()(u.monitor, n),
+        children: (0, r.jsxs)(a.Z, {
+          align: a.Z.Align.CENTER,
+          children: [(0, r.jsxs)(a.Z, {
+            className: u.text,
+            direction: a.Z.Direction.VERTICAL,
             children: [(0, r.jsx)("div", {
-              className: d.title,
-              children: n
+              className: u.title,
+              children: t
             }), (0, r.jsx)("div", {
-              className: d.rate,
-              children: (c = e[e.length - 1] / t * 1e3) > 1e3 ? u.intl.formatToPlainString(u.t["WU+gTX"], {
-                size: Math.round(c / 1e3)
-              }) : u.intl.formatToPlainString(u.t.wnF6TH, {
-                size: Math.round(c)
+              className: u.rate,
+              children: (f = e[e.length - 1] / o * 1e3) > 1e3 ? c.intl.formatToPlainString(c.t["WU+gTX"], {
+                size: Math.round(f / 1e3)
+              }) : c.intl.formatToPlainString(c.t.wnF6TH, {
+                size: Math.round(f)
               })
             })]
           }), (0, r.jsx)("div", {
-            className: d.overflowContainer,
-            children: (0, r.jsx)(o.Z, {
+            className: u.overflowContainer,
+            children: (0, r.jsx)(s.Z, {
               data: e,
               maxValue: Math.max(Math.max.apply(null, e), 1e3),
-              className: d.sparkChart,
-              updateInterval: t,
-              color: m,
-              gradientStopColor: _,
-              numUpdatesToShow: a,
-              animate: f,
+              className: u.sparkChart,
+              updateInterval: o,
+              color: i,
+              numUpdatesToShow: p,
+              animate: d,
               pixelWidth: 600,
               pixelHeight: 48,
               lineWidth: 4

@@ -10,18 +10,18 @@ require.d(exports, {
   TX: () => C,
   U: () => A,
   Wz: () => N,
-  YC: () => T,
-  _6: () => I,
-  _w: () => _,
+  YC: () => I,
+  _6: () => S,
+  _w: () => p,
   dG: () => y,
-  f2: () => h,
+  f2: () => m,
   i0: () => u,
-  iB: () => p,
+  iB: () => _,
   ip: () => f,
   ix: () => g,
   ne: () => E,
-  tx: () => S,
-  vH: () => m,
+  tx: () => T,
+  vH: () => h,
   zE: () => d
 }), require("./388685.js");
 var Chunk860911 = require("./860911.js"),
@@ -34,10 +34,10 @@ let l = 30 * Chunk70956.Z.Millis.SECOND,
   u = 3,
   d = 26,
   f = 64,
-  _ = (e, t) => "https://discord.com/feature/family-center/my-family/".concat(e, "/").concat(t),
-  p = 4,
-  h = 5 * Chunk70956.Z.Millis.MINUTE,
-  m = "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  p = (e, t) => "https://discord.com/feature/family-center/my-family/".concat(e, "/").concat(t),
+  _ = 4,
+  m = 5 * Chunk70956.Z.Millis.MINUTE,
+  h = "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   g = (0, Chunk860911.Ft)(Object.freeze({
     FAMILY_CENTER_SETTINGS: "/family-center/settings",
     FAMILY_CENTER_MY_FAMILY: "/family-center/my-family"
@@ -57,13 +57,13 @@ var E = function(e) {
   v = function(e) {
     return e.SIDENAV = "SIDENAV", e.SETTINGS = "SETTINGS", e
   }({}),
-  I = function(e) {
+  S = function(e) {
     return e[e.SIDENAV = 0] = "SIDENAV", e[e.SETTINGS = 1] = "SETTINGS", e
   }({}),
-  T = function(e) {
+  I = function(e) {
     return e[e.TabChange = 0] = "TabChange", e[e.ShowQRCodeModal = 1] = "ShowQRCodeModal", e[e.RevealQRCode = 2] = "RevealQRCode", e[e.ScanQRCodeButton = 3] = "ScanQRCodeButton", e[e.ScanQRCode = 4] = "ScanQRCode", e[e.LoadMore = 5] = "LoadMore", e[e.SelectTeen = 6] = "SelectTeen", e[e.HideQRCode = 7] = "HideQRCode", e
   }({});
-let S = new Map([
+let T = new Map([
     [3, {
       priority: 100,
       tooltipHeader: () => Chunk388032.intl.string(Chunk744038.default.kvTgWP),

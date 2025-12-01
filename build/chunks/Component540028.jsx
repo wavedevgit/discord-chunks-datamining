@@ -2,7 +2,7 @@
 /** chunk id: 540028, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -55,34 +55,34 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e) {
+function I(e) {
   let {
     closePopout: t,
     idle: n,
     pipWindows: i,
     voiceChannelId: o,
-    onSelect: h
+    onSelect: m
   } = e;
   n && t();
   let b = (0, a.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
-    y = (0, a.e7)([p.Z], () => p.Z.pipWindow),
+    y = (0, a.e7)([_.Z], () => _.Z.pipWindow),
     O = (0, a.e7)([f.Z], () => f.Z.getSelectedParticipant(o)),
     v = (0, a.e7)([f.Z], () => f.Z.getStreamParticipants(o));
 
-  function I(e) {
+  function S(e) {
     (null == y ? true : y.id) !== e.pipWindow.id && (0, c.k3)(e.pipWindow.id);
     let t = e.participant;
     null != t && t.type !== g.fO.ACTIVITY && l.Z.selectParticipant(o, t.id)
   }
 
-  function T(e) {
-    if (e.pipWindow.component === m.NYg.ACTIVITY && null != b) {
+  function I(e) {
+    if (e.pipWindow.component === h.NYg.ACTIVITY && null != b) {
       var t;
       let e = null == (t = d.Z.getApplication(b.applicationId)) ? true : t.name;
       return null == e ? E.intl.string(E.t["8raC1P"]) : E.intl.formatToPlainString(E.t["a9+V+V"], {
@@ -94,11 +94,11 @@ function T(e) {
     })
   }
 
-  function S() {
+  function T() {
     let e = [],
-      t = i.find(e => e.component === m.NYg.VIDEO);
+      t = i.find(e => e.component === h.NYg.VIDEO);
     return null != t && v.forEach(n => {
-      let r = _.Z.getActiveStreamForApplicationStream(n.stream),
+      let r = p.Z.getActiveStreamForApplicationStream(n.stream),
         i = n.id === (null == O ? true : O.id) && (null == y ? true : y.id) === t.id;
       null == r || i || e.push({
         pipWindow: t,
@@ -112,39 +112,39 @@ function T(e) {
     var t;
     let n = e.pipWindow.id,
       i = null == (t = e.participant) ? true : t.id,
-      a = T(e),
+      a = I(e),
       o = "".concat(n).concat(null != i ? i : "");
     return (0, r.jsx)(s.sNh, {
       id: o,
       label: a,
-      action: () => I(e)
+      action: () => S(e)
     }, o)
   }
   return (0, r.jsx)(s.v2r, {
     navId: "pip-menu",
     "aria-label": "switch PIP",
     onClose: t,
-    onSelect: h,
-    children: S().map(A)
+    onSelect: m,
+    children: T().map(A)
   })
 }
-let S = function(e) {
+let T = function(e) {
   let {
     voiceChannelId: t,
     idle: n
-  } = e, l = i.useRef(null), c = Array.from((0, a.e7)([p.Z], () => p.Z.pipWindows).values()).filter(e => e.component !== m.NYg.ACTIVITY), u = (0, a.Wu)([_.Z], () => _.Z.getAllActiveStreamsForChannel(t)).filter(e => {
+  } = e, l = i.useRef(null), c = Array.from((0, a.e7)([_.Z], () => _.Z.pipWindows).values()).filter(e => e.component !== h.NYg.ACTIVITY), u = (0, a.Wu)([p.Z], () => p.Z.getAllActiveStreamsForChannel(t)).filter(e => {
     var n;
-    return e.ownerId !== (null == (n = h.default.getCurrentUser()) ? true : n.id) && e.channelId === t
-  }), d = 1 === c.length && c[0].component === m.NYg.ACTIVITY || 0 === u.length, f = 1 === c.length && u.length <= 1;
+    return e.ownerId !== (null == (n = m.default.getCurrentUser()) ? true : n.id) && e.channelId === t
+  }), d = 1 === c.length && c[0].component === h.NYg.ACTIVITY || 0 === u.length, f = 1 === c.length && u.length <= 1;
   return d || f ? null : (0, r.jsx)(s.yRy, {
     targetElementRef: l,
     position: "bottom",
-    renderPopout: e => (0, r.jsx)(T, O({
+    renderPopout: e => (0, r.jsx)(I, O({
       voiceChannelId: t,
       pipWindows: c,
       idle: n
     }, e)),
-    children: e => (0, r.jsx)(s.P3F, I(O({
+    children: e => (0, r.jsx)(s.P3F, S(O({
       className: b.menuIcon
     }, e), {
       innerRef: l,

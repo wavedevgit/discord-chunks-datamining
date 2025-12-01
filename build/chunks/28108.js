@@ -63,15 +63,15 @@ function t(e) {
       begin: t.optional(i) + e.IDENT_RE,
       relevance: 0
     },
-    _ = t.optional(i) + e.IDENT_RE + "\\s*\\(",
-    p = {
+    p = t.optional(i) + e.IDENT_RE + "\\s*\\(",
+    _ = {
       type: ["bool", "char", "char16_t", "char32_t", "char8_t", "double", "float", "int", "long", "short", "void", "wchar_t", "unsigned", "signed", "const", "static"],
       keyword: ["alignas", "alignof", "and", "and_eq", "asm", "atomic_cancel", "atomic_commit", "atomic_noexcept", "auto", "bitand", "bitor", "break", "case", "catch", "class", "co_await", "co_return", "co_yield", "compl", "concept", "const_cast|10", "consteval", "constexpr", "constinit", "continue", "decltype", "default", "delete", "do", "dynamic_cast|10", "else", "enum", "explicit", "export", "extern", "false", "final", "for", "friend", "goto", "if", "import", "inline", "module", "mutable", "namespace", "new", "noexcept", "not", "not_eq", "nullptr", "operator", "or", "or_eq", "override", "private", "protected", "public", "reflexpr", "register", "reinterpret_cast|10", "requires", "return", "sizeof", "static_assert", "static_cast|10", "struct", "switch", "synchronized", "template", "this", "thread_local", "throw", "transaction_safe", "transaction_safe_dynamic", "true", "try", "typedef", "typeid", "typename", "union", "using", "virtual", "volatile", "while", "xor", "xor_eq"],
       literal: ["NULL", "false", "nullopt", "nullptr", "true"],
       built_in: ["_Pragma"],
       _type_hints: ["any", "auto_ptr", "barrier", "binary_semaphore", "bitset", "complex", "condition_variable", "condition_variable_any", "counting_semaphore", "deque", "false_type", "flat_map", "flat_set", "future", "imaginary", "initializer_list", "istringstream", "jthread", "latch", "lock_guard", "multimap", "multiset", "mutex", "optional", "ostringstream", "packaged_task", "pair", "promise", "priority_queue", "queue", "recursive_mutex", "recursive_timed_mutex", "scoped_lock", "set", "shared_future", "shared_lock", "shared_mutex", "shared_timed_mutex", "shared_ptr", "stack", "string_view", "stringstream", "timed_mutex", "thread", "true_type", "tuple", "unique_lock", "unique_ptr", "unordered_map", "unordered_multimap", "unordered_multiset", "unordered_set", "variant", "vector", "weak_ptr", "wstring", "wstring_view"]
     },
-    h = {
+    m = {
       className: "function.dispatch",
       relevance: 0,
       keywords: {
@@ -79,7 +79,7 @@ function t(e) {
       },
       begin: t.concat(/\b/, /(?!decltype)/, /(?!if)/, /(?!for)/, /(?!switch)/, /(?!while)/, e.IDENT_RE, t.lookahead(/(<[^<>]+>|)\s*\(/))
     },
-    m = [h, d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
+    h = [m, d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
     g = {
       variants: [{
         begin: /=/,
@@ -91,30 +91,30 @@ function t(e) {
         beginKeywords: "new throw return else",
         end: /;/
       }],
-      keywords: p,
-      contains: m.concat([{
+      keywords: _,
+      contains: h.concat([{
         begin: /\(/,
         end: /\)/,
-        keywords: p,
-        contains: m.concat(["self"]),
+        keywords: _,
+        contains: h.concat(["self"]),
         relevance: 0
       }]),
       relevance: 0
     },
     E = {
       className: "function",
-      begin: "(" + o + "[\\*&\\s]+)+" + _,
+      begin: "(" + o + "[\\*&\\s]+)+" + p,
       returnBegin: true,
       end: /[{;=]/,
       excludeEnd: true,
-      keywords: p,
+      keywords: _,
       illegal: /[^\w\s\*&:<>.]/,
       contains: [{
         begin: r,
-        keywords: p,
+        keywords: _,
         relevance: 0
       }, {
-        begin: _,
+        begin: p,
         returnBegin: true,
         contains: [f],
         relevance: 0
@@ -132,12 +132,12 @@ function t(e) {
         className: "params",
         begin: /\(/,
         end: /\)/,
-        keywords: p,
+        keywords: _,
         relevance: 0,
         contains: [n, e.C_BLOCK_COMMENT_MODE, c, u, s, {
           begin: /\(/,
           end: /\)/,
-          keywords: p,
+          keywords: _,
           relevance: 0,
           contains: ["self", n, e.C_BLOCK_COMMENT_MODE, c, u, s]
         }]
@@ -146,19 +146,19 @@ function t(e) {
   return {
     name: "C++",
     aliases: ["cc", "c++", "h++", "hpp", "hh", "hxx", "cxx"],
-    keywords: p,
+    keywords: _,
     illegal: "</",
     classNameAliases: {
       "function.dispatch": "built_in"
     },
-    contains: [].concat(g, E, h, m, [d, {
+    contains: [].concat(g, E, m, h, [d, {
       begin: "\\b(deque|list|queue|priority_queue|pair|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array|tuple|optional|variant|function|flat_map|flat_set)\\s*<(?!<)",
       end: ">",
-      keywords: p,
+      keywords: _,
       contains: ["self", s]
     }, {
       begin: e.IDENT_RE + "::",
-      keywords: p
+      keywords: _
     }, {
       match: [/\b(?:enum(?:\s+(?:class|struct))?|class|struct|union)/, /\s+/, /\w+/],
       className: {

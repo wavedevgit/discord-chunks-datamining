@@ -26,13 +26,13 @@ function d(e, t, n, r) {
   for (let s = 0; s < Math.ceil(n.MPEntry.value.length / c); s++) {
     a[s] = {};
     let l = f(n.MPEntry.value, s * c, i.Z.getTypeSize("LONG"), r);
-    a[s].ImageFlags = _(l), a[s].ImageFormat = p(l), a[s].ImageType = h(l);
+    a[s].ImageFlags = p(l), a[s].ImageFormat = _(l), a[s].ImageType = m(l);
     let u = f(n.MPEntry.value, s * c + 4, i.Z.getTypeSize("LONG"), r);
     a[s].ImageSize = {
       value: u,
       description: "" + u
     };
-    let d = m(s, n.MPEntry, r, t);
+    let d = h(s, n.MPEntry, r, t);
     a[s].ImageOffset = {
       value: d,
       description: "" + d
@@ -64,7 +64,7 @@ function f(e, t, n, i) {
   return a
 }
 
-function _(e) {
+function p(e) {
   let t = [e >> 31 & 1, e >> 30 & 1, e >> 29 & 1],
     n = [];
   return t[0] && n.push("Dependent Parent Image"), t[1] && n.push("Dependent Child Image"), t[2] && n.push("Representative Image"), {
@@ -73,7 +73,7 @@ function _(e) {
   }
 }
 
-function p(e) {
+function _(e) {
   let t = e >> 24 & 7;
   return {
     value: t,
@@ -81,7 +81,7 @@ function p(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   let t = 0xffffff & e;
   return {
     value: t,
@@ -97,7 +97,7 @@ function h(e) {
   }
 }
 
-function m(e, t, n, r) {
+function h(e, t, n, r) {
   return g(e) ? 0 : f(t.value, e * c + 8, i.Z.getTypeSize("LONG"), n) + r
 }
 

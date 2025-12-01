@@ -64,7 +64,7 @@ let u = [{
     value: 40
   }],
   d = () => {
-    let [e, t] = Chunk473749.useState(15), [n, d] = Chunk473749.useState(8), [f, _] = Chunk473749.useState("xl"), p = Chunk473749.useMemo(() => [...Array(module)].map((e, t) => (0, r.jsx)(o.P3F, {
+    let [e, t] = Chunk473749.useState(15), [n, d] = Chunk473749.useState(8), [f, p] = Chunk473749.useState("xl"), _ = Chunk473749.useMemo(() => [...Array(module)].map((e, t) => (0, r.jsx)(o.P3F, {
       className: c.child,
       onClick: () => console.log(t),
       children: t
@@ -73,7 +73,7 @@ let u = [{
       children: [(0, Chunk54381.jsx)(Chunk624968.Z, {
         gap: require,
         edgeFade: f,
-        children: p
+        children: _
       }), (0, Chunk54381.jsx)(Chunk261538.dv, {}), (0, Chunk54381.jsx)(Chunk261538.BZ, {
         children: (0, Chunk54381.jsx)(Chunk481060.oil, {
           type: "number",
@@ -95,7 +95,7 @@ let u = [{
         children: (0, Chunk54381.jsx)(Chunk481060.q4e, {
           value: f,
           options: u,
-          onChange: e => _(e),
+          onChange: e => p(e),
           label: "Edge Fade Space"
         })
       })]

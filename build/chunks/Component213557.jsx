@@ -69,38 +69,38 @@ function D(e) {
   let {
     channelId: n,
     baseChannelId: D,
-    channelViewSource: k = "Split View",
-    isResourceChannelView: A
-  } = e, R = (0, i.e7)([O.Z], () => O.Z.getChannel(n)), L = (0, i.e7)([N.Z], () => N.Z.getGuild(null == R ? true : R.getGuildId())), H = (0, w.ZP)(R), M = (0, i.e7)([C.Z], () => (null == L ? true : L.id) != null && C.Z.isLurking(L.id), [L]), U = (0, f.Z)(n), G = (0, i.e7)([m.Z], () => {
+    channelViewSource: A = "Split View",
+    isResourceChannelView: R
+  } = e, k = (0, i.e7)([O.Z], () => O.Z.getChannel(n)), L = (0, i.e7)([N.Z], () => N.Z.getGuild(null == k ? true : k.getGuildId())), H = (0, Z.ZP)(k), M = (0, i.e7)([C.Z], () => (null == L ? true : L.id) != null && C.Z.isLurking(L.id), [L]), U = (0, f.Z)(n), G = (0, i.e7)([m.Z], () => {
     var e;
     return null == (e = m.Z.getResourceForChannel(null == L ? true : L.id, n)) ? true : e.title
-  }), W = (0, c.$5)(R), F = l.useRef(false);
+  }), W = (0, c.$5)(k), F = l.useRef(false);
   if (l.useEffect(() => {
-      null == R || F.current || (F.current = true, (0, d.yw)(P.rMx.CHANNEL_OPENED, B(T({}, (0, d.$H)(R.id)), {
-        channel_view: k
+      null == k || F.current || (F.current = true, (0, d.yw)(P.rMx.CHANNEL_OPENED, B(T({}, (0, d.$H)(k.id)), {
+        channel_view: A
       })), (0, u.a)(P.rMx.CHANNEL_OPENED_CLICKSTREAM, {
-        channelId: R.id
+        channelId: k.id
       }))
-    }, [R, k]), null == R || null == L) return null;
+    }, [k, A]), null == k || null == L) return null;
   let q = [];
   return (M || q.push((0, r.jsx)(_.Z, {
-    channel: R
+    channel: k
   }, "notifications")), q.push((0, r.jsx)(g.ZP.Icon, {
     icon: a.Dio,
     tooltip: S.intl.string(S.t.cpT0Cq),
     onClick: () => j.Z.closeChannelSidebar(D)
   }, "close")), W) ? (0, r.jsx)(v.Z, {
     guild: L,
-    channelId: R.id
+    channelId: k.id
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
-      channel: R,
+      channel: k,
       draftType: y.d.ChannelMessage
     }), (0, r.jsx)(g.ZP, {
       toolbar: q,
       "aria-label": S.intl.string(S.t.BIYAqa),
       children: (0, x.ud)({
-        channel: R,
+        channel: k,
         channelName: U ? G : H,
         guild: L,
         inSidebar: true,
@@ -110,23 +110,23 @@ function D(e) {
               default: e
             } = await Promise.all([t.e("24783"), t.e("41815")]).then(t.bind(t, 439635));
             return n => (0, r.jsx)(e, B(T({}, n), {
-              channel: R,
+              channel: k,
               guild: L
             }))
           })
         },
         handleClick: () => {
-          let e = I.Z.getMessages(R.id);
-          if (A) {
-            (0, b.uL)(P.Z5c.CHANNEL(R.guild_id, R.id)), (0, h.C3)(R.guild_id, null);
+          let e = w.Z.getMessages(k.id);
+          if (R) {
+            (0, b.uL)(P.Z5c.CHANNEL(k.guild_id, k.id)), (0, h.C3)(k.guild_id, null);
             return
-          }(0, b.XU)(R.guild_id, R.id, e.jumpTargetId)
+          }(0, b.XU)(k.guild_id, k.id, e.jumpTargetId)
         }
       })
     }), (0, r.jsx)("div", {
       className: E.chat,
-      children: (0, r.jsx)(Z.Z, {
-        channel: R,
+      children: (0, r.jsx)(I.Z, {
+        channel: k,
         guild: L,
         chatInputType: p.Ie.SIDEBAR
       }, n)

@@ -2,7 +2,7 @@
 /** chunk id: 260483, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -34,20 +34,20 @@ function d(e) {
 }
 let f = {};
 
-function _(e) {
+function p(e) {
   f = a().omitBy(f, t => t.guildId === e)
 }
 
-function p(e) {
+function _(e) {
   f = a().omitBy(f, t => t.parentId === e)
 }
 
-function h(e) {
+function m(e) {
   var t;
   null == (t = e.threads) || t.forEach(g)
 }
 
-function m(e) {
+function h(e) {
   if (!(e.id in f)) {
     var t, n;
     f[e.id] = {
@@ -62,12 +62,12 @@ function m(e) {
 
 function g(e) {
   if (!l.AW.has(e.type)) returnfalse;
-  let t = m(e);
+  let t = h(e);
   null != e.memberCount && (t.memberCount = e.memberCount), null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview)
 }
 
 function E(e) {
-  f = {}, e.guilds.forEach(h)
+  f = {}, e.guilds.forEach(m)
 }
 
 function b(e) {
@@ -81,14 +81,14 @@ function y(e) {
   let {
     guild: t
   } = e;
-  h(t)
+  m(t)
 }
 
 function O(e) {
   let {
     guild: t
   } = e;
-  _(t.id)
+  p(t.id)
 }
 
 function v(e) {
@@ -98,25 +98,25 @@ function v(e) {
   return g(t)
 }
 
-function I(e) {
+function S(e) {
   let {
     threads: t
   } = e;
   t.forEach(g)
 }
 
-function T(e) {
+function I(e) {
   let {
     threads: t
   } = e;
-  t.forEach(R)
+  t.forEach(P)
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t
   } = e;
-  p(t.id)
+  _(t.id)
 }
 
 function A(e) {
@@ -128,7 +128,7 @@ function A(e) {
 
 function C(e) {
   let t = false;
-  for (let n of e.messages) t = R(n.thread) || t;
+  for (let n of e.messages) t = P(n.thread) || t;
   return t
 }
 
@@ -143,15 +143,15 @@ function N(e) {
     } = e;
     r.forEach(e => {
       e.forEach(e => {
-        n = R(e.thread) || n
+        n = P(e.thread) || n
       })
     }), t.forEach(e => {
-      n = R(e) || n
+      n = P(e) || n
     })
   }), n
 }
 
-function R(e) {
+function P(e) {
   if (null != e && !(e.id in f)) {
     let t = c.Z.getChannel(e.id);
     if (null != t) return g(t), true
@@ -159,12 +159,12 @@ function R(e) {
   returnfalse
 }
 
-function P(e) {
+function R(e) {
   let t = f[e.id];
   if (null == t) returnfalse;
   null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview), t.memberCount = e.memberCount
 }
-class D extends(r = Chunk442837.ZP.Store) {
+class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z)
   }
@@ -180,21 +180,21 @@ class D extends(r = Chunk442837.ZP.Store) {
     return f
   }
 }
-u(D, "displayName", "ThreadMembersStore");
-let w = new D(Chunk570140.Z, {
+u(w, "displayName", "ThreadMembersStore");
+let D = new w(Chunk570140.Z, {
   CONNECTION_OPEN: E,
   OVERLAY_INITIALIZE: b,
   GUILD_CREATE: y,
   GUILD_DELETE: O,
-  CHANNEL_DELETE: S,
+  CHANNEL_DELETE: T,
   THREAD_CREATE: v,
   THREAD_UPDATE: v,
-  THREAD_LIST_SYNC: I,
-  THREAD_MEMBERS_UPDATE: P,
+  THREAD_LIST_SYNC: S,
+  THREAD_MEMBERS_UPDATE: R,
   SEARCH_MESSAGES_SUCCESS: N,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: N,
-  LOAD_THREADS_SUCCESS: T,
-  LOAD_ARCHIVED_THREADS_SUCCESS: T,
+  LOAD_THREADS_SUCCESS: I,
+  LOAD_ARCHIVED_THREADS_SUCCESS: I,
   THREAD_DELETE: A,
   LOAD_MESSAGES_SUCCESS: C
 })

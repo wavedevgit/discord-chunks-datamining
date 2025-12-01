@@ -2,7 +2,7 @@
 /** chunk id: 997383, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./781311.js"), require("./457542.js"), require("./539854.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -44,12 +44,12 @@ function y(e) {
 }
 let O = 100,
   v = Object.freeze({}),
-  I = 300;
+  S = 300;
 
-function T(e, t) {
-  return t.frecencyBoosters ? (0, _.Cq)(e) : {}
+function I(e, t) {
+  return t.frecencyBoosters ? (0, p.Cq)(e) : {}
 }
-class S {
+class T {
   createSearchContext() {
     null == this.userSearchContext && (this.userSearchContext = Chunk279779.Z.getUserSearchContext(this.parseUserResults, this._limit))
   }
@@ -90,7 +90,7 @@ class S {
       this.clear(), this.updateAllResults();
       return
     }(this.options.frecencyBoosters ? l.DZ.loadIfNecessary() : Promise.resolve()).finally(() => {
-      this.queryUsers(e, t, this._limit), this._groupDMResults = this.queryGroupDMs(e, this._limit), this._textChannelResults = this.queryTextChannels(e, this._limit), this._voiceChannelResults = this.queryVoiceChannels(e, this._limit), this._guildResults = this.queryGuilds(e, this._limit), this._applicationResults = this.queryApplications(e, this._limit), this._linkResults = this.queryLink(e, this._limit), this._inAppNavigations = this.queryInAppNavigations(e, this._limit), this._isAsyncSearch() ? (clearTimeout(this._asyncTimeout), this._asyncTimeout = setTimeout(this.updateAllResults, I)) : this._include(E.h8.USER) || this.updateAllResults()
+      this.queryUsers(e, t, this._limit), this._groupDMResults = this.queryGroupDMs(e, this._limit), this._textChannelResults = this.queryTextChannels(e, this._limit), this._voiceChannelResults = this.queryVoiceChannels(e, this._limit), this._guildResults = this.queryGuilds(e, this._limit), this._applicationResults = this.queryApplications(e, this._limit), this._linkResults = this.queryLink(e, this._limit), this._inAppNavigations = this.queryInAppNavigations(e, this._limit), this._isAsyncSearch() ? (clearTimeout(this._asyncTimeout), this._asyncTimeout = setTimeout(this.updateAllResults, S)) : this._include(E.h8.USER) || this.updateAllResults()
     })
   }
   clear() {
@@ -118,13 +118,13 @@ class S {
   }
   queryTextChannels(e, t) {
     if (!this._include(E.h8.TEXT_CHANNEL)) return [];
-    let n = T(E.h8.TEXT_CHANNEL, this.options),
+    let n = I(E.h8.TEXT_CHANNEL, this.options),
       {
         allowSnowflake: r,
         blacklist: i
       } = this.options,
       a = null != i ? e => !i.has("channel:".concat(e.id)) : true;
-    return _.ZP.queryChannels({
+    return p.ZP.queryChannels({
       query: e,
       guildId: null,
       limit: t,
@@ -139,8 +139,8 @@ class S {
     let {
       allowSnowflake: n,
       voiceChannelGuildFilter: r
-    } = this.options, i = T(E.h8.VOICE_CHANNEL, this.options);
-    return _.ZP.queryChannels({
+    } = this.options, i = I(E.h8.VOICE_CHANNEL, this.options);
+    return p.ZP.queryChannels({
       query: e,
       guildId: r,
       limit: t,
@@ -152,13 +152,13 @@ class S {
   }
   queryGuilds(e, t) {
     if (!this._include(E.h8.GUILD)) return [];
-    let n = T(E.h8.GUILD, this.options),
+    let n = I(E.h8.GUILD, this.options),
       {
         allowSnowflake: r,
         blacklist: i
       } = this.options,
       a = null != i ? e => !i.has("guild:".concat(e.id)) : true;
-    return _.ZP.queryGuilds({
+    return p.ZP.queryGuilds({
       query: e,
       limit: t,
       fuzzy: true,
@@ -175,7 +175,7 @@ class S {
     let {
       allowSnowflake: i,
       userFilters: a
-    } = this.options, o = T(E.h8.USER, this.options);
+    } = this.options, o = I(E.h8.USER, this.options);
     if ((null == a ? true : a.thread) != null) {
       let t = s.Z.getMemberListSections(a.thread),
         r = [];
@@ -189,7 +189,7 @@ class S {
           }))
         }
       }
-      this._userResults = _.ZP.queryUsers({
+      this._userResults = p.ZP.queryUsers({
         query: e,
         users: r,
         limit: n,
@@ -198,7 +198,7 @@ class S {
       });
       return
     }
-    true !== t && p.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery({
+    true !== t && _.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery({
       query: e,
       filters: a,
       blacklist: this._userBlacklist,
@@ -209,8 +209,8 @@ class S {
     if (!this._include(E.h8.GROUP_DM)) return [];
     let {
       blacklist: n
-    } = this.options, r = T(E.h8.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : true;
-    return _.ZP.queryGroupDMs({
+    } = this.options, r = I(E.h8.GROUP_DM, this.options), i = null != n ? e => !n.has("channel:".concat(e.id)) : true;
+    return p.ZP.queryGroupDMs({
       query: e,
       limit: t,
       fuzzy: true,
@@ -219,7 +219,7 @@ class S {
     })
   }
   queryApplications(e, t) {
-    return this._include(E.h8.APPLICATION) ? _.ZP.queryApplications({
+    return this._include(E.h8.APPLICATION) ? p.ZP.queryApplications({
       query: e,
       limit: t,
       fuzzy: true
@@ -238,15 +238,15 @@ class S {
       pathname: i,
       hostname: a = "",
       host: s
-    } = n, l = h.Z.isDiscordHostname(a) || window.location.host === s;
-    return null !== i && l && h.Z.isAppRoute(i) ? [{
+    } = n, l = m.Z.isDiscordHostname(a) || window.location.host === s;
+    return null !== i && l && m.Z.isAppRoute(i) ? [{
       type: E.h8.LINK,
       record: c.Z.fromPath(i),
       score: 1
     }] : []
   }
   queryInAppNavigations(e, t) {
-    return this._include(E.h8.IN_APP_NAVIGATION) ? _.ZP.queryInAppNavigations({
+    return this._include(E.h8.IN_APP_NAVIGATION) ? p.ZP.queryInAppNavigations({
       query: e,
       limit: t,
       fuzzy: true
@@ -268,7 +268,7 @@ class S {
         null != t && this._userResults.push({
           type: E.h8.USER,
           record: t,
-          score: (0, _.mB)(n),
+          score: (0, p.mB)(n),
           comparator: null != r ? r : true
         })
       }

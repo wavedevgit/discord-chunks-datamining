@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk486324 = require("./486324.js"),
   Chunk505044 = require("./505044.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,7 +37,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -47,9 +47,9 @@ function E(e) {
   let {
     profile: t,
     className: n
-  } = e, i = (0, _.TK)(t);
+  } = e, i = (0, p.TK)(t);
   return null != i ? (0, r.jsx)("div", {
-    className: a()(n, h.banner),
+    className: a()(n, m.banner),
     style: {
       background: i
     }
@@ -64,15 +64,15 @@ function b(e) {
   let {
     profile: n,
     className: i
-  } = e, o = (0, _.nv)(), s = (0, _.qw)({
+  } = e, o = (0, p.nv)(), s = (0, p.qw)({
     profile: n,
     defaultColor: o.hex(),
     forceDefaultColor: null != n.brandColorPrimary
   }), l = null != (t = n.brandColorPrimary) ? t : s;
   return (0, r.jsx)("div", {
-    className: a()(i, h.banner),
+    className: a()(i, m.banner),
     style: {
-      background: (0, _.dG)(l)
+      background: (0, p.dG)(l)
     }
   })
 }
@@ -83,13 +83,13 @@ function y(e) {
     onIconChange: i
   } = e;
   if (null == i) return (0, r.jsx)("div", {
-    className: h.avatarContainer,
+    className: m.avatarContainer,
     children: (0, r.jsx)(s.ZP, {
       mask: s.QS.CLAN_ICON,
       width: 70,
       height: 70,
       children: (0, r.jsx)("div", {
-        className: h.avatarWrapper,
+        className: m.avatarWrapper,
         children: (0, r.jsx)(c.Ft, {
           guildId: t.id,
           guildName: t.name,
@@ -106,7 +106,7 @@ function y(e) {
         default: a
       } = await Promise.all([n.e("91689"), n.e("59732"), n.e("21046")]).then(n.bind(n, 712451));
       return n => (0, r.jsx)(a, g({
-        uploadType: p.pC.GUILD_ICON,
+        uploadType: _.pC.GUILD_ICON,
         imageUri: e,
         file: t,
         onCrop: e => {
@@ -119,7 +119,7 @@ function y(e) {
     }, {})
   }
   return (0, r.jsx)("div", {
-    className: h.avatarContainer,
+    className: m.avatarContainer,
     children: (0, r.jsx)(o.tEY, {
       within: true,
       children: (0, r.jsx)(s.ZP, {
@@ -127,17 +127,17 @@ function y(e) {
         width: 70,
         height: 70,
         children: (0, r.jsxs)("div", {
-          className: a()(h.avatarWrapper, h.clickable),
+          className: a()(m.avatarWrapper, m.clickable),
           children: [(0, r.jsx)(c.Ft, {
             guildId: t.id,
             guildName: t.name,
             guildIcon: t.icon,
             iconSize: 64
           }), (0, r.jsx)("div", {
-            className: h.overlay
+            className: m.overlay
           }), (0, r.jsx)(o.vdY, {
             size: "custom",
-            className: h.overlayIcon,
+            className: m.overlayIcon,
             width: 20,
             height: 20,
             color: "white"
@@ -160,12 +160,12 @@ function O(e) {
     CTAOverride: s,
     onClose: l,
     disableGuildNameClick: c
-  } = e, _ = null;
-  return null != s ? _ = s : o || (_ = (0, r.jsx)(d.Z, {
+  } = e, p = null;
+  return null != s ? p = s : o || (p = (0, r.jsx)(d.Z, {
     profile: t,
     onComplete: l
   })), (0, r.jsxs)("div", {
-    className: a()(h.container, i),
+    className: a()(m.container, i),
     children: [(0, r.jsx)(E, {
       profile: t
     }), (0, r.jsx)(y, {
@@ -176,9 +176,9 @@ function O(e) {
       disableGuildNameClick: c
     }), (0, r.jsx)(u.E, {
       profile: t
-    }), null != _ && (0, r.jsx)("div", {
-      className: h.buttonContainer,
-      children: _
+    }), null != p && (0, r.jsx)("div", {
+      className: m.buttonContainer,
+      children: p
     })]
   })
 }

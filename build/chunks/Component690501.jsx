@@ -19,14 +19,14 @@ function f(e) {
     gameFriends: t,
     hasIncomingPendingGameFriends: n,
     hasOutgoingPendingGameFriends: f
-  } = e, [_, p] = i.useState(false), h = i.useCallback(() => p(true), []), m = i.useMemo(() => _ ? t.map(e => {
+  } = e, [p, _] = i.useState(false), m = i.useCallback(() => _(true), []), h = i.useMemo(() => p ? t.map(e => {
     let {
       applicationId: t
     } = e;
     return t
-  }) : d, [_, t]), g = (0, o.Z)(m, _), E = i.useMemo(() => g.filter(s.lm), [g]), b = i.useMemo(() => t.length > 0 ? (0, c.A)(E) : true, [E, t.length]);
+  }) : d, [p, t]), g = (0, o.Z)(h, p), E = i.useMemo(() => g.filter(s.lm), [g]), b = i.useMemo(() => t.length > 0 ? (0, c.A)(E) : true, [E, t.length]);
   return {
-    onMouseEnter: h,
+    onMouseEnter: m,
     ariaLabel: b,
     tooltipText: i.useMemo(() => {
       if (t.length > 0) return (0, r.jsx)(l.k, {

@@ -2,7 +2,7 @@
 /** chunk id: 58231, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  q: () => p
+  q: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -66,14 +66,14 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = {
+let p = {
   "Icon Dice": {
     fill: "color",
     muted: "boolean"
   }
 };
 
-function p(e) {
+function _(e) {
   let {
     artboard: t = "Icon Dice"
   } = e, n = d(e, ["artboard"]), {
@@ -85,7 +85,7 @@ function p(e) {
   } : {}), {
     buffer: c,
     artboard: t,
-    artboardProperties: _
+    artboardProperties: p
   }), n))
 }
-p.riveSrc = Chunk814523.Z
+_.riveSrc = Chunk814523.Z

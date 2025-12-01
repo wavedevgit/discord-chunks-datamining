@@ -16,7 +16,7 @@ var Chunk147913 = require("./147913.js"),
   Chunk649739 = require("./649739.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,10 +25,10 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
-  return e.filter(e => e.type === _.IIU.PLAYING && e.application_id).map(e => e.application_id)
+function m(e) {
+  return e.filter(e => e.type === p.IIU.PLAYING && e.application_id).map(e => e.application_id)
 }
-async function m(e) {
+async function h(e) {
   await a.ZP.fetchApplications(e, false)
 }
 async function g(e) {
@@ -43,10 +43,10 @@ async function g(e) {
   if (null == t || !((0, f.Ku)("running_games_change", false) || n)) return;
   let r = d.Z.getActivities();
   if (0 === r.length) return;
-  let a = h([...r]);
-  await m([...a]);
+  let a = m([...r]);
+  await h([...a]);
   let u = o.Z.getApplication(a[0]);
-  null != u && i.ZP.trackWithMetadata(_.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
+  null != u && i.ZP.trackWithMetadata(p.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
     channel_id: e,
     guild_id: t.guild_id,
     game_name: u.name,
@@ -64,7 +64,7 @@ class E extends Chunk147913.Z {
     g(t)
   }
   constructor(...e) {
-    super(...e), p(this, "actions", {
+    super(...e), _(this, "actions", {
       RUNNING_GAMES_CHANGE: this.handleRunningGamesChange,
       VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect
     })

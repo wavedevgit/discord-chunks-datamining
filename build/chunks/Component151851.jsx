@@ -2,7 +2,7 @@
 /** chunk id: 151851, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -25,9 +25,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk325645 = require("./325645.js");
-let I = "#ffffff",
-  T = e => y.ZP.close(e),
-  S = e => y.ZP.minimize(e),
+let S = "#ffffff",
+  I = e => y.ZP.close(e),
+  T = e => y.ZP.minimize(e),
   A = (e, t) => {
     (0, b.isMac)() && !t.altKey ? y.ZP.fullscreen(e) : y.ZP.maximize(e)
   },
@@ -39,19 +39,19 @@ let I = "#ffffff",
       hasOpenLayer: o
     } = e, l = (0, r.jsx)(s.P3F, {
       className: v.winButtonClose,
-      onClick: () => T(n),
+      onClick: () => I(n),
       "aria-label": O.intl.string(O.t.ZdNUj2),
       tabIndex: false,
-      children: (0, r.jsx)(_.Z, {})
+      children: (0, r.jsx)(p.Z, {})
     }), c = (0, r.jsx)(s.P3F, {
       className: v.winButtonMinMax,
       onClick: e => A(n, e),
       "aria-label": O.intl.string(O.t.G1u0hK),
       tabIndex: false,
-      children: (0, r.jsx)(h.Z, {})
+      children: (0, r.jsx)(m.Z, {})
     }), u = (0, r.jsx)(s.P3F, {
       className: v.winButtonMinMax,
-      onClick: () => S(n),
+      onClick: () => T(n),
       "aria-label": O.intl.string(O.t.CxOC4U),
       tabIndex: false,
       children: (0, r.jsx)(g.Z, {})
@@ -92,15 +92,15 @@ let I = "#ffffff",
           className: v.macButtons,
           children: [(0, r.jsx)(s.P3F, {
             className: v.macButtonClose,
-            onClick: () => T(n),
+            onClick: () => I(n),
             "aria-label": O.intl.string(O.t.ZdNUj2),
             tabIndex: false,
-            children: (0, r.jsx)(p.Z, {
+            children: (0, r.jsx)(_.Z, {
               color: "#4c0000"
             })
           }), (0, r.jsx)(s.P3F, {
             className: v.macButtonMinimize,
-            onClick: () => S(n),
+            onClick: () => T(n),
             "aria-label": O.intl.string(O.t.CxOC4U),
             tabIndex: false,
             children: (0, r.jsx)(E.Z, {
@@ -111,35 +111,35 @@ let I = "#ffffff",
             onClick: e => A(n, e),
             "aria-label": O.intl.string(O.t["2nM3Pk"]),
             tabIndex: false,
-            children: (0, r.jsx)(m.Z, {
+            children: (0, r.jsx)(h.Z, {
               color: "#006500"
             })
           })]
         }), i ? (0, r.jsx)("div", {
           className: v.wordmarkMacOS,
           children: (0, r.jsx)(f.Z, {
-            color: I
+            color: S
           })
         }) : null]
       })
     })
   };
 
-function R(e) {
+function P(e) {
   let {
     focused: t,
     type: n,
     windowKey: i,
     macOSFrame: a = false,
     themeOverride: s
-  } = e, c = (0, d.bp)(), f = (0, o.e7)([u.Z], () => u.Z.isFullscreenInContext(c)), _ = (0, l.Z)();
+  } = e, c = (0, d.bp)(), f = (0, o.e7)([u.Z], () => u.Z.isFullscreenInContext(c)), p = (0, l.Z)();
   if (f) return null;
   switch (n) {
     case b.PlatformTypes.WINDOWS:
       return (0, r.jsx)(C, {
         windowKey: i,
         themeOverride: s,
-        hasOpenLayer: _
+        hasOpenLayer: p
       });
     case b.PlatformTypes.OSX:
       return (0, r.jsx)(N, {
@@ -147,7 +147,7 @@ function R(e) {
         windowKey: i,
         frame: a,
         themeOverride: s,
-        hasOpenLayer: _
+        hasOpenLayer: p
       });
     default:
       return null

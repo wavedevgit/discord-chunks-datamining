@@ -33,7 +33,7 @@ function E(e) {
   return (0, r.jsx)(s.tEY, {
     offset: g,
     children: (0, r.jsxs)("div", {
-      className: m.channelHeader,
+      className: h.channelHeader,
       "data-recents-channel": t.id,
       children: [(0, r.jsx)(b, {
         channel: t
@@ -49,17 +49,17 @@ function E(e) {
 function b(e) {
   let {
     channel: t
-  } = e, n = (0, l.e7)([p.Z], () => p.Z.getGuild(t.guild_id));
-  return null != n ? (0, r.jsx)(_.Z, {
-    className: m.icon,
+  } = e, n = (0, l.e7)([_.Z], () => _.Z.getGuild(t.guild_id));
+  return null != n ? (0, r.jsx)(p.Z, {
+    className: h.icon,
     guild: n,
-    size: _.Z.Sizes.SMALLER,
+    size: p.Z.Sizes.SMALLER,
     "aria-hidden": true
   }) : t.isGroupDM() ? (0, r.jsx)(f.Z, {
     channel: t,
     size: c.EFr.SIZE_24
   }) : (0, r.jsx)("div", {
-    className: a()(m.icon, m.dmIcon),
+    className: a()(h.icon, h.dmIcon),
     children: (0, r.jsx)(o.kBi, {
       size: "xxs"
     })
@@ -69,13 +69,13 @@ function b(e) {
 function y(e) {
   let {
     channel: t
-  } = e, n = (0, l.e7)([p.Z], () => p.Z.getGuild(t.guild_id)), i = (0, u.ZP)(t, false), a = (0, d.KS)(t, n), o = t.isPrivate() || null == a, s = t.isDM() ? h.intl.formatToPlainString(h.t.smD7XV, {
+  } = e, n = (0, l.e7)([_.Z], () => _.Z.getGuild(t.guild_id)), i = (0, u.ZP)(t, false), a = (0, d.KS)(t, n), o = t.isPrivate() || null == a, s = t.isDM() ? m.intl.formatToPlainString(m.t.smD7XV, {
     username: i
   }) : i;
   return (0, r.jsxs)("div", {
-    className: m.channelNameSection,
+    className: h.channelNameSection,
     children: [o ? null : (0, r.jsx)(a, {
-      className: m.channelTypeIcon,
+      className: h.channelTypeIcon,
       size: "xxs"
     }), (0, r.jsx)(c.Heading, {
       variant: "text-md/semibold",

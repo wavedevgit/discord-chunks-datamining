@@ -3,19 +3,19 @@
 "use strict";
 require.d(exports, {
   E2: () => A,
-  Kp: () => L,
+  Kp: () => x,
   LI: () => b,
-  MH: () => w,
+  MH: () => D,
   Qr: () => E,
-  _p: () => S,
+  _p: () => T,
   f0: () => v,
   iB: () => O,
-  jV: () => T,
+  jV: () => I,
   k0: () => N,
-  lW: () => P,
+  lW: () => R,
   lx: () => y,
-  m4: () => I,
-  nE: () => R,
+  m4: () => S,
+  nE: () => P,
   t3: () => g,
   yH: () => C
 }), require("./388685.js"), require("./642613.js");
@@ -29,10 +29,10 @@ var Chunk913527 = require("./913527.js"),
   Chunk744038 = require("./744038.js"),
   Chunk388032 = require("./388032.jsx");
 let f = 60,
-  _ = 3600,
-  p = 86400,
-  h = 172800,
-  m = 604800,
+  p = 3600,
+  _ = 86400,
+  m = 172800,
+  h = 604800,
   g = () => ({
     today: Chunk388032.intl.string(Chunk744038.default.VjIAQQ),
     yesterday: Chunk388032.intl.string(Chunk744038.default["2a8xHY"]),
@@ -51,32 +51,32 @@ let f = 60,
     let r = i()().diff(i()(e), "s"),
       a = t(),
       o = i()(e).format("LL");
-    return r < p ? a.today : r < h ? a.yesterday : d.intl.formatToPlainString(a.days, {
-      days: Math.min(Math.floor(r / p), null != n ? n : 999)
+    return r < _ ? a.today : r < m ? a.yesterday : d.intl.formatToPlainString(a.days, {
+      days: Math.min(Math.floor(r / _), null != n ? n : 999)
     })
   },
   y = (e, t) => {
     let n = i()().diff(i()(e), "s"),
       r = t(),
       a = i()(e).format("LL");
-    return n < f ? r.seconds : n < _ ? d.intl.formatToPlainString(r.minutes, {
+    return n < f ? r.seconds : n < p ? d.intl.formatToPlainString(r.minutes, {
       count: Math.floor(n / f)
-    }) : n < p ? d.intl.formatToPlainString(r.hours, {
-      count: Math.floor(n / _)
-    }) : n < h ? r.yesterday : n < m ? d.intl.formatToPlainString(r.days, {
+    }) : n < _ ? d.intl.formatToPlainString(r.hours, {
       count: Math.floor(n / p)
+    }) : n < m ? r.yesterday : n < h ? d.intl.formatToPlainString(r.days, {
+      count: Math.floor(n / _)
     }) : d.intl.formatToPlainString(r.date, {
       date: a
     })
   },
   O = e => e.display_type === c.MY.USER_ADD || e.display_type === c.MY.USER_INTERACTION || e.display_type === c.MY.USER_CALLED,
   v = e => e.display_type === c.MY.GUILD_ADD || e.display_type === c.MY.GUILD_INTERACTION,
-  I = e => e.display_type === c.MY.PURCHASES,
-  T = e => {
+  S = e => e.display_type === c.MY.PURCHASES,
+  I = e => {
     for (let t of Object.values(c.MY))
       if (t.toString() === e) return t
   },
-  S = e => {
+  T = e => {
     let t = A(e);
     return 0 === t.size ? [] : Array.from(t.entries()).sort((e, t) => e[1].priority - t[1].priority)
   },
@@ -93,16 +93,16 @@ let f = 60,
     if (Chunk914788.Z.getAreLinkedUsersProcessed()) return Chunk914788.Z.getLinkedUsers();
     Chunk260722.ZP.fetchLinkedUsers()
   },
-  R = (e, t) => (0, l.PO)("family_center_activity_card") ? t : e,
-  P = (e, t) => (0, l.vE)("family_center_activity_card") ? t : e,
-  D = () => Object.values(Chunk914788.Z.getLinkedUsers()).some(e => e.link_status === c.ne.ACTIVE),
-  w = () => {
+  P = (e, t) => (0, l.PO)("family_center_activity_card") ? t : e,
+  R = (e, t) => (0, l.vE)("family_center_activity_card") ? t : e,
+  w = () => Object.values(Chunk914788.Z.getLinkedUsers()).some(e => e.link_status === c.ne.ACTIVE),
+  D = () => {
     let e = Chunk594174.default.getCurrentUser(),
-      t = D(),
+      t = w(),
       n = (0, Chunk277537.vE)("settings-controls");
     return (null == module ? true : module.nsfwAllowed) === false && exports && require
   },
-  L = (e, t) => t > 0 && 0 === e ? d.intl.formatToPlainString(u.default["L/Cj7S"], {
+  x = (e, t) => t > 0 && 0 === e ? d.intl.formatToPlainString(u.default["L/Cj7S"], {
     callCount: t
   }) : e > 0 && 0 === t ? d.intl.formatToPlainString(u.default["6X1F0i"], {
     messageCount: e

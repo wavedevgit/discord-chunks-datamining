@@ -2,7 +2,7 @@
 /** chunk id: 402567, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -14,19 +14,19 @@ var Chunk473749 = require("./473749.js"),
   Chunk211712 = require("./211712.js"),
   Chunk981631 = require("./981631.js");
 let f = Object.keys(Chunk211712.hq),
-  _ = e => {
+  p = e => {
     let t = null == e ? f : f.filter(t => t !== e);
     return t[Math.floor(Math.random() * t.length)]
   };
 
-function p() {
+function _() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    [t, n] = (0, Chunk473749.useState)(_()),
+    [t, n] = (0, Chunk473749.useState)(p()),
     {
       banner: f,
-      themeColors: p,
-      avatarDecorationSkuId: h,
-      displayNameStyles: m
+      themeColors: _,
+      avatarDecorationSkuId: m,
+      displayNameStyles: h
     } = (0, Chunk473749.useMemo)(() => {
       let n = (0, Chunk211712.Ib)(exports);
       return {
@@ -37,19 +37,19 @@ function p() {
       }
     }, [exports, module]),
     g = (0, Chunk442837.e7)([Chunk597688.Z], () => {
-      let e = Chunk597688.Z.getProduct(h);
+      let e = Chunk597688.Z.getProduct(m);
       return (0, Chunk922347.M)(null == module ? true : module.items[0]) ? module.items[0] : null
     });
   (0, Chunk473749.useEffect)(() => {
     (0, Chunk350327.x3)({
       banner: f,
-      themeColors: p,
+      themeColors: _,
       avatarDecoration: g,
-      displayNameStyles: m
+      displayNameStyles: h
     })
-  }, [f, p, g, m]);
+  }, [f, _, g, h]);
   let E = (0, Chunk473749.useCallback)(() => {
-    let e = _(exports);
+    let e = p(exports);
     require(module), Chunk626135.default.track(Chunk981631.rMx.TRY_IT_OUT_PRESET_SHUFFLED, {
       preset: module
     })

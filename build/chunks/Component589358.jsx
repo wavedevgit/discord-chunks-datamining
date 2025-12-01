@@ -72,21 +72,21 @@ function f(e) {
   let {
     children: o,
     className: l
-  } = n, d = u(n, ["children", "className"]), f = i.useRef(0), [_, p] = i.useState(false);
-
-  function h() {
-    clearTimeout(f.current), p(true)
-  }
+  } = n, d = u(n, ["children", "className"]), f = i.useRef(0), [p, _] = i.useState(false);
 
   function m() {
-    clearTimeout(f.current), f.current = setTimeout(() => p(false), t)
+    clearTimeout(f.current), _(true)
+  }
+
+  function h() {
+    clearTimeout(f.current), f.current = setTimeout(() => _(false), t)
   }
   return (0, r.jsx)("div", {
     className: l,
-    onMouseEnter: 0 !== t ? h : () => {},
-    onMouseLeave: 0 !== t ? m : () => {},
+    onMouseEnter: 0 !== t ? m : () => {},
+    onMouseLeave: 0 !== t ? h : () => {},
     children: (0, r.jsx)(a.aM, c(s({
-      forceOpen: _,
+      forceOpen: p,
       disableTooltipPointerEvents: false
     }, d), {
       children: o

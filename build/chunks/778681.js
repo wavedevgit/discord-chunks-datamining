@@ -13,12 +13,12 @@ var Chunk126182 = require("./126182.js"),
   Chunk262279 = require("./262279.js"),
   Chunk185546 = require("./185546.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   var r = o.replaceWithFragment(e.getCurrentContent(), e.getSelection(), t);
   return l.push(e, r.set("entityMap", n), "insert-fragment")
 }
 
-function h(e, t) {
+function m(e, t) {
   return e.length === t.size && t.valueSeq().every(function(t, n) {
     return t.getText() === e[n]
   })
@@ -27,23 +27,23 @@ module.exports = function(e, t) {
   t.preventDefault();
   var n = new a(t.clipboardData);
   if (!n.isRichText()) {
-    var m = n.getFiles(),
+    var h = n.getFiles(),
       g = n.getText();
-    if (m.length > 0) {
-      if (e.props.handlePastedFiles && f(e.props.handlePastedFiles(m))) return;
-      d(m, function(t) {
+    if (h.length > 0) {
+      if (e.props.handlePastedFiles && f(e.props.handlePastedFiles(h))) return;
+      d(h, function(t) {
         if (t = t || g) {
           var n = e._latestEditorState,
-            a = _(t),
+            a = p(t),
             d = i.create({
               style: n.getCurrentInlineStyle(),
               entity: u(n.getCurrentContent(), n.getSelection())
             }),
             f = c.getCurrentBlockType(n),
-            p = s.processText(a, d, f),
-            h = r.createFromArray(p),
-            m = o.replaceWithFragment(n.getCurrentContent(), n.getSelection(), h);
-          e.update(l.push(n, m, "insert-fragment"))
+            _ = s.processText(a, d, f),
+            m = r.createFromArray(_),
+            h = o.replaceWithFragment(n.getCurrentContent(), n.getSelection(), m);
+          e.update(l.push(n, h, "insert-fragment"))
         }
       });
       return
@@ -54,19 +54,19 @@ module.exports = function(e, t) {
     y = n.getHTML(),
     O = e._latestEditorState;
   if (!(e.props.handlePastedText && f(e.props.handlePastedText(b, y, O)))) {
-    if (b && (E = _(b)), !e.props.stripPastedStyles) {
+    if (b && (E = p(b)), !e.props.stripPastedStyles) {
       var v = e.getClipboard();
       if (n.isRichText() && v) {
-        if (false !== y.indexOf(e.getEditorKey()) || 1 === E.length && 1 === v.size && v.first().getText() === b) return void e.update(p(e._latestEditorState, v))
-      } else if (v && n.types.includes("com.apple.webarchive") && !n.types.includes("text/html") && h(E, v)) return void e.update(p(e._latestEditorState, v));
+        if (false !== y.indexOf(e.getEditorKey()) || 1 === E.length && 1 === v.size && v.first().getText() === b) return void e.update(_(e._latestEditorState, v))
+      } else if (v && n.types.includes("com.apple.webarchive") && !n.types.includes("text/html") && m(E, v)) return void e.update(_(e._latestEditorState, v));
       if (y) {
-        var I = s.processHTML(y, e.props.blockRenderMap);
-        if (I) {
-          var T = I.contentBlocks,
-            S = I.entityMap;
-          if (T) {
-            var A = r.createFromArray(T);
-            e.update(p(e._latestEditorState, A, S));
+        var S = s.processHTML(y, e.props.blockRenderMap);
+        if (S) {
+          var I = S.contentBlocks,
+            T = S.entityMap;
+          if (I) {
+            var A = r.createFromArray(I);
+            e.update(_(e._latestEditorState, A, T));
             return
           }
         }
@@ -79,9 +79,9 @@ module.exports = function(e, t) {
           entity: u(O.getCurrentContent(), O.getSelection())
         }),
         N = c.getCurrentBlockType(O),
-        R = s.processText(E, C, N),
-        P = r.createFromArray(R);
-      e.update(p(e._latestEditorState, P))
+        P = s.processText(E, C, N),
+        R = r.createFromArray(P);
+      e.update(_(e._latestEditorState, R))
     }
   }
 }

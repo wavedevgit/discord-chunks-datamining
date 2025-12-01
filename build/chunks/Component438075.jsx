@@ -23,10 +23,10 @@ function o(e) {
     isAutomodBlockedMessage: u,
     isMessageSnapshot: d,
     renderThreadAccessory: f,
-    renderSuppressEmbeds: _,
-    renderReactions: p,
-    forceAddReactions: h,
-    disableComponentInteractivity: m,
+    renderSuppressEmbeds: p,
+    renderReactions: _,
+    forceAddReactions: m,
+    disableComponentInteractivity: h,
     className: g
   } = e;
   return u ? null : (0, r.jsx)(i.Z, {
@@ -41,10 +41,10 @@ function o(e) {
       isMessageSnapshot: d,
       onMediaItemContextMenu: l,
       renderThreadAccessory: f,
-      disableComponentInteractivity: m,
-      renderSuppressEmbeds: _,
-      forceAddReactions: h,
-      renderReactions: p
+      disableComponentInteractivity: h,
+      renderSuppressEmbeds: p,
+      forceAddReactions: m,
+      renderReactions: _
     })
   })
 }

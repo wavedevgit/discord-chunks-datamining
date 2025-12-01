@@ -2,7 +2,7 @@
 /** chunk id: 851894, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => Z
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk813709 = require("./813709.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,20 +44,20 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function x(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      L(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
 }
 
-function M(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -68,13 +68,13 @@ function M(e, t) {
   return n
 }
 
-function k(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e, t) {
+function k(e, t) {
   if (null == e) return {};
   var n, r, i = U(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -97,81 +97,81 @@ function G(e) {
     let {
       default: t
     } = await n.e("84509").then(n.bind(n, 933696));
-    return n => (0, r.jsx)(t, x({
-      source: k(x({}, e), {
-        page: P.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
+    return n => (0, r.jsx)(t, L({
+      source: M(L({}, e), {
+        page: R.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
       })
     }, n))
   })
 }
 
-function B(e) {
+function Z(e) {
   var t, n;
   let {
     selectedGuild: a
   } = e, {
-    analyticsLocations: L
-  } = (0, _.ZP)(d.Z.USER_SETTINGS_GUILD_PROFILE), M = (0, s.e7)([v.default], () => {
+    analyticsLocations: x
+  } = (0, p.ZP)(d.Z.USER_SETTINGS_GUILD_PROFILE), j = (0, s.e7)([v.default], () => {
     let e = v.default.getCurrentUser();
     return o()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), U = (0, s.e7)([y.ZP], () => null != a ? y.ZP.getMember(a.id, M.id) : null), B = (0, s.e7)([b.Z], () => !b.Z.isFetchingProfile(M.id, null == a ? true : a.id)), Z = (0, s.e7)([O.Z], () => O.Z.hidePersonalInformation), F = (0, s.cj)([A.Z], () => k(x({}, A.Z.getAllPending()), {
+  }), U = (0, s.e7)([y.ZP], () => null != a ? y.ZP.getMember(a.id, j.id) : null), Z = (0, s.e7)([b.Z], () => !b.Z.isFetchingProfile(j.id, null == a ? true : a.id)), B = (0, s.e7)([O.Z], () => O.Z.hidePersonalInformation), F = (0, s.cj)([A.Z], () => M(L({}, A.Z.getAllPending()), {
     source: A.Z.getSource()
   })), {
     source: V,
     pendingAvatar: H,
-    pendingNameplate: W
-  } = F, Y = j(F, ["source", "pendingAvatar", "pendingNameplate"]), K = (0, E.SD)({
-    userId: M.id,
+    pendingNameplate: Y
+  } = F, W = k(F, ["source", "pendingAvatar", "pendingNameplate"]), K = (0, E.SD)({
+    userId: j.id,
     image: H
-  }), z = (0, h.Ys)({
-    pendingValue: W,
-    userValue: null == M || null == (t = M.collectibles) ? true : t.nameplate,
+  }), z = (0, m.Ys)({
+    pendingValue: Y,
+    userValue: null == j || null == (t = j.collectibles) ? true : t.nameplate,
     guildValue: null == U || null == (n = U.collectibles) ? true : n.nameplate,
     guildId: null == a ? true : a.id
   }), {
     pendingDisplayNameStyles: q
-  } = (0, h.mD)(M, null == a ? true : a.id);
-  return (i.useEffect(() => () => c.Z.wait(S.W3), []), i.useEffect(() => {
-    null != V && f.ZP.trackWithMetadata(P.rMx.SETTINGS_PANE_VIEWED, {
+  } = (0, m.mD)(j, null == a ? true : a.id);
+  return (i.useEffect(() => () => c.Z.wait(T.W3), []), i.useEffect(() => {
+    null != V && f.ZP.trackWithMetadata(R.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
-      destination_pane: P.jXE.SETTINGS_CUSTOMIZE_PROFILE,
+      destination_pane: R.jXE.SETTINGS_CUSTOMIZE_PROFILE,
       source: V
     })
-  }, [V]), Z) ? (0, r.jsx)(u.Z, {}) : B ? (0, r.jsxs)(_.Gt, {
-    value: L,
+  }, [V]), B) ? (0, r.jsx)(u.Z, {}) : Z ? (0, r.jsxs)(p.Gt, {
+    value: x,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: D.intl.format(D.t["/PTB2E"], {
-        helpCenterLink: I.Z.getArticleURL(P.BhN.GUILD_PROFILES)
+      children: w.intl.format(w.t["/PTB2E"], {
+        helpCenterLink: S.Z.getArticleURL(R.BhN.GUILD_PROFILES)
       })
     }), null != a ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(R.Z, {
+      children: [(0, r.jsx)(P.Z, {
         guildId: a.id,
         onChange: e => {
-          null != e && (0, S.HP)(e)
+          null != e && (0, T.HP)(e)
         }
-      }), (0, r.jsx)(m.Z, {
+      }), (0, r.jsx)(h.Z, {
         profilePreviewTitle: (0, r.jsx)(l.Heading, {
           variant: "heading-md/medium",
-          className: w.profilePreviewTitle,
-          children: D.intl.formatToPlainString(D.t.Tc0slG, {
+          className: D.profilePreviewTitle,
+          children: w.intl.formatToPlainString(w.t.Tc0slG, {
             guildName: null == a ? true : a.name
           })
         }),
-        profilePreview: (0, r.jsx)(g.Z, k(x({}, Y), {
+        profilePreview: (0, r.jsx)(g.Z, M(L({}, W), {
           pendingAvatar: K,
           pendingDisplayNameStyles: q,
-          user: M,
+          user: j,
           guild: a,
-          canUsePremiumCustomization: T.ZP.canUsePremiumProfileCustomization(M),
+          canUsePremiumCustomization: I.ZP.canUsePremiumProfileCustomization(j),
           onUpsellClick: G
         })),
-        nameplatePreview: (0, r.jsx)(p.Z, k(x({}, Y), {
+        nameplatePreview: (0, r.jsx)(_.Z, M(L({}, W), {
           pendingDisplayNameStyles: q,
-          user: M,
+          user: j,
           guildId: null == a ? true : a.id,
           nameplate: z,
-          className: null == z ? w.nameplatePreviewPlaceholder : true,
+          className: null == z ? D.nameplatePreviewPlaceholder : true,
           isHighlighted: true
         })),
         children: (0, r.jsx)(N.Z, {})

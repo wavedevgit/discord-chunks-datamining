@@ -2,7 +2,7 @@
 /** chunk id: 126306, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => p
+  l: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,7 +20,7 @@ let f = Object.freeze({
     2: Chunk840954.scale,
     3: Chunk840954.fade
   }),
-  _ = Object.freeze({
+  p = Object.freeze({
     top: Chunk840954.animatorTop,
     bottom: Chunk840954.animatorBottom,
     left: Chunk840954.animatorLeft,
@@ -29,14 +29,14 @@ let f = Object.freeze({
     window_center: Chunk840954.animatorCenter
   });
 
-function p(e) {
+function _(e) {
   let {
     position: t,
     type: n,
     children: a
   } = e, {
     reducedMotion: d
-  } = i.useContext(s.Sfi), p = d.enabled ? 3 : n, [h, m] = i.useState(null != t), [g] = i.useState(() => new l.V7), [E, b] = i.useState(true), y = i.useRef(null);
+  } = i.useContext(s.Sfi), _ = d.enabled ? 3 : n, [m, h] = i.useState(null != t), [g] = i.useState(() => new l.V7), [E, b] = i.useState(true), y = i.useRef(null);
   return i.useLayoutEffect(() => {
     var e;
     null == (e = y.current) || e.addEventListener("transitionend", () => {
@@ -45,14 +45,14 @@ function p(e) {
       b(false)
     }, u)
   }, []), i.useEffect(() => () => g.stop(), [g]), i.useEffect(() => {
-    null != t && g.start(10, () => m(true))
+    null != t && g.start(10, () => h(true))
   }, [t, g]), (0, r.jsx)("div", {
     "data-popout-animating": E,
-    className: o()(null != t ? _[t] : null, {
-      [f[p]]: null != t,
-      [c.didRender]: h
+    className: o()(null != t ? p[t] : null, {
+      [f[_]]: null != t,
+      [c.didRender]: m
     }),
     children: a
   })
 }
-p.Types = d
+_.Types = d

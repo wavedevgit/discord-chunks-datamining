@@ -32,37 +32,37 @@ let b = 1e3,
         selectedPlan: y,
         setSelectedPlanId: O,
         setSelectedSkuId: v,
-        browserCheckoutState: I,
-        browserCheckoutStateLoadId: T,
-        browserCheckoutStateSkuId: S,
+        browserCheckoutState: S,
+        browserCheckoutStateLoadId: I,
+        browserCheckoutStateSkuId: T,
         browserCheckoutStatePlanId: A,
         contextMetadata: C
       } = (0, f.JL)(),
       {
         isGift: N
       } = (0, d.wD)(),
-      [R, P] = i.useState(false);
+      [P, R] = i.useState(false);
     switch (n) {
-      case _.h8.AWAITING_BROWSER_CHECKOUT_GOOGLE_PAY:
-        t = h.i$l.GOOGLE_PAY;
+      case p.h8.AWAITING_BROWSER_CHECKOUT_GOOGLE_PAY:
+        t = m.i$l.GOOGLE_PAY;
         break;
-      case _.h8.AWAITING_BROWSER_CHECKOUT_APPLE_PAY:
-        t = h.i$l.APPLE_PAY
+      case p.h8.AWAITING_BROWSER_CHECKOUT_APPLE_PAY:
+        t = m.i$l.APPLE_PAY
     }
     return i.useEffect(() => {
       let e = setTimeout(() => {
         var e;
-        R || (P(true), (0, o.r5)(C.loadId), (0, u.ko)({
-          planId: null != (e = null == y ? true : y.id) ? e : m.Xh.PREMIUM_MONTH_TIER_2,
+        P || (R(true), (0, o.r5)(C.loadId), (0, u.ko)({
+          planId: null != (e = null == y ? true : y.id) ? e : h.Xh.PREMIUM_MONTH_TIER_2,
           isGift: N,
           loadId: C.loadId,
           paymentMethodType: t
         }, c))
       }, b);
       return () => clearTimeout(e)
-    }, [y, N, C, c, P, R, t]), i.useEffect(() => {
-      null !== S && (m.YQ.includes(S) && ((0, s.GZ)(S), (0, o.jg)()), v(S)), null !== A && O(A), T === C.loadId && I === p.Y.DONE && l()
-    }, [v, O, I, T, S, A, C, l]), (0, r.jsxs)("div", {
+    }, [y, N, C, c, R, P, t]), i.useEffect(() => {
+      null !== T && (h.YQ.includes(T) && ((0, s.GZ)(T), (0, o.jg)()), v(T)), null !== A && O(A), I === C.loadId && S === _.Y.DONE && l()
+    }, [v, O, S, I, T, A, C, l]), (0, r.jsxs)("div", {
       className: E.body,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-xl/bold",

@@ -49,17 +49,17 @@ let y = () => {
       ctaText: t,
       ctaOnClick: n,
       analyticsPage: a,
-      linkPreText: s = h.intl.string(h.t["5qZv9E"]),
-      linkText: u = h.intl.string(h.t.XRdyjz)
+      linkPreText: s = m.intl.string(m.t["5qZv9E"]),
+      linkText: u = m.intl.string(m.t.XRdyjz)
     } = e, d = i.useCallback(() => {
-      null != a && (0, _.Y)({
+      null != a && (0, p.Y)({
         pageType: a,
-        sectionType: p.jXE.ORBS_BALANCE_MENU,
-        ctaObject: p.qAy.ORBS_LEARN_MORE_LINK
+        sectionType: _.jXE.ORBS_BALANCE_MENU,
+        ctaObject: _.qAy.ORBS_LEARN_MORE_LINK
       })
     }, [a]);
     return (0, r.jsxs)("div", {
-      className: o()(m.container, g.baseCardOutline),
+      className: o()(h.container, g.baseCardOutline),
       children: [(0, r.jsx)(y, {}), (0, r.jsx)(l.zxk, {
         text: t,
         variant: "primary",
@@ -67,16 +67,16 @@ let y = () => {
         onClick: n,
         fullWidth: true
       }), (0, r.jsxs)("div", {
-        className: m.linkContainer,
+        className: h.linkContainer,
         children: [true !== s && (0, r.jsxs)(c.Text, {
           variant: "text-xs/normal",
-          className: m.linkPreText,
+          className: h.linkPreText,
           children: [s, "\xa0"]
         }), (0, r.jsx)(c.Anchor, {
           target: "_blank",
           rel: "author",
-          href: f.Z.getArticleURL(p.BhN.ORBS_FAQ),
-          className: m.learnMoreLink,
+          href: f.Z.getArticleURL(_.BhN.ORBS_FAQ),
+          className: h.learnMoreLink,
           onClick: d,
           children: u
         })]

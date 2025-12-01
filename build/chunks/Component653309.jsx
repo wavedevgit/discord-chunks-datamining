@@ -2,8 +2,8 @@
 /** chunk id: 653309, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => p,
-  Z: () => h
+  U: () => _,
+  Z: () => m
 }), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -47,12 +47,12 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = {
+let _ = {
   strong: Chunk12888.bold,
   em: Chunk12888.italics,
   u: Chunk12888.underline,
@@ -74,19 +74,19 @@ let p = {
   mentionSuggestionSimpleColorVariant: Chunk953782.mentionSuggestionSimpleColorVariant
 };
 
-function h(e, t) {
+function m(e, t) {
   let n, {
       attributes: i,
       children: c,
       leaf: u,
       text: f
     } = t,
-    h = false,
-    [m] = o.bN.node(e, o.C0.parent(o.bN.findPath(e, f)));
-  switch (o.bN.isEditor(m) ? "editor" : m.type) {
+    m = false,
+    [h] = o.bN.node(e, o.C0.parent(o.bN.findPath(e, f)));
+  switch (o.bN.isEditor(h) ? "editor" : h.type) {
     case "line":
     case "blockQuote": {
-      h = true;
+      m = true;
       let e = Object.entries(u).filter(e => {
         let [t] = e;
         return "text" !== t
@@ -94,8 +94,8 @@ function h(e, t) {
         let [t, n] = e;
         if ("hljsTypes" === t) return n;
         if (true === n) {
-          if (("codeBlockLang" === t || "codeBlockSyntax" === t) && (h = false), t.startsWith("before_") || t.startsWith("after_")) return [s[t]];
-          if (t in p) return [p[t]];
+          if (("codeBlockLang" === t || "codeBlockSyntax" === t) && (m = false), t.startsWith("before_") || t.startsWith("after_")) return [s[t]];
+          if (t in _) return [_[t]];
           throw Error("Slate: Unknown decoration attribute: ".concat(t))
         }
       }).filter(e => null != e).join(" ");
@@ -106,9 +106,9 @@ function h(e, t) {
   }
   return n = a()(n, {
     [l.emptyText]: "" === f.text
-  }), (0, r.jsx)("span", _(d({}, i), {
+  }), (0, r.jsx)("span", p(d({}, i), {
     className: n,
-    spellCheck: h,
+    spellCheck: m,
     children: c
   }))
 }

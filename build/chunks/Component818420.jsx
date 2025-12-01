@@ -20,18 +20,18 @@ function f(e) {
     guild: n,
     titleIcon: f
   } = e, {
-    analyticsLocations: _
-  } = (0, o.ZP)(), p = null != n, {
-    userNameplate: h,
-    guildNameplate: m,
+    analyticsLocations: p
+  } = (0, o.ZP)(), _ = null != n, {
+    userNameplate: m,
+    guildNameplate: h,
     pendingNameplate: g,
     pendingErrors: E
-  } = (0, l.Zx)(t, null == n ? true : n.id), b = true === g ? (p ? m : h) != null : null != g, y = i.useCallback(() => {
+  } = (0, l.Zx)(t, null == n ? true : n.id), b = true === g ? (_ ? h : m) != null : null != g, y = i.useCallback(() => {
     (0, s.f)({
-      analyticsLocations: _,
+      analyticsLocations: p,
       guildId: null == n ? true : n.id
     })
-  }, [_, null == n ? true : n.id]), O = i.useCallback(() => {
+  }, [p, null == n ? true : n.id]), O = i.useCallback(() => {
     (0, l.Wh)(null, null == n ? true : n.id)
   }, [null == n ? true : n.id]);
   return (0, r.jsx)(c.Z, {
@@ -48,7 +48,7 @@ function f(e) {
       }), b && (0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
-        text: p ? u.intl.string(u.t.CHf9iJ) : u.intl.string(u.t["9zwziY"]),
+        text: _ ? u.intl.string(u.t.CHf9iJ) : u.intl.string(u.t["9zwziY"]),
         onClick: O
       })]
     })

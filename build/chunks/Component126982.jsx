@@ -55,14 +55,14 @@ function v(e) {
     step: t,
     onClose: n,
     isOrbCheckout: a
-  } = e, l = (0, u.Z)(m.X), {
+  } = e, l = (0, u.Z)(h.X), {
     footerNode: d
-  } = (0, p.JL)(), f = (0, _.G6)() && !s.tq, b = null != d ? d.offsetWidth : true, y = i.useMemo(() => f && null != b && (t === h.h8.ADD_PAYMENT_STEPS || a) ? b : true, [f, b, t, a]);
-  if (t === h.h8.BENEFITS || t === h.h8.CONFIRM) return null;
+  } = (0, _.JL)(), f = (0, p.G6)() && !s.tq, b = null != d ? d.offsetWidth : true, y = i.useMemo(() => f && null != b && (t === m.h8.ADD_PAYMENT_STEPS || a) ? b : true, [f, b, t, a]);
+  if (t === m.h8.BENEFITS || t === m.h8.CONFIRM) return null;
   let v = null != y ? {
       width: y + 2
     } : true,
-    I = null != y ? {
+    S = null != y ? {
       width: y + 3
     } : true;
   return (0, r.jsxs)("div", {
@@ -72,7 +72,7 @@ function v(e) {
       className: g.headerImageContainer,
       "aria-hidden": "true",
       "data-accessibility": "desaturate",
-      style: I,
+      style: S,
       children: a ? (0, r.jsx)(O, {
         className: o()(g.headerImage, g.orbCheckoutHeaderVideo)
       }) : (0, r.jsx)("img", {

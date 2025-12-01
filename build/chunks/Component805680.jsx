@@ -67,7 +67,7 @@ function H(e) {
   return e
 }
 
-function W(e, t) {
+function Y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,8 +78,8 @@ function W(e, t) {
   return n
 }
 
-function Y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
+function W(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -102,7 +102,7 @@ function z(e, t) {
   return i
 }
 let q = Chunk957825.Om + Chunk149203.Su.MEDIUM,
-  X = Chunk473749.memo(function(e) {
+  Q = Chunk473749.memo(function(e) {
     var {
       isActive: t,
       className: n,
@@ -110,16 +110,16 @@ let q = Chunk957825.Om + Chunk149203.Su.MEDIUM,
       autoFocus: a = false,
       "aria-controls": s
     } = e, l = K(e, ["isActive", "className", "viewType", "autoFocus", "aria-controls"]);
-    return (0, r.jsx)(p.P3F, Y(H({
+    return (0, r.jsx)(_.P3F, W(H({
       role: "tab",
       autoFocus: a,
       "aria-controls": t ? s : true
     }, l), {
       onClick: () => {
-        E.ZP.trackWithMetadata(k.rMx.EXPRESSION_PICKER_TAB_CLICKED, {
+        E.ZP.trackWithMetadata(M.rMx.EXPRESSION_PICKER_TAB_CLICKED, {
           tab: i,
           badged: false
-        }), (0, x.hr)(i)
+        }), (0, L.hr)(i)
       },
       "aria-current": t ? "page" : true,
       className: o()(n, F.navButton, F.navItem, {
@@ -127,31 +127,31 @@ let q = Chunk957825.Om + Chunk149203.Su.MEDIUM,
       })
     }))
   }),
-  Q = e => {
+  X = e => {
     let {
       positionContainerRef: t,
       drawerRef: n,
       orientation: r
-    } = e, a = (0, d.e7)([D.ZP], () => D.ZP.expressionPickerWidth), [o, s] = i.useState(window.innerWidth), [c, u] = i.useState(null != a ? a : M._j.MIN), f = i.useMemo(() => {
+    } = e, a = (0, d.e7)([w.ZP], () => w.ZP.expressionPickerWidth), [o, s] = i.useState(window.innerWidth), [c, u] = i.useState(null != a ? a : j._j.MIN), f = i.useMemo(() => {
       switch (c) {
-        case M._j.MIN:
-          return M.Om;
-        case M._j.MAX:
+        case j._j.MIN:
+          return j.Om;
+        case j._j.MAX:
           return null;
         default:
           return c
       }
-    }, [c]), _ = i.useCallback(e => {
-      let t = e >= o ? M._j.MAX : e <= M.Om ? M._j.MIN : e;
-      null == t && null != n.current && (n.current.style.width = ""), h.ZP.updatedUnsyncedSettings({
+    }, [c]), p = i.useCallback(e => {
+      let t = e >= o ? j._j.MAX : e <= j.Om ? j._j.MIN : e;
+      null == t && null != n.current && (n.current.style.width = ""), m.ZP.updatedUnsyncedSettings({
         expressionPickerWidth: t
       }), u(t)
-    }, [n, o]), p = (0, g.Z)({
+    }, [n, o]), _ = (0, g.Z)({
       initialElementDimension: f,
       maxDimension: o,
-      minDimension: M.Om,
+      minDimension: j.Om,
       resizableDomNodeRef: n,
-      onElementResize: _,
+      onElementResize: p,
       orientation: r
     });
     return i.useEffect(() => {
@@ -166,8 +166,8 @@ let q = Chunk957825.Om + Chunk149203.Su.MEDIUM,
     }, [t]), {
       drawerWidth: f,
       handleDrawerResizeHandleMouseDown: i.useCallback(e => {
-        e.stopPropagation(), null != t.current && s(t.current.offsetWidth), p(e)
-      }, [t, p])
+        e.stopPropagation(), null != t.current && s(t.current.offsetWidth), _(e)
+      }, [t, _])
     }
   };
 
@@ -175,12 +175,12 @@ function J(e) {
   var t, n, a, s;
   let {
     positionTargetRef: l,
-    hideGifFavorites: h,
-    includeCreateEmojiButton: D,
+    hideGifFavorites: m,
+    includeCreateEmojiButton: w,
     onSelectGIF: V,
     onSelectEmoji: H,
-    onSelectSticker: W,
-    onSelectSound: Y,
+    onSelectSticker: Y,
+    onSelectSound: W,
     channel: K,
     type: z,
     position: J,
@@ -191,104 +191,104 @@ function J(e) {
   } = e, er = i.useRef(null), ei = i.useRef(false), ea = i.useRef(null), eo = i.useRef(null), {
     drawerWidth: es,
     handleDrawerResizeHandleMouseDown: el
-  } = Q({
+  } = X({
     positionContainerRef: er,
     drawerRef: eo,
     orientation: "left" === $ ? g.y.HORIZONTAL_RIGHT : g.y.HORIZONTAL_LEFT
-  }), ec = (0, x.Iu)(e => e.activeView), eu = (0, N.fQ)(K), {
+  }), ec = (0, L.Iu)(e => e.activeView), eu = (0, N.fQ)(K), {
     renderWindow: ed,
     windowDispatch: ef
-  } = i.useContext(S.ZP), e_ = (0, d.e7)([R.Z], () => !R.Z.hasLoadedStickerPacks), ep = (0, A.V2)({
+  } = i.useContext(T.ZP), ep = (0, d.e7)([P.Z], () => !P.Z.hasLoadedStickerPacks), e_ = (0, A.V2)({
     location: "expression_picker"
-  }), eh = (0, d.e7)([w.Z], () => w.Z.isOpen()), em = null != en, eg = (0, _.Jw)(null != en ? en : ""), {
+  }), em = (0, d.e7)([D.Z], () => D.Z.isOpen()), eh = null != en, eg = (0, p.Jw)(null != en ? en : ""), {
     reorderExpressionPickerTabs: eE
   } = b.n.useConfig({
     location: "expression_picker"
-  }), eb = (null == (t = z.gifs) ? true : t.allowSending) && !c.tq && null != V, ey = (null == (n = z.stickers) ? true : n.allowSending) && null != W, eO = !(null == (a = z.expressionPicker) ? true : a.onlyEmojis) && (eb || ey), ev = (0, v.qt)({
+  }), eb = (null == (t = z.gifs) ? true : t.allowSending) && !c.tq && null != V, ey = (null == (n = z.stickers) ? true : n.allowSending) && null != Y, eO = !(null == (a = z.expressionPicker) ? true : a.onlyEmojis) && (eb || ey), ev = (0, v.qt)({
     location: "expression_picker",
     autoTrackExposure: true,
-    disable: !eO || ec !== M.X1.EMOJI
-  }), eI = i.useCallback(e => {
+    disable: !eO || ec !== j.X1.EMOJI
+  }), eS = i.useCallback(e => {
     var t;
-    if (!em && (0, _.$s)() || em && !(eg && et) || eh || e.defaultPrevented) return;
+    if (!eh && (0, p.$s)() || eh && !(eg && et) || em || e.defaultPrevented) return;
     let {
       target: n
     } = e;
-    if ((0, u.kK)(n) && null != n.closest("." + M.CT)) return;
+    if ((0, u.kK)(n) && null != n.closest("." + j.CT)) return;
     for (;
       (0, u.kK)(n);) {
       if (n === eo.current || "true" === n.getAttribute("data-menu-item") || "true" === n.getAttribute("data-premium-tutorial-expression-picker-tooltip") || "true" === n.getAttribute("data-premium-tutorial-persistent-coachmark-emoji-step")) return;
       n = n.parentNode
-    }(0, x._Q)();
+    }(0, L._Q)();
     let r = null == (t = (0, u.uB)(e)) ? true : t.activeElement;
-    (null == r || "BODY" === r.tagName) && L.S.dispatchToLastSubscribed(k.CkL.TEXTAREA_FOCUS)
-  }, [et, eg, em, eh]), eT = i.useCallback(() => {
-    (0, x._Q)()
+    (null == r || "BODY" === r.tagName) && x.S.dispatchToLastSubscribed(M.CkL.TEXTAREA_FOCUS)
+  }, [et, eg, eh, em]), eI = i.useCallback(() => {
+    (0, L._Q)()
   }, []);
   i.useLayoutEffect(() => {
     let e = () => {
-      ec === M.X1.GIF && (0, x._Q)()
+      ec === j.X1.GIF && (0, L._Q)()
     };
-    return ed.addEventListener("mousedown", eI), ed.addEventListener("contextmenu", eI), ef.subscribe(k.CkL.POPOUT_CLOSE, eT), L.S.subscribe(k.CkL.CLOSE_GIF_PICKER, e), () => {
-      ed.removeEventListener("mousedown", eI), ed.removeEventListener("contextmenu", eI), ef.unsubscribe(k.CkL.POPOUT_CLOSE, eT), L.S.unsubscribe(k.CkL.CLOSE_GIF_PICKER, e)
+    return ed.addEventListener("mousedown", eS), ed.addEventListener("contextmenu", eS), ef.subscribe(M.CkL.POPOUT_CLOSE, eI), x.S.subscribe(M.CkL.CLOSE_GIF_PICKER, e), () => {
+      ed.removeEventListener("mousedown", eS), ed.removeEventListener("contextmenu", eS), ef.unsubscribe(M.CkL.POPOUT_CLOSE, eI), x.S.unsubscribe(M.CkL.CLOSE_GIF_PICKER, e)
     }
-  }, [ec, eT, eI, ed, ef]), (0, p.Tbt)(er);
-  let [eS, eA] = (0, y.US)(ep ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eC, eN] = i.useState(false);
+  }, [ec, eI, eS, ed, ef]), (0, _.Tbt)(er);
+  let [eT, eA] = (0, y.US)(e_ ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eC, eN] = i.useState(false);
   i.useEffect(() => {
-    ec === M.X1.SOUNDBOARD && eN(true)
+    ec === j.X1.SOUNDBOARD && eN(true)
   }, [ec]), i.useEffect(() => () => {
-    eC && eA(j.L.TAKE_ACTION)
+    eC && eA(k.L.TAKE_ACTION)
   }, [eC, eA]), i.useEffect(() => {
-    (0, x.ql)("")
+    (0, L.ql)("")
   }, []), i.useEffect(() => {
-    (!em && (0, _.$s)() || em && !eg) && (0, x._Q)()
-  }, [eg, em]), i.useEffect(() => {
+    (!eh && (0, p.$s)() || eh && !eg) && (0, L._Q)()
+  }, [eg, eh]), i.useEffect(() => {
     if (null != eo.current && !ei.current) {
       var e, t, n, r;
-      ec === M.X1.EMOJI ? (null == ea || null == (e = ea.current) ? true : e.onPickerOpen) != null && (null == ea || null == (t = ea.current) || t.onPickerOpen(), ei.current = true) : ec === M.X1.STICKER ? (null == ea || null == (n = ea.current) ? true : n.onPickerOpen) == null || e_ || (null == ea || null == (r = ea.current) || r.onPickerOpen(), ei.current = true) : (E.ZP.trackWithMetadata(k.rMx.EXPRESSION_PICKER_OPENED, {
+      ec === j.X1.EMOJI ? (null == ea || null == (e = ea.current) ? true : e.onPickerOpen) != null && (null == ea || null == (t = ea.current) || t.onPickerOpen(), ei.current = true) : ec === j.X1.STICKER ? (null == ea || null == (n = ea.current) ? true : n.onPickerOpen) == null || ep || (null == ea || null == (r = ea.current) || r.onPickerOpen(), ei.current = true) : (E.ZP.trackWithMetadata(M.rMx.EXPRESSION_PICKER_OPENED, {
         width: eo.current.offsetWidth,
         tab: ec,
         badged: false
       }), ei.current = true)
     }
   });
-  let eR = i.useCallback((e, t) => null == Y ? true : Y(e, "emoji_picker", t), [Y]),
-    eP = i.useCallback((e, t) => null == Y ? true : Y(e, "soundboard_picker", t), [Y]),
-    eD = (null == (s = z.soundmoji) ? true : s.allowSending) === true && null != Y,
-    ew = "left" === $ ? "right" : "left",
-    eL = null != ee ? ee : "left" === $ ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight,
-    ex = eb ? (0, r.jsx)(X, {
+  let eP = i.useCallback((e, t) => null == W ? true : W(e, "emoji_picker", t), [W]),
+    eR = i.useCallback((e, t) => null == W ? true : W(e, "soundboard_picker", t), [W]),
+    ew = (null == (s = z.soundmoji) ? true : s.allowSending) === true && null != W,
+    eD = "left" === $ ? "right" : "left",
+    ex = null != ee ? ee : "left" === $ ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight,
+    eL = eb ? (0, r.jsx)(Q, {
       id: U._3,
       "aria-controls": U.vO,
-      "aria-selected": ec === M.X1.GIF,
-      isActive: ec === M.X1.GIF,
-      viewType: M.X1.GIF,
-      children: Z.intl.string(Z.t["6gUTsS"])
+      "aria-selected": ec === j.X1.GIF,
+      isActive: ec === j.X1.GIF,
+      viewType: j.X1.GIF,
+      children: B.intl.string(B.t["6gUTsS"])
     }) : null,
-    eM = ey ? (0, r.jsx)(X, {
-      id: B.ED,
-      "aria-controls": B.nZ,
-      "aria-selected": ec === M.X1.STICKER,
-      isActive: ec === M.X1.STICKER,
+    ej = ey ? (0, r.jsx)(Q, {
+      id: Z.ED,
+      "aria-controls": Z.nZ,
+      "aria-selected": ec === j.X1.STICKER,
+      isActive: ec === j.X1.STICKER,
       autoFocus: !eu,
-      viewType: M.X1.STICKER,
+      viewType: j.X1.STICKER,
       children: (0, r.jsx)("div", {
         className: F.stickersNavItem,
-        children: Z.intl.string(Z.t.nf1s3u)
+        children: B.intl.string(B.t.nf1s3u)
       })
     }) : null,
-    ek = (0, r.jsx)(X, {
+    eM = (0, r.jsx)(Q, {
       id: U.td,
       "aria-controls": U.cZ,
-      "aria-selected": ec === M.X1.EMOJI,
-      isActive: ec === M.X1.EMOJI,
-      viewType: M.X1.EMOJI,
-      children: Z.intl.string(Z.t.Xu3wE3)
+      "aria-selected": ec === j.X1.EMOJI,
+      isActive: ec === j.X1.EMOJI,
+      viewType: j.X1.EMOJI,
+      children: B.intl.string(B.t.Xu3wE3)
     });
-  return (0, r.jsx)(m.Z, {
-    section: k.jXE.EXPRESSION_PICKER,
-    children: (0, r.jsx)(T.W5, {
-      className: o()(F.positionLayer, eL),
+  return (0, r.jsx)(h.Z, {
+    section: M.jXE.EXPRESSION_PICKER,
+    children: (0, r.jsx)(I.W5, {
+      className: o()(F.positionLayer, ex),
       targetRef: l,
       position: J,
       align: $,
@@ -306,7 +306,7 @@ function J(e) {
           }),
           ref: er,
           role: "dialog",
-          "aria-label": Z.intl.string(Z.t.Utlwvi),
+          "aria-label": B.intl.string(B.t.Utlwvi),
           children: n ? (0, r.jsxs)("div", {
             className: F.drawerSizingWrapper,
             style: {
@@ -318,7 +318,7 @@ function J(e) {
               className: F.resizeHandle,
               onMouseDown: el,
               style: {
-                [ew]: false
+                [eD]: false
               }
             }), (0, r.jsxs)("div", {
               className: F.contentWrapper,
@@ -327,63 +327,63 @@ function J(e) {
                 children: (0, r.jsxs)("div", {
                   className: F.navList,
                   role: "tablist",
-                  "aria-label": Z.intl.string(Z.t["2j4Vgd"]),
+                  "aria-label": B.intl.string(B.t["2j4Vgd"]),
                   children: [eE ? (0, r.jsxs)(r.Fragment, {
-                    children: [ek, ex, eM]
+                    children: [eM, eL, ej]
                   }) : (0, r.jsxs)(r.Fragment, {
-                    children: [ex, eM, ek]
-                  }), ep && eD && (0, r.jsx)(X, {
+                    children: [eL, ej, eM]
+                  }), e_ && ew && (0, r.jsx)(Q, {
                     id: U.Hr,
                     "aria-controls": U.gV,
-                    "aria-selected": ec === M.X1.SOUNDBOARD,
-                    isActive: ec === M.X1.SOUNDBOARD,
-                    viewType: M.X1.SOUNDBOARD,
+                    "aria-selected": ec === j.X1.SOUNDBOARD,
+                    isActive: ec === j.X1.SOUNDBOARD,
+                    viewType: j.X1.SOUNDBOARD,
                     children: (0, r.jsxs)("div", {
                       className: F.soundmojiLabelContainer,
-                      children: [Z.intl.string(Z.t.EHlAMc), null != eS && (0, r.jsx)(p.IGR, {
-                        text: Z.intl.string(Z.t.y2b7CA)
+                      children: [B.intl.string(B.t.EHlAMc), null != eT && (0, r.jsx)(_.IGR, {
+                        text: B.intl.string(B.t.y2b7CA)
                       })]
                     })
                   })]
                 })
-              }) : null, ec === M.X1.STICKER && ey ? (0, r.jsx)(P.Z, {
-                isLoading: e_,
+              }) : null, ec === j.X1.STICKER && ey ? (0, r.jsx)(R.Z, {
+                isLoading: ep,
                 channel: K,
                 containerWidth: es,
-                onSelectSticker: W,
-                closePopout: eT,
+                onSelectSticker: Y,
+                closePopout: eI,
                 ref: e => {
                   ea.current = e
                 }
-              }) : null, ec === M.X1.GIF && eb ? (0, r.jsx)(I.Z, {
+              }) : null, ec === j.X1.GIF && eb ? (0, r.jsx)(S.Z, {
                 onSelectGIF: V,
-                hideFavorites: h,
+                hideFavorites: m,
                 persistSearch: true
-              }) : null, ec === M.X1.EMOJI ? (0, r.jsx)(O.Z, {
+              }) : null, ec === j.X1.EMOJI ? (0, r.jsx)(O.Z, {
                 hasTabWrapper: true,
                 containerContext: eO ? O.v.TABS_EXPRESSION_PICKER : O.v.NO_TABS_EXPRESSION_PICKER,
                 persistSearch: true,
                 channel: K,
                 containerWidth: es,
-                includeCreateEmojiButton: D,
+                includeCreateEmojiButton: w,
                 emojiSize: null != es && es < q ? U.Su.MEDIUM : U.Su.LARGE,
                 pickerIntention: G.Hz.CHAT,
-                closePopout: eT,
+                closePopout: eI,
                 onSelectEmoji: H,
-                onSelectSoundmoji: eR,
+                onSelectSoundmoji: eP,
                 ref: e => {
                   ea.current = e
                 },
                 shouldShowSoundmojiInEmojiPicker: (null == (t = z.soundmoji) ? true : t.allowSending) === true,
                 showAddEmojiButton: ev.enabled
-              }) : null, ec === M.X1.SOUNDBOARD ? (0, r.jsx)("div", {
+              }) : null, ec === j.X1.SOUNDBOARD ? (0, r.jsx)("div", {
                 className: F.soundboardContainer,
                 children: (0, r.jsx)(C.Z, {
                   guildId: K.guild_id,
                   channel: K,
                   containerWidth: es,
-                  onClose: eT,
-                  onSelect: eP,
+                  onClose: eI,
+                  onSelect: eR,
                   analyticsSource: "expression-picker",
                   renderHeader: e => (0, r.jsx)("div", {
                     className: F.soundboardHeader,

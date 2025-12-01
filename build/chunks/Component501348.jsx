@@ -48,7 +48,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk226518 = require("./226518.js"),
   Chunk197571 = require("./197571.js");
 
-function Y(e, t, n) {
+function W(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -64,7 +64,7 @@ function K(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Y(e, t, n[t])
+      W(e, t, n[t])
     })
   }
   return e
@@ -86,42 +86,42 @@ function q(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let X = "cozy",
-  Q = "compact",
+let Q = "cozy",
+  X = "compact",
   J = (0, Chunk313201.hQ)(),
   $ = (0, Chunk313201.hQ)(),
   ee = "1337",
   et = e => {
     let t = 0;
-    return [(0, I.e5)(q(K({}, (0, T.ZP)({
+    return [(0, S.e5)(q(K({}, (0, I.ZP)({
       channelId: ee,
       content: V.intl.string(V.t.oZxkEq)
     })), {
-      state: B.yb.SENT,
+      state: Z.yb.SENT,
       id: "".concat(t++)
-    })), (0, I.e5)(q(K({}, (0, T.ZP)({
+    })), (0, S.e5)(q(K({}, (0, I.ZP)({
       channelId: ee,
       content: (0, u.wj)(e) ? V.intl.string(V.t["WGb/v7"]) : V.intl.string(V.t["62m4mz"])
     })), {
-      state: B.yb.SENT,
+      state: Z.yb.SENT,
       id: "".concat(t++)
-    })), (0, I.e5)(q(K({}, (0, T.ZP)({
+    })), (0, S.e5)(q(K({}, (0, I.ZP)({
       channelId: ee,
       content: V.intl.string(V.t.a0Byo5)
     })), {
-      state: B.yb.SENT,
+      state: Z.yb.SENT,
       id: "".concat(t++)
-    })), (0, I.e5)(q(K({}, (0, T.ZP)({
+    })), (0, S.e5)(q(K({}, (0, I.ZP)({
       channelId: ee,
       content: V.intl.string(V.t.bmwEWJ)
     })), {
-      state: B.yb.SENT,
+      state: Z.yb.SENT,
       id: "".concat(t++)
-    })), (0, I.e5)(q(K({}, (0, T.ZP)({
+    })), (0, S.e5)(q(K({}, (0, I.ZP)({
       channelId: ee,
       content: V.intl.string(V.t["hK9QW/"])
     })), {
-      state: B.yb.SENT,
+      state: Z.yb.SENT,
       id: "".concat(t)
     }))]
   },
@@ -209,7 +209,7 @@ class ei extends Chunk473749.Component {
         outline: true,
         "aria-hidden": true,
         children: Chunk120356.map((t, n) => (0, r.jsx)(A.Z, {
-          author: (0, S.ZH)(t),
+          author: (0, T.ZH)(t),
           message: t,
           compact: e,
           isGroupStart: n % 2 == 0,
@@ -253,7 +253,7 @@ class ei extends Chunk473749.Component {
         name: Chunk388032.intl.string(Chunk388032.t["+o/sOo"]),
         value: Chunk524437.hg.H23
       }],
-      onChange: e => L.hg.updateSetting(e),
+      onChange: e => x.hg.updateSetting(e),
       value: module
     })
   }
@@ -269,7 +269,7 @@ class ei extends Chunk473749.Component {
     })
   }
   handleFontSizeChange(e) {
-    (0, h.oL)(e)
+    (0, m.oL)(e)
   }
   handleMessageSpacingChange(e) {
     switch (e) {
@@ -278,11 +278,11 @@ class ei extends Chunk473749.Component {
       case 8:
       case 16:
       case 24:
-        (0, h.ZZ)(e)
+        (0, m.ZZ)(e)
     }
   }
   handleZoomChange(e) {
-    (0, h.cq)(e)
+    (0, m.cq)(e)
   }
   render() {
     let {
@@ -325,15 +325,15 @@ class ei extends Chunk473749.Component {
           description: Chunk388032.intl.string(Chunk388032.t.QntEEG),
           options: [{
             name: Chunk388032.intl.string(Chunk388032.t.Jqj4cZ),
-            value: X
+            value: Q
           }, {
             name: Chunk388032.intl.string(Chunk388032.t["1JNcPS"]),
-            value: Q
+            value: X
           }],
           onChange: e => this.handleMessageDisplayModeChange({
             value: e
           }),
-          value: this.props.messageDisplayCompact ? Q : X
+          value: this.props.messageDisplayCompact ? X : Q
         }), this.props.messageDisplayCompact && (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t["//vhWi"]),
           checked: !this.props.displayCompactAvatars,
@@ -364,30 +364,30 @@ class ei extends Chunk473749.Component {
     })
   }
   constructor(...e) {
-    super(...e), Y(this, "darkMessages", et(B.BRd.DARK)), Y(this, "lightMessages", et(B.BRd.LIGHT)), Y(this, "handleDisplayCompactAvatarsChanged", e => {
+    super(...e), W(this, "darkMessages", et(Z.BRd.DARK)), W(this, "lightMessages", et(Z.BRd.LIGHT)), W(this, "handleDisplayCompactAvatarsChanged", e => {
       f.ZP.updatedUnsyncedSettings({
         displayCompactAvatars: e
       })
-    }), Y(this, "handleDesktopRefreshEnabledChanged", e => {
+    }), W(this, "handleDesktopRefreshEnabledChanged", e => {
       f.ZP.updatedUnsyncedSettings({
         disableVisualRefresh: !e
       })
-    }), Y(this, "handleMessageDisplayModeChange", e => {
+    }), W(this, "handleMessageDisplayModeChange", e => {
       let {
         value: t
       } = e;
-      L.jU.updateSetting(t === Q), (0, h.ZZ)()
-    }), Y(this, "handleUIDensityChange", e => {
+      x.jU.updateSetting(t === X), (0, m.ZZ)()
+    }), W(this, "handleUIDensityChange", e => {
       let {
         value: t
       } = e;
-      t !== c.Pi.UNSET_UI_DENSITY && L.YC.updateSetting(t)
+      t !== c.Pi.UNSET_UI_DENSITY && x.YC.updateSetting(t)
     })
   }
 }
 let ea = e => {
   (0, v.zu)(e) || (0, v.Q3)(e, {
-    dismissAction: Z.L.AUTO,
+    dismissAction: B.L.AUTO,
     forceTrack: true
   })
 };

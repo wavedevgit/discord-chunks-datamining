@@ -15,7 +15,7 @@ var Chunk46973 = require("./46973.js"),
   Chunk341569 = require("./341569.js"),
   Chunk39604 = require("./39604.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,9 +23,9 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = 1e4,
-  h = 1e4;
-class m extends Chunk147913.Z {
+let _ = 1e4,
+  m = 1e4;
+class h extends Chunk147913.Z {
   handleClipsSignalCreated(e, t) {
     this.isSignalEnabled(e.type) && this.process(e, t)
   }
@@ -95,11 +95,11 @@ class m extends Chunk147913.Z {
         this.scheduleClip(e);
         break;
       case u.Bs.GAME_EVENT:
-        1 === e.importance && this.scheduleClip(e, p);
+        1 === e.importance && this.scheduleClip(e, _);
         break;
       case u.Bs.PHRASE:
         var n;
-        if ((null == (n = this.scheduledClipSignal) ? true : n.type) === u.Bs.GAME_EVENT || performance.now() - this.lastClipTimestamp < h) return;
+        if ((null == (n = this.scheduledClipSignal) ? true : n.type) === u.Bs.GAME_EVENT || performance.now() - this.lastClipTimestamp < m) return;
         this.scheduleClip(e)
     }
   }
@@ -107,7 +107,7 @@ class m extends Chunk147913.Z {
     return {
       timeline: this.timeline.read(),
       scheduledClipSignal: this.scheduledClipSignal,
-      phraseCooldown: Math.max(0, h - (performance.now() - this.lastClipTimestamp))
+      phraseCooldown: Math.max(0, m - (performance.now() - this.lastClipTimestamp))
     }
   }
   clear() {
@@ -130,7 +130,7 @@ class m extends Chunk147913.Z {
     this.timeline.updateLength(Chunk435064.Z.getSettings().clipsLength)
   }
   constructor() {
-    super(), _(this, "timeline", true), _(this, "scheduledClipTimeout", null), _(this, "scheduledClipSignal", null), _(this, "lastClipTimestamp", 0), _(this, "actions", {
+    super(), p(this, "timeline", true), p(this, "scheduledClipTimeout", null), p(this, "scheduledClipSignal", null), p(this, "lastClipTimestamp", 0), p(this, "actions", {
       CLIPS_SIGNAL_CREATED: e => this.handleClipsSignalCreated(e.signal, e.timestamp),
       SPEAKING: e => this.handleSpeaking(e),
       GUILD_SOUNDBOARD_SOUND_PLAY_START: e => this.handleSoundboardPlayStart(e),
@@ -140,4 +140,4 @@ class m extends Chunk147913.Z {
     }), this.timeline = new Chunk519159.m(Chunk435064.Z.getSettings().clipsLength)
   }
 }
-let g = new m
+let g = new h

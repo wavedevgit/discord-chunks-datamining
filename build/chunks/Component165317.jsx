@@ -11,8 +11,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk607070 = require("./607070.js"),
   Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
-  Chunk509212 = require("./509212.js"),
   Chunk937797 = require("./937797.js"),
+  Chunk115179 = require("./115179.js"),
   Chunk472144 = require("./472144.jsx"),
   Chunk644646 = require("./644646.jsx"),
   Chunk969227 = require("./969227.js"),
@@ -32,9 +32,9 @@ function C(e) {
     onClose: j
   } = o.useContext(E.VideoQuestModalContext), {
     enabled: P
-  } = m.EO.useConfig({
+  } = d.EO.useConfig({
     location: g.dr.VIDEO_MODAL
-  }), [D, R] = o.useState(false), T = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), I = o.useRef(null == (t = y.userStatus) ? true : t.completedAt), [N, A] = o.useState(false), w = (0, d.w8)(y.config), {
+  }), [D, R] = o.useState(false), T = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), I = o.useRef(null == (t = y.userStatus) ? true : t.completedAt), [N, A] = o.useState(false), w = (0, m.w8)(y.config), {
     completedRatio: k,
     completedRatioDisplay: L
   } = (0, c.I)(y), M = (null == (n = y.userStatus) ? true : n.completedAt) != null, V = (null == (C = y.userStatus) ? true : C.claimedAt) != null, Z = O.intl.formatToPlainString(M && !V && P ? O.t.NRp4K4 : O.t["12IWP2"], {

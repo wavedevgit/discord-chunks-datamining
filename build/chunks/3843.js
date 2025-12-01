@@ -11,13 +11,13 @@ var Chunk179560 = require("./179560.js"),
   u = require("./195653.js")(),
   d = "undefined" == typeof globalThis ? require.g : globalThis,
   f = Chunk923888(),
-  _ = Chunk166691("String.prototype.slice"),
-  p = Chunk166691("Array.prototype.indexOf", true) || function(e, t) {
+  p = Chunk166691("String.prototype.slice"),
+  _ = Chunk166691("Array.prototype.indexOf", true) || function(e, t) {
     for (var n = 0; n < e.length; n += 1)
       if (e[n] === t) return n;
     return false
   },
-  h = {
+  m = {
     __proto__: null
   };
 u && Chunk566817 && Chunk143988 ? Chunk179560(f, function(e) {
@@ -25,34 +25,34 @@ u && Chunk566817 && Chunk143988 ? Chunk179560(f, function(e) {
   if (Symbol.toStringTag in t && l) {
     var n = l(t),
       r = s(n, Symbol.toStringTag);
-    !r && n && (r = s(l(n), Symbol.toStringTag)), h["$" + e] = a(r.get)
+    !r && n && (r = s(l(n), Symbol.toStringTag)), m["$" + e] = a(r.get)
   }
 }) : Chunk179560(f, function(e) {
   var t = new d[e],
     n = t.slice || t.set;
-  n && (h["$" + e] = a(n))
+  n && (m["$" + e] = a(n))
 });
-var m = function(e) {
+var h = function(e) {
     var t = false;
-    return r(h, function(n, r) {
+    return r(m, function(n, r) {
       if (!t) try {
-        "$" + n(e) === r && (t = _(r, 1))
+        "$" + n(e) === r && (t = p(r, 1))
       } catch (e) {}
     }), t
   },
   g = function(e) {
     var t = false;
-    return r(h, function(n, r) {
+    return r(m, function(n, r) {
       if (!t) try {
-        n(e), t = _(r, 1)
+        n(e), t = p(r, 1)
       } catch (e) {}
     }), t
   };
 module.exports = function(e) {
   if (!e || "object" != typeof e) returnfalse;
   if (!u) {
-    var t = _(c(e), 8, false);
-    return p(f, t) > false ? t : "Object" === t && g(e)
+    var t = p(c(e), 8, false);
+    return _(f, t) > false ? t : "Object" === t && g(e)
   }
-  return s ? m(e) : null
+  return s ? h(e) : null
 }

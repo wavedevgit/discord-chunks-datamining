@@ -48,25 +48,25 @@ function f(e) {
   d.desktopType = t
 }
 
-function _(e) {
+function p(e) {
   let {
     sounds: t
   } = e;
   d.disabledSounds = t
 }
 
-function p() {
+function _() {
   d.disableAllSounds = !d.disableAllSounds
 }
 
-function h(e) {
+function m(e) {
   let {
     ttsType: t
   } = e;
   d.ttsType = t
 }
 
-function m(e) {
+function h(e) {
   let {
     disableUnreadBadge: t
   } = e;
@@ -135,11 +135,11 @@ l(y, "displayName", "NotificationSettingsStore"), l(y, "persistKey", "notificati
 }]);
 let O = new y(Chunk570140.Z, {
   NOTIFICATIONS_SET_DESKTOP_TYPE: f,
-  NOTIFICATIONS_SET_TTS_TYPE: h,
-  NOTIFICATIONS_SET_DISABLED_SOUNDS: _,
-  NOTIFICATIONS_TOGGLE_ALL_DISABLED: p,
+  NOTIFICATIONS_SET_TTS_TYPE: m,
+  NOTIFICATIONS_SET_DISABLED_SOUNDS: p,
+  NOTIFICATIONS_TOGGLE_ALL_DISABLED: _,
   NOTIFICATIONS_SET_PERMISSION_STATE: b,
-  NOTIFICATIONS_SET_DISABLE_UNREAD_BADGE: m,
+  NOTIFICATIONS_SET_DISABLE_UNREAD_BADGE: h,
   NOTIFICATIONS_SET_TASKBAR_FLASH: g,
   NOTIFICATIONS_SET_NOTIFY_MESSAGES_IN_SELECTED_CHANNEL: E
 })

@@ -2,7 +2,7 @@
 /** chunk id: 670451, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,21 +45,21 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e) {
+function _(e) {
   let t = i.useRef(null);
-  return (0, r.jsx)(s.Z, _(d({}, e), {
+  return (0, r.jsx)(s.Z, p(d({}, e), {
     targetElementRef: t,
     children: e => (0, r.jsx)(a.u, {
       targetElementRef: t,
       text: l.intl.string(l.t["UKOtz+"]),
       "aria-label": false,
-      children: (0, r.jsx)(o.P3F, _(d({}, e), {
+      children: (0, r.jsx)(o.P3F, p(d({}, e), {
         innerRef: t,
         "aria-label": l.intl.string(l.t["UKOtz+"]),
         onClick: t => {

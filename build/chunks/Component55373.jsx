@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   SR: () => l,
-  ZP: () => _,
+  ZP: () => p,
   b5: () => c,
   eo: () => f,
   js: () => d,
@@ -23,7 +23,7 @@ var d = function(e) {
   f = function(e) {
     return e.UP = "up", e.DOWN = "down", e
   }({});
-let _ = e => {
+let p = e => {
   var t, n;
   let {
     blurAnimationData: l,
@@ -31,10 +31,10 @@ let _ = e => {
     yAxisAnimationData: u,
     parallaxAnimationData: d,
     animateXAxisWiggle: f = false,
-    isMotionReduced: _ = false,
-    animationSpeedScale: p = 1,
-    children: h
-  } = e, m = (0, o.q_F)(null != u ? {
+    isMotionReduced: p = false,
+    animationSpeedScale: _ = 1,
+    children: m
+  } = e, h = (0, o.q_F)(null != u ? {
     from: {
       y: 0
     },
@@ -42,7 +42,7 @@ let _ = e => {
       y: 1
     },
     config: {
-      duration: u.duration * p
+      duration: u.duration * _
     },
     loop: true
   } : {
@@ -55,12 +55,12 @@ let _ = e => {
       scale: E > 0 ? c.endScale : c.startScale
     },
     config: {
-      duration: c.duration * p
+      duration: c.duration * _
     },
     onRest: () => b(e => false * e)
   } : {
     scale: 1
-  }), [O, v] = (0, i.useState)(1), I = (0, o.q_F)(null != l ? {
+  }), [O, v] = (0, i.useState)(1), S = (0, o.q_F)(null != l ? {
     from: {
       blur: O > 0 ? l.startBlurRadius : l.endBlurRadius
     },
@@ -68,24 +68,24 @@ let _ = e => {
       blur: O > 0 ? l.endBlurRadius : l.startBlurRadius
     },
     config: {
-      duration: l.duration * p
+      duration: l.duration * _
     },
     onRest: () => v(e => false * e)
   } : {
     blur: 0
-  }), T = (0, i.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * p), [p]), S = 5, [A, C] = (0, i.useState)(0), [N, R] = (0, i.useState)(1), P = (0, o.q_F)({
+  }), I = (0, i.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), T = 5, [A, C] = (0, i.useState)(0), [N, P] = (0, i.useState)(1), R = (0, o.q_F)({
     xOffset: A,
     config: {
       tension: 10,
       friction: 10,
-      duration: T
+      duration: I
     }
   });
   return ((0, s.Z)(() => {
-    C(N * (.5 * Math.random() * S + S / 2)), R(e => false * e)
-  }, T), _) ? h : (0, r.jsx)(a.animated.div, {
+    C(N * (.5 * Math.random() * T + T / 2)), P(e => false * e)
+  }, I), p) ? m : (0, r.jsx)(a.animated.div, {
     style: {
-      transform: null == (t = m.y) ? true : t.to(e => {
+      transform: null == (t = h.y) ? true : t.to(e => {
         if (null == u) return "translateY(0px)";
         let t = g(e * Math.PI * 2) * u.range,
           n = 0;
@@ -95,11 +95,11 @@ let _ = e => {
         }
         return "translateY(".concat(t + n, "px)")
       }),
-      translateX: f ? P.xOffset.to(e => "".concat(e, "px")) : 0,
+      translateX: f ? R.xOffset.to(e => "".concat(e, "px")) : 0,
       scale: y.scale,
-      filter: null == (n = I.blur) ? true : n.to(e => "blur(".concat(e, "px)")),
+      filter: null == (n = S.blur) ? true : n.to(e => "blur(".concat(e, "px)")),
       opacity: null != d && d.changeOpacity ? d.containerVisibilityPercentage : 1
     },
-    children: h
+    children: m
   })
 }

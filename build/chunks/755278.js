@@ -18,7 +18,7 @@ var Chunk95015 = require("./95015.js"),
   Chunk936349 = require("./936349.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,10 +38,10 @@ class g extends Chunk928801.Z {
     let i = 0,
       f = Chunk695346.tU.getSetting();
     i = (0, Chunk95015.mB)(Chunk928801, Chunk981631.BVn.ALLOW_VOICE_RECORDING, Chunk592125);
-    let p = (0, Chunk779618.Z)(Chunk131951.Z),
-      m = (0, Chunk341569.LI)() && ((null == (e = Chunk199902.Z.getCurrentUserActiveStream()) ? true : module.state) === Chunk981631.jm8.ACTIVE || (null == (t = Chunk199902.Z.getCurrentUserActiveStream()) ? true : exports.state) === Chunk981631.jm8.PAUSED),
+    let _ = (0, Chunk779618.Z)(Chunk131951.Z),
+      h = (0, Chunk341569.LI)() && ((null == (e = Chunk199902.Z.getCurrentUserActiveStream()) ? true : module.state) === Chunk981631.jm8.ACTIVE || (null == (t = Chunk199902.Z.getCurrentUserActiveStream()) ? true : exports.state) === Chunk981631.jm8.PAUSED),
       g = (0, Chunk341569.CY)() && (null == (n = Chunk594190.ZP.getVisibleGame()) ? true : require.windowHandle) != null;
-    i = (0, Chunk95015.mB)(Chunk928801, Chunk981631.BVn.CLIPS_ENABLED, m || g);
+    i = (0, Chunk95015.mB)(Chunk928801, Chunk981631.BVn.CLIPS_ENABLED, h || g);
     let {
       enableViewerClipping: E
     } = Chunk441167.Z.getCurrentConfig({
@@ -72,12 +72,12 @@ class g extends Chunk928801.Z {
     return {
       guildId: t,
       channelId: n,
-      selfMute: _.Z.isSelfMute(),
-      selfDeaf: _.Z.isSelfDeaf(),
-      selfVideo: _.Z.isVideoEnabled(),
-      preferredRegion: p.Z.getPreferredRegion(),
-      preferredRegions: p.Z.getPreferredRegions(),
-      videoStreamParameters: _.Z.getVideoStreamParameters(),
+      selfMute: p.Z.isSelfMute(),
+      selfDeaf: p.Z.isSelfDeaf(),
+      selfVideo: p.Z.isVideoEnabled(),
+      preferredRegion: _.Z.getPreferredRegion(),
+      preferredRegions: _.Z.getPreferredRegions(),
+      videoStreamParameters: p.Z.getVideoStreamParameters(),
       flags: this.computeVoiceFlags()
     }
   }
@@ -97,7 +97,7 @@ class g extends Chunk928801.Z {
       videoStreamParameters: c,
       flags: u = 0
     } = e;
-    o && (null == (t = f.Z.getChannel(r)) ? true : t.type) === h.d4z.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
+    o && (null == (t = f.Z.getChannel(r)) ? true : t.type) === m.d4z.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
       guildId: n,
       channelId: r,
       selfMute: i,
@@ -119,6 +119,6 @@ class g extends Chunk928801.Z {
     })
   }
   constructor(e) {
-    super(), m(this, "socket", true), this.socket = e
+    super(), h(this, "socket", true), this.socket = e
   }
 }

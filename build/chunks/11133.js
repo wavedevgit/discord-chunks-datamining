@@ -18,23 +18,23 @@ function d(e) {
     n = (null == e ? true : e.name) === "" ? null : null == e ? true : e.name,
     d = (null == e ? true : e.details) === "" ? null : null == e ? true : e.details,
     f = (null == e ? true : e.state) === "" ? null : null == e ? true : e.state,
-    _ = (null == e ? true : e.type) === c.IIU.STREAMING && null != d ? d : n;
-  if ((null == e ? true : e.status_display_type) === r.D.NAME && null != n ? _ = n : (null == e ? true : e.status_display_type) === r.D.STATE && null != f ? _ = f : (null == e ? true : e.status_display_type) === r.D.DETAILS && null != d && (_ = d), (0, o.Z)(e)) {
+    p = (null == e ? true : e.type) === c.IIU.STREAMING && null != d ? d : n;
+  if ((null == e ? true : e.status_display_type) === r.D.NAME && null != n ? p = n : (null == e ? true : e.status_display_type) === r.D.STATE && null != f ? p = f : (null == e ? true : e.status_display_type) === r.D.DETAILS && null != d && (p = d), (0, o.Z)(e)) {
     let e = (0, i.Z)(n);
     return {
       text: e,
       tooltip: e
     }
   }
-  if ((null == e ? true : e.type) === c.IIU.PLAYING && null != _) return {
-    text: _,
+  if ((null == e ? true : e.type) === c.IIU.PLAYING && null != p) return {
+    text: p,
     tooltip: u.intl.formatToPlainString(u.t.lFApmz, {
-      game: _
+      game: p
     })
   };
   if ((0, s.Z)(e) && t && null != f) {
-    var p;
-    let e = null == (p = f.split("; ")) ? true : p.join(", ");
+    var _;
+    let e = null == (_ = f.split("; ")) ? true : _.join(", ");
     return {
       text: e,
       tooltip: u.intl.formatToPlainString(u.t.Vnuxue, {
@@ -47,30 +47,30 @@ function d(e) {
     tooltip: u.intl.formatToPlainString(u.t.pW3Ip3, {
       name: n
     })
-  } : (null == e ? true : e.type) === c.IIU.LISTENING && null != _ ? {
-    text: _,
+  } : (null == e ? true : e.type) === c.IIU.LISTENING && null != p ? {
+    text: p,
     tooltip: u.intl.formatToPlainString(u.t.Vnuxue, {
-      name: _
+      name: p
     })
   } : (0, a.Z)(e) && t && null != d ? {
     text: d,
     tooltip: u.intl.formatToPlainString(u.t.pW3Ip3, {
       name: d
     })
-  } : (null == e ? true : e.type) === c.IIU.WATCHING && null != _ ? {
-    text: _,
+  } : (null == e ? true : e.type) === c.IIU.WATCHING && null != p ? {
+    text: p,
     tooltip: u.intl.formatToPlainString(u.t.pW3Ip3, {
-      name: _
+      name: p
     })
-  } : (null == e ? true : e.type) === c.IIU.COMPETING && null != _ ? {
-    text: _,
+  } : (null == e ? true : e.type) === c.IIU.COMPETING && null != p ? {
+    text: p,
     tooltip: u.intl.formatToPlainString(u.t.QQ2wVE, {
-      name: _
+      name: p
     })
-  } : (null == e ? true : e.type) === c.IIU.STREAMING && null != _ ? {
-    text: _,
+  } : (null == e ? true : e.type) === c.IIU.STREAMING && null != p ? {
+    text: p,
     tooltip: u.intl.formatToPlainString(u.t["0wJXSh"], {
-      name: _
+      name: p
     })
   } : {}
 }

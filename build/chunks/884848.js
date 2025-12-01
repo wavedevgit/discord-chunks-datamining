@@ -15,21 +15,21 @@ var Chunk126182 = require("./126182.js"),
       u = l.getCharacterList(),
       d = i,
       f = a + r.getText().length,
-      _ = null;
+      p = null;
     switch (s) {
       case "MERGE_OLD_DATA_TO_NEW_DATA":
-        _ = r.getData().merge(l.getData());
+        p = r.getData().merge(l.getData());
         break;
       case "REPLACE_WITH_NEW_DATA":
-        _ = r.getData()
+        p = r.getData()
     }
-    var p = l.merge({
+    var _ = l.merge({
       text: c.slice(0, a) + r.getText() + c.slice(a),
       characterList: o(u, r.getCharacterList(), a),
-      data: _
+      data: p
     });
     return e.merge({
-      blockMap: n.set(i, p),
+      blockMap: n.set(i, _),
       selectionBefore: t,
       selectionAfter: t.merge({
         anchorKey: d,
@@ -66,7 +66,7 @@ var Chunk126182 = require("./126182.js"),
       data: l.getData()
     })
   },
-  _ = function(e, t) {
+  p = function(e, t) {
     var n = e.getKey(),
       r = e,
       i = [];
@@ -77,34 +77,34 @@ var Chunk126182 = require("./126182.js"),
     }
     return i
   },
-  p = function(e, t, n, r) {
+  _ = function(e, t, n, r) {
     return e.withMutations(function(t) {
       var i = n.getKey(),
         a = r.getKey(),
         o = n.getNextSiblingKey(),
         s = n.getParentKey(),
-        l = _(r, e),
+        l = p(r, e),
         u = l[l.length - 1];
       if (t.get(a) ? (t.setIn([i, "nextSibling"], a), t.setIn([a, "prevSibling"], i)) : (t.setIn([i, "nextSibling"], r.getNextSiblingKey()), t.setIn([r.getNextSiblingKey(), "prevSibling"], i)), t.setIn([u, "nextSibling"], o), o && t.setIn([o, "prevSibling"], u), l.forEach(function(e) {
           return t.setIn([e, "parent"], s)
         }), s) {
         var d = e.get(s).getChildKeys(),
           f = d.indexOf(i) + 1,
-          p = d.toArray();
-        p.splice.apply(p, [f, 0].concat(l)), t.setIn([s, "children"], c(p))
+          _ = d.toArray();
+        _.splice.apply(_, [f, 0].concat(l)), t.setIn([s, "children"], c(_))
       }
     })
   },
-  h = function(e, t, n, a, o, s) {
+  m = function(e, t, n, a, o, s) {
     var l = n.first() instanceof i,
       c = [],
       u = a.size,
-      _ = n.get(o),
-      h = a.first(),
-      m = a.last(),
-      g = m.getLength(),
-      E = m.getKey(),
-      b = l && (!_.getChildKeys().isEmpty() || !h.getChildKeys().isEmpty());
+      p = n.get(o),
+      m = a.first(),
+      h = a.last(),
+      g = h.getLength(),
+      E = h.getKey(),
+      b = l && (!p.getChildKeys().isEmpty() || !m.getChildKeys().isEmpty());
     n.forEach(function(e, t) {
       if (t !== o) return void c.push(e);
       b ? c.push(e) : c.push(d(e, s, a)), a.slice(+!b, u - 1).forEach(function(e) {
@@ -112,7 +112,7 @@ var Chunk126182 = require("./126182.js"),
       }), c.push(f(e, s, a))
     });
     var y = r.createFromArray(c);
-    return l && (y = p(y, n, _, h)), e.merge({
+    return l && (y = _(y, n, p, m)), e.merge({
       blockMap: y,
       selectionBefore: t,
       selectionAfter: t.merge({
@@ -132,5 +132,5 @@ module.exports = function(e, t, n) {
     c = t.getStartKey(),
     d = t.getStartOffset(),
     f = a.get(c);
-  return (f instanceof i && (f.getChildKeys().isEmpty() || s(false)), 1 === o.size) ? u(e, t, a, o.first(), c, d, r) : h(e, t, a, o, c, d)
+  return (f instanceof i && (f.getChildKeys().isEmpty() || s(false)), 1 === o.size) ? u(e, t, a, o.first(), c, d, r) : m(e, t, a, o, c, d)
 }

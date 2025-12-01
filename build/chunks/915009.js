@@ -4,7 +4,7 @@
 require.d(exports, {
   LN: () => v,
   T3: () => b,
-  aR: () => S,
+  aR: () => T,
   q1: () => y,
   rD: () => O,
   xf: () => E
@@ -80,13 +80,13 @@ function v() {
   return (null == module ? true : module.nsfwAllowed) === false && exports && require
 }
 
-function I(e) {
-  let t = (0, h.M)();
+function S(e) {
+  let t = (0, m.M)();
   return (0, i.e7)([f.Z], () => f.Z.hasConsented(t, e))
 }
 
-function T(e) {
-  let t = (0, h.M)();
+function I(e) {
+  let t = (0, m.M)();
   return r.useCallback(async n => {
     if (null == t) return;
     let r = n ? [e] : [],
@@ -99,9 +99,9 @@ function T(e) {
   }, [t, e])
 }
 
-function S(e) {
+function T(e) {
   return {
-    hasConsented: I(e),
-    updateConsent: T(e)
+    hasConsented: S(e),
+    updateConsent: I(e)
   }
 }

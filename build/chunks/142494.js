@@ -3,8 +3,8 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  FC: () => m,
-  yR: () => h
+  FC: () => h,
+  yR: () => m
 }), require("./388685.js"), require("./35282.js"), require("./704826.js");
 var Chunk400053 = require("./400053.js"),
   o = require.n(Chunk400053),
@@ -49,7 +49,7 @@ class f {
   }
 }
 
-function _(e, t) {
+function p(e, t) {
   let n = l().parserFor(t(e)),
     r = l().reactFor(l().ruleOutput(e, "react"));
   return (e, t, i) => {
@@ -62,7 +62,7 @@ function _(e, t) {
   }
 }
 
-function p(e) {
+function _(e) {
   let t = l().parserFor(e);
   return (e, n, r) => t(e + "\n\n", {
     inline: false,
@@ -71,13 +71,13 @@ function p(e) {
   })
 }
 
-function h(e) {
-  r = _(c.j, e), i = p(c.j)
+function m(e) {
+  r = p(c.j, e), i = _(c.j)
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return "";
-  null == r && h(n(281071).Z), e = e.replace(/^\n+|\n+$/g, "");
+  null == r && m(n(281071).Z), e = e.replace(/^\n+|\n+$/g, "");
   let i = u.aT.test(e),
     a = u.b9.test(e);
   return i || a ? new f(e, t, a) : e

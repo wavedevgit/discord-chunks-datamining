@@ -2,7 +2,7 @@
 /** chunk id: 827857, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => m
+  J: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e) {
+function _(e) {
   let t = i.useRef(null),
     n = {
       paymentLabel: d.intl.string(d.t.ZURqX0),
@@ -52,10 +52,10 @@ function p(e) {
         type: a.RAz.PULSING_ELLIPSIS
       })
     };
-  return e.renderStepBody ? (0, r.jsx)(c.t, _({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(o.Ch, _({}, n, e)) : (0, r.jsx)(o.Tr, _({}, n, e))
+  return e.renderStepBody ? (0, r.jsx)(c.t, p({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(o.Ch, p({}, n, e)) : (0, r.jsx)(o.Tr, p({}, n, e))
 }
 
-function h(e) {
+function m(e) {
   let {
     paymentRequestWallet: t
   } = e, n = i.useRef(null), [a, o] = i.useState(false), s = () => {
@@ -69,7 +69,7 @@ function h(e) {
       onPrimary: () => s(),
       onBack: () => {}
     }),
-    children: (0, r.jsx)(p, {
+    children: (0, r.jsx)(_, {
       renderConnectorView: true,
       renderStepBody: true,
       paymentRequestWallet: t,
@@ -78,7 +78,7 @@ function h(e) {
     })
   })
 }
-let m = {
+let h = {
   name: "Payment Request",
   component: function(e) {
     let {
@@ -94,18 +94,18 @@ let m = {
           children: "Payment Request"
         }), (0, r.jsx)(u.E_, {
           label: "Default View",
-          children: (0, r.jsx)(p, {
+          children: (0, r.jsx)(_, {
             paymentRequestWallet: t
           })
         }), (0, r.jsx)(u.E_, {
           label: "Connector View",
-          children: (0, r.jsx)(p, {
+          children: (0, r.jsx)(_, {
             paymentRequestWallet: t,
             renderConnectorView: true
           })
         }), (0, r.jsx)(u.E_, {
           label: "Add Payment Step Body Connector View",
-          children: (0, r.jsx)(h, {
+          children: (0, r.jsx)(m, {
             paymentRequestWallet: t
           })
         })]

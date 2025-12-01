@@ -41,8 +41,8 @@ function o(e) {
     }
   }
   if (null == d) return null;
-  let _ = d.split(".");
-  if (_.length < 2) return null;
-  let p = null == (t = _.pop()) ? true : t.toLowerCase();
-  return null != p && i.has(p) ? p : null
+  let p = d.split(".");
+  if (p.length < 2) return null;
+  let _ = null == (t = p.pop()) ? true : t.toLowerCase();
+  return null != _ && i.has(_) ? _ : null
 }

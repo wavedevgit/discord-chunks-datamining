@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk284635 = require("./284635.js");
 
 function g(e) {
-  let [t, n] = i.useState(Date.now()), r = (0, _.n)(), a = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), o = !r || a && !e;
+  let [t, n] = i.useState(Date.now()), r = (0, p.n)(), a = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), o = !r || a && !e;
   return i.useEffect(() => {
     let e = new l.Xp;
     return e.start(o ? 15 * f.Z.Millis.SECOND : f.Z.Millis.SECOND, () => {
@@ -44,24 +44,24 @@ let E = e => {
       bold: d = false,
       scaleFontToUserSetting: f = false
     } = e, {
-      now: _
-    } = g(u), p = i.useMemo(() => (0, h.T_)(t, _), [t, _]), E = i.useRef(p), b = i.useRef(p);
+      now: p
+    } = g(u), _ = i.useMemo(() => (0, m.T_)(t, p), [t, p]), E = i.useRef(_), b = i.useRef(_);
     return i.useEffect(() => {
-      b.current = p
+      b.current = _
     }), i.useEffect(() => {
       E.current = b.current
     }, [t]), (0, r.jsx)(c.Text, {
       className: o()({
-        [m.fontCode]: l,
-        [m.bold]: d,
-        [m.inlineTimestamp]: n
+        [h.fontCode]: l,
+        [h.bold]: d,
+        [h.inlineTimestamp]: n
       }),
       variant: "text-xs/medium",
       tabularNumbers: s,
       color: a,
       scaleFontToUserSetting: f,
       "aria-label": E.current,
-      children: p
+      children: _
     })
   },
   b = e => {
@@ -72,7 +72,7 @@ let E = e => {
       hovered: o = false,
       bold: l = false,
       scaleFontToUserSetting: u = false
-    } = e, f = (0, h.Jg)(i), _ = (0, s.e7)([d.default], () => d.default.locale), m = (0, s.e7)([p.Z], () => p.Z.getMatchingActivity(i)), g = null != (n = null == m || null == (t = m.timestamps) ? true : t.start) ? n : null == m ? true : m.created_at;
+    } = e, f = (0, m.Jg)(i), p = (0, s.e7)([d.default], () => d.default.locale), h = (0, s.e7)([_.Z], () => _.Z.getMatchingActivity(i)), g = null != (n = null == h || null == (t = h.timestamps) ? true : t.start) ? n : null == h ? true : h.created_at;
     return null != g ? (0, r.jsx)(E, {
       entry: {
         start: g
@@ -92,6 +92,6 @@ let E = e => {
       color: a,
       lineClamp: 1,
       scaleFontToUserSetting: u,
-      children: (0, h.GL)(i, _)
+      children: (0, m.GL)(i, p)
     })
   }

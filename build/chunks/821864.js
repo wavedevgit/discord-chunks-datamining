@@ -4,8 +4,8 @@
 require.d(exports, {
   I4: () => f,
   Sn: () => u,
-  U3: () => p,
-  Ui: () => _,
+  U3: () => _,
+  Ui: () => p,
   W4: () => c,
   gq: () => d,
   kZ: () => l
@@ -82,13 +82,13 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   i.Z.dispatch({
     commandId: e,
     type: "INTEGRATION_PERMISSION_SETTINGS_RESET"
   })
 }
-async function p(e) {
+async function _(e) {
   let {
     applicationId: t,
     commandId: n,
@@ -96,7 +96,7 @@ async function p(e) {
     defaultEverywhereValue: o,
     guildId: s,
     permissions: l
-  } = e, c = n === t ? h(s, l, r, o) : l, u = await a.dh(t, s, n, c);
+  } = e, c = n === t ? m(s, l, r, o) : l, u = await a.dh(t, s, n, c);
   u.ok && i.Z.dispatch({
     type: "INTEGRATION_PERMISSION_SETTINGS_COMMAND_UPDATE",
     applicationId: t,
@@ -106,7 +106,7 @@ async function p(e) {
   })
 }
 
-function h(e, t, n, r) {
+function m(e, t, n, r) {
   if (!n || !r) return t;
   let i = {
     [e]: n,

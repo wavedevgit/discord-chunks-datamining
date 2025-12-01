@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   i: () => z,
-  x: () => Y
+  x: () => W
 });
 var Chunk771356 = require("./771356.js"),
   Chunk640490 = require("./640490.js"),
@@ -78,12 +78,12 @@ function H(e, t) {
   return n
 }
 
-function W(e, t) {
+function Y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : H(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Y = {
+let W = {
     skye: {
       name: Chunk491426.default.tzvUK3,
       iconURL: Chunk442866.Z,
@@ -207,7 +207,7 @@ let Y = {
   },
   K = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-    return V(W(V({}, e), {
+    return V(Y(V({}, e), {
       previewSoundURLs: [],
       underDevelopment: true
     }), t)
@@ -216,22 +216,22 @@ let Y = {
 function z(e) {
   return "".concat(e, ".onnx")
 }
-Y["robot-synthetic"] = K(Y.robot, {
+W["robot-synthetic"] = K(W.robot, {
   name: Chunk491426.default["Ur/62B"]
-}), Y["chords-2part"] = K(Y.tunes, {
+}), W["chords-2part"] = K(W.tunes, {
   name: Chunk491426.default.TYbrfK
-}), Y["chords-choir"] = K(Y.tunes, {
+}), W["chords-choir"] = K(W.tunes, {
   name: Chunk491426.default.OnZ6g9
-}), Y["chords-dev"] = K(Y.tunes, {
+}), W["chords-dev"] = K(W.tunes, {
   name: Chunk491426.default["2XH8tr"]
-}), Y["robot-dev"] = K(Y.robot, {
+}), W["robot-dev"] = K(W.robot, {
   name: Chunk491426.default.XhhSOi
-}), Y["ghost-dev"] = K(Y.ghost, {
+}), W["ghost-dev"] = K(W.ghost, {
   name: Chunk491426.default.KmHwvD
-}), Y["wobble-dev"] = K(Y.ghost, {
+}), W["wobble-dev"] = K(W.ghost, {
   name: Chunk491426.default["6PDpse"]
-}), Y["fan-dev"] = K(Y.robot, {
+}), W["fan-dev"] = K(W.robot, {
   name: Chunk491426.default["87aX+2"]
-}), Y["autotune-dev"] = K(Y.tunes, {
+}), W["autotune-dev"] = K(W.tunes, {
   name: Chunk491426.default.EYDrRx
 })

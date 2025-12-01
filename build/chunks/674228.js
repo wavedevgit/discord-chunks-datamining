@@ -64,7 +64,7 @@ module.exports = function(e) {
         begin: /([\t ]|^)REM(?=\s)/
       }]
     }),
-    _ = {
+    p = {
       className: "meta",
       begin: /[\t ]*#(const|disable|else|elseif|enable|end|externalsource|if|region)\b/,
       end: /$/,
@@ -87,6 +87,6 @@ module.exports = function(e) {
       literal: "true false nothing"
     },
     illegal: "//|\\{|\\}|endif|gosub|variant|wend|^\\$ ",
-    contains: [n, r, l, c, u, d, f, _]
+    contains: [n, r, l, c, u, d, f, p]
   }
 }

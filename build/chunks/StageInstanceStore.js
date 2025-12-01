@@ -47,14 +47,14 @@ function f(e) {
   c = {}, u = {}, t.forEach(e => d(e.id, e.stage_instances))
 }
 
-function _(e) {
+function p(e) {
   let {
     guild: t
   } = e;
   d(t.id, t.stage_instances)
 }
 
-function p(e) {
+function _(e) {
   var t;
   let {
     guild: n
@@ -64,14 +64,14 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     instance: t
   } = e;
   d(t.guild_id, [t])
 }
 
-function m(e, t) {
+function h(e, t) {
   var n;
   if (delete u[t], null == e) return;
   let r = l({}, null != (n = c[e]) ? n : {});
@@ -82,14 +82,14 @@ function g(e) {
   let {
     instance: t
   } = e;
-  m(t.guild_id, t.channel_id)
+  h(t.guild_id, t.channel_id)
 }
 
 function E(e) {
   let {
     channel: t
   } = e;
-  m(t.guild_id, t.id)
+  h(t.guild_id, t.id)
 }
 
 function b() {
@@ -117,10 +117,10 @@ class y extends(r = Chunk442837.ZP.Store) {
 s(y, "displayName", "StageInstanceStore");
 let O = new y(Chunk570140.Z, {
   CONNECTION_OPEN: f,
-  GUILD_CREATE: _,
-  GUILD_DELETE: p,
-  STAGE_INSTANCE_CREATE: h,
-  STAGE_INSTANCE_UPDATE: h,
+  GUILD_CREATE: p,
+  GUILD_DELETE: _,
+  STAGE_INSTANCE_CREATE: m,
+  STAGE_INSTANCE_UPDATE: m,
   STAGE_INSTANCE_DELETE: g,
   CHANNEL_DELETE: E,
   LOGOUT: b

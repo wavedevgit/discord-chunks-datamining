@@ -2,7 +2,7 @@
 /** chunk id: 117530, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => R
 }), require("./388685.js"), require("./539854.js"), require("./953529.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -15,7 +15,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,22 +23,22 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = new Map,
-  m = [];
+let m = new Map,
+  h = [];
 
 function g(e, t) {
   var n, r;
-  return null != (r = null == (n = E(e)) ? true : n.get(t)) ? r : m
+  return null != (r = null == (n = E(e)) ? true : n.get(t)) ? r : h
 }
 
 function E(e) {
   var t;
-  return null != (t = h.get(e)) ? t : new Map
+  return null != (t = m.get(e)) ? t : new Map
 }
 
 function b(e, t, n) {
   let r = E(e);
-  r.set(t, n), h.set(e, r)
+  r.set(t, n), m.set(e, r)
 }
 
 function y(e) {
@@ -56,8 +56,8 @@ let O = e => {
     allowOptimization: o
   } = e, s = [...g(n, i)];
   if (s.length + t.length > f.dN1 && i !== d.d.SlashCommand && i !== d.d.ApplicationLauncherCommand) return void l.Z.show({
-    title: _.intl.string(_.t.wOr6hB),
-    body: _.intl.formatToPlainString(_.t["qqyp/e"], {
+    title: p.intl.string(p.t.wOr6hB),
+    body: p.intl.formatToPlainString(p.t["qqyp/e"], {
       limit: f.dN1
     })
   });
@@ -79,7 +79,7 @@ function v(e) {
   a > false && (i.splice(a, 1)[0].removeFromMsgDraft(), b(t, r, i))
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t,
     attachmentIds: n,
@@ -91,7 +91,7 @@ function I(e) {
   }), b(t, r, i)
 }
 
-function T(e) {
+function I(e) {
   let {
     channelId: t,
     id: n,
@@ -104,7 +104,7 @@ function T(e) {
   b(t, s, l)
 }
 
-function S(e) {
+function T(e) {
   let {
     channelId: t,
     id: n,
@@ -138,7 +138,7 @@ function N(e) {
   } = e;
   b(t, d.d.FirstThreadMessage, [])
 }
-class R extends(r = Chunk442837.ZP.Store) {
+class P extends(r = Chunk442837.ZP.Store) {
   getFirstUpload(e, t) {
     let n = g(e, t);
     return n.length > 0 ? n[0] : null
@@ -161,15 +161,15 @@ class R extends(r = Chunk442837.ZP.Store) {
     return g(e, t).find(n)
   }
 }
-p(R, "displayName", "UploadAttachmentStore");
-let P = new R(Chunk570140.Z, {
+_(P, "displayName", "UploadAttachmentStore");
+let R = new P(Chunk570140.Z, {
   UPLOAD_ATTACHMENT_POP_FILE: y,
   UPLOAD_ATTACHMENT_ADD_FILES: O,
-  UPLOAD_ATTACHMENT_UPDATE_FILE: T,
+  UPLOAD_ATTACHMENT_UPDATE_FILE: I,
   UPLOAD_ATTACHMENT_REMOVE_FILE: v,
-  UPLOAD_ATTACHMENT_REMOVE_FILES: I,
+  UPLOAD_ATTACHMENT_REMOVE_FILES: S,
   UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: C,
   UPLOAD_ATTACHMENT_SET_UPLOADS: A,
-  UPLOAD_ATTACHMENT_SET_FILE: S,
+  UPLOAD_ATTACHMENT_SET_FILE: T,
   SIDEBAR_CLOSE: N
 })

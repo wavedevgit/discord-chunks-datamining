@@ -2,7 +2,7 @@
 /** chunk id: 718745, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -59,7 +59,7 @@ function f(e) {
   } = e;
   delete l[t][n]
 }
-class _ extends(r = Chunk442837.ZP.Store) {
+class p extends(r = Chunk442837.ZP.Store) {
   getResults(e, t) {
     if (null == e || null == t) return null;
     let n = l[e];
@@ -69,8 +69,8 @@ class _ extends(r = Chunk442837.ZP.Store) {
     return c
   }
 }
-s(_, "displayName", "IntegrationQueryStore");
-let p = new _(Chunk570140.Z, {
+s(p, "displayName", "IntegrationQueryStore");
+let _ = new p(Chunk570140.Z, {
   INTEGRATION_QUERY: u,
   INTEGRATION_QUERY_SUCCESS: d,
   INTEGRATION_QUERY_FAILURE: f

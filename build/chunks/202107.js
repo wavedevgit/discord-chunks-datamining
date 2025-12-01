@@ -49,48 +49,48 @@ function d(e, t) {
   }), e
 }
 let f = 1e4,
-  _ = null,
-  p = () => {
+  p = null,
+  _ = () => {
     let e = Chunk271383.ZP.getCommunicationDisabledUserMap();
     Object.keys(module).forEach(t => {
       let n = t,
         r = (0, a.O5)(n),
         i = (0, a.V6)(n),
         o = e[n];
-      (0, s.J)(o) || h(r, i)
+      (0, s.J)(o) || m(r, i)
     })
   },
-  h = (e, t) => {
-    var n, i, l, u, f, _;
-    let p = a.ZP.getMember(e, t),
-      h = o.default.getUser(t);
-    if (null == p || null == h || (0, s.b)(p)) return;
-    let m = d(c({}, p), {
+  m = (e, t) => {
+    var n, i, l, u, f, p;
+    let _ = a.ZP.getMember(e, t),
+      m = o.default.getUser(t);
+    if (null == _ || null == m || (0, s.b)(_)) return;
+    let h = d(c({}, _), {
       guildId: e,
-      nick: null != (n = p.nick) ? n : h.username,
-      avatar: null != (i = p.avatar) ? i : true,
-      avatarDecoration: null != p.avatarDecoration ? c({}, p.avatarDecoration) : true,
-      premiumSince: null != (l = p.premiumSince) ? l : true,
-      isPending: null != (u = p.isPending) && u,
-      user: d(c({}, h), {
-        email: null != (f = h.email) ? f : true,
-        phone: null != (_ = h.phone) ? _ : true
+      nick: null != (n = _.nick) ? n : m.username,
+      avatar: null != (i = _.avatar) ? i : true,
+      avatarDecoration: null != _.avatarDecoration ? c({}, _.avatarDecoration) : true,
+      premiumSince: null != (l = _.premiumSince) ? l : true,
+      isPending: null != (u = _.isPending) && u,
+      user: d(c({}, m), {
+        email: null != (f = m.email) ? f : true,
+        phone: null != (p = m.phone) ? p : true
       }),
       communicationDisabledUntil: null
     });
     r.Z.dispatch(c({
       type: "GUILD_MEMBER_UPDATE"
-    }, m))
+    }, h))
   };
-class m extends Chunk147913.Z {
+class h extends Chunk147913.Z {
   _initialize() {
-    _ = setInterval(() => p(), f)
+    p = setInterval(() => _(), f)
   }
   _terminate() {
-    clearInterval(_)
+    clearInterval(p)
   }
   constructor(...e) {
-    super(...e), l(this, "clearGuildMemberTimeout", h)
+    super(...e), l(this, "clearGuildMemberTimeout", m)
   }
 }
-let g = new m
+let g = new h

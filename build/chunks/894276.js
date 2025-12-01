@@ -2,10 +2,10 @@
 /** chunk id: 894276, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E3: () => m,
+  E3: () => h,
   Re: () => l,
-  fg: () => p,
-  iZ: () => h
+  fg: () => _,
+  iZ: () => m
 }), require("./953529.js"), require("./539854.js"), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -99,7 +99,7 @@ class f extends u {
     super(e, r), s(this, "storeName", true), s(this, "type", true), this.storeName = t, this.type = n
   }
 }
-class _ extends u {
+class p extends u {
   getLabel() {
     return "libdiscore Telemetry"
   }
@@ -138,8 +138,8 @@ class _ extends u {
     super(...e), s(this, "MAX_EMISSIONS_PER_APP_LAUNCH", 5), s(this, "emissionsCount", 0)
   }
 }
-let p = new f("2025-09-libdiscore-rawguildemojistore", "RawGuildEmojiStore", "Kkv"),
-  h = new f("2025-10-libdiscore-guildstickersstore", "GuildStickersStore", "Kkv");
-new _("2025-09-libdiscore-telemetry");
-let m = new d("2025-11-defer-load-late-lazy-cache", "Allow react to render before lazy cache is loaded");
+let _ = new f("2025-09-libdiscore-rawguildemojistore", "RawGuildEmojiStore", "Kkv"),
+  m = new f("2025-10-libdiscore-guildstickersstore", "GuildStickersStore", "Kkv");
+new p("2025-09-libdiscore-telemetry");
+let h = new d("2025-11-defer-load-late-lazy-cache", "Allow react to render before lazy cache is loaded");
 new d("2025-11-shadow-tree-mount-lock", "Enable locking the mount operation in ShadowTree::tryCommit to avoid mount instructions going out of order!")

@@ -2,7 +2,7 @@
 /** chunk id: 131130, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  q: () => _
+  q: () => p
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,13 +15,13 @@ var Chunk704215 = require("./704215.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk655227 = require("./655227.js");
-let _ = e => {
+let p = e => {
   let {
     dismissibleContent: t,
     noticeType: n
   } = e, {
-    analyticsLocations: _
-  } = (0, o.ZP)(), p = (0, l.Z)();
+    analyticsLocations: p
+  } = (0, o.ZP)(), _ = (0, l.Z)();
   return (0, r.jsx)(u.Xf, {
     contentType: t,
     latestVersion: (0, c.t)(t),
@@ -33,7 +33,7 @@ let _ = e => {
         markAsDismissed: o
       } = e;
       if (t === i.z.GIFTING_PROMOTION_REMINDER) {
-        let e = null == p ? true : p.reminderNagbar;
+        let e = null == _ ? true : _.reminderNagbar;
         return (0, r.jsxs)(a.qXd, {
           color: a.DM8.PREMIUM_TIER_2,
           children: [(0, r.jsx)(a.RyX, {
@@ -50,7 +50,7 @@ let _ = e => {
               (0, s.Z)({
                 isGift: true,
                 initialPlanId: null,
-                analyticsLocations: _,
+                analyticsLocations: p,
                 analyticsLocation: null == e ? true : e.analyticsLocation,
                 analyticsObject: {
                   page: null == e ? true : e.analyticsPage

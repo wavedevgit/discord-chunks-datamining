@@ -26,20 +26,20 @@ function s(e) {
     details: true,
     party: true
   };
-  let _ = (null == (t = d.assets) ? true : t.large_image) != null || (null == (n = d.assets) ? true : n.small_image) != null,
-    p = (null == (s = d.assets) ? true : s.large_text) != null || (null == (l = d.assets) ? true : l.small_text) != null,
-    h = null != (c = d.name) ? c : "game_name" in e.extra ? e.extra.game_name : true,
-    m = d.details,
+  let p = (null == (t = d.assets) ? true : t.large_image) != null || (null == (n = d.assets) ? true : n.small_image) != null,
+    _ = (null == (s = d.assets) ? true : s.large_text) != null || (null == (l = d.assets) ? true : l.small_text) != null,
+    m = null != (c = d.name) ? c : "game_name" in e.extra ? e.extra.game_name : true,
+    h = d.details,
     g = d.state,
     E = d.party;
   return {
-    isRich: _ || p || null != m || null != g || null != E,
+    isRich: p || _ || null != h || null != g || null != E,
     user: u,
     activity: d,
     state: g,
-    details: m,
+    details: h,
     party: E,
-    appName: h,
+    appName: m,
     embeddedActivity: f
   }
 }

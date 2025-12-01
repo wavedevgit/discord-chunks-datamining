@@ -2,7 +2,7 @@
 /** chunk id: 479801, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => m
+  e: () => h
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk311570 = require("./311570.js"),
@@ -49,36 +49,36 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = 6e5,
-  p = 6e5,
-  h = Chunk311570.v.VARIANTS_GROUP;
+let p = 6e5,
+  _ = 6e5,
+  m = Chunk311570.v.VARIANTS_GROUP;
 
-function m(e, t, n) {
+function h(e, t, n) {
   let i = (0, a.e7)([o.Z], () => o.Z.hasLoadedExperiments),
     c = null == e ? true : e.includeBundles,
-    [d, m, g, E, b, y, O] = (0, a.Wu)([l.Z], () => {
+    [d, h, g, E, b, y, O] = (0, a.Wu)([l.Z], () => {
       var e, t;
       return [l.Z.isFetchingCategories, l.Z.lastFetchOptions, l.Z.error, null != (e = l.Z.lastErrorTimestamp) ? e : 0, null != (t = l.Z.lastSuccessfulFetch) ? t : 0, l.Z.categories, l.Z.skipNumCategories]
     });
   return (0, r.useEffect)(() => {
     if (!i || d) return;
-    let r = Date.now() - E < p;
+    let r = Date.now() - E < _;
     if (g && r) return;
     let a = f(u({}, e), {
-        variantsReturnStyle: h,
+        variantsReturnStyle: m,
         includeBundles: c,
         skipNumCategories: O
       }),
-      o = !(0, s.oc)(m, a),
-      l = Date.now() - b < _;
+      o = !(0, s.oc)(h, a),
+      l = Date.now() - b < p;
     (o || !l) && (0, s.F$)(a, t, n)
-  }, [i, d, m, b, e, g, c, E, t, n, O]), {
+  }, [i, d, h, b, e, g, c, E, t, n, O]), {
     isFetching: d,
     categories: y,
     fetchCategoriesError: g,
     refreshCategories: (0, r.useCallback)(() => {
       let t = f(u({}, e), {
-        variantsReturnStyle: h,
+        variantsReturnStyle: m,
         includeBundles: c,
         skipNumCategories: O
       });

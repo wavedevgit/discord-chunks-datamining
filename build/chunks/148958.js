@@ -2,7 +2,7 @@
 /** chunk id: 148958, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  h: () => p
+  h: () => _
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -45,25 +45,25 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   r.useEffect(() => {
     o.DZ.loadIfUncached(c.yP.FRECENCY_AND_FAVORITES_SETTINGS)
   }, []);
   let n = (0, i.e7)([l.Z], () => l.Z.getApplicationFrecencyWithoutLoadingLatest()),
     u = r.useMemo(() => null == t || 0 === t.length ? e : e.map(e => {
       var n;
-      return _(d({}, e), {
+      return p(d({}, e), {
         isUserApp: null != (n = null == t ? true : t.some(t => t.application.id === e.id)) && n
       })
     }), [e, t]),
     f = r.useMemo(() => null == t ? true : t.filter(t => !e.some(e => e.id === t.application.id)), [e, t]),
-    p = r.useMemo(() => {
+    _ = r.useMemo(() => {
       var e;
       null == f || f.forEach(e => {
         let t = s.default.extractTimestamp(e.id);
@@ -91,6 +91,6 @@ function p(e, t) {
       (null == a || o > a) && (i = e, a = o)
     });
     let o = null != (r = null == i || null == (e = i.application) ? true : e.id) ? r : "";
-    return [...p.filter(e => e.id === o), ...p.filter(e => e.id !== o)]
-  }, [p, u, n, t])
+    return [..._.filter(e => e.id === o), ..._.filter(e => e.id !== o)]
+  }, [_, u, n, t])
 }

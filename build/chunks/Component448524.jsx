@@ -2,7 +2,7 @@
 /** chunk id: 448524, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,7 +18,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk744038 = require("./744038.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk336888 = require("./336888.js");
-let m = () => {
+let h = () => {
   let e = (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getTopUserActivities()),
     t = (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getTopGuildActivities());
   return 0 === module.length && 0 === exports.length ? null : (0, Chunk54381.jsxs)("div", {

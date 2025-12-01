@@ -3,10 +3,10 @@
 "use strict";
 require.r(exports), require.d(exports, {
   installApplication: () => f,
-  performDefaultLibraryApplicationAction: () => h,
+  performDefaultLibraryApplicationAction: () => m,
   playApplication: () => Chunk696748.a,
-  repairApplication: () => p,
-  updateApplication: () => _
+  repairApplication: () => _,
+  updateApplication: () => p
 });
 var Chunk51025 = require("./51025.js"),
   Chunk696748 = require("./696748.jsx"),
@@ -26,17 +26,17 @@ function f(e, t, n) {
   null != i && null != s && null != u.L && (0, u.L)(r, t, i, s, n)
 }
 
-function _(e, t) {
+function p(e, t) {
   let n = a.Z.getApplication(e);
   if (null != n) return r.li(n, t, o.Z.getTargetBuildId(n.id, t), o.Z.getTargetManifests(n.id, t))
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   let i = a.Z.getApplication(e);
   if (null != i) return r.cG(i, t, n)
 }
 
-function h(e, t) {
+function m(e, t) {
   let n = (0, s.i)(e, l.Z, c.Z),
     {
       analyticsParams: r
@@ -49,6 +49,6 @@ function h(e, t) {
     case d.apO.INSTALL:
       return f(e.id, e.branchId, r.source);
     case d.apO.UPDATE:
-      return _(e.id, e.branchId)
+      return p(e.id, e.branchId)
   }
 }

@@ -2,7 +2,7 @@
 /** chunk id: 235144, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,21 +16,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function p() {
+function _() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getActiveInputProfile()), {
     enabledInputProfiles: n
   } = (0, Chunk846071.G)({
     location: "UserSettingsInputProfile"
-  }), p = Chunk473749.useCallback(t => {
+  }), _ = Chunk473749.useCallback(t => {
     let {
       value: n
     } = t;
     s.Z.setActiveInputProfile(n, {
       analyticsLocations: e
     })
-  }, [module]), h = [{
+  }, [module]), m = [{
     value: Chunk345655._.VOICE_ISOLATION,
     name: Chunk388032.intl.string(Chunk388032.t.cjPbpT),
     desc: Chunk388032.intl.string(Chunk388032.t.CzhvnE)
@@ -52,10 +52,10 @@ function p() {
     className: Chunk197571.marginBottom20,
     children: (0, Chunk54381.jsx)(Chunk481060.FXm, {
       label: Chunk388032.intl.string(Chunk388032.t.LM3U3k),
-      onChange: e => p({
+      onChange: e => _({
         value: e
       }),
-      options: h,
+      options: m,
       value: null != exports ? exports : Chunk345655._.CUSTOM
     })
   })

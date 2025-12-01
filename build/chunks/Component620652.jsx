@@ -2,7 +2,7 @@
 /** chunk id: 620652, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => h,
+  M: () => m,
   Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
@@ -17,14 +17,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk815605 = require("./815605.js"),
   Chunk981631 = require("./981631.js"),
   Chunk994428 = require("./994428.js"),
-  h = function(e) {
+  m = function(e) {
     return e[e.NORMAL = 20] = "NORMAL", e[e.LARGE = 32] = "LARGE", e
   }({});
-let m = async e => {
+let h = async e => {
   var t;
   let {
     effect: n
-  } = e, r = await (0, d.T)(n.channelId, null != (t = n.messageId) ? t : _.lds, n.emoji.name), i = await (0, f.aB)("".concat(n.channelId, ":").concat(n.messageId, ":").concat(n.emoji.name), n.url, r, n.color);
+  } = e, r = await (0, d.T)(n.channelId, null != (t = n.messageId) ? t : p.lds, n.emoji.name), i = await (0, f.aB)("".concat(n.channelId, ":").concat(n.messageId, ":").concat(n.emoji.name), n.url, r, n.color);
   return i.assets[0].p = n.url, i
 };
 
@@ -34,12 +34,12 @@ function g(e) {
     effect: n,
     onComplete: a,
     emojiSize: s = 20
-  } = e, d = i.useRef(null), _ = s * f.Vz, h = (_ + s) / 2, g = "translateY(".concat(h, "px)");
+  } = e, d = i.useRef(null), p = s * f.Vz, m = (p + s) / 2, g = "translateY(".concat(m, "px)");
   return i.useEffect(() => {
     let e;
     if (null != n) return !async function() {
       if (null != d.current) {
-        let t = await m({
+        let t = await h({
           effect: n
         });
         (e = l().loadAnimation({
@@ -62,13 +62,13 @@ function g(e) {
       null != e && e.destroy()
     }
   }, [a, n, s]), (0, r.jsx)("div", {
-    className: p.effectsWrapper,
+    className: _.effectsWrapper,
     children: (0, r.jsx)("div", {
-      className: o()(p.effect, t),
+      className: o()(_.effect, t),
       style: {
         transform: g,
-        height: _,
-        width: _
+        height: p,
+        width: p
       },
       ref: d
     })

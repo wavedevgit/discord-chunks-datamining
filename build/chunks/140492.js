@@ -2,7 +2,7 @@
 /** chunk id: 140492, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./388685.js"), require("./290780.js");
 var Chunk358230 = require("./358230.js"),
   Chunk931261 = require("./931261.js"),
@@ -32,12 +32,12 @@ function b(e) {
 }
 
 function y(e, t) {
-  (0, p.K)(e, t)
+  (0, _.K)(e, t)
 }
 
 function O(e) {
   let t = d.Z.getCurrentRoute();
-  e === h.Z5c.APPLICATION_STORE && null != t ? (0, p.z)(t) : (0, p.z)(e)
+  e === m.Z5c.APPLICATION_STORE && null != t ? (0, _.z)(t) : (0, _.z)(e)
 }
 
 function v(e) {
@@ -48,21 +48,21 @@ function v(e) {
   } = l.Z.getState(), i = f.Z.getPrivateChannelIds(), a = __OVERLAY__ ? i : [...g(), ...i], o = (null == t ? b(null != n ? n : r) : null != t ? a.indexOf(t) : 0) + e;
   o >= a.length ? o = 0 : o < 0 && (o = a.length - 1);
   let s = a[o];
-  g().includes(s) ? O(s) : y(h.ME, s)
+  g().includes(s) ? O(s) : y(m.ME, s)
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = l.Z.getState().channelId,
     a = (0, r.Z)(t, {
       withCurrentVoiceChannel: true
     }).map(e => e.id);
-  (0, i.s)(t) && a.unshift(m.oC.GUILD_HOME);
+  (0, i.s)(t) && a.unshift(h.oC.GUILD_HOME);
   let o = E((null != n ? a.indexOf(n) : false) + e, a.length);
   y(t, a[o])
 }
 
-function T() {
+function I() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
     t = Chunk905423.Z.getState().guildId;
-  null == exports ? v(module) : I(module, exports)
+  null == exports ? v(module) : S(module, exports)
 }

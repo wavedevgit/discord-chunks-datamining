@@ -2,8 +2,8 @@
 /** chunk id: 207234, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => p,
-  a: () => _
+  M: () => _,
+  a: () => p
 });
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -25,12 +25,12 @@ let f = () => {
       n = Chunk592125.Z.getChannel(exports);
     return window.location.pathname.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.STv)) && null != require ? (0, Chunk475468.K)(require.guild_id, exports) : (0, Chunk475468.z)(Chunk981631.Z5c.CHANNEL(Chunk981631.STv, null != exports ? exports : true))
   },
-  _ = {
+  p = {
     binds: ["mod+i"],
     comboKeysBindGlobal: true,
     action: () => !(Chunk819640.Z.getLayers().length > 0) && (f(), Chunk585483.S.dispatch(Chunk981631.CkL.TOGGLE_INBOX), false)
   },
-  p = {
+  _ = {
     binds: ["mod+shift+e"],
     comboKeysBindGlobal: true,
     action: i().debounce(() => {

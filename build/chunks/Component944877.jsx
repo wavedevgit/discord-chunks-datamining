@@ -2,7 +2,7 @@
 /** chunk id: 944877, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -51,7 +51,7 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let p = e => {
   switch (e.id) {
     case s.bi.BUILT_IN:
       return o.SsZ;
@@ -62,7 +62,7 @@ let _ = e => {
   }
 };
 
-function p(e) {
+function _(e) {
   var {
     section: t,
     className: n,
@@ -71,8 +71,8 @@ function p(e) {
     padding: s,
     isSelected: c,
     selectable: f = false
-  } = e, p = d(e, ["section", "className", "width", "height", "padding", "isSelected", "selectable"]);
-  let h = _(t);
+  } = e, _ = d(e, ["section", "className", "width", "height", "padding", "isSelected", "selectable"]);
+  let m = p(t);
   return (0, r.jsx)("div", {
     className: a()(l.wrapper, n, {
       [l.selectable]: f,
@@ -83,12 +83,12 @@ function p(e) {
       height: o,
       padding: null != s ? s : 0
     },
-    children: null != h ? (0, r.jsx)(h, u({
+    children: null != m ? (0, r.jsx)(m, u({
       className: l.icon,
       color: "currentColor",
       size: "custom",
       width: i,
       height: o
-    }, p)) : null
+    }, _)) : null
   })
 }

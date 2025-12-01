@@ -18,10 +18,10 @@ function f(e, t) {
   let {
     name: n,
     form: f,
-    isReadOnly: _,
-    isRequired: p,
-    isDisabled: h,
-    orientation: m = "vertical",
+    isReadOnly: p,
+    isRequired: _,
+    isDisabled: m,
+    orientation: h = "vertical",
     validationBehavior: g = "aria"
   } = e, {
     direction: E
@@ -31,9 +31,9 @@ function f(e, t) {
     validationDetails: O
   } = t.displayValidation, {
     labelProps: v,
-    fieldProps: I,
-    descriptionProps: T,
-    errorMessageProps: S
+    fieldProps: S,
+    descriptionProps: I,
+    errorMessageProps: T
   } = (0, c.U)({
     ...e,
     labelElementType: "span",
@@ -54,10 +54,10 @@ function f(e, t) {
     let n, r;
     switch (e.key) {
       case "ArrowRight":
-        n = "rtl" === E && "vertical" !== m ? "prev" : "next";
+        n = "rtl" === E && "vertical" !== h ? "prev" : "next";
         break;
       case "ArrowLeft":
-        n = "rtl" === E && "vertical" !== m ? "next" : "prev";
+        n = "rtl" === E && "vertical" !== h ? "next" : "prev";
         break;
       case "ArrowDown":
         n = "next";
@@ -74,12 +74,12 @@ function f(e, t) {
       accept: e => e instanceof(0, a.kR)(e).HTMLInputElement && "radio" === e.type
     });
     "next" === n ? (r = i.nextNode()) || (i.currentNode = e.currentTarget, r = i.firstChild()) : (r = i.previousNode()) || (i.currentNode = e.currentTarget, r = i.lastChild()), r && (r.focus(), t.setSelectedValue(r.value))
-  }, R = (0, o.Me)(n);
+  }, P = (0, o.Me)(n);
   return r.H.set(t, {
-    name: R,
+    name: P,
     form: f,
-    descriptionId: T.id,
-    errorMessageId: S.id,
+    descriptionId: I.id,
+    errorMessageId: T.id,
     validationBehavior: g
   }), {
     radioGroupProps: (0, s.d)(A, {
@@ -87,16 +87,16 @@ function f(e, t) {
       onKeyDown: N,
       "aria-invalid": t.isInvalid || true,
       "aria-errormessage": e["aria-errormessage"],
-      "aria-readonly": _ || true,
-      "aria-required": p || true,
-      "aria-disabled": h || true,
-      "aria-orientation": m,
-      ...I,
+      "aria-readonly": p || true,
+      "aria-required": _ || true,
+      "aria-disabled": m || true,
+      "aria-orientation": h,
+      ...S,
       ...C
     }),
     labelProps: v,
-    descriptionProps: T,
-    errorMessageProps: S,
+    descriptionProps: I,
+    errorMessageProps: T,
     isInvalid: b,
     validationErrors: y,
     validationDetails: O

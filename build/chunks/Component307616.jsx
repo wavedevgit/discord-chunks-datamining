@@ -2,7 +2,7 @@
 /** chunk id: 307616, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  n: () => R,
+  n: () => P,
   v: () => A
 }), require("./388685.js"), require("./290780.js"), require("./415506.js"), require("./482853.js");
 var Chunk54381 = require("./54381.js"),
@@ -56,13 +56,13 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = [Chunk314910.ZP, Chunk429142.ZP];
-class S extends Chunk473749.PureComponent {
+let I = [Chunk314910.ZP, Chunk429142.ZP];
+class T extends Chunk473749.PureComponent {
   render() {
     let {
       render: e,
@@ -136,7 +136,7 @@ function C(e) {
     let a = e[i],
       o = null == (r = e[i + 1]) ? true : r.stackingBehavior,
       s = n || "replace" === o;
-    t.unshift(I(O({}, a), {
+    t.unshift(S(O({}, a), {
       isVisible: !s
     })), "replaceAll" === a.stackingBehavior && (n = true)
   }
@@ -144,7 +144,7 @@ function C(e) {
 }
 let N = [];
 
-function R() {
+function P() {
   let e = A(),
     t = (0, Chunk952265.s9)(t => true !== t[e] ? t[e] : N),
     n = Chunk473749.useMemo(() => C(exports), [exports]),
@@ -167,13 +167,13 @@ function R() {
       let e = Chunk120356.current;
       (null == module ? true : module.dismissable) !== false && Chunk585483.S.dispatch(Chunk981631.CkL.MODAL_CLOSE)
     }, []),
-    _ = Chunk473749.useCallback(t => {
-      (0, m.Mr)(t, e)
+    p = Chunk473749.useCallback(t => {
+      (0, h.Mr)(t, e)
     }, [module]),
-    p = T.map(e => t.some(t => t.Layer === e || null == t.Layer && e === f.ZP));
+    _ = I.map(e => t.some(t => t.Layer === e || null == t.Layer && e === f.ZP));
   return (0, Chunk54381.jsxs)(Chunk215569.W, {
     component: Chunk473749.Fragment,
-    children: [T.map((e, n) => {
+    children: [I.map((e, n) => {
       var i;
       let a = l().findLast(t, t => t.Layer === e || null == t.Layer && e === f.ZP),
         o = null != (i = null == a ? true : a.backdropStyle) ? i : c.fCB.DARK;
@@ -181,11 +181,11 @@ function R() {
         children: (0, r.jsx)(c.ZMr, {
           variant: o === c.fCB.LIGHTBOX || o === c.fCB.IMMERSIVE ? "lightbox" : "default",
           animationVariant: (null == a ? true : a.instant) ? "instant" : "default",
-          isVisible: p[n],
+          isVisible: _[n],
           onClick: s
         })
       }, "layer-".concat(n)) : (0, r.jsx)(d.Z, {
-        isVisible: p[n],
+        isVisible: _[n],
         backdropStyle: o,
         onClose: s,
         LayerComponent: e,
@@ -200,13 +200,13 @@ function R() {
         isVisible: l,
         dismissable: c
       } = e;
-      return (0, r.jsx)(S, {
+      return (0, r.jsx)(T, {
         modalKey: i,
         LayerComponent: null != a ? a : f.ZP,
         isVisible: l,
         isTopModal: t === n.length - 1,
         render: o,
-        closeModal: _,
+        closeModal: p,
         instant: s,
         dismissable: c
       }, i)

@@ -17,14 +17,14 @@ var Chunk252258 = require("./252258.js"),
   Chunk224189 = require("./224189.js"),
   Chunk574952 = require("./574952.js"),
   Chunk981631 = require("./981631.js");
-async function m(e) {
+async function h(e) {
   let {
     applicationId: t,
     channelId: n,
     guildId: i
   } = e;
   try {
-    return await (0, _.Z)(t, n)
+    return await (0, p.Z)(t, n)
   } catch (s) {
     let e = null != i ? r.E.GUILD_CHANNEL : r.E.PRIVATE_CHANNEL;
     a.Z.dispatch({
@@ -50,7 +50,7 @@ async function g(e) {
       o = s.Z.getChannel(a);
     if (null == i || null == o) return void e(true);
     null == r || r(), (0, u.Z)(t, o, () => {
-      (0, p.Z)().leaveActivity({
+      (0, _.Z)().leaveActivity({
         location: i.location,
         applicationId: t.id,
         shouldClosePopout: n
@@ -68,7 +68,7 @@ async function E(e) {
   } = e;
   if (null == i.nsfwAllowed) {
     var o, s, l;
-    let e = null != t ? t : await m({
+    let e = null != t ? t : await h({
       applicationId: n,
       channelId: null == r ? true : r.id,
       guildId: null != (s = null == r ? true : r.getGuildId()) ? s : true
@@ -91,12 +91,12 @@ async function b(e) {
     applicationId: r,
     channel: a,
     onConfirmActivityLaunchChecksAlertOpen: o
-  } = e, s = null != n ? n : await m({
+  } = e, s = null != n ? n : await h({
     applicationId: r,
     channelId: null == a ? true : a.id,
     guildId: null != (t = null == a ? true : a.getGuildId()) ? t : true
   });
-  return null != s && (!!((0, i.yE)(s.flags, h.udG.EMBEDDED_RELEASED) || s.isVerified || l.ZP.hasActivityEverBeenLaunched(r)) || new Promise(e => {
+  return null != s && (!!((0, i.yE)(s.flags, m.udG.EMBEDDED_RELEASED) || s.isVerified || l.ZP.hasActivityEverBeenLaunched(r)) || new Promise(e => {
     null == o || o(), (0, d.j)({
       application: s,
       onConfirm: () => e(true),

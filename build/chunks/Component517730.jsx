@@ -2,7 +2,7 @@
 /** chunk id: 517730, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => _
+  I: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -49,7 +49,7 @@ function d(e, t) {
   }), e
 }
 let f = "social-layer-storefront-item-claimed-successfully-modal",
-  _ = e => {
+  p = e => {
     let {
       sku: t,
       application: l,

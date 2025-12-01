@@ -51,7 +51,7 @@ function l(e, t, n) {
     }
     n && n.focus()
   }, {
-    pressProps: _
+    pressProps: p
   } = (0, s.r)({
     preventFocusOnPress: true,
     allowTextSelectionOnPress: true,
@@ -62,7 +62,7 @@ function l(e, t, n) {
       ("touch" === e.pointerType || "pen" === e.pointerType) && f()
     }
   });
-  return (0, i.d)(_, {
+  return (0, i.d)(p, {
     onKeyDown: d
   })
 }

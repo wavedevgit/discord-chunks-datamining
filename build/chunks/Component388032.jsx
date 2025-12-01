@@ -4,11 +4,11 @@
 require.r(exports), require.d(exports, {
   getAvailableLocales: () => Chunk424395.u5,
   getLanguages: () => Chunk424395.Vb,
-  getSystemLocale: () => h,
+  getSystemLocale: () => m,
   initialLocale: () => g,
   international: () => Chunk716111.Z,
   intl: () => E,
-  systemLocale: () => m,
+  systemLocale: () => h,
   t: () => Chunk253185.k,
   useSyncMessages: () => b
 }), require("./388685.js");
@@ -43,7 +43,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,17 +54,17 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e) {
+function m(e) {
   return [Array.isArray(navigator.languages) ? navigator.languages[0] : null, navigator.language, navigator.browserLanguage, navigator.userLanguage, e].find(e => null != e && "" !== e)
 }
-let m = h("en-US"),
-  g = (0, Chunk424395.YI)(m, "en-US"),
+let h = m("en-US"),
+  g = (0, Chunk424395.YI)(h, "en-US"),
   E = new Chunk502922.IntlManager({
     initialLocale: g,
     defaultLocale: "en-US"
@@ -102,7 +102,7 @@ let m = h("en-US"),
             if (null == a) break;
             l.onClick = null != (c = a.onClick) ? c : a, l.onContextMenu = a.onContextMenu
         }
-        return (0, i.createElement)(o, p(f({}, l), {
+        return (0, i.createElement)(o, _(f({}, l), {
           key: t
         }), e)
       }

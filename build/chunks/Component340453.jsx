@@ -2,7 +2,7 @@
 /** chunk id: 340453, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -46,29 +46,29 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
+let _ = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function h(e) {
+function m(e) {
   let {
     otherUser: t,
     status: n
   } = e, o = (0, s.j_)(t.id, n), {
     avatarSrc: u,
     avatarDecorationSrc: f,
-    eventHandlers: h
+    eventHandlers: m
   } = (0, a.Z)({
     userId: t.id,
     size: i.EFr.SIZE_40,
     animateOnHover: true
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)("div", _(d({}, h), {
-      children: (0, r.jsx)(p, {
+    children: [(0, r.jsx)("div", p(d({}, m), {
+      children: (0, r.jsx)(_, {
         className: c.avatar,
         src: u,
         avatarDecoration: f,

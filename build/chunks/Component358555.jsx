@@ -56,20 +56,20 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e) {
+function I(e) {
   let {
     guild: t,
     isBannerVisible: n,
     disableBoostClick: i
-  } = e, a = (0, o.e7)([h.default, p.ZP], () => {
-    let e = h.default.getCurrentUser();
-    return p.ZP.isMember(t.id, null == e ? true : e.id)
+  } = e, a = (0, o.e7)([m.default, _.ZP], () => {
+    let e = m.default.getCurrentUser();
+    return _.ZP.isMember(t.id, null == e ? true : e.id)
   }), {
     premiumTier: l,
     premiumSubscriberCount: c
@@ -84,11 +84,11 @@ function T(e) {
         }
       })
     },
-    _ = l === g.Eu4.NONE ? E.intl.string(E.t.c2wsn6) : m.nW(l),
+    p = l === g.Eu4.NONE ? E.intl.string(E.t.c2wsn6) : h.nW(l),
     y = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: b.tierTooltipTitle,
-        children: _
+        children: p
       }), (0, r.jsx)("div", {
         children: E.intl.format(E.t.If4iTS, {
           subscriberCount: c
@@ -101,8 +101,8 @@ function T(e) {
       "data-migration-pending": true,
       text: y,
       position: "bottom",
-      "aria-label": null != _ ? _ : "",
-      children: e => (0, r.jsx)(s.P3F, I(O({}, e), {
+      "aria-label": null != p ? p : "",
+      children: e => (0, r.jsx)(s.P3F, S(O({}, e), {
         className: b.__invalid_premiumGuildIcon,
         onClick: u,
         children: (0, r.jsx)(f.Z, {
@@ -116,12 +116,12 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     guild: t,
     disableColor: n,
     disableBoostClick: i
-  } = e, o = (0, l.Z)(t), d = (0, _._k)({
+  } = e, o = (0, l.Z)(t), d = (0, p._k)({
     location: "guild_status_badge"
   });
   return o ? (0, r.jsx)("div", {
@@ -159,14 +159,14 @@ function A(e) {
     guild: t,
     disableBoostClick: n
   } = e, i = false;
-  return (0, l.Z)(t) ? (0, r.jsx)(S, {
+  return (0, l.Z)(t) ? (0, r.jsx)(T, {
     guild: t,
     disableColor: false,
     disableBoostClick: n
-  }) : t.features.has(g.GuildFeatures.VERIFIED) || t.features.has(g.GuildFeatures.PARTNERED) ? (0, r.jsx)(S, {
+  }) : t.features.has(g.GuildFeatures.VERIFIED) || t.features.has(g.GuildFeatures.PARTNERED) ? (0, r.jsx)(T, {
     guild: t,
     disableColor: !i
-  }) : (0, r.jsx)(T, {
+  }) : (0, r.jsx)(I, {
     guild: t,
     isBannerVisible: i,
     disableBoostClick: n

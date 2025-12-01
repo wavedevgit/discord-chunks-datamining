@@ -24,8 +24,8 @@ let d = e => {
   } = t, {
     icon: d,
     description: f,
-    color: _,
-    tooltip: p
+    color: p,
+    tooltip: _
   } = {
     0: {
       icon: o.gm1,
@@ -83,12 +83,12 @@ let d = e => {
     }), (0, r.jsx)(a.u, {
       asContainer: true,
       position: "right",
-      text: p,
+      text: _,
       children: (0, r.jsx)(o.Mgn, {
         size: "custom",
         width: 20,
         height: 20,
-        color: _
+        color: p
       })
     })]
   })

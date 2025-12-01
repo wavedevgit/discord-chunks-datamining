@@ -2,7 +2,7 @@
 /** chunk id: 1964, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -26,7 +26,7 @@ let {
   [Chunk981631.c2C.REQUIRE_CAPTCHA]: [s],
   [Chunk981631.c2C.AGREEMENTS]: [],
   [Chunk981631.c2C.REQUIRE_SAFETY_FLOWS]: []
-}, _ = {
+}, p = {
   isPhoneReverification: (e, t) => true !== e && e.isPhoneVerified() && (t === a.c2C.REQUIRE_REVERIFIED_PHONE || t === a.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === a.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE),
   isEmailReverification: e => e === a.c2C.REQUIRE_REVERIFIED_EMAIL || e === a.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || e === a.c2C.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE,
   isFullScreenVerification(e) {

@@ -27,9 +27,9 @@ function l(e, t) {
 }
 
 function c(e, t, n, c) {
-  var u, d, f, _;
-  let p = l(c, n);
-  if (null != p) return (0, i.o3)(p, null != (d = p.guild_id) ? d : o.X8);
-  let h = a.Z.getMessage(e, t);
-  if (null != h && null != (p = (null == h || null == (u = h.messageReference) ? true : u.type) === r.U.FORWARD ? s(null != (f = null == h ? true : h.messageSnapshots) ? f : [], n) : l(null == h ? true : h.soundboardSounds, n))) return (0, i.o3)(p, null != (_ = p.guild_id) ? _ : o.X8)
+  var u, d, f, p;
+  let _ = l(c, n);
+  if (null != _) return (0, i.o3)(_, null != (d = _.guild_id) ? d : o.X8);
+  let m = a.Z.getMessage(e, t);
+  if (null != m && null != (_ = (null == m || null == (u = m.messageReference) ? true : u.type) === r.U.FORWARD ? s(null != (f = null == m ? true : m.messageSnapshots) ? f : [], n) : l(null == m ? true : m.soundboardSounds, n))) return (0, i.o3)(_, null != (p = _.guild_id) ? p : o.X8)
 }

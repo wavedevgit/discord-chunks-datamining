@@ -20,22 +20,22 @@ function f(e) {
     className: n,
     collapsibleContent: a,
     isExpanded: f
-  } = e, [_, p] = i.useState(false), [h, m] = i.useState(true), [g, E] = i.useState(false), b = null != f ? f : _, {
+  } = e, [p, _] = i.useState(false), [m, h] = i.useState(true), [g, E] = i.useState(false), b = null != f ? f : p, {
     ref: y,
     height: O = 0
   } = (0, c.ZP)(), {
     ref: v,
-    height: I = 0
-  } = (0, c.ZP)(), T = (0, l.q_F)({
-    height: b ? O + I : I,
+    height: S = 0
+  } = (0, c.ZP)(), I = (0, l.q_F)({
+    height: b ? O + S : S,
     config: s.config.stiff,
     onRest: () => E(true)
-  }, h ? "animate-never" : "respect-motion-settings"), S = i.useCallback(() => {
-    p(!_)
-  }, [_, p]);
+  }, m ? "animate-never" : "respect-motion-settings"), T = i.useCallback(() => {
+    _(!p)
+  }, [p, _]);
   return i.useLayoutEffect(() => {
     let e = setTimeout(() => {
-      m(false)
+      h(false)
     }, d);
     return () => clearTimeout(e)
   }, []), (0, r.jsx)("div", {
@@ -46,14 +46,14 @@ function f(e) {
       className: o()(u.contentExpandContainer, {
         [u.showOverflow]: b && g
       }),
-      style: T,
+      style: I,
       children: [(0, r.jsx)("div", {
         ref: v,
         className: o()(u.header, {
           [u.toggled]: b
         }),
         children: t({
-          onClick: S
+          onClick: T
         })
       }), (0, r.jsx)(l.Rny, {
         enabled: !b,

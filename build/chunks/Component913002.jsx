@@ -2,7 +2,7 @@
 /** chunk id: 913002, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -67,7 +67,7 @@ let O = 300,
     }))
   });
 
-function I(e) {
+function S(e) {
   let {
     isVisible: t,
     isExpandable: n,
@@ -76,50 +76,50 @@ function I(e) {
     analyticsLocations: g
   } = (0, d.ZP)(), {
     trackUserProfileAction: E
-  } = (0, p.KZ)(), b = i.useRef(null), y = i.useRef(null), [I, T] = (0, s.Wu)([u.Z], () => [u.Z.useReducedMotion, u.Z.keyboardModeEnabled]), S = !n || I || T ? 0 : O, A = () => {
+  } = (0, _.KZ)(), b = i.useRef(null), y = i.useRef(null), [S, I] = (0, s.Wu)([u.Z], () => [u.Z.useReducedMotion, u.Z.keyboardModeEnabled]), T = !n || S || I ? 0 : O, A = () => {
     E({
       action: "PRESS_EDIT_CUSTOM_STATUS"
     }), v(g), null == a || a()
   }, C = () => {
     E({
       action: "PRESS_CLEAR_CUSTOM_STATUS"
-    }), _.Ok.updateSetting(true)
+    }), p.Ok.updateSetting(true)
   };
   return (0, r.jsxs)(f.ZP, {
-    className: o()(m.popover, {
-      [m.visible]: t,
-      [m.expandable]: n
+    className: o()(h.popover, {
+      [h.visible]: t,
+      [h.expandable]: n
     }),
     children: [(0, r.jsx)(l.u, {
       asContainer: true,
       targetElementRef: b,
-      text: h.intl.string(h.t.bt75uw),
-      delay: S,
+      text: m.intl.string(m.t.bt75uw),
+      delay: T,
       ariaHidden: true,
       children: (0, r.jsx)(f.zx, {
         ref: b,
-        className: o()(m.button, m.left),
-        "aria-label": h.intl.string(h.t.QdHxos),
+        className: o()(h.button, h.left),
+        "aria-label": m.intl.string(m.t.QdHxos),
         "aria-haspopup": "dialog",
         onClick: A,
         children: (0, r.jsx)(c.vdY, {
           size: "xs",
-          colorClass: m.icon
+          colorClass: h.icon
         })
       })
     }), (0, r.jsx)(l.u, {
       asContainer: true,
-      text: h.intl.string(h.t.VkKicb),
-      delay: S,
+      text: m.intl.string(m.t.VkKicb),
+      delay: T,
       ariaHidden: true,
       children: (0, r.jsx)(f.zx, {
         ref: y,
-        className: o()(m.button, m.right),
-        "aria-label": h.intl.string(h.t.wfYTHe),
+        className: o()(h.button, h.right),
+        "aria-label": m.intl.string(m.t.wfYTHe),
         onClick: C,
         children: (0, r.jsx)(c.XHJ, {
           size: "xs",
-          colorClass: m.icon
+          colorClass: h.icon
         })
       })
     })]

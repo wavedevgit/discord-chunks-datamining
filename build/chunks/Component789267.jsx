@@ -23,30 +23,30 @@ function l(e) {
     joinable: u,
     usernameHook: d,
     onClickJoinCall: f
-  } = e, _ = (0, i.ZP)(t), p = _.nick, h = d(_), m = s(t);
+  } = e, p = (0, i.ZP)(t), _ = p.nick, m = d(p), h = s(t);
   return c ? (0, r.jsx)(a.Z, {
     icon: n(154239),
     timestamp: t.timestamp,
     compact: l,
-    children: null != m ? o.intl.format(o.t.AcqBmO, {
-      username: p,
-      usernameHook: h,
-      callDuration: m
+    children: null != h ? o.intl.format(o.t.AcqBmO, {
+      username: _,
+      usernameHook: m,
+      callDuration: h
     }) : o.intl.format(o.t["43phHx"], {
-      username: p,
-      usernameHook: h
+      username: _,
+      usernameHook: m
     })
   }) : (0, r.jsxs)(a.Z, {
     icon: n(344163),
     timestamp: t.timestamp,
     compact: l,
-    children: [null != m ? o.intl.format(o.t["7TeC1P"], {
-      username: p,
-      usernameHook: h,
-      callDuration: m
+    children: [null != h ? o.intl.format(o.t["7TeC1P"], {
+      username: _,
+      usernameHook: m,
+      callDuration: h
     }) : o.intl.format(o.t.LuB5RD, {
-      username: p,
-      usernameHook: h
+      username: _,
+      usernameHook: m
     }), u ? (0, r.jsx)(a.Z.Action, {
       onClick: f,
       children: o.intl.string(o.t.oa9mvZ)

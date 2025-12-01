@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk228103 = require("./228103.js");
-let h = 200,
-  m = 250,
+let m = 200,
+  h = 250,
   g = 36,
   E = 660,
   b = [Chunk981631.Eu4.NONE, Chunk981631.Eu4.TIER_1, Chunk981631.Eu4.TIER_2, Chunk981631.Eu4.TIER_3];
@@ -29,7 +29,7 @@ function y(e) {
     premiumTier: r,
     isRevealed: a,
     useReducedMotion: o
-  } = e, [l, c] = i.useState(o ? r : false), [u, _] = i.useState(0 === n), [p, m] = i.useState(false), b = i.useRef(true);
+  } = e, [l, c] = i.useState(o ? r : false), [u, p] = i.useState(0 === n), [_, h] = i.useState(false), b = i.useRef(true);
 
   function y(e) {
     let {
@@ -57,12 +57,12 @@ function y(e) {
     },
     onChange: y,
     onStart: () => {
-      _(false)
+      p(false)
     },
     onRest: () => {
-      _(true), r === f.Eu4.TIER_3 && (m(true), window.setTimeout(() => {
-        b.current && m(false)
-      }, h))
+      p(true), r === f.Eu4.TIER_3 && (h(true), window.setTimeout(() => {
+        b.current && h(false)
+      }, m))
     }
   });
   return i.useEffect(() => () => {
@@ -70,8 +70,8 @@ function y(e) {
   }, []), {
     isProgressBarAnimationComplete: u,
     progressBarFillWidthFactor: O,
-    setShouldFireConfetti: m,
-    shouldFireConfetti: p,
+    setShouldFireConfetti: h,
+    shouldFireConfetti: _,
     tierMarkerAnimationPosition: l
   }
 }
@@ -79,53 +79,53 @@ function y(e) {
 function O(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [s, h] = i.useState(false), [g, E] = i.useState(0), O = i.useRef(null), v = s || n, {
-    fillFactor: I,
-    totalAvailableBoostsCount: T
+  } = e, n = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [s, m] = i.useState(false), [g, E] = i.useState(0), O = i.useRef(null), v = s || n, {
+    fillFactor: S,
+    totalAvailableBoostsCount: I
   } = i.useMemo(() => (0, c.Hl)(t), [t]), {
-    progressBarFillWidthFactor: S,
+    progressBarFillWidthFactor: T,
     isProgressBarAnimationComplete: A,
     setShouldFireConfetti: C,
     shouldFireConfetti: N,
-    tierMarkerAnimationPosition: R
+    tierMarkerAnimationPosition: P
   } = y({
-    fillFactor: I,
+    fillFactor: S,
     isRevealed: v,
     useReducedMotion: n,
     premiumTier: t.premiumTier,
-    guildBoostCount: T
+    guildBoostCount: I
   });
   return i.useEffect(() => {
     let e = window.setTimeout(() => {
-      h(true)
-    }, m);
+      m(true)
+    }, h);
     return () => {
       window.clearTimeout(e)
     }
   }, []), (0, r.jsxs)("div", {
-    className: p.progressBar,
+    className: _.progressBar,
     role: "progressbar",
-    "aria-valuenow": T,
-    "aria-valuetext": t.premiumTier === f.Eu4.NONE ? _.intl.formatToPlainString(_.t.Ukqm9v, {
-      numSubscriptionsApplied: T
-    }) : _.intl.formatToPlainString(_.t.qWunaU, {
-      numSubscriptionsApplied: T,
+    "aria-valuenow": I,
+    "aria-valuetext": t.premiumTier === f.Eu4.NONE ? p.intl.formatToPlainString(p.t.Ukqm9v, {
+      numSubscriptionsApplied: I
+    }) : p.intl.formatToPlainString(p.t.qWunaU, {
+      numSubscriptionsApplied: I,
       tierName: (0, c.nW)(t.premiumTier, {
         useLevels: false
       })
     }),
     children: [(0, r.jsxs)("div", {
-      className: p.progressBarScrubber,
+      className: _.progressBarScrubber,
       children: [(0, r.jsx)(a.animated.div, {
-        className: p.progressBarFill,
+        className: _.progressBarFill,
         style: {
-          width: S.to({
+          width: T.to({
             range: [0, 1],
             output: [0, 100]
           }).to(e => "".concat(e, "%"))
         }
       }), (0, r.jsx)("div", {
-        className: p.progressBarTrack
+        className: _.progressBarTrack
       })]
     }), b.map(e => (0, r.jsx)(d.Z, {
       confettiTriggerRef: O,
@@ -134,8 +134,8 @@ function O(e) {
       setConfettiCount: E,
       setShouldFireConfetti: C,
       tier: e,
-      tierMarkerAnimationPosition: R,
-      totalAvailableBoostsCount: T,
+      tierMarkerAnimationPosition: P,
+      totalAvailableBoostsCount: I,
       children: (0, c.nW)(e)
     }, e)), (0, r.jsx)(u.Z, {
       confettiCount: g,

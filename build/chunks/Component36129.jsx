@@ -19,10 +19,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk739566 = require("./739566.js"),
   Chunk781391 = require("./781391.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk575196 = require("./575196.js"),
   Chunk233398 = require("./233398.js"),
   Chunk47760 = require("./47760.js"),
   Chunk629452 = require("./629452.js"),
+  Chunk639745 = require("./639745.js"),
   Chunk981631 = require("./981631.js"),
   Chunk896591 = require("./896591.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -35,23 +35,23 @@ let A = e => e.map(e => "#".concat(e)),
       sharedClientTheme: n
     } = t, {
       setAll: i
-    } = (0, b.Ig)();
-    return (0, O.b)("Share Client Theme Widget") && true !== n ? (0, r.jsxs)("div", {
-      className: S.container,
-      children: [(0, r.jsx)(R, {
+    } = (0, E.Ig)();
+    return (0, y.b)("Share Client Theme Widget") && true !== n ? (0, r.jsxs)("div", {
+      className: T.container,
+      children: [(0, r.jsx)(P, {
         message: t
       }), (0, r.jsx)(u.zxk, {
-        text: T.intl.string(T.t.SKNnqq),
+        text: I.intl.string(I.t.SKNnqq),
         fullWidth: true,
         variant: "primary",
         onClick: () => {
-          g.default.track(v.rMx.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, p.XO)(p.wh.CUSTOM_THEME, {
-            from: p.tE.SHARE_MESSAGE
+          g.default.track(v.rMx.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, _.XO)(_.wh.CUSTOM_THEME, {
+            from: _.tE.SHARE_MESSAGE
           }), i({
             colors: A(n.colors),
             chassisMixAmount: n.base_mix,
             gradientAngle: n.gradient_angle
-          }), (0, m.y)((0, y.e)(n.base_theme))
+          }), (0, h.y)((0, b.e)(n.base_theme))
         }
       })]
     }) : null
@@ -59,53 +59,53 @@ let A = e => e.map(e => "#".concat(e)),
   N = (e, t, n) => e.split(" ").map((e, a) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
     children: [e, " "]
   }, a) : (0, r.jsxs)("span", {
-    className: S.avatarContainer,
+    className: T.avatarContainer,
     children: [(0, r.jsx)(c.qE, {
       "aria-label": n,
       src: t.getAvatarURL(null, 20),
       size: d.EFr.SIZE_20
     }), " ", n, " "]
   }, a)),
-  R = e => {
+  P = e => {
     let {
       message: t
     } = e, {
       sharedClientTheme: n
-    } = t, c = (0, h.ZP)(t), u = i.useMemo(() => (0, a.once)(() => {
+    } = t, c = (0, m.ZP)(t), u = i.useMemo(() => (0, a.once)(() => {
       (0, f.h)({
         type: o.ImpressionTypes.VIEW,
         name: s.z.CUSTOM_THEME_SHARE,
         properties: {}
       })
-    }), []), p = (0, _.Z)({
+    }), []), _ = (0, p.Z)({
       onVisible: () => {
         u()
       },
       threshold: 1,
       minTimeVisibleMs: 200
-    }), m = i.useMemo(() => {
+    }), h = i.useMemo(() => {
       var e;
-      return true === n ? "" : (0, E.yz)(A(n.colors), null != (e = n.gradient_angle) ? e : 0)
+      return true === n ? "" : (0, O.yz)(A(n.colors), null != (e = n.gradient_angle) ? e : 0)
     }, [n]);
     return true === n ? null : (0, r.jsxs)("div", {
-      className: S.themePreviewContainer,
-      ref: p,
+      className: T.themePreviewContainer,
+      ref: _,
       children: [(0, r.jsx)("div", {
-        className: S.colorPreview,
+        className: T.colorPreview,
         style: {
-          background: "".concat(m)
+          background: "".concat(h)
         }
       }), (0, r.jsxs)("div", {
-        className: S.sharedByContainer,
+        className: T.sharedByContainer,
         children: [(0, r.jsxs)(d.Heading, {
           variant: "heading-md/semibold",
-          className: S.sharedTitle,
-          children: [T.intl.string(I.default.KSBBpC), " ", (0, r.jsx)(l.SrA, {})]
+          className: T.sharedTitle,
+          children: [I.intl.string(S.default.KSBBpC), " ", (0, r.jsx)(l.SrA, {})]
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          className: S.sharedBy,
-          children: N("".concat(T.intl.format(I.default.fQPSEf, {
+          className: T.sharedBy,
+          children: N("".concat(I.intl.format(S.default.fQPSEf, {
             username: "__USERNAME__"
           })), t.author, c.nick)
         })]

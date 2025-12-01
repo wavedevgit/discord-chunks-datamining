@@ -2,9 +2,9 @@
 /** chunk id: 65090, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BL: () => _,
+  BL: () => p,
   ZP: () => E,
-  m1: () => p
+  m1: () => _
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,21 +17,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk761652 = require("./761652.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return s.ZP.hasSameRoleAsUsername(t, e) ? "".concat(d.ME).concat(e.tag) : "".concat(d.ME).concat(l.ZP.getUserTag(e, {
     identifiable: n ? "never" : "always"
   }))
 }
 
-function p(e) {
+function _(e) {
   return "<@".concat(e.id, ">")
 }
 
-function h(e) {
+function m(e) {
   return e.text
 }
 
-function m(e) {
+function h(e) {
   return "".concat(d.ME).concat(e.name)
 }
 
@@ -71,48 +71,48 @@ let E = {
           globals: s,
           roles: l
         },
-        selectedIndex: _,
-        channel: p,
-        query: h,
-        options: m,
+        selectedIndex: p,
+        channel: _,
+        query: m,
+        options: h,
         onHover: g,
         onClick: E
       } = e,
       b = o.map((e, t) => (0, r.jsx)(a.ZP.User, {
-        guildId: p.guild_id,
+        guildId: _.guild_id,
         onClick: E,
         onHover: g,
-        selected: _ === t,
+        selected: p === t,
         index: t,
         user: e.user,
         nick: e.nick,
         status: e.status,
-        hidePersonalInformation: m.hidePersonalInformation
+        hidePersonalInformation: h.hidePersonalInformation
       }, e.user.id)),
       y = s.map((e, t) => (0, r.jsx)(a.ZP.Generic, {
         onClick: E,
         onHover: g,
-        selected: _ === t + o.length,
+        selected: p === t + o.length,
         index: o.length + t,
         text: e.text,
-        description: m.hideMentionDescription ? null : e.description,
+        description: h.hideMentionDescription ? null : e.description,
         "aria-label": e.text,
         badge: "@game" === e.text ? "new" : true
       }, e.text)),
       O = l.map((e, t) => (0, r.jsx)(a.ZP.Role, {
         onClick: E,
         onHover: g,
-        selected: _ === t + o.length + s.length,
+        selected: p === t + o.length + s.length,
         index: o.length + s.length + t,
         role: e,
-        hideDescription: m.hideMentionDescription,
-        guildId: p.guild_id
+        hideDescription: h.hideMentionDescription,
+        guildId: _.guild_id
       }, e.id));
-    return m.mentions.user === u.h3.DENY ? (t = f.t.MLiD1e, n = f.intl.string(f.t["LPJmL/"])) : (t = f.t.rPNimn, n = f.intl.string(f.t["9Oq93m"])), (0, r.jsxs)(i.Fragment, {
+    return h.mentions.user === u.h3.DENY ? (t = f.t.MLiD1e, n = f.intl.string(f.t["LPJmL/"])) : (t = f.t.rPNimn, n = f.intl.string(f.t["9Oq93m"])), (0, r.jsxs)(i.Fragment, {
       children: [(0, c.gm)({
         titleWithQuery: t,
         titleWithoutQuery: n,
-        query: h,
+        query: m,
         getQuery: e => "".concat(d.ME).concat(e)
       }), b, o.length > 0 && s.length > 0 ? (0, r.jsx)(a.ZP.Divider, {}) : null, y, o.length > 0 && l.length > 0 || s.length > 0 && l.length > 0 ? (0, r.jsx)(a.ZP.Divider, {}) : null, O]
     }, "mentions")
@@ -128,7 +128,7 @@ let E = {
       options: a,
       channel: o
     } = e, s = t[i], l = n[i - t.length], c = r[i - t.length - n.length], d = false;
-    return null != s ? a.insertText(_(s.user, o, a.hidePersonalInformation), p(s.user)) : null != l ? null != l.inlineAutocompleteType ? (a.insertAutocompleteInput(l.inlineAutocompleteType), d = true) : a.insertText(h(l)) : null != c && a.insertText(m(c), g(c)), {
+    return null != s ? a.insertText(p(s.user, o, a.hidePersonalInformation), _(s.user)) : null != l ? null != l.inlineAutocompleteType ? (a.insertAutocompleteInput(l.inlineAutocompleteType), d = true) : a.insertText(m(l)) : null != c && a.insertText(h(c), g(c)), {
       type: d ? u.z2.GAME_MENTION : u.z2.MENTION
     }
   }

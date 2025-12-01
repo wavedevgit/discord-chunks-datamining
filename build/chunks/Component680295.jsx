@@ -2,8 +2,8 @@
 /** chunk id: 680295, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S,
-  n: () => I
+  Z: () => T,
+  n: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,7 +45,7 @@ function v(e) {
   }
   return e
 }
-let I = e => {
+let S = e => {
     let {
       bannerAdjustment: t = 0,
       maxLoops: n,
@@ -54,47 +54,47 @@ let I = e => {
       useOpacityOnHover: c = true,
       autoPlay: u = true,
       restartMethod: d,
-      urlQueryString: h,
+      urlQueryString: m,
       profileEffectConfig: E,
       noBorderRadius: O = false,
       delayIntro: v = true
-    } = e, I = i.useRef(null), [T, S] = i.useState([]);
+    } = e, S = i.useRef(null), [I, T] = i.useState([]);
     (0, b.Z)(E);
-    let [A, C] = i.useState(0), [N, R] = i.useState(0), {
-      accessibilityLabel: P
-    } = E, D = v ? f.JH : .1, [w, L] = i.useState(-D), {
-      stop: x,
-      reset: M,
-      ticking: k
-    } = (0, p.Z)(e => {
-      L(t => t + e)
-    }), j = i.useRef(D);
+    let [A, C] = i.useState(0), [N, P] = i.useState(0), {
+      accessibilityLabel: R
+    } = E, w = v ? f.JH : .1, [D, x] = i.useState(-w), {
+      stop: L,
+      reset: j,
+      ticking: M
+    } = (0, _.Z)(e => {
+      x(t => t + e)
+    }), k = i.useRef(w);
     i.useEffect(() => {
-      j.current = D
+      k.current = w
     }), i.useEffect(() => {
-      L(-j.current), S((0, m.H)(E.effects))
+      x(-k.current), T((0, h.H)(E.effects))
     }, [E]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
-      T.forEach(n => {
+      I.forEach(n => {
         let r = n.start + n.duration;
         r > e && (e = r), n.loop && n.start < t && (t = n.start)
-      }), C(t), R(e)
-    }, [R, T]);
+      }), C(t), P(e)
+    }, [P, I]);
     let [U, G] = i.useState(false);
     return i.useEffect(() => {
-      true === u || l || (x(), L(0)), !l && U && k.current && (x(), L(0)), a && l && !k.current && (M(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? L(d === _.Q.FromStart ? 0 : A) : L(0))
-    }, [l, U, A, a, x, M, k, E.animationType, u, d]), (0, r.jsx)("div", {
-      ref: I,
+      true === u || l || (L(), x(0)), !l && U && M.current && (L(), x(0)), a && l && !M.current && (j(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? x(d === p.Q.FromStart ? 0 : A) : x(0))
+    }, [l, U, A, a, L, j, M, E.animationType, u, d]), (0, r.jsx)("div", {
+      ref: S,
       className: o()(y.profileEffects, {
         [y.hovered]: l && c
       }),
-      "aria-label": P,
+      "aria-label": R,
       role: "img",
       children: (0, r.jsx)("div", {
         className: O ? y.innerNoRadius : y.inner,
-        children: T.map((e, i) => {
-          if (!k.current && E.animationType === s.y.ANIMATION_TYPE_PERSISTENT && null != E.staticFrameSrc && 0 === i && true === u) {
+        children: I.map((e, i) => {
+          if (!M.current && E.animationType === s.y.ANIMATION_TYPE_PERSISTENT && null != E.staticFrameSrc && 0 === i && true === u) {
             var a, o, l, c;
             let {
               staticFrameSrc: n
@@ -113,11 +113,11 @@ let I = e => {
           return (0, r.jsx)(g.Z, {
             layerConfig: e,
             animationType: E.animationType,
-            ticking: k.current,
-            time: w,
+            ticking: M.current,
+            time: D,
             hasPlayedThrough: U,
             setHasPlayedThrough: G,
-            urlQueryString: h,
+            urlQueryString: m,
             maxLoops: n,
             loopEnd: N,
             bannerAdjustment: t
@@ -126,7 +126,7 @@ let I = e => {
       })
     })
   },
-  T = e => {
+  I = e => {
     let {
       config: t,
       useThumbnail: n,
@@ -159,22 +159,22 @@ let I = e => {
       })
     })
   },
-  S = e => {
+  T = e => {
     let t = (0, d.n)(),
       n = (0, l.e7)([c.Z], () => c.Z.useReducedMotion),
       [a, o] = i.useState(false),
-      f = (0, h.V)(e.skuId),
-      _ = (0, u.ex)(null == f ? true : f.config),
-      p = (0, m.C)(null == f ? true : f.config),
-      g = null != _ ? _ : p;
-    return null != f && null != g && (t || e.shopPreview || f.config.animationType !== s.y.ANIMATION_TYPE_INTERMITTENT) ? !t && e.shopPreview || !t && f.config.animationType === s.y.ANIMATION_TYPE_PERSISTENT || n || false === e.autoPlay && false === e.isHovering ? (0, r.jsx)(T, {
+      f = (0, m.V)(e.skuId),
+      p = (0, u.ex)(null == f ? true : f.config),
+      _ = (0, h.C)(null == f ? true : f.config),
+      g = null != p ? p : _;
+    return null != f && null != g && (t || e.shopPreview || f.config.animationType !== s.y.ANIMATION_TYPE_INTERMITTENT) ? !t && e.shopPreview || !t && f.config.animationType === s.y.ANIMATION_TYPE_PERSISTENT || n || false === e.autoPlay && false === e.isHovering ? (0, r.jsx)(I, {
       useThumbnail: e.useThumbnail,
       config: g,
       bannerAdjustment: e.bannerAdjustment,
       noBorderRadius: e.noBorderRadius,
       isHovering: e.isHovering,
       useOpacityOnHover: e.useOpacityOnHover
-    }) : a ? (0, r.jsx)(I, v({
+    }) : a ? (0, r.jsx)(S, v({
       profileEffectConfig: g
     }, e)) : (0, r.jsx)(E.Z, {
       profileEffectConfig: g,

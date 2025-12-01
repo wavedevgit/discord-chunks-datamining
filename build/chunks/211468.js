@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   dO: () => l,
-  pq: () => _
+  pq: () => p
 }), require("./388685.js");
 var Chunk688619 = require("./688619.js"),
   i = require.n(Chunk688619);
@@ -32,7 +32,7 @@ let c = [1.3, .7],
   d = [.75, 1.5],
   f = [1.45, .45];
 
-function _(e, t, n, r) {
+function p(e, t, n, r) {
   switch (t) {
     case "background":
     case "border":

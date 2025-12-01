@@ -30,15 +30,15 @@ let g = function(e) {
     variant: O,
     showNagbar: v
   } = (0, c.ZP)("PremiumDiscountEndingNotice");
-  if (null == b || (null == (t = b.discount) ? true : t.plan_ids.some(e => _.GP[e].skuId !== g)) || null == b.expires_at || Object.values(y).every(e => 0 === e) || !v) return null;
-  let I = () => {
+  if (null == b || (null == (t = b.discount) ? true : t.plan_ids.some(e => p.GP[e].skuId !== g)) || null == b.expires_at || Object.values(y).every(e => 0 === e) || !v) return null;
+  let S = () => {
     (0, l.Z)({
       subscriptionTier: g,
       analyticsLocations: E,
       analyticsObject: {
-        page: p.ZY5.IN_APP,
-        section: p.jXE.NOTIFICATION_BAR,
-        object: p.qAy.BUTTON_CTA
+        page: _.ZY5.IN_APP,
+        section: _.jXE.NOTIFICATION_BAR,
+        object: _.qAy.BUTTON_CTA
       }
     })
   };
@@ -47,21 +47,21 @@ let g = function(e) {
     children: [(0, r.jsx)(d.Jy, {
       children: (0, f.TV)(y, Number(b.discount.amount))
     }), (0, r.jsx)(d.OJ, {
-      onClick: I,
-      text: h.intl.string(h.t.zLXssK)
+      onClick: S,
+      text: m.intl.string(m.t.zLXssK)
     })]
   }) : (0, r.jsxs)(i.qXd, {
     color: i.DM8.PREMIUM_TIER_2,
     children: [(0, r.jsx)(i.RyX, {
-      noticeType: p.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING,
+      noticeType: _.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING,
       onClick: n
     }), (0, r.jsx)(i.SrA, {
       size: "md",
       color: "currentColor",
-      className: m.premiumIcon
+      className: h.premiumIcon
     }), (0, f.TV)(y, Number(b.discount.amount)), (0, r.jsx)(i.EyT, {
-      onClick: I,
-      children: h.intl.string(h.t.zLXssK)
+      onClick: S,
+      children: m.intl.string(m.t.zLXssK)
     })]
   })
 }

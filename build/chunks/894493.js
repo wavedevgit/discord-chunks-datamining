@@ -55,7 +55,7 @@ module.exports = function(e) {
       return t.concat(t.concat("(?:", e, ")"), r, /(?:\\.|[^\\\/])*?/, a, /(?:\\.|[^\\\/])*?/, i, n)
     },
     f = (e, r, i) => t.concat(t.concat("(?:", e, ")"), r, /(?:\\.|[^\\\/])*?/, i, n),
-    _ = [s, e.HASH_COMMENT_MODE, e.COMMENT(/^=\w/, /=cut/, {
+    p = [s, e.HASH_COMMENT_MODE, e.COMMENT(/^=\w/, /=cut/, {
       endsWithParent: true
     }), a, {
       className: "string",
@@ -166,10 +166,10 @@ module.exports = function(e) {
         className: "comment"
       }]
     }];
-  return i.contains = _, a.contains = _, {
+  return i.contains = p, a.contains = p, {
     name: "Perl",
     aliases: ["pl", "pm"],
     keywords: r,
-    contains: _
+    contains: p
   }
 }

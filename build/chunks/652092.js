@@ -26,7 +26,7 @@ function s(e, t, n) {
     l = a ? a.getEntity() : true,
     c = s ? s.getEntity() : true;
   if (c && c === l && "MUTABLE" !== e.__get(c).getMutability()) {
-    for (var u, d = o(i, c, n), f = d.start, _ = d.end; f < _;) u = i.get(f), i = i.set(f, r.applyEntity(u, null)), f++;
+    for (var u, d = o(i, c, n), f = d.start, p = d.end; f < p;) u = i.get(f), i = i.set(f, r.applyEntity(u, null)), f++;
     return t.set("characterList", i)
   }
   return t
@@ -44,8 +44,8 @@ module.exports = function(e, t) {
     d = t.getEndOffset(),
     f = n.get(u);
   a === u && (f = c);
-  var _ = s(r, f, d);
-  return (_ !== f && (i[u] = _), Object.keys(i).length) ? e.merge({
+  var p = s(r, f, d);
+  return (p !== f && (i[u] = p), Object.keys(i).length) ? e.merge({
     blockMap: n.merge(i),
     selectionAfter: t
   }) : e.set("selectionAfter", t)

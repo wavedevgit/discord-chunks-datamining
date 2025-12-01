@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   U: () => f,
-  j: () => _
+  j: () => p
 });
 var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
@@ -32,7 +32,7 @@ function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   let {
     displayNameStyles: t,
     inProfile: n

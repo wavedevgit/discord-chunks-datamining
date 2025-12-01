@@ -2,7 +2,7 @@
 /** chunk id: 893796, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => _
+  v: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -66,28 +66,28 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let p = e => {
   var t, n, {
       size: s = "md",
       width: c,
       height: f,
-      color: _ = i.Z.colors.INTERACTIVE_NORMAL,
-      colorClass: p = ""
+      color: p = i.Z.colors.INTERACTIVE_NORMAL,
+      colorClass: _ = ""
     } = e,
-    h = d(e, ["size", "width", "height", "color", "colorClass"]);
-  let m = (0, o.m)(s),
-    g = null != (t = null == m ? true : m.width) ? t : c,
-    E = null != (n = null == m ? true : m.height) ? n : f;
-  return (0, r.jsx)("svg", u(l({}, (0, a.Z)(h)), {
+    m = d(e, ["size", "width", "height", "color", "colorClass"]);
+  let h = (0, o.m)(s),
+    g = null != (t = null == h ? true : h.width) ? t : c,
+    E = null != (n = null == h ? true : h.height) ? n : f;
+  return (0, r.jsx)("svg", u(l({}, (0, a.Z)(m)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,
     height: E,
     fill: "none",
     viewBox: "0 0 24 24",
     children: (0, r.jsx)("path", {
-      fill: "string" == typeof _ ? _ : _.css,
+      fill: "string" == typeof p ? p : p.css,
       d: "M14 4a5 5 0 0 1 5 5v.2A5.5 5.5 0 0 1 17.5 20H5a4 4 0 0 1-.85-7.9 4 4 0 0 1 5.18-4.87A5 5 0 0 1 14 4Z",
-      className: p
+      className: _
     })
   }))
 }

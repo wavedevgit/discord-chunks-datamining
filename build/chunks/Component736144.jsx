@@ -2,7 +2,7 @@
 /** chunk id: 736144, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -44,7 +44,7 @@ function f(e) {
   }, [s, r, u, n]), null
 }
 
-function _(e) {
+function p(e) {
   return (0, r.jsx)(s.Z, {
     confettiLocation: e.confettiLocation,
     children: (0, r.jsx)(f, d({}, e))

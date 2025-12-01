@@ -2,7 +2,7 @@
 /** chunk id: 7188, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk572065 = require("./572065.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +34,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -82,7 +82,7 @@ function N(e, t) {
   return i
 }
 
-function R(e) {
+function P(e) {
   let {
     className: t
   } = e;
@@ -93,7 +93,7 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     className: t
   } = e;
@@ -101,33 +101,33 @@ function P(e) {
     children: [(0, r.jsx)(u.ZP, {
       className: t,
       mask: u.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-      children: (0, r.jsx)(R, {})
-    }), (0, r.jsx)(h.Z, {
+      children: (0, r.jsx)(P, {})
+    }), (0, r.jsx)(m.Z, {
       className: v.badgeUpgrade
     })]
   })
 }
 
-function D(e) {
+function w(e) {
   var {
     hideBadges: t = false,
     stream: n,
     location: u
-  } = e, h = C(e, ["hideBadges", "stream", "location"]);
+  } = e, m = C(e, ["hideBadges", "stream", "location"]);
   let v = i.useRef(null),
     {
-      analyticsLocations: I,
-      parentAnalyticsLocation: S
+      analyticsLocations: S,
+      parentAnalyticsLocation: T
     } = (0, s.ZP)(),
-    N = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.PremiumTypes.TIER_1)),
-    D = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)),
-    w = i.useMemo(() => null != n ? [n] : [], [n]),
-    L = i.useCallback(() => {
-      null != D && (0, f.Z)(D.getGuildId(), D.id, I)
-    }, [D, I]);
-  if (null == n || null == D) return null;
-  let x = R;
-  return t || N || (x = P), (0, r.jsx)(o.yRy, {
+    N = (0, a.e7)([_.default], () => h.ZP.isPremium(_.default.getCurrentUser(), y.PremiumTypes.TIER_1)),
+    w = (0, a.e7)([p.Z], () => p.Z.getChannel(null == n ? true : n.channelId)),
+    D = i.useMemo(() => null != n ? [n] : [], [n]),
+    x = i.useCallback(() => {
+      null != w && (0, f.Z)(w.getGuildId(), w.id, S)
+    }, [w, S]);
+  if (null == n || null == w) return null;
+  let L = P;
+  return t || N || (L = R), (0, r.jsx)(o.yRy, {
     targetElementRef: v,
     position: "top",
     renderPopout: e => {
@@ -136,26 +136,26 @@ function D(e) {
       } = e;
       return (0, r.jsx)(g.Z, {
         children: (0, r.jsx)(d.Z, {
-          channel: D,
-          currentUser: p.default.getCurrentUser(),
-          activeStreams: w,
+          channel: w,
+          currentUser: _.default.getCurrentUser(),
+          activeStreams: D,
           onClose: t,
           showReportOption: true,
-          handleGoLive: L,
-          onInteraction: (0, c.u)("ManageStreamsButton", null != S ? S : u, {
+          handleGoLive: x,
+          onInteraction: (0, c.u)("ManageStreamsButton", null != T ? T : u, {
             entrypoint: b.A5.OTHER_BUTTON
           })
         })
       })
     },
     animation: o.yRy.Animation.FADE,
-    children: e => (0, r.jsx)(E.Z, T(A(T({}, e), {
+    children: e => (0, r.jsx)(E.Z, I(A(I({}, e), {
       buttonRef: v,
       label: O.intl.string(O.t.tmiYpF),
-      iconComponent: x,
+      iconComponent: L,
       onClick: t => {
-        (null != S || null != u) && (0, l.v)(null != S ? S : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)
+        (null != T || null != u) && (0, l.v)(null != T ? T : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)
       }
-    }), h))
+    }), m))
   })
 }

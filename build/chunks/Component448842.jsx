@@ -30,15 +30,15 @@ function O(e) {
     selectedChannel: O,
     setSearchQuery: v
   } = e, {
-    autocompletes: I,
-    mode: T
-  } = t, S = (0, m.Z)({
-    autocompletes: I,
-    mode: T
+    autocompletes: S,
+    mode: I
+  } = t, T = (0, h.Z)({
+    autocompletes: S,
+    mode: I
   }), A = (0, g.Z)({
     setSearchQuery: v,
     searchContext: n,
-    mode: T
+    mode: I
   }), C = e => {
     let {
       searchEverywhere: t
@@ -54,17 +54,17 @@ function O(e) {
       searchAutocompleteSelectAction: a,
       selectedAutocomplete: s,
       selectedAutocompleteGroup: u
-    } = e, d = T.type, f = T.filter, {
-      token: m,
+    } = e, d = I.type, f = I.filter, {
+      token: h,
       group: g
-    } = s, b = null != g && (0, c._m)(g) ? g : null, y = null != (t = null != m ? m : f) ? t : b, O = s.channel, v = y === E.dCx.FILTER_IN && null != O && O.id === o.Z.getChannelId(), I = (0, l.Tm)(n);
-    (0, h.bh)({
+    } = s, b = null != g && (0, c._m)(g) ? g : null, y = null != (t = null != h ? h : f) ? t : b, O = s.channel, v = y === E.dCx.FILTER_IN && null != O && O.id === o.Z.getChannelId(), S = (0, l.Tm)(n);
+    (0, m.bh)({
       searchContext: n,
-      searchQuery: p.Z.getSearchResultsQuery(I),
-      searchQueryString: _.Z.getSearchInputText(n),
+      searchQuery: _.Z.getSearchResultsQuery(S),
+      searchQueryString: p.Z.getSearchInputText(n),
       searchTokenType: y,
       searchAutocompleteGroup: u,
-      searchAutocompleteMode: T,
+      searchAutocompleteMode: I,
       searchAutocompleteResultIndex: i,
       searchAutocompleteTotalResults: r,
       isSearchFilterPrefix: d === E.Sap.EMPTY,
@@ -73,7 +73,7 @@ function O(e) {
       isInFilterForSelectedChannel: v,
       searchAutocompleteSelectAction: a
     })
-  }, R = i.useCallback(e => {
+  }, P = i.useCallback(e => {
     let {
       hasOtherSearchFiltersVisible: t
     } = e, i = t ? b.intl.string(b.t.diOL4i) : b.intl.string(b.t["M1tf+7"]);
@@ -88,10 +88,10 @@ function O(e) {
       label: (0, r.jsx)(u.Q0, {
         label: i
       }),
-      onSelect: () => _.Z.openSearchFiltersModal(n)
+      onSelect: () => p.Z.openSearchFiltersModal(n)
     })
   }, [n]), {
-    items: P
+    items: R
   } = (0, ({
     [E.Sap.EMPTY]: () => {
       let e = [];
@@ -103,7 +103,7 @@ function O(e) {
               selectedChannel: r,
               searchAutocompleteSelectAction: i
             } = e;
-            (0, h.tA)({
+            (0, m.tA)({
               searchContext: n,
               searchAutocompleteSelectAction: i
             });
@@ -140,7 +140,7 @@ function O(e) {
           });
         e.push(o)
       }
-      let t = [...A, R({
+      let t = [...A, P({
         hasOtherSearchFiltersVisible: true
       })];
       e.push((0, f.fC)(d.i.GROUP, {
@@ -151,7 +151,7 @@ function O(e) {
         {
           autocompleteCount: o,
           autocompleteGroups: s
-        } = S({
+        } = T({
           filterFn: e => e.group === E.rtL.HISTORY && e.results.length > 0,
           getAutocompleteRowItem: e => {
             let {
@@ -167,14 +167,14 @@ function O(e) {
               group: a
             }), {
               label: c,
-              ariaLabel: _
+              ariaLabel: p
             } = (0, u.HU)({
               value: t.text
-            }), p = e => {
+            }), _ = e => {
               let {
                 selectedIndex: t
               } = e;
-              (0, h.$z)({
+              (0, m.$z)({
                 searchContext: n,
                 searchHistoryIndex: t - i,
                 searchHistoryTotalResults: o
@@ -188,10 +188,10 @@ function O(e) {
               icon: l,
               label: c,
               ariaLabel: b.intl.formatToPlainString(b.t.WoiGrV, {
-                suggestion: _
+                suggestion: p
               }),
               resultText: s,
-              onSelect: p
+              onSelect: _
             })
           },
           getAutocompleteGroupItem: e => {
@@ -260,7 +260,7 @@ function O(e) {
       let {
         autocompleteCount: i,
         autocompleteGroups: o
-      } = S({
+      } = T({
         filterFn: e => e.group !== E.rtL.DATES && e.group !== E.rtL.SEARCH_OPTIONS && e.group !== E.dCx.FILTER_HAS && e.results.length > 0,
         getAutocompleteRowItem: e => {
           var t;
@@ -277,11 +277,11 @@ function O(e) {
             group: o
           }), {
             label: c,
-            ariaLabel: _
-          } = (0, u.Nk)(n), p = o === E.dCx.FILTER_FROM || o === E.dCx.FILTER_MENTIONS ? (0, r.jsx)(u.mW, {
+            ariaLabel: p
+          } = (0, u.Nk)(n), _ = o === E.dCx.FILTER_FROM || o === E.dCx.FILTER_MENTIONS ? (0, r.jsx)(u.mW, {
             searchTokenType: o,
             answer: null == (t = n.user) ? true : t.username
-          }) : true, h = e => {
+          }) : true, m = e => {
             let {
               selectedIndex: t,
               searchAutocompleteSelectAction: r
@@ -301,10 +301,10 @@ function O(e) {
           return (0, f.fC)(d.i.ROW, {
             icon: l,
             label: c,
-            sublabel: p,
-            ariaLabel: _,
+            sublabel: _,
+            ariaLabel: p,
             resultText: s,
-            onSelect: h
+            onSelect: m
           })
         },
         getAutocompleteGroupItem: e => {
@@ -317,7 +317,7 @@ function O(e) {
             title: r
           })
         }
-      }), s = R({
+      }), s = P({
         hasOtherSearchFiltersVisible: 0 !== i
       });
       if (0 === i) {
@@ -335,7 +335,7 @@ function O(e) {
       let {
         autocompleteCount: e,
         autocompleteGroups: t
-      } = S({
+      } = T({
         filterFn: e => e.results.length > 0,
         getAutocompleteRowItem: t => {
           let {
@@ -392,9 +392,9 @@ function O(e) {
         items: [...t]
       }
     }
-  })[T.type])(), D = i.useMemo(() => {
+  })[I.type])(), w = i.useMemo(() => {
     let e = [];
-    return P.forEach(t => {
+    return R.forEach(t => {
       switch (t.type) {
         case d.i.ROW:
           e.push(t);
@@ -403,9 +403,9 @@ function O(e) {
           t.data.rows.forEach(t => e.push(t))
       }
     }), e
-  }, [P]);
+  }, [R]);
   return {
-    items: P,
-    itemsData: D
+    items: R,
+    itemsData: w
   }
 }

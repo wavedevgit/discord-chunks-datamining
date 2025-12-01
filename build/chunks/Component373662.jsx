@@ -4,7 +4,7 @@
 require.d(exports, {
   ZP: () => E,
   fO: () => g,
-  sF: () => m
+  sF: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,15 +47,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -63,46 +63,46 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = Chunk473749.forwardRef(function(e, t) {
+let h = Chunk473749.forwardRef(function(e, t) {
   var {
     label: n,
     ariaLabel: i,
     tooltipText: a,
     icon: u,
     iconProps: f,
-    onClick: h,
-    onTooltipShow: m,
+    onClick: m,
+    onTooltipShow: h,
     onTooltipHide: g,
     disabled: E,
     dangerous: b,
     separator: y,
     buttonClassName: O,
     children: v
-  } = e, I = p(e, ["label", "ariaLabel", "tooltipText", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "buttonClassName", "children"]);
+  } = e, S = _(e, ["label", "ariaLabel", "tooltipText", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "buttonClassName", "children"]);
   return (0, r.jsx)(s.u, {
     asContainer: true,
     __unsupportedReactNodeAsText: null != a ? a : n,
     "aria-label": n,
-    onTooltipShow: m,
+    onTooltipShow: h,
     onTooltipHide: g,
     children: (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(l.zx, _(d({
+      children: [(0, r.jsxs)(l.zx, p(d({
         ref: t,
         className: o()(c.hoverBarButton, O),
         onClick: e => {
-          h(e)
+          m(e)
         },
         "aria-label": null != i ? i : n,
         disabled: E,
         dangerous: b
-      }, I), {
+      }, S), {
         children: [null != u ? (0, r.jsx)(u, d({
           className: c.icon,
           color: "currentColor"
@@ -127,7 +127,7 @@ function g(e) {
 function E(e) {
   var {
     children: t
-  } = e, n = p(e, ["children"]);
+  } = e, n = _(e, ["children"]);
   return (0, r.jsx)(l.ZP, {
     className: o()(n.className, c.popover),
     children: t

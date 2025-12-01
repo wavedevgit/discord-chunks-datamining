@@ -4,8 +4,8 @@
 require.d(exports, {
   FH: () => C,
   YG: () => A,
-  ZP: () => D,
-  uo: () => S
+  ZP: () => w,
+  uo: () => T
 }), require("./35282.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,7 +47,7 @@ function v(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,18 +58,18 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = /\.gif($|\?|#)/i,
+let T = /\.gif($|\?|#)/i,
   A = /\.webp($|\?|#)/i,
   C = /\.avif($|\?|#)/i,
   N = /\.png($|\?|#)/i,
-  R = 400,
-  P = 300;
-class D extends(r = Chunk473749.Component) {
+  P = 400,
+  R = 300;
+class w extends(r = Chunk473749.Component) {
   static isAnimated(e) {
     let {
       src: t,
@@ -77,7 +77,7 @@ class D extends(r = Chunk473749.Component) {
       animated: r,
       srcIsAnimated: i
     } = e;
-    return r || S.test(null != n && "" !== n ? n : t) || null != i && i && (A.test(null != n && "" !== n ? n : t) || C.test(null != n && "" !== n ? n : t))
+    return r || T.test(null != n && "" !== n ? n : t) || null != i && i && (A.test(null != n && "" !== n ? n : t) || C.test(null != n && "" !== n ? n : t))
   }
   static isSrcPNG(e) {
     let {
@@ -99,14 +99,14 @@ class D extends(r = Chunk473749.Component) {
       srcIsAnimated: i,
       freeze: a = false
     } = e, o = null, s = null;
-    return g.$k && (a || !D.isAnimated({
+    return g.$k && (a || !w.isAnimated({
       src: t,
       original: n,
       animated: r,
       srcIsAnimated: i
-    })) ? (o = "webp", (D.isSrcPNG({
+    })) ? (o = "webp", (w.isSrcPNG({
       src: t
-    }) || D.isSrcAVIF({
+    }) || w.isSrcAVIF({
       src: t
     })) && (s = "lossless")) : a && (o = "png"), {
       format: o,
@@ -133,33 +133,33 @@ class D extends(r = Chunk473749.Component) {
     } = e;
     if (1 === i && 1 === a) return;
     let {
-      format: _,
-      quality: p
-    } = D.getFormatQuality({
+      format: p,
+      quality: _
+    } = w.getFormatQuality({
       src: t,
       original: s,
       animated: l,
       srcIsAnimated: o,
       freeze: u
-    }), h = (0, f.Q4)({
+    }), m = (0, f.Q4)({
       src: t,
       width: i,
       height: a,
       maxWidth: n,
       maxHeight: r,
       srcIsAnimated: o,
-      format: _,
-      quality: p
-    }), m = Date.now();
-    return (0, f.po)(h, (e, n) => {
-      D.trackLoadingCompleted({
+      format: p,
+      quality: _
+    }), h = Date.now();
+    return (0, f.po)(m, (e, n) => {
+      w.trackLoadingCompleted({
         error: e,
         imageData: n,
         trigger: "PRELOAD",
-        startLoadingTime: m,
+        startLoadingTime: h,
         readyState: b.zo9.READY,
-        format: _,
-        quality: p,
+        format: p,
+        quality: _,
         imageProps: {
           src: t,
           width: i,
@@ -188,17 +188,17 @@ class D extends(r = Chunk473749.Component) {
         sourceMetadata: O
       }
     } = e;
-    if (i && _.Z.increment({
+    if (i && p.Z.increment({
         name: s.V.IMAGE_LOAD_ERROR
-      }), !w.getCurrentConfig({
+      }), !D.getCurrentConfig({
         location: "lazy_image"
       }).enabled) return;
     let v = await fetch(a.url).catch(() => true),
-      I = null == v || null == (t = v.headers) ? true : t.get("content-length"),
-      T = null != I ? Number(I) : null,
-      S = Date.now() - l;
-    m.default.track(b.rMx.IMAGE_LOADING_COMPLETED, {
-      duration_ms: S,
+      S = null == v || null == (t = v.headers) ? true : t.get("content-length"),
+      I = null != S ? Number(S) : null,
+      T = Date.now() - l;
+    h.default.track(b.rMx.IMAGE_LOADING_COMPLETED, {
+      duration_ms: T,
       requested_height: a.height,
       requested_width: a.width,
       height: g,
@@ -209,29 +209,29 @@ class D extends(r = Chunk473749.Component) {
       format: u,
       quality: d,
       state: i ? b.zo9.ERROR : c,
-      data_saving_mode: p.ZP.dataSavingMode,
-      low_quality_image_mode: p.ZP.dataSavingMode,
+      data_saving_mode: _.ZP.dataSavingMode,
+      low_quality_image_mode: _.ZP.dataSavingMode,
       trigger: o,
-      size: T,
+      size: I,
       message_id: null == O || null == (n = O.message) ? true : n.id,
       message_sent_timestamp: null == O || null == (r = O.message) ? true : r.timestamp.getTime(),
-      connection_type: h.Z.getType(),
-      effective_connection_speed: h.Z.getEffectiveConnectionSpeed(),
-      service_provider: h.Z.getServiceProvider()
+      connection_type: m.Z.getType(),
+      effective_connection_speed: m.Z.getEffectiveConnectionSpeed(),
+      service_provider: m.Z.getServiceProvider()
     })
   }
   componentDidMount() {
     let {
       readyState: e
     } = this.state;
-    module === Chunk981631.zo9.LOADING && this.loadImage(this.getSrc(this.getRatio(), D.isAnimated(this.props)), this.handleImageLoad), D.isAnimated(this.props) && this.observeVisibility()
+    module === Chunk981631.zo9.LOADING && this.loadImage(this.getSrc(this.getRatio(), w.isAnimated(this.props)), this.handleImageLoad), w.isAnimated(this.props) && this.observeVisibility()
   }
   componentDidUpdate(e) {
-    let t = D.isAnimated(this.props);
-    D.isAnimated(e) !== t && (t ? this.observeVisibility() : this.unobserveVisibility())
+    let t = w.isAnimated(this.props);
+    w.isAnimated(e) !== t && (t ? this.observeVisibility() : this.unobserveVisibility())
   }
   componentWillUnmount() {
-    D.isAnimated(this.props) && this.unobserveVisibility(), this._cancellers.forEach(e => e()), this._cancellers.clear()
+    w.isAnimated(this.props) && this.unobserveVisibility(), this._cancellers.forEach(e => e()), this._cancellers.clear()
   }
   getSrc(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
@@ -246,7 +246,7 @@ class D extends(r = Chunk473749.Component) {
       {
         format: l,
         quality: c
-      } = D.getFormatQuality(T(v({}, this.props), {
+      } = w.getFormatQuality(I(v({}, this.props), {
         freeze: t
       }));
     return (0, f.Q4)({
@@ -266,8 +266,8 @@ class D extends(r = Chunk473749.Component) {
     let {
       width: e,
       height: t,
-      maxWidth: n = R,
-      maxHeight: r = P,
+      maxWidth: n = P,
+      maxHeight: r = R,
       mediaLayoutType: i,
       useFullWidth: a
     } = this.props;
@@ -313,32 +313,32 @@ class D extends(r = Chunk473749.Component) {
       className: u,
       imageClassName: d,
       children: f,
-      animated: _,
-      shouldAnimate: p,
-      width: h,
-      height: m,
+      animated: p,
+      shouldAnimate: _,
+      width: m,
+      height: h,
       minWidth: g,
       minHeight: E,
       maxWidth: y,
       maxHeight: O,
-      onClick: I,
-      renderAccessory: T,
-      tabIndex: S,
+      onClick: S,
+      renderAccessory: I,
+      tabIndex: T,
       limitResponsiveWidth: A,
       useFullWidth: C,
       placeholder: N,
-      placeholderVersion: R,
-      dataSafeSrc: P,
-      srcIsAnimated: w
+      placeholderVersion: P,
+      dataSafeSrc: R,
+      srcIsAnimated: D
     } = this.props, {
-      readyState: L,
-      hasMouseOver: x,
-      hasFocus: M
-    } = this.state, k = null != require, j = this.getRatio(), U = (0, Chunk392711.clamp)(Math.round(Chunk866960 * j), null != Chunk768581 ? Chunk768581 : 0, null != Chunk217702 ? Chunk217702 : 1 / 0), G = (0, Chunk392711.clamp)(Math.round(Chunk626135 * j), null != Chunk956664 ? Chunk956664 : 0, null != O ? O : 1 / 0), B = {
+      readyState: x,
+      hasMouseOver: L,
+      hasFocus: j
+    } = this.state, M = null != require, k = this.getRatio(), U = (0, Chunk392711.clamp)(Math.round(Chunk866960 * k), null != Chunk768581 ? Chunk768581 : 0, null != Chunk217702 ? Chunk217702 : 1 / 0), G = (0, Chunk392711.clamp)(Math.round(Chunk626135 * k), null != Chunk956664 ? Chunk956664 : 0, null != O ? O : 1 / 0), Z = {
       alt: module,
-      readyState: L,
+      readyState: x,
       onContextMenu: null != Chunk473749 ? Chunk473749 : true,
-      zoomable: k,
+      zoomable: M,
       className: Chunk818083,
       imageClassName: Chunk279745,
       minWidth: Chunk768581,
@@ -346,14 +346,14 @@ class D extends(r = Chunk473749.Component) {
       mediaLayoutType: this.getType(),
       limitResponsiveWidth: A,
       useFullWidth: C,
-      tabIndex: S,
+      tabIndex: T,
       width: U,
       height: G,
       src: "",
       placeholder: N,
-      placeholderVersion: R,
-      dataSafeSrc: P,
-      srcIsAnimated: w,
+      placeholderVersion: P,
+      dataSafeSrc: R,
+      srcIsAnimated: D,
       children: null != Chunk134432 ? e => {
         let {
           src: t,
@@ -373,16 +373,16 @@ class D extends(r = Chunk473749.Component) {
       onFocus: this.onFocus,
       onBlur: this.onBlur
     };
-    if (1 === B.width && 1 === B.height) return null;
-    switch ((k || null != I) && (B.onClick = this.onClick), r && (B.original = null != Chunk622535 && "" !== Chunk622535 ? Chunk622535 : B.src), L) {
+    if (1 === Z.width && 1 === Z.height) return null;
+    switch ((M || null != S) && (Z.onClick = this.onClick), r && (Z.original = null != Chunk622535 && "" !== Chunk622535 ? Chunk622535 : Z.src), x) {
       case Chunk981631.zo9.LOADING:
-        null != exports && (B.src = exports);
+        null != exports && (Z.src = exports);
         break;
       case Chunk981631.zo9.READY:
-        if (D.isAnimated(this.props)) {
-          B.onMouseLeave = this.onMouseLeave;
-          let e = (Chunk286379 || x || M) && (null == Chunk740492 || Chunk740492) && D.visibilityObserver.isVisible(this);
-          module ? (B.src = this.getSrc(j), B.renderAccessory = T) : (B.src = this.getSrc(j, !Chunk797614 || !Chunk286379), B.renderAccessory = this.renderAccessory), null != Chunk134432 && (B.children = t => {
+        if (w.isAnimated(this.props)) {
+          Z.onMouseLeave = this.onMouseLeave;
+          let e = (Chunk286379 || L || j) && (null == Chunk740492 || Chunk740492) && w.visibilityObserver.isVisible(this);
+          module ? (Z.src = this.getSrc(k), Z.renderAccessory = I) : (Z.src = this.getSrc(k, !Chunk797614 || !Chunk286379), Z.renderAccessory = this.renderAccessory), null != Chunk134432 && (Z.children = t => {
             let {
               src: n,
               size: r,
@@ -397,11 +397,11 @@ class D extends(r = Chunk473749.Component) {
               mediaLayoutType: a
             })
           })
-        } else B.src = this.getSrc(j)
+        } else Z.src = this.getSrc(k)
     }
     return (0, Chunk54381.jsx)(Chunk916616.E, v({
       ref: this._imageRef
-    }, B))
+    }, Z))
   }
   constructor(e) {
     super(e), O(this, "state", {
@@ -409,9 +409,9 @@ class D extends(r = Chunk473749.Component) {
       hasMouseOver: false,
       hasFocus: false
     }), O(this, "startLoadingTime", Date.now()), O(this, "_cancellers", new Set), O(this, "_imageRef", a.createRef()), O(this, "observeVisibility", () => {
-      D.visibilityObserver.observe(this, this._imageRef)
+      w.visibilityObserver.observe(this, this._imageRef)
     }), O(this, "unobserveVisibility", () => {
-      D.visibilityObserver.unobserve(this)
+      w.visibilityObserver.unobserve(this)
     }), O(this, "handleImageLoad", (e, t) => {
       this.setState({
         readyState: e ? b.zo9.ERROR : b.zo9.READY
@@ -420,8 +420,8 @@ class D extends(r = Chunk473749.Component) {
         let {
           format: r,
           quality: i
-        } = D.getFormatQuality(this.props);
-        D.trackLoadingCompleted({
+        } = w.getFormatQuality(this.props);
+        w.trackLoadingCompleted({
           error: e,
           imageData: t,
           trigger: null != (n = this.props.trigger) ? n : "LOAD",
@@ -433,7 +433,7 @@ class D extends(r = Chunk473749.Component) {
         })
       })
     }), O(this, "onMouseEnter", e => {
-      D.isAnimated(this.props) && this.setState({
+      w.isAnimated(this.props) && this.setState({
         hasMouseOver: true
       });
       let {
@@ -441,7 +441,7 @@ class D extends(r = Chunk473749.Component) {
       } = this.props;
       null == t || t(e)
     }), O(this, "onMouseLeave", e => {
-      D.isAnimated(this.props) && this.setState({
+      w.isAnimated(this.props) && this.setState({
         hasMouseOver: false
       });
       let {
@@ -449,7 +449,7 @@ class D extends(r = Chunk473749.Component) {
       } = this.props;
       null == t || t(e)
     }), O(this, "onFocus", e => {
-      D.isAnimated(this.props) && this.setState({
+      w.isAnimated(this.props) && this.setState({
         hasFocus: true
       })
     }), O(this, "onBlur", e => {
@@ -475,12 +475,12 @@ class D extends(r = Chunk473749.Component) {
         hasFocus: t
       } = this.state, n = e || t, r = null != this.props.renderAccessory ? this.props.renderAccessory() : null;
       return this.props.shouldRenderAccessory ? n ? r : (0, i.jsx)(d.Z, {}) : null
-    }), (0, f.Vv)(this.getSrc(this.getRatio(), D.isAnimated(this.props))) && (this.state.readyState = b.zo9.READY)
+    }), (0, f.Vv)(this.getSrc(this.getRatio(), w.isAnimated(this.props))) && (this.state.readyState = b.zo9.READY)
   }
 }
-O(D, "visibilityObserver", new Chunk622535.Z({
+O(w, "visibilityObserver", new Chunk622535.Z({
   threshold: .6
-})), O(D, "defaultProps", {
+})), O(w, "defaultProps", {
   shouldLink: false,
   autoPlay: false,
   animated: false,
@@ -489,7 +489,7 @@ O(D, "visibilityObserver", new Chunk622535.Z({
   shouldRenderAccessory: true,
   srcIsAnimated: false
 });
-let w = (0, Chunk818083.B)({
+let D = (0, Chunk818083.B)({
   kind: "user",
   id: "2024-02_image_load_metrics",
   label: "Image load metrics Config User Experiment",

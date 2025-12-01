@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   C: () => C,
-  default: () => S
+  default: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -60,36 +60,36 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = 2500,
-  T = 467;
+let S = 2500,
+  I = 467;
 
-function S(e) {
+function T(e) {
   let {
     questId: t,
     survey: n,
     transitionState: a,
     onClose: o,
     onSubmit: f
-  } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [S, C] = (0, l.q_F)(() => ({
+  } = e, _ = (0, p.B4)(t), [b, O] = i.useState(0), [T, C] = (0, l.q_F)(() => ({
     from: {
       width: "0%"
     },
     config: {
-      duration: I
+      duration: S
     }
-  })), R = e => {
-    f(), O(1), null != p && d.default.track(h.rMx.QUEST_SURVEY_SUBMITTED, v(y({}, N(p, n)), {
+  })), P = e => {
+    f(), O(1), null != _ && d.default.track(m.rMx.QUEST_SURVEY_SUBMITTED, v(y({}, N(_, n)), {
       choice: e.text,
       choice_id: e.key
     }))
-  }, P = async e => {
+  }, R = async e => {
     1 === e && (await C({
       width: "100%"
     }), o())
   };
   return (0, c.ZP)(() => {
-    null != p && d.default.track(h.rMx.QUEST_SURVEY_DISPLAYED, N(p, n))
-  }), null == p && o(), (0, r.jsx)(l.Y0X, {
+    null != _ && d.default.track(m.rMx.QUEST_SURVEY_DISPLAYED, N(_, n))
+  }), null == _ && o(), (0, r.jsx)(l.Y0X, {
     "data-migration-pending": true,
     transitionState: a,
     size: l.CgR.DYNAMIC,
@@ -97,8 +97,8 @@ function S(e) {
     parentComponent: "QuestSurveyModal",
     children: (0, r.jsxs)(l.MyZ, {
       activeSlide: b,
-      width: T,
-      onSlideReady: P,
+      width: I,
+      onSlideReady: R,
       children: [(0, r.jsxs)(l.Mi4, {
         id: 0,
         children: [(0, r.jsxs)(l.xBx, {
@@ -127,7 +127,7 @@ function S(e) {
           className: g.modalContent,
           children: n.choices.map(e => (0, r.jsx)(A, {
             choice: e,
-            onClick: R
+            onClick: P
           }, e.key))
         })]
       }), (0, r.jsxs)(l.Mi4, {
@@ -141,11 +141,11 @@ function S(e) {
             className: g.asset
           }), (0, r.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
-            children: m.intl.string(m.t.KTjjrG)
+            children: h.intl.string(h.t.KTjjrG)
           }), (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "text-muted",
-            children: m.intl.string(m.t.AvbrEM)
+            children: h.intl.string(h.t.AvbrEM)
           })]
         }), (0, r.jsx)(l.mzw, {
           "data-migration-pending": true,
@@ -153,11 +153,11 @@ function S(e) {
             className: g.closeButtonContainer,
             children: [(0, r.jsx)(l.Button, {
               variant: "primary",
-              text: m.intl.string(m.t.cpT0Cq),
+              text: h.intl.string(h.t.cpT0Cq),
               onClick: o
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,
-              style: S
+              style: T
             })]
           })
         })]
@@ -195,8 +195,8 @@ function C(e) {
     }))
   }, {
     onCloseCallback: () => {
-      let n = p.Z.getQuest(e.questId);
-      null != n && d.default.track(h.rMx.QUEST_SURVEY_DISMISSED, v(y({}, N(n, e.survey)), {
+      let n = _.Z.getQuest(e.questId);
+      null != n && d.default.track(m.rMx.QUEST_SURVEY_DISMISSED, v(y({}, N(n, e.survey)), {
         submitted: t
       }))
     }

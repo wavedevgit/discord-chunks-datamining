@@ -2,7 +2,7 @@
 /** chunk id: 897291, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -60,37 +60,37 @@ function v(e, t) {
   }), e
 }
 
-function I(e) {
+function S(e) {
   let {
     disabled: t,
     channel: i
   } = e, {
     analyticsLocations: b
-  } = (0, c.ZP)(l.Z.GIFT_BUTTON), O = (0, p.Ft)(i), {
-    Component: I,
-    events: T,
-    play: S
+  } = (0, c.ZP)(l.Z.GIFT_BUTTON), O = (0, _.Ft)(i), {
+    Component: S,
+    events: I,
+    play: T
   } = (0, a.$)(), {
     enabled: A
   } = d.G.useExperiment({
     location: "gift-button"
   }, {
     autoTrackExposure: false
-  }), C = i.type === m.d4z.DM, N = (0, _.ao)({
+  }), C = i.type === h.d4z.DM, N = (0, p.ao)({
     location: "gift-button",
     isGift: true,
     giftRecipient: O
   });
   if (t) return null;
-  let R = () => {
+  let P = () => {
     N && C && null != O ? (0, f.Z)({
       giftRecipient: O,
       analyticsLocations: b,
       analyticsObject: {
-        page: i.isPrivate() ? m.ZY5.DM_CHANNEL : m.ZY5.GUILD_CHANNEL,
-        section: m.jXE.CHANNEL_TEXT_AREA,
-        object: m.qAy.BUTTON_ICON,
-        objectType: m.AnalyticsObjectTypes.GIFT
+        page: i.isPrivate() ? h.ZY5.DM_CHANNEL : h.ZY5.GUILD_CHANNEL,
+        section: h.jXE.CHANNEL_TEXT_AREA,
+        object: h.qAy.BUTTON_ICON,
+        objectType: h.AnalyticsObjectTypes.GIFT
       }
     }) : A && C && null != O ? (0, s.ZDy)(async () => {
       let {
@@ -98,10 +98,10 @@ function I(e) {
       } = await n.e("59207").then(n.bind(n, 435626));
       return t => (0, r.jsx)(e, y({
         analyticsObject: {
-          page: m.ZY5.DM_CHANNEL,
-          section: m.jXE.CHANNEL_TEXT_AREA,
-          object: m.qAy.BUTTON_ICON,
-          objectType: m.AnalyticsObjectTypes.GIFT
+          page: h.ZY5.DM_CHANNEL,
+          section: h.jXE.CHANNEL_TEXT_AREA,
+          object: h.qAy.BUTTON_ICON,
+          objectType: h.AnalyticsObjectTypes.GIFT
         },
         analyticsLocations: b,
         giftRecipient: O
@@ -112,29 +112,29 @@ function I(e) {
       initialPlanId: null,
       analyticsLocations: b,
       analyticsObject: {
-        page: i.isPrivate() ? m.ZY5.DM_CHANNEL : m.ZY5.GUILD_CHANNEL,
-        section: m.jXE.CHANNEL_TEXT_AREA,
-        object: m.qAy.BUTTON_ICON,
-        objectType: m.AnalyticsObjectTypes.GIFT
+        page: i.isPrivate() ? h.ZY5.DM_CHANNEL : h.ZY5.GUILD_CHANNEL,
+        section: h.jXE.CHANNEL_TEXT_AREA,
+        object: h.qAy.BUTTON_ICON,
+        objectType: h.AnalyticsObjectTypes.GIFT
       }
     })
   };
   return (0, r.jsx)(o.u, {
     text: g.intl.string(g.t.sWtWDX),
-    children: (0, r.jsx)(h.Z, v(y({
+    children: (0, r.jsx)(m.Z, v(y({
       className: E.button,
       isActive: false,
       "aria-label": g.intl.string(g.t.Z1RnTk),
       "aria-haspopup": "dialog",
       onClick: () => {
-        R(), S()
+        P(), T()
       }
-    }, T), {
-      children: (0, r.jsx)(I, {
+    }, I), {
+      children: (0, r.jsx)(S, {
         size: "refresh_sm",
         color: "currentColor"
       })
     }))
   })
 }
-let T = Chunk473749.memo(I)
+let I = Chunk473749.memo(S)

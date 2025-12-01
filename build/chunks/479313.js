@@ -2,14 +2,14 @@
 /** chunk id: 479313, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $l: () => P,
+  $l: () => R,
   Fc: () => C,
   G1: () => O,
-  JR: () => S,
+  JR: () => T,
   U$: () => A,
-  ZP: () => D,
-  e7: () => I,
-  wv: () => T,
+  ZP: () => w,
+  e7: () => S,
+  wv: () => I,
   yK: () => v
 }), require("./35282.js");
 var Chunk473749 = require("./473749.js"),
@@ -25,13 +25,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk70956 = require("./70956.js"),
   Chunk765104 = require("./765104.js"),
   Chunk981631 = require("./981631.js");
-let m = 75,
+let h = 75,
   g = 50,
   E = 30 * Chunk70956.Z.Millis.SECOND,
   b = null;
 async function y(e, t) {
   let n, r;
-  if (!p.Z.shouldFetch(e, t)) return;
+  if (!_.Z.shouldFetch(e, t)) return;
   let i = Date.now();
   l.Z.dispatch({
     type: "REQUEST_CHANNEL_SUMMARY",
@@ -41,7 +41,7 @@ async function y(e, t) {
   });
   try {
     let n = await s.tn.get({
-      url: h.Z5c.CHANNEL_SUMMARY(e, t),
+      url: m.Z5c.CHANNEL_SUMMARY(e, t),
       rejectWithError: false
     });
     r = null == n ? true : n.body
@@ -60,7 +60,7 @@ async function y(e, t) {
 async function O(e) {
   var t, n;
   let r, i;
-  if (!p.Z.shouldFetch(e)) return;
+  if (!_.Z.shouldFetch(e)) return;
   let o = Date.now();
   l.Z.dispatch({
     type: "REQUEST_CHANNEL_SUMMARIES",
@@ -69,14 +69,14 @@ async function O(e) {
   });
   try {
     i = await s.tn.get({
-      url: h.Z5c.CHANNEL_SUMMARIES(e),
+      url: m.Z5c.CHANNEL_SUMMARIES(e),
       rejectWithError: false
     })
   } catch (e) {
     r = new c.Hx(e)
   }
   let u = (null == i || null == (t = i.body) ? true : t.summaries) instanceof Array ? i.body.summaries : null != (n = null == i ? true : i.body) ? n : [];
-  u = a().takeRight(u, m), l.Z.dispatch({
+  u = a().takeRight(u, h), l.Z.dispatch({
     type: "RECEIVE_CHANNEL_SUMMARIES",
     channelId: e,
     summaries: u,
@@ -94,13 +94,13 @@ function v(e, t) {
   })
 }
 
-function I() {
+function S() {
   Chunk570140.Z.dispatch({
     type: "TOGGLE_TOPICS_BAR"
   })
 }
 
-function T(e, t) {
+function I(e, t) {
   null != e && null != t && y(e, t), l.Z.dispatch({
     type: "SET_SELECTED_SUMMARY",
     channelId: e,
@@ -108,7 +108,7 @@ function T(e, t) {
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   l.Z.dispatch({
     type: "UPDATE_VISIBLE_MESSAGES",
     topVisibleMessage: null != e ? e : null,
@@ -156,7 +156,7 @@ async function N(e) {
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   e = null != e ? e : [];
   let a = Date.now();
-  if (0 === (e = e.concat(p.Z.defaultChannelIds({
+  if (0 === (e = e.concat(_.Z.defaultChannelIds({
       withQuickSwitcher: r,
       withChannelAffinities: i
     })).filter(e => {
@@ -164,7 +164,7 @@ async function N(e) {
       return (0, u.Lp)(t, false, true)
     }).filter(e => {
       let t = Date.now(),
-        n = p.Z.status(e);
+        n = _.Z.status(e);
       if (null == n ? true : n.fetching) returnfalse;
       let r = null == n ? true : n.lastReceivedAt;
       return null == r || t - r > E
@@ -176,7 +176,7 @@ async function N(e) {
   });
   try {
     n = await s.tn.post({
-      url: h.Z5c.USER_SUMMARIES,
+      url: m.Z5c.USER_SUMMARIES,
       body: {
         channel_ids: e
       },
@@ -198,7 +198,7 @@ async function N(e) {
   })
 }
 
-function R() {
+function P() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [],
     t = (0, Chunk399606.e7)([Chunk38618.Z], () => Chunk38618.Z.isConnected()),
     n = Chunk473749.useMemo(() => module.join(","), [module]);
@@ -212,10 +212,10 @@ function R() {
     }
   }, [require, exports])
 }
-async function P(e) {
+async function R(e) {
   try {
     await s.tn.del({
-      url: h.Z5c.CHANNEL_SUMMARY(e.channelId, e.id),
+      url: m.Z5c.CHANNEL_SUMMARY(e.channelId, e.id),
       rejectWithError: false
     }), l.Z.dispatch({
       type: "DELETE_SUMMARY",
@@ -225,10 +225,10 @@ async function P(e) {
     throw new c.Hx(e)
   }
 }
-let D = {
+let w = {
   setSummaryFeedback: A,
-  updateVisibleMessages: S,
-  setSelectedSummary: T,
+  updateVisibleMessages: T,
+  setSelectedSummary: I,
   setHighlightedSummary: v,
   fetchSummaries: O,
   fetchSummariesBulk: N,
@@ -236,7 +236,7 @@ let D = {
     let {
       channelIds: t = []
     } = e;
-    return R(t), (0, o.Wu)([p.Z], () => p.Z.topSummaries(), [])
+    return P(t), (0, o.Wu)([_.Z], () => _.Z.topSummaries(), [])
   },
-  deleteSummary: P
+  deleteSummary: R
 }

@@ -2,7 +2,7 @@
 /** chunk id: 66511, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -46,26 +46,26 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = () => {
+let _ = () => {
     Chunk626135.default.track(Chunk981631.rMx.MODAL_DISMISSED, {
       type: Chunk592286.N4
     })
   },
-  h = e => {
+  m = e => {
     a.default.track(c.rMx.OPEN_MODAL, {
       type: l.N4,
       guild_id: e
     })
   },
-  m = {
+  h = {
     openMemberVerificationModal(e, t, a) {
       if (__OVERLAY__) return;
-      h(e);
+      m(e);
       let c = async t => {
         await o.ZP.submitVerificationForm(e, t)
       };
@@ -73,7 +73,7 @@ let p = () => {
         let {
           default: t
         } = await Promise.all([n.e("44686"), n.e("74240")]).then(n.bind(n, 645264));
-        return n => (0, r.jsx)(t, _(d({}, n), {
+        return n => (0, r.jsx)(t, p(d({}, n), {
           guildId: e,
           inviteKey: a,
           onComplete: c,
@@ -81,28 +81,28 @@ let p = () => {
             let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
             if (!e)
               if (s.rb.getState().hasUnsubmittedChanges) return void(0, s.PE)(true);
-              else p();
+              else _();
             await n.onClose()
           }
         }))
       }, {
         modalKey: l.Pn,
         onCloseRequest: () => {
-          p(), s.rb.getState().hasUnsubmittedChanges ? (0, s.PE)(true) : (0, i.Mr)(l.Pn)
+          _(), s.rb.getState().hasUnsubmittedChanges ? (0, s.PE)(true) : (0, i.Mr)(l.Pn)
         },
         onCloseCallback: t
       })
     },
     closeMemberVerificationModal() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      module || p(), (0, Chunk952265.Mr)(Chunk592286.Pn)
+      module || _(), (0, Chunk952265.Mr)(Chunk592286.Pn)
     },
     openMemberVerificationPreviewModal(e) {
       (0, i.ZD)(async () => {
         let {
           default: t
         } = await Promise.all([n.e("44686"), n.e("74240")]).then(n.bind(n, 645264));
-        return n => (0, r.jsx)(t, _(d({}, n), {
+        return n => (0, r.jsx)(t, p(d({}, n), {
           guildId: e,
           isPreview: true
         }))

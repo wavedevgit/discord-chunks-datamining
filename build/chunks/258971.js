@@ -2,12 +2,12 @@
 /** chunk id: 258971, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Uc: () => p,
-  Xh: () => h,
+  Uc: () => _,
+  Xh: () => m,
   aQ: () => d,
   m_: () => u,
   xF: () => f,
-  z8: () => _
+  z8: () => p
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk828700 = require("./828700.js"),
   Chunk972959 = require("./972959.js"),
@@ -23,14 +23,14 @@ let d = (0, Chunk972959.H)(() => ({}));
 var f = function(e) {
   return e.EXTERNAL = "External", e.KEYBOARD_SHORTCUT = "Keyboard Shortcut", e.APPLICATION_DIRECTORY_URL = "Application Directory URL", e.APPLICATION_MESSAGE_EMBED = "Application Message Embed", e.APPLICATION_DIRECTORY_UPSELL_MODAL = "Application Directory Upsell Modal", e.GUILD_HEADER_POPOUT = "Guild Header Popout", e.GUILD_SETTINGS = "Guild Settings", e.GUILD_INTEGRATION_SETTINGS = "Guild Integration Settings", e.GUILD_CONTEXT_MENU = "Guild Context Menu", e.OAUTH2_EMBED = "OAuth2 Embed", e.GLOBAL_DISCOVERY_BUTTON = "Global Discovery Button", e.GLOBAL_DISCOVERY_SIDEBAR = "Global Discovery Sidebar", e
 }({});
-let _ = (0, Chunk972959.H)(() => ({
+let p = (0, Chunk972959.H)(() => ({
   sessionId: null,
   guildId: null,
   entrypoint: null,
   trackedOpenedFromExternalEntrypoint: false
 }));
 
-function p() {
+function _() {
   let {
     location: {
       state: e
@@ -39,7 +39,7 @@ function p() {
   return null == module ? true : module.previousView
 }
 
-function h() {
+function m() {
   var e, t, n;
   let {
     location: {
@@ -79,22 +79,22 @@ function h() {
     type: "category",
     categoryId: f
   };
-  let _ = (0, Chunk828700.LX)(Chunk972959, {
+  let p = (0, Chunk828700.LX)(Chunk972959, {
       path: [Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(":applicationId"), Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(":applicationId", ":section"), Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId")],
       exact: true
     }),
     {
-      applicationId: p,
-      section: h,
-      skuId: m
-    } = null != (t = null == _ ? true : _.params) ? exports : {};
-  if (null != _ && null != p) {
-    let e = null == (n = Chunk370210.Z.getApplication(p)) ? true : require.name;
+      applicationId: _,
+      section: m,
+      skuId: h
+    } = null != (t = null == p ? true : p.params) ? exports : {};
+  if (null != p && null != _) {
+    let e = null == (n = Chunk370210.Z.getApplication(_)) ? true : require.name;
     return {
       type: "application",
-      applicationId: p,
+      applicationId: _,
       applicationName: module,
-      section: null != h ? h : null != m ? Chunk979007.GlobalDiscoveryAppsSections.STORE : Chunk979007.GlobalDiscoveryAppsSections.ABOUT
+      section: null != m ? m : null != h ? Chunk979007.GlobalDiscoveryAppsSections.STORE : Chunk979007.GlobalDiscoveryAppsSections.ABOUT
     }
   }
 }

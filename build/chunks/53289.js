@@ -23,17 +23,17 @@ function f(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : window,
     i = (0, a.e7)([s.Z], () => s.Z.keyboardModeEnabled),
     f = (0, o.Z)(),
-    [_, p] = r.useState(false),
-    h = (0, l.Aq)();
+    [p, _] = r.useState(false),
+    m = (0, l.Aq)();
   return r.useEffect(() => {
     if (t) return n.addEventListener("blur", e), () => n.removeEventListener("blur", e);
 
     function e() {
-      f && (h.dispatch(u.CkL.POPOUT_CLOSE), c.S.dispatch(u.CkL.CONTEXT_MENU_CLOSE))
+      f && (m.dispatch(u.CkL.POPOUT_CLOSE), c.S.dispatch(u.CkL.CONTEXT_MENU_CLOSE))
     }
-  }, [n, f, t, h]), r.useEffect(() => {
+  }, [n, f, t, m]), r.useEffect(() => {
     var r;
-    if (i || !_ || !t) return;
+    if (i || !p || !t) return;
     let {
       current: a
     } = e, o = f;
@@ -47,5 +47,5 @@ function f(e, t) {
     return null == a || a.addEventListener("focusout", s), (null == (r = n.document.activeElement) ? true : r.tagName) === "IFRAME" || o || null == a || a.focus(), () => {
       null == a || a.removeEventListener("focusout", s), o = true
     }
-  }, [t, _, i, e, n, f]), p
+  }, [t, p, i, e, n, f]), _
 }

@@ -18,11 +18,11 @@ function u(e) {
     context: n,
     launchingComponentId: u,
     onSubmissionComplete: d
-  } = e, f = (0, s.q)(t), _ = (0, i.e7)([o.ZP], () => o.ZP.getLaunchState(t, "channel" === n.type ? n.channel.id : true)), p = (0, i.e7)([l.Z], () => l.Z.isLaunchingFrame(t)), h = null != f && (0, c.g)(f) ? p : null != _ && _.isLaunching && _.componentId === u, m = (0, a.Z)(h);
+  } = e, f = (0, s.q)(t), p = (0, i.e7)([o.ZP], () => o.ZP.getLaunchState(t, "channel" === n.type ? n.channel.id : true)), _ = (0, i.e7)([l.Z], () => l.Z.isLaunchingFrame(t)), m = null != f && (0, c.g)(f) ? _ : null != p && p.isLaunching && p.componentId === u, h = (0, a.Z)(m);
   return r.useEffect(() => {
-    !h && m && (null == d || d())
-  }, [h, m, d]), {
-    submitting: h,
-    wasSubmitting: null != m ? m : null
+    !m && h && (null == d || d())
+  }, [m, h, d]), {
+    submitting: m,
+    wasSubmitting: null != h ? h : null
   }
 }

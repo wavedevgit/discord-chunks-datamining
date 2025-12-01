@@ -27,7 +27,7 @@ let E = () => {
     } = (0, Chunk442837.cj)([Chunk151662.Z], () => Chunk151662.Z.getEmailSettings());
 
   function E(e) {
-    (0, c.pR)(p.$Z.FAMILY_CENTER_DIGEST, e)
+    (0, c.pR)(_.$Z.FAMILY_CENTER_DIGEST, e)
   }
   return Chunk473749.useEffect(() => {
     null == require && (0, Chunk960412.Y7)()

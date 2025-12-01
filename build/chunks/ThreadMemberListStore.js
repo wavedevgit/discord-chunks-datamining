@@ -2,7 +2,7 @@
 /** chunk id: 159299, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -41,7 +41,7 @@ class O {
         displayName: r,
         canViewChannel: i
       }
-    }).sort((e, t) => m.default.compare(e.userId, t.userId)).sortBy(e => e.displayName).forEach(e => {
+    }).sort((e, t) => h.default.compare(e.userId, t.userId)).sortBy(e => e.displayName).forEach(e => {
       this.addUser(e.userId, e.sectionId, e.displayName, e.canViewChannel, true)
     })
   }
@@ -65,7 +65,7 @@ class O {
   }
   addUser(e, t, n, r, i) {
     this.allUserIds.add(e);
-    let a = _.default.getUser(e);
+    let a = p.default.getUser(e);
     if (null == a || "" === a.username) return;
     t in this.sections || (this.sections[t] = {
       sectionId: t,
@@ -117,17 +117,17 @@ class O {
   calculateNewState(e, t) {
     var n, r;
     let i = c.ZP.getMember(this.guildId, e),
-      a = _.default.getUser(e),
-      o = _.default.getCurrentUser(),
+      a = p.default.getUser(e),
+      o = p.default.getCurrentUser(),
       s = (null == a ? true : a.id) === (null == o ? true : o.id) ? f.Z.getStatus() : d.Z.getStatus(e, this.guildId),
-      l = null != a && null != t && h.BT({
+      l = null != a && null != t && m.BT({
         permission: E.Plq.VIEW_CHANNEL,
         user: a,
         context: t
       }),
       u = s !== E.Skl.OFFLINE && s !== E.Skl.INVISIBLE && s !== E.Skl.UNKNOWN ? null != (n = null == i ? true : i.hoistRoleId) ? n : "online" : "offline",
-      p = null != (r = null == i ? true : i.nick) ? r : g.ZP.getName(a);
-    return [u, null == p ? true : p.toLowerCase(), l]
+      _ = null != (r = null == i ? true : i.nick) ? r : g.ZP.getName(a);
+    return [u, null == _ ? true : _.toLowerCase(), l]
   }
   constructor(e, t, n) {
     b(this, "guildId", true), b(this, "parentId", true), b(this, "threadId", true), b(this, "version", true), b(this, "sections", true), b(this, "allUserIds", true), this.guildId = e, this.parentId = t, this.threadId = n, this.version = 0, this.sections = {}, this.allUserIds = new Set
@@ -138,7 +138,7 @@ function v() {
   y = {}
 }
 
-function I(e) {
+function S(e) {
   var t, n;
   if (!(e.id in y)) returnfalse;
   null == (t = e.addedMembers) || t.forEach(t => {
@@ -149,7 +149,7 @@ function I(e) {
   }), null == (n = e.removedMemberIds) || n.forEach(t => y[e.id].removeUserId(t))
 }
 
-function T(e) {
+function I(e) {
   let {
     threadId: t,
     guildId: n,
@@ -158,7 +158,7 @@ function T(e) {
   null != a && (y[t] = new O(n, a, t), y[t].rebuild(r.map(e => e.user_id)))
 }
 
-function S(e) {
+function T(e) {
   return N(e.user.id)
 }
 
@@ -185,18 +185,18 @@ function N(e) {
   return t
 }
 
-function R(e) {
+function P(e) {
   let {
     presences: t
   } = e, n = a()(t).map(e => {
     var t;
     return null == (t = e.user) ? true : t.id
-  }).filter(p.lm).uniq().value(), r = false;
+  }).filter(_.lm).uniq().value(), r = false;
   for (let e in y) y[e].updateMultipleUserIds(n) && (r = true);
   return r
 }
 
-function P(e) {
+function R(e) {
   let {
     chunks: t
   } = e, n = false;
@@ -211,7 +211,7 @@ function P(e) {
   return n
 }
 
-function D(e) {
+function w(e) {
   var t;
   let {
     channel: n
@@ -220,7 +220,7 @@ function D(e) {
   delete y[n.id]
 }
 
-function w(e) {
+function D(e) {
   let {
     channel: t
   } = e;
@@ -228,7 +228,7 @@ function w(e) {
   delete y[t.id]
 }
 
-function L(e) {
+function x(e) {
   let {
     guildId: t
   } = e, n = false;
@@ -236,14 +236,14 @@ function L(e) {
   return n
 }
 
-function x(e) {
+function L(e) {
   let {
     channels: t
   } = e, n = new Set(t.map(e => e.id)), r = false;
   for (let e in y) n.has(y[e].parentId) && (y[e].rebuild(), r = true);
   return r
 }
-class M extends(r = Chunk442837.ZP.Store) {
+class j extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk271383.ZP, Chunk797316.Z, Chunk158776.Z, Chunk885110.Z, Chunk594174.default), this.syncWith([Chunk797316.Z], () => {
       let e = Chunk797316.Z.getSubscribedThreadIds(),
@@ -271,22 +271,22 @@ class M extends(r = Chunk442837.ZP.Store) {
     return null != (i = null == o ? true : o.canViewChannel) && i
   }
 }
-b(M, "displayName", "ThreadMemberListStore");
-let k = new M(Chunk570140.Z, {
+b(j, "displayName", "ThreadMemberListStore");
+let M = new j(Chunk570140.Z, {
   CONNECTION_OPEN: v,
-  THREAD_MEMBERS_UPDATE: I,
-  THREAD_UPDATE: D,
-  THREAD_DELETE: w,
-  CHANNEL_UPDATES: x,
-  THREAD_MEMBER_LIST_UPDATE: T,
-  USER_UPDATE: S,
+  THREAD_MEMBERS_UPDATE: S,
+  THREAD_UPDATE: w,
+  THREAD_DELETE: D,
+  CHANNEL_UPDATES: L,
+  THREAD_MEMBER_LIST_UPDATE: I,
+  USER_UPDATE: T,
   PRESENCE_UPDATES: A,
-  GUILD_MEMBER_ADD: S,
-  GUILD_MEMBER_UPDATE: S,
-  GUILD_MEMBER_REMOVE: S,
-  PRESENCES_REPLACE: R,
-  GUILD_MEMBERS_CHUNK_BATCH: P,
-  GUILD_ROLE_UPDATE: L,
-  GUILD_ROLE_DELETE: L,
+  GUILD_MEMBER_ADD: T,
+  GUILD_MEMBER_UPDATE: T,
+  GUILD_MEMBER_REMOVE: T,
+  PRESENCES_REPLACE: P,
+  GUILD_MEMBERS_CHUNK_BATCH: R,
+  GUILD_ROLE_UPDATE: x,
+  GUILD_ROLE_DELETE: x,
   PASSIVE_UPDATE_V2: C
 })

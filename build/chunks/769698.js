@@ -15,9 +15,9 @@ var Chunk126182 = require("./126182.js"),
   Chunk40375 = require("./40375.js"),
   Chunk65183 = require("./65183.js"),
   Chunk799995 = require("./799995.js"),
-  p = Chunk65183.List,
-  h = Chunk65183.Record,
-  m = Chunk65183.Repeat;
+  _ = Chunk65183.List,
+  m = Chunk65183.Record,
+  h = Chunk65183.Repeat;
 module.exports = function(e) {
   function t() {
     return e.apply(this, arguments) || this
@@ -88,16 +88,16 @@ module.exports = function(e) {
   }, t.createFromText = function(e) {
     var n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : /\r\n?|\n/g,
       r = e.split(n).map(function(e) {
-        return e = _(e), new(d("draft_tree_data_support") ? s : o)({
+        return e = p(e), new(d("draft_tree_data_support") ? s : o)({
           key: u(),
           text: e,
           type: "unstyled",
-          characterList: p(m(a.EMPTY, e.length))
+          characterList: _(h(a.EMPTY, e.length))
         })
       });
     return t.createFromBlockArray(r)
   }, t
-}(h({
+}(m({
   entityMap: null,
   blockMap: null,
   selectionBefore: null,

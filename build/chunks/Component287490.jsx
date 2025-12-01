@@ -2,7 +2,7 @@
 /** chunk id: 287490, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./388685.js"), require("./953529.js"), require("./49124.js"), require("./539854.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,7 +33,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,14 +46,14 @@ function I(e) {
   return e
 }
 
-function T() {
+function I() {
   let {
     experiments: e,
     overridesInfo: t
   } = (0, Chunk667344.Qb)(), {
     experiments: n,
     overridesInfo: a
-  } = (0, Chunk493075.sI)(), o = Chunk473749.useMemo(() => I({}, require, module), [require, module]), s = Chunk473749.useMemo(() => I({}, Chunk392711, exports), [Chunk392711, exports]), [c, u] = Chunk473749.useState(""), d = (0, Chunk878209.Ro)((0, Chunk878209.Tc)((0, Chunk878209.Cg)(o), Chunk442837), Chunk922699);
+  } = (0, Chunk493075.sI)(), o = Chunk473749.useMemo(() => S({}, require, module), [require, module]), s = Chunk473749.useMemo(() => S({}, Chunk392711, exports), [Chunk392711, exports]), [c, u] = Chunk473749.useState(""), d = (0, Chunk878209.Ro)((0, Chunk878209.Tc)((0, Chunk878209.Cg)(o), Chunk442837), Chunk922699);
   return (0, Chunk54381.jsxs)("div", {
     children: [(0, Chunk54381.jsx)(Chunk481060.E1j, {
       placeholder: "Search experiments",
@@ -61,7 +61,7 @@ function T() {
       onChange: Chunk492435,
       onClear: () => Chunk492435("")
     }), Chunk389494.length > 0 ? Chunk389494.map(e => {
-      let t = "guild" === e.experiment.kind ? A : S;
+      let t = "guild" === e.experiment.kind ? A : T;
       return (0, r.jsx)(t, {
         experiment: e.experiment,
         experimentId: e.id,
@@ -78,15 +78,15 @@ function T() {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     experiment: t,
     experimentId: n,
     overrideInfo: a,
-    defaultOpen: _
-  } = e, [h, g] = i.useState(_), [b, v] = i.useState(false), I = i.useCallback(() => {
+    defaultOpen: p
+  } = e, [m, g] = i.useState(p), [b, v] = i.useState(false), S = i.useCallback(() => {
     g(e => !e)
-  }, []), T = (0, s.e7)([m.default], () => m.default.getId()), S = (0, p.qD)(t, T), A = (0, p.aN)(t, T), C = (0, s.Wu)([f.Z], () => o().sortBy(f.Z.getRecentExposures(y.xY.USER, n), e => {
+  }, []), I = (0, s.e7)([h.default], () => h.default.getId()), T = (0, _.qD)(t, I), A = (0, _.aN)(t, I), C = (0, s.Wu)([f.Z], () => o().sortBy(f.Z.getRecentExposures(y.xY.USER, n), e => {
     let [t, n] = e;
     return -n
   }).map(e => {
@@ -100,9 +100,9 @@ function S(e) {
         type: l.ToastType.SUCCESS
       }), e.preventDefault(), e.stopPropagation()
     })
-  }, [n]), R = (0, r.jsx)(l.kL8, {
+  }, [n]), P = (0, r.jsx)(l.kL8, {
     "aria-label": "Toggle visibility",
-    onClick: I,
+    onClick: S,
     children: (0, r.jsxs)(l.Text, {
       variant: "text-md/medium",
       className: O.title,
@@ -128,17 +128,17 @@ function S(e) {
       })]
     })
   });
-  if (!h) return (0, r.jsx)("div", {
+  if (!m) return (0, r.jsx)("div", {
     className: O.group,
-    children: R
+    children: P
   });
-  let P = "";
-  return P = t.system === u.I.LEGACY ? "Currently assigned to bucket ".concat(null != S ? S : y.NZ.NOT_ELIGIBLE) : null != S ? "Currently assigned to variant ".concat(S) : "Currently unassigned", (0, r.jsxs)("div", {
+  let R = "";
+  return R = t.system === u.I.LEGACY ? "Currently assigned to bucket ".concat(null != T ? T : y.NZ.NOT_ELIGIBLE) : null != T ? "Currently assigned to variant ".concat(T) : "Currently unassigned", (0, r.jsxs)("div", {
     className: O.group,
-    children: [R, (0, r.jsx)("div", {
+    children: [P, (0, r.jsx)("div", {
       children: (0, r.jsx)(d.y, {
         label: t.system === u.I.LEGACY ? "Bucket Override" : "Variant Override",
-        description: P,
+        description: R,
         experiment: t,
         experimentId: n,
         overrideInfo: a
@@ -194,9 +194,9 @@ function A(e) {
     experiment: t,
     experimentId: n,
     overrideInfo: a
-  } = e, [c, u] = i.useState(null != a), [_, p] = i.useState(false), h = i.useCallback(() => {
+  } = e, [c, u] = i.useState(null != a), [p, _] = i.useState(false), m = i.useCallback(() => {
     u(e => !e)
-  }, []), m = (0, s.e7)([f.Z], () => f.Z.getLoadedGuildExperiment(n)), E = (0, s.Wu)([f.Z], () => o().sortBy(f.Z.getRecentExposures(y.xY.GUILD, n), e => {
+  }, []), h = (0, s.e7)([f.Z], () => f.Z.getLoadedGuildExperiment(n)), E = (0, s.Wu)([f.Z], () => o().sortBy(f.Z.getRecentExposures(y.xY.GUILD, n), e => {
     let [t, n] = e;
     return -n
   }).map(e => {
@@ -214,8 +214,8 @@ function A(e) {
     }
     let a = o()(t).keys().map(Number).sort().map(e => "".concat(t[e], " guilds in bucket ").concat(e)).join(", ");
     return [r.join("\n"), a]
-  }), I = (0, r.jsx)(l.P3F, {
-    onClick: h,
+  }), S = (0, r.jsx)(l.P3F, {
+    onClick: m,
     children: (0, r.jsxs)(l.Text, {
       variant: "text-md/medium",
       className: O.title,
@@ -235,7 +235,7 @@ function A(e) {
   });
   return c ? (0, r.jsxs)("div", {
     className: O.group,
-    children: [I, (0, r.jsx)(d.y, {
+    children: [S, (0, r.jsx)(d.y, {
       label: "Bucket Override",
       description: "Current Assignments: ".concat(v),
       experiment: t,
@@ -243,12 +243,12 @@ function A(e) {
       overrideInfo: a
     }), (0, r.jsx)("div", {
       className: O.description,
-      children: null == m ? (0, r.jsx)(l.Text, {
+      children: null == h ? (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
       }) : null
-    }), _ ? (0, r.jsxs)("div", {
+    }), p ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(l.Text, {
         variant: "text-lg/medium",
         className: O.debugTitle,
@@ -264,7 +264,7 @@ function A(e) {
       }), (0, r.jsx)(l.Text, {
         variant: "code",
         className: O.pre,
-        children: null == m ? "None" : JSON.stringify(m, true, 2)
+        children: null == h ? "None" : JSON.stringify(h, true, 2)
       }), (0, r.jsx)(l.Text, {
         variant: "text-lg/medium",
         className: O.debugTitle,
@@ -287,13 +287,13 @@ function A(e) {
       children: (0, r.jsx)(l.Avr, {
         variant: "secondary",
         text: "More Details \xbb",
-        onClick: () => p(true)
+        onClick: () => _(true)
       })
     }), (0, r.jsx)(l.izJ, {
       className: O.divider
     })]
   }) : (0, r.jsx)("div", {
     className: O.group,
-    children: I
+    children: S
   })
 }

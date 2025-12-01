@@ -2,7 +2,7 @@
 /** chunk id: 719801, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -41,14 +41,14 @@ function d() {
   c = new Map
 }
 let f = [];
-class _ extends(r = Chunk442837.ZP.Store) {
+class p extends(r = Chunk442837.ZP.Store) {
   getRecentMessageAuthorIds(e) {
     var t;
     return null != (t = c.get(e)) ? t : f
   }
 }
-s(_, "displayName", "SearchRecentMessageStore");
-let p = new _(Chunk570140.Z, {
+s(p, "displayName", "SearchRecentMessageStore");
+let _ = new p(Chunk570140.Z, {
   SEARCH_MESSAGES_SUCCESS: u,
   SEARCH_RECENT_MESSAGES_CLEAR: d,
   CONNECTION_OPEN: d

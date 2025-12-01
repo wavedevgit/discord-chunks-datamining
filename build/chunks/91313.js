@@ -2,10 +2,10 @@
 /** chunk id: 91313, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  HZ: () => h,
+  HZ: () => m,
   IB: () => E,
-  cr: () => p,
-  cu: () => m,
+  cr: () => _,
+  cu: () => h,
   lk: () => b,
   tM: () => g,
   xi: () => y,
@@ -21,14 +21,14 @@ var Chunk911969 = require("./911969.js"),
   Chunk925994 = require("./925994.js"),
   Chunk887490 = require("./887490.js"),
   Chunk42530 = require("./42530.js");
-let _ = RegExp("([\\p{L}\\p{N}\\p{sc=Deva}\\p{sc=Thai}_-]+):", "gu");
+let p = RegExp("([\\p{L}\\p{N}\\p{sc=Deva}\\p{sc=Thai}_-]+):", "gu");
 
-function p(e) {
+function _(e) {
   let t = d.bN.richValue(e)[0];
   return null == t || "applicationCommand" !== t.type ? null : [t, f.YD]
 }
 
-function h(e) {
+function m(e) {
   var t, n;
   if (null == e.selection) return null;
   let r = null != (t = d.bN.above(e, {
@@ -41,8 +41,8 @@ function h(e) {
   })) ? n : null
 }
 
-function m(e) {
-  let t = p(e),
+function h(e) {
+  let t = _(e),
     n = [],
     r = null == t ? true : t[0].children;
   if (null != r)
@@ -53,7 +53,7 @@ function m(e) {
 function g(e, t, n) {
   let r = {};
   if (null == t.options) return {};
-  let i = p(e),
+  let i = _(e),
     a = Object.fromEntries(t.options.map(e => [e.name, e])),
     o = null == i ? true : i[0].children;
   if (null != o) {
@@ -120,7 +120,7 @@ function y(e, t, n, r, s) {
   let [c] = r, u = a.Z.getActiveCommand(n), d = null == u || null == (l = u.options) ? true : l.find(e => e.name === c.optionName);
   if (null == d) return;
   let f = E(e, d, c, n),
-    _ = o.f({
+    p = o.f({
       option: d,
       content: f,
       guildId: t,
@@ -129,16 +129,16 @@ function y(e, t, n, r, s) {
     });
   return i.g7(n, {
     [c.optionName]: {
-      lastValidationResult: _
+      lastValidationResult: p
     }
-  }), _
+  }), p
 }
 
 function O(e, t) {
   if (null == t.options || 0 === t.options.length) return [];
   let n = d.bN.richValue(e),
     r = [],
-    i = new Set(m(e)),
+    i = new Set(h(e)),
     a = {},
     o = new Set;
   for (let e of t.options) a[e.displayName] = e, i.has(e.name) || o.add(e.displayName);
@@ -147,36 +147,36 @@ function O(e, t) {
     let i = n[t];
     if ("line" === i.type || "applicationCommand" === i.type)
       for (let c = 0; c < i.children.length; c++) {
-        let f, p = i.children[c],
-          h = [t, c];
-        if (d.aj.isType(p, "applicationCommandOption")) {
+        let f, _ = i.children[c],
+          m = [t, c];
+        if (d.aj.isType(_, "applicationCommandOption")) {
           if (null != s) {
             var l;
-            s.valueRange.focus = null != (l = d.bN.before(e, h)) ? l : d.bN.start(e, []), s.text = (0, u.sk)(n, {
+            s.valueRange.focus = null != (l = d.bN.before(e, m)) ? l : d.bN.start(e, []), s.text = (0, u.sk)(n, {
               mode: "raw",
               range: s.valueRange
             }).trim(), r.push(s), s = null
           }
           continue
         }
-        if (d.LC.isText(p))
-          for (_.lastIndex = 0; null != (f = _.exec(p.text));) {
-            if (0 !== f.index && null == p.text.charAt(f.index - 1).match(/(\t|\s)/)) continue;
+        if (d.LC.isText(_))
+          for (p.lastIndex = 0; null != (f = p.exec(_.text));) {
+            if (0 !== f.index && null == _.text.charAt(f.index - 1).match(/(\t|\s)/)) continue;
             let e = f[1];
             if (!o.has(e)) continue;
             o.delete(e);
             let t = a[e];
             if (null == t) continue;
             let i = {
-                path: h,
+                path: m,
                 offset: f.index
               },
               l = {
-                path: h,
+                path: m,
                 offset: i.offset + f[0].length
               },
               c = {
-                path: h,
+                path: m,
                 offset: l.offset
               },
               d = {

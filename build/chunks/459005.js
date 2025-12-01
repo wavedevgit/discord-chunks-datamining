@@ -4,7 +4,7 @@
 require.d(exports, {
   JV: () => s,
   aA: () => l,
-  mA: () => _,
+  mA: () => p,
   ug: () => o
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js");
@@ -62,7 +62,7 @@ let c = Object.freeze({
     fired_due_to_max_timeout: 0,
     skip_idle_callback_due_to_backgrounded: 0
   });
-class _ {
+class p {
   reset() {
     this._timeTracking = (0, Chunk392711.cloneDeep)(c), this._timingStats = (0, Chunk392711.cloneDeep)(u), this._measurements = (0, Chunk392711.cloneDeep)(d), this._eventCounts = (0, Chunk392711.cloneDeep)(f)
   }

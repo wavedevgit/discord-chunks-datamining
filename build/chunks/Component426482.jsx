@@ -23,10 +23,10 @@ function d(e) {
     application: a,
     size: u,
     className: d
-  } = e, [f, _] = i.useState(false), p = null != (t = null == a ? true : a.name) ? t : n.name, h = null != n.firstReleaseDate ? new Date(n.firstReleaseDate) : null, m = () => {
-    _(true)
+  } = e, [f, p] = i.useState(false), _ = null != (t = null == a ? true : a.name) ? t : n.name, m = null != n.firstReleaseDate ? new Date(n.firstReleaseDate) : null, h = () => {
+    p(true)
   }, g = () => {
-    _(false)
+    p(false)
   };
   return null == n.coverImageUrl || f ? (0, r.jsxs)("div", {
     className: o()(c.fallback, d),
@@ -36,21 +36,21 @@ function d(e) {
       variant: 1 === u ? "text-md/medium" : "text-xs/medium",
       color: "always-white",
       lineClamp: 1 === u ? 4 : 3,
-      children: p
+      children: _
     }), (0, r.jsx)("div", {
       className: c.spacer
     }), (0, r.jsx)(s.xvT, {
       variant: 1 === u ? "text-sm/normal" : "text-xxs/normal",
       color: "always-white",
-      children: null != h ? "(".concat(null == h ? true : h.getFullYear(), ")") : null
+      children: null != m ? "(".concat(null == m ? true : m.getFullYear(), ")") : null
     })]
   }) : (0, r.jsx)("img", {
     className: d,
     src: n.coverImageUrl,
     alt: l.intl.formatToPlainString(l.t["3ev90U"], {
-      game: p
+      game: _
     }),
-    onError: m,
+    onError: h,
     onLoad: g
   })
 }

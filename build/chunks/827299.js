@@ -52,15 +52,15 @@ function f(e, t) {
   return Array.isArray(e) && Array.isArray(t) ? (0, o.E)(e, t) : Object.is(e, t)
 }
 
-function _(e) {
+function p(e) {
   return e instanceof c && (e.status >= 500 || 429 === e.status)
 }
-let p = 5;
+let _ = 5;
 
-function h() {
+function m() {
   return new Chunk261470.Z
 }
-let m = (0, Chunk663042.U)(() => ({
+let h = (0, Chunk663042.U)(() => ({
   isLoading: false,
   error: null,
   backoff: new Chunk261470.Z
@@ -74,14 +74,14 @@ function g(e, t) {
     getIsLoading: l,
     getError: c,
     retryConfig: {
-      maxRetries: g = p,
-      backoff: E = h,
-      retryableErrors: b = _
+      maxRetries: g = _,
+      backoff: E = m,
+      retryableErrors: b = p
     } = {}
   } = t, y = new Map;
 
   function O(e) {
-    if (null == e) return m;
+    if (null == e) return h;
     let t = y.get(e);
     return null == t && (t = (0, i.U)(() => ({
       isLoading: false,
@@ -122,40 +122,40 @@ function g(e, t) {
     }
   }
 
-  function I() {
+  function S() {
     for (var t = arguments.length, i = Array(t), o = 0; o < t; o++) i[o] = arguments[o];
     let u = d(i),
-      _ = Array.isArray(e) ? e : [e],
-      p = n(...u),
-      h = O(p),
-      m = (0, s.e7)(_, () => null == l ? true : l(...u), [u]),
-      g = h(e => null == l && e.isLoading),
-      E = null != m ? m : g,
-      b = (0, s.e7)(_, () => null == c ? true : c(...u), [u]),
-      y = h(e => null == c ? e.error : null),
-      I = null != b ? b : y,
-      T = (0, s.e7)(_, () => a(...u), [u], f);
+      p = Array.isArray(e) ? e : [e],
+      _ = n(...u),
+      m = O(_),
+      h = (0, s.e7)(p, () => null == l ? true : l(...u), [u]),
+      g = m(e => null == l && e.isLoading),
+      E = null != h ? h : g,
+      b = (0, s.e7)(p, () => null == c ? true : c(...u), [u]),
+      y = m(e => null == c ? e.error : null),
+      S = null != b ? b : y,
+      I = (0, s.e7)(p, () => a(...u), [u], f);
     return (0, r.useEffect)(() => {
       v({
-        queryId: p,
+        queryId: _,
         args: u,
-        useStoreState: h
+        useStoreState: m
       })
-    }, [p, u, h]), {
-      data: T,
-      error: I,
+    }, [_, u, m]), {
+      data: I,
+      error: S,
       isLoading: E,
       refetch: (0, r.useCallback)(() => {
         v({
-          queryId: p,
+          queryId: _,
           args: u,
-          useStoreState: h,
+          useStoreState: m,
           refetch: true
         })
-      }, [p, u, h])
+      }, [_, u, m])
     }
   }
-  return I.refetch = async function() {
+  return S.refetch = async function() {
     for (var e = arguments.length, t = Array(e), r = 0; r < e; r++) t[r] = arguments[r];
     let i = n(...t);
     O(i).getState().backoff.succeed(), await v({
@@ -163,5 +163,5 @@ function g(e, t) {
       args: t,
       refetch: true
     })
-  }, I
+  }, S
 }

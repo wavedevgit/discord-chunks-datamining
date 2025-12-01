@@ -2,7 +2,7 @@
 /** chunk id: 740594, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk159691 = require("./159691.js"),
@@ -65,17 +65,17 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = function(e) {
+let p = function(e) {
   var {
     subscriptionTier: t,
     onClick: n,
     postSuccessGuild: s,
     onSubscribeModalClose: c,
     premiumModalAnalyticsLocation: f,
-    applicationId: _,
-    confirmationFooter: p,
-    buttonTextOverride: h,
-    defaultTextOverride: m,
+    applicationId: p,
+    confirmationFooter: _,
+    buttonTextOverride: m,
+    defaultTextOverride: h,
     iconOverride: g,
     variantOverride: E
   } = e, b = d(e, ["subscriptionTier", "onClick", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "applicationId", "confirmationFooter", "buttonTextOverride", "defaultTextOverride", "iconOverride", "variantOverride"]);
@@ -85,15 +85,15 @@ let _ = function(e) {
       postSuccessGuild: s,
       onSubscribeModalClose: c,
       premiumModalAnalyticsLocation: f,
-      applicationId: _,
-      confirmationFooter: p
+      applicationId: p,
+      confirmationFooter: _
     },
     {
       subscribeButtonProps: O
     } = (0, o.F)({
       subscriptionTier: t,
-      buttonTextOverride: h,
-      defaultTextOverride: m,
+      buttonTextOverride: m,
+      defaultTextOverride: h,
       iconOverride: g,
       variantOverride: E
     });

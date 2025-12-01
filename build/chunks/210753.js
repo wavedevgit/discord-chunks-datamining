@@ -2,8 +2,8 @@
 /** chunk id: 210753, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => h,
-  M: () => p
+  $: () => m,
+  M: () => _
 }), require("./539854.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
@@ -38,16 +38,16 @@ class f {
     u(this, "_fetched", new Set), u(this, "_pending", new Set), u(this, "_flushHandler", new Chunk846519.sW(32, () => this._flush()))
   }
 }
-let _ = new f;
+let p = new f;
 
-function p(e) {
+function _(e) {
   r.useEffect(() => {
-    null != e && _.request(e)
+    null != e && p.request(e)
   }, [e])
 }
 
-function h(e, t) {
-  p(e);
+function m(e, t) {
+  _(e);
   let n = r.useMemo(() => null != t ? {
     width: t.coverImageWidth,
     height: t.coverImageHeight

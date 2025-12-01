@@ -2,7 +2,7 @@
 /** chunk id: 788858, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -52,13 +52,13 @@ function f(e, t) {
   return i
 }
 
-function _(e) {
+function p(e) {
   var {
     channel: t
   } = e, n = d(e, ["channel"]);
   let c = (0, i.e7)([s.Z], () => t.isPrivate() || s.Z.can(l.Pl.CONNECT, t));
   if (t.isDM() || t.isGroupDM()) return (0, r.jsx)(a.Csw, u({}, n));
   let f = t.isGuildStageVoice(),
-    _ = !c || (0, o.Z)(t);
-  return f && _ ? (0, r.jsx)(a.pki, u({}, n)) : f ? (0, r.jsx)(a.ewx, u({}, n)) : t.isNSFW() ? (0, r.jsx)(a.BVY, u({}, n)) : _ ? (0, r.jsx)(a.gjC, u({}, n)) : (0, r.jsx)(a.gj8, u({}, n))
+    p = !c || (0, o.Z)(t);
+  return f && p ? (0, r.jsx)(a.pki, u({}, n)) : f ? (0, r.jsx)(a.ewx, u({}, n)) : t.isNSFW() ? (0, r.jsx)(a.BVY, u({}, n)) : p ? (0, r.jsx)(a.gjC, u({}, n)) : (0, r.jsx)(a.gj8, u({}, n))
 }

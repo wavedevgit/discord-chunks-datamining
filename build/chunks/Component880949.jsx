@@ -19,9 +19,9 @@ let d = e => {
     isSelected: a = true,
     width: d = 32,
     height: f = 32,
-    shouldAnimate: _ = true,
-    isLocked: p = false
-  } = e, [h, m] = i.useState(false), g = (0, c.EB)(n, 32, _ && a), E = () => m(true), b = () => m(false);
+    shouldAnimate: p = true,
+    isLocked: _ = false
+  } = e, [m, h] = i.useState(false), g = (0, c.EB)(n, 32, p && a), E = () => h(true), b = () => h(false);
   return (0, r.jsxs)("div", {
     onFocus: E,
     onBlur: b,
@@ -29,7 +29,7 @@ let d = e => {
     onMouseLeave: b,
     children: [(0, r.jsx)(l.ZP, {
       className: o()(u.mask, t),
-      mask: a || h ? l.QS.SQUIRCLE : l.QS.AVATAR_DEFAULT,
+      mask: a || m ? l.QS.SQUIRCLE : l.QS.AVATAR_DEFAULT,
       width: d,
       height: f,
       children: null == g ? (0, r.jsx)("div", {
@@ -43,7 +43,7 @@ let d = e => {
         src: g,
         className: u.guildIcon
       })
-    }), p ? (0, r.jsx)("div", {
+    }), _ ? (0, r.jsx)("div", {
       className: u.categoryItemLockIconContainer,
       children: (0, r.jsx)(s.mBM, {
         size: "custom",

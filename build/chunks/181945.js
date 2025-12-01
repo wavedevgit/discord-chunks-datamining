@@ -2,7 +2,7 @@
 /** chunk id: 181945, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./361932.js"), require("./187205.js"), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -16,7 +16,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   let r = i().flatMap(e, e => {
     let t = l.ZP.getSelectableChannelIds(e),
       n = [...t, ...l.ZP.getVocalChannelIds(e)],
@@ -29,17 +29,17 @@ function p(e, t, n) {
     return n
   }).map(e => ({
     channelId: e,
-    readStateType: _.W.CHANNEL,
+    readStateType: p.W.CHANNEL,
     messageId: c.ZP.lastMessageId(e)
   }));
   return e.forEach(e => {
     r.push({
       channelId: d.default.cast(e),
-      readStateType: _.W.GUILD_EVENT,
-      messageId: c.ZP.lastMessageId(e, _.W.GUILD_EVENT)
+      readStateType: p.W.GUILD_EVENT,
+      messageId: c.ZP.lastMessageId(e, p.W.GUILD_EVENT)
     }), r.push({
       channelId: d.default.cast(e),
-      readStateType: _.W.GUILD_ONBOARDING_QUESTION,
+      readStateType: p.W.GUILD_ONBOARDING_QUESTION,
       messageId: o.Z.ackIdForGuild(e)
     })
   }), u.default.track(f.rMx.MARK_AS_READ, {

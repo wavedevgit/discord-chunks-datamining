@@ -21,14 +21,14 @@ module.exports = function(e) {
     f = {
       begin: u
     },
-    _ = e.inherit(f, {
+    p = e.inherit(f, {
       keywords: r
     }),
-    p = {
+    _ = {
       begin: /\(/,
       end: /\)/
     },
-    h = {
+    m = {
       className: "attr",
       begin: d,
       relevance: 0,
@@ -36,11 +36,11 @@ module.exports = function(e) {
         begin: /=/,
         end: /=/,
         starts: {
-          contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, _, p]
+          contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, p, _]
         }
       }
     },
-    m = {
+    h = {
       begin: /as\s+\|/,
       keywords: {
         keyword: "as"
@@ -51,10 +51,10 @@ module.exports = function(e) {
       }]
     },
     g = {
-      contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, m, h, _, p],
+      contains: [e.NUMBER_MODE, e.QUOTE_STRING_MODE, e.APOS_STRING_MODE, h, m, p, _],
       returnEnd: true
     };
-  p.contains = [e.inherit(f, {
+  _.contains = [e.inherit(f, {
     className: "name",
     keywords: n,
     starts: e.inherit(g, {

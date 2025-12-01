@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk677065 = require("./677065.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,20 +26,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,7 +51,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,8 +61,8 @@ function E() {
     saturation: e,
     useReducedMotion: t,
     roleStyle: n,
-    highContrastMode: p,
-    switchIconsEnabled: m
+    highContrastMode: _,
+    switchIconsEnabled: h
   } = (0, Chunk442837.cj)([Chunk607070.Z], () => ({
     saturation: Chunk607070.Z.saturation,
     useReducedMotion: Chunk607070.Z.useReducedMotion,
@@ -89,7 +89,7 @@ function E() {
       enabled: !E
     }), (0, Chunk857595.X2)(!E)
   }
-  let I = [(0, Chunk54381.jsx)(Chunk481060.kSQ, {
+  let S = [(0, Chunk54381.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk54381.jsx)(Chunk481060.S89, {
       id: "reduced-motion",
       label: Chunk388032.intl.string(Chunk388032.t.b3XBzg),
@@ -100,7 +100,7 @@ function E() {
     children: (0, Chunk54381.jsx)(Chunk481060.II_, {
       id: "input",
       label: Chunk388032.intl.string(Chunk388032.t["5PWWCY"]),
-      control: (t, n) => (0, r.jsx)(a._wy, g(h({}, t), {
+      control: (t, n) => (0, r.jsx)(a._wy, g(m({}, t), {
         ref: n,
         value: 100 * e,
         onChange: e => (0, o.o2)(e / 100),
@@ -133,19 +133,19 @@ function E() {
       action: v
     })
   }, "display-name-styles")];
-  return b && I.unshift((0, Chunk54381.jsx)(Chunk481060.kSQ, {
+  return b && S.unshift((0, Chunk54381.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk54381.jsx)(Chunk481060.S89, {
       id: "high-contrast",
       label: Chunk388032.intl.string(Chunk388032.t.aZlePv),
-      checked: p,
-      action: () => (0, Chunk857595.vW)(p ? Chunk607070.X.DEFAULT : Chunk607070.X.HIGH)
+      checked: _,
+      action: () => (0, Chunk857595.vW)(_ ? Chunk607070.X.DEFAULT : Chunk607070.X.HIGH)
     })
-  }, "high-contrast")), y && I.push((0, Chunk54381.jsx)(Chunk481060.kSQ, {
+  }, "high-contrast")), y && S.push((0, Chunk54381.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk54381.jsx)(Chunk481060.S89, {
       id: "switch-icons",
       label: Chunk388032.intl.string(Chunk388032.t["S3z+pV"]),
-      checked: m,
-      action: () => (0, Chunk857595.ky)(!m)
+      checked: h,
+      action: () => (0, Chunk857595.ky)(!h)
     })
-  }, "switch-icons")), I
+  }, "switch-icons")), S
 }

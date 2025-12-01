@@ -43,7 +43,7 @@ var Chunk365049 = require("./365049.js"),
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), n.toValue instanceof a ? r.track(new f(r, n.toValue, p, i, e)) : r.animate(new p(i), e)
+        r.stopTracking(), n.toValue instanceof a ? r.track(new f(r, n.toValue, _, i, e)) : r.animate(new _(i), e)
       },
       stop: function() {
         t.stopAnimation()
@@ -114,7 +114,7 @@ var Chunk365049 = require("./365049.js"),
       return b([O(e * n), t])
     }))
   },
-  I = function(e, t) {
+  S = function(e, t) {
     return function() {
       for (var n = arguments.length, r = Array(n), a = 0; a < n; a++) r[a] = arguments[a];
       var s = function e(t, n, r) {
@@ -137,7 +137,7 @@ module.exports = {
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), r.animate(new h(i), e)
+        r.stopTracking(), r.animate(new m(i), e)
       },
       stop: function() {
         t.stopAnimation()
@@ -150,7 +150,7 @@ module.exports = {
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), n.toValue instanceof a ? r.track(new f(r, n.toValue, m, i, e)) : r.animate(new m(i), e)
+        r.stopTracking(), n.toValue instanceof a ? r.track(new f(r, n.toValue, h, i, e)) : r.animate(new h(i), e)
       },
       stop: function() {
         t.stopAnimation()
@@ -174,7 +174,7 @@ module.exports = {
   sequence: b,
   parallel: y,
   stagger: v,
-  event: I,
+  event: S,
   isAnimated: Chunk187006,
   createAnimatedComponent: require("./533254.js"),
   inject: {

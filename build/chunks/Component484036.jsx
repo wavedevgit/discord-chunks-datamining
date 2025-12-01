@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk347469 = require("./347469.js"),
   Chunk340669 = require("./340669.js");
 
@@ -14,16 +14,16 @@ function c(e) {
   let {
     resizableNode: t,
     minHeight: n,
-    onResize: l
-  } = e, i = (0, s.Z)({
+    onResize: r
+  } = e, l = (0, s.Z)({
     minDimension: n,
     resizableDomNodeRef: t,
-    onElementResize: l,
+    onElementResize: r,
     orientation: s.y.VERTICAL_TOP,
     usePointerEvents: true
   });
   return (0, a.jsx)("div", {
-    onPointerDown: i,
+    onPointerDown: l,
     className: o.resizeHandle
   })
 }
@@ -32,9 +32,9 @@ function d(e) {
   let {
     children: t,
     className: n,
-    initialHeight: i,
+    initialHeight: l,
     minHeight: s
-  } = e, d = l.useRef(null), [u, m] = l.useState(i);
+  } = e, d = r.useRef(null), [u, m] = r.useState(l);
   return (0, a.jsxs)("div", {
     ref: d,
     className: o.container,
@@ -47,7 +47,7 @@ function d(e) {
       minHeight: s,
       onResize: m
     }), (0, a.jsx)("div", {
-      className: r()(o.subPanelContent, n),
+      className: i()(o.subPanelContent, n),
       children: t
     })]
   })

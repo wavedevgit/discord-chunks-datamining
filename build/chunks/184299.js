@@ -69,26 +69,26 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
-  if ("object" !== h(e) || null === e) return e;
+function p(e, t) {
+  if ("object" !== m(e) || null === e) return e;
   var n = e[Symbol.toPrimitive];
   if (true !== n) {
     var r = n.call(e, t || "default");
-    if ("object" !== h(r)) return r;
+    if ("object" !== m(r)) return r;
     throw TypeError("@@toPrimitive must return a primitive value.")
   }
   return ("string" === t ? String : Number)(e)
 }
 
-function p(e) {
-  var t = _(e, "string");
-  return "symbol" === h(t) ? t : String(t)
+function _(e) {
+  var t = p(e, "string");
+  return "symbol" === m(t) ? t : String(t)
 }
 
-function h(e) {
+function m(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let m = .3;
+let h = .3;
 var g = function(e) {
     return e.UNKNOWN = "UNKNOWN", e.NOT_STARTED = "NOT_STARTED", e.IN_PROGRESS = "IN_PROGRESS", e.COMPLETED = "COMPLETED", e
   }({}),
@@ -96,7 +96,7 @@ var g = function(e) {
     return e.NONE = "NONE", e.FETCHING = "FETCHING", e.SUCCESS = "SUCCESS", e.FAILURE = "FAILURE", e
   }({});
 let b = (0, Chunk748521.F)()((0, Chunk690775.tJ)((e, t) => ({
-    volume: m,
+    volume: h,
     muted: false,
     transcriptEnabled: false,
     captionEnabled: false,
@@ -153,7 +153,7 @@ let b = (0, Chunk748521.F)()((0, Chunk690775.tJ)((e, t) => ({
             [n]: i
           } = r;
         e({
-          videoProgress: d(r, [n].map(p))
+          videoProgress: d(r, [n].map(_))
         })
       })
     },

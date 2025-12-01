@@ -18,7 +18,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk51144 = require("./51144.js"),
   Chunk887490 = require("./887490.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -62,7 +62,7 @@ function b(e, t) {
     mode: n,
     ignoreTrailingEmptyNodes: r,
     preventEmojiSurrogates: i
-  } = null != t ? t : {}, [a, o] = (null == t ? true : t.range) != null ? p.M8.edges(t.range) : [true, true];
+  } = null != t ? t : {}, [a, o] = (null == t ? true : t.range) != null ? _.M8.edges(t.range) : [true, true];
   return y(e, {
     mode: n,
     start: a,
@@ -82,31 +82,31 @@ function y(e, t) {
     ignoreEmptyNodes: l,
     ignoreTrailingEmptyNodes: c,
     preventEmojiSurrogates: u
-  } = null != t ? t : {}, d = e.length > 0 && !p.LC.isText(e[0]);
+  } = null != t ? t : {}, d = e.length > 0 && !_.LC.isText(e[0]);
   null == s && (s = d ? "\n" : "");
   let f = null != (n = null == a ? true : a.path[0]) ? n : 0,
-    _ = null != (r = null == o ? true : o.path[0]) ? r : e.length - 1;
+    p = null != (r = null == o ? true : o.path[0]) ? r : e.length - 1;
   if (c)
-    for (let t = _; t >= f; t--) {
+    for (let t = p; t >= f; t--) {
       let n = e[t];
-      if (p.LC.isText(n)) {
+      if (_.LC.isText(n)) {
         if (n.text.length > 0) {
-          _ = t;
+          p = t;
           break
         }
-      } else if (!p.q.isEmpty(n)) {
-        _ = t;
+      } else if (!_.q.isEmpty(n)) {
+        p = t;
         break
       }
       if (t === f) return ""
     }
-  let h = f > 0 && p.aj.isType(e[f - 1], "blockQuote"),
-    m = p.aj.isType(e[f], "blockQuote"),
-    g = p.aj.isType(e[_], "blockQuote"),
+  let m = f > 0 && _.aj.isType(e[f - 1], "blockQuote"),
+    h = _.aj.isType(e[f], "blockQuote"),
+    g = _.aj.isType(e[p], "blockQuote"),
     E = [];
-  for (let t = f; t <= _; t++) {
+  for (let t = f; t <= p; t++) {
     let n = e[t];
-    if (l && p.LC.isText(n) && 0 === n.text.length) continue;
+    if (l && _.LC.isText(n) && 0 === n.text.length) continue;
     let r = null != a && t === f ? {
         path: a.path.slice(1),
         offset: a.offset
@@ -114,11 +114,11 @@ function y(e, t) {
       s = O(n, {
         mode: i,
         start: r,
-        end: null != o && t === _ ? {
+        end: null != o && t === p ? {
           path: o.path.slice(1),
           offset: o.offset
         } : true,
-        allowBlockQuotePrefix: null == a || null == o || !h && (!m || g),
+        allowBlockQuotePrefix: null == a || null == o || !m && (!h || g),
         preventEmojiSurrogates: u
       });
     (!l || s.length > 0) && E.push(s)
@@ -131,9 +131,9 @@ function O(e, t) {
     mode: n,
     start: r,
     allowBlockQuotePrefix: i = false,
-    preventEmojiSurrogates: h = false
+    preventEmojiSurrogates: m = false
   } = null != t ? t : {};
-  if (p.LC.isText(e)) return v(e.text, t);
+  if (_.LC.isText(e)) return v(e.text, t);
   switch (e.type) {
     case "gameMentionInput":
     case "testInlineVoid":
@@ -149,7 +149,7 @@ function O(e, t) {
     }
     case "emoji": {
       let t = e.emoji;
-      if (!h && null != t.surrogate) return t.surrogate;
+      if (!m && null != t.surrogate) return t.surrogate;
       return t.name
     }
     case "customEmoji": {
@@ -192,7 +192,7 @@ function O(e, t) {
       if ("raw" === n) return t;
       let r = f.default.getUser(e.userId);
       if (null == r) return t;
-      return "@".concat(_.ZP.getUserTag(r, {
+      return "@".concat(p.ZP.getUserTag(r, {
         decoration: "never"
       }))
     }
@@ -208,7 +208,7 @@ function O(e, t) {
       return n
     }
     case "applicationCommand":
-      return y(e.children, E(m({}, t), {
+      return y(e.children, E(h({}, t), {
         separator: " ",
         ignoreEmptyNodes: true
       }));

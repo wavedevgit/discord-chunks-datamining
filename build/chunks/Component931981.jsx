@@ -2,7 +2,7 @@
 /** chunk id: 931981, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => I,
+  V: () => S,
   e: () => O
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js");
@@ -31,7 +31,7 @@ function g(e, t, n) {
 let E = new Set;
 class b extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(d.Z, f.ZP, _.Z, p.default), null != e && (E = new Set(e))
+    this.waitFor(d.Z, f.ZP, p.Z, _.default), null != e && (E = new Set(e))
   }
   hasId(e) {
     return E.has(e)
@@ -42,10 +42,10 @@ class b extends(r = Chunk442837.ZP.PersistedStore) {
 }
 g(b, "displayName", "PTOStore"), g(b, "persistKey", "PTOStore");
 let y = new b(Chunk570140.Z, {}),
-  O = e => (0, s.e7)([f.ZP, p.default, y], () => {
-    let t = p.default.getCurrentUser();
+  O = e => (0, s.e7)([f.ZP, _.default, y], () => {
+    let t = _.default.getCurrentUser();
     if (null == t || !t.isStaff() || !e.isDM()) returnfalse;
-    let n = p.default.getUser(e.getRecipientId());
+    let n = _.default.getUser(e.getRecipientId());
     if (!(null == n ? true : n.isStaff())) returnfalse;
     let r = f.ZP.getNicknames(n.id).some(e => e.endsWith("[PTO]") || e.endsWith("[OOO]"));
     return r ? !y.hasId(n.id) && r : (E.delete(n.id) && y.emitChange(), false)
@@ -56,7 +56,7 @@ let y = new b(Chunk570140.Z, {}),
     let t = Chunk592125.Z.getChannel(module);
     null != exports && exports.isPrivate() && (E.has(exports.getRecipientId()) || (E.add(exports.getRecipientId()), y.emitChange()))
   },
-  I = () => (0, Chunk54381.jsxs)("div", {
+  S = () => (0, Chunk54381.jsxs)("div", {
     className: Chunk204427.replyBar,
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",

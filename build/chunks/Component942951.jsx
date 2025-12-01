@@ -60,9 +60,9 @@ function v(e, t) {
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,7 +70,7 @@ function I(e, t) {
   return i
 }
 
-function T(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -78,9 +78,9 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   return i.useCallback(n => {
-    let r = m.Z.getChannel(t);
+    let r = h.Z.getChannel(t);
     null != r && null != e && (0, g.Pv)(n, e, r)
   }, [e, t])
 }
@@ -89,47 +89,47 @@ function A(e) {
   let {
     user: t,
     channelId: n,
-    guildId: m,
+    guildId: h,
     messageId: g,
     stopPropagation: b = false,
     ariaLabel: O,
-    enableDisplayNameStyles: T = false
+    enableDisplayNameStyles: I = false
   } = e, A = i.useRef(null), {
     analyticsLocations: C
-  } = (0, c.ZP)(l.Z.USERNAME), N = (0, p.ZP)(m, null == t ? true : t.id), R = (0, u.Z)({
+  } = (0, c.ZP)(l.Z.USERNAME), N = (0, _.ZP)(h, null == t ? true : t.id), P = (0, u.Z)({
     userId: null == t ? true : t.id,
-    guildId: m
-  }), P = (0, _.j)({
-    displayNameStyles: R
-  }), D = S(t, n), w = i.useContext(o.d);
+    guildId: h
+  }), R = (0, p.j)({
+    displayNameStyles: P
+  }), w = T(t, n), D = i.useContext(o.d);
   return (0, E.Z)({
     subscribeToGroupId: g,
     authorId: null == t ? true : t.id,
-    shouldSubscribe: T && null != R && null == m
+    shouldSubscribe: I && null != P && null == h
   }), i.useCallback(e => (i, o) => {
     let l = null == e ? true : e.colorStrings,
       u = N && null != l && null != l.primaryColor && null != l.secondaryColor,
-      _ = (t, n) => {
-        var o, c, _;
-        if (!T || null == R || null != m) return (0, r.jsx)(s.rz2, v(y({}, null != t ? t : {}), {
+      p = (t, n) => {
+        var o, c, p;
+        if (!I || null == P || null != h) return (0, r.jsx)(s.rz2, v(y({}, null != t ? t : {}), {
           ref: A,
-          onContextMenu: D,
+          onContextMenu: w,
           name: null != (c = (0, s.qgQ)(i)) ? c : "",
-          colorString: null != (_ = null == e ? true : e.colorString) ? _ : null,
+          colorString: null != (p = null == e ? true : e.colorString) ? p : null,
           roleName: null == e ? true : e.colorRoleName,
           colorStrings: u ? l : null,
           "aria-label": O,
-          className: P
+          className: R
         }));
         {
-          let e = (null == w ? true : w.animate) || (null == n ? true : n.isShown) ? d.F.ANIMATED : d.F.PLAIN;
+          let e = (null == D ? true : D.animate) || (null == n ? true : n.isShown) ? d.F.ANIMATED : d.F.PLAIN;
           return (0, r.jsx)(a.Anchor, v(y({}, null != t ? t : {}), {
             ref: A,
-            onContextMenu: D,
+            onContextMenu: w,
             "aria-label": O,
             children: (0, r.jsx)(f.Z, {
               userName: null != (o = (0, s.qgQ)(i)) ? o : "",
-              displayNameStyles: R,
+              displayNameStyles: P,
               effectDisplayType: e,
               shouldUnderlineOnHover: true,
               loop: true
@@ -137,15 +137,15 @@ function A(e) {
           }))
         }
       },
-      p = e => t => {
+      _ = e => t => {
         b && null != t && t.stopPropagation(), e(t)
       };
     return (0, r.jsx)(c.Gt, {
       value: C,
-      children: null != t ? (0, r.jsx)(h.Z, {
+      children: null != t ? (0, r.jsx)(m.Z, {
         targetElementRef: A,
         user: t,
-        guildId: m,
+        guildId: h,
         channelId: n,
         messageId: g,
         roleId: null == e ? true : e.colorRoleId,
@@ -153,12 +153,12 @@ function A(e) {
         children: (e, t) => {
           var {
             onClick: n
-          } = e, r = I(e, ["onClick"]);
-          return _(y({
-            onClick: p(n)
+          } = e, r = S(e, ["onClick"]);
+          return p(y({
+            onClick: _(n)
           }, r), t)
         }
-      }) : _(true, true)
+      }) : p(true, true)
     }, o)
-  }, [C, t, n, m, g, D, b, O, N, P, null == w ? true : w.animate, R, T])
+  }, [C, t, n, h, g, w, b, O, N, R, null == D ? true : D.animate, P, I])
 }

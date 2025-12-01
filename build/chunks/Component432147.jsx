@@ -50,14 +50,14 @@ function v(e) {
     message: t,
     compact: n
   } = e, i = (0, o.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
-  return null == i ? null : (0, r.jsx)(I, {
+  return null == i ? null : (0, r.jsx)(S, {
     channel: i,
     compact: n,
     isSystemMessage: (0, c.Z)(t)
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     channel: t,
     compact: i,
@@ -65,17 +65,17 @@ function I(e) {
   } = e;
 
   function u(e) {
-    e.stopPropagation(), (0, m.ok)(t, e.shiftKey)
+    e.stopPropagation(), (0, h.ok)(t, e.shiftKey)
   }
 
   function d(e) {
     e.stopPropagation();
     let n = !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey,
       r = e.shiftKey && !(e.altKey || e.ctrlKey || e.metaKey);
-    (e.which === g.yXg.SPACE || e.which === g.yXg.ENTER) && (e.preventDefault(), (n || r) && (0, m.ok)(t, r))
+    (e.which === g.yXg.SPACE || e.which === g.yXg.ENTER) && (e.preventDefault(), (n || r) && (0, h.ok)(t, r))
   }
 
-  function p(e) {
+  function _(e) {
     (0, l.jW)(e, async () => {
       let {
         default: e
@@ -85,9 +85,9 @@ function I(e) {
       }, n))
     })
   }
-  let h = (0, o.e7)([_.Z], () => _.Z.getCount(t.id)),
-    y = T(t),
-    v = null != h && h > 0;
+  let m = (0, o.e7)([p.Z], () => p.Z.getCount(t.id)),
+    y = I(t),
+    v = null != m && m > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: a()(b.spine, {
@@ -97,7 +97,7 @@ function I(e) {
     }), (0, r.jsx)(s.P3F, {
       onClick: u,
       onKeyDown: d,
-      onContextMenu: p,
+      onContextMenu: _,
       "aria-roledescription": E.intl.string(E.t["8ipxiY"]),
       className: a()(b.container, {
         [b.systemMessageContainer]: c
@@ -113,7 +113,7 @@ function I(e) {
           }), (0, r.jsx)("span", {
             className: b.cta,
             "aria-hidden": !v,
-            children: (0, f.WE)(h, t.id)
+            children: (0, f.WE)(m, t.id)
           })]
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
@@ -128,25 +128,25 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   var t;
-  let n = (0, o.e7)([_.Z], () => _.Z.getMostRecentMessage(e.id)),
-    i = (0, o.e7)([_.Z], () => _.Z.getCount(e.id)),
-    a = (0, p.Ok)(e);
+  let n = (0, o.e7)([p.Z], () => p.Z.getMostRecentMessage(e.id)),
+    i = (0, o.e7)([p.Z], () => p.Z.getCount(e.id)),
+    a = (0, _.Ok)(e);
   return (null == (t = e.threadMetadata) ? true : t.archived) ? E.intl.string(E.t.ZTo4HS) : null == i || 0 === i ? E.intl.string(E.t.HYtNyE) : null == n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("span", {
       children: E.intl.string(E.t.ZTo4HS)
     }), (0, r.jsx)("span", {
       className: b.timestamp,
-      children: (0, p.Ye)(a)
+      children: (0, _.Ye)(a)
     })]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(h.Z, {
+    children: [(0, r.jsx)(m.Z, {
       message: n,
       channel: e
     }), (0, r.jsx)("span", {
       className: b.timestamp,
-      children: (0, p.Ye)(a)
+      children: (0, _.Ye)(a)
     })]
   })
 }

@@ -4,8 +4,8 @@
 require.d(exports, {
   Kq: () => O,
   NP: () => v,
-  ZP: () => T,
-  t8: () => I
+  ZP: () => I,
+  t8: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -30,7 +30,7 @@ function O() {
   let [e, t] = Chunk473749.useState(false), [n, r] = Chunk473749.useState(false);
 
   function a(e, n) {
-    t(e), r((n & h.Dg.VOICE) === h.Dg.VOICE)
+    t(e), r((n & m.Dg.VOICE) === m.Dg.VOICE)
   }
   return Chunk473749.useEffect(() => {
     let e = new Chunk846519.V7;
@@ -66,7 +66,7 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     volume: t,
     id: n,
@@ -75,13 +75,13 @@ function I(e) {
   } = e, {
     threshold: l,
     autoThreshold: c
-  } = (0, s.cj)([p.Z], () => ({
-    threshold: p.Z.getModeOptions().threshold,
-    autoThreshold: p.Z.getModeOptions().autoThreshold
-  })), _ = (0, s.e7)([p.Z], () => p.Z.getMode());
+  } = (0, s.cj)([_.Z], () => ({
+    threshold: _.Z.getModeOptions().threshold,
+    autoThreshold: _.Z.getModeOptions().autoThreshold
+  })), p = (0, s.e7)([_.Z], () => _.Z.getMode());
 
-  function h(e, t) {
-    f.Z.setMode(_, {
+  function m(e, t) {
+    f.Z.setMode(p, {
       threshold: e,
       autoThreshold: t
     })
@@ -94,7 +94,7 @@ function I(e) {
     children: (0, r.jsx)(d.iRW, {
       initialValue: l + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => h(-((100 - e) * 1), c),
+      onValueChange: e => m(-((100 - e) * 1), c),
       barStyles: {
         background: u.Z.unsafe_rawColors.GREEN_360.css
       },
@@ -117,7 +117,7 @@ function I(e) {
   })
 }
 
-function T() {
+function I() {
   let {
     threshold: e,
     autoThreshold: t
@@ -157,7 +157,7 @@ function T() {
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.W3K5Im)
       })]
-    }) : (0, Chunk54381.jsx)(I, {
+    }) : (0, Chunk54381.jsx)(S, {
       volume: Chunk120356
     }), !Chunk46973 && (0, Chunk54381.jsx)(Chunk481060.Wn, {
       messageType: Chunk481060.QYI.WARNING,

@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.r(exports), require.d(exports, {
-  default: () => Q
+  default: () => X
 }), require("./539854.js"), require("./388685.js");
 var a, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
@@ -15,7 +15,7 @@ var a, Chunk392711 = require("./392711.js"),
   Chunk999382 = require("./999382.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,14 +24,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -42,9 +42,9 @@ let g = [],
   y = null,
   O = null,
   v = false,
-  I = false,
-  T = Chunk981631.QZA.CLOSED,
-  S = {},
+  S = false,
+  I = Chunk981631.QZA.CLOSED,
+  T = {},
   A = false,
   C = null;
 
@@ -52,14 +52,14 @@ function N(e) {
   let {
     section: t
   } = e;
-  if (t !== p.pNK.INTEGRATIONS) returnfalse;
+  if (t !== _.pNK.INTEGRATIONS) returnfalse;
   if (null == r) {
-    let e = _.Z.getGuildId();
-    null != e && (u.Z.fetchForGuild(e), v = true), P(false)
+    let e = p.Z.getGuildId();
+    null != e && (u.Z.fetchForGuild(e), v = true), R(false)
   }
 }
 
-function R(e) {
+function P(e) {
   let {
     section: t,
     sectionId: n
@@ -67,12 +67,12 @@ function R(e) {
   i = t, C = n
 }
 
-function P(e) {
-  if (null != (r = _.Z.getProps().guild) && d.Z.can(p.Plq.MANAGE_GUILD, r)) {
-    let e = _.Z.getProps().integrations;
-    null == e && (I = true), g = null != e ? e : []
+function R(e) {
+  if (null != (r = p.Z.getProps().guild) && d.Z.can(_.Plq.MANAGE_GUILD, r)) {
+    let e = p.Z.getProps().integrations;
+    null == e && (S = true), g = null != e ? e : []
   } else g = [];
-  if (E = null != r && d.Z.can(p.Plq.MANAGE_WEBHOOKS, r) ? f.Z.getWebhooksForGuild(r.id) : [], !e && null != y) {
+  if (E = null != r && d.Z.can(_.Plq.MANAGE_WEBHOOKS, r) ? f.Z.getWebhooksForGuild(r.id) : [], !e && null != y) {
     let e = K(y.id);
     null != e && (y = e)
   }
@@ -80,49 +80,49 @@ function P(e) {
     let e = z(O.id);
     null != e && (O = e)
   }
-  b = null, T = p.QZA.OPEN, S = {}, A = false
+  b = null, I = _.QZA.OPEN, T = {}, A = false
 }
 
-function D() {
-  r = null, g = [], E = [], b = null, y = null, O = null, T = Chunk981631.QZA.CLOSED, A = false
+function w() {
+  r = null, g = [], E = [], b = null, y = null, O = null, I = Chunk981631.QZA.CLOSED, A = false
 }
-let w = s().debounce(() => {
-  A && (null != y ? s().isEqual(y, K(y.id)) && (A = false) : null != O && s().isEqual(O, z(O.id)) && (A = false), A || X.emitChange())
+let D = s().debounce(() => {
+  A && (null != y ? s().isEqual(y, K(y.id)) && (A = false) : null != O && s().isEqual(O, z(O.id)) && (A = false), A || Q.emitChange())
 }, 500);
-
-function L(e) {
-  let {
-    settings: t
-  } = e;
-  if (null == y) returnfalse;
-  y = m({}, y), null != t.enableEmoticons && y.enable_emoticons !== t.enableEmoticons && (y.enable_emoticons = t.enableEmoticons, A = true), null != t.expireBehavior && y.expire_behavior !== t.expireBehavior && (y.expire_behavior = t.expireBehavior, A = true), null != t.expireGracePeriod && y.expire_grace_period !== t.expireGracePeriod && (y.expire_grace_period = t.expireGracePeriod, A = true), A && w()
-}
 
 function x(e) {
   let {
     settings: t
   } = e;
-  if (null == O) returnfalse;
-  O = m({}, O), null != t.name && O.name !== t.name && (O.name = t.name, A = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, A = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, A = true), A && w()
+  if (null == y) returnfalse;
+  y = h({}, y), null != t.enableEmoticons && y.enable_emoticons !== t.enableEmoticons && (y.enable_emoticons = t.enableEmoticons, A = true), null != t.expireBehavior && y.expire_behavior !== t.expireBehavior && (y.expire_behavior = t.expireBehavior, A = true), null != t.expireGracePeriod && y.expire_grace_period !== t.expireGracePeriod && (y.expire_grace_period = t.expireGracePeriod, A = true), A && D()
 }
 
-function M() {
-  T = Chunk981631.QZA.SUBMITTING, S = {}
+function L(e) {
+  let {
+    settings: t
+  } = e;
+  if (null == O) returnfalse;
+  O = h({}, O), null != t.name && O.name !== t.name && (O.name = t.name, A = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, A = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, A = true), A && D()
+}
+
+function j() {
+  I = Chunk981631.QZA.SUBMITTING, T = {}
+}
+
+function M(e) {
+  var t;
+  if (I !== _.QZA.SUBMITTING) returnfalse;
+  I = _.QZA.OPEN, T = null != (t = e.errors) ? t : {}
 }
 
 function k(e) {
-  var t;
-  if (T !== p.QZA.SUBMITTING) returnfalse;
-  T = p.QZA.OPEN, S = null != (t = e.errors) ? t : {}
-}
-
-function j(e) {
   let {
     guildId: t,
     integrations: n
   } = e;
-  if (null == r || t !== r.id || T === p.QZA.SUBMITTING) returnfalse;
-  for (let e of (I = false, n))
+  if (null == r || t !== r.id || I === _.QZA.SUBMITTING) returnfalse;
+  for (let e of (S = false, n))
     if (null == g.find(t => {
         let {
           id: n
@@ -140,11 +140,11 @@ function j(e) {
         if (n === t.id) returntrue
       });
     if (null != r) {
-      let n = m({}, t, r);
+      let n = h({}, t, r);
       (null == y ? true : y.id) === n.id && (false === n.enabled ? y = null : A || (y = n)), g[e] = n
     } else(null == y ? true : y.id) === t.id && (y = null), g.splice(e, 1)
   }
-  g = [...g], w()
+  g = [...g], D()
 }
 
 function U(e) {
@@ -153,7 +153,7 @@ function U(e) {
     channelId: n,
     webhooks: i
   } = e;
-  if (v = false, null != r && t === r.id && null != i && T !== p.QZA.SUBMITTING) {
+  if (v = false, null != r && t === r.id && null != i && I !== _.QZA.SUBMITTING) {
     for (let e = E.length - 1; e >= 0; e--) {
       let t = E[e];
       if (null != n && (null == t ? true : t.channel_id) !== n) continue;
@@ -164,7 +164,7 @@ function U(e) {
         if (n === t.id) returntrue
       });
       if (null != r) {
-        let n = m({}, t, r);
+        let n = h({}, t, r);
         E[e] = n, A || (null == O ? true : O.id) !== n.id || (O = n)
       } else(null == O ? true : O.id) === t.id && (O = null), E.splice(e, 1)
     }
@@ -174,7 +174,7 @@ function U(e) {
       } = t;
       if (n === e.id) returntrue
     }) && E.push(e);
-    E = [...E], w()
+    E = [...E], D()
   }
 }
 
@@ -182,27 +182,27 @@ function G(e) {
   let {
     commandId: t
   } = e;
-  b = t, y = null, O = null, S = {}, A = true
-}
-
-function B(e) {
-  let {
-    commandId: t
-  } = e;
-  if (null == b || b !== t) returnfalse;
-  b = null, S = {}, A = false
+  b = t, y = null, O = null, T = {}, A = true
 }
 
 function Z(e) {
   let {
+    commandId: t
+  } = e;
+  if (null == b || b !== t) returnfalse;
+  b = null, T = {}, A = false
+}
+
+function B(e) {
+  let {
     integrationId: t
   } = e, n = K(t);
   if (null == n) returnfalse;
-  y = n, b = null, O = null, S = {}, A = false
+  y = n, b = null, O = null, T = {}, A = false
 }
 
 function F() {
-  y = null, S = {}, A = false
+  y = null, T = {}, A = false
 }
 
 function V(e) {
@@ -210,19 +210,19 @@ function V(e) {
     webhookId: t
   } = e, n = z(t);
   if (null == n) returnfalse;
-  O = n, b = null, y = null, S = {}, A = false
+  O = n, b = null, y = null, T = {}, A = false
 }
 
 function H() {
-  O = null, S = {}, A = false
-}
-
-function W() {
-  return P(false)
+  O = null, T = {}, A = false
 }
 
 function Y() {
-  return P(true)
+  return R(false)
+}
+
+function W() {
+  return R(true)
 }
 
 function K(e) {
@@ -268,10 +268,10 @@ class q extends(a = Chunk442837.ZP.Store) {
     return O
   }
   get formState() {
-    return T
+    return I
   }
   getErrors() {
-    return S
+    return T
   }
   getSection() {
     return null != i ? i : Chunk981631.b4C.OVERVIEW
@@ -286,7 +286,7 @@ class q extends(a = Chunk442837.ZP.Store) {
     return z(e)
   }
   isFetching() {
-    return I || v
+    return S || v
   }
   showNotice() {
     return this.hasChanges()
@@ -299,25 +299,25 @@ class q extends(a = Chunk442837.ZP.Store) {
     })) ? true : t.application
   }
 }
-h(q, "displayName", "GuildSettingsIntegrationsStore");
-let X = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
-    INTEGRATION_SETTINGS_INIT: W,
-    INTEGRATION_SETTINGS_SAVE_SUCCESS: Y,
+m(q, "displayName", "GuildSettingsIntegrationsStore");
+let Q = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
+    INTEGRATION_SETTINGS_INIT: Y,
+    INTEGRATION_SETTINGS_SAVE_SUCCESS: W,
     GUILD_SETTINGS_INIT: N,
     GUILD_SETTINGS_SET_SECTION: N,
-    INTEGRATION_SETTINGS_SET_SECTION: R,
+    INTEGRATION_SETTINGS_SET_SECTION: P,
     INTEGRATION_SETTINGS_START_EDITING_COMMAND: G,
-    INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: B,
-    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: Z,
+    INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: Z,
+    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: B,
     INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: F,
-    INTEGRATION_SETTINGS_UPDATE_INTEGRATION: L,
-    INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,
+    INTEGRATION_SETTINGS_UPDATE_INTEGRATION: x,
+    INTEGRATION_SETTINGS_UPDATE_WEBHOOK: L,
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: V,
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: H,
-    GUILD_SETTINGS_CLOSE: D,
-    GUILD_SETTINGS_LOADED_INTEGRATIONS: j,
+    GUILD_SETTINGS_CLOSE: w,
+    GUILD_SETTINGS_LOADED_INTEGRATIONS: k,
     WEBHOOKS_UPDATE: U,
-    INTEGRATION_SETTINGS_SUBMITTING: M,
-    INTEGRATION_SETTINGS_SAVE_FAILURE: k
+    INTEGRATION_SETTINGS_SUBMITTING: j,
+    INTEGRATION_SETTINGS_SAVE_FAILURE: M
   }),
-  Q = X
+  X = Q

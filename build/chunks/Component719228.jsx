@@ -42,13 +42,13 @@ function y(e) {
     onClose: i,
     onSelectGuild: a,
     query: s
-  } = e, b = (0, l.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), y = (0, l.Wu)([_.Z], () => b.reduce((e, t) => {
-    let r = _.Z.getGuild(t);
+  } = e, b = (0, l.e7)([_.ZP], () => _.ZP.getFlattenedGuildIds()), y = (0, l.Wu)([p.Z], () => b.reduce((e, t) => {
+    let r = p.Z.getGuild(t);
     return null == r || null != n && n.some(e => e.id === t) || (s.length <= 0 || o()(s.toLowerCase(), null == r ? true : r.name.toLowerCase())) && e.push(r), e
   }, []));
 
   function O() {
-    i(), (0, u.xf)(), (0, f.uL)(m.Z5c.GUILD_DISCOVERY)
+    i(), (0, u.xf)(), (0, f.uL)(h.Z5c.GUILD_DISCOVERY)
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [0 === y.length && (0, r.jsx)("div", {
@@ -82,7 +82,7 @@ function y(e) {
           className: E.selectGuildLevel,
           color: "text-muted",
           variant: "text-xs/normal",
-          children: (0, h.nW)(e.premiumTier)
+          children: (0, m.nW)(e.premiumTier)
         })]
       }), (0, r.jsx)(c.Text, {
         className: E.selectGuildPseudoCta,

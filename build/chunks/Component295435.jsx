@@ -2,7 +2,7 @@
 /** chunk id: 295435, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => p
+  S: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk22643 = require("./22643.js");
 
-function p(e) {
+function _(e) {
   let t = i.useRef(null),
     n = e.media;
   if (n.loadingState === c.f.LOADED_NOT_FOUND) return (0, r.jsx)(l.u, {
@@ -25,8 +25,8 @@ function p(e) {
     align: "center",
     targetElementRef: t,
     children: (0, r.jsx)("div", {
-      className: o()(e.className, _.notFoundPlaceholder, {
-        [_.hiddenSpoilers]: e.hiddenSpoilers
+      className: o()(e.className, p.notFoundPlaceholder, {
+        [p.hiddenSpoilers]: e.hiddenSpoilers
       }),
       style: {
         width: e.placeholderWidth,
@@ -35,14 +35,14 @@ function p(e) {
       role: "img",
       children: (0, r.jsx)(u.Z, {
         ref: t,
-        className: _.brokenImageIcon
+        className: p.brokenImageIcon
       })
     })
   });
   let a = n.loadingState === c.f.LOADING ? d.zo9.LOADING : d.zo9.ERROR;
   return (0, r.jsx)(s.E, {
     className: o()(e.className, {
-      [_.hiddenSpoilers]: e.hiddenSpoilers
+      [p.hiddenSpoilers]: e.hiddenSpoilers
     }),
     readyState: a,
     src: "",

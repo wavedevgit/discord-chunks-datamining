@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   cp: () => g,
-  eI: () => _
+  eI: () => p
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -21,7 +21,7 @@ async function f() {
     rejectWithError: false
   })
 }
-async function _() {
+async function p() {
   try {
     let {
       enabledPaymentTypes: e
@@ -46,7 +46,7 @@ async function _() {
     Chunk570140.Z.dispatch({
       type: "ADYEN_CREATE_CLIENT_SUCCESS",
       client: Chunk355467
-    }), p(Chunk355467)
+    }), _(Chunk355467)
   } catch (e) {
     (0, Chunk122289.q2)(module), Chunk570140.Z.dispatch({
       type: "ADYEN_CREATE_CLIENT_FAIL"
@@ -54,9 +54,9 @@ async function _() {
   }
 }
 
-function p(e) {
+function _(e) {
   if (null != c.Z.cashAppPayComponent) {
-    m(), h();
+    h(), m();
     return
   }
   let t = e.create("cashapp", {
@@ -94,13 +94,13 @@ function p(e) {
   })
 }
 
-function h() {
+function m() {
   var e;
   if (null == Chunk439041.Z.cashAppPayComponent) throw Error("Adyen CashAppPay component must be created before mounting.");
   null == (e = Chunk439041.Z.cashAppPayComponent) || module.mount("#".concat(Chunk559407.F))
 }
 
-function m() {
+function h() {
   var e;
   null == (e = Chunk439041.Z.cashAppPayComponent) || module.unmount()
 }

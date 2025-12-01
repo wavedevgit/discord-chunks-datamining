@@ -2,7 +2,7 @@
 /** chunk id: 516888, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => h
+  f: () => m
 }), require("./953529.js"), require("./415506.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -22,9 +22,9 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = new Chunk579092.Yd("KvStore"),
-  _ = Object.prototype.hasOwnProperty,
-  p = Symbol("version");
-class h extends Chunk442837.yh {
+  p = Object.prototype.hasOwnProperty,
+  _ = Symbol("version");
+class m extends Chunk442837.yh {
   getMode() {
     return this.mode
   }
@@ -67,14 +67,14 @@ class h extends Chunk442837.yh {
       let {
         memoized: n
       } = this.state.derived, r = n[t];
-      return _.call(n, t) || (r = e(this.state.root), n[t] = r), r
+      return p.call(n, t) || (r = e(this.state.root), n[t] = r), r
     }
   }
   version() {
     let {
       memoized: e
-    } = this.state.derived, t = module[p];
-    return null == exports && (module[p] = t = ++this.nextVersion), exports
+    } = this.state.derived, t = module[_];
+    return null == exports && (module[_] = t = ++this.nextVersion), exports
   }
   get(e) {
     return this.state.root[e]
@@ -111,7 +111,7 @@ class h extends Chunk442837.yh {
             return true === r && i.length++, i.memoized = {}, t = true, true
           },
           remove: e => {
-            let n = _.call(this.state.root, e);
+            let n = p.call(this.state.root, e);
             if (n) {
               delete this.state.root[e];
               let {

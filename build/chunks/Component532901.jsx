@@ -22,10 +22,10 @@ function f(e) {
           url: t.target
         }, t.target)
       }, f.key);
-      let _ = n(t.content, f),
-        p = "string" == typeof t.title && 0 !== t.title.length ? t.title : (0, a.Rp)(t.content),
-        h = () => (0, u.r)(t),
-        m = (null == e ? true : e.mustConfirmExternalLink) ? e => (null == e || e.stopPropagation(), null == e || e.preventDefault(), (0, c.q)({
+      let p = n(t.content, f),
+        _ = "string" == typeof t.title && 0 !== t.title.length ? t.title : (0, a.Rp)(t.content),
+        m = () => (0, u.r)(t),
+        h = (null == e ? true : e.mustConfirmExternalLink) ? e => (null == e || e.stopPropagation(), null == e || e.preventDefault(), (0, c.q)({
           href: t.target,
           shouldConfirm: true,
           messageId: f.messageId,
@@ -33,19 +33,19 @@ function f(e) {
         }), null) : true;
       if (f.previewLinkTarget && !(0, u.r)(t)) {
         let e = "\n\n(".concat(t.target, ")");
-        p.length + e.length > d && (e = "..." + e, p = (p = p.substr(0, d - e.length)).trimEnd()), p += e
+        _.length + e.length > d && (e = "..." + e, _ = (_ = _.substr(0, d - e.length)).trimEnd()), _ += e
       }
       return f.noStyleAndInteraction ? (0, r.jsx)("span", {
-        title: p,
-        children: _
+        title: _,
+        children: p
       }, f.key) : (0, r.jsx)(o.Z, {
-        title: p,
+        title: _,
         href: t.target,
-        trusted: h,
-        onClick: m,
+        trusted: m,
+        onClick: h,
         messageId: f.messageId,
         channelId: f.channelId,
-        children: _
+        children: p
       }, f.key)
     }
   }

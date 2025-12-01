@@ -37,7 +37,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,15 +48,15 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -64,7 +64,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -87,8 +87,8 @@ let b = e => {
       className: a,
       innerClassName: l,
       onClick: d,
-      ref: _
-    } = e, m = h(e, ["action", "color", "themeColor", "className", "innerClassName", "onClick", "ref"]);
+      ref: p
+    } = e, h = m(e, ["action", "color", "themeColor", "className", "innerClassName", "onClick", "ref"]);
     let {
       trackUserProfileAction: E
     } = (0, c.KZ)(), b = e => {
@@ -96,15 +96,15 @@ let b = e => {
         action: t
       }), null == d || d(e)
     };
-    return (0, r.jsx)(s.Button, p(f({
-      buttonRef: _,
+    return (0, r.jsx)(s.Button, _(f({
+      buttonRef: p,
       className: o()(u.button, a),
       innerClassName: o()(u.buttonInner, l),
       color: o()(n, g[i]),
       look: s.Button.Looks.FILLED,
       size: s.Button.Sizes.SMALL,
       onClick: b
-    }, m), {
+    }, h), {
       "data-migration-pending": true
     }))
   },
@@ -115,13 +115,13 @@ let b = e => {
       tooltipPosition: a,
       tooltipAlign: c,
       tooltipDelay: d,
-      tooltipClassName: _,
-      tooltipContainerClassName: m,
+      tooltipClassName: p,
+      tooltipContainerClassName: h,
       ariaLabel: g,
       className: E,
       innerClassName: y,
       shouldShowTooltip: O = true
-    } = e, v = h(e, ["icon", "tooltipText", "tooltipPosition", "tooltipAlign", "tooltipDelay", "tooltipClassName", "tooltipContainerClassName", "ariaLabel", "className", "innerClassName", "shouldShowTooltip"]);
+    } = e, v = m(e, ["icon", "tooltipText", "tooltipPosition", "tooltipAlign", "tooltipDelay", "tooltipClassName", "tooltipContainerClassName", "ariaLabel", "className", "innerClassName", "shouldShowTooltip"]);
     return (0, r.jsx)(l.jSM, {
       text: i,
       position: a,
@@ -129,9 +129,9 @@ let b = e => {
       "aria-label": false,
       delay: d,
       shouldShow: O,
-      className: m,
-      tooltipClassName: _,
-      children: (0, r.jsx)(b, p(f({
+      className: h,
+      tooltipClassName: p,
+      children: (0, r.jsx)(b, _(f({
         buttonRef: t,
         className: o()(u.icon, E),
         innerClassName: o()(u.icon, y),
@@ -151,7 +151,7 @@ let b = e => {
     var {
       className: n,
       innerClassName: i
-    } = e, a = h(e, ["className", "innerClassName"]);
+    } = e, a = m(e, ["className", "innerClassName"]);
     return (0, r.jsx)(y, f({
       ref: t,
       className: o()(u.banner, n),

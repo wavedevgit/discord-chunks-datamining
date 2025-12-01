@@ -2,7 +2,7 @@
 /** chunk id: 870630, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,10 +17,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk724641 = require("./724641.js"),
   Chunk184229 = require("./184229.js"),
   Chunk504309 = require("./504309.js");
-let m = function(e) {
+let h = function(e) {
   let t = (0, l.ZP)(),
     n = i.useRef(null),
-    [m, g] = i.useState({}),
+    [h, g] = i.useState({}),
     E = (0, s.dQu)(s.TVs.colors.BACKGROUND_BASE_LOWER).hex();
   switch (i.useLayoutEffect(() => {
       let {
@@ -47,12 +47,12 @@ let m = function(e) {
       })
     }, [n, E]), e.type) {
     case c.He.PRZELEWY24: {
-      let i = (0, o.wj)(t) ? p : h,
+      let i = (0, o.wj)(t) ? _ : m,
         {
           onNameChange: l,
           onEmailChange: c,
           onP24BankChange: f,
-          p24BankValue: _,
+          p24BankValue: p,
           billingAddressInfo: g
         } = e;
       return (0, r.jsx)("div", {
@@ -79,8 +79,8 @@ let m = function(e) {
               children: u.intl.string(u.t.De3b8t)
             }), (0, r.jsx)(a.P24BankElement, {
               options: {
-                value: _,
-                style: m
+                value: p,
+                style: h
               },
               onChange: e => f(e.value)
             }), (0, r.jsx)("div", {
@@ -99,8 +99,8 @@ let m = function(e) {
         onAccountHolderNameChange: i,
         onEPSBankChange: l,
         epsBankValue: c,
-        billingAddressInfo: p
-      } = e, h = (0, o.wj)(t) ? f : _;
+        billingAddressInfo: _
+      } = e, m = (0, o.wj)(t) ? f : p;
       return (0, r.jsx)("div", {
         className: d.body,
         children: (0, r.jsxs)(s.Kqy, {
@@ -111,7 +111,7 @@ let m = function(e) {
             name: u.intl.string(u.t.sN3wrd),
             placeholder: u.intl.string(u.t.sN3wrd),
             onChange: e => i(e),
-            value: p.name
+            value: _.name
           }), (0, r.jsxs)(s.Kqy, {
             gap: 4,
             children: [(0, r.jsx)(s.Text, {
@@ -120,13 +120,13 @@ let m = function(e) {
             }), (0, r.jsx)(a.EpsBankElement, {
               options: {
                 value: c,
-                style: m
+                style: h
               },
               onChange: e => l(e.value)
             }), (0, r.jsx)("div", {
               className: d.bankSelectionStub,
               children: (0, r.jsx)("img", {
-                src: h,
+                src: m,
                 alt: "EPS"
               })
             })]

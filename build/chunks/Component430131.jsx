@@ -2,7 +2,7 @@
 /** chunk id: 430131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -18,35 +18,35 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk473385 = require("./473385.js");
 
-function m(e) {
+function h(e) {
   let {
     errors: t,
     pendingNick: n,
-    currentNick: m,
+    currentNick: h,
     username: g,
     user: E,
     guild: b
-  } = e, y = null != n ? n : m, O = (0, i.e7)([u.Z], () => u.Z.can(f.Plq.CHANGE_NICKNAME, b) || u.Z.can(f.Plq.MANAGE_NICKNAMES, b)), v = (0, s.m)(_.PremiumTypes.TIER_2), I = o.JH.useExperiment({
+  } = e, y = null != n ? n : h, O = (0, i.e7)([u.Z], () => u.Z.can(f.Plq.CHANGE_NICKNAME, b) || u.Z.can(f.Plq.MANAGE_NICKNAMES, b)), v = (0, s.m)(p.PremiumTypes.TIER_2), S = o.JH.useExperiment({
     location: "NicknameSection"
   }).enabled;
 
-  function T(e) {
-    (0, d.wi)(e, m)
+  function I(e) {
+    (0, d.wi)(e, h)
   }
   return (0, r.jsxs)(l.Z, {
-    title: p.intl.string(p.t.me1lRk),
+    title: _.intl.string(_.t.me1lRk),
     errors: t,
     children: [(0, r.jsx)(a.oil, {
       value: null != y ? y : "",
       placeholder: g,
       maxLength: f.l$U,
-      onChange: T,
+      onChange: I,
       disabled: !O,
-      helperText: O ? true : p.intl.string(p.t.gzjxQi)
-    }), I && v && (0, r.jsx)(c.Z, {
+      helperText: O ? true : _.intl.string(_.t.gzjxQi)
+    }), S && v && (0, r.jsx)(c.Z, {
       user: E,
       guildId: b.id,
-      className: h.displayNameStylesSection
+      className: m.displayNameStylesSection
     })]
   })
 }

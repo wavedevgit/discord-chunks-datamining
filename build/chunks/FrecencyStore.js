@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   C: () => v,
-  Z: () => D
+  Z: () => w
 }), require("./35282.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -18,7 +18,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -59,7 +59,7 @@ function b(e, t) {
 let y = 10,
   O = 100,
   v = 100,
-  I = new Chunk704907.Z({
+  S = new Chunk704907.Z({
     computeBonus: () => O,
     computeWeight: e => {
       let t = 1;
@@ -73,18 +73,18 @@ let y = 10,
     numFrequentlyItems: v,
     maxSamples: y
   }),
-  T = null,
-  S = null;
+  I = null,
+  T = null;
 
 function A(e) {
   let {
     guildId: t,
     channelId: n
   } = e, r = false;
-  return n !== T && (T = null != n ? n : null, null != n && p.Xyh.test(n) && (r = true, I.track(n), R.pendingUsages.push({
+  return n !== I && (I = null != n ? n : null, null != n && _.Xyh.test(n) && (r = true, S.track(n), P.pendingUsages.push({
     key: n,
     timestamp: Date.now()
-  }))), t !== S && (S = null != t ? t : null, null != t && p.Xyh.test(t) && (r = true, I.track(t), R.pendingUsages.push({
+  }))), t !== T && (T = null != t ? t : null, null != t && _.Xyh.test(t) && (r = true, S.track(t), P.pendingUsages.push({
     key: t,
     timestamp: Date.now()
   }))), r
@@ -97,39 +97,39 @@ function C(e) {
     },
     wasSaved: n
   } = e;
-  return t === h.yP.FRECENCY_AND_FAVORITES_SETTINGS && !!n && (R.pendingUsages = [], true)
+  return t === m.yP.FRECENCY_AND_FAVORITES_SETTINGS && !!n && (P.pendingUsages = [], true)
 }
 
 function N() {
   var e;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.guildAndChannelFrecency) ? true : module.guildAndChannels;
   if (null == exports) returnfalse;
-  I.overwriteHistory(a().mapValues(exports, e => b(g({}, e), {
+  S.overwriteHistory(a().mapValues(exports, e => b(g({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
-  })), R.pendingUsages)
+  })), P.pendingUsages)
 }
-let R = {
+let P = {
   pendingUsages: []
 };
-class P extends(r = Chunk442837.ZP.PersistedStore) {
+class R extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(u.Z, d.Z, f.Z, _.Z, c.Z), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.Xyh.test(e.key)), R = e), this.syncWith([c.Z], N)
+    this.waitFor(u.Z, d.Z, f.Z, p.Z, c.Z), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && _.Xyh.test(e.key)), P = e), this.syncWith([c.Z], N)
   }
   getState() {
-    return R
+    return P
   }
   hasPendingUsage() {
-    return R.pendingUsages.length > 0
+    return P.pendingUsages.length > 0
   }
   get frecencyWithoutFetchingLatest() {
-    return I
+    return S
   }
   getFrequentlyWithoutFetchingLatest() {
-    return I.frequently
+    return S.frequently
   }
   getScoreWithoutFetchingLatest(e) {
     var t;
-    return null != (t = I.getFrecency(e)) ? t : 0
+    return null != (t = S.getFrecency(e)) ? t : 0
   }
   getScoreForDMWithoutFetchingLatest(e) {
     let t = u.Z.getDMFromUserId(e);
@@ -142,8 +142,8 @@ class P extends(r = Chunk442837.ZP.PersistedStore) {
     return O
   }
 }
-m(P, "displayName", "FrecencyStore"), m(P, "persistKey", "FrecencyStore");
-let D = new P(Chunk570140.Z, {
+h(R, "displayName", "FrecencyStore"), h(R, "persistKey", "FrecencyStore");
+let w = new R(Chunk570140.Z, {
   CHANNEL_SELECT: A,
   VOICE_CHANNEL_SELECT: A,
   USER_SETTINGS_PROTO_UPDATE: C

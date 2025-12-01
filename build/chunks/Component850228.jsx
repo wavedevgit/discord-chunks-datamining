@@ -2,7 +2,7 @@
 /** chunk id: 850228, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk439041 = require("./439041.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk969590 = require("./969590.js");
-class _ extends Chunk473749.PureComponent {
+class p extends Chunk473749.PureComponent {
   componentDidMount() {
     null == this.props.adyenPaymentData && null != this.props.cashAppPayComponent && Chunk559725.cp()
   }
@@ -50,7 +50,7 @@ class _ extends Chunk473749.PureComponent {
     })
   }
 }
-let p = Chunk442837.ZP.connectStores([Chunk439041.Z, Chunk975060.Z], () => ({
+let _ = Chunk442837.ZP.connectStores([Chunk439041.Z, Chunk975060.Z], () => ({
   cashAppPayComponent: Chunk439041.Z.cashAppPayComponent,
   adyenPaymentData: Chunk975060.Z.adyenPaymentData
-}))(_)
+}))(p)

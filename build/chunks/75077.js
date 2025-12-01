@@ -2,10 +2,10 @@
 /** chunk id: 75077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZM: () => p,
+  ZM: () => _,
   gx: () => d,
-  mN: () => m,
-  re: () => h
+  mN: () => h,
+  re: () => m
 }), require("./539854.js"), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 let d = (e, t, n) => (0, i.wj)(e) ? t : n,
   f = 3,
-  _ = e => {
+  p = e => {
     let {
       cards: t,
       perksCards: n,
@@ -44,7 +44,7 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
       card: n.newAppStylesUpdateJune2024
     }), t.push(...o), t
   },
-  p = e => {
+  _ = e => {
     let {
       perksCards: t,
       variant: n,
@@ -61,7 +61,7 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
         f = false === i ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : a === c.a$.FP_ONLY ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
         break;
       case l.gM.WHATS_NEW:
-        f = _({
+        f = p({
           cards: f,
           perksCards: t,
           showProfileWidgets: s,
@@ -80,7 +80,7 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
     }
     return r && (f = f.filter(e => !e.hideOnNarrowScreen)), f
   },
-  h = e => {
+  m = e => {
     let t = (0, r.e7)([o.Z], () => o.Z.getPremiumTypeSubscription()),
       n = null != t ? s.ZP.getPremiumPlanItem(t) : null,
       i = (null != n ? s.ZP.getSkuIdForPlan(n.planId) : null) === c.Si.TIER_2;
@@ -95,7 +95,7 @@ let d = (e, t, n) => (0, i.wj)(e) ? t : n,
       subtitle: u.intl.string(u.t["5TFEXv"])
     }
   },
-  m = () => {
+  h = () => {
     let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
     return (0, Chunk74538.I5)(module)
   }

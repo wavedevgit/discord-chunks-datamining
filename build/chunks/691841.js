@@ -18,9 +18,9 @@ function l(e) {
     state: d,
     onFocus: f
   } = e, {
-    renderWindow: _
-  } = r.useContext(o.ZP), p = (e, t) => {
-    let n = _.document.querySelector(e);
+    renderWindow: p
+  } = r.useContext(o.ZP), _ = (e, t) => {
+    let n = p.document.querySelector(e);
     if (null != n) {
       var r;
       null == (r = u.current) || r.scrollIntoViewNode({
@@ -28,14 +28,14 @@ function l(e) {
       })
     }
     null == f || f(+t)
-  }, h = (e, t) => {
+  }, m = (e, t) => {
     var n;
     if (null == (n = u.current) || n.scrollToTop(), e && null != d.query) {
       let e = d.query.typeInfo.focusMode,
         n = e !== s.QZ.MANUAL && (e !== s.QZ.AUTO_WHEN_FILTERED || 0 !== d.query.queryText.length);
       d.isVisible && (true !== t || false !== n) ? (g.setFocus("0"), null == f || f(0)) : (g.setFocus(null), null == f || f(null))
     }
-  }, m = e => {
+  }, h = e => {
     var t;
     if (null == (t = u.current) || t.scrollToBottom(), e && null != d.query && d.query.resultCount > 0) {
       let e = d.query.resultCount - 1;
@@ -46,14 +46,14 @@ function l(e) {
     isEnabled: d.isVisible,
     orientation: a.hy.VERTICAL,
     useVirtualFocus: true,
-    setFocus: p,
-    onNavigateNextAtEnd: () => h(true),
-    onNavigatePreviousAtStart: () => m(true),
-    scrollToStart: () => (h(false, false), Promise.resolve()),
-    scrollToEnd: () => (m(false), Promise.resolve())
-  }), E = r.useRef(h);
+    setFocus: _,
+    onNavigateNextAtEnd: () => m(true),
+    onNavigatePreviousAtStart: () => h(true),
+    scrollToStart: () => (m(false, false), Promise.resolve()),
+    scrollToEnd: () => (h(false), Promise.resolve())
+  }), E = r.useRef(m);
   return r.useEffect(() => {
-    E.current = h
+    E.current = m
   }), r.useEffect(() => {
     E.current(true, true)
   }, [null == (t = d.query) ? true : t.type, null == (n = d.query) ? true : n.queryText, null == (l = d.query) ? true : l.isLoading, d.isVisible]), g

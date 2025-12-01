@@ -2,8 +2,8 @@
 /** chunk id: 622724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => h,
-  Z: () => p
+  T: () => m,
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,32 +18,32 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function _(e) {
   let {
     user: t,
     guildId: n,
     color: s,
     onAction: d,
-    location: p = o.Z.CONTEXT_MENU,
-    appContext: h
-  } = e, m = (0, c.oV)(p), g = (0, i.e7)([u.default], () => u.default.getId() === t.id);
-  return !m || g || t.isNonUserBot() ? null : (0, r.jsx)(a.sNh, {
+    location: _ = o.Z.CONTEXT_MENU,
+    appContext: m
+  } = e, h = (0, c.oV)(_), g = (0, i.e7)([u.default], () => u.default.getId() === t.id);
+  return !h || g || t.isNonUserBot() ? null : (0, r.jsx)(a.sNh, {
     id: "report-user",
     color: s,
-    label: _.intl.string(_.t.A1MM3D),
-    action: () => (0, l.pX)(t, n === f.ME ? true : n, d, h)
+    label: p.intl.string(p.t.A1MM3D),
+    action: () => (0, l.pX)(t, n === f.ME ? true : n, d, m)
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     user: t,
     guildId: n,
     color: o,
     onAction: c,
     appContext: u
-  } = e, _ = (0, i.e7)([s.ZP], () => s.ZP.get("iar_testing")), p = (0, i.e7)([d.default], () => d.default.getCurrentUser());
-  return null != p && (t.id === p.id || t.isNonUserBot() || !p.isStaff() || !_) ? null : (0, r.jsx)(a.sNh, {
+  } = e, p = (0, i.e7)([s.ZP], () => s.ZP.get("iar_testing")), _ = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  return null != _ && (t.id === _.id || t.isNonUserBot() || !_.isStaff() || !p) ? null : (0, r.jsx)(a.sNh, {
     id: "staff-test-report-user",
     color: o,
     label: "[STAFF] Test Profile Report",

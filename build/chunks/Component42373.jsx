@@ -45,7 +45,7 @@ function v(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,37 +56,37 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function T(e) {
   let t;
   switch (e) {
-    case m.NA.EMOJIS:
+    case h.NA.EMOJIS:
       t = b.emojisBackground;
       break;
-    case m.NA.REFERRAL_PROGRAM:
+    case h.NA.REFERRAL_PROGRAM:
       t = b.referralProgramBackground;
       break;
-    case m.NA.NO_LIMITS:
+    case h.NA.NO_LIMITS:
       t = b.noLimitsBackground;
       break;
-    case m.NA.YOUR_SPACE:
+    case h.NA.YOUR_SPACE:
       t = b.yourSpaceBackground;
       break;
-    case m.NA.SERVER_PROFILES:
+    case h.NA.SERVER_PROFILES:
       t = b.serverProfilesBackground;
       break;
-    case m.NA.SHOW_YOUR_STYLE:
+    case h.NA.SHOW_YOUR_STYLE:
       t = b.yourStyleBackground;
       break;
-    case m.NA.CUSTOM_THEMES:
+    case h.NA.CUSTOM_THEMES:
       t = b.customThemesBackground;
       break;
-    case m.NA.DISPLAY_NAME_STYLES:
+    case h.NA.DISPLAY_NAME_STYLES:
       t = b.displayNameStylesBackground;
       break;
     default:
@@ -100,22 +100,22 @@ let A = e => {
       onClick: n,
       debouncedOnClickAnalytics: i,
       enablePremiumBrandRefreshDesign: a
-    } = e, s = (0, f.ZP)(), d = (0, c.wj)(s), _ = d ? u.Tt.WHITE : u.Tt.BRAND, p = () => {
+    } = e, s = (0, f.ZP)(), d = (0, c.wj)(s), p = d ? u.Tt.WHITE : u.Tt.BRAND, _ = () => {
       i(), n()
     };
     return a ? (0, r.jsx)("div", {
       className: y.bentoBoxButton,
       children: (0, r.jsx)(l.zxk, {
         variant: "secondary",
-        onClick: p,
+        onClick: _,
         text: t
       })
     }) : (0, r.jsx)(u.zx, {
       "data-migration-pending": true,
       look: u.iL.OUTLINED,
-      color: _,
+      color: p,
       className: o()(b.bentoBoxButton, d ? b.bentoBoxButtonWhite : b.bentoBoxButtonBrand),
-      onClick: p,
+      onClick: _,
       children: t
     })
   },
@@ -128,94 +128,94 @@ let A = e => {
         previewImage: u,
         videoUrl: f,
         shouldLoadVideo: O,
-        index: I,
+        index: S,
         customVideoStyle: C,
         isReducedMotion: N,
-        onClick: R,
-        badgeText: P,
-        size: D,
-        enablePremiumBrandRefreshDesign: w
+        onClick: P,
+        badgeText: R,
+        size: w,
+        enablePremiumBrandRefreshDesign: D
       } = e,
-      L = (0, h.rO)(),
-      x = i.useRef(null),
-      M = i.useRef(0),
-      k = S(n),
-      j = i.useMemo(() => (0, s.debounce)(() => {
-        p.default.track(g.rMx.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
+      x = (0, m.rO)(),
+      L = i.useRef(null),
+      j = i.useRef(0),
+      M = T(n),
+      k = i.useMemo(() => (0, s.debounce)(() => {
+        _.default.track(g.rMx.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
           box_type: (0, s.snakeCase)(n)
         })
       }, 800), [n]),
       U = () => {
-        null == x.current || N || (x.current.currentTime = M.current, x.current.play())
+        null == L.current || N || (L.current.currentTime = j.current, L.current.play())
       },
       G = () => {
-        null == x.current || N || (M.current = x.current.currentTime, x.current.pause())
+        null == L.current || N || (j.current = L.current.currentTime, L.current.pause())
       },
-      B = w ? y : b;
-    t = w ? D === m.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : D === m.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
-    let Z = () => (0, r.jsxs)("div", {
-        className: o()(B.textBox, B["".concat(D)]),
+      Z = D ? y : b;
+    t = D ? w === h.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : w === h.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
+    let B = () => (0, r.jsxs)("div", {
+        className: o()(Z.textBox, Z["".concat(w)]),
         children: [(0, r.jsxs)("div", {
-          children: [null != P && (0, r.jsx)("div", {
-            className: B.badge,
+          children: [null != R && (0, r.jsx)("div", {
+            className: Z.badge,
             children: (0, r.jsx)(d.Heading, {
               variant: "eyebrow",
               color: "always-white",
-              children: P
+              children: R
             })
           }), (0, r.jsx)(d.Heading, {
             variant: t,
             color: "header-primary",
-            className: o()(B.header, !w && B["".concat(D)]),
+            className: o()(Z.header, !D && Z["".concat(w)]),
             children: a
           })]
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/medium",
-          color: w ? "text-primary" : "text-muted",
-          className: B.description,
+          color: D ? "text-primary" : "text-muted",
+          className: Z.description,
           children: l
-        }), null != c && null != R && (0, r.jsx)(A, {
+        }), null != c && null != P && (0, r.jsx)(A, {
           descriptionCta: c,
-          onClick: R,
-          debouncedOnClickAnalytics: j,
-          enablePremiumBrandRefreshDesign: w
+          onClick: P,
+          debouncedOnClickAnalytics: k,
+          enablePremiumBrandRefreshDesign: D
         })]
       }),
       F = () => (0, r.jsx)("div", {
-        className: o()(B.boxArtContainer, B["".concat(D)]),
-        children: (0, r.jsx)(_.Z, {
+        className: o()(Z.boxArtContainer, Z["".concat(w)]),
+        children: (0, r.jsx)(p.Z, {
           playsInline: true,
           preload: O ? "auto" : "none",
           muted: true,
           poster: u,
           loop: true,
-          className: o()(B.boxVideo, {
+          className: o()(Z.boxVideo, {
             [C]: null != C
           }),
-          ref: x,
+          ref: L,
           children: (0, r.jsx)("source", {
             src: f,
-            type: L ? E.m.MP4 : E.m.WEBM
+            type: x ? E.m.MP4 : E.m.WEBM
           })
         }, f)
       }),
-      V = I % 2 != 0,
+      V = S % 2 != 0,
       H = () => V ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(Z, {}), (0, r.jsx)(F, {})]
+        children: [(0, r.jsx)(B, {}), (0, r.jsx)(F, {})]
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(F, {}), (0, r.jsx)(Z, {})]
+        children: [(0, r.jsx)(F, {}), (0, r.jsx)(B, {})]
       }),
-      W = {
-        className: o()(w ? y.backgroundColor : k, B.boxContainer, B["".concat(D)], w && y.gradientBackground),
+      Y = {
+        className: o()(D ? y.backgroundColor : M, Z.boxContainer, Z["".concat(w)], D && y.gradientBackground),
         onMouseEnter: U,
         onFocus: U,
         onBlur: G,
         onMouseLeave: G
       };
-    return w ? (0, r.jsx)(d.$1m, T(v({}, W), {
+    return D ? (0, r.jsx)(d.$1m, I(v({}, Y), {
       color: "purple",
       children: (0, r.jsx)(H, {})
-    })) : (0, r.jsx)("div", T(v({}, W), {
+    })) : (0, r.jsx)("div", I(v({}, Y), {
       children: (0, r.jsx)(H, {})
     }))
   }

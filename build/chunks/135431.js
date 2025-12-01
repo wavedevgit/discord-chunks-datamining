@@ -20,16 +20,16 @@ function c(e) {
     integrationTypesConfig: u,
     guildId: d,
     channelId: f,
-    disableGuildSelect: _,
-    source: p,
-    oauth2Callback: h
+    disableGuildSelect: p,
+    source: _,
+    oauth2Callback: m
   } = e;
   if (null != n) {
     o.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
       application_id: t,
       guild_id: d,
       auth_type: "custom_url",
-      source: p,
+      source: _,
       device_platform: r.tq ? "mobile_web" : "desktop_web"
     }), (0, s.q)({
       href: n
@@ -41,14 +41,14 @@ function c(e) {
       application_id: t,
       guild_id: d,
       auth_type: "in_app",
-      source: p,
+      source: _,
       device_platform: r.tq ? "mobile_web" : "desktop_web"
     }), (0, a.openOAuth2Modal)({
       clientId: t,
       guildId: d,
       channelId: f,
-      disableGuildSelect: _,
-      callback: h
+      disableGuildSelect: p,
+      callback: m
     });
     return
   }
@@ -56,16 +56,16 @@ function c(e) {
     application_id: t,
     guild_id: d,
     auth_type: "in_app",
-    source: p,
+    source: _,
     device_platform: r.tq ? "mobile_web" : "desktop_web"
   }), (0, a.openOAuth2Modal)({
     clientId: t,
     guildId: d,
     channelId: f,
-    disableGuildSelect: _,
+    disableGuildSelect: p,
     scopes: c.scopes,
     permissions: null != c.permissions ? i.vB(c.permissions) : true,
-    callback: h
+    callback: m
   }))
 }
 

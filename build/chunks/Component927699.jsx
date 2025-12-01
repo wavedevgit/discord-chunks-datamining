@@ -29,19 +29,19 @@ function E(e) {
     errors: n,
     onTextChange: a,
     pendingText: f,
-    placeholder: p,
+    placeholder: _,
     currentText: E,
     className: b,
     innerClassName: y,
     disabled: O = false,
     disableThemedBackground: v = false
-  } = e, [I, T] = i.useState(null != f ? f : E), [S, A] = i.useState((0, c.JM)(I)), C = i.useRef(false);
+  } = e, [S, I] = i.useState(null != f ? f : E), [T, A] = i.useState((0, c.JM)(S)), C = i.useRef(false);
 
   function N(e, t, n) {
-    t !== I && (T(t), A(n), a(t))
+    t !== S && (I(t), A(n), a(t))
   }
 
-  function R() {
+  function P() {
     return new Promise(e => {
       e({
         shouldClear: false,
@@ -54,23 +54,23 @@ function E(e) {
   }, []), i.useEffect(() => {
     if (true === f) {
       let e = (0, c.JM)(E);
-      T(E), A(e)
+      I(E), A(e)
     }
   }, [f, E]), (0, r.jsx)("div", {
-    className: o()(m.body, b),
+    className: o()(h.body, b),
     children: (0, r.jsxs)(d.Z, {
       title: t,
       errors: n,
       disabled: O,
       children: [(0, r.jsx)(u.ZP, {
-        innerClassName: o()(m.textArea, y),
-        editorClassName: m.editorTextArea,
-        maxCharacterCount: _.$n,
+        innerClassName: o()(h.textArea, y),
+        editorClassName: h.editorTextArea,
+        maxCharacterCount: p.$n,
         onChange: N,
-        placeholder: p,
+        placeholder: _,
         channel: g,
-        textValue: I,
-        richValue: S,
+        textValue: S,
+        richValue: T,
         type: l.Ie.CUSTOM_GIFT,
         onBlur: () => {
           C.current = false
@@ -79,11 +79,11 @@ function E(e) {
           C.current = true
         },
         focused: C.current,
-        onSubmit: R,
+        onSubmit: P,
         disableThemedBackground: v
       }), (0, r.jsx)(s.nn4, {
-        children: h.intl.format(h.t["+DFxLc"], {
-          maxLength: _.$n
+        children: m.intl.format(m.t["+DFxLc"], {
+          maxLength: p.$n
         })
       })]
     })

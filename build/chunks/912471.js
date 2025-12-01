@@ -35,7 +35,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,64 +47,64 @@ function I(e) {
   }
   return e
 }
-let T = 27,
-  S = 15 * Chunk70956.Z.Millis.MINUTE,
+let I = 27,
+  T = 15 * Chunk70956.Z.Millis.MINUTE,
   A = Chunk70956.Z.Millis.SECOND,
   C = "LAST_CLIENT_HEARTBEAT_SESSION",
   N = "user",
-  R = new Chunk710845.Z("SessionHeartbeatScheduler"),
-  P = null,
-  D = null,
-  w = 0,
-  L = 0,
-  x = {
+  P = new Chunk710845.Z("SessionHeartbeatScheduler"),
+  R = null,
+  w = null,
+  D = 0,
+  x = 0,
+  L = {
     state: "uninitialized"
   },
-  M = Chunk19780.Z.getState(),
-  k = (0, Chunk127438.H)(),
-  j = Chunk314897.default.getToken();
+  j = Chunk19780.Z.getState(),
+  M = (0, Chunk127438.H)(),
+  k = Chunk314897.default.getToken();
 
 function U() {
-  if (null != P) return;
-  let e = 0 === L ? 0 : S - (performance.now() - L);
+  if (null != R) return;
+  let e = 0 === x ? 0 : T - (performance.now() - x);
   Chunk960048.Z.addBreadcrumb({
     message: "Received Last Heartbeat Event Timestamp. Time Until Next Heartbeat: ".concat(module / 1e3, " seconds. Scheduling Heartbeat")
-  }), P = {
+  }), R = {
     type: "timeout",
     id: setTimeout(() => {
-      F(), P = {
+      F(), R = {
         type: "interval",
         id: setInterval(() => {
           F()
-        }, S)
+        }, T)
       }
     }, module)
   }
 }
 
 function G() {
-  if (null == P) returnfalse;
-  switch (P.type) {
+  if (null == R) returnfalse;
+  switch (R.type) {
     case "timeout":
-      clearTimeout(P.id);
+      clearTimeout(R.id);
       break;
     case "interval":
-      clearInterval(P.id);
+      clearInterval(R.id);
       break;
     default:
-      P.type
+      R.type
   }
-  return P = null, true
+  return R = null, true
 }
 
-function B() {
+function Z() {
   G() && (Chunk960048.Z.addBreadcrumb({
     category: N,
     message: "Stopping Analytics Heartbeat"
   }), (0, Chunk188471.Z)())
 }
 
-function Z() {
+function B() {
   var e;
   let t = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0;
   return {
@@ -127,72 +127,72 @@ async function F() {
       initialized: exports.createdAtTimestamp
     }
   });
-  let r = I({
+  let r = S({
     client_heartbeat_initialization_timestamp: exports.createdAtTimestamp,
-    client_heartbeat_version: T
-  }, (0, Chunk343420.O)(), Z());
-  Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT, Chunk772848), L = performance.now(), (0, Chunk188471.Z)()
+    client_heartbeat_version: I
+  }, (0, Chunk343420.O)(), B());
+  Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT, Chunk772848), x = performance.now(), (0, Chunk188471.Z)()
 }
 
 function V() {
-  if (!(null != j && (0, Chunk733879.y)()) || performance.now() - L <= S) return;
+  if (!(null != k && (0, Chunk733879.y)()) || performance.now() - x <= T) return;
   let e = {
-    client_heartbeat_version: T
+    client_heartbeat_version: I
   };
   Chunk626135.default.track(Chunk981631.rMx.CLIENT_HEARTBEAT_SKIPPED, module)
 }
 
 function H() {}
 
-function W() {
+function Y() {
   let e = [];
-  return null != j && (k && module.push("foregrounded"), M === Chunk981631.hes.RTC_CONNECTED && module.push("rtc_connected")), {
+  return null != k && (M && module.push("foregrounded"), j === Chunk981631.hes.RTC_CONNECTED && module.push("rtc_connected")), {
     active: module.length > 0,
-    ver: T,
+    ver: I,
     reasons: module
   }
 }
 
-function Y() {
-  return W().active
+function W() {
+  return Y().active
 }
 
 function K() {
-  Y() ? U() : B(), J()
+  W() ? U() : Z(), J()
 }
 
 function z() {
-  null == D && (D = {
+  null == w && (w = {
     id: setInterval(() => {
       V()
-    }, S),
+    }, T),
     type: "interval"
   })
 }
 
 function q(e) {
   let t = performance.now();
-  if (!(t - w < A)) try {
-    o.K.set(C, e), w = t
+  if (!(t - D < A)) try {
+    o.K.set(C, e), D = t
   } catch (e) {
-    m.Z.captureException(e)
+    h.Z.captureException(e)
   }
 }
 
-function X(e) {
-  return null == e ? null : e.version !== b.EI ? (R.warn("Throwing away client session with invalid version: ".concat(e.version, ", expected ").concat(b.EI)), null) : e
+function Q(e) {
+  return null == e ? null : e.version !== b.EI ? (P.warn("Throwing away client session with invalid version: ".concat(e.version, ", expected ").concat(b.EI)), null) : e
 }
 
-function Q() {
-  Chunk433517.K.remove(C), x = {
+function X() {
+  Chunk433517.K.remove(C), L = {
     state: "loaded",
     session: null
-  }, B(), L = 0
+  }, Z(), x = 0
 }
 
 function J() {
   var e;
-  null == (e = Chunk38618.Z.getSocket()) || module.handleActiveStateChange(W())
+  null == (e = Chunk38618.Z.getSocket()) || module.handleActiveStateChange(Y())
 }
 async function $() {
   let e = await eo(false);
@@ -204,30 +204,30 @@ async function $() {
 
 function ee() {
   let e = Chunk314897.default.getToken();
-  j !== module && (j = module, Q()), K()
+  k !== module && (k = module, X()), K()
 }
 
 function et() {
   let e = Chunk19780.Z.getState();
-  M !== module && (M = module, K())
+  j !== module && (j = module, K())
 }
 
 function en(e) {
   let {
     focused: t
   } = e;
-  k !== t && (k = t, K())
+  M !== t && (M = t, K())
 }
 
 function er(e) {
   let {
     state: t
   } = e, n = t === O.$7l.ACTIVE;
-  k !== n && (k = n, K())
+  M !== n && (M = n, K())
 }
 
 function ei() {
-  M = Chunk19780.Z.getState(), k = (0, Chunk127438.H)(), ee()
+  j = Chunk19780.Z.getState(), M = (0, Chunk127438.H)(), ee()
 }
 
 function ea() {
@@ -239,20 +239,20 @@ async function eo() {
   var e;
   let t = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     n = null,
-    a = "loaded" === x.state ? null == (e = x.session) ? true : module.uuid : null;
+    a = "loaded" === L.state ? null == (e = L.session) ? true : module.uuid : null;
   try {
-    n = "uninitialized" === x.state ? X(await Chunk433517.K.getAfterRefresh(C)) : x.session
+    n = "uninitialized" === L.state ? Q(await Chunk433517.K.getAfterRefresh(C)) : L.session
   } catch (e) {
     Chunk960048.Z.captureException(module)
   }
   return (() => {
     let e = Date.now();
-    if (Y() ? ((null == require || (0, Chunk686325.qK)(require)) && (n = {
+    if (W() ? ((null == require || (0, Chunk686325.qK)(require)) && (n = {
         uuid: (0, Chunk772848.Z)(),
         createdAtTimestamp: module,
         lastUsedTimestamp: module,
         version: Chunk686325.EI
-      }, w = 0), require.lastUsedTimestamp = module, q(require)) : null != require && (0, Chunk686325.qK)(require) && (n = null), x = {
+      }, D = 0), require.lastUsedTimestamp = module, q(require)) : null != require && (0, Chunk686325.qK)(require) && (n = null), L = {
         state: "loaded",
         session: require
       }, null != require && Chunk442837 !== require.uuid && exports) {
@@ -264,6 +264,6 @@ async function eo() {
 }
 
 function es() {
-  let e = "uninitialized" === x.state ? X(Chunk433517.K.get(C)) : x.session;
+  let e = "uninitialized" === L.state ? Q(Chunk433517.K.get(C)) : L.session;
   return null == module || (0, Chunk686325.qK)(module) ? null : module
 }

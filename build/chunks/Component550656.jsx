@@ -15,9 +15,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk725027 = require("./725027.jsx"),
   Chunk464281 = require("./464281.js"),
   Chunk495511 = require("./495511.js");
-let p = 11,
-  h = ["left", "center", "right"],
-  m = ["top", "center", "bottom"];
+let _ = 11,
+  m = ["left", "center", "right"],
+  h = ["top", "center", "bottom"];
 
 function g(e) {
   let {
@@ -29,19 +29,19 @@ function g(e) {
     content: b,
     position: y = "top",
     align: O = "center",
-    spacing: v = p,
-    caretConfig: I,
-    layerContext: T,
-    animationStyle: S,
+    spacing: v = _,
+    caretConfig: S,
+    layerContext: I,
+    animationStyle: T,
     positionKey: A
   } = e, C = i.useRef(null), {
     isRichTooltip: N
-  } = (0, d.nr)(), R = i.useMemo(() => ("left" === y || "right" === y ? m : h).includes(O) ? O : "center", [y, O]);
+  } = (0, d.nr)(), P = i.useMemo(() => ("left" === y || "right" === y ? h : m).includes(O) ? O : "center", [y, O]);
   if (!n) return null;
-  let P = (0, r.jsx)(c.jRF, {
+  let R = (0, r.jsx)(c.jRF, {
     targetRef: null != g ? g : a,
     position: y,
-    align: R,
+    align: P,
     spacing: v,
     positionKey: A,
     autoInvert: true,
@@ -51,37 +51,37 @@ function g(e) {
       let {
         position: l,
         nudge: d
-      } = e, p = null != l ? l : y, h = null != (t = null == I ? true : I.align) ? t : null != d && 0 !== d ? "custom" : "center", m = null != (i = null != (n = null == I ? true : I.customOffset) ? n : d) ? i : 0, g = {
-        position: null != (a = null == I ? true : I.position) ? a : (0, f.Av)(p),
-        align: h,
-        customOffset: "custom" === h ? m : true
+      } = e, _ = null != l ? l : y, m = null != (t = null == S ? true : S.align) ? t : null != d && 0 !== d ? "custom" : "center", h = null != (i = null != (n = null == S ? true : S.customOffset) ? n : d) ? i : 0, g = {
+        position: null != (a = null == S ? true : S.position) ? a : (0, f.Av)(_),
+        align: m,
+        customOffset: "custom" === m ? h : true
       }, O = (0, r.jsxs)("div", {
         ref: C,
         id: E,
-        className: o()(_.tooltip, {
-          [_.richTooltip]: N
+        className: o()(p.tooltip, {
+          [p.richTooltip]: N
         }),
         role: "tooltip",
-        "data-position": p,
+        "data-position": _,
         "data-mana-component": "tooltip",
         children: [(0, r.jsx)(u._, {
           caretConfig: g
         }), (0, r.jsx)("div", {
-          className: _.tooltipContent,
+          className: p.tooltipContent,
           children: "string" == typeof b ? (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             children: b
           }) : b
         })]
       });
-      return S ? (0, r.jsx)(s.animated.div, {
-        style: S,
+      return T ? (0, r.jsx)(s.animated.div, {
+        style: T,
         children: O
       }) : O
     }
   });
-  return null != T ? (0, r.jsx)(l.mh4, {
-    layerContext: T,
-    children: P
-  }) : P
+  return null != I ? (0, r.jsx)(l.mh4, {
+    layerContext: I,
+    children: R
+  }) : R
 }

@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk127947 = require("./127947.js"),
   Chunk893973 = require("./893973.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +34,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function T(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -97,43 +97,43 @@ class C extends Chunk473749.Component {
         return (0, r.jsx)(d.u, {
           asContainer: true,
           text: y.intl.string(y.t.lfIHs4),
-          children: (0, r.jsxs)(f.P3F, A(T({}, e), {
+          children: (0, r.jsxs)(f.P3F, A(I({}, e), {
             innerRef: this.ref,
             tabIndex: a,
             onClick: e => {
               this.handleAddReactionClick(e)
             },
-            onMouseEnter: () => (0, _.x)(b.qR.AddReactionPopoutMouseEntered),
-            onFocus: () => (0, _.x)(b.qR.AddReactionPopoutFocused),
+            onMouseEnter: () => (0, p.x)(b.qR.AddReactionPopoutMouseEntered),
+            onFocus: () => (0, p.x)(b.qR.AddReactionPopoutFocused),
             className: o()(l.reactionBtn, {
               [l.active]: s
             }, t),
-            children: [(0, r.jsx)(f.EO4, T({}, u)), n]
+            children: [(0, r.jsx)(f.EO4, I({}, u)), n]
           }))
         })
       }
     })
   }
   constructor(...e) {
-    super(...e), I(this, "state", {
+    super(...e), S(this, "state", {
       isReactionPickerActive: false
-    }), I(this, "ref", i.createRef()), I(this, "onAddReaction", (e, t) => {
+    }), S(this, "ref", i.createRef()), S(this, "onAddReaction", (e, t) => {
       if (null == e) return;
       let {
         channel: n,
         message: r,
         isForumToolbar: i
       } = this.props;
-      (0, h.rU)(n.id, r.id, (0, m.g1)(e), i ? h.TW.FORUM_TOOLBAR : h.TW.MESSAGE_INLINE_BUTTON, {
+      (0, m.rU)(n.id, r.id, (0, h.g1)(e), i ? m.TW.FORUM_TOOLBAR : m.TW.MESSAGE_INLINE_BUTTON, {
         burst: t
       })
-    }), I(this, "handleReactionPickerToggle", () => {
+    }), S(this, "handleReactionPickerToggle", () => {
       this.setState(e => ({
         isReactionPickerActive: !e.isReactionPickerActive
       }))
-    }), I(this, "handleAddReactionClick", e => {
+    }), S(this, "handleAddReactionClick", e => {
       e.stopPropagation(), this.handleReactionPickerToggle()
-    }), I(this, "renderReactionPopout", e => {
+    }), S(this, "renderReactionPopout", e => {
       let {
         closePopout: t
       } = e, {

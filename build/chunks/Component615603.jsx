@@ -2,7 +2,7 @@
 /** chunk id: 615603, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => M
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -39,7 +39,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function R(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,13 +63,13 @@ function P(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e) {
+function D(e) {
   let {
     guildBoostSlot: t,
     isCancellable: n,
@@ -78,24 +78,24 @@ function w(e) {
     premiumSubscription: s,
     useReducedMotion: d,
     fractionalState: f
-  } = e, _ = i.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), p = (0, b.tl)(t), h = (null == s ? true : s.isPaused) === true && f === S.a$.NONE, m = A.intl.string(A.t.mOWsF1);
+  } = e, p = i.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), _ = (0, b.tl)(t), m = (null == s ? true : s.isPaused) === true && f === T.a$.NONE, h = A.intl.string(A.t.mOWsF1);
   return (0, r.jsxs)("li", {
     className: C.unappliedGuildBoostSlot,
     children: [(0, r.jsxs)("div", {
       className: C.unappliedGuildBoostSlotContentPrimary,
-      children: [(0, r.jsx)(I.Z, {
+      children: [(0, r.jsx)(S.Z, {
         className: C.unappliedGuildBoostSlotIcon,
         hasCooldown: t.isOnCooldown(),
-        isCanceled: p,
+        isCanceled: _,
         useReducedMotion: d
-      }), p && null != s ? (0, r.jsx)(u.Text, {
+      }), _ && null != s ? (0, r.jsx)(u.Text, {
         color: "text-muted",
         variant: "text-sm/medium",
         children: A.intl.format(A.t.Z4ULRD, {
           date: s.currentPeriodEnd
         })
-      }) : t.isOnCooldown() && null != _ ? (0, r.jsx)(v.Z, {
-        cooldown: _.getTime()
+      }) : t.isOnCooldown() && null != p ? (0, r.jsx)(v.Z, {
+        cooldown: p.getTime()
       }) : (0, r.jsx)(u.Text, {
         className: C.__invalid_unappliedGuildBoostSlotDescription,
         color: "text-muted",
@@ -104,31 +104,31 @@ function w(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: C.unappliedGuildBoostSlotContentSecondary,
-      children: [n && !p && (0, r.jsx)(l.Z, {
-        shouldShow: h,
-        text: m,
-        "aria-label": m.toString(),
+      children: [n && !_ && (0, r.jsx)(l.Z, {
+        shouldShow: m,
+        text: h,
+        "aria-label": h.toString(),
         children: e => (0, r.jsx)("div", {
           className: C.unappliedGuildBoostSlotCta,
-          children: (0, r.jsx)(c.Avr, D(R({}, e), {
+          children: (0, r.jsx)(c.Avr, w(P({}, e), {
             variant: "primary",
             text: A.intl.string(A.t.twFU3R),
             onClick: () => a(t),
-            disabled: h,
+            disabled: m,
             size: "sm"
           }))
         })
-      }), p && (0, r.jsx)(l.Z, {
-        shouldShow: h,
-        text: m,
-        "aria-label": m.toString(),
+      }), _ && (0, r.jsx)(l.Z, {
+        shouldShow: m,
+        text: h,
+        "aria-label": h.toString(),
         children: e => (0, r.jsx)("div", {
           className: C.unappliedGuildBoostSlotCta,
-          children: (0, r.jsx)(c.Avr, D(R({}, e), {
+          children: (0, r.jsx)(c.Avr, w(P({}, e), {
             variant: "primary",
             text: A.intl.string(A.t["2glQNp"]),
             onClick: () => o(t),
-            disabled: h,
+            disabled: m,
             size: "sm"
           }))
         })
@@ -137,41 +137,41 @@ function w(e) {
   }, t.id)
 }
 
-function L(e) {
-  (0, u.ZDy)(async () => t => (0, r.jsx)(_.default, D(R({}, t), {
+function x(e) {
+  (0, u.ZDy)(async () => t => (0, r.jsx)(p.default, w(P({}, t), {
     guildBoostSlots: [e],
-    locationSection: T.jXE.SETTINGS_PREMIUM
+    locationSection: I.jXE.SETTINGS_PREMIUM
   })))
 }
 
-function x(e) {
-  (0, u.ZDy)(async () => t => (0, r.jsx)(p.default, D(R({}, t), {
+function L(e) {
+  (0, u.ZDy)(async () => t => (0, r.jsx)(_.default, w(P({}, t), {
     guildBoostSlot: e
   })))
 }
 
-function M(e) {
-  (0, u.ZDy)(async () => t => (0, r.jsx)(h.default, D(R({}, t), {
+function j(e) {
+  (0, u.ZDy)(async () => t => (0, r.jsx)(m.default, w(P({}, t), {
     guildBoostSlotId: e.id
   })))
 }
-let k = function(e) {
+let M = function(e) {
   let t, n, a, {
       guildBoostSlots: c
     } = e,
-    _ = (0, s.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()),
-    p = (null == _ ? true : _.isPausedOrPausePending) === true,
+    p = (0, s.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()),
+    _ = (null == p ? true : p.isPausedOrPausePending) === true,
     {
-      fractionalState: h
+      fractionalState: m
     } = (0, f.Z)(),
     v = (0, s.e7)([d.Z], () => d.Z.useReducedMotion),
-    I = (0, s.e7)([g.default], () => g.default.getCurrentUser()),
-    T = h === S.a$.FP_SUB_PAUSED,
-    N = p && !T,
+    S = (0, s.e7)([g.default], () => g.default.getCurrentUser()),
+    I = m === T.a$.FP_SUB_PAUSED,
+    N = _ && !I,
     {
-      appliedGuildBoostSlots: P,
-      unappliedGuildBoostSlots: k,
-      numActiveGuildBoostSlots: j,
+      appliedGuildBoostSlots: R,
+      unappliedGuildBoostSlots: M,
+      numActiveGuildBoostSlots: k,
       hasCooldownBoosts: U,
       allGuildBoostsAreOnCooldown: G
     } = i.useMemo(() => {
@@ -190,12 +190,12 @@ let k = function(e) {
         allGuildBoostsAreOnCooldown: i
       }
     }, [c]),
-    B = null != _ ? y.ZP.getNumIncludedPremiumGuildSubscriptionSlots(_.planId) : 0,
-    Z = Math.max(0, B - P.length),
-    F = j > B,
-    V = B === c.length,
-    H = V ? Z : 1,
-    W = i.useMemo(() => {
+    Z = null != p ? y.ZP.getNumIncludedPremiumGuildSubscriptionSlots(p.planId) : 0,
+    B = Math.max(0, Z - R.length),
+    F = k > Z,
+    V = Z === c.length,
+    H = V ? B : 1,
+    Y = i.useMemo(() => {
       let e = [];
       for (let t = 0; t < H; t++) e.push((0, r.jsx)(O.Z, {
         className: C.headerBoostGem,
@@ -203,19 +203,19 @@ let k = function(e) {
       }, t));
       return e
     }, [H, v]),
-    Y = i.useMemo(() => k.find(e => e.isAvailable()), [k]);
-  if (0 === k.length) return null;
-  let K = k.length;
+    W = i.useMemo(() => M.find(e => e.isAvailable()), [M]);
+  if (0 === M.length) return null;
+  let K = M.length;
   if (t = V ? A.intl.formatToPlainString(G ? A.t["3DW6Dc"] : A.t["/u15Qc"], {
       numUnappliedGuildBoostSlots: K
     }) : A.intl.formatToPlainString(G ? A.t["3DW6Dc"] : A.t.BPadnO, {
       numUnappliedGuildBoostSlots: K
-    }), y.ZP.isPremium(I)) {
+    }), y.ZP.isPremium(S)) {
     let e = (e, t) => (0, r.jsx)(u.P3F, {
       className: C.headerLearnMoreLink,
       tag: "span",
       onClick: () => {
-        (0, m.z)()
+        (0, h.z)()
       },
       children: e
     }, t);
@@ -228,7 +228,7 @@ let k = function(e) {
   } else n = G ? A.intl.string(A.t["8pcUZi"]) : A.intl.formatToPlainString(A.t.Kaw82o, {
     numUnappliedGuildBoostSlots: K
   });
-  return a = p && h === S.a$.NONE ? A.intl.string(A.t.mOWsF1) : A.intl.string(A.t.xr4m5B), (0, r.jsx)("div", {
+  return a = _ && m === T.a$.NONE ? A.intl.string(A.t.mOWsF1) : A.intl.string(A.t.xr4m5B), (0, r.jsx)("div", {
     className: C.wrapper,
     children: (0, r.jsxs)("div", {
       className: o()(C.content, [C.headerWithoutSpecialHeader]),
@@ -238,7 +238,7 @@ let k = function(e) {
           className: C.headerContentPrimary,
           children: [(0, r.jsx)("div", {
             className: C.headerBoostGems,
-            children: W
+            children: Y
           }), (0, r.jsxs)("div", {
             className: C.__invalid_headerCopy,
             children: [(0, r.jsx)(u.Heading, {
@@ -255,28 +255,28 @@ let k = function(e) {
         }), (0, r.jsx)("div", {
           className: C.headerContentSecondary,
           children: (0, r.jsx)(l.Z, {
-            shouldShow: null == Y || N,
+            shouldShow: null == W || N,
             text: a,
             "aria-label": a.toString(),
-            children: e => (0, r.jsx)(u.Button, D(R({
+            children: e => (0, r.jsx)(u.Button, w(P({
               variant: "primary",
               text: A.intl.string(A.t.BMx1iy)
             }, e), {
-              disabled: null == Y || N,
-              onClick: null != Y ? () => L(Y) : true
+              disabled: null == W || N,
+              onClick: null != W ? () => x(W) : true
             }))
           })
         })]
       }), (!V || U) && (0, r.jsx)("ul", {
         className: C.unappliedBoostSlots,
-        children: k.map(e => (0, r.jsx)(w, {
+        children: M.map(e => (0, r.jsx)(D, {
           guildBoostSlot: e,
           isCancellable: F,
-          onCancel: x,
-          onUncancel: M,
-          premiumSubscription: _,
+          onCancel: L,
+          onUncancel: j,
+          premiumSubscription: p,
           useReducedMotion: v,
-          fractionalState: h
+          fractionalState: m
         }, e.id))
       })]
     })

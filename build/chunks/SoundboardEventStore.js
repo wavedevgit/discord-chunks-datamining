@@ -2,7 +2,7 @@
 /** chunk id: 178106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -58,13 +58,13 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = [],
-  T = new(s())({
+let S = [],
+  I = new(s())({
     max: Chunk710111.zb
   }),
-  S = new Chunk704907.Z({
+  T = new Chunk704907.Z({
     computeBonus: () => 100,
-    lookupKey: e => p.Z.getSoundById(e),
+    lookupKey: e => _.Z.getSoundById(e),
     afterCompute: () => {},
     numFrequentlyItems: Chunk710111.O6
   });
@@ -74,9 +74,9 @@ function A(e) {
     sound: t,
     trigger: n
   } = e;
-  if (!M()) return;
+  if (!j()) return;
   let r = t.soundId.toString();
-  n === h.YQ.SOUNDBOARD && R(r)
+  n === m.YQ.SOUNDBOARD && P(r)
 }
 
 function C(e) {
@@ -85,87 +85,87 @@ function C(e) {
     soundId: n,
     userId: r
   } = e;
-  if (!x()) return;
+  if (!L()) return;
   let i = n.toString();
-  r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && P(i) && N(i)
+  r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && R(i) && N(i)
 }
 
 function N(e) {
-  T.set(e, e)
-}
-
-function R(e) {
-  S.track(e), I.push({
-    key: e,
-    timestamp: Date.now()
-  }), S.compute()
+  I.set(e, e)
 }
 
 function P(e) {
-  for (let t of p.Z.getSounds().values())
+  T.track(e), S.push({
+    key: e,
+    timestamp: Date.now()
+  }), T.compute()
+}
+
+function R(e) {
+  for (let t of _.Z.getSounds().values())
     if (null != t.find(t => t.soundId.toString() === e)) returntrue;
   returnfalse
 }
 
-function D(e) {
+function w(e) {
   return a().mapValues(e, e => v(y({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   }))
 }
 
-function w() {
+function D() {
   var e;
-  if (!M()) return;
+  if (!j()) return;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : module.playedSounds;
-  S.overwriteHistory(D(null != exports ? exports : {}), I)
+  T.overwriteHistory(w(null != exports ? exports : {}), S)
 }
 
-function L(e) {
+function x(e) {
   let {
     settings: {
       type: t
     },
     wasSaved: n
   } = e;
-  M() && t === E.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (I = [])
+  j() && t === E.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (S = [])
 }
 
-function x() {
+function L() {
   return (0, Chunk164878.v)({
     location: "soundboard_event_store",
     autoTrackExposure: false
   }).canSeeRecentlyHeard
 }
 
-function M() {
+function j() {
   return (0, Chunk771784.Lq)("soundboard_event_store")
 }
-class k extends(r = Chunk442837.ZP.PersistedStore) {
+class M extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(p.Z, d.Z, f.default), (null == e ? true : e.recentlyHeardCache) != null && T.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (I = e.playedEventsPendingFlush), this.syncWith([d.Z], w)
+    this.waitFor(_.Z, d.Z, f.default), (null == e ? true : e.recentlyHeardCache) != null && I.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (S = e.playedEventsPendingFlush), this.syncWith([d.Z], D)
   }
   getState() {
     return {
-      recentlyHeardCache: T.dump(),
-      playedEventsPendingFlush: I
+      recentlyHeardCache: I.dump(),
+      playedEventsPendingFlush: S
     }
   }
   hasPendingUsage() {
-    return I.length > 0
+    return S.length > 0
   }
   get playedSoundHistory() {
-    return S.usageHistory
+    return T.usageHistory
   }
   get recentlyHeardSoundIds() {
-    return T.values()
+    return I.values()
   }
   get frecentlyPlayedSounds() {
-    return S.frequently
+    return T.frequently
   }
 }
-b(k, "displayName", "SoundboardEventStore"), b(k, "persistKey", "SoundboardEventStore");
-let j = new k(Chunk570140.Z, {
+b(M, "displayName", "SoundboardEventStore"), b(M, "persistKey", "SoundboardEventStore");
+let k = new M(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: A,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: C,
-  USER_SETTINGS_PROTO_UPDATE: L
+  USER_SETTINGS_PROTO_UPDATE: x
 })

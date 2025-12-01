@@ -2,7 +2,7 @@
 /** chunk id: 473542, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => _
+  R: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -22,14 +22,14 @@ let d = e => {
       loadId: c,
       handleClose: d,
       handleComplete: f,
-      isFetching: _,
-      sku: p
+      isFetching: p,
+      sku: _
     } = (0, l.a0)({
       skuId: t,
       isGift: n,
       applicationId: u.XAJ
     });
-    return _ || null == p ? (0, r.jsx)("div", {
+    return p || null == _ ? (0, r.jsx)("div", {
       children: (0, r.jsx)(i.$jN, {
         type: i.RAz.SPINNING_CIRCLE
       })
@@ -47,7 +47,7 @@ let d = e => {
     })
   },
   f = (0, Chunk3383.F)(),
-  _ = {
+  p = {
     title: "Collectibles Checkout",
     stories: [{
       name: "Collectibles Checkout",

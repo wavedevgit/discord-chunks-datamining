@@ -2,7 +2,7 @@
 /** chunk id: 593061, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -28,35 +28,35 @@ async function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   let {
     payment: t
-  } = e, [n, a] = i.useState(null), [l, _] = i.useState(null), p = async e => {
+  } = e, [n, a] = i.useState(null), [l, p] = i.useState(null), _ = async e => {
     try {
       let n = await f(t.id);
       a(n);
       let r = e ? n.refundInvoiceLinks[0] : n.invoiceLink;
-      window.open(r, "_blank"), _(null)
+      window.open(r, "_blank"), p(null)
     } catch (e) {
       var n;
-      _(null == (n = e.body) ? true : n.message)
+      p(null == (n = e.body) ? true : n.message)
     }
   };
 
-  function h(e, t) {
+  function m(e, t) {
     s.Z.open(e, t)
   }
-  let m = null != t.paymentSource && t.status === c.Py.COMPLETED,
+  let h = null != t.paymentSource && t.status === c.Py.COMPLETED,
     g = null == n ? true : n.invoiceLink,
     E = null == n ? true : n.refundInvoiceLinks;
   return t.hasInvoiceURL && null == n ? (0, r.jsxs)("div", {
     className: d.downloadInvoice,
     children: [(0, r.jsx)(o.Anchor, {
-      onClick: () => p(false),
+      onClick: () => _(false),
       children: u.intl.formatToPlainString(u.t.R0xzCN, {})
     }), t.hasRefundInvoiceURLs ? (0, r.jsx)(o.Anchor, {
       className: d.downloadRefundInvoice,
-      onClick: () => p(true),
+      onClick: () => _(true),
       children: u.intl.formatToPlainString(u.t["3x6NGw"], {})
     }) : null, null != l && "" !== l && (0, r.jsx)(o.M14, {
       type: "critical",
@@ -75,11 +75,11 @@ function _(e) {
       type: "critical",
       children: l
     })]
-  }) : m ? (0, r.jsx)("div", {
+  }) : h ? (0, r.jsx)("div", {
     className: d.downloadInvoice,
     children: (0, r.jsx)(o.Anchor, {
       onClick: () => {
-        h(t, t.paymentSource)
+        m(t, t.paymentSource)
       },
       children: u.intl.formatToPlainString(u.t.onRIxS, {})
     })

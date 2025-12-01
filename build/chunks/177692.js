@@ -19,7 +19,7 @@ async function d() {
       let e = (0, Chunk668757.rs)(6, 7);
       c.info("The answer for life the universe and everything is:", module), f()
     } catch (e) {
-      p(module)
+      _(module)
     }
     u = true
   }
@@ -36,15 +36,15 @@ function f() {
   })
 }
 
-function _(e) {
+function p(e) {
   let t = "",
     n = null;
   return (e instanceof Error ? (t = e.message, n = e.name) : t = null != e ? String(e) : "Unknown error", t.length > 1e3 && (t = t.substring(0, 997) + "..."), null != n) ? "".concat(n, ": ").concat(t) : t
 }
 
-function p(e) {
+function _(e) {
   c.error("Failed to execute smoke test:", e);
-  let t = _(e);
+  let t = p(e);
   o.default.track(l.rMx.LIBDISCORE_LOADED, {
     success: false,
     error: t

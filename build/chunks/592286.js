@@ -2,8 +2,8 @@
 /** chunk id: 592286, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N4: () => _,
-  Pn: () => p,
+  N4: () => p,
+  Pn: () => _,
   RS: () => f,
   X2: () => o,
   XN: () => l,
@@ -25,5 +25,5 @@ let i = new Set([Chunk246364.QJ.MULTIPLE_CHOICE, Chunk246364.QJ.TEXT_INPUT, Chun
   u = 150,
   d = 150,
   f = 1e3,
-  _ = "Membership Gating",
-  p = "in-app-member-verification"
+  p = "Membership Gating",
+  _ = "in-app-member-verification"

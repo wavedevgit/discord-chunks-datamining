@@ -2,7 +2,7 @@
 /** chunk id: 277511, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -14,7 +14,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk960048 = require("./960048.js"),
   Chunk22494 = require("./22494.js"),
   Chunk981631 = require("./981631.js");
-let _ = {
+let p = {
   async fetchWishlist(e, t) {
     i.Z.dispatch({
       type: "WISHLIST_FETCH_START",

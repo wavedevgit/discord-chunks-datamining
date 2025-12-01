@@ -2,7 +2,7 @@
 /** chunk id: 523751, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -61,15 +61,15 @@ function N(e, t) {
   return n
 }
 
-function R(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
-  var n, r, i = D(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -77,14 +77,14 @@ function P(e, t) {
   return i
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let w = {
+let D = {
   [Chunk284363.Q.STAFF]: {
     IconComponent: Chunk481060.Ymb,
     foregroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
@@ -136,29 +136,29 @@ let w = {
   [Chunk284363.Q.NONE]: {}
 };
 
-function L(e) {
+function x(e) {
   let {
     guildTraits: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: S.tooltipPremiumFooterContainer,
+    className: T.tooltipPremiumFooterContainer,
     children: [(0, r.jsxs)("div", {
-      className: o()(S.tooltipPremiumFooterSegment, S.tooltipPremiumFooterTierSegment),
+      className: o()(T.tooltipPremiumFooterSegment, T.tooltipPremiumFooterTierSegment),
       children: [(0, r.jsx)(E.Z, {
         width: 18,
         height: 18,
-        className: S.gemIcon
+        className: T.gemIcon
       }), (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
         children: b.nW(t.premiumTier)
       })]
     }), (0, r.jsx)("div", {
-      className: S.tooltipPremiumFooterSegment,
+      className: T.tooltipPremiumFooterSegment,
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
-        children: T.intl.format(T.t["dR/SVH"], {
+        children: I.intl.format(I.t["dR/SVH"], {
           count: t.premiumSubscriberCount
         })
       })
@@ -166,7 +166,7 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   let {
     badgeType: t,
     guildTraits: n
@@ -177,7 +177,7 @@ function x(e) {
   } = (0, v.G)(t, n.visibility);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: S.tooltipBodyContainer,
+      className: T.tooltipBodyContainer,
       children: [(0, r.jsx)(u.Text, {
         color: "interactive-active",
         variant: "text-xs/bold",
@@ -191,13 +191,13 @@ function x(e) {
         variant: "text-xs/medium",
         children: o
       }) : null]
-    }), n.premium ? (0, r.jsx)(L, {
+    }), n.premium ? (0, r.jsx)(x, {
       guildTraits: n
     }) : null]
   })
 }
 
-function M(e) {
+function j(e) {
   let t, n;
   var a, {
     guild: o,
@@ -207,68 +207,68 @@ function M(e) {
     flowerStarClassName: E,
     iconClassName: b,
     badgeStrokeColor: v,
-    badgeColor: T,
+    badgeColor: I,
     disableBoostClick: A,
     "aria-label": N = false
   } = e;
-  let D = null != (a = P(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? a : 18,
-    L = (0, s.e7)([m.default, h.ZP], () => {
-      let e = m.default.getCurrentUser();
-      return h.ZP.isMember(null == o ? true : o.id, null == e ? true : e.id)
+  let w = null != (a = R(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? a : 18,
+    x = (0, s.e7)([h.default, m.ZP], () => {
+      let e = h.default.getCurrentUser();
+      return m.ZP.isMember(null == o ? true : o.id, null == e ? true : e.id)
     }),
-    M = (0, s.e7)([p.Z], () => p.Z.theme),
-    k = (0, O.XX)(o),
-    j = (0, y.i)(k),
-    U = i.useMemo(() => k.premium && L && !A, [A, k.premium, L]),
+    j = (0, s.e7)([_.Z], () => _.Z.theme),
+    M = (0, O.XX)(o),
+    k = (0, y.i)(M),
+    U = i.useMemo(() => M.premium && x && !A, [A, M.premium, x]),
     G = i.useCallback(e => {
       U && (e.stopPropagation(), e.preventDefault(), (0, f.f)({
         guildId: o.id,
         location: {
-          section: I.jXE.GUILD_HEADER,
-          object: I.qAy.BOOST_GEM_ICON
+          section: S.jXE.GUILD_HEADER,
+          object: S.qAy.BOOST_GEM_ICON
         }
       }))
     }, [U, o.id]);
-  if (j === y.Q.NONE) return null;
+  if (k === y.Q.NONE) return null;
   let {
-    IconComponent: B,
-    backgroundDarkColor: Z,
+    IconComponent: Z,
+    backgroundDarkColor: B,
     backgroundLightColor: F,
     foregroundDarkColor: V,
     foregroundLightColor: H,
-    premiumBackgroundColor: W,
-    premiumForegroundColor: Y,
+    premiumBackgroundColor: Y,
+    premiumForegroundColor: W,
     sizeAdjustment: K
-  } = w[j];
-  if (null == B) return null;
-  k.premium && (t = Y, n = W);
-  let z = (0, c.wj)(M) ? V : H,
-    q = (0, c.wj)(M) ? Z : F;
+  } = D[k];
+  if (null == Z) return null;
+  M.premium && (t = W, n = Y);
+  let z = (0, c.wj)(j) ? V : H,
+    q = (0, c.wj)(j) ? B : F;
   t = null != t ? t : z, n = null != n ? n : q;
-  let X = Math.floor(.75 * D) - (null != K ? K : 0);
+  let Q = Math.floor(.75 * w) - (null != K ? K : 0);
   return (0, r.jsx)(u.aML, {
     color: l,
     position: d,
     "aria-label": N,
-    text: (0, r.jsx)(x, {
-      badgeType: j,
-      guildTraits: k
+    text: (0, r.jsx)(L, {
+      badgeType: k,
+      guildTraits: M
     }),
-    tooltipContentClassName: S.tooltipRemovePadding,
+    tooltipContentClassName: T.tooltipRemovePadding,
     children: e => (0, r.jsx)(u.P3F, {
       onClick: G,
       tabIndex: U ? 0 : false,
-      children: (0, r.jsx)(_.Z, R(C({}, e), {
+      children: (0, r.jsx)(p.Z, P(C({}, e), {
         className: g,
         flowerStarClassName: E,
         allowFullSizedIcon: true,
-        color: null != n ? n : T,
+        color: null != n ? n : I,
         stroke: v,
-        size: D,
-        children: (0, r.jsx)(B, {
+        size: w,
+        children: (0, r.jsx)(Z, {
           size: "custom",
-          width: X,
-          height: X,
+          width: Q,
+          height: Q,
           className: b,
           color: null != t ? t : "currentColor"
         })

@@ -359,7 +359,7 @@ function K() {
   })
 }
 
-function q(e, t) {
+function V(e, t) {
   if (null == e) return null;
   let n = e.split(A);
   if (1 === n.length) return n[0];
@@ -377,7 +377,7 @@ function q(e, t) {
   return r
 }
 
-function V(e, t) {
+function q(e, t) {
   var n, r;
   if (null == e || "skeleton" === t.mode) return null;
   let i = null == (r = e.match(A)) || null == (n = r[0]) ? true : n.slice(2, false);
@@ -543,7 +543,7 @@ let $ = Object.assign(function(e) {
         case "HERO":
           var r;
           return {
-            type: "HERO", body: n.body.map(t), title: q(n.title, e), image: V(n.image, e), imagePlaceholder: null == (r = e.config) ? true : r.hero_placeholder_image
+            type: "HERO", body: n.body.map(t), title: V(n.title, e), image: q(n.image, e), imagePlaceholder: null == (r = e.config) ? true : r.hero_placeholder_image
           };
         case "GRID":
           return {
@@ -555,11 +555,11 @@ let $ = Object.assign(function(e) {
           };
         case "TEXT":
           return {
-            type: "TEXT", content: q(n.content, e)
+            type: "TEXT", content: V(n.content, e)
           };
         case "TEXT_WITH_IMAGE":
           return {
-            type: "TEXT_WITH_IMAGE", content: q(n.content, e), image: V(n.image, e), imagePosition: n.imagePosition
+            type: "TEXT_WITH_IMAGE", content: V(n.content, e), image: q(n.image, e), imagePosition: n.imagePosition
           };
         case "SEPARATOR":
         case "SOCIAL_PROOF":

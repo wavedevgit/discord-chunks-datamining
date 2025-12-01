@@ -19,7 +19,7 @@ let f = e => {
     onClose: t,
     listing: n,
     guildId: f
-  } = e, _ = (0, i.e7)([l.Z], () => l.Z.getGuild(f), [f]), p = (0, c.Z)({
+  } = e, p = (0, i.e7)([l.Z], () => l.Z.getGuild(f), [f]), _ = (0, c.Z)({
     listing: n,
     guildId: f
   });
@@ -29,15 +29,15 @@ let f = e => {
       className: d.confirmationHeader,
       variant: "heading-lg/extrabold",
       children: u.intl.format(u.t.I5dYFs, {
-        serverName: null == _ ? true : _.name,
+        serverName: null == p ? true : p.name,
         tierName: n.name
       })
-    }), !p.isEmpty() && (0, r.jsx)(o.Text, {
+    }), !_.isEmpty() && (0, r.jsx)(o.Text, {
       className: d.confirmationSubtitle,
       variant: "text-sm/normal",
       color: "header-secondary",
       children: u.intl.format(u.t.TnhFHv, {
-        benefits: p.asString()
+        benefits: _.asString()
       })
     }), (0, r.jsxs)("div", {
       className: d.actions,

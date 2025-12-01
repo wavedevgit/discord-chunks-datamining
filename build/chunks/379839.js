@@ -2,8 +2,8 @@
 /** chunk id: 379839, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => p,
-  p: () => h
+  A: () => _,
+  p: () => m
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk410030 = require("./410030.js"),
@@ -15,9 +15,9 @@ let l = "14",
   u = "33",
   d = "4D",
   f = "66",
-  _ = "80";
+  p = "80";
 
-function p(e) {
+function _(e) {
   let t = (0, i.ZP)(),
     [n, a] = (0, r.useState)({});
   return (0, r.useEffect)(() => {
@@ -29,9 +29,9 @@ function p(e) {
   }, [e, t]), n
 }
 
-function h(e, t, n, o, s) {
+function m(e, t, n, o, s) {
   let l = (0, i.ZP)(),
-    c = (0, r.useMemo)(() => null == t ? null : m({
+    c = (0, r.useMemo)(() => null == t ? null : h({
       palette: t.palette,
       theme: l,
       hover: n,
@@ -60,22 +60,22 @@ function h(e, t, n, o, s) {
   }, [e, c, f]), u
 }
 
-function m(e) {
+function h(e) {
   let {
     palette: t,
     theme: n,
     hover: r,
     selected: i,
-    placement: p
+    placement: _
   } = e;
   if (!(0, o.ic)(t)) return;
-  let h = n === s.BR.LIGHT,
-    m = h ? t.lightBackground : t.darkBackground;
-  if (p === a.i.MEMBER_LIST || p === a.i.CHANNEL) {
-    let e = "".concat(i ? _ : r && p === a.i.MEMBER_LIST ? d : u);
-    return "linear-gradient(90deg, transparent 0%, ".concat(m).concat(l, " 20%, ").concat(m).concat(l, " 50%, ").concat(m).concat(e, " 100%)")
+  let m = n === s.BR.LIGHT,
+    h = m ? t.lightBackground : t.darkBackground;
+  if (_ === a.i.MEMBER_LIST || _ === a.i.CHANNEL) {
+    let e = "".concat(i ? p : r && _ === a.i.MEMBER_LIST ? d : u);
+    return "linear-gradient(90deg, transparent 0%, ".concat(h).concat(l, " 20%, ").concat(h).concat(l, " 50%, ").concat(h).concat(e, " 100%)")
   }
-  let g = p === a.i.MINI_PREVIEW ? u : c,
-    E = h ? d : f;
-  return "linear-gradient(90deg, ".concat(m).concat(g, " 0%, ").concat(m).concat(E, " 100%)")
+  let g = _ === a.i.MINI_PREVIEW ? u : c,
+    E = m ? d : f;
+  return "linear-gradient(90deg, ".concat(h).concat(g, " 0%, ").concat(h).concat(E, " 100%)")
 }

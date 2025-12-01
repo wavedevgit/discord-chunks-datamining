@@ -2,7 +2,7 @@
 /** chunk id: 615160, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk34046 = require("./34046.jsx"),
   Chunk931182 = require("./931182.jsx"),
   Chunk388032 = require("./388032.jsx");
-let _ = () => (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+let p = () => (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
   gap: 32,
   children: [(0, Chunk54381.jsx)(Chunk332360.k, {}), (0, Chunk54381.jsxs)("div", {
     children: [(0, Chunk54381.jsx)(Chunk603963.N, {

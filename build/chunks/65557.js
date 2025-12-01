@@ -51,5 +51,5 @@ function d(e) {
 function f(e, t) {
   return t()
 }
-var _ = "undefined" == typeof window || true === window.document || true === window.document.createElement ? f : u;
-exports.useSyncExternalStore = true !== Chunk473749.useSyncExternalStore ? Chunk473749.useSyncExternalStore : _
+var p = "undefined" == typeof window || true === window.document || true === window.document.createElement ? f : u;
+exports.useSyncExternalStore = true !== Chunk473749.useSyncExternalStore ? Chunk473749.useSyncExternalStore : p

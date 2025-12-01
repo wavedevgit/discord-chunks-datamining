@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   kq: () => g,
-  vy: () => m
+  vy: () => h
 });
 var Chunk392711 = require("./392711.js"),
   Chunk544891 = require("./544891.js"),
@@ -18,7 +18,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk710111 = require("./710111.js");
 
-function h(e) {
+function m(e) {
   let t = new AbortController,
     n = (0, r.throttle)(n => {
       c.Z.getVoiceChannelId() !== e && t.abort()
@@ -29,22 +29,22 @@ function h(e) {
   }
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   var r;
   let {
     abortController: o,
     onRequestProgress: c
-  } = h(e), p = null != (r = u.Z.getState().animationType) ? r : f.q.BASIC, m = {
-    animation_type: p,
-    animation_id: (0, d.Iu)(p, d.v)
+  } = m(e), _ = null != (r = u.Z.getState().animationType) ? r : f.q.BASIC, h = {
+    animation_type: _,
+    animation_id: (0, d.Iu)(_, d.v)
   };
   i.tn.post({
-    url: _.ANM.CUSTOM_CALL_SOUNDS(e),
-    body: m,
+    url: p.ANM.CUSTOM_CALL_SOUNDS(e),
+    body: h,
     signal: o.signal,
     onRequestProgress: c,
     rejectWithError: true
-  }).then(_.VqG, () => {
+  }).then(p.VqG, () => {
     if (o.signal.aborted) return
   }), (0, l.Z)([a.Z.CHANNEL_CALL], n, t, s.jy.ENTRY)
 }
@@ -55,19 +55,19 @@ function g(e, t, n, r, a) {
     {
       abortController: d,
       onRequestProgress: f
-    } = h(e),
-    m = {
+    } = m(e),
+    h = {
       sound_id: t.soundId,
       emoji_id: t.emojiId,
       emoji_name: null != (c = t.emojiName) ? c : null == u ? true : u.name
     };
-  t.guildId !== p.X8 && (m.source_guild_id = t.guildId), i.tn.post({
-    url: _.ANM.SEND_SOUNDBOARD_SOUND(e),
-    body: m,
+  t.guildId !== _.X8 && (h.source_guild_id = t.guildId), i.tn.post({
+    url: p.ANM.SEND_SOUNDBOARD_SOUND(e),
+    body: h,
     signal: d.signal,
     onRequestProgress: f,
     rejectWithError: true
-  }).then(_.VqG, () => {
+  }).then(p.VqG, () => {
     if (d.signal.aborted) return
   }), (0, l.Z)(null != r ? r : [], n, t, s.jy.DEFAULT, a)
 }

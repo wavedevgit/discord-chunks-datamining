@@ -2,7 +2,7 @@
 /** chunk id: 181106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
@@ -33,11 +33,11 @@ function d(e) {
   return e
 }
 let f = {},
-  _ = {},
-  p = 12e4,
-  h = 15e3;
+  p = {},
+  _ = 12e4,
+  m = 15e3;
 
-function m(e) {
+function h(e) {
   let {
     applicationId: t,
     activityType: n
@@ -47,13 +47,13 @@ function m(e) {
 }
 
 function g(e, t, n) {
-  null != _[e] && _[e].stop();
+  null != p[e] && p[e].stop();
   let r = new a.V7;
   r.start(n, () => o.Z.dispatch({
     type: "ACTIVITY_LAUNCH_FAIL",
     applicationId: e,
     activityType: t
-  })), _[e] = r
+  })), p[e] = r
 }
 
 function E(e, t, n) {
@@ -63,14 +63,14 @@ function E(e, t, n) {
     remotePartyId: o
   } = n;
   if (e === c.OcF.COMPLETE) {
-    null == (r = f[a]) || delete r[t], null != _[a] && (_[a].stop(), delete _[a]);
+    null == (r = f[a]) || delete r[t], null != p[a] && (p[a].stop(), delete p[a]);
     return
   }
   let s = null != (i = f[a]) ? i : {};
   s[t] = {
     state: e,
     remotePartyId: o
-  }, f[a] = s, __OVERLAY__ || e !== c.OcF.FAILED ? e === c.OcF.LOADING && null != o && g(a, t, h) : g(a, t, p)
+  }, f[a] = s, __OVERLAY__ || e !== c.OcF.FAILED ? e === c.OcF.LOADING && null != o && g(a, t, m) : g(a, t, _)
 }
 
 function b(e) {
@@ -125,11 +125,11 @@ class v extends(r = Chunk442837.ZP.Store) {
   }
 }
 u(v, "displayName", "ActivityLauncherStore");
-let I = new v(Chunk570140.Z, {
+let S = new v(Chunk570140.Z, {
   OVERLAY_INITIALIZE: b,
   ACTIVITY_JOIN_LOADING: e => E(c.OcF.LOADING, c.mFx.JOIN, e),
   ACTIVITY_JOIN_FAILED: e => E(c.OcF.FAILED, c.mFx.JOIN, e),
   ACTIVITY_JOIN: y,
   EMBEDDED_ACTIVITY_CLOSE: y,
-  ACTIVITY_LAUNCH_FAIL: m
+  ACTIVITY_LAUNCH_FAIL: h
 })

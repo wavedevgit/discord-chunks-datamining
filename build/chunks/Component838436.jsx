@@ -2,7 +2,7 @@
 /** chunk id: 838436, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => p,
+  H: () => _,
   U: () => E
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
@@ -25,7 +25,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function p(e) {
+function _(e) {
   let {
     header: t,
     description: n,
@@ -68,7 +68,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     className: t,
     children: n
@@ -79,7 +79,7 @@ function h(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     setting: t,
     className: n,
@@ -101,14 +101,14 @@ function g(e) {
     children: i,
     scrollPosition: o,
     scrollHighlightDelay: f
-  } = e, _ = (0, l.a)(o);
+  } = e, p = (0, l.a)(o);
   return (0, r.jsx)(s.F, {
     setting: t,
     children: (0, r.jsxs)("div", {
       className: a()(d.container, n, {
         [u.settingsBackgroundFlashElement]: null != o
       }),
-      ref: _,
+      ref: p,
       children: [i, null != o ? (0, r.jsx)(c.Z, {
         animationDelay: f,
         scrollPosition: o
@@ -118,5 +118,5 @@ function g(e) {
 }
 
 function E(e) {
-  return null != e.scrollPosition ? (0, r.jsx)(g, _({}, e)) : null != e.setting ? (0, r.jsx)(m, _({}, e)) : (0, r.jsx)(h, _({}, e))
+  return null != e.scrollPosition ? (0, r.jsx)(g, p({}, e)) : null != e.setting ? (0, r.jsx)(h, p({}, e)) : (0, r.jsx)(m, p({}, e))
 }

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   O: () => g,
-  Z: () => m
+  Z: () => h
 }), require("./583741.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk784016 = require("./784016.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,42 +26,42 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e) {
+function h(e) {
   let {
     smallerText: t,
     className: n,
     textColor: a,
     isApplicationHome: c,
-    enablePremiumBrandRefresh: p
-  } = e, h = (0, s.e7)([u.Z], () => u.Z.affinities.slice(0, 3).reverse()), m = h.map((e, t) => (0, r.jsx)(g, {
+    enablePremiumBrandRefresh: _
+  } = e, m = (0, s.e7)([u.Z], () => u.Z.affinities.slice(0, 3).reverse()), h = m.map((e, t) => (0, r.jsx)(g, {
     affinity: e,
-    applyMask: t !== h.length - 1,
-    size: p ? d.EF.SIZE_24 : d.EF.SIZE_32
-  }, e.id)), E = e => null != e.globalName ? e.globalName : e.username, b = i.useMemo(() => 3 === h.length ? f.intl.formatToPlainString(f.t.c7ETJH, {
-    username: E(h[2])
-  }) : 2 === h.length ? f.intl.formatToPlainString(f.t["st8Rh/"], {
-    username: E(h[1]),
-    otherUsername: E(h[0])
-  }) : 1 === h.length ? f.intl.formatToPlainString(f.t.dpjXPL, {
-    username: E(h[0])
-  }) : "", [h]);
-  if (0 === h.length) return null;
+    applyMask: t !== m.length - 1,
+    size: _ ? d.EF.SIZE_24 : d.EF.SIZE_32
+  }, e.id)), E = e => null != e.globalName ? e.globalName : e.username, b = i.useMemo(() => 3 === m.length ? f.intl.formatToPlainString(f.t.c7ETJH, {
+    username: E(m[2])
+  }) : 2 === m.length ? f.intl.formatToPlainString(f.t["st8Rh/"], {
+    username: E(m[1]),
+    otherUsername: E(m[0])
+  }) : 1 === m.length ? f.intl.formatToPlainString(f.t.dpjXPL, {
+    username: E(m[0])
+  }) : "", [m]);
+  if (0 === m.length) return null;
 
   function y() {
-    return p ? (0, r.jsx)(l.Text, {
+    return _ ? (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: a,
       children: b
@@ -76,14 +76,14 @@ function m(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    className: o()(p ? _.premiumBrandRefreshContainer : _.container, n, {
-      [_.v2Container]: !p && c
+    className: o()(_ ? p.premiumBrandRefreshContainer : p.container, n, {
+      [p.v2Container]: !_ && c
     }),
     children: [(0, r.jsx)("div", {
-      className: _.iconContainer,
-      children: m
+      className: p.iconContainer,
+      children: h
     }), (0, r.jsx)("div", {
-      className: _.textContainer,
+      className: p.textContainer,
       children: (0, r.jsx)(y, {})
     })]
   })
@@ -102,9 +102,9 @@ function g(e) {
     size: i,
     animateOnHover: true
   });
-  return (0, r.jsx)(l.qEK, h({
-    className: o()(_.icon, {
-      [_.mask]: n
+  return (0, r.jsx)(l.qEK, m({
+    className: o()(p.icon, {
+      [p.mask]: n
     }),
     src: a,
     "aria-label": t.username,

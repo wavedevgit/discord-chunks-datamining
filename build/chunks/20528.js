@@ -26,7 +26,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk70722 = require("./70722.js"),
   Chunk981631 = require("./981631.js");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -50,43 +50,43 @@ function S(e) {
 let A = (0, Chunk392711.debounce)(Chunk872810.xc, 1e3),
   C = {},
   N = {},
-  R = 3 * Chunk70956.Z.Millis.MINUTE,
-  P = 5 * Chunk70956.Z.Millis.SECOND,
-  D = 12 * Chunk70956.Z.Millis.SECOND,
-  w = null;
+  P = 3 * Chunk70956.Z.Millis.MINUTE,
+  R = 5 * Chunk70956.Z.Millis.SECOND,
+  w = 12 * Chunk70956.Z.Millis.SECOND,
+  D = null;
 
-function L(e) {
+function x(e) {
   var t;
   null == (t = C[e]) || t.stop(), delete C[e]
 }
 
-function x(e) {
+function L(e) {
   var t;
   null == (t = N[e]) || t.stop(), delete N[e]
 }
 
-function M(e, t) {
-  if (m.Z.getVoiceChannelId() !== e) returnfalse;
-  let n = _.Z.getChannel(e);
+function j(e, t) {
+  if (h.Z.getVoiceChannelId() !== e) returnfalse;
+  let n = p.Z.getChannel(e);
   if (null == n || !n.isDM() && !n.isGuildStageVoice() || null != d.Z.getActiveStreamForUser(t, n.getGuildId())) returnfalse;
   let r = d.Z.getStreamForUser(t, n.getGuildId());
   if (null == r) returnfalse;
   let i = (0, O.V9)(r);
-  return i !== w && (w = i, (0, o.rn)(r, {
+  return i !== D && (D = i, (0, o.rn)(r, {
     noFocus: true
   }), true)
 }
 
-function k(e, t) {
-  let n = null != t ? t : h.Z.getPreferredRegion();
-  null != n && n !== h.Z.getRegion(g.Z.getHostname(e)) && (0, o.dV)(e, n)
+function M(e, t) {
+  let n = null != t ? t : m.Z.getPreferredRegion();
+  null != n && n !== m.Z.getRegion(g.Z.getHostname(e)) && (0, o.dV)(e, n)
 }
 
-function j(e, t) {
+function k(e, t) {
   var n;
   if (g.Z.getAllActiveStreamKeys().includes(e)) return;
   let r = null != (n = N[e]) ? n : new i.V7;
-  N[e] = r, r.start(t ? D : P, () => {
+  N[e] = r, r.start(t ? w : R, () => {
     a.Z.dispatch({
       type: "STREAM_TIMED_OUT",
       streamKey: e
@@ -95,35 +95,35 @@ function j(e, t) {
 }
 class U extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), T(this, "handleStreamWatch", e => {
+    super(...e), I(this, "handleStreamWatch", e => {
       let {
         streamKey: t,
         allowMultiple: n
       } = e, {
         channelId: r
-      } = (0, O.my)(t), i = _.Z.getChannel(r);
-      j(t, null == i ? true : i.isGuildStageVoice()), L(t), n || d.Z.getAllActiveStreams().forEach(e => {
+      } = (0, O.my)(t), i = p.Z.getChannel(r);
+      k(t, null == i ? true : i.isGuildStageVoice()), x(t), n || d.Z.getAllActiveStreams().forEach(e => {
         let n = (0, O.V9)(e);
         e.ownerId !== f.default.getId() && n !== t && (0, o.g)(n, false)
       })
-    }), T(this, "handleStreamStart", e => {
+    }), I(this, "handleStreamStart", e => {
       let {
         channelId: t,
         streamType: n,
         guildId: r
-      } = e, i = _.Z.getChannel(t);
-      j((0, O.V9)({
+      } = e, i = p.Z.getChannel(t);
+      k((0, O.V9)({
         streamType: n,
         guildId: r,
         channelId: t,
         ownerId: f.default.getId()
       }), null == i ? true : i.isGuildStageVoice()), this.platformHandleStreamStart(e)
-    }), T(this, "handleStreamCreate", e => {
+    }), I(this, "handleStreamCreate", e => {
       var t;
       let {
         streamKey: n
       } = e;
-      x(n);
+      L(n);
       let {
         ownerId: r,
         guildId: i
@@ -132,40 +132,40 @@ class U extends Chunk147913.Z {
           guildId: i,
           location: "ApplicationStreamingManager"
         }) || r !== (null == (t = E.default.getCurrentUser()) ? true : t.id)) return;
-      let a = p.Z.getMemberCount(i);
+      let a = _.Z.getMemberCount(i);
       null == a || a < 2 || a > v.tB || u.eo.getSetting() && A(n)
-    }), T(this, "handleStreamUpdate", e => {
+    }), I(this, "handleStreamUpdate", e => {
       let {
         streamKey: t
       } = e;
-      x(t)
-    }), T(this, "handleStreamDelete", e => {
+      L(t)
+    }), I(this, "handleStreamDelete", e => {
       let {
         reason: t,
         streamKey: n
       } = e;
-      x(n), t === I.si2.STREAM_FULL && ((0, l.kr)(S({
+      L(n), t === S.si2.STREAM_FULL && ((0, l.kr)(T({
         type: l.u.STREAM_FULL
       }, (0, c.rT)(n))), (0, o.aP)(n, false), this.platformShowStreamFull())
-    }), T(this, "handleStreamClose", e => {
+    }), I(this, "handleStreamClose", e => {
       let {
         streamKey: t
       } = e;
-      L(t), x(t)
-    }), T(this, "handleVoiceChannelSelect", e => {
+      x(t), L(t)
+    }), I(this, "handleVoiceChannelSelect", e => {
       let {
         channelId: t
       } = e;
       if (null == t) return;
-      w = null;
+      D = null;
       let n = d.Z.getAllApplicationStreamsForChannel(t).filter(e => {
         let {
           ownerId: t
         } = e;
         return t !== f.default.getId()
       })[0];
-      null != n && M(t, n.ownerId)
-    }), T(this, "handleVoiceStateUpdates", e => {
+      null != n && j(t, n.ownerId)
+    }), I(this, "handleVoiceStateUpdates", e => {
       let {
         voiceStates: t
       } = e;
@@ -177,17 +177,17 @@ class U extends Chunk147913.Z {
           selfStream: a
         } = e;
         if (this.platformHandleVoiceStateUpdate(e), t !== f.default.getId() && null != n) {
-          if (a && M(n, t)) return;
+          if (a && j(n, t)) return;
           let e = d.Z.getActiveStreamForUser(t, r);
           if (null != e && e.channelId === n) {
-            if (!a && e.state !== I.jm8.ENDED) {
+            if (!a && e.state !== S.jm8.ENDED) {
               var s;
               let t = (0, O.V9)(e),
                 n = null != (s = C[t]) ? s : new i.V7;
-              n.start(R, () => (0, o.aP)(t, false)), C[t] = n
+              n.start(P, () => (0, o.aP)(t, false)), C[t] = n
             }
-            if (a && e.state === I.jm8.ENDED) {
-              L((0, O.V9)(e));
+            if (a && e.state === S.jm8.ENDED) {
+              x((0, O.V9)(e));
               let n = d.Z.getStreamForUser(t, r);
               if (null == n) return;
               (0, o.rn)(n)
@@ -195,19 +195,19 @@ class U extends Chunk147913.Z {
           }
         }
       })
-    }), T(this, "handleCallUpdate", e => {
+    }), I(this, "handleCallUpdate", e => {
       let {
         channelId: t,
         region: n
       } = e, r = d.Z.getCurrentUserActiveStream();
-      (null == r ? true : r.channelId) === t && k((0, O.V9)(r), n)
-    }), T(this, "handleChannelUpdates", e => {
+      (null == r ? true : r.channelId) === t && M((0, O.V9)(r), n)
+    }), I(this, "handleChannelUpdates", e => {
       let {
         channels: t
       } = e, n = d.Z.getCurrentUserActiveStream();
       if (null != n)
-        for (let e of t) n.channelId === e.id && k((0, O.V9)(n), e.rtcRegion)
-    }), T(this, "actions", {
+        for (let e of t) n.channelId === e.id && M((0, O.V9)(n), e.rtcRegion)
+    }), I(this, "actions", {
       STREAM_WATCH: this.handleStreamWatch,
       STREAM_START: this.handleStreamStart,
       STREAM_CREATE: this.handleStreamCreate,

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => g,
-  k: () => p
+  k: () => _
 }), require("./415506.js"), require("./388685.js"), require("./35282.js"), require("./539854.js");
 var Chunk31775 = require("./31775.js"),
   i = require.n(Chunk31775),
@@ -23,12 +23,12 @@ let c = 6e4,
   u = 1e3,
   d = 10,
   f = 2e3,
-  _ = 500;
-var p = function(e) {
+  p = 500;
+var _ = function(e) {
   return e.ANNOUNCEMENT = "announcement", e.APP_EMBED = "app_embed", e
 }({});
 
-function h(e) {
+function m(e) {
   if ("announcement" === e.type) return {
     event: s.rMx.ANNOUNCEMENT_MESSAGE_VIEWED,
     properties: {
@@ -51,7 +51,7 @@ function h(e) {
   };
   throw Error("Invalid message type for message view tracking")
 }
-class m extends Chunk147913.Z {
+class h extends Chunk147913.Z {
   handleMessageBecameVisible(e) {
     let {
       type: t,
@@ -85,7 +85,7 @@ class m extends Chunk147913.Z {
   }
   drainBuffer() {
     for (let e of this.batchBuffer) {
-      let t = h(module);
+      let t = m(module);
       Chunk626135.default.track(exports.event, exports.properties)
     }
     this.batchBuffer = [], null != this.batchTimerId && (clearTimeout(this.batchTimerId), this.batchTimerId = null)
@@ -95,11 +95,11 @@ class m extends Chunk147913.Z {
   }
   constructor(...e) {
     super(...e), l(this, "currentlyVisibleMessageTimers", {}), l(this, "viewsInCurrentChannel", new Set), l(this, "recentViewTimes", new(i())({
-      max: _,
+      max: p,
       maxAge: c
     })), l(this, "batchBuffer", []), l(this, "batchTimerId", null), l(this, "actions", {
       CHANNEL_SELECT: () => this.handleChannelSelect()
     })
   }
 }
-let g = new m
+let g = new h

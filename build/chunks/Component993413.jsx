@@ -2,7 +2,7 @@
 /** chunk id: 993413, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./704826.js"), require("./35282.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,7 +21,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     errors: t
   } = e;
@@ -34,16 +34,16 @@ function _(e) {
     }, t))
   })
 }
-let p = Chunk473749.forwardRef(function(e, t) {
+let _ = Chunk473749.forwardRef(function(e, t) {
   let {
     title: n,
     titleIcon: i,
     titleId: a,
     description: l,
     children: f,
-    className: p,
-    errors: h,
-    disabled: m = false,
+    className: _,
+    errors: m,
+    disabled: h = false,
     hideDivider: g = false,
     showBorder: E = false,
     borderType: b,
@@ -52,8 +52,8 @@ let p = Chunk473749.forwardRef(function(e, t) {
     showPremiumIcon: v = false
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(d.customizationSection, p, {
-      [d.disabled]: m,
+    className: o()(d.customizationSection, _, {
+      [d.disabled]: h,
       [d.hideDivider]: g,
       [d.showBorder]: E,
       [d.withDivider]: O
@@ -73,8 +73,8 @@ let p = Chunk473749.forwardRef(function(e, t) {
         type: s.R94.Types.DESCRIPTION,
         className: d.sectionDescription,
         children: l
-      }) : null, f, null != h && (0, r.jsx)(_, {
-        errors: h
+      }) : null, f, null != m && (0, r.jsx)(p, {
+        errors: m
       })]
     })
   })

@@ -2,7 +2,7 @@
 /** chunk id: 666187, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L: () => I
+  L: () => S
 }), require("./539854.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,7 +31,7 @@ let E = (0, Chunk772848.Z)(),
   y = (0, Chunk772848.Z)(),
   O = 10,
   v = 7.23;
-class I extends(r = Chunk473749.Component) {
+class S extends(r = Chunk473749.Component) {
   getPaddingRight() {
     let {
       maxLength: e,
@@ -126,32 +126,32 @@ class I extends(r = Chunk473749.Component) {
       resizeable: E,
       className: O,
       id: v,
-      rows: I,
-      flex: T,
-      autosize: S,
+      rows: S,
+      flex: I,
+      autosize: T,
       required: A,
       onInvalid: C,
       inputRef: N
-    } = this.props, R = S ? Chunk639317.g : "textarea", P = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, w = this.getAriaDescribedBy();
+    } = this.props, P = T ? Chunk639317.g : "textarea", R = this.hasError(), w = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, D = this.getAriaDescribedBy();
     return (0, Chunk54381.jsxs)("div", {
       className: s()(Chunk979712.inputWrapper, {
-        [Chunk8542.flex]: T
+        [Chunk8542.flex]: I
       }),
       children: [(0, Chunk54381.jsxs)("div", {
         className: s()(Chunk8542.inputMaxLength, {
-          [Chunk8542.flex]: T
+          [Chunk8542.flex]: I
         }),
         children: [(0, Chunk54381.jsx)(Chunk793030.tEY, {
-          children: (0, Chunk54381.jsx)(R, {
+          children: (0, Chunk54381.jsx)(P, {
             type: "text",
             className: s()(Chunk979712.input, Chunk8542.textArea, Chunk154257.scrollbarDefault, O, {
-              [Chunk979712.error]: P,
+              [Chunk979712.error]: R,
               [Chunk979712.disabled]: require,
               [Chunk8542.resizeable]: E
             }),
-            "aria-labelledby": D,
-            "aria-describedby": w,
-            "aria-invalid": P,
+            "aria-labelledby": w,
+            "aria-describedby": D,
+            "aria-invalid": R,
             style: {
               paddingRight: this.getPaddingRight()
             },
@@ -169,7 +169,7 @@ class I extends(r = Chunk473749.Component) {
             onFocus: this.onFocus,
             onKeyDown: this.onKeyDown,
             onInvalid: C,
-            rows: I,
+            rows: S,
             ref: N
           })
         }), null != Chunk772848 && (0, Chunk54381.jsx)(Chunk793030.nn4, {
@@ -226,7 +226,7 @@ class I extends(r = Chunk473749.Component) {
     }
   }
 }
-g(I, "contextType", Chunk15127.q3), g(I, "defaultProps", {
+g(S, "contextType", Chunk15127.q3), g(S, "defaultProps", {
   name: "",
   disabled: false,
   placeholder: "",

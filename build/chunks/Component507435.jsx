@@ -2,17 +2,17 @@
 /** chunk id: 507435, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => R
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk468194 = require("./468194.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk904245 = require("./904245.js"),
   Chunk596454 = require("./596454.jsx"),
-  Chunk377171 = require("./377171.js"),
   Chunk739566 = require("./739566.js"),
   Chunk942951 = require("./942951.jsx"),
   Chunk834129 = require("./834129.jsx"),
@@ -46,7 +46,7 @@ function O(e) {
 
 function v(e, t) {
   if (null == e) return {};
-  var n, r, i = I(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -54,21 +54,21 @@ function v(e, t) {
   return i
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let T = 16;
+let I = 16;
 
-function S() {
+function T() {
   return (0, Chunk54381.jsx)("svg", {
     width: "24",
     height: "24",
     viewBox: "0 0 24 24",
-    fill: Chunk377171.Z.INTERACTIVE_NORMAL,
+    fill: Chunk692547.Z.colors.INTERACTIVE_NORMAL.css,
     "aria-hidden": true,
     children: (0, Chunk54381.jsx)("path", {
       fillRule: "evenodd",
@@ -84,10 +84,10 @@ function A(e) {
     hasNoVotes: n,
     victorEmoji: i
   } = e;
-  if (n) t = (0, r.jsx)(S, {});
+  if (n) t = (0, r.jsx)(T, {});
   else if (null != i) {
     let e = "" !== i.name ? i.name : i.displayName;
-    t = (0, r.jsx)(u.Z, {
+    t = (0, r.jsx)(d.Z, {
       emojiId: i.id,
       emojiName: e,
       animated: i.animated
@@ -123,7 +123,7 @@ function N(e) {
   let a = "text-muted";
   switch (n) {
     case "NO_VOTES":
-      t = (0, r.jsx)(l.Text, {
+      t = (0, r.jsx)(c.Text, {
         variant: "text-sm/semibold",
         color: "text-default",
         scaleFontToUserSetting: true,
@@ -137,19 +137,19 @@ function N(e) {
       t = (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: b.victorAnswer,
-          children: [(0, r.jsx)(l.Text, {
+          children: [(0, r.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "text-default",
             className: b.victorAnswerText,
             scaleFontToUserSetting: true,
             children: o
-          }), (0, r.jsx)(m.ZY, {
-            size: T,
+          }), (0, r.jsx)(h.ZY, {
+            size: I,
             className: b.victorIcon,
             isVictor: true,
             isExpired: true
           })]
-        }), (0, r.jsxs)(l.Text, {
+        }), (0, r.jsxs)(c.Text, {
           variant: "text-xs/medium",
           color: a,
           scaleFontToUserSetting: true,
@@ -159,19 +159,19 @@ function N(e) {
       break;
     case "TIE":
       let {
-        tiedVotePercentage: c
+        tiedVotePercentage: l
       } = i;
       t = (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(l.Text, {
+        children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
           scaleFontToUserSetting: true,
           children: E.intl.string(E.t.kPN9si)
-        }), (0, r.jsxs)(l.Text, {
+        }), (0, r.jsxs)(c.Text, {
           variant: "text-xs/medium",
           color: a,
           scaleFontToUserSetting: true,
-          children: [c, "%"]
+          children: [l, "%"]
         })]
       })
   }
@@ -181,20 +181,20 @@ function N(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     className: t,
     data: n,
     onClickPollLink: a
-  } = e, s = i.useMemo(() => C(n), [n]), c = null != n.victorEmoji || "NO_VOTES" === s.type;
+  } = e, s = i.useMemo(() => C(n), [n]), l = null != n.victorEmoji || "NO_VOTES" === s.type;
   return (0, r.jsxs)("div", {
     className: o()(b.container, {
-      [b.containerWithImage]: c
+      [b.containerWithImage]: l
     }, t),
     children: [(0, r.jsx)(A, {
       hasNoVotes: "NO_VOTES" === s.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(N, O({}, s)), null != a && (0, r.jsx)(l.Button, {
+    }), (0, r.jsx)(N, O({}, s)), null != a && (0, r.jsx)(c.Button, {
       size: "sm",
       onClick: a,
       variant: "secondary",
@@ -203,29 +203,29 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   var t;
   let {
     message: n,
     channel: a,
     compact: o,
-    disableInteraction: u = false
-  } = e, d = n.embeds[0], m = i.useMemo(() => (0, h.Z)(d), [d]), y = (0, s.aF)(null != (t = null == m ? true : m.questionText) ? t : "", g.Dv), O = (0, f.ZP)(n), v = (0, _.l)({
+    disableInteraction: l = false
+  } = e, d = n.embeds[0], h = i.useMemo(() => (0, m.Z)(d), [d]), y = (0, s.aF)(null != (t = null == h ? true : h.questionText) ? t : "", g.Dv), O = (0, f.ZP)(n), v = (0, p.l)({
     user: n.author,
     channelId: a.id,
     guildId: a.guild_id,
     messageId: n.id
-  }), I = n.messageReference, T = i.useCallback(() => {
-    null != I && c.Z.jumpToMessage({
-      channelId: I.channel_id,
-      messageId: I.message_id,
+  }), S = n.messageReference, I = i.useCallback(() => {
+    null != S && u.Z.jumpToMessage({
+      channelId: S.channel_id,
+      messageId: S.message_id,
       flash: true,
       returnMessageId: n.id
     })
-  }, [n.id, I]);
-  return null == m ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(p.Z, {
-      iconNode: (0, r.jsx)(l.QDj, {
+  }, [n.id, S]);
+  return null == h ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(_.Z, {
+      iconNode: (0, r.jsx)(c.QDj, {
         size: "xs"
       }),
       timestamp: n.timestamp,
@@ -234,12 +234,12 @@ function P(e) {
         username: O.nick,
         usernameHook: v(O),
         title: y,
-        titleOnClick: T
+        titleOnClick: I
       })
-    }), (0, r.jsx)(R, {
+    }), (0, r.jsx)(P, {
       className: b.embed,
-      data: m,
-      onClickPollLink: u ? true : T
+      data: h,
+      onClickPollLink: l ? true : I
     })]
   })
 }

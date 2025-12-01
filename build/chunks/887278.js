@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   $1: () => b,
-  YT: () => T,
-  pn: () => S,
+  YT: () => I,
+  pn: () => T,
   u2: () => A
 }), require("./415506.js");
 var Chunk570140 = require("./570140.js"),
@@ -19,7 +19,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk789465 = require("./789465.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +28,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,7 +53,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -74,13 +74,13 @@ async function O() {
   if (b()) return Promise.reject(Error("Hook module is too old"));
   await Chunk998502.ZP.ensureModule("discord_hook");
   let e = await Chunk998502.ZP.requireModule("discord_hook");
-  return I(module), module
+  return S(module), module
 }
 async function v() {
   return null != y ? y : y = await O()
 }
 
-function I(e) {
+function S(e) {
   if (null == e.setFlags) return;
   let t = 0,
     n = f.Z.getCurrentConfig({
@@ -93,7 +93,7 @@ function I(e) {
   null != r && (r.isStaff() || n.enableCrashTrigger) && (console.log("Hook: Enabling crash trigger."), t |= 2), e.setFlags(t)
 }
 
-function T(e, t) {
+function I(e, t) {
   return O().then(n => {
     var l;
     let u = null == (l = o.ZP.getGameForPID(e)) ? true : l.name,
@@ -101,25 +101,25 @@ function T(e, t) {
       f = null;
     return new Promise(s => {
       let l = (e, n) => {
-          c.default.track(_.rMx.HOOK_RESULT, h({
+          c.default.track(p.rMx.HOOK_RESULT, m({
             game_name: u,
             game_id: null == d ? null : d.id,
             success: n,
             error: e
           }, t)), null != f && (clearTimeout(f), f = null), n ? s() : s(e = null != e ? e : "Unknown hook error")
         },
-        p = o.ZP.getOverlayOptionsForPID(e),
-        m = g(h({}, a.r, p), {
+        _ = o.ZP.getOverlayOptionsForPID(e),
+        h = g(m({}, a.r, _), {
           elevate: o.ZP.shouldElevateProcessForPID(e)
         });
-      null == m.allowHook || m.allowHook ? (f = setTimeout(() => {
+      null == h.allowHook || h.allowHook ? (f = setTimeout(() => {
         n.cancelAttachToProcess(e), l("Timed out waiting for hook response", false)
-      }, 12e4), n.attachToProcess(e, m, l), r.Z.wait(() => i.Z.clearElevatedProcess())) : s("Hook is disabled for this game")
+      }, 12e4), n.attachToProcess(e, h, l), r.Z.wait(() => i.Z.clearElevatedProcess())) : s("Hook is disabled for this game")
     })
   })
 }
 
-function S(e) {
+function T(e) {
   return O().then(t => {
     t.cancelAttachToProcess(e)
   })

@@ -2,7 +2,7 @@
 /** chunk id: 575118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  x: () => T
+  x: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,7 +48,7 @@ function y(e) {
   } = e, {
     dismissable: n,
     onClose: i
-  } = (0, m.v)();
+  } = (0, h.v)();
   returnfalse === n ? null : (0, r.jsx)(c.P, {
     onClick: i,
     variant: t ? "color-mix" : true
@@ -95,13 +95,13 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     leading: t,
     trailing: n,
     hasGradient: a,
     children: s
-  } = e, [l, c] = i.useState(24), [u, d] = i.useState(24), f = i.useRef(null), _ = i.useRef(null);
+  } = e, [l, c] = i.useState(24), [u, d] = i.useState(24), f = i.useRef(null), p = i.useRef(null);
   return i.useLayoutEffect(() => {
     let e = new ResizeObserver(() => {
       let e = 0,
@@ -110,13 +110,13 @@ function I(e) {
         let n = f.current.getBoundingClientRect();
         e = Math.max(e, n.height), t = Math.max(t, n.width)
       }
-      if (null != _ && null != _.current) {
-        let n = _.current.getBoundingClientRect();
+      if (null != p && null != p.current) {
+        let n = p.current.getBoundingClientRect();
         e = Math.max(e, n.height), t = Math.max(t, n.width)
       }
       d(Math.ceil(t)), c(Math.ceil(e))
     });
-    return null != f.current && e.observe(f.current), null != _.current && e.observe(_.current), () => e.disconnect()
+    return null != f.current && e.observe(f.current), null != p.current && e.observe(p.current), () => e.disconnect()
   }, []), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       ref: f,
@@ -135,7 +135,7 @@ function I(e) {
         width: u
       }
     }), (0, r.jsxs)("div", {
-      ref: _,
+      ref: p,
       className: o()(g.headerTrailing, g.headerTrailingAbsolute),
       children: [null != n && n, (0, r.jsx)(y, {
         shouldColorMix: a
@@ -144,7 +144,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     gradientColor: t,
     graphic: n,
@@ -153,11 +153,11 @@ function T(e) {
     titleTextVariant: s,
     subtitle: l,
     alignCenter: c = false,
-    leading: h,
+    leading: m,
     trailing: E
   } = e, {
     headingId: y
-  } = (0, m.v)(), T = null != t, C = (0, f.MW)(n), N = c ? C ? v : I : O, R = null != n && (0, r.jsx)("div", {
+  } = (0, h.v)(), I = null != t, C = (0, f.MW)(n), N = c ? C ? v : S : O, P = null != n && (0, r.jsx)("div", {
     className: o()(g.headerGraphic, {
       [g.headerGraphicAnimated]: C
     }),
@@ -165,44 +165,44 @@ function T(e) {
       className: g.headerGraphicContainer,
       children: (0, r.jsx)(d.z, b({}, n))
     })
-  }), P = (0, r.jsx)(_.X, {
+  }), R = (0, r.jsx)(p.X, {
     className: g.headerTitle,
     id: y,
     variant: null != s ? s : "heading-lg/semibold",
     color: "text-primary",
     children: a
-  }), D = null != n ? R : P, w = (0, r.jsx)("header", {
+  }), w = null != n ? P : R, D = (0, r.jsx)("header", {
     className: o()(g.section, g.header, {
       [g.headerCentered]: c
     }),
-    children: (0, r.jsxs)(p.K, {
+    children: (0, r.jsxs)(_.K, {
       gap: 8,
       children: [(0, r.jsx)("div", {
         className: g.headerLayout,
         children: (0, r.jsx)(N, {
-          leading: h,
+          leading: m,
           trailing: E,
-          hasGradient: T,
+          hasGradient: I,
           children: (0, r.jsx)("div", {
             className: g.headerMain,
-            children: D
+            children: w
           })
         })
-      }), (0, r.jsx)(S, {
+      }), (0, r.jsx)(T, {
         badge: i
-      }), null != n && null != a && P, null != l && (0, r.jsx)(A, {
+      }), null != n && null != a && R, null != l && (0, r.jsx)(A, {
         subtitle: l
       })]
     })
   });
-  return T ? (0, r.jsx)(u.$, {
+  return I ? (0, r.jsx)(u.$, {
     color: t,
     className: g.headerGradient,
-    children: w
-  }) : w
+    children: D
+  }) : D
 }
 
-function S(e) {
+function T(e) {
   let {
     badge: t
   } = e;
@@ -219,7 +219,7 @@ function A(e) {
     subtitle: t
   } = e;
   if (null == t) return null;
-  let n = (0, r.jsx)(h.x, {
+  let n = (0, r.jsx)(m.x, {
       className: g.headerSubtitle,
       variant: "text-md/normal",
       color: "text-secondary",

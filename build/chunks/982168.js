@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   Gi: () => A,
-  P0: () => T,
+  P0: () => I,
   UD: () => O,
-  WF: () => S,
+  WF: () => T,
   _5: () => b,
-  gT: () => I,
+  gT: () => S,
   iZ: () => v,
   iq: () => C,
   sP: () => E
@@ -29,13 +29,13 @@ var Chunk149765 = require("./149765.js"),
   Chunk806246 = require("./806246.js");
 
 function E(e) {
-  if (!(0, p.Fi)(e.author)) returnfalse;
+  if (!(0, _.Fi)(e.author)) returnfalse;
   let t = u.Z.getChannel(e.channel_id);
   if (null == t) returnfalse;
   let n = d.Z.getGuild(t.guild_id);
   if (null == n) returnfalse;
-  let r = (0, m.Z)(n),
-    i = (0, h.Z)(n);
+  let r = (0, h.Z)(n),
+    i = (0, m.Z)(n);
   return r && null != i
 }
 let b = function(e) {
@@ -46,7 +46,7 @@ let b = function(e) {
     user: i,
     guild: a
   } = n;
-  return null != a && !!(0, m.Z)(a) && null != (0, h.Z)(a) && r.Db(_.uB({
+  return null != a && !!(0, h.Z)(a) && null != (0, m.Z)(a) && r.Db(p.uB({
     user: i,
     context: a,
     checkElevated: false
@@ -54,7 +54,7 @@ let b = function(e) {
 };
 
 function y(e) {
-  return T(u.Z.getChannel(e))
+  return I(u.Z.getChannel(e))
 }
 
 function O(e) {
@@ -65,15 +65,15 @@ function v(e) {
   return null != e && e.isModeratorReportChannel() && e.isForumChannel()
 }
 
-function I(e) {
+function S(e) {
   return null != e && e.isModeratorReportChannel() && e.isForumPost()
 }
 
-function T(e) {
-  return null != e && (v(e) || I(e))
+function I(e) {
+  return null != e && (v(e) || S(e))
 }
 
-function S(e) {
+function T(e) {
   if (null == e || !(0, c.U)() || !y(e)) returntrue;
   let {
     loaded: t,
@@ -83,7 +83,7 @@ function S(e) {
 }
 
 function A(e, t) {
-  return !!e.isFirstMessageInForumPost(t) && !!e.isSystemDM() && I(t)
+  return !!e.isFirstMessageInForumPost(t) && !!e.isSystemDM() && S(t)
 }
 
 function C(e) {

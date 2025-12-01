@@ -2,7 +2,7 @@
 /** chunk id: 333867, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,7 +18,7 @@ var Chunk772848 = require("./772848.js"),
   Chunk608579 = require("./608579.jsx"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -76,29 +76,29 @@ function y(e, t) {
 }
 let O = "payment-modal",
   v = "gift-payment-modal",
-  I = new Set([Chunk409813.h8.REVIEW, Chunk409813.h8.CONFIRM, Chunk409813.h8.GIFT_CUSTOMIZATION]);
+  S = new Set([Chunk409813.h8.REVIEW, Chunk409813.h8.CONFIRM, Chunk409813.h8.GIFT_CUSTOMIZATION]);
 
-function T(e) {
+function I(e) {
   let t, {
       skuId: f,
-      isGift: h = false,
+      isGift: m = false,
       giftMessage: g,
       giftingOrigin: y,
-      onClose: T,
-      onComplete: S,
+      onClose: I,
+      onComplete: T,
       analyticsLocations: A,
       analyticsObject: C,
       giftRecipient: N,
-      variantsReturnStyle: R
+      variantsReturnStyle: P
     } = e,
-    P = false,
-    D = (0, i.Z)(),
-    w = e => {
+    R = false,
+    w = (0, i.Z)(),
+    D = e => {
       t = e
     },
-    L = h ? v : O,
-    x = u.default.getCurrentUser();
-  if (!(null == x ? true : x.verified)) return void(0, a.ZDy)(async () => {
+    x = m ? v : O,
+    L = u.default.getCurrentUser();
+  if (!(null == L ? true : L.verified)) return void(0, a.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("88470"), n.e("20102")]).then(n.bind(n, 444688));
@@ -106,9 +106,9 @@ function T(e) {
       var {
         onClose: n
       } = t, i = b(t, ["onClose"]);
-      return (0, r.jsx)(e, E(m({}, i), {
+      return (0, r.jsx)(e, E(h({}, i), {
         onClose: () => {
-          n(), null == T || T(false)
+          n(), null == I || I(false)
         }
       }))
     }
@@ -122,39 +122,39 @@ function T(e) {
       onClose: t,
       returnRef: n
     } = e, i = b(e, ["onClose", "returnRef"]);
-    return (0, r.jsx)(_.Z, E(m({}, i), {
-      loadId: D,
+    return (0, r.jsx)(p.Z, E(h({}, i), {
+      loadId: w,
       skuId: f,
-      isGift: h,
+      isGift: m,
       giftMessage: g,
       giftingOrigin: y,
       analyticsLocations: A,
       giftRecipient: N,
       onClose: e => {
-        t(), null == T || T(e)
+        t(), null == I || I(e)
       },
       onComplete: () => {
-        P = true, null == S || S()
+        R = true, null == T || T()
       },
       returnRef: n,
-      onStepChange: w
+      onStepChange: D
     }))
   }, {
-    modalKey: L,
+    modalKey: x,
     onCloseCallback: () => {
-      P || d.default.track(p.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: D,
-        payment_type: p.Zuq[p.GZQ.ONE_TIME],
+      R || d.default.track(_.rMx.PAYMENT_FLOW_CANCELED, {
+        load_id: w,
+        payment_type: _.Zuq[_.GZQ.ONE_TIME],
         location: C,
-        is_gift: h,
+        is_gift: m,
         sku_id: f,
         location_stack: A
-      }), (0, s.fw)(), (0, l.p)(), null == T || T(P), P && (0, c.qg)({
-        variantsReturnStyle: R
+      }), (0, s.fw)(), (0, l.p)(), null == I || I(R), R && (0, c.qg)({
+        variantsReturnStyle: P
       })
     },
     onCloseRequest: () => {
-      null != t && I.has(t) && (0, a.Mr3)(L)
+      null != t && S.has(t) && (0, a.Mr3)(x)
     }
   })
 }

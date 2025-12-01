@@ -30,14 +30,14 @@ function E(e) {
     appContext: y
   } = e, {
     newestAnalyticsLocation: O
-  } = (0, o.ZP)(), v = (0, i.e7)([f.default], () => f.default.getId() === (null == t ? true : t.id)), I = (0, l.m)(null != n ? n : null), T = (0, i.e7)([_.Z], () => null != E ? E : _.Z.getChannelId(n, true), [E, n]);
-  return null == n || !I || v ? null : (0, r.jsx)(p.f6, {
+  } = (0, o.ZP)(), v = (0, i.e7)([f.default], () => f.default.getId() === (null == t ? true : t.id)), S = (0, l.m)(null != n ? n : null), I = (0, i.e7)([p.Z], () => null != E ? E : p.Z.getChannelId(n, true), [E, n]);
+  return null == n || !S || v ? null : (0, r.jsx)(_.f6, {
     action: "PRESS_MOD_VIEW",
     icon: a.HI3,
     tooltipText: g.intl.string(g.t.kj3tz2),
     onClick: () => {
-      c.Z.close(), null != T && (0, d.Kh)(T), (0, u.i)(y), (0, s.r)(n, t.id, null != T ? T : h.oC.MEMBER_SAFETY, {
-        modViewPanel: m.k.INFO,
+      c.Z.close(), null != I && (0, d.Kh)(I), (0, u.i)(y), (0, s.r)(n, t.id, null != I ? I : m.oC.MEMBER_SAFETY, {
+        modViewPanel: h.k.INFO,
         sourceLocation: O
       }), null == b || b()
     }

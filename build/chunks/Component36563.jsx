@@ -2,7 +2,7 @@
 /** chunk id: 36563, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -83,42 +83,42 @@ function v() {
   }
 }
 
-function I(e) {
+function S(e) {
   let {
     users: t,
     maxUsers: a,
     guildId: s,
     channelId: g,
     className: b,
-    size: I = u.EFr.SIZE_24,
-    overflowCountVariant: T,
-    overflowCountColor: S = "interactive-normal",
+    size: S = u.EFr.SIZE_24,
+    overflowCountVariant: I,
+    overflowCountColor: T = "interactive-normal",
     overflowCountClassName: A,
     hideOverflowCount: C = false,
     disableUsernameTooltip: N = false,
-    disableUserPopout: R = false,
-    onClickOverflow: P,
-    onFocusOverflow: D,
-    onUserClick: w,
-    onUserPopoutRequestClose: L,
-    "aria-label": x,
-    "aria-labelledby": M,
-    "aria-hidden": k
-  } = e, [j, U] = i.useState(false), G = O(I), B = i.useRef(null), Z = t.length - a, F = Z + 1, V = Z > 0 && !C && !k, H = () => (0, r.jsx)(u.VqE, {
-    className: m.popoutWrapper,
-    "aria-label": x,
-    "aria-labelledby": M,
+    disableUserPopout: P = false,
+    onClickOverflow: R,
+    onFocusOverflow: w,
+    onUserClick: D,
+    onUserPopoutRequestClose: x,
+    "aria-label": L,
+    "aria-labelledby": j,
+    "aria-hidden": M
+  } = e, [k, U] = i.useState(false), G = O(S), Z = i.useRef(null), B = t.length - a, F = B + 1, V = B > 0 && !C && !M, H = () => (0, r.jsx)(u.VqE, {
+    className: h.popoutWrapper,
+    "aria-label": L,
+    "aria-labelledby": j,
     children: (0, r.jsx)(u.Ttm, {
-      className: m.scroller,
+      className: h.scroller,
       children: t.map(e => (0, r.jsx)(f.Z, {
         user: e,
         guildId: s,
         channelId: g,
-        nick: _.ZP.getNickname(s, g, e),
-        disablePopout: "function" == typeof R ? R(e.id) : R,
-        onClick: w,
+        nick: p.ZP.getNickname(s, g, e),
+        disablePopout: "function" == typeof P ? P(e.id) : P,
+        onClick: D,
         onPopoutRequestClose: () => {
-          U(false), null == L || L()
+          U(false), null == x || x()
         },
         onContextMenu: t => (0, d.jW)(t, async () => {
           let {
@@ -134,17 +134,17 @@ function I(e) {
         })
       }, e.id))
     })
-  }), W = () => {
+  }), Y = () => {
     let e = V ? a - 1 : Math.min(t.length, a),
       n = e - 1,
       i = l()(t).take(e).map((e, t) => {
-        let i = _.ZP.getNickname(s, g, e),
-          a = null != i ? i : p.ZP.getName(e),
+        let i = p.ZP.getNickname(s, g, e),
+          a = null != i ? i : _.ZP.getName(e),
           l = t === n && !V,
-          d = o()(m.avatar, G, l && m.isLast),
+          d = o()(h.avatar, G, l && h.isLast),
           f = (0, r.jsx)(u.qEK, {
             src: e.getAvatarURL(s, 24),
-            size: I,
+            size: S,
             "aria-hidden": true
           });
         return (0, r.jsx)("li", {
@@ -165,31 +165,31 @@ function I(e) {
         }, e.id)
       }).value();
     return (0, r.jsx)("ul", {
-      className: m.avatars,
+      className: h.avatars,
       children: i
     })
-  }, Y = () => {
+  }, W = () => {
     if (!V) return null;
-    let e = null != T ? T : v(I);
+    let e = null != I ? I : v(S);
     return (0, r.jsx)(u.yRy, {
-      targetElementRef: B,
+      targetElementRef: Z,
       renderPopout: H,
-      shouldShow: j,
+      shouldShow: k,
       position: "bottom",
       onRequestClose: () => U(false),
       children: t => (0, r.jsx)(u.P3F, y(E({}, t), {
-        innerRef: B,
-        className: o()(m.overflow, G, A),
-        onFocus: D,
+        innerRef: Z,
+        className: o()(h.overflow, G, A),
+        onFocus: w,
         onClick: e => {
-          null == P || P(e), U(true)
+          null == R || R(e), U(true)
         },
-        "aria-label": h.intl.formatToPlainString(h.t.R8Z8Qr, {
+        "aria-label": m.intl.formatToPlainString(m.t.R8Z8Qr, {
           count: F
         }),
         children: (0, r.jsx)(u.Text, {
           variant: e,
-          color: S,
+          color: T,
           children: F > 99 ? ">99" : "+".concat(F)
         })
       }))
@@ -197,10 +197,10 @@ function I(e) {
   };
   return t.length <= 0 ? null : (0, r.jsxs)("div", {
     role: "group",
-    "aria-label": x,
-    "aria-labelledby": M,
-    className: o()(b, m.avatars),
-    "aria-hidden": k,
-    children: [W(), Y()]
+    "aria-label": L,
+    "aria-labelledby": j,
+    className: o()(b, h.avatars),
+    "aria-hidden": M,
+    children: [Y(), W()]
   })
 }

@@ -23,15 +23,15 @@ var Chunk149765 = require("./149765.js"),
 
 function g(e) {
   let t = u.default.getCurrentUser(),
-    n = h.Z.getIncidentsByGuild();
+    n = m.Z.getIncidentsByGuild();
   for (let i of f.default.keys(n).map(e => s.Z.getGuild(e))) {
     if (null == i) continue;
     let a = n[i.id];
-    if (!(null == a || !(0, p.i9)(a) && !(0, p.ur)(a) || (0, p.ur)(a) && i.id !== e) && r.Db(d.uB({
+    if (!(null == a || !(0, _.i9)(a) && !(0, _.ur)(a) || (0, _.ur)(a) && i.id !== e) && r.Db(d.uB({
         user: t,
         context: i,
         checkElevated: false
-      }), m.cv)) return i.id
+      }), h.cv)) return i.id
   }
   return null
 }
@@ -41,10 +41,10 @@ function E(e) {
       let t = s.Z.getGuild(e);
       if (null == t) returnfalse;
       let n = l.Z.getGuildPermissions(t);
-      return null != n && r.Db(n, m.cv)
+      return null != n && r.Db(n, h.cv)
     }),
-    n = (0, i.e7)([h.Z], () => null != e ? h.Z.getGuildIncident(e) : null),
-    a = null != n && (0, p.ur)(n);
+    n = (0, i.e7)([m.Z], () => null != e ? m.Z.getGuildIncident(e) : null),
+    a = null != n && (0, _.ur)(n);
   return {
     shouldShowIncidentActions: t,
     incidentData: n,
@@ -68,7 +68,7 @@ function y(e) {
   let t = (0, o.gj)("useShowAntiRaidInGuildNotifSettings"),
     n = (0, i.e7)([l.Z, s.Z], () => {
       let t = s.Z.getGuild(e);
-      return (0, _.al)(t, l.Z)
+      return (0, p.al)(t, l.Z)
     });
   return t && n
 }

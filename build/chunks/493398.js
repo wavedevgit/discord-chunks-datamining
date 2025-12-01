@@ -11,7 +11,7 @@ require.r(exports), require.d(exports, {
   casual: () => g,
   createCasualConfiguration: () => O,
   createConfiguration: () => v,
-  hant: () => m,
+  hant: () => h,
   parse: () => b,
   parseDate: () => y,
   strict: () => E
@@ -29,7 +29,7 @@ var Chunk766403 = require("./766403.js"),
   Chunk908092 = require("./908092.js"),
   Chunk628475 = require("./628475.js"),
   Chunk29451 = require("./29451.js");
-let m = new Chunk201129.k(O()),
+let h = new Chunk201129.k(O()),
   g = new Chunk201129.k(O()),
   E = new Chunk201129.k(v());
 

@@ -25,7 +25,7 @@ var Chunk98405 = require("./98405.js"),
     g.sort(null)
   }),
   v = Chunk72570("sort"),
-  I = !Chunk621523(function() {
+  S = !Chunk621523(function() {
     if (Chunk287353) return Chunk287353 < 70;
     if (!Chunk358932 || !(Chunk358932 > 3)) {
       if (Chunk635464) returntrue;
@@ -57,7 +57,7 @@ var Chunk98405 = require("./98405.js"),
       return "DGBEFHACIJK" !== Chunk46015
     }
   }),
-  T = function(e) {
+  I = function(e) {
     return function(t, n) {
       return true === n ? false : true === t ? 1 : true !== e ? +e(t, n) || 0 : c(t) > c(n) ? 1 : false
     }
@@ -65,16 +65,16 @@ var Chunk98405 = require("./98405.js"),
 Chunk98405({
   target: "Array",
   proto: true,
-  forced: y || !O || !v || !I
+  forced: y || !O || !v || !S
 }, {
   sort: function(e) {
     true !== e && a(e);
     var t, n, r = o(this);
-    if (I) return true === e ? E(r) : E(r, e);
+    if (S) return true === e ? E(r) : E(r, e);
     var i = [],
       c = s(r);
     for (n = 0; n < c; n++) n in r && b(i, r[n]);
-    for (d(i, T(e)), t = s(i), n = 0; n < t;) r[n] = i[n++];
+    for (d(i, I(e)), t = s(i), n = 0; n < t;) r[n] = i[n++];
     for (; n < c;) l(r, n++);
     return r
   }

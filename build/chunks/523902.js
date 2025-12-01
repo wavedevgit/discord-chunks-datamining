@@ -18,7 +18,7 @@ let d = new WeakMap;
 function f(e, t, n) {
   let {
     direction: f
-  } = (0, u.j)(), _ = e.keyboardDelegate || new(0, o.d)({
+  } = (0, u.j)(), p = e.keyboardDelegate || new(0, o.d)({
     collection: t.collection,
     ref: n,
     orientation: "horizontal",
@@ -26,9 +26,9 @@ function f(e, t, n) {
     disabledKeys: t.disabledKeys,
     disabledBehavior: t.selectionManager.disabledBehavior
   }), {
-    labelProps: p,
-    fieldProps: h,
-    descriptionProps: m,
+    labelProps: _,
+    fieldProps: m,
+    descriptionProps: h,
     errorMessageProps: g
   } = (0, l.U)({
     ...e,
@@ -37,8 +37,8 @@ function f(e, t, n) {
     gridProps: E
   } = (0, r.c)({
     ...e,
-    ...h,
-    keyboardDelegate: _,
+    ...m,
+    keyboardDelegate: p,
     shouldFocusWrap: true,
     linkBehavior: "override",
     keyboardNavigationBehavior: "tab"
@@ -46,9 +46,9 @@ function f(e, t, n) {
     focusWithinProps: O
   } = (0, c.L)({
     onFocusWithinChange: y
-  }), v = (0, i.z)(e), I = (0, s.useRef)(t.collection.size);
+  }), v = (0, i.z)(e), S = (0, s.useRef)(t.collection.size);
   return (0, s.useEffect)(() => {
-    n.current && I.current > 0 && 0 === t.collection.size && b && n.current.focus(), I.current = t.collection.size
+    n.current && S.current > 0 && 0 === t.collection.size && b && n.current.focus(), S.current = t.collection.size
   }, [t.collection.size, b, n]), d.set(t, {
     onRemove: e.onRemove
   }), {
@@ -58,10 +58,10 @@ function f(e, t, n) {
       "aria-relevant": "additions",
       "aria-live": b ? "polite" : "off",
       ...O,
-      ...h
+      ...m
     }),
-    labelProps: p,
-    descriptionProps: m,
+    labelProps: _,
+    descriptionProps: h,
     errorMessageProps: g
   }
 }

@@ -15,7 +15,7 @@ var r, Chunk828700 = require("./828700.js"),
   Chunk430824 = require("./430824.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,17 +23,17 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = false,
-  m = null,
+let m = false,
+  h = null,
   g = null,
   E = {};
 
 function b() {
-  null != m && null == Chunk430824.Z.getGuild(m) && null == Chunk937111.Z.getRequest(m) && (m = null), null != g && null == Chunk430824.Z.getGuild(g) && null == Chunk937111.Z.getRequest(g) && (g = null), O(m)
+  null != h && null == Chunk430824.Z.getGuild(h) && null == Chunk937111.Z.getRequest(h) && (h = null), null != g && null == Chunk430824.Z.getGuild(g) && null == Chunk937111.Z.getRequest(g) && (g = null), O(h)
 }
 
 function y(e) {
-  m = e.selectedGuildId, g = true, b()
+  h = e.selectedGuildId, g = true, b()
 }
 
 function O(e) {
@@ -44,69 +44,69 @@ function v(e) {
   let {
     guildId: t
   } = e;
-  if (m === t) returnfalse;
-  O(m), O(t), null != t && (g = t), m = t
+  if (h === t) returnfalse;
+  O(h), O(t), null != t && (g = t), h = t
+}
+
+function S(e) {
+  let t = false;
+  return delete E[e], g === e && (g = null, t = true), h === e && (f.Z.getGuildsArray().find(t => t.id !== e), h = null, (0, c.dL)(p.Z5c.ME), t = true), t
 }
 
 function I(e) {
-  let t = false;
-  return delete E[e], g === e && (g = null, t = true), m === e && (f.Z.getGuildsArray().find(t => t.id !== e), m = null, (0, c.dL)(_.Z5c.ME), t = true), t
-}
-
-function T(e) {
   let {
     guild: {
       id: t,
       unavailable: n
     }
   } = e;
-  returntrue !== n && I(t)
+  returntrue !== n && S(t)
 }
 
-function S(e) {
+function T(e) {
   let {
     guildId: t,
     user: n
   } = e;
-  return n.id === u.default.getId() && I(t)
+  return n.id === u.default.getId() && S(t)
 }
 
 function A() {
-  m = null, g = null
+  h = null, g = null
 }
 class C extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t, n, r, a;
-    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(u.default, d.Z, f.Z, s.Z), E = null != (n = null == e ? true : e.selectedGuildTimestampMillis) ? n : {}, m = null != (r = null == e ? true : e.selectedGuildId) ? r : null, g = null != (a = null == e ? true : e.lastSelectedGuildId) ? a : null;
+    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(u.default, d.Z, f.Z, s.Z), E = null != (n = null == e ? true : e.selectedGuildTimestampMillis) ? n : {}, h = null != (r = null == e ? true : e.selectedGuildId) ? r : null, g = null != (a = null == e ? true : e.lastSelectedGuildId) ? a : null;
     let o = d.Z.lastNonVoiceRoute,
       c = (0, i.LX)(o, {
-        path: _.Z5c.CHANNEL(l.Hw.guildId())
+        path: p.Z5c.CHANNEL(l.Hw.guildId())
       });
     null == c || null == (t = c.params) || t.guildId
   }
   getState() {
     return {
       selectedGuildTimestampMillis: E,
-      selectedGuildId: m,
+      selectedGuildId: h,
       lastSelectedGuildId: g
     }
   }
   getGuildId() {
-    return m
+    return h
   }
   getLastSelectedGuildId() {
     return g
   }
   getLastSelectedTimestamp(e) {
-    return m === e ? h : E[e]
+    return h === e ? m : E[e]
   }
 }
-p(C, "displayName", "SelectedGuildStore"), p(C, "persistKey", "SelectedGuildStore");
+_(C, "displayName", "SelectedGuildStore"), _(C, "persistKey", "SelectedGuildStore");
 let N = new C(Chunk570140.Z, {
   CONNECTION_OPEN: b,
   OVERLAY_INITIALIZE: y,
   CHANNEL_SELECT: v,
-  GUILD_MEMBER_REMOVE: S,
-  GUILD_DELETE: T,
+  GUILD_MEMBER_REMOVE: T,
+  GUILD_DELETE: I,
   LOGOUT: A
 })

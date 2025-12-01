@@ -2,7 +2,7 @@
 /** chunk id: 663924, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,7 +33,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,9 +46,9 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -56,7 +56,7 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -71,7 +71,7 @@ function C(e) {
   var {
     positionTargetRef: t,
     align: n
-  } = e, i = T(e, ["positionTargetRef", "align"]);
+  } = e, i = I(e, ["positionTargetRef", "align"]);
   return (0, r.jsx)("span", {
     style: g.u$,
     children: (0, r.jsx)(c.W5, {
@@ -92,7 +92,7 @@ function C(e) {
           role: "dialog",
           style: A,
           "aria-label": y.intl.string(y.t["3CNGLK"]),
-          children: t && (0, r.jsx)(R, I({}, i))
+          children: t && (0, r.jsx)(P, S({}, i))
         })
       }
     })
@@ -103,24 +103,24 @@ function N() {
   Chunk499254.y(Chunk827498.ti.DISMISSED)
 }
 
-function R(e) {
+function P(e) {
   let {
     channel: t,
     closeOnModalOuterClick: n = false,
     parentModalKey: c
-  } = e, _ = i.useRef(null), {
+  } = e, p = i.useRef(null), {
     renderWindow: y,
     windowDispatch: O
-  } = i.useContext(u.ZP), v = null != c, I = (0, o.Jw)(null != c ? c : ""), T = i.useCallback(e => {
+  } = i.useContext(u.ZP), v = null != c, S = (0, o.Jw)(null != c ? c : ""), I = i.useCallback(e => {
     var t;
-    if (!v && (0, o.$s)() || v && !(I && n) || d.Z.isOpen() || e.defaultPrevented) return;
+    if (!v && (0, o.$s)() || v && !(S && n) || d.Z.isOpen() || e.defaultPrevented) return;
     let {
       target: r
     } = e;
     if ((0, a.kK)(r) && null != r.closest("." + g.Jh)) return;
     for (;
       (0, a.kK)(r);) {
-      if (r === _.current) return;
+      if (r === p.current) return;
       if (r.classList.contains(g.t4) || r.classList.contains(g.Id)) return void e.preventDefault();
       if (r.classList.contains(g.NN)) return;
       let t = [b.cZ, l.N];
@@ -130,21 +130,21 @@ function R(e) {
     N();
     let i = null == (t = (0, a.uB)(e)) ? true : t.activeElement;
     (null == i || "BODY" === i.tagName) && f.S.dispatchToLastSubscribed(E.CkL.TEXTAREA_FOCUS)
-  }, [n, I, v]);
-  i.useLayoutEffect(() => (y.addEventListener("mousedown", T), y.addEventListener("contextmenu", T), O.subscribe(E.CkL.POPOUT_CLOSE, N), () => {
-    y.removeEventListener("mousedown", T), y.removeEventListener("contextmenu", T), O.unsubscribe(E.CkL.POPOUT_CLOSE, N)
-  }), [T, y, O]), (0, s.Tbt)(_), i.useEffect(() => {
-    (!v && (0, o.$s)() || v && !I) && N()
-  }, [I, v]);
-  let S = (0, m.Z)();
-  return (0, r.jsx)(h.Z, {
-    ref: _,
+  }, [n, S, v]);
+  i.useLayoutEffect(() => (y.addEventListener("mousedown", I), y.addEventListener("contextmenu", I), O.subscribe(E.CkL.POPOUT_CLOSE, N), () => {
+    y.removeEventListener("mousedown", I), y.removeEventListener("contextmenu", I), O.unsubscribe(E.CkL.POPOUT_CLOSE, N)
+  }), [I, y, O]), (0, s.Tbt)(p), i.useEffect(() => {
+    (!v && (0, o.$s)() || v && !S) && N()
+  }, [S, v]);
+  let T = (0, h.Z)();
+  return (0, r.jsx)(m.Z, {
+    ref: p,
     context: {
       channel: t,
       type: "channel"
     },
-    entrypoint: p._b.TEXT,
-    initHistory: S
+    entrypoint: _._b.TEXT,
+    initHistory: T
   })
 }
-let P = Chunk473749.memo(C)
+let R = Chunk473749.memo(C)

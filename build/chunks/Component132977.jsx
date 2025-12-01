@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZX: () => v,
-  gt: () => I,
+  gt: () => S,
   rH: () => b
 });
 var r, Chunk54381 = require("./54381.js"),
@@ -16,7 +16,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk104505 = require("./104505.js"),
   Chunk929370 = require("./929370.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -92,7 +92,7 @@ class v extends(r = Chunk473749.PureComponent) {
         shinePaused: r
       } = module,
       a = g(module, ["className", "shineSize", "shinePaused"]);
-    return (0, Chunk54381.jsx)(Chunk748780.Z.div, m(p({}, Chunk473749), {
+    return (0, Chunk54381.jsx)(Chunk748780.Z.div, h(_({}, Chunk473749), {
       className: s()(Chunk929370.shineContainer, exports, {
         [Chunk929370.shinePaused]: r
       }),
@@ -107,10 +107,10 @@ class v extends(r = Chunk473749.PureComponent) {
     }))
   }
 }
-_(v, "defaultProps", {
+p(v, "defaultProps", {
   shineSize: "default"
 });
-let I = e => {
+let S = e => {
   var {
     children: t,
     className: n,
@@ -118,26 +118,26 @@ let I = e => {
     submitting: o,
     pauseAnimation: l,
     shineSize: u = "default",
-    shinePaused: _,
-    buttonShineClassName: h,
+    shinePaused: p,
+    buttonShineClassName: m,
     onlyShineOnHover: E
   } = e, b = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]);
   let y = a.useRef(null),
     O = (0, d.X)(y),
-    I = !r && !o && true !== l && (!E || O);
-  return (0, i.jsxs)(c.zx, m(p({
+    S = !r && !o && true !== l && (!E || O);
+  return (0, i.jsxs)(c.zx, h(_({
     "data-migration-pending": true,
     buttonRef: y
   }, b), {
     className: s()(f.shinyButton, n),
     disabled: r,
     submitting: o,
-    children: [t, I ? (0, i.jsx)(v, {
+    children: [t, S ? (0, i.jsx)(v, {
       "data-migration-pending": true,
-      shinePaused: _,
-      className: s()(f.buttonShine, E ? f.onlyShineOnHover : true, h),
+      shinePaused: p,
+      className: s()(f.buttonShine, E ? f.onlyShineOnHover : true, m),
       shineSize: u
     }) : null]
   }))
 };
-I.ShineSizes = b
+S.ShineSizes = b

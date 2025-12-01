@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk817120 = require("./817120.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -62,23 +62,23 @@ function y(e) {
     entry: t,
     channel: n,
     className: a
-  } = e, m = i.useRef(null), E = i.useRef(null), {
+  } = e, h = i.useRef(null), E = i.useRef(null), {
     displayParticipants: y,
     participant1: O,
     participant2: v,
-    numOtherParticipants: I,
-    orderedParticipants: T
-  } = (0, u.Z)(t), S = [O, v];
+    numOtherParticipants: S,
+    orderedParticipants: I
+  } = (0, u.Z)(t), T = [O, v];
   return (0, r.jsxs)("div", {
-    className: o()(h.container, a),
+    className: o()(m.container, a),
     children: [y.length > 0 ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(_.Z, {
-        targetElementRef: m,
-        participants: T,
+      children: [(0, r.jsx)(p.Z, {
+        targetElementRef: h,
+        participants: I,
         channel: n,
         children: e => (0, r.jsx)(l.P3F, b(g({
-          innerRef: m,
-          className: h.clickable
+          innerRef: h,
+          className: m.clickable
         }, e), {
           children: (0, r.jsx)(s.Z, {
             maxUsers: 3,
@@ -95,25 +95,25 @@ function y(e) {
     }) : null, (0, r.jsx)(l.Heading, {
       variant: "text-sm/semibold",
       color: "text-secondary",
-      className: o()(h.truncatedText, h.usersHeader),
+      className: o()(m.truncatedText, m.usersHeader),
       scaleFontToUserSetting: true,
-      children: p.intl.format(p.t.rH95Gu, {
-        user0: c.ZP.getName(n.guild_id, n.id, S[0]),
-        user1: c.ZP.getName(n.guild_id, n.id, S[1]),
-        countOthers: I,
+      children: _.intl.format(_.t.rH95Gu, {
+        user0: c.ZP.getName(n.guild_id, n.id, T[0]),
+        user1: c.ZP.getName(n.guild_id, n.id, T[1]),
+        countOthers: S,
         name0Hook: (e, t) => (0, r.jsx)(f.Z, {
           text: e,
-          user: S[0],
+          user: T[0],
           channel: n
         }, t),
         name1Hook: (e, t) => (0, r.jsx)(f.Z, {
           text: e,
-          user: S[1],
+          user: T[1],
           channel: n
         }, t),
-        countOthersHook: (e, t) => (0, r.jsx)(_.Z, {
+        countOthersHook: (e, t) => (0, r.jsx)(p.Z, {
           targetElementRef: E,
-          participants: T,
+          participants: I,
           channel: n,
           children: t => (0, r.jsx)(d.Z, b(g({}, t), {
             tag: "span",

@@ -2,8 +2,8 @@
 /** chunk id: 878678, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ConfirmModal: () => _,
-  s: () => p
+  ConfirmModal: () => p,
+  s: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,31 +36,31 @@ function f(e) {
   return e
 }
 
-function _(e) {
+function p(e) {
   let t, n, {
       header: a,
       children: d,
       confirmText: f,
-      cancelText: _,
-      className: p,
-      onConfirm: h,
-      onCancel: m,
+      cancelText: p,
+      className: _,
+      onConfirm: m,
+      onCancel: h,
       onClose: g,
       onCloseCallback: E,
       bodyClassName: b,
       transitionState: y,
       loading: O = false,
       confirmButtonColor: v = s.Button.Colors.RED,
-      focusCancel: I = false,
-      impression: T
+      focusCancel: S = false,
+      impression: I
     } = e,
-    S = i.useRef(null);
+    T = i.useRef(null);
   return i.useEffect(() => {
-    I || setTimeout(() => {
+    S || setTimeout(() => {
       var e;
-      return null == (e = S.current) ? true : e.focus()
+      return null == (e = T.current) ? true : e.focus()
     }, 0)
-  }, [I]), i.useLayoutEffect(() => () => null == E ? true : E()), null != _ && (t = (0, r.jsx)(s.Button, {
+  }, [S]), i.useLayoutEffect(() => () => null == E ? true : E()), null != p && (t = (0, r.jsx)(s.Button, {
     "data-migration-pending": true,
     type: "button",
     look: s.Button.Looks.FILLED,
@@ -69,30 +69,30 @@ function _(e) {
     size: s.Button.Sizes.MEDIUM,
     disabled: O,
     onClick: () => {
-      null == m || m(), g()
+      null == h || h(), g()
     },
-    autoFocus: I,
-    children: _
+    autoFocus: S,
+    children: p
   })), null != f && (n = (0, r.jsx)(s.Button, {
     "data-migration-pending": true,
-    buttonRef: S,
+    buttonRef: T,
     type: "submit",
     size: s.Button.Sizes.MEDIUM,
     color: v,
     submitting: O,
     onClick: async () => {
       try {
-        await (null == h ? true : h()), g()
+        await (null == m ? true : m()), g()
       } catch (e) {
         throw e
       }
     },
-    autoFocus: !I,
+    autoFocus: !S,
     children: f
   })), (0, r.jsxs)(c.Y0, {
-    className: p,
+    className: _,
     transitionState: y,
-    impression: T,
+    impression: I,
     parentComponent: "ConfirmModal",
     children: [null != a ? (0, r.jsx)(c.xB, {
       "data-migration-pending": true,
@@ -112,9 +112,9 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   return (0, r.jsx)(c.u_, {
     onCloseRequest: e.dismissable ? e.onCancel : null,
-    renderModal: t => (0, r.jsx)(_, f({}, t, e))
+    renderModal: t => (0, r.jsx)(p, f({}, t, e))
   })
 }

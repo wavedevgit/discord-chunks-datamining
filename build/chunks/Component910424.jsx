@@ -33,28 +33,28 @@ function E(e) {
   }), {
     activeStream: y,
     watchingOtherStream: O
-  } = (0, i.cj)([_.Z], () => ({
-    activeStream: _.Z.getActiveStreamForApplicationStream(n),
-    watchingOtherStream: null != n && _.Z.getAllActiveStreamsForChannel(n.channelId).filter(e => {
+  } = (0, i.cj)([p.Z], () => ({
+    activeStream: p.Z.getActiveStreamForApplicationStream(n),
+    watchingOtherStream: null != n && p.Z.getAllActiveStreamsForChannel(n.channelId).filter(e => {
       let {
         ownerId: t
       } = e;
       return t !== n.ownerId
     }).length > 0
-  })), v = (0, i.e7)([p.Z], () => p.Z.getChannel(null == n ? true : n.channelId)), [I, T] = (0, d.wq)(v), S = (0, f.Aq)(), A = null != y && null != n && y.state !== m.jm8.ENDED && y.ownerId === n.ownerId, C = e => {
+  })), v = (0, i.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)), [S, I] = (0, d.wq)(v), T = (0, f.Aq)(), A = null != y && null != n && y.state !== h.jm8.ENDED && y.ownerId === n.ownerId, C = e => {
     null != n && (null == E || E(), l.default.selectVoiceChannel(n.channelId), A || (0, c.iV)(n, {
       forceMultiple: e
-    }), S.dispatch(m.CkL.POPOUT_CLOSE), h.S.dispatch(m.CkL.MODAL_CLOSE), s.Z.popAll())
+    }), T.dispatch(h.CkL.POPOUT_CLOSE), m.S.dispatch(h.CkL.MODAL_CLOSE), s.Z.popAll())
   };
   if (null == n) return null;
-  let N = (0, d.P9)(T);
+  let N = (0, d.P9)(I);
   return t ? N = g.intl.string(g.t.XvBdeT) : A && (N = g.intl.string(g.t["JH1SJ+"])), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.Button, {
       size: "sm",
       variant: A ? "secondary" : "active",
       icon: o.hGI,
       text: N,
-      disabled: t || A || !I,
+      disabled: t || A || !S,
       onClick: () => C(false),
       fullWidth: true
     }), !O || A || b ? null : (0, r.jsx)(a.u, {

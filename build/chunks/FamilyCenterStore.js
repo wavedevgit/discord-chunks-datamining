@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,41 +46,41 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = null,
-  m = null,
+let m = null,
+  h = null,
   g = {},
   E = false,
-  b = x(),
-  y = M(),
+  b = L(),
+  y = j(),
   O = null,
-  v = L(),
+  v = x(),
+  S = false,
   I = false,
-  T = false,
-  S = null,
+  T = null,
   A = null,
   C = [],
   N = [],
-  R = null,
   P = null,
-  D = {},
-  w = {};
+  R = null,
+  w = {},
+  D = {};
 
-function L() {
+function x() {
   var e, t, n, r;
   return (null == (t = window) || null == (e = exports.location) ? true : module.pathname) === Chunk292352.ix.FAMILY_CENTER_MY_FAMILY ? Chunk292352.dG.REQUESTS : (null == (r = window) || null == (n = Chunk133080.location) ? true : require.pathname) === Chunk292352.ix.FAMILY_CENTER_SETTINGS ? Chunk292352.dG.SETTINGS : Chunk292352.dG.ACTIVITY
 }
 
-function x() {
+function L() {
   let e = new Map;
   return module.set(Chunk292352.MY.USER_ADD, new Map), module.set(Chunk292352.MY.GUILD_ADD, new Map), module.set(Chunk292352.MY.USER_INTERACTION, new Map), module.set(Chunk292352.MY.GUILD_INTERACTION, new Map), module.set(Chunk292352.MY.USER_CALLED, new Map), module.set(Chunk292352.MY.TOTAL_VOICE_MINUTES, new Map), module.set(Chunk292352.MY.PURCHASES, new Map), module
 }
 
-function M() {
+function j() {
   return {
     [Chunk292352.MY.USER_ADD]: 0,
     [Chunk292352.MY.GUILD_ADD]: 0,
@@ -92,19 +92,19 @@ function M() {
   }
 }
 
-function k() {
+function M() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
-  return arguments.length > 1 && arguments[1], g = module.length > 0 ? module.reduce((e, t) => p(f({}, e), {
+  return arguments.length > 1 && arguments[1], g = module.length > 0 ? module.reduce((e, t) => _(f({}, e), {
     [t.user_id]: t
   }), {}) : {}, E = true, g
 }
 
-function j(e) {
+function k(e) {
   true !== e && (y = e)
 }
 
 function U(e, t) {
-  let n = t ? b : x();
+  let n = t ? b : L();
   return e.forEach(e => {
     let t = e.display_type,
       r = n.get(t);
@@ -113,18 +113,18 @@ function U(e, t) {
 }
 
 function G(e) {
-  w = e.reduce((e, t) => {
+  D = e.reduce((e, t) => {
     var n;
-    return p(f({}, e), {
-      [t.id]: p(f({}, (0, o.dangerouslyConstructGuildRecordFromUntypedObject)(t)), {
+    return _(f({}, e), {
+      [t.id]: _(f({}, (0, o.dangerouslyConstructGuildRecordFromUntypedObject)(t)), {
         approximateMemberCount: null != (n = t.approximate_member_count) ? n : 0
       })
     })
-  }, w)
+  }, D)
 }
 
-function B(e) {
-  D = e.reduce((e, t) => {
+function Z(e) {
+  w = e.reduce((e, t) => {
     if (null != t.invoice_items && t.invoice_items.length > 0) {
       let n = t.invoice_items[0],
         r = n.sku_id,
@@ -140,8 +140,8 @@ function B(e) {
   }, {})
 }
 
-function Z() {
-  T = true
+function B() {
+  I = true
 }
 
 function F(e) {
@@ -158,26 +158,26 @@ function F(e) {
     topGuildActivities: u,
     totalSpendAmount: d,
     totalSpendCurrency: f,
-    invoices: _
+    invoices: p
   } = n;
-  h = o, m = l, U(r), j(a), G(i), k(t), null != _ && B(_), C = c, N = u, R = d, P = f, T = false, S = s.default.fromTimestamp(Date.now()), I = true
+  m = o, h = l, U(r), k(a), G(i), M(t), null != p && Z(p), C = c, N = u, P = d, R = f, I = false, T = s.default.fromTimestamp(Date.now()), S = true
 }
 
 function V(e) {
   let {
     linkedUsers: t
   } = e;
-  k(t)
+  M(t)
 }
 
 function H(e) {
   let {
     linkedUsers: t
   } = e;
-  k(t)
+  M(t)
 }
 
-function W(e) {
+function Y(e) {
   let {
     familyCenterTeenActivity: t
   } = e;
@@ -194,10 +194,10 @@ function W(e) {
     totalSpendCurrency: d,
     invoices: f
   } = t;
-  h = a, m = o, U(n), j(r), G(i), null != f && B(f), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now()), R = u, P = d
+  m = a, h = o, U(n), k(r), G(i), null != f && Z(f), C = l, N = c, I = false, T = s.default.fromTimestamp(Date.now()), P = u, R = d
 }
 
-function Y(e) {
+function W(e) {
   let {
     familyCenterTeenActivity: t
   } = e, {
@@ -211,14 +211,14 @@ function K(e) {
   let {
     linkedUsers: t
   } = e;
-  k(t)
+  M(t)
 }
 
 function z(e) {
   let {
     linkedUsers: t
   } = e;
-  k(t, true)
+  M(t, true)
 }
 
 function q(e) {
@@ -228,14 +228,14 @@ function q(e) {
   O = t
 }
 
-function X(e) {
+function Q(e) {
   let {
     tab: t
   } = e;
   v = t
 }
 
-function Q(e) {
+function X(e) {
   let {
     user: t
   } = e;
@@ -246,7 +246,7 @@ function Q(e) {
       user_id: t
     } = e;
     return true === n[t]
-  }) && t.linked_users.length > Object.keys(g).length ? l.ZP.fetchLinkedUsers() : k(t.linked_users)
+  }) && t.linked_users.length > Object.keys(g).length ? l.ZP.fetchLinkedUsers() : M(t.linked_users)
 }
 
 function J(e) {
@@ -254,7 +254,7 @@ function J(e) {
     linkedUsers: t
   } = e;
   if (null == t) returnfalse;
-  k(t)
+  M(t)
 }
 
 function $(e) {
@@ -282,14 +282,14 @@ function et() {
 function en(e) {
   y = e.reduce((e, t) => {
     let [n, r] = t.split(":"), i = (0, c.jV)(n);
-    return true === i ? e : p(f({}, e), {
+    return true === i ? e : _(f({}, e), {
       [i]: parseInt(r, 10)
     })
-  }, M())
+  }, j())
 }
 
 function er() {
-  h = null, m = null, g = {}, b = x(), y = M(), w = {}, T = false, S = null, v = L(), E = false, C = [], N = [], R = null, P = null, D = {}
+  m = null, h = null, g = {}, b = L(), y = j(), D = {}, I = false, T = null, v = x(), E = false, C = [], N = [], P = null, R = null, w = {}
 }
 class ei extends Chunk750041.Z {
   initialize() {
@@ -297,7 +297,7 @@ class ei extends Chunk750041.Z {
   }
   loadCache() {
     let e = this.readSnapshot(ei.LATEST_SNAPSHOT_VERSION);
-    null != module && (k(module.linkedUsers), G(module.guilds), U(module.teenActivity), en(module.teenActivityTotals))
+    null != module && (M(module.linkedUsers), G(module.guilds), U(module.teenActivity), en(module.teenActivityTotals))
   }
   takeSnapshot() {
     return {
@@ -306,12 +306,12 @@ class ei extends Chunk750041.Z {
         linkedUsers: Object.values(g),
         teenActivityTotals: et(),
         teenActivity: ee(),
-        guilds: Object.values(w)
+        guilds: Object.values(D)
       }
     }
   }
   getSelectedTeenId() {
-    return h
+    return m
   }
   getLinkedUsers() {
     return g
@@ -322,7 +322,7 @@ class ei extends Chunk750041.Z {
     return null == n ? null : null != (t = n.updated_at) ? t : n.created_at
   }
   getRangeStartTimestamp() {
-    return null == m ? null : Chunk709054.default.extractTimestamp(m)
+    return null == h ? null : Chunk709054.default.extractTimestamp(h)
   }
   getActionsForDisplayType(e) {
     let t = b.get(e);
@@ -335,16 +335,16 @@ class ei extends Chunk750041.Z {
     return O
   }
   getGuild(e) {
-    return w[e]
+    return D[e]
   }
   getSelectedTab() {
     return v
   }
   getStartId() {
-    return m
+    return h
   }
   getIsInitialized() {
-    return I
+    return S
   }
   getAreLinkedUsersProcessed() {
     return E
@@ -353,7 +353,7 @@ class ei extends Chunk750041.Z {
     return A
   }
   isLoading() {
-    return T
+    return I
   }
   getTopUserActivities() {
     return C
@@ -362,32 +362,32 @@ class ei extends Chunk750041.Z {
     return N
   }
   getTotalSpendAmount() {
-    return R
-  }
-  getTotalSpendCurrency() {
     return P
   }
+  getTotalSpendCurrency() {
+    return R
+  }
   getPurchaseInfo(e) {
-    return D[e]
+    return w[e]
   }
   canRefetch() {
-    return null === S || Chunk709054.default.age(S) > Chunk292352.Of
+    return null === T || Chunk709054.default.age(T) > Chunk292352.Of
   }
   constructor() {
     super({
       CONNECTION_OPEN: J,
-      CURRENT_USER_UPDATE: Q,
+      CURRENT_USER_UPDATE: X,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       FAMILY_CENTER_INITIAL_LOAD: F,
-      FAMILY_CENTER_FETCH_START: Z,
+      FAMILY_CENTER_FETCH_START: B,
       FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: V,
-      FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: W,
-      FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: Y,
+      FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: Y,
+      FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: W,
       FAMILY_CENTER_REQUEST_LINK_SUCCESS: H,
       FAMILY_CENTER_REQUEST_LINK_UPDATE_SUCCESS: K,
       FAMILY_CENTER_REQUEST_LINK_REMOVE_SUCCESS: z,
       FAMILY_CENTER_LINK_CODE_FETCH_SUCCESS: q,
-      FAMILY_CENTER_HANDLE_TAB_SELECT: X,
+      FAMILY_CENTER_HANDLE_TAB_SELECT: Q,
       SET_LOCATION_METADATA: $,
       LOGOUT: er
     })

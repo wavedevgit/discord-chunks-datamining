@@ -2,7 +2,7 @@
 /** chunk id: 922156, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -30,13 +30,13 @@ function d(e) {
 function f() {
   null != l && null != l.code && c.includes(l.code) && (l = null)
 }
-class _ extends(r = Chunk442837.ZP.Store) {
+class p extends(r = Chunk442837.ZP.Store) {
   getLastError() {
     return l
   }
 }
-s(_, "displayName", "DispatchApplicationErrorStore");
-let p = new _(Chunk570140.Z, {
+s(p, "displayName", "DispatchApplicationErrorStore");
+let _ = new p(Chunk570140.Z, {
   DISPATCH_APPLICATION_LAUNCH_SETUP_START: f,
   DISPATCH_APPLICATION_ERROR: d
 })

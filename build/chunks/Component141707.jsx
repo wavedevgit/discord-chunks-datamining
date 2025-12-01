@@ -5,8 +5,8 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk302051 = require("./302051.js");
 let o = Chunk473749.forwardRef(function(e, t) {
   let {
@@ -37,13 +37,13 @@ let o = Chunk473749.forwardRef(function(e, t) {
     }({
       marginTop: 8 * !!n
     }, l),
-    children: [(0, r.jsx)(s.d3s, {
+    children: [(0, r.jsx)(i.d3s, {
       size: "custom",
       className: a.infoIcon,
       height: n ? 16 : 12,
       width: n ? 16 : 12,
-      color: n ? i.Z.TEXT_MUTED : i.Z.WHITE
-    }), (0, r.jsx)(s.Text, {
+      color: n ? s.Z.colors.TEXT_MUTED.css : s.Z.colors.WHITE.css
+    }), (0, r.jsx)(i.Text, {
       color: n ? "text-muted" : "always-white",
       variant: n ? "text-xs/normal" : "text-xxs/normal",
       children: o

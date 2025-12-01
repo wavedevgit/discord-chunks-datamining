@@ -2,12 +2,12 @@
 /** chunk id: 716161, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ff: () => _,
+  Ff: () => p,
   GS: () => g,
-  KH: () => p,
+  KH: () => _,
   Nm: () => E,
-  RI: () => m,
-  Up: () => h,
+  RI: () => h,
+  Up: () => m,
   XV: () => f
 });
 var Chunk544891 = require("./544891.js"),
@@ -36,7 +36,7 @@ async function f() {
     }), module
   }
 }
-async function _(e, t, n) {
+async function p(e, t, n) {
   try {
     let a = await r.tn.post({
       url: d.ANM.VIDEO_FILTER_ASSETS,
@@ -55,18 +55,18 @@ async function _(e, t, n) {
     throw new u.Z(e)
   }
 }
-async function p(e) {
+async function _(e) {
   await r.tn.del({
     url: d.ANM.VIDEO_FILTER_ASSET(e.id),
     rejectWithError: false
   });
   let t = (0, l.P)(s.default.getCurrentUser());
-  (0, c.rD)(t) && t.id === e.id && h(null), i.Z.dispatch({
+  (0, c.rD)(t) && t.id === e.id && m(null), i.Z.dispatch({
     type: "VIDEO_FILTER_ASSET_DELETE_SUCCESS",
     videoFilterAsset: e
   })
 }
-async function h(e) {
+async function m(e) {
   if (await a.hW.updateAsync("voiceAndVideo", t => {
       t.videoBackgroundFilterDesktop = (0, c.i7)(e)
     }, a.fy.FREQUENT_USER_ACTION), (0, c.rD)(e)) {
@@ -84,7 +84,7 @@ async function h(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   o.Z.isSupported() && i.Z.dispatch({
     type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS",
     settings: e

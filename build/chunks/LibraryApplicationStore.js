@@ -15,7 +15,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk314897 = require("./314897.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,7 +49,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -62,83 +62,83 @@ function b() {
 let y = false,
   O = {},
   v = {},
-  I = new Set,
+  S = new Set,
+  I = {},
   T = {},
-  S = {},
   A = false;
 
 function C() {
-  Chunk433517.K.set(E, g(h({}, b()), {
-    activeLaunchOptionIds: S
+  Chunk433517.K.set(E, g(m({}, b()), {
+    activeLaunchOptionIds: T
   }))
 }
 
 function N() {
-  Chunk433517.K.set(E, g(h({}, b()), {
-    activeLibraryApplicationBranchIds: T
+  Chunk433517.K.set(E, g(m({}, b()), {
+    activeLibraryApplicationBranchIds: I
   }))
 }
 
-function R(e) {
+function P(e) {
   for (let t of e) {
     let e = u.Z.createFromServer(t);
     O[(0, d.Tu)(e.id, e.branchId)] = e
   }
 }
 
-function P() {
+function R() {
   y = false
-}
-
-function D(e) {
-  let {
-    libraryApplications: t
-  } = e;
-  O = {}, R(t), y = true
 }
 
 function w(e) {
   let {
     libraryApplications: t
   } = e;
-  R(t)
+  O = {}, P(t), y = true
 }
 
-function L(e) {
+function D(e) {
   let {
-    applicationId: t,
-    branchId: n,
-    flags: r
-  } = e, i = (0, d.Tu)(t, n), a = B(t, n);
-  null != a && !a.isHidden() && o.yE(r, _.eHb.HIDDEN) && (A = true), I.add(i)
+    libraryApplications: t
+  } = e;
+  P(t)
 }
 
 function x(e) {
   let {
-    libraryApplication: t
-  } = e, n = u.Z.createFromServer(t), r = (0, d.Tu)(n.id, n.branchId);
-  O[r] = n, I.delete(r)
+    applicationId: t,
+    branchId: n,
+    flags: r
+  } = e, i = (0, d.Tu)(t, n), a = Z(t, n);
+  null != a && !a.isHidden() && o.yE(r, p.eHb.HIDDEN) && (A = true), S.add(i)
 }
 
-function M(e) {
+function L(e) {
+  let {
+    libraryApplication: t
+  } = e, n = u.Z.createFromServer(t), r = (0, d.Tu)(n.id, n.branchId);
+  O[r] = n, S.delete(r)
+}
+
+function j(e) {
   let {
     applicationId: t,
     branchId: n,
     launchOptionId: r
   } = e;
-  S[(0, d.Tu)(t, n)] = r, C()
+  T[(0, d.Tu)(t, n)] = r, C()
 }
 
-function k(e) {
+function M(e) {
   let {
     applicationId: t,
     branchId: n
   } = e;
-  if (T[t] === n) returnfalse;
-  T[t] = n, N()
+  if (I[t] === n) returnfalse;
+  I[t] = n, N()
 }
 
-function j(e) {
+function k(e) {
   let {
     libraryApplications: t
   } = e;
@@ -150,56 +150,56 @@ function U() {
 }
 
 function G(e) {
-  let t = Z();
+  let t = B();
   return Object.keys(t).forEach(n => {
     e(t[n]) || delete t[n]
   }), t
 }
 
-function B(e, t) {
+function Z(e, t) {
   var n;
   let r = (0, d.Tu)(e, t);
   return null != (n = O[r]) ? n : v[r]
 }
 
-function Z() {
-  return h({}, v, O)
+function B() {
+  return m({}, v, O)
 }
 class F extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default);
     let e = Chunk433517.K.get(E);
-    null != module && (null == module.activeLaunchOptionIds ? C() : S = module.activeLaunchOptionIds, null == module.activeLibraryApplicationBranchIds ? N() : T = module.activeLibraryApplicationBranchIds)
+    null != module && (null == module.activeLaunchOptionIds ? C() : T = module.activeLaunchOptionIds, null == module.activeLibraryApplicationBranchIds ? N() : I = module.activeLibraryApplicationBranchIds)
   }
   get libraryApplications() {
     return G(e => !e.isHidden())
   }
   getAllLibraryApplications() {
-    return Z()
+    return B()
   }
   hasLibraryApplication() {
-    return Object.keys(Z()).length > 0
+    return Object.keys(B()).length > 0
   }
   hasApplication(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-      r = B(e, t);
+      r = Z(e, t);
     return !(null == r || !n && r.isHidden()) && (0, d.Je)(r)
   }
   getLibraryApplication(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-      r = B(e, t);
+      r = Z(e, t);
     return n && null != r ? (0, d.Je)(r) ? r : null : r
   }
   getActiveLibraryApplication(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = T[e];
+      n = I[e];
     if (null != n) {
       var r;
       let i = (0, d.Tu)(e, n),
         a = null != (r = O[i]) ? r : v[i];
       if (null != a && (0, d.Je)(a) && (t || !a.isHidden())) return a
     }
-    let i = Z();
+    let i = B();
     for (let n in i)
       if (i[n].id === e) {
         let e = i[n];
@@ -207,16 +207,16 @@ class F extends(r = Chunk442837.ZP.Store) {
       }
   }
   isUpdatingFlags(e, t) {
-    return I.has((0, d.Tu)(e, t))
+    return S.has((0, d.Tu)(e, t))
   }
   getActiveLaunchOptionId(e, t) {
-    return S[(0, d.Tu)(e, t)]
+    return T[(0, d.Tu)(e, t)]
   }
   get fetched() {
     return y
   }
   get entitledBranchIds() {
-    return a()(Z()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
+    return a()(B()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
   }
   get hasRemovedLibraryApplicationThisSession() {
     return A
@@ -227,16 +227,16 @@ class F extends(r = Chunk442837.ZP.Store) {
     })
   }
 }
-p(F, "displayName", "LibraryApplicationStore");
+_(F, "displayName", "LibraryApplicationStore");
 let V = new F(Chunk570140.Z, {
-  LOGOUT: P,
-  LIBRARY_FETCH_SUCCESS: D,
-  SKU_PURCHASE_SUCCESS: w,
-  LIBRARY_APPLICATION_FLAGS_UPDATE_START: L,
-  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: x,
-  LIBRARY_APPLICATION_UPDATE: x,
-  LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE: M,
-  LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: k,
-  LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: j,
+  LOGOUT: R,
+  LIBRARY_FETCH_SUCCESS: w,
+  SKU_PURCHASE_SUCCESS: D,
+  LIBRARY_APPLICATION_FLAGS_UPDATE_START: x,
+  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: L,
+  LIBRARY_APPLICATION_UPDATE: L,
+  LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE: j,
+  LIBRARY_APPLICATION_ACTIVE_BRANCH_UPDATE: M,
+  LIBRARY_APPLICATIONS_TEST_MODE_ENABLED: k,
   DEVELOPER_TEST_MODE_RESET: U
 })

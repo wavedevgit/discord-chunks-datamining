@@ -2,11 +2,11 @@
 /** chunk id: 801729, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dv: () => p,
+  Dv: () => _,
   G2: () => y,
   IG: () => E,
-  NG: () => m,
-  OV: () => h,
+  NG: () => h,
+  OV: () => m,
   fW: () => O,
   lB: () => b,
   mA: () => g
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk377171 = require("./377171.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk785114 = require("./785114.js");
 
 function l(e, t, n) {
@@ -59,7 +59,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -67,43 +67,43 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let p = {
+let _ = {
   ROUND: Chunk785114.baseShapeRound,
   ROUND_LEFT: Chunk785114.baseShapeRoundLeft,
   ROUND_RIGHT: Chunk785114.baseShapeRoundRight,
   SQUARE: ""
 };
 
-function h(e) {
+function m(e) {
   return e < 10 ? 16 : e < 100 ? 22 : 30
 }
 
-function m(e) {
+function h(e) {
   return e < 1e3 ? "".concat(e) : "".concat(Math.min(Math.floor(e / 1e3), 9), "k+")
 }
 let g = e => {
     var {
       count: t,
-      color: n = o.Z.STATUS_DANGER,
+      color: n = o.Z.colors.STATUS_DANGER.css,
       disableColor: i = false,
-      shape: l = p.ROUND,
+      shape: l = _.ROUND,
       className: u,
-      style: _,
-      renderBadgeCount: g = m
+      style: p,
+      renderBadgeCount: g = h
     } = e, E = f(e, ["count", "color", "disableColor", "shape", "className", "style", "renderBadgeCount"]);
     return (0, r.jsx)("div", d(c({
       className: a()(u, s.numberBadge, l),
       style: c({
         backgroundColor: i ? true : n,
-        width: h(t)
-      }, _)
+        width: m(t)
+      }, p)
     }, E), {
       children: g(t)
     }))
@@ -112,17 +112,17 @@ let g = e => {
     var {
       text: t,
       className: n,
-      color: i = o.Z.STATUS_DANGER,
-      shape: l = p.ROUND,
+      color: i = o.Z.colors.STATUS_DANGER.css,
+      shape: l = _.ROUND,
       disableColor: u = false,
-      style: _
-    } = e, h = f(e, ["text", "className", "color", "shape", "disableColor", "style"]);
+      style: p
+    } = e, m = f(e, ["text", "className", "color", "shape", "disableColor", "style"]);
     return (0, r.jsx)("div", d(c({
       className: a()(n, s.textBadge, l),
       style: c({
         backgroundColor: u ? true : i
-      }, _)
-    }, h), {
+      }, p)
+    }, m), {
       children: t
     }))
   },
@@ -140,8 +140,8 @@ let g = e => {
     let {
       icon: t,
       className: n,
-      color: i = o.Z.STATUS_DANGER,
-      shape: l = p.ROUND,
+      color: i = o.Z.colors.STATUS_DANGER.css,
+      shape: l = _.ROUND,
       disableColor: u = false,
       style: d
     } = e;
@@ -159,8 +159,8 @@ let g = e => {
   O = e => {
     var {
       className: t,
-      color: n = o.Z.INTERACTIVE_ACTIVE,
-      shape: i = p.ROUND,
+      color: n = o.Z.colors.INTERACTIVE_ACTIVE.css,
+      shape: i = _.ROUND,
       disableColor: l = false,
       style: u
     } = e, d = f(e, ["className", "color", "shape", "disableColor", "style"]);

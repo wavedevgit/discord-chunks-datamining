@@ -2,7 +2,7 @@
 /** chunk id: 607550, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./539854.js"), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -36,7 +36,7 @@ function f(e) {
   n.status = "fetching", n.error = true
 }
 
-function _(e) {
+function p(e) {
   let {
     wishlistId: t,
     wishlistData: n,
@@ -45,7 +45,7 @@ function _(e) {
   i.data = c(n), i.status = "success", i.error = true, i.updatedAt = r
 }
 
-function p(e) {
+function _(e) {
   let {
     wishlistId: t,
     error: n
@@ -53,7 +53,7 @@ function p(e) {
   r.status = "error", r.error = n
 }
 
-function h(e) {
+function m(e) {
   let {
     wishlistId: t,
     wishlistData: n
@@ -61,7 +61,7 @@ function h(e) {
   r.data = c(n), r.status = "success", r.error = true
 }
 
-function m(e) {
+function h(e) {
   let {
     error: t
   } = e;
@@ -137,12 +137,12 @@ class v extends Chunk442837.ZP.Store {
     return this.get(e).updatedAt
   }
 }
-let I = new v(Chunk570140.Z, {
+let S = new v(Chunk570140.Z, {
   WISHLIST_FETCH_START: f,
-  WISHLIST_FETCH_SUCCESS: _,
-  WISHLIST_FETCH_FAILURE: p,
-  WISHLIST_ADD_SKU_SUCCESS: h,
-  WISHLIST_ADD_SKU_FAILURE: m,
+  WISHLIST_FETCH_SUCCESS: p,
+  WISHLIST_FETCH_FAILURE: _,
+  WISHLIST_ADD_SKU_SUCCESS: m,
+  WISHLIST_ADD_SKU_FAILURE: h,
   WISHLIST_REMOVE_SKU_SUCCESS: g,
   WISHLIST_REMOVE_SKU_FAILURE: E,
   WISHLIST_UPDATE_VISIBILITY_SUCCESS: b,

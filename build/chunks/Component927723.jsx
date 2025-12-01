@@ -2,8 +2,8 @@
 /** chunk id: 927723, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => h,
-  k: () => p
+  V: () => m,
+  k: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -47,13 +47,13 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e) {
+function _(e) {
   let {
     kind: t
   } = e;
@@ -61,18 +61,18 @@ function p(e) {
     let {
       default: e
     } = await n.e("7285").then(n.bind(n, 951269));
-    return n => (0, r.jsx)(e, _(d({}, n), {
+    return n => (0, r.jsx)(e, p(d({}, n), {
       kind: t
     }))
   })
 }
 
-function h() {
+function m() {
   (0, Chunk481060.ZDy)(async () => {
     let {
       ConfirmModal: e
     } = await Promise.resolve().then(require.bind(require, 878678));
-    return t => (0, r.jsx)(e, _(d({}, t), {
+    return t => (0, r.jsx)(e, p(d({}, t), {
       header: l.intl.string(c.default.odgSTk),
       confirmText: l.intl.string(l.t.BddRzS),
       confirmButtonColor: i.zx.Colors.BRAND,

@@ -2,7 +2,7 @@
 /** chunk id: 78839, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Z
+  Z: () => B
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,22 +45,22 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = null,
-  m = null,
+let m = null,
+  h = null,
   g = null,
   E = null,
   b = null,
   y = false,
   O = null,
   v = false,
-  I = false,
-  T = null,
   S = false,
+  I = null,
+  T = false,
   A = null;
 
 function C(e) {
@@ -72,7 +72,7 @@ function C(e) {
     if (e.user_id !== u) return;
     let t = s.Q.createFromServer(e);
     r[t.id] = t, U(t) && (i[t.id] = t, t.type === c.NYc.GUILD && t.status !== c.O0b.ENDED && a.push(t), t.type === c.NYc.APPLICATION && t.status !== c.O0b.ENDED && o.push(t))
-  }), h = r, m = i, E = a, b = o, A = n
+  }), m = r, h = i, E = a, b = o, A = n
 }
 
 function N(e) {
@@ -87,15 +87,15 @@ function N(e) {
   }
 }
 
-function R(e) {
+function P(e) {
   let {
     subscription: t
   } = e;
   if (t.user_id !== l.default.getId()) return;
   let n = s.Q.createFromServer(t);
-  h = p(f({}, h), {
+  m = _(f({}, m), {
     [n.id]: n
-  }), U(n) && (m = p(f({}, m), {
+  }), U(n) && (h = _(f({}, h), {
     [n.id]: n
   })), null != E && n.type === c.NYc.GUILD && (E = N({
     activeSubscriptions: E,
@@ -106,11 +106,11 @@ function R(e) {
   }))
 }
 
-function P(e) {
+function R(e) {
   let {
     subscription: t
   } = e;
-  if (y = true, S = false, null != t) {
+  if (y = true, T = false, null != t) {
     if (t.user_id !== l.default.getId()) {
       y = false;
       return
@@ -119,11 +119,11 @@ function P(e) {
   }
 }
 
-function D() {
-  S = false
+function w() {
+  T = false
 }
 
-function w(e) {
+function D(e) {
   let {
     subscription: t
   } = e;
@@ -136,28 +136,28 @@ function w(e) {
   }
 }
 
-function L() {
-  I = true
-}
-
 function x() {
   S = true
 }
 
-function M(e) {
+function L() {
+  T = true
+}
+
+function j(e) {
   let {
     eligible: t
   } = e;
-  T = t, I = false
+  I = t, S = false
 }
 
-function k(e) {
+function M(e) {
   let {} = e;
-  T = false, I = false
+  I = false, S = false
 }
 
-function j() {
-  h = null, m = null, g = null, E = null, b = null, y = false, O = null, v = false, I = false, S = false, A = null
+function k() {
+  m = null, h = null, g = null, E = null, b = null, y = false, O = null, v = false, S = false, T = false, A = null
 }
 
 function U(e) {
@@ -166,7 +166,7 @@ function U(e) {
 
 function G(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-    r = n ? m : h;
+    r = n ? h : m;
   if (null == r) return null;
   for (let n in r) {
     let i = r[n];
@@ -175,12 +175,12 @@ function G(e, t) {
   }
   return null
 }
-class B extends(r = Chunk442837.ZP.Store) {
+class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default)
   }
   hasFetchedSubscriptions() {
-    return null != h
+    return null != m
   }
   hasFetchedMostRecentPremiumTypeSubscription() {
     return y
@@ -202,11 +202,11 @@ class B extends(r = Chunk442837.ZP.Store) {
   }
   getSubscriptions() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return module ? m : h
+    return module ? h : m
   }
   getSubscriptionById(e) {
     var t;
-    return null != (t = null == h ? true : h[e]) ? t : true
+    return null != (t = null == m ? true : m[e]) ? t : true
   }
   getActiveGuildSubscriptions() {
     return E
@@ -218,7 +218,7 @@ class B extends(r = Chunk442837.ZP.Store) {
     var t;
     let n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
       r = new Set(e),
-      i = n ? m : h;
+      i = n ? h : m;
     return null == i ? null : null != (t = Object.values(i).find(e => e.items.some(e => r.has(e.planId)))) ? t : null
   }
   getMostRecentPremiumTypeSubscription() {
@@ -228,13 +228,13 @@ class B extends(r = Chunk442837.ZP.Store) {
     return O
   }
   getIsSubscriptionEligibleForReward() {
-    return T
-  }
-  getIsFetchingSubscriptionRewardEligibility() {
     return I
   }
-  getIsFetchingMostRecentSubscription() {
+  getIsFetchingSubscriptionRewardEligibility() {
     return S
+  }
+  getIsFetchingMostRecentSubscription() {
+    return T
   }
   getLastLazyPerkSync() {
     return A
@@ -243,17 +243,17 @@ class B extends(r = Chunk442837.ZP.Store) {
     return G(Chunk981631.NYc.PREMIUM, e => e.hasAnyPremiumGroup, true)
   }
 }
-d(B, "displayName", "SubscriptionStore");
-let Z = new B(Chunk570140.Z, {
+d(Z, "displayName", "SubscriptionStore");
+let B = new Z(Chunk570140.Z, {
   BILLING_SUBSCRIPTION_FETCH_SUCCESS: C,
-  BILLING_SUBSCRIPTION_UPDATE_SUCCESS: R,
-  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_START: x,
-  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: P,
-  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_FAIL: D,
-  BILLING_PREVIOUS_PREMIUM_SUBSCRIPTION_FETCH_SUCCESS: w,
-  BILLING_SUBSCRIPTION_RESET: j,
-  BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_START: L,
-  BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_SUCCESS: M,
-  BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_FAILURE: k,
-  LOGOUT: j
+  BILLING_SUBSCRIPTION_UPDATE_SUCCESS: P,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_START: L,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: R,
+  BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_FAIL: w,
+  BILLING_PREVIOUS_PREMIUM_SUBSCRIPTION_FETCH_SUCCESS: D,
+  BILLING_SUBSCRIPTION_RESET: k,
+  BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_START: x,
+  BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_SUCCESS: j,
+  BILLING_SUBSCRIPTION_REWARD_ELIGIBILITY_FETCH_FAILURE: M,
+  LOGOUT: k
 })

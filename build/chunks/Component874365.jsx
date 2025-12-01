@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk305348 = require("./305348.js"),
   Chunk87181 = require("./87181.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -57,12 +57,12 @@ function E(e) {
     }, (0, c.mH)(n)))
   };
   return (0, r.jsx)("div", {
-    className: p.buttonContainer,
+    className: _.buttonContainer,
     children: (0, r.jsx)(s.Button, {
       fullWidth: i,
       variant: "primary",
       onClick: a,
-      text: _.intl.string(_.t.GURBQl)
+      text: p.intl.string(p.t.GURBQl)
     })
   })
 }
@@ -81,20 +81,20 @@ function b(e) {
     ref: e => {
       l.current = e
     },
-    className: a()(p.container, {
-      [p.wide]: "lg" === u,
-      [p.tall]: "lg" !== u
+    className: a()(_.container, {
+      [_.wide]: "lg" === u,
+      [_.tall]: "lg" !== u
     }),
     children: [(0, r.jsxs)("div", {
-      className: p.contentContainer,
+      className: _.contentContainer,
       children: [(0, r.jsx)(s.Heading, {
         variant: "lg" === u ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
-        children: _.intl.string(_.t.vnP31W)
+        children: p.intl.string(p.t.vnP31W)
       }), (0, r.jsx)(s.Text, {
         variant: "lg" === u ? "text-sm/medium" : "text-xs/medium",
         color: "text-default",
-        className: p.__invalid_mobileWebCopy,
+        className: _.__invalid_mobileWebCopy,
         children: i
       }), (0, r.jsx)(E, {
         questId: t,
@@ -102,11 +102,11 @@ function b(e) {
         fullWidth: "lg" !== u
       })]
     }), (0, r.jsx)("div", {
-      className: p.imgContainer,
+      className: _.imgContainer,
       children: (0, r.jsx)("img", {
-        src: h,
+        src: m,
         alt: "",
-        className: p.missingQuestImage
+        className: _.missingQuestImage
       })
     })]
   })

@@ -2,7 +2,7 @@
 /** chunk id: 107062, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => w
+  ZP: () => D
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -30,11 +30,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk797342 = require("./797342.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let R = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
+let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
     username: t.username,
     activity: e.extra.activity_name
   }),
-  P = (e, t, n) => {
+  R = (e, t, n) => {
     let r = N.t["bES+y2"],
       i = E.ZP.getName(t.guild_id, t.id, n),
       a = e.extra.activity_name;
@@ -43,7 +43,7 @@ let R = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       userName: i
     }).replaceAll("*", "")
   },
-  D = e => {
+  w = e => {
     let {
       entry: t,
       channel: n,
@@ -57,80 +57,80 @@ let R = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       countOthers: i
     }).replaceAll("*", "")
   },
-  w = e => {
+  D = e => {
     let {
       channel: t,
       entry: n,
       onReaction: E,
-      onVoiceChannelPreview: w,
-      disableActivityProfileLinks: L
+      onVoiceChannelPreview: D,
+      disableActivityProfileLinks: x
     } = e, {
-      largeImage: x
+      largeImage: L
     } = (0, b.rv)({
       entry: n,
       showCoverImage: false
     }), {
-      user: M,
-      details: k,
-      activity: j,
+      user: j,
+      details: M,
+      activity: k,
       embeddedActivity: U
     } = (0, A.n)(n), {
       primaryColor: G,
-      secondaryColor: B
-    } = (0, I.Z)(null == x ? true : x.src), Z = (0, a.e7)([m.default], () => m.default.locale), {
+      secondaryColor: Z
+    } = (0, S.Z)(null == L ? true : L.src), B = (0, a.e7)([h.default], () => h.default.locale), {
       displayParticipants: F,
       participant1: V,
       participant2: H,
-      numOtherParticipants: W
-    } = (0, y.Z)(n, 3), Y = () => {
-      f._(_._b.TEXT, h.Ie.NORMAL, {
+      numOtherParticipants: Y
+    } = (0, y.Z)(n, 3), W = () => {
+      f._(p._b.TEXT, m.Ie.NORMAL, {
         applicationId: n.extra.application_id
       })
     }, K = i.useCallback(e => {
-      if ((null == x ? true : x.src) == null || null == t || null == M) return;
-      let r = W > 0 ? D({
+      if ((null == L ? true : L.src) == null || null == t || null == j) return;
+      let r = Y > 0 ? w({
         entry: n,
         channel: t,
         users: [V, H],
-        countOthers: W
-      }) : P(n, t, M);
+        countOthers: Y
+      }) : R(n, t, j);
       return (0, v.C4)({
         entry: n,
-        applicationImageSrc: null == x ? true : x.src,
+        applicationImageSrc: null == L ? true : L.src,
         avatarSrcs: F.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
-        timestamp: (0, O.yh)(n, Z),
-        colors: [G, B],
+        timestamp: (0, O.yh)(n, B),
+        colors: [G, Z],
         channelId: e
       })
-    }, [null == x ? true : x.src, t, F, n, Z, W, V, H, G, B, M]), {
+    }, [null == L ? true : L.src, t, F, n, B, Y, V, H, G, Z, j]), {
       data: z
-    } = (0, p.IX)(n.extra.application_id), q = (0, c.Z)({
+    } = (0, _.IX)(n.extra.application_id), q = (0, c.Z)({
       application: z,
       analyticsLocations: [d.Z.MEMBER_LIST_ACTIVITY_CONTENT_POPOUT]
     });
-    if (null == M) return null;
-    let X = (0, r.jsx)(T.PZ, {
-        location: T.Gt.POPOUT,
+    if (null == j) return null;
+    let Q = (0, r.jsx)(I.PZ, {
+        location: I.Gt.POPOUT,
         entry: n
       }),
-      Q = (0, r.jsx)(S.wG, {
+      X = (0, r.jsx)(T.wG, {
         channel: t,
         userDescription: (0, O.kr)(n) ? N.t.vPg1JT : N.t.rPqqts,
         title: n.extra.activity_name,
-        subtitle: k,
-        badges: X,
+        subtitle: M,
+        badges: Q,
         entry: n,
         showCoverImage: false,
-        onClickTitle: L ? true : Y,
-        onClickSubtitle: L ? true : Y,
-        onClickThumbnail: L ? true : Y
+        onClickTitle: x ? true : W,
+        onClickSubtitle: x ? true : W,
+        onClickThumbnail: x ? true : W
       }),
-      J = (0, s.Z)(j, C.xjy.JOIN) || (0, l.Z)(j),
+      J = (0, s.Z)(k, C.xjy.JOIN) || (0, l.Z)(k),
       $ = J ? (0, r.jsx)(u.Z, {
         embeddedActivity: U,
-        activity: j,
-        user: M,
+        activity: k,
+        user: j,
         variant: "primary",
         size: "md",
         icon: o.YVR
@@ -143,24 +143,24 @@ let R = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
         text: N.intl.string(N.t["jaYS/h"]),
         icon: o.v3n
       }),
-      et = null != ee || L ? null : (0, r.jsx)(o.Button, {
+      et = null != ee || x ? null : (0, r.jsx)(o.Button, {
         variant: "primary",
         size: "md",
         fullWidth: true,
-        onClick: Y,
+        onClick: W,
         text: N.intl.string(N.t.GDWYR8),
         icon: o.jje
       }),
-      en = [ee, J && !L ? $ : et].filter(g.lm);
-    return (0, r.jsxs)(S.yR, {
-      children: [Q, (0, r.jsx)(S.St, {
-        children: (0, r.jsx)(S.WT, {
+      en = [ee, J && !x ? $ : et].filter(g.lm);
+    return (0, r.jsxs)(T.yR, {
+      children: [X, (0, r.jsx)(T.St, {
+        children: (0, r.jsx)(T.WT, {
           onReaction: E,
-          onVoiceChannelPreview: w,
-          user: M,
+          onVoiceChannelPreview: D,
+          user: j,
           channel: t,
           generateReactionImage: K,
-          reactionImageAltText: R(n, M),
+          reactionImageAltText: P(n, j),
           entry: n,
           buttons: en
         })

@@ -6,7 +6,7 @@ require.d(exports, {
   PR: () => g,
   Tt: () => v,
   ZD: () => A,
-  yY: () => I
+  yY: () => S
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk55160 = require("./55160.js"),
@@ -55,18 +55,18 @@ let d = {
     base: require("./358085.js").isPlatformEmbedded ? true : "Discord"
   },
   f = 0,
-  _ = {
+  p = {
     count: 3,
     onlyWhenBlurred: false,
     interval: 1e3
   },
-  p = (0, Chunk748521.F)(() => ({
+  _ = (0, Chunk748521.F)(() => ({
     titles: [d],
     notificationCount: true,
     flashQueue: []
   }));
 
-function h(e) {
+function m(e) {
   let t, n, r;
   for (let i of e.titles) {
     if (null != t && null != n) break;
@@ -75,7 +75,7 @@ function h(e) {
   return [t, r, n]
 }
 
-function m(e) {
+function h(e) {
   let {
     notificationCount: t
   } = e;
@@ -83,38 +83,38 @@ function m(e) {
 }
 
 function g(e) {
-  (0, o.j)(() => p.setState({
+  (0, o.j)(() => _.setState({
     notificationCount: e
   }))
 }
 
 function E(e) {
-  return (0, o.j)(() => p.setState(t => ({
+  return (0, o.j)(() => _.setState(t => ({
     titles: [e, ...t.titles]
   }))), () => {
-    (0, o.j)(() => p.setState(t => ({
+    (0, o.j)(() => _.setState(t => ({
       titles: t.titles.filter(t => t !== e)
     })))
   }
 }
 
 function b(e) {
-  let t = u(l({}, _, e), {
+  let t = u(l({}, p, e), {
     id: f++
   });
-  return t.count = Math.max(t.count, t.messages.length), p.setState(e => ({
+  return t.count = Math.max(t.count, t.messages.length), _.setState(e => ({
     flashQueue: [...e.flashQueue, t]
   })), () => y(t.id)
 }
 
 function y(e) {
-  p.setState(t => ({
+  _.setState(t => ({
     flashQueue: t.flashQueue.filter(t => t.id !== e)
   }))
 }
 
 function O() {
-  p.setState({
+  _.setState({
     flashQueue: []
   })
 }
@@ -123,15 +123,15 @@ function v(e) {
   r.useEffect(() => E(e), [...Object.values(e)])
 }
 
-function I(e) {
+function S(e) {
   return v(e), null
 }
 
-function T() {
-  let [e, t] = p(e => {
+function I() {
+  let [e, t] = _(e => {
     let {
       flashQueue: t
-    } = e, n = h(e).filter(e => null != e).join(" | "), r = m(e);
+    } = e, n = m(e).filter(e => null != e).join(" | "), r = h(e);
     return ["".concat(r).concat(n), t[0]]
   }, Chunk55160.X), [n, a] = Chunk473749.useState(false), o = Chunk473749.useRef(0), s = null == exports ? true : exports.messages[Chunk731965.current % exports.messages.length];
   return Chunk473749.useEffect(() => {
@@ -154,7 +154,7 @@ function T() {
   }, [exports]), require ? s : module
 }
 
-function S() {
+function T() {
   Chunk473749.useEffect(() => {
     function e() {
       O()
@@ -171,8 +171,8 @@ function A() {
   let {
     skipsSettingDefaultPageTitle: e
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
-  S();
-  let t = T();
+  T();
+  let t = I();
   Chunk473749.useEffect(() => {
     let n = exports === d.base;
     module && require || (document.title = exports)

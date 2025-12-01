@@ -19,10 +19,10 @@ function c(e) {
     onKeyDown: u,
     onKeyUp: d,
     onTab: f,
-    onEnter: _,
-    allowNewLines: p,
-    submit: h,
-    hideAutocomplete: m,
+    onEnter: p,
+    allowNewLines: _,
+    submit: m,
+    hideAutocomplete: h,
     moveSelection: g
   } = e;
   return {
@@ -46,7 +46,7 @@ function c(e) {
             }) && g(1)) return void e.preventDefault();
           break;
         case l.yXg.ESCAPE:
-          null == m || m();
+          null == h || h();
           break;
         case l.yXg.TAB:
           if ((0, s.E)(e, {}) && (null == f ? true : f())) {
@@ -59,7 +59,7 @@ function c(e) {
           }
           break;
         case l.yXg.ENTER:
-          if ((0, s.E)(e, {}) && (null == _ ? true : _(e))) {
+          if ((0, s.E)(e, {}) && (null == p ? true : p(e))) {
             e.preventDefault(), e.stopPropagation();
             return
           }
@@ -68,8 +68,8 @@ function c(e) {
         e.preventDefault(), e.stopPropagation();
         return
       }
-      e.which !== l.yXg.ENTER || (e.altKey || e.shiftKey || c && !e.ctrlKey || (0, o.L6)(t)) && p || (e.preventDefault(), e.stopPropagation(), h()), null == u || u(e)
-    }, [p, n.id, c, t, m, g, _, u, f, h]),
+      e.which !== l.yXg.ENTER || (e.altKey || e.shiftKey || c && !e.ctrlKey || (0, o.L6)(t)) && _ || (e.preventDefault(), e.stopPropagation(), m()), null == u || u(e)
+    }, [_, n.id, c, t, h, g, p, u, f, m]),
     handleKeyUp: r.useCallback(e => {
       null == d || d(e)
     }, [d])

@@ -2,7 +2,7 @@
 /** chunk id: 348000, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => h
+  D: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,9 +50,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,14 +60,14 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = {
+let m = {
   title: "Tooltip",
   stories: [{
     name: "Tooltip",
@@ -81,9 +81,9 @@ let h = {
         caretAlign: l,
         customOffset: c,
         delay: d,
-        spacing: p,
-        ariaHidden: h
-      } = e, m = _(e, ["text", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "ariaHidden"]);
+        spacing: _,
+        ariaHidden: m
+      } = e, h = p(e, ["text", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "ariaHidden"]);
       let g = i.useMemo(() => {
         if ("center" !== l && null != l) return "custom" === l ? {
           align: l,
@@ -97,10 +97,10 @@ let h = {
         position: n,
         align: o,
         delay: d,
-        spacing: p,
+        spacing: _,
         caretConfig: g,
-        ariaHidden: h
-      }, m), {
+        ariaHidden: m
+      }, h), {
         children: (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Hover me"
@@ -207,21 +207,21 @@ let h = {
         showAsset: s,
         assetSize: c,
         position: d,
-        align: p,
-        caretAlign: h,
-        customOffset: m,
+        align: _,
+        caretAlign: m,
+        customOffset: h,
         delay: g,
         spacing: E,
         forceOpen: b
-      } = e, y = _(e, ["title", "body", "showAsset", "assetSize", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "forceOpen"]);
+      } = e, y = p(e, ["title", "body", "showAsset", "assetSize", "position", "align", "caretAlign", "customOffset", "delay", "spacing", "forceOpen"]);
       let O = i.useMemo(() => {
-          if ("center" !== h && null != h) return "custom" === h ? {
-            align: h,
-            customOffset: m
+          if ("center" !== m && null != m) return "custom" === m ? {
+            align: m,
+            customOffset: h
           } : {
-            align: h
+            align: m
           }
-        }, [h, m]),
+        }, [m, h]),
         v = i.useMemo(() => s ? {
           type: "image",
           src: l.Z,
@@ -231,7 +231,7 @@ let h = {
         title: t,
         body: n,
         position: d,
-        align: p,
+        align: _,
         delay: g,
         spacing: E,
         caretConfig: O,

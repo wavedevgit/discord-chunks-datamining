@@ -24,7 +24,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,9 +37,9 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -47,14 +47,14 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = 40,
+let h = 40,
   g = 18;
 
 function E(e) {
@@ -97,7 +97,7 @@ function b(e) {
         className: a()(d.attachment, d.mediaMissing)
       })
     }), s && (0, r.jsx)(c.ZY, {
-      size: m,
+      size: h,
       isVictor: u,
       isExpired: n,
       className: d.selectedIcon
@@ -123,8 +123,8 @@ function y(e) {
     myAvatarUrl: n,
     answersInteraction: i,
     canShowVoteCounts: o
-  } = e, s = p(e, ["isExpired", "myAvatarUrl", "answersInteraction", "canShowVoteCounts"]);
-  return (0, r.jsx)(c.$e, _({
+  } = e, s = _(e, ["isExpired", "myAvatarUrl", "answersInteraction", "canShowVoteCounts"]);
+  return (0, r.jsx)(c.$e, p({
     className: d.answersContainer,
     answerClassName: a()(d.answer, {
       [d.currentlyVoting]: i !== l.Y7.LIST

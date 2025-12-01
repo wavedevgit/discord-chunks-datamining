@@ -50,19 +50,19 @@ module.exports = function(e) {
       begin: /"""/,
       end: /"""/
     },
-    _ = {
+    p = {
       className: "property",
       begin: t.concat(/\./, t.lookahead(n)),
       end: n,
       excludeBegin: true,
       relevance: 0
     },
-    p = {
+    _ = {
       relevance: 0,
       match: t.concat(/\b_/, n),
       scope: "variable"
     },
-    h = {
+    m = {
       relevance: 0,
       match: /\b[A-Z]+[a-z]+([A-Z]+[a-z]+)*/,
       scope: "title.class",
@@ -70,7 +70,7 @@ module.exports = function(e) {
         _: o
       }
     },
-    m = e.C_NUMBER_MODE,
+    h = e.C_NUMBER_MODE,
     g = {
       match: [n, /\s*/, /=/, /\s*/, /\(/, n, /\)\s*\{/],
       scope: {
@@ -89,7 +89,7 @@ module.exports = function(e) {
       scope: "subst",
       begin: /%\(/,
       end: /\)/,
-      contains: [m, h, l, p, d]
+      contains: [h, m, l, _, d]
     },
     y = {
       scope: "string",
@@ -115,7 +115,7 @@ module.exports = function(e) {
       match: t.concat("\\b(?!", O.join("|"), "\\b)", /[a-zA-Z_]\w*(?:[?!]|\b)/),
       className: "variable"
     },
-    I = {
+    S = {
       scope: "comment",
       variants: [{
         begin: [/#!?/, /[A-Za-z_]+(?=\()/],
@@ -138,6 +138,6 @@ module.exports = function(e) {
       "variable.language": a,
       literal: i
     },
-    contains: [I, m, y, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, h, u, g, c, l, d, p, _, v]
+    contains: [S, h, y, f, E, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, m, u, g, c, l, d, _, p, v]
   }
 }

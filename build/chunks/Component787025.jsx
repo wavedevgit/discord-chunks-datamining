@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk697257 = require("./697257.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +27,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,7 +52,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,12 +88,12 @@ function y(e) {
   return (0, r.jsx)(l.f6W, {
     theme: d.BRd.DARK,
     children: e => (0, r.jsx)("div", {
-      className: a()(e, _.oauth2PageWrapper, i),
+      className: a()(e, p.oauth2PageWrapper, i),
       style: {
         marginBottom: o
       },
       children: true === n ? t : (0, r.jsx)("div", {
-        className: _.oauth2PageContent,
+        className: p.oauth2PageContent,
         children: t
       })
     })
@@ -105,7 +105,7 @@ function O(e) {
       hideHeader: i
     } = e,
     a = E(e, ["hideHeader"]);
-  return (0, r.jsxs)(o.IX, g(h({}, a), {
+  return (0, r.jsxs)(o.IX, g(m({}, a), {
     onClose: () => {
       var e;
       return Promise.resolve(null == (e = a.onClose) ? true : e.call(a))

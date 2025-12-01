@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk151028 = require("./151028.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -101,7 +101,7 @@ class b extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "_inputId", u().uniqueId("key-recorder-")), m(this, "_unregisterNativeRecorder", null), m(this, "_mousedownMode", null), m(this, "_inputRef", i.createRef()), m(this, "_containerRef", i.createRef()), m(this, "setInputRef", e => {
+    super(...e), h(this, "_inputId", u().uniqueId("key-recorder-")), h(this, "_unregisterNativeRecorder", null), h(this, "_mousedownMode", null), h(this, "_inputRef", i.createRef()), h(this, "_containerRef", i.createRef()), h(this, "setInputRef", e => {
       var t, n;
       let {
         registerNativeRecorder: r,
@@ -113,14 +113,14 @@ class b extends Chunk473749.PureComponent {
         } catch (e) {
           this._unregisterNativeRecorder = null
         } else null != i && (new(l())(e).handleKey = i)
-    }), m(this, "handleClick", e => {
+    }), h(this, "handleClick", e => {
       e.stopPropagation(), e.preventDefault();
       let {
         onClick: t,
         disableOnClickWhileRecording: n
       } = this.props;
       n && "RECORDING" === this._mousedownMode || t()
-    }), m(this, "handleMouseDown", () => {
+    }), h(this, "handleMouseDown", () => {
       this._mousedownMode = this.props.mode
     })
   }

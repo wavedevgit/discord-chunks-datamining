@@ -25,11 +25,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk36190 = require("./36190.js");
-let T = (0, Chunk131704.createChannelRecord)({
+let I = (0, Chunk131704.createChannelRecord)({
     id: "1",
     type: Chunk106351.d.DM
   }),
-  S = e => {
+  T = e => {
     let {
       input: t,
       username: n,
@@ -55,7 +55,7 @@ let T = (0, Chunk131704.createChannelRecord)({
           c = "\n> ".concat(i);
         return null != i ? "".concat(E.jd).concat(l, "*").concat(c, "\n").concat(t) : "".concat(E.jd).concat(l, "*\n").concat(t);
       default:
-        (0, _.vE)(r)
+        (0, p.vE)(r)
     }
   },
   A = e => {
@@ -67,7 +67,7 @@ let T = (0, Chunk131704.createChannelRecord)({
       case y.n_.STATUS:
         return v.t.g9BTCM;
       default:
-        (0, _.vE)(e)
+        (0, p.vE)(e)
     }
   };
 
@@ -78,23 +78,23 @@ function C(e) {
     channelId: a,
     sourceType: s,
     sourceDetails: f,
-    setPopoutRef: _,
+    setPopoutRef: p,
     modalKey: E,
     onAction: C,
     onClose: N,
-    entry: R
+    entry: P
   } = e, {
-    resetInteraction: P,
-    setInteractionToast: D
+    resetInteraction: R,
+    setInteractionToast: w
   } = (0, g.Xo)(), {
-    primaryColor: w
-  } = (0, b.z)(), [L, x] = i.useState(""), [M, k] = i.useState((0, u.JM)(L)), j = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
-    e.key === O.vn.ESCAPE && (e.stopPropagation(), P())
-  }, [P]);
+    primaryColor: D
+  } = (0, b.z)(), [x, L] = i.useState(""), [j, M] = i.useState((0, u.JM)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
+    e.key === O.vn.ESCAPE && (e.stopPropagation(), R())
+  }, [R]);
   i.useEffect(() => {
-    null == _ || _(null == U ? true : U.current)
-  }, [U, _]);
-  let B = async e => {
+    null == p || p(null == U ? true : U.current)
+  }, [U, p]);
+  let Z = async e => {
     if (null == e) return;
     s === y.n_.AVATAR ? C({
       action: "SEND_REPLY_AVATAR"
@@ -103,55 +103,55 @@ function C(e) {
     }) : C({
       action: "SEND_REPLY_ACTIVITY"
     });
-    let n = S({
+    let n = T({
       input: e,
-      username: h.ZP.getName(t),
+      username: m.ZP.getName(t),
       sourceType: s,
       sourceDetails: f
     });
-    D(null);
+    w(null);
     try {
-      await (0, m.Z)({
+      await (0, h.Z)({
         userId: t.id,
         content: n,
         location: "UserProfileReplyPopout",
         openChannel: false,
         whenReady: false,
-        entry: R
+        entry: P
       })
     } catch (e) {}
-    D(y.P.REPLY)
-  }, Z = {
-    [I.status]: s === y.n_.STATUS,
-    [I.avatar]: s === y.n_.AVATAR,
-    [I.activity]: s === y.n_.ACTIVITY
+    w(y.P.REPLY)
+  }, B = {
+    [S.status]: s === y.n_.STATUS,
+    [S.avatar]: s === y.n_.AVATAR,
+    [S.activity]: s === y.n_.ACTIVITY
   };
   return (0, r.jsx)(l.V, {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: o()(I.container, Z, {
-        [I.customProfileTheme]: null != w
+      className: o()(S.container, B, {
+        [S.customProfileTheme]: null != D
       }),
       children: (0, r.jsx)(d.ZP, {
         parentModalKey: E,
         emojiPickerCloseOnModalOuterClick: true,
-        className: I.input,
-        innerClassName: I.inputInner,
-        editorClassName: I.editor,
+        className: S.input,
+        innerClassName: S.inputInner,
+        editorClassName: S.editor,
         type: c.Ie.USER_PROFILE_REPLY,
         placeholder: v.intl.formatToPlainString(A(s), {
-          username: p.ZP.getName(n, a, t)
+          username: _.ZP.getName(n, a, t)
         }),
-        channel: T,
-        textValue: L,
-        richValue: M,
+        channel: I,
+        textValue: x,
+        richValue: j,
         onChange: (e, t, n) => {
-          t !== L && (x(t), k(n))
+          t !== x && (L(t), M(n))
         },
-        focused: j.current,
+        focused: k.current,
         onFocus: () => {
-          j.current = true
+          k.current = true
         },
         onSubmit: async e => {
           let {
@@ -162,7 +162,7 @@ function C(e) {
             shouldRefocus: false
           };
           try {
-            return await B(n), P(), null == N || N(), {
+            return await Z(n), R(), null == N || N(), {
               shouldClear: true,
               shouldRefocus: false
             }

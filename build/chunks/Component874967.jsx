@@ -2,7 +2,7 @@
 /** chunk id: 874967, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -116,7 +116,7 @@ class v extends Chunk473749.PureComponent {
     super(...e), g(this, "state", {
       color: O(this.props.color)
     }), g(this, "handleKeyUp", e => {
-      if (e.which === p.yXg.ENTER || e.which === p.yXg.SPACE) {
+      if (e.which === _.yXg.ENTER || e.which === _.yXg.SPACE) {
         let e = this.props,
           {
             onClick: t
@@ -132,4 +132,4 @@ class v extends Chunk473749.PureComponent {
     })
   }
 }
-let I = v
+let S = v

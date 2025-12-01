@@ -4,8 +4,8 @@
 require.d(exports, {
   FE: () => A,
   G5: () => v,
-  IW: () => I,
-  yF: () => p
+  IW: () => S,
+  yF: () => _
 });
 var Chunk557635 = require("./557635.js"),
   Chunk242315 = require("./242315.js"),
@@ -17,37 +17,37 @@ var Chunk557635 = require("./557635.js"),
   Chunk112683 = require("./112683.js"),
   Chunk525405 = require("./525405.js");
 let f = (0, Chunk473749.createContext)(false),
-  _ = (0, Chunk473749.createContext)(null);
+  p = (0, Chunk473749.createContext)(null);
 
-function p(e) {
-  if ((0, c.useContext)(_)) return e.content;
+function _(e) {
+  if ((0, c.useContext)(p)) return e.content;
   let {
     collection: t,
     document: n
   } = E(e.createCollection);
-  return c.createElement(c.Fragment, null, c.createElement(o._G, null, c.createElement(_.Provider, {
+  return c.createElement(c.Fragment, null, c.createElement(o._G, null, c.createElement(p.Provider, {
     value: n
-  }, e.content)), c.createElement(h, {
+  }, e.content)), c.createElement(m, {
     render: e.children,
     collection: t
   }))
 }
 
-function h({
+function m({
   collection: e,
   render: t
 }) {
   return t(e)
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   let r = (0, u.Av)(),
     i = (0, c.useRef)(r);
   i.current = r;
   let a = (0, c.useCallback)(() => i.current ? n() : t(), [t, n]);
   return (0, d.useSyncExternalStore)(e, a)
 }
-let g = "function" == typeof Chunk473749.useSyncExternalStore ? Chunk473749.useSyncExternalStore : m;
+let g = "function" == typeof Chunk473749.useSyncExternalStore ? Chunk473749.useSyncExternalStore : h;
 
 function E(e) {
   let [t] = (0, c.useState)(() => new(0, i.BB)((null == e ? true : e()) || new(0, r.Mi)));
@@ -102,7 +102,7 @@ function v(e, t) {
   return r.displayName = t.name, r
 }
 
-function I(e, t, n = T) {
+function S(e, t, n = I) {
   let r = ({
       node: e
     }) => t(e.props, e.props.ref, e),
@@ -116,27 +116,27 @@ function I(e, t, n = T) {
   return i.displayName = t.name, i
 }
 
-function T(e) {
+function I(e) {
   return (0, a.H)({
     ...e,
     addIdAndValue: true
   })
 }
-let S = (0, Chunk473749.createContext)(null);
+let T = (0, Chunk473749.createContext)(null);
 
 function A(e) {
-  let t = (0, c.useContext)(S),
+  let t = (0, c.useContext)(T),
     n = ((null == t ? true : t.dependencies) || []).concat(e.dependencies),
     r = e.idScope || (null == t ? true : t.idScope),
-    i = T({
+    i = I({
       ...e,
       idScope: r,
       dependencies: n
     });
-  return (0, c.useContext)(_) && (i = c.createElement(C, null, i)), t = (0, c.useMemo)(() => ({
+  return (0, c.useContext)(p) && (i = c.createElement(C, null, i)), t = (0, c.useMemo)(() => ({
     dependencies: n,
     idScope: r
-  }), [r, ...n]), c.createElement(S.Provider, {
+  }), [r, ...n]), c.createElement(T.Provider, {
     value: t
   }, i)
 }
@@ -144,8 +144,8 @@ function A(e) {
 function C({
   children: e
 }) {
-  let t = (0, c.useContext)(_),
-    n = (0, c.useMemo)(() => c.createElement(_.Provider, {
+  let t = (0, c.useContext)(p),
+    n = (0, c.useMemo)(() => c.createElement(p.Provider, {
       value: null
     }, c.createElement(f.Provider, {
       value: true

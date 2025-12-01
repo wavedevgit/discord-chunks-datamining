@@ -24,7 +24,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,20 +48,20 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e) {
+function h(e) {
   let {
     contentInventoryEntry: t,
     channel: n
   } = e, {
     parsedEntry: i
   } = (0, s.B)();
-  return (0, r.jsx)(u.Z, h(_({}, i), {
+  return (0, r.jsx)(u.Z, m(p({}, i), {
     entry: t,
     channel: n
   }))
@@ -78,7 +78,7 @@ function g(e) {
     entry: e.contentInventoryEntry,
     channel: i,
     errorFallback: null,
-    children: (0, r.jsx)(m, h(_({}, e), {
+    children: (0, r.jsx)(h, m(p({}, e), {
       channel: i
     }))
   })

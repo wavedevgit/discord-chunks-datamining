@@ -2,7 +2,7 @@
 /** chunk id: 905656, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./290780.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,12 +24,12 @@ var Chunk54381 = require("./54381.js"),
 function b(e) {
   let {
     movDark: t = d,
-    movLight: n = h,
+    movLight: n = m,
     mp4Dark: i = f,
-    mp4Light: a = m,
-    pngDark: o = _,
+    mp4Light: a = h,
+    pngDark: o = p,
     pngLight: s = g,
-    webmDark: c = p,
+    webmDark: c = _,
     webmLight: b = E
   } = e, y = (0, l.vu)(), O = [(0, r.jsx)("source", {
     src: i,
@@ -64,7 +64,7 @@ function b(e) {
 let y = Chunk197344.Z.getAppSpinnerSources(),
   O = null != y ? b(y) : null,
   v = b({}),
-  I = e => {
+  S = e => {
     var t;
     let {
       loop: n = true,
@@ -73,20 +73,20 @@ let y = Chunk197344.Z.getAppSpinnerSources(),
       className: d,
       onReady: f
     } = e, {
-      theme: _
+      theme: p
     } = (0, o.TCT)(), {
-      reducedMotion: p
-    } = i.useContext(o.Sfi), h = v;
-    null != O && (h = O);
-    let m = null != (t = h[(0, a.wj)(_) ? u.BRd.DARK : u.BRd.LIGHT]) ? t : h[u.BRd.DARK];
+      reducedMotion: _
+    } = i.useContext(o.Sfi), m = v;
+    null != O && (m = O);
+    let h = null != (t = m[(0, a.wj)(p) ? u.BRd.DARK : u.BRd.LIGHT]) ? t : m[u.BRd.DARK];
     return (0, r.jsx)(c.Z, {
       ref: l,
       onLoadedData: f,
       className: d,
-      loop: !p.enabled && n,
-      autoPlay: !p.enabled && s,
+      loop: !_.enabled && n,
+      autoPlay: !_.enabled && s,
       playsInline: true,
       "data-testid": "app-spinner",
-      children: m
-    }, _)
+      children: h
+    }, p)
   }

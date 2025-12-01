@@ -2,7 +2,7 @@
 /** chunk id: 39628, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -40,18 +40,18 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   return String(e).padStart(2, "0")
 }
 
-function p(e) {
+function _(e) {
   let {
     time: t,
     padLargestUnit: n
   } = e, r = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, a = Math.floor(t / 3600);
-  return 0 === a ? n ? "".concat(_(i), ":").concat(_(r)) : "".concat(i, ":").concat(_(r)) : n ? "".concat(_(a), ":").concat(_(i), ":").concat(_(r)) : "".concat(a, ":").concat(_(i), ":").concat(_(r))
+  return 0 === a ? n ? "".concat(p(i), ":").concat(p(r)) : "".concat(i, ":").concat(p(r)) : n ? "".concat(p(a), ":").concat(p(i), ":").concat(p(r)) : "".concat(a, ":").concat(p(i), ":").concat(p(r))
 }
-class h extends(r = Chunk473749.PureComponent) {
+class m extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.timer.start(500, () => {
       this.setState({
@@ -78,7 +78,7 @@ class h extends(r = Chunk473749.PureComponent) {
       }, Chunk243404.singleLineContainer),
       children: [(0, Chunk54381.jsx)("div", {
         className: Chunk243404.textLeftInSingleLine,
-        children: p({
+        children: _({
           time: d,
           padLargestUnit: true
         })
@@ -90,7 +90,7 @@ class h extends(r = Chunk473749.PureComponent) {
         })
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk243404.textRight,
-        children: p({
+        children: _({
           time: Chunk846519,
           padLargestUnit: true
         })
@@ -106,14 +106,14 @@ class h extends(r = Chunk473749.PureComponent) {
         children: [(0, Chunk54381.jsx)(Chunk600164.Z.Child, {
           grow: 1,
           className: Chunk243404.textLeft,
-          children: p({
+          children: _({
             time: d,
             padLargestUnit: false
           })
         }), (0, Chunk54381.jsx)(Chunk600164.Z.Child, {
           grow: 0,
           className: Chunk243404.textRight,
-          children: p({
+          children: _({
             time: Chunk846519,
             padLargestUnit: false
           })
@@ -127,7 +127,7 @@ class h extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-d(h, "defaultProps", {
+d(m, "defaultProps", {
   themed: false
 });
-let m = h
+let h = m

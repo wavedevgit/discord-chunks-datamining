@@ -2,7 +2,7 @@
 /** chunk id: 819366, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -60,7 +60,7 @@ function v(e, t) {
   }), e
 }
 
-function I(e) {
+function S(e) {
   let {
     userId: t,
     className: a,
@@ -87,55 +87,55 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     className: t,
     userId: u,
     channelId: b,
     parsedUserId: O,
-    content: T,
-    inlinePreview: S = false,
+    content: I,
+    inlinePreview: T = false,
     viewingChannelId: A
   } = e, C = i.useRef(null), {
     analyticsLocations: N
-  } = (0, c.ZP)(l.Z.USER_MENTION), R = (0, o.e7)([m.default], () => m.default.getUser(u)), P = (0, o.e7)([_.Z], () => _.Z.getChannel(b)), D = null != P ? P.getGuildId() : null, w = S || null == R || null == D || null == b ? true : e => {
-    null != P && (0, s.jW)(e, async () => {
+  } = (0, c.ZP)(l.Z.USER_MENTION), P = (0, o.e7)([h.default], () => h.default.getUser(u)), R = (0, o.e7)([p.Z], () => p.Z.getChannel(b)), w = null != R ? R.getGuildId() : null, D = T || null == P || null == w || null == b ? true : e => {
+    null != R && (0, s.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("66165"), n.e("6915"), n.e("8982"), n.e("7717"), n.e("20037")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, v(y({}, t), {
         viewingChannelId: A,
-        user: R,
-        channel: P,
-        guildId: D
+        user: P,
+        channel: R,
+        guildId: w
       }))
     })
-  }, L = E.ZP.useName(R), x = (0, o.e7)([_.Z, p.ZP, h.Z], () => g.ZP.getNickname(D, b, R));
-  if (null == R) return (0, r.jsx)(I, {
+  }, x = E.ZP.useName(P), L = (0, o.e7)([p.Z, _.ZP, m.Z], () => g.ZP.getNickname(w, b, P));
+  if (null == P) return (0, r.jsx)(S, {
     userId: O,
     className: t,
-    children: T
+    children: I
   });
-  let M = e => (0, r.jsx)(d.Z, v(y({
+  let j = e => (0, r.jsx)(d.Z, v(y({
     ref: C,
     className: t,
-    onContextMenu: w
+    onContextMenu: D
   }, e), {
-    children: "@".concat(null != x ? x : L)
+    children: "@".concat(null != L ? L : x)
   }));
-  return S ? (0, r.jsx)(c.Gt, {
+  return T ? (0, r.jsx)(c.Gt, {
     value: N,
-    children: M()
+    children: j()
   }) : (0, r.jsx)(c.Gt, {
     value: N,
     children: (0, r.jsx)(f.Z, {
       targetElementRef: C,
-      user: R,
-      guildId: null != D ? D : true,
+      user: P,
+      guildId: null != w ? w : true,
       channelId: b,
       position: a.tq ? "top" : "right",
       clickTrap: true,
-      children: e => M(e)
+      children: e => j(e)
     })
   })
 }

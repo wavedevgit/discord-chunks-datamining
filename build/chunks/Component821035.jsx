@@ -52,16 +52,16 @@ function O() {
     {
       explicitContentGuilds: O,
       explicitContentFriendDm: v,
-      explicitContentNonFriendDm: I
+      explicitContentNonFriendDm: S
     } = (0, Chunk294602.B)(),
-    T = e => {
+    I = e => {
       let t = Object.values(e);
       if ((0, s.Ks)() && t.includes(i.Q4.SHOW)) return void a.Z.showAgeVerificationGetStartedModal({
         entryPoint: o.cU.SENSITIVE_MEDIA_FILTER_SETTINGS
       });
       (0, l.zj)(e)
     },
-    S = [{
+    T = [{
       value: Chunk524437.Q4.BLUR,
       label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }, {
@@ -76,7 +76,7 @@ function O() {
       value: Chunk524437.Q4.SHOW,
       label: Chunk388032.intl.string(Chunk388032.t["5k5OFp"])
     };
-  exports && (S.unshift(C), A.unshift(C));
+  exports && (T.unshift(C), A.unshift(C));
   let N = {
     isDisabled: b,
     tooltipText: require ? Chunk388032.intl.string(Chunk744038.default["6Af/cw"]) : true
@@ -88,21 +88,21 @@ function O() {
     children: [(0, Chunk54381.jsx)(Chunk947707.Z, y({
       title: Chunk388032.intl.string(Chunk388032.t["+uI23H"]),
       value: v,
-      onChange: e => T({
+      onChange: e => I({
         explicitContentFriendDm: e
       }),
-      options: S
+      options: T
     }, N)), (0, Chunk54381.jsx)(Chunk947707.Z, y({
       title: Chunk388032.intl.string(Chunk388032.t["Yh+HX1"]),
-      value: I,
-      onChange: e => T({
+      value: S,
+      onChange: e => I({
         explicitContentNonFriendDm: e
       }),
-      options: S
+      options: T
     }, N)), (0, Chunk54381.jsx)(Chunk947707.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["FP+a42"]),
       value: O,
-      onChange: e => T({
+      onChange: e => I({
         explicitContentGuilds: e
       }),
       isDisabled: !exports || b,

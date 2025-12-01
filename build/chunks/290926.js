@@ -2,17 +2,17 @@
 /** chunk id: 290926, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => i,
-  Z: () => a
+  Al: () => a,
+  BR: () => i
 }), require("./388685.js");
-let r = Object.freeze({
+let r = {
     DARK: "dark",
     LIGHT: "light",
     MIDNIGHT: "midnight",
     DARKER: "darker"
-  }),
-  i = new Map([
+  },
+  i = r,
+  a = new Map([
     [r.MIDNIGHT, r.DARK],
     [r.DARKER, r.DARK]
-  ]),
-  a = r
+  ])

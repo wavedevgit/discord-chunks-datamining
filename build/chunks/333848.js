@@ -2,7 +2,7 @@
 /** chunk id: 333848, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./415506.js");
 var Chunk990547 = require("./990547.js"),
   Chunk283693 = require("./283693.js"),
@@ -14,15 +14,15 @@ var Chunk990547 = require("./990547.js"),
   Chunk87051 = require("./87051.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js");
-let _ = {
+let p = {
   createChannel(e) {
     let {
       guildId: t,
       type: n,
-      name: _,
-      permissionOverwrites: p = [],
-      bitrate: h,
-      userLimit: m,
+      name: p,
+      permissionOverwrites: _ = [],
+      bitrate: m,
+      userLimit: h,
       parentId: g,
       skuId: E,
       branchId: b
@@ -34,10 +34,10 @@ let _ = {
     });
     let y = {
       type: n,
-      name: _,
-      permission_overwrites: p
+      name: p,
+      permission_overwrites: _
     };
-    if (null != h && h !== d.epw && (y.bitrate = h), null != m && m > 0 && (y.user_limit = m), null != g && (y.parent_id = g), n === d.d4z.GUILD_STORE) {
+    if (null != m && m !== d.epw && (y.bitrate = m), null != h && h > 0 && (y.user_limit = h), null != g && (y.parent_id = g), n === d.d4z.GUILD_STORE) {
       if (null == E) throw Error("Unexpected missing SKU");
       y.sku_id = E, y.branch_id = b
     }
@@ -50,7 +50,7 @@ let _ = {
         properties: e => {
           var t, n;
           return (0, i.iG)({
-            is_private: p.length > 0,
+            is_private: _.length > 0,
             channel_id: null == e || null == (t = e.body) ? true : t.id,
             channel_type: null == e || null == (n = e.body) ? true : n.type
           })

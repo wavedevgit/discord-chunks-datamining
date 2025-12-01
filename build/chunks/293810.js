@@ -4,14 +4,14 @@
 require.d(exports, {
   C5: () => f,
   DN: () => u,
-  NT: () => _,
+  NT: () => p,
   PY: () => d,
   Qs: () => l,
   Xy: () => s,
   e3: () => c,
   fF: () => a,
   iP: () => o,
-  iv: () => p
+  iv: () => _
 });
 var Chunk474936 = require("./474936.js"),
   Chunk231338 = require("./231338.js");
@@ -35,8 +35,8 @@ var d = function(e) {
   return e[e.NONE = 0] = "NONE", e[e.IN_SUBSCRIPTION_SERVER = 1] = "IN_SUBSCRIPTION_SERVER", e[e.SUBSCRIBED = 2] = "SUBSCRIBED", e
 }({});
 let f = "https://".concat(Chunk231338.$R, "/creators"),
-  _ = 90,
-  p = Object.freeze({
+  p = 90,
+  _ = Object.freeze({
     PROMO_PAGE_GUIDE: "https://discord.com/creators/say-hello-to-promo-pages-our-new-server-subscriptions-feature",
     CASE_STUDIES: "https://discord.com/creator-portal/learn-from-creators?tab=creator-case-studies",
     SUBSCRIPTION_OFFERING_GUIDE: "https://discord.com/creators/offering-inspiration-",

@@ -2,7 +2,7 @@
 /** chunk id: 920888, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -59,12 +59,12 @@ function y(e, t) {
 }
 let O = (e, t) => null == e && null == t || e === t,
   v = (e, t) => e.findIndex(e => O(e.emoji.id, null == t ? true : t.id) && O(e.emoji.name, null == t ? true : t.name)),
-  I = (e, t) => {
+  S = (e, t) => {
     if (null == t) return e;
     let n = v(e, t);
     return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
   };
-class T extends Chunk473749.PureComponent {
+class I extends Chunk473749.PureComponent {
   static getDerivedStateFromProps(e, t) {
     let n = e.message.reactions.length;
     return 0 === t.reactionsCount && n > 0 ? {
@@ -88,15 +88,15 @@ class T extends Chunk473749.PureComponent {
       forceAddReactions: y,
       reactionClassName: O,
       useChatFontScaling: v,
-      forceHideReactionCreates: I,
-      remainingReactions: T,
-      combinedReactions: S,
+      forceHideReactionCreates: S,
+      remainingReactions: I,
+      combinedReactions: T,
       visibleReactionsCount: A
     } = this.props, {
       disableTransitionAppear: C
-    } = this.state, N = v ? Chunk893973 : Chunk127947, R = A > 0;
-    if (!R && !y) return null;
-    let P = y || R;
+    } = this.state, N = v ? Chunk893973 : Chunk127947, P = A > 0;
+    if (!P && !y) return null;
+    let R = y || P;
     return (0, Chunk54381.jsxs)(Chunk215569.W, {
       component: "div",
       className: o()(N.reactions, b),
@@ -111,7 +111,7 @@ class T extends Chunk473749.PureComponent {
         isHovered: false
       }),
       children: [(0, Chunk54381.jsx)(Chunk434624.l, {
-        reactions: S,
+        reactions: T,
         message: module,
         readOnly: require,
         isLurking: Chunk473749,
@@ -120,25 +120,25 @@ class T extends Chunk473749.PureComponent {
         isForumToolbar: g,
         useChatFontScaling: v,
         className: O
-      }), T > 0 && (0, Chunk54381.jsx)(Chunk481060.P3F, {
+      }), I > 0 && (0, Chunk54381.jsx)(Chunk481060.P3F, {
         onClick: t => {
-          t.stopPropagation(), (0, _.op)(E, e)
+          t.stopPropagation(), (0, p.op)(E, e)
         },
         className: o()(N.reaction, O, N.remainingReactions),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.lfIHs4),
         children: (0, Chunk54381.jsxs)(Chunk481060.Text, {
           className: N.reactionInner,
           variant: "text-sm/normal",
-          children: ["+", T]
+          children: ["+", I]
         })
-      }), !exports && !I && (0, Chunk54381.jsx)(Chunk490597.X, {
-        tabIndex: P || this.state.isHovered ? 0 : false,
+      }), !exports && !S && (0, Chunk54381.jsx)(Chunk490597.X, {
+        tabIndex: R || this.state.isHovered ? 0 : false,
         message: module,
         channel: E,
         useChatFontScaling: v,
         isHovered: this.state.isHovered,
         className: o()({
-          [N.forceShow]: P
+          [N.forceShow]: R
         })
       })]
     })
@@ -151,7 +151,7 @@ class T extends Chunk473749.PureComponent {
     })
   }
 }
-let S = e => {
+let T = e => {
   let {
     message: t,
     maxReactions: n,
@@ -162,7 +162,7 @@ let S = e => {
     visibleReactionsCount: l
   } = i.useMemo(() => {
     let e = [],
-      r = I(t.reactions, a),
+      r = S(t.reactions, a),
       i = null != n && n < r.length ? r.slice(0, n) : r,
       o = r.length - i.length,
       s = r.length;
@@ -178,7 +178,7 @@ let S = e => {
       remainingReactions: o
     }
   }, [a, n, t.reactions]);
-  return (0, r.jsx)(T, y(E({}, e), {
+  return (0, r.jsx)(I, y(E({}, e), {
     visibleReactionsCount: l,
     combinedReactions: o,
     remainingReactions: s

@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk250043 = require("./250043.js");
 
 function g(e) {
-  if (!e && (0, p.u1)()) return void s.Z.showAgeVerificationGetStartedModal({
+  if (!e && (0, _.u1)()) return void s.Z.showAgeVerificationGetStartedModal({
     entryPoint: l.cU.STAGE_CHANNEL_RAISE_HAND
   });
   let t = u.Z.getVoiceChannelId();
@@ -34,24 +34,24 @@ function E(e) {
   var t, n;
   let {
     channelId: i
-  } = e, o = null != (t = (0, _._d)(i)) ? t : 0, s = null != (n = (0, _.K3)(i)) ? n : 0;
+  } = e, o = null != (t = (0, p._d)(i)) ? t : 0, s = null != (n = (0, p.K3)(i)) ? n : 0;
   return o > 0 && s > 0 ? (0, r.jsx)("div", {
-    className: m.blocked,
+    className: h.blocked,
     children: (0, r.jsx)("div", {
-      className: a()(m.blockedText, m.noIcon),
-      children: h.intl.string(h.t.xlJRfv)
+      className: a()(h.blockedText, h.noIcon),
+      children: m.intl.string(m.t.xlJRfv)
     })
   }) : o > 0 ? (0, r.jsx)("div", {
-    className: m.blocked,
+    className: h.blocked,
     children: (0, r.jsx)("div", {
-      className: a()(m.blockedText, m.noIcon),
-      children: h.intl.string(h.t.WYad9Z)
+      className: a()(h.blockedText, h.noIcon),
+      children: m.intl.string(m.t.WYad9Z)
     })
   }) : s > 0 ? (0, r.jsx)("div", {
-    className: m.blocked,
+    className: h.blocked,
     children: (0, r.jsx)("div", {
-      className: a()(m.blockedText, m.noIcon),
-      children: h.intl.string(h.t.eHq2OF)
+      className: a()(h.blockedText, h.noIcon),
+      children: m.intl.string(m.t.eHq2OF)
     })
   }) : null
 }

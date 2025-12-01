@@ -2,7 +2,7 @@
 /** chunk id: 703558, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M,
+  Z: () => j,
   d: () => E
 }), require("./388685.js"), require("./781311.js");
 var r, Chunk392711 = require("./392711.js"),
@@ -15,7 +15,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk592125 = require("./592125.js"),
   Chunk486472 = require("./486472.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -86,19 +86,19 @@ function v(e) {
       timestamp: Date.now(),
       draft: r
     }
-  } else S(n, i);
+  } else T(n, i);
   return "DRAFT_SAVE" === t
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t,
     draftType: n
   } = e;
-  return S(t, n)
+  return T(t, n)
 }
 
-function T(e) {
+function I(e) {
   let {
     channelId: t,
     draft: n
@@ -106,14 +106,14 @@ function T(e) {
   if (null == r) return;
   let i = O(r),
     a = i[t];
-  null == a && (a = i[t] = {}), a[1] = m(p({
+  null == a && (a = i[t] = {}), a[1] = h(_({
     timestamp: Date.now()
   }, a[1], n), {
     parentChannelId: t
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : u.default.getId();
   if (null == n) returnfalse;
   let r = O(n),
@@ -138,7 +138,7 @@ function N() {
   return A(), false
 }
 
-function R(e) {
+function P(e) {
   let {
     channel: {
       id: t
@@ -149,7 +149,7 @@ function R(e) {
   return delete r[t], false
 }
 
-function P(e) {
+function R(e) {
   let {
     channel: t
   } = e, n = u.default.getId();
@@ -169,28 +169,28 @@ function P(e) {
         timestamp: Date.now(),
         draft: n
       }
-    }), S(t.parent_id, 1), S(t.parent_id, 2)
+    }), T(t.parent_id, 1), T(t.parent_id, 2)
   }
 }
 
-function D(e) {
+function w(e) {
   e.isSwitchingAccount || (b = {})
 }
 
-function w(e) {
+function D(e) {
   e.userId in b && delete b[e.userId]
 }
 
-function L() {
+function x() {
   for (let [e, t] of Chunk709054.default.entries(b))
     for (let [n, r] of Chunk709054.default.entries(exports)) {
       let t = r[0];
-      null != exports && ("" === exports.draft || "" === exports.draft.trim()) && S(require, 0, module)
+      null != exports && ("" === exports.draft || "" === exports.draft.trim()) && T(require, 0, module)
     }
 }
-class x extends(r = Chunk442837.ZP.PersistedStore) {
+class L extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    b = null != e ? e : {}, L(), this.waitFor(u.default, d.Z, f.Z)
+    b = null != e ? e : {}, x(), this.waitFor(u.default, d.Z, f.Z)
   }
   getState() {
     return b
@@ -243,7 +243,7 @@ class x extends(r = Chunk442837.ZP.PersistedStore) {
     return null == n ? null : n[1]
   }
 }
-_(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migrations", [e => {
+p(L, "displayName", "DraftStore"), p(L, "persistKey", "DraftStore"), p(L, "migrations", [e => {
   if (null == e) return {};
   for (let t in e) "timestamp" in e[t] && (e[t] = {
     0: e[t]
@@ -257,16 +257,16 @@ _(x, "displayName", "DraftStore"), _(x, "persistKey", "DraftStore"), _(x, "migra
   for (let t in e) r[t] = e[t];
   return n
 }]);
-let M = new x(Chunk570140.Z, {
+let j = new L(Chunk570140.Z, {
   CONNECTION_OPEN: C,
-  LOGOUT: D,
-  MULTI_ACCOUNT_REMOVE_ACCOUNT: w,
+  LOGOUT: w,
+  MULTI_ACCOUNT_REMOVE_ACCOUNT: D,
   GUILD_DELETE: N,
-  CHANNEL_DELETE: R,
-  THREAD_DELETE: R,
-  THREAD_CREATE: P,
+  CHANNEL_DELETE: P,
+  THREAD_DELETE: P,
+  THREAD_CREATE: R,
   DRAFT_SAVE: v,
   DRAFT_CHANGE: v,
-  DRAFT_CLEAR: I,
-  THREAD_SETTINGS_DRAFT_CHANGE: T
+  DRAFT_CLEAR: S,
+  THREAD_SETTINGS_DRAFT_CHANGE: I
 })

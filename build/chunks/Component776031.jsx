@@ -2,7 +2,7 @@
 /** chunk id: 776031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -55,37 +55,37 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function I(e, t) {
   (0, o.ZDy)(async () => {
     let {
       default: e
     } = await n.e("28479").then(n.bind(n, 78865));
-    return n => (0, r.jsx)(e, I(O({}, n), {
+    return n => (0, r.jsx)(e, S(O({}, n), {
       analyticsSource: t
     }))
   }, {
-    contextKey: e === m.IlC.POPOUT ? o.u1M : o.z1l
+    contextKey: e === h.IlC.POPOUT ? o.u1M : o.z1l
   })
 }
 
-function S(e, t) {
+function T(e, t) {
   let {
     preset: n,
     resolution: y,
     fps: v,
-    soundshareEnabled: S
-  } = (0, a.cj)([u.Z], () => u.Z.getState()), A = (0, a.e7)([_.Z], () => _.Z.getGoLiveSource()), C = (0, a.e7)([h.default], () => h.default.getCurrentUser()), N = (0, a.e7)([f.Z], () => {
+    soundshareEnabled: T
+  } = (0, a.cj)([u.Z], () => u.Z.getState()), A = (0, a.e7)([p.Z], () => p.Z.getGoLiveSource()), C = (0, a.e7)([m.default], () => m.default.getCurrentUser()), N = (0, a.e7)([f.Z], () => {
     var t;
     return null == (t = f.Z.getGuild(null == e ? true : e.guildId)) ? true : t.premiumTier
   }), {
-    location: R
-  } = (0, l.O)(), P = (0, a.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), D = i.useCallback((e, n, r, i) => {
+    location: P
+  } = (0, l.O)(), R = (0, a.e7)([_.Z, d.Z], () => d.Z.getChannel(_.Z.getVoiceChannelId())), w = i.useCallback((e, n, r, i) => {
     if (e) {
       if (null != A) {
         let e = {
@@ -98,52 +98,52 @@ function S(e, t) {
         };
         null != A.desktopSource ? e.desktopSettings = {
           sourceId: A.desktopSource.id,
-          sound: S
+          sound: T
         } : null != A.cameraSource && (e.cameraSettings = {
           videoDeviceGuid: A.cameraSource.videoDeviceGuid,
           audioDeviceGuid: A.cameraSource.audioDeviceGuid
         }), s.Z.setGoLiveSource(e)
       }
-    } else T(t, I(O({}, R), {
-      object: m.qAy.RADIO_ITEM,
+    } else I(t, S(O({}, P), {
+      object: h.qAy.RADIO_ITEM,
       objectType: i
     }))
-  }, [t, R, S, A]);
+  }, [t, P, T, A]);
   if (null == e) return null;
-  let w = n === g.ApplicationStreamPresets.PRESET_DOCUMENTS ? g.ApplicationStreamFPS.FPS_30 : v,
-    L = g.af.map(e => {
+  let D = n === g.ApplicationStreamPresets.PRESET_DOCUMENTS ? g.ApplicationStreamFPS.FPS_30 : v,
+    x = g.af.map(e => {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, y, t, C, N, P);
+      } = e, i = (0, c.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, y, t, C, N, R);
       return (0, r.jsx)(o.k5B, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
         label: n,
         checked: t === v,
-        action: () => D(i, y, t, m.AnalyticsObjectTypes.RESOLUTION)
+        action: () => w(i, y, t, h.AnalyticsObjectTypes.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
-    x = g.km.map(e => {
+    L = g.km.map(e => {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, t, w, C, N, P);
+      } = e, i = (0, c.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, t, D, C, N, R);
       return (0, r.jsx)(o.k5B, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),
         label: n,
         checked: t === y,
-        action: () => D(i, t, w, m.AnalyticsObjectTypes.RESOLUTION)
+        action: () => w(i, t, D, h.AnalyticsObjectTypes.RESOLUTION)
       }, "stream-settings-resolution-".concat(t))
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.kSQ, {
       label: b.intl.string(b.t.SkkeIt),
-      children: L
+      children: x
     }), (0, r.jsx)(o.kSQ, {
       label: b.intl.string(b.t.rHyPXg),
-      children: x
+      children: L
     })]
   })
 }

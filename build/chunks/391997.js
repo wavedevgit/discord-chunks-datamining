@@ -2,8 +2,8 @@
 /** chunk id: 391997, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  p: () => _,
-  t: () => p
+  p: () => p,
+  t: () => _
 });
 var Chunk608748 = require("./608748.js"),
   Chunk388388 = require("./388388.js"),
@@ -24,7 +24,7 @@ var Chunk608748 = require("./608748.js"),
     return true === e && (e = 0), Date.now() + e
   },
   f = false,
-  _ = new(function() {
+  p = new(function() {
     function e() {
       var e = this;
       this.stopped = true, this.listener = function() {
@@ -66,6 +66,6 @@ var Chunk608748 = require("./608748.js"),
       }), this.stopped = true)
     }, module
   }()),
-  p = function(e) {
-    !o && e > 0 && _.start(), (o += e) || _.stop()
+  _ = function(e) {
+    !o && e > 0 && p.start(), (o += e) || p.stop()
   }

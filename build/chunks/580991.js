@@ -37,7 +37,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,28 +48,28 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = {
+let m = {
     allowAutoQuality: false,
     defaultAutoQuality: false,
     migrateAutoQuality: false
   },
-  m = "GoLiveAutoQualityMigrationVersion",
+  h = "GoLiveAutoQualityMigrationVersion",
   g = 1,
   E = (0, Chunk722733.Z)({
     name: "2025-10-go-live-auto-quality",
     kind: "user",
-    defaultConfig: h,
+    defaultConfig: m,
     variations: {
-      1: p(f({}, h), {
+      1: _(f({}, m), {
         allowAutoQuality: true,
         migrateAutoQuality: true
       }),
-      2: p(f({}, h), {
+      2: _(f({}, m), {
         allowAutoQuality: true,
         defaultAutoQuality: true
       })
@@ -105,7 +105,7 @@ function O() {
   let t = E.getConfig({
       location: "maybeMigrateToAutoQuality"
     }).migrateAutoQuality,
-    n = Number(null != (e = Chunk433517.K.get(m)) ? module : 0);
+    n = Number(null != (e = Chunk433517.K.get(h)) ? module : 0);
   if (!exports || require >= g) return;
   let r = Chunk361291.Z.getState();
   if (Chunk442837.preset !== Chunk37113.ApplicationStreamPresets.PRESET_CUSTOM) {
@@ -115,7 +115,7 @@ function O() {
       frameRate: Chunk442837.fps,
       soundshareEnabled: Chunk442837.soundshareEnabled,
       noTrack: true
-    }), Chunk433517.K.set(m, g);
+    }), Chunk433517.K.set(h, g);
     return
   }
 }

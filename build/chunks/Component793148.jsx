@@ -2,7 +2,7 @@
 /** chunk id: 793148, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,8 +21,8 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = 150;
-class p extends(r = Chunk473749.PureComponent) {
+let p = 150;
+class _ extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.updateMediaBar()
   }
@@ -46,9 +46,9 @@ class p extends(r = Chunk473749.PureComponent) {
       sliderClassName: a,
       currentWindow: o,
       muted: f,
-      minValue: p,
-      maxValue: h,
-      value: m,
+      minValue: _,
+      maxValue: m,
+      value: h,
       onVolumeShow: g,
       onVolumeHide: E
     } = this.props, {
@@ -56,7 +56,7 @@ class p extends(r = Chunk473749.PureComponent) {
       focused: y,
       dragging: O
     } = this.state, v = Chunk481060.gj8;
-    return f || m === p ? v = Chunk481060.OyP : m < h / 2 && (v = Chunk481060.X2j), (0, Chunk54381.jsxs)("div", {
+    return f || h === _ ? v = Chunk481060.OyP : h < m / 2 && (v = Chunk481060.X2j), (0, Chunk54381.jsxs)("div", {
       className: s()(require, Chunk717255.container),
       onMouseEnter: () => {
         clearTimeout(this._hoverTimeout), this.setState({
@@ -68,7 +68,7 @@ class p extends(r = Chunk473749.PureComponent) {
           this.setState({
             hovered: false
           }), null == E || E()
-        }, _)
+        }, p)
       },
       onBlur: () => this.setState({
         focused: false
@@ -86,12 +86,12 @@ class p extends(r = Chunk473749.PureComponent) {
         onMouseLeave: () => {
           clearTimeout(this._hoverTimeout), this._hoverTimeout = setTimeout(() => this.setState({
             hovered: false
-          }), _)
+          }), p)
         },
         children: (0, Chunk54381.jsx)(Chunk540026.Z, {
           sliderClassName: Chunk473749,
           type: Chunk540026.Z.Types.VOLUME,
-          value: m / h,
+          value: h / m,
           onDrag: this.handleValueChange,
           onDragStart: this.handleDragStart,
           onDragEnd: this.handleDragEnd,
@@ -171,9 +171,9 @@ class p extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-f(p, "defaultProps", {
+f(_, "defaultProps", {
   minValue: 0,
   maxValue: 100,
   handleSize: 16
 });
-let h = p
+let m = _

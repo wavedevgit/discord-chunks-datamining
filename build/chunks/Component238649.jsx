@@ -2,7 +2,7 @@
 /** chunk id: 238649, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -30,36 +30,36 @@ var Chunk54381 = require("./54381.js"),
   Chunk254139 = require("./254139.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk350169 = require("./350169.js");
-let R = (e, t) => {
+let P = (e, t) => {
     let {
       className: n,
       subscriptionTier: i,
       isEligibleForBogoPromotion: a,
-      offerExpiresAt: R
+      offerExpiresAt: P
     } = e, {
-      analyticsLocations: P
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, p.Nx)(), w = (0, v.$)(), L = (0, h.Z)(), x = null != L, M = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
-      visibilityPercentageRef: k,
-      visibilityPercentage: j
-    } = (0, T.E)(!M), U = (0, l.e7)([_.Z], () => _.Z.affinities), G = !x && U.length > 0, B = (0, m.H)(s.I.MARKETING_PAGE_BANNER);
+      analyticsLocations: R
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), w = (0, _.Nx)(), D = (0, v.$)(), x = (0, m.Z)(), L = null != x, j = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
+      visibilityPercentageRef: M,
+      visibilityPercentage: k
+    } = (0, I.E)(!j), U = (0, l.e7)([p.Z], () => p.Z.affinities), G = !L && U.length > 0, Z = (0, h.H)(s.I.MARKETING_PAGE_BANNER);
     return (0, r.jsx)(f.Gt, {
-      value: P,
+      value: R,
       children: (0, r.jsx)("div", {
         ref: t,
-        className: o()(N.container, null != R && N.containerWithOfferCountdown, n),
+        className: o()(N.container, null != P && N.containerWithOfferCountdown, n),
         "data-testid": "marketing-page-hero-header",
         children: (0, r.jsx)("div", {
-          ref: k,
+          ref: M,
           children: (0, r.jsxs)("div", {
             className: N.contentContainer,
             children: [(0, r.jsx)(A.Z, {
-              containerVisibilityPercentage: j
-            }), D && (null != R ? (0, r.jsx)(y.Z, {
-              expiresAt: R,
+              containerVisibilityPercentage: k
+            }), w && (null != P ? (0, r.jsx)(y.Z, {
+              expiresAt: P,
               className: N.heroOfferCountdown
             }) : (0, r.jsx)("div", {
               className: N.offerPillContainer,
-              children: (0, r.jsx)(S.Z, {
+              children: (0, r.jsx)(T.Z, {
                 enablePremiumBrandRefresh: true
               })
             })), (0, r.jsx)("div", {
@@ -72,10 +72,10 @@ let R = (e, t) => {
               })
             }), (0, r.jsxs)("div", {
               className: N.body,
-              children: [x && (0, r.jsx)("div", {
+              children: [L && (0, r.jsx)("div", {
                 className: N.referrerAttributionContainer,
-                children: (0, r.jsx)(I.Z, {
-                  referrer: L,
+                children: (0, r.jsx)(S.Z, {
+                  referrer: x,
                   enablePremiumBrandRefresh: true
                 })
               }), G && (0, r.jsx)("div", {
@@ -87,13 +87,13 @@ let R = (e, t) => {
                   enablePremiumBrandRefresh: true
                 })
               }), (0, r.jsxs)("div", {
-                className: D ? N.singleButtonContainer : N.twoButtonContainer,
+                className: w ? N.singleButtonContainer : N.twoButtonContainer,
                 children: [(0, r.jsx)(b.Z, {
                   size: "md",
-                  fullWidth: D,
+                  fullWidth: w,
                   hasActivePromotion: !!a,
                   subscriptionTier: i
-                }), !D && (0, r.jsx)(E.Z, {
+                }), !w && (0, r.jsx)(E.Z, {
                   variant: "secondary",
                   size: "md"
                 })]
@@ -103,12 +103,12 @@ let R = (e, t) => {
                   color: "text-tertiary",
                   variant: "text-xs/medium",
                   children: C.intl.format(C.t.kt9wxs, {
-                    cheapestMonthlyPrice: w
+                    cheapestMonthlyPrice: D
                   })
                 })
-              }), null != B && "marketingPageBanner" === B.properties.properties.oneofKind && (0, r.jsx)(g.u, {
-                componentId: B.id,
-                promotionBannerMarketingComponentFields: B.properties.properties.marketingPageBanner
+              }), null != Z && "marketingPageBanner" === Z.properties.properties.oneofKind && (0, r.jsx)(g.u, {
+                componentId: Z.id,
+                promotionBannerMarketingComponentFields: Z.properties.properties.marketingPageBanner
               })]
             })]
           })
@@ -116,4 +116,4 @@ let R = (e, t) => {
       })
     })
   },
-  P = Chunk473749.memo(Chunk473749.forwardRef(R))
+  R = Chunk473749.memo(Chunk473749.forwardRef(P))

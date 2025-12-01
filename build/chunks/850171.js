@@ -6,13 +6,13 @@ require.d(exports, {
   A: () => f,
   C: () => E,
   D: () => d,
-  E: () => h,
-  a: () => W,
-  b: () => p,
-  d: () => _,
+  E: () => m,
+  a: () => Y,
+  b: () => _,
+  d: () => p,
   e: () => F,
-  i: () => B,
-  r: () => Y,
+  i: () => Z,
+  r: () => W,
   s: () => e$
 });
 var Chunk555256 = require("./555256.js"),
@@ -26,10 +26,10 @@ var Chunk555256 = require("./555256.js"),
   u = (e, t, n) => c(e, "symbol" != typeof t ? t + "" : t, n);
 let d = 360,
   f = "ul-app",
-  _ = "#e6e6e6",
-  p = "#bd282a",
-  h = 1030,
-  m = () => {
+  p = "#e6e6e6",
+  _ = "#bd282a",
+  m = 1030,
+  h = () => {
     try {
       return window.parent.Intercom
     } catch {
@@ -39,13 +39,13 @@ let d = 360,
   g = [Object.freeze(Object.defineProperty({
     __proto__: null,
     disable: () => {
-      let e = m();
+      let e = h();
       module && (module.ul_wasVisible = !!document.querySelector("iframe.intercom-launcher-frame"), module.ul_wasVisible && module("update", {
         hide_default_launcher: true
       }))
     },
     enable: () => {
-      let e = m();
+      let e = h();
       module && (module.ul_wasVisible && module("update", {
         hide_default_launcher: false
       }), delete module.ul_wasVisible)
@@ -65,7 +65,7 @@ let b = "ul-view-sdk-script",
   y = ["ios", "android"],
   O = "visitors",
   v = "environments";
-async function I(e, t) {
+async function S(e, t) {
   var n, r, i;
   let {
     shouldDropOnRateLimit: a,
@@ -85,14 +85,14 @@ async function I(e, t) {
       let e = s.l.getItemObject("sprig.anon.env.vid.map");
       e && e[window.UserLeap.envId] === a && (delete e[window.UserLeap.envId], s.l.setItemObject("sprig.anon.env.vid.map", e))
     }
-    i && a && (a !== window.UserLeap.visitorId || window.UserLeap.token !== i) && (T("token", i), T("vid", a), s.e.emit(s.S.VisitorIDUpdated, {
+    i && a && (a !== window.UserLeap.visitorId || window.UserLeap.token !== i) && (I("token", i), I("vid", a), s.e.emit(s.S.VisitorIDUpdated, {
       visitorId: a
     }), window.UserLeap.token = i, window.UserLeap.visitorId = a)
   }
   return null != (i = l.json) && i.logMessage && console.warn(`[Sprig] ${l.json.logMessage}`), l
 }
 
-function T(e, t) {
+function I(e, t) {
   let n = s.l.getItemObject("userleap.ids"),
     r = n[window.UserLeap.envId];
   r ? r[e] = t : r = {
@@ -100,14 +100,14 @@ function T(e, t) {
   }, n[window.UserLeap.envId] = r, s.l.setItemObject("userleap.ids", n)
 }
 
-function S() {
+function T() {
   return window.previewMode ? "0" : window.UserLeap.visitorId ?? ""
 }
 
 function A(e, t, n) {
   let r = [window.UserLeap._API_URL, "sdk", e];
   return t && t.forEach(e => {
-    r.push(e), e === v ? r.push(window.UserLeap.envId) : e === O && r.push(S())
+    r.push(e), e === v ? r.push(window.UserLeap.envId) : e === O && r.push(T())
   }), n && r.push(n), r.join("/")
 }
 let C = async (e, t, r) => {
@@ -118,26 +118,26 @@ let C = async (e, t, r) => {
     forceBrandedLogo: u,
     endCard: d,
     isFeedback: f = false,
-    heatmap: _,
-    locale: p,
-    previewMode: h,
-    productConfig: m,
+    heatmap: p,
+    locale: _,
+    previewMode: m,
+    productConfig: h,
     questions: g,
     responseGroupUid: y,
     surveyId: O,
     uuid: v,
-    vid: I,
-    sessionReplay: T,
-    studyType: S
-  } = e, A = (0, s.g)(window.UserLeap), C = R(A), P = N(A);
-  if (T)
+    vid: S,
+    sessionReplay: I,
+    studyType: T
+  } = e, A = (0, s.g)(window.UserLeap), C = P(A), R = N(A);
+  if (I)
     if (C) s.e.emit(s.S.ReplayCapture, {
       responseGroupUid: y,
       hasQuestions: !!(null != g && g.length),
       surveyId: O,
-      uploadId: T.uploadId,
-      replayType: T.replayDurationType ?? "before",
-      seconds: T.replayDurationSeconds,
+      uploadId: I.uploadId,
+      replayType: I.replayDurationType ?? "before",
+      seconds: I.replayDurationSeconds,
       generateVideoUploadUrlPayload: {
         mediaRecordingUid: (0, s.v)(),
         mediaType: "screen",
@@ -158,14 +158,14 @@ let C = async (e, t, r) => {
       s.m.replay.scheduleOrCaptureReplay({
         responseGroupId: y,
         surveyId: O,
-        visitorId: I,
-        replayParams: T,
+        visitorId: S,
+        replayParams: I,
         completeUploadHeaders: A,
         apiUrl: window.UserLeap._API_URL,
         triggerTimestamp: Date.now(),
         isStandalone: 0 === g.length
       })
-    } if (_) {
+    } if (p) {
     if (!s.m.replay) return window.UserLeap.reportError("displayQuestions", Error("Replay module not registered")), {
       success: false,
       message: "Replay module not registered",
@@ -176,7 +176,7 @@ let C = async (e, t, r) => {
       replayParams: t,
       responseGroupUid: n,
       surveyId: i
-    } = _;
+    } = p;
     await s.m.replay.initializeReplay({
       maxReplayDurationSeconds: 300,
       maxInflightRequests: window.UserLeap.maxInflightReplayRequests,
@@ -194,12 +194,12 @@ let C = async (e, t, r) => {
         responseGroupId: n,
         surveyId: i,
         triggerTimestamp: Date.now(),
-        visitorId: I
+        visitorId: S
       })
     }, "Error in scheduling/capturing replay")
   }
-  if (null == I || !(null != g && g.length)) return s.b.info("CannotDisplaySurvey", {
-    vid: I
+  if (null == S || !(null != g && g.length)) return s.b.info("CannotDisplaySurvey", {
+    vid: S
   }), {
     success: false,
     message: "[Sprig] no survey found",
@@ -214,7 +214,7 @@ let C = async (e, t, r) => {
       surveyState: "no survey"
     }
   }
-  if (I !== window.UserLeap.visitorId && v !== window.UserLeap.visitorId && !window.previewMode) {
+  if (S !== window.UserLeap.visitorId && v !== window.UserLeap.visitorId && !window.previewMode) {
     let e = "Attempted to display survey to a different visitor";
     return window.UserLeap.reportError("DisplaySurvey", Error(e)), {
       success: false,
@@ -231,37 +231,37 @@ let C = async (e, t, r) => {
     name: s.S.SurveyWillPresent,
     "survey.id": O
   });
-  let D, M, j, U, G = document.createElement("div"),
-    B = e => {
+  let w, j, k, U, G = document.createElement("div"),
+    Z = e => {
       let {
         "view.version": t
       } = e;
-      t !== A["x-ul-sdk-version"] && L(), s.e.removeListener("verify.view.version", B)
+      t !== A["x-ul-sdk-version"] && x(), s.e.removeListener("verify.view.version", Z)
     };
-  s.e.on("verify.view.version", B), window.UserLeap.useMobileStyling = P, (0, s.h)(A) ? (D = "ul-direct-embeded-frame", M = document.head, j = window, U = false, (() => {
+  s.e.on("verify.view.version", Z), window.UserLeap.useMobileStyling = R, (0, s.h)(A) ? (w = "ul-direct-embeded-frame", j = document.head, k = window, U = false, (() => {
     let e = (0, s.g)(window.UserLeap),
-      t = R(e),
+      t = P(e),
       n = window.UserLeap.forceDirectEmbed,
       r = "web" === e["userleap-platform"];
     return t || n && r
-  })() && (w(O, f), G.id = D, window.UserLeap.container.appendChild(G), x(), s.e.emit(s.S.SurveyLifeCycle, {
+  })() && (D(O, f), G.id = w, window.UserLeap.container.appendChild(G), L(), s.e.emit(s.S.SurveyLifeCycle, {
     state: "presented"
   }), s.e.emit(s.S.SurveyPresented, {
     name: s.S.SurveyPresented,
     "survey.id": O
   }))) : {
-    frameId: D,
-    contentWinDocHead: M,
-    contentWindow: j,
+    frameId: w,
+    contentWinDocHead: j,
+    contentWindow: k,
     hasOverlay: U,
     iframe: G
-  } = k({
-    productConfig: m,
-    useMobileStyling: P,
+  } = M({
+    productConfig: h,
+    useMobileStyling: R,
     surveyId: O,
     isFeedback: f
-  }), window.UserLeap.frameId = D;
-  let Z = {
+  }), window.UserLeap.frameId = w;
+  let B = {
     apiURL: window.UserLeap._API_URL,
     cards: g,
     configureExitOnOverlayClick: e => {
@@ -276,28 +276,28 @@ let C = async (e, t, r) => {
     forceBrandedLogo: u,
     frame: G,
     headers: A,
-    locale: p,
+    locale: _,
     mobileSDKVersion: window.UserLeap.mobileSDKVersion,
     previewKey: s.l.getItem("sprig.previewKey"),
-    previewMode: h,
+    previewMode: m,
     productConfig: {
-      framePosition: null == m ? true : m.framePosition,
-      desktopDisplay: null == m ? true : m.desktopDisplay,
-      placement: null == m ? true : m.placement
+      framePosition: null == h ? true : h.framePosition,
+      desktopDisplay: null == h ? true : h.desktopDisplay,
+      placement: null == h ? true : h.placement
     },
     responseGroupUid: y,
     startingQuestionIdx: null == (a = window.UserLeap.config) ? true : a.startingQuestionIdx,
-    studyType: S,
+    studyType: T,
     styleNonce: window.UserLeap.styleNonce,
     surveyId: O,
     tabTitle: document.title,
     trackPageViewUrl: t,
     ulEvents: s.E,
     upchunkLibraryURL: window.UserLeap.upchunkLibraryURL,
-    useMobileStyling: P,
+    useMobileStyling: R,
     userId: v,
-    viewDocument: null == j ? true : j.document,
-    viewWindow: j,
+    viewDocument: null == k ? true : k.document,
+    viewWindow: k,
     visitorAttributes: {
       externalUserId: window.UserLeap.userId,
       email: window.UserLeap.email
@@ -307,66 +307,66 @@ let C = async (e, t, r) => {
   null != (o = window.UserLeap._config) && o.startingQuestionIdx && (window.UserLeap._config = {
     ...window.UserLeap._config,
     startingQuestionIdx: null
-  }), Z.customStyles = (f ? window.UserLeap.feedbackCustomStyles : window.UserLeap.customStyles) ?? m.customStyles, j && (j.__cfg = Z);
-  let F = window.UserLeap.viewSDKURL ? window.UserLeap.viewSDKURL : Z.path,
+  }), B.customStyles = (f ? window.UserLeap.feedbackCustomStyles : window.UserLeap.customStyles) ?? h.customStyles, k && (k.__cfg = B);
+  let F = window.UserLeap.viewSDKURL ? window.UserLeap.viewSDKURL : B.path,
     V = document.getElementById(b);
   V && V.remove();
   let H = function() {
       let e = document.createElement("script");
       return window.UserLeap.nonce && e.setAttribute("nonce", window.UserLeap.nonce), e.id = b, e
     }(),
-    W = () => {
+    Y = () => {
       window.UserLeap.container && Object.assign(window.UserLeap.container.style, {
         display: "flex"
       })
     };
-  if ("web-npm" === Z.installationMethod || "web-npm-bundled" === Z.installationMethod) {
+  if ("web-npm" === B.installationMethod || "web-npm-bundled" === B.installationMethod) {
     let {
       default: e
     } = await n.e("47832").then(n.bind(n, 773341));
-    e.configure(Z), U && window.UserLeap.container && W()
+    e.configure(B), U && window.UserLeap.container && Y()
   } else F && (H.src = F, U && H.addEventListener("load", () => {
-    window.UserLeap.container && W()
-  }), null == j || j.addEventListener("error", e => {
+    window.UserLeap.container && Y()
+  }), null == k || k.addEventListener("error", e => {
     e.target instanceof HTMLScriptElement && e.target.src === F && window.UserLeap.reportError("loadFrameScript", Error("Frame script failed to load"))
   }, {
     capture: true,
     once: true
   }));
-  null == M || M.appendChild(H);
-  let Y = {
+  null == j || j.appendChild(H);
+  let W = {
     success: true,
     surveyState: "ready",
     surveyId: O,
     responseGroupUid: y
   };
-  return window.UserLeap.isMobileSDK && c && (Y.delay = c), Y
+  return window.UserLeap.isMobileSDK && c && (W.delay = c), W
 };
 
 function N(e) {
   var t;
   if (true !== window.UserLeap.useMobileStyling) return window.UserLeap.useMobileStyling;
   let n = (null == (t = window.UserLeap.windowDimensions) ? true : t.width) ?? document.body.clientWidth;
-  return R(e) || n > 10 && n < 500
+  return P(e) || n > 10 && n < 500
 }
 
-function R(e) {
+function P(e) {
   return y.includes(e["userleap-platform"])
 }
-let P = "ul-frame";
+let R = "ul-frame";
 window.UserLeap && window.Sprig && (window.Sprig._gtm ? window.Sprig = window.UserLeap : window.UserLeap = window.Sprig), window.UserLeap || (window.UserLeap = window.Sprig), window.Sprig || (window.Sprig = window.UserLeap);
-let D = "0px",
-  w = (e, t, n) => {
+let w = "0px",
+  D = (e, t, n) => {
     window.UserLeap.container = document.createElement("div"), window.UserLeap.container.className = "ul-container" + (t ? " ul-container-feedback" : ""), e && (window.UserLeap.container.dataset.studyId = e.toString());
     let r = K();
     n && r && !window.UserLeap.useMobileStyling ? r.appendChild(window.UserLeap.container) : document.body.appendChild(window.UserLeap.container)
   },
-  L = (e, t) => {
+  x = (e, t) => {
     var n;
     G();
     let r = window.UserLeap.container;
     if (r) try {
-      null == (n = r.parentNode) || n.removeChild(r), window.UserLeap.container = null, T("trackStartUrl", null), s.e.emit(s.S.SurveyLifeCycle, {
+      null == (n = r.parentNode) || n.removeChild(r), window.UserLeap.container = null, I("trackStartUrl", null), s.e.emit(s.S.SurveyLifeCycle, {
         state: "dismissed"
       }), s.e.emit(s.S.SurveyClosed, {
         name: s.S.SurveyClosed,
@@ -380,20 +380,20 @@ let D = "0px",
       console.warn(`[Sprig] (ERR-412) Error removing UserLeap container by ${e} ` + r), t instanceof Error && window.UserLeap.reportError("dismissActiveSurvey", t)
     }
   },
-  x = () => {
+  L = () => {
     Chunk555256.e.once(Chunk555256.S.SurveyWillClose, ({
       initiator: e,
       studyType: t
     }) => {
-      s.e.removeAllListeners(s.S.CloseSurveyOnOverlayClick), L(e, t)
+      s.e.removeAllListeners(s.S.CloseSurveyOnOverlayClick), x(e, t)
     })
   },
-  M = (e, t, n, r) => {
+  j = (e, t, n, r) => {
     var i, a;
     let o, s = {
         position: "fixed",
         bottom: "0px",
-        right: D,
+        right: w,
         border: 0,
         backgroundColor: "rgba(0,0,0,0)",
         zIndex: 0x7ffffffe,
@@ -423,12 +423,12 @@ let D = "0px",
       else switch (l.framePosition) {
         case "bottomLeft":
           o = {
-            left: D
+            left: w
           };
           break;
         case "topLeft":
           o = {
-            left: D,
+            left: w,
             top: 0
           };
           break;
@@ -457,20 +457,20 @@ let D = "0px",
       n["background-color"] = "light" === r ? "rgba(255,255,255, 0.95)" : "rgba(0,0,0,0.9)", t || (n.margin = "auto"), window.UserLeap.container && Object.assign(window.UserLeap.container.style, n)
     })(l, n), Object.assign(e.style, s, o), d
   },
-  k = ({
+  M = ({
     productConfig: e,
     useMobileStyling: t,
     surveyId: n,
     isFeedback: r
   }) => {
     var i, a;
-    let o = P,
+    let o = R,
       l = r && "slider" === e.desktopDisplay;
-    w(n, r, l), U();
+    D(n, r, l), U();
     let c = document.createElement("iframe");
     c.id = o, c.setAttribute("title", "Sprig User Feedback Dialog");
-    let u = M(c, e, t, r);
-    x();
+    let u = j(c, e, t, r);
+    L();
     let d = false;
     c.setHeight = e => {
       parseInt(c.style.height) == e && d || (d = true, c.style.height = `${e}px`, s.e.emit(s.S.SurveyHeight, {
@@ -494,20 +494,20 @@ let D = "0px",
       name: s.S.SurveyPresented,
       "survey.id": n
     });
-    let _ = null == (a = c.contentWindow) ? true : a.document;
-    if (_ && (_.open("text/html", "replace"), _.write("<!doctype html><head></head><body></body></html>"), _.close(), !t)) {
-      let e = _.body;
+    let p = null == (a = c.contentWindow) ? true : a.document;
+    if (p && (p.open("text/html", "replace"), p.write("<!doctype html><head></head><body></body></html>"), p.close(), !t)) {
+      let e = p.body;
       e.style.display = "flex", e.style.alignItems = "center"
     }
     return {
       frameId: o,
-      contentWinDocHead: null == _ ? true : _.head,
+      contentWinDocHead: null == p ? true : p.head,
       contentWindow: c.contentWindow,
       hasOverlay: u,
       iframe: c
     }
   },
-  j = {
+  k = {
     [Chunk555256.S.SurveyFadingOut]: () => {
       window.UserLeap.container && Object.assign(window.UserLeap.container.style, {
         "background-color": "rgba(0,0,0,0)"
@@ -515,17 +515,17 @@ let D = "0px",
     }
   },
   U = () => {
-    Object.entries(j).forEach(([e, t]) => {
+    Object.entries(k).forEach(([e, t]) => {
       s.e.on(e, t)
     })
   },
   G = () => {
-    Object.entries(j).forEach(([e, t]) => {
+    Object.entries(k).forEach(([e, t]) => {
       s.e.off(e, t)
     })
   },
-  B = e => !!e && e.nodeType === Node.ELEMENT_NODE,
-  Z = e => e instanceof HTMLElement || e instanceof SVGElement,
+  Z = e => !!e && e.nodeType === Node.ELEMENT_NODE,
+  B = e => e instanceof HTMLElement || e instanceof SVGElement,
   F = ({
     document: e,
     elementId: t,
@@ -539,23 +539,23 @@ let D = "0px",
   },
   V = (e, t) => {
     let n = t.querySelector(".sprig-question-body");
-    if (!B(n)) return e;
+    if (!Z(n)) return e;
     let r = n.scrollHeight;
     return r < 100 ? e : e - (r - 100)
   },
   H = (e, t) => {
     let n = t.querySelector(e);
-    if (!B(n)) return 0;
+    if (!Z(n)) return 0;
     let r = getComputedStyle(n);
     return parseFloat(r.paddingLeft) + parseFloat(r.paddingRight) + (parseFloat(r.marginLeft) + parseFloat(r.marginRight)) + (parseFloat(r.borderLeftWidth) + parseFloat(r.borderRightWidth))
   },
-  W = (e, t, n) => {
+  Y = (e, t, n) => {
     let r = e.querySelector(".ul-card__container"),
       i = e.querySelector(".ul-app"),
       a = 600,
       o = 360,
       s = 0;
-    if (B(r) && B(i)) {
+    if (Z(r) && Z(i)) {
       let l = r.querySelector(".ul-card--matrix_grid"),
         c = !l && t && n;
       try {
@@ -566,7 +566,7 @@ let D = "0px",
             i = e.querySelector(".ul-footer"),
             a = e.querySelector(".sprig-container"),
             o = 0;
-          return B(n) && (o += n.scrollHeight - n.clientHeight), B(r) && (o += r.scrollHeight - r.clientHeight), B(t) && (o += t.scrollHeight - t.clientHeight), B(i) && B(a) && 0 === a.clientHeight && (o += i.clientHeight), o
+          return Z(n) && (o += n.scrollHeight - n.clientHeight), Z(r) && (o += r.scrollHeight - r.clientHeight), Z(t) && (o += t.scrollHeight - t.clientHeight), Z(i) && Z(a) && 0 === a.clientHeight && (o += i.clientHeight), o
         })(e);
         let t = getComputedStyle(r);
         s = a;
@@ -578,15 +578,15 @@ let D = "0px",
     }
     return [a + 1, o, V(s, e)]
   },
-  Y = e => {
+  W = e => {
     let t = e.querySelector(".ul-card__container");
     t && (t.scrollTop = 0)
   },
   K = () => J,
   z = () => document.getElementById("sprig-feedback-container"),
   q = () => document.getElementById("sprig-feedback-loading-animation"),
-  X = () => !!document.getElementById(P),
-  Q = false,
+  Q = () => !!document.getElementById(R),
+  X = false,
   J = null,
   $ = null,
   ee = false,
@@ -662,17 +662,17 @@ let D = "0px",
       elementId: "ul-custom-style",
       styleString: i ?? "",
       nonce: window.UserLeap.styleNonce
-    }), Q = "center-modal" === l, en = o;
-    let [_, p] = o.split("-");
+    }), X = "center-modal" === l, en = o;
+    let [p, _] = o.split("-");
     (e => {
       if (z() || !er.includes(e)) return;
       let [t, n] = e.split("-"), r = document.createElement("div");
       r.id = "sprig-feedback-container", r.classList.add(`sprig-feedback-container-${n}`, `sprig-feedback-container-${t}`), document.body.appendChild(r)
     })(o), f = z(), $ = document.createElement("button");
-    let h = document.createElement("div");
-    h.className = "sprig-feedback-button-label", h.innerText = c, $.appendChild(h), $.id = "sprig-feedback-button", $.classList.add(`sprig-feedback-button-${p}`, `sprig-feedback-button-${_}`, `sprig-feedback-button-${r}`, "fade-in-transition"), s.e.on(s.E.SURVEY_FADING_OUT, el), $.addEventListener("click", async () => {
+    let m = document.createElement("div");
+    m.className = "sprig-feedback-button-label", m.innerText = c, $.appendChild(m), $.id = "sprig-feedback-button", $.classList.add(`sprig-feedback-button-${_}`, `sprig-feedback-button-${p}`, `sprig-feedback-button-${r}`, "fade-in-transition"), s.e.on(s.E.SURVEY_FADING_OUT, el), $.addEventListener("click", async () => {
       let e = document.getElementById("sprig-feedback-error-container");
-      if (X() || ea()) {
+      if (Q() || ea()) {
         if (el()) {
           s.e.emit(s.S.SurveyCloseRequested, {
             name: s.S.SurveyCloseRequested,
@@ -692,7 +692,7 @@ let D = "0px",
       }
       if (N((0, s.g)(window.UserLeap)) || ee || ed(), t) return J && J.classList.add("sprig-feedback-loading-container-previews"), await C(t), void ec();
       let r = await (async e => {
-        let t = await I(A("1", [O], "startFeedbackStudy"), {
+        let t = await S(A("1", [O], "startFeedbackStudy"), {
           body: JSON.stringify({
             surveyUuid: e
           }),
@@ -705,7 +705,7 @@ let D = "0px",
         studyType: "feedbackButton"
       }, n);
       else if (J) {
-        let e = e_();
+        let e = ep();
         J.appendChild(e), ec(), J.style.height = "300px", J.style.width = "360px"
       }
     }), null == f || f.appendChild($), s.e.emit(s.S.FeedbackButtonLoaded, {
@@ -713,18 +713,18 @@ let D = "0px",
       "survey.id": d
     });
     let {
-      useMobileStyling: m,
+      useMobileStyling: h,
       _config: {
         border: g
       }
     } = window.UserLeap;
-    if (Q || m) es(0);
+    if (X || h) es(0);
     else {
       let e = document.createElement("div");
-      e.id = "sprig-feedback-loading-container", e.className = `sprig-feedback-loading-container sprig-feedback-loading-container-${p}`, e.style.setProperty("--feedback-border", g), J = e, eu(), null == f || f.appendChild(e), es(-eo())
+      e.id = "sprig-feedback-loading-container", e.className = `sprig-feedback-loading-container sprig-feedback-loading-container-${_}`, e.style.setProperty("--feedback-border", g), J = e, eu(), null == f || f.appendChild(e), es(-eo())
     }
     window.UserLeap._config.isOnQuestionsTab && t && !ei() && J && (ed(), eu(), J && J.classList.add("sprig-feedback-loading-container-previews"), C(t), ec())
-  }, e_ = () => {
+  }, ep = () => {
     let e = document.createElement("div");
     module.id = "sprig-feedback-error-container", module.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
   <circle cx="20" cy="20" r="14.5" stroke="#B0B5B7" stroke-width="3"/>
@@ -733,7 +733,7 @@ let D = "0px",
   </svg>`;
     let t = document.createElement("h3");
     return exports.className = "sprig-feedback-error-text", exports.innerText = "There was an error while loading the survey", module.appendChild(exports), module
-  }, ep = new class {
+  }, e_ = new class {
     constructor() {
       u(this, "_ldData", {})
     }
@@ -750,8 +750,8 @@ let D = "0px",
       }
     }
   };
-Object.freeze(ep);
-let eh = new class {
+Object.freeze(e_);
+let em = new class {
   constructor() {
     u(this, "_optimizelyData", {})
   }
@@ -812,8 +812,8 @@ let eh = new class {
     }
   }
 };
-Object.freeze(eh);
-class em {
+Object.freeze(em);
+class eh {
   constructor(e, t) {
     u(this, "paused"), u(this, "queue"), u(this, "ul"), this.ul = e, this.paused = false, this.queue = [], this.flush(t)
   }
@@ -875,12 +875,12 @@ let eg = e => {
       t.report(r / 1e3), setTimeout(() => eb(e, t), e)
     }, 0)
   },
-  ey, eO, ev, eI, eT = {},
-  eS = (e, t = 1) => {
+  ey, eO, ev, eS, eI = {},
+  eT = (e, t = 1) => {
     let {
       name: n
     } = e;
-    eT[n] = (eT[n] || 0) + t
+    eI[n] = (eI[n] || 0) + t
   },
   eA = e => {
     let t = 1;
@@ -897,28 +897,28 @@ let eg = e => {
   eN = e => {
     switch (e.type) {
       case "childList":
-        return eS(ey, eC(e.addedNodes)), void eS(eO, eC(e.removedNodes));
+        return eT(ey, eC(e.addedNodes)), void eT(eO, eC(e.removedNodes));
       case "attributes":
-        return void eS(ev);
+        return void eT(ev);
       case "characterData":
-        return void eS(eI)
+        return void eT(eS)
     }
   },
-  eR = e => e.forEach(eN),
-  eP = () => {
-    ey.report(eT[ey.name] || 0), eO.report(eT[eO.name] || 0), ev.report(eT[ev.name] || 0), eI.report(eT[eI.name] || 0), eT = {}
+  eP = e => e.forEach(eN),
+  eR = () => {
+    ey.report(eI[ey.name] || 0), eO.report(eI[eO.name] || 0), ev.report(eI[ev.name] || 0), eS.report(eI[eS.name] || 0), eI = {}
   },
-  eD = (e = 1e3) => {
-    ey = (0, s.r)("sdk_mutations_nodes_added"), eO = (0, s.r)("sdk_mutations_nodes_removed"), ev = (0, s.r)("sdk_mutations_attributes_changed"), eI = (0, s.r)("sdk_mutations_character_data"), new MutationObserver(eR).observe(document, {
+  ew = (e = 1e3) => {
+    ey = (0, s.r)("sdk_mutations_nodes_added"), eO = (0, s.r)("sdk_mutations_nodes_removed"), ev = (0, s.r)("sdk_mutations_attributes_changed"), eS = (0, s.r)("sdk_mutations_character_data"), new MutationObserver(eP).observe(document, {
       attributes: true,
       attributeOldValue: true,
       characterData: true,
       characterDataOldValue: true,
       childList: true,
       subtree: true
-    }), setInterval(eP, e)
+    }), setInterval(eR, e)
   },
-  ew = ({
+  eD = ({
     isWeb: e,
     reportingIntervalSeconds: t,
     thresholds: n,
@@ -945,13 +945,13 @@ let eg = e => {
       eb(e, (0, s.r)("sdk_event_queue_latency_seconds"))
     })(), ((e = 1e4) => {
       r = (0, s.r)("sdk_dom_nodes_count"), i = (0, s.r)("sdk_page_html_characters"), eE(), setInterval(eE, e)
-    })(), eD())
+    })(), ew())
   },
-  eL = "test",
-  ex = ["popState", "pushState", "replaceState"],
-  eM = {},
-  ek = "!email",
-  ej = "pageUrl",
+  ex = "test",
+  eL = ["popState", "pushState", "replaceState"],
+  ej = {},
+  eM = "!email",
+  ek = "pageUrl",
   eU = window.location.href;
 
 function eG(e) {
@@ -969,19 +969,19 @@ function eG(e) {
   }), eU = window.location.href;
   let l = eV().trackStartUrl,
     c = l ? String(l) : null;
-  r && eW(window.location.href), i && (eF(), eZ()), K() && (() => {
+  r && eY(window.location.href), i && (eF(), eB()), K() && (() => {
     if (ei()) return;
     let e = z();
     e && ((0, s.c)(et) || (e.remove(), et = null, J = null))
   })(), s.a.getItem("sprig.isCapturingHeatmap") && (null == (n = null == (t = s.m.replay) ? true : t.checkPendingHeatmapsUrl()) || n.then(e => {
     var t;
     e && (null == (t = s.m.replay) || t.uploadReadyPendingCaptures(true))
-  })), !ei() && a && c && c !== window.location.href && e && ex.includes(e.type) && window.UserLeap("dismissActiveSurvey", s.D.PageChange)
+  })), !ei() && a && c && c !== window.location.href && e && eL.includes(e.type) && window.UserLeap("dismissActiveSurvey", s.D.PageChange)
 }
-let eB = {
+let eZ = {
     capture: true
   },
-  eZ = () => {
+  eB = () => {
     let e = window.UserLeap._config.interactiveEvents.filter(e => (0, s.p)(e, window.location.href)).map(e => {
         let {
           name: t,
@@ -991,17 +991,17 @@ let eB = {
           innerText: i
         } = n;
         return r ? e => {
-          if (Z(e.target)) try {
+          if (B(e.target)) try {
             e.target.closest(r) && window.UserLeap("track", t)
           } catch {}
           returnfalse
-        } : e => (Z(e.target) && e.target.innerText === i && window.UserLeap("track", t), false)
+        } : e => (B(e.target) && e.target.innerText === i && window.UserLeap("track", t), false)
       }),
       t = t => e.forEach(e => e(t));
-    window.UserLeap._config.interactiveEventsHandler = exports, window.addEventListener("click", exports, eB)
+    window.UserLeap._config.interactiveEventsHandler = exports, window.addEventListener("click", exports, eZ)
   },
   eF = () => {
-    window.UserLeap._config.interactiveEventsHandler && window.removeEventListener("click", window.UserLeap._config.interactiveEventsHandler, eB), delete window.UserLeap._config.interactiveEventsHandler
+    window.UserLeap._config.interactiveEventsHandler && window.removeEventListener("click", window.UserLeap._config.interactiveEventsHandler, eZ), delete window.UserLeap._config.interactiveEventsHandler
   };
 
 function eV() {
@@ -1015,12 +1015,12 @@ function eH() {
     t = module[window.UserLeap.envId];
   window.UserLeap.visitorId = exports || (0, Chunk555256.v)(), Chunk555256.b.info("NewVid", {
     vid: window.UserLeap.visitorId
-  }), T("vid", window.UserLeap.visitorId), exports || (module[window.UserLeap.envId] = window.UserLeap.visitorId, Chunk555256.l.setItemObject("sprig.anon.env.vid.map", module)), Chunk555256.e.emit(Chunk555256.S.VisitorIDUpdated, {
+  }), I("vid", window.UserLeap.visitorId), exports || (module[window.UserLeap.envId] = window.UserLeap.visitorId, Chunk555256.l.setItemObject("sprig.anon.env.vid.map", module)), Chunk555256.e.emit(Chunk555256.S.VisitorIDUpdated, {
     visitorId: window.UserLeap.visitorId
   })
 }
 
-function eW(e, t, n, r) {
+function eY(e, t, n, r) {
   var i, a;
   try {
     if (e.endsWith("mock_snippet.html")) return;
@@ -1045,13 +1045,13 @@ function eW(e, t, n, r) {
     let u = {
       url: e
     };
-    r && (u.trackPageView = true), window.UserLeap._queue.push(["track", ej, t, u, n])
+    r && (u.trackPageView = true), window.UserLeap._queue.push(["track", ek, t, u, n])
   } catch (t) {
     t instanceof Error && (t.stack = e, window.UserLeap.reportError("trackPageView", t)), console.warn("[Sprig] (ERR-428) Failed to track page view", t)
   }
 }
 
-function eY() {
+function eW() {
   let e, t, n = "Backbone" in window && window.Backbone && window.Backbone.history ? window.Backbone.history : window.history;
   "pushState" in require && (e = require.pushState, require.pushState = function(...t) {
     let n = e.apply(this, t),
@@ -1064,10 +1064,10 @@ function eY() {
   }), ["hashchange", "popstate"].forEach(e => window.addEventListener(e, eG, true))
 }
 async function eK(e, t) {
-  let n = S();
-  e && !t && (window.UserLeap._config.mode = eL);
+  let n = T();
+  e && !t && (window.UserLeap._config.mode = ex);
   let r = N((0, s.g)(window.UserLeap)),
-    i = await I(function(e) {
+    i = await S(function(e) {
       let t = new URL(A("1", [v], "questions"));
       return Object.entries(e || {}).forEach(([e, n]) => {
         n && t.searchParams.append(e, String(n))
@@ -1126,7 +1126,7 @@ function ez(e) {
         r = e[t -= 1];
       e[t] = e[n], e[n] = r
     }
-  }(t), (t || n || r) && (eY(), eG())
+  }(t), (t || n || r) && (eW(), eG())
 }
 let eq = function(e) {
   if (!window.UserLeap) return;
@@ -1136,13 +1136,13 @@ let eq = function(e) {
       userId: u,
       anonymousId: d,
       metadata: f = {},
-      properties: _,
-      showSurveyCallback: p
+      properties: p,
+      showSurveyCallback: _
     } = t, {
-      eventName: h
+      eventName: m
     } = t;
-    if (window.UserLeap.debugMode && h !== ej && console.info("[DEBUG] Sprig track", t), "test" === e.mode) return;
-    let m = s.l.getItem("sprig.previewKey") ?? true;
+    if (window.UserLeap.debugMode && m !== ek && console.info("[DEBUG] Sprig track", t), "test" === e.mode) return;
+    let h = s.l.getItem("sprig.previewKey") ?? true;
     if (e.requireUserIdForTracking && !window.UserLeap.userId && !u) {
       let e = "[Sprig] - Skipping tracking without userId";
       return console.warn(e), {
@@ -1151,8 +1151,8 @@ let eq = function(e) {
         surveyState: "no survey"
       }
     }
-    if (!h || 0 === h.trim().length) {
-      let e = "[Sprig] - Invalid event name " + (h = h ? String(h) : "");
+    if (!m || 0 === m.trim().length) {
+      let e = "[Sprig] - Invalid event name " + (m = m ? String(m) : "");
       return console.warn(e), {
         success: false,
         message: e,
@@ -1160,27 +1160,27 @@ let eq = function(e) {
       }
     }
     let g = o ?? window.location.href;
-    f.url || (f.url = g), T("trackStartUrl", g), null != (r = null == (n = window.UserLeap) ? true : n._config) && r.optimizelyEnabled && (R((0, s.g)(window.UserLeap)) || eh.getAndSetWebOptimizelyExperiments(), f.optimizelyExperiments = Object.assign({}, eh.getAllOptimizelyExperiments())), null != (l = null == (i = window.UserLeap) ? true : i._config) && l.launchDarklyEnabled && (f.launchDarklyFlags = ep.getAllLaunchDarklyVariations()), u && (window.UserLeap.userId = u), d && (window.UserLeap.partnerAnonymousId = d), _ && (f.eventProperties = _), null == (c = s.m.replay) || c.RecordEvent({
-      name: h,
+    f.url || (f.url = g), I("trackStartUrl", g), null != (r = null == (n = window.UserLeap) ? true : n._config) && r.optimizelyEnabled && (P((0, s.g)(window.UserLeap)) || em.getAndSetWebOptimizelyExperiments(), f.optimizelyExperiments = Object.assign({}, em.getAllOptimizelyExperiments())), null != (l = null == (i = window.UserLeap) ? true : i._config) && l.launchDarklyEnabled && (f.launchDarklyFlags = e_.getAllLaunchDarklyVariations()), u && (window.UserLeap.userId = u), d && (window.UserLeap.partnerAnonymousId = d), p && (f.eventProperties = p), null == (c = s.m.replay) || c.RecordEvent({
+      name: m,
       url: f.url
     }), s.b.info("TrackEvent", {
-      eventName: h
+      eventName: m
     });
-    let E = window.UserLeap.delayingSurvey || X() ? await I(A("1", [O], "events/batch"), {
+    let E = window.UserLeap.delayingSurvey || Q() ? await S(A("1", [O], "events/batch"), {
       body: JSON.stringify({
         events: [{
-          event: h,
+          event: m,
           metadata: f
         }],
-        previewKey: m
+        previewKey: h
       }),
       method: "POST",
       shouldDropOnRateLimit: true
-    }) : await I(A("1", [O], "events"), {
+    }) : await S(A("1", [O], "events"), {
       body: JSON.stringify({
-        event: h,
+        event: m,
         metadata: f,
-        previewKey: m
+        previewKey: h
       }),
       method: "POST",
       shouldDropOnRateLimit: true
@@ -1194,7 +1194,7 @@ let eq = function(e) {
         surveyState: "no survey"
       }
     }
-    u && T("uid", u), d && T("aid", d);
+    u && I("uid", u), d && I("aid", d);
     let b = E.json;
     b.invalidPreviewKey && s.l.removeItem("sprig.previewKey");
     let y = f.trackPageView ? f.url : true;
@@ -1202,7 +1202,7 @@ let eq = function(e) {
       var n, r;
       let i = true;
       return !(t && null != (n = null == e ? true : e.json) && n.surveyId && (window.UserLeap.delayingSurvey = true, i = await t(e.json.surveyId), window.UserLeap.delayingSurvey = false, !i)) && (null != (r = null == e ? true : e.json) && r.delay && !window.UserLeap.isMobileSDK && (window.UserLeap.delayingSurvey = true, await (0, s.q)(e.json.delay), window.UserLeap.delayingSurvey = false), i)
-    }(E, p) ? ! function(e) {
+    }(E, _) ? ! function(e) {
       if (!window.UserLeap._config.dismissOnPageChange) returntrue;
       let t = new URL(e),
         n = new URL(o ?? window.location.href);
@@ -1218,7 +1218,7 @@ let eq = function(e) {
     }
   }, n = (e, t) => {
     var n;
-    let r = null == (n = null == e ? true : e.querySelector(`[id="${P}"]`)) ? true : n.contentDocument;
+    let r = null == (n = null == e ? true : e.querySelector(`[id="${R}"]`)) ? true : n.contentDocument;
     r && F({
       document: r,
       elementId: "ul-custom-style",
@@ -1313,18 +1313,18 @@ let eq = function(e) {
         }
       }
       if (a)
-        for (let e of (a.email && !a[ek] && (a[ek] = a.email, delete a.email), Object.keys(a))) a[e] === eM[e] && delete a[e];
+        for (let e of (a.email && !a[eM] && (a[eM] = a.email, delete a.email), Object.keys(a))) a[e] === ej[e] && delete a[e];
       if (!(a && 0 !== Object.keys(a).length || r && window.UserLeap.userId !== r || i && window.UserLeap.partnerAnonymousId !== i)) return {
         success: true
       };
       let o = {};
-      return r && (o.userId = window.UserLeap.userId = r), i && (o.partnerAnonymousId = window.UserLeap.partnerAnonymousId = i), a && Object.keys(a).length > 0 ? (n = await I(A("1", [v, O], "attributes"), {
+      return r && (o.userId = window.UserLeap.userId = r), i && (o.partnerAnonymousId = window.UserLeap.partnerAnonymousId = i), a && Object.keys(a).length > 0 ? (n = await S(A("1", [v, O], "attributes"), {
         body: JSON.stringify(a),
         method: "PUT"
-      })).ok ? Object.assign(eM, a) : n.reportError && (console.warn("[Sprig] (ERR-432) identifyAndSetAttributes failed", n.error), n.error && window.UserLeap.reportError("identifyAndSetAttributes", n.error)) : n = await I(A("1", [v, O]), {
+      })).ok ? Object.assign(ej, a) : n.reportError && (console.warn("[Sprig] (ERR-432) identifyAndSetAttributes failed", n.error), n.error && window.UserLeap.reportError("identifyAndSetAttributes", n.error)) : n = await S(A("1", [v, O]), {
         body: JSON.stringify(o),
         method: "PUT"
-      }), a && a[ek] && (window.UserLeap.email = a[ek]), n.ok && (r && T("uid", r), i && T("aid", i)), {
+      }), a && a[eM] && (window.UserLeap.email = a[eM]), n.ok && (r && I("uid", r), i && I("aid", i)), {
         success: !!n.ok
       }
     },
@@ -1344,7 +1344,7 @@ let eq = function(e) {
           message: e
         }
       }
-      let n = await I(A("1", [v, O], "attributes"), {
+      let n = await S(A("1", [v, O], "attributes"), {
         body: JSON.stringify({
           delete: t
         }),
@@ -1384,13 +1384,13 @@ let eq = function(e) {
       if ("test" === e.mode || t === window.UserLeap.userId) return;
       window.UserLeap.userId = t;
       let r = window.UserLeap.visitorId,
-        i = await I(A("1", [v, O]), {
+        i = await S(A("1", [v, O]), {
           body: JSON.stringify({
             userId: t
           }),
           method: "PUT"
         });
-      i.ok ? (r !== window.UserLeap.visitorId && (null == (n = s.m.replay) || n.clearUserReplayData()), T("uid", t)) : i.reportError && (console.warn("[Sprig] (ERR-420) Failed to set user id", i.error), i.error && window.UserLeap.reportError("setUserId", i.error))
+      i.ok ? (r !== window.UserLeap.visitorId && (null == (n = s.m.replay) || n.clearUserReplayData()), I("uid", t)) : i.reportError && (console.warn("[Sprig] (ERR-420) Failed to set user id", i.error), i.error && window.UserLeap.reportError("setUserId", i.error))
     },
     async setPartnerAnonymousId(e) {
       if (window.UserLeap.debugMode && console.info("[DEBUG] Sprig setPartnerAnonymousId", e), null == e) {
@@ -1400,7 +1400,7 @@ let eq = function(e) {
           message: t
         }
       }
-      return window.UserLeap.partnerAnonymousId = e, T("aid", e), {
+      return window.UserLeap.partnerAnonymousId = e, I("aid", e), {
         success: true
       }
     },
@@ -1412,7 +1412,7 @@ let eq = function(e) {
     }),
     identifyAndTrack: async e => await t(e),
     trackPageView(e, t, n, r = true) {
-      o = e, eW(e, t, n, r)
+      o = e, eY(e, t, n, r)
     },
     applyFeedbackStyles({
       button: e = "",
@@ -1441,7 +1441,7 @@ let eq = function(e) {
         c = "web" === o["userleap-platform"];
       if (!window.UserLeap.frameId) return;
       let u = document.getElementById(window.UserLeap.frameId);
-      u && (window.UserLeap.useMobileStyling && (null != (n = window.UserLeap.windowDimensions) && n.width && (u.style.width = `${window.UserLeap.windowDimensions.width}px`), null != (r = window.UserLeap.windowDimensions) && r.height && (u.style.maxHeight = window.UserLeap.windowDimensions.height - 20 + "px"), u.contentDocument && (u.style.height = String(W(u.contentDocument, c && !l, (0, s.h)(o))[0]) + "px")), s.e.emit(s.S.SurveyDimensions, {
+      u && (window.UserLeap.useMobileStyling && (null != (n = window.UserLeap.windowDimensions) && n.width && (u.style.width = `${window.UserLeap.windowDimensions.width}px`), null != (r = window.UserLeap.windowDimensions) && r.height && (u.style.maxHeight = window.UserLeap.windowDimensions.height - 20 + "px"), u.contentDocument && (u.style.height = String(Y(u.contentDocument, c && !l, (0, s.h)(o))[0]) + "px")), s.e.emit(s.S.SurveyDimensions, {
         name: s.S.SurveyDimensions,
         contentFrameWidth: u.clientWidth,
         contentFrameHeight: u.clientHeight,
@@ -1462,7 +1462,7 @@ let eq = function(e) {
       var n, r;
       if (null != (r = null == (n = window.UserLeap) ? true : n._config) && r.optimizelyEnabled) try {
         let n = "string" == typeof e ? JSON.parse(e) : e;
-        eh.setOptimizelyExperiment(n, t)
+        em.setOptimizelyExperiment(n, t)
       } catch (e) {
         console.warn("[Sprig] Error with integrating Optimizely data"), e instanceof Error && window.UserLeap.reportError("integrateOptimizely", e)
       } else console.warn("[SPRIG] Optimizely integration is currently not enabled for your product.")
@@ -1485,10 +1485,10 @@ let eq = function(e) {
     },
     importLaunchDarklyData(e) {
       var t, n;
-      null != (n = null == (t = window.UserLeap) ? true : t._config) && n.launchDarklyEnabled ? ep.setLDFlagsVariations(e) : console.warn("[SPRIG] LaunchDarkly integration is currently not enabled for your product.")
+      null != (n = null == (t = window.UserLeap) ? true : t._config) && n.launchDarklyEnabled ? e_.setLDFlagsVariations(e) : console.warn("[SPRIG] LaunchDarkly integration is currently not enabled for your product.")
     },
     setVisitorAttribute: (e, t) => (console.warn("[Sprig] setVisitorAttribute is deprecated. Please use setAttribute"), r.setAttribute(e, t)),
-    setEmail: async e => r.setAttribute(ek, e),
+    setEmail: async e => r.setAttribute(eM, e),
     setVisitorEmail: async e => (console.warn("[Sprig] setVisitorEmail is deprecated. Please use setEmail"), r.setEmail(e)),
     _generateVideoUploadUrl: async e => (async function(e) {
       var t;
@@ -1539,9 +1539,9 @@ let eq = function(e) {
   };
   Object.assign(window.UserLeap, r)
 };
-async function eX(e, t, n = {}, r = {}) {
+async function eQ(e, t, n = {}, r = {}) {
   let i = window.__cfg && window.__cfg.mode,
-    a = S(),
+    a = T(),
     l = window.UserLeap.envId,
     c = window.document.documentElement,
     u = {
@@ -1566,7 +1566,7 @@ async function eX(e, t, n = {}, r = {}) {
       envId: l,
       ...r
     };
-  (await I(A("1", null, "errors"), {
+  (await S(A("1", null, "errors"), {
     method: "POST",
     headers: {
       "x-ul-error": window.btoa(`userleap-${Date.now()}-error`)
@@ -1576,14 +1576,14 @@ async function eX(e, t, n = {}, r = {}) {
   })).ok || console.warn("[Sprig] (ERR-444) Failed to report error to API", t)
 }
 
-function eQ(e = {}) {
+function eX(e = {}) {
   var t;
   null == (t = window.SprigLoggerCallback) || t.call(window, "Initializing Sprig");
   let n = new URLSearchParams(window.location.search).get("sprigPreviewKey") ?? "";
   async function r() {
     var t, n, r, i, o;
     if (window.UserLeap.loaded) return;
-    if (null == (t = window.SprigLoggerCallback) || t.call(window, "Loading Sprig"), window.UserLeap.reportError = eX, window.UserLeap.loaded = true, window.UserLeap._config = Object.assign({}, e, window.UserLeap.config), window.UserLeap.delayingSurvey = false, window.UserLeap._config && "object" == typeof window.UserLeap._config)
+    if (null == (t = window.SprigLoggerCallback) || t.call(window, "Loading Sprig"), window.UserLeap.reportError = eQ, window.UserLeap.loaded = true, window.UserLeap._config = Object.assign({}, e, window.UserLeap.config), window.UserLeap.delayingSurvey = false, window.UserLeap._config && "object" == typeof window.UserLeap._config)
       for (let e in window.UserLeap._config) window.UserLeap[e] = window.UserLeap._config[e];
     if (!window.UserLeap.envId) {
       if (!window.UserLeap.appId) throw Error("Missing Environment id");
@@ -1594,17 +1594,17 @@ function eQ(e = {}) {
       c = window.UserLeap.sampleRate,
       u = l.sampled;
     if (c) {
-      if (null === u && T("sampled", u = Math.random() < c), !u) return
-    } else null !== u && T("sampled", null);
+      if (null === u && I("sampled", u = Math.random() < c), !u) return
+    } else null !== u && I("sampled", null);
     window.UserLeap._API_URL || (window.UserLeap._API_URL = "https://api.sprig.com");
     let d = [...window.UserLeap._queue];
-    window.UserLeap._queue = new em(window.UserLeap, []), window.UserLeap._queue.pause();
+    window.UserLeap._queue = new eh(window.UserLeap, []), window.UserLeap._queue.pause();
     for (let e = 0; e < d.length; e++) window.UserLeap._queue.push(d[e]);
     let f = l.token;
     f ? (window.UserLeap.token = f, window.UserLeap.visitorId = l.vid ?? null, window.UserLeap.userId = l.uid ?? null, window.UserLeap.partnerAnonymousId = l.aid ?? null) : eH();
-    let _ = R((0, s.g)(window.UserLeap));
+    let p = P((0, s.g)(window.UserLeap));
     null == (n = window.SprigLoggerCallback) || n.call(window, "Sprig fetching config");
-    let p = await async function(e) {
+    let _ = await async function(e) {
       var t, n;
       let r = (0, s.g)(window.UserLeap);
       document.addEventListener("securitypolicyviolation", s.n);
@@ -1617,13 +1617,13 @@ function eQ(e = {}) {
         disabled: a.disabled
       }) : Object.assign({}, a, e)
     }(e);
-    null == (r = window.SprigLoggerCallback) || r.call(window, "Sprig fetched config"), ew({
-      isWeb: !_,
-      reportingIntervalSeconds: p.metricsReportingEnabled || p.mobileMetricsReportingEnabled ? p.metricsReportingIntervalSeconds : 0,
-      thresholds: p.metricThresholds,
+    null == (r = window.SprigLoggerCallback) || r.call(window, "Sprig fetched config"), eD({
+      isWeb: !p,
+      reportingIntervalSeconds: _.metricsReportingEnabled || _.mobileMetricsReportingEnabled ? _.metricsReportingIntervalSeconds : 0,
+      thresholds: _.metricThresholds,
       postMetrics: async e => {
         var t;
-        await I(A("1", [v], "metrics"), {
+        await S(A("1", [v], "metrics"), {
           body: e,
           method: "POST",
           headers: {
@@ -1633,29 +1633,29 @@ function eQ(e = {}) {
         })
       }
     });
-    let h = p.alwaysOnReplay ? {
+    let m = _.alwaysOnReplay ? {
       userAgent: window.navigator.userAgent,
-      surveyId: p.alwaysOnReplay.surveyId,
-      responseGroupUuid: p.alwaysOnReplay.responseGroupUuid,
+      surveyId: _.alwaysOnReplay.surveyId,
+      responseGroupUuid: _.alwaysOnReplay.responseGroupUuid,
       sdkVersion: "2.34.0",
-      maxDurationSeconds: p.alwaysOnReplay.maxDurationSeconds
+      maxDurationSeconds: _.alwaysOnReplay.maxDurationSeconds
     } : true;
     await (null == (i = s.m.replay) ? true : i.initializeReplay({
-      maxReplayDurationSeconds: p.maxReplayDurationSeconds,
+      maxReplayDurationSeconds: _.maxReplayDurationSeconds,
       maxInflightRequests: window.UserLeap.maxInflightReplayRequests ?? 2,
-      replaySettings: p.replaySettings,
+      replaySettings: _.replaySettings,
       apiUrl: window.UserLeap._API_URL,
-      alwaysOnConfig: h
-    })), a = p.replaySettings, eq(p), await ez(p), window.UserLeap._queue.unpause(), null == (o = window.SprigLoggerCallback) || o.call(window, "SdkReady"), s.e.emit(s.S.SDKReady, {
-      mobileMetricsReportingEnabled: !!p.mobileMetricsReportingEnabled,
-      metricsReportingInterval: p.metricsReportingIntervalSeconds || 0,
-      metricsThresholds: p.metricThresholds || [],
-      maxMobileReplayDurationSeconds: p.maxMobileReplayDurationSeconds,
-      mobileReplaySettings: p.mobileReplaySettings
+      alwaysOnConfig: m
+    })), a = _.replaySettings, eq(_), await ez(_), window.UserLeap._queue.unpause(), null == (o = window.SprigLoggerCallback) || o.call(window, "SdkReady"), s.e.emit(s.S.SDKReady, {
+      mobileMetricsReportingEnabled: !!_.mobileMetricsReportingEnabled,
+      metricsReportingInterval: _.metricsReportingIntervalSeconds || 0,
+      metricsThresholds: _.metricThresholds || [],
+      maxMobileReplayDurationSeconds: _.maxMobileReplayDurationSeconds,
+      mobileReplaySettings: _.mobileReplaySettings
     }), s.e.emit(s.S.VisitorIDUpdated, {
       visitorId: window.UserLeap.visitorId
     }), s.e.on(s.S.VisitorIDUpdated, () => {
-      for (let e in eM) delete eM[e]
+      for (let e in ej) delete ej[e]
     })
   }
   window.UserLeap.UPDATES = s.E, window.UserLeap("setPreviewKey", n), "complete" === document.readyState ? r() : window.attachEvent ? window.attachEvent("onload", r) : window.addEventListener("load", () => {
@@ -1746,7 +1746,7 @@ let e$ = {
       "constructor" !== e && (window.Sprig[e] = eJ.prototype[e])
     });
     let t = window.Sprig;
-    return t.appId = e.envId, t._queue = [], window.UserLeap = t, eQ(e), window.Sprig
+    return t.appId = e.envId, t._queue = [], window.UserLeap = t, eX(e), window.Sprig
   }
 };
 e$.configure

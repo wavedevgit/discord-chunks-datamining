@@ -2,8 +2,8 @@
 /** chunk id: 318766, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x,
-  u: () => P
+  Z: () => L,
+  u: () => R
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -46,7 +46,7 @@ function v(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,13 +57,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -82,12 +82,12 @@ function A(e, t) {
 }
 let C = 20,
   N = 18,
-  R = 77,
-  P = {
+  P = 77,
+  R = {
     tension: 800,
     friction: 24
   },
-  D = () => {
+  w = () => {
     let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
     return (0, Chunk54381.jsxs)("div", {
       className: Chunk345857.premiumTooltipContainer,
@@ -107,7 +107,7 @@ let C = 20,
     })
   };
 
-function w(e) {
+function D(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : N;
   return {
     "--custom-emoji-sprite-size": "".concat(t, "px"),
@@ -116,46 +116,46 @@ function w(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   var {
     className: t,
     renderButtonContents: n,
     active: a,
     onMouseEnter: c,
     onMouseLeave: u,
-    onContextMenu: _,
-    onFocus: h,
+    onContextMenu: p,
+    onFocus: m,
     spriteClassName: g,
     spriteSize: b,
     ref: O
-  } = e, I = S(e, ["className", "renderButtonContents", "active", "onMouseEnter", "onMouseLeave", "onContextMenu", "onFocus", "spriteClassName", "spriteSize", "ref"]);
-  let [A, C] = i.useState(false), [N, D] = i.useState(50), L = A || a, x = (0, m.l)(y, "emojiButton", L ? "Hovered" : "Normal"), M = w(N, b), k = i.useCallback(() => {
-    if (L) return;
-    let e = Math.floor(Math.random() * R);
-    C(true), D(e), (0, p.x)(E.qR.EmojiButtonMouseEntered)
-  }, [L, C, D]), j = i.useCallback(() => {
+  } = e, S = T(e, ["className", "renderButtonContents", "active", "onMouseEnter", "onMouseLeave", "onContextMenu", "onFocus", "spriteClassName", "spriteSize", "ref"]);
+  let [A, C] = i.useState(false), [N, w] = i.useState(50), x = A || a, L = (0, h.l)(y, "emojiButton", x ? "Hovered" : "Normal"), j = D(N, b), M = i.useCallback(() => {
+    if (x) return;
+    let e = Math.floor(Math.random() * P);
+    C(true), w(e), (0, _.x)(E.qR.EmojiButtonMouseEntered)
+  }, [x, C, w]), k = i.useCallback(() => {
     C(false)
-  }, [C]), U = i.useCallback(() => (0, p.x)(E.qR.EmojiButtonFocused), []), G = (0, l.e7)([f.Z], () => f.Z.useReducedMotion);
-  return (0, r.jsx)(d.P3F, T(v({
+  }, [C]), U = i.useCallback(() => (0, _.x)(E.qR.EmojiButtonFocused), []), G = (0, l.e7)([f.Z], () => f.Z.useReducedMotion);
+  return (0, r.jsx)(d.P3F, I(v({
     innerRef: O,
-    className: o()(x, t),
+    className: o()(L, t),
     "aria-expanded": a,
     onMouseEnter: () => {
-      k(), null == c || c()
+      M(), null == c || c()
     },
-    onMouseOver: k,
+    onMouseOver: M,
     onMouseLeave: () => {
-      j(), null == u || u()
+      k(), null == u || u()
     },
     onFocus: () => {
-      U(), null == h || h()
+      U(), null == m || m()
     },
-    onContextMenu: _
-  }, I), {
+    onContextMenu: p
+  }, S), {
     children: null != n ? n() : (0, r.jsx)(d.AMe, {
-      config: P,
+      config: R,
       to: {
-        value: +!!L
+        value: +!!x
       },
       children: e => {
         let {
@@ -163,13 +163,13 @@ function L(e) {
         } = e;
         return (0, r.jsxs)(s.animated.div, {
           className: y.spriteContainer,
-          style: T(v({}, M), {
+          style: I(v({}, j), {
             transform: t.to([0, 1], [1, 1.14]).to(e => "scale(".concat(e, ")"))
           }),
           children: [(0, r.jsx)("div", {
-            className: o()(y.sprite, y.spriteColored, L ? y.active : y.inactive)
+            className: o()(y.sprite, y.spriteColored, x ? y.active : y.inactive)
           }), (0, r.jsx)("div", {
-            className: o()(y.sprite, y.spriteGreyscale, L ? y.inactive : y.active, {
+            className: o()(y.sprite, y.spriteGreyscale, x ? y.inactive : y.active, {
               [y.reducedMotion]: G
             }, g)
           })]
@@ -179,7 +179,7 @@ function L(e) {
   }))
 }
 
-function x(e) {
+function L(e) {
   var {
     "aria-label": t = b.intl.string(b.t.lPHwuQ),
     tooltipText: n,
@@ -188,20 +188,20 @@ function x(e) {
     "aria-controls": s,
     ref: l,
     keyboardShortcut: f,
-    canShowNUXPremiumTooltip: p = false
-  } = e, m = S(e, ["aria-label", "tooltipText", "active", "onClick", "aria-controls", "ref", "keyboardShortcut", "canShowNUXPremiumTooltip"]);
-  let E = (0, h.B4)(),
-    [O, I] = (0, _.US)(E ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true),
-    T = p && O === c.z.TRIAL_NUX_EMOJI_BUTTON,
-    A = !a && T,
+    canShowNUXPremiumTooltip: _ = false
+  } = e, h = T(e, ["aria-label", "tooltipText", "active", "onClick", "aria-controls", "ref", "keyboardShortcut", "canShowNUXPremiumTooltip"]);
+  let E = (0, m.B4)(),
+    [O, S] = (0, p.US)(E ? [c.z.TRIAL_NUX_EMOJI_BUTTON] : [], true, true),
+    I = _ && O === c.z.TRIAL_NUX_EMOJI_BUTTON,
+    A = !a && I,
     C = i.useRef(null),
     N = null != l ? l : C,
-    R = e => (0, r.jsx)(L, v({
+    P = e => (0, r.jsx)(x, v({
       ref: N,
       onMouseEnter: e.onMouseEnter,
       onMouseLeave: () => {
         var t;
-        T && I(g.L.USER_DISMISS), null == (t = e.onMouseLeave) || t.call(e)
+        I && S(g.L.USER_DISMISS), null == (t = e.onMouseLeave) || t.call(e)
       },
       onFocus: e.onFocus,
       onBlur: e.onBlur,
@@ -213,23 +213,23 @@ function x(e) {
       "aria-controls": s,
       active: a,
       onContextMenu: e.onContextMenu,
-      spriteClassName: T ? y.spritePremiumColored : true
-    }, m));
-  return null == n ? R({}) : A ? (0, r.jsx)(d.aML, {
+      spriteClassName: I ? y.spritePremiumColored : true
+    }, h));
+  return null == n ? P({}) : A ? (0, r.jsx)(d.aML, {
     "data-migration-pending": true,
     targetElementRef: N,
-    text: () => (0, r.jsx)(D, {}),
+    text: () => (0, r.jsx)(w, {}),
     "aria-label": b.intl.formatToMarkdownString(b.t["/7R4q4"], {}),
     position: "top",
     shouldShow: true,
     tooltipClassName: y.premiumTooltip,
     tooltipContentClassName: y.premiumTooltipContainer,
-    children: e => R(e)
+    children: e => P(e)
   }) : (0, r.jsx)(u.u, {
     targetElementRef: N,
     shouldShow: true,
     text: n,
     keyboardShortcut: f,
-    children: R({})
+    children: P({})
   })
 }

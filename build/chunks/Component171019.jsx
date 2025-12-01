@@ -4,8 +4,8 @@ require.d(exports, {
   Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
-  Chunk831209 = require("./831209.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk597688 = require("./597688.js"),
   Chunk884697 = require("./884697.js"),
@@ -18,7 +18,7 @@ let u = e => {
     isTryItOut: u,
     isPurchaseSection: m,
     isPremiumSection: p
-  } = e, h = (0, o.Yq)(t), v = (0, l.e7)([s.Z], () => {
+  } = e, h = (0, o.Yq)(t), v = (0, i.e7)([s.Z], () => {
     let e = s.Z.getProduct(t);
     return (0, o.G1)(e)
   });
@@ -41,7 +41,7 @@ let u = e => {
       size: "xxs",
       color: "currentColor"
     }),
-    color: i.Z.BACKGROUND_ACCENT,
+    color: l.Z.colors.BACKGROUND_ACCENT.css,
     className: d.iconBadge
   })
 }

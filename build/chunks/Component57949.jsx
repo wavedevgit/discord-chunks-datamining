@@ -2,7 +2,7 @@
 /** chunk id: 57949, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  z: () => p
+  z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -46,42 +46,42 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e) {
+function _(e) {
   let {
     guildProductListing: t,
     guildId: u,
     sourceAnalyticsLocations: f
-  } = e, p = false, h = (0, i.Z)(), m = t.id, g = () => {
-    p = true
+  } = e, _ = false, m = (0, i.Z)(), h = t.id, g = () => {
+    _ = true
   };
   (0, a.ZDy)(async () => {
     let {
       default: e
     } = await n.e("88806").then(n.bind(n, 578780));
-    return n => (0, r.jsx)(e, _(d({}, n), {
+    return n => (0, r.jsx)(e, p(d({}, n), {
       applicationId: t.application_id,
-      skuId: m,
+      skuId: h,
       sourceAnalyticsLocations: f,
       guildProductContext: {
         guildProductListingId: t.id,
         guildId: u
       },
-      loadId: h,
+      loadId: m,
       onComplete: g
     }))
   }, {
     onCloseCallback: () => {
-      p || l.default.track(c.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: h,
+      _ || l.default.track(c.rMx.PAYMENT_FLOW_CANCELED, {
+        load_id: m,
         payment_type: c.Zuq[c.GZQ.ONE_TIME],
         is_gift: false,
-        sku_id: m,
+        sku_id: h,
         location_stack: Array.isArray(f) ? f : [f]
       }), (0, o.fw)(), (0, s.p)()
     },

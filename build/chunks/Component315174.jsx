@@ -311,10 +311,10 @@ let D = Chunk473749.memo(function(e) {
       } = e;
       return null != n && !t
     },
-    X = (0, p._k)({
+    Q = (0, p._k)({
       location: "guild_header"
     }),
-    Q = {
+    X = {
       bannerVisible: n,
       guild: j,
       onClick: c,
@@ -332,16 +332,16 @@ let D = Chunk473749.memo(function(e) {
         ref: z,
         className: o()(a, {
           [C.container]: true,
-          [C.clickable]: !X.isGuildEntrypointEnabled && null != c,
-          [C.selected]: !X.isGuildEntrypointEnabled && null != c && b,
+          [C.clickable]: !Q.isGuildEntrypointEnabled && null != c,
+          [C.selected]: !Q.isGuildEntrypointEnabled && null != c && b,
           [C.hasBanner]: q(),
           [C.bannerVisible]: n,
           [e]: false,
           [C.communityInfoVisible]: U || D && G,
-          [C.invitesRefresh]: X.isGuildEntrypointEnabled
+          [C.invitesRefresh]: Q.isGuildEntrypointEnabled
         }),
         onMouseDown: h,
-        onClick: X.isGuildEntrypointEnabled ? true : c,
+        onClick: Q.isGuildEntrypointEnabled ? true : c,
         onContextMenu: u,
         children: [(0, r.jsxs)("header", {
           className: o()(C.header, w, {
@@ -349,9 +349,9 @@ let D = Chunk473749.memo(function(e) {
           }),
           children: [(0, r.jsx)("div", {
             className: o()(C.headerContent, C.primaryInfo),
-            children: X.isGuildEntrypointEnabled ? (0, r.jsx)(R, S(E({}, Q), {
+            children: Q.isGuildEntrypointEnabled ? (0, r.jsx)(R, S(E({}, X), {
               children: Z
-            })) : (0, r.jsx)(T, S(E({}, Q), {
+            })) : (0, r.jsx)(T, S(E({}, X), {
               children: Z
             }))
           }), G && (0, r.jsx)(P, {

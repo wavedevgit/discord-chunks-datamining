@@ -2,7 +2,7 @@
 /** chunk id: 713316, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => h
+  w: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,43 +18,43 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk428150 = require("./428150.js");
 
-function h(e) {
+function m(e) {
   var t;
   let {
     handleClose: n
   } = e, {
     skusById: i,
-    selectedSkuId: h,
-    application: m
+    selectedSkuId: m,
+    application: h
   } = (0, c.JL)(), {
     isGift: g,
     giftRecipient: E
   } = (0, l.wD)();
-  a()(null != h, "Expected selectedSkuId"), a()(null != m, "Expected application");
-  let b = i[h];
+  a()(null != m, "Expected selectedSkuId"), a()(null != h, "Expected application");
+  let b = i[m];
   a()(null != b, "Expected sku");
-  let y = g ? _.intl.formatToPlainString(_.t["2VjPTw"], {
+  let y = g ? p.intl.formatToPlainString(p.t["2VjPTw"], {
     itemName: b.name,
     giftRecipient: null != (t = null == E ? true : E.username) ? t : "your recipient"
-  }) : _.intl.formatToPlainString(_.t.wK0IbP, {
-    applicationName: m.name,
+  }) : p.intl.formatToPlainString(p.t.wK0IbP, {
+    applicationName: h.name,
     itemName: b.name
   });
   return (0, r.jsxs)(f.C3, {
     children: [(0, r.jsx)(d.Z, {}), (0, r.jsx)(u.Z, {}), (0, r.jsxs)("div", {
-      className: p.confirmation,
+      className: _.confirmation,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-xxl/bold",
-        className: p.confirmationHeader,
+        className: _.confirmationHeader,
         children: "Success!"
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         children: y
       }), (0, r.jsx)("div", {
-        className: p.divider
+        className: _.divider
       }), (0, r.jsx)(o.zxk, {
         onClick: n,
-        text: _.intl.string(_.t.cpT0Cq),
+        text: p.intl.string(p.t.cpT0Cq),
         fullWidth: true
       })]
     })]

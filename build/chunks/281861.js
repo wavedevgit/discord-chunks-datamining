@@ -8,12 +8,12 @@ require.r(exports), require.d(exports, {
   ParsingResult: () => Chunk86465.G5,
   ReferenceWithTimezone: () => Chunk86465.X2,
   Weekday: () => Chunk894186.OG,
-  casual: () => T,
+  casual: () => I,
   createCasualConfiguration: () => N,
-  createConfiguration: () => R,
+  createConfiguration: () => P,
   parse: () => A,
   parseDate: () => C,
-  strict: () => S
+  strict: () => T
 });
 var Chunk717319 = require("./717319.js"),
   Chunk201129 = require("./201129.js"),
@@ -36,25 +36,25 @@ var Chunk717319 = require("./717319.js"),
   Chunk420192 = require("./420192.js"),
   Chunk331175 = require("./331175.js"),
   Chunk628269 = require("./628269.js");
-let T = new Chunk201129.k(N()),
-  S = new Chunk201129.k(R(true));
+let I = new Chunk201129.k(N()),
+  T = new Chunk201129.k(P(true));
 
 function A(e, t, n) {
-  return T.parse(e, t, n)
+  return I.parse(e, t, n)
 }
 
 function C(e, t, n) {
-  return T.parseDate(e, t, n)
+  return I.parseDate(e, t, n)
 }
 
 function N(e = true) {
-  let t = R(false, e);
-  return t.parsers.unshift(new c.Z), t.parsers.unshift(new u.Z), t.parsers.unshift(new b.Z), t.parsers.unshift(new h.Z), t.parsers.unshift(new O.Z), t.parsers.unshift(new y.Z), t
+  let t = P(false, e);
+  return t.parsers.unshift(new c.Z), t.parsers.unshift(new u.Z), t.parsers.unshift(new b.Z), t.parsers.unshift(new m.Z), t.parsers.unshift(new O.Z), t.parsers.unshift(new y.Z), t
 }
 
-function R(e = true, t = true) {
+function P(e = true, t = true) {
   return (0, r.l)({
-    parsers: [new d.Z(t), new f.Z, new p.Z, new h.Z, new _.Z, new E.Z, new m.Z, new g.Z(e), new v.Z(e), new I.Z(e)],
+    parsers: [new d.Z(t), new f.Z, new _.Z, new m.Z, new p.Z, new E.Z, new h.Z, new g.Z(e), new v.Z(e), new S.Z(e)],
     refiners: [new l.Z, new s.Z]
   }, e)
 }

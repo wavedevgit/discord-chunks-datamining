@@ -2,7 +2,7 @@
 /** chunk id: 800927, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./804061.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -49,18 +49,18 @@ function u(e, t) {
 }
 let d = /\n{2,}$/,
   f = /(?:^|\n)( *)$/,
-  _ = "(?:[*-]|\\d+\\.)",
-  p = "(%INDENT_CAPTURE_PATTERN%)(" + _ + ") +",
-  h = RegExp("^" + p.replace("%INDENT_CAPTURE_PATTERN%", " *")),
-  m = p + "[^\\n]*(?:\\n(?!%INDENT_CAPTURE_PATTERN%" + _ + " )[^\\n]*)*(\n|$)",
+  p = "(?:[*-]|\\d+\\.)",
+  _ = "(%INDENT_CAPTURE_PATTERN%)(" + p + ") +",
+  m = RegExp("^" + _.replace("%INDENT_CAPTURE_PATTERN%", " *")),
+  h = _ + "[^\\n]*(?:\\n(?!%INDENT_CAPTURE_PATTERN%" + p + " )[^\\n]*)*(\n|$)",
   g = / *\n$/,
-  E = RegExp("^( *)(" + _ + ") [\\s\\S]+?(?:\\n(?! )(?!\\1" + _ + " )|$)"),
+  E = RegExp("^( *)(" + p + ") [\\s\\S]+?(?:\\n(?! )(?!\\1" + p + " )|$)"),
   b = /^[ \t\v\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+$/,
   y = 10,
   O = 1,
   v = 1e9,
-  I = e => e.map(e => ("text" === e.type && null != e.content && (e.content = e.content.replace(/\n+\s*$/, "")), e)),
-  T = u(l({}, o().defaultRules.list), {
+  S = e => e.map(e => ("text" === e.type && null != e.content && (e.content = e.content.replace(/\n+\s*$/, "")), e)),
+  I = u(l({}, o().defaultRules.list), {
     requiredFirstCharacters: " *-0123456789".split(""),
     match: (e, t) => {
       if (!t.allowList || t._listLevel >= y + 1) return null;
@@ -73,31 +73,31 @@ let d = /\n{2,}$/,
         a = r.length > 1,
         o = a ? Math.min(v, Math.max(O, +r)) : true,
         s = e[0].replace(d, "\n"),
-        c = h.exec(s),
+        c = m.exec(s),
         f = null != c ? c[0].length : 0,
-        _ = null != c ? c[1].length : 0,
-        p = " {".concat(_, ",").concat(_ + 1, "}"),
-        E = RegExp(m.replaceAll("%INDENT_CAPTURE_PATTERN%", p), "gm"),
+        p = null != c ? c[1].length : 0,
+        _ = " {".concat(p, ",").concat(p + 1, "}"),
+        E = RegExp(h.replaceAll("%INDENT_CAPTURE_PATTERN%", _), "gm"),
         b = RegExp("^ {1," + f + "}", "gm"),
         y = s.match(E);
       i()(null != y, "markup list items can not be parsed.");
-      let T = false;
+      let I = false;
       return {
         ordered: a,
         start: o,
         items: y.map((e, r) => {
-          let i, a = e.replace(h, "").replace(b, ""),
+          let i, a = e.replace(m, "").replace(b, ""),
             o = r === y.length - 1,
-            s = false !== a.indexOf("\n\n") || o && T;
-          T = s;
+            s = false !== a.indexOf("\n\n") || o && I;
+          I = s;
           let c = n.inline,
             d = n._list,
             f = n._listLevel;
           n._list = true, n._listLevel = (null != f ? f : 0) + 1, s ? (n.inline = false, i = a.replace(g, "\n\n")) : (n.inline = true, i = a.replace(g, ""));
-          let _ = I(t(i, u(l({}, n), {
+          let p = S(t(i, u(l({}, n), {
             allowHeading: false
           })));
-          return n.inline = c, n._list = d, n._listLevel = f, _
+          return n.inline = c, n._list = d, n._listLevel = f, p
         })
       }
     }

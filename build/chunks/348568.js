@@ -115,10 +115,10 @@ var o = Chunk65183.Map,
               })
             })
           }), null != f) {
-          var _ = e.get(f);
+          var p = e.get(f);
           s(f, i, function(e) {
             return e.merge({
-              children: _.getChildKeys().concat(t.getChildKeys())
+              children: p.getChildKeys().concat(t.getChildKeys())
             })
           })
         }
@@ -132,7 +132,7 @@ var o = Chunk65183.Map,
       }
     })
   },
-  _ = function(e, t, n) {
+  p = function(e, t, n) {
     if (0 === t)
       for (; t < n;) e = e.shift(), t++;
     else if (n === e.count())
@@ -151,21 +151,21 @@ module.exports = function(e, t) {
     c = t.getStartOffset(),
     u = t.getEndKey(),
     d = t.getEndOffset(),
-    p = a.get(s),
-    h = a.get(u),
-    m = p instanceof r,
+    _ = a.get(s),
+    m = a.get(u),
+    h = _ instanceof r,
     g = [];
-  if (m) {
-    var E = h.getChildKeys(),
+  if (h) {
+    var E = m.getChildKeys(),
       b = l(u, a);
-    h.getNextSiblingKey() && (g = g.concat(b)), E.isEmpty() || (g = g.concat(b.concat([u]))), g = g.concat(l(i(h, a), a))
+    m.getNextSiblingKey() && (g = g.concat(b)), E.isEmpty() || (g = g.concat(b.concat([u]))), g = g.concat(l(i(m, a), a))
   }
-  n = p === h ? _(p.getCharacterList(), c, d) : p.getCharacterList().slice(0, c).concat(h.getCharacterList().slice(d));
-  var y = p.merge({
-      text: p.getText().slice(0, c) + h.getText().slice(d),
+  n = _ === m ? p(_.getCharacterList(), c, d) : _.getCharacterList().slice(0, c).concat(m.getCharacterList().slice(d));
+  var y = _.merge({
+      text: _.getText().slice(0, c) + m.getText().slice(d),
       characterList: n
     }),
-    O = m && 0 === c && 0 === d && h.getParentKey() === s && null == h.getPrevSiblingKey() ? o([
+    O = h && 0 === c && 0 === d && m.getParentKey() === s && null == m.getPrevSiblingKey() ? o([
       [s, null]
     ]) : a.toSeq().skipUntil(function(e, t) {
       return t === s
@@ -181,7 +181,7 @@ module.exports = function(e, t) {
     v = a.merge(O).filter(function(e) {
       return !!e
     });
-  return m && p !== h && (v = f(v, p, h, a)), e.merge({
+  return h && _ !== m && (v = f(v, _, m, a)), e.merge({
     blockMap: v,
     selectionBefore: t,
     selectionAfter: t.merge({

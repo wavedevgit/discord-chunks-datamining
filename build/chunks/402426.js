@@ -17,14 +17,14 @@ var Chunk473749 = require("./473749.js"),
   Chunk410401 = require("./410401.js"),
   Chunk51926 = require("./51926.js"),
   Chunk701262 = require("./701262.js");
-let m = e => {
+let h = e => {
     let t = (0, l.rO)(),
       [n, i] = (0, r.useState)({
         modalGlowEntry: true,
         modalGlowIdle: true,
         modalGlowExit: true
       }),
-      [o, m] = (0, r.useState)(false),
+      [o, h] = (0, r.useState)(false),
       [g, E] = (0, r.useState)(false),
       [b, y] = (0, r.useState)(false),
       O = (0, r.useRef)(true);
@@ -32,9 +32,9 @@ let m = e => {
       O.current = false
     }), []);
     let v = (0, r.useCallback)(() => null != n.modalGlowEntry && null != n.modalGlowIdle && null != n.modalGlowExit, [n.modalGlowEntry, n.modalGlowIdle, n.modalGlowExit]),
-      I = (0, r.useCallback)(async () => {
+      S = (0, r.useCallback)(async () => {
         if (!v() && !b) {
-          y(true), E(false), m(false);
+          y(true), E(false), h(false);
           try {
             let e = Date.now(),
               [n, r, o] = await Promise.all([a.tn.get({
@@ -42,11 +42,11 @@ let m = e => {
                 binary: true,
                 rejectWithError: true
               }), a.tn.get({
-                url: t ? f.Z : _.Z,
+                url: t ? f.Z : p.Z,
                 binary: true,
                 rejectWithError: true
               }), a.tn.get({
-                url: t ? p.Z : h.Z,
+                url: t ? _.Z : m.Z,
                 binary: true,
                 rejectWithError: true
               })]);
@@ -54,7 +54,7 @@ let m = e => {
               modalGlowEntry: window.URL.createObjectURL(n.body),
               modalGlowExit: window.URL.createObjectURL(r.body),
               modalGlowIdle: window.URL.createObjectURL(o.body)
-            }), m(true), s.default.track(c.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCH_SUCCESS, {
+            }), h(true), s.default.track(c.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCH_SUCCESS, {
               load_duration_ms: Date.now() - e
             }))
           } catch (e) {
@@ -65,8 +65,8 @@ let m = e => {
         }
       }, [v, b, t]);
     return (0, r.useEffect)(() => {
-      e && I()
-    }, [e, I]), (0, r.useEffect)(() => () => {
+      e && S()
+    }, [e, S]), (0, r.useEffect)(() => () => {
       null != n.modalGlowEntry && window.URL.revokeObjectURL(n.modalGlowEntry), null != n.modalGlowIdle && window.URL.revokeObjectURL(n.modalGlowIdle), null != n.modalGlowExit && window.URL.revokeObjectURL(n.modalGlowExit)
     }, [n.modalGlowEntry, n.modalGlowIdle, n.modalGlowExit]), {
       mediaUrls: n,
@@ -83,7 +83,7 @@ let m = e => {
       mediaUrls: t,
       isSuccess: n,
       isLoading: a
-    } = m(e), {
+    } = h(e), {
       status: l
     } = (0, o.VG8)(e ? i.Z : null);
     return {

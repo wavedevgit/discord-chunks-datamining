@@ -39,7 +39,7 @@ var f = function(e) {
       ref: e
     })
   },
-  _ = function(e) {
+  p = function(e) {
     return u ? o.createElement("span", {
       key: "B",
       "data-text": "true",
@@ -71,7 +71,7 @@ module.exports = function(e) {
     var e = this;
     return "" === this.props.children ? this._forceFlag ? f(function(t) {
       return e._node = t
-    }) : _(function(t) {
+    }) : p(function(t) {
       return e._node = t
     }) : o.createElement("span", {
       key: this._forceFlag ? "A" : "B",

@@ -30,10 +30,10 @@ function l(e) {
     nodes: u,
     locales: d,
     values: f,
-    dataFormatters: _,
-    formatConfig: p,
-    currentPluralValue: h,
-    keyPrefix: m
+    dataFormatters: p,
+    formatConfig: _,
+    currentPluralValue: m,
+    keyPrefix: h
   } = e;
   if (1 === u.length && "string" == typeof u[0]) return void n.pushLiteralText(u[0]);
   for (let e = 0; e < u.length; e++) {
@@ -44,8 +44,8 @@ function l(e) {
     }
     let E = g[0];
     if (E === i.FormatJsNodeType.Pound) {
-      if ("number" == typeof h) {
-        let e = _.formatNumber(h);
+      if ("number" == typeof m) {
+        let e = p.formatNumber(m);
         n.pushLiteralText(e)
       }
       continue
@@ -59,21 +59,21 @@ function l(e) {
         break;
       case i.FormatJsNodeType.Date: {
         let e = g[2],
-          t = e in p.date ? p.date[e] : null != e ? (0, r.parseDateTimeSkeleton)(e) : true;
-        n.pushLiteralText(_.formatDate(y, t));
+          t = e in _.date ? _.date[e] : null != e ? (0, r.parseDateTimeSkeleton)(e) : true;
+        n.pushLiteralText(p.formatDate(y, t));
         break
       }
       case i.FormatJsNodeType.Time: {
         let e = g[2],
-          t = e in p.time ? p.time[e] : null != e ? (0, r.parseDateTimeSkeleton)(e) : true;
-        n.pushLiteralText(_.formatTime(y, t));
+          t = e in _.time ? _.time[e] : null != e ? (0, r.parseDateTimeSkeleton)(e) : true;
+        n.pushLiteralText(p.formatTime(y, t));
         break
       }
       case i.FormatJsNodeType.Number: {
         let e = g[2],
-          i = e in p.number ? p.number[e] : null != e ? (0, r.parseNumberSkeleton)((0, r.parseNumberSkeletonFromString)(e)) : true,
+          i = e in _.number ? _.number[e] : null != e ? (0, r.parseNumberSkeleton)((0, r.parseNumberSkeletonFromString)(e)) : true,
           a = "number" != typeof y ? y : y * (null != (t = null == i ? true : i.scale) ? t : 1);
-        n.pushLiteralText(_.formatNumber(a, i));
+        n.pushLiteralText(p.formatNumber(a, i));
         break
       }
       case i.FormatJsNodeType.Tag: {
@@ -83,26 +83,26 @@ function l(e) {
             Builder: n.constructor,
             nodes: t,
             locales: d,
-            dataFormatters: _,
-            formatConfig: p,
+            dataFormatters: p,
+            formatConfig: _,
             values: f,
-            currentPluralValue: h,
-            keyPrefix: `${m}.${e}`
+            currentPluralValue: m,
+            keyPrefix: `${h}.${e}`
           }),
           o = null != r ? c({
             Builder: n.constructor,
             nodes: r,
             locales: d,
-            dataFormatters: _,
-            formatConfig: p,
+            dataFormatters: p,
+            formatConfig: _,
             values: f,
-            currentPluralValue: h,
-            keyPrefix: `${m}.${e}-control`
+            currentPluralValue: m,
+            keyPrefix: `${h}.${e}-control`
           }) : [];
         if (a(b)) n.pushRichTextTag(b, i, o);
         else {
           if ("function" != typeof y) throw `expected a function type for a Tag formatting value, ${b}. got ${typeof y}: ${y}`;
-          let t = y(i, `${m}.${e}`);
+          let t = y(i, `${h}.${e}`);
           for (let e of t = Array.isArray(t) ? t : [t]) "string" == typeof e ? n.pushLiteralText(e) : n.pushObject(e)
         }
         break
@@ -116,10 +116,10 @@ function l(e) {
           builder: n,
           nodes: i,
           locales: d,
-          dataFormatters: _,
-          formatConfig: p,
+          dataFormatters: p,
+          formatConfig: _,
           values: f,
-          keyPrefix: `${m}.${e}`
+          keyPrefix: `${h}.${e}`
         });
         break
       }
@@ -130,7 +130,7 @@ function l(e) {
           a = (() => {
             var e;
             let n = `=${y}`;
-            return n in t ? t[n] : null != (e = t[_.getPluralRules({
+            return n in t ? t[n] : null != (e = t[p.getPluralRules({
               type: i
             }).select(y - (null != r ? r : 0))]) ? e : t.other
           })();
@@ -139,11 +139,11 @@ function l(e) {
           builder: n,
           nodes: a,
           locales: d,
-          dataFormatters: _,
-          formatConfig: p,
+          dataFormatters: p,
+          formatConfig: _,
           values: f,
           currentPluralValue: y - (null != r ? r : 0),
-          keyPrefix: `${m}.${e}`
+          keyPrefix: `${h}.${e}`
         })
       }
     }

@@ -21,7 +21,7 @@ let o = {
         description: l,
         showIcons: c,
         withMixedDisabledOptions: u
-      } = e, [d, f] = i.useState(["option1"]), _ = i.useMemo(() => [{
+      } = e, [d, f] = i.useState(["option1"]), p = i.useMemo(() => [{
         label: null != s ? "".concat(s, " 1") : "Option 1",
         value: "option1",
         description: null == l || "" === l ? true : l,
@@ -51,23 +51,23 @@ let o = {
         description: null == l || "" === l ? true : l,
         leadingIcon: c ? a.d3s : true,
         disabled: !u && true
-      }].slice(0, Math.max(1, Math.min(5, n))), [n, s, l, c, u]), p = i.useCallback(e => {
+      }].slice(0, Math.max(1, Math.min(5, n))), [n, s, l, c, u]), _ = i.useCallback(e => {
         f(e)
-      }, []), h = i.useCallback(() => {
-        f(_.map(e => e.value))
-      }, [_]), m = i.useCallback(() => {
+      }, []), m = i.useCallback(() => {
+        f(p.map(e => e.value))
+      }, [p]), h = i.useCallback(() => {
         f([])
       }, []), g = i.useCallback(() => {
-        _.length > 0 && f([_[0].value])
-      }, [_]);
+        p.length > 0 && f([p[0].value])
+      }, [p]);
       return (0, r.jsxs)(a.Kqy, {
         direction: "vertical",
         gap: "md",
         children: [(0, r.jsx)(a.cOn, {
           selectedValues: d,
           label: o,
-          onChange: p,
-          options: _,
+          onChange: _,
+          options: p,
           disabled: t
         }), (0, r.jsxs)(a.xvT, {
           variant: "text-sm/normal",
@@ -79,19 +79,19 @@ let o = {
             variant: "secondary",
             size: "sm",
             text: "Select All",
-            onClick: h,
-            disabled: t || 0 === _.length
+            onClick: m,
+            disabled: t || 0 === p.length
           }), (0, r.jsx)(a.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Select First",
             onClick: g,
-            disabled: t || 0 === _.length
+            disabled: t || 0 === p.length
           }), (0, r.jsx)(a.zxk, {
             variant: "primary",
             size: "sm",
             text: "Clear All",
-            onClick: m,
+            onClick: h,
             disabled: t
           })]
         })]

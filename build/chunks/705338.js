@@ -18,12 +18,12 @@ async function l(e) {
     slug: u
   } = e, d = null;
   if (null != n) {
-    var f, _;
-    t = null == (f = n.guild) ? true : f.id, d = new Set(null == (_ = n.guild) ? true : _.features)
+    var f, p;
+    t = null == (f = n.guild) ? true : f.id, d = new Set(null == (p = n.guild) ? true : p.features)
   }
   if (null == t) return;
-  let p = a.Z.getGuild(t);
-  (null == p ? true : p.joinedAt) == null && (null == d || d.has(s.GuildFeatures.PREVIEW_ENABLED) ? await (0, o.Ub)(t, {}, {
+  let _ = a.Z.getGuild(t);
+  (null == _ ? true : _.joinedAt) == null && (null == d || d.has(s.GuildFeatures.PREVIEW_ENABLED) ? await (0, o.Ub)(t, {}, {
     shouldNavigate: false
   }) : null != n && await r.ZP.acceptInvite({
     inviteKey: n.code,

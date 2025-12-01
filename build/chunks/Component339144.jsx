@@ -72,8 +72,8 @@ let D = Chunk473749.memo(function(e) {
       {
         parentAnalyticsLocation: q
       } = (0, g.ZP)(),
-      X = (0, x.Z)(H, "rtc-activity-panel"),
-      Q = R(H, V, B),
+      Q = (0, x.Z)(H, "rtc-activity-panel"),
+      X = R(H, V, B),
       J = i.useCallback(() => {
         var e;
         o()(null != V, "Received null activity"), P.default.track(Z.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
@@ -161,8 +161,8 @@ let D = Chunk473749.memo(function(e) {
     }, []), i.useEffect(() => {
       el && (eu(false), null != es.current && (clearTimeout(es.current), es.current = null))
     }, [el]);
-    let ed = null == X || null == H ? null : (0, r.jsx)(M, {
-        guildId: X,
+    let ed = null == Q || null == H ? null : (0, r.jsx)(M, {
+        guildId: Q,
         applicationId: H.id
       }),
       ef = (null != U || null == B || (0, f.R)()) && (D || E) ? (D ? (a = false, s = () => {
@@ -180,7 +180,7 @@ let D = Chunk473749.memo(function(e) {
           icon: p
         })
       })) : null,
-      ep = Q && null == B ? (0, r.jsx)(N.Z, {
+      ep = X && null == B ? (0, r.jsx)(N.Z, {
         ref: z,
         tooltipText: T.intl.string(T.t["hC/Zey"]),
         onClick: J,

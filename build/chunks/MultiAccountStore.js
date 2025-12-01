@@ -3,8 +3,8 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  Z: () => R,
-  q: () => m
+  Z: () => P,
+  q: () => h
 }), require("./539854.js");
 var a, Chunk213919 = require("./213919.js"),
   Chunk442837 = require("./442837.js"),
@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,12 +46,12 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var m = function(e) {
+var h = function(e) {
   return e[e.INVALID = 0] = "INVALID", e[e.VALIDATING = 1] = "VALIDATING", e[e.VALID = 2] = "VALID", e
 }({});
 let g = [],
@@ -114,7 +114,7 @@ function v(e) {
   null != r && (r.avatar = t.avatar, r.username = t.username, r.discriminator = t.discriminator, g = n)
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = g.slice(),
     r = n.find(t => {
       let {
@@ -125,7 +125,7 @@ function I(e, t) {
   null != r && (r.tokenStatus = t, g = n)
 }
 
-function T(e) {
+function I(e) {
   let {
     from: t,
     to: n
@@ -133,7 +133,7 @@ function T(e) {
   g = (0, c.aB)(g, t, n)
 }
 
-function S(e) {
+function T(e) {
   let {
     multiAccountMobileExperimentEnabled: t
   } = e;
@@ -145,7 +145,7 @@ function A(e) {
     userId: t,
     pushSyncToken: n
   } = e;
-  g = g.map(e => e.id === t ? h(_({}, e), {
+  g = g.map(e => e.id === t ? m(p({}, e), {
     pushSyncToken: n
   }) : e)
 }
@@ -154,7 +154,7 @@ function C(e) {
   let {
     invalidPushSyncTokens: t
   } = e;
-  g = g.map(e => null != e.pushSyncToken && t.includes(e.pushSyncToken) ? h(_({}, e), {
+  g = g.map(e => null != e.pushSyncToken && t.includes(e.pushSyncToken) ? m(p({}, e), {
     pushSyncToken: null
   }) : e)
 }
@@ -220,16 +220,16 @@ f(N, "displayName", "MultiAccountStore"), f(N, "persistKey", "MultiAccountStore"
     canUseMultiAccountMobile: false
   }
 }]);
-let R = new N(Chunk570140.Z, {
+let P = new N(Chunk570140.Z, {
   CONNECTION_OPEN: b,
   LOGOUT: y,
-  MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => I(e.userId, 1),
-  MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS: e => I(e.userId, 2),
-  MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE: e => I(e.userId, 0),
+  MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST: e => S(e.userId, 1),
+  MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS: e => S(e.userId, 2),
+  MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE: e => S(e.userId, 0),
   MULTI_ACCOUNT_REMOVE_ACCOUNT: e => O(e.userId),
-  MULTI_ACCOUNT_MOVE_ACCOUNT: T,
+  MULTI_ACCOUNT_MOVE_ACCOUNT: I,
   CURRENT_USER_UPDATE: v,
-  MULTI_ACCOUNT_MOBILE_EXPERIMENT_UPDATE: S,
+  MULTI_ACCOUNT_MOBILE_EXPERIMENT_UPDATE: T,
   MULTI_ACCOUNT_UPDATE_PUSH_SYNC_TOKEN: A,
   MULTI_ACCOUNT_INVALIDATE_PUSH_SYNC_TOKENS: C
 })

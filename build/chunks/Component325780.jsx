@@ -73,8 +73,8 @@ function f(e) {
     onChange: l,
     focusProps: d,
     hasIcon: f = false
-  } = e, _ = u(e, ["checked", "disabled", "id", "onChange", "focusProps", "hasIcon"]);
-  return (0, r.jsx)(i.g, c(s({}, _), {
+  } = e, p = u(e, ["checked", "disabled", "id", "onChange", "focusProps", "hasIcon"]);
+  return (0, r.jsx)(i.g, c(s({}, p), {
     id: o,
     disabled: n,
     layout: "horizontal",

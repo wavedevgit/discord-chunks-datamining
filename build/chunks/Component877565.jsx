@@ -77,10 +77,10 @@ function f(e) {
     onClick: s,
     titleWithQuery: c,
     titleWithoutQuery: f,
-    Component: _,
-    getProps: p,
-    getQuery: h,
-    key: m,
+    Component: p,
+    getProps: _,
+    getQuery: m,
+    key: h,
     indexOffset: g = 0,
     headerClassName: E,
     headerTrailingContent: b,
@@ -89,8 +89,8 @@ function f(e) {
   if (null == y && (null == a || 0 === a.length)) return null;
   let O = null == a ? true : a.map((e, t) => {
     let r = t + g,
-      a = p(e, r);
-    return (0, i.createElement)(_, u(l({
+      a = _(e, r);
+    return (0, i.createElement)(p, u(l({
       onClick: s,
       onHover: o,
       selected: n === r,
@@ -104,9 +104,9 @@ function f(e) {
       titleWithQuery: c,
       titleWithoutQuery: f,
       query: t,
-      getQuery: h,
+      getQuery: m,
       headerClassName: E,
       headerTrailingContent: b
     }) : null, O, y]
-  }, m)
+  }, h)
 }

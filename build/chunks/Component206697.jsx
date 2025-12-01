@@ -82,11 +82,11 @@ function v() {
         color: "text-muted",
         children: Chunk388032.intl.string(Chunk388032.t.F6u3E3)
       })]
-    }), (0, Chunk54381.jsx)(I, {})]
+    }), (0, Chunk54381.jsx)(S, {})]
   })
 }
 
-function I() {
+function S() {
   let e = (0, Chunk74538.Px)(Chunk474936.PremiumTypes.TIER_2),
     t = Chunk473749.useCallback(() => (0, Chunk481060.ZDy)(async () => {
       let {
@@ -96,7 +96,7 @@ function I() {
         source: c.Z.FOR_LATER_POPOUT
       }, t))
     }), []),
-    _ = Chunk388032.intl.format(Chunk388032.t.qXh3fo, {
+    p = Chunk388032.intl.format(Chunk388032.t.qXh3fo, {
       nitroTierName: module,
       onClick: exports
     });

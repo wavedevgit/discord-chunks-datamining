@@ -5,12 +5,12 @@ require.d(exports, {
   Az: () => E,
   IZ: () => b,
   PP: () => g,
-  Ub: () => m,
-  c6: () => T,
+  Ub: () => h,
+  c6: () => I,
   m9: () => v,
-  mT: () => S,
+  mT: () => T,
   qn: () => O,
-  rC: () => I,
+  rC: () => S,
   tI: () => y
 }), require("./35282.js"), require("./953529.js"), require("./388685.js"), require("./664751.js"), require("./544891.js");
 var Chunk749210 = require("./749210.js"),
@@ -32,7 +32,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,28 +56,28 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function m(e, t) {
+async function h(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     {
       channelId: a,
       onSuccess: l,
       joinSource: u,
       loadId: f,
-      shouldNavigate: p = true
+      shouldNavigate: _ = true
     } = n,
-    m = (0, o.s1)(),
+    h = (0, o.s1)(),
     g = c.Z.getGuild(e),
     E = {
       state: {
         analyticsSource: t
       }
     };
-  null != g && null != g.joinedAt ? p && (null == a ? (0, s.X)(e, E) : (0, i.Z)(d.Z5c.CHANNEL(e, a, n.messageId), h(_({}, E), {
+  null != g && null != g.joinedAt ? _ && (null == a ? (0, s.X)(e, E) : (0, i.Z)(d.Z5c.CHANNEL(e, a, n.messageId), m(p({}, E), {
     navigationReplace: true,
     openChannel: true
   }))) : (await r.Z.joinGuild(e, {
@@ -85,11 +85,11 @@ async function m(e, t) {
     source: u,
     loadId: f,
     lurkLocation: null == t ? true : t.page
-  }), p && await r.Z.transitionToGuildSync(e, h(_({}, E), {
+  }), _ && await r.Z.transitionToGuildSync(e, m(p({}, E), {
     welcomeModalChannelId: a,
     navigationReplace: null != a,
     openChannel: null != a,
-    search: m.location.search
+    search: h.location.search
   }), a, n.messageId)), null == l || l()
 }
 
@@ -167,7 +167,7 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     categoryId: t
   } = e;
@@ -176,7 +176,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     loadId: t,
     searchId: n,
@@ -198,7 +198,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let t = a.Z.getLoadId(e);
   u.default.track(d.rMx.GUILD_DISCOVERY_GUILD_JOIN_CLICKED, {
     guild_id: e,

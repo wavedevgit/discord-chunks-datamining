@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   CO: () => c,
-  NU: () => S,
+  NU: () => T,
   X2: () => C,
-  cb: () => I,
+  cb: () => S,
   d$: () => f,
   tw: () => u,
   yn: () => A
@@ -28,10 +28,10 @@ let o = (e, t) => {
   u = e => s(e, "image"),
   d = /\.(webp|gif|avif)$/i,
   f = e => o(e, d),
-  _ = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
-  p = /\.(mp3|m4a|wav|ogg|opus|flac)$/i,
-  h = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
-  m = ((0, Chunk358085.isIOS)() || (0, Chunk358085.isAndroid)(), /\.(webm)$/i),
+  p = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
+  _ = /\.(mp3|m4a|wav|ogg|opus|flac)$/i,
+  m = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
+  h = ((0, Chunk358085.isIOS)() || (0, Chunk358085.isAndroid)(), /\.(webm)$/i),
   g = /\.(mp4|mov)$/i,
   E = /\.(mp4|webm|mov)$/i,
   b = /\.(mp4|webm|mov)$/i,
@@ -39,11 +39,11 @@ let o = (e, t) => {
   O = (0, Chunk358085.isIOS)() ? g : (0, Chunk358085.isAndroid)() ? E : b,
   v = e => (0, a.W)() && i.Z.getConfig({
     location: "isWebPlayerVideoUrl"
-  }).enabled && o(e, m),
-  I = e => o(e, O) || v(e),
-  T = e => null != e && (0, a.W)() && i.Z.getConfig({
+  }).enabled && o(e, h),
+  S = e => o(e, O) || v(e),
+  I = e => null != e && (0, a.W)() && i.Z.getConfig({
     location: "isWebPlayerVideoFile"
-  }).enabled && m.test(e),
-  S = e => null != e && (O.test(e) || T(e)),
+  }).enabled && h.test(e),
+  T = e => null != e && (O.test(e) || I(e)),
   A = e => null != e && y.test(e),
   C = e => s(e, "video")

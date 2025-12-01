@@ -30,52 +30,52 @@ function g(e) {
   } = e, b = (0, o.e7)([c.Z], () => c.Z.getGuild(E.guild_id)), y = (0, u.ZP)(n), O = g(y), {
     avatarSrc: v,
     eventHandlers: {
-      onMouseEnter: I,
-      onMouseLeave: T
+      onMouseEnter: S,
+      onMouseLeave: I
     }
   } = (0, f.m)(true);
   return (0, r.jsx)("div", {
-    onMouseEnter: I,
-    onMouseLeave: T,
-    children: (0, r.jsx)(_.Z, {
-      className: a()(m.mainContainer, {
-        [m.compact]: i
+    onMouseEnter: S,
+    onMouseLeave: I,
+    children: (0, r.jsx)(p.Z, {
+      className: a()(h.mainContainer, {
+        [h.compact]: i
       }),
       iconNode: i ? null : (0, r.jsx)(f.S, {
         src: v
       }),
-      iconContainerClassName: m.iconContainer,
+      iconContainerClassName: h.iconContainer,
       compact: i,
       children: (0, r.jsxs)("div", {
-        className: a()(m.content, {
-          [m.compact]: i
+        className: a()(h.content, {
+          [h.compact]: i
         }),
         children: [(0, r.jsx)(d.nD, {
           message: n,
-          messageClassname: m.spanCorrection,
-          className: a()(m.usernameContainer, m.spanCorrection, {
-            [m.compact]: i
+          messageClassname: h.spanCorrection,
+          className: a()(h.usernameContainer, h.spanCorrection, {
+            [h.compact]: i
           }),
           username: (0, r.jsxs)("div", {
-            className: m.spanCorrection,
+            className: h.spanCorrection,
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
-              className: m.username,
-              children: h.intl.string(h.t.hG1StD)
+              className: h.username,
+              children: m.intl.string(m.t.hG1StD)
             }), (0, r.jsx)(l.Z, {
-              type: p.Hb.SYSTEM_DM,
-              className: m.systemTag
+              type: _.Hb.SYSTEM_DM,
+              className: h.systemTag
             })]
           }),
           compact: i,
           showTimestamp: true
         }), (0, r.jsx)("div", {
-          className: a()(m.__invalid_messageContent, {
-            [m.compact]: i
+          className: a()(h.__invalid_messageContent, {
+            [h.compact]: i
           }),
-          children: h.intl.format(h.t.W0UBI3, {
+          children: m.intl.format(m.t.W0UBI3, {
             username: y.nick,
             usernameHook: O,
             guildName: null != (t = null == b ? true : b.name) ? t : ""

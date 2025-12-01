@@ -42,7 +42,7 @@ function d() {
     mediaSessionId: null != (e = Chunk19780.Z.getMediaSessionId()) ? module : true,
     rtcConnectionId: Chunk19780.Z.getRTCConnectionId(),
     mediaContext: Chunk46973.Yn.DEFAULT
-  }, _())
+  }, p())
 }
 
 function f(e) {
@@ -58,10 +58,10 @@ function f(e) {
     mediaContext: r.Yn.STREAM,
     streamKey: e,
     userId: a
-  }, _())
+  }, p())
 }
 
-function _() {
+function p() {
   var e, t, n;
   return {
     videoDeviceName: null == (e = Chunk131951.Z.getVideoDevices()[Chunk131951.Z.getVideoDeviceId()]) ? true : module.name,

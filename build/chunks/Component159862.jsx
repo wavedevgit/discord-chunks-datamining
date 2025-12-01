@@ -2,8 +2,8 @@
 /** chunk id: 159862, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => E,
-  Z: () => y
+  W: () => g,
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,7 +11,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk206074 = require("./206074.js"),
   Chunk728345 = require("./728345.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk379357 = require("./379357.js"),
   Chunk442550 = require("./442550.jsx"),
@@ -20,25 +19,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk800371 = require("./800371.js"),
   Chunk451419 = require("./451419.js");
-let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk297781.wO, Chunk297781.f, Chunk297781.n8, Chunk297781.v1, Chunk297781.pQ],
-  b = e => {
+let g = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk297781.wO, Chunk297781.f, Chunk297781.n8, Chunk297781.v1, Chunk297781.pQ],
+  E = e => {
     var t;
     let {
       entry: n,
       channel: i,
-      selected: b,
-      hovered: y,
-      isFirstApplicationOccurrence: O
+      selected: E,
+      hovered: b,
+      isFirstApplicationOccurrence: y
     } = e, {
-      largeImage: v
-    } = (0, d.rv)({
+      largeImage: O
+    } = (0, u.rv)({
       entry: n,
       showCoverImage: false
     }), {
-      data: I
-    } = (0, l.IX)(n.extra.application_id), T = (0, s.q)(I) && O, S = T ? [a.z.CLOUD_PLAY_NEW_BADGE] : [], [A] = (0, u.US)(S);
+      data: v
+    } = (0, l.IX)(n.extra.application_id), S = (0, s.q)(v) && y, I = S ? [a.z.CLOUD_PLAY_NEW_BADGE] : [], [T] = (0, c.US)(I);
     return (0, r.jsxs)(p.Zb, {
-      selected: b,
+      selected: E,
       usesCardRows: true,
       children: [(0, r.jsxs)(p.lS, {
         children: [(0, r.jsxs)(p.e$, {
@@ -48,21 +47,21 @@ let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
             guildId: i.guild_id
           }), (0, r.jsx)(p.ll, {
             children: n.extra.game_name
-          }), (0, r.jsx)(_.Gk, {
-            location: _.Gt.CARD,
-            children: E.map((e, t) => (0, r.jsx)(e, {
+          }), (0, r.jsx)(f.Gk, {
+            location: f.Gt.CARD,
+            children: g.map((e, t) => (0, r.jsx)(e, {
               entry: n,
-              hovered: y
+              hovered: b
             }, t))
           })]
-        }), (0, r.jsx)(f.f, {
-          alt: null != (t = null == v ? true : v.text) ? t : null == v ? true : v.alt,
-          src: null == v ? true : v.src,
+        }), (0, r.jsx)(d.f, {
+          alt: null != (t = null == O ? true : O.text) ? t : null == O ? true : O.alt,
+          src: null == O ? true : O.src,
           size: 48,
-          className: g.thumbnail,
-          showTooltip: (null == v ? true : v.text) != null
+          className: h.thumbnail,
+          showTooltip: (null == O ? true : O.text) != null
         })]
-      }), T && (0, r.jsxs)(r.Fragment, {
+      }), S && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(p.xx, {}), (0, r.jsxs)(p.lS, {
           className: m.cloudPlaySection,
           children: [(0, r.jsxs)("div", {
@@ -73,14 +72,14 @@ let E = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
             }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
               color: "text-secondary",
-              children: h.intl.string(h.t["5HiF2i"])
+              children: _.intl.string(_.t["5HiF2i"])
             })]
-          }), A === a.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {
-            text: h.intl.string(h.t.y2b7CA),
-            color: c.Z.BG_BRAND
+          }), T === a.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {
+            text: _.intl.string(_.t.y2b7CA),
+            color: o.TVs.colors.BG_BRAND.css
           })]
         })]
       })]
     })
   },
-  y = Chunk473749.memo(b)
+  b = Chunk473749.memo(E)

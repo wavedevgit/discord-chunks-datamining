@@ -2,7 +2,7 @@
 /** chunk id: 711758, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -60,7 +60,7 @@ function f(e) {
   } = e;
   u.ignoreTimestamps[t] = n
 }
-class _ extends(r = Chunk442837.ZP.PersistedStore) {
+class p extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     let n = null != (t = null == e ? true : e.ignoreTimestamps) ? t : {};
@@ -75,7 +75,7 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
     return u.ignoreTimestamps
   }
 }
-o(_, "displayName", "IgnoreNoticeStore"), o(_, "persistKey", "IgnoreNoticeStore");
-let p = new _(Chunk570140.Z, {
+o(p, "displayName", "IgnoreNoticeStore"), o(p, "persistKey", "IgnoreNoticeStore");
+let _ = new p(Chunk570140.Z, {
   RELATIONSHIP_IGNORE_USER_SUCCESS: f
 })

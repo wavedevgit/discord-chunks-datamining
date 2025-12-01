@@ -2,10 +2,10 @@
 /** chunk id: 134432, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q4: () => R,
-  Vv: () => T,
+  Q4: () => P,
+  Vv: () => I,
   oO: () => A,
-  po: () => S,
+  po: () => T,
   x_: () => Chunk921948.Z
 }), require("./388685.js"), require("./35282.js");
 var Chunk392711 = require("./392711.js"),
@@ -20,7 +20,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk921948 = require("./921948.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,7 +29,7 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -39,7 +39,7 @@ function h(e, t) {
   }
   return n
 }
-let m = 5,
+let h = 5,
   g = /\.webp($|\?|#)/i,
   E = /\.avif($|\?|#)/i,
   b = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
@@ -53,9 +53,9 @@ function O(e, t) {
     backoff: n
   } = e;
   return async () => {
-    await u.Z.isOnline(), n.fails < m ? n.fail(() => {
+    await u.Z.isOnline(), n.fails < h ? n.fail(() => {
       v(e)
-    }) : I(true, e, t)
+    }) : S(true, e, t)
   }
 }
 
@@ -65,11 +65,11 @@ function v(e) {
     let {
       backoff: n
     } = e;
-    null != n && n.succeed(), I(false, e, t)
+    null != n && n.succeed(), S(false, e, t)
   }, t.src = e.url
 }
 
-function I(e, t, n) {
+function S(e, t, n) {
   let {
     callbacks: r,
     url: i
@@ -90,12 +90,12 @@ function I(e, t, n) {
   null != r && r.forEach(n => n(e, t))
 }
 
-function T(e) {
+function I(e) {
   let t = y.get(e);
   return null != t && t.loaded
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = y.get(e);
   if (null != n && n.loaded) return null != t && u.Z.awaitOnline().then(() => {
     null != n && null != n.callbacks && n.callbacks.forEach(t => {
@@ -104,7 +104,7 @@ function S(e, t) {
         loaded: true
       })
     })
-  }), _.dG4;
+  }), p.dG4;
   {
     let r;
     return null == n && (n = {
@@ -141,21 +141,21 @@ function N(e) {
     format: l = null,
     quality: u = null,
     animated: f = false,
-    srcIsAnimated: p = false
+    srcIsAnimated: _ = false
   } = e;
   if (t.startsWith("data:image") || d.Z.isDiscordCdnUrl(t)) return t;
-  let [h, m] = C(t);
-  null != l && (m.format = l), null != u && (m.quality = u), f && p && (g.test(t) || E.test(t)) && (m.animated = true), E.test(t) && (m.format = "webp");
+  let [m, h] = C(t);
+  null != l && (h.format = l), null != u && (h.quality = u), f && _ && (g.test(t) || E.test(t)) && (h.animated = true), E.test(t) && (h.format = "webp");
   let b = (0, c.Tj)({
     width: a,
     height: o,
-    maxWidth: _.hiG,
-    maxHeight: _.hiG
+    maxWidth: p.hiG,
+    maxHeight: p.hiG
   });
-  return a = b.width, o = b.height, (a !== n || o !== r) && (m.width = 0 | a, m.height = 0 | o), i().isEmpty(m) || (h += "?" + s.stringify(m)), h
+  return a = b.width, o = b.height, (a !== n || o !== r) && (h.width = 0 | a, h.height = 0 | o), i().isEmpty(h) || (m += "?" + s.stringify(h)), m
 }
 
-function R(e) {
+function P(e) {
   let {
     src: t,
     width: n,
@@ -167,15 +167,15 @@ function R(e) {
     quality: l = null,
     animated: c = false,
     srcIsAnimated: u = false
-  } = e, d = n, _ = r;
-  o < 1 && (d = Math.round(n * o), _ = Math.round(r * o)), null != i && (d = Math.min(d, i)), null != a && (_ = Math.min(_, a));
-  let p = (0, f.Z)();
+  } = e, d = n, p = r;
+  o < 1 && (d = Math.round(n * o), p = Math.round(r * o)), null != i && (d = Math.min(d, i)), null != a && (p = Math.min(p, a));
+  let _ = (0, f.Z)();
   return N({
     src: t,
     sourceWidth: n,
     sourceHeight: r,
-    targetWidth: d *= p,
-    targetHeight: _ *= p,
+    targetWidth: d *= _,
+    targetHeight: p *= _,
     format: s,
     quality: l,
     animated: c,

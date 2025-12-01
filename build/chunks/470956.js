@@ -44,11 +44,11 @@ function g(e, t, n) {
 }
 
 function E(e, t) {
-  let n = (0, a.e7)([f.Z, _.Z], () => e === _.Z.getChannelId() ? f.Z.getDesyncedVoiceStates() : null),
+  let n = (0, a.e7)([f.Z, p.Z], () => e === p.Z.getChannelId() ? f.Z.getDesyncedVoiceStates() : null),
     i = (0, a.Wu)([s.Z], () => null == e ? [] : [...s.Z.getGuildRingingUsers(e)]),
-    o = (0, a.Wu)([p.default], () => i.map(e => p.default.getUser(e)).filter(m.lm)),
+    o = (0, a.Wu)([_.default], () => i.map(e => _.default.getUser(e)).filter(h.lm)),
     c = (0, a.e7)([u.Z], () => u.Z.getBasicChannel(e)),
-    h = r.useMemo(() => o.map(e => ({
+    m = r.useMemo(() => o.map(e => ({
       voiceState: new l.Z(e.id),
       user: e,
       member: (null == c ? true : c.guild_id) != null ? d.ZP.getMember(null == c ? true : c.guild_id, e.id) : null,
@@ -56,7 +56,7 @@ function E(e, t) {
       comparator: e.globalName,
       _isPlaceholder: false
     })), [o, null == c ? true : c.guild_id]);
-  return r.useMemo(() => g(n, t, h), [n, t, h])
+  return r.useMemo(() => g(n, t, m), [n, t, m])
 }
 
 function b(e, t) {
@@ -68,7 +68,7 @@ function b(e, t) {
 }
 
 function y(e) {
-  return (0, a.e7)([f.Z, _.Z], () => e === _.Z.getChannelId() ? f.Z.getDesyncedParticipants() : null)
+  return (0, a.e7)([f.Z, p.Z], () => e === p.Z.getChannelId() ? f.Z.getDesyncedParticipants() : null)
 }
 
 function O(e, t) {
@@ -78,19 +78,19 @@ function O(e, t) {
 
 function v(e, t) {
   let n = (0, a.e7)([c.default], () => c.default.getId() === t),
-    i = (0, a.e7)([_.Z], () => _.Z.getChannelId()),
+    i = (0, a.e7)([p.Z], () => p.Z.getChannelId()),
     o = r.useRef(null),
     [s, l] = r.useState(false),
     [u, d] = r.useState(false),
-    f = (0, a.e7)([_.Z, h.Z], () => null != t && null != e && _.Z.getChannelId() === e && null != h.Z.isInChannel(e, t) && _.Z.isUserConnected(t)),
-    p = (0, a.e7)([_.Z, h.Z], () => null != t && null != e && _.Z.getChannelId() === e && null != h.Z.isInChannel(e, t) && !_.Z.isUserConnected(t));
+    f = (0, a.e7)([p.Z, m.Z], () => null != t && null != e && p.Z.getChannelId() === e && null != m.Z.isInChannel(e, t) && p.Z.isUserConnected(t)),
+    _ = (0, a.e7)([p.Z, m.Z], () => null != t && null != e && p.Z.getChannelId() === e && null != m.Z.isInChannel(e, t) && !p.Z.isUserConnected(t));
   return r.useEffect(() => {
     f && d(true)
   }, [f]), r.useEffect(() => {
     i !== e && d(false)
-  }, [e, i]), r.useEffect(() => (p && null == o.current ? o.current = setTimeout(() => {
+  }, [e, i]), r.useEffect(() => (_ && null == o.current ? o.current = setTimeout(() => {
     o.current = null, l(true)
   }, 250) : (clearTimeout(o.current), o.current = null, l(false)), () => {
     clearTimeout(o.current), o.current = null
-  }), [p]), !n && u && s
+  }), [_]), !n && u && s
 }

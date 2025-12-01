@@ -2,11 +2,11 @@
 /** chunk id: 612226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q2: () => B,
-  Rv: () => W,
+  Q2: () => Z,
+  Rv: () => Y,
   U6: () => F,
-  UD: () => Z,
-  ZP: () => Y,
+  UD: () => B,
+  ZP: () => W,
   oT: () => H
 }), require("./415506.js"), require("./539854.js");
 var Chunk2818 = require("./2818.js"),
@@ -46,11 +46,11 @@ var Chunk2818 = require("./2818.js"),
   Chunk547420 = require("./547420.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  B = function(e) {
+  Z = function(e) {
     return e.NAVIGATION = "NAVIGATION", e.CHAT = "CHAT", e.VOICE_AND_VIDEO = "VOICE_AND_VIDEO", e.MISCELLANEOUS = "MISCELLANEOUS", e.MESSAGE = "MESSAGE", e.DND = "DND", e
   }({});
 
-function Z(e) {
+function B(e) {
   switch (e) {
     case "NAVIGATION":
       return G.intl.string(G.t["yGE+jg"]);
@@ -137,7 +137,7 @@ let H = {
   [Chunk981631.EkH.BROWSER_DEVTOOLS]: Chunk775774.p
 };
 
-function W() {
+function Y() {
   let e = [{
       description: Chunk388032.intl.string(Chunk388032.t.bx4Uyz),
       binds: V(Chunk981631.EkH.SERVER_PREV, Chunk981631.EkH.SERVER_NEXT),
@@ -343,4 +343,4 @@ function W() {
     group: "CHAT"
   }), module
 }
-let Y = H
+let W = H

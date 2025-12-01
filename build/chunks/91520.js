@@ -17,7 +17,7 @@ var r, i, a, o, s, Chunk127849 = require("./127849.js"),
   O = Chunk242606("queueMicrotask");
 if (!O) {
   var v = new Chunk557655,
-    I = function() {
+    S = function() {
       var e, t;
       for (Chunk426625 && (e = b.domain) && module.exit(); t = v.get();) try {
         exports()
@@ -27,12 +27,12 @@ if (!O) {
       module && module.enter()
     };
   Chunk266782 || Chunk426625 || Chunk787898 || !g || !E ? !Chunk225991 && y && y.resolve ? ((o = y.resolve(true)).constructor = y, s = Chunk48657(o.then, o), r = function() {
-    s(I)
+    s(S)
   }) : Chunk426625 ? r = function() {
-    b.nextTick(I)
+    b.nextTick(S)
   } : (d = Chunk48657(d, Chunk127849), r = function() {
-    d(I)
-  }) : (i = true, a = E.createTextNode(""), new g(I).observe(a, {
+    d(S)
+  }) : (i = true, a = E.createTextNode(""), new g(S).observe(a, {
     characterData: true
   }), r = function() {
     a.data = i = !i

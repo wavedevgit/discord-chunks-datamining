@@ -50,44 +50,44 @@ function f(e, t, n) {
     let {
       doc: i,
       raw: a
-    } = _(t, n);
+    } = p(t, n);
     e._raw = (e._raw || "") + a;
-    let o = m(i);
-    return (0, r.wB)(e, S(g(o, true))), true
+    let o = h(i);
+    return (0, r.wB)(e, T(g(o, true))), true
   } catch (e) {
     returnfalse
   }
 }
 
-function _(e, t) {
+function p(e, t) {
   let n = a.Z.get(t);
   if (!n) throw console.warn("Warning: DOMParser is not available. It is needed to be able to parse XMP tags."), Error();
   let i = "string" == typeof e ? e : (0, r.oH)(e, 0, e.byteLength);
   return {
-    doc: h(n, p(i)),
+    doc: m(n, _(i)),
     raw: i
   }
 }
 
-function p(e) {
+function _(e) {
   return e.replace(/^.+(<\?xpacket begin)/, "$1").replace(/(<\?xpacket end=".*"\?>).+$/, "$1")
 }
 
-function h(e, t, n = false) {
+function m(e, t, n = false) {
   try {
     let n = e.parseFromString(t, "application/xml"),
       r = n.getElementsByTagName("parsererror");
     if (r.length > 0) throw new l(r[0].textContent);
     return n
   } catch (r) {
-    if ("ParseError" === r.name && (0, o.U)(r) && !n) return h(e, (0, o.v)(t), true);
+    if ("ParseError" === r.name && (0, o.U)(r) && !n) return m(e, (0, o.v)(t), true);
     throw r
   }
 }
 
-function m(e) {
+function h(e) {
   for (let t = 0; t < e.childNodes.length; t++) {
-    if ("x:xmpmeta" === e.childNodes[t].tagName) return m(e.childNodes[t]);
+    if ("x:xmpmeta" === e.childNodes[t].tagName) return h(e.childNodes[t]);
     if ("rdf:RDF" === e.childNodes[t].tagName) return e.childNodes[t]
   }
   throw Error()
@@ -116,7 +116,7 @@ function O(e) {
   let t = {};
   return e.forEach(e => {
     if (v(e)) {
-      let n = I(e);
+      let n = S(e);
       true !== t[e.nodeName] ? (Array.isArray(t[e.nodeName]) || (t[e.nodeName] = [t[e.nodeName]]), t[e.nodeName].push(n)) : t[e.nodeName] = n
     }
   }), t
@@ -126,26 +126,26 @@ function v(e) {
   return e.nodeName && "#text" !== e.nodeName
 }
 
-function I(e) {
+function S(e) {
   return {
-    attributes: T(e),
+    attributes: I(e),
     value: g(e)
   }
 }
 
-function T(e) {
+function I(e) {
   let t = {};
   for (let n = 0; n < e.attributes.length; n++) t[e.attributes[n].nodeName] = decodeURIComponent(escape(e.attributes[n].value));
   return t
 }
 
-function S(e) {
+function T(e) {
   let t = {};
   if ("string" == typeof e) return e;
   for (let n in e) {
     let i = e[n];
     Array.isArray(i) || (i = [i]), i.forEach(e => {
-      (0, r.wB)(t, A(e.attributes)), "object" == typeof e.value && (0, r.wB)(t, x(e.value))
+      (0, r.wB)(t, A(e.attributes)), "object" == typeof e.value && (0, r.wB)(t, L(e.value))
     })
   }
   return t
@@ -154,10 +154,10 @@ function S(e) {
 function A(e) {
   let t = {};
   for (let n in e) try {
-    C(n) && (t[R(n)] = {
+    C(n) && (t[P(n)] = {
       value: e[n],
       attributes: {},
-      description: P(e[n], n)
+      description: R(e[n], n)
     })
   } catch (e) {}
   return t
@@ -171,16 +171,16 @@ function N(e) {
   return "xmlns" === e.split(":")[0]
 }
 
-function R(e) {
+function P(e) {
   return /^MicrosoftPhoto(_\d+_)?:Rating$/i.test(e) ? "RatingPercent" : e.split(":")[1]
 }
 
-function P(e, t) {
+function R(e, t) {
   if (Array.isArray(e)) {
-    let n = D(e);
+    let n = w(e);
     return t && "function" == typeof i.Z[t] ? i.Z[t](e, n) : n
   }
-  if ("object" == typeof e) return w(e);
+  if ("object" == typeof e) return D(e);
   try {
     if (t && "function" == typeof i.Z[t]) return i.Z[t](e);
     return decodeURIComponent(escape(e))
@@ -189,41 +189,41 @@ function P(e, t) {
   }
 }
 
-function D(e) {
-  return e.map(e => true !== e.value ? P(e.value) : P(e)).join(", ")
+function w(e) {
+  return e.map(e => true !== e.value ? R(e.value) : R(e)).join(", ")
 }
 
-function w(e) {
+function D(e) {
   let t = [];
-  for (let n in e) t.push(`${L(n)}: ${P(e[n].value)}`);
+  for (let n in e) t.push(`${x(n)}: ${R(e[n].value)}`);
   return t.join("; ")
 }
 
-function L(e) {
+function x(e) {
   return "CiAdrCity" === e ? "CreatorCity" : "CiAdrCtry" === e ? "CreatorCountry" : "CiAdrExtadr" === e ? "CreatorAddress" : "CiAdrPcode" === e ? "CreatorPostalCode" : "CiAdrRegion" === e ? "CreatorRegion" : "CiEmailWork" === e ? "CreatorWorkEmail" : "CiTelWork" === e ? "CreatorWorkPhone" : "CiUrlWork" === e ? "CreatorWorkUrl" : e
 }
 
-function x(e) {
+function L(e) {
   let t = {};
   for (let n in e) try {
-    N(n) || (t[R(n)] = M(e[n], n))
+    N(n) || (t[P(n)] = j(e[n], n))
   } catch (e) {}
   return t
 }
 
-function M(e, t) {
-  return j(e) ? U(e, t) : k(e) ? {
+function j(e, t) {
+  return k(e) ? U(e, t) : M(e) ? {
     value: "",
     attributes: {},
     description: ""
-  } : G(e) ? B(e, t) : H(e) ? W(e, t) : Y(e) ? K(e, t) : z(e) ? X(e, t) : J(e, t)
+  } : G(e) ? Z(e, t) : H(e) ? Y(e, t) : W(e) ? K(e, t) : z(e) ? Q(e, t) : J(e, t)
 }
 
-function k(e) {
+function M(e) {
   return "Resource" === e.attributes["rdf:parseType"] && "string" == typeof e.value && "" === e.value.trim()
 }
 
-function j(e) {
+function k(e) {
   return Array.isArray(e)
 }
 
@@ -235,26 +235,26 @@ function G(e) {
   return "Resource" === e.attributes["rdf:parseType"] && true !== e.value["rdf:value"] || true !== e.value["rdf:Description"] && true !== e.value["rdf:Description"].value["rdf:value"]
 }
 
-function B(e, t) {
-  let n = Z(e);
-  true !== e.value["rdf:Description"] && (e = e.value["rdf:Description"]), (0, r.wB)(n, Z(e), F(e));
+function Z(e, t) {
+  let n = B(e);
+  true !== e.value["rdf:Description"] && (e = e.value["rdf:Description"]), (0, r.wB)(n, B(e), F(e));
   let i = V(e);
   return {
     value: i,
     attributes: n,
-    description: P(i, t)
+    description: R(i, t)
   }
 }
 
-function Z(e) {
+function B(e) {
   let t = {};
-  for (let n in e.attributes) "rdf:parseType" === n || "rdf:resource" === n || N(n) || (t[R(n)] = e.attributes[n]);
+  for (let n in e.attributes) "rdf:parseType" === n || "rdf:resource" === n || N(n) || (t[P(n)] = e.attributes[n]);
   return t
 }
 
 function F(e) {
   let t = {};
-  for (let n in e.value) "rdf:value" === n || N(n) || (t[R(n)] = e.value[n].value);
+  for (let n in e.value) "rdf:value" === n || N(n) || (t[P(n)] = e.value[n].value);
   return t
 }
 
@@ -266,15 +266,15 @@ function H(e) {
   return "Resource" === e.attributes["rdf:parseType"] || true !== e.value["rdf:Description"] && true === e.value["rdf:Description"].value["rdf:value"]
 }
 
-function W(e, t) {
+function Y(e, t) {
   let n = {
     value: {},
     attributes: {}
   };
-  return true !== e.value["rdf:Description"] && ((0, r.wB)(n.value, A(e.value["rdf:Description"].attributes)), (0, r.wB)(n.attributes, Z(e)), e = e.value["rdf:Description"]), (0, r.wB)(n.value, x(e.value)), n.description = P(n.value, t), n
+  return true !== e.value["rdf:Description"] && ((0, r.wB)(n.value, A(e.value["rdf:Description"].attributes)), (0, r.wB)(n.attributes, B(e)), e = e.value["rdf:Description"]), (0, r.wB)(n.value, L(e.value)), n.description = R(n.value, t), n
 }
 
-function Y(e) {
+function W(e) {
   return 0 === Object.keys(e.value).length && true === e.attributes["xml:lang"] && true === e.attributes["rdf:resource"]
 }
 
@@ -283,7 +283,7 @@ function K(e, t) {
   return {
     value: n,
     attributes: {},
-    description: P(n, t)
+    description: R(n, t)
   }
 }
 
@@ -295,29 +295,29 @@ function q(e) {
   return e["rdf:Bag"] || e["rdf:Seq"] || e["rdf:Alt"]
 }
 
-function X(e, t) {
+function Q(e, t) {
   let n = q(e.value).value["rdf:li"],
-    r = Z(e),
+    r = B(e),
     i = [];
   return true === n ? n = [] : Array.isArray(n) || (n = [n]), n.forEach(e => {
-    i.push(Q(e))
+    i.push(X(e))
   }), {
     value: i,
     attributes: r,
-    description: P(i, t)
+    description: R(i, t)
   }
 }
 
-function Q(e) {
-  return G(e) ? B(e) : H(e) ? W(e).value : Y(e) ? K(e).value : J(e)
+function X(e) {
+  return G(e) ? Z(e) : H(e) ? Y(e).value : W(e) ? K(e).value : J(e)
 }
 
 function J(e, t) {
-  let n = $(e) || S(e.value);
+  let n = $(e) || T(e.value);
   return {
     value: n,
-    attributes: Z(e),
-    description: P(n, t)
+    attributes: B(e),
+    description: R(n, t)
   }
 }
 

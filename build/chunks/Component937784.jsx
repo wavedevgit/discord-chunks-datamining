@@ -2,7 +2,7 @@
 /** chunk id: 937784, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => I
+  e: () => S
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -60,18 +60,18 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function I(e, t) {
+async function S(e, t) {
   let {
     channelId: b,
     analyticsLocations: O,
-    messageReference: I
-  } = t, T = l.Z.getChannel(b);
-  if (null != T) {
-    if (null != I) {
-      let e = u.Z.getMessage(I.channel_id, I.message_id);
+    messageReference: S
+  } = t, I = l.Z.getChannel(b);
+  if (null != I) {
+    if (null != S) {
+      let e = u.Z.getMessage(S.channel_id, S.message_id);
       null != e && (0, s.fE)({
         message: e,
-        channel: T,
+        channel: I,
         shouldMention: false,
         showMentionToggle: false
       })
@@ -80,18 +80,18 @@ async function I(e, t) {
       let t = [],
         n = [];
       for (let r of e) {
-        var S;
-        let e = await (0, m.rO)(r),
-          i = null != (S = r.name) ? S : (0, g.yl)(f.default.extractTimestamp(r.id)),
-          a = (0, h.Z)(i);
-        if (r.type === p.NJ.CLIP || r.type === p.NJ.VOICE_CLIP) {
+        var T;
+        let e = await (0, h.rO)(r),
+          i = null != (T = r.name) ? T : (0, g.yl)(f.default.extractTimestamp(r.id)),
+          a = (0, m.Z)(i);
+        if (r.type === _.NJ.CLIP || r.type === _.NJ.VOICE_CLIP) {
           let i = "".concat("" !== a ? a : "clip", ".mp4");
           t.push(new File([e], i, {
             type: "video/mp4"
           })), n.push({
             clip: r
           })
-        } else if (r.type === p.NJ.SCREENSHOT) {
+        } else if (r.type === _.NJ.SCREENSHOT) {
           let r = "".concat("" !== a ? a : "screenshot", ".jpeg");
           t.push(new File([e], r, {
             type: "image/jpeg"
@@ -99,13 +99,13 @@ async function I(e, t) {
         }
         d.default.track(E.rMx.CLIP_SHARED, {
           location_stack: O,
-          guild_id: T.guild_id,
-          channel_id: T.id,
-          channel_type: T.type,
+          guild_id: I.guild_id,
+          channel_id: I.id,
+          channel_type: I.type,
           application_id: r.applicationId,
           clip_id: r.id
         })
-      }(0, _.d)(t, T, c.d.ChannelMessage, {
+      }(0, p.d)(t, I, c.d.ChannelMessage, {
         filesMetadata: n,
         origin: "unknown:clip_share"
       }), i.pT()

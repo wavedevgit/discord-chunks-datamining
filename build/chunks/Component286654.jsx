@@ -2,7 +2,7 @@
 /** chunk id: 286654, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  z: () => p
+  z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,7 +50,7 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t, i, o) {
+function p(e, t, i, o) {
   let c = s.default.getCurrentUser();
   (null != t || l.ZP.canUseCustomCallSounds(c)) && (0, a.jW)(e, async () => {
     let {
@@ -64,11 +64,11 @@ function _(e, t, i, o) {
   })
 }
 
-function p(e, t) {
+function _(e, t) {
   return i.useCallback(n => {
     n.stopPropagation();
     let r = o.Z.getGuild(e.guildId),
       i = s.default.getCurrentUser();
-    (null != r || l.ZP.canUseCustomCallSounds(i)) && _(n, r, e, t)
+    (null != r || l.ZP.canUseCustomCallSounds(i)) && p(n, r, e, t)
   }, [e, t])
 }

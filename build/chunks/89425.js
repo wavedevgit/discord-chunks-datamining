@@ -18,22 +18,22 @@ async function f(e) {
     channelId: t,
     timeoutMs: n = u,
     bypassChangeModal: f = false
-  } = e, _ = o.Z.getChannel(t);
-  if (null == _ || !await i.Z.handleVoiceConnect({
+  } = e, p = o.Z.getChannel(t);
+  if (null == p || !await i.Z.handleVoiceConnect({
       bypassGuildIdCheck: true,
       bypassChangeModal: f,
-      channel: _,
+      channel: p,
       connected: c.Z.isInChannel(t),
       needSubscriptionToAccess: (0, a.$)(t, o.Z, r.Z, s.Z).needSubscriptionToAccess
     })) returnfalse;
-  let p = new Promise((e, r) => {
+  let _ = new Promise((e, r) => {
     let i = setTimeout(() => {
       r(new d("Joining voice channel has timed out."))
     }, n);
     l.Z.addConditionalChangeListener(() => l.Z.getVoiceChannelId() !== t || (clearTimeout(i), e(), false))
   });
   try {
-    await p
+    await _
   } catch (e) {
     if (e instanceof d) returnfalse;
     throw e

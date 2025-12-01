@@ -30,27 +30,27 @@ let u = {
       color: a,
       size: u = d.SIZE_32,
       icon: f,
-      onMouseDown: _,
-      onClick: p,
-      disabled: h,
-      focusProps: m
+      onMouseDown: p,
+      onClick: _,
+      disabled: m,
+      focusProps: h
     } = e;
     return (0, r.jsx)(l.u, {
       asContainer: true,
       text: i,
-      shouldShow: !h,
+      shouldShow: !m,
       children: (0, r.jsx)(s.P3F, {
         innerRef: t,
         "aria-label": i,
-        "aria-disabled": h,
+        "aria-disabled": m,
         className: o()(n, c.button, a, u, {
-          [c.disabled]: h
+          [c.disabled]: m
         }),
-        onMouseDown: _,
+        onMouseDown: p,
         onClick: e => {
-          p(e)
+          _(e)
         },
-        focusProps: m,
+        focusProps: h,
         children: f
       })
     })

@@ -3,8 +3,8 @@
 "use strict";
 require.r(exports), require.d(exports, {
   USER_SETTINGS_MODAL_KEY: () => y,
-  getUserSettingsSectionsByWebUserSettings: () => S,
-  getWebUserSettingsByUserSettingsSections: () => T,
+  getUserSettingsSectionsByWebUserSettings: () => T,
+  getWebUserSettingsByUserSettingsSections: () => I,
   openUserSettings: () => O,
   openUserSettingsFromParsedUrl: () => A
 }), require("./388685.js"), require("./35282.js");
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk526665 = require("./526665.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,20 +29,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -54,7 +54,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -79,14 +79,14 @@ function b(e, t) {
 let y = "USER_SETTINGS_MODAL_MODAL_KEY";
 async function O(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
-      section: _.oAB.ACCOUNT
+      section: p.oAB.ACCOUNT
     },
     s = arguments.length > 2 ? arguments[2] : true;
   var {
     subsection: l,
     stackingBehavior: u = "replaceAll"
   } = t, d = E(t, ["subsection", "stackingBehavior"]);
-  a.Z.dispatch(h({
+  a.Z.dispatch(m({
     type: "USER_SETTINGS_MODAL_OPEN",
     subsection: null != l ? l : null
   }, d)), (0, f.yP)("openUserSettings") ? (0, i.nfh)(y) ? c.Z.setState({
@@ -95,14 +95,14 @@ async function O(e) {
     let {
       default: t
     } = await Promise.all([n.e("9452"), n.e("88569")]).then(n.bind(n, 245286));
-    return n => (0, r.jsx)(t, g(h({}, n), {
+    return n => (0, r.jsx)(t, g(m({}, n), {
       target: e
     }))
   }, {
     modalKey: y,
     stackingBehavior: u,
     stackNextByDefault: true
-  }) : (0, o.jN)(_.S9g.USER_SETTINGS), null == s || s()
+  }) : (0, o.jN)(p.S9g.USER_SETTINGS), null == s || s()
 }
 
 function v(e) {
@@ -111,27 +111,27 @@ function v(e) {
     subsection: n,
     urlOrigin: r
   } = e;
-  u.default.track(_.rMx.USER_SETTINGS_URL_PARSED, {
+  u.default.track(p.rMx.USER_SETTINGS_URL_PARSED, {
     user_settings_section: t,
     user_settings_subsection: n,
     user_settings_url_origin: r
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     section: t,
     subsection: n,
     urlOrigin: r
   } = e;
-  u.default.track(_.rMx.USER_SETTINGS_URL_PARSING_FAILED, {
+  u.default.track(p.rMx.USER_SETTINGS_URL_PARSING_FAILED, {
     user_settings_section: t,
     user_settings_subsection: n,
     user_settings_url_origin: r
   })
 }
 
-function T() {
+function I() {
   let e = (0, Chunk526665.KV)("getWebUserSettingFromSection"),
     t = new Map([
       [Chunk981631.oAB.ACCOUNT, Chunk313789.n.ACCOUNT_PANEL],
@@ -170,8 +170,8 @@ function T() {
   return module && !(0, Chunk924557.w2)() && exports.delete(Chunk981631.oAB.CLIPS), exports
 }
 
-function S() {
-  let e = T(),
+function T() {
+  let e = I(),
     t = new Map;
   for (let [n, r] of module.entries()) exports.set(Chunk54381, require);
   return exports
@@ -196,15 +196,15 @@ function A(e) {
     })
   };
   if ((0, f.yP)("renderUserSettingsRedirector")) {
-    let e = T(),
+    let e = I(),
       r = e.get(t.section);
-    if (null == r) I({
+    if (null == r) S({
       section: t.section,
       subsection: t.subsection,
       urlOrigin: n
     }), i();
     else {
-      let n = null != t.subsection && "" !== t.subsection ? e.get(_.oAB[t.subsection]) : null;
+      let n = null != t.subsection && "" !== t.subsection ? e.get(p.oAB[t.subsection]) : null;
       O(null != n ? n : r, {
         section: t.section,
         subsection: t.subsection

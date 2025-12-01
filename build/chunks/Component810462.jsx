@@ -17,14 +17,14 @@ let d = Chunk473749.forwardRef(function(e, t) {
     store: n,
     hasSendableExpressions: d,
     onKeyDown: f,
-    gridNavigatorId: _,
-    expressionsListRef: p,
-    defaultSearchPlaceholder: h,
-    emptySearchPlaceholder: m
+    gridNavigatorId: p,
+    expressionsListRef: _,
+    defaultSearchPlaceholder: m,
+    emptySearchPlaceholder: h
   } = e, g = i.useRef(null), [E, b] = (0, c.Iu)(e => [e.searchQuery, e.isSearchSuggestion], a.X), y = n.useStore(e => e.searchPlaceholder), O = n.useStore(e => e.inspectedExpressionPosition, a.X), v = i.useCallback(e => {
     var t;
-    n.setActiveCategoryIndex("" === e ? 0 : l.c), n.setInspectedExpressionPosition(0, 0), n.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = p.current) || t.scrollTo(0)
-  }, [p, n]), I = i.useCallback(() => {
+    n.setActiveCategoryIndex("" === e ? 0 : l.c), n.setInspectedExpressionPosition(0, 0), n.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = _.current) || t.scrollTo(0)
+  }, [_, n]), S = i.useCallback(() => {
     (0, c.ql)("")
   }, []);
   i.useImperativeHandle(t, () => ({
@@ -38,7 +38,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
       null == (e = g.current) || e.focus()
     }
   }, [b]);
-  let T = () => null != y ? y : d || null == m ? h : m;
+  let I = () => null != y ? y : d || null == h ? m : h;
   return (0, r.jsx)("div", {
     className: u.wrapper,
     children: (0, r.jsx)(s.E1j, {
@@ -46,15 +46,15 @@ let d = Chunk473749.forwardRef(function(e, t) {
       disabled: !d,
       query: E,
       ref: g,
-      placeholder: T(),
-      onClear: I,
+      placeholder: I(),
+      onClear: S,
       onKeyDown: f,
       onChange: v,
       inputProps: {
         "aria-haspopup": "grid",
-        "aria-controls": _,
+        "aria-controls": p,
         "aria-expanded": true,
-        "aria-activedescendant": (0, o.NE)(_, O.columnIndex, O.rowIndex)
+        "aria-activedescendant": (0, o.NE)(p, O.columnIndex, O.rowIndex)
       }
     })
   })

@@ -55,16 +55,16 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = {
+let I = {
     transform: "scale(0.7)",
     opacity: 0
   },
-  S = {
+  T = {
     transform: "scale(1)",
     opacity: 1
   };
@@ -77,7 +77,7 @@ function C() {
   let e = (0, Chunk442837.Wu)([Chunk340895.Z, Chunk944486.Z, Chunk317381.ZP], () => Chunk340895.Z.getIncomingCalls().filter(e => {
       let {
         channel: t
-      } = e, n = h.Z.getChannelId() === t.id, r = null == t.guild_id && n, i = u.ZP.getConnectedActivityChannelId() === t.id && h.Z.getVoiceChannelId() !== t.id && u.ZP.getActivityPanelMode() === E.Ez.PANEL;
+      } = e, n = m.Z.getChannelId() === t.id, r = null == t.guild_id && n, i = u.ZP.getConnectedActivityChannelId() === t.id && m.Z.getVoiceChannelId() !== t.id && u.ZP.getActivityPanelMode() === E.Ez.PANEL;
       return !r || i
     })),
     t = (0, Chunk442837.e7)([Chunk340895.Z], () => Chunk340895.Z.hasIncomingCalls()),
@@ -103,17 +103,17 @@ function C() {
       return null == (t = e.channel) ? true : t.id
     },
     enter: {
-      from: T,
-      to: S
+      from: I,
+      to: T
     },
-    leave: T,
+    leave: I,
     config: {
       mass: 1,
       tension: 500,
       friction: 18,
       clamp: true
     }
-  })((e, t) => (0, r.jsx)(d.Z, I(O({}, t), {
+  })((e, t) => (0, r.jsx)(d.Z, S(O({}, t), {
     animatedStyle: e
   })))
 }

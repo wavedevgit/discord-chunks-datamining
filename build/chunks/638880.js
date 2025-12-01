@@ -32,41 +32,41 @@ async function O(e) {
       locationObject: y,
       analyticsLocations: O,
       componentId: v,
-      sectionName: I,
-      source: T,
-      inviterUserId: S,
+      sectionName: S,
+      source: I,
+      inviterUserId: T,
       customId: A,
       referrerId: C
     } = e,
-    N = (0, h.Z)(),
-    R = i.Z.getChannel(l),
-    P = null == R ? true : R.getGuildId(),
-    D = null == P || "" === P,
-    w = o.default.getCurrentUser();
-  if (null == w) returnfalse;
-  if (null == R || D && !R.isPrivate() || null == l) return Promise.resolve(false);
-  let L = u.ZP.getCurrentEmbeddedActivity();
-  if ((null == L ? true : L.applicationId) != null && (t = r.Z.getApplication(null == L ? true : L.applicationId)), a.Z.getVoiceChannelId() === l && null != L && L.applicationId === n && (0, _.p)(L.location) === a.Z.getVoiceChannelId()) return (0, E.Z)(P, L.location), Promise.resolve(true);
-  let x = await (0, p.Z)(n, l);
+    N = (0, m.Z)(),
+    P = i.Z.getChannel(l),
+    R = null == P ? true : P.getGuildId(),
+    w = null == R || "" === R,
+    D = o.default.getCurrentUser();
+  if (null == D) returnfalse;
+  if (null == P || w && !P.isPrivate() || null == l) return Promise.resolve(false);
+  let x = u.ZP.getCurrentEmbeddedActivity();
+  if ((null == x ? true : x.applicationId) != null && (t = r.Z.getApplication(null == x ? true : x.applicationId)), a.Z.getVoiceChannelId() === l && null != x && x.applicationId === n && (0, p.p)(x.location) === a.Z.getVoiceChannelId()) return (0, E.Z)(R, x.location), Promise.resolve(true);
+  let L = await (0, _.Z)(n, l);
   if (!await (0, f.p)({
       applicationId: n,
-      application: x,
-      channel: R,
+      application: L,
+      channel: P,
       currentEmbeddedApplication: t,
       embeddedActivitiesManager: N,
-      user: w
+      user: D
     })) returnfalse;
-  if (null != R) {
-    let e = (0, m.Z)(R.id),
-      n = b.wP.includes(R.type);
+  if (null != P) {
+    let e = (0, h.Z)(P.id),
+      n = b.wP.includes(P.type);
     if (e) {
       if (!await (0, g.Z)({
-          channelId: R.id,
+          channelId: P.id,
           bypassChangeModal: null != t
         })) returnfalse
-    } else if (!(0, s.WS)(R) || !n) returnfalse
-  } else if (null == R) returnfalse;
-  return null != l && (0, d.Z)(l), null != L && (0, c.cG)(L.location), await (0, c.G6)({
+    } else if (!(0, s.WS)(P) || !n) returnfalse
+  } else if (null == P) returnfalse;
+  return null != l && (0, d.Z)(l), null != x && (0, c.cG)(x.location), await (0, c.G6)({
     channelId: l,
     applicationId: n,
     isStart: false,
@@ -74,9 +74,9 @@ async function O(e) {
     analyticsLocations: O,
     locationObject: y,
     componentId: v,
-    sectionName: I,
-    source: T,
-    inviterUserId: S,
+    sectionName: S,
+    source: I,
+    inviterUserId: T,
     customId: A,
     referrerId: C
   })

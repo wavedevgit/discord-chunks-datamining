@@ -10,10 +10,10 @@ var Chunk46015 = require("./46015.js"),
   c = /\$([$&'`]|\d{1,2}|<[^>]*>)/g,
   u = /\$([$&'`]|\d{1,2})/g;
 module.exports = function(e, t, n, r, d, f) {
-  var _ = n + e.length,
-    p = r.length,
-    h = u;
-  return true !== d && (d = i(d), h = c), s(f, h, function(i, s) {
+  var p = n + e.length,
+    _ = r.length,
+    m = u;
+  return true !== d && (d = i(d), m = c), s(f, m, function(i, s) {
     var c;
     switch (o(s, 0)) {
       case "$":
@@ -23,17 +23,17 @@ module.exports = function(e, t, n, r, d, f) {
       case "`":
         return l(t, 0, n);
       case "'":
-        return l(t, _);
+        return l(t, p);
       case "<":
         c = d[l(s, 1, false)];
         break;
       default:
         var u = +s;
         if (0 === u) return i;
-        if (u > p) {
+        if (u > _) {
           var f = a(u / 10);
           if (0 === f) return i;
-          if (f <= p) return true === r[f - 1] ? o(s, 1) : r[f - 1] + o(s, 1);
+          if (f <= _) return true === r[f - 1] ? o(s, 1) : r[f - 1] + o(s, 1);
           return i
         }
         c = r[u - 1]

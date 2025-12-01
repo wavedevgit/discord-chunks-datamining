@@ -2,7 +2,7 @@
 /** chunk id: 697761, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -52,22 +52,22 @@ function f(e, t) {
   return i
 }
 
-function _(e) {
+function p(e) {
   var {
     activity: t,
     user: n,
     variant: c = "secondary",
     onAction: f
-  } = e, _ = d(e, ["activity", "user", "variant", "onAction"]);
+  } = e, p = d(e, ["activity", "user", "variant", "onAction"]);
   if (!(0, o.Z)(t, s.xjy.INSTANCE)) return null;
-  let p = () => {
+  let _ = () => {
     null == f || f(), new a.Z("UserActivityActions").log("notify", n.id, t)
   };
   return (0, r.jsx)(i.Button, u({
     text: l.intl.string(l.t.vwl1PK),
     variant: c,
     size: "sm",
-    onClick: p,
+    onClick: _,
     fullWidth: true
-  }, _))
+  }, p))
 }

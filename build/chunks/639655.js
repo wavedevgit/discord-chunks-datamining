@@ -2,7 +2,7 @@
 /** chunk id: 639655, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => p
+  I: () => _
 }), require("./539854.js"), require("./415506.js"), require("./644351.js"), require("./146733.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./388685.js");
 var Chunk710845 = require("./710845.js"),
   Chunk358085 = require("./358085.js"),
@@ -148,7 +148,7 @@ d.push(class extends f {
     super(e), s(this, "_socketId", true), this._socketId = null
   }
 });
-class _ extends f {
+class p extends f {
   static canUse() {
     returntrue
   }
@@ -165,10 +165,10 @@ class _ extends f {
   close() {}
 }
 
-function p(e) {
-  if (a.s.isDiscordGatewayPlaintextSet()) return new _(e);
+function _(e) {
+  if (a.s.isDiscordGatewayPlaintextSet()) return new p(e);
   for (var t of d)
     if (t.canUse()) return new t(e);
-  return new _(e)
+  return new p(e)
 }
-d.push(_)
+d.push(p)

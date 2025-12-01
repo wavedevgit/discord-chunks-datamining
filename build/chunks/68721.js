@@ -2,7 +2,7 @@
 /** chunk id: 68721, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./415506.js");
 var Chunk836560 = require("./836560.js"),
   Chunk579092 = require("./579092.js"),
@@ -22,11 +22,11 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = new Chunk579092.Yd("Output"),
-  _ = new Chunk106617.Z;
-class p extends Chunk836560.EventEmitter {
+  p = new Chunk106617.Z;
+class _ extends Chunk836560.EventEmitter {
   destroy() {
     var e, t, n;
-    this.removeAllListeners(), null == (e = (t = this).cleanup) || module.call(exports), this.reset(), null != this.stream && (_.release(this.stream), this.stream = true), null == (n = this._audioFilter) || require.dispose(), this._audioFilter = true, this.destroyed = true
+    this.removeAllListeners(), null == (e = (t = this).cleanup) || module.call(exports), this.reset(), null != this.stream && (p.release(this.stream), this.stream = true), null == (n = this._audioFilter) || require.dispose(), this._audioFilter = true, this.destroyed = true
   }
   reset() {
     this.setSpeaking(false)
@@ -77,7 +77,7 @@ class p extends Chunk836560.EventEmitter {
     this._automaticGainControl !== e && (this._automaticGainControl = e, null != this.stream && this.enable())
   }
   async enable() {
-    null != this.cleanup && (this.cleanup(), this.cleanup = true), null != this.stream && (_.release(this.stream), this.stream = true);
+    null != this.cleanup && (this.cleanup(), this.cleanup = true), null != this.stream && (p.release(this.stream), this.stream = true);
     let e = await (0, Chunk740197.Hg)(),
       t = {
         echoCancellation: this.echoCancellation,
@@ -88,17 +88,17 @@ class p extends Chunk836560.EventEmitter {
       exact: this.sourceId
     });
     try {
-      let e = await _.acquire({
+      let e = await p.acquire({
         audio: exports
       });
-      if (this.destroyed) throw _.release(module), Error("AudioInput: Already destroyed");
+      if (this.destroyed) throw p.release(module), Error("AudioInput: Already destroyed");
       if (this._noiseCancellation) try {
         let t = await (0, Chunk290488.n)();
         this._audioFilter = await exports.createNoiseFilter(this.context), this._audioFilter.addEventListener("ready", e => {
           var t;
           null == (t = this._audioFilter) || t.enable()
         }), this._audioFilter.addEventListener("dispose", t => {
-          _.release(e)
+          p.release(e)
         });
         let n = this.context.createMediaStreamSource(module),
           r = this.context.createMediaStreamDestination();

@@ -2,7 +2,7 @@
 /** chunk id: 98880, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U4: () => X,
+  U4: () => Q,
   cG: () => es,
   kA: () => el,
   qR: () => ec
@@ -58,7 +58,7 @@ function H(e, t, n) {
   }) : e[t] = n, e
 }
 
-function W(e) {
+function Y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -71,7 +71,7 @@ function W(e) {
   return e
 }
 
-function Y(e, t) {
+function W(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -83,7 +83,7 @@ function Y(e, t) {
 }
 
 function K(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -105,11 +105,11 @@ function q(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var X = function(e) {
+var Q = function(e) {
   return e.ICON = "icon", e.ROW = "row", e.NO_BANNER = "no_banner", e.MEDIUM_BANNER = "medium_banner", e.LARGE_BANNER = "large_banner", e
 }({});
 
-function Q(e) {
+function X(e) {
   var t;
   let {
     application: n,
@@ -121,18 +121,18 @@ function Q(e) {
     sectionName: c,
     resultsPosition: u,
     sectionOverallPosition: d,
-    tracksImpression: _ = true,
-    disabled: p = false,
-    overrideImageUrl: h,
-    showsPromoted: m
-  } = e, g = null != (t = (0, f.Z)(p)) ? t : p;
+    tracksImpression: p = true,
+    disabled: _ = false,
+    overrideImageUrl: m,
+    showsPromoted: h
+  } = e, g = null != (t = (0, f.Z)(_)) ? t : _;
   return (0, r.jsx)(J, {
     application: n,
     onClick: a,
     sectionName: c,
     resultsPosition: u,
-    disabled: p,
-    tracksImpression: _,
+    disabled: _,
+    tracksImpression: p,
     look: i,
     sectionOverallPosition: d,
     children: "icon" === i ? (0, r.jsx)($, {
@@ -144,9 +144,9 @@ function Q(e) {
       look: i,
       imageStyle: o,
       enableVideoBanner: s,
-      disableBannerFadeIn: g !== p,
-      overrideImageUrl: h,
-      showsPromoted: m,
+      disableBannerFadeIn: g !== _,
+      overrideImageUrl: m,
+      showsPromoted: h,
       children: l
     })
   })
@@ -161,39 +161,39 @@ function J(e) {
     resultsPosition: l,
     sectionOverallPosition: d,
     tracksImpression: f,
-    disabled: _,
-    containerStyle: p,
-    look: h
-  } = e, m = i.useCallback(e => {
-    if ((0, w.BQ)(t)) {
+    disabled: p,
+    containerStyle: _,
+    look: m
+  } = e, h = i.useCallback(e => {
+    if ((0, D.BQ)(t)) {
       let n = t instanceof A.ZP ? t : A.ZP.createFromServer(t);
-      (0, u.vq)(e, e => (0, r.jsx)(k.Z, W({
+      (0, u.vq)(e, e => (0, r.jsx)(M.Z, Y({
         application: n
       }, e)))
     }
   }, [t]), {
     name: g,
     description: E
-  } = i.useMemo(() => (0, w.sl)(t, {
+  } = i.useMemo(() => (0, D.sl)(t, {
     fakeAppIconURL: F
   }), [t]), {
     trackItemImpressionRef: b
-  } = (0, M.Z)({
+  } = (0, j.Z)({
     applicationId: t.id,
-    applicationFlags: (0, w.BQ)(t) ? t.flags : true,
+    applicationFlags: (0, D.BQ)(t) ? t.flags : true,
     sectionName: s,
     sectionPosition: l,
     sectionOverallPosition: d,
-    promotionalLabel: (0, w.dF)(t)
+    promotionalLabel: (0, D.dF)(t)
   }), y = i.useMemo(() => {
-    let e = _ ? Z.containerDisabled : Z.container;
+    let e = p ? B.containerDisabled : B.container;
     return o()(e, {
-      [Z.containerBorderRadius]: "row" !== h,
-      [Z.rowContainer]: "row" === h,
-      [Z.iconCard]: "icon" === h
-    }, p)
-  }, [p, _, h]);
-  return _ ? (0, r.jsx)("div", {
+      [B.containerBorderRadius]: "row" !== m,
+      [B.rowContainer]: "row" === m,
+      [B.iconCard]: "icon" === m
+    }, _)
+  }, [_, p, m]);
+  return p ? (0, r.jsx)("div", {
     ref: f ? b : true,
     className: y,
     children: a
@@ -201,8 +201,8 @@ function J(e) {
     innerRef: f ? b : true,
     className: y,
     onClick: n,
-    onContextMenu: m,
-    "aria-label": B.intl.formatToPlainString(B.t["zLhr9+"], {
+    onContextMenu: h,
+    "aria-label": Z.intl.formatToPlainString(Z.t["zLhr9+"], {
       applicationName: g,
       applicationDescription: E
     }),
@@ -220,16 +220,16 @@ function $(e) {
   } = e, {
     name: s,
     iconURL: c
-  } = i.useMemo(() => (0, w.sl)(t, {
+  } = i.useMemo(() => (0, D.sl)(t, {
     fakeAppIconURL: F
   }), [t]);
   return (0, r.jsx)(l.u, {
     __unsupportedReactNodeAsText: s,
     children: (0, r.jsxs)("div", {
-      className: o()(Z.iconContainer, n),
-      children: [(0, r.jsx)(j.Z, {
+      className: o()(B.iconContainer, n),
+      children: [(0, r.jsx)(k.Z, {
         src: c,
-        className: Z.iconCard,
+        className: B.iconCard,
         "aria-hidden": true,
         rendersPlaceholder: true
       }), a]
@@ -245,26 +245,26 @@ function ee(e) {
     enableVideoBanner: l,
     disableBannerFadeIn: u,
     children: f,
-    overrideImageUrl: _,
-    showsPromoted: h
+    overrideImageUrl: p,
+    showsPromoted: m
   } = e, {
-    iconURL: m,
+    iconURL: h,
     name: g,
     description: E
-  } = i.useMemo(() => (0, w.sl)(t, {
+  } = i.useMemo(() => (0, D.sl)(t, {
     fakeAppIconURL: F
-  }), [t]), b = i.useMemo(() => null == E ? null : (0, x.ae)(E), [E]), y = (0, I.ZP)(m, ""), [v, T] = i.useState(false), S = i.useCallback(() => {
-    true === l && T(true)
-  }, [l]), A = h || (0, w.lf)(t), C = "large_banner" === n || "medium_banner" === n, R = i.useCallback(() => T(false), []), P = (0, s.e7)([p.Z, N.Z], () => p.Z.inDevModeForApplication(t.id) || N.Z.inTestModeForApplication(t.id), [t.id]), D = (0, w.WA)(t);
+  }), [t]), b = i.useMemo(() => null == E ? null : (0, L.ae)(E), [E]), y = (0, S.ZP)(h, ""), [v, I] = i.useState(false), T = i.useCallback(() => {
+    true === l && I(true)
+  }, [l]), A = m || (0, D.lf)(t), C = "large_banner" === n || "medium_banner" === n, P = i.useCallback(() => I(false), []), R = (0, s.e7)([_.Z, N.Z], () => _.Z.inDevModeForApplication(t.id) || N.Z.inTestModeForApplication(t.id), [t.id]), w = (0, D.WA)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [C ? (0, r.jsxs)("div", {
-      onMouseEnter: S,
-      onFocus: S,
-      onMouseLeave: R,
-      onBlur: R,
-      className: o()(Z.bannerImageContainer, {
-        [Z.mediumBanner]: "medium_banner" === n,
-        [Z.largeBanner]: "large_banner" === n
+      onMouseEnter: T,
+      onFocus: T,
+      onMouseLeave: P,
+      onBlur: P,
+      className: o()(B.bannerImageContainer, {
+        [B.mediumBanner]: "medium_banner" === n,
+        [B.largeBanner]: "large_banner" === n
       }),
       children: [(0, r.jsx)("span", {
         className: a,
@@ -273,50 +273,50 @@ function ee(e) {
           fallbackColor: y,
           showVideo: v,
           disableFadeIn: u,
-          overrideImageUrl: _
+          overrideImageUrl: p
         })
-      }), P || A || D !== d.ww.NONE ? (0, r.jsxs)("div", {
-        className: Z.bannerUpperRightContainer,
+      }), R || A || w !== d.ww.NONE ? (0, r.jsxs)("div", {
+        className: B.bannerUpperRightContainer,
         children: [A && (0, r.jsx)("div", {
-          className: Z.promotedLabelWrapperBanner,
+          className: B.promotedLabelWrapperBanner,
           children: (0, r.jsx)(c.Heading, {
             variant: "text-xxs/medium",
             color: "header-primary",
-            children: B.intl.string(B.t["/eVltv"])
+            children: Z.intl.string(Z.t["/eVltv"])
           })
-        }), P && (0, r.jsx)(et, {}), D !== d.ww.NONE && (0, r.jsx)(O.Z, {
-          labelType: D
+        }), R && (0, r.jsx)(et, {}), w !== d.ww.NONE && (0, r.jsx)(O.Z, {
+          labelType: w
         })]
       }) : null, (0, r.jsx)("div", {
-        className: Z.bannerImageChildContainer,
+        className: B.bannerImageChildContainer,
         children: f
       })]
     }) : null, (0, r.jsxs)("div", {
-      className: o()(Z.appDetailsContainer, {
-        [Z.appDetailsRowContainer]: "row" === n
+      className: o()(B.appDetailsContainer, {
+        [B.appDetailsRowContainer]: "row" === n
       }),
-      children: [(0, r.jsx)(j.Z, {
-        src: m,
-        className: o()(Z.icon, {
-          [Z.rowIcon]: "row" === n
+      children: [(0, r.jsx)(k.Z, {
+        src: h,
+        className: o()(B.icon, {
+          [B.rowIcon]: "row" === n
         }),
         "aria-hidden": true,
         rendersPlaceholder: true
       }), (0, r.jsxs)("div", {
-        className: Z.appDetails,
+        className: B.appDetails,
         children: [(0, r.jsxs)("div", {
-          className: Z.appDetailsHeaderContainer,
+          className: B.appDetailsHeaderContainer,
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-md/semibold",
             color: "header-primary",
             lineClamp: 1,
             children: g
           }), !C && A ? (0, r.jsx)("div", {
-            className: Z.promotedLabelWrapperNonBanner,
+            className: B.promotedLabelWrapperNonBanner,
             children: (0, r.jsx)(c.Text, {
               variant: "text-xxs/semibold",
               color: "text-muted",
-              children: B.intl.string(B.t["/eVltv"])
+              children: Z.intl.string(Z.t["/eVltv"])
             })
           }) : null, (0, r.jsx)(en, {
             application: t
@@ -328,7 +328,7 @@ function ee(e) {
           children: b
         })]
       }), "row" === n ? (0, r.jsx)("div", {
-        className: Z.rowDivider
+        className: B.rowDivider
       }) : null]
     })]
   })
@@ -351,13 +351,13 @@ function en(e) {
     application: t
   } = e, n = C.default.getCurrentUser();
   if (!(null == n ? true : n.isStaff()) && !(null == n ? true : n.isStaffPersonal())) return null;
-  let i = (0, w.yJ)(t);
-  if (null == i || !(0, w.BQ)(t)) return null;
+  let i = (0, D.yJ)(t);
+  if (null == i || !(0, D.BQ)(t)) return null;
   let a = (0, E.fD)(t, i);
   return null == a ? null : (0, r.jsx)(l.u, {
     __unsupportedReactNodeAsText: a,
     children: (0, r.jsx)("img", {
-      className: Z.staffBadge,
+      className: B.staffBadge,
       alt: a,
       src: V
     })
@@ -374,13 +374,13 @@ function er(e) {
   } = e;
   if (null != s) return (0, r.jsx)("img", {
     src: s,
-    alt: (0, w.BQ)(t) ? t.name : "",
-    className: o()(Z.bannerImage, {
-      [Z.disableFadeIn]: a
+    alt: (0, D.BQ)(t) ? t.name : "",
+    className: o()(B.bannerImage, {
+      [B.disableFadeIn]: a
     })
   });
-  if ((0, w.BQ)(t)) {
-    if ((0, w.ye)(t)) return (0, r.jsx)(ei, {
+  if ((0, D.BQ)(t)) {
+    if ((0, D.ye)(t)) return (0, r.jsx)(ei, {
       application: t,
       showVideo: i,
       disableFadeIn: a
@@ -408,24 +408,24 @@ function ei(e) {
     names: ["embedded_cover"],
     format: "webp"
   }), l = i.useMemo(() => {
-    let e = (0, w.yJ)(t);
+    let e = (0, D.yJ)(t);
     return null != e && null != e.activity_preview_video_asset_id ? (0, g.Z)(t.id, e.activity_preview_video_asset_id) : null
   }, [t]), [c, u] = i.useState(n);
   i.useEffect(() => {
     n && u(true)
   }, [n]);
-  let d = o()(Z.bannerImage, {
-    [Z.disableFadeIn]: a
+  let d = o()(B.bannerImage, {
+    [B.disableFadeIn]: a
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [null != l && c ? (0, r.jsx)("div", {
-      className: Z.activityVideoContainer,
+      className: B.activityVideoContainer,
       children: (0, r.jsx)("div", {
-        className: o()(Z.activityVideo, {
-          [Z.videoFadeOut]: !n
+        className: o()(B.activityVideo, {
+          [B.videoFadeOut]: !n
         }),
         onAnimationEnd: () => n ? null : u(false),
-        children: (0, r.jsx)(T.Z, {
+        children: (0, r.jsx)(I.Z, {
           src: l,
           mediaLayoutType: G.hV.MOSAIC,
           loop: true,
@@ -447,7 +447,7 @@ function ea(e) {
     bot: t,
     fallbackColor: n,
     disableFadeIn: i
-  } = e, a = (0, s.e7)([_.Z], () => _.Z.useReducedMotion), l = (0, P.aN)({
+  } = e, a = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), l = (0, R.aN)({
     id: t.id,
     banner: t.banner,
     canAnimate: !a,
@@ -459,8 +459,8 @@ function ea(e) {
   }) : (0, r.jsx)("img", {
     src: l,
     alt: "",
-    className: o()(Z.bannerImage, {
-      [Z.disableFadeIn]: i
+    className: o()(B.bannerImage, {
+      [B.disableFadeIn]: i
     })
   })
 }
@@ -471,8 +471,8 @@ function eo(e) {
     disableFadeIn: n
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(Z.bannerImage, {
-      [Z.disableFadeIn]: n
+    className: o()(B.bannerImage, {
+      [B.disableFadeIn]: n
     }),
     style: {
       backgroundColor: t
@@ -490,22 +490,22 @@ function es(e) {
     location: s
   } = e, {
     pushHistory: l
-  } = (0, L.hH)(), {
+  } = (0, x.hH)(), {
     friends: c
-  } = (0, m.Z)(t);
+  } = (0, h.Z)(t);
   return {
     onClickAppCard: i.useCallback(e => {
       e.stopPropagation(), (0, v.yw)(U.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
         application_id: t.id,
         section_name: n,
         search_results_position: r,
-        source: D.Z.entrypoint(),
-        promotional_label: (0, w.dF)(t),
+        source: w.Z.entrypoint(),
+        promotional_label: (0, D.dF)(t),
         location: s,
         query: a,
         num_friends_who_play: c.length
       }), l({
-        type: L.gc.APPLICATION,
+        type: x.gc.APPLICATION,
         application: t,
         installOnDemand: o,
         sectionName: n
@@ -518,7 +518,7 @@ function el(e) {
   let {
     onClickAppCard: t
   } = es(e);
-  return (0, r.jsx)(Q, K(W({}, e), {
+  return (0, r.jsx)(X, K(Y({}, e), {
     onClick: t
   }))
 }
@@ -532,16 +532,16 @@ function ec(e) {
     isOneClickCTA: l,
     fetchesApplication: u = true
   } = e, d = z(e, ["context", "application", "location", "sectionName", "isOneClickCTA", "fetchesApplication"]);
-  if (!(0, w.BQ)(n)) throw Error("PerformActivityActionAppCard was passed the Built-in App, which is not supported.");
+  if (!(0, D.BQ)(n)) throw Error("PerformActivityActionAppCard was passed the Built-in App, which is not supported.");
   let f = i.useId(),
-    [_, p, m] = (0, s.Wu)([h.ZP, S.Z], () => [h.ZP.isLaunchingActivity(), h.ZP.getLaunchState(n.id, "channel" === t.type ? t.channel.id : true), S.Z.isLaunchingFrame(n.id)]),
-    g = null != p && p.isLaunching && p.componentId === f || m,
+    [p, _, h] = (0, s.Wu)([m.ZP, T.Z], () => [m.ZP.isLaunchingActivity(), m.ZP.getLaunchState(n.id, "channel" === t.type ? t.channel.id : true), T.Z.isLaunchingFrame(n.id)]),
+    g = null != _ && _.isLaunching && _.componentId === f || h,
     {
       onActivityItemSelected: b,
       activityAction: y,
       buttonVariant: O,
       buttonText: v
-    } = (0, x.P7)({
+    } = (0, L.P7)({
       context: t,
       application: n,
       location: a,
@@ -549,39 +549,39 @@ function ec(e) {
       launchingComponentId: f,
       fetchesApplication: u
     });
-  return y === E.JS.START || y === E.JS.JOIN ? l ? (0, r.jsx)(Q, K(W({}, d), {
+  return y === E.JS.START || y === E.JS.JOIN ? l ? (0, r.jsx)(X, K(Y({}, d), {
     sectionName: o,
     application: n,
     onClick: b,
-    disabled: _ || m,
+    disabled: p || h,
     enableVideoBanner: !g,
     children: g ? (0, r.jsx)(c.$jN, {
       type: c.$jN.Type.PULSING_ELLIPSIS,
-      className: Z.spinner
+      className: B.spinner
     }) : null
-  })) : (0, r.jsx)(el, K(W({}, d), {
+  })) : (0, r.jsx)(el, K(Y({}, d), {
     context: t,
     sectionName: o,
     application: n,
     location: a
-  })) : (0, r.jsx)(Q, K(W({}, d), {
+  })) : (0, r.jsx)(X, K(Y({}, d), {
     sectionName: o,
     application: n,
     onClick: e => {
       e.stopPropagation()
     },
-    imageStyle: Z.darkenImage,
+    imageStyle: B.darkenImage,
     enableVideoBanner: false,
     disabled: true,
     children: (0, r.jsx)("div", {
-      className: Z.voiceLauncherAppCardContainer,
+      className: B.voiceLauncherAppCardContainer,
       children: (0, r.jsx)(c.Button, {
         type: "submit",
         size: "md",
         variant: O,
-        disabled: _ || m,
+        disabled: p || h,
         onClick: b,
-        "aria-label": B.intl.formatToPlainString(B.t["XjP/R+"], {
+        "aria-label": Z.intl.formatToPlainString(Z.t["XjP/R+"], {
           buttonText: v,
           applicationName: n.name
         }),

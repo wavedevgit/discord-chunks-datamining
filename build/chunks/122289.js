@@ -4,7 +4,7 @@
 require.d(exports, {
   E2: () => u,
   cn: () => d,
-  g9: () => _,
+  g9: () => p,
   q2: () => f
 });
 var Chunk751767 = require("./751767.js"),
@@ -75,7 +75,7 @@ function f(e, t) {
   }))
 }
 
-function _(e, t) {
+function p(e, t) {
   i.Z.captureMessage(e, c(s({}, t), {
     tags: c(s({}, null == t ? true : t.tags), {
       app_context: "billing"

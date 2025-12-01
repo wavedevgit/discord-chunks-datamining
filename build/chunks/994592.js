@@ -2,8 +2,8 @@
 /** chunk id: 994592, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j0: () => p,
-  mY: () => _,
+  j0: () => _,
+  mY: () => p,
   on: () => f
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
@@ -27,7 +27,7 @@ function f(e, t) {
   return !!d(e) || (0, c.U)(e, t)
 }
 
-function _(e) {
+function p(e) {
   let t = (0, c.Z)(e),
     n = (0, r.e7)([l.Z, s.Z], () => d(e, [l.Z, s.Z]), [e]),
     {
@@ -36,8 +36,8 @@ function _(e) {
   return !i && (n || t)
 }
 
-function p(e) {
-  let t = _(e),
+function _(e) {
+  let t = p(e),
     n = (0, i.RF)(e, "useShowRoleSubscriptionsInChannelList");
   return t && !n
 }

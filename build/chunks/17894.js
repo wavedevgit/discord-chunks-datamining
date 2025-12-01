@@ -2,7 +2,7 @@
 /** chunk id: 17894, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk525654 = require("./525654.js"),
   i = require.n(Chunk525654),
@@ -16,7 +16,7 @@ var Chunk525654 = require("./525654.js"),
   Chunk626135 = require("./626135.js"),
   Chunk954824 = require("./954824.js"),
   Chunk981631 = require("./981631.js");
-async function h(e) {
+async function m(e) {
   var t, n;
   let r = null == (t = i().os) ? true : t.family;
   if ("Android" === r || "iOS" === r) {
@@ -33,14 +33,14 @@ async function h(e) {
   }
   return "discord://"
 }
-async function m(e) {
-  let t = await h(e),
+async function h(e) {
+  let t = await m(e),
     n = (0, o.zS)(t);
-  null != n && f.default.track(p.rMx.DEEP_LINK_CLICKED, {
+  null != n && f.default.track(_.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, s.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
-  }), _.Z.launch(t, e => {
+  }), p.Z.launch(t, e => {
     e || (0, c.dL)(d.Z.fallbackRoute)
   })
 }

@@ -9,9 +9,9 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk432877 = require("./432877.js"),
   Chunk266454 = require("./266454.js"),
   Chunk243778 = require("./243778.jsx"),
@@ -29,11 +29,11 @@ var Chunk442837 = require("./442837.js"),
 function S(e) {
   let t = (0, i.e7)([m.Z], () => m.Z.getGuildId()),
     n = (0, p.Q_)(t);
-  return (0, O.a4)(e) ? (0, r.jsx)(a.sNh, {
+  return (0, O.a4)(e) ? (0, r.jsx)(o.sNh, {
     id: "report",
     label: n ? v.intl.string(v.t.n5EBAJ) : v.intl.string(v.t.GwbdGe),
     action: () => (0, f.ak)(e, "web_message_context_menu"),
-    icon: n ? a.gw7 : a.U65,
+    icon: n ? o.gw7 : o.U65,
     color: "danger"
   }) : null
 }
@@ -45,10 +45,10 @@ function E() {
       let {
         visibleContent: t
       } = e;
-      return t === l.z.REPORT_TO_MOD_NEW_TAG ? (0, r.jsx)(a.IGR, {
-        color: s.Z.BG_BRAND,
+      return t === l.z.REPORT_TO_MOD_NEW_TAG ? (0, r.jsx)(o.IGR, {
+        color: a.Z.colors.BG_BRAND.css,
         text: v.intl.string(v.t.y2b7CA)
-      }) : (0, r.jsx)(a.U65, {
+      }) : (0, r.jsx)(o.U65, {
         color: "currentColor",
         size: "refresh_sm"
       })
@@ -59,11 +59,11 @@ function E() {
 function P(e) {
   let t = (0, i.e7)([g.Z], () => g.Z.hasReportedMessage(e.channel_id, e.id)),
     n = (0, b.sP)(e);
-  return ((0, o.zq)(() => {
+  return ((0, s.zq)(() => {
     n && (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
       dismissAction: h.L.AUTO_DISMISS
     })
-  }), n) ? (0, r.jsx)(a.sNh, {
+  }), n) ? (0, r.jsx)(o.sNh, {
     id: "report-to-mod",
     label: t ? v.intl.string(j.default["8wsdng"]) : v.intl.string(j.default["1D+vqy"]),
     action: () => {
@@ -79,11 +79,11 @@ function P(e) {
 function Z(e) {
   let t = (0, i.e7)([c.ZP], () => c.ZP.get("iar_testing")),
     n = (0, i.e7)([y.default], () => y.default.getCurrentUser());
-  return (0, O.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
+  return (0, O.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(o.sNh, {
     id: "staff-test-message-report",
     label: "[STAFF] Test Message Report",
     action: () => (0, f.Jw)(e, "web_message_context_menu"),
-    icon: a.U65,
+    icon: o.U65,
     color: "danger"
   }) : null
 }

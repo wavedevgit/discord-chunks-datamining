@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a;
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 });
 var o, Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
@@ -36,16 +36,16 @@ function v() {
   i = null, y.stop(), b = false, Chunk433517.K.set(E, b)
 }
 
-function I(e) {
+function S(e) {
   r = "".concat(location.protocol, "//").concat(location.host, "/handoff?rpc=").concat(e.port), O()
 }
 
-function T(e) {
+function I(e) {
   if (null != i) returnfalse;
   i = (0, s.Z)(), y.start(e.timeout, () => (0, f.lx)()), O()
 }
 
-function S(e) {
+function T(e) {
   let {
     handoffKey: t,
     handoffToken: n,
@@ -56,7 +56,7 @@ function S(e) {
 }
 
 function A(e) {
-  a = new _.Z(e.user)
+  a = new p.Z(e.user)
 }
 
 function C() {
@@ -77,10 +77,10 @@ class N extends(o = Chunk442837.ZP.Store) {
   }
 }
 g(N, "displayName", "BrowserHandoffStore");
-let R = new N(Chunk570140.Z, {
-  RPC_SERVER_READY: I,
-  BROWSER_HANDOFF_BEGIN: T,
-  BROWSER_HANDOFF_FROM_APP: S,
+let P = new N(Chunk570140.Z, {
+  RPC_SERVER_READY: S,
+  BROWSER_HANDOFF_BEGIN: I,
+  BROWSER_HANDOFF_FROM_APP: T,
   BROWSER_HANDOFF_UNAVAILABLE: v,
   BROWSER_HANDOFF_SET_USER: A,
   LOGIN: C,

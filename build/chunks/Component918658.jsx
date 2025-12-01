@@ -2,8 +2,8 @@
 /** chunk id: 918658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k,
-  d: () => j
+  Z: () => M,
+  d: () => k
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk829675 = require("./829675.js");
 
-function w(e) {
+function D(e) {
   let {
     className: t,
     onClick: n,
@@ -44,8 +44,8 @@ function w(e) {
   } = e;
   return (0, r.jsx)(u.zx, {
     buttonRef: a,
-    className: o()(D.button, t),
-    innerClassName: D.buttonInner,
+    className: o()(w.button, t),
+    innerClassName: w.buttonInner,
     look: u.zx.Looks.OUTLINED,
     color: u.zx.Colors.WHITE,
     size: u.zx.Sizes.NONE,
@@ -54,34 +54,34 @@ function w(e) {
   })
 }
 
-function L(e) {
+function x(e) {
   let {
     onClick: t
   } = e;
-  return (0, r.jsx)(w, {
+  return (0, r.jsx)(D, {
     onClick: t,
-    children: P.intl.string(P.t.R9GHya)
+    children: R.intl.string(R.t.R9GHya)
   })
 }
 
-function x(e) {
+function L(e) {
   switch (e) {
     case A.pNK.INTEGRATIONS:
-      return P.intl.string(P.t.k7LGdh);
+      return R.intl.string(R.t.k7LGdh);
     case A.pNK.ROLE_SUBSCRIPTIONS:
-      return P.intl.string(P.t.bRqiqa);
+      return R.intl.string(R.t.bRqiqa);
     case A.pNK.ONBOARDING:
-      return P.intl.string(P.t.qZpU3S);
+      return R.intl.string(R.t.qZpU3S);
     default:
-      return P.intl.string(P.t.MTIXhi)
+      return R.intl.string(R.t.MTIXhi)
   }
 }
 
-function M(e) {
-  return e === A.pNK.ROLE_SUBSCRIPTIONS ? P.intl.string(P.t.hZUCzd) : P.intl.string(P.t["/djIh7"])
+function j(e) {
+  return e === A.pNK.ROLE_SUBSCRIPTIONS ? R.intl.string(R.t.hZUCzd) : R.intl.string(R.t["/djIh7"])
 }
 
-function k() {
+function M() {
   let e = Chunk473749.useRef(null),
     t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId(exports)),
@@ -97,19 +97,19 @@ function k() {
       isServerShopPreview: null != exports && Chunk160404.Z.isViewingServerShop(exports)
     }));
   if (null == Chunk120356 || null == exports) return null;
-  let k = x(o),
-    j = M(o),
+  let M = L(o),
+    k = j(o),
     U = require === Chunk176505.oC.GUILD_ONBOARDING,
     G = e => {
       let {
         backToSettings: n
       } = e;
-      null != t && (T.Z.isFullServerPreview(t) && (0, g.uL)(A.Z5c.CHANNEL(t)), _.ZP.shouldShowOnboarding(t) && (f.Z.finishOnboarding(t), (0, p.EI)(t)), (0, I.mL)(t), n && m.Z.open(t, o), o === A.pNK.ROLE_SUBSCRIPTIONS && (0, h.GN)(t))
+      null != t && (I.Z.isFullServerPreview(t) && (0, g.uL)(A.Z5c.CHANNEL(t)), p.ZP.shouldShowOnboarding(t) && (f.Z.finishOnboarding(t), (0, _.EI)(t)), (0, S.mL)(t), n && h.Z.open(t, o), o === A.pNK.ROLE_SUBSCRIPTIONS && (0, m.GN)(t))
     };
   return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
     className: Chunk829675.notice,
-    children: [(0, Chunk54381.jsxs)(w, {
+    children: [(0, Chunk54381.jsxs)(D, {
       onClick: () => G({
         backToSettings: true
       }),
@@ -119,7 +119,7 @@ function k() {
         height: 16,
         direction: Chunk671533.Z.Directions.LEFT,
         className: Chunk829675.backArrow
-      }), k]
+      }), M]
     }), U && Chunk755721 ? (0, Chunk54381.jsx)("div", {
       className: Chunk829675.noticeContents,
       children: (0, Chunk54381.jsx)("div", {
@@ -145,14 +145,14 @@ function k() {
           let {
             onClick: n
           } = t;
-          return (0, r.jsxs)(w, {
+          return (0, r.jsxs)(D, {
             onClick: n,
             buttonRef: e,
-            children: [j, (0, r.jsx)(O.Z, {
+            children: [k, (0, r.jsx)(O.Z, {
               width: 16,
               height: 16,
               direction: O.Z.Directions.DOWN,
-              className: D.selectCaret
+              className: w.selectCaret
             })]
           })
         }
@@ -174,7 +174,7 @@ function k() {
           color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
         })
       })]
-    }), Chunk755721 || o === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk54381.jsx)(L, {
+    }), Chunk755721 || o === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk54381.jsx)(x, {
       onClick: () => G({
         backToSettings: false
       })
@@ -182,15 +182,15 @@ function k() {
   })
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t
   } = e;
-  return (0, s.e7)([T.Z], () => T.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
-    className: o()(D.settingsWrapper, {
-      [D.windows]: (0, v.isWindows)(),
-      [D.osx]: (0, v.isMac)()
+  return (0, s.e7)([I.Z], () => I.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
+    className: o()(w.settingsWrapper, {
+      [w.windows]: (0, v.isWindows)(),
+      [w.osx]: (0, v.isMac)()
     }),
-    children: (0, r.jsx)(k, {})
+    children: (0, r.jsx)(M, {})
   }) : null
 }

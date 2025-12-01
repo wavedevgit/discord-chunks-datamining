@@ -2,7 +2,7 @@
 /** chunk id: 950292, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  z: () => S
+  z: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk231338 = require("./231338.js"),
   Chunk687352 = require("./687352.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -79,7 +79,7 @@ function O(e) {
     src: t
   } = e;
   return (0, r.jsx)("img", {
-    className: p.image,
+    className: _.image,
     src: t,
     alt: "",
     draggable: false
@@ -93,21 +93,21 @@ function v(e) {
   } = e, {
     reducedMotion: a
   } = i.useContext(l.S);
-  return (0, r.jsx)(c.F, m({
-    className: p.lottie,
+  return (0, r.jsx)(c.F, h({
+    className: _.lottie,
     importData: t,
     autoplay: true,
     shouldAnimate: !a.enabled
   }, n))
 }
 
-function I(e) {
+function S(e) {
   let {
     rive: t,
     props: n
   } = e;
-  return (0, r.jsx)(t, m({
-    className: p.rive,
+  return (0, r.jsx)(t, h({
+    className: _.rive,
     withReducedMotion: "short-loop",
     autoplay: true,
     fit: "contain",
@@ -115,7 +115,7 @@ function I(e) {
   }, n))
 }
 
-function T(e) {
+function I(e) {
   let {
     ref: t,
     src: n,
@@ -138,12 +138,12 @@ function T(e) {
     }
   }, [o, s, c]), i.useEffect(() => {
     var e, t;
-    null != f.current && (!d.enabled && u ? null == (e = f.current) || e.play().catch(_.dG) : null == (t = f.current) || t.pause())
+    null != f.current && (!d.enabled && u ? null == (e = f.current) || e.play().catch(p.dG) : null == (t = f.current) || t.pause())
   }, [u, d.enabled]), d.enabled && null != a) ? (0, r.jsx)(O, {
     type: "image",
     src: a
   }) : (0, r.jsx)("video", {
-    className: p.video,
+    className: _.video,
     ref: f,
     src: n,
     autoPlay: !d.enabled && u,
@@ -154,21 +154,21 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   var t, n, {
       aspectRatio: i = "16/9"
     } = e,
     a = b(e, ["aspectRatio"]);
   let l = (0, u.ZF)(),
     c = (0, s.C)(),
-    _ = null != (n = null == (t = l.isWindowFocused) ? true : t.call(l)) ? n : c;
+    p = null != (n = null == (t = l.isWindowFocused) ? true : t.call(l)) ? n : c;
 
-  function h() {
-    if ((0, f.Or)(a)) return (0, r.jsx)(O, m({}, a));
-    if ((0, f.Am)(a)) return (0, r.jsx)(v, m({}, a));
-    if ((0, f.ko)(a)) return (0, r.jsx)(I, m({}, a));
-    if ((0, f.Wv)(a)) return (0, r.jsx)(T, E(m({}, a), {
-      isWindowFocused: _
+  function m() {
+    if ((0, f.Or)(a)) return (0, r.jsx)(O, h({}, a));
+    if ((0, f.Am)(a)) return (0, r.jsx)(v, h({}, a));
+    if ((0, f.ko)(a)) return (0, r.jsx)(S, h({}, a));
+    if ((0, f.Wv)(a)) return (0, r.jsx)(I, E(h({}, a), {
+      isWindowFocused: p
     }));
     if ((0, f.Mf)(a)) return null == l.dynamicGraphicComponents ? (console.warn("Dynamic graphic used but no dynamicGraphicComponents provided in ManaContext"), null) : (0, d.a)({
       component: a.component,
@@ -178,7 +178,7 @@ function S(e) {
     return null
   }
   return null == a ? null : (0, r.jsx)("div", {
-    className: o()(p.container, p["aspect-ratio-".concat(i)]),
-    children: h()
+    className: o()(_.container, _["aspect-ratio-".concat(i)]),
+    children: m()
   })
 }

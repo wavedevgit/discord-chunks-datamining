@@ -22,15 +22,15 @@ function f() {
       var e, t;
       return null != (t = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && exports
     }),
-    [f, _] = (0, Chunk442837.Wu)([Chunk517100.Z], () => [Chunk517100.Z.isIdle(), Chunk517100.Z.isAFK()]),
-    p = [];
-  return f || _ || p.push("ACTIVE"), f && p.push("IDLE"), _ && p.push("AFK"), require && exports ? (0, Chunk54381.jsx)(Chunk314910.ZP, {
+    [f, p] = (0, Chunk442837.Wu)([Chunk517100.Z], () => [Chunk517100.Z.isIdle(), Chunk517100.Z.isAFK()]),
+    _ = [];
+  return f || p || _.push("ACTIVE"), f && _.push("IDLE"), p && _.push("AFK"), require && exports ? (0, Chunk54381.jsx)(Chunk314910.ZP, {
     children: (0, Chunk54381.jsxs)("div", {
       className: Chunk954479.container,
       children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk954479.status,
         children: [(0, Chunk54381.jsx)(Chunk481060.qbd, {
-          status: p.includes("ACTIVE") ? Chunk231338.Sk.ONLINE : Chunk231338.Sk.IDLE,
+          status: _.includes("ACTIVE") ? Chunk231338.Sk.ONLINE : Chunk231338.Sk.IDLE,
           className: Chunk954479.statusIndicator
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
@@ -39,7 +39,7 @@ function f() {
           className: Chunk954479.statusText,
           children: (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-md/bold",
-            children: p.join(" + ")
+            children: _.join(" + ")
           })
         })]
       }), f && (0, Chunk54381.jsxs)(Chunk481060.Text, {

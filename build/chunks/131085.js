@@ -2,8 +2,8 @@
 /** chunk id: 131085, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  AC: () => h,
-  Ct: () => p,
+  AC: () => m,
+  Ct: () => _,
   ER: () => l,
   Ek: () => s,
   Gg: () => c,
@@ -107,12 +107,12 @@ let u = {
   },
   d = [6, 0, 7, 8, 1, 2, 4, 5, 9, 3],
   f = [21, 22, 23, 24, 25],
-  _ = [26, 27, 28, 29, 30],
-  p = {
+  p = [26, 27, 28, 29, 30],
+  _ = {
     [Chunk981631.GuildFeatures.GUILD_TAGS_BADGE_PACK_PETS]: f,
-    [Chunk981631.GuildFeatures.GUILD_TAGS_BADGE_PACK_FLEX]: _
+    [Chunk981631.GuildFeatures.GUILD_TAGS_BADGE_PACK_FLEX]: p
   },
-  h = {
+  m = {
     [Chunk981631.GuildFeatures.GUILD_TAGS_BADGE_PACK_PETS]: Chunk494497.MB,
     [Chunk981631.GuildFeatures.GUILD_TAGS_BADGE_PACK_FLEX]: Chunk494497.Vk
   }

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Qk: () => C,
-  WG: () => P,
-  ZP: () => D
+  WG: () => R,
+  ZP: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -61,7 +61,7 @@ function N(e, t) {
   return (e % t + t) % t
 }
 
-function R(e) {
+function P(e) {
   let {
     children: t,
     isObscured: n,
@@ -69,10 +69,10 @@ function R(e) {
   } = e, [s, l] = i.useState(false), u = i.useCallback(() => {
     l(e => !e)
   }, []);
-  return n ? (0, r.jsx)(_.aQ.Provider, {
+  return n ? (0, r.jsx)(p.aQ.Provider, {
     value: s,
-    children: (0, r.jsx)(_.ZP, {
-      type: _.ZP.Types.ATTACHMENT,
+    children: (0, r.jsx)(p.ZP, {
+      type: p.ZP.Types.ATTACHMENT,
       reason: c.wk.EXPLICIT_CONTENT,
       obscured: true,
       isSingleMosaicItem: true,
@@ -89,11 +89,11 @@ function R(e) {
   })
 }
 
-function P(e, t) {
+function R(e, t) {
   if ("IMAGE" === e.type) {
-    if (!(0, m._H)(e)) return void(0, d.po)(e.url);
+    if (!(0, h._H)(e)) return void(0, d.po)(e.url);
     C({
-      src: (0, p.q)({
+      src: (0, _.q)({
         proxyURL: e.proxyUrl,
         url: e.url
       }),
@@ -105,73 +105,73 @@ function P(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     items: t,
     onIndexChange: n,
     startIndex: a = 0,
     enabledContentHarmTypeFlags: c = 0,
     shouldHideMediaOptions: d = false
-  } = e, [f, _] = i.useState(a), p = i.useRef(a), {
-    zoomed: m,
+  } = e, [f, p] = i.useState(a), _ = i.useRef(a), {
+    zoomed: h,
     setZoomed: C
-  } = (0, E.Y)(), P = i.useCallback(e => {
-    _(e = N(e, t.length)), p.current = e, null == n || n(e), C(false)
+  } = (0, E.Y)(), R = i.useCallback(e => {
+    p(e = N(e, t.length)), _.current = e, null == n || n(e), C(false)
   }, [n, t, C]);
   i.useEffect(() => {
-    let e = () => P(p.current + 1),
-      t = () => P(p.current - 1);
-    return h.S.subscribe(T.CkL.MODAL_CAROUSEL_NEXT, e), h.S.subscribe(T.CkL.MODAL_CAROUSEL_PREV, t), () => {
-      h.S.unsubscribe(T.CkL.MODAL_CAROUSEL_NEXT, e), h.S.unsubscribe(T.CkL.MODAL_CAROUSEL_PREV, t)
+    let e = () => R(_.current + 1),
+      t = () => R(_.current - 1);
+    return m.S.subscribe(I.CkL.MODAL_CAROUSEL_NEXT, e), m.S.subscribe(I.CkL.MODAL_CAROUSEL_PREV, t), () => {
+      m.S.unsubscribe(I.CkL.MODAL_CAROUSEL_NEXT, e), m.S.unsubscribe(I.CkL.MODAL_CAROUSEL_PREV, t)
     }
-  }, [P, C]);
-  let D = t[f],
-    w = (0, u.g4)({
+  }, [R, C]);
+  let w = t[f],
+    D = (0, u.g4)({
       type: l.l.GenericMedia,
-      media: D
+      media: w
     }, c),
-    L = d ? e => {
+    x = d ? e => {
       e.stopPropagation(), e.preventDefault()
     } : () => (0, g.yg)(g.uG.CONTEXT_MENU_OPENED),
-    x = t.length > 1;
+    L = t.length > 1;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y.ZP, {
-      children: e => x ? (0, r.jsxs)(r.Fragment, {
+      children: e => L ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(v.Z, {
           onClick: e => {
-            e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_PREV)
+            e.stopPropagation(), m.S.dispatch(I.CkL.MODAL_CAROUSEL_PREV)
           },
           icon: s.j9r,
-          tooltip: S.intl.string(S.t.vgfxaA),
+          tooltip: T.intl.string(T.t.vgfxaA),
           className: o()(A.navPrev, e)
         }), (0, r.jsx)(v.Z, {
           onClick: e => {
-            e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_NEXT)
+            e.stopPropagation(), m.S.dispatch(I.CkL.MODAL_CAROUSEL_NEXT)
           },
           icon: s.d4D,
-          tooltip: S.intl.string(S.t.XiOHRX),
+          tooltip: T.intl.string(T.t.XiOHRX),
           className: o()(A.navNext, e)
         })]
       }) : true
     }), (0, r.jsx)(b.Z, {
       items: t,
       currentIndex: f,
-      children: (e, t) => (0, r.jsx)(R, {
-        isObscured: !m && w,
-        src: D.url,
-        children: n => (0, r.jsx)(I.ZP, {
-          media: D,
+      children: (e, t) => (0, r.jsx)(P, {
+        isObscured: !h && D,
+        src: w.url,
+        children: n => (0, r.jsx)(S.ZP, {
+          media: w,
           maxWidth: e,
           maxHeight: t,
           obscured: n,
-          onContextMenu: L
+          onContextMenu: x
         })
       })
-    }), x && (0, r.jsx)(y.ZP, {
+    }), L && (0, r.jsx)(y.ZP, {
       children: e => (0, r.jsx)(O.Z, {
         items: t,
         currentIndex: f,
-        onGalleryItemClick: P,
+        onGalleryItemClick: R,
         className: e,
         enabledContentHarmTypeFlags: c
       })

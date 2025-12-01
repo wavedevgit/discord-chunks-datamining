@@ -17,10 +17,10 @@ function s(e, t) {
     onPressStart: u,
     onPressEnd: d,
     onPressUp: f,
-    onPressChange: _,
-    preventFocusOnPress: p,
-    allowFocusWhenDisabled: h,
-    onClick: m,
+    onPressChange: p,
+    preventFocusOnPress: _,
+    allowFocusWhenDisabled: m,
+    onClick: h,
     href: g,
     target: E,
     rel: b,
@@ -52,23 +52,23 @@ function s(e, t) {
   } = (0, a.r)({
     onPressStart: u,
     onPressEnd: d,
-    onPressChange: _,
+    onPressChange: p,
     onPress: c,
     onPressUp: f,
-    onClick: m,
+    onClick: h,
     isDisabled: l,
-    preventFocusOnPress: p,
+    preventFocusOnPress: _,
     ref: t
   }), {
-    focusableProps: I
+    focusableProps: S
   } = (0, o.kc)(e, t);
-  h && (I.tabIndex = l ? false : I.tabIndex);
-  let T = (0, r.d)(I, O, (0, i.z)(e, {
+  m && (S.tabIndex = l ? false : S.tabIndex);
+  let I = (0, r.d)(S, O, (0, i.z)(e, {
     labelable: true
   }));
   return {
     isPressed: v,
-    buttonProps: (0, r.d)(n, T, {
+    buttonProps: (0, r.d)(n, I, {
       "aria-haspopup": e["aria-haspopup"],
       "aria-expanded": e["aria-expanded"],
       "aria-controls": e["aria-controls"],

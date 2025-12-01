@@ -28,52 +28,52 @@ function E(e) {
     guildId: y,
     context: O,
     onItemClick: v
-  } = e, I = null != (t = null == b ? true : b.id) ? t : null == E ? true : E.id, T = p.Z.getGuild(y), S = (0, a.e7)([h.Z], () => null != T ? h.Z.can(m.Plq.MANAGE_GUILD, T) : null), A = true, C = true, N = (0, l.LD)(y, C), R = (0, l.PL)(A, C), P = (0, a.e7)([_.default], () => null != _.default.getNewestTokenForApplication(I)), {
-    isUserApp: D,
-    isGuildApp: w
+  } = e, S = null != (t = null == b ? true : b.id) ? t : null == E ? true : E.id, I = _.Z.getGuild(y), T = (0, a.e7)([m.Z], () => null != I ? m.Z.can(h.Plq.MANAGE_GUILD, I) : null), A = true, C = true, N = (0, l.LD)(y, C), P = (0, l.PL)(A, C), R = (0, a.e7)([p.default], () => null != p.default.getNewestTokenForApplication(S)), {
+    isUserApp: w,
+    isGuildApp: D
   } = i.useMemo(() => {
     var e, t, n, r;
-    if (null == I) return {
+    if (null == S) return {
       isGuildApp: false,
       isUserApp: false
     };
     let i = Object.values(null != (n = null == (e = N.result) ? true : e.sections) ? n : {}),
-      a = Object.values(null != (r = null == (t = R.result) ? true : t.sections) ? r : {});
+      a = Object.values(null != (r = null == (t = P.result) ? true : t.sections) ? r : {});
     return {
       isGuildApp: i.some(e => {
         var t;
-        return (null == (t = e.descriptor.application) ? true : t.id) === I
+        return (null == (t = e.descriptor.application) ? true : t.id) === S
       }),
       isUserApp: a.some(e => {
         var t;
-        return (null == (t = e.descriptor.application) ? true : t.id) === I
+        return (null == (t = e.descriptor.application) ? true : t.id) === S
       })
     }
-  }, [N, R, I]);
+  }, [N, P, S]);
   i.useEffect(() => {
     n(145260)
   }, []);
-  let L = i.useCallback(() => {
-      (null == T ? true : T.id) != null && (c.Z.open(T.id, m.pNK.INTEGRATIONS), s.Z.setSection(m.b4C.APPLICATION, I), null == v || v())
-    }, [I, null == T ? true : T.id, v]),
-    x = i.useCallback(() => {
+  let x = i.useCallback(() => {
+      (null == I ? true : I.id) != null && (c.Z.open(I.id, h.pNK.INTEGRATIONS), s.Z.setSection(h.b4C.APPLICATION, S), null == v || v())
+    }, [S, null == I ? true : I.id, v]),
+    L = i.useCallback(() => {
       (0, f.openUserSettings)(u.n.AUTHORIZED_APPS_PANEL, {
-        section: m.oAB.AUTHORIZED_APPS
+        section: h.oAB.AUTHORIZED_APPS
       });
       let e = "";
       null != b ? e = b.name : null != E && (e = E.username), "" !== e && d.J.setState({
         searchQuery: e
       }), null == v || v()
     }, [b, v, E]);
-  if (O === m.IlC.POPOUT) return null;
-  let M = [];
-  return w && S && M.push((0, r.jsx)(o.sNh, {
+  if (O === h.IlC.POPOUT) return null;
+  let j = [];
+  return D && T && j.push((0, r.jsx)(o.sNh, {
     id: "manage-server-integration",
     label: g.intl.string(g.t.IuSJT8),
-    action: L
-  }, "manage-server-integration")), D && P && M.push((0, r.jsx)(o.sNh, {
+    action: x
+  }, "manage-server-integration")), w && R && j.push((0, r.jsx)(o.sNh, {
     id: "manage-authorized-app",
     label: g.intl.string(g.t.V8ruvz),
-    action: x
-  }, "manage-authorized-app")), M
+    action: L
+  }, "manage-authorized-app")), j
 }

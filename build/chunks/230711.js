@@ -98,25 +98,25 @@ let f = {
       emailToken: u,
       password: d,
       avatar: f,
-      newPassword: _,
-      discriminator: p
+      newPassword: p,
+      discriminator: _
     } = e, {
-      close: h
-    } = t, m = {
+      close: m
+    } = t, h = {
       username: n,
       email: s,
       email_token: u,
       password: d,
       avatar: f,
-      new_password: _,
-      discriminator: null != p && "" !== p ? p : true
+      new_password: p,
+      discriminator: null != _ && "" !== _ ? _ : true
     }, g = i.K.get(l.JkL), E = (0, c.xJ)();
-    null != E && null != g && (m.push_provider = E, m.push_token = g);
+    null != E && null != g && (h.push_provider = E, h.push_token = g);
     let b = i.K.get(l.scU);
-    return null != c.mv && null != b && (m.push_voip_provider = c.mv, m.push_voip_token = b), r.tn.patch({
+    return null != c.mv && null != b && (h.push_voip_provider = c.mv, h.push_voip_token = b), r.tn.patch({
       url: l.ANM.ME,
       oldFormErrors: true,
-      body: m,
+      body: h,
       rejectWithError: false
     }).then(e => {
       let t = e.body,
@@ -130,14 +130,14 @@ let f = {
         user: t
       }), true !== f && (0, o.Z)({
         avatarHash: t.avatar
-      }), null != _ && a.Z.dispatch({
+      }), null != p && a.Z.dispatch({
         type: "USER_PASSWORD_UPDATE",
         user: t,
-        newPassword: _
-      }), null != d && null != _ && a.Z.dispatch({
+        newPassword: p
+      }), null != d && null != p && a.Z.dispatch({
         type: "PASSWORD_UPDATED",
         userId: t.id
-      }), h ? this.close() : this.submitComplete(), e
+      }), m ? this.close() : this.submitComplete(), e
     }, e => (a.Z.dispatch({
       type: "USER_SETTINGS_MODAL_SUBMIT_FAILURE",
       errors: e.body

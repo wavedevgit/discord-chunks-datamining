@@ -10,7 +10,7 @@ require.d(exports, {
   VZ: () => i,
   cO: () => l,
   kK: () => c,
-  y1: () => _
+  y1: () => p
 });
 let r = Object.prototype.toString;
 
@@ -61,6 +61,6 @@ function f(e, t) {
   }
 }
 
-function _(e) {
+function p(e) {
   return !!("object" == typeof e && null !== e && (e.__isVue || e._isVue))
 }

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   I: () => d,
-  j: () => m
+  j: () => h
 }), require("./388685.js"), require("./781311.js");
 var Chunk498607 = require("./498607.js"),
   i = require.n(Chunk498607),
@@ -59,33 +59,33 @@ function d() {
 }
 let f = Object.freeze(d());
 
-function _(e, t) {
+function p(e, t) {
   return null != e && !!e.toLowerCase().includes(t.toLowerCase())
 }
 
-function p(e, t) {
+function _(e, t) {
   if ("" === t.trim()) returnfalse;
   let [n, r] = (0, l.C)(t);
   for (let t of r)
     if (e.userId === t) returntrue;
   for (let t of n)
-    if (_(e.nick, t)) returntrue;
+    if (p(e.nick, t)) returntrue;
   if (null == e.user) returnfalse;
   let {
     globalName: i,
     username: a
   } = e.user;
   for (let e of n)
-    if (_(a, e)) returntrue;
+    if (p(a, e)) returntrue;
   for (let e of n)
-    if (_(i, e)) returntrue;
+    if (p(i, e)) returntrue;
   returnfalse
 }
 
-function h(e, t) {
+function m(e, t) {
   return 0 !== t.size && Array.from(t).every(t => e.roles.includes(t))
 }
-class m {
+class h {
   get requiresUsernameMatch() {
     return this._searchState.query.trim().length > 0
   }
@@ -112,9 +112,9 @@ class m {
       selectedJoinDateOption: u,
       selectedAccountAgeOption: d,
       selectedSourceInviteCode: f,
-      selectedJoinSourceType: _
+      selectedJoinSourceType: p
     } = this._searchState;
-    return !(t.length > 0 && !p(e, t) || c.size > 0 && !h(e, c) || null != u.afterDate && e.joinedAtTimestamp < u.afterDate || null != u.beforeDate && e.joinedAtTimestamp > u.beforeDate || null != d.afterDate && s.default.extractTimestamp(e.userId) < d.afterDate || null != d.beforeDate && s.default.extractTimestamp(e.userId) > d.beforeDate) && (null == f || e.sourceInviteCode === f) && (null == _ || e.joinSourceType === _) && (!n && !r && !i && !l || !!(n && e.hasUnusualDmActivity || r && (0, o.b)(e) || i && e.hasUnusualAccountActivity || l && (0, a.EY)(e)))
+    return !(t.length > 0 && !_(e, t) || c.size > 0 && !m(e, c) || null != u.afterDate && e.joinedAtTimestamp < u.afterDate || null != u.beforeDate && e.joinedAtTimestamp > u.beforeDate || null != d.afterDate && s.default.extractTimestamp(e.userId) < d.afterDate || null != d.beforeDate && s.default.extractTimestamp(e.userId) > d.beforeDate) && (null == f || e.sourceInviteCode === f) && (null == p || e.joinSourceType === p) && (!n && !r && !i && !l || !!(n && e.hasUnusualDmActivity || r && (0, o.b)(e) || i && e.hasUnusualAccountActivity || l && (0, a.EY)(e)))
   }
   constructor(e) {
     c(this, "guildId", true), c(this, "_searchState", true), c(this, "hasDefaultQuery", true), this.guildId = e, this._searchState = d(), this.hasDefaultQuery = true

@@ -2,7 +2,7 @@
 /** chunk id: 330010, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => _,
+  R: () => p,
   i: () => f
 });
 var Chunk544891 = require("./544891.js"),
@@ -69,7 +69,7 @@ async function f(e) {
   }), t
 }
 
-function _(e) {
+function p(e) {
   return r.tn.get({
     url: s.ANM.GUILD_WIDGET(e),
     oldFormErrors: true,

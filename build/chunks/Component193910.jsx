@@ -5,9 +5,9 @@ require.d(exports, {
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk831209 = require("./831209.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk278323 = require("./278323.js"),
   Chunk566620 = require("./566620.js"),
@@ -51,9 +51,9 @@ function R() {
       let {
         visibleContent: t
       } = e;
-      return t === o.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, i.jsx)(s.IGR, {
+      return t === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, i.jsx)(s.IGR, {
         text: A.intl.string(A.t.y2b7CA),
-        color: l.Z.BUTTON_DANGER_BACKGROUND
+        color: o.Z.colors.BUTTON_DANGER_BACKGROUND.css
       }) : null
     }
   })
@@ -76,7 +76,7 @@ function L(e) {
     newestAnalyticsLocation: V
   } = (0, d.ZP)(), G = (0, y.Dt)({
     channel: t
-  }), z = (0, a.e7)([v.Z], () => v.Z.isInProgress());
+  }), z = (0, l.e7)([v.Z], () => v.Z.isInProgress());
 
   function W() {
     (0, _.R6)(t, true, "Plus Button")
@@ -91,7 +91,7 @@ function L(e) {
   }
 
   function Y() {
-    (0, m.Q3)(o.z.POLLS_CHAT_INPUT_COACHMARK, {
+    (0, m.Q3)(a.z.POLLS_CHAT_INPUT_COACHMARK, {
       dismissAction: T.L.TAKE_ACTION
     }), (0, s.ZDy)(async () => {
       let {
@@ -188,7 +188,7 @@ function L(e) {
           children: e.display
         }), null != e.badgeVal && e.badgeVal > 0 && (0, i.jsx)(s.mAB, {
           className: w.badge,
-          color: null != (n = e.badgeColor) ? n : l.Z.STATUS_DANGER,
+          color: null != (n = e.badgeColor) ? n : o.Z.colors.STATUS_DANGER.css,
           count: e.badgeVal
         })]
       });

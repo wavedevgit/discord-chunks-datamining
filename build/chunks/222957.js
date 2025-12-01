@@ -34,8 +34,8 @@ var Chunk473749 = require("./473749.js"),
         attributes: {}
       }),
       f = d[0],
-      _ = d[1],
-      p = r.useMemo(function() {
+      p = d[1],
+      _ = r.useMemo(function() {
         return {
           name: "updateState",
           enabled: true,
@@ -44,7 +44,7 @@ var Chunk473749 = require("./473749.js"),
             var t = e.state,
               n = Object.keys(t.elements);
             i.flushSync(function() {
-              _({
+              p({
                 styles: (0, l.sq)(n.map(function(e) {
                   return [e, t.styles[e] || {}]
                 })),
@@ -57,35 +57,35 @@ var Chunk473749 = require("./473749.js"),
           requires: ["computeStyles"]
         }
       }, []),
-      h = r.useMemo(function() {
+      m = r.useMemo(function() {
         var e = {
           onFirstUpdate: u.onFirstUpdate,
           placement: u.placement,
           strategy: u.strategy,
-          modifiers: [].concat(u.modifiers, [p, {
+          modifiers: [].concat(u.modifiers, [_, {
             name: "applyStyles",
             enabled: false
           }])
         };
         return s()(o.current, e) ? o.current || e : (o.current = e, e)
-      }, [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, p]),
-      m = r.useRef();
+      }, [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, _]),
+      h = r.useRef();
     return (0, l.LI)(function() {
-      m.current && m.current.setOptions(h)
-    }, [h]), (0, l.LI)(function() {
+      h.current && h.current.setOptions(m)
+    }, [m]), (0, l.LI)(function() {
       if (null != e && null != t) {
         var r = n.createPopper || a.fi,
-          i = r(e, t, h);
-        return m.current = i,
+          i = r(e, t, m);
+        return h.current = i,
           function() {
-            i.destroy(), m.current = null
+            i.destroy(), h.current = null
           }
       }
     }, [e, t, n.createPopper]), {
-      state: m.current ? m.current.state : null,
+      state: h.current ? h.current.state : null,
       styles: f.styles,
       attributes: f.attributes,
-      update: m.current ? m.current.update : null,
-      forceUpdate: m.current ? m.current.forceUpdate : null
+      update: h.current ? h.current.update : null,
+      forceUpdate: h.current ? h.current.forceUpdate : null
     }
   }

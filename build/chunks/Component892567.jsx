@@ -2,7 +2,7 @@
 /** chunk id: 892567, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,61 +24,61 @@ var Chunk54381 = require("./54381.js"),
   Chunk760692 = require("./760692.js"),
   Chunk7284 = require("./7284.js"),
   Chunk492333 = require("./492333.js");
-let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
-  T = Chunk473749.memo(function(e) {
+let S = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
+  I = Chunk473749.memo(function(e) {
     var t;
     let {
       userName: n,
       displayNameStyles: a,
       effectDisplayType: s = b.F.STATIC,
-      inProfile: T = false,
+      inProfile: I = false,
       textClassName: A,
       loop: C = false,
       shouldWrap: N = false,
-      boldFontOpacity: R = 1,
-      shouldUnderlineOnHover: P = false
-    } = e, D = (0, O.j)({
+      boldFontOpacity: P = 1,
+      shouldUnderlineOnHover: R = false
+    } = e, w = (0, O.j)({
       displayNameStyles: a,
-      inProfile: T
+      inProfile: I
     }), {
-      useReducedMotion: w,
-      saturation: L
-    } = (0, d.cj)([p.Z], () => ({
-      useReducedMotion: p.Z.useReducedMotion,
-      saturation: p.Z.desaturateUserColors ? p.Z.saturation : 1
+      useReducedMotion: D,
+      saturation: x
+    } = (0, d.cj)([_.Z], () => ({
+      useReducedMotion: _.Z.useReducedMotion,
+      saturation: _.Z.desaturateUserColors ? _.Z.saturation : 1
     })), {
-      includeNonProfile: x
-    } = m.fN.useExperiment({
+      includeNonProfile: L
+    } = h.fN.useExperiment({
       location: "useDisplayNameStylesFont"
-    }), M = (0, E.Y)({
+    }), j = (0, E.Y)({
       location: "UserNameWithEffects"
-    }), k = (0, _.dQu)(_.TVs.colors.BACKGROUND_BASE_LOW).hex(), j = null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID, U = (0, g.R)(j), G = (0, _.qgQ)(n), B = (0, f.EJ)(G, j === c.m.TOON ? v.emoji : true), Z = i.useMemo(() => null != a && M ? a.colors.map(e => (0, h.wh)({
+    }), M = (0, p.dQu)(p.TVs.colors.BACKGROUND_BASE_LOW).hex(), k = null != (t = null == a ? true : a.effectId) ? t : c.m.SOLID, U = (0, g.R)(k), G = (0, p.qgQ)(n), Z = (0, f.EJ)(G, k === c.m.TOON ? v.emoji : true), B = i.useMemo(() => null != a && j ? a.colors.map(e => (0, m.wh)({
       foreground: o()(e),
-      background: j === c.m.TOON ? o()("#333") : o()(k),
+      background: k === c.m.TOON ? o()("#333") : o()(M),
       ratio: U.minContrastRatio,
-      saturationFactor: L
-    }).hex()) : [], [a, M, j, U.minContrastRatio, L, k]);
-    if (!M || !T && !x || null == a) return n;
-    let F = (0, y.K)(j, Z, {
+      saturationFactor: x
+    }).hex()) : [], [a, j, k, U.minContrastRatio, x, M]);
+    if (!j || !I && !L || null == a) return n;
+    let F = (0, y.K)(k, B, {
         shouldWrap: N,
-        fontOpacity: I.includes(a.fontId) ? R : 1
+        fontOpacity: S.includes(a.fontId) ? P : 1
       }),
-      V = S(j);
+      V = T(k);
     return (0, r.jsxs)("div", {
-      className: l()(v.container, D, A, {
+      className: l()(v.container, w, A, {
         [v.showEffect]: s !== b.F.PLAIN,
-        [v.animated]: s === b.F.ANIMATED && !w,
+        [v.animated]: s === b.F.ANIMATED && !D,
         [v.loop]: C,
-        [v.inProfile]: T
+        [v.inProfile]: I
       }),
       style: F,
       children: [(0, r.jsx)("span", {
         "data-username-with-effects": G,
         className: l()(v.innerContainer, null == V ? true : V.effectClassName, {
-          [v.underlineOnHover]: P,
+          [v.underlineOnHover]: R,
           [v.chicle]: a.fontId === u.C.CHICLE
         }),
-        children: B
+        children: Z
       }), (null == V ? true : V.glowClassName) != null && (0, r.jsx)("span", {
         className: l()(v.glowContainer, v.innerContainer, V.glowClassName, {
           [v.chicle]: a.fontId === u.C.CHICLE
@@ -89,7 +89,7 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
     })
   });
 
-function S(e) {
+function T(e) {
   switch (e) {
     case c.m.GRADIENT:
     case c.m.GLOW:

@@ -28,39 +28,39 @@ let b = 1e3,
       isConfirmationStep: n,
       isEligibleForWowMoment: a,
       shouldPrefetchWowMoment: b
-    } = e, y = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [O, v] = (0, i.useState)("entry"), I = (0, i.useRef)(null), T = (0, i.useRef)(null), S = (0, i.useCallback)(() => {
-      if ("entry" === O && (v("idle"), null != I.current)) {
+    } = e, y = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [O, v] = (0, i.useState)("entry"), S = (0, i.useRef)(null), I = (0, i.useRef)(null), T = (0, i.useCallback)(() => {
+      if ("entry" === O && (v("idle"), null != S.current)) {
         var e;
-        null == (e = I.current) || e.play()
+        null == (e = S.current) || e.play()
       }
     }, [O]), A = (0, i.useCallback)(() => {
-      if ("exit" !== O && (v("exit"), null != T.current)) {
+      if ("exit" !== O && (v("exit"), null != I.current)) {
         var e;
-        null == (e = T.current) || e.play()
+        null == (e = I.current) || e.play()
       }
     }, [O]), [C, N] = (0, i.useState)(false);
     (0, i.useEffect)(() => {
       b && N(true)
     }, [b]);
     let {
-      mediaUrls: R,
-      isSuccess: P
-    } = (0, p.Z)(!y && a && C), D = (0, i.useRef)(null), [w, L] = (0, i.useState)(false), [x, M] = (0, i.useState)(false), [k, j] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
+      mediaUrls: P,
+      isSuccess: R
+    } = (0, _.Z)(!y && a && C), w = (0, i.useRef)(null), [D, x] = (0, i.useState)(false), [L, j] = (0, i.useState)(false), [M, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
-        a && n && !U && "none" === k && (y || !P ? (j("static"), y || (G(true), f.default.track(h.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (j("animated"), M(true), e = true), c.Z.dispatch({
+        a && n && !U && "none" === M && (y || !R ? (k("static"), y || (G(true), f.default.track(m.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (k("animated"), j(true), e = true), c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: true,
           isAnimated: e
-        }), f.default.track(h.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
+        }), f.default.track(m.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
           wow_moment_type: e ? "animated" : "static"
         }))
-      }, [y, a, n, P, U, k]), (0, i.useEffect)(() => {
+      }, [y, a, n, R, U, M]), (0, i.useEffect)(() => {
         function e() {
-          L(true), A()
+          x(true), A()
         }
-        return _.S.subscribe(h.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
-          _.S.unsubscribe(h.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
+        return p.S.subscribe(m.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
+          p.S.unsubscribe(m.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
         }
       }, [A]), (0, i.useEffect)(() => () => {
         c.Z.dispatch({
@@ -68,66 +68,66 @@ let b = 1e3,
           value: false,
           isAnimated: false
         })
-      }, []), "animated" === k) return (0, r.jsxs)("div", {
+      }, []), "animated" === M) return (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
-        className: m.videoContainer,
+        className: h.videoContainer,
         children: [(0, r.jsx)("div", {
-          className: m.entryAnimationContainer,
+          className: h.entryAnimationContainer,
           children: (0, r.jsx)(d.Z, {
             playsInline: true,
             muted: true,
             autoPlay: true,
-            onEnded: S,
-            className: o()(m.video, "entry" === O ? m.visible : m.hidden),
+            onEnded: T,
+            className: o()(h.video, "entry" === O ? h.visible : h.hidden),
             children: (0, r.jsx)("source", {
-              src: R.modalGlowEntry
+              src: P.modalGlowEntry
             })
+          })
+        }), (0, r.jsx)(d.Z, {
+          ref: S,
+          playsInline: true,
+          muted: true,
+          loop: true,
+          className: o()(h.video, "idle" === O ? h.visible : h.hidden),
+          children: (0, r.jsx)("source", {
+            src: P.modalGlowIdle
           })
         }), (0, r.jsx)(d.Z, {
           ref: I,
           playsInline: true,
           muted: true,
-          loop: true,
-          className: o()(m.video, "idle" === O ? m.visible : m.hidden),
+          className: o()(h.video, "exit" === O ? h.visible : h.hidden),
           children: (0, r.jsx)("source", {
-            src: R.modalGlowIdle
-          })
-        }), (0, r.jsx)(d.Z, {
-          ref: T,
-          playsInline: true,
-          muted: true,
-          className: o()(m.video, "exit" === O ? m.visible : m.hidden),
-          children: (0, r.jsx)("source", {
-            src: R.modalGlowExit
+            src: P.modalGlowExit
           })
         })]
       }), (0, r.jsx)("div", {
-        className: m.wowAnimation,
+        className: h.wowAnimation,
         children: (0, r.jsx)(l.zec, {
           fit: "layout",
-          ref: D,
+          ref: w,
           dataBinding: {
-            ExitTrigger: w,
-            EntryTrigger: x
+            ExitTrigger: D,
+            EntryTrigger: L
           },
           listenOnDocumentBody: true
         })
       }), (0, r.jsx)("div", {
-        className: "exit" === O ? m.exitAnimationContainer : m.entryAnimationContainer,
+        className: "exit" === O ? h.exitAnimationContainer : h.entryAnimationContainer,
         children: t
       })]
     });
-    let B = !w;
-    return "static" === k ? (0, r.jsxs)(r.Fragment, {
-      children: [B && (0, r.jsxs)(r.Fragment, {
+    let Z = !D;
+    return "static" === M ? (0, r.jsxs)(r.Fragment, {
+      children: [Z && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("img", {
           src: g.Z,
           alt: "",
-          className: m.staticGlow
+          className: h.staticGlow
         }), (0, r.jsx)("img", {
           src: E.Z,
           alt: "",
-          className: m.staticWumpusWithTrinkets
+          className: h.staticWumpusWithTrinkets
         })]
       }), t]
     }) : t

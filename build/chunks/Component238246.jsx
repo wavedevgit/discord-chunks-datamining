@@ -25,7 +25,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk317381 = require("./317381.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk168551 = require("./168551.js"),
+  Chunk999203 = require("./999203.js"),
   Chunk260035 = require("./260035.jsx"),
   Chunk686546 = require("./686546.jsx"),
   Chunk950796 = require("./950796.jsx"),
@@ -47,7 +47,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk501787 = require("./501787.js"),
   Chunk413943 = require("./413943.js");
 
-function W(e, t, n) {
+function Y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -56,14 +56,14 @@ function W(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Y(e) {
+function W(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      W(e, t, n[t])
+      Y(e, t, n[t])
     })
   }
   return e
@@ -91,9 +91,9 @@ function q(e) {
     withTitleBar: t,
     isFullScreen: n
   } = e;
-  return t && j.isPlatformEmbedded && !n
+  return t && k.isPlatformEmbedded && !n
 }
-class X extends(r = Chunk473749.Component) {
+class Q extends(r = Chunk473749.Component) {
   componentDidMount() {
     let {
       guestWindow: e
@@ -111,8 +111,8 @@ class X extends(r = Chunk473749.Component) {
     let {
       guestWindow: e
     } = this.props, t = module.document;
-    this.unregisterPopoutGlobalKeybinds(), module.removeEventListener("blur", this.handleBlur), Chunk358085.isPlatformEmbedded ? exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackNative) : exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackWeb), (0, Chunk731965.j)(() => Chunk481060.s9z.setState(e => z(Y({}, e), {
-      [h.u1M]: []
+    this.unregisterPopoutGlobalKeybinds(), module.removeEventListener("blur", this.handleBlur), Chunk358085.isPlatformEmbedded ? exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackNative) : exports.removeEventListener("contextmenu", Chunk62883.contextMenuCallbackWeb), (0, Chunk731965.j)(() => Chunk481060.s9z.setState(e => z(W({}, e), {
+      [m.u1M]: []
     }))), module.removeEventListener("beforeunload", this.beforeUnload)
   }
   updateTitle() {
@@ -128,13 +128,13 @@ class X extends(r = Chunk473749.Component) {
       guestWindow: t
     } = this.props, n = exports.document, r = false, i = require.head;
     c()(null != Chunk54381, "Window document ".concat(r ? "body" : "head", " was null"));
-    let a = Chunk54381.querySelector("style[".concat(Chunk168551.PQ, "]"));
+    let a = Chunk54381.querySelector("style[".concat(Chunk999203.PQ, "]"));
     if (null != Chunk473749) {
       Chunk473749.textContent = module;
       return
     }
     let o = require.createElement("style");
-    Chunk120356.setAttribute(Chunk168551.PQ, "true"), Chunk120356.textContent = module, Chunk54381.appendChild(Chunk120356)
+    Chunk120356.setAttribute(Chunk999203.PQ, "true"), Chunk120356.textContent = module, Chunk54381.appendChild(Chunk120356)
   }
   registerPopoutGlobalKeybinds() {
     var e;
@@ -159,7 +159,7 @@ class X extends(r = Chunk473749.Component) {
       clientThemesClassName: l,
       contentClassName: c,
       themeOverride: d,
-      titleBarTheme: p,
+      titleBarTheme: _,
       hideModals: g = false,
       appContext: E
     } = this.props, b = q({
@@ -173,7 +173,7 @@ class X extends(r = Chunk473749.Component) {
         children: (0, Chunk54381.jsx)(Chunk899663.Z, {
           children: (0, Chunk54381.jsxs)(Chunk481060.JcV, {
             containerRef: this.rootRef,
-            children: [(0, Chunk54381.jsx)(Q, {
+            children: [(0, Chunk54381.jsx)(X, {
               guestWindow: Chunk120356,
               className: Chunk512722,
               children: (0, Chunk54381.jsxs)(Chunk317381, {
@@ -206,26 +206,26 @@ class X extends(r = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), W(this, "rootRef", a.createRef()), W(this, "_cleanupWindowActionCreators", true), W(this, "_combokeys", null), W(this, "beforeUnload", e => {
+    super(...e), Y(this, "rootRef", a.createRef()), Y(this, "_cleanupWindowActionCreators", true), Y(this, "_combokeys", null), Y(this, "beforeUnload", e => {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        Z.Z.unmountWindow(this.props.windowKey), j.isPlatformEmbedded && G.ZP.close(this.props.windowKey)
+        B.Z.unmountWindow(this.props.windowKey), k.isPlatformEmbedded && G.ZP.close(this.props.windowKey)
       };
       null != t ? t({
         e,
         unmountWindow: n
       }) : n()
-    }), W(this, "handleBlur", () => {
+    }), Y(this, "handleBlur", () => {
       var e, t;
       null == (e = (t = this.props).onBlur) || e.call(t)
     })
   }
 }
-W(X, "defaultProps", {
+Y(Q, "defaultProps", {
   withTitleBar: true
 });
-let Q = Chunk473749.forwardRef(function(e, t) {
+let X = Chunk473749.forwardRef(function(e, t) {
     let {
       guestWindow: n,
       className: r,
@@ -234,7 +234,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
       lang: l,
       style: u,
       className: d
-    } = (0, k.vP)();
+    } = (0, M.vP)();
     return a.useEffect(() => {
       let e = n.document.documentElement;
       c()(null != e, "Window document element was null"), e.setAttribute("style", u)
@@ -253,32 +253,32 @@ let Q = Chunk473749.forwardRef(function(e, t) {
     let {
       guestWindow: r,
       isFullScreen: a
-    } = (0, p.cj)([Z.Z], () => ({
-      guestWindow: Z.Z.getWindow(e.windowKey),
-      isFullScreen: Z.Z.isWindowFullScreen(e.windowKey)
+    } = (0, _.cj)([B.Z], () => ({
+      guestWindow: B.Z.getWindow(e.windowKey),
+      isFullScreen: B.Z.isWindowFullScreen(e.windowKey)
     }));
     c()(null != r, "Missing guestWindow reference");
     let {
       forcedColors: o,
       connectedEmbeddedActivity: s
-    } = (0, p.cj)([b.Z, O.ZP], () => ({
+    } = (0, _.cj)([b.Z, O.ZP], () => ({
       forcedColors: b.Z.useForcedColors ? "yes" : "no",
       connectedEmbeddedActivity: O.ZP.getCurrentEmbeddedActivity()
     }));
     (0, N.Z)(r, false);
     let {
       analyticsLocations: l
-    } = (0, I.ZP)(v.Z.POPOUT_WINDOW), {
+    } = (0, S.ZP)(v.Z.POPOUT_WINDOW), {
       clientThemesClassName: u,
       clientThemesCSS: d
-    } = (0, T.ZP)(), f = (0, x.Ll)(), _ = null != (n = e.themeOverride) ? n : f;
-    return null == r ? null : (0, i.jsx)(h.Sle, {
-      children: (0, i.jsx)(I.Gt, {
+    } = (0, I.ZP)(), f = (0, L.Ll)(), p = null != (n = e.themeOverride) ? n : f;
+    return null == r ? null : (0, i.jsx)(m.Sle, {
+      children: (0, i.jsx)(S.Gt, {
         value: l,
-        children: (0, i.jsx)(X, z(Y({
+        children: (0, i.jsx)(Q, z(W({
           ref: t
         }, e), {
-          titleBarTheme: _,
+          titleBarTheme: p,
           guestWindow: r,
           isFullScreen: a,
           forcedColors: o,

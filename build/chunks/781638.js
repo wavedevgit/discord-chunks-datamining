@@ -19,9 +19,9 @@ module.exports = function(e, t) {
     var s = c(arguments.length, 1) > n,
       d = a(r) ? r : u(r),
       f = s ? l(arguments, n) : [],
-      _ = s ? function() {
+      p = s ? function() {
         i(d, this, f)
       } : d;
-    return t ? e(_, o) : e(_)
+    return t ? e(p, o) : e(p)
   } : e
 }

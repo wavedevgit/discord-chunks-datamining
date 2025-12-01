@@ -21,19 +21,19 @@ function c(e, t, n) {
 let u = {},
   d = null,
   f = 864e5,
-  _ = 36e5;
+  p = 36e5;
 
-function p() {
+function _() {
   Chunk627050.d.getCurrentConfig({
     location: "LibraryApplicationStatisticsStore.handleConnectionOpen"
   }).enabled && (0, Chunk827837.N)()
 }
 
-function h() {
+function m() {
   u = {}, d = null
 }
 
-function m(e) {
+function h(e) {
   let {
     statistics: t
   } = e;
@@ -85,7 +85,7 @@ class E extends(r = Chunk442837.ZP.Store) {
       n = 0;
     if (null != t) {
       let e = Math.floor((Date.now() - new Date(t.last_played_at).getTime()) / f),
-        r = Math.floor(1e3 * t.total_duration / _);
+        r = Math.floor(1e3 * t.total_duration / p);
       0 === e ? n += 50 : e >= 1 && e < 2 ? n += 40 : e >= 2 && e < 4 ? n += 30 : e >= 4 && e < 7 ? n += 20 : e >= 7 && (n += 10), 0 === r ? n += 0 : r >= 1 && r < 12 ? n += 10 : r >= 12 && r < 168 ? n += 20 : r >= 168 && r < 720 ? n += 40 : r >= 720 && (n += 50)
     }
     return n
@@ -93,8 +93,8 @@ class E extends(r = Chunk442837.ZP.Store) {
 }
 c(E, "displayName", "LibraryApplicationStatisticsStore");
 let b = new E(Chunk570140.Z, {
-  USER_ACTIVITY_STATISTICS_FETCH_SUCCESS: m,
+  USER_ACTIVITY_STATISTICS_FETCH_SUCCESS: h,
   ACTIVITY_UPDATE_START: g,
-  LOGOUT: h,
-  CONNECTION_OPEN: p
+  LOGOUT: m,
+  CONNECTION_OPEN: _
 })

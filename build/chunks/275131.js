@@ -2,7 +2,7 @@
 /** chunk id: 275131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk664751 = require("./664751.js"),
   Chunk975641 = require("./975641.js"),
@@ -15,7 +15,7 @@ var Chunk664751 = require("./664751.js"),
   Chunk128449 = require("./128449.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,17 +23,17 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class p extends Chunk147913.Z {
+class _ extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), _(this, "actions", {
+    super(...e), p(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handleConnectionOpen()
-    }), _(this, "queue", new Set), _(this, "isFetchEnabled", false), _(this, "handleConnectionOpen", () => {
+    }), p(this, "queue", new Set), p(this, "isFetchEnabled", false), p(this, "handleConnectionOpen", () => {
       this.isFetchEnabled = true, this.queue.forEach(e => {
         e === d.Hk ? this.fetchFeaturedGuilds() : this.fetchCategoryFeaturedGuilds({
           categoryId: e
         })
       })
-    }), _(this, "fetchFeaturedGuilds", async e => {
+    }), p(this, "fetchFeaturedGuilds", async e => {
       var t;
       if (!this.isFetchEnabled) return void this.queue.add(d.Hk);
       let n = null != (t = null == e ? true : e.forceRefresh) && t,
@@ -74,7 +74,7 @@ class p extends Chunk147913.Z {
           })
         }
       }
-    }), _(this, "fetchCategoryFeaturedGuilds", async e => {
+    }), p(this, "fetchCategoryFeaturedGuilds", async e => {
       let {
         categoryId: t,
         forceRefresh: n = false
@@ -119,4 +119,4 @@ class p extends Chunk147913.Z {
     })
   }
 }
-let h = new p
+let m = new _

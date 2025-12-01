@@ -2,7 +2,7 @@
 /** chunk id: 318990, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _() {
+function p() {
   let e = (0, Chunk442837.e7)([Chunk357355.Z], () => Chunk357355.Z.affinities.slice(0, 3)),
     t = module[0],
     {
@@ -46,11 +46,11 @@ function _() {
       size: Chunk481060.EFr.SIZE_24,
       animateOnHover: true
     }),
-    _ = e => null != e.globalName ? e.globalName : e.username,
-    p = Chunk473749.useMemo(() => module.length >= 2 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.c7ETJH, {
-      username: _(module[0])
+    p = e => null != e.globalName ? e.globalName : e.username,
+    _ = Chunk473749.useMemo(() => module.length >= 2 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.c7ETJH, {
+      username: p(module[0])
     }) : 1 === module.length ? Chunk388032.intl.formatToPlainString(Chunk388032.t.dpjXPL, {
-      username: _(module[0])
+      username: p(module[0])
     }) : "", [module]);
   return 0 === module.length ? null : (0, Chunk54381.jsxs)("div", {
     className: Chunk880406.container,
@@ -63,7 +63,7 @@ function _() {
       className: Chunk880406.text,
       variant: "text-sm/normal",
       color: "always-white",
-      children: p
+      children: _
     })]
   })
 }

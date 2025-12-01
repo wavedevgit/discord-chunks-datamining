@@ -50,7 +50,7 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function p(e) {
   switch (e) {
     case "tab":
     default:
@@ -60,7 +60,7 @@ function _(e) {
   }
 }
 
-function p(e) {
+function _(e) {
   switch (e) {
     case "tab":
     default:
@@ -70,7 +70,7 @@ function p(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   switch (e) {
     case "tab":
     default:
@@ -80,7 +80,7 @@ function h(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   return "pill" === e ? l.pillItemText : true
 }
 
@@ -91,19 +91,19 @@ function g(e) {
     onClick: a,
     look: c,
     className: d,
-    disabled: _ = false,
+    disabled: p = false,
     tooltip: g,
     tooltipAriaLabel: E
   } = e, b = i.useCallback(e => a(t, e), [a, t]), y = e => (0, r.jsx)(s.P3F, f(u({
-    className: o()(p(c), d, {
-      [h(c)]: n,
-      [l.disabled]: _
+    className: o()(_(c), d, {
+      [m(c)]: n,
+      [l.disabled]: p
     }),
-    "aria-disabled": _
+    "aria-disabled": p
   }, e), {
-    onClick: _ ? true : b,
+    onClick: p ? true : b,
     children: (0, r.jsxs)(s.Text, {
-      className: o()(l.controlText, m(c)),
+      className: o()(l.controlText, h(c)),
       variant: "text-sm/medium",
       color: "none",
       children: [null != t.icon ? (0, r.jsx)(t.icon, {
@@ -113,7 +113,7 @@ function g(e) {
   }));
   return null == g ? y() : (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
-    shouldShow: !_,
+    shouldShow: !p,
     "aria-label": E,
     text: g,
     children: e => y(e)
@@ -144,7 +144,7 @@ function E(e) {
     }, null != (t = e.key) ? t : String(e.value))
   }, [n, s, a, u, d]);
   return (0, r.jsx)("div", {
-    className: o()(_(s), c, {
+    className: o()(p(s), c, {
       [l.disabledContainer]: d
     }),
     children: t.map(f)

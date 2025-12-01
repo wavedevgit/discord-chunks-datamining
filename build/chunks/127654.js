@@ -2,8 +2,8 @@
 /** chunk id: 127654, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => T,
-  d: () => S
+  G: () => I,
+  d: () => T
 }), require("./388685.js"), require("./415506.js");
 var Chunk475179 = require("./475179.js"),
   Chunk904245 = require("./904245.js"),
@@ -34,7 +34,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,10 +47,10 @@ function I(e) {
   return e
 }
 
-function T(e, t, n) {
-  let r = _.default.getCurrentUser(),
+function I(e, t, n) {
+  let r = p.default.getCurrentUser(),
     i = e.guild_id,
-    a = h.dg(i),
+    a = m.dg(i),
     s = Array.from(t).map(e => e.size),
     l = Array.from(t).map(e => null != e.type ? e.type : "unknown"),
     u = s.reduce((e, t) => e + t, 0),
@@ -72,67 +72,67 @@ function T(e, t, n) {
     }), (0, o.openUploadError)({
       title: O.intl.string(O.t["/tGlcj"]),
       help: (0, g.BK)(r, i),
-      showPremiumUpsell: !(0, m.M5)(r, y.PremiumTypes.TIER_2),
+      showPremiumUpsell: !(0, h.M5)(r, y.PremiumTypes.TIER_2),
       fileSize: d
     });
     return
   }(0, o.openUploadError)({
     title: O.intl.string(O.t["/tGlcj"]),
     help: O.intl.formatToPlainString(O.t.tUOJdH, {
-      maxSize: h.Ng(h.OC())
+      maxSize: m.Ng(m.OC())
     })
   })
 }
-async function S(e, t, n) {
+async function T(e, t, n) {
   let {
     filesMetadata: c,
-    requireConfirm: _ = true,
-    showLargeMessageDialog: h = false,
-    isThumbnail: m = false,
+    requireConfirm: p = true,
+    showLargeMessageDialog: m = false,
+    isThumbnail: h = false,
     origin: y
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   if (e.length < 1) return;
   if (null != c && c.length !== e.length) throw Error("Unexpected mismatch between files and file metadata");
   let v = t.getGuildId(),
-    S = Array.from(e),
-    A = S.map(e => ({
+    T = Array.from(e),
+    A = T.map(e => ({
       originalContentType: e.type,
       preCompressionSize: e.size
     }));
-  if (await Promise.resolve(), (0, g.Bf)(S, v)) return void T(t, S);
-  if (f.Z.getUploadCount(t.id, n) + S.length > E.dN1) {
+  if (await Promise.resolve(), (0, g.Bf)(T, v)) return void I(t, T);
+  if (f.Z.getUploadCount(t.id, n) + T.length > E.dN1) {
     (0, o.openUploadError)({
       title: O.intl.string(O.t.wOr6hB),
       help: O.intl.formatToPlainString(O.t["qqyp/e"], {
         limit: E.dN1
       })
-    }), p.default.track(E.rMx.UPLOAD_FILE_LIMIT_ERROR, {
+    }), _.default.track(E.rMx.UPLOAD_FILE_LIMIT_ERROR, {
       existing_count: f.Z.getUploadCount(t.id, n),
-      new_count: S.length
+      new_count: T.length
     });
     return
   }
-  if (t.type !== E.d4z.GUILD_VOICE && t.type !== E.d4z.GUILD_STAGE_VOICE || u.Z.getChatOpen(t.id) || r.Z.updateChatOpen(t.id, true), _) {
-    let e = S.map((e, t) => I({
+  if (t.type !== E.d4z.GUILD_VOICE && t.type !== E.d4z.GUILD_STAGE_VOICE || u.Z.getChatOpen(t.id) || r.Z.updateChatOpen(t.id, true), p) {
+    let e = T.map((e, t) => S({
       file: e,
       platform: l.ow.WEB,
-      isThumbnail: m,
+      isThumbnail: h,
       origin: y,
       compressionMetadata: A[t]
     }, null == c ? true : c[t]));
     a.Z.addFiles({
       files: e,
       channelId: t.id,
-      showLargeMessageDialog: h,
+      showLargeMessageDialog: m,
       draftType: n
     })
   } else {
-    let e = S.map((e, n) => {
+    let e = T.map((e, n) => {
       let r = null != c ? c[n] : {};
-      return new s.nH(I({
+      return new s.nH(S({
         file: e,
         platform: l.ow.WEB,
-        isThumbnail: m,
+        isThumbnail: h,
         origin: y,
         compressionMetadata: A[n]
       }, r), t.id)

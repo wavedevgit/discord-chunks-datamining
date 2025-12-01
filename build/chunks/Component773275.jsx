@@ -26,7 +26,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,26 +50,26 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = {
+let h = {
     perkAvailableToUser: false,
     installationStatus: Chunk5900._n.UNKNOWN,
     connectionStatus: Chunk5900.Ij.INITIALIZING,
     isWeb: (0, Chunk818710.$L)(),
     isSupportedPrivateBrowsingPerkPlatform: (0, Chunk818710.ED)() || (0, Chunk818710.V5)()
   },
-  g = e => (0, a.M)()(t => _(h(_({}, m), {
-    setRegistration: e => t(t => h(_({}, t), {
+  g = e => (0, a.M)()(t => p(m(p({}, h), {
+    setRegistration: e => t(t => m(p({}, t), {
       registration: e
     })),
-    setInstallationStatus: e => t(t => h(_({}, t), {
+    setInstallationStatus: e => t(t => m(p({}, t), {
       installationStatus: e
     })),
-    setConnectionStatus: e => t(t => h(_({}, t), {
+    setConnectionStatus: e => t(t => m(p({}, t), {
       connectionStatus: e
     })),
     setPerkAvailableToUser: e => t(() => ({

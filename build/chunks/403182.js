@@ -8,10 +8,10 @@ require.d(exports, {
   dp: () => g,
   f3: () => b,
   iL: () => C,
-  nA: () => I,
-  qF: () => m,
+  nA: () => S,
+  qF: () => h,
   uV: () => y,
-  vY: () => S
+  vY: () => T
 }), require("./35282.js"), require("./388685.js");
 var Chunk112456 = require("./112456.js"),
   i = require.n(Chunk112456),
@@ -24,10 +24,10 @@ var Chunk112456 = require("./112456.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let p = 524288e3,
-  h = 524288e3;
+let _ = 524288e3,
+  m = 524288e3;
 
-function m(e, t) {
+function h(e, t) {
   return e instanceof File ? e : g(e.data.buffer, e.filename, null != t ? t : "text/plain")
 }
 
@@ -103,24 +103,24 @@ function v(e) {
   return Math.max(null != r ? f.HO[r.premiumTier].limits.fileSize : d.mBz, n)
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = v(t);
   return Array.from(e).some(e => e.size > n)
 }
 
-function T(e) {
+function I(e) {
   let t = 0;
   for (let n of e) t += n.size;
   return t
 }
 
-function S(e) {
-  return T(e) > A()
+function T(e) {
+  return I(e) > A()
 }
 
 function A() {
   let e = Chunk594174.default.getCurrentUser();
-  return null != module && module.isStaff() ? h : p
+  return null != module && module.isStaff() ? m : _
 }
 
 function C(e) {
@@ -132,7 +132,7 @@ function C(e) {
   }), i = (0, c.BU)(f.Uq / 1024, {
     useKibibytes: true
   });
-  return _.intl.format(_.t.tRuxk9, {
+  return p.intl.format(p.t.tRuxk9, {
     maxSize: r,
     premiumMaxSize: i,
     onClick: n

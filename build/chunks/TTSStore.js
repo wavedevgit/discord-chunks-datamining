@@ -2,7 +2,7 @@
 /** chunk id: 441729, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -64,18 +64,18 @@ function f(e) {
   })
 }
 
-function _() {
+function p() {
   d = c(s({}, d), {
     currentMessage: null
   })
 }
 
-function p(e) {
+function _(e) {
   d = c(s({}, d), {
     speechRate: e.speechRate
   })
 }
-class h extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class m extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
     d = s({}, u, null != e ? e : null)
   }
@@ -95,9 +95,9 @@ class h extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return d
   }
 }
-o(h, "displayName", "TTSStore"), o(h, "persistKey", "TTSStore"), o(h, "migrations", []);
-let m = new h(Chunk570140.Z, __OVERLAY__ ? {} : {
+o(m, "displayName", "TTSStore"), o(m, "persistKey", "TTSStore"), o(m, "migrations", []);
+let h = new m(Chunk570140.Z, __OVERLAY__ ? {} : {
   SPEAKING_MESSAGE: f,
-  STOP_SPEAKING: _,
-  SET_TTS_SPEECH_RATE: p
+  STOP_SPEAKING: p,
+  SET_TTS_SPEECH_RATE: _
 })

@@ -22,17 +22,17 @@ let c = 75e3,
   u = 10,
   d = 5e3,
   f = 2,
-  _ = 2e3,
-  p = 1e4;
+  p = 2e3,
+  _ = 1e4;
 
-function h(e) {
+function m(e) {
   var t;
   return (null != (t = a.Z.getMemberCount(e)) ? t : 0) >= c ? u : f
 }
 
-function m(e) {
+function h(e) {
   var t;
-  return (null != (t = a.Z.getMemberCount(e)) ? t : 0) >= c ? d : _
+  return (null != (t = a.Z.getMemberCount(e)) ? t : 0) >= c ? d : p
 }
 let g = {},
   E = {},
@@ -41,12 +41,12 @@ let g = {},
 function y() {
   null == b && (b = setInterval(() => {
     Chunk709054.default.forEachKey(g, e => {
-      I(e) && v(e)
+      S(e) && v(e)
     })
-  }, p))
+  }, _))
 }
 async function O(e, t) {
-  null == g[e] && (g[e] = new Set), g[e].add(t), null == E[e] && (E[e] = Date.now()), I(e) && await v(e)
+  null == g[e] && (g[e] = new Set), g[e].add(t), null == E[e] && (E[e] = Date.now()), S(e) && await v(e)
 }
 
 function v(e) {
@@ -61,21 +61,21 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let t = g[e];
   if (null == t) returnfalse;
-  let n = t.size >= h(e),
+  let n = t.size >= m(e),
     r = E[e];
   if (n) returntrue;
   if (null == r) returnfalse;
   let i = Date.now() - r;
-  return null != r && i >= m(e)
+  return null != r && i >= h(e)
 }
 
-function T(e) {
+function I(e) {
   g[e] = new Set, E[e] = null
 }
-class S extends Chunk147913.Z {
+class T extends Chunk147913.Z {
   handleInitialize() {
     null == b && y()
   }
@@ -87,13 +87,13 @@ class S extends Chunk147913.Z {
   }
   handleGuildDelete(e) {
     let t = e.guild.id;
-    s.Z.isInitialized(t) && T(t)
+    s.Z.isInitialized(t) && I(t)
   }
   handleGuildMemberSearchSuccess(e) {
     let {
       guildId: t
     } = e;
-    s.Z.isInitialized(t) && T(t)
+    s.Z.isInitialized(t) && I(t)
   }
   constructor(...e) {
     super(...e), l(this, "actions", {
@@ -105,4 +105,4 @@ class S extends Chunk147913.Z {
     })
   }
 }
-let A = new S
+let A = new T

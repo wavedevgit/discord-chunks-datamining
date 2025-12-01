@@ -73,24 +73,24 @@ function f(e) {
     isPersistentCTA: l,
     buttonTextOverride: d,
     defaultTextOverride: f,
-    iconOverride: _,
-    variantOverride: p
-  } = e, h = u(e, ["subscriptionTier", "hasActivePromotion", "useShorterCTA", "isPersistentCTA", "buttonTextOverride", "defaultTextOverride", "iconOverride", "variantOverride"]);
-  let m = {
+    iconOverride: p,
+    variantOverride: _
+  } = e, m = u(e, ["subscriptionTier", "hasActivePromotion", "useShorterCTA", "isPersistentCTA", "buttonTextOverride", "defaultTextOverride", "iconOverride", "variantOverride"]);
+  let h = {
       subscriptionTier: t,
       hasActivePromotion: n,
       useShorterCTA: o,
       isPersistentCTA: l,
       buttonTextOverride: d,
       defaultTextOverride: f,
-      iconOverride: _,
-      variantOverride: p
+      iconOverride: p,
+      variantOverride: _
     },
     {
       subscribeButtonProps: g,
       subscriptionTier: E
-    } = (0, a.G)(m);
-  return (0, r.jsx)(i.Z, c(s({}, h, g), {
+    } = (0, a.G)(h);
+  return (0, r.jsx)(i.Z, c(s({}, m, g), {
     subscriptionTier: E
   }))
 }

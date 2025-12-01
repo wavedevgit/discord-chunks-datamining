@@ -68,20 +68,20 @@ function O(e) {
     a && l.Z.clearPTTAdminWarning()
   }), (0, r.jsx)(o.u_l, E({
     size: "md",
-    title: m.intl.string(m.t.eotlXE),
-    subtitle: m.intl.formatToPlainString(m.t.Lw6KXV, {
+    title: h.intl.string(h.t.eotlXE),
+    subtitle: h.intl.formatToPlainString(h.t.Lw6KXV, {
       game: null == t ? true : t.name
     }),
     actions: [{
-      text: m.intl.string(m.t.psXQHP),
+      text: h.intl.string(h.t.psXQHP),
       onClick: () => {
-        n.onClose(), window.open(p.Z.getArticleURL(h.BhN.PUSH_TO_TALK_ADMINISTRATOR_MODE), "_blank")
+        n.onClose(), window.open(_.Z.getArticleURL(m.BhN.PUSH_TO_TALK_ADMINISTRATOR_MODE), "_blank")
       }
     }],
     actionBarInput: (0, r.jsx)(s.Checkbox, {
       checked: a,
       onChange: e => u(e),
-      label: m.intl.string(m.t["5E9SB9"]),
+      label: h.intl.string(h.t["5E9SB9"]),
       labelType: "secondary"
     })
   }, n))

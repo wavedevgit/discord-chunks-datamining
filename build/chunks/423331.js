@@ -21,9 +21,9 @@ var Chunk309987 = require("./309987.js"),
       u = t.getParentKey(),
       d = t.getNextSiblingKey(),
       f = t.getPrevSiblingKey(),
-      _ = n.getParentKey(),
-      p = a ? n.getNextSiblingKey() : s,
-      h = a ? s : n.getPrevSiblingKey();
+      p = n.getParentKey(),
+      _ = a ? n.getNextSiblingKey() : s,
+      m = a ? s : n.getPrevSiblingKey();
     return e.withMutations(function(e) {
       c(u, e, function(e) {
         var t = e.getChildKeys();
@@ -38,15 +38,15 @@ var Chunk309987 = require("./309987.js"),
         return e.merge({
           prevSibling: f
         })
-      }), c(p, e, function(e) {
+      }), c(_, e, function(e) {
         return e.merge({
           prevSibling: o
         })
-      }), c(h, e, function(e) {
+      }), c(m, e, function(e) {
         return e.merge({
           nextSibling: o
         })
-      }), c(_, e, function(e) {
+      }), c(p, e, function(e) {
         var t = e.getChildKeys(),
           n = t.indexOf(s),
           r = a ? n + 1 : 0 !== n ? n - 1 : 0,
@@ -56,9 +56,9 @@ var Chunk309987 = require("./309987.js"),
         })
       }), c(o, e, function(e) {
         return e.merge({
-          nextSibling: p,
-          prevSibling: h,
-          parent: _
+          nextSibling: _,
+          prevSibling: m,
+          parent: p
         })
       })
     })
@@ -70,9 +70,9 @@ module.exports = function(e, t, n, a) {
   c === l && o(false);
   var d = e.getBlockMap(),
     f = t instanceof r,
-    _ = [t],
-    p = d.delete(c);
-  f && (_ = [], p = d.withMutations(function(e) {
+    p = [t],
+    _ = d.delete(c);
+  f && (p = [], _ = d.withMutations(function(e) {
     var n = t.getNextSiblingKey(),
       r = i(t, e);
     e.toSeq().skipUntil(function(e) {
@@ -84,29 +84,29 @@ module.exports = function(e, t, n, a) {
         o = !n && e.getParentKey() && (!r || t !== r);
       return !!(i || a || o)
     }).forEach(function(t) {
-      _.push(t), e.delete(t.getKey())
+      p.push(t), e.delete(t.getKey())
     })
   }));
-  var h = p.toSeq().takeUntil(function(e) {
+  var m = _.toSeq().takeUntil(function(e) {
       return e === n
     }),
-    m = p.toSeq().skipUntil(function(e) {
+    h = _.toSeq().skipUntil(function(e) {
       return e === n
     }).skip(1),
-    g = _.map(function(e) {
+    g = p.map(function(e) {
       return [e.getKey(), e]
     }),
     E = s();
   if ("before" === a) {
     var b = e.getBlockBefore(l);
-    b && b.getKey() === t.getKey() && o(false), E = h.concat([].concat(g, [
+    b && b.getKey() === t.getKey() && o(false), E = m.concat([].concat(g, [
       [l, n]
-    ]), m).toOrderedMap()
+    ]), h).toOrderedMap()
   } else if ("after" === a) {
     var y = e.getBlockAfter(l);
-    y && y.getKey() === c && o(false), E = h.concat([
+    y && y.getKey() === c && o(false), E = m.concat([
       [l, n]
-    ].concat(g), m).toOrderedMap()
+    ].concat(g), h).toOrderedMap()
   }
   return e.merge({
     blockMap: u(E, t, n, a, f),

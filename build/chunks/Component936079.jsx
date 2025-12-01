@@ -2,7 +2,7 @@
 /** chunk id: 936079, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./35282.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -38,10 +38,10 @@ function v() {
     module.isMaximized() ? module.unmaximize() : module.maximize()
   }, Chunk998502.ZP.close = () => module.close()
 }
-let I = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
+let S = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
   focused: Chunk451478.Z.isFocused()
 }))(Chunk151851.Z);
-class T extends Chunk473749.PureComponent {
+class I extends Chunk473749.PureComponent {
   getPlatform() {
     var e;
     let t = null == (e = o().os) ? true : module.family;
@@ -65,7 +65,7 @@ class T extends Chunk473749.PureComponent {
         children: (0, Chunk54381.jsx)("html", {
           className: (0, Chunk481060.QeD)(Chunk981631.BRd.DARK)
         })
-      }), (0, Chunk54381.jsx)(I, {
+      }), (0, Chunk54381.jsx)(S, {
         type: this.getPlatform()
       }), (0, Chunk54381.jsx)(Chunk406128.Z, {
         title: Chunk388032.intl.string(Chunk388032.t["3h+n+8"]),
@@ -81,7 +81,7 @@ class T extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     super(...e), O(this, "handleDownload", () => {
-      window.open(this.getPlatform() === m.PlatformTypes.WINDOWS ? h.Z.getArticleURL(b.BhN.CORRUPT_INSTALLATION) : b.EYA.DOWNLOAD)
+      window.open(this.getPlatform() === h.PlatformTypes.WINDOWS ? m.Z.getArticleURL(b.BhN.CORRUPT_INSTALLATION) : b.EYA.DOWNLOAD)
     })
   }
 }

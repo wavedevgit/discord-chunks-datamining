@@ -2,7 +2,7 @@
 /** chunk id: 669750, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk362721 = require("./362721.js"),
@@ -16,7 +16,7 @@ var Chunk147913 = require("./147913.js"),
   Chunk505905 = require("./505905.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,16 +24,16 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends Chunk147913.Z {
+class m extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), p(this, "previousVoiceChannelId", true), p(this, "actions", {
+    super(...e), _(this, "previousVoiceChannelId", true), _(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen(),
       VOICE_CHANNEL_SELECT: e => this.handleVoiceChannelSelect(e),
       GUILD_MEMBER_UPDATE: e => this.handleGuildMemberUpdate(e),
       LOGOUT: () => this.handleLogout()
-    }), p(this, "handlePostConnectionOpen", () => {
+    }), _(this, "handlePostConnectionOpen", () => {
       (0, l.UP)()
-    }), p(this, "handleVoiceChannelSelect", e => {
+    }), _(this, "handleVoiceChannelSelect", e => {
       let {
         channelId: t,
         guildId: n
@@ -41,7 +41,7 @@ class h extends Chunk147913.Z {
         enableHangStatus: r,
         setDefaultStatus: a
       } = (0, c.gx)({
-        guildId: null != n ? n : _.lds,
+        guildId: null != n ? n : p.lds,
         location: "HangStatusManager"
       });
       if (null == n && null == t) {
@@ -50,23 +50,23 @@ class h extends Chunk147913.Z {
       }
       if (!r || t === this.previousVoiceChannelId || (this.previousVoiceChannelId = t, null == n || null == t)) return;
       let s = o.Z.getChannel(t);
-      if (null == s || s.type !== _.d4z.GUILD_VOICE || !(0, i.wQ)(s, true) || null != u.Z.getCurrentHangStatus()) return;
-      let p = u.Z.getCurrentDefaultStatus();
-      if (null != p) {
-        if (p.status === f.tN.CUSTOM && null != p.customHangStatus) {
+      if (null == s || s.type !== p.d4z.GUILD_VOICE || !(0, i.wQ)(s, true) || null != u.Z.getCurrentHangStatus()) return;
+      let _ = u.Z.getCurrentDefaultStatus();
+      if (null != _) {
+        if (_.status === f.tN.CUSTOM && null != _.customHangStatus) {
           let {
             status: e,
             emoji: t
-          } = p.customHangStatus;
+          } = _.customHangStatus;
           if (null != t && !(0, d.K)(t, s)) {
             a && (0, l.Zx)(f.tN.CHILLING);
             return
           }(0, l._s)(e, t)
-        } else if (null != p.status) return void(0, l.Zx)(p.status);
+        } else if (null != _.status) return void(0, l.Zx)(_.status);
         return
       }
       a && (0, l.Zx)(f.tN.CHILLING)
-    }), p(this, "handleGuildMemberUpdate", e => {
+    }), _(this, "handleGuildMemberUpdate", e => {
       let {
         user: t,
         guildId: n
@@ -76,11 +76,11 @@ class h extends Chunk147913.Z {
       if (null == r || null == u.Z.getCurrentHangStatus()) return;
       let c = o.Z.getChannel(r);
       (0, i.wQ)(c, true) || (0, l.Sc)()
-    }), p(this, "handleDisconnectFromVoiceChannel", () => {
+    }), _(this, "handleDisconnectFromVoiceChannel", () => {
       (0, l.Sc)()
-    }), p(this, "handleLogout", () => {
+    }), _(this, "handleLogout", () => {
       this.handleDisconnectFromVoiceChannel()
     })
   }
 }
-let m = new h
+let h = new m

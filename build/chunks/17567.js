@@ -15,7 +15,7 @@ var Chunk710845 = require("./710845.js"),
   Chunk625137 = require("./625137.js"),
   Chunk287328 = require("./287328.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -92,17 +92,17 @@ class E {
   handleGuildRoleChange(e, t) {
     let n = l.Z.getGuild(e.guildId),
       r = s.Z.getUnsafeMutableRoles(e.guildId);
-    null != n && this.put(c.rk(n, u.an(m(p({}, r), {
+    null != n && this.put(c.rk(n, u.an(h(_({}, r), {
       [e.role.id]: u.wD(e.guildId, e.role)
     })), o.ZP.getSelfMember(e.guildId)), t)
   }
   handleGuildRoleDelete(e, t) {
     let n = l.Z.getGuild(e.guildId);
     if (null != n) {
-      let r = p({}, s.Z.getUnsafeMutableRoles(e.guildId));
+      let r = _({}, s.Z.getUnsafeMutableRoles(e.guildId));
       delete r[e.roleId];
       let i = o.ZP.getSelfMember(e.guildId);
-      null != i && (i = m(p({}, i), {
+      null != i && (i = h(_({}, i), {
         roles: i.roles.filter(t => t !== e.roleId)
       })), this.put(c.rk(n, u.an(r), i), t)
     }
@@ -141,7 +141,7 @@ class E {
     f.Z.guildsTransaction(e).delete()
   }
   constructor() {
-    _(this, "actions", {
+    p(this, "actions", {
       BACKGROUND_SYNC: (e, t) => this.handleBackgroundSync(e, t),
       CONNECTION_OPEN: (e, t) => this.handleConnectionOpen(e, t),
       GUILD_CREATE: (e, t) => this.handleGuildCreate(e, t),

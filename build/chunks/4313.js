@@ -24,20 +24,20 @@ function f(e, t, n) {
   true === n && (n = false);
   var u = (0, o.Re)(t),
     f = (0, o.Re)(t) && d(t),
-    _ = (0, l.Z)(t),
-    p = (0, r.Z)(e, f, n),
-    h = {
+    p = (0, l.Z)(t),
+    _ = (0, r.Z)(e, f, n),
+    m = {
       scrollLeft: 0,
       scrollTop: 0
     },
-    m = {
+    h = {
       x: 0,
       y: 0
     };
-  return (u || !u && !n) && (("body" !== (0, a.Z)(t) || (0, c.Z)(_)) && (h = (0, i.Z)(t)), (0, o.Re)(t) ? (m = (0, r.Z)(t, true), m.x += t.clientLeft, m.y += t.clientTop) : _ && (m.x = (0, s.Z)(_))), {
-    x: p.left + h.scrollLeft - m.x,
-    y: p.top + h.scrollTop - m.y,
-    width: p.width,
-    height: p.height
+  return (u || !u && !n) && (("body" !== (0, a.Z)(t) || (0, c.Z)(p)) && (m = (0, i.Z)(t)), (0, o.Re)(t) ? (h = (0, r.Z)(t, true), h.x += t.clientLeft, h.y += t.clientTop) : p && (h.x = (0, s.Z)(p))), {
+    x: _.left + m.scrollLeft - h.x,
+    y: _.top + m.scrollTop - h.y,
+    width: _.width,
+    height: _.height
   }
 }

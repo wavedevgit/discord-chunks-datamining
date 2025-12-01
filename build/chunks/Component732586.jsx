@@ -39,10 +39,10 @@ function f(e) {
       type: n,
       style: u,
       label: f,
-      placeholder: _,
-      minLength: p,
-      maxLength: h,
-      required: m,
+      placeholder: p,
+      minLength: _,
+      maxLength: m,
+      required: h,
       value: g
     } = e,
     [E, b] = i.useState(null != g ? g : ""),
@@ -54,36 +54,36 @@ function f(e) {
       type: n,
       value: g
     } : true),
-    I = (0, l.hz)(e.id);
+    S = (0, l.hz)(e.id);
   i.useEffect(() => {
     (null == y ? true : y.type) === n && b(y.value)
   }, [n, y]);
-  let T = {
+  let I = {
     value: E,
-    placeholder: _,
-    minLength: p,
-    maxLength: h,
-    required: m,
+    placeholder: p,
+    minLength: _,
+    maxLength: m,
+    required: h,
     onChange: e => {
       b(e), O({
         type: n,
         value: e
       })
     },
-    autoFocus: I
+    autoFocus: S
   };
   switch (u) {
     case o.PT.SMALL:
-      t = (0, r.jsx)(a.oil, d({}, T));
+      t = (0, r.jsx)(a.oil, d({}, I));
       break;
     case o.PT.PARAGRAPH:
       t = (0, r.jsx)(a.Kx8, d({
         autosize: true
-      }, T))
+      }, I))
   }
   return null != f ? (0, r.jsx)(a.xJW, {
     title: f,
-    required: m,
+    required: h,
     className: c.formItem,
     error: v,
     children: t

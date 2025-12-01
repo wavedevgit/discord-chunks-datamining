@@ -48,38 +48,38 @@ function u(e, t) {
 }
 let d = false,
   f = false,
-  _ = {};
+  p = {};
 
-function p() {
+function _() {
   f = true
-}
-
-function h(e) {
-  let {
-    guildBoostSlots: t
-  } = e;
-  _ = {}, t.forEach(e => {
-    _[e.id] = e
-  }), f = false, d = true
 }
 
 function m(e) {
   let {
+    guildBoostSlots: t
+  } = e;
+  p = {}, t.forEach(e => {
+    p[e.id] = e
+  }), f = false, d = true
+}
+
+function h(e) {
+  let {
     guildBoostSlot: t
   } = e;
-  _ = u(l({}, _), {
+  p = u(l({}, p), {
     [t.id]: t
   })
 }
 
 function g() {
-  _ = {}, d = false, f = false
+  p = {}, d = false, f = false
 }
 
 function E() {
   let e = {};
-  for (let t of Object.values(_)) module[exports.id] = exports, exports.subscription = Chunk78839.Z.getSubscriptionById(exports.subscriptionId);
-  _ = module
+  for (let t of Object.values(p)) module[exports.id] = exports, exports.subscription = Chunk78839.Z.getSubscriptionById(exports.subscriptionId);
+  p = module
 }
 class b extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -92,18 +92,18 @@ class b extends(r = Chunk442837.ZP.Store) {
     return f
   }
   get boostSlots() {
-    return _
+    return p
   }
   getGuildBoostSlot(e) {
-    return _[e]
+    return p[e]
   }
 }
 s(b, "displayName", "GuildBoostSlotStore");
 let y = new b(Chunk570140.Z, {
-  GUILD_BOOST_SLOTS_FETCH: p,
-  GUILD_BOOST_SLOTS_FETCH_SUCCESS: h,
-  GUILD_BOOST_SLOT_UPDATE_SUCCESS: m,
-  GUILD_BOOST_SLOT_CREATE: m,
-  GUILD_BOOST_SLOT_UPDATE: m,
+  GUILD_BOOST_SLOTS_FETCH: _,
+  GUILD_BOOST_SLOTS_FETCH_SUCCESS: m,
+  GUILD_BOOST_SLOT_UPDATE_SUCCESS: h,
+  GUILD_BOOST_SLOT_CREATE: h,
+  GUILD_BOOST_SLOT_UPDATE: h,
   LOGOUT: g
 })

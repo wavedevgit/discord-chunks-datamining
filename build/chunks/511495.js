@@ -2,7 +2,7 @@
 /** chunk id: 511495, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => _,
+  X: () => p,
   e: () => f
 });
 var Chunk579092 = require("./579092.js"),
@@ -38,6 +38,6 @@ function f() {
   })()), a
 }
 
-function _() {
+function p() {
   return true !== window._libdiscoreWasm
 }

@@ -11,15 +11,15 @@ var Chunk507604 = require("./507604.js"),
   Chunk527160 = require("./527160.js"),
   Chunk79275 = require("./79275.js"),
   f = Object.assign,
-  _ = Object.defineProperty,
-  p = Chunk46015([].concat);
+  p = Object.defineProperty,
+  _ = Chunk46015([].concat);
 module.exports = !f || Chunk621523(function() {
   if (Chunk507604 && 1 !== f({
       b: 1
-    }, f(_({}, "a", {
+    }, f(p({}, "a", {
       enumerable: true,
       get: function() {
-        _(this, "b", {
+        p(this, "b", {
           value: 3,
           enumerable: false
         })
@@ -35,7 +35,7 @@ module.exports = !f || Chunk621523(function() {
     t[e] = e
   }), 7 !== f({}, module)[require] || Chunk673451(f({}, exports)).join("") !== Chunk46015
 }) ? function(e, t) {
-  for (var n = u(e), i = arguments.length, o = 1, f = l.f, _ = c.f; i > o;)
-    for (var h, m = d(arguments[o++]), g = f ? p(s(m), f(m)) : s(m), E = g.length, b = 0; E > b;) h = g[b++], (!r || a(_, m, h)) && (n[h] = m[h]);
+  for (var n = u(e), i = arguments.length, o = 1, f = l.f, p = c.f; i > o;)
+    for (var m, h = d(arguments[o++]), g = f ? _(s(h), f(h)) : s(h), E = g.length, b = 0; E > b;) m = g[b++], (!r || a(p, h, m)) && (n[m] = h[m]);
   return n
 } : f

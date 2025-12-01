@@ -2,7 +2,7 @@
 /** chunk id: 692147, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e) {
+function _(e) {
   let {
     reactionRef: t,
     count: n
@@ -52,9 +52,9 @@ function p(e) {
   }, [n, f, d, l.confettiCount]), null
 }
 
-function h(e) {
+function m(e) {
   return (0, r.jsx)(l.Z, {
     confettiLocation: d.Hn.REACTION,
-    children: (0, r.jsx)(p, _({}, e))
+    children: (0, r.jsx)(_, p({}, e))
   })
 }

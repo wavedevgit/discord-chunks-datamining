@@ -5,7 +5,7 @@ require.d(exports, {
   VZ: () => u,
   ZY: () => d,
   b5: () => c,
-  q3: () => _
+  q3: () => p
 });
 var Chunk818083 = require("./818083.js"),
   Chunk638395 = require("./638395.js"),
@@ -38,7 +38,7 @@ function c(e) {
       autoTrackExposure: t,
       disable: n
     }),
-    i = p.useExperiment({
+    i = _.useExperiment({
       location: e
     }, {
       autoTrackExposure: false,
@@ -57,7 +57,7 @@ function u(e) {
       disable: n
     });
   {
-    let t = p.getCurrentConfig({
+    let t = _.getCurrentConfig({
       location: e
     }, {
       autoTrackExposure: false,
@@ -97,7 +97,7 @@ let d = (0, Chunk818083.B)({
     }]
   });
 
-function _(e) {
+function p(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = u(e, false);
   return f.getCurrentConfig({
@@ -107,7 +107,7 @@ function _(e) {
     disable: !n
   })
 }
-let p = (0, Chunk818083.B)({
+let _ = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-10_icymi_desktop_client",
   label: "ICYMI desktop client",

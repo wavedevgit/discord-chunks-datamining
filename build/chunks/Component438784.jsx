@@ -2,8 +2,8 @@
 /** chunk id: 438784, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => I,
-  b: () => T
+  I: () => S,
+  b: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,7 +36,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,16 +47,16 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h() {
+function m() {
   return new Promise(e => setTimeout(e, 1e3))
 }
-let m = .25,
+let h = .25,
   g = 4,
   E = 1,
   b = 2.8,
@@ -94,7 +94,7 @@ function v(e) {
   let t = e % 2;
   return t > 1 ? 1 - (t - 1) : t
 }
-let I = Chunk473749.memo(function(e) {
+let S = Chunk473749.memo(function(e) {
     let {
       dotRadius: t,
       dotPosition: n,
@@ -104,7 +104,7 @@ let I = Chunk473749.memo(function(e) {
       focused: u
     } = (0, c.vP)(), d = i.useRef(true);
     i.useEffect(() => () => void(d.current = false), []);
-    let [_] = (0, l.q_F)(() => p(f({}, O), {
+    let [p] = (0, l.q_F)(() => _(f({}, O), {
       to: async e => {
         let t = b;
         for (; d.current;) u ? (t += E * g, await e({
@@ -113,57 +113,57 @@ let I = Chunk473749.memo(function(e) {
         })) : t !== b ? (t = b, await e({
           dotCycle: t,
           immediate: true
-        })) : await h()
+        })) : await m()
       }
     }), "animate-always", [u]), y = (2 * t * 3 + t / 4 * 2) / 2;
     return (0, r.jsx)(r.Fragment, {
       children: [0, 1, 2].map(e => {
-        let i = m * e,
+        let i = h * e,
           l = t + t * o * e;
         return (0, r.jsx)(s.animated.circle, {
           cx: n ? n.to([0, 1], [y, l]) : l,
           cy: t,
-          r: _.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.8 * t, .8 * t, t, t]).to(e => u ? e : t),
+          r: p.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.8 * t, .8 * t, t, t]).to(e => u ? e : t),
           fill: a,
           style: {
-            opacity: _.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.3, .3, 1, 1]).to(e => u ? e : 1)
+            opacity: p.dotCycle.to(e => v(e - i)).to([0, .4, .8, 1], [.3, .3, 1, 1]).to(e => u ? e : 1)
           }
         }, e)
       })
     })
   }),
-  T = Chunk473749.memo(function(e) {
+  I = Chunk473749.memo(function(e) {
     let {
       dotRadius: t,
       x: n,
       y: i,
       hide: a = false,
       themed: d = false,
-      className: _,
-      ref: h
+      className: p,
+      ref: m
     } = e, {
-      focused: m
+      focused: h
     } = (0, c.vP)();
-    return (0, l.Yzy)(a, p(f({}, y), {
+    return (0, l.Yzy)(a, _(f({}, y), {
       key: e => e ? "true" : "false"
-    }), m ? "animate-always" : "animate-never")((e, a, l) => {
+    }), h ? "animate-always" : "animate-never")((e, a, l) => {
       let {
         dotPosition: c
       } = e, {
         key: f
       } = l;
       return a ? null : (0, r.jsx)("svg", {
-        ref: h,
+        ref: m,
         x: n,
         y: i,
         width: 2 * t * 3 + t / 2 * 2,
         height: 2 * t,
-        className: o()(_, u.dots, d ? u.themed : null),
+        className: o()(p, u.dots, d ? u.themed : null),
         children: (0, r.jsx)(s.animated.g, {
           style: {
             opacity: c.to(e => Math.min(1, Math.max(e, 0)))
           },
-          children: (0, r.jsx)(I, {
+          children: (0, r.jsx)(S, {
             dotRadius: t,
             dotPosition: c
           })

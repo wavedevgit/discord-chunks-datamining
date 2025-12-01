@@ -2,7 +2,7 @@
 /** chunk id: 461655, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./953529.js"), require("./997841.js");
 var Chunk314877 = require("./314877.js"),
   Chunk95015 = require("./95015.js"),
@@ -22,12 +22,12 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class _ extends Chunk81825.Z {
+class p extends Chunk81825.Z {
   static createFromServer(e) {
     let t = null != e.payment_source ? s.ZP.createFromServer(e.payment_source) : null,
       n = null != e.sku ? l.Z.createFromServer(e.sku) : null,
       r = null != e.subscription ? c.Z.createFromServer(e.subscription) : null;
-    return new _({
+    return new p({
       id: e.id,
       createdAt: new Date(e.created_at),
       currency: e.currency,

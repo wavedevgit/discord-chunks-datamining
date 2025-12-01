@@ -62,11 +62,11 @@ module.exports = function(e) {
       scope: "string",
       match: /\$(\\([^0-9]|[0-9]{1,3}|)|.)/
     },
-    _ = {
+    p = {
       scope: "string",
       match: /"""("*)(?!")[\s\S]*?"""\1/
     },
-    p = {
+    _ = {
       scope: "string",
       contains: [e.BACKSLASH_ESCAPE],
       variants: [{
@@ -103,22 +103,22 @@ module.exports = function(e) {
         end: /#/
       }]
     },
-    h = {
+    m = {
       beginKeywords: "fun receive if try case maybe",
       end: "end",
       keywords: r
     };
-  h.contains = [i, o, e.inherit(e.APOS_STRING_MODE, {
+  m.contains = [i, o, e.inherit(e.APOS_STRING_MODE, {
     className: ""
-  }), h, s, p, _, e.QUOTE_STRING_MODE, a, l, c, u, d, f];
-  let m = [i, o, h, s, p, _, e.QUOTE_STRING_MODE, a, l, c, u, d, f];
-  s.contains[1].contains = m, l.contains = m, d.contains[1].contains = m;
+  }), m, s, _, p, e.QUOTE_STRING_MODE, a, l, c, u, d, f];
+  let h = [i, o, m, s, _, p, e.QUOTE_STRING_MODE, a, l, c, u, d, f];
+  s.contains[1].contains = h, l.contains = h, d.contains[1].contains = h;
   let g = ["-module", "-record", "-undef", "-export", "-ifdef", "-ifndef", "-author", "-copyright", "-doc", "-moduledoc", "-vsn", "-import", "-include", "-include_lib", "-compile", "-define", "-else", "-endif", "-file", "-behaviour", "-behavior", "-spec", "-on_load", "-nifs"],
     E = {
       className: "params",
       begin: "\\(",
       end: "\\)",
-      contains: m
+      contains: h
     };
   return {
     name: "Erlang",
@@ -137,7 +137,7 @@ module.exports = function(e) {
       starts: {
         end: ";|\\.",
         keywords: r,
-        contains: m
+        contains: h
       }
     }, i, {
       begin: "^-",
@@ -149,8 +149,8 @@ module.exports = function(e) {
         $pattern: "-" + e.IDENT_RE,
         keyword: g.map(e => `${e}|1.5`).join(" ")
       },
-      contains: [E, p, _, e.QUOTE_STRING_MODE]
-    }, a, p, _, e.QUOTE_STRING_MODE, d, c, u, l, f, {
+      contains: [E, _, p, e.QUOTE_STRING_MODE]
+    }, a, _, p, e.QUOTE_STRING_MODE, d, c, u, l, f, {
       begin: /\.$/
     }]
   }

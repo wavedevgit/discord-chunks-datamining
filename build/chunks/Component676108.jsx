@@ -2,7 +2,7 @@
 /** chunk id: 676108, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,19 +47,19 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e) {
+function h(e) {
   var t;
   let {
     editorRef: n,
     options: f,
-    channel: p
-  } = e, m = null == (t = n.current) ? true : t.getSlateEditor(), g = i.useRef(null), E = i.useCallback(e => {
+    channel: _
+  } = e, h = null == (t = n.current) ? true : t.getSlateEditor(), g = i.useRef(null), E = i.useCallback(e => {
     let {
       emoji: t,
       willClose: r
@@ -74,7 +74,7 @@ function m(e) {
     } = e;
     return (0, r.jsx)(s.Z, {
       persistSearch: true,
-      channel: p,
+      channel: _,
       closePopout: t,
       onSelectEmoji: e => {
         let {
@@ -89,7 +89,7 @@ function m(e) {
       pickerIntention: u.Hz.COMMUNITY_CONTENT
     })
   };
-  return null == m ? null : (0, r.jsxs)("div", {
+  return null == h ? null : (0, r.jsxs)("div", {
     id: "slate-toolbar",
     className: d.staticToolbar,
     children: [(0, r.jsx)("div", {
@@ -110,7 +110,7 @@ function m(e) {
         let {
           isShown: n
         } = t;
-        return (0, r.jsx)(o.Z, h(_({}, e), {
+        return (0, r.jsx)(o.Z, m(p({}, e), {
           ref: g,
           active: n,
           className: d.emojiButton,

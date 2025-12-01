@@ -2,7 +2,7 @@
 /** chunk id: 831506, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,35 +34,35 @@ function _(e) {
   }
   return e
 }
-let p = {},
-  h = new Map;
+let _ = {},
+  m = new Map;
 
-function m(e, t) {
+function h(e, t) {
   var n;
-  return (null != (n = p[e]) ? n : {})[t]
+  return (null != (n = _[e]) ? n : {})[t]
 }
 
 function g(e, t) {
-  let n = m(e, t);
+  let n = h(e, t);
   if (null == n) return;
-  let r = p[e];
-  delete r[t], a().isEmpty(r) && delete p[e];
-  let i = h.get(n);
-  null != i && (i.delete(e), 0 === i.size && h.delete(n))
+  let r = _[e];
+  delete r[t], a().isEmpty(r) && delete _[e];
+  let i = m.get(n);
+  null != i && (i.delete(e), 0 === i.size && m.delete(n))
 }
 
 function E(e, t, n) {
   var r;
-  let i = p[e];
-  if (null == i && (i = p[e] = {}), i[t] = n, c.Z.isBlocked(e) || c.Z.isIgnored(e)) return;
-  let a = null != (r = h.get(n)) ? r : new Set;
-  h.set(n, a), a.add(e)
+  let i = _[e];
+  if (null == i && (i = _[e] = {}), i[t] = n, c.Z.isBlocked(e) || c.Z.isIgnored(e)) return;
+  let a = null != (r = m.get(n)) ? r : new Set;
+  m.set(n, a), a.add(e)
 }
 
 function b(e, t, n, r) {
   let i = n.find(e => null != e.party && e.party.id),
     a = null != i && null != i.party ? i.party.id : null,
-    o = m(t, e);
+    o = h(t, e);
   if (null == a || r === d.Skl.OFFLINE) return null != o && void g(t, e);
   if (null != o) {
     if (o === a) returnfalse;
@@ -93,7 +93,7 @@ function O(e) {
     parties: t,
     userParties: n
   } = e;
-  h = new Map, p = _({}, n), Object.keys(t).forEach(e => h.set(e, new Set(t[e])))
+  m = new Map, _ = p({}, n), Object.keys(t).forEach(e => m.set(e, new Set(t[e])))
 }
 
 function v(e) {
@@ -109,7 +109,7 @@ function v(e) {
   return n
 }
 
-function I(e) {
+function S(e) {
   let {
     presences: t
   } = e, n = false;
@@ -121,7 +121,7 @@ function I(e) {
   return n
 }
 
-function T(e) {
+function I(e) {
   let {
     updates: t
   } = e;
@@ -136,7 +136,7 @@ function T(e) {
   }).some(e => e)
 }
 
-function S(e) {
+function T(e) {
   let {
     guildId: t,
     members: n
@@ -165,53 +165,53 @@ function N() {
   return b(Chunk981631.ME, module, exports)
 }
 
-function R(e) {
+function P(e) {
   let {
     relationship: t
   } = e;
   if (!c.Z.isBlocked(t.id) && !c.Z.isIgnored(t.id)) returnfalse;
-  let n = p[t.id];
+  let n = _[t.id];
   if (null == n) returnfalse;
   for (let e of a().values(n)) {
-    let n = h.get(e);
+    let n = m.get(e);
     null != n && n.delete(t.id)
   }
 }
 
-function P(e) {
+function R(e) {
   let {
     relationship: t
-  } = e, n = p[t.id];
+  } = e, n = _[t.id];
   if (null == n) returnfalse;
   for (let e of a().values(n)) {
-    let n = h.get(e);
+    let n = m.get(e);
     null != n && n.add(t.id)
   }
 }
-class D extends(r = Chunk442837.ZP.Store) {
+class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.syncWith([Chunk885110.Z], N), this.waitFor(Chunk314897.default, Chunk699516.Z, Chunk885110.Z)
   }
   getParty(e) {
-    return null != e && h.has(e) ? h.get(e) : null
+    return null != e && m.has(e) ? m.get(e) : null
   }
   getUserParties() {
-    return p
+    return _
   }
   getParties() {
-    return h
+    return m
   }
 }
-f(D, "displayName", "GamePartyStore");
-let w = new D(Chunk570140.Z, {
+f(w, "displayName", "GamePartyStore");
+let D = new w(Chunk570140.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: y,
   OVERLAY_INITIALIZE: O,
   GUILD_CREATE: v,
-  PRESENCES_REPLACE: I,
-  PRESENCE_UPDATES: T,
-  THREAD_MEMBER_LIST_UPDATE: S,
+  PRESENCES_REPLACE: S,
+  PRESENCE_UPDATES: I,
+  THREAD_MEMBER_LIST_UPDATE: T,
   THREAD_MEMBERS_UPDATE: A,
-  RELATIONSHIP_ADD: R,
-  RELATIONSHIP_UPDATE: R,
-  RELATIONSHIP_REMOVE: P
+  RELATIONSHIP_ADD: P,
+  RELATIONSHIP_UPDATE: P,
+  RELATIONSHIP_REMOVE: R
 })

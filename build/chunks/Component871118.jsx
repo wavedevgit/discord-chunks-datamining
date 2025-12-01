@@ -2,7 +2,7 @@
 /** chunk id: 871118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk999770 = require("./999770.js");
 
-function h(e) {
+function m(e) {
   let {
     isLoading: t,
     noText: n,
@@ -26,29 +26,29 @@ function h(e) {
     className: s
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(p.emptyPreviewContainer, s),
+    className: o()(_.emptyPreviewContainer, s),
     children: t ? (0, r.jsx)(l.$jN, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: o()(p.emptyPreviewImage, {
-          [p.noImage]: i
+        className: o()(_.emptyPreviewImage, {
+          [_.noImage]: i
         })
       }), n ? null : (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "none",
-        className: p.emptyPreviewText,
-        children: null != a ? a : _.intl.string(_.t.uQZTBV)
+        className: _.emptyPreviewText,
+        children: null != a ? a : p.intl.string(p.t.uQZTBV)
       })]
     })
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     stream: t,
     className: n,
     noText: a = false,
     noImage: o = false
-  } = e, l = (0, s.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), m = (0, s.e7)([u.Z], () => null != l && u.Z.canBasicChannel(f.S7T.CONNECT, l)), {
+  } = e, l = (0, s.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), h = (0, s.e7)([u.Z], () => null != l && u.Z.canBasicChannel(f.S7T.CONNECT, l)), {
     previewUrl: g,
     isLoading: E
   } = (0, d.Z)(t.guildId, t.channelId, t.ownerId), b = i.useRef(E ? null : g);
@@ -56,18 +56,18 @@ function m(e) {
     E || (b.current = g)
   }, [g, E]);
   let y = null == g || E ? b.current : g;
-  return null == y ? (0, r.jsx)(h, {
+  return null == y ? (0, r.jsx)(m, {
     className: n,
     isLoading: E,
     noText: a,
     noImage: o,
-    previewText: m ? true : _.intl.string(_.t.pgUTZC)
+    previewText: h ? true : p.intl.string(p.t.pgUTZC)
   }) : (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)("img", {
       src: y,
       alt: "",
-      className: p.image
+      className: _.image
     })
   })
 }

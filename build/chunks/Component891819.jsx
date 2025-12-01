@@ -51,7 +51,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,21 +59,21 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let p = /url\(['"](.*)['"]\)/,
-  h = e => {
+let _ = /url\(['"](.*)['"]\)/,
+  m = e => {
     if (null == e || "" === e || "none" === e) return null;
-    let t = e.match(p);
+    let t = e.match(_);
     return null != t ? t[1] : e
   };
 
-function m(e) {
+function h(e) {
   return null == e || "" === e || "none" === e ? "none" : "url(".concat(e, ")")
 }
 
@@ -86,7 +86,7 @@ function g(e) {
         loaded: r
       } = this.state, {
         style: i
-      } = this.props, a = null != i ? h(i.backgroundImage) : null;
+      } = this.props, a = null != i ? m(i.backgroundImage) : null;
       null == a && a !== n || this.cachedURLs.indexOf(a) >= 0 ? this.setState({
         loaded: true,
         cached: a
@@ -118,7 +118,7 @@ function g(e) {
           cached: o
         } = this.state;
       return a || null == n || (n = d(c({}, n), {
-        backgroundImage: m(o)
+        backgroundImage: h(o)
       })), (0, r.jsx)(e, c({
         style: n
       }, i))
@@ -127,7 +127,7 @@ function g(e) {
       super(e), l(this, "cachedURLs", []), l(this, "canceller", null);
       let {
         style: t
-      } = e, n = null != t ? h(t.backgroundImage) : null;
+      } = e, n = null != t ? m(t.backgroundImage) : null;
       this.cachedURLs = [n], this.state = {
         cached: n,
         loaded: true

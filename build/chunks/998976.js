@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   Cp: () => b,
-  RR: () => m,
+  RR: () => h,
   X5: () => E,
   YF: () => f,
-  cv: () => _,
+  cv: () => p,
   dp: () => g,
-  dr: () => h,
-  uY: () => p
+  dr: () => m,
+  uY: () => _
 });
 var Chunk615673 = require("./615673.js"),
   Chunk473749 = require("./473749.js"),
@@ -65,11 +65,11 @@ function f(e) {
     middleware: o = [],
     platform: f,
     elements: {
-      reference: _,
-      floating: p
+      reference: p,
+      floating: _
     } = {},
-    transform: h = true,
-    whileElementsMounted: m,
+    transform: m = true,
+    whileElementsMounted: h,
     open: g
   } = e, [E, b] = i.useState({
     x: 0,
@@ -80,29 +80,29 @@ function f(e) {
     isPositioned: false
   }), [y, O] = i.useState(o);
   l(y, o) || O(o);
-  let [v, I] = i.useState(null), [T, S] = i.useState(null), A = i.useCallback(e => {
-    e !== P.current && (P.current = e, I(e))
+  let [v, S] = i.useState(null), [I, T] = i.useState(null), A = i.useCallback(e => {
+    e !== R.current && (R.current = e, S(e))
   }, []), C = i.useCallback(e => {
-    e !== D.current && (D.current = e, S(e))
-  }, []), N = _ || v, R = p || T, P = i.useRef(null), D = i.useRef(null), w = i.useRef(E), L = null != m, x = d(m), M = d(f), k = d(g), j = i.useCallback(() => {
-    if (!P.current || !D.current) return;
+    e !== w.current && (w.current = e, T(e))
+  }, []), N = p || v, P = _ || I, R = i.useRef(null), w = i.useRef(null), D = i.useRef(E), x = null != h, L = d(h), j = d(f), M = d(g), k = i.useCallback(() => {
+    if (!R.current || !w.current) return;
     let e = {
       placement: t,
       strategy: n,
       middleware: y
     };
-    M.current && (e.platform = M.current), (0, r.oo)(P.current, D.current, e).then(e => {
+    j.current && (e.platform = j.current), (0, r.oo)(R.current, w.current, e).then(e => {
       let t = {
         ...e,
-        isPositioned: false !== k.current
+        isPositioned: false !== M.current
       };
-      U.current && !l(w.current, t) && (w.current = t, a.flushSync(() => {
+      U.current && !l(D.current, t) && (D.current = t, a.flushSync(() => {
         b(t)
       }))
     })
-  }, [y, t, n, M, k]);
+  }, [y, t, n, j, M]);
   s(() => {
-    false === g && w.current.isPositioned && (w.current.isPositioned = false, b(e => ({
+    false === g && D.current.isPositioned && (D.current.isPositioned = false, b(e => ({
       ...e,
       isPositioned: false
     })))
@@ -111,34 +111,34 @@ function f(e) {
   s(() => (U.current = true, () => {
     U.current = false
   }), []), s(() => {
-    if (N && (P.current = N), R && (D.current = R), N && R) {
-      if (x.current) return x.current(N, R, j);
-      j()
+    if (N && (R.current = N), P && (w.current = P), N && P) {
+      if (L.current) return L.current(N, P, k);
+      k()
     }
-  }, [N, R, j, x, L]);
+  }, [N, P, k, L, x]);
   let G = i.useMemo(() => ({
-      reference: P,
-      floating: D,
+      reference: R,
+      floating: w,
       setReference: A,
       setFloating: C
     }), [A, C]),
-    B = i.useMemo(() => ({
+    Z = i.useMemo(() => ({
       reference: N,
-      floating: R
-    }), [N, R]),
-    Z = i.useMemo(() => {
+      floating: P
+    }), [N, P]),
+    B = i.useMemo(() => {
       let e = {
         position: n,
         left: 0,
         top: 0
       };
-      if (!B.floating) return e;
-      let t = u(B.floating, E.x),
-        r = u(B.floating, E.y);
-      return h ? {
+      if (!Z.floating) return e;
+      let t = u(Z.floating, E.x),
+        r = u(Z.floating, E.y);
+      return m ? {
         ...e,
         transform: "translate(" + t + "px, " + r + "px)",
-        ...c(B.floating) >= 1.5 && {
+        ...c(Z.floating) >= 1.5 && {
           willChange: "transform"
         }
       } : {
@@ -146,28 +146,28 @@ function f(e) {
         left: t,
         top: r
       }
-    }, [n, h, B.floating, E.x, E.y]);
+    }, [n, m, Z.floating, E.x, E.y]);
   return i.useMemo(() => ({
     ...E,
-    update: j,
+    update: k,
     refs: G,
-    elements: B,
-    floatingStyles: Z
-  }), [E, j, G, B, Z])
+    elements: Z,
+    floatingStyles: B
+  }), [E, k, G, Z, B])
 }
-let _ = (e, t) => ({
+let p = (e, t) => ({
     ...(0, r.cv)(e),
     options: [e, t]
   }),
-  p = (e, t) => ({
+  _ = (e, t) => ({
     ...(0, r.uY)(e),
     options: [e, t]
   }),
-  h = (e, t) => ({
+  m = (e, t) => ({
     ...(0, r.dr)(e),
     options: [e, t]
   }),
-  m = (e, t) => ({
+  h = (e, t) => ({
     ...(0, r.RR)(e),
     options: [e, t]
   }),

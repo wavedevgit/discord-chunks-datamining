@@ -2,7 +2,7 @@
 /** chunk id: 890307, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,22 +15,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk419173 = require("./419173.js");
 
-function _(e) {
+function p(e) {
   let {
     previewData: t,
     className: n,
     onClick: a
   } = e, {
-    trackUserProfileAction: _
-  } = (0, c.KZ)(), p = i.useRef(false);
+    trackUserProfileAction: p
+  } = (0, c.KZ)(), _ = i.useRef(false);
   return i.useEffect(() => {
-    p.current || (_({
+    _.current || (p({
       action: "VIEW_APPLICATION_WIDGET_PREVIEW",
       applicationId: t.application.id
-    }), p.current = true)
-  }, [_, t.application.id]), (0, r.jsx)(s.kL8, {
+    }), _.current = true)
+  }, [p, t.application.id]), (0, r.jsx)(s.kL8, {
     onClick: () => {
-      _({
+      p({
         action: "PRESS_APPLICATION_WIDGET_PREVIEW",
         applicationId: t.application.id
       }), null == a || a()

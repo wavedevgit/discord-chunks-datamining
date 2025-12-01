@@ -34,12 +34,12 @@ function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   var t;
   s.ZP.setCrashInformation(f(e.context), null != (t = e.mediaSessionId) ? t : null)
 }
 
-function p(e) {
+function _(e) {
   var t;
   let n = (null != (t = e.channelId) ? t : "unknown") + e.context;
   switch (e.state) {
@@ -51,7 +51,7 @@ function p(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   let t = e.userId === o.default.getId(),
     n = null != e.streamId,
     a = null;
@@ -64,13 +64,13 @@ function h(e) {
   }
   s.ZP.setCrashInformation(a, +!!n)
 }
-class m extends Chunk147913.Z {
+class h extends Chunk147913.Z {
   constructor(...e) {
     super(...e), c(this, "actions", {
-      RTC_CONNECTION_STATE: p,
-      RTC_CONNECTION_VIDEO: h,
-      MEDIA_SESSION_JOINED: _
+      RTC_CONNECTION_STATE: _,
+      RTC_CONNECTION_VIDEO: m,
+      MEDIA_SESSION_JOINED: p
     })
   }
 }
-let g = new m
+let g = new h

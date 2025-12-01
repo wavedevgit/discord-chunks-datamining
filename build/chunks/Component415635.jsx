@@ -2,7 +2,7 @@
 /** chunk id: 415635, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,15 +15,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk39127 = require("./39127.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk57495 = require("./57495.js");
-let p = 50;
+let _ = 50;
 
-function h(e) {
+function m(e) {
   let {
     channelId: t,
     guildId: n,
-    userId: h,
-    containerDimensions: m
-  } = e, g = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [E, b] = i.useState([]), y = E.length < p;
+    userId: m,
+    containerDimensions: h
+  } = e, g = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [E, b] = i.useState([]), y = E.length < _;
   i.useEffect(() => {
     function e(e) {
       let {
@@ -33,7 +33,7 @@ function h(e) {
         animationType: s,
         animationId: l
       } = e;
-      if (null != h && h !== i) return;
+      if (null != m && m !== i) return;
       let d = null != o && null != s && null != l;
       if (r === t && !g && y && d) {
         let e = (0, u._r)(o),
@@ -55,7 +55,7 @@ function h(e) {
     return s.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
       s.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
     }
-  }, [t, n, h, g, y]);
+  }, [t, n, m, g, y]);
   let O = i.useCallback(e => {
     b(t => {
       let n = [...t],
@@ -64,14 +64,14 @@ function h(e) {
     })
   }, []);
   return g ? null : (0, r.jsx)("div", {
-    className: _.effectsWrapper,
+    className: p.effectsWrapper,
     style: {
-      width: m.width
+      width: h.width
     },
     children: (0, r.jsx)("div", {
-      className: _.effects,
+      className: p.effects,
       children: E.map(e => (0, r.jsx)(d.Z, {
-        containerDimensions: m,
+        containerDimensions: h,
         effect: e,
         onComplete: O
       }, e.id))

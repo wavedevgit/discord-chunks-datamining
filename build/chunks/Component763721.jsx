@@ -2,7 +2,7 @@
 /** chunk id: 763721, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  z: () => m
+  z: () => h
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,9 +50,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,14 +60,14 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = [{
+let m = [{
     id: "strength",
     label: "Strength",
     icon: Chunk481060.lOy
@@ -91,7 +91,7 @@ let h = [{
     id: "constitution",
     label: "Constitution"
   }],
-  m = {
+  h = {
     title: "Input Components",
     stories: [{
       name: "TextInput",
@@ -99,16 +99,16 @@ let h = [{
         var {
           leading: t,
           trailing: n
-        } = e, a = _(e, ["leading", "trailing"]);
-        let [c, d] = i.useState(""), p = (0, s.U)("UserSettingsDesignSystems"), [m, g] = i.useState(h), E = i.useCallback(e => {
-          g(m.filter(t => !e.has(t.id)))
-        }, [m]);
+        } = e, a = p(e, ["leading", "trailing"]);
+        let [c, d] = i.useState(""), _ = (0, s.U)("UserSettingsDesignSystems"), [h, g] = i.useState(m), E = i.useCallback(e => {
+          g(h.filter(t => !e.has(t.id)))
+        }, [h]);
 
         function b(e) {
-          if (p) switch (e) {
+          if (_) switch (e) {
             case "tags":
               return {
-                type: "tags", label: "Tags", items: m, onRemove: E
+                type: "tags", label: "Tags", items: h, onRemove: E
               };
             case "icon":
               return {
@@ -122,7 +122,7 @@ let h = [{
         }
 
         function y(e) {
-          if (p)
+          if (_)
             if ("icon" === e) return {
               icon: o.qJs,
               onClick: l.dG,
@@ -142,7 +142,7 @@ let h = [{
             text: "Reset Tags",
             size: "sm",
             variant: "secondary",
-            onClick: () => g(h)
+            onClick: () => g(m)
           }) : null]
         })
       },
@@ -380,9 +380,9 @@ let h = [{
           required: s,
           error: c,
           disabled: d,
-          placeholder: _,
-          value: p = "",
-          readOnly: m,
+          placeholder: p,
+          value: _ = "",
+          readOnly: h,
           helperText: g,
           successMessage: E,
           showCharacterCount: b
@@ -391,11 +391,11 @@ let h = [{
           hideLabel: n,
           description: i,
           required: s,
-          value: p,
+          value: _,
           error: c,
           disabled: d,
-          placeholder: _,
-          readOnly: m,
+          placeholder: p,
+          readOnly: h,
           helperText: g,
           showCharacterCount: b,
           successMessage: E
@@ -428,22 +428,22 @@ let h = [{
               leading: {
                 type: "tags",
                 label: "Tags",
-                items: h.slice(0, 3)
+                items: m.slice(0, 3)
               }
             }))]
           }), (0, r.jsx)(a.izJ, {}), (0, r.jsxs)(a.C3N, {
             label: "Search Bar",
             children: [(0, r.jsx)(o.E1j, {
-              query: p,
+              query: _,
               onChange: l.dG,
               disabled: d,
-              placeholder: _
+              placeholder: p
             }), (0, r.jsx)(o.E1j, {
-              query: p,
+              query: _,
               onChange: l.dG,
               size: "sm",
               disabled: d,
-              placeholder: _
+              placeholder: p
             })]
           }), (0, r.jsx)(a.izJ, {}), (0, r.jsx)(a.C3N, {
             label: "Text Area",

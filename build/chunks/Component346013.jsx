@@ -9,8 +9,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
-  Chunk831209 = require("./831209.js"),
   Chunk399606 = require("./399606.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk367907 = require("./367907.js"),
@@ -37,7 +37,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk823708 = require("./823708.js"),
   Chunk527455 = require("./527455.js");
 
-function M(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,20 +46,20 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,23 +71,23 @@ function j(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function G(e) {
-  var t, n, a, M;
+  var t, n, a, j;
   let {
-    embedUrl: j,
+    embedUrl: k,
     message: G,
-    channel: B
-  } = e, Z = i.useRef(null), F = i.useRef(null), V = (0, R.J)(j, G), {
+    channel: Z
+  } = e, B = i.useRef(null), F = i.useRef(null), V = (0, P.J)(k, G), {
     setPopout: H
-  } = (0, b.Z)(G.id, D.d$), W = (0, E.qo)(G, B, H, true), Y = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [X, Q] = i.useState((null == V ? true : V.coverImage) == null), J = (0, c.e7)([I.ZP, T.default], () => {
+  } = (0, b.Z)(G.id, w.d$), Y = (0, E.qo)(G, Z, H, true), W = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [Q, X] = i.useState((null == V ? true : V.coverImage) == null), J = (0, l.e7)([S.ZP, I.default], () => {
     var e;
-    return I.ZP.isMember(null == V ? true : V.guildId, null == (e = T.default.getCurrentUser()) ? true : e.id)
-  }, [V]), $ = (0, c.e7)([I.ZP], () => (null == V ? true : V.authorId) != null ? I.ZP.getMember(V.guildId, V.authorId) : null), ee = (0, _.Z)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (t = V.user) ? true : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
+    return S.ZP.isMember(null == V ? true : V.guildId, null == (e = I.default.getCurrentUser()) ? true : e.id)
+  }, [V]), $ = (0, l.e7)([S.ZP], () => (null == V ? true : V.authorId) != null ? S.ZP.getMember(V.guildId, V.authorId) : null), ee = (0, p.Z)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (t = V.user) ? true : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
     var e, t;
     return [null != (e = null == $ ? true : $.colorString) ? e : "inherit", null != (t = null == $ ? true : $.colorStrings) ? t : null, null == $ ? true : $.colorRoleId]
   }, [$]), ei = (0, y.X7)(null == $ ? true : $.guildId, null != (a = null == V ? true : V.authorId) ? a : true, en), {
@@ -97,83 +97,83 @@ function G(e) {
   }, [q]), ec = i.useCallback(() => {
     q(false)
   }, [q]), eu = i.useCallback(async () => {
-    null != V && ((0, f.yw)(P.rMx.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
+    null != V && ((0, f.yw)(R.rMx.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
       media_post_id: V.threadId,
-      channel_id: B.id,
+      channel_id: Z.id,
       can_access: V.canAccess,
       is_member: J
-    }), V.canAccess ? (0, m.Z)(P.Z5c.CHANNEL(V.guildId, V.threadId, V.messageId)) : J ? (0, m.Z)(P.Z5c.CHANNEL(V.guildId, V.parentChannelId)) : await A.Ub(V.guildId, {}, {
+    }), V.canAccess ? (0, h.Z)(R.Z5c.CHANNEL(V.guildId, V.threadId, V.messageId)) : J ? (0, h.Z)(R.Z5c.CHANNEL(V.guildId, V.parentChannelId)) : await A.Ub(V.guildId, {}, {
       channelId: V.parentChannelId
     }))
-  }, [V, B, J]);
+  }, [V, Z, J]);
   if (null == V) return null;
-  let ed = (0, S.NZ)({
+  let ed = (0, T.NZ)({
       avatarDecoration: ee,
-      size: (0, p.y9)(u.EFr.SIZE_40),
+      size: (0, _.y9)(u.EFr.SIZE_40),
       canAnimate: eo
     }),
     ef = null == (n = V.user) ? true : n.getAvatarURL(V.guildId, 40, eo),
-    e_ = () => {
+    ep = () => {
       ea.enabled || es(e => !e)
     },
-    ep = () => null == V.authorId ? (0, r.jsx)(u.rz2, {
+    e_ = () => null == V.authorId ? (0, r.jsx)(u.rz2, {
       name: V.authorName,
       colorString: et,
       colorStrings: ei,
-      className: L.authorName
+      className: x.authorName
     }) : (0, r.jsx)(O.Z, {
-      targetElementRef: Z,
+      targetElementRef: B,
       userId: V.authorId,
       guildId: V.guildId,
-      channelId: B.id,
+      channelId: Z.id,
       messageId: G.id,
       roleId: er,
       avatarUrl: V.avatarUrl,
       newAnalyticsLocations: [d.Z.USERNAME],
-      children: e => (0, r.jsx)(u.rz2, U(k({}, e), {
-        ref: Z,
+      children: e => (0, r.jsx)(u.rz2, U(M({}, e), {
+        ref: B,
         name: V.authorName,
         colorString: et,
         colorStrings: ei,
-        className: L.authorName
+        className: x.authorName
       }))
     }, (0, s.Z)()),
-    eh = V.coverImage,
-    em = null != eh && (0, g.d$)(eh),
-    eg = K && (Y || z);
+    em = V.coverImage,
+    eh = null != em && (0, g.d$)(em),
+    eg = K && (W || z);
   return (0, r.jsxs)("div", {
-    className: L.postPreviewContainer,
+    className: x.postPreviewContainer,
     children: [(0, r.jsxs)("div", {
-      className: L.thumbnailContainer,
+      className: x.thumbnailContainer,
       onMouseEnter: el,
       onMouseLeave: ec,
-      children: [!X && (true === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
-        src: x,
-        alt: w.intl.string(w.t.rIbh8H),
-        className: o()(L.thumbnail, {
-          [L.spoiler]: V.shouldSpoiler
+      children: [!Q && (true === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
+        src: L,
+        alt: D.intl.string(D.t.rIbh8H),
+        className: o()(x.thumbnail, {
+          [x.spoiler]: V.shouldSpoiler
         }),
-        onContextMenu: W,
-        onError: () => Q(true)
-      }) : (0, r.jsx)(h.Z, {
-        src: !eg && em ? "".concat(eh, "?format=png") : eh,
-        backgroundSrc: "".concat(eh, "?format=png"),
-        alt: w.intl.string(w.t.rIbh8H),
+        onContextMenu: Y,
+        onError: () => X(true)
+      }) : (0, r.jsx)(m.Z, {
+        src: !eg && eh ? "".concat(em, "?format=png") : em,
+        backgroundSrc: "".concat(em, "?format=png"),
+        alt: D.intl.string(D.t.rIbh8H),
         aspectRatio: 16 / 9,
-        className: o()(L.thumbnail, {
-          [L.spoiler]: V.shouldSpoiler
+        className: o()(x.thumbnail, {
+          [x.spoiler]: V.shouldSpoiler
         }),
-        imageChildClassName: L.thumbnailImage,
-        onContextMenu: W,
-        onError: () => Q(true)
+        imageChildClassName: x.thumbnailImage,
+        onContextMenu: Y,
+        onError: () => X(true)
       })), null != V.coverImageOverlayText && (0, r.jsx)(u.P3F, {
         onClick: eu,
         children: (0, r.jsx)("div", {
-          className: L.thumbnailOverlay,
+          className: x.thumbnailOverlay,
           children: (0, r.jsxs)("div", {
-            className: L.thumbnailOverlayCta,
+            className: x.thumbnailOverlayCta,
             children: [(0, r.jsx)(N.Z, {
-              color: l.Z.WHITE
+              color: c.Z.colors.WHITE.css
             }), (0, r.jsx)(u.Text, {
               variant: "text-sm/semibold",
               color: "always-white",
@@ -183,67 +183,67 @@ function G(e) {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: L.descriptionContainer,
+      className: x.descriptionContainer,
       children: [(0, r.jsxs)("div", {
-        className: L.descriptionHeader,
+        className: x.descriptionHeader,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-md/semibold",
           color: "text-default",
-          className: L.descriptionHeaderText,
+          className: x.descriptionHeaderText,
           children: V.title
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: o()(L.descriptionHeaderText, L.descriptionSubtitle),
+          className: o()(x.descriptionHeaderText, x.descriptionSubtitle),
           children: V.subtitle
         })]
       }), (0, r.jsxs)("div", {
-        className: L.descriptionFooter,
+        className: x.descriptionFooter,
         children: [null != V.authorId && null != ef && (0, r.jsx)(O.Z, {
           targetElementRef: F,
           userId: V.authorId,
           guildId: V.guildId,
-          channelId: B.id,
+          channelId: Z.id,
           messageId: G.id,
           roleId: er,
           avatarUrl: V.avatarUrl,
           newAnalyticsLocations: [d.Z.AVATAR],
           spacing: 12,
           children: e => (0, r.jsx)("div", {
-            onMouseEnter: e_,
-            onMouseLeave: e_,
-            children: (0, r.jsx)(u.qEK, U(k({}, e), {
+            onMouseEnter: ep,
+            onMouseLeave: ep,
+            children: (0, r.jsx)(u.qEK, U(M({}, e), {
               ref: F,
               size: u.EFr.SIZE_40,
               src: ef,
-              "aria-label": w.intl.string(w.t.KXz3XB),
+              "aria-label": D.intl.string(D.t.KXz3XB),
               avatarDecoration: ed
             }))
           })
         }), (0, r.jsxs)("div", {
-          className: L.descriptionFooterContainer,
+          className: x.descriptionFooterContainer,
           children: [(0, r.jsxs)("div", {
-            className: L.descriptionFooterChannelName,
+            className: x.descriptionFooterChannelName,
             children: [null != V.channelName && (0, r.jsx)(u.EAQ, {
               size: "md",
               color: "currentColor",
-              className: L.mediaChannelIcon
+              className: x.mediaChannelIcon
             }), (0, r.jsx)(u.P3F, {
               onClick: eu,
-              className: L.channelName,
+              className: x.channelName,
               children: (0, r.jsx)(u.Heading, {
                 variant: "heading-md/semibold",
                 color: "header-primary",
-                children: null != (M = V.channelName) ? M : V.guildName
+                children: null != (j = V.channelName) ? j : V.guildName
               })
             })]
           }), null != V.authorName && (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
-            className: L.descriptionFooterAuthorContainer,
-            children: w.intl.format(w.t.voIDKa, {
+            className: x.descriptionFooterAuthorContainer,
+            children: D.intl.format(D.t.voIDKa, {
               authorName: V.authorName,
-              authorNameHook: ep
+              authorNameHook: e_
             })
           })]
         }), V.canAccess ? (0, r.jsx)(u.Button, {

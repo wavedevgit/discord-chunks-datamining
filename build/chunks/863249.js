@@ -2,7 +2,7 @@
 /** chunk id: 863249, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => S
+  ZP: () => T
 }), require("./953529.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -59,18 +59,18 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = false;
+let S = false;
 
-function T(e) {
+function I(e) {
   i.Z.dispatch({
     type: "USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW",
     guildId: e
   })
 }
-let S = {
+let T = {
   fetchVerificationForm: async (e, t) => {
-    let n = null != t ? t : _.Z.getInviteKeyForGuildId(e),
-      a = p.default.getCurrentUser(),
+    let n = null != t ? t : p.Z.getInviteKeyForGuildId(e),
+      a = _.default.getCurrentUser(),
       o = !f.ZP.isMember(e, null == a ? true : a.id);
     try {
       let t = await r.tn.get({
@@ -200,7 +200,7 @@ let S = {
         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
         guildId: e,
         request: a
-      }), (0, m.YG)(t.formFields) && n !== I && setTimeout(() => T(e), n), a
+      }), (0, h.YG)(t.formFields) && n !== S && setTimeout(() => I(e), n), a
     } catch (t) {
       let {
         status: e
@@ -240,7 +240,7 @@ let S = {
       reasonOther: a,
       responses: o
     } = e;
-    h.default.track(g.rMx.GUILD_MEMBER_APPLICATION_REPORTED, {
+    m.default.track(g.rMx.GUILD_MEMBER_APPLICATION_REPORTED, {
       application_id: n.joinRequestId,
       applicant_id: r.id,
       guild_id: t.id,

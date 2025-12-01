@@ -2,8 +2,8 @@
 /** chunk id: 570949, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => p,
-  Z: () => h
+  P: () => _,
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk314734 = require("./314734.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function _(e) {
   var t;
   let {
     application: n
@@ -31,20 +31,20 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     application: t,
     onSelect: n
   } = e, s = l.Sb.useSetting(), c = (0, o.Z)({
     id: t.id,
-    label: _.intl.string(_.t["+NP/b2"])
-  }), u = p({
+    label: p.intl.string(p.t["+NP/b2"])
+  }), u = _({
     application: t
   });
   return (0, r.jsxs)(i.v2r, {
     navId: "activity-shelf-item-context",
     onClose: a.Zy,
-    "aria-label": _.intl.string(_.t.WkcHT9),
+    "aria-label": p.intl.string(p.t.WkcHT9),
     onSelect: n,
     children: [null != u && (0, r.jsx)(i.kSQ, {
       children: u

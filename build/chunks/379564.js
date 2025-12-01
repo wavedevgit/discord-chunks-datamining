@@ -72,11 +72,11 @@ module.exports = function(e) {
       }]
     }];
   d.contains = f;
-  let _ = e.inherit(e.TITLE_MODE, {
+  let p = e.inherit(e.TITLE_MODE, {
       begin: u
     }),
-    p = "(\\(.*\\)\\s*)?\\B[-=]>",
-    h = {
+    _ = "(\\(.*\\)\\s*)?\\B[-=]>",
+    m = {
       className: "params",
       begin: "\\([^\\(]",
       returnBegin: true,
@@ -87,7 +87,7 @@ module.exports = function(e) {
         contains: ["self"].concat(f)
       }]
     },
-    m = {
+    h = {
       variants: [{
         match: [/class\s+/, u, /\s+extends\s+/, u]
       }, {
@@ -106,21 +106,21 @@ module.exports = function(e) {
     illegal: /\/\*/,
     contains: [...f, e.COMMENT("###", "###"), e.HASH_COMMENT_MODE, {
       className: "function",
-      begin: "^\\s*" + u + "\\s*=\\s*" + p,
+      begin: "^\\s*" + u + "\\s*=\\s*" + _,
       end: "[-=]>",
       returnBegin: true,
-      contains: [_, h]
+      contains: [p, m]
     }, {
       begin: /[:\(,=]\s*/,
       relevance: 0,
       contains: [{
         className: "function",
-        begin: p,
+        begin: _,
         end: "[-=]>",
         returnBegin: true,
-        contains: [h]
+        contains: [m]
       }]
-    }, m, {
+    }, h, {
       begin: u + ":",
       end: ":",
       returnBegin: true,

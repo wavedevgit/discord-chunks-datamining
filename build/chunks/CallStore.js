@@ -2,7 +2,7 @@
 /** chunk id: 523746, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -14,7 +14,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk914010 = require("./914010.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,20 +23,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -80,25 +80,25 @@ function O(e) {
   let {
     callStoreInternalState: t
   } = e;
-  g = p({}, t.calls), E = p({}, t.enqueuedRings)
+  g = _({}, t.calls), E = _({}, t.enqueuedRings)
 }
 
 function v() {
   g = {}, E = {}
 }
 
-function I() {
+function S() {
   return b(true)
 }
 
-function T(e) {
+function I(e) {
   let {
     channelId: t
   } = e;
   return b(false, t)
 }
 
-function S(e) {
+function T(e) {
   let {
     channel: t
   } = e;
@@ -149,7 +149,7 @@ function N(e) {
     region: r,
     ringing: i
   } = e, a = g[t], o = null != a && (a.regionUpdated || a.region !== r);
-  g[t] = m(p({}, g[t]), {
+  g[t] = h(_({}, g[t]), {
     messageId: n,
     region: r,
     ringing: i,
@@ -157,12 +157,12 @@ function N(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     channelId: t,
     unavailable: n
   } = e, r = g[t];
-  true === n && null != r ? g[t] = m(p({}, r), {
+  true === n && null != r ? g[t] = h(_({}, r), {
     unavailable: n
   }) : g[t] = {
     channelId: t,
@@ -174,13 +174,13 @@ function R(e) {
   }, null != E[t] && delete E[t]
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
   null == t && (E = {})
 }
-class D extends(r = Chunk442837.ZP.Store) {
+class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk944486.Z, Chunk914010.Z)
   }
@@ -209,17 +209,17 @@ class D extends(r = Chunk442837.ZP.Store) {
     }
   }
 }
-_(D, "displayName", "CallStore");
-let w = new D(Chunk570140.Z, {
+p(w, "displayName", "CallStore");
+let D = new w(Chunk570140.Z, {
   CONNECTION_OPEN: y,
   CONNECTION_CLOSED: v,
   OVERLAY_INITIALIZE: O,
-  CONNECTION_RESUMED: I,
-  CHANNEL_SELECT: T,
-  CHANNEL_DELETE: S,
+  CONNECTION_RESUMED: S,
+  CHANNEL_SELECT: I,
+  CHANNEL_DELETE: T,
   CALL_CREATE: A,
   CALL_UPDATE: N,
-  CALL_DELETE: R,
+  CALL_DELETE: P,
   CALL_ENQUEUE_RING: C,
-  VOICE_CHANNEL_SELECT: P
+  VOICE_CHANNEL_SELECT: R
 })

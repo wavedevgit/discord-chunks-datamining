@@ -2,9 +2,9 @@
 /** chunk id: 69626, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Wf: () => R,
-  ZP: () => D,
-  wz: () => P
+  Wf: () => P,
+  ZP: () => w,
+  wz: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk761652 = require("./761652.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,14 +37,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -70,7 +70,7 @@ function C(e, t) {
 function N(e, t, n, i, a) {
   if (null == e) return;
   let o = () => {
-    let r = h.Z.getChannel(e);
+    let r = m.Z.getChannel(e);
     if (null == r) return;
     let {
       command: o,
@@ -103,10 +103,10 @@ function N(e, t, n, i, a) {
       })
     }
   };
-  "" !== m.Z.getDraft(e, m.d.ChannelMessage) ? (0, l.h7j)(t => (0, r.jsx)(l.ConfirmModal, C(S({
-    header: I.intl.string(I.t.pe26Cj),
-    confirmText: I.intl.string(I.t.VkKicb),
-    cancelText: I.intl.string(I.t["ETE/oC"]),
+  "" !== h.Z.getDraft(e, h.d.ChannelMessage) ? (0, l.h7j)(t => (0, r.jsx)(l.ConfirmModal, C(T({
+    header: S.intl.string(S.t.pe26Cj),
+    confirmText: S.intl.string(S.t.VkKicb),
+    cancelText: S.intl.string(S.t["ETE/oC"]),
     onConfirm: () => o(),
     confirmButtonColor: s.zx.Colors.BRAND,
     onCloseCallback: () => {
@@ -117,23 +117,23 @@ function N(e, t, n, i, a) {
   }, t), {
     children: (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
-      children: I.intl.string(I.t["+awCIy"])
+      children: S.intl.string(S.t["+awCIy"])
     })
   }))) : o()
 }
 
-function R(e) {
+function P(e) {
   var t;
   let {
     node: n,
     stateKey: o,
     children: s
-  } = e, l = (0, a.e7)([h.Z, E.Z], () => {
+  } = e, l = (0, a.e7)([m.Z, E.Z], () => {
     var e;
-    return h.Z.getChannel(null != (e = n.channelId) ? e : E.Z.getChannelId())
+    return m.Z.getChannel(null != (e = n.channelId) ? e : E.Z.getChannelId())
   }, [n.channelId]), {
     hasSendMessagePerm: c,
-    hasUseAppCommandsPerm: m
+    hasUseAppCommandsPerm: h
   } = (0, a.cj)([g.Z], () => ({
     hasSendMessagePerm: g.Z.can(y.Plq.SEND_MESSAGES, l),
     hasUseAppCommandsPerm: g.Z.can(y.Plq.USE_APPLICATION_COMMANDS, l)
@@ -143,17 +143,17 @@ function R(e) {
   } : {
     type: "contextless"
   }, {
-    command: I
-  } = u.YZ(b, null != (t = n.commandKey) ? t : ""), T = p.dN.useSetting(), S = i.useMemo(() => {
-    if (null == I || null == l || I.untranslatedName !== n.commandName || T) returnfalse;
+    command: S
+  } = u.YZ(b, null != (t = n.commandKey) ? t : ""), I = _.dN.useSetting(), T = i.useMemo(() => {
+    if (null == S || null == l || S.untranslatedName !== n.commandName || I) returnfalse;
     let e = l.isPrivate();
-    if ((0, _.xl)(l) || !e && !c) returnfalse;
-    let t = (null == I ? true : I.applicationId) === O.bi.BUILT_IN;
-    return !!e || !!t || !!m
-  }, [l, I, c, m, n.commandName, T]), A = i.useCallback(e => {
+    if ((0, p.xl)(l) || !e && !c) returnfalse;
+    let t = (null == S ? true : S.applicationId) === O.bi.BUILT_IN;
+    return !!e || !!t || !!h
+  }, [l, S, c, h, n.commandName, I]), A = i.useCallback(e => {
     null == e || e.stopPropagation(), null != l && null != n.commandName && null != n.commandKey && N(l.id, n.commandName, n.commandKey, d.Vh.MENTION)
   }, [l, n.commandKey, n.commandName]);
-  return S ? (0, r.jsxs)(f.Z, {
+  return T ? (0, r.jsxs)(f.Z, {
     role: "link",
     onClick: A,
     children: [v.GI, s]
@@ -162,7 +162,7 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     commandId: t,
     commandName: n,
@@ -184,9 +184,9 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   return {
-    react: (e, t, n) => (0, r.jsx)(R, {
+    react: (e, t, n) => (0, r.jsx)(P, {
       node: e,
       stateKey: n.key,
       children: t(e.content, n)

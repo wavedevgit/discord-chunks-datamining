@@ -20,26 +20,26 @@ let u = (0, Chunk473749.createContext)(null),
     [e, t] = (0, i.pE)(e, t, u);
     let {
       dialogProps: f,
-      titleProps: _
+      titleProps: p
     } = (0, o.R)({
       ...e,
       "aria-labelledby": n
-    }, t), p = (0, c.useContext)(d);
+    }, t), _ = (0, c.useContext)(d);
     f["aria-label"] || f["aria-labelledby"] || e["aria-labelledby"] && (f["aria-labelledby"] = e["aria-labelledby"]);
-    let h = (0, i.aX)({
+    let m = (0, i.aX)({
         defaultClassName: "react-aria-Dialog",
         className: e.className,
         style: e.style,
         children: e.children,
         values: {
-          close: (null == p ? true : p.close) || (() => {})
+          close: (null == _ ? true : _.close) || (() => {})
         }
       }),
-      m = (0, s.z)(e, {
+      h = (0, s.z)(e, {
         global: true
       });
     return c.createElement("section", {
-      ...(0, l.d)(m, h, f),
+      ...(0, l.d)(h, m, f),
       ref: t,
       slot: e.slot || true
     }, c.createElement(i.zt, {
@@ -48,7 +48,7 @@ let u = (0, Chunk473749.createContext)(null),
           slots: {
             [i.hO]: {},
             title: {
-              ..._,
+              ...p,
               level: 2
             }
           }
@@ -57,10 +57,10 @@ let u = (0, Chunk473749.createContext)(null),
           slots: {
             [i.hO]: {},
             close: {
-              onPress: () => null == p ? true : p.close()
+              onPress: () => null == _ ? true : _.close()
             }
           }
         }]
       ]
-    }, h.children))
+    }, m.children))
   })

@@ -2,7 +2,7 @@
 /** chunk id: 158508, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,7 +24,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,18 +48,18 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e) {
+function h(e) {
   let {
     user: t,
     guildId: f,
-    channelId: p,
-    onBlock: m,
+    channelId: _,
+    onBlock: h,
     onIgnore: g,
     onUnignore: E,
     location: b = "ContextMenu",
@@ -70,32 +70,32 @@ function m(e) {
     var e;
     return (null == (e = l.default.getCurrentUser()) ? true : e.id) === O
   }, [O]), {
-    isIgnored: I,
-    isBlocked: T
+    isIgnored: S,
+    isBlocked: I
   } = (0, i.cj)([s.Z], () => ({
     isIgnored: s.Z.isIgnored(O),
     isBlocked: s.Z.isBlocked(O)
   }), [O]);
-  return v || T ? null : (0, r.jsx)(a.sNh, {
+  return v || I ? null : (0, r.jsx)(a.sNh, {
     id: "ignore",
     color: "default",
-    label: I ? u.intl.string(u.t["8wXU9B"]) : (0, r.jsx)("div", {
+    label: S ? u.intl.string(u.t["8wXU9B"]) : (0, r.jsx)("div", {
       className: d.label,
       children: u.intl.string(u.t.ytCpKs)
     }),
-    action: I ? () => {
-      null == E || E(), o.Z.unignoreUser(O, null != b ? b : "use-ignore-user-item-web", null != p ? p : true)
+    action: S ? () => {
+      null == E || E(), o.Z.unignoreUser(O, null != b ? b : "use-ignore-user-item-web", null != _ ? _ : true)
     } : () => {
       (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("97652"), n.e("13093")]).then(n.bind(n, 240515));
-        return n => (0, r.jsx)(e, h(_({}, n), {
+        return n => (0, r.jsx)(e, m(p({}, n), {
           guildId: f,
-          channelId: p,
+          channelId: _,
           user: t,
           onIgnore: g,
-          onBlock: m,
+          onBlock: h,
           location: b
         }))
       }, {

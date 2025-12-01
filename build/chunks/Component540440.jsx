@@ -2,7 +2,7 @@
 /** chunk id: 540440, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => _,
+  B: () => p,
   y: () => f
 });
 var Chunk54381 = require("./54381.js");
@@ -40,15 +40,15 @@ function f(e) {
   return (0, o.dX)(e) ? c.intl.string(c.t["4f8iut"]) : (0, o.y0)(e) ? c.intl.string(c.t.yX2hNy) : (0, o.kq)(e) ? c.intl.string(c.t.oSs8eg) : c.intl.string(c.t.bK9GT1)
 }
 
-function _(e) {
+function p(e) {
   let {
     user: t,
     entry: c,
     display: u,
-    onAction: _
-  } = e, p = (0, l.Z)(), h = (0, i.e7)([s.default], () => s.default.getCurrentUser());
-  if (t.id !== (null == h ? true : h.id) || "recent" !== u || !(0, o.Rh)(c)) return null;
-  let m = () => {
+    onAction: p
+  } = e, _ = (0, l.Z)(), m = (0, i.e7)([s.default], () => s.default.getCurrentUser());
+  if (t.id !== (null == m ? true : m.id) || "recent" !== u || !(0, o.Rh)(c)) return null;
+  let h = () => {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -56,8 +56,8 @@ function _(e) {
       return n => (0, r.jsx)(e, d({
         entry: c,
         user: t,
-        onAction: _,
-        onOpenGameSettings: p
+        onAction: p,
+        onOpenGameSettings: _
       }, n))
     })
   };
@@ -65,9 +65,9 @@ function _(e) {
     id: "delete-entry-history",
     label: f(c),
     action: () => {
-      null == _ || _({
+      null == p || p({
         action: "PRESS_DELETE_HISTORY_MENU_ITEM"
-      }), m()
+      }), h()
     },
     color: "danger"
   })

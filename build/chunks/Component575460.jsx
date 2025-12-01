@@ -20,7 +20,7 @@ function u(e) {
     onClick: u
   } = e, d = (0, l.Z)(n, t.ref_id), f = () => {
     null == d || d.navigateToChannel(), u()
-  }, _ = (0, r.jsx)(o.Z, {
+  }, p = (0, r.jsx)(o.Z, {
     guildId: n,
     emojiId: t.emoji_id,
     emojiName: t.emoji_name
@@ -32,7 +32,7 @@ function u(e) {
     role: "link",
     children: [(0, r.jsx)("div", {
       className: c.emojiContainer,
-      children: _
+      children: p
     }), (0, r.jsxs)("div", {
       className: c.infoContainer,
       children: [(0, r.jsx)(i.Text, {

@@ -21,7 +21,7 @@ function l(e) {
     FallbackIcon: d
   } = e, f = null != l ? {
     "--custom-background-url": "url(".concat(l.toString(), ")")
-  } : true, _ = null != n && "" !== n;
+  } : true, p = null != n && "" !== n;
   return (0, r.jsxs)("div", {
     className: o.container,
     children: [(0, r.jsxs)("div", {
@@ -51,7 +51,7 @@ function l(e) {
           color: "header-primary",
           variant: "heading-xl/semibold",
           children: c
-        }), _ && (0, r.jsx)(a.xvT, {
+        }), p && (0, r.jsx)(a.xvT, {
           color: "text-default",
           variant: "text-md/normal",
           className: o.description,

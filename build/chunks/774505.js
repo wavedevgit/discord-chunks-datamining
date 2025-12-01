@@ -19,18 +19,18 @@ var Chunk698091 = require("./698091.js"),
   f = function(e) {
     return !!e && e[d] === e
   },
-  _ = function(e) {
+  p = function(e) {
     return e && e[d]
   },
-  p = function(e, t) {
+  _ = function(e, t) {
     return i.defineHidden(e, d, t)
   },
-  h = function(e) {
+  m = function(e) {
     return e && e[d] && e[d].getPayload()
   },
-  m = function() {
+  h = function() {
     function e() {
-      this.payload = true, p(this, this)
+      this.payload = true, _(this, this)
     }
     return module.prototype.getPayload = function() {
       return this.payload || []
@@ -55,7 +55,7 @@ var Chunk698091 = require("./698091.js"),
       var e = this.done;
       this.done = false, i.is.num(this._value) && (this.elapsedTime = 0, this.lastPosition = this._value, e && (this.lastVelocity = null), this.v0 = null)
     }, t
-  }(m),
+  }(h),
   E = function(e) {
     function t(t, n) {
       var r;
@@ -117,12 +117,12 @@ var Chunk698091 = require("./698091.js"),
     }, n._addToPayload = function(e) {
       var t = this;
       i.getFluidConfig(e) && b.current && b.current.dependencies.add(e);
-      var n = h(e);
+      var n = m(e);
       n && i.each(n, function(e) {
         return t.add(e)
       })
     }, t
-  }(m),
+  }(h),
   O = function(e) {
     function t(t, n) {
       var r;
@@ -172,7 +172,7 @@ var Chunk698091 = require("./698091.js"),
       }))
     }, t
   }(y),
-  I = function(e, t) {
+  S = function(e, t) {
     return c.forwardRef(function(n, r) {
       var a = c.useRef(null),
         o = !i.is.fun(e) || e.prototype && e.prototype.isReactComponent,
@@ -199,16 +199,16 @@ var Chunk698091 = require("./698091.js"),
           }
       }), c.createElement(e, s({}, t.getComponentProps(d.getValue()), {
         ref: o && function(e) {
-          a.current = T(r, e)
+          a.current = I(r, e)
         }
       }))
     })
   };
 
-function T(e, t) {
+function I(e, t) {
   return e && (i.is.fun(e) ? e(t) : e.current = t), t
 }
-var S = Symbol.for("AnimatedComponent"),
+var T = Symbol.for("AnimatedComponent"),
   A = function(e, t) {
     var n = true === t ? {} : t,
       r = n.applyAnimatedValues,
@@ -229,7 +229,7 @@ var S = Symbol.for("AnimatedComponent"),
       },
       u = function(e) {
         var t = C(e) || "Anonymous";
-        return (e = i.is.str(e) ? I(e, c) : e[S] || (e[S] = I(e, c))).displayName = "Animated(" + t + ")", e
+        return (e = i.is.str(e) ? S(e, c) : e[T] || (e[T] = S(e, c))).displayName = "Animated(" + t + ")", e
       };
     return i.each(e, function(e, t) {
       i.is.str(t) || (t = C(e)), u[t] = u(e)
@@ -240,4 +240,4 @@ var S = Symbol.for("AnimatedComponent"),
   C = function(e) {
     return i.is.str(e) ? e : e && i.is.str(e.displayName) ? e.displayName : i.is.fun(e) && e.name || null
   };
-exports.Animated = m, exports.AnimatedArray = O, exports.AnimatedObject = y, exports.AnimatedProps = v, exports.AnimatedString = E, exports.AnimatedValue = g, exports.createHost = A, exports.getAnimated = _, exports.getPayload = h, exports.isAnimated = f, exports.setAnimated = p
+exports.Animated = h, exports.AnimatedArray = O, exports.AnimatedObject = y, exports.AnimatedProps = v, exports.AnimatedString = E, exports.AnimatedValue = g, exports.createHost = A, exports.getAnimated = p, exports.getPayload = m, exports.isAnimated = f, exports.setAnimated = _

@@ -55,11 +55,11 @@ let u = (e, t, n) => c({
       avatarSrc: l,
       description: c,
       timestamp: f,
-      episodeDescription: _,
-      colors: p,
-      channelId: h
-    } = e, m = n.extra.media_title, g = u(l, t), E = e => {
-      let t = p.map((e, t) => ({
+      episodeDescription: p,
+      colors: _,
+      channelId: m
+    } = e, h = n.extra.media_title, g = u(l, t), E = e => {
+      let t = _.map((e, t) => ({
         color: e,
         stop: t
       }));
@@ -113,7 +113,7 @@ let u = (e, t, n) => c({
         h: 32,
         w: s.kC
       }, true);
-      let a = d(f, _);
+      let a = d(f, p);
       (0, o.J)({
         canvas: e,
         badges: a,
@@ -127,9 +127,9 @@ let u = (e, t, n) => c({
       exportConfigs: {
         format: i.kH.CloudUpload,
         quality: 1,
-        fileName: "user-reacting-to-".concat(m, ".png").toLowerCase(),
+        fileName: "user-reacting-to-".concat(h, ".png").toLowerCase(),
         fileType: "png",
-        channelId: h
+        channelId: m
       }
     })
   }

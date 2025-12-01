@@ -14,7 +14,7 @@ var Chunk50153 = require("./50153.js"),
   u = Chunk65183.Record,
   d = Chunk65183.Repeat,
   f = c(),
-  _ = u({
+  p = u({
     key: "",
     type: "unstyled",
     text: "",
@@ -22,23 +22,23 @@ var Chunk50153 = require("./50153.js"),
     depth: 0,
     data: l()
   }),
-  p = function(e) {
+  _ = function(e) {
     if (!e) return e;
     var t = e.characterList,
       n = e.text;
     return n && !t && (e.characterList = s(d(i.EMPTY, n.length))), e
   };
 
-function h(e, t) {
+function m(e, t) {
   return e.getStyle() === t.getStyle()
 }
 
-function m(e, t) {
+function h(e, t) {
   return e.getEntity() === t.getEntity()
 }
 module.exports = function(e) {
   function t(t) {
-    return e.call(this, p(t)) || this
+    return e.call(this, _(t)) || this
   }
   r(t, e);
   var n = t.prototype;
@@ -63,8 +63,8 @@ module.exports = function(e) {
     var t = this.getCharacterList().get(e);
     return t ? t.getEntity() : null
   }, n.findStyleRanges = function(e, t) {
-    a(this.getCharacterList(), h, e, t)
-  }, n.findEntityRanges = function(e, t) {
     a(this.getCharacterList(), m, e, t)
+  }, n.findEntityRanges = function(e, t) {
+    a(this.getCharacterList(), h, e, t)
   }, t
-}(_)
+}(p)

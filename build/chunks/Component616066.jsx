@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk407780 = require("./407780.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,8 +49,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -61,10 +61,10 @@ let g = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       user: n,
       isHighlighted: i = false,
       isPurchased: u = false,
-      avatarSize: _ = s.EFr.SIZE_152,
-      avatarPlaceholderSrc: h,
+      avatarSize: p = s.EFr.SIZE_152,
+      avatarPlaceholderSrc: m,
       className: E
-    } = e, b = (0, l.y9)(_), {
+    } = e, b = (0, l.y9)(p), {
       avatarDecorationSrc: y,
       eventHandlers: O,
       avatarPlaceholderSrc: v
@@ -73,17 +73,17 @@ let g = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       avatarDecorationOverride: (null == t ? true : t.type) === o.Z.AVATAR_DECORATION ? t : true,
       size: b,
       onlyAnimateOnHoverOrFocus: !i
-    }), I = d.intl.formatToPlainString(d.t.Do2lxE, {
+    }), S = d.intl.formatToPlainString(d.t.Do2lxE, {
       a11y_text: t.label
     });
-    return (0, r.jsx)(g, m(p({}, O), {
+    return (0, r.jsx)(g, h(_({}, O), {
       avatarDecoration: y,
-      src: i ? null == n ? true : n.getAvatarURL(true, 152, true) : null != h ? h : v,
+      src: i ? null == n ? true : n.getAvatarURL(true, 152, true) : null != m ? m : v,
       imageClassName: i ? f.fadeInAvatarImg : true,
       className: a()(E, f.avatar, {
         [f.avatarPurchased]: u && !i
       }),
-      size: _,
-      "aria-label": I
+      size: p,
+      "aria-label": S
     }))
   }

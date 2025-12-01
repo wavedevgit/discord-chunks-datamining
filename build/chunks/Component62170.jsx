@@ -54,7 +54,7 @@ let u = Chunk473749.forwardRef(function(e, t) {
     playing: c,
     playbackRate: u
   } = e, d = l(e, ["muted", "volume", "playing", "playbackRate"]);
-  let [f, _] = (0, a.Z)(t);
+  let [f, p] = (0, a.Z)(t);
   return i.useEffect(() => {
     let e = f.current;
     null != e && true !== n && (e.muted = n)
@@ -68,6 +68,6 @@ let u = Chunk473749.forwardRef(function(e, t) {
     let e = f.current;
     null != e && true !== c && (c ? e.play() : e.pause())
   }, [f, c]), (0, r.jsx)("audio", s({
-    ref: _
+    ref: p
   }, d))
 })

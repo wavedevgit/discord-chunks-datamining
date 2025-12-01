@@ -30,10 +30,10 @@ function E(e) {
     className: y
   } = e, {
     themeType: O
-  } = (0, p.z)(), v = O === h.l.MODAL_V2, I = f.ZP.getName(n, a, t), {
-    trackUserProfileAction: T
-  } = (0, _.KZ)(), {
-    newestAnalyticsLocation: S
+  } = (0, _.z)(), v = O === m.l.MODAL_V2, S = f.ZP.getName(n, a, t), {
+    trackUserProfileAction: I
+  } = (0, p.KZ)(), {
+    newestAnalyticsLocation: T
   } = (0, l.ZP)(), {
     acceptFriendRequest: A,
     cancelFriendRequest: C
@@ -41,33 +41,33 @@ function E(e) {
     userId: t.id,
     applicationId: E,
     isGameRelationship: b,
-    location: S
+    location: T
   }), N = i.useCallback(() => {
-    A(), T({
+    A(), I({
       action: b ? "ACCEPT_GAME_FRIEND_REQUEST" : "ACCEPT_FRIEND_REQUEST"
     })
-  }, [A, b, T]), R = i.useCallback(() => {
-    C(), T({
+  }, [A, b, I]), P = i.useCallback(() => {
+    C(), I({
       action: b ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [C, b, T]), P = null != E, D = (0, c.q)(E);
-  return P && null == D ? null : (0, r.jsxs)("div", {
+  }, [C, b, I]), R = null != E, w = (0, c.q)(E);
+  return R && null == w ? null : (0, r.jsxs)("div", {
     className: o()(g.container, y),
-    children: [P ? (0, r.jsx)(s.Text, {
+    children: [R ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
-      children: m.intl.format(b ? m.t.syHjLL : m.t.V15uUI, {
-        username: I,
+      children: h.intl.format(b ? h.t.syHjLL : h.t.V15uUI, {
+        username: S,
         applicationIcon: () => (0, r.jsx)(u.Z, {
           className: g.gameIcon,
-          game: D,
+          game: w,
           size: u.A.XXSMALL
-        }, null == D ? true : D.id),
-        applicationName: null == D ? true : D.name
+        }, null == w ? true : w.id),
+        applicationName: null == w ? true : w.name
       })
     }) : (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
-      children: m.intl.format(m.t.uIomXw, {
-        username: I
+      children: h.intl.format(h.t.uIomXw, {
+        username: S
       })
     }), (0, r.jsxs)("div", {
       className: g.buttonContainer,
@@ -75,12 +75,12 @@ function E(e) {
         variant: v ? "secondary" : "primary",
         size: "sm",
         onClick: N,
-        text: m.intl.string(m.t.Zcibdf)
+        text: h.intl.string(h.t.Zcibdf)
       }), (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
-        onClick: R,
-        text: m.intl.string(m.t.xuio0C)
+        onClick: P,
+        text: h.intl.string(h.t.xuio0C)
       })]
     })]
   })

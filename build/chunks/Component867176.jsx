@@ -2,7 +2,7 @@
 /** chunk id: 867176, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R,
+  Z: () => P,
   b: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -46,7 +46,7 @@ function v(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,13 +57,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -96,33 +96,33 @@ function N(e) {
     guildId: b,
     pendingBanner: O,
     children: v,
-    className: I,
-    avatarSize: T,
-    avatarOffsetX: S,
+    className: S,
+    avatarSize: I,
+    avatarOffsetX: T,
     avatarOffsetY: A,
     bannerWidth: N,
-    bannerHeight: R,
-    themePadding: P,
-    pendingAccentColor: D,
-    animateOnHoverOrFocusOnly: w = false
-  } = e, L = (0, _.Dt)(), [x, M] = i.useState(false), k = (0, l.e7)([m.Z], () => m.Z.isFocused()), j = h.QK.getSetting(), {
+    bannerHeight: P,
+    themePadding: R,
+    pendingAccentColor: w,
+    animateOnHoverOrFocusOnly: D = false
+  } = e, x = (0, p.Dt)(), [L, j] = i.useState(false), M = (0, l.e7)([h.Z], () => h.Z.isFocused()), k = m.QK.getSetting(), {
     bannerSrc: U,
     status: G
   } = (0, E.Z)({
     displayProfile: a,
     pendingBanner: O,
     size: N,
-    canAnimate: w || !j ? x : k
-  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), Z = n.getAvatarURL(b, (0, u.pxk)(T)), F = (0, s._i)((0, d.ZP)(Z, B, false)), V = (0, f.Z)(null != (t = null != D ? D : null == a ? true : a.primaryColor) ? t : F).hex, H = C(T), W = H + S - P, Y = R - A - P;
+    canAnimate: D || !k ? L : M
+  }), Z = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), B = n.getAvatarURL(b, (0, u.pxk)(I)), F = (0, s._i)((0, d.ZP)(B, Z, false)), V = (0, f.Z)(null != (t = null != w ? w : null == a ? true : a.primaryColor) ? t : F).hex, H = C(I), Y = H + T - R, W = P - A - R;
   return (0, r.jsxs)("svg", {
     className: y.mask,
-    viewBox: "0 0 ".concat(N, " ").concat(R),
+    viewBox: "0 0 ".concat(N, " ").concat(P),
     style: {
       minWidth: N,
-      minHeight: R
+      minHeight: P
     },
     children: [(0, r.jsxs)("mask", {
-      id: L,
+      id: x,
       children: [(0, r.jsx)("rect", {
         fill: "white",
         x: "0",
@@ -131,8 +131,8 @@ function N(e) {
         height: "100%"
       }), (0, r.jsx)("circle", {
         fill: "black",
-        cx: W,
-        cy: Y,
+        cx: Y,
+        cy: W,
         r: H
       })]
     }), (0, r.jsxs)("foreignObject", {
@@ -141,18 +141,18 @@ function N(e) {
       width: "100%",
       height: "100%",
       overflow: "visible",
-      mask: "url(#".concat(L, ")"),
+      mask: "url(#".concat(x, ")"),
       children: [v, (0, r.jsx)("div", {
-        className: o()(y.banner, I),
-        onMouseMove: () => M(true),
-        onMouseLeave: () => M(false),
+        className: o()(y.banner, S),
+        onMouseMove: () => j(true),
+        onMouseLeave: () => j(false),
         style: {
-          height: R,
-          minHeight: R,
+          height: P,
+          minHeight: P,
           backgroundImage: null != U ? "url(".concat(U, ")") : true,
           backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : V
         },
-        children: !j && (0, g.F8)(U) && (0, r.jsx)(p.Z, {
+        children: !k && (0, g.F8)(U) && (0, r.jsx)(_.Z, {
           className: y.gifTag
         })
       })]
@@ -160,15 +160,15 @@ function N(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   var {
     themeType: t,
     displayProfile: n,
     canUsePremiumProfileCustomization: i = false
-  } = e, a = S(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]);
+  } = e, a = T(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]);
   let o = b.q[t],
     s = i || (null == n ? true : n.canUsePremiumProfileCustomization) || false;
-  return (0, r.jsx)(N, T(v({}, a, o), {
+  return (0, r.jsx)(N, I(v({}, a, o), {
     displayProfile: n,
     themePadding: s ? o.themePadding : 0
   }))

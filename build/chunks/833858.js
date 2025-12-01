@@ -47,12 +47,12 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = () => ({
+let _ = () => ({
     [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTI),
       icon: Chunk136779
@@ -74,7 +74,7 @@ let p = () => ({
       icon: Chunk970683.FG
     }
   }),
-  h = () => ({
+  m = () => ({
     [Chunk505905.tN.BRB]: {
       title: Chunk388032.intl.string(Chunk388032.t.fFTJTI),
       emoji: {
@@ -111,7 +111,7 @@ let p = () => ({
       }
     }
   }),
-  m = () => _(d({}, h()), {
+  h = () => p(d({}, m()), {
     [Chunk505905.tN.CHILLING]: {
       title: Chunk388032.intl.string(Chunk388032.t.IeolFa),
       emoji: {
@@ -123,12 +123,12 @@ let p = () => ({
   g = e => {
     switch (e) {
       case "illocons":
-        return p();
+        return _();
       case "twemoji":
       default:
-        return h();
+        return m();
       case "twemojimild":
-        return m()
+        return h()
     }
   },
   E = function(e, t) {

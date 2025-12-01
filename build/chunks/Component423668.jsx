@@ -23,13 +23,13 @@ let l = {
         showRadioItems: u,
         showSwitchItems: d,
         showSubmenus: f,
-        showIcons: _,
-        showHints: p,
-        showSubtext: h,
-        showDisabledItems: m,
+        showIcons: p,
+        showHints: _,
+        showSubtext: m,
+        showDisabledItems: h,
         showColoredItems: g,
         dangerItemColor: E
-      } = e, [b, y] = i.useState(true), [O, v] = i.useState(false), [I, T] = i.useState("text"), [S, A] = i.useState("cozy"), [C, N] = i.useState(true), R = e => (0, r.jsxs)(o.v2r, {
+      } = e, [b, y] = i.useState(true), [O, v] = i.useState(false), [S, I] = i.useState("text"), [T, A] = i.useState("cozy"), [C, N] = i.useState(true), P = e => (0, r.jsxs)(o.v2r, {
         navId: "menu-story",
         "aria-label": "Story Menu",
         variant: t,
@@ -39,14 +39,14 @@ let l = {
         children: [(0, r.jsx)(o.sNh, {
           id: "edit",
           label: "Edit Message",
-          icon: _ ? o.vdY : true,
-          hint: p ? "⌘E" : true,
+          icon: p ? o.vdY : true,
+          hint: _ ? "⌘E" : true,
           action: () => {}
         }), (0, r.jsx)(o.sNh, {
           id: "pin",
           label: "Pin Message",
-          icon: _ ? o.qQX : true,
-          subtext: h ? "Pin this message to the channel" : true,
+          icon: p ? o.qQX : true,
+          subtext: m ? "Pin this message to the channel" : true,
           hint: (0, r.jsx)(o.$jN, {
             type: o.$jN.Type.PULSING_ELLIPSIS
           }),
@@ -54,12 +54,12 @@ let l = {
         }), (0, r.jsx)(o.sNh, {
           id: "copy",
           label: "Copy Message Link",
-          icon: _ ? o.TIy : true,
+          icon: p ? o.TIy : true,
           action: () => {}
-        }), m && (0, r.jsx)(o.sNh, {
+        }), h && (0, r.jsx)(o.sNh, {
           id: "disabled",
           label: "Disabled Item",
-          icon: _ ? o.ewm : true,
+          icon: p ? o.ewm : true,
           disabled: true,
           action: () => {}
         }), g && (0, r.jsxs)(r.Fragment, {
@@ -67,26 +67,26 @@ let l = {
             id: "brand-item",
             label: "Brand Item",
             color: "brand",
-            icon: _ ? o.ewm : true,
+            icon: p ? o.ewm : true,
             action: () => {}
           }), (0, r.jsx)(o.sNh, {
             id: "premium-item",
             label: "Premium Item",
             color: "premium",
-            icon: _ ? o.ewm : true,
+            icon: p ? o.ewm : true,
             action: () => {}
           }), (0, r.jsx)(o.sNh, {
             id: "success-item",
             label: "Success Item",
             color: "success",
-            icon: _ ? o.ewm : true,
+            icon: p ? o.ewm : true,
             action: () => {}
           })]
         }), f && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.Clw, {}), (0, r.jsxs)(o.sNh, {
             id: "submenu",
             label: "More Options",
-            icon: _ ? o.ewm : true,
+            icon: p ? o.ewm : true,
             children: [(0, r.jsx)(o.sNh, {
               id: "submenu-1",
               label: "Submenu Item 1",
@@ -127,14 +127,14 @@ let l = {
               id: "radio-text",
               group: "channel-type",
               label: "Text Channel",
-              checked: "text" === I,
-              action: () => T("text")
+              checked: "text" === S,
+              action: () => I("text")
             }), (0, r.jsx)(o.k5B, {
               id: "radio-voice",
               group: "channel-type",
               label: "Voice Channel",
-              checked: "voice" === I,
-              action: () => T("voice")
+              checked: "voice" === S,
+              action: () => I("voice")
             })]
           }), (0, r.jsx)(o.Clw, {}), (0, r.jsxs)(o.kSQ, {
             label: "View Mode",
@@ -142,13 +142,13 @@ let l = {
               id: "radio-cozy",
               group: "view-mode",
               label: "Cozy",
-              checked: "cozy" === S,
+              checked: "cozy" === T,
               action: () => A("cozy")
             }), (0, r.jsx)(o.k5B, {
               id: "radio-compact",
               group: "view-mode",
               label: "Compact",
-              checked: "compact" === S,
+              checked: "compact" === T,
               action: () => A("compact")
             })]
           })]
@@ -173,10 +173,10 @@ let l = {
           id: "delete",
           label: "Delete Message",
           color: E,
-          icon: _ ? o.XHJ : true,
+          icon: p ? o.XHJ : true,
           action: () => {}
         })]
-      }), P = i.useRef(null);
+      }), R = i.useRef(null);
       return (0, r.jsxs)("div", {
         className: s.container,
         children: [!C && (0, r.jsx)(a.zxk, {
@@ -187,15 +187,15 @@ let l = {
             let {
               closePopout: t
             } = e;
-            return R(t)
+            return P(t)
           },
           position: "bottom",
           align: "center",
           shouldShow: true,
-          targetElementRef: P,
+          targetElementRef: R,
           onRequestClose: () => N(false),
           children: () => (0, r.jsx)("div", {
-            ref: P,
+            ref: R,
             style: {
               width: 1,
               height: 1,

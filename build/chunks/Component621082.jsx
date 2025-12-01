@@ -2,9 +2,9 @@
 /** chunk id: 621082, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gm: () => h,
-  Uj: () => p,
-  ZI: () => _
+  Gm: () => m,
+  Uj: () => _,
+  ZI: () => p
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,30 +17,30 @@ var Chunk120356 = require("./120356.js"),
   Chunk173258 = require("./173258.js"),
   Chunk494933 = require("./494933.js");
 let f = 48,
-  _ = 5;
+  p = 5;
 
-function p(e) {
+function _(e) {
   let {
     description: t,
     imgSrc: n,
     renderPurchaseButton: i,
-    onPurchase: p,
-    title: h,
-    onDetails: m,
+    onPurchase: _,
+    title: m,
+    onDetails: h,
     benefitItems: g,
     benefitsSummary: E,
     subtitle: b,
-    maxBenefits: y = _
+    maxBenefits: y = p
   } = e;
   return (0, r.jsx)(o.tE, {
     children: (0, r.jsxs)("div", {
       className: a()(u.container, d.hoverCard),
       tabIndex: 0,
       onClick: () => {
-        null != m ? m() : null != p && p()
+        null != h ? h() : null != _ && _()
       },
       onKeyUp: e => {
-        "Enter" === e.key && (e.stopPropagation(), e.preventDefault(), null != m ? m() : null != p && p())
+        "Enter" === e.key && (e.stopPropagation(), e.preventDefault(), null != h ? h() : null != _ && _())
       },
       children: [(0, r.jsx)("div", {
         className: u.card,
@@ -49,7 +49,7 @@ function p(e) {
           children: [(0, r.jsx)(l.xvT, {
             tag: "div",
             variant: "heading-lg/semibold",
-            children: h
+            children: m
           }), (0, r.jsx)("div", {
             className: u.image,
             children: null != n ? (0, r.jsx)("img", {
@@ -63,7 +63,7 @@ function p(e) {
             })
           }), null != i ? i({
             onClick: e => {
-              e.stopPropagation(), null == p || p()
+              e.stopPropagation(), null == _ || _()
             }
           }) : null, b, null != t && "" !== t && (0, r.jsx)(l.xvT, {
             className: u.description,
@@ -107,7 +107,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     icon: t,
     header: n,

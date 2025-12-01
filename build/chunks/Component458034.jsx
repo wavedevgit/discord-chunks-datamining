@@ -2,9 +2,9 @@
 /** chunk id: 458034, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Am: () => h,
-  ZP: () => m,
-  s$: () => _
+  Am: () => m,
+  ZP: () => h,
+  s$: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -52,19 +52,19 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = "guild-connection-roles";
+let p = "guild-connection-roles";
 
-function p() {
+function _() {
   return {
-    modalKey: _,
+    modalKey: p,
     contextKey: Chunk481060.z1l,
     onCloseRequest: () => {
-      (0, Chunk481060.Mr3)(_, Chunk481060.z1l)
+      (0, Chunk481060.Mr3)(p, Chunk481060.z1l)
     }
   }
 }
 
-function h(e) {
+function m(e) {
   (0, a.ZDy)(async () => {
     let {
       default: t
@@ -72,14 +72,14 @@ function h(e) {
     return n => (0, r.jsx)(t, f(u({}, n), {
       guildId: e
     }))
-  }, p())
+  }, _())
 }
 
-function m(e) {
+function h(e) {
   return (0, i.e7)([o.Z], () => (0, s.kQ)(o.Z.getSortedRoles(e.id)), [e]) ? (0, r.jsx)(a.sNh, {
     id: "guild-connection-roles",
     label: l.intl.string(l.t.ghtnss),
     icon: a.xPt,
-    action: () => h(e.id)
+    action: () => m(e.id)
   }) : null
 }

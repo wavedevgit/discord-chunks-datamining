@@ -2,7 +2,7 @@
 /** chunk id: 22494, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk81825 = require("./81825.js"),
   Chunk973616 = require("./973616.js"),
@@ -50,9 +50,9 @@ function f(e, t) {
   }), e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,21 +60,21 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class h extends Chunk81825.Z {
+class m extends Chunk81825.Z {
   static fromServer(e) {
     var t, n, {
         user_id: r,
         wishlist_items: c
       } = e,
-      d = _(e, ["user_id", "wishlist_items"]);
-    let p = c.map(e => {
+      d = p(e, ["user_id", "wishlist_items"]);
+    let _ = c.map(e => {
       switch (e.sku_product_line) {
         case l.POd.COLLECTIBLES:
           return o.Z.fromServer(e);
@@ -84,9 +84,9 @@ class h extends Chunk81825.Z {
           return a.Z.fromServer(e)
       }
     });
-    return new h(f(u({}, d), {
+    return new m(f(u({}, d), {
       userId: r,
-      items: p,
+      items: _,
       applications: null != (n = null == (t = d.applications) ? true : t.map(e => i.ZP.createFromServer(e))) ? n : true
     }))
   }

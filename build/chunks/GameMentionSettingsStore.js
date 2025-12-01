@@ -2,7 +2,7 @@
 /** chunk id: 893642, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -35,13 +35,13 @@ function d() {
 function f() {
   c = {}
 }
-class _ extends(r = Chunk442837.ZP.Store) {
+class p extends(r = Chunk442837.ZP.Store) {
   getMute(e) {
     return c[e]
   }
 }
-l(_, "displayName", "GameMentionSettingsStore");
-let p = new _(Chunk570140.Z, {
+l(p, "displayName", "GameMentionSettingsStore");
+let _ = new p(Chunk570140.Z, {
   REPLACE_GAME_MENTION_SETTINGS: u,
   CONNECTION_OPEN: d,
   LOGOUT: f

@@ -2,8 +2,8 @@
 /** chunk id: 115130, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => _,
-  Z: () => T
+  O: () => p,
+  Z: () => I
 }), require("./997841.js");
 var r, Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
@@ -42,14 +42,14 @@ function d() {
   }
 }
 let f = d();
-var _ = function(e) {
+var p = function(e) {
   return e.INITIALIZED = "INITIALIZED", e.LOADING = "LOADING", e.LOADED = "LOADED", e.ERROR = "ERROR", e
 }({});
-let p = "INITIALIZED",
-  h = [];
+let _ = "INITIALIZED",
+  m = [];
 
-function m() {
-  f = d(), p = "INITIALIZED", h = []
+function h() {
+  f = d(), _ = "INITIALIZED", m = []
 }
 
 function g() {
@@ -68,7 +68,7 @@ function b(e) {
     applicationId: t,
     timestamp: n
   } = e;
-  if (null == h.find(e => e.id === t)) returnfalse;
+  if (null == m.find(e => e.id === t)) returnfalse;
   f.lastUsedObject[t] = n
 }
 
@@ -76,14 +76,14 @@ function y(e) {
   let {
     applications: t
   } = e;
-  p = "LOADED", h = t.filter(e => null != e.flags && (0, i.yE)(e.flags, l.udG.EMBEDDED))
+  _ = "LOADED", m = t.filter(e => null != e.flags && (0, i.yE)(e.flags, l.udG.EMBEDDED))
 }
 
 function O(e) {
   let {
     type: t
   } = e;
-  p = "ERROR"
+  _ = "ERROR"
 }
 
 function v(e) {
@@ -92,7 +92,7 @@ function v(e) {
   } = e;
   f.filter = t
 }
-class I extends(r = Chunk442837.ZP.PersistedStore) {
+class S extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     f = u({}, d(), null != e ? e : {})
   }
@@ -100,7 +100,7 @@ class I extends(r = Chunk442837.ZP.PersistedStore) {
     return f
   }
   getIsEnabled() {
-    return Chunk695346.Sb.getSetting() && h.length > 0
+    return Chunk695346.Sb.getSetting() && m.length > 0
   }
   getLastUsedObject() {
     return f.lastUsedObject
@@ -112,26 +112,26 @@ class I extends(r = Chunk442837.ZP.PersistedStore) {
     return this.getIsEnabled() ? f.activityUrlOverride : null
   }
   getFetchState() {
-    return p
+    return _
   }
   getFilter() {
     return this.getIsEnabled() ? f.filter : ""
   }
   getDeveloperShelfItems() {
-    return this.getIsEnabled() ? h : []
+    return this.getIsEnabled() ? m : []
   }
   inDevModeForApplication(e) {
-    return this.getIsEnabled() && null != h.find(t => t.id === e)
+    return this.getIsEnabled() && null != m.find(t => t.id === e)
   }
 }
-c(I, "displayName", "DeveloperActivityShelfStore"), c(I, "persistKey", "DeveloperActivityShelfStore"), c(I, "migrations", [e => (delete e.isEnabled, u({}, e))]);
-let T = new I(Chunk570140.Z, {
-  LOGOUT: m,
+c(S, "displayName", "DeveloperActivityShelfStore"), c(S, "persistKey", "DeveloperActivityShelfStore"), c(S, "migrations", [e => (delete e.isEnabled, u({}, e))]);
+let I = new S(Chunk570140.Z, {
+  LOGOUT: h,
   DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: g,
   DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: E,
   DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: b,
   DEVELOPER_ACTIVITY_SHELF_FETCH_START() {
-    p = "LOADING"
+    _ = "LOADING"
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: y,
   DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: O,

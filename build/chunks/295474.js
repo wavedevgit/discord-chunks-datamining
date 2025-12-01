@@ -43,14 +43,14 @@ function E(e) {
       o = l.ZP.getMember(r, a),
       u = (0, f.Ow)(null == o ? true : o.flags);
     if (0 === u.size) return t;
-    if (u.has(p.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME))
+    if (u.has(_.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME))
       if (null == e) {
-        var _;
-        t.nick = [m.intl.formatToPlainString(m.t.WBUh3O, {
-          guildName: null != (_ = i.name) ? _ : ""
+        var p;
+        t.nick = [h.intl.formatToPlainString(h.t.WBUh3O, {
+          guildName: null != (p = i.name) ? p : ""
         })]
-      } else t.nick = [m.intl.string(m.t.EPZCrM)];
-    return u.has(p.q.AUTOMOD_QUARANTINED_BIO) && (t.bio = [m.intl.string(m.t.dZh1vz)]), t
+      } else t.nick = [h.intl.string(h.t.EPZCrM)];
+    return u.has(_.q.AUTOMOD_QUARANTINED_BIO) && (t.bio = [h.intl.string(h.t.dZh1vz)]), t
   }, [e])
 }
 
@@ -59,12 +59,12 @@ function b(e) {
     guildId: t,
     scrollPosition: s,
     analyticsLocations: l
-  } = e, d = (0, i.e7)([c.Z], () => c.Z.getGuild(t), [t]), f = (0, i.e7)([u.Z], () => null != d && u.Z.can(_.Plq.CHANGE_NICKNAME, d), [d]);
+  } = e, d = (0, i.e7)([c.Z], () => c.Z.getGuild(t), [t]), f = (0, i.e7)([u.Z], () => null != d && u.Z.can(p.Plq.CHANGE_NICKNAME, d), [d]);
   return [r.useCallback(() => {
     if (null == d) return;
-    let e = _.oAB.PROFILE_CUSTOMIZATION,
-      t = h.NB.GUILD;
-    f ? (0, a.Fq)(d) : t = h.NB.USER_PROFILE;
+    let e = p.oAB.PROFILE_CUSTOMIZATION,
+      t = m.NB.GUILD;
+    f ? (0, a.Fq)(d) : t = m.NB.USER_PROFILE;
     {
       let {
         openUserSettings: r

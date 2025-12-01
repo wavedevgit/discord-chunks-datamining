@@ -16,10 +16,10 @@ let u = e => {
     searchQuery: t,
     selectedUsers: n,
     limit: i
-  } = e, u = (0, o.e7)([c.Z], () => c.Z.getRecipientStatus()), d = (0, o.e7)([c.Z], () => c.Z.getReferralsRemaining()), [f, _] = r.useState(0), [p, h] = r.useState([]), [m, g] = r.useState(false), [E, b] = r.useState(false), [y, O] = r.useState(new Map);
+  } = e, u = (0, o.e7)([c.Z], () => c.Z.getRecipientStatus()), d = (0, o.e7)([c.Z], () => c.Z.getReferralsRemaining()), [f, p] = r.useState(0), [_, m] = r.useState([]), [h, g] = r.useState(false), [E, b] = r.useState(false), [y, O] = r.useState(new Map);
   a()(null != d, "Referrals remaining should not be null");
   let v = async (e, r) => {
-    if (!m && !E && null != e && 0 !== d) try {
+    if (!h && !E && null != e && 0 !== d) try {
       g(true);
       let i = [...y.values()];
       for (let [e, t] of u)
@@ -27,20 +27,20 @@ let u = e => {
           let t = await (0, s.PR)(e);
           i.push(t)
         } let a = await (0, l.iF)(e, t, r);
-      h(t => {
+      m(t => {
         let r = a.users.filter(e => !n.has(e.id));
         return (i = i.filter(e => !n.has(e.id)), 0 === e) ? [...n.values(), ...i.values(), ...r] : [...t, ...r]
       }), O(e => {
         let t = new Map(e);
         for (let e of i) t.set(e.id, e);
         return t
-      }), _(a.nextIndex)
+      }), p(a.nextIndex)
     } catch (e) {
       b(true)
     } finally {
       g(false)
     }
-  }, I = {
+  }, S = {
     limit: i,
     getNextRows: v,
     getLocalReferrals: async () => {
@@ -49,23 +49,23 @@ let u = e => {
         if (n === l.Fe.PENDING && !y.has(t)) {
           let n = await (0, s.PR)(t);
           e.set(n.id, n)
-        } O(e), h(Array.from(e.values()))
+        } O(e), m(Array.from(e.values()))
     }
-  }, T = r.useRef(I);
+  }, I = r.useRef(S);
   return r.useEffect(() => {
-    T.current = I
+    I.current = S
   }), r.useEffect(() => {
     let {
       getNextRows: e,
       limit: t,
       getLocalReferrals: n
-    } = T.current;
+    } = I.current;
     d > 0 ? e(0, t) : n()
   }, [t, d]), {
-    eligibleUsers: p,
+    eligibleUsers: _,
     fetchUsers: () => v(f, i),
     hasError: E,
-    isFetching: m,
+    isFetching: h,
     resendUsers: y
   }
 }

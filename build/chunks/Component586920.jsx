@@ -2,7 +2,7 @@
 /** chunk id: 586920, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => m
+  i: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,27 +17,27 @@ var Chunk54381 = require("./54381.js"),
   Chunk950728 = require("./950728.js"),
   Chunk997892 = require("./997892.js"),
   Chunk730949 = require("./730949.js");
-let m = () => {
+let h = () => {
   let {
     transitionState: e,
     onClose: t,
     premiumType: n,
-    confettiCanvas: m,
+    confettiCanvas: h,
     churnUserDiscountOffer: g,
     discountedPrice: E
   } = (0, Chunk594135.a)(), b = (0, Chunk473749.useRef)(null), [y, O] = (0, Chunk473749.useState)(false), v = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
   if ((0, Chunk473749.useEffect)(() => {
       null !== b.current && null !== E && O(true)
     }, [b, E]), null === g) return null;
-  let I = require === Chunk474936.PremiumTypes.TIER_2;
+  let S = require === Chunk474936.PremiumTypes.TIER_2;
   return (0, Chunk54381.jsxs)("div", {
     ref: b,
     children: [(0, Chunk54381.jsx)(Chunk793030.ExpressiveModal, {
       graphic: {
         type: "image",
-        src: I ? Chunk730949.Z : Chunk997892
+        src: S ? Chunk730949.Z : Chunk997892
       },
-      gradientColor: I ? "nitro-pink" : "nitro-green",
+      gradientColor: S ? "nitro-pink" : "nitro-green",
       transitionState: module,
       title: Chunk388032.intl.string(Chunk388032.t.PZSyRk),
       onClose: async () => exports(),
@@ -50,7 +50,7 @@ let m = () => {
       })
     }), !v && y && (0, Chunk54381.jsx)(Chunk530618.Z, {
       confettiTarget: b.current,
-      confettiCanvas: m,
+      confettiCanvas: h,
       confettiVelocityMultiplier: .75
     })]
   })

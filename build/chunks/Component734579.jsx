@@ -9,10 +9,10 @@ var Chunk54381 = require("./54381.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk952265 = require("./952265.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk703656 = require("./703656.js"),
   Chunk164670 = require("./164670.js"),
@@ -29,7 +29,7 @@ let E = Chunk473749.memo(function(e) {
   let {
     guild: t,
     selected: l
-  } = e, E = i.useRef(null), S = i.useRef(null), I = (0, c.f9)(), P = (0, a.e7)([y.Z], () => y.Z.hasLayers()), [N, Z] = (0, p.ZT)([s.z.GAME_SHOP_NEW_BADGE], t.id);
+  } = e, E = i.useRef(null), S = i.useRef(null), I = (0, u.f9)(), P = (0, a.e7)([y.Z], () => y.Z.hasLayers()), [N, Z] = (0, p.ZT)([s.z.GAME_SHOP_NEW_BADGE], t.id);
   i.useEffect(() => {
     l && N === s.z.GAME_SHOP_NEW_BADGE && Z(j.L.INDIRECT_ACTION)
   }, [Z, l, N]);
@@ -43,7 +43,7 @@ let E = Chunk473749.memo(function(e) {
       Z(j.L.USER_DISMISS)
     }, [Z]),
     A = i.useCallback(e => {
-      null != t && (0, d.jW)(e, async () => {
+      null != t && (0, f.jW)(e, async () => {
         let {
           default: e
         } = await n.e("73848").then(n.bind(n, 98409));
@@ -89,14 +89,14 @@ let E = Chunk473749.memo(function(e) {
       innerClassName: e,
       ref: S,
       id: "game-shop-".concat(t.id),
-      renderIcon: e => (0, r.jsx)(u.EOn, {
+      renderIcon: e => (0, r.jsx)(d.EOn, {
         size: "custom",
         color: "currentColor",
         width: 20,
         height: 20,
         className: o()(e, i)
       }),
-      text: (0, r.jsx)(u.Text, {
+      text: (0, r.jsx)(d.Text, {
         variant: "text-md/medium",
         className: o()(C.name, n),
         children: (null == t ? true : t.id) === (0, g.ac)() ? x.intl.string(x.t.xFQAPs) : x.intl.string(x.t.vyaWs7)
@@ -105,9 +105,9 @@ let E = Chunk473749.memo(function(e) {
       onClick: w,
       onContextMenu: A,
       trailing: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(u.IGR, {
+        children: [(0, r.jsx)(d.IGR, {
           text: x.intl.string(x.t.y2b7CA),
-          color: f.Z.BG_BRAND
+          color: c.Z.colors.BG_BRAND.css
         }), a]
       })
     }), [t, l, w, A]);

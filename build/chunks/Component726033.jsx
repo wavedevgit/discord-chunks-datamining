@@ -2,7 +2,7 @@
 /** chunk id: 726033, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -51,7 +51,7 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function p(e) {
   let {
     user: t
   } = e, [n, c] = (0, i.Z)(t.id);

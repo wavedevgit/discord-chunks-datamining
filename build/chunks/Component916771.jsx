@@ -2,7 +2,7 @@
 /** chunk id: 916771, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -27,21 +27,21 @@ function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   var t;
   let {
     stream: n,
-    width: _,
-    avError: p,
-    avErrorContext: h,
-    selected: m = false,
+    width: p,
+    avError: _,
+    avErrorContext: m,
+    selected: h = false,
     noArt: g = false
-  } = e, E = f(h), b = null == (t = (0, o.hp)(null != p ? p : o.u.STREAM_FAILED_TO_START)) ? true : t.errorCode;
+  } = e, E = f(m), b = null == (t = (0, o.hp)(null != _ ? _ : o.u.STREAM_FAILED_TO_START)) ? true : t.errorCode;
   return (0, r.jsx)(c.Z, {
     header: E,
-    size: (0, c.L)(_),
+    size: (0, c.L)(p),
     noArt: g,
-    selected: m,
+    selected: h,
     description: d.intl.format(d.t.sXsgsP, {
       helpUrl: l.Z.getArticleURL(u.BhN.STREAM_FAILED)
     }),

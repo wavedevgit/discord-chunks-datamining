@@ -2,8 +2,8 @@
 /** chunk id: 649724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  k: () => m,
-  u: () => h
+  k: () => h,
+  u: () => m
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk147103 = require("./147103.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,12 +24,12 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = {
+let m = {
   DEFAULT: "default",
   SUCCESS: "success",
   ERROR: "error"
 };
-class m extends(r = Chunk473749.PureComponent) {
+class h extends(r = Chunk473749.PureComponent) {
   select() {
     var e;
     null == (e = this.inputRef.current) || module.select()
@@ -45,8 +45,8 @@ class m extends(r = Chunk473749.PureComponent) {
       placeholder: c
     } = this.props, u = null == (t = this.context) ? true : t.titleId;
     return (0, i.jsx)("input", {
-      className: s()((0, d.l)(_, "input", r), l, {
-        [_.inputHidden]: e
+      className: s()((0, d.l)(p, "input", r), l, {
+        [p.inputHidden]: e
       }),
       ref: this.inputRef,
       type: "text",
@@ -66,15 +66,15 @@ class m extends(r = Chunk473749.PureComponent) {
         hideMessage: r,
         className: a,
         buttonLook: o,
-        supportsCopy: p,
-        disabled: m
+        supportsCopy: _,
+        disabled: h
       } = this.props,
       g = null != r;
     switch (require) {
-      case h.SUCCESS:
+      case m.SUCCESS:
         e = Chunk755721.Tt.GREEN;
         break;
-      case h.ERROR:
+      case m.ERROR:
         e = Chunk755721.Tt.RED;
         break;
       default:
@@ -94,7 +94,7 @@ class m extends(r = Chunk473749.PureComponent) {
               className: Chunk147103.hiddenMessage,
               children: r
             }) : null]
-          }), p ? (0, Chunk54381.jsx)(Chunk600164.Z, {
+          }), _ ? (0, Chunk54381.jsx)(Chunk600164.Z, {
             shrink: 1,
             grow: 0,
             style: {
@@ -107,7 +107,7 @@ class m extends(r = Chunk473749.PureComponent) {
               size: Chunk755721.Ph.MIN,
               color: module,
               look: Chunk120356,
-              disabled: m,
+              disabled: h,
               children: exports
             })
           }) : null]
@@ -116,21 +116,21 @@ class m extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), p(this, "inputRef", a.createRef()), p(this, "containerRef", a.createRef()), p(this, "handleButtonClick", () => {
+    super(...e), _(this, "inputRef", a.createRef()), _(this, "containerRef", a.createRef()), _(this, "handleButtonClick", () => {
       this.select();
       let {
         onCopy: e,
         value: t
       } = this.props;
       e(t)
-    }), p(this, "handleInputClick", () => {
+    }), _(this, "handleInputClick", () => {
       this.select()
     })
   }
 }
-p(m, "contextType", Chunk481060.q3N), p(m, "defaultProps", {
+_(h, "contextType", Chunk481060.q3N), _(h, "defaultProps", {
   supportsCopy: true,
   buttonColor: Chunk755721.Tt.PRIMARY,
   buttonLook: Chunk755721.iL.FILLED,
-  mode: h.DEFAULT
-}), p(m, "Modes", h), p(m, "ButtonColors", Chunk755721.Tt), p(m, "ButtonLooks", Chunk755721.iL)
+  mode: m.DEFAULT
+}), _(h, "Modes", m), _(h, "ButtonColors", Chunk755721.Tt), _(h, "ButtonLooks", Chunk755721.iL)

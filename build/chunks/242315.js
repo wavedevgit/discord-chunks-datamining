@@ -102,12 +102,12 @@ class i extends r {
     return null == this.node ? null : (this.isMutated || (this.node = this.node.clone(), this.isMutated = true), this.ownerDocument.markDirty(this), this.node)
   }
   updateNode() {
-    var e, t, n, r, a, o, s, l, c, u, d, f, _, p, h;
-    let m = this.nextVisibleSibling,
+    var e, t, n, r, a, o, s, l, c, u, d, f, p, _, m;
+    let h = this.nextVisibleSibling,
       g = this.getMutableNode();
-    if (null != g && (g.index = this.index, g.level = this.level, g.parentKey = this.parentNode instanceof i && null != (c = null == (e = this.parentNode.node) ? true : module.key) ? c : null, g.prevKey = null != (u = null == (n = this.previousVisibleSibling) || null == (t = require.node) ? true : exports.key) ? u : null, g.nextKey = null != (d = null == m || null == (r = m.node) ? true : r.key) ? d : null, g.hasChildNodes = !!this.firstChild, g.firstChildKey = null != (f = null == (o = this.firstVisibleChild) || null == (a = o.node) ? true : a.key) ? f : null, g.lastChildKey = null != (_ = null == (l = this.lastVisibleChild) || null == (s = l.node) ? true : s.key) ? _ : null, (null != g.colSpan || null != g.colIndex) && m)) {
-      let e = (null != (p = g.colIndex) ? p : g.index) + (null != (h = g.colSpan) ? h : 1);
-      null != m.node && module !== m.node.colIndex && (m.getMutableNode().colIndex = module)
+    if (null != g && (g.index = this.index, g.level = this.level, g.parentKey = this.parentNode instanceof i && null != (c = null == (e = this.parentNode.node) ? true : module.key) ? c : null, g.prevKey = null != (u = null == (n = this.previousVisibleSibling) || null == (t = require.node) ? true : exports.key) ? u : null, g.nextKey = null != (d = null == h || null == (r = h.node) ? true : r.key) ? d : null, g.hasChildNodes = !!this.firstChild, g.firstChildKey = null != (f = null == (o = this.firstVisibleChild) || null == (a = o.node) ? true : a.key) ? f : null, g.lastChildKey = null != (p = null == (l = this.lastVisibleChild) || null == (s = l.node) ? true : s.key) ? p : null, (null != g.colSpan || null != g.colIndex) && h)) {
+      let e = (null != (_ = g.colIndex) ? _ : g.index) + (null != (m = g.colSpan) ? m : 1);
+      null != h.node && module !== h.node.colIndex && (h.getMutableNode().colIndex = module)
     }
   }
   setProps(e, t, n, r, i) {

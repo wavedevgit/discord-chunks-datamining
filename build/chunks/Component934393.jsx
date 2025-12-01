@@ -2,7 +2,7 @@
 /** chunk id: 934393, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,30 +17,30 @@ var Chunk442837 = require("./442837.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function _(e) {
   let {
     platformType: t,
     icon: n,
-    onAction: p
+    onAction: _
   } = e, {
-    newestAnalyticsLocation: h
+    newestAnalyticsLocation: m
   } = (0, o.ZP)(), {
-    themeType: m
-  } = (0, c.z)(), g = m === f.l.MODAL_V2;
+    themeType: h
+  } = (0, c.z)(), g = h === f.l.MODAL_V2;
   if ((0, i.e7)([l.Z], () => null != l.Z.getAccount(null, t))) return null;
   let E = e => {
     e.stopPropagation();
     let n = t === d.ABu.XBOX;
-    null == p || p({
+    null == _ || _({
       action: n ? "PRESS_CONNECT_XBOX_BUTTON" : "PRESS_CONNECT_PLAYSTATION_BUTTON"
     }), (0, s.Z)({
       platformType: t,
-      location: h
+      location: m
     })
   };
   return (0, r.jsx)(u.O1, {
     icon: n,
-    text: _.intl.formatToPlainString(_.t.XWSHTb, {
+    text: p.intl.formatToPlainString(p.t.XWSHTb, {
       platform: a.Z.get(t).name
     }),
     fullWidth: !g,

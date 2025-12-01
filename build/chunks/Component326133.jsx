@@ -2,7 +2,7 @@
 /** chunk id: 326133, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk918559 = require("./918559.js"),
   Chunk671982 = require("./671982.js");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -67,7 +67,7 @@ function C(e, t) {
 
 function N(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -75,37 +75,37 @@ function N(e, t) {
   return i
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let P = 490,
-  D = 490,
-  w = 245,
-  L = 200,
-  x = 120,
-  M = Chunk473749.forwardRef(function(e, t) {
-    var n, a, T, A, R, M, k, j, U;
+let R = 490,
+  w = 490,
+  D = 245,
+  x = 200,
+  L = 120,
+  j = Chunk473749.forwardRef(function(e, t) {
+    var n, a, I, A, P, j, M, k, U;
     let {
       channel: G,
-      type: B,
-      editorHeight: Z,
+      type: Z,
+      editorHeight: B,
       onVisibilityChange: F,
       editorScrollerRef: V,
       barsHeight: H
-    } = e, W = (0, h.Dt)(), Y = (0, l.e7)([E.Z], () => {
+    } = e, Y = (0, m.Dt)(), W = (0, l.e7)([E.Z], () => {
       var e;
       return null != (e = E.Z.getGuild(G.guild_id)) ? e : null
-    }, [G.guild_id]), K = i.useRef(null), [z, q, X] = (0, O.Z)(C(S({}, e), {
-      guild: Y
-    }), t, K), Q = (null == (n = B.autocomplete) ? true : n.forceChatLayer) ? g.ZP : m.ZP, J = (0, _.DJ)(z.selectedIndex);
-    (0, p.KR)(W, z.isVisible, J);
+    }, [G.guild_id]), K = i.useRef(null), [z, q, Q] = (0, O.Z)(C(T({}, e), {
+      guild: W
+    }), t, K), X = (null == (n = Z.autocomplete) ? true : n.forceChatLayer) ? g.ZP : h.ZP, J = (0, p.DJ)(z.selectedIndex);
+    (0, _.KR)(Y, z.isVisible, J);
     let $ = (0, y.Z)({
-        editorHeight: Z,
-        type: B,
+        editorHeight: B,
+        type: Z,
         state: z
       }),
       ee = (0, l.e7)([d.ZP], () => {
@@ -118,43 +118,43 @@ let P = 490,
         var e, t;
         F(z.isVisible, null != (t = null == (e = z.query) ? true : e.type) ? t : null)
       }, [F, z.isVisible, null == (a = z.query) ? true : a.type]), !z.isVisible || null == z.query || true === $) return null;
-    let en = null != (R = z.query.typeInfo.renderResults({
+    let en = null != (P = z.query.typeInfo.renderResults({
       results: z.query.results,
       selectedIndex: z.selectedIndex,
       channel: G,
-      guild: Y,
+      guild: W,
       query: z.query.queryText,
       options: z.query.options,
       onHover: e => q.onResultHover(e),
       onClick: e => q.onResultClick(e)
-    })) ? R : null;
+    })) ? P : null;
     if (null == en) return null;
     let er = {
-        [I.autocompleteAttached]: null == $,
-        [I.autocompletePopout]: null != $,
-        [I.bottom]: null == $ && "bottom" === e.position,
-        [I.autocompleteTop]: ee,
-        [I.minimal]: (null == (T = z.query) ? true : T.type) === b.eq.MENTION_SUGGESTIONS
+        [S.autocompleteAttached]: null == $,
+        [S.autocompletePopout]: null != $,
+        [S.bottom]: null == $ && "bottom" === e.position,
+        [S.autocompleteTop]: ee,
+        [S.minimal]: (null == (I = z.query) ? true : I.type) === b.eq.MENTION_SUGGESTIONS
       },
-      ei = P;
-    null != $ && (ei = (null == (M = B.autocomplete) ? true : M.small) ? L : (null == (k = z.query) ? true : k.type) === b.eq.EMOJIS_AND_STICKERS ? D : w);
-    let ea = Math.max(Z, null != (j = null == V || null == (A = V.current) ? true : A.clientHeight) ? j : 0),
+      ei = R;
+    null != $ && (ei = (null == (j = Z.autocomplete) ? true : j.small) ? x : (null == (M = z.query) ? true : M.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
+    let ea = Math.max(B, null != (k = null == V || null == (A = V.current) ? true : A.clientHeight) ? k : 0),
       eo = Math.min(.5 * window.innerHeight, ea);
-    ei = Math.min(window.innerHeight - x - eo - (null != H ? H : 0), ei);
-    let es = (0, r.jsx)(_.ZP, {
-      id: W,
-      className: o()(I.autocomplete, er),
-      innerClassName: I.autocompleteInner,
+    ei = Math.min(window.innerHeight - L - eo - (null != H ? H : 0), ei);
+    let es = (0, r.jsx)(p.ZP, {
+      id: Y,
+      className: o()(S.autocomplete, er),
+      innerClassName: S.autocompleteInner,
       onMouseDown: e => e.preventDefault(),
       children: (0, r.jsx)(s.bG, {
-        navigator: X,
+        navigator: Q,
         children: (0, r.jsx)(s.SJ, {
           children: e => {
             var {
               ref: t
             } = e, n = N(e, ["ref"]);
-            return (0, r.jsx)(c.h21, C(S({
-              id: W,
+            return (0, r.jsx)(c.h21, C(T({
+              id: Y,
               ref: e => {
                 var n;
                 t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null, K.current = e
@@ -162,19 +162,19 @@ let P = 490,
               orientation: "vertical",
               overflow: "auto"
             }, n), {
-              className: I.scroller,
+              className: S.scroller,
               style: {
                 maxHeight: ei
               },
               role: "listbox",
-              "aria-labelledby": (0, _.rp)(W),
+              "aria-labelledby": (0, p.rp)(Y),
               children: en
             }))
           }
         })
       })
     });
-    return null != $ ? (0, r.jsx)(Q, {
+    return null != $ ? (0, r.jsx)(X, {
       children: (0, r.jsx)(c.jRF, {
         targetRef: e.targetRef,
         overrideTargetRect: $,

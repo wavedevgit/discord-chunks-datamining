@@ -2,7 +2,7 @@
 /** chunk id: 375954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => em
+  Z: () => eh
 }), require("./388685.js"), require("./997841.js"), require("./539854.js"), require("./583741.js"), require("./358797.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -34,7 +34,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
 
-function L(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,17 +42,17 @@ function L(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let x = new Set,
-  M = new Chunk710845.Z("MessageStore"),
-  k = false;
+let L = new Set,
+  j = new Chunk710845.Z("MessageStore"),
+  M = false;
 
-function j() {
+function k() {
   Chunk89892.Z.forEach(e => {
     u.Z.commit(e.mutate({
       ready: false,
       loadingMore: false
     }))
-  }), x.clear()
+  }), L.clear()
 }
 
 function U(e) {
@@ -64,7 +64,7 @@ function U(e) {
     if (null == n) continue;
     let r = false;
     if (!(n.cached || !r)) {
-      M.log("Skipping background message sync for ".concat(e, " cached:").concat(n.cached, " ") + "ready:".concat(n.ready, " hasMoreAfter:").concat(n.hasMoreAfter, " ") + "isConnected:".concat(r));
+      j.log("Skipping background message sync for ".concat(e, " cached:").concat(n.cached, " ") + "ready:".concat(n.ready, " hasMoreAfter:").concat(n.hasMoreAfter, " ") + "isConnected:".concat(r));
       continue
     }
     n.mergeDelta(t[e].new_messages, t[e].modified_messages, t[e].deleted_message_ids)
@@ -75,22 +75,22 @@ function G() {
   returntrue
 }
 
-function B(e) {
+function Z(e) {
   let {
     channelId: t,
     truncateBottom: n,
     truncateTop: r
   } = e;
-  M.log("Truncating messages for ".concat(t, " bottom:").concat(n, " top:").concat(r));
+  j.log("Truncating messages for ".concat(t, " bottom:").concat(n, " top:").concat(r));
   let i = u.Z.getOrCreate(t);
   i = i.truncate(n, r), u.Z.commit(i)
 }
 
-function Z(e) {
+function B(e) {
   let {
     channelId: t
   } = e;
-  M.log("Clearing messages for ".concat(t)), u.Z.clear(t), x.clear()
+  j.log("Clearing messages for ".concat(t)), u.Z.clear(t), L.clear()
 }
 
 function F(e) {
@@ -142,23 +142,23 @@ function H(e) {
   }))
 }
 
-function W(e) {
+function Y(e) {
   let {
     message: t
   } = e;
-  (null == t ? true : t.nonce) != null && x.add(t.nonce)
+  (null == t ? true : t.nonce) != null && L.add(t.nonce)
 }
 
-function Y(e) {
+function W(e) {
   let {
     channelId: t,
     messageId: n
   } = e;
-  if (null == n || !x.has(n)) returnfalse;
+  if (null == n || !L.has(n)) returnfalse;
   let r = u.Z.getOrCreate(t),
     i = r.get(n);
   if (null == i) returnfalse;
-  r = (r = r.remove(n)).merge([i]), x.delete(n), u.Z.commit(r)
+  r = (r = r.remove(n)).merge([i]), L.delete(n), u.Z.commit(r)
 }
 
 function K(e) {
@@ -168,11 +168,11 @@ function K(e) {
     isPushNotification: r
   } = e, i = u.Z.getOrCreate(t);
   if (r) {
-    M.log("Inserting message tapped on from a push notification", n.id, n.channel_id), u.Z.commit(i.receivePushNotification(n));
+    j.log("Inserting message tapped on from a push notification", n.id, n.channel_id), u.Z.commit(i.receivePushNotification(n));
     return
   }
   if (!i.ready) returnfalse;
-  null != n.nonce && n.state !== w.yb.SENDING && x.has(n.nonce) && (i = i.remove(n.nonce), x.delete(n.nonce)), i = i.receiveMessage(n, true === I.Z.isAtBottom(t)), u.Z.commit(i)
+  null != n.nonce && n.state !== D.yb.SENDING && L.has(n.nonce) && (i = i.remove(n.nonce), L.delete(n.nonce)), i = i.receiveMessage(n, true === S.Z.isAtBottom(t)), u.Z.commit(i)
 }
 
 function z(e) {
@@ -183,7 +183,7 @@ function z(e) {
   } = e, i = u.Z.getOrCreate(t);
   if (null == i || !i.has(n)) returnfalse;
   let a = i.get(n, true);
-  i = (null == a ? true : a.isPoll()) === true ? i.remove(n) : i.update(n, e => ((e = e.set("state", w.yb.SEND_FAILED)).isCommandType() ? e = (e = e.set("interactionError", null != r ? r : "")).set("flags", (0, o.pj)(e.flags, w.iLy.EPHEMERAL)) : null != r && (e = e.set("interactionError", null != r ? r : "")), e)), u.Z.commit(i)
+  i = (null == a ? true : a.isPoll()) === true ? i.remove(n) : i.update(n, e => ((e = e.set("state", D.yb.SEND_FAILED)).isCommandType() ? e = (e = e.set("interactionError", null != r ? r : "")).set("flags", (0, o.pj)(e.flags, D.iLy.EPHEMERAL)) : null != r && (e = e.set("interactionError", null != r ? r : "")), e)), u.Z.commit(i)
 }
 
 function q(e) {
@@ -200,10 +200,10 @@ function q(e) {
       revealedMessageId: null
     })
   }
-  r = r.remove(t), u.Z.commit(r), x.delete(t)
+  r = r.remove(t), u.Z.commit(r), L.delete(t)
 }
 
-function X(e) {
+function Q(e) {
   let {
     ids: t,
     channelId: n
@@ -220,16 +220,16 @@ function X(e) {
     })
   }
   u.Z.commit(i), t.forEach(e => {
-    x.delete(e)
+    L.delete(e)
   })
 }
 
-function Q(e) {
+function X(e) {
   let t = e.message.id,
     n = e.message.channel_id,
     r = u.Z.getOrCreate(n);
   if (null == r || !r.has(t)) returnfalse;
-  r = r.update(t, t => (0, m.wi)(t, e.message)), u.Z.commit(r)
+  r = r.update(t, t => (0, h.wi)(t, e.message)), u.Z.commit(r)
 }
 
 function J(e) {
@@ -238,7 +238,7 @@ function J(e) {
     channelId: n
   } = e, r = u.Z.get(n);
   if (null == r || !r.has(t)) returnfalse;
-  r = r.update(t, _.Cm), u.Z.commit(r)
+  r = r.update(t, p.Cm), u.Z.commit(r)
 }
 
 function $(e) {
@@ -313,7 +313,7 @@ function es(e) {
   if (null == i) returnfalse;
   i = i.update(n, e => {
     var t;
-    return e.addReactionBatch(r, null == (t = D.default.getCurrentUser()) ? true : t.id)
+    return e.addReactionBatch(r, null == (t = w.default.getCurrentUser()) ? true : t.id)
   }), u.Z.commit(i)
 }
 
@@ -327,7 +327,7 @@ function el(e) {
   if (!s.has(i)) returnfalse;
   s = s.update(i, e => {
     var n;
-    return (null == (n = e.embeds) ? true : n.filter(p.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, o.pj)(e.flags, w.iLy.EPHEMERAL))), e
+    return (null == (n = e.embeds) ? true : n.filter(_.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, o.pj)(e.flags, D.iLy.EPHEMERAL))), e
   }), u.Z.commit(s)
 }
 
@@ -353,7 +353,7 @@ function eu(e) {
 function ed() {
   Chunk89892.Z.forEach(e => {
     u.Z.clear(e.channelId)
-  }), x.clear()
+  }), L.clear()
 }
 
 function ef(e) {
@@ -363,26 +363,26 @@ function ef(e) {
   }
 }
 
-function e_(e) {
+function ep(e) {
   let t = u.Z.getOrCreate(e.channelId);
   (t.cached || !t.ready) && u.Z.commit(t.addCachedMessages(e.messages, e.stale))
 }
 
-function ep(e) {
+function e_(e) {
   let {
     message: t
-  } = e, n = D.default.getCurrentUser();
-  null != t && null != t.author && null != n && t.author.id === n.id && (k = true)
+  } = e, n = w.default.getCurrentUser();
+  null != t && null != t.author && null != n && t.author.id === n.id && (M = true)
 }
-class eh extends(r = Chunk442837.ZP.Store) {
+class em extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk796974.Z, Chunk984933.ZP, Chunk271383.ZP, Chunk430824.Z, Chunk160404.Z, Chunk706454.default, Chunk496675.Z, Chunk699516.Z, Chunk944486.Z, Chunk914010.Z, Chunk594174.default), this.syncWith([Chunk160404.Z], () => {})
   }
   getMessages(e) {
-    if (h.Z.hasViewingRoles()) {
+    if (m.Z.hasViewingRoles()) {
       let t = v.Z.getChannel(e),
         n = null == t ? true : t.getGuildId();
-      if (h.Z.isViewingRoles(n) && !C.Z.can(w.Plq.VIEW_CHANNEL, t)) return new u.Z(e)
+      if (m.Z.isViewingRoles(n) && !C.Z.can(D.Plq.VIEW_CHANNEL, t)) return new u.Z(e)
     }
     return u.Z.getOrCreate(e)
   }
@@ -390,11 +390,11 @@ class eh extends(r = Chunk442837.ZP.Store) {
     return u.Z.getOrCreate(e).get(t)
   }
   getLastEditableMessage(e) {
-    let t = D.default.getCurrentUser();
+    let t = w.default.getCurrentUser();
     return a()(this.getMessages(e).toArray()).reverse().find(e => (0, g.Z)(e, null == t ? true : t.id))
   }
   getLastChatCommandMessage(e) {
-    let t = D.default.getCurrentUser();
+    let t = w.default.getCurrentUser();
     return this.getMessages(e).toArray().reverse().find(e => {
       var n, r;
       return (null == (n = e.interaction) ? true : n.type) === c.B8.APPLICATION_COMMAND && (null == (r = e.interactionData) ? true : r.type) === c.yU.CHAT && e.interaction.user.id === (null == t ? true : t.id)
@@ -404,7 +404,7 @@ class eh extends(r = Chunk442837.ZP.Store) {
     return a()(this.getMessages(e).toArray()).reverse().get(0)
   }
   getLastNonCurrentUserMessage(e) {
-    let t = D.default.getCurrentUser();
+    let t = w.default.getCurrentUser();
     return a()(this.getMessages(e).toArray()).reverse().find(e => e.author.id !== (null == t ? true : t.id))
   }
   jumpedMessageId(e) {
@@ -431,35 +431,35 @@ class eh extends(r = Chunk442837.ZP.Store) {
     return u.Z.getOrCreate(e).loadingMore
   }
   hasCurrentUserSentMessage(e) {
-    let t = D.default.getCurrentUser();
+    let t = w.default.getCurrentUser();
     return null != this.getMessages(e).findNewest(e => e.author.id === (null == t ? true : t.id))
   }
   hasCurrentUserSentMessageSinceAppStart() {
-    return k
+    return M
   }
 }
-L(eh, "displayName", "MessageStore");
-let em = new eh(Chunk570140.Z, {
+x(em, "displayName", "MessageStore");
+let eh = new em(Chunk570140.Z, {
   BACKGROUND_SYNC_CHANNEL_MESSAGES: U,
-  CONNECTION_OPEN: j,
-  OVERLAY_INITIALIZE: j,
+  CONNECTION_OPEN: k,
+  OVERLAY_INITIALIZE: k,
   CACHE_LOADED: ef,
   LOAD_MESSAGES: G,
   LOAD_MESSAGES_SUCCESS: V,
   LOAD_MESSAGES_FAILURE: H,
   LOAD_MESSAGES_SUCCESS_CACHED: F,
-  LOCAL_MESSAGES_LOADED: e_,
+  LOCAL_MESSAGES_LOADED: ep,
   LOAD_MESSAGE_INTERACTION_DATA_SUCCESS: $,
-  TRUNCATE_MESSAGES: B,
-  CLEAR_MESSAGES: Z,
+  TRUNCATE_MESSAGES: Z,
+  CLEAR_MESSAGES: B,
   MESSAGE_CREATE: K,
   MESSAGE_SEND_FAILED: z,
   MESSAGE_SEND_FAILED_AUTOMOD: el,
   MESSAGE_EDIT_FAILED_AUTOMOD: el,
-  MESSAGE_UPDATE: Q,
+  MESSAGE_UPDATE: X,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: J,
   MESSAGE_DELETE: q,
-  MESSAGE_DELETE_BULK: X,
+  MESSAGE_DELETE_BULK: Q,
   MESSAGE_REVEAL: er,
   THREAD_CREATE_LOCAL: ee,
   CHANNEL_DELETE: et,
@@ -476,7 +476,7 @@ let em = new eh(Chunk570140.Z, {
   MESSAGE_REACTION_REMOVE_ALL: ec,
   MESSAGE_REACTION_REMOVE_EMOJI: eu,
   LOGOUT: ed,
-  UPLOAD_START: W,
-  UPLOAD_FAIL: Y,
-  LOCAL_MESSAGE_CREATE: ep
+  UPLOAD_START: Y,
+  UPLOAD_FAIL: W,
+  LOCAL_MESSAGE_CREATE: e_
 })

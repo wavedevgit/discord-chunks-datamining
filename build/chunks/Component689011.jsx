@@ -2,8 +2,8 @@
 /** chunk id: 689011, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Oc: () => m,
-  t: () => h,
+  Oc: () => h,
+  t: () => m,
   xe: () => g
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
@@ -19,7 +19,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk848902 = require("./848902.js"),
   Chunk365627 = require("./365627.js"),
   Chunk753260 = require("./753260.js");
-let h = e => {
+let m = e => {
     let {
       step: t,
       onClose: n
@@ -30,7 +30,7 @@ let h = e => {
         className: f.headerImageContainer,
         "aria-hidden": "true",
         children: (0, r.jsx)("img", {
-          src: p,
+          src: _,
           alt: "",
           className: f.headerImage
         })
@@ -46,7 +46,7 @@ let h = e => {
       })]
     })
   },
-  m = e => {
+  h = e => {
     let {
       icon: t,
       storeListingBenefits: n,
@@ -85,7 +85,7 @@ function g(e) {
   return (0, r.jsxs)("div", {
     className: f.purchaseConfirmation,
     children: [(0, r.jsx)("img", {
-      src: _,
+      src: p,
       alt: "",
       width: 300,
       height: 126

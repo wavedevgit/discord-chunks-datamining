@@ -2,7 +2,7 @@
 /** chunk id: 490220, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -35,48 +35,48 @@ function f(e) {
   return e
 }
 
-function _(e) {
+function p(e) {
   var t;
   let {
     user: d,
-    disabledInputs: _,
-    containerClassName: p
+    disabledInputs: p,
+    containerClassName: _
   } = e, {
-    reducedMotion: h
+    reducedMotion: m
   } = i.useContext(o.Sfi), {
-    pendingAvatar: m,
+    pendingAvatar: h,
     pendingBanner: g,
     pendingAvatarDecoration: E,
     pendingProfileEffect: b,
     pendingDisplayNameStyles: y,
     pendingThemeColors: O,
     pendingPronouns: v,
-    pendingBio: I,
-    tryItOutThemeColors: T,
-    tryItOutAvatar: S,
+    pendingBio: S,
+    tryItOutThemeColors: I,
+    tryItOutAvatar: T,
     tryItOutBanner: A,
     tryItOutProfileEffect: C,
     tryItOutAvatarDecoration: N,
-    tryItOutDisplayNameStyles: R
-  } = (0, a.cj)([l.Z], () => f({}, l.Z.getAllPending(), l.Z.getAllTryItOut())), P = (0, s.SD)({
+    tryItOutDisplayNameStyles: P
+  } = (0, a.cj)([l.Z], () => f({}, l.Z.getAllPending(), l.Z.getAllTryItOut())), R = (0, s.SD)({
     userId: d.id,
-    image: null != S ? S : m
+    image: null != T ? T : h
   });
   return (0, r.jsx)(c.Z, {
-    containerClassName: p,
+    containerClassName: _,
     user: d,
     pendingPronouns: v,
-    pendingBio: I,
+    pendingBio: S,
     pendingBanner: null != (t = null != A ? A : g) ? t : n(466045),
-    pendingDisplayNameStyles: null != R ? R : y,
-    pendingAvatar: P,
-    pendingThemeColors: null != T ? T : O,
+    pendingDisplayNameStyles: null != P ? P : y,
+    pendingAvatar: R,
+    pendingThemeColors: null != I ? I : O,
     pendingAvatarDecoration: true !== N ? N : E,
     pendingProfileEffect: true !== C ? C : b,
-    avatarClassName: null != S || null != m || h.enabled ? true : u.spinningAvatar,
+    avatarClassName: null != T || null != h || m.enabled ? true : u.spinningAvatar,
     canUsePremiumCustomization: true,
     isTryItOut: true,
-    disabledInputs: _,
+    disabledInputs: p,
     hideExampleButton: true
   })
 }

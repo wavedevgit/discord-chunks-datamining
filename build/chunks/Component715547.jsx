@@ -21,12 +21,12 @@ function u(e) {
     themeType: u
   } = (0, o.z)(), d = u === l.l.MODAL_V2, f = (0, i.Z)(t);
   if (!(0, a.Z)(t) || null == f) return null;
-  let _ = e => (e.stopPropagation(), null == n || n({
+  let p = e => (e.stopPropagation(), null == n || n({
     action: "PRESS_WATCH_BUTTON"
   }), window.open(f));
   return (0, r.jsx)(s.O1, {
     text: c.intl.string(c.t.I6JG46),
     fullWidth: !d,
-    onClick: _
+    onClick: p
   })
 }

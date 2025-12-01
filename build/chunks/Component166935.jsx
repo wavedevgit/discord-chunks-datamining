@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk777207 = require("./777207.jsx"),
   Chunk325380 = require("./325380.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -57,7 +57,7 @@ function E(e, t) {
 }
 
 function b(e) {
-  return "string" == typeof e ? (0, r.jsx)(_.x, {
+  return "string" == typeof e ? (0, r.jsx)(p.x, {
     variant: "text-md/normal",
     color: "text-secondary",
     children: e
@@ -84,56 +84,56 @@ function O(e) {
   let {
     controls: a,
     children: s,
-    listProps: _
-  } = e, [h, g] = i.useState(false), [b, y] = i.useState(null != _), O = i.useRef(null), v = (0, c.Z)(O, null == _ ? true : _.ref), I = i.useRef(null), T = l()(() => {
+    listProps: p
+  } = e, [m, g] = i.useState(false), [b, y] = i.useState(null != p), O = i.useRef(null), v = (0, c.Z)(O, null == p ? true : p.ref), S = i.useRef(null), I = l()(() => {
     var e;
     (null == O ? true : O.current) != null && null != a && g((null == (e = O.current) ? true : e.getDistanceFromTop()) > 12)
-  }, 200), S = null != _;
+  }, 200), T = null != p;
   return i.useLayoutEffect(() => {
     var e, t;
     let n = new ResizeObserver(() => {
         var e, t;
-        if (S) return void y(true);
+        if (T) return void y(true);
         let n = null != (t = null == O || null == (e = O.current) ? true : e.getScrollerNode()) ? t : null;
-        if (null == n || (null == I ? true : I.current) == null) return;
+        if (null == n || (null == S ? true : S.current) == null) return;
         let r = n.getBoundingClientRect();
-        y(I.current.getBoundingClientRect().height > r.height)
+        y(S.current.getBoundingClientRect().height > r.height)
       }),
       r = null != (t = null == O || null == (e = O.current) ? true : e.getScrollerNode()) ? t : null;
-    return null != r && n.observe(r), (null == I ? true : I.current) != null && n.observe(I.current), () => n.disconnect()
-  }, [S]), (0, r.jsxs)(u.y, {
+    return null != r && n.observe(r), (null == S ? true : S.current) != null && n.observe(S.current), () => n.disconnect()
+  }, [T]), (0, r.jsxs)(u.y, {
     children: [(0, r.jsx)("div", {
-      className: o()(p.bodySpacerTop, {
-        [p.bodySpacerTopBorder]: b && null == a
+      className: o()(_.bodySpacerTop, {
+        [_.bodySpacerTopBorder]: b && null == a
       })
     }), null != a && (0, r.jsx)("header", {
-      className: o()(p.bodyControls, {
-        [p.bodyControlsWithFade]: h
+      className: o()(_.bodyControls, {
+        [_.bodyControlsWithFade]: m
       }),
       children: a
-    }), null != _ ? (0, r.jsx)(d._2, E(m({}, _), {
-      className: p.bodyList,
-      innerAriaOrientation: null != (t = _.innerAriaOrientation) ? t : "vertical",
-      innerRole: null != (n = _.innerRole) ? n : "listbox",
+    }), null != p ? (0, r.jsx)(d._2, E(h({}, p), {
+      className: _.bodyList,
+      innerAriaOrientation: null != (t = p.innerAriaOrientation) ? t : "vertical",
+      innerRole: null != (n = p.innerRole) ? n : "listbox",
       ref: v,
       onScroll: e => {
         var t;
-        T(), null == (t = _.onScroll) || t.call(_, e)
+        I(), null == (t = p.onScroll) || t.call(p, e)
       }
     })) : (0, r.jsx)(f.yW, {
       ref: O,
-      className: p.body,
-      onScroll: T,
+      className: _.body,
+      onScroll: I,
       children: (0, r.jsx)("main", {
-        ref: I,
-        className: o()(p.bodyInner, {
-          [p.bodyInnerShouldScroll]: b
+        ref: S,
+        className: o()(_.bodyInner, {
+          [_.bodyInnerShouldScroll]: b
         }),
         children: s
       })
     }), (0, r.jsx)("div", {
-      className: o()(p.bodySpacerBottom, {
-        [p.bodySpacerBottomBorder]: b
+      className: o()(_.bodySpacerBottom, {
+        [_.bodySpacerBottomBorder]: b
       })
     })]
   })

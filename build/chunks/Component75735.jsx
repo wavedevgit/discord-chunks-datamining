@@ -85,7 +85,7 @@ let u = {
         let n = "enable" === e ? "hover_disabled" : "hover_enabled";
         t.current.stopIfPlaying(n)
       }, [e]),
-      _ = i.useCallback(e => (0, r.jsx)(a.L, c(s({}, e), {
+      p = i.useCallback(e => (0, r.jsx)(a.L, c(s({}, e), {
         src: () => n.e("8366").then(n.t.bind(n, 553427, 19)),
         ref: t,
         initialAnimation: o.current,
@@ -106,6 +106,6 @@ let u = {
         var e, n;
         return null != (n = null == (e = t.current) ? true : e.getCurrentFrame()) ? n : null
       }, []),
-      Component: _
+      Component: p
     }
   }

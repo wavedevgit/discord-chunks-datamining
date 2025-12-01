@@ -2,9 +2,9 @@
 /** chunk id: 553385, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  XP: () => _,
+  XP: () => p,
   j8: () => f,
-  z$: () => p
+  z$: () => _
 });
 var Chunk544891 = require("./544891.js"),
   Chunk430742 = require("./430742.js"),
@@ -26,7 +26,7 @@ function f(e) {
     rejectWithError: true
   })
 }
-async function _(e, t, n) {
+async function p(e, t, n) {
   await r.tn.post({
     url: d.ANM.SEND_GAMING_STATS(t),
     body: {
@@ -37,9 +37,9 @@ async function _(e, t, n) {
       }
     },
     rejectWithError: false
-  }), h(t)
+  }), m(t)
 }
-async function p(e) {
+async function _(e) {
   let t = await r.tn.patch({
     url: d.ANM.UPDATE_GAMING_STATS(e.channel_id, e.id),
     rejectWithError: false
@@ -51,10 +51,10 @@ async function p(e) {
       message: e,
       shouldMention: false,
       showMentionToggle: false
-    }), h(n.id)), i.Z.saveDraft(e.channel_id, t.text, l.d.ChannelMessage)
+    }), m(n.id)), i.Z.saveDraft(e.channel_id, t.text, l.d.ChannelMessage)
   }
 }
 
-function h(e) {
+function m(e) {
   c.Z.getMessages(e).hasMoreAfter ? a.Z.jumpToPresent(e, d.AQB) : u.S.dispatch(d.CkL.SCROLLTO_PRESENT)
 }

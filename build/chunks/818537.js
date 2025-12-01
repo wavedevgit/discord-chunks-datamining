@@ -2,7 +2,7 @@
 /** chunk id: 818537, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk44837 = require("./44837.js"),
   Chunk791819 = require("./791819.js"),
@@ -23,7 +23,7 @@ var Chunk898061 = require("./898061.js"),
       return (0, s.Z)(e, t)
     })
   },
-  _ = function(e) {
+  p = function(e) {
     function t() {
       for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
       return (t = e.call.apply(e, [this].concat(r)) || this).appliedClasses = {
@@ -94,7 +94,7 @@ var Chunk898061 = require("./898061.js"),
       }))
     }, t
   }(Chunk473749.Component);
-_.defaultProps = {
+p.defaultProps = {
   classNames: ""
-}, _.propTypes = {};
-let p = _
+}, p.propTypes = {};
+let _ = p

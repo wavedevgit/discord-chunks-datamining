@@ -2,7 +2,7 @@
 /** chunk id: 145454, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => p
+  default: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,23 +22,23 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class _ extends Chunk473749.PureComponent {
+class p extends Chunk473749.PureComponent {
   render() {
     let e, t, n, i, {
         error: f,
-        working: _,
-        transitionState: p,
-        validPhone: h,
-        layerContext: m
+        working: p,
+        transitionState: _,
+        validPhone: m,
+        layerContext: h
       } = this.props,
       {
         phone: g
       } = this.state,
       E = [];
-    return h ? e = Chunk388032.intl.string(Chunk388032.t["4qMI6A"]) : (e = Chunk388032.intl.string(Chunk388032.t.Vp9je2), t = (0, Chunk54381.jsx)(Chunk481060.Text, {
+    return m ? e = Chunk388032.intl.string(Chunk388032.t["4qMI6A"]) : (e = Chunk388032.intl.string(Chunk388032.t.Vp9je2), t = (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.format(Chunk388032.t["3BTmqX"], {})
-    })), h ? (n = (0, Chunk54381.jsx)(Chunk481060.gNt, {
+    })), m ? (n = (0, Chunk54381.jsx)(Chunk481060.gNt, {
       label: Chunk388032.intl.string(Chunk388032.t.Xclkxp),
       hideLabel: true,
       errorMessage: null != f ? f : true,
@@ -49,21 +49,21 @@ class _ extends Chunk473749.PureComponent {
       variant: "secondary",
       text: Chunk388032.intl.string(Chunk388032.t["5b60gi"]),
       onClick: this.handleResendCode,
-      loading: _
+      loading: p
     }]) : (n = (0, Chunk54381.jsx)(Chunk200357.Z, {
       label: Chunk388032.intl.string(Chunk388032.t["64bX0M"]),
       errorMessage: null != f ? f : true,
       className: Chunk520668.field,
       onChange: this.handlePhoneChange,
-      submitting: _,
-      layerContext: m
+      submitting: p,
+      layerContext: h
     }), E = [{
       text: Chunk388032.intl.string(Chunk388032.t.TXNS7S),
       disabled: "" === g,
-      loading: _,
+      loading: p,
       onClick: this.handleAddPhone
-    }]), i = h ? Chunk388032.intl.string(Chunk388032.t.Xclkxp) : Chunk388032.intl.string(Chunk388032.t.uR76s6), (0, Chunk54381.jsx)(Chunk793030.Modal, {
-      size: h ? "sm" : "md",
+    }]), i = m ? Chunk388032.intl.string(Chunk388032.t.Xclkxp) : Chunk388032.intl.string(Chunk388032.t.uR76s6), (0, Chunk54381.jsx)(Chunk793030.Modal, {
+      size: m ? "sm" : "md",
       title: Chunk473749,
       subtitle: module,
       actions: E,
@@ -73,7 +73,7 @@ class _ extends Chunk473749.PureComponent {
           impressionName: Chunk990547.ImpressionNames.USER_VERIFY_PHONE
         }
       },
-      transitionState: p,
+      transitionState: _,
       children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 8,
         children: [require, exports]
@@ -107,4 +107,4 @@ class _ extends Chunk473749.PureComponent {
     }
   }
 }
-let p = _
+let _ = p

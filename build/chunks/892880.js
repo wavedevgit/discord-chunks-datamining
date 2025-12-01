@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./539854.js"), require("./388685.js");
 var Chunk31775 = require("./31775.js"),
   a = require.n(Chunk31775),
@@ -17,7 +17,7 @@ let f = new(a())({
   maxAge: +Chunk70956.Z.Millis.MINUTE
 });
 
-function _(e, t, n) {
+function p(e, t, n) {
   null != r && clearTimeout(r), r = setTimeout(() => {
     let r = [],
       i = e => {
@@ -36,13 +36,13 @@ function _(e, t, n) {
   }, 200)
 }
 
-function p(e, t) {
+function _(e, t) {
   let n = "".concat(null != e ? e : "", ":").concat(t),
     r = f.get(n);
   if (null != r) return r;
   f.set(n, true)
 }
-let h = {
+let m = {
   getGuildNameSuggestion: function(e) {
     let t = l.default.getCurrentUser(),
       n = u.oY(t);
@@ -56,7 +56,7 @@ let h = {
       i = [],
       a = false;
     r ? e.forEach(e => {
-      null == p(e, t) && i.push(e)
-    }) : null == p(e, t) && (a = true), i.length > 0 && r ? _(i, t, n) : a && _(e, t, n)
+      null == _(e, t) && i.push(e)
+    }) : null == _(e, t) && (a = true), i.length > 0 && r ? p(i, t, n) : a && p(e, t, n)
   }
 }

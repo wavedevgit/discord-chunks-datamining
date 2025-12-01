@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 25990, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E, b, y, O;
+let r, i, a, o, s, l, c, u, d, f, p, _, m, h, g, E, b, y, O;
 require.d(exports, {
   Z: () => ed
 });
@@ -12,7 +12,7 @@ var v, Chunk979554 = require("./979554.js"),
   Chunk212161 = require("./212161.js"),
   Chunk981631 = require("./981631.js");
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,35 +20,35 @@ function R(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let P = Chunk981631.QZA.CLOSED,
-  D = {};
+let R = Chunk981631.QZA.CLOSED,
+  w = {};
 
-function w() {
-  P = Chunk981631.QZA.OPEN, D = {}
-}
-
-function L() {
-  P = Chunk981631.QZA.CLOSED, D = {}
+function D() {
+  R = Chunk981631.QZA.OPEN, w = {}
 }
 
 function x() {
-  P = Chunk981631.QZA.SUBMITTING, D = {}
+  R = Chunk981631.QZA.CLOSED, w = {}
 }
 
-function M(e) {
-  var t;
-  if (P !== N.QZA.SUBMITTING) returnfalse;
-  P = N.QZA.OPEN, D = null != (t = e.errors) ? t : {}
-}
-
-function k(e) {
-  let {
-    section: t
-  } = e;
-  return t === N.oAB.ACCOUNT && w()
+function L() {
+  R = Chunk981631.QZA.SUBMITTING, w = {}
 }
 
 function j(e) {
+  var t;
+  if (R !== N.QZA.SUBMITTING) returnfalse;
+  R = N.QZA.OPEN, w = null != (t = e.errors) ? t : {}
+}
+
+function M(e) {
+  let {
+    section: t
+  } = e;
+  return t === N.oAB.ACCOUNT && D()
+}
+
+function k(e) {
   let {
     avatar: t
   } = e;
@@ -66,17 +66,17 @@ function G(e) {
   let {
     legacyUsernameDisabled: t
   } = e;
-  _ = t
-}
-
-function B(e) {
-  let {
-    item: t
-  } = e;
-  t.type === I.Z.AVATAR_DECORATION ? a = t.value : t.type === I.Z.PROFILE_EFFECT ? o = t.value : t.type === I.Z.NAMEPLATE && (s = t.value)
+  p = t
 }
 
 function Z(e) {
+  let {
+    item: t
+  } = e;
+  t.type === S.Z.AVATAR_DECORATION ? a = t.value : t.type === S.Z.PROFILE_EFFECT ? o = t.value : t.type === S.Z.NAMEPLATE && (s = t.value)
+}
+
+function B(e) {
   let {
     item: t
   } = e;
@@ -104,14 +104,14 @@ function H(e) {
   u = t
 }
 
-function W(e) {
+function Y(e) {
   let {
     color: t
   } = e;
   d = t
 }
 
-function Y(e) {
+function W(e) {
   let {
     themeColors: t
   } = e;
@@ -122,31 +122,31 @@ function K(e) {
   let {
     primaryGuildId: t
   } = e;
-  p = t
+  _ = t
 }
 
 function z(e) {
   let {
     displayNameStyles: t
   } = e;
-  h = t
+  m = t
 }
 
 function q(e) {
   let {
     themeColors: t
   } = e;
-  m = t
+  h = t
 }
 
-function X(e) {
+function Q(e) {
   let {
     avatar: t
   } = e;
   g = t
 }
 
-function Q(e) {
+function X(e) {
   let {
     avatarDecoration: t
   } = e;
@@ -174,7 +174,7 @@ function ee(e) {
     avatarDecoration: r,
     displayNameStyles: i
   } = e;
-  y = t, m = n, E = r, O = i
+  y = t, h = n, E = r, O = i
 }
 
 function et() {
@@ -182,15 +182,15 @@ function et() {
 }
 
 function en() {
-  D = {}
+  w = {}
 }
 
 function er() {
-  ei(), ea(), es(), el(), D = {}
+  ei(), ea(), es(), el(), w = {}
 }
 
 function ei() {
-  r = true, i = true, a = true, o = true, s = true, h = true
+  r = true, i = true, a = true, o = true, s = true, m = true
 }
 
 function ea() {
@@ -198,29 +198,29 @@ function ea() {
 }
 
 function eo() {
-  g = true, E = true, b = true, y = true, m = true, O = true
+  g = true, E = true, b = true, y = true, h = true, O = true
 }
 
 function es() {
-  _ = true
-}
-
-function el() {
   p = true
 }
 
+function el() {
+  _ = true
+}
+
 function ec() {
-  er(), eo(), L()
+  er(), eo(), x()
 }
 class eu extends(v = Chunk442837.ZP.Store) {
   getFormState() {
-    return P
+    return R
   }
   getErrors() {
-    return D
+    return w
   }
   showNotice() {
-    return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== a || true !== o || true !== i || true !== s || true !== _ || true !== p || true !== h
+    return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== a || true !== o || true !== i || true !== s || true !== p || true !== _ || true !== m
   }
   getIsSubmitDisabled() {
     return true !== c && c.length > Chunk981631.tPV
@@ -256,7 +256,7 @@ class eu extends(v = Chunk442837.ZP.Store) {
     return o
   }
   getPendingDisplayNameStyles() {
-    return h
+    return m
   }
   getAllPending() {
     return {
@@ -270,13 +270,13 @@ class eu extends(v = Chunk442837.ZP.Store) {
       pendingProfileEffect: o,
       pendingGlobalName: i,
       pendingNameplate: s,
-      pendingLegacyUsernameDisabled: _,
-      pendingPrimaryGuildId: p,
-      pendingDisplayNameStyles: h
+      pendingLegacyUsernameDisabled: p,
+      pendingPrimaryGuildId: _,
+      pendingDisplayNameStyles: m
     }
   }
   getTryItOutThemeColors() {
-    return m
+    return h
   }
   getTryItOutAvatar() {
     return g
@@ -292,7 +292,7 @@ class eu extends(v = Chunk442837.ZP.Store) {
   }
   getAllTryItOut() {
     return {
-      tryItOutThemeColors: m,
+      tryItOutThemeColors: h,
       tryItOutAvatar: g,
       tryItOutAvatarDecoration: E,
       tryItOutProfileEffect: b,
@@ -301,28 +301,28 @@ class eu extends(v = Chunk442837.ZP.Store) {
     }
   }
 }
-R(eu, "displayName", "UserSettingsAccountStore");
+P(eu, "displayName", "UserSettingsAccountStore");
 let ed = new eu(Chunk570140.Z, {
-  USER_SETTINGS_ACCOUNT_INIT: w,
-  USER_SETTINGS_MODAL_INIT: w,
-  USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: w,
-  USER_SETTINGS_MODAL_SET_SECTION: k,
-  USER_SETTINGS_ACCOUNT_CLOSE: L,
+  USER_SETTINGS_ACCOUNT_INIT: D,
+  USER_SETTINGS_MODAL_INIT: D,
+  USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: D,
+  USER_SETTINGS_MODAL_SET_SECTION: M,
+  USER_SETTINGS_ACCOUNT_CLOSE: x,
   USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: ec,
-  USER_SETTINGS_ACCOUNT_SUBMIT: x,
-  USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: M,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: j,
+  USER_SETTINGS_ACCOUNT_SUBMIT: L,
+  USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: j,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: k,
   USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: U,
   USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED: G,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_COLLECTIBLES_ITEM: B,
-  USER_SETTINGS_ACCOUNT_SET_SINGLE_TRY_IT_OUT_COLLECTIBLES_ITEM: Z,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_COLLECTIBLES_ITEM: Z,
+  USER_SETTINGS_ACCOUNT_SET_SINGLE_TRY_IT_OUT_COLLECTIBLES_ITEM: B,
   USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER: F,
   USER_SETTINGS_ACCOUNT_SET_PENDING_BIO: V,
   USER_SETTINGS_ACCOUNT_SET_PENDING_PRONOUNS: H,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR: W,
-  USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS: Y,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR: X,
-  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION: Q,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR: Y,
+  USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS: W,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR: Q,
+  USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_AVATAR_DECORATION: X,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT: J,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER: $,
   USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS: q,

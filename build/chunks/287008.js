@@ -19,28 +19,28 @@ function u(e) {
     size: u,
     showPending: d = false,
     animateOnHover: f = false,
-    avatarOverride: _
+    avatarOverride: p
   } = e, {
-    onMouseEnter: p,
-    onMouseLeave: h,
-    shouldAnimate: m
+    onMouseEnter: _,
+    onMouseLeave: m,
+    shouldAnimate: h
   } = (0, c.Z)(f), {
     pendingAvatar: g
   } = (0, l.Z)({}), E = d && null != t ? (0, o.SD)({
     userId: t.id,
     image: g,
-    canAnimate: m,
+    canAnimate: h,
     size: u
-  }) : true, b = true !== _ ? _ : E, y = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null);
+  }) : true, b = true !== p ? p : E, y = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null);
   return {
     avatarSrc: r.useMemo(() => null != t ? (0, a.SG)(b, y, t, {
-      canAnimate: m,
+      canAnimate: h,
       size: u
-    }) : true, [b, y, t, m, u]),
-    isAvatarAnimating: m,
+    }) : true, [b, y, t, h, u]),
+    isAvatarAnimating: h,
     eventHandlers: {
-      onMouseEnter: p,
-      onMouseLeave: h
+      onMouseEnter: _,
+      onMouseLeave: m
     }
   }
 }

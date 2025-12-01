@@ -21,17 +21,17 @@ function u(e, t, n) {
 }
 let d = new Chunk710845.Z("BackForwardNavStore"),
   f = 20,
-  _ = [Chunk981631.Z5c.CHANNEL_THREAD_VIEW(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
+  p = [Chunk981631.Z5c.CHANNEL_THREAD_VIEW(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
     optional: true
   }), ":threadId", ":messageId?"), Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
     optional: true
   }), ":messageId?"), Chunk981631.Z5c.VOICE_CHAT_CHANNEL_PARTIAL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
     optional: true
   }), ":messageId?"), Chunk981631.Z5c.NOTIFICATIONS, Chunk981631.Z5c.FRIENDS, Chunk981631.Z5c.ME, Chunk981631.Z5c.MESSAGE_REQUESTS, Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.USERS(":userId"), Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.GLOBAL_DISCOVERY, Chunk981631.Z5c.QUEST_HOME, Chunk981631.Z5c.GLOBAL_DISCOVERY_SERVERS, Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS],
-  p = [],
-  h = 0;
+  _ = [],
+  m = 0;
 
-function m(e, t) {
+function h(e, t) {
   if (t < 0 || t >= e.length) throw RangeError("index out of bounds");
   let n = 0,
     r = t;
@@ -42,46 +42,46 @@ function m(e, t) {
 function g(e) {
   let {
     path: t
-  } = e, n = (0, i.LX)(t, _);
+  } = e, n = (0, i.LX)(t, p);
   if (null == n) returnfalse;
   if (n.params.guildId === c.STv && true === n.params.messageId) return d.verbose("Ignoring weird notification sidebar route lacking messageId"), false;
-  if (p.length > 0) {
-    if (t === p[h].path) returnfalse;
-    let e = p.findIndex(e => e.path === t);
-    false !== e && (h >= e && (h -= 1), p.splice(e, 1))
+  if (_.length > 0) {
+    if (t === _[m].path) returnfalse;
+    let e = _.findIndex(e => e.path === t);
+    false !== e && (m >= e && (m -= 1), _.splice(e, 1))
   }
-  for (n.params.guildId !== c.STv && (h > 0 && m(p, h), h = 0); p.length > f;) p.pop();
-  p.unshift({
+  for (n.params.guildId !== c.STv && (m > 0 && h(_, m), m = 0); _.length > f;) _.pop();
+  _.unshift({
     path: t,
     params: n.params
   })
 }
 
 function E(e) {
-  h < p.length - 1 && h++
+  m < _.length - 1 && m++
 }
 
 function b(e) {
-  h > 0 && h--
+  m > 0 && m--
 }
 class y extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    p = [], h = 0
+    _ = [], m = 0
   }
   get pastPlaces() {
-    return p
+    return _
   }
   get canGoBack() {
-    return h < p.length - 1
+    return m < _.length - 1
   }
   get canGoForward() {
-    return h > 0
+    return m > 0
   }
   get backDestination() {
-    return this.canGoBack ? p[h + 1] : null
+    return this.canGoBack ? _[m + 1] : null
   }
   get forwardDestination() {
-    return this.canGoForward ? p[h - 1] : null
+    return this.canGoForward ? _[m - 1] : null
   }
 }
 u(y, "displayName", "BackForwardNavStore");

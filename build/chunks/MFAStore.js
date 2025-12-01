@@ -2,7 +2,7 @@
 /** chunk id: 325067, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 });
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -21,17 +21,17 @@ function c(e, t, n) {
 let u = false,
   d = [],
   f = "",
-  _ = false,
-  p = {
+  p = false,
+  _ = {
     viewNonce: "",
     regenerateNonce: ""
   };
 
-function h() {
-  _ = true
+function m() {
+  p = true
 }
 
-function m(e) {
+function h(e) {
   let {
     token: t,
     codes: n
@@ -58,7 +58,7 @@ function y(e) {
   let {
     nonces: t
   } = e;
-  p = t
+  _ = t
 }
 
 function O(e) {
@@ -72,7 +72,7 @@ function O(e) {
 function v() {
   d = []
 }
-class I extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   getVerificationKey() {
     return f
   }
@@ -83,21 +83,21 @@ class I extends(r = Chunk442837.ZP.Store) {
     return u
   }
   getNonces() {
-    return p
-  }
-  get hasSeenBackupPrompt() {
     return _
   }
+  get hasSeenBackupPrompt() {
+    return p
+  }
 }
-c(I, "displayName", "MFAStore");
-let T = new I(Chunk570140.Z, {
-  MFA_ENABLE_SUCCESS: m,
+c(S, "displayName", "MFAStore");
+let I = new S(Chunk570140.Z, {
+  MFA_ENABLE_SUCCESS: h,
   MFA_DISABLE_SUCCESS: g,
   MFA_SMS_TOGGLE: E,
   MFA_SMS_TOGGLE_COMPLETE: b,
   MFA_CLEAR_BACKUP_CODES: v,
   MFA_VIEW_BACKUP_CODES: O,
   MFA_SEND_VERIFICATION_KEY: y,
-  MFA_SEEN_BACKUP_CODE_PROMPT: h,
+  MFA_SEEN_BACKUP_CODE_PROMPT: m,
   CONNECTION_OPEN: () => {}
 })

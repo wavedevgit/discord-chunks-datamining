@@ -2,7 +2,7 @@
 /** chunk id: 688798, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk661111 = require("./661111.js"),
@@ -30,7 +30,7 @@ function f(e, t) {
     }] of Object.entries(e)) a <= t && a > n && (n = a, r = i);
   return r
 }
-class _ extends Chunk147913.Z {
+class p extends Chunk147913.Z {
   constructor(...e) {
     super(...e), d(this, "actions", {
       POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
@@ -46,13 +46,13 @@ class _ extends Chunk147913.Z {
             latestChangelogId: a
           }), null == a || true !== t[a].show_on_startup) return;
         let d = l.Z.lastSeenChangelogId(),
-          _ = l.Z.lastSeenChangelogDate();
+          p = l.Z.lastSeenChangelogDate();
         if (null != d && 0 >= s.default.compare(a, d)) return;
-        let p = await i.Z.fetchChangelog(a, o.default.locale);
-        if (null == p) return;
-        if (null == _ || null == l.Z.lastSeenChangelogDate()) return void i.Z.markChangelogAsSeen(a, p.date);
+        let _ = await i.Z.fetchChangelog(a, o.default.locale);
+        if (null == _) return;
+        if (null == p || null == l.Z.lastSeenChangelogDate()) return void i.Z.markChangelogAsSeen(a, _.date);
         if (l.Z.isLocked()) return;
-        new Date(p.date) > new Date(_) && (0, u.Z)()
+        new Date(_.date) > new Date(p) && (0, u.Z)()
       } finally {
         r.Z.dispatch({
           type: "CHANGE_LOG_RESOLVED"
@@ -61,4 +61,4 @@ class _ extends Chunk147913.Z {
     })
   }
 }
-let p = new _
+let _ = new p

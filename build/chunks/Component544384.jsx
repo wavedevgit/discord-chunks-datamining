@@ -23,13 +23,13 @@ var Chunk54381 = require("./54381.js"),
 function g(e, t, n) {
   let r = (0, a.e7)([l.Z], () => null != e ? l.Z.getSelectedParticipantId(e.id) : null),
     o = (0, a.e7)([f.Z], () => null != r ? f.Z.getActiveStreamForStreamKey(r) : null, [r]),
-    s = (0, a.cj)([_.default], () => n.reduce((e, t) => (e[t.ownerId] = _.default.getUser(t.ownerId), e), {}), [n]);
+    s = (0, a.cj)([p.default], () => n.reduce((e, t) => (e[t.ownerId] = p.default.getUser(t.ownerId), e), {}), [n]);
   return i.useMemo(() => {
     if (null == e) return [];
     let r = n.filter(e => e.ownerId !== (null == t ? true : t.id));
     return 1 === r.length && r[0].ownerId === (null == o ? true : o.ownerId) ? [] : r.map(t => ({
       stream: t,
-      username: p.ZP.getName(e.getGuildId(), e.id, s[t.ownerId])
+      username: _.ZP.getName(e.getGuildId(), e.id, s[t.ownerId])
     }))
   }, [s, n, e, o, null == t ? true : t.id])
 }
@@ -42,48 +42,48 @@ function E(e) {
     activeStreams: a,
     hideSelfOptions: l = false,
     showReportOption: f = false,
-    handleGoLive: _,
-    onClose: p,
+    handleGoLive: p,
+    onClose: _,
     onSelect: E,
-    appContext: b = h.IlC.APP,
+    appContext: b = m.IlC.APP,
     disableChangeWindows: y = false,
     onInteraction: O
-  } = e, v = null != (t = a.find(e => e.ownerId === (null == i ? true : i.id))) ? t : null, I = g(n, i, a), T = (0, c.Z)(v, b), S = (0, u.b)({
+  } = e, v = null != (t = a.find(e => e.ownerId === (null == i ? true : i.id))) ? t : null, S = g(n, i, a), I = (0, c.Z)(v, b), T = (0, u.b)({
     disableChangeWindows: y,
     stream: v,
     showReportOption: f,
-    handleGoLive: _,
+    handleGoLive: p,
     minimal: true,
     appContext: b
   });
   return (0, r.jsx)(s.Z, {
-    section: h.jXE.CONTEXT_MENU,
+    section: m.jXE.CONTEXT_MENU,
     children: (0, r.jsxs)(o.v2r, {
       onSelect: E,
       navId: "manage-streams",
-      onClose: p,
+      onClose: _,
       onInteraction: O,
-      "aria-label": null != v ? m.intl.string(m.t.S5anIc) : m.intl.string(m.t.fjBNo1),
+      "aria-label": null != v ? h.intl.string(h.t.S5anIc) : h.intl.string(h.t.fjBNo1),
       children: [(0, r.jsx)(o.kSQ, {
-        children: I.map(e => {
+        children: S.map(e => {
           let {
             stream: t,
             username: n
           } = e;
           return (0, r.jsx)(o.sNh, {
             id: t.ownerId,
-            label: m.intl.formatToPlainString(m.t["7rkg+/"], {
+            label: h.intl.formatToPlainString(h.t["7rkg+/"], {
               username: n
             }),
             icon: o.g5r,
             action: () => (0, d.Z)(t)
           }, "manage-stream-menu".concat(t.ownerId))
         })
-      }), l ? null : S, l ? null : (0, r.jsx)(o.kSQ, {
+      }), l ? null : T, l ? null : (0, r.jsx)(o.kSQ, {
         children: (0, r.jsx)(o.sNh, {
           id: "more-options",
-          label: m.intl.string(m.t.PdRCRg),
-          children: T
+          label: h.intl.string(h.t.PdRCRg),
+          children: I
         })
       })]
     })

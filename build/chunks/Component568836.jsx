@@ -2,8 +2,8 @@
 /** chunk id: 568836, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $G: () => _,
-  OR: () => p,
+  $G: () => p,
+  OR: () => _,
   aL: () => f
 });
 var Chunk54381 = require("./54381.js");
@@ -52,13 +52,13 @@ function d(e, t) {
   }), e
 }
 let f = 660,
-  _ = e => (0, r.jsx)(o.Z, d(c({}, e), {
+  p = e => (0, r.jsx)(o.Z, d(c({}, e), {
     className: a()(e.className, {
       [s.embedVertical]: !e.isHorizontal,
       [s.embedHorizontal]: e.isHorizontal
     })
   })),
-  p = e => {
+  _ = e => {
     let {
       isHorizontal: t
     } = e, n = () => (0, r.jsx)("div", {
@@ -76,7 +76,7 @@ let f = 660,
         })
       })
     });
-    return (0, r.jsx)(_, d(c({}, e), {
+    return (0, r.jsx)(p, d(c({}, e), {
       media: i,
       title: n
     }))

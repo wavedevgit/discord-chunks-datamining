@@ -2,7 +2,7 @@
 /** chunk id: 636245, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -51,24 +51,24 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let p = e => {
   var {
     guildId: t,
     channelId: n,
     variant: c = "active",
     size: f = "sm",
-    onAction: _
-  } = e, p = d(e, ["guildId", "channelId", "variant", "size", "onAction"]);
-  let h = (0, i.e7)([s.Z], () => s.Z.isInChannel(n), [n]),
-    m = () => {
-      null == _ || _(), o.AC(t, n)
+    onAction: p
+  } = e, _ = d(e, ["guildId", "channelId", "variant", "size", "onAction"]);
+  let m = (0, i.e7)([s.Z], () => s.Z.isInChannel(n), [n]),
+    h = () => {
+      null == p || p(), o.AC(t, n)
     };
   return (0, r.jsx)(a.Button, u({
     variant: c,
     size: f,
     text: l.intl.string(l.t.ZYO5OK),
-    disabled: h,
-    onClick: m,
+    disabled: m,
+    onClick: h,
     fullWidth: true
-  }, p))
+  }, _))
 }

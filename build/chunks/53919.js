@@ -10,30 +10,30 @@ var Chunk762378 = require("./762378.js"),
   u = "[object Map]",
   d = "[object Object]",
   f = "[object Promise]",
-  _ = "[object Set]",
-  p = "[object WeakMap]",
-  h = "[object DataView]",
-  m = Chunk785775(Chunk762378),
+  p = "[object Set]",
+  _ = "[object WeakMap]",
+  m = "[object DataView]",
+  h = Chunk785775(Chunk762378),
   g = Chunk785775(Chunk481062),
   E = Chunk785775(Chunk34775),
   b = Chunk785775(Chunk79568),
   y = Chunk785775(Chunk221286),
   O = Chunk903425;
-(Chunk762378 && O(new Chunk762378(new ArrayBuffer(1))) != h || Chunk481062 && O(new Chunk481062) != u || Chunk34775 && O(Chunk34775.resolve()) != f || Chunk79568 && O(new Chunk79568) != _ || Chunk221286 && O(new Chunk221286) != p) && (O = function(e) {
+(Chunk762378 && O(new Chunk762378(new ArrayBuffer(1))) != m || Chunk481062 && O(new Chunk481062) != u || Chunk34775 && O(Chunk34775.resolve()) != f || Chunk79568 && O(new Chunk79568) != p || Chunk221286 && O(new Chunk221286) != _) && (O = function(e) {
   var t = l(e),
     n = t == d ? e.constructor : true,
     r = n ? c(n) : "";
   if (r) switch (r) {
-    case m:
-      return h;
+    case h:
+      return m;
     case g:
       return u;
     case E:
       return f;
     case b:
-      return _;
+      return p;
     case y:
-      return p
+      return _
   }
   return t
 }), module.exports = O

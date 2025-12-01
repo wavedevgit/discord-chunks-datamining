@@ -37,18 +37,18 @@ function u(e) {
     status: u,
     className: d,
     animated: f = false
-  } = e, _ = l(e, ["channel", "size", "facepileSizeOverride", "isTyping", "status", "className", "animated"]);
+  } = e, p = l(e, ["channel", "size", "facepileSizeOverride", "isTyping", "status", "className", "animated"]);
   return t.recipients.length >= 2 && null == t.icon ? (0, r.jsx)(s.Z, {
-    "aria-label": _["aria-label"],
-    "aria-hidden": _["aria-hidden"],
+    "aria-label": p["aria-label"],
+    "aria-hidden": p["aria-hidden"],
     className: d,
     recipients: t.recipients,
     size: null != i ? i : n,
     isTyping: c,
     status: u
   }) : (0, r.jsx)(a.qEK, {
-    "aria-hidden": _["aria-hidden"],
-    "aria-label": _["aria-label"],
+    "aria-hidden": p["aria-hidden"],
+    "aria-label": p["aria-label"],
     className: d,
     size: n,
     src: (0, o.x)(t, 80, f)

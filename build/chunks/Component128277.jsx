@@ -2,7 +2,7 @@
 /** chunk id: 128277, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk671955 = require("./671955.js"),
   Chunk704543 = require("./704543.js");
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,20 +40,20 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,54 +64,54 @@ function D(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function L(e) {
+function x(e) {
   let {
     user: t,
     currentUser: n,
     activity: a,
-    className: R,
-    onClose: D
-  } = e, L = (0, p.Dt)(), x = (0, p.Dt)(), {
-    themeType: M
-  } = (0, b.z)(), k = (0, _.Z)({
+    className: P,
+    onClose: w
+  } = e, x = (0, _.Dt)(), L = (0, _.Dt)(), {
+    themeType: j
+  } = (0, b.z)(), M = (0, p.Z)({
     activity: a,
     user: t
-  }), j = (0, E.Z)(a), U = null != j.text && "" !== j.text, {
+  }), k = (0, E.Z)(a), U = null != k.text && "" !== k.text, {
     largeImage: G
   } = (0, d.FO)(a), {
-    analyticsLocations: B
-  } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), Z = (0, m.Z)({
+    analyticsLocations: Z
+  } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), B = (0, h.Z)({
     display: "live",
     user: t,
     activity: a,
-    entry: k,
-    analyticsLocations: B
+    entry: M,
+    analyticsLocations: Z
   }), F = (0, g.Z)({
     userId: t.id,
-    onAction: Z
+    onAction: B
   });
   if (!(0, l.Z)(a)) return null;
   let V = () => {
       var e, n;
       let l = null != (n = null == (e = a.state) ? true : e.split("; ")) ? n : [];
-      return 0 === l.length ? null : null == a.sync_id ? (0, r.jsx)(I.Z, {
+      return 0 === l.length ? null : null == a.sync_id ? (0, r.jsx)(S.Z, {
         variant: "text-xs/normal",
         text: l.join(", ")
-      }) : (0, r.jsx)(I.Z, {
+      }) : (0, r.jsx)(S.Z, {
         variant: "text-xs/normal",
         text: l.map((e, n) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(s.P3F, {
             className: o()(N.clickableText, N.inline),
             onClick: e => {
-              e.stopPropagation(), Z({
+              e.stopPropagation(), B({
                 action: "OPEN_SPOTIFY_ARTIST"
-              }), (0, h.d$)(a, t.id, n)
+              }), (0, m.d$)(a, t.id, n)
             },
             children: e
           }), n < l.length - 1 ? ", " : ""]
@@ -127,36 +127,36 @@ function L(e) {
         start: t,
         end: n
       } = e;
-      return null == t || null == n ? null : (0, r.jsx)(T.Z, {
+      return null == t || null == n ? null : (0, r.jsx)(I.Z, {
         start: t,
         end: n
       })
     },
-    W = () => t.id === n.id ? null : (0, r.jsx)("div", {
+    Y = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: N.actions,
-      children: (0, r.jsx)(S.Z, {
+      children: (0, r.jsx)(T.Z, {
         user: t,
         activity: a,
-        onAction: Z
+        onAction: B
       })
     });
   return (0, r.jsx)(u.Gt, {
-    value: B,
+    value: Z,
     children: (0, r.jsxs)(O.Z, {
       ref: F,
-      className: o()(N.card, R),
-      onAction: Z,
-      onClose: D,
-      "aria-labelledby": U ? "".concat(x, " ").concat(L) : L,
-      children: [(0, r.jsx)(v.Z, w(P({
-        textId: x
-      }, j), {
+      className: o()(N.card, P),
+      onAction: B,
+      onClose: w,
+      "aria-labelledby": U ? "".concat(L, " ").concat(x) : x,
+      children: [(0, r.jsx)(v.Z, D(R({
+        textId: L
+      }, k), {
         contextMenu: (0, r.jsx)(A.Z, {
           display: "live",
           user: t,
           activity: a,
-          entry: k,
-          onClose: D
+          entry: M,
+          onClose: w
         })
       })), (0, r.jsx)("div", {
         className: N.body,
@@ -164,34 +164,34 @@ function L(e) {
           className: N.content,
           children: [(0, r.jsx)(f.E, {
             image: G,
-            size: M === C.l.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
+            size: j === C.l.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
             className: N.clickableImage,
             onClick: e => {
-              e.stopPropagation(), Z({
+              e.stopPropagation(), B({
                 action: "OPEN_SPOTIFY_ALBUM"
-              }), (0, h.Z5)(a, t.id)
+              }), (0, m.Z5)(a, t.id)
             }
           }), (0, r.jsxs)("div", {
             className: N.details,
             children: [(0, r.jsxs)("div", {
-              children: [(0, r.jsx)(I.f, {
+              children: [(0, r.jsx)(S.f, {
                 variant: "heading-sm/semibold",
                 text: a.details,
                 onClick: () => {
-                  Z({
+                  B({
                     action: "OPEN_SPOTIFY_TRACK"
-                  }), (0, h.aG)(a)
+                  }), (0, m.aG)(a)
                 },
-                id: L
+                id: x
               }), V()]
             }), (0, r.jsx)(y.Z, {
               user: t,
               activity: a,
               className: N.badges
-            }), H(), M === C.l.MODAL_V2 && W()]
-          }), M === C.l.MODAL && W()]
+            }), H(), j === C.l.MODAL_V2 && Y()]
+          }), j === C.l.MODAL && Y()]
         })
-      }), M !== C.l.MODAL && M !== C.l.MODAL_V2 && W()]
+      }), j !== C.l.MODAL && j !== C.l.MODAL_V2 && Y()]
     })
   })
 }

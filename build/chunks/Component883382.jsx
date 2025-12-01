@@ -24,14 +24,14 @@ function g() {
     [t, n] = Chunk473749.useState(module),
     g = (0, Chunk915009.LN)(),
     E = e => {
-      e ? (0, o.g)([p.pjP.PERSONALIZATION], []).catch(f.S).then(() => n(true)) : (0, f.V)({
-        header: h.intl.string(h.t["9SNpzv"]),
-        confirmText: h.intl.string(h.t["9g5UGw"]),
-        cancelText: h.intl.string(h.t["+ZLPw9"]),
+      e ? (0, o.g)([_.pjP.PERSONALIZATION], []).catch(f.S).then(() => n(true)) : (0, f.V)({
+        header: m.intl.string(m.t["9SNpzv"]),
+        confirmText: m.intl.string(m.t["9g5UGw"]),
+        cancelText: m.intl.string(m.t["+ZLPw9"]),
         onConfirm: () => {
-          (0, o.g)([], [p.pjP.PERSONALIZATION]).catch(f.S).then(() => n(false))
+          (0, o.g)([], [_.pjP.PERSONALIZATION]).catch(f.S).then(() => n(false))
         },
-        body: h.intl.string(h.t.gJvDDh)
+        body: m.intl.string(m.t.gJvDDh)
       })
     };
   return (0, Chunk54381.jsx)(Chunk838436.U, {

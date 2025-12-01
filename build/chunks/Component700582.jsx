@@ -59,12 +59,12 @@ let f = Chunk473749.memo(function(e) {
     size: s = a.EFr.SIZE_32,
     animate: u = false,
     "aria-hidden": f = false
-  } = e, _ = c(e, ["user", "guildId", "size", "animate", "aria-hidden"]);
-  let p = i.useContext(o.Z);
+  } = e, p = c(e, ["user", "guildId", "size", "animate", "aria-hidden"]);
+  let _ = i.useContext(o.Z);
   return (0, r.jsx)(a.qEK, l({
-    src: d(t, (0, a.pxk)(s), u, null != n ? n : p),
+    src: d(t, (0, a.pxk)(s), u, null != n ? n : _),
     size: s,
     "aria-label": f ? true : t.username,
     "aria-hidden": f
-  }, _))
+  }, p))
 })

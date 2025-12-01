@@ -23,7 +23,7 @@ function u(e) {
       var t;
       return e.showNotice() && !(null == (t = e.canCloseEarly) ? true : t.call(e))
     })) && t), n.current = a.$x
-  }, []), _ = i.useCallback(e => {
+  }, []), p = i.useCallback(e => {
     if (u) {
       (0, s.Aj)({
         duration: 300,
@@ -32,13 +32,13 @@ function u(e) {
       return
     }
     e()
-  }, [u]), p = i.useMemo(() => ({
-    navigateWithValidation: _,
+  }, [u]), _ = i.useMemo(() => ({
+    navigateWithValidation: p,
     showNotice: u,
     handleStoreUpdate: f
-  }), [_, u, f]);
+  }), [p, u, f]);
   return (0, r.jsx)(c.Provider, {
-    value: p,
+    value: _,
     children: t
   })
 }

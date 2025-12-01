@@ -15,7 +15,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk216509 = require("./216509.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,8 +23,8 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = 3e3,
-  m = {
+let m = 3e3,
+  h = {
     [Chunk981631.AEg.NORMAL]: Chunk216509.normal,
     [Chunk981631.AEg.MINIMUM]: Chunk216509.minimum,
     [Chunk981631.AEg.NO_CHAT]: Chunk216509.noChat,
@@ -107,7 +107,7 @@ class E extends(r = Chunk473749.PureComponent) {
       idle: o
     } = this.state;
     return (0, Chunk54381.jsx)(Chunk600164.Z, {
-      className: s()(Chunk216509.video, m[r], {
+      className: s()(Chunk216509.video, h[r], {
         [Chunk216509.idle]: Chunk120356
       }),
       direction: Chunk600164.Z.Direction.VERTICAL,
@@ -144,18 +144,18 @@ class E extends(r = Chunk473749.PureComponent) {
       animated: n
     } = this.props;
     return (0, Chunk54381.jsx)("div", {
-      className: s()(Chunk216509.videoHeight, m[module], exports, {
+      className: s()(Chunk216509.videoHeight, h[module], exports, {
         [Chunk216509.animated]: require
       }),
       children: this.renderContents()
     })
   }
   constructor(e) {
-    super(e), p(this, "_timeout", new c.V7), p(this, "handleMouseEvent", () => {
+    super(e), _(this, "_timeout", new c.V7), _(this, "handleMouseEvent", () => {
       let {
         layout: e
       } = this.props;
-      (e === f.AEg.FULL_SCREEN || e === f.AEg.NO_CHAT) && (this._timeout.start(h, () => this.setState({
+      (e === f.AEg.FULL_SCREEN || e === f.AEg.NO_CHAT) && (this._timeout.start(m, () => this.setState({
         idle: true
       })), this.state.idle && this.setState({
         idle: false
@@ -167,7 +167,7 @@ class E extends(r = Chunk473749.PureComponent) {
     }
   }
 }
-p(E, "defaultProps", {
+_(E, "defaultProps", {
   layout: Chunk981631.AEg.MINIMUM,
   animated: true
 })

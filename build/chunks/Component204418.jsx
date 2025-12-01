@@ -41,11 +41,11 @@ let u = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       status: l,
       avatarSize: d = i.EFr.SIZE_120,
       "aria-hidden": f = false,
-      className: _,
-      animateOnHover: p = false,
-      questPreviewRewardAssetUrl: h = null
+      className: p,
+      animateOnHover: _ = false,
+      questPreviewRewardAssetUrl: m = null
     } = e, {
-      avatarDecorationSrc: m,
+      avatarDecorationSrc: h,
       avatarSrc: g,
       eventHandlers: E
     } = (0, a.Z)({
@@ -54,15 +54,15 @@ let u = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       size: d,
       showPending: true,
       avatarDecorationOverride: o,
-      animateOnHover: p
+      animateOnHover: _
     });
     return (0, r.jsx)(u, c({
-      avatarDecoration: null != m ? m : h,
+      avatarDecoration: null != h ? h : m,
       src: g,
       size: d,
       status: l,
       "aria-label": f ? true : s.intl.string(s.t.lqaIxI),
       "aria-hidden": f,
-      className: _
+      className: p
     }, E))
   }

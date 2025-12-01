@@ -2,10 +2,10 @@
 /** chunk id: 23750, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Hx: () => h,
+  Hx: () => m,
   ZP: () => E,
   hv: () => g,
-  pi: () => p
+  pi: () => _
 }), require("./997841.js"), require("./539854.js");
 var Chunk373793 = require("./373793.js"),
   Chunk95015 = require("./95015.js"),
@@ -48,27 +48,27 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class p extends Chunk81825.Z {
+class _ extends Chunk81825.Z {
   hasFlag(e) {
     return (0, i.yE)(this.flags, e)
   }
   constructor(e) {
-    var t, n, r, i, a, o, s, l, d, f, _, p, h;
-    super(), u(this, "type", true), u(this, "content", true), u(this, "attachments", true), u(this, "embeds", true), u(this, "timestamp", true), u(this, "editedTimestamp", true), u(this, "flags", true), u(this, "components", true), u(this, "codedLinks", true), u(this, "stickers", true), u(this, "stickerItems", true), u(this, "soundboardSounds", true), this.type = null != (t = e.type) ? t : c.uaV.DEFAULT, this.content = null != (n = e.content) ? n : "", this.attachments = null != (r = e.attachments) ? r : [], this.embeds = null != (i = e.embeds) ? i : [], this.timestamp = null != (a = e.timestamp) ? a : new Date, this.editedTimestamp = null != (o = e.editedTimestamp) ? o : null, this.flags = null != (s = e.flags) ? s : 0, this.components = null != (l = e.components) ? l : [], this.codedLinks = null != (d = e.codedLinks) ? d : [], this.stickers = null != (f = e.stickers) ? f : [], this.stickerItems = null != (p = null != (_ = e.sticker_items) ? _ : e.stickerItems) ? p : [], this.soundboardSounds = null != (h = e.soundboard_sounds) ? h : e.soundboardSounds
+    var t, n, r, i, a, o, s, l, d, f, p, _, m;
+    super(), u(this, "type", true), u(this, "content", true), u(this, "attachments", true), u(this, "embeds", true), u(this, "timestamp", true), u(this, "editedTimestamp", true), u(this, "flags", true), u(this, "components", true), u(this, "codedLinks", true), u(this, "stickers", true), u(this, "stickerItems", true), u(this, "soundboardSounds", true), this.type = null != (t = e.type) ? t : c.uaV.DEFAULT, this.content = null != (n = e.content) ? n : "", this.attachments = null != (r = e.attachments) ? r : [], this.embeds = null != (i = e.embeds) ? i : [], this.timestamp = null != (a = e.timestamp) ? a : new Date, this.editedTimestamp = null != (o = e.editedTimestamp) ? o : null, this.flags = null != (s = e.flags) ? s : 0, this.components = null != (l = e.components) ? l : [], this.codedLinks = null != (d = e.codedLinks) ? d : [], this.stickers = null != (f = e.stickers) ? f : [], this.stickerItems = null != (_ = null != (p = e.sticker_items) ? p : e.stickerItems) ? _ : [], this.soundboardSounds = null != (m = e.soundboard_sounds) ? m : e.soundboardSounds
   }
 }
-class h extends Chunk81825.Z {
+class m extends Chunk81825.Z {
   constructor(e) {
     var t;
-    super(), u(this, "message", true), u(this, "moderatorReport", true), this.message = new p(e.message), this.moderatorReport = null != (t = e.moderator_report) ? t : null
+    super(), u(this, "message", true), u(this, "moderatorReport", true), this.message = new _(e.message), this.moderatorReport = null != (t = e.moderator_report) ? t : null
   }
 }
-class m extends p {
+class h extends _ {
   isEdited() {
     return null != this.editedTimestamp
   }
@@ -97,10 +97,10 @@ class m extends p {
             if (t && a.me) return a;
             let e = t && a.me_burst ? a.burst_count : a.burst_count + 1,
               r = null != a.burst_colors && a.burst_colors.length > 0 ? a.burst_colors : n;
-            a = _(d({}, a), {
+            a = p(d({}, a), {
               me_burst: !!t || a.me_burst,
               burst_count: e,
-              count_details: _(d({}, a.count_details), {
+              count_details: p(d({}, a.count_details), {
                 burst: e
               }),
               burst_colors: r
@@ -109,8 +109,8 @@ class m extends p {
           var c, u;
           let e = null != (u = null == (c = a.count_details) ? true : c.vote) ? u : 0,
             n = t && a.me_vote ? e : e + 1;
-          a = _(d({}, a), {
-            count_details: _(d({}, a.count_details), {
+          a = p(d({}, a), {
+            count_details: p(d({}, a.count_details), {
               vote: n
             }),
             me_vote: !!t || a.me_vote
@@ -118,9 +118,9 @@ class m extends p {
         } else {
           if (t && a.me_burst) return a;
           let e = t && a.me ? a.count : a.count + 1;
-          a = _(d({}, a), {
+          a = p(d({}, a), {
             count: e,
-            count_details: _(d({}, a.count_details), {
+            count_details: p(d({}, a.count_details), {
               normal: e
             }),
             me: !!t || a.me
@@ -184,10 +184,10 @@ class m extends p {
         if ((0, l.ir)(t.emoji, e)) {
           if (o === s.O.BURST) {
             let e = a && !t.me_burst ? t.burst_count : t.burst_count - 1;
-            t = _(d({}, t), {
+            t = p(d({}, t), {
               burst_count: e,
               me_burst: !a && t.me_burst,
-              count_details: _(d({}, t.count_details), {
+              count_details: p(d({}, t.count_details), {
                 burst: e
               })
             })
@@ -195,18 +195,18 @@ class m extends p {
             var r, i;
             let e = null != (i = null == (r = t.count_details) ? true : r.vote) ? i : 0,
               n = a && !t.me_vote ? e : e - 1;
-            t = _(d({}, t), {
-              count_details: _(d({}, t.count_details), {
+            t = p(d({}, t), {
+              count_details: p(d({}, t.count_details), {
                 vote: n
               }),
               me_vote: !a && t.me_vote
             })
           } else {
             let e = a && !t.me ? t.count : t.count - 1;
-            t = _(d({}, t), {
+            t = p(d({}, t), {
               count: e,
               me: !a && t.me,
-              count_details: _(d({}, t.count_details), {
+              count_details: p(d({}, t.count_details), {
                 normal: e
               })
             })
@@ -217,13 +217,13 @@ class m extends p {
       }),
       {
         count: f,
-        burst_count: p,
-        count_details: h
+        burst_count: _,
+        count_details: m
       } = null != (t = u[c]) ? t : {},
-      m = null != (n = null == h ? true : h.normal) ? n : 0,
-      g = null != (r = null == h ? true : h.burst) ? r : 0,
-      E = null != (i = null == h ? true : h.vote) ? i : 0;
-    return false !== c && f <= 0 && p <= 0 && m <= 0 && g <= 0 && E <= 0 && u.splice(c, 1), this.set("reactions", u)
+      h = null != (n = null == m ? true : m.normal) ? n : 0,
+      g = null != (r = null == m ? true : m.burst) ? r : 0,
+      E = null != (i = null == m ? true : m.vote) ? i : 0;
+    return false !== c && f <= 0 && _ <= 0 && h <= 0 && g <= 0 && E <= 0 && u.splice(c, 1), this.set("reactions", u)
   }
   removeReactionsForEmoji(e) {
     return this.set("reactions", this.reactions.filter(t => !(0, l.ir)(t.emoji, e)))
@@ -251,7 +251,7 @@ class m extends p {
     return (null == (n = this.interactionMetadata) ? true : n.user.id) === e && 1 === Object.keys(a).length && r.Y.USER_INSTALL in a
   }
   toJS() {
-    return _(d({}, this), {
+    return p(d({}, this), {
       webkhook_id: this.webhookId,
       edited_timestamp: this.editedTimestamp,
       mention_everyone: this.mentionEveryone
@@ -269,4 +269,4 @@ class m extends p {
 function g(e) {
   return (0, i.yE)(e.flags, c.iLy.IS_COMPONENTS_V2)
 }
-let E = m
+let E = h

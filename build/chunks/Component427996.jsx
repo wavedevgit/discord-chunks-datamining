@@ -22,14 +22,14 @@ function f(e) {
   } = e, {
     activityUrlOverride: i,
     useActivityUrlOverride: f,
-    filter: _
+    filter: p
   } = (0, o.cj)([c.Z], () => ({
     activityUrlOverride: c.Z.getActivityUrlOverride(),
     useActivityUrlOverride: c.Z.getUseActivityUrlOverride(),
     filter: c.Z.getFilter()
   }), []);
 
-  function p() {
+  function _() {
     l.a8("")
   }
   return (0, r.jsxs)("div", {
@@ -47,9 +47,9 @@ function f(e) {
     }) : null, true === t ? null : (0, r.jsx)("div", {
       children: (0, r.jsx)(s.E1j, {
         size: "sm",
-        query: _,
+        query: p,
         onChange: l.a8,
-        onClear: p
+        onClear: _
       })
     })]
   })

@@ -27,7 +27,7 @@ function c(e, t) {
       isActiveFromLevel: t,
       levelEntitlement: n,
       levelPowerup: r
-    } = _(e), i = p(e), a = h(e), s = null != a, l = {
+    } = p(e), i = _(e), a = m(e), s = null != a, l = {
       type: o.A3.INACTIVE,
       powerup: e,
       sourceEntitlement: true,
@@ -51,7 +51,7 @@ function c(e, t) {
     }), l
   }
 
-  function _(e) {
+  function p(e) {
     var t, n;
     if (null == e || null == c || null == u) return {
       isActiveFromLevel: false,
@@ -73,11 +73,11 @@ function c(e, t) {
     }
   }
 
-  function p(e) {
+  function _(e) {
     return d && o.ad.has(e.skuId)
   }
 
-  function h(e) {
+  function m(e) {
     var t, n;
     return null != (n = null == u || null == (t = u.unlockedPowerups) ? true : t[e.skuId]) ? n : null
   }

@@ -29,55 +29,55 @@ function v(e) {
     user: t,
     guildId: n,
     className: v
-  } = e, I = u.JH.useExperiment({
+  } = e, S = u.JH.useExperiment({
     location: "DisplayNameStylesSection"
-  }).enabled, T = p.ZP.canUsePremiumProfileCustomization(t), {
-    analyticsLocations: S
+  }).enabled, I = _.ZP.canUsePremiumProfileCustomization(t), {
+    analyticsLocations: T
   } = (0, l.ZP)(), {
     userDisplayNameStyles: A,
     guildDisplayNameStyles: C,
     pendingDisplayNameStyles: N,
-    pendingErrors: R
-  } = (0, h.mD)(t, n), P = [];
-  I && P.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
-  let [D, w] = (0, c.US)(P), L = D === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, x = (0, i.useCallback)(() => {
-    w(E.L.TAKE_ACTION), _.default.track(g.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
-      analyticsLocations: S,
+    pendingErrors: P
+  } = (0, m.mD)(t, n), R = [];
+  S && R.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
+  let [w, D] = (0, c.US)(R), x = w === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, L = (0, i.useCallback)(() => {
+    D(E.L.TAKE_ACTION), p.default.track(g.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
+      analyticsLocations: T,
       guildId: n
     })
-  }, [S, w, n]), M = (0, i.useCallback)(() => {
-    (0, s.NI)(null), _.default.track(g.rMx.DISPLAY_NAME_STYLES_REMOVED)
-  }, []), k = (0, i.useCallback)(() => {
+  }, [T, D, n]), j = (0, i.useCallback)(() => {
+    (0, s.NI)(null), p.default.track(g.rMx.DISPLAY_NAME_STYLES_REMOVED)
+  }, []), M = (0, i.useCallback)(() => {
     (0, f.N_)(null)
-  }, []), j = true !== N || (null != n ? null != C : null != A);
-  if (!I && !j) return null;
+  }, []), k = true !== N || (null != n ? null != C : null != A);
+  if (!S && !k) return null;
   let U = true !== N ? N : C;
-  return (0, r.jsx)(m.Z, {
+  return (0, r.jsx)(h.Z, {
     title: b.intl.string(y.default["86GtGH"]),
-    titleIcon: L ? (0, r.jsx)(o.IGR, {
+    titleIcon: x ? (0, r.jsx)(o.IGR, {
       text: b.intl.string(b.t.y2b7CA),
       className: O.newBadge
     }) : true,
     className: v,
-    showPremiumIcon: T,
-    errors: R,
+    showPremiumIcon: I,
+    errors: P,
     children: (0, r.jsxs)("div", {
       className: O.buttonsContainer,
-      children: [I && (0, r.jsx)(o.Button, {
+      children: [S && (0, r.jsx)(o.Button, {
         variant: "primary",
         size: "sm",
         text: b.intl.string(y.default.vJqrIg),
-        onClick: x
-      }), null == n && j && (0, r.jsx)(o.Button, {
+        onClick: L
+      }), null == n && k && (0, r.jsx)(o.Button, {
         variant: "secondary",
         size: "sm",
         text: b.intl.string(y.default.ymq8WQ),
-        onClick: M
+        onClick: j
       }), null != n && null != U && (0, r.jsx)(o.Button, {
         variant: "secondary",
         size: "sm",
         text: b.intl.string(y.default["j/KRxc"]),
-        onClick: k
+        onClick: M
       })]
     })
   })

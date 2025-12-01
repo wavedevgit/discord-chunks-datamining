@@ -2,7 +2,7 @@
 /** chunk id: 478758, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -32,7 +32,7 @@ let u = 99,
     })
   },
   f = (0, Chunk730749.Z)(d),
-  _ = e => {
+  p = e => {
     let {
       partySize: t,
       members: n,
@@ -41,22 +41,22 @@ let u = 99,
       guildId: s
     } = e, {
       totalSize: d,
-      knownSize: _
+      knownSize: p
     } = t;
     if (d < i) return null;
-    let p = a()(n).filter(l.lm).take(o).map(e => (0, r.jsx)(f, {
+    let _ = a()(n).filter(l.lm).take(o).map(e => (0, r.jsx)(f, {
         member: e,
         guildId: s
       }, e.id)).value(),
-      h = d - _;
-    for (let e = 0; e < h && p.length < o; e++) p.push((0, r.jsx)(f, {
+      m = d - p;
+    for (let e = 0; e < m && _.length < o; e++) _.push((0, r.jsx)(f, {
       empty: true,
       guildId: s
     }, "empty-member-".concat(e)));
-    let m = Math.max(Math.min(d - p.length, u), 0);
-    if (1 === m) {
+    let h = Math.max(Math.min(d - _.length, u), 0);
+    if (1 === h) {
       let e = n[o];
-      p.push((0, r.jsx)(f, {
+      _.push((0, r.jsx)(f, {
         member: e,
         guildId: s
       }, e.id))
@@ -65,9 +65,9 @@ let u = 99,
       className: c.wrapper,
       children: (0, r.jsxs)("div", {
         className: c.partyMembers,
-        children: [p, m > 1 ? (0, r.jsxs)("div", {
+        children: [_, h > 1 ? (0, r.jsxs)("div", {
           className: c.partyMemberOverflow,
-          children: ["+", m]
+          children: ["+", h]
         }) : null]
       })
     })

@@ -17,11 +17,11 @@ var Chunk481060 = require("./481060.js"),
 require("./600349.js");
 var Chunk356659 = require("./356659.js"),
   Chunk388032 = require("./388032.jsx");
-let h = "CLIPS_IN_CALL_WARNING";
-class m extends Chunk474639.Z {
+let m = "CLIPS_IN_CALL_WARNING";
+class h extends Chunk474639.Z {
   showClipsToast() {
     (0, Chunk481060.showToast)({
-      id: h,
+      id: m,
       message: Chunk388032.intl.string(Chunk388032.t["d+41qJ"]),
       type: Chunk481060.ToastType.CLIP,
       options: {
@@ -48,7 +48,7 @@ class m extends Chunk474639.Z {
   }
   handleClipsInitOnGamesChange(e) {
     let t = a.ZP.getVisibleGame();
-    null != t && (e.added.find(e => e.pid === t.pid) ? setTimeout(() => this.fireClipsInitEvent(), _.jp) : this.fireClipsInitEvent())
+    null != t && (e.added.find(e => e.pid === t.pid) ? setTimeout(() => this.fireClipsInitEvent(), p.jp) : this.fireClipsInitEvent())
   }
   fireClipsInitEvent() {
     if (!(0, Chunk341569.LI)() || null != Chunk199902.Z.getCurrentUserActiveStream()) return;
@@ -65,8 +65,8 @@ class m extends Chunk474639.Z {
   loadClipsFromStorage() {
     let e = Chunk435064.Z.getSettings().storageLocation;
     "" !== module && Chunk39604.jv(module).catch(e => {
-      _.jF.error("Failed to load clips directory on connection open", e)
+      p.jF.error("Failed to load clips directory on connection open", e)
     })
   }
 }
-let g = new m
+let g = new h

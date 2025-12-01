@@ -41,14 +41,14 @@ let f = e => {
           }) : l.intl.format(l.t.tQvNll, {
             numMonths: t.discount.user_usage_limit
           })
-        }), (0, r.jsx)(_, {
+        }), (0, r.jsx)(p, {
           userDiscountOffer: t,
           offerState: n
         })]
       })]
     })
   },
-  _ = e => {
+  p = e => {
     let {
       userDiscountOffer: t,
       offerState: n

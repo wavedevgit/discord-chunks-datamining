@@ -2,7 +2,7 @@
 /** chunk id: 576855, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,7 +24,7 @@ let f = {
   BLOCK: Chunk574657.block,
   INLINE: Chunk574657.inline
 };
-class _ extends(r = Chunk473749.PureComponent) {
+class p extends(r = Chunk473749.PureComponent) {
   render() {
     let {
       children: e,
@@ -50,5 +50,5 @@ class _ extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-d(_, "Types", f);
-let p = _
+d(p, "Types", f);
+let _ = p

@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk934347 = require("./934347.js"),
   Chunk413097 = require("./413097.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -43,51 +43,51 @@ function g(e) {
   var t;
   let {
     command: n,
-    application: h,
+    application: m,
     onClick: g,
     query: E,
     searchResultsPosition: b
   } = e, y = i.useCallback(e => {
-    if ((0, l.BQ)(h)) {
-      let t = h instanceof s.ZP ? h : s.ZP.createFromServer(h);
-      (0, o.vq)(e, e => (0, r.jsx)(u.Z, m({
+    if ((0, l.BQ)(m)) {
+      let t = m instanceof s.ZP ? m : s.ZP.createFromServer(m);
+      (0, o.vq)(e, e => (0, r.jsx)(u.Z, h({
         application: t
       }, e)))
     }
-  }, [h]), {
+  }, [m]), {
     iconURL: O,
     name: v,
-    description: I
-  } = i.useMemo(() => (0, l.sl)(h, {
-    fakeAppIconURL: p
-  }), [h]), T = i.useMemo(() => {
+    description: S
+  } = i.useMemo(() => (0, l.sl)(m, {
+    fakeAppIconURL: _
+  }), [m]), I = i.useMemo(() => {
     var e;
-    let t = null != (e = null == n ? true : n.displayDescription) ? e : I;
+    let t = null != (e = null == n ? true : n.displayDescription) ? e : S;
     return null == t ? null : (0, c.ae)(t, true)
-  }, [I, null == n ? true : n.displayDescription]), {
-    trackSearchResultsItemImpressionRef: S
+  }, [S, null == n ? true : n.displayDescription]), {
+    trackSearchResultsItemImpressionRef: T
   } = (0, f.Z)({
-    applicationId: h.id,
+    applicationId: m.id,
     commandId: null == n ? true : n.id,
     query: E,
     searchResultsPosition: b
   });
   return (0, r.jsx)(a.P3F, {
-    className: _.clickable,
+    className: p.clickable,
     innerRef: e => {
-      S.current = e
+      T.current = e
     },
     onClick: g,
     onContextMenu: y,
     children: (0, r.jsxs)(a.Rny, {
-      className: _.focusBlock,
+      className: p.focusBlock,
       children: [(0, r.jsx)(d.Z, {
         src: O,
-        className: _.icon,
+        className: p.icon,
         "aria-hidden": true,
         rendersPlaceholder: true
       }), (0, r.jsxs)("div", {
-        className: _.cmdDetails,
+        className: p.cmdDetails,
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           color: "header-primary",
@@ -97,15 +97,15 @@ function g(e) {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: T
+          children: I
         })]
       }), null != n ? (0, r.jsx)(a.Text, {
-        className: _.cmdAppName,
+        className: p.cmdAppName,
         variant: "text-sm/normal",
         color: "text-secondary",
         children: v
       }) : null, (0, r.jsx)("div", {
-        className: _.underline
+        className: p.underline
       })]
     })
   })

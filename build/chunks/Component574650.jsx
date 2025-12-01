@@ -34,7 +34,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -67,15 +67,15 @@ let A = () => {
   var e, t;
   let i = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []),
     v = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk120356), [Chunk120356]),
-    T = (0, Chunk442837.e7)([Chunk937111.Z], () => null != Chunk120356 ? Chunk937111.Z.getRequest(Chunk120356) : null, [Chunk120356]),
+    I = (0, Chunk442837.e7)([Chunk937111.Z], () => null != Chunk120356 ? Chunk937111.Z.getRequest(Chunk120356) : null, [Chunk120356]),
     A = (0, Chunk828700.TH)(),
     C = (null == (e = (0, Chunk828700.LX)(A.pathname, Chunk981631.Z5c.CHANNEL(null == v ? true : v.id, Chunk176505.oC.GUILD_ONBOARDING))) ? true : module.isExact) === true;
   if (null == v || !(0, Chunk983736.Dc)(v) || C) return null;
   let N = () => {
       (0, Chunk305325.hk)(v.id)
     },
-    R = () => {
-      (0, Chunk481060.h7j)(e => (0, r.jsx)(c.ConfirmModal, S(I({
+    P = () => {
+      (0, Chunk481060.h7j)(e => (0, r.jsx)(c.ConfirmModal, T(S({
         header: b.intl.string(b.t.aIz1oV),
         confirmText: b.intl.string(b.t["cY+Oob"]),
         cancelText: b.intl.string(b.t["ETE/oC"]),
@@ -88,42 +88,42 @@ let A = () => {
         })
       })))
     },
-    P = () => {
+    R = () => {
       (0, Chunk481060.ZDy)(async () => {
         let {
           default: e
         } = await require.e("3378").then(require.bind(require, 76075));
-        return t => (0, r.jsx)(e, I({
+        return t => (0, r.jsx)(e, S({
           guildId: v.id
         }, t))
       })
     },
-    D = null != (t = null == T ? true : T.applicationStatus) ? exports : Chunk246364.wB.STARTED,
-    w = null,
-    L = null,
+    w = null != (t = null == I ? true : I.applicationStatus) ? exports : Chunk246364.wB.STARTED,
+    D = null,
     x = null,
-    M = [Chunk342891.notice, Chunk226910.notice];
-  switch (D) {
+    L = null,
+    j = [Chunk342891.notice, Chunk226910.notice];
+  switch (w) {
     case Chunk246364.wB.SUBMITTED:
-      w = Chunk388032.intl.string(Chunk388032.t["5iLvSx"]), L = Chunk388032.intl.string(Chunk388032.t.mqtdmQ), x = R;
+      D = Chunk388032.intl.string(Chunk388032.t["5iLvSx"]), x = Chunk388032.intl.string(Chunk388032.t.mqtdmQ), L = P;
       break;
     case Chunk246364.wB.REJECTED:
-      w = Chunk388032.intl.string(Chunk388032.t.lk30cY), L = Chunk388032.intl.string(Chunk388032.t["8RrsHr"]), x = P, M.push(Chunk342891.error);
+      D = Chunk388032.intl.string(Chunk388032.t.lk30cY), x = Chunk388032.intl.string(Chunk388032.t["8RrsHr"]), L = R, j.push(Chunk342891.error);
       break;
     default:
-      w = Chunk388032.intl.string(Chunk388032.t.G5YKXP), L = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), x = N
+      D = Chunk388032.intl.string(Chunk388032.t.G5YKXP), x = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), L = N
   }
   return (0, Chunk54381.jsxs)("div", {
-    className: a()(...M),
+    className: a()(...j),
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk342891.header,
       variant: "text-sm/normal",
-      children: w
+      children: D
     }), (0, Chunk54381.jsx)(Chunk481060.Button, {
       variant: "overlay-primary",
       size: "sm",
-      onClick: x,
-      text: L
+      onClick: L,
+      text: x
     })]
   })
 }

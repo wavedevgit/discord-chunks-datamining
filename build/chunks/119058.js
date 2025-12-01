@@ -15,37 +15,37 @@ var Chunk310644 = require("./310644.js"),
   Chunk951516 = require("./951516.js"),
   Chunk633605 = require("./633605.js"),
   Chunk393655 = require("./393655.js"),
-  p = /[yYQqMLwIdDecihHKkms]o|(\w)\1*|''|'(''|[^'])+('|$)|./g,
-  h = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g,
-  m = /^'([^]*?)'?$/,
+  _ = /[yYQqMLwIdDecihHKkms]o|(\w)\1*|''|'(''|[^'])+('|$)|./g,
+  m = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g,
+  h = /^'([^]*?)'?$/,
   g = /''/g,
   E = /[a-zA-Z]/;
 
 function b(e, t, n) {
   (0, d.Z)(2, arguments);
-  var m, g, b, O, v, I, T, S, A, C, N, R, P, D, w, L, x, M, k = String(t),
-    j = (0, f.j)(),
-    U = null != (m = null != (g = null == n ? true : n.locale) ? g : j.locale) ? m : _.Z,
-    G = (0, u.Z)(null != (b = null != (O = null != (v = null != (I = null == n ? true : n.firstWeekContainsDate) ? I : null == n || null == (T = n.locale) || null == (S = T.options) ? true : S.firstWeekContainsDate) ? v : j.firstWeekContainsDate) ? O : null == (A = j.locale) || null == (C = A.options) ? true : C.firstWeekContainsDate) ? b : 1);
+  var h, g, b, O, v, S, I, T, A, C, N, P, R, w, D, x, L, j, M = String(t),
+    k = (0, f.j)(),
+    U = null != (h = null != (g = null == n ? true : n.locale) ? g : k.locale) ? h : p.Z,
+    G = (0, u.Z)(null != (b = null != (O = null != (v = null != (S = null == n ? true : n.firstWeekContainsDate) ? S : null == n || null == (I = n.locale) || null == (T = I.options) ? true : T.firstWeekContainsDate) ? v : k.firstWeekContainsDate) ? O : null == (A = k.locale) || null == (C = A.options) ? true : C.firstWeekContainsDate) ? b : 1);
   if (!(G >= 1 && G <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
-  var B = (0, u.Z)(null != (N = null != (R = null != (P = null != (D = null == n ? true : n.weekStartsOn) ? D : null == n || null == (w = n.locale) || null == (L = w.options) ? true : L.weekStartsOn) ? P : j.weekStartsOn) ? R : null == (x = j.locale) || null == (M = x.options) ? true : M.weekStartsOn) ? N : 0);
-  if (!(B >= 0 && B <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
+  var Z = (0, u.Z)(null != (N = null != (P = null != (R = null != (w = null == n ? true : n.weekStartsOn) ? w : null == n || null == (D = n.locale) || null == (x = D.options) ? true : x.weekStartsOn) ? R : k.weekStartsOn) ? P : null == (L = k.locale) || null == (j = L.options) ? true : j.weekStartsOn) ? N : 0);
+  if (!(Z >= 0 && Z <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   if (!U.localize) throw RangeError("locale must contain localize property");
   if (!U.formatLong) throw RangeError("locale must contain formatLong property");
-  var Z = (0, a.default)(e);
-  if (!(0, r.default)(Z)) throw RangeError("Invalid time value");
-  var F = (0, l.Z)(Z),
-    V = (0, i.Z)(Z, F),
+  var B = (0, a.default)(e);
+  if (!(0, r.default)(B)) throw RangeError("Invalid time value");
+  var F = (0, l.Z)(B),
+    V = (0, i.Z)(B, F),
     H = {
       firstWeekContainsDate: G,
-      weekStartsOn: B,
+      weekStartsOn: Z,
       locale: U,
-      _originalDate: Z
+      _originalDate: B
     };
-  return k.match(h).map(function(e) {
+  return M.match(m).map(function(e) {
     var t = e[0];
     return "p" === t || "P" === t ? (0, s.Z[t])(e, U.formatLong) : e
-  }).join("").match(p).map(function(r) {
+  }).join("").match(_).map(function(r) {
     if ("''" === r) return "'";
     var i = r[0];
     if ("'" === i) return y(r);
@@ -57,6 +57,6 @@ function b(e, t, n) {
 }
 
 function y(e) {
-  var t = e.match(m);
+  var t = e.match(h);
   return t ? t[1].replace(g, "'") : e
 }

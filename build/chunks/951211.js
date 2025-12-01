@@ -4,10 +4,10 @@ require.d(exports, {
   Z: () => f,
   r: () => h
 }), require("./539854.js");
-var i, Chunk481060 = require("./481060.js"),
+var i, Chunk692547 = require("./692547.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk620662 = require("./620662.js"),
   Chunk933557 = require("./933557.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk699516 = require("./699516.js"),
   Chunk594174 = require("./594174.js"),
   Chunk713913 = require("./713913.js"),
@@ -34,25 +34,25 @@ function f(e) {
   } = e, j = [];
   t && (j.push({
     type: "UPLOAD_A_FILE",
-    icon: r.xD0,
+    icon: l.xD0,
     display: p.intl.string(p.t["d3+iYs"])
   }), j.push({
     type: "UPLOAD_TEXT_AS_FILE",
-    icon: r.xD0,
+    icon: l.xD0,
     display: p.intl.string(p.t["G9s+EM"])
   })), f && t && v !== d.IlC.POPOUT && j.push({
     type: "CLIPS",
-    icon: r.AlX,
+    icon: l.AlX,
     display: p.intl.string(p.t.o034cv),
     badgeVal: b,
-    badgeColor: o.Z.BG_BRAND
+    badgeColor: r.Z.colors.BG_BRAND.css
   }), n && j.push({
     type: "CREATE_THREAD",
-    icon: r.YPH,
+    icon: l.YPH,
     display: p.intl.string(p.t.rBIGBL)
   }), y && j.push({
     type: "POLL",
-    icon: r.QDj,
+    icon: l.QDj,
     display: p.intl.string(p.t.Flr51u)
   });
   let {
@@ -63,49 +63,49 @@ function f(e) {
   });
   return S ? x && j.push({
     type: "APP_LAUNCHER",
-    icon: r.jje,
+    icon: l.jje,
     display: p.intl.string(p.t.nqswKn)
   }) : i && h && j.push({
     type: "SLASH_COMMAND",
-    icon: r.jje,
+    icon: l.jje,
     display: p.intl.string(E ? p.t["5Y0Fam"] : p.t.Bbvp6G)
   }), C && j.push({
     type: "ACTIVITY",
-    icon: r.nG3,
+    icon: l.nG3,
     display: p.intl.string(p.t["16Lfrb"])
   }), g.forEach(e => {
-    !(0, l.Z)(e, d.xjy.EMBEDDED) && (e.type === d.IIU.PLAYING && (0, l.Z)(e, d.xjy.JOIN) && j.push({
+    !(0, a.Z)(e, d.xjy.EMBEDDED) && (e.type === d.IIU.PLAYING && (0, a.Z)(e, d.xjy.JOIN) && j.push({
       type: "INVITE_TO_GAME",
-      icon: r.xoD,
+      icon: l.xoD,
       display: p.intl.formatToPlainString(p.t["KHLo+F"], {
-        channel: (0, a.F6)(m, c.default, s.Z, true),
+        channel: (0, o.F6)(m, c.default, s.Z, true),
         game: null != e ? e.name : ""
       }),
       activity: e
-    }), e.type === d.IIU.LISTENING && (0, l.Z)(e, d.xjy.SYNC) && j.push({
+    }), e.type === d.IIU.LISTENING && (0, a.Z)(e, d.xjy.SYNC) && j.push({
       type: "INVITE_TO_LISTEN",
-      icon: r.iOO,
+      icon: l.iOO,
       display: p.intl.formatToPlainString(p.t.I479px, {
-        channel: (0, a.F6)(m, c.default, s.Z, true),
+        channel: (0, o.F6)(m, c.default, s.Z, true),
         name: null != e ? e.name : ""
       }),
       activity: e
-    }), e.type === d.IIU.WATCHING && (0, l.Z)(e, d.xjy.SYNC) && j.push({
+    }), e.type === d.IIU.WATCHING && (0, a.Z)(e, d.xjy.SYNC) && j.push({
       type: "INVITE_TO_WATCH",
-      icon: r.tEF,
+      icon: l.tEF,
       display: p.intl.formatToPlainString(p.t["EvCP/g"], {
-        channel: (0, a.F6)(m, c.default, s.Z, true),
+        channel: (0, o.F6)(m, c.default, s.Z, true),
         name: null != e ? e.name : ""
       }),
       activity: e
     }))
   }), _ && j.push({
     type: "SCHEDULED_MESSAGE",
-    icon: r.T39,
+    icon: l.T39,
     display: p.intl.string(p.t["3+ii4F"])
   }), m.isThread() && O && j.push({
     type: "SUMMARIZE_THREAD",
-    icon: r.$2U,
+    icon: l.$2U,
     display: p.intl.string(p.t.EXfguE)
   }), j
 }

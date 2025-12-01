@@ -20,26 +20,26 @@ function l(e) {
     commandOrigin: d = i.bB.CHAT
   } = e, f = null != n ? (0, r.KF)({
     content: n
-  }, "content").trim() : "", _ = t.required, p = "" === f;
-  if (null == n) return _ ? {
+  }, "content").trim() : "", p = t.required, _ = "" === f;
+  if (null == n) return p ? {
     success: false,
     error: s.intl.string(s.t.JZJQL2)
   } : {
     success: true
   };
-  if (p) return u ? {
+  if (_) return u ? {
     success: true
-  } : _ ? {
+  } : p ? {
     success: false,
     error: s.intl.string(s.t.JZJQL2)
   } : {
     success: false,
     error: (0, o.al)(t)
   };
-  let h = n.length > 1 ? {
+  let m = n.length > 1 ? {
       type: "text",
       text: f
     } : n[0],
-    m = a.Z[t.type](h, t, c, l, d);
-  return m.success || null != m.error || (m.error = (0, o.al)(t)), m
+    h = a.Z[t.type](m, t, c, l, d);
+  return h.success || null != h.error || (h.error = (0, o.al)(t)), h
 }

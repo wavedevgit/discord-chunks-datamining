@@ -1,7 +1,7 @@
 /** Chunk was on 58121 **/
 /** chunk id: 603072, original params: e,n,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => Z
+  default: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk126512 = require("./126512.js"),
   Chunk97009 = require("./97009.js");
 
-function w(e) {
+function Z(e) {
   let {
     guild: n
   } = e, t = (0, C.Z)(n);
@@ -60,7 +60,7 @@ function w(e) {
   })
 }
 
-function Z(e) {
+function I(e) {
   let {
     guildId: n,
     selectedSection: t
@@ -70,17 +70,17 @@ function Z(e) {
   }, [t]);
   let h = (0, o.e7)([_.ZP], () => _.ZP.getCurrentSidebarChannelId(v.oC.CHANNEL_BROWSER)),
     O = null != h && u === j.l7.BROWSE,
-    Z = (0, o.e7)([g.Z], () => g.Z.getNewChannelIds(n).size > 0),
+    I = (0, o.e7)([g.Z], () => g.Z.getNewChannelIds(n).size > 0),
     P = (0, m.fU)(n);
   return null == i ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(I.chat, {
-        [I.threadSidebarOpen]: O
+      className: a()(w.chat, {
+        [w.threadSidebarOpen]: O
       }),
-      children: [(0, r.jsx)(w, {
+      children: [(0, r.jsx)(Z, {
         guild: i
       }), (0, r.jsxs)("div", {
-        className: a()(I.content, N.container),
+        className: a()(w.content, N.container),
         children: [s && (0, r.jsxs)(d.njP, {
           className: N.tabBar,
           type: "top",
@@ -96,10 +96,10 @@ function Z(e) {
             id: j.l7.BROWSE,
             "aria-label": y.intl.string(y.t.et6wav),
             children: [y.intl.string(y.t.et6wav), (0, r.jsx)(d.IGR, {
-              text: Z ? y.intl.string(y.t.psHMa6) : P,
-              color: Z ? c.Z.unsafe_rawColors.BRAND_260.css : c.Z.colors.BACKGROUND_ACCENT.css,
+              text: I ? y.intl.string(y.t.psHMa6) : P,
+              color: I ? c.Z.unsafe_rawColors.BRAND_260.css : c.Z.colors.BACKGROUND_ACCENT.css,
               className: a()({
-                [N.newBadge]: Z
+                [N.newBadge]: I
               })
             })]
           }, j.l7.BROWSE)]

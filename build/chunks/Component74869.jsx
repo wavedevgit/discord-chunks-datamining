@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk878209 = require("./878209.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -74,12 +74,12 @@ function y(e) {
       checked: e.id === (null == i ? true : i.variantId),
       action: () => (0, c.rX)(a, t, e.id)
     }, "".concat(e.id))), (0, r.jsxs)(s.kSQ, {
-      children: [_.wS && (0, r.jsx)(s.sNh, {
+      children: [p.wS && (0, r.jsx)(s.sNh, {
         id: "copy-link",
         label: "Copy Link",
         action: () => {
           let e = (0, l.sZ)(t);
-          (0, _.JG)(e, () => {
+          (0, p.JG)(e, () => {
             (0, s.showToast)({
               id: "experiment-link-copied",
               message: "Copied experiment link",
@@ -120,10 +120,10 @@ function O() {
         system: n.system
       }
     })
-  }, [module, exports, require, Chunk658722]), [c, f] = Chunk473749.useState(""), [_, m] = Chunk473749.useState([]);
+  }, [module, exports, require, Chunk658722]), [c, f] = Chunk473749.useState(""), [p, h] = Chunk473749.useState([]);
   Chunk473749.useEffect(() => {
-    if (0 === Chunk492435.trim().length) return void m(Chunk922699);
-    m(Chunk922699.filter(e => o()(c, e.experiment.title.toLowerCase())))
+    if (0 === Chunk492435.trim().length) return void h(Chunk922699);
+    h(Chunk922699.filter(e => o()(c, e.experiment.title.toLowerCase())))
   }, [Chunk922699, Chunk492435]);
   let E = Chunk473749.useMemo(() => Chunk922699.filter(e => {
       let {
@@ -138,14 +138,14 @@ function O() {
       return null == t
     }), [Chunk572004]),
     v = Chunk473749.useMemo(() => E.map(y), [E]),
-    I = Chunk473749.useMemo(() => O.map(y), [O]),
-    T = (0, Chunk54381.jsx)(Chunk481060.II_, {
+    S = Chunk473749.useMemo(() => O.map(y), [O]),
+    I = (0, Chunk54381.jsx)(Chunk481060.II_, {
       id: "experiments-search",
       control: (e, t) => (0, r.jsx)(s.ne, b(g({}, e), {
         query: c,
         onChange: f,
         ref: t,
-        placeholder: h.intl.string(h.t["5h0QOP"])
+        placeholder: m.intl.string(m.t["5h0QOP"])
       }))
     }, "experiments-search");
   return v.length > 0 ? [(0, Chunk54381.jsx)(Chunk481060.kSQ, {
@@ -154,6 +154,6 @@ function O() {
   }, "overridden-group"), (0, Chunk54381.jsx)(Chunk481060.Clw, {}, "separator-2"), (0, Chunk54381.jsxs)(Chunk481060.sNh, {
     id: "other-experiments",
     label: "Other Experiments",
-    children: [T, I]
-  }, "other-experiments")] : [T, ...I]
+    children: [I, S]
+  }, "other-experiments")] : [I, ...S]
 }

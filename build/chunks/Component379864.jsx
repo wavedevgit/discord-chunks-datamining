@@ -23,10 +23,10 @@ let d = {
         size: n,
         disabled: d,
         orientation: f,
-        radioPosition: _,
-        withTransparentBackground: p,
-        label: h,
-        description: m,
+        radioPosition: p,
+        withTransparentBackground: _,
+        label: m,
+        description: h,
         withDescriptions: g,
         withIcons: E
       } = e, [b, y] = i.useState("option1"), O = [a.d, o.A, s.x, l.e, c.U], v = Array.from({
@@ -49,10 +49,10 @@ let d = {
         size: n,
         disabled: d,
         orientation: f,
-        radioPosition: _,
-        withTransparentBackground: p,
-        label: h,
-        description: m
+        radioPosition: p,
+        withTransparentBackground: _,
+        label: m,
+        description: h
       })
     },
     controls: {

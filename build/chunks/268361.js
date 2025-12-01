@@ -41,28 +41,28 @@ function f(e, t) {
       writable: true,
       configurable: true
     }
-  }), t && _(e, t)
+  }), t && p(e, t)
 }
 
-function _(e, t) {
-  return (_ = Object.setPrototypeOf || function(e, t) {
+function p(e, t) {
+  return (p = Object.setPrototypeOf || function(e, t) {
     return e.__proto__ = t, e
   })(e, t)
 }
 
-function p(e) {
+function _(e) {
   var t = g();
   return function() {
     var n, r = E(e);
-    return n = t ? Reflect.construct(r, arguments, E(this).constructor) : r.apply(this, arguments), h(this, n)
+    return n = t ? Reflect.construct(r, arguments, E(this).constructor) : r.apply(this, arguments), m(this, n)
   }
 }
 
-function h(e, t) {
-  return t && ("object" === l(t) || "function" == typeof t) ? t : m(e)
+function m(e, t) {
+  return t && ("object" === l(t) || "function" == typeof t) ? t : h(e)
 }
 
-function m(e) {
+function h(e) {
   if (true === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return e
 }
@@ -93,13 +93,13 @@ function b(e, t, n) {
 }
 var y = function(e) {
   f(n, e);
-  var t = p(n);
+  var t = _(n);
 
   function n() {
     var e;
     c(this, n);
     for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
-    return b(m(e = t.call.apply(t, [this].concat(i))), "priority", 100), b(m(e), "incompatibleTokens", ["y", "Y", "u", "q", "Q", "M", "L", "w", "d", "D", "e", "c", "t", "T"]), e
+    return b(h(e = t.call.apply(t, [this].concat(i))), "priority", 100), b(h(e), "incompatibleTokens", ["y", "Y", "u", "q", "Q", "M", "L", "w", "d", "D", "e", "c", "t", "T"]), e
   }
   return d(n, [{
     key: "parse",

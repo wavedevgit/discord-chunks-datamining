@@ -23,13 +23,13 @@ function r(e) {
   let u = s,
     d = s + c,
     f = false,
-    _ = false;
+    p = false;
   return o.forEach((e, t) => {
     let n = l[t];
-    n.offset.top < d && n.offset.bottom > u && (e.isNitroLocked ? f = true : _ = true)
+    n.offset.top < d && n.offset.bottom > u && (e.isNitroLocked ? f = true : p = true)
   }), {
     isNitroLockedSectionVisible: f,
-    areOnlyNitroLockedSectionsVisible: f && !_
+    areOnlyNitroLockedSectionsVisible: f && !p
   }
 }
 require.d(exports, {

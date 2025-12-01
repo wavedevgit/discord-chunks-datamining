@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk428498 = require("./428498.js");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -74,9 +74,9 @@ function N() {
       preferredFlow: o,
       connectionApp: u,
       debug: {
-        isSubscribedToAuthorizeRequest: _,
-        oauth2Token: T,
-        hasConnectionEntrypointUrl: S,
+        isSubscribedToAuthorizeRequest: p,
+        oauth2Token: I,
+        hasConnectionEntrypointUrl: T,
         validFlows: A
       }
     } = (0, Chunk524995.F)(module, {
@@ -84,12 +84,12 @@ function N() {
     }),
     C = (0, Chunk442837.e7)([Chunk757266.Z], () => null != module && Chunk757266.Z.isConnected(module.id)),
     N = (0, Chunk442837.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getSelfEmbeddedActivities()),
-    D = "authorization_debug",
-    w = [{
+    w = "authorization_debug",
+    D = [{
       id: "authorization_debug",
       name: Chunk388032.intl.string(Chunk222613.default.vR0zs6)
     }],
-    L = () => (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    x = () => (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)("div", {
         className: Chunk428498.header,
         children: (0, Chunk54381.jsx)("div", {
@@ -108,7 +108,7 @@ function N() {
         })
       })]
     }),
-    x = () => (s()(null != module, "Application should be defined when rendering the test mode panel"), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    L = () => (s()(null != module, "Application should be defined when rendering the test mode panel"), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk428498.header,
         children: [(0, Chunk54381.jsx)("div", {
@@ -129,14 +129,14 @@ function N() {
         className: Chunk428498.body,
         children: [(0, Chunk54381.jsx)(Chunk481060.njP, {
           className: Chunk428498.tabBar,
-          selectedItem: D,
+          selectedItem: w,
           onItemSelect: () => {},
           orientation: "horizontal",
           type: "top",
           look: "brand",
-          children: w.map(e => (0, r.jsx)(d.njP.Item, {
-            className: a()(I.tab, {
-              [I.selected]: e.id === D
+          children: D.map(e => (0, r.jsx)(d.njP.Item, {
+            className: a()(S.tab, {
+              [S.selected]: e.id === w
             }),
             id: e.id,
             "aria-label": e.name,
@@ -146,7 +146,7 @@ function N() {
           variant: "text-md/medium",
           color: "text-secondary",
           children: Chunk388032.intl.string(Chunk222613.default["no+FQS"])
-        }), (0, Chunk54381.jsx)(R, {
+        }), (0, Chunk54381.jsx)(P, {
           overallStatus: Chunk782568 ? 0 : C ? 3 : 1,
           name: Chunk388032.intl.string(Chunk222613.default.AGLx00),
           steps: [{
@@ -161,13 +161,13 @@ function N() {
             learnMoreLink: Chunk782568 || !C ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }],
           isChosen: Chunk512722 === Chunk524995.r.RPC
-        }), (0, Chunk54381.jsx)(R, {
-          overallStatus: +!S,
+        }), (0, Chunk54381.jsx)(P, {
+          overallStatus: +!T,
           name: Chunk388032.intl.string(Chunk222613.default.K3ObrU),
           steps: [{
-            status: S ? 2 : 4,
+            status: T ? 2 : 4,
             text: Chunk388032.intl.string(Chunk222613.default["8a7IrV"]),
-            description: S ? Chunk388032.intl.formatToPlainString(Chunk222613.default["9iLeL2"], {
+            description: T ? Chunk388032.intl.formatToPlainString(Chunk222613.default["9iLeL2"], {
               url: null == Chunk692547 ? true : Chunk692547.connectionEntrypointUrl
             }) : null
           }],
@@ -175,7 +175,7 @@ function N() {
         })]
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk428498.footer,
-        children: [(0, Chunk54381.jsx)(P, {
+        children: [(0, Chunk54381.jsx)(R, {
           status: +!require,
           text: Chunk388032.intl.string(Chunk388032.t["Vu/zmQ"])
         }), 0 === A.length && (0, Chunk54381.jsx)(Chunk793030.xvT, {
@@ -191,10 +191,10 @@ function N() {
           onClick: () => Chunk120356(),
           text: Chunk388032.intl.string(Chunk222613.default.w0pN4R),
           fullWidth: true
-        }), null != T && (0, Chunk54381.jsx)(Chunk793030.zxk, {
+        }), null != I && (0, Chunk54381.jsx)(Chunk793030.zxk, {
           variant: "secondary",
           onClick: () => {
-            Chunk384275.Z.delete(T.id);
+            Chunk384275.Z.delete(I.id);
             let t = N.get(module.id);
             null != exports && Chunk513202.Z.leaveActivity({
               location: exports.location,
@@ -211,12 +211,12 @@ function N() {
     "data-app-right-panel": true,
     className: Chunk428498.debugToolsPanel,
     children: (0, Chunk54381.jsx)(Chunk793030.y5t, {
-      children: null != module ? x() : L()
+      children: null != module ? L() : x()
     })
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     overallStatus: t,
     name: n,
@@ -224,12 +224,12 @@ function R(e) {
     isChosen: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.categoryContainer,
-    children: [(0, r.jsx)(P, {
+    className: S.categoryContainer,
+    children: [(0, r.jsx)(R, {
       status: t,
       text: n
-    }), i.map((e, t) => (0, r.jsx)(D, S({}, e), t)), a && (0, r.jsx)("div", {
-      className: I.calloutBox,
+    }), i.map((e, t) => (0, r.jsx)(w, T({}, e), t)), a && (0, r.jsx)("div", {
+      className: S.calloutBox,
       children: (0, r.jsx)(l.xvT, {
         variant: "text-sm/medium",
         color: "text-secondary",
@@ -239,24 +239,24 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     text: t,
     status: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.categoryHeader,
+    className: S.categoryHeader,
     children: [(0, r.jsx)(l.xvT, {
       variant: "text-md/semibold",
       color: "text-secondary",
       children: t
-    }), (0, r.jsx)(w, {
+    }), (0, r.jsx)(D, {
       status: n
     })]
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     status: t,
     text: n,
@@ -264,11 +264,11 @@ function D(e) {
     learnMoreLink: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.statusRow,
-    children: [(0, r.jsx)(w, {
+    className: S.statusRow,
+    children: [(0, r.jsx)(D, {
       status: t
     }), (0, r.jsxs)("div", {
-      className: I.statusTextContainer,
+      className: S.statusTextContainer,
       children: [(0, r.jsx)(l.xvT, {
         variant: "text-md/medium",
         children: n
@@ -279,38 +279,38 @@ function D(e) {
       }), null != a && (0, r.jsx)(l.Avr, {
         textVariant: "text-sm/medium",
         text: v.intl.string(v.t.hvVgAZ),
-        onClick: () => (0, _.Z)(a)
+        onClick: () => (0, p.Z)(a)
       })]
     })]
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     status: t
   } = e, n = {
     size: "sm",
-    className: I.statusIcon
+    className: S.statusIcon
   };
   switch (t) {
     case 0:
-      return (0, r.jsx)(l.owK, C(S({}, n), {
+      return (0, r.jsx)(l.owK, C(T({}, n), {
         color: u.Z.colors.ICON_FEEDBACK_POSITIVE
       }));
     case 1:
-      return (0, r.jsx)(l.k$p, C(S({}, n), {
+      return (0, r.jsx)(l.k$p, C(T({}, n), {
         color: u.Z.colors.ICON_FEEDBACK_CRITICAL
       }));
     case 2:
-      return (0, r.jsx)(l.kmB, C(S({}, n), {
+      return (0, r.jsx)(l.kmB, C(T({}, n), {
         color: u.Z.colors.ICON_FEEDBACK_POSITIVE
       }));
     case 3:
-      return (0, r.jsx)(l.aNP, C(S({}, n), {
+      return (0, r.jsx)(l.aNP, C(T({}, n), {
         color: u.Z.colors.ICON_FEEDBACK_WARNING
       }));
     case 4:
-      return (0, r.jsx)(l.Dio, C(S({}, n), {
+      return (0, r.jsx)(l.Dio, C(T({}, n), {
         color: u.Z.colors.ICON_FEEDBACK_CRITICAL
       }))
   }

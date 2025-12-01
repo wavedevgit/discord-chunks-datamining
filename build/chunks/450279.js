@@ -57,7 +57,7 @@ function c(e) {
 }
 
 function u(e, t, n, i, o) {
-  var u, d, f, _, p, h, m;
+  var u, d, f, p, _, m, h;
   let g = {},
     E = {},
     b = [],
@@ -115,13 +115,13 @@ function u(e, t, n, i, o) {
       }))
     }
   }
-  let I = {};
+  let S = {};
   for (let e of b) {
     let o = E[e.codecId];
     if (null == o) continue;
     let c = t(e.ssrc);
     if (null == c) continue;
-    let _ = {
+    let p = {
       type: e.kind,
       ssrc: e.ssrc,
       timestamp: e.timestamp,
@@ -137,18 +137,18 @@ function u(e, t, n, i, o) {
     };
     if ("audio" === e.kind) {
       let t = true !== e.jitterBufferDelay && true !== e.jitterBufferEmittedCount ? Math.round(1e3 * e.jitterBufferDelay / e.jitterBufferEmittedCount) : 0;
-      null == I[c] && (I[c] = []), I[c].push(s(a({}, _), {
+      null == S[c] && (S[c] = []), S[c].push(s(a({}, p), {
         audioLevel: e.audioLevel,
         jitter: 1e3 * e.jitter,
         jitterBuffer: t
       }))
     } else if ("video" === e.kind) {
-      null == I[c] && (I[c] = []);
+      null == S[c] && (S[c] = []);
       let t = null !== e.frameWidth ? {
         width: e.frameWidth,
         height: e.frameHeight
       } : true;
-      I[c].push(s(a({}, _), {
+      S[c].push(s(a({}, p), {
         resolution: t,
         framesDecoded: e.framesDecoded,
         keyFramesDecoded: e.keyFramesDecoded,
@@ -169,17 +169,17 @@ function u(e, t, n, i, o) {
       }))
     }
   }
-  let T = "firefox" === (null != (_ = platform.name) ? _ : "unknown").toLowerCase() && 142 === parseInt(null != (p = platform.version) ? p : "", 10),
-    S = (null != (h = O.currentRoundTripTime) ? h : 0) * (T ? 1 : 1e3);
+  let I = "firefox" === (null != (p = platform.name) ? p : "unknown").toLowerCase() && 142 === parseInt(null != (_ = platform.version) ? _ : "", 10),
+    T = (null != (m = O.currentRoundTripTime) ? m : 0) * (I ? 1 : 1e3);
   return {
     transport: {
-      availableOutgoingBitrate: null != (m = O.availableOutgoingBitrate) ? m : 0,
+      availableOutgoingBitrate: null != (h = O.availableOutgoingBitrate) ? h : 0,
       bytesReceived: O.bytesReceived,
       bytesSent: O.bytesSent,
-      ping: S
+      ping: T
     },
     rtp: {
-      inbound: I,
+      inbound: S,
       outbound: v
     }
   }

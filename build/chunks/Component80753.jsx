@@ -5,9 +5,9 @@ require.r(exports), require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk31336 = require("./31336.js"),
   Chunk481637 = require("./481637.js"),
   Chunk532810 = require("./532810.js"),
@@ -35,8 +35,8 @@ function p() {
     }
   }, [require, p, module]), p && null != require && 0 !== require.length) ? (0, Chunk54381.jsxs)("div", {
     style: {
-      backgroundColor: Chunk377171.Z.BACKGROUND_FEEDBACK_CRITICAL,
-      color: Chunk377171.Z.TEXT_FEEDBACK_CRITICAL,
+      backgroundColor: Chunk692547.Z.colors.BACKGROUND_FEEDBACK_CRITICAL.css,
+      color: Chunk692547.Z.colors.TEXT_FEEDBACK_CRITICAL.css,
       display: "flex",
       alignItems: "center",
       padding: "8px 12px"

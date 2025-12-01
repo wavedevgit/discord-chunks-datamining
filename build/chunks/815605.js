@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Vz: () => c,
-  Zn: () => _,
+  Zn: () => p,
   aB: () => f
 }), require("./49124.js"), require("./704826.js"), require("./35282.js");
 var Chunk392711 = require("./392711.js"),
@@ -28,7 +28,7 @@ let c = 7.5,
     }
   }));
 
-function _(e, t, n, r) {
+function p(e, t, n, r) {
   let {
     emojiSize: a,
     key: s,

@@ -24,11 +24,11 @@ function d(e) {
       debug: d = false
     } = n,
     f = (0, l.R)(e),
-    _ = (0, a.t)(null == f ? true : f.id, "AUTHORIZE_REQUEST"),
-    p = u.includes("rpc") && _,
-    h = u.includes("web") && (null == f ? true : f.connectionEntrypointUrl) != null,
-    m = p ? "rpc" : h ? "web" : null,
-    g = p || h,
+    p = (0, a.t)(null == f ? true : f.id, "AUTHORIZE_REQUEST"),
+    _ = u.includes("rpc") && p,
+    m = u.includes("web") && (null == f ? true : f.connectionEntrypointUrl) != null,
+    h = _ ? "rpc" : m ? "web" : null,
+    g = _ || m,
     {
       token: E,
       fetched: b
@@ -41,11 +41,11 @@ function d(e) {
     startAuthorization: r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};
       if (null == f) return null;
-      if (p) {
+      if (_) {
         var t;
         return o.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", e => e.socket.application.id === f.id, {}), null == (t = e.onConfirm) || t.call(e), "rpc"
       }
-      if (h) {
+      if (m) {
         let t = f.connectionEntrypointUrl;
         return (0, s.q)({
           href: t,
@@ -56,14 +56,14 @@ function d(e) {
         }), "web"
       }
       return null
-    }, [p, h, f]),
+    }, [_, m, f]),
     connectionApp: f,
-    preferredFlow: m,
+    preferredFlow: h,
     debug: d ? {
-      isSubscribedToAuthorizeRequest: _,
+      isSubscribedToAuthorizeRequest: p,
       oauth2Token: E,
       hasConnectionEntrypointUrl: (null == f ? true : f.connectionEntrypointUrl) != null,
-      validFlows: [p ? "rpc" : null, h ? "web" : null].filter(e => null != e)
+      validFlows: [_ ? "rpc" : null, m ? "web" : null].filter(e => null != e)
     } : true
   }
 }

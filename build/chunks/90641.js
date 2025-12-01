@@ -17,12 +17,12 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h() {
+function m() {
   let e = Chunk979651.Z.getVoiceStateForUser(Chunk314897.default.getId()),
     t = Chunk592125.Z.getChannel(null == module ? true : module.channelId);
   return Chunk314897.default.getSessionId() === (null == module ? true : module.sessionId) && null != exports && exports.type !== Chunk981631.d4z.GUILD_STAGE_VOICE ? exports.id : null
 }
-async function m(e, t) {
+async function h(e, t) {
   if (e) {
     r.Z.dispatch({
       type: "SECURE_FRAMES_SETTINGS_UPDATE",
@@ -37,8 +37,8 @@ async function m(e, t) {
         type: "SECURE_FRAMES_SETTINGS_UPDATE",
         persistentCodesEnabled: false
       }), i.Z.show({
-        title: p.intl.string(p.t.R0RpRX),
-        body: null != (n = e.getAnyErrorMessage()) ? n : p.intl.string(p.t.eAn6z2)
+        title: _.intl.string(_.t.R0RpRX),
+        body: null != (n = e.getAnyErrorMessage()) ? n : _.intl.string(_.t.eAn6z2)
       })
     }
   } else r.Z.dispatch({
@@ -53,17 +53,17 @@ let g = {
     })
   },
   updatePersistentCodesEnabled: async function(e) {
-    let t = h();
+    let t = m();
     null != t ? u.Z.openSecureFramesUpdateConfirmation({
-      title: e ? p.intl.string(p.t.DRFN1B) : p.intl.string(p.t.q29xJz),
-      subtitle: e ? p.intl.string(p.t.y015ZY) : p.intl.string(p.t.E66FQn),
-      confirmText: p.intl.string(p.t.aTuFYT),
+      title: e ? _.intl.string(_.t.DRFN1B) : _.intl.string(_.t.q29xJz),
+      subtitle: e ? _.intl.string(_.t.y015ZY) : _.intl.string(_.t.E66FQn),
+      confirmText: _.intl.string(_.t.aTuFYT),
       onConfirm: async () => {
-        await m(e, () => {
+        await h(e, () => {
           a.default.disconnect(), a.default.selectVoiceChannel(t)
         })
       }
-    }) : await m(e)
+    }) : await h(e)
   },
   addUploadedKeyVersion: function(e) {
     r.Z.dispatch({

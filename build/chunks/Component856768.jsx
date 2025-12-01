@@ -30,8 +30,8 @@ function g(e) {
     renderOptionSuffix: l
   } = e;
   return (0, r.jsx)(u.Z, {
-    className: o()(m.section, n),
-    title: h.intl.string(h.t.ref7Ki),
+    className: o()(h.section, n),
+    title: m.intl.string(m.t.ref7Ki),
     hideDivider: a,
     forcedDivider: true,
     children: (0, r.jsx)(E, {
@@ -49,19 +49,19 @@ function E(e) {
     globalOption: n,
     onChange: a,
     renderOptionSuffix: o
-  } = e, u = (0, s.e7)([p.Z], () => p.Z.showNotice()), g = (0, s.e7)([f.ZP], () => f.ZP.getFlattenedGuildIds()), E = (0, s.e7)([d.Z], () => d.Z.getGuilds()), b = i.useMemo(() => {
+  } = e, u = (0, s.e7)([_.Z], () => _.Z.showNotice()), g = (0, s.e7)([f.ZP], () => f.ZP.getFlattenedGuildIds()), E = (0, s.e7)([d.Z], () => d.Z.getGuilds()), b = i.useMemo(() => {
     let e = g.map(e => {
       let t = E[e];
       return null == t ? null : {
         label: t.name,
         value: t.id
       }
-    }).filter(_.lm);
+    }).filter(p.lm);
     return null != n && e.unshift(n), e
   }, [g, E, n]), y = i.useCallback(e => {
     let t = (null == e ? true : e.label) === (null == n ? true : n.label) && (null == e ? true : e.value) === (null == n ? true : n.value);
     return null == e || "" === e.value || t ? null : (0, r.jsx)(c.Z, {
-      className: m.guildSelectOptionIcon,
+      className: h.guildSelectOptionIcon,
       guild: E[e.value],
       size: c.Z.Sizes.SMOL,
       active: true
@@ -78,6 +78,6 @@ function E(e) {
     options: b,
     renderOptionPrefix: y,
     renderOptionSuffix: o,
-    placeholder: h.intl.string(h.t["kMgj+e"])
+    placeholder: m.intl.string(m.t["kMgj+e"])
   })
 }

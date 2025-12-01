@@ -2,7 +2,7 @@
 /** chunk id: 655678, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,23 +16,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk564355 = require("./564355.js");
 
-function p(e, t) {
+function _(e, t) {
   let {
     disabled: n,
     channel: a
-  } = e, p = (0, l.LN)(a.id), h = i.useCallback(() => {
+  } = e, _ = (0, l.LN)(a.id), m = i.useCallback(() => {
     (0, l.Rg)(a.id, c.MG.MessageComposerButtons)
   }, [a.id]);
   return n ? null : (0, r.jsx)("div", {
-    className: o()(d.CT, _.buttonContainer),
+    className: o()(d.CT, p.buttonContainer),
     ref: t,
     children: (0, r.jsx)(u.Z, {
-      className: o()(_.button, _.messageConfettiButton),
-      childClassName: o()(_.messageConfettiIcon, {
-        [_.active]: p
+      className: o()(p.button, p.messageConfettiButton),
+      childClassName: o()(p.messageConfettiIcon, {
+        [p.active]: _
       }),
-      onClick: h,
-      isActive: p,
+      onClick: m,
+      isActive: _,
       "aria-label": f.intl.string(f.t.yvN8bE),
       "aria-haspopup": "false",
       children: (0, r.jsx)(s.l22, {
@@ -42,4 +42,4 @@ function p(e, t) {
     })
   })
 }
-let h = Chunk473749.memo(Chunk473749.forwardRef(p))
+let m = Chunk473749.memo(Chunk473749.forwardRef(_))

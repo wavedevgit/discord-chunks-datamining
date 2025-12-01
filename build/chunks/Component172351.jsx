@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk555013 = require("./555013.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -43,7 +43,7 @@ function g(e) {
   let {
     applicationId: t,
     commandIds: n,
-    guildId: h,
+    guildId: m,
     channel: g,
     onClick: E
   } = e, {
@@ -66,26 +66,26 @@ function g(e) {
     })) == null
   }), [O]);
   if (null == v || 0 === v.length) return null;
-  let I = e => {
+  let S = e => {
     null == E || E(), b({
       action: "PRESS_APP_COMMAND"
-    }), c.default.track(f.rMx.POPULAR_APPLICATION_COMMAND_CLICKED, m({
+    }), c.default.track(f.rMx.POPULAR_APPLICATION_COMMAND_CLICKED, h({
       application_id: t,
       command_id: e,
-      guild_id: h
+      guild_id: m
     }, (0, o.JS)(g.id)))
   };
   return (0, r.jsx)(d.Z, {
-    heading: _.intl.string(_.t["0hKkS+"]),
+    heading: p.intl.string(p.t["0hKkS+"]),
     children: (0, r.jsx)("ul", {
-      className: p.list,
+      className: _.list,
       children: v.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(l.wz, {
           commandId: e.id,
           commandName: e.displayName,
           commandDescription: e.displayDescription,
-          onClick: I,
-          guildId: h,
+          onClick: S,
+          guildId: m,
           channelId: g.id,
           applicationId: e.applicationId
         })

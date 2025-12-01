@@ -27,20 +27,20 @@ async function v(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, v = g.Z.getGuild(t), I = m.Z.getUnsafeMutableRoles(t);
+  } = e, v = g.Z.getGuild(t), S = h.Z.getUnsafeMutableRoles(t);
   if (null == v && t !== y.ME && n !== O.oC.GAME_SHOP) returnfalse;
   if (null == n) returntrue;
   if ((0, O.AB)(n)) switch (n) {
     case O.oC.ROLE_SUBSCRIPTIONS:
-      return (0, c.on)(t, I);
+      return (0, c.on)(t, S);
     case O.oC.SERVER_MONETIZATION_ONBOARDING:
       return null != v && (0, u.U)(v);
     case O.oC.GAME_SHOP:
-      return (0, _.wK)(null != v ? v : {
+      return (0, p.wK)(null != v ? v : {
         id: t
       });
     case O.oC.GUILD_SHOP:
-      return (0, i.r)(v, I);
+      return (0, i.r)(v, S);
     case O.oC.MEMBER_APPLICATIONS:
       return (0, a.v)(t);
     case O.oC.GUILD_HOME:
@@ -62,6 +62,6 @@ async function v(e) {
     default:
       (0, E.vE)(n)
   }
-  let T = h.Z.getChannel(n);
-  return (null != T || (await p.Z.loadThread(n), null != (T = h.Z.getChannel(n)))) && ((0, b.YO)(T) || r.Z.isChannelGatedAndVisible(t, n))
+  let I = m.Z.getChannel(n);
+  return (null != I || (await _.Z.loadThread(n), null != (I = m.Z.getChannel(n)))) && ((0, b.YO)(I) || r.Z.isChannelGatedAndVisible(t, n))
 }

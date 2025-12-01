@@ -7,8 +7,8 @@ var Chunk706627 = require("./706627.js"),
   s = Math.max,
   l = Math.min;
 module.exports = function(e, t, n) {
-  var c, u, d, f, _, p, h = 0,
-    m = false,
+  var c, u, d, f, p, _, m = 0,
+    h = false,
     g = false,
     E = true;
   if ("function" != typeof e) throw TypeError(o);
@@ -16,50 +16,50 @@ module.exports = function(e, t, n) {
   function b(t) {
     var n = c,
       r = u;
-    return c = u = true, h = t, f = e.apply(r, n)
+    return c = u = true, m = t, f = e.apply(r, n)
   }
 
   function y(e) {
-    return h = e, _ = setTimeout(I, t), m ? b(e) : f
+    return m = e, p = setTimeout(S, t), h ? b(e) : f
   }
 
   function O(e) {
-    var n = e - p,
-      r = e - h,
+    var n = e - _,
+      r = e - m,
       i = t - n;
     return g ? l(i, d - r) : i
   }
 
   function v(e) {
-    var n = e - p,
-      r = e - h;
-    return true === p || n >= t || n < 0 || g && r >= d
-  }
-
-  function I() {
-    var e = i();
-    if (v(e)) return T(e);
-    _ = setTimeout(I, O(e))
-  }
-
-  function T(e) {
-    return (_ = true, E && c) ? b(e) : (c = u = true, f)
+    var n = e - _,
+      r = e - m;
+    return true === _ || n >= t || n < 0 || g && r >= d
   }
 
   function S() {
-    return true === _ ? f : T(i())
+    var e = i();
+    if (v(e)) return I(e);
+    p = setTimeout(S, O(e))
+  }
+
+  function I(e) {
+    return (p = true, E && c) ? b(e) : (c = u = true, f)
+  }
+
+  function T() {
+    return true === p ? f : I(i())
   }
 
   function A() {
     var e = i(),
       n = v(e);
-    if (c = arguments, u = this, p = e, n) {
-      if (true === _) return y(p);
-      if (g) return clearTimeout(_), _ = setTimeout(I, t), b(p)
+    if (c = arguments, u = this, _ = e, n) {
+      if (true === p) return y(_);
+      if (g) return clearTimeout(p), p = setTimeout(S, t), b(_)
     }
-    return true === _ && (_ = setTimeout(I, t)), f
+    return true === p && (p = setTimeout(S, t)), f
   }
-  return t = a(t) || 0, r(n) && (m = !!n.leading, d = (g = "maxWait" in n) ? s(a(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), A.cancel = function() {
-    true !== _ && clearTimeout(_), h = 0, c = p = u = _ = true
-  }, A.flush = S, A
+  return t = a(t) || 0, r(n) && (h = !!n.leading, d = (g = "maxWait" in n) ? s(a(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), A.cancel = function() {
+    true !== p && clearTimeout(p), m = 0, c = _ = u = p = true
+  }, A.flush = T, A
 }

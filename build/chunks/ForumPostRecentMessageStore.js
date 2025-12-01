@@ -31,7 +31,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -42,24 +42,24 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = {};
+let m = {};
 
-function m(e) {
+function h(e) {
   var t;
   let n = s.Z.getChannel(null == e ? true : e.channel_id);
   if (null == n || !n.isForumPost()) returnfalse;
-  let r = h[n.id];
+  let r = m[n.id];
   return u.default.compare(null == e ? true : e.id, null == r || null == (t = r.message) ? true : t.id) > false
 }
 
 function g(e, t) {
   let n = null == t ? null : (0, o.e5)(t);
-  return h[e] = {
+  return m[e] = {
     loaded: true,
     message: n
   }, true
@@ -68,18 +68,18 @@ function g(e, t) {
 function E(e, t) {
   let n = y(e),
     r = O(e);
-  return null != n && null != r && (h[e] = p(f({}, n), {
+  return null != n && null != r && (m[e] = _(f({}, n), {
     message: (0, o.wi)(r, t)
   }), true)
 }
 
 function b(e, t) {
   let n = O(e);
-  return (null == n ? true : n.id) === t && (delete h[e], true)
+  return (null == n ? true : n.id) === t && (delete m[e], true)
 }
 
 function y(e) {
-  return h[e]
+  return m[e]
 }
 
 function O(e) {
@@ -88,23 +88,23 @@ function O(e) {
 }
 
 function v() {
-  h = {}
+  m = {}
 }
 
-function I(e) {
+function S(e) {
   let {
     threads: t
   } = e;
   for (let e in t) g(e, t[e].most_recent_message)
 }
 
-function T(e) {
-  if (e.isPushNotification || !m(e.message)) returnfalse;
+function I(e) {
+  if (e.isPushNotification || !h(e.message)) returnfalse;
   e.message.channel_id === u.default.castMessageIdAsChannelId(e.message.id) ? g(e.message.channel_id, null) : g(e.message.channel_id, e.message)
 }
 
-function S(e) {
-  if (!m(e.message) || e.message.channel_id === e.message.id) returnfalse;
+function T(e) {
+  if (!h(e.message) || e.message.channel_id === e.message.id) returnfalse;
   E(e.message.channel_id, e.message)
 }
 
@@ -126,18 +126,18 @@ class N extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk592125.Z, Chunk594174.default)
   }
   getMessageState(e) {
-    return e in h || (h[e] = {
+    return e in m || (m[e] = {
       loaded: false,
       message: null
-    }), h[e]
+    }), m[e]
   }
 }
 d(N, "displayName", "ForumPostRecentMessageStore"), new N(Chunk570140.Z, {
   CONNECTION_OPEN: v,
-  MESSAGE_CREATE: T,
-  MESSAGE_UPDATE: S,
+  MESSAGE_CREATE: I,
+  MESSAGE_UPDATE: T,
   MESSAGE_DELETE: A,
-  LOAD_FORUM_POSTS: I,
+  LOAD_FORUM_POSTS: S,
   LOAD_ARCHIVED_THREADS_SUCCESS: C,
   LOAD_THREADS_SUCCESS: C
 })

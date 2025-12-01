@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   Ah: () => O,
-  CB: () => D,
+  CB: () => w,
   aU: () => C,
-  cp: () => w,
-  eL: () => R,
-  vg: () => P,
+  cp: () => D,
+  eL: () => P,
+  vg: () => R,
   zy: () => N
 }), require("./953529.js"), require("./997841.js"), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk473749 = require("./473749.js"),
@@ -63,14 +63,14 @@ function v(e) {
       width: u,
       height: d,
       filename: f,
-      content_scan_version: _
+      content_scan_version: p
     } = e;
     if (null == u || null == d) return null;
-    let p = (0, l.NU)(f),
-      h = null != e.flags && (0, i.yE)(e.flags, g.J0y.IS_THUMBNAIL),
+    let _ = (0, l.NU)(f),
+      m = null != e.flags && (0, i.yE)(e.flags, g.J0y.IS_THUMBNAIL),
       E = null != r ? r : a;
-    if (p) {
-      let e = m.Z.toURLSafe(r);
+    if (_) {
+      let e = h.Z.toURLSafe(r);
       if (null == e) return null;
       e.searchParams.append("format", "webp"), E = e.toString()
     }
@@ -81,22 +81,22 @@ function v(e) {
       height: d,
       spoiler: null != s && s,
       flags: c,
-      contentScanVersion: _,
+      contentScanVersion: p,
       alt: o,
-      isVideo: p,
-      isThumbnail: h,
+      isVideo: _,
+      isThumbnail: m,
       attachmentId: e.id,
       mediaIndex: t,
       srcIsAnimated: (0, i.yE)(null != (n = e.flags) ? n : 0, g.J0y.IS_ANIMATED)
     }
-  }).filter(p.lm)
+  }).filter(_.lm)
 }
 
-function I(e) {
+function S(e) {
   return v(e, u.x4.useSetting())
 }
 
-function T(e, t) {
+function I(e, t) {
   var n, r;
   let a = u.RS.useSetting(),
     o = u.NA.useSetting();
@@ -126,10 +126,10 @@ function T(e, t) {
         srcIsAnimated: (0, i.yE)(null != u ? u : 0, g.FoC.IS_ANIMATED)
       }
     }
-  }).filter(p.lm) : []
+  }).filter(_.lm) : []
 }
 
-function S(e) {
+function T(e) {
   let t = u.RS.useSetting();
   if (null == e) return [];
   let n = e.components;
@@ -145,7 +145,7 @@ function S(e) {
         })
     }
     return null
-  }).filter(p.lm) : []
+  }).filter(_.lm) : []
 }
 
 function A(e, t) {
@@ -180,34 +180,34 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  let n = I(e);
-  return [...n, ...T(e, t), ...S(e)]
-}
-
-function R(e, t) {
-  var n, r, i;
-  let a = I(e),
-    o = T(e, t),
-    s = S(e);
-  return null != (i = null != (r = null != (n = a[0]) ? n : o[0]) ? r : s[0]) ? i : null
+  let n = S(e);
+  return [...n, ...I(e, t), ...T(e)]
 }
 
 function P(e, t) {
-  let n = I(e),
-    r = T(e, t),
-    i = S(e);
+  var n, r, i;
+  let a = S(e),
+    o = I(e, t),
+    s = T(e);
+  return null != (i = null != (r = null != (n = a[0]) ? n : o[0]) ? r : s[0]) ? i : null
+}
+
+function R(e, t) {
+  let n = S(e),
+    r = I(e, t),
+    i = T(e);
   return null == n[0] && null == i[0] && null != r[0]
 }
 
-function D(e, t) {
+function w(e, t) {
   var n;
   let r = d.Z.getChannel(t);
   if (null == r) returnfalse;
-  let i = f.Z.getMessage(r.id, h.default.castChannelIdAsMessageId(r.id));
-  return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null == (n = _.default.getCurrentUser()) ? true : n.id) && 0 === c.Z.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => E(e) || b(e)))
+  let i = f.Z.getMessage(r.id, m.default.castChannelIdAsMessageId(r.id));
+  return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null == (n = p.default.getCurrentUser()) ? true : n.id) && 0 === c.Z.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => E(e) || b(e)))
 }
 
-function w(e) {
+function D(e) {
   return e.reduce((e, t) => ({
     containsVideo: e.containsVideo || t.isVideo,
     containsGif: e.containsGif || (0, l.d$)(t.src)

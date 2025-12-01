@@ -2,7 +2,7 @@
 /** chunk id: 623488, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk833398 = require("./833398.js");
 
-function _(e) {
+function p(e) {
   let {
     hidePurchaseToUnlockBadge: t,
     showDraftBadge: n,
@@ -45,7 +45,7 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     onShowFullDescription: t,
     variant: n
@@ -72,32 +72,32 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     imageUrl: t,
     name: n,
     description: i,
     formattedPrice: c,
-    role: h,
-    ctaComponent: m,
+    role: m,
+    ctaComponent: h,
     shouldShowFullDescriptionButton: g = true,
     onShowFullDescription: E,
     productType: b,
     onTapCard: y,
     actionMenu: O,
     showOpaqueBackground: v = false,
-    hideRoleTag: I = false,
-    lineClamp: T = 1,
-    cardWidth: S = 332,
+    hideRoleTag: S = false,
+    lineClamp: I = 1,
+    cardWidth: T = 332,
     cardHeight: A,
     thumbnailHeight: C = 187,
     descriptionTextVariant: N = "text-sm/normal",
-    isDraft: R = false
-  } = e, P = (0, s.hQ)(), D = e => {
+    isDraft: P = false
+  } = e, R = (0, s.hQ)(), w = e => {
     e.stopPropagation()
-  }, w = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_, {
-      showDraftBadge: R,
+  }, D = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(p, {
+      showDraftBadge: P,
       hidePurchaseToUnlockBadge: true,
       children: (0, r.jsx)("img", {
         alt: "",
@@ -115,23 +115,23 @@ function h(e) {
           variant: "text-md/medium",
           color: "header-primary",
           className: f.productName,
-          id: P,
+          id: R,
           children: n
         }), (0, r.jsx)(o.Rny, {
           children: (0, r.jsx)(l.Z, {
             variant: N,
             color: "text-muted",
-            lineClamp: T,
+            lineClamp: I,
             text: i
           })
-        }), g && (0, r.jsx)(p, {
+        }), g && (0, r.jsx)(_, {
           onShowFullDescription: E,
           variant: N
-        }), I || null == h || "" === h.name ? null : (0, r.jsxs)(r.Fragment, {
+        }), S || null == m || "" === m.name ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.LZC, {
             size: 16
           }), (0, r.jsx)(u.Z, {
-            role: h
+            role: m
           })]
         })]
       }), O]
@@ -149,18 +149,18 @@ function h(e) {
         children: b
       }), (0, r.jsx)("div", {
         className: f.productActionButton,
-        onClick: D,
-        children: m
+        onClick: w,
+        children: h
       })]
     })]
   });
   return null == y ? (0, r.jsx)("article", {
     className: a()(f.productCard, v ? f.opaqueBackground : f.solidBackground),
-    "aria-labelledby": P,
-    children: w
+    "aria-labelledby": R,
+    children: D
   }) : (0, r.jsx)("div", {
     style: {
-      width: S,
+      width: T,
       height: A
     },
     children: (0, r.jsx)(o.kL8, {
@@ -170,7 +170,7 @@ function h(e) {
       }),
       className: a()(f.productCard, v ? f.opaqueBackground : f.solidBackground, f.cardClickableContainer),
       onClick: y,
-      children: w
+      children: D
     })
   })
 }

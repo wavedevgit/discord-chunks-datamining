@@ -2,7 +2,7 @@
 /** chunk id: 153867, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V1: () => h,
+  V1: () => m,
   ZI: () => E,
   ZP: () => b
 });
@@ -19,7 +19,7 @@ var Chunk524437 = require("./524437.js"),
   Chunk981631 = require("./981631.js"),
   Chunk874893 = require("./874893.js");
 
-function h(e) {
+function m(e) {
   return f.hW.updateAsync("guildFolders", t => {
     t.folders = e.map(e => {
       let t = r.yX.create({
@@ -36,15 +36,15 @@ function h(e) {
   }, f.fy.FREQUENT_USER_ACTION)
 }
 
-function m(e) {
+function h(e) {
   switch (e) {
-    case _.BRd.DARK:
+    case p.BRd.DARK:
       return r.Q2.DARK;
-    case _.BRd.LIGHT:
+    case p.BRd.LIGHT:
       return r.Q2.LIGHT;
-    case _.BRd.DARKER:
+    case p.BRd.DARKER:
       return r.Q2.DARKER;
-    case _.BRd.MIDNIGHT:
+    case p.BRd.MIDNIGHT:
       return r.Q2.MIDNIGHT;
     default:
       return r.Q2.DARK
@@ -71,14 +71,14 @@ function E(e) {
     customUserThemeSettings: n,
     theme: r,
     useSystemTheme: i
-  } = e, s = arguments.length > 1 && true !== arguments[1] ? arguments[1] : f.fy.INFREQUENT_USER_ACTION, u = "system" === r ? p.KW.ON : p.KW.OFF, d = null != i ? i : u;
+  } = e, s = arguments.length > 1 && true !== arguments[1] ? arguments[1] : f.fy.INFREQUENT_USER_ACTION, u = "system" === r ? _.KW.ON : _.KW.OFF, d = null != i ? i : u;
   if (o.Z.dispatch({
       type: "UNSYNCED_USER_SETTINGS_UPDATE",
       settings: {
         useSystemTheme: d
       }
     }), null == t && "system" !== r && (0, a.wj)(r) && (0, c.Ag)({
-      [p.zd.DARK]: r
+      [_.zd.DARK]: r
     }), o.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
@@ -93,7 +93,7 @@ function E(e) {
         }
       }
     }), l.Z.shouldSync("appearance")) return f.hW.updateAsync("appearance", e => {
-    e.theme = m(r), e.clientThemeSettings = g({
+    e.theme = h(r), e.clientThemeSettings = g({
       backgroundGradientPresetId: t,
       customUserThemeSettings: n
     })
@@ -178,7 +178,7 @@ let b = {
         }
       }
     }), l.Z.shouldSync("appearance") && f.hW.updateAsync("appearance", t => {
-      t.theme = m(e)
+      t.theme = h(e)
     }, f.fy.INFREQUENT_USER_ACTION)
   }
 }

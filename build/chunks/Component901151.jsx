@@ -24,9 +24,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk42101 = require("./42101.js");
 let v = 3,
-  I = 3;
+  S = 3;
 
-function T(e) {
+function I(e) {
   let {
     applications: t
   } = e, n = i.useMemo(() => t.sort((e, t) => u.default.compare(t.id, e.id)), [t]), a = i.useMemo(() => {
@@ -51,7 +51,7 @@ function T(e) {
     }) : e.join(", ")
   }, [n]), c = i.useMemo(() => {
     let e = [];
-    for (let t = 0; t < I; t++) {
+    for (let t = 0; t < S; t++) {
       let i = n[t];
       if (null == i) break;
       let {
@@ -71,7 +71,7 @@ function T(e) {
         })
       }, c))
     }
-    let t = n.length - I;
+    let t = n.length - S;
     return t > 0 && e.push((0, r.jsx)("div", {
       className: O.moreIcon,
       children: (0, r.jsx)(s.Text, {
@@ -81,7 +81,7 @@ function T(e) {
       })
     }, "omitted")), e
   }, [n]), d = () => {
-    (0, p.openUserSettings)(f.n.AUTHORIZED_APPS_PANEL, {
+    (0, _.openUserSettings)(f.n.AUTHORIZED_APPS_PANEL, {
       section: b.oAB.AUTHORIZED_APPS
     })
   };
@@ -115,7 +115,7 @@ function T(e) {
   })
 }
 
-function S() {
+function T() {
   let e = Chunk695346._j.useSetting();
   return (0, Chunk54381.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
@@ -163,9 +163,9 @@ function C() {
   } = (0, Chunk749876.Z)(true);
   return (0, Chunk54381.jsx)(Chunk546957.Z, {
     children: module ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : exports.length > 0 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(T, {
+      children: [(0, Chunk54381.jsx)(I, {
         applications: exports
-      }), (0, Chunk54381.jsx)(S, {}), (0, Chunk54381.jsx)("div", {
+      }), (0, Chunk54381.jsx)(T, {}), (0, Chunk54381.jsx)("div", {
         className: Chunk42101.divider
       }), (0, Chunk54381.jsx)(A, {})]
     }) : (0, Chunk54381.jsxs)("div", {

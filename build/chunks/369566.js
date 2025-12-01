@@ -25,14 +25,14 @@ let E = [],
 function y(e) {
   let {
     recentActivityTabEnabled: t
-  } = (0, m.O)({
+  } = (0, h.O)({
     location: "useUserProfileActivity"
-  }), n = (0, a.e7)([f.default], () => f.default.getId() === e), y = (0, o.Z)(e), O = (0, a.e7)([p.Z], () => p.Z.getActivities(e)), v = (0, a.e7)([s.Z], () => n || t ? s.Z.getUserOutbox(e) : true), I = (0, a.e7)([h.Z], () => h.Z.getVoiceStateForUser(e)), T = (0, a.e7)([_.Z], () => _.Z.getChannel(null == I ? true : I.channelId)), S = (0, d.E)("UserProfileActivity", T), A = (0, r.useMemo)(() => O.filter(e => {
+  }), n = (0, a.e7)([f.default], () => f.default.getId() === e), y = (0, o.Z)(e), O = (0, a.e7)([_.Z], () => _.Z.getActivities(e)), v = (0, a.e7)([s.Z], () => n || t ? s.Z.getUserOutbox(e) : true), S = (0, a.e7)([m.Z], () => m.Z.getVoiceStateForUser(e)), I = (0, a.e7)([p.Z], () => p.Z.getChannel(null == S ? true : S.channelId)), T = (0, d.E)("UserProfileActivity", I), A = (0, r.useMemo)(() => O.filter(e => {
     let {
       type: t
     } = e;
-    return t === g.IIU.HANG_STATUS ? S : t !== g.IIU.CUSTOM_STATUS
-  }), [O, S]), {
+    return t === g.IIU.HANG_STATUS ? T : t !== g.IIU.CUSTOM_STATUS
+  }), [O, T]), {
     live: C,
     recent: N
   } = (0, r.useMemo)(() => {

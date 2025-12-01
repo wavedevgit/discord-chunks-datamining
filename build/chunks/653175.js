@@ -15,7 +15,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk944486 = require("./944486.js"),
   Chunk594174 = require("./594174.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,14 +48,14 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 let g = (e, t) => {
     let n = u.Z.getVoiceFilterSpeakingDurationMs();
-    return m(p({
+    return h(_({
       channel_id: e.id,
       channel_type: e.type,
       guild_id: e.getGuildId(),
@@ -84,7 +84,7 @@ function b(e, t, n, i) {
   if (null == t && null != a && null != s) {
     let t = g(s, i);
     if (e(), o.Z.hasUsedBackgroundInCall) {
-      let e = p({}, t, E());
+      let e = _({}, t, E());
       r.Z.dispatch({
         type: "VIDEO_BACKGROUND_SHOW_FEEDBACK",
         analyticsData: e

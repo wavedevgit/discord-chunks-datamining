@@ -19,12 +19,12 @@ let d = Chunk473749.forwardRef(function(e, t) {
     unicodeEmoji: a,
     name: d,
     size: f = 20,
-    enableTooltip: _ = true,
-    enableHeight: p = true,
-    onClick: h
+    enableTooltip: p = true,
+    enableHeight: _ = true,
+    onClick: m
   } = e;
   if (null == i && null == a) return null;
-  let m = () => {
+  let h = () => {
     let e = (0, r.jsx)("img", {
       ref: t,
       alt: "",
@@ -32,9 +32,9 @@ let d = Chunk473749.forwardRef(function(e, t) {
         name: d
       }),
       className: o()(u.roleIcon, n, {
-        [u.clickable]: null != h
+        [u.clickable]: null != m
       }),
-      height: p ? f : true,
+      height: _ ? f : true,
       src: i,
       width: f
     });
@@ -43,18 +43,18 @@ let d = Chunk473749.forwardRef(function(e, t) {
       alt: "",
       "aria-label": a.allNamesString,
       className: o()(u.roleIcon, n, {
-        [u.clickable]: null != h
+        [u.clickable]: null != m
       }),
-      height: p ? f : true,
+      height: _ ? f : true,
       src: a.url,
       width: f
-    })), null == h) ? (0, r.jsx)(l.tEY, {
+    })), null == m) ? (0, r.jsx)(l.tEY, {
       offset: {
         left: 5
       },
       children: e
     }) : (0, r.jsx)(l.P3F, {
-      onClick: h,
+      onClick: m,
       tag: "span",
       focusProps: {
         offset: {
@@ -68,8 +68,8 @@ let d = Chunk473749.forwardRef(function(e, t) {
     asContainer: true,
     text: d,
     "aria-label": false,
-    shouldShow: _,
+    shouldShow: p,
     tag: "span",
-    children: m()
+    children: h()
   })
 })

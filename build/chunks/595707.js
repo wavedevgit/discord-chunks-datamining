@@ -6,8 +6,8 @@ require.d(exports, {
   hO: () => l,
   jn: () => d,
   pE: () => f,
-  vl: () => p,
-  xc: () => _,
+  vl: () => _,
+  xc: () => p,
   zt: () => c
 });
 var Chunk413565 = require("./413565.js"),
@@ -100,7 +100,7 @@ function f(e, t, n) {
   }), [u, c]
 }
 
-function _(e = true) {
+function p(e = true) {
   let [t, n] = (0, s.useState)(e), r = (0, s.useRef)(false), i = (0, s.useCallback)(e => {
     r.current = true, n(!!e)
   }, []);
@@ -109,7 +109,7 @@ function _(e = true) {
   }, []), [i, t]
 }
 
-function p(e) {
+function _(e) {
   let t = /^(data-.*)$/,
     n = {};
   for (let r in e) t.test(r) || (n[r] = e[r]);

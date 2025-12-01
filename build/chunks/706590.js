@@ -2,7 +2,7 @@
 /** chunk id: 706590, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _,
+  Z: () => p,
   z: () => f
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
@@ -35,7 +35,7 @@ function f(e, t, n) {
   return !i().isEmpty(s)
 }
 
-function _() {
+function p() {
   let {
     canShow: e,
     isFavoritesPerk: t

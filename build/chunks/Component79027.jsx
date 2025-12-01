@@ -2,7 +2,7 @@
 /** chunk id: 79027, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => m
+  o: () => h
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,16 +45,16 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = {
+let m = {
   friction: 7,
   tension: 60
 };
-class m extends(r = Chunk473749.Component) {
+class h extends(r = Chunk473749.Component) {
   componentWillAppear(e) {
     this.animateTo(1).start(e)
   }
@@ -68,7 +68,7 @@ class m extends(r = Chunk473749.Component) {
     t.enabled ? this.animateTo(0).start(e) : l.Z.stagger(250, [this.animateTo(1.3), this.animateTo(0)]).start(e)
   }
   animateTo(e) {
-    return l.Z.spring(this.animation, p(f({}, h), {
+    return l.Z.spring(this.animation, _(f({}, m), {
       toValue: e
     }))
   }
@@ -101,4 +101,4 @@ class m extends(r = Chunk473749.Component) {
     super(...e), d(this, "animation", new l.Z.Value(0))
   }
 }
-d(m, "contextType", Chunk481060.Sfi)
+d(h, "contextType", Chunk481060.Sfi)

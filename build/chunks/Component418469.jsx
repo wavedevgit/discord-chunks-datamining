@@ -2,7 +2,7 @@
 /** chunk id: 418469, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -36,18 +36,18 @@ function f(e) {
   return e
 }
 
-function _(e, t, d) {
-  var _;
-  let p = (0, s.Cf)(e),
-    h = (0, i.e7)([l.default], () => l.default.getId());
+function p(e, t, d) {
+  var p;
+  let _ = (0, s.Cf)(e),
+    m = (0, i.e7)([l.default], () => l.default.getId());
   if (null == e) return null;
-  let m = (0, o.V9)(e),
-    g = null != (_ = c.Z.getVideoStats(m)) ? _ : {},
+  let h = (0, o.V9)(e),
+    g = null != (p = c.Z.getVideoStats(h)) ? p : {},
     E = f({
-      media_session_id: c.Z.getMediaSessionId(m),
-      rtc_connection_id: c.Z.getRtcConnectionId(m),
-      stream_region: c.Z.getRegion(m),
-      max_viewers: c.Z.getMaxViewers(m)
+      media_session_id: c.Z.getMediaSessionId(h),
+      rtc_connection_id: c.Z.getRtcConnectionId(h),
+      stream_region: c.Z.getRegion(h),
+      max_viewers: c.Z.getMaxViewers(h)
     }, g),
     b = () => {
       null == d || d(), null != e && (0, a.ZDy)(async () => {
@@ -56,8 +56,8 @@ function _(e, t, d) {
         } = await n.e("18912").then(n.bind(n, 340140));
         return n => (0, r.jsx)(t, f({
           stream: e,
-          streamApplication: p,
-          isStreamer: h === (null == e ? true : e.ownerId),
+          streamApplication: _,
+          isStreamer: m === (null == e ? true : e.ownerId),
           analyticsData: E
         }, n))
       })

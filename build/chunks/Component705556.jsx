@@ -66,20 +66,20 @@ function O(e) {
     fullWidth: g,
     appContext: y,
     onClose: O
-  } = e, v = (0, a.e7)([c.default], () => c.default.getId() === t.id), I = (0, a.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), T = (0, a.e7)([_.Z], () => _.Z.hasSaveablePendingChanges()), S = (0, l.Z)({
-    guild: I
+  } = e, v = (0, a.e7)([c.default], () => c.default.getId() === t.id), S = (0, a.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), I = (0, a.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), T = (0, l.Z)({
+    guild: S
   }), A = (0, l.Z)({}), {
     trackUserProfileAction: C
   } = (0, d.KZ)(), N = i.useRef(null);
-  return v ? null == I ? (0, r.jsx)(p.O1, {
+  return v ? null == S ? (0, r.jsx)(_.O1, {
     action: "EDIT_PROFILE",
-    text: h.intl.string(h.t.s5vZlQ),
+    text: m.intl.string(m.t.s5vZlQ),
     icon: o.vdY,
     autoFocus: true,
     fullWidth: g,
     variant: "primary",
     onClick: () => {
-      if (T) return void f.Z.notifyPendingWidgets();
+      if (I) return void f.Z.notifyPendingWidgets();
       null == O || O(), A(), (0, s.i)(y)
     }
   }) : (0, r.jsx)(o.yRy, {
@@ -89,26 +89,26 @@ function O(e) {
         closePopout: t
       } = e;
       return (0, r.jsxs)(o.v2r, {
-        className: m.popoutMenu,
+        className: h.popoutMenu,
         onSelect: true,
         navId: "edit-profile-popout",
         onClose: () => {
           t(), null == O || O()
         },
-        "aria-label": h.intl.string(h.t.AXIHpV),
+        "aria-label": m.intl.string(m.t.AXIHpV),
         children: [(0, r.jsx)(o.sNh, {
           id: "edit-server-profile",
-          label: h.intl.string(h.t["PKQB/H"]),
-          subtext: h.intl.string(h.t.VYHWKJ),
+          label: m.intl.string(m.t["PKQB/H"]),
+          subtext: m.intl.string(m.t.VYHWKJ),
           action: () => {
             C({
               action: "EDIT_GUILD_PROFILE"
-            }), S(), (0, s.i)(y)
+            }), T(), (0, s.i)(y)
           }
         }), (0, r.jsx)(o.sNh, {
           id: "edit-main-profile",
-          label: h.intl.string(h.t.HmFaFB),
-          subtext: h.intl.string(h.t["+EERMk"]),
+          label: m.intl.string(m.t.HmFaFB),
+          subtext: m.intl.string(m.t["+EERMk"]),
           action: () => {
             C({
               action: "EDIT_PROFILE"
@@ -121,15 +121,15 @@ function O(e) {
       var {
         onClick: t
       } = e, n = b(e, ["onClick"]);
-      return (0, r.jsx)(p.O1, E({
+      return (0, r.jsx)(_.O1, E({
         buttonRef: N,
-        text: h.intl.string(h.t.s5vZlQ),
+        text: m.intl.string(m.t.s5vZlQ),
         icon: o.vdY,
         autoFocus: true,
         fullWidth: g,
         variant: "primary",
         onClick: () => {
-          if (T) return void f.Z.notifyPendingWidgets();
+          if (I) return void f.Z.notifyPendingWidgets();
           null == t || t()
         }
       }, n))

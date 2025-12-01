@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Xq: () => u,
-  g8: () => _,
+  g8: () => p,
   hZ: () => d,
   wk: () => f
 });
@@ -65,7 +65,7 @@ function f(e, t) {
   })
 }
 
-function _(e) {
+function p(e) {
   let t = o.Z.getLastSeenTimestamp();
   if (null === t || null != t && Date.now() - t >= o.J) return a.Z.dispatch({
     type: "SURVEY_SEEN",

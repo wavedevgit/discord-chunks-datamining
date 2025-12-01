@@ -2,7 +2,7 @@
 /** chunk id: 669764, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -33,7 +33,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     applicationIds: t,
     supplementalGameData: n
@@ -52,17 +52,17 @@ function _(e) {
       artwork_urls: u,
       screenshot_urls: d,
       icon_hash: f,
-      cover_image_url: _,
-      first_release_date: p,
-      summary_localized: h,
-      publisher_names: m,
+      cover_image_url: p,
+      first_release_date: _,
+      summary_localized: m,
+      publisher_names: h,
       developer_names: g
     } = e;
     r.delete(t), s.set(t, {
       applicationId: t,
       name: n,
       summary: i,
-      summaryLocalized: h,
+      summaryLocalized: m,
       websites: a,
       themes: o,
       genres: l,
@@ -70,9 +70,9 @@ function _(e) {
       artwork: u,
       screenshots: d,
       iconHash: f,
-      coverImageUrl: _,
-      firstReleaseDate: p,
-      publishers: null != m ? m : [],
+      coverImageUrl: p,
+      firstReleaseDate: _,
+      publishers: null != h ? h : [],
       developers: null != g ? g : []
     })
   }), r.forEach(e => {
@@ -80,7 +80,7 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     applicationIds: t
   } = e;
@@ -88,7 +88,7 @@ function p(e) {
     l.delete(e), c.add(e)
   })
 }
-class h extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk442837.ZP.Store) {
   canFetch(e) {
     return !l.has(e) && !c.has(e) && !s.has(e) && !u.has(e)
   }
@@ -127,10 +127,10 @@ class h extends(r = Chunk442837.ZP.Store) {
     return s.size
   }
 }
-o(h, "displayName", "DetectableGameSupplementalStore");
-let m = new h(Chunk570140.Z, {
+o(m, "displayName", "DetectableGameSupplementalStore");
+let h = new m(Chunk570140.Z, {
   LOGOUT: d,
   DETECTABLE_GAME_SUPPLEMENTAL_FETCH: f,
-  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_SUCCESS: _,
-  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_FAILURE: p
+  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_SUCCESS: p,
+  DETECTABLE_GAME_SUPPLEMENTAL_FETCH_FAILURE: _
 })

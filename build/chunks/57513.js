@@ -14,12 +14,12 @@ var Chunk544891 = require("./544891.js"),
   Chunk70956 = require("./70956.js"),
   Chunk981631 = require("./981631.js");
 let f = 10 * Chunk70956.Z.Millis.MINUTE,
-  _ = 10 * Chunk70956.Z.Millis.MINUTE,
-  p = +Chunk70956.Z.Millis.MINUTE,
-  h = {};
+  p = 10 * Chunk70956.Z.Millis.MINUTE,
+  _ = +Chunk70956.Z.Millis.MINUTE,
+  m = {};
 
-function m(e, t) {
-  null == h[t] && (h[t] = new a.V7), h[t].start(f + Math.random() * _, () => {
+function h(e, t) {
+  null == m[t] && (m[t] = new a.V7), m[t].start(f + Math.random() * p, () => {
     null != l.Z.getLibraryApplication(e, t) && g(e, t)
   })
 }
@@ -31,7 +31,7 @@ async function g(e, t) {
     applicationId: e,
     branchId: t,
     locale: a
-  }), n && await (0, i._v)(Math.random() * p), r.tn.get({
+  }), n && await (0, i._v)(Math.random() * _), r.tn.get({
     url: d.ANM.APPLICATION_LIVE_BUILD(e, t),
     query: {
       platform: (0, c.D)(),
@@ -61,6 +61,6 @@ async function g(e, t) {
       type: "APPLICATION_BUILD_NOT_FOUND",
       applicationId: e,
       branchId: t
-    }) : m(e, t)
+    }) : h(e, t)
   })
 }

@@ -29,29 +29,29 @@ let c = (0, Chunk473749.createContext)({}),
     } = (0, a.X)(e), {
       isFocused: d,
       isFocusVisible: f,
-      focusProps: _
+      focusProps: p
     } = (0, o.F)({
       isTextInput: true,
       autoFocus: e.autoFocus
-    }), p = !!e["aria-invalid"] && "false" !== e["aria-invalid"], h = (0, r.aX)({
+    }), _ = !!e["aria-invalid"] && "false" !== e["aria-invalid"], m = (0, r.aX)({
       ...e,
       values: {
         isHovered: i,
         isFocused: d,
         isFocusVisible: f,
         isDisabled: e.disabled || false,
-        isInvalid: p
+        isInvalid: _
       },
       defaultClassName: "react-aria-Input"
     });
     return l.createElement("input", {
-      ...(0, s.d)(u(e), _, n),
-      ...h,
+      ...(0, s.d)(u(e), p, n),
+      ...m,
       ref: t,
       "data-focused": d || true,
       "data-disabled": e.disabled || true,
       "data-hovered": i || true,
       "data-focus-visible": f || true,
-      "data-invalid": p || true
+      "data-invalid": _ || true
     })
   })

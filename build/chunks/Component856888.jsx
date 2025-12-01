@@ -27,7 +27,7 @@ function d(e) {
     onBack: t,
     title: c.intl.string(c.t["DB/m9a"])
   }));
-  let _ = (e, t) => {
+  let p = (e, t) => {
     d((0, r.jsx)(f, {
       title: e,
       onBack: () => {
@@ -40,7 +40,7 @@ function d(e) {
       className: u.subscriptionsContainer,
       children: (0, r.jsx)(l.Z, {
         subscriptions: n,
-        updateHeader: _
+        updateHeader: p
       })
     })]
   })

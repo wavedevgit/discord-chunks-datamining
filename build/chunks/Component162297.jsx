@@ -2,7 +2,7 @@
 /** chunk id: 162297, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,24 +16,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk230171 = require("./230171.jsx"),
   Chunk433534 = require("./433534.js");
 
-function p(e) {
+function _(e) {
   let {
     applicationId: t,
     message: n
   } = e, [a, s, l] = (0, o.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
     null != a || s || l || u.ZP.fetchApplication(t)
-  }, [a, s, l, t]), null != a && (0, _.Eb)({
+  }, [a, s, l, t]), null != a && (0, p.Eb)({
     customInstallUrl: a.customInstallUrl,
     installParams: a.installParams,
     integrationTypesConfig: a.integrationTypesConfig
-  })) ? (0, r.jsx)(h, {
+  })) ? (0, r.jsx)(m, {
     application: a,
     message: n
   }) : null
 }
 
-function h(e) {
+function m(e) {
   let {
     application: t,
     message: n

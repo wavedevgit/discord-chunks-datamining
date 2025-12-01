@@ -2,7 +2,7 @@
 /** chunk id: 975772, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  x: () => _
+  x: () => p
 });
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -14,7 +14,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk921944 = require("./921944.js");
 let d = 12096e5,
   f = i()("2025-11-10 10:00:00-08:00").toDate(),
-  _ = () => {
+  p = () => {
     let {
       enabled: e,
       forceNotice: t
@@ -24,8 +24,8 @@ let d = 12096e5,
     if ((0, Chunk266454.Nj)(Chunk704215.z.PREMIUM_SETTINGS_SUBSCRIPTION_INFO_NOTICE) || new Date < f && !exports || null == require || null != require.createdAt && require.createdAt > f && !exports) returnfalse;
     let r = require.currentPeriodStart,
       i = require.currentPeriodEnd,
-      _ = i <= new Date(Date.now() + d) && i > new Date;
+      p = i <= new Date(Date.now() + d) && i > new Date;
     return Chunk913527 > f ? ((0, Chunk266454.Q3)(Chunk704215.z.PREMIUM_SETTINGS_SUBSCRIPTION_INFO_NOTICE, {
       dismissAction: Chunk921944.L.AUTO_DISMISS
-    }), false) : !!_ && module
+    }), false) : !!p && module
   }

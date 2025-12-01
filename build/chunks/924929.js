@@ -5,17 +5,17 @@ require.d(exports, {
   a: () => i,
   w: () => a
 });
-var Chunk541216 = require("./541216.js");
+var Chunk15202 = require("./15202.js");
 
 function i(e) {
-  return e === r.Z.LIGHT
+  return e === r.BR.LIGHT
 }
 
 function a(e) {
   switch (e) {
-    case r.Z.DARK:
-    case r.Z.MIDNIGHT:
-    case r.Z.DARKER:
+    case r.BR.DARK:
+    case r.BR.MIDNIGHT:
+    case r.BR.DARKER:
       returntrue;
     default:
       returnfalse

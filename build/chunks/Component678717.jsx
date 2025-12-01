@@ -2,12 +2,12 @@
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => I,
-  openDevToolsPopout: () => N
+  openDevToolsPopout: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,21 +31,21 @@ function E(e) {
   let {
     resizableNode: t,
     onResize: n,
-    onResizeEnd: l
-  } = e, i = (0, d.Z)({
+    onResizeEnd: r
+  } = e, l = (0, d.Z)({
     minDimension: f.h,
     resizableDomNodeRef: t,
     onElementResize: n,
-    onElementResizeEnd: l,
+    onElementResizeEnd: r,
     orientation: d.y.HORIZONTAL_LEFT
   });
   return (0, a.jsx)("div", {
-    onMouseDown: i,
+    onMouseDown: l,
     className: C.resizeHandle
   })
 }
 
-function N() {
+function T() {
   (0, Chunk788983.open)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk54381.jsx)(Chunk238246.Z, {
     windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
@@ -60,23 +60,23 @@ function N() {
   })
 }
 
-function T(e) {
+function N(e) {
   var t;
   let {
     isPopout: n = false
-  } = e, l = (0, v.F)(), {
-    TabBar: i,
-    renderSelectedTab: r,
+  } = e, r = (0, v.F)(), {
+    TabBar: l,
+    renderSelectedTab: i,
     selectedTabId: o
   } = (0, j.ZP)({
-    tabs: l,
+    tabs: r,
     initialSelectedTabId: null != (t = f.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
       (0, g.Qh)({
         lastOpenTabId: e
       })
     }
-  }, [l]);
+  }, [r]);
   return (0, u.Z)({
     type: s.ImpressionTypes.PANE,
     name: s.ImpressionNames.VIEW_PANEL_DEVTOOLS,
@@ -90,7 +90,7 @@ function T(e) {
         children: [(0, a.jsx)(m.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
-          onClick: N
+          onClick: T
         }), (0, a.jsx)(m.ZP.Icon, {
           icon: c.Dio,
           tooltip: y.intl.string(y.t.cpT0Cq),
@@ -103,7 +103,7 @@ function T(e) {
       }), (0, a.jsx)(m.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(i, {}), r(), (0, a.jsx)(b.Br, {
+    }), (0, a.jsx)(l, {}), i(), (0, a.jsx)(b.Br, {
       className: C.layerContainer
     })]
   })
@@ -112,8 +112,8 @@ function T(e) {
 function O() {
   let e = Chunk473749.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
-    [n, i] = Chunk473749.useState(null),
-    r = Chunk473749.useCallback(e => (0, g.Qh)({
+    [n, l] = Chunk473749.useState(null),
+    i = Chunk473749.useCallback(e => (0, g.Qh)({
       sidebarWidth: e
     }), []);
   return (Chunk473749.useEffect(() => {
@@ -129,27 +129,27 @@ function O() {
     children: [(0, Chunk54381.jsx)(E, {
       resizableNode: module,
       onResize: Chunk120356,
-      onResizeEnd: r
+      onResizeEnd: i
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk54381.jsx)(T, {})
+      children: (0, Chunk54381.jsx)(N, {})
     })]
   })
 }
 
 function P() {
   return (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.displayTools) ? (0, Chunk54381.jsx)("div", {
-    className: r()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
+    className: i()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
     children: (0, Chunk54381.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk54381.jsx)(T, {})
+      children: (0, Chunk54381.jsx)(N, {})
     })
   }) : (0, Chunk54381.jsx)("div", {
     className: Chunk552883.container,
     children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
       onClick: Chunk31336.SO,
       children: (0, Chunk54381.jsxs)(Chunk665149.ZP, {
-        className: r()(Chunk451429.headerBar, Chunk552883.mobileHeaderCollapsed),
+        className: i()(Chunk451429.headerBar, Chunk552883.mobileHeaderCollapsed),
         toolbar: (0, Chunk54381.jsx)(Chunk259580.Z, {
           direction: Chunk259580.Z.Directions.UP
         }),
@@ -171,7 +171,7 @@ function I(e) {
   } = e;
   return t ? (0, a.jsx)(P, {}) : n ? (0, a.jsx)("div", {
     className: C.popoutContainer,
-    children: (0, a.jsx)(T, {
+    children: (0, a.jsx)(N, {
       isPopout: true
     })
   }) : (0, a.jsx)(O, {})

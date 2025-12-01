@@ -2,7 +2,7 @@
 /** chunk id: 864239, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,19 +18,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m() {
+function h() {
   var e;
   let t = null == (e = (0, Chunk682578.J)()) || module,
     n = (0, Chunk519207.q3)(),
-    m = (0, Chunk622822.xi)(),
+    h = (0, Chunk622822.xi)(),
     g = (0, Chunk81643.Jm)(),
-    E = Chunk473749.useMemo(() => (!m || !!g) && !exports, [m, exports, g]),
+    E = Chunk473749.useMemo(() => (!h || !!g) && !exports, [h, exports, g]),
     b = Chunk473749.useCallback(e => {
-      if (m && e) return void a.Z.showAgeVerificationGetStartedModal({
+      if (h && e) return void a.Z.showAgeVerificationGetStartedModal({
         entryPoint: o.cU.AGE_RESTRICTED_SERVERS_ACCESS_SETTINGS
       });
       u.DC.updateSetting(e)
-    }, [m]);
+    }, [h]);
   return (0, Chunk54381.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_SERVER_PRIVACY_DEFAULTS_AGE_RESTRICTED_IOS_V2,
     children: (0, Chunk54381.jsx)(Chunk51331.ZP, {

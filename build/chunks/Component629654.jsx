@@ -18,11 +18,11 @@ function f(e) {
   let {
     preset: t,
     onShuffle: n
-  } = e, f = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), _ = (0, l.g2)({
+  } = e, f = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), p = (0, l.g2)({
     useReducedMotion: f
   }), {
-    name: p,
-    header: h
+    name: _,
+    header: m
   } = i.useMemo(() => {
     let e = (0, c.Ib)(t);
     return {
@@ -34,27 +34,27 @@ function f(e) {
     className: d.container,
     children: [(0, r.jsx)(o.P3F, {
       onClick: () => {
-        n(), _.startAnimation(false)
+        n(), p.startAnimation(false)
       },
       className: d.button,
       "aria-label": u.intl.string(u.t["44yJxh"]),
-      children: _.render()
+      children: p.render()
     }), (0, r.jsxs)(o.P3F, {
       onClick: () => {
-        n(), _.startAnimation(false)
+        n(), p.startAnimation(false)
       },
-      "aria-label": "".concat(p, ": ").concat(u.intl.string(u.t["44yJxh"])),
+      "aria-label": "".concat(_, ": ").concat(u.intl.string(u.t["44yJxh"])),
       className: d.select,
       children: [(0, r.jsx)("img", {
         alt: "",
         "aria-hidden": true,
-        src: h,
+        src: m,
         className: d.presetImage
       }), (0, r.jsx)(o.Text, {
         className: d.presetLabel,
         variant: "text-sm/bold",
         color: "always-white",
-        children: p
+        children: _
       })]
     })]
   })

@@ -3,18 +3,18 @@
 "use strict";
 require.d(exports, {
   B0: () => N,
-  Hc: () => D,
-  J8: () => w,
+  Hc: () => w,
+  J8: () => D,
   Q6: () => C,
-  V9: () => M,
-  WD: () => P,
-  Zt: () => I,
-  Zv: () => S,
+  V9: () => j,
+  WD: () => R,
+  Zt: () => S,
+  Zv: () => T,
   _V: () => A,
-  cv: () => x,
+  cv: () => L,
   gM: () => U,
-  jl: () => L,
-  z: () => R
+  jl: () => x,
+  z: () => P
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./415506.js"), require("./781311.js");
 var Chunk134432 = require("./134432.js"),
   Chunk581883 = require("./581883.js"),
@@ -28,18 +28,18 @@ var Chunk134432 = require("./134432.js"),
   Chunk611480 = require("./611480.js"),
   Chunk981631 = require("./981631.js");
 let {
-  API_ENDPOINT: p,
-  MEDIA_PROXY_ENDPOINT: h,
-  PROJECT_ENV: m,
+  API_ENDPOINT: _,
+  MEDIA_PROXY_ENDPOINT: m,
+  PROJECT_ENV: h,
   ASSET_ENDPOINT: g,
   CDN_HOST: E
-} = window.GLOBAL_ENV, b = Object.values(Chunk373228.og), y = decodeURIComponent(Chunk981631.ANM.STICKER_ASSET("[\\d]+", "(".concat(b.join("|"), ")"))), O = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(h, ")(").concat(y, ")"), "ig"), v = RegExp("".concat(location.protocol).concat(p, "(").concat(y, ")"), "ig"), I = e => {
+} = window.GLOBAL_ENV, b = Object.values(Chunk373228.og), y = decodeURIComponent(Chunk981631.ANM.STICKER_ASSET("[\\d]+", "(".concat(b.join("|"), ")"))), O = RegExp("(".concat(location.protocol).concat(g, "|").concat(location.protocol).concat(m, ")(").concat(y, ")"), "ig"), v = RegExp("".concat(location.protocol).concat(_, "(").concat(y, ")"), "ig"), S = e => {
   if (null != e.cover_sticker_id) {
     let t = e.stickers.find(t => t.id === e.cover_sticker_id);
     if (null != t) return t
   }
   return e.stickers[0]
-}, T = e => {
+}, I = e => {
   switch (e) {
     case d.u3.PNG:
       return s.$k ? d.og.WEBP : d.og.PNG;
@@ -52,7 +52,7 @@ let {
     default:
       throw Error("Unexpected format type: ".concat(e))
   }
-}, S = e => {
+}, T = e => {
   switch (e) {
     case "application/json":
       return d.u3.LOTTIE;
@@ -66,7 +66,7 @@ let {
     default:
       throw Error("Unexpected file type: ".concat(e))
   }
-}, A = e => null == e ? null : "".concat(e.name, ".").concat(T(e.format_type)), C = function(e) {
+}, A = e => null == e ? null : "".concat(e.name, ".").concat(I(e.format_type)), C = function(e) {
   let {
     isPreview: t = false,
     size: i = f.lE
@@ -74,8 +74,8 @@ let {
   if (null == e.format_type) return null;
   let a = e.format_type;
   e.format_type === d.u3.GIF && t && (a = d.u3.PNG);
-  let o = T(a),
-    s = _.ANM.STICKER_ASSET(e.id, o),
+  let o = I(a),
+    s = p.ANM.STICKER_ASSET(e.id, o),
     c = false;
   try {
     let {
@@ -86,22 +86,22 @@ let {
     }).enabled
   } catch (e) {}
   let u = c ? "&force_sdr=true" : "",
-    p = o === d.og.WEBP ? "&quality=lossless" : "";
-  if ("development" !== m) {
+    _ = o === d.og.WEBP ? "&quality=lossless" : "";
+  if ("development" !== h) {
     if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(g).concat(s);
     let n = e.format_type === d.u3.APNG && t && !(0, l.isAndroid)() ? "&passthrough=false" : "",
       a = Math.min(2, (0, r.x_)());
-    return "".concat(location.protocol).concat(h).concat(s, "?size=").concat((0, r.oO)(i * a)).concat(n).concat(p).concat(u)
+    return "".concat(location.protocol).concat(m).concat(s, "?size=").concat((0, r.oO)(i * a)).concat(n).concat(_).concat(u)
   }
-  let E = "".concat(location.protocol).concat(h).concat(s);
+  let E = "".concat(location.protocol).concat(m).concat(s);
   return c ? "".concat(E, "?force_sdr=true") : E
-}, N = e => null != e.match("development" !== m ? O : v), R = e => ({
+}, N = e => null != e.match("development" !== h ? O : v), P = e => ({
   type: d.Ih.PACK,
   id: e.id,
   name: e.name,
   stickers: e.stickers,
-  previewSticker: I(e)
-}), P = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, D = (e, t, n, r) => {
+  previewSticker: S(e)
+}), R = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, w = (e, t, n, r) => {
   if (o.Z.getUploadCount(n, r) > 0) returntrue;
   let i = c.Z.getStickerPreview(n, r);
   if (null != i && i.length > 0) returntrue;
@@ -114,17 +114,17 @@ let {
     default:
       returnfalse
   }
-}, w = e => e.type === d.n0.GUILD, L = e => e.type === d.n0.STANDARD, x = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], M = e => {
+}, D = e => e.type === d.n0.GUILD, x = e => e.type === d.n0.STANDARD, L = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
   if (null === e) returnfalse;
   let t = e.guild_id;
   return true !== a.Z.getGuild(t)
-}, k = [];
+}, M = [];
 
-function j() {
+function k() {
   var e, t;
-  return null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? true : module.stickerIds) ? exports : k
+  return null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.favoriteStickers) ? true : module.stickerIds) ? exports : M
 }
 
 function U(e) {
-  return j().includes(e)
+  return k().includes(e)
 }

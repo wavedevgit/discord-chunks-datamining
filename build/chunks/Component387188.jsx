@@ -4,7 +4,7 @@
 require.d(exports, {
   Zh: () => O,
   e: () => v,
-  iq: () => I
+  iq: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,11 +45,11 @@ function v(e) {
   let {
     message: t,
     className: n
-  } = e, [a, s] = i.useState(false), d = t.getChannelId(), f = (0, g.xE)(t.content), _ = i.useCallback(() => {
-    null != f && (0, p.rU)(d, t.id, {
+  } = e, [a, s] = i.useState(false), d = t.getChannelId(), f = (0, g.xE)(t.content), p = i.useCallback(() => {
+    null != f && (0, _.rU)(d, t.id, {
       id: f.id,
       name: f.name
-    }, p.TW.MESSAGE)
+    }, _.TW.MESSAGE)
   }, [d, f, t.id]);
   return null == f ? null : (0, r.jsx)(l.u, {
     asContainer: true,
@@ -65,7 +65,7 @@ function v(e) {
     }),
     children: (0, r.jsx)(c.P3F, {
       className: o()(n, y.ctaReactionButton),
-      onClick: _,
+      onClick: p,
       onMouseEnter: () => {
         s(true)
       },
@@ -93,19 +93,19 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     message: t,
     compact: n,
     usernameHook: a
-  } = e, o = t.content, [l, u] = i.useState(false), p = (0, d.ZP)(t), O = a(p), v = (0, g.xE)(o), I = i.useCallback(() => {
-    null != v && m.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
+  } = e, o = t.content, [l, u] = i.useState(false), _ = (0, d.ZP)(t), O = a(_), v = (0, g.xE)(o), S = i.useCallback(() => {
+    null != v && h.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: ":".concat(v.name, ":"),
       rawText: o,
       addSpace: true
     })
-  }, [v, o]), T = i.useMemo(() => null == v ? null : {
-    src: h.ZP.getEmojiURL({
+  }, [v, o]), I = i.useMemo(() => null == v ? null : {
+    src: m.ZP.getEmojiURL({
       id: v.id,
       animated: v.animated,
       size: 48
@@ -114,7 +114,7 @@ function I(e) {
     name: ":".concat(v.name, ":"),
     animated: v.animated
   }, [v]);
-  return (0, r.jsx)(_.Z, {
+  return (0, r.jsx)(p.Z, {
     iconNode: (0, r.jsx)(s.EO4, {
       size: "refresh_sm",
       color: "currentColor"
@@ -124,20 +124,20 @@ function I(e) {
     compact: n,
     contentClassName: y.content,
     children: (0, r.jsx)("span", {
-      children: null == v || null == T ? b.intl.format(b.t.k6Jc9Y, {
-        username: p.nick,
+      children: null == v || null == I ? b.intl.format(b.t.k6Jc9Y, {
+        username: _.nick,
         usernameHook: O
       }) : b.intl.format(b.t.IihHB0, {
-        username: p.nick,
+        username: _.nick,
         usernameHook: O,
         emojiPreview: (0, r.jsx)(f.Y, {
-          node: T,
+          node: I,
           isInteracting: l
         }),
         emojiName: (0, r.jsx)(c.P3F, {
           className: y.clickableEmoji,
           tag: "span",
-          onClick: I,
+          onClick: S,
           onMouseEnter: () => u(true),
           onMouseLeave: () => u(false),
           children: (0, r.jsx)(c.Text, {

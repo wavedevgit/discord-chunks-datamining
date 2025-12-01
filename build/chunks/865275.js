@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,12 +47,12 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = new Chunk710845.Z("UploaderBase.tsx");
+let h = new Chunk710845.Z("UploaderBase.tsx");
 class g extends Chunk836560.EventEmitter {
   _fileSize() {
     return this.files.reduce((e, t) => {
@@ -63,7 +63,7 @@ class g extends Chunk836560.EventEmitter {
   async compressAndCheckFileSize() {
     var e, t;
     let n = (0, Chunk983544.F)(null == (t = this.files[0]) || null == (e = exports.item) ? true : module.target);
-    return this.files.length > require.getMaxAttachmentsCount() ? (m.log("Too many attachments for ".concat(this.id)), this._handleError({
+    return this.files.length > require.getMaxAttachmentsCount() ? (h.log("Too many attachments for ".concat(this.id)), this._handleError({
       code: Chunk981631.evJ.TOO_MANY_ATTACHMENTS
     }), false) : !(this._fileSize() > require.getMaxTotalAttachmentSize()) || (this._handleError({
       code: Chunk981631.evJ.ENTITY_TOO_LARGE,
@@ -76,7 +76,7 @@ class g extends Chunk836560.EventEmitter {
     let e = this.files.some(e => e.isImage),
       t = this.files.some(e => e.isVideo),
       n = this._fileSize();
-    m.log("setUploadingTextForUI - total content: ".concat(require, " bytes and ").concat(this.files.length, " attachments for ").concat(this.id)), this._file = h(_({}, this._file), {
+    h.log("setUploadingTextForUI - total content: ".concat(require, " bytes and ").concat(this.files.length, " attachments for ").concat(this.id)), this._file = m(p({}, this._file), {
       totalPostCompressionSize: require,
       currentSize: require,
       hasVideo: exports,
@@ -109,7 +109,7 @@ class g extends Chunk836560.EventEmitter {
     }), module
   }
   _addAttachmentsToPayload(e, t, n) {
-    let r = _({}, e),
+    let r = p({}, e),
       i = [...a().get(r, t, []), ...n];
     return a().set(r, t, i)
   }
@@ -118,14 +118,14 @@ class g extends Chunk836560.EventEmitter {
   }
   cancel() {
     var e, t;
-    m.log("cancel() for ".concat(this.id)), this._aborted || (this._aborted = true, null == (e = (t = this)._cancel) || module.call(exports), this.files.forEach(e => e.cancel()), this._handleComplete())
+    h.log("cancel() for ".concat(this.id)), this._aborted || (this._aborted = true, null == (e = (t = this)._cancel) || module.call(exports), this.files.forEach(e => e.cancel()), this._handleComplete())
   }
   async cancelItem(e) {
-    m.log("Cancel called for ".concat(this.id, " for item ").concat(e));
+    h.log("Cancel called for ".concat(this.id, " for item ").concat(e));
     let t = this.files.find(t => t.id === e);
     if (null == t || t.isCancelled()) return;
     let n = this.files.indexOf(t);
-    this.files = [...this.files.slice(0, n), ...this.files.slice(n + 1)], this._file = h(_({}, this._file), {
+    this.files = [...this.files.slice(0, n), ...this.files.slice(n + 1)], this._file = m(p({}, this._file), {
       items: this.files
     }), await (0, s.V_)(t), t.cancel(), this.emit("cancel-upload-item", this._file), 0 === this.files.length && this.cancel()
   }
@@ -157,7 +157,7 @@ class g extends Chunk836560.EventEmitter {
           e.item.progress = n[e.id]
         })
       }
-      this._lastUpdate = r, this._loaded = e, this._file = h(_({}, this._file), {
+      this._lastUpdate = r, this._loaded = e, this._file = m(p({}, this._file), {
         currentSize: t,
         progress: i,
         rate: a
@@ -177,9 +177,9 @@ class g extends Chunk836560.EventEmitter {
         reason: n,
         body: r
       } = e;
-      this.clearProcessingMessageInterval(), this._aborted || (this._errored = true, m.log("_handleError: ".concat(t, " (").concat(JSON.stringify(n), ") for ").concat(this.id)), this.emit("error", this._file, t, r, n), this.removeAllListeners())
+      this.clearProcessingMessageInterval(), this._aborted || (this._errored = true, h.log("_handleError: ".concat(t, " (").concat(JSON.stringify(n), ") for ").concat(this.id)), this.emit("error", this._file, t, r, n), this.removeAllListeners())
     }), f(this, "_handleComplete", e => {
-      this.clearProcessingMessageInterval(), m.log("_handleComplete for ".concat(this.id)), this.emit("complete", this._file, e), this.removeAllListeners()
+      this.clearProcessingMessageInterval(), h.log("_handleComplete for ".concat(this.id)), this.emit("complete", this._file, e), this.removeAllListeners()
     }), this.id = a().uniqueId("Uploader"), this._file = {
       id: this.id,
       currentSize: 0,

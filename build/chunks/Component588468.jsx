@@ -39,7 +39,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk512746 = require("./512746.js");
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,14 +48,14 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -78,9 +78,9 @@ function G(e, t) {
   }), e
 }
 
-function B(e, t) {
+function Z(e, t) {
   if (null == e) return {};
-  var n, r, i = Z(e, t);
+  var n, r, i = B(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -88,7 +88,7 @@ function B(e, t) {
   return i
 }
 
-function Z(e, t) {
+function B(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -104,7 +104,7 @@ function V(e) {
   return "autocomplete-".concat(e, "-title")
 }
 let H = Chunk473749.createContext(null);
-class W extends Chunk473749.PureComponent {
+class Y extends Chunk473749.PureComponent {
   isSelectable() {
     return this.selectable
   }
@@ -121,8 +121,8 @@ class W extends Chunk473749.PureComponent {
         selected: o
       }
     } = this, l = this.isSelectable();
-    return (0, i.jsx)(f.P3F, G(j({}, e), {
-      className: s()(M.clickable, r, n),
+    return (0, i.jsx)(f.P3F, G(k({}, e), {
+      className: s()(j.clickable, r, n),
       id: null != (t = F(a)) ? t : true,
       onClick: l ? this.handleClick : true,
       onMouseMove: l ? () => {
@@ -137,7 +137,7 @@ class W extends Chunk473749.PureComponent {
       "aria-disabled": !l,
       "aria-selected": l && o,
       children: (0, i.jsx)("div", {
-        className: M.base,
+        className: j.base,
         children: this.renderContent()
       })
     }))
@@ -152,14 +152,14 @@ class W extends Chunk473749.PureComponent {
     }) : this.renderClickable()
   }
   constructor(e) {
-    super(e), k(this, "selectable", true), k(this, "layoutClass", M.autocompleteRowVertical), k(this, "handleMouseEnter", () => {
+    super(e), M(this, "selectable", true), M(this, "layoutClass", j.autocompleteRowVertical), M(this, "handleMouseEnter", () => {
       let {
         onHover: e,
         index: t,
         selected: n
       } = this.props;
       null == e || n || "number" != typeof t || e(t)
-    }), k(this, "handleClick", e => {
+    }), M(this, "handleClick", e => {
       let {
         onClick: t,
         index: n
@@ -170,7 +170,7 @@ class W extends Chunk473749.PureComponent {
     }
   }
 }
-class Y extends W {
+class W extends Y {
   renderContent() {
     let {
       text: e,
@@ -194,13 +194,13 @@ class Y extends W {
 function K(e) {
   let t = a.useMemo(() => c().random(60, 120), []);
   return (0, i.jsx)("div", {
-    className: M.base,
+    className: j.base,
     "aria-busy": true,
-    children: (0, i.jsx)(D.RX, {
-      children: (0, i.jsx)(D.z5, {
-        children: (0, i.jsx)(D.BR, {
+    children: (0, i.jsx)(w.RX, {
+      children: (0, i.jsx)(w.z5, {
+        children: (0, i.jsx)(w.BR, {
           children: (0, i.jsx)("div", {
-            className: M.autocompletePlaceholder,
+            className: j.autocompletePlaceholder,
             style: {
               width: t
             }
@@ -218,16 +218,16 @@ function z(e) {
     children: r
   } = e, o = a.useContext(H);
   return (0, i.jsx)("div", {
-    className: M.base,
+    className: j.base,
     children: (0, i.jsxs)(f.Heading, {
       id: V(o.id),
-      className: s()(M.contentTitle, n),
+      className: s()(j.contentTitle, n),
       variant: "heading-deprecated-12/semibold",
       children: [t, r]
     })
   })
 }
-class q extends W {
+class q extends Y {
   renderContent() {
     let {
       className: e
@@ -237,10 +237,10 @@ class q extends W {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "layoutClass", M.dividerContainer), k(this, "selectable", false)
+    super(...e), M(this, "layoutClass", j.dividerContainer), M(this, "selectable", false)
   }
 }
-class X extends W {
+class Q extends Y {
   renderContent() {
     var e;
     let {
@@ -274,7 +274,7 @@ class X extends W {
     })
   }
 }
-class Q extends W {
+class X extends Y {
   renderContent() {
     var e;
     let {
@@ -286,7 +286,7 @@ class Q extends W {
       guildId: l,
       selected: c,
       layout: u = "horizontal"
-    } = this.props, d = null == Chunk392711 ? Chunk699516.Z.getNickname(exports.id) : null, _ = null != (e = null != require ? require : Chunk313666) ? module : Chunk51144.ZP.getName(exports);
+    } = this.props, d = null == Chunk392711 ? Chunk699516.Z.getNickname(exports.id) : null, p = null != (e = null != require ? require : Chunk313666) ? module : Chunk51144.ZP.getName(exports);
     return (0, Chunk54381.jsxs)(Chunk965386.RX, {
       className: s()({
         [Chunk512746.verticalLayout]: "vertical-suggestion" === Chunk91192
@@ -331,10 +331,10 @@ class Q extends W {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "layoutClass", M.autoCompleteRowSuggestion)
+    super(...e), M(this, "layoutClass", j.autoCompleteRowSuggestion)
   }
 }
-class J extends W {
+class J extends Y {
   renderContent() {
     let {
       role: e,
@@ -345,13 +345,13 @@ class J extends W {
       colorStrings: a
     } = module, o = "dot" === Chunk607070.Z.roleStyle, l = "username" === Chunk607070.Z.roleStyle && (null != r || null != Chunk473749), c = (0, Chunk884902.AQ)(require, module, Chunk473749), u = null != c && Chunk392711, {
       gradientStyle: d,
-      gradientClassname: p
+      gradientClassname: _
     } = (0, Chunk481060.JUn)({
       colorStrings: Chunk473749,
       useReducedMotion: Chunk607070.Z.useReducedMotion,
       roleStyle: "username",
       includeConvenienceGlow: true
-    }), h = Chunk392711 ? j({}, Chunk91192 ? Chunk313666 : {
+    }), m = Chunk392711 ? k({}, Chunk91192 ? Chunk313666 : {
       color: null != r ? r : true
     }) : true;
     return (0, Chunk54381.jsxs)(Chunk965386.RX, {
@@ -377,7 +377,7 @@ class J extends W {
     })
   }
 }
-class $ extends W {
+class $ extends Y {
   renderContent() {
     let {
       timestamp: e,
@@ -397,7 +397,7 @@ class $ extends W {
     })
   }
 }
-class ee extends W {
+class ee extends Y {
   renderContent() {
     let {
       channel: e,
@@ -418,7 +418,7 @@ class ee extends W {
     })
   }
 }
-class et extends W {
+class et extends Y {
   renderContent() {
     let {
       command: e
@@ -441,7 +441,7 @@ class et extends W {
     })
   }
 }
-class en extends W {
+class en extends Y {
   isSelectable() {
     return this.props.command.inputType !== Chunk895924.iw.PLACEHOLDER
   }
@@ -465,7 +465,7 @@ class en extends W {
     })
   }
 }
-class er extends W {
+class er extends Y {
   renderContent() {
     let {
       emoji: e,
@@ -496,10 +496,10 @@ class er extends W {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "layoutClass", s()(M.autocompleteRowVertical, M.autocompleteRowVerticalSmall))
+    super(...e), M(this, "layoutClass", s()(j.autocompleteRowVertical, j.autocompleteRowVerticalSmall))
   }
 }
-class ei extends W {
+class ei extends Y {
   renderContent() {
     var e, t;
     let n, {
@@ -528,10 +528,10 @@ class ei extends W {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "layoutClass", s()(M.autocompleteRowVertical, M.autocompleteRowVerticalSmall))
+    super(...e), M(this, "layoutClass", s()(j.autocompleteRowVertical, j.autocompleteRowVerticalSmall))
   }
 }
-class ea extends W {
+class ea extends Y {
   renderContent() {
     let {
       width: e,
@@ -546,22 +546,22 @@ class ea extends W {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "layoutClass", M.autocompleteRowHorizontal)
+    super(...e), M(this, "layoutClass", j.autocompleteRowHorizontal)
   }
 }
-class eo extends W {
+class eo extends Y {
   renderContent() {
     return (0, Chunk54381.jsx)(Chunk203247.Z, {
       emojis: this.props.emojis
     })
   }
 }
-class es extends W {
+class es extends Y {
   renderContent() {
-    return (0, Chunk54381.jsx)(Chunk887120.Z, j({}, this.props))
+    return (0, Chunk54381.jsx)(Chunk887120.Z, k({}, this.props))
   }
 }
-class el extends W {
+class el extends Y {
   renderContent() {
     let {
       game: e
@@ -594,14 +594,14 @@ class ec extends(r = Chunk473749.PureComponent) {
         innerClassName: r,
         id: o
       } = module,
-      l = B(module, ["children", "className", "innerClassName", "id"]);
+      l = Z(module, ["children", "className", "innerClassName", "id"]);
     return Chunk473749.Children.count(exports) > 0 ? (0, Chunk54381.jsx)(H.Provider, {
       value: {
         id: null != Chunk120356 ? Chunk120356 : ""
       },
       children: (0, Chunk54381.jsx)("div", {
         className: s()(Chunk512746.autocomplete, require),
-        children: (0, Chunk54381.jsx)("div", G(j({
+        children: (0, Chunk54381.jsx)("div", G(k({
           className: s()(Chunk512746.autocompleteInner, r)
         }, Chunk392711), {
           children: exports
@@ -610,5 +610,5 @@ class ec extends(r = Chunk473749.PureComponent) {
     }) : null
   }
 }
-k(ec, "Generic", Y), k(ec, "Loading", K), k(ec, "Title", z), k(ec, "Divider", q), k(ec, "User", X), k(ec, "UserSuggestion", Q), k(ec, "Role", J), k(ec, "Channel", ee), k(ec, "Command", et), k(ec, "NewCommand", en), k(ec, "Emoji", er), k(ec, "GIFIntegration", ea), k(ec, "Sticker", ei), k(ec, "EmojiUpsell", eo), k(ec, "Soundmoji", es), k(ec, "Game", el), k(ec, "Timestamp", $);
+M(ec, "Generic", W), M(ec, "Loading", K), M(ec, "Title", z), M(ec, "Divider", q), M(ec, "User", Q), M(ec, "UserSuggestion", X), M(ec, "Role", J), M(ec, "Channel", ee), M(ec, "Command", et), M(ec, "NewCommand", en), M(ec, "Emoji", er), M(ec, "GIFIntegration", ea), M(ec, "Sticker", ei), M(ec, "EmojiUpsell", eo), M(ec, "Soundmoji", es), M(ec, "Game", el), M(ec, "Timestamp", $);
 let eu = ec

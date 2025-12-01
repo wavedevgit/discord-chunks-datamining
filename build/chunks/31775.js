@@ -28,41 +28,41 @@ function u(e) {
 
 function d(e, t, n, r) {
   var i = n.value;
-  _(e, i) && (h(e, n), l(e, "allowStale") || (i = true)), i && t.call(r, i.value, i.key, e)
+  p(e, i) && (m(e, n), l(e, "allowStale") || (i = true)), i && t.call(r, i.value, i.key, e)
 }
 
 function f(e, t, n) {
   var r = l(e, "cache").get(t);
   if (r) {
     var i = r.value;
-    _(e, i) ? (h(e, r), l(e, "allowStale") || (i = true)) : n && l(e, "lruList").unshiftNode(r), i && (i = i.value)
+    p(e, i) ? (m(e, r), l(e, "allowStale") || (i = true)) : n && l(e, "lruList").unshiftNode(r), i && (i = i.value)
   }
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (!t || !t.maxAge && !l(e, "maxAge")) returnfalse;
   var n = false,
     r = Date.now() - t.now;
   return t.maxAge ? r > t.maxAge : l(e, "maxAge") && r > l(e, "maxAge")
 }
 
-function p(e) {
+function _(e) {
   if (l(e, "length") > l(e, "max"))
     for (var t = l(e, "lruList").tail; l(e, "length") > l(e, "max") && null !== t;) {
       var n = t.prev;
-      h(e, t), t = n
+      m(e, t), t = n
     }
 }
 
-function h(e, t) {
+function m(e, t) {
   if (t) {
     var n = t.value;
     l(e, "dispose") && l(e, "dispose").call(this, n.key, n.value), l(e, "length", l(e, "length") - n.length), l(e, "cache").delete(n.key), l(e, "lruList").removeNode(t)
   }
 }
 
-function m(e, t, n, r, i) {
+function h(e, t, n, r, i) {
   this.key = e, this.value = t, this.length = n, this.now = r, this.maxAge = i || 0
 }
 r = "function" == typeof Symbol ? function(e) {
@@ -71,7 +71,7 @@ r = "function" == typeof Symbol ? function(e) {
   return "_" + e
 }, Object.defineProperty(u.prototype, "max", {
   set: function(e) {
-    (!e || "number" != typeof e || e <= 0) && (e = 1 / 0), l(this, "max", e), p(this)
+    (!e || "number" != typeof e || e <= 0) && (e = 1 / 0), l(this, "max", e), _(this)
   },
   get: function() {
     return l(this, "max")
@@ -87,7 +87,7 @@ r = "function" == typeof Symbol ? function(e) {
   enumerable: true
 }), Object.defineProperty(u.prototype, "maxAge", {
   set: function(e) {
-    (!e || "number" != typeof e || e < 0) && (e = 0), l(this, "maxAge", e), p(this)
+    (!e || "number" != typeof e || e < 0) && (e = 0), l(this, "maxAge", e), _(this)
   },
   get: function() {
     return l(this, "maxAge")
@@ -97,7 +97,7 @@ r = "function" == typeof Symbol ? function(e) {
   set: function(e) {
     "function" != typeof e && (e = c), e !== l(this, "lengthCalculator") && (l(this, "lengthCalculator", e), l(this, "length", 0), l(this, "lruList").forEach(function(e) {
       e.length = l(this, "lengthCalculator").call(this, e.value, e.key), l(this, "length", l(this, "length") + e.length)
-    }, this)), p(this)
+    }, this)), _(this)
   },
   get: function() {
     return l(this, "lengthCalculator")
@@ -139,7 +139,7 @@ r = "function" == typeof Symbol ? function(e) {
   }, this), l(this, "cache", new Chunk54673), l(this, "lruList", new Chunk465170), l(this, "length", 0)
 }, u.prototype.dump = function() {
   return l(this, "lruList").map(function(e) {
-    if (!_(this, e)) return {
+    if (!p(this, e)) return {
       k: e.key,
       v: e.value,
       e: e.now + (e.maxAge || 0)
@@ -166,29 +166,29 @@ r = "function" == typeof Symbol ? function(e) {
       l = {
         value: e.value
       };
-    e.maxAge !== o && (l.maxAge = e.maxAge), s !== c && (l.length = e.length), _(this, e) && (l.stale = true), l = a.inspect(l, t).split("\n").join("\n  "), n += i + " => " + l
+    e.maxAge !== o && (l.maxAge = e.maxAge), s !== c && (l.length = e.length), p(this, e) && (l.stale = true), l = a.inspect(l, t).split("\n").join("\n  "), n += i + " => " + l
   }), (u || r) && (n += "\n"), n += "}"
 }, u.prototype.set = function(e, t, n) {
   var r = (n = n || l(this, "maxAge")) ? Date.now() : 0,
     i = l(this, "lengthCalculator").call(this, t, e);
   if (l(this, "cache").has(e)) {
-    if (i > l(this, "max")) return h(this, l(this, "cache").get(e)), false;
+    if (i > l(this, "max")) return m(this, l(this, "cache").get(e)), false;
     var a = l(this, "cache").get(e).value;
-    return l(this, "dispose") && l(this, "dispose").call(this, e, a.value), a.now = r, a.maxAge = n, a.value = t, l(this, "length", l(this, "length") + (i - a.length)), a.length = i, this.get(e), p(this), true
+    return l(this, "dispose") && l(this, "dispose").call(this, e, a.value), a.now = r, a.maxAge = n, a.value = t, l(this, "length", l(this, "length") + (i - a.length)), a.length = i, this.get(e), _(this), true
   }
-  var o = new m(e, t, i, r, n);
-  return o.length > l(this, "max") ? (l(this, "dispose") && l(this, "dispose").call(this, e, t), false) : (l(this, "length", l(this, "length") + o.length), l(this, "lruList").unshift(o), l(this, "cache").set(e, l(this, "lruList").head), p(this), true)
+  var o = new h(e, t, i, r, n);
+  return o.length > l(this, "max") ? (l(this, "dispose") && l(this, "dispose").call(this, e, t), false) : (l(this, "length", l(this, "length") + o.length), l(this, "lruList").unshift(o), l(this, "cache").set(e, l(this, "lruList").head), _(this), true)
 }, u.prototype.has = function(e) {
-  return !(!l(this, "cache").has(e) || _(this, l(this, "cache").get(e).value))
+  return !(!l(this, "cache").has(e) || p(this, l(this, "cache").get(e).value))
 }, u.prototype.get = function(e) {
   return f(this, e, true)
 }, u.prototype.peek = function(e) {
   return f(this, e, false)
 }, u.prototype.pop = function() {
   var e = l(this, "lruList").tail;
-  return module ? (h(this, module), module.value) : null
+  return module ? (m(this, module), module.value) : null
 }, u.prototype.del = function(e) {
-  h(this, l(this, "cache").get(e))
+  m(this, l(this, "cache").get(e))
 }, u.prototype.load = function(e) {
   this.reset();
   for (var t = Date.now(), n = e.length - 1; n >= 0; n--) {

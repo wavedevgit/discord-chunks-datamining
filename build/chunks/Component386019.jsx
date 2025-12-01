@@ -2,7 +2,7 @@
 /** chunk id: 386019, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,43 +15,43 @@ var Chunk54381 = require("./54381.js"),
   Chunk848966 = require("./848966.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function p(e) {
   var t;
   let {
     children: n,
-    user: _,
-    activity: p,
-    entry: h,
-    display: m,
+    user: p,
+    activity: _,
+    entry: m,
+    display: h,
     onSelect: g,
     onClose: E,
     appContext: b,
     targetElementRef: y
   } = e, [O, v] = i.useState(false), {
-    analyticsLocations: I
-  } = (0, s.ZP)(o.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), T = (0, c.Z)({
-    display: m,
-    user: _,
-    activity: p,
-    entry: h,
-    analyticsLocations: I
-  }), S = (0, u.yi)(), A = i.useRef(null), C = null != (t = null == S ? true : S.interactionPopoutTargetRef) ? t : A, N = (0, d.Z)({
-    entry: h,
-    activity: p,
-    user: _,
-    display: m,
+    analyticsLocations: S
+  } = (0, s.ZP)(o.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), I = (0, c.Z)({
+    display: h,
+    user: p,
+    activity: _,
+    entry: m,
+    analyticsLocations: S
+  }), T = (0, u.yi)(), A = i.useRef(null), C = null != (t = null == T ? true : T.interactionPopoutTargetRef) ? t : A, N = (0, d.Z)({
+    entry: m,
+    activity: _,
+    user: p,
+    display: h,
     onClose: E,
-    onAction: T,
+    onAction: I,
     isMenuOpen: O,
     appContext: b
   });
-  return 0 === N.length || _.bot ? null : (0, r.jsx)(a.yRy, {
+  return 0 === N.length || p.bot ? null : (0, r.jsx)(a.yRy, {
     targetElementRef: null != y ? y : C,
     align: "top",
     position: "right",
     disablePointerEvents: false,
     onRequestOpen: () => {
-      T({
+      I({
         action: "OPEN_MENU"
       }), v(true)
     },

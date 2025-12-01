@@ -21,27 +21,27 @@ function l(e) {
   }), {
     addGlobalListener: d,
     removeAllGlobalListeners: f
-  } = (0, a.x)(), _ = (0, i.useCallback)(e => {
+  } = (0, a.x)(), p = (0, i.useCallback)(e => {
     e.currentTarget.contains(e.target) && u.current.isFocusWithin && !e.currentTarget.contains(e.relatedTarget) && (u.current.isFocusWithin = false, f(), n && n(e), c && c(false))
-  }, [n, c, u, f]), p = (0, r.d0)(_), h = (0, i.useCallback)(e => {
+  }, [n, c, u, f]), _ = (0, r.d0)(p), m = (0, i.useCallback)(e => {
     if (!e.currentTarget.contains(e.target)) return;
     let t = (0, o.r3)(e.target),
       n = (0, s.vY)(t);
     if (!u.current.isFocusWithin && n === (0, s.NI)(e.nativeEvent)) {
-      l && l(e), c && c(true), u.current.isFocusWithin = true, p(e);
+      l && l(e), c && c(true), u.current.isFocusWithin = true, _(e);
       let n = e.currentTarget;
       d(t, "focus", e => {
         if (u.current.isFocusWithin && !(0, s.bE)(n, e.target)) {
           let i = new t.defaultView.FocusEvent("blur", {
             relatedTarget: e.target
           });
-          (0, r.nh)(i, n), _((0, r.yA)(i))
+          (0, r.nh)(i, n), p((0, r.yA)(i))
         }
       }, {
         capture: true
       })
     }
-  }, [l, c, p, d, _]);
+  }, [l, c, _, d, p]);
   return t ? {
     focusWithinProps: {
       onFocus: true,
@@ -49,8 +49,8 @@ function l(e) {
     }
   } : {
     focusWithinProps: {
-      onFocus: h,
-      onBlur: _
+      onFocus: m,
+      onBlur: p
     }
   }
 }

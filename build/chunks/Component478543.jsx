@@ -30,11 +30,11 @@ function O(e) {
   let {
     url: t
   } = e, [n, a] = i.useState(false), s = i.useRef(true), l = i.useCallback(() => {
-    n || (0, _.JG)(t, () => {
+    n || (0, p.JG)(t, () => {
       a(true), s.current = setTimeout(() => a(false), 2e3)
     })
   }, [t, n]);
-  return i.useEffect(() => () => clearTimeout(s.current), []), _.wS ? (0, r.jsxs)(c.P3F, {
+  return i.useEffect(() => () => clearTimeout(s.current), []), p.wS ? (0, r.jsxs)(c.P3F, {
     className: o()(b.copyLink, n ? b.copied : null),
     onClick: l,
     children: [(0, r.jsx)(c.xPt, {
@@ -60,7 +60,7 @@ function v() {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     subHead: t,
     buildDetails: n,
@@ -92,7 +92,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   let t, n, r, {
       currentOverrides: i,
       linkMeta: a,
@@ -101,14 +101,14 @@ function T(e) {
       submitting: c
     } = e,
     f = ["discord_web"];
-  h.isPlatformEmbedded || f.push("discord_marketing", "discord_developers");
-  let _ = (0, m.Z)(a, f);
-  if (!_.valid) return S(_.reason);
+  m.isPlatformEmbedded || f.push("discord_marketing", "discord_developers");
+  let p = (0, h.Z)(a, f);
+  if (!p.valid) return T(p.reason);
   l()(null != a, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
   let {
-    discord_web: p,
+    discord_web: _,
     discord_developers: g
-  } = a.targetBuildOverride, b = null != p ? p : g;
+  } = a.targetBuildOverride, b = null != _ ? _ : g;
   l()(null != b, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), y(b, i) ? (n = E.intl.string(E.t.tX4xrt), t = s, r = "critical-primary") : (n = E.intl.string(E.t.nOunHC), t = o, r = "primary");
   let O = () => {
     d.Z.isConnected() ? u.Z.show({
@@ -120,7 +120,7 @@ function T(e) {
       confirmVariant: "critical-primary"
     }) : t()
   };
-  return I({
+  return S({
     subHead: E.intl.string(E.t.RCYGot),
     buildDetails: b.id,
     buttonClick: O,
@@ -130,8 +130,8 @@ function T(e) {
   })
 }
 
-function S(e) {
-  return I({
+function T(e) {
+  return S({
     subHead: E.intl.string(E.t.ODXApH),
     variant: "secondary",
     buttonText: "Invalid",
@@ -151,7 +151,7 @@ function A(e, t, n) {
       }) : E.intl.string(E.t.Wj3LW4)
     }), (0, r.jsx)(c.Anchor, {
       className: b.infoLink,
-      href: p.Z.getArticleURL(g.BhN.BUILD_OVERRIDE_EMBED),
+      href: _.Z.getArticleURL(g.BhN.BUILD_OVERRIDE_EMBED),
       target: "_blank",
       children: (0, r.jsx)(c.d3s, {
         size: "xs",
@@ -173,7 +173,7 @@ let C = e => {
     clearBuildOverride: l
   } = e, [c, u] = i.useState(false), d = i.useCallback(() => {
     c || (u(true), s().catch(() => u(false)))
-  }, [s, c]), _ = i.useCallback(() => {
+  }, [s, c]), p = i.useCallback(() => {
     c || (u(true), l().catch(() => u(false)))
   }, [l, c]);
   return (0, r.jsxs)("div", {
@@ -182,11 +182,11 @@ let C = e => {
       className: b.content,
       children: [(0, r.jsx)(f.Z, {
         className: b.icon
-      }), t ? v() : T({
+      }), t ? v() : I({
         currentOverrides: n,
         linkMeta: a,
         applyBuildOverride: d,
-        clearBuildOverride: _,
+        clearBuildOverride: p,
         submitting: c
       })]
     })]

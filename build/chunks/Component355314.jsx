@@ -2,7 +2,7 @@
 /** chunk id: 355314, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -61,55 +61,55 @@ function v(e, t) {
   return i
 }
 
-function I(e) {
+function S(e) {
   var {
     onClose: t,
     handleLearnMore: n
   } = e, b = O(e, ["onClose", "handleLearnMore"]);
   let v = (0, a.e7)([c.default], () => c.default.getCurrentUser()),
-    I = (0, a.e7)([s.Z], () => s.Z.theme),
-    T = (0, a.e7)([l.Z], () => l.Z.getGuildId()),
-    S = I === m.BRd.LIGHT ? "light" : "dark",
+    S = (0, a.e7)([s.Z], () => s.Z.theme),
+    I = (0, a.e7)([l.Z], () => l.Z.getGuildId()),
+    T = S === h.BRd.LIGHT ? "light" : "dark",
     A = (0, r.jsx)("img", {
       className: E.art,
       alt: "File Upload Nitro Perk",
-      src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(S, "_v2.png")
+      src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(T, "_v2.png")
     }),
     C = i.useMemo(() => {
-      let e = _.ZP.getUserMaxFileSize(v);
+      let e = p.ZP.getUserMaxFileSize(v);
       return (0, u.BU)(e / 1024, {
         useKibibytes: true
       })
     }, [v]),
     N = (0, d.iL)({
-      guildId: T,
+      guildId: I,
       onClick: () => {
-        window.open(f.Z.getArticleURL(m.BhN.NITRO_FAQ), "_blank")
+        window.open(f.Z.getArticleURL(h.BhN.NITRO_FAQ), "_blank")
       }
     }),
-    R = (0, r.jsx)("div", {
+    P = (0, r.jsx)("div", {
       className: E.body,
       children: (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         children: N
       })
     });
-  return (0, r.jsx)(p.Z, y({
+  return (0, r.jsx)(_.Z, y({
     artElement: A,
     artContainerClassName: E.artContainer,
     enableArtBoxShadow: false,
-    type: h.cd.UPLOAD_ERROR_UPSELL,
+    type: m.cd.UPLOAD_ERROR_UPSELL,
     title: g.intl.string(g.t["9C+41g"]),
-    body: R,
+    body: P,
     context: g.intl.formatToPlainString(g.t.q5fTZp, {
       maxSize: C
     }),
     glowUp: N,
     analyticsLocation: {
-      section: m.jXE.FILE_UPLOAD_POPOUT
+      section: h.jXE.FILE_UPLOAD_POPOUT
     },
     onClose: t,
-    subscriptionTier: h.Si.TIER_2,
+    subscriptionTier: m.Si.TIER_2,
     secondaryCTA: g.intl.string(g.t.ZnqyZ2),
     onSecondaryClick: n,
     showEnhancedUpsell: true

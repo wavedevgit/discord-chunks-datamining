@@ -2,7 +2,7 @@
 /** chunk id: 787304, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => p
+  f: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,14 +16,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk777207 = require("./777207.jsx"),
   Chunk238584 = require("./238584.js");
 
-function p(e) {
+function _(e) {
   let {
     value: t,
     onChange: n,
     minValue: a,
-    maxValue: p,
-    disabled: h = false,
-    readOnly: m = false,
+    maxValue: _,
+    disabled: m = false,
+    readOnly: h = false,
     className: g,
     "aria-label": E
   } = e, {
@@ -37,15 +37,15 @@ function p(e) {
     onFocusChange: O,
     onChange: n,
     minValue: a,
-    maxValue: p,
-    isDisabled: h,
-    isReadOnly: m,
+    maxValue: _,
+    isDisabled: m,
+    isReadOnly: h,
     "aria-label": E,
     "data-mana-component": "calendar",
-    className: o()(_.calendar, g),
+    className: o()(p.calendar, g),
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("header", {
-        className: _.calendarHeader,
+        className: p.calendarHeader,
         children: [(0, r.jsx)(c.h, {
           variant: "icon-only",
           size: "sm",
@@ -66,11 +66,11 @@ function p(e) {
           slot: "next"
         })]
       }), (0, r.jsxs)(s.TK, {
-        className: _.calendarGrid,
+        className: p.calendarGrid,
         weekdayStyle: "short",
         children: [(0, r.jsx)(s.pg, {
           children: e => (0, r.jsx)(s.mc, {
-            className: _.headerCell,
+            className: p.headerCell,
             children: (0, r.jsx)(f.x, {
               variant: "text-sm/normal",
               color: "text-muted",
@@ -80,7 +80,7 @@ function p(e) {
         }), (0, r.jsx)(s.MU, {
           children: e => (0, r.jsx)(s.VX, {
             date: e,
-            className: _.cell,
+            className: p.cell,
             children: e => {
               let {
                 formattedDate: t

@@ -27,35 +27,35 @@ function g(e) {
     transitionState: y,
     skuId: O,
     appId: v,
-    onHeaderTitleClick: I
-  } = e, T = (0, a.e7)([l.Z], () => l.Z.getForSKU(O), [O]), S = (0, a.e7)([s.Z], () => s.Z.get(O), [O]), A = (0, d.M)(O);
-  if (null == S) return null;
-  let C = null != (n = S.name) ? n : "",
-    N = null != (g = null == T || null == (t = T.description) ? true : t.trim()) ? g : true,
-    R = (null == T ? true : T.headerBackground) != null && null != (E = u.Z.toURLSafe((0, c._W)(v, T.headerBackground, 256))) ? E : true,
-    P = S.type === h.epS.DURABLE && A,
-    D = S.type === h.epS.DURABLE ? P ? m.intl.string(m.t.bm82mm) : m.intl.string(m.t["6gprwf"]) : true,
+    onHeaderTitleClick: S
+  } = e, I = (0, a.e7)([l.Z], () => l.Z.getForSKU(O), [O]), T = (0, a.e7)([s.Z], () => s.Z.get(O), [O]), A = (0, d.M)(O);
+  if (null == T) return null;
+  let C = null != (n = T.name) ? n : "",
+    N = null != (g = null == I || null == (t = I.description) ? true : t.trim()) ? g : true,
+    P = (null == I ? true : I.headerBackground) != null && null != (E = u.Z.toURLSafe((0, c._W)(v, I.headerBackground, 256))) ? E : true,
+    R = T.type === m.epS.DURABLE && A,
+    w = T.type === m.epS.DURABLE ? R ? h.intl.string(h.t.bm82mm) : h.intl.string(h.t["6gprwf"]) : true,
     {
-      price: w
-    } = S;
-  return null == w ? null : (0, r.jsx)(f.A, {
+      price: D
+    } = T;
+  return null == D ? null : (0, r.jsx)(f.A, {
     appId: v,
-    skuId: S.id,
+    skuId: T.id,
     transitionState: y,
-    onHeaderTitleClick: null != I ? I : b,
+    onHeaderTitleClick: null != S ? S : b,
     onClose: b,
-    footer: (0, r.jsx)(_.YG, {
+    footer: (0, r.jsx)(p.YG, {
       appId: v,
-      sku: S
+      sku: T
     }),
-    children: (0, r.jsx)(p.i, {
+    children: (0, r.jsx)(_.i, {
       appId: v,
-      skuId: S.id,
+      skuId: T.id,
       title: C,
       description: N,
-      imgSrc: R,
-      tag: null != D ? (0, r.jsx)(i.V, {
-        text: D
+      imgSrc: P,
+      tag: null != w ? (0, r.jsx)(i.V, {
+        text: w
       }) : true,
       FallbackIcon: o.Prq
     })

@@ -4,10 +4,10 @@
 require.d(exports, {
   $q: () => f,
   F6: () => d,
-  HI: () => p,
-  ZL: () => h,
+  HI: () => _,
+  ZL: () => m,
   eW: () => g,
-  p9: () => _
+  p9: () => p
 });
 var Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -29,10 +29,10 @@ function d(e) {
   })
 }
 let f = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
-  _ = () => {
+  p = () => {
     (0, Chunk266454.Q3)(Chunk704215.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
   },
-  p = e => {
+  _ = e => {
     let {
       trialOffer: t
     } = e;
@@ -43,13 +43,13 @@ let f = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE
       a = new Date >= i;
     return n && r && a
   },
-  h = () => {
+  m = () => {
     (0, Chunk266454.Q3)(Chunk704215.z.REFERRAL_PROGRAM_POPOVER)
   },
-  m = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_POPOVER),
+  h = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_POPOVER),
   g = () => {
     let e = (0, Chunk533525.b)(false),
-      t = m(),
+      t = h(),
       n = (0, Chunk442837.e7)([Chunk276444.Z], () => Chunk276444.Z.getReferralsRemaining());
     return module && false === exports && null !== require && require > 0
   }

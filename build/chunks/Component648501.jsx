@@ -78,9 +78,9 @@ function N(e) {
     color: "text-muted",
     children: (0, o.NGo)(Y)
   });
-  let X = null != (t = null == w ? true : w.length) ? t : 0;
+  let Q = null != (t = null == w ? true : w.length) ? t : 0;
   return null != T && T && z ? (0, r.jsx)(x.Z, {
-    userCount: X,
+    userCount: Q,
     video: H || W,
     channel: n
   }) : Z && (0, _.a)(w) && q ? (0, r.jsx)(o.IGR, {

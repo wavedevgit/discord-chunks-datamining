@@ -42,23 +42,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk853392 = require("./853392.js");
 
-function B(e) {
+function Z(e) {
   var t, n, a;
   let l, {
       application: d,
-      channelId: I,
-      guildId: D,
-      message: L
+      channelId: S,
+      guildId: w,
+      message: x
     } = e,
     {
-      analyticsLocations: B
-    } = (0, g.ZP)(m.Z.ACTIVITY_INSTANCE_EMBED),
+      analyticsLocations: Z
+    } = (0, g.ZP)(h.Z.ACTIVITY_INSTANCE_EMBED),
     F = (0, u.O)(),
-    V = (0, s.e7)([A.Z], () => A.Z.getChannel(I), [I]),
-    H = (null == V || null == (t = V.isThread) ? true : t.call(V)) ? null == V ? true : V.parent_id : I,
-    W = (0, s.e7)([S.default], () => S.default.getId()),
+    V = (0, s.e7)([A.Z], () => A.Z.getChannel(S), [S]),
+    H = (null == V || null == (t = V.isThread) ? true : t.call(V)) ? null == V ? true : V.parent_id : S,
+    Y = (0, s.e7)([T.default], () => T.default.getId()),
     {
-      embeddedActivity: Y,
+      embeddedActivity: W,
       currentEmbeddedActivity: K,
       activityLaunchState: z
     } = (0, s.cj)([f.ZP], () => ({
@@ -66,9 +66,9 @@ function B(e) {
       currentEmbeddedActivity: f.ZP.getCurrentEmbeddedActivity(),
       activityLaunchState: f.ZP.getLaunchState(d.id, null != H ? H : true)
     }), [H, d.id]),
-    q = null == Y ? true : Y.userIds,
-    X = (0, s.Wu)([N.default], () => Array.from(null != q ? q : []).map(e => N.default.getUser(e)).filter(w.lm), [q]),
-    Q = (0, s.e7)([C.Z], () => {
+    q = null == W ? true : W.userIds,
+    Q = (0, s.Wu)([N.default], () => Array.from(null != q ? q : []).map(e => N.default.getUser(e)).filter(D.lm), [q]),
+    X = (0, s.e7)([C.Z], () => {
       if (null == q) return null;
       for (let e of q) {
         let t = C.Z.findActivity(e, e => e.application_id === d.id);
@@ -76,19 +76,19 @@ function B(e) {
       }
       return null
     }, [d.id, q]),
-    J = null == Q ? true : Q.details,
+    J = null == X ? true : X.details,
     $ = i.useMemo(() => {
-      let e = new T.ZP(d);
-      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.wT), e
+      let e = new I.ZP(d);
+      return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = M.wT), e
     }, [d]),
-    ee = (0, h.s5)({
-      userId: W,
-      channelId: I,
+    ee = (0, m.s5)({
+      userId: Y,
+      channelId: S,
       application: $
     }),
-    et = null == Y,
-    en = (0, x.NL)({
-      embeddedActivity: Y,
+    et = null == W,
+    en = (0, L.NL)({
+      embeddedActivity: W,
       joinability: ee,
       currentEmbeddedActivity: K,
       channel: V
@@ -96,43 +96,43 @@ function B(e) {
     er = i.useId(),
     ei = null != z && z.isLaunching && z.componentId === er,
     ea = async () => {
-      R.default.track(M.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+      P.default.track(j.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
-        channel_id: I,
+        channel_id: S,
         channel_type: null == V ? true : V.type,
         is_activity_start: et,
         cta: "Play"
-      }), et ? await (0, p.Z)({
+      }), et ? await (0, _.Z)({
         targetApplicationId: d.id,
-        channelId: I,
+        channelId: S,
         locationObject: F.location,
-        analyticsLocations: B,
+        analyticsLocations: Z,
         componentId: er,
         commandOrigin: E.bB.ACTIVITY_INSTANCE_EMBED
-      }) : await (0, _.Z)({
-        applicationId: Y.applicationId,
-        activityChannelId: I,
+      }) : await (0, p.Z)({
+        applicationId: W.applicationId,
+        activityChannelId: S,
         locationObject: F.location,
-        analyticsLocations: B,
+        analyticsLocations: Z,
         componentId: er
       })
     }, eo = en.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), es = (0, v.G)($, () => {
-      R.default.track(M.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+      P.default.track(j.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
-        channel_id: I,
+        channel_id: S,
         channel_type: null == V ? true : V.type,
         cta: "View"
       })
-    }), el = P.ZP.getApplicationIconURL({
+    }), el = R.ZP.getApplicationIconURL({
       id: d.id,
       icon: d.icon,
       bot: d.bot
     });
   en.disabled && (l = en.tooltip);
-  let ec = X.length,
-    eu = null != (a = null == Q || null == (n = Q.timestamps) ? true : n.start) ? a : null == Q ? true : Q.created_at,
+  let ec = Q.length,
+    eu = null != (a = null == X || null == (n = X.timestamps) ? true : n.start) ? a : null == X ? true : X.created_at,
     ed = (0, y.r)({
-      activity: Q,
+      activity: X,
       activityUsersCount: ec
     }),
     ef = [{
@@ -167,7 +167,7 @@ function B(e) {
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
               color: "none",
-              children: (0, r.jsx)(Z, {
+              children: (0, r.jsx)(B, {
                 start: eu
               })
             })]
@@ -186,8 +186,8 @@ function B(e) {
             })]
           })]
         }), ec > 0 && (0, r.jsx)(y.K, {
-          activityUsers: X,
-          guildId: D,
+          activityUsers: Q,
+          guildId: w,
           activityText: ed.text
         })]
       })
@@ -196,24 +196,24 @@ function B(e) {
     onClickContent: es,
     trackingConfig: {
       id: d.id,
-      linkType: j.U.ACTIVITY_INSTANCE,
-      guildId: D,
-      channelId: I,
-      messageId: L.id,
+      linkType: k.U.ACTIVITY_INSTANCE,
+      guildId: w,
+      channelId: S,
+      messageId: x.id,
       isDeadEnd: et
     }
   })
 }
-let Z = Chunk473749.memo(e => {
+let B = Chunk473749.memo(e => {
   let {
     start: t
-  } = e, [n, r] = i.useState(0), a = (0, L.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
+  } = e, [n, r] = i.useState(0), a = (0, x.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
   return i.useEffect(() => {
     let e = new l.Xp;
-    return e.start(c ? 15 * D.Z.Millis.SECOND : D.Z.Millis.SECOND, () => {
-      r((new Date().getTime() - t) / D.Z.Millis.SECOND)
+    return e.start(c ? 15 * w.Z.Millis.SECOND : w.Z.Millis.SECOND, () => {
+      r((new Date().getTime() - t) / w.Z.Millis.SECOND)
     }), () => e.stop()
-  }, [c, t]), (0, I.m)(n)
+  }, [c, t]), (0, S.m)(n)
 });
-Z.displayName = "ActivityRuntimeCounter";
-let F = Chunk473749.memo(B)
+B.displayName = "ActivityRuntimeCounter";
+let F = Chunk473749.memo(Z)

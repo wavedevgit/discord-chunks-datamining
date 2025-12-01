@@ -15,7 +15,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk575209 = require("./575209.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -123,13 +123,13 @@ class y extends(r = Chunk473749.PureComponent) {
       onSelectSearchEverywhere: o,
       onHighlightQuery: c,
       hideQuery: u,
-      searchFavorites: _,
-      showDMQueryText: h
+      searchFavorites: p,
+      showDMQueryText: m
     } = this.props;
     if (e || u) return null;
     let E = false === r;
     return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsxs)(l.P3F, m(p({
+      children: [(0, i.jsxs)(l.P3F, h(_({
         className: s()(f.queryContainer, {
           [f.focused]: E
         })
@@ -138,8 +138,8 @@ class y extends(r = Chunk473749.PureComponent) {
         onClick: a,
         children: [(0, i.jsx)(g, {
           query: t,
-          searchFavorites: _,
-          showDMQueryText: h
+          searchFavorites: p,
+          showDMQueryText: m
         }), (0, i.jsx)("div", {
           className: f.queryShortcut,
           "aria-hidden": true,
@@ -149,7 +149,7 @@ class y extends(r = Chunk473749.PureComponent) {
             className: f.keyCombo
           })
         })]
-      })), _ && (0, i.jsxs)(l.P3F, m(p({
+      })), p && (0, i.jsxs)(l.P3F, h(_({
         className: s()(f.queryContainer, {
           [f.focused]: E
         })
@@ -204,7 +204,7 @@ class y extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "renderSearchInSelectedChannelAutocomplete", () => {
+    super(...e), p(this, "renderSearchInSelectedChannelAutocomplete", () => {
       let {
         navId: e,
         channel: t,
@@ -215,7 +215,7 @@ class y extends(r = Chunk473749.PureComponent) {
       if (!n || null == t) return null;
       let o = false === r,
         s = (0, c.X3)(t),
-        _ = (0, i.jsx)(u.ZP, {
+        p = (0, i.jsx)(u.ZP, {
           channel: t,
           text: d.intl.formatToPlainString(d.t.LDpotA, {
             guildName: s
@@ -223,7 +223,7 @@ class y extends(r = Chunk473749.PureComponent) {
           channelContainerClassName: f.channelContainer,
           textContainerClassName: f.searchResultNameContainer
         });
-      return (0, i.jsx)(l.P3F, m(p({}, b(e, false, o)), {
+      return (0, i.jsx)(l.P3F, h(_({}, b(e, false, o)), {
         className: f.inChannelOptionContainer,
         onClick: a,
         children: (0, i.jsx)(l.Text, {
@@ -231,14 +231,14 @@ class y extends(r = Chunk473749.PureComponent) {
           color: "interactive-normal",
           className: f.inChannelOption,
           children: d.intl.format(d.t.LDpotA, {
-            guildName: _
+            guildName: p
           })
         })
       }))
     })
   }
 }
-_(y, "defaultProps", {
+p(y, "defaultProps", {
   renderInitialState: () => null,
   hideQuery: false
 });

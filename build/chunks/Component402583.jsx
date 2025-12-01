@@ -23,12 +23,12 @@ function g() {
   let e = (0, Chunk915009.LN)(),
     t = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.USAGE_STATISTICS)),
     n = Chunk473749.useCallback(e => {
-      e ? (0, o.g)([p.pjP.USAGE_STATISTICS], []).catch(f.S) : (0, f.V)({
-        header: h.intl.string(h.t.OdPCbN),
-        body: h.intl.string(h.t.MGWabA),
-        confirmText: h.intl.string(h.t["D3+rU4"]),
-        cancelText: h.intl.string(h.t.kYpG0u),
-        onConfirm: () => (0, o.g)([], [p.pjP.USAGE_STATISTICS]).catch(f.S)
+      e ? (0, o.g)([_.pjP.USAGE_STATISTICS], []).catch(f.S) : (0, f.V)({
+        header: m.intl.string(m.t.OdPCbN),
+        body: m.intl.string(m.t.MGWabA),
+        confirmText: m.intl.string(m.t["D3+rU4"]),
+        cancelText: m.intl.string(m.t.kYpG0u),
+        onConfirm: () => (0, o.g)([], [_.pjP.USAGE_STATISTICS]).catch(f.S)
       })
     }, []);
   return (0, Chunk54381.jsx)(Chunk838436.U, {

@@ -2,7 +2,7 @@
 /** chunk id: 857749, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => _
+  A: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -66,7 +66,7 @@ function f(e, t) {
   return i
 }
 
-function _(e) {
+function p(e) {
   var {
     shouldAnimate: t = "respect-motion-settings"
   } = e, n = d(e, ["shouldAnimate"]);

@@ -2,7 +2,7 @@
 /** chunk id: 947707, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -86,7 +86,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   var {
     tooltipText: t
   } = e, n = u(e, ["tooltipText"]);
@@ -97,6 +97,6 @@ function _(e) {
   })
 }
 
-function p(e) {
-  return "tooltipText" in e && null != e.tooltipText ? (0, r.jsx)(_, c({}, e)) : (0, r.jsx)(f, c({}, e))
+function _(e) {
+  return "tooltipText" in e && null != e.tooltipText ? (0, r.jsx)(p, c({}, e)) : (0, r.jsx)(f, c({}, e))
 }

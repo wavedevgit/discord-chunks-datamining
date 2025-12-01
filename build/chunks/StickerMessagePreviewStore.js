@@ -2,7 +2,7 @@
 /** chunk id: 913663, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -39,13 +39,13 @@ function d(e) {
 function f() {
   l = {}, c = {}
 }
-class _ extends(r = Chunk442837.ZP.Store) {
+class p extends(r = Chunk442837.ZP.Store) {
   getStickerPreview(e, t) {
     return (t === o.d.FirstThreadMessage ? c : l)[e]
   }
 }
-s(_, "displayName", "StickerMessagePreviewStore");
-let p = new _(Chunk570140.Z, {
+s(p, "displayName", "StickerMessagePreviewStore");
+let _ = new p(Chunk570140.Z, {
   ADD_STICKER_PREVIEW: u,
   CLEAR_STICKER_PREVIEW: d,
   LOGOUT: f

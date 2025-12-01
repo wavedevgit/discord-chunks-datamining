@@ -2,7 +2,7 @@
 /** chunk id: 703767, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./539854.js"), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk579806 = require("./579806.js");
@@ -47,7 +47,7 @@ function f() {
   })));
   Chunk998502.ZP.setChromiumSwitches(module)
 }
-class _ extends Chunk147913.Z {
+class p extends Chunk147913.Z {
   constructor(...e) {
     super(...e), o(this, "actions", {
       POST_CONNECTION_OPEN: async () => {
@@ -64,4 +64,4 @@ class _ extends Chunk147913.Z {
     })
   }
 }
-let p = new _
+let _ = new p

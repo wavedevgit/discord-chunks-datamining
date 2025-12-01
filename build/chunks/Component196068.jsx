@@ -26,20 +26,20 @@ var Chunk54381 = require("./54381.js"),
 let v = e => {
   let {
     dismissibleContent: t
-  } = e, n = (0, c.a0)(), v = (0, a.e7)([_.default], () => h.ZP.isPremiumExactly(_.default.getCurrentUser(), b.PremiumTypes.TIER_2)), {
-    enabled: I
+  } = e, n = (0, c.a0)(), v = (0, a.e7)([p.default], () => m.ZP.isPremiumExactly(p.default.getCurrentUser(), b.PremiumTypes.TIER_2)), {
+    enabled: S
   } = l.g.useExperiment({
     location: "OutboundPromotionNotice"
   }, {
     autoTrackExposure: false,
     disable: v
-  }), T = i.useCallback(() => {
-    p.default.track(E.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, f.openUserSettings)(d.n.GIFT_PANEL, {
+  }), I = i.useCallback(() => {
+    _.default.track(E.rMx.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, f.openUserSettings)(d.n.GIFT_PANEL, {
       section: E.oAB.INVENTORY
     }), u.ZP.dismissOutboundPromotionNotice()
   }, []);
   if (null == n) return null;
-  let S = e => (0, r.jsxs)(s.qXd, {
+  let T = e => (0, r.jsxs)(s.qXd, {
     color: s.DM8.PREMIUM_TIER_2,
     children: [(0, r.jsx)(s.RyX, {
       noticeType: E.kVF.OUTBOUND_PROMOTION,
@@ -50,15 +50,15 @@ let v = e => {
       size: "md",
       color: "currentColor",
       className: O.premiumIcon
-    }), I ? y.intl.string(y.t["5JMiOo"]) : y.intl.string(y.t["Pzh+G2"]), (0, r.jsx)(s.NoS, {
+    }), S ? y.intl.string(y.t["5JMiOo"]) : y.intl.string(y.t["Pzh+G2"]), (0, r.jsx)(s.NoS, {
       noticeType: E.kVF.OUTBOUND_PROMOTION,
       onClick: () => {
-        T(), null !== e && e(g.L.TAKE_ACTION)
+        I(), null !== e && e(g.L.TAKE_ACTION)
       },
       children: y.intl.string(y.t.jVcuVY)
     })]
   });
-  return (0, r.jsx)(m.O1, {
+  return (0, r.jsx)(h.O1, {
     contentType: t,
     newSnowflakeId: n,
     timeRecurringConfig: {
@@ -71,7 +71,7 @@ let v = e => {
         visibleContent: t,
         markAsDismissed: n
       } = e;
-      if (t === o.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return S(n)
+      if (t === o.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return T(n)
     }
   })
 }

@@ -22,11 +22,11 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = new Chunk579092.Yd("KkvStore"),
-  _ = Symbol("version"),
-  p = Symbol("boxedPartition"),
-  h = Object.freeze({}),
-  m = Object.freeze({
-    current: h,
+  p = Symbol("version"),
+  _ = Symbol("boxedPartition"),
+  m = Object.freeze({}),
+  h = Object.freeze({
+    current: m,
     length: 0,
     version: false
   }),
@@ -45,8 +45,8 @@ function E(e, t) {
 }
 class b extends Chunk442837.yh {
   _derivedVersion(e) {
-    let t = e[_];
-    return null == t && (e[_] = t = this.nextVersion++), t
+    let t = e[p];
+    return null == t && (e[p] = t = this.nextVersion++), t
   }
   mapPartitions(e) {
     let t = [],
@@ -146,22 +146,22 @@ class b extends Chunk442837.yh {
   }
   getPartition(e) {
     let t = this.state.root[e];
-    return null != t ? t.root : h
+    return null != t ? t.root : m
   }
   getPartitionKeys() {
     return Object.keys(this.state.root)
   }
   getBoxedPartition(e) {
     let t = this.state.root[e];
-    if (null == t) return m;
+    if (null == t) return h;
     let {
       root: n,
       derived: {
         memoized: r,
         length: i
       }
-    } = t, a = r[p];
-    return null == a && (r[p] = a = {
+    } = t, a = r[_];
+    return null == a && (r[_] = a = {
       current: n,
       version: this._derivedVersion(r),
       length: i

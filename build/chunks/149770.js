@@ -2,7 +2,7 @@
 /** chunk id: 149770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk287734 = require("./287734.js"),
@@ -22,7 +22,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class _ extends Chunk147913.Z {
+class p extends Chunk147913.Z {
   handleGuildCreate(e) {
     let {
       guild: t
@@ -56,4 +56,4 @@ class _ extends Chunk147913.Z {
     })
   }
 }
-let p = new _
+let _ = new p

@@ -2,7 +2,7 @@
 /** chunk id: 341561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -34,7 +34,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,13 +46,13 @@ function I(e) {
   }
   return e
 }
-let T = 8,
-  S = 4,
+let I = 8,
+  T = 4,
   A = 4,
   C = 40,
   N = 6;
 
-function R(e, t) {
+function P(e, t) {
   return (0, r.jsx)(f.Z, {
     sticker: e,
     isInteracting: t,
@@ -60,16 +60,16 @@ function R(e, t) {
   })
 }
 
-function P(e) {
+function R(e) {
   return "".concat(E.Iv).concat(e.name).concat(E.Iv)
 }
 
-function D(e) {
+function w(e) {
   var t;
   let n = e.animated ? "a" : "";
   return e.managed || null == e.id ? "".concat(E.Iv).concat(e.name).concat(E.Iv) : "<".concat(n, ":").concat(null != (t = e.originalName) ? t : e.name, ":").concat(e.id, ">")
 }
-let w = {
+let D = {
   sentinel: Chunk761652.Iv,
   stores: [Chunk926491.Z],
   matches: (e, t, n, r, i) => n.length > 1,
@@ -83,7 +83,7 @@ let w = {
         emojis: {
           unlocked: d
         }
-      } = h.ZP.queryEmojiResults({
+      } = m.ZP.queryEmojiResults({
         query: n,
         channel: e,
         intention: r.emojiIntention,
@@ -99,27 +99,27 @@ let w = {
     let f = [];
     if (r.allowStickers) {
       (0, c.$p)();
-      let t = h.ZP.queryStickers([n], true, [e, (e, t) => t === l.eb.SENDABLE]),
-        r = Math.max(S, T - d.length);
+      let t = m.ZP.queryStickers([n], true, [e, (e, t) => t === l.eb.SENDABLE]),
+        r = Math.max(T, I - d.length);
       f = t.slice(0, r), "-" === n[0] && (f = t.filter(e => e.sticker.name === n))
     }
-    let _ = [];
-    a && (_ = h.ZP.querySoundmoji(n, e).map(e => ({
+    let p = [];
+    a && (p = m.ZP.querySoundmoji(n, e).map(e => ({
       sound: e
-    })).slice(0, A), "-" === n[0] && (_ = _.filter(e => e.sound.name === n)));
-    let p = d.slice(0, Math.max(N, u - f.length - _.length));
+    })).slice(0, A), "-" === n[0] && (p = p.filter(e => e.sound.name === n)));
+    let _ = d.slice(0, Math.max(N, u - f.length - p.length));
     return {
       results: {
-        emojis: p,
+        emojis: _,
         emojisLocked: [],
         stickers: f,
-        soundmoji: _
+        soundmoji: p
       },
       metadata: {
-        numEmojiResults: p.length,
+        numEmojiResults: _.length,
         numLockedEmojiResults: 0,
         numStickerResults: f.length,
-        numSoundmojiResults: _.length
+        numSoundmojiResults: p.length
       }
     }
   },
@@ -135,16 +135,16 @@ let w = {
       query: u,
       onHover: d,
       onClick: f
-    } = e, p = () => {
+    } = e, _ = () => {
       (0, i.ZD)(async () => {
         let {
           default: e
         } = await n.e("63227").then(n.bind(n, 428263));
-        return t => (0, r.jsx)(e, I({}, t))
+        return t => (0, r.jsx)(e, S({}, t))
       })
-    }, h = t.length > 0 || l.length > 0, g = o.length > 0;
+    }, m = t.length > 0 || l.length > 0, g = o.length > 0;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, m.HI)({
+      children: [(0, h.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: t,
@@ -157,16 +157,16 @@ let w = {
           emoji: e,
           key: e.id || e.uniqueName || e.name,
           sentinel: E.Iv,
-          guild: null != e.guildId ? _.Z.getGuild(e.guildId) : null
+          guild: null != e.guildId ? p.Z.getGuild(e.guildId) : null
         }),
         getQuery: e => "".concat(E.Iv).concat(e),
         key: "emoji"
-      }), l.length > 0 ? (0, m.HI)({
+      }), l.length > 0 ? (0, h.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: l,
         onHover: d,
-        onClick: p,
+        onClick: _,
         titleWithQuery: 0 === t.length ? y.t.ksAVYt : null,
         titleWithoutQuery: 0 === t.length ? y.intl.string(y.t.sMOuuS) : null,
         Component: a.ZP.EmojiUpsell,
@@ -182,9 +182,9 @@ let w = {
         getQuery: e => "".concat(E.Iv).concat(e),
         key: "emoji-upsell",
         indexOffset: t.length
-      }) : null, h && g && (0, r.jsx)(a.ZP.Divider, {
+      }) : null, m && g && (0, r.jsx)(a.ZP.Divider, {
         className: O.divider
-      }), (0, m.HI)({
+      }), (0, h.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: o,
@@ -199,7 +199,7 @@ let w = {
             sticker: n
           } = e;
           return {
-            renderSticker: R,
+            renderSticker: P,
             queryMatch: t !== n.name.toLocaleLowerCase() ? t : true,
             sticker: n,
             key: n.id
@@ -208,10 +208,10 @@ let w = {
         getQuery: e => e,
         key: "stickers",
         indexOffset: t.length + l.length,
-        headerClassName: h ? O.secondarySection : true
-      }), (h || g) && s.length > 0 && (0, r.jsx)(a.ZP.Divider, {
+        headerClassName: m ? O.secondarySection : true
+      }), (m || g) && s.length > 0 && (0, r.jsx)(a.ZP.Divider, {
         className: O.divider
-      }), (0, m.HI)({
+      }), (0, h.HI)({
         query: u,
         selectedIndex: c,
         autocompletes: s,
@@ -232,7 +232,7 @@ let w = {
         getQuery: e => e,
         key: "soundmoji",
         indexOffset: t.length + l.length + o.length,
-        headerClassName: h || g ? O.secondarySection : true
+        headerClassName: m || g ? O.secondarySection : true
       })]
     })
   },
@@ -250,7 +250,7 @@ let w = {
     } = e;
     if (a < t.length) {
       let e = t[a];
-      return o.insertText(P(e), D(e)), {
+      return o.insertText(R(e), w(e)), {
         type: g.z2.EMOJI,
         metadata: {
           emojiId: e.id,
@@ -278,7 +278,7 @@ let w = {
     }
     if ((a -= i.length) < r.length) {
       let e = r[a];
-      return o.insertText((0, s.Z)(e.sound.guildId, e.sound.soundId)), p.default.track(b.rMx.SOUNDMOJI_SELECT, {
+      return o.insertText((0, s.Z)(e.sound.guildId, e.sound.soundId)), _.default.track(b.rMx.SOUNDMOJI_SELECT, {
         channel_id: l.id,
         guild_id: l.guild_id,
         sound_guild_id: e.sound.guildId,

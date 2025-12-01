@@ -2,7 +2,7 @@
 /** chunk id: 749302, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js"),
   Chunk450779 = require("./450779.js");
-let _ = [];
+let p = [];
 
-function p(e, t) {
+function _(e, t) {
   let n = (0, s.Z)(e, t);
   return i.useMemo(() => {
     let e = new Map;
@@ -26,7 +26,7 @@ function p(e, t) {
   }, [n])
 }
 
-function h(e) {
+function m(e) {
   let {
     application: t
   } = e;
@@ -41,13 +41,13 @@ function h(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     menuItemId: t,
     user: n,
     label: s,
     gameRelationships: f,
-    onClick: m,
+    onClick: h,
     color: g
   } = e, {
     id: E,
@@ -55,12 +55,12 @@ function m(e) {
   } = n, y = (0, a.e7)([u.default], () => {
     var e;
     return (null == (e = u.default.getCurrentUser()) ? true : e.id) === E
-  }) || b, O = y ? _ : f, [v, I] = i.useState(false), T = i.useCallback(() => I(true), []), S = i.useMemo(() => O.map(e => {
+  }) || b, O = y ? p : f, [v, S] = i.useState(false), I = i.useCallback(() => S(true), []), T = i.useMemo(() => O.map(e => {
     let {
       applicationId: t
     } = e;
     return t
-  }), [O]), A = (0, a.e7)([c.Z], () => c.Z.getRelationshipType(E), [E]), C = p(S, v || 1 === O.length);
+  }), [O]), A = (0, a.e7)([c.Z], () => c.Z.getRelationshipType(E), [E]), C = _(T, v || 1 === O.length);
   if (y || 0 === O.length || A === d.OGo.FRIEND) return null;
   if (1 === O.length) {
     let {
@@ -70,11 +70,11 @@ function m(e) {
       color: g,
       id: t,
       label: s,
-      subtext: (0, r.jsx)(h, {
+      subtext: (0, r.jsx)(m, {
         application: n
       }),
-      onFocus: T,
-      action: () => m(n)
+      onFocus: I,
+      action: () => h(n)
     })
   }
   let N = [];
@@ -89,13 +89,13 @@ function m(e) {
         game: n,
         size: l.A.XXSMALL
       }),
-      action: () => m(n)
+      action: () => h(n)
     }, t))
   }), 0 === N.length) ? null : (0, r.jsx)(o.sNh, {
     color: g,
     id: t,
     label: s,
-    onFocus: T,
+    onFocus: I,
     children: N
   })
 }

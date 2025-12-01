@@ -85,7 +85,7 @@ function s(e) {
     var e;
     return null == (e = d.current) ? true : e.clear()
   }), [f]);
-  let _ = [];
-  for (let [, e] of f) _.push(e.children);
-  return _.length > 0 ? s(_, t) : null
+  let p = [];
+  for (let [, e] of f) p.push(e.children);
+  return p.length > 0 ? s(p, t) : null
 }

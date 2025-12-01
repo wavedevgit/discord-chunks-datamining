@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +27,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,7 +52,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -62,17 +62,17 @@ function E(e) {
     let {
       ConfirmModal: t
     } = await Promise.resolve().then(n.bind(n, 878678));
-    return n => (0, r.jsx)(t, g(h({}, n), {
+    return n => (0, r.jsx)(t, g(m({}, n), {
       onConfirm: () => {
         s.Z.setUseSystemScreensharePicker(e), l.Z.app.relaunch()
       },
       confirmButtonColor: a.zx.Colors.BRAND,
-      header: _.intl.string(_.t["9jf31O"]),
-      cancelText: _.intl.string(_.t["ETE/oC"]),
-      confirmText: _.intl.string(_.t.BddRzS),
+      header: p.intl.string(p.t["9jf31O"]),
+      cancelText: p.intl.string(p.t["ETE/oC"]),
+      confirmText: p.intl.string(p.t.BddRzS),
       children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: _.intl.string(_.t.uBd6JW)
+        children: p.intl.string(p.t.uBd6JW)
       })
     }))
   }) : s.Z.setUseSystemScreensharePicker(e)

@@ -23,17 +23,17 @@ let u = new Set([Chunk657707.GsA.name, Chunk657707.iWm.name, Chunk657707.FLu.nam
       className: i,
       hangStatusActivity: a,
       size: f,
-      animate: _ = true,
-      fallbackVariant: p = "twemoji",
-      userId: h
-    } = e, m = (0, l.F)(h, null == a ? true : a.state), g = (0, s.tV)(h, a, p);
-    if ((m[0] === c.tN.CUSTOM || (null == g ? true : g.emoji) != null) && null != a) {
+      animate: p = true,
+      fallbackVariant: _ = "twemoji",
+      userId: m
+    } = e, h = (0, l.F)(m, null == a ? true : a.state), g = (0, s.tV)(m, a, _);
+    if ((h[0] === c.tN.CUSTOM || (null == g ? true : g.emoji) != null) && null != a) {
       let e = null != (t = null == g ? true : g.emoji) ? t : a.emoji;
       return null != e ? (0, r.jsx)(o.Z, {
         emoji: e,
         className: i,
         hideTooltip: true,
-        animate: _
+        animate: p
       }) : null
     }
     let E = null == g ? true : g.icon;

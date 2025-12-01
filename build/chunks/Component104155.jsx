@@ -42,7 +42,7 @@ function v(e) {
     guildId: n
   } = e, [o, s] = l.useState(""), j = (0, i.e7)([p.Z], () => p.Z.getGuild(n)), v = (0, i.e7)([u.ZP], () => u.ZP.getChannels(n)), O = (0, i.e7)([d.Z], () => d.Z.getCategories(n)), y = (0, f.Fo)(n, O, v, o), N = (0, i.e7)([h.Z], () => h.Z.canWithPartialContext(_.Plq.MANAGE_CHANNELS, {
     guildId: n
-  })), I = (0, i.e7)([c.ZP], () => null != c.ZP.getCurrentSidebarChannelId(x.oC.CHANNEL_BROWSER)), w = l.useCallback(() => s(""), [s]), Z = l.useCallback(() => {
+  })), w = (0, i.e7)([c.ZP], () => null != c.ZP.getCurrentSidebarChannelId(x.oC.CHANNEL_BROWSER)), Z = l.useCallback(() => s(""), [s]), I = l.useCallback(() => {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -93,11 +93,11 @@ function v(e) {
             search_type: "channel browser"
           }), s(e.toLowerCase())
         },
-        onClear: w,
+        onClear: Z,
         placeholder: C.intl.string(C.t.s5MnmC)
       }), N ? (0, r.jsx)(a.Button, {
         icon: a.qJs,
-        onClick: Z,
+        onClick: I,
         text: C.intl.string(C.t.CumH4u)
       }) : null]
     }), (0, r.jsx)(g.Z, {
@@ -105,7 +105,7 @@ function v(e) {
       channels: v,
       categories: y,
       guild: j,
-      hasSidebar: I
+      hasSidebar: w
     })]
   })
 }

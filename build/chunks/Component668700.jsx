@@ -2,8 +2,8 @@
 /** chunk id: 668700, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => I,
-  Z: () => T
+  W: () => S,
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -26,28 +26,28 @@ var Chunk442837 = require("./442837.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk704543 = require("./704543.js");
-let I = 3;
+let S = 3;
 
-function T(e) {
+function I(e) {
   let {
     user: t,
     guild: n,
-    channel: T,
-    onAction: S,
+    channel: I,
+    onAction: T,
     onClose: A
   } = e, {
     themeType: C
-  } = (0, g.z)(), N = (0, h.Z)(T), R = (0, u.ZP)(T), {
-    canViewChannel: P,
-    canConnect: D
-  } = (0, i.cj)([p.Z], () => ({
-    canViewChannel: p.Z.can(b.Plq.VIEW_CHANNEL, T),
-    canConnect: T.isPrivate() || p.Z.can(b.Plq.CONNECT, T)
+  } = (0, g.z)(), N = (0, m.Z)(I), P = (0, u.ZP)(I), {
+    canViewChannel: R,
+    canConnect: w
+  } = (0, i.cj)([_.Z], () => ({
+    canViewChannel: _.Z.can(b.Plq.VIEW_CHANNEL, I),
+    canConnect: I.isPrivate() || _.Z.can(b.Plq.CONNECT, I)
   }));
-  if (!P) return null;
-  let w = () => {
+  if (!R) return null;
+  let D = () => {
       let e = e => {
-        e.stopPropagation(), (0, _.X)(n.id), null == S || S({
+        e.stopPropagation(), (0, p.X)(n.id), null == T || T({
           action: "OPEN_VOICE_GUILD"
         }), null == A || A()
       };
@@ -63,17 +63,17 @@ function T(e) {
         })
       })
     },
-    L = () => {
-      if (!D) return (0, r.jsx)(l.Text, {
+    x = () => {
+      if (!w) return (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
         lineClamp: 1,
         children: (0, r.jsx)(a.Z, {
-          children: R
+          children: P
         })
       });
       let e = e => {
-        e.stopPropagation(), c.default.selectVoiceChannel(T.id), (0, f.Kh)(T.id), null == S || S({
+        e.stopPropagation(), c.default.selectVoiceChannel(I.id), (0, f.Kh)(I.id), null == T || T({
           action: "OPEN_VOICE_CHANNEL"
         }), null == A || A()
       };
@@ -85,43 +85,43 @@ function T(e) {
           color: "text-secondary",
           lineClamp: 1,
           children: (0, r.jsx)(a.Z, {
-            children: R
+            children: P
           })
         })
       })
     },
-    x = C !== y.l.MODAL && C !== y.l.MODAL_V2 && C !== y.l.SIDEBAR;
+    L = C !== y.l.MODAL && C !== y.l.MODAL_V2 && C !== y.l.SIDEBAR;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(m.Z, {
+    children: [(0, r.jsx)(h.Z, {
       className: v.voiceChannelDivider
     }), (0, r.jsxs)("div", {
       className: v.voiceChannel,
-      children: [w(), (0, r.jsx)(l.Fbu, {
+      children: [D(), (0, r.jsx)(l.Fbu, {
         size: "xxs",
         color: l.TVs.colors.TEXT_SECONDARY
       }), (0, r.jsxs)("div", {
         className: v.voiceChannelText,
         children: [(0, r.jsx)(E.Z, {
-          channel: T,
+          channel: I,
           size: "xxs",
           color: l.TVs.colors.TEXT_SECONDARY,
           className: v.voiceIcon
-        }), L()]
+        }), x()]
       }), (0, r.jsx)(o.Z, {
         users: N,
         guildId: n.id,
-        channelId: T.id,
-        maxUsers: I,
+        channelId: I.id,
+        maxUsers: S,
         size: l.EFr.SIZE_16,
         overflowCountColor: "text-secondary",
         overflowCountClassName: v.voiceChannelOverflowCount,
         onClickOverflow: e => {
-          e.stopPropagation(), null == S || S({
+          e.stopPropagation(), null == T || T({
             action: "PRESS_VOICE_CHANNEL_AVATARS"
           })
         },
         onUserClick: e => e.stopPropagation(),
-        disableUserPopout: !!x || (e => e === t.id),
+        disableUserPopout: !!L || (e => e === t.id),
         "aria-label": O.intl.string(O.t["jNqDh/"])
       })]
     })]

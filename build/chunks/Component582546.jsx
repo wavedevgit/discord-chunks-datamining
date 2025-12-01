@@ -2,7 +2,7 @@
 /** chunk id: 582546, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,11 +19,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function h(e) {
   var t;
   let {
     user: n,
-    entry: m,
+    entry: h,
     display: g,
     onAction: E,
     onClose: b
@@ -31,29 +31,29 @@ function m(e) {
     var e;
     return (null == (e = f.default.getCurrentUser()) ? true : e.id) === n.id
   }), O = (0, i.e7)([c.Z], () => c.Z.hasConnectedAccount());
-  if ("recent" !== g || !(0, l.AZ)(m)) return null;
+  if ("recent" !== g || !(0, l.AZ)(h)) return null;
   if (!O) return (0, r.jsx)(a.sNh, {
     id: "connect-spotify",
-    label: h.intl.formatToPlainString(h.t.XWSHTb, {
-      platform: p.ai
+    label: m.intl.formatToPlainString(m.t.XWSHTb, {
+      platform: _.ai
     }),
     action: () => {
       null == E || E({
         action: "PRESS_CONNECT_SPOTIFY_MENU_ITEM"
       }), (0, d.openUserSettings)(u.n.CONNECTIONS_PANEL, {
-        section: _.oAB.CONNECTIONS
+        section: p.oAB.CONNECTIONS
       }), null == b || b()
     }
   });
   if (y) return null;
-  let v = (0, o.dU)(m) ? null == (t = m.extra.entries[0]) ? true : t.media : m.extra.media;
+  let v = (0, o.dU)(h) ? null == (t = h.extra.entries[0]) ? true : t.media : h.extra.media;
   return null == v ? null : (0, r.jsx)(a.sNh, {
     id: "play-on-spotify",
-    label: h.intl.string(h.t.rRffNz),
+    label: m.intl.string(m.t.rRffNz),
     action: () => {
       null == E || E({
         action: "PRESS_PLAY_ON_SPOTIFY_MENU_ITEM"
-      }), (0, s.o)(p.Hw.TRACK, v.external_id)
+      }), (0, s.o)(_.Hw.TRACK, v.external_id)
     }
   })
 }

@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
 let k = t => {
   let {
     onClose: e
-  } = t, n = (0, s.m)(), {
+  } = t, n = (0, i.m)(), {
     installationStatus: k,
     perkAvailableToUser: N,
     isSupportedPrivateBrowsingPerkPlatform: v,
@@ -58,7 +58,7 @@ let k = t => {
         return C.intl.string(h.default.KN6HOb)
     }
   }, [k, N, D]), O = (0, r.useMemo)(() => {
-    if (!N) return (0, a.jsx)(i.xvT, {
+    if (!N) return (0, a.jsx)(s.xvT, {
       variant: "text-xs/medium",
       color: "text-secondary",
       children: C.intl.format(h.default["0UfKTY"], {
@@ -68,7 +68,7 @@ let k = t => {
     switch (k) {
       case u._n.INSTALLED:
       case u._n.EXISTING_INSTALLATION:
-        return (0, a.jsx)(i.xvT, {
+        return (0, a.jsx)(s.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: E ? C.intl.format(h.default.zwW10o, {
@@ -82,7 +82,7 @@ let k = t => {
           })
         });
       default:
-        return (0, a.jsx)(i.xvT, {
+        return (0, a.jsx)(s.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: C.intl.format(h.default.D4hu0v, {
@@ -97,7 +97,7 @@ let k = t => {
     className: g.container,
     children: [(0, a.jsx)(x.v, {
       className: g.betaBadge
-    }), (0, a.jsx)(i.$1m, {
+    }), (0, a.jsx)(s.$1m, {
       color: "nitro-pink",
       offsetBottom: false,
       className: g.gradientBackground,
@@ -109,7 +109,7 @@ let k = t => {
           alt: "Private Browsing Perk"
         }), (0, a.jsxs)("div", {
           className: g.details,
-          children: [(0, a.jsx)(i.X6q, {
+          children: [(0, a.jsx)(s.X6q, {
             variant: "heading-md/semibold",
             children: M
           }), O]

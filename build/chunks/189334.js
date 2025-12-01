@@ -2,7 +2,7 @@
 /** chunk id: 189334, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk282397 = require("./282397.js"),
@@ -37,14 +37,14 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     application: t
   } = e, n = i.ZP.getIFrameModalApplicationId(), r = i.ZP.getIFrameModalKey();
   t.id === n && null != n && (0, o.Z)(n, r)
 }
 
-function p(e, t) {
+function _(e, t) {
   let n = null != t ? Date.now() - t : true;
   a.default.track(l.rMx.MODAL_DISMISSED, {
     type: u,
@@ -52,7 +52,7 @@ function p(e, t) {
     duration_open_ms: n
   })
 }
-class h extends Chunk147913.Z {
+class m extends Chunk147913.Z {
   constructor(...e) {
     super(...e), c(this, "iframeModalOpenTimeMs", true), c(this, "actions", {
       INTERACTION_MODAL_CREATE: e => {
@@ -62,12 +62,12 @@ class h extends Chunk147913.Z {
         this.iframeModalOpenTimeMs = Date.now(), f(e)
       },
       INTERACTION_IFRAME_MODAL_CLOSE: e => {
-        p(e, this.iframeModalOpenTimeMs), this.iframeModalOpenTimeMs = true
+        _(e, this.iframeModalOpenTimeMs), this.iframeModalOpenTimeMs = true
       },
       RPC_APP_DISCONNECTED: e => {
-        _(e)
+        p(e)
       }
     })
   }
 }
-let m = new h
+let h = new m

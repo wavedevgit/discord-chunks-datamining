@@ -2,7 +2,7 @@
 /** chunk id: 684256, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,25 +17,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk493891 = require("./493891.js");
 
-function h(e) {
+function m(e) {
   let {
     context: t,
     entrypoint: n,
     title: a,
-    look: h,
-    items: m,
+    look: m,
+    items: h,
     sectionName: g,
     sectionOverallPosition: E
   } = e, b = (0, u.s)(), y = i.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
   return (0, r.jsxs)("section", {
-    className: p.container,
-    "aria-label": _.intl.formatToPlainString(_.t.iobNIB, {
+    className: _.container,
+    "aria-label": p.intl.formatToPlainString(p.t.iobNIB, {
       sectionTitle: a
     }),
     children: [(0, r.jsxs)("div", {
-      className: p.header,
+      className: _.header,
       children: [(0, r.jsx)(f.Z, {
-        className: p.backButton
+        className: _.backButton
       }), (0, r.jsx)(s.Heading, {
         variant: "heading-md/medium",
         color: "header-primary",
@@ -44,10 +44,10 @@ function h(e) {
     }), (0, r.jsx)(s.Ttm, {
       children: (0, r.jsx)("div", {
         className: o()({
-          [p.appGrid]: h !== d.U4.ROW,
-          [p.rows]: h === d.U4.ROW
+          [_.appGrid]: m !== d.U4.ROW,
+          [_.rows]: m === d.U4.ROW
         }),
-        children: m.map((e, n) => {
+        children: h.map((e, n) => {
           let {
             application: i,
             installOnDemand: a,
@@ -56,7 +56,7 @@ function h(e) {
           return (0, r.jsx)(y, {
             context: t,
             application: i,
-            look: h,
+            look: m,
             sectionName: g,
             resultsPosition: n,
             location: l.Vh.APP_LAUNCHER_LIST_VIEW_ALL,

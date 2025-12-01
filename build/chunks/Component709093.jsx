@@ -2,7 +2,7 @@
 /** chunk id: 709093, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./361932.js"), require("./187205.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -33,7 +33,7 @@ function v(e) {
     filteredBreadcrumbs: a
   } = e;
   if (t) return (0, r.jsx)("div", {
-    className: h.oneStepCheckoutTextWrapper,
+    className: m.oneStepCheckoutTextWrapper,
     children: (0, r.jsx)(o.Heading, {
       variant: "heading-md/bold",
       children: n
@@ -41,7 +41,7 @@ function v(e) {
   });
   let s = a.length > 1;
   return (0, r.jsxs)("div", {
-    className: h.headerTextWrapper,
+    className: m.headerTextWrapper,
     children: [(0, r.jsx)(o.Text, {
       variant: "text-lg/semibold",
       children: n
@@ -52,44 +52,44 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     isTier2: t
-  } = e, n = t ? E : m, i = t ? b : g;
+  } = e, n = t ? E : h, i = t ? b : g;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       src: n,
       alt: "",
-      className: h.bigCloud
+      className: m.bigCloud
     }), (0, r.jsx)("img", {
       src: i,
       alt: "",
-      className: h.mediumCloud
+      className: m.mediumCloud
     }), (0, r.jsx)("img", {
       src: i,
       alt: "",
-      className: h.smallCloud
+      className: m.smallCloud
     })]
   })
 }
-let T = function(e) {
+let I = function(e) {
   var t, n, i;
   let {
     hideCloseButton: u = false,
-    hideCloseOnFullScreen: m,
+    hideCloseOnFullScreen: h,
     onClose: g,
     upgradeToPremiumType: E,
     isEligibleForTrial: b = false,
-    showTrialBadge: T = false,
-    showDiscountBadge: S = false
-  } = e, A = E === _.PremiumTypes.TIER_2, C = (0, c.Fv)(b), N = (0, d.N)(), R = null == N || null == (t = N.discount) ? true : t.amount, P = A ? O : y, {
-    step: D,
-    breadcrumbs: w,
-    startedPaymentFlowWithPaymentSourcesRef: L,
-    isDisplayingWowMomentConfirmation: x
+    showTrialBadge: I = false,
+    showDiscountBadge: T = false
+  } = e, A = E === p.PremiumTypes.TIER_2, C = (0, c.Fv)(b), N = (0, d.N)(), P = null == N || null == (t = N.discount) ? true : t.amount, R = A ? O : y, {
+    step: w,
+    breadcrumbs: D,
+    startedPaymentFlowWithPaymentSourcesRef: x,
+    isDisplayingWowMomentConfirmation: L
   } = (0, s.JL)();
-  if (null == w || 0 === w.length) return null;
-  let M = w.flatMap(e => {
+  if (null == D || 0 === D.length) return null;
+  let j = D.flatMap(e => {
     let t = e.useBreadcrumbLabel(b),
       n = e.sectionHeaderText;
     return null != t ? {
@@ -98,61 +98,61 @@ let T = function(e) {
       sectionHeaderText: n
     } : []
   });
-  if (0 === M.length) return null;
-  let k = (M = M.filter(e => {
+  if (0 === j.length) return null;
+  let M = (j = j.filter(e => {
       let t = e.id !== l.h8.ADD_PAYMENT_STEPS,
-        n = e.id === l.h8.ADD_PAYMENT_STEPS && !L.current;
+        n = e.id === l.h8.ADD_PAYMENT_STEPS && !x.current;
       return !b || b && (t || n)
-    })).find(e => e.id === D),
-    j = null != (i = null == k || null == (n = k.sectionHeaderText) ? true : n.call(k)) ? i : null == k ? true : k.label,
-    U = null != j && null != D,
-    G = C && U && D === l.h8.REVIEW,
-    B = A ? "nitro-pink" : "nitro-green",
-    Z = A ? p.intl.string(p.t.lG6a5x) : p.intl.string(p.t["t9uG/o"]);
-  return x ? (0, r.jsx)("div", {
-    className: h.container,
+    })).find(e => e.id === w),
+    k = null != (i = null == M || null == (n = M.sectionHeaderText) ? true : n.call(M)) ? i : null == M ? true : M.label,
+    U = null != k && null != w,
+    G = C && U && w === l.h8.REVIEW,
+    Z = A ? "nitro-pink" : "nitro-green",
+    B = A ? _.intl.string(_.t.lG6a5x) : _.intl.string(_.t["t9uG/o"]);
+  return L ? (0, r.jsx)("div", {
+    className: m.container,
     children: (0, r.jsx)(o.$1m, {
-      color: B,
-      className: h.headerContainer
+      color: Z,
+      className: m.headerContainer
     })
   }) : (0, r.jsxs)("div", {
-    className: h.container,
+    className: m.container,
     children: [(0, r.jsxs)(o.$1m, {
-      color: B,
-      className: a()(h.headerContainer, {
-        [h.containerBottomPadding]: !U
+      color: Z,
+      className: a()(m.headerContainer, {
+        [m.containerBottomPadding]: !U
       }),
-      children: [(0, r.jsx)(I, {
+      children: [(0, r.jsx)(S, {
         isTier2: A
       }), !u && (0, r.jsx)(o.olH, {
         "data-migration-pending": true,
-        hideOnFullscreen: m,
+        hideOnFullscreen: h,
         onClick: g,
-        className: h.closeButtonPosition
+        className: m.closeButtonPosition
       }), (0, r.jsx)("img", {
-        src: P,
+        src: R,
         alt: "",
-        className: G ? h.bigWumpus : h.wumpus
+        className: G ? m.bigWumpus : m.wumpus
       }), (0, r.jsx)("div", {
-        className: h.textContainer,
+        className: m.textContainer,
         children: (0, r.jsx)(o.Text, {
           variant: "display-md",
           color: "header-primary",
-          className: h.nitroText,
-          children: Z
+          className: m.nitroText,
+          children: B
         })
       })]
-    }), (T || S) && (0, r.jsx)(f.Z, {
-      discountAmount: R
+    }), (I || T) && (0, r.jsx)(f.Z, {
+      discountAmount: P
     }), U && (0, r.jsx)(v, {
       isOneStepCheckout: C,
-      headerText: j,
-      step: D,
-      filteredBreadcrumbs: M
+      headerText: k,
+      step: w,
+      filteredBreadcrumbs: j
     }), G && (0, r.jsx)("div", {
-      className: h.bodyGradientContainer,
+      className: m.bodyGradientContainer,
       children: (0, r.jsx)("div", {
-        className: h.bodyGradient
+        className: m.bodyGradient
       })
     })]
   })

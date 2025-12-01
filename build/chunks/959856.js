@@ -52,44 +52,44 @@ class N extends Chunk47770.Z {
   }
   supports(e) {
     switch (e) {
-      case T.AN.AUDIO_INPUT_DEVICE:
+      case I.AN.AUDIO_INPUT_DEVICE:
         return E.S5;
-      case T.AN.AUDIO_OUTPUT_DEVICE:
+      case I.AN.AUDIO_OUTPUT_DEVICE:
         return E.ZA;
-      case T.AN.VIDEO:
-        return S.U8;
-      case T.AN.DESKTOP_CAPTURE:
+      case I.AN.VIDEO:
+        return T.U8;
+      case I.AN.DESKTOP_CAPTURE:
         var t;
         return (null == (t = navigator.mediaDevices) ? true : t.getDisplayMedia) != null;
-      case T.AN.VOICE_PROCESSING:
+      case I.AN.VOICE_PROCESSING:
         return "Chrome" === o().name;
-      case T.AN.NATIVE_PING:
-      case T.AN.DIAGNOSTICS:
-        return S.Fo;
-      case T.AN.DESKTOP_CAPTURE_APPLICATIONS:
-      case T.AN.LOOPBACK:
-      case T.AN.NOISE_SUPPRESSION:
-      case T.AN.AUTOMATIC_GAIN_CONTROL:
+      case I.AN.NATIVE_PING:
+      case I.AN.DIAGNOSTICS:
+        return T.Fo;
+      case I.AN.DESKTOP_CAPTURE_APPLICATIONS:
+      case I.AN.LOOPBACK:
+      case I.AN.NOISE_SUPPRESSION:
+      case I.AN.AUTOMATIC_GAIN_CONTROL:
         return "Safari" !== o().name;
-      case T.AN.NOISE_CANCELLATION:
+      case I.AN.NOISE_CANCELLATION:
         return c()();
-      case T.AN.QOS:
-      case T.AN.ATTENUATION:
-      case T.AN.AUTOMATIC_VAD:
-      case T.AN.LEGACY_AUDIO_SUBSYSTEM:
-      case T.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM:
-      case T.AN.AUTOMATIC_AUDIO_SUBSYSTEM:
-      case T.AN.AUDIO_SUBSYSTEM_DEFERRED_SWITCH:
-      case T.AN.DEBUG_LOGGING:
-      case T.AN.VOICE_PANNING:
-      case T.AN.AUTO_ENABLE:
-      case T.AN.DESKTOP_CAPTURE_FORMAT:
-      case T.AN.VIDEO_HOOK:
-      case T.AN.AEC_DUMP:
-      case T.AN.DISABLE_VIDEO:
-      case T.AN.CONNECTION_REPLAY:
-      case T.AN.SIMULCAST:
-      case T.AN.SCREEN_CAPTURE_KIT:
+      case I.AN.QOS:
+      case I.AN.ATTENUATION:
+      case I.AN.AUTOMATIC_VAD:
+      case I.AN.LEGACY_AUDIO_SUBSYSTEM:
+      case I.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM:
+      case I.AN.AUTOMATIC_AUDIO_SUBSYSTEM:
+      case I.AN.AUDIO_SUBSYSTEM_DEFERRED_SWITCH:
+      case I.AN.DEBUG_LOGGING:
+      case I.AN.VOICE_PANNING:
+      case I.AN.AUTO_ENABLE:
+      case I.AN.DESKTOP_CAPTURE_FORMAT:
+      case I.AN.VIDEO_HOOK:
+      case I.AN.AEC_DUMP:
+      case I.AN.DISABLE_VIDEO:
+      case I.AN.CONNECTION_REPLAY:
+      case I.AN.SIMULCAST:
+      case I.AN.SCREEN_CAPTURE_KIT:
       default:
         returnfalse
     }
@@ -112,8 +112,8 @@ class N extends Chunk47770.Z {
       streamParameters: l,
       dave: this.dave,
       transientKeys: this.transientKeys
-    }, u = (0, m.Q)(c);
-    return u.streamUserId = s, u.setOutputVolume(this.outputVolume), u.setSinkId(this.sinkId), u.once(d.S.Destroy, e => this.connections.delete(e)), u.on(d.S.Silence, e => this.emit(f.aB.Silence, e)), u.on(d.S.DesktopSourceEnd, this.handleDesktopSourceEnd), u.on(d.S.AudioPermission, this.handleAudioPermission), u.on(d.S.VideoPermission, this.handleVideoPermission), this.interacted && u.interact(), e === T.Yn.DEFAULT && (u.setAudioSource(this.sourceId), this.enabled && u.input.enableAudioInput()), this.connections.add(u), this.emit(f.aB.Connection, u), u
+    }, u = (0, h.Q)(c);
+    return u.streamUserId = s, u.setOutputVolume(this.outputVolume), u.setSinkId(this.sinkId), u.once(d.S.Destroy, e => this.connections.delete(e)), u.on(d.S.Silence, e => this.emit(f.aB.Silence, e)), u.on(d.S.DesktopSourceEnd, this.handleDesktopSourceEnd), u.on(d.S.AudioPermission, this.handleAudioPermission), u.on(d.S.VideoPermission, this.handleVideoPermission), this.interacted && u.interact(), e === I.Yn.DEFAULT && (u.setAudioSource(this.sourceId), this.enabled && u.input.enableAudioInput()), this.connections.add(u), this.emit(f.aB.Connection, u), u
   }
   findConnection(e) {
     return Array.from(this.connections).find(t => null == e || t.context === e)
@@ -157,7 +157,7 @@ class N extends Chunk47770.Z {
   setAudioInputDevice(e) {
     var t, n;
     let r = this.sourceId;
-    this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), T.Yn.DEFAULT), null == (t = this.voiceActivityInput) || t.setSource(e), null == (n = this.loopback) || n.setAudioSource(e), this.emit(f.aB.SelectedDeviceChange, T.h7.AUDIO_INPUT, r, e)
+    this.sourceId = e, this.eachConnection(t => t.setAudioSource(e), I.Yn.DEFAULT), null == (t = this.voiceActivityInput) || t.setSource(e), null == (n = this.loopback) || n.setAudioSource(e), this.emit(f.aB.SelectedDeviceChange, I.h7.AUDIO_INPUT, r, e)
   }
   getAudioOutputDevices() {
     return (0, Chunk740197.HS)()
@@ -165,13 +165,13 @@ class N extends Chunk47770.Z {
   setAudioOutputDevice(e) {
     var t;
     let n = this.sinkId;
-    this.sinkId = e, this.connections.forEach(t => t.setSinkId(e)), null == (t = this.loopback) || t.setAudioSink(e), this.emit(f.aB.SelectedDeviceChange, T.h7.AUDIO_OUTPUT, n, e)
+    this.sinkId = e, this.connections.forEach(t => t.setSinkId(e)), null == (t = this.loopback) || t.setAudioSink(e), this.emit(f.aB.SelectedDeviceChange, I.h7.AUDIO_OUTPUT, n, e)
   }
   getVideoInputDevices() {
     return (0, Chunk740197.l0)()
   }
   setVideoInputDevice(e) {
-    this.videoInputDeviceId = e, this.eachConnection(t => t.setVideoSource(e), T.Yn.DEFAULT)
+    this.videoInputDeviceId = e, this.eachConnection(t => t.setVideoSource(e), I.Yn.DEFAULT)
   }
   getVideoInputDeviceId() {
     return this.videoInputDeviceId
@@ -216,7 +216,7 @@ class N extends Chunk47770.Z {
   setGoLiveSource(e, t) {
     if (null == e) this.eachConnection(e => e.setDesktopInput(null), t);
     else if (null != e.desktopDescription && null != this.findConnection(t)) {
-      i()(t === T.Yn.STREAM, "Go live context is not STREAM");
+      i()(t === I.Yn.STREAM, "Go live context is not STREAM");
       let n = false,
         r = this.pendingDesktopInputs[e.desktopDescription.id];
       null != r && this.eachConnection(e => {
@@ -323,7 +323,7 @@ class N extends Chunk47770.Z {
           }, this.handleDeviceChange());
           break;
         case f.aB.VoiceActivity:
-          null == this.voiceActivityInput && (this.voiceActivityInput = new h.Z(this.getAudioContext()), this.voiceActivityInput.setSource(this.sourceId), this.voiceActivityInput.on("voiceactivity", this.handleVoiceActivity), this.enabled && this.voiceActivityInput.enable())
+          null == this.voiceActivityInput && (this.voiceActivityInput = new m.Z(this.getAudioContext()), this.voiceActivityInput.setSource(this.sourceId), this.voiceActivityInput.on("voiceactivity", this.handleVoiceActivity), this.enabled && this.voiceActivityInput.enable())
       }
     }), A(this, "handleRemoveListener", e => {
       switch (e) {

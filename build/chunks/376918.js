@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Qt: () => f,
-  _H: () => p,
+  _H: () => _,
   a7: () => d
 });
 var Chunk367907 = require("./367907.js"),
@@ -62,7 +62,7 @@ function d(e, t, n, i) {
 }
 
 function f(e, t, n, i) {
-  var s, c, d, f, _;
+  var s, c, d, f, p;
   a.default.track(o.rMx.CHANNEL_AUTOCOMPLETE_SELECTED, u(l({}, (0, r.v_)(n), (0, r.hH)(n.guild_id)), {
     autocomplete_type: e,
     selection_type: t,
@@ -72,12 +72,12 @@ function f(e, t, n, i) {
     num_sticker_results: null != (c = null == i ? true : i.numStickerResults) ? c : 0,
     emoji_name: null != (d = null == i ? true : i.expressionName) ? d : "",
     is_custom: null != (f = null == i ? true : i.isCustom) && f,
-    is_animated: null != (_ = null == i ? true : i.isAnimated) && _,
+    is_animated: null != (p = null == i ? true : i.isAnimated) && p,
     application_id: null == i ? true : i.applicationId
   }))
 }
 
-function _(e) {
+function p(e) {
   switch (e) {
     case i.V0.AUTOCOMPLETE:
       return "autocomplete";
@@ -90,7 +90,7 @@ function _(e) {
   }
 }
 
-function p(e) {
+function _(e) {
   let {
     sticker: t,
     stickerSelectLocation: n,
@@ -99,7 +99,7 @@ function p(e) {
   } = e;
   a.default.track(o.rMx.STICKER_ATTACHED, {
     replaced: r,
-    source: _(n),
+    source: p(n),
     sticker_id: t.id,
     location_stack: i
   })

@@ -11,19 +11,19 @@ var Chunk48657 = require("./48657.js"),
   Chunk480296 = require("./480296.js"),
   Chunk533610 = require("./533610.js"),
   Chunk800054 = require("./800054.js"),
-  _ = Array;
+  p = Array;
 module.exports = function(e) {
-  var t, n, p, h, m, g, E = a(e),
+  var t, n, _, m, h, g, E = a(e),
     b = l(this),
     y = arguments.length,
     O = y > 1 ? arguments[1] : true,
     v = true !== O;
   v && (O = r(O, y > 2 ? arguments[2] : true));
-  var I = f(E),
-    T = 0;
-  if (I && !(this === _ && s(I)))
-    for (n = b ? new this : [], m = (h = d(E, I)).next; !(p = i(m, h)).done; T++) g = v ? o(h, O, [p.value, T], true) : p.value, u(n, T, g);
+  var S = f(E),
+    I = 0;
+  if (S && !(this === p && s(S)))
+    for (n = b ? new this : [], h = (m = d(E, S)).next; !(_ = i(h, m)).done; I++) g = v ? o(m, O, [_.value, I], true) : _.value, u(n, I, g);
   else
-    for (t = c(E), n = b ? new this(t) : _(t); t > T; T++) g = v ? O(E[T], T) : E[T], u(n, T, g);
-  return n.length = T, n
+    for (t = c(E), n = b ? new this(t) : p(t); t > I; I++) g = v ? O(E[I], I) : E[I], u(n, I, g);
+  return n.length = I, n
 }

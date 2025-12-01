@@ -59,40 +59,40 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = 104,
-  T = 16;
+let S = 104,
+  I = 16;
 
-function S(e) {
+function T(e) {
   var t, n, a;
   let {
     file: s
-  } = e, [l, c] = i.useState(), [d, f] = i.useState(false), [_, p] = i.useState({}), h = i.useRef(null);
+  } = e, [l, c] = i.useState(), [d, f] = i.useState(false), [p, _] = i.useState({}), m = i.useRef(null);
   i.useEffect(() => {
-    if (null != h.current && f(false), null == s) return;
+    if (null != m.current && f(false), null == s) return;
     let e = URL.createObjectURL(s);
     return c(e), () => {
       c(true), URL.revokeObjectURL(e)
     }
   }, [s]), i.useLayoutEffect(() => {
-    let e = h.current;
+    let e = m.current;
     null != e && (e.onload = () => {
       let t = Math.max(.66, Math.min(e.naturalWidth / e.naturalHeight, 4));
-      1 === t ? p({
-        width: I,
-        height: I
-      }) : t > 1 ? p({
-        width: I * t,
+      1 === t ? _({
+        width: S,
+        height: S
+      }) : t > 1 ? _({
+        width: S * t,
         height: true
-      }) : p({
+      }) : _({
         width: true,
-        height: I / t
+        height: S / t
       }), f(true)
     })
   }, []);
-  let m = (0, u.Z)(h),
-    g = Math.max(16, (T + I - (null != (t = null == m ? true : m.width) ? t : 0)) / 2);
+  let h = (0, u.Z)(m),
+    g = Math.max(16, (I + S - (null != (t = null == h ? true : h.width) ? t : 0)) / 2);
   return (0, r.jsx)("img", {
-    ref: h,
+    ref: m,
     src: l,
     className: o()(E.fileIcon, {
       [E.image]: !d
@@ -100,8 +100,8 @@ function S(e) {
     "aria-hidden": true,
     alt: "",
     style: {
-      width: null != (n = _.width) ? n : "initial",
-      maxHeight: null != (a = _.height) ? a : I,
+      width: null != (n = p.width) ? n : "initial",
+      maxHeight: null != (a = p.height) ? a : S,
       height: "unset",
       marginLeft: g,
       marginRight: g,
@@ -112,7 +112,7 @@ function S(e) {
 class A extends Chunk473749.Component {
   render() {
     var e;
-    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk54381.jsx)(S, {
+    return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk54381.jsx)(T, {
       file: this.props.upload.item.file
     }) : (0, Chunk54381.jsx)("div", {
       className: o()(Chunk374450.fileIcon, {
@@ -169,7 +169,7 @@ class C extends Chunk473749.Component {
               filename: e
             }),
             onKeyDown: e => {
-              if (e.which === m.yXg.ENTER) return this.handleSubmit()
+              if (e.which === h.yXg.ENTER) return this.handleSubmit()
             }
           }), module.isImage ? (0, Chunk54381.jsx)(Chunk481060.oil, {
             label: Chunk388032.intl.string(Chunk388032.t.eOB2eR),
@@ -179,7 +179,7 @@ class C extends Chunk473749.Component {
               description: e
             }),
             onKeyDown: e => {
-              if (e.which === m.yXg.ENTER) return this.handleSubmit()
+              if (e.which === h.yXg.ENTER) return this.handleSubmit()
             }
           }) : null]
         }), true !== require && (0, Chunk54381.jsx)(Chunk481060.Checkbox, {
@@ -220,7 +220,7 @@ class C extends Chunk473749.Component {
         spoiler: a
       }), t()
     });
-    let s = e.ignoreDraft ? "" : _.Z.getDraft(this.props.channelId, e.draftType);
+    let s = e.ignoreDraft ? "" : p.Z.getDraft(this.props.channelId, e.draftType);
     this.state = v(y({}, (0, f.eK)(s)), {
       textFocused: true,
       hasSpoiler: null != (i = null == (t = e.upload) ? true : t.spoiler) && i,

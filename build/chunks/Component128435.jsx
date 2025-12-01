@@ -2,7 +2,7 @@
 /** chunk id: 128435, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk920557 = require("./920557.jsx"),
   Chunk290550 = require("./290550.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -46,7 +46,7 @@ function E(e) {
   } = e;
   return (0, r.jsx)(c.Heading, {
     variant: "text-md/medium",
-    className: h.question,
+    className: m.question,
     scaleFontToUserSetting: true,
     children: t.text
   })
@@ -61,7 +61,7 @@ function b(e) {
     className: s
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(h.detailsText, s),
+    className: o()(m.detailsText, s),
     children: [a ? (0, r.jsx)(c.Avr, {
       text: t,
       onClick: i,
@@ -92,7 +92,7 @@ function y(e, t) {
     myAvatarUrl: t.myAvatarUrl,
     canShowVoteCounts: t.canShowVoteCounts
   };
-  return (0, s.EQ)(t.layoutType).with(l.C.DEFAULT, () => (0, r.jsx)(p.K, g({}, n))).with(l.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.Z, g({}, n))).otherwise(() => null)
+  return (0, s.EQ)(t.layoutType).with(l.C.DEFAULT, () => (0, r.jsx)(_.K, g({}, n))).with(l.C.IMAGE_ONLY_ANSWERS, () => (0, r.jsx)(d.Z, g({}, n))).otherwise(() => null)
 }
 
 function O(e) {
@@ -105,7 +105,7 @@ function O(e) {
   } = e, {
     actionButtonRef: l,
     manageFocusOnAction: d
-  } = (0, _.dv)(), f = i.useCallback(async () => {
+  } = (0, p.dv)(), f = i.useCallback(async () => {
     (null == t ? true : t.type) != null && (await u.Z.handlePollActionTapped({
       channelId: n,
       messageId: a,
@@ -141,32 +141,32 @@ function v(e) {
     className: i
   } = e, a = (0, f.$B)(n.containerStyle), s = y(t, n);
   return null == s ? null : (0, r.jsx)("div", {
-    className: o()(h.container, a, i),
+    className: o()(m.container, a, i),
     children: (0, r.jsxs)(c.y5t, {
       children: [(0, r.jsxs)("div", {
-        className: h.header,
+        className: m.header,
         children: [(0, r.jsx)(E, {
           media: n.question
         }), null != n.promptLabel && (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: h.prompt,
+          className: m.prompt,
           scaleFontToUserSetting: true,
           children: n.promptLabel
         })]
       }), s, (0, r.jsxs)("div", {
-        className: h.bottomBar,
+        className: m.bottomBar,
         children: [(0, r.jsx)(O, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.secondaryAction,
-          className: h.secondaryAction,
+          className: m.secondaryAction,
           isInteractive: n.isInteractive
         }), (0, r.jsx)(O, {
           channelId: t.getChannelId(),
           messageId: t.id,
           action: n.tertiaryAction,
-          className: h.tertiaryAction
+          className: m.tertiaryAction
         }), (0, r.jsx)(O, {
           channelId: t.getChannelId(),
           messageId: t.id,
@@ -177,7 +177,7 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     message: t,
     poll: n,
@@ -186,7 +186,7 @@ function I(e) {
   return (0, r.jsx)(f.XL, {
     message: t,
     poll: n,
-    children: (0, r.jsx)(_.Pk, {
+    children: (0, r.jsx)(p.Pk, {
       children: (0, r.jsx)(v, {
         message: t,
         poll: n,

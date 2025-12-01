@@ -55,11 +55,11 @@ var d = function(e) {
   f = function(e) {
     return e[e.UPVOTE = 0] = "UPVOTE", e[e.DOWNVOTE = 1] = "DOWNVOTE", e
   }({});
-let _ = [],
-  p = {},
-  h = new Set;
+let p = [],
+  _ = {},
+  m = new Set;
 
-function m(e) {
+function h(e) {
   return 2 === e.type || 3 === e.type
 }
 
@@ -67,7 +67,7 @@ function g(e) {
   let {
     safetyWarnings: t
   } = e;
-  null != t && (p[e.id] = t, t.some(e => m(e) && null != e.dismiss_timestamp && !A(e.dismiss_timestamp)) ? h.add(e.id) : h.delete(e.id)), null == t && (null != p[e.id] && delete p[e.id], h.delete(e.id))
+  null != t && (_[e.id] = t, t.some(e => h(e) && null != e.dismiss_timestamp && !A(e.dismiss_timestamp)) ? m.add(e.id) : m.delete(e.id)), null == t && (null != _[e.id] && delete _[e.id], m.delete(e.id))
 }
 
 function E(e) {
@@ -84,7 +84,7 @@ function y(e) {
   let {
     channel: t
   } = e;
-  null != p[t.id] && delete p[t.id], h.delete(t.id)
+  null != _[t.id] && delete _[t.id], m.delete(t.id)
 }
 
 function O(e) {
@@ -92,8 +92,8 @@ function O(e) {
     channelId: t,
     warningId: n,
     feedbackType: r
-  } = e, i = p[t];
-  null != i && (p[t] = i.map(e => e.id === n ? c(s({}, e), {
+  } = e, i = _[t];
+  null != i && (_[t] = i.map(e => e.id === n ? c(s({}, e), {
     feedback_type: r
   }) : e))
 }
@@ -101,33 +101,33 @@ function O(e) {
 function v(e) {
   let {
     channelId: t
-  } = e, n = p[t];
-  h.delete(t), null != n && (p[t] = n.map(e => c(s({}, e), {
+  } = e, n = _[t];
+  m.delete(t), null != n && (_[t] = n.map(e => c(s({}, e), {
     dismiss_timestamp: true
   })))
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t,
     warningIds: n
-  } = e, r = p[t];
+  } = e, r = _[t];
   if (null == r) return;
   let i = new Date().toISOString();
-  p[t] = r.map(e => n.includes(e.id) ? c(s({}, e), {
+  _[t] = r.map(e => n.includes(e.id) ? c(s({}, e), {
     dismiss_timestamp: i
   }) : e)
 }
 
-function T(e) {
+function I(e) {
   let {
     channelId: t
   } = e;
-  h.add(t)
+  m.add(t)
 }
 
-function S() {
-  p = {}, Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
+function T() {
+  _ = {}, Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
     g(e)
   })
 }
@@ -141,24 +141,24 @@ class C extends Chunk442837.ZP.Store {
   }
   getChannelSafetyWarning(e, t) {
     var n;
-    return null == (n = p[e]) ? true : n.find(e => e.id === t)
+    return null == (n = _[e]) ? true : n.find(e => e.id === t)
   }
   getChannelSafetyWarnings(e) {
     var t;
-    return null != (t = p[e]) ? t : _
+    return null != (t = _[e]) ? t : p
   }
   hasShownInitialTooltipForChannel(e) {
-    return h.has(e)
+    return m.has(e)
   }
 }
 let N = new C(Chunk570140.Z, {
   CHANNEL_CREATE: E,
   CHANNEL_DELETE: y,
   CHANNEL_UPDATES: b,
-  CONNECTION_OPEN: S,
-  CONNECTION_OPEN_SUPPLEMENTAL: S,
+  CONNECTION_OPEN: T,
+  CONNECTION_OPEN_SUPPLEMENTAL: T,
   CHANNEL_SAFETY_WARNING_FEEDBACK: O,
   CLEAR_CHANNEL_SAFETY_WARNINGS: v,
-  DISMISS_CHANNEL_SAFETY_WARNINGS: I,
-  ACKNOWLEDGE_CHANNEL_SAFETY_WARNING_TOOLTIP: T
+  DISMISS_CHANNEL_SAFETY_WARNINGS: S,
+  ACKNOWLEDGE_CHANNEL_SAFETY_WARNING_TOOLTIP: I
 })

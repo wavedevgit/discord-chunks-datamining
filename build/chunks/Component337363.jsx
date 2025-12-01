@@ -2,7 +2,7 @@
 /** chunk id: 337363, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  _: () => _
+  _: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,7 +19,7 @@ let c = 8,
     return Math.max(-n, Math.min(n, e))
   };
 
-function _(e) {
+function p(e) {
   let {
     caretConfig: t
   } = e, {
@@ -34,9 +34,9 @@ function _(e) {
       "--custom-caret-offset-x": ["top", "bottom"].includes(n) ? "".concat(f(c, u), "px") : "0px",
       "--custom-caret-offset-y": ["left", "right"].includes(n) ? "".concat(f(c, u), "px") : "0px"
     } : true,
-    _ = a()(l.caret, l["caret--".concat(n)], l["caret--".concat(i)]);
+    p = a()(l.caret, l["caret--".concat(n)], l["caret--".concat(i)]);
   return (0, r.jsx)("div", {
-    className: _,
+    className: p,
     style: d,
     children: (0, r.jsx)(o.V, {})
   })

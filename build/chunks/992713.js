@@ -2,7 +2,7 @@
 /** chunk id: 992713, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./388685.js"), require("./642613.js");
 var Chunk108131 = require("./108131.js"),
   i = require.n(Chunk108131),
@@ -38,7 +38,7 @@ class y extends Chunk147913.Z {
   }
   constructor(...e) {
     super(...e), g(this, "actions", {
-      GUILD_CREATE: I,
+      GUILD_CREATE: S,
       DELETED_ENTITY_IDS: O
     })
   }
@@ -46,38 +46,38 @@ class y extends Chunk147913.Z {
 
 function O(e) {
   var t;
-  let n = null == (t = p.Z.getGuild(e.guild_id)) ? true : t.name;
+  let n = null == (t = _.Z.getGuild(e.guild_id)) ? true : t.name;
   b.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), a.ZP.Emitter.batched(() => {
-    null != e.channels && C(e.guild_id, new Set(e.channels)), null != e.roles && N(e.guild_id, new Set(e.roles)), null != e.emojis && R(e.guild_id, new Set(e.emojis)), null != e.stickers && P(e.guild_id, new Set(e.stickers))
+    null != e.channels && C(e.guild_id, new Set(e.channels)), null != e.roles && N(e.guild_id, new Set(e.roles)), null != e.emojis && P(e.guild_id, new Set(e.emojis)), null != e.stickers && R(e.guild_id, new Set(e.stickers))
   })
 }
 
 function v() {
   Chunk662896.Z.getAll().then(e => {
-    e.forEach(e => T(e))
+    e.forEach(e => I(e))
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     guild: t
   } = e;
-  t.unableToSyncDeletes && T(t.id)
+  t.unableToSyncDeletes && I(t.id)
+}
+
+function I(e) {
+  setTimeout(() => T(e), Math.ceil(Math.random() * E))
 }
 
 function T(e) {
-  setTimeout(() => S(e), Math.ceil(Math.random() * E))
-}
-
-function S(e) {
   var t, n, r;
-  let i = null == (t = p.Z.getGuild(e)) ? true : t.name;
+  let i = null == (t = _.Z.getGuild(e)) ? true : t.name;
   b.fileOnly("requesting deleted guild entities (id: ".concat(e, ", name: ").concat(i, ")"));
   let a = A(Object.keys(f.Z.getMutableBasicGuildChannelsForGuild(e))),
-    o = A(_.Z.getSortedRoles(e).map(e => e.id)),
+    o = A(p.Z.getSortedRoles(e).map(e => e.id)),
     s = A(u.ZP.getGuildEmoji(e).map(e => e.id)),
     l = A(null != (r = null == (n = d.Z.getStickersByGuildId(e)) ? true : n.map(e => e.id)) ? r : []);
-  m.Z.getSocket().getDeletedEntityIdsNotMatchingHash(e, a, o, s, l)
+  h.Z.getSocket().getDeletedEntityIdsNotMatchingHash(e, a, o, s, l)
 }
 
 function A(e) {
@@ -85,7 +85,7 @@ function A(e) {
 }
 
 function C(e, t) {
-  let n = h.default.keys(f.Z.getMutableBasicGuildChannelsForGuild(e));
+  let n = m.default.keys(f.Z.getMutableBasicGuildChannelsForGuild(e));
   b.fileOnly("syncChannels", {
     channelIdsInMemory: n,
     channelIdsFromServer: t
@@ -102,7 +102,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  h.default.keys(_.Z.getUnsafeMutableRoles(e)).forEach(n => {
+  m.default.keys(p.Z.getUnsafeMutableRoles(e)).forEach(n => {
     t.has(n) || o.Z.dispatch({
       type: "GUILD_ROLE_DELETE",
       guildId: e,
@@ -111,7 +111,7 @@ function N(e, t) {
   })
 }
 
-function R(e, t) {
+function P(e, t) {
   let n = u.ZP.getGuildEmoji(e),
     r = n.filter(e => t.has(e.id));
   n.length !== r.length && o.Z.dispatch({
@@ -121,7 +121,7 @@ function R(e, t) {
   })
 }
 
-function P(e, t) {
+function R(e, t) {
   var n;
   let r = null != (n = d.Z.getStickersByGuildId(e)) ? n : [],
     i = r.filter(e => t.has(e.id));
@@ -131,4 +131,4 @@ function P(e, t) {
     stickers: i
   })
 }
-let D = new y
+let w = new y

@@ -13,7 +13,7 @@ var r, i, Chunk54381 = require("./54381.js"),
   Chunk215569 = require("./215569.js"),
   Chunk466842 = require("./466842.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,20 +22,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,8 +46,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -167,7 +167,7 @@ class g extends(r = Chunk473749.PureComponent) {
       baseHeight: a,
       targetHeight: o
     } = this.state, s = null != (e = this.props.sideMargin) ? module : 0, l = null != (t = this.props.verticalMargin) ? exports : 0, u = 1 === i, d = 0 === i;
-    return m(p({}, {
+    return h(_({}, {
       overflow: Chunk215569 || Chunk793030 ? "hidden" : "visible",
       position: Chunk793030 ? "absolute" : true,
       top: Chunk793030 ? l : true,
@@ -219,15 +219,15 @@ class g extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), p(this, "state", {
       animationProgress: new c.Z.Value(0),
       targetHeight: 0,
       baseHeight: 0,
       animationState: null
-    }), _(this, "direction", this.props.getDirection()), _(this, "_measureRef", o.createRef())
+    }), p(this, "direction", this.props.getDirection()), p(this, "_measureRef", o.createRef())
   }
 }
-_(g, "contextType", Chunk793030.Sfi), _(g, "defaultProps", {
+p(g, "contextType", Chunk793030.Sfi), p(g, "defaultProps", {
   duration: 300
 });
 class E extends(i = Chunk473749.Component) {
@@ -255,16 +255,16 @@ class E extends(i = Chunk473749.Component) {
       sideMargin: s,
       verticalMargin: c,
       children: u,
-      fillParent: _,
-      animationMotionType: p
+      fillParent: p,
+      animationMotionType: _
     } = this.props;
     return (0, Chunk54381.jsx)(Chunk215569.W, {
       component: "div",
       className: l()(Chunk466842.transitionGroup, require),
       children: (0, Chunk54381.jsx)(g, {
-        fillParent: _,
+        fillParent: p,
         sideMargin: Chunk120356,
-        animationMotionType: null != p ? p : "slide",
+        animationMotionType: null != _ ? _ : "slide",
         verticalMargin: Chunk748780,
         getDirection: this.getDirection,
         getBaseHeight: this.getBaseHeight,
@@ -277,13 +277,13 @@ class E extends(i = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "stepHeights", {}), _(this, "prevStep", null), _(this, "prevSteps", []), _(this, "getBaseHeight", () => null != this.prevStep && null != this.stepHeights[this.prevStep] ? this.stepHeights[this.prevStep] : 0), _(this, "getDirection", () => {
+    super(...e), p(this, "stepHeights", {}), p(this, "prevStep", null), p(this, "prevSteps", []), p(this, "getBaseHeight", () => null != this.prevStep && null != this.stepHeights[this.prevStep] ? this.stepHeights[this.prevStep] : 0), p(this, "getDirection", () => {
       let {
         steps: e,
         step: t
       } = this.props, n = null != this.prevStep ? e.indexOf(this.prevStep) : false, r = false === n && null != this.prevStep ? this.prevSteps.indexOf(this.prevStep) : false;
       return Math.max(n, r) > e.indexOf(t) ? false : 1
-    }), _(this, "setHeight", e => {
+    }), p(this, "setHeight", e => {
       let {
         step: t
       } = this.props;
@@ -291,7 +291,7 @@ class E extends(i = Chunk473749.Component) {
     })
   }
 }
-_(E, "defaultProps", {
+p(E, "defaultProps", {
   fillParent: false,
   animationMotionType: "slide"
 })

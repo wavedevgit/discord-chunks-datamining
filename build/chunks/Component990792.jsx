@@ -1,31 +1,29 @@
 /** Chunk was on 56035 **/
 /** chunk id: 990792, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  Chunk780384 = require("./780384.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
-  Chunk44315 = require("./44315.js"),
   Chunk293501 = require("./293501.js"),
   Chunk943351 = require("./943351.js"),
-  Chunk231338 = require("./231338.js"),
   Chunk782445 = require("./782445.js");
-let v = Chunk473749.memo(function(e) {
+let g = Chunk473749.memo(function(e) {
   let {
     file: n,
     audio: t,
     className: i,
-    waveformSettings: v
-  } = e, [p, b] = a.useState({
+    waveformSettings: g
+  } = e, [h, v] = a.useState({
     width: 0,
     height: 0
-  }), y = a.useRef(null), j = a.useMemo(() => {
+  }), p = a.useRef(null), b = a.useMemo(() => {
     var e;
     let n = null != (e = null == t ? true : t.duration) ? e : 1;
     return function(e) {
@@ -47,51 +45,51 @@ let v = Chunk473749.memo(function(e) {
       return e
     }({
       fineTuning: false,
-      fineTuningResolution: n / m.nl.fineTuningScale,
+      fineTuningResolution: n / f.nl.fineTuningScale,
       duration: n
-    }, null != v ? v : {})
-  }, [t, v]), x = (0, f.b1)(n), N = (0, f.NN)(x, y.current, j), w = (0, c.ZP)(), C = (0, d.Sl)((0, o.wj)(w) ? g.Il.PRIMARY_300 : g.Il.PRIMARY_700), S = null == x || null == N, O = (0 === p.width || 0 === p.height || S) && null != n, Z = a.useCallback(() => {
-    null != y.current && b({
-      width: y.current.offsetWidth,
-      height: y.current.offsetHeight
+    }, null != g ? g : {})
+  }, [t, g]), y = (0, d.b1)(n), j = (0, d.NN)(y, p.current, b), x = (0, c.ZP)(), N = (0, u.dQu)(o.Z.colors.ICON_PRIMARY).hex(), w = null == y || null == j, C = (0 === h.width || 0 === h.height || w) && null != n, S = a.useCallback(() => {
+    null != p.current && v({
+      width: p.current.offsetWidth,
+      height: p.current.offsetHeight
     })
   }, []);
   return a.useEffect(() => {
-    if (null != y.current) {
-      let e = new ResizeObserver((0, s.debounce)(Z, 50));
-      return e.observe(y.current), () => {
+    if (null != p.current) {
+      let e = new ResizeObserver((0, s.debounce)(S, 50));
+      return e.observe(p.current), () => {
         e.disconnect()
       }
     }
-  }, [Z]), a.useEffect(() => {
-    if (null == y.current) return;
-    let e = y.current,
+  }, [S]), a.useEffect(() => {
+    if (null == p.current) return;
+    let e = p.current,
       n = e.getContext("2d");
     if (null == n) return;
     let {
       width: t,
       height: l
     } = e;
-    if (0 !== p.width && 0 !== p.height && null != N && N.length > 0) {
-      let e = t / N.length,
-        a = -(e * (m.nl.waveformBarWidth - 1));
-      n.clearRect(0, 0, t, l), n.fillStyle = C.hex;
-      for (let t = 0; t < N.length; t++) {
-        let i = N[t] * l,
+    if (0 !== h.width && 0 !== h.height && null != j && j.length > 0) {
+      let e = t / j.length,
+        a = -(e * (f.nl.waveformBarWidth - 1));
+      n.clearRect(0, 0, t, l), n.fillStyle = N;
+      for (let t = 0; t < j.length; t++) {
+        let i = j[t] * l,
           r = t * e + a,
           s = l / 2 - i / 2;
         n.fillRect(r, s, e - a, i)
       }
     }
-  }, [C, p, w, N]), (0, l.jsxs)("div", {
-    className: r()(h.container, i),
+  }, [N, h, x, j]), (0, l.jsxs)("div", {
+    className: r()(m.container, i),
     children: [(0, l.jsx)("canvas", {
-      className: h.waveformCanvas,
-      ref: y,
-      width: 4 * p.width,
-      height: 4 * p.height
-    }), O && (0, l.jsx)("div", {
-      className: h.loading,
+      className: m.waveformCanvas,
+      ref: p,
+      width: 4 * h.width,
+      height: 4 * h.height
+    }), C && (0, l.jsx)("div", {
+      className: m.loading,
       children: (0, l.jsx)(u.$jN, {
         type: u.RAz.SPINNING_CIRCLE
       })

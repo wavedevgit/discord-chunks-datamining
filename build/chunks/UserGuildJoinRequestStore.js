@@ -2,8 +2,8 @@
 /** chunk id: 937111, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P,
-  j: () => h
+  Z: () => R,
+  j: () => m
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -22,10 +22,10 @@ function c(e, t, n) {
 let u = null,
   d = {},
   f = false,
-  _ = {},
-  p = {};
+  p = {},
+  _ = {};
 
-function h(e) {
+function m(e) {
   return {
     joinRequestId: e.join_request_id,
     guildId: e.guild_id,
@@ -42,7 +42,7 @@ function h(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   delete d[e], u === e && (u = null)
 }
 
@@ -50,11 +50,11 @@ function g(e) {
   let {
     guildJoinRequests: t
   } = e;
-  f = false, _ = {}, d = {}, t.forEach(e => {
+  f = false, p = {}, d = {}, t.forEach(e => {
     let {
       guild_id: t
     } = e;
-    null != t && (d[t] = h(e))
+    null != t && (d[t] = m(e))
   })
 }
 
@@ -63,9 +63,9 @@ function E(e) {
     request: t,
     guildId: n
   } = e;
-  if (null == t) return void m(n);
-  let r = h(t);
-  (0, l.d3)(r) ? m(n): d[n] = r
+  if (null == t) return void h(n);
+  let r = m(t);
+  (0, l.d3)(r) ? h(n): d[n] = r
 }
 
 function b(e) {
@@ -74,24 +74,24 @@ function b(e) {
     request: n
   } = e;
   if (null == n) return;
-  let r = h(n),
+  let r = m(n),
     i = o.default.getCurrentUser();
   if (null != i && r.userId !== i.id) returnfalse;
-  (0, l.d3)(r) ? m(t): d[t] = r
+  (0, l.d3)(r) ? h(t): d[t] = r
 }
 
 function y(e) {
   let {
     guildId: t
   } = e;
-  m(t)
+  h(t)
 }
 
 function O(e) {
   let {
     guild: t
   } = e;
-  m(t.id)
+  h(t.id)
 }
 
 function v(e) {
@@ -105,7 +105,7 @@ function v(e) {
     let {
       guild_id: e
     } = r;
-    d[e] = h(r);
+    d[e] = m(r);
     let {
       id: t,
       name: i,
@@ -113,7 +113,7 @@ function v(e) {
       features: o,
       splash: s
     } = n;
-    _[t] = {
+    p[t] = {
       id: t,
       name: i,
       icon: a,
@@ -123,7 +123,7 @@ function v(e) {
   }
 }
 
-function I(e) {
+function S(e) {
   let {
     guilds: t
   } = e;
@@ -135,7 +135,7 @@ function I(e) {
       icon: i,
       splash: a
     } = e;
-    _[t] = {
+    p[t] = {
       id: t,
       name: n,
       features: r,
@@ -145,15 +145,15 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     guildId: t,
     cooldown: n
   } = e;
-  p[t] = null != n ? n : 0
+  _[t] = null != n ? n : 0
 }
 
-function S(e) {
+function T(e) {
   let {
     form: t,
     guildId: n
@@ -166,7 +166,7 @@ function S(e) {
       features: a,
       splash: o
     } = t.guild;
-    _[n] = {
+    p[n] = {
       id: e,
       name: r,
       icon: i,
@@ -180,7 +180,7 @@ function A(e) {
   let {
     guildId: t
   } = e;
-  m(t)
+  h(t)
 }
 
 function C(e) {
@@ -193,7 +193,7 @@ function C(e) {
 function N() {
   u = null
 }
-class R extends(r = Chunk442837.ZP.Store) {
+class P extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
@@ -204,7 +204,7 @@ class R extends(r = Chunk442837.ZP.Store) {
     return Object.values(d).map(e => null == e ? true : e.guildId).filter(e => null != e)
   }
   getJoinRequestGuild(e) {
-    return null != _[e] ? (0, s.yS)(_[e]) : null
+    return null != p[e] ? (0, s.yS)(p[e]) : null
   }
   get hasFetchedRequestToJoinGuilds() {
     return f
@@ -213,22 +213,22 @@ class R extends(r = Chunk442837.ZP.Store) {
     return null != u
   }
   getCooldown(e) {
-    return p[e]
+    return _[e]
   }
 }
-c(R, "displayName", "UserGuildJoinRequestStore");
-let P = new R(Chunk570140.Z, {
+c(P, "displayName", "UserGuildJoinRequestStore");
+let R = new P(Chunk570140.Z, {
   CONNECTION_OPEN: g,
   GUILD_JOIN_REQUEST_UPDATE: b,
   GUILD_JOIN_REQUEST_CREATE: b,
   GUILD_JOIN_REQUEST_DELETE: y,
   USER_GUILD_JOIN_REQUEST_UPDATE: E,
   GUILD_DELETE: O,
-  USER_JOIN_REQUEST_GUILDS_FETCH: I,
-  MEMBER_VERIFICATION_FORM_UPDATE: S,
+  USER_JOIN_REQUEST_GUILDS_FETCH: S,
+  MEMBER_VERIFICATION_FORM_UPDATE: T,
   INVITE_ACCEPT_SUCCESS: v,
   ACK_APPROVED_GUILD_JOIN_REQUEST: A,
   USER_GUILD_JOIN_REQUEST_COACHMARK_SHOW: C,
   USER_GUILD_JOIN_REQUEST_COACHMARK_CLEAR: N,
-  USER_GUILD_JOIN_REQUEST_COOLDOWN_FETCH: T
+  USER_GUILD_JOIN_REQUEST_COOLDOWN_FETCH: I
 })

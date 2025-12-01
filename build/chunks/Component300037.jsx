@@ -25,14 +25,14 @@ let E = function(e) {
     className: t,
     guildId: n,
     boostingVariant: i
-  } = e, E = (0, o.e7)([_.Z], () => _.Z.getGuild(n), [n]), b = (0, f.Z)(null == E ? true : E.id).total;
+  } = e, E = (0, o.e7)([p.Z], () => p.Z.getGuild(n), [n]), b = (0, f.Z)(null == E ? true : E.id).total;
   return null == E ? (0, r.jsx)("div", {
     className: a()(t, g.guildContainer),
     children: (0, r.jsx)("div", {
       className: g.guildInfoContainer,
       children: (0, r.jsx)(l.Text, {
         variant: "text-lg/bold",
-        children: m.intl.string(m.t["6Kwwuo"])
+        children: h.intl.string(h.t["6Kwwuo"])
       })
     })
   }) : (0, r.jsxs)("div", {
@@ -54,7 +54,7 @@ let E = function(e) {
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
-          children: m.intl.format(m.t["pob/cL"], {
+          children: h.intl.format(h.t["pob/cL"], {
             subscriptions: b
           })
         }), (0, r.jsx)("div", {
@@ -62,7 +62,7 @@ let E = function(e) {
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
-          children: (0, p.nW)(E.premiumTier, {
+          children: (0, _.nW)(E.premiumTier, {
             useLevels: false
           })
         })]
@@ -70,23 +70,23 @@ let E = function(e) {
     }), i ? (0, r.jsx)(d.Z, {
       guild: E,
       analyticsLocation: {
-        page: h.ZY5.GUILD_BOOSTING_USER_SETTINGS,
-        section: h.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
-        object: h.qAy.BUTTON_CTA,
-        objectType: h.AnalyticsObjectTypes.BUY
+        page: m.ZY5.GUILD_BOOSTING_USER_SETTINGS,
+        section: m.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
+        object: m.qAy.BUTTON_CTA,
+        objectType: m.AnalyticsObjectTypes.BUY
       },
       pauseAnimation: true,
       size: s.zx.Sizes.MEDIUM,
       color: s.zx.Colors.PRIMARY,
-      buttonText: m.intl.string(m.t.aBHecF)
+      buttonText: h.intl.string(h.t.aBHecF)
     }) : (0, r.jsx)(l.Button, {
       variant: "secondary",
-      text: m.intl.string(m.t.KLOhbO),
+      text: h.intl.string(h.t.KLOhbO),
       onClick: () => {
         (0, u.f)({
           guildId: E.id,
           location: {
-            section: h.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
+            section: m.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
           }
         })
       }

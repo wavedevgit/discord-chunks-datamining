@@ -2,7 +2,7 @@
 /** chunk id: 260736, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,17 +16,17 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk587091 = require("./587091.js");
 
-function _(e) {
+function p(e) {
   let {
     compact: t,
     message: n,
-    channel: _
-  } = e, p = (0, s.ZP)(n), h = (0, l.l)({
+    channel: p
+  } = e, _ = (0, s.ZP)(n), m = (0, l.l)({
     user: n.author,
     channelId: n.channel_id,
-    guildId: _.guild_id,
+    guildId: p.guild_id,
     messageId: n.id
-  })(p), m = o.Z.getArticleURL(u.BhN.HD_STREAMING_POTION);
+  })(_), h = o.Z.getArticleURL(u.BhN.HD_STREAMING_POTION);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.parentContainer,
@@ -37,8 +37,8 @@ function _(e) {
         timestamp: n.timestamp,
         compact: t,
         children: d.intl.format(d.t.u0qJ4z, {
-          actorName: p.nick,
-          actorHook: h
+          actorName: _.nick,
+          actorHook: m
         })
       })
     }), (0, r.jsxs)(i.P3F, {
@@ -57,7 +57,7 @@ function _(e) {
           color: "text-primary",
           variant: "text-xs/normal",
           children: d.intl.format(d.t["bmGF+V"], {
-            helpCenterLink: m
+            helpCenterLink: h
           })
         })]
       })]

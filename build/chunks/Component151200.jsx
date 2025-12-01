@@ -2,7 +2,7 @@
 /** chunk id: 151200, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -77,7 +77,7 @@ function v(e, t) {
   return i
 }
 
-function I(e) {
+function S(e) {
   let {
     className: t,
     clickableClassName: n,
@@ -119,45 +119,45 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   var {
     clickable: t
   } = e, n = O(e, ["clickable"]);
-  return (0, r.jsx)(I, y(E({}, n), {
+  return (0, r.jsx)(S, y(E({}, n), {
     clickable: y(E({}, t), {
       ariaDescription: ""
     }),
-    clickableClassName: m.clickable
+    clickableClassName: h.clickable
   }))
 }
 
-function S(e) {
+function T(e) {
   let {
     entry: t,
     channel: n,
     title: i,
-    subtitle: m,
+    subtitle: h,
     thumbnailUrl: g,
     titleClickable: b,
     subtitleClickable: y,
     thumbnailClickable: O,
     providerIconProps: v,
-    style: S = {}
+    style: T = {}
   } = e, A = (0, f.Dt)(), {
     primaryColor: C,
     secondaryColor: N
   } = (0, u.Z)(g);
-  return null != g && (S.background = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")")), (0, r.jsx)(o.f6W, {
-    theme: _.BR.DARK,
+  return null != g && (T.background = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")")), (0, r.jsx)(o.f6W, {
+    theme: p.BR.DARK,
     disableAdaptiveTheme: true,
     children: e => (0, r.jsxs)("figure", {
-      "aria-roledescription": p.intl.string(p.t.zFfUhF),
+      "aria-roledescription": _.intl.string(_.t.zFfUhF),
       "aria-labelledby": A,
-      className: a()(h.container, e),
-      style: S,
-      children: [(0, r.jsx)(I, {
-        className: h.thumbnailContainer,
-        clickableClassName: h.clickable,
+      className: a()(m.container, e),
+      style: T,
+      children: [(0, r.jsx)(S, {
+        className: m.thumbnailContainer,
+        clickableClassName: m.clickable,
         clickable: O,
         children: (0, r.jsx)(l.f, {
           src: g,
@@ -166,45 +166,45 @@ function S(e) {
           "aria-hidden": true
         })
       }), (0, r.jsxs)("div", {
-        className: h.infoContainer,
+        className: m.infoContainer,
         children: [(0, r.jsx)(s.Z, {
           channel: n,
           entry: t,
-          className: h.users
+          className: m.users
         }), (0, r.jsx)(o.LZC, {
           size: 2
-        }), (0, r.jsx)(T, {
+        }), (0, r.jsx)(I, {
           clickable: b,
-          className: h.clickableText,
+          className: m.clickableText,
           children: (0, r.jsx)(o.Heading, {
             id: A,
             variant: "heading-md/medium",
             lineClamp: 1,
-            className: a()(h.textPrimary, h.truncatedText),
+            className: a()(m.textPrimary, m.truncatedText),
             scaleFontToUserSetting: true,
             children: i
           })
-        }), null != m ? (0, r.jsxs)(r.Fragment, {
+        }), null != h ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.LZC, {
             size: 2
-          }), (0, r.jsx)(T, {
+          }), (0, r.jsx)(I, {
             clickable: y,
-            className: h.clickableText,
+            className: m.clickableText,
             children: (0, r.jsx)(o.Text, {
               variant: "text-sm/normal",
-              className: a()(h.textSecondary, h.truncatedText),
+              className: a()(m.textSecondary, m.truncatedText),
               lineClamp: 1,
               scaleFontToUserSetting: true,
-              children: m
+              children: h
             })
           })]
         }) : null, (0, r.jsx)(d.PZ, {
-          className: h.badges,
+          className: m.badges,
           entry: t,
           location: d.Gt.EMBED
         })]
       }), (0, r.jsx)("div", {
-        className: h.headerIcons,
+        className: m.headerIcons,
         children: null != v ? (0, r.jsx)(c.Z, E({}, v)) : null
       })]
     })

@@ -16,12 +16,12 @@ function i(e, t, n, r) {
   c.item.extent.extentLength = d;
   let f = e.getUint8(i.baseOffsetSize) >> 4;
   c.item.baseOffset = f;
-  let _ = o(e, i.indexSize, t);
-  c.item.extent.extentIndex = true !== _ ? _ : 0;
-  let p = s(e, i.itemCount, t);
+  let p = o(e, i.indexSize, t);
+  c.item.extent.extentIndex = true !== p ? p : 0;
+  let _ = s(e, i.itemCount, t);
   return {
     type: "iloc",
-    items: l(e, t, i, c, u, d, _, p),
+    items: l(e, t, i, c, u, d, p, _),
     length: r
   }
 }

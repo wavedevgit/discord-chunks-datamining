@@ -66,25 +66,25 @@ let c = function(e, t) {
     }
     let [d, f] = a.M8.isRange(n) ? a.M8.edges(n) : a.bN.edges(e, n);
     if (null != i || null != o) {
-      var _, p, h;
+      var p, _, m;
       if (s) {
-        let t = null != (_ = a.bN.before(e, d, {
+        let t = null != (p = a.bN.before(e, d, {
           distance: i,
           unit: o
-        })) ? _ : a.bN.start(e, []);
+        })) ? p : a.bN.start(e, []);
         if ("character" === o && (null != i ? i : 1) === 1 && a.C0.equals(d.path, f.path)) {
           let n = a.bN.leaf(e, d.path),
             r = null != n ? n[0].text : "";
-          r.length > 0 && null != r[r.length - 1].match(/[\u0E00-\u0E7F]/) && (t = null != (p = a.bN.before(e, d, {
+          r.length > 0 && null != r[r.length - 1].match(/[\u0E00-\u0E7F]/) && (t = null != (_ = a.bN.before(e, d, {
             distance: i,
             unit: "offset"
-          })) ? p : a.bN.start(e, []))
+          })) ? _ : a.bN.start(e, []))
         }
         d = t
-      } else f = null != (h = a.bN.after(e, f, {
+      } else f = null != (m = a.bN.after(e, f, {
         distance: i,
         unit: o
-      })) ? h : a.bN.end(e, [])
+      })) ? m : a.bN.end(e, [])
     }
     if (null != c) {
       let [e, t] = a.M8.edges(c);

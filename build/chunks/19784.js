@@ -25,26 +25,26 @@ var Chunk239189 = require("./239189.js"),
             return t.priority > e.priority
           }), s.splice(~t ? t : s.length, 0, e))
         },
-        _ = function() {
+        p = function() {
           if (!t) try {
-            m(), e(_)
+            h(), e(p)
           } catch (e) {
             console.error(e)
           }
         },
-        p = function() {
-          t && (t = false, 0 == a && (a = r.now(), e(_)))
+        _ = function() {
+          t && (t = false, 0 == a && (a = r.now(), e(p)))
         },
-        h = [];
+        m = [];
       this.setTimeout = function(e, t) {
         var n = r.now() + t,
           i = function() {
-            var e = h.findIndex(function(e) {
+            var e = m.findIndex(function(e) {
               return e.cancel == i
             });
-            e >= 0 && h.splice(e, 1)
+            e >= 0 && m.splice(e, 1)
           },
-          a = o(h, function(e) {
+          a = o(m, function(e) {
             return e.time > n
           }),
           s = {
@@ -52,15 +52,15 @@ var Chunk239189 = require("./239189.js"),
             handler: e,
             cancel: i
           };
-        return h.splice(a, 0, s), p(), s
+        return m.splice(a, 0, s), _(), s
       };
-      var m = this.advance = function() {
+      var h = this.advance = function() {
         var e = r.now();
-        if (c.size && (c.forEach(f), c.clear()), h.length && r.batchedUpdates(function() {
-            var t = o(h, function(t) {
+        if (c.size && (c.forEach(f), c.clear()), m.length && r.batchedUpdates(function() {
+            var t = o(m, function(t) {
               return t.time > e
             });
-            h.splice(0, t).forEach(function(e) {
+            m.splice(0, t).forEach(function(e) {
               return e.handler()
             })
           }), e > a) {
@@ -77,9 +77,9 @@ var Chunk239189 = require("./239189.js"),
         }
       };
       this.start = function(e) {
-        l > e.priority ? c.add(e) : (f(e), p())
+        l > e.priority ? c.add(e) : (f(e), _())
       }, this.onFrame = function(e) {
-        u.add(e), p()
+        u.add(e), _()
       }, this.onWrite = function(e) {
         n ? e(a) : d.add(e)
       }

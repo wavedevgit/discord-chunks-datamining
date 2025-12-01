@@ -18,18 +18,18 @@ let u = e => "".concat(e.toFixed(0), "%"),
       minValue: a = 0,
       maxValue: d = 100,
       onChange: f,
-      onInteraction: _,
-      renderValue: p = u,
-      "aria-label": h
-    } = e, m = i.useRef(null), g = i.useMemo(() => o().debounce(() => null == _ ? true : _(s.U.SLIDER), 100), [_]);
+      onInteraction: p,
+      renderValue: _ = u,
+      "aria-label": m
+    } = e, h = i.useRef(null), g = i.useMemo(() => o().debounce(() => null == p ? true : p(s.U.SLIDER), 100), [p]);
     i.useImperativeHandle(t, () => ({
       focus: () => {
         var e;
-        return null == (e = m.current) ? true : e.focus()
+        return null == (e = h.current) ? true : e.focus()
       },
       blur: () => {
         var e;
-        return null == (e = m.current) ? true : e.blur()
+        return null == (e = h.current) ? true : e.blur()
       },
       activate: () => false
     }), []);
@@ -39,7 +39,7 @@ let u = e => "".concat(e.toFixed(0), "%"),
     return (0, r.jsx)("div", {
       className: c.sliderContainer,
       children: (0, r.jsx)(l.i, {
-        ref: m,
+        ref: h,
         mini: true,
         handleSize: 16,
         className: c.slider,
@@ -48,9 +48,9 @@ let u = e => "".concat(e.toFixed(0), "%"),
         maxValue: d,
         onValueChange: E,
         asValueChanges: f,
-        onValueRender: p,
+        onValueRender: _,
         orientation: "horizontal",
-        "aria-label": h
+        "aria-label": m
       })
     })
   })

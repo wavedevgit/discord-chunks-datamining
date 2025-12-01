@@ -50,34 +50,34 @@ let u = 5 * require("./70956.js").Z.Millis.DAY,
   d = 3,
   f = new Chunk692114.Z("overlay_survey_timestamps");
 
-function _() {
+function p() {
   return Array.from(f.values()).reduce((e, t) => Math.max(e, t), 0)
 }
 
-function p() {
+function _() {
   let e = Date.now(),
-    t = _();
+    t = p();
   return null != exports && module - exports < u
 }
 
-function h() {
+function m() {
   return Array.from(f.values()).filter(e => {
     let t = new Date(e);
     return t.getMonth() === new Date().getMonth() && t.getFullYear() === new Date().getFullYear()
   }).length >= d
 }
 
-function m() {
+function h() {
   let e = Date.now();
   f.add(module)
 }
 
 function g(e, t) {
-  p() || h() || (0, i.ZDy)(async () => {
+  _() || m() || (0, i.ZDy)(async () => {
     let {
       default: i
     } = await n.e("20114").then(n.bind(n, 536920));
-    return m(), n => (0, r.jsx)(i, c(s({}, n), {
+    return h(), n => (0, r.jsx)(i, c(s({}, n), {
       clientSettingType: e,
       gameId: t
     }))

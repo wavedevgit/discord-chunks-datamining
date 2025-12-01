@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,12 +47,12 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = {
+let h = {
     bronze: {
       type: "custom",
       start: Chunk692547.Z.colors.EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_START,
@@ -100,16 +100,16 @@ let m = {
       body: n,
       showGraphic: a,
       showActions: f,
-      badgeId: p,
+      badgeId: _,
       showProgress: g,
       progressCircleText: E,
       progressCirclePercent: b,
       progressCircleUrgency: y,
       delay: O,
       size: v,
-      gradientColor: I,
-      estimatedTooltipHeight: T
-    } = e, S = i.useRef(null), A = i.useRef(null), C = i.useMemo(() => ({
+      gradientColor: S,
+      estimatedTooltipHeight: I
+    } = e, T = i.useRef(null), A = i.useRef(null), C = i.useMemo(() => ({
       bronze: u.VU.PREMIUM_TENURE_1_MONTH,
       silver: u.VU.PREMIUM_TENURE_3_MONTH,
       gold: u.VU.PREMIUM_TENURE_6_MONTH,
@@ -118,11 +118,11 @@ let m = {
       emerald: u.VU.PREMIUM_TENURE_36_MONTH,
       ruby: u.VU.PREMIUM_TENURE_60_MONTH,
       opal: u.VU.PREMIUM_TENURE_72_MONTH
-    })[p], [p]), N = null != C ? (0, c.J)(C) : null, R = i.useMemo(() => {
+    })[_], [_]), N = null != C ? (0, c.J)(C) : null, P = i.useMemo(() => {
       if (null == C) return "";
       let e = u.vK[C];
       return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
-    }, [C]), P = i.useMemo(() => {
+    }, [C]), R = i.useMemo(() => {
       if (!a || null == N) return;
       let e = g ? {
         progressCircleText: E,
@@ -133,15 +133,15 @@ let m = {
         type: "dynamic",
         component: o.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
         aspectRatio: "6/4",
-        props: _({
+        props: p({
           src: N,
-          alt: R
+          alt: P
         }, e)
       }
-    }, [a, N, R, g, E, b, y]), D = {
+    }, [a, N, P, g, E, b, y]), w = {
       title: t,
       body: n,
-      graphic: P,
+      graphic: R,
       actions: i.useMemo(() => {
         if (f) return [{
           text: "Got it",
@@ -150,8 +150,8 @@ let m = {
       }, [f]),
       delay: O,
       size: v,
-      gradientColor: i.useMemo(() => "string" == typeof I && I in m ? m[I] : I, [I]),
-      estimatedTooltipHeight: T
+      gradientColor: i.useMemo(() => "string" == typeof S && S in h ? h[S] : S, [S]),
+      estimatedTooltipHeight: I
     };
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(s.Text, {
@@ -167,17 +167,17 @@ let m = {
           width: "100%",
           marginTop: "200px"
         },
-        children: [(0, r.jsx)(l.B, h(_({
-          targetElementRef: S
-        }, D), {
+        children: [(0, r.jsx)(l.B, m(p({
+          targetElementRef: T
+        }, w), {
           children: (0, r.jsx)(s.Button, {
-            buttonRef: S,
+            buttonRef: T,
             variant: "primary",
             text: "Left"
           })
-        })), (0, r.jsx)(l.B, h(_({
+        })), (0, r.jsx)(l.B, m(p({
           targetElementRef: A
-        }, D), {
+        }, w), {
           children: (0, r.jsx)(s.Button, {
             buttonRef: A,
             variant: "primary",

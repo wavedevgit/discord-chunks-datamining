@@ -24,10 +24,10 @@ let c = e => {
       imageURL: null
     };
     let f = 600 * (0, o.Z)(),
-      _ = null != (i = null != (r = null != (n = (null == c || null == (t = c.assets) ? true : t.invite_cover_image) != null ? (0, a.xF)(c.application_id, c.assets.invite_cover_image, f) : null) ? n : d) ? r : u.getCoverImageURL(f)) ? i : null;
+      p = null != (i = null != (r = null != (n = (null == c || null == (t = c.assets) ? true : t.invite_cover_image) != null ? (0, a.xF)(c.application_id, c.assets.invite_cover_image, f) : null) ? n : d) ? r : u.getCoverImageURL(f)) ? i : null;
     return {
       cachedImageURL: d,
-      imageURL: _
+      imageURL: p
     }
   },
   u = e => {

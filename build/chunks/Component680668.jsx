@@ -2,7 +2,7 @@
 /** chunk id: 680668, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./997841.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,7 +33,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,77 +46,77 @@ function I(e) {
   return e
 }
 
-function T(e) {
-  var t, v, T;
-  let S, A, C, {
+function I(e) {
+  var t, v, I;
+  let T, A, C, {
       onTransitionToInviteChannel: N,
-      onAcceptInstantInvite: R,
-      guild: P,
-      invite: D,
-      message: w,
-      currentUserId: L
+      onAcceptInstantInvite: P,
+      guild: R,
+      invite: w,
+      message: D,
+      currentUserId: x
     } = e,
-    x = L === w.author.id,
+    L = x === D.author.id,
     {
-      channel: M,
-      approximate_member_count: k,
-      approximate_presence_count: j
-    } = D,
-    U = D.state === b.r2o.ACCEPTING,
-    G = null != M ? (0, h.jD)(M) : null,
-    B = null != P,
-    Z = null != G,
+      channel: j,
+      approximate_member_count: M,
+      approximate_presence_count: k
+    } = w,
+    U = w.state === b.r2o.ACCEPTING,
+    G = null != j ? (0, m.jD)(j) : null,
+    Z = null != R,
+    B = null != G,
     F = null != G && G.isGuildVocal(),
     V = null != G && G.isGuildStageVoice(),
-    H = (0, o.yE)(null != (t = D.flags) ? t : 0, a.$.IS_GUEST_INVITE),
-    W = null != (v = null == P ? true : P.features.has(b.GuildFeatures.HUB)) && v,
-    Y = null == P ? true : P.id,
+    H = (0, o.yE)(null != (t = w.flags) ? t : 0, a.$.IS_GUEST_INVITE),
+    Y = null != (v = null == R ? true : R.features.has(b.GuildFeatures.HUB)) && v,
+    W = null == R ? true : R.id,
     {
       analyticsLocations: K
     } = (0, d.ZP)(u.Z.INVITE_EMBED),
     [z, q] = i.useState(false),
-    X = i.useCallback(() => q(false), []),
-    Q = i.useRef(null),
+    Q = i.useCallback(() => q(false), []),
+    X = i.useRef(null),
     J = i.useCallback(() => {
-      q(true), (0, c.CB)(Y, "show profile", K)
-    }, [Y, K]),
+      q(true), (0, c.CB)(W, "show profile", K)
+    }, [W, K]),
     $ = i.useCallback(() => {
       let e = "noop";
-      B ? (N(), e = "transition") : (R(), e = "accept"), (0, c.r$)({
-        invite: D,
+      Z ? (N(), e = "transition") : (P(), e = "accept"), (0, c.r$)({
+        invite: w,
         action: e,
-        inviter_id: w.author.id,
-        invite_message_id: w.id
+        inviter_id: D.author.id,
+        invite_message_id: D.id
       }, K)
-    }, [D, w, K, B, N, R]);
-  if (null == P) {
-    if (null == D.guild) return (0, r.jsx)(E.Z, {});
-    (P = m.Qs(D.guild)).premiumTier = null != (T = D.guild.premium_tier) ? T : b.Eu4.NONE
+    }, [w, D, K, Z, N, P]);
+  if (null == R) {
+    if (null == w.guild) return (0, r.jsx)(E.Z, {});
+    (R = h.Qs(w.guild)).premiumTier = null != (I = w.guild.premium_tier) ? I : b.Eu4.NONE
   }
   let ee = (0, g.e)({
     isVoiceChannel: F,
-    isOwnInvite: x,
+    isOwnInvite: L,
     isGuest: H,
-    isHubGuild: W,
+    isHubGuild: Y,
     isStage: V,
     isStream: false
   });
   return A = (0, r.jsxs)("span", {
     className: O.infoTitle,
     children: [(0, r.jsx)(f.Z, {
-      guildId: P.id,
-      name: P.name,
+      guildId: R.id,
+      name: R.name,
       shouldShow: z,
-      onRequestClose: X,
-      targetElementRef: Q,
-      children: () => (0, r.jsx)(p.Z.GuildName, {
-        guild: P,
-        ref: Q
+      onRequestClose: Q,
+      targetElementRef: X,
+      children: () => (0, r.jsx)(_.Z.GuildName, {
+        guild: R,
+        ref: X
       })
     }), (0, r.jsx)("span", {
       className: O.infoBadge,
-      children: (0, r.jsx)(_.Z, {
-        guild: P,
+      children: (0, r.jsx)(p.Z, {
+        guild: R,
         isBannerVisible: false,
         disableBoostClick: true
       })
@@ -129,40 +129,40 @@ function T(e) {
       color: "currentColor",
       className: O.infoIcon
     })
-  })), F ? (A = (0, r.jsx)(p.Z.Channel, {
+  })), F ? (A = (0, r.jsx)(_.Z.Channel, {
     channel: G
-  }), S = (0, r.jsxs)("span", {
+  }), T = (0, r.jsxs)("span", {
     className: O.infoTitle,
     children: [y.intl.format(y.t["2wimj5"], {
-      guildName: P.name
+      guildName: R.name
     }), (0, r.jsx)("span", {
       className: O.infoBadge,
-      children: (0, r.jsx)(_.Z, {
-        guild: P,
+      children: (0, r.jsx)(p.Z, {
+        guild: R,
         isBannerVisible: false
       })
     })]
-  })) : null != k && k >= 5 || null != j && j > 0 ? S = (0, r.jsx)(p.Z.Data, {
-    members: k,
-    membersOnline: j
-  }) : Z && (S = (0, r.jsx)(p.Z.Channel, {
+  })) : null != M && M >= 5 || null != k && k > 0 ? T = (0, r.jsx)(_.Z.Data, {
+    members: M,
+    membersOnline: k
+  }) : B && (T = (0, r.jsx)(_.Z.Channel, {
     channel: G,
-    guild: P
-  })), (0, r.jsxs)(p.Z, {
-    children: [(0, r.jsx)(p.Z.GuildSplash, {
-      guild: P
-    }), (0, r.jsx)(p.Z.Header, {
+    guild: R
+  })), (0, r.jsxs)(_.Z, {
+    children: [(0, r.jsx)(_.Z.GuildSplash, {
+      guild: R
+    }), (0, r.jsx)(_.Z.Header, {
       text: ee,
       extra: C
-    }), (0, r.jsxs)(p.Z.Body, {
+    }), (0, r.jsxs)(_.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: O.headerLine,
-        children: [(0, r.jsx)(p.Z.Icon, {
-          guild: P
-        }), (0, r.jsx)(p.Z.Info, {
+        children: [(0, r.jsx)(_.Z.Icon, {
+          guild: R
+        }), (0, r.jsx)(_.Z.Info, {
           title: A,
           onClick: J,
-          children: S
+          children: T
         })]
       }), (0, r.jsx)("div", {
         className: O.buttonContainer,
@@ -171,10 +171,10 @@ function T(e) {
           loading: U,
           variant: "active",
           fullWidth: F,
-          text: F ? V ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : B ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
+          text: F ? V ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : Z ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
         })
       })]
-    }), P.features.has(b.GuildFeatures.HUB) && (0, r.jsxs)(r.Fragment, {
+    }), R.features.has(b.GuildFeatures.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: O.separator
       }), (0, r.jsx)(l.Text, {
@@ -185,7 +185,7 @@ function T(e) {
             let {
               default: e
             } = await Promise.all([n.e("7082"), n.e("98639")]).then(n.bind(n, 650233));
-            return t => (0, r.jsx)(e, I({}, t))
+            return t => (0, r.jsx)(e, S({}, t))
           })
         })
       })]

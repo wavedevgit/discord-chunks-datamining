@@ -20,37 +20,37 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = "MaskedLinkStore",
-  _ = new Set,
   p = new Set,
-  h = null == (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? true : r.replace("//", "");
+  _ = new Set,
+  m = null == (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? true : r.replace("//", "");
 
-function m(e) {
+function h(e) {
   let t = (0, c.F)(e);
   switch (t) {
     case window.GLOBAL_ENV.INVITE_HOST:
     case window.GLOBAL_ENV.GIFT_CODE_HOST:
     case window.GLOBAL_ENV.GUILD_TEMPLATE_HOST:
-    case h:
+    case m:
     case location.hostname:
       returntrue;
     default:
-      return u.SD.includes(t) || l.Z.isDiscordHostname(t) || _.has(t)
+      return u.SD.includes(t) || l.Z.isDiscordHostname(t) || p.has(t)
   }
 }
 
 function g(e) {
   let t = (0, c.E)(e);
-  return p.has(t)
+  return _.has(t)
 }
 
 function E(e) {
   let {
     url: t
   } = e;
-  if (m(t)) returnfalse;
-  _.add((0, c.F)(t)), o.K.set(f, {
-    trustedDomains: _,
-    trustedProtocols: p
+  if (h(t)) returnfalse;
+  p.add((0, c.F)(t)), o.K.set(f, {
+    trustedDomains: p,
+    trustedProtocols: _
   })
 }
 
@@ -59,26 +59,26 @@ function b(e) {
     url: t
   } = e;
   if (g(t)) returnfalse;
-  p.add((0, c.E)(t)), o.K.set(f, {
-    trustedDomains: _,
-    trustedProtocols: p
+  _.add((0, c.E)(t)), o.K.set(f, {
+    trustedDomains: p,
+    trustedProtocols: _
   })
 }
 class y extends(i = Chunk442837.ZP.Store) {
   initialize() {
     var e;
     let t = null != (e = Chunk433517.K.get(f)) ? module : {};
-    if (Array.isArray(exports)) _ = new Set(null != exports ? Array.from(exports) : null), p = new Set;
+    if (Array.isArray(exports)) p = new Set(null != exports ? Array.from(exports) : null), _ = new Set;
     else {
       let {
         trustedDomains: e,
         trustedProtocols: n
       } = exports;
-      _ = new Set(null != module ? Array.from(module) : null), p = new Set(null != require ? Array.from(require) : null)
+      p = new Set(null != module ? Array.from(module) : null), _ = new Set(null != require ? Array.from(require) : null)
     }
   }
   isTrustedDomain(e) {
-    return m(e)
+    return h(e)
   }
   isTrustedProtocol(e) {
     return g(e)

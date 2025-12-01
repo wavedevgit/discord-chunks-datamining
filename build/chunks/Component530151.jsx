@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 530151, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => et
+  Z: () => ee
 }), require("./415506.js"), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,7 +22,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk730749 = require("./730749.jsx"),
   Chunk112724 = require("./112724.jsx"),
   Chunk812206 = require("./812206.js"),
-  Chunk44315 = require("./44315.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk167533 = require("./167533.jsx"),
   Chunk925329 = require("./925329.jsx"),
@@ -40,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk248241 = require("./248241.js");
 
-function U(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,7 +47,7 @@ function U(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let G = e => {
+let U = e => {
     let {
       className: t,
       children: n,
@@ -61,8 +60,8 @@ let G = e => {
       children: n
     })
   },
-  B = [Chunk692547.Z.unsafe_rawColors.BLUE_345.css, Chunk692547.Z.colors.INTERACTIVE_NORMAL.css],
-  H = e => {
+  G = [Chunk692547.Z.unsafe_rawColors.BLUE_345.css, Chunk692547.Z.colors.INTERACTIVE_NORMAL.css],
+  B = e => {
     let {
       tooltip: t,
       onClick: n,
@@ -72,51 +71,51 @@ let G = e => {
       text: t,
       children: (0, r.jsx)(f.zx, {
         "aria-label": t,
-        className: k.actionButton,
-        innerClassName: k.actionButtonContents,
+        className: M.actionButton,
+        innerClassName: M.actionButtonContents,
         color: f.zx.Colors.PRIMARY,
         onClick: n,
         size: f.zx.Sizes.ICON,
         children: (0, r.jsx)(i, {
-          className: k.actionIcon
+          className: M.actionIcon
         })
       })
     })
   };
 
-function V(e, t) {
+function H(e, t) {
   switch (t) {
-    case D.f07.POST_INSTALL_SCRIPTS:
-    case D.f07.PLANNING:
-    case D.f07.FINALIZING:
-    case D.f07.ALLOCATING_DISK:
+    case R.f07.POST_INSTALL_SCRIPTS:
+    case R.f07.PLANNING:
+    case R.f07.FINALIZING:
+    case R.f07.ALLOCATING_DISK:
       return "".concat(e);
     default:
-      return (0, Z.BU)(e, {
+      return (0, A.BU)(e, {
         useKibibytes: true
       })
   }
 }
-let F = {
+let V = {
   [Chunk981631.vxO.INSTALLING]: {
-    [Chunk707409.J6.NONE]: (e, t, n, r) => M.intl.formatToPlainString(M.t.JfJt9d, {
+    [Chunk707409.J6.NONE]: (e, t, n, r) => D.intl.formatToPlainString(D.t.JfJt9d, {
       percent: e,
       progress: t,
       total: n
     }),
-    [Chunk707409.J6.SECONDS]: (e, t, n, r) => M.intl.formatToPlainString(M.t["1z3c6e"], {
+    [Chunk707409.J6.SECONDS]: (e, t, n, r) => D.intl.formatToPlainString(D.t["1z3c6e"], {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [Chunk707409.J6.MINUTES]: (e, t, n, r) => M.intl.formatToPlainString(M.t.PCX506, {
+    [Chunk707409.J6.MINUTES]: (e, t, n, r) => D.intl.formatToPlainString(D.t.PCX506, {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [Chunk707409.J6.HOURS]: (e, t, n, r) => M.intl.formatToPlainString(M.t["3VG9s1"], {
+    [Chunk707409.J6.HOURS]: (e, t, n, r) => D.intl.formatToPlainString(D.t["3VG9s1"], {
       percent: e,
       progress: t,
       total: n,
@@ -124,24 +123,24 @@ let F = {
     })
   },
   [Chunk981631.vxO.UPDATING]: {
-    [Chunk707409.J6.NONE]: (e, t, n, r) => M.intl.formatToPlainString(M.t.JsqXXL, {
+    [Chunk707409.J6.NONE]: (e, t, n, r) => D.intl.formatToPlainString(D.t.JsqXXL, {
       percent: e,
       progress: t,
       total: n
     }),
-    [Chunk707409.J6.SECONDS]: (e, t, n, r) => M.intl.formatToPlainString(M.t["3BvVec"], {
+    [Chunk707409.J6.SECONDS]: (e, t, n, r) => D.intl.formatToPlainString(D.t["3BvVec"], {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [Chunk707409.J6.MINUTES]: (e, t, n, r) => M.intl.formatToPlainString(M.t["rwULn+"], {
+    [Chunk707409.J6.MINUTES]: (e, t, n, r) => D.intl.formatToPlainString(D.t["rwULn+"], {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [Chunk707409.J6.HOURS]: (e, t, n, r) => M.intl.formatToPlainString(M.t.adcitP, {
+    [Chunk707409.J6.HOURS]: (e, t, n, r) => D.intl.formatToPlainString(D.t.adcitP, {
       percent: e,
       progress: t,
       total: n,
@@ -149,24 +148,24 @@ let F = {
     })
   },
   [Chunk981631.vxO.REPAIRING]: {
-    [Chunk707409.J6.NONE]: (e, t, n, r) => M.intl.formatToPlainString(M.t.JfJt9d, {
+    [Chunk707409.J6.NONE]: (e, t, n, r) => D.intl.formatToPlainString(D.t.JfJt9d, {
       percent: e,
       progress: t,
       total: n
     }),
-    [Chunk707409.J6.SECONDS]: (e, t, n, r) => M.intl.formatToPlainString(M.t["1z3c6e"], {
+    [Chunk707409.J6.SECONDS]: (e, t, n, r) => D.intl.formatToPlainString(D.t["1z3c6e"], {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [Chunk707409.J6.MINUTES]: (e, t, n, r) => M.intl.formatToPlainString(M.t.PCX506, {
+    [Chunk707409.J6.MINUTES]: (e, t, n, r) => D.intl.formatToPlainString(D.t.PCX506, {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [Chunk707409.J6.HOURS]: (e, t, n, r) => M.intl.formatToPlainString(M.t["3VG9s1"], {
+    [Chunk707409.J6.HOURS]: (e, t, n, r) => D.intl.formatToPlainString(D.t["3VG9s1"], {
       percent: e,
       progress: t,
       total: n,
@@ -175,13 +174,13 @@ let F = {
   }
 };
 
-function z(e, t, n, r, i) {
-  let l = F[t],
+function F(e, t, n, r, i) {
+  let l = V[t],
     a = null != l ? Object.keys(l) : [],
     {
       unit: s,
       time: o
-    } = (0, T.CI)(null != e ? e / 60 : null, a);
+    } = (0, S.CI)(null != e ? e / 60 : null, a);
   if (null != l && null != s) {
     let e = l[s];
     return null != e ? e(n, r, i, o) : null
@@ -189,7 +188,7 @@ function z(e, t, n, r, i) {
   return null
 }
 
-function Y(e) {
+function z(e) {
   let {
     type: t,
     stage: n,
@@ -197,50 +196,50 @@ function Y(e) {
     progress: i,
     total: l,
     secondsRemaining: a
-  } = e, s = V(l, n), o = V(i, n);
+  } = e, s = H(l, n), o = H(i, n);
   switch (n) {
-    case D.f07.QUEUED:
-      if (0 === i) return M.intl.string(M.t.RpfBqd);
-      return M.intl.formatToPlainString(M.t.uNjCXZ, {
+    case R.f07.QUEUED:
+      if (0 === i) return D.intl.string(D.t.RpfBqd);
+      return D.intl.formatToPlainString(D.t.uNjCXZ, {
         percent: r,
         progress: o,
         total: s
       });
-    case D.f07.PLANNING:
-      return M.intl.formatToPlainString(M.t.sfuCUb, {
+    case R.f07.PLANNING:
+      return D.intl.formatToPlainString(D.t.sfuCUb, {
         percent: r
       });
-    case D.f07.ALLOCATING_DISK:
-      return M.intl.formatToPlainString(M.t.XigoJ9, {
+    case R.f07.ALLOCATING_DISK:
+      return D.intl.formatToPlainString(D.t.XigoJ9, {
         percent: r
       });
-    case D.f07.PATCHING:
-      return z(a, t, r, o, s);
-    case D.f07.FINALIZING:
-      return M.intl.formatToPlainString(M.t["6PHDUN"], {
+    case R.f07.PATCHING:
+      return F(a, t, r, o, s);
+    case R.f07.FINALIZING:
+      return D.intl.formatToPlainString(D.t["6PHDUN"], {
         percent: r
       });
-    case D.f07.PAUSING:
-      return M.intl.formatToPlainString(M.t.vjxhWo, {
+    case R.f07.PAUSING:
+      return D.intl.formatToPlainString(D.t.vjxhWo, {
         percent: r,
         progress: o,
         total: s
       });
-    case D.f07.VERIFYING:
-      return M.intl.formatToPlainString(M.t.bbilvq, {
+    case R.f07.VERIFYING:
+      return D.intl.formatToPlainString(D.t.bbilvq, {
         percent: r,
         progress: o,
         total: s
       });
-    case D.f07.POST_INSTALL_SCRIPTS:
-      return M.intl.formatToPlainString(M.t.c5vRUo, {
+    case R.f07.POST_INSTALL_SCRIPTS:
+      return D.intl.formatToPlainString(D.t.c5vRUo, {
         percent: r,
         progress: o,
         total: s
       });
-    case D.f07.REPAIRING:
-      if (t === D.vxO.REPAIRING) return z(a, t, r, o, s);
-      return M.intl.formatToPlainString(M.t.OCzETT, {
+    case R.f07.REPAIRING:
+      if (t === R.vxO.REPAIRING) return F(a, t, r, o, s);
+      return D.intl.formatToPlainString(D.t.OCzETT, {
         percent: r,
         progress: o,
         total: s
@@ -248,7 +247,7 @@ function Y(e) {
   }
   throw Error("Invalid Dispatch stage")
 }
-class W extends Chunk473749.PureComponent {
+class Y extends Chunk473749.PureComponent {
   get isFocused() {
     let {
       cellProps: e
@@ -262,16 +261,16 @@ class W extends Chunk473749.PureComponent {
       foregroundGradientColor: i,
       message: l
     } = e;
-    return (0, r.jsxs)(I.Z, {
-      direction: I.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(v.Z, {
+      direction: v.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(h.Exd, {
         percent: t,
         size: h.Exd.Sizes.SMALL,
-        foregroundColor: (0, v.Lq)(n),
-        foregroundGradientColor: null != i ? [(0, v.Lq)(i[0]), (0, v.Lq)(i[1])] : true,
+        foregroundColor: n,
+        foregroundGradientColor: null != i ? [i[0], i[1]] : true,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
-        className: k.progressCellText,
+        className: M.progressCellText,
         children: null != l ? l : ""
       })]
     })
@@ -281,15 +280,15 @@ class W extends Chunk473749.PureComponent {
       percents: t,
       message: n
     } = e;
-    return (0, r.jsxs)(I.Z, {
-      direction: I.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(v.Z, {
+      direction: v.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(h.yGy, {
         percents: t,
         size: h.yGy.Sizes.SMALL,
-        foregroundColors: B,
+        foregroundColors: G,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
-        className: k.progressCellText,
+        className: M.progressCellText,
         children: null != n ? n : ""
       })]
     })
@@ -302,7 +301,7 @@ class W extends Chunk473749.PureComponent {
       message: Chunk388032.intl.format(Chunk388032.t.z1oxGO, {
         remove: () => Chunk51025.wi(module.applicationId, module.branchId)
       }),
-      foregroundColor: (0, Chunk780384.ap)(module.theme) ? Chunk981631.Ilk.PRIMARY_300 : Chunk981631.Ilk.PRIMARY_500,
+      foregroundColor: (0, Chunk780384.ap)(module.theme) ? Chunk692547.Z.unsafe_rawColors.PRIMARY_300.css : Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css,
       percent: 100
     })
   }
@@ -320,8 +319,8 @@ class W extends Chunk473749.PureComponent {
         stage: l
       } = require;
       if (null != Chunk54381 && null != Chunk473749) {
-        let n = V(Chunk473749, Chunk120356),
-          a = V(Chunk54381, Chunk120356),
+        let n = H(Chunk473749, Chunk120356),
+          a = H(Chunk54381, Chunk120356),
           s = Math.floor(t = Chunk780570.xI(Chunk54381, Chunk473749));
         e = Chunk120356 === Chunk981631.f07.PAUSING ? Chunk388032.intl.formatToPlainString(Chunk388032.t.vjxhWo, {
           percent: Chunk392711,
@@ -336,7 +335,7 @@ class W extends Chunk473749.PureComponent {
     }
     return (null == exports || null == module) && (t = 0, e = Chunk388032.intl.string(Chunk388032.t["qS+iKY"])), this.renderBody({
       percent: exports,
-      foregroundColor: (0, Chunk780384.ap)(Chunk54381) ? Chunk981631.Ilk.PRIMARY_300 : Chunk981631.Ilk.PRIMARY_500,
+      foregroundColor: (0, Chunk780384.ap)(Chunk54381) ? Chunk692547.Z.unsafe_rawColors.PRIMARY_300.css : Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css,
       message: module
     })
   }
@@ -362,7 +361,7 @@ class W extends Chunk473749.PureComponent {
       });
     return this.renderBody({
       message: a,
-      foregroundColor: (0, Chunk780384.ap)(exports) ? Chunk981631.Ilk.PRIMARY_300 : Chunk981631.Ilk.PRIMARY_500,
+      foregroundColor: (0, Chunk780384.ap)(exports) ? Chunk692547.Z.unsafe_rawColors.PRIMARY_300.css : Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css,
       percent: Chunk473749
     })
   }
@@ -389,14 +388,14 @@ class W extends Chunk473749.PureComponent {
       a = Math.floor(Chunk120356);
     return this.renderBody({
       percent: Chunk120356,
-      message: Y({
+      message: z({
         type: Chunk473749,
         stage: Chunk54381,
         percent: a,
         progress: require,
         total: exports
       }),
-      foregroundColor: Chunk981631.Ilk.BLUE_345
+      foregroundColor: Chunk692547.Z.unsafe_rawColors.BLUE_345.css
     })
   }
   renderProgress() {
@@ -424,7 +423,7 @@ class W extends Chunk473749.PureComponent {
     return null
   }
   constructor(...e) {
-    super(...e), U(this, "renderProgressPatchingBody", (e, t) => {
+    super(...e), k(this, "renderProgressPatchingBody", (e, t) => {
       let {
         item: {
           state: n
@@ -439,11 +438,11 @@ class W extends Chunk473749.PureComponent {
         readerProgress: s
       } = n;
       if (null == i || null == l || null == r) return null;
-      let o = w.xI(i, l),
-        c = w.xI(null != s ? s : 0, l),
+      let o = Z.xI(i, l),
+        c = Z.xI(null != s ? s : 0, l),
         u = e[e.length - 1] / t * 1e3,
         d = l - i,
-        p = Y({
+        p = z({
           type: a,
           stage: r,
           percent: Math.floor(o),
@@ -458,47 +457,47 @@ class W extends Chunk473749.PureComponent {
     })
   }
 }
-let q = () => (0, Chunk54381.jsx)(H, {
+let W = () => (0, Chunk54381.jsx)(B, {
     icon: Chunk481060.o1U,
     tooltip: Chunk388032.intl.string(Chunk388032.t.YGm6SZ),
     onClick: () => Chunk51025.v4()
   }),
-  K = () => (0, Chunk54381.jsx)(H, {
+  q = () => (0, Chunk54381.jsx)(B, {
     icon: Chunk481060.fpf,
     tooltip: Chunk388032.intl.string(Chunk388032.t.TVAd5J),
     onClick: () => Chunk51025.wO()
   }),
+  K = e => {
+    let {
+      item: t
+    } = e;
+    return (0, r.jsx)(B, {
+      icon: h.wj7,
+      tooltip: D.intl.string(D.t["Eqb+LN"]),
+      onClick: () => _.A1(t.applicationId, t.branchId)
+    })
+  },
   Q = e => {
     let {
       item: t
     } = e;
-    return (0, r.jsx)(H, {
-      icon: h.wj7,
-      tooltip: M.intl.string(M.t["Eqb+LN"]),
-      onClick: () => _.A1(t.applicationId, t.branchId)
-    })
-  },
-  J = e => {
-    let {
-      item: t
-    } = e;
-    return (0, r.jsx)(H, {
+    return (0, r.jsx)(B, {
       icon: h.Dio,
-      tooltip: M.intl.string(M.t["0lFmC9"]),
+      tooltip: D.intl.string(D.t["0lFmC9"]),
       onClick: () => _.al(t.applicationId, t.branchId)
     })
   },
-  X = [{
+  J = [{
     key: "name",
     cellClassName: Chunk248241.nameCell,
-    render: e => (0, r.jsxs)(I.Z, {
-      align: I.Z.Align.CENTER,
-      children: [(0, r.jsx)(S.Z, {
+    render: e => (0, r.jsxs)(v.Z, {
+      align: v.Z.Align.CENTER,
+      children: [(0, r.jsx)(C.Z, {
         game: e.application,
-        className: k.__invalid_gameIcon,
-        size: S.A.SMALL
+        className: M.__invalid_gameIcon,
+        size: C.A.SMALL
       }), (0, r.jsx)("div", {
-        className: k.nameCellText,
+        className: M.nameCellText,
         children: e.application.name
       })]
     })
@@ -507,7 +506,7 @@ let q = () => (0, Chunk54381.jsx)(H, {
     cellClassName: Chunk248241.progressCell,
     headerCellClassName: Chunk248241.progressCellHeader,
     bodyCellClassName: Chunk248241.progressCellBody,
-    render: (e, t) => (0, r.jsx)(W, {
+    render: (e, t) => (0, r.jsx)(Y, {
       item: e,
       cellProps: t
     })
@@ -519,23 +518,23 @@ let q = () => (0, Chunk54381.jsx)(H, {
       return e.finished ? n = null != e.libraryApplication ? (0, r.jsx)(b.Z, {
         libraryApplication: e.libraryApplication,
         size: f.zx.Sizes.SMALL,
-        className: k.gameActionButton,
-        source: D.Sbl.APPLICATION_LIBRARY_UPDATES
-      }) : null : null != e.state ? e.state.type !== D.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(Q, {
+        className: M.gameActionButton,
+        source: R.Sbl.APPLICATION_LIBRARY_UPDATES
+      }) : null : null != e.state ? e.state.type !== R.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(K, {
         item: e
-      }) : null != t && t.paused ? (0, r.jsx)(q, {}) : (0, r.jsx)(K, {
+      }) : null != t && t.paused ? (0, r.jsx)(W, {}) : (0, r.jsx)(q, {
         item: e
-      }), i = (0, r.jsx)(J, {
+      }), i = (0, r.jsx)(Q, {
         item: e
-      })) : i = (0, r.jsx)(J, {
+      })) : i = (0, r.jsx)(Q, {
         item: e
-      }), (0, r.jsxs)(I.Z, {
-        justify: I.Z.Justify.END,
+      }), (0, r.jsxs)(v.Z, {
+        justify: v.Z.Justify.END,
         children: [n, i]
       })
     }
   }];
-class $ extends Chunk473749.PureComponent {
+class X extends Chunk473749.PureComponent {
   componentDidMount() {
     window.addEventListener("resize", this.throttledUpdateHeight)
   }
@@ -568,22 +567,26 @@ class $ extends Chunk473749.PureComponent {
           className: a()(Chunk248241.headerCell, Chunk248241.networkProgress),
           title: Chunk388032.intl.string(Chunk388032.t.ytoXKr),
           getHistoricalTotalBytes: Chunk417363.Z.getHistoricalTotalBytesDownloaded,
-          color: Chunk981631.Ilk.GREEN_360,
+          color: Chunk692547.Z.unsafe_rawColors.GREEN_360.resolve({
+            saturation: 1
+          }).hex(),
           animate: Chunk473749
         }), (0, Chunk54381.jsx)(Chunk86826.Z, {
           className: a()(Chunk248241.headerCell, Chunk248241.diskProgress),
           title: Chunk388032.intl.string(Chunk388032.t.SjohhI),
           getHistoricalTotalBytes: Chunk417363.Z.getHistoricalTotalBytesWritten,
-          color: Chunk981631.Ilk.BLUE_345,
+          color: Chunk692547.Z.unsafe_rawColors.BLUE_345.resolve({
+            saturation: 1
+          }).hex(),
           animate: Chunk473749
         })]
       }), (0, Chunk54381.jsx)(Chunk167533.Z, {
         hasHeader: false,
-        columns: X,
+        columns: J,
         data: module,
         className: Chunk248241.table,
         rowClassName: Chunk248241.row,
-        rowComponent: G,
+        rowComponent: U,
         cellProps: {
           paused: exports,
           isFocused: Chunk473749,
@@ -604,7 +607,7 @@ class $ extends Chunk473749.PureComponent {
                     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                       return Object.getOwnPropertyDescriptor(n, e).enumerable
                     }))), r.forEach(function(t) {
-                      U(e, t, n[t])
+                      k(e, t, n[t])
                     })
                   }
                   return e
@@ -631,7 +634,7 @@ class $ extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), U(this, "isUnmounted", false), U(this, "isTallerThanHalfViewport", false), U(this, "throttledUpdateHeight", o().throttle(() => {
+    super(...e), k(this, "isUnmounted", false), k(this, "isTallerThanHalfViewport", false), k(this, "throttledUpdateHeight", o().throttle(() => {
       if (this.isUnmounted) return;
       let {
         height: e,
@@ -642,7 +645,7 @@ class $ extends Chunk473749.PureComponent {
   }
 }
 
-function ee(e, t, n, r) {
+function $(e, t, n, r) {
   return e.reduce((e, i, l) => {
     let {
       applicationId: a,
@@ -654,15 +657,15 @@ function ee(e, t, n, r) {
       branchId: s,
       state: c,
       application: o,
-      libraryApplication: j.Z.getLibraryApplication(a, s),
+      libraryApplication: N.Z.getLibraryApplication(a, s),
       finished: t,
       index: l
     }), e
   }, [])
 }
-let et = (0, Chunk112724.Z)(Chunk442837.ZP.connectStores([Chunk812206.Z, Chunk417363.Z, Chunk941128.Z, Chunk210887.Z, Chunk451478.Z], () => ({
-  applications: [...ee(Chunk941128.Z.activeItems, false, Chunk812206.Z, Chunk417363.Z), ...ee(Chunk941128.Z.finishedItems, true, Chunk812206.Z, Chunk417363.Z)],
+let ee = (0, Chunk112724.Z)(Chunk442837.ZP.connectStores([Chunk812206.Z, Chunk417363.Z, Chunk941128.Z, Chunk210887.Z, Chunk451478.Z], () => ({
+  applications: [...$(Chunk941128.Z.activeItems, false, Chunk812206.Z, Chunk417363.Z), ...$(Chunk941128.Z.finishedItems, true, Chunk812206.Z, Chunk417363.Z)],
   paused: Chunk941128.Z.paused,
   isFocused: Chunk451478.Z.isFocused(),
   theme: Chunk210887.Z.theme
-}))((0, Chunk730749.Z)($)))
+}))((0, Chunk730749.Z)(X)))

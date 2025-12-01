@@ -36,50 +36,50 @@ function C(e) {
     user: n,
     activity: C,
     onAction: N,
-    onClose: R,
-    application: P
+    onClose: P,
+    application: R
   } = e, {
-    themeType: D
-  } = (0, m.z)(), w = (0, c.q)(P), L = (0, f.L)(null != (t = null == C ? true : C.application_id) ? t : null == P ? true : P.id), {
-    analyticsLocations: x
-  } = (0, d.ZP)(u.Z.USER_PROFILE_ACTIVITY_BUTTONS), M = D === A.l.MODAL || D === A.l.MODAL_V2;
-  return L || !w || null == P || M ? (0, s.Z)(C) ? (0, r.jsx)(O.Z, {
-    platformType: S.ABu.XBOX,
-    icon: () => (0, r.jsx)(h.Z, {}),
+    themeType: w
+  } = (0, h.z)(), D = (0, c.q)(R), x = (0, f.L)(null != (t = null == C ? true : C.application_id) ? t : null == R ? true : R.id), {
+    analyticsLocations: L
+  } = (0, d.ZP)(u.Z.USER_PROFILE_ACTIVITY_BUTTONS), j = w === A.l.MODAL || w === A.l.MODAL_V2;
+  return x || !D || null == R || j ? (0, s.Z)(C) ? (0, r.jsx)(O.Z, {
+    platformType: T.ABu.XBOX,
+    icon: () => (0, r.jsx)(m.Z, {}),
     onAction: N
   }) : (0, o.Z)(C) ? (0, r.jsx)(O.Z, {
-    platformType: S.ABu.PLAYSTATION,
-    icon: () => (0, r.jsx)(p.Z, {}),
+    platformType: T.ABu.PLAYSTATION,
+    icon: () => (0, r.jsx)(_.Z, {}),
     onAction: N
-  }) : (0, l.Z)(C) ? (0, r.jsx)(I.Z, {
+  }) : (0, l.Z)(C) ? (0, r.jsx)(S.Z, {
     activity: C,
     onAction: N
-  }) : (0, i.Z)(C, S.xjy.JOIN) || (0, a.Z)(C) ? (0, r.jsx)(b.Z, {
+  }) : (0, i.Z)(C, T.xjy.JOIN) || (0, a.Z)(C) ? (0, r.jsx)(b.Z, {
     user: n,
     activity: C,
     onAction: N,
-    onClose: R
-  }) : (null == C ? true : C.type) === S.IIU.HANG_STATUS ? (0, r.jsx)(E.Z, {
+    onClose: P
+  }) : (null == C ? true : C.type) === T.IIU.HANG_STATUS ? (0, r.jsx)(E.Z, {
     user: n,
     activity: C,
     onAction: N,
-    onClose: R
+    onClose: P
   }) : (null == C ? true : C.buttons) != null && (null == C ? true : C.buttons.length) >= 1 ? (0, r.jsx)(g.Z, {
     user: n,
     activity: C,
     onAction: N
-  }) : (0, i.Z)(C, S.xjy.INSTANCE) ? (0, r.jsx)(y.Z, {
+  }) : (0, i.Z)(C, T.xjy.INSTANCE) ? (0, r.jsx)(y.Z, {
     user: n,
     activity: C,
     onAction: N
-  }) : (0, _.dS)(C) ? (0, r.jsx)(v.Z, {
+  }) : (0, p.dS)(C) ? (0, r.jsx)(v.Z, {
     activity: C,
     onAction: N,
-    onClose: R
-  }) : null : (0, r.jsx)(T.Z, {
-    application: P,
+    onClose: P
+  }) : null : (0, r.jsx)(I.Z, {
+    application: R,
     onAction: N,
-    onClose: R,
-    analyticsLocations: x
+    onClose: P,
+    analyticsLocations: L
   })
 }

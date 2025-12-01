@@ -4,7 +4,7 @@
 require.r(exports), require.d(exports, {
   WebAudioSound: () => b,
   playGiftSound: () => g,
-  voiceSinkId: () => h
+  voiceSinkId: () => m
 }), require("./35282.js"), require("./415506.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -24,12 +24,12 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = "default",
-  _ = .6,
-  p = /^( Device)?( \([^()]+\))+$/,
-  h = f;
+  p = .6,
+  _ = /^( Device)?( \([^()]+\))+$/,
+  m = f;
 
-function m(e, t) {
-  return !!t.startsWith(e) && null != t.substring(e.length).match(p)
+function h(e, t) {
+  return !!t.startsWith(e) && null != t.substring(e.length).match(_)
 }
 
 function g(e, t) {
@@ -44,22 +44,22 @@ async function E() {
       r = i()(require).sortBy(e => e.index).findIndex(e => e.id === l.Z.getOutputDeviceId()),
       o = require[Chunk131951.Z.getOutputDeviceId()];
     if (null == Chunk22382) {
-      h = f;
+      m = f;
       return
     }
     let s = exports.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
       c = Chunk747071[Chunk392711];
-    if (m(Chunk22382.name, null != (e = null == Chunk358085 ? true : Chunk358085.label) ? module : "")) {
-      h = Chunk358085.deviceId;
+    if (h(Chunk22382.name, null != (e = null == Chunk358085 ? true : Chunk358085.label) ? module : "")) {
+      m = Chunk358085.deviceId;
       return
     }
-    if (c = i()(Chunk747071).maxBy(e => (0, a.stringSimilarity)(e.label, o.name)), null == Chunk358085 || (0, Chunk856901.stringSimilarity)(Chunk358085.label, Chunk22382.name) < _) {
-      h = f;
+    if (c = i()(Chunk747071).maxBy(e => (0, a.stringSimilarity)(e.label, o.name)), null == Chunk358085 || (0, Chunk856901.stringSimilarity)(Chunk358085.label, Chunk22382.name) < p) {
+      m = f;
       return
     }
-    h = Chunk358085.deviceId
+    m = Chunk358085.deviceId
   } catch (e) {
-    h = f
+    m = f
   }
 }
 Chunk358085.isPlatformEmbedded && (Chunk131951.Z.addChangeListener(E), E());
@@ -106,7 +106,7 @@ let b = class {
     return this._audio = null != (e = this._audio) ? module : new Promise((e, t) => {
       let r = new Audio;
       r.src = n(451343)("./".concat(this.name, ".mp3")), r.onloadeddata = () => {
-        r.volume = Math.min(l.Z.getOutputVolume() / 100 * this._volume, 1), c.isPlatformEmbedded && r.setSinkId(this.outputChannel === u.w.DEFAULT ? f : h), e(r)
+        r.volume = Math.min(l.Z.getOutputVolume() / 100 * this._volume, 1), c.isPlatformEmbedded && r.setSinkId(this.outputChannel === u.w.DEFAULT ? f : m), e(r)
       }, r.onerror = () => t(Error("could not play audio")), r.onended = () => this.destroyAudio(), r.load()
     }), this._audio
   }

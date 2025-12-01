@@ -2,7 +2,7 @@
 /** chunk id: 695349, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => h,
+  G: () => m,
   W: () => g
 });
 var Chunk442837 = require("./442837.js"),
@@ -16,19 +16,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk937579 = require("./937579.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js");
-let p = 2592e5;
-async function h(e) {
+let _ = 2592e5;
+async function m(e) {
   let t = o.default.getCurrentUser(),
     n = (0, u.I5)(t);
   null == t || n || c.Z.fetchedEndedEntitlements || await (0, i.p0)({
-    entitlementType: _.qc2.FRACTIONAL_REDEMPTION,
+    entitlementType: p.qc2.FRACTIONAL_REDEMPTION,
     excludeEnded: false
   });
   let r = c.Z.getReverseTrialEntitlement(true);
-  return !(!(!n && null != r && null != r.endsAt && r.endsAt.getTime() < Date.now()) || r.endsAt.getTime() < Date.now() - p) && r.sourceType === _.kNB.REVERSE_TRIAL && (null == e && await (0, d.Tf)(), null != l.Z.getUserTrialOffer(f.Rt)) || false
+  return !(!(!n && null != r && null != r.endsAt && r.endsAt.getTime() < Date.now()) || r.endsAt.getTime() < Date.now() - _) && r.sourceType === p.kNB.REVERSE_TRIAL && (null == e && await (0, d.Tf)(), null != l.Z.getUserTrialOffer(f.Rt)) || false
 }
 
-function m() {
+function h() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     t = Chunk78839.Z.getPremiumTypeSubscription(),
     n = null != exports && !exports.isBoostOnly,
@@ -41,5 +41,5 @@ function m() {
 }
 
 function g() {
-  return null != m()
+  return null != h()
 }

@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -31,9 +31,9 @@ let E = "IncomingCallStore",
   y = 315,
   O = 10,
   v = new Set,
-  I = [],
-  T = new Map,
-  S = new Set,
+  S = [],
+  I = new Map,
+  T = new Set,
   A = false;
 
 function C() {
@@ -45,11 +45,11 @@ function C() {
 }
 
 function N(e) {
-  if (null == e || null == T.get(e)) returnfalse;
-  T.delete(e), (S = new Set(S)).delete(e)
+  if (null == e || null == I.get(e)) returnfalse;
+  I.delete(e), (T = new Set(T)).delete(e)
 }
 
-function R(e) {
+function P(e) {
   let {
     channelId: t,
     ringing: n
@@ -59,24 +59,24 @@ function R(e) {
       location: "IncomingCallCreate"
     }).enabled) returnfalse;
   let r = n.includes(f.default.getId());
-  if (!S.has(t) && r) {
-    let e = _.Z.getChannel(t);
+  if (!T.has(t) && r) {
+    let e = p.Z.getChannel(t);
     if (null == e) returnfalse;
-    let n = O * S.size,
+    let n = O * T.size,
       {
         x: r,
         y: i
       } = C();
-    return T.set(t, {
+    return I.set(t, {
       channel: e,
       x: r + n,
       y: i + n
-    }), void(S = new Set(S)).add(t)
+    }), void(T = new Set(T)).add(t)
   }
-  return !!S.has(t) && !r && N(t)
+  return !!T.has(t) && !r && N(t)
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
@@ -86,14 +86,14 @@ function P(e) {
   }).enabled && !!e.ringing.includes(f.default.getId())) && N(t)
 }
 
-function D(e) {
+function w(e) {
   let {
     channelId: t
   } = e;
   return N(t)
 }
 
-function w(e) {
+function D(e) {
   let {
     x: t,
     y: n
@@ -104,50 +104,50 @@ function w(e) {
   }, o.K.set(E, r), false
 }
 
-function L(e) {
+function x(e) {
   let {
     channel: t
   } = e;
   return N(t.id)
 }
 
-function x() {
+function L() {
   A = Chunk885110.Z.getStatus() === Chunk981631.Skl.DND || Chunk695346.QZ.getSetting()
 }
 
-function M() {
+function j() {
   let e = Chunk314897.default.getId();
-  S.forEach(t => {
+  T.forEach(t => {
     var n;
     let r = t;
-    null != (null == (n = _.Z.getChannel(r)) ? true : n.guild_id) && (l.Z.getGuildRingingUsers(r).has(e) || N(r))
+    null != (null == (n = p.Z.getChannel(r)) ? true : n.guild_id) && (l.Z.getGuildRingingUsers(r).has(e) || N(r))
   })
 }
-class k extends(i = Chunk442837.ZP.Store) {
+class M extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk358221.Z, Chunk592125.Z, Chunk885110.Z, Chunk581883.Z, Chunk451478.Z), this.syncWith([Chunk885110.Z], x), this.syncWith([Chunk581883.Z], x), this.syncWith([Chunk358221.Z], M)
+    this.waitFor(Chunk314897.default, Chunk358221.Z, Chunk592125.Z, Chunk885110.Z, Chunk581883.Z, Chunk451478.Z), this.syncWith([Chunk885110.Z], L), this.syncWith([Chunk581883.Z], L), this.syncWith([Chunk358221.Z], j)
   }
   getIncomingCalls() {
-    return A ? I : Array.from(T.values())
+    return A ? S : Array.from(I.values())
   }
   getIncomingCallChannelIds() {
-    return A ? v : S
+    return A ? v : T
   }
   getFirstIncomingCallId() {
-    return A ? null : S.values().next().value
+    return A ? null : T.values().next().value
   }
   hasIncomingCalls() {
-    return !A && S.size > 0
+    return !A && T.size > 0
   }
 }
-g(k, "displayName", "IncomingCallStore");
-let j = new k(Chunk570140.Z, {
-  CALL_CREATE: R,
-  CALL_UPDATE: R,
-  CALL_DELETE: P,
-  GUILD_RING_START: R,
-  GUILD_RING_STOP: P,
-  VOICE_CHANNEL_SELECT: D,
-  INCOMING_CALL_MOVE: w,
-  CHANNEL_DELETE: L
+g(M, "displayName", "IncomingCallStore");
+let k = new M(Chunk570140.Z, {
+  CALL_CREATE: P,
+  CALL_UPDATE: P,
+  CALL_DELETE: R,
+  GUILD_RING_START: P,
+  GUILD_RING_STOP: R,
+  VOICE_CHANNEL_SELECT: w,
+  INCOMING_CALL_MOVE: D,
+  CHANNEL_DELETE: x
 })

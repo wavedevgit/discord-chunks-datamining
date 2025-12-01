@@ -40,11 +40,11 @@ function d(e, t) {
 function f(e, t, n) {
   let r = [];
   n((e, t) => {
-    _(r, e, t)
+    p(r, e, t)
   }), g(e, t, r), b(e, r)
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   t.derived.length !== n.derived.length && e.push({
     type: "length-mismatch",
     primaryLength: t.derived.length,
@@ -60,7 +60,7 @@ function _(e, t, n) {
       });
       continue
     }
-    let r = p(i, t.root[i], n.root[i]);
+    let r = _(i, t.root[i], n.root[i]);
     null != r && e.push(r)
   }
   for (let n of i) Object.prototype.hasOwnProperty.call(t.root, n) || e.push({
@@ -69,7 +69,7 @@ function _(e, t, n) {
   })
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   let r = [];
   for (let e in t)
     if (Object.prototype.hasOwnProperty.call(t, e)) {
@@ -97,11 +97,11 @@ function p(e, t, n) {
   }
 }
 
-function h(e) {
+function m(e) {
   return "object" == typeof e && null !== e && !Array.isArray(e) && !(e instanceof Date) && !(e instanceof Set)
 }
 
-function m(e, t) {
+function h(e, t) {
   let n = new Map;
 
   function r(e, t) {
@@ -123,7 +123,7 @@ function m(e, t) {
         e.length > t.length ? console.info("Extra in primary: ", e.slice(t.length)) : t.length > e.length && console.info("Extra in shadow: ", t.slice(e.length));
         return
       }
-      if (h(e) && h(t)) {
+      if (m(e) && m(t)) {
         let n = new Set(Object.keys(e)),
           i = new Set(Object.keys(t));
         for (let a of Array.from(new Set([...n, ...i])).sort()) n.has(a) ? i.has(a) ? d(e[a], t[a]) || (console.group("Field ".concat(a, " mismatch:")), r(e[a], t[a]), console.groupEnd()) : console.info("Missing field in shadow: ".concat(a, " = "), e[a]) : console.info("Extra field in shadow: ".concat(a, " = "), t[a]);
@@ -153,7 +153,7 @@ function g(e, t, n) {
         break;
       case "record-mismatch":
         console.groupCollapsed('Record mismatch for key "'.concat(e.key, '"')), e.mismatches.forEach(e => {
-          "field-missing" === e.type ? console.info("Field missing: ".concat(String(e.field))) : (console.groupCollapsed('Field "'.concat(String(e.field), '" value mismatch')), m(e.primaryValue, e.shadowValue), console.groupEnd())
+          "field-missing" === e.type ? console.info("Field missing: ".concat(String(e.field))) : (console.groupCollapsed('Field "'.concat(String(e.field), '" value mismatch')), h(e.primaryValue, e.shadowValue), console.groupEnd())
         }), console.groupEnd()
     }
   }), r.length > 0 && console.info("Missing records in shadow state: ".concat(r.join(", "))), a.length > 0 && console.info("Extra records in shadow state: ".concat(a.join(", "))), console.groupEnd()

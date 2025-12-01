@@ -2,8 +2,8 @@
 /** chunk id: 595824, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => _,
-  h: () => p
+  X: () => p,
+  h: () => _
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -51,13 +51,13 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function p(e) {
   var t, n;
   let o = i.useContext(a.KJ);
-  return (null == o || null == (n = o.experiments) || null == (t = n.enabledExperiments) ? true : t.includes("mana-toggle-inputs")) ? (0, r.jsx)(s.C, u({}, e)) : (0, r.jsx)(p, u({}, e))
+  return (null == o || null == (n = o.experiments) || null == (t = n.enabledExperiments) ? true : t.includes("mana-toggle-inputs")) ? (0, r.jsx)(s.C, u({}, e)) : (0, r.jsx)(_, u({}, e))
 }
 
-function p(e) {
+function _(e) {
   let {
     label: t,
     checked: n,
@@ -65,7 +65,7 @@ function p(e) {
     labelType: s = "primary",
     description: c,
     leadingIcon: d
-  } = e, _ = null != t && "" !== t ? (0, r.jsxs)("div", {
+  } = e, p = null != t && "" !== t ? (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
       style: {
         display: "flex",
@@ -94,6 +94,6 @@ function p(e) {
   return (0, r.jsx)(l.$q, f(u({}, e), {
     value: n,
     onChange: (e, t) => null == a ? true : a(t),
-    children: _
+    children: p
   }))
 }

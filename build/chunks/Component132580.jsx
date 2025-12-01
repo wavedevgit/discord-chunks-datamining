@@ -1,21 +1,20 @@
 /** Chunk was on 384 **/
 /** chunk id: 132580, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk481060 = require("./481060.js"),
-  Chunk44315 = require("./44315.js"),
-  Chunk981631 = require("./981631.js"),
+var Chunk692547 = require("./692547.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e) {
+function s(e) {
   var t, n, {
-      className: o,
-      color: c = (0, l.Lq)(a.Ilk.BRAND_500)
+      className: s,
+      color: o = i.Z.unsafe_rawColors.BRAND_500.css
     } = e,
-    d = function(e, t) {
+    c = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -30,7 +29,7 @@ function o(e) {
       }
       return i
     }(e, ["className", "color"]);
-  return (0, r.jsx)(i.IGR, (t = function(e) {
+  return (0, r.jsx)(l.IGR, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -47,10 +46,10 @@ function o(e) {
       })
     }
     return e
-  }({}, d), n = n = {
-    text: s.intl.string(s.t.G6GWZ4),
-    color: c,
-    className: o
+  }({}, c), n = n = {
+    text: a.intl.string(a.t.G6GWZ4),
+    color: o,
+    className: s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

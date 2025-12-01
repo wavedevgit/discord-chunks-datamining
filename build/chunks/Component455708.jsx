@@ -33,7 +33,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -232,23 +232,23 @@ let N = Chunk473749.forwardRef((e, t) => {
     resultQuery: o,
     resultItems: l,
     suggestions: c
-  } = (0, s.cj)([_.Z], () => ({
-    query: _.Z.getQuery(),
-    resultQuery: _.Z.getResultQuery(),
-    resultItems: _.Z.getResultItems(),
-    suggestions: _.Z.getSuggestions()
-  })), u = (0, f.Iu)(e => e.searchQuery), d = null != a && "" !== a ? a : u, h = (0, p.HI)(), m = i.useRef(null);
-  return (0, r.jsx)(C, S(I({}, e), {
+  } = (0, s.cj)([p.Z], () => ({
+    query: p.Z.getQuery(),
+    resultQuery: p.Z.getResultQuery(),
+    resultItems: p.Z.getResultItems(),
+    suggestions: p.Z.getSuggestions()
+  })), u = (0, f.Iu)(e => e.searchQuery), d = null != a && "" !== a ? a : u, m = (0, _.HI)(), h = i.useRef(null);
+  return (0, r.jsx)(C, T(S({}, e), {
     forwardedRef: t,
     query: d,
     resultQuery: o,
     resultItems: l,
     suggestions: c,
-    favorites: h,
+    favorites: m,
     searchOffset: 0,
-    searchTotalResults: _.Z.getResultItems().length,
+    searchTotalResults: p.Z.getResultItems().length,
     searchLimit: null,
-    searchBarRef: m,
+    searchBarRef: h,
     selectedGIF: e.selectedGIF
   }))
 })

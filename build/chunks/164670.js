@@ -5,13 +5,13 @@ require.d(exports, {
   Do: () => E,
   FE: () => g,
   K$: () => f,
-  Uc: () => h,
+  Uc: () => m,
   a7: () => b,
-  ac: () => _,
+  ac: () => p,
   vg: () => O,
-  wK: () => p,
+  wK: () => _,
   wQ: () => y,
-  x6: () => m
+  x6: () => h
 }), require("./953529.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -27,17 +27,17 @@ function f(e) {
   return null != e && e.productLine === d.POd.SOCIAL_LAYER_GAME_ITEM
 }
 
-function _() {
+function p() {
   let e = Chunk430824.Z.getGuild(Chunk582113.Kz);
   return null != module && module.features.has(Chunk981631.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? module.id : Chunk582113.ON
 }
 
-function p(e) {
+function _(e) {
   var t, n;
-  return e.id === _() || null != (n = null == (t = e.features) ? true : t.has(d.GuildFeatures.SOCIAL_LAYER_STOREFRONT)) && n
+  return e.id === p() || null != (n = null == (t = e.features) ? true : t.has(d.GuildFeatures.SOCIAL_LAYER_STOREFRONT)) && n
 }
 
-function h(e) {
+function m(e) {
   return {
     applicationId: e.application_id,
     title: e.title,
@@ -61,7 +61,7 @@ function h(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   if (null != e) return {
     carouselItems: e.carousel_items.map(e => ({
       thumbnailAssetId: e.thumbnail_asset_id,
@@ -112,7 +112,7 @@ function y(e, t) {
 
 function O(e, t) {
   let n = o.Z.getGuild(e);
-  return null != n && p(n) && (0, c.ne)({
+  return null != n && _(n) && (0, c.ne)({
     location: t
   })
 }

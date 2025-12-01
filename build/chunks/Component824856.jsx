@@ -28,7 +28,7 @@ function g(e) {
     applicationId: g,
     benefits: E,
     description: b
-  } = n, y = i.useMemo(() => null == n.thumbnail ? null : (0, p.q)(g, n.thumbnail, 256), [g, n.thumbnail]), {
+  } = n, y = i.useMemo(() => null == n.thumbnail ? null : (0, _.q)(g, n.thumbnail, 256), [g, n.thumbnail]), {
     data: O
   } = (0, u.X)(n.skuId), v = i.useMemo(() => {
     if (null == O || 0 === O.length) return null;
@@ -36,13 +36,13 @@ function g(e) {
     return (0, f.xg)(e)
   }, [O]);
   return null == v ? null : (0, r.jsxs)(s.l, {
-    className: o()(m.wrapper, a),
+    className: o()(h.wrapper, a),
     header: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: m.headerTitle,
+        className: h.headerTitle,
         children: [null != y && (0, r.jsx)(c.Eep, {
           src: y.href,
-          imageClassName: m.subscriptionImg,
+          imageClassName: h.subscriptionImg,
           width: 48,
           height: 48
         }), (0, r.jsxs)("div", {
@@ -56,14 +56,14 @@ function g(e) {
         })]
       }), t]
     }),
-    children: [!(0, _.Ew)(b) && (0, r.jsx)("div", {
-      className: m.description,
-      children: (0, r.jsx)(h.Z, {
+    children: [!(0, p.Ew)(b) && (0, r.jsx)("div", {
+      className: h.description,
+      children: (0, r.jsx)(m.Z, {
         variant: "text-sm/medium",
         children: b
       })
     }), null != E && E.length > 0 && (0, r.jsx)("div", {
-      className: m.benefits,
+      className: h.benefits,
       children: E.map(e => {
         let {
           id: t,

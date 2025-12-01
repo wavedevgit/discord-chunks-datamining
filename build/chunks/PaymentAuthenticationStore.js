@@ -2,7 +2,7 @@
 /** chunk id: 505649, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./415506.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -14,7 +14,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,12 +22,12 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = false,
-  h = null,
-  m = null;
+let _ = false,
+  m = null,
+  h = null;
 
 function g() {
-  p = false, m = null, h = null
+  _ = false, h = null, m = null
 }
 
 function E(e) {
@@ -37,8 +37,8 @@ function E(e) {
     code: n,
     paymentId: r
   } = t;
-  if (n !== l.ZP.ErrorCodes.CONFIRMATION_REQUIRED && n !== l.ZP.ErrorCodes.AUTHENTICATION_REQUIRED) return p = false, false;
-  p || (p = true, h = r, n === l.ZP.ErrorCodes.AUTHENTICATION_REQUIRED && b(r))
+  if (n !== l.ZP.ErrorCodes.CONFIRMATION_REQUIRED && n !== l.ZP.ErrorCodes.AUTHENTICATION_REQUIRED) return _ = false, false;
+  _ || (_ = true, m = r, n === l.ZP.ErrorCodes.AUTHENTICATION_REQUIRED && b(r))
 }
 async function b(e) {
   if (null == e) return;
@@ -59,33 +59,33 @@ function y(e) {
   let {
     error: t
   } = e;
-  m = t, p = false
+  h = t, _ = false
 }
 
 function O(e) {
   let {
     payment: t
   } = e, n = [d.PyE.COMPLETED, d.PyE.FAILED, d.PyE.CANCELED];
-  if (!p || t.id !== h || !n.includes(t.status)) returnfalse;
-  if (p = false, h = null, t.status === d.PyE.FAILED) {
+  if (!_ || t.id !== m || !n.includes(t.status)) returnfalse;
+  if (_ = false, m = null, t.status === d.PyE.FAILED) {
     var r;
     let e = null;
-    (null == (r = t.metadata) ? true : r.billing_error_code) === l.SM.BILLING_INSUFFICIENT_FUNDS && (e = l.SM.BILLING_INSUFFICIENT_FUNDS), m = new l.ZP(f.intl.string(f.t.khEaRI), e)
-  } else m = null, a.Z.wait(o.fw), a.Z.wait(s.pB)
+    (null == (r = t.metadata) ? true : r.billing_error_code) === l.SM.BILLING_INSUFFICIENT_FUNDS && (e = l.SM.BILLING_INSUFFICIENT_FUNDS), h = new l.ZP(f.intl.string(f.t.khEaRI), e)
+  } else h = null, a.Z.wait(o.fw), a.Z.wait(s.pB)
 }
 class v extends(r = Chunk442837.ZP.Store) {
   get isAwaitingAuthentication() {
-    return p
+    return _
   }
   get error() {
-    return m
-  }
-  get awaitingPaymentId() {
     return h
   }
+  get awaitingPaymentId() {
+    return m
+  }
 }
-_(v, "displayName", "PaymentAuthenticationStore");
-let I = new v(Chunk570140.Z, {
+p(v, "displayName", "PaymentAuthenticationStore");
+let S = new v(Chunk570140.Z, {
   BILLING_SUBSCRIPTION_UPDATE_START: g,
   PAYMENT_AUTHENTICATION_CLEAR_ERROR: g,
   PREMIUM_PAYMENT_ERROR_CLEAR: g,

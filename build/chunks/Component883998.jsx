@@ -24,9 +24,9 @@ function d(e) {
     onRequestClose: l,
     position: d,
     align: f,
-    positionRef: _,
-    children: p
-  } = e, h = i.useCallback(e => {
+    positionRef: p,
+    children: _
+  } = e, m = i.useCallback(e => {
     let {
       emoji: t
     } = e;
@@ -35,7 +35,7 @@ function d(e) {
   return (0, r.jsx)(a.yRy, {
     shouldShow: s,
     position: d,
-    targetElementRef: _,
+    targetElementRef: p,
     align: f,
     onRequestClose: l,
     renderPopout: e => {
@@ -46,11 +46,11 @@ function d(e) {
         analyticsOverride: c,
         channel: t,
         closePopout: n,
-        onSelectEmoji: h,
+        onSelectEmoji: m,
         pickerIntention: u,
         includeCreateEmojiButton: false
       })
     },
-    children: p
+    children: _
   })
 }

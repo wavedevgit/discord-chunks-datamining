@@ -2,20 +2,20 @@
 /** chunk id: 622822, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $5: () => Q,
-  I8: () => Y,
+  $5: () => X,
+  I8: () => W,
   Kt: () => U,
   Lj: () => N,
-  RW: () => W,
-  Y3: () => X,
-  Yt: () => P,
-  _I: () => x,
+  RW: () => Y,
+  Y3: () => Q,
+  Yt: () => R,
+  _I: () => L,
   _t: () => z,
-  a1: () => B,
-  bN: () => R,
-  dl: () => j,
+  a1: () => Z,
+  bN: () => P,
+  dl: () => k,
   ft: () => q,
-  hO: () => D,
+  hO: () => w,
   kH: () => G,
   qF: () => K,
   xi: () => $,
@@ -62,7 +62,7 @@ function v(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,13 +73,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function T(e) {
   return {
     description: e ? y.intl.string(y.t["lSgO/q"]) : y.intl.string(y.t.SxY4IW),
     agreement: e ? y.intl.string(y.t.PBG51l) : y.intl.string(y.t["5B+npG"])
@@ -89,47 +89,47 @@ let A = new Date("06/16/2020"),
   C = [Chunk981631.V_K.AGE_RESTRICTED, Chunk981631.V_K.EXPLICIT],
   N = new Set([Chunk723359.L0.NSFW_SERVER, Chunk723359.L0.NSFW_SERVER_INVITE, Chunk723359.L0.NSFW_SERVER_INVITE_EMBED]);
 
-function R() {
+function P() {
   let e = Chunk594174.default.getCurrentUser();
   return null != module && Chunk709054.default.extractTimestamp(module.id) > A.getTime() && null == module.nsfwAllowed
 }
 
-function P(e) {
+function R(e) {
   return C.includes(e.nsfwLevel)
 }
 
-function D(e) {
-  return null != e && w(_.Z.getGuild(e))
+function w(e) {
+  return null != e && D(p.Z.getGuild(e))
 }
 
-function w(e) {
+function D(e) {
   let t = (0, o.u)("age_verification_utils"),
     n = (0, s.yo)();
   return t && n && (null == e ? true : e.features.has(b.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD))
 }
 
-function L(e) {
+function x(e) {
   let t = (0, o.z)("age_verification_utils"),
     n = (0, s.Jm)();
   return t && n && (null == e ? true : e.features.has(b.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD))
 }
 
-function x(e) {
-  return null != e && M(_.Z.getGuild(e))
+function L(e) {
+  return null != e && j(p.Z.getGuild(e))
 }
 
-function M(e) {
+function j(e) {
   return null != e && (0, o.u)("age_verification_utils") && (0, s.sf)() && e.features.has(b.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD)
 }
 
-function k(e) {
-  let t = (0, r.e7)([_.Z], () => _.Z.getGuild(e)),
+function M(e) {
+  let t = (0, r.e7)([p.Z], () => p.Z.getGuild(e)),
     n = (0, o.z)("age_verification_utils"),
     i = (0, s.L5)();
   return null != t && n && i && t.features.has(b.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD)
 }
 
-function j() {
+function k() {
   let e = (0, Chunk128064.c_)("age-gate-utils"),
     t = (0, Chunk453679.u)("age-gate-utils"),
     n = (0, Chunk312870.U)("age-gate-utils"),
@@ -148,18 +148,18 @@ function U() {
 function G(e) {
   let t = (0, s.l6)(),
     n = (0, u.Y2)(e),
-    a = k(null == e ? true : e.id),
-    o = (0, r.e7)([p.default], () => {
+    a = M(null == e ? true : e.id),
+    o = (0, r.e7)([_.default], () => {
       var e;
-      return (null == (e = p.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
+      return (null == (e = _.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     }),
     l = U(),
-    c = L(e),
+    c = x(e),
     d = y.intl.string(n ? y.t.xi46lg : y.t.ZmwvDc);
   if (l) {
     if (c) {
-      let e = S(t);
-      return T(v({
+      let e = T(t);
+      return I(v({
         title: y.intl.string(y.t.MjQbfi)
       }, e), {
         modalType: i.it.GUILD_LARGE_SERVER_UNDERAGE
@@ -185,7 +185,7 @@ function G(e) {
   return o ? {
     title: y.intl.string(n ? y.t["H0SG/g"] : y.t.NEabBa),
     description: y.intl.format(n ? y.t["6++3cX"] : y.t["2kHZes"], {
-      helpURL: h.Z.getArticleURL(b.BhN.NSFW_AGE_GATING)
+      helpURL: m.Z.getArticleURL(b.BhN.NSFW_AGE_GATING)
     }),
     agreement: null,
     modalType: i.it.NSFW_CHANNEL_UNDERAGE
@@ -197,17 +197,17 @@ function G(e) {
   }
 }
 
-function B(e) {
+function Z(e) {
   let t = (0, s.l6)(),
     n = U(),
     i = e === E.L0.NSFW_SERVER || e === E.L0.NSFW_SERVER_INVITE || e === E.L0.NSFW_SERVER_INVITE_EMBED,
-    a = (0, r.e7)([p.default], () => {
+    a = (0, r.e7)([_.default], () => {
       var e;
-      return (null == (e = p.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
+      return (null == (e = _.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     });
   if (e === E.L0.JOIN_LARGE_GUILD_UNDERAGE || e === E.L0.ACCESS_LARGE_GUILD_UNDERAGE) {
     let n = e === E.L0.JOIN_LARGE_GUILD_UNDERAGE ? y.t["u/xsK9"] : y.t.MjQbfi,
-      r = S(t);
+      r = T(t);
     return {
       verifyTitle: y.intl.string(n),
       verifyGateDescription: r.description,
@@ -225,7 +225,7 @@ function B(e) {
   } : a && i && !n ? {
     verifyTitle: y.intl.string(y.t["H0SG/g"]),
     verifyGateDescription: y.intl.format(y.t["6++3cX"], {
-      helpURL: h.Z.getArticleURL(b.BhN.AGE_GATE)
+      helpURL: m.Z.getArticleURL(b.BhN.AGE_GATE)
     }),
     verifyAgreementButtonText: null
   } : {
@@ -234,31 +234,31 @@ function B(e) {
     verifyTitle: i ? y.intl.string(y.t.xi46lg) : y.intl.string(y.t.ZmwvDc)
   }
 }
-let Z = () => {
+let B = () => {
     let e = Chunk594174.default.getCurrentUser();
     if (null == module) returnfalse;
-    let t = j();
+    let t = k();
     returntrue !== module.nsfwAllowed || exports
   },
   F = e => {
-    if (!Z() || null == e) returnfalse;
-    let t = _.Z.getGuild(e);
+    if (!B() || null == e) returnfalse;
+    let t = p.Z.getGuild(e);
     return null != t && (0, u.Y2)(t)
   },
-  V = e => !!Z() && null != e && X(d.Z.getChannel(e)),
-  H = e => j() && V(e),
-  W = e => !!H(e) && ((0, g.mN)(E.L0.NSFW_VOICE_CHANNEL), true);
+  V = e => !!B() && null != e && Q(d.Z.getChannel(e)),
+  H = e => k() && V(e),
+  Y = e => !!H(e) && ((0, g.mN)(E.L0.NSFW_VOICE_CHANNEL), true);
 
-function Y(e, t, n) {
-  if (D(e)) return void(0, g.mN)(E.L0.ACCESS_LARGE_GUILD_UNDERAGE);
+function W(e, t, n) {
+  if (w(e)) return void(0, g.mN)(E.L0.ACCESS_LARGE_GUILD_UNDERAGE);
   if (F(e)) {
     let e = null != n && N.has(n) ? n : E.L0.NSFW_SERVER;
     (0, g.mN)(e);
     return
   }
-  return x(e) ? void(0, g.mN)(E.L0.LARGE_GUILD) : J() && V(t) ? void(0, g.mN)(null != n ? n : E.L0.NSFW_CHANNEL) : true
+  return L(e) ? void(0, g.mN)(E.L0.LARGE_GUILD) : J() && V(t) ? void(0, g.mN)(null != n ? n : E.L0.NSFW_CHANNEL) : true
 }
-let K = e => null != e && (e.isNSFW() || (0, u.Y2)(_.Z.getGuild(e.guild_id))),
+let K = e => null != e && (e.isNSFW() || (0, u.Y2)(p.Z.getGuild(e.guild_id))),
   z = e => {
     if (null == e) returnfalse;
     let t = (0, s.sf)();
@@ -267,41 +267,41 @@ let K = e => null != e && (e.isNSFW() || (0, u.Y2)(_.Z.getGuild(e.guild_id))),
   q = e => {
     var t;
     if (null == e) returnfalse;
-    let n = (null == (t = p.default.getCurrentUser()) ? true : t.nsfwAllowed) === true;
+    let n = (null == (t = _.default.getCurrentUser()) ? true : t.nsfwAllowed) === true;
     return K(e) && !n
   };
 
-function X(e) {
+function Q(e) {
   var t;
   if (null == e) returnfalse;
   let n = f.Z.didAgree(e.guild_id),
-    r = (null == (t = p.default.getCurrentUser()) ? true : t.nsfwAllowed) === false,
+    r = (null == (t = _.default.getCurrentUser()) ? true : t.nsfwAllowed) === false,
     i = (0, l.c_)("age-gate-utils"),
     a = (0, c.U)("age-gate-utils"),
     o = i || a,
     d = (0, s.sf)(),
-    h = !(n && !r) || d && o;
-  if (e.isNSFW() && h) returntrue;
-  let m = e.guild_id,
-    g = _.Z.getGuild(m);
-  return null != g && ((0, u.Y2)(g) && h || M(g) && d)
+    m = !(n && !r) || d && o;
+  if (e.isNSFW() && m) returntrue;
+  let h = e.guild_id,
+    g = p.Z.getGuild(h);
+  return null != g && ((0, u.Y2)(g) && m || j(g) && d)
 }
 
-function Q(e) {
+function X(e) {
   let t = (0, s.L5)(),
     n = (0, r.e7)([f.Z], () => f.Z.didAgree(null == e ? true : e.guild_id)),
-    i = (0, r.e7)([p.default], () => {
+    i = (0, r.e7)([_.default], () => {
       var e;
-      return (null == (e = p.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
+      return (null == (e = _.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     }),
-    a = k(null == e ? true : e.guild_id),
+    a = M(null == e ? true : e.guild_id),
     o = (0, l.pY)("age-gate-utils"),
     d = (0, c.s)("age-gate-utils"),
-    h = o || d,
-    m = (0, r.e7)([_.Z], () => _.Z.getGuild(null == e ? true : e.guild_id)),
-    g = h && t,
+    m = o || d,
+    h = (0, r.e7)([p.Z], () => p.Z.getGuild(null == e ? true : e.guild_id)),
+    g = m && t,
     E = !(n && !i) || g;
-  return null != e && (!!e.isNSFW() && !!E || null != m && (!!(0, u.Y2)(m) && !!E || !!a && !!t))
+  return null != e && (!!e.isNSFW() && !!E || null != h && (!!(0, u.Y2)(h) && !!E || !!a && !!t))
 }
 
 function J() {

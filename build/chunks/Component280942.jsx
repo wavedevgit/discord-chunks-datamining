@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk573567 = require("./573567.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -57,8 +57,8 @@ function m(e, t) {
 function g(e) {
   let {
     guildBoostSlot: t,
-    onClose: _,
-    hasCancelableGuildBoostSlot: h,
+    onClose: p,
+    hasCancelableGuildBoostSlot: m,
     premiumSubscription: g,
     onSelect: E,
     fractionalState: b
@@ -69,7 +69,7 @@ function g(e) {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 760558));
-      return n => (0, r.jsx)(e, m(p({}, n), {
+      return n => (0, r.jsx)(e, h(_({}, n), {
         guildBoostSlots: [t],
         locationSection: c.jXE.SETTINGS_PREMIUM
       }))
@@ -81,7 +81,7 @@ function g(e) {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 401786));
-      return n => (0, r.jsx)(e, m(p({}, n), {
+      return n => (0, r.jsx)(e, h(_({}, n), {
         guildBoostSlot: t
       }))
     })
@@ -92,12 +92,12 @@ function g(e) {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 450468));
-      return n => (0, r.jsx)(e, m(p({}, n), {
+      return n => (0, r.jsx)(e, h(_({}, n), {
         guildBoostSlotId: t.id
       }))
     })
   }
-  let I = {
+  let S = {
     transfer: {
       label: null != t.premiumGuildSubscription ? d.intl.string(d.t["PR0n//"]) : d.intl.string(d.t["+fmEYG"]),
       subtext: t.isOnCooldown() ? d.intl.string(d.t.XnB8M0) : null,
@@ -105,8 +105,8 @@ function g(e) {
     },
     cancel: {
       label: d.intl.string(d.t.twFU3R),
-      subtext: h ? null : d.intl.string(d.t.oQ9lOh),
-      disabled: !h
+      subtext: m ? null : d.intl.string(d.t.oQ9lOh),
+      disabled: !m
     },
     uncancel: {
       label: d.intl.string(d.t["2glQNp"]),
@@ -116,13 +116,13 @@ function g(e) {
   };
   switch (g.status) {
     case c.O0b.PAST_DUE:
-      I.cancel.disabled = true, I.cancel.subtext = d.intl.string(d.t.WnL6DV), I.uncancel.disabled = true;
+      S.cancel.disabled = true, S.cancel.subtext = d.intl.string(d.t.WnL6DV), S.uncancel.disabled = true;
       break;
     case c.O0b.PAUSE_PENDING:
     case c.O0b.PAUSED:
-      b === u.a$.NONE && (I.transfer.disabled = true, I.transfer.subtext = d.intl.string(d.t.LiLRRT), I.cancel.subtext = d.intl.string(d.t["1ywaWL"]), I.cancel.disabled = true, I.uncancel.disabled = true)
+      b === u.a$.NONE && (S.transfer.disabled = true, S.transfer.subtext = d.intl.string(d.t.LiLRRT), S.cancel.subtext = d.intl.string(d.t["1ywaWL"]), S.cancel.disabled = true, S.uncancel.disabled = true)
   }
-  let T = i.useMemo(() => g.isPausedOrPausePending && b === u.a$.NONE ? (0, r.jsx)(a.sNh, {
+  let I = i.useMemo(() => g.isPausedOrPausePending && b === u.a$.NONE ? (0, r.jsx)(a.sNh, {
     id: "manage-subscription",
     label: d.intl.string(d.t.obRG6Y),
     action: () => (0, s.openUserSettings)(o.n.SUBSCRIPTIONS_PANEL, {
@@ -136,26 +136,26 @@ function g(e) {
     navId: "subscription-context",
     variant: "fixed",
     "aria-label": d.intl.string(d.t.ogxXGq),
-    onClose: _,
+    onClose: p,
     children: [(0, r.jsx)(a.sNh, {
       id: "apply",
-      label: I.transfer.label,
-      subtext: I.transfer.subtext,
+      label: S.transfer.label,
+      subtext: S.transfer.subtext,
       action: y,
-      disabled: I.transfer.disabled
+      disabled: S.transfer.disabled
     }), (0, l.tl)(t) ? (0, r.jsx)(a.sNh, {
       id: "uncancel",
-      label: I.uncancel.label,
-      subtext: I.uncancel.subtext,
+      label: S.uncancel.label,
+      subtext: S.uncancel.subtext,
       action: v,
-      disabled: I.uncancel.disabled
+      disabled: S.uncancel.disabled
     }) : (0, r.jsx)(a.sNh, {
       id: "cancel",
-      label: I.cancel.label,
-      subtext: I.cancel.subtext,
+      label: S.cancel.label,
+      subtext: S.cancel.subtext,
       action: O,
-      disabled: I.cancel.disabled,
+      disabled: S.cancel.disabled,
       color: "danger"
-    }), T]
+    }), I]
   })
 }

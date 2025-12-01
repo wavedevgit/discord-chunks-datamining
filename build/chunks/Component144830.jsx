@@ -51,7 +51,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,20 +59,20 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var p = function(e) {
+var _ = function(e) {
     return e.ACTIVITY_FEED = "ACTIVITY_FEED", e.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", e.USER_ACTIVITY = "USER_ACTIVITY", e.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", e.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", e
-  }(p || {}),
-  h = function(e) {
+  }(_ || {}),
+  m = function(e) {
     return e.START = "START", e.END = "END", e.TIME = "TIME", e
-  }(h || {});
-let m = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
+  }(m || {});
+let h = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
     time: t
   }, n)),
   g = {
@@ -113,10 +113,10 @@ let m = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
     },
     ACTIVITY_FEED_NEW: {
       START: {
-        [Chunk379649.J6.SECONDS]: m(() => Chunk388032.t.Bf3PRU),
-        [Chunk379649.J6.MINUTES]: m(() => Chunk388032.t["A9P+dT"]),
-        [Chunk379649.J6.HOURS]: m(() => Chunk388032.t.KwVzfh),
-        [Chunk379649.J6.DAYS]: m(() => Chunk388032.t.hbUpBN)
+        [Chunk379649.J6.SECONDS]: h(() => Chunk388032.t.Bf3PRU),
+        [Chunk379649.J6.MINUTES]: h(() => Chunk388032.t["A9P+dT"]),
+        [Chunk379649.J6.HOURS]: h(() => Chunk388032.t.KwVzfh),
+        [Chunk379649.J6.DAYS]: h(() => Chunk388032.t.hbUpBN)
       },
       END: {
         [Chunk379649.J6.SECONDS]: e => s.intl.formatToPlainString(s.t.C3MTOD, {
@@ -265,13 +265,13 @@ function b(e) {
         } = this.state,
         u = this.getType();
       if (null == u) return null;
-      let _ = this.getTimeUnit(l, n, u),
-        p = g[n][u];
-      if (null == p) return null;
-      let h = p[_],
-        m = Math.floor((0, a.A3)(l, _));
+      let p = this.getTimeUnit(l, n, u),
+        _ = g[n][u];
+      if (null == _) return null;
+      let m = _[p],
+        h = Math.floor((0, a.A3)(l, p));
       return (0, r.jsx)(e, d(c({}, s), {
-        children: null == h ? true : h(m, i, o)
+        children: null == m ? true : m(h, i, o)
       }))
     }
     constructor(...e) {
@@ -283,5 +283,5 @@ function b(e) {
         })
       })
     }
-  }, l(n, "Locations", p), l(n, "Types", h), n
+  }, l(n, "Locations", _), l(n, "Types", m), n
 }

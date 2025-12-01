@@ -2,7 +2,7 @@
 /** chunk id: 790527, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,9 +31,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk144867 = require("./144867.js"),
   Chunk769860 = require("./769860.js");
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
-  var n, r, i = P(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -41,7 +41,7 @@ function R(e, t) {
   return i
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -49,49 +49,49 @@ function P(e, t) {
   return i
 }
 
-function D(e) {
+function w(e) {
   switch (e) {
-    case T.cd.ANIMATED_AVATAR_MODAL_UPSELL:
-    case T.cd.ANIMATED_BANNER_MODAL_UPSELL:
-    case T.cd.PROFILE_EFFECT_MODAL_UPSELL:
-    case T.cd.AVATAR_DECORATION_MODAL_UPSELL:
-    case T.cd.FOR_LATER_MODAL_UPSELL:
-    case T.cd.VOICE_FILTERS_UPSELL:
-    case T.cd.RECENT_AVATARS_ROADBLOCK_UPSELL:
+    case I.cd.ANIMATED_AVATAR_MODAL_UPSELL:
+    case I.cd.ANIMATED_BANNER_MODAL_UPSELL:
+    case I.cd.PROFILE_EFFECT_MODAL_UPSELL:
+    case I.cd.AVATAR_DECORATION_MODAL_UPSELL:
+    case I.cd.FOR_LATER_MODAL_UPSELL:
+    case I.cd.VOICE_FILTERS_UPSELL:
+    case I.cd.RECENT_AVATARS_ROADBLOCK_UPSELL:
       returntrue;
     default:
       returnfalse
   }
 }
 
-function w(e) {
+function D(e) {
   var t, n, a, {
-      title: P,
-      type: w,
-      guildBoostProps: L,
-      analyticsSource: x,
-      analyticsLocation: M,
-      body: k,
-      context: j,
+      title: R,
+      type: D,
+      guildBoostProps: x,
+      analyticsSource: L,
+      analyticsLocation: j,
+      body: M,
+      context: k,
       glowUp: U,
       modalClassName: G,
-      modalContentClassName: B,
-      artContainerClassName: Z,
+      modalContentClassName: Z,
+      artContainerClassName: B,
       artClassName: F,
       headerClassName: V,
       bodyClassName: H,
-      transitionState: W,
-      onClose: Y,
+      transitionState: Y,
+      onClose: W,
       onSubscribeClick: K,
       onSubscribeFinish: z,
       onSecondaryClick: q,
-      secondaryCTA: X,
-      secondaryCTAClassName: Q,
+      secondaryCTA: Q,
+      secondaryCTAClassName: X,
       subscribeButtonText: J,
       showNewBadge: $ = false,
       showBetaBadge: ee = false,
       enableArtBoxShadow: et = true,
-      subscriptionTier: en = T.Si.TIER_2,
+      subscriptionTier: en = I.Si.TIER_2,
       isLoading: er = false,
       hideBackButton: ei,
       backButtonText: ea,
@@ -102,23 +102,23 @@ function w(e) {
       children: eu,
       LeadingComponent: ed,
       backgroundElements: ef,
-      smallText: e_ = false,
-      footerClassName: ep
+      smallText: ep = false,
+      footerClassName: e_
     } = e,
-    eh = R(e, ["title", "type", "guildBoostProps", "analyticsSource", "analyticsLocation", "body", "context", "glowUp", "modalClassName", "modalContentClassName", "artContainerClassName", "artClassName", "headerClassName", "bodyClassName", "transitionState", "onClose", "onSubscribeClick", "onSubscribeFinish", "onSecondaryClick", "secondaryCTA", "secondaryCTAClassName", "subscribeButtonText", "showNewBadge", "showBetaBadge", "enableArtBoxShadow", "subscriptionTier", "isLoading", "hideBackButton", "backButtonText", "showEnhancedUpsell", "useSubscribeButtonGradient", "subscribeButtonClassname", "hidePremiumOfferUpsell", "children", "LeadingComponent", "backgroundElements", "smallText", "footerClassName"]);
-  let em = null != L,
+    em = P(e, ["title", "type", "guildBoostProps", "analyticsSource", "analyticsLocation", "body", "context", "glowUp", "modalClassName", "modalContentClassName", "artContainerClassName", "artClassName", "headerClassName", "bodyClassName", "transitionState", "onClose", "onSubscribeClick", "onSubscribeFinish", "onSecondaryClick", "secondaryCTA", "secondaryCTAClassName", "subscribeButtonText", "showNewBadge", "showBetaBadge", "enableArtBoxShadow", "subscriptionTier", "isLoading", "hideBackButton", "backButtonText", "showEnhancedUpsell", "useSubscribeButtonGradient", "subscribeButtonClassname", "hidePremiumOfferUpsell", "children", "LeadingComponent", "backgroundElements", "smallText", "footerClassName"]);
+  let eh = null != x,
     eg = (0, b.N)(),
     eE = (0, E.N)(),
-    eb = !ec && ((null == eg || null == (t = eg.subscription_trial) ? true : t.sku_id) === en || (0, O.Wp)(eE, en)) && !em,
+    eb = !ec && ((null == eg || null == (t = eg.subscription_trial) ? true : t.sku_id) === en || (0, O.Wp)(eE, en)) && !eh,
     {
       analyticsLocations: ey
     } = (0, f.ZP)(d.Z.PREMIUM_UPSELL_MODAL),
     eO = {
-      analyticsLocation: M,
+      analyticsLocation: j,
       analyticsLocations: ey,
-      analyticsSource: x,
-      guildBoostProps: L,
-      type: w
+      analyticsSource: L,
+      guildBoostProps: x,
+      type: D
     },
     ev = i.useRef(eO);
   i.useEffect(() => {
@@ -132,37 +132,37 @@ function w(e) {
       guildBoostProps: r,
       type: i
     } = ev.current;
-    em ? h.default.track(S.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
+    eh ? m.default.track(T.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
       type: "".concat(i, " - Tier ").concat(null == r ? true : r.boostedGuildTier),
       guild_id: null == r ? true : r.guild.id,
       channel_id: null == r ? true : r.channelId,
       location: e,
       location_stack: t
-    }) : h.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
+    }) : m.default.track(T.rMx.PREMIUM_UPSELL_VIEWED, {
       type: i,
       source: n,
       location: e,
       location_stack: t,
-      sku_id: (0, m.Wz)(en)
+      sku_id: (0, h.Wz)(en)
     })
-  }, [em, en, er]);
-  let eI = (0, s.e7)([g.Z], () => g.Z.affinities),
-    eT = eI.length > 1 && D(w),
-    eS = (0, s.e7)([g.Z], () => g.Z.hasFetched);
+  }, [eh, en, er]);
+  let eS = (0, s.e7)([g.Z], () => g.Z.affinities),
+    eI = eS.length > 1 && w(D),
+    eT = (0, s.e7)([g.Z], () => g.Z.hasFetched);
   i.useEffect(() => {
-    eS || u.MH()
-  }, [eS]);
+    eT || u.MH()
+  }, [eT]);
   let eA = () => {
-      if (em) return (0, r.jsx)(p.Z, {
-        analyticsLocation: M,
-        guild: L.guild,
-        onClose: Y
+      if (eh) return (0, r.jsx)(_.Z, {
+        analyticsLocation: j,
+        guild: x.guild,
+        onClose: W
       });
       let e = eo ? A.intl.string(A.t.pj0XBN) : true;
       if (eb)
         if (null != eg) {
           var t, n;
-          e = (0, m.Rt)({
+          e = (0, h.Rt)({
             intervalType: null == eg || null == (t = eg.subscription_trial) ? true : t.interval,
             intervalCount: null == eg || null == (n = eg.subscription_trial) ? true : n.interval_count
           })
@@ -172,12 +172,12 @@ function w(e) {
       return (0, r.jsx)(y.Z, {
         className: el,
         showGradient: eo || es,
-        premiumModalAnalyticsLocation: M,
+        premiumModalAnalyticsLocation: j,
         subscriptionTier: en,
         size: l.zx.Sizes.SMALL,
         color: eo || es ? l.zx.Colors.CUSTOM : l.zx.Colors.GREEN,
         onClick: () => {
-          null == K || K(), Y()
+          null == K || K(), W()
         },
         onSubscribeModalClose: z,
         textOptions: {
@@ -185,17 +185,17 @@ function w(e) {
         }
       })
     },
-    eC = et ? o()(C.artContainer, C.artContainerBoxShadow, Z) : o()(C.artContainer, Z),
+    eC = et ? o()(C.artContainer, C.artContainerBoxShadow, B) : o()(C.artContainer, B),
     eN = null;
-  return null != eh.artURL ? eN = (0, r.jsx)("img", {
+  return null != em.artURL ? eN = (0, r.jsx)("img", {
     className: o()(F, C.art),
     alt: "",
-    src: eh.artURL
-  }) : null != eh.artElement && (eN = eh.artElement), (0, r.jsxs)(c.Y0X, {
+    src: em.artURL
+  }) : null != em.artElement && (eN = em.artElement), (0, r.jsxs)(c.Y0X, {
     "data-migration-pending": true,
     className: o()(C.root, !eb && G),
-    "aria-label": P,
-    transitionState: W,
+    "aria-label": R,
+    transitionState: Y,
     parentComponent: "PremiumUpsellModal",
     children: [null != eN && (0, r.jsxs)("div", {
       className: eC,
@@ -207,14 +207,14 @@ function w(e) {
     }), (0, r.jsx)(c.hzk, {
       "data-migration-pending": true,
       scrollbarType: "none",
-      className: o()(eo ? C.enhancedContent : C.content, !eb && B),
+      className: o()(eo ? C.enhancedContent : C.content, !eb && Z),
       children: er ? (0, r.jsx)(c.$jN, {}) : eb ? (0, r.jsx)(v.ZP, {
-        onClose: Y,
-        type: w,
-        subscriptionTier: null != (a = null == eg || null == (n = eg.subscription_trial) ? true : n.sku_id) ? a : T.Si.TIER_2,
-        headingText: P,
-        context: j,
-        analyticsLocationObject: M,
+        onClose: W,
+        type: D,
+        subscriptionTier: null != (a = null == eg || null == (n = eg.subscription_trial) ? true : n.sku_id) ? a : I.Si.TIER_2,
+        headingText: R,
+        context: k,
+        analyticsLocationObject: j,
         discountOffer: eE,
         trialOffer: eg,
         children: U
@@ -227,47 +227,47 @@ function w(e) {
               [C.enhancedHeader]: eo
             }, V),
             variant: "heading-xl/bold",
-            children: [P, ee ? (0, r.jsx)(_.Z, {
+            children: [R, ee ? (0, r.jsx)(p.Z, {
               className: C.betaTag
             }) : null]
-          }), eT ? (0, r.jsx)(I.Z, {
-            affinities: eI
+          }), eI ? (0, r.jsx)(S.Z, {
+            affinities: eS
           }) : true, eu, (0, r.jsx)(c.Text, {
-            variant: e_ ? "text-sm/normal" : "text-md/normal",
+            variant: ep ? "text-sm/normal" : "text-md/normal",
             className: o()(H, C.subHeader),
-            children: k
+            children: M
           })]
         })]
       })
     }), (0, r.jsxs)(c.mzw, {
       "data-migration-pending": true,
-      className: o()(C.footer, ep, {
+      className: o()(C.footer, e_, {
         [C.enhancedFooter]: eo
       }),
       children: [(0, r.jsxs)("div", {
         className: o()(C.primaryActions, {
           [C.enhancedPrimaryActions]: eo
         }),
-        children: [null != X ? (0, r.jsx)(l.zx, {
+        children: [null != Q ? (0, r.jsx)(l.zx, {
           "data-migration-pending": true,
-          className: o()(C.secondaryAction, Q, {
+          className: o()(C.secondaryAction, X, {
             [C.enhancedSecondaryAction]: eo
           }),
           onClick: q,
           size: l.zx.Sizes.SMALL,
           color: eo ? l.zx.Colors.CUSTOM : l.zx.Colors.PRIMARY,
           look: l.zx.Looks.LINK,
-          children: X
+          children: Q
         }) : null, eA()]
       }), !ei && !eo && (0, r.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
         text: null != ea ? ea : A.intl.string(A.t["13/7kX"]),
-        onClick: Y
+        onClick: W
       })]
     }), eo ? (0, r.jsx)(c.olH, {
       "data-migration-pending": true,
-      onClick: Y,
+      onClick: W,
       className: C.closeButton
     }) : null, ef]
   })

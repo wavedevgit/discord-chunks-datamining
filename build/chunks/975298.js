@@ -2,7 +2,7 @@
 /** chunk id: 975298, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./642613.js"), require("./583741.js"), require("./388685.js"), require("./415506.js");
 var Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
@@ -59,7 +59,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = e => {
+let S = e => {
   var t;
   let {
     isFetching: n = false,
@@ -86,32 +86,32 @@ let I = e => {
   if (f.reverse(), f.length > 0 && (f.length !== r.length || null == f[0].startsAt || null == f[0].endsAt)) {
     let e = Array.from(r.values()).map(e => e.id),
       t = "fractional redemption entitlements should have startsAt/endsAt";
-    throw (0, h.g9)(t, {
+    throw (0, m.g9)(t, {
       extra: {
         entitlementIds: e
       }
     }), Error(t)
   }
-  let _ = null != (t = f[0]) ? t : null,
-    p = E.a$.NONE;
-  null != _ && (p = null != s && s.status === g.O0b.PAUSED ? E.a$.FP_SUB_PAUSED : E.a$.FP_ONLY);
-  let b = u && (null == _ ? true : _.sourceType) === g.kNB.REVERSE_TRIAL;
+  let p = null != (t = f[0]) ? t : null,
+    _ = E.a$.NONE;
+  null != p && (_ = null != s && s.status === g.O0b.PAUSED ? E.a$.FP_SUB_PAUSED : E.a$.FP_ONLY);
+  let b = u && (null == p ? true : p.sourceType) === g.kNB.REVERSE_TRIAL;
   return {
-    isFractionalPremiumActive: null != _,
-    fractionalState: p,
-    startsAt: null != _ ? l()(_.startsAt) : l()(0),
-    endsAt: null != _ ? l()((0, m.N1)(_.endsAt, i, true, b)) : l()(0),
-    currentEntitlementId: null != _ ? _.id : "",
+    isFractionalPremiumActive: null != p,
+    fractionalState: _,
+    startsAt: null != p ? l()(p.startsAt) : l()(0),
+    endsAt: null != p ? l()((0, h.N1)(p.endsAt, i, true, b)) : l()(0),
+    currentEntitlementId: null != p ? p.id : "",
     unactivatedUnits: i,
     fetched: c
   }
 };
 
-function T(e, t) {
-  return null != t && !p.Z.fetchingAllEntitlements && (!p.Z.fetchedAllEntitlements || e)
+function I(e, t) {
+  return null != t && !_.Z.fetchingAllEntitlements && (!_.Z.fetchedAllEntitlements || e)
 }
 
-function S() {
+function T() {
   let {
     forceFetch: e,
     excludeReverseTrial: t,
@@ -122,8 +122,8 @@ function S() {
     excludeReverseTrialFromCountdown: false
   }, i = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), a = (0, Chunk442837.Wu)([Chunk580130.Z], () => Chunk580130.Z.getFractionalPremium({
     excludeReverseTrial: exports
-  })), s = (0, Chunk442837.e7)([Chunk580130.Z], () => Chunk580130.Z.fetchedAllEntitlements), l = (0, Chunk442837.Wu)([Chunk580130.Z], () => Chunk580130.Z.getUnactivatedFractionalPremiumUnits()), h = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), [m, E] = Chunk473749.useState(I({
-    isFetching: T(module, Chunk512722) || Chunk580130.Z.fetchingAllEntitlements,
+  })), s = (0, Chunk442837.e7)([Chunk580130.Z], () => Chunk580130.Z.fetchedAllEntitlements), l = (0, Chunk442837.Wu)([Chunk580130.Z], () => Chunk580130.Z.getUnactivatedFractionalPremiumUnits()), m = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), [h, E] = Chunk473749.useState(S({
+    isFetching: I(module, Chunk512722) || Chunk580130.Z.fetchingAllEntitlements,
     entitlements: a,
     unactivatedFractionalPremiumUnits: l,
     currentUser: Chunk512722,
@@ -132,11 +132,11 @@ function S() {
     excludeReverseTrialFromCountdown: require
   }));
   return (0, Chunk493773.ZP)(() => {
-    T(module, Chunk512722) && (0, Chunk496929.p0)({
+    I(module, Chunk512722) && (0, Chunk496929.p0)({
       entitlementType: Chunk981631.qc2.FRACTIONAL_REDEMPTION
     })
   }), Chunk473749.useEffect(() => {
-    let e = I({
+    let e = S({
       entitlements: a,
       unactivatedFractionalPremiumUnits: l,
       currentUser: Chunk512722,

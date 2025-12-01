@@ -3,15 +3,15 @@
 "use strict";
 let r, i;
 require.r(exports), require.d(exports, {
-  encryptAndStoreTokens: () => P,
+  encryptAndStoreTokens: () => R,
   getAnalyticsToken: () => O,
   getToken: () => v,
   hideToken: () => A,
   init: () => y,
-  removeAnalyticsToken: () => R,
+  removeAnalyticsToken: () => P,
   removeToken: () => N,
-  setAnalyticsToken: () => I,
-  setToken: () => T,
+  setAnalyticsToken: () => S,
+  setToken: () => I,
   showToken: () => C
 }), require("./388685.js");
 var Chunk433517 = require("./433517.js"),
@@ -29,17 +29,17 @@ let u = null,
   d = window.DiscordNative;
 null != d && (u = d.safeStorage);
 let f = false,
-  _ = {},
   p = {},
-  h = false,
-  m = false;
+  _ = {},
+  m = false,
+  h = false;
 
 function g() {
-  if (h) {
+  if (m) {
     Chunk433517.K.remove(Chunk231338.B1), Chunk433517.K.remove(Chunk231338.XM);
     return
   }
-  null != i ? Chunk433517.K.set(Chunk231338.B1, i) : Chunk433517.K.remove(Chunk231338.B1), Chunk433517.K.set(Chunk231338.XM, p)
+  null != i ? Chunk433517.K.set(Chunk231338.B1, i) : Chunk433517.K.remove(Chunk231338.B1), Chunk433517.K.set(Chunk231338.XM, _)
 }
 
 function E(e) {
@@ -60,13 +60,13 @@ function b(e) {
 }
 
 function y() {
-  if (m) return;
-  i = Chunk433517.K.get(Chunk231338.B1), p = Chunk433517.K.get(Chunk231338.XM) || {};
+  if (h) return;
+  i = Chunk433517.K.get(Chunk231338.B1), _ = Chunk433517.K.get(Chunk231338.XM) || {};
   let {
     decryptedToken: e,
     wasEncrypted: t
   } = E(i);
-  f = exports, r = module, _ = c(Object.entries(p).map(e => {
+  f = exports, r = module, p = c(Object.entries(_).map(e => {
     let [t, n] = e, {
       decryptedToken: r,
       wasEncrypted: i
@@ -75,7 +75,7 @@ function y() {
   }).filter(e => {
     let [t, n] = e;
     return null != n
-  })), m = true
+  })), h = true
 }
 
 function O() {
@@ -83,43 +83,43 @@ function O() {
 }
 
 function v(e) {
-  return (y(), null != e) ? _[e] : r
+  return (y(), null != e) ? p[e] : r
 }
 
-function I(e) {
+function S(e) {
   if (null == e) return void N(l);
-  S(e, l)
+  T(e, l)
+}
+
+function I(e, t) {
+  if (null == e) return void N(t);
+  r = e, T(e, t)
 }
 
 function T(e, t) {
-  if (null == e) return void N(t);
-  r = e, S(e, t)
-}
-
-function S(e, t) {
-  null != t && (_[t] = e), f ? P() : (i = r, p = _, g())
+  null != t && (p[t] = e), f ? R() : (i = r, _ = p, g())
 }
 
 function A() {
-  h || (h = true, g())
+  m || (m = true, g())
 }
 
 function C() {
-  h && (h = false, g())
+  m && (m = false, g())
 }
 
 function N(e) {
   let t = r;
-  return null != e && (t = _[e], delete _[e], delete p[e]), t === r && (r = null, i = null), g(), null != t
-}
-
-function R() {
-  return N(l)
+  return null != e && (t = p[e], delete p[e], delete _[e]), t === r && (r = null, i = null), g(), null != t
 }
 
 function P() {
-  (null == u ? true : u.isEncryptionAvailable()) ? (null != r && (i = b(r)), p = c(Object.entries(_).map(e => {
+  return N(l)
+}
+
+function R() {
+  (null == u ? true : u.isEncryptionAvailable()) ? (null != r && (i = b(r)), _ = c(Object.entries(p).map(e => {
     let [t, n] = e;
     return [t, b(n)]
-  })), f = true) : (i = r, p = _), g()
+  })), f = true) : (i = r, _ = p), g()
 }

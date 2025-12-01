@@ -26,23 +26,23 @@ function s(e, t, n) {
 
 function l(e, t, n, o, s, d) {
   let f = i.Z.getTypeSize("SHORT"),
-    _ = 12,
-    p = {},
-    h = c(e, o, s);
+    p = 12,
+    _ = {},
+    m = c(e, o, s);
   o += f;
-  for (let r = 0; r < h && !(o + _ > e.byteLength); r++) {
+  for (let r = 0; r < m && !(o + p > e.byteLength); r++) {
     let r = u(e, t, n, o, s, d);
-    true !== r && (p[r.name] = {
+    true !== r && (_[r.name] = {
       id: r.id,
       value: r.value,
       description: r.description
-    }, ("MakerNote" === r.name || t === a.eG && "LevelInfo" === r.name) && (p[r.name].__offset = r.__offset)), o += _
+    }, ("MakerNote" === r.name || t === a.eG && "LevelInfo" === r.name) && (_[r.name].__offset = r.__offset)), o += p
   }
   if (r.Z.USE_THUMBNAIL && o < e.byteLength - i.Z.getTypeSize("LONG")) {
     let r = i.Z.getLongAt(e, o, s);
-    0 !== r && t === a.n1 && (p.Thumbnail = l(e, a.yJ, n, n + r, s, d))
+    0 !== r && t === a.n1 && (_.Thumbnail = l(e, a.yJ, n, n + r, s, d))
   }
-  return p
+  return _
 }
 
 function c(e, t, n) {
@@ -58,23 +58,23 @@ function u(e, t, n, r, o, s) {
     O = i.Z.getShortAt(e, r + g, o),
     v = i.Z.getLongAt(e, r + E, o);
   if (true === i.Z.typeSizes[O] || !s && true === a.ZP[t][y]) return;
-  d(O, v) ? l = f(e, c = r + b, O, v, o) : (c = i.Z.getLongAt(e, r + b, o), l = _(e, n, c, O, v) ? f(e, n + c, O, v, o, y === u) : "<faulty value>"), O === i.Z.tagTypes.ASCII && (l = h(l = p(l)));
-  let I = `undefined-${y}`,
-    T = l;
+  d(O, v) ? l = f(e, c = r + b, O, v, o) : (c = i.Z.getLongAt(e, r + b, o), l = p(e, n, c, O, v) ? f(e, n + c, O, v, o, y === u) : "<faulty value>"), O === i.Z.tagTypes.ASCII && (l = m(l = _(l)));
+  let S = `undefined-${y}`,
+    I = l;
   if (true !== a.ZP[t][y])
     if (true !== a.ZP[t][y].name && true !== a.ZP[t][y].description) {
-      I = a.ZP[t][y].name;
+      S = a.ZP[t][y].name;
       try {
-        T = a.ZP[t][y].description(l)
+        I = a.ZP[t][y].description(l)
       } catch (e) {
-        T = m(l)
+        I = h(l)
       }
-    } else O === i.Z.tagTypes.RATIONAL || O === i.Z.tagTypes.SRATIONAL ? (I = a.ZP[t][y], T = "" + l[0] / l[1]) : (I = a.ZP[t][y], T = m(l));
+    } else O === i.Z.tagTypes.RATIONAL || O === i.Z.tagTypes.SRATIONAL ? (S = a.ZP[t][y], I = "" + l[0] / l[1]) : (S = a.ZP[t][y], I = h(l));
   return {
     id: y,
-    name: I,
+    name: S,
     value: l,
-    description: T,
+    description: I,
     __offset: c
   }
 }
@@ -90,11 +90,11 @@ function f(e, t, n, r, a, s = false) {
   return n === i.Z.tagTypes.ASCII ? l = i.Z.getAsciiValue(l) : 1 === l.length && (l = l[0]), l
 }
 
-function _(e, t, n, r, a) {
+function p(e, t, n, r, a) {
   return t + n + i.Z.typeSizes[r] * a <= e.byteLength
 }
 
-function p(e) {
+function _(e) {
   let t = [],
     n = 0;
   for (let r = 0; r < e.length; r++) {
@@ -107,7 +107,7 @@ function p(e) {
   return t
 }
 
-function h(e) {
+function m(e) {
   try {
     return e.map(e => decodeURIComponent(escape(e)))
   } catch (t) {
@@ -115,6 +115,6 @@ function h(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   return e instanceof Array ? e.join(", ") : e
 }

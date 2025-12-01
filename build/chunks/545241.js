@@ -40,26 +40,26 @@ module.exports = function(e) {
       className: "symbol",
       begin: "[:]{1,2}" + n
     },
-    _ = {
+    p = {
       begin: "\\(",
       end: "\\)"
     },
-    p = {
+    _ = {
       endsWithParent: true,
       relevance: 0
     },
-    h = {
+    m = {
       className: "name",
       relevance: 0,
       keywords: r,
       begin: n,
-      starts: p
+      starts: _
     },
-    m = [_, o, u, d, s, f, c, a, l, i];
-  return _.contains = [e.COMMENT("comment", ""), h, p], p.contains = m, c.contains = m, {
+    h = [p, o, u, d, s, f, c, a, l, i];
+  return p.contains = [e.COMMENT("comment", ""), m, _], _.contains = h, c.contains = h, {
     name: "Hy",
     aliases: ["hylang"],
     illegal: /\S/,
-    contains: [e.SHEBANG(), _, o, u, d, s, f, c, a, l]
+    contains: [e.SHEBANG(), p, o, u, d, s, f, c, a, l]
   }
 }

@@ -2,7 +2,7 @@
 /** chunk id: 49402, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => m
+  I: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,15 +45,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,7 +61,7 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -69,66 +69,66 @@ function h(e, t) {
   return i
 }
 
-function m(e, t, n) {
+function h(e, t, n) {
   let a = (0, c.G6)(e);
   return i.forwardRef(function(u, f) {
     var {
-      children: h,
-      className: m,
+      children: m,
+      className: h,
       dir: g = "ltr",
       orientation: E = "vertical",
       overflow: b = "scroll",
       fade: y = false,
       customTheme: O = false,
       paddingFix: v = true,
-      style: I,
-      gap: T,
-      experimental_useStack: S
-    } = u, A = p(u, ["children", "className", "dir", "orientation", "overflow", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
+      style: S,
+      gap: I,
+      experimental_useStack: T
+    } = u, A = _(u, ["children", "className", "dir", "orientation", "overflow", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
     let {
       scrollerRef: C,
       getScrollerState: N
-    } = (0, c.Ke)(), R = (0, c.t2)(C, E);
+    } = (0, c.Ke)(), P = (0, c.t2)(C, E);
     i.useImperativeHandle(f, () => d({
       getScrollerNode: () => C.current,
       getScrollerState: N
-    }, (0, c.Ue)(C, N, R, E)), [C, N, E, R]);
-    let P = (0, c.tT)({
+    }, (0, c.Ue)(C, N, P, E)), [C, N, E, P]);
+    let R = (0, c.tT)({
       paddingFix: v,
       orientation: E,
       dir: g,
-      className: m,
+      className: h,
       scrollerRef: C,
       specs: a
     });
-    return S ? (0, r.jsx)(l.K, _(d({
-      gap: T,
+    return T ? (0, r.jsx)(l.K, p(d({
+      gap: I,
       ref: C,
-      className: o()(m, {
+      className: o()(h, {
         [e]: true,
         [t]: y,
         [n]: O
       }),
-      style: (0, c.uT)(I, E, b),
+      style: (0, c.uT)(S, E, b),
       dir: g
     }, A), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: C,
-        children: [h, P]
+        children: [m, R]
       })
-    })) : (0, r.jsx)("div", _(d({
+    })) : (0, r.jsx)("div", p(d({
       ref: C,
-      className: o()(m, {
+      className: o()(h, {
         [e]: true,
         [t]: y,
         [n]: O
       }),
-      style: (0, c.uT)(I, E, b),
+      style: (0, c.uT)(S, E, b),
       dir: g
     }, A), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: C,
-        children: [h, P]
+        children: [m, R]
       })
     }))
   })

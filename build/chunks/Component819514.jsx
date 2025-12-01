@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk342153 = require("./342153.js"),
   Chunk625221 = require("./625221.js");
 
-function C(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,7 +42,7 @@ function S(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -156,10 +156,10 @@ class Z extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), C(this, "state", {
+    super(...e), P(this, "state", {
       report: false,
       resolveFlag: false
-    }), C(this, "handleDelete", () => {
+    }), P(this, "handleDelete", () => {
       let {
         report: e,
         resolveFlag: t
@@ -182,14 +182,14 @@ class Z extends Chunk473749.PureComponent {
           t && !o && m.Z.resolveFlag(a), null == (e = (n = this.props).onClose) || e.call(n)
         }
       })
-    }), C(this, "handleDeleteMana", () => {
+    }), P(this, "handleDeleteMana", () => {
       var e, t;
       this.handleDelete(), null == (e = (t = this.props).onClose) || e.call(t)
-    }), C(this, "handleToggleReport", e => {
+    }), P(this, "handleToggleReport", e => {
       this.setState({
         report: e
       })
-    }), C(this, "handleToggleResolveFlag", e => {
+    }), P(this, "handleToggleResolveFlag", e => {
       this.setState({
         resolveFlag: e
       })
@@ -220,7 +220,7 @@ let w = {
           }]
         }, n), {
           children: (0, r.jsx)("div", {
-            className: P.message,
+            className: C.message,
             children: (0, r.jsx)(_.Z, {
               channel: e,
               message: t,
@@ -251,7 +251,7 @@ let w = {
         }]
       }, n), {
         children: [(0, r.jsx)("div", {
-          className: o()(P.message, P.spacing),
+          className: o()(C.message, C.spacing),
           children: (0, r.jsx)(_.Z, {
             channel: e,
             message: t,
@@ -290,7 +290,7 @@ let w = {
     }, i), {
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: P.spacing,
+        className: C.spacing,
         children: x.intl.string(x.t.grBcM8)
       })
     })))

@@ -2,7 +2,7 @@
 /** chunk id: 797258, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -26,7 +26,7 @@ function f(e) {
     d[e.sessionId] = e
   })
 }
-class _ extends(r = Chunk442837.ZP.Store) {
+class p extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default)
   }
@@ -68,8 +68,8 @@ class _ extends(r = Chunk442837.ZP.Store) {
     return null != i ? i : null == (t = r.hiddenActivities) ? true : t.find(t => t.application_id === e)
   }
 }
-c(_, "displayName", "SessionsStore");
-let p = new _(Chunk570140.Z, {
+c(p, "displayName", "SessionsStore");
+let _ = new p(Chunk570140.Z, {
   CONNECTION_OPEN: f,
   SESSIONS_REPLACE: f
 })

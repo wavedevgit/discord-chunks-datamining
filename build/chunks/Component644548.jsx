@@ -49,53 +49,53 @@ let y = (e, t, n, r) => {
     } = (0, l.rv)({
       entry: n
     }), {
-      user: I,
-      details: T,
-      appName: S
+      user: S,
+      details: I,
+      appName: T
     } = (0, g.n)(n), {
       primaryColor: A,
       secondaryColor: C
-    } = (0, d.Z)(null == v ? true : v.src), N = (0, c.yA)(n), R = (0, c.Nq)(n), P = i.useCallback(e => {
-      if (null != t && null != I && null != N && null != R && (0, _.qy)(R)) return (0, u.SO)({
+    } = (0, d.Z)(null == v ? true : v.src), N = (0, c.yA)(n), P = (0, c.Nq)(n), R = i.useCallback(e => {
+      if (null != t && null != S && null != N && null != P && (0, p.qy)(P)) return (0, u.SO)({
         entry: n,
         applicationImageSrc: null == v ? true : v.src,
-        avatarSrcs: [I.getAvatarURL(null == t ? true : t.guild_id, 128)],
-        description: y(n, t, I, R),
+        avatarSrcs: [S.getAvatarURL(null == t ? true : t.guild_id, 128)],
+        description: y(n, t, S, P),
         timestamp: E.intl.formatToPlainString(E.t.YL7UE3, {
           hours: Math.round(N / o.Z.Seconds.HOUR)
         }),
         colors: [A, C],
         channelId: e
       })
-    }, [null == v ? true : v.src, t, N, n, A, R, C, I]);
-    if (null == I || null == N || null == R || !(0, _.qy)(R)) return null;
-    let D = null != n.extra.platform ? f.v[n.extra.platform] : null;
-    return (0, r.jsxs)(h.yR, {
-      children: [(0, r.jsx)(h.wG, {
+    }, [null == v ? true : v.src, t, N, n, A, P, C, S]);
+    if (null == S || null == N || null == P || !(0, p.qy)(P)) return null;
+    let w = null != n.extra.platform ? f.v[n.extra.platform] : null;
+    return (0, r.jsxs)(m.yR, {
+      children: [(0, r.jsx)(m.wG, {
         channel: t,
-        headerIcons: null == D ? null : (0, r.jsx)(m.Z, {
-          Icon: D,
+        headerIcons: null == w ? null : (0, r.jsx)(h.Z, {
+          Icon: w,
           "aria-label": E.intl.string(E.t.YR4cHH)
         }),
         entry: n,
         userDescription: E.t.rPqqts,
-        title: S,
-        subtitle: T,
-        badges: (0, r.jsx)(p.Gk, {
-          location: p.Gt.POPOUT,
-          children: _.Hs.map((e, t) => (0, r.jsx)(e, {
+        title: T,
+        subtitle: I,
+        badges: (0, r.jsx)(_.Gk, {
+          location: _.Gt.POPOUT,
+          children: p.Hs.map((e, t) => (0, r.jsx)(e, {
             entry: n
           }, t))
         }),
         disableGameProfileLinks: a
-      }), (0, r.jsx)(h.St, {
-        children: (0, r.jsx)(h.WT, {
+      }), (0, r.jsx)(m.St, {
+        children: (0, r.jsx)(m.WT, {
           onReaction: s,
           onVoiceChannelPreview: b,
-          user: I,
+          user: S,
           channel: t,
-          generateReactionImage: P,
-          reactionImageAltText: O(n, I),
+          generateReactionImage: R,
+          reactionImageAltText: O(n, S),
           entry: n
         })
       })]

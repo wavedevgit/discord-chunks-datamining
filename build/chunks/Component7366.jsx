@@ -2,7 +2,7 @@
 /** chunk id: 7366, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -46,15 +46,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,23 +62,23 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = e => {
+let h = e => {
   var {
     gradientColor: t,
     title: n,
     subtitle: u,
     onClose: f,
-    onSecondaryClick: h,
-    videoSrc: m,
+    onSecondaryClick: m,
+    videoSrc: h,
     loopAt: g
-  } = e, E = p(e, ["gradientColor", "title", "subtitle", "onClose", "onSecondaryClick", "videoSrc", "loopAt"]);
+  } = e, E = _(e, ["gradientColor", "title", "subtitle", "onClose", "onSecondaryClick", "videoSrc", "loopAt"]);
   let {
     subscribeButtonProps: b,
     subscriptionTier: y
@@ -100,7 +100,7 @@ let m = e => {
         gradientColor: t,
         graphic: {
           type: "video",
-          src: m,
+          src: h,
           loop: true,
           loopAt: g
         },
@@ -109,8 +109,8 @@ let m = e => {
         actions: [{
           variant: "secondary",
           text: c.intl.string(c.t.ZnqyZ2),
-          onClick: h
-        }, _(d({}, b), {
+          onClick: m
+        }, p(d({}, b), {
           onClick: a
         })]
       }, null != O && {

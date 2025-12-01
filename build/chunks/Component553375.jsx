@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => E,
-  nK: () => m,
+  nK: () => h,
   uj: () => g
 });
 var Chunk54381 = require("./54381.js");
@@ -26,7 +26,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,13 +50,13 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e) {
+function h(e) {
   let {
     user: t,
     activity: n,
@@ -81,17 +81,17 @@ function g(e) {
     entry: l
   } = e, {
     applicationId: u
-  } = m({
+  } = h({
     activity: s,
     entry: l,
     user: t
-  }), f = (0, c.M)(u), p = null != s && (0, a.Z)(s), g = null != l && (0, o.dX)(l);
-  if (p || g) {
+  }), f = (0, c.M)(u), _ = null != s && (0, a.Z)(s), g = null != l && (0, o.dX)(l);
+  if (_ || g) {
     let e = () => (0, i.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("82077"), n.e("87087")]).then(n.bind(n, 953848));
-      if (null != s) return t => (0, r.jsx)(e, h(_({}, t), {
+      if (null != s) return t => (0, r.jsx)(e, m(p({}, t), {
         detectedActivity: s,
         onSubmitted: () => {}
       }));
@@ -100,12 +100,12 @@ function g(e) {
           name: l.extra.game_name,
           application_id: l.extra.application_id
         };
-        return n => (0, r.jsx)(e, h(_({}, n), {
+        return n => (0, r.jsx)(e, m(p({}, n), {
           detectedActivity: t,
           onSubmitted: () => {}
         }))
       }
-      return t => (0, r.jsx)(e, h(_({}, t), {
+      return t => (0, r.jsx)(e, m(p({}, t), {
         onSubmitted: () => {}
       }))
     });
@@ -128,26 +128,26 @@ function E(e) {
     appContext: u
   } = e, {
     applicationId: f,
-    sourceUserId: _
-  } = m({
+    sourceUserId: p
+  } = h({
     activity: n,
     entry: a,
     user: t
-  }), p = (0, l.Z)({
+  }), _ = (0, l.Z)({
     location: "UserProfileActivityContextMenu",
     source: s.m1.UserProfileCardContextMenu,
     trackEntryPointImpression: c,
     applicationId: f,
-    sourceUserId: _,
+    sourceUserId: p,
     appContext: u
   });
-  return null == p ? null : (0, r.jsx)(i.sNh, {
+  return null == _ ? null : (0, r.jsx)(i.sNh, {
     id: "game-profile",
     label: d.intl.string(d.t.ajHoOr),
     action: e => {
       null == o || o({
         action: "PRESS_VIEW_GAME_PROFILE_MENU_ITEM"
-      }), p(e)
+      }), _(e)
     }
   })
 }

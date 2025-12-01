@@ -59,7 +59,7 @@ module.exports = function(e) {
         begin: /\}\}/
       }, e.BACKSLASH_ESCAPE, d]
     },
-    _ = {
+    p = {
       className: "string",
       begin: /\$@"/,
       end: '"',
@@ -71,7 +71,7 @@ module.exports = function(e) {
         begin: '""'
       }, u]
     },
-    p = e.inherit(_, {
+    _ = e.inherit(p, {
       illegal: /\n/,
       contains: [{
         begin: /\{\{/
@@ -81,13 +81,13 @@ module.exports = function(e) {
         begin: '""'
       }, d]
     });
-  u.contains = [_, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.C_BLOCK_COMMENT_MODE], d.contains = [p, f, c, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.inherit(e.C_BLOCK_COMMENT_MODE, {
+  u.contains = [p, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.C_BLOCK_COMMENT_MODE], d.contains = [_, f, c, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, o, e.inherit(e.C_BLOCK_COMMENT_MODE, {
     illegal: /\n/
   })];
-  let h = {
-      variants: [s, _, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
+  let m = {
+      variants: [s, p, f, l, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE]
     },
-    m = {
+    h = {
       begin: "<",
       end: ">",
       contains: [{
@@ -125,14 +125,14 @@ module.exports = function(e) {
       keywords: {
         keyword: "if else elif endif define undef warning error line region endregion pragma checksum"
       }
-    }, h, o, {
+    }, m, o, {
       beginKeywords: "class interface",
       relevance: 0,
       end: /[{;=]/,
       illegal: /[^\s:,]/,
       contains: [{
         beginKeywords: "where class"
-      }, a, m, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+      }, a, h, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, {
       beginKeywords: "namespace",
       relevance: 0,
@@ -144,7 +144,7 @@ module.exports = function(e) {
       relevance: 0,
       end: /[{;=]/,
       illegal: /[^\s:]/,
-      contains: [a, m, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
+      contains: [a, h, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, {
       className: "meta",
       begin: "^\\s*\\[(?=[\\w])",
@@ -172,7 +172,7 @@ module.exports = function(e) {
       }, {
         begin: e.IDENT_RE + "\\s*(<[^=]+>\\s*)?\\(",
         returnBegin: true,
-        contains: [e.TITLE_MODE, m],
+        contains: [e.TITLE_MODE, h],
         relevance: 0
       }, {
         match: /\(\)/
@@ -184,7 +184,7 @@ module.exports = function(e) {
         excludeEnd: true,
         keywords: i,
         relevance: 0,
-        contains: [h, o, e.C_BLOCK_COMMENT_MODE]
+        contains: [m, o, e.C_BLOCK_COMMENT_MODE]
       }, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE]
     }, E]
   }

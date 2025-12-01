@@ -2,7 +2,7 @@
 /** chunk id: 582474, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => m
+  m: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,41 +47,41 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e) {
+function h(e) {
   let {
     color: t = "default",
     label: n,
     checked: a,
     disabled: f = false,
-    isFocused: p,
-    menuItemProps: m,
+    isFocused: _,
+    menuItemProps: h,
     action: g,
     className: E
   } = e, {
     onInteraction: b
   } = i.useContext(s.p), y = i.useRef(null), O = i.useId();
   i.useEffect(() => {
-    p && (0, l.F)(y)
-  }, [p]);
+    _ && (0, l.F)(y)
+  }, [_]);
   let v = i.useCallback(e => {
     g(e), null == b || b({
       type: s.U.SWITCH
     })
   }, [g, b]);
-  return (0, r.jsxs)("div", h(_({
+  return (0, r.jsxs)("div", m(p({
     ref: y,
     className: o()(d.item, d.switchItem, d.hideInteraction, u._e[t], E, {
       [d.disabled]: f
     }),
     "aria-checked": a,
     "aria-disabled": f
-  }, m), {
+  }, h), {
     children: [null != n ? (0, r.jsx)("div", {
       className: d.labelContainer,
       children: (0, r.jsx)("label", {

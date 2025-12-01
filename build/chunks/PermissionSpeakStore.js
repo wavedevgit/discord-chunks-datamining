@@ -20,34 +20,34 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = "hideSuppressWarning",
-  _ = false,
-  p = true,
-  h = false;
+  p = false,
+  _ = true,
+  m = false;
 
-function m(e) {
-  r = e.sessionId, _ = false
+function h(e) {
+  r = e.sessionId, p = false
 }
 
 function g() {
-  r = null, i = null, p = true
+  r = null, i = null, _ = true
 }
 
 function E(e) {
   let {
     voiceStates: t
   } = e;
-  return t.reduce((e, t) => r !== t.sessionId ? e : (_ !== t.suppress && (p = !(_ = t.suppress)), i !== t.channelId && (i = t.channelId, p = !_), (h || null == t.channelId) && (p = true), true), false)
+  return t.reduce((e, t) => r !== t.sessionId ? e : (p !== t.suppress && (_ = !(p = t.suppress)), i !== t.channelId && (i = t.channelId, _ = !p), (m || null == t.channelId) && (_ = true), true), false)
 }
 
 function b(e) {
   let {
     forever: t
   } = e;
-  p = true, t && (h = true, s.K.set(f, h))
+  _ = true, t && (m = true, s.K.set(f, m))
 }
 class y extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk430824.Z), h = Chunk433517.K.get(f) || h
+    this.waitFor(Chunk592125.Z, Chunk430824.Z), m = Chunk433517.K.get(f) || m
   }
   isAFKChannel() {
     let e = Chunk592125.Z.getChannel(i);
@@ -57,12 +57,12 @@ class y extends(a = Chunk442837.ZP.Store) {
   }
   shouldShowWarning() {
     var e;
-    return !(null == (e = Chunk592125.Z.getChannel(i)) ? true : module.isGuildStageVoice()) && !p
+    return !(null == (e = Chunk592125.Z.getChannel(i)) ? true : module.isGuildStageVoice()) && !_
   }
 }
 d(y, "displayName", "PermissionSpeakStore");
 let O = new y(Chunk570140.Z, {
-  CONNECTION_OPEN: m,
+  CONNECTION_OPEN: h,
   CONNECTION_CLOSED: g,
   VOICE_STATE_UPDATES: E,
   PERMISSION_CLEAR_SUPPRESS_WARNING: b

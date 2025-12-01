@@ -2,7 +2,7 @@
 /** chunk id: 14491, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./997841.js");
 var Chunk54381 = require("./54381.js"),
   Chunk95015 = require("./95015.js"),
@@ -35,27 +35,27 @@ function f(e) {
   return e
 }
 
-function _(e) {
+function p(e) {
   let {
     application: t,
     label: n,
     onSuccess: d,
-    showIconFirst: _,
-    focusedClassName: p
+    showIconFirst: p,
+    focusedClassName: _
   } = e;
   if (__OVERLAY__ || !l.wS || null == t) return null;
-  let h = s.default.getCurrentUser(),
-    m = (0, o.Ow)(t);
+  let m = s.default.getCurrentUser(),
+    h = (0, o.Ow)(t);
 
   function g() {
     var e;
     if (null == t) return;
     let n = (0, i.yE)(null != (e = t.flags) ? e : 0, u.udG.EMBEDDED) ? (0, c.H)({
       applicationId: t.id,
-      referrerId: null == h ? true : h.id
+      referrerId: null == m ? true : m.id
     }) : (0, c.J)(f({
       id: t.id
-    }, m));
+    }, h));
     null != n && (0, l.JG)(n, d)
   }
   let E = "copy-app-link-".concat(t.id);
@@ -63,8 +63,8 @@ function _(e) {
     id: E,
     label: n,
     action: g,
-    icon: _ ? true : a.xPt,
-    iconLeft: _ ? a.xPt : true,
-    focusedClassName: p
+    icon: p ? true : a.xPt,
+    iconLeft: p ? a.xPt : true,
+    focusedClassName: _
   }, E)
 }

@@ -61,9 +61,9 @@ function y(e, t) {
 
 function O(e) {
   switch (e) {
-    case h.nkL.GIF.title:
-    case h.nkL.TENOR.title:
-      return m.intl.string(m.t["0vrCgJ"]);
+    case m.nkL.GIF.title:
+    case m.nkL.TENOR.title:
+      return h.intl.string(h.t["0vrCgJ"]);
     default:
       return ""
   }
@@ -73,23 +73,23 @@ let v = [...a()(Chunk981631.nkL).values().map(e => ({
   untranslatedName: e.command,
   displayName: e.command,
   type: c.yU.CHAT,
-  inputType: _.iw.BUILT_IN_INTEGRATION,
-  applicationId: p.bi.BUILT_IN,
+  inputType: p.iw.BUILT_IN_INTEGRATION,
+  applicationId: _.bi.BUILT_IN,
   get untranslatedDescription() {
     return O(e.title)
   },
   get displayDescription() {
     return O(e.title)
   },
-  options: e.type === h.q9n.GIF ? [{
+  options: e.type === m.q9n.GIF ? [{
     name: "query",
     displayName: "query",
     type: c.jw.STRING,
     get description() {
-      return m.intl.string(m.t["+9g3Du"])
+      return h.intl.string(h.t["+9g3Du"])
     },
     get displayDescription() {
-      return m.intl.string(m.t["+9g3Du"])
+      return h.intl.string(h.t["+9g3Du"])
     },
     required: true
   }] : [],
@@ -133,33 +133,33 @@ let v = [...a()(Chunk981631.nkL).values().map(e => ({
     } = t;
     if (null == a) return;
     let c = (0, u.F6)(a, f.default, d.Z),
-      _ = m.intl.formatToPlainString(m.t.hJ5Ap4, {
+      p = h.intl.formatToPlainString(h.t.hJ5Ap4, {
         name: c
       }),
-      p = m.intl.format(m.t.SSIVOu, {
+      _ = h.intl.format(h.t.SSIVOu, {
         name: c
       }),
-      h = null != (i = null == (n = e.find(e => "silent" === e.name)) ? true : n.value) && i;
+      m = null != (i = null == (n = e.find(e => "silent" === e.name)) ? true : n.value) && i;
     async function g() {
       if (null != a) try {
-        await s.Z.closePrivateChannel(a.id, true, h)
+        await s.Z.closePrivateChannel(a.id, true, m)
       } catch (e) {
-        l.Z.sendBotMessage(a.id, m.intl.string(m.t["YOsuT/"]))
+        l.Z.sendBotMessage(a.id, h.intl.string(h.t["YOsuT/"]))
       }
     }
-    a.isManaged() && (_ = m.intl.formatToPlainString(m.t.hVGjEW, {
+    a.isManaged() && (p = h.intl.formatToPlainString(h.t.hVGjEW, {
       name: c
-    }), p = m.intl.format(m.t.IK1Qvs, {
+    }), _ = h.intl.format(h.t.IK1Qvs, {
       name: c
     })), (0, o.h7j)(e => (0, r.jsx)(o.ConfirmModal, y(E({
-      header: _,
-      confirmText: m.intl.string(m.t["26C4oi"]),
-      cancelText: m.intl.string(m.t["ETE/oC"]),
+      header: p,
+      confirmText: h.intl.string(h.t["26C4oi"]),
+      cancelText: h.intl.string(h.t["ETE/oC"]),
       onConfirm: g
     }, e), {
       children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: p
+        children: _
       })
     })))
   }

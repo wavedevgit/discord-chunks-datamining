@@ -2,12 +2,12 @@
 /** chunk id: 565384, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ez: () => h,
+  Ez: () => m,
   Ps: () => u,
-  Xo: () => _,
+  Xo: () => p,
   dT: () => f,
   dw: () => d,
-  k$: () => p
+  k$: () => _
 }), require("./388685.js");
 var Chunk748521 = require("./748521.js"),
   Chunk990547 = require("./990547.js"),
@@ -62,15 +62,15 @@ let l = Object.freeze({
       }))
     })
   },
-  _ = c;
+  p = c;
 
-function p() {
+function _() {
   let e = {};
   return c.getState().impressions.forEach(t => {
     t.type === i.ImpressionTypes.PAGE ? e.page = t.name : e.section = t.name
   }), module
 }
 
-function h() {
+function m() {
   return c.getState().impressions
 }

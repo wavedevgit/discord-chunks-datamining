@@ -7,15 +7,15 @@ require.d(exports, {
   EJ: () => N,
   Ee: () => y,
   Hh: () => C,
-  II: () => T,
-  MC: () => I,
+  II: () => I,
+  MC: () => S,
   Vj: () => v,
-  ZP: () => D,
-  gO: () => S,
+  ZP: () => w,
+  gO: () => T,
   i_: () => A,
-  jQ: () => R,
+  jQ: () => P,
   qE: () => O,
-  v6: () => P
+  v6: () => R
 }), require("./953529.js"), require("./472816.js"), require("./794429.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -44,7 +44,7 @@ let E = e => {
     return (0, r.jsx)(o.Heading, {
       variant: s,
       color: "header-primary",
-      className: a()(m.title, t),
+      className: a()(h.title, t),
       id: n,
       children: i
     })
@@ -69,7 +69,7 @@ let E = e => {
     return (0, r.jsx)("img", {
       alt: "",
       src: n,
-      className: a()(m.image, t)
+      className: a()(h.image, t)
     })
   },
   O = e => {
@@ -81,7 +81,7 @@ let E = e => {
     return (0, r.jsx)(g, {
       src: n,
       size: i,
-      className: a()(m.inviteLargeIcon, t),
+      className: a()(h.inviteLargeIcon, t),
       "aria-hidden": true
     })
   },
@@ -101,7 +101,7 @@ let E = e => {
     })
   };
 v.Sizes = Chunk565138.Z.Sizes;
-let I = e => {
+let S = e => {
   let {
     className: t,
     channel: n,
@@ -110,12 +110,12 @@ let I = e => {
   return (0, r.jsx)(g, {
     src: (0, s.x)(n),
     size: i,
-    className: a()(m.inviteIcon, t),
+    className: a()(h.inviteIcon, t),
     "aria-hidden": true
   })
 };
-I.Sizes = Chunk481060.EFr;
-let T = e => {
+S.Sizes = Chunk481060.EFr;
+let I = e => {
     let {
       label: t,
       error: n,
@@ -126,16 +126,16 @@ let T = e => {
       type: c = "text",
       onChange: d,
       autoComplete: f,
-      autoFocus: _,
-      maxLength: p,
-      spellCheck: h,
-      name: m,
+      autoFocus: p,
+      maxLength: _,
+      spellCheck: m,
+      name: h,
       description: g,
       required: E,
       onFocus: b,
       onBlur: y
     } = e, O = (0, u.Dt)(), v = (0, r.jsx)(o.oil, {
-      name: m,
+      name: h,
       type: c,
       value: a,
       inputRef: l,
@@ -143,9 +143,9 @@ let T = e => {
       "aria-label": t,
       onChange: d,
       autoComplete: f,
-      autoFocus: _,
-      maxLength: p,
-      spellCheck: h,
+      autoFocus: p,
+      maxLength: _,
+      spellCheck: m,
       id: O,
       onFocus: b,
       onBlur: y,
@@ -159,13 +159,13 @@ let T = e => {
       children: v
     }) : v
   },
-  S = e => {
+  T = e => {
     let {
       className: t,
       children: n
     } = e;
     return (0, r.jsx)("div", {
-      className: a()(m.block, t),
+      className: a()(h.block, t),
       children: n
     })
   },
@@ -176,7 +176,7 @@ let T = e => {
     } = e;
     return (0, r.jsx)(o.Text, {
       variant: "text-xs/normal",
-      className: a()(m.subText, t),
+      className: a()(h.subText, t),
       children: n
     })
   },
@@ -189,7 +189,7 @@ let T = e => {
       align: c.Z.Align.CENTER,
       className: t,
       children: (0, r.jsx)(l.Z, {
-        className: m.spinnerVideo
+        className: h.spinnerVideo
       })
     })
   },
@@ -202,15 +202,15 @@ let T = e => {
       textClassName: u
     } = e;
     return null == i ? null : (null != n && n > 0 && (t = (0, r.jsxs)("div", {
-      className: a()(m.pill, m.pillOnline, l && m.pillFlat),
+      className: a()(h.pill, h.pillOnline, l && h.pillFlat),
       children: [(0, r.jsx)("i", {
-        className: m.pillIconOnline
+        className: h.pillIconOnline
       }), (0, r.jsx)(o.Text, {
         tag: "span",
         className: u,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: h.intl.format(h.t["LC+S+m"], {
+        children: m.intl.format(m.t["LC+S+m"], {
           membersOnline: n
         })
       })]
@@ -218,39 +218,39 @@ let T = e => {
       justify: c.Z.Justify.CENTER,
       className: s,
       children: [t, (0, r.jsxs)("div", {
-        className: a()(m.pill, l && m.pillFlat),
+        className: a()(h.pill, l && h.pillFlat),
         children: [(0, r.jsx)("i", {
-          className: m.pillIconTotal
+          className: h.pillIconTotal
         }), (0, r.jsx)(o.Text, {
           tag: "span",
           className: u,
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: h.intl.format(h.t.zRl6XR, {
+          children: m.intl.format(m.t.zRl6XR, {
             count: i
           })
         })]
       })]
     }))
   },
-  R = e => {
+  P = e => {
     let {
       user: t
     } = e;
     return null == t ? null : (0, r.jsxs)("div", {
-      className: m.joiningAs,
+      className: h.joiningAs,
       children: [(0, r.jsx)(o.Text, {
         tag: "span",
         variant: "text-md/normal",
         color: "header-secondary",
-        children: h.intl.string(h.t["/8WWvE"])
+        children: m.intl.string(m.t["/8WWvE"])
       }), (0, r.jsx)(O, {
-        className: m.joiningAsAvatar,
+        className: h.joiningAsAvatar,
         src: t.getAvatarURL(true, 24),
         size: o.EFr.SIZE_24,
         "aria-label": t.username
       }), (0, r.jsx)(o.Text, {
-        className: m.joiningAsUsername,
+        className: h.joiningAsUsername,
         tag: "span",
         variant: "text-md/semibold",
         color: "header-primary",
@@ -258,28 +258,28 @@ let T = e => {
       })]
     })
   },
-  P = e => {
+  R = e => {
     let {
       className: t
     } = e;
-    return (0, r.jsxs)(S, {
+    return (0, r.jsxs)(T, {
       className: t,
       children: [(0, r.jsx)(o.Button, {
-        text: h.intl.format(h.t.JoS1i3, {
+        text: m.intl.format(m.t.JoS1i3, {
           platform: (0, f.DW)()
         }),
         variant: "secondary",
         fullWidth: true,
         onClick: () => window.open((0, f.t3)())
       }), (0, r.jsx)(A, {
-        className: m.downloadButtonSubtext,
-        children: h.intl.format(h.t.wO1VBk, {
-          supportedBrowserURL: _.Z.getArticleURL(p.BhN.SUPPORTED_BROWSERS)
+        className: h.downloadButtonSubtext,
+        children: m.intl.format(m.t.wO1VBk, {
+          supportedBrowserURL: p.Z.getArticleURL(_.BhN.SUPPORTED_BROWSERS)
         })
       })]
     })
   },
-  D = e => {
+  w = e => {
     let {
       className: t,
       contentClassName: n,
@@ -287,7 +287,7 @@ let T = e => {
       onSubmit: s,
       children: l,
       expanded: c = false,
-      theme: u = p.BRd.DARK,
+      theme: u = _.BRd.DARK,
       style: d
     } = e;
     return (0, r.jsx)(o.f6W, {
@@ -297,11 +297,11 @@ let T = e => {
         "data-theme": u,
         onSubmit: s,
         style: d,
-        className: a()(c ? m.authBoxExpanded : m.authBox, e, t),
+        className: a()(c ? h.authBoxExpanded : h.authBox, e, t),
         children: [(0, r.jsx)("div", {
-          className: m.discordLogo
+          className: h.discordLogo
         }), (0, r.jsx)("div", {
-          className: a()(m.centeringWrapper, n),
+          className: a()(h.centeringWrapper, n),
           children: l
         })]
       })

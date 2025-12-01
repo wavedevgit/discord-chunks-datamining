@@ -17,13 +17,13 @@ module.exports = function(e) {
       begin: n.concat(o, n.optional(c), n.optional(u))
     },
     f = /[a-zA-Z$][a-zA-Z0-9$]*/,
-    _ = new Set(t),
-    p = {
+    p = new Set(t),
+    _ = {
       variants: [{
         className: "builtin-symbol",
         begin: f,
         "on:begin": (e, t) => {
-          _.has(e[0]) || t.ignoreMatch()
+          p.has(e[0]) || t.ignoreMatch()
         }
       }, {
         className: "symbol",
@@ -31,11 +31,11 @@ module.exports = function(e) {
         begin: f
       }]
     },
-    h = {
+    m = {
       className: "named-character",
       begin: /\\\[[$a-zA-Z][$a-zA-Z0-9]+\]/
     },
-    m = {
+    h = {
       className: "operator",
       relevance: 0,
       begin: /[+\-*/,;.:@~=><&|_`'^?!%]+/
@@ -74,6 +74,6 @@ module.exports = function(e) {
     },
     contains: [e.COMMENT(/\(\*/, /\*\)/, {
       contains: ["self"]
-    }), g, E, y, p, h, e.QUOTE_STRING_MODE, d, m, b]
+    }), g, E, y, _, m, e.QUOTE_STRING_MODE, d, h, b]
   }
 }

@@ -19,7 +19,7 @@ function u(e, t) {
     firstDayOfWeek: d
   } = e, {
     direction: f
-  } = (0, l.j)(), _ = e => {
+  } = (0, l.j)(), p = e => {
     switch (e.key) {
       case "Enter":
       case " ":
@@ -52,12 +52,12 @@ function u(e, t) {
       case "Escape":
         "setAnchorDate" in t && (e.preventDefault(), t.setAnchorDate(null))
     }
-  }, p = (0, r.FK)(n, u, t.timeZone, true), {
-    ariaLabel: h,
-    ariaLabelledBy: m
+  }, _ = (0, r.FK)(n, u, t.timeZone, true), {
+    ariaLabel: m,
+    ariaLabelledBy: h
   } = r.Lh.get(t), g = (0, o.b)({
-    "aria-label": [h, p].filter(Boolean).join(", "),
-    "aria-labelledby": m
+    "aria-label": [m, _].filter(Boolean).join(", "),
+    "aria-labelledby": h
   }), E = (0, c.a)({
     weekday: e.weekdayStyle || "narrow",
     timeZone: t.timeZone
@@ -78,7 +78,7 @@ function u(e, t) {
       "aria-readonly": t.isReadOnly || true,
       "aria-disabled": t.isDisabled || true,
       "aria-multiselectable": "highlightedRange" in t || true,
-      onKeyDown: _,
+      onKeyDown: p,
       onFocus: () => t.setFocused(true),
       onBlur: () => t.setFocused(false)
     }),

@@ -21,34 +21,34 @@ function f() {
       claimableRewards: n
     } = (0, Chunk987209.wD)(),
     f = (0, Chunk347896.Z)(),
-    _ = null == f ? true : f.planSelection,
-    p = (0, Chunk717401.Tl)(null == _ ? true : _.gradientConfig, {
+    p = null == f ? true : f.planSelection,
+    _ = (0, Chunk717401.Tl)(null == p ? true : p.gradientConfig, {
       reverse: true
     }),
-    h = null == _ || null == (e = _.getBannerImageUrl) ? true : module.call(_);
-  return null == _ || null == require || 0 === require.length ? null : (0, Chunk54381.jsxs)("div", {
+    m = null == p || null == (e = p.getBannerImageUrl) ? true : module.call(p);
+  return null == p || null == require || 0 === require.length ? null : (0, Chunk54381.jsxs)("div", {
     className: Chunk487276.container,
-    style: p,
-    children: [null != h && (0, Chunk54381.jsx)("div", {
+    style: _,
+    children: [null != m && (0, Chunk54381.jsx)("div", {
       className: Chunk487276.bannerImage,
       style: {
-        backgroundImage: "url(".concat(h, ")")
+        backgroundImage: "url(".concat(m, ")")
       }
     }), (0, Chunk54381.jsxs)("div", {
       className: Chunk487276.textSection,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/bold",
         color: "always-white",
-        children: _.heading()
-      }), null != _.subheading && (0, Chunk54381.jsx)(Chunk481060.Text, {
+        children: p.heading()
+      }), null != p.subheading && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "always-white",
-        children: _.subheading(require.length)
+        children: p.subheading(require.length)
       })]
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk487276.avatar,
       children: (0, Chunk54381.jsx)(Chunk897942.Z, {
-        maxRewardImageSrc: _.getImageUrl(true, exports),
+        maxRewardImageSrc: p.getImageUrl(true, exports),
         claimableRewards: require,
         size: Chunk481060.EFr.SIZE_48,
         imageScaling: exports ? 1.9 : 2.4

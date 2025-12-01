@@ -18,7 +18,7 @@ var Chunk622822 = require("./622822.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -58,20 +58,20 @@ function b(e, t) {
 }
 
 function y(e, t, n) {
-  var m, E, y;
+  var h, E, y;
   let O = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {
-    modViewPanel: _.k.INFO
+    modViewPanel: p.k.INFO
   };
   if (!(0, f.Y)(e)) return Promise.resolve();
-  let v = null != (m = O.modViewPanel) ? m : _.k.INFO,
-    I = null != (E = O.sourceLocation) ? E : i.Z.MEMBER_SAFETY_PAGE,
-    T = u.Z.getCurrentlySelectedChannelId(),
-    S = null != T ? l.Z.getChannel(T) : null;
-  if (n !== h.oC.MEMBER_SAFETY && (null == S || S.getGuildId() !== e)) {
+  let v = null != (h = O.modViewPanel) ? h : p.k.INFO,
+    S = null != (E = O.sourceLocation) ? E : i.Z.MEMBER_SAFETY_PAGE,
+    I = u.Z.getCurrentlySelectedChannelId(),
+    T = null != I ? l.Z.getChannel(I) : null;
+  if (n !== m.oC.MEMBER_SAFETY && (null == T || T.getGuildId() !== e)) {
     let t = c.ZP.getDefaultChannel(e);
-    null == t || (0, r.Y3)(t) || (0, a.uL)(p.Z5c.CHANNEL(e, t.id))
+    null == t || (0, r.Y3)(t) || (0, a.uL)(_.Z5c.CHANNEL(e, t.id))
   }
-  return (0, d.q)(e, t, v, I), o.Z.openGuildSidebar({
+  return (0, d.q)(e, t, v, S), o.Z.openGuildSidebar({
     guildId: e,
     baseChannelId: n,
     sidebarType: s.jL.GUILD_MEMBER_MOD_VIEW,
@@ -80,7 +80,7 @@ function y(e, t, n) {
       userId: t,
       guildId: e
     }, O), {
-      modViewPanel: null != (y = O.modViewPanel) ? y : _.k.INFO
+      modViewPanel: null != (y = O.modViewPanel) ? y : p.k.INFO
     })
   })
 }

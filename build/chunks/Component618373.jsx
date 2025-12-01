@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ae: () => g,
-  QR: () => m
+  QR: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -20,7 +20,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk8280 = require("./8280.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   let {
     highlightAdminWarningIfElevated: i,
     useFlexboxLayout: a,
@@ -36,12 +36,12 @@ function m(e, t, n) {
   })
 }
 let g = (e, t) => (0, r.jsx)(r.Fragment, {
-  children: p.intl.format(t, {
+  children: _.intl.format(t, {
     keybind: e,
     keybindHook: (t, n) => (0, r.jsx)(a.M2$, {
       shortcut: e,
-      className: h.keyCombo,
-      keyClassName: h.keyComboKey
+      className: m.keyCombo,
+      keyClassName: m.keyComboKey
     }, n)
   })
 });
@@ -50,7 +50,7 @@ function E(e) {
   let {
     keybind: t,
     message: n,
-    messageWithoutKeybind: m,
+    messageWithoutKeybind: h,
     highlightAdminWarningIfElevated: g = false,
     useFlexboxLayout: E = false,
     keybindClassName: b
@@ -61,16 +61,16 @@ function E(e) {
   return O ? (0, r.jsx)(a.Text, {
     variant: "text-xxs/semibold",
     color: g ? "text-feedback-warning" : "text-muted",
-    children: v ? p.intl.format(p.t.MVS9pV, {
+    children: v ? _.intl.format(_.t.MVS9pV, {
       onSettingsClick: e => {
         e.stopPropagation(), (0, s.Z)(true, true), (0, u.openUserSettings)(c.n.OVERLAY_PANEL, {
-          section: _.oAB.OVERLAY
+          section: p.oAB.OVERLAY
         })
       }
-    }) : p.intl.string(p.t.PIeSHF)
+    }) : _.intl.string(_.t.PIeSHF)
   }) : y ? E ? (0, r.jsx)("div", {
-    className: h.keybindFlexboxLayout,
-    children: p.intl.format(n, {
+    className: m.keybindFlexboxLayout,
+    children: _.intl.format(n, {
       keybind: t,
       keybindHook: e => (0, r.jsx)(f.l, {
         keybind: t,
@@ -78,11 +78,11 @@ function E(e) {
       }, t.join("+"))
     })
   }) : (0, r.jsx)(r.Fragment, {
-    children: p.intl.format(n, {
+    children: _.intl.format(n, {
       keybind: t,
       keybindHook: e => (0, r.jsx)(f.t, {
         keybind: t
       }, t.join("+"))
     })
-  }) : m
+  }) : h
 }

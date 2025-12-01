@@ -43,7 +43,7 @@ function o(e, t) {
 require.d(exports, {
   E1: () => u,
   HE: () => f,
-  SJ: () => _,
+  SJ: () => p,
   X7: () => c,
   dp: () => l,
   f7: () => d,
@@ -64,4 +64,4 @@ let c = [7, 8, 9, 10],
     width: 1280,
     height: 720
   },
-  _ = 0xa00000
+  p = 0xa00000

@@ -369,13 +369,13 @@ class en extends Chunk98597.ZP {
       } = this.props;
       if (!t) return (0, r.jsx)(c.u, {
         asContainer: true,
-        text: Q.intl.string(Q.t.ZXxLQg),
+        text: X.intl.string(X.t.ZXxLQg),
         children: (0, r.jsx)(u.P3F, {
           className: o()(J.iconItem, n ? J.alwaysShown : null),
           onClick: () => {
             d.Z.updateChatOpen(e.id, true), (0, T.Kh)(e.id)
           },
-          "aria-label": Q.intl.string(Q.t.ZXxLQg),
+          "aria-label": X.intl.string(X.t.ZXxLQg),
           children: (0, r.jsx)(u.kBi, {
             size: "xs",
             color: "currentColor",
@@ -387,7 +387,7 @@ class en extends Chunk98597.ZP {
       let {
         connected: e
       } = this.props;
-      return this.isFull() && !e ? Q.intl.string(Q.t.rZfiNq) : null
+      return this.isFull() && !e ? X.intl.string(X.t.rZfiNq) : null
     })
   }
 }
@@ -410,7 +410,7 @@ function ei(e) {
       r = M.Z.getCheck(n.guild_id);
     return {
       canManageChannel: k.Z.can(q.Plq.MANAGE_CHANNELS, n),
-      canReorderChannel: true !== i && (t.id === X._ || (null != e ? k.Z.can(q.Plq.MANAGE_CHANNELS, e) : k.Z.can(q.Plq.MANAGE_CHANNELS, t))),
+      canReorderChannel: true !== i && (t.id === Q._ || (null != e ? k.Z.can(q.Plq.MANAGE_CHANNELS, e) : k.Z.can(q.Plq.MANAGE_CHANNELS, t))),
       canMoveMembers: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       locked: !k.Z.can(q.Plq.CONNECT, n),
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),

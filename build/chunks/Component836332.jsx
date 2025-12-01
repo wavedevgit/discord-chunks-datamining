@@ -29,47 +29,47 @@ let y = (e, t) => {
       isReducedMotion: O,
       subscriptionTier: v
     } = e, {
-      analyticsLocations: I
-    } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_FOOTER_CTA), T = (0, f.Nx)(), S = (0, d.rO)(), A = i.useRef(null), [C, N] = i.useState(false);
+      analyticsLocations: S
+    } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, f.Nx)(), T = (0, d.rO)(), A = i.useRef(null), [C, N] = i.useState(false);
     return i.useEffect(() => {
       !a || O || C || null == A.current || A.current.play()
     }, [a, O, C]), (0, r.jsx)(c.Gt, {
-      value: I,
+      value: S,
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: o()(m.container, n),
+        className: o()(h.container, n),
         children: [(0, r.jsx)(s.Heading, {
-          className: m.footerHeader,
+          className: h.footerHeader,
           variant: "display-md",
           color: "header-primary",
-          children: h.intl.string(h.t.lEw32m)
-        }), (0, r.jsx)(_.PK, {
+          children: m.intl.string(m.t.lEw32m)
+        }), (0, r.jsx)(p.PK, {
           subscriptionTier: v,
-          inOfferExperience: T,
-          containerClassName: m.footerCTAContainer,
+          inOfferExperience: I,
+          containerClassName: h.footerCTAContainer,
           isApplicationHome: true,
           isDarkMode: y
         }), (0, r.jsx)("div", {
-          className: m.footerArtContainer,
+          className: h.footerArtContainer,
           children: (0, r.jsx)(u.Z, {
             playsInline: true,
             muted: true,
             preload: "auto",
             poster: E.Z,
-            className: m.footerArt,
+            className: h.footerArt,
             onEnded: () => {
               N(true)
             },
             ref: A,
             children: (0, r.jsx)("source", {
-              src: S ? g.Z : b.Z,
-              type: S ? p.m.MP4 : p.m.WEBM
+              src: T ? g.Z : b.Z,
+              type: T ? _.m.MP4 : _.m.WEBM
             })
           })
         }), (0, r.jsx)("div", {
-          className: m.leftGradient
+          className: h.leftGradient
         }), (0, r.jsx)("div", {
-          className: m.rightGradient
+          className: h.rightGradient
         })]
       })
     })

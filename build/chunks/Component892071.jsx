@@ -42,54 +42,54 @@ function b(e) {
     fontScale: y,
     fontScaleClass: O,
     mouseMode: v,
-    keyboardModeEnabled: I,
-    saturation: T,
-    desaturateUserColors: S,
+    keyboardModeEnabled: S,
+    saturation: I,
+    desaturateUserColors: T,
     useForcedColors: A,
     systemForcedColors: C,
     useReducedMotion: N,
-    alwaysShowLinkDecorations: R,
-    hardwareAccelerationEnabled: P,
-    highContrastMode: D,
-    isPopoutWindow: w,
-    children: L
-  } = e, x = window.CSS.supports("selector(::-webkit-scrollbar)"), M = (0, l.e7)([d.Z], () => d.Z.zoom), k = w ? "" : "--custom-zoom: ".concat(M, ";"), j = "font-size: ".concat(y, "%; --saturation-factor: ").concat(T, "; ").concat(k), U = (0, h.Z)("highlight_mana_buttons"), G = (0, h.Z)("highlight_mana_components"), B = (0, h.Z)("highlight_void_toggleables"), Z = (0, h.Z)("highlight_void_buttons"), F = o()((0, f.Z)(), (0, c.QeD)(a), "density-".concat(E), O, {
-    "low-saturation": T <= c.AEw,
-    "keyboard-mode": I,
-    "decorate-links": R,
-    "no-webkit-scrollbar": !x,
-    "has-webkit-scrollbar": x,
+    alwaysShowLinkDecorations: P,
+    hardwareAccelerationEnabled: R,
+    highContrastMode: w,
+    isPopoutWindow: D,
+    children: x
+  } = e, L = window.CSS.supports("selector(::-webkit-scrollbar)"), j = (0, l.e7)([d.Z], () => d.Z.zoom), M = D ? "" : "--custom-zoom: ".concat(j, ";"), k = "font-size: ".concat(y, "%; --saturation-factor: ").concat(I, "; ").concat(M), U = (0, m.Z)("highlight_mana_buttons"), G = (0, m.Z)("highlight_mana_components"), Z = (0, m.Z)("highlight_void_toggleables"), B = (0, m.Z)("highlight_void_buttons"), F = o()((0, f.Z)(), (0, c.QeD)(a), "density-".concat(E), O, {
+    "low-saturation": I <= c.AEw,
+    "keyboard-mode": S,
+    "decorate-links": P,
+    "no-webkit-scrollbar": !L,
+    "has-webkit-scrollbar": L,
     "mouse-mode": v,
     "reduce-motion": N,
     "full-motion": !N,
     "is-mobile": s.tq,
     "app-focused": b,
-    "desaturate-user-colors": S,
+    "desaturate-user-colors": T,
     "disable-forced-colors": !A && "active" === C,
     "enable-forced-colors": A,
     "visual-refresh": true,
-    "hardware-acceleration-disabled": !P,
+    "hardware-acceleration-disabled": !R,
     "visual-refresh-chat-input": false,
-    "mana-toggle-inputs": (0, p.A)("RootElementContextProvider"),
-    "mana-text-inputs": (0, _.U)("RootElementContextProvider"),
+    "mana-toggle-inputs": (0, _.A)("RootElementContextProvider"),
+    "mana-text-inputs": (0, p.U)("RootElementContextProvider"),
     "highlight-mana-buttons": U,
     "highlight-mana-components": G,
-    "highlight-void-toggleables": B,
-    "highlight-void-buttons": Z,
-    "high-contrast-mode": D
+    "highlight-void-toggleables": Z,
+    "highlight-void-buttons": B,
+    "high-contrast-mode": w
   }, t), V = i.useMemo(() => ({
     lang: n,
-    style: j,
+    style: k,
     className: F,
     focused: b
-  }), [n, j, F, b]);
+  }), [n, k, F, b]);
   return (0, u.ZP)(() => {
-    m.ZP.setTrafficLightPosition({
+    h.ZP.setTrafficLightPosition({
       x: 9,
       y: 9
     })
   }), (0, r.jsx)(g.Provider, {
     value: V,
-    children: L
+    children: x
   })
 }

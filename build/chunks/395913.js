@@ -11,11 +11,11 @@ var Chunk528734 = require("./528734.js"),
 
 function s(e, t, n) {
   (0, i.Z)(2, arguments);
-  var s, l, c, u, d, f, _, p, h = (0, o.j)(),
-    m = (0, a.Z)(null != (s = null != (l = null != (c = null != (u = null == n ? true : n.weekStartsOn) ? u : null == n || null == (d = n.locale) || null == (f = d.options) ? true : f.weekStartsOn) ? c : h.weekStartsOn) ? l : null == (_ = h.locale) || null == (p = _.options) ? true : p.weekStartsOn) ? s : 0);
-  if (!(m >= 0 && m <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
+  var s, l, c, u, d, f, p, _, m = (0, o.j)(),
+    h = (0, a.Z)(null != (s = null != (l = null != (c = null != (u = null == n ? true : n.weekStartsOn) ? u : null == n || null == (d = n.locale) || null == (f = d.options) ? true : f.weekStartsOn) ? c : m.weekStartsOn) ? l : null == (p = m.locale) || null == (_ = p.options) ? true : _.weekStartsOn) ? s : 0);
+  if (!(h >= 0 && h <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   var g = (0, r.default)(e),
     E = (0, a.Z)(t),
-    b = 7 * ((E % 7 + 7) % 7 < m) + E - g.getUTCDay();
+    b = 7 * ((E % 7 + 7) % 7 < h) + E - g.getUTCDay();
   return g.setUTCDate(g.getUTCDate() + b), g
 }

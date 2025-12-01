@@ -2,7 +2,7 @@
 /** chunk id: 894939, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => R,
+  C: () => P,
   Z: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -31,13 +31,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk647484 = require("./647484.js");
 
 function C(e) {
-  return (0, a.e7)([_.Z], () => {
+  return (0, a.e7)([p.Z], () => {
     if (null == e) return null;
     let {
       guildId: t,
       soundId: n
     } = e;
-    return _.Z.getSound(t === T.hY ? T.X8 : t, n)
+    return p.Z.getSound(t === I.hY ? I.X8 : t, n)
   })
 }
 
@@ -48,12 +48,12 @@ function N() {
       children: [(0, Chunk54381.jsx)(Chunk918257.Z, {}), (0, Chunk54381.jsx)(Chunk970813.Z, {})]
     }), (0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
-      children: (0, Chunk54381.jsx)(R, {})
+      children: (0, Chunk54381.jsx)(P, {})
     })]
   })
 }
 
-function R() {
+function P() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(), [t, n] = Chunk473749.useState(Chunk710111.hY), s = (0, Chunk893663.tT)(exports), d = C(Chunk596454), E = (null == Chunk596454 ? true : Chunk596454.type) === Chunk893663.zx.GLOBAL, y = (0, Chunk442837.e7)([Chunk763296.Z], () => Chunk763296.Z.hasFetchedAllSounds()) && null != Chunk596454 && null == Chunk921801;
@@ -68,7 +68,7 @@ function R() {
     let {
       inDropdown: n
     } = t;
-    return null == e ? null : n ? (0, r.jsx)(P, {
+    return null == e ? null : n ? (0, r.jsx)(R, {
       guildId: e.value
     }) : null
   }, []);
@@ -86,7 +86,7 @@ function R() {
           value: Chunk710111.hY
         },
         onChange: e => {
-          n(null == e ? T.hY : e.id)
+          n(null == e ? I.hY : e.id)
         },
         renderOptionSuffix: Chunk970813,
         hideDivider: true
@@ -102,7 +102,7 @@ function R() {
           sound: Chunk921801,
           isGlobal: Chunk581883,
           onSelect: n => {
-            null == n ? (0, p.aC)(t, e) : (0, p.SZ)(t, n, e)
+            null == n ? (0, _.aC)(t, e) : (0, _.SZ)(t, n, e)
           }
         }), Chunk918257 && (0, Chunk54381.jsx)(Chunk481060.Wn, {
           className: Chunk647484.notice,
@@ -114,7 +114,7 @@ function R() {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     guildId: t
   } = e, n = (0, a.e7)([E.Z], () => {

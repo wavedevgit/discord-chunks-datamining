@@ -17,16 +17,16 @@ async function c(e, t) {
   let d = null == (n = o.Z.getChannel(t)) ? true : n.guild_id,
     {
       activityConfigs: f,
-      applications: _
+      applications: p
     } = await (0, s.w1)({
       guildId: d
     }),
-    p = (0, l.Z)({
+    _ = (0, l.Z)({
       applicationId: e,
       activityConfigs: f,
-      applications: _
+      applications: p
     });
-  if (u(null == p ? true : p.application)) return null == p ? true : p.application;
+  if (u(null == _ ? true : _.application)) return null == _ ? true : _.application;
   {
     let t = await (0, i.UM)(e);
     return a.ZP.createFromServer(t)

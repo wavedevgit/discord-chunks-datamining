@@ -2,32 +2,32 @@
 /** chunk id: 475595, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  eC: () => h,
+  eC: () => m,
   f0: () => A,
   fh: () => b,
-  nK: () => T,
-  sN: () => S
+  nK: () => I,
+  sN: () => T
 }), require("./35282.js"), require("./784620.js"), require("./973216.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk754700 = require("./754700.js"),
   Chunk887003 = require("./887003.js"),
   Chunk591759 = require("./591759.js"),
   Chunk921948 = require("./921948.js"),
-  Chunk509212 = require("./509212.js"),
+  Chunk115179 = require("./115179.js"),
   Chunk324805 = require("./324805.js"),
   Chunk981631 = require("./981631.js"),
   Chunk380299 = require("./380299.js"),
   Chunk772400 = require("./772400.js");
 let f = 3,
-  _ = /\.([a-zA-Z0-9]+)$/,
-  p = ["video/mp4", "video/webm"];
-var h = function(e) {
+  p = /\.([a-zA-Z0-9]+)$/,
+  _ = ["video/mp4", "video/webm"];
+var m = function(e) {
   return e.HERO = "hero", e.HERO_IMAGE = "hero_image", e.HERO_VIDEO = "hero_video", e.QUEST_BAR_HERO = "quest_bar_hero", e.QUEST_BAR_HERO_VIDEO = "quest_bar_hero_video", e.REWARD = "reward", e.REWARD_IMAGE = "reward_image", e.GAME_TILE = "game_tile", e.LOGO_TYPE = "logo_type", e.COSPONSOR_LOGO_TYPE = "cosponsor_logo_type", e.VIDEO_PLAYER_VIDEO = "video_player_video", e.VIDEO_PLAYER_VIDEO_LOW_RES = "video_player_video_low_res", e.VIDEO_PLAYER_VIDEO_HLS = "video_player_video_hls", e.VIDEO_PLAYER_THUMBNAIL = "video_player_thumbnail", e.VIDEO_PLAYER_CAPTION = "video_player_caption", e.VIDEO_PLAYER_TRANSCRIPT = "video_player_transcript", e
 }({});
 
-function m(e, t, n) {
+function h(e, t, n) {
   let r = O(e, t, n),
     i = v(t),
-    a = null != i && p.includes(i);
+    a = null != i && _.includes(i);
   return {
     url: r,
     mimetype: i,
@@ -67,8 +67,8 @@ let E = {
 
 function b(e, t, n, a) {
   var o, l, c;
-  let f, _ = false,
-    p = false;
+  let f, p = false,
+    _ = false;
   switch (t) {
     case "hero":
       f = g(e.config.assets.heroVideo, e.config.assets.hero);
@@ -116,14 +116,14 @@ function b(e, t, n, a) {
       break
     }
     case "game_tile":
-      "dark" === n && null != e.config.assets.gameTileDark ? f = e.config.assets.gameTileDark : "light" === n && null != e.config.assets.gameTileLight ? f = e.config.assets.gameTileLight : (f = e.config.assets.gameTile, _ = true);
+      "dark" === n && null != e.config.assets.gameTileDark ? f = e.config.assets.gameTileDark : "light" === n && null != e.config.assets.gameTileLight ? f = e.config.assets.gameTileLight : (f = e.config.assets.gameTile, p = true);
       break;
     case "logo_type":
-      "dark" === n && null != e.config.assets.logotypeDark ? f = e.config.assets.logotypeDark : "light" === n && null != e.config.assets.logotypeLight ? f = e.config.assets.logotypeLight : (f = e.config.assets.logotype, _ = true);
+      "dark" === n && null != e.config.assets.logotypeDark ? f = e.config.assets.logotypeDark : "light" === n && null != e.config.assets.logotypeLight ? f = e.config.assets.logotypeLight : (f = e.config.assets.logotype, p = true);
       break;
     case "cosponsor_logo_type":
       if (null == e.config.cosponsorMetadata) return null;
-      "dark" === n && null != e.config.cosponsorMetadata.logotypeDark ? f = e.config.cosponsorMetadata.logotypeDark : "light" === n && null != e.config.cosponsorMetadata.logotypeLight ? f = e.config.cosponsorMetadata.logotypeLight : (f = e.config.cosponsorMetadata.logotype, _ = true);
+      "dark" === n && null != e.config.cosponsorMetadata.logotypeDark ? f = e.config.cosponsorMetadata.logotypeDark : "light" === n && null != e.config.cosponsorMetadata.logotypeLight ? f = e.config.cosponsorMetadata.logotypeLight : (f = e.config.cosponsorMetadata.logotype, p = true);
       break;
     case "video_player_video":
     case "video_player_video_low_res":
@@ -136,13 +136,13 @@ function b(e, t, n, a) {
         i = E[t],
         o = null == n || null == (c = n.assets[i.variant]) ? true : c[i.property];
       if (null == o) return null;
-      f = o, p = true
+      f = o, _ = true
     }
   }
-  let h = m(e.id, f, {
-    theme: _ ? n : true
+  let m = h(e.id, f, {
+    theme: p ? n : true
   });
-  return p && null == h.mimetype ? null : h
+  return _ && null == m.mimetype ? null : m
 }
 
 function y(e) {
@@ -162,7 +162,7 @@ function v(e) {
     let t = null != (r = new URL(e).searchParams.get("mimetype")) ? r : true;
     return null != t ? decodeURIComponent(t) : null
   }
-  switch (null == (n = _.exec(e)) || null == (t = n[1]) ? true : t.toLowerCase()) {
+  switch (null == (n = p.exec(e)) || null == (t = n[1]) ? true : t.toLowerCase()) {
     case "webm":
       return "video/webm";
     case "mp4":
@@ -191,11 +191,11 @@ function v(e) {
   }
 }
 
-function I(e) {
+function S(e) {
   return Math.min(Math.ceil(e), c.hiG)
 }
 
-function T(e, t) {
+function I(e, t) {
   let n = (0, o.Z)();
   return n < f ? {
     width: e,
@@ -206,15 +206,15 @@ function T(e, t) {
   }
 }
 
-function S(e) {
+function T(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   if (e.startsWith("blob:")) return e;
   let n = a.Z.toURLSafe(e);
-  return null == n ? e : (null != t.format && n.searchParams.append("format", t.format), null != t.width && n.searchParams.append("width", "".concat(I(t.width))), null != t.height && n.searchParams.append("height", "".concat(I(t.height))), n.toString())
+  return null == n ? e : (null != t.format && n.searchParams.append("format", t.format), null != t.width && n.searchParams.append("width", "".concat(S(t.width))), null != t.height && n.searchParams.append("height", "".concat(S(t.height))), n.toString())
 }
 
 function A(e, t) {
   if (e.startsWith("blob:")) return e;
   let n = a.Z.toURLSafe(e);
-  return null == n ? null : (n.searchParams.append("format", "webp"), null != t && (n.searchParams.append("width", "".concat(I(t.width))), n.searchParams.append("height", "".concat(I(t.height)))), n.toString())
+  return null == n ? null : (n.searchParams.append("format", "webp"), null != t && (n.searchParams.append("width", "".concat(S(t.width))), n.searchParams.append("height", "".concat(S(t.height)))), n.toString())
 }

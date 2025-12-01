@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 });
 var i, Chunk569048 = require("./569048.js"),
   o = require.n(Chunk569048),
@@ -16,7 +16,7 @@ var i, Chunk569048 = require("./569048.js"),
   Chunk758449 = require("./758449.js"),
   Chunk245335 = require("./245335.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = {},
+let h = {},
   g = {},
   E = {},
   b = {},
@@ -32,78 +32,78 @@ let m = {},
   O = false,
   v = false;
 
-function I() {
-  m = {}, g = {}, E = {}, b = {}, r = null, O = false, v = false, y = false
+function S() {
+  h = {}, g = {}, E = {}, b = {}, r = null, O = false, v = false, y = false
+}
+
+function I(e) {
+  let {
+    channel: t
+  } = e;
+  delete h[t.id], delete g[t.id], delete E[t.id]
 }
 
 function T(e) {
   let {
-    channel: t
-  } = e;
-  delete m[t.id], delete g[t.id], delete E[t.id]
-}
-
-function S(e) {
-  let {
     channelId: t,
     invite: n
-  } = e, r = _.Z.createFromServer(n);
-  r.targetType === p.Iq.STREAM && null != r.targetUser ? (null == g[t] && (g[t] = {}), g[t][String(r.targetUser.id)] = r) : r.targetType === p.Iq.EMBEDDED_APPLICATION && null != r.targetApplication ? (null == E[t] && (E[t] = {}), E[t][r.targetApplication.id] = r) : m[t] = r
+  } = e, r = p.Z.createFromServer(n);
+  r.targetType === _.Iq.STREAM && null != r.targetUser ? (null == g[t] && (g[t] = {}), g[t][String(r.targetUser.id)] = r) : r.targetType === _.Iq.EMBEDDED_APPLICATION && null != r.targetApplication ? (null == E[t] && (E[t] = {}), E[t][r.targetApplication.id] = r) : h[t] = r
 }
 
 function A(e) {
   let {
     channelId: t
   } = e;
-  m[t] = null
+  h[t] = null
 }
 
 function C(e) {
   let {
     channelId: t
   } = e;
-  m[t] = null
+  h[t] = null
 }
 
 function N(e) {
   var t;
-  b[e.invite.code] = _.Z.createFromServer(e.invite), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, v = false
+  b[e.invite.code] = p.Z.createFromServer(e.invite), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, v = false
 }
 
-function R() {
+function P() {
   v = false
 }
 
-function P(e) {
+function R(e) {
   var t;
   null != e.invites && e.invites.forEach(e => {
     null != b[e.code] && delete b[e.code]
   }), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, O = false
 }
 
-function D() {
+function w() {
   O = true
 }
 
-function w() {
+function D() {
   v = true
 }
 
-function L() {
+function x() {
   y = true
 }
 
-function x(e) {
+function L(e) {
   var t;
   b = {}, e.invites.forEach(e => {
-    b[e.code] = _.Z.createFromServer(e)
+    b[e.code] = p.Z.createFromServer(e)
   }), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, y = false
 }
 
-function M(e) {
-  delete m[e.channelId]
+function j(e) {
+  delete h[e.channelId]
 }
-class k extends(i = Chunk442837.ZP.Store) {
+class M extends(i = Chunk442837.ZP.Store) {
   getInvite(e) {
     var t, n;
     let {
@@ -111,7 +111,7 @@ class k extends(i = Chunk442837.ZP.Store) {
       targetUserId: i,
       targetApplicationId: a
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-    return r === p.Iq.STREAM && null != i ? null == (t = g[e]) ? true : t[i] : r === p.Iq.EMBEDDED_APPLICATION && null != a ? null == (n = E[e]) ? true : n[a] : m[e]
+    return r === _.Iq.STREAM && null != i ? null == (t = g[e]) ? true : t[i] : r === _.Iq.EMBEDDED_APPLICATION && null != a ? null == (n = E[e]) ? true : n[a] : h[e]
   }
   getFriendInvite() {
     return r
@@ -123,19 +123,19 @@ class k extends(i = Chunk442837.ZP.Store) {
     return null != r && !O && !v
   }
 }
-h(k, "displayName", "InstantInviteStore");
-let j = new k(Chunk570140.Z, {
-  CONNECTION_OPEN: I,
-  CHANNEL_DELETE: T,
+m(M, "displayName", "InstantInviteStore");
+let k = new M(Chunk570140.Z, {
+  CONNECTION_OPEN: S,
+  CHANNEL_DELETE: I,
   FRIEND_INVITE_CREATE_SUCCESS: N,
-  FRIEND_INVITE_CREATE_FAILURE: R,
-  FRIEND_INVITE_REVOKE_SUCCESS: P,
-  INSTANT_INVITE_CREATE_SUCCESS: S,
+  FRIEND_INVITE_CREATE_FAILURE: P,
+  FRIEND_INVITE_REVOKE_SUCCESS: R,
+  INSTANT_INVITE_CREATE_SUCCESS: T,
   INSTANT_INVITE_CREATE_FAILURE: A,
   INSTANT_INVITE_REVOKE_SUCCESS: C,
-  FRIEND_INVITE_REVOKE_REQUEST: D,
-  FRIEND_INVITE_CREATE_REQUEST: w,
-  FRIEND_INVITES_FETCH_REQUEST: L,
-  FRIEND_INVITES_FETCH_RESPONSE: x,
-  INSTANT_INVITE_CLEAR: M
+  FRIEND_INVITE_REVOKE_REQUEST: w,
+  FRIEND_INVITE_CREATE_REQUEST: D,
+  FRIEND_INVITES_FETCH_REQUEST: x,
+  FRIEND_INVITES_FETCH_RESPONSE: L,
+  INSTANT_INVITE_CLEAR: j
 })

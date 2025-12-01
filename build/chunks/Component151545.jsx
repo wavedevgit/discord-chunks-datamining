@@ -51,39 +51,39 @@ function O(e) {
     className: O,
     onClose: v
   } = e, {
-    voiceGuild: I,
-    voiceChannel: T
-  } = (0, a.cj)([_.Z, p.Z, f.Z], () => {
+    voiceGuild: S,
+    voiceChannel: I
+  } = (0, a.cj)([p.Z, _.Z, f.Z], () => {
     var e, n;
     let r = (0, o.Z)(b);
     if (!r && (null == b ? true : b.type) !== E.IIU.HANG_STATUS) return {};
-    let i = r ? null == (e = p.Z.getVoiceStateForSession(t.id, null == b ? true : b.session_id)) ? true : e.channelId : null == (n = p.Z.getVoiceStateForUser(t.id)) ? true : n.channelId,
+    let i = r ? null == (e = _.Z.getVoiceStateForSession(t.id, null == b ? true : b.session_id)) ? true : e.channelId : null == (n = _.Z.getVoiceStateForUser(t.id)) ? true : n.channelId,
       a = f.Z.getChannel(i);
     return {
-      voiceGuild: _.Z.getGuild(null == a ? true : a.getGuildId()),
+      voiceGuild: p.Z.getGuild(null == a ? true : a.getGuildId()),
       voiceChannel: a
     }
-  }), S = (0, d.E)("UserProfileActivityCardWrapper", T), A = (null == b ? true : b.type) === E.IIU.HANG_STATUS && S ? T : null;
+  }), T = (0, d.E)("UserProfileActivityCardWrapper", I), A = (null == b ? true : b.type) === E.IIU.HANG_STATUS && T ? I : null;
   (0, c.q)(null == b ? true : b.application_id);
   let C = (0, a.e7)([l.Z], () => (null == b ? true : b.application_id) != null ? l.Z.getApplication(b.application_id) : (null == b ? true : b.name) != null ? l.Z.getApplicationByName(b.name) : null);
   return (i.useEffect(() => {
-    (null == b ? true : b.type) === E.IIU.HANG_STATUS && S && h.default.track(E.rMx.VIEW_HANG_STATUS, y({
+    (null == b ? true : b.type) === E.IIU.HANG_STATUS && T && m.default.track(E.rMx.VIEW_HANG_STATUS, y({
       source: "UserProfilePopout",
       other_user_id: t.id
     }, (0, u.Z)(null == A ? true : A.id)))
-  }, [null == b ? true : b.type, S, null == A ? true : A.id, t.id]), (null == b ? true : b.type) !== E.IIU.CUSTOM_STATUS && ((null == b ? true : b.type) !== E.IIU.HANG_STATUS || S)) ? (0, s.Z)(b) ? (0, r.jsx)(g.Z, {
+  }, [null == b ? true : b.type, T, null == A ? true : A.id, t.id]), (null == b ? true : b.type) !== E.IIU.CUSTOM_STATUS && ((null == b ? true : b.type) !== E.IIU.HANG_STATUS || T)) ? (0, s.Z)(b) ? (0, r.jsx)(g.Z, {
     user: t,
     currentUser: n,
     activity: b,
     className: O,
     onClose: v
-  }) : (0, r.jsx)(m.Z, {
+  }) : (0, r.jsx)(h.Z, {
     user: t,
     currentUser: n,
     activity: b,
     application: C,
-    voiceGuild: I,
-    voiceChannel: T,
+    voiceGuild: S,
+    voiceChannel: I,
     className: O,
     onClose: v
   }) : null

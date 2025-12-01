@@ -2,8 +2,8 @@
 /** chunk id: 951806, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F0: () => h,
-  bk: () => _
+  F0: () => m,
+  bk: () => p
 }), require("./539854.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk579092 = require("./579092.js"),
@@ -22,10 +22,10 @@ function u(e, t, n) {
 }
 let d = new Chunk579092.Yd("LegacyOverlayClient"),
   f = 1e3,
-  _ = 1e4,
-  p = 2e4,
-  h = "Heartbeat",
-  m = new Chunk188274.Z(f),
+  p = 1e4,
+  _ = 2e4,
+  m = "Heartbeat",
+  h = new Chunk188274.Z(f),
   g = null,
   E = null;
 
@@ -37,12 +37,12 @@ function b(e) {
     context: i
   } = e;
   if (!c.Z.hasRenderDebugMode(l.GO.LegacyOverlayLogging) || __OVERLAY__) returnfalse;
-  if (m.push({
+  if (h.push({
       level: t,
       message: n,
       timestamp: r,
       context: i
-    }), n === h && (g = Date.now()), n !== h) switch (t) {
+    }), n === m && (g = Date.now()), n !== m) switch (t) {
     case "error":
     case "crash":
       d.error(n);
@@ -63,9 +63,9 @@ function y() {
   null == E && (E = setInterval(() => {
     if (null != g) {
       let e = Date.now() - g;
-      module > p && (d.warn("No heartbeat for ".concat(Math.round(module / 1e3), "s - overlay may be unresponsive")), g = null)
+      module > _ && (d.warn("No heartbeat for ".concat(Math.round(module / 1e3), "s - overlay may be unresponsive")), g = null)
     }
-  }, _))
+  }, p))
 }
 
 function O() {
@@ -80,27 +80,27 @@ function v(e) {
   return n === l.GO.LegacyOverlayLogging && (t ? y() : O()), false
 }
 
-function I(e) {
+function S(e) {
   let {
     logs: t
   } = e;
   return t.forEach(e => b(e)), true
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk338949.Z), Chunk338949.Z.hasRenderDebugMode(Chunk837268.GO.LegacyOverlayLogging) && y()
   }
   getAllLogs() {
-    return m
+    return h
   }
   getLogsByLevel(e) {
-    return m.filter(t => t.level === e)
+    return h.filter(t => t.level === e)
   }
   getErrorLogs() {
-    return m.filter(e => "error" === e.level || "crash" === e.level)
+    return h.filter(e => "error" === e.level || "crash" === e.level)
   }
 }
-u(T, "displayName", "OverlayRPCLogStore"), new T(Chunk570140.Z, {
+u(I, "displayName", "OverlayRPCLogStore"), new I(Chunk570140.Z, {
   OVERLAY_RENDER_DEBUG_MODE: v,
-  OVERLAY_ADD_LOGS_BATCH: I
+  OVERLAY_ADD_LOGS_BATCH: S
 })

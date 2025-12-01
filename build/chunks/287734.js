@@ -2,7 +2,7 @@
 /** chunk id: 287734, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => p
+  default: () => _
 });
 var Chunk570140 = require("./570140.js"),
   Chunk622822 = require("./622822.js"),
@@ -16,7 +16,7 @@ var Chunk788983 = require("./788983.js"),
   Chunk131951 = require("./131951.js"),
   Chunk604151 = require("./604151.js"),
   Chunk981631 = require("./981631.js");
-let p = {
+let _ = {
   selectChannel(e) {
     let {
       guildId: t,
@@ -29,7 +29,7 @@ let p = {
     } = e;
     r.Z.dispatch({
       type: "CHANNEL_SELECT",
-      guildId: t === _.ME ? null : t,
+      guildId: t === p.ME ? null : t,
       channelId: n,
       messageId: i,
       jumpType: a,
@@ -39,7 +39,7 @@ let p = {
     })
   },
   selectPrivateChannel(e) {
-    (0, l.uL)(_.Z5c.CHANNEL(_.ME, e))
+    (0, l.uL)(p.Z5c.CHANNEL(p.ME, e))
   },
   selectVoiceChannel(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
@@ -47,7 +47,7 @@ let p = {
       r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
       a = u.Z.getChannel(e),
       o = null == a ? true : a.getGuildId();
-    if ((null == a ? true : a.isGuildVocal()) && (0, i.Y3)(a)) return void(0, l.uL)(_.Z5c.CHANNEL(o, e));
+    if ((null == a ? true : a.isGuildVocal()) && (0, i.Y3)(a)) return void(0, l.uL)(p.Z5c.CHANNEL(o, e));
     d.Z.isSupported() && (null != e && d.Z.getMediaEngine().interact(), (0, f.h)(e, o, t, n, r))
   },
   disconnect() {

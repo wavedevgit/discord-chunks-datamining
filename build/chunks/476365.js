@@ -2,8 +2,8 @@
 /** chunk id: 476365, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => h,
-  S: () => m
+  M: () => m,
+  S: () => h
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,7 +24,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,8 +36,8 @@ function _(e) {
   }
   return e
 }
-let p = new Chunk710845.Z("useStripePaymentElementOptions"),
-  h = function() {
+let _ = new Chunk710845.Z("useStripePaymentElementOptions"),
+  m = function() {
     var e, t, n, a, o;
     let s = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       l = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.MODAL_BACKGROUND),
@@ -45,39 +45,39 @@ let p = new Chunk710845.Z("useStripePaymentElementOptions"),
       u = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.INPUT_BACKGROUND),
       d = null != (e = Chunk351402.theme) ? module : "flat",
       f = null != (t = Chunk351402.colorText) ? exports : Chunk947673.hex(),
-      _ = null != (n = Chunk351402.colorBackground) ? require : Chunk122289.hex(),
-      p = null != (a = Chunk351402.inputBackgroundColor) ? Chunk493773 : Chunk720452.hex(),
-      h = null != (o = Chunk351402.tabBackgroundColor) ? Chunk710845 : Chunk720452.hex();
+      p = null != (n = Chunk351402.colorBackground) ? require : Chunk122289.hex(),
+      _ = null != (a = Chunk351402.inputBackgroundColor) ? Chunk493773 : Chunk720452.hex(),
+      m = null != (o = Chunk351402.tabBackgroundColor) ? Chunk710845 : Chunk720452.hex();
     return {
       elementsAppearance: Chunk473749.useMemo(() => ({
         theme: Chunk637286,
         variables: {
           colorText: f,
-          colorBackground: _
+          colorBackground: p
         },
         rules: {
           ".Input": {
-            backgroundColor: p
+            backgroundColor: _
           },
           ".Tab": {
-            backgroundColor: h
+            backgroundColor: m
           }
         }
-      }), [Chunk637286, f, _, p, h]),
+      }), [Chunk637286, f, p, _, m]),
       elementsAppearanceOptions: {
         theme: Chunk637286,
         colorText: f,
-        colorBackground: _,
-        inputBackgroundColor: p,
-        tabBackgroundColor: h
+        colorBackground: p,
+        inputBackgroundColor: _,
+        tabBackgroundColor: m
       }
     }
   },
-  m = e => {
+  h = e => {
     let {
       onSetupError: t,
       elementsAppearanceOptions: n = {}
-    } = e, [i, o] = r.useState(true), [f, m] = r.useState(null), [g, E] = r.useState(true), [b, y] = r.useState([]), [O, v] = r.useState({}), I = r.useCallback(async () => {
+    } = e, [i, o] = r.useState(true), [f, h] = r.useState(null), [g, E] = r.useState(true), [b, y] = r.useState([]), [O, v] = r.useState({}), S = r.useCallback(async () => {
       var e;
       let n = (0, u.Q)({
         ipCountryCode: null != (e = s.Z.ipCountryCode) ? e : "ALL",
@@ -90,7 +90,7 @@ let p = new Chunk710845.Z("useStripePaymentElementOptions"),
         } = await (0, c.V)(n), r = (0, d.Po)(t), i = t.reduce((e, t) => (e[t.custom_payment_method_id] = t.payment_source_type, e), {});
         y(r), v(i), o(e)
       } catch (e) {
-        m(e), null != t && t(e), p.error("there was an error on setup for Payment Elements: ", e), (0, l.q2)(e, {
+        h(e), null != t && t(e), _.error("there was an error on setup for Payment Elements: ", e), (0, l.q2)(e, {
           tags: {
             source: "payment_elements"
           }
@@ -99,25 +99,25 @@ let p = new Chunk710845.Z("useStripePaymentElementOptions"),
       E(false)
     }, [t]);
     (0, a.ZP)(() => {
-      I()
+      S()
     });
     let {
-      elementsAppearance: T,
-      elementsAppearanceOptions: S
-    } = h(n);
+      elementsAppearance: I,
+      elementsAppearanceOptions: T
+    } = m(n);
     return {
       setupError: f,
-      elementsOptions: r.useMemo(() => g ? null : _({
+      elementsOptions: r.useMemo(() => g ? null : p({
         clientSecret: i
       }, {
-        appearance: T,
+        appearance: I,
         customPaymentMethods: b,
         paymentMethodCreation: "manual"
-      }), [T, i, b, g]),
+      }), [I, i, b, g]),
       setupIntentSecret: i,
       customPaymentMethods: b,
       customPaymentMethodIdsToSourceTypes: O,
       isLoading: g,
-      elementsAppearanceOptions: S
+      elementsAppearanceOptions: T
     }
   }

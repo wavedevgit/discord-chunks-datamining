@@ -2,7 +2,7 @@
 /** chunk id: 169223, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -60,7 +60,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class I extends Chunk178635.Z {
+class S extends Chunk178635.Z {
   constructor(...e) {
     super(...e), b(this, "actions", {
       VOICE_CHANNEL_SHOW_FEEDBACK: e => this.handleVoiceChannelFeedback(e),
@@ -99,13 +99,13 @@ class I extends Chunk178635.Z {
       let {
         streamKey: o,
         canShowFeedback: s
-      } = e, u = (0, l.my)(o), f = (0, c.L2)(u, _.Z), p = null != (i = h.Z.getVideoStats(o)) ? i : {}, m = y({
-        media_session_id: h.Z.getMediaSessionId(o),
-        rtc_connection_id: h.Z.getRtcConnectionId(o),
-        stream_region: h.Z.getRegion(o),
-        max_viewers: h.Z.getMaxViewers(o),
-        parent_media_session_id: null == (t = h.Z.getRTCConnection(o)) ? true : t.parentMediaSessionId
-      }, p);
+      } = e, u = (0, l.my)(o), f = (0, c.L2)(u, p.Z), _ = null != (i = m.Z.getVideoStats(o)) ? i : {}, h = y({
+        media_session_id: m.Z.getMediaSessionId(o),
+        rtc_connection_id: m.Z.getRtcConnectionId(o),
+        stream_region: m.Z.getRegion(o),
+        max_viewers: m.Z.getMaxViewers(o),
+        parent_media_session_id: null == (t = m.Z.getRTCConnection(o)) ? true : t.parentMediaSessionId
+      }, _);
       s && this.possiblyShowFeedbackModal(g.nw.STREAM, () => {
         (0, a.ZDy)(async () => {
           let {
@@ -116,7 +116,7 @@ class I extends Chunk178635.Z {
             streamApplication: f,
             isStreamer: u.ownerId === d.default.getId()
           }, t), {
-            analyticsData: m
+            analyticsData: h
           }))
         })
       })
@@ -139,10 +139,10 @@ class I extends Chunk178635.Z {
         applicationId: t,
         location: i,
         showFeedback: l
-      } = e, c = s.Z.getApplication(t), d = (0, o.p)(i), _ = f.Z.getChannel(d), h = {
-        rtc_connection_id: p.Z.getRTCConnectionId(),
-        media_session_id: p.Z.getMediaSessionId()
-      }, m = u.Z.getWindowOpen(E.KJ3.CHANNEL_CALL_POPOUT) ? a.u1M : a.z1l;
+      } = e, c = s.Z.getApplication(t), d = (0, o.p)(i), p = f.Z.getChannel(d), m = {
+        rtc_connection_id: _.Z.getRTCConnectionId(),
+        media_session_id: _.Z.getMediaSessionId()
+      }, h = u.Z.getWindowOpen(E.KJ3.CHANNEL_CALL_POPOUT) ? a.u1M : a.z1l;
       null != c && l && this.possiblyShowFeedbackModal(g.nw.ACTIVITY, () => {
         (0, a.ZDy)(async () => {
           let {
@@ -150,12 +150,12 @@ class I extends Chunk178635.Z {
           } = await Promise.all([n.e("26860"), n.e("47672"), n.e("31216")]).then(n.bind(n, 450634));
           return t => (0, r.jsx)(e, v(y({}, t), {
             activityApplication: c,
-            channel: _,
+            channel: p,
             embeddedActivityLocation: i,
-            analyticsData: h
+            analyticsData: m
           }))
         }, {
-          contextKey: m
+          contextKey: h
         })
       })
     }), b(this, "handleInAppReportsFeedback", e => {
@@ -214,4 +214,4 @@ class I extends Chunk178635.Z {
     })
   }
 }
-let T = new I
+let I = new S

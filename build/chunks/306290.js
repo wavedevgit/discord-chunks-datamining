@@ -20,7 +20,7 @@ function s(e) {
   } = e, d = (0, a.X)({
     usage: "search",
     sensitivity: "base"
-  }), f = t.disabledBehavior, _ = (0, o.useMemo)(() => c || new(0, i.d)({
+  }), f = t.disabledBehavior, p = (0, o.useMemo)(() => c || new(0, i.d)({
     collection: n,
     disabledKeys: s,
     disabledBehavior: f,
@@ -28,14 +28,14 @@ function s(e) {
     collator: d,
     layoutDelegate: u
   }), [c, u, n, s, l, d, f]), {
-    collectionProps: p
+    collectionProps: _
   } = (0, r.g)({
     ...e,
     ref: l,
     selectionManager: t,
-    keyboardDelegate: _
+    keyboardDelegate: p
   });
   return {
-    listProps: p
+    listProps: _
   }
 }

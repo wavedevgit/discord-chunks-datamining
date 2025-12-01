@@ -9,23 +9,23 @@ function o(e, t, n, o, s, l, c) {
   var u = n.getStartOffset(),
     d = n.getEndOffset(),
     f = e.__get(s).getMutability(),
-    _ = c ? u : d;
+    p = c ? u : d;
   if ("MUTABLE" === f) return n;
-  var p = i(t, s).filter(function(e) {
-    return _ <= e.end && _ >= e.start
+  var _ = i(t, s).filter(function(e) {
+    return p <= e.end && p >= e.start
   });
-  1 != p.length && a(false);
-  var h = p[0];
+  1 != _.length && a(false);
+  var m = _[0];
   if ("IMMUTABLE" === f) return n.merge({
-    anchorOffset: h.start,
-    focusOffset: h.end,
-    isBackward: false
-  });
-  l || (c ? d = h.end : u = h.start);
-  var m = r.getRemovalRange(u, d, t.getText().slice(h.start, h.end), h.start, o);
-  return n.merge({
     anchorOffset: m.start,
     focusOffset: m.end,
+    isBackward: false
+  });
+  l || (c ? d = m.end : u = m.start);
+  var h = r.getRemovalRange(u, d, t.getText().slice(m.start, m.end), m.start, o);
+  return n.merge({
+    anchorOffset: h.start,
+    focusOffset: h.end,
     isBackward: false
   })
 }
@@ -46,15 +46,15 @@ module.exports = function(e, t, n, r, i) {
       isBackward: false
     })
   } else if (l) {
-    var _ = o(e, t, u, i, l, false, true);
+    var p = o(e, t, u, i, l, false, true);
     u = u.merge({
-      anchorOffset: _.getStartOffset(),
+      anchorOffset: p.getStartOffset(),
       isBackward: false
     })
   } else if (c) {
-    var p = o(e, n, u, i, c, false, false);
+    var _ = o(e, n, u, i, c, false, false);
     u = u.merge({
-      focusOffset: p.getEndOffset(),
+      focusOffset: _.getEndOffset(),
       isBackward: false
     })
   }

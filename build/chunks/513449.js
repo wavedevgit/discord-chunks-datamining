@@ -2,8 +2,8 @@
 /** chunk id: 513449, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ku: () => _,
-  MV: () => p,
+  Ku: () => p,
+  MV: () => _,
   ZP: () => f
 });
 var Chunk473749 = require("./473749.js"),
@@ -19,18 +19,18 @@ let d = (0, Chunk663042.U)(e => ({
   })),
   f = d;
 
-function _(e) {
+function p(e) {
   (0, a.j)(() => d.setState({
     isOnStartStageScreen: e
   }))
 }
 
-function p(e) {
+function _(e) {
   let t = (0, o.e7)([l.Z], () => l.Z.getVoiceChannelId() === e.id),
     n = (0, o.e7)([s.Z], () => s.Z.can(c.yP, e), [e]),
     i = (0, u.Z)(e.id),
     a = n && !i;
   r.useEffect(() => {
-    t ? a || _(false) : _(a)
+    t ? a || p(false) : p(a)
   }, [t, a])
 }

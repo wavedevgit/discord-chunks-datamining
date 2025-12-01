@@ -32,19 +32,19 @@ let g = e => {
   return g ? (0, r.jsx)(l.Gt, {
     value: E,
     children: (0, r.jsxs)(s.$1m, {
-      className: a()(p.container, p.gradientBackground, t),
+      className: a()(_.container, _.gradientBackground, t),
       color: "purple",
       children: [(0, r.jsxs)("div", {
-        className: p.textContainer,
+        className: _.textContainer,
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xxl/bold",
-          className: p.heading,
+          className: _.heading,
           children: f.intl.string(f.t.Ve9Ge6)
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/medium",
           children: f.intl.string(f.t.yQ06u1)
         }), (0, r.jsx)("div", {
-          className: p.giftButtonContainer,
+          className: _.giftButtonContainer,
           children: (0, r.jsx)(d.Z, {
             buttonTextOverride: f.intl.string(f.t.Ve9Ge6),
             premiumModalAnalyticsLocation: i,
@@ -52,36 +52,36 @@ let g = e => {
           })
         })]
       }), (0, r.jsx)("img", {
-        src: m.Z,
-        className: p.bannerImage,
+        src: h.Z,
+        className: _.bannerImage,
         alt: "gift nitro banner"
       })]
     })
   }) : (0, r.jsx)(l.Gt, {
     value: E,
     children: (0, r.jsxs)("div", {
-      className: a()(_.container, t),
+      className: a()(p.container, t),
       children: [(0, r.jsxs)("div", {
-        className: _.textContainer,
+        className: p.textContainer,
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-lg/extrabold",
-          className: _.heading,
+          className: p.heading,
           children: f.intl.string(f.t.Ve9Ge6)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           children: f.intl.string(f.t.yQ06u1)
         }), (0, r.jsx)(u.Z, {
-          className: _.giftCardButton,
+          className: p.giftCardButton,
           textOptions: {
             textOverride: f.intl.string(f.t.Ve9Ge6),
-            textClassName: _.giftButtonCTA
+            textClassName: p.giftButtonCTA
           },
           color: o.zx.Colors.CUSTOM,
           premiumModalAnalyticsLocation: i
         })]
       }), (0, r.jsx)("img", {
-        src: h,
-        className: _.bannerImage,
+        src: m,
+        className: p.bannerImage,
         alt: "gift nitro banner"
       })]
     })

@@ -2,7 +2,7 @@
 /** chunk id: 463194, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => m
+  F: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk176354 = require("./176354.js"),
   Chunk300849 = require("./300849.js");
 
-function p(e) {
+function _(e) {
   let {
     emoji: t,
     shouldAnimate: n
@@ -24,7 +24,7 @@ function p(e) {
   if (null == t) return null;
   let i = f.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
   return (0, r.jsx)(c.Z, {
-    className: _.traitEmoji,
+    className: p.traitEmoji,
     emojiId: t.id,
     emojiName: i,
     animated: t.animated,
@@ -32,22 +32,22 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     trait: t,
     ellipsize: n
   } = e, a = i.useRef(null), c = (0, d.X)(a), f = !(0, s.e7)([u.Z], () => u.Z.useReducedMotion) && c;
   return null == t.label || t.label.length <= 0 ? null : (0, r.jsxs)("div", {
     ref: a,
-    className: o()(_.trait, {
-      [_.ellipsize]: n
+    className: o()(p.trait, {
+      [p.ellipsize]: n
     }),
-    children: [(0, r.jsx)(p, {
+    children: [(0, r.jsx)(_, {
       emoji: t.emoji,
       shouldAnimate: f
     }), (0, r.jsx)(l.Text, {
       tag: "span",
-      className: n ? _.ellipsize : true,
+      className: n ? p.ellipsize : true,
       variant: "text-sm/normal",
       color: "text-default",
       children: t.label
@@ -55,12 +55,12 @@ function h(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     items: t
   } = e, n = i.useCallback((e, t) => "string" == typeof e ? (0, r.jsx)("div", {
-    className: o()(_.trait, {
-      [_.ellipsize]: t.ellipsize
+    className: o()(p.trait, {
+      [p.ellipsize]: t.ellipsize
     }),
     children: (0, r.jsx)(l.Text, {
       tag: "span",
@@ -68,7 +68,7 @@ function m(e) {
       color: "text-default",
       children: e
     })
-  }, "overflow") : (0, r.jsx)(h, {
+  }, "overflow") : (0, r.jsx)(m, {
     trait: e,
     ellipsize: t.ellipsize
   }, e.key), []), a = i.useCallback(e => n(e, {
@@ -80,7 +80,7 @@ function m(e) {
     renderItem: s
   }), [s]);
   return 0 === t.length ? null : (0, r.jsx)(l.Epb, {
-    className: _.container,
+    className: p.container,
     items: t,
     renderItem: a,
     renderOverflow: c,

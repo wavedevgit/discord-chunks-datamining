@@ -18,11 +18,11 @@ function d(e) {
     botUserId: t,
     applicationId: n,
     analyticsLocations: d
-  } = e, [f, _] = i.useState(false), p = i.useRef(null), h = i.useCallback(async () => {
+  } = e, [f, p] = i.useState(false), _ = i.useRef(null), m = i.useCallback(async () => {
     o.default.track(c.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
       application_id: n,
       button_action: s._y.OPEN_APP_DM
-    }), _(true);
+    }), p(true);
     try {
       await (0, l.W)({
         appId: n,
@@ -30,14 +30,14 @@ function d(e) {
         analyticsLocations: d
       })
     } catch (e) {}
-    clearTimeout(p.current), _(false)
+    clearTimeout(_.current), p(false)
   }, [t, n, d]);
   return (0, r.jsx)(a.Button, {
     type: "submit",
     size: "md",
     variant: "secondary",
     loading: f,
-    onClick: h,
+    onClick: m,
     "aria-label": u.intl.string(u.t.AUM8hY),
     text: u.intl.string(u.t.AUM8hY)
   })

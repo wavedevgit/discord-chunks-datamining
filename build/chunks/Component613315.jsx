@@ -2,7 +2,7 @@
 /** chunk id: 613315, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => _
+  r: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -66,32 +66,32 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = e => {
+let p = e => {
   var t, n, {
       size: s = "md",
       width: c,
       height: f,
-      color: _ = i.Z.colors.INTERACTIVE_NORMAL,
-      colorClass: p = ""
+      color: p = i.Z.colors.INTERACTIVE_NORMAL,
+      colorClass: _ = ""
     } = e,
-    h = d(e, ["size", "width", "height", "color", "colorClass"]);
-  let m = (0, o.m)(s),
-    g = null != (t = null == m ? true : m.width) ? t : c,
-    E = null != (n = null == m ? true : m.height) ? n : f;
-  return (0, r.jsxs)("svg", u(l({}, (0, a.Z)(h)), {
+    m = d(e, ["size", "width", "height", "color", "colorClass"]);
+  let h = (0, o.m)(s),
+    g = null != (t = null == h ? true : h.width) ? t : c,
+    E = null != (n = null == h ? true : h.height) ? n : f;
+  return (0, r.jsxs)("svg", u(l({}, (0, a.Z)(m)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,
     height: E,
     fill: "none",
     viewBox: "0 0 24 24",
     children: [(0, r.jsx)("path", {
-      fill: "string" == typeof _ ? _ : _.css,
+      fill: "string" == typeof p ? p : p.css,
       d: "M24 5.7c0-1.54-.2-2.66-.34-3.23C23.35 1.17 22.3.92 21.2.68a.68.68 0 0 0-.62.18c-.16.16-.35.33-.58.32a19.27 19.27 0 0 0-2 0c-.23 0-.42-.16-.58-.32a.68.68 0 0 0-.62-.18c-1.1.24-2.15.5-2.46 1.8-.13.56-.34 1.68-.34 3.22v2.23a1.4 1.4 0 0 0 2.66.63l.8-1.6c.1-.2.34-.3.56-.25.26.06.62.12.98.12s.72-.06.98-.12a.5.5 0 0 1 .56.25l.8 1.6A1.4 1.4 0 0 0 24 7.93V5.7Z",
-      className: p
+      className: _
     }), (0, r.jsx)("path", {
-      fill: "string" == typeof _ ? _ : _.css,
+      fill: "string" == typeof p ? p : p.css,
       d: "M10.18 8h1.33c.27 0 .5.22.54.49.03.21.09.43.16.63.15.38-.1.88-.52.88H9.85l-.67 4h4.97l.37-2.23c.05-.29.33-.47.62-.45l.26.01h.63c.31 0 .55.28.5.59L16.18 14H20a1 1 0 1 1 0 2h-4.15l-.86 5.16a1 1 0 1 1-1.98-.32l.8-4.84H8.86l-.86 5.16A1 1 0 1 1 6 20.84L6.82 16H3a1 1 0 1 1 0-2h4.15l.67-4H4a1 1 0 0 1 0-2h4.15l.86-5.16a1 1 0 1 1 1.98.32L10.19 8Z",
-      className: p
+      className: _
     })]
   }))
 }

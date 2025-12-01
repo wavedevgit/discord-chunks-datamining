@@ -5,24 +5,24 @@ require.d(exports, {
   HH: () => O,
   NewMemberActionTypes: () => g,
   O9: () => f,
-  Vu: () => h,
+  Vu: () => m,
   W4: () => l,
   Wz: () => c,
   Z3: () => u,
   ZR: () => s,
-  am: () => p,
-  av: () => T,
+  am: () => _,
+  av: () => I,
   cq: () => E,
   j: () => N,
   k3: () => A,
   kb: () => C,
-  n: () => _,
-  pw: () => I,
+  n: () => p,
+  pw: () => S,
   rk: () => v,
   tB: () => y,
-  uo: () => S,
+  uo: () => T,
   vD: () => b,
-  x3: () => m
+  x3: () => h
 }), require("./953529.js"), require("./388685.js");
 var Chunk592125 = require("./592125.js"),
   Chunk823379 = require("./823379.js"),
@@ -34,10 +34,10 @@ let s = 7,
   u = 60,
   d = 3,
   f = 5,
-  _ = 1,
-  p = 30,
-  h = 200,
-  m = 7;
+  p = 1,
+  _ = 30,
+  m = 200,
+  h = 7;
 var g = function(e) {
   return e[e.VIEW = 0] = "VIEW", e[e.CHAT = 1] = "CHAT", e
 }({});
@@ -146,18 +146,18 @@ let v = e => {
   return t
 };
 
-function I(e) {
+function S(e) {
   return null == e || (null == e.message || !(e.message.length > 0)) && (null == e.authorIds || !(e.authorIds.length > 0))
 }
 
-function T(e) {
-  return null == e || !!I(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0))
+function I(e) {
+  return null == e || !!S(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0))
 }
 
-function S(e) {
+function T(e) {
   var t, n;
   if (null == e) returnfalse;
-  if (T(e)) returntrue;
+  if (I(e)) returntrue;
   if ((null == (t = e.welcomeMessage) ? true : t.message) == null || e.welcomeMessage.message.length < s || (null == (n = e.welcomeMessage) ? true : n.authorIds) == null || 0 === e.welcomeMessage.authorIds.length || null == e.newMemberActions || e.newMemberActions.length < d) returnfalse;
   if (null != e.newMemberActions)
     for (let t of e.newMemberActions) {

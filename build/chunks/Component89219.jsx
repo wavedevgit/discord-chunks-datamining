@@ -19,9 +19,9 @@ function d(e) {
     message: n,
     header: d,
     onClickContent: f,
-    onView: _,
-    guildId: p
-  } = e, h = i.useMemo(() => (0, r.jsx)(a.Text, {
+    onView: p,
+    guildId: _
+  } = e, m = i.useMemo(() => (0, r.jsx)(a.Text, {
     variant: "text-xs/medium",
     className: u.description,
     color: "none",
@@ -32,14 +32,14 @@ function d(e) {
     header: d,
     title: t.name,
     iconSrc: s.r9.getWhiteIconURL(),
-    info: h,
+    info: m,
     onClickContent: f,
     trackingConfig: {
       id: t.id,
       linkType: l.U.RICH_PRESENCE_INVITE,
-      onView: _,
+      onView: p,
       referrerId: n.author.id,
-      guildId: p,
+      guildId: _,
       channelId: n.channel_id,
       messageId: n.id,
       isDeadEnd: true

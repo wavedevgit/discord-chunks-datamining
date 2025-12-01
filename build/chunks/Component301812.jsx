@@ -26,19 +26,19 @@ function E(e) {
     guildId: n
   } = e, l = s.SE.useSetting().includes(n), f = i.useCallback(e => {
     let r = (0, o._o)();
-    e ? r.delete(n) : r.add(n), s.SE.updateSetting([...r]), a.default.track(h.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    e ? r.delete(n) : r.add(n), s.SE.updateSetting([...r]), a.default.track(m.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: d.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
       ingress: t,
       guild_id: n
     })
   }, [t, n]);
-  return n === p.T ? null : (0, r.jsx)(c.U, {
-    setting: _.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_STATUS_V2,
+  return n === _.T ? null : (0, r.jsx)(c.U, {
+    setting: p.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_STATUS_V2,
     children: (0, r.jsx)(u.ZP, {
-      title: m.intl.string(g.default.WhdCGP),
+      title: h.intl.string(g.default.WhdCGP),
       value: !l,
       onChange: f,
-      note: m.intl.string(g.default.UQ9RHJ)
+      note: h.intl.string(g.default.UQ9RHJ)
     })
   })
 }

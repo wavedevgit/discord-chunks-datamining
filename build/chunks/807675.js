@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   K: () => d,
-  y: () => _
+  y: () => p
 }), require("./539854.js"), require("./704826.js"), require("./35282.js");
 var Chunk593473 = require("./593473.js"),
   Chunk243814 = require("./243814.js"),
@@ -23,17 +23,17 @@ function f(e) {
   if (![u.ME, u.I_8, u.o_z].includes(e)) return null != e ? e : true
 }
 
-function _(e) {
+function p(e) {
   var t, n, i, c, u;
   let d = (0, r.parse)(e, {
       arrayFormat: "bracket"
     }),
-    _ = l.Hn;
+    p = l.Hn;
   try {
-    _ = a.vB(null != d.permissions && "" !== d.permissions ? d.permissions : "0")
+    p = a.vB(null != d.permissions && "" !== d.permissions ? d.permissions : "0")
   } catch (e) {}
-  let p = d.channel_id,
-    h = f(null != (i = null != (n = d.guild_id) ? n : null == (t = o.Z.getChannel(p)) ? true : t.guild_id) ? i : s.Z.getGuildId());
+  let _ = d.channel_id,
+    m = f(null != (i = null != (n = d.guild_id) ? n : null == (t = o.Z.getChannel(_)) ? true : t.guild_id) ? i : s.Z.getGuildId());
   return {
     clientId: null != (c = d.client_id) ? c : "",
     scopes: (null != (u = d.scope) ? u : "").replace(/\+/g, " ").split(" ").filter(e => e.length > 0),
@@ -42,9 +42,9 @@ function _(e) {
     codeChallenge: d.code_challenge,
     codeChallengeMethod: d.code_challenge_method,
     state: d.state,
-    permissions: _,
-    channelId: p,
-    guildId: h,
+    permissions: p,
+    channelId: _,
+    guildId: m,
     prompt: d.prompt,
     disableGuildSelect: "true" === d.disable_guild_select,
     integrationType: null == d.integration_type ? true : Number(d.integration_type),

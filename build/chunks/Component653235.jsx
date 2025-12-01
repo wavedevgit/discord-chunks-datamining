@@ -2,7 +2,7 @@
 /** chunk id: 653235, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk774802 = require("./774802.js");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -68,7 +68,7 @@ let N = (e, t) => (0, r.jsx)(b.G0, {
   columns: e
 }, t);
 
-function R(e) {
+function P(e) {
   var t;
   let n = l().sample(l().values(e));
   return {
@@ -79,7 +79,7 @@ function R(e) {
     format: null != (t = null == n ? true : n.format) ? t : u.EO.IMAGE
   }
 }
-class P extends Chunk473749.PureComponent {
+class R extends Chunk473749.PureComponent {
   componentDidMount() {
     0 === this.props.trendingCategories.length && (0, Chunk68405.Tg)()
   }
@@ -93,14 +93,14 @@ class P extends Chunk473749.PureComponent {
     } = e;
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: n === O.wI2.FAVORITES ? I.categoryFadeBlurple : I.categoryFade
+        className: n === O.wI2.FAVORITES ? S.categoryFadeBlurple : S.categoryFade
       }), (0, r.jsxs)("div", {
-        className: I.categoryText,
+        className: S.categoryText,
         children: [n === O.wI2.TRENDING_GIFS ? (0, r.jsx)(f.IeX, {
-          className: I.categoryIcon,
+          className: S.categoryIcon,
           color: "currentColor"
         }) : null, (0, r.jsx)("span", {
-          className: I.categoryName,
+          className: S.categoryName,
           children: t
         })]
       })]
@@ -120,14 +120,14 @@ class P extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), T(this, "_masonryRef", i.createRef()), T(this, "state", {
-      favoritesTile: R(this.props.favorites),
+    super(...e), I(this, "_masonryRef", i.createRef()), I(this, "state", {
+      favoritesTile: P(this.props.favorites),
       selectedIndex: {
         column: 0,
         row: 0
       },
       focusedId: null
-    }), T(this, "handleFocus", e => {
+    }), I(this, "handleFocus", e => {
       let {
         current: t
       } = this._masonryRef;
@@ -139,19 +139,19 @@ class P extends Chunk473749.PureComponent {
       }), this.setState({
         focusedId: e
       }))
-    }), T(this, "handleSelect", e => {
+    }), I(this, "handleSelect", e => {
       let {
         onSelectItem: t
       } = this.props, n = this.getData().find(t => t.name === e);
       null != n && null != t && t(n.type, n.name)
-    }), T(this, "getItemKey", (e, t) => {
+    }), I(this, "getItemKey", (e, t) => {
       if (e > 0) return null;
       let n = this.getData()[t];
       return null != n ? n.name : null
-    }), T(this, "memoizedData", (0, m.oH)(function(e, t) {
+    }), I(this, "memoizedData", (0, h.oH)(function(e, t) {
       let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
       return n ? [...t] : [e, ...t]
-    })), T(this, "renderItem", (e, t, n, i) => {
+    })), I(this, "renderItem", (e, t, n, i) => {
       if (e > 0) return null;
       let a = this.getData()[t];
       if (null == a) return;
@@ -175,7 +175,7 @@ class P extends Chunk473749.PureComponent {
         imagePool: s,
         videoPool: l
       }, i)
-    }), T(this, "renderContent", (e, t, n) => {
+    }), I(this, "renderContent", (e, t, n) => {
       let {
         className: i,
         trendingCategories: a
@@ -187,7 +187,7 @@ class P extends Chunk473749.PureComponent {
       }) : (0, r.jsx)(f.GMG, {
         ref: this._masonryRef,
         fade: true,
-        className: o()(I.container, i),
+        className: o()(S.container, i),
         itemGutter: 12,
         getItemKey: this.getItemKey,
         columns: e,
@@ -196,12 +196,12 @@ class P extends Chunk473749.PureComponent {
         sections: [this.getData().length],
         chunkSize: 50
       })
-    }), T(this, "getItemGrid", () => {
+    }), I(this, "getItemGrid", () => {
       let {
         current: e
       } = this._masonryRef;
       return null != e ? e.getItemGrid() : []
-    }), T(this, "getCoordsMap", () => {
+    }), I(this, "getCoordsMap", () => {
       let {
         current: e
       } = this._masonryRef;
@@ -210,11 +210,11 @@ class P extends Chunk473749.PureComponent {
   }
 }
 
-function D(e) {
-  let t = (0, c.e7)([h.Z], () => h.Z.getTrendingCategories()),
+function w(e) {
+  let t = (0, c.e7)([m.Z], () => m.Z.getTrendingCategories()),
     n = (0, g.gG)(),
     i = (0, y.PY)();
-  return (0, r.jsx)(P, C(S({}, e, i), {
+  return (0, r.jsx)(R, C(T({}, e, i), {
     trendingCategories: t,
     favorites: n
   }))

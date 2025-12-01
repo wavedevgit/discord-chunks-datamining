@@ -2,7 +2,7 @@
 /** chunk id: 140963, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./781311.js"), require("./35282.js"), require("./388685.js"), require("./704826.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk752305 = require("./752305.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,7 +34,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
@@ -145,7 +145,7 @@ class v extends Chunk473749.PureComponent {
       {
         onChange: a
       } = this.props;
-    null == a || a(null, i, (0, p.JM)(i));
+    null == a || a(null, i, (0, _.JM)(i));
     let o = t.length + e.length;
     this.setState({
       nextSelection: o
@@ -170,9 +170,9 @@ class v extends Chunk473749.PureComponent {
       id: c,
       submitting: u,
       textAreaPaddingClassName: f,
-      spellcheckEnabled: _,
-      "aria-controls": p,
-      "aria-expanded": m,
+      spellcheckEnabled: p,
+      "aria-controls": _,
+      "aria-expanded": h,
       "aria-activedescendant": g
     } = this.props;
     return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -202,7 +202,7 @@ class v extends Chunk473749.PureComponent {
         tabIndex: 0,
         spellCheck: Chunk62883,
         "aria-controls": Chunk752305,
-        "aria-expanded": m,
+        "aria-expanded": h,
         "aria-activedescendant": g,
         "aria-haspopup": "listbox",
         "aria-autocomplete": "list",
@@ -211,7 +211,7 @@ class v extends Chunk473749.PureComponent {
     })
   }
   handleTabOrEnterDown(e) {
-    e.which === h.yXg.TAB && this.props.onTab() || e.which === h.yXg.ENTER && this.props.onEnter(e) ? (e.preventDefault(), e.stopPropagation()) : e.which === h.yXg.ESCAPE ? (e.preventDefault(), e.stopPropagation(), this.props.hideAutocomplete()) : e.which === h.yXg.TAB && this.hasOpenCodeBlock() && (e.preventDefault(), e.stopPropagation(), this.insertText("	", true, false))
+    e.which === m.yXg.TAB && this.props.onTab() || e.which === m.yXg.ENTER && this.props.onEnter(e) ? (e.preventDefault(), e.stopPropagation()) : e.which === m.yXg.ESCAPE ? (e.preventDefault(), e.stopPropagation(), this.props.hideAutocomplete()) : e.which === m.yXg.TAB && this.hasOpenCodeBlock() && (e.preventDefault(), e.stopPropagation(), this.insertText("	", true, false))
   }
   insertEmoji(e) {
     let {
@@ -224,80 +224,80 @@ class v extends Chunk473749.PureComponent {
     return this.props.value
   }
   constructor(...e) {
-    super(...e), m(this, "_ref", true), m(this, "state", {
+    super(...e), h(this, "_ref", true), h(this, "state", {
       nextSelection: false
-    }), m(this, "focus", () => {
+    }), h(this, "focus", () => {
       let {
         _ref: e
       } = this;
       null != e && e.focus()
-    }), m(this, "handleSetRef", e => {
+    }), h(this, "handleSetRef", e => {
       this._ref = e
-    }), m(this, "handleKeyPress", e => {
-      if (e.which === h.yXg.ENTER && !e.shiftKey && !this.hasOpenCodeBlock() && (!this.props.disableEnterToSubmit || e.ctrlKey)) return e.preventDefault(), this.props.onSubmit(this.props.value)
-    }), m(this, "handleKeyDown", e => {
+    }), h(this, "handleKeyPress", e => {
+      if (e.which === m.yXg.ENTER && !e.shiftKey && !this.hasOpenCodeBlock() && (!this.props.disableEnterToSubmit || e.ctrlKey)) return e.preventDefault(), this.props.onSubmit(this.props.value)
+    }), h(this, "handleKeyDown", e => {
       switch (e.which) {
-        case h.yXg.ARROW_DOWN:
+        case m.yXg.ARROW_DOWN:
           this.props.moveSelection(1) && e.preventDefault();
           break;
-        case h.yXg.N:
+        case m.yXg.N:
           e.ctrlKey && this.props.moveSelection(1) && e.preventDefault();
           break;
-        case h.yXg.ARROW_UP:
+        case m.yXg.ARROW_UP:
           this.props.moveSelection(false) && e.preventDefault();
           break;
-        case h.yXg.P:
+        case m.yXg.P:
           e.ctrlKey && this.props.moveSelection(false) && e.preventDefault();
           break;
-        case h.yXg.TAB:
-        case h.yXg.ENTER:
+        case m.yXg.TAB:
+        case m.yXg.ENTER:
           this.handleTabOrEnterDown(e)
       }
       let {
         onKeyDown: t
       } = this.props;
       null == t || t(e)
-    }), m(this, "handleKeyUp", e => {
+    }), h(this, "handleKeyUp", e => {
       switch (e.which) {
-        case h.yXg.ARROW_RIGHT:
-        case h.yXg.ARROW_LEFT:
-        case h.yXg.HOME:
-        case h.yXg.END:
+        case m.yXg.ARROW_RIGHT:
+        case m.yXg.ARROW_LEFT:
+        case m.yXg.HOME:
+        case m.yXg.END:
           this.props.maybeShowAutocomplete()
       }
       let {
         onKeyUp: t
       } = this.props;
       null == t || t(e)
-    }), m(this, "handleGlobalPaste", e => {
+    }), h(this, "handleGlobalPaste", e => {
       let {
         event: t
       } = e;
       this.handlePaste(t) || this.focus()
-    }), m(this, "handlePaste", e => {
+    }), h(this, "handlePaste", e => {
       let t = this.props.onPaste(e);
       return t && e.preventDefault(), t
-    }), m(this, "handleClick", () => {
+    }), h(this, "handleClick", () => {
       this.props.maybeShowAutocomplete()
-    }), m(this, "handleContextMenu", e => {
+    }), h(this, "handleContextMenu", e => {
       f.isPlatformEmbedded && (0, l.jW)(e, async () => {
         let {
           default: e
         } = await n.e("99989").then(n.bind(n, 889662));
         return t => (0, r.jsx)(e, b(g({}, t), {
-          text: (0, _.getSelectionText)()
+          text: (0, p.getSelectionText)()
         }))
       }, {
         align: "bottom",
         enableSpellCheck: true
       })
-    }), m(this, "handleOnChange", e => {
+    }), h(this, "handleOnChange", e => {
       let {
         onChange: t,
         allowNewLines: n
       } = this.props, r = e.currentTarget.value, i = n ? r : r.replace("\n", "");
-      null == t || t(e, i, (0, p.JM)(i))
+      null == t || t(e, i, (0, _.JM)(i))
     })
   }
 }
-let I = v
+let S = v

@@ -2,7 +2,7 @@
 /** chunk id: 614118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,80 +26,80 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk54602 = require("./54602.js");
 
-function T(e) {
-  var t, n, T, S, A, C, N, R;
+function I(e) {
+  var t, n, I, T, A, C, N, P;
   let {
-    guildId: P,
-    skuId: D,
-    channel: w
-  } = e, L = (0, o.e7)([_.Z], () => _.Z.isFetchingForSKU(D)), x = (0, o.e7)([f.Z], () => f.Z.get(D)), M = null == x ? true : x.applicationId, {
-    analyticsLocations: k
+    guildId: R,
+    skuId: w,
+    channel: D
+  } = e, x = (0, o.e7)([p.Z], () => p.Z.isFetchingForSKU(w)), L = (0, o.e7)([f.Z], () => f.Z.get(w)), j = null == L ? true : L.applicationId, {
+    analyticsLocations: M
   } = (0, c.ZP)(l.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
   (0, u.p2)();
-  let j = (0, o.e7)([d.default], () => w.isDM() && null != w.recipients && 0 !== w.recipients.length ? d.default.getUser(w.recipients[0]) : null),
+  let k = (0, o.e7)([d.default], () => D.isDM() && null != D.recipients && 0 !== D.recipients.length ? d.default.getUser(D.recipients[0]) : null),
     {
       primaryIconAsset: U,
       primaryIconLabel: G
-    } = i.useMemo(() => (0, h.FE)(x, M), [x, M]);
+    } = i.useMemo(() => (0, m.FE)(L, j), [L, j]);
   i.useEffect(() => {
-    null == P || null == D || _.Z.isFetchingForSKU(D) || (0, m.y)(P, D)
-  }, [P, D]);
-  let B = i.useCallback(e => {
-      e.stopPropagation(), (null == x ? true : x.applicationId) != null && null != P && (0, g.g)({
-        skuId: D,
-        applicationId: x.applicationId,
-        guildId: P,
+    null == R || null == w || p.Z.isFetchingForSKU(w) || (0, h.y)(R, w)
+  }, [R, w]);
+  let Z = i.useCallback(e => {
+      e.stopPropagation(), (null == L ? true : L.applicationId) != null && null != R && (0, g.g)({
+        skuId: w,
+        applicationId: L.applicationId,
+        guildId: R,
         isStorefront: false,
-        analyticsLocations: k
+        analyticsLocations: M
       })
-    }, [D, null == x ? true : x.applicationId, P, k]),
-    Z = i.useCallback(() => {
-      null != x && (0, E.P)(x, {
+    }, [w, null == L ? true : L.applicationId, R, M]),
+    B = i.useCallback(() => {
+      null != L && (0, E.P)(L, {
         isGift: false
       }, {
         analyticsLocations: [l.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_PURCHASE_BUTTON]
       })
-    }, [x]),
+    }, [L]),
     F = i.useCallback(() => {
-      null != x && (0, E.P)(x, {
+      null != L && (0, E.P)(L, {
         isGift: true,
-        giftRecipient: null != j ? j : true
+        giftRecipient: null != k ? k : true
       }, {
         analyticsLocations: [l.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_GIFT_BUTTON]
       })
-    }, [x, j]);
-  return L && null == x ? (0, r.jsx)("div", {
-    className: I.container,
+    }, [L, k]);
+  return x && null == L ? (0, r.jsx)("div", {
+    className: S.container,
     children: (0, r.jsx)(s.$jN, {
-      className: I.spinner
+      className: S.spinner
     })
-  }) : null == x ? null : (0, r.jsxs)("div", {
-    className: I.container,
+  }) : null == L ? null : (0, r.jsxs)("div", {
+    className: S.container,
     children: [(0, r.jsx)(y.C, {
-      className: I.card,
-      applicationId: x.applicationId,
-      skuId: D,
+      className: S.card,
+      applicationId: L.applicationId,
+      skuId: w,
       variant: y.Z.EMBEDDED,
-      onClick: B,
-      analyticsLocations: k
+      onClick: Z,
+      analyticsLocations: M
     }), (0, r.jsxs)("div", {
-      className: I.details,
+      className: S.details,
       children: [(0, r.jsxs)("div", {
-        className: I.detailsTitleDescription,
+        className: S.detailsTitleDescription,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/medium",
           lineClamp: 1,
-          children: x.name
+          children: L.name
         }), (0, r.jsxs)("div", {
-          className: I.detailsDescription,
+          className: S.detailsDescription,
           children: [null != U && (0, r.jsx)("img", {
             src: U.toString(),
             alt: G,
-            className: I.iconAsset
+            className: S.iconAsset
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/bold",
             lineClamp: 1,
-            children: (0, p.T4)(null != (A = null == (t = x.price) ? true : t.amount) ? A : 0, null != (C = null == (n = x.price) ? true : n.currency) ? C : O.pK.USD)
+            children: (0, _.T4)(null != (A = null == (t = L.price) ? true : t.amount) ? A : 0, null != (C = null == (n = L.price) ? true : n.currency) ? C : O.pK.USD)
           })]
         })]
       }), (0, r.jsxs)(a.hE2, {
@@ -107,14 +107,14 @@ function T(e) {
         fullWidth: true,
         children: [(0, r.jsx)(a.zxk, {
           variant: "secondary",
-          onClick: B,
+          onClick: Z,
           text: v.intl.string(v.t.KLBTgF),
           fullWidth: true
         }), (0, r.jsx)(a.zxk, {
           variant: "primary",
-          onClick: Z,
+          onClick: B,
           text: v.intl.format(v.t.Xp5WTn, {
-            price: (0, p.T4)(null != (N = null == (T = x.price) ? true : T.amount) ? N : 0, null != (R = null == (S = x.price) ? true : S.currency) ? R : O.pK.USD)
+            price: (0, _.T4)(null != (N = null == (I = L.price) ? true : I.amount) ? N : 0, null != (P = null == (T = L.price) ? true : T.currency) ? P : O.pK.USD)
           }),
           fullWidth: true
         }), (0, r.jsx)(b.Z, {

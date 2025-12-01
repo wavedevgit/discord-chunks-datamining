@@ -30,19 +30,19 @@ function v(e, t, n) {
     case "delete-word":
       return f(t);
     case "backspace":
-      return m(t);
+      return h(t);
     case "backspace-word":
       return d(t);
     case "backspace-to-start-of-line":
       return u(t, n);
     case "split-block":
-      return _(t);
+      return p(t);
     case "transpose-characters":
       return E(t);
     case "move-selection-to-start-of-block":
-      return h(t);
+      return m(t);
     case "move-selection-to-end-of-block":
-      return p(t);
+      return _(t);
     case "secondary-cut":
       return s.cut(t);
     case "secondary-paste":

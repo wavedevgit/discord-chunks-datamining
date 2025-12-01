@@ -2,7 +2,7 @@
 /** chunk id: 741914, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -49,7 +49,7 @@ function d(e, t) {
   }), e
 }
 let f = i().omit(Chunk428595.Z.RULES, ["codeBlock", "heading"]),
-  _ = d(c({}, Chunk723454.Z), {
+  p = d(c({}, Chunk723454.Z), {
     parse: function(e, t, n) {
       var r;
       let i = a.Z.parse(e, t, n),
@@ -59,7 +59,7 @@ let f = i().omit(Chunk428595.Z.RULES, ["codeBlock", "heading"]),
       })
     }
   }),
-  p = Chunk454585.Z.combineAndInjectMentionRule(f, [Chunk454585.Z.createReactRules(Chunk454585.Z.defaultReactRuleOptions), {
-    header: _
+  _ = Chunk454585.Z.combineAndInjectMentionRule(f, [Chunk454585.Z.createReactRules(Chunk454585.Z.defaultReactRuleOptions), {
+    header: p
   }]),
-  h = Chunk454585.Z.reactParserFor(p)
+  m = Chunk454585.Z.reactParserFor(_)

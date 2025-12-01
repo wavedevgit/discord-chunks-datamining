@@ -19,11 +19,11 @@ function l(e, t) {
   } = e, {
     isInvalid: d,
     validationErrors: f,
-    validationDetails: _
+    validationDetails: p
   } = t.displayValidation, {
-    labelProps: p,
-    fieldProps: h,
-    descriptionProps: m,
+    labelProps: _,
+    fieldProps: m,
+    descriptionProps: h,
     errorMessageProps: g
   } = (0, o.U)({
     ...e,
@@ -34,7 +34,7 @@ function l(e, t) {
   r.k.set(t, {
     name: l,
     form: c,
-    descriptionId: m.id,
+    descriptionId: h.id,
     errorMessageId: g.id,
     validationBehavior: u
   });
@@ -52,14 +52,14 @@ function l(e, t) {
     groupProps: (0, a.d)(E, {
       role: "group",
       "aria-disabled": n || true,
-      ...h,
+      ...m,
       ...b
     }),
-    labelProps: p,
-    descriptionProps: m,
+    labelProps: _,
+    descriptionProps: h,
     errorMessageProps: g,
     isInvalid: d,
     validationErrors: f,
-    validationDetails: _
+    validationDetails: p
   }
 }

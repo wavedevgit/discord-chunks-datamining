@@ -17,10 +17,10 @@ let l = "Ubuntu",
   u = "Fedora",
   d = "Red Hat",
   f = "SuSE",
-  _ = "Linux",
-  p = "OS X",
-  h = "win",
-  m = "osx",
+  p = "Linux",
+  _ = "OS X",
+  m = "win",
+  h = "osx",
   g = "linux";
 
 function E(e) {
@@ -36,13 +36,13 @@ function b() {
     var e;
     return null == (e = i().os) ? true : module.family
   })();
-  return null == module ? h : false !== module.indexOf(l) || false !== module.indexOf(c) || false !== module.indexOf(u) || false !== module.indexOf(d) || false !== module.indexOf(f) || false !== module.indexOf(_) ? g : false !== module.indexOf(p) ? m : h
+  return null == module ? m : false !== module.indexOf(l) || false !== module.indexOf(c) || false !== module.indexOf(u) || false !== module.indexOf(d) || false !== module.indexOf(f) || false !== module.indexOf(p) ? g : false !== module.indexOf(_) ? h : m
 }
 
 function y(e) {
   return ({
-    [h]: "Windows",
-    [m]: "Mac",
+    [m]: "Windows",
+    [h]: "Mac",
     [g]: "Linux"
   })[b(e)]
 }

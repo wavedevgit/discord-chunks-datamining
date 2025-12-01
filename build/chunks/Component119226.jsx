@@ -2,7 +2,7 @@
 /** chunk id: 119226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./314940.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -34,7 +34,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -78,7 +78,7 @@ function C(e) {
   });
   return (0, r.jsx)("div", {
     className: y.giftMainAnimationWrapper,
-    children: (0, r.jsx)(A, S(I({}, i), {
+    children: (0, r.jsx)(A, T(S({}, i), {
       avatarDecoration: n,
       src: a,
       className: y.avatar,
@@ -92,20 +92,20 @@ function N(e) {
   var t;
   let {
     skuId: n
-  } = e, i = null == (t = (0, p.V)(n)) ? true : t.config;
+  } = e, i = null == (t = (0, _.V)(n)) ? true : t.config;
   return (0, r.jsxs)("div", {
     className: y.profileEffectContainer,
     children: [(0, r.jsx)("img", {
       src: O,
       alt: null == i ? true : i.accessibilityLabel,
       className: y.profileEffectBackground
-    }), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)(m.Z, {
       skuId: n
     })]
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     nameplate: t
   } = e;
@@ -120,7 +120,7 @@ function R(e) {
     })
   })
 }
-let P = e => {
+let R = e => {
   let {
     sku: t
   } = e, {
@@ -146,12 +146,12 @@ let P = e => {
     skuId: e.skuId
   })).with({
     type: a.Z.NAMEPLATE
-  }, e => (0, r.jsx)(R, {
+  }, e => (0, r.jsx)(P, {
     nameplate: e
   })).otherwise(() => null);
   return null != n && null == l ? (0, r.jsx)("div", {
     className: y.giftMainAnimationWrapper,
-    children: (0, r.jsx)(_.Z, {
+    children: (0, r.jsx)(p.Z, {
       defaultAnimationState: f.SR.LOOP,
       giftStyle: n,
       shouldAnimate: true,
@@ -160,11 +160,11 @@ let P = e => {
   }) : l
 };
 
-function D(e) {
+function w(e) {
   let {
     sku: t
   } = e;
-  return t.productLine === E.POd.COLLECTIBLES ? (0, r.jsx)(P, {
+  return t.productLine === E.POd.COLLECTIBLES ? (0, r.jsx)(R, {
     sku: t
   }) : null
 }

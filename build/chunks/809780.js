@@ -2,7 +2,7 @@
 /** chunk id: 809780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   As: () => F,
-  ZP: () => Q,
+  ZP: () => X,
   hC: () => H,
   jd: () => V
 }), require("./539854.js"), require("./388685.js");
@@ -369,7 +369,7 @@ function Y(e, t, n, r) {
       if (w.ZP.getMentionCount(t) > 0) return w.ZP.getIsMentionLowImportance(t) ? 3 : 2;
       if (null != n) {
         let e = L.default.extractTimestamp(n);
-        if (Date.now() - e > X) return 8;
+        if (Date.now() - e > Q) return 8;
         if (Date.now() - e > q) return 6
       }
       if (r.isThread()) {
@@ -393,9 +393,9 @@ function Y(e, t, n, r) {
   }))
 }
 let q = 2 * Chunk70956.Z.Millis.DAY,
-  X = 10 * Chunk70956.Z.Millis.DAY;
+  Q = 10 * Chunk70956.Z.Millis.DAY;
 
-function Q(e) {
+function X(e) {
   let [t, n] = l.useState(() => new W(K(), e)), [r, i] = l.useState(false), o = l.useRef(Date.now()), [a, s] = l.useState(() => K());
   l.useEffect(() => {
     let e = e => s(e);

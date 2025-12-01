@@ -48,7 +48,7 @@ async function d() {
   let e;
   return Chunk570140.Z.dispatch({
     type: "AGE_VERIFICATION_METHODS_LOAD_START"
-  }), e = (0, Chunk788080.yF)() ? _() : f(), await (null == module ? true : module.then(e => {
+  }), e = (0, Chunk788080.yF)() ? p() : f(), await (null == module ? true : module.then(e => {
     i.Z.dispatch({
       type: "AGE_VERIFICATION_METHODS_LOAD_SUCCESS",
       methods: e.body.methods
@@ -67,7 +67,7 @@ function f() {
   })
 }
 
-function _() {
+function p() {
   let e = Chunk314897.default.getSuspendedUserToken();
   return Chunk544891.tn.post({
     url: Chunk981631.ANM.SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS,

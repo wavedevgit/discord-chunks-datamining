@@ -54,7 +54,7 @@ function D(e) {
   return e
 }
 
-function k(e, n) {
+function A(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,15 +66,15 @@ function k(e, n) {
     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
-let A = new Set([Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA]),
-  R = new Set([Chunk981631.d4z.GUILD_VOICE, Chunk981631.d4z.GUILD_STAGE_VOICE]);
+let R = new Set([Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA]),
+  k = new Set([Chunk981631.d4z.GUILD_VOICE, Chunk981631.d4z.GUILD_STAGE_VOICE]);
 
 function L(e) {
   let {
     guild: n,
     channel: l,
     onCategoryClick: i
-  } = e, o = (0, I.Mf)(n.id, l.id, l.id), s = (0, I.t4)(n.id, l.id, l.id);
+  } = e, o = (0, w.Mf)(n.id, l.id, l.id), s = (0, w.t4)(n.id, l.id, l.id);
   return (0, r.jsxs)("div", {
     className: a()(T.categoryRow, {
       [T.uncategorized]: "null" === l.id
@@ -84,7 +84,7 @@ function L(e) {
         let {
           default: e
         } = await Promise.all([t.e("8965"), t.e("14280")]).then(t.bind(t, 139035));
-        return t => (0, r.jsx)(e, k(D({}, t), {
+        return t => (0, r.jsx)(e, A(D({}, t), {
           channel: l,
           guild: n
         }))
@@ -128,18 +128,18 @@ let H = Chunk473749.memo(function() {
       isFirstChannel: s,
       isLastChannel: m,
       onChannelClick: N,
-      tooltipDirection: w = "right"
+      tooltipDirection: Z = "right"
     } = e, {
       isSubscriptionGated: L
-    } = (0, f.Z)(n.id), U = (0, I.Mf)(i.id, n.id, l.id), G = (0, I.t4)(i.id, n.id, l.id), W = (0, I.EH)(i.id, l.id), F = (0, o.e7)([O.Z], () => O.Z.getActiveThreadCount(i.id, n.id)), q = (0, o.e7)([C.Z], () => C.Z.shouldIndicateNewChannel(i.id, n.id)), z = function(e, n) {
+    } = (0, f.Z)(n.id), U = (0, w.Mf)(i.id, n.id, l.id), G = (0, w.t4)(i.id, n.id, l.id), W = (0, w.EH)(i.id, l.id), F = (0, o.e7)([O.Z], () => O.Z.getActiveThreadCount(i.id, n.id)), q = (0, o.e7)([C.Z], () => C.Z.shouldIndicateNewChannel(i.id, n.id)), z = function(e, n) {
       let t = [];
-      return Z.TPd.GUILD_THREADS_ONLY.has(e.type) && n >= 1 && t.push((0, r.jsx)(p.Text, {
+      return I.TPd.GUILD_THREADS_ONLY.has(e.type) && n >= 1 && t.push((0, r.jsx)(p.Text, {
         variant: "text-xs/normal",
         className: T.channelSubtitle,
         children: E.intl.format(E.t.z0qML2, {
           count: n
         })
-      }, "thread-count")), R.has(e.type) || t.push((0, r.jsx)(p.Text, {
+      }, "thread-count")), k.has(e.type) || t.push((0, r.jsx)(p.Text, {
         variant: "text-xs/normal",
         className: T.channelSubtitle,
         children: (0, y.qw)(e.id)
@@ -155,7 +155,7 @@ let H = Chunk473749.memo(function() {
       }, "topic")), [t.map((e, n) => [e, (0, r.jsx)(M, {
         index: n
       }, "subtitle-separator-".concat(n))])].flat(2).slice(0, false)
-    }(n, F), V = e => ((e.stopPropagation(), A.has(n.type) || e.shiftKey) ? (0, b.XU)(i.id, n.id) : n.isGuildStageVoice() || n.isGuildVoice() ? (0, v.Cq)(n) : j.Z.openChannelAsSidebar({
+    }(n, F), V = e => ((e.stopPropagation(), R.has(n.type) || e.shiftKey) ? (0, b.XU)(i.id, n.id) : n.isGuildStageVoice() || n.isGuildVoice() ? (0, v.Cq)(n) : j.Z.openChannelAsSidebar({
       guildId: n.guild_id,
       channelId: n.id,
       baseChannelId: P.oC.CHANNEL_BROWSER
@@ -167,7 +167,7 @@ let H = Chunk473749.memo(function() {
       children: [(0, r.jsx)(u.u, {
         text: W,
         delay: 500,
-        position: w,
+        position: Z,
         children: (0, r.jsxs)(p.P3F, {
           className: a()(T.channelRow, {
             [T.firstChannel]: s,
@@ -182,7 +182,7 @@ let H = Chunk473749.memo(function() {
               let {
                 default: e
               } = await Promise.all([t.e("79695"), t.e("18320"), t.e("83331"), t.e("81070")]).then(t.bind(t, 213202));
-              return t => (0, r.jsx)(e, k(D({}, t), {
+              return t => (0, r.jsx)(e, A(D({}, t), {
                 channel: n,
                 guild: i
               }))
@@ -190,7 +190,7 @@ let H = Chunk473749.memo(function() {
               let {
                 default: e
               } = await Promise.all([t.e("79695"), t.e("18320"), t.e("44011")]).then(t.bind(t, 373651));
-              return t => (0, r.jsx)(e, k(D({}, t), {
+              return t => (0, r.jsx)(e, A(D({}, t), {
                 channel: n,
                 guild: i
               }))
@@ -272,7 +272,7 @@ function G(e) {
       section: l,
       row: i
     } = e;
-    if (0 === l && false === u) return (0, r.jsx)(w.Z, {
+    if (0 === l && false === u) return (0, r.jsx)(Z.Z, {
       guild: t
     });
     let a = n._categories[l + u],
@@ -286,7 +286,7 @@ function G(e) {
       tooltipDirection: c ? "right" : "top",
       onChannelClick: d
     }, o.channel.id)
-  }, [n, t, u, c, d]), g = (0, w.q)(t.id), _ = (0, y.tn)(t.id, n, 64, g);
+  }, [n, t, u, c, d]), g = (0, Z.q)(t.id), _ = (0, y.tn)(t.id, n, 64, g);
   return (0, r.jsx)(p._2F, {
     className: i,
     innerClassName: a()(o, T.scrollerInner),

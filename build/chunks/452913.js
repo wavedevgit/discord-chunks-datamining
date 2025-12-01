@@ -16,22 +16,22 @@ var Chunk392711 = require("./392711.js"),
   Chunk774343 = require("./774343.js"),
   Chunk475468 = require("./475468.js"),
   Chunk981631 = require("./981631.js");
-let h = false,
-  m = false,
+let m = false,
+  h = false,
   g = false;
 
 function E(e) {
   let t = s.Z.getState().guildId;
-  if (null == t) return m;
-  if (t === p.I_8) return g;
+  if (null == t) return h;
+  if (t === _.I_8) return g;
   let n = e.indexOf(t);
-  return false === n ? m : n
+  return false === n ? h : n
 }
 let b = i().throttle(function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 1,
     t = Chunk771845.ZP.getFlattenedGuildIds(),
     n = E(exports);
-  if ((n += module) !== g || (0, Chunk706590.z)(Chunk853856.Z, Chunk592125.Z, Chunk496675.Z) || (n += module), require === h && (n = exports.length - 1), require >= exports.length || require === m) return void(0, Chunk475468.z)(Chunk774343.Z.getHomeLink());
+  if ((n += module) !== g || (0, Chunk706590.z)(Chunk853856.Z, Chunk592125.Z, Chunk496675.Z) || (n += module), require === m && (n = exports.length - 1), require >= exports.length || require === h) return void(0, Chunk475468.z)(Chunk774343.Z.getHomeLink());
   let r = require === g ? Chunk981631.I_8 : exports[require],
     i = Chunk944486.Z.getChannelId(Chunk392711);
   (0, Chunk475468.K)(Chunk392711, i === Chunk392711 ? null : i, false)

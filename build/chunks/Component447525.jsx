@@ -55,12 +55,12 @@ function f(e, t) {
     location: "renderElement"
   }, {
     autoTrackExposure: false
-  }).enabled ? (0, r.jsx)(_, d(c({}, t), {
+  }).enabled ? (0, r.jsx)(p, d(c({}, t), {
     timestamp: e.parsed
   })) : null : null
 }
 
-function _(e) {
+function p(e) {
   var t;
   let {
     timestamp: n,

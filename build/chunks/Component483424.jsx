@@ -2,7 +2,7 @@
 /** chunk id: 483424, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,13 +17,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk864141 = require("./864141.jsx"),
   Chunk231338 = require("./231338.js");
 
-function p(e) {
+function _(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: p,
-    className: h,
-    onClose: m
+    guildId: _,
+    className: m,
+    onClose: h
   } = e, {
     live: g,
     stream: E
@@ -31,32 +31,32 @@ function p(e) {
     voiceChannel: y
   } = (0, c.Z)({
     userId: t.id,
-    guildId: p
+    guildId: _
   }), O = t.id === n.id, v = (0, i.e7)([s.Z, o.Z], () => {
-    let e = O ? s.Z.getStatus() : o.Z.getStatus(t.id, p);
-    return e === _.Sk.OFFLINE || e === _.Sk.INVISIBLE
+    let e = O ? s.Z.getStatus() : o.Z.getStatus(t.id, _);
+    return e === p.Sk.OFFLINE || e === p.Sk.INVISIBLE
   }), {
-    voiceActivityStatusEnabled: I
+    voiceActivityStatusEnabled: S
   } = (0, a.U)({
     location: "UserProfileFeaturedActivity"
   });
-  return v || null == E ? v || null == b ? I && !v && null != y ? (0, r.jsx)(f.Z, {
+  return v || null == E ? v || null == b ? S && !v && null != y ? (0, r.jsx)(f.Z, {
     user: t,
     currentUser: n,
     voiceChannel: y,
-    className: h,
-    onClose: m
+    className: m,
+    onClose: h
   }) : null : (0, r.jsx)(u.Z, {
     user: t,
     currentUser: n,
     activity: b,
-    className: h,
-    onClose: m
+    className: m,
+    onClose: h
   }) : (0, r.jsx)(d.Z, {
     user: t,
     currentUser: n,
     stream: E,
-    className: h,
-    onClose: m
+    className: m,
+    onClose: h
   })
 }

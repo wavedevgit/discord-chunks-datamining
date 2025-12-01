@@ -2,7 +2,7 @@
 /** chunk id: 970677, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  q: () => p
+  q: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,30 +45,30 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e) {
+function _(e) {
   let {
     color: t = "default",
     disabled: n,
     isFocused: a,
     showDefaultFocus: u = false,
     menuItemProps: f,
-    children: p
-  } = e, h = i.useRef(null);
+    children: _
+  } = e, m = i.useRef(null);
   return i.useLayoutEffect(() => {
     if (!a) return;
-    let e = h.current;
+    let e = m.current;
     if (null == e) return;
-    (0, s.F)(h);
+    (0, s.F)(m);
     let t = e.querySelector('[tabindex="0"]');
     null == t || t.focus()
-  }, [a]), (0, r.jsx)("div", _(d({
-    ref: h,
+  }, [a]), (0, r.jsx)("div", p(d({
+    ref: m,
     className: o()(c.item, l._e[t], {
       [c.disabled]: n,
       [c.focused]: u && a,
@@ -76,6 +76,6 @@ function p(e) {
     }),
     "aria-disabled": n
   }, f), {
-    children: p
+    children: _
   }))
 }

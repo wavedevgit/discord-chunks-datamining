@@ -58,28 +58,28 @@ function d(e) {
     size: u = "sm",
     variant: d = "secondary",
     fullWidth: f,
-    onAction: _
-  } = e, p = c(e, ["activity", "user", "source", "size", "variant", "fullWidth", "onAction"]);
+    onAction: p
+  } = e, _ = c(e, ["activity", "user", "source", "size", "variant", "fullWidth", "onAction"]);
   let {
-    label: h,
-    tooltip: m,
+    label: m,
+    tooltip: h,
     loading: g,
     disabled: E,
     onClick: b
   } = (0, o.Ih)(t, n, s), y = () => {
-    null == _ || _(), b()
+    null == p || p(), b()
   };
   return (0, r.jsx)(i.u, {
-    text: m,
+    text: h,
     children: (0, r.jsx)(a.Button, l({
       variant: d,
       size: u,
       icon: a.bb,
-      text: h,
+      text: m,
       fullWidth: f,
       onClick: y,
       disabled: E,
       loading: g
-    }, p))
+    }, _))
   })
 }

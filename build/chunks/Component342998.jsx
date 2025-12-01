@@ -34,44 +34,44 @@ let y = (0, Chunk663042.U)(e => ({
       targetElementRef: a
     } = e, {
       data: O
-    } = (0, p.IX)(t.extra.application_id), {
+    } = (0, _.IX)(t.extra.application_id), {
       analyticsLocations: v
-    } = (0, f.ZP)(d.Z.CLOUD_PLAY_POPOVER), I = (0, u.Z)({
+    } = (0, f.ZP)(d.Z.CLOUD_PLAY_POPOVER), S = (0, u.Z)({
       application: O,
       analyticsLocations: v
-    }), T = (0, h.Nj)(s.z.CLOUD_PLAY_NEW_BADGE), S = null != I && !T && n, {
+    }), I = (0, m.Nj)(s.z.CLOUD_PLAY_NEW_BADGE), T = null != S && !I && n, {
       activeEntryId: A,
       setActiveEntryId: C
-    } = y(), N = A === t.id, R = S && N ? [s.z.CLOUD_PLAY_POPOVER] : [], [P, D] = (0, m.US)(R), w = P === s.z.CLOUD_PLAY_POPOVER;
+    } = y(), N = A === t.id, P = T && N ? [s.z.CLOUD_PLAY_POPOVER] : [], [R, w] = (0, h.US)(P), D = R === s.z.CLOUD_PLAY_POPOVER;
     i.useEffect(() => {
-      S && null === A && C(t.id)
-    }, [A, S, t.id, C]);
-    let L = () => {
-      null == I || I()
+      T && null === A && C(t.id)
+    }, [A, T, t.id, C]);
+    let x = () => {
+      null == S || S()
     };
     i.useEffect(() => () => {
-      w && (D(g.L.USER_DISMISS), C(null))
-    }, [w, D, C]);
-    let [x, M] = i.useState(false);
+      D && (w(g.L.USER_DISMISS), C(null))
+    }, [D, w, C]);
+    let [L, j] = i.useState(false);
     i.useEffect(() => {
-      w && !x && M(true)
-    }, [w, x]), (0, _.Z)({
+      D && !L && j(true)
+    }, [D, L]), (0, p.Z)({
       name: o.ImpressionNames.CLOUD_PLAY_CTA,
       type: o.ImpressionTypes.VIEW,
       properties: {
         location_stack: v
       }
     }, {
-      disableTrack: !x
-    }, [x]);
-    let k = () => {
-      D(g.L.USER_DISMISS), C(null)
+      disableTrack: !L
+    }, [L]);
+    let M = () => {
+      w(g.L.USER_DISMISS), C(null)
     };
     return (0, r.jsx)(l.J2, {
       title: E.intl.string(E.t["+WNDtV"]),
       body: E.intl.string(E.t["5QKxGI"]),
       targetElementRef: a,
-      shouldShow: w,
+      shouldShow: D,
       position: "left",
       caretConfig: {
         align: "center"
@@ -84,9 +84,9 @@ let y = (0, Chunk663042.U)(e => ({
       actions: [{
         icon: c.v3n,
         text: E.intl.string(E.t["jaYS/h"]),
-        onClick: L
+        onClick: x
       }],
-      onRequestClose: k
+      onRequestClose: M
     })
   },
   v = e => {

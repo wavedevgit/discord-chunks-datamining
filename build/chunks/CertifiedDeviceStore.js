@@ -21,17 +21,17 @@ function u(e, t, n) {
 }
 let d = "CertifiedDeviceStore",
   f = {},
-  _ = {},
-  p = 0;
+  p = {},
+  _ = 0;
 
-function h(e, t, n) {
-  let r = _[e];
+function m(e, t, n) {
+  let r = p[e];
   return null != r ? n(r) : t
 }
 
-function m(e, t) {
+function h(e, t) {
   let n = f[e];
-  null != n && n.forEach(e => delete _[e.id]), f[e] = t, t.forEach(e => _[e.id] = e)
+  null != n && n.forEach(e => delete p[e.id]), f[e] = t, t.forEach(e => p[e.id] = e)
 }
 
 function g(e) {
@@ -39,7 +39,7 @@ function g(e) {
     applicationId: t,
     devices: n
   } = e;
-  m(t, n), s.K.set(d, f), p++
+  h(t, n), s.K.set(d, f), _++
 }
 class E extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -47,42 +47,42 @@ class E extends(r = Chunk442837.ZP.Store) {
     null != module && a().forEach(module, (e, t) => {
       e.forEach(e => {
         "audioinput" === e.type && e.hardwareMute && (e.hardwareMute = false)
-      }), m(t, e)
+      }), h(t, e)
     })
   }
   isCertified(e) {
-    return null != _[e]
+    return null != p[e]
   }
   getCertifiedDevice(e) {
-    return _[e]
+    return p[e]
   }
   getCertifiedDeviceName(e, t) {
     let n = this.getCertifiedDevice(e);
     return null != n ? "".concat(n.vendor.name, " ").concat(n.model.name) : t
   }
   getCertifiedDeviceByType(e) {
-    return a().find(_, t => t.type === e)
+    return a().find(p, t => t.type === e)
   }
   isHardwareMute(e) {
-    return h(e, false, e => e.type === c.h7.AUDIO_INPUT && e.hardwareMute)
+    return m(e, false, e => e.type === c.h7.AUDIO_INPUT && e.hardwareMute)
   }
   hasEchoCancellation(e) {
-    return h(e, false, e => e.type === c.h7.AUDIO_INPUT && e.echoCancellation)
+    return m(e, false, e => e.type === c.h7.AUDIO_INPUT && e.echoCancellation)
   }
   hasNoiseSuppression(e) {
-    return h(e, false, e => e.type === c.h7.AUDIO_INPUT && e.noiseSuppression)
+    return m(e, false, e => e.type === c.h7.AUDIO_INPUT && e.noiseSuppression)
   }
   hasAutomaticGainControl(e) {
-    return h(e, false, e => e.type === c.h7.AUDIO_INPUT && e.automaticGainControl)
+    return m(e, false, e => e.type === c.h7.AUDIO_INPUT && e.automaticGainControl)
   }
   getVendor(e) {
-    return h(e, null, e => e.vendor)
+    return m(e, null, e => e.vendor)
   }
   getModel(e) {
-    return h(e, null, e => e.model)
+    return m(e, null, e => e.model)
   }
   getRevision() {
-    return p
+    return _
   }
 }
 u(E, "displayName", "CertifiedDeviceStore");

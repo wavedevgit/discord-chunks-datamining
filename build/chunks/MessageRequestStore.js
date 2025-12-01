@@ -30,25 +30,25 @@ function f(e) {
   return d(e) && !s.has(e.id) && (s.add(e.id), t = true), !d(e) && s.has(e.id) && (s.delete(e.id), t = true), !d(e) && l.has(e.id) && (l.delete(e.id), t = true), t
 }
 
-function _(e) {
+function p(e) {
   var t;
   null != e && (u = null != (t = (0, r.Zz)(e)) ? t : (0, r.K4)())
 }
 
-function p(e) {
-  "CONNECTION_OPEN" === e.type && _(e.countryCode), s.clear(), l.clear(), Object.values(i.Z.getMutablePrivateChannels()).forEach(e => {
+function _(e) {
+  "CONNECTION_OPEN" === e.type && p(e.countryCode), s.clear(), l.clear(), Object.values(i.Z.getMutablePrivateChannels()).forEach(e => {
     f(e)
   }), c = true
 }
 
-function h(e) {
+function m(e) {
   let {
     channelId: t
   } = e;
   l.add(t)
 }
 
-function m(e) {
+function h(e) {
   let {
     channel: t
   } = e;
@@ -80,7 +80,7 @@ function y(e) {
   let {
     countryCode: t
   } = e;
-  _(t)
+  p(t)
 }
 class O extends Chunk750041.Z {
   initialize() {
@@ -116,15 +116,15 @@ class O extends Chunk750041.Z {
   }
   constructor() {
     super({
-      CONNECTION_OPEN: p,
-      CONNECTION_OPEN_SUPPLEMENTAL: p,
+      CONNECTION_OPEN: _,
+      CONNECTION_OPEN_SUPPLEMENTAL: _,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       OVERLAY_INITIALIZE: b,
-      CHANNEL_CREATE: m,
+      CHANNEL_CREATE: h,
       CHANNEL_UPDATES: g,
       CHANNEL_DELETE: E,
       SET_LOCATION_METADATA: y,
-      MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: h
+      MESSAGE_REQUEST_ACCEPT_OPTIMISTIC: m
     })
   }
 }

@@ -2,7 +2,7 @@
 /** chunk id: 944386, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  u: () => p
+  u: () => _
 });
 var Chunk473749 = require("./473749.js"),
   Chunk493773 = require("./493773.js"),
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,24 +35,24 @@ function _(e) {
   }
   return e
 }
-let p = e => {
+let _ = e => {
   let {
     emojiId: t,
     currentGuildId: n,
     popoutData: f,
-    nonce: p,
-    demoMode: h
+    nonce: _,
+    demoMode: m
   } = e, {
-    current: m
-  } = r.useRef(_({
+    current: h
+  } = r.useRef(p({
     guild_id: n,
     emoji_id: t
   }, (0, a.v_)(o.Z.getChannel(s.Z.getChannelId(n)))));
   return (0, i.ZP)(() => {
     var e;
-    (0, c.x)(u.qR.TrackOpenPopoutUsed), h || l.default.track(d.rMx.OPEN_POPOUT, _({
+    (0, c.x)(u.qR.TrackOpenPopoutUsed), m || l.default.track(d.rMx.OPEN_POPOUT, p({
       type: null != (e = null == f ? true : f.analyticsType) ? e : "Standard Emoji Popout",
-      nonce: p
-    }, m))
-  }), m
+      nonce: _
+    }, h))
+  }), h
 }

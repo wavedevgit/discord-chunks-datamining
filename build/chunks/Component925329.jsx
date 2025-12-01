@@ -51,14 +51,14 @@ function E(e) {
 function b(e) {
   if (null == e) return null;
   switch (e) {
-    case p.Si.GUILD:
+    case _.Si.GUILD:
       return n(632342);
-    case p.Si.TIER_0:
+    case _.Si.TIER_0:
       return n(467596);
-    case p.Si.TIER_1:
+    case _.Si.TIER_1:
       return n(670957);
-    case p.Si.TIER_2:
-    case p.Si.LEGACY:
+    case _.Si.TIER_2:
+    case _.Si.LEGACY:
       return n(480768);
     default:
       return null
@@ -81,79 +81,79 @@ function y(e) {
 let O = Chunk473749.forwardRef(function(e, t) {
   let n, {
       game: a,
-      guild: p,
+      guild: _,
       skuId: O,
       pid: v,
-      className: I,
-      guildClassName: T,
-      size: S = g.MEDIUM,
+      className: S,
+      guildClassName: I,
+      size: T = g.MEDIUM,
       allowUnknownGameIcon: A = true
     } = e,
     [C, N] = i.useState(null),
-    [R, P] = i.useState(false),
-    D = i.useCallback(e => {
-      P(e)
+    [P, R] = i.useState(false),
+    w = i.useCallback(e => {
+      R(e)
     }, []),
-    w = i.useRef(null);
+    D = i.useRef(null);
   i.useEffect(() => {
-    null != w.current && R && (cancelIdleCallback(w.current), w.current = null)
-  }, [R]);
-  let L = (0, s.O)(D);
-  if (null != O && (n = b(O)), null != a && null == n && (a instanceof f.ZP ? n = a.getIconURL(E(S)) : null != a.icon && (n = _.ZP.getApplicationIconURL({
+    null != D.current && P && (cancelIdleCallback(D.current), D.current = null)
+  }, [P]);
+  let x = (0, s.O)(w);
+  if (null != O && (n = b(O)), null != a && null == n && (a instanceof f.ZP ? n = a.getIconURL(E(T)) : null != a.icon && (n = p.ZP.getApplicationIconURL({
       id: a.id,
       icon: a.icon
     }))), n = (0, c.Z)(v, n), i.useEffect(() => {
       if (null == n || "" === n) return;
-      if ((0, _.pU)(n) || (0, d.Vv)(n)) {
+      if ((0, p.pU)(n) || (0, d.Vv)(n)) {
         console.log("JANK loaded src ".concat(n, " as data URI or isImageLoaded")), N(n);
         return
       }
       let e = () => (0, d.po)(n, (e, t) => {
         N(n)
       });
-      if (R) return e();
+      if (P) return e();
       let t = requestIdleCallback(() => {
-        w.current = null, e()
+        D.current = null, e()
       });
-      return w.current = t, () => {
-        null != w.current && (cancelIdleCallback(w.current), w.current = null)
+      return D.current = t, () => {
+        null != D.current && (cancelIdleCallback(D.current), D.current = null)
       }
-    }, [n, R]), true === n && null != p) {
-    let e = y(S);
+    }, [n, P]), true === n && null != _) {
+    let e = y(T);
     return (0, r.jsx)(u.Z, {
-      className: o()(m.gameIcon, T, I),
-      guild: p,
+      className: o()(h.gameIcon, I, S),
+      guild: _,
       size: e
     })
   }
   if (null == n || "" === n) return A ? (0, r.jsx)(l.IMN, {
     size: "md",
     color: "currentColor",
-    className: o()(m.gameIcon, S, I)
+    className: o()(h.gameIcon, T, S)
   }) : null;
-  let x = null == a ? true : a.name,
-    M = null != x && "" !== x ? h.intl.formatToPlainString(h.t.tiKyYg, {
-      applicationName: x
-    }) : h.intl.string(h.t["2B/phM"]),
-    k = (0, _.pU)(n),
-    j = (0, d.Vv)(n),
-    U = C === n || k || j;
+  let L = null == a ? true : a.name,
+    j = null != L && "" !== L ? m.intl.formatToPlainString(m.t.tiKyYg, {
+      applicationName: L
+    }) : m.intl.string(m.t["2B/phM"]),
+    M = (0, p.pU)(n),
+    k = (0, d.Vv)(n),
+    U = C === n || M || k;
   return (0, r.jsxs)(r.Fragment, {
     children: [U ? null : (0, r.jsx)("div", {
-      className: o()(m.gameIconLoading, S, I)
+      className: o()(h.gameIconLoading, T, S)
     }), (0, r.jsx)("img", {
       ref: t,
-      alt: M,
+      alt: j,
       src: n,
-      className: o()(m.gameIcon, S, I),
+      className: o()(h.gameIcon, T, S),
       style: U ? true : {
         display: "none"
       }
     }), (0, r.jsx)("div", {
-      className: m.intersectionContainer,
+      className: h.intersectionContainer,
       children: (0, r.jsx)("div", {
-        ref: L,
-        className: m.intersectionRef
+        ref: x,
+        className: h.intersectionRef
       })
     })]
   })

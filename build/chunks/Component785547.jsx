@@ -2,7 +2,7 @@
 /** chunk id: 785547, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -38,7 +38,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function R(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,15 +62,15 @@ function P(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var w = function(e) {
+var D = function(e) {
   return e.PLAY = "play", e.NOW_PLAYING = "now_playing", e.INSTALL = "install", e.UPDATE = "update", e.PAUSED = "paused", e.LOCATE = "locate", e.UNINSTALLING = "uninstalling", e.QUEUED = "queued", e.DOWNLOADING = "downloading", e.UNSUPPORTED_OS = "unsupported_os", e.ADD_TO_LIBRARY = "add_to_library", e.PREORDER_WAIT = "preorder_wait", e
-}(w || {});
-let L = Object.freeze({
+}(D || {});
+let x = Object.freeze({
     [Chunk981631.apO.PLAY]: "play",
     [Chunk981631.apO.INSTALL]: "install",
     [Chunk981631.apO.UPDATE]: "update",
@@ -78,17 +78,17 @@ let L = Object.freeze({
     [Chunk981631.apO.MOVE_UP]: "queued",
     [Chunk981631.apO.RESUME]: "paused"
   }),
-  x = () => [Chunk388032.intl.string(Chunk388032.t.r9wmKn), Chunk388032.intl.string(Chunk388032.t["6CpimS"]), Chunk388032.intl.string(Chunk388032.t.ysbNDc), Chunk388032.intl.string(Chunk388032.t["TLnXx/"]), Chunk388032.intl.string(Chunk388032.t.Qi8mne), Chunk388032.intl.string(Chunk388032.t.yvMu3S), Chunk388032.intl.string(Chunk388032.t["PnNUZ/"]), Chunk388032.intl.string(Chunk388032.t.hU2TEJ), Chunk388032.intl.string(Chunk388032.t["YyY51/"]), Chunk388032.intl.string(Chunk388032.t.PbHJb3)];
+  L = () => [Chunk388032.intl.string(Chunk388032.t.r9wmKn), Chunk388032.intl.string(Chunk388032.t["6CpimS"]), Chunk388032.intl.string(Chunk388032.t.ysbNDc), Chunk388032.intl.string(Chunk388032.t["TLnXx/"]), Chunk388032.intl.string(Chunk388032.t.Qi8mne), Chunk388032.intl.string(Chunk388032.t.yvMu3S), Chunk388032.intl.string(Chunk388032.t["PnNUZ/"]), Chunk388032.intl.string(Chunk388032.t.hU2TEJ), Chunk388032.intl.string(Chunk388032.t["YyY51/"]), Chunk388032.intl.string(Chunk388032.t.PbHJb3)];
 
-function M(e) {
+function j(e) {
   let t = v.en(e.sku);
   return null != t ? A.intl.formatToPlainString(A.t.Aqe2ZC, {
     date: t
   }) : null
 }
-class k extends(r = Chunk473749.Component) {
+class M extends(r = Chunk473749.Component) {
   get analyticsLocation() {
-    return D(R({}, this.props.analyticsContext.location), {
+    return w(P({}, this.props.analyticsContext.location), {
       object: Chunk981631.qAy.BUTTON_CTA
     })
   }
@@ -104,7 +104,7 @@ class k extends(r = Chunk473749.Component) {
       case "locate":
         return A.intl.string(A.t["nIj+a0"]);
       case "uninstalling":
-        let t = x();
+        let t = L();
         return null == this._uninstallStringIndex && (this._uninstallStringIndex = Math.floor(Math.random() * t.length)), t[this._uninstallStringIndex];
       case "queued":
         return A.intl.string(A.t.TiJg5l);
@@ -126,7 +126,7 @@ class k extends(r = Chunk473749.Component) {
     } = this.props;
     if (module.isHidden()) return "add_to_library";
     if (module.isPreorder()) return "preorder_wait";
-    let r = null != require ? L[require] : null;
+    let r = null != require ? x[require] : null;
     return null != r ? r : null != exports && exports.type === Chunk981631.vxO.UNINSTALLING ? "uninstalling" : (0, Chunk358085.isWeb)() ? "play" : "unsupported_os"
   }
   renderPlayButton() {
@@ -223,7 +223,7 @@ class k extends(r = Chunk473749.Component) {
       libraryApplication: t
     } = this.props, n = this.getButtonState();
     if ("play" === require) return this.renderPlayButton();
-    if ("preorder_wait" === require) return this.renderDisabledButton(require, M(exports));
+    if ("preorder_wait" === require) return this.renderDisabledButton(require, j(exports));
     if ("unsupported_os" === require) return this.renderDisabledButton(require, Chunk388032.intl.formatToPlainString(Chunk388032.t.LBm0A4, {
       operatingSystem: Chunk388032.intl.string(Chunk388032.t["0/xHFO"])
     }));
@@ -237,21 +237,21 @@ class k extends(r = Chunk473749.Component) {
         let {
           libraryApplication: e
         } = this.props;
-        await d.h(e.id, e.branchId, e.getFlags() & ~S.eHb.HIDDEN), (0, p.uL)(S.Z5c.APPLICATION_LIBRARY)
+        await d.h(e.id, e.branchId, e.getFlags() & ~T.eHb.HIDDEN), (0, _.uL)(T.Z5c.APPLICATION_LIBRARY)
       } catch (e) {
-        new _.Z("LibraryApplicationButton").error(e)
+        new p.Z("LibraryApplicationButton").error(e)
       }
     }), N(this, "handleInstall", () => {
       let {
         libraryApplication: e,
         source: t
       } = this.props;
-      I.installApplication(e.id, e.branchId, t)
+      S.installApplication(e.id, e.branchId, t)
     }), N(this, "handleUpdate", () => {
       let {
         libraryApplication: e
       } = this.props;
-      I.updateApplication(e.id, e.branchId)
+      S.updateApplication(e.id, e.branchId)
     }), N(this, "onClickHandlers", {
       add_to_library: this.handleAddToLibrary,
       install: this.handleInstall,
@@ -265,11 +265,11 @@ class k extends(r = Chunk473749.Component) {
   }
 }
 
-function j(e) {
+function k(e) {
   let {
     libraryApplication: t
-  } = e, n = (0, f.O)(), [r, a] = (0, o.Wu)([E.Z, b.Z], () => [(0, m.i)(t, E.Z, b.Z), E.Z.getState(t.id, t.branchId)], [t]), s = (0, o.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), l = (0, o.e7)([h.Z], () => h.Z.hasNoBuild(t.id, t.branchId), [t]);
-  return (0, i.jsx)(k, D(R({}, e), {
+  } = e, n = (0, f.O)(), [r, a] = (0, o.Wu)([E.Z, b.Z], () => [(0, h.i)(t, E.Z, b.Z), E.Z.getState(t.id, t.branchId)], [t]), s = (0, o.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), l = (0, o.e7)([m.Z], () => m.Z.hasNoBuild(t.id, t.branchId), [t]);
+  return (0, i.jsx)(M, w(P({}, e), {
     analyticsContext: n,
     actionState: r,
     dispatchState: a,
@@ -277,10 +277,10 @@ function j(e) {
     hasNoBuild: l
   }))
 }
-N(k, "defaultProps", {
+N(M, "defaultProps", {
   fullWidth: false,
   size: Chunk755721.zx.Sizes.LARGE,
   hideProgress: false,
   isPlayShiny: false,
   tooltipPosition: "top"
-}), N(k, "ButtonStates", w)
+}), N(M, "ButtonStates", D)

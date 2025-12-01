@@ -2,7 +2,7 @@
 /** chunk id: 955415, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => R
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -63,20 +63,20 @@ let y = e => {
       channel: a,
       onClick: u,
       expired: d = false,
-      user: p,
-      className: m
-    } = e, E = null != (t = (0, c.ZP)(a)) ? t : "", y = h.QK.useSetting();
+      user: _,
+      className: h
+    } = e, E = null != (t = (0, c.ZP)(a)) ? t : "", y = m.QK.useSetting();
     if (d) return (0, r.jsx)("div", {
       className: b.guildIconExpired
     });
     let O = null == i || null != i.icon,
-      v = o()((0, g.l)(b, "guildIcon", O ? "Image" : "", null != u ? "Joined" : ""), m);
+      v = o()((0, g.l)(b, "guildIcon", O ? "Image" : "", null != u ? "Joined" : ""), h);
     return null != n ? (0, r.jsx)(f.Z, {
       game: n,
       onClick: u,
       size: b.applicationIcon,
       className: v
-    }) : null != i ? (0, r.jsx)(_.Z, {
+    }) : null != i ? (0, r.jsx)(p.Z, {
       onClick: u,
       active: true,
       guild: i,
@@ -88,15 +88,15 @@ let y = e => {
       size: s.EFr.SIZE_56,
       className: v,
       "aria-label": E
-    }) : null != p ? (0, r.jsx)(s.qEK, {
+    }) : null != _ ? (0, r.jsx)(s.qEK, {
       onClick: u,
-      src: p.getAvatarURL(null, 56),
+      src: _.getAvatarURL(null, 56),
       size: s.EFr.SIZE_56,
       className: v,
       "aria-label": E
     }) : null
   },
-  I = e => {
+  S = e => {
     let {
       title: t,
       onClick: n,
@@ -122,7 +122,7 @@ let y = e => {
       })]
     })
   },
-  T = e => {
+  I = e => {
     let {
       membersOnline: t,
       members: n
@@ -152,7 +152,7 @@ let y = e => {
       children: i
     })
   },
-  S = e => {
+  T = e => {
     let {
       channel: t,
       guild: n
@@ -186,10 +186,10 @@ let y = e => {
   C = e => {
     let {
       guild: t
-    } = e, [n, a] = i.useState(false), s = m.ZP.getGuildSplashURL({
+    } = e, [n, a] = i.useState(false), s = h.ZP.getGuildSplashURL({
       id: t.id,
       splash: t.splash,
-      size: 400 * (0, p.x_)()
+      size: 400 * (0, _.x_)()
     });
     return null == s ? null : (0, r.jsx)("div", {
       className: b.inviteSplash,
@@ -217,7 +217,7 @@ let y = e => {
       })
     })
   },
-  R = e => {
+  P = e => {
     let {
       guildTemplate: t
     } = e;
@@ -229,5 +229,5 @@ let y = e => {
       })
     })
   };
-A.Header = y, A.Body = O, A.Icon = v, A.Info = I, A.Data = T, A.Channel = S, A.GuildSplash = C, A.GuildName = N, A.GuildTemplateName = R, y.displayName = "InviteButton.Header", O.displayName = "InviteButton.Body", v.displayName = "InviteButton.Icon", I.displayName = "InviteButton.Info", T.displayName = "InviteButton.Data", S.displayName = "InviteButton.Channel", C.displayName = "InviteButton.GuildSplash", N.displayName = "InviteButton.GuildName", R.displayName = "InviteButton.GuildTemplateName";
-let P = A
+A.Header = y, A.Body = O, A.Icon = v, A.Info = S, A.Data = I, A.Channel = T, A.GuildSplash = C, A.GuildName = N, A.GuildTemplateName = P, y.displayName = "InviteButton.Header", O.displayName = "InviteButton.Body", v.displayName = "InviteButton.Icon", S.displayName = "InviteButton.Info", I.displayName = "InviteButton.Data", T.displayName = "InviteButton.Channel", C.displayName = "InviteButton.GuildSplash", N.displayName = "InviteButton.GuildName", P.displayName = "InviteButton.GuildTemplateName";
+let R = A

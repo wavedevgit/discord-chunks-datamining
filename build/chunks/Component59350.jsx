@@ -8,6 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk45114 = require("./45114.js"),
@@ -16,7 +17,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk410030 = require("./410030.js"),
   Chunk1585 = require("./1585.jsx"),
   Chunk125988 = require("./125988.js"),
-  Chunk44315 = require("./44315.js"),
   Chunk160404 = require("./160404.js"),
   Chunk240991 = require("./240991.js"),
   Chunk402235 = require("./402235.js"),
@@ -79,34 +79,34 @@ function ee(e) {
     guild: i,
     user: s
   } = e, {
-    avatarSrc: d,
+    avatarSrc: c,
     eventHandlers: u,
-    isAvatarAnimating: h
+    isAvatarAnimating: p
   } = (0, v.Z)({
     user: s,
     guildId: i.id,
     size: 120
   }), {
-    avatarDecorationSrc: g
-  } = (0, f.Z)({
+    avatarDecorationSrc: m
+  } = (0, g.Z)({
     user: s,
-    size: (0, m.y9)(J),
-    onlyAnimateOnHoverOrFocus: !h
-  }), _ = (0, o.e7)([y.ZP], () => y.ZP.getSelfMember(i.id)), b = (0, o.Wu)([y.ZP], () => y.ZP.getMemberRoleWithPendingUpdates(i.id, s.id)), I = (0, o.e7)([N.Z], () => N.Z.getSortedRoles(i.id)), w = (0, C.ZP)(i.id, s.id), Z = I.filter(e => b.includes(e.id)), P = (0, j.ZP)(s.id, i.id);
-  (0, p.ZP)(() => {
-    (0, O.Z)(s.id, s.getAvatarURL(i.id, (0, c.pxk)(J)), {
+    size: (0, f.y9)(J),
+    onlyAnimateOnHoverOrFocus: !p
+  }), _ = (0, o.e7)([y.ZP], () => y.ZP.getSelfMember(i.id)), b = (0, o.Wu)([y.ZP], () => y.ZP.getMemberRoleWithPendingUpdates(i.id, s.id)), w = (0, o.e7)([N.Z], () => N.Z.getSortedRoles(i.id)), Z = (0, C.ZP)(i.id, s.id), I = w.filter(e => b.includes(e.id)), P = (0, j.ZP)(s.id, i.id);
+  (0, h.ZP)(() => {
+    (0, O.Z)(s.id, s.getAvatarURL(i.id, (0, d.pxk)(J)), {
       guildId: i.id
     })
   });
   let T = (0, x.parseBioReact)(null == P ? true : P.bio),
-    B = E.ZP.getEnableHardwareAcceleration() ? c.Xo$ : c.qEK;
+    B = E.ZP.getEnableHardwareAcceleration() ? d.Xo$ : d.qEK;
   return (0, r.jsxs)("div", {
     className: X.profile,
-    children: [(0, r.jsx)(c.Heading, {
+    children: [(0, r.jsx)(d.Heading, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: V.intl.string(V.t.diTbF8)
-    }), (0, r.jsx)(c.Text, {
+    }), (0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       children: V.intl.string(V.t["+8um3M"])
@@ -114,8 +114,8 @@ function ee(e) {
       className: X.profileCard,
       children: [(0, r.jsx)("div", (t = K({}, u), l = l = {
         children: (0, r.jsx)(B, {
-          src: d,
-          avatarDecoration: g,
+          src: c,
+          avatarDecoration: m,
           size: J,
           "aria-label": s.username
         })
@@ -128,35 +128,35 @@ function ee(e) {
         return t
       })(Object(l)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
-      }), t)), (0, r.jsx)(c.Text, {
+      }), t)), (0, r.jsx)(d.Text, {
         variant: "text-lg/medium",
         color: "header-primary",
         className: X.username,
         children: null != (n = null == _ ? true : _.nick) ? n : S.ZP.getName(s)
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         className: a()(Y.markup, X.bio),
         children: T
-      }), null != Z && Z.length > 0 && (0, r.jsxs)(r.Fragment, {
+      }), null != I && I.length > 0 && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("hr", {
           className: X.separator
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(d.Text, {
           variant: "text-xs/semibold",
           color: "text-muted",
           className: X.title,
           children: V.intl.string(V.t["LPJmL/"])
         }), (0, r.jsx)("div", {
           className: X.roles,
-          children: null == Z ? true : Z.map(e => {
+          children: null == I ? true : I.map(e => {
             var n;
             return (0, r.jsxs)("div", {
               className: X.role,
-              children: [(0, r.jsx)(c.xko, {
+              children: [(0, r.jsx)(d.xko, {
                 color: null != (n = e.colorString) ? n : F.Pbq,
-                colors: w ? e.colorStrings : null,
+                colors: Z ? e.colorStrings : null,
                 className: X.roleDot
-              }), (0, r.jsx)(c.Text, {
+              }), (0, r.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "header-primary",
                 children: e.name
@@ -174,38 +174,38 @@ function en(e) {
   let {
     prompt: t,
     guild: i
-  } = e, [s, d] = l.useState(null), [u, p] = l.useState(new Set), h = null == t || null == (n = t.options) ? true : n.filter(e => u.has(e.id)), m = (0, k.L6)(h), f = (0, k.dX)(h), _ = (0, o.Wu)([D.Z], () => D.Z.getOnboardingResponsesForPrompt(i.id, t.id)), {
+  } = e, [c, u] = l.useState(null), [p, h] = l.useState(new Set), m = null == t || null == (n = t.options) ? true : n.filter(e => p.has(e.id)), f = (0, A.L6)(m), g = (0, A.dX)(m), _ = (0, o.Wu)([D.Z], () => D.Z.getOnboardingResponsesForPrompt(i.id, t.id)), {
     helpText: x,
     helpTextAdditional: C
-  } = (0, R.p)({
+  } = (0, k.p)({
     guild: i,
     prompt: t,
-    selectedRoleIds: m,
-    selectedChannelIds: f,
-    itemHook: (e, n) => (0, r.jsx)(c.Text, {
+    selectedRoleIds: f,
+    selectedChannelIds: g,
+    itemHook: (e, n) => (0, r.jsx)(d.Text, {
       variant: "text-xs/medium",
       color: "header-primary",
       children: e
     }, n)
   }), {
     handleSelectOption: b
-  } = (0, A.Z)(i.id), j = t.options.map(e => K({
+  } = (0, R.Z)(i.id), j = t.options.map(e => K({
     value: e.id
   }, e)), v = t.options.filter(e => _.includes(e.id)).map(e => e.id);
   return (0, r.jsxs)("div", {
     className: X.prompt,
     "data-new": t.isNew,
-    children: [t.isNew && (0, r.jsx)(c.IGR, {
-      color: (0, g.Lq)(F.Ilk.BRAND_260),
+    children: [t.isNew && (0, r.jsx)(d.IGR, {
+      color: s.Z.unsafe_rawColors.BRAND_260.css,
       text: V.intl.string(V.t.y2b7CA),
       className: X.newBadge
-    }), (0, r.jsxs)(c.Heading, {
+    }), (0, r.jsxs)(d.Heading, {
       className: X.promptTitle,
       variant: "heading-md/semibold",
       color: "header-primary",
       children: [t.title, t.required ? (0, r.jsx)("span", {
         className: a()(X.required, {
-          [X.error]: (null == s ? true : s.type) === $
+          [X.error]: (null == c ? true : c.type) === $
         }),
         children: "*"
       }) : null]
@@ -215,21 +215,21 @@ function en(e) {
       onChange: e => {
         let n = e.find(e => !_.includes(e.id)),
           r = e.map(e => e.id);
-        if (null != n) b(t, n, true), t.singleSelect && t.options.forEach(e => u.delete(e.id)), u.add(n.id);
+        if (null != n) b(t, n, true), t.singleSelect && t.options.forEach(e => p.delete(e.id)), p.add(n.id);
         else {
           let e = _.filter(e => !r.includes(e)),
             n = t.options.filter(n => e.includes(n.id));
-          if (_.length <= n.length && t.required) return void d({
+          if (_.length <= n.length && t.required) return void u({
             type: $
           });
           n.forEach(e => {
-            b(t, e, false), u.delete(e.id)
+            b(t, e, false), p.delete(e.id)
           })
         }
-        p(new Set(u)), d(null)
+        h(new Set(p)), u(null)
       },
       canBeNew: !t.isNew
-    }), (0, r.jsxs)(c.Text, {
+    }), (0, r.jsxs)(d.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: X.helpText,
@@ -244,11 +244,11 @@ function et(e) {
   } = e, t = (0, o.e7)([D.Z], () => D.Z.getConnections(n.id));
   return 0 === t.length ? null : (0, r.jsxs)("div", {
     className: X.prompt,
-    children: [(0, r.jsx)(c.Heading, {
+    children: [(0, r.jsx)(d.Heading, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: V.intl.string(V.t.eDVMrA)
-    }), (0, r.jsx)(c.Text, {
+    }), (0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       children: V.intl.string(V.t.BozOXu)
@@ -268,36 +268,36 @@ function er(e) {
   let {
     prompt: t,
     guild: i
-  } = e, [s, d] = l.useState(null), [u, p] = l.useState(new Set), h = null == t || null == (n = t.options) ? true : n.filter(e => u.has(e.id)), m = (0, k.L6)(h), f = (0, k.dX)(h), _ = (0, o.Wu)([D.Z], () => D.Z.getOnboardingResponsesForPrompt(i.id, t.id)), {
+  } = e, [c, u] = l.useState(null), [p, h] = l.useState(new Set), m = null == t || null == (n = t.options) ? true : n.filter(e => p.has(e.id)), f = (0, A.L6)(m), g = (0, A.dX)(m), _ = (0, o.Wu)([D.Z], () => D.Z.getOnboardingResponsesForPrompt(i.id, t.id)), {
     helpText: x,
     helpTextAdditional: C
-  } = (0, R.p)({
+  } = (0, k.p)({
     guild: i,
     prompt: t,
-    selectedRoleIds: m,
-    selectedChannelIds: f,
-    itemHook: (e, n) => (0, r.jsx)(c.Text, {
+    selectedRoleIds: f,
+    selectedChannelIds: g,
+    itemHook: (e, n) => (0, r.jsx)(d.Text, {
       variant: "text-xs/medium",
       color: "header-primary",
       children: e
     }, n)
   }), {
     handleSelectOption: b
-  } = (0, A.Z)(i.id);
+  } = (0, R.Z)(i.id);
   return (0, r.jsxs)("div", {
     className: X.prompt,
     "data-new": t.isNew,
-    children: [t.isNew && (0, r.jsx)(c.IGR, {
-      color: (0, g.Lq)(F.Ilk.BRAND_260),
+    children: [t.isNew && (0, r.jsx)(d.IGR, {
+      color: s.Z.unsafe_rawColors.BRAND_260.css,
       text: V.intl.string(V.t.y2b7CA),
       className: X.newBadge
-    }), (0, r.jsxs)(c.Heading, {
+    }), (0, r.jsxs)(d.Heading, {
       className: X.promptTitle,
       variant: "heading-md/semibold",
       color: "header-primary",
       children: [t.title, t.required ? (0, r.jsx)("span", {
         className: a()(X.required, {
-          [X.error]: (null == s ? true : s.type) === $
+          [X.error]: (null == c ? true : c.type) === $
         }),
         children: "*"
       }) : null]
@@ -308,15 +308,15 @@ function er(e) {
         guildId: i.id,
         option: e,
         onSelect: n => ((e, n) => {
-          if (!n && 1 === _.length && t.required) return void d({
+          if (!n && 1 === _.length && t.required) return void u({
             type: $
           });
-          b(t, e, null != n && n), t.singleSelect && n && t.options.forEach(e => u.delete(e.id)), n ? u.add(e.id) : u.delete(e.id), p(new Set(u)), d(null)
+          b(t, e, null != n && n), t.singleSelect && n && t.options.forEach(e => p.delete(e.id)), n ? p.add(e.id) : p.delete(e.id), h(new Set(p)), u(null)
         })(e, n),
         selected: _.includes(e.id),
         canBeNew: !t.isNew
       }, e.id))
-    }), (0, r.jsxs)(c.Text, {
+    }), (0, r.jsxs)(d.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: X.helpText,
@@ -329,9 +329,9 @@ function el(e) {
   let {
     guildId: n,
     onBrowseChannels: t
-  } = e, i = (0, s.wj)((0, h.ZP)()), p = (0, o.e7)([I.Z], () => I.Z.getGuild(n)), m = (0, o.e7)([Z.default], () => Z.default.getCurrentUser()), f = (0, u.Z)("(min-width: 1344px)") && null != m, x = l.useCallback(() => {
+  } = e, i = (0, c.wj)((0, m.ZP)()), h = (0, o.e7)([w.Z], () => w.Z.getGuild(n)), f = (0, o.e7)([I.default], () => I.default.getCurrentUser()), g = (0, p.Z)("(min-width: 1344px)") && null != f, x = l.useCallback(() => {
     (0, b.uL)(F.Z5c.CHANNEL(n, q.oC.CHANNEL_BROWSER)), null == t || t()
-  }, [n, t]), C = (0, o.e7)([w.ZP], () => w.ZP.hasUnread(n, z.W.GUILD_ONBOARDING_QUESTION)), {
+  }, [n, t]), C = (0, o.e7)([Z.ZP], () => Z.ZP.hasUnread(n, z.W.GUILD_ONBOARDING_QUESTION)), {
     onboardingPromptsRaw: j,
     newOnboardingPrompts: v,
     onboardingPromptsWithNewAnswers: O,
@@ -339,33 +339,33 @@ function el(e) {
     onboardingPrompts: N
   } = (0, L.Z)(n);
   l.useEffect(() => {
-    (null == p ? true : p.id) != null && !_.Z.isFullServerPreview(p.id) && (D.Z.shouldFetchPrompts(p.id) || C) && (0, B.eM)(p.id)
-  }, [null == p ? true : p.id, C]), l.useEffect(() => {
-    if ((null == p ? true : p.id) != null && !_.Z.isFullServerPreview(p.id)) return () => {
-      (0, d.Ju)(p.id, z.W.GUILD_ONBOARDING_QUESTION, D.Z.ackIdForGuild(p.id)), T.Z.updateOnboardingResponses(p.id)
+    (null == h ? true : h.id) != null && !_.Z.isFullServerPreview(h.id) && (D.Z.shouldFetchPrompts(h.id) || C) && (0, B.eM)(h.id)
+  }, [null == h ? true : h.id, C]), l.useEffect(() => {
+    if ((null == h ? true : h.id) != null && !_.Z.isFullServerPreview(h.id)) return () => {
+      (0, u.Ju)(h.id, z.W.GUILD_ONBOARDING_QUESTION, D.Z.ackIdForGuild(h.id)), T.Z.updateOnboardingResponses(h.id)
     }
-  }, [null == p ? true : p.id]);
+  }, [null == h ? true : h.id]);
   let S = l.useCallback(e => {
-    if (null == p) return null;
+    if (null == h) return null;
     switch (e.type) {
       case W.FN.MULTIPLE_CHOICE:
         return (0, r.jsx)(er, {
           prompt: e,
-          guild: p
+          guild: h
         }, e.id);
       case W.FN.DROPDOWN:
         return (0, r.jsx)(en, {
           prompt: e,
-          guild: p
+          guild: h
         }, e.id);
       default:
         (0, P.vE)(e.type)
     }
-  }, [p]);
-  if (null == p) return null;
+  }, [h]);
+  if (null == h) return null;
   if (0 === j.length) {
-    let e = (0, g.Lq)(i ? F.Ilk.PRIMARY_300 : F.Ilk.PRIMARY_500),
-      n = (0, g.Lq)(i ? F.Ilk.PRIMARY_700 : F.Ilk.PRIMARY_230);
+    let e = i ? s.Z.unsafe_rawColors.PRIMARY_300.css : s.Z.unsafe_rawColors.PRIMARY_500.css,
+      n = i ? s.Z.unsafe_rawColors.PRIMARY_700.css : s.Z.unsafe_rawColors.PRIMARY_230.css;
     return (0, r.jsx)("div", {
       className: a()(Q.content, X.emptyPage),
       children: (0, r.jsxs)("div", {
@@ -374,11 +374,11 @@ function el(e) {
           className: X.emptyIcon,
           foregroundColor: e,
           backgroundColor: n
-        }), (0, r.jsx)(c.Heading, {
+        }), (0, r.jsx)(d.Heading, {
           className: X.emptyHeader,
           variant: "heading-md/semibold",
           children: V.intl.string(V.t.leKHQz)
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           children: V.intl.format(V.t["jH+ktB"], {
             onBrowseChannels: x
@@ -387,14 +387,14 @@ function el(e) {
       })
     })
   }
-  return (0, r.jsxs)(c.Den, {
+  return (0, r.jsxs)(d.Den, {
     className: X.scroller,
     fade: true,
     children: [(0, r.jsxs)("div", {
       className: X.pageBody,
       children: [(v.length > 0 || O.length > 0) && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          children: (0, r.jsx)(c.Heading, {
+          children: (0, r.jsx)(d.Heading, {
             variant: "heading-md/semibold",
             color: "header-primary",
             children: V.intl.format(V.t.iB5Gqe, {
@@ -406,24 +406,24 @@ function el(e) {
         })]
       }), N.length > 0 && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsx)(c.Heading, {
+          children: [(0, r.jsx)(d.Heading, {
             variant: "heading-md/semibold",
             color: "header-primary",
             children: V.intl.format(V.t["8IV8K9"], {
               count: N.length
             })
-          }), (0, r.jsx)(c.Text, {
+          }), (0, r.jsx)(d.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             children: V.intl.string(V.t.Ecz7T9)
           })]
         }), N.map(S)]
       }), (0, r.jsx)(et, {
-        guild: p
+        guild: h
       })]
-    }), f && (0, r.jsx)(ee, {
-      guild: p,
-      user: m
+    }), g && (0, r.jsx)(ee, {
+      guild: h,
+      user: f
     })]
   })
 }

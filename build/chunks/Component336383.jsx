@@ -2,7 +2,7 @@
 /** chunk id: 336383, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -75,7 +75,7 @@ function v(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let I = Chunk473749.forwardRef(function(e, t) {
+let S = Chunk473749.forwardRef(function(e, t) {
   var {
     children: n,
     className: i,
@@ -83,29 +83,29 @@ let I = Chunk473749.forwardRef(function(e, t) {
     onAction: g,
     onClose: b,
     "aria-label": v,
-    "aria-labelledby": I
-  } = e, T = O(e, ["children", "className", "subsection", "onAction", "onClose", "aria-label", "aria-labelledby"]);
+    "aria-labelledby": S
+  } = e, I = O(e, ["children", "className", "subsection", "onAction", "onClose", "aria-label", "aria-labelledby"]);
   let {
-    themeType: S
+    themeType: T
   } = (0, f.z)(), {
     analyticsLocations: A
   } = (0, l.ZP)(), {
     context: C
   } = (0, c.KZ)();
-  return S === p.l.MODAL || S === p.l.MODAL_V2 || (null == C ? true : C.userId) == null ? (0, r.jsx)("article", {
+  return T === _.l.MODAL || T === _.l.MODAL_V2 || (null == C ? true : C.userId) == null ? (0, r.jsx)("article", {
     "aria-label": v,
-    "aria-labelledby": I,
+    "aria-labelledby": S,
     children: (0, r.jsx)(d.Z.Overlay, y(E({
       ref: t,
-      className: o()(m.card, i)
-    }, T), {
+      className: o()(h.card, i)
+    }, I), {
       children: n
     }))
   }) : (0, r.jsx)("article", {
-    "aria-labelledby": I,
+    "aria-labelledby": S,
     children: (0, r.jsx)(s.kL8, {
-      className: m.clickableContainer,
-      "aria-label": h.intl.string(h.t.pD1L1u),
+      className: h.clickableContainer,
+      "aria-label": m.intl.string(m.t.pD1L1u),
       focusProps: {
         ringTarget: t
       },
@@ -113,15 +113,15 @@ let I = Chunk473749.forwardRef(function(e, t) {
         null == g || g({
           action: "PRESS_CARD"
         }), (0, u.openUserProfileModal)(E({
-          section: _.oh.ACTIVITY,
+          section: p.oh.ACTIVITY,
           sourceAnalyticsLocations: A,
           subsection: a
         }, C)), null == b || b()
       },
       children: (0, r.jsx)(d.Z.Overlay, y(E({
         ref: t,
-        className: o()(m.card, i)
-      }, T), {
+        className: o()(h.card, i)
+      }, I), {
         children: n
       }))
     })

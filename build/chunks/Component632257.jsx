@@ -2,13 +2,12 @@
 /** chunk id: 632257, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk674746 = require("./674746.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -22,33 +21,33 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk125321 = require("./125321.js");
-let y = e => {
+let b = e => {
     let {
       isAuthenticated: t,
       user: n
-    } = e, i = (0, h.I5)(n, g.PremiumTypes.TIER_2), s = (0, f.ZP)();
-    return (0, r.jsx)(u.Z, {
+    } = e, i = (0, _.I5)(n, h.PremiumTypes.TIER_2), o = (0, d.ZP)();
+    return (0, r.jsx)(c.Z, {
       section: m.jXE.NAVIGATION,
-      children: (0, r.jsx)(c.f6W, {
-        theme: s,
-        children: e => (0, r.jsxs)(_.Z, {
+      children: (0, r.jsx)(l.f6W, {
+        theme: o,
+        children: e => (0, r.jsxs)(f.Z, {
           isAuthenticated: t,
           className: a()(e, {
-            [b.headerBarV2LightBackground]: !i && !(0, l.wj)(s),
-            [b.headerBarV2DarkBackground]: !i && (0, l.wj)(s)
+            [E.headerBarV2LightBackground]: !i && !(0, s.wj)(o),
+            [E.headerBarV2DarkBackground]: !i && (0, s.wj)(o)
           }),
           role: "navigation",
-          children: [(0, r.jsx)(_.Z.Icon, {
-            icon: c.SrA,
+          children: [(0, r.jsx)(f.Z.Icon, {
+            icon: l.SrA,
             "aria-hidden": true,
-            color: i ? true : o.Z.PREMIUM_TIER_2_PINK
-          }), (0, r.jsx)(_.Z.Title, {
-            children: E.intl.string(E.t.Ipxkog)
+            color: i ? true : l.TVs.unsafe_rawColors.PREMIUM_TIER_2_PINK.css
+          }), (0, r.jsx)(f.Z.Title, {
+            children: g.intl.string(g.t.Ipxkog)
           })]
         })
       })
     })
   },
-  O = Chunk442837.ZP.connectStores([Chunk594174.default], () => ({
+  y = Chunk442837.ZP.connectStores([Chunk594174.default], () => ({
     user: Chunk594174.default.getCurrentUser()
-  }))((0, Chunk666743.Z)(y))
+  }))((0, Chunk666743.Z)(b))

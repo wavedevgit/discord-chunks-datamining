@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,15 +46,15 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -147,14 +147,14 @@ let g = [{
         var {
           selectionMode: t,
           withLeadingAndTrailing: n
-        } = e, a = h(e, ["selectionMode", "withLeadingAndTrailing"]);
+        } = e, a = m(e, ["selectionMode", "withLeadingAndTrailing"]);
         let [o, s] = i.useState(null), [l, u] = i.useState([]), d = y(n, a.asyncOptions);
-        return "single" === t ? (0, r.jsx)(c.P, p(f({}, a), {
+        return "single" === t ? (0, r.jsx)(c.P, _(f({}, a), {
           selectionMode: t,
           options: d,
           onSelectionChange: s,
           value: o
-        })) : (0, r.jsx)(c.P, p(f({}, a), {
+        })) : (0, r.jsx)(c.P, _(f({}, a), {
           selectionMode: t,
           options: d,
           onSelectionChange: u,
@@ -283,18 +283,18 @@ let g = [{
           selectionMode: t,
           withLeadingAndTrailing: n,
           asyncOptions: a
-        } = e, o = h(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]);
-        let [s, c] = i.useState(null), [u, d] = i.useState([]), _ = y(n, a);
-        return "single" === t ? (0, r.jsx)(l.V, p(f({}, o), {
+        } = e, o = m(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]);
+        let [s, c] = i.useState(null), [u, d] = i.useState([]), p = y(n, a);
+        return "single" === t ? (0, r.jsx)(l.V, _(f({}, o), {
           selectionMode: t,
           onSelectionChange: c,
           value: s,
-          options: _
-        })) : (0, r.jsx)(l.V, p(f({}, o), {
+          options: p
+        })) : (0, r.jsx)(l.V, _(f({}, o), {
           selectionMode: t,
           onSelectionChange: d,
           value: u,
-          options: _
+          options: p
         }))
       },
       controls: {
@@ -404,23 +404,23 @@ let g = [{
           errorMessage: c,
           successMessage: u,
           wrapTags: d,
-          withLeadingAndTrailing: _,
-          placeholder: m
-        } = e, g = h(e, ["selectionMode", "label", "hideLabel", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "withLeadingAndTrailing", "placeholder"]);
+          withLeadingAndTrailing: p,
+          placeholder: h
+        } = e, g = m(e, ["selectionMode", "label", "hideLabel", "description", "helperText", "errorMessage", "successMessage", "wrapTags", "withLeadingAndTrailing", "placeholder"]);
         let {
           required: E,
           disabled: b
-        } = g, O = y(_, g.asyncOptions), [v, I] = i.useState(null);
-        return (0, r.jsxs)(s.uz, p(f({
+        } = g, O = y(p, g.asyncOptions), [v, S] = i.useState(null);
+        return (0, r.jsxs)(s.uz, _(f({
           selectionMode: t,
-          onSelectionChange: I,
+          onSelectionChange: S,
           options: O,
           value: v
         }, g), {
           children: [(0, r.jsx)(s.Ct, {
             label: n,
             hideLabel: a,
-            placeholder: m,
+            placeholder: h,
             required: E,
             disabled: b,
             description: o,

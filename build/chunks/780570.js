@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   CP: () => l,
-  Je: () => p,
+  Je: () => _,
   KJ: () => f,
   OT: () => c,
   Tu: () => s,
   d0: () => d,
-  lK: () => _,
+  lK: () => p,
   xI: () => u
 }), require("./388685.js"), require("./35282.js");
 var Chunk695346 = require("./695346.js"),
@@ -46,7 +46,7 @@ function f(e) {
   return null == e ? null : e.type === o.vxO.INSTALLING || e.type === o.vxO.UPDATING || e.type === o.vxO.UNINSTALLING ? e : null
 }
 
-function _(e) {
+function p(e) {
   return e.reduce((e, t) => {
     let n = f(t);
     return null == n || t.type === o.vxO.UP_TO_DATE ? e : {
@@ -59,6 +59,6 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   return !!e.isDiscordApplication() && e.isEntitled(i.default.getCurrentUser(), a.Z)
 }

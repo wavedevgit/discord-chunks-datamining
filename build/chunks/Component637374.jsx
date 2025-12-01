@@ -2,7 +2,7 @@
 /** chunk id: 637374, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Q
+  Z: () => X
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -67,7 +67,7 @@ function H(e) {
   return e
 }
 
-function W(e, t) {
+function Y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,8 +78,8 @@ function W(e, t) {
   return n
 }
 
-function Y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : W(Object(t)).forEach(function(n) {
+function W(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -97,7 +97,7 @@ function K(e) {
       color: "currentColor",
       className: F.libraryIcon
     }), (0, r.jsx)("div", {
-      children: n.isHidden() ? Z.intl.string(Z.t.Wi99Ro) : Z.intl.string(Z.t["+tXad7"])
+      children: n.isHidden() ? B.intl.string(B.t.Wi99Ro) : B.intl.string(B.t["+tXad7"])
     })]
   })
 }
@@ -127,17 +127,17 @@ class z extends Chunk473749.PureComponent {
       className: o()(F.invalidPoop, {
         [F.invalidPoopHorizontal]: this.isHorizontal
       })
-    })), V(this, "renderTitle", () => this.props.isSelfGift ? Z.intl.string(Z.t.mT9B49) : Z.intl.string(Z.t.Vo5yHw)), V(this, "renderActions", () => this.props.isSelfGift ? (0, r.jsx)(d.Button, {
+    })), V(this, "renderTitle", () => this.props.isSelfGift ? B.intl.string(B.t.mT9B49) : B.intl.string(B.t.Vo5yHw)), V(this, "renderActions", () => this.props.isSelfGift ? (0, r.jsx)(d.Button, {
       variant: "primary",
       size: "sm",
-      text: Z.intl.string(Z.t["jcSP+g"]),
+      text: B.intl.string(B.t["jcSP+g"]),
       onClick: this.handleViewInventory
     }) : (0, r.jsx)(d.Button, {
       variant: "primary",
       size: "sm",
-      text: Z.intl.string(Z.t.bUvv1f),
+      text: B.intl.string(B.t.bUvv1f),
       disabled: true
-    })), V(this, "renderTagline", () => this.props.isSelfGift ? Z.intl.string(Z.t.eEM3dq) : Z.intl.string(Z.t.tB8S6u))
+    })), V(this, "renderTagline", () => this.props.isSelfGift ? B.intl.string(B.t.eEM3dq) : B.intl.string(B.t.tB8S6u))
   }
 }
 class q extends Chunk473749.Component {
@@ -147,7 +147,7 @@ class q extends Chunk473749.Component {
         location: e
       }
     } = this.props;
-    return Y(H({}, module), {
+    return W(H({}, module), {
       section: Chunk981631.jXE.GIFT_CODE_EMBED
     })
   }
@@ -170,7 +170,7 @@ class q extends Chunk473749.Component {
         children: [e.hasMultipleCopies ? (0, r.jsx)("div", {
           children: this.renderGiftCodeCopiesLeft(e)
         }) : null, e.redeemed || e.isClaimed || null != t || null == e.expiresAt ? null : (0, r.jsx)("div", {
-          children: Z.intl.format(Z.t.nZBvUR, {
+          children: B.intl.format(B.t.nZBvUR, {
             hours: e.expiresAt.diff(l()(), "h")
           })
         })]
@@ -178,8 +178,8 @@ class q extends Chunk473749.Component {
     })
   }
   renderGiftCodeCopiesLeft(e) {
-    let t = e.isSubscription ? Z.t["4iHwKT"] : Z.t.YeLq88;
-    return Z.intl.format(t, {
+    let t = e.isSubscription ? B.t["4iHwKT"] : B.t.YeLq88;
+    return B.intl.format(t, {
       remaining: e.remainingUses,
       total: e.maxUses
     })
@@ -192,11 +192,11 @@ class q extends Chunk473749.Component {
     } = this.props, a = {
       onClick: this.handleAccept,
       color: u.zx.Colors.BRAND
-    }, o = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, M.I5)(n);
-    return (e.redeemed || o || e.isClaimed || !n.verified) && (a.color = u.zx.Colors.BRAND, a.disabled = true), (0, r.jsx)(u.zx, Y(H({}, a), {
+    }, o = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, j.I5)(n);
+    return (e.redeemed || o || e.isClaimed || !n.verified) && (a.color = u.zx.Colors.BRAND, a.disabled = true), (0, r.jsx)(u.zx, W(H({}, a), {
       className: (0, g.mO)(e) ? F.collectiblesAcceptButton : null,
       size: u.zx.Sizes.SMALL,
-      children: e.redeemed ? Z.intl.string(Z.t.BTihou) : null != e.giftStyle ? Z.intl.string(Z.t.TiZFqX) : Z.intl.string(Z.t.bUvv1f)
+      children: e.redeemed ? B.intl.string(B.t.BTihou) : null != e.giftStyle ? B.intl.string(B.t.TiZFqX) : B.intl.string(B.t.bUvv1f)
     }))
   }
   isCustomGiftMessage() {
@@ -211,9 +211,9 @@ class q extends Chunk473749.Component {
       isSelfGift: n,
       sku: r
     } = this.props;
-    return this.isCustomGiftMessage() && !n ? Z.intl.formatToPlainString(Z.t.t1SOId, {
-      recipientDisplayName: j.ZP.getName(t)
-    }) : null == r ? null : e.isSubscription ? n ? Z.intl.string(Z.t["2PJ1NP"]) : Z.intl.string(Z.t.hrnGng) : n ? Z.intl.string(Z.t.QLEMld) : Z.intl.string(Z.t.W4DBcy)
+    return this.isCustomGiftMessage() && !n ? B.intl.formatToPlainString(B.t.t1SOId, {
+      recipientDisplayName: k.ZP.getName(t)
+    }) : null == r ? null : e.isSubscription ? n ? B.intl.string(B.t["2PJ1NP"]) : B.intl.string(B.t.hrnGng) : n ? B.intl.string(B.t.QLEMld) : B.intl.string(B.t.W4DBcy)
   }
   renderBody(e) {
     let {
@@ -224,61 +224,61 @@ class q extends Chunk473749.Component {
       subscriptionPlan: a,
       currentUser: o
     } = this.props;
-    if (null == r) return Z.intl.string(Z.t.ZTNur7);
+    if (null == r) return B.intl.string(B.t.ZTNur7);
     if (!n && this.isCustomGiftMessage() && !e.redeemed) return;
-    let s = r.isPreorder() ? Z.intl.formatToPlainString(Z.t.evinTd, {
+    let s = r.isPreorder() ? B.intl.formatToPlainString(B.t.evinTd, {
       name: r.name
     }) : r.name;
-    if (e.redeemed) return e.isSubscription || (0, g.mO)(e) || (0, I.K$)(r) ? Z.intl.string(Z.t.mVC3Cv) : Z.intl.format(Z.t["ss/L+/"], {
+    if (e.redeemed) return e.isSubscription || (0, g.mO)(e) || (0, S.K$)(r) ? B.intl.string(B.t.mVC3Cv) : B.intl.format(B.t["ss/L+/"], {
       skuName: s,
       onViewInLibrary: this.handleViewLibrary
     });
-    if (!e.isSubscription && null != t) return Z.intl.format(Z.t.UdXO8P, {
+    if (!e.isSubscription && null != t) return B.intl.format(B.t.UdXO8P, {
       skuName: s,
       onViewInLibrary: this.handleViewLibrary
     });
-    if (e.isClaimed) return Z.intl.string(Z.t.ARWFQX);
-    if (!o.verified) return Z.intl.format(Z.t.GQxl7v, {
+    if (e.isClaimed) return B.intl.string(B.t.ARWFQX);
+    if (!o.verified) return B.intl.format(B.t.GQxl7v, {
       onClick: this.handleVerificationClick
     });
-    if (n) return e.isSelfRedeemable ? Z.intl.string(Z.t["lQI+cB"]) : Z.intl.formatToPlainString(Z.t["A+etHx"], {
+    if (n) return e.isSelfRedeemable ? B.intl.string(B.t["lQI+cB"]) : B.intl.formatToPlainString(B.t["A+etHx"], {
       skuName: s
     });
-    if (e.isExistingPremiumSubscriptionDisallowed) return Z.intl.string(Z.t.UCIU9y);
-    if (e.hasMultipleCopies) return null != i ? e.isSubscription ? Z.intl.format(Z.t.l3VxgG, {
-      username: j.ZP.getUserTag(i),
+    if (e.isExistingPremiumSubscriptionDisallowed) return B.intl.string(B.t.UCIU9y);
+    if (e.hasMultipleCopies) return null != i ? e.isSubscription ? B.intl.format(B.t.l3VxgG, {
+      username: k.ZP.getUserTag(i),
       maxUses: e.maxUses,
       skuName: s
-    }) : Z.intl.format(Z.t["9cYrw5"], {
-      username: j.ZP.getUserTag(i),
+    }) : B.intl.format(B.t["9cYrw5"], {
+      username: k.ZP.getUserTag(i),
       totalCopies: e.maxUses,
       skuName: s
-    }) : e.isSubscription ? Z.intl.formatToPlainString(Z.t.svrO3W, {
+    }) : e.isSubscription ? B.intl.formatToPlainString(B.t.svrO3W, {
       maxUses: e.maxUses,
       skuName: s
-    }) : Z.intl.formatToPlainString(Z.t["3AgAn3"], {
+    }) : B.intl.formatToPlainString(B.t["3AgAn3"], {
       totalCopies: e.maxUses,
       skuName: s
     });
     if (e.isSubscription) {
-      if (null == a) return Z.intl.string(Z.t.ZTNur7);
+      if (null == a) return B.intl.string(B.t.ZTNur7);
       if (null != i) {
-        let e = a.interval === B.rV.MONTH ? Z.t["/RDIEA"] : Z.t["3CX6Ev"];
-        return Z.intl.format(e, {
-          username: j.ZP.getUserTag(i),
+        let e = a.interval === Z.rV.MONTH ? B.t["/RDIEA"] : B.t["3CX6Ev"];
+        return B.intl.format(e, {
+          username: k.ZP.getUserTag(i),
           skuName: s,
           intervalCount: a.intervalCount
         })
       }
-      let e = a.interval === B.rV.MONTH ? Z.t["2O4lo5"] : Z.t["+XjmsR"];
-      return Z.intl.format(e, {
+      let e = a.interval === Z.rV.MONTH ? B.t["2O4lo5"] : B.t["+XjmsR"];
+      return B.intl.format(e, {
         skuName: s,
         intervalCount: a.intervalCount
       })
     }
-    return null != i ? Z.intl.format(Z.t["3HsdQ/"], {
-      username: j.ZP.getUserTag(i)
-    }) : Z.intl.string(Z.t.Jdnjjj)
+    return null != i ? B.intl.format(B.t["3HsdQ/"], {
+      username: k.ZP.getUserTag(i)
+    }) : B.intl.string(B.t.Jdnjjj)
   }
   renderPromotionActions() {
     return (0, Chunk54381.jsx)(Chunk481060.Button, {
@@ -347,7 +347,7 @@ class q extends Chunk473749.Component {
         }
       })
     }), V(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), (0, A.openUserSettings)(S.n.ACCOUNT_PANEL, {
+      e.stopPropagation(), e.preventDefault(), (0, A.openUserSettings)(T.n.ACCOUNT_PANEL, {
         section: G.oAB.ACCOUNT
       })
     }), V(this, "handleAccept", e => {
@@ -358,9 +358,9 @@ class q extends Chunk473749.Component {
         type: i,
         giftInfo: a
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), L.default.track(G.rMx.OPEN_MODAL, {
+      e.preventDefault(), e.stopPropagation(), x.default.track(G.rMx.OPEN_MODAL, {
         type: "gift_accept",
-        location: Y(H({}, this.analyticsLocation), {
+        location: W(H({}, this.analyticsLocation), {
           object: G.qAy.BUTTON_CTA
         })
       });
@@ -377,13 +377,13 @@ class q extends Chunk473749.Component {
         sku: n,
         skuApplication: r
       } = this.props;
-      null != n && (0, I.K$)(n) && null != r && null != r.guildId ? (e.preventDefault(), (0, T.g)({
+      null != n && (0, S.K$)(n) && null != r && null != r.guildId ? (e.preventDefault(), (0, I.g)({
         skuId: n.id,
         applicationId: r.id,
         guildId: r.guildId,
         isStorefront: false,
-        analyticsLocations: [h.Z.GIFT_CODE_EMBED]
-      })) : null != t && t.isSubscription && (e.preventDefault(), (0, A.openUserSettings)(S.n.NITRO_PANEL, {
+        analyticsLocations: [m.Z.GIFT_CODE_EMBED]
+      })) : null != t && t.isSubscription && (e.preventDefault(), (0, A.openUserSettings)(T.n.NITRO_PANEL, {
         section: G.oAB.PREMIUM
       }))
     }), V(this, "handleClaimPromotion", e => {
@@ -396,7 +396,7 @@ class q extends Chunk473749.Component {
         width: t
       } = this.props;
       if (null == e || null == e.giftStyle) return null;
-      let n = B.jy.includes(e.giftStyle),
+      let n = Z.jy.includes(e.giftStyle),
         i = o()(F.customGiftEmbedWrapper, {
           [F.legacySeasonalGiftEmbedWrapper]: n,
           [F.giftEmbedWrapperHorizontal]: t >= f.aL
@@ -409,7 +409,7 @@ class q extends Chunk473749.Component {
         });
       return (0, r.jsxs)("div", {
         className: i,
-        children: [n && (0, r.jsx)(w.Z, {
+        children: [n && (0, r.jsx)(D.Z, {
           className: F.headerIcon
         }), null != e.giftStyle && (0, r.jsx)(O.Z, {
           defaultAnimationState: e.redeemed ? b.SR.LOOP : b.SR.IDLE,
@@ -420,8 +420,8 @@ class q extends Chunk473749.Component {
     })
   }
 }
-let X = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
-  Q = function(e) {
+let Q = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
+  X = function(e) {
     let {
       code: t,
       author: n
@@ -431,8 +431,8 @@ let X = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
     } = (0, c.cj)([N.Z], () => ({
       giftCode: N.Z.get(t),
       resolved: N.Z.getIsResolved(t)
-    })), o = (0, c.e7)([P.default], () => null != i && null != i.userId ? P.default.getUser(i.userId) : null), s = (0, c.e7)([D.Z], () => null != i ? D.Z.get(i.skuId) : null), l = (0, c.e7)([R.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? x.z2(i.entitlementBranches, s, R.Z) : null), u = (0, m.q)(null == s ? true : s.applicationId), d = (0, k.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([C.default], () => null != i ? C.default.getId() === i.userId : C.default.getId() === n.id);
-    return (0, r.jsx)(X, Y(H({}, e), {
+    })), o = (0, c.e7)([R.default], () => null != i && null != i.userId ? R.default.getUser(i.userId) : null), s = (0, c.e7)([w.Z], () => null != i ? w.Z.get(i.skuId) : null), l = (0, c.e7)([P.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? L.z2(i.entitlementBranches, s, P.Z) : null), u = (0, h.q)(null == s ? true : s.applicationId), d = (0, M.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([C.default], () => null != i ? C.default.getId() === i.userId : C.default.getId() === n.id);
+    return (0, r.jsx)(Q, W(H({}, e), {
       skuApplication: u,
       giftCode: i,
       resolved: a,

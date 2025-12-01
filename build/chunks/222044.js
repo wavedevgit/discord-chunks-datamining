@@ -2,7 +2,7 @@
 /** chunk id: 222044, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./539854.js");
 var Chunk147913 = require("./147913.js"),
   Chunk339085 = require("./339085.js"),
@@ -38,7 +38,7 @@ function f(e) {
   })
 }
 
-function _(e) {
+function p(e) {
   let t = [],
     n = e.defaultReactionEmoji;
   if ((null == n ? true : n.emojiId) != null) {
@@ -57,14 +57,14 @@ function _(e) {
     })) : null != e.emojiName && t.push(s.ZP.getURL(e.emojiName))
   }), t
 }
-class p extends Chunk147913.Z {
+class _ extends Chunk147913.Z {
   handleChannelPreload(e) {
     let {
       channelId: t
     } = e;
     if ((0, l.AB)(t)) return;
     let n = a.Z.getChannel(t);
-    null != n && n.isForumLikeChannel() && _(n).forEach(e => {
+    null != n && n.isForumLikeChannel() && p(n).forEach(e => {
       null != e && 0 !== e.length && f(e)
     })
   }
@@ -74,4 +74,4 @@ class p extends Chunk147913.Z {
     })
   }
 }
-let h = new p
+let m = new _

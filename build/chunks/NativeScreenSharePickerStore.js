@@ -3,10 +3,10 @@
 "use strict";
 let r;
 require.d(exports, {
-  UB: () => w,
-  Uc: () => I,
+  UB: () => D,
+  Uc: () => S,
   ZP: () => H,
-  kE: () => L
+  kE: () => x
 });
 var i, Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -34,57 +34,57 @@ function v(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var I = function(e) {
+var S = function(e) {
   return e[e.Present = 0] = "Present", e[e.Update = 1] = "Update", e[e.Cancel = 2] = "Cancel", e[e.Error = 3] = "Error", e
 }({});
-let T = false,
-  S = 0,
+let I = false,
+  T = 0,
   A = 0,
   C = false,
   N = {};
 
-function R() {
+function P() {
   return Chunk131951.Z.supports(Chunk65154.AN.NATIVE_SCREENSHARE_PICKER)
 }
 
-function P() {
+function R() {
   return Chunk131951.Z.getUseSystemScreensharePicker()
 }
 
-function D() {
-  let e = P() && (A > 0 || T && 0 === S);
+function w() {
+  let e = R() && (A > 0 || I && 0 === T);
   if (module !== C) {
     var t, n;
     C = module, null == (n = Chunk131951.Z.getMediaEngine()) || null == (t = require.setNativeDesktopVideoSourcePickerActive) || exports.call(require, C)
   }
 }
 
-function w() {
-  return (0, Chunk473749.useEffect)(() => (S++, D(), () => {
-    0 == --S && D()
-  }), [])
-}
-
-function L() {
-  return (0, Chunk473749.useEffect)(() => (A++, D(), () => {
-    --A, D()
+function D() {
+  return (0, Chunk473749.useEffect)(() => (T++, w(), () => {
+    0 == --T && w()
   }), [])
 }
 
 function x() {
+  return (0, Chunk473749.useEffect)(() => (A++, w(), () => {
+    --A, w()
+  }), [])
+}
+
+function L() {
   let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId());
-  return T = null != module && (0, Chunk74299.Z)(Chunk131951.Z) && (0, Chunk102172.JL)(module, Chunk430824.Z, Chunk496675.Z, false), D(), false
-}
-
-function M() {
-  return null != r ? (0, Chunk783443.Z)(r) : null
-}
-
-function k() {
-  return null != r ? (0, Chunk692417.Z)(r) : null
+  return I = null != module && (0, Chunk74299.Z)(Chunk131951.Z) && (0, Chunk102172.JL)(module, Chunk430824.Z, Chunk496675.Z, false), w(), false
 }
 
 function j() {
+  return null != r ? (0, Chunk783443.Z)(r) : null
+}
+
+function M() {
+  return null != r ? (0, Chunk692417.Z)(r) : null
+}
+
+function k() {
   var e;
   let {
     soundshareEnabled: t
@@ -92,19 +92,19 @@ function j() {
   return {
     sourceId: "prepicked:0",
     nativePickerStyleUsed: N.lastPresentedPickerStyle,
-    sourceName: null != (e = M()) ? module : Chunk388032.intl.string(Chunk388032.t.KKcy95),
+    sourceName: null != (e = j()) ? module : Chunk388032.intl.string(Chunk388032.t.KKcy95),
     sound: exports
   }
 }
 class U extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk131951.Z, Chunk944486.Z, Chunk592125.Z, Chunk430824.Z, Chunk496675.Z], x), x()
+    this.syncWith([Chunk131951.Z, Chunk944486.Z, Chunk592125.Z, Chunk430824.Z, Chunk496675.Z], L), L()
   }
   supported() {
-    return R()
+    return P()
   }
   enabled() {
-    return P()
+    return R()
   }
   releasePickerStream() {
     (0, Chunk299570.t)()
@@ -116,13 +116,13 @@ class U extends(i = Chunk442837.ZP.Store) {
     return r
   }
   getLastPickedContentTitle() {
-    return M()
+    return j()
   }
   getLastPickedContentPID() {
-    return k()
+    return M()
   }
   getStreamStartOptions() {
-    return j()
+    return k()
   }
 }
 
@@ -133,19 +133,19 @@ function G(e) {
   } = e;
   if (N = {
       lastPickerAction: 1
-    }, r = n, 0 === S && !t) {
-    let e = u.Z.getChannel(p.Z.getVoiceChannelId());
-    null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, _.Z, false) && (0, l.WH)(e.getGuildId(), e.id, j())
+    }, r = n, 0 === T && !t) {
+    let e = u.Z.getChannel(_.Z.getVoiceChannelId());
+    null != e && (0, h.Z)(f.Z) && (0, m.JL)(e, d.Z, p.Z, false) && (0, l.WH)(e.getGuildId(), e.id, k())
   }
 }
 
-function B() {
+function Z() {
   N = {
     lastPickerAction: 2
   }
 }
 
-function Z(e) {
+function B(e) {
   let {
     error: t
   } = e;
@@ -171,8 +171,8 @@ function V() {
 v(U, "displayName", "NativeScreenSharePickerStore");
 let H = new U(Chunk570140.Z, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: G,
-  NATIVE_SCREEN_SHARE_PICKER_CANCEL: B,
-  NATIVE_SCREEN_SHARE_PICKER_ERROR: Z,
+  NATIVE_SCREEN_SHARE_PICKER_CANCEL: Z,
+  NATIVE_SCREEN_SHARE_PICKER_ERROR: B,
   NATIVE_SCREEN_SHARE_PICKER_PRESENT: F,
   NATIVE_SCREEN_SHARE_PICKER_RELEASE: V
 })

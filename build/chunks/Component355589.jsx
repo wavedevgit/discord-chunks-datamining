@@ -12,9 +12,9 @@ var Chunk54381 = require("./54381.js"),
   o = require.n(Chunk913527),
   Chunk666917 = require("./666917.js"),
   Chunk55160 = require("./55160.js"),
-  Chunk831209 = require("./831209.js"),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk787014 = require("./787014.js"),
   Chunk412899 = require("./412899.jsx"),
@@ -188,7 +188,7 @@ let Y = e => {
       {
         tagFilter: ee
       } = (0, M.H)(x.id),
-      et = (0, h.e7)([w.Z], () => w.Z.getGuild(x.getGuildId())),
+      et = (0, m.e7)([w.Z], () => w.Z.getGuild(x.getGuildId())),
       en = (0, Z.r_)(x),
       {
         transitions: er,
@@ -243,14 +243,14 @@ let Y = e => {
           channel: a,
           hasAnyThread: l,
           handleHide: s
-        } = e, [c, d] = i.useState(false), u = (0, A.c)(a.id), x = (0, h.e7)([I.Z], () => I.Z.hasHidden(a.id)), p = function(e, t, a, l) {
+        } = e, [c, d] = i.useState(false), h = (0, A.c)(a.id), x = (0, m.e7)([I.Z], () => I.Z.hasHidden(a.id)), p = function(e, t, a, l) {
           let s = null == e ? true : e.id,
-            o = (0, h.e7)([T.Z], () => null != s ? T.Z.getSortedRoles(s) : true);
+            o = (0, m.e7)([T.Z], () => null != s ? T.Z.getSortedRoles(s) : true);
           return i.useMemo(() => {
             let i, s = new X,
               c = (null == t ? true : t.isMediaChannel()) === true;
             return null == e || null == t || c || null == o || s.addStep(function(e, t, i, a) {
-              let l = (0, b.Z)(i) ? m.$e(H.Plq.VIEW_CHANNEL, H.Plq.SEND_MESSAGES) : H.Plq.SEND_MESSAGES,
+              let l = (0, b.Z)(i) ? u.$e(H.Plq.VIEW_CHANNEL, H.Plq.SEND_MESSAGES) : H.Plq.SEND_MESSAGES,
                 s = null != e ? (0, R.E)(t, i, l).filter(e => i.permissionOverwrites.hasOwnProperty(e.id) || (0, y.fI)(e)) : [],
                 o = s.length > 0,
                 c = s.some(e => (0, y.fI)(e));
@@ -346,7 +346,7 @@ let Y = e => {
               isDone: a
             })), s
           }, [t, e, o, a, l])
-        }(t, a, l, d), j = p.isAllDone(), v = u || x || !(e => {
+        }(t, a, l, d), j = p.isAllDone(), v = h || x || !(e => {
           let t = P.default.extractTimestamp(e);
           return o()().isBefore(o()(t).add(o().duration(15, "days")))
         })(a.id), _ = i.useRef(0);
@@ -355,7 +355,7 @@ let Y = e => {
         }, 60 * O.Z.Millis.SECOND), () => clearTimeout(_.current)), [j, v, s, c]), {
           onboardingSteps: p,
           isHidden: x,
-          isDismissed: u,
+          isDismissed: h,
           isAllDone: j
         }
       })({
@@ -377,7 +377,7 @@ let Y = e => {
         canManageChannel: r,
         guildId: a,
         channel: l
-      } = e, s = (0, h.e7)([T.Z], () => null != a ? T.Z.partitionVersion(a) : true), o = i.useCallback(() => {
+      } = e, s = (0, m.e7)([T.Z], () => null != a ? T.Z.partitionVersion(a) : true), o = i.useCallback(() => {
         N.S.dispatch(H.CkL.REMEASURE_TARGET)
       }, []);
       i.useEffect(() => {
@@ -452,10 +452,10 @@ let Y = e => {
                   size: "custom",
                   width: 20,
                   height: 20,
-                  color: u.Z.STATUS_DANGER,
+                  color: h.Z.colors.STATUS_DANGER.css,
                   className: B.stepStatus
                 }) : e.isDone ? (0, r.jsx)(g.G2e, {
-                  color: u.Z.STATUS_POSITIVE_BACKGROUND,
+                  color: h.Z.colors.STATUS_POSITIVE_BACKGROUND.css,
                   icon: g.dz2,
                   style: q,
                   className: B.stepStatus

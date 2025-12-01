@@ -71,7 +71,7 @@ function y(e) {
         onClose: t,
         transitionState: n
       } = e;
-      return (0, r.jsx)(m.SubscriptionDetailsModal, {
+      return (0, r.jsx)(h.SubscriptionDetailsModal, {
         appId: a.applicationId,
         subscriptionType: (0, c.KW)(a.flags) ? "user" : "guild",
         onClose: t,
@@ -87,7 +87,7 @@ function y(e) {
         onClose: t,
         transitionState: n
       } = e;
-      return (0, r.jsx)(h.ItemDetailsModal, {
+      return (0, r.jsx)(m.ItemDetailsModal, {
         appId: a.applicationId,
         skuId: a.id,
         onClose: t,
@@ -106,12 +106,12 @@ function y(e) {
         label: E.intl.string(E.t.CHa0vN)
       };
       let e = l[0],
-        t = (0, _.aS)(e.id);
+        t = (0, p.aS)(e.id);
       return {
         disabled: false,
         label: E.intl.formatToPlainString(E.t["c6Q+B3"], {
           skuName: a.name,
-          price: (0, p.T4)(t.amount, t.currency)
+          price: (0, _.T4)(t.amount, t.currency)
         }),
         onClick: u
       }
@@ -123,7 +123,7 @@ function y(e) {
       disabled: false,
       label: E.intl.formatToPlainString(E.t["c6Q+B3"], {
         skuName: a.name,
-        price: (0, p.T4)(a.price.amount, a.price.currency)
+        price: (0, _.T4)(a.price.amount, a.price.currency)
       }),
       onClick: d
     }

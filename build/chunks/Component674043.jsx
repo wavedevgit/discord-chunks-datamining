@@ -23,27 +23,27 @@ let f = {
         label: t,
         description: n,
         disabled: f,
-        required: _,
-        granularity: p,
-        hourCycle: h,
-        hideTimeZone: m,
+        required: p,
+        granularity: _,
+        hourCycle: m,
+        hideTimeZone: h,
         showMinMax: g
       } = e, [E, b] = i.useState((0, a.Lg)((0, a.iT)())), [y, O] = i.useState(""), v = i.useCallback(e => {
         b(e), O("")
-      }, []), I = i.useCallback(() => {
-        b(null)
-      }, []), T = i.useCallback(() => {
-        b((0, a.Lg)((0, a.iT)()))
       }, []), S = i.useCallback(() => {
-        "day" === p ? b((0, o.sG)("2024-12-25")) : b((0, o.wG)("2024-12-25T15:30"))
-      }, [p]), A = i.useCallback(() => {
-        if (_ && null == E) O("This field is required");
+        b(null)
+      }, []), I = i.useCallback(() => {
+        b((0, a.Lg)((0, a.iT)()))
+      }, []), T = i.useCallback(() => {
+        "day" === _ ? b((0, o.sG)("2024-12-25")) : b((0, o.wG)("2024-12-25T15:30"))
+      }, [_]), A = i.useCallback(() => {
+        if (p && null == E) O("This field is required");
         else if (g && null != E) {
           let e = (0, o.sG)("2024-01-01"),
             t = (0, o.sG)("2024-12-31");
           (0 > E.compare(e) || E.compare(t) > 0) && O("Date must be within 2024")
         }
-      }, [E, _, g]);
+      }, [E, p, g]);
       return (0, d.K)("CalendarStory") ? (0, r.jsxs)(c.Kqy, {
         direction: "vertical",
         gap: "md",
@@ -53,10 +53,10 @@ let f = {
           value: E,
           onChange: v,
           disabled: f,
-          required: _,
-          granularity: p,
-          hourCycle: h,
-          hideTimeZone: m,
+          required: p,
+          granularity: _,
+          hourCycle: m,
+          hideTimeZone: h,
           minValue: g ? (0, o.sG)("2024-01-01") : true,
           maxValue: g ? (0, o.sG)("2024-12-31") : true,
           errorMessage: y,
@@ -68,19 +68,19 @@ let f = {
             variant: "secondary",
             size: "sm",
             text: "Clear",
-            onClick: I,
+            onClick: S,
             disabled: f
           }), (0, r.jsx)(u.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Set Today",
-            onClick: T,
+            onClick: I,
             disabled: f
           }), (0, r.jsx)(u.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Set Dec 25",
-            onClick: S,
+            onClick: T,
             disabled: f
           }), (0, r.jsx)(u.zxk, {
             variant: "primary",

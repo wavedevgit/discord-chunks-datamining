@@ -2,7 +2,7 @@
 /** chunk id: 112724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -58,12 +58,12 @@ let d = {
     flex: 1
   };
 
-function _(e) {
+function p(e) {
   return i.forwardRef(function(t, n) {
     let [s, c] = i.useState({
       width: 0,
       height: 0
-    }), _ = (0, o.Z)(e => {
+    }), p = (0, o.Z)(e => {
       if (null != e) {
         let {
           width: t,
@@ -74,16 +74,16 @@ function _(e) {
           height: n
         })
       }
-    }), p = (0, o.Z)(e => {
-      _(e.contentRect)
-    }), h = (0, a.y)(p);
+    }), _ = (0, o.Z)(e => {
+      p(e.contentRect)
+    }), m = (0, a.y)(_);
     return i.useImperativeHandle(n, () => ({
       triggerResize: () => {
         var e;
-        _(null == (e = h.current) ? true : e.getBoundingClientRect())
+        p(null == (e = m.current) ? true : e.getBoundingClientRect())
       }
     })), (0, r.jsx)("div", {
-      ref: h,
+      ref: m,
       style: d,
       children: (0, r.jsx)(e, u(l({}, t), {
         width: s.width,

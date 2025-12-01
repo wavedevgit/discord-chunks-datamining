@@ -16,7 +16,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk304451 = require("./304451.js");
 let f = e => a()().diff(a().unix(e), "days");
 
-function _(e) {
+function p(e) {
   let {
     classificationId: t
   } = e, i = () => {
@@ -39,7 +39,7 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     learnMoreLink: t
   } = e;
@@ -50,7 +50,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     ctaType: t,
     classificationId: n,
@@ -59,12 +59,12 @@ function h(e) {
   switch (t) {
     case c.wo.POLICY_VIOLATION_DETAIL:
       if (null == n) return null;
-      return (0, r.jsx)(_, {
+      return (0, r.jsx)(p, {
         classificationId: n
       });
     case c.wo.LEARN_MORE_LINK:
       if (null == i) return null;
-      return (0, r.jsx)(p, {
+      return (0, r.jsx)(_, {
         learnMoreLink: i
       });
     default:
@@ -72,7 +72,7 @@ function h(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   let {
     iconType: t
   } = e, n = {
@@ -114,7 +114,7 @@ function E(e) {
       className: d.noticeContent,
       children: [(0, r.jsxs)("div", {
         className: d.headerRow,
-        children: [(0, r.jsx)(m, {
+        children: [(0, r.jsx)(h, {
           iconType: i.icon
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
@@ -138,7 +138,7 @@ function E(e) {
       })]
     }), (0, r.jsx)(g, {
       theme: i.theme,
-      children: null == (t = i.ctas) ? true : t.map(e => (0, r.jsx)(h, {
+      children: null == (t = i.ctas) ? true : t.map(e => (0, r.jsx)(m, {
         ctaType: e,
         classificationId: i.classification_id,
         learnMoreLink: i.learn_more_link

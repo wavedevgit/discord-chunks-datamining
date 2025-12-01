@@ -2,7 +2,7 @@
 /** chunk id: 632093, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -49,8 +49,8 @@ function d(e, t) {
   }), e
 }
 let f = new Chunk710845.Z("ReadStates"),
-  _ = "dm-sentinel";
-class p {
+  p = "dm-sentinel";
+class _ {
   async getAll(e) {
     let t = performance.now(),
       n = await s.Z.userGuildSettings(e).getMany(),
@@ -75,7 +75,7 @@ class p {
       let e = d(c({}, (0, o.wL)(t.guild_id), t), {
         channel_overrides: (0, o.U2)(t.channel_overrides)
       });
-      r.put(null != (i = t.guild_id) ? i : _, e)
+      r.put(null != (i = t.guild_id) ? i : p, e)
     }
     s.Z.nonGuildVersionsTransaction(n).put({
       id: "user_guild_settings_version",
@@ -89,4 +89,4 @@ class p {
     })
   }
 }
-let h = new p
+let m = new _

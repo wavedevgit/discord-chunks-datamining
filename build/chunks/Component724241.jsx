@@ -2,7 +2,7 @@
 /** chunk id: 724241, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,52 +17,52 @@ var Chunk442837 = require("./442837.js"),
   Chunk671955 = require("./671955.js"),
   Chunk116649 = require("./116649.js");
 
-function p(e) {
+function _(e) {
   let {
     user: t,
     displayProfile: n,
-    guild: p,
-    pendingAvatar: h,
-    pendingNickname: m,
+    guild: _,
+    pendingAvatar: m,
+    pendingNickname: h,
     pendingGlobalName: g,
     pendingBio: E,
     pendingPronouns: b,
     pendingLegacyUsernameDisabled: y,
     pendingBadges: O,
     pendingDisplayNameStyles: v,
-    isTryItOut: I,
-    hideBioSection: T,
-    shouldOpenBadgeTooltip: S
-  } = e, A = (0, i.e7)([c.ZP], () => null == p ? null : c.ZP.getMember(p.id, t.id)), C = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), N = null == n ? true : n.getPreviewBio(E), R = null != b ? b : null == n ? true : n.pronouns, P = (0, d.Ly)({
-    pendingNickname: m,
+    isTryItOut: S,
+    hideBioSection: I,
+    shouldOpenBadgeTooltip: T
+  } = e, A = (0, i.e7)([c.ZP], () => null == _ ? null : c.ZP.getMember(_.id, t.id)), C = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), N = null == n ? true : n.getPreviewBio(E), P = null != b ? b : null == n ? true : n.pronouns, R = (0, d.Ly)({
+    pendingNickname: h,
     pendingGlobalName: g,
     user: t,
     guildMember: A
-  }), D = () => {
-    if (null != A && null !== h && (null != A.avatar || null != h)) return (0, r.jsx)(l.Z, {
+  }), w = () => {
+    if (null != A && null !== m && (null != A.avatar || null != m)) return (0, r.jsx)(l.Z, {
       user: t,
-      nickname: P
+      nickname: R
     })
   };
   return (0, r.jsxs)("div", {
-    className: _.body,
+    className: p.body,
     inert: true,
     children: [(0, r.jsx)(o.Z, {
       user: t,
-      guildId: null == p ? true : p.id,
-      usernameIcon: D(),
-      nickname: P,
+      guildId: null == _ ? true : _.id,
+      usernameIcon: w(),
+      nickname: R,
       pendingDisplayNameStyles: v,
-      pronouns: R,
-      isTryItOut: I,
+      pronouns: P,
+      isTryItOut: S,
       tags: (0, r.jsx)(a.Z, {
         displayProfile: n,
         themeType: f.l.POPOUT,
         pendingLegacyUsernameDisabled: y,
         pendingBadges: O,
-        shouldOpenBadgeTooltip: S
+        shouldOpenBadgeTooltip: T
       })
-    }), !T && null != N && "" !== N && (0, r.jsx)(s.Z, {
+    }), !I && null != N && "" !== N && (0, r.jsx)(s.Z, {
       user: t,
       bio: N,
       hidePersonalInformation: C,

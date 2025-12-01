@@ -71,15 +71,15 @@ module.exports = function(e) {
       begin: t.optional(i) + e.IDENT_RE,
       relevance: 0
     },
-    _ = t.optional(i) + e.IDENT_RE + "\\s*\\(",
-    p = {
+    p = t.optional(i) + e.IDENT_RE + "\\s*\\(",
+    _ = {
       keyword: ["asm", "auto", "break", "case", "continue", "default", "do", "else", "enum", "extern", "for", "fortran", "goto", "if", "inline", "register", "restrict", "return", "sizeof", "typeof", "typeof_unqual", "struct", "switch", "typedef", "union", "volatile", "while", "_Alignas", "_Alignof", "_Atomic", "_Generic", "_Noreturn", "_Static_assert", "_Thread_local", "alignas", "alignof", "noreturn", "static_assert", "thread_local", "_Pragma"],
       type: ["float", "double", "signed", "unsigned", "int", "short", "long", "char", "void", "_Bool", "_BitInt", "_Complex", "_Imaginary", "_Decimal32", "_Decimal64", "_Decimal96", "_Decimal128", "_Decimal64x", "_Decimal128x", "_Float16", "_Float32", "_Float64", "_Float128", "_Float32x", "_Float64x", "_Float128x", "const", "static", "constexpr", "complex", "bool", "imaginary"],
       literal: "true false NULL",
       built_in: "std string wstring cin cout cerr clog stdin stdout stderr stringstream istringstream ostringstream auto_ptr deque list queue stack vector map set pair bitset multiset multimap unordered_set unordered_map unordered_multiset unordered_multimap priority_queue make_pair array shared_ptr abort terminate abs acos asin atan2 atan calloc ceil cosh cos exit exp fabs floor fmod fprintf fputs free frexp fscanf future isalnum isalpha iscntrl isdigit isgraph islower isprint ispunct isspace isupper isxdigit tolower toupper labs ldexp log10 log malloc realloc memchr memcmp memcpy memset modf pow printf putchar puts scanf sinh sin snprintf sprintf sqrt sscanf strcat strchr strcmp strcpy strcspn strlen strncat strncmp strncpy strpbrk strrchr strspn strstr tanh tan vfprintf vprintf vsprintf endl initializer_list unique_ptr"
     },
-    h = [d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
-    m = {
+    m = [d, s, n, e.C_BLOCK_COMMENT_MODE, u, c],
+    h = {
       variants: [{
         begin: /=/,
         end: /;/
@@ -90,29 +90,29 @@ module.exports = function(e) {
         beginKeywords: "new throw return else",
         end: /;/
       }],
-      keywords: p,
-      contains: h.concat([{
+      keywords: _,
+      contains: m.concat([{
         begin: /\(/,
         end: /\)/,
-        keywords: p,
-        contains: h.concat(["self"]),
+        keywords: _,
+        contains: m.concat(["self"]),
         relevance: 0
       }]),
       relevance: 0
     },
     g = {
-      begin: "(" + o + "[\\*&\\s]+)+" + _,
+      begin: "(" + o + "[\\*&\\s]+)+" + p,
       returnBegin: true,
       end: /[{;=]/,
       excludeEnd: true,
-      keywords: p,
+      keywords: _,
       illegal: /[^\w\s\*&:<>.]/,
       contains: [{
         begin: r,
-        keywords: p,
+        keywords: _,
         relevance: 0
       }, {
-        begin: _,
+        begin: p,
         returnBegin: true,
         contains: [e.inherit(f, {
           className: "title.function"
@@ -125,12 +125,12 @@ module.exports = function(e) {
         className: "params",
         begin: /\(/,
         end: /\)/,
-        keywords: p,
+        keywords: _,
         relevance: 0,
         contains: [n, e.C_BLOCK_COMMENT_MODE, c, u, s, {
           begin: /\(/,
           end: /\)/,
-          keywords: p,
+          keywords: _,
           relevance: 0,
           contains: ["self", n, e.C_BLOCK_COMMENT_MODE, c, u, s]
         }]
@@ -139,12 +139,12 @@ module.exports = function(e) {
   return {
     name: "C",
     aliases: ["h"],
-    keywords: p,
+    keywords: _,
     disableAutodetect: true,
     illegal: "</",
-    contains: [].concat(m, g, h, [d, {
+    contains: [].concat(h, g, m, [d, {
       begin: e.IDENT_RE + "::",
-      keywords: p
+      keywords: _
     }, {
       className: "class",
       beginKeywords: "enum class struct union",
@@ -156,7 +156,7 @@ module.exports = function(e) {
     exports: {
       preprocessor: d,
       strings: c,
-      keywords: p
+      keywords: _
     }
   }
 }

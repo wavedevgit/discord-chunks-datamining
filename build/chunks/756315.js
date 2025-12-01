@@ -2,7 +2,7 @@
 /** chunk id: 756315, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk379649 = require("./379649.js"),
   Chunk846519 = require("./846519.js"),
@@ -53,7 +53,7 @@ function f(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0;
   return null != e ? Math.round(e) : t
 }
-class _ {
+class p {
   start() {
     let {
       resolution: e,

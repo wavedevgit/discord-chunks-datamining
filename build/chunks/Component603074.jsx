@@ -2,7 +2,7 @@
 /** chunk id: 603074, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,59 +17,59 @@ var Chunk54381 = require("./54381.js"),
   Chunk526617 = require("./526617.jsx"),
   Chunk767354 = require("./767354.js");
 
-function h(e) {
+function m(e) {
   let {
     guildId: t,
     channel: n,
     containerWidth: a,
-    onClose: h,
-    onSelect: m,
+    onClose: m,
+    onSelect: h,
     analyticsSource: g,
     suppressPlaySound: E,
     shouldValidateSelectedSound: b,
     shouldShowUpsell: y = true,
     gridNotice: O,
     inExpressionPicker: v,
-    soundButtonOverlay: I,
-    listPadding: T,
-    renderHeader: S,
+    soundButtonOverlay: S,
+    listPadding: I,
+    renderHeader: T,
     defaultSoundsOnly: A
   } = e, {
     fetching: C,
     maybeFetchData: N
-  } = (0, f.Z)(), R = (0, d.Z)({
+  } = (0, f.Z)(), P = (0, d.Z)({
     location: "SoundboardSoundPicker"
   }), {
-    analyticsLocations: P
+    analyticsLocations: R
   } = (0, c.ZP)(l.Z.SOUNDBOARD_POPOUT);
   return i.useEffect(() => {
     N()
   }, [N]), i.useEffect(() => {
     v || (0, u.ql)("")
   }, [v]), (0, r.jsx)(c.Gt, {
-    value: P,
+    value: R,
     children: (0, r.jsx)(s.VqE, {
-      className: o()(p.picker, {
-        [p.fetching]: C,
-        [p.inExpressionPicker]: v
+      className: o()(_.picker, {
+        [_.fetching]: C,
+        [_.inExpressionPicker]: v
       }),
-      children: C ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(_.Z, {
+      children: C ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(p.Z, {
         guildId: t,
         channel: n,
-        onClose: h,
-        onSelect: m,
+        onClose: m,
+        onSelect: h,
         shouldValidateSelectedSound: b,
         containerWidth: a,
         suppressPlaySound: E,
         shouldShowUpsell: y,
         gridNotice: O,
-        soundButtonOverlay: I,
-        listPadding: T,
-        renderHeader: S,
+        soundButtonOverlay: S,
+        listPadding: I,
+        renderHeader: T,
         defaultSoundsOnly: A,
         inExpressionPicker: v,
         analyticsSource: g,
-        enablePickerUpsellPremiumBrandRefresh: R
+        enablePickerUpsellPremiumBrandRefresh: P
       })
     })
   })

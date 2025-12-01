@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,15 +46,15 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -75,11 +75,11 @@ function g(e) {
     label: t,
     layout: n,
     isDisabled: d,
-    icon: _,
-    accessibilityHint: m
-  } = e, g = h(e, ["label", "layout", "isDisabled", "icon", "accessibilityHint"]);
-  let E = [t, m].filter(Boolean).join(", ");
-  return (0, r.jsx)(i.Vp, p(f({}, g), {
+    icon: p,
+    accessibilityHint: h
+  } = e, g = m(e, ["label", "layout", "isDisabled", "icon", "accessibilityHint"]);
+  let E = [t, h].filter(Boolean).join(", ");
+  return (0, r.jsx)(i.Vp, _(f({}, g), {
     className: u.tag,
     textValue: E,
     isDisabled: d,
@@ -88,8 +88,8 @@ function g(e) {
         allowsRemoving: i
       } = e;
       return (0, r.jsxs)(r.Fragment, {
-        children: [null != _ && (0, r.jsx)(c.D, {
-          graphic: _,
+        children: [null != p && (0, r.jsx)(c.D, {
+          graphic: p,
           layout: n
         }), (0, r.jsx)(l.x, {
           variant: "inline" === n ? "text-sm/normal" : "text-md/normal",

@@ -2,7 +2,7 @@
 /** chunk id: 853439, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -44,7 +44,7 @@ function f(e) {
     })
   })
 }
-class _ extends(r = Chunk442837.ZP.Store) {
+class p extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z)
   }
@@ -59,8 +59,8 @@ class _ extends(r = Chunk442837.ZP.Store) {
     return u[e]
   }
 }
-l(_, "displayName", "GuildRoleSubscriptionTierTemplatesStore");
-let p = new _(Chunk570140.Z, {
+l(p, "displayName", "GuildRoleSubscriptionTierTemplatesStore");
+let _ = new p(Chunk570140.Z, {
   GUILD_ROLE_SUBSCRIPTIONS_STASH_TEMPLATE_CHANNELS: f,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_TEMPLATES: d
 })

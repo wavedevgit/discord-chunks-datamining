@@ -93,7 +93,7 @@ module.exports = function(e) {
         begin: `\\b(${c})[jJ](?=${d})`
       }]
     },
-    _ = {
+    p = {
       className: "comment",
       begin: t.lookahead(/# type:/),
       end: /$/,
@@ -106,7 +106,7 @@ module.exports = function(e) {
         endsWithParent: true
       }]
     },
-    p = {
+    _ = {
       className: "params",
       variants: [{
         className: "",
@@ -136,13 +136,13 @@ module.exports = function(e) {
     }, {
       match: /\bor\b/,
       scope: "keyword"
-    }, l, _, e.HASH_COMMENT_MODE, {
+    }, l, p, e.HASH_COMMENT_MODE, {
       match: [/\bdef/, /\s+/, n],
       scope: {
         1: "keyword",
         3: "title.function"
       },
-      contains: [p]
+      contains: [_]
     }, {
       variants: [{
         match: [/\bclass/, /\s+/, n, /\s*/, /\(\s*/, n, /\s*\)/]
@@ -158,7 +158,7 @@ module.exports = function(e) {
       className: "meta",
       begin: /^[\t ]*@/,
       end: /(?=#)|$/,
-      contains: [f, p, l]
+      contains: [f, _, l]
     }]
   }
 }

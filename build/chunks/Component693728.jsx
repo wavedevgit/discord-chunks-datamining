@@ -2,7 +2,7 @@
 /** chunk id: 693728, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,11 +23,11 @@ function d(e, t, n) {
 var f = function(e) {
   return e.SINGLE_AVATAR = "1", e.MULTIPLE_AVATAR = "2", e
 }(f || {});
-let _ = {
+let p = {
   [Chunk481060.EFr.SIZE_32]: Chunk433409.avatarSmall,
   [Chunk481060.EFr.SIZE_40]: Chunk433409.avatarLarge
 };
-class p extends(r = Chunk473749.Component) {
+class _ extends(r = Chunk473749.Component) {
   render() {
     let {
       type: e,
@@ -40,11 +40,11 @@ class p extends(r = Chunk473749.Component) {
       className: s()(Chunk433409.multiplePlaceholder, Chunk433409.multiplePlaceholderAnimated, require),
       children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
         children: [(0, Chunk54381.jsx)("div", {
-          className: s()(Chunk433409.placeholderAvatar, _[exports], Chunk433409.avatarMasked)
+          className: s()(Chunk433409.placeholderAvatar, p[exports], Chunk433409.avatarMasked)
         }), (0, Chunk54381.jsx)("div", {
-          className: s()(Chunk433409.placeholderAvatar, _[exports], Chunk433409.avatarMasked)
+          className: s()(Chunk433409.placeholderAvatar, p[exports], Chunk433409.avatarMasked)
         }), (0, Chunk54381.jsx)("div", {
-          className: s()(Chunk433409.placeholderAvatar, _[exports])
+          className: s()(Chunk433409.placeholderAvatar, p[exports])
         })]
       }), (0, Chunk54381.jsx)(Chunk600164.Z, {
         grow: 1,
@@ -56,7 +56,7 @@ class p extends(r = Chunk473749.Component) {
     }) : (0, Chunk54381.jsxs)(Chunk600164.Z, {
       className: s()(Chunk433409.placeholder, !Chunk473749 && Chunk433409.placeholderAnimated, require),
       children: [(0, Chunk54381.jsx)("div", {
-        className: s()(Chunk433409.placeholderAvatar, _[exports], r)
+        className: s()(Chunk433409.placeholderAvatar, p[exports], r)
       }), (0, Chunk54381.jsx)(Chunk600164.Z, {
         grow: 1,
         className: s()(Chunk433409.placeholderUsername, r),
@@ -70,7 +70,7 @@ class p extends(r = Chunk473749.Component) {
     super(...e), d(this, "placeholderMaxWidth", "".concat(Math.floor(40 * Math.random()) + 40, "%"))
   }
 }
-d(p, "defaultProps", {
+d(_, "defaultProps", {
   type: "1"
-}), d(p, "Types", f);
-let h = p
+}), d(_, "Types", f);
+let m = _

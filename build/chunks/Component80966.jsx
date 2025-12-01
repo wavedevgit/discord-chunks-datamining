@@ -2,7 +2,7 @@
 /** chunk id: 80966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,15 +45,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,14 +61,14 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class m extends Chunk473749.Component {
+class h extends Chunk473749.Component {
   render() {
     let e = this.props,
       {
@@ -77,33 +77,33 @@ class m extends Chunk473749.Component {
         className: i,
         mediaPlayerClassName: u,
         poster: f,
-        fileName: h,
-        naturalWidth: m,
+        fileName: m,
+        naturalWidth: h,
         naturalHeight: g,
         playable: E,
         downloadable: b = true,
         volume: y,
         autoPlay: O,
         autoMute: v,
-        responsive: I,
-        mediaLayoutType: T,
-        mimeType: S,
+        responsive: S,
+        mediaLayoutType: I,
+        mimeType: T,
         renderOverlayContent: A,
         renderLinkComponent: C,
         onClick: N,
-        onPlay: R,
-        onPause: P,
-        onEnded: D,
-        onControlsShow: w,
-        onControlsHide: L,
-        onVolumeChange: x,
-        onMute: M,
-        disableArrowKeySeek: k,
-        alt: j = Chunk388032.intl.string(Chunk388032.t.FlNoSV)
+        onPlay: P,
+        onPause: R,
+        onEnded: w,
+        onControlsShow: D,
+        onControlsHide: x,
+        onVolumeChange: L,
+        onMute: j,
+        disableArrowKeySeek: M,
+        alt: k = Chunk388032.intl.string(Chunk388032.t.FlNoSV)
       } = module,
-      U = p(module, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "disableArrowKeySeek", "alt"]);
-    return (0, Chunk54381.jsx)(Chunk124347.ZP, _(d({
-      alt: j,
+      U = _(module, ["src", "fileSize", "className", "mediaPlayerClassName", "poster", "fileName", "naturalWidth", "naturalHeight", "playable", "downloadable", "volume", "autoPlay", "autoMute", "responsive", "mediaLayoutType", "mimeType", "renderOverlayContent", "renderLinkComponent", "onClick", "onPlay", "onPause", "onEnded", "onControlsShow", "onControlsHide", "onVolumeChange", "onMute", "disableArrowKeySeek", "alt"]);
+    return (0, Chunk54381.jsx)(Chunk124347.ZP, p(d({
+      alt: k,
       className: Chunk473749,
       src: f
     }, U), {
@@ -111,8 +111,8 @@ class m extends Chunk473749.Component {
       minHeight: Chunk640108.ZP.minHeight,
       shouldLink: false,
       shouldAnimate: false,
-      mediaLayoutType: T,
-      responsive: I,
+      mediaLayoutType: I,
+      responsive: S,
       children: e => {
         let {
           src: i,
@@ -120,38 +120,38 @@ class m extends Chunk473749.Component {
             width: o,
             height: c
           }
-        } = e, d = !(m <= l.N_j && g <= l.XKF || m <= l.XKF && g <= l.N_j);
+        } = e, d = !(h <= l.N_j && g <= l.XKF || h <= l.XKF && g <= l.N_j);
         return (0, r.jsx)(s.ZP, {
-          alt: j,
+          alt: k,
           className: u,
           forceExternal: d,
           src: t,
           poster: i,
           width: o,
           height: c,
-          responsive: I,
+          responsive: S,
           volume: y,
           autoPlay: null != O && O,
           autoMute: null != v && v,
           type: s.ZP.Types.VIDEO,
-          mediaLayoutType: T,
-          fileName: h,
+          mediaLayoutType: I,
+          fileName: m,
           fileSize: null == n ? true : (0, a.Ng)(n),
           fileSizeBytes: null == n ? true : n,
           playable: E,
           renderLinkComponent: C,
           renderOverlayContent: A,
           onClick: N,
-          onPlay: R,
-          onPause: P,
-          onEnded: D,
-          onVolumeChange: x,
-          onMute: M,
-          onControlsShow: w,
-          onControlsHide: L,
-          mimeType: S,
+          onPlay: P,
+          onPause: R,
+          onEnded: w,
+          onVolumeChange: L,
+          onMute: j,
+          onControlsShow: D,
+          onControlsHide: x,
+          mimeType: T,
           downloadable: b,
-          disableArrowKeySeek: k
+          disableArrowKeySeek: M
         })
       }
     }))

@@ -31,7 +31,7 @@ let g = () => {
         label: e,
         value: e
       })),
-      _ = Chunk473749.useCallback(e => (0, r.jsx)(f.I, {
+      p = Chunk473749.useCallback(e => (0, r.jsx)(f.I, {
         userId: e.value,
         avatarSize: s.EFr.SIZE_24,
         hideUserTag: true
@@ -44,7 +44,7 @@ let g = () => {
         renderOptionLabel: Chunk292352,
         renderOptionValue: e => {
           let [t] = e;
-          return _(t)
+          return p(t)
         },
         serialize: e => e,
         select: Chunk120356,

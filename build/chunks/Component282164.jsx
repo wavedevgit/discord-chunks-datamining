@@ -2,7 +2,7 @@
 /** chunk id: 282164, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -37,7 +37,7 @@ class f extends Chunk473749.PureComponent {
     })
   }
 }
-let _ = Chunk442837.ZP.connectStores([Chunk618541.Z, Chunk975060.Z], () => ({
+let p = Chunk442837.ZP.connectStores([Chunk618541.Z, Chunk975060.Z], () => ({
   braintreeEmail: Chunk975060.Z.braintreeEmail,
   paypalClient: Chunk618541.Z.getPayPalClient()
 }))(f)

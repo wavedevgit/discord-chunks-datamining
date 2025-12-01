@@ -2,10 +2,10 @@
 /** chunk id: 727258, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Mg: () => _,
+  Mg: () => p,
   eD: () => u,
   g8: () => f,
-  qQ: () => p
+  qQ: () => _
 }), require("./388685.js"), require("./472816.js"), require("./794429.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -153,7 +153,7 @@ class f {
   }
 }
 
-function _(e, t) {
+function p(e, t) {
   return {
     type: "guild",
     id: e,
@@ -163,7 +163,7 @@ function _(e, t) {
   }
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   var r, i, a;
   return {
     type: "folder",

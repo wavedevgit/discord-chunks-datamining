@@ -5,7 +5,7 @@ require.d(exports, {
   NX: () => d,
   WS: () => u,
   l5: () => c,
-  qB: () => _
+  qB: () => p
 });
 var Chunk106351 = require("./106351.js"),
   Chunk442837 = require("./442837.js"),
@@ -35,6 +35,6 @@ function f(e, t) {
   return null != e && true !== e && !!c(e) && (null == e.guild_id || !!t.can(s.Pl.USE_EMBEDDED_ACTIVITIES, e)) && true
 }
 
-function _() {
+function p() {
   returnfalse
 }

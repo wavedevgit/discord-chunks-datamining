@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   M9: () => N,
-  aW: () => w,
-  wu: () => D
+  aW: () => D,
+  wu: () => w
 }), require("./388685.js");
 var Chunk997945 = require("./997945.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -33,7 +33,7 @@ var Chunk997945 = require("./997945.js"),
   Chunk563856 = require("./563856.js");
 let N = 60;
 
-function R() {
+function P() {
   return {
     id: Chunk997945.aH.DEFAULT,
     iconSource: Chunk63725,
@@ -42,7 +42,7 @@ function R() {
   }
 }
 
-function P() {
+function R() {
   return [{
     id: Chunk997945.Ru.BRAND_DARK,
     iconSource: Chunk760260,
@@ -156,11 +156,11 @@ function P() {
   }]
 }
 
-function D() {
-  return [R(), ...P()]
+function w() {
+  return [P(), ...R()]
 }
 
-function w(e) {
-  let t = D().find(t => t.id === e);
-  return null != t ? t : R()
+function D(e) {
+  let t = w().find(t => t.id === e);
+  return null != t ? t : P()
 }

@@ -2,7 +2,7 @@
 /** chunk id: 592745, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -54,7 +54,7 @@ class f extends(r = Chunk442837.ZP.Store) {
   }
 }
 o(f, "displayName", "LaunchableGameStore");
-let _ = new f(Chunk570140.Z, {
+let p = new f(Chunk570140.Z, {
   GAME_LAUNCHABLE_UPDATE: c,
   GAME_CLOUD_SYNC_START: u,
   GAME_LAUNCH_START: u,

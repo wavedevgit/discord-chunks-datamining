@@ -56,24 +56,24 @@ function f(e) {
     rowIndex: l,
     columnIndex: u,
     isUsingKeyboardNavigation: f,
-    suppressPlaySound: _,
-    getItemProps: p,
-    onSelectItem: h,
-    onItemMouseEnter: m,
+    suppressPlaySound: p,
+    getItemProps: _,
+    onSelectItem: m,
+    onItemMouseEnter: h,
     buttonOverlay: g,
     isNitroLocked: E,
     shouldShowUpsell: b,
     inExpressionPicker: y
-  } = e, O = i.Wq.useStore(e => e.inspectedExpressionPosition), v = "".concat(l, "-").concat(u), I = f && O.rowIndex === l && O.columnIndex === u;
+  } = e, O = i.Wq.useStore(e => e.inspectedExpressionPosition), v = "".concat(l, "-").concat(u), S = f && O.rowIndex === l && O.columnIndex === u;
   switch (t.item.type) {
     case a.vB.SOUND:
-      return (0, r.createElement)(o.ZP, d(c({}, p(u), n), {
+      return (0, r.createElement)(o.ZP, d(c({}, _(u), n), {
         key: v,
         sound: t.item.sound,
-        suppressPlaySound: _,
-        focused: I,
-        onMouseEnter: () => m(u),
-        onSelectItem: e => h(t, e),
+        suppressPlaySound: p,
+        focused: S,
+        onMouseEnter: () => h(u),
+        onSelectItem: e => m(t, e),
         enableSecondaryActions: true,
         buttonOverlay: g,
         inNitroLockedSection: E,
@@ -81,11 +81,11 @@ function f(e) {
         isSoundmoji: true === y
       }));
     case a.vB.ADD_SOUND:
-      return (0, r.createElement)(s.Z, d(c({}, p(u)), {
+      return (0, r.createElement)(s.Z, d(c({}, _(u)), {
         key: v,
         guild: t.item.guild,
-        focused: I,
-        onSelectItem: () => h(t)
+        focused: S,
+        onSelectItem: () => m(t)
       }))
   }
 }

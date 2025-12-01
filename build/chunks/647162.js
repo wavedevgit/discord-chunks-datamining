@@ -2,11 +2,11 @@
 /** chunk id: 647162, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  KV: () => p,
-  PY: () => _,
-  Wo: () => h,
+  KV: () => _,
+  PY: () => p,
+  Wo: () => m,
   iy: () => E,
-  yp: () => m
+  yp: () => h
 }), require("./415506.js"), require("./358797.js"), require("./388685.js");
 var Chunk763472 = require("./763472.js"),
   Chunk726542 = require("./726542.js"),
@@ -19,11 +19,11 @@ var Chunk763472 = require("./763472.js"),
   Chunk981631 = require("./981631.js");
 let f = 30 * Chunk70956.Z.Millis.SECOND;
 
-function _(e) {
+function p(e) {
   return null != e.getActiveSocketAndDevice() || l.Z.isProtocolRegistered()
 }
 
-function p() {
+function _() {
   let e = Chunk768419.Z.getActiveSocketAndDevice();
   if (null != module) return Promise.resolve(module);
   if (!Chunk18323.Z.isProtocolRegistered()) return Promise.reject(Error("protocol is not registered"));
@@ -58,7 +58,7 @@ function p() {
   })
 }
 
-function h() {
+function m() {
   let e = Chunk768419.Z.getActiveSocketAndDevice();
   if (null == module) return null;
   let {
@@ -67,7 +67,7 @@ function h() {
   return exports.isPremium
 }
 
-function m() {
+function h() {
   let e = Chunk768419.Z.getActiveSocketAndDevice();
   if (null == module) return Promise.reject(Error("no active profile"));
   let {

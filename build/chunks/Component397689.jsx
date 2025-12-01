@@ -68,48 +68,48 @@ function v(e) {
     previewAvatar: g,
     previewAvatarDecorationSrc: b,
     previewTheme: v,
-    previewPrimaryColor: I,
-    className: T,
-    disabledInputs: S,
+    previewPrimaryColor: S,
+    className: I,
+    disabledInputs: T,
     isTryItOut: A,
     onUpsellClick: C
   } = e, N = i.useRef(null), {
-    analyticsLocations: R,
-    newestAnalyticsLocation: P
-  } = (0, c.ZP)(), D = (0, s.e7)([d.Z], () => d.Z.getStatus(t.id)), w = null == n || (null == a ? true : a.canUsePremiumProfileCustomization) || f, L = (0, r.jsx)(O, {
+    analyticsLocations: P,
+    newestAnalyticsLocation: R
+  } = (0, c.ZP)(), w = (0, s.e7)([d.Z], () => d.Z.getStatus(t.id)), D = null == n || (null == a ? true : a.canUsePremiumProfileCustomization) || f, x = (0, r.jsx)(O, {
     src: g,
     avatarDecoration: b,
-    imageClassName: o()(T, {
-      [m.overlay]: !S
+    imageClassName: o()(I, {
+      [h.overlay]: !T
     }),
     size: l.EFr.SIZE_80,
     "aria-label": t.username,
-    status: D,
+    status: w,
     statusTooltip: false,
-    statusBackdropColor: null != I ? (0, l.QFD)(v) : true
+    statusBackdropColor: null != S ? (0, l.QFD)(v) : true
   });
-  return S ? (0, r.jsx)("div", {
-    className: m.avatar,
-    children: L
-  }) : w ? (0, r.jsx)(l.yRy, {
+  return T ? (0, r.jsx)("div", {
+    className: h.avatar,
+    children: x
+  }) : D ? (0, r.jsx)(l.yRy, {
     targetElementRef: N,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(_.Z, {
-        className: m.menu,
+      return (0, r.jsx)(p.Z, {
+        className: h.menu,
         onClose: t,
-        onChangeAvatar: () => (0, p.$r)({
-          uploadType: h.pC.AVATAR,
+        onChangeAvatar: () => (0, _.$r)({
+          uploadType: m.pC.AVATAR,
           guildId: null == n ? true : n.id,
-          analyticsSource: P,
+          analyticsSource: R,
           isTryItOut: A
         }),
         onChangeAvatarDecoration: () => {
           (0, u.ps)({
             guild: null == n ? true : n,
-            analyticsLocations: R,
+            analyticsLocations: P,
             isTryItOut: A
           })
         }
@@ -117,10 +117,10 @@ function v(e) {
     },
     children: e => (0, r.jsxs)(l.P3F, y(E({}, e), {
       innerRef: N,
-      className: o()(m.avatar, m.clickable),
-      children: [L, (0, r.jsx)(l.vdY, {
+      className: o()(h.avatar, h.clickable),
+      children: [x, (0, r.jsx)(l.vdY, {
         size: "custom",
-        className: m.overlayIcon,
+        className: h.overlayIcon,
         width: 20,
         height: 20,
         color: "white"
@@ -128,10 +128,10 @@ function v(e) {
     }))
   }) : (0, r.jsxs)(l.P3F, {
     onClick: C,
-    className: o()(m.avatar, m.clickable),
-    children: [L, (0, r.jsx)(l.SrA, {
+    className: o()(h.avatar, h.clickable),
+    children: [x, (0, r.jsx)(l.SrA, {
       size: "custom",
-      className: m.overlayIcon,
+      className: h.overlayIcon,
       width: 20,
       height: 20,
       color: "white"

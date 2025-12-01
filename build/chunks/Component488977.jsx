@@ -2,7 +2,7 @@
 /** chunk id: 488977, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./997841.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk820607 = require("./820607.js");
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,20 +41,20 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,56 +65,56 @@ function w(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function x(e) {
+function L(e) {
   var t;
   let {
     application: a,
-    context: P,
-    className: w,
-    sectionName: x
-  } = e, M = i.useRef(null), k = (0, l.e7)([I.Z], () => I.Z.entrypoint()), j = (0, T.L1)(a), U = (0, p.Eb)(j), G = (0, f.R)(a.id), B = (0, l.e7)([E.Z], () => {
+    context: R,
+    className: D,
+    sectionName: L
+  } = e, j = i.useRef(null), M = (0, l.e7)([S.Z], () => S.Z.entrypoint()), k = (0, I.L1)(a), U = (0, _.Eb)(k), G = (0, f.R)(a.id), Z = (0, l.e7)([E.Z], () => {
     var e;
     return null != (e = E.Z.getGuildId()) ? e : true
-  }, []), Z = {
+  }, []), B = {
     location: d.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
     application_id: a.id,
-    section_name: x,
-    source: I.Z.lastShownEntrypoint()
-  }, F = b.default.getCurrentUser(), V = (0, h.Z)({
+    section_name: L,
+    source: S.Z.lastShownEntrypoint()
+  }, F = b.default.getCurrentUser(), V = (0, m.Z)({
     id: a.id,
     label: N.intl.string(N.t["+NP/b2"])
-  }), H = (0, S.P)({
+  }), H = (0, T.P)({
     application: a
-  }), W = (0, s.yE)(null != (t = a.flags) ? t : 0, C.udG.EMBEDDED), Y = "channel" === P.type ? P.channel : true;
+  }), Y = (0, s.yE)(null != (t = a.flags) ? t : 0, C.udG.EMBEDDED), W = "channel" === R.type ? R.channel : true;
   return (0, r.jsxs)("div", {
-    className: R.container,
+    className: P.container,
     children: [(0, r.jsx)(c.P3F, {
       onClick: () => {
-        let e = W ? (0, _.H)({
+        let e = Y ? (0, p.H)({
           applicationId: a.id,
           referrerId: null == F ? true : F.id
-        }) : (0, _.J)(D({
+        }) : (0, p.J)(w({
           id: a.id
-        }, j));
+        }, k));
         (0, O.JG)(e, () => (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["L/PwZf"]), c.ToastType.SUCCESS))), y.default.track(C.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: a.id,
-          source: k
+          source: M
         })
       },
-      className: o()(R.clickable, w),
+      className: o()(P.clickable, D),
       "aria-label": N.intl.string(N.t.WqhZss),
       children: (0, r.jsx)(c.xPt, {
         size: "sm",
         color: c.TVs.colors.INTERACTIVE_ACTIVE
       })
     }), (0, r.jsx)(c.yRy, {
-      targetElementRef: M,
+      targetElementRef: j,
       renderPopout: e => {
         let {
           closePopout: t
@@ -138,7 +138,7 @@ function x(e) {
                     transitionState: t.transitionState,
                     onClose: t.onClose,
                     appId: a.id,
-                    guildId: B
+                    guildId: Z
                   })
                 })
               }
@@ -146,12 +146,12 @@ function x(e) {
               id: "add-app",
               label: N.intl.string(N.t.NgXl3C),
               action: () => {
-                null == j.customInstallUrl && (0, u.yw)(C.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, Z), (0, v.L)(L(D({}, j), {
+                null == k.customInstallUrl && (0, u.yw)(C.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, B), (0, v.L)(x(w({}, k), {
                   oauth2Callback: e => {
                     let {
                       location: t
                     } = e;
-                    null != t && (0, u.yw)(C.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, Z)
+                    null != t && (0, u.yw)(C.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, B)
                   },
                   source: "app_launcher_app_details"
                 }))
@@ -162,11 +162,11 @@ function x(e) {
               label: N.intl.string(N.t.jhJzez),
               action: () => {
                 var e;
-                (0, m.uu)({
+                (0, h.uu)({
                   application: a,
                   entrypoint: "app_launcher",
-                  contextualGuildId: null != (e = null == Y ? true : Y.getGuildId()) ? e : true,
-                  contextualChannelId: null == Y ? true : Y.id
+                  contextualGuildId: null != (e = null == W ? true : W.getGuildId()) ? e : true,
+                  contextualChannelId: null == W ? true : W.id
                 })
               }
             }) : null, H]
@@ -177,11 +177,11 @@ function x(e) {
       },
       align: "right",
       position: "bottom",
-      children: e => (0, r.jsx)(c.P3F, L(D({
-        innerRef: M
+      children: e => (0, r.jsx)(c.P3F, x(w({
+        innerRef: j
       }, e), {
         onClick: e.onClick,
-        className: o()(R.clickable, w),
+        className: o()(P.clickable, D),
         "aria-label": N.intl.string(N.t["UKOtz+"]),
         children: (0, r.jsx)(c.xhG, {
           size: "sm",

@@ -48,11 +48,11 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {},
-  p = {},
-  h = {};
+let p = {},
+  _ = {},
+  m = {};
 
-function m(e) {
+function h(e) {
   let {
     channel: t,
     message: n,
@@ -60,12 +60,12 @@ function m(e) {
     showMentionToggle: i = true,
     source: a
   } = e;
-  _[t.id] = {
+  p[t.id] = {
     channel: t,
     message: n,
     shouldMention: r,
     showMentionToggle: i
-  }, h[t.id] = a
+  }, m[t.id] = a
 }
 
 function g(e) {
@@ -75,7 +75,7 @@ function g(e) {
     shouldMention: r = true,
     showMentionToggle: i = true
   } = e;
-  p[t.id] = {
+  _[t.id] = {
     channelId: t.id,
     messageId: n,
     shouldMention: r,
@@ -88,9 +88,9 @@ function E(e) {
     channelId: t,
     shouldMention: n
   } = e;
-  t in _ && (_[t] = f(u({}, _[t]), {
+  t in p && (p[t] = f(u({}, p[t]), {
     shouldMention: n
-  })), t in p && (p[t] = f(u({}, p[t]), {
+  })), t in _ && (_[t] = f(u({}, _[t]), {
     shouldMention: n
   }))
 }
@@ -99,7 +99,7 @@ function b(e) {
   let {
     channelId: t
   } = e;
-  delete _[t], delete p[t]
+  delete p[t], delete _[t]
 }
 
 function y(e) {
@@ -108,26 +108,26 @@ function y(e) {
     id: i,
     channelId: a
   } = e;
-  if ((null == (n = _[a]) || null == (t = n.message) ? true : t.id) === i) delete _[a], delete h[a];
+  if ((null == (n = p[a]) || null == (t = n.message) ? true : t.id) === i) delete p[a], delete m[a];
   else {
-    if ((null == (r = p[a]) ? true : r.messageId) !== i) returnfalse;
-    delete p[a], delete h[a]
+    if ((null == (r = _[a]) ? true : r.messageId) !== i) returnfalse;
+    delete _[a], delete m[a]
   }
 }
 
 function O(e) {
   if (null == e) returnfalse;
-  let t = p[e];
+  let t = _[e];
   if (null == t) returnfalse;
   let n = s.Z.getMessage(e, t.messageId),
     r = o.Z.getChannel(t.channelId);
   if (null == n || null == r) returnfalse;
-  _[e] = {
+  p[e] = {
     channel: r,
     message: n,
     shouldMention: t.shouldMention,
     showMentionToggle: t.showMentionToggle
-  }, delete p[e]
+  }, delete _[e]
 }
 
 function v(e) {
@@ -137,52 +137,52 @@ function v(e) {
   O(t)
 }
 
-function I(e) {
+function S(e) {
   let {
     channelId: t
   } = e;
   O(t)
 }
 
-function T() {
-  Chunk709054.default.keys(p).forEach(e => {
-    null == o.Z.getChannel(e) && delete p[e]
+function I() {
+  Chunk709054.default.keys(_).forEach(e => {
+    null == o.Z.getChannel(e) && delete _[e]
   })
 }
 
-function S() {
-  _ = {}, p = {}, h = {}
+function T() {
+  p = {}, _ = {}, m = {}
 }
 class A extends(r = Chunk442837.ZP.PersistedStore) {
   getState() {
     let e = {};
-    for (let [t, n] of Chunk709054.default.entries(_)) module[exports] = {
+    for (let [t, n] of Chunk709054.default.entries(p)) module[exports] = {
       channelId: exports,
       messageId: require.message.id,
       shouldMention: require.shouldMention,
       showMentionToggle: require.showMentionToggle
     };
-    return u({}, p, module)
+    return u({}, _, module)
   }
   initialize(e) {
-    this.waitFor(s.Z, o.Z), p = null != e ? e : {}
+    this.waitFor(s.Z, o.Z), _ = null != e ? e : {}
   }
   getPendingReply(e) {
-    return _[e]
+    return p[e]
   }
   getPendingReplyActionSource(e) {
-    return h[e]
+    return m[e]
   }
 }
 c(A, "displayName", "PendingReplyStore"), c(A, "persistKey", "PendingReplyStore"), c(A, "migrations", [e => null != e ? e : {}]);
 let C = new A(Chunk570140.Z, {
-  CREATE_PENDING_REPLY: m,
+  CREATE_PENDING_REPLY: h,
   CREATE_SHALLOW_PENDING_REPLY: g,
   SET_PENDING_REPLY_SHOULD_MENTION: E,
   DELETE_PENDING_REPLY: b,
-  CONNECTION_OPEN: T,
-  LOGOUT: S,
+  CONNECTION_OPEN: I,
+  LOGOUT: T,
   MESSAGE_DELETE: y,
   CHANNEL_SELECT: v,
-  LOAD_MESSAGES_SUCCESS: I
+  LOAD_MESSAGES_SUCCESS: S
 })

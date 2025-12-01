@@ -2,7 +2,7 @@
 /** chunk id: 925928, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => p,
+  ZP: () => _,
   Zk: () => f,
   d0: () => d
 });
@@ -29,7 +29,7 @@ let o = 60,
     years: Chunk388032.t["12B3Re"]
   });
 
-function _(e) {
+function p(e) {
   let {
     seconds: t,
     getFormatter: n
@@ -49,12 +49,12 @@ function _(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     since: t,
     getFormatter: n
   } = e;
-  return _({
+  return p({
     seconds: i()().diff(i()(t), "s"),
     getFormatter: n
   })

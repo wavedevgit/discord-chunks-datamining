@@ -17,12 +17,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk498714 = require("./498714.js");
-let m = 36;
+let h = 36;
 
 function g() {
   let e = (0, Chunk451284.P)(),
     t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    [n, g] = Chunk473749.useState(m),
+    [n, g] = Chunk473749.useState(h),
     E = Chunk473749.useRef({
       [Chunk531441.Sn.ALL_GOOD]: null,
       [Chunk531441.Sn.LIMITED]: null,
@@ -33,8 +33,8 @@ function g() {
     b = Chunk473749.useCallback(() => {
       g(Math.max(Math.max(...Object.values(E.current).map(e => {
         var t;
-        return null != (t = null == e ? true : e.getBoundingClientRect().height) ? t : m
-      })), m))
+        return null != (t = null == e ? true : e.getBoundingClientRect().height) ? t : h
+      })), h))
     }, []);
   Chunk473749.useEffect(() => {
     b();
@@ -84,10 +84,10 @@ function g() {
     {
       title: O,
       description: v,
-      color: I,
-      Icon: T
+      color: S,
+      Icon: I
     } = y[module.state],
-    S = Object.keys(y).length;
+    T = Object.keys(y).length;
   return (0, Chunk54381.jsxs)(Chunk481060.Zbd, {
     className: Chunk498714.container,
     outline: false,
@@ -107,7 +107,7 @@ function g() {
           children: Chunk388032.intl.format(O, {
             hook: e => (0, r.jsx)(l.Text, {
               style: {
-                color: I.css
+                color: S.css
               },
               variant: "heading-lg/bold",
               tag: "span",
@@ -129,27 +129,27 @@ function g() {
         }), Object.entries(y).map((t, n) => {
           let [i, a] = t, o = parseInt(i) === e.state;
           return (0, r.jsxs)("div", {
-            className: h.statusOption,
+            className: m.statusOption,
             ref: e => {
               E.current[parseInt(i)] = e
             },
-            children: [o ? (0, r.jsx)(T, {
-              className: h.marker,
+            children: [o ? (0, r.jsx)(I, {
+              className: m.marker,
               color: a.color
             }) : (0, r.jsx)("div", {
-              className: h.marker,
+              className: m.marker,
               style: {
                 marginLeft: 0 === n ? false : 0,
-                marginRight: n === S - 1 ? false : 0
+                marginRight: n === T - 1 ? false : 0
               },
               children: (0, r.jsx)("div", {
-                className: h.empty
+                className: m.empty
               })
-            }), p.intl.format(a.status, {
+            }), _.intl.format(a.status, {
               hook: e => (0, r.jsx)(l.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                className: h.statusLabel,
+                className: m.statusLabel,
                 children: e
               })
             })]

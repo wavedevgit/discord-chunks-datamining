@@ -64,34 +64,34 @@ function f(e) {
     getItemKey: s,
     getItemHeight: c,
     getSectionHeight: f,
-    chunkSize: _ = 250,
-    getScrollerState: p,
-    maxBufferWidth: h,
-    itemGutter: m,
+    chunkSize: p = 250,
+    getScrollerState: _,
+    maxBufferWidth: m,
+    itemGutter: h,
     removeEdgeItemGutters: g,
     sectionGutter: E,
     padding: b,
     paddingVertical: y,
     paddingHorizontal: O,
     dir: v
-  } = e, I = (0, a.Z)(), T = (0, r.useRef)(d), [S] = (0, r.useState)(() => new i.ZP), A = p(), C = Math.min(null != h ? h : 1 / 0, A.offsetWidth), N = null != h ? Math.max(0, A.offsetWidth - h) : 0, {
-    dirty: R,
-    chunkStart: P,
-    chunkEnd: D,
-    forceUpdateOnChunkChange: w
+  } = e, S = (0, a.Z)(), I = (0, r.useRef)(d), [T] = (0, r.useState)(() => new i.ZP), A = _(), C = Math.min(null != m ? m : 1 / 0, A.offsetWidth), N = null != m ? Math.max(0, A.offsetWidth - m) : 0, {
+    dirty: P,
+    chunkStart: R,
+    chunkEnd: w,
+    forceUpdateOnChunkChange: D
   } = (0, o.Z)({
-    chunkSize: _,
-    getScrollerState: p,
-    forceUpdate: I
+    chunkSize: p,
+    getScrollerState: _,
+    forceUpdate: S
   });
-  return T.current = (0, r.useMemo)(() => R > 0 ? T.current : (S.mergeProps({
+  return I.current = (0, r.useMemo)(() => P > 0 ? I.current : (T.mergeProps({
     sections: t,
     columns: n,
     getItemKey: s,
     getItemHeight: c,
     getSectionHeight: f,
     bufferWidth: C,
-    itemGutter: m,
+    itemGutter: h,
     removeEdgeItemGutters: g,
     sectionGutter: E,
     padding: b,
@@ -99,9 +99,9 @@ function f(e) {
     paddingHorizontal: O,
     marginLeft: N / 2,
     dir: v
-  }), S.computeVisibleSections(Math.max(0, P * _), D * _), S.getState()), [R, S, t, n, s, c, f, P, D, _, m, g, E, b, y, O, C, N, v]), u(l({}, T.current), {
-    masonryComputer: S,
-    forceUpdateOnChunkChange: w,
-    forceUpdate: I
+  }), T.computeVisibleSections(Math.max(0, R * p), w * p), T.getState()), [P, T, t, n, s, c, f, R, w, p, h, g, E, b, y, O, C, N, v]), u(l({}, I.current), {
+    masonryComputer: T,
+    forceUpdateOnChunkChange: D,
+    forceUpdate: S
   })
 }

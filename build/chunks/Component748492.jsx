@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Ds: () => U,
-  YB: () => k,
+  YB: () => M,
   of: () => G,
-  q5: () => j
+  q5: () => k
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -41,104 +41,104 @@ var Chunk120356 = require("./120356.js"),
   Chunk702952 = require("./702952.js"),
   Chunk186880 = require("./186880.js");
 
-function M(e) {
+function j(e) {
   let {
     onClick: t,
     isExpanded: n
   } = e;
   return (0, r.jsx)(y.Z, {
-    iconClassName: a()(L.arrowIcon, {
-      [L.arrowIconExpanded]: n
+    iconClassName: a()(x.arrowIcon, {
+      [x.arrowIconExpanded]: n
     }),
     onClick: t,
     iconComponent: s.CJ0,
-    label: n ? w.intl.string(w.t["2TiKgS"]) : w.intl.string(w.t.oN8bqe)
+    label: n ? D.intl.string(D.t["2TiKgS"]) : D.intl.string(D.t.oN8bqe)
   })
 }
 
-function k(e) {
+function M(e) {
   var t, n, i;
   let {
     channel: a,
     applicationId: s,
     onMouseDown: y,
-    onMouseMove: I,
+    onMouseMove: S,
     onMouseLeave: N,
-    onJumpToChannel: w,
-    idle: M,
-    selectedParticipant: k,
-    embeddedActivity: j
-  } = e, U = (0, p.bp)() === P.IlC.POPOUT, G = (0, o.e7)([S.Z], () => S.Z.isVideoEnabled()), B = (0, o.e7)([S.Z], () => Object.values(S.Z.getVideoDevices())[0]), Z = false === (null == (t = null == B ? true : B.disabled) || t), F = (0, u.Z)([s])[0], V = (0, m.Z)(a), {
+    onJumpToChannel: D,
+    idle: j,
+    selectedParticipant: M,
+    embeddedActivity: k
+  } = e, U = (0, _.bp)() === R.IlC.POPOUT, G = (0, o.e7)([T.Z], () => T.Z.isVideoEnabled()), Z = (0, o.e7)([T.Z], () => Object.values(T.Z.getVideoDevices())[0]), B = false === (null == (t = null == Z ? true : Z.disabled) || t), F = (0, u.Z)([s])[0], V = (0, h.Z)(a), {
     parentAnalyticsLocation: H
-  } = (0, c.ZP)(), W = e => {
+  } = (0, c.ZP)(), Y = e => {
     (0, f.v)(H, f.d.CAMERA, e), l.Z.setVideoEnabled(e)
-  }, Y = () => {
-    Z ? W(true) : (0, g.Z)()
+  }, W = () => {
+    B ? Y(true) : (0, g.Z)()
   }, K = () => {
-    (0, f.v)(H, f.d.POPOUT, true), null != a && (0, R.Z)({
+    (0, f.v)(H, f.d.POPOUT, true), null != a && (0, P.Z)({
       onConfirm: async () => {
-        await (0, C.nJ)(s, a.id), h.openChannelCallPopout(a)
+        await (0, C.nJ)(s, a.id), m.openChannelCallPopout(a)
       }
     })
   };
   return (0, r.jsxs)("div", {
-    className: x.videoControls,
-    onMouseMove: I,
+    className: L.videoControls,
+    onMouseMove: S,
     onMouseDown: y,
     onMouseLeave: N,
     children: [(0, r.jsx)("div", {
-      className: x.topControls,
+      className: L.topControls,
       children: (0, r.jsx)(b.r, {
-        idle: M,
+        idle: j,
         title: null != (i = null != (n = null == F ? true : F.name) ? n : null == a ? true : a.name) ? i : "",
-        onJumpToChannel: w,
+        onJumpToChannel: D,
         preventIdleComponent: E.Z
       })
     }), (0, r.jsxs)("div", {
-      className: x.bottomControls,
-      children: [(0, r.jsxs)(_.Z, {
+      className: L.bottomControls,
+      children: [(0, r.jsxs)(p.Z, {
         grow: 0,
         shrink: 1,
         basis: "50%",
-        align: _.Z.Align.CENTER,
-        children: [(0, r.jsx)(T.C, {
-          className: L.leftPipIcon,
+        align: p.Z.Align.CENTER,
+        children: [(0, r.jsx)(I.C, {
+          className: x.leftPipIcon,
           enabled: G,
-          cameraUnavailable: !Z,
+          cameraUnavailable: !B,
           hasPermission: V,
-          onChange: W,
-          onCameraUnavailable: Y
+          onChange: Y,
+          onCameraUnavailable: W
         }), null != a && (0, r.jsx)(E.Z, {
           children: (0, r.jsx)(d.Z, {
             channelId: a.id,
             guildId: a.getGuildId(),
-            className: x.__invalid_leftTrayIcon,
-            participant: k,
+            className: L.__invalid_leftTrayIcon,
+            participant: M,
             compact: true
           })
         })]
-      }), (0, r.jsxs)(_.Z, {
+      }), (0, r.jsxs)(p.Z, {
         grow: 0,
         shrink: 1,
-        justify: _.Z.Justify.END,
+        justify: p.Z.Justify.END,
         basis: "50%",
-        align: _.Z.Align.CENTER,
+        align: p.Z.Align.CENTER,
         children: [U || (0, A.R)() ? null : (0, r.jsx)(v.Z, {
-          className: L.rightPipIcon,
+          className: x.rightPipIcon,
           popoutOpen: false,
           onOpenPopout: K,
-          onClosePopout: D.Vq
+          onClosePopout: w.Vq
         }), (0, r.jsx)(O.Z, {
           applicationId: s,
-          location: j.location,
-          className: L.rightPipIcon
+          location: k.location,
+          className: x.rightPipIcon
         })]
       })]
     })]
   })
 }
 
-function j(e) {
+function k(e) {
   var t, n;
   let {
     channel: i,
@@ -147,36 +147,36 @@ function j(e) {
     onMouseMove: c,
     onMouseLeave: d,
     onJumpToChannel: f,
-    idle: _,
-    users: p,
-    embeddedActivity: h
-  } = e, m = (0, u.Z)([o])[0];
+    idle: p,
+    users: _,
+    embeddedActivity: m
+  } = e, h = (0, u.Z)([o])[0];
   return (0, r.jsxs)(s.P3F, {
-    className: a()(x.videoControls, x.videoControlsTextActivity),
+    className: a()(L.videoControls, L.videoControlsTextActivity),
     onMouseMove: c,
     onMouseDown: l,
     onMouseLeave: d,
     onDoubleClick: f,
     children: [(0, r.jsx)("div", {
-      className: x.topControls,
+      className: L.topControls,
       children: (0, r.jsx)(b.r, {
-        idle: _,
-        title: null != (n = null != (t = null == m ? true : m.name) ? t : null == i ? true : i.name) ? n : "",
+        idle: p,
+        title: null != (n = null != (t = null == h ? true : h.name) ? t : null == i ? true : i.name) ? n : "",
         onJumpToChannel: f,
         preventIdleComponent: E.Z
       })
     }), (0, r.jsxs)("div", {
-      className: x.bottomControls,
+      className: L.bottomControls,
       children: [(0, r.jsx)(N.ZP, {
         renderIcon: false,
-        users: p,
+        users: _,
         size: 24,
         max: 3,
-        className: L.__invalid_userSummaryContainer
+        className: x.__invalid_userSummaryContainer
       }), (0, r.jsx)(O.Z, {
         applicationId: o,
-        location: h.location,
-        iconClassName: L.leaveActivityIcon,
+        location: m.location,
+        iconClassName: x.leaveActivityIcon,
         isActive: true
       })]
     })]
@@ -189,10 +189,10 @@ function U(e) {
     participantsOpen: n,
     showToggleParticipants: i
   } = e;
-  return i ? (0, r.jsx)(I.Z, {
+  return i ? (0, r.jsx)(S.Z, {
     channelId: t,
     isParticipantsOpen: n,
-    className: L.participantsButton
+    className: x.participantsButton
   }) : null
 }
 
@@ -205,40 +205,40 @@ function G(e) {
     showControls: c,
     applicationId: d,
     channel: f,
-    onJumpToChannel: _,
-    onToggleHeight: p,
-    isExpanded: h,
-    hideExpandedButton: m,
+    onJumpToChannel: p,
+    onToggleHeight: _,
+    isExpanded: m,
+    hideExpandedButton: h,
     embeddedActivity: g
   } = e, y = (0, u.Z)([d])[0];
   return (0, r.jsx)("div", {
-    className: L.pipHeader,
+    className: x.pipHeader,
     onMouseMove: o,
     onMouseDown: i,
     onMouseLeave: l,
     children: (0, r.jsxs)("div", {
-      className: a()(x.topControls, L.pipHeaderContent, {
-        [L.pipHeaderContentOpen]: c
+      className: a()(L.topControls, x.pipHeaderContent, {
+        [x.pipHeaderContentOpen]: c
       }),
       children: [!c && (0, r.jsx)(s.xhG, {
         size: "xxs",
         color: "currentColor",
-        className: L.menuIcon
+        className: x.menuIcon
       }), c && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(b.r, {
           idle: !c,
           title: null != (n = null != (t = null == y ? true : y.name) ? t : null == f ? true : f.name) ? n : "",
-          onJumpToChannel: _,
+          onJumpToChannel: p,
           preventIdleComponent: E.Z
         }), (0, r.jsxs)("div", {
-          className: L.pipHeaderButtonsRight,
-          children: [m ? null : (0, r.jsx)(M, {
-            isExpanded: h,
-            onClick: p
+          className: x.pipHeaderButtonsRight,
+          children: [h ? null : (0, r.jsx)(j, {
+            isExpanded: m,
+            onClick: _
           }), (0, r.jsx)(O.Z, {
             applicationId: d,
             location: g.location,
-            iconClassName: L.leaveActivityIcon
+            iconClassName: x.leaveActivityIcon
           })]
         })]
       })]

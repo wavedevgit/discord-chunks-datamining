@@ -2,7 +2,7 @@
 /** chunk id: 874703, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -35,7 +35,7 @@ class f extends(r = Chunk442837.ZP.Store) {
   }
 }
 o(f, "displayName", "CollectiblesMarketingsStore");
-let _ = new f(Chunk570140.Z, {
+let p = new f(Chunk570140.Z, {
   COLLECTIBLES_MARKETING_FETCH: c,
   COLLECTIBLES_MARKETING_FETCH_SUCCESS: u,
   LOGOUT: d

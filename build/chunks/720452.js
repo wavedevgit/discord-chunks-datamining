@@ -45,14 +45,14 @@ function d(e) {
     autoTrackExposure: false
   }), f = null != t ? t : "ALL";
   d.length > 0 && null != u && null != t && (f = d.includes(t) ? t : u);
-  let _ = new Set,
-    p = [];
+  let p = new Set,
+    _ = [];
   return l.forEach((e, t) => {
-    s.includes(t) && (e.has(f) ? _.add(t) : p.push(t))
+    s.includes(t) && (e.has(f) ? p.add(t) : _.push(t))
   }), c.forEach((e, t) => {
-    e.has(f) && _.add(t)
-  }), (r.bO || r.eL) && (_.delete(a.HeQ.VENMO), p = p.filter(e => e !== a.HeQ.VENMO)), {
-    countryPaymentMethods: [...o, ...Array.from(_)],
-    remainingPaymentMethods: p
+    e.has(f) && p.add(t)
+  }), (r.bO || r.eL) && (p.delete(a.HeQ.VENMO), _ = _.filter(e => e !== a.HeQ.VENMO)), {
+    countryPaymentMethods: [...o, ...Array.from(p)],
+    remainingPaymentMethods: _
   }
 }

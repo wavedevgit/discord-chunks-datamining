@@ -23,7 +23,7 @@ var Chunk749210 = require("./749210.js"),
   Chunk96150 = require("./96150.js");
 
 function g(e, t) {
-  return !!d.Z.can(h.gl, e) && (!_.Zl(e.id) || t === e.id || (_.vu(e, () => y(e, true)), false))
+  return !!d.Z.can(m.gl, e) && (!p.Zl(e.id) || t === e.id || (p.vu(e, () => y(e, true)), false))
 }
 
 function E(e, t) {
@@ -35,7 +35,7 @@ function E(e, t) {
       lurker: true
     }), u.Z.addConditionalChangeListener(() => {
       let e = c.Z.getChannel(t);
-      return null == e || (b(e), m.Z.initialize(), i(e), false)
+      return null == e || (b(e), h.Z.initialize(), i(e), false)
     })
   })
 }
@@ -43,7 +43,7 @@ function E(e, t) {
 function b(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = f.Z.getVoiceChannelId();
-  if (!t && !g(e, n) || (p.Z.initialize(), i.default.selectVoiceChannel(e.id), (n = f.Z.getVoiceChannelId()) !== e.id)) returnfalse;
+  if (!t && !g(e, n) || (_.Z.initialize(), i.default.selectVoiceChannel(e.id), (n = f.Z.getVoiceChannelId()) !== e.id)) returnfalse;
   let r = l.Z.getAllApplicationStreamsForChannel(e.id);
   return r.length > 0 && (0, a.rn)(r[0], {
     noFocus: false
@@ -55,9 +55,9 @@ function y(e) {
     n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = f.Z.getVoiceChannelId();
-  !(!r && i !== e.id && (0, o._)(e) && _.Gy(e, () => y(e, t, n, true))) && b(e, t) && O(e, i)
+  !(!r && i !== e.id && (0, o._)(e) && p.Gy(e, () => y(e, t, n, true))) && b(e, t) && O(e, i)
 }
 
 function O(e, t) {
-  _.R5(e, t)
+  p.R5(e, t)
 }

@@ -22,12 +22,12 @@ let d = e => {
     className: a,
     minValue: d,
     maxValue: f
-  } = e, [_, p] = i.useState(t), h = u(_) || null != d && _ <= d, m = u(_) || null != f && _ >= f, g = e => {
-    n(u(e) ? null != d ? d : 0 : e), p(e)
+  } = e, [p, _] = i.useState(t), m = u(p) || null != d && p <= d, h = u(p) || null != f && p >= f, g = e => {
+    n(u(e) ? null != d ? d : 0 : e), _(e)
   }, E = e => {
-    e.stopPropagation(), h || g(_ - 1)
+    e.stopPropagation(), m || g(p - 1)
   }, b = e => {
-    e.stopPropagation(), m || g(_ + 1)
+    e.stopPropagation(), h || g(p + 1)
   }, y = e => {
     if (u(e)) return g(e);
     let t = parseInt(e);
@@ -41,11 +41,11 @@ let d = e => {
       icon: s.V_R,
       onClick: E,
       "aria-label": l.intl.string(l.t["k+ohJm"]),
-      disabled: h
+      disabled: m
     }), (0, r.jsx)("div", {
       className: c.value,
       children: (0, r.jsx)(s.oil, {
-        value: "".concat(_),
+        value: "".concat(p),
         onChange: y
       })
     }), (0, r.jsx)(s.hU, {
@@ -54,7 +54,7 @@ let d = e => {
       icon: s.qJs,
       onClick: b,
       "aria-label": l.intl.string(l.t.w8Sc4B),
-      disabled: m
+      disabled: h
     })]
   })
 }

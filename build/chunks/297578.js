@@ -50,7 +50,7 @@ var Chunk117242 = require("./117242.js"),
     if (s) return void i[s].children.push(l);
     n.push(l)
   },
-  _ = function(e, t) {
+  p = function(e, t) {
     var n = t.entityMap,
       r = [],
       i = {},
@@ -69,7 +69,7 @@ var Chunk117242 = require("./117242.js"),
       entityMap: n
     }
   },
-  p = function(e, t) {
+  _ = function(e, t) {
     var n = t.blocks,
       r = t.entityMap,
       i = {};
@@ -90,5 +90,5 @@ module.exports = function(e) {
     entityMap: {},
     blocks: []
   };
-  return t = _(e, t), t = p(e, t)
+  return t = p(e, t), t = _(e, t)
 }

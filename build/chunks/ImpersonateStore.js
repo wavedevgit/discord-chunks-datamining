@@ -15,7 +15,7 @@ var r, Chunk95015 = require("./95015.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,7 +49,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -60,7 +60,7 @@ function b(e) {
     guildId: t,
     data: n
   } = e;
-  delete n.roles[u.default.castGuildIdAsEveryoneGuildRoleId(t)], E[t] = g(h({}, n), {
+  delete n.roles[u.default.castGuildIdAsEveryoneGuildRoleId(t)], E[t] = g(m({}, n), {
     timestamp: Date.now()
   })
 }
@@ -95,11 +95,11 @@ function v(e) {
   return u.default.keys(r).forEach(e => {
     var t;
     let n = r[e];
-    i.yE(null != (t = n.flags) ? t : 0, _.ic.OPT_IN_ENABLED) ? o.add(e) : o.delete(e)
+    i.yE(null != (t = n.flags) ? t : 0, p.ic.OPT_IN_ENABLED) ? o.add(e) : o.delete(e)
   }), a.optInChannels = o, true
 }
 
-function I(e) {
+function S(e) {
   var t;
   let {
     guildId: n,
@@ -114,7 +114,7 @@ function I(e) {
   return null != a && a.length > 0 && a.forEach(e => s.delete(e)), i ? s.add(r) : s.delete(r), o.onboardingResponses = s, true
 }
 
-function T(e) {
+function I(e) {
   let {
     guildId: t,
     roles: n,
@@ -127,7 +127,7 @@ function T(e) {
     return null != r && (e[n] = r), e
   }, {})), null != r && i.type === d.z.NEW_MEMBER && (i.memberOptions.flags = r), true)
 }
-class S extends(r = Chunk442837.ZP.Store) {
+class T extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk485386.Z)
   }
@@ -200,12 +200,12 @@ class S extends(r = Chunk442837.ZP.Store) {
     }
   }
 }
-p(S, "displayName", "ImpersonateStore");
-let A = new S(Chunk570140.Z, {
+_(T, "displayName", "ImpersonateStore");
+let A = new T(Chunk570140.Z, {
   IMPERSONATE_UPDATE: b,
   IMPERSONATE_STOP: y,
   GUILD_ROLE_DELETE: O,
   USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: v,
-  GUILD_ONBOARDING_SELECT_OPTION: I,
-  GUILD_MEMBER_UPDATE_LOCAL: T
+  GUILD_ONBOARDING_SELECT_OPTION: S,
+  GUILD_MEMBER_UPDATE_LOCAL: I
 })

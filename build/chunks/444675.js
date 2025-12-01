@@ -53,10 +53,10 @@ var c = [],
   d = false;
 
 function f() {
-  u && r && (u = false, r.length ? c = r.concat(c) : d = false, c.length && _())
+  u && r && (u = false, r.length ? c = r.concat(c) : d = false, c.length && p())
 }
 
-function _() {
+function p() {
   if (!u) {
     var e = s(f);
     u = true;
@@ -68,19 +68,19 @@ function _() {
   }
 }
 
-function p(e, t) {
+function _(e, t) {
   this.fun = e, this.array = t
 }
 
-function h() {}
+function m() {}
 i.nextTick = function(e) {
   var t = Array(arguments.length - 1);
   if (arguments.length > 1)
     for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-  c.push(new p(e, t)), 1 !== c.length || u || s(_)
-}, p.prototype.run = function() {
+  c.push(new _(e, t)), 1 !== c.length || u || s(p)
+}, _.prototype.run = function() {
   this.fun.apply(null, this.array)
-}, i.title = "browser", i.browser = true, i.env = {}, i.argv = [], i.version = "", i.versions = {}, i.on = h, i.addListener = h, i.once = h, i.off = h, i.removeListener = h, i.removeAllListeners = h, i.emit = h, i.prependListener = h, i.prependOnceListener = h, i.listeners = function(e) {
+}, i.title = "browser", i.browser = true, i.env = {}, i.argv = [], i.version = "", i.versions = {}, i.on = m, i.addListener = m, i.once = m, i.off = m, i.removeListener = m, i.removeAllListeners = m, i.emit = m, i.prependListener = m, i.prependOnceListener = m, i.listeners = function(e) {
   return []
 }, i.binding = function(e) {
   throw Error("process.binding is not supported")

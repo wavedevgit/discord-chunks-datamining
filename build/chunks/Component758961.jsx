@@ -35,23 +35,23 @@ function w(e) {
     existingSound: O,
     onClose: Z,
     transitionState: P,
-    showGuildPicker: M = false
-  } = e, [E, k] = a.useState(null != (t = null != (n = null == S ? true : S.name) ? n : null == O ? true : O.name) ? t : ""), [I, T] = a.useState(null != (i = null == O ? true : O.volume) ? i : 1), [D, F] = a.useState(null == O ? true : O.emojiId), [R, B] = a.useState(null == O ? true : O.emojiName), {
-    file: _,
-    loadAudioFromFile: U,
+    showGuildPicker: E = false
+  } = e, [M, k] = a.useState(null != (t = null != (n = null == S ? true : S.name) ? n : null == O ? true : O.name) ? t : ""), [I, T] = a.useState(null != (i = null == O ? true : O.volume) ? i : 1), [D, F] = a.useState(null == O ? true : O.emojiId), [R, B] = a.useState(null == O ? true : O.emojiName), {
+    file: U,
+    loadAudioFromFile: _,
     maxVolume: z,
     setMaxVolume: G
-  } = (0, v.p)(), [L, H] = a.useState(false), [V, A] = a.useState(null), [W, Y] = a.useState(null), [q, J] = a.useState("ready"), [K, Q] = a.useState(C);
+  } = (0, v.p)(), [L, H] = a.useState(false), [V, W] = a.useState(null), [A, q] = a.useState(null), [Y, J] = a.useState("ready"), [Q, K] = a.useState(C);
   async function X(e) {
     try {
-      await U(null != e ? e : null), J("ready"), A(null)
+      await _(null != e ? e : null), J("ready"), W(null)
     } catch (e) {
       $(e)
     }
   }
 
   function $(e) {
-    if (e instanceof u.Z) A(e);
+    if (e instanceof u.Z) W(e);
     else if (e instanceof Error) {
       let n = {
         status: 500,
@@ -59,19 +59,19 @@ function w(e) {
           message: e.message
         }
       };
-      A(new u.Z(n))
-    } else A(new u.Z(e))
+      W(new u.Z(n))
+    } else W(new u.Z(e))
   }
   a.useEffect(() => {
     (null == S ? true : S.file) != null && e(S.file);
     async function e(e) {
       try {
-        await U(e), J("ready"), A(null)
+        await _(e), J("ready"), W(null)
       } catch (e) {
         $(e)
       }
     }
-  }, [null == S ? true : S.file, U]);
+  }, [null == S ? true : S.file, _]);
   let ee = function(e) {
       switch (e) {
         case "encoding":
@@ -82,14 +82,14 @@ function w(e) {
           return x.intl.string(x.t.ndr58Q)
       }
       return null
-    }(q),
-    en = "uploading" === q || "encoding" === q,
+    }(Y),
+    en = "uploading" === Y || "encoding" === Y,
     et = null != O,
-    el = E.length >= 2 && (et || null != _) && null != K && function(e) {
+    el = M.length >= 2 && (et || null != U) && null != Q && function(e) {
       if (null == e) returntrue;
       let n = (e.endMs - e.startMs) / 1e3;
       return n > 0 && n <= y.YW
-    }(W),
+    }(A),
     ea = a.useCallback(async (e, n) => {
       J("encoding");
       try {
@@ -100,11 +100,11 @@ function w(e) {
       }
     }, []),
     ei = a.useCallback(async () => {
-      if (null == _) return;
-      r()(null != K, "Cannot submit soundboard sound with no guildId");
-      let e = _;
-      if (null != W) {
-        let n = await ea(_, W);
+      if (null == U) return;
+      r()(null != Q, "Cannot submit soundboard sound with no guildId");
+      let e = U;
+      if (null != A) {
+        let n = await ea(U, A);
         if (null == n) return;
         e = n
       }
@@ -113,8 +113,8 @@ function w(e) {
       try {
         await (0, p.bb)({
           readPromise: n,
-          guildId: K,
-          name: E,
+          guildId: Q,
+          name: M,
           volume: I,
           emojiId: D,
           emojiName: R
@@ -122,14 +122,14 @@ function w(e) {
       } catch (e) {
         throw new u.Z(e)
       }
-    }, [_, K, E, ea, W, I, D, R]),
+    }, [U, Q, M, ea, A, I, D, R]),
     er = a.useCallback(async () => {
-      r()(null != K, "Cannot submit soundboard sound with no guildId"), H(true), A(null);
+      r()(null != Q, "Cannot submit soundboard sound with no guildId"), H(true), W(null);
       try {
         et ? await (0, g.$d)({
-          guildId: K,
+          guildId: Q,
           soundId: O.soundId,
-          name: E,
+          name: M,
           volume: I,
           emojiId: D,
           emojiName: R
@@ -139,17 +139,17 @@ function w(e) {
       } finally {
         J("ready"), H(false), T(1), G(1)
       }
-    }, [et, Z, K, O, E, I, D, R, ei, G]);
+    }, [et, Z, Q, O, M, I, D, R, ei, G]);
   (0, c.ZP)(() => {
-    U(null), m.default.track(j.rMx.OPEN_MODAL, {
+    _(null), m.default.track(j.rMx.OPEN_MODAL, {
       type: "Soundboard Upload Sound",
-      guild_id: K
+      guild_id: Q
     })
   }), a.useEffect(() => {
     T(Math.min(I, z))
   }, [I, T, z]);
   let es = (0, l.jsx)(d.Z, {
-      guildId: K,
+      guildId: Q,
       emojiId: D,
       emojiName: R,
       setEmojiId: F,
@@ -178,21 +178,21 @@ function w(e) {
       children: [null != V && !V.hasFieldErrors() && (0, l.jsx)(s.M14, {
         type: "critical",
         children: V.message
-      }), M ? (0, l.jsx)(b.Z, {
+      }), E ? (0, l.jsx)(b.Z, {
         label: x.intl.string(x.t.UYt7iQ),
-        value: K,
-        onChange: Q
-      }) : null, (et || null != _) && (0, l.jsx)(h.Z, {
+        value: Q,
+        onChange: K
+      }) : null, (et || null != U) && (0, l.jsx)(h.Z, {
         sound: O,
         volume: I,
         disabled: en,
-        onChange: Y
+        onChange: q
       }), et || null != S ? null : (0, l.jsx)(s.gNt, {
         required: true,
         errorMessage: null == V ? true : V.getFirstFieldErrorMessage("sound"),
         label: x.intl.string(x.t.sSHaG7),
         children: (0, l.jsx)(f.Z, {
-          filename: null != (w = null == _ ? true : _.name) ? w : "",
+          filename: null != (w = null == U ? true : U.name) ? w : "",
           buttonText: x.intl.string(x.t.zpi3XG),
           placeholder: x.intl.string(x.t["x+YUL9"]),
           onFileSelect: X,
@@ -204,7 +204,7 @@ function w(e) {
           label: x.intl.string(x.t.NpJGaM),
           placeholder: x.intl.string(x.t.NpJGaM),
           error: null == V ? true : V.getFirstFieldErrorMessage("name"),
-          value: E,
+          value: M,
           onChange: k,
           maxLength: y.Ek
         }), es]

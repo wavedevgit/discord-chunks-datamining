@@ -2,7 +2,7 @@
 /** chunk id: 576799, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk217702 = require("./217702.js"),
   Chunk724913 = require("./724913.js");
 
-function p(e) {
+function _(e) {
   let {
     message: t,
     channel: n
@@ -26,45 +26,45 @@ function p(e) {
   } = (0, a.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlockedForMessage(t),
     isIgnored: d.Z.isIgnoredForMessage(t)
-  }), [t]), p = (0, s.p)(), m = i.useMemo(() => ({
+  }), [t]), _ = (0, s.p)(), h = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
-  (0, o.$)(m, "ThreadMessageAccessoryMessage");
+  (0, o.$)(h, "ThreadMessageAccessoryMessage");
   let g = i.useMemo(() => null != t.content && "" !== t.content ? (0, l.ZP)(t, {
     formatInline: true,
-    shouldFilterKeywords: p
-  }).content : null, [t, p]);
+    shouldFilterKeywords: _
+  }).content : null, [t, _]);
   return (0, r.jsxs)("div", {
-    className: _.threadMessageAccessory,
+    className: p.threadMessageAccessory,
     children: [(0, r.jsx)("img", {
       alt: "",
       src: t.author.getAvatarURL(n.guild_id, 16),
-      className: _.threadMessageAccessoryAvatar
+      className: p.threadMessageAccessoryAvatar
     }), (0, r.jsx)(u.Z, {
       message: t,
       channel: n,
       compact: true
     }), (0, r.jsx)("div", {
-      className: _.threadMessageAccessoryPreview,
-      children: h(t, g, c, f)
+      className: p.threadMessageAccessoryPreview,
+      children: m(t, g, c, f)
     })]
   })
 }
 
-function h(e, t, n, i) {
+function m(e, t, n, i) {
   let {
     contentPlaceholder: a,
     renderedContent: o,
     leadingIcon: s,
     trailingIcon: l
-  } = (0, c.f)(e, t, n, i, _.threadMessageAccessoryContent, {
-    trailingIconClass: _.threadMessageAccessoryContentTrailingIcon,
-    leadingIconClass: _.threadMessageAccessoryContentLeadingIcon,
+  } = (0, c.f)(e, t, n, i, p.threadMessageAccessoryContent, {
+    trailingIconClass: p.threadMessageAccessoryContentTrailingIcon,
+    leadingIconClass: p.threadMessageAccessoryContentLeadingIcon,
     iconSize: f.WW
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [s, null != o ? o : (0, r.jsx)("span", {
-      className: _.threadMessageAccessoryPlaceholder,
+      className: p.threadMessageAccessoryPlaceholder,
       children: a
     }), l]
   })

@@ -19,24 +19,24 @@ function u(e) {
     shouldAnimate: u = true,
     defaultAnimationState: d,
     idleAnimationState: f
-  } = e, _ = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [p, h] = i.useState(d), m = i.useRef((0, l._)(t, p)), [g, E] = i.useState(null == f), [b, y] = i.useState(false), [O, v] = i.useState(false), I = () => {
-    m.current = (0, l._)(t, p), v(e => e + 1)
-  }, T = () => {
-    E(false), y(true), v(false), h(d)
+  } = e, p = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [_, m] = i.useState(d), h = i.useRef((0, l._)(t, _)), [g, E] = i.useState(null == f), [b, y] = i.useState(false), [O, v] = i.useState(false), S = () => {
+    h.current = (0, l._)(t, _), v(e => e + 1)
+  }, I = () => {
+    E(false), y(true), v(false), m(d)
   };
   i.useEffect(() => {
-    null == f && h(d)
+    null == f && m(d)
   }, [f, d]);
-  let S = {
-      applyAnimation: I,
+  let T = {
+      applyAnimation: S,
       idleAnimationState: f,
       isChanging: b,
-      resetAnimation: T,
+      resetAnimation: I,
       versionKey: O
     },
-    A = i.useRef(S);
+    A = i.useRef(T);
   i.useEffect(() => {
-    A.current = S
+    A.current = T
   }), i.useEffect(() => {
     let {
       resetAnimation: e,
@@ -52,7 +52,7 @@ function u(e) {
       idleAnimationState: n
     } = A.current;
     t && null != n || e()
-  }, [p]), i.useEffect(() => {
+  }, [_]), i.useEffect(() => {
     let {
       applyAnimation: e,
       idleAnimationState: t
@@ -60,12 +60,12 @@ function u(e) {
     b && (E(null == t), y(false), e())
   }, [b]);
   let C = () => {
-    null != f && (h(f), E(true))
+    null != f && (m(f), E(true))
   };
   if (!c.Cj.hasOwnProperty(t)) throw Error("Unexpected giftStyle ".concat(t));
   return (0, r.jsx)(o.Fmz, {
-    importData: m.current,
-    shouldAnimate: !_ && u,
+    importData: h.current,
+    shouldAnimate: !p && u,
     className: n,
     versionKey: O,
     onComplete: null != f ? C : true,

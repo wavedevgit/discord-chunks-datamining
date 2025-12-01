@@ -17,13 +17,13 @@ function l(e) {
     layoutDelegate: n
   } = e, l = (0, i.q)(e), c = (0, o.useMemo)(() => e.disabledKeys ? new Set(e.disabledKeys) : new Set, [e.disabledKeys]), d = (0, o.useCallback)(e => new(0, r.D)(t ? t(e) : e), [t]), f = (0, o.useMemo)(() => ({
     suppressTextValueWarning: e.suppressTextValueWarning
-  }), [e.suppressTextValueWarning]), _ = (0, s.K)(e, d, f), p = (0, o.useMemo)(() => new(0, a.Z)(_, l, {
+  }), [e.suppressTextValueWarning]), p = (0, s.K)(e, d, f), _ = (0, o.useMemo)(() => new(0, a.Z)(p, l, {
     layoutDelegate: n
-  }), [_, l, n]);
-  return u(_, p), {
-    collection: _,
+  }), [p, l, n]);
+  return u(p, _), {
+    collection: p,
     disabledKeys: c,
-    selectionManager: p
+    selectionManager: _
   }
 }
 
@@ -51,18 +51,18 @@ function u(e, t) {
           let n = e.getItem(t);
           return (null == n ? true : n.type) === "item" ? n : null
         }).filter(e => null !== e),
-        _ = (null != (r = null == d ? true : d.length) ? r : 0) - (null != (i = null == f ? true : f.length) ? i : 0),
-        p = Math.min(_ > 1 ? Math.max((null != (a = null == u ? true : u.index) ? a : 0) - _ + 1, 0) : null != (o = null == u ? true : u.index) ? o : 0, (null != (s = null == f ? true : f.length) ? s : 0) - 1),
-        h = null,
-        m = false;
-      for (; p >= 0;) {
-        if (!t.isDisabled(f[p].key)) {
-          h = f[p];
+        p = (null != (r = null == d ? true : d.length) ? r : 0) - (null != (i = null == f ? true : f.length) ? i : 0),
+        _ = Math.min(p > 1 ? Math.max((null != (a = null == u ? true : u.index) ? a : 0) - p + 1, 0) : null != (o = null == u ? true : u.index) ? o : 0, (null != (s = null == f ? true : f.length) ? s : 0) - 1),
+        m = null,
+        h = false;
+      for (; _ >= 0;) {
+        if (!t.isDisabled(f[_].key)) {
+          m = f[_];
           break
         }
-        p < f.length - 1 && !m ? p++ : (m = true, p > (null != (l = null == u ? true : u.index) ? l : 0) && (p = null != (c = null == u ? true : u.index) ? c : 0), p--)
+        _ < f.length - 1 && !h ? _++ : (h = true, _ > (null != (l = null == u ? true : u.index) ? l : 0) && (_ = null != (c = null == u ? true : u.index) ? c : 0), _--)
       }
-      t.setFocusedKey(h ? h.key : null)
+      t.setFocusedKey(m ? m.key : null)
     }
     n.current = e
   }, [e, t])

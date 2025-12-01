@@ -50,7 +50,7 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function p(e) {
   return {
     id: e.id,
     tags: e.tags,
@@ -66,13 +66,13 @@ function _(e) {
   }
 }
 
-function p(e) {
+function _(e) {
   let t = {};
-  for (let n of e) t[n.id] = _(n);
+  for (let n of e) t[n.id] = p(n);
   return t
 }
 
-function h(e, t) {
+function m(e, t) {
   let n = [],
     {
       tags: r
@@ -106,7 +106,7 @@ function h(e, t) {
   }
   return n
 }
-class m extends Chunk429091.d {
+class h extends Chunk429091.d {
   constructor(...e) {
     super(...e), c(this, "getAllGuildStickers", this.memoized(e => {
       let t = new Map;
@@ -115,38 +115,38 @@ class m extends Chunk429091.d {
     })), c(this, "getStickersByGuildId", this.memoizedPartition((e, t) => Object.values(t))), c(this, "getStickerMetadataMap", this.memoized(e => {
       let t = new Map;
       for (let n in e)
-        for (let [r, i] of Object.entries(e[n].root)) t.set(r, h(n, i));
+        for (let [r, i] of Object.entries(e[n].root)) t.set(r, m(n, i));
       return t
     })), c(this, "getStickerById", this.memoizedSecondaryIndex())
   }
 }
-c(m, "displayName", "GuildStickersStore");
-let g = new m({
+c(h, "displayName", "GuildStickersStore");
+let g = new h({
   LOGOUT: (e, t) => t.reset(),
   BACKGROUND_SYNC: (e, t) => t.reset(),
   CONNECTION_OPEN: (e, t) => {
     let n = new Set(t.getPartitionKeys());
-    for (let r of e.guilds) n.delete(r.id), null != r.stickers.items && t.setPartition(r.id, p(r.stickers.items));
+    for (let r of e.guilds) n.delete(r.id), null != r.stickers.items && t.setPartition(r.id, _(r.stickers.items));
     for (let t of e.unavailableGuilds) n.delete(t);
     for (let e of n) t.removePartition(e)
   },
   GUILD_CREATE: (e, t) => {
     var n;
     if (null == e.guild.joined_at || null == e.guild.stickers.items) returnfalse;
-    t.setPartition(e.guild.id, p(null != (n = e.guild.stickers.items) ? n : []))
+    t.setPartition(e.guild.id, _(null != (n = e.guild.stickers.items) ? n : []))
   },
   GUILD_DELETE: (e, t) => {
     t.removePartition(e.guild.id)
   },
   GUILD_STICKERS_CREATE_SUCCESS: (e, t) => {
-    t.set(e.guildId, e.sticker.id, _(e.sticker))
+    t.set(e.guildId, e.sticker.id, p(e.sticker))
   },
   GUILD_STICKER_FETCH_SUCCESS: (e, t) => {
-    t.set(e.sticker.guild_id, e.sticker.id, _(e.sticker))
+    t.set(e.sticker.guild_id, e.sticker.id, p(e.sticker))
   },
   GUILD_STICKERS_UPDATE: (e, t) => {
     let n = t.getPartition(e.guildId),
-      r = p(e.stickers);
+      r = _(e.stickers);
     if (null != n)
       for (let e in r) {
         let t = r[e],
@@ -158,9 +158,9 @@ let g = new m({
     t.setPartition(e.guildId, r)
   },
   CACHED_STICKERS_LOADED: (e, t) => {
-    for (let [n, r] of e.stickers) t.setPartition(n, p(r))
+    for (let [n, r] of e.stickers) t.setPartition(n, _(r))
   },
   GUILD_STICKERS_FETCH_SUCCESS: (e, t) => {
-    t.setPartition(e.guildId, p(e.stickers))
+    t.setPartition(e.guildId, _(e.stickers))
   }
 }, Chunk894276.iZ.getCachedBridgedStoreMode())

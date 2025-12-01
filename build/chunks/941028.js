@@ -72,7 +72,7 @@ function u(e) {
   }
   let d = s(.5 * a),
     f = s(r, -d),
-    _ = s(r + a, d);
-  for (f > 0 && (f = Math.max(u(0), f)), f = Math.floor(f / i.dj) * i.dj; f <= _;) f = u(f);
+    p = s(r + a, d);
+  for (f > 0 && (f = Math.max(u(0), f)), f = Math.floor(f / i.dj) * i.dj; f <= p;) f = u(f);
   c(t, n, l)
 }

@@ -62,34 +62,34 @@ function O(e, t) {
   let {
     disabled: n,
     type: a
-  } = e, [g, b] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), O = false, v = g === p.X1.STICKER, I = false, T = i.useCallback(() => {
-    (0, d.RO)(p.X1.STICKER, a)
+  } = e, [g, b] = (0, d.Iu)(e => [e.activeView, e.pickerId], s.X), O = false, v = g === _.X1.STICKER, S = false, I = i.useCallback(() => {
+    (0, d.RO)(_.X1.STICKER, a)
   }, [a]), {
-    Component: S,
+    Component: T,
     events: A,
     play: C
   } = (0, l.z)(), N = (0, f.v)(u.U);
   return n ? null : (0, r.jsx)("div", {
-    className: o()(p.CT, m.buttonContainer),
+    className: o()(_.CT, h.buttonContainer),
     ref: t,
     children: (0, r.jsx)(c.u, {
       shouldShow: null != N,
-      text: h.intl.string(h.t.oOJ7KU),
+      text: m.intl.string(m.t.oOJ7KU),
       keyboardShortcut: N,
-      children: (0, r.jsx)(_.Z, y(E({
-        className: o()(m.button, m.stickerButton)
+      children: (0, r.jsx)(p.Z, y(E({
+        className: o()(h.button, h.stickerButton)
       }, A), {
         onClick: () => {
-          T(), C()
+          I(), C()
         },
         isActive: v,
-        "aria-label": h.intl.string(h.t.rZpidU),
+        "aria-label": m.intl.string(m.t.rZpidU),
         "aria-expanded": v,
         "aria-haspopup": "dialog",
         "aria-controls": b,
         sparkle: O,
-        notification: I ? _.j.UPDATE : null,
-        children: (0, r.jsx)(S, {
+        notification: S ? p.j.UPDATE : null,
+        children: (0, r.jsx)(T, {
           size: "refresh_sm",
           color: "currentColor"
         })

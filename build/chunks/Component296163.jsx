@@ -2,7 +2,7 @@
 /** chunk id: 296163, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,21 +24,21 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e) {
-  return (0, r.jsx)(o.u_l, p({
+function m(e) {
+  return (0, r.jsx)(o.u_l, _({
     size: "md",
     title: f.intl.string(f.t.NYklhr),
     subtitle: f.intl.string(f.t.EJ26Oh),
@@ -58,14 +58,14 @@ function h(e) {
   }, e))
 }
 
-function m() {
+function h() {
   let e = (0, Chunk442837.e7)([Chunk269647.Z], () => Chunk269647.Z.shouldShowWarning(), []),
     t = Chunk473749.useRef(null);
 
   function n() {
     null !== exports.current && ((0, Chunk481060.Mr3)(exports.current), exports.current = null)
   }
-  return Chunk473749.useEffect(() => (module ? exports.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(h, p({}, e))) : require(), () => {
+  return Chunk473749.useEffect(() => (module ? exports.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(m, _({}, e))) : require(), () => {
     require()
   }), [module]), null
 }

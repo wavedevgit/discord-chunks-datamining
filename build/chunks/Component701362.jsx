@@ -2,7 +2,7 @@
 /** chunk id: 701362, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -39,7 +39,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function R(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,15 +63,15 @@ function P(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
-  var n, r, i = L(e, t);
+  var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -79,14 +79,14 @@ function w(e, t) {
   return i
 }
 
-function L(e, t) {
+function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class x extends Chunk473749.PureComponent {
+class L extends Chunk473749.PureComponent {
   componentDidMount() {
     let {
       user: e,
@@ -112,7 +112,7 @@ class x extends Chunk473749.PureComponent {
     return (0, r.jsxs)(l.P3F, {
       onClick: t,
       className: C.previewContainer,
-      children: [(0, r.jsx)(T.Z, {
+      children: [(0, r.jsx)(I.Z, {
         className: C.previewImage,
         stream: e
       }), a ? (0, r.jsx)("div", {
@@ -121,7 +121,7 @@ class x extends Chunk473749.PureComponent {
           variant: "text-sm/normal",
           color: "none",
           className: C.white,
-          children: (0, I.Z)(e, n, i, o)
+          children: (0, S.Z)(e, n, i, o)
         })
       }) : null]
     })
@@ -176,15 +176,15 @@ class x extends Chunk473749.PureComponent {
   }
 }
 
-function M(e) {
+function j(e) {
   var {
     user: t,
     channel: n
-  } = e, a = w(e, ["user", "channel"]);
-  let [o, l] = (0, s.Wu)([b.Z, m.Z, g.Z, _.default], () => (0, O.p9)(n, b.Z, m.Z, g.Z, _.default)), c = (0, s.e7)([p.Z], () => p.Z.getStreamForUser(t.id, n.getGuildId())), d = (0, s.e7)([p.Z], () => p.Z.getActiveStreamForApplicationStream(c)), f = (0, s.e7)([h.default], () => h.default.getId()), y = (0, v.Cf)(c), I = (0, s.e7)([E.Z], () => (0, v.Um)(c, E.Z)), T = i.useMemo(() => ({
+  } = e, a = D(e, ["user", "channel"]);
+  let [o, l] = (0, s.Wu)([b.Z, h.Z, g.Z, p.default], () => (0, O.p9)(n, b.Z, h.Z, g.Z, p.default)), c = (0, s.e7)([_.Z], () => _.Z.getStreamForUser(t.id, n.getGuildId())), d = (0, s.e7)([_.Z], () => _.Z.getActiveStreamForApplicationStream(c)), f = (0, s.e7)([m.default], () => m.default.getId()), y = (0, v.Cf)(c), S = (0, s.e7)([E.Z], () => (0, v.Um)(c, E.Z)), I = i.useMemo(() => ({
     [n.guild_id]: [t.id]
   }), [n.guild_id, t.id]);
-  return (0, u.$)(T, "StreamPreviewPopout"), (0, r.jsx)(x, D(R({}, a), {
+  return (0, u.$)(I, "StreamPreviewPopout"), (0, r.jsx)(L, w(P({}, a), {
     canWatch: o,
     unavailableReason: l,
     user: t,
@@ -192,6 +192,6 @@ function M(e) {
     stream: c,
     activeStream: d,
     currentUserId: f,
-    activity: I
+    activity: S
   }))
 }

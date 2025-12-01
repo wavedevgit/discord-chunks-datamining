@@ -48,22 +48,22 @@ function d(e, t) {
   }), e
 }
 let f = null,
-  _ = new Map;
+  p = new Map;
 
-function p(e) {
+function _(e) {
   let {
     applicationId: t
   } = e;
-  _.set(t, true)
+  p.set(t, true)
 }
 
-function h(e) {
+function m(e) {
   let {
     applicationId: t,
     proxyTicket: n
   } = e, r = (0, o.ZP)(t);
-  if (null == r) return void _.delete(t);
-  _.delete(t), null != f && (f = null), f = {
+  if (null == r) return void p.delete(t);
+  p.delete(t), null != f && (f = null), f = {
     applicationId: t,
     url: r,
     connectedSince: Date.now(),
@@ -72,11 +72,11 @@ function h(e) {
   }
 }
 
-function m(e) {
+function h(e) {
   let {
     applicationId: t
   } = e;
-  _.delete(t)
+  p.delete(t)
 }
 
 function g(e) {
@@ -107,14 +107,14 @@ class b extends(r = Chunk442837.ZP.Store) {
   }
   isLaunchingFrame(e) {
     var t;
-    return null != e ? null != (t = _.get(e)) && t : _.size > 0
+    return null != e ? null != (t = p.get(e)) && t : p.size > 0
   }
 }
 l(b, "displayName", "FramesStore");
 let y = new b(Chunk570140.Z, {
-  FRAME_LAUNCH_START: p,
-  FRAME_LAUNCH: h,
-  FRAME_LAUNCH_FAIL: m,
+  FRAME_LAUNCH_START: _,
+  FRAME_LAUNCH: m,
+  FRAME_LAUNCH_FAIL: h,
   FRAME_STOP: g,
   FRAME_UPDATE_LAYOUT_MODE: E
 })

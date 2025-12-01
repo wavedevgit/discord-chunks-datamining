@@ -38,7 +38,7 @@ function E(e) {
       ownerId: t
     } = i.my(e);
     if (t !== o.default.getId()) {
-      let e = l.Z.getActivities(t).find(e => e.type === h.IIU.PLAYING);
+      let e = l.Z.getActivities(t).find(e => e.type === m.IIU.PLAYING);
       return {
         sourceName: null == e ? true : e.name,
         sourceApplicationId: null == e ? true : e.application_id,
@@ -47,18 +47,18 @@ function E(e) {
     }
   }
   let f = a.Z.getStreamerActiveStreamMetadata(),
-    _ = null == f ? true : f.pid,
-    p = null == f ? true : f.sourceName,
-    m = (() => {
+    p = null == f ? true : f.pid,
+    _ = null == f ? true : f.sourceName,
+    h = (() => {
       if (null == f) return r.ZP.getVisibleGame();
       {
-        let e = null != _ ? r.ZP.getGameForPID(_) : null,
-          t = null != p ? r.ZP.getGameForName(p) : null;
+        let e = null != p ? r.ZP.getGameForPID(p) : null,
+          t = null != _ ? r.ZP.getGameForName(_) : null;
         return null != e ? e : t
       }
     })(),
-    E = null != (t = null == f ? true : f.id) ? t : null == m ? true : m.id,
-    b = null != (n = null == f ? true : f.sourceName) ? n : null == m ? true : m.name,
+    E = null != (t = null == f ? true : f.id) ? t : null == h ? true : h.id,
+    b = null != (n = null == f ? true : f.sourceName) ? n : null == h ? true : h.name,
     y = c.Z.getChannelId(),
     O = null == b && null != y;
   if (O) {
@@ -68,14 +68,14 @@ function E(e) {
   return {
     sourceName: b,
     sourceApplicationId: E,
-    activity: g(u.Z.getActivities(false).find(e => e.type === h.IIU.PLAYING && e.application_id === E)),
+    activity: g(u.Z.getActivities(false).find(e => e.type === m.IIU.PLAYING && e.application_id === E)),
     isVoiceOnly: O
   }
 }
 
 function b(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "manual",
-    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : _.NJ.CLIP,
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : p.NJ.CLIP,
     r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : [],
     i = arguments.length > 4 ? arguments[4] : true,
     {
@@ -84,10 +84,10 @@ function b(e) {
       activity: l,
       isVoiceOnly: u
     } = E(e),
-    h = c.Z.getChannelId(),
+    m = c.Z.getChannelId(),
     g = c.Z.getGuildId(),
     b = new Set([o.default.getId()]);
-  null != h && (b = b.union(new Set(Object.keys(d.Z.getVoiceStatesForChannel(h)))));
+  null != m && (b = b.union(new Set(Object.keys(d.Z.getVoiceStatesForChannel(m)))));
   let y = "auto" === t;
   r.forEach(e => {
     let {
@@ -95,18 +95,18 @@ function b(e) {
     } = e;
     "userId" in t && null != t.userId && b.add(t.userId)
   });
-  let O = u && n === _.NJ.CLIP ? _.NJ.VOICE_CLIP : n;
+  let O = u && n === p.NJ.CLIP ? p.NJ.VOICE_CLIP : n;
   return {
     id: f.default.fromTimestamp(Date.now()),
-    version: p.Bg,
-    applicationName: null != a ? a : m.intl.string(m.t.qtSJxb),
+    version: _.Bg,
+    applicationName: null != a ? a : h.intl.string(h.t.qtSJxb),
     applicationId: s,
     activity: l,
     users: Array.from(b),
     clipMethod: t,
     isTemporary: y,
     guildId: null != g ? g : true,
-    channelId: null != h ? h : true,
+    channelId: null != m ? m : true,
     timeline: r,
     decision: i,
     length: 0,

@@ -4,7 +4,7 @@
 require.d(exports, {
   ER: () => d,
   kk: () => f,
-  s$: () => _
+  s$: () => p
 }), require("./388685.js"), require("./392711.js");
 var Chunk19780 = require("./19780.js"),
   Chunk5192 = require("./5192.js"),
@@ -41,7 +41,7 @@ function f(e, t) {
   return null
 }
 
-function _(e) {
+function p(e) {
   let t = o.Z.getStageInstanceByChannel(e.id);
   return {
     channel_id: e.id,

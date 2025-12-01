@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   Hf: () => v,
-  JT: () => T,
+  JT: () => I,
   Nk: () => y,
   Qm: () => A,
   VB: () => O,
   Xq: () => E,
-  YZ: () => S,
-  wi: () => I
+  YZ: () => T,
+  wi: () => S
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -23,7 +23,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk689079 = require("./689079.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,20 +32,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,7 +57,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -115,10 +115,10 @@ function b(e, t) {
 function y(e, t, n) {
   var r, i, a, o, s, c, u, d;
   let f = l.ZP.getUserState(),
-    _ = l.ZP.getContextState(e),
-    p = l.ZP.getApplicationState(n),
-    h = null != (d = null != (u = null == (i = f.result) || null == (r = i.sections) ? true : r[n]) ? u : null == (o = _.result) || null == (a = o.sections) ? true : a[n]) ? d : null == (c = p.result) || null == (s = c.sections) ? true : s[n];
-  return null == h ? true : h.descriptor
+    p = l.ZP.getContextState(e),
+    _ = l.ZP.getApplicationState(n),
+    m = null != (d = null != (u = null == (i = f.result) || null == (r = i.sections) ? true : r[n]) ? u : null == (o = p.result) || null == (a = o.sections) ? true : a[n]) ? d : null == (c = _.result) || null == (s = c.sections) ? true : s[n];
+  return null == m ? true : m.descriptor
 }
 
 function O(e, t, n) {
@@ -141,18 +141,18 @@ function v(e) {
   return [null == t ? true : t.result, null == n ? true : n.result]
 }
 
-function I(e) {
+function S(e) {
   let {
     context: t,
     filters: n,
     options: o,
     allowFetch: c
   } = e, u = "channel" === t.type ? t.channel.guild_id : null, d = (0, i.e7)([a.Z], () => a.Z.getGuild(u), [u]), {
-    descriptors: p,
-    commands: m,
+    descriptors: _,
+    commands: h,
     sectionedCommands: E,
     loading: b
-  } = (0, l.JK)(t, d, n, g(h({}, o), {
+  } = (0, l.JK)(t, d, n, g(m({}, o), {
     allowFetch: c
   })), [y, O] = r.useState(null), v = r.useMemo(() => {
     var e;
@@ -161,17 +161,17 @@ function I(e) {
   return r.useMemo(() => {
     let e = {
       loading: b,
-      commands: m,
-      activeSections: p,
+      commands: h,
+      activeSections: _,
       commandsByActiveSection: E,
       filteredSectionId: y,
       hasMoreAfter: false,
       placeholders: b ? v : [],
-      sectionDescriptors: p,
+      sectionDescriptors: _,
       filterSection: e => {
         O(e)
       },
-      scrollDown: _.dG4
+      scrollDown: p.dG4
     };
     if (null != y) {
       let t = E.find(e => e.section.id === y);
@@ -190,13 +190,13 @@ function I(e) {
           data: v
         }]
       }
-      e.commands = [...m, ...v]
+      e.commands = [...h, ...v]
     }
     return e
-  }, [b, m, p, E, y, v])
+  }, [b, h, _, E, y, v])
 }
 
-function T(e, t, n) {
+function I(e, t, n) {
   var r;
   let {
     descriptors: i,
@@ -209,7 +209,7 @@ function T(e, t, n) {
   }
 }
 
-function S(e, t) {
+function T(e, t) {
   let n = (0, l.PL)(true, true),
     i = (0, l.em)(e, true, true);
   return r.useMemo(() => {
@@ -236,14 +236,14 @@ function A(e, t, n) {
   return r.useMemo(() => {
     var e, r, s, l, c, u;
     let f = null != (c = null == (r = i.result) || null == (e = r.sections) ? true : e[t]) ? c : null == (s = a.result) ? true : s.sections[t],
-      _ = Object.values(null != (u = null == f ? true : f.commands) ? u : {}).map(e => null == e.rootCommand ? e : (0, d.Z8)({
+      p = Object.values(null != (u = null == f ? true : f.commands) ? u : {}).map(e => null == e.rootCommand ? e : (0, d.Z8)({
         rootCommand: e.rootCommand,
         command: e.rootCommand,
         applicationId: e.applicationId
       })).reduce((e, t) => (e[t.id] = t, e), {});
     return {
       application: null == f || null == (l = f.descriptor) ? true : l.application,
-      commands: n.map(e => _[e]).filter(o.lm)
+      commands: n.map(e => p[e]).filter(o.lm)
     }
   }, [null == i ? true : i.result, null == a ? true : a.result, t, n])
 }
@@ -255,11 +255,11 @@ let C = {
 
 function N(e, t) {
   let n = [];
-  for (let r = 0; r < e; r++) n.push(R(r, t));
+  for (let r = 0; r < e; r++) n.push(P(r, t));
   return n
 }
 
-function R(e, t) {
+function P(e, t) {
   return {
     type: t,
     inputType: u.iw.PLACEHOLDER,

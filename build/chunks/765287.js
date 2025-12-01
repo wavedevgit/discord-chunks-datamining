@@ -15,9 +15,9 @@ var Chunk524437 = require("./524437.js"),
 function u(e, t, n) {
   var u, d, f;
   if (__OVERLAY__) return l.BRd.DARK;
-  let _ = c.yW;
+  let p = c.yW;
   if (i.Z.syncForcedColors && "active" === i.Z.systemForcedColors && e !== c.zd.NO_PREFERENCE) return e;
   if (o.ZP.useSystemTheme === c.KW.ON && e !== c.zd.NO_PREFERENCE) return t[e];
-  let p = null == (u = a.Z.getAppearanceSettings()) ? true : u.theme;
-  return null != p ? p : _[null != (f = null == (d = s.Z.settings.appearance) ? true : d.theme) ? f : r.Q2.UNSET]
+  let _ = null == (u = a.Z.getAppearanceSettings()) ? true : u.theme;
+  return null != _ ? _ : p[null != (f = null == (d = s.Z.settings.appearance) ? true : d.theme) ? f : r.Q2.UNSET]
 }

@@ -87,42 +87,42 @@ let J = (0, Chunk663993.Un)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, V.getPlatform)(), d = s.tq || s.Em, m = (0, u.e7)([g.Z], () => g.Z.useForcedColors ? "yes" : "no"), G = i.useRef(document.body), Z = "".concat(m);
-    return (0, C.G)(), (0, P.G)("AppSkeleton"), (0, r.jsx)(U.w, {
+    } = e, a = (0, V.getPlatform)(), d = s.tq || s.Em, h = (0, u.e7)([g.Z], () => g.Z.useForcedColors ? "yes" : "no"), G = i.useRef(document.body), B = "".concat(h);
+    return (0, C.G)(), (0, R.G)("AppSkeleton"), (0, r.jsx)(U.w, {
       children: (0, r.jsxs)(E.Z, {
-        children: [(0, r.jsx)(W.Z, {
+        children: [(0, r.jsx)(Y.Z, {
           skipsSettingDefaultPageTitle: n
-        }), (0, r.jsx)(h.T, {
-          children: (0, r.jsx)(R.Z, {
+        }), (0, r.jsx)(m.T, {
+          children: (0, r.jsx)(P.Z, {
             children: (0, r.jsxs)(f.JcV, {
               containerRef: G,
-              children: [(0, r.jsx)(z.Co, {}), (0, r.jsx)(K.ZP, {}), (0, r.jsx)(c.OUJ, {}), (0, r.jsx)(x.Wu, {
-                appContext: X.IlC.APP,
+              children: [(0, r.jsx)(z.Co, {}), (0, r.jsx)(K.ZP, {}), (0, r.jsx)(c.OUJ, {}), (0, r.jsx)(L.Wu, {
+                appContext: Q.IlC.APP,
                 renderWindow: window,
-                children: (0, r.jsxs)(D.yP, {
+                children: (0, r.jsxs)(w.yP, {
                   children: [null != a ? (0, r.jsx)(ee, {}) : null, (0, r.jsxs)("div", {
-                    className: o()(Q.appAsidePanelWrapper, d && Q.mobileAppAsidePanelWrapper),
+                    className: o()(X.appAsidePanelWrapper, d && X.mobileAppAsidePanelWrapper),
                     children: [(0, r.jsx)(A.K, {}), (0, r.jsx)("div", {
-                      className: Q.notAppAsidePanel,
+                      className: X.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
-                      children: (0, r.jsx)(S.m, {
-                        children: (0, r.jsx)(L.OR, {
+                      children: (0, r.jsx)(T.m, {
+                        children: (0, r.jsx)(x.OR, {
                           children: (0, r.jsx)(b.Z.Provider, {
                             value: y.Z,
-                            children: (0, r.jsx)(T.p, {
-                              children: (0, r.jsxs)(k.ov, {
+                            children: (0, r.jsx)(I.p, {
+                              children: (0, r.jsxs)(M.ov, {
                                 children: [(0, r.jsx)("div", {
-                                  className: o()(d ? Q.mobileApp : Q.app),
+                                  className: o()(d ? X.mobileApp : X.app),
                                   children: t
-                                }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(f.nKe, {}), (0, r.jsx)(B.Z, {}), (0, r.jsx)(w.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(D.Un, {}), (0, r.jsx)(L.ot, {}), (0, r.jsx)(f.Ixi, {
-                                  appContext: X.IlC.APP
-                                }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(M.Z, {}), (0, r.jsx)(J, {}), (0, r.jsx)($, {}), (0, r.jsx)(j.Z, {})]
+                                }), (0, r.jsx)(p.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(f.nKe, {}), (0, r.jsx)(Z.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(f.Ixi, {
+                                  appContext: Q.IlC.APP
+                                }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(j.Z, {}), (0, r.jsx)(J, {}), (0, r.jsx)($, {}), (0, r.jsx)(k.Z, {})]
                               })
                             })
                           })
                         })
                       })
-                    }), (0, r.jsx)(I.Z, {}), (0, r.jsx)(Y.Z, {
+                    }), (0, r.jsx)(S.Z, {}), (0, r.jsx)(W.Z, {
                       mobile: d
                     }), (0, r.jsx)(N.Z, {
                       mobile: d
@@ -134,5 +134,5 @@ let J = (0, Chunk663993.Un)({
           })
         })]
       })
-    }, Z)
+    }, B)
   }

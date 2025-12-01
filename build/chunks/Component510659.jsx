@@ -4,7 +4,7 @@
 require.d(exports, {
   $m: () => d,
   NJ: () => u,
-  Xo: () => _,
+  Xo: () => p,
   yi: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -31,14 +31,14 @@ function d() {
     t(e.interactionType), r(e.interactionSource), o(e.interactionSourceId)
   }, []), f = Chunk473749.useCallback(e => {
     u(e)
-  }, []), _ = Chunk473749.useCallback(() => {
+  }, []), p = Chunk473749.useCallback(() => {
     d({
       interactionType: null,
       interactionSource: null,
       interactionSourceId: null
     })
-  }, [d]), [p, h] = Chunk473749.useState(false), [m, g] = Chunk473749.useState(null), [E] = Chunk473749.useState(new Chunk846519.V7), b = Chunk473749.useCallback(e => {
-    g(e), h(true), null === e ? E.stop() : E.start(l._1, () => h(false))
+  }, [d]), [_, m] = Chunk473749.useState(false), [h, g] = Chunk473749.useState(null), [E] = Chunk473749.useState(new Chunk846519.V7), b = Chunk473749.useCallback(e => {
+    g(e), m(true), null === e ? E.stop() : E.start(l._1, () => m(false))
   }, [E]);
   return Chunk473749.useEffect(() => {
     E.stop()
@@ -48,19 +48,19 @@ function d() {
     interactionSourceId: Chunk512722,
     onInteraction: d,
     setInteractionToast: b,
-    resetInteraction: _,
-    showInteractionToast: p,
-    interactionTypeSent: m,
+    resetInteraction: p,
+    showInteractionToast: _,
+    interactionTypeSent: h,
     interactionPopoutTargetRef: c,
     onInteractionPopoutTargetRefChange: f
-  }), [d, b, require, Chunk512722, p, module, m, _, c, f])
+  }), [d, b, require, Chunk512722, _, module, h, p, c, f])
 }
 
 function f() {
   return Chunk473749.useContext(c)
 }
 
-function _() {
+function p() {
   let e = f();
   return o()(null != module, "must use useUserProfileInteractionContext within a UserProfileInteractionContextProvider"), module
 }

@@ -35,7 +35,7 @@ function g(e) {
       analyticsLocation: s.Z.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
     });
   if (null == E) return null;
-  let b = i ? m.finePrintWithOverheadSeparator : m.finePrint,
+  let b = i ? h.finePrintWithOverheadSeparator : h.finePrint,
     y = E.invoiceItems.find(e => {
       let {
         subscriptionPlanId: t
@@ -46,22 +46,22 @@ function g(e) {
   let O = y.subscriptionPlanId,
     v = c.Z.get(O);
   a()(null != v, "Missing plan");
-  let I = (0, d.T4)(E.total, E.currency);
-  return v.interval === _.rV.YEAR ? t = h.intl.format(h.t["jPz/39"], {
-    price: I,
-    termsUrl: p.EYA.TERMS,
-    paidURL: p.EYA.PAID_TERMS,
-    privacyUrl: p.EYA.PRIVACY
-  }) : v.interval === _.rV.MONTH && (t = 1 === v.intervalCount ? h.intl.format(h.t.m27GpI, {
-    price: I,
-    termsUrl: p.EYA.TERMS,
-    paidURL: p.EYA.PAID_TERMS,
-    privacyUrl: p.EYA.PRIVACY
-  }) : h.intl.format(h.t["9xf5Vx"], {
-    price: I,
-    termsUrl: p.EYA.TERMS,
-    paidURL: p.EYA.PAID_TERMS,
-    privacyUrl: p.EYA.PRIVACY,
+  let S = (0, d.T4)(E.total, E.currency);
+  return v.interval === p.rV.YEAR ? t = m.intl.format(m.t["jPz/39"], {
+    price: S,
+    termsUrl: _.EYA.TERMS,
+    paidURL: _.EYA.PAID_TERMS,
+    privacyUrl: _.EYA.PRIVACY
+  }) : v.interval === p.rV.MONTH && (t = 1 === v.intervalCount ? m.intl.format(m.t.m27GpI, {
+    price: S,
+    termsUrl: _.EYA.TERMS,
+    paidURL: _.EYA.PAID_TERMS,
+    privacyUrl: _.EYA.PRIVACY
+  }) : m.intl.format(m.t["9xf5Vx"], {
+    price: S,
+    termsUrl: _.EYA.TERMS,
+    paidURL: _.EYA.PAID_TERMS,
+    privacyUrl: _.EYA.PRIVACY,
     intervalCount: v.intervalCount
   })), (0, r.jsx)(o.Text, {
     color: "text-muted",
@@ -76,7 +76,7 @@ function E(e) {
     subscription: t,
     withOverheadSeparator: n
   } = e;
-  return t.status === p.O0b.CANCELED || t.isPurchasedExternally ? null : (0, r.jsx)(g, {
+  return t.status === _.O0b.CANCELED || t.isPurchasedExternally ? null : (0, r.jsx)(g, {
     subscription: t,
     withOverheadSeparator: n
   })

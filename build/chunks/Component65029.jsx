@@ -2,7 +2,7 @@
 /** chunk id: 65029, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -31,15 +31,15 @@ let f = e => {
       })]
     })
   },
-  _ = e => {
+  p = e => {
     let {
       className: t,
       graphicPrimary: n,
       graphicSecondary: i,
       titlePrimary: s,
       titleSecondary: l,
-      isFavorite: _ = false,
-      emojiSubCategory: p = c.t0.NONE
+      isFavorite: p = false,
+      emojiSubCategory: _ = c.t0.NONE
     } = e;
     return (0, r.jsxs)("div", {
       className: a()(d.inspector, t),
@@ -52,10 +52,10 @@ let f = e => {
         children: [(0, r.jsxs)(o.Text, {
           className: d.titlePrimary,
           variant: "text-md/semibold",
-          children: [_ ? (0, r.jsx)(o.r7p, {
+          children: [p ? (0, r.jsx)(o.r7p, {
             size: "custom",
             color: "currentColor",
-            "aria-label": _ ? u.intl.formatToPlainString(u.t["+fdUkf"], {
+            "aria-label": p ? u.intl.formatToPlainString(u.t["+fdUkf"], {
               names: s
             }) : true,
             width: 15,
@@ -67,12 +67,12 @@ let f = e => {
           variant: "text-xs/normal",
           children: l
         })]
-      }), p === c.t0.NONE ? null != i && (0, r.jsx)("div", {
+      }), _ === c.t0.NONE ? null != i && (0, r.jsx)("div", {
         className: d.graphicSecondary,
         "aria-hidden": true,
         children: i
       }) : (0, r.jsx)(f, {
-        emojiSubCategory: p
+        emojiSubCategory: _
       })]
     })
   }

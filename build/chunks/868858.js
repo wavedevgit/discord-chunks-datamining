@@ -6,7 +6,7 @@ require.d(exports, {
 });
 let {
   Themes: r
-} = require("./15202.js").V, i = {
+} = require("./15202.js").VV, i = {
   Shadows: {
     SHADOW_BORDER: {
       [r.DARK]: {

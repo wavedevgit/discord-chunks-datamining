@@ -18,48 +18,48 @@ var Chunk54381 = require("./54381.js"),
   Chunk537509 = require("./537509.js"),
   Chunk491726 = require("./491726.js");
 
-function m(e) {
+function h(e) {
   let {
     channelId: t,
     messageId: n,
-    emoji: m,
+    emoji: h,
     useChatFontScaling: g,
     color: E,
     count: b,
     emojiSize: y
-  } = e, O = (0, a.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, m)), v = g ? h : p, I = i.useMemo(() => (0, _.Zn)(m, E, t, {
+  } = e, O = (0, a.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, h)), v = g ? m : _, S = i.useMemo(() => (0, p.Zn)(h, E, t, {
     key: O,
     messageId: n
-  }), [E, O, m, t, n]), [T, S] = i.useState(false), A = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), C = c.Yk.useSetting(), N = i.useCallback(() => {
+  }), [E, O, h, t, n]), [I, T] = i.useState(false), A = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), C = c.Yk.useSetting(), N = i.useCallback(() => {
     o.Z.dispatch({
       type: "BURST_REACTION_EFFECT_CLEAR",
       channelId: t,
       messageId: n,
-      emoji: m
+      emoji: h
     })
-  }, [m, t, n]);
+  }, [h, t, n]);
   return (i.useEffect(() => {
     let e = () => {
-      if (T) return;
-      let e = (0, d.vJ)("".concat(Date.now()).concat(t).concat(n).concat(m.name)) % 10;
-      (e += b > 4 ? 4 : b - 1) > 7 && (S(true), (0, l.T6)({
+      if (I) return;
+      let e = (0, d.vJ)("".concat(Date.now()).concat(t).concat(n).concat(h.name)) % 10;
+      (e += b > 4 ? 4 : b - 1) > 7 && (T(true), (0, l.T6)({
         channelId: t,
         messageId: n,
-        emoji: m,
+        emoji: h,
         key: u.I.RANDOM
       }))
     };
-    if (T || A && !C || !C) return;
+    if (I || A && !C || !C) return;
     e();
     let r = setInterval(e, 5e3);
     return () => {
       clearInterval(r)
     }
-  }, [C, t, b, m, m.name, T, n, A]), null == O) ? null : (0, r.jsx)(f.Z, {
+  }, [C, t, b, h, h.name, I, n, A]), null == O) ? null : (0, r.jsx)(f.Z, {
     className: v.effect,
-    effect: I,
+    effect: S,
     onComplete: N,
     emojiSize: y
   })
 }
-let g = Chunk473749.memo(m)
+let g = Chunk473749.memo(h)

@@ -2,7 +2,7 @@
 /** chunk id: 353903, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G0: () => m,
+  G0: () => h,
   u$: () => g
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
@@ -22,8 +22,8 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = 12,
-  _ = [Chunk692547.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, Chunk692547.Z.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"];
-class p extends Chunk473749.PureComponent {
+  p = [Chunk692547.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, Chunk692547.Z.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"];
+class _ extends Chunk473749.PureComponent {
   render() {
     let {
       props: {
@@ -43,11 +43,11 @@ class p extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     super(...e), d(this, "state", {
-      backgroundColor: s().sample(_)
+      backgroundColor: s().sample(p)
     })
   }
 }
-class h extends(r = Chunk473749.Component) {
+class m extends(r = Chunk473749.Component) {
   componentDidMount() {
     this.animateSlide()
   }
@@ -77,9 +77,9 @@ class h extends(r = Chunk473749.Component) {
     return (0, Chunk54381.jsxs)(Chunk748780.Z.div, {
       className: Chunk220581.column,
       style: this.getAnimatedStyle(),
-      children: [module.map((e, t) => (0, i.jsx)(p, {
+      children: [module.map((e, t) => (0, i.jsx)(_, {
         height: e
-      }, t)), module.map((e, t) => (0, i.jsx)(p, {
+      }, t)), module.map((e, t) => (0, i.jsx)(_, {
         height: e
       }, "alt".concat(t)))]
     })
@@ -109,10 +109,10 @@ class h extends(r = Chunk473749.Component) {
     }
   }
 }
-d(h, "defaultProps", {
+d(m, "defaultProps", {
   direction: false
 });
-let m = e => {
+let h = e => {
   let {
     columns: t
   } = e;

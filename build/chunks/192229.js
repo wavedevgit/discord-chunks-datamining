@@ -2,7 +2,7 @@
 /** chunk id: 192229, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./388685.js");
 var Chunk872810 = require("./872810.js"),
   Chunk147913 = require("./147913.js"),
@@ -22,7 +22,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class _ extends Chunk147913.Z {
+class p extends Chunk147913.Z {
   handleVoiceStateUpdates(e) {
     let {
       voiceStates: t
@@ -37,8 +37,8 @@ class _ extends Chunk147913.Z {
           var t;
           return (null == (t = f.application) ? true : t.id) != null && e.application_id === f.application.id
         })) continue;
-      let _ = a.Z.getStreamForUser(e.userId, e.guildId);
-      null != _ && r.rn(_, {
+      let p = a.Z.getStreamForUser(e.userId, e.guildId);
+      null != p && r.rn(p, {
         forceMultiple: true,
         noFocus: true
       })
@@ -50,4 +50,4 @@ class _ extends Chunk147913.Z {
     })
   }
 }
-let p = new _
+let _ = new p

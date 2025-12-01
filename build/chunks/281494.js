@@ -2,11 +2,11 @@
 /** chunk id: 281494, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C$: () => m,
+  C$: () => h,
   Fe: () => d,
   Fz: () => f,
   IB: () => E,
-  iF: () => h,
+  iF: () => m,
   jy: () => g
 }), require("./388685.js"), require("./49124.js"), require("./539854.js");
 var Chunk544891 = require("./544891.js"),
@@ -33,7 +33,7 @@ var d = function(e) {
   f = function(e) {
     return e[e.SUCCESS = 1] = "SUCCESS", e[e.FAIL = 2] = "FAIL", e
   }({});
-class _ {
+class p {
   set(e, t) {
     this.cache.set(e, t)
   }
@@ -50,13 +50,13 @@ class _ {
     l(this, "cache", true), l(this, "expiration", true), this.cache = new Map, this.expiration = Date.now() + u
   }
 }
-let p = new _;
-async function h(e, t, n) {
+let _ = new p;
+async function m(e, t, n) {
   let i = JSON.stringify({
     index: e,
     searchQuery: t
   });
-  if (p.has(i)) return p.get(i);
+  if (_.has(i)) return _.get(i);
   let {
     users: o,
     next_index: l
@@ -73,9 +73,9 @@ async function h(e, t, n) {
     users: o.map(e => new a.Z(e)),
     nextIndex: l
   };
-  return p.set(i, u), u
+  return _.set(i, u), u
 }
-let m = () => (Chunk570140.Z.dispatch({
+let h = () => (Chunk570140.Z.dispatch({
   type: "BILLING_REFERRALS_REMAINING_FETCH_START"
 }), Chunk544891.tn.get({
   url: Chunk981631.ANM.GET_REFERRALS_REMAINING,

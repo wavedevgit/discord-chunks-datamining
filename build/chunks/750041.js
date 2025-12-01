@@ -2,7 +2,7 @@
 /** chunk id: 750041, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./539854.js");
 var r, Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -48,9 +48,9 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class _ extends(r = Chunk442837.ZP.Store) {
+class p extends(r = Chunk442837.ZP.Store) {
   static clearAll() {
-    _.allStores.forEach(e => e.clear())
+    p.allStores.forEach(e => e.clear())
   }
   get persistKey() {
     return "".concat(this.getClass().displayName, "-snapshot")
@@ -72,7 +72,7 @@ class _ extends(r = Chunk442837.ZP.Store) {
     super(l.Z, f(u({}, e), {
       CLEAR_CACHES: () => (this.clear(), false),
       WRITE_CACHES: () => (this.save(), false)
-    }), t), a()(null != this.getClass().displayName, "Snapshot stores need a display name"), a()(!("CLEAR_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'CLEAR_CACHES' action"), a()(!("WRITE_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'WRITE_CACHES' action"), _.allStores.push(this)
+    }), t), a()(null != this.getClass().displayName, "Snapshot stores need a display name"), a()(!("CLEAR_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'CLEAR_CACHES' action"), a()(!("WRITE_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'WRITE_CACHES' action"), p.allStores.push(this)
   }
 }
-c(_, "allStores", [])
+c(p, "allStores", [])

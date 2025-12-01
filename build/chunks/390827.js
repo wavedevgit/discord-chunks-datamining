@@ -17,51 +17,51 @@ var r, i, a, o, Chunk127849 = require("./127849.js"),
   y = Chunk127849.clearImmediate,
   O = Chunk127849.process,
   v = Chunk127849.Dispatch,
-  I = Chunk127849.Function,
-  T = Chunk127849.MessageChannel,
-  S = Chunk127849.String,
+  S = Chunk127849.Function,
+  I = Chunk127849.MessageChannel,
+  T = Chunk127849.String,
   A = 0,
   C = {},
   N = "onreadystatechange";
 Chunk621523(function() {
   r = Chunk127849.location
 });
-var R = function(e) {
+var P = function(e) {
     if (d(C, e)) {
       var t = C[e];
       delete C[e], t()
     }
   },
-  P = function(e) {
+  R = function(e) {
     return function() {
-      R(e)
+      P(e)
     }
   },
-  D = function(e) {
-    R(e.data)
-  },
   w = function(e) {
-    s.postMessage(S(e), r.protocol + "//" + r.host)
+    P(e.data)
+  },
+  D = function(e) {
+    s.postMessage(T(e), r.protocol + "//" + r.host)
   };
 b && y || (b = function(e) {
-  m(arguments.length, 1);
-  var t = u(e) ? e : I(e),
-    n = p(arguments, 1);
+  h(arguments.length, 1);
+  var t = u(e) ? e : S(e),
+    n = _(arguments, 1);
   return C[++A] = function() {
     l(t, true, n)
   }, i(A), A
 }, y = function(e) {
   delete C[e]
 }, Chunk426625 ? i = function(e) {
-  O.nextTick(P(e))
+  O.nextTick(R(e))
 } : v && v.now ? i = function(e) {
-  v.now(P(e))
-} : T && !Chunk266782 ? (o = (a = new T).port2, a.port1.onmessage = D, i = Chunk48657(o.postMessage, o)) : Chunk127849.addEventListener && Chunk880181(Chunk127849.postMessage) && !Chunk127849.importScripts && r && "file:" !== r.protocol && !Chunk621523(w) ? (i = w, Chunk127849.addEventListener("message", D, false)) : i = N in Chunk809290("script") ? function(e) {
-  _.appendChild(h("script"))[N] = function() {
-    _.removeChild(this), R(e)
+  v.now(R(e))
+} : I && !Chunk266782 ? (o = (a = new I).port2, a.port1.onmessage = w, i = Chunk48657(o.postMessage, o)) : Chunk127849.addEventListener && Chunk880181(Chunk127849.postMessage) && !Chunk127849.importScripts && r && "file:" !== r.protocol && !Chunk621523(D) ? (i = D, Chunk127849.addEventListener("message", w, false)) : i = N in Chunk809290("script") ? function(e) {
+  p.appendChild(m("script"))[N] = function() {
+    p.removeChild(this), P(e)
   }
 } : function(e) {
-  setTimeout(P(e), 0)
+  setTimeout(R(e), 0)
 }), module.exports = {
   set: b,
   clear: y

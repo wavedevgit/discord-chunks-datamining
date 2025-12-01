@@ -41,15 +41,15 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = h(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -57,14 +57,14 @@ function p(e, t) {
   return i
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = {
+let h = {
   SMALL: Chunk919686.sizeSmall,
   MEDIUM: Chunk919686.sizeMedium,
   LARGE: Chunk919686.sizeLarge
@@ -108,8 +108,8 @@ class g extends(r = Chunk473749.PureComponent) {
         size: a,
         fullscreenOnMobile: o
       } = module,
-      l = p(module, ["className", "children", "tag", "size", "fullscreenOnMobile"]);
-    return (0, Chunk54381.jsx)(r, _(d({
+      l = _(module, ["className", "children", "tag", "size", "fullscreenOnMobile"]);
+    return (0, Chunk54381.jsx)(r, p(d({
       className: s()(Chunk919686.modal, exports, Chunk473749, {
         [Chunk919686.fullscreenOnMobile]: Chunk120356
       })
@@ -131,8 +131,8 @@ class g extends(r = Chunk473749.PureComponent) {
     }
   }
 }
-u(g, "Header", Chunk481060.xBx), u(g, "Footer", Chunk481060.mzw), u(g, "Content", Chunk481060.hzk), u(g, "ListContent", Chunk481060.YAO), u(g, "CloseButton", Chunk481060.olH), u(g, "Sizes", m), u(g, "defaultProps", {
+u(g, "Header", Chunk481060.xBx), u(g, "Footer", Chunk481060.mzw), u(g, "Content", Chunk481060.hzk), u(g, "ListContent", Chunk481060.YAO), u(g, "CloseButton", Chunk481060.olH), u(g, "Sizes", h), u(g, "defaultProps", {
   fullscreenOnMobile: true,
-  size: m.SMALL,
+  size: h.SMALL,
   tag: "div"
 })

@@ -2,7 +2,7 @@
 /** chunk id: 369954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => S
+  J: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -49,7 +49,7 @@ let v = e => {
       })]
     })
   },
-  I = () => {
+  S = () => {
     let e = (0, Chunk631885.ZM)(),
       t = () => {
         (0, Chunk342386.default)(), Chunk493683.Z.openPrivateChannel({
@@ -90,7 +90,7 @@ let v = e => {
       })]
     })
   },
-  T = () => {
+  I = () => {
     let e = (0, Chunk780985.cz)(),
       t = (0, Chunk780985.$r)(),
       {
@@ -127,11 +127,11 @@ let v = e => {
       })]
     })
   },
-  S = () => {
+  T = () => {
     let e = (0, Chunk981312.U)(),
       t = (0, Chunk631885.ZM)();
     return (0, Chunk277537.PO)("settings-controls") && 0 !== exports.length ? (0, Chunk54381.jsx)("div", {
       className: Chunk271650.container,
-      children: module ? (0, Chunk54381.jsx)(I, {}) : (0, Chunk54381.jsx)(T, {})
+      children: module ? (0, Chunk54381.jsx)(S, {}) : (0, Chunk54381.jsx)(I, {})
     }) : null
   }

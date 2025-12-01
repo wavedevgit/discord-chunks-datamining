@@ -2,7 +2,7 @@
 /** chunk id: 688465, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -67,7 +67,7 @@ function f(e, t) {
   return i
 }
 
-function _(e) {
+function p(e) {
   var {
     className: t,
     color: n = i.Z.unsafe_rawColors.BRAND_500.css

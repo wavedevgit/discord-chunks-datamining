@@ -9,6 +9,7 @@ var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk468363 = require("./468363.js"),
   Chunk326255 = require("./326255.js"),
@@ -17,7 +18,6 @@ var Chunk120356 = require("./120356.js"),
   Chunk43267 = require("./43267.js"),
   Chunk933557 = require("./933557.js"),
   Chunk471445 = require("./471445.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk313201 = require("./313201.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk199902 = require("./199902.js"),
@@ -41,11 +41,11 @@ function P(e) {
     channel: i,
     children: l,
     gotoChannel: a,
-    mentionCount: c,
+    mentionCount: s,
     channelState: u,
     toggleCollapsed: d
   } = e, f = (0, o.JA)("recents-header-".concat(i.id, "-").concat((0, b.Dt)()));
-  return (0, r.jsx)(s.tEY, {
+  return (0, r.jsx)(c.tEY, {
     offset: I,
     children: (0, r.jsxs)("div", (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -78,7 +78,7 @@ function P(e) {
       }), (0, r.jsx)(T, {
         channel: i,
         gotoChannel: a,
-        mentionCount: c
+        mentionCount: s
       }), l]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -111,8 +111,8 @@ function Z(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, a.e7)([C.default], () => t.isDM() ? C.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, p.x)(t) : i.getAvatarURL(true, 40);
-  return (0, r.jsx)(s.P3F, {
+  } = e, i = (0, a.e7)([C.default], () => t.isDM() ? C.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, h.x)(t) : i.getAvatarURL(true, 40);
+  return (0, r.jsx)(c.P3F, {
     onClick: n,
     tabIndex: false,
     children: (0, r.jsx)("img", {
@@ -145,24 +145,24 @@ function T(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([O.Z], () => O.Z.getChannel(t.parent_id)), u = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), f = (0, h.ZP)(t, false), p = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
+  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), u = (0, a.e7)([O.Z], () => O.Z.getChannel(t.parent_id)), d = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), f = (0, m.KS)(t, o), p = (0, g.ZP)(t, false), h = null == u ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(u.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(A, {
     channel: t
-  }) : (0, r.jsx)(s.P3F, {
+  }) : (0, r.jsx)(c.P3F, {
     className: l()(S.subtext, S.guildName),
     onClick: n,
-    children: p
+    children: h
   });
   return (0, r.jsxs)("div", {
     className: S.channelNameSection,
-    children: [(0, r.jsx)(s.Heading, {
+    children: [(0, r.jsx)(c.Heading, {
       variant: "heading-md/semibold",
       className: S.channelNameHeader,
-      children: (0, r.jsxs)(s.P3F, {
+      children: (0, r.jsxs)(c.P3F, {
         className: S.channelName,
         onClick: n,
-        children: [t.isThread() || t.isGroupDM() || null == d ? null : (0, r.jsx)(d, {
+        children: [t.isThread() || t.isGroupDM() || null == f ? null : (0, r.jsx)(f, {
           className: t.isForumLikeChannel() ? S.forumIcon : true,
           width: 18,
           height: 18,
@@ -170,16 +170,16 @@ function T(e) {
           color: "currentColor"
         }), (0, r.jsx)("span", {
           className: S.channelNameSpan,
-          children: f
+          children: p
         }), null != i && i > 0 ? (0, r.jsx)("div", {
           className: S.badge,
-          children: (0, r.jsx)(s.mAB, {
+          children: (0, r.jsx)(c.mAB, {
             count: i,
-            color: u ? m.Z.BACKGROUND_ACCENT : m.Z.STATUS_DANGER
+            color: d ? s.Z.colors.BACKGROUND_ACCENT.css : s.Z.colors.STATUS_DANGER.css
           })
         }) : null]
       })
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(c.Text, {
       color: "header-secondary",
       variant: "text-xs/normal",
       className: S.subtextContainer,
@@ -206,19 +206,19 @@ function A(e) {
     }
   }), {
     voiceActivityStatusEnabled: s
-  } = (0, c.U)({
+  } = (0, u.U)({
     location: "RecentsChannelHeader"
   }), {
-    voiceChannel: p
-  } = (0, d.Z)({
+    voiceChannel: c
+  } = (0, f.Z)({
     userId: null == n ? true : n.id
-  }), h = s ? p : true;
-  return (0, u.Z)({
+  }), h = s ? c : true;
+  return (0, d.Z)({
     activities: l,
     status: i,
     applicationStream: o,
     voiceChannel: h
-  }) ? (0, r.jsx)(f.Z, {
+  }) ? (0, r.jsx)(p.Z, {
     location: "RecentsChannelHeader",
     user: n,
     activities: l,

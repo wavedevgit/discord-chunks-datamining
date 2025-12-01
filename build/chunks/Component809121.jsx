@@ -100,7 +100,7 @@ function M(e) {
   }, e))
 }
 
-function B(e) {
+function V(e) {
   let {
     guildId: n
   } = e, [t, i] = a.useState(false), l = a.useCallback(() => {
@@ -117,7 +117,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function B(e) {
   let {
     instance: n
   } = e, t = (0, S.Z)(n.providerType, n.gameServerPanelUrl);
@@ -194,13 +194,13 @@ function W(e) {
         });
       case s.V.PROVIDER_ERRORED:
         return (0, r.jsxs)(r.Fragment, {
-          children: [q && null != U ? (0, r.jsx)(V, {
+          children: [q && null != U ? (0, r.jsx)(B, {
             guildId: n,
             instance: t
           }) : (0, r.jsx)(D, {
             onClick: z,
             disabled: true
-          }), (0, r.jsx)(B, {
+          }), (0, r.jsx)(V, {
             guildId: n,
             instance: t
           })]

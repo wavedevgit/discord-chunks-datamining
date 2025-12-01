@@ -2,7 +2,7 @@
 /** chunk id: 754277, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -50,7 +50,7 @@ class f extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
 }
 o(f, "displayName", "StageMusicStore"), o(f, "persistKey", "StageMusicStore");
-let _ = new f(Chunk570140.Z, {
+let p = new f(Chunk570140.Z, {
   STAGE_MUSIC_MUTE: c,
   STAGE_MUSIC_PLAY: u,
   VOICE_CHANNEL_SELECT: d

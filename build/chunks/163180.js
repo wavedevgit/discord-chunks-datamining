@@ -50,7 +50,7 @@ module.exports = function(e) {
       end: "\\)",
       contains: ["self", i, o, a, u]
     },
-    _ = {
+    p = {
       contains: [a, o, l, c, f, u],
       variants: [{
         begin: "['`]\\(",
@@ -65,22 +65,22 @@ module.exports = function(e) {
         begin: "'" + n
       }]
     },
-    p = {
+    _ = {
       variants: [{
         begin: "'" + t
       }, {
         begin: "#'" + t + "(::" + t + ")*"
       }]
     },
-    h = {
+    m = {
       begin: "\\(\\s*",
       end: "\\)"
     },
-    m = {
+    h = {
       endsWithParent: true,
       relevance: 0
     };
-  return h.contains = [{
+  return m.contains = [{
     className: "name",
     variants: [{
       begin: t,
@@ -88,9 +88,9 @@ module.exports = function(e) {
     }, {
       begin: n
     }]
-  }, m], m.contains = [_, p, h, i, a, o, s, l, c, d, u], {
+  }, h], h.contains = [p, _, m, i, a, o, s, l, c, d, u], {
     name: "Lisp",
     illegal: /\S/,
-    contains: [a, e.SHEBANG(), i, o, s, _, p, h, u]
+    contains: [a, e.SHEBANG(), i, o, s, p, _, m, u]
   }
 }

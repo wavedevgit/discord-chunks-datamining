@@ -22,19 +22,19 @@ let c = {
         disabled: c,
         labelType: u,
         showIcons: d
-      } = e, [f, _] = i.useState(false), p = i.useCallback(() => {
-        _(true)
-      }, []), h = i.useCallback(() => {
-        _(false)
+      } = e, [f, p] = i.useState(false), _ = i.useCallback(() => {
+        p(true)
       }, []), m = i.useCallback(() => {
-        _(e => !e)
+        p(false)
+      }, []), h = i.useCallback(() => {
+        p(e => !e)
       }, []);
       return (0, r.jsxs)(o.Kqy, {
         direction: "vertical",
         gap: "md",
         children: [(0, r.jsx)(l.Checkbox, {
           checked: f,
-          onChange: e => _(e),
+          onChange: e => p(e),
           disabled: c,
           label: t,
           description: null != n || "" === n ? n : true,
@@ -51,19 +51,19 @@ let c = {
             variant: "secondary",
             size: "sm",
             text: "Check",
-            onClick: p,
+            onClick: _,
             disabled: c
           }), (0, r.jsx)(s.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Uncheck",
-            onClick: h,
+            onClick: m,
             disabled: c
           }), (0, r.jsx)(s.zxk, {
             variant: "primary",
             size: "sm",
             text: "Toggle",
-            onClick: m,
+            onClick: h,
             disabled: c
           })]
         })]

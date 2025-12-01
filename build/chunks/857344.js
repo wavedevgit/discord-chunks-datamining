@@ -25,21 +25,21 @@ function l(e) {
     showDragButtons: d,
     selectionMode: c,
     columns: []
-  }), [e.children, u, c, d]), _ = (0, o.K)(e, (0, a.useCallback)(e => new(0, r.J)(e, null, f), [f]), f), {
-    disabledKeys: p,
-    selectionManager: h
+  }), [e.children, u, c, d]), p = (0, o.K)(e, (0, a.useCallback)(e => new(0, r.J)(e, null, f), [f]), f), {
+    disabledKeys: _,
+    selectionManager: m
   } = (0, i.S)({
     ...e,
-    collection: _,
+    collection: p,
     disabledBehavior: e.disabledBehavior || "selection"
   });
   return {
-    collection: _,
-    disabledKeys: p,
-    selectionManager: h,
+    collection: p,
+    disabledKeys: _,
+    selectionManager: m,
     showSelectionCheckboxes: e.showSelectionCheckboxes || false,
     sortDescriptor: null != (t = e.sortDescriptor) ? t : null,
-    isKeyboardNavigationDisabled: 0 === _.size || n,
+    isKeyboardNavigationDisabled: 0 === p.size || n,
     setKeyboardNavigationDisabled: l,
     sort(t, n) {
       var r, i;

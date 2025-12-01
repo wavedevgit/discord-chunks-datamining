@@ -2,7 +2,7 @@
 /** chunk id: 31543, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,12 +15,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk611480 = require("./611480.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk943341 = require("./943341.js");
-let p = Chunk473749.forwardRef(function(e, t) {
+let _ = Chunk473749.forwardRef(function(e, t) {
   let {
     onKeyDown: n,
-    stickersListRef: p,
-    channel: h
-  } = e, m = (0, u.fQ)(h), g = i.useRef(null), {
+    stickersListRef: _,
+    channel: m
+  } = e, h = (0, u.fQ)(m), g = i.useRef(null), {
     searchQuery: E,
     isSearchSuggestion: b
   } = (0, c.Iu)(e => ({
@@ -28,8 +28,8 @@ let p = Chunk473749.forwardRef(function(e, t) {
     isSearchSuggestion: e.isSearchSuggestion
   }), a.X), y = l.ZN.useStore(e => e.searchPlaceholder), O = l.ZN.useStore(e => e.inspectedExpressionPosition, a.X), v = i.useCallback(e => {
     var t;
-    l.ZN.setActiveCategoryIndex("" === e ? 0 : d.c), l.ZN.setInspectedExpressionPosition(0, 0), l.ZN.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = p.current) || t.scrollTo(0)
-  }, [p]), I = i.useCallback(() => {
+    l.ZN.setActiveCategoryIndex("" === e ? 0 : d.c), l.ZN.setInspectedExpressionPosition(0, 0), l.ZN.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = _.current) || t.scrollTo(0)
+  }, [_]), S = i.useCallback(() => {
     (0, c.ql)("")
   }, []);
   return i.useImperativeHandle(t, () => ({
@@ -43,14 +43,14 @@ let p = Chunk473749.forwardRef(function(e, t) {
       null == (e = g.current) || e.focus()
     }
   }, [b]), (0, r.jsx)("div", {
-    className: _.wrapper,
+    className: p.wrapper,
     children: (0, r.jsx)(s.E1j, {
-      autoFocus: m,
-      disabled: !m,
+      autoFocus: h,
+      disabled: !h,
       query: E,
       ref: g,
-      placeholder: null != y ? y : m ? f.intl.string(f.t.dt5h1C) : f.intl.string(f.t["Pck/4U"]),
-      onClear: I,
+      placeholder: null != y ? y : h ? f.intl.string(f.t.dt5h1C) : f.intl.string(f.t["Pck/4U"]),
+      onClear: S,
       onKeyDown: n,
       onChange: v,
       inputProps: {

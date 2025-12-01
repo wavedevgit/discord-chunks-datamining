@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   a: () => v,
-  default: () => T
+  default: () => I
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,34 +25,34 @@ var Chunk54381 = require("./54381.js"),
   Chunk459931 = require("./459931.js"),
   Chunk740353 = require("./740353.js");
 let v = "VoiceChannelStatusModal",
-  I = 500;
+  S = 500;
 
-function T(e) {
+function I(e) {
   let {
     channel: t,
     transitionState: n,
-    sourceAnalyticsLocations: T,
-    onClose: S
-  } = e, A = (0, o.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = (0, o.e7)([h.Z], () => h.Z.getMediaSessionId()), [N, R] = i.useState(null != A ? A : ""), [P, D] = i.useState(false), [w, L] = i.useState(null), x = (0, o.e7)([m.default], () => m.default.getCurrentUser()), M = N.length > I;
+    sourceAnalyticsLocations: I,
+    onClose: T
+  } = e, A = (0, o.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = (0, o.e7)([m.Z], () => m.Z.getMediaSessionId()), [N, P] = i.useState(null != A ? A : ""), [R, w] = i.useState(false), [D, x] = i.useState(null), L = (0, o.e7)([h.default], () => h.default.getCurrentUser()), j = N.length > S;
   i.useEffect(() => {
     g.default.track(E.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
       guild_id: t.guild_id,
-      location_stack: T
+      location_stack: I
     })
-  }, [t.guild_id, T]);
-  let k = e => {
-      L(new s.Hx(e, e.status).getAnyErrorMessage())
+  }, [t.guild_id, I]);
+  let M = e => {
+      x(new s.Hx(e, e.status).getAnyErrorMessage())
     },
-    j = e => {
+    k = e => {
       let {
         invalidEmojis: n
       } = e;
       if (null != n && n.length > 0) {
         let {
           errorMessage: e
-        } = c.Z.validateMessage(n, x, t.id);
-        return L(e), D(false), {
+        } = c.Z.validateMessage(n, L, t.id);
+        return x(e), w(false), {
           hasErrors: true
         }
       }
@@ -61,13 +61,13 @@ function T(e) {
       }
     },
     U = async e => {
-      N === A && S(), null == e || e.preventDefault(), L(null), D(true);
+      N === A && T(), null == e || e.preventDefault(), x(null), w(true);
       let n = N.length,
         r = N.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
-        i = p.ZP.parse(t, N),
+        i = _.ZP.parse(t, N),
         {
           hasErrors: a
-        } = j(i);
+        } = k(i);
       if (!a) {
         try {
           let e = await l.ZP.updateVoiceChannelStatus(t.id, i.content);
@@ -77,22 +77,22 @@ function T(e) {
             media_session_id: C,
             raw_length: n,
             text_length: r,
-            location_stack: T
-          }), S()) : k(e)
+            location_stack: I
+          }), T()) : M(e)
         } catch (e) {
-          k(e)
+          M(e)
         }
-        D(false)
+        w(false)
       }
-    }, [G, B] = i.useState((0, f.JM)(N)), Z = (e, t, n) => {
-      R(t), B(n)
-    }, F = async () => (M || P || await U(), Promise.resolve({
+    }, [G, Z] = i.useState((0, f.JM)(N)), B = (e, t, n) => {
+      P(t), Z(n)
+    }, F = async () => (j || R || await U(), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
     })), V = (0, r.jsx)(a.gNt, {
       label: b.intl.string(b.t.Fq5lwN),
-      errorMessage: w,
-      children: (0, r.jsx)(_.ZP, {
+      errorMessage: D,
+      children: (0, r.jsx)(p.ZP, {
         innerClassName: y.textArea,
         textValue: N,
         richValue: G,
@@ -101,21 +101,21 @@ function T(e) {
         }),
         focused: true,
         channel: t,
-        onChange: Z,
+        onChange: B,
         onSubmit: F,
         type: d.Ie.VOICE_CHANNEL_STATUS,
         canMentionRoles: false,
         canMentionChannels: false,
         allowNewLines: false,
         parentModalKey: v,
-        maxCharacterCount: I,
-        showRemainingCharsAfterCount: I / 2,
+        maxCharacterCount: S,
+        showRemainingCharsAfterCount: S / 2,
         emojiPickerCloseOnModalOuterClick: true
       })
     });
   return (0, r.jsx)(a.ExpressiveModal, {
     transitionState: n,
-    onClose: S,
+    onClose: T,
     graphic: {
       type: "image",
       src: O
@@ -125,11 +125,11 @@ function T(e) {
     actions: [{
       variant: "secondary",
       text: b.intl.string(b.t["ETE/oC"]),
-      onClick: S
+      onClick: T
     }, {
       variant: "primary",
-      loading: P,
-      disabled: M,
+      loading: R,
+      disabled: j,
       text: b.intl.string(b.t.XqK2I2),
       onClick: U
     }],

@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk240656 = require("./240656.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +25,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,7 +50,7 @@ function m(e, t) {
 }
 
 function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -62,7 +62,7 @@ function E(e) {
   return (0, r.jsx)(l.xvT, {
     tag: "span",
     variant: "text-md/semibold",
-    className: _.highlight,
+    className: p.highlight,
     children: t.title
   })
 }
@@ -72,7 +72,7 @@ function b(e) {
     guild: t,
     themeResponsive: n = true,
     onButtonClick: a
-  } = e, p = (0, u.Z)(t.id), [m, b] = i.useState(false), [y, O] = (0, c.q_F)(() => ({
+  } = e, _ = (0, u.Z)(t.id), [h, b] = i.useState(false), [y, O] = (0, c.q_F)(() => ({
     scale: .8,
     config: {
       tension: 500,
@@ -89,20 +89,20 @@ function b(e) {
   }, [O]);
   let v = i.useMemo(() => {
     let e;
-    if (null == p || 0 === p.length) return "";
-    if (1 === p.length) e = (0, r.jsx)(E, {
-      powerup: p[0]
+    if (null == _ || 0 === _.length) return "";
+    if (1 === _.length) e = (0, r.jsx)(E, {
+      powerup: _[0]
     });
-    else if (2 === p.length) e = f.intl.format(d.default.MNO3sG, {
+    else if (2 === _.length) e = f.intl.format(d.default.MNO3sG, {
       perk1: (0, r.jsx)(E, {
-        powerup: p[0]
+        powerup: _[0]
       }),
       perk2: (0, r.jsx)(E, {
-        powerup: p[1]
+        powerup: _[1]
       })
     });
     else {
-      let t = Array.from(p).reverse();
+      let t = Array.from(_).reverse();
       e = f.intl.format(d.default.GmN3Vf, {
         perk1: (0, r.jsx)(E, {
           powerup: t[0]
@@ -115,20 +115,20 @@ function b(e) {
     return f.intl.format(d.default["/6GgQq"], {
       perks: e
     })
-  }, [p]);
-  return null == p || 0 === p.length ? null : (0, r.jsxs)(s.animated.div, {
-    className: o()(_.container, {
-      [_.themeResponsiveContainer]: n
+  }, [_]);
+  return null == _ || 0 === _.length ? null : (0, r.jsxs)(s.animated.div, {
+    className: o()(p.container, {
+      [p.themeResponsiveContainer]: n
     }),
-    style: g(h({}, y), {
-      opacity: +!!m
+    style: g(m({}, y), {
+      opacity: +!!h
     }),
     children: [(0, r.jsx)(l.xvT, {
       tag: "span",
       variant: "text-md/semibold",
-      className: o()(_.description, {
-        [_.text]: !n,
-        [_.responsiveText]: n
+      className: o()(p.description, {
+        [p.text]: !n,
+        [p.responsiveText]: n
       }),
       children: v
     }), (0, r.jsx)(l.zxk, {

@@ -2,7 +2,7 @@
 /** chunk id: 241085, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk975279 = require("./975279.js");
 
-function P(e) {
+function R(e) {
   let {
     dropping: t,
     fileInputRef: n,
@@ -44,10 +44,10 @@ function P(e) {
     useSpace: true
   });
   return (0, r.jsxs)("div", {
-    className: R.mainWrapper,
+    className: P.mainWrapper,
     children: [(0, r.jsxs)("div", {
-      className: o()(R.mainBody, {
-        [R.hidden]: t
+      className: o()(P.mainBody, {
+        [P.hidden]: t
       }),
       children: [(0, r.jsx)(u.xD0, {
         color: u.TVs.colors.ICON_PRIMARY,
@@ -78,7 +78,7 @@ function P(e) {
         })
       })]
     }), t && (0, r.jsxs)("div", {
-      className: o()(R.mainBody, R.absolutelyPositioned),
+      className: o()(P.mainBody, P.absolutelyPositioned),
       children: [(0, r.jsx)(u.xD0, {
         color: u.TVs.colors.ICON_PRIMARY,
         size: "refresh_sm"
@@ -91,7 +91,7 @@ function P(e) {
   })
 }
 
-function D() {
+function w() {
   return (0, Chunk54381.jsxs)("div", {
     className: o()(Chunk975279.mainWrapper, Chunk975279.mainBody),
     children: [(0, Chunk54381.jsx)(Chunk481060.owK, {
@@ -109,7 +109,7 @@ function D() {
   })
 }
 
-function w(e) {
+function D(e) {
   var t;
   let {
     upload: n,
@@ -117,39 +117,39 @@ function w(e) {
     singleFileInput: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(R.file, {
-      [R.singleFileInput]: a
+    className: o()(P.file, {
+      [P.singleFileInput]: a
     }),
     children: [(0, r.jsx)(g.r, {
       upload: n,
-      size: a ? m.q.XSMALL : m.q.XXSMALL
+      size: a ? h.q.XSMALL : h.q.XXSMALL
     }), (0, r.jsx)(u.Text, {
       variant: "text-".concat(a ? "md" : "xs", "/medium"),
-      className: R.filename,
+      className: P.filename,
       children: null != (t = n.filename) ? t : N.intl.string(N.t.ZMirp0)
     }), (0, r.jsx)(E.ZP, {
-      className: R.miniPopover,
-      children: (0, r.jsx)(h.Z, {
-        className: R.action,
+      className: P.miniPopover,
+      children: (0, r.jsx)(m.Z, {
+        className: P.action,
         tooltip: N.intl.string(N.t.N86XcP),
         onClick: () => i(n.id),
         dangerous: true,
         children: (0, r.jsx)(u.XHJ, {
           size: "xs",
           color: "currentColor",
-          className: R.actionIcon
+          className: P.actionIcon
         })
       })
     })]
   }, n.id)
 }
 
-function L(e) {
+function x(e) {
   var t;
   let {
     minValues: n,
     maxValues: a
-  } = e, s = i.useRef(null), u = i.useRef(null), [h, m] = i.useState(false), g = (0, S.CJ)();
+  } = e, s = i.useRef(null), u = i.useRef(null), [m, h] = i.useState(false), g = (0, T.CJ)();
   l()(null != g, "FileUploadActionComponent must be used within a ComponentStateContextProvider");
   let E = g.channelId;
   l()(null != E, "FileUploadActionComponent must be used inside a channel");
@@ -157,34 +157,34 @@ function L(e) {
   l()(null != O, "FileUploadActionComponent requires modalCustomId from context");
   let {
     uploadIds: v,
-    setUploadIds: L,
-    currentUploads: x,
-    error: M
-  } = (0, C.t)(e), k = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(E));
-  l()(null != k, "FileUploadActionComponent requires a valid channel");
-  let j = i.useCallback(e => {
+    setUploadIds: x,
+    currentUploads: L,
+    error: j
+  } = (0, C.t)(e), M = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(E));
+  l()(null != M, "FileUploadActionComponent requires a valid channel");
+  let k = i.useCallback(e => {
       var t;
-      e.preventDefault(), (null == (t = e.dataTransfer) ? true : t.types.includes("Files")) && m(true)
+      e.preventDefault(), (null == (t = e.dataTransfer) ? true : t.types.includes("Files")) && h(true)
     }, []),
     U = i.useCallback(e => {
       var t;
-      null != (t = u.current) && t.contains(e.relatedTarget) || m(false)
+      null != (t = u.current) && t.contains(e.relatedTarget) || h(false)
     }, []),
     G = i.useCallback((e, t) => {
       if (0 === e.length) return;
-      if (v.length + e.length > a) return (0, _.openUploadError)({
+      if (v.length + e.length > a) return (0, p.openUploadError)({
         title: N.intl.string(N.t.wOr6hB),
         help: N.intl.formatToPlainString(N.t.dy6viJ, {
           maxValues: a
         })
       });
-      if ((0, T.Bf)(e, k.guild_id)) return (0, I.G)(k, e);
+      if ((0, I.Bf)(e, M.guild_id)) return (0, S.G)(M, e);
       let n = e.map(e => {
         let n = (0, A.VD)(O),
           r = {
             id: n,
             file: e,
-            platform: p.ow.WEB,
+            platform: _.ow.WEB,
             origin: t
           };
         return d.Z.setFile({
@@ -195,52 +195,52 @@ function L(e) {
           allowOptimization: false
         }), n
       });
-      L(v.concat(n))
-    }, [v, a, k, L, O, E]),
-    B = i.useCallback(e => {
+      x(v.concat(n))
+    }, [v, a, M, x, O, E]),
+    Z = i.useCallback(e => {
       var t, n;
-      e.preventDefault(), m(false), G(Array.from(null != (n = null == (t = e.dataTransfer) ? true : t.files) ? n : []), "drag_drop")
+      e.preventDefault(), h(false), G(Array.from(null != (n = null == (t = e.dataTransfer) ? true : t.files) ? n : []), "drag_drop")
     }, [G]),
-    Z = e => {
+    B = e => {
       var t;
       G(Array.from(null != (t = e.currentTarget.files) ? t : []), "file_picker"), e.currentTarget.value = ""
     },
     F = e => {
-      d.Z.remove(E, e, y.d.InteractionModal), L(v.filter(t => t !== e))
+      d.Z.remove(E, e, y.d.InteractionModal), x(v.filter(t => t !== e))
     };
   return (i.useEffect(() => {
     let e = u.current;
-    return null == e || e.addEventListener("dragover", j), null == e || e.addEventListener("dragleave", U), null == e || e.addEventListener("drop", B), () => {
-      null == e || e.removeEventListener("dragover", j), null == e || e.removeEventListener("dragleave", U), null == e || e.removeEventListener("drop", B)
+    return null == e || e.addEventListener("dragover", k), null == e || e.addEventListener("dragleave", U), null == e || e.addEventListener("drop", Z), () => {
+      null == e || e.removeEventListener("dragover", k), null == e || e.removeEventListener("dragleave", U), null == e || e.removeEventListener("drop", Z)
     }
-  }, [j, U, B]), 1 === a && 1 === x.length) ? (0, r.jsx)(w, {
-    upload: x[0],
+  }, [k, U, Z]), 1 === a && 1 === L.length) ? (0, r.jsx)(D, {
+    upload: L[0],
     handleRemoveFile: F,
     singleFileInput: true
   }) : (0, r.jsxs)("div", {
     ref: u,
-    className: o()(R.container, {
-      [R.dropping]: h,
-      [R.error]: null != M
+    className: o()(P.container, {
+      [P.dropping]: m,
+      [P.error]: null != j
     }),
-    children: [v.length >= a ? (0, r.jsx)(D, {}) : (0, r.jsx)(P, {
-      dropping: h,
+    children: [v.length >= a ? (0, r.jsx)(w, {}) : (0, r.jsx)(R, {
+      dropping: m,
       fileInputRef: s,
       minValues: n,
       maxValues: a,
-      guildId: k.guild_id
-    }), x.length > 0 && (0, r.jsx)("div", {
-      className: R.files,
-      children: x.map(e => (0, r.jsx)(w, {
+      guildId: M.guild_id
+    }), L.length > 0 && (0, r.jsx)("div", {
+      className: P.files,
+      children: L.map(e => (0, r.jsx)(D, {
         upload: e,
         handleRemoveFile: F
       }, e.id))
     }), (0, r.jsx)(f.Z, {
       ref: s,
-      onChange: Z,
+      onChange: B,
       multiple: a > 1,
       tabIndex: false,
-      className: R.fileInput
+      className: P.fileInput
     })]
   })
 }

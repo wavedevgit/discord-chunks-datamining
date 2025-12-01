@@ -2,8 +2,8 @@
 /** chunk id: 83561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => p,
-  m: () => _
+  S: () => _,
+  m: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk545869 = require("./545869.js");
 let f = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function _() {
+function p() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     [t, n] = Chunk473749.useState(false),
     r = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
@@ -33,7 +33,7 @@ function _() {
   }
 }
 
-function p(e) {
+function _(e) {
   let {
     src: t
   } = e;

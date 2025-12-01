@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,13 +47,13 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -78,18 +78,18 @@ let E = Object.fromEntries(Object.keys(Chunk692547.Z.colors).map(e => [l()(e), e
         tag: s = "div",
         selectable: l = false,
         className: f,
-        lineClamp: p,
+        lineClamp: _,
         color: g,
         tabularNumbers: b = false,
         scaleFontToUserSetting: y = false
       } = e,
-      O = m(e, ["variant", "tag", "selectable", "className", "lineClamp", "color", "tabularNumbers", "scaleFontToUserSetting"]);
+      O = h(e, ["variant", "tag", "selectable", "className", "lineClamp", "color", "tabularNumbers", "scaleFontToUserSetting"]);
     let v = s,
-      I = "",
-      T = {};
-    if (null != p && (1 === p ? I = u.lineClamp1 : (I = u.lineClamp2Plus, T = {
-        lineClamp: p,
-        WebkitLineClamp: p
+      S = "",
+      I = {};
+    if (null != _ && (1 === _ ? S = u.lineClamp1 : (S = u.lineClamp2Plus, I = {
+        lineClamp: _,
+        WebkitLineClamp: _
       })), true !== g) switch (g) {
       case "currentColor":
         n = "currentColor";
@@ -103,19 +103,19 @@ let E = Object.fromEntries(Object.keys(Chunk692547.Z.colors).map(e => [l()(e), e
       default:
         n = null == (i = c.Z.colors[E[g]]) ? true : i.css
     }
-    let S = _({
+    let T = p({
       color: n
-    }, T, O.style);
-    return (0, r.jsx)(v, h(_({
+    }, I, O.style);
+    return (0, r.jsx)(v, m(p({
       ref: t,
       className: o()({
         [u.defaultColor]: true === g,
         [u.selectable]: l,
         [u.tabularNumbers]: b,
         [d.fontScaling]: y
-      }, I, d[a], f)
+      }, S, d[a], f)
     }, O), {
-      style: Object.values(S).filter(Boolean).length > 0 ? S : true,
+      style: Object.values(T).filter(Boolean).length > 0 ? T : true,
       "data-text-variant": a
     }))
   })

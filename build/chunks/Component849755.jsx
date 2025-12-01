@@ -31,27 +31,27 @@ function v(e) {
     onClose: a
   } = e, {
     themeType: v
-  } = (0, m.z)(), {
-    analyticsLocations: I
-  } = (0, c.ZP)(), T = (0, p.W)(t), S = (0, u.ZP)(t, true), A = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), C = i.useMemo(() => null == A || "" === A ? null : _.Z.parseVoiceChannelStatus(A, true, {
+  } = (0, h.z)(), {
+    analyticsLocations: S
+  } = (0, c.ZP)(), I = (0, _.W)(t), T = (0, u.ZP)(t, true), A = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), C = i.useMemo(() => null == A || "" === A ? null : p.Z.parseVoiceChannelStatus(A, true, {
     channelId: t.id
   }), [A, t.id]);
   i.useEffect(() => {
-    null != C && h.default.track(E.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+    null != C && m.default.track(E.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
       channel_id: t.id,
       guild_id: t.guild_id,
-      location_stack: I
+      location_stack: S
     })
-  }, [C, t.id, t.guild_id, I]);
+  }, [C, t.id, t.guild_id, S]);
   let N = e => {
     e.stopPropagation(), n({
       action: "PRESS_VOICE_CHANNEL_STATUS"
     }), v === b.l.POPOUT && (null == a || a()), (0, d.Z)({
       channel: t,
-      sourceAnalyticsLocations: I
+      sourceAnalyticsLocations: S
     })
   };
-  return S && T ? (0, r.jsxs)(l.P3F, {
+  return T && I ? (0, r.jsxs)(l.P3F, {
     className: O.clickable,
     onClick: N,
     children: [(0, r.jsx)(g.Z, {

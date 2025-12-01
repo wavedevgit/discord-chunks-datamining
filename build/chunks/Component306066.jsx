@@ -2,7 +2,7 @@
 /** chunk id: 306066, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,15 +18,15 @@ var Chunk399606 = require("./399606.js"),
   Chunk768741 = require("./768741.js"),
   Chunk857998 = require("./857998.js"),
   Chunk193371 = require("./193371.js");
-let m = e => {
+let h = e => {
   let t, {
       className: n
     } = e,
-    m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
+    h = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
     g = (0, c.rO)(),
     E = (0, a.apv)((0, o.ZP)());
-  if (m) {
-    let e = E ? h.Z : f.Z;
+  if (h) {
+    let e = E ? m.Z : f.Z;
     return (0, r.jsx)("div", {
       className: n,
       children: (0, r.jsx)("img", {
@@ -35,7 +35,7 @@ let m = e => {
       })
     })
   }
-  return t = g ? E ? _.Z : u.Z : E ? p.Z : d.Z, (0, r.jsx)("div", {
+  return t = g ? E ? p.Z : u.Z : E ? _.Z : d.Z, (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)(l.Z, {
       muted: true,

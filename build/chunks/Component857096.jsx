@@ -2,7 +2,7 @@
 /** chunk id: 857096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -27,10 +27,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk186880 = require("./186880.js"),
   Chunk315091 = require("./315091.js");
 
-function T(e) {
+function I(e) {
   let {
     isLoading: t
-  } = e, n = (0, o.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, o.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? true : n.applicationId), d = (0, o.e7)([h.Z], () => h.Z.isFrameHidden()), T = i === b.U.PIP && !d, S = T && null != h.Z.pipVideoWindow && null != h.Z.pipFrameWindow;
+  } = e, n = (0, o.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, o.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? true : n.applicationId), d = (0, o.e7)([m.Z], () => m.Z.isFrameHidden()), I = i === b.U.PIP && !d, T = I && null != m.Z.pipVideoWindow && null != m.Z.pipFrameWindow;
   if (null == n || null == u) return null;
   let A = {
     instance_id: "example-cl-instance",
@@ -43,7 +43,7 @@ function T(e) {
       onForceIdle: i,
       idle: a
     } = e;
-    return T && null != n ? (0, r.jsxs)(r.Fragment, {
+    return I && null != n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         onMouseMove: t,
         onMouseDown: t,
@@ -55,7 +55,7 @@ function T(e) {
         onMouseDown: t,
         onMouseLeave: i,
         onFocus: () => {
-          m.Z.updateFrameLayoutMode({
+          h.Z.updateFrameLayoutMode({
             applicationId: n.applicationId,
             layoutMode: b.U.FOCUSED
           })
@@ -64,7 +64,7 @@ function T(e) {
       })]
     }) : null
   }
-  return null != n.proxyTicket && (A.discord_proxy_ticket = n.proxyTicket), (0, r.jsx)(p.ZP, {
+  return null != n.proxyTicket && (A.discord_proxy_ticket = n.proxyTicket), (0, r.jsx)(_.ZP, {
     timeout: 2e3,
     children: e => {
       let {
@@ -72,16 +72,16 @@ function T(e) {
         onActive: o,
         onForceIdle: f
       } = e;
-      return (0, r.jsxs)(_.Z, {
+      return (0, r.jsxs)(p.Z, {
         className: a()(O.root, {
-          [O.pipMode]: T,
-          [I.elevationHigh]: T,
+          [O.pipMode]: I,
+          [S.elevationHigh]: I,
           [v.idle]: i,
-          [O.pipModeShort]: T,
+          [O.pipModeShort]: I,
           [O.hidden]: d,
-          [O.multiPIPMode]: S
+          [O.multiPIPMode]: T
         }),
-        noBorder: !T,
+        noBorder: !I,
         children: [(0, r.jsx)("div", {
           className: "theme-dark",
           children: C({
@@ -91,7 +91,7 @@ function T(e) {
           })
         }), t ? (0, r.jsx)(s.$jN, {
           className: a()(O.iframe, {
-            [O.pipModeShort]: T
+            [O.pipModeShort]: I
           })
         }) : (0, r.jsx)(c.J, {
           allowPopups: (0, l.h)(u),
@@ -99,22 +99,22 @@ function T(e) {
           url: n.url,
           queryParams: A,
           className: a()(O.iframe, {
-            [O.pipModeShort]: T,
-            [O.pipNonInteractive]: T
+            [O.pipModeShort]: I,
+            [O.pipNonInteractive]: I
           }),
-          shouldRefocus: !T
+          shouldRefocus: !I
         })]
       })
     }
   })
 }
-let S = () => {
+let T = () => {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.FRAME_PIP), t = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk54381.jsx)(Chunk906732.Gt, {
     value: module,
-    children: (0, Chunk54381.jsx)(T, {
+    children: (0, Chunk54381.jsx)(I, {
       isLoading: !exports
     })
   })

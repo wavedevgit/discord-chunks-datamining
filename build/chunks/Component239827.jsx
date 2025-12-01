@@ -2,7 +2,7 @@
 /** chunk id: 239827, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -51,7 +51,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,24 +59,24 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let p = Chunk473749.forwardRef(function(e, t) {
+let _ = Chunk473749.forwardRef(function(e, t) {
   var {
     currentPageIndex: n,
     numPages: i,
     onChangePage: l,
     children: u,
-    showPageCount: _ = true
-  } = e, p = f(e, ["currentPageIndex", "numPages", "onChangePage", "children", "showPageCount"]);
-  let h = n <= 0,
-    m = n >= i - 1,
-    g = _ ? o.intl.format(o.t.MtpIwg, {
+    showPageCount: p = true
+  } = e, _ = f(e, ["currentPageIndex", "numPages", "onChangePage", "children", "showPageCount"]);
+  let m = n <= 0,
+    h = n >= i - 1,
+    g = p ? o.intl.format(o.t.MtpIwg, {
       currentPage: n + 1,
       numPages: i
     }) : o.intl.format(o.t.bKI77c, {
@@ -84,7 +84,7 @@ let p = Chunk473749.forwardRef(function(e, t) {
     });
   return (0, r.jsxs)("div", d(c({
     ref: t
-  }, p), {
+  }, _), {
     children: [u, (0, r.jsx)("div", {
       className: s.pageActions,
       children: (0, r.jsxs)("div", {
@@ -92,7 +92,7 @@ let p = Chunk473749.forwardRef(function(e, t) {
         children: [(0, r.jsx)(a.hU, {
           variant: "icon-only",
           icon: a.V7D,
-          disabled: h,
+          disabled: m,
           onClick: () => l(n - 1),
           "aria-label": o.intl.string(o.t.vgfxaA)
         }), (0, r.jsx)(a.Text, {
@@ -101,7 +101,7 @@ let p = Chunk473749.forwardRef(function(e, t) {
         }), (0, r.jsx)(a.hU, {
           variant: "icon-only",
           icon: a.Fbu,
-          disabled: m,
+          disabled: h,
           onClick: () => l(n + 1),
           "aria-label": o.intl.string(o.t.XiOHRX)
         })]

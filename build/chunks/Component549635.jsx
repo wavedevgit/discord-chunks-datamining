@@ -2,9 +2,9 @@
 /** chunk id: 549635, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dt: () => T,
+  Dt: () => I,
   ZP: () => A,
-  ze: () => I
+  ze: () => S
 }), require("./997841.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -78,7 +78,7 @@ function v(e, t) {
   return i
 }
 
-function I(e, t) {
+function S(e, t) {
   return y(E({}, e), {
     type: (0, o.hg)(e),
     original: e.url,
@@ -89,12 +89,12 @@ function I(e, t) {
   })
 }
 
-function T(e) {
-  let t = _.Z.toURLSafe(e);
+function I(e) {
+  let t = p.Z.toURLSafe(e);
   return null == t ? null : (t.searchParams.append("format", "webp"), t.toString())
 }
 
-function S(e) {
+function T(e) {
   let t, {
       media: n,
       obscured: i = false,
@@ -104,34 +104,34 @@ function S(e) {
     } = e,
     {
       width: d,
-      height: _,
+      height: p,
       url: g,
       proxyUrl: b,
       alt: v,
-      type: I,
-      maxWidth: S,
+      type: S,
+      maxWidth: T,
       maxHeight: A
     } = n,
     N = O(n, ["width", "height", "url", "proxyUrl", "alt", "type", "maxWidth", "maxHeight"]),
     {
-      zoomed: R
-    } = (0, p.Y)(),
-    P = C(R, g, b, n.contentType, n.originalContentType),
-    D = null != d && 0 !== d && null != _ && 0 !== _;
-  if ("VIDEO" === I && D && null != b) {
-    var w;
-    let e = T(b);
+      zoomed: P
+    } = (0, _.Y)(),
+    R = C(P, g, b, n.contentType, n.originalContentType),
+    w = null != d && 0 !== d && null != p && 0 !== p;
+  if ("VIDEO" === S && w && null != b) {
+    var D;
+    let e = I(b);
     if (null == e) return null;
-    let t = null != (w = n.renderLinkComponent) ? w : u.iT;
+    let t = null != (D = n.renderLinkComponent) ? D : u.iT;
     return (0, r.jsx)(l.Z, y(E({}, N), {
-      src: P,
+      src: R,
       width: d,
-      height: _,
+      height: p,
       maxWidth: a,
       maxHeight: o,
       poster: e,
       naturalWidth: d,
-      naturalHeight: _,
+      naturalHeight: p,
       volume: f.FC,
       autoMute: f.rs,
       onVolumeChange: f.jA,
@@ -143,36 +143,36 @@ function S(e) {
       disableArrowKeySeek: true
     }))
   }
-  return "IMAGE" === I && (t = D ? (0, r.jsx)(s.ZP, y(E({}, N), {
-    src: P,
+  return "IMAGE" === S && (t = w ? (0, r.jsx)(s.ZP, y(E({}, N), {
+    src: R,
     width: d,
-    height: _,
+    height: p,
     maxWidth: a,
     maxHeight: o,
     useFullWidth: true,
     shouldLink: false,
-    className: m.media,
+    className: h.media,
     animated: !i && n.animated,
     autoPlay: !i,
     alt: v,
     onContextMenu: c
   })) : (0, r.jsx)("img", {
-    src: P,
+    src: R,
     alt: v,
     onContextMenu: c,
-    className: m.dimensionlessImage,
+    className: h.dimensionlessImage,
     style: {
       maxWidth: a,
       maxHeight: o
     }
-  })), null != t ? (0, r.jsx)(h.Z, {
+  })), null != t ? (0, r.jsx)(m.Z, {
     children: t
   }) : null
 }
-let A = Chunk473749.memo(S);
+let A = Chunk473749.memo(T);
 
 function C(e, t, n, r, i) {
-  return e && _.Z.isDiscordAssetUrl(t, r, i) ? (0, c.s$)(t, r, i) : (0, d.q)({
+  return e && p.Z.isDiscordAssetUrl(t, r, i) ? (0, c.s$)(t, r, i) : (0, d.q)({
     proxyURL: n,
     url: t
   })

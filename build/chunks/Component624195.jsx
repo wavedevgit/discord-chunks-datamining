@@ -41,14 +41,14 @@ function f(e) {
   if (null == l || Array.isArray(l) || null == d(l)) return null;
   let {
     width: f,
-    height: _
-  } = i, p = f, h = _;
-  return (f > c || _ > u) && (f > _ ? (p = c, h = c * _ / f) : (p = u * f / _, h = u)), (0, r.jsx)("iframe", {
+    height: p
+  } = i, _ = f, m = p;
+  return (f > c || p > u) && (f > p ? (_ = c, m = c * p / f) : (_ = u * f / p, m = u)), (0, r.jsx)("iframe", {
     className: a()(s.embedAmazonMusic, t),
     src: l,
     style: {
-      width: p,
-      height: h
+      width: _,
+      height: m
     },
     frameBorder: 0,
     sandbox: "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"

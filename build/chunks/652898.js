@@ -15,7 +15,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk245335 = require("./245335.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -69,38 +69,38 @@ function b(e, t, n) {
       invite_code: e
     }), E.has(e)) return E.get(e);
   let a = (0, u.fU)(e),
-    d = m(p({}, n), {
+    d = h(_({}, n), {
       with_counts: true,
       with_expiration: true,
       guild_scheduled_event_id: a.guildScheduledEventId,
       with_permissions: true
     }),
-    _ = c.Z.get({
+    p = c.Z.get({
       url: f.ANM.INVITE(a.baseCode),
       query: d,
       oldFormErrors: true,
       trackedActionData: {
         event: r.NetworkActionNames.INVITE_RESOLVE,
         properties: e => {
-          var r, l, c, u, d, _, p;
-          let h = e.body,
-            m = (null == (r = e.body) ? true : r.code) === f.evJ.USER_BANNED;
+          var r, l, c, u, d, p, _;
+          let m = e.body,
+            h = (null == (r = e.body) ? true : r.code) === f.evJ.USER_BANNED;
           return (0, i.iG)({
             resolved: e.ok,
-            guild_id: null == h || null == (l = h.guild) ? true : l.id,
-            channel_id: null == h || null == (c = h.channel) ? true : c.id,
-            channel_type: null == h || null == (u = h.channel) ? true : u.type,
-            inviter_id: null == h || null == (d = h.inviter) ? true : d.id,
+            guild_id: null == m || null == (l = m.guild) ? true : l.id,
+            channel_id: null == m || null == (c = m.channel) ? true : c.id,
+            channel_type: null == m || null == (u = m.channel) ? true : u.type,
+            inviter_id: null == m || null == (d = m.inviter) ? true : d.id,
             code: a.baseCode,
             input_value: null == n ? true : n.inputValue,
             location: t,
             authenticated: o.default.isAuthenticated(),
-            size_total: null == h ? true : h.approximate_member_count,
-            size_online: null == h ? true : h.approximate_presence_count,
-            destination_user_id: null == h || null == (_ = h.target_user) ? true : _.id,
-            invite_type: g(h),
-            user_banned: m,
-            user_is_member: null != s.Z.getGuild(null == h || null == (p = h.guild) ? true : p.id)
+            size_total: null == m ? true : m.approximate_member_count,
+            size_online: null == m ? true : m.approximate_presence_count,
+            destination_user_id: null == m || null == (p = m.target_user) ? true : p.id,
+            invite_type: g(m),
+            user_banned: h,
+            user_is_member: null != s.Z.getGuild(null == m || null == (_ = m.guild) ? true : _.id)
           })
         }
       },
@@ -157,5 +157,5 @@ function b(e, t, n) {
     }).finally(() => {
       E.delete(e)
     });
-  return E.set(e, _), _
+  return E.set(e, p), p
 }

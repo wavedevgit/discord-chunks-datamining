@@ -18,18 +18,18 @@ var Chunk990547 = require("./990547.js"),
 function f(e) {
   let {
     code: t
-  } = e, [n, f] = t.split("-"), _ = (0, c.hO)(n, f), p = (0, a.e7)([l.Z], () => l.Z.getGuildId());
+  } = e, [n, f] = t.split("-"), p = (0, c.hO)(n, f), _ = (0, a.e7)([l.Z], () => l.Z.getGuildId());
   return ((0, s.Z)({
     type: d.n.VIEW,
     name: i.ImpressionNames.GUILD_PRODUCT_LISTING_EMBED,
     properties: {
       guild_product_listing_id: f,
-      has_entitlement: (null == _ ? true : _.has_entitlement) === true
+      has_entitlement: (null == p ? true : p.has_entitlement) === true
     }
   }, {
-    disableTrack: null == _
-  }), null == _ || p !== n) ? null : (0, r.jsx)(u.H, {
-    guildProductListing: _,
+    disableTrack: null == p
+  }), null == p || _ !== n) ? null : (0, r.jsx)(u.H, {
+    guildProductListing: p,
     guildId: n,
     location: o.Z.GUILD_PRODUCT_EMBED_CARD,
     cardWidth: 390,

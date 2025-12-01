@@ -17,7 +17,7 @@ var Chunk179360 = require("./179360.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk147913.Z {
+class h extends Chunk147913.Z {
   handleSelectedGuildChange() {
     let e = Chunk914010.Z.getGuildId();
     if (null == module || module === Chunk647086._ || module === Chunk981631.I_8) return;
@@ -54,11 +54,11 @@ class m extends Chunk147913.Z {
     true === (0, f.D)(o.Z, a.Z.getGuild(e)) && ((0, c.BN)(e), (0, r.C0)(e))
   }
   constructor(...e) {
-    super(...e), h(this, "stores", new Map().set(s.Z, this.handleSelectedGuildChange)), h(this, "actions", {
+    super(...e), m(this, "stores", new Map().set(s.Z, this.handleSelectedGuildChange)), m(this, "actions", {
       GUILD_POWERUP_ENTITLEMENTS_CREATE: this.handleEntitlementUpdate.bind(this),
       GUILD_POWERUP_ENTITLEMENTS_DELETE: this.handleEntitlementUpdate.bind(this),
       GUILD_APPLIED_BOOSTS_UPDATE: this.handleAppliedBoostUpdate.bind(this)
     })
   }
 }
-let g = new m
+let g = new h

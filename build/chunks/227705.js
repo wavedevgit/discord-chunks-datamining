@@ -41,7 +41,7 @@ require("./830884.js");
 var Chunk637804 = require("./637804.js"),
   f = require.g.Set || require("./820410.js");
 
-function _(e) {
+function p(e) {
   var t = new f;
 
   function n(e) {
@@ -134,7 +134,7 @@ module.exports = function(e) {
   }, {
     key: "_updateValue",
     value: function(e) {
-      for (var t in this._value = e, _(this), this._listeners) this._listeners[t]({
+      for (var t in this._value = e, p(this), this._listeners) this._listeners[t]({
         value: this.__getValue()
       })
     }

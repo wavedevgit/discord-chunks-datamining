@@ -38,7 +38,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk436360 = require("./436360.js");
 
-function M(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,20 +47,20 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function k(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
 }
 
-function j(e, t) {
+function k(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -72,13 +72,13 @@ function j(e, t) {
 }
 
 function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function G() {
-  var e, t, n, i, M, j, G, B, Z;
+  var e, t, n, i, j, k, G, Z, B;
   let F = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
       return a()(null != module, "DefaultCustomizationSections: user cannot be undefined"), module
@@ -86,19 +86,19 @@ function G() {
     V = (0, Chunk442837.e7)([Chunk621853.Z], () => Chunk621853.Z.getUserProfile(F.id)),
     {
       pendingAvatar: H,
-      pendingGlobalName: W,
-      pendingBanner: Y,
+      pendingGlobalName: Y,
+      pendingBanner: W,
       pendingBio: K,
       pendingPronouns: z,
       pendingAccentColor: q,
-      pendingThemeColors: X,
-      pendingLegacyUsernameDisabled: Q,
+      pendingThemeColors: Q,
+      pendingLegacyUsernameDisabled: X,
       pendingPrimaryGuildId: J,
       errors: $
     } = (0, Chunk442837.cj)([Chunk25990.Z], () => {
       let e = Chunk25990.Z.getAllPending(),
         t = Chunk25990.Z.getErrors();
-      return U(k({}, module), {
+      return U(M({}, module), {
         errors: exports
       })
     }),
@@ -109,18 +109,18 @@ function G() {
     et = (0, Chunk295474.gS)(),
     en = Chunk74538.ZP.canUsePremiumProfileCustomization(F),
     er = (0, Chunk150039.gd)(H, F.avatar),
-    ei = (0, Chunk150039.f$)(Y, null == V ? true : V.banner),
+    ei = (0, Chunk150039.f$)(W, null == V ? true : V.banner),
     ea = (0, Chunk687158.ZP)(F.id),
     eo = null == ea ? true : ea.getLegacyUsername(),
-    es = (null != (i = null == (e = $.global_name) ? true : module.length) ? Chunk512722 : 0) > 0 ? $.global_name : null != (M = null == et ? true : et.nick) ? M : [],
-    el = (null != (j = null == (t = $.bio) ? true : exports.length) ? j : 0) > 0 ? $.bio : null != (G = null == et ? true : et.bio) ? G : [],
+    es = (null != (i = null == (e = $.global_name) ? true : module.length) ? Chunk512722 : 0) > 0 ? $.global_name : null != (j = null == et ? true : et.nick) ? j : [],
+    el = (null != (k = null == (t = $.bio) ? true : exports.length) ? k : 0) > 0 ? $.bio : null != (G = null == et ? true : et.bio) ? G : [],
     ec = (0, Chunk396402.w)(),
     eu = (0, Chunk477448.Z)({
       location: "DefaultCustomizationSections"
     }),
     ed = (null == V || null == (n = V.widgets) ? true : require.some(e => A.Ki.includes(e.type))) === true,
     ef = eu || ed,
-    e_ = () => en ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    ep = () => en ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)(Chunk134795.Z, {
         showRemoveBannerButton: ei,
         errors: $.banner,
@@ -129,7 +129,7 @@ function G() {
       }, "banner"), (0, Chunk54381.jsx)(Chunk451392.Z, {
         user: F,
         pendingAvatarSrc: ee,
-        pendingColors: X,
+        pendingColors: Q,
         onThemeColorsChange: Chunk350327.z5,
         forcedDivider: true
       })]
@@ -145,7 +145,7 @@ function G() {
       placeholder: F.username,
       errors: es,
       currentGlobalName: F.globalName,
-      pendingGlobalName: W,
+      pendingGlobalName: Y,
       onGlobalNameChange: Chunk809206.W0,
       user: F
     }), (0, Chunk54381.jsx)(Chunk906364.Z, {
@@ -153,7 +153,7 @@ function G() {
       errors: $.pronouns,
       onPronounsChange: Chunk350327.ID,
       pendingPronouns: z,
-      currentPronouns: null != (B = null == V ? true : V.pronouns) ? B : ""
+      currentPronouns: null != (Z = null == V ? true : V.pronouns) ? Z : ""
     }, "pronouns"), ef && (0, Chunk54381.jsx)(Chunk9617.Z, {}), (0, Chunk54381.jsx)(Chunk532432.Z, {
       onAvatarChange: Chunk809206.I5,
       showRemoveAvatarButton: er,
@@ -168,19 +168,19 @@ function G() {
     }), (0, Chunk54381.jsx)(Chunk513901.Z, {
       user: F,
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.wR5wOo)
-    }, "effect"), e_(), (0, Chunk54381.jsx)(Chunk126631.Z, {
+    }, "effect"), ep(), (0, Chunk54381.jsx)(Chunk126631.Z, {
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.NepzEw),
       errors: el,
       onBioChange: e => (0, d.xQ)(e, null == V ? true : V.bio),
       pendingBio: K,
-      currentBio: null != (Z = null == V ? true : V.bio) ? Z : ""
+      currentBio: null != (B = null == V ? true : V.bio) ? B : ""
     }, "bio"), ec.length > 0 && (0, Chunk54381.jsx)(Chunk74469.Z, {
       availablePrimaryGuilds: ec,
       pendingPrimaryGuildId: J,
       onChange: e => (0, s.s4)(e)
     }), null != eo && (0, Chunk54381.jsx)(Chunk872736.Z, {
       legacyUsername: eo,
-      pendingLegacyUsernameDisabled: Q
+      pendingLegacyUsernameDisabled: X
     }, "legacy_username")]
   })
 }

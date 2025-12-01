@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   K: () => C,
-  Z: () => P
+  Z: () => R
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -29,7 +29,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk793872 = require("./793872.js");
 
-function S(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,7 +45,7 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
@@ -65,10 +65,10 @@ function N() {
   })
 }
 
-function R(e) {
+function P(e) {
   return "".concat(O.GI).concat(e.displayName)
 }
-let P = {
+let R = {
   sentinel: Chunk761652.GI,
   stores: [Chunk998698.Z, Chunk213459.ZP, Chunk496675.Z],
   matches: (e, t, n, r, i) => i.commands !== y.L8.DISABLED && null == f.Z.getActiveCommand(e.id) && (r || i.commands !== y.L8.OLD_BUILT_INS),
@@ -77,7 +77,7 @@ let P = {
     if (r.commands === y.L8.OLD_BUILT_INS) {
       let r = (0, l.Kh)([o.yU.CHAT], false, false),
         i = RegExp("^".concat(E.Z.escape(n)), "i"),
-        a = (0, p.Dd)(r, i, {
+        a = (0, _.Dd)(r, i, {
           channel: e,
           guild: t
         }, y.AQ),
@@ -91,7 +91,7 @@ let P = {
         }
       }
     }
-    let a = (0, h.hV)(e, n),
+    let a = (0, m.hV)(e, n),
       {
         commands: s,
         sections: c
@@ -134,17 +134,17 @@ let P = {
       options: s,
       onHover: l,
       onClick: c
-    } = e, u = (0, h.hV)(a, o), d = s.commands === y.L8.OLD_BUILT_INS;
+    } = e, u = (0, m.hV)(a, o), d = s.commands === y.L8.OLD_BUILT_INS;
     return (0, b.HI)({
       query: u.text,
       selectedIndex: n,
       autocompletes: t,
       onHover: l,
       onClick: c,
-      titleWithQuery: I.t.HFRoZR,
-      titleWithoutQuery: I.intl.string(I.t["0hKkS+"]),
+      titleWithQuery: S.t.HFRoZR,
+      titleWithoutQuery: S.intl.string(S.t["0hKkS+"]),
       getQuery: e => "".concat(O.GI).concat(e),
-      Component: d ? m.ZP.Command : m.ZP.NewCommand,
+      Component: d ? h.ZP.Command : h.ZP.NewCommand,
       getProps: e => {
         let {
           command: t,
@@ -160,11 +160,11 @@ let P = {
         }
       },
       key: "commands",
-      headerClassName: d ? T.legacyInputCommandHeader : null,
+      headerClassName: d ? I.legacyInputCommandHeader : null,
       headerTrailingContent: d && (0, r.jsx)(i.Avr, {
         size: "xs",
         onClick: N,
-        text: I.intl.string(I.t["8a0P0y"])
+        text: S.intl.string(S.t["8a0P0y"])
       })
     })
   },
@@ -183,11 +183,11 @@ let P = {
       command: c,
       section: u
     } = t[n];
-    if (c.inputType === _.iw.PLACEHOLDER) return null;
-    if (i.commands === y.L8.OLD_BUILT_INS) i.insertText(R(c));
+    if (c.inputType === p.iw.PLACEHOLDER) return null;
+    if (i.commands === y.L8.OLD_BUILT_INS) i.insertText(P(c));
     else {
       let e = o;
-      null == e && (e = l ? _.Vh.QUERY : _.Vh.DISCOVERY), s.Po({
+      null == e && (e = l ? p.Vh.QUERY : p.Vh.DISCOVERY), s.Po({
         channelId: a.id,
         command: c,
         section: null != u ? u : null,

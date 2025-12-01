@@ -36,32 +36,32 @@ let c = 2592e6,
     itemImpressions: [],
     hidden: false
   }),
-  _ = f(),
-  p = new Set,
-  h = new Set,
-  m = 0,
+  p = f(),
+  _ = new Set,
+  m = new Set,
+  h = 0,
   g = false,
   E = false,
   b = 1e3;
 
 function y() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  if (!module && Date.now() < m) return;
+  if (!module && Date.now() < h) return;
   let t = 0,
     n = Date.now() - c;
-  for (let e = 0; module < _.itemImpressions.length; module++) {
-    let [r, i] = _.itemImpressions[module];
+  for (let e = 0; module < p.itemImpressions.length; module++) {
+    let [r, i] = p.itemImpressions[module];
     if (Chunk442837 < require) t = module + 1;
     else break
   }
-  exports > 0 && (_.itemImpressions = _.itemImpressions.slice(exports)), _.itemImpressions.length > d && (_.itemImpressions = _.itemImpressions.slice(-d));
+  exports > 0 && (p.itemImpressions = p.itemImpressions.slice(exports)), p.itemImpressions.length > d && (p.itemImpressions = p.itemImpressions.slice(-d));
   let r = E ? b : u,
     i = new Set,
     a = new Set,
     o = Date.now() - r,
     s = null;
-  for (let [e, t] of _.itemImpressions) exports < Chunk70956 ? Chunk442837.add(module) : null == s && (s = exports + r), Chunk570140.add(module);
-  p = Chunk442837, h = Chunk570140, m = null != s ? s : 1 / 0, g = true
+  for (let [e, t] of p.itemImpressions) exports < Chunk70956 ? Chunk442837.add(module) : null == s && (s = exports + r), Chunk570140.add(module);
+  _ = Chunk442837, m = Chunk570140, h = null != s ? s : 1 / 0, g = true
 }
 
 function O(e) {
@@ -71,50 +71,50 @@ function O(e) {
   g || y();
   let n = Date.now(),
     r = false;
-  for (let e of t) h.has(e) || (_.itemImpressions.push([e, n]), r = true);
+  for (let e of t) m.has(e) || (p.itemImpressions.push([e, n]), r = true);
   return y(r), r
 }
 
 function v() {
-  _.itemImpressions = [], y(true)
-}
-
-function I() {
-  return console.log("Item impressions:", _.itemImpressions), false
-}
-
-function T() {
-  E = !E
+  p.itemImpressions = [], y(true)
 }
 
 function S() {
-  _.hidden = !_.hidden
+  return console.log("Item impressions:", p.itemImpressions), false
+}
+
+function I() {
+  E = !E
+}
+
+function T() {
+  p.hidden = !p.hidden
 }
 class A extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    _ = l({}, _, null != e ? e : {})
+    p = l({}, p, null != e ? e : {})
   }
   getState() {
-    return _
+    return p
   }
   getImpressionCappedItemIds() {
-    return y(), p
+    return y(), _
   }
   getDebugFastImpressionCappingEnabled() {
     return E
   }
   get hidden() {
-    return _.hidden
+    return p.hidden
   }
   reset() {
-    _ = f()
+    p = f()
   }
 }
 s(A, "displayName", "ContentInventoryPersistedStore"), s(A, "persistKey", "ContentInventoryPersistedStore");
 let C = new A(Chunk570140.Z, {
   CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS: O,
   CONTENT_INVENTORY_DEBUG_CLEAR_IMPRESSIONS: v,
-  CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS: I,
-  CONTENT_INVENTORY_DEBUG_TOGGLE_FAST_IMPRESSION_CAPPING: T,
-  CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: S
+  CONTENT_INVENTORY_DEBUG_LOG_IMPRESSIONS: S,
+  CONTENT_INVENTORY_DEBUG_TOGGLE_FAST_IMPRESSION_CAPPING: I,
+  CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: T
 })

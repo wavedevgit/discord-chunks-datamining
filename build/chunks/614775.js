@@ -13,18 +13,18 @@ var Chunk566817 = require("./566817.js"),
   Chunk936342 = require("./936342.js"),
   Chunk951575 = require("./951575.js");
 module.exports = function(e, t, n) {
-  if (!_(e)) throw new a("Assertion failed: O must be an Object");
+  if (!p(e)) throw new a("Assertion failed: O must be an Object");
   if (!c(t)) throw new a("Assertion failed: P must be a Property Key");
   if (!o(n)) throw new a("Assertion failed: Desc must be a Property Descriptor");
   if (!r) {
     if (s(n)) throw new i("This environment does not support accessor property descriptors.");
-    var p = !(t in e) && n["[[Writable]]"] && n["[[Enumerable]]"] && n["[[Configurable]]"] && "[[Value]]" in n,
-      h = t in e && (!("[[Configurable]]" in n) || n["[[Configurable]]"]) && (!("[[Enumerable]]" in n) || n["[[Enumerable]]"]) && (!("[[Writable]]" in n) || n["[[Writable]]"]) && "[[Value]]" in n;
-    if (p || h) return e[t] = n["[[Value]]"], d(e[t], n["[[Value]]"]);
+    var _ = !(t in e) && n["[[Writable]]"] && n["[[Enumerable]]"] && n["[[Configurable]]"] && "[[Value]]" in n,
+      m = t in e && (!("[[Configurable]]" in n) || n["[[Configurable]]"]) && (!("[[Enumerable]]" in n) || n["[[Enumerable]]"]) && (!("[[Writable]]" in n) || n["[[Writable]]"]) && "[[Value]]" in n;
+    if (_ || m) return e[t] = n["[[Value]]"], d(e[t], n["[[Value]]"]);
     throw new i("This environment does not support defining non-writable, non-enumerable, or non-configurable properties")
   }
-  var m = r(e, t),
-    g = m && u(m),
+  var h = r(e, t),
+    g = h && u(h),
     E = l(e);
   return f(e, t, E, n, g)
 }

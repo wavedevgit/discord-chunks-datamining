@@ -2,7 +2,7 @@
 /** chunk id: 201895, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Yb: () => _,
+  Yb: () => p,
   ZP: () => d
 }), require("./539854.js");
 var Chunk131704 = require("./131704.js"),
@@ -29,11 +29,11 @@ function d(e) {
       unread: o = false,
       mentionCount: d = 0,
       userCount: f,
-      embeddedActivitiesCount: _,
-      isSubscriptionGated: p,
-      needSubscriptionToAccess: h
+      embeddedActivitiesCount: p,
+      isSubscriptionGated: _,
+      needSubscriptionToAccess: m
     } = e,
-    m = (0, s.F6)(n, a.default, i.Z);
+    h = (0, s.F6)(n, a.default, i.Z);
   switch (n.type) {
     case l.d4z.DM:
       t = o ? c.t.F2MZsu : c.t.fYqXVY;
@@ -65,12 +65,12 @@ function d(e) {
           userCount: f
         }))
       }
-      null != _ && _ > 0 && g.push(c.intl.formatToPlainString(c.t.O6PLYd, {
-        activitiesCount: _
+      null != p && p > 0 && g.push(c.intl.formatToPlainString(c.t.O6PLYd, {
+        activitiesCount: p
       }));
       let E = u({
-        isSubscriptionGated: p,
-        needSubscriptionToAccess: h
+        isSubscriptionGated: _,
+        needSubscriptionToAccess: m
       });
       return null != E && g.push(E), g.join(", ");
     case l.d4z.GUILD_STAGE_VOICE:
@@ -80,12 +80,12 @@ function d(e) {
       t = r.Ec.has(n.type) ? d > 0 ? c.t["ZL7+I6"] : o ? c.t.YlVvmc : c.t["0nZpiF"] : d > 0 ? c.t.g8ONM0 : o ? c.t.smf1CZ : c.t.s0JADj
   }
   let b = [c.intl.formatToPlainString(t, {
-      channelName: m,
+      channelName: h,
       mentionCount: d
     })],
     y = u({
-      isSubscriptionGated: p,
-      needSubscriptionToAccess: h
+      isSubscriptionGated: _,
+      needSubscriptionToAccess: m
     });
   return null != y && b.push(y), b.join(", ")
 }
@@ -105,7 +105,7 @@ function f(e) {
   }
 }
 
-function _(e) {
+function p(e) {
   let {
     channel: t,
     muted: n,

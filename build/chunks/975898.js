@@ -17,21 +17,21 @@ function l(e, t, n) {
     value: u,
     name: d,
     form: f,
-    children: _,
-    "aria-label": p,
-    "aria-labelledby": h,
-    validationState: m = "valid",
+    children: p,
+    "aria-label": _,
+    "aria-labelledby": m,
+    validationState: h = "valid",
     isInvalid: g,
     onPressStart: E,
     onPressEnd: b,
     onPressChange: y,
     onPress: O,
     onPressUp: v,
-    onClick: I
-  } = e, T = e => {
+    onClick: S
+  } = e, I = e => {
     e.stopPropagation(), t.setSelected(e.target.checked)
   }, {
-    pressProps: S,
+    pressProps: T,
     isPressed: A
   } = (0, o.r)({
     onPressStart: E,
@@ -39,7 +39,7 @@ function l(e, t, n) {
     onPressChange: y,
     onPress: O,
     onPressUp: v,
-    onClick: I,
+    onClick: S,
     isDisabled: l
   }), {
     pressProps: C,
@@ -49,27 +49,27 @@ function l(e, t, n) {
     onPressEnd: b,
     onPressChange: y,
     onPressUp: v,
-    onClick: I,
+    onClick: S,
     onPress(e) {
       var r;
       null == O || O(e), t.toggle(), null == (r = n.current) || r.focus()
     },
     isDisabled: l || c
   }), {
-    focusableProps: R
-  } = (0, s.kc)(e, n), P = (0, r.d)(S, R), D = (0, i.z)(e, {
+    focusableProps: P
+  } = (0, s.kc)(e, n), R = (0, r.d)(T, P), w = (0, i.z)(e, {
     labelable: true
   });
   return (0, a.y)(n, t.defaultSelected, t.setSelected), {
     labelProps: (0, r.d)(C, {
       onClick: e => e.preventDefault()
     }),
-    inputProps: (0, r.d)(D, {
-      "aria-invalid": g || "invalid" === m || true,
+    inputProps: (0, r.d)(w, {
+      "aria-invalid": g || "invalid" === h || true,
       "aria-errormessage": e["aria-errormessage"],
       "aria-controls": e["aria-controls"],
       "aria-readonly": c || true,
-      onChange: T,
+      onChange: I,
       disabled: l,
       ...null == u ? {} : {
         value: u
@@ -77,12 +77,12 @@ function l(e, t, n) {
       name: d,
       form: f,
       type: "checkbox",
-      ...P
+      ...R
     }),
     isSelected: t.isSelected,
     isPressed: A || N,
     isDisabled: l,
     isReadOnly: c,
-    isInvalid: g || "invalid" === m
+    isInvalid: g || "invalid" === h
   }
 }

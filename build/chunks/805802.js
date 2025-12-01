@@ -29,7 +29,7 @@ function u(e, t) {
     c = o.tzid;
   return g(e, t.unfold).forEach(function(e) {
     if (e) {
-      var t, o = m(e),
+      var t, o = h(e),
         s = o.name,
         u = o.parms,
         d = o.value;
@@ -40,8 +40,8 @@ function u(e, t) {
           break;
         case "RDATE":
           var f = null != (t = /RDATE(?:;TZID=([^:=]+))?/i.exec(e)) ? t : [],
-            _ = f[1];
-          _ && !c && (c = _), r = r.concat(b(d, u));
+            p = f[1];
+          p && !c && (c = p), r = r.concat(b(d, u));
           break;
         case "EXRULE":
           if (u.length) throw Error("unsupported EXRULE parm: ".concat(u.join(",")));
@@ -76,33 +76,33 @@ function d(e, t) {
     d = n.tzid,
     f = false === t.cache;
   if (t.compatible && (t.forceset = true, t.unfold = true), t.forceset || r.length > 1 || o.length || s.length || l.length) {
-    var p = new a.p(f);
-    return p.dtstart(c), p.tzid(d || true), r.forEach(function(e) {
-      p.rrule(new i.Ci(_(e, c, d), f))
+    var _ = new a.p(f);
+    return _.dtstart(c), _.tzid(d || true), r.forEach(function(e) {
+      _.rrule(new i.Ci(p(e, c, d), f))
     }), o.forEach(function(e) {
-      p.rdate(e)
+      _.rdate(e)
     }), s.forEach(function(e) {
-      p.exrule(new i.Ci(_(e, c, d), f))
+      _.exrule(new i.Ci(p(e, c, d), f))
     }), l.forEach(function(e) {
-      p.exdate(e)
-    }), t.compatible && t.dtstart && p.rdate(c), p
+      _.exdate(e)
+    }), t.compatible && t.dtstart && _.rdate(c), _
   }
-  var h = r[0] || {};
-  return new i.Ci(_(h, h.dtstart || t.dtstart || c, h.tzid || t.tzid || d), f)
+  var m = r[0] || {};
+  return new i.Ci(p(m, m.dtstart || t.dtstart || c, m.tzid || t.tzid || d), f)
 }
 
 function f(e, t) {
-  return true === t && (t = {}), d(e, p(t))
+  return true === t && (t = {}), d(e, _(t))
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   return (0, r.pi)((0, r.pi)({}, e), {
     dtstart: t,
     tzid: n
   })
 }
 
-function p(e) {
+function _(e) {
   var t = [],
     n = Object.keys(e),
     i = Object.keys(c);
@@ -112,7 +112,7 @@ function p(e) {
   return (0, r.pi)((0, r.pi)({}, c), e)
 }
 
-function h(e) {
+function m(e) {
   if (false === e.indexOf(":")) return {
     name: "RRULE",
     value: e
@@ -124,8 +124,8 @@ function h(e) {
   }
 }
 
-function m(e) {
-  var t = h(e),
+function h(e) {
+  var t = m(e),
     n = t.name,
     r = t.value,
     i = n.split(";");

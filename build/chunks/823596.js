@@ -2,11 +2,11 @@
 /** chunk id: 823596, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  IF: () => _,
+  IF: () => p,
   LU: () => c,
-  Rt: () => h,
+  Rt: () => m,
   hW: () => u,
-  t3: () => p
+  t3: () => _
 }), require("./539854.js"), require("./388685.js");
 var Chunk271383 = require("./271383.js"),
   Chunk588215 = require("./588215.js");
@@ -54,7 +54,7 @@ let c = [12, 25, 50, 100],
   d = 5,
   f = 250;
 
-function _() {
+function p() {
   return {
     pageSize: c[0],
     currentPage: 1,
@@ -64,12 +64,12 @@ function _() {
   }
 }
 
-function p(e) {
+function _(e) {
   return Math.max(e.pageSize * d, f)
 }
-class h {
+class m {
   reset() {
-    this._paginationState = _(), this._sortedMemberIds = [], this._cachedPaginationChunks = {}, this._version += 1
+    this._paginationState = p(), this._sortedMemberIds = [], this._cachedPaginationChunks = {}, this._version += 1
   }
   isMemberOnCurrentPage(e) {
     var t;
@@ -141,7 +141,7 @@ class h {
     a(this, "guildId", true), a(this, "_sortedMemberIds", true), a(this, "_paginationState", true), a(this, "_version", true), a(this, "_cachedPaginationChunks", true), a(this, "_reduceMemberIdsToPaginationChunks", (e, t, n) => {
       let r = Math.floor(n / this._paginationState.pageSize) + 1;
       return null == e[r] && (e[r] = []), e[r].push(t), e
-    }), this.guildId = e, this._paginationState = _(), this._version = 0;
+    }), this.guildId = e, this._paginationState = p(), this._version = 0;
     let [n, r] = this._initPaginationFromRawMembers(t);
     this._sortedMemberIds = n, this._cachedPaginationChunks = r, this._version += 1
   }

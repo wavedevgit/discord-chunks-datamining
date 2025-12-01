@@ -2,14 +2,14 @@
 /** chunk id: 444295, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  JS: () => h,
+  JS: () => m,
   OverlayToggledClientSettingType: () => u,
-  Qu: () => m,
+  Qu: () => h,
   Ws: () => E,
   bk: () => g,
-  ee: () => _,
+  ee: () => p,
   ou: () => f,
-  zi: () => p
+  zi: () => _
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk579806 = require("./579806.js"),
@@ -34,8 +34,8 @@ function d(e) {
   }
 }
 async function f(e, t, r) {
-  var o, u, f, _, p, h;
-  let m = null != r ? a.Z.getDetectableGame(r) : null,
+  var o, u, f, p, _, m;
+  let h = null != r ? a.Z.getDetectableGame(r) : null,
     {
       default: g
     } = n(371651),
@@ -45,14 +45,14 @@ async function f(e, t, r) {
     enabled: e,
     setting_type: d(t),
     client_setting_type: t,
-    application_id: null != (_ = null == m ? true : m.id) ? _ : true,
-    application_name: null != (p = null == m ? true : m.name) ? p : true,
+    application_id: null != (p = null == h ? true : h.id) ? p : true,
+    application_name: null != (_ = null == h ? true : h.name) ? _ : true,
     most_recent_overlay_render_method: b,
-    hardware_display_count: null != (h = await (null === i.Z || true === i.Z || null == (u = i.Z.hardware) || null == (o = u.getDisplayCount) ? true : o.call(u))) ? h : null
+    hardware_display_count: null != (m = await (null === i.Z || true === i.Z || null == (u = i.Z.hardware) || null == (o = u.getDisplayCount) ? true : o.call(u))) ? m : null
   })
 }
 
-function _(e, t) {
+function p(e, t) {
   let [n, i] = r.useState(e()), a = r.useRef(e);
   return r.useEffect(() => {
     a.current = e
@@ -69,7 +69,7 @@ function _(e, t) {
   }, t), n
 }
 
-function p(e, t) {
+function _(e, t) {
   var n, r, i;
   let {
     locked: a,
@@ -87,7 +87,7 @@ function p(e, t) {
   })
 }
 
-function h(e, t) {
+function m(e, t) {
   let {
     pinned: n,
     opacity: r
@@ -98,7 +98,7 @@ function h(e, t) {
     opacity: r
   })
 }
-var m = function(e) {
+var h = function(e) {
     return e.SCREEN_SHARE = "screen share", e.CAMERA = "camera", e.MICROPHONE = "microphone", e.AUDIO = "audio", e.VOICE = "voice", e.CALL_BUTTON = "call button", e.SOUNDBOARD = "soundboard", e.GO_LIVE = "go live", e.INVITE = "invite", e.REDIRECT = "redirect", e.FRIEND_LIST = "friend list", e.FRIEND_REQUEST = "friend request", e.KEYBIND_HINT = "keybind hint", e
   }({}),
   g = function(e) {

@@ -16,11 +16,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk41356 = require("./41356.js");
-let h = {
+let m = {
     section: Chunk981631.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "gift_effect_emoji_picker"
   },
-  m = Chunk185923.Hz.GIFT;
+  h = Chunk185923.Hz.GIFT;
 
 function g(e) {
   let {
@@ -28,16 +28,16 @@ function g(e) {
     emojiConfetti: n
   } = e, [a, d] = i.useState(false), f = i.useRef(null), g = (0, u.Z)({
     location: "GiftEmoji"
-  }), E = o()(p.text, g && p.refresh), b = e => (0, r.jsxs)("div", {
-    className: p.customGiftContent,
+  }), E = o()(_.text, g && _.refresh), b = e => (0, r.jsxs)("div", {
+    className: _.customGiftContent,
     children: [(0, r.jsxs)("div", {
-      className: p.customGiftHeader,
+      className: _.customGiftHeader,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-md/bold",
-        children: _.intl.string(_.t.Hl2Ige)
+        children: p.intl.string(p.t.Hl2Ige)
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        children: _.intl.string(_.t.stGFA3)
+        children: p.intl.string(p.t.stGFA3)
       })]
     }), e]
   }), y = e => {
@@ -58,16 +58,16 @@ function g(e) {
       } = e;
       return (0, r.jsx)(l.VqE, {
         children: (0, r.jsx)(c.Z, {
-          analyticsOverride: h,
+          analyticsOverride: m,
           closePopout: t,
           onSelectEmoji: y,
           wrapper: "div",
-          pickerIntention: m,
+          pickerIntention: h,
           renderHeader: b,
-          headerClassName: p.emojiHeader,
-          className: p.emojiList,
-          listHeaderClassName: p.emojiList,
-          categoryListClassName: p.categoryList,
+          headerClassName: _.emojiHeader,
+          className: _.emojiList,
+          listHeaderClassName: _.emojiList,
+          categoryListClassName: _.categoryList,
           searchProps: {
             accessory: (0, r.jsx)(r.Fragment, {})
           }
@@ -75,25 +75,25 @@ function g(e) {
       })
     },
     children: () => (0, r.jsx)(l.P3F, {
-      className: o()(p.container, g && p.refresh),
+      className: o()(_.container, g && _.refresh),
       onClick: () => d(true),
       innerRef: f,
       children: (null == n ? true : n.name) == null ? (0, r.jsxs)("div", {
-        className: p.contentContainer,
+        className: _.contentContainer,
         children: [(0, r.jsx)(l.EO4, {
           size: "custom",
           color: g ? s.Z.colors.ICON_PRIMARY : s.Z.colors.WHITE,
-          className: p.emojiIcon,
+          className: _.emojiIcon,
           width: 14,
           height: 14
         }), (0, r.jsx)(l.Text, {
           className: E,
           variant: "text-sm/semibold",
           lineClamp: 1,
-          children: _.intl.string(_.t.Hl2Ige)
+          children: p.intl.string(p.t.Hl2Ige)
         })]
       }) : (0, r.jsxs)("div", {
-        className: p.contentContainer,
+        className: _.contentContainer,
         children: [(0, r.jsx)(l.Text, {
           className: E,
           variant: "text-sm/semibold",

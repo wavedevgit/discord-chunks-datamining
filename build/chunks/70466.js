@@ -34,20 +34,20 @@ let c = e => {
     let {
       subscriptionTier: d,
       hasActivePromotion: f = false,
-      useShorterCTA: _ = false,
-      isPersistentCTA: p = false
-    } = e, h = (0, a.N)(), m = null == h ? true : h.subscription_trial, g = (0, i.N)(), E = (0, o.Wp)(g, s.Si.TIER_2) ? s.Si.TIER_2 : true, b = (0, r.a5)({
-      intervalType: null == m ? true : m.interval,
-      intervalCount: null == m ? true : m.interval_count
-    }), y = null != (n = null != d ? d : null == h || null == (t = h.subscription_trial) ? true : t.sku_id) ? n : E, O = null != m && y === m.sku_id, v = (null == h ? true : h.trial_id) === s.a7;
+      useShorterCTA: p = false,
+      isPersistentCTA: _ = false
+    } = e, m = (0, a.N)(), h = null == m ? true : m.subscription_trial, g = (0, i.N)(), E = (0, o.Wp)(g, s.Si.TIER_2) ? s.Si.TIER_2 : true, b = (0, r.a5)({
+      intervalType: null == h ? true : h.interval,
+      intervalCount: null == h ? true : h.interval_count
+    }), y = null != (n = null != d ? d : null == m || null == (t = m.subscription_trial) ? true : t.sku_id) ? n : E, O = null != h && y === h.sku_id, v = (null == m ? true : m.trial_id) === s.a7;
     return {
-      buttonText: f ? l.intl.string(l.t.J61px0) : null != g ? u(y, _, p, g.discount.amount) : c({
+      buttonText: f ? l.intl.string(l.t.J61px0) : null != g ? u(y, p, _, g.discount.amount) : c({
         showTrialCTA: O,
         subscriptionTier: y,
         trialDurationCopy: b,
-        isPersistentCTA: p,
+        isPersistentCTA: _,
         shouldShowReferralTrialCopy: v,
-        subscriptionTrial: m
+        subscriptionTrial: h
       }),
       marketingSubscriptionTierSkuId: y
     }

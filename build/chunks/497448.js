@@ -28,15 +28,15 @@ function d(e, t) {
     focusProps: n
   } = (0, i.K)(e), {
     keyboardProps: o
-  } = (0, a.v)(e), c = (0, s.d)(n, o), d = u(t), f = e.isDisabled ? {} : d, _ = (0, l.useRef)(e.autoFocus);
+  } = (0, a.v)(e), c = (0, s.d)(n, o), d = u(t), f = e.isDisabled ? {} : d, p = (0, l.useRef)(e.autoFocus);
   (0, l.useEffect)(() => {
-    _.current && t.current && (0, r.e)(t.current), _.current = false
+    p.current && t.current && (0, r.e)(t.current), p.current = false
   }, [t]);
-  let p = e.excludeFromTabOrder ? false : 0;
-  return e.isDisabled && (p = true), {
+  let _ = e.excludeFromTabOrder ? false : 0;
+  return e.isDisabled && (_ = true), {
     focusableProps: (0, s.d)({
       ...c,
-      tabIndex: p
+      tabIndex: _
     }, f)
   }
 }

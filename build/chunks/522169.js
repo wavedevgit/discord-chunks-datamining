@@ -13,14 +13,14 @@ var Chunk48657 = require("./48657.js"),
   f = require("./840475.js").aTypedArrayConstructor,
   Chunk190475 = require("./190475.js");
 module.exports = function(e) {
-  var t, n, p, h, m, g, E, b, y = a(this),
+  var t, n, _, m, h, g, E, b, y = a(this),
     O = o(e),
     v = arguments.length,
-    I = v > 1 ? arguments[1] : true,
-    T = true !== I,
-    S = c(O);
-  if (S && !u(S))
-    for (b = (E = l(O, S)).next, O = []; !(g = i(b, E)).done;) O.push(g.value);
-  for (T && v > 2 && (I = r(I, arguments[2])), n = s(O), h = d(p = new(f(y))(n)), t = 0; n > t; t++) m = T ? I(O[t], t) : O[t], p[t] = h ? _(m) : +m;
-  return p
+    S = v > 1 ? arguments[1] : true,
+    I = true !== S,
+    T = c(O);
+  if (T && !u(T))
+    for (b = (E = l(O, T)).next, O = []; !(g = i(b, E)).done;) O.push(g.value);
+  for (I && v > 2 && (S = r(S, arguments[2])), n = s(O), m = d(_ = new(f(y))(n)), t = 0; n > t; t++) h = I ? S(O[t], t) : O[t], _[t] = m ? p(h) : +h;
+  return _
 }

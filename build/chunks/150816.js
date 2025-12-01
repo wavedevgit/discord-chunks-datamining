@@ -4,12 +4,12 @@
 require.d(exports, {
   Ge: () => s,
   H6: () => g,
-  JF: () => h,
+  JF: () => m,
   LN: () => o,
   RA: () => v,
   SH: () => E,
   _$: () => l,
-  aK: () => p,
+  aK: () => _,
   f: () => a,
   km: () => O,
   pS: () => d
@@ -268,18 +268,18 @@ let a = {
   },
   f = `(?:${(0,Chunk800911.q3)(c)}|[0-9]+|[0-9]+\\.[0-9]+|пол|несколько|пар(?:ы|у)|\\s{0,3})`;
 
-function _(e) {
+function p(e) {
   let t = e.toLowerCase();
   return true !== c[t] ? c[t] : t.match(/несколько/) ? 3 : t.match(/пол/) ? .5 : t.match(/пар/) ? 2 : "" === t ? 1 : parseFloat(t)
 }
-let p = `(?:${(0,Chunk800911.q3)(u)}|[0-9]{1,2}(?:го|ого|е|ое)?)`;
+let _ = `(?:${(0,Chunk800911.q3)(u)}|[0-9]{1,2}(?:го|ого|е|ое)?)`;
 
-function h(e) {
+function m(e) {
   let t = e.toLowerCase();
   return true !== u[t] ? u[t] : parseInt(t)
 }
-let m = "(?:\\s+(?:году|года|год|г|г.))?",
-  g = `(?:[1-9][0-9]{0,3}${m}\\s*(?:н.э.|до н.э.|н. э.|до н. э.)|[1-2][0-9]{3}${m}|[5-9][0-9]${m})`;
+let h = "(?:\\s+(?:году|года|год|г|г.))?",
+  g = `(?:[1-9][0-9]{0,3}${h}\\s*(?:н.э.|до н.э.|н. э.|до н. э.)|[1-2][0-9]{3}${h}|[5-9][0-9]${h})`;
 
 function E(e) {
   if (/(год|года|г|г.)/i.test(e) && (e = e.replace(/(год|года|г|г.)/i, "")), /(до н.э.|до н. э.)/i.test(e)) return -parseInt(e = e.replace(/(до н.э.|до н. э.)/i, ""));
@@ -295,11 +295,11 @@ function v(e) {
   let t = {},
     n = e,
     r = y.exec(n);
-  for (; r;) I(t, r), n = n.substring(r[0].length).trim(), r = y.exec(n);
+  for (; r;) S(t, r), n = n.substring(r[0].length).trim(), r = y.exec(n);
   return t
 }
 
-function I(e, t) {
-  let n = _(t[1]);
+function S(e, t) {
+  let n = p(t[1]);
   e[d[t[2].toLowerCase()]] = n
 }

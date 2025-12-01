@@ -19,17 +19,17 @@ function s(e) {
     setHeight: c,
     setWidth: u,
     transform: d
-  } = e, [f, _] = r.useState(null != t && t), p = r.useRef(c);
+  } = e, [f, p] = r.useState(null != t && t), _ = r.useRef(c);
   r.useEffect(() => {
-    p.current = c
+    _.current = c
   }, [c]);
-  let h = r.useRef(u);
+  let m = r.useRef(u);
   r.useEffect(() => {
-    h.current = u
+    m.current = u
   }, [u]);
-  let m = r.useRef(l);
+  let h = r.useRef(l);
   r.useEffect(() => {
-    m.current = l
+    h.current = l
   }, [l]);
   let {
     refs: g,
@@ -37,7 +37,7 @@ function s(e) {
     context: b
   } = (0, i.YF)({
     open: f,
-    onOpenChange: _,
+    onOpenChange: p,
     transform: d,
     middleware: [null == s ? (0, a.X5)() : true, (0, a.dp)({
       apply(e) {
@@ -45,13 +45,13 @@ function s(e) {
           rects: t,
           elements: n
         } = e;
-        m.current && Object.assign(n.floating.style, {
+        h.current && Object.assign(n.floating.style, {
           minWidth: "".concat(t.reference.width, "px"),
           width: "".concat(t.reference.width, "px")
-        }), null != h.current && Object.assign(n.floating.style, {
-          width: "".concat(h.current(t.reference), "px")
-        }), null != p.current && Object.assign(n.floating.style, {
-          maxHeight: "".concat(p.current(t.reference), "px")
+        }), null != m.current && Object.assign(n.floating.style, {
+          width: "".concat(m.current(t.reference), "px")
+        }), null != _.current && Object.assign(n.floating.style, {
+          maxHeight: "".concat(_.current(t.reference), "px")
         })
       }
     }), (0, a.RR)(), (0, a.cv)(n), (0, a.uY)()],
@@ -68,7 +68,7 @@ function s(e) {
   } = (0, i.NI)([y]);
   return {
     isOpen: f,
-    setIsOpen: _,
+    setIsOpen: p,
     refs: g,
     floatingStyles: E,
     context: b,

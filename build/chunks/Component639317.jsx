@@ -22,7 +22,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function _(e) {
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,13 +46,13 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -158,11 +158,11 @@ class y extends(i = Chunk473749.PureComponent) {
         className: n,
         onResize: r
       } = module,
-      i = m(module, ["style", "className", "onResize"]);
+      i = h(module, ["style", "className", "onResize"]);
     delete i.fontWidthEstimate;
-    let o = _({}, this.state, exports);
+    let o = p({}, this.state, exports);
     return (0, Chunk54381.jsx)(Chunk793030.tEY, {
-      children: (0, Chunk54381.jsx)("textarea", h(_({}, i), {
+      children: (0, Chunk54381.jsx)("textarea", m(p({}, i), {
         className: l()(require, Chunk154257.scrollbarGhostHairline),
         ref: this.handleSetRef,
         style: Chunk473749,

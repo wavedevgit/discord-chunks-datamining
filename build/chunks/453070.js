@@ -2,16 +2,16 @@
 /** chunk id: 453070, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Go: () => R,
-  LZ: () => w,
+  Go: () => P,
+  LZ: () => D,
   Pq: () => v,
-  RJ: () => P,
-  Sd: () => M,
-  XW: () => x,
-  el: () => T,
+  RJ: () => R,
+  Sd: () => j,
+  XW: () => L,
+  el: () => I,
   fP: () => A,
-  fQ: () => S,
-  t$: () => I
+  fQ: () => T,
+  t$: () => S
 }), require("./539854.js"), require("./388685.js"), require("./290780.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -36,14 +36,14 @@ let v = e => {
     A();
     let t = (0, i.e7)([g.Z], () => g.Z.hasLoadedStickerPacks);
     r.useEffect(() => {
-      t && null == g.Z.getStickerPack(e) && (0, h.FQ)(e)
+      t && null == g.Z.getStickerPack(e) && (0, m.FQ)(e)
     }, [e, t])
   },
-  I = e => {
+  S = e => {
     let t = o.Wp.useSetting();
     return (0, b.WD)(t, e)
   },
-  T = e => {
+  I = e => {
     let {
       collapsedStickersCategories: t,
       filteredStickers: n,
@@ -56,10 +56,10 @@ let v = e => {
     return r.useMemo(() => {
       let e = Math.floor((o - i + s) / (u + s)),
         r = Math.floor(Math.max(s, (o - i - u * e) / (e - 1))),
-        _ = [],
         p = [],
-        h = [],
-        m = 0,
+        _ = [],
+        m = [],
+        h = 0,
         g = 0,
         y = 0;
       if (0 !== o) {
@@ -72,11 +72,11 @@ let v = e => {
             s = c.Z.getGuildId(),
             u = d.findIndex(e => e.type === E.Ih.FAVORITE),
             v = d.findIndex(e => e.type === E.Ih.RECENT),
-            I = t.length;
-          null != i && s === i.id && o && t.length < (0, f.A3)(i.premiumTier) && I++;
-          let T = Math.ceil(I / e);
-          p[g] = r ? 0 : T;
-          for (let a = 0; a < T; a++) {
+            S = t.length;
+          null != i && s === i.id && o && t.length < (0, f.A3)(i.premiumTier) && S++;
+          let I = Math.ceil(S / e);
+          _[g] = r ? 0 : I;
+          for (let a = 0; a < I; a++) {
             let o = a * e,
               s = o + e,
               l = t.slice(o, s).map((e, t) => ({
@@ -84,37 +84,37 @@ let v = e => {
                 sticker: e,
                 packId: (0, b.jl)(e) ? e.pack_id : "TODO - fix",
                 gridSectionIndex: g,
-                rowIndex: m,
+                rowIndex: h,
                 columnIndex: t,
                 visibleRowIndex: y,
                 category: n
               }));
-            g > v && g > u && null != i && I > t.length && l.push({
+            g > v && g > u && null != i && S > t.length && l.push({
               type: E.al.CREATE_STICKER,
               guild_id: i.id,
               name: O.intl.string(O.t["UwF+Cw"]),
               gridSectionIndex: g,
-              rowIndex: m,
+              rowIndex: h,
               columnIndex: l.length,
               visibleRowIndex: y
-            }), r || (y++, h.push(l), _.push(l.length)), m++
+            }), r || (y++, m.push(l), p.push(l.length)), h++
           }
           g++
         };
         if (null == n)
-          for (let e of d) e.stickers.length > 0 ? (m++, r(e.stickers, e.type, (null == t ? true : t.has(e.id)) === true)) : e.type === E.Ih.EMPTY_GUILD_UPSELL && (p[g] = 0, g++);
+          for (let e of d) e.stickers.length > 0 ? (h++, r(e.stickers, e.type, (null == t ? true : t.has(e.id)) === true)) : e.type === E.Ih.EMPTY_GUILD_UPSELL && (_[g] = 0, g++);
         else n.sendable.length > 0 && r(n.sendable, E.Ih.SEARCH_RESULTS), n.sendableWithPremium.length > 0 && r(n.sendableWithPremium, E.Ih.SEARCH_RESULTS)
       }
       return {
-        rowCount: m,
-        rowCountBySection: p,
-        stickersGrid: h,
+        rowCount: h,
+        rowCountBySection: _,
+        stickersGrid: m,
         gutterWidth: r,
-        columnCounts: _
+        columnCounts: p
       }
     }, [t, n, i, o, s, u, d])
   },
-  S = e => true,
+  T = e => true,
   A = () => {
     Chunk473749.useEffect(() => {
       (0, Chunk268350.$p)()
@@ -157,7 +157,7 @@ let v = e => {
           id: t.id,
           name: t.name,
           stickers: []
-        }), null == o || _.BT({
+        }), null == o || p.BT({
           permission: y.Plq.USE_EXTERNAL_EMOJIS,
           user: o,
           context: e
@@ -168,35 +168,35 @@ let v = e => {
   },
   N = [];
 
-function R() {
+function P() {
   var e, t;
   return null != (t = null == (e = (0, Chunk516373.D)().favoriteStickers) ? true : module.stickerIds) ? exports : N
 }
 
-function P() {
-  let e = R();
+function R() {
+  let e = P();
   return (0, Chunk442837.Wu)([Chunk926491.Z], () => module.map(e => g.Z.getStickerById(e)).filter(e => null != e && (!(0, b.J8)(e) || (0, b.V9)(e))), [module])
 }
 
-function D() {
+function w() {
   var e, t;
   let n = (0, Chunk516373.D)(),
     r = N;
   return (null == require || null == (e = require.stickerFrecency) ? true : module.stickers) != null && (r = Object.keys(null == require || null == (t = require.stickerFrecency) ? true : exports.stickers)), Chunk473749
 }
 
-function w() {
-  let e = D();
+function D() {
+  let e = w();
   return (0, Chunk442837.Wu)([Chunk926491.Z], () => module.map(e => g.Z.getStickerById(e)).filter(e => true !== e), [module])
 }
-let L = e => {
-    let t = P(),
+let x = e => {
+    let t = R(),
       {
         packs: n,
         frequentlyUsedStickers: a
-      } = (0, i.cj)([g.Z, m.Z], () => ({
+      } = (0, i.cj)([g.Z, h.Z], () => ({
         packs: g.Z.getPremiumPacks(),
-        frequentlyUsedStickers: m.Z.stickerFrecencyWithoutFetchingLatest.frequently
+        frequentlyUsedStickers: h.Z.stickerFrecencyWithoutFetchingLatest.frequently
       }), []),
       o = (0, i.e7)([d.default], () => d.default.getCurrentUser()),
       s = C(e);
@@ -215,14 +215,14 @@ let L = e => {
         stickers: null != (r = null == a ? true : a.filter(t => {
           if ((0, b.J8)(t)) {
             var r, i;
-            return null != (i = null == (r = g.Z.getStickersByGuildId(t.guild_id)) ? true : r.some(e => e.id === t.id)) && i && (0, p.cO)(t, o, e) !== p.eb.NONSENDABLE
+            return null != (i = null == (r = g.Z.getStickersByGuildId(t.guild_id)) ? true : r.some(e => e.id === t.id)) && i && (0, _.cO)(t, o, e) !== _.eb.NONSENDABLE
           }
           if ((0, b.jl)(t)) return n.some(e => e.id === t.pack_id)
         })) ? r : []
       }, ...s, ...i]
     }, [n, t, a, s, o, e])
   },
-  x = function(e) {
+  L = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = (0, i.e7)([g.Z], () => g.Z.getStickerById(e.id)),
       [a, o] = r.useState(true),
@@ -250,14 +250,14 @@ let L = e => {
         if (t && !n && null == a && i && !e) {
           o(false);
           try {
-            await (0, h.Il)(r.id)
+            await (0, m.Il)(r.id)
           } catch (e) {}
           l(true)
         }
       })()
     }, [t]), c) ? [e, s] : [null != n ? n : null, s]
   },
-  M = e => {
-    let t = L(e);
+  j = e => {
+    let t = x(e);
     return r.useMemo(() => t.filter(e => e.type === E.Ih.EMPTY_GUILD_UPSELL || e.stickers.length > 0, []), [t])
   }

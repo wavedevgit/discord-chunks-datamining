@@ -90,15 +90,15 @@ function c(e) {
     if ("blockQuote" === c.type || a.bN.areStylesDisabled(e)) continue;
     let f = c.children[0];
     if (!a.LC.isText(f)) continue;
-    let _ = f.text.match(/^\s*>>> /),
-      p = f.text.match(/^\s*> /);
-    if ((null != p || null != _ || t) && (i.Q.setNodes(e, {
+    let p = f.text.match(/^\s*>>> /),
+      _ = f.text.match(/^\s*> /);
+    if ((null != _ || null != p || t) && (i.Q.setNodes(e, {
         type: "blockQuote"
       }, {
         at: u
       }), !t)) {
       var n, r;
-      let o = null != (r = null != (n = null == p ? true : p[0].length) ? n : null == _ ? true : _[0].length) ? r : 0,
+      let o = null != (r = null != (n = null == _ ? true : _[0].length) ? n : null == p ? true : p[0].length) ? r : 0,
         s = a.C0.child(u, 0);
       i.Q.delete(e, {
         at: {
@@ -111,7 +111,7 @@ function c(e) {
             offset: o
           }
         }
-      }), t = null != _
+      }), t = null != p
     }
   }
 }

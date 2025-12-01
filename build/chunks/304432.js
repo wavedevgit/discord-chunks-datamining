@@ -29,28 +29,28 @@ let c = {
 };
 
 function u() {
-  let [e, t] = (0, Chunk473749.useState)(""), [n, l] = (0, Chunk473749.useState)("server-order"), u = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), d = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), f = u.map(e => d[e]), _ = Chunk695346.CW.useSetting(), [p, h] = (0, Chunk473749.useState)(_), m = async e => {
-    h(e);
+  let [e, t] = (0, Chunk473749.useState)(""), [n, l] = (0, Chunk473749.useState)("server-order"), u = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), d = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), f = u.map(e => d[e]), p = Chunk695346.CW.useSetting(), [_, m] = (0, Chunk473749.useState)(p), h = async e => {
+    m(e);
     try {
       await a.CW.updateSetting(e)
     } catch (e) {
-      h(_)
+      m(p)
     }
   }, g = e => {
     let {
       checked: t,
       guildId: n
-    } = e, r = new Set(p);
-    t ? r.delete(n) : r.add(n), m([...r])
-  }, E = e => p.includes(e), b = 0 !== p.length, y = () => {
-    b ? m([]) : m(u)
-  }, [O, v] = (0, Chunk473749.useState)(() => c[require](f, _)), I = O.map(e => d[e.id]).filter(Boolean);
+    } = e, r = new Set(_);
+    t ? r.delete(n) : r.add(n), h([...r])
+  }, E = e => _.includes(e), b = 0 !== _.length, y = () => {
+    b ? h([]) : h(u)
+  }, [O, v] = (0, Chunk473749.useState)(() => c[require](f, p)), S = O.map(e => d[e.id]).filter(Boolean);
   return {
-    guilds: "" === module ? I : I.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
+    guilds: "" === module ? S : S.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
     sortOrder: require,
     searchQuery: module,
     setSortOrder: e => {
-      v(c[e](f, _)), l(e)
+      v(c[e](f, p)), l(e)
     },
     setSearchQuery: exports,
     onToggleActivityRestrictedGuild: g,
@@ -58,6 +58,6 @@ function u() {
     hasActivityRestrictedGuilds: b,
     onToggleAllActivityRestrictedGuilds: y,
     numTotalGuilds: u.length,
-    numActivityRestrictedGuilds: p.length
+    numActivityRestrictedGuilds: _.length
   }
 }

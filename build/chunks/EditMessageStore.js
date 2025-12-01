@@ -44,27 +44,27 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = {},
-  h = {};
+let _ = {},
+  m = {};
 
-function m(e) {
+function h(e) {
   let {
     channelId: t,
     messageId: n,
     content: r,
     source: i
   } = e, a = l.dN.getSetting(), c = s.ZP.unparse(r, t);
-  p[t] = {
+  _[t] = {
     channelId: t,
     messageId: n,
     textValue: c,
     richValue: (0, o.JM)(a ? c : r)
-  }, h[t] = i
+  }, m[t] = i
 }
 
 function g(e) {
@@ -72,9 +72,9 @@ function g(e) {
     channelId: t,
     textValue: n,
     richValue: r
-  } = e, i = p[t];
+  } = e, i = _[t];
   if (null == i) returnfalse;
-  p[t] = _(d({}, i), {
+  _[t] = p(d({}, i), {
     textValue: n,
     richValue: r
   })
@@ -84,8 +84,8 @@ function E(e) {
   let {
     channelId: t
   } = e;
-  if (null == t || null == p[t]) returnfalse;
-  delete p[t], delete h[t]
+  if (null == t || null == _[t]) returnfalse;
+  delete _[t], delete m[t]
 }
 
 function b(e) {
@@ -94,7 +94,7 @@ function b(e) {
     channelId: n,
     id: r
   } = e;
-  (null == (t = p[n]) ? true : t.messageId) === r && (delete p[n], delete h[n])
+  (null == (t = _[n]) ? true : t.messageId) === r && (delete _[n], delete m[n])
 }
 class y extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -102,34 +102,34 @@ class y extends(r = Chunk442837.ZP.Store) {
   }
   isEditing(e, t) {
     var n;
-    return (null == (n = p[e]) ? true : n.messageId) === t
+    return (null == (n = _[e]) ? true : n.messageId) === t
   }
   isEditingAny(e) {
-    return null != p[e]
+    return null != _[e]
   }
   getEditingTextValue(e) {
     var t;
-    return null == (t = p[e]) ? true : t.textValue
+    return null == (t = _[e]) ? true : t.textValue
   }
   getEditingRichValue(e) {
     var t;
-    return null == (t = p[e]) ? true : t.richValue
+    return null == (t = _[e]) ? true : t.richValue
   }
   getEditingMessageId(e) {
     var t;
-    return null == (t = p[e]) ? true : t.messageId
+    return null == (t = _[e]) ? true : t.messageId
   }
   getEditingMessage(e) {
-    let t = p[e];
+    let t = _[e];
     return null != t && null != t.messageId ? c.Z.getMessage(e, t.messageId) : null
   }
   getEditActionSource(e) {
-    return h[e]
+    return m[e]
   }
 }
 u(y, "displayName", "EditMessageStore");
 let O = new y(Chunk570140.Z, {
-  MESSAGE_START_EDIT: m,
+  MESSAGE_START_EDIT: h,
   MESSAGE_UPDATE_EDIT: g,
   MESSAGE_END_EDIT: E,
   MESSAGE_DELETE: b

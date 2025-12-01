@@ -32,56 +32,56 @@ function E(e) {
     className: y,
     showPremiumIcon: O = true,
     showResetThemeButton: v = false,
-    forcedDivider: I
-  } = e, T = (0, d.ZP)(t.id, b), {
-    primaryColor: S,
+    forcedDivider: S
+  } = e, I = (0, d.ZP)(t.id, b), {
+    primaryColor: T,
     secondaryColor: A
   } = (0, f.Z)({
     user: t,
-    displayProfile: T,
+    displayProfile: I,
     pendingThemeColors: i,
     isPreview: true
-  }), C = _.ZP.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(b, 80), R = (0, c.dQu)(l.Z.unsafe_rawColors.PRIMARY_530).hex(), P = (0, u.Cf)(N, R, false);
-  if (null == S || null == A) return null;
-  let D = e => {
-    o(s()(e, null == T ? true : T.themeColors) ? true : e)
+  }), C = p.ZP.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(b, 80), P = (0, c.dQu)(l.Z.unsafe_rawColors.PRIMARY_530).hex(), R = (0, u.Cf)(N, P, false);
+  if (null == T || null == A) return null;
+  let w = e => {
+    o(s()(e, null == I ? true : I.themeColors) ? true : e)
   };
-  return (0, r.jsx)(h.Z, {
-    title: m.intl.string(m.t.DMeO2X),
+  return (0, r.jsx)(m.Z, {
+    title: h.intl.string(h.t.DMeO2X),
     disabled: !C && !E,
     className: a()(g.__invalid_profileThemesSection, y),
     showPremiumIcon: O,
-    forcedDivider: I,
+    forcedDivider: S,
     children: (0, r.jsxs)("div", {
       className: g.sectionContainer,
       children: [(0, r.jsx)("div", {
         className: g.sparkleContainer,
-        children: (0, r.jsx)(p.Z, {
-          onChange: e => D([e, A]),
-          color: S,
-          suggestedColors: P,
+        children: (0, r.jsx)(_.Z, {
+          onChange: e => w([e, A]),
+          color: T,
+          suggestedColors: R,
           showEyeDropper: true,
           label: (0, r.jsx)(c.Text, {
             className: g.colorSwatchLabel,
             color: "header-secondary",
             variant: "text-xs/normal",
             "aria-hidden": true,
-            children: m.intl.string(m.t.C3KTQk)
+            children: h.intl.string(h.t.C3KTQk)
           })
         })
       }), (0, r.jsx)("div", {
         className: g.sparkleContainer,
-        children: (0, r.jsx)(p.Z, {
-          onChange: e => D([S, e]),
+        children: (0, r.jsx)(_.Z, {
+          onChange: e => w([T, e]),
           color: A,
-          suggestedColors: P,
+          suggestedColors: R,
           showEyeDropper: true,
           label: (0, r.jsx)(c.Text, {
             className: g.colorSwatchLabel,
             color: "header-secondary",
             variant: "text-xs/normal",
             "aria-hidden": true,
-            children: m.intl.string(m.t["8elvy6"])
+            children: h.intl.string(h.t["8elvy6"])
           })
         })
       }), v && null != b && (0, r.jsx)("div", {
@@ -90,8 +90,8 @@ function E(e) {
         children: (0, r.jsx)(c.Button, {
           variant: "secondary",
           size: "sm",
-          text: m.intl.string(m.t["L+GmoR"]),
-          onClick: () => D([null, null])
+          text: h.intl.string(h.t["L+GmoR"]),
+          onClick: () => w([null, null])
         })
       })]
     })

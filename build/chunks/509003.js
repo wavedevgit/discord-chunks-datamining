@@ -2,9 +2,9 @@
 /** chunk id: 509003, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FT: () => h,
-  Jc: () => m,
-  LK: () => _,
+  FT: () => m,
+  Jc: () => h,
+  LK: () => p,
   bP: () => E,
   le: () => g,
   sD: () => f,
@@ -69,20 +69,20 @@ function f(e) {
   }) : null
 }
 
-function _(e) {
+function p(e) {
   return e.distributor !== a.GQo.ROBLOX || null == e.gameMetadata || null == e.gameMetadata[i.wF.ROBLOX_TIME_STARTED] || e.id === i.eB || null == e.gameName ? {} : {
     name: e.gameName,
     sync_id: e.gameMetadata[i.wF.ROBLOX_TIME_STARTED]
   }
 }
 
-function p(e) {
+function _(e) {
   var t;
   return (null == (t = e.metadata) ? true : t.distributor) === a.GQo.ROBLOX && e.application_id !== i.eB
 }
 
-function h(e) {
-  if (!p(e)) return e;
+function m(e) {
+  if (!_(e)) return e;
   let t = r.m.getConfig({
     location: "transformRobloxSubgameNames"
   }).alternativeTitle ? o.t.HjVwG3 : o.t.G6BGdx;
@@ -93,8 +93,8 @@ function h(e) {
   })
 }
 
-function m(e) {
-  if (e.type !== a.IIU.PLAYING || !p(e)) return e;
+function h(e) {
+  if (e.type !== a.IIU.PLAYING || !_(e)) return e;
   let t = Number(e.sync_id),
     n = l({}, e);
   return n.application_id = i.eB, n.name = a.EOG[a.GQo.ROBLOX], isNaN(t) || (n.timestamps = {

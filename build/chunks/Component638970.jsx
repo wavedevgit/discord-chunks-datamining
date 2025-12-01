@@ -2,7 +2,7 @@
 /** chunk id: 638970, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -55,63 +55,63 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e) {
+function I(e) {
   let {
     user: t,
     currentUser: n,
     guildId: y,
     onOpenUserProfileModal: v,
-    onClose: T
+    onClose: I
   } = e, {
-    analyticsLocations: S
+    analyticsLocations: T
   } = (0, s.ZP)(), {
     trackUserProfileAction: A
   } = (0, u.KZ)(), {
     live: C,
     stream: N
   } = (0, d.Z)(t.id), {
-    voiceChannel: R,
-    voiceActivity: P
+    voiceChannel: P,
+    voiceActivity: R
   } = (0, f.Z)({
     userId: t.id,
     guildId: y
-  }), D = t.id === n.id, w = (0, a.e7)([c.Z, l.Z], () => {
-    let e = D ? c.Z.getStatus() : l.Z.getStatus(t.id, y);
+  }), w = t.id === n.id, D = (0, a.e7)([c.Z, l.Z], () => {
+    let e = w ? c.Z.getStatus() : l.Z.getStatus(t.id, y);
     return e === E.Sk.OFFLINE || e === E.Sk.INVISIBLE
   }), {
-    voiceActivityStatusEnabled: L
+    voiceActivityStatusEnabled: x
   } = (0, o.U)({
     location: "UserProfileStackedActivity"
-  }), x = L && null == N && null == P && null != R, M = i.useCallback(e => {
+  }), L = x && null == N && null == R && null != P, j = i.useCallback(e => {
     let i = [],
-      a = I(O({}, e), {
+      a = S(O({}, e), {
         user: t,
         currentUser: n,
-        onClose: T
+        onClose: I
       });
-    return null != N && i.push((0, r.jsx)(h.Z, O({
+    return null != N && i.push((0, r.jsx)(m.Z, O({
       stream: N
     }, a), "stream")), C.forEach((e, t) => {
-      i.push((0, r.jsx)(p.Z, O({
+      i.push((0, r.jsx)(_.Z, O({
         activity: e
       }, a), "live-".concat(t)))
-    }), x && i.push((0, r.jsx)(m.Z, O({
-      voiceChannel: R
+    }), L && i.push((0, r.jsx)(h.Z, O({
+      voiceChannel: P
     }, a), "voice")), i
-  }, [n, x, C, T, N, t, R]);
-  return w ? null : (0, r.jsx)(_.Z, {
-    renderCards: M,
+  }, [n, L, C, I, N, t, P]);
+  return D ? null : (0, r.jsx)(p.Z, {
+    renderCards: j,
     heading: b.intl.string(b.t.J6STd9),
     onExpand: () => {
       A({
         action: "PRESS_SHOW_MORE_ACTIVITY",
-        analyticsLocations: S
+        analyticsLocations: T
       }), null == v || v({
         section: g.oh.ACTIVITY
       })

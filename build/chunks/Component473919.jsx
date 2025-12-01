@@ -2,7 +2,7 @@
 /** chunk id: 473919, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -51,17 +51,17 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function p(e) {
   let {
     icon: t,
     tooltipText: n,
     tooltipAriaLabel: i,
     className: c,
     onTooltipShow: d
-  } = e, _ = (0, o.vjg)(o.Skl.ONLINE);
+  } = e, p = (0, o.vjg)(o.Skl.ONLINE);
   return null == n ? (0, r.jsx)(t, {
     size: "custom",
-    color: _,
+    color: p,
     className: a()(l.icon, c)
   }) : (0, r.jsx)(o.aML, {
     "data-migration-pending": true,
@@ -72,7 +72,7 @@ function _(e) {
     onTooltipShow: d,
     children: e => (0, r.jsx)(t, f(u({}, e), {
       size: "custom",
-      color: _,
+      color: p,
       className: a()(l.icon, c)
     }))
   })

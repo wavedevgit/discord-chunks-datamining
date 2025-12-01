@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,8 +48,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,16 +76,16 @@ function b(e) {
   var {
     channel: t,
     centerButton: n = false,
-    onCallJoined: _
-  } = e, h = g(e, ["channel", "centerButton", "onCallJoined"]);
+    onCallJoined: p
+  } = e, m = g(e, ["channel", "centerButton", "onCallJoined"]);
   let {
     parentAnalyticsLocation: E
   } = (0, s.ZP)(), b = n ? u.d : u.Z, y = t.isManaged() || !t.isPrivate() ? f.intl.string(f.t.S0W8Z5) : f.intl.string(f.t["0D/6Rz"]), O = i.useCallback(() => {
-    null == _ || _(), (0, l.v)(E, l.d.JOIN_CALL), o.default.selectVoiceChannel(t.id)
-  }, [t.id, _, E]);
+    null == p || p(), (0, l.v)(E, l.d.JOIN_CALL), o.default.selectVoiceChannel(t.id)
+  }, [t.id, p, E]);
   return i.useEffect(() => (c.S.subscribe(d.CkL.CALL_ACCEPT, O), () => {
     c.S.unsubscribe(d.CkL.CALL_ACCEPT, O)
-  }), [O]), (0, r.jsx)(b, m(p({}, h), {
+  }), [O]), (0, r.jsx)(b, h(_({}, m), {
     iconComponent: a.Csw,
     label: y,
     onClick: O,

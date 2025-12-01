@@ -2,7 +2,7 @@
 /** chunk id: 403503, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,12 +16,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk341461 = require("./341461.js");
 let f = 1e3;
 
-function _(e) {
+function p(e) {
   let t = e.toString();
   return 1 === t.length ? ["0", t[0]] : [t[0], t[1]]
 }
 
-function p(e) {
+function _(e) {
   switch (e) {
     case "days":
       return u.intl.string(u.t.ixASa2);
@@ -36,8 +36,8 @@ function p(e) {
   }
 }
 
-function h(e, t) {
-  let [n, i] = _(e.unitValue);
+function m(e, t) {
+  let [n, i] = p(e.unitValue);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: d.timeUnitInnerContainer,
@@ -61,7 +61,7 @@ function h(e, t) {
       }), (0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",
         color: "always-white",
-        children: p(e.unitType)
+        children: _(e.unitType)
       })]
     }, e.unitType), !t && (0, r.jsx)(l.Text, {
       className: d.unitDivider,
@@ -71,7 +71,7 @@ function h(e, t) {
     })]
   })
 }
-let m = e => {
+let h = e => {
   let {
     expiresAt: t,
     className: n
@@ -79,20 +79,20 @@ let m = e => {
   if (null == i) return null;
   let {
     days: o,
-    hours: _,
-    minutes: p,
-    seconds: m
+    hours: p,
+    minutes: _,
+    seconds: h
   } = i, g = [{
     unitValue: o,
     unitType: "days"
   }, {
-    unitValue: _,
+    unitValue: p,
     unitType: "hours"
   }, {
-    unitValue: p,
+    unitValue: _,
     unitType: "minutes"
   }, {
-    unitValue: m,
+    unitValue: h,
     unitType: "seconds"
   }];
   return (0, r.jsxs)("div", {
@@ -103,7 +103,7 @@ let m = e => {
       children: u.intl.string(u.t["/ARFVE"])
     }), (0, r.jsx)("div", {
       className: d.timeUnitsOuterContainer,
-      children: g.map((e, t) => h(e, t === g.length - 1))
+      children: g.map((e, t) => m(e, t === g.length - 1))
     })]
   })
 }

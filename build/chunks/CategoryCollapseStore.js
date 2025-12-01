@@ -2,7 +2,7 @@
 /** chunk id: 680089, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -21,18 +21,18 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = {},
-  _ = 0;
+  p = 0;
 
-function p() {
-  _ += 1
+function _() {
+  p += 1
 }
 
-function h(e) {
+function m(e) {
   if (null == f[e]) returnfalse;
   delete f[e]
 }
 
-function m(e) {
+function h(e) {
   let {
     id: t
   } = e;
@@ -44,7 +44,7 @@ function g(e) {
   let {
     id: t
   } = e;
-  return h(t)
+  return m(t)
 }
 
 function E(e) {
@@ -71,7 +71,7 @@ function y(e) {
       id: t
     }
   } = e;
-  return h(t)
+  return m(t)
 }
 
 function O(e) {
@@ -97,9 +97,9 @@ function v(e) {
     delete f[t.id]
   })
 }
-class I extends(r = Chunk442837.ZP.PersistedStore) {
+class S extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(s.Z, l.Z, c.ZP), this.removeChangeListener(p), this.addChangeListener(p), f = null != e ? e : {}
+    this.waitFor(s.Z, l.Z, c.ZP), this.removeChangeListener(_), this.addChangeListener(_), f = null != e ? e : {}
   }
   getState() {
     return f
@@ -111,14 +111,14 @@ class I extends(r = Chunk442837.ZP.PersistedStore) {
     return f
   }
   get version() {
-    return _
+    return p
   }
 }
-d(I, "displayName", "CategoryCollapseStore"), d(I, "persistKey", "collapsedCategories");
-let T = new I(Chunk570140.Z, {
+d(S, "displayName", "CategoryCollapseStore"), d(S, "persistKey", "collapsedCategories");
+let I = new S(Chunk570140.Z, {
   CONNECTION_OPEN: E,
   USER_GUILD_SETTINGS_FULL_UPDATE: b,
-  CATEGORY_COLLAPSE: m,
+  CATEGORY_COLLAPSE: h,
   CATEGORY_EXPAND: g,
   CATEGORY_COLLAPSE_ALL: O,
   CATEGORY_EXPAND_ALL: v,

@@ -2,15 +2,15 @@
 /** chunk id: 865427, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ce: () => _,
+  Ce: () => p,
   Ji: () => d,
   _G: () => E,
-  _I: () => p,
-  _S: () => m,
-  fD: () => h,
+  _I: () => _,
+  _S: () => h,
+  fD: () => m,
   mG: () => y,
   pU: () => f,
-  r4: () => S
+  r4: () => T
 }), require("./35282.js"), require("./853839.js"), require("./570086.js"), require("./479048.js"), require("./413496.js"), require("./433524.js"), require("./388685.js");
 var Chunk973361 = require("./973361.js"),
   Chunk729594 = require("./729594.js"),
@@ -27,7 +27,7 @@ function f(e) {
   return "".concat(location.protocol, "//").concat(location.host).concat(e)
 }
 
-function _() {
+function p() {
   let e = Chunk591759.Z.safeParseWithQuery(f(u));
   return null == module ? Promise.resolve(null) : (module.search = null, d && (module.query.version = d), Chunk544891.tn.get({
     url: Chunk729594.format(module),
@@ -36,7 +36,7 @@ function _() {
   }).then(e => e.body || null, () => null))
 }
 
-function p(e) {
+function _(e) {
   if (y(e)) return Promise.resolve(O(e));
   let t = s.Z.safeParseWithQuery(e);
   return null == t ? Promise.resolve(null) : (t.search = null, t.query.meta = "true", d && (t.query.version = d), t.host = window.location.host, a.tn.get({
@@ -46,11 +46,11 @@ function p(e) {
   }).then(e => e.body || null, () => null))
 }
 
-function h() {
+function m() {
   return false !== window.document.cookie.indexOf("".concat(Chunk908442.ZF, "="))
 }
 
-function m() {
+function h() {
   try {
     var e;
     let t = Chunk973361.parse(window.document.cookie)[Chunk908442.ZF];
@@ -88,16 +88,16 @@ function O(e) {
   }
 }
 let v = "s",
-  I = new Set(["canary.discord.com", "ptb.discord.com", "discord.com", "canary.discordapp.com", "ptb.discordapp.com", "discordapp.com"]),
-  T = new Set(["/__development/link", "/__development/link/"]);
+  S = new Set(["canary.discord.com", "ptb.discord.com", "discord.com", "canary.discordapp.com", "ptb.discordapp.com", "discordapp.com"]),
+  I = new Set(["/__development/link", "/__development/link/"]);
 
-function S(e) {
+function T(e) {
   if (y(e)) return {
     payload: null,
     url: e
   };
   let t = s.Z.safeParseWithQuery(e);
-  if (null == t || !I.has(t.hostname) || !(v in t.query) || !T.has(t.pathname)) return null;
+  if (null == t || !S.has(t.hostname) || !(v in t.query) || !I.has(t.pathname)) return null;
   for (let e in t.query) e !== v && delete t.query[e];
   return {
     payload: t.query[v],

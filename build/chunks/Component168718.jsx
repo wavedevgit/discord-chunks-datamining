@@ -25,7 +25,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,8 +37,8 @@ function _(e) {
   }
   return e
 }
-let p = Chunk793906.layerContainer;
-class h extends Chunk473749.Component {
+let _ = Chunk793906.layerContainer;
+class m extends Chunk473749.Component {
   componentWillUnmount() {
     this.state.layerContainerElement = null
   }
@@ -64,7 +64,7 @@ class h extends Chunk473749.Component {
     }), f(this, "getContextValue", (0, c.oH)(e => [e, this.setLayerContainerElement]))
   }
 }
-let m = e => {
+let h = e => {
   let {
     layerContext: t,
     className: n
@@ -72,7 +72,7 @@ let m = e => {
     a(e)
   }, [a]);
   return (0, r.jsx)("div", {
-    className: o()(p, n),
+    className: o()(_, n),
     ref: s
   })
 };
@@ -100,13 +100,13 @@ let b = e => {
 function y(e) {
   let t = i.createContext([null, () => {}]),
     n = {
-      LayerProvider: e => (0, r.jsx)(h, _({
+      LayerProvider: e => (0, r.jsx)(m, p({
         layerContext: t
       }, e)),
-      LayerContainer: e => (0, r.jsx)(m, _({
+      LayerContainer: e => (0, r.jsx)(h, p({
         layerContext: t
       }, e)),
-      Layer: e => (0, r.jsx)(b, _({
+      Layer: e => (0, r.jsx)(b, p({
         layerContext: t
       }, e)),
       layerContext: t

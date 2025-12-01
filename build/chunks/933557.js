@@ -2,11 +2,11 @@
 /** chunk id: 933557, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F6: () => p,
+  F6: () => _,
   ZP: () => g,
-  cO: () => _,
-  le: () => h,
-  mA: () => m,
+  cO: () => p,
+  le: () => m,
+  mA: () => h,
   on: () => f,
   pT: () => d
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
@@ -33,11 +33,11 @@ function f(e, t, n) {
   return d(e.recipients, t, n)
 }
 
-function _(e) {
+function p(e) {
   return (0, r.e7)([o.default, a.Z], () => null != e && e.isMultiUserDM() ? f(e, o.default, a.Z) : null)
 }
 
-function p(e, t, n) {
+function _(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = arguments.length > 4 && true !== arguments[4] && arguments[4];
   switch (e.type) {
@@ -64,7 +64,7 @@ function p(e, t, n) {
     case c.d4z.GUILD_VOICE:
     case c.d4z.GUILD_STAGE_VOICE:
     case c.d4z.GUILD_CATEGORY:
-      if (i) return '#"'.concat(h(e.name), '"');
+      if (i) return '#"'.concat(m(e.name), '"');
       if (r && e.isThread()) return '"'.concat(e.name, '"');
       return e.name;
     default:
@@ -72,15 +72,15 @@ function p(e, t, n) {
   }
 }
 
-function h(e) {
+function m(e) {
   return e.replace(/\\/g, "\\\\").replace(/"/g, '\\"')
 }
 
-function m(e) {
+function h(e) {
   return e.replace(/\\"/g, '"').replace(/\\\\/g, "\\")
 }
 
 function g(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return (0, r.e7)([o.default, i.Z, a.Z], () => null == e ? null : p(e, o.default, a.Z, t))
+  return (0, r.e7)([o.default, i.Z, a.Z], () => null == e ? null : _(e, o.default, a.Z, t))
 }

@@ -25,7 +25,7 @@ function f() {
   c = true
 }
 
-function _(e) {
+function p(e) {
   let {
     userId: t,
     settings: n,
@@ -34,7 +34,7 @@ function _(e) {
   null != n && (u[t] = (0, s.ac)(n)), null != r && (d[t] = r), c = false
 }
 
-function p(e) {
+function _(e) {
   let {
     userId: t,
     consents: n
@@ -42,7 +42,7 @@ function p(e) {
   d[t] = n
 }
 
-function h(e) {
+function m(e) {
   let {
     userId: t,
     settings: n
@@ -50,7 +50,7 @@ function h(e) {
   u[t] = (0, s.re)(a.o8, u[t], r)
 }
 
-function m() {
+function h() {
   u = {}, d = {}, c = false
 }
 class g extends(r = Chunk442837.ZP.Store) {
@@ -78,8 +78,8 @@ class g extends(r = Chunk442837.ZP.Store) {
 l(g, "displayName", "FamilyCenterControlledSettingsStore");
 let E = new g(Chunk570140.Z, {
   FAMILY_CENTER_TEEN_SETTINGS_FETCH_START: f,
-  FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS_FETCH_SUCCESS: _,
-  FAMILY_CENTER_TEEN_CONSENTS_UPDATE_SUCCESS: p,
-  FAMILY_CENTER_TEEN_UPDATE_SETTINGS_SUCCESS: h,
-  LOGOUT: m
+  FAMILY_CENTER_TEEN_SETTINGS_AND_CONSENTS_FETCH_SUCCESS: p,
+  FAMILY_CENTER_TEEN_CONSENTS_UPDATE_SUCCESS: _,
+  FAMILY_CENTER_TEEN_UPDATE_SETTINGS_SUCCESS: m,
+  LOGOUT: h
 })

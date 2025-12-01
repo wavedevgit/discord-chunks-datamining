@@ -33,7 +33,7 @@ module.exports = function(e) {
       relevance: 0
     },
     f = e.inherit(e.C_LINE_COMMENT_MODE),
-    _ = {
+    p = {
       className: "meta",
       begin: "#|&",
       end: "$",
@@ -43,13 +43,13 @@ module.exports = function(e) {
       },
       contains: [f]
     },
-    p = {
+    _ = {
       className: "symbol",
       begin: "~",
       end: ";|:",
       excludeEnd: true
     },
-    h = {
+    m = {
       className: "function",
       variants: [{
         begin: "процедура|функция",
@@ -91,6 +91,6 @@ module.exports = function(e) {
       type: o,
       literal: s
     },
-    contains: [_, h, f, p, l, c, u, d]
+    contains: [p, m, f, _, l, c, u, d]
   }
 }

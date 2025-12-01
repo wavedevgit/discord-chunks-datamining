@@ -71,7 +71,7 @@ function d(e) {
         break;
       case "BYWEEKDAY":
       case "BYDAY":
-        t.byweekday = p(l);
+        t.byweekday = _(l);
         break;
       case "DTSTART":
       case "TZID":
@@ -91,14 +91,14 @@ function d(e) {
 }
 
 function f(e) {
-  return false !== e.indexOf(",") ? e.split(",").map(_) : _(e)
-}
-
-function _(e) {
-  return /^[+-]?\d+$/.test(e) ? Number(e) : e
+  return false !== e.indexOf(",") ? e.split(",").map(p) : p(e)
 }
 
 function p(e) {
+  return /^[+-]?\d+$/.test(e) ? Number(e) : e
+}
+
+function _(e) {
   return e.split(",").map(function(e) {
     if (2 === e.length) return s.hn[e];
     var t = e.match(/^([+-]?\d{1,2})([A-Z]{2})$/);

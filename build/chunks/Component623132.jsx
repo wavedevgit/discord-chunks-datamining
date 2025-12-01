@@ -290,9 +290,9 @@ function Z(e) {
     color: "text-default"
   }, B = f.default.getCurrentUser(), F = (null == B ? true : B.id) === t.id, U = 1 === (0, m.Gv)(s), W = !u && F, H = W && (0, m.vI)(s), z = W && !U, {
     registerDragHandleRef: K
-  } = (0, h.C)(), q = i.useRef(null);
+  } = (0, h.C)(), V = i.useRef(null);
   if (L) return (0, r.jsx)(v.i, {});
-  let V = () => (0, r.jsx)(y.Z, {
+  let q = () => (0, r.jsx)(y.Z, {
       coverRef: p,
       className: null == R || u ? true : I.hoverActiveEffect,
       imageSrc: R,
@@ -305,13 +305,13 @@ function Z(e) {
     Y = () => (0, r.jsxs)("div", {
       className: l()(w.card, P),
       children: [z ? (0, r.jsxs)("div", {
-        ref: q,
+        ref: V,
         className: w.dragHandleContainer,
-        children: [V(), (0, r.jsx)(b.e_, {
+        children: [q(), (0, r.jsx)(b.e_, {
           buttonRef: K(o.applicationId),
           className: w.dragHandle
         })]
-      }) : V(), (0, r.jsxs)("div", {
+      }) : q(), (0, r.jsxs)("div", {
         className: w.details,
         children: [u ? (0, r.jsx)(c.Heading, E(S({}, M), {
           children: G

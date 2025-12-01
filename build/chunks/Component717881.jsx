@@ -2,8 +2,8 @@
 /** chunk id: 717881, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => R,
-  Z: () => P
+  P: () => P,
+  Z: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -46,7 +46,7 @@ function v(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,13 +57,13 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -114,20 +114,20 @@ function N(e) {
     showActions: E = true,
     hideHeader: y = false,
     showChannelDetails: O = false
-  } = e, I = S(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]);
-  let A = (0, a.e7)([m.Z, p.Z], () => {
+  } = e, S = T(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]);
+  let A = (0, a.e7)([h.Z, _.Z], () => {
       var e;
-      return p.Z.getChannel(null == (e = m.Z.getVoiceStateForUser(n.id)) ? true : e.channelId)
+      return _.Z.getChannel(null == (e = h.Z.getVoiceStateForUser(n.id)) ? true : e.channelId)
     }),
     N = (0, d.E)("UserActivityContainer", A),
-    R = (0, a.e7)([_.Z], () => l ? _.Z.getAnyStreamForUser(n.id) : null),
-    P = (null == t ? true : t.type) === b.IIU.HANG_STATUS && N ? A : null,
-    D = (0, a.e7)([h.Z, m.Z, p.Z], () => {
+    P = (0, a.e7)([p.Z], () => l ? p.Z.getAnyStreamForUser(n.id) : null),
+    R = (null == t ? true : t.type) === b.IIU.HANG_STATUS && N ? A : null,
+    w = (0, a.e7)([m.Z, h.Z, _.Z], () => {
       var e, r;
-      return (0, o.Z)(t, b.xjy.EMBEDDED) ? h.Z.getGuild(null == (e = p.Z.getChannel(null == (r = m.Z.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != P ? h.Z.getGuild(P.getGuildId()) : null
+      return (0, o.Z)(t, b.xjy.EMBEDDED) ? m.Z.getGuild(null == (e = _.Z.getChannel(null == (r = h.Z.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != R ? m.Z.getGuild(R.getGuildId()) : null
     }),
-    w = (0, a.e7)([h.Z], () => null != R ? h.Z.getGuild(R.guildId) : null),
-    L = (0, a.e7)([c.Z], () => {
+    D = (0, a.e7)([m.Z], () => null != P ? m.Z.getGuild(P.guildId) : null),
+    x = (0, a.e7)([c.Z], () => {
       if (null != t)
         if (null != t.application_id) return c.Z.getApplication(t.application_id);
         else return c.Z.getApplicationByName(t.name);
@@ -137,17 +137,17 @@ function N(e) {
     (null == t ? true : t.type) === b.IIU.HANG_STATUS && N && g.default.track(b.rMx.VIEW_HANG_STATUS, v({
       source: "UserActivity",
       other_user_id: n.id
-    }, (0, u.Z)(null == P ? true : P.id)))
-  }, [null == t ? true : t.type, N, P, n.id]), (null == t ? true : t.type) !== b.IIU.HANG_STATUS || N) ? (0, r.jsx)(s.Z, T(v({}, I), {
+    }, (0, u.Z)(null == R ? true : R.id)))
+  }, [null == t ? true : t.type, N, R, n.id]), (null == t ? true : t.type) !== b.IIU.HANG_STATUS || N) ? (0, r.jsx)(s.Z, I(v({}, S), {
     activity: t,
     user: n,
-    application: L,
+    application: x,
     hideHeader: y,
-    activityGuild: null != D ? D : w,
+    activityGuild: null != w ? w : D,
     showChannelDetails: O,
     channel: O ? A : true,
-    renderActions: E ? () => (0, r.jsx)(C, T(v({}, I), {
-      applicationStream: R,
+    renderActions: E ? () => (0, r.jsx)(C, I(v({}, S), {
+      applicationStream: P,
       activity: t,
       user: n
     })) : null,
@@ -156,5 +156,5 @@ function N(e) {
     onOpenSpotifyAlbum: f.Z5
   })) : null
 }
-let R = Chunk942596.Z.Types,
-  P = N
+let P = Chunk942596.Z.Types,
+  R = N

@@ -48,11 +48,11 @@ function u(e, t) {
 }
 let d = new Map,
   f = new Set,
-  _ = null,
-  p = false,
-  h = false;
+  p = null,
+  _ = false,
+  m = false;
 
-function m(e) {
+function h(e) {
   let {
     userId: t
   } = e;
@@ -77,7 +77,7 @@ function E(e) {
 }
 
 function b() {
-  _ = null, p = true
+  p = null, _ = true
 }
 
 function y(e) {
@@ -85,36 +85,36 @@ function y(e) {
     entry: t,
     userId: n
   } = e;
-  _ = null;
+  p = null;
   let r = d.get(n);
   if (null == r) returnfalse;
   let i = r.entries.filter(e => e.id !== t.id);
   d.set(n, u(l({}, r), {
     entries: i
-  })), p = false
+  })), _ = false
 }
 
 function O(e) {
   let {
     error: t
   } = e;
-  _ = t, p = false
+  p = t, _ = false
 }
 
 function v() {
-  _ = null, p = false
-}
-
-function I() {
-  d = new Map, f = new Set, _ = null, p = false
-}
-
-function T() {
-  I(), h = true
+  p = null, _ = false
 }
 
 function S() {
-  I()
+  d = new Map, f = new Set, p = null, _ = false
+}
+
+function I() {
+  S(), m = true
+}
+
+function T() {
+  S()
 }
 class A extends(r = Chunk442837.ZP.Store) {
   getMatchingOutboxEntry(e) {
@@ -131,20 +131,20 @@ class A extends(r = Chunk442837.ZP.Store) {
     return f.has(e)
   }
   get deleteOutboxEntryError() {
-    return _
-  }
-  get isDeletingEntryHistory() {
     return p
   }
+  get isDeletingEntryHistory() {
+    return _
+  }
   get hasInitialized() {
-    return h
+    return m
   }
 }
 s(A, "displayName", "ContentInventoryOutboxStore");
 let C = new A(Chunk570140.Z, {
-  CONNECTION_OPEN: T,
-  LOGOUT: S,
-  CONTENT_INVENTORY_FETCH_OUTBOX_START: m,
+  CONNECTION_OPEN: I,
+  LOGOUT: T,
+  CONTENT_INVENTORY_FETCH_OUTBOX_START: h,
   CONTENT_INVENTORY_FETCH_OUTBOX_SUCCESS: g,
   CONTENT_INVENTORY_FETCH_OUTBOX_FAILURE: E,
   CONTENT_INVENTORY_DELETE_OUTBOX_ENTRY_START: b,

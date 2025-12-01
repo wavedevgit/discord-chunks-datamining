@@ -4,13 +4,13 @@
 require.d(exports, {
   Ej: () => d,
   NW: () => u,
-  P: () => _,
+  P: () => p,
   Tb: () => s,
   Tg: () => a,
   cm: () => l,
   n_: () => f,
   oh: () => o,
-  qb: () => p,
+  qb: () => _,
   vB: () => i,
   yM: () => c
 });
@@ -43,9 +43,9 @@ function d(e) {
 var f = function(e) {
     return e.ACTIVITY = "ACTIVITY", e.AVATAR = "AVATAR", e.STATUS = "STATUS", e
   }({}),
-  _ = function(e) {
+  p = function(e) {
     return e.REPLY = "REPLY", e.REACT = "REACT", e
   }({}),
-  p = function(e) {
+  _ = function(e) {
     return e.WIDGET_ADDED = "WIDGET_ADDED", e.WIDGET_REMOVED = "WIDGET_REMOVED", e.WIDGET_SAVE_FAILURE = "WIDGET_SAVE_FAILURE", e.SOMETHING_WENT_WRONG = "SOMETHING_WENT_WRONG", e
   }({})

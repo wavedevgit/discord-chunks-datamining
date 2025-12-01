@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,15 +46,15 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -75,43 +75,43 @@ let g = e => {
     children: n,
     className: a,
     color: d,
-    roleColors: _,
-    iconType: m,
+    roleColors: p,
+    iconType: h,
     onMouseEnter: g,
     onMouseLeave: E
-  } = e, b = h(e, ["ref", "children", "className", "color", "roleColors", "iconType", "onMouseEnter", "onMouseLeave"]);
+  } = e, b = m(e, ["ref", "children", "className", "color", "roleColors", "iconType", "onMouseEnter", "onMouseLeave"]);
   let [y, O] = i.useState(false), {
     gradientStyle: v,
-    gradientClassname: I
+    gradientClassname: S
   } = (0, l.Icv)({
-    colorStrings: null != _ ? _ : null,
+    colorStrings: null != p ? p : null,
     roleStyle: "username",
     animateGradient: y
-  }), T = i.useCallback(e => {
+  }), I = i.useCallback(e => {
     O(true), null == g || g(e)
-  }, [O, g]), S = i.useCallback(e => {
+  }, [O, g]), T = i.useCallback(e => {
     O(false), null == E || E(e)
   }, [O, E]), A = {};
   return null != d && (A = {
     color: (0, s.Rf)(d),
     backgroundColor: y ? (0, s.br)(d, .3) : (0, s.br)(d, .1)
-  }), (0, r.jsx)(l.P3F, p(f({}, b), {
+  }), (0, r.jsx)(l.P3F, _(f({}, b), {
     innerRef: t,
     tag: "span",
     className: o()(a, {
       [u.wrapper]: true,
       interactive: b.onClick
     }),
-    onMouseEnter: T,
-    onMouseLeave: S,
+    onMouseEnter: I,
+    onMouseLeave: T,
     style: A,
     tabIndex: null != b.onClick ? 0 : false,
-    children: null != m ? (0, r.jsx)(c.Z, {
-      iconType: m,
+    children: null != h ? (0, r.jsx)(c.Z, {
+      iconType: h,
       children: n
-    }) : null != _ ? (0, r.jsx)("span", {
+    }) : null != p ? (0, r.jsx)("span", {
       style: f({}, v),
-      className: I,
+      className: S,
       children: n
     }) : n
   }))

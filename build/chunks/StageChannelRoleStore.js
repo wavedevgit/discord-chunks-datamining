@@ -2,7 +2,7 @@
 /** chunk id: 88751, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => k
+  ZP: () => M
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -34,13 +34,13 @@ let b = {},
   };
 
 function O(e, t) {
-  let n = _.Z.getVoiceStateForChannel(t, e);
-  return (0, m.gf)(n) === m.xO.ON_STAGE
+  let n = p.Z.getVoiceStateForChannel(t, e);
+  return (0, h.gf)(n) === h.xO.ON_STAGE
 }
 
 function v(e, t, n) {
-  return p.BT({
-    permission: h.yP,
+  return _.BT({
+    permission: m.yP,
     user: e,
     context: t,
     overwrites: n.permissionOverwrites,
@@ -48,7 +48,7 @@ function v(e, t, n) {
   })
 }
 
-function I(e, t) {
+function S(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = l.Z.getChannel(t),
     i = null == r ? true : r.getGuildId(),
@@ -59,14 +59,14 @@ function I(e, t) {
   } : y
 }
 
-function T(e, t) {
+function I(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   null == b[t] && (b[t] = {});
-  let r = I(e, t, n);
+  let r = S(e, t, n);
   return b[t][e] = r, r
 }
 
-function S(e, t) {
+function T(e, t) {
   var n;
   if (null == t) returnfalse;
   let r = l.Z.getChannel(t);
@@ -94,14 +94,14 @@ function N(e) {
   for (let e of t) delete b[e.id]
 }
 
-function R(e) {
+function P(e) {
   let {
     guildId: t
   } = e;
   C(t)
 }
 
-function P(e) {
+function R(e) {
   let {
     guildId: t,
     user: n
@@ -109,7 +109,7 @@ function P(e) {
   return null != n && null != t && A(n.id, t)
 }
 
-function D(e) {
+function w(e) {
   let {
     voiceStates: t
   } = e;
@@ -118,19 +118,19 @@ function D(e) {
       userId: n,
       channelId: r
     } = t;
-    return S(n, r) || e
+    return T(n, r) || e
   }, false)
 }
 
-function w(e) {
+function D(e) {
   return C(e.guildId)
 }
 
-function L() {
+function x() {
   b = {}
 }
 
-function x(e) {
+function L(e) {
   let {
     guild: t
   } = e;
@@ -139,7 +139,7 @@ function x(e) {
     (null == n || n.guild_id === t.id) && delete b[e]
   }
 }
-class M extends(r = Chunk442837.ZP.Store) {
+class j extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk271383.ZP, Chunk592125.Z, Chunk430824.Z, Chunk594174.default, Chunk979651.Z, Chunk485386.Z)
   }
@@ -160,20 +160,20 @@ class M extends(r = Chunk442837.ZP.Store) {
     if (null == e || null == t || e === (null == (n = f.default.getCurrentUser()) ? true : n.id) && (0, g.NE)()) return y;
     let a = null == (r = b[t]) ? true : r[e];
     if (null != a)
-      if (i && null == a.moderator) return T(e, t, true);
+      if (i && null == a.moderator) return I(e, t, true);
       else return a;
-    return T(e, t, i)
+    return I(e, t, i)
   }
 }
-E(M, "displayName", "StageChannelRoleStore");
-let k = new M(Chunk570140.Z, {
+E(j, "displayName", "StageChannelRoleStore");
+let M = new j(Chunk570140.Z, {
   CHANNEL_UPDATES: N,
-  CONNECTION_OPEN: L,
-  GUILD_MEMBER_REMOVE: P,
-  GUILD_MEMBER_UPDATE: P,
-  GUILD_ROLE_UPDATE: R,
-  PASSIVE_UPDATE_V2: w,
-  VOICE_STATE_UPDATES: D,
-  GUILD_CREATE: x,
-  GUILD_DELETE: x
+  CONNECTION_OPEN: x,
+  GUILD_MEMBER_REMOVE: R,
+  GUILD_MEMBER_UPDATE: R,
+  GUILD_ROLE_UPDATE: P,
+  PASSIVE_UPDATE_V2: D,
+  VOICE_STATE_UPDATES: w,
+  GUILD_CREATE: L,
+  GUILD_DELETE: L
 })

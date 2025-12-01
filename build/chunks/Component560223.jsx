@@ -2,7 +2,7 @@
 /** chunk id: 560223, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -59,7 +59,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = e => {
+let S = e => {
     let {
       showAllPerksButton: t,
       leftAlignHeaders: n,
@@ -85,57 +85,57 @@ let I = e => {
       })
     })
   },
-  T = e => {
+  I = e => {
     let {
       className: t,
       variant: n,
       noBackground: a = false,
       leftAlignHeaders: b = false,
       showAllPerksButton: O,
-      headerClassname: T
-    } = e, S = i.useRef(null), A = n === h.gM.WHATS_NEW, C = (0, _.x)();
+      headerClassname: I
+    } = e, T = i.useRef(null), A = n === m.gM.WHATS_NEW, C = (0, p.x)();
     i.useEffect(() => {
       A && C()
     }, [C, A]);
-    let N = (0, m.re)(A),
-      R = (0, p.Z)(),
-      P = (0, m.mN)(),
+    let N = (0, h.re)(A),
+      P = (0, _.Z)(),
+      R = (0, h.mN)(),
       {
-        fractionalState: D
+        fractionalState: w
       } = (0, l.Z)(),
-      w = (0, d.W)(),
-      L = (0, u.bg)({
+      D = (0, d.W)(),
+      x = (0, u.bg)({
         location: "PremiumPerks"
       }),
-      x = c.JH.useExperiment({
+      L = c.JH.useExperiment({
         location: "PremiumPerks"
       }).enabled,
-      M = f.Z.useExperiment({
+      j = f.Z.useExperiment({
         location: "PremiumPerks"
       }).enabled,
-      k = (0, m.ZM)({
-        perksCards: R,
+      M = (0, h.ZM)({
+        perksCards: P,
         variant: n,
         hideCardsOnNarrowScreen: false,
-        isPremiumSubscriber: P,
-        fractionalState: D,
-        isInReverseTrial: w,
-        showProfileWidgets: L,
-        showDisplayNameStyles: x,
-        recurring3PPromotionExperiment: M
+        isPremiumSubscriber: R,
+        fractionalState: w,
+        isInReverseTrial: D,
+        showProfileWidgets: x,
+        showDisplayNameStyles: L,
+        recurring3PPromotionExperiment: j
       }),
-      j = k.some(e => null != e.pillText);
+      k = M.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
-      ref: S,
+      ref: T,
       className: o()(E.section, {
         [E.centerAlignSection]: !b,
         [E.leftAlignSection]: b
       }, t),
-      children: [(0, r.jsx)(I, {
+      children: [(0, r.jsx)(S, {
         showAllPerksButton: O,
         leftAlignHeaders: b,
         title: N.title,
-        headerClassname: T
+        headerClassname: I
       }), (0, r.jsx)(s.Text, {
         variant: "text-lg/normal",
         color: "header-primary",
@@ -143,7 +143,7 @@ let I = e => {
           [E.subtitle]: null == O || b,
           [E.subtitleWithButton]: null != O && !b,
           [E.fullWidth]: A || b,
-          [E.moreSubtitleMargin]: j,
+          [E.moreSubtitleMargin]: k,
           [E.leftAlignSubtitle]: b,
           [E.centerAlignSubtitle]: !b
         }),
@@ -153,7 +153,7 @@ let I = e => {
         children: O
       }), (0, r.jsx)("div", {
         className: E.cardContainer,
-        children: k.map((e, t) => (0, r.jsx)(g.Z, v(y({}, e), {
+        children: M.map((e, t) => (0, r.jsx)(g.Z, v(y({}, e), {
           forceShadow: a
         }), "".concat(e.name, "_").concat(t)))
       })]

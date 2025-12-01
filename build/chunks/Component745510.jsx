@@ -2,8 +2,8 @@
 /** chunk id: 745510, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  d: () => m,
-  h: () => h
+  d: () => h,
+  h: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -50,8 +50,8 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = 20,
-  p = {
+let p = 20,
+  _ = {
     confettiCanvas: null,
     cannon: null,
     createConfetti: () => true,
@@ -61,17 +61,17 @@ let _ = 20,
     addClickListener: () => Chunk981631.dG4,
     removeClickListener: Chunk981631.dG4
   },
-  h = Chunk473749.createContext(p);
+  m = Chunk473749.createContext(_);
 
-function m(e) {
+function h(e) {
   let {
     children: t,
     confettiCanvas: n,
     spriteCanvas: l,
     baseConfig: c,
     addClickListener: d,
-    removeClickListener: m
-  } = e, g = (0, a.uR)(n, l), E = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), b = i.useMemo(() => E ? p : {
+    removeClickListener: h
+  } = e, g = (0, a.uR)(n, l), E = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), b = i.useMemo(() => E ? _ : {
     confettiCanvas: n,
     cannon: g,
     createConfetti: (e, t) => g.createConfetti(u({}, c, e), t),
@@ -85,12 +85,12 @@ function m(e) {
       }
     }), n), r),
     createMultipleConfetti: function(e) {
-      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : _,
+      let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p,
         n = arguments.length > 2 ? arguments[2] : true;
       return g.createMultipleConfetti(u({}, c, e), t, n)
     },
     createMultipleConfettiAt: function(e, t, n) {
-      let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : _,
+      let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : p,
         i = arguments.length > 4 ? arguments[4] : true;
       return g.createMultipleConfetti(u(f(u({}, c), {
         position: {
@@ -103,9 +103,9 @@ function m(e) {
       }), n), r, i)
     },
     addClickListener: d,
-    removeClickListener: m
-  }, [d, c, g, n, E, m]);
-  return (0, r.jsx)(h.Provider, {
+    removeClickListener: h
+  }, [d, c, g, n, E, h]);
+  return (0, r.jsx)(m.Provider, {
     value: b,
     children: t
   })

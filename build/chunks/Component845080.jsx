@@ -21,8 +21,8 @@ function l(e) {
     isGroupStart: u = true,
     roleIcon: d,
     hideTimestamp: f,
-    hideGuildTag: _,
-    preview: p
+    hideGuildTag: p,
+    preview: _
   } = e;
   return !(0, a.Z)(t) && (u || o) ? (0, r.jsx)(s, {
     message: t,
@@ -33,7 +33,7 @@ function l(e) {
     animate: l,
     roleIcon: d,
     hideTimestamp: f,
-    hideGuildTag: _,
-    preview: p
+    hideGuildTag: p,
+    preview: _
   }) : true
 }

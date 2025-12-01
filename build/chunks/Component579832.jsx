@@ -2,7 +2,7 @@
 /** chunk id: 579832, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk887819 = require("./887819.js"),
   Chunk617842 = require("./617842.js");
-let _ = () => {
+let p = () => {
     let e = () => {};
     return (0, Chunk54381.jsx)(Chunk481060.Button, {
       variant: "expressive",
@@ -24,7 +24,7 @@ let _ = () => {
       onClick: module
     })
   },
-  p = () => {
+  _ = () => {
     let e = () => {};
     return (0, Chunk54381.jsx)(Chunk481060.Button, {
       variant: "expressive",
@@ -33,16 +33,16 @@ let _ = () => {
       onClick: module
     })
   },
-  h = e => {
+  m = e => {
     let {
       message: t,
       channel: n,
       compact: c
     } = e, u = s.default.getCurrentUser();
     if (null == u) return null;
-    let h = t.author,
-      m = u.id === h.id,
-      g = m ? (0, l.c)(h, n) : (0, l.l)(h, false);
+    let m = t.author,
+      h = u.id === m.id,
+      g = h ? (0, l.c)(m, n) : (0, l.l)(m, false);
     if (null == g) return null;
     let {
       message: E,
@@ -81,7 +81,7 @@ let _ = () => {
             children: y
           }), (0, r.jsx)("div", {
             className: d.buttonContainer,
-            children: m ? (0, r.jsx)(p, {}) : (0, r.jsx)(_, {})
+            children: h ? (0, r.jsx)(_, {}) : (0, r.jsx)(p, {})
           })]
         })]
       })]

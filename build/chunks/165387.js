@@ -49,17 +49,17 @@ var Chunk365702 = require("./365702.js"),
       text: e.text,
       depth: e.depth || 0,
       type: r || "unstyled",
-      key: n || p(),
+      key: n || _(),
       data: y(i),
-      characterList: I(e, t)
+      characterList: S(e, t)
     }
   },
-  I = function(e, t) {
+  S = function(e, t) {
     var n = e.text,
       i = e.entityRanges,
       a = e.inlineStyleRanges,
       o = i || [];
-    return d(_(n, a || []), f(n, o.filter(function(e) {
+    return d(p(n, a || []), f(n, o.filter(function(e) {
       return t.hasOwnProperty(e.key)
     }).map(function(e) {
       return r({}, e, {
@@ -67,12 +67,12 @@ var Chunk365702 = require("./365702.js"),
       })
     })))
   },
-  T = function(e) {
+  I = function(e) {
     return r({}, e, {
-      key: e.key || p()
+      key: e.key || _()
     })
   },
-  S = function(e, t, n) {
+  T = function(e, t, n) {
     var i = t.map(function(e) {
       return r({}, e, {
         parentRef: n
@@ -81,9 +81,9 @@ var Chunk365702 = require("./365702.js"),
     return e.concat(i.reverse())
   },
   A = function(e, t) {
-    return e.map(T).reduce(function(n, i, a) {
+    return e.map(I).reduce(function(n, i, a) {
       Array.isArray(i.children) || g(false);
-      var s = i.children.map(T),
+      var s = i.children.map(I),
         l = new o(r({}, v(i, t), {
           prevSibling: 0 === a ? null : e[a - 1].key,
           nextSibling: a === e.length - 1 ? null : e[a + 1].key,
@@ -92,26 +92,26 @@ var Chunk365702 = require("./365702.js"),
           }))
         }));
       n = n.set(l.getKey(), l);
-      for (var c = S([], s, l); c.length > 0;) {
+      for (var c = T([], s, l); c.length > 0;) {
         var u = c.pop(),
           d = u.parentRef,
           f = d.getChildKeys(),
-          _ = f.indexOf(u.key),
-          p = Array.isArray(u.children);
-        if (!p) {
-          p || g(false);
+          p = f.indexOf(u.key),
+          _ = Array.isArray(u.children);
+        if (!_) {
+          _ || g(false);
           break
         }
-        var h = u.children.map(T),
-          m = new o(r({}, v(u, t), {
+        var m = u.children.map(I),
+          h = new o(r({}, v(u, t), {
             parent: d.getKey(),
-            children: b(h.map(function(e) {
+            children: b(m.map(function(e) {
               return e.key
             })),
-            prevSibling: 0 === _ ? null : f.get(_ - 1),
-            nextSibling: _ === f.size - 1 ? null : f.get(_ + 1)
+            prevSibling: 0 === p ? null : f.get(p - 1),
+            nextSibling: p === f.size - 1 ? null : f.get(p + 1)
           }));
-        n = n.set(m.getKey(), m), c = S(c, h, m)
+        n = n.set(h.getKey(), h), c = T(c, m, h)
       }
       return n
     }, O())
@@ -129,7 +129,7 @@ var Chunk365702 = require("./365702.js"),
       r = E && !n ? c.fromRawStateToRawTreeState(e).blocks : e.blocks;
     return E ? A(r, t) : C(n ? c.fromRawTreeStateToRawState(e).blocks : r, t)
   },
-  R = function(e) {
+  P = function(e) {
     var t = e.entityMap,
       n = {};
     return Object.keys(t).forEach(function(e) {
@@ -142,7 +142,7 @@ var Chunk365702 = require("./365702.js"),
   };
 module.exports = function(e) {
   Array.isArray(e.blocks) || g(false);
-  var t = R(e),
+  var t = P(e),
     n = N(e, t),
     r = n.isEmpty() ? new u : u.createEmpty(n.first().getKey());
   return new s({

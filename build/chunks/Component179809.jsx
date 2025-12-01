@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk252686 = require("./252686.jsx"),
   Chunk682662 = require("./682662.jsx"),
   Chunk662146 = require("./662146.jsx"),
-  Chunk981631 = require("./981631.js"),
+  Chunk126134 = require("./126134.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk106663 = require("./106663.js"),
   Chunk534175 = require("./534175.js");
@@ -56,7 +56,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       id: H,
       name: W,
       children: z
-    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, h.Ml)("FolderItem");
+    } = t, [K, Y] = i.useState(false), [q, Q] = i.useState(false), X = K || q, J = (0, h.Ml)("FolderItem");
     i.useEffect(() => {
       R && Y(false)
     }, [R]);
@@ -75,7 +75,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         dragging: e.isDragging()
       })
     }), et = i.useCallback(e => {
-      X(e)
+      Q(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
     }, [M, s]), er = null != W && "" !== W ? W : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
@@ -143,12 +143,12 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         targetNode: t,
         onDragOverChanged: et
       }) : null]
-    }), eu = null != t.color ? t.color : C.Wyy, ed = eu === C.Wyy ? true : (0, u.Rf)(eu);
+    }), eu = null != t.color ? t.color : C.Wy, ed = eu === C.Wy ? true : (0, u.Rf)(eu);
     return (0, r.jsxs)("div", {
       ref: es,
       className: o()(S.folderGroup, {
         [S.isExpanded]: s,
-        [S.isHovering]: Q
+        [S.isHovering]: X
       }),
       style: {
         "--custom-folder-color": null != ed ? ed : ""

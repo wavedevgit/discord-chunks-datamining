@@ -28,24 +28,24 @@ function b(e) {
     customInstallUrl: n,
     installParams: r,
     integrationTypesConfig: o
-  } = e, s = (0, p.Eb)({
+  } = e, s = (0, _.Eb)({
     customInstallUrl: n,
     installParams: r,
     integrationTypesConfig: o
   }), l = (0, i.e7)([f.Z], () => {
     var e;
     return null != (e = f.Z.getGuildId()) ? e : true
-  }), _ = (0, i.e7)([c.Z, u.Z, d.Z], () => {
+  }), p = (0, i.e7)([c.Z, u.Z, d.Z], () => {
     let e = c.Z.getChannel(d.Z.getChannelId());
-    return null != e && (e.isPrivate() || u.Z.can(m.Plq.SEND_MESSAGES, e))
-  }, []), h = (0, a.PZ)(e, l) && _, g = t || h;
+    return null != e && (e.isPrivate() || u.Z.can(h.Plq.SEND_MESSAGES, e))
+  }, []), m = (0, a.PZ)(e, l) && p, g = t || m;
   return {
     isDiscoverable: t,
     customInstallUrl: n,
     installParams: r,
     integrationTypesConfig: o,
     canViewApp: g,
-    canOpenAppLauncher: h,
+    canOpenAppLauncher: m,
     isInstallable: s,
     selectedGuildId: l
   }
@@ -73,7 +73,7 @@ function y(e, t) {
       }
     })
   } : a ? () => {
-    null == t || t(), (0, _.L)({
+    null == t || t(), (0, p.L)({
       applicationId: e.id,
       customInstallUrl: c,
       installParams: u,
@@ -91,13 +91,13 @@ function O(e) {
   } = b(e), i = y(e);
   return r.useMemo(() => t && null != i ? {
     label: E.intl.string(E.t.hvVgAZ),
-    trackingArea: h.j_.VIEW,
+    trackingArea: m.j_.VIEW,
     onClick() {
       i()
     }
   } : n && null != i ? {
     label: E.intl.string(E.t.NgXl3C),
-    trackingArea: h.j_.ADD_APP,
+    trackingArea: m.j_.ADD_APP,
     onClick() {
       i()
     }

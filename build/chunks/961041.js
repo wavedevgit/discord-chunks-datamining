@@ -11,9 +11,9 @@ var Chunk127849 = require("./127849.js"),
   Chunk511696 = require("./511696.js"),
   Chunk287353 = require("./287353.js"),
   f = Chunk630489 && Chunk630489.prototype,
-  _ = Chunk751736("species"),
-  p = false,
-  h = Chunk880181(Chunk127849.PromiseRejectionEvent);
+  p = Chunk751736("species"),
+  _ = false,
+  m = Chunk880181(Chunk127849.PromiseRejectionEvent);
 module.exports = {
   CONSTRUCTOR: Chunk275717("Promise", function() {
     var e = Chunk845691(Chunk630489),
@@ -26,10 +26,10 @@ module.exports = {
         r = function(e) {
           e(function() {}, function() {})
         };
-      if ((require.constructor = {})[_] = Chunk127849, !(p = require.then(function() {}) instanceof Chunk127849)) returntrue
+      if ((require.constructor = {})[p] = Chunk127849, !(_ = require.then(function() {}) instanceof Chunk127849)) returntrue
     }
-    return !exports && ("BROWSER" === Chunk284955 || "DENO" === Chunk284955) && !h
+    return !exports && ("BROWSER" === Chunk284955 || "DENO" === Chunk284955) && !m
   }),
-  REJECTION_EVENT: h,
-  SUBCLASSING: p
+  REJECTION_EVENT: m,
+  SUBCLASSING: _
 }

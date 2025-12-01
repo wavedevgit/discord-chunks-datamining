@@ -2,7 +2,7 @@
 /** chunk id: 503082, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./415506.js"), require("./388685.js"), require("./35282.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -49,15 +49,15 @@ function d(e, t) {
   }), e
 }
 let f = "undefined" != typeof OffscreenCanvas,
-  _ = 4,
-  p = 2176;
-class h {
+  p = 4,
+  _ = 2176;
+class m {
   reset() {
     this.context.clearRect(0, 0, this.MAX_ROW_WIDTH, this.MAX_HEIGHT), this.imageMap.clear(), this.nextX = 0, this.nextY = 0, this.tallestImageHeight = 0, this.needsReset = false
   }
   breakToNewRow() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-    this.nextX = 0, this.nextY += this.tallestImageHeight + _, this.tallestImageHeight = 0, this.nextY > this.MAX_HEIGHT && (module ? this.reset() : this.needsReset = true)
+    this.nextX = 0, this.nextY += this.tallestImageHeight + p, this.tallestImageHeight = 0, this.nextY > this.MAX_HEIGHT && (module ? this.reset() : this.needsReset = true)
   }
   getImage(e, t, n) {
     var r;
@@ -65,7 +65,7 @@ class h {
       a = this.imageMap.get(e);
     if (null != a && null != a[i]) return a[i];
     if (this.needsReset && this.reset(), t.width > this.MAX_ROW_WIDTH || t.height > this.MAX_HEIGHT) throw Error("Image: ".concat(e, " is too wide to use with offscreen canvas. (").concat(t.width, " x ").concat(t.height));
-    (this.nextX + t.width + _ > this.MAX_ROW_WIDTH || this.nextY + t.height + _ > this.MAX_HEIGHT) && this.breakToNewRow(true), this.context.save(), null != n && (this.context.filter = n), this.context.drawImage(t, this.nextX, this.nextY, t.width, t.height), this.context.restore();
+    (this.nextX + t.width + p > this.MAX_ROW_WIDTH || this.nextY + t.height + p > this.MAX_HEIGHT) && this.breakToNewRow(true), this.context.save(), null != n && (this.context.filter = n), this.context.drawImage(t, this.nextX, this.nextY, t.width, t.height), this.context.restore();
     let o = null != (r = this.imageMap.get(e)) ? r : {},
       s = {
         x: this.nextX,
@@ -75,10 +75,10 @@ class h {
       };
     return this.imageMap.set(e, d(c({}, o), {
       [i]: s
-    })), t.height > this.tallestImageHeight && (this.tallestImageHeight = t.height), this.nextX += t.width + _, this.nextX > this.MAX_ROW_WIDTH && this.breakToNewRow(), s
+    })), t.height > this.tallestImageHeight && (this.tallestImageHeight = t.height), this.nextX += t.width + p, this.nextX > this.MAX_ROW_WIDTH && this.breakToNewRow(), s
   }
   constructor() {
-    l(this, "MAX_ROW_WIDTH", p), l(this, "MAX_HEIGHT", p), l(this, "nextX", 0), l(this, "nextY", 0), l(this, "tallestImageHeight", 0), l(this, "needsReset", false), l(this, "canvas", true), l(this, "context", true), l(this, "imageMap", true), this.imageMap = new Map, f ? this.canvas = new OffscreenCanvas(this.MAX_ROW_WIDTH, this.MAX_HEIGHT) : (this.canvas = document.createElement("canvas"), this.canvas.width = this.MAX_ROW_WIDTH, this.canvas.height = this.MAX_HEIGHT);
+    l(this, "MAX_ROW_WIDTH", _), l(this, "MAX_HEIGHT", _), l(this, "nextX", 0), l(this, "nextY", 0), l(this, "tallestImageHeight", 0), l(this, "needsReset", false), l(this, "canvas", true), l(this, "context", true), l(this, "imageMap", true), this.imageMap = new Map, f ? this.canvas = new OffscreenCanvas(this.MAX_ROW_WIDTH, this.MAX_HEIGHT) : (this.canvas = document.createElement("canvas"), this.canvas.width = this.MAX_ROW_WIDTH, this.canvas.height = this.MAX_HEIGHT);
     let e = this.canvas.getContext("2d", {
       alpha: true,
       willReadFrequently: false
@@ -87,10 +87,10 @@ class h {
     this.context = module
   }
 }
-class m extends Chunk129508.Z {
+class h extends Chunk129508.Z {
   setupOffscreenCanvas() {
     try {
-      this.offscreenCanvasCache = new h
+      this.offscreenCanvasCache = new m
     } catch (e) {
       this.offscreenCanvasCache = true
     }
@@ -163,13 +163,13 @@ class m extends Chunk129508.Z {
       f = (e, t) => {
         null != this.context && (n ? this.context.fillText(e, t.x, t.y) : this.context.strokeText(e, t.x, t.y))
       },
-      _ = e => {
+      p = e => {
         if (null == this.context || c.width <= o.F) return "";
         let t = "".concat(e);
         for (; c.width + o.F > l;) t = t.slice(0, false), c = this.context.measureText(t), u = true;
         return u && (t += "..."), t
       };
-    if (this.font.truncate === s.GX.None && f(e, t), this.font.truncate === s.GX.Truncate && f(e = _(e), t), this.font.truncate === s.GX.Wrap) {
+    if (this.font.truncate === s.GX.None && f(e, t), this.font.truncate === s.GX.Truncate && f(e = p(e), t), this.font.truncate === s.GX.Wrap) {
       let n = e.split(" "),
         r = 1 / 0,
         o = "",
@@ -177,10 +177,10 @@ class m extends Chunk129508.Z {
       for (null != t.h && (r = t.h / d, i()(r > 0, "DiscordCavas: boundingBox.h of ".concat(t.h, " results in 0 visible lines with font size of ").concat(d))); n.length > 0;)
         if ((c = this.context.measureText(o + " " + n[0])).width > l) {
           let e = false;
-          if (s + 1 >= r && n.length > 0 && (e = true), "" !== o ? (f(e ? _(o + "...") : o, {
+          if (s + 1 >= r && n.length > 0 && (e = true), "" !== o ? (f(e ? p(o + "...") : o, {
               x: t.x,
               y: t.y + d * s
-            }), o = "") : f(_(null != (a = n.shift()) ? a : ""), {
+            }), o = "") : f(p(null != (a = n.shift()) ? a : ""), {
               x: t.x,
               y: t.y + d * s
             }), e) break;
@@ -281,15 +281,15 @@ class m extends Chunk129508.Z {
         }), s.vP.Success
       }
       if (a === s.JU.Cover) {
-        var l, u, f, _;
+        var l, u, f, p;
         let i, a = {
             w: o.width,
             h: o.height
           },
-          p = +(a.w / a.h).toFixed(1),
-          h = +(n.w / n.h).toFixed(1);
-        if (h > p) {
-          let e = a.w / h;
+          _ = +(a.w / a.h).toFixed(1),
+          m = +(n.w / n.h).toFixed(1);
+        if (m > _) {
+          let e = a.w / m;
           i = d(c({}, {
             x: 0,
             y: (a.h - e) * (null != (u = null == r || null == (l = r.focus) ? true : l.y) ? u : .5)
@@ -298,9 +298,9 @@ class m extends Chunk129508.Z {
             h: e
           })
         } else {
-          let e = a.h * h;
+          let e = a.h * m;
           i = d(c({}, {
-            x: (o.width - e) * (null != (_ = null == r || null == (f = r.focus) ? true : f.x) ? _ : .5),
+            x: (o.width - e) * (null != (p = null == r || null == (f = r.focus) ? true : f.x) ? p : .5),
             y: 0
           }), {
             w: e,
@@ -381,10 +381,10 @@ class m extends Chunk129508.Z {
     } = t, {
       x: d,
       y: f,
-      w: _,
-      h: p
+      w: p,
+      h: _
     } = n;
-    return this.context.drawImage(this.offscreenCanvasCache.canvas, a.x + o, a.y + l, c, u, d, f, _, p), s.vP.Success
+    return this.context.drawImage(this.offscreenCanvasCache.canvas, a.x + o, a.y + l, c, u, d, f, p, _), s.vP.Success
   }
   drawPath(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],

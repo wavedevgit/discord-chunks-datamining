@@ -2,7 +2,7 @@
 /** chunk id: 70007, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C1: () => _,
+  C1: () => p,
   Ni: () => f,
   TC: () => u,
   TT: () => c,
@@ -76,7 +76,7 @@ let d = c({
   }),
   f = Chunk473749.createContext(d);
 
-function _(e) {
+function p(e) {
   let {
     children: t
   } = e, n = u();

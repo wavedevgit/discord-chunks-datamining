@@ -27,7 +27,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let S = "".concat(Chunk63063.Z.getArticleURL(Chunk981631.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
+let T = "".concat(Chunk63063.Z.getArticleURL(Chunk981631.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
 
 function A() {
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -47,7 +47,7 @@ function A() {
           children: [(0, Chunk54381.jsx)(Chunk823087.Z, {}), (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             children: Chunk388032.intl.format(Chunk388032.t["V+B3FH"], {
-              guideURL: S
+              guideURL: T
             })
           })]
         })]

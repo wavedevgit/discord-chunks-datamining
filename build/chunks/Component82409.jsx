@@ -8,15 +8,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk666917 = require("./666917.js"),
-  Chunk442837 = require("./442837.js");
+  Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js");
 require("./28664.jsx");
 var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk45114 = require("./45114.js"),
   Chunk493773 = require("./493773.js");
 require("./100527.js"), require("./906732.jsx");
-var Chunk377171 = require("./377171.js"),
-  Chunk315174 = require("./315174.jsx"),
+var Chunk315174 = require("./315174.jsx"),
   Chunk340541 = require("./340541.js"),
   Chunk768943 = require("./768943.js"),
   Chunk592125 = require("./592125.js"),
@@ -78,7 +78,7 @@ function U(e) {
   let {
     includePanelSpacing: l
   } = e, a = (0, C.fJ)(), {
-    selectedFilter: p
+    selectedFilter: c
   } = (0, E.Z)(), P = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([O.ZP, _.Z, S.Z], () => N.filter(e => !(0, I.YH)({
     messageId: e.id,
     channelId: e.channelId,
@@ -92,11 +92,11 @@ function U(e) {
     ReadStateStore_: O.ZP,
     GuildStore_: _.Z
   }) || (0, I.Tj)(e, S.Z.selectedItemInfo))), U = i.useCallback(e => {
-    p !== A.V5.BOOKMARKS && x.Z.loadMoreInbox({
+    c !== A.V5.BOOKMARKS && x.Z.loadMoreInbox({
       viewId: a,
       loadingTrigger: e
     })
-  }, [p, a]), {
+  }, [c, a]), {
     hasLoadedEver: B,
     canLoadMore: z
   } = (0, s.cj)([S.Z], () => ({
@@ -117,7 +117,7 @@ function U(e) {
             r = null == (t = n.last()) ? true : t.id,
             i = O.ZP.ackMessageId(e),
             l = n.hasPresent() && n.ready && !n.cached;
-          null != r && null != i && l && v.default.compare(i, r) >= 0 && d.ack(e, {
+          null != r && null != i && l && v.default.compare(i, r) >= 0 && f.ack(e, {
             section: R.jXE.NOTIFICATIONS_INBOX,
             object: R.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
             objectType: R.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -139,11 +139,11 @@ function U(e) {
         message: n
       }]
     }), [K]),
-    q = F(Z, p, P),
-    X = F(D, p, null);
-  (0, f.ZP)(() => {
+    q = F(Z, c, P),
+    Q = F(D, c, null);
+  (0, p.ZP)(() => {
     var e;
-    u.Z.dispatch({
+    d.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_OPEN"
     });
     let t = (0, j.Ag)({
@@ -180,7 +180,7 @@ function U(e) {
         },
         isUnread: null != (i = O.ZP.hasUnread(c)) && i
       }
-    }(q, X);
+    }(q, Q);
     null != r && x.Z.inboxItemClick({
       message: r,
       channel: {
@@ -191,35 +191,35 @@ function U(e) {
       track: false,
       viewId: a
     })
-  }), (0, f.zq)(() => {
-    u.Z.dispatch({
+  }), (0, p.zq)(() => {
+    d.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_CLOSE"
     })
   });
   let {
-    filterStyle: Q
+    filterStyle: X
   } = (0, j.pN)({
     location: "NotificationsInboxSidebar"
   }), J = (0, g._k)({
     location: "NotificationsInboxSidebar"
-  }), $ = Q === j.v8.DROPDOWN && p !== A.V5.ALL, ee = (0, A.H_)(p);
+  }), $ = X === j.v8.DROPDOWN && c !== A.V5.ALL, ee = (0, A.H_)(c);
   return (0, r.jsx)("nav", {
     className: o()(L.container, {
       [L.panelSpacing]: l
     }),
-    children: (0, r.jsxs)(c.y5t, {
+    children: (0, r.jsxs)(u.y5t, {
       forceLevel: 1,
       component: (0, r.jsx)(h.ZP, (t = M({
         hasSubheader: true,
         guild: ee
       }, G), n = n = {
-        children: (0, r.jsx)(c.Kqy, {
+        children: (0, r.jsx)(u.Kqy, {
           direction: "horizontal",
           gap: 4,
           style: {
             marginRight: false
           },
-          children: Q === j.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(w.p, {})
+          children: X === j.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(w.p, {})
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -231,18 +231,18 @@ function U(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      children: [p === A.V5.ALL && (0, r.jsx)(W, {
-        hideBanner: !B || p !== A.V5.ALL
-      }), $ && (0, r.jsx)(c.LZC, {
+      children: [c === A.V5.ALL && (0, r.jsx)(W, {
+        hideBanner: !B || c !== A.V5.ALL
+      }), $ && (0, r.jsx)(u.LZC, {
         size: 8
       }), (0, r.jsx)(T.Z, {
         className: L.messageList,
         renderMessageGroup: H,
-        messages: p === A.V5.BOOKMARKS ? Y : q,
-        unreadMessages: p === A.V5.BOOKMARKS ? [] : X,
+        messages: c === A.V5.BOOKMARKS ? Y : q,
+        unreadMessages: c === A.V5.BOOKMARKS ? [] : Q,
         listName: "notifications-inbox",
         renderLoadingState: V,
-        ignoreGrouping: p === A.V5.BOOKMARKS,
+        ignoreGrouping: c === A.V5.BOOKMARKS,
         loadMore: U
       })]
     })
@@ -286,14 +286,14 @@ function W(e) {
     }),
     children: (0, r.jsxs)("div", {
       className: L.caughtUpContent,
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
         color: "text-feedback-positive",
         className: L.caughtUpText,
         children: D.intl.string(D.t["6XMM+D"])
-      }), (0, r.jsx)(c.W6s, {
+      }), (0, r.jsx)(u.W6s, {
         size: "sm",
-        color: p.Z.TEXT_FEEDBACK_POSITIVE
+        color: c.Z.colors.TEXT_FEEDBACK_POSITIVE.css
       })]
     })
   })

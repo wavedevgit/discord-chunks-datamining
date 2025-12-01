@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk377171 = require("./377171.js"),
+var Chunk692547 = require("./692547.js"),
   Chunk325767 = require("./325767.js");
 
 function o(e) {
@@ -64,10 +64,10 @@ function o(e) {
         y2: "1.98749",
         gradientUnits: "userSpaceOnUse",
         children: [(0, r.jsx)("stop", {
-          stopColor: i.Z.CREATOR_REVENUE_ICON_GRADIENT_START
+          stopColor: i.Z.colors.CREATOR_REVENUE_ICON_GRADIENT_START.css
         }), (0, r.jsx)("stop", {
           offset: "1",
-          stopColor: i.Z.CREATOR_REVENUE_ICON_GRADIENT_END
+          stopColor: i.Z.colors.CREATOR_REVENUE_ICON_GRADIENT_END.css
         })]
       })
     })]

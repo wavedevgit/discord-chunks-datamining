@@ -3,16 +3,16 @@
 "use strict";
 require.d(exports, {
   Dp: () => N,
-  Hh: () => R,
-  ZP: () => P,
+  Hh: () => P,
+  ZP: () => R,
   hq: () => A
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk831209 = require("./831209.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk914010 = require("./914010.js"),
@@ -36,7 +36,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,8 +60,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -90,12 +90,12 @@ function C(e) {
   let {
     sound: t,
     forceShowBetaLabel: n = false
-  } = e, i = (0, h.V2)({
+  } = e, i = (0, m.V2)({
     location: "SoundmojiBanner"
-  }), a = (0, l.e7)([f.default], () => p.ZP.canUseSoundboardEverywhere(f.default.getCurrentUser())), o = (0, l.e7)([d.Z], () => d.Z.getGuildId());
+  }), a = (0, s.e7)([f.default], () => _.ZP.canUseSoundboardEverywhere(f.default.getCurrentUser())), o = (0, s.e7)([d.Z], () => d.Z.getGuildId());
   return n || a || t.guildId === E.X8 || t.guildId === o || !i ? (0, r.jsx)(u.IGR, {
     text: "BETA",
-    color: s.Z.BG_BRAND,
+    color: l.Z.colors.BG_BRAND.css,
     className: y.betaBadge
   }) : (0, r.jsxs)("div", {
     className: y.infoNitroContainer,
@@ -114,7 +114,7 @@ function C(e) {
         children: b.intl.string(b.t["BMw+7I"])
       }), (0, r.jsx)(u.IGR, {
         text: "BETA",
-        color: s.Z.BG_BRAND,
+        color: l.Z.colors.BG_BRAND.css,
         className: y.infoNitroBadge
       })]
     })]
@@ -152,7 +152,7 @@ function N(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     renderPopout: t,
     position: n,
@@ -160,10 +160,10 @@ function R(e) {
     children: o,
     setTooltipShowing: s,
     clickableClassName: l
-  } = e, [d, f] = i.useState(false), [_, p] = i.useState(String(Date.now())), h = i.useCallback(e => {
+  } = e, [d, f] = i.useState(false), [p, _] = i.useState(String(Date.now())), m = i.useCallback(e => {
     e.stopPropagation(), f(!d)
-  }, [d]), m = i.useCallback(() => {
-    p(String(Date.now()))
+  }, [d]), h = i.useCallback(() => {
+    _(String(Date.now()))
   }, []), g = i.useRef(null);
   i.useEffect(() => {
     var e, t;
@@ -175,8 +175,8 @@ function R(e) {
     renderPopout: e => (0, r.jsx)(u.P3F, {
       onClick: e => e.stopPropagation(),
       onMouseOver: e => e.stopPropagation(),
-      children: t(S(I({}, e), {
-        refreshPosition: m
+      children: t(T(S({}, e), {
+        refreshPosition: h
       }))
     }),
     align: "center",
@@ -185,7 +185,7 @@ function R(e) {
     shouldShow: d,
     onRequestClose: () => f(false),
     animationPosition: "bottom",
-    positionKey: _,
+    positionKey: p,
     scrollBehavior: "close",
     children: e => (0, r.jsxs)(c.u, {
       onTooltipHide: () => {
@@ -197,10 +197,10 @@ function R(e) {
       text: a,
       position: "top",
       shouldShow: E,
-      children: ["(", (0, r.jsx)(u.P3F, S(I({}, e), {
+      children: ["(", (0, r.jsx)(u.P3F, T(S({}, e), {
         innerRef: g,
         "aria-label": a,
-        onClick: h,
+        onClick: m,
         className: l,
         children: o
       }))]
@@ -208,14 +208,14 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     sound: t,
     channel: n,
     setTooltipShowing: i
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(R, {
+    children: [(0, r.jsx)(P, {
       setTooltipShowing: i,
       renderPopout: () => (0, r.jsx)(A, {}),
       tooltipText: b.intl.string(b.t["19lt24"]),
@@ -225,9 +225,9 @@ function P(e) {
         color: "currentColor",
         className: O.secondaryIcon
       })
-    }), (0, r.jsx)(R, {
+    }), (0, r.jsx)(P, {
       setTooltipShowing: i,
-      renderPopout: e => (0, r.jsx)(g.Z, I({
+      renderPopout: e => (0, r.jsx)(g.Z, S({
         sound: t,
         channel: n
       }, e)),

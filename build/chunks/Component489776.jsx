@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk666917 = require("./666917.js"),
-  Chunk722770 = require("./722770.js"),
+  Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk236413 = require("./236413.js"),
   Chunk85960 = require("./85960.js"),
@@ -99,7 +99,7 @@ function h(e) {
           size: "custom",
           width: 20,
           height: 20,
-          color: a.Z.BLUE_345,
+          color: a.Z.unsafe_rawColors.BLUE_345.css,
           className: m.plusIcon
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",

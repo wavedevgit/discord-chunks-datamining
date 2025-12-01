@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./388685.js");
 var a, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
@@ -40,10 +40,10 @@ function E() {
     }
     if (null == module) {
       let t = Chunk314897.default.getId(),
-        n = s()(Chunk358221.Z.getVideoParticipants(r)).filter(e => e.type === m.fO.USER && e.user.id !== t && !p.Z.isLocalVideoDisabled(e.user.id) && !u.Z.isParticipantPoppedOut(r, e.id)),
+        n = s()(Chunk358221.Z.getVideoParticipants(r)).filter(e => e.type === h.fO.USER && e.user.id !== t && !_.Z.isLocalVideoDisabled(e.user.id) && !u.Z.isParticipantPoppedOut(r, e.id)),
         a = require.map(e => e.user.id),
         d = Date.now();
-      null == (e = null == (o = require.map(e => [e.user.id, h.Z.getSpeakingDuration(e.user.id, d)]).filter(e => {
+      null == (e = null == (o = require.map(e => [e.user.id, m.Z.getSpeakingDuration(e.user.id, d)]).filter(e => {
         let [t, n] = e;
         return 0 !== n
       }).maxBy(e => {
@@ -64,11 +64,11 @@ class O extends(a = Chunk442837.ZP.Store) {
     this.waitFor(Chunk358221.Z, Chunk314897.default, Chunk606304.Z, Chunk199902.Z, Chunk131951.Z), this.syncWith([Chunk358221.Z, Chunk199902.Z], y)
   }
   getSpeaker(e) {
-    return r !== e && (r = e, E(false)), null != i ? i : _.default.getId()
+    return r !== e && (r = e, E(false)), null != i ? i : p.default.getId()
   }
 }
 g(O, "displayName", "VideoSpeakerStore");
 let v = new O(Chunk570140.Z, {
     AUDIO_SET_LOCAL_VIDEO_DISABLED: y
   }),
-  I = v
+  S = v

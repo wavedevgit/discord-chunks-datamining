@@ -2,7 +2,7 @@
 /** chunk id: 539873, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -60,9 +60,9 @@ function v(e, t) {
   }), e
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = T(e, t);
+  var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -70,7 +70,7 @@ function I(e, t) {
   return i
 }
 
-function T(e, t) {
+function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -78,14 +78,14 @@ function T(e, t) {
   return i
 }
 
-function S(e) {
+function T(e) {
   let {
     className: t,
     disabled: n,
     isEditor: b,
     renderCTAButtons: O
-  } = e, [T] = (0, a.Wu)([f.Z], () => [f.Z.getCurrentDesktopIcon()]), S = i.useRef(null);
-  (0, d.Z)(S, h.h1.CUSTOM_APP_ICONS);
+  } = e, [I] = (0, a.Wu)([f.Z], () => [f.Z.getCurrentDesktopIcon()]), T = i.useRef(null);
+  (0, d.Z)(T, m.h1.CUSTOM_APP_ICONS);
   let A = (0, c.Dt)(),
     C = (0, o.Jb)({
       orientation: "horizontal",
@@ -94,16 +94,16 @@ function S(e) {
     {
       ref: N
     } = C,
-    R = I(C, ["ref"]),
-    P = e => {
+    P = S(C, ["ref"]),
+    R = e => {
       l.Z.dispatch({
         type: "APP_ICON_UPDATED",
         id: e
       })
     };
   return (0, r.jsx)("div", {
-    ref: S,
-    children: (0, r.jsx)("div", v(y({}, R), {
+    ref: T,
+    children: (0, r.jsx)("div", v(y({}, P), {
       ref: N,
       className: g.__invalid_container,
       children: (0, r.jsxs)("div", {
@@ -117,14 +117,14 @@ function S(e) {
               children: [(0, r.jsx)(s.Heading, {
                 className: g.titleText,
                 variant: "text-lg/medium",
-                children: m.intl.string(m.t.NThqTw)
+                children: h.intl.string(h.t.NThqTw)
               }), (0, r.jsx)(u.Z, {
                 className: g.premiumIcon
               })]
             }), (0, r.jsx)(s.Heading, {
               variant: "text-sm/normal",
               className: E.subtext,
-              children: m.intl.string(m.t.IgENJo)
+              children: h.intl.string(h.t.IgENJo)
             })]
           }), null == O ? true : O()]
         }), (0, r.jsx)(s.Kqy, {
@@ -134,15 +134,15 @@ function S(e) {
           style: {
             marginTop: 16
           },
-          children: (0, p.wu)().filter(e => {
+          children: (0, _.wu)().filter(e => {
             let {
               isHidden: t
             } = e;
             return !t
-          }).map((e, t) => (0, r.jsx)(_.Z, {
+          }).map((e, t) => (0, r.jsx)(p.Z, {
             icon: e,
-            isSelected: T === e.id,
-            onSelect: e => P(e),
+            isSelected: I === e.id,
+            onSelect: e => R(e),
             disabled: n,
             tabIndex: 0 !== t || n ? true : 0,
             locked: false

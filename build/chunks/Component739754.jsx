@@ -20,11 +20,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk954800 = require("./954800.js");
 
-function m(e) {
+function h(e) {
   return {
     text: e,
     icon: (0, r.jsx)(c.bbz, {
-      className: h.icon,
+      className: m.icon,
       dotRadius: 3.5,
       themed: true
     })
@@ -33,12 +33,12 @@ function m(e) {
 
 function g(e) {
   return {
-    text: null != e ? e : p.intl.string(p.t.VCsUJu),
+    text: null != e ? e : _.intl.string(_.t.VCsUJu),
     color: "text-danger",
     icon: (0, r.jsx)(c.Mgn, {
       size: "xs",
       color: "currentColor",
-      className: o()(h.icon, h.errorIcon)
+      className: o()(m.icon, m.errorIcon)
     })
   }
 }
@@ -46,13 +46,13 @@ function g(e) {
 function E(e, t) {
   switch ((0, f.t$)(t, e)) {
     case f.rQ.SENDING:
-      return m(p.intl.string(p.t.RiLfBY));
+      return h(_.intl.string(_.t.RiLfBY));
     case f.rQ.CREATED:
-      return m(p.intl.formatToPlainString(p.t["7ePV4t"], {
+      return h(_.intl.formatToPlainString(_.t["7ePV4t"], {
         applicationName: t.author.username
       }));
     case f.rQ.TIMED_OUT:
-      return g(p.intl.string(p.t.h8hzPd));
+      return g(_.intl.string(_.t.h8hzPd));
     case f.rQ.FAILED:
       return g(t.interactionError)
   }
@@ -66,7 +66,7 @@ function b(e) {
     color: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(h.wrapper, t),
+    className: o()(m.wrapper, t),
     children: [n, (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       color: a,
@@ -84,7 +84,7 @@ function y(e) {
   } = e, o = (0, s.Z)(), c = (0, l.e7)([d.ZP], () => d.ZP.getInteraction(t), [t]);
   i.useEffect(() => {
     let e = null;
-    if (t.hasFlag(_.iLy.LOADING) && null != c) {
+    if (t.hasFlag(p.iLy.LOADING) && null != c) {
       let n = (0, f.ow)(t.id) - Date.now();
       n > 0 && (e = setTimeout(() => o(), 1e3 + n))
     }
@@ -92,21 +92,21 @@ function y(e) {
       clearTimeout(e)
     }
   }, [o, c, t]);
-  let p = null;
-  if (null == a) p = E(c, t);
+  let _ = null;
+  if (null == a) _ = E(c, t);
   else {
     let e = (0, u.SD)(c, t, a);
-    null != e && (p = g(e))
+    null != e && (_ = g(e))
   }
-  if (null == p) return null;
+  if (null == _) return null;
   let {
-    text: h,
-    icon: m,
+    text: m,
+    icon: h,
     color: y
-  } = p;
+  } = _;
   return (0, r.jsx)(b, {
-    icon: m,
-    text: h,
+    icon: h,
+    text: m,
     className: n,
     color: y
   })

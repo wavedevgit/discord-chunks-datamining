@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk913527 = require("./913527.js"),
-  i = require.n(Chunk913527),
+  l = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk704215 = require("./704215.js"),
@@ -26,9 +26,9 @@ var Chunk54381 = require("./54381.js"),
 let C = [Chunk704215.z.GUILD_POWERUP_PERKS_COACHMARK, Chunk704215.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, Chunk704215.z.GUILD_POWERUP_NOTIFICATION, Chunk704215.z.GUILD_TAG_AVAILABLE_COACHMARK, Chunk704215.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK],
   S = [Chunk704215.C.GUILD_POWERUP_LEVEL_1_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_2_COACHMARK, Chunk704215.C.GUILD_POWERUP_LEVEL_3_COACHMARK, Chunk704215.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, Chunk704215.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK],
   E = [Chunk704215.C.ADOPT_CLAN_IDENTITY_NOTICE],
-  N = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
+  T = [Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, Chunk704215.z.VANITY_URL_POWERUP_ROLLBACK_MODAL, Chunk704215.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER];
 
-function T(e) {
+function N(e) {
   switch (e) {
     case o.C.GUILD_POWERUP_LEVEL_1_COACHMARK:
       return "GUILD_POWERUP_LEVEL_1_COACHMARK";
@@ -49,7 +49,7 @@ async function O(e, t, n) {
     url: _.ANM.APPLIED_BOOST_MODIFY_END_DATE,
     body: {
       applied_boost_ids: t.map(e => e.id),
-      ends_at: n ? null : i()().add(1, "day")
+      ends_at: n ? null : l()().add(1, "day")
     },
     rejectWithError: true
   }), (0, d.C0)(e), (0, x.BN)(e, true)
@@ -68,7 +68,7 @@ function I() {
       return null == (t = Chunk430824.Z.getGuild(module)) ? true : exports.name
     }),
     n = (0, Chunk442837.Wu)([Chunk581883.Z], () => [...S, ...E].filter(t => null != e && (0, p.OY)(t, e))),
-    l = (0, Chunk442837.Wu)([Chunk899667.Z], () => {
+    r = (0, Chunk442837.Wu)([Chunk899667.Z], () => {
       var t;
       return null != module && null != (t = Chunk899667.Z.getAppliedGuildBoostsForGuild(module)) ? exports : []
     });
@@ -142,7 +142,7 @@ function I() {
       children: (0, Chunk54381.jsx)(Chunk481060.C3N, {
         label: "Reset Guild Level DCs",
         children: S.map(t => (0, a.jsx)(c.rsf, {
-          label: T(t),
+          label: N(t),
           checked: n.includes(t),
           onChange: n => {
             n ? (0, p.Qd)(t, e, false) : ((0, g.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
@@ -154,7 +154,7 @@ function I() {
       children: (0, Chunk54381.jsx)(Chunk481060.C3N, {
         label: "Reset Server Tag Guild Level DCs",
         children: E.map(t => (0, a.jsx)(c.rsf, {
-          label: T(t),
+          label: N(t),
           checked: n.includes(t),
           onChange: n => {
             n ? (0, p.Qd)(t, e, false) : ((0, g.Z1)(o.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
@@ -167,7 +167,7 @@ function I() {
         variant: "eyebrow",
         className: Chunk617659.header,
         children: "Reset Powerup Rollback DCs"
-      }), N.map(e => (0, a.jsx)(u.Z, {
+      }), T.map(e => (0, a.jsx)(u.Z, {
         className: y.formSwitch,
         content: o.z[e]
       }, o.z[e]))]

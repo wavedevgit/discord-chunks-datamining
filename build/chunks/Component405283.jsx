@@ -2,7 +2,7 @@
 /** chunk id: 405283, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  a: () => _
+  a: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
@@ -50,7 +50,7 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function p(e) {
   let {
     controls: t,
     props: n,
@@ -59,12 +59,12 @@ function _(e) {
     c(f(u({}, n), {
       [e]: t
     }))
-  }, _ = Object.entries(t);
-  return 0 === _.length ? null : (0, r.jsx)("div", {
+  }, p = Object.entries(t);
+  return 0 === p.length ? null : (0, r.jsx)("div", {
     className: l.controlsSection,
     children: (0, r.jsx)(i.Kqy, {
       gap: 16,
-      children: _.map(e => {
+      children: p.map(e => {
         var t;
         let [l, c] = e, u = null != (t = n[l]) ? t : c.defaultValue;
         return (0, r.jsxs)(i.gNt, {

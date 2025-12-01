@@ -2,7 +2,7 @@
 /** chunk id: 582559, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  p: () => p
+  p: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -66,11 +66,11 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let _ = {
+let p = {
   "Nitro Referral Confirmation - Old Logo": {}
 };
 
-function p(e) {
+function _(e) {
   let {
     artboard: t = "Nitro Referral Confirmation - Old Logo"
   } = e, n = d(e, ["artboard"]), {
@@ -82,7 +82,7 @@ function p(e) {
   } : {}), {
     buffer: c,
     artboard: t,
-    artboardProperties: _
+    artboardProperties: p
   }), n))
 }
-p.riveSrc = Chunk513888.Z
+_.riveSrc = Chunk513888.Z

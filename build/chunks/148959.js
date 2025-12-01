@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => E,
-  y: () => m
+  y: () => h
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -23,10 +23,10 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = 10 * Chunk70956.Z.Millis.SECOND,
-  p = 10 * Chunk70956.Z.Millis.SECOND,
-  h = 500;
-var m = function(e) {
+let p = 10 * Chunk70956.Z.Millis.SECOND,
+  _ = 10 * Chunk70956.Z.Millis.SECOND,
+  m = 500;
+var h = function(e) {
   return e.RequestedSSRCsUpdate = "requested-ssrcs-update", e.RequestedStreamsUpdate = "requested-streams-update", e
 }({});
 
@@ -127,7 +127,7 @@ class E extends Chunk47770.Z {
     return false !== this.currentSSRC
   }
   isDowngradeChangeAllowed(e) {
-    return !this.throttleDowngradeChanges || true === this.lastDowngradeChangeTime || (e ? Date.now() - this.lastDowngradeChangeTime >= p : Date.now() - this.lastDowngradeChangeTime >= _)
+    return !this.throttleDowngradeChanges || true === this.lastDowngradeChangeTime || (e ? Date.now() - this.lastDowngradeChangeTime >= _ : Date.now() - this.lastDowngradeChangeTime >= p)
   }
   shouldSeamlessTransition(e) {
     if (!this.supportsSeamless || !this.isReceiving()) returnfalse;
@@ -209,7 +209,7 @@ class E extends Chunk47770.Z {
   constructor(e) {
     super(), f(this, "supportsSeamless", true), f(this, "logger", true), f(this, "userId", true), f(this, "streamId", true), f(this, "resolutionWidth", true), f(this, "resolutionHeight", true), f(this, "zoom", true), f(this, "videoStreams", true), f(this, "audioSSRC", true), f(this, "hqSSRC", true), f(this, "lqSSRC", true), f(this, "switchState", true), f(this, "pendingSSRC", true), f(this, "currentSSRC", true), f(this, "downgraded", true), f(this, "throttleDowngradeChanges", true), f(this, "lastDowngradeChangeTime", true), f(this, "otherUsers", true), f(this, "debugQualityOverride", true), f(this, "incomingVideoEnabled", true), f(this, "delayedCall", true), f(this, "delayedUpdate", true), this.supportsSeamless = e, this.streamId = null, this.resolutionWidth = 0, this.resolutionHeight = 0, this.zoom = 1, this.videoStreams = [], this.audioSSRC = 0, this.hqSSRC = 0, this.lqSSRC = 0, this.switchState = 0, this.pendingSSRC = false, this.currentSSRC = false, this.downgraded = false, this.throttleDowngradeChanges = true, this.lastDowngradeChangeTime = true, this.otherUsers = new Set, this.debugQualityOverride = d.Z.NO_OVERRIDE, this.incomingVideoEnabled = true, this.delayedUpdate = () => {
       this.delayedCall.delay()
-    }, this.logger = new s.Z("GoLiveQualityManager"), this.delayedCall = new o.sW(h, () => {
+    }, this.logger = new s.Z("GoLiveQualityManager"), this.delayedCall = new o.sW(m, () => {
       this.update()
     })
   }

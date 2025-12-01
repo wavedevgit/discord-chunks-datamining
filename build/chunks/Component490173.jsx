@@ -2,7 +2,7 @@
 /** chunk id: 490173, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -62,23 +62,23 @@ function O(e, t) {
 function v() {
   window.getSelection().removeAllRanges()
 }
-let I = e => {
+let S = e => {
   let {
     children: t,
     close: n,
     onUnmount: s,
     target: u,
-    rect: p,
-    position: h,
-    align: m,
+    rect: _,
+    position: m,
+    align: h,
     impressionName: E,
     impressionProperties: b,
     disableClickTrap: y = false
-  } = e, O = i.useRef(null), I = i.useMemo(() => ({
+  } = e, O = i.useRef(null), S = i.useMemo(() => ({
     current: u
-  }), [u]), T = i.useRef(n);
+  }), [u]), I = i.useRef(n);
   i.useEffect(() => {
-    T.current = n
+    I.current = n
   }), i.useEffect(() => {
     var e, t, n;
     let r = null == (e = O.current) ? true : e.elementRef.current;
@@ -87,19 +87,19 @@ let I = e => {
       var t;
       let n = e.target,
         r = null == (t = O.current) ? true : t.elementRef.current;
-      null != r && (0, c.ty$)(r, n) || (v(), T.current())
+      null != r && (0, c.ty$)(r, n) || (v(), I.current())
     };
     return null == (t = r.ownerDocument) || t.addEventListener("click", i, true), null == (n = r.ownerDocument) || n.addEventListener("contextmenu", i, true), () => {
       var e, t;
       null == (e = r.ownerDocument) || e.removeEventListener("click", i, true), null == (t = r.ownerDocument) || t.removeEventListener("contextmenu", i, true)
     }
   }, []);
-  let S = i.useRef(s);
+  let T = i.useRef(s);
   i.useEffect(() => {
-    S.current = s
+    T.current = s
   }), i.useEffect(() => () => {
     var e;
-    return null == (e = S.current) ? true : e.call(S)
+    return null == (e = T.current) ? true : e.call(T)
   }, []), i.useLayoutEffect(() => {
     var e;
     null == (e = O.current) || e.updatePosition()
@@ -108,7 +108,7 @@ let I = e => {
     name: E,
     properties: b
   });
-  let A = (0, _.Aq)(),
+  let A = (0, p.Aq)(),
     C = i.useCallback(() => {
       A.dispatch(g.CkL.POPOUT_SHOW)
     }, [A]),
@@ -118,27 +118,27 @@ let I = e => {
   return (0, l.E)("ContextMenu") ? (0, r.jsx)(o.pS, {
     open: true,
     onOpenChange: e => {
-      e ? C() : (N(), v(), T.current())
+      e ? C() : (N(), v(), I.current())
     },
-    overrideTargetRect: p,
-    placement: (0, o.a_)(null != h ? h : "right", null != m ? m : "top"),
+    overrideTargetRect: _,
+    placement: (0, o.a_)(null != m ? m : "right", null != h ? h : "top"),
     blockPointerEvents: !y,
     renderLayer: e => {
       let {
         update: n
       } = e;
       return t({
-        position: h
+        position: m
       }, n)
     },
     children: () => null
   }) : (0, r.jsx)(f.W5, {
     onMount: C,
     onUnmount: N,
-    targetRef: I,
-    overrideTargetRect: p,
-    position: null != h ? h : "right",
-    align: null != m ? m : "top",
+    targetRef: S,
+    overrideTargetRect: _,
+    position: null != m ? m : "right",
+    align: null != h ? h : "top",
     autoInvert: true,
     ref: O,
     nudgeAlignIntoViewport: true,
@@ -146,7 +146,7 @@ let I = e => {
     children: t
   })
 };
-class T extends Chunk473749.PureComponent {
+class I extends Chunk473749.PureComponent {
   componentDidMount() {
     let {
       renderLazy: e,
@@ -191,7 +191,7 @@ class T extends Chunk473749.PureComponent {
       rect: c,
       renderWindow: u
     } = this.props, d = null != (t = this.state.render) ? exports : this.props.render;
-    return Chunk762328 && null != Chunk481060 && null != Chunk682973 && null != Chunk990547 && null != Chunk213609 && Chunk682973.context === Chunk473749 && (null == (e = Chunk990547.ownerDocument) ? true : module.defaultView) === Chunk239091 ? (0, Chunk54381.jsx)(I, {
+    return Chunk762328 && null != Chunk481060 && null != Chunk682973 && null != Chunk990547 && null != Chunk213609 && Chunk682973.context === Chunk473749 && (null == (e = Chunk990547.ownerDocument) ? true : module.defaultView) === Chunk239091 ? (0, Chunk54381.jsx)(S, {
       target: Chunk990547,
       rect: Chunk481060,
       close: this.close,
@@ -234,7 +234,7 @@ class T extends Chunk473749.PureComponent {
   }
 }
 
-function S() {
+function T() {
   let {
     contextMenu: e,
     version: t,
@@ -247,7 +247,7 @@ function S() {
     appContext: o,
     renderWindow: l
   } = Chunk473749.useContext(Chunk728285.ZP);
-  return (0, Chunk54381.jsx)(T, O(b({
+  return (0, Chunk54381.jsx)(I, O(b({
     appContext: Chunk762328,
     renderWindow: Chunk682973
   }, module), {

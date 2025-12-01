@@ -2,9 +2,9 @@
 /** chunk id: 551228, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => m,
-  pi: () => p,
-  te: () => _
+  ZP: () => h,
+  pi: () => _,
+  te: () => p
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk297781 = require("./297781.jsx"),
   Chunk443487 = require("./443487.jsx"),
   Chunk451419 = require("./451419.js");
-let _ = [Chunk297781.XF];
+let p = [Chunk297781.XF];
 
-function p(e) {
+function _(e) {
   var t, n, r, i;
   let s = (0, a.e7)([l.Z], () => l.Z.getMatchingActivity(e)),
     c = (0, a.e7)([o.default], () => o.default.getUser(e.author_id));
@@ -35,7 +35,7 @@ function p(e) {
   }
 }
 
-function h(e) {
+function m(e) {
   let {
     entry: t,
     channel: n,
@@ -44,8 +44,8 @@ function h(e) {
   } = e, {
     activity: o,
     artist: l
-  } = p(t), {
-    largeImage: h
+  } = _(t), {
+    largeImage: m
   } = (0, s.rv)({
     entry: t
   });
@@ -60,16 +60,16 @@ function h(e) {
         children: l.replace(/; /g, ", ")
       }), (0, r.jsx)(u.Gk, {
         location: u.Gt.CARD,
-        children: _.map((e, n) => (0, r.jsx)(e, {
+        children: p.map((e, n) => (0, r.jsx)(e, {
           entry: t,
           hovered: a
         }, n))
       })]
     }), (0, r.jsx)(c.f, {
-      src: null == h ? true : h.src,
+      src: null == m ? true : m.src,
       size: 48,
       className: f.thumbnail
     })]
   })
 }
-let m = Chunk473749.memo(h)
+let h = Chunk473749.memo(m)

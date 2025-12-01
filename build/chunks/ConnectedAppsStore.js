@@ -2,7 +2,7 @@
 /** chunk id: 757266, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -55,20 +55,20 @@ function f(e) {
   null != t.id && null != u[t.id] && (u[t.id].authenticated = true)
 }
 
-function _(e) {
+function p(e) {
   let {
     application: t
   } = e;
   null != t.id && null != u[t.id] && (u[t.id].count--, 0 === u[t.id].count && delete u[t.id])
 }
 
-function p(e) {
+function _(e) {
   let {
     connectedApps: t
   } = e;
   u = c({}, t)
 }
-class h extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk442837.ZP.Store) {
   isConnected(e) {
     return null != u[e]
   }
@@ -82,10 +82,10 @@ class h extends(r = Chunk442837.ZP.Store) {
     return u
   }
 }
-l(h, "displayName", "ConnectedAppsStore");
-let m = new h(Chunk570140.Z, {
-  OVERLAY_INITIALIZE: p,
+l(m, "displayName", "ConnectedAppsStore");
+let h = new m(Chunk570140.Z, {
+  OVERLAY_INITIALIZE: _,
   RPC_APP_CONNECTED: d,
   RPC_APP_AUTHENTICATED: f,
-  RPC_APP_DISCONNECTED: _
+  RPC_APP_DISCONNECTED: p
 })

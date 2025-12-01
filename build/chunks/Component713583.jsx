@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk585238 = require("./585238.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +24,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,15 +48,15 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function g(e) {
   var t;
-  let a, _, h, {
+  let a, p, m, {
       className: g,
       activeCommand: E,
       activeOption: b,
@@ -71,13 +71,13 @@ function g(e) {
         let {
           default: e
         } = await n.e("5396").then(n.bind(n, 731646));
-        return t => (0, r.jsx)(e, m(p({}, t), {
+        return t => (0, r.jsx)(e, h(_({}, t), {
           id: i,
           label: d.intl.string(d.t.oJ1Muw)
         }))
       })
     }, [null == E || null == (t = E.rootCommand) ? true : t.id]),
-    I = i.useCallback(() => {
+    S = i.useCallback(() => {
       c.Po({
         channelId: O,
         command: null,
@@ -87,8 +87,8 @@ function g(e) {
   if (null == E) return null;
   if (null != b) {
     let e = y[b.name].lastValidationResult;
-    a = b.displayName, _ = b.displayDescription, h = (null == e ? true : e.success) ? null : null == e ? true : e.error
-  } else a = "".concat(u.GI).concat(E.displayName), _ = E.displayDescription, h = null;
+    a = b.displayName, p = b.displayDescription, m = (null == e ? true : e.success) ? null : null == e ? true : e.error
+  } else a = "".concat(u.GI).concat(E.displayName), p = E.displayDescription, m = null;
   return (0, r.jsxs)("div", {
     className: o()(g, f.bar),
     onContextMenu: v,
@@ -97,17 +97,17 @@ function g(e) {
       children: [(0, r.jsx)("span", {
         className: f.name,
         children: a
-      }), null != h ? (0, r.jsx)("span", {
+      }), null != m ? (0, r.jsx)("span", {
         className: f.error,
-        children: h
+        children: m
       }) : (0, r.jsx)("span", {
         className: f.description,
-        children: _
+        children: p
       })]
     }), (0, r.jsx)("div", {
       className: f.actions,
       children: (0, r.jsx)(l.B, {
-        onClick: I
+        onClick: S
       })
     })]
   })

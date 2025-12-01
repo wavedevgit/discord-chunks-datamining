@@ -1,14 +1,13 @@
 /** Chunk was on 33397 **/
 /** chunk id: 963410, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => C
+  default: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk592125 = require("./592125.js"),
   Chunk594174 = require("./594174.js"),
   Chunk5192 = require("./5192.js"),
@@ -27,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk547990 = require("./547990.js");
 
-function v(e) {
+function j(e) {
   let {
     badgeText: t,
     badgeColor: r
@@ -38,121 +37,121 @@ function v(e) {
   })
 }
 
-function C(e) {
+function v(e) {
   var t, r;
   let {
-    transitionState: C,
-    userId: R,
-    channelId: Z,
-    onClose: I
-  } = e, w = (0, i.e7)([s.default], () => s.default.getUser(R)), A = (0, i.e7)([o.Z], () => {
+    transitionState: v,
+    userId: C,
+    channelId: R,
+    onClose: Z
+  } = e, I = (0, i.e7)([s.default], () => s.default.getUser(C)), w = (0, i.e7)([o.Z], () => {
     var e;
-    return null == (e = o.Z.getChannel(Z)) ? true : e.getGuildId()
-  }), x = f.ZP.useName(A, null, w), {
-    fingerprint: P,
-    userKey: k
-  } = (0, m.q)({
-    userId: R
-  }), M = (0, b.W)({
-    fingerprintBase64: P,
-    chunkSize: N.iQ,
-    desiredLength: N.KN
-  }), U = l.useCallback(() => {
-    (0, d.s$)({
-      userId: R,
-      channelId: Z
+    return null == (e = o.Z.getChannel(R)) ? true : e.getGuildId()
+  }), A = a.ZP.useName(w, null, I), {
+    fingerprint: x,
+    userKey: P
+  } = (0, b.q)({
+    userId: C
+  }), k = (0, p.W)({
+    fingerprintBase64: x,
+    chunkSize: _.iQ,
+    desiredLength: _.KN
+  }), M = l.useCallback(() => {
+    (0, f.s$)({
+      userId: C,
+      channelId: R
     })
-  }, [Z, R]), F = (0, p.wV)({
-    userId: R,
-    channelId: Z
+  }, [R, C]), U = (0, y.wV)({
+    userId: C,
+    channelId: R
   });
-  (0, y.i)({
-    channelId: Z,
-    userId: R,
-    nickname: x,
-    onAlertOpen: I
+  (0, g.i)({
+    channelId: R,
+    userId: C,
+    nickname: A,
+    onAlertOpen: Z
   });
   let {
-    isCurrentUserKeyPersistent: V,
-    isOtherUserKeyPersistent: D,
-    loading: K
-  } = (0, g.y)({
-    userId: R
-  }), L = l.useCallback(() => {
-    null != k && ((0, E.TQ)(R, k, D, Z, h.Sbl.E2EE_USER_VERIFY_MODAL), I())
-  }, [k, R, D, Z, I]), G = l.useCallback(() => {
-    null != k && ((0, E.LO)(R, k, D), I())
-  }, [k, R, D, I]), [Y, B] = l.useMemo(() => F ? [j.intl.string(j.t.UNUuem), a.Z.BG_BRAND] : [j.intl.string(j.t.y2b7CA), a.Z.STATUS_DANGER], [F]), z = l.useMemo(() => (0, E.kK)({
-    isCurrentUserKeyPersistent: V,
-    isOtherUserKeyPersistent: D,
-    otherUserNickname: x
-  }), [V, D, x]), J = (0, O.P)({
-    userId: R,
-    keyToOmit: k
+    isCurrentUserKeyPersistent: F,
+    isOtherUserKeyPersistent: V,
+    loading: D
+  } = (0, E.y)({
+    userId: C
+  }), K = l.useCallback(() => {
+    null != P && ((0, d.TQ)(C, P, V, R, T.Sbl.E2EE_USER_VERIFY_MODAL), Z())
+  }, [P, C, V, R, Z]), L = l.useCallback(() => {
+    null != P && ((0, d.LO)(C, P, V), Z())
+  }, [P, C, V, Z]), [G, Y] = l.useMemo(() => U ? [N.intl.string(N.t.UNUuem), c.TVs.colors.BG_BRAND.css] : [N.intl.string(N.t.y2b7CA), c.TVs.colors.STATUS_DANGER.css], [U]), B = l.useMemo(() => (0, d.kK)({
+    isCurrentUserKeyPersistent: F,
+    isOtherUserKeyPersistent: V,
+    otherUserNickname: A
+  }), [F, V, A]), z = (0, m.P)({
+    userId: C,
+    keyToOmit: P
   });
   l.useEffect(() => {
-    (0, d.Rq)({
-      userId: R,
-      channelId: Z
+    (0, f.Rq)({
+      userId: C,
+      channelId: R
     })
-  }, [Z, R]);
-  let W = {
-      transitionState: C,
-      title: j.intl.string(j.t["/WPGnF"]),
-      subtitle: j.intl.format(j.t.oc2kce, {
-        username: x
+  }, [R, C]);
+  let J = {
+      transitionState: v,
+      title: N.intl.string(N.t["/WPGnF"]),
+      subtitle: N.intl.format(N.t.oc2kce, {
+        username: A
       })
     },
-    q = (0, n.jsxs)(n.Fragment, {
+    W = (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsxs)("div", {
-        className: T.verification,
-        children: [J > 0 && (0, n.jsx)(c.Wn, {
+        className: h.verification,
+        children: [z > 0 && (0, n.jsx)(c.Wn, {
           messageType: c.QYI.INFO,
-          className: T.helpMessage,
-          children: j.intl.format(j.t.uZDkz0, {
-            count: J
+          className: h.helpMessage,
+          children: N.intl.format(N.t.uZDkz0, {
+            count: z
           })
         }), (0, n.jsxs)("div", {
-          className: T.header,
+          className: h.header,
           children: [(0, n.jsx)(c.Heading, {
             variant: "text-sm/bold",
             color: "header-primary",
-            children: j.intl.string(j.t["/WPGnF"])
-          }), null != M && (0, n.jsx)(_.H, {
-            className: T.copyIcon,
-            chunks: M,
+            children: N.intl.string(N.t["/WPGnF"])
+          }), null != k && (0, n.jsx)(S.H, {
+            className: h.copyIcon,
+            chunks: k,
             color: c.TVs.colors.INTERACTIVE_NORMAL,
-            onCopy: U
+            onCopy: M
           }), (0, n.jsx)("div", {
-            className: T.codeStatus,
-            children: null == M ? (0, n.jsx)(c.$jN, {
-              className: T.spinner,
+            className: h.codeStatus,
+            children: null == k ? (0, n.jsx)(c.$jN, {
+              className: h.spinner,
               type: c.RAz.SPINNING_CIRCLE
-            }) : (0, n.jsx)(v, {
-              badgeText: Y,
-              badgeColor: B
+            }) : (0, n.jsx)(j, {
+              badgeText: G,
+              badgeColor: Y
             })
           })]
-        }), (0, n.jsx)(S.b, {
-          className: T.code,
-          chunks: M,
-          columns: N.ak
+        }), (0, n.jsx)(O.b, {
+          className: h.code,
+          chunks: k,
+          columns: _.ak
         })]
       }), (0, n.jsx)(c.Text, {
-        className: T.footer,
+        className: h.footer,
         variant: "text-sm/normal",
         color: "text-muted",
-        children: z
+        children: B
       })]
     }),
-    H = {
-      text: F ? j.intl.string(j.t["Osb+/n"]) : j.intl.string(j.t["0tvNAn"]),
-      disabled: null == M || K,
-      onClick: F ? G : L
+    q = {
+      text: U ? N.intl.string(N.t["Osb+/n"]) : N.intl.string(N.t["0tvNAn"]),
+      disabled: null == k || D,
+      onClick: U ? L : K
     },
-    X = {
-      text: j.intl.string(j.t["ETE/oC"]),
-      onClick: I,
+    H = {
+      text: N.intl.string(N.t["ETE/oC"]),
+      onClick: Z,
       variant: "secondary"
     };
   return (0, n.jsx)(u.Modal, (t = function(e) {
@@ -173,10 +172,10 @@ function C(e) {
     }
     return e
   }({
-    onClose: I
-  }, W), r = r = {
-    actions: [X, H],
-    children: q
+    onClose: Z
+  }, J), r = r = {
+    actions: [H, q],
+    children: W
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

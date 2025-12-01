@@ -19,14 +19,14 @@ function d(e) {
     purchaseState: t,
     currentStep: n,
     onClose: d
-  } = e, [f, _] = (0, l.z)({
+  } = e, [f, p] = (0, l.z)({
     purchaseState: t,
     currentStep: n,
     initialScene: c.fe.Scenes.ENTRY,
     purchaseScene: c.fe.Scenes.STARS,
     errorScene: c.fe.Scenes.ERROR,
     successScene: c.fe.Scenes.SUCCESS
-  }), p = (0, i.e7)([o.Z], () => o.Z.useReducedMotion);
+  }), _ = (0, i.e7)([o.Z], () => o.Z.useReducedMotion);
   return (0, r.jsxs)(a.xBx, {
     "data-migration-pending": true,
     align: s.Z.Align.START,
@@ -35,9 +35,9 @@ function d(e) {
     children: [(0, r.jsx)(c.fe, {
       className: u.animation,
       nextScene: f,
-      onScenePlay: e => _(c.fe.getNextScene(e)),
+      onScenePlay: e => p(c.fe.getNextScene(e)),
       pauseWhileUnfocused: false,
-      pause: p
+      pause: _
     }), (0, r.jsx)("div", {
       className: u.headerTitle
     }), (0, r.jsx)(a.olH, {

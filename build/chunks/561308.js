@@ -3,25 +3,25 @@
 "use strict";
 require.d(exports, {
   GE: () => A,
-  GL: () => h,
-  Jd: () => R,
+  GL: () => m,
+  Jd: () => P,
   Jg: () => O,
-  Nq: () => I,
+  Nq: () => S,
   Ol: () => b,
   PJ: () => g,
-  T_: () => _,
-  V5: () => T,
+  T_: () => p,
+  V5: () => I,
   ap: () => C,
   bT: () => N,
-  dw: () => S,
-  ig: () => L,
+  dw: () => T,
+  ig: () => x,
   kr: () => E,
   n2: () => y,
-  q_: () => D,
-  vU: () => P,
+  q_: () => w,
+  vU: () => R,
   yA: () => v,
-  yh: () => m,
-  zo: () => w
+  yh: () => h,
+  zo: () => D
 }), require("./35282.js");
 var Chunk164369 = require("./164369.js"),
   Chunk913527 = require("./913527.js"),
@@ -47,7 +47,7 @@ let d = e => {
     start: "id" in e ? c.default.extractTimestamp(e.id) : e.start,
     now: "end" in e && null != e.end ? Math.min(e.end, t) : t
   }),
-  _ = (e, t) => {
+  p = (e, t) => {
     let {
       seconds: n,
       minutes: r,
@@ -62,7 +62,7 @@ let d = e => {
       l = a(n);
     return i > 0 ? "".concat(o, ":").concat(s, ":").concat(l) : "".concat(s, ":").concat(l)
   },
-  p = {
+  _ = {
     secondsAgo: e => u.intl.formatToPlainString(u.t.EOrEJl, {
       count: e
     }),
@@ -82,9 +82,9 @@ let d = e => {
       count: e
     })
   },
-  h = function(e, t, n) {
+  m = function(e, t, n) {
     let {
-      formatSet: r = p
+      formatSet: r = _
     } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {}, i = a()(n), o = a()(c.default.extractTimestamp(e.id)), s = i.diff(o, "s"), u = Math.abs(s);
     if (u < l.Z.Seconds.MINUTE) return r.secondsAgo(s);
     if (u < l.Z.Seconds.HOUR) {
@@ -106,10 +106,10 @@ let d = e => {
     let d = Math.round(s / l.Z.Seconds.DAYS_30);
     return r.monthsAgo(d)
   },
-  m = function(e, t) {
+  h = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Date.now(),
       r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
-    return E(e) ? _(e, n) : h(e, t, n, r)
+    return E(e) ? p(e, n) : m(e, t, n, r)
   };
 
 function g(e, t) {
@@ -139,17 +139,17 @@ function v(e) {
   return null == (t = g(e, o.N.DURATION_SECONDS)) ? true : t.duration_seconds
 }
 
-function I(e) {
+function S(e) {
   var t;
   return null == (t = g(e, o.N.AGGREGATE_RANGE)) ? true : t.range
 }
 
-function T(e) {
+function I(e) {
   var t;
   return null == (t = g(e, o.N.MARATHON)) ? true : t.marathon
 }
 
-function S(e) {
+function T(e) {
   let t = g(e, o.N.RESURRECTED);
   return (null == t ? true : t.resurrected_last_played) != null ? new Date(t.resurrected_last_played) : true
 }
@@ -191,23 +191,23 @@ function N(e, t) {
   })), null != o && null != e ? "".concat(e, " (").concat(o, ")") : null != e ? e : o
 }
 
-function R(e) {
+function P(e) {
   return e.content_type === s.s.TOP_GAME
 }
 
-function P(e) {
+function R(e) {
   var t;
   return null == (t = g(e, o.N.STREAK_DAYS)) ? true : t.streak_count_days
 }
 
-function D(e) {
-  let t = P(e);
+function w(e) {
+  let t = R(e);
   if (null == t || t < 3) returnfalse;
   let n = c.default.extractTimestamp(e.id);
   return !(Date.now() - n > 48 * l.Z.Millis.HOUR)
 }
 
-function w(e) {
+function D(e) {
   let t = v(e);
   if (null == t) return {
     text: null,
@@ -227,7 +227,7 @@ function w(e) {
   }
 }
 
-function L(e) {
+function x(e) {
   var t;
   return null == (t = g(e, o.N.TRENDING_CONTENT)) ? true : t.trending
 }

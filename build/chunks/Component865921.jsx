@@ -2,7 +2,7 @@
 /** chunk id: 865921, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => p
+  v: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,31 +16,31 @@ var Chunk54381 = require("./54381.js"),
   Chunk456251 = require("./456251.jsx"),
   Chunk981631 = require("./981631.js");
 
-function p(e) {
+function _(e) {
   let {
     handleStepChange: t,
     handleClose: n
   } = e, {
-    blockedPayments: p,
-    hasFetchedSkus: h,
-    paymentSources: m,
+    blockedPayments: _,
+    hasFetchedSkus: m,
+    paymentSources: h,
     hasFetchedPaymentSources: g,
     application: E,
     skusById: b,
     selectedSkuId: y
   } = (0, c.JL)(), {
     isGift: O
-  } = (0, l.wD)(), [v, I] = i.useState(true), [T, S] = (0, a.Wu)([s.Z], () => [s.Z.isFetchingCategories, s.Z.error]);
+  } = (0, l.wD)(), [v, S] = i.useState(true), [I, T] = (0, a.Wu)([s.Z], () => [s.Z.isFetchingCategories, s.Z.error]);
   return (i.useEffect(() => {
     let e = null != E;
-    h && g && e && I(T)
-  }, [h, g, E, T]), i.useEffect(() => {
-    if (v || p || null == y) return;
+    m && g && e && S(I)
+  }, [m, g, E, I]), i.useEffect(() => {
+    if (v || _ || null == y) return;
     let e = b[y];
-    return O && ((null == e ? true : e.productLine) === _.POd.COLLECTIBLES || (null == e ? true : e.productLine) === _.POd.APPLICATION || (null == e ? true : e.productLine) === _.POd.SOCIAL_LAYER_GAME_ITEM) ? void t(u.h8.GIFT_CUSTOMIZATION) : 0 === Object.keys(m).length ? void t(u.h8.ADD_PAYMENT_STEPS) : void t(u.h8.REVIEW)
-  }, [v, p, t, m, O, b, y]), v) ? (0, r.jsx)(f.Z, {}) : p ? (0, r.jsx)(o.Vq, {
+    return O && ((null == e ? true : e.productLine) === p.POd.COLLECTIBLES || (null == e ? true : e.productLine) === p.POd.APPLICATION || (null == e ? true : e.productLine) === p.POd.SOCIAL_LAYER_GAME_ITEM) ? void t(u.h8.GIFT_CUSTOMIZATION) : 0 === Object.keys(h).length ? void t(u.h8.ADD_PAYMENT_STEPS) : void t(u.h8.REVIEW)
+  }, [v, _, t, h, O, b, y]), v) ? (0, r.jsx)(f.Z, {}) : _ ? (0, r.jsx)(o.Vq, {
     onClose: n
-  }) : null != S ? (0, r.jsx)(d.Z, {
+  }) : null != T ? (0, r.jsx)(d.Z, {
     onClose: n
   }) : null
 }

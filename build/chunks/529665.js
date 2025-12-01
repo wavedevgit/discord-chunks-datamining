@@ -17,29 +17,29 @@ function o(e, t, n) {
     onAction: d
   } = e, {
     actions: f,
-    shouldSelectOnPressUp: _
-  } = r.B.get(t), p = f.onRowAction ? () => {
+    shouldSelectOnPressUp: p
+  } = r.B.get(t), _ = f.onRowAction ? () => {
     var e;
     return null == (e = f.onRowAction) ? true : e.call(f, l.key)
   } : d, {
-    itemProps: h,
-    ...m
+    itemProps: m,
+    ...h
   } = (0, a.C)({
     selectionManager: t.selectionManager,
     key: l.key,
     ref: n,
     isVirtualized: c,
-    shouldSelectOnPressUp: _ || u,
-    onAction: p || (null == l || null == (o = l.props) ? true : o.onAction) ? (0, i.t)(null == l || null == (s = l.props) ? true : s.onAction, p) : true,
+    shouldSelectOnPressUp: p || u,
+    onAction: _ || (null == l || null == (o = l.props) ? true : o.onAction) ? (0, i.t)(null == l || null == (s = l.props) ? true : s.onAction, _) : true,
     isDisabled: 0 === t.collection.size
   }), g = t.selectionManager.isSelected(l.key), E = {
     role: "row",
     "aria-selected": "none" !== t.selectionManager.selectionMode ? g : true,
-    "aria-disabled": m.isDisabled || true,
-    ...h
+    "aria-disabled": h.isDisabled || true,
+    ...m
   };
   return c && (E["aria-rowindex"] = l.index + 1), {
     rowProps: E,
-    ...m
+    ...h
   }
 }

@@ -12,7 +12,7 @@ require.d(exports, {
   e9: () => a,
   lv: () => f,
   t4: () => o,
-  u$: () => _
+  u$: () => p
 });
 var r = function(e) {
   return e[e.POPULAR = 0] = "POPULAR", e[e.ALPHABETICAL = 1] = "ALPHABETICAL", e
@@ -26,7 +26,7 @@ let i = "app-launcher-element",
   u = 500,
   d = 680,
   f = "min(100vh, ".concat(d, "px)"),
-  _ = {
+  p = {
     "--custom-app-launcher-width": "".concat(u, "px"),
     "--custom-app-launcher-height": f
   }

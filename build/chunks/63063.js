@@ -2,7 +2,7 @@
 /** chunk id: 63063, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _,
+  Z: () => p,
   w: () => s
 });
 var Chunk299379 = require("./299379.js"),
@@ -22,7 +22,7 @@ function d(e) {
 function f() {
   return Chunk706454.default.locale.toLowerCase()
 }
-let _ = {
+let p = {
   getArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e)),
   getEnglishArticleURL: e => d("/hc/en-us/articles/".concat(e)),
   getDevArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), l),

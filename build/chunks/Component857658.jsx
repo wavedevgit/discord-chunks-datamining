@@ -2,7 +2,7 @@
 /** chunk id: 857658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => P
+  U: () => R
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -30,14 +30,14 @@ function v() {
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   })
 }
-let I = (0, Chunk608787.Un)({
+let S = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("66382"), require.e("35855")]).then(require.bind(require, 164267)),
     webpackId: 164267,
     name: "CustomThemeColorPickerControlV2",
     renderLoader: v
   }),
-  T = 5,
-  S = "#000000";
+  I = 5,
+  T = "#000000";
 
 function A(e, t) {
   return e.length < 1 ? 0 : t / (e.length - 1) * 80 + 10
@@ -62,7 +62,7 @@ function C(e) {
       let s = o[t],
         c = t === n;
       return (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(p.P3F, {
+        children: [(0, r.jsx)(_.P3F, {
           className: l()(O.colorSquare, {
             [O.selected]: c
           }),
@@ -89,7 +89,7 @@ function N(e) {
   let {
     color: t
   } = e, n = i.useMemo(() => ({
-    backgroundColor: (0, u.FX)(t) ? t : S
+    backgroundColor: (0, u.FX)(t) ? t : T
   }), [t]);
   return (0, r.jsx)("div", {
     className: O.hexColorPreview,
@@ -98,69 +98,69 @@ function N(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   if (!(0, u.FX)(e)) return e;
   let t = o()(e);
   return t.set("hsl.h", (t.get("hsl.h") + 15) % 360).hex()
 }
 
-function P(e) {
+function R(e) {
   let {
     value: t,
     onChange: n,
     className: a,
     colors: o,
     setColors: s
-  } = e, c = (0, h.Z)(), [v, S] = i.useState(0), [A, P] = i.useState(t);
+  } = e, c = (0, m.Z)(), [v, T] = i.useState(0), [A, R] = i.useState(t);
   i.useEffect(() => {
     if (o.length > 0 && v < o.length) {
       let e = o[v];
-      (0, u.FX)(e) && (P(e), n(e))
+      (0, u.FX)(e) && (R(e), n(e))
     }
-    v >= o.length && S(0)
+    v >= o.length && T(0)
   }, [v, o, n]);
-  let D = e => {
+  let w = e => {
       let t = e.trim();
       return t.startsWith("#") ? t : t.length > 0 ? "#".concat(t) : t
     },
-    w = e => {
-      let t = D(e);
-      if (P(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), o.length > 0)) {
+    D = e => {
+      let t = w(e);
+      if (R(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), o.length > 0)) {
         let e = [...o];
         e[v] = t, s(e)
       }
     },
-    L = i.useCallback(e => {
-      P(e.hex)
+    x = i.useCallback(e => {
+      R(e.hex)
     }, []),
-    x = e => {
+    L = e => {
       if ((0, E.P0)(), n(e.hex), o.length > 0) {
         let t = [...o];
         t[v] = e.hex, s(t)
       }
     },
-    M = async () => {
+    j = async () => {
       if (null != c) try {
         let {
           sRGBHex: e
         } = await c.open();
-        (0, E.J4)(), w(e)
+        (0, E.J4)(), D(e)
       } catch (e) {}
-    }, k = () => {
-      if (o.length === T) return;
+    }, M = () => {
+      if (o.length === I) return;
       0 === o.length && (0, g.ft)(), (0, E.gG)();
       let e = o.length > 0 ? o[o.length - 1] : A,
-        t = o.length > 0 ? R(e) : e,
+        t = o.length > 0 ? P(e) : e,
         n = [...o, t];
-      s(n), S(n.length - 1)
-    }, j = e => {
+      s(n), T(n.length - 1)
+    }, k = e => {
       if (o.length > 1) {
         (0, E.JL)();
         let t = o.filter((t, n) => n !== e);
-        s(t), v >= t.length ? S(t.length - 1) : v > e && S(v - 1)
+        s(t), v >= t.length ? T(t.length - 1) : v > e && T(v - 1)
       }
     }, U = e => {
-      S(e), (0, E.w8)()
+      T(e), (0, E.w8)()
     }, G = o.length > 1;
   return (0, r.jsxs)("div", {
     className: l()(O.container, a),
@@ -168,9 +168,9 @@ function P(e) {
       colors: o,
       selectedIndex: v,
       onColorSelect: U
-    }), (0, r.jsx)(I, {
-      onChange: L,
-      onChangeComplete: x,
+    }), (0, r.jsx)(S, {
+      onChange: x,
+      onChangeComplete: L,
       color: A
     }), (0, r.jsxs)("div", {
       className: O.hexInputContainer,
@@ -179,37 +179,37 @@ function P(e) {
       }), (0, r.jsx)("input", {
         className: O.hexInput,
         value: A.toUpperCase(),
-        onChange: e => w(e.target.value),
+        onChange: e => D(e.target.value),
         maxLength: 7,
-        placeholder: m.Dp,
+        placeholder: h.Dp,
         type: "text"
       }), (0, r.jsxs)("div", {
         className: O.trailingIcons,
         children: [null != c && (0, r.jsx)(f.u, {
           text: y.intl.string(b.default["NCFz+N"]),
-          children: (0, r.jsx)(_.hU, {
+          children: (0, r.jsx)(p.hU, {
             variant: "icon-only",
             size: "sm",
-            onClick: M,
+            onClick: j,
             icon: d.i,
             "aria-label": y.intl.string(b.default["NCFz+N"])
           })
         }), G && (0, r.jsx)(f.u, {
           text: y.intl.string(y.t.N86XcP),
-          children: (0, r.jsx)(_.hU, {
+          children: (0, r.jsx)(p.hU, {
             variant: "icon-only",
             size: "sm",
-            onClick: () => j(v),
-            icon: p.V_R,
+            onClick: () => k(v),
+            icon: _.V_R,
             "aria-label": y.intl.string(y.t.N86XcP)
           })
         })]
       })]
-    }), o.length < T && (0, r.jsx)(_.zxk, {
+    }), o.length < I && (0, r.jsx)(p.zxk, {
       variant: "secondary",
       size: "md",
-      onClick: k,
-      icon: p.BRu,
+      onClick: M,
+      icon: _.BRu,
       text: y.intl.string(b.default.JUQcdT),
       fullWidth: true
     })]

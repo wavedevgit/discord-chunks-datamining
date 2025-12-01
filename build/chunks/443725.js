@@ -35,11 +35,11 @@ var Chunk161796 = require("./161796.js"),
     return i(module, null, [{
       key: "create",
       value: function(e) {
-        if (e.outputRange && "string" == typeof e.outputRange[0]) return _(e);
+        if (e.outputRange && "string" == typeof e.outputRange[0]) return p(e);
         var t = e.outputRange;
         g("outputRange", t);
         var n = e.inputRange;
-        g("inputRange", n), m(n), s(n.length === t.length, "inputRange (" + n.length + ") and outputRange (" + t.length + ") must have the same length");
+        g("inputRange", n), h(n), s(n.length === t.length, "inputRange (" + n.length + ") and outputRange (" + t.length + ") must have the same length");
         var r = e.easing || l,
           i = "extend";
         true !== e.extrapolateLeft ? i = e.extrapolateLeft : true !== e.extrapolate && (i = e.extrapolate);
@@ -47,7 +47,7 @@ var Chunk161796 = require("./161796.js"),
         return true !== e.extrapolateRight ? a = e.extrapolateRight : true !== e.extrapolate && (a = e.extrapolate),
           function(e) {
             s("number" == typeof e, "Cannot interpolation an input which is not a number");
-            var o = h(e, n);
+            var o = m(e, n);
             return u(e, n[o], n[o + 1], t[o], t[o + 1], r, i, a)
           }
       }
@@ -71,9 +71,9 @@ function d(e) {
 }
 var f = /[0-9\.-]+/g;
 
-function _(e) {
+function p(e) {
   var t = e.outputRange;
-  s(t.length >= 2, "Bad output range"), p(t = t.map(d));
+  s(t.length >= 2, "Bad output range"), _(t = t.map(d));
   var n = t[0].match(f).map(function() {
     return []
   });
@@ -97,16 +97,16 @@ function _(e) {
   }
 }
 
-function p(e) {
+function _(e) {
   for (var t = e[0].replace(f, ""), n = 1; n < e.length; ++n) s(t === e[n].replace(f, ""), "invalid pattern " + e[0] + " and " + e[n])
 }
 
-function h(e, t) {
+function m(e, t) {
   for (var n = 1; n < t.length - 1 && !(t[n] >= e); ++n);
   return n - 1
 }
 
-function m(e) {
+function h(e) {
   s(e.length >= 2, "inputRange must have at least 2 elements");
   for (var t = 1; t < e.length; ++t) s(e[t] >= e[t - 1], "inputRange must be monotonically increasing " + e)
 }

@@ -24,39 +24,39 @@ var r, Chunk533937 = require("./533937.js"),
   },
   Chunk566817 = require("./566817.js"),
   Chunk461648 = require("./461648.js"),
-  I = function() {
+  S = function() {
     throw new Chunk815329
   },
-  T = Chunk566817 ? function() {
+  I = Chunk566817 ? function() {
     try {
-      return arguments.callee, I
+      return arguments.callee, S
     } catch (e) {
       try {
         return Chunk566817(arguments, "callee").get
       } catch (e) {
-        return I
+        return S
       }
     }
-  }() : I,
-  S = require("./738146.js")(),
+  }() : S,
+  T = require("./738146.js")(),
   Chunk143988 = require("./143988.js"),
   Chunk764459 = require("./764459.js"),
   Chunk138676 = require("./138676.js"),
   Chunk365088 = require("./365088.js"),
   Chunk947599 = require("./947599.js"),
-  D = {},
-  w = "undefined" != typeof Uint8Array && Chunk143988 ? Chunk143988(Uint8Array) : r,
-  L = {
+  w = {},
+  D = "undefined" != typeof Uint8Array && Chunk143988 ? Chunk143988(Uint8Array) : r,
+  x = {
     __proto__: null,
     "%AggregateError%": "undefined" == typeof AggregateError ? r : AggregateError,
     "%Array%": Array,
     "%ArrayBuffer%": "undefined" == typeof ArrayBuffer ? r : ArrayBuffer,
-    "%ArrayIteratorPrototype%": S && Chunk143988 ? Chunk143988([][Symbol.iterator]()) : r,
+    "%ArrayIteratorPrototype%": T && Chunk143988 ? Chunk143988([][Symbol.iterator]()) : r,
     "%AsyncFromSyncIteratorPrototype%": r,
-    "%AsyncFunction%": D,
-    "%AsyncGenerator%": D,
-    "%AsyncGeneratorFunction%": D,
-    "%AsyncIteratorPrototype%": D,
+    "%AsyncFunction%": w,
+    "%AsyncGenerator%": w,
+    "%AsyncGeneratorFunction%": w,
+    "%AsyncIteratorPrototype%": w,
     "%Atomics%": "undefined" == typeof Atomics ? r : Atomics,
     "%BigInt%": "undefined" == typeof BigInt ? r : BigInt,
     "%BigInt64Array%": "undefined" == typeof BigInt64Array ? r : BigInt64Array,
@@ -76,16 +76,16 @@ var r, Chunk533937 = require("./533937.js"),
     "%Float64Array%": "undefined" == typeof Float64Array ? r : Float64Array,
     "%FinalizationRegistry%": "undefined" == typeof FinalizationRegistry ? r : FinalizationRegistry,
     "%Function%": b,
-    "%GeneratorFunction%": D,
+    "%GeneratorFunction%": w,
     "%Int8Array%": "undefined" == typeof Int8Array ? r : Int8Array,
     "%Int16Array%": "undefined" == typeof Int16Array ? r : Int16Array,
     "%Int32Array%": "undefined" == typeof Int32Array ? r : Int32Array,
     "%isFinite%": isFinite,
     "%isNaN%": isNaN,
-    "%IteratorPrototype%": S && Chunk143988 ? Chunk143988(Chunk143988([][Symbol.iterator]())) : r,
+    "%IteratorPrototype%": T && Chunk143988 ? Chunk143988(Chunk143988([][Symbol.iterator]())) : r,
     "%JSON%": "object" == typeof JSON ? JSON : r,
     "%Map%": "undefined" == typeof Map ? r : Map,
-    "%MapIteratorPrototype%": "undefined" != typeof Map && S && Chunk143988 ? Chunk143988(new Map()[Symbol.iterator]()) : r,
+    "%MapIteratorPrototype%": "undefined" != typeof Map && T && Chunk143988 ? Chunk143988(new Map()[Symbol.iterator]()) : r,
     "%Math%": Math,
     "%Number%": Number,
     "%Object%": Chunk533937,
@@ -99,14 +99,14 @@ var r, Chunk533937 = require("./533937.js"),
     "%Reflect%": "undefined" == typeof Reflect ? r : Reflect,
     "%RegExp%": RegExp,
     "%Set%": "undefined" == typeof Set ? r : Set,
-    "%SetIteratorPrototype%": "undefined" != typeof Set && S && Chunk143988 ? Chunk143988(new Set()[Symbol.iterator]()) : r,
+    "%SetIteratorPrototype%": "undefined" != typeof Set && T && Chunk143988 ? Chunk143988(new Set()[Symbol.iterator]()) : r,
     "%SharedArrayBuffer%": "undefined" == typeof SharedArrayBuffer ? r : SharedArrayBuffer,
     "%String%": String,
-    "%StringIteratorPrototype%": S && Chunk143988 ? Chunk143988("" [Symbol.iterator]()) : r,
-    "%Symbol%": S ? Symbol : r,
+    "%StringIteratorPrototype%": T && Chunk143988 ? Chunk143988("" [Symbol.iterator]()) : r,
+    "%Symbol%": T ? Symbol : r,
     "%SyntaxError%": Chunk429675,
-    "%ThrowTypeError%": T,
-    "%TypedArray%": w,
+    "%ThrowTypeError%": I,
+    "%TypedArray%": D,
     "%TypeError%": Chunk815329,
     "%Uint8Array%": "undefined" == typeof Uint8Array ? r : Uint8Array,
     "%Uint8ClampedArray%": "undefined" == typeof Uint8ClampedArray ? r : Uint8ClampedArray,
@@ -132,10 +132,10 @@ var r, Chunk533937 = require("./533937.js"),
 if (Chunk143988) try {
   null.error
 } catch (e) {
-  var x = Chunk143988(Chunk143988(module));
-  L["%Error.prototype%"] = x
+  var L = Chunk143988(Chunk143988(module));
+  x["%Error.prototype%"] = L
 }
-var M = function e(t) {
+var j = function e(t) {
     var n;
     if ("%AsyncFunction%" === t) n = y("async function () {}");
     else if ("%GeneratorFunction%" === t) n = y("function* () {}");
@@ -147,9 +147,9 @@ var M = function e(t) {
       var i = e("%AsyncGenerator%");
       i && A && (n = A(i.prototype))
     }
-    return L[t] = n, n
+    return x[t] = n, n
   },
-  k = {
+  M = {
     __proto__: null,
     "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
     "%ArrayPrototype%": ["Array", "prototype"],
@@ -206,27 +206,27 @@ var M = function e(t) {
   Chunk390976 = require("./390976.js"),
   Chunk706165 = require("./706165.js"),
   G = Chunk390976.call(Chunk947599, Array.prototype.concat),
-  B = Chunk390976.call(Chunk365088, Array.prototype.splice),
-  Z = Chunk390976.call(Chunk947599, String.prototype.replace),
+  Z = Chunk390976.call(Chunk365088, Array.prototype.splice),
+  B = Chunk390976.call(Chunk947599, String.prototype.replace),
   F = Chunk390976.call(Chunk947599, String.prototype.slice),
   V = Chunk390976.call(Chunk947599, RegExp.prototype.exec),
   H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
-  W = /\\(\\)?/g,
-  Y = function(e) {
+  Y = /\\(\\)?/g,
+  W = function(e) {
     var t = F(e, 0, 1),
       n = F(e, false);
     if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
     if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
     var r = [];
-    return Z(e, H, function(e, t, n, i) {
-      r[r.length] = n ? Z(i, W, "$1") : t || e
+    return B(e, H, function(e, t, n, i) {
+      r[r.length] = n ? B(i, Y, "$1") : t || e
     }), r
   },
   K = function(e, t) {
     var n, r = e;
-    if (U(k, r) && (r = "%" + (n = k[r])[0] + "%"), U(L, r)) {
-      var i = L[r];
-      if (i === D && (i = M(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
+    if (U(M, r) && (r = "%" + (n = M[r])[0] + "%"), U(x, r)) {
+      var i = x[r];
+      if (i === w && (i = j(r)), true === i && !t) throw new u("intrinsic " + e + " exists, but is not available. Please file an issue!");
       return {
         alias: n,
         name: r,
@@ -239,30 +239,30 @@ module.exports = function(e, t) {
   if ("string" != typeof e || 0 === e.length) throw new u("intrinsic name must be a non-empty string");
   if (arguments.length > 1 && "boolean" != typeof t) throw new u('"allowMissing" argument must be a boolean');
   if (null === V(/^%?[^%]*%?$/, e)) throw new c("`%` may not be present anywhere but at the beginning and end of the intrinsic name");
-  var n = Y(e),
+  var n = W(e),
     r = n.length > 0 ? n[0] : "",
     i = K("%" + r + "%", t),
     a = i.name,
     o = i.value,
     s = false,
     l = i.alias;
-  l && (r = l[0], B(n, G([0, 1], l)));
+  l && (r = l[0], Z(n, G([0, 1], l)));
   for (var d = 1, f = true; d < n.length; d += 1) {
-    var _ = n[d],
-      p = F(_, 0, 1),
-      h = F(_, false);
-    if (('"' === p || "'" === p || "`" === p || '"' === h || "'" === h || "`" === h) && p !== h) throw new c("property names with quotes must have matching quotes");
-    if ("constructor" !== _ && f || (s = true), r += "." + _, U(L, a = "%" + r + "%")) o = L[a];
+    var p = n[d],
+      _ = F(p, 0, 1),
+      m = F(p, false);
+    if (('"' === _ || "'" === _ || "`" === _ || '"' === m || "'" === m || "`" === m) && _ !== m) throw new c("property names with quotes must have matching quotes");
+    if ("constructor" !== p && f || (s = true), r += "." + p, U(x, a = "%" + r + "%")) o = x[a];
     else if (null != o) {
-      if (!(_ in o)) {
+      if (!(p in o)) {
         if (!t) throw new u("base intrinsic for " + e + " exists, but the property is not available.");
         return
       }
       if (O && d + 1 >= n.length) {
-        var m = O(o, _);
-        o = (f = !!m) && "get" in m && !("originalValue" in m.get) ? m.get : o[_]
-      } else f = U(o, _), o = o[_];
-      f && !s && (L[a] = o)
+        var h = O(o, p);
+        o = (f = !!h) && "get" in h && !("originalValue" in h.get) ? h.get : o[p]
+      } else f = U(o, p), o = o[p];
+      f && !s && (x[a] = o)
     }
   }
   return o

@@ -2,7 +2,7 @@
 /** chunk id: 516817, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,26 +15,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk359135 = require("./359135.js"),
   Chunk993447 = require("./993447.js");
 
-function _(e) {
+function p(e) {
   let {
     nameplate: t,
     hovered: n,
     selected: a,
     content: s,
     placement: c
-  } = e, _ = (0, u.p)(s, t, n, a, c), h = (0, l.C)(n, a), m = i.useRef(null == t);
+  } = e, p = (0, u.p)(s, t, n, a, c), m = (0, l.C)(n, a), h = i.useRef(null == t);
   return (i.useEffect(() => {
-    m.current || null != t || (m.current = true)
+    h.current || null != t || (h.current = true)
   }, [t]), null == t) ? null : (0, r.jsx)("div", {
     className: o()(f.container, {
-      [f.fadeIn]: m.current,
+      [f.fadeIn]: h.current,
       [f.fitInAccount]: c === d.i.ACCOUNT
     }),
     style: {
-      background: _.background
+      background: p.background
     },
     "aria-hidden": true,
-    children: (0, r.jsx)(p, {
+    children: (0, r.jsx)(_, {
       nameplate: t,
       className: o()(f.img, {
         [f.hover]: n,
@@ -45,15 +45,15 @@ function _(e) {
         [f.channel]: c === d.i.CHANNEL
       }),
       style: {
-        maskImage: _.maskImage
+        maskImage: p.maskImage
       },
-      animate: h,
-      loop: true === h && true === n
+      animate: m,
+      loop: true === m && true === n
     })
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     nameplate: t,
     className: n,
@@ -64,11 +64,11 @@ function p(e) {
     staticAsset: s,
     animatedAsset: l
   } = (0, c._)(t), u = !(null == l ? true : l.endsWith(".webm"));
-  return null == s || null == l ? null : u ? (0, r.jsx)(m, {
+  return null == s || null == l ? null : u ? (0, r.jsx)(h, {
     asset: a ? l : s,
     className: n,
     style: i
-  }) : (0, r.jsx)(h, {
+  }) : (0, r.jsx)(m, {
     animatedAsset: l,
     staticAsset: s,
     animate: a,
@@ -78,7 +78,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     staticAsset: t,
     animatedAsset: n,
@@ -105,7 +105,7 @@ function h(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     asset: t,
     className: n,

@@ -2,7 +2,7 @@
 /** chunk id: 350207, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./467055.js"), require("./388685.js"), require("./472816.js"), require("./794429.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,33 +25,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk350917 = require("./350917.js");
 let v = 4;
 
-function I(e) {
+function S(e) {
   let t = (0, u.Z)(e.map(e => e.applicationId));
-  return (0, s.cj)([d.Z], () => Object.fromEntries(t.filter(_.lm).map(e => [e.id, d.Z.getGameByApplication(e)]).filter(e => {
+  return (0, s.cj)([d.Z], () => Object.fromEntries(t.filter(p.lm).map(e => [e.id, d.Z.getGameByApplication(e)]).filter(e => {
     let [t, n] = e;
     return null != n
   })))
 }
 
-function T(e) {
+function I(e) {
   let {
     widgets: t = [],
     onClick: n,
     className: a
   } = e, {
     trackUserProfileAction: u
-  } = (0, p.KZ)(), T = I(t.filter(e => e instanceof h.q)), A = (0, i.useMemo)(() => [...new Set(t.map(e => {
-    if (e instanceof m.zy) return e.games.map(e => e.applicationId);
-    if (e instanceof h.q) {
+  } = (0, _.KZ)(), I = S(t.filter(e => e instanceof m.q)), A = (0, i.useMemo)(() => [...new Set(t.map(e => {
+    if (e instanceof h.zy) return e.games.map(e => e.applicationId);
+    if (e instanceof m.q) {
       var t;
-      return null == (t = T[e.applicationId]) ? true : t.id
+      return null == (t = I[e.applicationId]) ? true : t.id
     }
-  }).filter(_.lm).flat())], [t, T]), C = (0, s.e7)([d.Z], () => d.Z.canFetchDetectableGames()), [N, R] = (0, i.useState)([]), {
-    themeType: P
-  } = (0, E.z)(), D = P === b.l.SIDEBAR, w = (0, i.useRef)(false);
+  }).filter(p.lm).flat())], [t, I]), C = (0, s.e7)([d.Z], () => d.Z.canFetchDetectableGames()), [N, P] = (0, i.useState)([]), {
+    themeType: R
+  } = (0, E.z)(), w = R === b.l.SIDEBAR, D = (0, i.useRef)(false);
   return (0, i.useEffect)(() => {
     if (C) return void c.Z.getDetectableGames();
-    R(A.map(e => d.Z.getDetectableGame(e)).filter(e => null != e).map(e => {
+    P(A.map(e => d.Z.getDetectableGame(e)).filter(e => null != e).map(e => {
       var t;
       return {
         image: null != (t = f.ZP.getApplicationIconURL({
@@ -62,9 +62,9 @@ function T(e) {
       }
     }).filter(e => "" !== e.image).slice(0, v))
   }, [A, C]), (0, i.useEffect)(() => {
-    0 !== N.length && (w.current || (u({
+    0 !== N.length && (D.current || (u({
       action: "VIEW_GAME_WIDGET_BREADCRUMB"
-    }), w.current = true))
+    }), D.current = true))
   }, [u, N.length]), (0, r.jsx)(l.P3F, {
     "aria-label": y.intl.string(y.t.JjiwFx),
     onClick: () => {
@@ -76,11 +76,11 @@ function T(e) {
     children: (0, r.jsxs)(g.Z.Overlay, {
       className: o()(O.innerContainer, a),
       children: [(0, r.jsx)(l.Text, {
-        variant: D ? "text-sm/medium" : "text-xs/medium",
+        variant: w ? "text-sm/medium" : "text-xs/medium",
         children: y.intl.string(y.t.JjiwFx)
       }), (0, r.jsx)("div", {
         className: O.icons,
-        children: N.map((e, t) => (0, r.jsx)(S, {
+        children: N.map((e, t) => (0, r.jsx)(T, {
           iconUrl: e.image,
           name: e.name,
           displayCount: t === N.length - 1 && A.length > v,
@@ -91,7 +91,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     iconUrl: t,
     name: n,

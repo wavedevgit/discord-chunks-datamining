@@ -2,7 +2,7 @@
 /** chunk id: 383838, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  To: () => m
+  To: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -36,9 +36,9 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
-  var n, r, i = p(e, t);
+  var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -46,7 +46,7 @@ function _(e, t) {
   return i
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -54,14 +54,14 @@ function p(e, t) {
   return i
 }
 Chunk49800.Z.Types;
-let h = "right";
+let m = "right";
 
-function m(e) {
+function h(e) {
   let t, n, {
       type: i = o.Z.Types.DANGER,
       imageData: d,
-      button: p,
-      className: m,
+      button: _,
+      className: h,
       iconClassName: g,
       title: E,
       body: b,
@@ -72,7 +72,7 @@ function m(e) {
   if (null != d) {
     let {
       position: e
-    } = d, n = _(d, ["position"]);
+    } = d, n = p(d, ["position"]);
     t = (0, r.jsx)(s.Z.Child, {
       grow: 0,
       shrink: 0,
@@ -80,11 +80,11 @@ function m(e) {
         alt: "",
         className: a()(u.icon, g)
       }, n))
-    }), e === h && (v = s.Z.Direction.HORIZONTAL_REVERSE)
-  } else null != p && (n = p);
-  let I = true;
-  return i === o.Z.Types.PRIMARY && (I = false), (0, r.jsx)(o.Z, {
-    className: a()(u.formNotice, m),
+    }), e === m && (v = s.Z.Direction.HORIZONTAL_REVERSE)
+  } else null != _ && (n = _);
+  let S = true;
+  return i === o.Z.Types.PRIMARY && (S = false), (0, r.jsx)(o.Z, {
+    className: a()(u.formNotice, h),
     type: i,
     style: y,
     children: (0, r.jsxs)(s.Z, {
@@ -93,12 +93,12 @@ function m(e) {
       children: [t, (0, r.jsxs)(s.Z.Child, {
         children: [null != E && "" !== E ? (0, r.jsx)(c.v, {
           className: a()(u.formNoticeTitle, {
-            [u.whiteText]: I
+            [u.whiteText]: S
           }),
           children: E
         }) : null, (0, r.jsx)(l.R, {
           className: a()(u.formNoticeBody, {
-            [u.whiteText]: I
+            [u.whiteText]: S
           }),
           children: b
         }), n]
@@ -106,4 +106,4 @@ function m(e) {
     })
   })
 }
-m.Types = Chunk49800.Z.Types
+h.Types = Chunk49800.Z.Types

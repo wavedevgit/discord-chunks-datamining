@@ -2,7 +2,7 @@
 /** chunk id: 288897, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,7 +33,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function I(e) {
   return e
 }
 
-function T(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,8 +57,8 @@ function T(e, t) {
   return n
 }
 
-function S(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -107,11 +107,11 @@ class N extends Chunk473749.PureComponent {
       attributes: o,
       children: s
     } = e;
-    "rtl" === o.dir && (o.style = S(I({}, o.style), {
+    "rtl" === o.dir && (o.style = T(S({}, o.style), {
       textAlign: "right"
     }));
     let l = null != (t = null == a ? true : a(e)) ? t : (0, g.Z)(e, n, i);
-    return null != l ? l : (0, r.jsx)("div", S(I({}, o), {
+    return null != l ? l : (0, r.jsx)("div", T(S({}, o), {
       children: s
     }))
   }
@@ -124,7 +124,7 @@ class N extends Chunk473749.PureComponent {
       attributes: a,
       children: o
     } = e, s = null != (t = null == i ? true : i(e)) ? t : (0, E.Z)(n, e);
-    return null != s ? s : (0, r.jsx)("span", S(I({}, a), {
+    return null != s ? s : (0, r.jsx)("span", T(S({}, a), {
       children: o
     }))
   }
@@ -163,20 +163,20 @@ class N extends Chunk473749.PureComponent {
     } = this.props, r = s.F3.findDocumentOrShadowRoot(n).getSelection(), i = null != r && r.rangeCount > 0 ? r.getRangeAt(0) : null, a = null != (t = e.getTargetRanges()[0]) ? t : null;
     if (null == n.composition) {
       if (("insertText" === e.inputType || "insertReplacementText" === e.inputType) && (null == a && (a = i), null != a)) {
-        let t = m.bN.toSlateRange(n, a, {
+        let t = h.bN.toSlateRange(n, a, {
           exactMatch: false,
           suppressThrow: true
         });
-        null != t && null != e.data && (m.M8.isExpanded(t) ? _.T.withSingleEntry(n, () => {
+        null != t && null != e.data && (h.M8.isExpanded(t) ? p.T.withSingleEntry(n, () => {
           n.selection = t, n.deleteFragment(), n.insertText(e.data), e.preventDefault()
         }) : (n.insertText(e.data), e.preventDefault()))
       }
       if (e.inputType.startsWith("deleteContent") && null != i && !i.collapsed) {
-        let t = m.bN.toSlateRange(n, i, {
+        let t = h.bN.toSlateRange(n, i, {
           exactMatch: true,
           suppressThrow: true
         });
-        null != t && m.M8.isExpanded(t) && (n.selection = t, n.deleteFragment(e.inputType.endsWith("Backward") ? "backward" : "forward"), e.preventDefault())
+        null != t && h.M8.isExpanded(t) && (n.selection = t, n.deleteFragment(e.inputType.endsWith("Backward") ? "backward" : "forward"), e.preventDefault())
       }
     }
   }
@@ -198,7 +198,7 @@ class N extends Chunk473749.PureComponent {
     }
     if (null != (null != require.selection && Chunk887490.M8.isCollapsed(require.selection) ? Chunk887490.bN.above(require, {
         at: Chunk473749[1],
-        match: e => m.bN.isInline(n, e),
+        match: e => h.bN.isInline(n, e),
         mode: "lowest"
       }) : null) && (Chunk54381.startedInsideInline = true), Chunk887490.bN.isEditorEmpty(require)) {
       Chunk436660.Q.insertNodes(require, {
@@ -230,16 +230,16 @@ class N extends Chunk473749.PureComponent {
     let {
       insertedPrefix: n
     } = t.composition;
-    if (n && null != t.selection && m.M8.isCollapsed(t.selection)) {
+    if (n && null != t.selection && h.M8.isCollapsed(t.selection)) {
       let e = t.selection.anchor.path,
-        n = m.aj.leaf(t, e);
-      m.bN.withoutNormalizing(t, () => {
+        n = h.aj.leaf(t, e);
+      h.bN.withoutNormalizing(t, () => {
         let e = n.text.replace(/^\uFEFF/, "");
-        h.Q.delete(t, {
+        m.Q.delete(t, {
           unit: "offset",
           distance: n.text.length,
           reverse: true
-        }), m.bN.insertText(t, e)
+        }), h.bN.insertText(t, e)
       })
     }
     t.composition = null
@@ -255,7 +255,7 @@ class N extends Chunk473749.PureComponent {
       editor: t,
       onBlur: n
     } = this.props, r = e.relatedTarget, i = s.F3.findDocumentOrShadowRoot(this.props.editor), a = i.getElementById("textarea-context"), o = i.getElementById("slate-toolbar");
-    if (null != r && !(0, p.hasDomParent)(r, a) && !(0, p.hasDomParent)(r, o)) {
+    if (null != r && !(0, _.hasDomParent)(r, a) && !(0, _.hasDomParent)(r, o)) {
       let e = s.F3.findDocumentOrShadowRoot(t).getSelection();
       null != e && this.isSelectionEscaping(e) && e.removeAllRanges()
     }
@@ -270,7 +270,7 @@ class N extends Chunk473749.PureComponent {
           a = r.endContainer,
           o = r.startOffset,
           s = r.endOffset;
-        if ((0, p.hasDomParent)(i, t) || !(0, p.isDOMRangeCollapsed)(i, o, a, s) && (0, p.hasDomParent)(a, t)) returntrue
+        if ((0, _.hasDomParent)(i, t) || !(0, _.isDOMRangeCollapsed)(i, o, a, s) && (0, _.hasDomParent)(a, t)) returntrue
       }
     returnfalse
   }
@@ -285,15 +285,15 @@ class N extends Chunk473749.PureComponent {
           s = a.endContainer,
           l = a.startOffset,
           c = a.endOffset;
-        if ((0, p.hasDomParent)(o, t)) {
+        if ((0, _.hasDomParent)(o, t)) {
           if (r) returntrue;
           n = true
         } else {
           if (n) returntrue;
           r = true
         }
-        if (!(0, p.isDOMRangeCollapsed)(o, l, s, c))
-          if ((0, p.hasDomParent)(o, t)) {
+        if (!(0, _.isDOMRangeCollapsed)(o, l, s, c))
+          if ((0, _.hasDomParent)(o, t)) {
             if (r) returntrue;
             n = true
           } else {
@@ -313,9 +313,9 @@ class N extends Chunk473749.PureComponent {
         let {
           default: e
         } = await n.e("41984").then(n.bind(n, 343602));
-        return n => (0, r.jsx)(e, S(I({}, n), {
+        return n => (0, r.jsx)(e, T(S({}, n), {
           editor: t,
-          text: m.bN.getSelectedText(t, true)
+          text: h.bN.getSelectedText(t, true)
         }))
       }, {
         align: o,
@@ -343,10 +343,10 @@ class N extends Chunk473749.PureComponent {
         decorate: u,
         channelId: d,
         guildId: f,
-        onChange: _,
-        onFocus: p,
-        onBlur: h,
-        onKeyDown: m,
+        onChange: p,
+        onFocus: _,
+        onBlur: m,
+        onKeyDown: h,
         onKeyUp: g,
         renderExtraElement: E,
         renderExtraLeaf: b
@@ -362,7 +362,7 @@ class N extends Chunk473749.PureComponent {
       }) : null, (0, Chunk54381.jsx)(Chunk685578.mH, {
         editor: exports,
         value: [...this.state.initialValue],
-        children: (0, Chunk54381.jsx)(Chunk685578.CX, S(I({}, v), {
+        children: (0, Chunk54381.jsx)(Chunk685578.CX, T(S({}, v), {
           className: o()(Chunk430864.markup, Chunk115488.editor, require),
           decorate: Chunk358085,
           renderElement: this.renderElement,
@@ -386,13 +386,13 @@ class N extends Chunk473749.PureComponent {
     })
   }
   constructor(e) {
-    super(e), v(this, "containerRef", i.createRef()), v(this, "state", true), this.renderElement = this.renderElement.bind(this), this.renderLeaf = this.renderLeaf.bind(this), this.handleOnChange = this.handleOnChange.bind(this), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleKeyUp = this.handleKeyUp.bind(this), this.handleBeforeInput = this.handleBeforeInput.bind(this), this.handleCompositionStart = this.handleCompositionStart.bind(this), this.handleCompositionEnd = this.handleCompositionEnd.bind(this), this.handleFocusCapture = this.handleFocusCapture.bind(this), this.handleBlurCapture = this.handleBlurCapture.bind(this), this.handleContextMenu = this.handleContextMenu.bind(this), this.handlePasteCapture = this.handlePasteCapture.bind(this), m.bN.isEditorEmpty(e.editor) ? this.state = {
+    super(e), v(this, "containerRef", i.createRef()), v(this, "state", true), this.renderElement = this.renderElement.bind(this), this.renderLeaf = this.renderLeaf.bind(this), this.handleOnChange = this.handleOnChange.bind(this), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleKeyUp = this.handleKeyUp.bind(this), this.handleBeforeInput = this.handleBeforeInput.bind(this), this.handleCompositionStart = this.handleCompositionStart.bind(this), this.handleCompositionEnd = this.handleCompositionEnd.bind(this), this.handleFocusCapture = this.handleFocusCapture.bind(this), this.handleBlurCapture = this.handleBlurCapture.bind(this), this.handleContextMenu = this.handleContextMenu.bind(this), this.handlePasteCapture = this.handlePasteCapture.bind(this), h.bN.isEditorEmpty(e.editor) ? this.state = {
       initialValue: (0, f.H2)().richValue,
       showPlaceholder: true
     } : this.state = {
-      initialValue: m.bN.richValue(e.editor),
+      initialValue: h.bN.richValue(e.editor),
       showPlaceholder: false
     }
   }
 }
-let R = N
+let P = N

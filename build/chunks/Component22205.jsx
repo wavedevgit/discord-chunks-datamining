@@ -2,7 +2,7 @@
 /** chunk id: 22205, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => j
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk534887 = require("./534887.js");
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,7 +40,7 @@ function P(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let D = o().throttle(() => {
+let w = o().throttle(() => {
     Chunk797614.Z.increment({
       name: Chunk286379.V.APP_CRASHED,
       tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
@@ -48,9 +48,9 @@ let D = o().throttle(() => {
   }, 100, {
     trailing: false
   }),
-  w = 10 * Chunk70956.Z.Millis.SECOND;
+  D = 10 * Chunk70956.Z.Millis.SECOND;
 
-function L(e) {
+function x(e) {
   var t, n;
   let {
     error: a,
@@ -58,35 +58,35 @@ function L(e) {
     onReload: l,
     onDisable: c,
     onCrashDisabled: u
-  } = e, _ = i.useMemo(() => new s.SpringValue(1), []), m = i.useRef(null), [g, y] = i.useState(false), [O, v] = i.useState(false), I = (0, d.e7)([E.default], () => E.default.getCurrentUser());
-  (0, h.ZP)(() => (m.current = setTimeout(P, w), p.Z.track(C.rMx.NOTIFICATION_VIEWED, {
+  } = e, p = i.useMemo(() => new s.SpringValue(1), []), h = i.useRef(null), [g, y] = i.useState(false), [O, v] = i.useState(false), S = (0, d.e7)([E.default], () => E.default.getCurrentUser());
+  (0, m.ZP)(() => (h.current = setTimeout(R, D), _.Z.track(C.rMx.NOTIFICATION_VIEWED, {
     notif_type: A.n0.OverlayCrashed
   }), () => {
-    null != m.current && clearTimeout(m.current)
+    null != h.current && clearTimeout(h.current)
   }));
-  let P = i.useCallback(() => {
-      _.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
-    }, [_, o, u]),
-    D = i.useCallback(e => {
-      O || (v(true), null == o || o(), p.Z.track(C.rMx.NOTIFICATION_CLICKED, {
+  let R = i.useCallback(() => {
+      p.set(0), null != h.current && clearTimeout(h.current), h.current = null, null == o || o(), null == u || u()
+    }, [p, o, u]),
+    w = i.useCallback(e => {
+      O || (v(true), null == o || o(), _.Z.track(C.rMx.NOTIFICATION_CLICKED, {
         notif_type: A.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => null == l ? true : l(), 200))
     }, [o, l, O]),
-    L = i.useCallback(e => {
-      e.stopPropagation(), e.shiftKey ? (y(true), null != m.current && clearTimeout(m.current)) : y(false)
-    }, [y]),
     x = i.useCallback(e => {
+      e.stopPropagation(), e.shiftKey ? (y(true), null != h.current && clearTimeout(h.current)) : y(false)
+    }, [y]),
+    L = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
-    M = (0, d.e7)([T.Z], () => T.Z.getFocusedRunningGame()),
-    k = g ? (0, r.jsxs)("div", {
+    j = (0, d.e7)([I.Z], () => I.Z.getFocusedRunningGame()),
+    M = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
         children: N.intl.string(N.t.mn4eXC)
       }), (0, r.jsxs)("div", {
-        className: R.stackTraceCode,
+        className: P.stackTraceCode,
         children: [(0, r.jsx)(f.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
@@ -95,7 +95,7 @@ function L(e) {
           variant: "text-xxs/normal",
           color: "text-secondary",
           children: (0, r.jsx)("code", {
-            className: R.code,
+            className: P.code,
             children: (0, r.jsx)("pre", {
               children: a.stack
             })
@@ -103,22 +103,22 @@ function L(e) {
         })]
       })]
     }) : null,
-    j = g ? null : N.intl.string(N.t.oEJEFq),
-    U = null != (t = null == I ? true : I.isStaff()) && t || null != (n = null == I ? true : I.isStaffPersonal()) && n;
-  return (0, r.jsx)(S.Y, {
+    k = g ? null : N.intl.string(N.t.oEJEFq),
+    U = null != (t = null == S ? true : S.isStaff()) && t || null != (n = null == S ? true : S.isStaffPersonal()) && n;
+  return (0, r.jsx)(T.Y, {
     title: N.intl.string(N.t.U38qZj),
-    body: k,
-    hint: U ? j : true,
+    body: M,
+    hint: U ? k : true,
     confirmText: N.intl.string(N.t.a3HlgJ),
-    cancelText: null != M ? N.intl.string(N.t.qIYnPo) : true,
+    cancelText: null != j ? N.intl.string(N.t.qIYnPo) : true,
     icon: (0, r.jsx)(b.Z, {
       width: 40,
       height: 40,
-      className: R.notificationIcon
+      className: P.notificationIcon
     }),
-    onNotificationClick: L,
-    onConfirmClick: D,
-    onCancelClick: null != M ? x : true,
+    onNotificationClick: x,
+    onConfirmClick: w,
+    onCancelClick: null != j ? L : true,
     onDismissClick: o,
     expand: true,
     locked: true,
@@ -126,34 +126,34 @@ function L(e) {
     index: 0,
     status: C._1z.ACTIVE,
     containerRef: null,
-    contentOpacity: _,
-    className: R.errorNotificationContainer,
-    wrapperClassName: R.errorNotificationWrapper
+    contentOpacity: p,
+    className: P.errorNotificationContainer,
+    wrapperClassName: P.errorNotificationWrapper
   })
 }
-class x extends Chunk473749.PureComponent {
+class L extends Chunk473749.PureComponent {
   componentDidCatch(e, t) {
     let n = (0, g.s1)().location;
     this.setState({
       error: e,
       info: t
     });
-    let r = T.Z.getTargetPID();
-    p.Z.setOverlayCrashed(r, e), p.Z.setInputLocked(true, r);
+    let r = I.Z.getTargetPID();
+    _.Z.setOverlayCrashed(r, e), _.Z.setInputLocked(true, r);
     let i = (0, O.V6)(e, v.gl.OutOfProcess, {
       extra: {
         info: t,
         location: n
       }
     });
-    p.Z.track(C.rMx.APP_CRASHED, {
+    _.Z.track(C.rMx.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,
       error_stack: e.stack,
       sentry_issue_id: i,
       error_level: "fatal"
-    }), D(), this.pid = r
+    }), w(), this.pid = r
   }
   render() {
     let {
@@ -165,7 +165,7 @@ class x extends Chunk473749.PureComponent {
     } = this.state;
     return null != require ? Chunk473749 ? (0, Chunk54381.jsx)(Chunk333031.Z, {
       className: Chunk534887.errorClickNotification,
-      children: (0, Chunk54381.jsx)(L, {
+      children: (0, Chunk54381.jsx)(x, {
         error: require,
         onLock: () => {
           var e;
@@ -197,11 +197,11 @@ class x extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), P(this, "state", {
+    super(...e), R(this, "state", {
       error: null,
       showError: true,
       info: null
-    }), P(this, "pid", null)
+    }), R(this, "pid", null)
   }
 }
-let M = x
+let j = L

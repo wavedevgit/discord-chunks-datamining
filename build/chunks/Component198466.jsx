@@ -2,8 +2,8 @@
 /** chunk id: 198466, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h,
-  m: () => p
+  Z: () => m,
+  m: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,23 +15,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk315824 = require("./315824.js");
 let d = 200,
   f = 20,
-  _ = 200;
+  p = 200;
 
-function p(e) {
+function _(e) {
   let {
     children: t,
     confettiTriggerRef: n,
     setConfettiCount: c,
     setShouldFireConfetti: f,
-    tooltipProps: p
-  } = e, [h, m] = i.useState(0), g = i.useRef(false), E = i.useRef(true), b = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), {
+    tooltipProps: _
+  } = e, [m, h] = i.useState(0), g = i.useRef(false), E = i.useRef(true), b = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), {
     scaleFactor: y
   } = (0, s.q_F)({
     from: {
       scaleFactor: 1
     },
     to: {
-      scaleFactor: 1 === h ? .9 : 2 === h ? 1.2 : 1
+      scaleFactor: 1 === m ? .9 : 2 === m ? 1.2 : 1
     },
     config: {
       tension: 380,
@@ -48,27 +48,27 @@ function p(e) {
     children: (0, r.jsx)(s.P3F, {
       className: u.confettiTrigger,
       onMouseDown: () => {
-        m(1), f(true), c(e => Math.min(e + 2, _)), window.clearTimeout(g.current), g.current = window.setTimeout(() => {
+        h(1), f(true), c(e => Math.min(e + 2, p)), window.clearTimeout(g.current), g.current = window.setTimeout(() => {
           E.current && c(0)
         }, d)
       },
       onMouseUp: () => {
-        m(0), f(false)
+        h(0), f(false)
       },
       onMouseEnter: () => {
         var e;
-        m(2), null == p || null == (e = p.onMouseEnter) || e.call(p)
+        h(2), null == _ || null == (e = _.onMouseEnter) || e.call(_)
       },
       onMouseLeave: () => {
         var e;
-        m(0), null == p || null == (e = p.onMouseLeave) || e.call(p)
+        h(0), null == _ || null == (e = _.onMouseLeave) || e.call(_)
       },
       innerRef: n,
       children: t
     })
   })
 }
-let h = function(e) {
+let m = function(e) {
   let {
     confettiCount: t,
     confettiTriggerRef: n,

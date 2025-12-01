@@ -26,12 +26,12 @@ function b(e) {
     channelId: t,
     option: n,
     keyboardModeEnabled: a
-  } = e, b = i.useRef(null), [y, O] = i.useState(false), v = f.Z.getUpload(t, n.name, d.d.SlashCommand), I = i.useRef(null), T = e => {
-    if (e.which === h.yXg.ENTER) {
+  } = e, b = i.useRef(null), [y, O] = i.useState(false), v = f.Z.getUpload(t, n.name, d.d.SlashCommand), S = i.useRef(null), I = e => {
+    if (e.which === m.yXg.ENTER) {
       var t;
       e.preventDefault(), null == (t = b.current) || t.activateUploadDialogue()
     }
-  }, S = i.useCallback(() => {
+  }, T = i.useCallback(() => {
     O(true)
   }, []), A = i.useCallback(() => {
     O(false)
@@ -53,11 +53,11 @@ function b(e) {
     })
   }, [t, n]);
   i.useEffect(() => {
-    let e = I.current;
-    return null == v && (null == e || e.addEventListener("dragover", S, false), null == e || e.addEventListener("dragleave", A, false), null == e || e.addEventListener("drop", C, false)), () => {
-      null == e || e.removeEventListener("dragover", S, false), null == e || e.removeEventListener("dragleave", A, false), null == e || e.removeEventListener("drop", C, false)
+    let e = S.current;
+    return null == v && (null == e || e.addEventListener("dragover", T, false), null == e || e.addEventListener("dragleave", A, false), null == e || e.addEventListener("drop", C, false)), () => {
+      null == e || e.removeEventListener("dragover", T, false), null == e || e.removeEventListener("dragleave", A, false), null == e || e.removeEventListener("drop", C, false)
     }
-  }, [v, S, A, C]);
+  }, [v, T, A, C]);
   let N = e => {
     var r, i;
     if (null != t && (null == (i = e.currentTarget) || null == (r = i.files) ? true : r[0]) != null) {
@@ -76,7 +76,7 @@ function b(e) {
       }), e.currentTarget.value = ""
     }
   };
-  return null != v ? (0, r.jsx)(p.Z, {
+  return null != v ? (0, r.jsx)(_.Z, {
     channelId: t,
     upload: v,
     keyboardModeEnabled: a,
@@ -94,16 +94,16 @@ function b(e) {
       })]
     }),
     canEdit: false
-  }) : (0, r.jsxs)(_.Z, {
+  }) : (0, r.jsxs)(p.Z, {
     id: n.name,
     channelId: t,
     keyboardModeEnabled: a,
-    onKeyDown: T,
+    onKeyDown: I,
     className: o()(g.emptyOption, {
       [g.emptyOptionActive]: y
     }),
     draftType: d.d.SlashCommand,
-    ref: I,
+    ref: S,
     children: [(0, r.jsx)("span", {
       className: o()(g.optionName, {
         [g.optionNameActive]: y
@@ -124,7 +124,7 @@ function b(e) {
         }), (0, r.jsx)(s.Text, {
           className: g.optionHelp,
           variant: "text-sm/normal",
-          children: m.intl.string(m.t.IJyOUf)
+          children: h.intl.string(h.t.IJyOUf)
         }), (0, r.jsx)(c.Z, {
           ref: b,
           onChange: N,

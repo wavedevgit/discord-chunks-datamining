@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk219855 = require("./219855.js"),
   Chunk325380 = require("./325380.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,14 +27,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -62,23 +62,23 @@ function b(e) {
   let {
     transitionState: n,
     animationVariant: a = "default",
-    size: _ = "md",
-    paddingSize: h = "sm",
+    size: p = "md",
+    paddingSize: m = "sm",
     fullScreenOnMobile: g = true,
     returnRef: b,
     role: y = "dialog",
     "aria-label": O,
     dismissable: v = true,
-    onClose: I,
-    contentOutsideContainer: T,
-    trackingProps: S,
+    onClose: S,
+    contentOutsideContainer: I,
+    trackingProps: T,
     children: A
   } = e, C = i.useId(), N = i.useMemo(() => ({
     id: C,
     headingId: "heading-".concat(C),
-    onClose: I,
+    onClose: S,
     dismissable: v
-  }), [v, C, I]), R = (0, f.hv)(n, a);
+  }), [v, C, S]), P = (0, f.hv)(n, a);
   return (0, r.jsx)(d.t.Provider, {
     value: N,
     children: (0, r.jsx)(c.V, {
@@ -87,19 +87,19 @@ function b(e) {
       "aria-label": O,
       "aria-labelledby": null != O ? true : N.headingId,
       returnRef: b,
-      trackingProps: E(m({}, S), {
-        impressionType: null != (t = null == S ? true : S.impressionType) ? t : l.ImpressionTypes.MODAL
+      trackingProps: E(h({}, T), {
+        impressionType: null != (t = null == T ? true : T.impressionType) ? t : l.ImpressionTypes.MODAL
       }),
       children: (0, r.jsx)(u.y, {
         forceLevel: 1,
         children: (0, r.jsxs)("div", {
-          className: o()(p.outerContainer, {
-            [p.fullScreenOnMobile]: g
+          className: o()(_.outerContainer, {
+            [_.fullScreenOnMobile]: g
           }),
-          children: [T, (0, r.jsx)(s.animated.div, {
+          children: [I, (0, r.jsx)(s.animated.div, {
             "data-mana-component": "modal",
-            className: o()(p.container, p["size-".concat(_)], p["padding-size-".concat(h)]),
-            style: R,
+            className: o()(_.container, _["size-".concat(p)], _["padding-size-".concat(m)]),
+            style: P,
             children: A
           })]
         })

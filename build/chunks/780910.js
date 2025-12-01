@@ -56,13 +56,13 @@ module.exports = function(e) {
         contains: ["self", a, s, o, c, u]
       }]
     },
-    _ = {
+    p = {
       className: "name",
       relevance: 0,
       begin: t,
       keywords: i
     },
-    p = {
+    _ = {
       variants: [{
         begin: "\\(",
         end: "\\)"
@@ -74,7 +74,7 @@ module.exports = function(e) {
         begin: /lambda/,
         endsWithParent: true,
         returnBegin: true,
-        contains: [_, {
+        contains: [p, {
           endsParent: true,
           variants: [{
             begin: /\(/,
@@ -85,12 +85,12 @@ module.exports = function(e) {
           }],
           contains: [c]
         }]
-      }, _, d]
+      }, p, d]
     };
-  return d.contains = [a, o, s, c, u, f, p].concat(l), {
+  return d.contains = [a, o, s, c, u, f, _].concat(l), {
     name: "Scheme",
     aliases: ["scm"],
     illegal: /\S/,
-    contains: [e.SHEBANG(), o, s, u, f, p].concat(l)
+    contains: [e.SHEBANG(), o, s, u, f, _].concat(l)
   }
 }

@@ -2,10 +2,10 @@
 /** chunk id: 388627, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E6: () => p,
-  HP: () => _,
-  II: () => m,
-  pL: () => h
+  E6: () => _,
+  HP: () => p,
+  II: () => h,
+  pL: () => m
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk902704 = require("./902704.js"),
@@ -26,7 +26,7 @@ function f() {
 }
 require("./340101.js"), require("./757744.js"), require("./501787.js");
 
-function _(e, t) {
+function p(e, t) {
   if (e === t) returntrue;
   if (e.length !== t.length) returnfalse;
   for (let n = 0; n < e.length; n++)
@@ -34,7 +34,7 @@ function _(e, t) {
   returntrue
 }
 
-function p(e, t) {
+function _(e, t) {
   if (e === t) returntrue;
   if (e.length !== t.length) returnfalse;
   for (let n = 0; n < e.length; n++)
@@ -42,21 +42,21 @@ function p(e, t) {
   returntrue
 }
 
-function h() {
+function m() {
   var e, t;
   let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk594190.ZP,
     r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk293273.Z,
     i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk317381.ZP,
     s = arguments.length > 3 && true !== arguments[3] ? arguments[3] : Chunk812206.Z,
     f = arguments.length > 4 && true !== arguments[4] ? arguments[4] : Chunk610394.Z,
-    _ = arguments.length > 5 && true !== arguments[5] ? arguments[5] : (0, Chunk850405.e)(),
-    p = Chunk902704.getCurrentEmbeddedActivity(),
-    h = null == p ? true : p.applicationId,
-    m = null == h ? true : Chunk426419.getApplication(h);
-  if (null != p && null != m && _) return {
-    id: p.applicationId,
+    p = arguments.length > 5 && true !== arguments[5] ? arguments[5] : (0, Chunk850405.e)(),
+    _ = Chunk902704.getCurrentEmbeddedActivity(),
+    m = null == _ ? true : _.applicationId,
+    h = null == m ? true : Chunk426419.getApplication(m);
+  if (null != _ && null != h && p) return {
+    id: _.applicationId,
     altId: true,
-    name: m.name
+    name: h.name
   };
   let g = f.getTargetPID(),
     E = require.getGameForPID(g),
@@ -68,7 +68,7 @@ function h() {
   }
 }
 
-function m() {
+function h() {
   let e = (0, Chunk426419.P)();
-  return (0, Chunk442837.e7)([Chunk594190.ZP, Chunk293273.Z, Chunk317381.ZP, Chunk812206.Z, Chunk610394.Z], () => h(Chunk594190.ZP, Chunk293273.Z, Chunk317381.ZP, Chunk812206.Z, Chunk610394.Z, module), [module], Chunk902704.Z)
+  return (0, Chunk442837.e7)([Chunk594190.ZP, Chunk293273.Z, Chunk317381.ZP, Chunk812206.Z, Chunk610394.Z], () => m(Chunk594190.ZP, Chunk293273.Z, Chunk317381.ZP, Chunk812206.Z, Chunk610394.Z, module), [module], Chunk902704.Z)
 }

@@ -2,7 +2,7 @@
 /** chunk id: 678869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => L
 }), require("./804061.js"), require("./704826.js"), require("./35282.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,17 +33,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk119835 = require("./119835.js"),
   Chunk951948 = require("./951948.js");
 
-function D(e, t) {
+function w(e, t) {
   return N.intl.formatToPlainString(N.t.h2yWWX, {
     username: t.username,
     activity: e
   })
 }
-let w = (e, t, n) => {
+let D = (e, t, n) => {
   let {
     artist: r,
     media: i
-  } = e, a = N.t["6iNxrl"], o = m.ZP.getName(t.guild_id, t.id, n);
+  } = e, a = N.t["6iNxrl"], o = h.ZP.getName(t.guild_id, t.id, n);
   return N.intl.formatToMarkdownString(a, {
     artist: r,
     userName: o,
@@ -51,12 +51,12 @@ let w = (e, t, n) => {
   }).replaceAll("*", "")
 };
 
-function L(e) {
+function x(e) {
   let {
     activity: t
   } = e, n = t.timestamps, {
     now: a
-  } = (0, T.tS)(), {
+  } = (0, I.tS)(), {
     durationTimestamp: o,
     seekBarStyles: s
   } = i.useMemo(() => {
@@ -79,17 +79,17 @@ function L(e) {
     }
   }, [t, a]);
   return null == s ? null : (0, r.jsxs)("div", {
-    className: R.listeningTimeline,
-    children: [(0, r.jsx)(T.x3, {
+    className: P.listeningTimeline,
+    children: [(0, r.jsx)(I.x3, {
       entry: n
     }), (0, r.jsx)("div", {
-      className: R.seekBarContainer,
+      className: P.seekBarContainer,
       children: (0, r.jsx)("div", {
-        className: R.seekBarFill,
+        className: P.seekBarFill,
         style: s
       })
     }), (0, r.jsx)(l.Text, {
-      className: R.timestamp,
+      className: P.timestamp,
       variant: "text-xs/normal",
       tabularNumbers: true,
       color: true,
@@ -98,80 +98,80 @@ function L(e) {
   })
 }
 
-function x(e) {
+function L(e) {
   var t;
-  let n, m, T, {
-      channel: R,
-      entry: x,
-      closePopout: M,
-      onReaction: k,
-      onVoiceChannelPreview: j
+  let n, h, I, {
+      channel: P,
+      entry: L,
+      closePopout: j,
+      onReaction: M,
+      onVoiceChannelPreview: k
     } = e,
     {
       largeImage: U
     } = (0, g.rv)({
-      entry: x
+      entry: L
     }),
     {
       activity: G,
-      currentEntry: B,
-      artist: Z,
+      currentEntry: Z,
+      artist: B,
       title: F,
       user: V
-    } = (0, v.pi)(x),
+    } = (0, v.pi)(L),
     {
       primaryColor: H,
-      secondaryColor: W
+      secondaryColor: Y
     } = (0, O.Z)(null == U ? true : U.src),
-    Y = (0, y.Z)(A.ABu.SPOTIFY),
-    K = (0, o.e7)([u.Z, p.default], () => (null == G ? true : G.type) === A.IIU.LISTENING && null != V ? (0, f.Z)(u.Z, p.default, V, G) : true, [G, V], s.Z),
+    W = (0, y.Z)(A.ABu.SPOTIFY),
+    K = (0, o.e7)([u.Z, _.default], () => (null == G ? true : G.type) === A.IIU.LISTENING && null != V ? (0, f.Z)(u.Z, _.default, V, G) : true, [G, V], s.Z),
     z = i.useCallback(() => {
       var e;
-      if (null == R || null == V) return;
+      if (null == P || null == V) return;
       let t = null == (e = G.timestamps) ? true : e.start,
         n = (0, E.T_)(null != t ? {
           start: t
-        } : x, Date.now());
+        } : L, Date.now());
       return (0, b.CR)({
         user: V,
-        channel: R,
+        channel: P,
         mediaImageSrc: null == U ? true : U.src,
-        artist: Z,
-        description: w({
-          artist: Z,
+        artist: B,
+        description: D({
+          artist: B,
           media: F
-        }, R, V),
-        colors: [H, W],
+        }, P, V),
+        colors: [H, Y],
         badges: (0, b.jE)({
           timestamp: n
         })
       })
-    }, [G, Z, R, x, null == U ? true : U.src, H, W, F, V]);
-  if (null == G || null == B) return null;
-  let q = Z,
-    X = [];
-  if (B.media.provider === a.p.SPOTIFY) {
-    m = () => {
+    }, [G, B, P, L, null == U ? true : U.src, H, Y, F, V]);
+  if (null == G || null == Z) return null;
+  let q = B,
+    Q = [];
+  if (Z.media.provider === a.p.SPOTIFY) {
+    h = () => {
       (0, c.aG)(G)
-    }, T = () => {
+    }, I = () => {
       (0, c.Z5)(G, V.id)
     }, n = () => {
       var e;
-      null != (e = null == Y ? true : Y()) || (0, c.aG)(G)
+      null != (e = null == W ? true : W()) || (0, c.aG)(G)
     };
     let e = e => {
       (0, c.d$)(G, V.id, e)
     };
     if (q = (0, r.jsx)(d.Z, {
-        artists: Z,
+        artists: B,
         canOpen: null != G.sync_id,
-        linkClassName: P.popoutTextSecondary,
+        linkClassName: R.popoutTextSecondary,
         onOpenSpotifyArtist: e
       }), (null == K ? true : K.syncDisabled) === false) {
       let e = () => {
-        (0, _.Z)(K, C.kG.USER_ACTIVITY_SYNC), M()
+        (0, p.Z)(K, C.kG.USER_ACTIVITY_SYNC), j()
       };
-      X.push((0, r.jsx)(l.Button, {
+      Q.push((0, r.jsx)(l.Button, {
         variant: "primary",
         size: "md",
         fullWidth: true,
@@ -181,35 +181,35 @@ function x(e) {
       }, "listen-along"))
     }
   }
-  let Q = (0, r.jsx)(I.wG, {
-    onClickThumbnail: T,
-    channel: R,
-    entry: x,
-    headerIcons: B.media.provider === a.p.SPOTIFY ? (0, r.jsx)(S.Z, {
+  let X = (0, r.jsx)(S.wG, {
+    onClickThumbnail: I,
+    channel: P,
+    entry: L,
+    headerIcons: Z.media.provider === a.p.SPOTIFY ? (0, r.jsx)(T.Z, {
       onClick: n,
       "aria-label": N.intl.string(N.t.rRffNz),
-      Icon: h.Z
+      Icon: m.Z
     }) : null,
-    userDescription: (0, E.kr)(x) ? N.t.Tzx5D2 : N.t.CcVI1T,
+    userDescription: (0, E.kr)(L) ? N.t.Tzx5D2 : N.t.CcVI1T,
     title: F,
-    onClickTitle: m,
+    onClickTitle: h,
     subtitle: q,
     badges: null,
-    children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(L, {
+    children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(x, {
       activity: G
     })
   });
-  return (0, r.jsxs)(I.yR, {
-    children: [Q, (0, r.jsx)(I.St, {
-      children: (0, r.jsx)(I.WT, {
-        onReaction: k,
-        onVoiceChannelPreview: j,
+  return (0, r.jsxs)(S.yR, {
+    children: [X, (0, r.jsx)(S.St, {
+      children: (0, r.jsx)(S.WT, {
+        onReaction: M,
+        onVoiceChannelPreview: k,
         user: V,
-        channel: R,
+        channel: P,
         generateReactionImage: z,
-        reactionImageAltText: D(Z, V),
-        entry: x,
-        buttons: X
+        reactionImageAltText: w(B, V),
+        entry: L,
+        buttons: Q
       })
     })]
   })

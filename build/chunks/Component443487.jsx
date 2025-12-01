@@ -6,9 +6,9 @@ require.d(exports, {
   Zb: () => b,
   cA: () => E,
   e$: () => y,
-  lS: () => T,
-  ll: () => I,
-  xx: () => S
+  lS: () => I,
+  ll: () => S,
+  xx: () => T
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -96,20 +96,20 @@ function v(e) {
     channelId: i,
     entry: a,
     maxAvatars: l = 3
-  } = e, E = a.author_id, b = (0, o.e7)([_.default], () => _.default.getUser(E)), {
+  } = e, E = a.author_id, b = (0, o.e7)([p.default], () => p.default.getUser(E)), {
     displayParticipants: y,
     participant1: v,
-    participant2: I,
-    numOtherParticipants: T
-  } = (0, h.Z)(a, l), S = (0, o.e7)([d.ZP], () => d.ZP.getMember(n, E)), A = (0, c.j)({
+    participant2: S,
+    numOtherParticipants: I
+  } = (0, m.Z)(a, l), T = (0, o.e7)([d.ZP], () => d.ZP.getMember(n, E)), A = (0, c.j)({
     displayNameStyles: null == b ? true : b.displayNameStyles
   }), C = (0, o.e7)([f.Z], () => {
     var e;
-    return (null == S ? true : S.colorRoleId) != null ? null == (e = f.Z.getRole(n, S.colorRoleId)) ? true : e.name : true
-  }, [n, S]), N = (0, u.X7)(n, E, null != (t = null == S ? true : S.colorStrings) ? t : null);
+    return (null == T ? true : T.colorRoleId) != null ? null == (e = f.Z.getRole(n, T.colorRoleId)) ? true : e.name : true
+  }, [n, T]), N = (0, u.X7)(n, E, null != (t = null == T ? true : T.colorStrings) ? t : null);
   if (null == b) return null;
-  let R = null == S ? true : S.colorString,
-    P = p.ZP.getName(n, i, b);
+  let P = null == T ? true : T.colorString,
+    R = _.ZP.getName(n, i, b);
   return (0, r.jsxs)("div", {
     className: g.userSection,
     children: [(0, r.jsx)(O, {
@@ -117,27 +117,27 @@ function v(e) {
       guildId: n,
       "aria-hidden": true
     }), (0, r.jsx)(s.PUh, {
-      colorString: null != R ? R : null,
+      colorString: null != P ? P : null,
       roleName: C,
       colorStrings: N,
-      name: P,
+      name: R,
       className: g.userName,
       displayNameStylesFont: A,
       "aria-hidden": true
-    }), T > 0 ? (0, r.jsx)("div", {
+    }), I > 0 ? (0, r.jsx)("div", {
       className: g.additionalParticipantBadge,
       "aria-hidden": true,
       children: (0, r.jsxs)(s.Text, {
         variant: "text-xxs/medium",
         color: "text-default",
         className: g.additionalParticipantBadgeText,
-        children: ["+", T]
+        children: ["+", I]
       })
     }) : null, (0, r.jsx)(s.nn4, {
-      children: m.intl.format(m.t.rH95Gu, {
-        user0: p.ZP.getName(n, i, v),
-        user1: p.ZP.getName(n, i, I),
-        countOthers: T,
+      children: h.intl.format(h.t.rH95Gu, {
+        user0: _.ZP.getName(n, i, v),
+        user1: _.ZP.getName(n, i, S),
+        countOthers: I,
         name0Hook: (e, t) => (0, r.jsx)("span", {
           children: e
         }, t),
@@ -152,7 +152,7 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     children: t
   } = e;
@@ -165,7 +165,7 @@ function I(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     children: t,
     className: n
@@ -176,7 +176,7 @@ function T(e) {
   })
 }
 
-function S() {
+function T() {
   return (0, Chunk54381.jsx)("div", {
     className: Chunk451419.divider
   })

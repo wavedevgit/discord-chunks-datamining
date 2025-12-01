@@ -28,63 +28,63 @@ function y(e) {
     application: n,
     sectionName: y,
     primaryEntryPointCommand: O
-  } = e, v = i.useId(), I = i.useCallback(() => {
-    d.y(_.ti.ACTIVITY)
-  }, []), T = i.useCallback(() => {
-    f.Z.shouldShowModal() && I()
-  }, [I]), {
-    submitting: S,
+  } = e, v = i.useId(), S = i.useCallback(() => {
+    d.y(p.ti.ACTIVITY)
+  }, []), I = i.useCallback(() => {
+    f.Z.shouldShowModal() && S()
+  }, [S]), {
+    submitting: T,
     wasSubmitting: A
-  } = (0, m.Z)({
+  } = (0, h.Z)({
     applicationId: n.id,
     context: t,
     launchingComponentId: v,
-    onSubmissionComplete: I
-  }), [C, N] = i.useState(false), R = (0, s.Qv)({
+    onSubmissionComplete: S
+  }), [C, N] = i.useState(false), P = (0, s.Qv)({
     applicationId: n.id,
     context: t
-  }), P = i.useMemo(() => (0, h.XZ)(O.displayName), [O.displayName]), {
-    onActivityItemSelected: D,
-    buttonVariant: w,
-    buttonText: L
+  }), R = i.useMemo(() => (0, m.XZ)(O.displayName), [O.displayName]), {
+    onActivityItemSelected: w,
+    buttonVariant: D,
+    buttonText: x
   } = (0, g.P7)({
     context: t,
     application: n,
     location: l.Vh.APP_LAUNCHER_APPLICATION_VIEW,
     sectionName: y,
-    commandName: P,
-    autoDismissOnClick: R === s.JS.LEAVE || (0, c.g)(n),
+    commandName: R,
+    autoDismissOnClick: P === s.JS.LEAVE || (0, c.g)(n),
     launchingComponentId: v,
-    submitting: null != A ? A : S,
-    onConfirmActivityLaunchChecksAlertOpen: T
+    submitting: null != A ? A : T,
+    onConfirmActivityLaunchChecksAlertOpen: I
   }), {
-    disabled: x,
-    reason: M
-  } = (0, p.Z)({
+    disabled: L,
+    reason: j
+  } = (0, _.Z)({
     context: t,
     application: n,
-    activityAction: R
+    activityAction: P
   });
   return (0, r.jsx)(a.u, {
-    shouldShow: null != M,
-    __unsupportedReactNodeAsText: M,
+    shouldShow: null != j,
+    __unsupportedReactNodeAsText: j,
     children: (0, r.jsx)(o.Button, {
       type: "submit",
       size: "md",
-      variant: w,
-      disabled: x,
+      variant: D,
+      disabled: L,
       loading: C,
       onClick: () => {
-        N(true), D(), u.default.track(E.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+        N(true), w(), u.default.track(E.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
           application_id: n.id,
-          button_action: _._y.USE_APP_COMMAND
+          button_action: p._y.USE_APP_COMMAND
         })
       },
       "aria-label": b.intl.formatToPlainString(b.t["XjP/R+"], {
-        buttonText: L,
+        buttonText: x,
         applicationName: n.name
       }),
-      text: L
+      text: x
     })
   })
 }

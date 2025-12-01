@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,27 +45,27 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = {},
-  m = (0, Chunk358085.isWindows)() ? "".concat(Chunk579806.Z.process.env.LOCALAPPDATA, "\\DiscordGames") : (0, Chunk358085.isMac)() ? "/Applications/DiscordGames" : "/tmp";
+let m = {},
+  h = (0, Chunk358085.isWindows)() ? "".concat(Chunk579806.Z.process.env.LOCALAPPDATA, "\\DiscordGames") : (0, Chunk358085.isMac)() ? "/Applications/DiscordGames" : "/tmp";
 
 function g(e, t) {
   var n;
-  h = p(f({}, h), {
-    [e]: f({}, null != (n = h[e]) ? n : {}, t)
+  m = _(f({}, m), {
+    [e]: f({}, null != (n = m[e]) ? n : {}, t)
   })
 }
 
 function E(e) {
-  h = f({}, h), delete h[e]
+  m = f({}, m), delete m[e]
 }
 
 function b(e, t) {
-  r.pathLabels = p(f({}, r.pathLabels), {
+  r.pathLabels = _(f({}, r.pathLabels), {
     [e]: t
   })
 }
@@ -83,7 +83,7 @@ function O(e) {
   } = e;
   null == r.installations[t] && (r.installations[t] = {}), r.installations[t][n] = {
     installationPath: i
-  }, r.installationPaths.has(i) || T({
+  }, r.installationPaths.has(i) || I({
     path: i,
     metadata: {}
   })
@@ -94,13 +94,13 @@ function v(e) {
     applicationId: t,
     branchId: n
   } = e, r = c.Z.getState(t, n);
-  null != r && null == r.buildId && null == r.manifestIds && I({
+  null != r && null == r.buildId && null == r.manifestIds && S({
     applicationId: t,
     branchId: n
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     applicationId: t,
     branchId: n
@@ -109,14 +109,14 @@ function I(e) {
   delete r.installations[t][n], 0 === Object.keys(r.installations[t]).length && delete r.installations[t]
 }
 
-function T(e) {
+function I(e) {
   if (r.installationPaths.has(e.path)) returnfalse;
   g(e.path, e.metadata);
   let t = new Set(r.installationPaths);
   t.add(e.path), r.installationPaths = t
 }
 
-function S(e) {
+function T(e) {
   let {
     path: t
   } = e;
@@ -144,7 +144,7 @@ function C(e) {
 class N extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     let t = f({}, e);
-    null == t.installations && (t.installations = {}), null == t.defaultInstallationPath && (t.defaultInstallationPath = m), null == t.installationPaths ? t.installationPaths = new Set([t.defaultInstallationPath]) : t.installationPaths = new Set(Array.from(t.installationPaths)), null == t.pathLabels && (t.pathLabels = {}), r = t
+    null == t.installations && (t.installations = {}), null == t.defaultInstallationPath && (t.defaultInstallationPath = h), null == t.installationPaths ? t.installationPaths = new Set([t.defaultInstallationPath]) : t.installationPaths = new Set(Array.from(t.installationPaths)), null == t.pathLabels && (t.pathLabels = {}), r = t
   }
   getState() {
     return r
@@ -159,7 +159,7 @@ class N extends(i = Chunk442837.ZP.PersistedStore) {
     }))
   }
   get installationPathsMetadata() {
-    return h
+    return m
   }
   hasGamesInstalledInPath(e) {
     let {
@@ -178,16 +178,16 @@ class N extends(i = Chunk442837.ZP.PersistedStore) {
   }
   getLabelFromPath(e) {
     var t, n;
-    return e === m ? u.intl.string(u.t.VdDrjm) : null != (n = null != (t = s.Z.fileManager.basename(e)) ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(false)[0]) ? n : "?"
+    return e === h ? u.intl.string(u.t.VdDrjm) : null != (n = null != (t = s.Z.fileManager.basename(e)) ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(false)[0]) ? n : "?"
   }
 }
 d(N, "displayName", "InstallationManagerStore"), d(N, "persistKey", "InstallationManagerStore");
-let R = new N(Chunk570140.Z, {
+let P = new N(Chunk570140.Z, {
   DISPATCH_APPLICATION_INSTALL: O,
-  DISPATCH_APPLICATION_UNINSTALL: I,
+  DISPATCH_APPLICATION_UNINSTALL: S,
   DISPATCH_APPLICATION_CANCEL: v,
-  INSTALLATION_LOCATION_ADD: T,
-  INSTALLATION_LOCATION_REMOVE: S,
+  INSTALLATION_LOCATION_ADD: I,
+  INSTALLATION_LOCATION_REMOVE: T,
   INSTALLATION_LOCATION_UPDATE: A,
   INSTALLATION_LOCATION_FETCH_METADATA: C,
   DISPATCH_APPLICATION_ADD_TO_INSTALLATIONS: O

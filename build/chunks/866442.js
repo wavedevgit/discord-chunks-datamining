@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   Bd: () => f,
-  FX: () => _,
+  FX: () => p,
   O: () => l,
   Rf: () => s,
   _i: () => o,
   br: () => d,
   ho: () => c,
-  mj: () => m,
+  mj: () => h,
   wK: () => u
 }), require("./35282.js");
 var Chunk688619 = require("./688619.js"),
@@ -87,23 +87,23 @@ function f(e) {
   return 1 - (.299 * (e >> 16 & 255) + .587 * (e >> 8 & 255) + .114 * (255 & e)) / 255
 }
 
-function _(e) {
+function p(e) {
   return i().valid(e)
 }
 
-function p(e) {
+function _(e) {
   return [e >> 16 & 255, e >> 8 & 255, 255 & e]
 }
 
-function h(e, t, n) {
+function m(e, t, n) {
   var r = [e, t, n].map(e => (e /= 255) <= .03928 ? e / 12.92 : Math.pow((e + .055) / 1.055, 2.4));
   return .2126 * r[0] + .7152 * r[1] + .0722 * r[2]
 }
 
-function m(e, t) {
-  let n = p(e),
-    r = p(t);
-  var i = h(n[0], n[1], n[2]),
-    a = h(r[0], r[1], r[2]);
+function h(e, t) {
+  let n = _(e),
+    r = _(t);
+  var i = m(n[0], n[1], n[2]),
+    a = m(r[0], r[1], r[2]);
   return (Math.max(i, a) + .05) / (Math.min(i, a) + .05)
 }

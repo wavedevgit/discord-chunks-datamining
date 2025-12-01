@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   U4: () => u,
-  hm: () => m,
-  py: () => h
+  hm: () => h,
+  py: () => m
 }), require("./388685.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -50,14 +50,14 @@ function d(e, t) {
     else break;
   let o = r.substring(i, a),
     c = {};
-  return _({
+  return p({
     result: c,
     text: o,
     startIndex: i,
     syntax: "***",
     type1: "italics",
     type2: "bold"
-  }), _({
+  }), p({
     result: c,
     text: o,
     startIndex: i,
@@ -68,14 +68,14 @@ function d(e, t) {
 }
 
 function f(e, t, n, r, i) {
-  let a = p(t, r);
+  let a = _(t, r);
   a >= 0 && (e[i] = {
     chars: r,
     location: n + a
   })
 }
 
-function _(e) {
+function p(e) {
   let {
     result: t,
     text: n,
@@ -83,7 +83,7 @@ function _(e) {
     syntax: i,
     type1: a,
     type2: o
-  } = e, s = p(n, i);
+  } = e, s = _(n, i);
   s >= 0 && (t[a] = {
     chars: i.substring(0, 1),
     location: s + r
@@ -93,7 +93,7 @@ function _(e) {
   })
 }
 
-function p(e, t) {
+function _(e, t) {
   let n = e.indexOf(t);
   if (n >= 0) {
     let r = t.charAt(0);
@@ -102,13 +102,13 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
+function m(e, t) {
   a.T.withSingleEntry(e, () => {
     s.bN.withoutNormalizing(e, () => {
       i()(null != e.selection, "Editor has no selection");
-      let [n, r] = s.M8.edges(e.selection), a = u(e, n, r), l = a.before[t], d = a.after[t], f = s.bN.node(e, n.path), _ = s.bN.node(e, r.path);
-      if (null == f || null == _ || !s.LC.isText(f[0]) || !s.LC.isText(_[0])) return;
-      let p = s.C0.equals(f[1], _[1]);
+      let [n, r] = s.M8.edges(e.selection), a = u(e, n, r), l = a.before[t], d = a.after[t], f = s.bN.node(e, n.path), p = s.bN.node(e, r.path);
+      if (null == f || null == p || !s.LC.isText(f[0]) || !s.LC.isText(p[0])) return;
+      let _ = s.C0.equals(f[1], p[1]);
       if (null != l && null != d) {
         let t = {
             path: n.path,
@@ -127,7 +127,7 @@ function h(e, t) {
         });
         let a = n.offset,
           c = r.offset;
-        s.Jz.isBefore(n, t) || (a -= l.chars.length), p && !s.Jz.isBefore(r, t) && (c -= l.chars.length), s.Jz.isAfter(r, i) && (c -= d.chars.length), o.Q.select(e, {
+        s.Jz.isBefore(n, t) || (a -= l.chars.length), _ && !s.Jz.isBefore(r, t) && (c -= l.chars.length), s.Jz.isAfter(r, i) && (c -= d.chars.length), o.Q.select(e, {
           anchor: {
             path: n.path,
             offset: Math.max(0, a)
@@ -145,7 +145,7 @@ function h(e, t) {
           at: n
         });
         let a = f[0].text.length + i.length,
-          s = _[0].text.length + (p ? 2 * i.length : i.length);
+          s = p[0].text.length + (_ ? 2 * i.length : i.length);
         o.Q.select(e, {
           anchor: {
             path: n.path,
@@ -153,7 +153,7 @@ function h(e, t) {
           },
           focus: {
             path: r.path,
-            offset: Math.min(s, r.offset + (p ? i.length : 0))
+            offset: Math.min(s, r.offset + (_ ? i.length : 0))
           }
         })
       }
@@ -161,7 +161,7 @@ function h(e, t) {
   }), s.bN.focus(e)
 }
 
-function m(e, t) {
+function h(e, t) {
   let n = e.selection;
   if (null == n) return;
   let r = true;

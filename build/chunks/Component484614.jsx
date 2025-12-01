@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,13 +45,13 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = 1e3;
-class m extends(r = Chunk473749.PureComponent) {
+let m = 1e3;
+class h extends(r = Chunk473749.PureComponent) {
   componentWillUnmount() {
     this._timeout.stop()
   }
@@ -61,7 +61,7 @@ class m extends(r = Chunk473749.PureComponent) {
     } = this.props, {
       mode: t
     } = this.state, n = exports === Chunk481060.kO8.Modes.SUCCESS ? Chunk388032.intl.string(Chunk388032.t.t5VZ88) : module;
-    return (0, Chunk54381.jsx)(Chunk481060.kO8, p(f({}, this.props), {
+    return (0, Chunk54381.jsx)(Chunk481060.kO8, _(f({}, this.props), {
       onCopy: this.handleCopy,
       mode: exports,
       text: require,
@@ -71,7 +71,7 @@ class m extends(r = Chunk473749.PureComponent) {
   handleCopy(e) {
     let {
       onCopy: t,
-      delay: n = h
+      delay: n = m
     } = this.props;
     (0, c.JG)(e, () => this.setState({
       mode: l.kO8.Modes.SUCCESS
@@ -97,7 +97,7 @@ class m extends(r = Chunk473749.PureComponent) {
     }, this._timeout = new o.V7, this.handleCopy = this.handleCopy.bind(this)
   }
 }
-d(m, "defaultProps", {
-  delay: h
+d(h, "defaultProps", {
+  delay: m
 });
-let g = m
+let g = h

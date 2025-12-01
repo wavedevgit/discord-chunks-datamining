@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk828700 = require("./828700.js"),
   Chunk442837 = require("./442837.js"),
   Chunk316792 = require("./316792.js"),
-  Chunk168551 = require("./168551.js"),
+  Chunk999203 = require("./999203.js"),
   Chunk19759 = require("./19759.js"),
   Chunk522474 = require("./522474.js"),
   Chunk892071 = require("./892071.jsx"),
@@ -27,9 +27,9 @@ function b(e) {
     lang: t,
     style: n,
     className: a
-  } = (0, p.vP)(), s = (0, l.TH)(), u = i.useMemo(() => E.has(s.pathname), [s.pathname]);
-  (0, m.Z)(window, u);
-  let d = (0, c.e7)([f.Z, _.Z], () => _.Z.getWindowOpen(g.KJ3.DEVTOOLS_POPOUT) ? 0 : f.Z.sidebarWidth);
+  } = (0, _.vP)(), s = (0, l.TH)(), u = i.useMemo(() => E.has(s.pathname), [s.pathname]);
+  (0, h.Z)(window, u);
+  let d = (0, c.e7)([f.Z, p.Z], () => p.Z.getWindowOpen(g.KJ3.DEVTOOLS_POPOUT) ? 0 : f.Z.sidebarWidth);
   return (0, r.jsx)("html", {
     lang: t,
     style: "".concat(n, " --devtools-sidebar-width: ").concat(d, "px;"),
@@ -64,7 +64,7 @@ function O(e) {
     children: t,
     skipsSettingDefaultPageTitle: n
   } = e;
-  (0, h.ZD)({
+  (0, m.ZD)({
     skipsSettingDefaultPageTitle: n
   });
   let {

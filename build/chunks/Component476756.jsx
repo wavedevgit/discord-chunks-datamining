@@ -2,7 +2,7 @@
 /** chunk id: 476756, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,7 +16,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk871465 = require("./871465.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _() {
+function p() {
   let e = (0, Chunk442837.e7)([Chunk474873.Z], () => Chunk474873.Z.getSoundpack()),
     t = Chunk197344.Z.useHolidaySoundpack();
   a()(null != exports, "should not render this without a holiday soundpack");

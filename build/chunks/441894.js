@@ -18,7 +18,7 @@ function c(e) {
     if (null == e || r.getChannelId() !== e) returnfalse;
     let c = n.getChannel(e);
     if (null == c || c.isGuildStageVoice()) returnfalse;
-    let a = null == (t = r.getSecureFramesState()) ? true : t.version;
-    return null != a && a !== i.Eg
+    let o = null == (t = r.getSecureFramesState()) ? true : t.version;
+    return null != o && o !== i.Eg
   })(t, [u.Z, l.Z]), [t])
 }

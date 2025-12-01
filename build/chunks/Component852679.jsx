@@ -2,7 +2,7 @@
 /** chunk id: 852679, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,23 +15,23 @@ var Chunk481060 = require("./481060.js"),
   Chunk74538 = require("./74538.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = "guild-boost-purchase-modal";
-async function p(e) {
+let p = "guild-boost-purchase-modal";
+async function _(e) {
   let {
     analyticsLocations: t,
-    analyticsLocation: p,
-    analyticsSourceLocation: h,
-    guildId: m,
+    analyticsLocation: _,
+    analyticsSourceLocation: m,
+    guildId: h,
     closeLayer: g,
     onCloseModal: E,
     totalNumberOfSlotsToAssign: b = 1,
     disablePremiumUpsell: y,
     onSubscribeComplete: O,
     onSubscriptionConfirmation: v,
-    inPopout: I,
-    applicationId: T,
-    intent: S
-  } = e, A = I ? i.u1M : i.z1l, C = l.Z.getPremiumTypeSubscription();
+    inPopout: S,
+    applicationId: I,
+    intent: T
+  } = e, A = S ? i.u1M : i.z1l, C = l.Z.getPremiumTypeSubscription();
   if (null != C && C.isPurchasedExternally && null != C.paymentGateway) {
     null != g && g(), a.Z.show({
       title: f.intl.formatToPlainString(f.t["rTk9v/"], {
@@ -48,7 +48,7 @@ async function p(e) {
   let N = () => {
     c.default.track(d.rMx.MODAL_DISMISSED, {
       type: d.jXE.PREMIUM_GUILD_PURCHASE_MODAL,
-      location: p
+      location: _
     })
   };
   await (0, i.ZDy)(async () => {
@@ -66,23 +66,23 @@ async function p(e) {
           a(), null == E || E(e)
         },
         analyticsLocations: t,
-        analyticsLocation: p,
-        analyticsSourceLocation: null != h ? h : p,
-        guildId: m,
+        analyticsLocation: _,
+        analyticsSourceLocation: null != m ? m : _,
+        guildId: h,
         totalNumberOfSlotsToAssign: b,
         closeGuildPerksModal: g,
         disablePremiumUpsell: y,
         onSubscriptionConfirmation: v,
         onSubscribeComplete: O,
-        applicationId: T,
-        intent: S
+        applicationId: I,
+        intent: T
       })
     }
   }, {
-    modalKey: _,
+    modalKey: p,
     onCloseCallback: N,
     onCloseRequest: () => {
-      (0, i.Mr3)(_), null == E || E(false)
+      (0, i.Mr3)(p), null == E || E(false)
     },
     contextKey: A
   })

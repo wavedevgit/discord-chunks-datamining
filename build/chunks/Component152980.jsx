@@ -7,11 +7,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
+  Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk205822 = require("./205822.jsx"),
   Chunk476326 = require("./476326.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk313201 = require("./313201.js"),
   Chunk374794 = require("./374794.jsx"),
   Chunk587123 = require("./587123.jsx"),
@@ -27,11 +27,11 @@ function C(e) {
   let {
     upload: A,
     progress: a = 0,
-    onDeleteAttachment: s
-  } = e, d = r.useCallback(() => {
-    null == s || s(A.id)
-  }, [s, A.id]), c = a >= 1, g = a < 0, f = c || g, m = null != (t = A.filename) ? t : A.id, h = (0, p.kg)(a);
-  return (0, n.jsx)(l.u, {
+    onDeleteAttachment: d
+  } = e, u = r.useCallback(() => {
+    null == d || d(A.id)
+  }, [d, A.id]), c = a >= 1, g = a < 0, f = c || g, m = null != (t = A.filename) ? t : A.id, h = (0, p.kg)(a);
+  return (0, n.jsx)(o.u, {
     asContainer: true,
     text: h,
     children: (0, n.jsxs)("div", {
@@ -39,26 +39,26 @@ function C(e) {
         [q.attachedFileCardError]: g,
         [q.attachedFileCardUploading]: !f
       }),
-      children: [(0, n.jsx)(o.ZKT, {
+      children: [(0, n.jsx)(s.ZKT, {
         size: "xs",
-        color: u.Z.INTERACTIVE_MUTED
-      }), (0, n.jsx)(o.LZC, {
+        color: l.Z.colors.INTERACTIVE_MUTED.css
+      }), (0, n.jsx)(s.LZC, {
         size: 10,
         horizontal: true
-      }), (0, n.jsx)(o.Text, {
+      }), (0, n.jsx)(s.Text, {
         variant: "text-sm/normal",
         children: m
-      }), !f && (0, n.jsx)(o.$jN, {
+      }), !f && (0, n.jsx)(s.$jN, {
         className: q.attachedFileCardSpinner,
-        type: o.$jN.Type.SPINNING_CIRCLE
-      }), f && null != s && (0, n.jsx)(o.P3F, {
-        onClick: d,
+        type: s.$jN.Type.SPINNING_CIRCLE
+      }), f && null != d && (0, n.jsx)(s.P3F, {
+        onClick: u,
         "aria-label": v.intl.formatToPlainString(v.t["1o5hyW"], {
           attachment: m
         }),
         "aria-hidden": false,
         className: q.deleteButton,
-        children: (0, n.jsx)(o.Dio, {
+        children: (0, n.jsx)(s.Dio, {
           size: "xxs",
           color: "currentColor",
           className: q.__invalid_deleteIcon
@@ -76,14 +76,14 @@ function U(e) {
     canAttachFiles: a,
     canAttachArchives: i,
     addAttachment: l,
-    deleteAttachment: u,
+    deleteAttachment: o,
     fileUploadProgresses: c
   } = (0, f.P)(), p = r.useRef(false);
 
   function U(e) {
     try {
       for (let t of e) l({
-        platform: d.ow.WEB,
+        platform: u.ow.WEB,
         file: t,
         origin: "unknown:guild_product_attachment"
       });
@@ -94,7 +94,7 @@ function U(e) {
     p.current && (t(), p.current = false)
   }, [t]), (0, n.jsxs)("div", {
     className: q.container,
-    children: [(0, n.jsx)(s.Z, {
+    children: [(0, n.jsx)(d.Z, {
       className: q.uploadArea,
       title: v.intl.string(v.t["5eTk2g"]),
       description: v.intl.string(v.t.Ecxoxl),
@@ -110,19 +110,19 @@ function U(e) {
       onChange: function(e) {
         null != e.currentTarget.files && U(e.currentTarget.files)
       },
-      children: [(0, n.jsx)(o.dZu, {
+      children: [(0, n.jsx)(s.dZu, {
         size: "xs",
         color: "currentColor",
         className: q.addFileButtonIcon,
         "aria-hidden": true
-      }), (0, n.jsx)(o.Text, {
+      }), (0, n.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "always-white",
         children: v.intl.string(v.t["23LeCD"])
       })]
-    }), (0, n.jsx)(o.LZC, {
+    }), (0, n.jsx)(s.LZC, {
       size: 12
-    }), (0, n.jsx)(o.Text, {
+    }), (0, n.jsx)(s.Text, {
       id: b,
       color: "text-muted",
       variant: "text-xs/normal",
@@ -140,7 +140,7 @@ function U(e) {
         children: A.map(e => (0, n.jsx)("li", {
           children: (0, n.jsx)(C, {
             upload: e,
-            onDeleteAttachment: u,
+            onDeleteAttachment: o,
             progress: c[e.id]
           })
         }, e.id))

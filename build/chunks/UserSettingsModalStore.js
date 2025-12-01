@@ -2,7 +2,7 @@
 /** chunk id: 663389, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -33,10 +33,10 @@ function c(e) {
 let u = Chunk981631.QZA.CLOSED,
   d = null,
   f = {},
-  _ = {},
   p = {},
-  h = null,
+  _ = {},
   m = null,
+  h = null,
   g = false,
   E = null,
   b = [],
@@ -49,8 +49,8 @@ function O(e) {
 function v(e) {
   var t, n, r, i;
   let a = o.default.getCurrentUser();
-  if (null == a) return I();
-  d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (_[d] = e.scrollPosition), g = !!e.openWithoutBackstack, u = s.QZA.OPEN, p = {}, m = c({}, h = {
+  if (null == a) return S();
+  d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (p[d] = e.scrollPosition), g = !!e.openWithoutBackstack, u = s.QZA.OPEN, _ = {}, h = c({}, m = {
     [s.oAB.ACCOUNT]: {
       userId: a.id,
       username: a.username,
@@ -64,16 +64,16 @@ function v(e) {
   }), E = null != (n = e.analyticsLocation) ? n : null, b = null != (r = e.analyticsLocations) ? r : [], y = null != (i = e.searchParams) ? i : null
 }
 
-function I() {
-  u = Chunk981631.QZA.CLOSED, h = null, m = null, d = null, f = {}, _ = {}, E = null, b = [], y = null
+function S() {
+  u = Chunk981631.QZA.CLOSED, m = null, h = null, d = null, f = {}, p = {}, E = null, b = [], y = null
 }
 
-function T(e) {
+function I(e) {
   var t;
   d = e.section, E = null, b = null != (t = e.analyticsLocations) ? t : [], null != e.subsection && (f[d] = e.subsection)
 }
 
-function S(e) {
+function T(e) {
   let {
     forSection: t
   } = e;
@@ -84,25 +84,25 @@ function A(e) {
   let {
     forSection: t
   } = e;
-  null != t ? delete _[t] : null != d && delete _[d]
+  null != t ? delete p[t] : null != d && delete p[d]
 }
 
 function C(e) {
   let {
     settings: t
   } = e;
-  null == m && (m = {});
-  let n = m[s.oAB.ACCOUNT];
-  m[s.oAB.ACCOUNT] = c({}, n, t)
+  null == h && (h = {});
+  let n = h[s.oAB.ACCOUNT];
+  h[s.oAB.ACCOUNT] = c({}, n, t)
 }
 
 function N() {
   u = Chunk981631.QZA.SUBMITTING
 }
 
-function R() {
+function P() {
   let e = Chunk594174.default.getCurrentUser();
-  P(), null != module && (m = c({}, h = {
+  R(), null != module && (h = c({}, m = {
     [Chunk981631.oAB.ACCOUNT]: {
       userId: module.id,
       username: module.username,
@@ -116,16 +116,16 @@ function R() {
   }))
 }
 
-function P() {
-  u = Chunk981631.QZA.OPEN, p = {}
+function R() {
+  u = Chunk981631.QZA.OPEN, _ = {}
 }
 
-function D(e) {
+function w(e) {
   var t;
   if (u !== s.QZA.SUBMITTING) returnfalse;
-  u = s.QZA.OPEN, d = s.oAB.ACCOUNT, p = null != (t = e.errors) ? t : {}
+  u = s.QZA.OPEN, d = s.oAB.ACCOUNT, _ = null != (t = e.errors) ? t : {}
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
@@ -136,7 +136,7 @@ class w extends(r = Chunk442837.ZP.Store) {
     return null != d ? f[d] : null
   }
   getScrollPosition() {
-    return null != d ? _[d] : null
+    return null != d ? p[d] : null
   }
   getAnalyticsLocation() {
     return E
@@ -145,13 +145,13 @@ class w extends(r = Chunk442837.ZP.Store) {
     return b
   }
   getErrors() {
-    return p
+    return _
   }
   getSubmitting() {
     return u === Chunk981631.QZA.SUBMITTING
   }
   getSettings() {
-    return m
+    return h
   }
   getOpenWithoutBackstack() {
     return g
@@ -160,18 +160,18 @@ class w extends(r = Chunk442837.ZP.Store) {
     return y
   }
 }
-l(w, "displayName", "UserSettingsModalStore");
-let L = new w(Chunk570140.Z, {
+l(D, "displayName", "UserSettingsModalStore");
+let x = new D(Chunk570140.Z, {
   USER_SETTINGS_MODAL_OPEN: O,
   USER_SETTINGS_MODAL_INIT: v,
-  USER_SETTINGS_MODAL_CLOSE: I,
-  LOGOUT: I,
+  USER_SETTINGS_MODAL_CLOSE: S,
+  LOGOUT: S,
   USER_SETTINGS_MODAL_SUBMIT: N,
-  USER_SETTINGS_MODAL_SUBMIT_FAILURE: D,
-  USER_SETTINGS_MODAL_SET_SECTION: T,
-  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: S,
+  USER_SETTINGS_MODAL_SUBMIT_FAILURE: w,
+  USER_SETTINGS_MODAL_SET_SECTION: I,
+  USER_SETTINGS_MODAL_CLEAR_SUBSECTION: T,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: A,
   USER_SETTINGS_MODAL_UPDATE_ACCOUNT: C,
-  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: P,
-  USER_SETTINGS_MODAL_RESET: R
+  USER_SETTINGS_MODAL_SUBMIT_COMPLETE: R,
+  USER_SETTINGS_MODAL_RESET: P
 })

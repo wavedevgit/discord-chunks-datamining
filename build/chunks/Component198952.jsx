@@ -2,8 +2,8 @@
 /** chunk id: 198952, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m,
-  r: () => h
+  Z: () => h,
+  r: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -47,13 +47,13 @@ function f(e, t) {
   return n
 }
 
-function _(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK,
-  h = e => {
+let _ = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK,
+  m = e => {
     let {
       user: t,
       avatarSize: n = i.EFr.SIZE_48
@@ -65,8 +65,8 @@ let p = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       userId: null == t ? true : t.id,
       size: n
     });
-    return (0, r.jsx)("div", _(d({}, u), {
-      children: (0, r.jsx)(p, {
+    return (0, r.jsx)("div", p(d({}, u), {
+      children: (0, r.jsx)(_, {
         src: o,
         avatarDecoration: c,
         size: n,
@@ -76,7 +76,7 @@ let p = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       })
     }))
   },
-  m = e => {
+  h = e => {
     let {
       currentUser: t,
       otherUser: n,
@@ -86,9 +86,9 @@ let p = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       className: c.avatarPairContainer,
       children: (0, r.jsxs)("div", {
         className: c.avatarPair,
-        children: [(0, r.jsx)(h, {
+        children: [(0, r.jsx)(m, {
           user: t
-        }), i, (0, r.jsx)(h, {
+        }), i, (0, r.jsx)(m, {
           user: n
         })]
       })

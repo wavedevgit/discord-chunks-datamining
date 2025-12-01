@@ -2,8 +2,8 @@
 /** chunk id: 931261, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  g: () => h,
-  s: () => m
+  g: () => m,
+  s: () => h
 });
 var Chunk399606 = require("./399606.js"),
   Chunk637853 = require("./637853.js"),
@@ -16,7 +16,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function _(e) {
+function p(e) {
   var t;
   let n = e.id,
     r = (null != (t = l.Z.getNewMemberActions(n)) ? t : []).length > 0,
@@ -24,27 +24,27 @@ function _(e) {
   return r && e.features.has(d.GuildFeatures.COMMUNITY) && !(e.features.has(d.GuildFeatures.GUILD_ONBOARDING) && !i)
 }
 
-function p(e, t) {
+function _(e, t) {
   let n = t.getMutableGuildChannelsForGuild(e);
   for (let e in n)
     if (n[e].hasFlag(f.zZ.IS_GUILD_RESOURCE_CHANNEL)) returntrue;
   returnfalse
 }
 
-function h(e) {
+function m(e) {
   let t = (0, u.Z)(e);
   return (0, r.e7)([o.Z, s.Z, a.Z], () => {
     if (__OVERLAY__ || e === d.ME || e === d.I_8) returnfalse;
     let n = s.Z.getGuild(e);
-    return !!(null == n ? true : n.features.has(d.GuildFeatures.COMMUNITY)) && (a.Z.isFullServerPreview(e) ? _(n) : (0, i.wC)(e) ? t || p(e, o.Z) : !!(0, c.Z)(n) && (t || p(e, o.Z)))
+    return !!(null == n ? true : n.features.has(d.GuildFeatures.COMMUNITY)) && (a.Z.isFullServerPreview(e) ? p(n) : (0, i.wC)(e) ? t || _(e, o.Z) : !!(0, c.Z)(n) && (t || _(e, o.Z)))
   }, [e, t])
 }
 
-function m(e) {
+function h(e) {
   let t = s.Z.getGuild(e),
     n = a.Z.isFullServerPreview(e);
   if (null == t || __OVERLAY__ || e === d.ME || e === d.I_8) returnfalse;
-  if (n) return _(t);
+  if (n) return p(t);
   let r = (0, i.wC)(e) && t.features.has(d.GuildFeatures.GUILD_ONBOARDING) && t.features.has(d.GuildFeatures.GUILD_SERVER_GUIDE);
   return (t.features.has(d.GuildFeatures.GUILD_ONBOARDING) && t.features.has(d.GuildFeatures.GUILD_SERVER_GUIDE) || r) && t.features.has(d.GuildFeatures.COMMUNITY)
 }

@@ -2,7 +2,7 @@
 /** chunk id: 922745, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I,
+  Z: () => S,
   r: () => v
 });
 var Chunk54381 = require("./54381.js");
@@ -69,11 +69,11 @@ function v(e) {
     onHide: i,
     idle: a,
     preventIdleComponent: s
-  } = e, c = (0, o.e7)([f.Z], () => f.Z.getChannelId()), d = null != c ? (0, r.jsx)(_.Z, {
+  } = e, c = (0, o.e7)([f.Z], () => f.Z.getChannelId()), d = null != c ? (0, r.jsx)(p.Z, {
     voiceChannelId: c,
     idle: a
   }) : null, {
-    enabled: p
+    enabled: _
   } = u.Z.useExperiment({
     location: "PictureInPicturePlayer"
   });
@@ -85,7 +85,7 @@ function v(e) {
       children: [(0, r.jsx)(l.whL, {
         size: "custom",
         color: "currentColor",
-        "aria-label": m.intl.string(m.t.mSfLs0),
+        "aria-label": h.intl.string(h.t.mSfLs0),
         className: g.backButton,
         width: 20,
         height: 20
@@ -95,14 +95,14 @@ function v(e) {
         color: "always-white",
         children: t
       })]
-    }), p && null != i ? (0, r.jsx)(h.Z, {
+    }), _ && null != i ? (0, r.jsx)(m.Z, {
       onClick: i,
-      label: m.intl.string(m.t.BEuDEn)
+      label: h.intl.string(h.t.BEuDEn)
     }) : null, d]
   })
 }
 
-function I(e) {
+function S(e) {
   var {
     children: t,
     idle: n,
@@ -111,14 +111,14 @@ function I(e) {
     backgroundKey: l,
     onActive: u,
     onForceIdle: f,
-    renderBottomLeftControls: _,
-    renderBottomRightControls: h,
-    screenMessage: m,
+    renderBottomLeftControls: p,
+    renderBottomRightControls: m,
+    screenMessage: h,
     hideControls: E = false,
     className: O,
-    innerClassName: I,
-    videoControlsClassName: T
-  } = e, S = y(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName", "videoControlsClassName"]);
+    innerClassName: S,
+    videoControlsClassName: I
+  } = e, T = y(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName", "videoControlsClassName"]);
   return (0, r.jsxs)("div", {
     onMouseMove: u,
     onMouseDown: u,
@@ -129,20 +129,20 @@ function I(e) {
     onDoubleClick: i,
     children: [(0, r.jsx)(s.W, {
       children: (0, r.jsx)(d.B, {
-        className: I,
+        className: S,
         children: t
       }, l)
-    }), null != m ? (0, r.jsx)(p.Z, b({
+    }), null != h ? (0, r.jsx)(_.Z, b({
       size: "small"
-    }, m)) : null, !E && (0, r.jsxs)("div", {
-      className: a()(g.videoControls, T, "theme-dark"),
+    }, h)) : null, !E && (0, r.jsxs)("div", {
+      className: a()(g.videoControls, I, "theme-dark"),
       children: [(0, r.jsx)("div", {
         className: g.topControls,
         children: (0, r.jsx)(v, b({
           idle: n,
           onJumpToChannel: i,
           onHide: o
-        }, S))
+        }, T))
       }), (0, r.jsxs)("div", {
         className: g.bottomControls,
         children: [(0, r.jsx)(c.Z, {
@@ -151,14 +151,14 @@ function I(e) {
           basis: "50%",
           align: c.Z.Align.CENTER,
           className: g.bottomLeftControls,
-          children: null == _ ? true : _()
+          children: null == p ? true : p()
         }), (0, r.jsx)(c.Z, {
           grow: 0,
           shrink: 1,
           justify: c.Z.Justify.END,
           basis: "50%",
           align: c.Z.Align.CENTER,
-          children: null == h ? true : h()
+          children: null == m ? true : m()
         })]
       })]
     })]

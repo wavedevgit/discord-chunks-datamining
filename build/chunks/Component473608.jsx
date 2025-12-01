@@ -2,7 +2,7 @@
 /** chunk id: 473608, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O: () => P
+  O: () => R
 }), require("./388685.js"), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk187951 = require("./187951.js"),
   Chunk223223 = require("./223223.js");
 
-function T(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,14 +35,14 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -51,7 +51,7 @@ let A = e => {
     let {
       avatarDecoration: t,
       fallbackLabel: n
-    } = e, i = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+    } = e, i = (0, c.e7)([h.default], () => h.default.getCurrentUser()), {
       avatarDecorationSrc: a,
       eventHandlers: o
     } = (0, f.Z)({
@@ -60,7 +60,7 @@ let A = e => {
       avatarDecorationOverride: t,
       size: (0, d.y9)(u.EFr.SIZE_40)
     });
-    return null == t ? n : (0, r.jsx)("img", S({
+    return null == t ? n : (0, r.jsx)("img", T({
       src: a,
       alt: t.label,
       className: v.avatarDecoration
@@ -71,7 +71,7 @@ let A = e => {
     let {
       profileEffect: n,
       fallbackLabel: a
-    } = e, o = (0, h.V)(null == n ? true : n.skuId), {
+    } = e, o = (0, m.V)(null == n ? true : n.skuId), {
       accessibilityLabel: s,
       thumbnailPreviewSrc: l,
       title: c
@@ -79,7 +79,7 @@ let A = e => {
     return null == o ? a : (0, r.jsxs)("div", {
       className: v.profileEffectContainer,
       children: [(0, r.jsx)("img", {
-        src: I,
+        src: S,
         alt: s,
         className: v.profileEffectBackground
       }), (0, r.jsx)("img", {
@@ -98,14 +98,14 @@ let A = e => {
       className: v.nameplateContainer,
       onMouseEnter: s,
       onMouseLeave: l,
-      children: (0, r.jsx)(p.Z, {
+      children: (0, r.jsx)(_.Z, {
         nameplate: (0, y.EU)(t),
         hovered: a,
-        placement: _.i.MINI_PREVIEW
+        placement: p.i.MINI_PREVIEW
       })
     })
   },
-  R = e => {
+  P = e => {
     let {
       product: t,
       fallbackLabel: n
@@ -137,29 +137,29 @@ let A = e => {
       })]
     })
   },
-  P = e => {
+  R = e => {
     var t;
     let {
       product: n,
       sku: i,
       fallbackLabel: a
     } = e, u = null == i ? true : i.id, d = (0, c.e7)([g.Z], () => g.Z.getProduct(null == i ? true : i.id)), f = null != n ? n : d;
-    if ((null == f ? true : f.type) === l.Z.BUNDLE) return (0, r.jsx)(R, {
+    if ((null == f ? true : f.type) === l.Z.BUNDLE) return (0, r.jsx)(P, {
       product: f,
       fallbackLabel: a
     });
-    let [_] = null != (t = null == f ? true : f.items) ? t : [];
+    let [p] = null != (t = null == f ? true : f.items) ? t : [];
     return true !== u && u in O.K ? O.K[u].render({
       animationState: "on_hover",
       className: v.externalProductAsset
-    }) : (0, s.EQ)(null == _ ? true : _.type).with(l.Z.AVATAR_DECORATION, () => (o()(_.type === l.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(A, {
-      avatarDecoration: _,
+    }) : (0, s.EQ)(null == p ? true : p.type).with(l.Z.AVATAR_DECORATION, () => (o()(p.type === l.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(A, {
+      avatarDecoration: p,
       fallbackLabel: a
-    }))).with(l.Z.PROFILE_EFFECT, () => (o()(_.type === l.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(C, {
-      profileEffect: _,
+    }))).with(l.Z.PROFILE_EFFECT, () => (o()(p.type === l.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(C, {
+      profileEffect: p,
       fallbackLabel: a
-    }))).with(l.Z.NAMEPLATE, () => (o()(_.type === l.Z.NAMEPLATE, "ts-match checked the type"), (0, r.jsx)(N, {
-      nameplate: _,
+    }))).with(l.Z.NAMEPLATE, () => (o()(p.type === l.Z.NAMEPLATE, "ts-match checked the type"), (0, r.jsx)(N, {
+      nameplate: p,
       fallbackLabel: a
     }))).otherwise(() => a)
   }

@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
@@ -55,14 +55,14 @@ function f() {
   r.hasAcceptedStoreTerms = true
 }
 
-function _(e) {
+function p(e) {
   let {
     eulaId: t
   } = e;
   if (r.hasAcceptedEulaIds.includes(t)) returnfalse;
   r.hasAcceptedEulaIds.push(t)
 }
-class p extends(i = Chunk442837.ZP.PersistedStore) {
+class _ extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     r = null != e ? e : d
   }
@@ -76,10 +76,10 @@ class p extends(i = Chunk442837.ZP.PersistedStore) {
     return r.hasAcceptedEulaIds.includes(e)
   }
 }
-s(p, "displayName", "ApplicationStoreUserSettingsStore"), s(p, "persistKey", "ApplicationStoreUserSettingsStore"), s(p, "migrations", [e => null == e.hasAcceptedEulaIds ? u(l({}, e), {
+s(_, "displayName", "ApplicationStoreUserSettingsStore"), s(_, "persistKey", "ApplicationStoreUserSettingsStore"), s(_, "migrations", [e => null == e.hasAcceptedEulaIds ? u(l({}, e), {
   hasAcceptedEulaIds: []
 }) : e]);
-let h = new p(Chunk570140.Z, {
+let m = new _(Chunk570140.Z, {
   APPLICATION_STORE_ACCEPT_STORE_TERMS: f,
-  APPLICATION_STORE_ACCEPT_EULA: _
+  APPLICATION_STORE_ACCEPT_EULA: p
 })

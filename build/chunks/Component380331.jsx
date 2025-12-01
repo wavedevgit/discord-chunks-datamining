@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk911166 = require("./911166.js");
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,20 +41,20 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,24 +65,24 @@ function w(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function x(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
-  M = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
-  k = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
-  j = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
+let L = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE),
+  j = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL),
+  M = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
+  k = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
   U = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
   G = (0, Chunk624138.Mg)(Chunk911166.__invalid_unicodeCategoryShortcutHeight),
-  B = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
-  Z = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-  F = k + M + 2 * U,
-  V = x + M,
-  H = V + (B + 2 * Z),
-  W = k + j + 2 * U,
-  Y = 7;
+  Z = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
+  B = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
+  F = M + j + 2 * U,
+  V = L + j,
+  H = V + (Z + 2 * B),
+  Y = M + k + 2 * U,
+  W = 7;
 
 function K(e) {
   let {
@@ -93,14 +93,14 @@ function K(e) {
     category: l,
     handleCategorySelect: u,
     isWindowFocused: d,
-    useReducedMotion: _
-  } = e, p = (0, c.JA)("expression-guild-".concat(n)), h = l.type === S.En.GUILD ? null : l.id, m = t === n, E = l.type === S.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, L(D({}, p), {
+    useReducedMotion: p
+  } = e, _ = (0, c.JA)("expression-guild-".concat(n)), m = l.type === T.En.GUILD ? null : l.id, h = t === n, E = l.type === T.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, x(w({}, _), {
     "aria-label": (0, O.Nf)(l, E),
     className: o()({
-      [R.categoryItemGuildCategory]: null != E,
-      [R.categoryItemDefaultCategory]: null == E,
-      [R.categoryItemDefaultCategorySelected]: null == E && m,
-      [R.categoryItemRecentEmoji]: l.type === S.En.RECENT
+      [P.categoryItemGuildCategory]: null != E,
+      [P.categoryItemDefaultCategory]: null == E,
+      [P.categoryItemDefaultCategorySelected]: null == E && h,
+      [P.categoryItemRecentEmoji]: l.type === T.En.RECENT
     }),
     onClick: () => {
       null != E && b.default.track(A.rMx.EXPRESSION_PICKER_CATEGORY_SELECTED, {
@@ -109,19 +109,19 @@ function K(e) {
         guild_id: E.id
       }), u(n)
     },
-    children: [null != E ? (0, r.jsx)(I.Z, {
+    children: [null != E ? (0, r.jsx)(S.Z, {
       guild: E,
-      isSelected: m,
-      shouldAnimate: !_ && d,
+      isSelected: h,
+      shouldAnimate: !p && d,
       isLocked: l.isNitroLocked
-    }) : null, null == E && null != h ? (0, r.jsx)(v.Z, {
-      categoryId: h,
-      className: R.categoryIcon,
-      height: k,
-      width: k,
+    }) : null, null == E && null != m ? (0, r.jsx)(v.Z, {
+      categoryId: m,
+      className: P.categoryIcon,
+      height: M,
+      width: M,
       size: "custom"
     }) : null]
-  })), T = s[n + 1], N = null != T && l.type === S.En.GUILD && T.type !== S.En.GUILD;
+  })), I = s[n + 1], N = null != I && l.type === T.En.GUILD && I.type !== T.En.GUILD;
   return null != E ? (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(g.V, {
       guild: E,
@@ -129,7 +129,7 @@ function K(e) {
         children: y
       })
     }), N ? (0, r.jsx)("hr", {
-      className: R.guildCategorySeparator
+      className: P.guildCategorySeparator
     }, "separator") : null]
   }) : y
 }
@@ -142,10 +142,10 @@ let z = e => {
     channel: c,
     shouldShowSoundmojiInEmojiPicker: d = false,
     showOnlyUnicode: g = false
-  } = e, b = h.kJ.useStore(e => e.activeCategoryIndex), y = (0, T.Ni)({
+  } = e, b = m.kJ.useStore(e => e.activeCategoryIndex), y = (0, I.Ni)({
     sectionDescriptors: a,
     emojiListRef: n
-  }), v = (0, _.O)(), I = (0, O.kI)(s, c, null == c ? true : c.guild_id, d), A = i.useMemo(() => g ? (0, O.ZF)() : I, [I, g]), C = i.useRef(null), P = (0, u.e7)([E.Z], () => E.Z.isFocused()), D = (0, u.e7)([p.Z], () => p.Z.useReducedMotion, []), w = i.useMemo(() => l().memoize((e, t) => {
+  }), v = (0, p.O)(), S = (0, O.kI)(s, c, null == c ? true : c.guild_id, d), A = i.useMemo(() => g ? (0, O.ZF)() : S, [S, g]), C = i.useRef(null), R = (0, u.e7)([E.Z], () => E.Z.isFocused()), w = (0, u.e7)([_.Z], () => _.Z.useReducedMotion, []), D = i.useMemo(() => l().memoize((e, t) => {
     let n = A[t];
     if (null != n) return (0, r.jsx)(K, {
       activeIndex: b,
@@ -154,29 +154,29 @@ let z = e => {
       category: n,
       categoryIndex: t,
       handleCategorySelect: y,
-      isWindowFocused: P,
-      useReducedMotion: D
+      isWindowFocused: R,
+      useReducedMotion: w
     }, t)
-  }), [b, v, A, y, P, D]), L = i.useMemo(() => [8, 8, 0, 8], []), x = i.useCallback((e, t) => {
+  }), [b, v, A, y, R, w]), x = i.useMemo(() => [8, 8, 0, 8], []), L = i.useCallback((e, t) => {
     let n = A[t];
-    if (n.type === S.En.RECENT) return F;
-    if (n.type === S.En.GUILD) {
+    if (n.type === T.En.RECENT) return F;
+    if (n.type === T.En.GUILD) {
       let e = A[t + 1];
-      return null != e && e.type !== S.En.GUILD ? H : V
+      return null != e && e.type !== T.En.GUILD ? H : V
     }
-    return W
+    return Y
   }, [A]), {
     nonUnicodeCategoryCount: U,
     firstUnicodeCategoryIndex: z,
     firstUnicodeCategoryOffsetTop: q,
-    rowCountBySection: X
+    rowCountBySection: Q
   } = i.useMemo(() => {
     let e = 0,
       t = 0,
       n = 0,
       r = 0;
     A.forEach(i => {
-      i.type === S.En.GUILD ? (t += 1, n += 1) : i.type === S.En.UNICODE ? r += 1 : (e += 1, t += 1)
+      i.type === T.En.GUILD ? (t += 1, n += 1) : i.type === T.En.UNICODE ? r += 1 : (e += 1, t += 1)
     });
     let i = F + t * V + H;
     return {
@@ -185,14 +185,14 @@ let z = e => {
       firstUnicodeCategoryOffsetTop: i,
       rowCountBySection: [e, n, r]
     }
-  }, [A]), [Q, J] = i.useState(true);
+  }, [A]), [X, J] = i.useState(true);
   i.useLayoutEffect(() => {
-    J(U >= Y)
+    J(U >= W)
   }, [U]);
   let $ = i.useCallback(e => {
       var t;
       let n = null == (t = C.current) ? true : t.getListDimensions();
-      null != n && (e + n.height - B >= q ? J(false) : J(true))
+      null != n && (e + n.height - Z >= q ? J(false) : J(true))
     }, [q]),
     ee = i.useCallback(e => {
       var t;
@@ -201,47 +201,47 @@ let z = e => {
     et = i.useCallback((e, t) => {
       let n = A[e];
       if (null == n) return 0;
-      let r = Q ? G : 0;
-      if (n.type === S.En.RECENT) return t ? 0 : j;
-      if (n.type === S.En.GUILD) {
+      let r = X ? G : 0;
+      if (n.type === T.En.RECENT) return t ? 0 : k;
+      if (n.type === T.En.GUILD) {
         let n = A[e + 1];
-        return null != n && n.type !== S.En.GUILD ? t ? B + false * Z + M + r : M : t ? r : M
+        return null != n && n.type !== T.En.GUILD ? t ? Z + false * B + j + r : j : t ? r : j
       }
-      return t ? M + r : 2 * M
-    }, [A, Q]),
+      return t ? j + r : 2 * j
+    }, [A, X]),
     en = i.useMemo(() => function(e, t) {
       return (0, r.jsx)(i.Fragment, {
         children: t
       }, e)
     }, []),
-    er = Q ? "shortcut" : "hiddenshortcut";
-  return (0, r.jsx)(m.Z, {
+    er = X ? "shortcut" : "hiddenshortcut";
+  return (0, r.jsx)(h.Z, {
     categoryListRef: C,
     expressionsListRef: n,
     className: t,
-    store: h.kJ,
+    store: m.kJ,
     categories: A,
-    listPadding: L,
+    listPadding: x,
     onScroll: $,
-    renderCategoryListItem: w,
+    renderCategoryListItem: D,
     renderSection: en,
     rowCount: A.length,
-    categoryHeight: x,
+    categoryHeight: L,
     getScrollOffsetForIndex: et,
-    rowCountBySection: X,
-    children: e => U >= Y && (0, r.jsx)(f.P3F, {
-      "aria-hidden": !Q,
+    rowCountBySection: Q,
+    children: e => U >= W && (0, r.jsx)(f.P3F, {
+      "aria-hidden": !X,
       "aria-label": N.intl.string(N.t.dT0ctw),
-      className: o()(R.unicodeShortcut, {
-        [R.unicodeShortcutInvisible]: !Q
+      className: o()(P.unicodeShortcut, {
+        [P.unicodeShortcutInvisible]: !X
       }),
-      tabIndex: Q ? 0 : false,
+      tabIndex: X ? 0 : false,
       onClick: () => ee(e),
       children: (0, r.jsx)(f.EO4, {
         size: "custom",
         color: "currentColor",
-        height: k,
-        width: k
+        height: M,
+        width: M
       })
     }, er)
   })

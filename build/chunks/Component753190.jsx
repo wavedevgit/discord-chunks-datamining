@@ -2,7 +2,7 @@
 /** chunk id: 753190, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  y: () => _
+  y: () => p
 }), require("./388685.js"), require("./583741.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -38,7 +38,7 @@ var f = function(e) {
   return e.XSMALL = "xsmall", e.SMALL = "small", e.LARGE = "large", e
 }(f || {});
 
-function _(e) {
+function p(e) {
   let {
     className: t,
     percents: n,
@@ -46,7 +46,7 @@ function _(e) {
     foregroundColors: o = [l.Z.unsafe_rawColors.BRAND_500.css],
     backgroundColor: u = "var(--background-modifier-active)",
     animate: f = true
-  } = e, _ = s()(null != n ? n : [], o).map((e, t) => {
+  } = e, p = s()(null != n ? n : [], o).map((e, t) => {
     let n, [o, s] = e;
     return n = Array.isArray(s) ? {
       background: "linear-gradient(to right, ".concat(s[0], ", ").concat(s[1], ")")
@@ -66,7 +66,7 @@ function _(e) {
     style: {
       backgroundColor: u
     },
-    children: _
+    children: p
   })
 }
-_.Sizes = f
+p.Sizes = f

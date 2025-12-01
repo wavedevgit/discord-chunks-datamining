@@ -2,7 +2,7 @@
 /** chunk id: 679332, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,26 +36,26 @@ function _(e) {
   return e
 }
 
-function p(e) {
+function _(e) {
   let {
     user: t,
     viewProfileItem: n
   } = e, f = i.useRef(null), {
-    trackUserProfileAction: p
+    trackUserProfileAction: _
   } = (0, c.KZ)(), {
-    analyticsLocations: h
-  } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), m = [
+    analyticsLocations: m
+  } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), h = [
     [n],
     [(0, l.Z)({
       id: t.id,
       label: d.intl.string(d.t["/AXYnE"]),
-      onSuccess: () => p({
+      onSuccess: () => _({
         action: "COPY_USER_ID",
-        analyticsLocations: h
+        analyticsLocations: m
       })
     })]
   ];
-  return m.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(a.yRy, {
+  return h.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(a.yRy, {
     targetElementRef: f,
     renderPopout: e => {
       let {
@@ -66,12 +66,12 @@ function p(e) {
         onSelect: true,
         onClose: t,
         "aria-label": d.intl.string(d.t.AXIHpV),
-        children: m.map((e, t) => (0, r.jsx)(a.kSQ, {
+        children: h.map((e, t) => (0, r.jsx)(a.kSQ, {
           children: e.map(e => e)
         }, t))
       })
     },
-    children: e => (0, r.jsx)(u.oY, _({
+    children: e => (0, r.jsx)(u.oY, p({
       ref: f,
       action: "PRESS_OPTIONS",
       icon: a.xhG,

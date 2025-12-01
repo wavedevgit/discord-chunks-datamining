@@ -2,7 +2,7 @@
 /** chunk id: 194359, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js"), require("./35282.js");
 var Chunk544891 = require("./544891.js"),
   Chunk780384 = require("./780384.js"),
@@ -44,14 +44,14 @@ function y(e) {
 }
 
 function O(e) {
-  (0, h.Zy)(), p.Z.show(e)
+  (0, m.Zy)(), _.Z.show(e)
 }
 
 function v() {
   (0, Chunk239091.Zy)(), (0, Chunk895886.default)()
 }
 
-function I(e, t, n) {
+function S(e, t, n) {
   let {
     status: r,
     body: i
@@ -65,7 +65,7 @@ function I(e, t, n) {
       });
       break;
     case 403:
-      if (a === m.evJ.EMAIL_VERIFICATION_REQUIRED) {
+      if (a === h.evJ.EMAIL_VERIFICATION_REQUIRED) {
         O({
           title: E.intl.string(E.t.Gqf33E),
           body: E.intl.string(E.t.GHOBdx),
@@ -77,9 +77,9 @@ function I(e, t, n) {
         break
       }
     default:
-      if (a === m.evJ.USER_QUARANTINED) v();
+      if (a === h.evJ.USER_QUARANTINED) v();
       else if ((0, u.b)(r, a)) break;
-      else if (a === m.evJ.RELATIONSHIP_INVALID_NO_CONFIRMATION) break;
+      else if (a === h.evJ.RELATIONSHIP_INVALID_NO_CONFIRMATION) break;
       else if (0 === t) {
         let e = null != n ? (0, f.NF)(a || 0, n) : E.intl.string(E.t.paDJBM);
         O({
@@ -91,7 +91,7 @@ function I(e, t, n) {
   }
   throw e
 }
-let T = {
+let I = {
     sendRequest(e) {
       let {
         discordTag: t,
@@ -100,7 +100,7 @@ let T = {
         errorUxConfig: a = 0
       } = e, [o, s] = t.split("#");
       return r.tn.post({
-        url: m.ANM.USER_RELATIONSHIPS(),
+        url: h.ANM.USER_RELATIONSHIPS(),
         body: y({
           username: o,
           discriminator: parseInt(s)
@@ -109,7 +109,7 @@ let T = {
         oldFormErrors: true,
         rejectWithError: false
       }).catch(e => {
-        I(e, a, t)
+        S(e, a, t)
       })
     },
     addRelationship(e, t) {
@@ -122,7 +122,7 @@ let T = {
         captchaPayload: l
       } = e, c = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 0, u = d.default.getUser(n);
       return r.tn.put({
-        url: m.ANM.USER_RELATIONSHIP(n),
+        url: h.ANM.USER_RELATIONSHIP(n),
         body: y({
           type: a,
           from_friend_suggestion: o,
@@ -133,44 +133,44 @@ let T = {
         rejectWithError: false
       }).then(() => {
         null == t || t()
-      }).catch(e => (I(e, c, _.ZP.getUserTag(u)), Promise.reject(e)))
+      }).catch(e => (S(e, c, p.ZP.getUserTag(u)), Promise.reject(e)))
     },
     acceptFriendRequest(e) {
       function t() {
         i.uv.announce(E.intl.string(E.t["3goNa5"]))
       }
-      return T.addRelationship(e, t)
+      return I.addRelationship(e, t)
     },
     cancelFriendRequest(e, t) {
       function n() {
         i.uv.announce(E.intl.string(E.t.pLUaxR))
       }
-      return T.removeRelationship(e, t, n)
+      return I.removeRelationship(e, t, n)
     },
     removeFriend(e, t) {
       function n() {
         i.uv.announce(E.intl.string(E.t.vGSLa2))
       }
-      T.removeRelationship(e, t, n)
+      I.removeRelationship(e, t, n)
     },
     blockUser(e, t) {
       function n() {
         i.uv.announce(E.intl.string(E.t.mU0Vrp))
       }
-      return T.addRelationship({
+      return I.addRelationship({
         userId: e,
         context: t,
-        type: m.OGo.BLOCKED
+        type: h.OGo.BLOCKED
       }, n)
     },
     unblockUser(e, t) {
       function n() {
         i.uv.announce(E.intl.string(E.t["9t1au7"]))
       }
-      return T.removeRelationship(e, t, n)
+      return I.removeRelationship(e, t, n)
     },
     removeRelationship: (e, t, n) => r.tn.del({
-      url: m.ANM.USER_RELATIONSHIP(e),
+      url: h.ANM.USER_RELATIONSHIP(e),
       context: t,
       oldFormErrors: true,
       rejectWithError: false
@@ -180,7 +180,7 @@ let T = {
       i.uv.announce(E.intl.string(E.t.n6Jo3E))
     }),
     updateRelationship: (e, t) => r.tn.patch({
-      url: m.ANM.USER_RELATIONSHIP(e),
+      url: h.ANM.USER_RELATIONSHIP(e),
       body: {
         nickname: t
       },
@@ -231,7 +231,7 @@ let T = {
       Chunk780384.uv.announce(Chunk388032.intl.string(Chunk388032.t.n6Jo3E))
     }),
     ignoreUser: (e, t, n) => r.tn.put({
-      url: m.ANM.IGNORE_USER(e),
+      url: h.ANM.IGNORE_USER(e),
       context: {
         location: t
       },
@@ -246,7 +246,7 @@ let T = {
       c.Z.showFailedToast(), i.uv.announce(E.intl.string(E.t.n6Jo3E))
     }),
     unignoreUser: (e, t, n) => r.tn.del({
-      url: m.ANM.IGNORE_USER(e),
+      url: h.ANM.IGNORE_USER(e),
       context: {
         location: t
       },
@@ -257,4 +257,4 @@ let T = {
       c.Z.showFailedToast(), i.uv.announce(E.intl.string(E.t.n6Jo3E))
     })
   },
-  S = T
+  T = I

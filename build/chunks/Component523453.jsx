@@ -44,30 +44,30 @@ function b(e) {
   } = e, b = t.channel_id, y = (0, o.e7)([f.Z], () => null != t.messageReference ? f.Z.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
     clipId: O,
     remoteTriggerClipId: v
-  } = i.useMemo(() => null != y ? E(y.content) : {}, [y]), I = (0, o.e7)([c.Z], () => c.Z.getMatchingGroupClip(O, v)), T = (0, o.e7)([c.Z], () => null != I && null != b && c.Z.wasClipSharedInChannel(I.id, b)), {
-    onShareClick: S
+  } = i.useMemo(() => null != y ? E(y.content) : {}, [y]), S = (0, o.e7)([c.Z], () => c.Z.getMatchingGroupClip(O, v)), I = (0, o.e7)([c.Z], () => null != S && null != b && c.Z.wasClipSharedInChannel(S.id, b)), {
+    onShareClick: T
   } = (0, d.Z)(b), A = i.useCallback(() => {
     var e;
-    null != I && null != b && (null == (e = t.messageReference) ? true : e.message_id) != null && S({
-      clips: [I],
+    null != S && null != b && (null == (e = t.messageReference) ? true : e.message_id) != null && T({
+      clips: [S],
       messageReference: {
         channel_id: b,
         message_id: t.messageReference.message_id
       }
     })
-  }, [I, b, t.messageReference, S]);
-  if (null == y || null == O && null == v || null == I || T) return null;
+  }, [S, b, t.messageReference, T]);
+  if (null == y || null == O && null == v || null == S || I) return null;
   let C = y.attachments.find(e => {
       var t;
-      return (0, a.yE)(null != (t = e.flags) ? t : 0, h.J0y.IS_CLIP)
+      return (0, a.yE)(null != (t = e.flags) ? t : 0, m.J0y.IS_CLIP)
     }),
     N = null;
   if ((null == C ? true : C.proxy_url) != null) {
-    let e = _.Z.toURLSafe(C.proxy_url);
+    let e = p.Z.toURLSafe(C.proxy_url);
     null != e && (e.searchParams.append("format", "webp"), N = e.toString())
   }
-  let R = null != N ? [N, I.thumbnail] : [I.thumbnail];
-  return (0, r.jsx)(p.Z, {
+  let P = null != N ? [N, S.thumbnail] : [S.thumbnail];
+  return (0, r.jsx)(_.Z, {
     iconNode: (0, r.jsx)(l.AlX, {
       size: "md",
       color: "currentColor"
@@ -77,15 +77,15 @@ function b(e) {
     additionalContent: (0, r.jsxs)("div", {
       className: g.previewContainer,
       children: [(0, r.jsx)(u.Z, {
-        thumbnails: R,
+        thumbnails: P,
         variant: "stacked"
       }), (0, r.jsx)(s.zxk, {
         size: "sm",
         onClick: A,
-        text: m.intl.string(m.t["5qb8EX"]),
+        text: h.intl.string(h.t["5qb8EX"]),
         icon: l.n$P
       })]
     }),
-    children: m.intl.string(m.t.ThhsNG)
+    children: h.intl.string(h.t.ThhsNG)
   })
 }

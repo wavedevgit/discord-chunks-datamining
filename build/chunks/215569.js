@@ -2,7 +2,7 @@
 /** chunk id: 215569, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => _
+  W: () => p
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk473749 = require("./473749.js"),
   Chunk830483 = require("./830483.js");
@@ -66,7 +66,7 @@ function d(e) {
 function f(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-class _ extends(r = Chunk473749.Component) {
+class p extends(r = Chunk473749.Component) {
   static getDerivedStateFromProps(e, t) {
     let {
       children: n,
@@ -165,7 +165,7 @@ class _ extends(r = Chunk473749.Component) {
       }))
     }
     let a = s({}, this.props);
-    return Object.keys(_.defaultProps).forEach(e => delete a[e]), Chunk473749.createElement(exports, Chunk830483, r)
+    return Object.keys(p.defaultProps).forEach(e => delete a[e]), Chunk473749.createElement(exports, Chunk830483, r)
   }
   constructor(e) {
     super(e), o(this, "_currentlyTransitioningKeys", true), o(this, "_keysToEnter", true), o(this, "_keysToLeave", true), o(this, "_isMounted", true), o(this, "_keyChildMapping", {}), o(this, "addChildRef", (e, t) => {
@@ -176,7 +176,7 @@ class _ extends(r = Chunk473749.Component) {
     }, this._currentlyTransitioningKeys = new Set, this._keysToEnter = [], this._keysToLeave = [], this._isMounted = false
   }
 }
-o(_, "defaultProps", {
+o(p, "defaultProps", {
   component: "span",
   transitionAppear: true,
   transitionLeave: true,

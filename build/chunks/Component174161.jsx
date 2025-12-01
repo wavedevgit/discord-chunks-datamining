@@ -27,7 +27,7 @@ function E(e) {
   } = e, l = t.id, u = (0, a.e7)([f.ZP, d.default], () => {
     var e;
     return (null == (e = f.ZP.getMember(l, d.default.getId())) ? true : e.joinedAt) != null
-  }, [l]), _ = i.useCallback(e => {
+  }, [l]), p = i.useCallback(e => {
     u && (e.stopPropagation(), (0, c.X)(t.id))
   }, [u, t.id]);
   return !u || n ? (0, r.jsx)(o.u, {
@@ -41,7 +41,7 @@ function E(e) {
     })
   }) : (0, r.jsx)(s.P3F, {
     className: g.guildNameContainer,
-    onClick: _,
+    onClick: p,
     children: (0, r.jsx)(o.u, {
       text: t.name,
       overflowOnly: true,
@@ -59,8 +59,8 @@ function b(e) {
   let {
     profile: t,
     disableGuildNameClick: n
-  } = e, o = (0, a.e7)([u.default], () => u.default.locale), c = (0, h.M)(p.default.extractTimestamp(t.id), o), d = i.useMemo(() => {
-    let e = (0, _.$5)(t);
+  } = e, o = (0, a.e7)([u.default], () => u.default.locale), c = (0, m.M)(_.default.extractTimestamp(t.id), o), d = i.useMemo(() => {
+    let e = (0, p.$5)(t);
     return (0, r.jsx)(l.Z, {
       guild: e,
       isBannerVisible: false
@@ -83,7 +83,7 @@ function b(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: m.intl.format(m.t["LC+S+m"], {
+          children: h.intl.format(h.t["LC+S+m"], {
             membersOnline: t.onlineCount
           })
         })]
@@ -94,7 +94,7 @@ function b(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: m.intl.format(m.t.zRl6XR, {
+          children: h.intl.format(h.t.zRl6XR, {
             count: t.memberCount
           })
         })]
@@ -104,7 +104,7 @@ function b(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: m.intl.format(m.t.zb2Q56, {
+        children: h.intl.format(h.t.zb2Q56, {
           createdAtDate: c
         })
       })

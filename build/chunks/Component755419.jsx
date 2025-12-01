@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   K: () => f,
-  X: () => _
+  X: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -42,7 +42,7 @@ let f = {
       }
     }
   },
-  _ = () => ({
+  p = () => ({
     id: Chunk317257.l.ORB_PROFILE_BADGE,
     icon: Chunk317257.l.ORB_PROFILE_BADGE,
     iconSrc: Chunk26028.Z,

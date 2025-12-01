@@ -6,9 +6,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
+  Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk377171 = require("./377171.js"),
   Chunk804932 = require("./804932.jsx"),
   Chunk725739 = require("./725739.js"),
   Chunk370774 = require("./370774.js"),
@@ -26,10 +26,10 @@ function m(e) {
   } = (0, u.Z)(), _ = (0, f.d)(e => e.setInboxReadState);
   if (!i) return null;
   let y = m === p.V5.ALL ? h.intl.string(h.t["2pAkDA"]) : h.intl.string(h.t.HcoRu0);
-  return (0, r.jsx)(o.u, {
+  return (0, r.jsx)(a.u, {
     position: "bottom",
     text: y,
-    children: (0, r.jsx)(a.P3F, {
+    children: (0, r.jsx)(s.P3F, {
       className: l()(t, g.headerButton, {
         [g.enabled]: m === p.V5.BOOKMARKS
       }),
@@ -42,12 +42,12 @@ function m(e) {
           viewId: n
         })
       },
-      children: m === p.V5.BOOKMARKS ? (0, r.jsx)(a.plf, {
+      children: m === p.V5.BOOKMARKS ? (0, r.jsx)(s.plf, {
         size: "xs",
-        color: s.Z.ICON_DEFAULT
-      }) : (0, r.jsx)(a.gt9, {
+        color: o.Z.colors.ICON_DEFAULT.css
+      }) : (0, r.jsx)(s.gt9, {
         size: "xs",
-        color: s.Z.ICON_TERTIARY
+        color: o.Z.colors.ICON_TERTIARY.css
       })
     })
   })

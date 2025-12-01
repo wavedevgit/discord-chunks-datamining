@@ -14,7 +14,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk926491 = require("./926491.js"),
   Chunk526761 = require("./526761.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,20 +23,20 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,8 +47,8 @@ function h(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -81,16 +81,16 @@ let E = 20,
     y()
   };
 
-function I() {
+function S() {
   var e;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.stickerFrecency) ? true : module.stickers;
   if (null == exports) returnfalse;
-  b.overwriteHistory(a().mapValues(exports, e => m(p({}, e), {
+  b.overwriteHistory(a().mapValues(exports, e => h(_({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), g.pendingUsages)
 }
 
-function T(e) {
+function I(e) {
   let {
     settings: {
       type: t
@@ -100,9 +100,9 @@ function T(e) {
   if (t !== f.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) returnfalse;
   g.pendingUsages = []
 }
-class S extends(r = Chunk442837.ZP.PersistedStore) {
+class T extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(d.Z, c.Z), null != e && (g = e), this.syncWith([d.Z], v), this.syncWith([c.Z], I)
+    this.waitFor(d.Z, c.Z), null != e && (g = e), this.syncWith([d.Z], v), this.syncWith([c.Z], S)
   }
   getState() {
     return g
@@ -114,8 +114,8 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
     return b
   }
 }
-_(S, "displayName", "StickersPersistedStore"), _(S, "persistKey", "StickersPersistedStoreV2");
-let A = new S(Chunk570140.Z, {
+p(T, "displayName", "StickersPersistedStore"), p(T, "persistKey", "StickersPersistedStoreV2");
+let A = new T(Chunk570140.Z, {
   STICKER_TRACK_USAGE: O,
-  USER_SETTINGS_PROTO_UPDATE: T
+  USER_SETTINGS_PROTO_UPDATE: I
 })

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   CD: () => l,
-  FV: () => _,
+  FV: () => p,
   Nv: () => d,
   Pc: () => u,
   X: () => f,
@@ -114,7 +114,7 @@ let l = [{
     Icon: Chunk481060.dz2,
     getText: () => Chunk388032.intl.string(Chunk388032.t.Uukj4o)
   }],
-  _ = [{
+  p = [{
     Icon: Chunk481060.rG2,
     getText: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.p8QVLT, {
       maxUploadPremium: (0, Chunk74538.v9)(Chunk474936.PremiumTypes.TIER_0, {

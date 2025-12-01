@@ -2,7 +2,7 @@
 /** chunk id: 355045, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,20 +24,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk375646 = require("./375646.js");
-let I = function(e) {
+let S = function(e) {
   let {
     closeLayer: t,
     guild: n,
     onCtaVisibilityChange: a
-  } = e, I = i.useRef(null), T = (0, s.e7)([h.default], () => h.default.getCurrentUser()), S = (0, s.e7)([m.Z], () => m.Z.boostSlots), {
+  } = e, S = i.useRef(null), I = (0, s.e7)([m.default], () => m.default.getCurrentUser()), T = (0, s.e7)([h.Z], () => h.Z.boostSlots), {
     analyticsLocations: A
-  } = (0, d.ZP)(), C = i.useMemo(() => Object.keys(S).filter(e => {
-    let t = S[e];
+  } = (0, d.ZP)(), C = i.useMemo(() => Object.keys(T).filter(e => {
+    let t = T[e];
     return null != t.premiumGuildSubscription && t.premiumGuildSubscription.guildId === n.id
-  }).length, [S, n.id]), N = (0, p.Z)(e.guild.id).total;
+  }).length, [T, n.id]), N = (0, _.Z)(e.guild.id).total;
 
-  function R() {
-    (0, _.Z)({
+  function P() {
+    (0, p.Z)({
       initialPlanId: null,
       subscriptionTier: y.Si.TIER_2,
       analyticsLocations: A,
@@ -51,8 +51,8 @@ let I = function(e) {
     })
   }
 
-  function P() {
-    (0, _.Z)({
+  function R() {
+    (0, p.Z)({
       initialPlanId: null,
       subscriptionTier: y.Si.TIER_2,
       isGift: true,
@@ -103,11 +103,11 @@ let I = function(e) {
     }), (0, r.jsxs)("div", {
       className: v.guildBoostCtas,
       children: [(0, r.jsx)(l.$, {
-        innerRef: I,
+        innerRef: S,
         onChange: a,
         threshold: .9,
         children: (0, r.jsx)("div", {
-          ref: I,
+          ref: S,
           className: o()(v.guildBoostCta, v.guildBoostCtaBoostWrapper),
           children: (0, r.jsx)(E.Z, {
             className: v.guildBoostCtaBoost,
@@ -126,13 +126,13 @@ let I = function(e) {
             fullWidth: true
           })
         })
-      }), g.ZP.hasFreeBoosts(T) || g.ZP.isPremium(T, y.PremiumTypes.TIER_2) ? (0, r.jsxs)(c.zx, {
+      }), g.ZP.hasFreeBoosts(I) || g.ZP.isPremium(I, y.PremiumTypes.TIER_2) ? (0, r.jsxs)(c.zx, {
         "data-migration-pending": true,
         className: o()(v.guildBoostCta, v.guildBoostCtaSecondary),
         innerClassName: o()(v.__invalid_guildBoostCtaContent, v.guildBoostCtaGiftContent),
         look: c.zx.Looks.OUTLINED,
         color: c.zx.Colors.WHITE,
-        onClick: P,
+        onClick: R,
         size: c.zx.Sizes.LARGE,
         children: [(0, r.jsx)(u.OgN, {
           size: "md",
@@ -145,7 +145,7 @@ let I = function(e) {
         innerClassName: o()(v.__invalid_guildBoostCtaContent, v.__invalid_guildBoostCtaSubscribeContent),
         look: c.zx.Looks.OUTLINED,
         color: c.zx.Colors.WHITE,
-        onClick: R,
+        onClick: P,
         size: c.zx.Sizes.LARGE,
         children: O.intl.string(O.t.Q43TvC)
       })]

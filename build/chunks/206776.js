@@ -2,7 +2,7 @@
 /** chunk id: 206776, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => h
+  l: () => m
 });
 var r, i, Chunk570140 = require("./570140.js"),
   Chunk830917 = require("./830917.js"),
@@ -32,10 +32,10 @@ let d = null != (r = window.requestIdleCallback) ? r : e => {
   },
   f = null != (i = window.cancelIdleCallback) ? i : clearTimeout;
 
-function _(e) {
+function p(e) {
   return null == e ? new c.Lj(c.HO, true) : new c.Lj(e.timeRemaining(), e.didTimeout)
 }
-class p extends Chunk692401.W {
+class _ extends Chunk692401.W {
   _queueIdleCallback() {
     if (!this._enableRequestIdleCallback || this._criticalWorkScheduled) return this._processWorkCallback();
     this.telemetry.time(Chunk459005.JV.TIME_TO_FIRE_IDLE_CALLBACK), this._scheduleRequestIdleCallback(e => {
@@ -46,7 +46,7 @@ class p extends Chunk692401.W {
       }
       if (this.telemetry.timeEnd(l.JV.TIME_TO_FIRE_IDLE_CALLBACK), (null != (t = null == e ? true : e.timeRemaining()) ? t : c.HO) < c.HO) this.telemetry.time(l.JV.TIME_TO_FIRE_IDLE_CALLBACK), this._scheduleRequestIdleCallback(e => {
         this.telemetry.timeEnd(l.JV.TIME_TO_FIRE_IDLE_CALLBACK);
-        let t = _(e),
+        let t = p(e),
           n = null == t ? true : t.timeRemaining();
         null != n && this.telemetry.timeTrack(l.JV.DEADLINE_INITIAL_TIME_REMAINING, n), this._processWorkCallback(t)
       }, {
@@ -54,7 +54,7 @@ class p extends Chunk692401.W {
       });
       else {
         this.telemetry.timeEnd(l.JV.TIME_TO_FIRE_IDLE_CALLBACK);
-        let t = _(e),
+        let t = p(e),
           n = null == t ? true : t.timeRemaining();
         null != n && this.telemetry.timeTrack(l.JV.DEADLINE_INITIAL_TIME_REMAINING, n), this._processWorkCallback(t)
       }
@@ -86,6 +86,6 @@ class p extends Chunk692401.W {
   }
 }
 
-function h() {
-  return new p
+function m() {
+  return new _
 }

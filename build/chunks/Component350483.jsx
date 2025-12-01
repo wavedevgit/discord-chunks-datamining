@@ -2,7 +2,7 @@
 /** chunk id: 350483, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -60,46 +60,46 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  let n = [h.ME, ...d.ZP.getFlattenedGuildIds()],
+  let n = [m.ME, ...d.ZP.getFlattenedGuildIds()],
     r = n.indexOf(e);
   return t > 0 ? n.slice(r).concat(n.slice(0, r), e) : (n.splice(r, 0, e), n.slice(r + 1).concat(n.slice(0, r + 1)))
 }
 
 function v(e, t) {
-  return e === h.ME ? f.Z.getPrivateChannelIds() : (0, s.Z)(e, {
+  return e === m.ME ? f.Z.getPrivateChannelIds() : (0, s.Z)(e, {
     withVoiceChannels: t,
     withCurrentVoiceChannel: true
   }).map(e => e.id)
 }
 
-function I(e, t) {
+function S(e, t) {
   return [{
     resourceId: e,
-    type: m.W.GUILD_EVENT
+    type: h.W.GUILD_EVENT
   }, ...v(e, t)]
 }
 
-function T(e, t) {
+function I(e, t) {
   var i, a;
   let s, {
       channelPredicate: d = () => true,
       guildPredicate: f = () => true,
-      guildFeaturePredicate: m = () => false,
+      guildFeaturePredicate: h = () => false,
       ensureChatIsVisible: g = () => false,
       withVoiceChannels: b = false
     } = t,
-    v = null != (i = l.Z.getState().guildId) ? i : h.ME,
-    T = l.Z.getState().channelId,
-    S = O(v, e),
-    A = e > 0 ? 0 : S.length - 1,
-    C = I(v, b),
-    N = C.indexOf(T) + e;
+    v = null != (i = l.Z.getState().guildId) ? i : m.ME,
+    I = l.Z.getState().channelId,
+    T = O(v, e),
+    A = e > 0 ? 0 : T.length - 1,
+    C = S(v, b),
+    N = C.indexOf(I) + e;
   for (; null != v && "" !== v;) {
     if (s = C[N], f(v))
       for (; null != s && "" !== s;) {
         if ("string" == typeof s) {
-          if (d(v, s)) return (0, p.K)(v, s, false, g(v, s))
-        } else if ("object" == typeof s && m(s.resourceId, s.type)) return v !== u.Z.getGuildId() && (0, p.K)(v, null == (a = c.ZP.getDefaultChannel(v)) ? true : a.id), (0, o.ZDy)(async () => {
+          if (d(v, s)) return (0, _.K)(v, s, false, g(v, s))
+        } else if ("object" == typeof s && h(s.resourceId, s.type)) return v !== u.Z.getGuildId() && (0, _.K)(v, null == (a = c.ZP.getDefaultChannel(v)) ? true : a.id), (0, o.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("4096"), n.e("56236"), n.e("74103")]).then(n.bind(n, 17671));
@@ -109,12 +109,12 @@ function T(e, t) {
         });
         N += e, s = C[N]
       }
-    if (A += e, null == (v = S[A]) || "" === v) break;
-    C = I(v, b), N = e < 0 ? C.length - 1 : 0
+    if (A += e, null == (v = T[A]) || "" === v) break;
+    C = S(v, b), N = e < 0 ? C.length - 1 : 0
   }
-  _.S.dispatch(h.CkL.SHAKE_APP, {
+  p.S.dispatch(m.CkL.SHAKE_APP, {
     duration: 200,
     intensity: 2
   })
 }
-let S = a().throttle(T, Chunk981631.aZC)
+let T = a().throttle(I, Chunk981631.aZC)

@@ -2,8 +2,8 @@
 /** chunk id: 156518, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => h,
-  Z: () => m
+  Y: () => m,
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,13 +18,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function m(e) {
   let {
     user: t,
     analyticsLocation: n
-  } = e, r = (0, a.e7)([u.Z], () => u.Z.getRelationshipType(t.id) === _.OGo.PENDING_OUTGOING), {
+  } = e, r = (0, a.e7)([u.Z], () => u.Z.getRelationshipType(t.id) === p.OGo.PENDING_OUTGOING), {
     trackUserProfileAction: o
-  } = (0, f.KZ)(), p = (0, s.Z)({
+  } = (0, f.KZ)(), _ = (0, s.Z)({
     user: t,
     location: n,
     onFriendRemove: () => o({
@@ -33,15 +33,15 @@ function h(e) {
     onFriendRequestSent: () => o({
       action: "SEND_FRIEND_REQUEST"
     })
-  }), h = (0, l.Z)({
+  }), m = (0, l.Z)({
     user: t
-  }), m = (0, c.Z)({
+  }), h = (0, c.Z)({
     user: t
   });
-  return i.useMemo(() => [r ? null : p, h, m].filter(d.lm), [h, p, r, m])
+  return i.useMemo(() => [r ? null : _, m, h].filter(d.lm), [m, _, r, h])
 }
 
-function m(e) {
+function h(e) {
   let {
     menuItems: t,
     children: n,
@@ -57,7 +57,7 @@ function m(e) {
         navId: "user-profile-friend-request-buttons",
         onSelect: true,
         onClose: n,
-        "aria-label": p.intl.string(p.t.Jszi3G),
+        "aria-label": _.intl.string(_.t.Jszi3G),
         children: t
       })
     },

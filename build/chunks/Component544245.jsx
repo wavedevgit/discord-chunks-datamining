@@ -40,8 +40,8 @@ function p() {
         includeFriends: t,
         includeGDMs: n,
         includeDMs: a,
-        includeQuickSwitcherState: l,
-        includeUserSearchWorkerState: i,
+        includeQuickSwitcherState: r,
+        includeUserSearchWorkerState: l,
         isUploading: s
       } = m.getState();
       if (!Chunk972959) try {

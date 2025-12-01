@@ -2,7 +2,7 @@
 /** chunk id: 395199, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,19 +18,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk542886 = require("./542886.js");
 
-function m(e) {
+function h(e) {
   let {
     imageClass: t,
     children: n,
     error: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: h.content,
+    className: m.content,
     children: [(0, r.jsx)("div", {
-      className: o()(h.image, t)
+      className: o()(m.image, t)
     }), n, (0, r.jsx)(c.W, {
       children: null != i ? (0, r.jsx)(u.oXn, {
-        className: h.error,
+        className: m.error,
         children: (0, r.jsx)(s.M14, {
           type: "critical",
           children: i.message
@@ -44,17 +44,17 @@ let g = e => {
     canceledCount: t
   } = e, n = (0, l.e7)([f.Z], () => f.Z.getPremiumTypeSubscription());
   return null == n ? null : (0, r.jsxs)("div", {
-    className: h.pendingCancellation,
+    className: m.pendingCancellation,
     children: [(0, r.jsx)(u.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
-      className: h.pendingCancellationIcon
+      className: m.pendingCancellationIcon
     }), (0, r.jsx)(u.Text, {
       variant: "text-md/normal",
-      className: h.pendingCancellationMessage,
-      children: p.intl.format(p.t.SFpsCH, {
+      className: m.pendingCancellationMessage,
+      children: _.intl.format(_.t.SFpsCH, {
         date: n.currentPeriodEnd,
         canceledCount: t
       })
@@ -72,14 +72,14 @@ function E(e) {
     slotCount: s = 1,
     canceledCount: l = 0
   } = e;
-  return (0, r.jsxs)(m, {
+  return (0, r.jsxs)(h, {
     imageClass: t,
     error: o,
     children: [(0, r.jsx)(u.Text, {
       variant: "text-md/normal",
       children: n
     }), (0, r.jsx)(d.Z, {
-      className: h.guildCard,
+      className: m.guildCard,
       guild: i,
       subscriptionChange: s
     }), (0, r.jsx)(u.Text, {
@@ -102,7 +102,7 @@ function b(e) {
     slotCount: f = 1,
     canceledCount: E = 0
   } = e, b = i.useRef(s), y = null == (t = b.current) ? true : t.length, O = null == (n = b.current) ? true : n.reduce((e, t) => (e.hasOwnProperty(t.id) || (e[t.id] = []), e[t.id].push(t), e), {});
-  return (0, r.jsxs)(m, {
+  return (0, r.jsxs)(h, {
     imageClass: a,
     error: c,
     children: [(0, r.jsx)(u.Text, {
@@ -110,24 +110,24 @@ function b(e) {
       children: o
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/bold",
-      className: h.transferGuildCardHeader,
-      children: p.intl.format(p.t["5zQYEz"], {
+      className: m.transferGuildCardHeader,
+      children: _.intl.format(_.t["5zQYEz"], {
         guildCount: null != y ? y : 0
       })
-    }), null != O ? _.default.keys(O).map(e => (0, r.jsx)(d.Z, {
-      className: h.transferFromGuildCard,
+    }), null != O ? p.default.keys(O).map(e => (0, r.jsx)(d.Z, {
+      className: m.transferFromGuildCard,
       guild: O[e][0],
       subscriptionChange: false * O[e].length
     }, e)) : null, (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
-      className: h.transferGuildCardHeader,
-      children: p.intl.format(p.t.ct6oxD, {
+      className: m.transferGuildCardHeader,
+      children: _.intl.format(_.t.ct6oxD, {
         slotCount: f
       })
     }), (0, r.jsx)("div", {
-      className: h.activeTransferGuildCardBorder,
+      className: m.activeTransferGuildCardBorder,
       children: (0, r.jsx)(d.Z, {
-        className: h.transferToGuildCard,
+        className: m.transferToGuildCard,
         guild: l,
         subscriptionChange: null != s ? s.length : 1
       })
@@ -146,7 +146,7 @@ function y(e) {
     onCancel: o
   } = e;
   return (0, r.jsx)("div", {
-    className: h.footer,
+    className: m.footer,
     children: (0, r.jsxs)(u.ButtonGroup, {
       direction: "horizontal-reverse",
       children: [(0, r.jsx)(u.Button, {
@@ -157,7 +157,7 @@ function y(e) {
         "aria-label": n
       }), (0, r.jsx)(u.Button, {
         variant: "secondary",
-        text: p.intl.string(p.t["ETE/oC"]),
+        text: _.intl.string(_.t["ETE/oC"]),
         onClick: o,
         disabled: i
       })]
@@ -168,7 +168,7 @@ function y(e) {
 function O(e, t, n, r, i) {
   return [{
     variant: "secondary",
-    text: p.intl.string(p.t["ETE/oC"]),
+    text: _.intl.string(_.t["ETE/oC"]),
     onClick: i,
     disabled: n
   }, {
@@ -191,20 +191,20 @@ let v = e => {
     slotCount: u = 1,
     canceledCount: d = 0,
     isTransfer: f = false,
-    fromGuilds: _,
-    toGuild: p,
-    confirmation: h,
-    confirmationLabel: m,
+    fromGuilds: p,
+    toGuild: _,
+    confirmation: m,
+    confirmationLabel: h,
     isModifyingSubscription: g,
     onConfirm: y,
     onCancel: v,
-    error: I
-  } = e, T = O(h, m, g, y, v), S = () => f && null != p ? (0, r.jsx)(b, {
+    error: S
+  } = e, I = O(m, h, g, y, v), T = () => f && null != _ ? (0, r.jsx)(b, {
     imageClass: null != o ? o : "",
     blurb: a,
-    fromGuilds: _,
-    toGuild: p,
-    error: I,
+    fromGuilds: p,
+    toGuild: _,
+    error: S,
     slotCount: u,
     canceledCount: d
   }) : null != l ? (0, r.jsx)(E, {
@@ -212,7 +212,7 @@ let v = e => {
     blurb: a,
     guild: l,
     warning: c,
-    error: I,
+    error: S,
     slotCount: u,
     canceledCount: d
   }) : null;
@@ -223,12 +223,12 @@ let v = e => {
     children: [(0, r.jsx)(s.xBx, {
       title: i
     }), (0, r.jsx)(s.fef, {
-      children: S()
+      children: T()
     }), (0, r.jsx)(s.Go$, {
-      actions: T,
+      actions: I,
       actionsFullWidth: false
     })]
   })
 };
 v.ApplyBody = E, v.TransferBody = b, v.Footer = y;
-let I = v
+let S = v

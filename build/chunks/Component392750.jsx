@@ -70,13 +70,13 @@ function m() {
       otherUserId: t,
       communicationProbability: n,
       vcProbability: a,
-      isFriend: l
+      isFriend: r
     } = e;
     return {
       user: s.default.getUser(t),
       affinity: n,
       vcProbability: a,
-      isFriend: l,
+      isFriend: r,
       key: t
     }
   }));

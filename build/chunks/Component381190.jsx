@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk937615 = require("./937615.js"),
   Chunk380979 = require("./380979.js"),
   Chunk673599 = require("./673599.js");
-let _ = e => {
+let p = e => {
     let {
       displayName: t,
       product: n
@@ -25,7 +25,7 @@ let _ = e => {
       className: f.avatarDecorationPreview
     })
   },
-  p = e => {
+  _ = e => {
     let {
       displayName: t,
       product: n
@@ -36,7 +36,7 @@ let _ = e => {
       className: f.nameplatePreview
     })
   },
-  h = e => {
+  m = e => {
     let {
       displayName: t,
       product: n
@@ -47,7 +47,7 @@ let _ = e => {
       className: f.avatarDecorationPreview
     })
   },
-  m = e => {
+  h = e => {
     let {
       subscriptionPlanId: t
     } = e;
@@ -80,17 +80,17 @@ let _ = e => {
     });
     switch (n.type) {
       case s.Z.AVATAR_DECORATION:
-        return (0, r.jsx)(_, {
-          displayName: t,
-          product: n
-        });
-      case s.Z.NAMEPLATE:
         return (0, r.jsx)(p, {
           displayName: t,
           product: n
         });
+      case s.Z.NAMEPLATE:
+        return (0, r.jsx)(_, {
+          displayName: t,
+          product: n
+        });
       case s.Z.PROFILE_EFFECT:
-        return (0, r.jsx)(h, {
+        return (0, r.jsx)(m, {
           displayName: t,
           product: n
         });
@@ -109,25 +109,25 @@ let _ = e => {
       currency: a,
       className: s
     } = e, {
-      product: _
+      product: p
     } = (0, c.Z)(t), {
-      displayName: p,
-      typeName: h,
+      displayName: _,
+      typeName: m,
       isSubscription: E
-    } = (0, d.HB)(null != _ ? _ : null, n);
-    if (null != t && !E && null == _ || null == p) return null;
+    } = (0, d.HB)(null != p ? p : null, n);
+    if (null != t && !E && null == p || null == _) return null;
     let b = (0, u.T4)(i, a);
     return (0, r.jsxs)("div", {
       className: o()(f.container, s),
-      children: [E ? (0, r.jsx)(m, {
+      children: [E ? (0, r.jsx)(h, {
         subscriptionPlanId: n
       }) : (0, r.jsx)(g, {
-        displayName: p,
-        product: null != _ ? _ : null
+        displayName: _,
+        product: null != p ? p : null
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
-          children: null != h ? "".concat(p, " • ").concat(h) : p
+          children: null != m ? "".concat(_, " • ").concat(m) : _
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",

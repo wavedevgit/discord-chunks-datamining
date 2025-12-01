@@ -17,7 +17,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m {
+class h {
   _onGameDetectionUpdate(e) {
     this.applications = e.map(e => {
       var t, n;
@@ -96,7 +96,7 @@ class m {
               resolution: o.resolution,
               frameRate: o.fps
             },
-            context: p.Yn.STREAM
+            context: _.Yn.STREAM
           })
         } else i.Z.setGoLiveSource({
           desktopSettings: {
@@ -108,7 +108,7 @@ class m {
             resolution: o.resolution,
             frameRate: o.fps
           },
-          context: p.Yn.STREAM
+          context: _.Yn.STREAM
         });
         break;
       case s.A.PAUSE:
@@ -140,7 +140,7 @@ class m {
     }
   }
   constructor() {
-    h(this, "director", true), h(this, "applications", true), h(this, "streamKey", true), h(this, "mode", true), this.mode = null, this.applications = [], this.director = new Chunk252759.a(e => this._onDirectorAction(e)), Chunk570140.Z.subscribe("STREAM_START", e => {
+    m(this, "director", true), m(this, "applications", true), m(this, "streamKey", true), m(this, "mode", true), this.mode = null, this.applications = [], this.director = new Chunk252759.a(e => this._onDirectorAction(e)), Chunk570140.Z.subscribe("STREAM_START", e => {
       let {
         streamType: t,
         guildId: n,
@@ -176,20 +176,20 @@ class m {
         videoState: t,
         context: n
       } = e;
-      n === p.Yn.STREAM && this._onCapturePaused(t === _.FQ1.PAUSED)
+      n === _.Yn.STREAM && this._onCapturePaused(t === p.FQ1.PAUSED)
     }), Chunk570140.Z.subscribe("MEDIA_ENGINE_SET_GO_LIVE_SOURCE", e => {
       var t;
       let {
         settings: n,
         errorCode: r
       } = e;
-      (null == n ? true : n.context) === p.Yn.STREAM && (null == n ? true : n.desktopSettings) == null && (null == n ? true : n.cameraSettings) == null && this._onCaptureEnded(null == r), (null == n || null == (t = n.desktopSettings) ? true : t.sound) != null && (this.director.sound = n.desktopSettings.sound)
+      (null == n ? true : n.context) === _.Yn.STREAM && (null == n ? true : n.desktopSettings) == null && (null == n ? true : n.cameraSettings) == null && this._onCaptureEnded(null == r), (null == n || null == (t = n.desktopSettings) ? true : t.sound) != null && (this.director.sound = n.desktopSettings.sound)
     })
   }
 }
 let g = {
   instance: null,
   init() {
-    null == this.instance && (this.instance = new m)
+    null == this.instance && (this.instance = new h)
   }
 }

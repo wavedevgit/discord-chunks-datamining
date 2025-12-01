@@ -16,7 +16,7 @@ function s(e) {
     state: s
   } = e, [l, c] = r.useState(true), u = null == s ? true : s.query, d = null == s ? true : s.isVisible, {
     renderWindow: f
-  } = r.useContext(i.ZP), _ = r.useCallback(() => {
+  } = r.useContext(i.ZP), p = r.useCallback(() => {
     var e, t, r, i;
     if (null != s && (null == u || !d)) return void c(true);
     if ((null == u ? true : u.type) === a.eq.MENTION_SUGGESTIONS) {
@@ -30,26 +30,26 @@ function s(e) {
     }
     if ((null == u ? true : u.type) === a.eq.GIFS || null != n && !(null == (e = n.autocomplete) ? true : e.alwaysUseLayer)) return void c(null);
     let l = f.document.getSelection(),
-      _ = null != l && l.rangeCount > 0 ? l.getRangeAt(0) : null;
-    if (null == _) return;
-    let p = _.startContainer,
-      h = _.startOffset;
-    for (; null != p;) {
-      if (p.nodeType !== Node.TEXT_NODE || null == p.nodeValue) return void c(null);
-      if ((null == (t = p.nodeValue) ? true : t.length) === 0) {
-        h = null != (i = null == (p = p.previousSibling) || null == (r = p.nodeValue) ? true : r.length) ? i : 0;
+      p = null != l && l.rangeCount > 0 ? l.getRangeAt(0) : null;
+    if (null == p) return;
+    let _ = p.startContainer,
+      m = p.startOffset;
+    for (; null != _;) {
+      if (_.nodeType !== Node.TEXT_NODE || null == _.nodeValue) return void c(null);
+      if ((null == (t = _.nodeValue) ? true : t.length) === 0) {
+        m = null != (i = null == (_ = _.previousSibling) || null == (r = _.nodeValue) ? true : r.length) ? i : 0;
         continue
       }
-      null != u && (h >= u.queryText.length ? h -= u.queryText.length : h = 0);
+      null != u && (m >= u.queryText.length ? m -= u.queryText.length : m = 0);
       break
     }
-    if (null == p) return;
-    let m = f.document.createRange();
-    m.setStart(p, h), m.setEnd(p, h);
-    let g = m.getBoundingClientRect();
+    if (null == _) return;
+    let h = f.document.createRange();
+    h.setStart(_, m), h.setEnd(_, m);
+    let g = h.getBoundingClientRect();
     (null == g ? true : g.height) !== 0 && c(null != g ? g : null)
   }, [f.document, s, d, u, n]);
-  return r.useEffect(() => (f.document.addEventListener("selectionchange", _), () => f.document.removeEventListener("selectionchange", _)), [f.document, _]), r.useEffect(() => {
-    _()
-  }, [_, t]), l
+  return r.useEffect(() => (f.document.addEventListener("selectionchange", p), () => f.document.removeEventListener("selectionchange", p)), [f.document, p]), r.useEffect(() => {
+    p()
+  }, [p, t]), l
 }

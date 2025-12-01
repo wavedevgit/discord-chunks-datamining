@@ -2,7 +2,7 @@
 /** chunk id: 868781, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -54,7 +54,7 @@ function O(e) {
     iconClassName: o,
     hideIcon: c = false,
     hideText: u = false,
-    hideTooltip: m = false,
+    hideTooltip: h = false,
     canTruncate: g = true
   } = e, {
     descriptiveTextEnabled: E
@@ -67,7 +67,7 @@ function O(e) {
   }), {
     analyticsLocations: O
   } = (0, s.ZP)(), v = i.useCallback(() => {
-    (0, _.A)({
+    (0, p.A)({
       analyticsLocations: O,
       activityType: t.type,
       applicationId: t.application_id
@@ -75,21 +75,21 @@ function O(e) {
   }, [O, t.application_id, t.type]);
   if (c && u) return null;
   let {
-    text: I,
-    tooltip: T
-  } = (0, f.Z)(t, E || b), S = y(t), A = u && !m && null != T;
+    text: S,
+    tooltip: I
+  } = (0, f.Z)(t, E || b), T = y(t), A = u && !h && null != I;
   return (0, r.jsxs)(r.Fragment, {
-    children: [!c && null != S && (0, r.jsx)(p.Z, {
-      icon: S,
-      tooltipText: A ? T : true,
+    children: [!c && null != T && (0, r.jsx)(_.Z, {
+      icon: T,
+      tooltipText: A ? I : true,
       className: o,
       onTooltipShow: A ? v : true
-    }), !u && (0, r.jsx)(h.Z, {
+    }), !u && (0, r.jsx)(m.Z, {
       variant: n,
       className: a,
       canTruncate: g,
-      hideTooltip: m,
-      children: I
+      hideTooltip: h,
+      children: S
     })]
   })
 }
@@ -105,19 +105,19 @@ function v(e) {
     hideTooltip: c = false,
     canTruncate: u = true
   } = e, {
-    descriptiveTextEnabled: _
+    descriptiveTextEnabled: p
   } = (0, d.f)({
     location: "PresenceActivityStatusWithCombinedTooltip"
   }), {
-    enableTopNavButton: h
+    enableTopNavButton: m
   } = (0, l.Cq)({
     location: "PresenceActivityStatusWithCombinedTooltip"
   }), {
     text: g,
     tooltip: E
-  } = (0, f.Z)(t, _ || h), b = y(t), O = null != b && !o;
-  return (0, r.jsx)(m.Z, {
-    icon: O ? (0, r.jsx)(p.Z, {
+  } = (0, f.Z)(t, p || m), b = y(t), O = null != b && !o;
+  return (0, r.jsx)(h.Z, {
+    icon: O ? (0, r.jsx)(_.Z, {
       icon: b,
       className: a
     }) : true,
@@ -131,7 +131,7 @@ function v(e) {
   })
 }
 
-function I(e) {
+function S(e) {
   return (0, u.b)({
     location: "VoiceActivityStatusExperimentWrapper"
   }) ? (0, r.jsx)(v, b({}, e)) : (0, r.jsx)(O, b({}, e))

@@ -2,7 +2,7 @@
 /** chunk id: 62817, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => x
 }), require("./35282.js"), require("./388685.js"), require("./358797.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -48,20 +48,20 @@ function u(e, t) {
 }
 let d = Object.freeze([]),
   f = {},
-  _ = {},
   p = {},
-  h = {},
-  m = {};
+  _ = {},
+  m = {},
+  h = {};
 
 function g(e, t) {}
 
 function E() {
-  m = {}
+  h = {}
 }
 
 function b(e, t) {
   let n = f[e];
-  return null != n && (f[e] = n.filter(e => e.id !== t), delete _[t], delete p[t], n.length !== f[e].length)
+  return null != n && (f[e] = n.filter(e => e.id !== t), delete p[t], delete _[t], n.length !== f[e].length)
 }
 
 function y() {
@@ -82,14 +82,22 @@ function v(e) {
   } = e;
   if (a._aborted || a._errored) return;
   let s = null != (t = f[r]) ? t : d;
-  if (_[i.id] = a, f[r] = [...s, i], null == o) return;
-  p[i.id] = o;
+  if (p[i.id] = a, f[r] = [...s, i], null == o) return;
+  _[i.id] = o;
   let {
     items: c
   } = i;
-  null != c && (h[o.id] = u(l({}, i), {
+  null != c && (m[o.id] = u(l({}, i), {
     items: c
   })), null != (n = o.nonce) || o.id
+}
+
+function S(e) {
+  let {
+    channelId: t,
+    file: n
+  } = e;
+  T(t, n)
 }
 
 function I(e) {
@@ -97,23 +105,15 @@ function I(e) {
     channelId: t,
     file: n
   } = e;
-  S(t, n)
+  T(t, n)
 }
 
-function T(e) {
-  let {
-    channelId: t,
-    file: n
-  } = e;
-  S(t, n)
-}
-
-function S(e, t) {
+function T(e, t) {
   let n = f[e];
   if (null == n) returnfalse;
   f[e] = n.map(e => e.id === t.id ? l({}, e, t) : e);
-  let r = p[t.id];
-  null != r && null != h[r.id] && (h[r.id] = l({}, h[r.id], t))
+  let r = _[t.id];
+  null != r && null != m[r.id] && (m[r.id] = l({}, m[r.id], t))
 }
 
 function A(e) {
@@ -135,7 +135,7 @@ function C(e) {
 function N(e) {
   let {
     file: t
-  } = e, n = _[t.id];
+  } = e, n = p[t.id];
   if (null == n) returnfalse;
   setImmediate(() => {
     var e;
@@ -143,35 +143,35 @@ function N(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     file: t,
     itemId: n
-  } = e, r = _[t.id];
+  } = e, r = p[t.id];
   if (null == r) returnfalse;
   setImmediate(() => r.cancelItem(n))
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t,
     file: n
-  } = e, r = p[n.id];
+  } = e, r = _[n.id];
   if (null != r) {
     var i;
     null != (i = r.nonce) || r.id
   }
-  S(t, n)
+  T(t, n)
 }
 
-function D(e) {
+function w(e) {
   let {
     file: t,
     messageId: n
   } = e;
-  h[n] = t
+  m[n] = t
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk375954.Z)
   }
@@ -180,26 +180,26 @@ class w extends(r = Chunk442837.ZP.Store) {
     return null != (t = f[e]) ? t : d
   }
   getMessageForFile(e) {
-    return p[e]
+    return _[e]
   }
   getUploaderFileForMessageId(e) {
-    return h[e]
+    return m[e]
   }
   getUploadAttachments(e) {
-    if (null != e) return m[e]
+    if (null != e) return h[e]
   }
 }
-s(w, "displayName", "UploadStore");
-let L = new w(Chunk570140.Z, {
+s(D, "displayName", "UploadStore");
+let x = new D(Chunk570140.Z, {
   CONNECTION_OPEN: y,
   LOGOUT: O,
   UPLOAD_START: v,
-  UPLOAD_COMPRESSION_PROGRESS: T,
-  UPLOAD_PROGRESS: I,
+  UPLOAD_COMPRESSION_PROGRESS: I,
+  UPLOAD_PROGRESS: S,
   UPLOAD_COMPLETE: A,
   UPLOAD_FAIL: C,
   UPLOAD_CANCEL_REQUEST: N,
-  UPLOAD_ITEM_CANCEL_REQUEST: R,
-  UPLOAD_FILE_UPDATE: P,
-  UPLOAD_RESTORE_FAILED_UPLOAD: D
+  UPLOAD_ITEM_CANCEL_REQUEST: P,
+  UPLOAD_FILE_UPDATE: R,
+  UPLOAD_RESTORE_FAILED_UPLOAD: w
 })

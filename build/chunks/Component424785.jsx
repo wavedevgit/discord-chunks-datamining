@@ -1,7 +1,7 @@
 /** Chunk was on 64271 **/
 /** chunk id: 424785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => X
+  Z: () => Q
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -283,7 +283,7 @@ class Y extends Chunk98597.ZP {
 }
 let q = (0, Chunk146773.B)((0, Chunk888651.Q)(Y));
 
-function X(e) {
+function Q(e) {
   let {
     guild: t,
     channel: n,

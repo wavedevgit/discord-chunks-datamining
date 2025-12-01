@@ -15,7 +15,7 @@ var Chunk623279 = require("./623279.js"),
   Chunk598105 = require("./598105.js"),
   Chunk643413 = require("./643413.js");
 
-function _(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,15 +23,15 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = 250,
-  h = new Chunk710845.Z("Spellchecker"),
-  m = null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.spellCheck;
+let _ = 250,
+  m = new Chunk710845.Z("Spellchecker"),
+  h = null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.spellCheck;
 
 function g(e) {
   var t;
   e = null != (t = f.Z[e]) ? t : e;
   let n = (0, r.parse)(e.replace(/[_-]/g, "-"));
-  if (null == n || null == n.langtag.language || null == n.langtag.region) return void h.error("".concat(e, " is not a valid locale."));
+  if (null == n || null == n.langtag.language || null == n.langtag.region) return void m.error("".concat(e, " is not a valid locale."));
   let {
     language: i,
     region: a
@@ -46,12 +46,12 @@ class E {
     this._enabled = e
   }
   setLearnedWords(e) {
-    m.setLearnedWords(e)
+    h.setLearnedWords(e)
   }
   setLocale(e) {
     var t;
-    null == (t = m.setLocale(e)) || t.then(t => {
-      h.info("Switching to ".concat(e), t ? "(available)" : "(unavailable)")
+    null == (t = h.setLocale(e)) || t.then(t => {
+      m.info("Switching to ".concat(e), t ? "(available)" : "(unavailable)")
     })
   }
   setAppLocale(e) {
@@ -75,10 +75,10 @@ class E {
     return this.isMisspelled(e, t) ? this.corrections : []
   }
   replaceMisspelling(e) {
-    m.replaceMisspelling(e)
+    h.replaceMisspelling(e)
   }
   constructor(e) {
-    _(this, "languageDetector", true), _(this, "regionPreference", true), _(this, "_enabled", true), _(this, "misspelledWord", ""), _(this, "corrections", []);
+    p(this, "languageDetector", true), p(this, "regionPreference", true), p(this, "_enabled", true), p(this, "misspelledWord", ""), p(this, "corrections", []);
     let [t, n] = c.default.locale.split("-");
     this.regionPreference = n;
     let r = this.getAvailableLanguages(e);
@@ -90,7 +90,7 @@ class E {
         let e = null != (a = r[n]) ? a : f.Z[t];
         null != e && this.setLocale(e)
       }
-    }), m.on("spellcheck-result", (e, t) => {
+    }), h.on("spellcheck-result", (e, t) => {
       this.misspelledWord = null != e ? e : "", this.corrections = null != t ? t : []
     })
   }
@@ -98,7 +98,7 @@ class E {
 let b = a().debounce((e, t) => {
   let n = O(t);
   null != n && e.detectLanguage(n)
-}, p);
+}, _);
 
 function y(e) {
   null != document.body && document.body.addEventListener("beforeinput", t => b(e, t.target), true)
@@ -109,6 +109,6 @@ function O(e) {
 }
 async function v() {
   var e;
-  let t = new E((null != (e = await m.getAvailableDictionaries()) ? module : []).map(g).filter(Chunk823379.lm));
+  let t = new E((null != (e = await h.getAvailableDictionaries()) ? module : []).map(g).filter(Chunk823379.lm));
   return y(exports), exports
 }

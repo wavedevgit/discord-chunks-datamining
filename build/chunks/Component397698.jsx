@@ -2,7 +2,7 @@
 /** chunk id: 397698, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,7 +24,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,31 +37,31 @@ function _(e) {
   return e
 }
 
-function p(e) {
+function _(e) {
   let {
     context: t,
     openInPopout: f,
-    analyticsLocation: p = "open-activity-shelf",
-    initialState: h
+    analyticsLocation: _ = "open-activity-shelf",
+    initialState: m
   } = e;
   f && (0, a.Z)(d.KJ3.CHANNEL_CALL_POPOUT);
-  let m = f ? i.u1M : i.z1l;
-  (0, l.y)(c.ti.DISMISSED), (0, l._)(c._b.VOICE, true, h);
+  let h = f ? i.u1M : i.z1l;
+  (0, l.y)(c.ti.DISMISSED), (0, l._)(c._b.VOICE, true, m);
   let g = "contextless" !== t.type && (o.ZP.hasUnread(t.channel.id) || o.ZP.getMentionCount(t.channel.id) > 0);
   return s.default.track(d.rMx.VOICE_PANEL_TAB_OPENED, {
     tab: "activities",
-    location: p,
+    location: _,
     source: c._b.VOICE,
     is_chat_badged: g
   }), (0, i.ZDy)(async () => {
     let {
       default: e
     } = await n.e("81056").then(n.bind(n, 743161));
-    return n => (0, r.jsx)(e, _({
+    return n => (0, r.jsx)(e, p({
       context: t
     }, n))
   }, {
     modalKey: u.e9,
-    contextKey: m
+    contextKey: h
   })
 }

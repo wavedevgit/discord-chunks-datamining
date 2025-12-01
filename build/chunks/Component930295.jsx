@@ -2,7 +2,7 @@
 /** chunk id: 930295, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => S,
+  F: () => T,
   H: () => C
 }), require("./953529.js"), require("./388685.js"), require("./415506.js");
 var r, Chunk54381 = require("./54381.js"),
@@ -45,7 +45,7 @@ function v(e) {
   return e
 }
 
-function I(e, t) {
+function S(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,12 +56,12 @@ function I(e, t) {
   return n
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
+function I(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = Symbol("POPOUT_PREVENT_CLOSE"),
+let T = Symbol("POPOUT_PREVENT_CLOSE"),
   A = new Set(["Spacebar", " ", "Enter"]);
 class C extends(r = Chunk473749.Component) {
   shouldShowPopout(e, t) {
@@ -111,7 +111,7 @@ class C extends(r = Chunk473749.Component) {
       useMouseEnter: t
     } = this.props, n = this.shouldShowPopout(this.props, this.state);
     return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [module(T(v({
+      children: [module(I(v({
         onMouseDown: this.handlePreload
       }, exports ? {
         onMouseEnter: this.handleMouseEnter
@@ -143,10 +143,10 @@ class C extends(r = Chunk473749.Component) {
       positionKey: c,
       disablePointerEvents: u,
       layerContext: d,
-      clickTrap: _ = false
+      clickTrap: p = false
     } = this.props, {
-      resizeKey: p,
-      isLoading: m,
+      resizeKey: _,
+      isLoading: h,
       shouldShowLoadingState: g
     } = this.state;
     return Chunk728285 && !Chunk574254 ? null : (0, Chunk54381.jsx)(Chunk793030.mh4, {
@@ -179,7 +179,7 @@ class C extends(r = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), O(this, "domElementRef", a.createRef()), O(this, "layerRef", a.createRef()), O(this, "popoutRef", a.createRef()), O(this, "resizeObserver", true), O(this, "popoutId", "popout_".concat(c()())), O(this, "loadingTimeout", new _.V7), O(this, "validClickTimeout", new _.V7), O(this, "isValidClickStart", false), O(this, "state", {
+    super(...e), O(this, "domElementRef", a.createRef()), O(this, "layerRef", a.createRef()), O(this, "popoutRef", a.createRef()), O(this, "resizeObserver", true), O(this, "popoutId", "popout_".concat(c()())), O(this, "loadingTimeout", new p.V7), O(this, "validClickTimeout", new p.V7), O(this, "isValidClickStart", false), O(this, "state", {
       renderedPosition: this.props.position,
       shouldShowPopout: false,
       shouldShowLoadingState: false,
@@ -203,7 +203,7 @@ class C extends(r = Chunk473749.Component) {
       let {
         renderPopout: n
       } = this.props;
-      return this.state.isLoading ? this.props.loadingComponent : n(T(v({}, e), {
+      return this.state.isLoading ? this.props.loadingComponent : n(I(v({}, e), {
         updatePosition: t,
         closePopout: this.close,
         setPopoutRef: this.handleSetPopoutRef
@@ -213,7 +213,7 @@ class C extends(r = Chunk473749.Component) {
         onRequestClose: n,
         shouldShow: r
       } = this.props;
-      (null == n ? true : n(e, t)) !== S && null == r && this.toggleShow(false)
+      (null == n ? true : n(e, t)) !== T && null == r && this.toggleShow(false)
     }), O(this, "handleClick", e => {
       let {
         onShiftClick: t,
@@ -267,7 +267,7 @@ class C extends(r = Chunk473749.Component) {
       let r = e.target,
         i = this.domElementRef.current;
       if (null != i) {
-        if ((0, f.ty$)(i, r) || g.Z.isOpen() || t && (0, p.$s)()) return;
+        if ((0, f.ty$)(i, r) || g.Z.isOpen() || t && (0, _.$s)()) return;
         this.isValidClickStart = true
       }
     }), O(this, "handleDocumentMouseUp", e => {

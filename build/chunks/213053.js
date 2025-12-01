@@ -12,12 +12,12 @@ var Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk629935 = require("./629935.js"),
-  Chunk168551 = require("./168551.js"),
+  Chunk999203 = require("./999203.js"),
   Chunk168631 = require("./168631.js"),
   Chunk579132 = require("./579132.js"),
   Chunk671955 = require("./671955.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
@@ -59,27 +59,27 @@ function y(e) {
     theme: t,
     themeType: n,
     primaryColor: i,
-    secondaryColor: p,
-    forceUserTheme: h = false
-  } = e, [y, O] = (0, s.Wu)([c.Z], () => [c.Z.desaturateUserColors, c.Z.syncProfileThemeWithUserTheme]), v = (0, _.f)(t), I = O || h ? null == v ? true : v.overlaySyncedWithUserTheme : null == v ? true : v.overlay;
+    secondaryColor: _,
+    forceUserTheme: m = false
+  } = e, [y, O] = (0, s.Wu)([c.Z], () => [c.Z.desaturateUserColors, c.Z.syncProfileThemeWithUserTheme]), v = (0, p.f)(t), S = O || m ? null == v ? true : v.overlaySyncedWithUserTheme : null == v ? true : v.overlay;
   return {
     profileThemeStyle: (0, r.useMemo)(() => {
-      if (null == i || null == p || null == v || null == I) return b;
+      if (null == i || null == _ || null == v || null == S) return b;
       let e = (e, t) => (0, o.ho)(e, y, null, t);
-      return m({
+      return h({
         "--profile-gradient-primary-color": e(i),
-        "--profile-gradient-secondary-color": e(p),
-        "--profile-gradient-overlay-color": I,
+        "--profile-gradient-secondary-color": e(_),
+        "--profile-gradient-overlay-color": S,
         "--profile-gradient-button-color": e((0, f.ZB)(i)),
-        "--profile-gradient-modal-background-color": e((0, f.oU)(i, p, O || h ? t : true))
+        "--profile-gradient-modal-background-color": e((0, f.oU)(i, _, O || m ? t : true))
       }, (0, u.W4)({
         enabled: true,
         primaryColor: i,
-        secondaryColor: p,
+        secondaryColor: _,
         isDarkTheme: (0, l.wjy)(t),
         textMixAmount: 25
       }))
-    }, [i, p, v, I, O, h, t, y]),
+    }, [i, _, v, S, O, m, t, y]),
     profileThemeClassName: a()((0, l.QeD)(t), null != n ? {
       [g[n]]: true
     } : true, {

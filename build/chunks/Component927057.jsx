@@ -2,7 +2,7 @@
 /** chunk id: 927057, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,10 +16,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk111566 = require("./111566.js");
 
-function p(e) {
+function _(e) {
   let {
     channelTypes: t
-  } = e, n = (0, c.CJ)(), p = null == n ? true : n.channelId, h = s.Z.getChannel(p), m = l.Z.getGuild(null == h ? true : h.getGuildId()), g = e => (0, u.af)(e, p, t), E = (e, t) => {
+  } = e, n = (0, c.CJ)(), _ = null == n ? true : n.channelId, m = s.Z.getChannel(_), h = l.Z.getGuild(null == m ? true : m.getGuildId()), g = e => (0, u.af)(e, _, t), E = (e, t) => {
     let n = s.Z.getChannel(null == e ? true : e.value);
     if (null == n) return null;
     let i = n.type === f.d4z.GUILD_CATEGORY ? a.ROc : (0, o.KS)(n);
@@ -30,9 +30,9 @@ function p(e) {
       height: t
     }) : null
   }, b = e => (0, r.jsx)("span", {
-    className: _.label,
+    className: p.label,
     children: e.label
-  }), y = i.useMemo(() => (0, u.tx)(e.defaultValues, null == m ? true : m.id, t), [e.defaultValues, m, t]);
+  }), y = i.useMemo(() => (0, u.tx)(e.defaultValues, null == h ? true : h.id, t), [e.defaultValues, h, t]);
   return (0, r.jsx)(d.ZP, {
     selectActionComponent: e,
     queryOptions: g,

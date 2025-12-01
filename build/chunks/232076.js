@@ -18,9 +18,9 @@ let f = function() {
     t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     n = (0, Chunk140465.t7)(),
     f = (0, Chunk775412._O)(),
-    _ = (0, Chunk975298.Z)(),
-    p = (null == exports ? true : exports.verified) === true && (0, Chunk111361.M5)(exports, Chunk474936.PremiumTypes.TIER_2) && _.fetched && _.fractionalState !== Chunk474936.a$.FP_ONLY && !require && !f;
+    p = (0, Chunk975298.Z)(),
+    _ = (null == exports ? true : exports.verified) === true && (0, Chunk111361.M5)(exports, Chunk474936.PremiumTypes.TIER_2) && p.fetched && p.fractionalState !== Chunk474936.a$.FP_ONLY && !require && !f;
   Chunk473749.useEffect(() => {
-    p && !module && Chunk276444.Z.checkAndFetchReferralsRemaining()
-  }, [p, module])
+    _ && !module && Chunk276444.Z.checkAndFetchReferralsRemaining()
+  }, [_, module])
 }

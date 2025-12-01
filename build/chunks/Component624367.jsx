@@ -20,31 +20,31 @@ function f(e) {
     applicationId: t,
     customId: n,
     referrerId: f,
-    linkId: _,
-    message: p
+    linkId: p,
+    message: _
   } = e, {
-    analyticsLocations: h
-  } = (0, a.ZP)(i.Z.ACTIVITY_BOOKMARK), [m] = (0, l.Z)([t]), g = null != m && (0, o.ye)(m), {
+    analyticsLocations: m
+  } = (0, a.ZP)(i.Z.ACTIVITY_BOOKMARK), [h] = (0, l.Z)([t]), g = null != h && (0, o.ye)(h), {
     data: E,
     error: b
-  } = (0, c.h)(null == m ? true : m.id, _);
-  return null == m || false === g ? null : null != _ && null == b && null != E ? (0, r.jsx)(a.Gt, {
-    value: h,
+  } = (0, c.h)(null == h ? true : h.id, p);
+  return null == h || false === g ? null : null != p && null == b && null != E ? (0, r.jsx)(a.Gt, {
+    value: m,
     children: (0, r.jsx)(u.b, {
-      application: m,
+      application: h,
       customId: n,
       customLink: E,
       referrerId: f,
-      message: p
+      message: _
     })
   }) : (0, r.jsx)(a.Gt, {
-    value: h,
+    value: m,
     children: (0, r.jsx)(s.O, {
-      app: m,
+      app: h,
       linkType: d.U.ACTIVITY,
       activityCustomId: n,
       activityReferrerId: f,
-      message: p
+      message: _
     })
   })
 }

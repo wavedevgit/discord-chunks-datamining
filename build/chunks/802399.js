@@ -29,7 +29,7 @@ module.exports = function(e) {
       begin: "\\b[A-Z][\\w']*",
       relevance: 0
     },
-    _ = {
+    p = {
       begin: "\\(",
       end: "\\)",
       illegal: '"',
@@ -40,12 +40,12 @@ module.exports = function(e) {
         begin: "[_a-z][\\w']*"
       }), c]
     },
-    p = {
+    _ = {
       begin: /\{/,
       end: /\}/,
-      contains: _.contains
+      contains: p.contains
     },
-    h = {
+    m = {
       className: "number",
       relevance: 0,
       variants: [{
@@ -67,30 +67,30 @@ module.exports = function(e) {
       beginKeywords: "module",
       end: "where",
       keywords: "module where",
-      contains: [_, c],
+      contains: [p, c],
       illegal: "\\W\\.|;"
     }, {
       begin: "\\bimport\\b",
       end: "$",
       keywords: "import qualified as hiding",
-      contains: [_, c],
+      contains: [p, c],
       illegal: "\\W\\.|;"
     }, {
       className: "class",
       begin: "^(\\s*)?(class|instance)\\b",
       end: "where",
       keywords: "class family instance where",
-      contains: [f, _, c]
+      contains: [f, p, c]
     }, {
       className: "class",
       begin: "\\b(data|(new)?type)\\b",
       end: "$",
       keywords: "data family type newtype deriving",
-      contains: [u, f, _, p, c]
+      contains: [u, f, p, _, c]
     }, {
       beginKeywords: "default",
       end: "$",
-      contains: [f, _, c]
+      contains: [f, p, c]
     }, {
       beginKeywords: "infix infixl infixr",
       end: "$",
@@ -112,7 +112,7 @@ module.exports = function(e) {
         scope: "char.escape",
         match: /\\./
       }]
-    }, e.QUOTE_STRING_MODE, h, f, e.inherit(e.TITLE_MODE, {
+    }, e.QUOTE_STRING_MODE, m, f, e.inherit(e.TITLE_MODE, {
       begin: "^[_a-z][\\w']*"
     }), {
       begin: `(?!-)${l}--+|--+(?!-)${l}`

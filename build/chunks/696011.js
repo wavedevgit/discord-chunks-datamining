@@ -17,7 +17,7 @@ var Chunk704215 = require("./704215.js"),
   Chunk582113 = require("./582113.js"),
   Chunk526761 = require("./526761.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,27 +25,27 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk147913.Z {
+class h extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), h(this, "_didAttemptToOpenModal", false), h(this, "_didConnectionOpen", false), h(this, "_didUserSettingsProtoLoad", false), h(this, "_didGamesSeenLoad", false), h(this, "actions", {
+    super(...e), m(this, "_didAttemptToOpenModal", false), m(this, "_didConnectionOpen", false), m(this, "_didUserSettingsProtoLoad", false), m(this, "_didGamesSeenLoad", false), m(this, "actions", {
       POST_CONNECTION_OPEN: () => this._handlePostConnectionOpen()
-    }), h(this, "stores", new Map().set(l.Z, () => this._handleUserSettingsProtoUpdate()).set(s.ZP, () => this._handleGamesSeenUpdate()).set(o.Z, () => this._handleApexExperimentUpdate())), h(this, "_handlePostConnectionOpen", () => {
+    }), m(this, "stores", new Map().set(l.Z, () => this._handleUserSettingsProtoUpdate()).set(s.ZP, () => this._handleGamesSeenUpdate()).set(o.Z, () => this._handleApexExperimentUpdate())), m(this, "_handlePostConnectionOpen", () => {
       this._didConnectionOpen = true, this._handleShowAnnouncementModal()
-    }), h(this, "_handleUserSettingsProtoUpdate", () => {
-      this._didUserSettingsProtoLoad = l.Z.hasLoaded(p.yP.PRELOADED_USER_SETTINGS), this._handleShowAnnouncementModal()
-    }), h(this, "_handleGamesSeenUpdate", () => {
+    }), m(this, "_handleUserSettingsProtoUpdate", () => {
+      this._didUserSettingsProtoLoad = l.Z.hasLoaded(_.yP.PRELOADED_USER_SETTINGS), this._handleShowAnnouncementModal()
+    }), m(this, "_handleGamesSeenUpdate", () => {
       this._didGamesSeenLoad = s.ZP.isGamesSeenLoaded(), this._handleShowAnnouncementModal()
-    }), h(this, "_handleApexExperimentUpdate", () => {
+    }), m(this, "_handleApexExperimentUpdate", () => {
       this._handleShowAnnouncementModal()
-    }), h(this, "_handleShowAnnouncementModal", () => {
+    }), m(this, "_handleShowAnnouncementModal", () => {
       if (!this._didAttemptToOpenModal && this._didConnectionOpen && this._didUserSettingsProtoLoad && this._didGamesSeenLoad && (0, d.ne)({
           location: "social-layer-storefront-announcement-modal"
         }) && (this._didAttemptToOpenModal = true, !(0, a.zu)(r.z.GAME_SHOP_ANNOUNCEMENT_MODAL))) {
         if (null != c.Z.getGuild((0, u.ac)())) return void(0, f.b)();
         for (let e of s.ZP.getGamesSeen(false, false))
-          if (null != e.id && _.RI.has(e.id)) return void(0, f.b)()
+          if (null != e.id && p.RI.has(e.id)) return void(0, f.b)()
       }
     })
   }
 }
-let g = new m
+let g = new h

@@ -2,7 +2,7 @@
 /** chunk id: 512983, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  v: () => p
+  v: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -52,7 +52,7 @@ function d(e, t) {
 
 function f(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -60,7 +60,7 @@ function f(e, t) {
   return i
 }
 
-function _(e, t) {
+function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -68,34 +68,34 @@ function _(e, t) {
   return i
 }
 
-function p(e) {
+function _(e) {
   let t;
   var {
     tag: n = "h5",
     children: i,
     className: l,
     disabled: u,
-    required: _ = false,
-    error: p,
-    errorId: h
-  } = e, m = f(e, ["tag", "children", "className", "disabled", "required", "error", "errorId"]);
+    required: p = false,
+    error: _,
+    errorId: m
+  } = e, h = f(e, ["tag", "children", "className", "disabled", "required", "error", "errorId"]);
   return t = "legend" === n ? n : o.H, (0, r.jsxs)(t, d(c({
     className: a()(s[n], "h5" !== n ? s.defaultColor : null, l, {
       [s["defaultMargin".concat(n)]]: null == l,
       [s.disabled]: u,
-      [s.error]: null != p
+      [s.error]: null != _
     })
-  }, m), {
-    children: [i, _ && null == p ? (0, r.jsx)("span", {
+  }, h), {
+    children: [i, p && null == _ ? (0, r.jsx)("span", {
       className: s.required,
       children: "*"
-    }) : null, null != p ? (0, r.jsxs)("span", {
-      id: h,
+    }) : null, null != _ ? (0, r.jsxs)("span", {
+      id: m,
       className: s.errorMessage,
       children: [null != i ? (0, r.jsx)("span", {
         className: s.errorSeparator,
         children: "-"
-      }) : null, p]
+      }) : null, _]
     }) : null]
   }))
 }

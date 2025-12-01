@@ -14,8 +14,8 @@ function l(e) {
   let {
     onError: t,
     onSuccess: n
-  } = null != e ? e : {}, [l, c] = r.useState(false), [u, d] = r.useState(false), [f, _] = r.useState(false), [p, h] = r.useState(false), [m, g] = r.useState(false), [E, b] = r.useState(false), [y, O] = r.useState(false), [v, I] = r.useState(false), T = l || u || f || p || E || v, S = r.useCallback(async e => {
-    if (!T) {
+  } = null != e ? e : {}, [l, c] = r.useState(false), [u, d] = r.useState(false), [f, p] = r.useState(false), [_, m] = r.useState(false), [h, g] = r.useState(false), [E, b] = r.useState(false), [y, O] = r.useState(false), [v, S] = r.useState(false), I = l || u || f || _ || E || v, T = r.useCallback(async e => {
+    if (!I) {
       c(true);
       try {
         await (0, a.Yw)(e, s.ne.ACTIVE), null == n || n()
@@ -26,8 +26,8 @@ function l(e) {
         c(false)
       }
     }
-  }, [T, t, n]), A = r.useCallback(async e => {
-    if (!T) {
+  }, [I, t, n]), A = r.useCallback(async e => {
+    if (!I) {
       d(true);
       try {
         await (0, a.Yw)(e, s.ne.DECLINED), null == n || n()
@@ -38,32 +38,32 @@ function l(e) {
         d(false)
       }
     }
-  }, [T, t, n]), C = r.useCallback(async e => {
-    if (!T) {
-      _(true);
+  }, [I, t, n]), C = r.useCallback(async e => {
+    if (!I) {
+      p(true);
       try {
         await (0, a.Yw)(e, s.ne.INACTIVE), null == n || n()
       } catch (n) {
         let e = new i.Hx(n);
         null == t || t(e)
       } finally {
-        _(false)
+        p(false)
       }
     }
-  }, [T, t, n]), N = r.useCallback(async e => {
-    if (!T) {
-      h(true);
+  }, [I, t, n]), N = r.useCallback(async e => {
+    if (!I) {
+      m(true);
       try {
         await (0, a.fc)(e), null == n || n()
       } catch (n) {
         let e = new i.Hx(n);
         null == t || t(e)
       } finally {
-        h(false)
+        m(false)
       }
     }
-  }, [T, t, n]), R = r.useCallback(async () => {
-    if (!m) {
+  }, [I, t, n]), P = r.useCallback(async () => {
+    if (!h) {
       g(true);
       try {
         await (0, a.qd)(), null == n || n()
@@ -74,7 +74,7 @@ function l(e) {
         g(false)
       }
     }
-  }, [m, t, n]), P = r.useCallback(async e => {
+  }, [h, t, n]), R = r.useCallback(async e => {
     if (!y) {
       O(true);
       try {
@@ -88,12 +88,12 @@ function l(e) {
     }
   }, [y, t, n]);
   return {
-    acceptLinkRequest: S,
+    acceptLinkRequest: T,
     declineLinkRequest: A,
     disconnectLinkRequest: C,
     cancelLinkRequest: N,
-    selectTeenUser: P,
-    getLinkCode: R,
+    selectTeenUser: R,
+    getLinkCode: P,
     requestLink: r.useCallback(async (e, r) => {
       if (!E) {
         b(true);
@@ -113,22 +113,22 @@ function l(e) {
         s = o.Z.getStartId(),
         l = o.Z.getSelectedTeenId();
       if (!v && null != s && null != l) {
-        I(true);
+        S(true);
         try {
           await a.ZP.fetchMoreTeenActivity(l, e, s, r.event_id)
         } catch (n) {
           let e = new i.Hx(n);
           null == t || t(e)
         } finally {
-          I(false)
+          S(false)
         }
       }
     }, [v, t]),
     isAcceptLoading: l,
     isDeclineLoading: u,
     isDisconnectLoading: f,
-    isCancelLoading: p,
-    isGetLinkCodeLoading: m,
+    isCancelLoading: _,
+    isGetLinkCodeLoading: h,
     isSelectTeenUserLoading: y,
     isRequestingLink: E,
     isMoreLoading: v

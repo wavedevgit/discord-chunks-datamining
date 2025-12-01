@@ -2,9 +2,9 @@
 /** chunk id: 185514, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $c: () => _,
-  Nx: () => p,
-  On: () => h,
+  $c: () => p,
+  Nx: () => _,
+  On: () => m,
   tQ: () => d,
   x5: () => f
 });
@@ -26,7 +26,7 @@ let d = {
     comboKeysBindGlobal: true,
     action: () => ((0, Chunk140492.Z)(false), false)
   },
-  _ = {
+  p = {
     binds: ["mod+alt+right"],
     comboKeysBindGlobal: true,
     action() {
@@ -39,12 +39,12 @@ let d = {
       return null != module && (0, Chunk769654.X)(module), false
     }
   },
-  p = {
+  _ = {
     binds: (0, Chunk358085.isMac)() ? ["mod+["] : ["alt+left"],
     comboKeysBindGlobal: true,
     action: () => ((0, Chunk891304.Hm)("keybind"), false)
   },
-  h = {
+  m = {
     binds: (0, Chunk358085.isMac)() ? ["mod+]"] : ["alt+right"],
     comboKeysBindGlobal: true,
     action: () => ((0, Chunk891304.TL)("keybind"), false)

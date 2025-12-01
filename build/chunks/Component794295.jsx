@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,15 +46,15 @@ function _(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,7 +62,7 @@ function h(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -76,21 +76,21 @@ let g = 1,
       trusted: n,
       title: a,
       href: d,
-      children: _,
-      messageId: m,
+      children: p,
+      messageId: h,
       channelId: E
-    } = e, b = h(e, ["onClick", "trusted", "title", "href", "children", "messageId", "channelId"]), {
+    } = e, b = m(e, ["onClick", "trusted", "title", "href", "children", "messageId", "channelId"]), {
       analyticsLocations: y
     } = (0, c.ZP)(l.Z.MASKED_LINK), O = i.useCallback(t => (0, u.q)(e, t, y), [y, e]), v = i.useCallback(e => {
       e.button === g && O(e)
-    }, [O]), I = o().sanitizeUrl(d);
-    return (0, r.jsx)(s.Anchor, p(f({}, b), {
+    }, [O]), S = o().sanitizeUrl(d);
+    return (0, r.jsx)(s.Anchor, _(f({}, b), {
       title: a,
       target: "_blank",
       rel: "noreferrer noopener",
-      href: I,
+      href: S,
       onClick: O,
       onAuxClick: v,
-      children: null != _ ? _ : a
+      children: null != p ? p : a
     }))
   })
