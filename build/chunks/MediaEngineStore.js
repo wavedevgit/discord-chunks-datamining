@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a, o, s, l, c;
 require.d(exports, {
-  Z: () => rU
+  Z: () => rV
 }), require("./388685.js"), require("./953529.js"), require("./457542.js"), require("./539854.js"), require("./642613.js"), require("./49124.js"), require("./337869.js");
 var u, Chunk512722 = require("./512722.js"),
   f = require.n(Chunk512722),
@@ -41,6 +41,7 @@ var u, Chunk512722 = require("./512722.js"),
   Chunk159142 = require("./159142.js"),
   Chunk27955 = require("./27955.js"),
   Chunk166884 = require("./166884.js"),
+  Chunk126382 = require("./126382.js"),
   Chunk422797 = require("./422797.js"),
   Chunk805877 = require("./805877.js"),
   Chunk837968 = require("./837968.js"),
@@ -81,7 +82,7 @@ var u, Chunk512722 = require("./512722.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
 
-function ew(e, t, n) {
+function eL(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -90,20 +91,20 @@ function ew(e, t, n) {
   }) : e[t] = n, e
 }
 
-function eL(e) {
+function ex(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      ew(e, t, n[t])
+      eL(e, t, n[t])
     })
   }
   return e
 }
 
-function ex(e, t) {
+function eM(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -114,38 +115,38 @@ function ex(e, t) {
   return n
 }
 
-function eM(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ex(Object(t)).forEach(function(n) {
+function ek(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eM(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let ek = new Chunk710845.Z("MediaEngineStore"),
-  ej = "MediaEngineStore",
-  eU = 4,
-  eG = 1,
+let ej = new Chunk710845.Z("MediaEngineStore"),
+  eU = "MediaEngineStore",
+  eG = 4,
   eB = 1,
   eZ = 1,
-  eF = .5,
-  eV = {
+  eF = 1,
+  eV = .5,
+  eH = {
     left: 1,
     right: 1
   },
-  eH = 500,
-  eW = 5 * Chunk70956.Z.Millis.SECOND,
-  eY = false,
-  eK = 100,
-  ez = 2 * Chunk70956.Z.Millis.SECOND,
-  eq = true,
-  eX = 0;
+  eW = 500,
+  eY = 5 * Chunk70956.Z.Millis.SECOND,
+  eK = false,
+  ez = 100,
+  eq = 2 * Chunk70956.Z.Millis.SECOND,
+  eX = true,
+  eQ = 0;
 
-function eQ() {
+function eJ() {
   return {
     mode: Chunk981631.pM4.VOICE_ACTIVITY,
     modeOptions: {
-      threshold: eY,
+      threshold: eK,
       autoThreshold: Chunk358085.isPlatformEmbedded || __OVERLAY__,
       vadUseKrisp: true,
-      vadKrispActivationThreshold: eF,
+      vadKrispActivationThreshold: eV,
       vadLeading: 5,
       vadTrailing: 25,
       delay: 20,
@@ -180,7 +181,7 @@ function eQ() {
     videoDeviceId: Chunk65154.w5,
     qos: false,
     qosMigrated: false,
-    videoHook: e$.supports(Chunk65154.AN.VIDEO_HOOK),
+    videoHook: e0.supports(Chunk65154.AN.VIDEO_HOOK),
     experimentalSoundshare2: null,
     useSystemScreensharePicker: null,
     h265Enabled: true,
@@ -193,7 +194,7 @@ function eQ() {
     activeInputProfile: null
   }
 }
-let eJ = {
+let e$ = {
     [Chunk345655._.CUSTOM]: {},
     [Chunk345655._.VOICE_ISOLATION]: {
       modeOptions: {
@@ -220,87 +221,111 @@ let eJ = {
       bypassSystemInputProcessing: true
     }
   },
-  e$ = (0, Chunk46973.Mt)((0, Chunk46973.jj)());
-ek.enableNativeLogger(true);
-let e0 = {},
-  e1 = new Set([Chunk65154.Yn.DEFAULT]),
-  e3 = e$.supports(Chunk65154.AN.AUTO_ENABLE),
-  e2 = false,
-  e4 = Chunk65154.Yn.STREAM,
-  e5 = performance.now(),
-  e8 = {
-    [Chunk65154.w5]: nt("No Input Devices")
-  },
+  e0 = (0, Chunk46973.Mt)((0, Chunk46973.jj)());
+ej.enableNativeLogger(true);
+let e1 = {},
+  e3 = new Set([Chunk65154.Yn.DEFAULT]),
+  e2 = e0.supports(Chunk65154.AN.AUTO_ENABLE),
+  e4 = false,
+  e5 = Chunk65154.Yn.STREAM,
+  e8 = performance.now(),
   e6 = {
-    [Chunk65154.w5]: nt("No Output Devices")
+    [Chunk65154.w5]: no("No Input Devices")
   },
   e7 = {
-    [Chunk65154.w5]: nt("No Video Devices")
+    [Chunk65154.w5]: no("No Output Devices")
   },
-  e9 = false,
+  e9 = {
+    [Chunk65154.w5]: no("No Video Devices")
+  },
   te = false,
   tt = false,
   tn = false,
   tr = false,
-  ti = Chunk65154.Av,
+  ti = false,
   ta = Chunk65154.Av,
-  to = false,
+  to = Chunk65154.Av,
   ts = false,
   tl = false,
-  tc = new Chunk846519.V7,
-  tu = false,
+  tc = false,
+  tu = new Chunk846519.V7,
   td = false,
-  tf = null,
-  t_ = false,
+  tf = false,
+  t_ = null,
   tp = false,
   th = false,
   tm = false,
   tg = false,
-  tE = [],
-  tb = false,
-  ty = null,
+  tE = false,
+  tb = [],
+  ty = false,
   tO = null,
   tv = null,
   tI = null,
   tT = null,
-  tS = false,
+  tS = null,
   tA = false,
   tC = false,
-  tN = false;
+  tN = false,
+  tR = null,
+  tP = null,
+  tD = false;
 Chunk751571.Z.hasPermission(Chunk761274.Eu.AUDIO, {
   showAuthorizationError: false
 }), Chunk751571.Z.hasPermission(Chunk761274.Eu.CAMERA, {
   showAuthorizationError: false
 });
-let tR = false,
-  tP = new Set,
-  tD = tR,
-  tw = new Set,
-  tL = {},
-  tx = null,
-  tM = true,
-  tk = false,
-  tj = false,
-  tU = false,
-  tG = false;
+let tw = false,
+  tL = new Set,
+  tx = tw,
+  tM = new Set,
+  tk = {},
+  tj = null,
+  tU = true,
+  tG = false,
+  tB = false,
+  tZ = false,
+  tF = false;
 
-function tB() {
+function tV() {
   var e, t;
   return null != (t = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && exports ? "always" : Chunk747268.Z === Chunk404097.R.CANARY ? "permittedDevicesOnly" : "never"
 }
-
-function tZ() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT,
-    t = e0[module];
-  return null == exports && (t = eQ(), e0[module] = exports), exports
+async function tH() {
+  if ("undefined" == typeof window || "undefined" == typeof navigator || !("mediaCapabilities" in navigator) || null == navigator.mediaCapabilities) returnfalse;
+  try {
+    let e = await navigator.mediaCapabilities.decodingInfo({
+      type: "file",
+      video: {
+        contentType: 'video/mp4; codecs="hev1.1.6.L153.B0"',
+        width: 1920,
+        height: 1080,
+        bitrate: 2e6,
+        framerate: 30
+      }
+    });
+    return module.supported && module.powerEfficient
+  } catch (e) {
+    returnfalse
+  }
 }
 
-function tF() {
+function tW() {
+  return null != tP ? tP : "undefined" != typeof window ? tP = tH().then(e => (tR = e, e)) : Promise.resolve(false)
+}
+
+function tY() {
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT,
+    t = e1[module];
+  return null == exports && (t = eJ(), e1[module] = exports), exports
+}
+
+function tK() {
   var e, t, n;
   let r = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT,
-    i = tZ(r),
-    a = eJ[null != (e = i.activeInputProfile) ? module : Chunk345655._.CUSTOM],
-    o = eL({}, null != (t = i.modeOptions) ? exports : {}, null != (n = a.modeOptions) ? require : {});
+    i = tY(r),
+    a = e$[null != (e = i.activeInputProfile) ? module : Chunk345655._.CUSTOM],
+    o = ex({}, null != (t = i.modeOptions) ? exports : {}, null != (n = a.modeOptions) ? require : {});
   if (null == o.vadDuringPreProcess && (o.vadDuringPreProcess = (0, Chunk705946.C)({
       location: "getSettings"
     }).enabled), null == o.vadKrispActivationThreshold && true === a.automaticGainControl || true === i.automaticGainControl) {
@@ -309,23 +334,23 @@ function tF() {
     });
     null != module.vadKrispActivationThreshold && (o.vadKrispActivationThreshold = module.vadKrispActivationThreshold)
   }
-  return eM(eL({}, i, a), {
+  return ek(ex({}, i, a), {
     modeOptions: o
   })
 }
 
-function tV(e) {
+function tz(e) {
   var t, n;
-  let r = tF(e.context),
+  let r = tK(e.context),
     i = r.mode;
-  e.context === eP.Yn.DEFAULT && ((0, ea.f)({
+  e.context === eD.Yn.DEFAULT && ((0, eo.f)({
     location: "setInputMode",
     autoTrackExposure: false
-  }).enableLatching && i === eS.pM4.PUSH_TO_TALK && r.modeOptions.pttLatchingEnabled && (i = eS.pM4.VOICE_ACTIVITY), (0, q.I)(false, false, false)), e.setInputMode(i, {
+  }).enableLatching && i === eA.pM4.PUSH_TO_TALK && r.modeOptions.pttLatchingEnabled && (i = eA.pM4.VOICE_ACTIVITY), (0, X.I)(false, false, false)), e.setInputMode(i, {
     vadThreshold: r.modeOptions.threshold,
     vadAutoThreshold: r.modeOptions.autoThreshold,
-    vadUseKrisp: r.modeOptions.vadUseKrisp && rt(),
-    vadKrispActivationThreshold: null != (t = r.modeOptions.vadKrispActivationThreshold) ? t : eF,
+    vadUseKrisp: r.modeOptions.vadUseKrisp && ro(),
+    vadKrispActivationThreshold: null != (t = r.modeOptions.vadKrispActivationThreshold) ? t : eV,
     vadLeading: r.modeOptions.vadLeading,
     vadTrailing: r.modeOptions.vadTrailing,
     vadDuringPreProcess: null != (n = r.modeOptions.vadDuringPreProcess) && n,
@@ -333,29 +358,29 @@ function tV(e) {
   })
 }
 
-function tH(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eP.Qx;
+function tq(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eD.Qx;
   return p().clamp(e, 0, t)
 }
 
-function tW(e) {
-  let t = tF(e.context),
-    n = !e3 || t.mute || t.deaf;
-  e.context === eP.Yn.DEFAULT ? n = n || e9 || te || tt || !et.Z.didHavePermission(eC.Eu.AUDIO) : e.context === eP.Yn.STREAM && (n = true), e.setSelfMute(n), e.setSelfDeaf(t.deaf), e.context === eP.Yn.DEFAULT && S.Z.updateNativeMute()
+function tX(e) {
+  let t = tK(e.context),
+    n = !e2 || t.mute || t.deaf;
+  e.context === eD.Yn.DEFAULT ? n = n || te || tt || tn || !en.Z.didHavePermission(eN.Eu.AUDIO) : e.context === eD.Yn.STREAM && (n = true), e.setSelfMute(n), e.setSelfDeaf(t.deaf), e.context === eD.Yn.DEFAULT && S.Z.updateNativeMute()
 }
 
-function tY(e) {
-  e !== e4 && (null != a && e$.setGoLiveSource(null, e4), e4 = e)
+function tQ(e) {
+  e !== e5 && (null != a && e0.setGoLiveSource(null, e5), e5 = e)
 }
 
-function tK() {
+function tJ() {
   var e, t, n;
-  let i = arguments.length > 0 && true !== arguments[0] ? arguments[0] : tr,
+  let i = arguments.length > 0 && true !== arguments[0] ? arguments[0] : ti,
     o = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a,
     s = a;
-  if ((null == s ? true : s.desktopSource) != null && s.desktopSource.id !== (null == o || null == (e = o.desktopSource) ? true : module.id) && (null != s.desktopSource.soundshareId && (0, Chunk358085.isWindows)() && Chunk887278.pn(s.desktopSource.soundshareId), e$.setGoLiveSource(null, e4)), (null == s ? true : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == o || null == (t = o.cameraSource) ? true : exports.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == o || null == (n = o.cameraSource) ? true : require.audioDeviceGuid)) && e$.setGoLiveSource(null, e4), tr || i) {
-    let e = tF().videoDeviceId;
-    tr && module === Chunk65154.w5 && ta === Chunk65154.w5 && ti !== Chunk65154.Av ? e = ti : ta = module, ti = (tr = i) ? nr(e7, module) : Chunk65154.Av, e$.setVideoInputDevice(ti)
+  if ((null == s ? true : s.desktopSource) != null && s.desktopSource.id !== (null == o || null == (e = o.desktopSource) ? true : module.id) && (null != s.desktopSource.soundshareId && (0, Chunk358085.isWindows)() && Chunk887278.pn(s.desktopSource.soundshareId), e0.setGoLiveSource(null, e5)), (null == s ? true : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == o || null == (t = o.cameraSource) ? true : exports.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == o || null == (n = o.cameraSource) ? true : require.audioDeviceGuid)) && e0.setGoLiveSource(null, e5), ti || i) {
+    let e = tK().videoDeviceId;
+    ti && module === Chunk65154.w5 && to === Chunk65154.w5 && ta !== Chunk65154.Av ? e = ta : to = module, ta = (ti = i) ? nl(e9, module) : Chunk65154.Av, e0.setVideoInputDevice(ta)
   }
   if (a = o, null != o) {
     let e = {
@@ -363,12 +388,12 @@ function tK() {
       frameRate: o.quality.frameRate
     };
     if (null != o.desktopSource) {
-      let t = tB(),
-        n = tF().videoHook,
-        i = t0(),
-        a = i ? t1() ? Chunk70722.zj : Chunk70722.ZM : 0,
+      let t = tV(),
+        n = tK().videoHook,
+        i = t5(),
+        a = i ? t8() ? Chunk70722.zj : Chunk70722.ZM : 0,
         s = (0, Chunk358085.isWindows)() && (0, Chunk412412.t)("updateVideo").enabled;
-      e$.setGoLiveSource({
+      e0.setGoLiveSource({
         desktopDescription: {
           id: o.desktopSource.id,
           soundshareId: o.desktopSource.soundshareId,
@@ -378,56 +403,56 @@ function tK() {
           useCaptureDeviceForEncode: s,
           useLoopback: r.getExperimentalSoundshare(),
           useQuartzCapturer: true,
-          allowScreenCaptureKit: t3(),
-          videoHookStaleFrameTimeoutMs: eH,
-          graphicsCaptureStaleFrameTimeoutMs: eW,
+          allowScreenCaptureKit: t6(),
+          videoHookStaleFrameTimeoutMs: eW,
+          graphicsCaptureStaleFrameTimeoutMs: eY,
           hdrCaptureMode: exports,
           enableGlobalFramePoolLock: (0, Chunk27955.T)({
             location: "updateVideo"
           }).enabled
         },
         quality: module
-      }, e4)
+      }, e5)
     }
-    null != o.cameraSource && e$.setGoLiveSource({
+    null != o.cameraSource && e0.setGoLiveSource({
       cameraDescription: {
         videoDeviceGuid: o.cameraSource.videoDeviceGuid,
         audioDeviceGuid: o.cameraSource.audioDeviceGuid
       },
       quality: module
-    }, e4)
+    }, e5)
   }
 }
 
-function tz(e) {
+function t$(e) {
   switch (e) {
-    case eP.H3.CPU_OVERUSE:
+    case eD.H3.CPU_OVERUSE:
       return D.Nk.NoiseCancellerCpuOveruse;
-    case eP.H3.FAILED:
+    case eD.H3.FAILED:
       return D.Nk.NoiseCancellerFailed;
-    case eP.H3.VAD_CPU_OVERUSE:
+    case eD.H3.VAD_CPU_OVERUSE:
       return D.Nk.NoiseCancellerVadCpuOveruse;
     default:
       return
   }
 }
 
-function tq(e) {
+function t0(e) {
   let t = (0, k.U)({
     location: "getAutomaticGainControlConfig",
     disable: !e
   }).noiseCancellationConfig;
-  return eL({
+  return ex({
     enabled: e
   }, t)
 }
 
-function tX(e, t) {
-  e.setAutomaticGainControl(tq(t))
+function t1(e, t) {
+  e.setAutomaticGainControl(t0(t))
 }
-async function tQ(e, t) {
-  if ((0, ef.isIOS)() || (0, ef.isMac)()) {
-    let e = await e$.getSystemMicrophoneMode();
+async function t3(e, t) {
+  if ((0, e_.isIOS)() || (0, e_.isMac)()) {
+    let e = await e0.getSystemMicrophoneMode();
     "" !== e && "standard" !== e && j.Z.getConfig({
       location: "setNoiseCancellation"
     }).disabledModes.includes(e) && (t = false)
@@ -443,27 +468,31 @@ async function tQ(e, t) {
   let {
     noiseCancellationAfterProcessing: r,
     vadAfterWebrtc: i
-  } = (0, K.$)({
+  } = (0, z.$)({
     location: "setNoiseCancellation"
   });
   e.setNoiseCancellationAfterProcessing(r), e.setVADAfterWebrtc(i)
 }
 
-function tJ(e) {
-  let t = tF(),
+function t2(e) {
+  let t = tK(),
     n = t.inputDeviceId;
-  if (e.setEchoCancellation(eb.Z.hasEchoCancellation(n) || t.echoCancellation), e.setNoiseSuppression(eb.Z.hasNoiseSuppression(n) || t.noiseSuppression), tX(e, eb.Z.hasAutomaticGainControl(n) || t.automaticGainControl), tQ(e, t.noiseCancellation), e.setVoiceFilterId(ty), (0, ef.isWeb)()) {
+  if (e.setEchoCancellation(ey.Z.hasEchoCancellation(n) || t.echoCancellation), e.setNoiseSuppression(ey.Z.hasNoiseSuppression(n) || t.noiseSuppression), t1(e, ey.Z.hasAutomaticGainControl(n) || t.automaticGainControl), t3(e, t.noiseCancellation), e.setVoiceFilterId(tO), (0, e_.isWeb)()) {
     let n = t.noiseCancellation ? false : false;
     e.setSilenceThreshold(n)
   }
 }
 
-function t$() {
-  e$.on(Chunk46973.aB.Connection, e => {
-    tV(e), tW(e), tJ(e);
-    let t = tF();
-    e.setAttenuation(t.attenuation, t.attenuateWhileSpeakingSelf, t.attenuateWhileSpeakingOthers), e.setQoS(t.qos);
-    let n = eO.Z.getGuildId(),
+function t4() {
+  e0.on(Chunk46973.aB.Connection, e => {
+    tz(e), tX(e), t2(e);
+    let t = tK();
+    e.setAttenuation(t.attenuation, t.attenuateWhileSpeakingSelf, t.attenuateWhileSpeakingOthers), e.setQoS(t.qos), (0, K.D)({
+      location: "setupMediaEngine"
+    }).enabled && (e.setExperimentFlag(eD.V8.H265_HARDWARE_ONLY, true), (0, e_.isWindows)() ? tW().then(t => {
+      e.setExperimentFlag(eD.V8.H265_HARDWARE_DECODE_AVAILABLE, t)
+    }) : (0, e_.isMac)() && e.setExperimentFlag(eD.V8.H265_HARDWARE_DECODE_AVAILABLE, true));
+    let n = ev.Z.getGuildId(),
       {
         muteBeforeProcessing: i,
         pttBeforeProcessing: o,
@@ -474,13 +503,13 @@ function t$() {
       }, {
         autoTrackExposure: true
       });
-    i && e.setExperimentFlag(eP.V8.MUTE_BEFORE_PROCESSING, true), o && e.setExperimentFlag(eP.V8.PTT_BEFORE_PROCESSING, true), s && e.setExperimentFlag(eP.V8.SKIP_ENCODE, true), (0, z.J)({
+    i && e.setExperimentFlag(eD.V8.MUTE_BEFORE_PROCESSING, true), o && e.setExperimentFlag(eD.V8.PTT_BEFORE_PROCESSING, true), s && e.setExperimentFlag(eD.V8.SKIP_ENCODE, true), (0, q.J)({
       location: "setupMediaEngine"
-    }).enabled && e.setExperimentFlag(eP.V8.LOW_LATENCY_RATE_CONTROL, true);
+    }).enabled && e.setExperimentFlag(eD.V8.LOW_LATENCY_RATE_CONTROL, true);
     let l = false,
       c = true;
-    if (e.setExperimentFlag(eP.V8.RESET_DECODER_ON_ERRORS, true), l && e.setExperimentFlag(eP.V8.SOFTWARE_FALLBACK_ON_ERRORS, true), c && e.setExperimentFlag(eP.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS, true), e.context === eP.Yn.STREAM) {
-      let t = na(e6);
+    if (e.setExperimentFlag(eD.V8.RESET_DECODER_ON_ERRORS, true), l && e.setExperimentFlag(eD.V8.SOFTWARE_FALLBACK_ON_ERRORS, true), c && e.setExperimentFlag(eD.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS, true), e.context === eD.Yn.STREAM) {
+      let t = nu(e7);
       e.setSoundshareDiscardRearChannels(t);
       let {
         simulcastEnabled: n,
@@ -488,24 +517,24 @@ function t$() {
       } = Y.Z.getConfig();
       e.configureGoLiveSimulcast(n, r)
     }
-    if ((0, ef.isWindows)() ? (null == tx ? true : tx.startsWith("NVIDIA")) || (null == tx ? true : tx.startsWith("AMD")) ? e.setExperimentFlag(eP.V8.SIGNAL_AV1, true) : e.setExperimentFlag(eP.V8.SIGNAL_AV1_DECODE, true) : ((0, ef.isMac)() || (0, ef.isLinux)()) && e.setExperimentFlag(eP.V8.SIGNAL_AV1_DECODE, true), (0, ef.isWindows)() && e.setExperimentFlag(eP.V8.SIGNAL_AV1_HARDWARE_DECODE, true), (0, ef.isWeb)()) {
+    if ((0, e_.isWindows)() ? (null == tj ? true : tj.startsWith("NVIDIA")) || (null == tj ? true : tj.startsWith("AMD")) ? e.setExperimentFlag(eD.V8.SIGNAL_AV1, true) : e.setExperimentFlag(eD.V8.SIGNAL_AV1_DECODE, true) : ((0, e_.isMac)() || (0, e_.isLinux)()) && e.setExperimentFlag(eD.V8.SIGNAL_AV1_DECODE, true), (0, e_.isWindows)() && e.setExperimentFlag(eD.V8.SIGNAL_AV1_HARDWARE_DECODE, true), (0, e_.isWeb)()) {
       let {
         enabled: t
       } = (0, H.A)("MediaEngineStore");
-      e.setExperimentFlag(eP.V8.BROWSER_HEVC, t)
+      e.setExperimentFlag(eD.V8.BROWSER_HEVC, t)
     }
-    if (e$.setHasFullbandPerformance((0, P.Z)()), e.setRemoteAudioHistory(1e3), (0, C.Z)(r)) {
+    if (e0.setHasFullbandPerformance((0, P.Z)()), e.setRemoteAudioHistory(1e3), (0, C.Z)(r)) {
       let {
         enableViewerClipping: t
-      } = $.Z.getCurrentConfig({
+      } = ee.Z.getCurrentConfig({
         location: "f627ab_15"
       }, {
         autoTrackExposure: false
       });
-      e.setViewerSideClip(t), e.setClipsKeyFrameInterval(eP.ux)
+      e.setViewerSideClip(t), e.setClipsKeyFrameInterval(eD.ux)
     }
-    for (let n of (t = tF(e.context), e.setPostponeDecodeLevel(eK), Object.keys(t.localMutes))) n !== eg.default.getId() && e.setLocalMute(n, t.localMutes[n]);
-    for (let n of Object.keys(t.localVolumes)) n !== eg.default.getId() && e.setLocalVolume(n, t.localVolumes[n]);
+    for (let n of (t = tK(e.context), e.setPostponeDecodeLevel(ez), Object.keys(t.localMutes))) n !== eE.default.getId() && e.setLocalMute(n, t.localMutes[n]);
+    for (let n of Object.keys(t.localVolumes)) n !== eE.default.getId() && e.setLocalVolume(n, t.localVolumes[n]);
     for (let n of Object.keys(t.localPans)) {
       let r = t.localPans[n];
       e.setLocalPan(n, r.left, r.right)
@@ -518,9 +547,9 @@ function t$() {
         userId: t,
         speakingFlags: n
       })
-    }), e.context === eP.Yn.DEFAULT && (ts = false, tl = false, e.on(b.Sh.SpeakingWhileMuted, () => {
-      ts = true, tl = true, r.emitChange(), tc.stop(), tc.start(ez, () => {
-        tl = false, r.emitChange()
+    }), e.context === eD.Yn.DEFAULT && (tl = false, tc = false, e.on(b.Sh.SpeakingWhileMuted, () => {
+      tl = true, tc = true, r.emitChange(), tu.stop(), tu.start(eq, () => {
+        tc = false, r.emitChange()
       })
     })), e.on(b.Sh.DesktopSourceEnd, (t, n) => {
       v.Z.dispatch({
@@ -537,7 +566,7 @@ function t$() {
         required: e
       })
     }), e.on(b.Sh.VideoHookInitialize, (e, t, n, r, i, o) => {
-      (null == a ? true : a.desktopSource) != null && ec.default.track(eS.rMx.VIDEOHOOK_INITIALIZED, eL({
+      (null == a ? true : a.desktopSource) != null && eu.default.track(eA.rMx.VIDEOHOOK_INITIALIZED, ex({
         backend: e,
         format: t,
         framebuffer_format: n,
@@ -546,10 +575,10 @@ function t$() {
         reinitialization: o
       }, (0, M.Z)(null == a ? true : a.desktopSource)))
     }), e.on(b.Sh.NoiseCancellationError, e => {
-      ek.warn("noisecancellererror event: ".concat(e)), (0, D.kr)({
+      ej.warn("noisecancellererror event: ".concat(e)), (0, D.kr)({
         type: D.u.NOISE_CANCELLER_ERROR,
-        underlyingError: tz(e)
-      }), tS = true, ec.default.track(eS.rMx.VOICE_PROCESSING, {
+        underlyingError: t$(e)
+      }), tA = true, eu.default.track(eA.rMx.VOICE_PROCESSING, {
         noise_canceller_error: e
       }), v.Z.dispatch({
         type: "AUDIO_SET_NOISE_SUPPRESSION",
@@ -562,16 +591,16 @@ function t$() {
         code: e
       })
     }), e.on(b.Sh.VoiceActivityDetectorError, e => {
-      ek.warn("voiceactivitydetectorerror event: ".concat(e)), (0, D.kr)({
+      ej.warn("voiceactivitydetectorerror event: ".concat(e)), (0, D.kr)({
         type: D.u.NOISE_CANCELLER_ERROR,
-        underlyingError: tz(e)
-      }), ec.default.track(eS.rMx.VOICE_PROCESSING, {
+        underlyingError: t$(e)
+      }), eu.default.track(eA.rMx.VOICE_PROCESSING, {
         noise_canceller_error: e
       }), v.Z.dispatch({
         type: "AUDIO_SET_MODE",
-        context: eP.Yn.DEFAULT,
-        mode: eS.pM4.VOICE_ACTIVITY,
-        options: eM(eL({}, tF(eP.Yn.DEFAULT).modeOptions), {
+        context: eD.Yn.DEFAULT,
+        mode: eA.pM4.VOICE_ACTIVITY,
+        options: ek(ex({}, tK(eD.Yn.DEFAULT).modeOptions), {
           vadUseKrisp: false
         })
       }), v.Z.dispatch({
@@ -579,7 +608,7 @@ function t$() {
         code: e
       })
     }), e.on(b.Sh.SdpError, (e, t, n, r) => {
-      ec.default.track(eS.rMx.SDP_ERROR, {
+      eu.default.track(eA.rMx.SDP_ERROR, {
         operation: e,
         error: t,
         type: n,
@@ -591,40 +620,40 @@ function t$() {
         videoState: t,
         context: e.context
       })
-    }), e.setBitRate(eE.Z.bitrate), e.applyVideoQualityMode(eT.Z.mode), e$.supports(eP.AN.ASYNC_VIDEO_INPUT_DEVICE_INIT) && e$.setAsyncVideoInputDeviceInit((0, B.p)("setupMediaEngine").enabled)
-  }), e$.on(Chunk46973.aB.DeviceChange, (e, t, n) => {
+    }), e.setBitRate(eb.Z.bitrate), e.applyVideoQualityMode(eS.Z.mode), e0.supports(eD.AN.ASYNC_VIDEO_INPUT_DEVICE_INIT) && e0.setAsyncVideoInputDeviceInit((0, B.p)("setupMediaEngine").enabled)
+  }), e0.on(Chunk46973.aB.DeviceChange, (e, t, n) => {
     v.Z.dispatch({
       type: "MEDIA_ENGINE_DEVICES",
       inputDevices: e,
       outputDevices: t,
       videoDevices: n
     })
-  }), e$.on(Chunk46973.aB.VolumeChange, (e, t) => {
+  }), e0.on(Chunk46973.aB.VolumeChange, (e, t) => {
     v.Z.dispatch({
       type: "AUDIO_VOLUME_CHANGE",
       inputVolume: e,
       outputVolume: t
     })
-  }), e$.on(Chunk46973.aB.DesktopSourceEnd, (e, t) => {
+  }), e0.on(Chunk46973.aB.DesktopSourceEnd, (e, t) => {
     v.Z.dispatch({
       type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE",
       settings: null,
       endReason: e,
       errorCode: t
     })
-  }), e$.on(Chunk46973.aB.AudioPermission, e => {
-    tN = true, v.Z.dispatch({
+  }), e0.on(Chunk46973.aB.AudioPermission, e => {
+    tD = true, v.Z.dispatch({
       type: "MEDIA_ENGINE_PERMISSION",
       kind: "audio",
       granted: e
     })
-  }), e$.on(Chunk46973.aB.VideoPermission, e => {
+  }), e0.on(Chunk46973.aB.VideoPermission, e => {
     v.Z.dispatch({
       type: "MEDIA_ENGINE_PERMISSION",
       kind: "video",
       granted: e
     })
-  }), e$.on(Chunk46973.aB.WatchdogTimeout, async () => {
+  }), e0.on(Chunk46973.aB.WatchdogTimeout, async () => {
     let e;
     try {
       await Chunk12647.Z.submitLiveCrashReport({
@@ -635,29 +664,29 @@ function t$() {
     } catch (t) {
       "number" == typeof exports.status && (e = exports.status)
     }
-    ek.warn("Watchdog timeout, report submission status: ".concat(null != module ? module : 200)), Chunk626135.default.track(Chunk981631.rMx.VOICE_WATCHDOG_TIMEOUT, {
+    ej.warn("Watchdog timeout, report submission status: ".concat(null != module ? module : 200)), Chunk626135.default.track(Chunk981631.rMx.VOICE_WATCHDOG_TIMEOUT, {
       minidump_submission_error: module
     })
-  }), e$.on(Chunk46973.aB.VideoInputInitialized, e => {
-    ec.default.track(eS.rMx.VIDEO_INPUT_INITIALIZED, {
+  }), e0.on(Chunk46973.aB.VideoInputInitialized, e => {
+    eu.default.track(eA.rMx.VIDEO_INPUT_INITIALIZED, {
       device_name: e.description.name,
-      time_to_first_frame_ms: e.initializationTimerExpired ? null : Math.round(e.timeToFirstFrame * ed.Z.Millis.SECOND),
+      time_to_first_frame_ms: e.initializationTimerExpired ? null : Math.round(e.timeToFirstFrame * ef.Z.Millis.SECOND),
       timed_out: e.initializationTimerExpired,
       activity: e.entropy,
-      media_session_id: eO.Z.getMediaSessionId(),
-      rtc_connection_id: eO.Z.getRTCConnectionId()
+      media_session_id: ev.Z.getMediaSessionId(),
+      rtc_connection_id: ev.Z.getRTCConnectionId()
     })
-  }), e$.on(Chunk46973.aB.AudioInputInitialized, e => {
-    ec.default.track(eS.rMx.AUDIO_INPUT_INITIALIZED, {
+  }), e0.on(Chunk46973.aB.AudioInputInitialized, e => {
+    eu.default.track(eA.rMx.AUDIO_INPUT_INITIALIZED, {
       device_name: e.description.name,
-      time_to_initialized_ms: Math.round(e.timeToInitialized * ed.Z.Millis.SECOND),
-      rtc_connection_id: eO.Z.getRTCConnectionId()
+      time_to_initialized_ms: Math.round(e.timeToInitialized * ef.Z.Millis.SECOND),
+      rtc_connection_id: ev.Z.getRTCConnectionId()
     })
-  }), e$.on(Chunk46973.aB.ClipsRecordingRestartNeeded, () => {
+  }), e0.on(Chunk46973.aB.ClipsRecordingRestartNeeded, () => {
     Chunk570140.Z.dispatch({
       type: "CLIPS_RESTART"
     })
-  }), e$.on(Chunk46973.aB.ClipsInitFailure, (e, t) => {
+  }), e0.on(Chunk46973.aB.ClipsInitFailure, (e, t) => {
     v.Z.wait(() => {
       v.Z.dispatch({
         type: "CLIPS_INIT_FAILURE",
@@ -665,47 +694,47 @@ function t$() {
         applicationName: t
       })
     })
-  }), e$.on(Chunk46973.aB.ClipsRecordingEnded, (e, t) => {
+  }), e0.on(Chunk46973.aB.ClipsRecordingEnded, (e, t) => {
     var n, r;
     (null == o || null == (n = o.desktopSource) ? true : n.id) === e && (null != t && (null == a || null == (r = a.desktopSource) ? true : r.soundshareId) !== t && T.pn(t), o = null)
-  }), e$.on(Chunk46973.aB.NativeScreenSharePickerUpdate, (e, t) => {
+  }), e0.on(Chunk46973.aB.NativeScreenSharePickerUpdate, (e, t) => {
     v.Z.dispatch({
       type: "NATIVE_SCREEN_SHARE_PICKER_UPDATE",
       existing: e,
       content: t
     })
-  }), e$.on(Chunk46973.aB.NativeScreenSharePickerCancel, e => {
+  }), e0.on(Chunk46973.aB.NativeScreenSharePickerCancel, e => {
     v.Z.dispatch({
       type: "NATIVE_SCREEN_SHARE_PICKER_CANCEL",
       existing: e
     })
-  }), e$.on(Chunk46973.aB.NativeScreenSharePickerError, e => {
+  }), e0.on(Chunk46973.aB.NativeScreenSharePickerError, e => {
     v.Z.dispatch({
       type: "NATIVE_SCREEN_SHARE_PICKER_ERROR",
       error: e
     })
-  }), e$.on(Chunk46973.aB.AudioDeviceModuleError, (e, t, n) => {
-    ec.default.track(eS.rMx.AUDIO_DEVICE_MODULE_ERROR, {
+  }), e0.on(Chunk46973.aB.AudioDeviceModuleError, (e, t, n) => {
+    eu.default.track(eA.rMx.AUDIO_DEVICE_MODULE_ERROR, {
       audio_device_module: e,
       code: t,
       device_name: n
     })
-  }), e$.on(Chunk46973.aB.VideoCodecError, e => {
+  }), e0.on(Chunk46973.aB.VideoCodecError, e => {
     let t = "encode" === e.mode ? D.u.VIDEO_ENCODE_ERROR : D.u.VIDEO_DECODE_ERROR,
       n = {
         videoCodec: e.codecStandard,
         errorMessage: e.message
       };
-    (0, D.kr)(t === D.u.VIDEO_ENCODE_ERROR ? eM(eL({
+    (0, D.kr)(t === D.u.VIDEO_ENCODE_ERROR ? ek(ex({
       type: t
     }, n), {
       videoEncoder: e.implName
-    }) : eM(eL({
+    }) : ek(ex({
       type: t
     }, n), {
       videoDecoder: e.implName
     }))
-  }), e$.on(Chunk46973.aB.ConnectionStats, e => {
+  }), e0.on(Chunk46973.aB.ConnectionStats, e => {
     v.Z.dispatch({
       type: "MEDIA_ENGINE_CONNECTION_STATS",
       connectionStats: e.map(e => {
@@ -716,118 +745,118 @@ function t$() {
         return {
           stats: t,
           mediaEngineConnectionId: n.mediaEngineConnectionId,
-          version: eX++,
+          version: eQ++,
           context: n.context
         }
       })
     })
-  }), e$.on(Chunk46973.aB.VoiceQueueMetrics, e => {
-    let t = rj(e);
-    null !== t && ec.default.track(eS.rMx.VOICE_QUEUE_METRICS, t)
-  }), e$.setOnVideoContainerResized((e, t, n) => {
+  }), e0.on(Chunk46973.aB.VoiceQueueMetrics, e => {
+    let t = rF(e);
+    null !== t && eu.default.track(eA.rMx.VOICE_QUEUE_METRICS, t)
+  }), e0.setOnVideoContainerResized((e, t, n) => {
     v.Z.wait(() => v.Z.dispatch({
       type: "VIDEO_SIZE_UPDATE",
       streamId: e,
       width: t,
       height: n
     }))
-  }), nW(), nK(), e$.supports(Chunk65154.AN.ASYNC_CLIPS_SOURCE_DEINIT) && e$.setAsyncClipsSourceDeinit((0, Chunk502450.C)("setupMediaEngine").enabled), t5.reset(), (0, Chunk704806.q)().then(e => {
-    null != e && (tx = e.gpu_brand)
-  }), e$.on(Chunk46973.aB.SystemMicrophoneModeChange, e => {
-    e$.eachConnection(tJ)
+  }), nX(), nJ(), e0.supports(Chunk65154.AN.ASYNC_CLIPS_SOURCE_DEINIT) && e0.setAsyncClipsSourceDeinit((0, Chunk502450.C)("setupMediaEngine").enabled), ne.reset(), (0, Chunk704806.q)().then(e => {
+    null != e && (tj = e.gpu_brand)
+  }), e0.on(Chunk46973.aB.SystemMicrophoneModeChange, e => {
+    e0.eachConnection(t2)
   })
 }
 
-function t0() {
+function t5() {
   return (0, Chunk358085.isWindows)() && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.c5)
 }
 
-function t1() {
+function t8() {
   return (0, Chunk358085.isWindows)() && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.sN)
 }
 
-function t3() {
-  return (0, Chunk358085.isMac)() && e$.supports(Chunk65154.AN.SCREEN_CAPTURE_KIT) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.C7)
+function t6() {
+  return (0, Chunk358085.isMac)() && e0.supports(Chunk65154.AN.SCREEN_CAPTURE_KIT) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.C7)
 }
 
-function t2() {
-  return (0, Chunk358085.isWindows)() && e$.supports(Chunk65154.AN.AUTOMATIC_AUDIO_SUBSYSTEM) && e$.supports(Chunk65154.AN.AUDIO_SUBSYSTEM_DEFERRED_SWITCH)
+function t7() {
+  return (0, Chunk358085.isWindows)() && e0.supports(Chunk65154.AN.AUTOMATIC_AUDIO_SUBSYSTEM) && e0.supports(Chunk65154.AN.AUDIO_SUBSYSTEM_DEFERRED_SWITCH)
 }
 
-function t4() {
-  return e$.supports(Chunk65154.AN.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING)
+function t9() {
+  return e0.supports(Chunk65154.AN.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING)
 }
-let t5 = new class {
+let ne = new class {
   start() {
-    this.started || (this.started = true, e$.on(Chunk46973.aB.Silence, this.handleSilence))
+    this.started || (this.started = true, e0.on(Chunk46973.aB.Silence, this.handleSilence))
   }
   stop() {
-    this.started && (this.started = false, null != this.stateChangeTimeout && (clearTimeout(this.stateChangeTimeout), this.stateChangeTimeout = null), e$.removeListener(Chunk46973.aB.Silence, this.handleSilence), Chunk570140.Z.dispatch({
+    this.started && (this.started = false, null != this.stateChangeTimeout && (clearTimeout(this.stateChangeTimeout), this.stateChangeTimeout = null), e0.removeListener(Chunk46973.aB.Silence, this.handleSilence), Chunk570140.Z.dispatch({
       type: "AUDIO_INPUT_DETECTED",
       inputDetected: null
     }))
   }
   update() {
-    let e = tF();
-    !t_ && Chunk19780.Z.getState() === Chunk981631.hes.RTC_CONNECTED && module.mode === Chunk981631.pM4.VOICE_ACTIVITY && module.silenceWarning ? this.start() : this.stop()
+    let e = tK();
+    !tp && Chunk19780.Z.getState() === Chunk981631.hes.RTC_CONNECTED && module.mode === Chunk981631.pM4.VOICE_ACTIVITY && module.silenceWarning ? this.start() : this.stop()
   }
   reset() {
     this.stop(), this.update()
   }
   constructor() {
-    ew(this, "stateChangeTimeout", true), ew(this, "noVoiceTimeout", 5e3), ew(this, "voiceTimeout", 1500), ew(this, "started", false), ew(this, "handleSilence", e => {
+    eL(this, "stateChangeTimeout", true), eL(this, "noVoiceTimeout", 5e3), eL(this, "voiceTimeout", 1500), eL(this, "started", false), eL(this, "handleSilence", e => {
       let t = !e;
       null != this.stateChangeTimeout && clearTimeout(this.stateChangeTimeout), this.stateChangeTimeout = setTimeout(() => {
         this.stateChangeTimeout = null, this.started && (v.Z.dispatch({
           type: "AUDIO_INPUT_DETECTED",
           inputDetected: t
-        }), e && (tp = true))
+        }), e && (th = true))
       }, t ? this.voiceTimeout : this.noVoiceTimeout)
     })
   }
 };
 
-function t8() {
+function nt() {
   var e;
   let t = Chunk433517.K.get("audio");
-  null != exports && (Chunk433517.K.set(ej, {
+  null != exports && (Chunk433517.K.set(eU, {
     [Chunk65154.Yn.DEFAULT]: exports
-  }), Chunk433517.K.remove("audio")), e0 = null != (e = Chunk433517.K.get(ej)) ? module : {}, p().each(e0, e => {
-    if (p().defaultsDeep(e, eQ()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, em.Kd)(e.modeOptions.shortcut)), null != e.modeOptions && e.vadUseKrispSettingVersion !== eU && (e.vadUseKrispSettingVersion = eU, e.modeOptions.vadUseKrisp = true), e.qosMigrated || (e.qosMigrated = true, e.qos = false), !e.vadThrehsoldMigrated) {
+  }), Chunk433517.K.remove("audio")), e1 = null != (e = Chunk433517.K.get(eU)) ? module : {}, p().each(e1, e => {
+    if (p().defaultsDeep(e, eJ()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, eg.Kd)(e.modeOptions.shortcut)), null != e.modeOptions && e.vadUseKrispSettingVersion !== eG && (e.vadUseKrispSettingVersion = eG, e.modeOptions.vadUseKrisp = true), e.qosMigrated || (e.qosMigrated = true, e.qos = false), !e.vadThrehsoldMigrated) {
       var t;
-      e.vadThrehsoldMigrated = true, (null == (t = e.modeOptions) ? true : t.threshold) === false && (e.modeOptions.threshold = eY)
+      e.vadThrehsoldMigrated = true, (null == (t = e.modeOptions) ? true : t.threshold) === false && (e.modeOptions.threshold = eK)
     }
-    e$.supports(eP.AN.SIDECHAIN_COMPRESSION) && e.sidechainCompressionSettingVersion < eZ && (e.sidechainCompressionSettingVersion = eZ, e.sidechainCompression = true), (0, ef.isWeb)() ? e.ncUseKrispjsSettingVersion !== eB && (e.ncUseKrispjsSettingVersion = eB, e.noiseSuppression = false, e.noiseCancellation = true) : e.ncUseKrispSettingVersion !== eG && (e.ncUseKrispSettingVersion = eG, e.noiseSuppression = false, e.noiseCancellation = true)
-  }), t9()
+    e0.supports(eD.AN.SIDECHAIN_COMPRESSION) && e.sidechainCompressionSettingVersion < eF && (e.sidechainCompressionSettingVersion = eF, e.sidechainCompression = true), (0, e_.isWeb)() ? e.ncUseKrispjsSettingVersion !== eZ && (e.ncUseKrispjsSettingVersion = eZ, e.noiseSuppression = false, e.noiseCancellation = true) : e.ncUseKrispSettingVersion !== eB && (e.ncUseKrispSettingVersion = eB, e.noiseSuppression = false, e.noiseCancellation = true)
+  }), ni()
 }
 
-function t6(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eP.Yn.DEFAULT,
+function nn(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eD.Yn.DEFAULT,
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-    r = tZ(t);
-  return Object.assign(r, e), !__OVERLAY__ && n && y.K.set(ej, e0), r
+    r = tY(t);
+  return Object.assign(r, e), !__OVERLAY__ && n && y.K.set(eU, e1), r
 }
 
-function t7() {
-  Chunk433517.K.remove(ej), location.reload()
+function nr() {
+  Chunk433517.K.remove(eU), location.reload()
 }
 
-function t9() {
-  let e = tF();
-  e$.setAudioInputDevice(module.inputDeviceId), e$.setAudioOutputDevice(module.outputDeviceId), tK(), e$.setInputVolume(module.inputVolume), e$.setOutputVolume(module.outputVolume), e$.setH264Enabled(eq), e$.setAv1Enabled(eq), e$.setH265Enabled(eq), e$.setAecDump(module.aecDumpEnabled), e$.setSidechainCompression(module.sidechainCompression), e$.setSidechainCompressionStrength(module.sidechainCompressionStrength), e$.setAudioInputBypassSystemProcessing(module.bypassSystemInputProcessing)
+function ni() {
+  let e = tK();
+  e0.setAudioInputDevice(module.inputDeviceId), e0.setAudioOutputDevice(module.outputDeviceId), tJ(), e0.setInputVolume(module.inputVolume), e0.setOutputVolume(module.outputVolume), e0.setH264Enabled(eX), e0.setAv1Enabled(eX), e0.setH265Enabled(eX), e0.setAecDump(module.aecDumpEnabled), e0.setSidechainCompression(module.sidechainCompression), e0.setSidechainCompressionStrength(module.sidechainCompressionStrength), e0.setAudioInputBypassSystemProcessing(module.bypassSystemInputProcessing)
 }
 
-function ne() {
-  e3 || e$.enable().then(() => Chunk570140.Z.dispatch({
+function na() {
+  e2 || e0.enable().then(() => Chunk570140.Z.dispatch({
     type: "MEDIA_ENGINE_SET_AUDIO_ENABLED",
     enabled: true,
     unmute: false
   }))
 }
 
-function nt(e) {
+function no(e) {
   return {
-    id: eP.w5,
+    id: eD.w5,
     index: 0,
     name: e,
     disabled: true,
@@ -837,9 +866,9 @@ function nt(e) {
   }
 }
 
-function nn(e, t) {
+function ns(e, t) {
   if (0 === e.length) {
-    let e = nt(t);
+    let e = no(t);
     return {
       [e.id]: e
     }
@@ -856,55 +885,55 @@ function nn(e, t) {
   })).keyBy("id").value()
 }
 
-function nr(e, t) {
+function nl(e, t) {
   var n, r;
-  let i = null != (r = null != (n = e[t]) ? n : e[eP.w5]) ? r : p()(e).values().first();
+  let i = null != (r = null != (n = e[t]) ? n : e[eD.w5]) ? r : p()(e).values().first();
   return null != i ? i.id : t
 }
 
-function ni(e) {
-  let t = e8;
-  if (e8 = nn(e, eD.intl.string(eD.t["/QIjDA"])), !p().isEqual(e8, t)) {
-    let e = tF(),
-      t = nr(e8, e.inputDeviceId);
-    e$.setAudioInputDevice(t)
+function nc(e) {
+  let t = e6;
+  if (e6 = ns(e, ew.intl.string(ew.t["/QIjDA"])), !p().isEqual(e6, t)) {
+    let e = tK(),
+      t = nl(e6, e.inputDeviceId);
+    e0.setAudioInputDevice(t)
   }
 }
 
-function na(e) {
+function nu(e) {
   return Object.values(e).some(e => e.name.toLowerCase().includes("dualsense"))
 }
 
-function no(e) {
-  e$.eachConnection(t => {
-    t.context === eP.Yn.STREAM && t.setSoundshareDiscardRearChannels(e)
+function nd(e) {
+  e0.eachConnection(t => {
+    t.context === eD.Yn.STREAM && t.setSoundshareDiscardRearChannels(e)
   })
 }
 
-function ns(e) {
-  let t = e6;
-  if (e6 = nn(e, eD.intl.string(eD.t.xlUg0v)), !p().isEqual(e6, t)) {
-    let e = tF(),
-      n = nr(e6, e.outputDeviceId);
-    e$.setAudioOutputDevice(n);
-    let r = na(t),
-      i = na(e6);
-    r !== i && no(i)
-  }
-}
-
-function nl(e) {
-  td = e.length > 0;
+function nf(e) {
   let t = e7;
-  if (e7 = nn(e, eD.intl.string(eD.t.WKWARY)), tr && !p().isEqual(e7, t)) {
-    var n;
-    let e = true !== e7[ti],
-      r = ti === eP.w5 && (null == (n = t[eP.w5]) ? true : n.disabled);
-    tK(e || r)
+  if (e7 = ns(e, ew.intl.string(ew.t.xlUg0v)), !p().isEqual(e7, t)) {
+    let e = tK(),
+      n = nl(e7, e.outputDeviceId);
+    e0.setAudioOutputDevice(n);
+    let r = nu(t),
+      i = nu(e7);
+    r !== i && nd(i)
   }
 }
 
-function nc() {
+function n_(e) {
+  tf = e.length > 0;
+  let t = e9;
+  if (e9 = ns(e, ew.intl.string(ew.t.WKWARY)), ti && !p().isEqual(e9, t)) {
+    var n;
+    let e = true !== e9[ta],
+      r = ta === eD.w5 && (null == (n = t[eD.w5]) ? true : n.disabled);
+    tJ(e || r)
+  }
+}
+
+function np() {
   var e, t;
   let n = arguments.length > 0 && true !== arguments[0] && arguments[0],
     r = null != (e = Chunk581883.Z.settings.audioContextSettings) ? module : {
@@ -918,38 +947,38 @@ function nc() {
       {
         localMutes: s,
         localVolumes: l
-      } = tF(i);
-    for (let [e, t] of Object.entries(o)) null == (0, Chunk725380.Ky)(i, module) && (exports.muted ? s[module] = true : delete s[module], exports.volume !== a ? l[module] = exports.volume : delete l[module], e$.eachConnection(n => {
+      } = tK(i);
+    for (let [e, t] of Object.entries(o)) null == (0, Chunk725380.Ky)(i, module) && (exports.muted ? s[module] = true : delete s[module], exports.volume !== a ? l[module] = exports.volume : delete l[module], e0.eachConnection(n => {
       n.setLocalVolume(e, t.volume), n.setLocalMute(e, t.muted)
     }, i));
     if (require)
-      for (let e of new Set([...Object.keys(s), ...Object.keys(l)])) null == o[module] && (delete s[module], delete l[module], e$.eachConnection(t => {
+      for (let e of new Set([...Object.keys(s), ...Object.keys(l)])) null == o[module] && (delete s[module], delete l[module], e0.eachConnection(t => {
         t.setLocalVolume(e, a), t.setLocalMute(e, false)
       }, i));
-    t6({
+    nn({
       localMutes: s,
       localVolumes: l
     }, i)
   }
 }
 
-function nu(e) {
-  if (null == r) return ek.info("Error: trying to get soundshare id before MediaEngineStore is instantiated."), {
+function nh(e) {
+  if (null == r) return ej.info("Error: trying to get soundshare id before MediaEngineStore is instantiated."), {
     soundshareId: null,
     soundshareSession: ""
   };
   {
-    let t = r.getExperimentalSoundshare() ? e : eu.Z.getAudioPid(e),
+    let t = r.getExperimentalSoundshare() ? e : ed.Z.getAudioPid(e),
       n = "";
-    return null != t && (n = eu.Z.generateSessionFromPid(t)), {
+    return null != t && (n = ed.Z.generateSessionFromPid(t)), {
       soundshareId: t,
       soundshareSession: n
     }
   }
 }
 
-function nd(e, t) {
-  (0, ef.isWindows)() && e > 1 && T.YT(e, {
+function nm(e, t) {
+  (0, e_.isWindows)() && e > 1 && T.YT(e, {
     soundshare_session: t
   }).then(t => {
     null == t || x.ZP.shouldContinueWithoutElevatedProcessForPID(e) || v.Z.wait(() => {
@@ -961,41 +990,41 @@ function nd(e, t) {
   })
 }
 
-function nf(e) {
-  i = e.sessionId, e9 = false, tn = false;
-  let t = tF();
-  if (t2() && (t4() ? rd(eP.iA.AUTOMATIC) : t.automaticAudioSubsystem && rf()), e$.supports(eP.AN.OFFLOAD_ADM_CONTROLS)) {
+function ng(e) {
+  i = e.sessionId, te = false, tr = false;
+  let t = tK();
+  if (t7() && (t9() ? rm(eD.iA.AUTOMATIC) : t.automaticAudioSubsystem && rg()), e0.supports(eD.AN.OFFLOAD_ADM_CONTROLS)) {
     let e = false;
-    (0, ef.isDesktop)() ? e = (0, U.E)({
+    (0, e_.isDesktop)() ? e = (0, U.E)({
       location: "handleConnectionOpen"
-    }).enabled: ((0, ef.isIOS)() || (0, ef.isAndroid)()) && (e = (0, G.W)({
+    }).enabled: ((0, e_.isIOS)() || (0, e_.isAndroid)()) && (e = (0, G.W)({
       location: "handleConnectionOpen"
-    }).enabled), e$.setOffloadAdmControls(e)
-  }(0, es.wt)({
+    }).enabled), e0.setOffloadAdmControls(e)
+  }(0, el.wt)({
     location: "MediaEngineStore",
     autoTrackExposure: false
-  }) && null !== t.mostRecentlyRequestedVoiceFilter && (0, ef.isDesktop)() && (el.Z.getLastInitAttemptMayHaveCrashed() ? (v.Z.dispatch({
+  }) && null !== t.mostRecentlyRequestedVoiceFilter && (0, e_.isDesktop)() && (ec.Z.getLastInitAttemptMayHaveCrashed() ? (v.Z.dispatch({
     type: "AUDIO_SET_SELF_MUTE",
     mute: true,
-    context: eP.Yn.DEFAULT,
+    context: eD.Yn.DEFAULT,
     playSoundEffect: true
-  }), t6({
+  }), nn({
     mostRecentlyRequestedVoiceFilter: null
-  })) : n(358820).r5()), nc()
+  })) : n(358820).r5()), np()
 }
 
-function n_(e) {
+function nE(e) {
   let {
     mediaEngineState: t
   } = e;
-  e0 = t.settingsByContext, e8 = t.inputDevices, e6 = t.outputDevices, tL = t.appSupported, tg = t.krispModuleLoaded, s = t.krispVersion, e4 = t.goLiveContext
+  e1 = t.settingsByContext, e6 = t.inputDevices, e7 = t.outputDevices, tk = t.appSupported, tE = t.krispModuleLoaded, s = t.krispVersion, e5 = t.goLiveContext
 }
 
-function np() {
+function nb() {
   i = null
 }
 
-function nh() {
+function ny() {
   if ((0, Chunk358085.isWeb)()) {
     let e = Chunk529558.NJ.getCurrentConfig({
       location: "MediaEngineStore handlePostConnectionOpen"
@@ -1005,72 +1034,72 @@ function nh() {
   returnfalse
 }
 
-function nm(e) {
+function nO(e) {
   switch (e.state) {
-    case eS.hes.CONNECTING:
-      ne();
+    case eA.hes.CONNECTING:
+      na();
       break;
-    case eS.hes.RTC_CONNECTING:
-      t_ = false, tp = false;
+    case eA.hes.RTC_CONNECTING:
+      tp = false, th = false;
       break;
-    case eS.hes.RTC_CONNECTED:
-      tK();
+    case eA.hes.RTC_CONNECTED:
+      tJ();
       break;
-    case eS.hes.DISCONNECTED:
-      nS(), nA()
+    case eA.hes.DISCONNECTED:
+      nP(), nD()
   }
-  t5.update()
+  ne.update()
 }
 
-function ng(e) {
+function nv(e) {
   let {
     voiceStates: t
   } = e;
   return t.reduce((e, t) => {
     if (i === t.sessionId) {
-      e9 = t.mute || t.suppress, tn = t.deaf, e$.eachConnection(tW);
-      let e = null != t.guildId && null != t.channelId && null != tT && tT !== t.channelId,
-        n = !th && null == t.channelId;
-      return tK(!e && !n && tr), tT = t.channelId, true
+      te = t.mute || t.suppress, tr = t.deaf, e0.eachConnection(tX);
+      let e = null != t.guildId && null != t.channelId && null != tS && tS !== t.channelId,
+        n = !tm && null == t.channelId;
+      return tJ(!e && !n && ti), tS = t.channelId, true
     }
-    return __OVERLAY__ || t.userId !== eg.default.getId() || null != eO.Z.getChannelId() || tK(false, null), e
+    return __OVERLAY__ || t.userId !== eE.default.getId() || null != ev.Z.getChannelId() || tJ(false, null), e
   }, false)
 }
 
-function nE(e) {
+function nI(e) {
   let {
     mute: t
   } = e;
-  te = t, e$.eachConnection(tW)
+  tt = t, e0.eachConnection(tX)
 }
 
-function nb(e) {
+function nT(e) {
   let {
     context: t,
     playSoundEffect: n
   } = e, {
     mute: r,
     deaf: i
-  } = tF(t);
-  if (t === eP.Yn.DEFAULT && (et.Z.requestPermission(eC.Eu.AUDIO), tt)) returnfalse;
-  (r = !i && !r) || (i = false), n || (to = true), t6({
+  } = tK(t);
+  if (t === eD.Yn.DEFAULT && (en.Z.requestPermission(eN.Eu.AUDIO), tn)) returnfalse;
+  (r = !i && !r) || (i = false), n || (ts = true), nn({
     mute: r,
     deaf: i
-  }, t), e$.eachConnection(tW)
+  }, t), e0.eachConnection(tX)
 }
 
-function ny(e) {
+function nS(e) {
   let {
     context: t,
     mute: n,
     playSoundEffect: r
   } = e;
-  t6({
+  nn({
     mute: n
-  }, t), r || (to = true), e$.eachConnection(tW)
+  }, t), r || (ts = true), e0.eachConnection(tX)
 }
 
-function nO(e) {
+function nA(e) {
   let {
     settings: {
       type: t
@@ -1078,34 +1107,34 @@ function nO(e) {
     local: n,
     wasSaved: r
   } = e;
-  if (t !== eN.yP.PRELOADED_USER_SETTINGS || n || null != r) returnfalse;
-  nc(true)
+  if (t !== eR.yP.PRELOADED_USER_SETTINGS || n || null != r) returnfalse;
+  np(true)
 }
 
-function nv(e) {
+function nC(e) {
   let {
     context: t
   } = e;
-  t6({
-    deaf: !tF(t).deaf
-  }, t), e$.eachConnection(tW)
+  nn({
+    deaf: !tK(t).deaf
+  }, t), e0.eachConnection(tX)
 }
 
-function nI(e) {
+function nN(e) {
   let {
     context: t,
     userId: n
   } = e;
-  if (n === eg.default.getId()) return;
+  if (n === eE.default.getId()) return;
   let {
     localMutes: r
-  } = tF(t);
-  r[n] ? delete r[n] : r[n] = true, t6({
+  } = tK(t);
+  r[n] ? delete r[n] : r[n] = true, nn({
     localMutes: r
-  }, t), e$.eachConnection(e => e.setLocalMute(n, r[n] || false), t)
+  }, t), e0.eachConnection(e => e.setLocalMute(n, r[n] || false), t)
 }
 
-function nT(e) {
+function nR(e) {
   var t, n, r, i, a, o, s;
   let {
     context: l,
@@ -1115,77 +1144,77 @@ function nT(e) {
     isAutomatic: _
   } = e;
   f()(!(d && _), "These are not allowed to both be true.");
-  let p = u === eS.ZUi.DISABLED,
+  let p = u === eA.ZUi.DISABLED,
     {
       disabledLocalVideos: h
-    } = tF(l),
+    } = tK(l),
     m = null != (t = h[c]) && t,
-    g = tP.has(c),
-    E = u === eS.ZUi.AUTO_ENABLED || u === eS.ZUi.MANUAL_ENABLED;
-  ek.info("disableVideo=".concat(p, " currentlyDisabled=").concat(m, " currentlyAutoDisabled=").concat(g, ", isVideoShown=").concat(E)), f()(!(g && !m), "If you are auto-disabled, then you are also disabled.");
+    g = tL.has(c),
+    E = u === eA.ZUi.AUTO_ENABLED || u === eA.ZUi.MANUAL_ENABLED;
+  ej.info("disableVideo=".concat(p, " currentlyDisabled=").concat(m, " currentlyAutoDisabled=").concat(g, ", isVideoShown=").concat(E)), f()(!(g && !m), "If you are auto-disabled, then you are also disabled.");
   let b = p !== m,
-    y = l === eP.Yn.DEFAULT,
+    y = l === eD.Yn.DEFAULT,
     O = _ && b && y,
     v = d && b && y;
-  ek.info("changed=".concat(b, " isDefaultContext=").concat(y, " isUpdateCausedByVideoHealthManager=").concat(O, " isManualToggleByUser=").concat(v));
+  ej.info("changed=".concat(b, " isDefaultContext=").concat(y, " isUpdateCausedByVideoHealthManager=").concat(O, " isManualToggleByUser=").concat(v));
   let {
     videoToggleStateMap: I
-  } = tF(l);
-  if (I[c] === eS.ZUi.AUTO_PROBING && u === eS.ZUi.AUTO_ENABLED && (0, ee.Z)(c, p ? eP.fC.AUTO_DISABLE : eP.fC.AUTO_ENABLE, E), I[c] = u, t6({
+  } = tK(l);
+  if (I[c] === eA.ZUi.AUTO_PROBING && u === eA.ZUi.AUTO_ENABLED && (0, et.Z)(c, p ? eD.fC.AUTO_DISABLE : eD.fC.AUTO_ENABLE, E), I[c] = u, nn({
       videoToggleStateMap: I
-    }, l, d), u === eS.ZUi.AUTO_PROBING ? null == (n = eO.Z.getRTCConnection()) || n.pauseStatsCollectionForUser(c, true) : null == (r = eO.Z.getRTCConnection()) || r.pauseStatsCollectionForUser(c, false), tD || (ek.info("isAutoDisableAllowed=".concat(tD, " - disabling VideoHealthManager")), null == (a = eO.Z.getRTCConnection()) || null == (i = a.getVideoHealthManager()) || i.disable()), O) {
-    if (!p && !g || p && !tD) return;
-    (0, ee.Z)(c, p ? eP.fC.AUTO_DISABLE : eP.fC.AUTO_ENABLE, E), p ? tP.add(c) : tP.delete(c)
-  } else v && (g && !p ? (ek.info("disallowing auto-disable for this session because of manual override by user"), tD = false, null == (s = eO.Z.getRTCConnection()) || null == (o = s.getVideoHealthManager()) || o.disable(), (0, ee.Z)(c, eP.fC.MANUAL_REENABLE, E)) : (0, ee.Z)(c, p ? eP.fC.MANUAL_DISABLE : eP.fC.MANUAL_ENABLE, E));
-  y && !p && tP.delete(c), p ? h[c] = true : delete h[c], t6({
+    }, l, d), u === eA.ZUi.AUTO_PROBING ? null == (n = ev.Z.getRTCConnection()) || n.pauseStatsCollectionForUser(c, true) : null == (r = ev.Z.getRTCConnection()) || r.pauseStatsCollectionForUser(c, false), tx || (ej.info("isAutoDisableAllowed=".concat(tx, " - disabling VideoHealthManager")), null == (a = ev.Z.getRTCConnection()) || null == (i = a.getVideoHealthManager()) || i.disable()), O) {
+    if (!p && !g || p && !tx) return;
+    (0, et.Z)(c, p ? eD.fC.AUTO_DISABLE : eD.fC.AUTO_ENABLE, E), p ? tL.add(c) : tL.delete(c)
+  } else v && (g && !p ? (ej.info("disallowing auto-disable for this session because of manual override by user"), tx = false, null == (s = ev.Z.getRTCConnection()) || null == (o = s.getVideoHealthManager()) || o.disable(), (0, et.Z)(c, eD.fC.MANUAL_REENABLE, E)) : (0, et.Z)(c, p ? eD.fC.MANUAL_DISABLE : eD.fC.MANUAL_ENABLE, E));
+  y && !p && tL.delete(c), p ? h[c] = true : delete h[c], nn({
     disabledLocalVideos: h
-  }, l, d), e$.eachConnection(e => {
+  }, l, d), e0.eachConnection(e => {
     var t;
     return e.setLocalVideoDisabled(c, null != (t = h[c]) && t)
   }, l)
 }
 
-function nS() {
-  if (0 === tP.size) return;
+function nP() {
+  if (0 === tL.size) return;
   let e = Chunk65154.Yn.DEFAULT,
     {
       disabledLocalVideos: t
-    } = tF(module);
-  tP.forEach(n => {
-    f()(t[n], "If you are auto-disabled, then you are also disabled."), delete t[n], e$.eachConnection(e => e.setLocalVideoDisabled(n, false), e)
-  }), tP.clear(), t6({
+    } = tK(module);
+  tL.forEach(n => {
+    f()(t[n], "If you are auto-disabled, then you are also disabled."), delete t[n], e0.eachConnection(e => e.setLocalVideoDisabled(n, false), e)
+  }), tL.clear(), nn({
     disabledLocalVideos: exports
   }, module, false)
 }
 
-function nA() {
+function nD() {
   let e = Chunk65154.Yn.DEFAULT,
     {
       videoToggleStateMap: t
-    } = tF(module);
+    } = tK(module);
   for (let [e, n] of Object.entries(exports)) require === Chunk981631.ZUi.AUTO_PROBING && delete exports[module];
-  t6({
+  nn({
     videoToggleStateMap: exports
   }, module, false)
 }
 
-function nC(e) {
+function nw(e) {
   let {
     context: t,
     userId: n,
     volume: r
   } = e;
-  if (n === eg.default.getId()) return;
-  let i = t === eP.Yn.STREAM ? eP.Yh : eP.Qx,
+  if (n === eE.default.getId()) return;
+  let i = t === eD.Yn.STREAM ? eD.Yh : eD.Qx,
     {
       localVolumes: a
-    } = tF(t);
-  r === i ? delete a[n] : a[n] = r, t6({
+    } = tK(t);
+  r === i ? delete a[n] : a[n] = r, nn({
     localVolumes: a
-  }, t), e$.eachConnection(e => e.setLocalVolume(n, r), t)
+  }, t), e0.eachConnection(e => e.setLocalVolume(n, r), t)
 }
 
-function nN(e) {
+function nL(e) {
   let {
     context: t,
     userId: n,
@@ -1193,117 +1222,117 @@ function nN(e) {
     right: i
   } = e, {
     localPans: a
-  } = tF(t);
+  } = tK(t);
   a[n] = {
     left: r,
     right: i
-  }, t6({
+  }, nn({
     localPans: a
-  }, t), e$.eachConnection(e => e.setLocalPan(n, r, i), t)
+  }, t), e0.eachConnection(e => e.setLocalPan(n, r, i), t)
 }
 
-function nR(e) {
+function nx(e) {
   let {
     context: t,
     mode: n,
     options: r
   } = e;
-  t6({
+  nn({
     mode: n,
     modeOptions: r
-  }, t), e$.eachConnection(tV), t5.update()
-}
-
-function nP(e) {
-  let {
-    volume: t
-  } = e;
-  t6({
-    inputVolume: tH(t)
-  }), e$.setInputVolume(t)
-}
-
-function nD(e) {
-  let {
-    volume: t
-  } = e;
-  t6({
-    outputVolume: t
-  }), e$.setOutputVolume(t)
-}
-
-function nw(e) {
-  let {
-    id: t
-  } = e;
-  t = nr(e8, t), e5 = performance.now(), t6({
-    inputDeviceId: t
-  }), e$.setAudioInputDevice(t)
-}
-
-function nL(e) {
-  let {
-    id: t
-  } = e;
-  t6({
-    outputDeviceId: t = nr(e6, t)
-  }), e$.setAudioOutputDevice(t)
-}
-
-function nx(e) {
-  let {
-    id: t
-  } = e;
-  t6({
-    videoDeviceId: t = nr(e7, t)
-  }), tK()
+  }, t), e0.eachConnection(tz), ne.update()
 }
 
 function nM(e) {
   let {
-    inputProfile: t
+    volume: t
   } = e;
-  t6({
-    activeInputProfile: t
-  });
-  let n = tF();
-  e$.eachConnection(e => {
-    tV(e), tX(e, n.automaticGainControl), e.setEchoCancellation(n.echoCancellation), tQ(e, n.noiseCancellation), e.setNoiseSuppression(n.noiseSuppression)
-  }), e$.setAudioInputBypassSystemProcessing(n.bypassSystemInputProcessing), t5.update(), nY()
+  nn({
+    inputVolume: tq(t)
+  }), e0.setInputVolume(t)
 }
 
 function nk(e) {
-  return e2 !== e.required && (e2 = e.required, e.required || e$.interact(), true)
+  let {
+    volume: t
+  } = e;
+  nn({
+    outputVolume: t
+  }), e0.setOutputVolume(t)
 }
 
 function nj(e) {
+  let {
+    id: t
+  } = e;
+  t = nl(e6, t), e8 = performance.now(), nn({
+    inputDeviceId: t
+  }), e0.setAudioInputDevice(t)
+}
+
+function nU(e) {
+  let {
+    id: t
+  } = e;
+  nn({
+    outputDeviceId: t = nl(e7, t)
+  }), e0.setAudioOutputDevice(t)
+}
+
+function nG(e) {
+  let {
+    id: t
+  } = e;
+  nn({
+    videoDeviceId: t = nl(e9, t)
+  }), tJ()
+}
+
+function nB(e) {
+  let {
+    inputProfile: t
+  } = e;
+  nn({
+    activeInputProfile: t
+  });
+  let n = tK();
+  e0.eachConnection(e => {
+    tz(e), t1(e, n.automaticGainControl), e.setEchoCancellation(n.echoCancellation), t3(e, n.noiseCancellation), e.setNoiseSuppression(n.noiseSuppression)
+  }), e0.setAudioInputBypassSystemProcessing(n.bypassSystemInputProcessing), ne.update(), nQ()
+}
+
+function nZ(e) {
+  return e4 !== e.required && (e4 = e.required, e.required || e0.interact(), true)
+}
+
+function nF(e) {
   let {
     inputDevices: t,
     outputDevices: n,
     videoDevices: r
   } = e;
-  ni(t), ns(n), nl(r)
+  nc(t), nf(n), n_(r)
 }
 
-function nU(e) {
+function nV(e) {
   let {
     inputVolume: t,
     outputVolume: n
   } = e;
-  t6({
-    inputVolume: tH(t),
+  nn({
+    inputVolume: tq(t),
     outputVolume: n
   })
 }
 
-function nG(e) {
+function nH(e) {
   var t;
-  let n = tF(),
-    r = e$.getAudioSubsystem(),
-    i = e$.getAudioLayer(),
-    a = nr(e8, n.inputDeviceId),
-    o = null == (t = e8[a]) ? true : t.name;
-  ec.default.track(eS.rMx.VOICE_PROCESSING, {
+  let n = tK(),
+    r = e0.getAudioSubsystem(),
+    i = e0.getAudioLayer(),
+    a = nl(e6, n.inputDeviceId),
+    o = null == (t = e6[a]) ? true : t.name;
+  eu.default.track(eA.rMx.VOICE_PROCESSING, {
     echo_cancellation: n.echoCancellation,
     noise_cancellation: n.noiseCancellation,
     noise_suppression: n.noiseSuppression,
@@ -1316,56 +1345,56 @@ function nG(e) {
   })
 }
 
-function nB(e) {
-  let t = t6({
+function nW(e) {
+  let t = nn({
     echoCancellation: e.enabled
   });
-  e$.eachConnection(e => e.setEchoCancellation(t.echoCancellation)), nY(), nG(e.location)
+  e0.eachConnection(e => e.setEchoCancellation(t.echoCancellation)), nQ(), nH(e.location)
 }
 
-function nZ(e) {
-  nV(e.enabled)
+function nY(e) {
+  nz(e.enabled)
 }
 
-function nF(e) {
-  let t = t6({
+function nK(e) {
+  let t = nn({
     sidechainCompressionStrength: e.strength
   });
-  e$.setSidechainCompressionStrength(t.sidechainCompressionStrength)
+  e0.setSidechainCompressionStrength(t.sidechainCompressionStrength)
 }
 
-function nV(e) {
-  let t = t6({
+function nz(e) {
+  let t = nn({
     sidechainCompression: e
   });
-  e$.setSidechainCompression(t.sidechainCompression)
+  e0.setSidechainCompression(t.sidechainCompression)
 }
 
-function nH(e) {
+function nq(e) {
   let {
     enabled: t,
     loopbackReason: n
   } = e;
-  return t ? tw.add(n) : tw.delete(n), nW(), nY()
+  return t ? tM.add(n) : tM.delete(n), nX(), nQ()
 }
 
-function nW() {
-  let e = !tw.has("voice_filter_preview") && !tw.has("mic_test");
-  e$.setMaybePreprocessMute(module)
+function nX() {
+  let e = !tM.has("voice_filter_preview") && !tM.has("mic_test");
+  e0.setMaybePreprocessMute(module)
 }
 
-function nY() {
-  let e = tF(),
-    t = tw.size > 0,
+function nQ() {
+  let e = tK(),
+    t = tM.size > 0,
     n = module.inputDeviceId,
     r = Chunk463395.Z.hasEchoCancellation(require) || module.echoCancellation,
     i = !exports,
     a = Chunk463395.Z.hasNoiseSuppression(require) || module.noiseSuppression,
-    o = tq(Chunk463395.Z.hasAutomaticGainControl(require) || module.automaticGainControl),
+    o = t0(Chunk463395.Z.hasAutomaticGainControl(require) || module.automaticGainControl),
     s = module.noiseCancellation,
-    l = null !== ty,
-    c = tw.has("voice_filter") && 1 === tw.size;
-  e$.setLoopback(exports, {
+    l = null !== tO,
+    c = tM.has("voice_filter") && 1 === tM.size;
+  e0.setLoopback(exports, {
     echoCancellation: r,
     echoCancellationPreEcho: i,
     noiseSuppression: a,
@@ -1375,152 +1404,152 @@ function nY() {
     loopbackUseAudioMode: c
   })
 }
-async function nK() {
+async function nJ() {
   var e, t, n, r;
-  if (!e$.supports(Chunk65154.AN.VAAPI)) return;
+  if (!e0.supports(Chunk65154.AN.VAAPI)) return;
   let i = 4098;
-  (null == (t = window.DiscordNative) || null == (e = exports.processUtils) ? true : module.getSystemInfo) != null && (null != (r = null == (n = (await window.DiscordNative.processUtils.getSystemInfo()).electronGPUInfo) ? true : require.gpuDevice) ? r : []).some(e => e.vendorId === i) && (tU = true, tj = e$.supports(Chunk65154.AN.GAMESCOPE_CAPTURE))
-}
-
-function nz(e) {
-  let t = t6({
-    noiseSuppression: e.enabled
-  });
-  e$.eachConnection(e => e.setNoiseSuppression(t.noiseSuppression)), nY(), nG(e.location)
-}
-
-function nq(e) {
-  let t = t6({
-    automaticGainControl: e.enabled
-  });
-  e$.eachConnection(e => tX(e, t.automaticGainControl)), nY(), nG(e.location)
-}
-
-function nX(e) {
-  let t = t6({
-    noiseCancellation: e.enabled
-  });
-  e$.eachConnection(e => tQ(e, t.noiseCancellation)), nY(), nG(e.location)
-}
-
-function nQ(e) {
-  en.Z.setKrispModelOverride(e.model), c = e.model, nY()
-}
-
-function nJ(e) {
-  var t;
-  (0, ef.isWeb)() || (tb = e.enabled, null == (t = e$.setNoiseCancellationEnableStats) || t.call(e$, e.enabled))
+  (null == (t = window.DiscordNative) || null == (e = exports.processUtils) ? true : module.getSystemInfo) != null && (null != (r = null == (n = (await window.DiscordNative.processUtils.getSystemInfo()).electronGPUInfo) ? true : require.gpuDevice) ? r : []).some(e => e.vendorId === i) && (tZ = true, tB = e0.supports(Chunk65154.AN.GAMESCOPE_CAPTURE))
 }
 
 function n$(e) {
-  t6({
-    silenceWarning: e.enabled
-  }), t5.update()
+  let t = nn({
+    noiseSuppression: e.enabled
+  });
+  e0.eachConnection(e => e.setNoiseSuppression(t.noiseSuppression)), nQ(), nH(e.location)
 }
 
 function n0(e) {
-  e$.setDebugLogging(e.enabled)
+  let t = nn({
+    automaticGainControl: e.enabled
+  });
+  e0.eachConnection(e => t1(e, t.automaticGainControl)), nQ(), nH(e.location)
 }
 
 function n1(e) {
-  let {
-    level: t
-  } = e;
-  l = t, en.Z.setKrispSuppressionLevel(t)
+  let t = nn({
+    noiseCancellation: e.enabled
+  });
+  e0.eachConnection(e => t3(e, t.noiseCancellation)), nQ(), nH(e.location)
 }
 
 function n3(e) {
-  t6({
-    videoHook: e.enabled
-  })
+  er.Z.setKrispModelOverride(e.model), c = e.model, nQ()
 }
 
 function n2(e) {
-  t6({
-    experimentalSoundshare2: e.enabled
-  })
+  var t;
+  (0, e_.isWeb)() || (ty = e.enabled, null == (t = e0.setNoiseCancellationEnableStats) || t.call(e0, e.enabled))
 }
 
 function n4(e) {
-  let {
-    enabled: t
-  } = e;
-  t6({
-    useSystemScreensharePicker: t
-  })
+  nn({
+    silenceWarning: e.enabled
+  }), ne.update()
 }
 
 function n5(e) {
-  let {
-    attenuation: t,
-    attenuateWhileSpeakingSelf: n,
-    attenuateWhileSpeakingOthers: r
-  } = e, i = t6({
-    attenuation: t,
-    attenuateWhileSpeakingSelf: n,
-    attenuateWhileSpeakingOthers: r
-  });
-  e$.eachConnection(e => e.setAttenuation(i.attenuation, i.attenuateWhileSpeakingSelf, i.attenuateWhileSpeakingOthers))
+  e0.setDebugLogging(e.enabled)
 }
 
 function n8(e) {
   let {
-    enabled: t
+    level: t
   } = e;
-  t6({
-    qos: t
-  }), e$.eachConnection(e => e.setQoS(t))
+  l = t, er.Z.setKrispSuppressionLevel(t)
 }
 
-function n6() {
-  t7()
+function n6(e) {
+  nn({
+    videoHook: e.enabled
+  })
 }
 
 function n7(e) {
-  let {
-    inputDetected: t
-  } = e;
-  tf = t, !t_ && tf && (t_ = true, t5.update())
+  nn({
+    experimentalSoundshare2: e.enabled
+  })
 }
 
 function n9(e) {
   let {
-    hasPermission: t
-  } = e, n = !t;
-  if (n === tt) returnfalse;
-  tt = n, e$.eachConnection(tW)
+    enabled: t
+  } = e;
+  nn({
+    useSystemScreensharePicker: t
+  })
 }
 
 function re(e) {
   let {
+    attenuation: t,
+    attenuateWhileSpeakingSelf: n,
+    attenuateWhileSpeakingOthers: r
+  } = e, i = nn({
+    attenuation: t,
+    attenuateWhileSpeakingSelf: n,
+    attenuateWhileSpeakingOthers: r
+  });
+  e0.eachConnection(e => e.setAttenuation(i.attenuation, i.attenuateWhileSpeakingSelf, i.attenuateWhileSpeakingOthers))
+}
+
+function rt(e) {
+  let {
+    enabled: t
+  } = e;
+  nn({
+    qos: t
+  }), e0.eachConnection(e => e.setQoS(t))
+}
+
+function rn() {
+  nr()
+}
+
+function rr(e) {
+  let {
+    inputDetected: t
+  } = e;
+  t_ = t, !tp && t_ && (tp = true, ne.update())
+}
+
+function ri(e) {
+  let {
+    hasPermission: t
+  } = e, n = !t;
+  if (n === tn) returnfalse;
+  tn = n, e0.eachConnection(tX)
+}
+
+function ra(e) {
+  let {
     state: t,
     permissionType: n
-  } = e, r = t === eC.PQ.ACCEPTED;
+  } = e, r = t === eN.PQ.ACCEPTED;
   switch (n) {
-    case eC.Eu.AUDIO:
-      tN = true, e$.eachConnection(tW);
+    case eN.Eu.AUDIO:
+      tD = true, e0.eachConnection(tX);
       break;
-    case eC.Eu.CAMERA:
-      !r && tr && tK(false);
+    case eN.Eu.CAMERA:
+      !r && ti && tJ(false);
       break;
     default:
       returnfalse
   }
 }
 
-function rt() {
-  return tg || false
+function ro() {
+  return tE || false
 }
-async function rn() {
+async function rs() {
   try {
     var e, t, n, i;
     await Chunk998502.ZP.ensureModule("discord_krisp");
     let a = Chunk998502.ZP.requireModule("discord_krisp");
-    tg = true, s = null == (e = a.getSdkVersion) ? true : module.call(a), l = null != (i = null == (t = a.getSuppressionLevel) ? true : exports.call(a)) ? i : 100, null == (n = a.getNcModels) || require.call(a).then(e => {
-      tE = e, r.emitChange()
+    tE = true, s = null == (e = a.getSdkVersion) ? true : module.call(a), l = null != (i = null == (t = a.getSuppressionLevel) ? true : exports.call(a)) ? i : 100, null == (n = a.getNcModels) || require.call(a).then(e => {
+      tb = e, r.emitChange()
     }), r.emitChange()
   } catch (t) {
-    ek.warn("Failed to load Krisp module: ".concat(exports.message)), Chunk960048.Z.captureException(exports);
+    ej.warn("Failed to load Krisp module: ".concat(exports.message)), Chunk960048.Z.captureException(exports);
     let e = Chunk65154.H3.INITIALIZED;
     if (exports.message.includes(": ")) {
       let n = parseInt(exports.message.substring(exports.message.indexOf(": ") + 1));
@@ -1528,144 +1557,144 @@ async function rn() {
     }
     Chunk626135.default.track(Chunk981631.rMx.VOICE_PROCESSING, {
       noise_canceller_error: module
-    }), t6({
+    }), nn({
       noiseCancellation: false
     })
   } finally {
-    tm = false
+    tg = false
   }
 }
 
-function rr() {
+function rl() {
   return (0, Chunk358085.isWindows)() || (0, Chunk358085.isLinux)() || (0, Chunk358085.isMac)()
 }
 
-function ri() {
-  !rr() || __OVERLAY__ || tm || tg ? (0, Chunk358085.isWeb)() && e$.supports(Chunk65154.AN.NOISE_CANCELLATION) ? (tg = true, r.emitChange()) : (0, Chunk358085.isWeb)() && t6({
+function rc() {
+  !rl() || __OVERLAY__ || tg || tE ? (0, Chunk358085.isWeb)() && e0.supports(Chunk65154.AN.NOISE_CANCELLATION) ? (tE = true, r.emitChange()) : (0, Chunk358085.isWeb)() && nn({
     noiseCancellation: false
-  }) : (tm = true, rn())
+  }) : (tg = true, rs())
 }
 
-function ra(e) {
+function ru(e) {
   let {
     enabled: t
   } = e;
-  ec.default.track(eS.rMx.VOICE_FILTER_PLAYBACK_TOGGLED, {
-    active_voice_filter_id: null != ty ? ty : null,
+  eu.default.track(eA.rMx.VOICE_FILTER_PLAYBACK_TOGGLED, {
+    active_voice_filter_id: null != tO ? tO : null,
     enabled: t
-  }), t6({
+  }), nn({
     voiceFilterPlaybackEnabled: t
   })
 }
 
-function ro(e) {
+function rd(e) {
   let {
     newVoiceFilterId: t
   } = e;
-  t6({
+  nn({
     mostRecentlyRequestedVoiceFilter: t
-  }), e$.eachConnection(e => e.setVoiceFilterId(t))
+  }), e0.eachConnection(e => e.setVoiceFilterId(t))
 }
 
-function rs() {
-  t6({
+function rf() {
+  nn({
     mostRecentlyRequestedVoiceFilter: null
   })
 }
 
-function rl(e) {
+function r_(e) {
   let {
     voiceFilterId: t
   } = e;
-  tv = ty, tI = tO, ty = t, tO = null === t ? null : Date.now()
+  tI = tO, tT = tv, tO = t, tv = null === t ? null : Date.now()
 }
 
-function rc(e) {
+function rp(e) {
   let t = e.bypassEnabled;
-  t6({
+  nn({
     bypassSystemInputProcessing: t
-  }), e$.setAudioInputBypassSystemProcessing(t), nG(e.location)
+  }), e0.setAudioInputBypassSystemProcessing(t), nH(e.location)
 }
 
-function ru(e) {
-  rd(e.subsystem)
+function rh(e) {
+  rm(e.subsystem)
 }
 
-function rd(e) {
-  e === eP.iA.AUTOMATIC ? (t6({
+function rm(e) {
+  e === eD.iA.AUTOMATIC ? (nn({
     automaticAudioSubsystem: true
-  }), rf()) : (t6({
+  }), rg()) : (nn({
     automaticAudioSubsystem: false
-  }), e$.setAudioSubsystem(e))
+  }), e0.setAudioSubsystem(e))
 }
 
-function rf() {
-  e$.queueAudioSubsystem(Chunk65154.iA.EXPERIMENTAL)
+function rg() {
+  e0.queueAudioSubsystem(Chunk65154.iA.EXPERIMENTAL)
 }
 
-function r_(e) {
+function rE(e) {
   let {
     guildId: t,
     channelId: n,
     currentVoiceChannelId: r,
     video: i
   } = e;
-  if (r !== n && tK(i, null), null != t || null == n) {
-    th = false;
+  if (r !== n && tJ(i, null), null != t || null == n) {
+    tm = false;
     return
   }
-  if (th) return;
-  th = true;
-  let a = tF();
-  (a.mute || a.deaf) && (t6({
+  if (tm) return;
+  tm = true;
+  let a = tK();
+  (a.mute || a.deaf) && (nn({
     deaf: false,
     mute: false
-  }), e$.eachConnection(tW))
+  }), e0.eachConnection(tX))
 }
 
-function rp(e) {
+function rb(e) {
   let {
     application: t
   } = e;
-  e1.add(t.id)
+  e3.add(t.id)
 }
 
-function rh(e) {
+function ry(e) {
   let {
     application: t
   } = e;
-  e1.delete(t.id)
+  e3.delete(t.id)
 }
 
-function rm(e) {
+function rO(e) {
   let {
     kind: t,
     granted: n
   } = e;
   if (!n) switch (t) {
     case "audio":
-      e3 = false, e$.eachConnection(tW);
+      e2 = false, e0.eachConnection(tX);
       break;
     case "video":
-      tK(false)
+      tJ(false)
   }
 }
 
-function rg(e) {
-  e3 = e.enabled, e.unmute && t6({
+function rv(e) {
+  e2 = e.enabled, e.unmute && nn({
     mute: false,
     deaf: false
-  }), e$.eachConnection(tW)
+  }), e0.eachConnection(tX)
 }
 
-function rE(e) {
+function rI(e) {
   let {
     enabled: t
   } = e;
-  et.Z.requestPermission(eC.Eu.CAMERA), tK(t)
+  en.Z.requestPermission(eN.Eu.CAMERA), tJ(t)
 }
 
-function rb(e) {
+function rT(e) {
   let {
     sourceId: t,
     applicationName: n,
@@ -1674,11 +1703,11 @@ function rb(e) {
   if (!(0, N.CY)() || null == I.Z) returnfalse;
   let a = null,
     s = null,
-    l = eu.Z.getPidFromDesktopSource(t);
+    l = ed.Z.getPidFromDesktopSource(t);
   ({
     soundshareId: a,
     soundshareSession: s
-  } = nu(l));
+  } = nh(l));
   let c = {
     desktopSource: {
       id: t,
@@ -1688,21 +1717,21 @@ function rb(e) {
     },
     quality: i
   };
-  null != o && (e$.setClipsSource(null), (0, ef.isWindows)() && null != o.desktopSource.soundshareId && T.pn(o.desktopSource.soundshareId)), null != a && nd(a, s), o = c;
-  let u = tB(),
-    d = tF().videoHook;
-  e$.setClipsSource({
+  null != o && (e0.setClipsSource(null), (0, e_.isWindows)() && null != o.desktopSource.soundshareId && T.pn(o.desktopSource.soundshareId)), null != a && nm(a, s), o = c;
+  let u = tV(),
+    d = tK().videoHook;
+  e0.setClipsSource({
     desktopDescription: {
       id: o.desktopSource.id,
       soundshareId: o.desktopSource.soundshareId,
       useVideoHook: d,
-      useGraphicsCapture: t0(),
+      useGraphicsCapture: t5(),
       useCaptureDeviceForEncode: false,
       useLoopback: r.getExperimentalSoundshare(),
       useQuartzCapturer: true,
-      allowScreenCaptureKit: t3(),
-      videoHookStaleFrameTimeoutMs: eH,
-      graphicsCaptureStaleFrameTimeoutMs: eW,
+      allowScreenCaptureKit: t6(),
+      videoHookStaleFrameTimeoutMs: eW,
+      graphicsCaptureStaleFrameTimeoutMs: eY,
       hdrCaptureMode: u
     },
     quality: i,
@@ -1710,14 +1739,14 @@ function rb(e) {
   })
 }
 
-function ry(e) {
+function rS(e) {
   let {
     settings: t
   } = e;
-  false === t.decoupledClipsEnabled && (o = null, e$.setClipsSource(null))
+  false === t.decoupledClipsEnabled && (o = null, e0.setClipsSource(null))
 }
 
-function rO(e) {
+function rA(e) {
   var t, n, r, i;
   let {
     settings: a
@@ -1729,16 +1758,16 @@ function rO(e) {
         sourceId: i,
         sound: o
       } = a.desktopSettings,
-      s = null != (t = a.context) ? t : eP.Yn.DEFAULT,
+      s = null != (t = a.context) ? t : eD.Yn.DEFAULT,
       l = null != (n = a.qualityOptions) ? n : {
         resolution: 720,
         frameRate: 30
       },
-      c = false === o ? null : eu.Z.getPidFromDesktopSource(i);
-    ef.isPlatformEmbedded && true === o && ({
+      c = false === o ? null : ed.Z.getPidFromDesktopSource(i);
+    e_.isPlatformEmbedded && true === o && ({
       soundshareId: e,
       soundshareSession: r
-    } = nu(c), null != e && nd(e, r)), tY(s), tK(s === eP.Yn.STREAM && tr, {
+    } = nh(c), null != e && nm(e, r)), tQ(s), tJ(s === eD.Yn.STREAM && ti, {
       desktopSource: {
         id: i,
         sourcePid: c,
@@ -1751,17 +1780,17 @@ function rO(e) {
       }
     })
   } else if ((null == a ? true : a.cameraSettings) != null) {
-    let e = null != (r = a.context) ? r : eP.Yn.DEFAULT,
+    let e = null != (r = a.context) ? r : eD.Yn.DEFAULT,
       {
         videoDeviceGuid: t,
         audioDeviceGuid: n
       } = a.cameraSettings,
-      o = e === eP.Yn.STREAM && tr,
+      o = e === eD.Yn.STREAM && ti,
       s = null != (i = a.qualityOptions) ? i : {
         resolution: 720,
         frameRate: 30
       };
-    tK(o, {
+    tJ(o, {
       cameraSource: {
         videoDeviceGuid: t,
         audioDeviceGuid: n
@@ -1771,215 +1800,215 @@ function rO(e) {
         frameRate: s.frameRate
       }
     })
-  } else tK(tr, null)
+  } else tJ(ti, null)
 }
 
-function rv(e) {
+function rC(e) {
   let {
     section: t
   } = e;
-  return t === eS.oAB.VOICE && ne(), false
+  return t === eA.oAB.VOICE && na(), false
 }
 
-function rI() {
-  return e$.eachConnection(tJ), false
+function rN() {
+  return e0.eachConnection(t2), false
 }
 
-function rT(e) {
+function rR(e) {
   let {
     enabled: t
-  } = e, n = t6({
+  } = e, n = nn({
     aecDumpEnabled: t
   });
-  e$.setAecDump(n.aecDumpEnabled)
+  e0.setAecDump(n.aecDumpEnabled)
 }
 
-function rS(e) {
+function rP(e) {
   let {
     overrides: t
   } = e;
   if (__OVERLAY__) returnfalse;
-  e0 = Object.values(eP.Yn).reduce((e, n) => {
+  e1 = Object.values(eD.Yn).reduce((e, n) => {
     let r = n,
-      i = eQ();
+      i = eJ();
     return e[r] = p().merge(i, t[r]), e
-  }, {}), y.K.set(ej, e0), t9()
-}
-
-function rA(e) {
-  let {
-    state: t
-  } = e, n = L.Z.isEnabled();
-  if (t === eS.$7l.BACKGROUND && tr && !n) tu = true, tK(false);
-  else {
-    if (t !== eS.$7l.ACTIVE || !tu) returnfalse;
-    tu = false, tK(true)
-  }
-  returntrue
-}
-
-function rC(e) {
-  e$.eachConnection(t => t.setBitRate(e.bitrate))
-}
-
-function rN() {
-  if (!tr && null == a || null != Chunk19780.Z.getRTCConnectionId()) returnfalse;
-  tK(false, null)
-}
-
-function rR() {
-  return !!tS && (tS = false, true)
-}
-
-function rP(e) {
-  e$.eachConnection(t => t.applyVideoQualityMode(e.mode))
+  }, {}), y.K.set(eU, e1), ni()
 }
 
 function rD(e) {
   let {
-    settings: t
-  } = e;
-  e$.applyMediaFilterSettings(t).finally(() => {
-    tA = false, r.emitChange()
-  })
+    state: t
+  } = e, n = L.Z.isEnabled();
+  if (t === eA.$7l.BACKGROUND && ti && !n) td = true, tJ(false);
+  else {
+    if (t !== eA.$7l.ACTIVE || !td) returnfalse;
+    td = false, tJ(true)
+  }
+  returntrue
 }
 
-function rw() {
-  tA = true
+function rw(e) {
+  e0.eachConnection(t => t.setBitRate(e.bitrate))
 }
 
 function rL() {
-  tA = false
+  if (!ti && null == a || null != Chunk19780.Z.getRTCConnectionId()) returnfalse;
+  tJ(false, null)
 }
 
-function rx(e) {
-  tM = e.enabled
+function rx() {
+  return !!tA && (tA = false, true)
 }
 
-function rM() {
-  if ((0, Chunk358085.isDesktop)() && Chunk358085.isPlatformEmbedded && !tG) {
-    tG = true;
+function rM(e) {
+  e0.eachConnection(t => t.applyVideoQualityMode(e.mode))
+}
+
+function rk(e) {
+  let {
+    settings: t
+  } = e;
+  e0.applyMediaFilterSettings(t).finally(() => {
+    tC = false, r.emitChange()
+  })
+}
+
+function rj() {
+  tC = true
+}
+
+function rU() {
+  tC = false
+}
+
+function rG(e) {
+  tU = e.enabled
+}
+
+function rB() {
+  if ((0, Chunk358085.isDesktop)() && Chunk358085.isPlatformEmbedded && !tF) {
+    tF = true;
     let e = async () => {
       let t = await new Promise(e => {
-        eh.ZP.pollQueueMetrics(t => {
+        em.ZP.pollQueueMetrics(t => {
           e(t)
         })
       });
       exports.periodMs = Chunk65154.rp;
-      let n = rj(exports);
+      let n = rF(exports);
       null !== require && Chunk626135.default.track(Chunk981631.rMx.VOICE_QUEUE_METRICS, require), setTimeout(module, Chunk65154.rp)
     };
     setTimeout(module, Chunk65154.rp)
   }
 }
-class rk extends(u = Chunk442837.ZP.Store) {
+class rZ extends(u = Chunk442837.ZP.Store) {
   initialize() {
-    t$(), t8(), ri(), nA(), rM(), tL = {
-      [Chunk65154.AN.VIDEO]: e$.supports(Chunk65154.AN.VIDEO),
-      [Chunk65154.AN.DESKTOP_CAPTURE]: e$.supports(Chunk65154.AN.DESKTOP_CAPTURE),
-      [Chunk65154.AN.HYBRID_VIDEO]: e$.supports(Chunk65154.AN.HYBRID_VIDEO)
+    t4(), nt(), rc(), nD(), rB(), tk = {
+      [Chunk65154.AN.VIDEO]: e0.supports(Chunk65154.AN.VIDEO),
+      [Chunk65154.AN.DESKTOP_CAPTURE]: e0.supports(Chunk65154.AN.DESKTOP_CAPTURE),
+      [Chunk65154.AN.HYBRID_VIDEO]: e0.supports(Chunk65154.AN.HYBRID_VIDEO)
     }, this.waitFor(Chunk314897.default, Chunk967368.Z, Chunk463395.Z, Chunk592125.Z, Chunk435064.Z, Chunk353926.Z, Chunk19780.Z, Chunk594190.ZP, Chunk615830.Z, Chunk581883.Z, Chunk594174.default, Chunk631768.Z, Chunk420439.Z)
   }
   supports(e) {
-    return e$.supports(e)
+    return e0.supports(e)
   }
   supportsInApp(e) {
-    return tL[e] || e$.supports(e)
+    return tk[e] || e0.supports(e)
   }
   isSupported() {
-    return e$.supported()
+    return e0.supported()
   }
   isNoiseSuppressionSupported() {
-    return e$.supports(Chunk65154.AN.NOISE_SUPPRESSION)
+    return e0.supports(Chunk65154.AN.NOISE_SUPPRESSION)
   }
   isNoiseCancellationSupported() {
-    return rt()
+    return ro()
   }
   isNoiseCancellationError() {
-    return tS
+    return tA
   }
   isAutomaticGainControlSupported() {
-    return e$.supports(Chunk65154.AN.AUTOMATIC_GAIN_CONTROL)
+    return e0.supports(Chunk65154.AN.AUTOMATIC_GAIN_CONTROL)
   }
   shouldOfferManualSubsystemSelection() {
-    return !t4() && (e$.supports(Chunk65154.AN.LEGACY_AUDIO_SUBSYSTEM) || e$.supports(Chunk65154.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM))
+    return !t9() && (e0.supports(Chunk65154.AN.LEGACY_AUDIO_SUBSYSTEM) || e0.supports(Chunk65154.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM))
   }
   showBypassSystemInputProcessing() {
-    return e$.supports(Chunk65154.AN.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING) && "experimental" === e$.getAudioSubsystem()
+    return e0.supports(Chunk65154.AN.AUDIO_BYPASS_SYSTEM_INPUT_PROCESSING) && "experimental" === e0.getAudioSubsystem()
   }
   isAdvancedVoiceActivitySupported() {
-    return rt()
+    return ro()
   }
   isAecDumpSupported() {
-    return e$.supports(Chunk65154.AN.AEC_DUMP)
+    return e0.supports(Chunk65154.AN.AEC_DUMP)
   }
   isSimulcastSupported() {
-    return e$.supports(Chunk65154.AN.VIDEO) && e$.supports(Chunk65154.AN.SIMULCAST)
+    return e0.supports(Chunk65154.AN.VIDEO) && e0.supports(Chunk65154.AN.SIMULCAST)
   }
   goLiveSimulcastEnabled() {
     var e;
-    return (null == (e = Chunk592125.Z.getChannel(tT)) ? true : module.type) !== Chunk981631.d4z.GUILD_STAGE_VOICE && eq && Chunk166884.Z.simulcastEnabled()
+    return (null == (e = Chunk592125.Z.getChannel(tS)) ? true : module.type) !== Chunk981631.d4z.GUILD_STAGE_VOICE && eX && Chunk166884.Z.simulcastEnabled()
   }
   getAecDump() {
-    return tF().aecDumpEnabled
+    return tK().aecDumpEnabled
   }
   getMediaEngine() {
-    return e$
+    return e0
   }
   getVideoComponent() {
-    return e$.Video
+    return e0.Video
   }
   getCameraComponent() {
-    return e$.Camera
+    return e0.Camera
   }
   getKrispSuppressionLevel() {
     return null != l ? l : 100
   }
   getKrispEnableStats() {
-    return tb
+    return ty
   }
   isEnabled() {
-    return e3
+    return e2
   }
   isMute() {
-    return this.isSelfMute() || e9
+    return this.isSelfMute() || te
   }
   isDeaf() {
-    return this.isSelfDeaf() || tn
+    return this.isSelfDeaf() || tr
   }
   hasContext(e) {
-    return null != e0[e]
+    return null != e1[e]
   }
   isSelfMutedTemporarily() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return module === Chunk65154.Yn.DEFAULT && te
+    return module === Chunk65154.Yn.DEFAULT && tt
   }
   isSelfMute() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return !this.isEnabled() || tF(module).mute || !Chunk751571.Z.didHavePermission(Chunk761274.Eu.AUDIO) || this.isSelfDeaf(module) || module === Chunk65154.Yn.DEFAULT && tt
+    return !this.isEnabled() || tK(module).mute || !Chunk751571.Z.didHavePermission(Chunk761274.Eu.AUDIO) || this.isSelfDeaf(module) || module === Chunk65154.Yn.DEFAULT && tn
   }
   shouldSkipMuteUnmuteSound() {
-    return to
+    return ts
   }
   notifyMuteUnmuteSoundWasSkipped() {
-    to = false
+    ts = false
   }
   isHardwareMute() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
     return !this.isMute() && !this.isSelfMutedTemporarily(module) && Chunk463395.Z.isHardwareMute(this.getInputDeviceId())
   }
   isEnableHardwareMuteNotice() {
-    return tM
+    return tU
   }
   isSelfDeaf() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return !this.isSupported() || tF(module).deaf
+    return !this.isSupported() || tK(module).deaf
   }
   isVideoEnabled() {
-    return tr && td
+    return ti && tf
   }
   isVideoAvailable() {
-    return Object.values(e7).some(e => {
+    return Object.values(e9).some(e => {
       let {
         disabled: t
       } = e;
@@ -1988,188 +2017,191 @@ class rk extends(u = Chunk442837.ZP.Store) {
   }
   isScreenSharing() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.STREAM;
-    return e4 === module && null != a
+    return e5 === module && null != a
   }
   isSoundSharing() {
     var e;
     let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.STREAM;
-    return e4 === exports && null != a && (null == (e = a.desktopSource) ? true : module.soundshareId) != null
+    return e5 === exports && null != a && (null == (e = a.desktopSource) ? true : module.soundshareId) != null
   }
   isLocalMute(e) {
-    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eP.Yn.DEFAULT;
-    return e !== eg.default.getId() && (tF(t).localMutes[e] || false)
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eD.Yn.DEFAULT;
+    return e !== eE.default.getId() && (tK(t).localMutes[e] || false)
   }
   supportsDisableLocalVideo() {
-    return e$.supports(Chunk65154.AN.DISABLE_VIDEO)
+    return e0.supports(Chunk65154.AN.DISABLE_VIDEO)
   }
   isLocalVideoDisabled(e) {
     var t;
-    let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eP.Yn.DEFAULT;
-    return null != (t = tF(n).disabledLocalVideos[e]) && t
+    let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eD.Yn.DEFAULT;
+    return null != (t = tK(n).disabledLocalVideos[e]) && t
   }
   getVideoToggleState(e) {
     var t;
-    let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eP.Yn.DEFAULT;
-    return null != (t = tF(n).videoToggleStateMap[e]) ? t : eS.ZUi.NONE
+    let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eD.Yn.DEFAULT;
+    return null != (t = tK(n).videoToggleStateMap[e]) ? t : eA.ZUi.NONE
   }
   isLocalVideoAutoDisabled(e) {
-    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eP.Yn.DEFAULT;
-    return t === eP.Yn.DEFAULT && tP.has(e)
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eD.Yn.DEFAULT;
+    return t === eD.Yn.DEFAULT && tL.has(e)
   }
   isAnyLocalVideoAutoDisabled() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return module === Chunk65154.Yn.DEFAULT && tP.size > 0
+    return module === Chunk65154.Yn.DEFAULT && tL.size > 0
   }
   isMediaFilterSettingLoading() {
-    return tA
+    return tC
   }
   isNativeAudioPermissionReady() {
-    return tN
+    return tD
   }
   getGoLiveSource() {
     return a
   }
   getGoLiveContext() {
-    return e4
-  }
-  getLastAudioInputDeviceChangeTimestamp() {
     return e5
   }
+  getLastAudioInputDeviceChangeTimestamp() {
+    return e8
+  }
   getLocalPan(e) {
-    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eP.Yn.DEFAULT,
-      n = tF(t).localPans[e];
-    return null != n ? n : eV
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eD.Yn.DEFAULT,
+      n = tK(t).localPans[e];
+    return null != n ? n : eH
   }
   getLocalVolume(e) {
-    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eP.Yn.DEFAULT,
-      n = t === eP.Yn.STREAM ? eP.Yh : eP.Qx,
-      r = tF(t).localVolumes[e];
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eD.Yn.DEFAULT,
+      n = t === eD.Yn.STREAM ? eD.Yh : eD.Qx,
+      r = tK(t).localVolumes[e];
     return null != r ? r : n
   }
   getInputVolume() {
-    return tF().inputVolume
+    return tK().inputVolume
   }
   getOutputVolume() {
-    return tF().outputVolume
+    return tK().outputVolume
   }
   getMode() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return tF(module).mode
+    return tK(module).mode
   }
   getModeOptions() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return tF(module).modeOptions
+    return tK(module).modeOptions
   }
   getActiveVoiceFilter() {
-    return ty
-  }
-  getActiveVoiceFilterAppliedAt() {
     return tO
   }
-  getPreviousVoiceFilter() {
+  getActiveVoiceFilterAppliedAt() {
     return tv
   }
-  getPreviousVoiceFilterAppliedAt() {
+  getPreviousVoiceFilter() {
     return tI
   }
+  getPreviousVoiceFilterAppliedAt() {
+    return tT
+  }
   getMostRecentlyRequestedVoiceFilter() {
-    return tF().mostRecentlyRequestedVoiceFilter
+    return tK().mostRecentlyRequestedVoiceFilter
   }
   getVoiceFilterPlaybackEnabled() {
-    return tF().voiceFilterPlaybackEnabled
+    return tK().voiceFilterPlaybackEnabled
   }
   getShortcuts() {
     let e = {};
-    return p().each(e0, (t, n) => {
+    return p().each(e1, (t, n) => {
       let {
         mode: r,
         modeOptions: {
           shortcut: i
         }
       } = t;
-      r === eS.pM4.PUSH_TO_TALK && e1.has(n) && (e[n] = i)
+      r === eA.pM4.PUSH_TO_TALK && e3.has(n) && (e[n] = i)
     }), module
   }
   getInputDeviceId() {
-    return nr(e8, tF().inputDeviceId)
+    return nl(e6, tK().inputDeviceId)
   }
   getOutputDeviceId() {
-    return nr(e6, tF().outputDeviceId)
+    return nl(e7, tK().outputDeviceId)
   }
   getVideoDeviceId() {
-    return nr(e7, tF().videoDeviceId)
+    return nl(e9, tK().videoDeviceId)
   }
   getInputDevices() {
-    return e8
-  }
-  getOutputDevices() {
     return e6
   }
-  getVideoDevices() {
+  getOutputDevices() {
     return e7
   }
+  getVideoDevices() {
+    return e9
+  }
   getEchoCancellation() {
-    let e = tF();
+    let e = tK();
     return Chunk463395.Z.hasEchoCancellation(module.inputDeviceId) || module.echoCancellation
   }
   getSidechainCompression() {
-    return e$.supports(Chunk65154.AN.SIDECHAIN_COMPRESSION) && tF().sidechainCompression
+    return e0.supports(Chunk65154.AN.SIDECHAIN_COMPRESSION) && tK().sidechainCompression
   }
   getSidechainCompressionStrength() {
-    return tF().sidechainCompressionStrength
+    return tK().sidechainCompressionStrength
   }
   getH265Enabled() {
-    return tF().h265Enabled
+    return tK().h265Enabled
+  }
+  hasH265HardwareDecode() {
+    return null !== tR && tR
   }
   getLoopback() {
-    return tw.size > 0
+    return tM.size > 0
   }
   getLoopbackReasons() {
-    return tw
+    return tM
   }
   getNoiseSuppression() {
-    let e = tF();
+    let e = tK();
     return Chunk463395.Z.hasNoiseSuppression(module.inputDeviceId) || module.noiseSuppression
   }
   getAutomaticGainControl() {
-    let e = tF();
+    let e = tK();
     return Chunk463395.Z.hasAutomaticGainControl(module.inputDeviceId) || module.automaticGainControl
   }
   getBypassSystemInputProcessing() {
-    return tF().bypassSystemInputProcessing
+    return tK().bypassSystemInputProcessing
   }
   getNoiseCancellation() {
-    return tF().noiseCancellation
+    return tK().noiseCancellation
   }
   getHardwareEncoding() {
-    return eq
+    return eX
   }
   getEnableSilenceWarning() {
-    return tF().silenceWarning
+    return tK().silenceWarning
   }
   getDebugLogging() {
-    return e$.getDebugLogging()
+    return e0.getDebugLogging()
   }
   getQoS() {
-    return tF().qos
+    return tK().qos
   }
   getAttenuation() {
-    return tF().attenuation
+    return tK().attenuation
   }
   getAttenuateWhileSpeakingSelf() {
-    return tF().attenuateWhileSpeakingSelf
+    return tK().attenuateWhileSpeakingSelf
   }
   getAttenuateWhileSpeakingOthers() {
-    return tF().attenuateWhileSpeakingOthers
+    return tK().attenuateWhileSpeakingOthers
   }
   getAudioSubsystem() {
-    return t2() && tF().automaticAudioSubsystem ? Chunk65154.iA.AUTOMATIC : e$.getAudioSubsystem()
+    return t7() && tK().automaticAudioSubsystem ? Chunk65154.iA.AUTOMATIC : e0.getAudioSubsystem()
   }
   getMLSSigningKey(e, t) {
-    return e$.getMLSSigningKey(e, t)
+    return e0.getMLSSigningKey(e, t)
   }
   getActiveInputProfile() {
-    return tF().activeInputProfile
+    return tK().activeInputProfile
   }
   isInputProfileCustom() {
     let e = this.getActiveInputProfile();
@@ -2177,91 +2209,91 @@ class rk extends(u = Chunk442837.ZP.Store) {
   }
   getSettings() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return tF(module)
+    return tK(module)
   }
   getState() {
     return {
-      settingsByContext: e0,
-      inputDevices: e8,
-      outputDevices: e6,
-      appSupported: tL,
-      krispModuleLoaded: tg,
+      settingsByContext: e1,
+      inputDevices: e6,
+      outputDevices: e7,
+      appSupported: tk,
+      krispModuleLoaded: tE,
       krispVersion: s,
       krispSuppressionLevel: l,
       goLiveSource: a,
-      goLiveContext: e4
+      goLiveContext: e5
     }
   }
   getInputDetected() {
-    return tf
+    return t_
   }
   getNoInputDetectedNotice() {
-    return tp
+    return th
   }
   getPacketDelay() {
     return Chunk358085.isPlatformEmbedded || this.getMode() !== Chunk981631.pM4.VOICE_ACTIVITY ? 0 : this.getModeOptions().vadLeading
   }
   setCanHavePriority(e, t) {
-    e$.eachConnection(n => n.setCanHavePriority(e, t))
+    e0.eachConnection(n => n.setCanHavePriority(e, t))
   }
   isInteractionRequired() {
-    return e2
+    return e4
   }
   getVideoHook() {
-    return tF().videoHook
+    return tK().videoHook
   }
   supportsVideoHook() {
-    return e$.supports(Chunk65154.AN.VIDEO_HOOK)
+    return e0.supports(Chunk65154.AN.VIDEO_HOOK)
   }
   getExperimentalSoundshare() {
-    let e = tF().experimentalSoundshare2;
+    let e = tK().experimentalSoundshare2;
     return this.supportsExperimentalSoundshare() && (null == module || module || !this.supportsHookSoundshare())
   }
   supportsExperimentalSoundshare() {
-    return e$.supports(Chunk65154.AN.EXPERIMENTAL_SOUNDSHARE) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.T6)
+    return e0.supports(Chunk65154.AN.EXPERIMENTAL_SOUNDSHARE) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.T6)
   }
   supportsHookSoundshare() {
-    return (0, Chunk358085.isWindows)() && e$.supports(Chunk65154.AN.SOUNDSHARE) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.sA)
+    return (0, Chunk358085.isWindows)() && e0.supports(Chunk65154.AN.SOUNDSHARE) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.sA)
   }
   getUseSystemScreensharePicker() {
     let e = this.supportsSystemScreensharePicker(),
-      t = tF().useSystemScreensharePicker,
+      t = tK().useSystemScreensharePicker,
       n = (0, Chunk358085.isLinux)();
     return module && (null != exports ? exports : require)
   }
   supportsSystemScreensharePicker() {
-    return e$.supports(Chunk65154.AN.NATIVE_SCREENSHARE_PICKER)
+    return e0.supports(Chunk65154.AN.NATIVE_SCREENSHARE_PICKER)
   }
   getUseVaapiEncoder() {
-    return tU
+    return tZ
   }
   getUseGamescopeCapture() {
-    return tj
+    return tB
   }
   getEverSpeakingWhileMuted() {
-    return ts
+    return tl
   }
   getSpeakingWhileMuted() {
-    return tl
+    return tc
   }
   getKrispModelOverride() {
     return c
   }
   getKrispModels() {
-    return tE
+    return tb
   }
   getKrispVadActivationThreshold() {
     var e;
-    return null != (e = tF().modeOptions.vadKrispActivationThreshold) ? module : eF
+    return null != (e = tK().modeOptions.vadKrispActivationThreshold) ? module : eV
   }
   hasActiveCallKitCall() {
-    return tk
+    return tG
   }
   setHasActiveCallKitCall(e) {
-    tk = e
+    tG = e
   }
   supportsScreenSoundshare() {
-    return (0, Chunk358085.isMac)() ? e$.supports(Chunk65154.AN.SOUNDSHARE) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.yG) && t3() : (0, Chunk358085.isWindows)() ? e$.supports(Chunk65154.AN.SCREEN_SOUNDSHARE) && this.getExperimentalSoundshare() : !!(0, Chunk358085.isLinux)() && e$.supports(Chunk65154.AN.SCREEN_SOUNDSHARE)
+    return (0, Chunk358085.isMac)() ? e0.supports(Chunk65154.AN.SOUNDSHARE) && m().satisfies(null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.release, Chunk70722.yG) && t6() : (0, Chunk358085.isWindows)() ? e0.supports(Chunk65154.AN.SCREEN_SOUNDSHARE) && this.getExperimentalSoundshare() : !!(0, Chunk358085.isLinux)() && e0.supports(Chunk65154.AN.SCREEN_SOUNDSHARE)
   }
   getVideoStreamParameters() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT,
@@ -2282,15 +2314,15 @@ class rk extends(u = Chunk442837.ZP.Store) {
     };
     return (0, Chunk358085.isWeb)() && (module.fetchDave = Chunk529558.NJ.getCurrentConfig({
       location: "MediaEngineStore fetchAsyncResources"
-    }).loadWasmModule), e$.fetchAsyncResources(module)
+    }).loadWasmModule), e0.fetchAsyncResources(module)
   }
   startDavePreload() {
-    if (!tC && (tC = true, (0, Chunk358085.isWeb)())) {
+    if (!tN && (tN = true, (0, Chunk358085.isWeb)())) {
       let e = {
         fetchDave: true
       };
-      e$.fetchAsyncResources(module).catch(e => {
-        ek.warn("DAVE preload failed:", e), ep.Z.captureException(e)
+      e0.fetchAsyncResources(module).catch(e => {
+        ej.warn("DAVE preload failed:", e), eh.Z.captureException(e)
       })
     }
   }
@@ -2303,7 +2335,7 @@ class rk extends(u = Chunk442837.ZP.Store) {
       });
       if (!module) return 0
     }
-    let e = e$.getSupportedSecureFramesProtocolVersion();
+    let e = e0.getSupportedSecureFramesProtocolVersion();
     114 === module && (e = 1);
     let t = Chunk529558.m8.getCurrentConfig({
         location: "MediaEngineStore"
@@ -2317,11 +2349,11 @@ class rk extends(u = Chunk442837.ZP.Store) {
     return null != o
   }
   getGpuBrand() {
-    return tx
+    return tj
   }
 }
 
-function rj(e) {
+function rF(e) {
   if (null == e.taskMetrics || 0 === e.taskMetrics.length || 1 === e.taskMetrics.length) return null;
   let t = {
     metrics_period_ms: e.periodMs,
@@ -2342,82 +2374,82 @@ function rj(e) {
       t["delayed_task_".concat(e, "_name")] = n.name, t["delayed_task_".concat(e, "_longest_queue_time_ns")] = n.longestQueueTimeNs
     } return t.full_task_report = JSON.stringify(n), t
 }
-ew(rk, "displayName", "MediaEngineStore");
-let rU = r = new rk(Chunk570140.Z, {
-  VOICE_CHANNEL_SELECT: r_,
-  VOICE_STATE_UPDATES: ng,
-  CONNECTION_OPEN: nf,
-  CONNECTION_CLOSED: np,
-  POST_CONNECTION_OPEN: nh,
-  RTC_CONNECTION_STATE: nm,
-  AUDIO_SET_TEMPORARY_SELF_MUTE: nE,
-  AUDIO_TOGGLE_SELF_MUTE: nb,
-  AUDIO_SET_SELF_MUTE: ny,
-  AUDIO_TOGGLE_SELF_DEAF: nv,
-  AUDIO_TOGGLE_LOCAL_MUTE: nI,
-  AUDIO_SET_LOCAL_VIDEO_DISABLED: nT,
-  AUDIO_SET_LOCAL_VOLUME: nC,
-  AUDIO_SET_LOCAL_PAN: nN,
-  AUDIO_SET_MODE: nR,
-  AUDIO_SET_INPUT_VOLUME: nP,
-  AUDIO_SET_OUTPUT_VOLUME: nD,
-  AUDIO_SET_INPUT_DEVICE: nw,
-  AUDIO_SET_OUTPUT_DEVICE: nL,
-  AUDIO_SET_ACTIVE_INPUT_PROFILE: nM,
-  AUDIO_SET_ECHO_CANCELLATION: nB,
-  AUDIO_SET_SIDECHAIN_COMPRESSION: nZ,
-  AUDIO_SET_SIDECHAIN_COMPRESSION_STRENGTH: nF,
-  AUDIO_SET_LOOPBACK: nH,
-  AUDIO_SET_NOISE_SUPPRESSION: nz,
-  AUDIO_SET_AUTOMATIC_GAIN_CONTROL: nq,
-  AUDIO_SET_NOISE_CANCELLATION: nX,
-  AUDIO_SET_KRISP_MODEL_OVERRIDE: nQ,
-  AUDIO_SET_DISPLAY_SILENCE_WARNING: n$,
-  AUDIO_SET_DEBUG_LOGGING: n0,
-  AUDIO_SET_KRISP_SUPPRESSION_LEVEL: n1,
-  AUDIO_SET_NOISE_CANCELLATION_ENABLE_STATS: nJ,
-  MEDIA_ENGINE_SET_VIDEO_HOOK: n3,
-  MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE: n2,
-  MEDIA_ENGINE_SET_USE_SYSTEM_SCREENSHARE_PICKER: n4,
-  AUDIO_SET_ATTENUATION: n5,
-  AUDIO_SET_QOS: n8,
-  MEDIA_ENGINE_DEVICES: nj,
-  AUDIO_VOLUME_CHANGE: nU,
-  AUDIO_RESET: n6,
-  AUDIO_INPUT_DETECTED: n7,
-  AUDIO_SET_SUBSYSTEM: ru,
-  AUDIO_SET_BYPASS_SYSTEM_INPUT_PROCESSING: rc,
-  MEDIA_ENGINE_SET_AUDIO_ENABLED: rg,
-  MEDIA_ENGINE_SET_VIDEO_ENABLED: rE,
-  MEDIA_ENGINE_PERMISSION: rm,
-  MEDIA_ENGINE_SET_GO_LIVE_SOURCE: rO,
-  MEDIA_ENGINE_SET_VIDEO_DEVICE: nx,
-  MEDIA_ENGINE_INTERACTION_REQUIRED: nk,
-  USER_SETTINGS_MODAL_INIT: rv,
-  USER_SETTINGS_MODAL_SET_SECTION: rv,
-  CERTIFIED_DEVICES_SET: rI,
-  RPC_APP_CONNECTED: rp,
-  RPC_APP_DISCONNECTED: rh,
-  OVERLAY_INITIALIZE: n_,
-  APP_STATE_UPDATE: rA,
-  SET_CHANNEL_BITRATE: rC,
-  SET_VAD_PERMISSION: n9,
-  SET_NATIVE_PERMISSION: re,
-  SET_CHANNEL_VIDEO_QUALITY_MODE: rP,
-  MEDIA_ENGINE_SET_AEC_DUMP: rT,
-  MEDIA_ENGINE_RESET_SETTINGS: rS,
-  CHANNEL_DELETE: rN,
-  MEDIA_ENGINE_NOISE_CANCELLATION_ERROR_RESET: rR,
-  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: rD,
-  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_START: rw,
-  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_ERROR: rL,
-  USER_SETTINGS_PROTO_UPDATE: nO,
-  CLIPS_INIT: rb,
-  CLIPS_SETTINGS_UPDATE: ry,
-  MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE: rx,
-  VOICE_FILTER_REQUEST_SWITCH: ro,
-  VOICE_FILTER_LOOPBACK_TOGGLE: ra,
-  VOICE_FILTER_APPLIED: rl,
-  VOICE_FILTER_DOWNLOAD_FAILED: rs,
-  VOICE_FILTER_APPLY_FAILED: rs
+eL(rZ, "displayName", "MediaEngineStore");
+let rV = r = new rZ(Chunk570140.Z, {
+  VOICE_CHANNEL_SELECT: rE,
+  VOICE_STATE_UPDATES: nv,
+  CONNECTION_OPEN: ng,
+  CONNECTION_CLOSED: nb,
+  POST_CONNECTION_OPEN: ny,
+  RTC_CONNECTION_STATE: nO,
+  AUDIO_SET_TEMPORARY_SELF_MUTE: nI,
+  AUDIO_TOGGLE_SELF_MUTE: nT,
+  AUDIO_SET_SELF_MUTE: nS,
+  AUDIO_TOGGLE_SELF_DEAF: nC,
+  AUDIO_TOGGLE_LOCAL_MUTE: nN,
+  AUDIO_SET_LOCAL_VIDEO_DISABLED: nR,
+  AUDIO_SET_LOCAL_VOLUME: nw,
+  AUDIO_SET_LOCAL_PAN: nL,
+  AUDIO_SET_MODE: nx,
+  AUDIO_SET_INPUT_VOLUME: nM,
+  AUDIO_SET_OUTPUT_VOLUME: nk,
+  AUDIO_SET_INPUT_DEVICE: nj,
+  AUDIO_SET_OUTPUT_DEVICE: nU,
+  AUDIO_SET_ACTIVE_INPUT_PROFILE: nB,
+  AUDIO_SET_ECHO_CANCELLATION: nW,
+  AUDIO_SET_SIDECHAIN_COMPRESSION: nY,
+  AUDIO_SET_SIDECHAIN_COMPRESSION_STRENGTH: nK,
+  AUDIO_SET_LOOPBACK: nq,
+  AUDIO_SET_NOISE_SUPPRESSION: n$,
+  AUDIO_SET_AUTOMATIC_GAIN_CONTROL: n0,
+  AUDIO_SET_NOISE_CANCELLATION: n1,
+  AUDIO_SET_KRISP_MODEL_OVERRIDE: n3,
+  AUDIO_SET_DISPLAY_SILENCE_WARNING: n4,
+  AUDIO_SET_DEBUG_LOGGING: n5,
+  AUDIO_SET_KRISP_SUPPRESSION_LEVEL: n8,
+  AUDIO_SET_NOISE_CANCELLATION_ENABLE_STATS: n2,
+  MEDIA_ENGINE_SET_VIDEO_HOOK: n6,
+  MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE: n7,
+  MEDIA_ENGINE_SET_USE_SYSTEM_SCREENSHARE_PICKER: n9,
+  AUDIO_SET_ATTENUATION: re,
+  AUDIO_SET_QOS: rt,
+  MEDIA_ENGINE_DEVICES: nF,
+  AUDIO_VOLUME_CHANGE: nV,
+  AUDIO_RESET: rn,
+  AUDIO_INPUT_DETECTED: rr,
+  AUDIO_SET_SUBSYSTEM: rh,
+  AUDIO_SET_BYPASS_SYSTEM_INPUT_PROCESSING: rp,
+  MEDIA_ENGINE_SET_AUDIO_ENABLED: rv,
+  MEDIA_ENGINE_SET_VIDEO_ENABLED: rI,
+  MEDIA_ENGINE_PERMISSION: rO,
+  MEDIA_ENGINE_SET_GO_LIVE_SOURCE: rA,
+  MEDIA_ENGINE_SET_VIDEO_DEVICE: nG,
+  MEDIA_ENGINE_INTERACTION_REQUIRED: nZ,
+  USER_SETTINGS_MODAL_INIT: rC,
+  USER_SETTINGS_MODAL_SET_SECTION: rC,
+  CERTIFIED_DEVICES_SET: rN,
+  RPC_APP_CONNECTED: rb,
+  RPC_APP_DISCONNECTED: ry,
+  OVERLAY_INITIALIZE: nE,
+  APP_STATE_UPDATE: rD,
+  SET_CHANNEL_BITRATE: rw,
+  SET_VAD_PERMISSION: ri,
+  SET_NATIVE_PERMISSION: ra,
+  SET_CHANNEL_VIDEO_QUALITY_MODE: rM,
+  MEDIA_ENGINE_SET_AEC_DUMP: rR,
+  MEDIA_ENGINE_RESET_SETTINGS: rP,
+  CHANNEL_DELETE: rL,
+  MEDIA_ENGINE_NOISE_CANCELLATION_ERROR_RESET: rx,
+  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: rk,
+  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_START: rj,
+  MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_ERROR: rU,
+  USER_SETTINGS_PROTO_UPDATE: nA,
+  CLIPS_INIT: rT,
+  CLIPS_SETTINGS_UPDATE: rS,
+  MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE: rG,
+  VOICE_FILTER_REQUEST_SWITCH: rd,
+  VOICE_FILTER_LOOPBACK_TOGGLE: ru,
+  VOICE_FILTER_APPLIED: r_,
+  VOICE_FILTER_DOWNLOAD_FAILED: rf,
+  VOICE_FILTER_APPLY_FAILED: rf
 })

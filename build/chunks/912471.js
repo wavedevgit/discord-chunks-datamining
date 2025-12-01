@@ -47,7 +47,7 @@ function I(e) {
   }
   return e
 }
-let T = 26,
+let T = 27,
   S = 15 * Chunk70956.Z.Millis.MINUTE,
   A = Chunk70956.Z.Millis.SECOND,
   C = "LAST_CLIENT_HEARTBEAT_SESSION",
@@ -146,7 +146,7 @@ function H() {}
 
 function W() {
   let e = [];
-  return null != j && (k && module.push("foregrounded"), M !== Chunk981631.hes.DISCONNECTED && M !== Chunk981631.hes.RTC_DISCONNECTED && module.push("rtc_connected")), {
+  return null != j && (k && module.push("foregrounded"), M === Chunk981631.hes.RTC_CONNECTED && module.push("rtc_connected")), {
     active: module.length > 0,
     ver: T,
     reasons: module

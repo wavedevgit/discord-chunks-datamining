@@ -2,33 +2,31 @@
 /** chunk id: 691891, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => c
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk243964 = require("./243964.js");
-let c = e => {
+let l = e => {
   let {
     className: t,
     onDismiss: n,
     "aria-label": i
   } = e;
-  return (0, r.jsx)(o.zx, {
-    look: o.zx.Looks.BLANK,
-    size: o.zx.Sizes.NONE,
+  return (0, r.jsx)(o.P3F, {
+    role: "button",
     onClick: n,
-    className: a()(l.dismissButton, t),
+    className: a()(s.dismissButton, t),
     "aria-label": i,
-    children: (0, r.jsx)(s.Dio, {
+    children: (0, r.jsx)(o.Dio, {
       size: "xs",
       color: "currentColor",
-      colorClass: l.dismissIcon
+      colorClass: s.dismissIcon
     })
   })
 };
-c.displayName = "DismissButton";
-let u = c
+l.displayName = "DismissButton";
+let c = l
