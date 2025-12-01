@@ -2,7 +2,7 @@
 /** chunk id: 644916, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => f
+  t: () => _
 });
 var Chunk115434 = require("./115434.js"),
   Chunk704215 = require("./704215.js"),
@@ -12,9 +12,10 @@ var Chunk115434 = require("./115434.js"),
   Chunk416587 = require("./416587.js"),
   Chunk874703 = require("./874703.js"),
   Chunk65679 = require("./65679.js"),
-  Chunk885472 = require("./885472.js");
+  Chunk885472 = require("./885472.js"),
+  Chunk582113 = require("./582113.js");
 
-function f(e) {
+function _(e) {
   switch (e) {
     case i.z.COLLECTIBLES_SHOP_ENTRY_MARKETING:
       var t, n;
@@ -33,6 +34,8 @@ function f(e) {
       return 0;
     case i.z.COLLECTIBLES_SHOP_WIDE_BANNER:
       return (0, u.k)();
+    case i.z.GAME_SHOP_ANNOUNCEMENT_MODAL:
+      return f.dQ;
     default:
       return (0, a.UT)(e, {
         andFail: false
