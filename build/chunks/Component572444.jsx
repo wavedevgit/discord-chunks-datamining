@@ -102,8 +102,8 @@ function _(e) {
 function y() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [i, r] = Chunk473749.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [y, C] = Chunk473749.useState(null), S = Chunk473749.useRef(null), E = Chunk473749.useRef(null), [T, O] = Chunk473749.useState(.5), {
-    krispModels: N,
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [i, r] = Chunk473749.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [y, C] = Chunk473749.useState(null), S = Chunk473749.useRef(null), E = Chunk473749.useRef(null), [T, N] = Chunk473749.useState(.5), {
+    krispModels: O,
     krispModelOverride: P,
     inputMode: I,
     echoCancellation: w,
@@ -195,7 +195,7 @@ function y() {
             Chunk846027.Z.setKrispModelOverride("")
           },
           isSelected: e => e === P,
-          options: N.map(e => ({
+          options: O.map(e => ({
             label: e,
             value: e
           })),
@@ -279,7 +279,7 @@ function y() {
         label: "Volume",
         initialValue: T,
         asValueChanges: function(e) {
-          null != E.current && (E.current.gain.value = e, O(e))
+          null != E.current && (E.current.gain.value = e, N(e))
         },
         minValue: 0,
         maxValue: 1

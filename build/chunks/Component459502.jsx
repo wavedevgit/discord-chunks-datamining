@@ -24,9 +24,9 @@ function b(e) {
     showDismiss: b = true
   } = e, y = (0, l.e7)([c.Z], () => c.Z.getChannel(t), [t]), C = (0, p.sz)(t), v = null != (0, p.qY)(t), {
     canManageGuildEvent: _
-  } = (0, s.XJ)(y), [O, x] = r.useState(() => new Set), j = r.useMemo(() => C.filter(e => !O.has(e.id)), [C, O]), E = (0, l.cj)([d.ZP], () => j.reduce((e, t) => (e[t.id] = d.ZP.getUserCount(t.id, (0, h.DK)(t)), e), {}), [j]);
-  return j.length < 1 || v ? null : (0, i.jsx)(i.Fragment, {
-    children: j.map(e => (0, i.jsx)(f.Z, {
+  } = (0, s.XJ)(y), [O, x] = r.useState(() => new Set), E = r.useMemo(() => C.filter(e => !O.has(e.id)), [C, O]), j = (0, l.cj)([d.ZP], () => E.reduce((e, t) => (e[t.id] = d.ZP.getUserCount(t.id, (0, h.DK)(t)), e), {}), [E]);
+  return E.length < 1 || v ? null : (0, i.jsx)(i.Fragment, {
+    children: E.map(e => (0, i.jsx)(f.Z, {
       icon: (0, i.jsx)(o.Que, {
         size: "custom",
         color: "currentColor",
@@ -85,7 +85,7 @@ function b(e) {
         var t;
         return t = e.id, void x(e => new Set(e).add(t))
       } : true,
-      userCount: E[e.id],
+      userCount: j[e.id],
       className: g.eventPrompt
     }, e.id))
   })

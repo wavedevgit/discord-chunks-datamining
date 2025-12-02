@@ -24,21 +24,21 @@ let C = e => {
     message: t,
     hovering: n,
     compact: l
-  } = e, C = r.useRef((0, o.random)(false, 24)).current, v = (0, s.e7)([h.Z], () => h.Z.confettiMode), _ = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), O = r.useRef(0), x = r.useRef(null), j = r.useRef(null), [E, S] = r.useState(false), P = r.useMemo(() => !n && !v && !_, [v, n, _]);
+  } = e, C = r.useRef((0, o.random)(false, 24)).current, v = (0, s.e7)([h.Z], () => h.Z.confettiMode), _ = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), O = r.useRef(0), x = r.useRef(null), E = r.useRef(null), [j, S] = r.useState(false), P = r.useMemo(() => !n && !v && !_, [v, n, _]);
   if (r.useEffect(() => {
       n || S(false), n && v && S(true)
     }, [n, v]), r.useEffect(() => {
-      !_ && (E || (false === n && (O.current = 0, null != x.current && (clearTimeout(x.current), x.current = null)), O.current = Date.now(), x.current = setTimeout(() => {
+      !_ && (j || (false === n && (O.current = 0, null != x.current && (clearTimeout(x.current), x.current = null)), O.current = Date.now(), x.current = setTimeout(() => {
         let e = O.current;
         if (0 !== e && false !== n && !(Date.now() - e < 1e3) && !v) {
-          if (null != j.current) {
+          if (null != E.current) {
             var i;
             let {
               x: e,
               y: n,
               width: r,
               height: l
-            } = null == (i = j.current) ? true : i.getBoundingClientRect();
+            } = null == (i = E.current) ? true : i.getBoundingClientRect();
             (0, g.Z)(t, {
               x: e,
               y: n - 20,
@@ -52,7 +52,7 @@ let C = e => {
           })
         }
       }, 1100)))
-    }, [v, E, n, t, _]), !(0, m.p7)("Message Confetti Peak") || !(0, b.Uw)(t)) return null;
+    }, [v, j, n, t, _]), !(0, m.p7)("Message Confetti Peak") || !(0, b.Uw)(t)) return null;
   let I = (0, b.Eq)(t);
   if (null == I) return null;
   if (l) return (0, i.jsx)("span", {
@@ -67,7 +67,7 @@ let C = e => {
       forcePNG: true
     });
   return (0, i.jsxs)("div", {
-    ref: j,
+    ref: E,
     className: y.emojiWrapper,
     style: {
       right: "".concat(256 + C, "px")

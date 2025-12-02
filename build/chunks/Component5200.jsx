@@ -35,8 +35,8 @@ function v(e) {
   } = e, {
     onActivityItemSelected: O,
     imageBackground: x,
-    activityAction: j,
-    labelType: E
+    activityAction: E,
+    labelType: j
   } = (0, u.ZP)({
     context: n,
     activityItem: i,
@@ -55,11 +55,11 @@ function v(e) {
     children: (0, r.jsx)("div", {
       className: g.badgeContainer,
       children: (0, r.jsx)(p.Z, {
-        labelType: E
+        labelType: j
       })
     })
-  }), [E]), N = l.useMemo(() => {
-    switch (j) {
+  }), [j]), N = l.useMemo(() => {
+    switch (E) {
       case u.JS.JOIN:
         return (0, r.jsx)("div", {
           className: g.activityAction,
@@ -88,7 +88,7 @@ function v(e) {
       default:
         return null
     }
-  }, [j]);
+  }, [E]);
   return (0, r.jsx)(c.P3F, {
     onClick: O,
     onFocus: I,

@@ -31,7 +31,7 @@ function m(e) {
   if (!b) return null;
   let O = null == C ? f.intl.string(h.default["0IZbwC"]) : f.intl.string(h.default.Uj6oD4),
     x = null == C,
-    j = "delete-message-".concat(t.id);
+    E = "delete-message-".concat(t.id);
   return (0, i.jsx)(p.Z, {
     text: O,
     icon: a.XHJ,
@@ -43,5 +43,5 @@ function m(e) {
     },
     disabled: x,
     color: l.zx.Colors.RED
-  }, j)
+  }, E)
 }

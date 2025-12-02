@@ -37,37 +37,37 @@ var Chunk54381 = require("./54381.js"),
 function w(e) {
   let {
     channel: t
-  } = e, [n, l] = r.useState(false), o = (0, m.ZP)(t, true), w = t.guild_id, M = (0, u.e7)([_.Z], () => null != w ? _.Z.getSortedRoles(w) : true), R = (0, u.e7)([j.default, O.Z], () => {
+  } = e, [n, l] = r.useState(false), o = (0, m.ZP)(t, true), w = t.guild_id, M = (0, u.e7)([_.Z], () => null != w ? _.Z.getSortedRoles(w) : true), R = (0, u.e7)([E.default, O.Z], () => {
     var e;
-    return j.default.getUser(null == (e = O.Z.getGuild(w)) ? true : e.ownerId)
+    return E.default.getUser(null == (e = O.Z.getGuild(w)) ? true : e.ownerId)
   }), L = r.useMemo(() => null != M ? M.filter(e => !(0, v.fI)(e)) : [], [M]), D = r.useMemo(() => s()(L).filter(e => {
     if (null == w) returnfalse;
-    let n = E.I0({
+    let n = j.I0({
       forceRoles: {
         [e.id]: e
       },
       context: t
     });
     return c.Db(n, c.$e(Z.Plq.ADMINISTRATOR, Z.Plq.VIEW_CHANNEL))
-  }).value(), [t, w, L]), k = (0, u.Wu)([j.default], () => {
+  }).value(), [t, w, L]), k = (0, u.Wu)([E.default], () => {
     let e = {};
     for (let n of (null != R && (e[R.id] = R), Object.values(t.permissionOverwrites))) {
       if (n.type !== f.BN.MEMBER || null != e[n.id]) continue;
-      let t = j.default.getUser(n.id);
+      let t = E.default.getUser(n.id);
       null != t && (e[t.id] = t)
     }
     return s()(e).filter(e => {
       var n;
-      let i = E.BT({
+      let i = j.BT({
           permission: Z.Plq.ADMINISTRATOR,
           user: e,
           context: t
         }),
-        r = null != (n = t.permissionOverwrites[e.id]) ? n : E.Hn,
+        r = null != (n = t.permissionOverwrites[e.id]) ? n : j.Hn,
         l = c.e$(r.allow, Z.Plq.VIEW_CHANNEL);
       return i || l
     }).value()
-  }, [t, R]), U = x.Z.can(Z.Plq.MANAGE_CHANNELS, t) || x.Z.can(Z.Plq.MANAGE_ROLES, t), F = r.useCallback(() => l(false), []);
+  }, [t, R]), U = x.Z.can(Z.Plq.MANAGE_CHANNELS, t) || x.Z.can(Z.Plq.MANAGE_ROLES, t), V = r.useCallback(() => l(false), []);
   return (0, i.jsxs)(P.ZP, {
     channelId: t.id,
     children: [(0, i.jsx)(P.Kq, {
@@ -176,7 +176,7 @@ function w(e) {
           }
           return e
         }({}, e), r = r = {
-          onClose: () => (F(), e.onClose()),
+          onClose: () => (V(), e.onClose()),
           channelId: t.id
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);

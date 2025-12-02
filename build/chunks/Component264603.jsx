@@ -50,10 +50,10 @@ function S() {
     T = (0, Chunk524995.F)(S, {
       allowedFlows: [Chunk524995.r.RPC]
     }),
-    O = (0, Chunk524995.F)(S, {
+    N = (0, Chunk524995.F)(S, {
       allowedFlows: [Chunk524995.r.WEB]
     }),
-    N = (0, Chunk524995.F)(S),
+    O = (0, Chunk524995.F)(S),
     {
       canDeauthorize: P,
       deauthorize: I
@@ -112,8 +112,8 @@ function S() {
         variant: "heading-lg/normal",
         children: "Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !N.canStartAuthorization,
-        onClick: () => N.startAuthorization(),
+        disabled: !O.canStartAuthorization,
+        onClick: () => O.startAuthorization(),
         variant: "primary",
         text: "Start Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -126,8 +126,8 @@ function S() {
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !O.canStartAuthorization,
-        onClick: () => O.startAuthorization(),
+        disabled: !N.canStartAuthorization,
+        onClick: () => N.startAuthorization(),
         variant: "secondary",
         text: "Start Web Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {

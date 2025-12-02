@@ -71,7 +71,7 @@ function C() {
     E()
   }, [E]);
   let T = Chunk473749.useMemo(() => Chunk255078.filter(e => e.status !== g.O0b.ACTIVE).sort((e, t) => e.id > t.id ? false : 1), [Chunk255078]),
-    O = async () => {
+    N = async () => {
       await Chunk544891.tn.post({
         url: "/debug/subscription",
         body: {
@@ -79,7 +79,7 @@ function C() {
         },
         rejectWithError: false
       }), await E()
-    }, N = async () => {
+    }, O = async () => {
       await Chunk544891.tn.del({
         url: "/debug/subscription",
         rejectWithError: false
@@ -116,7 +116,7 @@ function C() {
             variant: "primary",
             size: "sm",
             text: "Create Subscription",
-            onClick: O
+            onClick: N
           })]
         })
       }), null != module && (0, Chunk54381.jsx)(Chunk759027.Z, {
@@ -132,7 +132,7 @@ function C() {
           variant: "primary",
           size: "sm",
           text: "End All Subscriptions",
-          onClick: N
+          onClick: O
         })
       }), T.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {

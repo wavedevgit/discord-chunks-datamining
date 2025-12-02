@@ -10,6 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk990547 = require("./990547.js"),
   Chunk79766 = require("./79766.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk704215 = require("./704215.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -18,7 +19,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk468846 = require("./468846.jsx"),
   Chunk313201 = require("./313201.js"),
   Chunk70097 = require("./70097.jsx"),
-  Chunk266454 = require("./266454.js"),
   Chunk605236 = require("./605236.js"),
   Chunk524444 = require("./524444.jsx"),
   Chunk626135 = require("./626135.js"),
@@ -65,7 +65,7 @@ let P = [],
       tagText: t,
       className: n
     } = e;
-    return (0, r.jsx)(d.IGR, {
+    return (0, r.jsx)(p.IGR, {
       className: a()(T.tag, n),
       text: t
     })
@@ -93,11 +93,11 @@ let P = [],
         src: i
       }), (0, r.jsxs)("div", {
         className: T.featureCardTextGroup,
-        children: [(0, r.jsx)(d.Heading, {
+        children: [(0, r.jsx)(p.Heading, {
           variant: "heading-md/bold",
           className: T.featureCardTextHeader,
           children: t
-        }), (0, r.jsx)(d.Text, {
+        }), (0, r.jsx)(p.Text, {
           variant: "text-md/normal",
           color: "text-secondary",
           children: n
@@ -109,11 +109,11 @@ let P = [],
 function Z(e) {
   let {
     componentId: t,
-    className: n,
-    renderModalProps: l,
-    heroArt: x,
-    heroArtClassName: Z,
-    modalDismissibleContent: w,
+    promotionId: n,
+    className: l,
+    renderModalProps: x,
+    heroArt: Z,
+    heroArtClassName: w,
     modalTopExtra: L,
     header: R,
     headerClassName: D,
@@ -126,7 +126,7 @@ function Z(e) {
   } = e, {
     onClose: V,
     transitionState: F
-  } = l, z = (0, m.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
+  } = x, z = (0, _.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
 
   function ep() {
     let e = Date.now(),
@@ -135,7 +135,7 @@ function Z(e) {
       r = ea.current;
     return es.current && (J(n += t), eo.current || $(r += t)), K(e), [n, r]
   }
-  return (0, f.Z)({
+  return (0, h.Z)({
     type: s.ImpressionTypes.MODAL,
     name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
@@ -146,8 +146,8 @@ function Z(e) {
     let e = async () => {
       try {
         var e;
-        if ("video" !== x.type || null == x.subtitles) return;
-        let t = null == (e = x.subtitles) ? true : e.map(async e => {
+        if ("video" !== Z.type || null == Z.subtitles) return;
+        let t = null == (e = Z.subtitles) ? true : e.map(async e => {
           let t = await fetch(e.src);
           if (!t.ok) throw Error("Failed to fetch the subtitle file ".concat(e.src));
           let n = await t.text(),
@@ -165,14 +165,14 @@ function Z(e) {
       }
     };
     true !== ed.current && e(), ed.current = true
-  }, [x, ec]), i.useEffect(() => () => {
+  }, [Z, ec]), i.useEffect(() => () => {
     null != ec && ec.forEach(e => {
       URL.revokeObjectURL(e.src)
     })
   }, [ec]), i.useEffect(() => {
     ei.current = q, el.current = Q, ea.current = X, es.current = ee, eo.current = en
   }, [q, Q, X, ee, en]), i.useEffect(() => () => {
-    if ("video" === x.type || "embed" === x.type) {
+    if ("video" === Z.type || "embed" === Z.type) {
       let [e, t] = ep();
       y.default.track(I.rMx.CHANGE_LOG_VIDEO_PLAYED, {
         change_log_id: G,
@@ -182,8 +182,8 @@ function Z(e) {
         seconds_unmuted: Math.round(t / 1e3)
       })
     }
-  }, [G, x.type]), i.useEffect(() => {
-    null != w && (0, E.kk)(w);
+  }, [G, Z.type]), i.useEffect(() => {
+    (0, E.kk)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
     let e = Date.now();
     return y.default.track(I.rMx.CHANGE_LOG_OPENED, {
       change_log_id: G
@@ -191,36 +191,36 @@ function Z(e) {
       y.default.track(I.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: G,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), null != w && (0, b.Q3)(w, {
+      }), (0, E.JO)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
         dismissAction: C.L.DISMISS
       })
     }
-  }, [w, G]), (0, r.jsx)(d.Y0X, {
+  }, [G, n]), (0, r.jsx)(p.Y0X, {
     "data-migration-pending": true,
-    className: a()(T.root, T.largeBorderRadius, n),
+    className: a()(T.root, T.largeBorderRadius, l),
     transitionState: F,
     "aria-labelledby": z,
     parentComponent: "PremiumAnnouncementModalVariant1",
-    children: (0, r.jsxs)(d.$1m, {
+    children: (0, r.jsxs)(p.$1m, {
       color: "nitro-pink",
       children: [(0, r.jsx)("div", {
         className: T.closeButtonContainer,
-        children: (0, r.jsx)(u.PZ7, {
+        children: (0, r.jsx)(d.PZ7, {
           "data-migration-pending": true,
           onClick: async () => await V()
         })
-      }), null == L ? true : L(), (0, r.jsxs)(d.hzk, {
+      }), null == L ? true : L(), (0, r.jsxs)(p.hzk, {
         "data-migration-pending": true,
         className: T.content,
-        children: ["video" === x.type ? (0, r.jsx)(_.Z, {
-          className: a()(T.video, Z),
+        children: ["video" === Z.type ? (0, r.jsx)(b.Z, {
+          className: a()(T.video, w),
           autoPlay: !W,
           loop: true,
           muted: true,
           controls: true,
           controlsList: "nofullscreen nodownload noremoteplayback noplaybackrate",
-          src: x.src,
-          poster: x.poster,
+          src: Z.src,
+          poster: Z.poster,
           onPlay: e => {
             y.default.track(I.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: G
@@ -246,15 +246,15 @@ function Z(e) {
               default: e.isDefault
             }, e.locale)
           })
-        }) : "embed" === x.type ? (0, r.jsx)(h.BC, {
-          className: a()(T.video, Z),
+        }) : "embed" === Z.type ? (0, r.jsx)(g.BC, {
+          className: a()(T.video, w),
           allowFullScreen: false,
-          href: x.href,
-          thumbnail: x.thumbnail,
-          video: x.embed,
-          provider: g.pn.YOUTUBE,
-          maxWidth: x.embed.width,
-          maxHeight: x.embed.height,
+          href: Z.href,
+          thumbnail: Z.thumbnail,
+          video: Z.embed,
+          provider: m.pn.YOUTUBE,
+          maxWidth: Z.embed.width,
+          maxHeight: Z.embed.height,
           renderVideoComponent: O.lV,
           renderImageComponent: O.Yi,
           renderLinkComponent: O.iT,
@@ -263,20 +263,20 @@ function Z(e) {
               change_log_id: G
             })
           }
-        }) : "image" === x.type ? (0, r.jsx)("img", {
+        }) : "image" === Z.type ? (0, r.jsx)("img", {
           alt: "",
-          className: a()(T.video, Z),
-          src: x.src
-        }) : null, (0, r.jsx)(d.Heading, {
+          className: a()(T.video, w),
+          src: Z.src
+        }) : null, (0, r.jsx)(p.Heading, {
           variant: "display-md",
           className: a()(T.headerText, D),
           children: R
-        }), (0, r.jsxs)(d.Text, {
+        }), (0, r.jsxs)(p.Text, {
           variant: "text-md/normal",
           color: "text-secondary",
           className: T.subHeader,
           children: [M, null == k ? true : k()]
-        }), null != H && "" !== H && (0, r.jsx)(d.Heading, {
+        }), null != H && "" !== H && (0, r.jsx)(p.Heading, {
           variant: "heading-lg/semibold",
           className: T.bodyText,
           children: H

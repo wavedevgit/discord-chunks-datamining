@@ -106,7 +106,7 @@ function w(e) {
 function M(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([C.Z], () => null != t ? C.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && E.default.extractTimestamp(l.id) < Date.now() - P._8R, _ = (0, s.e7)([y.default], () => (null == l ? true : l.ownerId) === y.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([C.Z], () => null != t ? C.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && j.default.extractTimestamp(l.id) < Date.now() - P._8R, _ = (0, s.e7)([y.default], () => (null == l ? true : l.ownerId) === y.default.getId(), [l]), {
     canInvite: M,
     canManageGuild: R,
     canMessage: L
@@ -116,11 +116,11 @@ function M(e) {
   }), {
     guildPopulated: k,
     guildMessaged: U,
-    guildPersonalized: F
+    guildPersonalized: V
   } = (0, f.h_)(l), {
-    handleInvite: B,
-    handleMessage: H,
-    handlePersonalize: V,
+    handleInvite: F,
+    handleMessage: B,
+    handlePersonalize: H,
     handleDownload: G,
     handleAddApplication: z
   } = function(e) {
@@ -194,7 +194,7 @@ function M(e) {
         }))
       }, [e])
     }
-  }(l), W = !(D || k || U || F), {
+  }(l), W = !(D || k || U || V), {
     titleAnimatedStyle: q,
     opacities: K
   } = function(e) {
@@ -253,7 +253,7 @@ function M(e) {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0Ta),
       completed: k,
-      onClick: B
+      onClick: F
     })
   }, "invite")), R && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -263,8 +263,8 @@ function M(e) {
     children: (0, i.jsx)(w, {
       iconUrl: u.$_T,
       header: Z.intl.string(Z.t.c5kxPh),
-      completed: F,
-      onClick: V
+      completed: V,
+      onClick: H
     })
   }, "customize")), L && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -275,9 +275,9 @@ function M(e) {
       iconUrl: u.qMX,
       header: Z.intl.string(Z.t["SoP7+l"]),
       completed: U,
-      onClick: H
+      onClick: B
     })
-  }, "message")), (0, j.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
+  }, "message")), (0, E.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: W ? {
       opacity: K[Q.length]

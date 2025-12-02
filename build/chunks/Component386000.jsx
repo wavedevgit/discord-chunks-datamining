@@ -42,8 +42,8 @@ function d(e) {
   } = (0, a.ZP)(), C = t || n || d, v = p ? u.d : u.Z, _ = (0, o.Z)(t, n, d, h), {
     events: O,
     play: x,
-    Component: j
-  } = (0, c.b)(C), E = n || d ? l.v0G : j;
+    Component: E
+  } = (0, c.b)(C), j = n || d ? l.v0G : E;
   return r.useEffect(() => () => x(), [x, C]), (0, i.jsx)(v, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -62,7 +62,7 @@ function d(e) {
     }
     return e
   }({
-    iconComponent: E,
+    iconComponent: j,
     isTrayButton: true,
     caretColor: C ? "red" : "primaryDark",
     color: C ? "red" : true,

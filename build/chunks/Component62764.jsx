@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => V
+  Z: () => H
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -43,10 +43,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk127947 = require("./127947.js"),
   Chunk577650 = require("./577650.js");
 
-function H(e) {
+function B(e) {
   let {
     channel: t
-  } = e, l = t.isArchivedThread(), a = (0, j.P0)(t), [o, c] = r.useState(false), d = () => {
+  } = e, l = t.isArchivedThread(), a = (0, E.P0)(t), [o, c] = r.useState(false), d = () => {
     c(true), x.Z.resolveFlag(t.id).then(() => {
       c(false)
     })
@@ -79,7 +79,7 @@ function H(e) {
   }) : null
 }
 
-function V(e) {
+function H(e) {
   let {
     postId: t,
     isFirstMessage: n,
@@ -87,8 +87,8 @@ function V(e) {
     parentChannelId: s
   } = e, {
     ref: x,
-    width: j
-  } = (0, h.ZP)(), [S, k] = r.useState(3), [V, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
+    width: E
+  } = (0, h.ZP)(), [S, k] = r.useState(3), [H, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: K
   } = (0, M.cl)(q), Y = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: X,
@@ -96,7 +96,7 @@ function V(e) {
     isLurking: Q,
     isGuest: $,
     isPendingMember: ee
-  } = (0, y.Z)(q), et = (0, E.nw)(q), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
+  } = (0, y.Z)(q), et = (0, j.nw)(q), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -116,8 +116,8 @@ function V(e) {
   });
   let [ea, eo] = r.useState(true);
   if (r.useEffect(() => {
-      null != j && (k(Math.floor((j - 280) / 58)), eo(false))
-    }, [j]), null == q || null == K) return null;
+      null != E && (k(Math.floor((E - 280) / 58)), eo(false))
+    }, [E]), null == q || null == K) return null;
   let es = K.reactions.length > 0,
     ec = () => {
       (0, R.B)({
@@ -131,7 +131,7 @@ function V(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: a()(U.container, {
-        [U.header]: V
+        [U.header]: H
       }),
       ref: x,
       children: [et ? (0, i.jsx)("div", {
@@ -145,7 +145,7 @@ function V(e) {
           [U.loading]: ea
         }),
         children: [!es && !J && null != ei && (0, i.jsx)("div", {
-          className: F.reactions,
+          className: V.reactions,
           children: (0, i.jsx)(O.le, {
             message: K,
             readOnly: false,
@@ -179,7 +179,7 @@ function V(e) {
           message: K,
           channel: q,
           useChatFontScaling: false,
-          className: a()(B.secondary, U.addReactButton, {
+          className: a()(F.secondary, U.addReactButton, {
             [U.hasNoReactions]: !es
           }),
           isForumToolbar: true,
@@ -187,7 +187,7 @@ function V(e) {
         })]
       }), (0, i.jsxs)("div", {
         className: U.buttons,
-        children: [et ? (0, i.jsx)(H, {
+        children: [et ? (0, i.jsx)(B, {
           channel: q
         }) : (0, i.jsx)(c.u, {
           text: D.intl.string(D.t.F7oeDv),

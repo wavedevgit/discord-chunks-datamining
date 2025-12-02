@@ -62,8 +62,9 @@ function p(e) {
     leadingLayout: c = "default"
   } = e;
   if (null == t && n.length < 1) return null;
-  let d = n.findLastIndex(e => "expressive" === e.variant);
-  return false === d && (d = n.findLastIndex(e => "primary" === e.variant)), false === d && (d = n.findLastIndex(e => "secondary" === e.variant)), false === d && n.length > 0 && (d = n.length - 1), (0, r.jsxs)("footer", {
+  let d = ["primary", "critical-primary", "expressive"],
+    f = n.findLastIndex(e => null != e.variant && d.includes(e.variant));
+  return (0, r.jsxs)("footer", {
     className: a()(l.actionBar, l.section, {
       [l.actionBarLayoutChatInput]: "chat-input" === c
     }),
@@ -79,7 +80,7 @@ function p(e) {
         children: null == n ? true : n.map((e, t) => {
           var n;
           return (0, r.jsx)(o.z, u({
-            autoFocus: null != (n = e.autoFocus) ? n : d === t
+            autoFocus: null != (n = e.autoFocus) ? n : f === t
           }, e), t)
         })
       })

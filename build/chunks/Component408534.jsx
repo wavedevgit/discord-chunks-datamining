@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 408534, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -27,19 +27,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk895634 = require("./895634.js");
 
-function E(e) {
+function j(e) {
   let {
     onClose: t,
     onSelect: n,
-    channel: E,
+    channel: j,
     remoteMode: S,
     onInteraction: P
   } = e, I = (0, s.bp)(), {
     id: Z,
     type: T
-  } = E, N = (0, r.e7)([u.Z], () => u.Z.getGuild(E.guild_id), [E.guild_id]), A = (0, r.e7)([d.Z], () => d.Z.getSelectedParticipant(Z)), w = (null == A ? true : A.type) === _.fO.STREAM ? A.stream : null, M = (0, r.e7)([a.Z], () => (null == A ? true : A.type) === _.fO.ACTIVITY ? a.Z.getApplication(A.applicationId) : true), R = (0, f.Z)(Z), L = (0, C.Z)(Z), D = (0, g.Z)(E, N, null == w ? true : w.ownerId, null == M ? true : M.id), k = (0, h.Z)(Z), U = (0, v.Z)(), F = (0, c.$A)(Z), B = (0, c.j8)(Z), H = (0, y.Z)(w, I), V = (0, b.Z)(M, Z), G = (0, m.Z)(), z = (0, o.Z)(E), W = (0, p.m)(Z);
+  } = j, N = (0, r.e7)([u.Z], () => u.Z.getGuild(j.guild_id), [j.guild_id]), A = (0, r.e7)([d.Z], () => d.Z.getSelectedParticipant(Z)), w = (null == A ? true : A.type) === _.fO.STREAM ? A.stream : null, M = (0, r.e7)([a.Z], () => (null == A ? true : A.type) === _.fO.ACTIVITY ? a.Z.getApplication(A.applicationId) : true), R = (0, f.Z)(Z), L = (0, C.Z)(Z), D = (0, g.Z)(j, N, null == w ? true : w.ownerId, null == M ? true : M.id), k = (0, h.Z)(Z), U = (0, v.Z)(), V = (0, c.$A)(Z), F = (0, c.j8)(Z), B = (0, y.Z)(w, I), H = (0, b.Z)(M, Z), G = (0, m.Z)(), z = (0, o.Z)(j), W = (0, p.m)(Z);
   return (0, i.jsxs)(l.v2r, {
-    className: j.menu,
+    className: E.menu,
     onClose: t,
     onSelect: n,
     onInteraction: P,
@@ -48,13 +48,13 @@ function E(e) {
     children: [(0, i.jsx)(l.kSQ, {
       children: T !== O.d4z.GUILD_STAGE_VOICE ? D : null
     }), (0, i.jsxs)(l.kSQ, {
-      children: [T === O.d4z.GUILD_STAGE_VOICE ? F : null, T === O.d4z.GUILD_STAGE_VOICE ? B : null, S || T === O.d4z.GUILD_STAGE_VOICE ? null : k, G, T !== O.d4z.GUILD_STAGE_VOICE ? R : null, T === O.d4z.GUILD_STAGE_VOICE || T === O.d4z.GUILD_VOICE ? L : null]
+      children: [T === O.d4z.GUILD_STAGE_VOICE ? V : null, T === O.d4z.GUILD_STAGE_VOICE ? F : null, S || T === O.d4z.GUILD_STAGE_VOICE ? null : k, G, T !== O.d4z.GUILD_STAGE_VOICE ? R : null, T === O.d4z.GUILD_STAGE_VOICE || T === O.d4z.GUILD_VOICE ? L : null]
     }), (0, i.jsx)(l.kSQ, {
       children: z
     }), (0, i.jsxs)(l.kSQ, {
-      children: [!E.isManaged() && E.isPrivate() ? W : null, U]
+      children: [!j.isManaged() && j.isPrivate() ? W : null, U]
     }), (0, i.jsxs)(l.kSQ, {
-      children: [null != w ? H : null, null != M ? V : null]
+      children: [null != w ? B : null, null != M ? H : null]
     })]
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 419388, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => j
+  ZP: () => E
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
@@ -566,7 +566,7 @@ class x {
   }
 }
 
-function j(e) {
+function E(e) {
   let {
     messages: t,
     channel: n,

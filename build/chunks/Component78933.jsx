@@ -116,8 +116,8 @@ function eo(e) {
     eS = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
     eE = (0, g.p)(),
     eT = F.Sb.useSetting(),
-    eO = (0, $.I)(e_),
-    eN = (0, q.g)(n),
+    eN = (0, $.I)(e_),
+    eO = (0, q.g)(n),
     eP = (0, v.Z)({
       analyticsLocations: ex
     }),
@@ -190,7 +190,7 @@ function eo(e) {
               user: t,
               displayProfile: eh,
               themeType: ea.l.POPOUT
-            }), (0, a.jsx)(O.Z, {
+            }), (0, a.jsx)(N.Z, {
               user: t,
               displayProfile: eh,
               themeType: ea.l.POPOUT,
@@ -213,7 +213,7 @@ function eo(e) {
               nickname: H.ZP.getName(eu, null, t),
               onOpenProfile: ep ? true : eU,
               pronouns: null == eh ? true : eh.pronouns,
-              tags: (0, a.jsx)(N.Z, {
+              tags: (0, a.jsx)(O.Z, {
                 displayProfile: eh,
                 themeType: ea.l.POPOUT,
                 onClose: n,
@@ -294,7 +294,7 @@ function eo(e) {
                         className: ei.statusPickerModalMenu,
                         "aria-label": el.intl.string(el.t.E13trI),
                         onClose: t,
-                        children: eO
+                        children: eN
                       })
                     },
                     onClick: i.tq ? () => {
@@ -330,7 +330,7 @@ function eo(e) {
                             hideScroller: true,
                             onClose: l,
                             onSelect: true,
-                            children: eO
+                            children: eN
                           })
                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                           var n = Object.keys(e);
@@ -364,7 +364,7 @@ function eo(e) {
                         navId: "switch-accounts-submenu",
                         "aria-label": el.intl.string(el.t.wFhVqL),
                         onClose: t,
-                        children: eN
+                        children: eO
                       })
                     }
                   }), !__OVERLAY__ && z.wS && eT && (0, a.jsx)(J.V4, {

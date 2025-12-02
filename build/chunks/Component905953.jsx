@@ -31,15 +31,15 @@ function y(e) {
   } = e, [C, S] = l.useState(false), {
     trackUserProfileEditAction: E
   } = (0, u.KZ)(), T = (0, r.e7)([b.default], () => b.default.getId()), {
-    config: O,
-    application: N
+    config: N,
+    application: O
   } = (0, h.G)(), {
     fetched: P,
     hasAlreadyLinked: I,
     canStartAuthorization: w,
     startAuthorization: k
-  } = (0, c.F)(N), R = (0, x.ZP)(T), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == N ? true : N.id));
-  return null != O && null != O.edit_profile_upsell_image && null != N && P ? (0, a.jsx)(d.ZP, {
+  } = (0, c.F)(O), R = (0, x.ZP)(T), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == O ? true : O.id));
+  return null != N && null != N.edit_profile_upsell_image && null != O && P ? (0, a.jsx)(d.ZP, {
     contentTypes: I ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : w ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
@@ -54,10 +54,10 @@ function y(e) {
         gradientColor: "blue",
         graphic: {
           type: "image",
-          src: O.edit_profile_upsell_image
+          src: N.edit_profile_upsell_image
         },
         title: _.intl.format(_.t.TXDztH, {
-          applicationName: N.name
+          applicationName: O.name
         }),
         body: r ? _.intl.string(_.t["63Kso0"]) : _.intl.string(_.t.HwXoeC),
         onRequestClose: () => {
@@ -71,12 +71,12 @@ function y(e) {
               section: j.oh.WIDGETS
             }).then(() => {
               l(v.L.TAKE_ACTION), y(), (0, p.qH)(i.l.APPLICATION, new m.q({
-                applicationId: N.id,
+                applicationId: O.id,
                 type: i.l.APPLICATION
               })), E({
                 action: "WIDGET_ADDED",
                 widgetEdited: i.l.APPLICATION,
-                applicationId: N.id
+                applicationId: O.id
               }), (0, g.L$)(j.qb.WIDGET_ADDED)
             }).finally(() => S(false))
           },

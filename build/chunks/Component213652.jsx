@@ -33,12 +33,12 @@ function v(e) {
   }, {
     autoTrackExposure: false
   }), {
-    viewerClippingAllowed: j,
-    isAtMaxSavingClipOperations: E
+    viewerClippingAllowed: E,
+    isAtMaxSavingClipOperations: j
   } = (0, l.cj)([s.Z], () => ({
     viewerClippingAllowed: null != O && (s.Z.isViewerClippingAllowedForUser(O.ownerId) || x),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), S = (0, c.z8)(), P = (null == O ? true : O.ownerId) === f.default.getId(), I = !S || !(P || j) || E || null == v, Z = r.useCallback(e => {
+  })), S = (0, c.z8)(), P = (null == O ? true : O.ownerId) === f.default.getId(), I = !S || !(P || E) || j || null == v, Z = r.useCallback(e => {
     var t, n;
     return (0, i.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -77,7 +77,7 @@ function v(e) {
     },
     disabled: I,
     iconComponent: Z,
-    label: null == O ? y.intl.string(y.t.eg5qtV) : P || j ? S ? E ? true : y.intl.string(y.t.U4URzP) : y.intl.string(y.t.wSS1yN) : y.intl.string(y.t.aRifJX),
+    label: null == O ? y.intl.string(y.t.eg5qtV) : P || E ? S ? j ? true : y.intl.string(y.t.U4URzP) : y.intl.string(y.t.wSS1yN) : y.intl.string(y.t.aRifJX),
     grow: false
   })
 }

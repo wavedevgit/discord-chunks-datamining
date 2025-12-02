@@ -27,7 +27,7 @@ function d(e) {
     _ = null;
   return h.forEach(e => {
     var r, O, x;
-    let j, E;
+    let E, j;
     if (null != g && g.length > 0) {
       let t = a.default.extractTimestamp(e.id);
       for (let e = 0; r = e < (null == g ? true : g.length), r; e++) {
@@ -62,11 +62,11 @@ function d(e) {
       else if ((0, s.P1)(e) && n) return u.ys_.MESSAGE_GROUP_SPAMMER;
       return null
     }(p, e, Z && m);
-    (null !== T && ([I, P] = (E = O = P, null == O || O.type !== T ? (j = {
+    (null !== T && ([I, P] = (j = O = P, null == O || O.type !== T ? (E = {
       type: T,
       content: [],
       key: e.id
-    }, y.push(j)) : E = (j = O).content[j.content.length - 1], [j, E])), f === e.id && null != v) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (x = I, e.isFirstMessageInForumPost(p) || x.content.push({
+    }, y.push(E)) : j = (E = O).content[E.content.length - 1], [E, j])), f === e.id && null != v) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (x = I, e.isFirstMessageInForumPost(p) || x.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), x.hasUnread = true) : e.isFirstMessageInForumPost(p) || y.push({

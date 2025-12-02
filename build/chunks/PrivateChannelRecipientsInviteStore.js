@@ -22,12 +22,12 @@ let v = false,
   _ = "",
   O = 0,
   x = [],
-  j = false,
-  E = new Set,
+  E = false,
+  j = new Set,
   S = null;
 
 function P() {
-  _ = "", O = 0, x = [], E = new Set, v = false, S = null
+  _ = "", O = 0, x = [], j = new Set, v = false, S = null
 }
 
 function I(e) {
@@ -85,8 +85,8 @@ function Z() {
 
 function T() {
   if (!v) returnfalse;
-  let e = j;
-  return (j = Chunk699516.Z.getFriendCount() > 0) !== module
+  let e = E;
+  return (E = Chunk699516.Z.getFriendCount() > 0) !== module
 }
 
 function N(e, t) {
@@ -144,10 +144,10 @@ class D extends(r = Chunk442837.ZP.Store) {
     return x
   }
   hasFriends() {
-    return j
+    return E
   }
   getSelectedUsers() {
-    return E
+    return j
   }
   getQuery() {
     return _
@@ -156,9 +156,9 @@ class D extends(r = Chunk442837.ZP.Store) {
     return {
       query: _,
       selectedRow: O,
-      selectedUsers: E,
+      selectedUsers: j,
       results: x,
-      hasFriends: j
+      hasFriends: E
     }
   }
 }(l = "displayName") in D ? Object.defineProperty(D, l, {
@@ -198,13 +198,13 @@ let k = new D(Chunk570140.Z, {
       let {
         userId: t
       } = e;
-      E.add(t), E = new Set(E)
+      j.add(t), j = new Set(j)
     },
     PRIVATE_CHANNEL_RECIPIENTS_REMOVE_USER: function(e) {
       let {
         userId: t
       } = e;
-      E.delete(t), E = new Set(E)
+      j.delete(t), j = new Set(j)
     }
   }),
   U = k

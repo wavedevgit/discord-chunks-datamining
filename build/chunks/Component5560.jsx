@@ -2,7 +2,7 @@
 /** chunk id: 5560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   V: () => x,
-  Z: () => j
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -138,7 +138,7 @@ class x extends Chunk473749.PureComponent {
         [C.notAnimating]: !t,
         [C.highPriority]: u
       }
-    }, j = this.getTutorialPopoutText();
+    }, E = this.getTutorialPopoutText();
     return (0, Chunk54381.jsx)(Chunk350707.ZP, O(_({
       innerRef: this.contentRef,
       position: Chunk451478,
@@ -151,7 +151,7 @@ class x extends Chunk473749.PureComponent {
       arrowAlignment: Chunk819640,
       onSkipAll: this.handleSkipTips,
       onComplete: this.handleDismiss
-    }, j), {
+    }, E), {
       children: (e, t) => {
         let {
           isShown: r
@@ -196,7 +196,7 @@ class x extends Chunk473749.PureComponent {
     })
   }
 }
-let j = 12633 == require.j ? function() {
+let E = 12633 == require.j ? function() {
   let {
     indicators: e,
     tutorialData: t,

@@ -32,12 +32,12 @@ let d = function(e) {
   if (null == t) return (0, i.jsx)(i.Fragment, {
     children: r.Children.only(v)
   });
-  let j = null;
-  return null != g ? j = (0, i.jsx)("img", {
+  let E = null;
+  return null != g ? E = (0, i.jsx)("img", {
     alt: "",
     src: g,
     className: u.image
-  }) : null != b && (j = (0, i.jsx)(o.Fmz, {
+  }) : null != b && (E = (0, i.jsx)(o.Fmz, {
     importData: b,
     shouldAnimate: !_,
     className: u.animation
@@ -45,7 +45,7 @@ let d = function(e) {
     className: u.wrapper,
     children: [(0, i.jsxs)("div", {
       className: u.content,
-      children: [j, (0, i.jsxs)("div", {
+      children: [E, (0, i.jsxs)("div", {
         className: u.text,
         children: [(0, i.jsx)(o.Heading, {
           variant: "heading-md/semibold",

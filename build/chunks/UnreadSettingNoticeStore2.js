@@ -49,16 +49,16 @@ let C = [{
     channels: {}
   },
   x = new Set,
-  j = null,
-  E = 0,
+  E = null,
+  j = 0,
   S = 0;
 
 function P() {
-  if (null == j || !T(j)) returnfalse;
-  let e = Z(j);
+  if (null == E || !T(E)) returnfalse;
+  let e = Z(E);
   if (module.lastActionTime > Date.now() - Chunk70956.Z.Millis.DAY && module.viewDuration > v) returnfalse;
   let t = Date.now();
-  module.lastActionTime = exports, module.viewDuration += exports - E, E = exports
+  module.lastActionTime = exports, module.viewDuration += exports - j, j = exports
 }
 
 function I() {
@@ -119,10 +119,10 @@ y(A, "displayName", "UnreadSettingNoticeStore2"), y(A, "persistKey", "UnreadSett
 let w = new A(Chunk570140.Z, {
     CHANNEL_SELECT: function() {
       let e = P();
-      return j = Chunk944486.Z.getChannelId(), E = Date.now(), module
+      return E = Chunk944486.Z.getChannelId(), j = Date.now(), module
     },
     CONNECTION_OPEN: function() {
-      j = Chunk944486.Z.getChannelId(), E = Date.now(), I();
+      E = Chunk944486.Z.getChannelId(), j = Date.now(), I();
       let e = Date.now() - _;
       Chunk709054.default.forEach(O.channels, (t, n) => {
         let {

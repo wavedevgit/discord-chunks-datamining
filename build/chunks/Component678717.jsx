@@ -60,7 +60,7 @@ function T() {
   })
 }
 
-function O(e) {
+function N(e) {
   var t;
   let {
     isPopout: n = false
@@ -109,7 +109,7 @@ function O(e) {
   })
 }
 
-function N() {
+function O() {
   let e = Chunk473749.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
     [n, i] = Chunk473749.useState(null),
@@ -132,7 +132,7 @@ function N() {
       onResizeEnd: r
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk54381.jsx)(O, {})
+      children: (0, Chunk54381.jsx)(N, {})
     })]
   })
 }
@@ -142,7 +142,7 @@ function P() {
     className: r()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
     children: (0, Chunk54381.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk54381.jsx)(O, {})
+      children: (0, Chunk54381.jsx)(N, {})
     })
   }) : (0, Chunk54381.jsx)("div", {
     className: Chunk552883.container,
@@ -171,8 +171,8 @@ function I(e) {
   } = e;
   return t ? (0, a.jsx)(P, {}) : n ? (0, a.jsx)("div", {
     className: C.popoutContainer,
-    children: (0, a.jsx)(O, {
+    children: (0, a.jsx)(N, {
       isPopout: true
     })
-  }) : (0, a.jsx)(N, {})
+  }) : (0, a.jsx)(O, {})
 }

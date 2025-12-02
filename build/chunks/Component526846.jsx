@@ -67,7 +67,7 @@ function A(e) {
       return null == e ? null : e.type === s.C.APPLICATION_BANNER ? e : null
     }, [null == v ? true : v.application_directory_collection_items]),
     {
-      trackItemImpressionRef: j
+      trackItemImpressionRef: E
     } = (0, f.Z)({
       applicationId: null != (t = null == x ? true : x.application.id) ? t : "",
       applicationFlags: null == x ? true : x.application.flags,
@@ -82,7 +82,7 @@ function A(e) {
     containerWidth: 584
   })), (0, i.jsxs)(u.P3F, {
     className: Z.clickableBanner,
-    innerRef: j,
+    innerRef: E,
     onClick: () => {
       p(), (0, m.Z)({
         context: {
@@ -133,11 +133,11 @@ let w = Chunk473749.forwardRef(function(e, t) {
       newestAnalyticsLocation: T
     } = (0, p.ZP)(d.Z.ACTIVITIES_MINI_SHELF),
     w = C === P.IlC.POPOUT,
-    M = (n = l.getGuildId(), (0, E.Z)({
+    M = (n = l.getGuildId(), (0, j.Z)({
       guildId: n
     }).slice(0, 5));
   r.useEffect(() => {
-    let e = setTimeout(() => j.ux(), 1e3);
+    let e = setTimeout(() => E.ux(), 1e3);
     return () => clearTimeout(e)
   }, []);
   let R = r.useCallback(() => {

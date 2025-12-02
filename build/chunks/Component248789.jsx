@@ -74,7 +74,7 @@ function y(e) {
         cta: e
       }))
     }, [O]),
-    j = r.useCallback(() => {
+    E = r.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
@@ -97,7 +97,7 @@ function y(e) {
         modalKey: f.X_
       }), x(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
     }, [t, C, y, x]),
-    E = r.useCallback(() => {
+    j = r.useCallback(() => {
       v(), x(p.NM.USER_BANNER_BLOCK_CONFIRM)
     }, [v, x]),
     S = r.useCallback(() => {
@@ -115,7 +115,7 @@ function y(e) {
           } = n;
           return (0, i.jsx)(e, {
             transitionState: r,
-            onBlock: E,
+            onBlock: j,
             onBlockAndReport: S,
             onCancel: () => {
               null == l || l(), x(p.NM.USER_BANNER_BLOCK_CANCEL)
@@ -126,7 +126,7 @@ function y(e) {
           })
         }
       })
-    }, [E, S, C, t, x]);
+    }, [j, S, C, t, x]);
   return (0, i.jsx)(h.Q, {
     channelId: t,
     warningId: y,
@@ -138,7 +138,7 @@ function y(e) {
     buttons: [{
       text: m.intl.string(m.t.Qyu4UK),
       variant: "primary",
-      onClick: j
+      onClick: E
     }, ..._ ? [] : [{
       text: m.intl.string(m.t["7q0bNY"]),
       variant: "secondary",

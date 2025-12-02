@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 350707, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => j,
+  ZP: () => E,
   cy: () => O,
   iu: () => _
 }), require("./388685.js");
@@ -130,7 +130,7 @@ class x extends Chunk473749.PureComponent {
     })
   }
 }
-class j extends(i = Chunk473749.PureComponent) {
+class E extends(i = Chunk473749.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -216,6 +216,6 @@ class j extends(i = Chunk473749.PureComponent) {
     })
   }
 }
-y(j, "TextAlignments", _), y(j, "defaultProps", {
+y(E, "TextAlignments", _), y(E, "defaultProps", {
   textAlign: "left"
 })

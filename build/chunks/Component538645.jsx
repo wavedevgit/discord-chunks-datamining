@@ -12,8 +12,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
   Chunk53281 = require("./53281.jsx"),
+  Chunk267097 = require("./267097.js"),
   Chunk281598 = require("./281598.js"),
-  Chunk365943 = require("./365943.js"),
   Chunk25251 = require("./25251.js"),
   Chunk373071 = require("./373071.js"),
   Chunk782691 = require("./782691.jsx"),
@@ -58,29 +58,25 @@ function j() {
     profileEffects: e,
     upsertConfig: t,
     clearAll: n
-  } = (0, Chunk373071.n6)(), [i, j] = Chunk473749.useState(), _ = Chunk473749.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [C, S] = Chunk473749.useState("");
-  Chunk473749.useEffect(() => {
-    (0, Chunk365943.t)(true)
-  }, []);
-  let E = Chunk473749.useMemo(() => "" === C ? y : y.filter(e => {
-      var t, n, a, l;
-      let i = C.toLowerCase(),
-        r = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
-        s = null != (l = null == (n = e.config.description) ? true : n.toLowerCase()) ? l : "";
-      return r.includes(i) || s.includes(i)
-    }), [C, y]),
-    T = Chunk473749.useCallback((e, n) => {
-      if (null == n || !e.type.startsWith("text/")) return (0, m.Eo)(b);
-      let [a, l] = n.split(",");
-      if (!a.includes("text/plain")) return (0, m.Eo)(b);
-      let i = JSON.parse(atob(l));
-      i.skuId = (0, s.Z)(), t(i), (0, m.XA)("Profile Effect (maybe??) imported!")
-    }, [exports]),
-    O = Chunk473749.useCallback(e => {
-      var t;
-      if ((null == (t = e.currentTarget) ? true : t.files) == null) return void(0, m.Eo)("Error uploading file. Try again!");
-      (0, m.Kr)(e.currentTarget.files, T, m.Eo)
-    }, [T]);
+  } = (0, Chunk373071.n6)(), [i, j] = Chunk473749.useState(), _ = Chunk473749.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects());
+  (0, Chunk267097.Z)();
+  let [C, S] = Chunk473749.useState(""), E = Chunk473749.useMemo(() => "" === C ? y : y.filter(e => {
+    var t, n, a, l;
+    let i = C.toLowerCase(),
+      r = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
+      s = null != (l = null == (n = e.config.description) ? true : n.toLowerCase()) ? l : "";
+    return r.includes(i) || s.includes(i)
+  }), [C, y]), T = Chunk473749.useCallback((e, n) => {
+    if (null == n || !e.type.startsWith("text/")) return (0, p.Eo)(b);
+    let [a, l] = n.split(",");
+    if (!a.includes("text/plain")) return (0, p.Eo)(b);
+    let i = JSON.parse(atob(l));
+    i.skuId = (0, s.Z)(), t(i), (0, p.XA)("Profile Effect (maybe??) imported!")
+  }, [exports]), N = Chunk473749.useCallback(e => {
+    var t;
+    if ((null == (t = e.currentTarget) ? true : t.files) == null) return void(0, p.Eo)("Error uploading file. Try again!");
+    (0, p.Kr)(e.currentTarget.files, T, p.Eo)
+  }, [T]);
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk558270.root,
     children: [null == Chunk120356 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -122,7 +118,7 @@ function j() {
             children: "Import Shared Config"
           }), (0, Chunk54381.jsx)(Chunk53281.Z, {
             ref: _,
-            onChange: O,
+            onChange: N,
             multiple: false
           })]
         }), (0, Chunk54381.jsx)(Chunk481060.Button, {

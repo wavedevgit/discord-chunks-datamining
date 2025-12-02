@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 331197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,11 +25,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk127379 = require("./127379.js"),
   Chunk388032 = require("./388032.jsx");
 
-function j(e) {
+function E(e) {
   let {
     channel: t,
-    themeable: j,
-    whichPopoutIsOpen: E,
+    themeable: E,
+    whichPopoutIsOpen: j,
     setWhichPopoutIsOpen: S
   } = e, {
     parentAnalyticsLocation: P
@@ -46,11 +46,11 @@ function j(e) {
   } = (0, y.Z)(t), R = (0, l.e7)([C.Z], () => C.Z.isDeaf()), L = w || M || R, D = (0, m.sR)({
     isSoundboardButtonDisabled: L
   }), [k, U] = (0, h.cv)(D), {
-    analyticsLocations: F
+    analyticsLocations: V
   } = (0, u.ZP)(), {
-    isHovered: B,
-    setIsHovered: H,
-    onMouseEnter: V,
+    isHovered: F,
+    setIsHovered: B,
+    onMouseEnter: H,
     onMouseLeave: G
   } = (0, f.Z)(200, 300);
 
@@ -80,7 +80,7 @@ function j(e) {
           return e
         }({
           guildId: A,
-          sourceAnalyticsLocations: F
+          sourceAnalyticsLocations: V
         }, t), r = r = {
           onInteraction: (0, p.u)("SoundboardContextMenu", P)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -98,19 +98,19 @@ function j(e) {
   }
 
   function W() {
-    (0, d.v)(P, d.d.SOUNDBOARD), E === O.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != E ? (Z(), V()) : Z(), null == S || S(O.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), j === O.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), H()) : Z(), null == S || S(O.D.SOUNDBOARD))
   }
   let q = r.useRef(null);
   return (0, i.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: B && (E === O.D.SOUNDBOARD || null == E) || E === O.D.SOUNDBOARD,
+    shouldShow: F && (j === O.D.SOUNDBOARD || null == j) || j === O.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      H(false), null == S || S(true)
+      B(false), null == S || S(true)
     },
     renderPopout: e => {
       let {
@@ -118,7 +118,7 @@ function j(e) {
       } = e;
       return L ? null : (0, i.jsx)(v.Z, {
         children: (0, i.jsx)("div", {
-          onMouseEnter: V,
+          onMouseEnter: H,
           onMouseLeave: G,
           children: (0, i.jsx)(b.Z, {
             guildId: A,
@@ -136,20 +136,20 @@ function j(e) {
     children: () => (0, i.jsx)(_.d, {
       ref: q,
       isTrayButton: true,
-      themeable: j,
+      themeable: E,
       label: w ? x.intl.string(x.t["Ox4/zU"]) : M ? x.intl.string(x.t["+YBKYI"]) : R ? x.intl.string(x.t.X1lQli) : true,
       iconComponent: I,
       disabled: L,
       onContextMenu: z,
       onClick: W,
       onMouseEnter: () => {
-        V(), T()
+        H(), T()
       },
       onMouseLeave: () => {
-        null == E && (G(), N())
+        null == j && (G(), N())
       },
-      isActive: B || E === O.D.SOUNDBOARD,
-      color: B || E === O.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: F || j === O.D.SOUNDBOARD,
+      color: F || j === O.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

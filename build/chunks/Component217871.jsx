@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 217871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => E
 }), require("./388685.js"), require("./358797.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -117,28 +117,28 @@ let O = Chunk473749.memo(function(e) {
       })]
     })
   }),
-  j = Chunk473749.memo(function(e) {
+  E = Chunk473749.memo(function(e) {
     let {
       channelId: t
     } = e, n = (0, s.e7)([p.default], () => p.default.getId()), l = (0, s.e7)([h.Z], () => h.Z.isTyping(t, n), [t, n]), a = (0, s.e7)([g.Z], () => g.Z.isEnabled()), d = (0, s.e7)([b.ZP], () => b.ZP.isComboing(n, t), [t, n]), {
       ref: f,
       width: m = 0
-    } = (0, u.ZP)(), [y, v] = r.useState(false), j = (0, C.Z)(t), E = a && d && l;
+    } = (0, u.ZP)(), [y, v] = r.useState(false), E = (0, C.Z)(t), j = a && d && l;
     r.useEffect(() => {
-      E && v(true);
-      let e = setTimeout(() => v(E), 1e3);
+      j && v(true);
+      let e = setTimeout(() => v(j), 1e3);
       return () => clearTimeout(e)
-    }, [E]);
+    }, [j]);
     let S = (0, c.q_F)({
         opacity: +!!y,
         transform: y ? "translateY(0)" : "translateY(100%)",
         pointerEvents: "none",
         config: o.config.stiff
       }),
-      P = r.useMemo(() => null != j ? j : {
+      P = r.useMemo(() => null != E ? E : {
         value: 0,
         multiplier: 1
-      }, [j]),
+      }, [E]),
       I = r.useRef(P);
     r.useEffect(() => {
       (P.multiplier > 1 || P.value > 0) && (I.current = P)
@@ -147,9 +147,9 @@ let O = Chunk473749.memo(function(e) {
       multiplier: Z,
       value: T
     } = r.useMemo(() => ({
-      value: E ? P.value : I.current.value,
-      multiplier: E ? P.multiplier : I.current.multiplier
-    }), [E, P, I]);
+      value: j ? P.value : I.current.value,
+      multiplier: j ? P.multiplier : I.current.multiplier
+    }), [j, P, I]);
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(O, {
         channelId: t,

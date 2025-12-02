@@ -94,7 +94,7 @@ let W = Chunk473749.memo(function(e) {
     autoTrackExposure: false
   }), {
     onShareClick: es
-  } = (0, C.Z)(q.id), ec = (0, o.e7)([_.qc], () => _.qc.hasHotspot(_.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eu = (0, c.s9z)(e => (0, c.DEQ)(e, F.Qr)), ed = (0, o.e7)([I.Z], () => I.Z.hasLayers()), ep = (0, o.e7)([g.Z], () => g.Z.hasClips()), [eh, ef] = r.useState(null), em = (0, m.w9)() && (ei || ep), eg = q.isPrivate(), eb = (0, o.e7)([T.Z], () => eg || T.Z.can(U.Plq.ATTACH_FILES, q) && T.Z.can(U.Plq.SEND_MESSAGES, q)), ey = (0, d.Z)(er);
+  } = (0, C.Z)(q.id), ec = (0, o.e7)([_.qc], () => _.qc.hasHotspot(_.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eu = (0, c.s9z)(e => (0, c.DEQ)(e, V.Qr)), ed = (0, o.e7)([I.Z], () => I.Z.hasLayers()), ep = (0, o.e7)([g.Z], () => g.Z.hasClips()), [eh, ef] = r.useState(null), em = (0, m.w9)() && (ei || ep), eg = q.isPrivate(), eb = (0, o.e7)([T.Z], () => eg || T.Z.can(U.Plq.ATTACH_FILES, q) && T.Z.can(U.Plq.SEND_MESSAGES, q)), ey = (0, d.Z)(er);
   (null == ey ? true : ey.newClipIds.length) !== (null == er ? true : er.newClipIds.length) && (null != (t = null == er ? true : er.newClipIds.length) ? t : 0) > 0 && null == eh && ec && ea && !eu && !eo && !ed && ef("recentClips");
   let eC = (0, o.e7)([Z.Z], () => Z.Z.hasCurrentUserSentMessageSinceAppStart());
 
@@ -110,7 +110,7 @@ let W = Chunk473749.memo(function(e) {
         })
       }))
     }, {
-      modalKey: F.Qr
+      modalKey: V.Qr
     }), ef(null)
   }
   r.useEffect(() => {
@@ -127,16 +127,16 @@ let W = Chunk473749.memo(function(e) {
       A.S.unsubscribe(U.CkL.UPLOAD_FILE, e)
     }
   });
-  let e_ = (0, E.NE)(q),
-    eO = (0, E.Xu)(q),
+  let e_ = (0, j.NE)(q),
+    eO = (0, j.Xu)(q),
     ex = !S.dN.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver,
-    ej = (0, f.R)({
+    eE = (0, f.R)({
       channel: q,
       chatInputType: Q
     }),
-    eE = (0, x.UI)(null != q ? q : true),
+    ej = (0, x.UI)(null != q ? q : true),
     eS = (0, p.qB)(),
-    eP = (0, j.Us)({
+    eP = (0, E.Us)({
       location: "ChannelAttachButton"
     }),
     eI = (0, h.o)(),
@@ -150,18 +150,18 @@ let W = Chunk473749.memo(function(e) {
       channel: q,
       activities: en,
       newClipsCount: eZ,
-      canPostPolls: eE,
+      canPostPolls: ej,
       canLaunchActivities: eS,
       appContext: $,
       canSendScheduledMessages: eP,
       canSummarizeThreads: eI,
-      showAppLauncher: ej
+      showAppLauncher: eE
     });
   if (0 === eT.length) return null;
   let eN = (0, i.jsx)(c.svS, {
       size: "refresh_sm",
       color: "currentColor",
-      colorClass: V.attachButtonPlus
+      colorClass: H.attachButtonPlus
     }),
     eA = (0, i.jsx)(c.yRy, {
       targetElementRef: et,
@@ -172,12 +172,12 @@ let W = Chunk473749.memo(function(e) {
       positionKey: null != eh ? eh : "null",
       onRequestOpen: () => {
         eC && (0, v.Q3)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
-          dismissAction: B.L.TAKE_ACTION
+          dismissAction: F.L.TAKE_ACTION
         }), ef("attachMenu")
       },
       onRequestClose: () => {
         (0, c.$sL)() || (eC && (0, v.Q3)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-          dismissAction: B.L.TAKE_ACTION
+          dismissAction: F.L.TAKE_ACTION
         }), ef(null))
       },
       renderPopout: e => {
@@ -208,10 +208,10 @@ let W = Chunk473749.memo(function(e) {
       },
       children: e => (0, i.jsx)(L.Z, z(G({
         ref: et,
-        className: a()(V.attachButton, W),
-        childClassName: V.attachButtonInner,
+        className: a()(H.attachButton, W),
+        childClassName: H.attachButtonInner,
         isActive: false,
-        "aria-label": H.intl.string(H.t.d56gCa),
+        "aria-label": B.intl.string(B.t.d56gCa),
         onDoubleClick: eb ? () => {
           var e;
           return null == (e = ee.current) ? true : e.activateUploadDialogue()
@@ -223,7 +223,7 @@ let W = Chunk473749.memo(function(e) {
     });
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: V.uploadInput,
+      className: H.uploadInput,
       children: (0, i.jsx)(u.Z, {
         ref: ee,
         onChange: e => {
@@ -239,15 +239,15 @@ let W = Chunk473749.memo(function(e) {
         "aria-hidden": true
       })
     }), (0, i.jsx)("div", {
-      className: V.attachWrapper,
+      className: H.attachWrapper,
       children: (0, i.jsx)(R.Z, {
         channel: q,
         isOmniMenuOpen: "attachMenu" === eh,
         openOmniMenu: () => ef("attachMenu"),
         enabled: eS,
-        animationContainerClassName: V.buttonAnimation,
-        glowClassName: V.buttonAnimationGlow,
-        trinketsClassName: V.buttonAnimationTrinkets,
+        animationContainerClassName: H.buttonAnimation,
+        glowClassName: H.buttonAnimationGlow,
+        trinketsClassName: H.buttonAnimationTrinkets,
         children: eA
       })
     })]

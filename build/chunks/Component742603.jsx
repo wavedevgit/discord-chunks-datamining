@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 742603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => V
+  Z: () => H
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -42,7 +42,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk39219 = require("./39219.js"),
   Chunk430864 = require("./430864.js");
 
-function F(e) {
+function V(e) {
   let {
     focusedParticipant: t,
     channel: n
@@ -58,7 +58,7 @@ function F(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     user: t,
     channel: n,
@@ -80,7 +80,7 @@ function B(e) {
   })
 }
 
-function H(e) {
+function B(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: r,
@@ -101,7 +101,7 @@ function H(e) {
       variant: "text-md/normal",
       color: "none",
       children: (0, u.Z)(n.name)
-    }), a && (0, i.jsx)(F, {
+    }), a && (0, i.jsx)(V, {
       channel: l,
       focusedParticipant: r
     })]
@@ -112,12 +112,12 @@ function H(e) {
     t = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(C.ZP.Divider, {
         className: k.divider
-      }), (0, i.jsx)(B, {
+      }), (0, i.jsx)(F, {
         user: e,
         channel: l,
         stream: n,
         color: a ? "header-primary" : "none"
-      }), a && (0, i.jsx)(F, {
+      }), a && (0, i.jsx)(V, {
         channel: l,
         focusedParticipant: r
       })]
@@ -132,7 +132,7 @@ function H(e) {
   })
 }
 
-function V(e) {
+function H(e) {
   let {
     channel: t,
     guild: r,
@@ -150,7 +150,7 @@ function V(e) {
   let T = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     A = t.isGuildVoice() && u && null != T && T.length > 0,
     R = (0, Z.ZP)(t),
-    F = A ? (0, i.jsx)(o.u, {
+    V = A ? (0, i.jsx)(o.u, {
       asContainer: true,
       text: D.intl.string(D.t.Mgpxiw),
       delay: 500,
@@ -206,7 +206,7 @@ function V(e) {
         })]
       })
     }) : null,
-    B = (0, E.m$)({
+    F = (0, j.m$)({
       channelId: t.id
     });
   return (0, i.jsxs)("div", {
@@ -219,7 +219,7 @@ function V(e) {
         className: l()(e, k.headerBar),
         innerClassName: k.headerBarChildren,
         toolbarClassName: k.toolbar,
-        childrenBottom: F,
+        childrenBottom: V,
         toolbar: (0, i.jsx)(N.Z, {
           channel: t,
           appContext: c,
@@ -233,7 +233,7 @@ function V(e) {
             children: [null != O ? (0, i.jsx)(C.ZP.ChannelIcon, {
               icon: O,
               "aria-label": P
-            }) : null, y, B && (0, i.jsx)(o.u, {
+            }) : null, y, F && (0, i.jsx)(o.u, {
               text: D.intl.string(D.t.QyZ4Td),
               children: (0, i.jsx)(s.tQf, {
                 size: "xs",
@@ -246,13 +246,13 @@ function V(e) {
         }), (0, i.jsx)(_.TS, {
           channel: t,
           guild: r
-        }), (0, i.jsx)(H, {
+        }), (0, i.jsx)(B, {
           focusedApplication: S,
           focusedParticipant: b,
           channel: t
         })]
       })
-    }), (0, i.jsx)(j.Z, {
+    }), (0, i.jsx)(E.Z, {
       channelId: t.id
     })]
   })

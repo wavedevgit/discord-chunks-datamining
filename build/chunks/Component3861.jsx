@@ -29,8 +29,8 @@ let v = (0, Chunk112724.Z)(e => {
     layout: _,
     onSelectParticipant: O,
     onContextMenuParticipant: x,
-    onFullscreenParticipant: j,
-    channel: E,
+    onFullscreenParticipant: E,
+    channel: j,
     hasConnectPermission: S,
     className: P,
     inCall: I,
@@ -47,17 +47,17 @@ let v = (0, Chunk112724.Z)(e => {
     d.S.dispatch(b.CkL.REMEASURE_TARGET)
   }, [T, N, L.width, L.height]);
   let D = r.useMemo(() => n.filter(e => e.type !== y.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, v]),
-    k = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(E.id), [E.id]);
-  if ((null == R ? true : R.channelId) === E.id) return (0, i.jsx)(h.Z, {
+    k = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(j.id), [j.id]);
+  if ((null == R ? true : R.channelId) === j.id) return (0, i.jsx)(h.Z, {
     height: N
   });
-  if ((null == E ? true : E.isGuildVocalOrThread()) && !I) return (0, i.jsx)(p.Z, {
-    channel: E,
+  if ((null == j ? true : j.isGuildVocalOrThread()) && !I) return (0, i.jsx)(p.Z, {
+    channel: j,
     participants: t,
     hasConnectPermission: S
   });
   if (w === b.WtW.VOICE) return (0, i.jsx)(c.Z, {
-    guildId: E.guild_id,
+    guildId: j.guild_id,
     width: T,
     className: C.voiceCallWrapper,
     participants: t,
@@ -67,7 +67,7 @@ let v = (0, Chunk112724.Z)(e => {
     if (0 === n.length) {
       let e = t.length > 0 && !k;
       return (0, i.jsx)(g.Z, {
-        channelId: E.id,
+        channelId: j.id,
         allPoppedOut: e
       })
     }
@@ -76,12 +76,12 @@ let v = (0, Chunk112724.Z)(e => {
       justify: u.Z.Justify.CENTER,
       align: u.Z.Align.CENTER,
       children: (0, i.jsx)(f.Z, {
-        channel: E,
+        channel: j,
         className: C.videoGrid,
         participants: D,
         totalNumberOfParticipants: t.length,
         onClick: O,
-        onDoubleClick: j,
+        onDoubleClick: E,
         onContextMenu: x,
         inCall: I,
         popoutType: M
@@ -89,7 +89,7 @@ let v = (0, Chunk112724.Z)(e => {
     })
   }
   return (0, i.jsx)(m.Z, {
-    onFullscreenParticipant: j,
+    onFullscreenParticipant: E,
     onContextMenuParticipant: x,
     onSelectParticipant: O,
     selectedParticipant: a,
@@ -102,7 +102,7 @@ let v = (0, Chunk112724.Z)(e => {
     width: T,
     layout: _,
     inCall: I,
-    channel: E,
+    channel: j,
     showParticipants: Z
   })
 })

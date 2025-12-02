@@ -29,7 +29,7 @@ function O(e) {
     channel: n,
     children: O,
     user: x
-  } = e, j = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), E = null != (t = (0, d.ZP)(n)) ? t : "", {
+  } = e, E = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), j = null != (t = (0, d.ZP)(n)) ? t : "", {
     avatarDecorationSrc: S,
     eventHandlers: P,
     isAnimating: I
@@ -47,7 +47,7 @@ function O(e) {
     onMouseEnter: N,
     onMouseLeave: A,
     children: [(() => {
-      let e = !j && I;
+      let e = !E && I;
       return n.isMultiUserDM() ? (0, i.jsx)(m.v, {
         channel: n,
         editable: true,
@@ -56,21 +56,21 @@ function O(e) {
           channel: n,
           size: o.EFr.SIZE_80,
           animated: e,
-          "aria-label": E
+          "aria-label": j
         })
       }) : (0, i.jsx)(o.qEK, {
-        "aria-label": E,
+        "aria-label": j,
         size: o.EFr.SIZE_80,
         src: (0, u.x)(n, 80, e),
         avatarDecoration: S
       })
     })(), (0, i.jsx)(C.Ot, {
       children: w ? (0, i.jsx)(h.Z, {
-        userName: E,
+        userName: j,
         displayNameStyles: null == x ? true : x.displayNameStyles,
         effectDisplayType: Z ? p.F.ANIMATED : p.F.STATIC,
         loop: true
-      }) : E
+      }) : j
     }), (0, i.jsx)(C.jz, {
       children: O
     }), n.isMultiUserDM() && (0, i.jsxs)(a.hE2, {

@@ -55,38 +55,38 @@ function x(e, t) {
   }), e
 }
 
-function j(e) {
+function E(e) {
   var t, l, p;
   let {
     userId: y,
     channel: C
   } = e, v = r.useRef(null), {
-    analyticsLocations: j
-  } = (0, d.ZP)(u.Z.USERNAME), E = (0, o.e7)([g.default], () => g.default.getUser(y)), S = (0, o.e7)([m.ZP], () => null != y ? m.ZP.getMember(C.guild_id, y) : null), P = (0, h.X7)(C.guild_id, null != y ? y : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
+    analyticsLocations: E
+  } = (0, d.ZP)(u.Z.USERNAME), j = (0, o.e7)([g.default], () => g.default.getUser(y)), S = (0, o.e7)([m.ZP], () => null != y ? m.ZP.getMember(C.guild_id, y) : null), P = (0, h.X7)(C.guild_id, null != y ? y : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
 
   function I(e) {
-    if (null == E) return null;
+    if (null == j) return null;
     (0, c.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("70675"), n.e("85994")]).then(n.bind(n, 654663));
       return t => (0, i.jsx)(e, x(O({}, t), {
-        user: E,
+        user: j,
         guildId: C.guild_id,
         channel: C
       }))
     })
   }
-  let Z = null != (p = null != (l = null == S ? true : S.nick) ? l : b.ZP.getName(E)) ? p : "???",
+  let Z = null != (p = null != (l = null == S ? true : S.nick) ? l : b.ZP.getName(j)) ? p : "???",
     T = null == S ? true : S.colorString;
-  return null == E ? (0, i.jsx)("span", {
+  return null == j ? (0, i.jsx)("span", {
     className: a()(_.threadCreatorName, _.unknownCreatorName),
     children: Z
   }) : (0, i.jsx)(d.Gt, {
-    value: j,
+    value: E,
     children: (0, i.jsx)(f.Z, {
       targetElementRef: v,
-      user: E,
+      user: j,
       guildId: C.guild_id,
       channelId: C.id,
       roleId: null == S ? true : S.colorRoleId,
@@ -106,7 +106,7 @@ function j(e) {
   })
 }
 
-function E(e) {
+function j(e) {
   let {
     channel: t
   } = e, {
@@ -123,7 +123,7 @@ function E(e) {
       children: (0, i.jsx)("div", {
         className: _.subtitle,
         children: v.intl.format(v.t.imPXd5, {
-          usernameHook: (e, n) => (0, i.jsx)(j, {
+          usernameHook: (e, n) => (0, i.jsx)(E, {
             userId: t.ownerId,
             channel: t
           }, n)
@@ -151,7 +151,7 @@ function S(e) {
       })
     }), (0, i.jsx)(y.Ot, {
       children: n.name
-    }), (0, i.jsx)(E, {
+    }), (0, i.jsx)(j, {
       channel: n
     })]
   })

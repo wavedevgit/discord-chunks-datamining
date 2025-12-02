@@ -37,7 +37,7 @@ function O(e) {
       userIsInCall: null != e,
       isUserRinging: null != e && e.type === C.fO.USER && e.ringing
     }
-  }), O = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), j = null != O ? (0, g.EB)(O, 32, true) : null, E = !s || u && !m;
+  }), O = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), E = null != O ? (0, g.EB)(O, 32, true) : null, j = !s || u && !m;
   return ((0, d.Z)({
     type: a.ImpressionTypes.PAGE,
     name: a.ImpressionNames.RING_TO_GUILD_VC_BANNER_SHOWN,
@@ -46,8 +46,8 @@ function O(e) {
       voice_guild_id: null == n ? true : n.guild_id
     }
   }, {
-    disableTrack: E
-  }, [t.id]), E) ? null : (0, i.jsxs)("div", {
+    disableTrack: j
+  }, [t.id]), j) ? null : (0, i.jsxs)("div", {
     className: l()(_.themed, _.chatHeaderBar),
     children: [(0, i.jsxs)("div", {
       className: _.chatHeaderBarInfo,
@@ -56,7 +56,7 @@ function O(e) {
         mask: f.QS.SQUIRCLE,
         width: 24,
         height: 24,
-        children: null == j ? (0, i.jsx)("div", {
+        children: null == E ? (0, i.jsx)("div", {
           className: l()(_.guildIcon, _.guildIconWithoutImage),
           children: (0, i.jsx)("div", {
             className: _.guildAcronym,
@@ -64,7 +64,7 @@ function O(e) {
           })
         }) : (0, i.jsx)("img", {
           alt: null == O ? true : O.name,
-          src: j,
+          src: E,
           className: _.guildIcon
         })
       }), (0, i.jsx)(c.Text, {

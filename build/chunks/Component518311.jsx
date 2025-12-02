@@ -114,9 +114,9 @@ let eo = (0, Chunk313201.hQ)(),
     let {
       channel: n,
       onClose: i
-    } = e, l = null != (t = (0, S.ZP)(n)) ? t : "", a = (0, u.e7)([F.ZP], () => {
+    } = e, l = null != (t = (0, S.ZP)(n)) ? t : "", a = (0, u.e7)([V.ZP], () => {
       var e;
-      return null != (e = F.ZP.lastMessageId(n.id)) ? e : n.id
+      return null != (e = V.ZP.lastMessageId(n.id)) ? e : n.id
     });
     return (0, r.jsx)(p.P3F, {
       onClick: () => {
@@ -125,7 +125,7 @@ let eo = (0, Chunk313201.hQ)(),
       children: (0, r.jsxs)("div", {
         className: en.confirmChannelItemContainer,
         children: [(0, r.jsx)(p.qEK, {
-          src: (0, E.x)(n),
+          src: (0, j.x)(n),
           size: p.EFr.SIZE_24,
           "aria-label": l
         }), (0, r.jsx)("span", {
@@ -337,7 +337,7 @@ class eu extends(i = Chunk473749.PureComponent) {
     if (!exports || this.isNotFriends() || this.isPartyFull()) return null;
     let i = [];
     return require.forEach(e => {
-      let t = V.default.getUser(e);
+      let t = H.default.getUser(e);
       null != t && i.push({
         id: e,
         label: Y.ZP.getName(t)
@@ -836,9 +836,9 @@ function ed(e) {
     onChange: o
   } = e, {
     analyticsLocations: s
-  } = (0, j.ZP)(O.Z.NEW_GROUP_DM_INVITE_MODAL);
+  } = (0, E.ZP)(O.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, I.a)(O.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, S.pT)(Array.from(t), V.default, B.Z);
+  let c = (0, S.pT)(Array.from(t), H.default, F.Z);
   return (0, r.jsxs)("div", {
     className: en.customizationContainer,
     children: [(0, r.jsx)(Z.B, {
@@ -869,12 +869,12 @@ function ep(e) {
   var {
     channel: t
   } = e, n = ea(e, ["channel"]);
-  let i = (0, u.cj)([k.Z, D.Z, H.Z], () => {
+  let i = (0, u.cj)([k.Z, D.Z, B.Z], () => {
     let e;
     return null != t && null != (e = D.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, k.Z.getState()), {
       invite: e,
-      hideDiscriminator: H.Z.hidePersonalInformation,
-      hideInstantInvites: H.Z.hideInstantInvites
+      hideDiscriminator: B.Z.hidePersonalInformation,
+      hideInstantInvites: B.Z.hideInstantInvites
     })
   });
   return (0, r.jsx)(eu, er({
@@ -931,14 +931,14 @@ function ef(e) {
     toggleVisible: _,
     popoutOpen: O,
     setPopoutOpen: x,
-    inBornThisNamedExperiment: j
+    inBornThisNamedExperiment: E
   } = eh({
     initialPopoutOpen: null != i && i.isGroupDM() && 0 === i.recipients.length,
     channel: i,
     location: g,
     subscribeToGlobalHotkey: m
-  }), E = (0, u.e7)([V.default], () => V.default.getUser(null == i ? true : i.getRecipientId()));
-  return null != (t = null == E ? true : E.bot) && t || null != (n = null == E ? true : E.isProvisional) && n ? null : j ? (0, r.jsx)(J.ZP.Icon, {
+  }), j = (0, u.e7)([H.default], () => H.default.getUser(null == i ? true : i.getRecipientId()));
+  return null != (t = null == j ? true : j.bot) && t || null != (n = null == j ? true : j.isProvisional) && n ? null : E ? (0, r.jsx)(J.ZP.Icon, {
     ref: b,
     onClick: C,
     icon: y,

@@ -32,9 +32,9 @@ function x(e) {
   r.useEffect(() => {
     (0, u.FQ)("847199849233514549", true)
   }, []);
-  let j = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === C.yb.SENT && !(0, y.Z)(e))),
-    E = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
-    S = null != (t = b.ZP.useName(E)) ? t : v.intl.string(v.t.y1Wu2f),
+  let E = (0, o.e7)([f.Z, h.default], () => !!a()(f.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== h.default.getId() && e.state === C.yb.SENT && !(0, y.Z)(e))),
+    j = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
+    S = null != (t = b.ZP.useName(j)) ? t : v.intl.string(v.t.y1Wu2f),
     P = (0, o.e7)([d.Z], () => d.Z.getStickerById(O)),
     I = r.useCallback(async () => {
       if (null == l || "" === l) try {
@@ -57,7 +57,7 @@ function x(e) {
       variant: "text-sm/normal",
       children: l
     }) : null;
-  return j ? (0, i.jsxs)("div", {
+  return E ? (0, i.jsxs)("div", {
     className: _.containerCompact,
     children: [(0, i.jsxs)(s.P3F, {
       className: null != l && "" !== l ? _.compactButtonDisabled : _.compactButton,

@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 621586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,13 +25,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk842350 = require("./842350.js");
 let x = "vc-gifting-".concat((0, Chunk772848.Z)());
 
-function j(e) {
+function E(e) {
   var t;
   let {
     isHovered: n,
     closePopout: l,
-    onMouseEnter: j,
-    onMouseLeave: E,
+    onMouseEnter: E,
+    onMouseLeave: j,
     channel: S
   } = e;
   r.useEffect(() => {
@@ -65,8 +65,8 @@ function j(e) {
       modal: false,
       children: (0, i.jsxs)("div", {
         className: O.container,
-        onMouseEnter: j,
-        onMouseLeave: E,
+        onMouseEnter: E,
+        onMouseLeave: j,
         children: [(0, i.jsx)(a.X6q, {
           className: O.title,
           variant: "text-lg/bold",

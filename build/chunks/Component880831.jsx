@@ -42,7 +42,7 @@ function T(e) {
   } = (0, c.cj)([O.Z], () => ({
     isBlocked: O.Z.isBlockedForMessage(n),
     isIgnored: O.Z.isIgnoredForMessage(n)
-  }), [n]), s = (0, b.Uj)(n), d = r.useContext(f.Z), [_, j] = r.useState(false), E = (0, m.p)(), S = r.useCallback(e => {
+  }), [n]), s = (0, b.Uj)(n), d = r.useContext(f.Z), [_, E] = r.useState(false), j = (0, m.p)(), S = r.useCallback(e => {
     "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, true), h.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.id,
@@ -50,7 +50,7 @@ function T(e) {
     }))
   }, [n.channel_id, n.id]), Z = null != n.content && "" !== n.content ? (0, g.ZP)(n, {
     isInteracting: _,
-    shouldFilterKeywords: E
+    shouldFilterKeywords: j
   }).content : null, {
     contentPlaceholder: T,
     renderedContent: N,
@@ -69,10 +69,10 @@ function T(e) {
   return (0, i.jsxs)(u.P3F, {
     className: I.toast,
     onMouseEnter: () => {
-      j(true)
+      E(true)
     },
     onMouseLeave: () => {
-      j(false)
+      E(false)
     },
     onClick: S,
     children: [(0, i.jsxs)("div", {
@@ -134,7 +134,7 @@ function N(e) {
     let g = null != (t = h.current) ? t : o;
     return {
       toastsHidden: u,
-      toastMessages: (0, c.Wu)([_.Z], () => g.map(e => _.Z.getMessage(n, e)), [n, g]).filter(E.lm)
+      toastMessages: (0, c.Wu)([_.Z], () => g.map(e => _.Z.getMessage(n, e)), [n, g]).filter(j.lm)
     }
   }({
     channelId: t,

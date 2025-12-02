@@ -1,12 +1,11 @@
 /** Chunk was on 1272 **/
 /** chunk id: 276792, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => O
+  N: () => E
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk657707 = require("./657707.js"),
-  Chunk704215 = require("./704215.js"),
   Chunk740111 = require("./740111.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +19,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk605548 = require("./605548.js");
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +38,7 @@ function b(e) {
   return e
 }
 
-function E(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,50 +51,51 @@ function E(e, t) {
   }), e
 }
 
-function O(e) {
-  var t, n, O, y;
-  let v, {
-      componentId: I,
+function E(e) {
+  var t, n, E, O;
+  let y, {
+      componentId: v,
+      promotionId: I,
       content: C,
       renderModalProps: S,
       analyticsLocations: T,
       analyticsLocation: N,
       isLightTheme: j
     } = e,
-    P = "AnnouncementModalVariant1_".concat(l.z[Number(C.dismissKey)]),
+    P = "AnnouncementModalVariant1_".concat(v),
     {
       onClose: x
     } = S,
-    A = null != (y = null == (t = C.button) ? true : t.copy) ? y : m.intl.string(m.t.YScQSF),
-    Z = (null == (n = C.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
-  switch (null == (O = C.button) ? true : O.buttonAction) {
-    case a.Wc.OPEN_MARKETING_PAGE:
-      v = () => {
-        (0, u.uL)(g.Z5c.APPLICATION_STORE), x()
+    A = null != (O = null == (t = C.button) ? true : t.copy) ? O : g.intl.string(g.t.YScQSF),
+    Z = (null == (n = C.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
+  switch (null == (E = C.button) ? true : E.buttonAction) {
+    case l.Wc.OPEN_MARKETING_PAGE:
+      y = () => {
+        (0, c.uL)(h.Z5c.APPLICATION_STORE), x()
       };
       break;
-    case a.Wc.OPEN_TIER_1_PAYMENT_MODAL:
-      v = () => (0, c.Z)({
-        subscriptionTier: h.Si.TIER_1,
+    case l.Wc.OPEN_TIER_1_PAYMENT_MODAL:
+      y = () => (0, o.Z)({
+        subscriptionTier: f.Si.TIER_1,
         analyticsLocations: T,
-        analyticsObject: E(b({}, N), {
-          object: g.qAy.BUTTON_CTA,
-          objectType: g.AnalyticsObjectTypes.TIER_1
+        analyticsObject: b(_({}, N), {
+          object: h.qAy.BUTTON_CTA,
+          objectType: h.AnalyticsObjectTypes.TIER_1
         }),
         onClose: e => {
           e && x()
         }
       });
       break;
-    case a.Wc.OPEN_TIER_2_PAYMENT_MODAL:
-    case a.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
+    case l.Wc.OPEN_TIER_2_PAYMENT_MODAL:
+    case l.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
     default:
-      v = () => (0, c.Z)({
-        subscriptionTier: h.Si.TIER_2,
+      y = () => (0, o.Z)({
+        subscriptionTier: f.Si.TIER_2,
         analyticsLocations: T,
-        analyticsObject: E(b({}, N), {
-          object: g.qAy.BUTTON_CTA,
-          objectType: g.AnalyticsObjectTypes.TIER_2
+        analyticsObject: b(_({}, N), {
+          object: h.qAy.BUTTON_CTA,
+          objectType: h.AnalyticsObjectTypes.TIER_2
         }),
         onClose: e => {
           e && x()
@@ -103,10 +103,10 @@ function O(e) {
       })
   }
   let w = "" !== C.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
-      children: ["\xa0", (0, r.jsx)(o.Anchor, {
-        className: _.termsApplyAnchor,
-        href: p.Z.getArticleURL(C.helpArticleId),
-        children: m.intl.string(m.t["sBp+u0"])
+      children: ["\xa0", (0, r.jsx)(s.Anchor, {
+        className: m.termsApplyAnchor,
+        href: d.Z.getArticleURL(C.helpArticleId),
+        children: g.intl.string(g.t["sBp+u0"])
       })]
     }) : true,
     L = {
@@ -121,12 +121,13 @@ function O(e) {
     type: "image",
     src: j ? C.heroArtImageLinkLightTheme : C.heroArtImageLinkDarkTheme
   });
-  let R = "" !== C.modalTopPill ? () => (0, r.jsx)(f.mn, {
+  let R = "" !== C.modalTopPill ? () => (0, r.jsx)(p.mn, {
     text: C.modalTopPill,
-    className: _.modalTopPill
+    className: m.modalTopPill
   }) : true;
   return {
-    componentId: I,
+    componentId: v,
+    promotionId: I,
     renderModalProps: S,
     header: C.header,
     modalTopExtra: R,
@@ -143,21 +144,20 @@ function O(e) {
     changeLogId: P,
     button: () => {
       let e = Date.now();
-      return (0, r.jsx)(s.zxk, {
+      return (0, r.jsx)(a.zxk, {
         variant: "expressive",
         size: "md",
         onClick: () => {
-          d.default.track(g.rMx.CHANGE_LOG_CTA_CLICKED, {
+          u.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
             change_log_id: P,
             cta_type: Z,
             seconds_open: Math.round((Date.now() - e) / 1e3),
             target: P
-          }), v()
+          }), y()
         },
         text: A,
         icon: i.SrA
       })
-    },
-    modalDismissibleContent: "" !== C.dismissKey ? Number(C.dismissKey) : true
+    }
   }
 }

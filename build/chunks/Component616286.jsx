@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 616286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => j
+  T: () => E
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -60,7 +60,7 @@ function x(e) {
   })
 }
 
-function j(e) {
+function E(e) {
   let t;
   var {
     channelId: n,
@@ -70,7 +70,7 @@ function j(e) {
     inPopout: f,
     showRequestToSpeakSidebar: m,
     toggleRequestToSpeakSidebar: y
-  } = e, j = function(e, t) {
+  } = e, E = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -86,10 +86,10 @@ function j(e) {
     return r
   }(e, ["channelId", "className", "showingClassName", "onClick", "inPopout", "showRequestToSpeakSidebar", "toggleRequestToSpeakSidebar"]);
   let {
-    parentAnalyticsLocation: E
+    parentAnalyticsLocation: j
   } = (0, u.ZP)(), {
     disabled: S
-  } = j, P = r.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+  } = E, P = r.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
     unreadCount: T,
     mentionCount: N
@@ -113,8 +113,8 @@ function j(e) {
       mentionCount: n
     }
   }(n), A = r.useCallback(() => {
-    (0, p.v)(E, p.d.CHAT, !I), null == h || h(), !I && m && (null == y || y()), c.Z.updateChatOpen(n, !I)
-  }, [n, I, h, m, y, E]), w = r.useCallback(e => {
+    (0, p.v)(j, p.d.CHAT, !I), null == h || h(), !I && m && (null == y || y()), c.Z.updateChatOpen(n, !I)
+  }, [n, I, h, m, y, j]), w = r.useCallback(e => {
     let {
       className: t
     } = e;
@@ -175,5 +175,5 @@ function j(e) {
       [o]: Z
     }),
     forceTooltipOpen: R
-  }, j))
+  }, E))
 }

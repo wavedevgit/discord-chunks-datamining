@@ -30,8 +30,8 @@ function m(e) {
     inlineUsername: _ = true,
     onClick: O,
     onMouseEnter: x,
-    "aria-setsize": j,
-    "aria-posinset": E
+    "aria-setsize": E,
+    "aria-posinset": j
   } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(r.id)), P = (0, a.JA)(String(r.id));
   return (0, i.jsx)(s.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -65,8 +65,8 @@ function m(e) {
     role: "option",
     "aria-selected": C,
     "aria-disabled": v,
-    "aria-setsize": j,
-    "aria-posinset": E,
+    "aria-setsize": E,
+    "aria-posinset": j,
     children: (0, i.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
       className: l()(f.friend, {

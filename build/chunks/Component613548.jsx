@@ -117,7 +117,7 @@ function R(e) {
       let {
         isShown: a
       } = t;
-      return (0, r.createElement)(E.Z, (n = function(e) {
+      return (0, r.createElement)(j.Z, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -153,12 +153,12 @@ function R(e) {
     }
   }, "call-members-popout")), D && !k && U.push((0, i.jsx)(C.Z, {
     className: w.button
-  }, "for-later")), L && U.push((0, i.jsx)(E.Z, {
+  }, "for-later")), L && U.push((0, i.jsx)(j.Z, {
     className: a()(w.button, {
       [w.lastButton]: n
     }),
     onClick: () => p.Z.toggleParticipantsList(t.id, !P)
-  }, "participants-list-button")), A && U.push((0, i.jsx)(j.T, {
+  }, "participants-list-button")), A && U.push((0, i.jsx)(E.T, {
     channelId: t.id,
     className: a()(w.button, {
       [w.lastButton]: P

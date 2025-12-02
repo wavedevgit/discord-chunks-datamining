@@ -1,7 +1,7 @@
 /** Chunk was on 837 **/
 /** chunk id: 596768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => O
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -54,7 +54,7 @@ let T = [{
       return t.toLocaleString()
     }
   }],
-  O = [{
+  N = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -134,18 +134,18 @@ let T = [{
     }
   }];
 
-function N() {
+function O() {
   let [e, t] = Chunk473749.useState(""), n = Chunk473749.useRef(null), i = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk473749.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk473749.useState(true), x = Chunk658722.find(e => e.key === c), {
     TabBar: f,
     renderSelectedTab: v
   } = (0, Chunk621060.ZP)({
-    tabs: O
-  }, []), N = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk473749.useCallback(e => {
+    tabs: N
+  }, []), O = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk473749.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
-  }, []), I = N ? "Stop Tracking" : "Start Tracking";
+  }, []), I = O ? "Stop Tracking" : "Start Tracking";
   return (0, Chunk54381.jsxs)("div", {
     ref: require,
     className: r()(Chunk451429.panel, Chunk599832.panel),
@@ -155,10 +155,10 @@ function N() {
         text: I,
         children: (0, Chunk54381.jsx)(Chunk481060.hU, {
           size: "sm",
-          variant: N ? "active" : "primary",
-          icon: N ? Chunk481060.fpf : Chunk481060.o1U,
+          variant: O ? "active" : "primary",
+          icon: O ? Chunk481060.fpf : Chunk481060.o1U,
           "aria-label": I,
-          onClick: () => P(!N)
+          onClick: () => P(!O)
         })
       }), (0, Chunk54381.jsx)(Chunk481060.E1j, {
         size: "sm",

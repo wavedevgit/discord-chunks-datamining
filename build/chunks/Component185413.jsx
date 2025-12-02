@@ -67,13 +67,13 @@ function x(e) {
     h.default.track(y.rMx.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
-  }, []), null == l || null == o) ? null : (0, i.jsx)(j, _({
+  }, []), null == l || null == o) ? null : (0, i.jsx)(E, _({
     guild: o,
     channel: l
   }, n))
 }
 
-function j(e) {
+function E(e) {
   var t, n, {
       guild: a,
       channel: d,
@@ -82,11 +82,11 @@ function j(e) {
       inSettings: y
     } = e,
     x = O(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
-  let [j, E] = r.useState(""), [S, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
+  let [E, j] = r.useState(""), [S, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
     roles: w,
     members: M,
     getRichTag: R
-  } = (0, g.Q)(a, d, d.accessPermissions, j), L = m.Z.useSections({
+  } = (0, g.Q)(a, d, d.accessPermissions, E), L = m.Z.useSections({
     roles: w,
     members: M
   }), D = h && 0 === Object.keys(S).length;
@@ -112,8 +112,8 @@ function j(e) {
   let U = (0, u.zi)(d.type) ? o.W4G : o.gjC;
   return (0, i.jsx)(m.Z.Provider, {
     listRef: A,
-    query: j,
-    setQuery: E,
+    query: E,
+    setQuery: j,
     pendingAdditions: S,
     setPendingAdditions: P,
     roles: w,

@@ -64,13 +64,13 @@ function _(e) {
     isBlocked: x
   } = (0, a.cj)([p.Z], () => ({
     isBlocked: p.Z.isBlocked(O)
-  }), [O]), j = r.useCallback(() => {
+  }), [O]), E = r.useCallback(() => {
     (0, h.T)(t, [_])
-  }, [t, _]), E = (0, b.C2)(), S = r.useCallback(e => () => {
+  }, [t, _]), j = (0, b.C2)(), S = r.useCallback(e => () => {
     s.Z.blockUser(O, {
       location: b.zr
     }).then(() => {
-      j()
+      E()
     }), (0, m.qc)({
       channelId: t,
       warningId: _,
@@ -78,7 +78,7 @@ function _(e) {
       warningType: f.pj.STRANGER_DANGER,
       cta: e
     })
-  }, [j, t, _, O]);
+  }, [E, t, _, O]);
   r.useEffect(() => {
     (0, m.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
@@ -106,7 +106,7 @@ function _(e) {
             warningId: _,
             senderId: O,
             description: C.intl.string(C.t.DJMZX6),
-            safetyTipRows: E.map((e, t) => (0, i.jsx)(u.q, {
+            safetyTipRows: j.map((e, t) => (0, i.jsx)(u.q, {
               index: t,
               listType: "numbered",
               title: e
@@ -186,7 +186,7 @@ function _(e) {
     warningType: f.pj.STRANGER_DANGER,
     header: C.intl.string(C.t.iOkDpM),
     description: C.intl.string(C.t.ISUbcM),
-    onDismiss: j,
+    onDismiss: E,
     buttons: [{
       text: C.intl.string(C.t["Qk/c48"]),
       variant: "primary",

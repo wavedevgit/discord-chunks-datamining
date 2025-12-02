@@ -52,7 +52,7 @@ let I = function(e, t, n) {
         i && !M.isSystemDM() && (0, x.Z)(w, R) && (n.preventDefault(), (0, S.Hd)(M, w));
         break;
       case "p":
-        (i || A) && (0, j.Z)(w, M) && (n.preventDefault(), (0, S.rY)(M, w, n));
+        (i || A) && (0, E.Z)(w, M) && (n.preventDefault(), (0, S.rY)(M, w, n));
         break;
       case "+":
         (i || A) && function(e) {
@@ -60,7 +60,7 @@ let I = function(e, t, n) {
             n = d.nc.getSetting(),
             {
               disableReactionCreates: i
-            } = (0, E.Z)({
+            } = (0, j.Z)({
               channel: e,
               canChat: t,
               renderReactions: n,

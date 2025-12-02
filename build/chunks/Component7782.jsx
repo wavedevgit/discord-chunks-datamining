@@ -37,7 +37,7 @@ let T = e => {
     } = e, l = (0, s.e7)([C.Z], () => C.Z.getMutualGuilds(t), [t]), a = r.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
       let {
         guild: n
-      } = e, r = null != n ? j.ZP.getGuildIconURL({
+      } = e, r = null != n ? E.ZP.getGuildIconURL({
         id: n.id,
         icon: n.icon,
         size: 24
@@ -236,7 +236,7 @@ let T = e => {
         relationshipType: d,
         userId: t,
         showingBanner: r
-      }), !r && (0, i.jsx)(E.Z, {
+      }), !r && (0, i.jsx)(j.Z, {
         otherUserId: t,
         channel: n,
         navigateAwayOnReportSuccess: h

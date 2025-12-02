@@ -28,7 +28,7 @@ function v(e) {
     senderId: _
   } = e, O = (0, b.E4)(), x = r.useCallback(() => {
     (0, p.T)(t, [v])
-  }, [t, v]), j = e => {
+  }, [t, v]), E = e => {
     o.Z.updateChannelOverrideSettings(null, t, {
       muted: true
     }, g.ZB.Muted), c.Z.showMuteSuccessToast(_, t), (0, f.qc)({
@@ -87,7 +87,7 @@ function v(e) {
                 description: C.intl.string(C.t.w2ve0t),
                 buttonText: C.intl.string(C.t.ftIK2A),
                 onButtonPress: () => {
-                  j(f.NM.USER_MODAL_MUTE), l()
+                  E(f.NM.USER_MODAL_MUTE), l()
                 }
               }, "likely-ato-mute")],
               learnMore: (0, i.jsx)(a.P3F, {
@@ -118,7 +118,7 @@ function v(e) {
       }
     }, {
       text: C.intl.string(C.t.ftIK2A),
-      onClick: () => j(f.NM.USER_BANNER_MUTE)
+      onClick: () => E(f.NM.USER_BANNER_MUTE)
     }]
   })
 }

@@ -1,12 +1,13 @@
 /** Chunk was on 1272 **/
 /** chunk id: 318199, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => m,
-  r: () => g
-}), require("./781311.js");
+  default: () => _,
+  r: () => m
+});
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk581282 = require("./581282.js"),
+  Chunk704215 = require("./704215.js"),
   Chunk8853 = require("./8853.js"),
   Chunk481060 = require("./481060.js"),
   Chunk2052 = require("./2052.js"),
@@ -18,34 +19,43 @@ var Chunk581282 = require("./581282.js"),
   Chunk276792 = require("./276792.jsx"),
   Chunk290347 = require("./290347.jsx");
 
-function g(e) {
-  let {
-    content: t,
-    isPreview: n
-  } = e, r = l.t.fromBinary((0, i.c)(t));
-  return "announcementModalVariant1" !== r.properties.oneofKind || !n && (0 === r.properties.announcementModalVariant1.dismissKey.trim().length || (0, d.zu)(Number(r.properties.announcementModalVariant1.dismissKey))) ? null : (n && (r.properties.announcementModalVariant1.dismissKey = ""), r)
-}
-
 function m(e) {
   let {
+    promotionId: t,
+    content: n,
+    isPreview: r
+  } = e, s = a.t.fromBinary((0, i.c)(n));
+  if ("announcementModalVariant1" !== s.properties.oneofKind) return null;
+  {
+    let {
+      isDismissed: e
+    } = (0, p.Ob)(l.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, t);
+    return !r && e ? null : (r && (s.properties.announcementModalVariant1.dismissKey = ""), s)
+  }
+}
+
+function _(e) {
+  let {
     componentId: t,
-    renderModalProps: n,
-    properties: i
+    promotionId: n,
+    renderModalProps: i,
+    properties: l
   } = e, {
-    location: l
-  } = (0, s.O)(), {
-    analyticsLocations: d
-  } = (0, u.ZP)(c.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), g = (0, o.ZP)(), m = (0, a.apv)(g);
-  if ("announcementModalVariant1" === i.properties.oneofKind) {
-    let e = (0, f.N)({
+    location: a
+  } = (0, o.O)(), {
+    analyticsLocations: p
+  } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), m = (0, c.ZP)(), _ = (0, s.apv)(m);
+  if ("announcementModalVariant1" === l.properties.oneofKind) {
+    let e = (0, h.N)({
       componentId: t,
-      content: i.properties.announcementModalVariant1,
-      renderModalProps: n,
-      analyticsLocations: d,
-      analyticsLocation: l,
-      isLightTheme: m
+      promotionId: n,
+      content: l.properties.announcementModalVariant1,
+      renderModalProps: i,
+      analyticsLocations: p,
+      analyticsLocation: a,
+      isLightTheme: _
     });
-    return (0, r.jsx)(h.Z, function(e) {
+    return (0, r.jsx)(g.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -64,5 +74,5 @@ function m(e) {
       return e
     }({}, e))
   }
-  return p.Z.captureMessage("Property type ".concat(i.properties.oneofKind, " is not supported to render ServerDriveAnnouncementModal")), null
+  return f.Z.captureMessage("Property type ".concat(l.properties.oneofKind, " is not supported to render ServerDriveAnnouncementModal")), null
 }
