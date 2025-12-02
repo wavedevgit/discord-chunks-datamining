@@ -7,12 +7,13 @@ require.d(exports, {
 });
 var Chunk570140 = require("./570140.js");
 
-function i(e, t, n) {
+function i(e, t, n, i) {
   r.Z.dispatch({
     type: "APP_LAUNCHER_SHOW",
     entrypoint: e,
     activeViewType: t,
-    initialState: n
+    initialState: n,
+    activeChannelId: i
   })
 }
 

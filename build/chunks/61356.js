@@ -9,10 +9,11 @@ var Chunk399606 = require("./399606.js"),
 
 function a(e) {
   let {
-    type: t
+    type: t,
+    channelId: n
   } = e;
   return (0, r.e7)([i.Z], () => {
     let e = i.Z.activeViewType();
-    return null != e && e === t && i.Z.shouldShowPopup()
-  }, [t])
+    return null != e && e === t && i.Z.activeChannelId() === n && i.Z.shouldShowPopup()
+  }, [t, n])
 }

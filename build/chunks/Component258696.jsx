@@ -136,7 +136,7 @@ function M(e) {
   en && $.push({
     key: "appLauncher",
     node: (0, r.jsx)(m.Z, {
-      channel: G,
+      channelId: G.id,
       type: M
     }, "appLauncher")
   }), ei && $.push({

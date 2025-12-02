@@ -276,7 +276,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "APP_LAUNCHER",
             label: r,
-            action: () => (0, p._)(h._b.TEXT, g)
+            action: () => (0, p._)(h._b.TEXT, g, true, t.id)
           }, "APP_LAUNCHER");
         case I.r.ACTIVITY:
           return (0, i.jsx)(s.sNh, {

@@ -21,6 +21,7 @@ let l = {
   entrypoint: Chunk827498._b.NONE,
   lastShownEntrypoint: Chunk827498._b.NONE,
   activeViewType: null,
+  activeChannelId: null,
   closeReason: Chunk827498.ti.DISMISSED,
   initialState: true
 };
@@ -29,16 +30,17 @@ function c(e) {
   let {
     entrypoint: t,
     activeViewType: n,
-    initialState: r
+    initialState: r,
+    activeChannelId: i
   } = e;
-  return l.show = true, l.entrypoint = t, l.lastShownEntrypoint = t, l.closeReason = o.ti.DISMISSED, l.activeViewType = n, l.initialState = r, true
+  return l.show = true, l.entrypoint = t, l.lastShownEntrypoint = t, l.closeReason = o.ti.DISMISSED, l.activeViewType = n, l.activeChannelId = i, l.initialState = r, true
 }
 
 function u(e) {
   let {
     closeReason: t = o.ti.DISMISSED
   } = e;
-  return l.show = false, l.entrypoint = o._b.NONE, l.closeReason = t, l.initialState = true, true
+  return l.show = false, l.entrypoint = o._b.NONE, l.closeReason = t, l.initialState = true, l.activeChannelId = null, true
 }
 class d extends(r = Chunk442837.ZP.Store) {
   initialize() {}
@@ -56,6 +58,10 @@ class d extends(r = Chunk442837.ZP.Store) {
   }
   activeViewType() {
     return l.activeViewType
+  }
+  activeChannelId() {
+    var e;
+    return null != (e = l.activeChannelId) ? module : null
   }
   closeReason() {
     return l.closeReason

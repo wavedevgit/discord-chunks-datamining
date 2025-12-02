@@ -66,7 +66,7 @@ function E(e) {
         return "Linux"
     }
     return ""
-  }((0, _.getOS)())), [en, ei] = r.useState(""), [er, ea] = r.useState(""), [el, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(false), [em, ep] = r.useState(false), [ev, ef] = r.useState(false), [eh, eg] = r.useState(null);
+  }((0, _.getOS)())), [en, ei] = r.useState(""), [er, ea] = r.useState(""), [el, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(false), [em, ep] = r.useState(false), [ef, ev] = r.useState(false), [eh, eg] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -76,8 +76,8 @@ function E(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "66a47cedfe8c847c758964250e1b2e2a9888231a" !== e.body.hash) {
-        let e = new Date("1764690566054"),
+      if (null != e.body && "8fd2ef8ecfeacad5a83d19ab3f34fd2b8da7e09c" !== e.body.hash) {
+        let e = new Date("1764694134632"),
           t = new Date,
           n = (0, j.TD)(t, e);
         n.hours > 6 && eg(n.hours)
@@ -109,7 +109,7 @@ function E(e) {
     });
   async function eO() {
     var e, t;
-    if (ef(false), "" === M || "" === W || null == V) return void ed(true);
+    if (ev(false), "" === M || "" === W || null == V) return void ed(true);
     let r = null == U || null == (e = U.features) ? true : e.find(e => (0, O.pD)(e) === X);
     ep(true), ed(false);
     let a = (0, S.D)(z.map(e => {
@@ -136,7 +136,7 @@ function E(e) {
         locale: es
       } : {
         overridePlatformInformation: K
-      }, a).catch(() => ef(true));
+      }, a).catch(() => ev(true));
     ep(false), null != l && l.ok ? (ex && window.open(l.body.permalink_url, "_blank"), L(), (0, u.ZDy)(async () => {
       let {
         default: e
@@ -156,7 +156,7 @@ function E(e) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
         }), n))
       }
-    })) : ef(true)
+    })) : ev(true)
   }
   r.useEffect(() => {
     async function e() {
@@ -391,8 +391,8 @@ function E(e) {
             children: z.length > 0 && z.map(e => (0, i.jsxs)("div", {
               className: P.attachment,
               children: [(0, i.jsxs)("div", {
-                children: [(0, i.jsx)(f.r, {
-                  size: v.q.SMALL,
+                children: [(0, i.jsx)(v.r, {
+                  size: f.q.SMALL,
                   upload: e
                 }), (0, i.jsx)("div", {
                   className: P.removeAttachment,
@@ -418,7 +418,7 @@ function E(e) {
               })]
             }, e.id))
           })
-        }) : null, ev ? (0, i.jsx)(u.Text, {
+        }) : null, ef ? (0, i.jsx)(u.Text, {
           color: "text-danger",
           variant: "text-sm/normal",
           children: "Something went wrong, try again!"

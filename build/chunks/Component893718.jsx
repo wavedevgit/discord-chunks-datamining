@@ -343,7 +343,7 @@ function ex(e, t, n, r) {
 }
 
 function eL(e, t, n) {
-  let [r, a, o] = (0, P.Iu)(e => [e.activeView, e.activeViewType, e.activeChannelId], u.X), s = (0, p.e7)([O.Z], () => O.Z.shouldShowPopup() && O.Z.activeViewType() === e);
+  let [r, a, o] = (0, P.Iu)(e => [e.activeView, e.activeViewType, e.activeChannelId], u.X), s = (0, p.e7)([O.Z], () => O.Z.shouldShowPopup() && O.Z.activeViewType() === e && O.Z.activeChannelId() === n);
   i.useEffect(() => () => {
     (0, P._Q)(e, n)
   }, [e, n]);
@@ -554,7 +554,8 @@ function eG(e, t) {
       location: "ChannelAppLauncher"
     }),
     tk = (0, T.Z)({
-      type: G
+      type: G,
+      channelId: U.id
     });
   (0, J.S)(tc, U.guild_id, U.id);
   let tU = null != W,

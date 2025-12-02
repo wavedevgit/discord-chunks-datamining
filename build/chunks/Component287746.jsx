@@ -828,7 +828,7 @@ class e3 extends Chunk473749.PureComponent {
       } = e;
       return x._(j._b.TEXT, this.props.chatInputType, {
         applicationId: t
-      })
+      }, this.props.channel.id)
     }), eY(this, "handleChatInteract", () => {
       var e;
       null == (e = this.dispatchGroupRef.current) || e.bumpDispatchPriority()
