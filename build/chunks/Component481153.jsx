@@ -2,7 +2,7 @@
 /** chunk id: 481153, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk569964 = require("./569964.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
-let S = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z, Chunk594174.default], e => {
+let y = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z, Chunk594174.default], e => {
   let {
     giftCode: t
   } = e, n = f.Z.get(t.skuId), {
@@ -35,7 +35,7 @@ let S = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
     sku: n,
     subscriptionPlan: null != r ? (0, _.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
-    gifter: m.default.getUser(t.userId)
+    gifter: p.default.getUser(t.userId)
   }
 })(e => {
   let {
@@ -44,18 +44,18 @@ let S = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
     gifter: s,
     sku: a,
     application: c,
-    subscriptionPlan: m
-  } = e, p = null == s ? v.intl.string(v.t.lTGZAl) : v.intl.formatToPlainString(v.t.TjWdPc, {
+    subscriptionPlan: p
+  } = e, m = null == s ? v.intl.string(v.t.lTGZAl) : v.intl.formatToPlainString(v.t.TjWdPc, {
     username: s.username
   }), f = a.name;
-  return null != m && (f = v.intl.formatToPlainString(m.interval === E.rV.MONTH ? v.t.CTpcCZ : v.t["rgPWG/"], {
+  return null != p && (f = v.intl.formatToPlainString(p.interval === E.rV.MONTH ? v.t.CTpcCZ : v.t["rgPWG/"], {
     skuName: a.name,
-    intervalCount: m.intervalCount
+    intervalCount: p.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
     children: [null != n.giftStyle ? (0, r.jsx)(g.Z, {
       defaultAnimationState: h.SR.LOOP,
       giftStyle: n.giftStyle,
-      className: j.seasonalIcon
+      className: b.seasonalIcon
     }) : (0, r.jsx)(u.qE, {
       src: null != s ? s.getAvatarURL(true, 100) : null,
       size: o.EFr.DEPRECATED_SIZE_100,
@@ -68,12 +68,12 @@ let S = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
       })]
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: p
+        children: m
       }), (0, r.jsxs)(u.Dx, {
-        className: l()(I.marginTop8, b.flexCenter),
+        className: l()(I.marginTop8, j.flexCenter),
         children: [a.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
           size: d.A.MEDIUM,
-          className: j.applicationIcon,
+          className: b.applicationIcon,
           game: c,
           skuId: a.id
         }), f]

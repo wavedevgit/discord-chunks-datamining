@@ -38,17 +38,17 @@ function x(e) {
     {
       isAuthenticated: E,
       loginStatus: v
-    } = (0, a.cj)([m.default], () => ({
-      isAuthenticated: m.default.isAuthenticated(),
-      loginStatus: m.default.getLoginStatus()
+    } = (0, a.cj)([p.default], () => ({
+      isAuthenticated: p.default.isAuthenticated(),
+      loginStatus: p.default.getLoginStatus()
     })),
     {
-      location: j,
-      redirectTo: b
+      location: b,
+      redirectTo: j
     } = e,
-    [I, S] = i.useState(E);
+    [I, y] = i.useState(E);
 
-  function y(e) {
+  function S(e) {
     let {
       handoffKey: t,
       handoffToken: n,
@@ -58,30 +58,30 @@ function x(e) {
       handoffKey: t,
       handoffToken: n,
       handoffSource: r
-    }), S(false)
+    }), y(false)
   }
   return ((0, u.ZP)(() => {
-    if (null != j) {
+    if (null != b) {
       let {
         handoff_key: e,
         handoff_token: t
-      } = (0, s.parse)(j.search);
+      } = (0, s.parse)(b.search);
       if (null != e && null != t) {
-        let n = null != b ? (0, d.L)(b) : true;
+        let n = null != j ? (0, d.L)(j) : true;
         I ? o.Z.logout("handoff", null).finally(() => {
-          y({
+          S({
             handoffKey: e,
             handoffToken: t,
             handoffSource: n
           })
-        }) : y({
+        }) : S({
           handoffKey: e,
           handoffToken: t,
           handoffSource: n
         })
       }
     }
-  }), I || v === f.u34.LOGGING_IN) ? (0, r.jsx)(p.q, {}) : (0, r.jsx)(p.Z, (t = function(e) {
+  }), I || v === f.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

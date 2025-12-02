@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk197571 = require("./197571.js");
 
 function E(e, t, n) {
-  e.preventDefault(), g.default.track(p.rMx.GUILD_TEMPLATE_APP_OPENED, {
+  e.preventDefault(), g.default.track(m.rMx.GUILD_TEMPLATE_APP_OPENED, {
     guild_template_code: t,
     guild_template_name: n.name,
     guild_template_description: n.description,
@@ -53,7 +53,7 @@ function v(e) {
         onClick: e => E(e, t, n)
       })
     })]
-  }) : (0, r.jsx)(m.Z, {
+  }) : (0, r.jsx)(p.Z, {
     text: _.intl.string(_.t["e/rZ2n"]),
     buttonCta: _.intl.string(_.t.HAvYn0),
     onClick: e => E(e, t, n)

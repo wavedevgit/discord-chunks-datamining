@@ -24,29 +24,29 @@ Chunk442837.ZP.initialize();
 let E = e => {
   let {
     location: t
-  } = e, n = (0, s.e7)([p.default], () => p.default.isAuthenticated()), E = (0, s.e7)([d.Z], () => d.Z.hasLoadedExperiments), v = (0, g.oK)("RSL - Landing Page"), [j, b] = i.useState(false), [I, S] = i.useState(_.intl.string(_.t["9exy+V"])), [y, N] = i.useState(true), O = e => {
+  } = e, n = (0, s.e7)([m.default], () => m.default.isAuthenticated()), E = (0, s.e7)([d.Z], () => d.Z.hasLoadedExperiments), v = (0, g.oK)("RSL - Landing Page"), [b, j] = i.useState(false), [I, y] = i.useState(_.intl.string(_.t["9exy+V"])), [S, O] = i.useState(true), N = e => {
     switch (e) {
       case f.evJ.INVALID_FORM_BODY:
       case f.evJ.DSA_RSL_REPORT_NOT_FOUND:
-        S(_.intl.string(_.t.bzXDfc));
+        y(_.intl.string(_.t.bzXDfc));
         break;
       case f.evJ.DSA_RSL_ALREADY_REQUESTED:
-        S(_.intl.string(_.t.rV00wq));
+        y(_.intl.string(_.t.rV00wq));
         break;
       case f.evJ.DSA_RSL_LIMITED_TIME:
-        S(_.intl.string(_.t["0dI29h"]));
+        y(_.intl.string(_.t["0dI29h"]));
         break;
       case f.evJ.DSA_RSL_REPORT_INELIGIBLE:
-        S(_.intl.string(_.t["RGa/Gb"]));
+        y(_.intl.string(_.t["RGa/Gb"]));
         break;
       default:
-        S(_.intl.string(_.t["0QLzfv"]))
+        y(_.intl.string(_.t["0QLzfv"]))
     }
   };
   return i.useEffect(() => {
-    n ? (N(true), o.k({
+    n ? (O(true), o.k({
       withAnalyticsToken: true
-    }).then(() => N(false)).catch(() => N(false))) : N(false)
+    }).then(() => O(false)).catch(() => O(false))) : O(false)
   }, [n]), i.useEffect(() => {
     E || v || a.Z.getExperiments()
   }, [E, v]), i.useEffect(() => {
@@ -54,18 +54,18 @@ let E = e => {
       var t, n;
       try {
         let n = null != e ? await (0, h.hs)(e) : true;
-        null != n ? S(_.intl.string(_.t.e6mZMt)) : O(null == (t = n.body) ? true : t.code)
+        null != n ? y(_.intl.string(_.t.e6mZMt)) : N(null == (t = n.body) ? true : t.code)
       } catch (e) {
-        O(null == (n = e.body) ? true : n.code)
+        N(null == (n = e.body) ? true : n.code)
       } finally {
-        b(false)
+        j(false)
       }
     };
-    b(true), e((0, c.Z)(t)), (0, m.e)("report_second_look")
-  }, [t]), v && !y && (0, r.jsxs)(u.ZP, {
+    j(true), e((0, c.Z)(t)), (0, p.e)("report_second_look")
+  }, [t]), v && !S && (0, r.jsxs)(u.ZP, {
     children: [(0, r.jsx)(u.Dx, {
       className: x.marginBottom8,
       children: I
-    }), j && (0, r.jsx)(l.$jN, {})]
+    }), b && (0, r.jsx)(l.$jN, {})]
   })
 }

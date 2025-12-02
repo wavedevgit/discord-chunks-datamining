@@ -28,7 +28,7 @@ class h extends Chunk317770.Z {
     u.Z.isOpen() && !(0, i.nfh)(f) && (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await n.e("86872").then(n.bind(n, 472365));
+      } = await Promise.all([n.e("34061"), n.e("23792")]).then(n.bind(n, 472365));
       return t => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

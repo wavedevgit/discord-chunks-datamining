@@ -17,7 +17,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk292660 = require("./292660.js");
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function m(e) {
   return e
 }
 
-function p(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,8 +60,8 @@ function f(e) {
     x = null != t.channel ? (0, l.jD)(t.channel) : null,
     E = null != t.target_application ? new s.ZP(t.target_application) : null,
     v = f || null == t.inviter ? null : new a.Z(t.inviter),
-    j = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.GuildFeatures.COMMUNITY)) && null != v && (0, c.WT)(t),
-    b = (e => {
+    b = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.GuildFeatures.COMMUNITY)) && null != v && (0, c.WT)(t),
+    j = (e => {
       let {
         state: t
       } = e;
@@ -83,26 +83,26 @@ function f(e) {
   return (0, c.JI)(t) ? (0, r.jsx)(u.Z, {
     invite: t,
     channel: x,
-    isSubmitting: b,
+    isSubmitting: j,
     onAcceptInvite: n
   }) : (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(c.GB, {
       application: E,
       guild: _,
-      user: j || (0, c.X7)(t) ? v : null
-    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, p(m({}, I), {
-      showBigUserIcon: j
-    })), (0, r.jsx)(c.UM, p(m({}, I), {
-      showBigUserIcon: j
-    })), (0, r.jsx)(c.V6, m({}, I)), (0, r.jsx)("div", {
+      user: b || (0, c.X7)(t) ? v : null
+    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, m(p({}, I), {
+      showBigUserIcon: b
+    })), (0, r.jsx)(c.UM, m(p({}, I), {
+      showBigUserIcon: b
+    })), (0, r.jsx)(c.V6, p({}, I)), (0, r.jsx)("div", {
       className: g.acceptButton,
       children: (0, r.jsx)(i.Button, {
         variant: "primary",
         size: "md",
         text: h.intl.string(h.t.ohMvm1),
         onClick: n,
-        loading: b,
+        loading: j,
         fullWidth: true
       })
     })]

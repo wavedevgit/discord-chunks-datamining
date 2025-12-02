@@ -2,7 +2,7 @@
 /** chunk id: 299852, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => b
 }), require("./35282.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -90,7 +90,7 @@ class v extends(r = Chunk473749.PureComponent) {
         children: (0, i.jsx)(c.Avr, {
           text: _.intl.string(_.t.YYTirT),
           textVariant: "text-sm/normal",
-          onClick: () => r(p.Z5c.SETTINGS("notifications", f.vG))
+          onClick: () => r(m.Z5c.SETTINGS("notifications", f.vG))
         })
       })]
     })
@@ -170,6 +170,6 @@ class v extends(r = Chunk473749.PureComponent) {
 E(v, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let j = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
+let b = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
   defaultRoute: Chunk896797.Z.defaultRoute
 }))(v)

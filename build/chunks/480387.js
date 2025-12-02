@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   HJ: () => h,
-  Zd: () => m,
+  Zd: () => p,
   yD: () => g
 });
 var Chunk213919 = require("./213919.js"),
@@ -69,7 +69,7 @@ function g(e, t) {
   }), Promise.resolve()) : l.Z.switchAccountToken(n, t)
 }
 
-function m(e) {
+function p(e) {
   s.Z.dispatch({
     type: "MULTI_ACCOUNT_REMOVE_ACCOUNT",
     userId: e

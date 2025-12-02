@@ -34,11 +34,11 @@ function f(e) {
       return "discord://"
     }(e),
     n = (0, o.zS)(t);
-  null != n && g.default.track(p.rMx.DEEP_LINK_CLICKED, {
+  null != n && g.default.track(m.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, c.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
-  }), m.Z.launch(t, e => {
+  }), p.Z.launch(t, e => {
     e || (0, u.dL)(h.Z.fallbackRoute)
   })
 }

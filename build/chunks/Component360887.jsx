@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx");
-let j = e => {
+let b = e => {
   let {
     title: t,
     subtitle: n,
@@ -48,39 +48,39 @@ let j = e => {
   })
 };
 
-function b(e) {
+function j(e) {
   let {
     match: t,
     location: l
-  } = e, o = (0, s.parse)(l.search).token, [d, b] = i.useState("loading"), I = i.useRef(false), S = i.useCallback(async e => {
+  } = e, o = (0, s.parse)(l.search).token, [d, j] = i.useState("loading"), I = i.useRef(false), y = i.useCallback(async e => {
     try {
-      m.default.track(x.rMx.ONE_TIME_LOGIN_ATTEMPTED, {
+      p.default.track(x.rMx.ONE_TIME_LOGIN_ATTEMPTED, {
         source: "web_page"
-      }), await c.Z.oneTimeLogin(e), b("login_success"), m.default.track(x.rMx.LOGIN_SUCCESSFUL, {
+      }), await c.Z.oneTimeLogin(e), j("login_success"), p.default.track(x.rMx.LOGIN_SUCCESSFUL, {
         source: "web_page",
         login_method: "one_time_login"
       }), n.g.location.assign(x.Z5c.APP)
     } catch (t) {
       let e = t instanceof Error ? t.message : "Unknown error";
-      m.default.track(x.rMx.ONE_TIME_LOGIN_ERROR, {
+      p.default.track(x.rMx.ONE_TIME_LOGIN_ERROR, {
         source: "web_page",
         error_reason: "api_error",
         error_message: e
-      }), b("error")
+      }), j("error")
     }
-  }, []), y = i.useCallback(e => {
+  }, []), S = i.useCallback(e => {
     var t;
     let n = null != (t = g.default.getFingerprint()) ? t : g.default.getId(),
       r = "discord://login/one-time?token=".concat(encodeURIComponent(e));
     f.Z.launch(r, e => {
-      e ? (m.default.track(x.rMx.DEEP_LINK_CLICKED, {
+      e ? (p.default.track(x.rMx.DEEP_LINK_CLICKED, {
         source: "web_page",
         destination: "discord://login/one-time",
         deep_link_provider: "protocol",
         fingerprint: n
-      }), b("app_launched")) : b("app_launch_not_supported")
+      }), j("app_launched")) : j("app_launch_not_supported")
     })
-  }, []), N = i.useCallback(e => {
+  }, []), O = i.useCallback(e => {
     var t;
     let r = null != (t = g.default.getFingerprint()) ? t : g.default.getId();
     Promise.resolve().then(n.bind(n, 536285)).then(t => {
@@ -94,37 +94,37 @@ function b(e) {
           fingerprint: r
         }
       }).then(t => {
-        null != t && t ? (m.default.track(x.rMx.DEEP_LINK_CLICKED, {
+        null != t && t ? (p.default.track(x.rMx.DEEP_LINK_CLICKED, {
           source: "web_page",
           destination: "one_time_login_modal",
           deep_link_provider: "rpc",
           fingerprint: r
-        }), b("app_launched")) : y(e)
+        }), j("app_launched")) : S(e)
       }).catch(() => {
-        y(e)
+        S(e)
       }).then(() => n.disconnect())
     })
-  }, [y]);
+  }, [S]);
   if (i.useEffect(() => {
       let e = null != o && "string" == typeof o,
-        t = a.tq ? "mobile" : a.Em ? "tablet" : (0, p.isDesktop)() ? "desktop_app" : "web";
-      if (m.default.track(x.rMx.ONE_TIME_LOGIN_PAGE_VIEWED, {
+        t = a.tq ? "mobile" : a.Em ? "tablet" : (0, m.isDesktop)() ? "desktop_app" : "web";
+      if (p.default.track(x.rMx.ONE_TIME_LOGIN_PAGE_VIEWED, {
           has_token: e,
           device_type: t
-        }), !e) return void b("error");
+        }), !e) return void j("error");
       if (a.tq || a.Em) {
         var n;
-        let e = null == (n = m.default.getSuperProperties()) ? true : n.os;
-        m.default.track(x.rMx.ONE_TIME_LOGIN_APP_DETECTION_ATTEMPTED, {
+        let e = null == (n = p.default.getSuperProperties()) ? true : n.os;
+        p.default.track(x.rMx.ONE_TIME_LOGIN_APP_DETECTION_ATTEMPTED, {
           detection_type: "mobile_ui_shown",
           device_type: t,
           platform: e
         });
         return
       }
-      if ((0, p.isDesktop)()) return void S(o);
-      I.current || (I.current = true, b("rpc_attempting"), N(o))
-    }, [o, l, S, N]), a.tq || a.Em) {
+      if ((0, m.isDesktop)()) return void y(o);
+      I.current || (I.current = true, j("rpc_attempting"), O(o))
+    }, [o, l, y, O]), a.tq || a.Em) {
     let e = null == o || "string" != typeof o ? "missing_token" : "invalid_token";
     return (0, r.jsx)(_.e, {
       token: o,
@@ -133,30 +133,30 @@ function b(e) {
     })
   }
   if ((0, h.DB)()) return null;
-  if ("app_launched" === d) return (0, r.jsx)(j, {
+  if ("app_launched" === d) return (0, r.jsx)(b, {
     title: v.intl.string(v.t.RvUUOy),
     subtitle: v.intl.string(v.t["5/lR0g"]),
     buttonText: v.intl.string(v.t["2ixEBi"]),
     buttonOnClick: () => {
-      m.default.track(x.rMx.ONE_TIME_LOGIN_CONTINUE_IN_BROWSER_CLICKED, {
+      p.default.track(x.rMx.ONE_TIME_LOGIN_CONTINUE_IN_BROWSER_CLICKED, {
         previous_status: d
-      }), S(o)
+      }), y(o)
     }
   });
-  if ("app_launch_not_supported" === d) return (0, r.jsx)(j, {
+  if ("app_launch_not_supported" === d) return (0, r.jsx)(b, {
     title: v.intl.string(v.t.qq4tjT),
     subtitle: v.intl.string(v.t.CVxYRo),
     buttonText: v.intl.string(v.t["2ixEBi"]),
-    buttonOnClick: () => S(o)
+    buttonOnClick: () => y(o)
   });
   if ("error" === d) {
     let e = null == o || "string" != typeof o ? "missing_token" : "invalid_token";
-    return (0, r.jsx)(j, {
+    return (0, r.jsx)(b, {
       title: v.intl.string(v.t.RtCSr1),
       subtitle: v.intl.string(v.t["S+YjYJ"]),
       buttonText: v.intl.string(v.t.j3cG2p),
       buttonOnClick: () => {
-        m.default.track(x.rMx.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
+        p.default.track(x.rMx.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
           error_reason: e
         }), (0, h.uL)(x.Z5c.LOGIN)
       }
@@ -170,7 +170,7 @@ let I = function(e) {
   let {
     enabled: t
   } = (0, d.WW)("OneTimeLoginCardWrapper");
-  return t ? (0, r.jsx)(b, function(e) {
+  return t ? (0, r.jsx)(j, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
