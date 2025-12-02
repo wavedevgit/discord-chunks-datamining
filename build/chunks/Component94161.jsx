@@ -22,25 +22,26 @@ function h(e, t) {
   let {
     disabled: n,
     type: a,
-    pickerView: h = p.X1.EMOJI
-  } = e, [g, E, b] = (0, u.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), y = (0, d.v)(l.S), O = a === f.Ie.NORMAL, {
-    tooltipsWithKeybinds: v,
-    expressionsCombinedIntoEmojiButton: S
+    channelId: h,
+    pickerView: g = p.X1.EMOJI
+  } = e, [E, b, y, O] = (0, u.Iu)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.X), v = (0, d.v)(l.S), S = a === f.Ie.NORMAL, {
+    tooltipsWithKeybinds: I,
+    expressionsCombinedIntoEmojiButton: T
   } = d.n.useConfig({
     location: "EmojiButton"
-  }), I = S ? true : O ? y : true, T = v && S && O ? _.intl.string(_.t.DSBQ6F) : true, A = i.useCallback(() => {
-    (0, u.RO)(h, a)
-  }, [a, h]);
+  }), A = T ? true : S ? v : true, C = I && T && S ? _.intl.string(_.t.DSBQ6F) : true, N = i.useCallback(() => {
+    (0, u.RO)(g, a, h)
+  }, [a, g, h]);
   return n ? null : (0, r.jsx)("div", {
     className: o()(p.CT, m.buttonContainer),
     ref: t,
     children: (0, r.jsx)(c.Z, {
-      "aria-label": T,
-      tooltipText: T,
+      "aria-label": C,
+      tooltipText: C,
       className: m.emojiButton,
-      onClick: A,
-      active: g === h && E === a,
-      "aria-controls": b,
+      onClick: N,
+      active: E === g && b === a && O === h,
+      "aria-controls": y,
       tabIndex: 0,
       focusProps: {
         offset: {
@@ -50,8 +51,8 @@ function h(e, t) {
           right: false
         }
       },
-      keyboardShortcut: I,
-      canShowNUXPremiumTooltip: O
+      keyboardShortcut: A,
+      canShowNUXPremiumTooltip: S
     })
   })
 }

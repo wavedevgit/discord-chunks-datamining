@@ -821,7 +821,7 @@ class e3 extends Chunk473749.PureComponent {
       let {
         activeView: t
       } = e;
-      (0, B.PG)(t, this.props.chatInputType)
+      (0, B.PG)(t, this.props.chatInputType, this.props.channel.id)
     }), eY(this, "handleOpenAppLauncher", e => {
       let {
         applicationId: t

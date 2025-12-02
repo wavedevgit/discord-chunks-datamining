@@ -161,7 +161,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     fontSize: y.Z.fontSize,
     isSubmitButtonEnabled: y.Z.isSubmitButtonEnabled
   })), eG = (0, d.e7)([M.Z], () => M.Z.isEnabled()), ez = (0, N.NE)(L);
-  (0, H.hJ)(k, eD);
+  (0, H.hJ)(k, eD, L.id);
   let {
     eventEmitter: eW,
     handleEditorSelectionChanged: eq
@@ -255,10 +255,10 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     expressionPickerView: e8,
     shouldHideExpressionPicker: e5,
     handleOuterClick: e6
-  } = (0, H.iV)(k, eN), e9 = (0, H.aT)(p), {
+  } = (0, H.iV)(k, eN, L.id), e9 = (0, H.aT)(p), {
     currentAutocompleteType: te,
     handleAutocompleteVisibilityChange: tt
-  } = (0, H.vB)(), tn = (0, H.ae)(eN), ti = (0, H.Sg)(eY, k, eN), tr = (0, H.O1)({
+  } = (0, H.vB)(k, L.id), tn = (0, H.ae)(eN), ti = (0, H.Sg)(eY, k, eN), tr = (0, H.O1)({
     editorRef: eN,
     disabled: eD,
     textValue: p,

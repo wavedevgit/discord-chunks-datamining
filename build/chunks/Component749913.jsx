@@ -760,7 +760,8 @@ let ev = Chunk473749.memo(function(e) {
       }), (0, r.jsx)(_.Z, {
         type: ec,
         className: el.expressionPicker,
-        onClick: x
+        onClick: x,
+        channel: t
       }, "expression")]
     }), h && (0, r.jsx)(p.Text, {
       variant: "text-sm/medium",

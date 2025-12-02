@@ -27,53 +27,54 @@ var Chunk54381 = require("./54381.js"),
 function v(e, t) {
   let {
     disabled: n,
-    type: a
-  } = e, [v, S] = i.useState(false), I = (0, l.e7)([p.Z], () => {
+    type: a,
+    channel: v
+  } = e, [S, I] = i.useState(false), T = (0, l.e7)([p.Z], () => {
     var e, t;
-    return v && Object.values(null != (t = null == (e = p.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? true : e.gifs) ? t : {}).length <= 2
-  }), [T, A, C] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), N = i.useRef(0), P = i.useCallback(() => {
-    S(true), clearTimeout(N.current), N.current = setTimeout(() => {
-      S(false), N.current = 0
+    return S && Object.values(null != (t = null == (e = p.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? true : e.gifs) ? t : {}).length <= 2
+  }), [A, C, N, P] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.X), R = i.useRef(0), w = i.useCallback(() => {
+    I(true), clearTimeout(R.current), R.current = setTimeout(() => {
+      I(false), R.current = 0
     }, 2e3)
   }, []);
   (0, _.yp)({
     event: E.CkL.FAVORITE_GIF,
-    handler: P
+    handler: w
   });
-  let R = i.useCallback(() => {
-      (0, f.RO)(b.X1.GIF, a)
-    }, [a]),
+  let D = i.useCallback(() => {
+      (0, f.RO)(b.X1.GIF, a, v.id)
+    }, [a, v.id]),
     {
-      Component: w,
-      events: D,
-      play: x
+      Component: x,
+      events: L,
+      play: j
     } = (0, c.V)(),
-    L = (0, m.v)(d.O),
-    j = a === h.Ie.NORMAL ? L : true;
+    M = (0, m.v)(d.O),
+    k = a === h.Ie.NORMAL ? M : true;
   if (n) return null;
-  let M = T === b.X1.GIF && A === a;
+  let U = A === b.X1.GIF && C === a && P === v.id;
   return (0, r.jsx)(u.u, {
-    keyboardShortcut: I ? true : j,
-    text: y.intl.string(I ? y.t.mE2e8A : y.t.nffuyb),
-    shouldShow: I || null != j,
-    forceOpen: I,
+    keyboardShortcut: T ? true : k,
+    text: y.intl.string(T ? y.t.mE2e8A : y.t.nffuyb),
+    shouldShow: T || null != k,
+    forceOpen: T,
     children: (0, r.jsx)("div", {
       ref: t,
       className: o()(b.CT, O.buttonContainer),
       children: (0, r.jsx)(g.Z, {
         className: O.button,
-        onMouseEnter: D.onMouseEnter,
-        onMouseLeave: D.onMouseLeave,
+        onMouseEnter: L.onMouseEnter,
+        onMouseLeave: L.onMouseLeave,
         onClick: () => {
-          R(), x()
+          D(), j()
         },
-        isActive: M,
-        pulse: v,
+        isActive: U,
+        pulse: S,
         "aria-label": y.intl.string(y.t.PtVpk2),
-        "aria-expanded": M,
+        "aria-expanded": U,
         "aria-haspopup": "dialog",
-        "aria-controls": C,
-        children: (0, r.jsx)(w, {
+        "aria-controls": N,
+        children: (0, r.jsx)(x, {
           size: "refresh_sm",
           color: "currentColor"
         })

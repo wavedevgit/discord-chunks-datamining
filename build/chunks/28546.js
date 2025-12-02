@@ -20,6 +20,7 @@ let c = Object.freeze({
     activeView: null,
     lastActiveView: null,
     activeViewType: null,
+    activeChannelId: null,
     searchQuery: "",
     isSearchSuggestion: false,
     pickerId: function() {
@@ -35,30 +36,32 @@ let c = Object.freeze({
       lastActiveView: e.lastActiveView
     })
   })),
-  d = (e, t) => {
+  d = (e, t, n) => {
     (0, s.j)(() => u.setState({
       activeView: e,
       activeViewType: t,
+      activeChannelId: n,
       lastActiveView: u.getState().activeView
     }))
   },
-  f = e => {
-    let t = u.getState();
-    (true === e || e === t.activeViewType) && null !== t.activeView && (0, s.j)(() => u.setState({
+  f = (e, t) => {
+    let n = u.getState();
+    (true === e || e === n.activeViewType) && (true === t || t === n.activeChannelId) && null !== n.activeView && (0, s.j)(() => u.setState({
       activeView: null,
       activeViewType: null,
-      lastActiveView: t.activeView
+      activeChannelId: null,
+      lastActiveView: n.activeView
     }))
   },
-  p = e => {
-    let t = u.getState();
-    if (null == t.activeView) {
-      var n;
-      d(null != (n = t.lastActiveView) ? n : l.X1.EMOJI, e)
+  p = (e, t) => {
+    let n = u.getState();
+    if (null == n.activeView) {
+      var r;
+      d(null != (r = n.lastActiveView) ? r : l.X1.EMOJI, e, t)
     } else f()
   },
-  _ = (e, t) => {
-    u.getState().activeView === e ? f() : d(e, t)
+  _ = (e, t, n) => {
+    u.getState().activeView === e ? f() : d(e, t, n)
   },
   m = e => {
     (0, s.j)(() => u.setState({

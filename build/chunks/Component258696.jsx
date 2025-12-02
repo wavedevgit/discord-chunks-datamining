@@ -93,7 +93,8 @@ function M(e) {
       key: "gif",
       node: (0, r.jsx)(A.Z, {
         disabled: U,
-        type: M
+        type: M,
+        channel: G
       }, "gif")
     }), er && null == Y && $.push({
       key: "confetti",
@@ -105,7 +106,8 @@ function M(e) {
       key: "sticker",
       node: (0, r.jsx)(w.Z, {
         disabled: U,
-        type: M
+        type: M,
+        channel: G
       }, "sticker")
     }), $.push({
       key: "upload",
@@ -126,7 +128,8 @@ function M(e) {
       node: (0, r.jsx)(T.Z, {
         disabled: U,
         type: M,
-        pickerView: e
+        pickerView: e,
+        channelId: G.id
       }, "emoji")
     })
   }
