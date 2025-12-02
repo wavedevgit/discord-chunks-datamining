@@ -48,8 +48,8 @@ var Chunk98405 = require("./98405.js"),
   K = Chunk840475.TypedArray,
   z = Chunk840475.TypedArrayPrototype,
   q = Chunk840475.isTypedArray,
-  Q = "BYTES_PER_ELEMENT",
-  X = "Wrong length",
+  X = "BYTES_PER_ELEMENT",
+  Q = "Wrong length",
   J = function(e, t) {
     R(e, t, {
       configurable: true,
@@ -121,8 +121,8 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
         i = t, d = h(n, o);
         var f = t.byteLength;
         if (true === r) {
-          if (f % o || (s = f - d) < 0) throw new B(X)
-        } else if ((s = _(r) * o) + d > f) throw new B(X);
+          if (f % o || (s = f - d) < 0) throw new B(Q)
+        } else if ((s = _(r) * o) + d > f) throw new B(Q);
         l = s / o
       } else if (q(t)) return x(E, t);
     else return a(C, E, t);
@@ -141,5 +141,5 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
     constructor: true,
     forced: w,
     sham: !Y
-  }, y), Q in E || f(E, Q, o), Q in b || f(b, Q, o), P(l)
+  }, y), X in E || f(E, X, o), X in b || f(b, X, o), P(l)
 }) : module.exports = function() {}

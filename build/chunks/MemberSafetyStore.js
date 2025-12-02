@@ -290,7 +290,7 @@ function q(e) {
   return r && y(t).updateMembersByMemberIds(n.map(e => e.userId)), r
 }
 
-function Q(e) {
+function X(e) {
   var t, n, r, i, a, o;
   let s, l, {
       guildId: c,
@@ -341,7 +341,7 @@ function Q(e) {
   }, false);
   return b || O || v
 }
-class X extends(r = Chunk442837.ZP.Store) {
+class Q extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk271383.ZP, Chunk430824.Z, Chunk594174.default)
   }
@@ -397,8 +397,8 @@ class X extends(r = Chunk442837.ZP.Store) {
     return y(e).lastCursorTimestamp
   }
 }
-g(X, "displayName", "MemberSafetyStore");
-let J = new X(Chunk570140.Z, {
+g(Q, "displayName", "MemberSafetyStore");
+let J = new Q(Chunk570140.Z, {
   CONNECTION_OPEN: G,
   CONNECTION_OPEN_SUPPLEMENTAL: Z,
   LOCAL_MESSAGES_LOADED: F,
@@ -426,6 +426,6 @@ let J = new X(Chunk570140.Z, {
   MEMBER_SAFETY_PAGINATION_TOKEN_UPDATE: K,
   MEMBER_SAFETY_SEARCH_STATE_UPDATE: z,
   FETCH_GUILD_MEMBER_SUPPLEMENTAL_SUCCESS: q,
-  MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: Q,
+  MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: X,
   MEMBER_SAFETY_GUILD_MEMBER_UPDATE_BATCH: A
 })

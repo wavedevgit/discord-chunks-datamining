@@ -49,8 +49,8 @@ var Chunk98405 = require("./98405.js"),
   K = Chunk154028("String", "fromCodePoint"),
   z = parseInt,
   q = Chunk46015("".charAt),
-  Q = Chunk46015([].join),
-  X = Chunk46015([].push),
+  X = Chunk46015([].join),
+  Q = Chunk46015([].push),
   J = Chunk46015("".replace),
   $ = Chunk46015([].shift),
   ee = Chunk46015([].splice),
@@ -113,7 +113,7 @@ var Chunk98405 = require("./98405.js"),
               break
             }
             if (c > 191 || c < 128) break;
-            X(s, c), r += 2, l++
+            Q(s, c), r += 2, l++
           }
           if (s.length !== o) {
             n += ea;
@@ -177,26 +177,26 @@ eh.prototype = {
     if (u)
       for (n = (t = C(e, u)).next; !(r = s(n, t)).done;) {
         if ((o = s(a = (i = C(v(r.value))).next, i)).done || (l = s(a, i)).done || !s(a, i).done) throw new H("Expected sequence with length 2");
-        X(c, {
+        Q(c, {
           key: I(o.value),
           value: I(l.value)
         })
       } else
-        for (var d in e) b(e, d) && X(c, {
+        for (var d in e) b(e, d) && Q(c, {
           key: d,
           value: I(e[d])
         })
   },
   parseQuery: function(e) {
     if (e)
-      for (var t, n, r = this.entries, i = et(e, "&"), a = 0; a < i.length;)(t = i[a++]).length && X(r, {
+      for (var t, n, r = this.entries, i = et(e, "&"), a = 0; a < i.length;)(t = i[a++]).length && Q(r, {
         key: eu($(n = et(t, "="))),
-        value: eu(Q(n, "="))
+        value: eu(X(n, "="))
       })
   },
   serialize: function() {
-    for (var e, t = this.entries, n = [], r = 0; Chunk98405 < exports.length;) X(require, e_((e = exports[Chunk98405++]).key) + "=" + e_(module.value));
-    return Q(require, "&")
+    for (var e, t = this.entries, n = [], r = 0; Chunk98405 < exports.length;) Q(require, e_((e = exports[Chunk98405++]).key) + "=" + e_(module.value));
+    return X(require, "&")
   },
   update: function() {
     this.entries.length = 0, this.parseQuery(this.url.query)
@@ -215,7 +215,7 @@ var eg = function() {
 if (Chunk477732(eE, {
     append: function(e, t) {
       var n = k(this);
-      R(arguments.length, 2), X(n.entries, {
+      R(arguments.length, 2), Q(n.entries, {
         key: I(e),
         value: I(t)
       }), !c && this.length++, n.updateURL()
@@ -239,7 +239,7 @@ if (Chunk477732(eE, {
     getAll: function(e) {
       var t = k(this).entries;
       R(arguments.length, 1);
-      for (var n = I(e), r = [], i = 0; i < t.length; i++) t[i].key === n && X(r, t[i].value);
+      for (var n = I(e), r = [], i = 0; i < t.length; i++) t[i].key === n && Q(r, t[i].value);
       return r
     },
     has: function(e) {
@@ -253,7 +253,7 @@ if (Chunk477732(eE, {
       var n, r = k(this);
       R(arguments.length, 1);
       for (var i = r.entries, a = false, o = I(e), s = I(t), l = 0; l < i.length; l++)(n = i[l]).key === o && (a ? ee(i, l--, 1) : (a = true, n.value = s));
-      a || X(i, {
+      a || Q(i, {
         key: o,
         value: s
       }), c || (this.size = i.length), r.updateURL()

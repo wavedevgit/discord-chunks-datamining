@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 185016, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -17,6 +17,6 @@ let o = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_SHOW_STREAM_PREVIEWS, {
     return !(null != (t = Chunk695346.I0.useSetting()) && module)
   },
   setValue: function(t) {
-    (0, s.Z)("stream_previews_disabled", !t, l.I0.getSetting(), [i.Z.USER_SETTINGS_VOICE_AND_VIDEO]), l.I0.updateSetting(!t)
+    (0, u.Z)("stream_previews_disabled", !t, s.I0.getSetting(), [i.Z.USER_SETTINGS_VOICE_AND_VIDEO]), s.I0.updateSetting(!t)
   }
 })

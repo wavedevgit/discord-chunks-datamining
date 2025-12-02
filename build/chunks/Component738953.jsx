@@ -93,9 +93,9 @@ function B(e) {
     disableUserProfileLink: K = __OVERLAY__,
     newAnalyticsLocations: z = [],
     appContext: q,
-    disableAutoFocus: Q = false
+    disableAutoFocus: X = false
   } = e, {
-    analyticsLocations: X
+    analyticsLocations: Q
   } = (0, u.ZP)([...z, c.Z.USER_PROFILE_POPOUT]), J = (0, E.ZB)({
     layout: "POPOUT",
     userId: n.id,
@@ -131,7 +131,7 @@ function B(e) {
     eu = i.useMemo(() => (0, _.Z)(), []),
     ed = e => {
       null == Y || Y(), (0, v.openUserProfileModal)(Z(U({
-        sourceAnalyticsLocations: X,
+        sourceAnalyticsLocations: Q,
         hideRestrictedProfile: true,
         customStatusPrompt: eu
       }, J, e), {
@@ -144,15 +144,15 @@ function B(e) {
       action: () => {
         ed(), (0, b.pQ)(U({
           action: "PRESS_VIEW_PROFILE",
-          analyticsLocations: X
+          analyticsLocations: Q
         }, J))
       }
     }),
-    ep = Q ? "div" : s.VqE,
+    ep = X ? "div" : s.VqE,
     e_ = (0, d.Dt)(),
     em = g.ZP.useName(null == $ ? true : $.id, B, n);
   return (0, r.jsx)(u.Gt, {
-    value: X,
+    value: Q,
     children: (0, r.jsx)(E.Mt, {
       value: J,
       openedAt: H,
@@ -237,7 +237,7 @@ function B(e) {
               channelId: B,
               onClose: Y,
               appContext: q,
-              disableAutoFocus: Q
+              disableAutoFocus: X
             }), (null == en ? true : en.profileEffect) != null && (0, r.jsx)(m.Z, {
               skuId: null == en || null == (t = en.profileEffect) ? true : t.skuId,
               isHovering: ei

@@ -1,5 +1,6 @@
-/** Chunk was on 88569 **/
-/** chunk id: 401250, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 401250, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   W: () => o
 });
@@ -12,9 +13,9 @@ function o(e) {
   let {
     node: o
   } = e;
-  return (0, r.jsx)(i.x, {
+  return (0, r.jsx)(a.x, {
     title: "useTitle" in o ? "[PLACEHOLDER] ".concat(null == (t = o.useTitle) ? true : t.call(o, false)) : "[PLACEHOLDER]",
     description: "useSubtitle" in o ? null == (n = o.useSubtitle) ? true : n.call(o) : "",
-    secondaryTrailingElement: (0, r.jsx)(l.tEQ, {})
+    secondaryTrailingElement: (0, r.jsx)(i.tEQ, {})
   })
 }

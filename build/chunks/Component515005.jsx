@@ -117,7 +117,7 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
       width: Z,
       height: Z,
       padding: G
-    }), [G, Z]), [Q, X] = (0, f.Z)(null, 300);
+    }), [G, Z]), [X, Q] = (0, f.Z)(null, 300);
     return (0, r.jsx)("div", A(I({
       className: v.row,
       style: z
@@ -129,7 +129,7 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
           T = t => {
             if ((null == D ? true : D.current) === true || (null == x ? true : x.current) === true) return;
             let n = t.altKey;
-            n && e.type === h.al.STICKER && !(0, g.gM)(e.sticker.id) && X(e.sticker.id), null == j || j(e, n)
+            n && e.type === h.al.STICKER && !(0, g.gM)(e.sticker.id) && Q(e.sticker.id), null == j || j(e, n)
           },
           P = (0, s.throttle)(() => {
             (null == D ? true : D.current) === true || (null == x ? true : x.current) === true || f || null == L || L(e)
@@ -199,7 +199,7 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
             }), (0, r.jsxs)(c.P3F, {
               className: o()(v.sticker, k, {
                 [v.stickerInspected]: f,
-                [v.showPulse]: Q === e.sticker.id
+                [v.showPulse]: X === e.sticker.id
               }),
               innerRef: G,
               tabIndex: K,

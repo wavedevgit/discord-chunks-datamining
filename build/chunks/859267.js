@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 859267, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   previewContainer: "previewContainer__74a6a",
   icon: "icon__74a6a",

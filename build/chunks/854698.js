@@ -2,7 +2,7 @@
 /** chunk id: 854698, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BP: () => X,
+  BP: () => Q,
   DK: () => H,
   G3: () => _,
   Ho: () => B,
@@ -20,7 +20,7 @@ require.d(exports, {
   ub: () => D,
   v1: () => k,
   x6: () => M,
-  zi: () => Q
+  zi: () => X
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   Chunk913527 = require("./913527.js"),
@@ -305,7 +305,7 @@ function q(e, t) {
   }
 }
 
-function Q(e, t) {
+function X(e, t) {
   if (null == t) return d.z.NONE;
   let n = B(t);
   switch (n.options.freq) {
@@ -325,7 +325,7 @@ function Q(e, t) {
   }
 }
 
-function X(e, t) {
+function Q(e, t) {
   return (null == e ? true : e.scheduled_start_time) !== t.scheduledStartTime || e.scheduled_end_time !== t.scheduledEndTime || !(0, r.isEqual)(e.recurrence_rule, t.recurrenceRule)
 }
 

@@ -89,8 +89,8 @@ function m(e) {
   }, [D, N, W, P, e.placeholderValue]), x && Object.keys(W).length < Object.keys(Y).length && K(W = {
     ...Y
   }), null == x && Object.keys(W).length === Object.keys(Y).length && (K(W = {}), U((0, r.OJ)(e.placeholderValue, N, D, P)));
-  let Q = M && Object.keys(W).length >= Object.keys(Y).length ? M : k,
-    X = t => {
+  let X = M && Object.keys(W).length >= Object.keys(Y).length ? M : k,
+    Q = t => {
       if (e.isDisabled || e.isReadOnly) return;
       let n = Object.keys(W),
         i = Object.keys(Y);
@@ -98,8 +98,8 @@ function m(e) {
         ...Y
       }), L(t = (0, s.Mw)(t, (null == C ? true : C.calendar) || new(0, l.IQ)))) : U(t), z.current = null
     },
-    J = (0, d.useMemo)(() => Q.toDate(R), [Q, R]),
-    $ = (0, d.useMemo)(() => h(J, W, V, H, Q, D, m, N), [J, W, V, H, Q, D, m, N]);
+    J = (0, d.useMemo)(() => X.toDate(R), [X, R]),
+    $ = (0, d.useMemo)(() => h(J, W, V, H, X, D, m, N), [J, W, V, H, X, D, m, N]);
   Y.era && W.year && !W.era ? (W.era = true, K({
     ...W
   })) : !Y.era && W.era && (delete W.era, K({
@@ -111,12 +111,12 @@ function m(e) {
       })
     },
     et = (e, t) => {
-      if (W[e]) X(E(Q, e, t, H));
+      if (W[e]) Q(E(X, e, t, H));
       else {
         ee(e);
         let t = Object.keys(W),
           n = Object.keys(Y);
-        (t.length >= n.length || t.length === n.length - 1 && Y.dayPeriod && !W.dayPeriod) && X(Q)
+        (t.length >= n.length || t.length === n.length - 1 && Y.dayPeriod && !W.dayPeriod) && Q(X)
       }
     },
     en = (0, d.useMemo)(() => (0, r.p2)(x, I, T, A, B), [x, I, T, A, B]),
@@ -133,7 +133,7 @@ function m(e) {
     defaultValue: null != (n = e.defaultValue) ? n : j,
     dateValue: J,
     calendar: D,
-    setValue: X,
+    setValue: Q,
     segments: $,
     dateFormatter: V,
     validationState: ea,
@@ -156,7 +156,7 @@ function m(e) {
       et(e, -(p[e] || 1))
     },
     setSegment(e, t) {
-      ee(e), X(b(Q, e, t, H))
+      ee(e), Q(b(X, e, t, H))
     },
     confirmPlaceholder() {
       if (e.isDisabled || e.isReadOnly) return;
@@ -164,28 +164,28 @@ function m(e) {
         n = Object.keys(Y);
       t.length === n.length - 1 && Y.dayPeriod && !W.dayPeriod && (K(W = {
         ...Y
-      }), X(Q.copy()))
+      }), Q(X.copy()))
     },
     clearSegment(t) {
       delete W[t], z.current = t, K({
         ...W
       });
       let n = (0, r.OJ)(e.placeholderValue, N, D, P),
-        i = Q;
-      if ("dayPeriod" === t && "hour" in Q && "hour" in n) {
-        let e = Q.hour >= 12,
+        i = X;
+      if ("dayPeriod" === t && "hour" in X && "hour" in n) {
+        let e = X.hour >= 12,
           t = n.hour >= 12;
-        e && !t ? i = Q.set({
-          hour: Q.hour - 12
-        }) : !e && t && (i = Q.set({
-          hour: Q.hour + 12
+        e && !t ? i = X.set({
+          hour: X.hour - 12
+        }) : !e && t && (i = X.set({
+          hour: X.hour + 12
         }))
-      } else "hour" === t && "hour" in Q && Q.hour >= 12 && W.dayPeriod ? i = Q.set({
+      } else "hour" === t && "hour" in X && X.hour >= 12 && W.dayPeriod ? i = X.set({
         hour: n.hour + 12
-      }) : t in Q && (i = Q.set({
+      }) : t in X && (i = X.set({
         [t]: n[t]
       }));
-      L(null), X(i)
+      L(null), Q(i)
     },
     formatValue(e) {
       if (!M) return "";

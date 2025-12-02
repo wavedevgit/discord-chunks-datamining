@@ -122,16 +122,16 @@ function k(e) {
     hideParty: K,
     partyStatusElement: z,
     analyticsLocations: q
-  } = e, Q = null != (o = null == Y || null == (t = Y.timestamps) ? true : t.start) ? o : null == Y ? true : Y.created_at, X = i.useMemo(() => {
+  } = e, X = null != (o = null == Y || null == (t = Y.timestamps) ? true : t.start) ? o : null == Y ? true : Y.created_at, Q = i.useMemo(() => {
     var e;
-    return null != Q ? (0, r.jsxs)("div", {
+    return null != X ? (0, r.jsxs)("div", {
       className: j.timestampContainer,
       children: [(0, r.jsx)(c.iWm, {
         size: "xxs",
         color: "currentColor"
       }), (0, r.jsx)(m.x3, {
         entry: {
-          start: Q,
+          start: X,
           end: null == Y || null == (e = Y.timestamps) ? true : e.end
         },
         textColor: "currentColor",
@@ -139,7 +139,7 @@ function k(e) {
         textFontCode: false
       })]
     }) : null
-  }, [Q, null == Y || null == (n = Y.timestamps) ? true : n.end]), J = (0, I.H)(s), $ = (0, E.N)(y.id), ee = i.useMemo(() => $.some(e => (0, h.ig)(e) === a.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+  }, [X, null == Y || null == (n = Y.timestamps) ? true : n.end]), J = (0, I.H)(s), $ = (0, E.N)(y.id), ee = i.useMemo(() => $.some(e => (0, h.ig)(e) === a.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.YqE, {
       size: "xxs",
       color: "currentColor"
@@ -149,8 +149,8 @@ function k(e) {
     className: j.tagline,
     color: "none",
     lineClamp: 2,
-    children: [J ? (0, O.$v)(s, A, P, k, false) : X, J ? null : ee]
-  }), [J, s, A, P, k, X, ee]), en = i.useMemo(() => (0, r.jsxs)("div", {
+    children: [J ? (0, O.$v)(s, A, P, k, false) : Q, J ? null : ee]
+  }), [J, s, A, P, k, Q, ee]), en = i.useMemo(() => (0, r.jsxs)("div", {
     className: j.info,
     children: [et, K || J ? null : z]
   }), [et, K, J, z]), er = !!U, ei = (0, g.A)(y), {

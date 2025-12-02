@@ -258,14 +258,14 @@ function q(e) {
   return Y(t.id)
 }
 
-function Q(e) {
+function X(e) {
   let {
     guild: t
   } = e;
   return null != C[t.id] && (delete C[t.id], N.delete(t.id), P++, true)
 }
 
-function X(e) {
+function Q(e) {
   let {
     channel: {
       id: t,
@@ -527,13 +527,13 @@ class ey extends Chunk750041.Z {
       OVERLAY_INITIALIZE: W,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       GUILD_CREATE: q,
-      GUILD_DELETE: Q,
+      GUILD_DELETE: X,
       MESSAGE_CREATE: et,
       MESSAGE_ACK: ee,
       BULK_ACK: ea,
       UPDATE_CHANNEL_DIMENSIONS: ee,
       CHANNEL_SELECT: en,
-      CHANNEL_DELETE: X,
+      CHANNEL_DELETE: Q,
       WINDOW_FOCUS: J,
       GUILD_ACK: e_,
       GUILD_ROLE_CREATE: em,

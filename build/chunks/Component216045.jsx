@@ -2,7 +2,7 @@
 /** chunk id: 216045, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => X
+  Z: () => Q
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -115,14 +115,14 @@ function q() {
   }, [require])
 }
 
-function Q() {
+function X() {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE]), n = module === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE;
   Chunk473749.useEffect(() => {
     require && exports(Chunk921944.L.TAKE_ACTION)
   }, [require, exports])
 }
 
-function X() {
+function Q() {
   var e;
   let t = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
@@ -146,23 +146,23 @@ function X() {
     }),
     Y = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.showNotice()),
     z = Chunk695346.dN.useSetting() && null != Chunk704215 ? Chunk957730.ZP.parse(true, Chunk704215).content : Chunk704215,
-    X = Chunk74538.ZP.canUsePremiumProfileCustomization(exports),
+    Q = Chunk74538.ZP.canUsePremiumProfileCustomization(exports),
     {
       analyticsLocations: J,
       newestAnalyticsLocation: $
     } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS_USER_PROFILE);
-  q(), Q(), Chunk473749.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
+  q(), X(), Chunk473749.useEffect(() => () => Chunk570140.Z.wait(Chunk809206.W3), []);
   let [ee, et] = Chunk473749.useState(false), {
     showRedesign: en
   } = Chunk413182.b.useExperiment({
     location: "profile customization"
-  }), er = !X, ei = Chunk473749.useRef(null);
+  }), er = !Q, ei = Chunk473749.useRef(null);
   return require ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsxs)(Chunk906732.Gt, {
     value: J,
     children: [(0, Chunk54381.jsx)(Chunk475977.Z, {}), (0, Chunk54381.jsx)(Chunk296810.Z, {
       profilePreview: (0, Chunk54381.jsx)(Chunk678135.Z, W(H({
         user: exports,
-        canUsePremiumCustomization: X,
+        canUsePremiumCustomization: Q,
         onUpsellClick: Chunk265159.Z,
         pendingBio: z
       }, Chunk373230), {

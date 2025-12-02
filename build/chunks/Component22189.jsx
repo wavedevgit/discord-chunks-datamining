@@ -332,7 +332,7 @@ let ey = () => {
     specialStickerAccess: {
       name: "specialStickerAccess",
       title: Chunk388032.intl.string(Chunk388032.t.tzdIwI),
-      subtitle: Chunk388032.intl.string(Chunk388032.t.FXlU24),
+      subtitle: Chunk388032.intl.string(Chunk388032.t.hJG8ZN),
       perkImage: (0, Chunk75077.gx)(exports, Chunk994554, Chunk912429),
       description: Chunk388032.intl.string(Chunk388032.t.e7FKCi)
     },

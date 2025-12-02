@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 866579, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   table: "table_c3fe25",
   tableWithoutSeparators: "tableWithoutSeparators_c3fe25",

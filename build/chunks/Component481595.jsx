@@ -76,8 +76,8 @@ function G(e) {
     isEmbeddedIAP: K,
     purchaseType: z,
     purchasePreviewError: q,
-    devShelfFetchState: Q,
-    setPurchasePreviewError: X,
+    devShelfFetchState: X,
+    setPurchasePreviewError: Q,
     hasPaymentSources: J
   } = (0, R.JL)(), {
     isGift: $,
@@ -109,11 +109,11 @@ function G(e) {
     ea && F === ei && ei !== T.c && null == eu && (0, d.x2)(eo.applicationId, eo.id, ei, {
       isGift: $
     }).then(() => {
-      X(null)
+      Q(null)
     }).catch(e => {
-      X(e)
+      Q(e)
     })
-  }, [ei, ea, F, eo.applicationId, eo.id, eu, X, $]);
+  }, [ei, ea, F, eo.applicationId, eo.id, eu, Q, $]);
   let eg = null != es && es.length > 0 && (F === T.c || null === eh) && J ? y.w.SELECT_PAYMENT_METHOD : true,
     eE = eo.productLine === j.POd.SOCIAL_LAYER_GAME_ITEM,
     eb = et && !eE;
@@ -127,7 +127,7 @@ function G(e) {
       color: p.Z.Colors.WARNING,
       className: k.errorBlock,
       children: M.intl.string(M.t.OvMyMd)
-    }, "TEST_MODE") : null, (0, l.yE)(G.flags, j.udG.EMBEDDED) && Q === h.O.ERROR ? (0, r.jsx)(p.Z, {
+    }, "TEST_MODE") : null, (0, l.yE)(G.flags, j.udG.EMBEDDED) && X === h.O.ERROR ? (0, r.jsx)(p.Z, {
       icon: (0, u.GSL)(C.Z),
       iconSize: p.Z.Sizes.SMALL,
       color: p.Z.Colors.ERROR,

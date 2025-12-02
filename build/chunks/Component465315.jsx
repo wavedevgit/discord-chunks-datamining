@@ -1,5 +1,6 @@
-/** Chunk was on 88569 **/
-/** chunk id: 465315, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 465315, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 });
@@ -17,20 +18,20 @@ function u(e) {
     node: f
   } = e, {
     destinationKey: p
-  } = f, b = null == (t = f.useSubtitle) ? true : t.call(f), {
-    fallbackDirectory: y
-  } = (0, i.t)(), g = null == y ? true : y.entry(p), v = (null == g ? true : g.parentPanelKey) != null ? null == y ? true : y.get(g.parentPanelKey) : true, m = null == (n = f.useTitle) ? true : n.call(f), h = null == v || null == (u = v.useTitle) ? true : u.call(v);
-  if (null == v) return null;
-  let x = (null == (d = v.parent) ? true : d.type) === o.Jq.SIDEBAR_ITEM ? v.parent.icon : true;
-  return (0, r.jsx)(s.x, {
-    title: null != m ? m : h,
-    description: b,
-    leadingElement: null != x && (0, r.jsx)("div", {
+  } = f, _ = null == (t = f.useSubtitle) ? true : t.call(f), {
+    fallbackDirectory: m
+  } = (0, a.t)(), h = null == m ? true : m.entry(p), g = (null == h ? true : h.parentPanelKey) != null ? null == m ? true : m.get(h.parentPanelKey) : true, E = null == (n = f.useTitle) ? true : n.call(f), b = null == g || null == (u = g.useTitle) ? true : u.call(g);
+  if (null == g) return null;
+  let y = (null == (d = g.parent) ? true : d.type) === o.Jq.SIDEBAR_ITEM ? g.parent.icon : true;
+  return (0, r.jsx)(l.x, {
+    title: null != E ? E : b,
+    description: _,
+    leadingElement: null != y && (0, r.jsx)("div", {
       className: c.navigatorIcon,
-      children: (0, r.jsx)(x, {})
+      children: (0, r.jsx)(y, {})
     }),
-    primaryTrailingElement: (0, r.jsx)(l.LJT, {}),
-    onClick: () => a.Z.setState({
+    primaryTrailingElement: (0, r.jsx)(i.LJT, {}),
+    onClick: () => s.Z.setState({
       requestedTargetKey: p
     })
   })

@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 197530, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   page: "page_d2b0e4",
   leftColumn: "leftColumn_d2b0e4",

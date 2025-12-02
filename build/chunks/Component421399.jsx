@@ -113,8 +113,8 @@ function M(e) {
     previewGuildId: Y,
     subscribeToGroupId: W
   } = e, K = i.useRef(null), z = i.useContext(E.Z), q = null != (t = null == P ? true : P.guild_id) ? t : z, {
-    analyticsLocations: Q
-  } = (0, _.ZP)(p.Z.USERNAME), X = j ? "@" : "", {
+    analyticsLocations: X
+  } = (0, _.ZP)(p.Z.USERNAME), Q = j ? "@" : "", {
     nick: J,
     colorString: $,
     colorStrings: ee,
@@ -148,7 +148,7 @@ function M(e) {
         color: $
       } : true
     }
-  }, eE = (0, u.EJ)(X + J), eb = {
+  }, eE = (0, u.EJ)(Q + J), eb = {
     className: o()(N.username, eo, {
       [eh]: ep,
       [N.usernameColorOnName]: "username" === er && null != $
@@ -163,7 +163,7 @@ function M(e) {
       loop: true,
       shouldUnderlineOnHover: null != Z
     }) : eE,
-    "data-text": X + J
+    "data-text": Q + J
   }, ey = i.useMemo(() => L && !k ? (0, r.jsx)(b.ZP, {
     primaryGuild: n.primaryGuild,
     userId: a.author.id,
@@ -204,7 +204,7 @@ function M(e) {
     })), ey]
   }), eS = null != H ? H[0] : null, eI = null != H ? H[1] : null;
   return (0, r.jsxs)(_.Gt, {
-    value: Q,
+    value: X,
     children: [null != eS && !U && L ? (0, r.jsxs)(r.Fragment, {
       children: [" ", eS, " "]
     }) : null, ea ? (0, r.jsx)(d.FhE, {

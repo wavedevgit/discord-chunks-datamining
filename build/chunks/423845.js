@@ -47,8 +47,8 @@ var Chunk620014 = require("./620014.js"),
   K = "[object Int8Array]",
   z = "[object Int16Array]",
   q = "[object Int32Array]",
-  Q = "[object Uint8Array]",
-  X = "[object Uint8ClampedArray]",
+  X = "[object Uint8Array]",
+  Q = "[object Uint8ClampedArray]",
   J = "[object Uint16Array]",
   $ = "[object Uint32Array]",
   ee = {};
@@ -87,4 +87,4 @@ function et(e, t, n, P, R, w) {
     H && (r = e[i = r]), a(D, i, et(r, t, n, i, e, w))
   }), D
 }
-ee[N] = ee[P] = ee[V] = ee[H] = ee[R] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[j] = ee[M] = ee[k] = ee[U] = ee[G] = ee[Z] = ee[B] = ee[Q] = ee[X] = ee[J] = ee[$] = true, ee[D] = ee[x] = ee[F] = false, module.exports = et
+ee[N] = ee[P] = ee[V] = ee[H] = ee[R] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[j] = ee[M] = ee[k] = ee[U] = ee[G] = ee[Z] = ee[B] = ee[X] = ee[Q] = ee[J] = ee[$] = true, ee[D] = ee[x] = ee[F] = false, module.exports = et

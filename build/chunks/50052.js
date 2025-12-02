@@ -1,7 +1,7 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 50052, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => T
 });
 var Chunk442837 = require("./442837.js"),
   Chunk223245 = require("./223245.js"),
@@ -18,7 +18,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       } = Chunk246946.Z.getSettings();
       return module
     }),
-    setValue: t => r.Z.update({
+    setValue: t => l.Z.update({
       hidePersonalInformation: t
     })
   }),
@@ -30,7 +30,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       } = Chunk246946.Z.getSettings();
       return module
     }),
-    setValue: t => r.Z.update({
+    setValue: t => l.Z.update({
       hideInstantInvites: t
     })
   }),
@@ -42,7 +42,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       } = Chunk246946.Z.getSettings();
       return module
     }),
-    setValue: t => r.Z.update({
+    setValue: t => l.Z.update({
       disableSounds: t
     })
   }),
@@ -54,11 +54,11 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       } = Chunk246946.Z.getSettings();
       return module
     }),
-    setValue: t => r.Z.update({
+    setValue: t => l.Z.update({
       disableNotifications: t
     })
   }),
-  T = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
+  I = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["iA81+a"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.P4vj0h),
     usePredicate: () => {
@@ -71,12 +71,12 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       } = Chunk246946.Z.getSettings();
       return module
     }),
-    setValue: t => r.Z.update({
+    setValue: t => l.Z.update({
       enableContentProtection: t
     })
   }),
-  I = (0, Chunk509613.Uc)(Chunk313789.n.STREAMER_MODE_OPTIONS_LIST, {
+  T = (0, Chunk509613.Uc)(Chunk313789.n.STREAMER_MODE_OPTIONS_LIST, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.UtW8R6),
     variant: "separators",
-    buildLayout: () => [c, d, E, S, T]
+    buildLayout: () => [c, d, E, S, I]
   })

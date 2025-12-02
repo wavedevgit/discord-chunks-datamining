@@ -897,7 +897,7 @@
           if (true === t) return "undefined";
           if (null === t) return "null";
           if ("boolean" == typeof t) return t ? "true" : "false";
-          if ("string" == typeof t) return Q(t, l);
+          if ("string" == typeof t) return X(t, l);
           if ("number" == typeof t) {
             if (0 === t) return 1 / 0 / t > 0 ? "0" : "-0";
             var v = String(t);
@@ -934,13 +934,13 @@
             return e(t, l, i + 1, s)
           }
           if ("function" == typeof t && !H(t)) {
-            var X = function(e) {
+            var Q = function(e) {
                 if (e.name) return e.name;
                 var t = g.call(h.call(e), /^function\s*([\w$]+)/);
                 return t ? t[1] : null
               }(t),
               er = en(t, W);
-            return "[Function" + (X ? ": " + X : " (anonymous)") + "]" + (er.length > 0 ? " { " + I.call(er, ", ") + " }" : "")
+            return "[Function" + (Q ? ": " + Q : " (anonymous)") + "]" + (er.length > 0 ? " { " + I.call(er, ", ") + " }" : "")
           }
           if (Y(t)) {
             var ei = R ? b.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : P.call(t);
@@ -1089,17 +1089,17 @@
           return false
         }
 
-        function Q(e, t) {
+        function X(e, t) {
           if (e.length > t.maxStringLength) {
             var n = e.length - t.maxStringLength,
               r = "... " + n + " more character" + (n > 1 ? "s" : "");
-            return Q(E.call(e, 0, t.maxStringLength), t) + r
+            return X(E.call(e, 0, t.maxStringLength), t) + r
           }
           var i = G[t.quoteStyle || "single"];
-          return i.lastIndex = 0, Z(b.call(b.call(e, i, "\\$1"), /[\x00-\x1f]/g, X), "single", t)
+          return i.lastIndex = 0, Z(b.call(b.call(e, i, "\\$1"), /[\x00-\x1f]/g, Q), "single", t)
         }
 
-        function X(e) {
+        function Q(e) {
           var t = e.charCodeAt(0),
             n = {
               8: "b",

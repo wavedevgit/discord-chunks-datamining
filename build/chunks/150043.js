@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 150043, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   metricsContainer: "metricsContainer_cd734c",
   totalMembersIcon: "totalMembersIcon_cd734c",

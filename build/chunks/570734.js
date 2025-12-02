@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 570734, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   creatorBenefitsContainer: "creatorBenefitsContainer__02e4c",
   creatorBenefitCard: "creatorBenefitCard__02e4c " + require("./169400.js").card,

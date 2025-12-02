@@ -141,7 +141,7 @@ function q(e, t) {
   return null != a ? [n, r] = a() : x().has(i) ? [n, r] = U(i, "MMMM", "month") : L().has(i) ? [n, r] = U(i, "dddd", "day") : j().has(i) ? [n, r] = U(i, "YYYY", "year") : [n, r] = U(i, C.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
 }
 
-function Q(e, t, n) {
+function X(e, t, n) {
   let r = f.ZP.getChannels(n)[f.sH].concat(f.ZP.getChannels(n)[f.Zb]),
     i = f.ZP.getTextChannelNameDisambiguations(n),
     a = S.Z.getCurrentConfig({
@@ -159,7 +159,7 @@ function Q(e, t, n) {
   return (null == s ? true : s.length) > 0 && (e.setData("channelIds", s.map(e => e.id)), true)
 }
 
-function X(e, t) {
+function Q(e, t) {
   let n = Object.values(d.Z.getMutablePrivateChannels()).filter(e => {
     if (t === (0, u.F6)(e, h.default, p.Z)) returntrue;
     if (e.isDM()) {
@@ -173,7 +173,7 @@ function X(e, t) {
 
 function J(e, t) {
   let n = e.getMatch(1);
-  return C.Xyh.test(n) ? (e.setData("channelIds", [n]), true) : (n.startsWith('"') && n.endsWith('"') && (n = n.substring(1, n.length - 1).replaceAll(/\\(.)/g, (e, t) => t)), (0, v.b7)(t)) ? Q(e, n, t.guildId) : t.type === C.aib.DMS && !m.Z.hidePersonalInformation && X(e, n)
+  return C.Xyh.test(n) ? (e.setData("channelIds", [n]), true) : (n.startsWith('"') && n.endsWith('"') && (n = n.substring(1, n.length - 1).replaceAll(/\\(.)/g, (e, t) => t)), (0, v.b7)(t)) ? X(e, n, t.guildId) : t.type === C.aib.DMS && !m.Z.hidePersonalInformation && Q(e, n)
 }
 
 function $(e) {

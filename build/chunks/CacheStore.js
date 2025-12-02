@@ -153,24 +153,24 @@ async function q(e, t, n) {
   }
 }
 
-function Q() {
+function X() {
   return en(() => Chunk570140.Z.dispatch({
     type: "CACHE_LOADED_LAZY_NO_CACHE"
   })), Promise.resolve()
 }
-let X = false;
+let Q = false;
 async function J(e, t) {
   var n, r;
   if (null == e) return [];
   switch (t.page) {
     case "private-channels":
     case "guild-channels":
-      X = true;
+      Q = true;
       break;
     case "other":
-      "@me" === t.guildId && (X = true)
+      "@me" === t.guildId && (Q = true)
   }
-  if (X) return null != (n = await (0, l.dI)(() => i.Z.timeAsync("\uD83D\uDCBE", "cache: guilds", () => u.Z.getAsync(e)))) ? n : [];
+  if (Q) return null != (n = await (0, l.dI)(() => i.Z.timeAsync("\uD83D\uDCBE", "cache: guilds", () => u.Z.getAsync(e)))) ? n : [];
   let a = null != (r = (await p.Z.getCommittedVersions()).initial_guild_id) ? r : t.guildId;
   if (null == a || "@me" === a) return [];
   let o = await (0, l.dI)(() => u.Z.getOneAsync(e, a));
@@ -198,7 +198,7 @@ function ee(e, t) {
 }
 async function et(e, t, n, r) {
   D.verbose("loading late lazy cache");
-  let [a, o, f] = await v.Z.fetchLazyCache.measureAsync(() => Promise.all([(0, l.dI)(() => null != e ? i.Z.timeAsync("\uD83D\uDCBE", "cache: cache_version", () => d.Z.okAsync(e)) : Promise.resolve(true)), (0, l.dI)(() => null == e || X ? Promise.resolve([]) : i.Z.timeAsync("\uD83D\uDCBE", "cache: lazy guilds", () => u.Z.getAsync(e))), (0, l.dI)(() => null != e ? i.Z.timeAsync("\uD83D\uDCBE", "cache: basic_channels", () => c.Z.getAsync(e)) : Promise.resolve({
+  let [a, o, f] = await v.Z.fetchLazyCache.measureAsync(() => Promise.all([(0, l.dI)(() => null != e ? i.Z.timeAsync("\uD83D\uDCBE", "cache: cache_version", () => d.Z.okAsync(e)) : Promise.resolve(true)), (0, l.dI)(() => null == e || Q ? Promise.resolve([]) : i.Z.timeAsync("\uD83D\uDCBE", "cache: lazy guilds", () => u.Z.getAsync(e))), (0, l.dI)(() => null != e ? i.Z.timeAsync("\uD83D\uDCBE", "cache: basic_channels", () => c.Z.getAsync(e)) : Promise.resolve({
     all: [],
     stale: [],
     channels: []
@@ -331,7 +331,7 @@ class er extends(r = Chunk442837.ZP.Store) {
       let t = S.default.getId(),
         r = E.Z.carefullyOpenDatabase(t),
         [i, a, o] = await v.Z.loadMiniCache.measureAsync(() => q(r, t, e));
-      i ? (n(), await et(r, t, a, o)) : (n(), await Q())
+      i ? (n(), await et(r, t, a, o)) : (n(), await X())
     } catch (e) {
       D.error("clearing cache. exception encountered while loading cache.", e, e.stack), (0, P.Z)("cache:exception"), n(), s.Z.dispatch({
         type: "RESET_SOCKET",

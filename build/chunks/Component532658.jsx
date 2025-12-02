@@ -2,7 +2,7 @@
 /** chunk id: 532658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => X,
+  ZP: () => Q,
   e5: () => G,
   px: () => U
 }), require("./388685.js");
@@ -248,7 +248,7 @@ let K = Chunk473749.memo(function(e) {
     })
   }),
   q = Chunk473749.memo(Chunk481060.qEK),
-  Q = Chunk473749.memo(function(e) {
+  X = Chunk473749.memo(function(e) {
     let {
       channel: t,
       flipped: n = false,
@@ -274,10 +274,10 @@ let K = Chunk473749.memo(function(e) {
       width: V
     } = (0, _.ZP)(), {
       showConnectedAnimation: H
-    } = W(k, P), Y = null == D ? true : D.sessionId, Q = t.id, X = s.id, [J] = (0, l.e7)([C.Z], () => {
+    } = W(k, P), Y = null == D ? true : D.sessionId, X = t.id, Q = s.id, [J] = (0, l.e7)([C.Z], () => {
       var e;
-      return [null != (e = C.Z.getVoiceStateForChannel(Q, X)) ? e : C.Z.getVoiceStateForSession(X, Y), C.Z.getVoiceStateVersion()]
-    }, [Q, X, Y], N.Q), $ = P ? D : null != J ? J : D, [ee, et, en] = (0, l.Wu)([A.Z], () => B ? [!A.Z.isSupported() || A.Z.isSelfMute() || A.Z.isSelfMutedTemporarily(), A.Z.isSelfDeaf(), false] : [!A.Z.isSupported() || A.Z.isLocalMute(s.id), false, A.Z.isLocalVideoDisabled(s.id)], [B, s.id]), er = (0, l.e7)([S.Z], () => {
+      return [null != (e = C.Z.getVoiceStateForChannel(X, Q)) ? e : C.Z.getVoiceStateForSession(Q, Y), C.Z.getVoiceStateVersion()]
+    }, [X, Q, Y], N.Q), $ = P ? D : null != J ? J : D, [ee, et, en] = (0, l.Wu)([A.Z], () => B ? [!A.Z.isSupported() || A.Z.isSelfMute() || A.Z.isSelfMutedTemporarily(), A.Z.isSelfDeaf(), false] : [!A.Z.isSupported() || A.Z.isLocalMute(s.id), false, A.Z.isLocalVideoDisabled(s.id)], [B, s.id]), er = (0, l.e7)([S.Z], () => {
       let e = S.Z.getCurrentUserActiveStream();
       return null != e && e.ownerId !== s.id && S.Z.getViewerIds(e).filter(e => e === s.id).length > 0
     }, [s.id]), ei = P && (null == D ? true : D.discoverable), ea = (0, m.Z)({
@@ -447,7 +447,7 @@ let K = Chunk473749.memo(function(e) {
       })]
     })
   }),
-  X = Chunk473749.memo(function(e) {
+  Q = Chunk473749.memo(function(e) {
     let {
       widgetId: t,
       channel: a,
@@ -532,7 +532,7 @@ let K = Chunk473749.memo(function(e) {
       spacing: 24,
       children: () => {
         var e;
-        return (0, r.jsx)(Q, {
+        return (0, r.jsx)(X, {
           ref: E,
           guildId: null == a ? true : a.guild_id,
           user: b,

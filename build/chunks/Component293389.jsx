@@ -254,7 +254,7 @@ function B(e) {
     })
   }
 
-  function Q() {
+  function X() {
     let e, {
       played: t,
       exePath: n
@@ -270,7 +270,7 @@ function B(e) {
     })
   }
 
-  function X() {
+  function Q() {
     if (!k || null != v) return null;
     let {
       overlay: e,
@@ -370,8 +370,8 @@ function B(e) {
       className: F,
       children: [(0, r.jsxs)("div", {
         className: o()(N.gameNameLastPlayed, R.vertical),
-        children: [q(), Q()]
-      }), _ ? null : $(), J(), X(), a && !_ || en ? null : ee()]
+        children: [q(), X()]
+      }), _ ? null : $(), J(), Q(), a && !_ || en ? null : ee()]
     }), null != h && h.length > 0 && !a && (0, r.jsx)("div", {
       className: N.subgameContainer,
       children: h.map((e, t) => (0, r.jsxs)(i.Fragment, {

@@ -580,7 +580,7 @@ function q(e) {
   null != t && t !== y.DEV_PID && t !== y.UNSET_PID && (D.verbose("AUDIO_TOGGLE_SELF_MUTE", e), U.handleMuteToggled())
 }
 
-function Q(e) {
+function X(e) {
   D.verbose("WINDOW_FOCUS", e);
   let t = (0, O.UU)();
   if (e.windowId !== t) return void D.verbose("WINDOW_FOCUS: Not main window", {
@@ -590,7 +590,7 @@ function Q(e) {
   U.desktopSetFocused(e.focused)
 }
 
-function X(e) {
+function Q(e) {
   if (e.pid === y.DEV_PID || e.pid === y.UNSET_PID) return;
   let t = U.getByPid(e.pid);
   if (null == t) return void D.error("OVERLAY_SUCCESSFULLY_SHOWN: Game not found", e, U.debug);
@@ -674,10 +674,10 @@ class en extends Chunk147913.Z {
       SOUNDBOARD_SET_OVERLAY_ENABLED: Y,
       MESSAGE_ACKED: K,
       MESSAGE_CREATE: z,
-      WINDOW_FOCUS: Q,
+      WINDOW_FOCUS: X,
       RTC_CONNECTION_STATE: ee.handleRTCConnectionState,
       AUDIO_TOGGLE_SELF_MUTE: q,
-      OVERLAY_SUCCESSFULLY_SHOWN: X,
+      OVERLAY_SUCCESSFULLY_SHOWN: Q,
       OVERLAY_UPDATE_OVERLAY_METHOD: J,
       OVERLAY_TRACK_STATE_CHANGED: $
     })

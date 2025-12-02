@@ -355,7 +355,7 @@ function q(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   let {
     channelId: t,
     messages: n
@@ -366,7 +366,7 @@ function Q(e) {
   return (t === r || t === i) && W(n)
 }
 
-function X(e) {
+function Q(e) {
   let {
     data: t
   } = e, n = false;
@@ -447,7 +447,7 @@ function ea(e) {
 class eo extends Chunk147913.Z {
   constructor(...e) {
     super(...e), w(this, "actions", {
-      LOAD_MESSAGES_SUCCESS: Q,
+      LOAD_MESSAGES_SUCCESS: X,
       LOAD_FORUM_POSTS: $,
       LOAD_THREADS_SUCCESS: ee,
       LOAD_ARCHIVED_THREADS_SUCCESS: ee,
@@ -455,8 +455,8 @@ class eo extends Chunk147913.Z {
       MESSAGE_CREATE: q,
       MESSAGE_UPDATE: z,
       LOGOUT: M,
-      SEARCH_MESSAGES_SUCCESS: X,
-      MOD_VIEW_SEARCH_MESSAGES_SUCCESS: X,
+      SEARCH_MESSAGES_SUCCESS: Q,
+      MOD_VIEW_SEARCH_MESSAGES_SUCCESS: Q,
       CHANNEL_SELECT: en,
       LOAD_PINNED_MESSAGES_SUCCESS: J,
       USER_SETTINGS_PROTO_UPDATE: er,

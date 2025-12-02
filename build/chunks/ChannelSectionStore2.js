@@ -226,10 +226,10 @@ function q() {
   Chunk873546.tq && A && (A = false, C = false)
 }
 
-function Q(e) {
+function X(e) {
   return D = e.searchContextId, z()
 }
-class X extends(r = Chunk442837.ZP.PersistedStore) {
+class Q extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n, r, i, a;
@@ -275,9 +275,9 @@ class X extends(r = Chunk442837.ZP.PersistedStore) {
     return D
   }
 }
-O(X, "displayName", "ChannelSectionStore"), O(X, "persistKey", "ChannelSectionStore2");
-let J = new X(Chunk570140.Z, {
-  SIDEBAR_SET_SELECTED_SEARCH_CONTEXT: Q,
+O(Q, "displayName", "ChannelSectionStore"), O(Q, "persistKey", "ChannelSectionStore2");
+let J = new Q(Chunk570140.Z, {
+  SIDEBAR_SET_SELECTED_SEARCH_CONTEXT: X,
   CHANNEL_TOGGLE_MEMBERS_SECTION: M,
   USER_PROFILE_SIDEBAR_TOGGLE_SECTION: U,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: k,

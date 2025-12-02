@@ -1,5 +1,6 @@
-/** Chunk was on 88569 **/
-/** chunk id: 598612, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 598612, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Y: () => o
 });
@@ -12,20 +13,20 @@ function o(e) {
     title: t,
     subtitle: n,
     badge: o,
-    type: a = "primary"
+    type: s = "primary"
   } = e;
-  return "secondary" === a ? (0, r.jsx)(l.Kqy, {
+  return "secondary" === s ? (0, r.jsx)(i.Kqy, {
     gap: 8,
     padding: {
       left: 12,
       right: 12
     },
-    children: (0, r.jsx)(l.X6q, {
+    children: (0, r.jsx)(i.X6q, {
       variant: "heading-md/semibold",
       color: "text-secondary",
       children: t
     })
-  }) : (0, r.jsxs)(l.Kqy, {
+  }) : (0, r.jsxs)(i.Kqy, {
     gap: 8,
     padding: {
       left: 12,
@@ -33,13 +34,13 @@ function o(e) {
       bottom: 24
     },
     children: [(0, r.jsxs)("div", {
-      className: i.headerTitle,
-      children: [(0, r.jsx)(l.X6q, {
+      className: a.headerTitle,
+      children: [(0, r.jsx)(i.X6q, {
         variant: "heading-xl/normal",
         color: "header-primary",
         children: t
       }), null != o && o]
-    }), null != n && (0, r.jsx)(l.xvT, {
+    }), null != n && (0, r.jsx)(i.xvT, {
       variant: "text-md/normal",
       color: "text-secondary",
       children: n

@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 962610, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -21,8 +21,8 @@ let d = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AND_VIDEO_STREAM_INFO_OVERLAY, {
     return (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.isStreamInfoOverlayEnabled)
   },
   setValue: function(t) {
-    let e = u.default.isStreamInfoOverlayEnabled;
-    (0, o.Z)("stream_info_overlay_enabled", t, e), (0, r.y)({
+    let e = r.default.isStreamInfoOverlayEnabled;
+    (0, o.Z)("stream_info_overlay_enabled", t, e), (0, l.y)({
       isStreamInfoOverlayEnabled: t
     })
   }

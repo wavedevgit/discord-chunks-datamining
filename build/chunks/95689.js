@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 95689, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -21,8 +21,8 @@ let g = (0, Chunk509613.qs)(Chunk313789.n.EXPERIMENTAL_UNREADS, {
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.LGynPs),
   useValue: () => (0, Chunk442837.e7)([Chunk9156.ZP], () => Chunk9156.ZP.useNewNotifications),
   setValue: function(t) {
-    l.Z.setAccountFlag(S.c.USE_NEW_NOTIFICATIONS, t), t || (r.K.set("turnedOffNewNotifications", true), c.default.track(E.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
-      num_guilds_with_new_setting: s.Z.getGuildsArray().filter(t => a.ZP.resolveGuildUnreadSetting(t) === T.i.ONLY_MENTIONS).length
+    s.Z.setAccountFlag(S.c.USE_NEW_NOTIFICATIONS, t), t || (l.K.set("turnedOffNewNotifications", true), c.default.track(E.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
+      num_guilds_with_new_setting: u.Z.getGuildsArray().filter(t => a.ZP.resolveGuildUnreadSetting(t) === I.i.ONLY_MENTIONS).length
     }))
   },
   usePredicate: () => (0, Chunk442837.e7)([Chunk594174.default, Chunk9156.ZP], () => {

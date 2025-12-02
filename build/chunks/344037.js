@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 344037, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   onboardingContainer: "onboardingContainer_c3ab2b",
   upsellOnTop: "upsellOnTop_c3ab2b",

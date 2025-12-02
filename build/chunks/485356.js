@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 485356, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -19,7 +19,7 @@ let c = (0, Chunk509613.UO)(Chunk313789.n.STREAMING_STREAM_ATTENUATION_STRENGTH,
   maxValue: 100,
   getInitialValue: Chunk131951.Z.getSidechainCompressionStrength,
   setValue: function(t) {
-    let e = [r.Z.USER_SETTINGS_VOICE_AND_VIDEO];
+    let e = [l.Z.USER_SETTINGS_VOICE_AND_VIDEO];
     i.Z.setSidechainCompressionStrength(t, {
       analyticsLocations: e
     })

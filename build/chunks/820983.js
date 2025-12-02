@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 820983, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   header: "header_a9b452",
   subheader: "subheader_a9b452",

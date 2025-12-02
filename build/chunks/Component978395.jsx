@@ -56,7 +56,7 @@ function L(e) {
     location: "UserProfilePopoutBody"
   }), W = t.id === n.id, K = (0, p.Z)({
     location: "UserProfilePopoutBody"
-  }), z = (null == L ? true : L.widgets) != null && L.widgets.length > 0, q = K && z, Q = (0, d.I5)(n);
+  }), z = (null == L ? true : L.widgets) != null && L.widgets.length > 0, q = K && z, X = (0, d.I5)(n);
   return (0, r.jsxs)(a.Ttm, {
     fade: true,
     className: x.body,
@@ -129,7 +129,7 @@ function L(e) {
       widgets: null == L ? true : L.widgets,
       onOpenUserProfileModal: k
     }), W && (0, r.jsx)(m.Z, {
-      isPremiumUser: Q,
+      isPremiumUser: X,
       onInteraction: G
     }), Y ? (0, r.jsx)(O.Z, {
       user: t,

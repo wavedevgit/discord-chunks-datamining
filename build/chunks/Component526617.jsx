@@ -53,7 +53,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk412553 = require("./412553.js");
 
-function Q(e, t, n) {
+function X(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -62,14 +62,14 @@ function Q(e, t, n) {
   }) : e[t] = n, e
 }
 
-function X(e) {
+function Q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Q(e, t, n[t])
+      X(e, t, n[t])
     })
   }
   return e
@@ -227,7 +227,7 @@ function ed(e) {
     onClose: g,
     onSelect: S,
     shouldValidateSelectedSound: R = false,
-    suppressPlaySound: Q = false,
+    suppressPlaySound: X = false,
     shouldShowUpsell: J = true,
     gridNotice: ee,
     soundButtonOverlay: er,
@@ -245,7 +245,7 @@ function ed(e) {
     analyticsLocations: eb
   } = (0, _.ZP)(p.Z.PREMIUM_UPSELL), {
     location: ey
-  } = (0, f.O)(), eO = i.useMemo(() => $(X({}, ey), {
+  } = (0, f.O)(), eO = i.useMemo(() => $(Q({}, ey), {
     section: Y.jXE.SOUNDBOARD_SOUND_PICKER
   }), [ey]), [ev, eS] = i.useState(null), eI = (0, l.e7)([N.default], () => N.default.getCurrentUser()), eT = (0, D.I5)(eI, K.PremiumTypes.TIER_2), eA = (0, l.e7)([P.Z], () => {
     var e;
@@ -258,11 +258,11 @@ function ed(e) {
     soundCounts: eL
   } = (0, Z.ZP)(a, {}, ep), [ej, eM] = i.useState([]), ek = (0, Z.FS)(eD, ej, eN), eU = (0, b.Iu)(e => e.isNitroLockedSectionVisible), [eG, eZ] = i.useState(false), eB = i.useMemo(() => ek.filter(e => e.items.length > 0), [ek]), eF = i.useMemo(() => eB.findLastIndex(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), [eB]), eV = !eT && J && false !== eF, eH = i.useMemo(() => eV ? [0, 0, 8, 0] : [0, 0, 0, 0], [eV]), eY = A.T4.useSetting(), eW = i.useMemo(() => new Set(eY), [eY]), eK = null == a, ez = D.ZP.canUseCustomCallSounds(eI), eq = i.useCallback(e => {
     eW.has(e) ? eW.delete(e) : eW.add(e), A.T4.updateSetting(Array.from(eW))
-  }, [eW]), eQ = i.useCallback((e, t, n, r) => {
+  }, [eW]), eX = i.useCallback((e, t, n, r) => {
     if (null != S && !R) return S(e, n);
     let i = (0, M.Nq)(eI, e, a, false);
     if (null != S && R && i) S(e, n);
-    else if (!Q && i && (0, M.C0)(a)) {
+    else if (!X && i && (0, M.C0)(a)) {
       var o;
       (0, M.GN)(e, null != (o = null == a ? true : a.id) ? o : Y.lds, t, r), eP && w.default.track(Y.rMx.SEARCH_RESULT_SELECTED, {
         search_type: Y.aib.SOUNDBOARD,
@@ -274,20 +274,20 @@ function ed(e) {
       if ((0, M.Nq)(eI, e, a)) return;
       J && eS(e)
     }
-  }, [Q, eI, a, J, eP, eN, S, R]), eX = i.useCallback((e, t) => {
+  }, [X, eI, a, J, eP, eN, S, R]), eQ = i.useCallback((e, t) => {
     switch (e.item.type) {
       case j.vB.SOUND:
         var n;
         let r = null != (n = es[null == e ? true : e.category]) ? n : null,
           i = null == e ? true : e.item.index;
-        return eQ(e.item.sound, null == r ? eE : [...eE, r], (null == t ? true : t.shiftKey) !== true, i);
+        return eX(e.item.sound, null == r ? eE : [...eE, r], (null == t ? true : t.shiftKey) !== true, i);
       case j.vB.ADD_SOUND:
         return g(), (0, H.Z)(e.item.guild.id)
     }
-  }, [eE, eQ, g]), eJ = i.useCallback((e, n, i, s, l) => {
+  }, [eE, eX, g]), eJ = i.useCallback((e, n, i, s, l) => {
     let c = eB[i.sectionIndex],
       u = J && el(c.categoryInfo, eT, t) && eV;
-    return (0, r.jsx)("ul", $(X({}, n), {
+    return (0, r.jsx)("ul", $(Q({}, n), {
       className: o()(q.soundRow, {
         [q.soundRowNitroLocked]: u,
         [q.brandRefresh]: eh
@@ -303,9 +303,9 @@ function ed(e) {
         rowIndex: i.rowIndex,
         columnIndex: t,
         isUsingKeyboardNavigation: i.isUsingKeyboardNavigation,
-        suppressPlaySound: Q,
+        suppressPlaySound: X,
         getItemProps: s,
-        onSelectItem: eX,
+        onSelectItem: eQ,
         onItemMouseEnter: l,
         buttonOverlay: er,
         isNitroLocked: u,
@@ -313,7 +313,7 @@ function ed(e) {
         inExpressionPicker: e_
       }, t))
     }), "row-".concat(n["aria-rowindex"]))
-  }, [eB, J, eT, t, Q, eX, a, eK, ez, eC, eE, er, eV, e_, eh]), e$ = i.useCallback((e, t) => {
+  }, [eB, J, eT, t, X, eQ, a, eK, ez, eC, eE, er, eV, e_, eh]), e$ = i.useCallback((e, t) => {
     if (e <= 0 || !J) returnfalse;
     let n = eB[e],
       r = eB[e - 1],
@@ -378,7 +378,7 @@ function ed(e) {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
-      return t => (0, r.jsx)(e, X({
+      return t => (0, r.jsx)(e, Q({
         sourceAnalyticsLocations: eE
       }, t))
     })
@@ -472,7 +472,7 @@ function ed(e) {
       upsellViewedTrackingData: {
         type: K.cd.SOUND_PICKER_SOUND_CLICKED,
         is_external: true,
-        location: $(X({}, eO), {
+        location: $(Q({}, eO), {
           object: Y.qAy.SOUNDBOARD_SOUND
         }),
         location_stack: eb,
@@ -486,7 +486,7 @@ function ed(e) {
       collapsedCategories: eW,
       containerWidth: d,
       store: E.Wq,
-      onSelectItem: eX,
+      onSelectItem: eQ,
       onSearchExpressions: e6,
       hasSearchResults: ej.length > 0,
       defaultSearchPlaceholder: z.intl.string(z.t.sKt3xS),

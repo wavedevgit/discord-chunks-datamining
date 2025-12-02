@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 32490, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   addAnotherRuleCardContainer: "addAnotherRuleCardContainer__0c1e8",
   mainRuleContainer: "mainRuleContainer__0c1e8",

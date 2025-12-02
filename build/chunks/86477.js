@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 86477, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   descriptionBox: "descriptionBox__981f7",
   descriptionSection: "descriptionSection__981f7",

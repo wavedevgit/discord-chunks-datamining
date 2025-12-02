@@ -71,8 +71,8 @@ let k = {
       embeddedActivity: z
     } = (0, L.n)(y), {
       primaryColor: q,
-      secondaryColor: Q
-    } = (0, P.Z)(null == V ? true : V.src), X = (0, o.e7)([E.default], () => E.default.locale), {
+      secondaryColor: X
+    } = (0, P.Z)(null == V ? true : V.src), Q = (0, o.e7)([E.default], () => E.default.locale), {
       streamPreviewUrl: J,
       stream: $
     } = (0, I.Z)(y), {
@@ -95,11 +95,11 @@ let k = {
         applicationImageSrc: null == V ? true : V.src,
         avatarSrcs: ee.map(e => e.getAvatarURL(b.guild_id, 128)),
         description: t,
-        timestamp: (0, T.yh)(y, X),
-        colors: [q, Q],
+        timestamp: (0, T.yh)(y, Q),
+        colors: [q, X],
         channelId: e
       })
-    }, [null == V ? true : V.src, b, ee, y, X, er, et, en, q, Q, H]);
+    }, [null == V ? true : V.src, b, ee, y, Q, er, et, en, q, X, H]);
     if (null == H) return null;
     let ef = (0, r.jsx)(w.Gk, {
         location: null == J ? w.Gt.POPOUT : w.Gt.STREAMING_POPOUT,

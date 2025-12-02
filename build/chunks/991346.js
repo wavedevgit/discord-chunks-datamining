@@ -4,7 +4,7 @@
 require.d(exports, {
   Gj: () => K,
   Pt: () => W,
-  VO: () => X,
+  VO: () => Q,
   ji: () => ee,
   q8: () => J
 }), require("./836215.js"), require("./472816.js"), require("./794429.js"), require("./388685.js"), require("./467055.js"), require("./539854.js");
@@ -174,8 +174,8 @@ function W() {
       location: Chunk324805.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
     }),
     q = (0, Chunk442837.e7)([Chunk283595.Z], () => Chunk283595.Z.hasLibraryApplication()),
-    Q = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.hasTOTPEnabled()),
-    X = Chunk695346.Sb.useSetting(),
+    X = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.hasTOTPEnabled()),
+    Q = Chunk695346.Sb.useSetting(),
     J = (0, Chunk610697.Z)(),
     $ = null == (o = (0, Chunk880257.Z)()) || Chunk493544,
     ee = (null == (t = (0, Chunk921157.s)()) ? true : exports.length) > 0,
@@ -221,8 +221,8 @@ function W() {
     isEligibleForQuests: z,
     isStricterMessageRequestsEnabled: J,
     hasLibraryApplication: q,
-    hasTOTPEnabled: Q,
-    developerMode: X,
+    hasTOTPEnabled: X,
+    developerMode: Q,
     isAdultUser: $,
     hasSecureFramesVerifiedUserIds: ee,
     hasIgnoredUsers: en,
@@ -234,7 +234,7 @@ function W() {
     isChatMentionSuggestionsSettingEnabled: es,
     isCrossDMSearchEnabledSettingVisible: el,
     isRedesignedNotificationsEnabled: ec
-  }), [X, B, et, en, q, ee, Q, Chunk839469, $, z, W, Y, V, Chunk388032, H, J, Chunk726985, K, F, Chunk413182, Chunk906467, er, ei, ea, eo, es, el, ec])
+  }), [Q, B, et, en, q, ee, X, Chunk839469, $, z, W, Y, V, Chunk388032, H, J, Chunk726985, K, F, Chunk413182, Chunk906467, er, ei, ea, eo, es, el, ec])
 }
 
 function K(e) {
@@ -291,7 +291,7 @@ function z(e, t, n) {
 function q(e, t, n) {
   let r = [],
     i = $(t),
-    a = Q(t, new Set(Array.from(null != n ? n : []).filter(e => i.has(e))));
+    a = X(t, new Set(Array.from(null != n ? n : []).filter(e => i.has(e))));
   return e.forEach(e => {
     0 !== e.settings.length && (true === e.divider && r.push({
       section: o.ID.DIVIDER
@@ -306,7 +306,7 @@ function q(e, t, n) {
   }), r
 }
 
-function Q(e, t) {
+function X(e, t) {
   let n = new Map;
   return null != t && t.forEach(t => {
     let r = e[t].parent;
@@ -319,7 +319,7 @@ function Q(e, t) {
   }), n
 }
 
-function X() {
+function Q() {
   let e = W(),
     {
       shouldMergeGameSettings: t

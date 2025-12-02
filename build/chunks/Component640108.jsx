@@ -368,7 +368,7 @@ class q extends Chunk473749.Component {
     })
   }
 }
-let Q = (0, Chunk818083.B)({
+let X = (0, Chunk818083.B)({
   kind: "user",
   id: "2024-03_media_play_metrics",
   label: "Media play metrics User Experiment",
@@ -383,7 +383,7 @@ let Q = (0, Chunk818083.B)({
     }
   }]
 });
-class X {
+class Q {
   moveToState(e) {
     this.stateTime = performance.now(), this.currentState = e
   }
@@ -533,7 +533,7 @@ class X {
       null != e && (this.lastPlayingTime = e)
     }), L(this, "onLoadedMetadata", e => {
       this.metadata.fileDurationSec = e.currentTarget.duration
-    }), this.metadata = e, this.analyticsEnabled = Q.getCurrentConfig({
+    }), this.metadata = e, this.analyticsEnabled = X.getCurrentConfig({
       location: "media_player"
     }).enabled
   }
@@ -1078,7 +1078,7 @@ class J extends(i = Chunk473749.PureComponent) {
       var t, n, r, i;
       let a = e.currentTarget;
       this._analytics.errorCode = null != (r = null == (t = a.error) ? true : t.code) ? r : null, this._analytics.errorMessage = null != (i = null == (n = a.error) ? true : n.message) ? i : null, this._analytics.onError(e)
-    }), this._analytics = new X({
+    }), this._analytics = new Q({
       src: e.src,
       mimeType: null == (n = e.mimeType) ? true : n.join("/"),
       fileSize: e.fileSizeBytes

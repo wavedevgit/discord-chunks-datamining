@@ -150,11 +150,11 @@ function q() {
   }))
 }
 
-function Q() {
+function X() {
   z(), q()
 }
 
-function X() {
+function Q() {
   z()
 }
 
@@ -299,7 +299,7 @@ function ef(e) {
     channel: t
   } = e;
   if (O.ZP.allowNoMessages(t)) returnfalse;
-  Q()
+  X()
 }
 
 function ep(e) {
@@ -308,7 +308,7 @@ function ep(e) {
     userId: n
   } = e;
   if (n !== (null == (t = v.default.getCurrentUser()) ? true : t.id)) returnfalse;
-  Q()
+  X()
 }
 
 function e_(e) {
@@ -321,9 +321,9 @@ function e_(e) {
   if (null == a) returnfalse;
   if (null == r ? true : r.some(e => e.userId === a)) {
     let e = h.Z.getBasicChannel(n);
-    return !(null == e || f.Z.isMuted(n)) && (0, p.J)(e) !== P.iN.NO_MESSAGES && void Q()
+    return !(null == e || f.Z.isMuted(n)) && (0, p.J)(e) !== P.iN.NO_MESSAGES && void X()
   }
-  return null != i && !!i.includes(a) && void Q()
+  return null != i && !!i.includes(a) && void X()
 }
 
 function em(e) {
@@ -331,7 +331,7 @@ function em(e) {
     channel: t
   } = e;
   if (!L.getMessages().some(e => e.channelId === t.id)) returnfalse;
-  Q()
+  X()
 }
 
 function eh(e) {
@@ -339,7 +339,7 @@ function eh(e) {
     guild: t
   } = e;
   if (!L.getMessages().some(e => e.guildId === t.id)) returnfalse;
-  Q()
+  X()
 }
 
 function eg(e) {
@@ -407,13 +407,13 @@ let eb = new eE(Chunk570140.Z, {
   MESSAGE_DELETE: en,
   RECENT_MENTION_DELETE: en,
   MESSAGE_DELETE_BULK: er,
-  CONNECTION_OPEN: Q,
-  LOGOUT: X,
-  USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: Q,
-  USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: Q,
-  GUILD_CREATE: Q,
-  USER_GUILD_SETTINGS_GUILD_UPDATE: Q,
-  USER_GUILD_SETTINGS_CHANNEL_UPDATE: Q,
+  CONNECTION_OPEN: X,
+  LOGOUT: Q,
+  USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: X,
+  USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: X,
+  GUILD_CREATE: X,
+  USER_GUILD_SETTINGS_GUILD_UPDATE: X,
+  USER_GUILD_SETTINGS_CHANNEL_UPDATE: X,
   CHANNEL_CREATE: ef,
   GUILD_DELETE: eh,
   THREAD_DELETE: em,

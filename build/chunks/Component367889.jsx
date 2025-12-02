@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 367889, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   F: () => g
@@ -14,19 +14,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk313789 = require("./313789.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let T = (0, Chunk509613.x1)(Chunk313789.n.SUBSCRIPTIONS_PANE, {
+let I = (0, Chunk509613.x1)(Chunk313789.n.SUBSCRIPTIONS_PANE, {
     buildLayout: () => [],
     render: Chunk813732.Z
   }),
-  I = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
+  T = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHX),
-    buildLayout: () => [T]
+    buildLayout: () => [I]
   }),
   g = (0, Chunk509613.m7)(Chunk313789.n.SUBSCRIPTIONS_SIDEBAR_ITEM, {
     icon: Chunk657707.XOf,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHX),
     getLegacySearchKey: () => Chunk726985.s6.SUBSCRIPTIONS,
-    buildLayout: () => [I],
+    buildLayout: () => [T],
     trailing: {
       type: Chunk28682.PU.STRONGLY_DISCOURAGED_CUSTOM,
       useDecoration: () => (0, Chunk160913.U)() ? (0, Chunk54381.jsx)(Chunk793030.Mgn, {

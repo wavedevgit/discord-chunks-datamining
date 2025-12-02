@@ -1,7 +1,7 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 868802, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  M: () => x
+  M: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,7 +36,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk93109 = require("./93109.js"),
   Chunk446818 = require("./446818.js"),
   Chunk932889 = require("./932889.js");
-let x = () => {
+let j = () => {
     let t = (0, Chunk511857.a)((0, Chunk410030.ZP)()),
       {
         analyticsLocations: e
@@ -92,7 +92,7 @@ let x = () => {
       installationStatus: t,
       isWeb: e,
       setInstallationStatus: n
-    } = (0, Chunk773275.xf)(), r = (0, Chunk612659.m)();
+    } = (0, Chunk773275.xf)(), l = (0, Chunk612659.m)();
     if (exports) return (0, Chunk54381.jsx)(Chunk969521.U, {});
     if (!Chunk473749) return (0, Chunk54381.jsxs)("div", {
       className: Chunk498374.subscribeBtnContainer,

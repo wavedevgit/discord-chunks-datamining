@@ -61,15 +61,15 @@ function B(e) {
     return t
   }) : []), z = (0, o.e7)([S.Z], () => S.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, p.Z)(e))), {
     analyticsLocations: q
-  } = (0, h.ZP)(m.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), Q = (0, T.Z)({
+  } = (0, h.ZP)(m.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), X = (0, T.Z)({
     display: "live",
     voiceChannelId: null == W ? true : W.id,
     user: t,
     stream: i,
     analyticsLocations: q
-  }), X = (0, A.Z)({
+  }), Q = (0, A.Z)({
     userId: t.id,
-    onAction: Q
+    onAction: X
   }), {
     previewUrl: J,
     isLoading: $
@@ -77,7 +77,7 @@ function B(e) {
   if (null == Y || null == W || false === i.discoverable) return null;
   let eo = () => {
       let e = e => {
-        e.stopPropagation(), ee && (Q({
+        e.stopPropagation(), ee && (X({
           action: "PRESS_IMAGE"
         }), c.default.selectVoiceChannel(i.channelId), (0, u.iV)(i), null == F || F())
       };
@@ -131,7 +131,7 @@ function B(e) {
       children: [(0, r.jsx)(R.Z, {
         channel: W,
         guild: Y,
-        onAction: Q,
+        onAction: X,
         onClose: F
       }), (0, r.jsx)(s.Z, {
         users: K,
@@ -140,7 +140,7 @@ function B(e) {
         maxUsers: w.W,
         size: l.EFr.SIZE_16,
         onClickOverflow: e => {
-          null == e || e.stopPropagation(), null == Q || Q({
+          null == e || e.stopPropagation(), null == X || X({
             action: "PRESS_VOICE_CHANNEL_AVATARS"
           })
         },
@@ -154,14 +154,14 @@ function B(e) {
       user: t,
       guild: Y,
       channel: W,
-      onAction: Q,
+      onAction: X,
       onClose: F
     }),
     ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: k.actions,
       children: (0, r.jsx)(D.Z, {
         channel: W,
-        onAction: Q,
+        onAction: X,
         onClose: F
       })
     }),
@@ -171,9 +171,9 @@ function B(e) {
   return (0, r.jsx)(h.Gt, {
     value: q,
     children: (0, r.jsxs)(N.Z, {
-      ref: X,
+      ref: Q,
       className: B,
-      onAction: Q,
+      onAction: X,
       onClose: F,
       "aria-label": eu,
       children: [(0, r.jsx)(P.Z, {

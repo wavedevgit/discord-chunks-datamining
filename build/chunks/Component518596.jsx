@@ -94,7 +94,7 @@ async function O(e) {
   }) : await (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("9452"), n.e("88569")]).then(n.bind(n, 245286));
+    } = await Promise.all([n.e("77069"), n.e("88569")]).then(n.bind(n, 245286));
     return n => (0, r.jsx)(t, g(m({}, n), {
       target: e
     }))
@@ -156,7 +156,7 @@ function I() {
       [Chunk981631.oAB.TEXT, Chunk313789.n.CHAT_PANEL],
       [Chunk981631.oAB.NOTIFICATIONS, module ? Chunk313789.n.NOTIFICATIONS_PANEL : Chunk313789.n.LEGACY_NOTIFICATIONS_SETTINGS_PANEL],
       [Chunk981631.oAB.KEYBINDS, Chunk313789.n.KEYBINDS_PANEL],
-      [Chunk981631.oAB.LOCALE, Chunk313789.n.LOCALE_PANEL],
+      [Chunk981631.oAB.LOCALE, Chunk313789.n.LANGUAGE_AND_TIME_PANEL],
       [Chunk981631.oAB.WINDOWS, Chunk313789.n.WINDOWS_PANEL],
       [Chunk981631.oAB.LINUX, Chunk313789.n.LINUX_PANEL],
       [Chunk981631.oAB.STREAMER_MODE, Chunk313789.n.STREAMER_MODE_PANEL],

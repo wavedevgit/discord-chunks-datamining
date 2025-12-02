@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 183190, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   tierNameColumn: "tierNameColumn_e431b0",
   priceColumn: "priceColumn_e431b0",

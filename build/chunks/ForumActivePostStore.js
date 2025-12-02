@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   U: () => B,
-  Z: () => X
+  Z: () => Q
 }), require("./388685.js"), require("./642613.js");
 var i, Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
@@ -183,7 +183,7 @@ function q(e) {
   if (null == t || t !== S) returnfalse;
   P = false
 }
-class Q extends(i = Chunk442837.ZP.Store) {
+class X extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk344185.Z, Chunk314897.default, Chunk592125.Z, Chunk306680.ZP, Chunk944486.Z, Chunk144140.Z)
   }
@@ -215,8 +215,8 @@ class Q extends(i = Chunk442837.ZP.Store) {
     return r
   }
 }
-y(Q, "displayName", "ForumActivePostStore");
-let X = new Q(Chunk570140.Z, {
+y(X, "displayName", "ForumActivePostStore");
+let Q = new X(Chunk570140.Z, {
   CONNECTION_OPEN: Z,
   OVERLAY_INITIALIZE: Z,
   GUILD_CREATE: Z,

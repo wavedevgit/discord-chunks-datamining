@@ -156,11 +156,11 @@ let ef = e => {
       applicationName: e.name
     }), i = en.intl.formatToPlainString(en.t.inM1Yt, {
       applicationName: e.name
-    }), a = (0, r.jsx)(Q.Z, {
-      look: Q.z.WARNING,
+    }), a = (0, r.jsx)(X.Z, {
+      look: X.z.WARNING,
       children: en.intl.string(en.t.LY35Zy)
     })), (0, q.Z)(e.id) && (a = (0, r.jsxs)(r.Fragment, {
-      children: [a, (0, r.jsx)(Q.Z, {
+      children: [a, (0, r.jsx)(X.Z, {
         children: en.intl.format(en.t.KRnERi, {
           applicationName: e.name
         })
@@ -261,12 +261,12 @@ let ef = e => {
     } : {
       appDMChannelMuteConfig: U.ZP.getChannelMuteConfig(null, M),
       dmChannelMuted: U.ZP.isChannelMuted(null, M)
-    }), [V, H] = i.useState(false), [Q, X] = i.useState(false), eo = () => {
+    }), [V, H] = i.useState(false), [X, Q] = i.useState(false), eo = () => {
       let e = [];
       for (let n of t) e.push(...(0, D.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(en.intl.string(en.t.Ls2XRq));
       if (e.length > 0 || null != d && d.length > 0) return (0, r.jsx)(E.zF9, {
         className: er.appDetailsSection,
-        isExpanded: Q,
+        isExpanded: X,
         collapsibleContent: (0, r.jsxs)("ul", {
           className: er.appDetailsContent,
           children: [e.map((e, t) => (0, r.jsxs)("li", {
@@ -298,20 +298,20 @@ let ef = e => {
             children: [(0, r.jsxs)(E.P3F, {
               className: er.appDetailsSectionHeader,
               onClick: e => {
-                X(!Q), n(e)
+                Q(!X), n(e)
               },
               children: [(0, r.jsx)(E.Heading, {
                 variant: "heading-sm/medium",
                 color: "header-primary",
                 children: en.intl.string(en.t.xrmhRX)
-              }), Q ? (0, r.jsx)(E.CJ0, {
+              }), X ? (0, r.jsx)(E.CJ0, {
                 size: "md",
                 color: E.TVs.colors.INTERACTIVE_NORMAL
               }) : (0, r.jsx)(E.Fbu, {
                 size: "md",
                 color: E.TVs.colors.INTERACTIVE_NORMAL
               })]
-            }), !Q && (0, r.jsx)(E.Text, {
+            }), !X && (0, r.jsx)(E.Text, {
               variant: "text-sm/normal",
               color: "text-secondary",
               className: o()(er.appDetailsContent, er.permissionsDescription),

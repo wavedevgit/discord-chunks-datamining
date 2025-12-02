@@ -232,14 +232,14 @@ class eh extends(r = Chunk473749.PureComponent) {
                     emoji: c,
                     startPosition: I,
                     targetPosition: M
-                  }), U && (0, i.jsx)(X.Z, {
+                  }), U && (0, i.jsx)(Q.Z, {
                     count: r,
                     emoji: c,
                     channelId: v.getChannelId(),
                     messageId: v.id,
                     useChatFontScaling: y,
                     color: t,
-                    emojiSize: Q.M.NORMAL
+                    emojiSize: X.M.NORMAL
                   })]
                 }) : null, (0, i.jsx)(h.Z, {
                   className: s()({

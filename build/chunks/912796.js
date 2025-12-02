@@ -370,10 +370,10 @@ let q = (e, t) => {
       })]
     }, e.relevance = 0, delete n.beforeMatch
   },
-  Q = ["of", "and", "for", "in", "not", "or", "if", "then", "parent", "list", "value"],
-  X = "keyword";
+  X = ["of", "and", "for", "in", "not", "or", "if", "then", "parent", "list", "value"],
+  Q = "keyword";
 
-function J(e, t, n = X) {
+function J(e, t, n = Q) {
   let r = Object.create(null);
   return "string" == typeof e ? i(n, e.split(" ")) : Array.isArray(e) ? i(n, e) : Object.keys(e).forEach(function(n) {
     Object.assign(r, J(e[n], t, n))
@@ -392,7 +392,7 @@ function $(e, t) {
 }
 
 function ee(e) {
-  return Q.includes(e.toLowerCase())
+  return X.includes(e.toLowerCase())
 }
 let et = {},
   en = e => {

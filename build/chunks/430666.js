@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 430666, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   heading: "heading__176c7",
   tier: "tier__176c7",

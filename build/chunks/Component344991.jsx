@@ -132,7 +132,7 @@ function S(e) {
     q = e => new Promise(t => {
       t(n(e))
     }),
-    Q = (e, t) => {
+    X = (e, t) => {
       let {
         inPill: n
       } = t, i = n ? 16 : 24, o = a(e, i);
@@ -141,7 +141,7 @@ function S(e) {
         iconSize: i
       }) : null
     },
-    X = 0 === P.size || T,
+    Q = 0 === P.size || T,
     J = {
       isProcessing: Y,
       isDisabled: S || Z === p.gH.DISABLED || B,
@@ -149,12 +149,12 @@ function S(e) {
         [m.inModal]: V
       }),
       options: q,
-      placeholder: X ? I : true,
+      placeholder: Q ? I : true,
       onClose: () => A(false),
       onOpen: () => A(true),
       onBlur: () => N(false),
       maxVisibleItems: 5,
-      renderOptionPrefix: Q,
+      renderOptionPrefix: X,
       renderOptionLabel: s
     };
   return (0, r.jsxs)(i.Fragment, {
@@ -165,7 +165,7 @@ function S(e) {
         onChange: K,
         multi: true,
         inputClassNames: o()({
-          [m.hidden]: !X
+          [m.hidden]: !Q
         }),
         closeOnSelect: false
       }, J), j) : (0, r.jsx)(c.VcW, E({

@@ -1,5 +1,6 @@
-/** Chunk was on 88569 **/
-/** chunk id: 30434, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 30434, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => c
 });
@@ -14,11 +15,11 @@ function c(e) {
   let {
     node: t,
     children: n
-  } = e, c = l.useRef(null), u = l.useRef(null), d = l.useCallback(() => {
+  } = e, c = i.useRef(null), u = i.useRef(null), d = i.useCallback(() => {
     null != u.current && (cancelAnimationFrame(u.current), u.current = null)
   }, []);
-  return l.useEffect(() => {
-    let e = a.Z.subscribe(e => {
+  return i.useEffect(() => {
+    let e = s.Z.subscribe(e => {
       let {
         navTransition: t
       } = e;
@@ -27,16 +28,16 @@ function c(e) {
       d(), null != e && e.targetKey === t.key && null == e.targetAccordionKey && (u.current = requestAnimationFrame(() => {
         var t, n;
         let r = e.animateScroll && !o.Z.useReducedMotion,
-          l = null != (n = e.scrollBlock) ? n : "nearest";
+          i = null != (n = e.scrollBlock) ? n : "nearest";
         null == (t = c.current) || t.scrollIntoView({
           behavior: r ? "smooth" : "auto",
-          block: l
-        }), a.Z.setState({
+          block: i
+        }), s.Z.setState({
           navTransition: true
         })
       }))
     }, {
-      equalityFn: i.X,
+      equalityFn: a.X,
       fireImmediately: true
     });
     return () => {
@@ -45,7 +46,7 @@ function c(e) {
   }, [d, t.key]), (0, r.jsx)("div", {
     ref: c,
     "data-debug-key": t.key,
-    className: s.container,
+    className: l.container,
     children: n
   })
 }

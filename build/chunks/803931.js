@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 803931, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   emojiInputContainer: "emojiInputContainer__8079d",
   emojiButton: "emojiButton__8079d",

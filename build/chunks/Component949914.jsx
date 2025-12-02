@@ -155,8 +155,8 @@ let M = e => {
         isPastDue: K,
         subscriptionPrice: z,
         memberSince: q,
-        nextRenewalDate: Q,
-        nextRenewalLabel: X,
+        nextRenewalDate: X,
+        nextRenewalLabel: Q,
         isTrial: J
       } = b, $ = n.soft_deleted || null == s || F, ee = () => p ? (0, r.jsxs)("div", {
         id: G,
@@ -169,8 +169,8 @@ let M = e => {
         }), (0, r.jsxs)("div", {
           className: j.subscriptionInfoCards,
           children: [(0, r.jsx)(M, {
-            label: X,
-            value: Q
+            label: Q,
+            value: X
           }), (0, r.jsx)(M, {
             label: L.intl.string(L.t.dltUMH),
             value: z,

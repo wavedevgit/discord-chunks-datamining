@@ -1,7 +1,8 @@
-/** Chunk was on 88569 **/
-/** chunk id: 4794, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 4794, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,16 +14,56 @@ var Chunk54381 = require("./54381.js"),
   Chunk530171 = require("./530171.jsx"),
   Chunk175993 = require("./175993.jsx"),
   Chunk445642 = require("./445642.js");
-let p = Chunk473749.memo(function(e) {
+
+function p(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function _(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      p(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function m(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function h(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function g(e) {
   let {
     node: t
   } = e, {
     useTitle: n,
-    layout: i,
+    layout: a,
     useCollapsedSubtitle: p,
-    useNotice: b
-  } = t, [y, g] = l.useState(false), [v, m] = l.useState(true);
-  l.useEffect(() => s.Z.subscribe(e => {
+    useNotice: m
+  } = t, [g, E] = i.useState(false), [b, y] = i.useState(true);
+  i.useEffect(() => l.Z.subscribe(e => {
     let {
       navTransition: t
     } = e;
@@ -30,49 +71,20 @@ let p = Chunk473749.memo(function(e) {
   }, e => {
     if (null == e) return;
     let n = (null == e ? true : e.targetAccordionKey) === t.key;
-    if (n && !y && (g(true), m(false)), n && y) {
-      var r, l;
-      s.Z.setState({
-        navTransition: (r = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({}, e), l = l = {
-          targetAccordionKey: true
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-        }), r)
-      }), m(true)
-    }
+    n && !g && (E(true), y(false)), n && g && (l.Z.setState({
+      navTransition: h(_({}, e), {
+        targetAccordionKey: true
+      })
+    }), y(true))
   }, {
-    equalityFn: a.X,
+    equalityFn: s.X,
     fireImmediately: true
-  }), [y, t.key]);
-  let h = null == n ? true : n(y),
-    x = null == p ? true : p(),
-    j = null == b ? true : b(),
-    O = l.useCallback(e => {
-      e && s.Z.setState({
+  }), [g, t.key]);
+  let O = null == n ? true : n(g),
+    v = null == p ? true : p(),
+    S = null == m ? true : m(),
+    I = i.useCallback(e => {
+      e && l.Z.setState({
         navTransition: {
           targetKey: t.key,
           targetAccordionKey: t.key,
@@ -83,20 +95,21 @@ let p = Chunk473749.memo(function(e) {
     }, [t.key]);
   return (0, r.jsx)("div", {
     className: o()({
-      [f.open]: y
+      [f.open]: g
     }),
     children: (0, r.jsxs)(u.I, {
-      title: h,
-      collapsedSubtitle: x,
-      isExpanded: y,
-      onExpandedChange: g,
-      onExpandedChangeComplete: O,
-      animate: v,
-      children: [null != j && (0, r.jsx)(d.Z, {
-        notice: j
-      }), i.map(e => (0, r.jsx)(c.Z, {
+      title: O,
+      collapsedSubtitle: v,
+      isExpanded: g,
+      onExpandedChange: E,
+      onExpandedChangeComplete: I,
+      animate: b,
+      children: [null != S && (0, r.jsx)(d.Z, {
+        notice: S
+      }), a.map(e => (0, r.jsx)(c.Z, {
         node: e
       }, e.key))]
     })
   })
-})
+}
+let E = Chunk473749.memo(g)

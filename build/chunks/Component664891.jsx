@@ -145,7 +145,7 @@ function K(e) {
     onInvoiceError: B,
     priceOptions: s,
     preventFetch: false
-  }) : em ? (0, r.jsx)(X, {
+  }) : em ? (0, r.jsx)(Q, {
     premiumSubscription: n,
     onInvoiceError: B,
     priceOptions: s,
@@ -217,7 +217,7 @@ function K(e) {
     }), (0, r.jsx)(L.Z, {
       isActive: U,
       ref: k,
-      children: null != n && (0, R.R4)(n, w, V) ? (0, r.jsx)(Q, {
+      children: null != n && (0, R.R4)(n, w, V) ? (0, r.jsx)(X, {
         premiumSubscription: n,
         newPlan: ec,
         onInvoiceError: B,
@@ -362,7 +362,7 @@ function q(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   let t, {
       premiumSubscription: n,
       newPlan: a,
@@ -423,7 +423,7 @@ function Q(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   let {
     premiumSubscription: t,
     priceOptions: n,

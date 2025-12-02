@@ -155,7 +155,7 @@ function z(e) {
   let t = [];
   for (let i of e) {
     var n, r;
-    null != i.member && Q(i.guild_id, i.member.user, i.member), t.push({
+    null != i.member && X(i.guild_id, i.member.user, i.member), t.push({
       userId: i.user_id,
       guildId: i.guild_id,
       sessionId: i.session_id,
@@ -185,7 +185,7 @@ function q(e) {
   }))
 }
 
-function Q(e, t, n) {
+function X(e, t, n) {
   var r, a, o, s;
   let {
     roles: l,
@@ -220,19 +220,19 @@ function Q(e, t, n) {
   })
 }
 
-function X(e) {
+function Q(e) {
   let {
     member: t,
     mentions: n,
     author: r,
     guild_id: i
   } = e;
-  null != t && null != i && Q(i, r, t), null != n && n.forEach(e => {
+  null != t && null != i && X(i, r, t), null != n && n.forEach(e => {
     if (null != e.member && null != i) {
       let {
         member: t
       } = e;
-      delete e.member, Q(i, e, t)
+      delete e.member, X(i, e, t)
     }
   })
 }
@@ -447,7 +447,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     type: "CONNECTION_RESUMED"
   })
 }), Y(["TYPING_START"], e => {
-  null != e.member && Q(e.guild_id, e.member.user, e.member), q({
+  null != e.member && X(e.guild_id, e.member.user, e.member), q({
     type: "TYPING_START",
     channelId: e.channel_id,
     userId: e.user_id
@@ -482,7 +482,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     messageId: e.message_id
   })
 }), W(["MESSAGE_CREATE"], e => v.o.loadGuildIds([e.guild_id]), e => {
-  X(e), null != e.author && q({
+  Q(e), null != e.author && q({
     type: "MESSAGE_CREATE",
     guildId: e.guild_id,
     channelId: e.channel_id,
@@ -491,7 +491,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     isPushNotification: false
   })
 }), W(["MESSAGE_UPDATE"], e => v.o.loadGuildIds([e.guild_id]), e => {
-  X(e), q({
+  Q(e), q({
     type: "MESSAGE_UPDATE",
     guildId: e.guild_id,
     message: e
@@ -1160,7 +1160,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
       let {
         member: n
       } = t;
-      if (Q(e.guild_id, n.user, n), null == n.presence) return;
+      if (X(e.guild_id, n.user, n), null == n.presence) return;
       let {
         presence: r
       } = n;

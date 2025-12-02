@@ -126,8 +126,8 @@ function g(e, t, n) {
       dir: b
     });
     let {
-      forceUpdateOnChunkChange: Q,
-      coordsMap: X,
+      forceUpdateOnChunkChange: X,
+      coordsMap: Q,
       gridData: J,
       visibleSections: $,
       totalHeight: ee,
@@ -155,8 +155,8 @@ function g(e, t, n) {
     }, [$, Z]);
     let er = (0, i.useCallback)(function() {
         let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 2;
-        e > z.current.dirty && (z.current.dirty = e), 2 === e ? et() : Q(1)
-      }, [Q, z, et]),
+        e > z.current.dirty && (z.current.dirty = e), 2 === e ? et() : X(1)
+      }, [X, z, et]),
       ei = (0, s.t2)(K),
       ea = (0, i.useCallback)(() => en.itemGrid, [en]),
       eo = (0, i.useCallback)(() => en.coordsMap, [en]),
@@ -201,20 +201,20 @@ function g(e, t, n) {
           children: Object.keys($).map(e => {
             var t;
             let n = (0, s.t$)(e),
-              i = X[e],
+              i = Q[e],
               a = $[e],
-              o = X[(0, s.DP)(n)],
+              o = Q[(0, s.DP)(n)],
               l = null == N ? true : N(n);
             return null != i && null != a ? (0, r.jsxs)("div", _(f({}, l), {
               style: f({}, i, null != (t = null == l ? true : l.style) ? t : {}),
               children: [null != A && null != o && A(n, o, e), a.map(e => {
-                let [t, n, r] = e, i = X[t];
+                let [t, n, r] = e, i = Q[t];
                 return null != i ? C(n, r, i, t, J) : null
               })]
             }), e) : null
           })
         })
-      }), [$, C, A, X, ee, N, J])]
+      }), [$, C, A, Q, ee, N, J])]
     }))
   })
 }

@@ -91,8 +91,8 @@ function z(e) {
     user: H,
     isVisible: W,
     shouldShow: z
-  } = e, q = N.ZP.isPremium(H), Q = N.ZP.canUseAnimatedAvatar(H), {
-    pendingAvatar: X,
+  } = e, q = N.ZP.isPremium(H), X = N.ZP.canUseAnimatedAvatar(H), {
+    pendingAvatar: Q,
     pendingThemeColors: J,
     tryItOutThemeColors: $,
     tryItOutAvatar: ee,
@@ -187,7 +187,7 @@ function z(e) {
             user: H,
             pendingAvatarSrc: (0, S.SD)({
               userId: H.id,
-              image: null != ee ? ee : X
+              image: null != ee ? ee : Q
             }),
             pendingColors: null != $ ? $ : J,
             onThemeColorsChange: I.rf,
@@ -199,7 +199,7 @@ function z(e) {
             showRemoveBannerButton: null != et,
             onBannerChange: I.f4,
             showPremiumIcon: false
-          }), !Q && (0, r.jsx)(D.Z, {
+          }), !X && (0, r.jsx)(D.Z, {
             className: V.customizationSection,
             isTryItOut: true,
             onAvatarChange: I.c_,

@@ -102,8 +102,8 @@ async function F(e) {
     commandOrigin: W
   }), await y.Z.unarchiveThreadIfNecessary(M.channel.id);
   let q = [],
-    Q = [],
-    X = (0, L.D7)(W);
+    X = [],
+    Q = (0, L.D7)(W);
   if (null != C.options)
     for (let e of C.options) {
       let t;
@@ -122,10 +122,10 @@ async function F(e) {
       }
       if (e.type === c.jw.ATTACHMENT) {
         if (null != M.autocomplete) continue;
-        let t = S.Z.getUpload(M.channel.id, e.name, X);
+        let t = S.Z.getUpload(M.channel.id, e.name, Q);
         if (null == t) continue;
-        let r = Q.length;
-        Q.push(t), q.push({
+        let r = X.length;
+        X.push(t), q.push({
           type: e.type,
           name: e.name,
           value: r,
@@ -236,11 +236,11 @@ async function F(e) {
     $ = () => {
       V(w)
     };
-  null != k && (J.target_id = k), null != M.autocomplete ? (0, N.GV)(C, M, J) : (s.Z.clearAll(M.channel.id, X), Y({
+  null != k && (J.target_id = k), null != M.autocomplete ? (0, N.GV)(C, M, J) : (s.Z.clearAll(M.channel.id, Q), Y({
     applicationId: C.applicationId,
     data: J,
     context: M,
-    attachments: Q,
+    attachments: X,
     maxSizeCallback: U,
     onMessageSuccess: $,
     analytics_location: z(W),
@@ -313,7 +313,7 @@ let V = e => {
         applicationId: n,
         channelId: m
       }
-    }), null != a && a.length > 0 ? Q(a, E.nonce, g, o).then(e => {
+    }), null != a && a.length > 0 ? X(a, E.nonce, g, o).then(e => {
       e && W(E, s)
     }) : W(E, s)
   };
@@ -426,7 +426,7 @@ async function q(e, t) {
     largestUploadedFileSize: r
   }
 }
-async function Q(e, t, n, r) {
+async function X(e, t, n, r) {
   let i = (0, T.dg)(n),
     a = e => {
       null == r || r(i, e), h.yr(t, j.evJ.ENTITY_TOO_LARGE, k.intl.formatToPlainString(k.t.fxEKdS, {

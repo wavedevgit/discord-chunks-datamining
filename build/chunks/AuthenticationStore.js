@@ -57,8 +57,8 @@ let P = new Chunk710845.Z("AuthenticationStore"),
   K = false,
   z = false,
   q = null,
-  Q = null,
-  X = false,
+  X = null,
+  Q = false,
   J = false,
   $ = [];
 
@@ -161,7 +161,7 @@ function eu(e) {
   let {
     token: t
   } = e;
-  B = A.u34.NONE, ei(t), er(), H = "", Y = false, W = null, i = null, e_(), X = false
+  B = A.u34.NONE, ei(t), er(), H = "", Y = false, W = null, i = null, e_(), Q = false
 }
 
 function ed(e) {
@@ -172,14 +172,14 @@ function ed(e) {
 }
 
 function ef() {
-  X = true
+  Q = true
 }
 
 function ep(e) {
   let {
     error: t
   } = e;
-  H = "", Y = false, W = null, X = false, i = null, B = null != (0, _.F)(t).date_of_birth ? A.u34.LOGIN_AGE_GATE : A.u34.NONE
+  H = "", Y = false, W = null, Q = false, i = null, B = null != (0, _.F)(t).date_of_birth ? A.u34.LOGIN_AGE_GATE : A.u34.NONE
 }
 
 function e_() {
@@ -320,7 +320,7 @@ function eR(e) {
   null != (t = null == e ? true : e.isSwitchingAccount) && t || (n && er(), et()), l.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore", "ApexExperimentStore"],
     type: (null == e ? true : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), T.Z.clearAll(), h.ZH(), S.Z.clearUser(), u.K.remove(D), x = null, L = null, B = (null == e ? true : e.isSwitchingAccount) ? A.u34.LOGGING_IN : A.u34.NONE, H = "", W = null, Y = false, X = false, J = false, e_()
+  }), T.Z.clearAll(), h.ZH(), S.Z.clearUser(), u.K.remove(D), x = null, L = null, B = (null == e ? true : e.isSwitchingAccount) ? A.u34.LOGGING_IN : A.u34.NONE, H = "", W = null, Y = false, Q = false, J = false, e_()
 }
 
 function ew() {
@@ -342,11 +342,11 @@ function eL(e) {
   let {
     suspendedUserToken: t
   } = e;
-  X = false, Q = t, setImmediate(() => (0, E.uL)(A.Z5c.ACCOUNT_STANDING))
+  Q = false, X = t, setImmediate(() => (0, E.uL)(A.Z5c.ACCOUNT_STANDING))
 }
 
 function ej() {
-  Q = null, B = Chunk981631.u34.NONE, eR(), setImmediate(() => (0, Chunk703656.uL)(Chunk981631.Z5c.DEFAULT_LOGGED_OUT))
+  X = null, B = Chunk981631.u34.NONE, eR(), setImmediate(() => (0, Chunk703656.uL)(Chunk981631.Z5c.DEFAULT_LOGGED_OUT))
 }
 class eM extends(a = Chunk442837.ZP.Store) {
   initialize() {
@@ -402,10 +402,10 @@ class eM extends(a = Chunk442837.ZP.Store) {
     return !F
   }
   getSuspendedUserToken() {
-    return Q
+    return X
   }
   getIsPasswordlessActive() {
-    return X
+    return Q
   }
   attemptedPasswordLogin() {
     return J

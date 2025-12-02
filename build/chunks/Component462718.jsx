@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 462718, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -17,7 +17,7 @@ let d = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
   onClick: () => {
     (0, Chunk481060.h7j)(t => {
       var e, n;
-      return (0, i.jsx)(l.ConfirmModal, (e = function(t) {
+      return (0, i.jsx)(s.ConfirmModal, (e = function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
             i = Object.keys(n);
@@ -40,10 +40,10 @@ let d = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
         cancelText: c.intl.string(c.t["ETE/oC"]),
         onCancel: t.onClose,
         onConfirm: () => {
-          (0, o.default)(), u.Z.logout("settings")
+          (0, o.default)(), r.Z.logout("settings")
         }
       }, t), n = n = {
-        children: (0, i.jsx)(l.Text, {
+        children: (0, i.jsx)(s.Text, {
           variant: "text-md/normal",
           children: c.intl.string(c.t.SUnWBB)
         })

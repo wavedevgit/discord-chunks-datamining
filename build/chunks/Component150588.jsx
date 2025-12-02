@@ -89,7 +89,7 @@ let D = (0, Chunk666917.animated)(Chunk481060.CJ0),
     } = (0, d.ZP)(), [F, V] = i.useState(null), [H, Y] = i.useState(null), W = (0, p.Z)(e => {
       let t = e.target;
       V(t.offsetWidth), Y(t.scrollWidth)
-    }), K = (0, f.y)(W), z = (0, S.uq)(N), q = N === h.jn.QUESTS_EMBED, Q = (0, g.t5)(a, I.dr.QUESTS_CARD, N, G), X = (null == (t = a.userStatus) ? true : t.completedAt) != null, J = (0, _.O5)(), $ = (0, m.B6)(a.config.expiresAt), ee = (0, m.B6)(a.config.rewardsConfig.rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
+    }), K = (0, f.y)(W), z = (0, S.uq)(N), q = N === h.jn.QUESTS_EMBED, X = (0, g.t5)(a, I.dr.QUESTS_CARD, N, G), Q = (null == (t = a.userStatus) ? true : t.completedAt) != null, J = (0, _.O5)(), $ = (0, m.B6)(a.config.expiresAt), ee = (0, m.B6)(a.config.rewardsConfig.rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
       e.stopPropagation(), e.currentTarget.blur(), U(), J({
         questId: a.id,
         questContent: N,
@@ -170,7 +170,7 @@ let D = (0, Chunk666917.animated)(Chunk481060.CJ0),
                   })]
                 }), (0, r.jsx)(u.Text, {
                   variant: "text-xs/medium",
-                  children: Q
+                  children: X
                 })]
               })]
             })
@@ -214,7 +214,7 @@ let D = (0, Chunk666917.animated)(Chunk481060.CJ0),
                 }), (0, r.jsx)(u.Text, {
                   variant: "text-xs/normal",
                   color: "always-white",
-                  children: X ? A.intl.formatToPlainString(A.t.APddvF, {
+                  children: Q ? A.intl.formatToPlainString(A.t.APddvF, {
                     expirationDate: ee
                   }) : n ? A.intl.formatToPlainString(A.t.v7xMw7, {
                     expirationDate: $

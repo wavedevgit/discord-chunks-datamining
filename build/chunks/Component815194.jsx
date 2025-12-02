@@ -1,7 +1,7 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 815194, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
@@ -37,14 +37,14 @@ function g() {
       className: Chunk53179.keybindContainer,
       children: (0, Chunk54381.jsx)(Chunk825209.Z, {
         defaultValue: module,
-        onChange: t => u.Z.setMode(S.pM4.PUSH_TO_TALK, {
+        onChange: t => r.Z.setMode(S.pM4.PUSH_TO_TALK, {
           shortcut: t
         })
       })
     })
   })
 }
-let O = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
+let _ = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
   usePredicate: Chunk595373.J,
   render: () => (0, Chunk54381.jsx)(g, {}),
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]

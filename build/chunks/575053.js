@@ -432,12 +432,12 @@
       if (!e) throw Error("Could not find Checkout Context; You need to wrap the part of your app that calls useCheckout() in an <CheckoutProvider> provider.");
       return e
     },
-    Q = ["mode"],
-    X = function(e) {
+    X = ["mode"],
+    Q = function(e) {
       return e.charAt(0).toUpperCase() + e.slice(1)
     },
     J = function(e, n) {
-      var r = "".concat(X(e), "Element"),
+      var r = "".concat(Q(e), "Element"),
         i = function(n) {
           var i, a = n.id,
             o = n.className,
@@ -476,7 +476,7 @@
                 case "address":
                   if ("mode" in u) {
                     var n = u.mode,
-                      i = s(u, Q);
+                      i = s(u, X);
                     if ("shipping" === n) t = N.createShippingAddressElement(i);
                     else if ("billing" === n) t = N.createBillingAddressElement(i);
                     else throw Error("Invalid options.mode. mode must be 'billing' or 'shipping'.")

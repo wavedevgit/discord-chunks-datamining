@@ -112,7 +112,7 @@ function q(e) {
     "" !== e.key && null != e.key && n === e.key && (t = false)
   }), t
 }
-let Q = (e, t, n) => {
+let X = (e, t, n) => {
     var i, a, o;
     let {
       user: s,
@@ -142,7 +142,7 @@ let Q = (e, t, n) => {
       })
     }, "display-username-".concat(t, "-").concat(s.id))]
   },
-  X = (e, t, n) => {
+  Q = (e, t, n) => {
     let {
       channel: i,
       text: a
@@ -206,10 +206,10 @@ let Q = (e, t, n) => {
   },
   $ = e => (0, r.jsx)(J, H(F({}, e), {
     className: Z.user,
-    renderResult: Q
+    renderResult: X
   })),
   ee = e => (0, r.jsx)(J, H(F({}, e), {
-    renderResult: X
+    renderResult: Q
   }));
 
 function et(e) {

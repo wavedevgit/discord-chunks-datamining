@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 512622, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   gameImage: "gameImage_a3ec8a",
   gameUnknownImage: "gameUnknownImage_a3ec8a",

@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   C1: () => z,
-  Gh: () => Q,
+  Gh: () => X,
   N0: () => Z,
   Pr: () => J,
   Rr: () => eo,
   So: () => es,
   T1: () => B,
-  Tm: () => X,
+  Tm: () => Q,
   UY: () => ei,
   W6: () => ea,
   WY: () => ed,
@@ -431,14 +431,14 @@ async function q(e, t) {
   }
 }
 
-function Q(e, t) {
+function X(e, t) {
   a.Z.dispatch({
     type: "CLIPS_SAVE_ANIMATION_END",
     streamKey: e,
     timestamp: t
   })
 }
-async function X(e, t) {
+async function Q(e, t) {
   let n = S.Z.getClips().find(t => t.id === e);
   if (null == n) return;
   let r = L({}, n, t);
@@ -450,7 +450,7 @@ async function X(e, t) {
   }))
 }
 async function J(e) {
-  await X(e.id, {
+  await Q(e.id, {
     isFavorite: !e.isFavorite
   })
 }
@@ -560,7 +560,7 @@ function eu() {
   })
 }
 async function ed(e) {
-  await X(e, {
+  await Q(e, {
     isTemporary: false
   })
 }

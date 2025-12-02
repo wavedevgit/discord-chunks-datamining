@@ -176,12 +176,12 @@ function q(e) {
   C[t] = true, t === A && Y(t)
 }
 
-function Q(e) {
+function X(e) {
   let t = h.Z.getBasicChannel(e.id);
   null != t && null != t.guild_id && Y(t.guild_id)
 }
 
-function X(e) {
+function Q(e) {
   let {
     channel: {
       guild_id: t
@@ -368,8 +368,8 @@ let ec = new el(Chunk570140.Z, {
   GUILD_UPDATE: K,
   GUILD_DELETE: z,
   GUILD_MEMBER_UPDATE: q,
-  CHANNEL_CREATE: X,
-  CHANNEL_DELETE: X,
+  CHANNEL_CREATE: Q,
+  CHANNEL_DELETE: Q,
   CHANNEL_UPDATES: J,
   GUILD_ROLE_CREATE: $,
   GUILD_ROLE_UPDATE: $,
@@ -377,6 +377,6 @@ let ec = new el(Chunk570140.Z, {
   IMPERSONATE_UPDATE: $,
   IMPERSONATE_STOP: $,
   VOICE_CHANNEL_SELECT: ei,
-  VOICE_CHANNEL_STATUS_UPDATE: Q,
+  VOICE_CHANNEL_STATUS_UPDATE: X,
   VOICE_STATE_UPDATES: ea
 })

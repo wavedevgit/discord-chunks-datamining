@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 16009, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -33,7 +33,7 @@ let E = (0, Chunk509613.qs)(Chunk313789.n.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
     })
   },
   setValue: function(t) {
-    r.Z.setMode(c.pM.PUSH_TO_TALK, {
+    l.Z.setMode(c.pM.PUSH_TO_TALK, {
       pttLatchingEnabled: t
     })
   },

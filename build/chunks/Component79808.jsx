@@ -1,7 +1,7 @@
 /** Chunk was on 88569 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,38 +15,38 @@ var Chunk54381 = require("./54381.js"),
   Chunk996435 = require("./996435.js"),
   Chunk990757 = require("./990757.js");
 
-function b(e) {
+function y(e) {
   var t;
   let {
     root: n,
-    directory: b,
-    target: y,
+    directory: y,
+    target: p,
     defaultTarget: g,
-    onClose: v,
-    sidebarHeader: m,
-    sidebarFooter: h,
-    onPanelChange: x,
-    emptyState: j
-  } = e, O = null != y && (null == (t = b.entry(y)) ? true : t.parentPanelKey) != null ? y : g, C = f.Z.useField("currentPanelKey"), [P, S] = l.useState(b), _ = l.useMemo(() => P.get(null != C ? C : O), [P, C, O]), {
-    navigateWithValidation: E
+    onClose: O,
+    sidebarHeader: j,
+    sidebarFooter: v,
+    onPanelChange: m,
+    emptyState: h
+  } = e, x = null != p && (null == (t = y.entry(p)) ? true : t.parentPanelKey) != null ? p : g, S = f.Z.useField("currentPanelKey"), [P, C] = o.useState(y), _ = o.useMemo(() => P.get(null != S ? S : x), [P, S, x]), {
+    navigateWithValidation: w
   } = (0, u.Cu)();
-  (0, o.ZP)(() => {
+  (0, l.ZP)(() => {
     var e, t;
-    let n = b.entry(O).parentPanelKey,
-      r = null == (e = b.entry(O)) ? true : e.parentCategoryKey,
-      l = null == (t = b.entry(O)) ? true : t.parentAccordionKey;
+    let n = y.entry(x).parentPanelKey,
+      r = null == (e = y.entry(x)) ? true : e.parentCategoryKey,
+      o = null == (t = y.entry(x)) ? true : t.parentAccordionKey;
     return f.Z.setState({
       currentPanelKey: n,
       currentCategoryKey: r,
       disableSidebarCategoryAutoSelect: true,
       navTransition: {
-        targetKey: O,
-        targetAccordionKey: l,
+        targetKey: x,
+        targetAccordionKey: o,
         animateScroll: false
       },
-      showNavigationMobile: null == y
+      showNavigationMobile: null == p
     }), () => f.Z.resetState()
-  }), l.useEffect(() => f.Z.subscribe(e => ({
+  }), o.useEffect(() => f.Z.subscribe(e => ({
     requestedTargetKey: e.requestedTargetKey,
     currentPanelKey: e.currentPanelKey
   }), e => {
@@ -55,12 +55,12 @@ function b(e) {
       currentPanelKey: n
     } = e;
     if (null == t) return;
-    let r = b.entry(t);
+    let r = y.entry(t);
     if (null == r) return void a.Z.setState({
       query: ""
     });
-    let l = r.parentPanelKey;
-    if (null == l) return void f.Z.setState({
+    let o = r.parentPanelKey;
+    if (null == o) return void f.Z.setState({
       requestedTargetKey: true
     });
     let i = () => {
@@ -76,39 +76,39 @@ function b(e) {
         }
       })
     };
-    r.parentPanelKey !== n ? E(() => {
-      i(), null == x || x(l)
+    r.parentPanelKey !== n ? w(() => {
+      i(), null == m || m(o)
     }) : i()
   }, {
     equalityFn: i.X
-  }), [b, E, x]);
-  let w = l.useMemo(() => ({
-      directory: b,
+  }), [y, w, m]);
+  let k = o.useMemo(() => ({
+      directory: y,
       fallbackDirectory: P
-    }), [b, P]),
-    k = () => E(v),
-    N = null != C ? b.get(C) : true;
+    }), [y, P]),
+    N = () => w(O),
+    E = null != S ? y.get(S) : true;
   return (0, r.jsx)(d.j.Provider, {
-    value: w,
+    value: k,
     children: (0, r.jsxs)("div", {
-      className: p.container,
-      children: [(0, r.jsx)(c.P, {
+      className: b.container,
+      children: [(0, r.jsx)(s.P, {
         root: n,
-        header: m,
-        footer: h,
-        onClose: k,
-        emptyState: j
-      }), (0, r.jsx)(s.Z, {
-        onClose: k,
-        setting: null != N ? N : _
+        header: j,
+        footer: v,
+        onClose: N,
+        emptyState: h
+      }), (0, r.jsx)(c.Z, {
+        onClose: N,
+        setting: null != E ? E : _
       })]
     })
   })
 }
 
-function y(e) {
+function p(e) {
   return (0, r.jsx)(u.Ri, {
-    children: (0, r.jsx)(b, function(e) {
+    children: (0, r.jsx)(y, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

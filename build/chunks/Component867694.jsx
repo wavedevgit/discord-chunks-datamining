@@ -1,5 +1,6 @@
-/** Chunk was on 88569 **/
-/** chunk id: 867694, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 867694, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   I: () => o
 });
@@ -13,24 +14,24 @@ function o(e) {
     node: n
   } = e, {
     useValue: o,
-    setValue: a,
-    useTitle: s,
+    setValue: s,
+    useTitle: l,
     useSubtitle: c,
     useDisabled: u,
     useDisabledMessage: d,
     useBadge: f
-  } = n, p = s(), b = null == c ? true : c(), y = o(), g = null != (t = null == u ? true : u()) && t, v = null == d ? true : d(), m = null == f ? true : f();
-  return (0, r.jsxs)(i.X, {
-    children: [(0, r.jsx)(l.rsf, {
+  } = n, p = l(), _ = null == c ? true : c(), m = o(), h = null != (t = null == u ? true : u()) && t, g = null == d ? true : d(), E = null == f ? true : f();
+  return (0, r.jsxs)(a.X, {
+    children: [(0, r.jsx)(i.rsf, {
       label: p,
-      description: b,
-      badge: m,
-      checked: y,
-      onChange: e => a(e),
-      disabled: g
-    }), g && null != v ? (0, r.jsx)(l.Wn, {
-      messageType: l.QYI.WARNING,
-      children: v
+      description: _,
+      badge: E,
+      checked: m,
+      onChange: e => s(e),
+      disabled: h
+    }), h && null != g ? (0, r.jsx)(i.Wn, {
+      messageType: i.QYI.WARNING,
+      children: g
     }) : null]
   })
 }

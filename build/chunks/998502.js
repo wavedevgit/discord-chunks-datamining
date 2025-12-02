@@ -2,7 +2,7 @@
 /** chunk id: 998502, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => Q,
+  ZP: () => X,
   jK: () => H,
   mQ: () => Z,
   tS: () => Y,
@@ -862,4 +862,4 @@ let q = {
       z("DISCORD_APP_ASYNC_INDEX_TSX_LOADED")
     }
   },
-  Q = q
+  X = q

@@ -78,7 +78,7 @@ function x(e) {
 }
 
 function L() {
-  if (null != w) return void X(w);
+  if (null != w) return void Q(w);
   if (k(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
@@ -175,7 +175,7 @@ function q() {
   C.giftUnreadNotificationLastDismissedTimes = []
 }
 
-function Q(e) {
+function X(e) {
   let {
     total: t
   } = e;
@@ -183,10 +183,10 @@ function Q(e) {
     w = null, L();
     return
   }
-  X(t)
+  Q(t)
 }
 
-function X(e) {
+function Q(e) {
   k();
   let {
     enabled: t
@@ -278,5 +278,5 @@ let $ = new J(Chunk570140.Z, {
   DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: K,
   DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: z,
   DEV_TOOLS_GIFT_UNREAD_NOTIFICATION_COOLDOWN_RESET: q,
-  DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT: Q
+  DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT: X
 })

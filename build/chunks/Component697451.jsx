@@ -322,14 +322,14 @@ function K(e) {
     z = (0, _.NX)(s.id),
     q = a.interaction;
   if (null == q || null == B) return null;
-  let Q = () => {
+  let X = () => {
       let t = V(e, q.user, 0, B, e => D(e, q.user, [h.Z.AVATAR]), A),
         n = H(e, q.user, 0, B, e => D(e, q.user));
       return (0, r.jsxs)(i.Fragment, {
         children: [t, n]
       }, "user")
     },
-    X = () => {
+    Q = () => {
       if (null == G) return null;
       let t = V(e, G, 1, F, e => D(e, G, [h.Z.AVATAR]), A),
         n = H(e, G, 1, F, e => D(e, G));
@@ -345,12 +345,12 @@ function K(e) {
       }, "command")
     };
     n = x.intl.format(x.t["rg7U+C"], {
-      userHook: Q,
+      userHook: X,
       commandHook: t
     }), Z && null != e.renderTargetMessage ? n = (0, r.jsxs)(r.Fragment, {
       children: [n, (0, r.jsx)(W, {}), e.renderTargetMessage()]
     }) : null != G && (n = (0, r.jsxs)(r.Fragment, {
-      children: [n, (0, r.jsx)(W, {}), (0, r.jsx)(X, {})]
+      children: [n, (0, r.jsx)(W, {}), (0, r.jsx)(Q, {})]
     }))
   } else {
     let e = () => {
@@ -376,10 +376,10 @@ function K(e) {
         })
       });
     n = z ? x.intl.format(x.t.kfV8WM, {
-      userHook: Q,
+      userHook: X,
       activityHook: t
     }) : x.intl.format(x.t["6FeSyT"], {
-      userHook: Q
+      userHook: X
     })
   }
   return (0, r.jsx)(g.Gt, {

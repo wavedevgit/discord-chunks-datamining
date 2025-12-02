@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 687726, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   header: "header_eae0ef",
   safetyChecklist: "safetyChecklist_eae0ef",

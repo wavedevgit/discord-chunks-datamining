@@ -2,7 +2,7 @@
 /** chunk id: 294206, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => Q,
+  ZP: () => X,
   hU: () => W
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -202,7 +202,7 @@ function q(e, t) {
     }
   }, [t, e])
 }
-let Q = Chunk473749.forwardRef(function(e, t) {
+let X = Chunk473749.forwardRef(function(e, t) {
   var n, a, u, m, O, S, {
       sound: I,
       channel: T,
@@ -211,8 +211,8 @@ let Q = Chunk473749.forwardRef(function(e, t) {
       focused: k,
       forceSecondaryActions: Z = false,
       interactive: W = true,
-      enableSecondaryActions: Q = false,
-      suppressPlaySound: X,
+      enableSecondaryActions: X = false,
+      suppressPlaySound: Q,
       onMouseEnter: J,
       onSelectItem: $,
       analyticsLocations: ee,
@@ -236,14 +236,14 @@ let Q = Chunk473749.forwardRef(function(e, t) {
     isPlayingSound: eg
   } = (0, N.Z)(I, null != (u = null == T ? true : T.id) ? u : null, null != (m = eo ? y.AY.getSetting() : null == (n = y.kU.getSetting()) ? true : n.volume) ? m : 100, !eo && (null == T ? true : T.isVocal()) ? D.w.VOICE : D.w.DEFAULT), {
     createMultipleConfettiAt: eE
-  } = i.useContext(h.h), eb = i.useRef(null), ey = q(I.soundId, eb.current), eO = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), ev = i.useRef(F), eS = i.useRef(new c.Xp), eI = I.soundId === B, eT = "sound-".concat(I.soundId), eA = (0, s.JA)(eT), eC = null != ed || null != ef, eN = !(0, C.Nq)(ep, I, T) && !eo, eP = Z || Q && !eN, eR = null != (O = g.Wq.useStore().bottomPosition) ? O : 0, ew = (null != (S = null == (a = eb.current) ? true : a.getBoundingClientRect().bottom) ? S : 0) + 50 > eR ? "top" : "bottom", [eD, ex] = i.useState(false), eL = i.useCallback(() => {
+  } = i.useContext(h.h), eb = i.useRef(null), ey = q(I.soundId, eb.current), eO = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), ev = i.useRef(F), eS = i.useRef(new c.Xp), eI = I.soundId === B, eT = "sound-".concat(I.soundId), eA = (0, s.JA)(eT), eC = null != ed || null != ef, eN = !(0, C.Nq)(ep, I, T) && !eo, eP = Z || X && !eN, eR = null != (O = g.Wq.useStore().bottomPosition) ? O : 0, ew = (null != (S = null == (a = eb.current) ? true : a.getBoundingClientRect().bottom) ? S : 0) + 50 > eR ? "top" : "bottom", [eD, ex] = i.useState(false), eL = i.useCallback(() => {
     ex(true)
   }, []), ej = i.useCallback(() => {
     ex(false)
   }, []), eM = eN && en;
 
   function ek() {
-    X || em(ee)
+    Q || em(ee)
   }
 
   function eU(e) {
@@ -261,7 +261,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
         disabled: eN && !Z
       })
     }),
-    eZ = e => X || eN ? eM ? (0, r.jsx)(f.mBM, {
+    eZ = e => Q || eN ? eM ? (0, r.jsx)(f.mBM, {
       size: "xs",
       color: "currentColor",
       className: o()(L.primaryIcon, L.lockIcon, e, {
@@ -294,7 +294,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
       className: L.buttonOverlay,
       children: [(0, r.jsx)("div", {
         className: o()({
-          [L.buttonOverlayBackground]: !X
+          [L.buttonOverlayBackground]: !Q
         })
       }), (0, r.jsx)("div", {
         className: L.buttonOverlayActions,
@@ -368,7 +368,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
         className: o()(L.soundButton, {
           [L.animated]: ei,
           [L.playing]: null != ea ? ea : eg,
-          [L.hoverActiveBackground]: X,
+          [L.hoverActiveBackground]: Q,
           [L.soundButtonInteractive]: W,
           [L.buttonDisabled]: !W && !Z,
           [L.premiumDisabled]: eN && !Z,
@@ -378,7 +378,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
         onClick: e => {
           null == eU || eU(e)
         },
-        onContextMenu: Q && !eN ? e_ : true,
+        onContextMenu: X && !eN ? e_ : true,
         children: [(0, r.jsxs)("div", {
           className: o()(L.soundInfo, {
             [L.hasEmoji]: eC

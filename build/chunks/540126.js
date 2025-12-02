@@ -5,10 +5,10 @@ require.d(exports, {
   Bz: () => eb,
   Cb: () => K,
   Fq: () => z,
-  PB: () => X,
+  PB: () => Q,
   VR: () => eo,
   ZP: () => et,
-  p2: () => Q,
+  p2: () => X,
   wF: () => $,
   wZ: () => q,
   wd: () => J,
@@ -96,8 +96,8 @@ let W = "placeholder-channel-id",
   K = 2,
   z = 0,
   q = 1,
-  Q = 2,
-  X = 3,
+  X = 2,
+  Q = 3,
   J = 4,
   $ = 5,
   ee = new Set([String(Chunk443063.z.GUILD_DIRECTORY)]);
@@ -192,7 +192,7 @@ class en {
         throw Error("Invalid section. Use getChannelNoticeSection instead");
       case q:
         throw Error("Invalid section. Use getGuildActionSection instead");
-      case Q:
+      case X:
         return this.favoritesCategory;
       case J:
         return this.noParentCategory;
@@ -249,7 +249,7 @@ class en {
     if (i && (r = T.Z.getChannel(r.parent_id)), null == r) return n;
     let a = this.favoritesCategory.getShownChannelIds().indexOf(r.id);
     a >= 0 && n.push({
-      section: Q,
+      section: X,
       row: a
     });
     let s = this.recentsCategory.getShownChannelIds().indexOf(r.id);
@@ -382,7 +382,7 @@ class en {
       }
     }
     for (let e in this.categories = {}, f) this.categories[e] = new ea(this, c[e], f[e], O);
-    this.recentsSectionNumber = X, this.favoritesSectionNumber = Q, this.noParentCategory = new ei(this, u, O), this.favoritesCategory = new eo(this, O), this.recentsCategory = (0, _.Q)() ? new es(this, s, O) : new el(this, p, O), this.voiceChannelsCategory = new eu(this, h, c, O), this.guildActionSection = new ef(t, E.length > 0), this.channelNoticeSection = new ed(n), i()(!("null" in this.categories), "somehow a null got into categories"), this.voiceChannelsSectionNumber = $ + o().size(this.categories)
+    this.recentsSectionNumber = Q, this.favoritesSectionNumber = X, this.noParentCategory = new ei(this, u, O), this.favoritesCategory = new eo(this, O), this.recentsCategory = (0, _.Q)() ? new es(this, s, O) : new el(this, p, O), this.voiceChannelsCategory = new eu(this, h, c, O), this.guildActionSection = new ef(t, E.length > 0), this.channelNoticeSection = new ed(n), i()(!("null" in this.categories), "somehow a null got into categories"), this.voiceChannelsSectionNumber = $ + o().size(this.categories)
   }
 }
 class er {

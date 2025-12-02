@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 900492, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   optionCard: "optionCard_b96967",
   singleColumn: "singleColumn_b96967",

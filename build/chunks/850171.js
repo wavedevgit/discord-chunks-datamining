@@ -585,8 +585,8 @@ let w = "0px",
   K = () => J,
   z = () => document.getElementById("sprig-feedback-container"),
   q = () => document.getElementById("sprig-feedback-loading-animation"),
-  Q = () => !!document.getElementById(R),
-  X = false,
+  X = () => !!document.getElementById(R),
+  Q = false,
   J = null,
   $ = null,
   ee = false,
@@ -662,7 +662,7 @@ let w = "0px",
       elementId: "ul-custom-style",
       styleString: i ?? "",
       nonce: window.UserLeap.styleNonce
-    }), X = "center-modal" === l, en = o;
+    }), Q = "center-modal" === l, en = o;
     let [p, _] = o.split("-");
     (e => {
       if (z() || !er.includes(e)) return;
@@ -672,7 +672,7 @@ let w = "0px",
     let m = document.createElement("div");
     m.className = "sprig-feedback-button-label", m.innerText = c, $.appendChild(m), $.id = "sprig-feedback-button", $.classList.add(`sprig-feedback-button-${_}`, `sprig-feedback-button-${p}`, `sprig-feedback-button-${r}`, "fade-in-transition"), s.e.on(s.E.SURVEY_FADING_OUT, el), $.addEventListener("click", async () => {
       let e = document.getElementById("sprig-feedback-error-container");
-      if (Q() || ea()) {
+      if (X() || ea()) {
         if (el()) {
           s.e.emit(s.S.SurveyCloseRequested, {
             name: s.S.SurveyCloseRequested,
@@ -718,7 +718,7 @@ let w = "0px",
         border: g
       }
     } = window.UserLeap;
-    if (X || h) es(0);
+    if (Q || h) es(0);
     else {
       let e = document.createElement("div");
       e.id = "sprig-feedback-loading-container", e.className = `sprig-feedback-loading-container sprig-feedback-loading-container-${_}`, e.style.setProperty("--feedback-border", g), J = e, eu(), null == f || f.appendChild(e), es(-eo())
@@ -1166,7 +1166,7 @@ let eq = function(e) {
     }), s.b.info("TrackEvent", {
       eventName: m
     });
-    let E = window.UserLeap.delayingSurvey || Q() ? await S(A("1", [O], "events/batch"), {
+    let E = window.UserLeap.delayingSurvey || X() ? await S(A("1", [O], "events/batch"), {
       body: JSON.stringify({
         events: [{
           event: m,
@@ -1539,7 +1539,7 @@ let eq = function(e) {
   };
   Object.assign(window.UserLeap, r)
 };
-async function eQ(e, t, n = {}, r = {}) {
+async function eX(e, t, n = {}, r = {}) {
   let i = window.__cfg && window.__cfg.mode,
     a = T(),
     l = window.UserLeap.envId,
@@ -1576,14 +1576,14 @@ async function eQ(e, t, n = {}, r = {}) {
   })).ok || console.warn("[Sprig] (ERR-444) Failed to report error to API", t)
 }
 
-function eX(e = {}) {
+function eQ(e = {}) {
   var t;
   null == (t = window.SprigLoggerCallback) || t.call(window, "Initializing Sprig");
   let n = new URLSearchParams(window.location.search).get("sprigPreviewKey") ?? "";
   async function r() {
     var t, n, r, i, o;
     if (window.UserLeap.loaded) return;
-    if (null == (t = window.SprigLoggerCallback) || t.call(window, "Loading Sprig"), window.UserLeap.reportError = eQ, window.UserLeap.loaded = true, window.UserLeap._config = Object.assign({}, e, window.UserLeap.config), window.UserLeap.delayingSurvey = false, window.UserLeap._config && "object" == typeof window.UserLeap._config)
+    if (null == (t = window.SprigLoggerCallback) || t.call(window, "Loading Sprig"), window.UserLeap.reportError = eX, window.UserLeap.loaded = true, window.UserLeap._config = Object.assign({}, e, window.UserLeap.config), window.UserLeap.delayingSurvey = false, window.UserLeap._config && "object" == typeof window.UserLeap._config)
       for (let e in window.UserLeap._config) window.UserLeap[e] = window.UserLeap._config[e];
     if (!window.UserLeap.envId) {
       if (!window.UserLeap.appId) throw Error("Missing Environment id");
@@ -1746,7 +1746,7 @@ let e$ = {
       "constructor" !== e && (window.Sprig[e] = eJ.prototype[e])
     });
     let t = window.Sprig;
-    return t.appId = e.envId, t._queue = [], window.UserLeap = t, eX(e), window.Sprig
+    return t.appId = e.envId, t._queue = [], window.UserLeap = t, eQ(e), window.Sprig
   }
 };
 e$.configure

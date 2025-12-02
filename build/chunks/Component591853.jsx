@@ -255,7 +255,7 @@ function ey(e) {
     }), null == r || r(i, n)
   }, z = null != f ? f : null != P ? P : null != D ? D : true, q = () => {
     E(e => !e), M && (null == b || b.focus())
-  }, Q = e => {
+  }, X = e => {
     U(e), e && (null == b || b.focus())
   };
   return (0, r.jsx)("div", {
@@ -307,7 +307,7 @@ function ey(e) {
               })
             }) : true
           }), L && (0, r.jsx)(_.P3F, {
-            onClick: () => Q(false),
+            onClick: () => X(false),
             className: eu.primaryActionPopoutMessageCloseIcon,
             children: (0, r.jsx)(_.Dio, {
               size: "custom",
@@ -321,7 +321,7 @@ function ey(e) {
           children: [!j && (0, r.jsx)(_.Button, {
             fullWidth: true,
             variant: "secondary",
-            onClick: () => Q(true),
+            onClick: () => X(true),
             size: j ? "sm" : "md",
             text: ec.intl.string(ec.t.OAJQlP)
           }, "toggleMessageMode"), x]
@@ -422,7 +422,7 @@ function ev(e) {
             className: o()(eu.popoutUsername, eu.popoutTextPrimary),
             children: e
           }, t),
-          name0Hook: (e, n) => (0, r.jsx)(Q.Z, {
+          name0Hook: (e, n) => (0, r.jsx)(X.Z, {
             textClassName: o()(eu.popoutUsername, eu.popoutTextPrimary),
             text: e,
             user: b[0],
@@ -430,7 +430,7 @@ function ev(e) {
             onPopoutClosed: s,
             enableDisplayNameStyles: true
           }, n),
-          name1Hook: (e, n) => (0, r.jsx)(Q.Z, {
+          name1Hook: (e, n) => (0, r.jsx)(X.Z, {
             textClassName: o()(eu.popoutUsername, eu.popoutTextPrimary),
             text: e,
             user: b[1],
@@ -509,12 +509,12 @@ function eI(e) {
         className: eu.popoutHeroInner,
         children: [(0, r.jsx)("div", {
           className: eu.popoutThumbnailContainer,
-          children: (0, r.jsx)(X.E, {
+          children: (0, r.jsx)(Q.E, {
             image: v,
             smallImage: S,
             aspectRatio: p ? "none" : true,
             onClick: null != l ? l : I,
-            size: X.J.SIZE_72
+            size: Q.J.SIZE_72
           })
         }), (0, r.jsxs)("div", {
           className: eu.popoutHeroBody,
@@ -620,11 +620,11 @@ function eT(e) {
         className: eu.streamingPopoutHeader,
         children: [null != x && (0, r.jsx)("div", {
           className: eu.popoutThumbnailContainer,
-          children: (0, r.jsx)(X.E, {
+          children: (0, r.jsx)(Q.E, {
             image: x,
             smallImage: L,
             onClick: null != l ? l : I,
-            size: X.J.SIZE_72
+            size: Q.J.SIZE_72
           })
         }), (0, r.jsxs)("div", {
           className: eu.streamingPopoutHeaderText,

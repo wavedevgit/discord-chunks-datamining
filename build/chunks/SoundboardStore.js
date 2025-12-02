@@ -181,13 +181,13 @@ function q(e) {
   v.has(t) ? v.delete(t) : v.add(t)
 }
 
-function Q(e) {
+function X(e) {
   let {
     soundboardStoreState: t
   } = e;
   b = new Map(p.default.entries(t.soundboardSounds)), C = new Set(t.favoritedSoundIds), v = new Set(t.localSoundboardMutes)
 }
-class X extends(r = Chunk442837.ZP.Store) {
+class Q extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk581883.Z, Chunk594174.default), K(Chunk581883.Z.settings)
   }
@@ -262,8 +262,8 @@ class X extends(r = Chunk442837.ZP.Store) {
     return [I, S, T].some(e => 1 === e)
   }
 }
-E(X, "displayName", "SoundboardStore");
-let J = new X(Chunk570140.Z, {
+E(Q, "displayName", "SoundboardStore");
+let J = new Q(Chunk570140.Z, {
   LOGOUT: R,
   GUILD_SOUNDBOARD_FETCH: D,
   GUILD_SOUNDBOARD_SOUND_CREATE: j,
@@ -283,5 +283,5 @@ let J = new X(Chunk570140.Z, {
   SOUNDBOARD_SOUNDS_RECEIVED: x,
   GUILD_DELETE: L,
   AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: q,
-  OVERLAY_INITIALIZE: Q
+  OVERLAY_INITIALIZE: X
 })

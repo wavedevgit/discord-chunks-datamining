@@ -55,8 +55,8 @@ let D = 512,
     let {
       sectionDescriptors: z,
       activeSections: q,
-      commandsByActiveSection: Q,
-      hasMoreAfter: X,
+      commandsByActiveSection: X,
+      hasMoreAfter: Q,
       commands: J,
       filteredSectionId: $,
       scrollDown: ee,
@@ -91,16 +91,16 @@ let D = 512,
       scrollOffset: k,
       searchQuery: ""
     }), er = e => {
-      let t = q.length * (M + j) + (Q.reduce((e, t) => e + t.data.length, 0) - (X ? x : 0)) * L - D;
-      X && e + U > t && ee(), en(e), Z(), l.current = e
+      let t = q.length * (M + j) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? x : 0)) * L - D;
+      Q && e + U > t && ee(), en(e), Z(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
       ei.current = er
     }), i.useEffect(() => {
       ei.current(l.current)
     }, [J]);
-    let ea = i.useCallback(e => e !== q.length - 1 || X ? j : 0, [q.length, X]),
-      eo = Q.map(e => e.data.length);
+    let ea = i.useCallback(e => e !== q.length - 1 || Q ? j : 0, [q.length, Q]),
+      eo = X.map(e => e.data.length);
     i.useEffect(() => {
       null != H.current && Y && null != B && H.current.scrollRowIntoView(B)
     }, [Y, B]), i.useLayoutEffect(() => {
@@ -130,7 +130,7 @@ let D = 512,
         if (null == B) returnfalse;
         let t = 0,
           n = 0;
-        for (let e of Q)
+        for (let e of X)
           if (t = n, B < (n += e.data.length)) {
             let n = e.data[B - t],
               r = z.find(e => e.id === n.applicationId);
@@ -140,12 +140,12 @@ let D = 512,
       },
       onMoveSelection: e => {
         if (0 === J.length) returntrue;
-        let t = X ? x : 0,
+        let t = Q ? x : 0,
           n = J.length + t,
           r = null == B ? 0 : B + e;
         return r >= n ? r = n - 1 : r < 0 && (r = 0), V(r), W(true), true
       }
-    }), [J.length, Q, X, z, el, B]);
+    }), [J.length, X, Q, z, el, B]);
     let ec = i.useCallback(e => {
         let t = q[e];
         if (null == t) return null;
@@ -168,7 +168,7 @@ let D = 512,
           i = q[e],
           {
             data: a
-          } = Q[e];
+          } = X[e];
         return (0, r.jsxs)("ul", {
           role: "group",
           "aria-label": i.name,
@@ -183,10 +183,10 @@ let D = 512,
             className: R.noSearchResults
           })]
         }, e)
-      }, [q, Q]),
+      }, [q, X]),
       ed = i.useCallback((e, t) => {
         var i;
-        let a = Q[t.sectionIndex],
+        let a = X[t.sectionIndex],
           o = a.data[t.sectionRowIndex],
           s = "".concat(a.section.id, ":").concat(null != (i = null == o ? true : o.id) ? i : e);
         if (null == o || a.section.id !== o.applicationId && a.section.id !== C.bi.FRECENCY || o.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(T.Z, {}, s);
@@ -204,7 +204,7 @@ let D = 512,
             V(null), W(false)
           }
         }, s)
-      }, [n, Q, el, z, B]),
+      }, [n, X, el, z, B]),
       ef = (0, m.Dt)();
     return (0, p.KR)(ef, true, (0, f.DJ)(B)), i.useEffect(() => () => {
       (0, p.sJ)()

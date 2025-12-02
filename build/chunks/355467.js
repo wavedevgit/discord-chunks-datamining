@@ -490,7 +490,7 @@ async function q(e, t, n, r) {
     bank: _
   })
 }
-let Q = (e, t, n) => {
+let X = (e, t, n) => {
     if (null != t) throw n(t);
     if (null == e) throw n("SetupIntent not created");
     if (null == e.payment_method) throw n("setupIntent.payment_method not available with successful stripe call");
@@ -499,7 +499,7 @@ let Q = (e, t, n) => {
       error: t
     }
   },
-  X = e => null != e && "setup_intent_unexpected_state" === e.code && null != e.setup_intent && "succeeded" === e.setup_intent.status,
+  Q = e => null != e && "setup_intent_unexpected_state" === e.code && null != e.setup_intent && "succeeded" === e.setup_intent.status,
   J = async e => {
     if (null == e) throw H("Stripe Elements not loaded", true);
     let t = await e.submit();
@@ -558,7 +558,7 @@ async function et() {
         redirect: "if_required",
         elements: a
       });
-    if (X(require.error) && s !== Chunk231338.He.PAYMENT_REQUEST) {
+    if (Q(require.error) && s !== Chunk231338.He.PAYMENT_REQUEST) {
       let {
         client_secret: e
       } = await (0, Chunk947673.V)();
@@ -570,7 +570,7 @@ async function et() {
     }
     let {
       setupIntent: r
-    } = Q(require.setupIntent, require.error, e => H(e, true));
+    } = X(require.setupIntent, require.error, e => H(e, true));
     Chunk544891.current = Chunk575053, p = Chunk575053.payment_method
   } else {
     let {
@@ -609,7 +609,7 @@ async function en(e, t, n, r) {
     }),
     {
       setupIntent: u
-    } = Q(s, l, e => Y(e));
+    } = X(s, l, e => Y(e));
   return B(S.gg$.STRIPE, u.payment_method, n, {
     billingAddressToken: a,
     analyticsLocation: r

@@ -71,7 +71,7 @@ let d = () => {
       }
     }, {
       id: 1,
-      label: Chunk388032.intl.string(Chunk388032.t.RIRtn9),
+      label: Chunk388032.intl.string(Chunk388032.t.DmfiwT),
       tier0ColumnData: {
         includes: true
       },

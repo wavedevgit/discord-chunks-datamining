@@ -1,7 +1,7 @@
 /** Chunk was on 88569 **/
 /** chunk id: 886880, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => c
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,20 +9,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk493773 = require("./493773.js"),
   Chunk921944 = require("./921944.js");
 
-function s(e) {
+function c(e) {
   let {
     dismissibleContentType: t,
     targetElementRef: n,
-    visibleContent: s,
-    markAsDismissed: c,
+    visibleContent: c,
+    markAsDismissed: s,
     props: u
-  } = e, [d, f] = l.useState(false), p = l.useRef(null);
-  (0, o.ZP)(() => (p.current = setTimeout(() => f(true), 250), () => {
-    clearTimeout(p.current), c(a.L.AUTO_DISMISS)
+  } = e, [d, f] = o.useState(false), b = o.useRef(null);
+  (0, l.ZP)(() => (b.current = setTimeout(() => f(true), 250), () => {
+    clearTimeout(b.current), s(a.L.AUTO_DISMISS)
   }));
-  let b = l.useCallback(e => {
-    c("user:explicit" === e ? a.L.USER_DISMISS : a.L.AUTO_DISMISS)
-  }, [c]);
+  let y = o.useCallback(e => {
+    s("user:explicit" === e ? a.L.USER_DISMISS : a.L.AUTO_DISMISS)
+  }, [s]);
   return (0, r.jsx)(i.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -42,7 +42,7 @@ function s(e) {
     return e
   }({
     targetElementRef: n,
-    shouldShow: d && s === t,
-    onRequestClose: b
+    shouldShow: d && c === t,
+    onRequestClose: y
   }, u))
 }

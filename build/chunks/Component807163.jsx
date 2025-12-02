@@ -150,12 +150,12 @@ function eE(e) {
     renderVisual: i
   } = e, a = eC();
   return (0, r.jsxs)("div", {
-    className: o()(Q.whatYouLoseItem, {
-      [Q.premiumRebrand]: a
+    className: o()(X.whatYouLoseItem, {
+      [X.premiumRebrand]: a
     }),
     children: [(0, r.jsxs)("div", {
-      className: o()(Q.whatYouLoseItemLeftColumn, {
-        [Q.premiumRebrand]: a
+      className: o()(X.whatYouLoseItemLeftColumn, {
+        [X.premiumRebrand]: a
       }),
       children: [(0, r.jsx)(p.Text, {
         variant: "text-md/normal",
@@ -165,8 +165,8 @@ function eE(e) {
         text: q.intl.string(q.t.hvVgAZ)
       })]
     }), (0, r.jsx)("div", {
-      className: o()(Q.whatYouLoseItemRightColumn, {
-        [Q.premiumRebrand]: a
+      className: o()(X.whatYouLoseItemRightColumn, {
+        [X.premiumRebrand]: a
       }),
       children: i()
     })]
@@ -206,7 +206,7 @@ function ey(e) {
     displayProfile: o,
     forceShowPremium: true,
     themeType: null,
-    className: Q.profileCard,
+    className: X.profileCard,
     children: [(0, r.jsx)(N.b, {
       user: n,
       displayProfile: o,
@@ -217,37 +217,37 @@ function ey(e) {
       bannerHeight: 60,
       themePadding: 4
     }), (0, r.jsx)(e_, {
-      className: Q.profileAvatar,
+      className: X.profileAvatar,
       src: n.getAvatarURL(true, (0, p.pxk)(p.EFr.SIZE_56), !s),
       size: p.EFr.SIZE_56,
       "aria-label": n.username
     }), (0, r.jsxs)("div", {
-      className: Q.profileUserInfo,
+      className: X.profileUserInfo,
       children: [(0, r.jsx)(C.Z, {
-        className: Q.profileNameTag,
-        usernameClass: Q.profileNameTagUsername,
+        className: X.profileNameTag,
+        usernameClass: X.profileNameTagUsername,
         name: n.toString()
       }), (0, r.jsx)(eb, {
-        className: Q.profilePremiumIcon
+        className: X.profilePremiumIcon
       })]
     })]
   }) : (0, r.jsxs)("div", {
-    className: Q.profileCardTier1,
+    className: X.profileCardTier1,
     children: [(0, r.jsx)(e_, {
-      className: Q.profileAvatarTier1,
+      className: X.profileAvatarTier1,
       src: n.getAvatarURL(true, (0, p.pxk)(p.EFr.SIZE_56), !s),
       size: p.EFr.SIZE_56,
       "aria-label": n.username
     }), (0, r.jsxs)("div", {
-      className: Q.profileUserInfoTier1,
+      className: X.profileUserInfoTier1,
       children: [(0, r.jsx)(C.Z, {
-        className: Q.profileNameTag,
-        usernameClass: Q.profileNameTagUsername,
+        className: X.profileNameTag,
+        usernameClass: X.profileNameTagUsername,
         name: n.toString()
       }), (0, r.jsx)(p.SrA, {
         size: "md",
         color: "currentColor",
-        className: Q.profilePremiumIcon
+        className: X.profilePremiumIcon
       })]
     })]
   }), (0, r.jsx)(eE, {
@@ -291,12 +291,12 @@ function eO(e) {
     }),
     onLearnMore: v,
     renderVisual: () => (0, r.jsx)(p.$1m, {
-      className: Q.badgeGradientWrapper,
+      className: X.badgeGradientWrapper,
       color: d,
       children: (0, r.jsx)("img", {
         alt: h,
         src: m,
-        className: Q.badgeImage
+        className: X.badgeImage
       })
     })
   })
@@ -314,13 +314,13 @@ function ev(e) {
     description: l ? q.intl.format(q.t.couiKJ, {}) : q.intl.format(q.t["0hUHi6"], {}),
     onLearnMore: c,
     renderVisual: () => null != a && a.length > 0 || !l && null != o && o.length > 0 ? (0, r.jsxs)("div", {
-      className: Q.emojiStickersPersonalizedContainer,
+      className: X.emojiStickersPersonalizedContainer,
       children: [a.map(e => null == e.id ? e.url : k.ZP.getEmojiURL({
         id: e.id,
         animated: !i && e.animated,
         size: 58
       })).map((e, t) => null != e ? (0, r.jsx)("img", {
-        className: Q.personalizedEmoji,
+        className: X.personalizedEmoji,
         alt: "",
         src: e
       }, "emoji-".concat(t)) : null), l ? null : o.map(e => (0, r.jsx)(I.Z, {
@@ -330,7 +330,7 @@ function ev(e) {
         withLoadingIndicator: false
       }, e.id))]
     }) : (0, r.jsx)("img", {
-      className: Q.nonPersonalizedGraphic,
+      className: X.nonPersonalizedGraphic,
       alt: "",
       src: s
     })
@@ -371,28 +371,28 @@ function eS(e) {
     description: t === K.PremiumTypes.TIER_1 ? q.intl.format(q.t.K4Hv69, {}) : q.intl.format(q.t.wRxEDW, {}),
     onLearnMore: h,
     renderVisual: () => c ? (0, r.jsx)("div", {
-      className: Q.boostCardContainer,
+      className: X.boostCardContainer,
       children: (0, r.jsxs)("div", {
-        className: Q.boostCard,
+        className: X.boostCard,
         children: [(0, r.jsx)(v.Z, {
           guild: s,
           size: v.Z.Sizes.MEDIUM,
           animate: !a,
-          className: Q.boostCardIcon
+          className: X.boostCardIcon
         }), (0, r.jsxs)("div", {
-          className: Q.boostCardInfo,
+          className: X.boostCardInfo,
           children: [(0, r.jsx)(p.Text, {
             variant: "text-md/normal",
-            className: o()(Q.textSingleLineEllipsis, Q.boostCardTitle),
+            className: o()(X.textSingleLineEllipsis, X.boostCardTitle),
             children: s.name
           }), (0, r.jsxs)("div", {
-            className: Q.boostCardSubtitle,
+            className: X.boostCardSubtitle,
             children: [(0, r.jsx)(p.Ucv, {
               color: p.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-              className: Q.boostCardGem
+              className: X.boostCardGem
             }), (0, r.jsx)(p.Text, {
               variant: "text-xs/normal",
-              className: o()(Q.textSingleLineEllipsis, Q.boostCardCount),
+              className: o()(X.textSingleLineEllipsis, X.boostCardCount),
               children: q.intl.format(q.t["Ou/g/P"], {
                 boostCount: l
               })
@@ -514,9 +514,9 @@ function eN(e) {
       isPremiumRebrand: l
     },
     children: (0, r.jsx)("div", {
-      className: o()(Q.whatYouLoseItemContainer, {
-        [Q.premiumRebrand]: l,
-        [Q.noMargin]: l && c.length <= 2
+      className: o()(X.whatYouLoseItemContainer, {
+        [X.premiumRebrand]: l,
+        [X.noMargin]: l && c.length <= 2
       }),
       children: c
     })
@@ -556,9 +556,9 @@ let eP = function(e) {
       onClose: s
     }), (0, r.jsx)(p.hzk, {
       "data-migration-pending": true,
-      className: Q.body,
+      className: X.body,
       children: (0, r.jsx)(p.$jN, {
-        className: Q.spinner
+        className: X.spinner
       })
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -567,11 +567,11 @@ let eP = function(e) {
       onClose: s
     }), (0, r.jsxs)(p.hzk, {
       "data-migration-pending": true,
-      className: Q.body,
+      className: X.body,
       children: [(0, r.jsx)(p.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        className: Q.title,
+        className: X.title,
         children: n
       }), (0, r.jsxs)("div", {
         className: E,

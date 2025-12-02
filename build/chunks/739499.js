@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 739499, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   infobox: "infobox__63c3c",
   header: "header__63c3c",

@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 161799, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -21,7 +21,7 @@ let o = (() => {
     minValue: Chunk356659.qb,
     maxValue: Chunk356659.b0,
     onValueRender: t => "".concat(Math.floor(t)),
-    asValueChanges: t => r.W6(Math.floor(t)),
+    asValueChanges: t => l.W6(Math.floor(t)),
     markers: o,
     onMarkerRender: t => "".concat(Math.floor(t))
   })

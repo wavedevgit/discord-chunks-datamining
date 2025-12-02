@@ -117,7 +117,7 @@ function U(e) {
     location: "CollectiblesPaymentModalGiftCustomizationStep"
   }, {
     autoTrackExposure: false
-  }), Q = (0, p.Z)({}), X = z && M === R.Wt.DM_CHANNEL, J = q === m.u.POPULAR ? w.intl.string(w.t.Kwgrrr) : w.intl.string(w.t.r1huYR), $ = async (e, t) => {
+  }), X = (0, p.Z)({}), Q = z && M === R.Wt.DM_CHANNEL, J = q === m.u.POPULAR ? w.intl.string(w.t.Kwgrrr) : w.intl.string(w.t.r1huYR), $ = async (e, t) => {
     U(true), null != E && y(), await (0, c.B1)(e.id, t) || y(w.intl.string(w.t["4kgVqQ"])), U(false)
   };
   (0, o.ZP)(() => {
@@ -156,7 +156,7 @@ function U(e) {
       className: D.customGiftMessageWrapper,
       innerClassName: D.customGiftMessage
     }),
-    er = () => X ? (0, r.jsxs)("div", {
+    er = () => Q ? (0, r.jsxs)("div", {
       className: D.bodyColumnLeft,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
@@ -173,7 +173,7 @@ function U(e) {
       })
     }),
     ei = () => {
-      if (X) return (0, r.jsxs)("div", {
+      if (Q) return (0, r.jsxs)("div", {
         className: D.bodyColumnRight,
         children: [(0, r.jsx)(b.s, {
           giftRecipient: L
@@ -214,7 +214,7 @@ function U(e) {
         className: D.bodyColumnRight,
         children: [(0, r.jsx)(f.Z, {
           selectedSkuId: B,
-          recipients: Q,
+          recipients: X,
           className: D.sendTo,
           validateSelectedGift: $
         }), en(), null != e && (0, r.jsx)(d.Z, {

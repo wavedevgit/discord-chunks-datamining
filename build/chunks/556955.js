@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 556955, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   applicationBody: "applicationBody__864b0",
   form: "form__864b0",

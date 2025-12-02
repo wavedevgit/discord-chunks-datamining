@@ -1,5 +1,6 @@
-/** Chunk was on 88569 **/
-/** chunk id: 357660, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 357660, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   T: () => p
 }), require("./415506.js");
@@ -20,10 +21,10 @@ function f(e) {
   } = e, {
     showNotice: c,
     handleStoreUpdate: u
-  } = (0, s.Cu)(), f = null == t ? true : t.stores;
-  l.useEffect(() => {
+  } = (0, l.Cu)(), f = null == t ? true : t.stores;
+  i.useEffect(() => {
     if (null != f) {
-      let e = new i.Fh(f, () => {
+      let e = new a.Fh(f, () => {
         u(f)
       });
       return e.attach("SettingPanelNotice"), u(f), () => {
@@ -31,12 +32,12 @@ function f(e) {
       }
     }
   }, [f, u]);
-  let p = l.useMemo(() => {
+  let p = i.useMemo(() => {
     if (null == t || !c) return null;
     let {
       element: e
     } = t;
-    return (0, r.jsx)(a.oXn, {
+    return (0, r.jsx)(s.oXn, {
       className: d.notice,
       children: (0, r.jsx)(e, {})
     })
@@ -52,18 +53,18 @@ function f(e) {
 function p(e) {
   let {
     node: t
-  } = e, n = l.useRef(null), i = l.useRef(null);
+  } = e, n = i.useRef(null), a = i.useRef(null);
   if (1 !== t.layout.length) throw Error("Panels do not currently support multiple panes");
-  return (0, c.i)(t, i), (0, r.jsx)(f, {
+  return (0, c.i)(t, a), (0, r.jsx)(f, {
     notice: t.notice,
-    children: (0, r.jsx)(a.w0Z, {
+    children: (0, r.jsx)(s.w0Z, {
       "data-settings-panel-scroller": true,
       className: d.scroller,
-      ref: i,
+      ref: a,
       children: (0, r.jsx)("div", {
         className: d.panel,
         ref: n,
-        children: (0, r.jsx)(a.JcV, {
+        children: (0, r.jsx)(s.JcV, {
           containerRef: n,
           children: (0, r.jsx)(u.Z, {
             node: t.layout[0]

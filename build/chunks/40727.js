@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 40727, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -33,8 +33,8 @@ let c = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_FRAME_RATE, {
   setValue: t => {
     let {
       clipsQuality: e
-    } = r.Z.getSettings();
-    l.yi({
+    } = l.Z.getSettings();
+    s.yi({
       resolution: e.resolution,
       frameRate: t
     })

@@ -357,8 +357,8 @@ function eU(e) {
     W = (null == u ? true : u.state) != null && eM.has(u.state) && !H,
     K = (null == u ? true : u.overlayMethod) === L.gl.OutOfProcess,
     z = (null == u ? true : u.overlayMethod) === L.gl.OutOfProcessLimitedInteraction,
-    Q = (null == u ? true : u.overlayMethod) === L.gl.Hook,
-    X = (null == u ? true : u.state) === L.mM.OVERLAY_CRASHED || (null == u ? true : u.state) === L.mM.OVERLAY_CRASHED_DISABLED,
+    X = (null == u ? true : u.overlayMethod) === L.gl.Hook,
+    Q = (null == u ? true : u.state) === L.mM.OVERLAY_CRASHED || (null == u ? true : u.state) === L.mM.OVERLAY_CRASHED_DISABLED,
     J = !g && !y,
     [ee, en] = (() => {
       switch (true) {
@@ -388,7 +388,7 @@ function eU(e) {
             overlayMethod: eh.intl.string(eh.t["506Aba"]),
             overlayMethodHook: t
           }), null];
-        case Y && Q:
+        case Y && X:
           function n() {
             var e, t;
             switch (true) {
@@ -419,7 +419,7 @@ function eU(e) {
             overlayMethod: eh.intl.string(eh.t.bvlpDR),
             overlayMethodHook: i
           }), n()];
-        case X:
+        case Q:
           return [eh.intl.string(eh.t.OFC2aw), null];
         case G:
           return [eh.intl.string(eh.t.m7X4az), null];
@@ -432,7 +432,7 @@ function eU(e) {
           return [eh.intl.string(eh.t.VWUn0a), null];
         case W:
           if (K) return [eh.intl.string(eh.t["s8+CFq"]), null];
-          if (Q) return [eh.intl.string(eh.t.JEEdqt), null];
+          if (X) return [eh.intl.string(eh.t.JEEdqt), null];
           if (z) return [eh.intl.string(eh.t.pzBMwY), null];
           return [eh.intl.string(eh.t["2Xhy9k"]), null];
         case null == u:
@@ -448,7 +448,7 @@ function eU(e) {
   (0, v.ZP)(() => {
     h.Z.getDetectableGames()
   });
-  let [er, ei] = i.useMemo(() => W ? ["text-muted", m.TVs.colors.TEXT_MUTED.css] : Y && z ? ["text-feedback-warning", m.TVs.colors.TEXT_FEEDBACK_WARNING.css] : Y && K ? ["text-feedback-positive", m.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : Y && Q ? ["text-primary", m.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", m.TVs.colors.INTERACTIVE_NORMAL.css], [W, Y, z, K, Q]);
+  let [er, ei] = i.useMemo(() => W ? ["text-muted", m.TVs.colors.TEXT_MUTED.css] : Y && z ? ["text-feedback-warning", m.TVs.colors.TEXT_FEEDBACK_WARNING.css] : Y && K ? ["text-feedback-positive", m.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : Y && X ? ["text-primary", m.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", m.TVs.colors.INTERACTIVE_NORMAL.css], [W, Y, z, K, X]);
   return null == o ? null : (0, r.jsxs)(ej, {
     onExpand: T,
     className: I ? eg.expandedContainer : true,
@@ -879,7 +879,7 @@ function ez(e) {
       selfStream: false,
       discoverable: r
     }),
-    user: new X.Z({
+    user: new Q.Z({
       id: i,
       username: e
     }),
@@ -913,7 +913,7 @@ function eq() {
   })
 }
 
-function eQ() {
+function eX() {
   var e, t;
   let {
     avatarSizeMode: n,
@@ -1040,7 +1040,7 @@ function eQ() {
   })
 }
 
-function eX() {
+function eQ() {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.OVERLAY_OOP_SETTINGS_NUX], true, true), n = () => {
     exports(Chunk921944.L.DISMISS)
   };
@@ -1164,7 +1164,7 @@ function e$(e) {
   }), eD(), null == s) ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(ed.Z, {
       title: eh.intl.string(eh.t["9cb1Uz"]),
-      children: [o ? (0, r.jsx)(eX, {}) : null, (0, r.jsxs)("div", {
+      children: [o ? (0, r.jsx)(eQ, {}) : null, (0, r.jsxs)("div", {
         className: eg.overlayEnabledSettingsContainer,
         children: [(0, r.jsx)(eU, {
           runningGame: i,
@@ -1182,7 +1182,7 @@ function e$(e) {
       })]
     }), (0, r.jsxs)(m.gNt, {
       label: eh.intl.string(eh.t.r1TZfh),
-      children: [(0, r.jsx)(eQ, {}), (0, r.jsx)("div", {
+      children: [(0, r.jsx)(eX, {}), (0, r.jsx)("div", {
         className: eg.settingsDivider
       })]
     }), (0, r.jsx)(eW, {})]

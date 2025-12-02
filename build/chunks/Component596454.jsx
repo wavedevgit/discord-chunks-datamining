@@ -121,9 +121,9 @@ function A(e) {
     null != z && (Z.current = (0, d.po)(z, e => {
       e || G(Date.now())
     }))
-  }, [z]), Q = i.useCallback(e => {
+  }, [z]), X = i.useCallback(e => {
     O && k(true), null == f && B(_), null == N || N(e)
-  }, [O, _, N, B, f]), X = i.useCallback(e => {
+  }, [O, _, N, B, f]), Q = i.useCallback(e => {
     O && k(false), null == f && F(_), null == P || P(e)
   }, [O, f, _, P, F]), J = i.useMemo(() => {
     let e = null != f && "" !== f ? {
@@ -136,11 +136,11 @@ function A(e) {
         jumboable: "jumbo" === I
       }),
       onError: q,
-      onMouseEnter: Q,
-      onMouseLeave: X,
+      onMouseEnter: X,
+      onMouseLeave: Q,
       "data-type": "emoji"
     }), e)
-  }, [c, f, _, Q, X, q, j, I]);
+  }, [c, f, _, X, Q, q, j, I]);
   i.useEffect(() => () => {
     var e;
     return null == (e = Z.current) ? true : e.call(Z)

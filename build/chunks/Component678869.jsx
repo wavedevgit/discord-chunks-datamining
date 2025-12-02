@@ -149,7 +149,7 @@ function L(e) {
     }, [G, B, P, L, null == U ? true : U.src, H, Y, F, V]);
   if (null == G || null == Z) return null;
   let q = B,
-    Q = [];
+    X = [];
   if (Z.media.provider === a.p.SPOTIFY) {
     h = () => {
       (0, c.aG)(G)
@@ -171,7 +171,7 @@ function L(e) {
       let e = () => {
         (0, p.Z)(K, C.kG.USER_ACTIVITY_SYNC), j()
       };
-      Q.push((0, r.jsx)(l.Button, {
+      X.push((0, r.jsx)(l.Button, {
         variant: "primary",
         size: "md",
         fullWidth: true,
@@ -181,7 +181,7 @@ function L(e) {
       }, "listen-along"))
     }
   }
-  let X = (0, r.jsx)(S.wG, {
+  let Q = (0, r.jsx)(S.wG, {
     onClickThumbnail: I,
     channel: P,
     entry: L,
@@ -200,7 +200,7 @@ function L(e) {
     })
   });
   return (0, r.jsxs)(S.yR, {
-    children: [X, (0, r.jsx)(S.St, {
+    children: [Q, (0, r.jsx)(S.St, {
       children: (0, r.jsx)(S.WT, {
         onReaction: M,
         onVoiceChannelPreview: k,
@@ -209,7 +209,7 @@ function L(e) {
         generateReactionImage: z,
         reactionImageAltText: w(B, V),
         entry: L,
-        buttons: Q
+        buttons: X
       })
     })]
   })

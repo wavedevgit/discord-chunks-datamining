@@ -1,12 +1,12 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 323472, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  u: () => T
+  u: () => I
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  u = require.n(Chunk512722),
+  r = require.n(Chunk512722),
   Chunk59662 = require("./59662.js"),
   Chunk28682 = require("./28682.js"),
   Chunk388032 = require("./388032.jsx");
@@ -23,26 +23,26 @@ function d(t) {
     useTitle: e,
     settingKey: n,
     formatter: i,
-    index: r
-  } = t, l = e();
-  return "string" == typeof l ? i({
-    title: l,
-    index: r,
+    index: l
+  } = t, s = e();
+  return "string" == typeof s ? i({
+    title: s,
+    index: l,
     key: n
-  }) : l
+  }) : s
 }
 
 function E(t) {
   let {
     setting: e,
     formatter: n,
-    index: r
+    index: l
   } = t;
   return () => (0, i.jsx)(d, {
     useTitle: e.useTitle,
     settingKey: e.key,
     formatter: n,
-    index: r
+    index: l
   }, e.key)
 }
 
@@ -50,24 +50,24 @@ function S(t) {
   return t.type === a.Jq.LIST
 }
 
-function T(t, e) {
+function I(t, e) {
   var n, i;
   let {
-    limit: l = 2,
+    limit: s = 2,
     formatter: d = c
   } = null != e ? e : {};
-  u()(l > 0, "[useSettingCollapsibleSubtitle] Limit must be greater than 0");
+  r()(s > 0, "[useSettingCollapsibleSubtitle] Limit must be greater than 0");
   let {
-    directory: T,
-    fallbackDirectory: I
-  } = (0, s.t)(), g = null != (n = T.get(t)) ? n : I.get(t);
-  u()(null != g && (g.type === a.Jq.ACCORDION || S(g)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
-  let O = S(g) && null != (i = g.collapseAfter) ? i : 0,
-    _ = g.layout;
-  return r.useMemo(() => {
-    let t = O,
+    directory: I,
+    fallbackDirectory: T
+  } = (0, u.t)(), g = null != (n = I.get(t)) ? n : T.get(t);
+  r()(null != g && (g.type === a.Jq.ACCORDION || S(g)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
+  let _ = S(g) && null != (i = g.collapseAfter) ? i : 0,
+    O = g.layout;
+  return l.useMemo(() => {
+    let t = _,
       e = [];
-    for (let n of _)
+    for (let n of O)
       if ("useTitle" in n && null != n.useTitle) {
         if (t > 0) {
           t--;
@@ -78,7 +78,7 @@ function T(t, e) {
           useTitle: n.useTitle
         })
       } if (0 === e.length) return "";
-    let n = Math.min(l, 3);
+    let n = Math.min(s, 3);
     if (e.length <= n)
       if (1 === e.length) return o.intl.format(o.t["3H9tCW"], {
         settingOneHook: E({
@@ -150,5 +150,5 @@ function T(t, e) {
         index: 2
       })
     })
-  }, [l, O, _, d])
+  }, [s, _, O, d])
 }

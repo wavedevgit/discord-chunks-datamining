@@ -24,17 +24,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk942408 = require("./942408.js");
 
-function C(e) {
+function S(e) {
   let {
     destinationPanel: t,
     originPanel: n
   } = e;
-  (0, y.QB)({
+  (0, p.QB)({
     destinationPane: t,
     originPane: n,
-    subsection: p.Z.getSubsection(),
-    source: p.Z.getAnalyticsLocation(),
-    locationStack: p.Z.getAnalyticsLocations()
+    subsection: b.Z.getSubsection(),
+    source: b.Z.getAnalyticsLocation(),
+    locationStack: b.Z.getAnalyticsLocations()
   })
 }
 
@@ -43,33 +43,33 @@ function P(e) {
     target: t
   } = e, n = function(e, t) {
     if (null == e) return {};
-    var n, r, l = function(e, t) {
+    var n, r, o = function(e, t) {
       if (null == e) return {};
-      var n, r, l = {},
+      var n, r, o = {},
         i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-      return l
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+      return o
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
     }
-    return l
+    return o
   }(e, ["target"]);
-  let o = g.Z.useField("query"),
+  let l = g.Z.useField("query"),
     {
       node: a,
-      directory: c
-    } = (0, f.Z)(h.Z, o),
-    u = null != t && null != c.entry(t) ? t : true,
-    y = l.useRef(null);
-  return ((0, s.ZP)(() => {
-    let e = p.Z.getSection();
-    null != e && (C({
+      directory: s
+    } = (0, f.Z)(v.Z, l),
+    u = null != t && null != s.entry(t) ? t : true,
+    p = o.useRef(null);
+  return ((0, c.ZP)(() => {
+    let e = b.Z.getSection();
+    null != e && (S({
       destinationPanel: e,
       originPanel: null
-    }), y.current = e)
-  }), (0, i.e7)([b.default], () => null != b.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
+    }), p.current = e)
+  }), (0, i.e7)([y.default], () => null != y.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -88,27 +88,27 @@ function P(e) {
     return e
   }({
     root: a,
-    directory: c,
-    sidebarHeader: S,
+    directory: s,
+    sidebarHeader: C,
     emptyState: _,
-    sidebarFooter: m.Z,
+    sidebarFooter: j.Z,
     onPanelChange: e => {
-      let t = (0, x.getUserSettingsSectionsByWebUserSettings)().get(e);
-      null != t && (C({
+      let t = (0, m.getUserSettingsSectionsByWebUserSettings)().get(e);
+      null != t && (S({
         destinationPanel: t,
-        originPanel: y.current
-      }), y.current = t)
+        originPanel: p.current
+      }), p.current = t)
     },
     target: u,
-    defaultTarget: v.n.ACCOUNT_PANEL
+    defaultTarget: O.n.ACCOUNT_PANEL
   }, n)) : null
 }
 
-function S() {
+function C() {
   let e = Chunk996733.Z.useField("query"),
     t = Chunk473749.useRef(null),
     [n, i] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
-    s = Chunk473749.useMemo(() => ({
+    c = Chunk473749.useMemo(() => ({
       title: Chunk388032.intl.string(Chunk388032.t.Kv519a),
       body: Chunk388032.intl.string(Chunk388032.t.cTGJBZ),
       badge: "new",

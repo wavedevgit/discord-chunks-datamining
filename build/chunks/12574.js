@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 12574, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   scroller: "scroller__981c8",
   colorPicker: "colorPicker__981c8",

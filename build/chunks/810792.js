@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 810792, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   formSplit: "formSplit__4ecd1",
   formSplitHalf: "formSplitHalf__4ecd1",

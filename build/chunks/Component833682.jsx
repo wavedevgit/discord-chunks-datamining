@@ -1,7 +1,7 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 833682, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => f
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -30,9 +30,9 @@ function N() {
   })
 }
 
-function f() {
+function A() {
   let t = Chunk473749.useCallback(t => {
-      a.Z.setNoiseCancellation(t === T.Q4.KRISP, T.MP), a.Z.setNoiseSuppression(t === T.Q4.STANDARD, T.MP)
+      a.Z.setNoiseCancellation(t === I.Q4.KRISP, I.MP), a.Z.setNoiseSuppression(t === I.Q4.STANDARD, I.MP)
     }, []),
     {
       noiseCancellation: e,
@@ -46,8 +46,8 @@ function f() {
       isNoiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported()
     })),
     S = require ? Chunk803567.Q4.STANDARD : Chunk803567.Q4.NONE,
-    O = exports ? Chunk803567.Q4.KRISP : Chunk313789,
-    _ = Chunk473749.useMemo(() => {
+    _ = exports ? Chunk803567.Q4.KRISP : Chunk313789,
+    O = Chunk473749.useMemo(() => {
       let t = [];
       return Chunk210887 && module.push({
         label: Chunk388032.intl.string(Chunk388032.t.rdoNzt),
@@ -60,7 +60,7 @@ function f() {
         value: Chunk803567.Q4.NONE
       }), module
     }, [Chunk210887, Chunk509613]),
-    f = Chunk210887 ? Chunk388032.intl.format(Chunk388032.t["1q5aTp"], {
+    A = Chunk210887 ? Chunk388032.intl.format(Chunk388032.t["1q5aTp"], {
       helpArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION)
     }) : Chunk388032.intl.string(Chunk388032.t.OWKjw5);
   return (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
@@ -68,7 +68,7 @@ function f() {
     gap: 0,
     children: [(0, Chunk54381.jsx)(Chunk481060.q4e, {
       label: Chunk388032.intl.string(Chunk388032.t.t8Qhib),
-      description: f,
+      description: A,
       layout: "horizontal",
       value: Chunk775322,
       onChange: module,
@@ -76,10 +76,10 @@ function f() {
     }), Chunk210887 && (0, Chunk54381.jsx)(N, {})]
   })
 }
-let A = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
+let f = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
   usePredicate: function() {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isInputProfileCustom() && Chunk131951.Z.isNoiseSuppressionSupported())
   },
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.t8Qhib), Chunk388032.intl.string(Chunk388032.t.hmfkCi)],
-  render: () => (0, Chunk54381.jsx)(f, {})
+  render: () => (0, Chunk54381.jsx)(A, {})
 })

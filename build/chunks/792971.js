@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 792971, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -20,6 +20,6 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.VOICE_QUALITY_OF_SERVICE_SETTING, {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getQoS())
   },
   setValue: function(t) {
-    r.Z.setQoS(t)
+    l.Z.setQoS(t)
   }
 })

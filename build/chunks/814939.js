@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 814939, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   container: "container__5d756",
   dragContainer: "dragContainer__5d756",

@@ -67,8 +67,8 @@ function Z(e) {
       activityLaunchState: f.ZP.getLaunchState(d.id, null != H ? H : true)
     }), [H, d.id]),
     q = null == W ? true : W.userIds,
-    Q = (0, s.Wu)([N.default], () => Array.from(null != q ? q : []).map(e => N.default.getUser(e)).filter(D.lm), [q]),
-    X = (0, s.e7)([C.Z], () => {
+    X = (0, s.Wu)([N.default], () => Array.from(null != q ? q : []).map(e => N.default.getUser(e)).filter(D.lm), [q]),
+    Q = (0, s.e7)([C.Z], () => {
       if (null == q) return null;
       for (let e of q) {
         let t = C.Z.findActivity(e, e => e.application_id === d.id);
@@ -76,7 +76,7 @@ function Z(e) {
       }
       return null
     }, [d.id, q]),
-    J = null == X ? true : X.details,
+    J = null == Q ? true : Q.details,
     $ = i.useMemo(() => {
       let e = new I.ZP(d);
       return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = M.wT), e
@@ -129,10 +129,10 @@ function Z(e) {
       bot: d.bot
     });
   en.disabled && (l = en.tooltip);
-  let ec = Q.length,
-    eu = null != (a = null == X || null == (n = X.timestamps) ? true : n.start) ? a : null == X ? true : X.created_at,
+  let ec = X.length,
+    eu = null != (a = null == Q || null == (n = Q.timestamps) ? true : n.start) ? a : null == Q ? true : Q.created_at,
     ed = (0, y.r)({
-      activity: X,
+      activity: Q,
       activityUsersCount: ec
     }),
     ef = [{
@@ -186,7 +186,7 @@ function Z(e) {
             })]
           })]
         }), ec > 0 && (0, r.jsx)(y.K, {
-          activityUsers: Q,
+          activityUsers: X,
           guildId: w,
           activityText: ed.text
         })]

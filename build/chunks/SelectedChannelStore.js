@@ -149,7 +149,7 @@ function q(e) {
   null == n && (n = F(t)), null != a && n !== a && (i = a), a = n, V(t, n), M[Z(t)] !== n && (k[Z(t)] = M[Z(t)], M[Z(t)] = a), B()
 }
 
-function Q(e) {
+function X(e) {
   let {
     channelId: t
   } = e;
@@ -161,7 +161,7 @@ function Q(e) {
   s = t, B()
 }
 
-function X(e, t, n) {
+function Q(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3];
   if (G.delete(e), null == t) {
     let n = A.Z.getGuildId();
@@ -177,7 +177,7 @@ function J(e) {
     type: t,
     channel: n
   } = e;
-  X(n.id, n.guild_id, n.parent_id, "THREAD_DELETE" === t)
+  Q(n.id, n.guild_id, n.parent_id, "THREAD_DELETE" === t)
 }
 
 function $(e) {
@@ -187,7 +187,7 @@ function $(e) {
   for (let e of t)
     if (e.isScheduledForDeletion()) {
       let t = E.Ec.has(e.type);
-      X(e.id, e.guild_id, e.parent_id, t)
+      Q(e.id, e.guild_id, e.parent_id, t)
     }
 }
 
@@ -318,7 +318,7 @@ let es = new eo(Chunk570140.Z, {
   THREAD_DELETE: J,
   GUILD_CREATE: ee,
   GUILD_DELETE: et,
-  VOICE_CHANNEL_SELECT: Q,
+  VOICE_CHANNEL_SELECT: X,
   VOICE_STATE_UPDATES: en,
   CHANNEL_FOLLOWER_CREATED: er,
   LOGOUT: ei

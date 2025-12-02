@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 140367, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   bodyText: "bodyText__959cb",
   joinOptions: "joinOptions__959cb",

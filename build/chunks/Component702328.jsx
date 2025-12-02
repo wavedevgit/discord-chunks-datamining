@@ -57,9 +57,9 @@ let z = () => {
     a = Chunk473749.useRef(null),
     z = Chunk473749.useRef(null),
     q = Chunk473749.useRef(null),
-    Q = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    X = (0, Chunk410030.ZP)(),
-    J = (0, Chunk780384.wj)(X),
+    X = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
+    Q = (0, Chunk410030.ZP)(),
+    J = (0, Chunk780384.wj)(Q),
     [$, ee] = Chunk473749.useState(false),
     [et, en] = Chunk473749.useState(false),
     [er, ei] = Chunk473749.useState(false),
@@ -106,7 +106,7 @@ let z = () => {
     eL = (0, Chunk54381.jsxs)("div", {
       className: o()(eA.container, eA.responsiveContainer, {
         [eA.containerBackground]: eh || J,
-        [Chunk379039.fadeInFromTop]: !Q && eh
+        [Chunk379039.fadeInFromTop]: !X && eh
       }),
       "data-cy": "tier-0-marketing-page",
       children: [eh && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -159,7 +159,7 @@ let z = () => {
           ref: ev.ref,
           children: (0, Chunk54381.jsx)(Chunk611116.g, {
             shouldLoadVideo: es,
-            isReducedMotion: Q,
+            isReducedMotion: X,
             enablePremiumBrandRefreshDesign: eh
           })
         }), (0, Chunk54381.jsx)("div", {
@@ -167,7 +167,7 @@ let z = () => {
           ref: eS.ref,
           children: (0, Chunk54381.jsx)(Chunk611116.G_, {
             shouldLoadVideo: es,
-            isReducedMotion: Q,
+            isReducedMotion: X,
             enablePremiumBrandRefreshDesign: eh
           })
         }), (0, Chunk54381.jsx)("div", {
@@ -217,7 +217,7 @@ let z = () => {
           ref: q,
           isFooterVisible: et,
           isDarkMode: J,
-          isReducedMotion: Q,
+          isReducedMotion: X,
           subscriptionTier: ef
         })
       }), eh && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -231,7 +231,7 @@ let z = () => {
       })]
     });
   return (0, Chunk54381.jsx)(Chunk481060.f6W, {
-    theme: eh ? Chunk231338.BR.DARKER : X,
+    theme: eh ? Chunk231338.BR.DARKER : Q,
     children: t => (0, r.jsx)(u.yWw, {
       className: o()(eA.scroller, t),
       ref: e,

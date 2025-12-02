@@ -73,7 +73,7 @@ function q(e) {
   return e
 }
 
-function Q(e, t) {
+function X(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -84,8 +84,8 @@ function Q(e, t) {
   return n
 }
 
-function X(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Q(Object(t)).forEach(function(n) {
+function Q(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : X(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -106,7 +106,7 @@ function ee(e) {
     subscriptionTier: U,
     onClose: B,
     trialId: z,
-    trialFooterMessageOverride: Q,
+    trialFooterMessageOverride: X,
     reviewWarningMessage: $,
     planGroup: ee = Y.Y1,
     openInvoiceId: et,
@@ -159,9 +159,9 @@ function ee(e) {
     giftRecipient: eK,
     customGiftMessage: ez,
     emojiConfetti: eq,
-    soundEffect: eQ
-  } = (0, D.wD)(), eX = c.CgR.SMALL;
-  ep || (null == eY ? true : eY.isLargeModal) ? eX = c.CgR.LARGE : e_ || (null == eY ? true : eY.isMediumModal) ? eX = c.CgR.MEDIUM : (ew === L.h8.ADD_PAYMENT_STEPS || em || (null == eY ? true : eY.isDynamicModal)) && (eX = c.CgR.DYNAMIC);
+    soundEffect: eX
+  } = (0, D.wD)(), eQ = c.CgR.SMALL;
+  ep || (null == eY ? true : eY.isLargeModal) ? eQ = c.CgR.LARGE : e_ || (null == eY ? true : eY.isMediumModal) ? eQ = c.CgR.MEDIUM : (ew === L.h8.ADD_PAYMENT_STEPS || em || (null == eY ? true : eY.isDynamicModal)) && (eQ = c.CgR.DYNAMIC);
   let eJ = (0, v.N)(),
     e$ = null != U && !eW && (0, S.Wp)(eJ, U),
     [e0, e1] = i.useState(q({
@@ -187,7 +187,7 @@ function ee(e) {
   i.useEffect(() => {
     e1(e => {
       let n = null != eT ? (0, w.aS)(eT.id, false, eW, eM) : true;
-      return q(X(q({}, e), {
+      return q(Q(q({}, e), {
         subscription_plan_id: null == eT ? true : eT.id,
         price: null == n ? true : n.amount,
         regular_price: null == eT ? true : eT.price,
@@ -197,7 +197,7 @@ function ee(e) {
       }), t)
     })
   }, [eT, eS, eW, eM, t, null == eD ? true : eD.productLine]), (0, m.ZP)(() => {
-    (0, g.U)(X(q({}, e0), {
+    (0, g.U)(Q(q({}, e0), {
       continue_session_initial_step: eb,
       custom_checkout_flow: eV,
       has_saved_payment_source: ek,
@@ -213,11 +213,11 @@ function ee(e) {
   let e4 = i.useCallback(() => {
       let e = (0, R.MY)(eK) === R.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD,
         t = Date.now();
-      P.default.track(H.rMx.PAYMENT_FLOW_SUCCEEDED, X(q({}, e0), {
+      P.default.track(H.rMx.PAYMENT_FLOW_SUCCEEDED, Q(q({}, e0), {
         is_custom_message_edited: eW && e && null != ez ? ez !== W.intl.string(W.t.ZkOo1U) : true,
         is_custom_emoji_sound_available: eW && e,
         emoji_name: eW && e && (null == eq ? true : eq.id) == null ? null == eq ? true : eq.surrogates : true,
-        sound_id: eW && e ? null == eQ ? true : eQ.soundId : true,
+        sound_id: eW && e ? null == eX ? true : eX.soundId : true,
         duration_ms: t - ex.startTime,
         payment_source_type: null == e3 ? true : e3.type
       }));
@@ -227,7 +227,7 @@ function ee(e) {
         location: "PaymentModal emitPaymentFlowSuccess"
       });
       eW && null != eK && null != a && n && (0, O.n)(a) && (0, y.Ni)(eK.id)
-    }, [e0, eq, ez, eK, eW, eQ, ex.startTime, e3, a]),
+    }, [e0, eq, ez, eK, eW, eX, ex.startTime, e3, a]),
     e5 = i.useMemo(() => () => null == B ? true : B(eO === j.A.COMPLETED, eS), [B, eO, eS]),
     e8 = (0, s.Z)(() => Date.now(), [ew]),
     e6 = i.useCallback(function(e) {
@@ -242,12 +242,12 @@ function ee(e) {
       if (e === L.h8.CONFIRM && (e4(), null == h || h(i), eE)) return void e5();
       eN(e), null == ed || ed(e), eP(null), eC(null), e === L.h8.ADD_PAYMENT_STEPS && (u.Z.wait(f.fw), u.Z.wait(p.pB));
       let s = null != n ? n : ew;
-      if (null === s || a) return void P.default.track(H.rMx.PAYMENT_FLOW_LOADED, X(q({}, e0), {
+      if (null === s || a) return void P.default.track(H.rMx.PAYMENT_FLOW_LOADED, Q(q({}, e0), {
         initial_step: null != s ? s : e,
         continue_session_initial_step: eb,
         has_saved_payment_source: ek
       }));
-      P.default.track(H.rMx.PAYMENT_FLOW_STEP, X(q({}, e0, r), {
+      P.default.track(H.rMx.PAYMENT_FLOW_STEP, Q(q({}, e0, r), {
         from_step: s,
         to_step: e === L.h8.ADD_PAYMENT_STEPS ? L.h8.PAYMENT_TYPE : e,
         step_duration_ms: o - e8,
@@ -263,7 +263,7 @@ function ee(e) {
       analyticsData: e0,
       setAnalyticsData: e1,
       trialId: z,
-      trialFooterMessageOverride: Q,
+      trialFooterMessageOverride: X,
       reviewWarningMessage: $,
       planGroup: ee,
       openInvoiceId: et,
@@ -293,7 +293,7 @@ function ee(e) {
       transitionState: N,
       hideShadow: eh,
       returnRef: eg,
-      size: eX,
+      size: eQ,
       parentComponent: "PaymentModal",
       children: (0, r.jsx)(F.ZP, q({
         header: e9,

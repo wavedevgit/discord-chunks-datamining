@@ -91,8 +91,8 @@ function G() {
       pendingBio: K,
       pendingPronouns: z,
       pendingAccentColor: q,
-      pendingThemeColors: Q,
-      pendingLegacyUsernameDisabled: X,
+      pendingThemeColors: X,
+      pendingLegacyUsernameDisabled: Q,
       pendingPrimaryGuildId: J,
       errors: $
     } = (0, Chunk442837.cj)([Chunk25990.Z], () => {
@@ -129,7 +129,7 @@ function G() {
       }, "banner"), (0, Chunk54381.jsx)(Chunk451392.Z, {
         user: F,
         pendingAvatarSrc: ee,
-        pendingColors: Q,
+        pendingColors: X,
         onThemeColorsChange: Chunk350327.z5,
         forcedDivider: true
       })]
@@ -180,7 +180,7 @@ function G() {
       onChange: e => (0, s.s4)(e)
     }), null != eo && (0, Chunk54381.jsx)(Chunk872736.Z, {
       legacyUsername: eo,
-      pendingLegacyUsernameDisabled: X
+      pendingLegacyUsernameDisabled: Q
     }, "legacy_username")]
   })
 }

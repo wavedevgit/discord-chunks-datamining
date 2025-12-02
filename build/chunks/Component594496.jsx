@@ -79,14 +79,14 @@ function M(e) {
     image: Z
   }), q = null != k ? k : K;
   a()(null != q, "guild should not be null");
-  let Q = (0, u.gS)(q.id),
-    X = (0, o.e7)([I.ZP], () => null == q.id ? null : I.ZP.getMember(q.id, U.id)),
+  let X = (0, u.gS)(q.id),
+    Q = (0, o.e7)([I.ZP], () => null == q.id ? null : I.ZP.getMember(q.id, U.id)),
     J = (0, o.e7)([S.Z], () => S.Z.getGuildMemberProfile(U.id, q.id)),
     $ = c.JH.useExperiment({
       location: "GuildIdentityCustomizationSections"
     }).enabled,
     ee = A.ZP.canUsePremiumProfileCustomization(U),
-    et = (0, f.gd)(Z, null == X ? true : X.avatar),
+    et = (0, f.gd)(Z, null == Q ? true : Q.avatar),
     en = (0, f.f$)(F, null == J ? true : J.banner),
     er = (0, R.p)(Y, null == J ? true : J.themeColors),
     ei = null != (t = null == J ? true : J.bio) ? t : "",
@@ -96,14 +96,14 @@ function M(e) {
       n(null != e ? e : r)
     },
     es = e => eo(e, null == J ? true : J.banner, N.g_),
-    el = e => eo(e, null == X ? true : X.avatar, N.I5);
+    el = e => eo(e, null == Q ? true : Q.avatar, N.I5);
   return (0, r.jsxs)("div", {
     className: j.sectionsContainer,
     children: [(0, r.jsx)(w.Z, {
-      errors: null != (i = null == W ? true : W.nick) ? i : null == Q ? true : Q.nick,
+      errors: null != (i = null == W ? true : W.nick) ? i : null == X ? true : X.nick,
       username: C.ZP.getName(U),
       pendingNick: B,
-      currentNick: null == X ? true : X.nick,
+      currentNick: null == Q ? true : Q.nick,
       user: U,
       guild: q
     }, "nick"), (0, r.jsx)(O.Z, {
@@ -201,7 +201,7 @@ function M(e) {
           })]
         }),
         onBioChange: e => (0, R.qN)(e, ei),
-        errors: null != (M = null == W ? true : W.bio) ? M : null == Q ? true : Q.bio,
+        errors: null != (M = null == W ? true : W.bio) ? M : null == X ? true : X.bio,
         pendingBio: V,
         currentBio: ei,
         disabled: !ee

@@ -225,7 +225,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
   }), [G, I, H, D]);
   let {
     visibleItems: q,
-    listOffset: Q
+    listOffset: X
   } = i.useMemo(() => {
     if (false === D || false === R) return {
       visibleItems: null,
@@ -279,15 +279,15 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
       visibleItems: i,
       listOffset: r
     }
-  }, [U, Z, G, B, d, f, p, m, _, R, W, I, h, k, D]), X = i.useMemo(() => {
+  }, [U, Z, G, B, d, f, p, m, _, R, W, I, h, k, D]), Q = i.useMemo(() => {
     var e, t, n;
     return {
-      top: Q,
+      top: X,
       right: null != (e = null == d ? true : d[1]) ? e : 0,
       bottom: null != (t = null == d ? true : d[2]) ? t : 0,
       left: null != (n = null == d ? true : d[3]) ? n : 0
     }
-  }, [Q, d]), J = i.useMemo(() => ({
+  }, [X, d]), J = i.useMemo(() => ({
     height: H
   }), [H]), $ = A ? s.xVE : s.h21;
   return (0, r.jsxs)($, {
@@ -298,7 +298,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
     children: [(0, r.jsx)("div", {
       role: P,
       className: c.listItems,
-      style: X,
+      style: Q,
       children: q
     }), (0, r.jsx)("div", {
       className: c.listHeight,

@@ -164,7 +164,7 @@ let F = new Chunk710845.Z("RunningGameStore"),
   }],
   z = [],
   q = true,
-  Q = {
+  X = {
     "input-service": {
       state: "unknown"
     },
@@ -172,7 +172,7 @@ let F = new Chunk710845.Z("RunningGameStore"),
       state: "unknown"
     }
   },
-  X = new Set,
+  Q = new Set,
   J = [],
   $ = [],
   ee = [],
@@ -411,7 +411,7 @@ function ej() {
     if (null == r) return t;
     for (let i of A.Z.getLaunchOptions(n.id, n.branchId)) {
       let a = "".concat(n.id, ":").concat(n.branchId);
-      X.has(a) || (e = true, X.add(a));
+      Q.has(a) || (e = true, Q.add(a));
       let {
         fullExecutablePath: o
       } = i, s = o.replace(/\\/g, "/").toLowerCase();
@@ -534,11 +534,11 @@ function eq(e) {
   e_ = e.level, em = e.intervalSeconds
 }
 
-function eQ() {
+function eX() {
   e_ = null, em = null, ef.clear()
 }
 
-function eX(e) {
+function eQ(e) {
   let t = e.processes.map(e => {
     var t;
     return {
@@ -618,7 +618,7 @@ function e4(e) {
     status: t,
     modules: n
   } = e;
-  for (let e of n) Q[e] = t
+  for (let e of n) X[e] = t
 }!__OVERLAY__ && ((0, Chunk358085.isDesktop)() || Chunk987650.iP) && (eo = function() {
   let e = [],
     t = new Set;
@@ -857,13 +857,13 @@ class e5 extends(i = Chunk442837.ZP.Store) {
   }
   getSystemServiceStatus(e) {
     var t;
-    return null != (t = Q[e]) ? t : {
+    return null != (t = X[e]) ? t : {
       state: "unknown"
     }
   }
   isSystemServiceInitialized(e) {
     var t;
-    return (null == (t = Q[e]) ? true : t.state) === "running"
+    return (null == (t = X[e]) ? true : t.state) === "running"
   }
 }
 U(e5, "displayName", "RunningGameStore");
@@ -883,8 +883,8 @@ let e8 = new e5(Chunk570140.Z, {
     GAME_LAUNCH_SUCCESS: e3,
     GAME_DETECTION_WATCH_CANDIDATE_GAMES_START: ez,
     GAME_DETECTION_DEBUGGING_START: eq,
-    GAME_DETECTION_DEBUGGING_STOP: eQ,
-    GAME_DETECTION_DEBUGGING_TICK: eX,
+    GAME_DETECTION_DEBUGGING_STOP: eX,
+    GAME_DETECTION_DEBUGGING_TICK: eQ,
     SYSTEM_SERVICE_INITIALIZE: e4
   }),
   e6 = e8

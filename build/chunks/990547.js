@@ -14,8 +14,8 @@ require.r(exports), require.d(exports, {
   getCampaignParams: () => x,
   getDevice: () => U,
   getOS: () => k,
-  getSuperProperties: () => Q,
-  getSuperPropertiesBase64: () => X,
+  getSuperProperties: () => X,
+  getSuperPropertiesBase64: () => Q,
   isThrottled: () => K,
   trackMaker: () => q
 }), require("./35282.js"), require("./704826.js"), require("./413496.js"), require("./433524.js"), require("./388685.js");
@@ -250,7 +250,7 @@ function W() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("474306", 10);
+  let i = parseInt("474331", 10);
   isNaN(i) || (require.client_build_number = i);
   let a = null == R || null == (e = (t = R.remoteApp).getBuildNumber) ? true : module.call(exports);
   return isNaN(a) || (require.native_build_number = a), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require
@@ -301,10 +301,10 @@ let q = e => {
   }
 };
 
-function Q() {
+function X() {
   return r
 }
 
-function X() {
+function Q() {
   return i
 }

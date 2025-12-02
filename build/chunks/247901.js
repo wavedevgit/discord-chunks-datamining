@@ -286,7 +286,7 @@ function W(e, t) {
 var K = function(e, t) {
     return 1 == t.length ? t[0] : t.some(function(e) {
       return e.cancelled
-    }) ? Q(e) : t.every(function(e) {
+    }) ? X(e) : t.every(function(e) {
       return e.noop
     }) ? z(e) : q(e, t.every(function(e) {
       return e.finished
@@ -307,7 +307,7 @@ var K = function(e, t) {
       target: e
     }
   },
-  Q = function(e, t) {
+  X = function(e, t) {
     return true === t && (t = e.get()), {
       value: t,
       cancelled: true,
@@ -315,7 +315,7 @@ var K = function(e, t) {
     }
   };
 
-function X(e) {
+function Q(e) {
   var t = 0;
   if ("undefined" == typeof Symbol || null == e[Symbol.iterator]) {
     if (Array.isArray(e) || (e = J(e))) return function() {
@@ -389,7 +389,7 @@ function et() {
                       }
                     }
                   }, y = function(e) {
-                    var t = s <= (r.cancelId || 0) && Q(i) || s !== r.asyncId && q(i, false);
+                    var t = s <= (r.cancelId || 0) && X(i) || s !== r.asyncId && q(i, false);
                     if (t) throw e.result = t, e
                   }, O = b(function(e, t) {
                     var n = new er;
@@ -429,7 +429,7 @@ function et() {
                       return l.wrap(function(e) {
                         for (;;) switch (e.prev = e.next) {
                           case 0:
-                            n = X(t);
+                            n = Q(t);
                           case 1:
                             if ((r = n()).done) {
                               e.next = 7;
@@ -740,14 +740,14 @@ var er = function(e) {
         return r
       })
     }, n._merge = function(e, t, n) {
-      if (t.cancel) return this.stop(true), n(Q(this));
+      if (t.cancel) return this.stop(true), n(X(this));
       var r = this.key,
         i = this.animation,
         o = this._defaultProps,
         s = !a.is.und(e.to),
         l = !a.is.und(e.from);
       if (s || l)
-        if (!(t.callId > this._lastToId)) return n(Q(this));
+        if (!(t.callId > this._lastToId)) return n(X(this));
         else this._lastToId = t.callId;
       var c = function(e) {
           return a.is.und(t[e]) ? o[e] : t[e]
@@ -884,7 +884,7 @@ function e_(e, t) {
 var em = function(e, t) {
   var n = t.animation.to;
   return e ? function(r) {
-    if (r) e(Q(t));
+    if (r) e(X(t));
     else {
       var i = Y(n),
         o = Y(t.get());

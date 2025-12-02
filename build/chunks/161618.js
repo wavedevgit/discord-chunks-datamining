@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 161618, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -13,5 +13,5 @@ let o = (0, Chunk509613.qs)(Chunk313789.n.ENABLE_UNREAD_MESSAGE_BADGE, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.VH8AIJ),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["9K4qwX"]),
   useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => !Chunk292959.Z.getDisableUnreadBadge()),
-  setValue: t => r.default.setDisableUnreadBadge(!t)
+  setValue: t => l.default.setDisableUnreadBadge(!t)
 })

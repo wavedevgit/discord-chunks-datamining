@@ -137,7 +137,7 @@ function q(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   let {
     channelId: t
   } = e;
@@ -150,7 +150,7 @@ function Q(e) {
   }
 }
 
-function X(e) {
+function Q(e) {
   let {
     channel: t
   } = e;
@@ -341,8 +341,8 @@ let ey = new eb(Chunk570140.Z, {
   VOICE_CHANNEL_SELECT: Y,
   VOICE_STATE_UPDATES: z,
   GUILD_DELETE: q,
-  CHANNEL_DELETE: X,
-  CALL_DELETE: Q,
+  CHANNEL_DELETE: Q,
+  CALL_DELETE: X,
   APP_STATE_UPDATE: $,
   GUILD_MEMBERS_REQUEST: en,
   GUILD_SEARCH_RECENT_MEMBERS: er,

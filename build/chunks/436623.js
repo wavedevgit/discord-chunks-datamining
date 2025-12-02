@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 436623, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -24,8 +24,8 @@ let o = (0, Chunk509613.UO)(Chunk313789.n.SOUNDMOJI_VOLUME_SETTING, {
     })
   },
   setValue: function(t) {
-    let e = (0, l.A)(t);
-    u.AY.updateSetting(e)
+    let e = (0, s.A)(t);
+    r.AY.updateSetting(e)
   },
   onValueRender: function(t) {
     return "".concat(t.toFixed(0), "%")

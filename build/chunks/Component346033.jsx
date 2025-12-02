@@ -60,9 +60,9 @@ let U = e => {
       [Y, W] = Chunk473749.useState(false),
       K = !B && !V,
       [z, q] = Chunk473749.useState(false),
-      Q = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-      X = null != Q ? (0, Chunk74538.Af)(Q) : null,
-      J = null != X ? Chunk74538.ZP.getSkuIdForPlan(X.planId) : null,
+      X = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
+      Q = null != X ? (0, Chunk74538.Af)(X) : null,
+      J = null != Q ? Chunk74538.ZP.getSkuIdForPlan(Q.planId) : null,
       $ = null !== J && J !== Chunk474936.Si.TIER_2 ? Chunk474936.Si.TIER_2 : null,
       ee = (0, Chunk639119.N)(),
       et = null == ee || null == (e = ee.subscription_trial) ? true : module.sku_id,
@@ -118,7 +118,7 @@ let U = e => {
       className: Chunk689095.container,
       "data-cy": "tier-0-marketing-page",
       children: [(0, Chunk54381.jsx)(Chunk135785.Z, {
-        premiumSubscription: Q,
+        premiumSubscription: X,
         className: o()(Chunk689095.existingSubscriberSpacing, {
           [Chunk689095.zIndex1]: en
         })
@@ -143,7 +143,7 @@ let U = e => {
               [Chunk689095.settingsHeroNoBackground]: en,
               [Chunk689095.trialMarketingMargin]: en,
               [Chunk689095.settingsHeroBogoHeight]: er,
-              [Chunk689095.noTopPaddingOverride]: null != Q
+              [Chunk689095.noTopPaddingOverride]: null != X
             }),
             isDarkMode: Z
           })

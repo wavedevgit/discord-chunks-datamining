@@ -82,12 +82,12 @@ function q(e, t) {
   return n
 }
 
-function Q(e, t) {
+function X(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : q(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let X = (0, Chunk313201.hQ)(),
+let Q = (0, Chunk313201.hQ)(),
   J = (0, Chunk313201.hQ)(),
   $ = (0, Chunk313201.hQ)(),
   ee = o().debounce(e => {
@@ -180,7 +180,7 @@ function er() {
   let e = Chunk695346.jU.useSetting(),
     [t] = Chunk473749.useState(() => {
       let e = "1337",
-        t = (0, Chunk786761.e5)(Q(z({}, (0, Chunk3148.ZP)({
+        t = (0, Chunk786761.e5)(X(z({}, (0, Chunk3148.ZP)({
           channelId: module,
           content: Chunk388032.intl.formatToPlainString(Chunk388032.t.bB80LC, {
             previewLink: "https://discord.com/accessibility"
@@ -214,7 +214,7 @@ function er() {
         className: Chunk953752.previewMessage,
         children: (0, Chunk54381.jsx)(Chunk753206.Z, {
           compact: module,
-          author: Q(z({}, (0, Chunk739566.ZH)(exports)), {
+          author: X(z({}, (0, Chunk739566.ZH)(exports)), {
             colorString: "#DD80F4"
           }),
           message: exports
@@ -271,7 +271,7 @@ function eo() {
     children: [(0, Chunk54381.jsx)(Chunk481060.iRW, {
       label: Chunk388032.intl.string(Chunk388032.t["5PWWCY"]),
       description: Chunk388032.intl.string(Chunk388032.t["0PbE/H"]),
-      "aria-labelledby": X,
+      "aria-labelledby": Q,
       "aria-describedby": J,
       markers: Chunk981631.yqN.SATURATION_INCREMENTS,
       equidistant: true,

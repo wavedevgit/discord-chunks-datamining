@@ -2,7 +2,7 @@
 /** chunk id: 98880, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U4: () => Q,
+  U4: () => X,
   cG: () => es,
   kA: () => el,
   qR: () => ec
@@ -105,11 +105,11 @@ function q(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var Q = function(e) {
+var X = function(e) {
   return e.ICON = "icon", e.ROW = "row", e.NO_BANNER = "no_banner", e.MEDIUM_BANNER = "medium_banner", e.LARGE_BANNER = "large_banner", e
 }({});
 
-function X(e) {
+function Q(e) {
   var t;
   let {
     application: n,
@@ -518,7 +518,7 @@ function el(e) {
   let {
     onClickAppCard: t
   } = es(e);
-  return (0, r.jsx)(X, K(Y({}, e), {
+  return (0, r.jsx)(Q, K(Y({}, e), {
     onClick: t
   }))
 }
@@ -549,7 +549,7 @@ function ec(e) {
       launchingComponentId: f,
       fetchesApplication: u
     });
-  return y === E.JS.START || y === E.JS.JOIN ? l ? (0, r.jsx)(X, K(Y({}, d), {
+  return y === E.JS.START || y === E.JS.JOIN ? l ? (0, r.jsx)(Q, K(Y({}, d), {
     sectionName: o,
     application: n,
     onClick: b,
@@ -564,7 +564,7 @@ function ec(e) {
     sectionName: o,
     application: n,
     location: a
-  })) : (0, r.jsx)(X, K(Y({}, d), {
+  })) : (0, r.jsx)(Q, K(Y({}, d), {
     sectionName: o,
     application: n,
     onClick: e => {

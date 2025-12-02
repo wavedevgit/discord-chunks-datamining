@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 292591, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -27,7 +27,7 @@ let d = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AUTOMATIC_GAIN_CONTROL_SETTING, 
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getAutomaticGainControl())
   },
   setValue: function(t) {
-    r.Z.setAutomaticGainControl(t, {
+    l.Z.setAutomaticGainControl(t, {
       page: o.ZY5.USER_SETTINGS,
       section: o.jXE.SETTINGS_VOICE_AND_VIDEO
     })

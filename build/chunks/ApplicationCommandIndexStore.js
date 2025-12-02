@@ -129,7 +129,7 @@ function q(e) {
   }
 }
 
-function Q(e, t) {
+function X(e, t) {
   let n, r = arguments.length > 2 && true !== arguments[2] && arguments[2],
     i = q(e),
     a = em.indices[i];
@@ -141,7 +141,7 @@ function Q(e, t) {
   }, t)), true !== n && (em.indices[i] = n, "application" === e.type && (em.applicationIndices.set(i, n), em.applicationIndicesVersion = em.applicationIndicesVersion + 1)), a
 }
 
-function X(e) {
+function Q(e) {
   let t = q(e),
     n = em.indices[t];
   (null == n ? true : n.fetchState.fetching) && n.fetchState.abort.abort(), delete em.indices[t]
@@ -185,7 +185,7 @@ async function en(e) {
 async function er(e) {
   let t = new AbortController,
     n = new v.o;
-  Q(e, {
+  X(e, {
     fetchState: {
       fetching: true,
       abort: t,
@@ -230,7 +230,7 @@ function ei(e) {
     t.commands[e.id] = e
   }
   let d = null != (n = a.version) ? n : B;
-  Q(i, {
+  X(i, {
     serverVersion: d,
     result: {
       sections: s,
@@ -247,7 +247,7 @@ function ea(e) {
   let {
     target: t
   } = e;
-  Q(t, {
+  X(t, {
     fetchState: {
       fetching: false,
       retryAfter: Date.now() + Y
@@ -260,7 +260,7 @@ function eo(e) {
   let {
     guildId: n,
     version: r
-  } = e, i = Q({
+  } = e, i = X({
     type: "guild",
     guildId: n
   }, {
@@ -269,7 +269,7 @@ function eo(e) {
   if (null != a)
     for (let e in a) {
       let t = g.Z.getDMFromUserId(e);
-      null != t && Q({
+      null != t && X({
         type: "channel",
         channelId: t
       }, {
@@ -314,7 +314,7 @@ function el(e) {
     applicationId: t,
     channelId: n,
     guildId: r
-  }) && Q(null != r ? {
+  }) && X(null != r ? {
     type: "guild",
     guildId: r
   } : {
@@ -322,11 +322,11 @@ function el(e) {
     channelId: n
   }, {
     serverVersion: Z
-  }), em.hasUserStateApplication(t) && Q({
+  }), em.hasUserStateApplication(t) && X({
     type: "user"
   }, {
     serverVersion: Z
-  }), em.hasApplicationState(t) && Q({
+  }), em.hasApplicationState(t) && X({
     type: "application",
     applicationId: t
   }, {
@@ -338,7 +338,7 @@ function ec(e) {
   let {
     channel: t
   } = e;
-  X({
+  Q({
     type: "channel",
     channelId: t.id
   })
@@ -348,14 +348,14 @@ function eu(e) {
   let {
     guild: t
   } = e;
-  X({
+  Q({
     type: "guild",
     guildId: t.id
   })
 }
 
 function ed() {
-  Q({
+  X({
     type: "user"
   }, {
     serverVersion: Z

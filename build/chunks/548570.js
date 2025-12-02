@@ -141,8 +141,8 @@ function W(e) {
 function K() {}
 let z = 4,
   q = 1001,
-  Q = "Stream end encountered",
-  X = 4004,
+  X = "Stream end encountered",
+  Q = 4004,
   J = 30 * Chunk70956.Z.Millis.SECOND,
   $ = 3 * Chunk70956.Z.Millis.MINUTE,
   ee = +Chunk70956.Z.Millis.MINUTE;
@@ -327,7 +327,7 @@ class ei extends Chunk183139.Z {
     if (e = e || false, this._cleanup(), this.emit("close", {
         code: t,
         reason: n
-      }), t === X) return this.connectionState = C.Z.CLOSED, V.warn("[WS CLOSED] because of authentication failure, marking as closed."), this._reset(e, t, n);
+      }), t === Q) return this.connectionState = C.Z.CLOSED, V.warn("[WS CLOSED] because of authentication failure, marking as closed."), this._reset(e, t, n);
     if (this._tryDetectInvalidIOSToken(t, n, e), this.connectionState = C.Z.WILL_RECONNECT, this.nextReconnectIsImmediate) V.info("[WS CLOSED] (".concat(e.toString(), ", ").concat(t, ", ").concat(n, ") retrying immediately.")), this._connect("_handleCloseImmediateReconnect");
     else {
       let r = this.gatewayBackoff.fail(() => this._connect("_handleClose:".concat(n)));
@@ -335,7 +335,7 @@ class ei extends Chunk183139.Z {
     }
   }
   _tryDetectInvalidIOSToken(e, t, n) {
-    (0, T.isIOS)() && null != this.token && e === q && t === Q && (this.iosGoingAwayEventCount += 1, 3 === this.iosGoingAwayEventCount && d.tn.get({
+    (0, T.isIOS)() && null != this.token && e === q && t === X && (this.iosGoingAwayEventCount += 1, 3 === this.iosGoingAwayEventCount && d.tn.get({
       url: U.ANM.ME,
       headers: {
         authorization: this.token
@@ -352,7 +352,7 @@ class ei extends Chunk183139.Z {
       let {
         status: t
       } = e;
-      401 === t && (this.connectionState = C.Z.CLOSED, V.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, X, "invalid token manually detected")), v.default.track(U.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
+      401 === t && (this.connectionState = C.Z.CLOSED, V.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, Q, "invalid token manually detected")), v.default.track(U.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
         api_status_code: t
       })
     }))
@@ -402,7 +402,7 @@ class ei extends Chunk183139.Z {
   async _doIdentify() {
     this.seq = 0, this.sessionId = null;
     let e = this.handleIdentify();
-    if (null === module) return void this._handleClose(true, X, "No connection info provided");
+    if (null === module) return void this._handleClose(true, Q, "No connection info provided");
     this.connectionState = Chunk138859.Z.IDENTIFYING;
     let t = Date.now();
     this.identifyStartTime = exports;
@@ -439,7 +439,7 @@ class ei extends Chunk183139.Z {
   _doFastConnectIdentify() {
     this.seq = 0, this.sessionId = null;
     let e = this.handleIdentify();
-    if (null === module) return void this._handleClose(true, X, "No connection info provided");
+    if (null === module) return void this._handleClose(true, Q, "No connection info provided");
     let {
       token: t
     } = module;

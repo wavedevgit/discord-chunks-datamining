@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 383823, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -21,7 +21,7 @@ let o = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_STREAMER_MODE, {
     })
   },
   setValue: function(t) {
-    r.Z.update({
+    l.Z.update({
       enabled: t
     })
   }

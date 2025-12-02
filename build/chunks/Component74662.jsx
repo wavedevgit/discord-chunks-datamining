@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 74662, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   U: () => N
@@ -18,20 +18,20 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk163646 = require("./163646.js");
-let O = (0, Chunk509613.x1)(Chunk313789.n.PRIVATE_BROWSING_PANE, {
+let _ = (0, Chunk509613.x1)(Chunk313789.n.PRIVATE_BROWSING_PANE, {
     buildLayout: () => [],
     render: () => (0, Chunk54381.jsx)(Chunk55467.R, {})
   }),
-  _ = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
+  O = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk163646.default.bU5ANm),
     useBadge: () => (0, Chunk54381.jsx)(Chunk688465.Z, {}),
-    buildLayout: () => [O]
+    buildLayout: () => [_]
   }),
   N = (0, Chunk509613.m7)(Chunk313789.n.PRIVATE_BROWSING_SIDEBAR_ITEM, {
     icon: Chunk657707.enf,
     useTitle: () => Chunk388032.intl.string(Chunk163646.default.bU5ANm),
     getLegacySearchKey: () => Chunk726985.s6.PRIVATE_BROWSING_PERK,
-    buildLayout: () => [_],
+    buildLayout: () => [O],
     usePredicate: () => {
       let t = (0, Chunk612659.m)(),
         {
@@ -40,7 +40,7 @@ let O = (0, Chunk509613.x1)(Chunk313789.n.PRIVATE_BROWSING_PANE, {
           perkAvailableToUser: i
         } = (0, Chunk773275.xf)(),
         {
-          enabled: r
+          enabled: l
         } = Chunk299886.H.useConfig({
           location: "private_browsing_perk_settings_page"
         });

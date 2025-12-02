@@ -135,9 +135,9 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
   m = null != x && D || F && j || F && null != Z ? null : F || !v || j || null != Z ? null != x && U ? null != (n = I.Z.pipActivityWindow) ? n : I.Z.pipVideoWindow : null != Z && B ? null != (i = null != (r = I.Z.pipFrameWindow) ? r : I.Z.pipVideoWindow) ? i : I.Z.pipActivityWindow : null != (o = null != (a = I.Z.pipVideoWindow) ? a : I.Z.pipActivityWindow) ? o : I.Z.pipFrameWindow : null;
   let z = Array.from(I.Z.pipWindows.values()),
     q = I.Z.pipWidth(R.cL.VIDEO),
-    Q = z.find(e => e.component === N.NYg.VIDEO),
-    X = z.find(e => e.component === N.NYg.ACTIVITY),
-    J = [Q, X, z.find(e => e.component === N.NYg.FRAME)].filter(C.lm),
+    X = z.find(e => e.component === N.NYg.VIDEO),
+    Q = z.find(e => e.component === N.NYg.ACTIVITY),
+    J = [X, Q, z.find(e => e.component === N.NYg.FRAME)].filter(C.lm),
     $ = O.ZP.callChatSidebarWidth,
     ee = T.Z.getVoiceChannelId(),
     et = T.Z.getChannelId() === ee,
@@ -158,7 +158,7 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     roundCorners: !ei,
     windowSize: Y,
     inPopoutWindow: F,
-    activityPIPWindow: X,
+    activityPIPWindow: Q,
     chatOpen: en,
     callChatSidebarWidth: $
   }

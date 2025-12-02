@@ -221,7 +221,7 @@ module.exports = function(e) {
       contains: [...m, ...N, ...K, R, z]
     };
   z.contains.push(q);
-  let Q = {
+  let X = {
       begin: /\(/,
       end: /\)/,
       relevance: 0,
@@ -232,7 +232,7 @@ module.exports = function(e) {
         relevance: 0
       }, ...m, H, ...N, ...P, ...w, L, Z, ...W, ...K, z]
     },
-    X = {
+    Q = {
       begin: /</,
       end: />/,
       keywords: "repeat each",
@@ -253,7 +253,7 @@ module.exports = function(e) {
           className: "params",
           match: y
         }]
-      }, ...m, ...N, ...w, L, Z, ...K, z, Q],
+      }, ...m, ...N, ...w, L, Z, ...K, z, X],
       endsParent: true,
       illegal: /["']/
     },
@@ -263,7 +263,7 @@ module.exports = function(e) {
         1: "keyword",
         3: "title.function"
       },
-      contains: [X, J, t],
+      contains: [Q, J, t],
       illegal: [/\[/, /%/]
     },
     ee = {
@@ -271,7 +271,7 @@ module.exports = function(e) {
       className: {
         1: "keyword"
       },
-      contains: [X, J, t],
+      contains: [Q, J, t],
       illegal: /\[|%/
     },
     et = {
@@ -313,7 +313,7 @@ module.exports = function(e) {
         3: "title.class"
       },
       keywords: C,
-      contains: [X, ...N, {
+      contains: [Q, ...N, {
         begin: /:/,
         end: /\{/,
         keywords: C,
@@ -342,6 +342,6 @@ module.exports = function(e) {
       end: /$/,
       contains: [...m],
       relevance: 0
-    }, H, ...N, ...P, ...w, L, Z, ...W, ...K, z, Q]
+    }, H, ...N, ...P, ...w, L, Z, ...W, ...K, z, X]
   }
 }

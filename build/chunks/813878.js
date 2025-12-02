@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 813878, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   categoryRow: "categoryRow__1ea09",
   uncategorized: "uncategorized__1ea09",

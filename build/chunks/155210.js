@@ -217,10 +217,10 @@ function O(e, t, n) {
   } : {};
   e === (0, h.useMemo)(() => t.segments.find(e => e.isEditable), [t.segments]) || t.isInvalid || (N = true);
   let q = (0, f.Me)(),
-    Q = !t.isDisabled && !t.isReadOnly && e.isEditable,
-    X = "literal" === e.type ? "" : T.of(e.type),
+    X = !t.isDisabled && !t.isReadOnly && e.isEditable,
+    Q = "literal" === e.type ? "" : T.of(e.type),
     J = (0, p.b)({
-      "aria-label": `${X}${A?`, ${A}`:""}${C?", ":""}`,
+      "aria-label": `${Q}${A?`, ${A}`:""}${C?", ":""}`,
       "aria-labelledby": C
     });
   if ("literal" === e.type) return {
@@ -244,12 +244,12 @@ function O(e, t, n) {
       "aria-describedby": N,
       "aria-readonly": t.isReadOnly || !e.isEditable ? "true" : true,
       "data-placeholder": e.isPlaceholder || true,
-      contentEditable: Q,
-      suppressContentEditableWarning: Q,
-      spellCheck: Q ? "false" : true,
-      autoCorrect: Q ? "off" : true,
-      [parseInt(h.version, 10) >= 17 ? "enterKeyHint" : "enterkeyhint"]: Q ? "next" : true,
-      inputMode: t.isDisabled || "dayPeriod" === e.type || "era" === e.type || !Q ? true : "numeric",
+      contentEditable: X,
+      suppressContentEditableWarning: X,
+      spellCheck: X ? "false" : true,
+      autoCorrect: X ? "off" : true,
+      [parseInt(h.version, 10) >= 17 ? "enterKeyHint" : "enterkeyhint"]: X ? "next" : true,
+      inputMode: t.isDisabled || "dayPeriod" === e.type || "era" === e.type || !X ? true : "numeric",
       tabIndex: t.isDisabled ? true : 0,
       onKeyDown: k,
       onFocus: Y,

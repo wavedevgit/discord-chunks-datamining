@@ -110,12 +110,12 @@ function q(e) {
   return t.reduce((t, n) => e(W(n)) ? (er(n), en(n), true) : t, false)
 }
 
-function Q(e) {
+function X(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : L;
   return q(t => t.updateParticipant(e), t)
 }
 
-function X(e) {
+function Q(e) {
   var t;
   let n = E.Z.getChannel(e),
     r = (null == n ? true : n.isDM()) && 1 ? A.dF.AUTO : A.dF.NONE;
@@ -171,7 +171,7 @@ function en(e) {
     let e = n.toArray().find(e => e.type === A.fO.USER && e.id !== t && !e.ringing);
     r = null != (o = null == e ? true : e.id) ? o : t
   }
-  let [s] = X(e);
+  let [s] = Q(e);
   if (s !== A.dF.AUTO && s !== A.dF.NONE) {
     let e = n.getParticipant(s);
     (null == e || e.type === A.fO.STREAM && null == m.Z.getActiveStreamForStreamKey(e.id)) && (s = A.dF.NONE)
@@ -228,7 +228,7 @@ function el(e) {
       location: "voice_status_update"
     }, {
       autoTrackExposure: false
-    }).enabled && W(i).updateGuildRingingUsers(r, false), n && null != i && !L.includes(i)) ? e : Q(r) || e
+    }).enabled && W(i).updateGuildRingingUsers(r, false), n && null != i && !L.includes(i)) ? e : X(r) || e
   }, false)
 }
 
@@ -237,7 +237,7 @@ function ec() {
 }
 
 function eu() {
-  Chunk158776.Z.getUserIds().forEach(e => Q(e))
+  Chunk158776.Z.getUserIds().forEach(e => X(e))
 }
 
 function ed(e) {
@@ -255,7 +255,7 @@ function ep(e) {
   let {
     user: t
   } = e;
-  return Q(t.id)
+  return X(t.id)
 }
 
 function e_(e) {
@@ -305,10 +305,10 @@ function eb(e) {
     selfStreamHidden: n
   } = e, r = h.default.getId();
   if (n) {
-    let [e] = X(t);
+    let [e] = Q(t);
     (0, p.DB)(e) && e.includes(r) && ee(t, null)
   }
-  Q(r, [t])
+  X(r, [t])
 }
 
 function ey(e) {
@@ -351,13 +351,13 @@ function eI(e) {
   null == n && r.toArray(T.sI.STREAM).forEach(e => {
     (0, A._5)(e) && r.updateParticipant(e.user.id)
   });
-  let [, i] = X(t);
+  let [, i] = Q(t);
   if (ee(t, [null != n ? n : A.dF.NONE, i]), (0, p.DB)(n)) {
     try {
       let {
         ownerId: e
       } = (0, p.my)(n);
-      e === h.default.getId() && Q(e, [t])
+      e === h.default.getId() && X(e, [t])
     } catch (e) {
       D.warn("INVALID STREAM KEY FORMAT ".concat(n), e)
     }
@@ -369,11 +369,11 @@ function eT(e) {
   let {
     channelId: t,
     participantId: n
-  } = e, [r] = X(t);
+  } = e, [r] = Q(t);
   r === n && ee(t, null);
   let i = W(t),
     a = i.getParticipant(n);
-  null != a && a.type !== A.fO.ACTIVITY && (i.updateParticipantPoppedOut(n, true), Q(a.user.id, [t]))
+  null != a && a.type !== A.fO.ACTIVITY && (i.updateParticipantPoppedOut(n, true), X(a.user.id, [t]))
 }
 
 function eA(e) {
@@ -383,7 +383,7 @@ function eA(e) {
   } = e, r = W(t);
   r.updateParticipantPoppedOut(n, false);
   let i = r.getParticipant(n);
-  null != i && i.type !== A.fO.ACTIVITY && Q(i.user.id, [t])
+  null != i && i.type !== A.fO.ACTIVITY && X(i.user.id, [t])
 }
 
 function eC(e) {
@@ -429,7 +429,7 @@ function eR(e) {
     channelId: n,
     ownerId: r
   } = (0, p.my)(t);
-  return Q(r, [n])
+  return X(r, [n])
 }
 
 function ew(e) {
@@ -439,7 +439,7 @@ function ew(e) {
     channelId: n,
     ownerId: r
   } = (0, p.my)(t);
-  return Q(r, [n])
+  return X(r, [n])
 }
 
 function eD(e) {
@@ -447,7 +447,7 @@ function eD(e) {
     channelId: t,
     userId: n
   } = e;
-  return Q(n, [t])
+  return X(n, [t])
 }
 
 function ex(e) {
@@ -455,14 +455,14 @@ function ex(e) {
     channelId: t,
     userId: n
   } = e;
-  return Q(n, [t])
+  return X(n, [t])
 }
 
 function eL(e) {
   let {
     userId: t
   } = e;
-  return Q(t)
+  return X(t)
 }
 
 function ej(e) {
@@ -565,7 +565,7 @@ class eZ extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (t = B[e]) && t
   }
   getSelectedParticipantId(e) {
-    let [t, n] = X(e);
+    let [t, n] = Q(e);
     return t === A.dF.NONE ? null : t !== A.dF.AUTO ? t : n === A.dF.NONE || n === A.dF.AUTO ? null : n
   }
   getSelectedParticipant(e) {

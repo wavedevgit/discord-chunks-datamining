@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 297827, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   helpText: "helpText_db0ee9",
   migrationInfoBox: "migrationInfoBox_db0ee9",

@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  Z: () => X
+  Z: () => Q
 }), require("./388685.js");
 var Chunk828700 = require("./828700.js"),
   Chunk433517 = require("./433517.js"),
@@ -323,7 +323,7 @@ function q(e) {
   if (null == n) returnfalse;
   c.Z.fetchNewLocalMessages(n, A.AQB)
 }
-class Q extends Chunk147913.Z {
+class X extends Chunk147913.Z {
   _initialize() {
     Chunk570140.Z.subscribe("CONNECTION_OPEN", M)
   }
@@ -350,4 +350,4 @@ class Q extends Chunk147913.Z {
     })
   }
 }
-let X = new Q
+let Q = new X

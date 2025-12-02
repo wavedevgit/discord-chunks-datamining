@@ -211,7 +211,7 @@ let H = Object.freeze({
       }), null == a ? true : a()]
     })
   },
-  Q = e => {
+  X = e => {
     let {
       disabled: t
     } = e, {
@@ -293,7 +293,7 @@ let H = Object.freeze({
       }, e.id)), w()]
     })
   },
-  X = e => {
+  Q = e => {
     let {
       className: t,
       renderCTAButtons: n,
@@ -312,7 +312,7 @@ let H = Object.freeze({
         style: {
           marginTop: 16
         },
-        children: (0, r.jsx)(Q, {
+        children: (0, r.jsx)(X, {
           disabled: i
         })
       })]
@@ -389,7 +389,7 @@ let H = Object.freeze({
         },
         children: [(0, r.jsx)(J, {
           systemSelectorFirst: true
-        }), (0, r.jsx)(Q, {
+        }), (0, r.jsx)(X, {
           disabled: false
         })]
       })]
@@ -437,5 +437,5 @@ ee.Basic = e => {
       })
     })
   })
-}, ee.Gradient = X, ee.BasicAndGradient = $;
+}, ee.Gradient = Q, ee.BasicAndGradient = $;
 let et = ee

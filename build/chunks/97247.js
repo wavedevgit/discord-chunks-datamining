@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 97247, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   textAreaContainer: "textAreaContainer_fc46b1",
   collapseable: "collapseable_fc46b1",

@@ -226,13 +226,13 @@ function q() {
   Chunk433517.K.remove(O), (0, Chunk358085.isDesktop)() && Chunk830168.Z.pause()
 }
 
-function Q(e) {
+function X(e) {
   return e.map(e => "string" == typeof e ? {
     comboId: e,
     action: "Patch"
   } : e)
 }
-class X extends(r = Chunk442837.ZP.Store) {
+class Q extends(r = Chunk442837.ZP.Store) {
   initialize() {
     var e;
     let t = null != (e = Chunk433517.K.get(O)) ? module : {
@@ -240,7 +240,7 @@ class X extends(r = Chunk442837.ZP.Store) {
       paused: null,
       userActions: null
     };
-    null != exports.queue && (v = Q(exports.queue)), null != exports.paused && (I = exports.paused), null != exports.userActions && (N = new Map(Array.from(exports.userActions))), this.waitFor(Chunk417363.Z, Chunk594190.ZP), this.syncWith([Chunk594190.ZP], K), this.waitFor(Chunk173747.Z, Chunk314897.default, Chunk417363.Z)
+    null != exports.queue && (v = X(exports.queue)), null != exports.paused && (I = exports.paused), null != exports.userActions && (N = new Map(Array.from(exports.userActions))), this.waitFor(Chunk417363.Z, Chunk594190.ZP), this.syncWith([Chunk594190.ZP], K), this.waitFor(Chunk173747.Z, Chunk314897.default, Chunk417363.Z)
   }
   get activeItems() {
     return v.map(e => {
@@ -263,8 +263,8 @@ class X extends(r = Chunk442837.ZP.Store) {
     return P
   }
 }
-b(X, "displayName", "DispatchManagerStore");
-let J = new X(Chunk570140.Z, {
+b(Q, "displayName", "DispatchManagerStore");
+let J = new Q(Chunk570140.Z, {
   DISPATCH_APPLICATION_INSTALL: k,
   DISPATCH_APPLICATION_UPDATE: Z,
   DISPATCH_APPLICATION_UNINSTALL: U,

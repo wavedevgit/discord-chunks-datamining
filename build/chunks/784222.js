@@ -95,8 +95,8 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
     } = e, G = (0, s.e7)([c.ZP], () => c.ZP.categories), Z = r.useMemo(() => U ? d.ZP.getCategories() : G, [G, U]), B = (0, s.e7)([E.Z], () => E.Z.getGuild(null == t ? true : t.getGuildId()), [t]), F = null == t ? null : t.getGuildId(), V = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(F), [F]), H = (0, A.NJ)(F), Y = (0, A.wC)(F), W = (0, A.q5)(F), {
       topEmojis: K,
       newlyAddedEmojis: z
-    } = (0, N.Z)(F, l), q = (0, s.Wu)([y.ZP], () => y.ZP.getFlattenedGuildIds(), []), Q = (0, s.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds), {
-      canCreateExpressions: X
+    } = (0, N.Z)(F, l), q = (0, s.Wu)([y.ZP], () => y.ZP.getFlattenedGuildIds(), []), X = (0, s.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds), {
+      canCreateExpressions: Q
     } = (0, _.XJ)(B), J = (0, s.e7)([O.default], () => O.default.getCurrentUser()), $ = (0, I.I5)(J), ee = (0, m.B4)(), et = V.getCustomEmoji(), en = e => {
       if (e.type === u.B.GUILD) return e.guildId
     }, er = r.useMemo(() => a().groupBy(et, en), [et]), {
@@ -106,7 +106,7 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
       location: "EmojiPicker"
     }, {
       autoTrackExposure: true,
-      disable: !X
+      disable: !Q
     }), eo = (0, h.g2)({
       location: "useEmojiGrid"
     });
@@ -138,10 +138,10 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
               N = !C && null != O && I === O.id && y.length < (0, S.y4)(O),
               R = C && y.length < m && !ei,
               D = null != O && C && ei && ea === T.B.WITH_TOP_LIST && er[O.id].length < (0, S.y4)(O),
-              M = i && X && null != O && (N || R || D);
+              M = i && Q && null != O && (N || R || D);
             M && D && y.length === m && y.shift();
             let k = y.length > h && null != O && d.isNitroLocked,
-              U = k && !Q.has(O.id);
+              U = k && !X.has(O.id);
             if (U) {
               let e = !ei && M;
               y.splice(h - (e ? 2 : 1))
@@ -330,7 +330,7 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
         rowCountBySection: e,
         sectionDescriptors: r
       }
-    }, [V, p, L, D, f, n, ei, ea, er, i, X, Q, t, l, K, z, $, Z, B, q, W, Y, H, ee, eo, M])
+    }, [V, p, L, D, f, n, ei, ea, er, i, Q, X, t, l, K, z, $, Z, B, q, W, Y, H, ee, eo, M])
   };
 var G = function(e) {
   return e[e.PREMIUM = 0] = "PREMIUM", e[e.ROLE_SUBSCRIPTION = 1] = "ROLE_SUBSCRIPTION", e

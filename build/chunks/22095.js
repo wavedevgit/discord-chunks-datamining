@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   AH: () => Z,
-  Ag: () => Q,
+  Ag: () => X,
   CS: () => x,
   EW: () => z,
   Kh: () => ea,
@@ -23,7 +23,7 @@ require.d(exports, {
   m0: () => k,
   nE: () => H,
   pf: () => F,
-  qm: () => X,
+  qm: () => Q,
   w: () => $,
   wF: () => G,
   xw: () => M
@@ -448,7 +448,7 @@ function q(e, t) {
     platform: t
   })
 }
-async function Q() {
+async function X() {
   if (!Chunk616022.Z.isFetchingClaimedQuests) {
     Chunk570140.Z.dispatch({
       type: "QUESTS_FETCH_CLAIMED_QUESTS_BEGIN"
@@ -471,7 +471,7 @@ async function Q() {
   }
 }
 
-function X(e, t, n) {
+function Q(e, t, n) {
   a.Z.dispatch({
     type: "QUESTS_UPDATE_OPTIMISTIC_PROGRESS",
     questId: e,

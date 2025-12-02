@@ -168,14 +168,14 @@ function w(e) {
     size: K,
     isDisabled: z,
     columnIndex: q
-  } = t, Q = e => {
+  } = t, X = e => {
     if (e.stopPropagation(), y.current || v.current) return;
     let n = e.altKey;
     n && !d.ZP.getDisambiguatedEmojiContext().isFavoriteEmojiWithoutFetchingLatest(W) && M(a), (0, m.Kw)(m.v6.FAVORITE_EMOJI_TOOLTIP), E(t, {
       isFinalSelection: !e.shiftKey,
       toggleFavorite: n
     })
-  }, X = () => {
+  }, Q = () => {
     y.current || v.current || g(t)
   }, J = e => {
     (0, c.jW)(e, async () => {
@@ -207,8 +207,8 @@ function w(e) {
       isDisabled: z,
       showPulse: L === a,
       allowAnimatedEmoji: j,
-      onFocus: null != u ? u : X,
-      onMouseMove: X,
+      onFocus: null != u ? u : Q,
+      onMouseMove: Q,
       onMouseEnter: t,
       onMouseLeave: n,
       onClick: e => {
@@ -217,7 +217,7 @@ function w(e) {
             t = Y.current.getBoundingClientRect();
           t.x = G.x + (q + 1) * K, F(P(q, f)), (0, h.U)(k, e, W.id, t)
         }
-        Q(e)
+        X(e)
       },
       onContextMenu: J,
       tabIndex: c,

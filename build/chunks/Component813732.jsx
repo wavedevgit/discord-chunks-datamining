@@ -82,7 +82,7 @@ function q() {
   })
 }
 
-function Q(e, t) {
+function X(e, t) {
   return (0, r.jsxs)("section", {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-md/bold",
@@ -102,7 +102,7 @@ function Q(e, t) {
   })
 }
 
-function X() {
+function Q() {
   return (0, Chunk54381.jsx)("hr", {
     className: Chunk49122.hr
   })
@@ -149,11 +149,11 @@ let J = function() {
         paymentSource: Chunk120356,
         busy: Chunk600164,
         subscriptions: exports
-      }) : (0, Chunk54381.jsx)(Chunk91430.MM, {}), z && Q(Chunk391077, Chunk388032), (0, Chunk54381.jsx)(Chunk921801.F, {
+      }) : (0, Chunk54381.jsx)(Chunk91430.MM, {}), z && X(Chunk391077, Chunk388032), (0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.SUBSCRIPTIONS_CREDITS,
         children: (0, Chunk54381.jsx)(q, {})
       }), Chunk74538 > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(X, {}), (0, Chunk54381.jsx)(Chunk406174.Z, {
+        children: [(0, Chunk54381.jsx)(Q, {}), (0, Chunk54381.jsx)(Chunk406174.Z, {
           count: Chunk74538,
           onClickManageSubscription: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
             section: Chunk981631.oAB.SUBSCRIPTIONS,
@@ -161,7 +161,7 @@ let J = function() {
           })
         })]
       }), Chunk63063 > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-        children: [(0, Chunk54381.jsx)(X, {}), (0, Chunk54381.jsx)(Chunk681833.Z, {
+        children: [(0, Chunk54381.jsx)(Q, {}), (0, Chunk54381.jsx)(Chunk681833.Z, {
           count: Chunk63063,
           onClickManageSubscription: () => {
             (0, Chunk518596.openUserSettings)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
@@ -170,7 +170,7 @@ let J = function() {
             }), Chunk626135.default.track(Chunk981631.rMx.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
           }
         })]
-      }), (0, Chunk54381.jsx)(X, {}), null != module ? (0, Chunk54381.jsx)(Chunk52164.Z, {
+      }), (0, Chunk54381.jsx)(Q, {}), null != module ? (0, Chunk54381.jsx)(Chunk52164.Z, {
         subscription: module,
         withOverheadSeparator: false
       }) : null]

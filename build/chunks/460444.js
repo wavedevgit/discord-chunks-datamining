@@ -651,7 +651,7 @@
               return O(`wasm streaming compile failed: ${r}`), O("falling back to ArrayBuffer instantiation"), K(n, e, t)
             }))
           }
-          var q, Q, X = {
+          var q, X, Q = {
               464256: (e, t, n, r, i) => {
                 if ("undefined" == typeof window || true === (window.AudioContext || window.webkitAudioContext)) return 0;
                 if (true === window.h) {
@@ -1280,7 +1280,7 @@
             return eo(eD(e.parent), e.j.la(e))
           }
 
-          function eQ(e, t, n) {
+          function eX(e, t, n) {
             if ("" === e) throw new eC(44);
             if ("string" == typeof t) {
               var r = {
@@ -1334,7 +1334,7 @@
             })).m.open && i.m.open(i), !a.logReadFiles || 1 & t || e in (e1 ||= {}) || (e1[e] = 1), i
           }
 
-          function eX(e, t, n) {
+          function eQ(e, t, n) {
             if (null === e.W) throw new eC(8);
             if (!e.seekable || !e.m.aa) throw new eC(70);
             if (0 != n && 1 != n && 2 != n) throw new eC(28);
@@ -1663,7 +1663,7 @@
               return l ? t[0].fromWireType(n) : true
             })
           }
-          var tQ, tX = (e, t) => {
+          var tX, tQ = (e, t) => {
               for (var n = [], r = 0; r < e; r++) n.push(P[t + 4 * r >> 2]);
               return n
             },
@@ -1813,7 +1813,7 @@
             nu = [],
             nd = {},
             nf = () => {
-              if (!tQ) {
+              if (!tX) {
                 var e, t = {
                   USER: "web_user",
                   LOGNAME: "web_user",
@@ -1826,9 +1826,9 @@
                 for (e in nd) true === nd[e] ? delete t[e] : t[e] = nd[e];
                 var n = [];
                 for (e in t) n.push(`${e}=${t[e]}`);
-                tQ = n
+                tX = n
               }
-              return tQ
+              return tX
             },
             np = e => 0 == e % 4 && (0 != e % 100 || 0 == e % 400),
             n_ = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
@@ -2198,7 +2198,7 @@
                     t = et(a + "/" + i)
                   }
                   var o = r ? $() : 0;
-                  return eQ(t, n, o).W
+                  return eX(t, n, o).W
                 } catch (e) {
                   if (true === e6 || "ErrnoError" !== e.name) throw e;
                   return -e.$
@@ -2325,7 +2325,7 @@
                 })
               },
               _embind_register_class_class_function: (e, t, n, r, i, a, o) => {
-                var s = tX(n, r);
+                var s = tQ(n, r);
                 t = tJ(t = ta(t)), a = tW(i, a), tT([], [e], e => {
                   function r() {
                     tK(`Cannot call ${i} due to unbound types`, s)
@@ -2370,7 +2370,7 @@
                 })
               },
               _embind_register_class_constructor: (e, t, n, r, i, a) => {
-                var o = tX(t, n);
+                var o = tQ(t, n);
                 i = tW(r, i), tT([], [e], e => {
                   e = e[0];
                   var n = `constructor ${e.name}`;
@@ -2381,7 +2381,7 @@
                 })
               },
               _embind_register_class_function: (e, t, n, r, i, a, o, s) => {
-                var l = tX(n, r);
+                var l = tQ(n, r);
                 t = tJ(t = ta(t)), a = tW(i, a), tT([], [e], e => {
                   function r() {
                     tK(`Cannot call ${i} due to unbound types`, l)
@@ -2466,7 +2466,7 @@
                 })
               },
               _embind_register_function: (e, t, n, r, i, a) => {
-                var o = tX(t, n);
+                var o = tQ(t, n);
                 e = tJ(e = ta(e)), i = tW(r, i), tw(e, function() {
                   tK(`Cannot call ${e} due to unbound types`, o)
                 }, t - 1), tT([], o, n => (tB(e, tq(e, [n[0], null].concat(n.slice(1)), null, i, a), t - 1), []))
@@ -2640,7 +2640,7 @@
                   var i = 105 != r;
                   i &= 112 != r, n += i && n % 8 ? 4 : 0, nu.push(112 == r ? P[n >> 2] : 105 == r ? N[n >> 2] : w[n >> 3]), n += i ? 8 : 4
                 }
-                return X[e](...nu)
+                return Q[e](...nu)
               },
               emscripten_date_now: () => Date.now(),
               emscripten_get_now: () => performance.now(),
@@ -2741,7 +2741,7 @@
                 try {
                   if (isNaN(t)) return 61;
                   var a = eG(e);
-                  return eX(a, t, r), Q = [a.position >>> 0, (q = a.position, 1 <= +Math.abs(q) ? 0 < q ? Math.floor(q / 0x100000000) >>> 0 : ~~Math.ceil((q - (~~q >>> 0)) / 0x100000000) >>> 0 : 0)], N[i >> 2] = Q[0], N[i + 4 >> 2] = Q[1], a.Ka && 0 === t && 0 === r && (a.Ka = null), 0
+                  return eQ(a, t, r), X = [a.position >>> 0, (q = a.position, 1 <= +Math.abs(q) ? 0 < q ? Math.floor(q / 0x100000000) >>> 0 : ~~Math.ceil((q - (~~q >>> 0)) / 0x100000000) >>> 0 : 0)], N[i >> 2] = X[0], N[i + 4 >> 2] = X[1], a.Ka && 0 === t && 0 === r && (a.Ka = null), 0
                 } catch (e) {
                   if (true === e6 || "ErrnoError" !== e.name) throw e;
                   return e.$
@@ -2764,7 +2764,7 @@
                       if (null === c.W || 0 == (2097155 & c.flags)) throw new eC(8);
                       if (16384 == (61440 & c.node.mode)) throw new eC(31);
                       if (!c.m.write) throw new eC(28);
-                      c.seekable && 1024 & c.flags && eX(c, 0, 2);
+                      c.seekable && 1024 & c.flags && eQ(c, 0, 2);
                       var _ = true !== f;
                       if (_) {
                         if (!c.seekable) throw new eC(70)
@@ -2818,7 +2818,7 @@
           function nC() {
             function e() {
               if (!n && (n = true, a.calledRun = true, !D)) {
-                if (a.noFSInit || e$ || (e$ = true, a.stdin = a.stdin, a.stdout = a.stdout, a.stderr = a.stderr, a.stdin ? eJ("stdin", a.stdin) : ez("/dev/tty", "/dev/stdin"), a.stdout ? eJ("stdout", null, a.stdout) : ez("/dev/tty", "/dev/stdout"), a.stderr ? eJ("stderr", null, a.stderr) : ez("/dev/tty1", "/dev/stderr"), eQ("/dev/stdin", 0), eQ("/dev/stdout", 1), eQ("/dev/stderr", 1)), eA = false, J(j), r(a), a.onRuntimeInitialized && a.onRuntimeInitialized(), a.postRun)
+                if (a.noFSInit || e$ || (e$ = true, a.stdin = a.stdin, a.stdout = a.stdout, a.stderr = a.stderr, a.stdin ? eJ("stdin", a.stdin) : ez("/dev/tty", "/dev/stdin"), a.stdout ? eJ("stdout", null, a.stdout) : ez("/dev/tty", "/dev/stdout"), a.stderr ? eJ("stderr", null, a.stderr) : ez("/dev/tty1", "/dev/stderr"), eX("/dev/stdin", 0), eX("/dev/stdout", 1), eX("/dev/stderr", 1)), eA = false, J(j), r(a), a.onRuntimeInitialized && a.onRuntimeInitialized(), a.postRun)
                   for ("function" == typeof a.postRun && (a.postRun = [a.postRun]); a.postRun.length;) {
                     var e = a.postRun.shift();
                     M.unshift(e)
@@ -3695,7 +3695,7 @@
           true === r && (r = []), true === i && (i = []), this.runtime = e, this.artboard = t, this.eventManager = n, this.animations = r, this.stateMachines = i
         }
         return module.prototype.add = function(e, t, n) {
-          if (true === n && (n = true), 0 === (e = X(e)).length) this.animations.forEach(function(e) {
+          if (true === n && (n = true), 0 === (e = Q(e)).length) this.animations.forEach(function(e) {
             return e.playing = t
           }), this.stateMachines.forEach(function(e) {
             return e.playing = t
@@ -3805,7 +3805,7 @@
           configurable: true
         }), module.prototype.stop = function(e) {
           var t = this;
-          e = X(e);
+          e = Q(e);
           var n = [];
           if (0 === e.length) n = this.animations.map(function(e) {
             return e.name
@@ -4100,7 +4100,7 @@
               switch (a.label) {
                 case 0:
                   if (!this.src) return [3, 2];
-                  return t = this, [4, Q(this.src)];
+                  return t = this, [4, X(this.src)];
                 case 1:
                   t.buffer = a.sent(), a.label = 2;
                 case 2:
@@ -4224,8 +4224,8 @@
             _ = true !== p && p;
           if (!this.destroyed) {
             if (this.src = r, this.buffer = i, this.riveFile = a, !this.src && !this.buffer && !this.riveFile) throw new b(t.missingErrorMessage);
-            var m = X(o),
-              h = X(s);
+            var m = Q(o),
+              h = Q(s);
             this.loaded = false, this.readyForPlaying = false, v.awaitInstance().then(function(e) {
               n.destroyed || (n.runtime = e, n.removeRiveListeners(), n.deleteRiveRenderer(), n.renderer = n.runtime.makeRenderer(n.canvas, f), n.canvas.width || n.canvas.height || n.resizeDrawingSurfaceToCanvas(), n.initData(l, m, h, u, _).then(function(e) {
                 if (e) return n.setupRiveListeners()
@@ -4433,7 +4433,7 @@
           n && (n.text = t)
         }, t.prototype.play = function(e, t) {
           var n = this;
-          if (e = X(e), !this.readyForPlaying) return void this.taskQueue.add({
+          if (e = Q(e), !this.readyForPlaying) return void this.taskQueue.add({
             action: function() {
               return n.play(e, t)
             }
@@ -4441,7 +4441,7 @@
           this.animator.play(e), this.eventCleanup && this.eventCleanup(), this.setupRiveListeners(), this.startRendering()
         }, t.prototype.pause = function(e) {
           var t = this;
-          if (e = X(e), !this.readyForPlaying) return void this.taskQueue.add({
+          if (e = Q(e), !this.readyForPlaying) return void this.taskQueue.add({
             action: function() {
               return t.pause(e)
             }
@@ -4449,7 +4449,7 @@
           this.eventCleanup && this.eventCleanup(), this.animator.pause(e)
         }, t.prototype.scrub = function(e, t) {
           var n = this;
-          if (e = X(e), !this.readyForPlaying) return void this.taskQueue.add({
+          if (e = Q(e), !this.readyForPlaying) return void this.taskQueue.add({
             action: function() {
               return n.scrub(e, t)
             }
@@ -4457,7 +4457,7 @@
           this.animator.scrub(e, t || 0), this.drawFrame()
         }, t.prototype.stop = function(e) {
           var t = this;
-          if (e = X(e), !this.readyForPlaying) return void this.taskQueue.add({
+          if (e = Q(e), !this.readyForPlaying) return void this.taskQueue.add({
             action: function() {
               return t.stop(e)
             }
@@ -4465,8 +4465,8 @@
           this.animator && this.animator.stop(e), this.eventCleanup && this.eventCleanup()
         }, t.prototype.reset = function(e) {
           var t, n, r = null == e ? true : e.artboard,
-            i = X(null == e ? true : e.animations),
-            a = X(null == e ? true : e.stateMachines),
+            i = Q(null == e ? true : e.animations),
+            a = Q(null == e ? true : e.stateMachines),
             o = null != (t = null == e ? true : e.autoplay) && t,
             s = null != (n = null == e ? true : e.autoBind) && n;
           this.cleanupInstances(), this.initArtboard(r, i, a, o, s), this.taskQueue.process()
@@ -5235,7 +5235,7 @@
           e()
         }, t
       }(Z),
-      Q = function(e) {
+      X = function(e) {
         return h(true, true, true, function() {
           return g(this, function(t) {
             switch (t.label) {
@@ -5249,7 +5249,7 @@
           })
         })
       },
-      X = function(e) {
+      Q = function(e) {
         return "string" == typeof e ? [e] : e instanceof Array ? e : []
       },
       J = {

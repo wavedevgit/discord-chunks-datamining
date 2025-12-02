@@ -92,7 +92,7 @@ function j(e) {
   } = (0, d.ZP)([...B, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(false), q = i.useMemo(() => (0, C.UY)({
     purchaseType: N.o8.FIAT,
     skuId: M
-  }), [M]), Q = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), X = null != M ? [M] : Q, J = null != (t = X[0]) ? t : null, $ = null != M && _.Rm.has(M), ee = i.useCallback(() => {
+  }), [M]), X = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), Q = null != M ? [M] : X, J = null != (t = Q[0]) ? t : null, $ = null != M && _.Rm.has(M), ee = i.useCallback(() => {
     z(true), null == a || a()
   }, [a]), et = i.useCallback(e => {
     z(false), n(e), c.Z.dispatch({
@@ -133,7 +133,7 @@ function j(e) {
       loadId: j,
       stepConfigs: er,
       applicationId: A.XAJ,
-      skuIDs: X,
+      skuIDs: Q,
       isGift: k,
       activeSubscription: null,
       purchaseType: P.GZ.ONE_TIME,

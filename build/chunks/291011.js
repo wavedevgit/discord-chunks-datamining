@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 291011, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -13,7 +13,7 @@ let a = (0, Chunk509613.Em)(Chunk313789.n.MOBILE_NOTIFICATION_DELAY, {
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["eJE6+J"]),
   useOptions: () => Chunk392711.range(1, 11).map(t => ({
     value: 60 * t,
-    label: s.intl.formatToPlainString(s.t.iXLF9W, {
+    label: u.intl.formatToPlainString(u.t.iXLF9W, {
       minutes: t
     })
   })),

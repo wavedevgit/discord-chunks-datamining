@@ -1,46 +1,48 @@
-/** Chunk was on 9452 **/
-/** chunk id: 904849, original params: t,e,n (module,exports,require) **/
-function i(t, e, n) {
-  return e in t ? Object.defineProperty(t, e, {
+/** Chunk was on web.js **/
+/** chunk id: 904849, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+
+function r(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : t[e] = n, t
+  }) : e[t] = n, e
 }
 require.d(exports, {
-  Z: () => r
+  Z: () => i
 }), require("./388685.js");
-class r {
-  register(t, e, n, i) {
-    this.map.set(t.key, {
-      node: t,
-      parentPanelKey: e,
+class i {
+  register(e, t, n, r) {
+    this.map.set(e.key, {
+      node: e,
+      parentPanelKey: t,
       parentCategoryKey: n,
-      parentAccordionKey: i
+      parentAccordionKey: r
     })
   }
-  entry(t) {
-    return this.map.get(t)
+  entry(e) {
+    return this.map.get(e)
   }
-  get(t) {
-    var e;
-    return null == (e = this.entry(t)) ? true : e.node
+  get(e) {
+    var t;
+    return null == (t = this.entry(e)) ? true : t.node
   }
-  typedEntry(t) {
-    if (null != t) return this.map.get(t.key)
+  typedEntry(e) {
+    if (null != e) return this.map.get(e.key)
   }
-  typedGet(t) {
-    var e;
-    return null == (e = this.typedEntry(t)) ? true : e.node
+  typedGet(e) {
+    var t;
+    return null == (t = this.typedEntry(e)) ? true : t.node
   }
-  setDefaultPanel(t) {
-    this.defaultPanel = t
+  setDefaultPanel(e) {
+    this.defaultPanel = e
   }
   getDefaultPanel() {
     return this.defaultPanel
   }
   constructor() {
-    i(this, "map", new Map), i(this, "defaultPanel", true)
+    r(this, "map", new Map), r(this, "defaultPanel", true)
   }
 }

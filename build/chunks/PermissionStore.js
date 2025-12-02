@@ -210,7 +210,7 @@ function q(e) {
   N[n.id] = i, R += 1
 }
 
-function Q(e) {
+function X(e) {
   let {
     guildId: t
   } = e;
@@ -221,12 +221,12 @@ function Q(e) {
   }), R += 1, L(t)
 }
 
-function X(e, t, n, r) {
+function Q(e, t, n, r) {
   let i = b.Hn;
   if (e instanceof _.Sf) {
     if (_.Ec.has(e.type)) {
       let i = y.Z.getChannel(e.parent_id);
-      return null == i ? b.Hn : b.Og(e, X(i, t, n, r), f.Z.hasJoined(e.id))
+      return null == i ? b.Hn : b.Og(e, Q(i, t, n, r), f.Z.hasJoined(e.id))
     }
     i = x(e.id)
   } else(0, E.lM)(e) && (i = w(e.id));
@@ -279,17 +279,17 @@ class J extends(r = Chunk442837.ZP.Store) {
     return "channelId" in t && "string" == typeof t.channelId ? this.can(e, y.Z.getChannel(t.channelId)) : "guildId" in t && "string" == typeof t.guildId && this.can(e, v.Z.getGuild(t.guildId))
   }
   can(e, t, n, r, i) {
-    let a = X(t, n, r, i);
+    let a = Q(t, n, r, i);
     return o.e$(a, e)
   }
   canBasicChannel(e, t, n, r, i) {
-    return "basicPermissions" in t ? g.Z.has(t.basicPermissions, e) : o.e$(X(t, n, r, i), g.Z.asBigFlag(e))
+    return "basicPermissions" in t ? g.Z.has(t.basicPermissions, e) : o.e$(Q(t, n, r, i), g.Z.asBigFlag(e))
   }
   computePermissions(e, t, n, r) {
-    return X(e, t, n, r)
+    return Q(e, t, n, r)
   }
   computeBasicPermissions(e) {
-    return "basicPermissions" in e ? e.basicPermissions : g.Z.asBasicFlag(X(e))
+    return "basicPermissions" in e ? e.basicPermissions : g.Z.asBasicFlag(Q(e))
   }
   canManageUser(e, t, n) {
     let r = t instanceof h.Z ? t.id : t;
@@ -361,6 +361,6 @@ let ee = new J(Chunk570140.Z, {
   STAGE_INSTANCE_CREATE: q,
   STAGE_INSTANCE_UPDATE: q,
   STAGE_INSTANCE_DELETE: q,
-  IMPERSONATE_UPDATE: Q,
-  IMPERSONATE_STOP: Q
+  IMPERSONATE_UPDATE: X,
+  IMPERSONATE_STOP: X
 })

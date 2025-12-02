@@ -42,17 +42,17 @@ let C = 10,
   G = /^\/oauth2\/authorize/,
   Z = /^#itemSkuId=([0-9]+)$/,
   B = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
-  F = X(window.GLOBAL_ENV.INVITE_HOST),
-  V = X(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
-  H = X(null != (o = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? o : "//canary.".concat(Chunk981631.$R1)),
-  Y = X("//canary.".concat(Chunk981631.$R1)),
-  W = X("//ptb.".concat(Chunk981631.$R1)),
-  K = X("discordapp.com"),
-  z = X("discord.com"),
+  F = Q(window.GLOBAL_ENV.INVITE_HOST),
+  V = Q(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
+  H = Q(null != (o = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? o : "//canary.".concat(Chunk981631.$R1)),
+  Y = Q("//canary.".concat(Chunk981631.$R1)),
+  W = Q("//ptb.".concat(Chunk981631.$R1)),
+  K = Q("discordapp.com"),
+  z = Q("discord.com"),
   q = [Chunk226951.Z.escape(null != (s = F.host) ? s : ""), Chunk226951.Z.escape(null != (l = V.host) ? l : ""), Chunk226951.Z.escape(null != (c = H.host) ? c : ""), Chunk226951.Z.escape(null != (u = K.host) ? u : ""), Chunk226951.Z.escape(null != (d = z.host) ? d : "")].filter(Boolean),
-  Q = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(q.join("|"), ")"), "g");
+  X = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(q.join("|"), ")"), "g");
 
-function X(e) {
+function Q(e) {
   if (null == e) return {
     host: null,
     pathPrefix: null
@@ -141,7 +141,7 @@ function es(e) {
   if (null == e) return [];
   let t = new Set,
     n = [],
-    r = J(e = e.replace(Q, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(I.Z.URL_REGEX),
+    r = J(e = e.replace(X, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(I.Z.URL_REGEX),
     i = e.match(B);
   if (null == (r = (null != r ? r : []).concat(null != i ? i : [])) || 0 === r.length) return [];
   for (let e of r) {

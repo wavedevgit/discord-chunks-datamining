@@ -136,8 +136,8 @@ let ek = new Chunk710845.Z("MediaEngineStore"),
   eK = false,
   ez = 100,
   eq = 2 * Chunk70956.Z.Millis.SECOND,
-  eQ = true,
-  eX = 0;
+  eX = true,
+  eQ = 0;
 
 function eJ() {
   return {
@@ -346,7 +346,7 @@ function tz(e) {
   e.context === ew.Yn.DEFAULT && ((0, eo.f)({
     location: "setInputMode",
     autoTrackExposure: false
-  }).enableLatching && i === eA.pM4.PUSH_TO_TALK && r.modeOptions.pttLatchingEnabled && (i = eA.pM4.VOICE_ACTIVITY), (0, Q.I)(false, false, false)), e.setInputMode(i, {
+  }).enableLatching && i === eA.pM4.PUSH_TO_TALK && r.modeOptions.pttLatchingEnabled && (i = eA.pM4.VOICE_ACTIVITY), (0, X.I)(false, false, false)), e.setInputMode(i, {
     vadThreshold: r.modeOptions.threshold,
     vadAutoThreshold: r.modeOptions.autoThreshold,
     vadUseKrisp: r.modeOptions.vadUseKrisp && ro(),
@@ -363,13 +363,13 @@ function tq(e) {
   return _().clamp(e, 0, t)
 }
 
-function tQ(e) {
+function tX(e) {
   let t = tK(e.context),
     n = !e2 || t.mute || t.deaf;
   e.context === ew.Yn.DEFAULT ? n = n || te || tt || tn || !en.Z.didHavePermission(eN.Eu.AUDIO) : e.context === ew.Yn.STREAM && (n = true), e.setSelfMute(n), e.setSelfDeaf(t.deaf), e.context === ew.Yn.DEFAULT && T.Z.updateNativeMute()
 }
 
-function tX(e) {
+function tQ(e) {
   e !== e5 && (null != a && e0.setGoLiveSource(null, e5), e5 = e)
 }
 
@@ -485,7 +485,7 @@ function t2(e) {
 
 function t4() {
   e0.on(Chunk46973.aB.Connection, e => {
-    tz(e), tQ(e), t2(e);
+    tz(e), tX(e), t2(e);
     let t = tK();
     e.setAttenuation(t.attenuation, t.attenuateWhileSpeakingSelf, t.attenuateWhileSpeakingOthers), e.setQoS(t.qos), (0, K.D)({
       location: "setupMediaEngine"
@@ -745,7 +745,7 @@ function t4() {
         return {
           stats: t,
           mediaEngineConnectionId: n.mediaEngineConnectionId,
-          version: eX++,
+          version: eQ++,
           context: n.context
         }
       })
@@ -760,7 +760,7 @@ function t4() {
       width: t,
       height: n
     }))
-  }), nQ(), nJ(), e0.supports(Chunk65154.AN.ASYNC_CLIPS_SOURCE_DEINIT) && e0.setAsyncClipsSourceDeinit((0, Chunk502450.C)("setupMediaEngine").enabled), ne.reset(), (0, Chunk704806.q)().then(e => {
+  }), nX(), nJ(), e0.supports(Chunk65154.AN.ASYNC_CLIPS_SOURCE_DEINIT) && e0.setAsyncClipsSourceDeinit((0, Chunk502450.C)("setupMediaEngine").enabled), ne.reset(), (0, Chunk704806.q)().then(e => {
     null != e && (tk = e.gpu_brand)
   }), e0.on(Chunk46973.aB.SystemMicrophoneModeChange, e => {
     e0.eachConnection(t2)
@@ -843,7 +843,7 @@ function nr() {
 
 function ni() {
   let e = tK();
-  e0.setAudioInputDevice(module.inputDeviceId), e0.setAudioOutputDevice(module.outputDeviceId), tJ(), e0.setInputVolume(module.inputVolume), e0.setOutputVolume(module.outputVolume), e0.setH264Enabled(eQ), e0.setAv1Enabled(eQ), e0.setH265Enabled(eQ), e0.setAecDump(module.aecDumpEnabled), e0.setSidechainCompression(module.sidechainCompression), e0.setSidechainCompressionStrength(module.sidechainCompressionStrength), e0.setAudioInputBypassSystemProcessing(module.bypassSystemInputProcessing)
+  e0.setAudioInputDevice(module.inputDeviceId), e0.setAudioOutputDevice(module.outputDeviceId), tJ(), e0.setInputVolume(module.inputVolume), e0.setOutputVolume(module.outputVolume), e0.setH264Enabled(eX), e0.setAv1Enabled(eX), e0.setH265Enabled(eX), e0.setAecDump(module.aecDumpEnabled), e0.setSidechainCompression(module.sidechainCompression), e0.setSidechainCompressionStrength(module.sidechainCompressionStrength), e0.setAudioInputBypassSystemProcessing(module.bypassSystemInputProcessing)
 }
 
 function na() {
@@ -1057,7 +1057,7 @@ function nv(e) {
   } = e;
   return t.reduce((e, t) => {
     if (i === t.sessionId) {
-      te = t.mute || t.suppress, tr = t.deaf, e0.eachConnection(tQ);
+      te = t.mute || t.suppress, tr = t.deaf, e0.eachConnection(tX);
       let e = null != t.guildId && null != t.channelId && null != tT && tT !== t.channelId,
         n = !th && null == t.channelId;
       return tJ(!e && !n && ti), tT = t.channelId, true
@@ -1070,7 +1070,7 @@ function nS(e) {
   let {
     mute: t
   } = e;
-  tt = t, e0.eachConnection(tQ)
+  tt = t, e0.eachConnection(tX)
 }
 
 function nI(e) {
@@ -1085,7 +1085,7 @@ function nI(e) {
   (r = !i && !r) || (i = false), n || (ts = true), nn({
     mute: r,
     deaf: i
-  }, t), e0.eachConnection(tQ)
+  }, t), e0.eachConnection(tX)
 }
 
 function nT(e) {
@@ -1096,7 +1096,7 @@ function nT(e) {
   } = e;
   nn({
     mute: n
-  }, t), r || (ts = true), e0.eachConnection(tQ)
+  }, t), r || (ts = true), e0.eachConnection(tX)
 }
 
 function nA(e) {
@@ -1117,7 +1117,7 @@ function nC(e) {
   } = e;
   nn({
     deaf: !tK(t).deaf
-  }, t), e0.eachConnection(tQ)
+  }, t), e0.eachConnection(tX)
 }
 
 function nN(e) {
@@ -1298,7 +1298,7 @@ function nZ(e) {
   let n = tK();
   e0.eachConnection(e => {
     tz(e), t1(e, n.automaticGainControl), e.setEchoCancellation(n.echoCancellation), t3(e, n.noiseCancellation), e.setNoiseSuppression(n.noiseSuppression)
-  }), e0.setAudioInputBypassSystemProcessing(n.bypassSystemInputProcessing), ne.update(), nX()
+  }), e0.setAudioInputBypassSystemProcessing(n.bypassSystemInputProcessing), ne.update(), nQ()
 }
 
 function nB(e) {
@@ -1349,7 +1349,7 @@ function nY(e) {
   let t = nn({
     echoCancellation: e.enabled
   });
-  e0.eachConnection(e => e.setEchoCancellation(t.echoCancellation)), nX(), nH(e.location)
+  e0.eachConnection(e => e.setEchoCancellation(t.echoCancellation)), nQ(), nH(e.location)
 }
 
 function nW(e) {
@@ -1375,15 +1375,15 @@ function nq(e) {
     enabled: t,
     loopbackReason: n
   } = e;
-  return t ? tj.add(n) : tj.delete(n), nQ(), nX()
+  return t ? tj.add(n) : tj.delete(n), nX(), nQ()
 }
 
-function nQ() {
+function nX() {
   let e = !tj.has("voice_filter_preview") && !tj.has("mic_test");
   e0.setMaybePreprocessMute(module)
 }
 
-function nX() {
+function nQ() {
   let e = tK(),
     t = tj.size > 0,
     n = module.inputDeviceId,
@@ -1415,25 +1415,25 @@ function n$(e) {
   let t = nn({
     noiseSuppression: e.enabled
   });
-  e0.eachConnection(e => e.setNoiseSuppression(t.noiseSuppression)), nX(), nH(e.location)
+  e0.eachConnection(e => e.setNoiseSuppression(t.noiseSuppression)), nQ(), nH(e.location)
 }
 
 function n0(e) {
   let t = nn({
     automaticGainControl: e.enabled
   });
-  e0.eachConnection(e => t1(e, t.automaticGainControl)), nX(), nH(e.location)
+  e0.eachConnection(e => t1(e, t.automaticGainControl)), nQ(), nH(e.location)
 }
 
 function n1(e) {
   let t = nn({
     noiseCancellation: e.enabled
   });
-  e0.eachConnection(e => t3(e, t.noiseCancellation)), nX(), nH(e.location)
+  e0.eachConnection(e => t3(e, t.noiseCancellation)), nQ(), nH(e.location)
 }
 
 function n3(e) {
-  er.Z.setKrispModelOverride(e.model), c = e.model, nX()
+  er.Z.setKrispModelOverride(e.model), c = e.model, nQ()
 }
 
 function n2(e) {
@@ -1517,7 +1517,7 @@ function ri(e) {
     hasPermission: t
   } = e, n = !t;
   if (n === tn) returnfalse;
-  tn = n, e0.eachConnection(tQ)
+  tn = n, e0.eachConnection(tX)
 }
 
 function ra(e) {
@@ -1527,7 +1527,7 @@ function ra(e) {
   } = e, r = t === eN.PQ.ACCEPTED;
   switch (n) {
     case eN.Eu.AUDIO:
-      tw = true, e0.eachConnection(tQ);
+      tw = true, e0.eachConnection(tX);
       break;
     case eN.Eu.CAMERA:
       !r && ti && tJ(false);
@@ -1649,7 +1649,7 @@ function rE(e) {
   (a.mute || a.deaf) && (nn({
     deaf: false,
     mute: false
-  }), e0.eachConnection(tQ))
+  }), e0.eachConnection(tX))
 }
 
 function rb(e) {
@@ -1673,7 +1673,7 @@ function rO(e) {
   } = e;
   if (!n) switch (t) {
     case "audio":
-      e2 = false, e0.eachConnection(tQ);
+      e2 = false, e0.eachConnection(tX);
       break;
     case "video":
       tJ(false)
@@ -1684,7 +1684,7 @@ function rv(e) {
   e2 = e.enabled, e.unmute && nn({
     mute: false,
     deaf: false
-  }), e0.eachConnection(tQ)
+  }), e0.eachConnection(tX)
 }
 
 function rS(e) {
@@ -1767,7 +1767,7 @@ function rA(e) {
     ep.isPlatformEmbedded && true === o && ({
       soundshareId: e,
       soundshareSession: r
-    } = nm(c), null != e && nh(e, r)), tX(s), tJ(s === ew.Yn.STREAM && ti, {
+    } = nm(c), null != e && nh(e, r)), tQ(s), tJ(s === ew.Yn.STREAM && ti, {
       desktopSource: {
         id: i,
         sourcePid: c,
@@ -1947,7 +1947,7 @@ class rB extends(u = Chunk442837.ZP.Store) {
   }
   goLiveSimulcastEnabled() {
     var e;
-    return (null == (e = Chunk592125.Z.getChannel(tT)) ? true : module.type) !== Chunk981631.d4z.GUILD_STAGE_VOICE && eQ && Chunk166884.Z.simulcastEnabled()
+    return (null == (e = Chunk592125.Z.getChannel(tT)) ? true : module.type) !== Chunk981631.d4z.GUILD_STAGE_VOICE && eX && Chunk166884.Z.simulcastEnabled()
   }
   getAecDump() {
     return tK().aecDumpEnabled
@@ -2174,7 +2174,7 @@ class rB extends(u = Chunk442837.ZP.Store) {
     return tK().noiseCancellation
   }
   getHardwareEncoding() {
-    return eQ
+    return eX
   }
   getEnableSilenceWarning() {
     return tK().silenceWarning

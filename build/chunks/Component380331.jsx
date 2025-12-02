@@ -169,7 +169,7 @@ let z = e => {
     nonUnicodeCategoryCount: U,
     firstUnicodeCategoryIndex: z,
     firstUnicodeCategoryOffsetTop: q,
-    rowCountBySection: Q
+    rowCountBySection: X
   } = i.useMemo(() => {
     let e = 0,
       t = 0,
@@ -185,7 +185,7 @@ let z = e => {
       firstUnicodeCategoryOffsetTop: i,
       rowCountBySection: [e, n, r]
     }
-  }, [A]), [X, J] = i.useState(true);
+  }, [A]), [Q, J] = i.useState(true);
   i.useLayoutEffect(() => {
     J(U >= W)
   }, [U]);
@@ -201,20 +201,20 @@ let z = e => {
     et = i.useCallback((e, t) => {
       let n = A[e];
       if (null == n) return 0;
-      let r = X ? G : 0;
+      let r = Q ? G : 0;
       if (n.type === T.En.RECENT) return t ? 0 : k;
       if (n.type === T.En.GUILD) {
         let n = A[e + 1];
         return null != n && n.type !== T.En.GUILD ? t ? Z + false * B + j + r : j : t ? r : j
       }
       return t ? j + r : 2 * j
-    }, [A, X]),
+    }, [A, Q]),
     en = i.useMemo(() => function(e, t) {
       return (0, r.jsx)(i.Fragment, {
         children: t
       }, e)
     }, []),
-    er = X ? "shortcut" : "hiddenshortcut";
+    er = Q ? "shortcut" : "hiddenshortcut";
   return (0, r.jsx)(h.Z, {
     categoryListRef: C,
     expressionsListRef: n,
@@ -228,14 +228,14 @@ let z = e => {
     rowCount: A.length,
     categoryHeight: L,
     getScrollOffsetForIndex: et,
-    rowCountBySection: Q,
+    rowCountBySection: X,
     children: e => U >= W && (0, r.jsx)(f.P3F, {
-      "aria-hidden": !X,
+      "aria-hidden": !Q,
       "aria-label": N.intl.string(N.t.dT0ctw),
       className: o()(P.unicodeShortcut, {
-        [P.unicodeShortcutInvisible]: !X
+        [P.unicodeShortcutInvisible]: !Q
       }),
-      tabIndex: X ? 0 : false,
+      tabIndex: Q ? 0 : false,
       onClick: () => ee(e),
       children: (0, r.jsx)(f.EO4, {
         size: "custom",

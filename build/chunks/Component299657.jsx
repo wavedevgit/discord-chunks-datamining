@@ -61,10 +61,10 @@ let k = function(e) {
     q = (0, P.Z)({
       location: "PremiumMarketingPage"
     }),
-    Q = (0, s.e7)([C.Z], () => C.Z.hasFetched);
+    X = (0, s.e7)([C.Z], () => C.Z.hasFetched);
   i.useEffect(() => {
-    Q || u.MH()
-  }, [Q]), i.useEffect(() => {
+    X || u.MH()
+  }, [X]), i.useEffect(() => {
     c.Z.wait(async () => {
       let e = Date.now();
       await Promise.all([u.jg(), u.tZ(), (0, d.Y2)(null, null, j.JjL.DISCOVERY)]), K.current = Date.now() - e, W(false)
@@ -77,9 +77,9 @@ let k = function(e) {
   }, [a, Y]), i.useEffect(() => {
     n && (null != F || null != V) && (0, N.ab)(F, V)
   }, [n, F, V]);
-  let X = (0, s.e7)([O.Z], () => O.Z.enabled),
+  let Q = (0, s.e7)([O.Z], () => O.Z.enabled),
     J = t === L.EZ.ApplicationStoreHome,
-    $ = X ? (0, r.jsx)(f.Z, {}) : n ? (0, r.jsx)(E.c8, {}) : J && z ? (0, r.jsx)(m.Gt, {
+    $ = Q ? (0, r.jsx)(f.Z, {}) : n ? (0, r.jsx)(E.c8, {}) : J && z ? (0, r.jsx)(m.Gt, {
       value: k,
       children: (0, r.jsx)(x.Z, {
         userId: B

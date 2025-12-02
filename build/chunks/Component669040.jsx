@@ -51,8 +51,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk751466 = require("./751466.js");
 let z = 0,
   q = 0,
-  Q = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_TOP),
-  X = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_RIGHT),
+  X = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_TOP),
+  Q = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_RIGHT),
   J = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_BOTTOM),
   $ = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_SEARCH_RESULTS_PADDING_TOP),
   ee = (0, Chunk624138.Mg)(Chunk477690.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_LIST_SECTION_HEADING_HEIGHT),
@@ -229,7 +229,7 @@ let z = 0,
         return e === h.length - 1 || t.has(null == (n = h[e]) ? true : n.sectionId) || ef(e) || ed(e) ? 0 : et
       }, [t, h, ef, ed]);
     return {
-      listPadding: i.useMemo(() => ["" !== _ ? $ : Q, X, J, q], [_]),
+      listPadding: i.useMemo(() => ["" !== _ ? $ : X, Q, J, q], [_]),
       renderRow: eh,
       renderSection: eb,
       renderSectionHeader: eg,
@@ -261,8 +261,8 @@ let z = 0,
       messageId: M,
       isBurstReaction: k,
       listHeaderClassName: U
-    } = e, G = i.useRef(false), B = E.kJ.useStore(e => e.activeCategoryIndex), F = (0, b.Iu)(e => e.searchQuery), H = R.Yk.useSetting(), q = (0, u.e7)([w.default], () => w.default.getCurrentUser()), Q = (0, L.I5)(q), {
-      location: X
+    } = e, G = i.useRef(false), B = E.kJ.useStore(e => e.activeCategoryIndex), F = (0, b.Iu)(e => e.searchQuery), H = R.Yk.useSetting(), q = (0, u.e7)([w.default], () => w.default.getCurrentUser()), X = (0, L.I5)(q), {
+      location: Q
     } = (0, m.O)(), {
       analyticsLocations: J
     } = (0, h.ZP)(), [$, ee] = i.useState(0), [et, en] = i.useState(false), [er, ei] = i.useState(0), {
@@ -350,10 +350,10 @@ let z = 0,
     return i.useEffect(() => {
       et && D.default.track(V.rMx.PREMIUM_UPSELL_VIEWED, {
         type: Y.cd.EMOJI_PICKER_FLOATING_UPSELL,
-        location: X,
+        location: Q,
         location_stack: J
       })
-    }, [X, J, et]), i.useEffect(() => {
+    }, [Q, J, et]), i.useEffect(() => {
       "" !== F && (ei(0), en(false))
     }, [F]), (0, r.jsxs)("div", {
       className: K.listWrapper,
@@ -377,7 +377,7 @@ let z = 0,
       }) : (0, r.jsx)(_.Z, {
         message: W.intl.string(W.t.IxxiKF),
         className: K.noSearchResultsContainer
-      }), Q || c.tq ? null : (0, r.jsx)(N.p, {
+      }), X || c.tq ? null : (0, r.jsx)(N.p, {
         showUpsell: et,
         text: eO(),
         button: ev(),

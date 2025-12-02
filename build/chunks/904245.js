@@ -759,7 +759,7 @@ let eV = {
         uploads: a,
         confettiPotionEmoji: o
       } = e;
-      return null != o && (0, Q.tv)(n, r, i, a) ? {
+      return null != o && (0, X.tv)(n, r, i, a) ? {
         confettiPotionData: {
           emoji: o,
           callback: () => (0, z.Hb)(t)
@@ -962,7 +962,7 @@ let eV = {
           null != n.party && null != n.party.id && (t.party_id = n.party.id), eb.message.application_id = n.application_id, eb.message.activity = t
         }
       }
-      if (null != j && (eb.message.poll = j), null != k && (eb.message.shared_client_theme = k), null != N && (eb.message.sticker_ids = N), Y.Z.isEnabled() && (eb.message.has_poggermode_enabled = true), ea && (eb.message.with_checkpoint = true), null != U && (eb.message.content_inventory_entry = U), null != D && (eb.message.confetti_potion = (0, Q.vY)(D), D.callback()), null != z && z.length > 0 && (eb.message.attachments = z), null != ee && ee.length > 0) try {
+      if (null != j && (eb.message.poll = j), null != k && (eb.message.shared_client_theme = k), null != N && (eb.message.sticker_ids = N), Y.Z.isEnabled() && (eb.message.has_poggermode_enabled = true), ea && (eb.message.with_checkpoint = true), null != U && (eb.message.content_inventory_entry = U), null != D && (eb.message.confetti_potion = (0, X.vY)(D), D.callback()), null != z && z.length > 0 && (eb.message.attachments = z), null != ee && ee.length > 0) try {
         let t = await (0, M.c)({
           channelId: e,
           nonce: ep,
@@ -1014,8 +1014,8 @@ let eV = {
               },
               poll: j
             });
-            let r = (0, Q.ZC)(o.body);
-            null != r && ((0, K.gA)(X.D1), (0, J.I)({
+            let r = (0, X.ZC)(o.body);
+            null != r && ((0, K.gA)(Q.D1), (0, J.I)({
               name: r.name,
               id: r.id
             }, true, true, q.LL.MessageSent));

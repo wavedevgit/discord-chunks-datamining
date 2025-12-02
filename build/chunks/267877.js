@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 267877, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   buttonsContainer: "buttonsContainer__24d0d",
   colorSwatch: "colorSwatch__24d0d",

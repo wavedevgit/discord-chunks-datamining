@@ -114,7 +114,7 @@ function x(e) {
     (0, v.i1)(e.id, (0, S.yb)(t)).then(() => {
       W(e, K(e), Y)
     }), "function" == typeof n && n(e.id)
-  }, Q = () => {
+  }, X = () => {
     (0, u.ZDy)(async () => e => (0, r.jsx)(p.default, D(R({}, e), {
       onAddPaymentSource: q,
       analyticsLocation: P
@@ -124,7 +124,7 @@ function x(e) {
       },
       onCloseRequest: T.dG4
     })
-  }, X = () => {
+  }, Q = () => {
     let e = t.paymentSourceId;
     return (0, r.jsx)(m.ZP, {
       prependOption: null == e ? {
@@ -136,7 +136,7 @@ function x(e) {
       hidePersonalInformation: j,
       selectedPaymentSourceId: e,
       onChange: z,
-      onPaymentSourceAdd: Q,
+      onPaymentSourceAdd: X,
       dropdownLoading: B,
       disabled: x,
       paymentGatewayRestrictions: t.eligiblePaymentGateways
@@ -144,7 +144,7 @@ function x(e) {
   }, J = () => (0, r.jsx)(u.Button, {
     fullWidth: true,
     variant: a ? "primary" : "secondary",
-    onClick: Q,
+    onClick: X,
     text: A.intl.string(A.t.CpOiEO)
   }), $ = e => {
     l()(null != e.paymentGateway, "Expected payment gateway when managed externally");
@@ -168,7 +168,7 @@ function x(e) {
     l()(null != e, "Unable to fetch plan");
     let n = (0, v.DE)(e, t.paymentSourceId, false);
     return (0, r.jsxs)(r.Fragment, {
-      children: [X(), null != t.paymentSourceId ? (0, r.jsx)(_.b, {
+      children: [Q(), null != t.paymentSourceId ? (0, r.jsx)(_.b, {
         currencies: n,
         children: (0, r.jsxs)("div", {
           className: o()(C.currency, N.flex, N.alignCenter),

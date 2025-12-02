@@ -247,14 +247,14 @@ function q(e) {
   }
 }
 
-function Q(e) {
+function X(e) {
   let {
     streamKey: t
   } = e;
   G(t)
 }
 
-function X(e) {
+function Q(e) {
   let {
     id: t,
     channelId: n
@@ -474,11 +474,11 @@ let eo = new ea(Chunk570140.Z, {
   STREAM_UPDATE: q,
   STREAM_TIMED_OUT: $,
   STREAM_DELETE: J,
-  STREAM_CLOSE: Q,
+  STREAM_CLOSE: X,
   STREAM_UPDATE_SELF_HIDDEN: et,
   SET_STREAM_APP_INTENT: en,
   RTC_CONNECTION_STATE: ee,
-  CHANNEL_RTC_SELECT_PARTICIPANT: X,
+  CHANNEL_RTC_SELECT_PARTICIPANT: Q,
   CONNECTION_OPEN: M,
   CONNECTION_CLOSED: M,
   LOGOUT: M

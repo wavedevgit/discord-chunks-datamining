@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 51397, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -15,17 +15,17 @@ let c = (0, Chunk509613.UO)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_SLIDER, {
     minValue: 0,
     maxValue: 100,
     getInitialValue: () => Chunk131951.Z.getAttenuation(),
-    setValue: t => r.Z.setAttenuation(t, u.Z.getAttenuateWhileSpeakingSelf(), u.Z.getAttenuateWhileSpeakingOthers())
+    setValue: t => l.Z.setAttenuation(t, r.Z.getAttenuateWhileSpeakingSelf(), r.Z.getAttenuateWhileSpeakingOthers())
   }),
   d = (0, Chunk509613.qs)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_FOR_SELF_SETTING, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["9dHxRY"]),
     useValue: () => (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getAttenuateWhileSpeakingSelf()),
-    setValue: t => r.Z.setAttenuation(u.Z.getAttenuation(), t, u.Z.getAttenuateWhileSpeakingOthers())
+    setValue: t => l.Z.setAttenuation(r.Z.getAttenuation(), t, r.Z.getAttenuateWhileSpeakingOthers())
   }),
   E = (0, Chunk509613.qs)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_FOR_OTHERS_SETTING, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.SMt0Gr),
     useValue: () => (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getAttenuateWhileSpeakingOthers()),
-    setValue: t => r.Z.setAttenuation(u.Z.getAttenuation(), u.Z.getAttenuateWhileSpeakingSelf(), t)
+    setValue: t => l.Z.setAttenuation(r.Z.getAttenuation(), r.Z.getAttenuateWhileSpeakingSelf(), t)
   }),
   S = (0, Chunk509613.Uc)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_FIELD_SET, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.oSdBvW),

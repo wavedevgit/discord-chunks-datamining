@@ -17,7 +17,7 @@ require.r(exports), require.d(exports, {
   openQuestOrbsRewardModal: () => F,
   openQuestsNitroRewardModal: () => Z,
   openQuestsRewardCodeModal: () => G,
-  openVideoQuestModal: () => Q
+  openVideoQuestModal: () => X
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -250,7 +250,7 @@ function q() {
   return Promise.all([require.e("13193"), require.e("75909"), require.e("38746")]).then(require.bind(require, 215113))
 }
 
-function Q(e) {
+function X(e) {
   var t;
   let {
     quest: n,
@@ -297,7 +297,7 @@ function Q(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   var t;
   let n = null == (t = platform.os) ? true : t.family,
     r = "quest";
@@ -315,7 +315,7 @@ function X(e) {
 }
 
 function J(e) {
-  let t = X(e),
+  let t = Q(e),
     n = (0, a.zS)(t);
   null != n && _.default.track(R.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, o.K)(n.fingerprint),
@@ -384,7 +384,7 @@ async function en(e, t) {
   });
   switch (n) {
     case h.wF.SUCCESS:
-      Q({
+      X({
         quest: e,
         questContent: t.questContent,
         sourceQuestContent: t.sourceQuestContent,

@@ -56,12 +56,12 @@ let N = {
       isPurchased: Z = false,
       skipEffectDisplayName: B = false,
       width: F
-    } = e, V = (0, u.ZP)(), H = (0, l.wj)(V), Y = null != a ? (0, p.EU)(a) : P, W = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), K = H ? "#706F74" : "#aaaab2", z = i.useRef(null), q = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), Q = null != t ? (0, b.Ly)({
+    } = e, V = (0, u.ZP)(), H = (0, l.wj)(V), Y = null != a ? (0, p.EU)(a) : P, W = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), K = H ? "#706F74" : "#aaaab2", z = i.useRef(null), q = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), X = null != t ? (0, b.Ly)({
       pendingNickname: M,
       pendingGlobalName: j,
       user: t,
       guildMember: q
-    }) : true, X = (0, E.Ys)({
+    }) : true, Q = (0, E.Ys)({
       pendingValue: k,
       userValue: null == t ? true : t.avatarDecoration,
       guildValue: null == q ? true : q.avatarDecoration,
@@ -105,7 +105,7 @@ let N = {
                 guildId: n,
                 avatarSize: J,
                 status: x ? W : true,
-                avatarDecorationOverride: X,
+                avatarDecorationOverride: Q,
                 "aria-hidden": true
               }),
               decorators: (0, r.jsx)(g.ZP, {
@@ -114,7 +114,7 @@ let N = {
                 className: T.tagChiplet
               }),
               name: (0, r.jsx)(h.Z, {
-                userName: Q,
+                userName: X,
                 displayNameStyles: $,
                 effectDisplayType: B ? m.F.PLAIN : m.F.ANIMATED,
                 loop: true

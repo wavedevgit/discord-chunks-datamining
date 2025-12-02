@@ -59,8 +59,8 @@ function R(e) {
     selectedPlan: K,
     priceOptions: z,
     setHasAcceptedTerms: q,
-    setPurchaseError: Q,
-    purchaseType: X,
+    setPurchaseError: X,
+    purchaseType: Q,
     paymentSourceId: J,
     paymentSources: $,
     selectedSkuId: ee,
@@ -98,7 +98,7 @@ function R(e) {
     eR = (0, c.e7)([T.Z], () => T.Z.currentOrderId),
     ew = null,
     eD = null;
-  if (X === N.GZQ.ONE_TIME) {
+  if (Q === N.GZQ.ONE_TIME) {
     var ex;
     l()(null != ee, "SKU must be selected for one-time purchases"), ew = null != (ex = et[ee]) ? ex : null, l()(null != ew, "SKU must exist and be fetched.");
     let e = en[ee],
@@ -110,7 +110,7 @@ function R(e) {
       setPurchaseState: n,
       setHasAcceptedTerms: q,
       setIsSubmitting: eS,
-      setPurchaseError: Q,
+      setPurchaseError: X,
       hasRedirectURL: eI,
       setHasRedirectURL: eT,
       isGift: el,
@@ -130,7 +130,7 @@ function R(e) {
       metadata: F,
       sku: ew,
       skuPricePreview: eD,
-      purchaseType: X,
+      purchaseType: Q,
       referralCode: er,
       loadId: ei.loadId,
       giftInfoOptions: eg,
@@ -156,7 +156,7 @@ function R(e) {
     } = eM.current;
     eb && !el && null == t && e()
   }, [eb, el, t]);
-  let ek = null != B || X === N.GZQ.ONE_TIME && !el,
+  let ek = null != B || Q === N.GZQ.ONE_TIME && !el,
     eU = V && !ek;
   return eb ? null : (0, r.jsxs)(u.mzw, {
     "data-migration-pending": true,

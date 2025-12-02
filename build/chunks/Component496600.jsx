@@ -221,8 +221,8 @@ function k(e) {
     isInert: K,
     isCollapsible: z,
     hasValue: q,
-    handleSelectionChange: Q,
-    onSelectionChange: X,
+    handleSelectionChange: X,
+    onSelectionChange: Q,
     isOpen: J,
     setIsOpen: $,
     options: ee,
@@ -245,8 +245,8 @@ function k(e) {
     }, [K, J, $]),
     eu = i.useCallback(() => {
       var e;
-      "multiple" === U ? X([]) : X(null), ei(""), null == (e = x.current) || e.focus()
-    }, [X, U, ei]),
+      "multiple" === U ? Q([]) : Q(null), ei(""), null == (e = x.current) || e.focus()
+    }, [Q, U, ei]),
     ed = i.useCallback(e => {
       var t, n, r;
       eo(true), null == h || h(e), null == (t = x.current) || t.setSelectionRange(null != (n = null == er ? true : er.length) ? n : 0, null != (r = null == er ? true : er.length) ? r : 0)
@@ -278,8 +278,8 @@ function k(e) {
     eh = i.useCallback(e => {
       if (K) return;
       let t = Array.from(e)[0];
-      Q(et.filter(e => e.id !== t))
-    }, [Q, et, K]),
+      X(et.filter(e => e.id !== t))
+    }, [X, et, K]),
     eg = i.useCallback(e => {
       let t = en.length,
         n = 1;
@@ -306,7 +306,7 @@ function k(e) {
           if (e.preventDefault(), e.stopPropagation(), null == M || 0 === t) return;
           let r = en[M];
           if (true === r.disabled || V && 1 === et.length && et.includes(r)) return;
-          Q("single" === U ? [r] : (0, S.cq)(U, et, r));
+          X("single" === U ? [r] : (0, S.cq)(U, et, r));
           break;
         case "Backspace":
           if ("multiple" === U && "" === er && et.length > 0 && null != D.current) {
@@ -326,7 +326,7 @@ function k(e) {
           k(t - 1)
       }
       null == v || v(e)
-    }, [U, V, F, q, W, v, eu, Q, et, er, $, en, M, k]),
+    }, [U, V, F, q, W, v, eu, X, et, er, $, en, M, k]),
     eE = i.useCallback(e => {
       eo(true), ei(e.target.value), null == $ || $(true), null == _ || _(e), k(null)
     }, [_, eo, ei, $, k]),
@@ -426,7 +426,7 @@ function k(e) {
       disabled: K,
       selectionMode: U,
       selectedItems: et,
-      onSelectionChange: Q,
+      onSelectionChange: X,
       listItems: ee
     })]
   })

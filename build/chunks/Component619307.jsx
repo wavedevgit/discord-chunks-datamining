@@ -193,20 +193,20 @@ function D(e) {
     errorMessage: K,
     successMessage: z,
     layout: q = "vertical"
-  } = e, [Q, X] = i.useState(false), {
+  } = e, [X, Q] = i.useState(false), {
     ref: J,
     width: $,
     height: ee
   } = (0, _.ZP)();
   i.useLayoutEffect(() => {
-    s && X(false)
+    s && Q(false)
   }, [s]);
   let et = i.useCallback(e => {
-      Q === e || s || (X(e), e ? null == T || T() : null == I || I())
-    }, [s, I, T, Q]),
+      X === e || s || (Q(e), e ? null == T || T() : null == I || I())
+    }, [s, I, T, X]),
     en = i.useCallback(e => {
-      Q && !e && et(false)
-    }, [et, Q]),
+      X && !e && et(false)
+    }, [et, X]),
     er = (0, c.O)(en),
     ei = i.useCallback(e => {
       if (M(e), j) {
@@ -227,7 +227,7 @@ function D(e) {
     targetElementRef: J,
     spacing: 0,
     animation: d.y.Animation.NONE,
-    shouldShow: Q,
+    shouldShow: X,
     onRequestOpen: () => {
       et(true)
     },
@@ -290,7 +290,7 @@ function D(e) {
             J.current = e, er.current = e
           },
           onClick: s ? true : e => {
-            i(e), et(!Q)
+            i(e), et(!X)
           },
           onKeyDown: e => {
             "ArrowDown" === e.key ? et(true) : "Escape" === e.key && d && (e.stopPropagation(), et(false)), l(e)

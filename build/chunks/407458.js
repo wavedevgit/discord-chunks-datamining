@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 407458, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   j: () => c
@@ -12,7 +12,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(t) {
-  return (0, l.qs)("".concat(s.n.SOUNDS_LIST_ITEM_PREFIX).concat(t.sound), {
+  return (0, s.qs)("".concat(u.n.SOUNDS_LIST_ITEM_PREFIX).concat(t.sound), {
     useTitle: t.useLabel,
     useSubtitle: () => {
       let {
@@ -24,19 +24,19 @@ function c(t) {
     },
     useValue: () => {
       var e;
-      let n = (0, i.e7)([u.Z], () => u.Z.isSoundDisabled(t.sound)),
-        r = null == (e = t.useDisabled) ? true : e.call(t);
-      return !n && !r
+      let n = (0, i.e7)([r.Z], () => r.Z.isSoundDisabled(t.sound)),
+        l = null == (e = t.useDisabled) ? true : e.call(t);
+      return !n && !l
     },
     setValue: e => {
-      let n = u.Z.getDisabledSounds().filter(e => e !== t.sound);
-      e || n.push(t.sound), r.default.setDisabledSounds(n)
+      let n = r.Z.getDisabledSounds().filter(e => e !== t.sound);
+      e || n.push(t.sound), l.default.setDisabledSounds(n)
     },
     useDisabled: () => {
       var e;
       let n = null == (e = t.useDisabled) ? true : e.call(t),
-        r = (0, i.e7)([u.Z], () => u.Z.getDisableAllSounds());
-      return n || r
+        l = (0, i.e7)([r.Z], () => r.Z.getDisableAllSounds());
+      return n || l
     },
     useDisabledMessage: t.useDisabledMessage
   })

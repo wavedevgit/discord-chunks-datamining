@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 317379, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   f: () => o
@@ -22,5 +22,5 @@ let o = (0, Chunk509613.Em)(Chunk313789.n.REACTION_NOTIFICATIONS, {
     value: Chunk524437.Ns.NOTIFICATIONS_DISABLED
   }],
   useValue: Chunk695346.fz.useSetting,
-  setValue: t => (0, r.MR)(t, u.fz.getSetting())
+  setValue: t => (0, l.MR)(t, r.fz.getSetting())
 })

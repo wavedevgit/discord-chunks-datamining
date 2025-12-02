@@ -1,37 +1,38 @@
-/** Chunk was on 88569 **/
-/** chunk id: 700425, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 700425, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  i: () => a,
-  l: () => s
+  i: () => s,
+  l: () => l
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  i = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk996435 = require("./996435.js");
 
-function a(e, t) {
+function s(e, t) {
   let n = r.useRef(null),
-    l = r.useRef(new Set);
+    i = r.useRef(new Set);
   r.useEffect(() => {
     let e = t.current;
     if (null == e) return;
     let r = Array.from(e.querySelectorAll("[data-settings-category-key]")).filter(e => null != e.getAttribute("data-settings-category-key")),
-      i = new Map,
-      a = [];
+      a = new Map,
+      s = [];
     return r.forEach(e => {
       let t = e.getAttribute("data-settings-category-key");
-      null != t && (i.set(e, t), a.push(t))
+      null != t && (a.set(e, t), s.push(t))
     }), n.current = new IntersectionObserver(e => {
       if (e.forEach(e => {
           let {
             isIntersecting: t,
             target: n
-          } = e, r = i.get(n);
-          null != r && (t ? l.current.add(r) : l.current.delete(r))
+          } = e, r = a.get(n);
+          null != r && (t ? i.current.add(r) : i.current.delete(r))
         }), o.Z.getField("disableSidebarCategoryAutoSelect")) return;
       let t = [];
-      if (a.forEach(e => {
-          l.current.has(e) && t.push(e)
+      if (s.forEach(e => {
+          i.current.has(e) && t.push(e)
         }), 0 === t.length) return;
       let n = t[0];
       o.Z.getField("currentCategoryKey") !== n && o.Z.setState({
@@ -54,13 +55,13 @@ function a(e, t) {
   }, [t, e.key, e.layout])
 }
 
-function s() {
+function l() {
   Chunk473749.useEffect(() => {
     let e = document.querySelectorAll("[data-settings-panel-scroller]");
     if (0 === module.length) return;
     let t = module[0];
     if (null == exports) return;
-    let n = i().debounce(() => {
+    let n = a().debounce(() => {
       Chunk996435.Z.setState({
         disableSidebarCategoryAutoSelect: false
       })

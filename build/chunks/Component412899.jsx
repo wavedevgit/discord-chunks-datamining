@@ -131,7 +131,7 @@ function K(e) {
           numRoles: t.length
         })
       })]
-    }), (0, r.jsx)(X, B(G({}, i), {
+    }), (0, r.jsx)(Q, B(G({}, i), {
       wrap: true,
       userRoleIds: t
     }))]
@@ -272,7 +272,7 @@ function q(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   let t = i.useRef(null),
     {
       guild: n,
@@ -322,7 +322,7 @@ function Q(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   let t, {
       user: n,
       guild: a,
@@ -373,7 +373,7 @@ function X(e) {
   let Z = !h && D.Z.can(j.Plq.MANAGE_ROLES, a),
     V = L.e9(a, U.id),
     K = i.useMemo(() => "roles-".concat((0, c.Z)()), []),
-    X = (0, d.ZP)({
+    Q = (0, d.ZP)({
       id: K,
       isEnabled: true,
       scrollToStart: W,
@@ -394,10 +394,10 @@ function X(e) {
     });
   return null != T && 0 !== R ? t = (0, r.jsx)(q, B(G({}, e), {
     numRolesHidden: R
-  })) : Z && (t = (0, r.jsx)(Q, B(G({}, e), {
+  })) : Z && (t = (0, r.jsx)(X, B(G({}, e), {
     handleAddRole: S
   }))), (0, r.jsx)(u.bG, {
-    navigator: X,
+    navigator: Q,
     children: (0, r.jsx)(u.SJ, {
       children: e => {
         var {
@@ -416,11 +416,11 @@ function X(e) {
     })
   })
 }
-let J = (0, Chunk112724.Z)(X);
+let J = (0, Chunk112724.Z)(Q);
 
 function $(e) {
   return (0, p.e7)([D.Z], () => {
     var t;
     return D.Z.getGuildVersion(null == (t = e.guild) ? true : t.id)
-  }), false === e.wrap ? (0, r.jsx)(J, G({}, e)) : (0, r.jsx)(X, G({}, e))
+  }), false === e.wrap ? (0, r.jsx)(J, G({}, e)) : (0, r.jsx)(Q, G({}, e))
 }

@@ -85,8 +85,8 @@ let V = "party-",
   K = false,
   z = false,
   q = [],
-  Q = [],
-  X = {},
+  X = [],
+  Q = {},
   J = {},
   $ = new Set,
   ee = new Set;
@@ -101,11 +101,11 @@ function en(e) {
 }
 
 function er(e) {
-  return null == X[e] && (X = F(Z({}, X), {
+  return null == Q[e] && (Q = F(Z({}, Q), {
     [e]: new A.Z({
       name: e
     })
-  })), X[e]
+  })), Q[e]
 }
 
 function ei(e) {
@@ -339,7 +339,7 @@ function eO() {
 
 function ev() {
   if (!eO()) returnfalse;
-  $.clear(), Q = eb(q = eE(e_(ep(ec(Array.from(et()).reduce((e, t) => {
+  $.clear(), X = eb(q = eE(e_(ep(ec(Array.from(et()).reduce((e, t) => {
     let n = j.default.getUser(t);
     return null == n || n.bot || e.push(n), e
   }, [])))))), ey(), z = true
@@ -353,7 +353,7 @@ function eI() {
 }
 
 function eT() {
-  K = false, q = [], Q = [], $.clear()
+  K = false, q = [], X = [], $.clear()
 }
 
 function eA() {
@@ -371,7 +371,7 @@ class eN extends(r = Chunk442837.ZP.Store) {
     return q
   }
   get nowPlayingCards() {
-    return Q
+    return X
   }
   get isMounted() {
     return K

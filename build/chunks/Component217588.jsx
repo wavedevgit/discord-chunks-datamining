@@ -128,7 +128,7 @@ function q(e) {
     })]
   })
 }
-let Q = e => {
+let X = e => {
     let {
       closePopout: t,
       sticker: n,
@@ -197,7 +197,7 @@ let Q = e => {
       })]
     })
   },
-  X = e => {
+  Q = e => {
     let t, {
         sticker: n,
         channel: a,
@@ -211,8 +211,8 @@ let Q = e => {
       Z = (0, s.e7)([v.Z], () => v.Z.getGuild(n.guild_id)),
       B = null != Z,
       [H, W] = i.useState(false),
-      [K, Q] = i.useState(null),
-      X = i.useMemo(() => ({
+      [K, X] = i.useState(null),
+      Q = i.useMemo(() => ({
         page: null != a.guild_id ? w.ZY5.GUILD_CHANNEL : w.ZY5.DM_CHANNEL,
         section: w.jXE.STICKER_POPOUT
       }), [a.guild_id]),
@@ -283,7 +283,7 @@ let Q = e => {
               },
               onSubscribeModalClose: t => t ? e() : l(),
               postSuccessGuild: B || null == A ? true : A,
-              premiumModalAnalyticsLocation: X
+              premiumModalAnalyticsLocation: Q
             }), ea && (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
               className: j.ctaButton,
@@ -347,10 +347,10 @@ let Q = e => {
                       [L.nonInteractingSticker]: null != K && K !== e.id
                     }),
                     onMouseEnter: () => {
-                      Q(e.id)
+                      X(e.id)
                     },
                     onMouseLeave: () => {
-                      Q(null)
+                      X(null)
                     },
                     children: (0, r.jsx)(P.Z, {
                       size: F,
@@ -398,12 +398,12 @@ let $ = e => {
     closePopout: i,
     refreshPositionKey: a
   } = e, [o, s] = (0, A.XW)(t, true);
-  return null != o && (0, N.jl)(o) ? (0, r.jsx)(Q, {
+  return null != o && (0, N.jl)(o) ? (0, r.jsx)(X, {
     sticker: o,
     closePopout: i,
     channel: n,
     refreshPositionKey: a
-  }) : null != o && (0, N.J8)(o) ? (0, r.jsx)(X, {
+  }) : null != o && (0, N.J8)(o) ? (0, r.jsx)(Q, {
     sticker: o,
     channel: n,
     closePopout: i,

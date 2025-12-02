@@ -1,4 +1,4 @@
-/** Chunk was on 9452 **/
+/** Chunk was on 77069 **/
 /** chunk id: 30644, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -24,7 +24,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_AUTO_STREAMER_MODE, {
     })
   },
   setValue: function(t) {
-    l.Z.update({
+    s.Z.update({
       autoToggle: t
     })
   }

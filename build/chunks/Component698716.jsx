@@ -171,10 +171,10 @@ function x(e) {
       checked: (null == n ? true : n.id) === e.quest.id,
       action: M
     }), [M, e.quest.id, null == n ? true : n.id]),
-    Q = i.useCallback(() => {
+    X = i.useCallback(() => {
       (0, c.uL)(I.Z5c.QUEST_PREVIEW_TOOL_2(e.quest.id))
     }, [e.quest.id]),
-    X = e.shouldShowDisclosure && e.quest.id !== S.V6;
+    Q = e.shouldShowDisclosure && e.quest.id !== S.V6;
   return (0, r.jsxs)(o.v2r, {
     variant: "fixed",
     onSelect: F,
@@ -199,7 +199,7 @@ function x(e) {
         label: A.intl.string(A.t["Ws2Bl+"]),
         action: B,
         icon: o.qDn
-      }), X && (0, r.jsx)(o.sNh, {
+      }), Q && (0, r.jsx)(o.sNh, {
         id: "display-disclosure",
         label: A.intl.string(A.t.GcsZKJ),
         action: Z
@@ -254,7 +254,7 @@ function x(e) {
       }) && (0, r.jsx)(o.sNh, {
         id: "preview",
         label: A.intl.string(A.t.tx5Ax5),
-        action: Q
+        action: X
       })]
     }, "preview-controls")]
   })

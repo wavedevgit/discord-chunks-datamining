@@ -1,5 +1,6 @@
-/** Chunk was on 88569 **/
-/** chunk id: 976713, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 976713, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Z: () => o
 });
@@ -13,12 +14,12 @@ function o(e) {
   } = e, {
     useValue: n,
     setValue: o,
-    useTitle: a,
-    useSubtitle: s,
+    useTitle: s,
+    useSubtitle: l,
     useOptions: c
-  } = t, u = a(), d = null == s ? true : s(), f = n(), p = c();
-  return (0, r.jsx)(i.X, {
-    children: (0, r.jsx)(l.FXm, {
+  } = t, u = s(), d = null == l ? true : l(), f = n(), p = c();
+  return (0, r.jsx)(a.X, {
+    children: (0, r.jsx)(i.FXm, {
       label: u,
       description: d,
       options: p,

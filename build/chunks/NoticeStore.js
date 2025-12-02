@@ -204,7 +204,7 @@ function eq(e, t, n) {
   null == r || t || c.K.set(r, true), eZ.has(e) && (eB[e] = true), null != n && null != r ? eK(e, n) : ez(e)
 }
 
-function eQ(e) {
+function eX(e) {
   if (null == e || null != ek[e]) returnfalse;
   let t = eM[e];
   if (null != t) return (0, g.H4)(t).isDismissed;
@@ -218,7 +218,7 @@ function eQ(e) {
   let i = eB[e];
   return !!i || (null != r && "" !== r ? c.K.get(r) : !!eZ.has(e) && i)
 }
-let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, Chunk981631.kVF.VIEWING_ROLES, Chunk981631.kVF.INVITED_TO_SPEAK, Chunk981631.kVF.LURKING_GUILD, Chunk981631.kVF.VOICE_DISABLED, Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED, Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.HARDWARE_MUTE, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE, Chunk981631.kVF.WIN7_8_DEPRECATED_MESSAGE, Chunk981631.kVF.MACOS_19_DEPRECATED_MESSAGE, Chunk981631.kVF.BLOCKED_BY_PROXY, Chunk981631.kVF.VOICE_CONNECTED_LAST_SESSION, Chunk981631.kVF.SYSTEM_SERVICE_WARNING, Chunk981631.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION, Chunk981631.kVF.GUILD_RAID_NOTIFICATION, Chunk981631.kVF.GIFTING_PROMOTION_REMINDER, Chunk981631.kVF.QUESTS_PROGRESS_INTERRUPTION, Chunk981631.kVF.UNCLAIMED_ACCOUNT, Chunk981631.kVF.POMELO_ELIGIBLE, Chunk981631.kVF.PENDING_MEMBER, Chunk981631.kVF.CHECKOUT_RECOVERY_NAGBAR, Chunk981631.kVF.OUTBOUND_PROMOTION, Chunk981631.kVF.CORRUPT_INSTALLATION, Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER, Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK, Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.SCHEDULED_MAINTENANCE, Chunk981631.kVF.BOUNCED_EMAIL_DETECTED, Chunk981631.kVF.UNVERIFIED_ACCOUNT, Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING, Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING, Chunk981631.kVF.PREMIUM_TIER_0_TRIAL_ENDING, Chunk981631.kVF.PREMIUM_UNCANCEL, Chunk981631.kVF.PREMIUM_MISSING_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT, Chunk981631.kVF.PREMIUM_REACTIVATE, Chunk981631.kVF.ACTIVATE_SERVER_SUBSCRIPTION, Chunk981631.kVF.PASSKEY_BACKUP, Chunk981631.kVF.APPLICATION_TEST_MODE, Chunk981631.kVF.DOWNLOAD_NAG, Chunk981631.kVF.CONNECT_SPOTIFY, Chunk981631.kVF.CONNECT_PLAYSTATION, Chunk981631.kVF.SURVEY, Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR, Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR, Chunk981631.kVF.IGNORE_USER_FEEDBACK_NAGBAR, Chunk981631.kVF.REPORT_TO_MOD_EXIT_SURVEY],
+let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, Chunk981631.kVF.VIEWING_ROLES, Chunk981631.kVF.INVITED_TO_SPEAK, Chunk981631.kVF.LURKING_GUILD, Chunk981631.kVF.VOICE_DISABLED, Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED, Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.HARDWARE_MUTE, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE, Chunk981631.kVF.WIN7_8_DEPRECATED_MESSAGE, Chunk981631.kVF.MACOS_19_DEPRECATED_MESSAGE, Chunk981631.kVF.BLOCKED_BY_PROXY, Chunk981631.kVF.VOICE_CONNECTED_LAST_SESSION, Chunk981631.kVF.SYSTEM_SERVICE_WARNING, Chunk981631.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION, Chunk981631.kVF.GUILD_RAID_NOTIFICATION, Chunk981631.kVF.GIFTING_PROMOTION_REMINDER, Chunk981631.kVF.QUESTS_PROGRESS_INTERRUPTION, Chunk981631.kVF.UNCLAIMED_ACCOUNT, Chunk981631.kVF.POMELO_ELIGIBLE, Chunk981631.kVF.PENDING_MEMBER, Chunk981631.kVF.CHECKOUT_RECOVERY_NAGBAR, Chunk981631.kVF.OUTBOUND_PROMOTION, Chunk981631.kVF.CORRUPT_INSTALLATION, Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER, Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK, Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.SCHEDULED_MAINTENANCE, Chunk981631.kVF.BOUNCED_EMAIL_DETECTED, Chunk981631.kVF.UNVERIFIED_ACCOUNT, Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING, Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING, Chunk981631.kVF.PREMIUM_TIER_0_TRIAL_ENDING, Chunk981631.kVF.PREMIUM_UNCANCEL, Chunk981631.kVF.PREMIUM_MISSING_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT, Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT, Chunk981631.kVF.PREMIUM_REACTIVATE, Chunk981631.kVF.ACTIVATE_SERVER_SUBSCRIPTION, Chunk981631.kVF.PASSKEY_BACKUP, Chunk981631.kVF.APPLICATION_TEST_MODE, Chunk981631.kVF.DOWNLOAD_NAG, Chunk981631.kVF.CONNECT_SPOTIFY, Chunk981631.kVF.CONNECT_PLAYSTATION, Chunk981631.kVF.SURVEY, Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR, Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR, Chunk981631.kVF.IGNORE_USER_FEEDBACK_NAGBAR, Chunk981631.kVF.REPORT_TO_MOD_EXIT_SURVEY],
   eJ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, Chunk981631.kVF.VIEWING_ROLES, Chunk981631.kVF.INVITED_TO_SPEAK, Chunk981631.kVF.LURKING_GUILD, Chunk981631.kVF.VOICE_DISABLED, Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.HARDWARE_MUTE, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.BLOCKED_BY_PROXY, Chunk981631.kVF.VOICE_CONNECTED_LAST_SESSION, Chunk981631.kVF.PENDING_MEMBER, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.SCHEDULED_MAINTENANCE],
   e$ = {
     [Chunk981631.kVF.GIFTING_PROMOTION_REMINDER]: {
@@ -234,11 +234,11 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         } = Chunk2109.YW.getConfig({
           location: "NoticeStore"
         });
-        return module && exports && (0, Chunk605236.H4)(Chunk704215.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK).isDismissed && !eQ(Chunk981631.kVF.GIFTING_PROMOTION_REMINDER)
+        return module && exports && (0, Chunk605236.H4)(Chunk704215.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK).isDismissed && !eX(Chunk981631.kVF.GIFTING_PROMOTION_REMINDER)
       }
     },
     [Chunk981631.kVF.GUILD_RAID_NOTIFICATION]: {
-      predicate: () => (0, Chunk528011.g)().show && !eQ(Chunk981631.kVF.GUILD_RAID_NOTIFICATION),
+      predicate: () => (0, Chunk528011.g)().show && !eX(Chunk981631.kVF.GUILD_RAID_NOTIFICATION),
       metadata: () => ({
         dismissUntil: a()().add(3, "hours").toDate()
       })
@@ -324,7 +324,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       predicate: () => Chunk768419.Z.wasAutoPaused()
     },
     [Chunk981631.kVF.BLOCKED_BY_PROXY]: {
-      predicate: () => !eQ(Chunk981631.kVF.BLOCKED_BY_PROXY) && Chunk417626.Z.blockedByProxy && Chunk621615.Z.getCurrentConfig({
+      predicate: () => !eX(Chunk981631.kVF.BLOCKED_BY_PROXY) && Chunk417626.Z.blockedByProxy && Chunk621615.Z.getCurrentConfig({
         location: "notice_store"
       }).eligibleForNotice
     },
@@ -357,7 +357,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           voiceChannelId: t
         } = e;
-        return null != t && e_.Z.hasVideo(t) && !en.Z.supports(eR.AN.VIDEO) && !eQ(eT.kVF.VIDEO_UNSUPPORTED_BROWSER)
+        return null != t && e_.Z.hasVideo(t) && !en.Z.supports(eR.AN.VIDEO) && !eX(eT.kVF.VIDEO_UNSUPPORTED_BROWSER)
       }
     },
     [Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK]: {
@@ -370,14 +370,14 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       metadata: () => Chunk427123.Z.getDetectedOffPlatformPremiumPerks()[0]
     },
     [Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL]: {
-      predicate: () => !eQ(Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL) && Chunk427123.Z.getDetectedOffPlatformPremiumPerks().length > 0,
+      predicate: () => !eX(Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK_UPSELL) && Chunk427123.Z.getDetectedOffPlatformPremiumPerks().length > 0,
       metadata: () => Chunk427123.Z.getDetectedOffPlatformPremiumPerks()[0]
     },
     [Chunk981631.kVF.STREAMER_MODE]: {
       predicate: () => Chunk246946.Z.enabled
     },
     [Chunk981631.kVF.DOWNLOAD_NAG]: {
-      predicate: () => !Chunk358085.isPlatformEmbedded && !eQ(Chunk981631.kVF.DOWNLOAD_NAG)
+      predicate: () => !Chunk358085.isPlatformEmbedded && !eX(Chunk981631.kVF.DOWNLOAD_NAG)
     },
     [Chunk981631.kVF.SCHEDULED_MAINTENANCE]: {
       predicate: () => null != Chunk215427.Z.getScheduledMaintenance(),
@@ -411,7 +411,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       }
     },
     [Chunk981631.kVF.CONNECT_SPOTIFY]: {
-      predicate: () => !Chunk768419.Z.hasConnectedAccount() && Chunk594190.ZP.isObservedAppRunning(Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY).name) && !eQ(Chunk981631.kVF.CONNECT_SPOTIFY)
+      predicate: () => !Chunk768419.Z.hasConnectedAccount() && Chunk594190.ZP.isObservedAppRunning(Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY).name) && !eX(Chunk981631.kVF.CONNECT_SPOTIFY)
     },
     [Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE]: {
       predicate: () => (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.os.arch) === "ia32" && (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.process.platform) === "win32",
@@ -442,24 +442,24 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       })
     },
     [Chunk981631.kVF.CONNECT_PLAYSTATION]: {
-      predicate: () => Chunk553795.Z.isSuggestedAccountType(Chunk981631.ABu.PLAYSTATION) && null == Chunk553795.Z.getAccount(null, Chunk981631.ABu.PLAYSTATION) && !eQ(Chunk981631.kVF.CONNECT_PLAYSTATION)
+      predicate: () => Chunk553795.Z.isSuggestedAccountType(Chunk981631.ABu.PLAYSTATION) && null == Chunk553795.Z.getAccount(null, Chunk981631.ABu.PLAYSTATION) && !eX(Chunk981631.kVF.CONNECT_PLAYSTATION)
     },
     [Chunk981631.kVF.PASSKEY_BACKUP]: {
       predicate: e => {
         let {
           currentUser: t
         } = e;
-        return (null == t ? true : t.mfaEnabled) && W.Z.hasFetchedCredentials() && !W.Z.hasCredentials && !eQ(eT.kVF.PASSKEY_BACKUP)
+        return (null == t ? true : t.mfaEnabled) && W.Z.hasFetchedCredentials() && !W.Z.hasCredentials && !eX(eT.kVF.PASSKEY_BACKUP)
       }
     },
     [Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING]: {
-      predicate: () => Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_2]).length > 0 && !eQ(Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING)
+      predicate: () => Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_2]).length > 0 && !eX(Chunk981631.kVF.PREMIUM_TIER_2_TRIAL_ENDING)
     },
     [Chunk981631.kVF.PREMIUM_TIER_0_TRIAL_ENDING]: {
-      predicate: () => Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_0]).length > 0 && !eQ(Chunk981631.kVF.PREMIUM_TIER_0_TRIAL_ENDING)
+      predicate: () => Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_0]).length > 0 && !eX(Chunk981631.kVF.PREMIUM_TIER_0_TRIAL_ENDING)
     },
     [Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING]: {
-      predicate: () => Chunk431.Z.getAlmostExpiringDiscountOffers([Chunk474936.Si.TIER_2]).length > 0 && !eQ(Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING)
+      predicate: () => Chunk431.Z.getAlmostExpiringDiscountOffers([Chunk474936.Si.TIER_2]).length > 0 && !eX(Chunk981631.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING)
     },
     [Chunk981631.kVF.PREMIUM_UNCANCEL]: {
       predicate: e => {
@@ -467,7 +467,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
           premiumSubscription: t,
           currentUser: n
         } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null == t ? true : t.canceledAt) != null && (null == t ? true : t.status) === eT.O0b.CANCELED && 1 >= a()().diff(a()(t.canceledAt), "days"), o = null != t && a()(t.currentPeriodEnd).isBefore(a()()), s = null != t && t.status === eT.O0b.CANCELED && !o && r <= 7 && r >= 0 && (0, eO.M5)(n, eC.PremiumTypes.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
-        return !eQ(eT.kVF.PREMIUM_UNCANCEL) && s
+        return !eX(eT.kVF.PREMIUM_UNCANCEL) && s
       },
       metadata: e => {
         var t;
@@ -493,7 +493,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
           } = e;
           return !n && t === u
         }).length > 0, f = null != t && r <= i && r >= 0 && t.status !== eT.O0b.PAST_DUE && !o && s && !d && null === t.paymentSourceId && !n.hasFreePremium() && !t.isPurchasedExternally;
-        return !eQ(eT.kVF.PREMIUM_MISSING_PAYMENT) && f
+        return !eX(eT.kVF.PREMIUM_MISSING_PAYMENT) && f
       },
       metadata: e => {
         var t;
@@ -513,7 +513,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
           premiumSubscription: t,
           currentUser: n
         } = e, r = null != t && null != t.paymentSourceId ? em.Z.getPaymentSource(t.paymentSourceId) : null, i = null != t && a()(t.currentPeriodEnd).isBefore(a()()), o = null != t && t.status === eT.O0b.PAST_DUE && !i && null != r && r.invalid && !n.hasFreePremium() && !t.isPurchasedExternally;
-        return !eQ(eT.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT) && o
+        return !eX(eT.kVF.PREMIUM_PAST_DUE_INVALID_PAYMENT) && o
       },
       metadata: e => {
         let {
@@ -530,7 +530,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
           premiumSubscription: t,
           currentUser: n
         } = e, r = null != t && a()(t.currentPeriodEnd).isBefore(a()()), i = null != t && t.status === eT.O0b.PAST_DUE && !r && null === t.paymentSourceId && !n.hasFreePremium() && !t.isPurchasedExternally;
-        return !eQ(eT.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT) && i
+        return !eX(eT.kVF.PREMIUM_PAST_DUE_MISSING_PAYMENT) && i
       },
       metadata: e => {
         let {
@@ -554,7 +554,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       }
     },
     [Chunk981631.kVF.PREMIUM_REACTIVATE]: {
-      predicate: () => !eQ(Chunk981631.kVF.PREMIUM_REACTIVATE) && Chunk616106.Z.shouldShowReactivateNotice()
+      predicate: () => !eX(Chunk981631.kVF.PREMIUM_REACTIVATE) && Chunk616106.Z.shouldShowReactivateNotice()
     },
     [Chunk981631.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT]: {
       predicate: e => {
@@ -562,7 +562,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
           premiumSubscription: t,
           currentUser: n
         } = e, r = null != t && a()(t.currentPeriodEnd).isBefore(a()()), i = null != t && null != t.paymentSourceId ? em.Z.getPaymentSource(t.paymentSourceId) : null, o = null != i && eP.Uk.has(i.type), s = null != t && t.status === eT.O0b.PAST_DUE && !r && o && !n.hasFreePremium() && !t.isPurchasedExternally;
-        return !eQ(eT.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT) && s
+        return !eX(eT.kVF.PREMIUM_PAST_DUE_ONE_TIME_PAYMENT) && s
       },
       metadata: e => {
         let {
@@ -578,14 +578,14 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       }
     },
     [Chunk981631.kVF.POMELO_ELIGIBLE]: {
-      predicate: () => (0, Chunk332473.e)() && !eQ(Chunk981631.kVF.POMELO_ELIGIBLE)
+      predicate: () => (0, Chunk332473.e)() && !eX(Chunk981631.kVF.POMELO_ELIGIBLE)
     },
     [Chunk981631.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION]: {
       predicate: e => {
         let {
           selectedGuildId: t
         } = e, n = null != t ? et.Z.getGuild(t) : null;
-        return null != t && null != C.Z.getMentionRaidDetected(t) && (null == n ? true : n.features.has(eT.GuildFeatures.COMMUNITY)) && !eQ(eT.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION) || false
+        return null != t && null != C.Z.getMentionRaidDetected(t) && (null == n ? true : n.features.has(eT.GuildFeatures.COMMUNITY)) && !eX(eT.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION) || false
       },
       metadata: e => {
         let {
@@ -601,7 +601,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       }
     },
     [Chunk981631.kVF.ACTIVATE_SERVER_SUBSCRIPTION]: {
-      predicate: () => !eQ(Chunk981631.kVF.ACTIVATE_SERVER_SUBSCRIPTION) && 0 !== Chunk674525.Z.getEligibleGuildsForNagActivate().length && (0, Chunk223892.Lm)()
+      predicate: () => !eX(Chunk981631.kVF.ACTIVATE_SERVER_SUBSCRIPTION) && 0 !== Chunk674525.Z.getEligibleGuildsForNagActivate().length && (0, Chunk223892.Lm)()
     },
     [Chunk981631.kVF.SAFETY_USER_SENTIMENT_NAGBAR]: {
       predicate: e => {
@@ -636,7 +636,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
       }
     },
     [Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR]: {
-      predicate: () => !eQ(Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR) && Chunk867003.L0(),
+      predicate: () => !eX(Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR) && Chunk867003.L0(),
       metadata: () => ({
         dismissUntil: a()().add(180, "days").toDate(),
         sampleRate: .1
@@ -662,7 +662,7 @@ let eX = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           voiceChannelId: t
         } = e;
-        if (eQ(eT.kVF.SYSTEM_SERVICE_WARNING) || !(0, H.s2)(O.ZP) || null == t || en.Z.getMode() !== eT.pM4.PUSH_TO_TALK) returnfalse;
+        if (eX(eT.kVF.SYSTEM_SERVICE_WARNING) || !(0, H.s2)(O.ZP) || null == t || en.Z.getMode() !== eT.pM4.PUSH_TO_TALK) returnfalse;
         let n = O.ZP.getVisibleGame();
         return null != n && !!n.elevated
       }
@@ -679,7 +679,7 @@ function e0() {
     a = Chunk914010.Z.getGuildId(),
     o = Chunk944486.Z.getVoiceChannelId(),
     s = null != Chunk442837 ? Chunk979651.Z.getVoiceStateForChannel(Chunk442837) : null;
-  for (let n of Chunk188785.a ? eJ : eX)
+  for (let n of Chunk188785.a ? eJ : eQ)
     if (null != e$[require] && e$[require].predicate({
         selectedGuildId: a,
         voiceChannelId: Chunk442837,
@@ -700,7 +700,7 @@ function e0() {
     } if (null != eH) {
     (null == (n = eH.metadata) ? true : require.sampleRate) != null && null == eF[eH.type] && (eF[eH.type] = Math.random() <= eH.metadata.sampleRate);
     let e = false === eF[eH.type];
-    (eQ(eH.type) || module) && (eH = null)
+    (eX(eH.type) || module) && (eH = null)
   }
 }
 
@@ -769,7 +769,7 @@ class tn extends(r = Chunk442837.ZP.Store) {
     return null == Chunk23434.Z.getAction() ? eH : null
   }
   isNoticeDismissed(e) {
-    return eQ(e)
+    return eX(e)
   }
 }
 ew(tn, "displayName", "NoticeStore");

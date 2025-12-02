@@ -1,5 +1,6 @@
 /** Chunk was on 384 **/
 /** chunk id: 562337, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   container: "container_f53c21",
   emojiRow: "emojiRow_f53c21",

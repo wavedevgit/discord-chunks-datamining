@@ -160,12 +160,12 @@ function e_(e) {
     eY = Object.keys(ej).length > 0,
     [eW, eK] = i.useState(em - ew.length),
     [ez, eq] = i.useState(false),
-    eQ = (0, u.e7)([B.Z], () => B.Z.popupCallbackCalled),
-    eX = (0, v.V)(),
-    eJ = i.useMemo(() => null != ey && eN && eX ? (0, L.g)(ey, eW) : [{
+    eX = (0, u.e7)([B.Z], () => B.Z.popupCallbackCalled),
+    eQ = (0, v.V)(),
+    eJ = i.useMemo(() => null != ey && eN && eQ ? (0, L.g)(ey, eW) : [{
       planId: ee.Xh.PREMIUM_MONTH_GUILD,
       quantity: eW
-    }], [ey, eN, eW, eX]),
+    }], [ey, eN, eW, eQ]),
     e$ = i.useMemo(() => (0, D.b)(), []),
     [e0, e1] = (0, g.Z)(() => [null != e$ ? e$ : (0, c.Z)(), Date.now()]),
     {
@@ -228,7 +228,7 @@ function e_(e) {
       setPurchaseError: s
     } = e9.current;
     (async () => {
-      if (true === eQ) try {
+      if (true === eX) try {
         if (null == B.Z.redirectedPaymentId) return;
         await (0, _.OP)(B.Z.redirectedPaymentId), r(P.h8.CONFIRM), tr(R.A.COMPLETED), null != n && await ep(n, 0 !== eb), null == i || i()
       } catch (n) {
@@ -242,7 +242,7 @@ function e_(e) {
         o(false), (0, _.K2)()
       }
     })()
-  }, [eQ, eb]), (0, E.ZP)(() => {
+  }, [eX, eb]), (0, E.ZP)(() => {
     H.Z.hasFetchedSubscriptions() || (0, _.jg)(), null == el || null != G.Z.getGuild(el) || null != C.Z.getGuild(el) || C.Z.isGuildFetching(el) || (0, A.Q)(el), (0, T.U)(es(ea({}, e2), {
       guild_id: el,
       application_id: eE,
@@ -266,8 +266,8 @@ function e_(e) {
     tg = i.useMemo(() => JSON.stringify(tp), [tp]);
   i.useEffect(() => {
     let e;
-    eX && (null != V.Z.get(ee.Xh.PREMIUM_MONTH_GUILD) && t_(e = (0, z.DE)(ee.Xh.PREMIUM_MONTH_GUILD, ek, false)), null == ek && null != ey && null != ey.paymentSourceId ? tf(ey.currency) : null != e && tf(e[0]))
-  }, [ek, ey, eX, tg]);
+    eQ && (null != V.Z.get(ee.Xh.PREMIUM_MONTH_GUILD) && t_(e = (0, z.DE)(ee.Xh.PREMIUM_MONTH_GUILD, ek, false)), null == ek && null != ey && null != ey.paymentSourceId ? tf(ey.currency) : null != e && tf(e[0]))
+  }, [ek, ey, eQ, tg]);
   let tE = (0, M.vP)({
     paymentModalArgs: eL,
     initialStep: P.h8.PAYMENT_TYPE,
@@ -298,7 +298,7 @@ function e_(e) {
   if (eO) t = (0, r.jsx)(S.Vq, {
     onClose: to
   });
-  else if (eT && eN && eX && null != td && "" !== td)
+  else if (eT && eN && eQ && null != td && "" !== td)
     if ((null == ey ? true : ey.isPausedOrPausePending) && !ey.isPausedAllowsUpdatesButNotResume) t = (0, r.jsx)(p.hzk, {
       "data-migration-pending": true,
       children: (0, r.jsx)("p", {
@@ -344,7 +344,7 @@ function e_(e) {
       u = null == eD && null == c;
     switch (e4) {
       case P.h8.PLAN_SELECT:
-        l()(null != el, "Missing guildId"), l()(null != eP, "Missing nextPremiumSubscriptionPlan"), e = (0, r.jsx)(X.CP, {
+        l()(null != el, "Missing guildId"), l()(null != eP, "Missing nextPremiumSubscriptionPlan"), e = (0, r.jsx)(Q.CP, {
           premiumSubscriptionPlan: eP,
           numGuildBoosts: eW,
           setNumGuildBoosts: eK,
@@ -398,7 +398,7 @@ function e_(e) {
         });
         break;
       case P.h8.REVIEW:
-        l()(null != eP, "Missing nextPremiumSubscriptionPlan"), e = (0, r.jsx)(X.Gq, {
+        l()(null != eP, "Missing nextPremiumSubscriptionPlan"), e = (0, r.jsx)(Q.Gq, {
           paymentSources: ej,
           priceOptions: o,
           currentPremiumSubscription: ey,
@@ -484,7 +484,7 @@ function e_(e) {
         let m = null != (tb = null == c ? true : c.name) ? tb : null == eD ? true : eD.name,
           g = (0, w.$)(ej, ek),
           E = (0, q.qH)(ev.current) && null != eC && !ee.F$.has(eC.id);
-        e = (0, r.jsx)(X.R7, {
+        e = (0, r.jsx)(Q.R7, {
           guild: c,
           guildBoostQuantity: eW + ew.length,
           onClose: to,
@@ -532,7 +532,7 @@ function e_(e) {
     children: (0, r.jsx)(p.$jN, {})
   });
   let ty = null;
-  return eO || e4 === P.h8.PREMIUM_UPSELL || (ty = (0, r.jsx)(Q.Z, {
+  return eO || e4 === P.h8.PREMIUM_UPSELL || (ty = (0, r.jsx)(X.Z, {
     onClose: to,
     currentStep: e4,
     purchaseState: tn

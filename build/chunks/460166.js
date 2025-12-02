@@ -216,7 +216,7 @@ function j(e, t) {
     value: "",
     attributes: {},
     description: ""
-  } : G(e) ? Z(e, t) : H(e) ? Y(e, t) : W(e) ? K(e, t) : z(e) ? Q(e, t) : J(e, t)
+  } : G(e) ? Z(e, t) : H(e) ? Y(e, t) : W(e) ? K(e, t) : z(e) ? X(e, t) : J(e, t)
 }
 
 function M(e) {
@@ -295,12 +295,12 @@ function q(e) {
   return e["rdf:Bag"] || e["rdf:Seq"] || e["rdf:Alt"]
 }
 
-function Q(e, t) {
+function X(e, t) {
   let n = q(e.value).value["rdf:li"],
     r = B(e),
     i = [];
   return true === n ? n = [] : Array.isArray(n) || (n = [n]), n.forEach(e => {
-    i.push(X(e))
+    i.push(Q(e))
   }), {
     value: i,
     attributes: r,
@@ -308,7 +308,7 @@ function Q(e, t) {
   }
 }
 
-function X(e) {
+function Q(e) {
   return G(e) ? Z(e) : H(e) ? Y(e).value : W(e) ? K(e).value : J(e)
 }
 

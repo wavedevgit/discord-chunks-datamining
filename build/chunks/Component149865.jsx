@@ -1,7 +1,8 @@
-/** Chunk was on 88569 **/
-/** chunk id: 149865, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 149865, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,7 +10,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk36361 = require("./36361.jsx"),
   Chunk111161 = require("./111161.jsx"),
   Chunk700875 = require("./700875.js");
-let c = Chunk473749.memo(function(e) {
+
+function c(e) {
   let {
     node: t
   } = e, {
@@ -20,34 +22,35 @@ let c = Chunk473749.memo(function(e) {
   } = t, f = t.layout.filter(e => {
     var t, n;
     return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
-  }), p = n(), b = null == c ? true : c(), y = l.useId(), g = null != b && "" !== b, v = null != d ? d : l.Fragment;
-  return (0, r.jsx)(v, {
+  }), p = n(), _ = null == c ? true : c(), m = i.useId(), h = null != _ && "" !== _, g = null != d ? d : i.Fragment;
+  return (0, r.jsx)(g, {
     children: (0, r.jsxs)("fieldset", {
-      "aria-describedby": g ? y : true,
+      "aria-describedby": h ? m : true,
       children: [(0, r.jsxs)("div", {
-        className: s.header,
-        children: [(0, r.jsx)(i.Text, {
+        className: l.header,
+        children: [(0, r.jsx)(a.Text, {
           tag: "legend",
           variant: "text-md/semibold",
           color: "header-primary",
-          className: s.title,
+          className: l.title,
           children: p
-        }), g ? (0, r.jsx)(i.Text, {
+        }), h ? (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          id: y,
-          className: s.subtitle,
-          children: b
+          id: m,
+          className: l.subtitle,
+          children: _
         }) : null]
-      }), (0, r.jsx)(i.Kqy, {
+      }), (0, r.jsx)(a.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: f.map((e, t) => (0, r.jsxs)(l.Fragment, {
+        children: f.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(o.Z, {
             node: e
-          }), "separators" === u && t !== f.length - 1 && (0, r.jsx)(a.Z, {})]
+          }), "separators" === u && t !== f.length - 1 && (0, r.jsx)(s.Z, {})]
         }, e.key))
       })]
     })
   })
-})
+}
+let u = Chunk473749.memo(c)

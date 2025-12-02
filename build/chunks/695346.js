@@ -65,11 +65,11 @@ require.d(exports, {
   gw: () => eJ,
   h2: () => $,
   hg: () => e$,
-  iG: () => X,
+  iG: () => Q,
   iH: () => eG,
-  j7: () => eX,
+  j7: () => eQ,
   jU: () => er,
-  kJ: () => Q,
+  kJ: () => X,
   kU: () => ei,
   l4: () => e0,
   lk: () => eW,
@@ -82,7 +82,7 @@ require.d(exports, {
   rR: () => e5,
   tU: () => ev,
   uL: () => B,
-  uh: () => eQ,
+  uh: () => eX,
   vF: () => I,
   vc: () => N,
   x4: () => eS,
@@ -241,7 +241,7 @@ let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
   q = (0, Chunk560997.Zc)("privacy", "defaultMessageRequestRestricted", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
-  Q = (0, Chunk560997.Zc)("privacy", "nonSpamRetrainingOptIn", e => null == e ? true : e.value, e => null == e ? true : o.D5.create({
+  X = (0, Chunk560997.Zc)("privacy", "nonSpamRetrainingOptIn", e => null == e ? true : e.value, e => null == e ? true : o.D5.create({
     value: e
   }));
 (0, Chunk560997.Zc)("privacy", "contactSyncEnabled", e => {
@@ -250,7 +250,7 @@ let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
 }, e => o.D5.create({
   value: e
 }));
-let X = (0, Chunk560997.Zc)("privacy", "defaultGuildsRestricted", e => null != e && e, e => e),
+let Q = (0, Chunk560997.Zc)("privacy", "defaultGuildsRestricted", e => null != e && e, e => e),
   J = (0, Chunk560997.Zc)("privacy", "defaultGuildsRestrictedV2", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
@@ -619,7 +619,7 @@ let eZ = (0, Chunk560997.TG)({
       goreContentNonFriendDm: null != r ? r : a.Q4.UNSET_EXPLICIT_CONTENT_REDACTION
     }
   },
-  eQ = e => {
+  eX = e => {
     let {
       goreContentGuilds: t,
       goreContentFriendDm: n,
@@ -631,7 +631,7 @@ let eZ = (0, Chunk560997.TG)({
       goreContentNonFriendDm: null != r ? r : true
     }
   },
-  eX = (0, Chunk560997.Zc)("textAndImages", "goreContentSettings", eq, eQ),
+  eQ = (0, Chunk560997.Zc)("textAndImages", "goreContentSettings", eq, eX),
   eJ = (0, Chunk560997.Zc)("textAndImages", "keywordFilterSettings", e => {
     let {
       profanity: t,

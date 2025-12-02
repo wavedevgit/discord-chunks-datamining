@@ -219,7 +219,7 @@ function q(e) {
   return K(t)
 }
 
-function Q(e) {
+function X(e) {
   let {
     channel: {
       id: t
@@ -229,7 +229,7 @@ function Q(e) {
   C = v.QZA.CLOSED
 }
 
-function X(e) {
+function Q(e) {
   let {
     overwriteId: t
   } = e;
@@ -289,12 +289,12 @@ let $ = new J(Chunk570140.Z, {
     CHANNEL_SETTINGS_CLOSE: k,
     CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: q,
     CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: q,
-    CHANNEL_SETTINGS_OVERWRITE_SELECT: X,
+    CHANNEL_SETTINGS_OVERWRITE_SELECT: Q,
     CHANNEL_SETTINGS_UPDATE: F,
     CHANNEL_SETTINGS_SET_SECTION: M,
     CHANNEL_SETTINGS_LOADED_INVITES: H,
     CHANNEL_UPDATES: z,
-    CHANNEL_DELETE: Q,
+    CHANNEL_DELETE: X,
     INSTANT_INVITE_REVOKE_SUCCESS: Y,
     INSTANT_INVITE_CREATE_SUCCESS: W
   }),

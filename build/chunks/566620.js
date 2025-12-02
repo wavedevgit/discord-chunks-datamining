@@ -164,7 +164,7 @@ async function el(e) {
       proxyTicket: t
     });
     let r = U.default.getCurrentUser();
-    if (null != r && (0, X.Z)({
+    if (null != r && (0, Q.Z)({
         type: s ? ee.q5t.LAUNCH : ee.q5t.JOIN,
         userId: null == r ? true : r.id,
         guildId: P,
@@ -410,7 +410,7 @@ async function ed(e) {
     let e = (0, q.Z)(p.id),
       n = J.wP.includes(p.type);
     if (e) {
-      if (!await (0, Q.Z)({
+      if (!await (0, X.Z)({
           channelId: p.id,
           bypassChangeModal: null != t
         })) return {
