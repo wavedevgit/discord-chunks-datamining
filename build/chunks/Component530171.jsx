@@ -2,7 +2,7 @@
 /** chunk id: 530171, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => g
+  I: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,62 +16,66 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393903 = require("./393903.js"),
   Chunk206403 = require("./206403.jsx"),
-  Chunk231338 = require("./231338.js"),
   Chunk481446 = require("./481446.js");
 
-function g(e) {
+function h(e) {
   let {
     title: t,
     collapsedSubtitle: n,
     isExpanded: a,
-    onExpandedChange: g,
-    onExpandedChangeComplete: E,
-    children: b,
-    animate: y = true
-  } = e, O = i.useRef(null), [v, S] = i.useState(null), I = i.useRef(null), T = i.useMemo(() => null == E ? m.dG : (0, s.debounce)(e => {
-    null != e.target && E(a)
-  }), [a, E]);
-  (0, p.s)(I, T, [], {
-    enabled: null != E
-  });
-  let A = a && null != v;
+    onExpandedChange: h,
+    onExpandedChangeComplete: g,
+    children: E,
+    animate: b = true
+  } = e, y = i.useRef(null), [O, v] = i.useState(null), S = i.useRef(a), I = i.useRef(false);
+  i.useEffect(() => {
+    S.current !== a && (I.current = true, S.current = a)
+  }, [a]);
+  let T = i.useCallback(e => {
+      null != e.target && I.current && (I.current = false, null == g || g(a))
+    }, [a, g]),
+    A = i.useMemo(() => (0, s.debounce)(T, 50), [T]),
+    C = (0, p.y)(A, [], {
+      enabled: null != g
+    }),
+    N = a && null != O;
   return i.useLayoutEffect(() => {
-    null != O.current && null == v && S(O.current.clientHeight)
-  }, [v]), (0, r.jsxs)(l.pJ, {
-    ref: I,
+    null != y.current && null == O && v(y.current.clientHeight)
+  }, [O]), (0, r.jsxs)(l.pJ, {
+    ref: C,
     isExpanded: a,
-    onExpandedChange: g,
+    onExpandedChange: h,
     children: [(0, r.jsx)(_.x, {
-      ref: O,
-      style: null != v ? {
-        minHeight: v
+      ref: y,
+      style: null != O ? {
+        minHeight: O
       } : true,
       title: t,
-      description: A ? true : n,
+      description: N ? true : n,
       secondaryTrailingElement: (0, r.jsx)(f.tEY, {
         children: (0, r.jsx)(c.z, {
           slot: "trigger",
-          className: h.triggerButton,
+          className: m.triggerButton,
           children: (0, r.jsx)(u.sXD, {
-            className: o()(h.icon, {
-              [h.iconClosed]: !a
+            className: o()(m.icon, {
+              [m.iconClosed]: !a
             }),
             color: d.Z.colors.ICON_LINK
           })
         })
       }),
-      onClick: () => g(!a),
+      onClick: () => h(!a),
       headingColor: "text-link"
     }), (0, r.jsx)(l.V2, {
-      className: o()(h.panel, {
-        [h.disablePanelAnimation]: !y
+      className: o()(m.panel, {
+        [m.disablePanelAnimation]: !b
       }),
       children: (0, r.jsx)(f.Kqy, {
         gap: 16,
         padding: {
           top: 16
         },
-        children: b
+        children: E
       })
     })]
   })

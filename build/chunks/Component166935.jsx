@@ -2,7 +2,8 @@
 /** chunk id: 166935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => y
+  G: () => b,
+  f: () => O
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -57,6 +58,10 @@ function E(e, t) {
 }
 
 function b(e) {
+  return i.Children.toArray(e).filter(Boolean).length > 0
+}
+
+function y(e) {
   return "string" == typeof e ? (0, r.jsx)(p.x, {
     variant: "text-md/normal",
     color: "text-secondary",
@@ -64,36 +69,44 @@ function b(e) {
   }) : e
 }
 
-function y(e) {
+function O(e) {
   let {
     controls: t,
     children: n,
     listProps: i
   } = e;
-  if (null == n && null == t && null == i) return null;
-  let a = b(n);
-  return (0, r.jsx)(O, {
+  if (!b(n) && null == t && null == i) return null;
+  let a = y(n);
+  return (0, r.jsx)(v, {
     controls: t,
     children: a,
     listProps: i
   })
 }
 
-function O(e) {
+function v(e) {
   var t, n;
   let {
     controls: a,
     children: s,
     listProps: p
-  } = e, [m, g] = i.useState(false), [b, y] = i.useState(null != p), O = i.useRef(null), v = (0, c.Z)(O, null == p ? true : p.ref), S = i.useRef(null), I = l()(() => {
+  } = e, [m, g] = i.useState(false), [b, y] = i.useState(null != p), O = i.useRef(null), v = (0, c.Z)(O, null == p ? true : p.ref), S = i.useRef(null), I = i.useRef(true);
+  i.useEffect(() => (I.current = l()(() => {
     var e;
     (null == O ? true : O.current) != null && null != a && g((null == (e = O.current) ? true : e.getDistanceFromTop()) > 12)
-  }, 200), T = null != p;
+  }, 200), () => {
+    var e;
+    null == (e = I.current) || e.cancel()
+  }), [a]);
+  let T = i.useCallback(() => {
+      null != I.current && I.current()
+    }, [I]),
+    A = null != p;
   return i.useLayoutEffect(() => {
     var e, t;
     let n = new ResizeObserver(() => {
         var e, t;
-        if (T) return void y(true);
+        if (A) return void y(true);
         let n = null != (t = null == O || null == (e = O.current) ? true : e.getScrollerNode()) ? t : null;
         if (null == n || (null == S ? true : S.current) == null) return;
         let r = n.getBoundingClientRect();
@@ -101,7 +114,7 @@ function O(e) {
       }),
       r = null != (t = null == O || null == (e = O.current) ? true : e.getScrollerNode()) ? t : null;
     return null != r && n.observe(r), (null == S ? true : S.current) != null && n.observe(S.current), () => n.disconnect()
-  }, [T]), (0, r.jsxs)(u.y, {
+  }, [A]), (0, r.jsxs)(u.y, {
     children: [(0, r.jsx)("div", {
       className: o()(_.bodySpacerTop, {
         [_.bodySpacerTopBorder]: b && null == a
@@ -118,12 +131,12 @@ function O(e) {
       ref: v,
       onScroll: e => {
         var t;
-        I(), null == (t = p.onScroll) || t.call(p, e)
+        T(), null == (t = p.onScroll) || t.call(p, e)
       }
     })) : (0, r.jsx)(f.yW, {
       ref: O,
       className: _.body,
-      onScroll: I,
+      onScroll: T,
       children: (0, r.jsx)("main", {
         ref: S,
         className: o()(_.bodyInner, {

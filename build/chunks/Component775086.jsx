@@ -82,7 +82,7 @@ function m(e) {
     listProps: E,
     children: b
   } = e, y = p(e, ["size", "title", "subtitle", "input", "preview", "actions", "actionBarInput", "actionBarInputLayout", "listProps", "children"]);
-  let O = null != t ? t : null != d || null != b || null != E ? "md" : "sm";
+  let O = null != t ? t : null != d || (0, o.G)(b) || null != E ? "md" : "sm";
   return (0, r.jsxs)(i.I, f(u({}, y), {
     size: O,
     children: [(0, r.jsx)(l.x, {
