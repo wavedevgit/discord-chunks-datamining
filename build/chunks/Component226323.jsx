@@ -214,9 +214,9 @@ function A(e) {
     voiceStates: t,
     channel: n,
     className: l
-  } = e, [o, u] = i.useState(false), d = (0, s.e7)([O.default], () => O.default.getId()), {
-    containerRef: h,
-    maxVisibleAvatars: g
+  } = e, [u, d] = i.useState(false), h = (0, s.e7)([O.default], () => O.default.getId()), {
+    containerRef: g,
+    maxVisibleAvatars: m
   } = function(e) {
     let [t, n] = i.useState(7), r = (0, f.Z)(() => {
       let t = null == l ? true : l.current;
@@ -231,39 +231,41 @@ function A(e) {
       containerRef: l,
       maxVisibleAvatars: t
     }
-  }(t.length - 1), [m, _] = function(e, t, n) {
+  }(t.length - 1), [_, b] = function(e, t, n) {
     let r = [];
     for (let i of e)
       if (i.user.id !== t && !r.some(e => e.user.id === i.user.id)) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, d, g), b = o ? c.V_R : c.qJs, E = (0, r.jsx)(c.M0o, {
-    onClick: () => u(!o),
-    color: c.YX$.PRIMARY,
-    size: c.tT7.SIZE_24,
-    tooltip: o ? C.intl.string(C.t["Z/Tya5"]) : C.intl.string(C.t.XR5BAc),
-    icon: (0, r.jsx)(b, {
-      size: "xs",
-      color: "currentColor"
-    }),
-    focusProps: j
-  }), v = _ && o ? t : m;
-  return v.length <= 0 ? null : (0, r.jsx)(c.zJl, {
+  }(t, h, m), E = u ? c.V_R : c.qJs, v = u ? C.intl.string(C.t["Z/Tya5"]) : C.intl.string(C.t.XR5BAc), y = (0, r.jsx)(o.u, {
+    text: v,
+    ariaHidden: true,
+    children: (0, r.jsx)(c.hU, {
+      "aria-label": v,
+      onClick: () => d(!u),
+      icon: () => (0, r.jsx)(E, {
+        size: "md"
+      }),
+      variant: "icon-only",
+      size: "sm"
+    })
+  }), I = b && u ? t : _;
+  return I.length <= 0 ? null : (0, r.jsx)(c.zJl, {
     className: a()(S.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
-      ref: h,
-      className: a()(S.voiceUsers, !o && S.collapsed),
+      ref: g,
+      className: a()(S.voiceUsers, !u && S.collapsed),
       role: "group",
       "aria-label": C.intl.string(C.t["/ZgaVU"]),
-      children: [v.map(e => {
+      children: [I.map(e => {
         let {
           user: t,
           nick: i,
           voiceState: l
         } = e;
-        return t.id !== d ? (0, r.jsx)(x, {
+        return t.id !== h ? (0, r.jsx)(x, {
           channel: n,
           user: t,
           nick: i,
@@ -273,7 +275,7 @@ function A(e) {
           serverMute: l.mute,
           serverDeaf: l.deaf
         }, t.id) : null
-      }), _ ? E : null]
+      }), b ? y : null]
     })
   })
 }
