@@ -25,8 +25,8 @@ function h(e) {
     guildId: x,
     page: m
   } = e, {
-    ref: v,
-    width: C
+    ref: C,
+    width: v
   } = (0, o.ZP)(), k = (0, d.oR)(), {
     analyticsLocations: j
   } = (0, s.ZP)(), b = i.useRef(null), {
@@ -36,13 +36,13 @@ function h(e) {
       [],
       []
     ];
-    let e = Math.round(null != C ? C : 0);
+    let e = Math.round(null != v ? v : 0);
     return (null == m ? true : m.leaderboard) == null || null == e || e < 564 ? [
       [], m.skuIds
     ] : e < 1104 ? m.skuIds.length >= 2 ? [
       [], m.skuIds
     ] : [m.skuIds.slice(0, 1), m.skuIds.slice(1)] : [m.skuIds.slice(0, 2), m.skuIds.slice(2)]
-  }, [m, C]), E = 1 === L.length && null != C && C >= 834;
+  }, [m, v]), E = 1 === L.length && null != v && v >= 834;
   return (i.useEffect(() => {
     let {
       sessionId: e,
@@ -65,7 +65,7 @@ function h(e) {
     ref: b,
     onScroll: S,
     children: (0, l.jsxs)("section", {
-      ref: v,
+      ref: C,
       className: f.container,
       children: [(0, l.jsx)(g.n, {
         applicationId: h,

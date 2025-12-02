@@ -144,7 +144,11 @@ function W(e) {
     return 0 === n && 0 === r ? "none" : "linear-gradient(to top, ".concat(e, " ").concat(F + n, "%, ").concat(t, " ").concat(F + r, "%)")
   }, [eb, Q]), ev = i.useCallback(() => {
     ep(j.rZ.WISHLIST_BUTTON)
-  }, [ep]), eS = i.useCallback(e => {
+  }, [ep]), eS = i.useCallback(() => {
+    (0, N.eagerNavigateToSocialLayerStorefront)({
+      guildId: J
+    })
+  }, [J]), eI = i.useCallback(e => {
     if (ep(j.rZ.CARD), null != $) return void $(e);
     null != J && (0, N.default)({
       guildId: J,
@@ -154,14 +158,15 @@ function W(e) {
     })
   }, [ep, J, eh, X, null == er ? true : er.slug, $]);
   if (null == er) return null;
-  let eI = (0, T.Do)(er);
+  let eT = (0, T.Do)(er);
   return (0, r.jsx)(p.$, {
     innerRef: en,
     onChange: ef,
     threshold: 0,
     children: (0, r.jsx)(d.tEY, {
       children: (0, r.jsxs)(_.kL8, {
-        onClick: eS,
+        onClick: eI,
+        onMouseDown: eS,
         onMouseEnter: eu,
         onMouseLeave: ed,
         className: l()(G.card, {
@@ -182,10 +187,10 @@ function W(e) {
           sku: er,
           isCardHovered: eo,
           onClick: ev
-        }), null != eI ? (0, r.jsx)(w.p, {
+        }), null != eT ? (0, r.jsx)(w.p, {
           containerClassName: G.cardImageContainer,
           foregroundImageClassName: G.cardImage,
-          cardImage: eI,
+          cardImage: eT,
           altText: er.name,
           shape: "custom",
           backgroundImageClassName: G.cardBackgroundImage,

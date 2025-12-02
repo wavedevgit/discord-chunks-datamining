@@ -53,12 +53,10 @@ let f = {},
 function _(e) {
   let {
     guildId: t
-  } = e;
-  p[t] = {
-    storefront: null,
-    state: "loading",
-    fetchedAt: null
-  }, p = c({}, p)
+  } = e, n = p[t];
+  p[t] = d(c({}, n), {
+    state: "loading"
+  }), p = c({}, p)
 }
 
 function m(e) {
@@ -91,13 +89,20 @@ function h(e) {
 
 function g(e) {
   let {
-    guildId: t
+    guildId: t,
+    eager: n
   } = e;
-  p[t] = {
+  if (n) {
+    let e = p[t];
+    (null == e ? true : e.state) === "loading" && (null == e ? true : e.storefront) != null ? p[t] = d(c({}, e), {
+      state: "fetched"
+    }) : delete p[t]
+  } else p[t] = {
     storefront: null,
     state: "error",
-    fetchedAt: null
-  }, p = c({}, p)
+    fetchedAt: Date.now()
+  };
+  p = c({}, p)
 }
 
 function E(e) {

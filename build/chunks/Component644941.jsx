@@ -292,7 +292,7 @@ let et = e => {
   } = (0, I.ZP)(), h = (0, u.e7)([N.default], () => N.default.locale), v = i.useMemo(() => (0, A.fP)(), []), j = (0, u.Wu)([G.Z], () => {
     var e;
     return (null != (e = G.Z.getSimilarGames(n)) ? e : []).slice(0, 25)
-  }), [E, w] = i.useState(null), P = (0, Z.N)(n), [S, C] = i.useState(null), k = (0, _.q)(n), L = (0, u.e7)([O.Z], () => O.Z.getGame(n)), R = null != (t = null == L ? true : L.name) ? t : null == k ? true : k.name, D = (e, t) => {
+  }), [E, w] = i.useState(null), P = (0, M.N)(n), [S, C] = i.useState(null), k = (0, _.q)(n), L = (0, u.e7)([O.Z], () => O.Z.getGame(n)), R = null != (t = null == L ? true : L.name) ? t : null == k ? true : k.name, D = (e, t) => {
     var a;
     (0, A.UE)({
       gameName: null != R ? R : "",
@@ -344,7 +344,7 @@ let et = e => {
       gameName: null != R ? R : "",
       playedFriendIds: P.map(e => e.author_id),
       playedFriendsData: a,
-      similarGames: j.filter(M.z6).slice(0, 5),
+      similarGames: j.filter(Z.z6).slice(0, 5),
       officialGuildId: null == S || null == (e = S.guild) ? true : e.id
     })
   }), null == L || null == k) ? null : (0, a.jsx)(g.Y0X, {

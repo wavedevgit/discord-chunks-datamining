@@ -1,7 +1,7 @@
 /** Chunk was on 45227 **/
 /** chunk id: 152242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  jM: () => L
+  jM: () => W
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -38,7 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk397263 = require("./397263.js");
-let L = {
+let W = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
   renderStep: e => (0, i.jsx)(R, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -97,7 +97,7 @@ function R(e) {
     giftRecipient: S,
     emojiConfetti: T,
     soundEffect: O,
-    setEmojiConfetti: L,
+    setEmojiConfetti: W,
     setSoundEffect: R,
     giftingOrigin: H
   } = (0, g.wD)(), {
@@ -108,7 +108,7 @@ function R(e) {
         location: "Slayer Storefront Gift Customization Step"
       }),
       n = function(e) {
-        let t = (0, s.e7)([b.Z], () => b.Z.isConnected() ? b.Z.getChannelId() : null),
+        let t = (0, s.e7)([j.Z], () => j.Z.isConnected() ? j.Z.getChannelId() : null),
           [n, i] = l.useState([]);
         return l.useEffect(() => {
           let n = null != t ? c.Z.getParticipants(t) : [],
@@ -125,35 +125,35 @@ function R(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(h.C3, {
       children: (0, i.jsxs)("div", {
-        className: W.stepBody,
+        className: L.stepBody,
         children: [(0, i.jsxs)("div", {
-          className: W.bodyColumnLeft,
+          className: L.bodyColumnLeft,
           children: [null != V && (0, i.jsx)(k.p, {
-            containerClassName: W.skuCardImage,
+            containerClassName: L.skuCardImage,
             cardImage: V,
             cardBackgroundImage: z,
             altText: null != (t = null == q ? true : q.name) ? t : "",
             shape: "square"
           }), (0, i.jsxs)("div", {
-            className: W.giftEffectsContainer,
-            children: [(0, i.jsx)(j.Z, {
+            className: L.giftEffectsContainer,
+            children: [(0, i.jsx)(_.Z, {
               sound: O,
               onSelect: e => {
                 null != R && R(null == e ? true : e)
               }
             }), (0, i.jsx)(v.Z, {
-              setEmojiConfetti: L,
+              setEmojiConfetti: W,
               emojiConfetti: null == T ? true : T
             })]
           })]
         }), (0, i.jsxs)("div", {
-          className: W.bodyColumnRight,
-          children: [null != S && (H === G.Wt.USER_PROFILE_WISHLIST || H === G.Wt.DM_CHANNEL_WISHLIST) ? (0, i.jsx)(_.s, {
+          className: L.bodyColumnRight,
+          children: [null != S && (H === G.Wt.USER_PROFILE_WISHLIST || H === G.Wt.DM_CHANNEL_WISHLIST) ? (0, i.jsx)(b.s, {
             giftRecipient: S
           }) : (0, i.jsx)(d.Z, {
             selectedSkuId: F,
             validateSelectedGift: X,
-            searchableSelectWrapperClassName: W.recipientPickerSelectWrapper,
+            searchableSelectWrapperClassName: L.recipientPickerSelectWrapper,
             recipients: J
           }), (0, i.jsx)(x.Z, {
             sectionTitle: A.intl.string(A.t.B3miE8),
@@ -161,30 +161,30 @@ function R(e) {
             pendingText: p,
             currentText: p,
             disableThemedBackground: true,
-            className: W.customGiftMessageWrapper,
-            innerClassName: W.customGiftMessage
+            className: L.customGiftMessageWrapper,
+            innerClassName: L.customGiftMessage
           }), (() => {
             var e, t, n, l;
             if (null == q) return null;
             let a = (0, w.T4)(null != (n = null == (e = q.price) ? true : e.amount) ? n : 0, null != (l = null == (t = q.price) ? true : t.currency) ? l : M.pK.USD);
             return (0, i.jsxs)("div", {
-              className: W.giftPreviewContainer,
+              className: L.giftPreviewContainer,
               children: [(0, i.jsx)(o.vwX, {
-                className: W.giftPreviewTitle,
+                className: L.giftPreviewTitle,
                 children: A.intl.string(A.t.PpoJzt)
               }), (0, i.jsxs)("div", {
-                className: W.giftPreviewContent,
+                className: L.giftPreviewContent,
                 children: [(0, i.jsx)("div", {
-                  className: W.giftPreviewImageContainer,
+                  className: L.giftPreviewImageContainer,
                   children: null != q && null != V && (0, i.jsx)(k.p, {
-                    containerClassName: W.giftPreviewCardContainer,
+                    containerClassName: L.giftPreviewCardContainer,
                     cardImage: V,
                     cardBackgroundImage: z,
                     altText: q.name,
                     shape: "square"
                   })
                 }), (0, i.jsxs)("div", {
-                  className: W.giftPreviewTextContainer,
+                  className: L.giftPreviewTextContainer,
                   children: [null != U && (0, i.jsx)(N.e, {
                     application: U
                   }), (0, i.jsx)(o.Text, {
@@ -209,7 +209,7 @@ function R(e) {
         "data-migration-pending": true,
         justify: f.Z.Justify.BETWEEN,
         align: f.Z.Align.CENTER,
-        className: W.footer,
+        className: L.footer,
         children: (0, i.jsx)(B, {
           onStepChange: n,
           onBackClick: a,
@@ -224,23 +224,28 @@ function D(e) {
   let {
     handleClose: t,
     guild: n,
-    sku: l
-  } = e;
+    sku: a
+  } = e, r = l.useCallback(() => {
+    (0, T.eagerNavigateToSocialLayerStorefront)({
+      guildId: n.id
+    })
+  }, [n.id]), s = l.useCallback(() => {
+    var e;
+    t();
+    let i = null == (e = S.Z.getStorefrontState(n.id)) ? true : e.activePage;
+    window.location.pathname.includes(O.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, a.id)) || ((0, o.pTH)(), (0, T.default)({
+      guildId: n.id,
+      pageIndex: null != i ? i : 0,
+      skuId: a.id,
+      slug: a.slug
+    }))
+  }, [n.id, a.id, a.slug, t]);
   return (0, i.jsx)("div", {
-    className: W.viewItemButton,
+    className: L.viewItemButton,
     children: (0, i.jsx)(o.Avr, {
       text: n.id === (0, y.ac)() ? A.intl.string(A.t.nyIcya) : A.intl.string(A.t.ImioFL),
-      onClick: function() {
-        var e;
-        t();
-        let i = null == (e = S.Z.getStorefrontState(n.id)) ? true : e.activePage;
-        window.location.pathname.includes(O.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, l.id)) || ((0, o.pTH)(), (0, T.default)({
-          guildId: n.id,
-          pageIndex: null != i ? i : 0,
-          skuId: l.id,
-          slug: l.slug
-        }))
-      },
+      onMouseDown: r,
+      onClick: s,
       textVariant: "text-sm/medium",
       lineClamp: true
     })

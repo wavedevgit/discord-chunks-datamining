@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
@@ -17,49 +17,50 @@ let d = Chunk473749.forwardRef(function(e, t) {
     children: i,
     onContextMenu: l,
     onClick: d,
-    disabled: p,
-    icon: f,
-    iconForeground: m,
-    innerClassName: b,
-    className: y,
-    redGlow: O,
-    orangeGlow: v,
-    tooltipClassName: g,
-    onMouseEnter: h,
-    onMouseLeave: j,
-    "aria-label": x,
-    "aria-checked": N,
-    role: S,
-    tooltipColor: P,
-    tooltipForceOpen: C,
-    tooltipContentClassName: w,
-    tooltipPositionKeyStemOverride: E,
-    tooltipShouldShow: T,
-    plated: Z
-  } = e, M = "function" == typeof f ? (0, r.jsx)(f, {
+    onMouseDown: p,
+    disabled: f,
+    icon: m,
+    iconForeground: b,
+    innerClassName: y,
+    className: O,
+    redGlow: v,
+    orangeGlow: g,
+    tooltipClassName: h,
+    onMouseEnter: j,
+    onMouseLeave: x,
+    "aria-label": N,
+    "aria-checked": S,
+    role: P,
+    tooltipColor: C,
+    tooltipForceOpen: w,
+    tooltipContentClassName: E,
+    tooltipPositionKeyStemOverride: T,
+    tooltipShouldShow: Z,
+    plated: M
+  } = e, I = "function" == typeof m ? (0, r.jsx)(m, {
     width: 20,
     height: 20,
     size: "custom",
-    colorClass: null != m ? m : "",
+    colorClass: null != b ? b : "",
     color: "currentColor"
-  }) : f;
+  }) : m;
   return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
-    tooltipClassName: g,
+    tooltipClassName: h,
     text: n,
-    "aria-label": x,
-    color: P,
-    tooltipContentClassName: w,
-    forceOpen: C,
-    shouldShow: T,
-    positionKeyStemOverride: E,
+    "aria-label": N,
+    color: C,
+    tooltipContentClassName: E,
+    forceOpen: w,
+    shouldShow: Z,
+    positionKeyStemOverride: T,
     children: e => {
       var n, s, {
-          onClick: f,
-          onMouseEnter: m,
-          onMouseLeave: g
+          onClick: m,
+          onMouseEnter: b,
+          onMouseLeave: h
         } = e,
-        x = function(e, t) {
+        N = function(e, t) {
           if (null == e) return {};
           var n, r, i = function(e, t) {
             if (null == e) return {};
@@ -74,7 +75,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
           }
           return i
         }(e, ["onClick", "onMouseEnter", "onMouseLeave"]);
-      return (0, r.jsxs)(o.zx, (n = function(e) {
+      return (0, r.jsxs)(a.zx, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -93,33 +94,34 @@ let d = Chunk473749.forwardRef(function(e, t) {
         return e
       }({
         "data-migration-pending": true
-      }, x), s = s = {
+      }, N), s = s = {
         buttonRef: t,
-        look: o.zx.Looks.BLANK,
-        size: o.zx.Sizes.NONE,
-        disabled: p,
-        innerClassName: b,
-        wrapperClassName: a()(u.button, y),
-        className: a()(u.button, y, {
-          [u.redGlow]: O,
-          [u.orangeGlow]: v,
-          [u.disabled]: p,
-          [u.enabled]: !p,
-          [u.plated]: Z,
-          [u.plateMuted]: O && Z
+        look: a.zx.Looks.BLANK,
+        size: a.zx.Sizes.NONE,
+        disabled: f,
+        innerClassName: y,
+        wrapperClassName: o()(u.button, O),
+        className: o()(u.button, O, {
+          [u.redGlow]: v,
+          [u.orangeGlow]: g,
+          [u.disabled]: f,
+          [u.enabled]: !f,
+          [u.plated]: M,
+          [u.plateMuted]: v && M
         }),
         onClick: e => {
-          null != f && f(), null != d && d(e)
+          null != m && m(), null != d && d(e)
         },
+        onMouseDown: p,
         onMouseEnter: () => {
-          null == m || m(), null == h || h()
+          null == b || b(), null == j || j()
         },
         onMouseLeave: () => {
-          null == g || g(), null == j || j()
+          null == h || h(), null == x || x()
         },
         onContextMenu: l,
-        role: S,
-        "aria-checked": N,
+        role: P,
+        "aria-checked": S,
         focusProps: {
           offset: {
             left: false,
@@ -132,8 +134,8 @@ let d = Chunk473749.forwardRef(function(e, t) {
           width: 20,
           height: 20,
           mask: c.ZP.Masks.PANEL_BUTTON,
-          children: M
-        }) : M, i]
+          children: I
+        }) : I, i]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

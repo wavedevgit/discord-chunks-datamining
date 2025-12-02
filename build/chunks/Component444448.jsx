@@ -1,7 +1,7 @@
 /** Chunk was on 45227 **/
 /** chunk id: 444448, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => _
+  d: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,29 +21,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk216215 = require("./216215.js");
 
-function _(e) {
+function b(e) {
   var t;
   let {
     handleClose: n
   } = e, {
     analyticsLocations: a
   } = (0, c.ZP)(), {
-    skusById: _,
-    selectedSkuId: j,
-    application: b
+    skusById: b,
+    selectedSkuId: _,
+    application: j
   } = (0, u.JL)(), {
     isGift: I,
     giftRecipient: P
   } = (0, d.wD)();
-  r()(null != j, "Expected selectedSkuId"), r()(null != b, "Expected application");
-  let w = _[j];
+  r()(null != _, "Expected selectedSkuId"), r()(null != j, "Expected application");
+  let w = b[_];
   return (r()(null != w, "Expected sku"), l.useEffect(() => {
     I || ((0, h.U)(), n(), (0, p.I)({
       sku: w,
-      application: b,
+      application: j,
       analyticsLocations: a
     }))
-  }, [I, w, b, n, a]), I) ? (0, i.jsxs)(f.C3, {
+  }, [I, w, j, n, a]), I) ? (0, i.jsxs)(f.C3, {
     children: [(0, i.jsx)(m.Z, {}), (0, i.jsx)(g.Z, {}), (0, i.jsxs)("div", {
       className: C.confirmation,
       children: [(0, i.jsx)(x.A, {

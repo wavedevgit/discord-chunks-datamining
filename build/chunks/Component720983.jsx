@@ -61,7 +61,7 @@ function N(e) {
   }, [Z]), M = i.useCallback(() => {
     f.default.track(k.rMx.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED, {
       slayer_storefront_session_id: null == R ? true : R.sessionId,
-      cta_type: C.US.LEARN_MORE,
+      cta_type: v.US.LEARN_MORE,
       location_stack: T
     }), window.open(h.Z.getArticleURL(k.BhN.SOCIAL_LAYER_STOREFRONT))
   }, [R, T]);
@@ -74,7 +74,7 @@ function N(e) {
     className: S.headerContainer,
     children: [(0, l.jsxs)(s.P3F, {
       onClick: () => {
-        (0, v.default)({
+        (0, C.default)({
           guildId: n,
           pageIndex: 0
         })
@@ -91,7 +91,7 @@ function N(e) {
       className: S.titles,
       children: t.pages.map((e, t) => (0, l.jsx)(g.Z.Title, {
         onClick: () => {
-          (0, v.default)({
+          (0, C.default)({
             guildId: n,
             pageIndex: t
           })

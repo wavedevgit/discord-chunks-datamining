@@ -35,7 +35,7 @@ function E(e) {
     guildId: t,
     selectedPageIndex: a,
     selectedSku: o
-  } = e, s = (0, C.oR)(), r = i.useRef(s);
+  } = e, s = (0, v.oR)(), r = i.useRef(s);
   return i.useEffect(() => {
     r.current = s
   }, [s]), i.useEffect(() => {
@@ -100,17 +100,17 @@ function Z(e) {
       pageHasLeaderboard: G
     }), [y, S, P, w, O, G]);
   return (i.useEffect(() => {
-    null != S && (0, v.m0)(S, P, null != Z ? Z : null)
+    null != S && (0, C.m0)(S, P, null != Z ? Z : null)
   }, [S, P, Z]), i.useEffect(() => {
     null != S && null != A && null == h.Z.getGuild(S) && (0, m.Ub)(S, {}, {
       shouldNavigate: false
     })
-  }, [S, A]), (null == T ? true : T.state) !== "fetched" && (null == T ? true : T.state) !== "error" || null == S || (null == T ? true : T.storefront) == null) ? (0, l.jsx)("div", {
+  }, [S, A]), null == S || (null == T ? true : T.storefront) == null) ? (0, l.jsx)("div", {
     className: o()(N.spinner, N.container),
     children: (0, l.jsx)(d.$jN, {})
   }) : (0, l.jsx)(g.Gt, {
     value: R,
-    children: (0, l.jsx)(C.hL, {
+    children: (0, l.jsx)(v.hL, {
       newValue: B,
       children: (0, l.jsx)(E, {
         storefront: T.storefront,

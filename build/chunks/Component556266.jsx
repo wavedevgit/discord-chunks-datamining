@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk152242 = require("./152242.jsx"),
   Chunk231338 = require("./231338.js");
 
-function j(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,7 +40,7 @@ function j(e) {
   }
   return e
 }
-let b = function() {
+let j = function() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return (t, n, l) => (0, i.jsx)(v.Z, {
     step: l,
@@ -66,7 +66,7 @@ function I(e) {
     onComplete: n,
     applicationId: a,
     skuId: o,
-    renderHeader: b(d),
+    renderHeader: j(d),
     initialPlanId: null,
     analyticsObject: s,
     analyticsLocations: u,
@@ -80,7 +80,7 @@ function P(e) {
     applicationId: n,
     skuId: f,
     analyticsLocations: v,
-    isGift: b = false,
+    isGift: j = false,
     giftRecipient: P,
     giftingOrigin: w
   } = e, {
@@ -96,20 +96,20 @@ function P(e) {
         let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
         return [g.WA, ...e ? [C.jM] : [], g.s2, ...g.yp, g.wo, {
           key: d.h8.CONFIRM,
-          renderStep: e => (0, i.jsx)(x.d, j({}, e))
+          renderStep: e => (0, i.jsx)(x.d, _({}, e))
         }]
-      }(b),
+      }(j),
       applicationId: n,
       skuIDs: [f],
       activeSubscription: null,
-      purchaseType: _.GZ.ONE_TIME,
-      isGift: b,
+      purchaseType: b.GZ.ONE_TIME,
+      isGift: j,
       children: (0, i.jsx)(u.c1, {
         children: (0, i.jsx)(o.KB, {
-          isGift: b,
+          isGift: j,
           giftRecipient: P,
           giftingOrigin: w,
-          children: (0, i.jsx)(I, j({}, e))
+          children: (0, i.jsx)(I, _({}, e))
         })
       })
     })

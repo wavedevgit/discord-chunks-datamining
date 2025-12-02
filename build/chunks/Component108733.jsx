@@ -19,6 +19,10 @@ function u(e) {
     trackClick: m,
     closeModal: g
   } = e, f = i.useCallback(() => {
+    (null == u ? true : u.guild) != null && (0, s.eagerNavigateToSocialLayerStorefront)({
+      guildId: u.guild.id
+    })
+  }, [u]), p = i.useCallback(() => {
     (null == u ? true : u.guild) != null && ((0, s.default)({
       invite: u
     }), g(), m(o.as.GameShop))
@@ -27,7 +31,8 @@ function u(e) {
     variant: "primary",
     text: (null == u || null == (n = u.guild) ? true : n.id) === (0, l.ac)() ? d.intl.string(d.t.WTXyEQ) : d.intl.string(d.t.v8UpgE),
     icon: r.EOn,
-    onClick: f,
+    onClick: p,
+    onMouseDown: f,
     fullWidth: true
   }) : null
 }
