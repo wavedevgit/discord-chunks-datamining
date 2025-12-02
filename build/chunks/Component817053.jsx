@@ -77,6 +77,7 @@ function f(e) {
     gameName: g
   }), N = e => f ? e : (0, i.jsx)(s.u, {
     text: g,
+    ariaHidden: true,
     children: e
   });
   return N(null == j ? (0, i.jsx)(c.tEY, {

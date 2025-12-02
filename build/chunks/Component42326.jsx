@@ -22,8 +22,8 @@ function g(e) {
     errorMessage: t,
     className: n,
     avError: l
-  } = e, g = i.useRef(null), b = "", {
-    text: v,
+  } = e, g = i.useRef(null), v = "", {
+    text: b,
     node: h
   } = function(e) {
     var t;
@@ -47,7 +47,7 @@ function g(e) {
       }) : l
     }
   }(l);
-  b = null != v ? "".concat(t, " ").concat(v) : t;
+  v = null != b ? "".concat(t, " ").concat(b) : t;
   let [E] = i.useState(new o.V7), [y, S] = i.useState(false), [O, C] = i.useState(false), w = i.useCallback(() => {
     E.start(250, () => {
       S(false)
@@ -56,7 +56,7 @@ function g(e) {
     E.stop(), S(true)
   }, [E, S]), P = i.useCallback(() => {
     C(true)
-  }, []), j = i.useCallback(() => {
+  }, []), x = i.useCallback(() => {
     C(false)
   }, []);
   return (0, r.jsx)(c.yRy, {
@@ -103,9 +103,9 @@ function g(e) {
             onMouseEnter: I,
             onMouseLeave: w,
             onFocus: P,
-            onBlur: j,
+            onBlur: x,
             className: a()(n, _.root),
-            "aria-label": b
+            "aria-label": v
           }, e), i = i = {
             children: (0, r.jsx)(c.Mgn, {
               size: "custom",

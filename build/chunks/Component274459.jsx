@@ -1,11 +1,11 @@
 /** Chunk was on 46931 **/
 /** chunk id: 274459, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk666917 = require("./666917.js"),
+  Chunk253179 = require("./253179.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -18,14 +18,14 @@ let p = 6 * Chunk70956.Z.Millis.SECOND,
   _ = 2 * Chunk70956.Z.Millis.SECOND,
   g = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
 
-function b(e) {
+function v(e) {
   let {
     userId: t,
     voiceChannelEffect: n,
     onComplete: u
   } = e, {
-    emoji: b,
-    sentAt: v
+    emoji: v,
+    sentAt: b
   } = n, h = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [E, y] = i.useState(true), S = !h, O = (0, o.Yzy)(E, {
     from: {
       rotate: false
@@ -46,12 +46,12 @@ function b(e) {
   });
   return (i.useEffect(() => {
     let e;
-    return Date.now() - v >= _ ? (0, d.H)(t) : e = setTimeout(() => {
+    return Date.now() - b >= _ ? (0, d.H)(t) : e = setTimeout(() => {
       y(false), S && (0, d.H)(t)
     }, S ? m : p), () => {
       null != e && clearTimeout(e)
     }
-  }, [v, t, S]), S) ? null : O((e, t) => {
+  }, [b, t, S]), S) ? null : O((e, t) => {
     var n;
     let {
       rotate: i
@@ -63,9 +63,9 @@ function b(e) {
       },
       children: (0, r.jsx)(c.Z, {
         className: f.voiceChannelEffectEmoji,
-        emojiId: b.id,
-        emojiName: b.name,
-        animated: null != (n = b.animated) && n
+        emojiId: v.id,
+        emojiName: v.name,
+        animated: null != (n = v.animated) && n
       })
     })
   })

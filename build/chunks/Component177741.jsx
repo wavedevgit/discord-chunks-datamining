@@ -9,7 +9,7 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   d = require.n(Chunk120356),
-  Chunk666917 = require("./666917.js"),
+  Chunk253179 = require("./253179.js"),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk481060 = require("./481060.js"),
@@ -133,10 +133,10 @@ function H() {
         src: exports,
         type: Chunk601046
       })
-    }), (0, Chunk54381.jsx)(Chunk666917.animated.div, {
+    }), (0, Chunk54381.jsx)(Chunk253179.animated.div, {
       className: Chunk577562.gadientHighlight,
       style: O
-    }), (0, Chunk54381.jsx)(Chunk666917.animated.div, {
+    }), (0, Chunk54381.jsx)(Chunk253179.animated.div, {
       className: Chunk577562.swipeWrapper,
       style: v,
       children: (0, Chunk54381.jsxs)("svg", {

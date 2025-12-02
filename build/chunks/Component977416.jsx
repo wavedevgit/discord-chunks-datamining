@@ -48,9 +48,11 @@ function h(e) {
     className: m.loadingCover
   }) : (0, r.jsx)(o.u, {
     text: h,
+    ariaHidden: true,
     children: (0, r.jsxs)(c.P3F, {
       className: b.addButton,
       onClick: a,
+      "aria-label": h,
       children: [(0, r.jsx)(f.Z, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

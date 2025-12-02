@@ -64,6 +64,7 @@ function b(e) {
       buttons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.u, {
           text: m.intl.string(m.t.WAI6xu),
+          ariaHidden: true,
           children: (0, r.jsx)(o.Yd2, {
             variant: "secondary",
             size: "sm",
@@ -75,6 +76,7 @@ function b(e) {
           })
         }), (0, r.jsx)(l.u, {
           text: m.intl.string(m.t["lBG2s/"]),
+          ariaHidden: true,
           children: (0, r.jsx)(o.Yd2, {
             variant: "primary",
             size: "sm",

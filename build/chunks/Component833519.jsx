@@ -83,12 +83,12 @@ function Y(e) {
     wrapperClassName: F,
     paused: q = false,
     idle: Y = false,
-    controlsBottom: K
-  } = e, G = Z.Z.getVideoComponent(), Q = (0, o.e7)([j.default], () => j.default.getId()), X = (0, v.Z)(), {
+    controlsBottom: G
+  } = e, K = Z.Z.getVideoComponent(), Q = (0, o.e7)([x.default], () => x.default.getId()), X = (0, b.Z)(), {
     stream: J,
     user: $,
     streamId: ee
-  } = t, et = (0, o.e7)([x.Z], () => x.Z.getChannel(J.channelId)), en = (0, o.e7)([P.Z], () => P.Z.getActiveStreamForUser($.id, J.guildId), [$.id, J.guildId]), {
+  } = t, et = (0, o.e7)([j.Z], () => j.Z.getChannel(J.channelId)), en = (0, o.e7)([P.Z], () => P.Z.getActiveStreamForUser($.id, J.guildId), [$.id, J.guildId]), {
     defaultWatchMultipleStreams: er
   } = (0, h.P)({
     location: "StreamTile"
@@ -96,10 +96,10 @@ function Y(e) {
   (0, f.ZP)(() => {
     !ei && (null == et ? true : et.isGuildStageVoice()) && !ea && ((0, d.rn)(J), u.Z.updateStageStreamSize(J.channelId, false))
   });
-  let eu = (0, b.c)(z.Yn.STREAM, t.user.id);
+  let eu = (0, v.c)(z.Yn.STREAM, t.user.id);
   i.useEffect(() => {
-    B.info("Stream Tile State - activeStream: ".concat(null != en, " | selected: ").concat(n, " | Video: ").concat(null != G, " | MediaEngine: ").concat(Z.Z.supports(z.AN.VIDEO)))
-  }, [G, en, n]);
+    B.info("Stream Tile State - activeStream: ".concat(null != en, " | selected: ").concat(n, " | Video: ").concat(null != K, " | MediaEngine: ").concat(Z.Z.supports(z.AN.VIDEO)))
+  }, [K, en, n]);
   let {
     allowGoLiveZoomPan: ed
   } = (0, O.H)({
@@ -128,7 +128,7 @@ function Y(e) {
     participant: t,
     width: S
   });
-  if (!(null != en && !n && null != G && Z.Z.supports(z.AN.VIDEO))) return (0, r.jsxs)("div", {
+  if (!(null != en && !n && null != K && Z.Z.supports(z.AN.VIDEO))) return (0, r.jsxs)("div", {
     className: a()(H.content, H.streamPreview, {
       [H.small]: es
     }),
@@ -180,13 +180,13 @@ function Y(e) {
       wrapperClassName: a()(g !== m.P.CALL_TILE ? H.videoWrapper : true, F),
       className: H.content,
       streamId: ee,
-      videoComponent: G,
+      videoComponent: K,
       fit: _,
       paused: q || (null == en ? true : en.state) === V.jm8.PAUSED || eo,
       videoSpinnerContext: ea ? p.m.SELF_STREAM : p.m.REMOTE_STREAM,
       userId: $.id,
       streamKey: t.id,
-      controlsBottom: K,
+      controlsBottom: G,
       idle: Y
     }, ee), null != ec ? (0, r.jsx)(I.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {

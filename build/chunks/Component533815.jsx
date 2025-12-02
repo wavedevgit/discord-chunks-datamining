@@ -27,6 +27,7 @@ function f(e) {
   } = (0, c.KZ)();
   return (0, r.jsx)(l.u, {
     text: u.intl.string(u.t.HUvyDc),
+    ariaHidden: true,
     children: (0, r.jsx)(o.P3F, {
       innerRef: g,
       onClick: () => {

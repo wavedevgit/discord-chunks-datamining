@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk666917 = require("./666917.js"),
+  Chunk253179 = require("./253179.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -35,10 +35,10 @@ function g(e) {
   }
   return e
 }
-let b = {
+let v = {
     visibility: "hidden"
   },
-  v = {
+  b = {
     precision: 1e-4,
     duration: 300
   },
@@ -62,10 +62,10 @@ function y(e) {
   i.useEffect(() => () => {
     (0, d.Gh)(C)
   }, [C]);
-  let j = e => {
-      if (n !== s.P.NO_POPOUT) return b;
+  let x = e => {
+      if (n !== s.P.NO_POPOUT) return v;
       let t = null == O ? true : O.getBoundingClientRect();
-      if (P.current = t, e.timestamp !== w || null == t) return b;
+      if (P.current = t, e.timestamp !== w || null == t) return v;
       let {
         top: r,
         left: i
@@ -77,17 +77,17 @@ function y(e) {
         width: 268
       }
     },
-    x = (0, i.useRef)(null),
+    j = (0, i.useRef)(null),
     Z = (0, c.Yzy)(I, {
       keys: e => e.timestamp,
-      ref: x,
+      ref: j,
       from: {
         opacity: .2
       },
       enter: {
         opacity: 0
       },
-      config: v
+      config: b
     }, "animate-always"),
     R = (0, i.useRef)(null),
     T = (0, c.Yzy)(I, {
@@ -97,11 +97,11 @@ function y(e) {
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, y.enabled ? j(e) : (() => {
+      }, y.enabled ? x(e) : (() => {
         var e;
-        if (n !== s.P.NO_POPOUT) return b;
+        if (n !== s.P.NO_POPOUT) return v;
         let t = null == (e = S.current) ? true : e.getBoundingClientRect();
-        return null == t ? b : {
+        return null == t ? v : {
           width: t.width,
           height: t.height,
           top: t.top,
@@ -111,7 +111,7 @@ function y(e) {
       enter: e => [g({
         opacity: 1,
         visibility: "visible"
-      }, j(e))],
+      }, x(e))],
       leave: g({
         opacity: 0
       }, !y.enabled && g({
@@ -128,7 +128,7 @@ function y(e) {
         null != t.item && null != I.find(e => e.timestamp === t.item.timestamp) && (0, d.Gh)(C, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, l.useChain)([x, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
+  return (0, l.useChain)([j, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: _.hidden,
       ref: S

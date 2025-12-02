@@ -15,16 +15,16 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk651941 = require("./651941.js"),
   Chunk981631 = require("./981631.js");
 let g = new Map,
-  b = new Map,
-  v = false,
+  v = new Map,
+  b = false,
   h = null;
 
 function E() {
   return Chunk959457.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: n
-    } = (0, c.my)(t), r = true === g.get(n), i = b.get(t) !== r;
-    return b.set(t, r), !!i || e
+    } = (0, c.my)(t), r = true === g.get(n), i = v.get(t) !== r;
+    return v.set(t, r), !!i || e
   }, false)
 }
 
@@ -37,8 +37,8 @@ function y() {
     if (require !== module && true !== g.get(module)) {
       r = false;
       break
-    } let i = r !== v;
-  return v = r, i
+    } let i = r !== b;
+  return b = r, i
 }
 
 function S(e) {
@@ -62,17 +62,17 @@ function S(e) {
 }
 
 function O() {
-  g.clear(), b.clear(), v = false
+  g.clear(), v.clear(), b = false
 }
 class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk19780.Z, Chunk959457.Z, Chunk729303.Z, Chunk651941.Z)
   }
   isCallVerified() {
-    return v
+    return b
   }
   isStreamVerified(e) {
-    return b.get(e)
+    return v.get(e)
   }
   isUserVerified(e) {
     return g.get(e)
@@ -102,7 +102,7 @@ let w = new C(Chunk570140.Z, {
     switch (r) {
       case a.Yn.STREAM:
         if (null == t) returnfalse;
-        return b.delete(t), y();
+        return v.delete(t), y();
       case a.Yn.DEFAULT:
         O()
     }
