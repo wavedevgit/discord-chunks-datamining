@@ -1,18 +1,14 @@
 /** Chunk was on 88569 **/
 /** chunk id: 245286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
-}), require("./388685.js");
+  default: () => v
+});
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
-  Chunk243778 = require("./243778.jsx"),
-  Chunk886880 = require("./886880.jsx"),
   Chunk82084 = require("./82084.jsx"),
-  Chunk131051 = require("./131051.js"),
   Chunk663389 = require("./663389.js"),
   Chunk594174 = require("./594174.js"),
   Chunk88658 = require("./88658.js"),
@@ -24,21 +20,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk942408 = require("./942408.js");
 
-function S(e) {
+function m(e) {
   let {
     destinationPanel: t,
     originPanel: n
   } = e;
-  (0, p.QB)({
+  (0, d.QB)({
     destinationPane: t,
     originPane: n,
-    subsection: b.Z.getSubsection(),
-    source: b.Z.getAnalyticsLocation(),
-    locationStack: b.Z.getAnalyticsLocations()
+    subsection: s.Z.getSubsection(),
+    source: s.Z.getAnalyticsLocation(),
+    locationStack: s.Z.getAnalyticsLocations()
   })
 }
 
-function P(e) {
+function v(e) {
   var {
     target: t
   } = e, n = function(e, t) {
@@ -56,20 +52,21 @@ function P(e) {
     }
     return o
   }(e, ["target"]);
-  let l = g.Z.useField("query"),
-    {
-      node: a,
-      directory: s
-    } = (0, f.Z)(v.Z, l),
-    u = null != t && null != s.entry(t) ? t : true,
-    p = o.useRef(null);
-  return ((0, c.ZP)(() => {
-    let e = b.Z.getSection();
-    null != e && (S({
+  let l = f.Z.useField("query"),
+    d = o.useRef(null);
+  (0, a.ZP)(() => {
+    let e = s.Z.getSection();
+    null != e && (m({
       destinationPanel: e,
       originPanel: null
-    }), p.current = e)
-  }), (0, i.e7)([y.default], () => null != y.default.getCurrentUser())) ? (0, r.jsx)(d.Z, function(e) {
+    }), d.current = e)
+  });
+  let O = o.useCallback(e => {
+    f.Z.setState({
+      query: e
+    })
+  }, []);
+  return (0, i.e7)([u.default], () => null != u.default.getCurrentUser()) ? (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -87,68 +84,24 @@ function P(e) {
     }
     return e
   }({
-    root: a,
-    directory: s,
-    sidebarHeader: C,
-    emptyState: _,
-    sidebarFooter: j.Z,
+    partialRoot: p.Z,
+    emptyState: h,
+    sidebarFooter: y.Z,
     onPanelChange: e => {
-      let t = (0, m.getUserSettingsSectionsByWebUserSettings)().get(e);
-      null != t && (S({
+      let t = (0, g.getUserSettingsSectionsByWebUserSettings)().get(e);
+      null != t && (m({
         destinationPanel: t,
-        originPanel: p.current
-      }), p.current = t)
+        originPanel: d.current
+      }), d.current = t)
     },
-    target: u,
-    defaultTarget: O.n.ACCOUNT_PANEL
+    target: t,
+    defaultTarget: b.n.ACCOUNT_PANEL,
+    searchQuery: l,
+    onSearchChange: O
   }, n)) : null
 }
 
-function C() {
-  let e = Chunk996733.Z.useField("query"),
-    t = Chunk473749.useRef(null),
-    [n, i] = (0, Chunk243778.US)([Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]),
-    c = Chunk473749.useMemo(() => ({
-      title: Chunk388032.intl.string(Chunk388032.t.Kv519a),
-      body: Chunk388032.intl.string(Chunk388032.t.cTGJBZ),
-      badge: "new",
-      position: "right",
-      align: "center",
-      scrollBehavior: "sticky"
-    }), []),
-    d = Chunk473749.useCallback(e => {
-      g.Z.setState({
-        query: e
-      })
-    }, []),
-    f = Chunk473749.useCallback(() => {
-      Chunk996733.Z.setState({
-        query: ""
-      })
-    }, []);
-  return (0, Chunk54381.jsx)("div", {
-    children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk942408.searchBarContainer,
-      children: [(0, Chunk54381.jsx)(Chunk481060.E1j, {
-        size: "md",
-        query: module,
-        onChange: Chunk82084,
-        onClear: Chunk131051
-      }), (0, Chunk54381.jsx)("div", {
-        className: Chunk942408.popoverAnchor,
-        ref: exports
-      }), (0, Chunk54381.jsx)(Chunk886880.Z, {
-        dismissibleContentType: Chunk704215.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER,
-        targetElementRef: exports,
-        visibleContent: require,
-        markAsDismissed: Chunk442837,
-        props: Chunk493773
-      })]
-    })
-  })
-}
-
-function _() {
+function h() {
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk942408.emptySearchResultsContainer,
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {

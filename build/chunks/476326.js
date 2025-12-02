@@ -30,7 +30,7 @@ function d(e) {
   return true !== e.isVideo && true !== e.isImage
 }
 var f = function(e) {
-  return e[e.FILE_ATTACHMENT = 0] = "FILE_ATTACHMENT", e[e.IMAGE_PICKER = 1] = "IMAGE_PICKER", e
+  return e[e.FILE_ATTACHMENT = 0] = "FILE_ATTACHMENT", e[e.IMAGE_PICKER = 1] = "IMAGE_PICKER", e[e.IMAGE_EDITOR = 2] = "IMAGE_EDITOR", e
 }({});
 class p extends Chunk836560.EventEmitter {
   cancel() {}

@@ -16,14 +16,14 @@ var Chunk54381 = require("./54381.js"),
 
 function b(e) {
   var t, n, {
-      root: b,
-      directory: y,
-      target: p,
-      defaultTarget: g,
-      onPanelChange: O,
-      sidebarHeader: j,
-      sidebarFooter: v,
-      emptyState: m
+      partialRoot: b,
+      target: y,
+      defaultTarget: p,
+      onPanelChange: g,
+      sidebarFooter: O,
+      emptyState: j,
+      searchQuery: m,
+      onSearchChange: v
     } = e,
     h = function(e, t) {
       if (null == e) return {};
@@ -39,7 +39,7 @@ function b(e) {
         for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
       return o
-    }(e, ["root", "directory", "target", "defaultTarget", "onPanelChange", "sidebarHeader", "sidebarFooter", "emptyState"]);
+    }(e, ["partialRoot", "target", "defaultTarget", "onPanelChange", "sidebarFooter", "emptyState", "searchQuery", "onSearchChange"]);
   let [x, S] = o.useState(false), [P, C] = o.useState(1.4), _ = o.useRef(null), w = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), k = (0, i.e7)([s.Z], () => s.Z.isFocused());
   return o.useEffect(() => {
     let e = e => {
@@ -75,14 +75,14 @@ function b(e) {
     }({}, h), n = n = {
       children: (0, r.jsx)(d.Z, {
         onClose: h.onClose,
-        root: b,
-        directory: y,
-        target: p,
-        defaultTarget: g,
-        onPanelChange: O,
-        sidebarHeader: j,
-        emptyState: m,
-        sidebarFooter: v
+        partialRoot: b,
+        target: y,
+        defaultTarget: p,
+        onPanelChange: g,
+        emptyState: j,
+        sidebarFooter: O,
+        searchQuery: m,
+        onSearchChange: v
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
