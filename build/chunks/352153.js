@@ -25,12 +25,12 @@ function g(e) {
     unreadItems: b,
     readItems: E,
     allUnreadItemsHydrated: O
-  } = (0, p.Z)(), y = (0, i.e7)([c.Z], () => c.Z.getVersion(), []), v = (0, i.e7)([c.Z], () => !(c.Z.isFirstPageHydrated() && y > 0));
+  } = (0, p.Z)(), v = (0, i.e7)([c.Z], () => c.Z.getVersion(), []), y = (0, i.e7)([c.Z], () => !(c.Z.isFirstPageHydrated() && v > 0));
   r.useEffect(() => {
     null != c.Z.getLoadId() && s.m.trackFeedShown({
       homeSessionId: "gravity"
     })
-  }, [y]);
+  }, [v]);
   let I = (0, i.e7)([c.Z], () => c.Z.isRefreshing(), []),
     C = (0, i.e7)([c.Z], () => c.Z.isHydrating(), []),
     [S, T] = r.useState([]),
@@ -54,10 +54,10 @@ function g(e) {
     }).pop(),
     x = (0, l.Z)(P);
   r.useEffect(() => {
-    if (I || v || null == x || null == P || P === x) return;
+    if (I || y || null == x || null == P || P === x) return;
     let e = Date.now();
     e - j > h.C && (a.Z.gravityScrollEvent(e), s.m.trackFeedFirstScrollStarted())
-  }, [I, j, x, P, N, v]);
+  }, [I, j, x, P, N, y]);
   let A = r.useCallback(e => {
       var t, n;
       let {
@@ -89,8 +89,8 @@ function g(e) {
       i.length > 0 && a.Z.ackGravityItems(i, true), s.m.trackItemShortImpression(r, l.map(e => ({
         id: e.id,
         type: (0, u.v$)(e)
-      })), y)
-    }, [y, _, g]),
+      })), v)
+    }, [v, _, g]),
     Z = r.useCallback(e => {
       let {
         viewableItems: t
@@ -100,7 +100,7 @@ function g(e) {
       s.m.trackItemLongImpression(t, n.map(e => ({
         id: e.id,
         type: (0, u.v$)(e)
-      })), y), a.Z.triggerItemsLongImpression(t.filter(e => {
+      })), v), a.Z.triggerItemsLongImpression(t.filter(e => {
         let {
           item: t
         } = e;
@@ -121,7 +121,7 @@ function g(e) {
           isInitiallyVisible: false
         }
       }))
-    }, [y]),
+    }, [v]),
     w = r.useCallback(e => {
       let {
         viewableItems: t
@@ -179,7 +179,7 @@ function g(e) {
       stickyHeaderIndices: M
     } = r.useMemo(() => {
       let e = [];
-      return v && null != n && n.type === u.Ni.CUSTOM_STATUS && e.push({
+      return y && null != n && n.type === u.Ni.CUSTOM_STATUS && e.push({
         id: n.id,
         timestamp: Date.now(),
         data: {
@@ -188,7 +188,7 @@ function g(e) {
         },
         score: n.score,
         unread: true
-      }), v ? e.push({
+      }), y ? e.push({
         id: "loading",
         timestamp: 0,
         unread: false,
@@ -217,11 +217,11 @@ function g(e) {
         data: e,
         stickyHeaderIndices: []
       }
-    }, [v, n, b, O, E, C]);
+    }, [y, n, b, O, E, C]);
   return {
     data: D,
-    loading: v,
-    version: y,
+    loading: y,
+    version: v,
     visibleItemIds: S,
     endVisible: m,
     isRefreshing: I,

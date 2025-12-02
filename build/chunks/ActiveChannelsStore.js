@@ -36,13 +36,13 @@ function O(e, t, n, r) {
   })
 }
 
-function y(e) {
+function v(e) {
   let {
     channel: t
   } = e;
   delete m[t.id], delete _[t.id]
 }
-class v extends(a = Chunk442837.ZP.Store) {
+class y extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk914010.Z)
   }
@@ -60,12 +60,12 @@ class v extends(a = Chunk442837.ZP.Store) {
     return null == g[e] && !(null == (t = b[e]) ? true : t.loading)
   }
 }
-l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty(r, i, {
+l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty(r, i, {
   value: l,
   enumerable: true,
   configurable: true,
   writable: true
-}) : r[i] = l, new v(Chunk570140.Z, {
+}) : r[i] = l, new y(Chunk570140.Z, {
   CHANNEL_SELECT: function(e) {
     let {
       channelId: t,
@@ -105,8 +105,8 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty
     } = e;
     delete g[t.id]
   },
-  CHANNEL_DELETE: y,
-  THREAD_DELETE: y,
+  CHANNEL_DELETE: v,
+  THREAD_DELETE: v,
   ACTIVE_CHANNELS_FETCH_START: function(e) {
     let {
       guildId: t

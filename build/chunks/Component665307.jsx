@@ -97,9 +97,9 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk117554.nameBodyCell,
     render: e => (0, i.jsxs)(E.Z, {
       align: E.Z.Align.CENTER,
-      children: [(0, i.jsx)(y.Z, {
+      children: [(0, i.jsx)(v.Z, {
         game: e.application,
-        size: y.A.SMALL,
+        size: v.A.SMALL,
         className: A.gameIcon
       }), (0, i.jsxs)("div", {
         className: A.nameCellInfo,
@@ -137,9 +137,9 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk117554.textCell,
     render(e) {
       let t;
-      return t = e.isRunning ? x.intl.string(x.t.Md326p) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(v.ZP, {
+      return t = e.isRunning ? x.intl.string(x.t.Md326p) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
         end: e.lastPlayed,
-        location: v.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
+        location: y.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
       }) : x.intl.string(x.t.EoWLru), (0, i.jsx)(E.Z, {
         align: E.Z.Align.CENTER,
         className: s()({

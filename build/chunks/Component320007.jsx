@@ -30,8 +30,8 @@ function b(e) {
   }, {
     autoTrackExposure: false
   }), {
-    hasNewClips: y,
-    lastClipsSession: v,
+    hasNewClips: v,
+    lastClipsSession: y,
     remindersEnabled: I,
     hasAnyClipAnimations: C
   } = (0, l.cj)([p.Z], () => ({
@@ -39,7 +39,7 @@ function b(e) {
     lastClipsSession: p.Z.getLastClipsSession(),
     remindersEnabled: p.Z.getSettings().remindersEnabled,
     hasAnyClipAnimations: p.Z.hasAnyClipAnimations()
-  })), S = null != v && v.newClipIds.length > 0, T = (0, h.n)(e => e.clipsButtonRef), N = (0, h.n)(e => e.setClipsButtonRef), j = (0, l.e7)([c.Z], () => c.Z.hasLayers()), {
+  })), S = null != y && y.newClipIds.length > 0, T = (0, h.n)(e => e.clipsButtonRef), N = (0, h.n)(e => e.setClipsButtonRef), j = (0, l.e7)([c.Z], () => c.Z.hasLayers()), {
     preventIdle: P,
     allowIdle: x
   } = (0, o.Y)("animation");
@@ -74,14 +74,14 @@ function b(e) {
   return (i.useEffect(() => (C ? P() : x(), () => x()), [C, P, x]), O && E) ? (0, r.jsxs)(r.Fragment, {
     children: [null != T && t && I && S && !(0, a.$sL)() && !j && (0, r.jsx)(g.Z, {
       clipIconRef: T,
-      lastClipsSession: v,
+      lastClipsSession: y,
       onOpenClipsGallery: A
     }), (0, r.jsx)("div", {
       ref: N,
       children: (0, r.jsx)(s.JO, {
         className: b,
         icon: a.AlX,
-        showBadge: y,
+        showBadge: v,
         tooltip: _.intl.string(_.t.MXaLEM),
         onClick: A
       })

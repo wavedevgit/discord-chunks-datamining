@@ -28,7 +28,7 @@ function c(e) {
       d(), null != e && e.targetKey === t.key && null == e.targetAccordionKey && (u.current = requestAnimationFrame(() => {
         var t, n;
         let r = e.animateScroll && !o.Z.useReducedMotion,
-          i = null != (n = e.scrollBlock) ? n : "nearest";
+          i = null != (n = e.scrollBlock) ? n : "start";
         null == (t = c.current) || t.scrollIntoView({
           behavior: r ? "smooth" : "auto",
           block: i

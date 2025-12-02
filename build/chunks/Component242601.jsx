@@ -465,7 +465,7 @@ function eg(e) {
     {
       enableStudyGroup: Z
     } = (0, A.s)(s),
-    w = (0, v.ZP)(e => e.currentlyShown.has(u.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
+    w = (0, y.ZP)(e => e.currentlyShown.has(u.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
     [D, M] = i.useState(!w),
     H = (0, b.Z)(n),
     {
@@ -474,7 +474,7 @@ function eg(e) {
   i.useEffect(() => {
     n !== H && M(!w)
   }, [n, H, w]);
-  let [J, X] = (0, v.ZP)(e => [er.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ei.R.GUILD_HEADER_TOOLTIPS)], o.X), $ = (0, y.Z)(s), ee = (0, f.s9z)(f.JQI), et = (0, c.e7)([F.Z], () => F.Z.hasLayers()), el = (0, c.e7)([k.Z], () => k.Z.shouldShow(ep)), ea = (0, j.Z)(n), es = (null == s ? true : s.features.has(en.GuildFeatures.HUB)) === true, eo = g && (null == s ? true : s.features.has(en.GuildFeatures.DISCOVERABLE)) === true, ec = (0, c.e7)([x.Z, F.Z], () => null != s && null != P && g && !F.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eu = (0, c.e7)([U.Z], () => U.Z.getChannel(a)), {
+  let [J, X] = (0, y.ZP)(e => [er.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ei.R.GUILD_HEADER_TOOLTIPS)], o.X), $ = (0, v.Z)(s), ee = (0, f.s9z)(f.JQI), et = (0, c.e7)([F.Z], () => F.Z.hasLayers()), el = (0, c.e7)([k.Z], () => k.Z.shouldShow(ep)), ea = (0, j.Z)(n), es = (null == s ? true : s.features.has(en.GuildFeatures.HUB)) === true, eo = g && (null == s ? true : s.features.has(en.GuildFeatures.DISCOVERABLE)) === true, ec = (0, c.e7)([x.Z, F.Z], () => null != s && null != P && g && !F.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eu = (0, c.e7)([U.Z], () => U.Z.getChannel(a)), {
     isPopoutOpen: ed
   } = (0, S.y)(), ef = null != (t = null == s ? true : s.features.has(en.GuildFeatures.COMMUNITY)) && t, eg = K.ZP.isNewUser(P), em = D && !eg;
   (0, T.Z)(s);
@@ -482,8 +482,8 @@ function eg(e) {
     eb = (0, L.Z)(n),
     eE = (0, N.Z)(n),
     eO = (0, c.e7)([W.Z], () => W.Z.getChannelId()),
-    ey = (0, c.e7)([Y.Z], () => Y.Z.desyncedVoiceStatesCount),
-    ev = (0, R.Z)(n);
+    ev = (0, c.e7)([Y.Z], () => Y.Z.desyncedVoiceStatesCount),
+    ey = (0, R.Z)(n);
   return (0, r.jsx)(eh, {
     guildId: n,
     hideSelectedChannel: l,
@@ -494,7 +494,7 @@ function eg(e) {
     selectedVoiceChannelId: h,
     voiceStates: d,
     rtcConnectedChannelId: eO,
-    rtcDesyncedVoiceStatesCount: ey,
+    rtcDesyncedVoiceStatesCount: ev,
     isUnavailable: m,
     user: P,
     hasChannelNotice: null != $ || J,
@@ -514,6 +514,6 @@ function eg(e) {
     headerAnalyticsLocations: Q,
     isTutorialHighlightDismissed: e_,
     shouldRenderBurstCoachmark: em,
-    shouldRenderGuildPowerupPerkCoachmark: false === ev
+    shouldRenderGuildPowerupPerkCoachmark: false === ey
   })
 }

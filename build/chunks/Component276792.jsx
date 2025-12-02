@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 276792, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => E
+  N: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -9,153 +9,84 @@ var Chunk657707 = require("./657707.js"),
   Chunk740111 = require("./740111.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk963249 = require("./963249.jsx"),
-  Chunk703656 = require("./703656.js"),
   Chunk626135 = require("./626135.js"),
   Chunk63063 = require("./63063.js"),
   Chunk382791 = require("./382791.jsx"),
-  Chunk474936 = require("./474936.js"),
+  Chunk671728 = require("./671728.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk605548 = require("./605548.js");
 
-function _(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
-    })
-  }
-  return e
-}
-
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function E(e) {
-  var t, n, E, O;
-  let y, {
-      componentId: v,
-      promotionId: I,
-      content: C,
-      renderModalProps: S,
-      analyticsLocations: T,
-      analyticsLocation: N,
-      isLightTheme: j
-    } = e,
-    P = "AnnouncementModalVariant1_".concat(v),
-    {
-      onClose: x
-    } = S,
-    A = null != (O = null == (t = C.button) ? true : t.copy) ? O : g.intl.string(g.t.YScQSF),
-    Z = (null == (n = C.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
-  switch (null == (E = C.button) ? true : E.buttonAction) {
-    case l.Wc.OPEN_MARKETING_PAGE:
-      y = () => {
-        (0, c.uL)(h.Z5c.APPLICATION_STORE), x()
-      };
-      break;
-    case l.Wc.OPEN_TIER_1_PAYMENT_MODAL:
-      y = () => (0, o.Z)({
-        subscriptionTier: f.Si.TIER_1,
-        analyticsLocations: T,
-        analyticsObject: b(_({}, N), {
-          object: h.qAy.BUTTON_CTA,
-          objectType: h.AnalyticsObjectTypes.TIER_1
-        }),
-        onClose: e => {
-          e && x()
-        }
-      });
-      break;
-    case l.Wc.OPEN_TIER_2_PAYMENT_MODAL:
-    case l.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
-    default:
-      y = () => (0, o.Z)({
-        subscriptionTier: f.Si.TIER_2,
-        analyticsLocations: T,
-        analyticsObject: b(_({}, N), {
-          object: h.qAy.BUTTON_CTA,
-          objectType: h.AnalyticsObjectTypes.TIER_2
-        }),
-        onClose: e => {
-          e && x()
-        }
-      })
-  }
-  let w = "" !== C.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
-      children: ["\xa0", (0, r.jsx)(s.Anchor, {
-        className: m.termsApplyAnchor,
-        href: d.Z.getArticleURL(C.helpArticleId),
-        children: g.intl.string(g.t["sBp+u0"])
-      })]
-    }) : true,
-    L = {
-      type: "video",
-      src: j ? C.heroArtVideoLinkLightTheme : C.videoLink
-    };
-  null != C.heroArtVideoSubtitles && (L.subtitles = C.heroArtVideoSubtitles.map(e => ({
+function g(e) {
+  var t, n, g, m;
+  let {
+    componentId: _,
+    promotionId: b,
+    content: E,
+    renderModalProps: O,
+    analyticsLocations: v,
+    analyticsLocation: y,
+    isLightTheme: I
+  } = e, C = "AnnouncementModalVariant1_".concat(_), {
+    onClose: S
+  } = O, T = null != (m = null == (t = E.button) ? true : t.copy) ? m : f.intl.string(f.t.YScQSF), N = (null == (n = E.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", j = (0, d.K)({
+    buttonAction: null == (g = E.button) ? true : g.buttonAction,
+    analyticsLocations: v,
+    analyticsLocation: y,
+    onClose: S
+  }), P = "" !== E.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+    children: ["\xa0", (0, r.jsx)(s.Anchor, {
+      className: h.termsApplyAnchor,
+      href: c.Z.getArticleURL(E.helpArticleId),
+      children: f.intl.string(f.t["sBp+u0"])
+    })]
+  }) : true, x = {
+    type: "video",
+    src: I ? E.heroArtVideoLinkLightTheme : E.videoLink
+  };
+  null != E.heroArtVideoSubtitles && (x.subtitles = E.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
     src: e.link,
     isDefault: false
-  }))), ("" !== C.heroArtImageLinkDarkTheme || "" !== C.heroArtImageLinkLightTheme) && (L = {
+  }))), ("" !== E.heroArtImageLinkDarkTheme || "" !== E.heroArtImageLinkLightTheme) && (x = {
     type: "image",
-    src: j ? C.heroArtImageLinkLightTheme : C.heroArtImageLinkDarkTheme
+    src: I ? E.heroArtImageLinkLightTheme : E.heroArtImageLinkDarkTheme
   });
-  let R = "" !== C.modalTopPill ? () => (0, r.jsx)(p.mn, {
-    text: C.modalTopPill,
-    className: m.modalTopPill
+  let A = "" !== E.modalTopPill ? () => (0, r.jsx)(u.mn, {
+    text: E.modalTopPill,
+    className: h.modalTopPill
   }) : true;
   return {
-    componentId: v,
-    promotionId: I,
-    renderModalProps: S,
-    header: C.header,
-    modalTopExtra: R,
-    subHeader: C.subheader,
-    subHeaderExtra: w,
-    body: C.body,
-    heroArt: L,
-    featureCards: C.featureCards.map(e => ({
+    componentId: _,
+    promotionId: b,
+    renderModalProps: O,
+    header: E.header,
+    modalTopExtra: A,
+    subHeader: E.subheader,
+    subHeaderExtra: P,
+    body: E.body,
+    heroArt: x,
+    featureCards: E.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
-      imageSrc: j ? e.imageLinkLightTheme : e.imageLink,
+      imageSrc: I ? e.imageLinkLightTheme : e.imageLink,
       tagText: "" !== e.pill ? e.pill : true
     })),
-    changeLogId: P,
+    changeLogId: C,
     button: () => {
       let e = Date.now();
       return (0, r.jsx)(a.zxk, {
         variant: "expressive",
         size: "md",
         onClick: () => {
-          u.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
-            change_log_id: P,
-            cta_type: Z,
+          o.default.track(p.rMx.CHANGE_LOG_CTA_CLICKED, {
+            change_log_id: C,
+            cta_type: N,
             seconds_open: Math.round((Date.now() - e) / 1e3),
-            target: P
-          }), y()
+            target: C
+          }), j()
         },
-        text: A,
+        text: T,
         icon: i.SrA
       })
     }

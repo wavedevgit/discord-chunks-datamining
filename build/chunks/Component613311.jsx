@@ -609,7 +609,7 @@ let eh = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     if (null == l) throw Error("Needs applicationId or skuId");
     null != (r = I.Z.getApplication(l)) && (t = r.destinationSkuId), n = null != t ? k.Z.get(t) : null
   }(null == n ? true : n.flags) != null && (0, s.yE)(n.flags, ea.l4R.STICKER) && (n = null);
-  let u = null != l && (G.Z.inTestModeForApplication(l) || v.Z.inDevModeForApplication(l));
+  let u = null != l && (G.Z.inTestModeForApplication(l) || y.Z.inDevModeForApplication(l));
   return {
     skuId: t,
     application: null != l ? I.Z.getApplication(l) : null,

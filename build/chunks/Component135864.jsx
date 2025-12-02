@@ -43,14 +43,14 @@ function C(e) {
           color: "currentColor"
         })
     }
-  })(t), [t]), v = i.useMemo(() => (0, _.s)(t), [t]), C = n === t, S = i.useCallback(() => {
+  })(t), [t]), y = i.useMemo(() => (0, _.s)(t), [t]), C = n === t, S = i.useCallback(() => {
     switch (t) {
       case E.GlobalDiscoveryTab.QUESTS:
         return C && h.Z.resetState(), g.default.track(O.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
           client_ad_session_id: (0, c.Gy)().uuid
         }), (0, b.transitionToGlobalDiscovery)({
           tab: E.GlobalDiscoveryTab.QUESTS,
-          location: y.dr.DISCOVERY_SIDEBAR,
+          location: v.dr.DISCOVERY_SIDEBAR,
           questContent: s.j.DISCOVERY_SIDEBAR
         });
       case E.GlobalDiscoveryTab.APPS:
@@ -90,7 +90,7 @@ function C(e) {
     }), (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "none",
-      children: v
+      children: y
     })]
   })
 }

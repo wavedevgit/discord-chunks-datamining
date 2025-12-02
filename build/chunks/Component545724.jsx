@@ -55,8 +55,8 @@ let g = function(e) {
     isFocused: b,
     isActive: E,
     onOtherHover: O,
-    className: y
-  } = e, [v, I] = i.useState(false), [C, S] = i.useState(false), T = () => {
+    className: v
+  } = e, [y, I] = i.useState(false), [C, S] = i.useState(false), T = () => {
     I(true), !b || E || C || null == O || O()
   }, N = () => {
     I(false)
@@ -69,7 +69,7 @@ let g = function(e) {
         right: false
       },
       children: (0, r.jsx)(s.Z.div, h(f({
-        className: a()(p.messageRequestItem, y, {
+        className: a()(p.messageRequestItem, v, {
           [p.active]: E || C,
           [p.firstItem]: 0 === t
         }),
@@ -95,7 +95,7 @@ let g = function(e) {
           opacity: 1
         }
       }, e), {
-        children: l(v || E || C)
+        children: l(y || E || C)
       }))
     })
   })

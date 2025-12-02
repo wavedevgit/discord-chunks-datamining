@@ -20,9 +20,9 @@ var Chunk54381 = require("./54381.js"),
 function m(e) {
   let {
     applicationId: t
-  } = e.match.params, [m, _] = i.useState(false), b = i.useRef(false), [E, O] = i.useState(null), y = !u.isPlatformEmbedded && !a.tq && !m, v = i.useMemo(() => (0, l.Z)(), []);
+  } = e.match.params, [m, _] = i.useState(false), b = i.useRef(false), [E, O] = i.useState(null), v = !u.isPlatformEmbedded && !a.tq && !m, y = i.useMemo(() => (0, l.Z)(), []);
   return (i.useEffect(() => {
-    y && true !== b.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
+    v && true !== b.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
       let {
         default: n
       } = e;
@@ -31,26 +31,26 @@ function m(e) {
         params: {
           applicationId: t,
           url: location.href,
-          attemptId: v
+          attemptId: y
         }
       }).then(e => {
         let n = null != e && e;
         O(n), c.default.track(p.rMx.ACTIVITY_DEEP_LINK_ATTEMPTED, {
           application_id: t,
           source_url: location.href,
-          attempt_id: v,
+          attempt_id: y,
           rpc_success: n
         })
       }).catch(() => {
         O(false), c.default.track(p.rMx.ACTIVITY_DEEP_LINK_ATTEMPTED, {
           application_id: t,
           source_url: location.href,
-          attempt_id: v,
+          attempt_id: y,
           rpc_success: false
         })
       }).then(() => n.disconnect())
     }), b.current = true)
-  }, [t, y, v]), y && false !== E) ? true === E ? (0, r.jsxs)("div", {
+  }, [t, v, y]), v && false !== E) ? true === E ? (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xxl/bold",

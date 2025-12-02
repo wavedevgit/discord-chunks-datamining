@@ -94,7 +94,7 @@ class P extends Chunk317770.Z {
     }), N(this, "mayShowAnnouncementModal", async () => {
       if (await (0, _.l2)(), g.s.isDisallowPopupsSet()) return;
       let e = this.getOfferFromStore(),
-        t = y.Z.getCurrentConfig({
+        t = v.Z.getCurrentConfig({
           location: "announcementManager"
         }, {
           autoTrackExposure: false
@@ -107,7 +107,7 @@ class P extends Chunk317770.Z {
       if (!t || r || (0, s.$sL)() || (0, h.I5)(l) || await (0, E.G)(e.userTrialOffer) && (0, C.Z)({
           upsellType: T.cd.REVERSE_TRIAL_FOLLOWUP_UPSELL
         }), (null == l || l.verified) && !(0, s.$sL)() && !i.tq && !n) {
-        for (let t of (await (0, v.He)(e)))
+        for (let t of (await (0, y.He)(e)))
           if (await this.maybeOpenServerDriveAnnouncementModal("", m.default.fromTimestamp(Date.now()), t, false)) break
       }
     })

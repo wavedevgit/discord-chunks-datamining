@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 762500, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,10 +23,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk934422 = require("./934422.js");
 
-function v(e) {
+function y(e) {
   let {
     ref: t,
-    isFocused: v,
+    isFocused: y,
     isActive: I,
     status: C,
     activities: S,
@@ -76,13 +76,13 @@ function v(e) {
     D = () => Z === b.hX.FRIEND_ANNIVERSARY ? O.intl.string(O.t.OrwKgi) : true;
   return (0, r.jsx)(d.Z, {
     ref: t,
-    isFocused: v,
+    isFocused: y,
     isActive: I,
     user: A,
     onOtherHover: P,
     onClick: x,
     children: e => (0, r.jsxs)("div", {
-      className: y.listItemContents,
+      className: v.listItemContents,
       children: [(0, r.jsx)(f.Z, {
         user: A,
         status: C,
@@ -98,7 +98,7 @@ function v(e) {
         hovered: e,
         showAccountIdentifier: !N && !A.isProvisional
       }), (0, r.jsxs)("div", {
-        className: y.actions,
+        className: v.actions,
         children: [(0, r.jsx)(s.hU, {
           size: "sm",
           variant: "secondary",

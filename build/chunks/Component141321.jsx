@@ -26,7 +26,7 @@ function O(e) {
     onOpen: t,
     onClose: n,
     "data-jump-section": l
-  } = e, O = (0, s.e7)([g.default], () => g.default.getCurrentUser()), y = i.useRef(null), v = (0, s.e7)([h.ZP], () => (null == O ? true : O.id) != null && h.ZP.getMentionCount(O.id, _.W.NOTIFICATION_CENTER) > 0), {
+  } = e, O = (0, s.e7)([g.default], () => g.default.getCurrentUser()), v = i.useRef(null), y = (0, s.e7)([h.ZP], () => (null == O ? true : O.id) != null && h.ZP.getMentionCount(O.id, _.W.NOTIFICATION_CENTER) > 0), {
     titlebarIconSize: I,
     titlebarHoverHighlight: C
   } = (0, p.T)({
@@ -36,11 +36,11 @@ function O(e) {
     color: "currentColor"
   }), [S]);
   return (0, r.jsx)(m.k, {
-    targetElementRef: y,
+    targetElementRef: v,
     onOpen: t,
     onClose: n,
     badgeState: {
-      badgeForYou: v
+      badgeForYou: y
     },
     popoutPosition: "bottom",
     popoutAlign: "right",
@@ -48,7 +48,7 @@ function O(e) {
       var s, p;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.u, {
-          targetElementRef: y,
+          targetElementRef: v,
           shouldShow: !t,
           text: b.intl.string(b.t.GSmTKJ),
           children: (0, r.jsx)(u.P3F, (s = function(e) {
@@ -70,14 +70,14 @@ function O(e) {
             return e
           }({}, n), p = p = {
             tag: "div",
-            innerRef: y,
+            innerRef: v,
             onClick: e,
             "data-jump-section": l,
             "aria-label": b.intl.string(b.t.GSmTKJ),
             className: a()(E.clickable, {
               [E.withHighlight]: C
             }),
-            children: v || i ? (0, r.jsxs)(r.Fragment, {
+            children: y || i ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.ZP, {
                 mask: d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
                 height: o.Z[S],
@@ -101,7 +101,7 @@ function O(e) {
           }), s))
         }), (0, r.jsx)(f.U, {
           location: "inbox-button",
-          targetElementRef: y
+          targetElementRef: v
         })]
       })
     }

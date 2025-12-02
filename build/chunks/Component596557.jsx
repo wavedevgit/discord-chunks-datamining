@@ -27,9 +27,9 @@ function g(e) {
       var t;
       (0, u.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds, true, p.L.DISMISS)
     }, [e]),
-    y = i.useRef(false);
+    v = i.useRef(false);
   i.useEffect(() => {
-    if (E && !y.current) {
+    if (E && !v.current) {
       var t;
       (0, a.ZDy)(async () => {
         let {
@@ -62,7 +62,7 @@ function g(e) {
       }), o.default.track(d.rMx.DISMISSIBLE_CONTENT_SHOWN, {
         type: l.C[l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE],
         guild_id: null != (t = null == e ? true : e.id) ? t : d.lds
-      }), y.current = true
+      }), v.current = true
     }
   }, [m, e, O, _, E])
 }

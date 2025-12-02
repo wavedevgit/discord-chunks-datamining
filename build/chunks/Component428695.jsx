@@ -27,8 +27,8 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       imageMarginX: b,
       imageMarginTop: E,
       trackingSource: O,
-      undismissable: y,
-      onDismissed: v,
+      undismissable: v,
+      onDismissed: y,
       onClick: I,
       cta: C,
       ctaColor: S,
@@ -80,11 +80,11 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
     let A = null != b ? "".concat(b, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: a()(h.container, N),
-      children: [true === y ? null : (0, r.jsx)(c.P3F, {
+      children: [true === v ? null : (0, r.jsx)(c.P3F, {
         onClick: () => {
           u.ZP.trackWithMetadata(p.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: m
-          }), null == v || v()
+          }), null == y || y()
         },
         className: h.close,
         "aria-label": f.intl.string(f.t.WAI6xu),

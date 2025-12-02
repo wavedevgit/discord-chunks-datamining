@@ -119,17 +119,17 @@ let M = e => {
       {
         analyticsLocations: E
       } = (0, m.ZP)(b),
-      [O, y] = i.useState(false),
+      [O, v] = i.useState(false),
       I = i.useCallback(() => {
-        true !== s && s(), true !== o && (0, v.mK)({
+        true !== s && s(), true !== o && (0, y.mK)({
           tab: o,
           analyticsLocations: E,
           analyticsSource: b
-        }), y(true), (0, v.Sm)({
+        }), v(true), (0, y.Sm)({
           analyticsSource: b,
           analyticsLocations: E
         })
-      }, [b, E, s, y, o]),
+      }, [b, E, s, v, o]),
       C = x.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
       children: [O && (0, r.jsx)(k, {}), (0, r.jsx)(p.Qj, R(L({
@@ -182,7 +182,7 @@ let M = e => {
   }),
   H = e => {
     let t, n;
-    var l, s, o, d, p, g, m, _, b, E, O, v, {
+    var l, s, o, d, p, g, m, _, b, E, O, y, {
         displayOptions: I
       } = e,
       C = D(e, ["displayOptions"]);
@@ -191,7 +191,7 @@ let M = e => {
       [j, P] = i.useState(false),
       x = (0, f.ZP)(),
       A = (0, c.wj)(x);
-    j ? A ? (t = null == (l = I.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (o = I.entrypointBackgroundStyle) || null == (s = o.hovered) ? true : s.dark) : (t = null == (d = I.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (g = I.entrypointBackgroundStyle) || null == (p = g.hovered) ? true : p.light) : A ? (t = null == (m = I.entryPointBackgroundAssets) ? true : m.srcDark, n = null == (b = I.entrypointBackgroundStyle) || null == (_ = b.resting) ? true : _.dark) : (t = null == (E = I.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (v = I.entrypointBackgroundStyle) || null == (O = v.resting) ? true : O.light);
+    j ? A ? (t = null == (l = I.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (o = I.entrypointBackgroundStyle) || null == (s = o.hovered) ? true : s.dark) : (t = null == (d = I.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (g = I.entrypointBackgroundStyle) || null == (p = g.hovered) ? true : p.light) : A ? (t = null == (m = I.entryPointBackgroundAssets) ? true : m.srcDark, n = null == (b = I.entrypointBackgroundStyle) || null == (_ = b.resting) ? true : _.dark) : (t = null == (E = I.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (y = I.entrypointBackgroundStyle) || null == (O = y.resting) ? true : O.light);
     let k = i.useCallback(e => {
         I.assetIds.length > 0 && N(e => (e + 1) % I.assetIds.length), P(true), null == e || e()
       }, [I.assetIds.length]),
@@ -213,7 +213,7 @@ let M = e => {
       hideOnClick: false,
       "aria-label": "string" == typeof H ? H : Z.intl.string(Z.t.rSXaxY),
       children: e => (0, r.jsxs)(U, R(L(R(L({
-        className: null != I.entryPointClassName ? (0, y.l)(w, I.entryPointClassName) : true
+        className: null != I.entryPointClassName ? (0, v.l)(w, I.entryPointClassName) : true
       }, C), {
         icon: I.entryPointIcon
       }), e), {
