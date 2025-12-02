@@ -47,7 +47,7 @@ function j(e) {
     members: t,
     guildId: n
   } = e;
-  return (0, r.jsx)(p.Z, {
+  return (0, r.jsx)(h.Z, {
     className: O.partyMembers,
     guildId: n,
     users: t,
@@ -70,8 +70,8 @@ let x = e => {
     members: i,
     embeddedApp: l,
     onAction: a
-  } = e, s = null != l, p = s ? Array.from(l.embeddedActivity.userIds) : [], b = (0, o.e7)([m.default, g.default], () => {
-    if (s) return m.default.getUser(p[0]);
+  } = e, s = null != l, h = s ? Array.from(l.embeddedActivity.userIds) : [], b = (0, o.e7)([m.default, g.default], () => {
+    if (s) return m.default.getUser(h[0]);
     if (null != i) {
       var e, t;
       return i.length <= 0 ? null : null != (t = null == (e = i.find(e => e.user.id !== g.default.getId())) ? true : e.user) ? t : i[0].user
@@ -79,7 +79,7 @@ let x = e => {
   });
   if (null == b) return null;
   let _ = s || (0, u.Z)(n),
-    v = (0, h.vd)(t.type);
+    v = (0, p.vd)(t.type);
   return (0, r.jsxs)("div", {
     className: O.activity,
     children: [(0, r.jsx)("div", {

@@ -23,7 +23,7 @@ function b(e) {
     children: t,
     popoutPosition: n,
     popoutAlign: l,
-    targetElementRef: p,
+    targetElementRef: h,
     spacing: b = 0
   } = e, {
     isOpen: y,
@@ -38,14 +38,14 @@ function b(e) {
       O(false)
     };
     return s.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => s.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-  }), i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_INBOX, j), () => void u.S.unsubscribe(h.CkL.TOGGLE_INBOX, j)), [j]);
+  }), i.useEffect(() => (u.S.subscribe(p.CkL.TOGGLE_INBOX, j), () => void u.S.unsubscribe(p.CkL.TOGGLE_INBOX, j)), [j]);
   let {
     entrypoint: x
   } = (0, d.pN)({
     location: "NotificationsInboxPopout"
   });
   return (0, r.jsx)(a.yRy, {
-    targetElementRef: p,
+    targetElementRef: h,
     shouldShow: y,
     align: l,
     animation: x === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,

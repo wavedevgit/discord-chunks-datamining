@@ -1,7 +1,7 @@
 /** Chunk was on 64271 **/
 /** chunk id: 461631, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,12 +16,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk747615 = require("./747615.js");
 
-function h(e) {
+function p(e) {
   let {
     item: t,
     wishlistId: n,
     iconSize: i = "refresh_sm",
-    className: h
+    className: p
   } = e, {
     analyticsLocations: g
   } = (0, s.ZP)(), m = async () => {
@@ -36,10 +36,10 @@ function h(e) {
     children: (0, r.jsx)(a.P3F, {
       onClick: m,
       "aria-label": f.intl.string(f.t.jTW016),
-      className: l()(h, p.clickable),
+      className: l()(p, h.clickable),
       children: (0, r.jsx)(a.XHJ, {
         size: i,
-        className: p.icon,
+        className: h.icon,
         color: a.TVs.colors.ICON_FEEDBACK_CRITICAL
       })
     })

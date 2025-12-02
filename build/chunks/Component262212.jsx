@@ -57,13 +57,13 @@ function y(e) {
     onClick: a
   } = e, s = (0, d.Z)(n, i), {
     onShowMore: c
-  } = (0, f.ZP)(n, i), u = p.uc.has(i.skuId);
+  } = (0, f.ZP)(n, i), u = h.uc.has(i.skuId);
   return (0, r.jsx)("div", {
     className: l()(m.primaryButton, t),
     children: (0, r.jsx)(o.zxk, {
       variant: "primary",
       fullWidth: true,
-      text: u ? g.intl.string(h.default.g5Ds69) : g.intl.string(g.t["0Q61kF"]),
+      text: u ? g.intl.string(p.default.g5Ds69) : g.intl.string(g.t["0Q61kF"]),
       onClick: e => {
         null == a || a(e), u ? null == s || s(e) : null == c || c()
       }
@@ -86,7 +86,7 @@ function O(e) {
       children: (0, r.jsx)(o.zxk, {
         variant: "primary",
         fullWidth: true,
-        text: i.type === p.Us.LEVEL ? g.intl.string(g.t["0Q61kF"]) : g.intl.string(g.t.Xa11Ep),
+        text: i.type === h.Us.LEVEL ? g.intl.string(g.t["0Q61kF"]) : g.intl.string(g.t.Xa11Ep),
         onClick: a
       })
     })
@@ -99,15 +99,15 @@ function v(e) {
     guildId: n,
     powerup: i,
     onError: o
-  } = e, s = (0, c.ZP)(n, i).type !== p.A3.INACTIVE, d = (0, a.Z)(n, i, "GuildPowerupCardFooterAdmin"), f = s || !d, h = !s;
+  } = e, s = (0, c.ZP)(n, i).type !== h.A3.INACTIVE, d = (0, a.Z)(n, i, "GuildPowerupCardFooterAdmin"), f = s || !d, p = !s;
   return (0, r.jsxs)("div", {
     className: l()(m.container, t),
     children: [f && (0, r.jsx)(u.Z, {
       guildId: n,
       powerup: i,
       onError: o,
-      grow: h,
-      compact: !h
+      grow: p,
+      compact: !p
     }), s && (0, r.jsx)(y, {
       guildId: n,
       powerup: i

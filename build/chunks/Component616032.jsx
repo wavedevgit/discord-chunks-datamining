@@ -1,7 +1,7 @@
 /** Chunk was on 64271 **/
 /** chunk id: 616032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,12 +14,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk426521 = require("./426521.jsx"),
   Chunk837284 = require("./837284.js");
 
-function p(e) {
+function h(e) {
   let {
     initialized: t,
     items: n,
-    loading: p,
-    loadMore: h
+    loading: h,
+    loadMore: p
   } = e, g = i.useRef(null), m = (0, s.Z)("for-you", g);
   (0, c.Z)({
     type: l.ImpressionTypes.VIEW,
@@ -33,7 +33,7 @@ function p(e) {
   let b = () => {
     var e;
     let t = null == (e = g.current) ? true : e.getScrollerState();
-    null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 1500 && h()
+    null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 1500 && p()
   };
   return t ? 0 === n.length ? (0, r.jsx)(u.v, {}) : (0, r.jsx)(o.bG, {
     navigator: m,
@@ -84,7 +84,7 @@ function p(e) {
           onScroll: b,
           children: [(0, r.jsx)(d.U, {
             items: n
-          }), p ? (0, r.jsx)(a.$jN, {
+          }), h ? (0, r.jsx)(a.$jN, {
             className: f.spinner
           }) : null]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

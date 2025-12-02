@@ -2,67 +2,29 @@
 /** chunk id: 358696, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => y,
-  J: () => g
+  E: () => g,
+  J: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk442550 = require("./442550.jsx"),
   Chunk264832 = require("./264832.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk255332 = require("./255332.js");
-
-function f(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function p(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      f(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function _(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let h = {
+let p = {
   none: true,
   default: Chunk255332.aspectRatio,
   crunchyroll: a()(Chunk255332.aspectRatio, Chunk255332.crunchyroll)
 };
-var g = function(e) {
+var _ = function(e) {
   return e.SIZE_60 = "size-60", e.SIZE_72 = "size-72", e.SIZE_100 = "size-100", e
 }({});
-let E = {
+let m = {
   "size-60": {
     imageSize: 60,
     smallImageSize: 24,
@@ -80,86 +42,83 @@ let E = {
   }
 };
 
-function b(e) {
+function h(e) {
   let {
     children: t,
     onClick: n
   } = e;
-  return null == n ? t : (0, r.jsx)(o.P3F, {
+  return null == n ? t : (0, r.jsx)(s.P3F, {
     onClick: n,
-    className: d.clickable,
+    className: f.clickable,
     children: t
   })
 }
 
-function y(e) {
-  var t, n;
+function g(e) {
+  var t, n, i;
   let {
-    image: i,
-    smallImage: f,
-    aspectRatio: _,
-    onClick: g,
-    size: y,
-    className: O
+    image: s,
+    smallImage: _,
+    aspectRatio: g,
+    onClick: E,
+    size: b,
+    className: y
   } = e, {
-    imageSize: v,
-    smallImageSize: S,
-    mask: I
-  } = E[y];
-  if (null == i) return (0, r.jsx)(l.f, {
+    imageSize: O,
+    smallImageSize: v,
+    mask: S
+  } = m[b];
+  if (null == s) return (0, r.jsx)(c.f, {
     src: true,
-    alt: u.intl.string(u.t["2B/phM"]),
-    size: v,
-    className: a()(d.contentImage, h[null != _ ? _ : "default"], O),
+    alt: d.intl.string(d.t["2B/phM"]),
+    size: O,
+    className: a()(f.contentImage, p[null != g ? g : "default"], y),
     constrain: "width"
   });
-  let T = (0, r.jsx)(l.f, {
-    src: i.src,
-    alt: null != (n = null != (t = i.alt) ? t : i.text) ? n : u.intl.string(u.t["2B/phM"]),
-    size: v,
-    className: a()(d.contentImage, h[null != _ ? _ : "default"]),
+  let I = (0, r.jsx)(c.f, {
+    src: s.src,
+    alt: null != (n = null != (t = s.alt) ? t : s.text) ? n : d.intl.string(d.t["2B/phM"]),
+    size: O,
+    className: a()(f.contentImage, p[null != g ? g : "default"]),
     constrain: "width"
   });
   return (0, r.jsxs)("div", {
-    className: a()(d.imagePosition, O),
-    children: [(0, r.jsx)(o.aML, {
-      "data-migration-pending": true,
-      text: i.text,
-      children: e => (0, r.jsx)(b, {
-        onClick: g,
-        children: (0, r.jsx)(c._, {
-          href: i.url,
-          children: null != f ? (0, r.jsx)(s.ZP, m(p({}, e), {
-            className: d.imageContainer,
-            mask: I,
-            width: v,
-            height: v,
-            children: T
-          })) : (0, r.jsx)("div", m(p({}, e), {
-            className: d.imageContainer,
-            children: T
-          }))
+    className: a()(f.imagePosition, y),
+    children: [(0, r.jsx)(o.u, {
+      text: s.text,
+      asContainer: true,
+      children: (0, r.jsx)(h, {
+        onClick: E,
+        children: (0, r.jsx)(u._, {
+          href: s.url,
+          children: null != _ ? (0, r.jsx)(l.ZP, {
+            className: f.imageContainer,
+            mask: S,
+            width: O,
+            height: O,
+            children: I
+          }) : (0, r.jsx)("div", {
+            className: f.imageContainer,
+            children: I
+          })
         })
       })
-    }), null != f && (0, r.jsx)(o.aML, {
-      "data-migration-pending": true,
-      text: f.text,
-      children: e => {
-        var t;
-        return (0, r.jsx)(c._, {
-          href: f.url,
-          children: (0, r.jsx)("div", m(p({}, e), {
-            className: d.smallImageContainer,
-            children: (0, r.jsx)(l.f, {
-              src: f.src,
-              alt: null != (t = f.alt) ? t : f.text,
-              size: S,
-              className: d.contentImage,
-              constrain: "width"
-            })
-          }))
+    }), null != _ && (0, r.jsx)(o.u, {
+      text: _.text,
+      asContainer: true,
+      children: (0, r.jsx)(u._, {
+        href: _.url,
+        children: (0, r.jsx)("div", {
+          className: f.smallImageContainer,
+          children: (0, r.jsx)(c.f, {
+            src: _.src,
+            alt: null != (i = _.alt) ? i : _.text,
+            size: v,
+            className: f.contentImage,
+            constrain: "width"
+          })
         })
-      }
+      })
     })]
   })
 }

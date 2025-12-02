@@ -26,14 +26,14 @@ function _() {
 function y(e) {
   var t;
   let n = s.default.getMutableGuildStates();
-  return e === h.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(h.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
+  return e === p.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(p.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? true : t.highImportanceMentionCount) > 0
 }
-let O = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, h.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
+let O = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, p.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
   v = Chunk473749.forwardRef(function(e, t) {
     var n, i;
     let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => O(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
-      p = (0, l.e7)([f.Z], () => f.Z.isFocused()),
-      h = (0, l.e7)([a.Z], () => a.Z.getExpandedFolders());
+      h = (0, l.e7)([f.Z], () => f.Z.isFocused()),
+      p = (0, l.e7)([a.Z], () => a.Z.getExpandedFolders());
     return (0, r.jsx)(o.Z, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -58,8 +58,8 @@ let O = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, h.x8Z.E3_SERVER
       textUnread: g.intl.string(g.t.y2b7CA),
       textMention: g.intl.string(g.t.y2b7CA),
       isMentioned: y,
-      animate: p,
-      expandedFolders: h
+      animate: h,
+      expandedFolders: p
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

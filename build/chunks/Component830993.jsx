@@ -33,8 +33,8 @@ function P(e) {
   var t, l;
   let {
     channel: o,
-    guild: p,
-    onAction: h,
+    guild: h,
+    onAction: p,
     voiceStates: g,
     isChannelSelected: b,
     shouldShowSettingNudge: y
@@ -82,7 +82,7 @@ function P(e) {
         embeddedApp: e,
         presenceActivity: null != (n = e.presenceActivity) ? n : true,
         channel: o,
-        onAction: h
+        onAction: p
       }, t)
     }), P.map((e, t) => {
       let {
@@ -93,7 +93,7 @@ function P(e) {
         presenceActivity: i,
         channel: o,
         members: n,
-        onAction: h
+        onAction: p
       }, t)
     }), y && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
@@ -129,7 +129,7 @@ function P(e) {
                     }
                     return e
                   }({}, t), i = i = {
-                    guild: p
+                    guild: h
                   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
@@ -160,8 +160,8 @@ function N(e) {
     locked: l,
     video: s,
     selected: n
-  }), u = (0, a.e7)([h.Z], () => h.Z.getGuild(t.guild_id));
-  return null == (0, p.KS)(t, u) ? null : (0, r.jsxs)("div", {
+  }), u = (0, a.e7)([p.Z], () => p.Z.getGuild(t.guild_id));
+  return null == (0, h.KS)(t, u) ? null : (0, r.jsxs)("div", {
     className: o()(S.popoutHeaderContainer, I.popoutHeaderContainer),
     children: [(0, r.jsx)(v.Z, {
       channel: t

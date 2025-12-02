@@ -42,15 +42,15 @@ function m(e) {
   let {
     hasDivider: c,
     canHaveVoiceSummary: f
-  } = (0, d.ie)(n, o, t), h = c ? a ? 9 : p.QP : 0;
-  if (!f || t === u.wZ) return h;
+  } = (0, d.ie)(n, o, t), p = c ? a ? 9 : h.QP : 0;
+  if (!f || t === u.wZ) return p;
   let g = n.getNamedCategoryFromSection(t);
-  return null == g ? h : (0, d.V5)({
+  return null == g ? p : (0, d.V5)({
     category: g,
     selectedChannelId: i,
     selectedVoiceChannelId: l,
     voiceStates: r
-  }) ? (a ? "cozy" === s ? 42 : 34 : p.Vf) + h : h
+  }) ? (a ? "cozy" === s ? 42 : 34 : h.Vf) + p : p
 }
 
 function b(e, t, n) {
@@ -66,7 +66,7 @@ let _ = Chunk473749.memo(function(e) {
     sectionIndex: t,
     guildChannels: n,
     guildChannelsVersion: f,
-    voiceStates: p,
+    voiceStates: h,
     guildId: m,
     selectedChannelId: b,
     selectedVoiceChannelId: _,
@@ -88,18 +88,18 @@ let _ = Chunk473749.memo(function(e) {
     channels: C,
     selectedChannelId: b,
     selectedVoiceChannelId: _,
-    voiceStates: p
-  }), [C, b, _, p]);
+    voiceStates: h
+  }), [C, b, _, h]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(g, {
     guildChannels: n,
     guildChannelsVersion: f
   });
   let S = O ? (0, r.jsx)("div", {
-    className: h.sectionDivider
+    className: p.sectionDivider
   }) : null;
   return v && 0 !== E.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: h.voiceUserSummary,
+      className: p.voiceUserSummary,
       children: (0, r.jsx)(o.ZP, {
         renderIcon: true,
         users: E,

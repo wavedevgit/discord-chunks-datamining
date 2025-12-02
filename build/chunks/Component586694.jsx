@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk268685 = require("./268685.js"),
   Chunk536537 = require("./536537.js");
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,8 +54,8 @@ function g(e) {
     onClick: l,
     onMouseDown: a,
     onKeyDown: d,
-    onContextMenu: p,
-    onMouseEnter: h,
+    onContextMenu: h,
+    onMouseEnter: p,
     onMouseLeave: g,
     className: m,
     ariaHidden: b,
@@ -135,10 +135,10 @@ function g(e) {
     className: o()(f.wrapper, f.pointer, m),
     style: E,
     onClick: l,
-    onContextMenu: p,
+    onContextMenu: h,
     onMouseDown: a,
     onKeyDown: d,
-    onMouseEnter: null != h ? h : true,
+    onMouseEnter: null != p ? p : true,
     onMouseLeave: null != g ? g : true,
     "aria-label": null != C ? C : true,
     "aria-hidden": b,
@@ -146,8 +146,8 @@ function g(e) {
   }) : (0, r.jsxs)("div", {
     className: o()(f.wrapper, m),
     style: E,
-    onContextMenu: null != p ? p : true,
-    onMouseEnter: null != h ? h : true,
+    onContextMenu: null != h ? h : true,
+    onMouseEnter: null != p ? p : true,
     onMouseLeave: null != g ? g : true,
     role: "img",
     "aria-label": null != C ? C : true,
@@ -167,7 +167,7 @@ function m(e) {
     cornerIconOffsetX: b = 0,
     cornerIconOffsetY: O = 0
   } = e, v = (0, d.UC)(n), j = v.size, x = (0, i.useId)();
-  return (0, r.jsx)(g, h(p({}, e), {
+  return (0, r.jsx)(g, p(h({}, e), {
     ariaLabel: s,
     ariaHidden: l,
     specs: v,
@@ -211,7 +211,7 @@ function m(e) {
           className: u,
           isSpeaking: false
         })
-      }), null != m && (0, r.jsx)("foreignObject", h(p({}, _(v, b, O)), {
+      }), null != m && (0, r.jsx)("foreignObject", p(h({}, _(v, b, O)), {
         mask: "url(#".concat(c.QS.SQUIRCLE, ")"),
         children: (0, r.jsx)("img", {
           src: m,
@@ -234,7 +234,7 @@ function b(e) {
     cornerIconOffsetX: u = 0,
     cornerIconOffsetY: m = 0
   } = e, b = (0, i.useId)(), O = (0, i.useId)(), v = (0, d.UC)(n), j = v.size + u, x = v.size + m, C = y(v, u, m), E = _(v, u, m);
-  return (0, r.jsx)(g, h(p({}, e), {
+  return (0, r.jsx)(g, p(h({}, e), {
     ariaLabel: a,
     ariaHidden: l,
     specs: v,
@@ -282,7 +282,7 @@ function b(e) {
             "aria-hidden": true
           })
         }, t)
-      }), null != s && (0, r.jsx)("foreignObject", h(p({}, E), {
+      }), null != s && (0, r.jsx)("foreignObject", p(h({}, E), {
         mask: "url(#".concat(O, ")"),
         children: (0, r.jsx)("img", {
           src: s,

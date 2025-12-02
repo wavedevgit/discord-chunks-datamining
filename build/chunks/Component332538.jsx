@@ -44,7 +44,7 @@ function N(e) {
         } = (0, E._)(e, "useGuildPowerupsChannelListIndicators"),
         d = (0, c.OA)(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, e),
         f = u && !d,
-        p = (0, o.e7)([m.Z], () => m.Z.getStateForGuild(e));
+        h = (0, o.e7)([m.Z], () => m.Z.getStateForGuild(e));
       return i.useMemo(() => {
         var e, i, o, a;
         if (null == t) return {
@@ -53,8 +53,8 @@ function N(e) {
         };
         let {
           unlockedPowerups: c
-        } = t, u = (0, C.h)([...Object.values(c), ...Object.values(null != (i = null == p ? true : p.entitlements) ? i : {})]), d = null != (o = null == n ? true : n.lastSeenWarningNotification) ? o : Date.now(), h = new Date(null == (e = u[u.length - 1]) ? true : e.ends_at).getTime(), g = null != (a = null == n ? true : n.lastBoostCount) ? a : 0;
-        return u.length > 0 && d < h || f ? {
+        } = t, u = (0, C.h)([...Object.values(c), ...Object.values(null != (i = null == h ? true : h.entitlements) ? i : {})]), d = null != (o = null == n ? true : n.lastSeenWarningNotification) ? o : Date.now(), p = new Date(null == (e = u[u.length - 1]) ? true : e.ends_at).getTime(), g = null != (a = null == n ? true : n.lastBoostCount) ? a : 0;
+        return u.length > 0 && d < p || f ? {
           trailing: (0, r.jsx)(s.Mgn, {
             color: s.TVs.colors.STATUS_WARNING,
             size: "sm"
@@ -70,7 +70,7 @@ function N(e) {
           trailing: true,
           showUnread: false
         }
-      }, [l, null == n ? true : n.lastBoostCount, null == n ? true : n.lastSeenWarningNotification, t, f, null == p ? true : p.entitlements])
+      }, [l, null == n ? true : n.lastBoostCount, null == n ? true : n.lastSeenWarningNotification, t, f, null == h ? true : h.entitlements])
     }(e, n, t),
     N = function(e, t) {
       let [n, r] = (0, u.US)(null != t ? [a.z.GUILD_POWERUP_PERKS_COACHMARK] : []), s = n === a.z.GUILD_POWERUP_PERKS_COACHMARK, {
@@ -97,7 +97,7 @@ function N(e) {
               r = S.Rx[n],
               o = (null == t || null == (i = t.unlockedPowerups) ? true : i[n]) != null;
             if (null == r && !o) return S.Du.VANITY_URL;
-            let a = (0, h.Jh)(e);
+            let a = (0, p.Jh)(e);
             if (null != a && null != r && a < r && !o) return S.Du.VANITY_URL
           }
           return 0
@@ -105,7 +105,7 @@ function N(e) {
       }(e, t), [C, E] = (0, u.XR)(null != t && !s && y > 0 ? a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK : null, y), P = C === a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, N = i.useMemo(() => {
         if (null == t || s || P) return;
         let n = function(e, t) {
-          let n = h.Oe.find(e => {
+          let n = p.Oe.find(e => {
             let n = S.Cp[e],
               r = null != n ? t.unlockedPowerups[n] : true;
             return null != r && r.user_id !== S.Fq
@@ -134,7 +134,7 @@ function N(e) {
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
               return null == i || n < i.cost || (0, j.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
-            })).filter(p.lm);
+            })).filter(h.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, d.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
               type: O.J.PERKS_PURCHASABLE,
@@ -238,7 +238,7 @@ function Z(e) {
     var e;
     null == n || null == (e = n.popout) || e.markAsDismissed(P.L.AUTO_DISMISS)
   }, [n]), i.useEffect(() => {
-    null != t && h.Oe.forEach(n => {
+    null != t && p.Oe.forEach(n => {
       let r = S.Cp[n];
       if (null == r || null == t.unlockedPowerups[r]) return;
       let i = S.Q1[n];

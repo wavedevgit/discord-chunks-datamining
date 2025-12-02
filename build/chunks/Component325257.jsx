@@ -74,7 +74,7 @@ let D = {
 };
 
 function L(e, t) {
-  (0, h.jW)(e, async () => {
+  (0, p.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([n.e("70363"), n.e("36599"), n.e("7654"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("86736"), n.e("6850"), n.e("58227"), n.e("44686"), n.e("384"), n.e("22516"), n.e("87154"), n.e("33213"), n.e("73709")]).then(n.bind(n, 545135));
@@ -84,7 +84,7 @@ function L(e, t) {
   })
 }
 let M = Chunk473749.memo(function(e) {
-  var t, n, l, h, M;
+  var t, n, l, p, M;
   let {
     guildNode: k,
     setRef: G,
@@ -111,9 +111,9 @@ let M = Chunk473749.memo(function(e) {
     id: el,
     parentId: eo
   } = k, ea = null != (t = e.upperBadge) ? t : Y ? (0, N.Ny)() : null != K ? (0, N.Or)(K) : true, es = null != (n = e.lowerBadge) ? n : true;
-  null == es && q > 0 ? es = null != (l = (0, N.Ne)(q, Q ? f.TVs.colors.BACKGROUND_ACCENT.css : f.TVs.colors.STATUS_DANGER.css)) ? l : true : null == es && null != et && (es = null != (h = (0, N.jt)({
+  null == es && q > 0 ? es = null != (l = (0, N.Ne)(q, Q ? f.TVs.colors.BACKGROUND_ACCENT.css : f.TVs.colors.STATUS_DANGER.css)) ? l : true : null == es && null != et && (es = null != (p = (0, N.jt)({
     guildJoinRequestStatus: et
-  })) ? h : true);
+  })) ? p : true);
   let ec = null != (M = e.lowerBadgeSize) ? M : {
       width: (0, f.OVM)(q)
     },
@@ -135,8 +135,8 @@ let M = Chunk473749.memo(function(e) {
       })
     }),
     ef = (0, c.Ie)(null != el ? el : Z.lds, null != eo ? 2 : 1),
-    [ep, eh] = i.useState(false),
-    eg = !$ && ep,
+    [eh, ep] = i.useState(false),
+    eg = !$ && eh,
     [em, eb] = i.useState(false),
     [e_, ey] = i.useState(false),
     [eO] = i.useState(() => new d.sW(70, () => ey(true)));
@@ -152,7 +152,7 @@ let M = Chunk473749.memo(function(e) {
     ej = i.useCallback(() => {
       if (null != F || null == V || Y || !ee) return;
       let e = (0, m.V)(V.id);
-      null != e && p.Z.preload(V.id, e)
+      null != e && h.Z.preload(V.id, e)
     }, [F, V, Y, ee]),
     ex = (0, u.e7)([O.ZP], () => O.ZP.isCurrentUserGuest(el)),
     eC = i.useCallback(e => {
@@ -191,10 +191,10 @@ let M = Chunk473749.memo(function(e) {
       name: V.name,
       onClick: ev,
       onMouseEnter: function() {
-        $ || eh(true)
+        $ || ep(true)
       },
       onMouseLeave: function() {
-        $ || eh(false)
+        $ || ep(false)
       },
       onMouseDown: ej,
       onContextMenu: eC,

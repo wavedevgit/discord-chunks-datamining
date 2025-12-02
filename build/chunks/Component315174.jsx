@@ -218,9 +218,9 @@ function R(e) {
     onClick: a,
     onContextMenu: s,
     ariaControls: f,
-    ariaExpanded: p,
+    ariaExpanded: h,
     children: m
-  } = e, _ = (0, c.e7)([b.Z], () => (0, h.b)(b.Z, o)), y = i.useCallback(() => {
+  } = e, _ = (0, c.e7)([b.Z], () => (0, p.b)(b.Z, o)), y = i.useCallback(() => {
     _ ? (0, d.ZDy)(async () => {
       let {
         default: e
@@ -243,7 +243,7 @@ function R(e) {
         guildName: null != (t = null == o ? true : o.name) ? t : ""
       }),
       "aria-controls": f,
-      "aria-expanded": p,
+      "aria-expanded": h,
       onContextMenu: s,
       onClick: a,
       children: [(0, r.jsxs)("div", {
@@ -283,7 +283,7 @@ let D = Chunk473749.memo(function(e) {
     className: a,
     onClick: c,
     onContextMenu: u,
-    onMouseDown: h,
+    onMouseDown: p,
     disableBannerAnimation: g,
     "aria-expanded": b,
     "aria-controls": O,
@@ -311,7 +311,7 @@ let D = Chunk473749.memo(function(e) {
       } = e;
       return null != n && !t
     },
-    Q = (0, p._k)({
+    Q = (0, h._k)({
       location: "guild_header"
     }),
     X = {
@@ -340,7 +340,7 @@ let D = Chunk473749.memo(function(e) {
           [C.communityInfoVisible]: U || D && G,
           [C.invitesRefresh]: Q.isGuildEntrypointEnabled
         }),
-        onMouseDown: h,
+        onMouseDown: p,
         onClick: Q.isGuildEntrypointEnabled ? true : c,
         onContextMenu: u,
         children: [(0, r.jsxs)("header", {

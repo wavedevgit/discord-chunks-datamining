@@ -56,33 +56,33 @@ let j = {
       selected: l
     } = e, x = (0, m.ZP)(t), C = i.useCallback(() => {
       var e;
-      (0, f.jd)(t), (0, h.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == x || null == (e = x.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
+      (0, f.jd)(t), (0, p.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == x || null == (e = x.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
     }, [t, x]), E = i.useRef(null), S = (0, s.s9z)(s.JQI), I = (0, a.e7)([d.Z], () => d.Z.hasLayers()), P = S || I, N = i.useCallback(() => {
       var e;
       if ((null == x ? true : x.popout) == null || P) return null;
       switch (null == x || null == (e = x.popout) ? true : e.type) {
-        case p.J.LEVEL_REACHED:
+        case h.J.LEVEL_REACHED:
           return (0, r.jsx)(g.jG, v({
             guildId: t,
             channelRowRef: E
           }, x.popout));
-        case p.J.PERKS_AVAILABLE:
+        case h.J.PERKS_AVAILABLE:
           return (0, r.jsx)(g.$h, v({
             guildId: t,
             channelRowRef: E
           }, x.popout));
-        case p.J.PERKS_PURCHASABLE:
+        case h.J.PERKS_PURCHASABLE:
           return (0, r.jsx)(g.yI, v({
             guildId: t,
             channelRowRef: E
           }, x.popout));
-        case p.J.NEW_PERK_AVAILABLE:
+        case h.J.NEW_PERK_AVAILABLE:
           return (0, r.jsx)(g.cO, v({
             guildId: t,
             channelRowRef: E
           }, x.popout));
-        case p.J.GAME_SERVER_HOSTING_AVAILABLE:
-        case p.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
+        case h.J.GAME_SERVER_HOSTING_AVAILABLE:
+        case h.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
           return (0, r.jsx)(g.dJ, v({
             guildId: t,
             channelRowRef: E

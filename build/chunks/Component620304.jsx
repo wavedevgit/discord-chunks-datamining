@@ -29,12 +29,12 @@ function j(e) {
     withMargin: l
   } = e, j = (0, b.Z)(t), x = (0, m.Z)(t.id), C = i.useCallback(() => {
     (0, _.Z)(t.id, f.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-  }, [t.id]), E = (0, c.e7)([h.Z], () => {
+  }, [t.id]), E = (0, c.e7)([p.Z], () => {
     var e;
-    return null != (e = h.Z.getCountForGuild(t.id)) ? e : 0
+    return null != (e = p.Z.getCountForGuild(t.id)) ? e : 0
   });
   i.useEffect(() => {
-    E !== t.premiumSubscriberCount && (0, p.v)(t.id, t.premiumSubscriberCount)
+    E !== t.premiumSubscriberCount && (0, h.v)(t.id, t.premiumSubscriberCount)
   }, [t.id, E, t.premiumSubscriberCount]);
   let S = Math.min(E / j * 100, 100),
     [I, P] = (0, u.q_F)(() => ({

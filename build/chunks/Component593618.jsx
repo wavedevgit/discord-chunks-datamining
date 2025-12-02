@@ -75,7 +75,7 @@ function U(e) {
   } = e, n = t.id, {
     voiceUsersToShow: l,
     stageSpeakers: a,
-    numStageListeners: h,
+    numStageListeners: p,
     streamUsersToShow: g,
     embeddedActivitiesUsers: m
   } = function(e) {
@@ -104,7 +104,7 @@ function U(e) {
           } = e;
           return t
         });
-        return (0, p.dq)(r, a)
+        return (0, h.dq)(r, a)
       }),
       f = (0, c.Wu)([j.Z], () => s().flatMap(l, t => {
         if (t === e.afkChannelId) return [];
@@ -114,28 +114,28 @@ function U(e) {
           } = e;
           return t
         });
-        return (0, p.dq)(n, a)
+        return (0, h.dq)(n, a)
       })),
-      h = (0, c.e7)([j.Z], () => {
+      p = (0, c.e7)([j.Z], () => {
         let e = 0;
         for (let t of l) e += j.Z.getParticipantCount(t, x.pV.AUDIENCE);
         return e
       }),
       g = (0, c.Wu)([P.Z], () => {
         let e = P.Z.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
-        return (0, p._j)(e, a)
+        return (0, h._j)(e, a)
       }, [a, t]),
       m = (0, c.Wu)([d.ZP], () => {
         let e = d.ZP.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
-        return (0, p._j)(e, a)
+        return (0, h._j)(e, a)
       }, [t, a]),
       b = (0, c.Wu)([T.default], () => {
         let e = m.map(e => T.default.getUser(e));
-        return (0, p.dq)(e)
+        return (0, h.dq)(e)
       }, [m]),
       _ = (0, c.Wu)([T.default], () => g.map(e => T.default.getUser(e)), [g]),
       y = u.filter(e => !g.includes(e.id) && !m.includes(e.id)),
-      O = (0, p.dq)(y),
+      O = (0, h.dq)(y),
       v = _.filter(e => null != e && !m.includes(e.id)),
       w = (0, c.e7)([S.Z], () => S.Z.getUserAffinitiesMap(), []),
       D = i.useMemo(() => (0, I.C)(O, w, "GuildTooltip - nonBlockedUsers"), [O, w]),
@@ -144,7 +144,7 @@ function U(e) {
     return {
       voiceUsersToShow: D,
       stageSpeakers: L,
-      numStageListeners: h,
+      numStageListeners: p,
       streamUsersToShow: M,
       embeddedActivitiesUsers: i.useMemo(() => (0, I.C)(b, w, "GuildTooltip - embeddedActivitiesUsers"), [b, w]),
       hasActivity: f.length > 0 || y.length > 0 || v.length > 0 || b.length > 0
@@ -168,7 +168,7 @@ function U(e) {
         className: L.stageListenerCount,
         color: "text-default",
         variant: "text-xs/normal",
-        children: h
+        children: p
       })]
     })]
   }), y = k(u.hGI, g, n), O = k(u.nG3, m, n), {
@@ -214,7 +214,7 @@ function B(e) {
 function F(e) {
   let {
     guild: t
-  } = e, n = (0, h.Z)(t), i = (0, _.E)(t), l = null != i ? (0, r.jsx)(B, {
+  } = e, n = (0, p.Z)(t), i = (0, _.E)(t), l = null != i ? (0, r.jsx)(B, {
     guildJoinRequestStatus: i
   }) : null, a = (0, r.jsx)(U, {
     guild: t

@@ -82,12 +82,12 @@ let N = Chunk473749.memo(function(e) {
       R = (0, s.e7)([y.Z], () => y.Z.can(x.Plq.MANAGE_CHANNELS, l));
     t = null != N ? j > N ? E.containerDragAfter : E.containerDragBefore : E.containerDefault;
     let D = i.useCallback(() => {
-        A ? (0, p.mJ)(l.id) : (0, p.c4)(l.id)
+        A ? (0, h.mJ)(l.id) : (0, h.c4)(l.id)
       }, [l.id, A]),
       L = i.useCallback(e => {
         if ("null" !== l.id) {
           let t = _.Z.getGuild(l.getGuildId());
-          null != t && (0, h.jW)(e, async () => {
+          null != t && (0, p.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));

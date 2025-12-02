@@ -15,7 +15,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function p(e) {
   let {
     username: t,
     applicationId: n,
@@ -23,10 +23,10 @@ function h(e) {
     withApplication: i,
     withDefault: l
   } = e;
-  return null != n ? p.intl.format(i, {
+  return null != n ? h.intl.format(i, {
     username: t,
     applicationName: () => r(n)
-  }) : p.intl.format(l, {
+  }) : h.intl.format(l, {
     username: t
   })
 }
@@ -42,7 +42,7 @@ function g(e) {
       let T = u.ZP.getName(s.default.getUser(null == (m = I.other_users) || null == (g = m[0]) ? true : g.id)),
         A = u.ZP.getName(s.default.getUser(null == (_ = I.other_users) || null == (b = _[1]) ? true : b.id)),
         R = Math.max((null != (O = null == (y = I.other_users) ? true : y.length) ? O : 0) - 2, 0);
-      return p.intl.format(p.t.g5xyIC, {
+      return h.intl.format(h.t.g5xyIC, {
         user: T,
         user2: A,
         count: R
@@ -58,47 +58,47 @@ function g(e) {
         k = null == M ? true : M.name,
         G = null == (C = o.Z.getGuild(null == M ? true : M.guild_id)) ? true : C.name,
         U = (0, l.Z2)(null != M ? M : true);
-      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (E = I.body) ? E : "" : p.intl.format(p.t.AyvfXR, {
+      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (E = I.body) ? E : "" : h.intl.format(h.t.AyvfXR, {
         event_name: k,
         guild_name: G
       });
     case d.O7.INCOMING_FRIEND_REQUESTS:
-      return h({
+      return p({
         username: Z,
         applicationId: w,
         renderApplication: P,
-        withApplication: p.t["9Dgf1L"],
-        withDefault: p.t.uIomXw
+        withApplication: h.t["9Dgf1L"],
+        withDefault: h.t.uIomXw
       });
     case d.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED:
-      return h({
+      return p({
         username: Z,
         applicationId: w,
         renderApplication: P,
-        withApplication: p.t.nnC1q9,
-        withDefault: p.t["5Uzkdp"]
+        withApplication: h.t.nnC1q9,
+        withDefault: h.t["5Uzkdp"]
       });
     case d.DY.FRIEND_REQUEST_ACCEPTED:
-      return h({
+      return p({
         username: Z,
         applicationId: w,
         renderApplication: P,
-        withApplication: p.t.jXlYiF,
-        withDefault: p.t.McYRBk
+        withApplication: h.t.jXlYiF,
+        withDefault: h.t.McYRBk
       });
     case d.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
-      return i()(null != w, "Expected application id for ".concat(I.type)), p.intl.format(p.t["BB/0vn"], {
+      return i()(null != w, "Expected application id for ".concat(I.type)), h.intl.format(h.t["BB/0vn"], {
         username: Z,
         applicationName: () => P(w)
       });
     case d.O7.INCOMING_GAME_FRIEND_REQUESTS:
-      return i()(null != w, "Expected application id for ".concat(I.type)), p.intl.format(p.t["7cqOLI"], {
+      return i()(null != w, "Expected application id for ".concat(I.type)), h.intl.format(h.t["7cqOLI"], {
         username: Z,
         applicationName: () => P(w)
       });
     case d.DY.GAME_FRIEND_REQUEST_ACCEPTED:
       if (null == w) return I.body;
-      return p.intl.format(p.t.Wi64vN, {
+      return h.intl.format(h.t.Wi64vN, {
         username: Z,
         applicationName: () => P(w)
       })

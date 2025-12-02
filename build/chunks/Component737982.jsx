@@ -27,8 +27,8 @@ let O = Chunk473749.memo(function(e) {
   } = e, O = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), [j, x] = (0, c.ZT)([o.z.GAME_SERVER_HOSTING_NEW_BADGE], t), C = j === o.z.GAME_SERVER_HOSTING_NEW_BADGE, [E, S] = (0, c.ZT)(O || v || !C ? [] : [o.z.GAME_SERVER_HOSTING_NEW_COACHMARK], t), I = i.useCallback(e => {
     x(e), S(e)
   }, [x, S]), P = i.useCallback(() => {
-    I(m.L.USER_DISMISS), (0, d.uL)(h.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
-  }, [t, I]), N = i.useRef(null), Z = E === o.z.GAME_SERVER_HOSTING_NEW_COACHMARK, w = i.useCallback(() => (0, r.jsx)(p.En, {
+    I(m.L.USER_DISMISS), (0, d.uL)(p.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
+  }, [t, I]), N = i.useRef(null), Z = E === o.z.GAME_SERVER_HOSTING_NEW_COACHMARK, w = i.useCallback(() => (0, r.jsx)(h.En, {
     channelRowRef: N,
     guildId: t,
     markAsDismissed: I
