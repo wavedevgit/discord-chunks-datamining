@@ -28,11 +28,26 @@ function b(e) {
     type: a.l.APPLICATION,
     applicationId: n.id
   }), [n.id]), v = i.useCallback(() => {
-    null != y && ((0, u.qH)(y.type, y, true), h({
-      action: "WIDGET_ADDED",
-      widgetEdited: y.type,
-      applicationId: y.applicationId
-    }), (0, d.L$)(g.qb.WIDGET_ADDED))
+    null != y && ((0, u.qH)(y.type, y, true), h(function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({
+      action: "WIDGET_ADDED"
+    }, y.getProfileEditAnalyticsOptions())), (0, d.L$)(g.qb.WIDGET_ADDED))
   }, [y, h]);
   return (0, r.jsx)(f.Z, {
     user: t,

@@ -35,12 +35,12 @@ function y(e) {
     application: O
   } = (0, h.G)(), {
     fetched: P,
-    hasAlreadyLinked: I,
-    canStartAuthorization: w,
+    hasAlreadyLinked: w,
+    canStartAuthorization: I,
     startAuthorization: k
   } = (0, c.F)(O), R = (0, x.ZP)(N), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == O ? true : O.id));
   return null != T && null != T.edit_profile_upsell_image && null != O && P ? (0, a.jsx)(d.ZP, {
-    contentTypes: I ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : w ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    contentTypes: w ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : I ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
@@ -70,14 +70,31 @@ function y(e) {
               userId: N,
               section: j.oh.WIDGETS
             }).then(() => {
-              l(v.L.TAKE_ACTION), y(), (0, p.qH)(i.l.APPLICATION, new m.q({
+              l(v.L.TAKE_ACTION), y();
+              let e = new m.q({
                 applicationId: O.id,
                 type: i.l.APPLICATION
-              })), E({
-                action: "WIDGET_ADDED",
-                widgetEdited: i.l.APPLICATION,
-                applicationId: O.id
-              }), (0, g.L$)(j.qb.WIDGET_ADDED)
+              });
+              (0, p.qH)(e.type, e), E(function(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                  var n = null != arguments[t] ? arguments[t] : {},
+                    a = Object.keys(n);
+                  "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(n, e).enumerable
+                  }))), a.forEach(function(t) {
+                    var a;
+                    a = n[t], t in e ? Object.defineProperty(e, t, {
+                      value: a,
+                      enumerable: true,
+                      configurable: true,
+                      writable: true
+                    }) : e[t] = a
+                  })
+                }
+                return e
+              }({
+                action: "WIDGET_ADDED"
+              }, e.getProfileEditAnalyticsOptions())), (0, g.L$)(j.qb.WIDGET_ADDED)
             }).finally(() => S(false))
           },
           loading: C

@@ -1,33 +1,33 @@
-/** Chunk was on 26494 **/
+/** Chunk was on 44097 **/
 /** chunk id: 788956, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => a
+  d: () => o
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk457330 = require("./457330.js"),
   Chunk553795 = require("./553795.js");
 
-function a(e) {
-  let t = (0, i.e7)([o.Z], () => null != e ? o.Z.getAccount(null, e) : null),
-    n = (0, i.e7)([o.Z], () => o.Z.isFetching()),
-    a = null != t && !t.revoked;
+function o(e) {
+  let t = (0, i.e7)([l.Z], () => null != e ? l.Z.getAccount(null, e) : null),
+    n = (0, i.e7)([l.Z], () => l.Z.isFetching()),
+    o = null != t && !t.revoked;
   return {
     loading: n,
-    hasConnection: a,
+    hasConnection: o,
     canConnect: null != e,
-    startConnection: l.useCallback(async t => {
+    startConnection: r.useCallback(async t => {
       if (null == e) return {
         success: false
       };
       try {
         var n;
-        let l = await r.Z.authorize(e, {
+        let r = await a.Z.authorize(e, {
           location: null != t ? t : "Account Linking"
         });
-        if (l.ok && (null == (n = l.body) ? true : n.url) != null) return {
+        if (r.ok && (null == (n = r.body) ? true : n.url) != null) return {
           success: true,
-          url: l.body.url
+          url: r.body.url
         };
         return {
           success: false

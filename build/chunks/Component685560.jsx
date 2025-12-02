@@ -1,7 +1,7 @@
 /** Chunk was on 837 **/
 /** chunk id: 685560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk913527 = require("./913527.js"),
@@ -61,7 +61,7 @@ async function P(e) {
   })
 }
 
-function I() {
+function w() {
   let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => {
       var t;

@@ -29,6 +29,18 @@ class i {
   isEqual(e) {
     return e instanceof i && e.applicationId === this.applicationId
   }
+  getProfileAnalyticsOptions() {
+    return {
+      widgetType: this.type,
+      applicationId: this.applicationId
+    }
+  }
+  getProfileEditAnalyticsOptions() {
+    return {
+      widgetEdited: this.type,
+      applicationId: this.applicationId
+    }
+  }
   constructor({
     id: e,
     type: t,

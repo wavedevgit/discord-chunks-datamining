@@ -1,7 +1,7 @@
 /** Chunk was on 55183 **/
 /** chunk id: 52268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 }), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -94,18 +94,18 @@ let j = () => 80,
     let j = (0, f.V)(n.skuId),
       P = i.useRef(null),
       {
-        accessibilityLabel: v,
-        thumbnailPreviewSrc: _,
+        accessibilityLabel: _,
+        thumbnailPreviewSrc: v,
         title: E
       } = null != (t = null == j ? true : j.config) ? t : {},
-      C = i.useMemo(() => (0, a.JE)(_), [_]);
+      C = i.useMemo(() => (0, a.JE)(v), [v]);
     return (0, r.jsxs)(O, y(x({
       innerRef: null != l ? l : P,
       isSelected: s
     }, m), {
       children: [(0, r.jsx)("img", {
         src: h,
-        alt: v,
+        alt: _,
         className: g.presetEffectBackground
       }), (0, r.jsx)("img", {
         className: g.presetEffectImg,
@@ -120,7 +120,7 @@ let j = () => 80,
       })]
     }))
   },
-  v = e => {
+  _ = e => {
     let {
       user: t,
       guild: n,
@@ -149,9 +149,9 @@ let j = () => 80,
         renderItem: (e, t, d, y) => {
           let {
             section: j,
-            items: v
+            items: _
           } = f[e];
-          return (0, s.EQ)(v[t]).with(p.Tm, () => (0, r.jsxs)(O, {
+          return (0, s.EQ)(_[t]).with(p.Tm, () => (0, r.jsxs)(O, {
             style: x({}, d),
             isSelected: !h,
             onSelect: () => a(null),

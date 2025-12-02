@@ -20,35 +20,38 @@ let d = function(e) {
     t([...n.filter(t => !e.some(e => e.filter === t.filter)), ...i])
   }, [n, t]);
   return (0, r.jsx)(o.Z, {
-    renderPopout: (e, i) => {
+    renderPopout: (e, a) => {
       let {
-        closePopout: a
+        closePopout: f
       } = e;
       return (0, r.jsxs)("div", {
         children: [d.map((e, t) => {
-          let a = e.options.map(e => ({
+          let c = e.options.map(e => ({
               label: (0, s.Nt)(e.filter),
               value: e.filter
             })),
-            c = n.filter(t => e.options.some(e => e.filter === t.filter)).map(e => e.filter);
-          return (0, r.jsxs)("div", {
-            className: u.filterOptionGroup,
-            children: [(0, r.jsx)(o.g, {
-              id: i,
+            d = n.filter(t => e.options.some(e => e.filter === t.filter)).map(e => e.filter);
+          return (0, r.jsxs)(i.Fragment, {
+            children: [t > 0 && (0, r.jsx)("hr", {
+              className: u.groupDivider
+            }), (0, r.jsx)(o.g, {
+              id: a,
               children: e.heading
             }), (0, r.jsx)(l.cOn, {
-              "aria-labelledby": i,
-              options: a,
-              selectedValues: c,
+              "aria-labelledby": a,
+              options: c,
+              selectedValues: d,
               onChange: p(e.options)
             })]
           }, t)
+        }), (0, r.jsx)("hr", {
+          className: u.groupDivider
         }), (0, r.jsx)("div", {
-          className: u.filterOptionGroup,
+          className: u.submitWrapper,
           children: (0, r.jsx)(l.Button, {
             fullWidth: true,
             onClick: () => {
-              t([]), a()
+              t([]), f()
             },
             size: "sm",
             text: c.intl.string(c.t.VkKicb),

@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk335131 = require("./335131.js"),
   Chunk884697 = require("./884697.js"),
   Chunk449217 = require("./449217.js"),
-  Chunk566111 = require("./566111.js"),
+  Chunk223143 = require("./223143.js"),
   Chunk269982 = require("./269982.jsx"),
   Chunk767714 = require("./767714.jsx"),
   Chunk150039 = require("./150039.js"),
@@ -46,22 +46,22 @@ function C(e) {
       className: E.modalFooter,
       children: [null != i && (d || !h) || null === g || f && h ? (0, r.jsx)(o.Button, {
         variant: "primary",
-        text: _.intl.string(_.t.Jh8fJz),
+        text: v.intl.string(v.t.Jh8fJz),
         onClick: l,
         disabled: a
       }) : null == i && (d || !h) ? (0, r.jsx)(o.Button, {
         variant: "primary",
-        text: _.intl.string(_.t.fYfGgK),
+        text: v.intl.string(v.t.fYfGgK),
         onClick: () => c(null == g ? true : g.skuId)
       }) : (0, r.jsx)(m.Z, {
-        subscriptionTier: v.Si.TIER_2,
+        subscriptionTier: _.Si.TIER_2,
         showGradient: !d,
         textOptions: {
-          textOverride: b.ZP.isPremium(t) ? _.intl.string(_.t.KXLX7l) : d ? _.intl.string(_.t.mr4K7D) : _.intl.string(_.t.pj0XBN)
+          textOverride: b.ZP.isPremium(t) ? v.intl.string(v.t.KXLX7l) : d ? v.intl.string(v.t.mr4K7D) : v.intl.string(v.t.pj0XBN)
         }
       }), d || f || !h ? (0, r.jsx)(o.Button, {
         variant: "secondary",
-        text: _.intl.string(_.t["ETE/oC"]),
+        text: v.intl.string(v.t["ETE/oC"]),
         onClick: s
       }) : (0, r.jsx)(p.Z, {
         product: n,
@@ -87,12 +87,12 @@ function I(e) {
   } = (0, g.sY)({
     guildId: null == n ? true : n.id,
     isTryItOut: x
-  }), [v, I] = i.useMemo(() => {
+  }), [_, I] = i.useMemo(() => {
     let e = (0, u.bl)(l, c);
     return [e.purchased, e.shopPreviews]
   }, [l, c]), [S, w] = i.useState(() => null != f ? f : true !== P ? P : null == p ? null : null != p ? p : null), [A, N] = i.useMemo(() => {
     var e;
-    let t = v.find(e => {
+    let t = _.find(e => {
         let {
           skuId: t
         } = e;
@@ -105,10 +105,10 @@ function I(e) {
       } = e;
       return t === (null == S ? true : S.skuId)
     })) ? e : null, n]
-  }, [S, v, I]), {
+  }, [S, _, I]), {
     product: T,
-    purchase: Z
-  } = (0, d.Z)(null == A ? true : A.skuId), k = i.useRef(null), D = b.ZP.canUseCollectibles(t), U = true === P ? (null == S ? true : S.skuId) === (null == p ? true : p.skuId) : (null == S ? true : S.skuId) === (null == P ? true : P.skuId), B = i.useCallback(e => {
+    purchase: k
+  } = (0, d.Z)(null == A ? true : A.skuId), D = i.useRef(null), Z = b.ZP.canUseCollectibles(t), U = true === P ? (null == S ? true : S.skuId) === (null == p ? true : p.skuId) : (null == S ? true : S.skuId) === (null == P ? true : P.skuId), B = i.useCallback(e => {
     w(e)
   }, [w]), L = i.useCallback(e => {
     y(), (0, a.mK)({
@@ -124,7 +124,7 @@ function I(e) {
       className: E.modalHeader,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        children: _.intl.string(_.t["/6nv6N"])
+        children: v.intl.string(v.t["/6nv6N"])
       }), (0, r.jsx)(o.olH, {
         "data-migration-pending": true,
         className: E.modalCloseButton,
@@ -137,7 +137,7 @@ function I(e) {
         user: t,
         guild: n,
         pendingProfileEffect: S,
-        selectedProfileEffectRef: k,
+        selectedProfileEffectRef: D,
         isTryItOut: x,
         onSelect: B,
         onOpenShop: L
@@ -146,7 +146,7 @@ function I(e) {
         canApplySelectedChange: N,
         pendingProfileEffectRecord: A,
         product: T,
-        purchase: Z,
+        purchase: k,
         guild: n
       })]
     }), (0, r.jsx)(C, {
@@ -157,8 +157,8 @@ function I(e) {
       onClose: y,
       onOpenShop: L,
       product: T,
-      purchase: Z,
-      canUsePremiumCollectibles: D,
+      purchase: k,
+      canUsePremiumCollectibles: Z,
       isTryItOut: x,
       selectedProfileEffect: S,
       disableApplyButton: U
@@ -178,9 +178,9 @@ function S(e) {
     isFetching: m,
     categories: h,
     purchases: b
-  } = (0, f.Z)(), j = (0, l.e7)([x.default], () => x.default.getCurrentUser()), {
+  } = (0, f.ZP)(), j = (0, l.e7)([x.default], () => x.default.getCurrentUser()), {
     analyticsLocations: O
-  } = (0, c.ZP)(n, s.Z.EDIT_PROFILE_EFFECT_MODAL), v = (0, g.nh)({
+  } = (0, c.ZP)(n, s.Z.EDIT_PROFILE_EFFECT_MODAL), _ = (0, g.nh)({
     user: j,
     guildId: null == u ? true : u.id
   });
@@ -206,7 +206,7 @@ function S(e) {
         categories: h,
         purchases: b,
         initialSelectedProfileEffect: a,
-        currentSavedEffect: v,
+        currentSavedEffect: _,
         onClose: p,
         analyticsLocations: O,
         isTryItOut: d

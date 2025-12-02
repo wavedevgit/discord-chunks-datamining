@@ -1,7 +1,7 @@
 /** Chunk was on 44097 **/
 /** chunk id: 939974, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,14 +16,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk313201 = require("./313201.js"),
   Chunk314897 = require("./314897.js"),
   Chunk785717 = require("./785717.jsx"),
-  Chunk931847 = require("./931847.js"),
   Chunk86419 = require("./86419.js"),
   Chunk872269 = require("./872269.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk680604 = require("./680604.js");
 
-function j(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +41,7 @@ function j(e) {
   return e
 }
 
-function x(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,23 +54,23 @@ function x(e, t) {
   }), e
 }
 
-function _(e) {
+function x(e) {
   let {
     widget: t,
     className: n,
     buttonRef: i,
     additionalMenuItems: l
-  } = e, o = (0, b.mR)(t), c = (0, f.Dt)();
-  return (0, r.jsx)(I, {
+  } = e, o = (0, m.mR)(t), c = (0, f.Dt)();
+  return (0, r.jsx)(P, {
     targetRef: i,
     widget: t,
     additionalMenuItems: l,
-    children: e => (0, r.jsx)(P, {
-      children: (0, r.jsxs)(s.P3F, x(j({
+    children: e => (0, r.jsx)(_, {
+      children: (0, r.jsxs)(s.P3F, j(O({
         innerRef: i,
-        className: a()(O.button, n),
+        className: a()(v.button, n),
         "data-dnd-name": o,
-        "aria-label": v.intl.formatToPlainString(v.t.HWNJJN, {
+        "aria-label": y.intl.formatToPlainString(y.t.HWNJJN, {
           widgetTitle: o
         }),
         "aria-describedby": c,
@@ -81,13 +80,13 @@ function _(e) {
           size: "sm"
         }), (0, r.jsx)(s.nn4, {
           id: c,
-          children: v.intl.string(v.t.bsuqFn)
+          children: y.intl.string(y.t.bsuqFn)
         })]
       }))
     })
   })
 }
-let P = e => {
+let _ = e => {
     let {
       children: t
     } = e, n = (0, o.e7)([d.Z], () => d.Z.keyboardModeEnabled), {
@@ -97,11 +96,11 @@ let P = e => {
     }));
     return (0, r.jsx)(c.u, {
       __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
-        className: O.tooltipText,
+        className: v.tooltipText,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "none",
-          children: v.intl.format(n ? v.t["zvln/l"] : v.t["7cdwhg"], {
+          children: y.intl.format(n ? y.t["zvln/l"] : y.t["7cdwhg"], {
             emphasizeHook: e => (0, r.jsx)("strong", {
               children: e
             })
@@ -109,7 +108,7 @@ let P = e => {
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "none",
-          children: v.intl.format(v.t["4e0rM4"], {
+          children: y.intl.format(y.t["4e0rM4"], {
             emphasizeHook: e => (0, r.jsx)("strong", {
               children: e
             })
@@ -122,7 +121,7 @@ let P = e => {
       children: t
     })
   },
-  I = e => {
+  P = e => {
     let {
       children: t,
       widget: i,
@@ -132,17 +131,15 @@ let P = e => {
       trackUserProfileEditAction: o
     } = (0, p.KZ)(), c = e => {
       if (e.shiftKey) {
-        (0, b.y8)(i.type), o({
-          action: "WIDGET_REMOVED",
-          widgetEdited: i.type,
-          applicationId: i instanceof m.q ? i.applicationId : true
-        }), (0, h.L$)(y.qb.WIDGET_REMOVED);
+        (0, m.y8)(i.type), o(O({
+          action: "WIDGET_REMOVED"
+        }, i.getProfileEditAnalyticsOptions())), (0, b.L$)(h.qb.WIDGET_REMOVED);
         return
       }(0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("70887").then(n.bind(n, 37668));
-        return t => (0, r.jsx)(e, x(j({}, t), {
+        return t => (0, r.jsx)(e, j(O({}, t), {
           userId: g.default.getId(),
           widget: i,
           trackUserProfileEditAction: o
@@ -166,12 +163,12 @@ let P = e => {
             (0, u.Zy)(), t()
           },
           onSelect: () => {},
-          "aria-label": v.intl.string(v.t.xpSHSk),
-          className: O.menu,
+          "aria-label": y.intl.string(y.t.xpSHSk),
+          className: v.menu,
           children: (0, r.jsxs)(s.kSQ, {
             children: [l, (0, r.jsx)(s.sNh, {
               id: "remove-widget",
-              label: v.intl.string(v.t.Mm07Yc),
+              label: y.intl.string(y.t.Mm07Yc),
               action: c,
               color: "danger",
               icon: s.XHJ

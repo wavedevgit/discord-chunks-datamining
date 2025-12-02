@@ -1,8 +1,8 @@
 /** Chunk was on 39380 **/
 /** chunk id: 70399, original params: e,a,l (module,exports,require) **/
 require.d(exports, {
-  T: () => j,
-  Z: () => x
+  T: () => x,
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk685009 = require("./685009.js");
 
-function x(e) {
+function f(e) {
   let {
     applicationId: a,
     size: l = "default"
@@ -61,23 +61,23 @@ function x(e) {
   })
 }
 
-function j(e) {
+function x(e) {
   let {
     applicationId: a,
     size: l = "default"
   } = e, {
     trackUserProfileAction: n
-  } = (0, u.KZ)(), r = (0, o.q)(a), {
+  } = (0, u.KZ)(), r = (0, d.q)(a), {
     hasAlreadyLinked: c,
     canStartAuthorization: p,
-    startAuthorization: x,
-    fetched: j
-  } = (0, d.F)(r), f = t.useCallback(() => {
+    startAuthorization: f,
+    fetched: x
+  } = (0, o.F)(r), j = t.useCallback(() => {
     p && (n({
       action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
       applicationId: a
-    }), x())
-  }, [p, n, a, x]);
+    }), f())
+  }, [p, n, a, f]);
   return "default" !== l || null == r ? null : (0, i.jsxs)("div", {
     className: v.footer,
     children: [(0, i.jsx)(s.uIJ, {
@@ -85,10 +85,10 @@ function j(e) {
     }), (0, i.jsx)(s.xvT, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: j ? c ? m.intl.format(m.t.wiyuG9, {
+      children: x ? c ? m.intl.format(m.t.wiyuG9, {
         applicationName: r.name
       }) : p ? m.intl.format(m.t.RNWFOQ, {
-        onConnect: f
+        onConnect: j
       }) : m.intl.string(m.t["9TX4UT"]) : (0, i.jsx)("div", {
         className: v.footerPlaceholder
       })

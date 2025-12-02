@@ -675,7 +675,6 @@ let e_ = "@me",
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "png";
       return "/avatar-decoration-presets/".concat(e, ".").concat(t)
     },
-    USER_PROFILE_EFFECTS: "/user-profile-effects",
     COLLECTIBLES_CATEGORIES: "/collectibles-categories",
     COLLECTIBLES_CATEGORIES_V2: "/collectibles-categories/v2",
     COLLECTIBLES_SEARCH: "/shop/search",

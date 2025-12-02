@@ -121,8 +121,8 @@ function eo(e) {
     eP = (0, v.Z)({
       analyticsLocations: ex
     }),
-    eI = (0, V.I5)(t),
-    ew = (0, h.p)({
+    ew = (0, V.I5)(t),
+    eI = (0, h.p)({
       location: "UserProfileAccountPopout"
     }),
     ek = (0, C.b)({
@@ -200,7 +200,7 @@ function eo(e) {
               user: t,
               themeType: ea.l.POPOUT,
               onCloseProfile: n,
-              prompt: ew ? eD : null
+              prompt: eI ? eD : null
             })]
           }), (0, a.jsxs)(c.Ttm, {
             className: ei.body,
@@ -237,15 +237,15 @@ function eo(e) {
               user: t,
               widgets: null == eh ? true : eh.widgets,
               onOpenUserProfileModal: eU
-            }), (0, a.jsx)(I.Z, {
-              isPremiumUser: eI,
+            }), (0, a.jsx)(w.Z, {
+              isPremiumUser: ew,
               onInteraction: n
             }), ek ? (0, a.jsx)(R.Z, {
               user: t,
               currentUser: t,
               onOpenUserProfileModal: eU,
               onClose: n
-            }) : (0, a.jsx)(w.Z, {
+            }) : (0, a.jsx)(I.Z, {
               user: t,
               currentUser: t,
               onClose: n

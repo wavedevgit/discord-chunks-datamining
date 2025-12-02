@@ -1125,12 +1125,12 @@ function v() {
       },
       rejectWithError: false
     }), await (0, Chunk355467.tZ)()
-  }, I = async () => {
+  }, w = async () => {
     await Chunk544891.tn.del({
       url: "/debug/payment-source",
       rejectWithError: false
     }), await (0, Chunk355467.tZ)()
-  }, w = async () => {
+  }, I = async () => {
     await Chunk544891.tn.del({
       url: "/debug/rate-limits",
       rejectWithError: false
@@ -1195,12 +1195,12 @@ function v() {
           variant: "primary",
           size: "sm",
           text: "Delete All Payment Sources",
-          onClick: I
+          onClick: w
         }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: "Reset API Rate limits and reload app",
-          onClick: w
+          onClick: I
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         style: {

@@ -990,7 +990,7 @@ function eN() {
       if (n(e)) returntrue
     }
     returnfalse
-  }), [Chunk307149, Chunk765250, Chunk755721, o, Chunk991186]), [O, P] = Chunk473749.useState(Chunk610394), [w, k] = Chunk473749.useState(null), R = Chunk473749.useMemo(() => Chunk307149.find(e => e.key === w), [Chunk307149, Chunk352527]), A = Chunk473749.useCallback(e => {
+  }), [Chunk307149, Chunk765250, Chunk755721, o, Chunk991186]), [O, P] = Chunk473749.useState(Chunk610394), [I, k] = Chunk473749.useState(null), R = Chunk473749.useMemo(() => Chunk307149.find(e => e.key === I), [Chunk307149, Chunk352527]), A = Chunk473749.useCallback(e => {
     P(e)
   }, []), {
     renderSelectedTab: Z
@@ -1169,7 +1169,7 @@ function eP() {
     })
   })
 }
-let eI = e => {
+let ew = e => {
     switch (e) {
       case "Disabled":
         return;
@@ -1179,7 +1179,7 @@ let eI = e => {
         returntrue
     }
   },
-  ew = e => null == e ? "Disabled" : e ? "True" : "False",
+  eI = e => null == e ? "Disabled" : e ? "True" : "False",
   ek = Chunk473749.memo(function() {
     let e = (0, Chunk991186.xj)(),
       t = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getOverlayKeybind());
@@ -1206,7 +1206,7 @@ let eI = e => {
         label: "Overlay User Status",
         description: "Override whether the current user was a new or existing user",
         serialize: e => null != e ? e.toString() : "Disabled",
-        isSelected: t => t === ew(e.overrideIsNewOverlayUser),
+        isSelected: t => t === eI(e.overrideIsNewOverlayUser),
         options: [{
           label: "Disabled (no override)",
           value: "Disabled"
@@ -1218,14 +1218,14 @@ let eI = e => {
           value: "True"
         }],
         select: e => {
-          (0, C.jt)(eI(e))
+          (0, C.jt)(ew(e))
         },
         popoutLayerContext: Chunk246992.O$
       }), (0, Chunk54381.jsx)(Chunk481060.PhF, {
         label: "Override Previous Keybind Status",
         description: "Override whether the user's pre-experiment keybind was the default keybind",
         serialize: e => null != e ? e.toString() : "Disabled",
-        isSelected: t => t === ew(e.overrideIsUsingDefaultOverlayKeybind),
+        isSelected: t => t === eI(e.overrideIsUsingDefaultOverlayKeybind),
         options: [{
           label: "Disabled (no override)",
           value: "Disabled"
@@ -1237,7 +1237,7 @@ let eI = e => {
           value: "False"
         }],
         select: e => {
-          (0, C.FM)(eI(e))
+          (0, C.FM)(ew(e))
         },
         popoutLayerContext: Chunk246992.O$
       }), (0, Chunk54381.jsx)(Chunk481060.Heading, {

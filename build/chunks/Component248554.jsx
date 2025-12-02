@@ -13,19 +13,19 @@ var Chunk120356 = require("./120356.js"),
   Chunk932366 = require("./932366.js"),
   Chunk978276 = require("./978276.js");
 
-function o(e) {
+function d(e) {
   let {
     applicationId: a
   } = e, {
     coverImageUrl: l
   } = (0, r.$)(a);
   return null != l && "" !== l ? (0, i.jsx)("div", {
-    className: n()(c.coverContainer, d.placeholderCover),
+    className: n()(c.coverContainer, o.placeholderCover),
     children: (0, i.jsx)(s.o, {
       imageSrc: l
     })
   }) : (0, i.jsx)("div", {
-    className: n()(c.loadingCover, d.placeholderCover)
+    className: n()(c.loadingCover, o.placeholderCover)
   })
 }
 
@@ -36,21 +36,21 @@ function u(e) {
     className: t
   } = e;
   return (0, i.jsxs)("div", {
-    className: n()(d.container, d.placeholderDetailsCard, {
-      [d.sizeSmall]: "small" === l,
-      [d.sizeMedium]: "medium" === l
+    className: n()(o.container, o.placeholderDetailsCard, {
+      [o.sizeSmall]: "small" === l,
+      [o.sizeMedium]: "medium" === l
     }, t),
     "aria-hidden": true,
-    children: [null != a ? (0, i.jsx)(o, {
+    children: [null != a ? (0, i.jsx)(d, {
       applicationId: a
     }) : (0, i.jsx)("div", {
       className: c.loadingCover
     }), (0, i.jsxs)("div", {
-      className: d.placeholderText,
+      className: o.placeholderText,
       children: [(0, i.jsx)("div", {
-        className: d.placeholderBar
+        className: o.placeholderBar
       }), (0, i.jsx)("div", {
-        className: d.placeholderBar
+        className: o.placeholderBar
       })]
     })]
   })
@@ -63,12 +63,12 @@ function p(e) {
     className: t
   } = e, r = "small" === l ? a.slice(0, 3) : a.slice(0, 4);
   return (0, i.jsx)("div", {
-    className: n()(d.container, d.placeholderCoverGrid, {
-      [d.sizeSmall]: "small" === l,
-      [d.sizeMedium]: "medium" === l
+    className: n()(o.container, o.placeholderCoverGrid, {
+      [o.sizeSmall]: "small" === l,
+      [o.sizeMedium]: "medium" === l
     }, t),
     "aria-hidden": true,
-    children: r.map((e, a) => (0, i.jsx)(o, {
+    children: r.map((e, a) => (0, i.jsx)(d, {
       applicationId: e
     }, a))
   })

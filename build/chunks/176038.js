@@ -108,8 +108,8 @@ function O() {
       T = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk473749 : null,
       O = null != N && null != (l = y.find(e => e.skuId === N)) ? Chunk524437 : null,
       P = Chunk607070.Z.fontSize,
-      I = Chunk607070.Z.messageGroupSpacing,
-      w = Chunk695346.YC.getSetting();
+      w = Chunk607070.Z.messageGroupSpacing,
+      I = Chunk695346.YC.getSetting();
     return () => {
       try {
         Chunk153867.ZI({
@@ -119,7 +119,7 @@ function O() {
         }, Chunk675478.fy.INFREQUENT_USER_ACTION), (0, Chunk150039.PO)(T), (0, Chunk150039.Wh)(O);
         let e = Chunk25990.Z.getAllPending(),
           t = (0, Chunk164946.ED)(module);
-        (0, Chunk809206.Mn)(exports).finally(Chunk809206.si), (0, Chunk857595.oL)(P), (0, Chunk857595.ZZ)(I), Chunk695346.YC.updateSetting(w)
+        (0, Chunk809206.Mn)(exports).finally(Chunk809206.si), (0, Chunk857595.oL)(P), (0, Chunk857595.ZZ)(w), Chunk695346.YC.updateSetting(I)
       } catch (e) {}
     }
   }, [])

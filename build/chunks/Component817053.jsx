@@ -1,7 +1,7 @@
 /** Chunk was on 39380 **/
 /** chunk id: 817053, original params: e,a,l (module,exports,require) **/
 require.d(exports, {
-  Z: () => j,
+  Z: () => x,
   o: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -58,30 +58,30 @@ function v(e) {
   })
 }
 
-function x(e) {
+function f(e) {
   let {
     imageSrc: a,
     gameName: l,
     applicationId: t,
     userId: n,
     className: m,
-    hideTooltip: x = false,
-    coverRef: j
-  } = e, f = (0, o.Z)({
+    hideTooltip: f = false,
+    coverRef: x
+  } = e, j = (0, d.Z)({
     location: "GameCover",
     applicationId: t,
-    source: d.m1.UserProfile,
+    source: o.m1.UserProfile,
     sourceUserId: n,
     trackEntryPointImpression: true
-  }), h = null != l ? l : u.intl.string(u.t.GIWFlF), N = u.intl.formatToPlainString(u.t["8QLQB+"], {
-    gameName: h
-  }), g = e => x ? e : (0, i.jsx)(s.u, {
-    text: h,
+  }), g = null != l ? l : u.intl.string(u.t.GIWFlF), h = u.intl.formatToPlainString(u.t["8QLQB+"], {
+    gameName: g
+  }), N = e => f ? e : (0, i.jsx)(s.u, {
+    text: g,
     children: e
   });
-  return g(null == f ? (0, i.jsx)(c.tEY, {
+  return N(null == j ? (0, i.jsx)(c.tEY, {
     children: (0, i.jsx)("div", {
-      ref: j,
+      ref: x,
       className: m,
       tabIndex: false,
       children: (0, i.jsx)(v, {
@@ -90,9 +90,9 @@ function x(e) {
       })
     })
   }) : (0, i.jsx)(c.P3F, {
-    innerRef: j,
-    onClick: f,
-    "aria-label": N,
+    innerRef: x,
+    onClick: j,
+    "aria-label": h,
     className: r()(p.clickable, m),
     children: (0, i.jsx)(v, {
       imageSrc: a,
@@ -101,15 +101,15 @@ function x(e) {
   }))
 }
 
-function j(e) {
+function x(e) {
   var {
     applicationId: a,
     userId: l,
     className: t,
     disableInteraction: n = false,
     hideTooltip: s,
-    coverRef: d
-  } = e, o = function(e, a) {
+    coverRef: o
+  } = e, d = function(e, a) {
     if (null == e) return {};
     var l, i, t = function(e, a) {
       if (null == e) return {};
@@ -127,16 +127,16 @@ function j(e) {
   let u = r()(p.coverContainer, t);
   return n ? (0, i.jsx)(c.tEY, {
     children: (0, i.jsx)("div", {
-      ref: d,
+      ref: o,
       className: u,
       tabIndex: false,
-      children: (0, i.jsx)(v, m({}, o))
+      children: (0, i.jsx)(v, m({}, d))
     })
-  }) : (0, i.jsx)(x, m({
+  }) : (0, i.jsx)(f, m({
     className: u,
     applicationId: a,
     userId: l,
     hideTooltip: s,
-    coverRef: d
-  }, o))
+    coverRef: o
+  }, d))
 }

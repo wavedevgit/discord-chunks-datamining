@@ -58,12 +58,12 @@ let I = {
     }),
     icon: e => {
       var a;
-      return null == (a = d.Z.getApplication(e.applicationId)) ? true : a.getIconURL(16)
+      return null == (a = o.Z.getApplication(e.applicationId)) ? true : a.getIconURL(16)
     },
     getAriaLabel: e => {
       var a, l;
-      return g.intl.formatToPlainString(g.t.KfGahB, {
-        applicationName: null != (l = null == (a = d.Z.getApplication(e.applicationId)) ? true : a.name) ? l : ""
+      return N.intl.formatToPlainString(N.t.KfGahB, {
+        applicationName: null != (l = null == (a = o.Z.getApplication(e.applicationId)) ? true : a.name) ? l : ""
       })
     }
   }
@@ -73,20 +73,20 @@ function E(e) {
   let a, {
       widgetType: l,
       onAddWidget: n,
-      size: d = "default",
+      size: o = "default",
       loading: u = false,
-      trackUserProfileEditAction: g
+      trackUserProfileEditAction: N
     } = e,
     {
       placeholder: E,
-      getAriaLabel: L,
-      icon: _
+      getAriaLabel: b,
+      icon: L
     } = I[l],
-    O = "small" === d,
+    O = "small" === o,
     {
-      config: T
-    } = (0, x.G)(),
-    b = t.useMemo(() => {
+      config: _
+    } = (0, f.G)(),
+    T = t.useMemo(() => {
       switch (l) {
         case s.l.CURRENT_GAMES:
         case s.l.FAVORITE_GAMES:
@@ -97,51 +97,66 @@ function E(e) {
             games: []
           });
         case s.l.APPLICATION:
-          let e = null == T ? true : T.application_id;
+          let e = null == _ ? true : _.application_id;
           if (null == e) return null;
           return new p.q({
             type: l,
             applicationId: e
           })
       }
-    }, [l, null == T ? true : T.application_id]),
+    }, [l, null == _ ? true : _.application_id]),
     S = t.useCallback(() => {
-      u || null == b || ((0, v.qH)(l, b), g({
-        action: "WIDGET_ADDED",
-        widgetEdited: l,
-        applicationId: b instanceof p.q ? b.applicationId : true
-      }), (0, j.L$)(N.qb.WIDGET_ADDED), null == n || n())
-    }, [u, l, b, g, n]);
-  return (null != b && null != _ && (a = _(b)), null == b) ? null : (0, i.jsxs)("div", {
+      u || null == T || ((0, v.qH)(l, T), N(function(e) {
+        for (var a = 1; a < arguments.length; a++) {
+          var l = null != arguments[a] ? arguments[a] : {},
+            i = Object.keys(l);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(l).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(l, e).enumerable
+          }))), i.forEach(function(a) {
+            var i;
+            i = l[a], a in e ? Object.defineProperty(e, a, {
+              value: i,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[a] = i
+          })
+        }
+        return e
+      }({
+        action: "WIDGET_ADDED"
+      }, T.getProfileEditAnalyticsOptions())), (0, x.L$)(h.qb.WIDGET_ADDED), null == n || n())
+    }, [u, l, T, N, n]);
+  return (null != T && null != L && (a = L(T)), null == T) ? null : (0, i.jsxs)("div", {
     className: A.addButtonContainer,
     children: [(0, i.jsxs)(c.P3F, {
       className: r()(A.addButtonContent, O && A.sizeSmall, u && A.loading),
       onClick: S,
-      "aria-label": L(b),
+      "aria-label": b(T),
       "aria-busy": u,
       children: [(() => {
-        if (null == b) return null;
-        let e = E(b);
+        if (null == T) return null;
+        let e = E(T);
         switch (e.variant) {
           case "details":
-            return (0, i.jsx)(f.i, {
+            return (0, i.jsx)(j.i, {
               className: A.placeholderPadding,
               applicationId: e.applicationId,
-              size: d
+              size: o
             });
           case "grid":
-            return (0, i.jsx)(f.c, {
+            return (0, i.jsx)(j.c, {
               className: A.placeholderPadding,
               applicationIds: e.applicationIds,
-              size: d
+              size: o
             });
           case "application-widget":
-            return (0, i.jsx)(h.Z, {
+            return (0, i.jsx)(g.Z, {
               applicationId: e.applicationId,
-              size: d
+              size: o
             });
           default:
-            return (0, o.vE)(e)
+            return (0, d.vE)(e)
         }
       })(), (0, i.jsxs)("div", {
         className: A.overlay,
@@ -154,7 +169,7 @@ function E(e) {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: (0, v.mR)(b)
+            children: (0, v.mR)(T)
           }), null != a ? (0, i.jsx)("img", {
             src: a,
             alt: "",
@@ -165,11 +180,11 @@ function E(e) {
         })]
       })]
     }), (() => {
-      if (null == b) return null;
-      let e = E(b);
-      return "application-widget" === e.variant ? (0, i.jsx)(h.T, {
+      if (null == T) return null;
+      let e = E(T);
+      return "application-widget" === e.variant ? (0, i.jsx)(g.T, {
         applicationId: e.applicationId,
-        size: d
+        size: o
       }) : null
     })()]
   })

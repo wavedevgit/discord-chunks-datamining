@@ -134,9 +134,9 @@ let y = e => {
     })
   },
   C = () => {
-    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [C, S] = Chunk473749.useState(false), [E, N] = Chunk473749.useState(5e3), [T, O] = Chunk473749.useState(false), P = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), w = (0, Chunk848984.u)(), [k] = Chunk473749.useState(() => (0, Chunk773275.o8)({
+    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [C, S] = Chunk473749.useState(false), [E, N] = Chunk473749.useState(5e3), [T, O] = Chunk473749.useState(false), P = Chunk473749.useRef(null), w = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), I = (0, Chunk848984.u)(), [k] = Chunk473749.useState(() => (0, Chunk773275.o8)({
       finishSetup: async () => true,
-      perkAvailableToUser: w
+      perkAvailableToUser: I
     })), {
       installationStatus: R,
       setInstallationStatus: A,
@@ -160,8 +160,8 @@ let y = e => {
     }, [K, L]);
     let q = Chunk473749.useCallback(async () => Chunk5900._n.INSTALLING, []);
     Chunk473749.useEffect(() => {
-      W(w)
-    }, [w, W]), Chunk473749.useEffect(() => {
+      W(I)
+    }, [I, W]), Chunk473749.useEffect(() => {
       H(q)
     }, [H, q]);
     let Y = Chunk473749.useCallback(async () => (clearTimeout(module), D(Chunk5900.Ij.DISCONNECTED), true), [module, D]),
@@ -209,7 +209,7 @@ let y = e => {
               },
               children: (0, Chunk54381.jsx)(Chunk159691.rsf, {
                 onChange: () => {
-                  V ? (0, Chunk535664.C)(null, I) : (0, Chunk535664.C)(Chunk474936.F_, I)
+                  V ? (0, Chunk535664.C)(null, w) : (0, Chunk535664.C)(Chunk474936.F_, w)
                 },
                 checked: V
               })

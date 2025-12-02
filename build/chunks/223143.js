@@ -52,6 +52,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
+require("./25251.js");
 let p = Chunk311570.v.VARIANTS_GROUP;
 
 function _() {

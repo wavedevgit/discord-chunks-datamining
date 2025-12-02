@@ -185,7 +185,7 @@ function tx(e) {
     "data-jump-section": v
   } = e, j = l.useRef(null), y = null != t ? t : j, C = (0, eJ.NZ)({
     avatarDecoration: g,
-    size: (0, w.y9)(f.EFr.SIZE_32)
+    size: (0, I.y9)(f.EFr.SIZE_32)
   }), S = (0, K.Z)(), {
     updateOpenPopoutRef: E,
     highlightBadge: N,
@@ -837,7 +837,7 @@ function tv() {
       return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
     }),
     N = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-    w = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSpeakingWhileMuted()),
+    I = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSpeakingWhileMuted()),
     Z = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     D = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
     L = (0, Chunk481060.s9z)(Chunk481060.JQI) || Chunk628581 || Chunk374023.s.isDisallowPopupsSet() || Chunk571250,
@@ -1047,15 +1047,15 @@ function t_(e) {
     N = l.useRef(null),
     P = (0, eZ.b)(S),
     {
-      activeVoice: I,
-      mostRecentlyRequestedVoiceId: w,
+      activeVoice: w,
+      mostRecentlyRequestedVoiceId: I,
       lastInitAttemptMayHaveCrashed: k
     } = (0, eO.o)(),
     {
       showSilentLagWarning: R
     } = (0, eT.Y)(),
-    A = null != I,
-    Z = (0, eN.z)(I),
+    A = null != w,
+    Z = (0, eN.z)(w),
     U = (0, d.e7)([eG.Z], () => eG.Z.isConnected()),
     {
       Component: F,
@@ -1332,10 +1332,10 @@ function t_(e) {
                 t === u.z.VOICE_FILTER_EARLY_ACCESS_COACHMARK ? s = (0, a.jsx)(ek.U, {
                   markAsDismissed: i,
                   onCTA: () => $(true)
-                }) : t === u.z.VOICE_FILTER_LAUNCH_COACHMARK ? s = (0, a.jsx)(ew.n, {
+                }) : t === u.z.VOICE_FILTER_LAUNCH_COACHMARK ? s = (0, a.jsx)(eI.n, {
                   markAsDismissed: i,
                   onCTA: () => $(true)
-                }) : t === u.z.VOICE_FILTER_FIRST_USE_COACHMARK && (s = (0, a.jsx)(eI.v, {
+                }) : t === u.z.VOICE_FILTER_FIRST_USE_COACHMARK && (s = (0, a.jsx)(ew.v, {
                   markAsDismissed: i,
                   onCTA: () => $(true)
                 }));
@@ -1370,7 +1370,7 @@ function t_(e) {
                   "aria-label": tr.intl.string(tr.t.Hapb4J),
                   disabled: o,
                   onClick: e => {
-                    i(ta.L.INDIRECT_ACTION), n(e), null != w && !Q && k ? (0, eA.$)(() => $(true)) : $(!Q)
+                    i(ta.L.INDIRECT_ACTION), n(e), null != I && !Q && k ? (0, eA.$)(() => $(true)) : $(!Q)
                   }
                 }, l));
                 return null != s ? (0, a.jsx)(f.yRy, {
