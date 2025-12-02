@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 504392, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => R
 }), require("./539854.js"), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -35,48 +35,39 @@ var Chunk54381 = require("./54381.js"),
   Chunk130231 = require("./130231.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk823441 = require("./823441.js");
-let R = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
 
-function L(e) {
+function R(e) {
   let {
     guildId: t,
     powerupListingId: o
-  } = e, L = (0, m.BU)(t, "GuildPowerupsOverview");
+  } = e, R = (0, m.BU)(t, "GuildPowerupsOverview");
   i.useEffect(() => {
-    L && (0, f.ce)(t)
-  }, [t, L]), i.useEffect(() => {
+    R && (0, f.ce)(t)
+  }, [t, R]), i.useEffect(() => {
     (0, v.Sn)(t), (0, v.BN)(t)
   }, [t]), (0, T.Wj)(t);
-  let U = (0, a.e7)([x.Z], () => x.Z.getStateForGuild(t)),
-    D = (0, _.Z)(t),
+  let L = (0, a.e7)([x.Z], () => x.Z.getStateForGuild(t)),
+    U = (0, _.Z)(t),
     M = i.useRef(false),
     {
-      shouldShow: V,
+      shouldShow: D,
       modalConfig: G
     } = (0, P.K)(t, "GuildPowerupsOverview"),
-    B = null == o && null != G,
-    W = [];
-  V && B && W.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
-  let [z, F] = (0, u.US)(W), K = i.useMemo(() => R.reduce((e, t) => {
-    let n = null == U ? true : U.powerupCatalog[t];
-    if (null == n) return e;
-    let r = (0, b.S)(t, n, L);
-    return e.push({
-      type: t,
-      listings: r
-    }), e
-  }, []), [null == U ? true : U.powerupCatalog, L]), X = K.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), H = (0, y.f)(X, t);
+    V = null == o && null != G,
+    B = [];
+  D && V && B.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
+  let [W, z] = (0, u.US)(B), F = (0, b._P)(t, R), K = F.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), X = (0, y.f)(K, t);
   return (i.useEffect(() => {
     if (null != o && !M.current)
-      for (let e of K)
+      for (let e of F)
         for (let n of e.listings) {
           if (("singleLevel" === n.type || "singlePerk" === n.type) && n.powerup.skuId === o) {
-            (0, Z.KE)(t, n.powerup), M.current = true;
+            (0, E.KE)(t, n.powerup), M.current = true;
             return
           }
           if ("multiPerk" === n.type && (n.group === o || n.powerups.some(e => e.skuId === o))) {
             M.current = true;
-            let e = H[n.group];
+            let e = X[n.group];
             if (null == e) return;
             e.openModal(n.powerups, {
               onModalClose: () => {
@@ -89,8 +80,8 @@ function L(e) {
             return
           }
         }
-  }, [t, o, K, H]), i.useEffect(() => {
-    null != z && null != G && (0, c.ZDy)(async () => {
+  }, [t, o, F, X]), i.useEffect(() => {
+    null != W && null != G && (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("61879").then(n.bind(n, 802426));
@@ -113,15 +104,15 @@ function L(e) {
         return e
       }({
         modalConfig: G,
-        markAsDismissed: F
+        markAsDismissed: z
       }, t))
     }, {
       onCloseCallback: () => {
-        F(O.L.USER_DISMISS)
+        z(O.L.USER_DISMISS)
       },
-      modalKey: "dismissible_content_".concat(z)
+      modalKey: "dismissible_content_".concat(W)
     })
-  }, [t, z, F, G]), (null == U ? true : U.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
+  }, [t, W, z, G]), (null == L ? true : L.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
     className: k.container,
     children: [(0, r.jsxs)(d.Z, {
       className: k.toolbar,
@@ -137,7 +128,7 @@ function L(e) {
       className: k.contentContainer,
       children: [(0, r.jsx)(c.zJl, {
         className: k.powerupsContainer,
-        children: K.map(e => {
+        children: F.map(e => {
           let {
             type: n,
             listings: i
@@ -207,11 +198,11 @@ function L(e) {
         })
       }), (0, r.jsxs)("div", {
         className: k.sidebarContainer,
-        children: [D ? (0, r.jsx)(w.Z, {
+        children: [U ? (0, r.jsx)(w.Z, {
           guildId: t
-        }) : (0, r.jsx)(I.Z, {
+        }) : (0, r.jsx)(Z.Z, {
           guildId: t
-        }), (0, r.jsx)(E.Z, {
+        }), (0, r.jsx)(I.Z, {
           guildId: t
         })]
       })]

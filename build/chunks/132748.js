@@ -2,48 +2,69 @@
 /** chunk id: 132748, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => l
-}), require("./388685.js");
-var r, i, Chunk473749 = require("./473749.js");
-
-function o(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function s(e, t, n) {
-  return Math.min(Math.max(Math.floor(e / t), 1), n)
-}
-let l = (0, require("./112724.jsx").Z)((i = class extends(r = Chunk473749.Component) {
-  static getDerivedStateFromProps(e, t) {
-    let {
-      width: n,
-      desiredItemWidth: r,
-      maxColumns: i
-    } = e, a = s(n, r, i);
-    return a !== t.columns ? {
-      columns: a
-    } : null
-  }
-  render() {
-    let {
-      width: e,
-      height: t,
-      children: n
-    } = this.props, {
-      columns: r
-    } = this.state;
-    return require(r, module, exports)
-  }
-  constructor(...e) {
-    super(...e), o(this, "state", {
-      columns: s(this.props.width, this.props.desiredItemWidth, this.props.maxColumns)
+  C: () => s
+});
+var Chunk267642 = require("./267642.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk474936 = require("./474936.js"),
+  Chunk388032 = require("./388032.jsx");
+let s = [{
+  tier: Chunk981631.Eu4.TIER_1,
+  perks: [{
+    perkIcon: Chunk267642.Ro.EMOJI,
+    getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.Tlz0x1, {
+      numEmojiSlots: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.emoji
     })
-  }
-}, o(i, "defaultProps", {
-  desiredItemWidth: 200
-}), i))
+  }, {
+    perkIcon: Chunk267642.Ro.SOUNDBOARD,
+    getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t["v+MIfo"], {
+      numSoundboardSlots: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.soundboardSounds
+    }),
+    isNew: true
+  }, {
+    perkIcon: Chunk267642.Ro.ANIMATED,
+    getCopy: () => Chunk388032.intl.string(Chunk388032.t.PbAyub)
+  }, {
+    perkIcon: Chunk267642.Ro.AUDIO,
+    getCopy: () => Chunk388032.intl.string(Chunk388032.t["WH+OeI"])
+  }]
+}, {
+  tier: Chunk981631.Eu4.TIER_2,
+  perks: [{
+    perkIcon: Chunk267642.Ro.STREAM,
+    getCopy: () => Chunk388032.intl.string(Chunk388032.t.y4ft4D)
+  }, {
+    perkIcon: Chunk267642.Ro.UPLOAD,
+    getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.aFRl53, {
+      uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.M6qV8j)
+    })
+  }, {
+    perkIcon: Chunk267642.Ro.CUSTOM_ROLE_ICON,
+    getCopy: () => Chunk388032.intl.string(Chunk388032.t["6PV6Qc"])
+  }, {
+    perkIcon: Chunk267642.Ro.CUSTOMIZATION,
+    getCopy: () => Chunk388032.intl.string(Chunk388032.t["1a5rjl"])
+  }]
+}, {
+  tier: Chunk981631.Eu4.TIER_3,
+  perks: [{
+    perkIcon: Chunk267642.Ro.VANITY,
+    getCopy: () => Chunk388032.intl.string(Chunk388032.t.adNGjW)
+  }, {
+    perkIcon: Chunk267642.Ro.UPLOAD,
+    getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.aFRl53, {
+      uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.yMOW8D)
+    })
+  }, {
+    perkIcon: Chunk267642.Ro.AUDIO,
+    getCopy: () => Chunk388032.intl.string(Chunk388032.t.Tsljqo)
+  }, {
+    perkIcon: Chunk267642.Ro.ANIMATED,
+    getCopy: () => Chunk388032.intl.string(Chunk388032.t.nRKlmC)
+  }, {
+    perkIcon: Chunk267642.Ro.STAGE_VIDEO,
+    getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.hsZ88d, {
+      numStageSeats: Chunk981631.RcX
+    })
+  }]
+}]

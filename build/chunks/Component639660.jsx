@@ -38,16 +38,16 @@ function C(e) {
   } = e, n = (0, l.e7)([c.Z], () => {
     var e;
     return (null == (e = c.Z.getGuild(t)) ? true : e.features.has(v.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true
-  }), C = (0, d.Z)(t), w = (0, u.Z)(t), I = C.length > 0 || w.length > 0, {
-    shouldShow: E,
-    notificationConfig: Z
+  }), C = (0, d.Z)(t), w = (0, u.Z)(t), Z = C.length > 0 || w.length > 0, {
+    shouldShow: I,
+    notificationConfig: E
   } = (0, g._)(t, "GuildPowerupNotificationContainer"), P = [];
-  E && P.push(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [T, y] = (0, s.ZT)(P, t), N = null != T && null != Z, O = [];
-  N || I || O.push(a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
+  I && P.push(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
+  let [T, y] = (0, s.ZT)(P, t), N = null != T && null != E, O = [];
+  N || Z || O.push(a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
   let [S, A] = (0, s.US)(O), k = (e => {
     let n = [];
-    if (I) {
+    if (Z) {
       let e = C.some(e => e.skuId === i.A$),
         o = w.length > 0 ? b.intl.string(x.default["B3OfL/"]) : true,
         l = [];
@@ -58,7 +58,7 @@ function C(e) {
       }, "expiring-powerups"))
     }
     return N && n.push((0, r.jsx)(f.Z, {
-      notificationConfig: Z,
+      notificationConfig: E,
       markAsDismissed: e => {
         y(e)
       }

@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk838968 = require("./838968.jsx"),
-  Chunk279475 = require("./279475.js"),
+  Chunk707541 = require("./707541.js"),
   Chunk60482 = require("./60482.js"),
   Chunk765703 = require("./765703.js"),
   Chunk735276 = require("./735276.jsx"),
@@ -33,7 +33,7 @@ function w(e) {
   } = (0, s.cj)([f.Z], () => ({
     state: f.Z.getStateForGuild(t),
     lowestGameServerCost: f.Z.getLowestGameCostForGuild(t)
-  })), w = (0, m.Z)(t), I = i.useMemo(() => {
+  })), w = (0, m.Z)(t), Z = i.useMemo(() => {
     var e;
     if (0 !== Object.values(null != (e = null == n ? true : n.entitlements) ? e : {}).length) return w.length > 0 ? {
       type: "expiring",
@@ -42,12 +42,14 @@ function w(e) {
       type: "active",
       statusText: _.intl.string(v.default.FFLkmx)
     }
-  }, [w, null == n ? true : n.entitlements]), E = (0, p.d)((null == I ? true : I.type) === "active");
+  }, [w, null == n ? true : n.entitlements]), {
+    textColor: I
+  } = (0, p.Z)((null == Z ? true : Z.type) === "active");
   return null == n ? null : (0, r.jsxs)(d.aB, {
     label: _.intl.string(x.default["B3OfL/"]),
     badge: "beta",
-    isActive: (null == I ? true : I.type) === "active",
-    isWarning: (null == I ? true : I.type) === "expiring",
+    isActive: (null == Z ? true : Z.type) === "active",
+    isWarning: (null == Z ? true : Z.type) === "expiring",
     onClick: () => (0, g.Z)({
       guildId: t,
       analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
@@ -63,15 +65,15 @@ function w(e) {
       })]
     }), (0, r.jsx)(d.Q9, {
       title: _.intl.string(x.default["B3OfL/"]),
-      textColor: E,
+      textColor: I,
       footer: (0, r.jsx)(d.uf, {
         cost: null != o ? o : 0,
         costDecorator: "+",
-        status: I
+        status: Z
       }),
       children: (0, r.jsx)(a.xvT, {
         className: b.description,
-        color: E,
+        color: I,
         variant: "text-sm/medium",
         children: _.intl.string(x.default.EGkJAG)
       })

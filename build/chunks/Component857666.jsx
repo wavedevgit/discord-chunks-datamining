@@ -39,7 +39,7 @@ function _(e, t) {
           allPowerups: l,
           unlockedPowerups: c,
           skuIds: u
-        } = e, d = g.intl.string(m.default.KC9HRW), _ = g.intl.string(m.default.GJiSmP), b = null == l ? true : l[o.IN], h = (null == c ? true : c[o.IN]) != null, j = g.intl.string(m.default["/egwJA"]), C = h ? true : g.intl.string(m.default.W6Vwn3), w = h ? true : g.intl.string(m.default.lvk1Gc), I = h ? g.intl.string(m.default["9CfkLO"]) : g.intl.string(g.t["+7XY31"]), E = h ? "secondary" : "expressive", Z = i ? () => {
+        } = e, d = g.intl.string(m.default.KC9HRW), _ = g.intl.string(m.default.GJiSmP), b = null == l ? true : l[o.IN], h = (null == c ? true : c[o.IN]) != null, j = g.intl.string(m.default["/egwJA"]), C = h ? true : g.intl.string(m.default.W6Vwn3), w = h ? true : g.intl.string(m.default.lvk1Gc), Z = h ? g.intl.string(m.default["9CfkLO"]) : g.intl.string(g.t["+7XY31"]), I = h ? "secondary" : "expressive", E = i ? () => {
           h ? s.Z.open(t, f.pNK.TAG, f.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != b && (0, p.KE)(t, b), (0, a.pTH)()
         } : true;
         return {
@@ -74,11 +74,11 @@ function _(e, t) {
                 description: g.intl.string(m.default.BBRFRd),
                 powerups: e,
                 footerInfoText: w,
-                footerAction: i && null != Z && null != I ? {
-                  variant: E,
-                  text: I,
-                  icon: "expressive" === E ? a.Ucv : true,
-                  onClick: Z
+                footerAction: i && null != E && null != Z ? {
+                  variant: I,
+                  text: Z,
+                  icon: "expressive" === I ? a.Ucv : true,
+                  onClick: E
                 } : true
               }, n))
             }, {
@@ -98,7 +98,7 @@ function _(e, t) {
         canUseBoosts: b,
         allPowerups: h,
         unlockedPowerups: j,
-        skuIds: d.z[e]
+        skuIds: d.zd[e]
       }) : true,
       l = {};
     for (let t of e) {

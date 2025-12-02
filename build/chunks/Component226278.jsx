@@ -10,23 +10,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk10765 = require("./10765.js"),
   Chunk639777 = require("./639777.js"),
   Chunk973772 = require("./973772.js"),
+  Chunk329134 = require("./329134.js"),
   Chunk838968 = require("./838968.jsx"),
   Chunk69323 = require("./69323.jsx"),
   Chunk279604 = require("./279604.jsx"),
-  Chunk787188 = require("./787188.js"),
   Chunk535396 = require("./535396.js");
 
 function m(e) {
-  var t;
   let {
-    guildId: n,
-    powerup: i,
-    className: o
-  } = e, a = (0, s.ZP)(n, i), u = a.type !== f.A3.LEVEL_ACTIVATED, d = (0, l.Z)(n, i, "GuildPowerupCardBodyFooter"), m = null != (t = (0, p._)(i, a, d)) ? t : true;
-  return (0, r.jsx)(c.uf, {
-    status: m,
-    cost: u ? i.cost : true,
-    className: o
+    guildId: t,
+    powerup: n,
+    className: i
+  } = e, o = (0, s.ZP)(t, n), a = o.type !== f.A3.LEVEL_ACTIVATED, d = (0, l.Z)(t, n, "GuildPowerupCardBodyFooter"), p = (0, c.P)(n, o, d);
+  return (0, r.jsx)(u.uf, {
+    status: p,
+    cost: a ? n.cost : true,
+    className: i
   })
 }
 
@@ -34,22 +33,22 @@ function g(e) {
   var t;
   let {
     guildId: n,
-    powerup: p,
+    powerup: c,
     badge: m,
     className: g,
     onHover: v,
     children: x
-  } = e, _ = (0, a.Z)(n), b = (0, s.ZP)(n, p), h = b.type !== f.A3.INACTIVE, j = (null == (t = b.sourceEntitlement) ? true : t.ends_at) != null, C = (0, l.Z)(n, p, "GuildPowerupCard"), w = i.useRef(null), {
-    onShowMore: I
-  } = (0, d.ZP)(n, p), [E, Z] = i.useState(false), P = (0, o.O)(Z, 1);
+  } = e, _ = (0, a.Z)(n), b = (0, s.ZP)(n, c), h = b.type !== f.A3.INACTIVE, j = (null == (t = b.sourceEntitlement) ? true : t.ends_at) != null, C = (0, l.Z)(n, c, "GuildPowerupCard"), w = i.useRef(null), {
+    onShowMore: Z
+  } = (0, p.ZP)(n, c), [I, E] = i.useState(false), P = (0, o.O)(E, 1);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.aB, {
-      label: p.title,
+    children: [(0, r.jsx)(u.aB, {
+      label: c.title,
       isActive: h,
       isWarning: j,
       badge: m,
       canRollback: C,
-      onClick: I,
+      onClick: Z,
       onMouseOver: () => null == v ? true : v(true),
       onMouseLeave: () => null == v ? true : v(false),
       className: g,
@@ -57,10 +56,10 @@ function g(e) {
         w.current = e, P.current = e
       },
       children: x
-    }), !C && _ && (0, r.jsx)(u.Z, {
-      powerup: p,
+    }), !C && _ && (0, r.jsx)(d.Z, {
+      powerup: c,
       targetRef: w,
-      isCardVisible: E
+      isCardVisible: I
     })]
   })
 }
