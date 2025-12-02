@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => o
-}), require("./388685.js");
+});
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk550964 = require("./550964.jsx");
@@ -17,7 +17,7 @@ function o(e) {
     useTitle: s,
     useSubtitle: l,
     useOptions: c,
-    renderOptionLabel: u
+    fieldLayout: u
   } = t, d = s(), f = null == l ? true : l(), p = n(), _ = c();
   return (0, r.jsx)(a.X, {
     children: (0, r.jsx)(i.q4e, {
@@ -26,11 +26,7 @@ function o(e) {
       value: p,
       onChange: e => o(e),
       options: _,
-      renderOptionLabel: null != u ? u : true,
-      renderOptionValue: null != u ? e => {
-        let [t] = e;
-        return u(t)
-      } : true
+      layout: u
     })
   })
 }

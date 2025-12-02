@@ -18,5 +18,6 @@ let a = (0, Chunk509613.Em)(Chunk313789.n.MOBILE_NOTIFICATION_DELAY, {
     })
   })),
   useValue: Chunk695346.CM.useSetting,
-  setValue: Chunk695346.CM.updateSetting
+  setValue: Chunk695346.CM.updateSetting,
+  fieldLayout: "horizontal-responsive"
 })
