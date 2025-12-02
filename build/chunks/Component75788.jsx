@@ -1,7 +1,7 @@
 /** Chunk was on 9343 **/
-/** chunk id: 75788, original params: t,e,n (module,exports,require) **/
+/** chunk id: 75788, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,42 +14,42 @@ var Chunk54381 = require("./54381.js"),
   Chunk780187 = require("./780187.js"),
   Chunk800010 = require("./800010.js");
 
-function d(t) {
-  var e;
+function _(t) {
+  var n;
   let {
-    error: n,
-    setEmailToken: d,
-    setError: A,
-    onNext: x,
-    onClose: C,
-    transitionState: g
-  } = t, [p, S] = r.useState(false), [f, N] = r.useState(""), [m, h] = r.useState(false), T = (0, i.e7)([c.Z], () => c.Z.getErrors()), v = r.useRef(null);
+    error: e,
+    setEmailToken: _,
+    setError: d,
+    onNext: C,
+    onClose: x,
+    transitionState: N
+  } = t, [S, g] = r.useState(false), [p, f] = r.useState(""), [m, v] = r.useState(false), h = (0, i.e7)([c.Z], () => c.Z.getErrors()), y = r.useRef(null);
   r.useEffect(() => {
     var t;
-    null == (t = v.current) || t.focus()
+    null == (t = y.current) || t.focus()
   }, []);
-  let y = async t => {
-    t.preventDefault(), A(null), S(true);
+  let T = async t => {
+    t.preventDefault(), d(null), g(true);
     try {
       let {
         token: t
-      } = await (0, o.w)(f);
-      d(t), x()
+      } = await (0, o.w)(p);
+      _(t), C()
     } catch (t) {
-      A(new s.Z(t).getAnyErrorMessage())
+      d(new s.Z(t).getAnyErrorMessage())
     } finally {
-      S(false)
+      g(false)
     }
   }, M = async () => {
     if (!m) {
-      h(true);
+      v(true);
       try {
         await (0, o.i)(true), (0, l.showToast)((0, l.createToast)(u.intl.string(u.t["84yeoz"]), l.ToastType.SUCCESS))
-      } catch (e) {
-        let t = new s.Z(e).getAnyErrorMessage();
+      } catch (n) {
+        let t = new s.Z(n).getAnyErrorMessage();
         null != t && (0, l.showToast)((0, l.createToast)(t, l.ToastType.FAILURE))
       } finally {
-        h(false)
+        v(false)
       }
     }
   };
@@ -58,22 +58,22 @@ function d(t) {
     subtitle: u.intl.string(u.t.SZJowy),
     graphic: {
       type: "image",
-      src: _
+      src: A
     },
-    transitionState: g,
-    onClose: C,
+    transitionState: N,
+    onClose: x,
     actions: [{
       variant: "primary",
       text: u.intl.string(u.t.PDTjLN),
-      loading: p,
-      onClick: y
+      loading: S,
+      onClick: T
     }],
     children: [(0, a.jsx)(l.oil, {
       label: u.intl.string(u.t["8mZX6M"]),
-      error: null != n ? n : null == T || null == (e = T.email_token) ? true : e[0],
-      value: f,
-      onChange: N,
-      inputRef: v
+      error: null != e ? e : null == h || null == (n = h.email_token) ? true : n[0],
+      value: p,
+      onChange: f,
+      inputRef: y
     }), (0, a.jsx)(l.Text, {
       className: E.help,
       variant: "text-sm/normal",

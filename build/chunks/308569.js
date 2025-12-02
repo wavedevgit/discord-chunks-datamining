@@ -2,13 +2,12 @@
 /** chunk id: 308569, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CV: () => l,
-  F0: () => u,
-  HR: () => d,
+  CV: () => s,
+  F0: () => c,
+  HR: () => u,
   Mr: () => a,
-  f1: () => c,
+  f1: () => l,
   j1: () => o,
-  mF: () => s,
   pw: () => r,
   zf: () => i
 }), require("./388685.js");
@@ -18,8 +17,7 @@ var r = function(e) {
 let i = [0, 1, 2, 3],
   a = new Set([0, 1]),
   o = "https://discord.com/safety/understanding-and-avoiding-common-scams",
-  s = 1024,
-  l = "verification",
-  c = "AGREEMENTS_MODAL_KEY",
-  u = "Email Verification",
-  d = "PHONE_THEN_EMAIL_INTERSTITIAL_MODAL_KEY"
+  s = "verification",
+  l = "AGREEMENTS_MODAL_KEY",
+  c = "Email Verification",
+  u = "PHONE_THEN_EMAIL_INTERSTITIAL_MODAL_KEY"

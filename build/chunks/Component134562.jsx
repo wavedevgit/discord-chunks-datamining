@@ -1,5 +1,5 @@
 /** Chunk was on 9343 **/
-/** chunk id: 134562, original params: t,e,n (module,exports,require) **/
+/** chunk id: 134562, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./953529.js");
@@ -13,8 +13,8 @@ var Chunk481060 = require("./481060.js"),
 
 function c(t) {
   let {
-    onNext: e,
-    onClose: n,
+    onNext: n,
+    onClose: e,
     transitionState: c
   } = t;
   return (0, a.jsxs)(r.Ioy, {
@@ -23,16 +23,16 @@ function c(t) {
       src: o
     },
     title: l.intl.string(l.t.hhR7gX),
-    onClose: n,
+    onClose: e,
     transitionState: c,
     actions: [{
       variant: "secondary",
       text: l.intl.string(l.t.rwTBFs),
-      onClick: e
+      onClick: n
     }, {
       variant: "primary",
       text: l.intl.string(l.t["ETE/oC"]),
-      onClick: n
+      onClick: e
     }],
     children: [(0, a.jsx)(r.Text, {
       className: s.description,

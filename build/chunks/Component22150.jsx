@@ -1,7 +1,7 @@
 /** Chunk was on 9343 **/
-/** chunk id: 22150, original params: t,e,n (module,exports,require) **/
+/** chunk id: 22150, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => _
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,45 +14,45 @@ var Chunk54381 = require("./54381.js"),
   Chunk780187 = require("./780187.js"),
   Chunk800010 = require("./800010.js");
 
-function d(t) {
+function _(t) {
   let {
-    onNext: e,
-    onClose: n,
-    transitionState: d
-  } = t, [A, x] = r.useState(false), C = (0, i.e7)([c.default], () => c.default.getCurrentUser()), g = async t => {
-    t.preventDefault(), x(true);
+    onNext: n,
+    onClose: e,
+    transitionState: _
+  } = t, [d, C] = r.useState(false), x = (0, i.e7)([c.default], () => c.default.getCurrentUser()), N = async t => {
+    t.preventDefault(), C(true);
     try {
-      await (0, o.i)(), e()
-    } catch (e) {
-      let t = new s.Z(e).getAnyErrorMessage();
+      await (0, o.i)(), n()
+    } catch (n) {
+      let t = new s.Z(n).getAnyErrorMessage();
       null != t && (0, l.showToast)((0, l.createToast)(t, l.ToastType.FAILURE))
     } finally {
-      x(false)
+      C(false)
     }
   };
   return (0, a.jsx)(l.Ioy, {
     graphic: {
       type: "image",
-      src: _
+      src: A
     },
     title: u.intl.string(u.t.uFxYq0),
-    onClose: n,
-    transitionState: d,
+    onClose: e,
+    transitionState: _,
     actions: [{
       variant: "secondary",
       text: u.intl.string(u.t["ETE/oC"]),
-      onClick: n
+      onClick: e
     }, {
       variant: "primary",
       text: u.intl.string(u.t.rXV81H),
-      loading: A,
-      onClick: g
+      loading: d,
+      onClick: N
     }],
     children: (0, a.jsx)(l.Text, {
       className: E.description,
       variant: "text-md/normal",
       children: u.intl.format(u.t.oMFSgi, {
-        oldEmail: null == C ? true : C.email
+        oldEmail: null == x ? true : x.email
       })
     })
   })

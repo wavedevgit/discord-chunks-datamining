@@ -1,7 +1,7 @@
 /** Chunk was on 9343 **/
-/** chunk id: 642298, original params: t,e,n (module,exports,require) **/
+/** chunk id: 642298, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,76 +19,72 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk308569 = require("./308569.js");
 
-function p(t) {
+function S(t) {
   let {
-    transitionState: e,
-    onClose: n
-  } = t, p = (0, i.e7)([s.default], () => s.default.getCurrentUser());
-  r.useEffect(() => (o.default.track(C.rMx.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED), () => (0, l.Zy)()), []);
-  let S = null == p ? true : p.verified,
-    f = S ? x.Ax.CONFIRM_START : x.Ax.EMAIL_AND_PASSWORD,
-    [N, m] = r.useState(f),
-    [h, T] = r.useState(null),
-    [v, y] = r.useState(null),
-    [M, R] = r.useState(""),
-    [I, O] = r.useState(),
-    [k, L] = r.useState("");
-  switch (N) {
-    case x.Ax.CONFIRM_START:
-      return (0, a.jsx)(_.Z, {
-        onNext: () => m(x.Ax.CONFIRM_CODE),
-        onClose: n,
-        transitionState: e
-      });
-    case x.Ax.CONFIRM_CODE:
-      return (0, a.jsx)(E.Z, {
-        error: v,
-        setError: y,
-        setEmailToken: T,
-        onNext: () => m(x.Ax.CHANGE_EMAIL_REASONS),
-        transitionState: e,
-        onClose: n
-      });
-    case x.Ax.CHANGE_EMAIL_REASONS:
-      return (0, a.jsx)(c.Z, {
-        onNext: () => (o.default.track(C.rMx.USER_ACCOUNT_EMAIL_CHANGE_REASON_CONTINUE, {
-          change_email_reason_enum: I
-        }), null != I && g.Mr.has(I) ? m(x.Ax.CHANGE_EMAIL_WARNING) : m(x.Ax.EMAIL_AND_PASSWORD)),
-        transitionState: e,
-        onClose: n,
-        reason: I,
-        onReasonChange: O,
-        freeTextResponse: k,
-        setFreeTextResponse: L
-      });
-    case x.Ax.CHANGE_EMAIL_WARNING:
+    transitionState: n,
+    onClose: e
+  } = t, S = (0, i.e7)([s.default], () => s.default.getCurrentUser());
+  r.useEffect(() => (o.default.track(x.rMx.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED), () => (0, l.Zy)()), []);
+  let g = null == S ? true : S.verified,
+    p = g ? C.Ax.CONFIRM_START : C.Ax.EMAIL_AND_PASSWORD,
+    [f, m] = r.useState(p),
+    [v, h] = r.useState(null),
+    [y, T] = r.useState(null),
+    [M, I] = r.useState(""),
+    [R, O] = r.useState();
+  switch (f) {
+    case C.Ax.CONFIRM_START:
       return (0, a.jsx)(A.Z, {
-        onNext: () => {
-          o.default.track(C.rMx.USER_ACCOUNT_EMAIL_CHANGE_WARNING_CONTINUE, {
-            change_email_reason_enum: I
-          }), m(x.Ax.EMAIL_AND_PASSWORD)
-        },
-        onClose: n,
-        transitionState: e
+        onNext: () => m(C.Ax.CONFIRM_CODE),
+        onClose: e,
+        transitionState: n
       });
-    case x.Ax.EMAIL_AND_PASSWORD:
+    case C.Ax.CONFIRM_CODE:
+      return (0, a.jsx)(E.Z, {
+        error: y,
+        setError: T,
+        setEmailToken: h,
+        onNext: () => m(C.Ax.CHANGE_EMAIL_REASONS),
+        transitionState: n,
+        onClose: e
+      });
+    case C.Ax.CHANGE_EMAIL_REASONS:
+      return (0, a.jsx)(c.Z, {
+        onNext: () => (o.default.track(x.rMx.USER_ACCOUNT_EMAIL_CHANGE_REASON_CONTINUE, {
+          change_email_reason_enum: R
+        }), null != R && N.Mr.has(R) ? m(C.Ax.CHANGE_EMAIL_WARNING) : m(C.Ax.EMAIL_AND_PASSWORD)),
+        transitionState: n,
+        onClose: e,
+        reason: R,
+        onReasonChange: O
+      });
+    case C.Ax.CHANGE_EMAIL_WARNING:
       return (0, a.jsx)(d.Z, {
-        emailToken: h,
-        onBack: S ? () => m(null != I && g.Mr.has(I) ? x.Ax.CHANGE_EMAIL_WARNING : x.Ax.CHANGE_EMAIL_REASONS) : null,
-        onNext: t => {
-          o.default.track(C.rMx.USER_ACCOUNT_EMAIL_CHANGE_SAVE_NEW_EMAIL, {
-            change_email_reason_enum: I,
-            free_text_response: k
-          }), R(t), m(x.Ax.COMPLETE)
+        onNext: () => {
+          o.default.track(x.rMx.USER_ACCOUNT_EMAIL_CHANGE_WARNING_CONTINUE, {
+            change_email_reason_enum: R
+          }), m(C.Ax.EMAIL_AND_PASSWORD)
         },
-        onClose: n,
-        transitionState: e
+        onClose: e,
+        transitionState: n
       });
-    case x.Ax.COMPLETE:
+    case C.Ax.EMAIL_AND_PASSWORD:
+      return (0, a.jsx)(_.Z, {
+        emailToken: v,
+        onBack: g ? () => m(null != R && N.Mr.has(R) ? C.Ax.CHANGE_EMAIL_WARNING : C.Ax.CHANGE_EMAIL_REASONS) : null,
+        onNext: t => {
+          o.default.track(x.rMx.USER_ACCOUNT_EMAIL_CHANGE_SAVE_NEW_EMAIL, {
+            change_email_reason_enum: R
+          }), I(t), m(C.Ax.COMPLETE)
+        },
+        onClose: e,
+        transitionState: n
+      });
+    case C.Ax.COMPLETE:
       return (0, a.jsx)(u.Z, {
         email: M,
-        onClose: n,
-        transitionState: e
+        onClose: e,
+        transitionState: n
       });
     default:
       return null
