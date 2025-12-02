@@ -17,9 +17,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk210887 = require("./210887.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
-  Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk475595 = require("./475595.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk659302 = require("./659302.jsx"),
@@ -35,18 +35,18 @@ function O(e) {
     transitionState: j,
     onClose: O,
     sourceQuestContent: T
-  } = e, [w, P] = (0, s.useState)(o), N = (0, h.KX)(), R = (0, g.O5)(), A = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
+  } = e, [w, P] = (0, s.useState)(o), N = (0, _.KX)(), R = (0, g.O5)(), A = null == (t = (0, f.WD)()) ? true : t.getId(), B = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), k = (0, v.g2)({
     useReducedMotion: B,
     className: E.colorTransition
-  }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, _.Bz)(n), q = (0, l.e7)([m.Z], () => m.Z.getState().theme), L = (0, d.wj)(q) ? C.BRd.DARK : C.BRd.LIGHT, {
+  }), I = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), D = (0, x.Bz)(n), q = (0, l.e7)([m.Z], () => m.Z.getState().theme), L = (0, d.wj)(q) ? C.BRd.DARK : C.BRd.LIGHT, {
     startConsoleQuest: Q,
     startingConsoleQuest: V
-  } = (0, h.GI)({
+  } = (0, _.GI)({
     questId: n.id,
     beforeRequest: () => {
       k.startAnimation(), R({
         questId: n.id,
-        questContent: x.jn.CONNECTIONS_MODAL,
+        questContent: h.jn.CONNECTIONS_MODAL,
         questContentCTA: g.jZ.DEFIBRILLATOR,
         sourceQuestContent: T
       })
@@ -62,10 +62,10 @@ function O(e) {
     subtitle: N.message,
     actions: [{
       variant: "secondary",
-      onClick: () => void(O(), (0, _.V$)({
+      onClick: () => void(O(), (0, x.V$)({
         quest: n
       }, {
-        content: x.jn.CONNECTIONS_MODAL,
+        content: h.jn.CONNECTIONS_MODAL,
         ctaContent: g.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
         impressionId: A,
         sourceQuestContent: T
@@ -191,7 +191,7 @@ function T(e) {
       return (0, r.jsx)(j.A, {
         overrideVisibility: true,
         questOrQuests: e.quest,
-        questContent: x.jn.CONNECTIONS_MODAL,
+        questContent: h.jn.CONNECTIONS_MODAL,
         sourceQuestContent: e.sourceQuestContent,
         children: () => (0, r.jsx)(t, function(e) {
           for (var t = 1; t < arguments.length; t++) {

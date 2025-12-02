@@ -25,8 +25,8 @@ var Chunk54381 = require("./54381.js"),
 let j = "mweb_handoff_nonce",
   b = "mweb_handoff_nonce_expiration",
   I = +Chunk70956.Z.Millis.MINUTE,
-  y = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
-  S = new Set(["deep_link_failed"]),
+  S = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
+  y = new Set(["deep_link_failed"]),
   N = () => {
     Chunk433517.K.remove(j), Chunk433517.K.remove(b)
   },
@@ -82,8 +82,8 @@ let j = "mweb_handoff_nonce",
       }, [require, Z, C, O, A]), null == O) return null;
     let P = null == C ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [Chunk388032.intl.string(Chunk388032.t.uJ1JsY), (0, Chunk54381.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAs)]
-    }) : S.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : y.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;
-    return null != C && S.has(C) ? (0, Chunk54381.jsx)("div", {
+    }) : y.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : S.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;
+    return null != C && y.has(C) ? (0, Chunk54381.jsx)("div", {
       className: Chunk78224.errorContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         color: "interactive-normal",

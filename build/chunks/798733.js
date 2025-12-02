@@ -1,13 +1,13 @@
 /** Chunk was on 94723 **/
 /** chunk id: 798733, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a,
-  f: () => c
+  Z: () => c,
+  f: () => a
 });
 var o, Chunk388032 = require("./388032.jsx"),
-  c = ((o = {}).COULD_NOT_FIND = "I couldn't find what I was looking for", o.CONFUSING_LANGUAGE = "I found the language confusing", o.OTHER = "Other", o);
+  a = ((o = {}).COULD_NOT_FIND = "I couldn't find what I was looking for", o.CONFUSING_LANGUAGE = "I found the language confusing", o.OTHER = "Other", o);
 
-function a() {
+function c() {
   return [{
     label: Chunk388032.intl.string(Chunk388032.t.cigGCe),
     code: 2,

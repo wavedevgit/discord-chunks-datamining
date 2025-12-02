@@ -17,11 +17,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk22095 = require("./22095.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
-  Chunk313481 = require("./313481.js"),
   Chunk616022 = require("./616022.js"),
   Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
   Chunk36243 = require("./36243.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk659302 = require("./659302.jsx"),
   Chunk110560 = require("./110560.jsx"),
   Chunk324805 = require("./324805.js"),
@@ -88,26 +88,26 @@ function D(e, t) {
 
 function x(e) {
   var t;
-  let n = (0, a.e7)([g.Z], () => g.Z.questDeliveryOverride, []),
-    u = (0, b.GN)(e.questContent),
-    C = [E.jn.QUEST_BAR_V2, E.jn.QUEST_BAR].includes(e.questContent),
+  let n = (0, a.e7)([h.Z], () => h.Z.questDeliveryOverride, []),
+    u = (0, E.GN)(e.questContent),
+    C = [g.jn.QUEST_BAR_V2, g.jn.QUEST_BAR].includes(e.questContent),
     N = (0, _.O5)(),
     P = (0, m.aM)(),
-    R = (0, b.V_)(e.quest),
-    w = true === e.showShareLink && (0, b.vB)(e.quest.config),
+    R = (0, E.V_)(e.quest),
+    w = true === e.showShareLink && (0, E.vB)(e.quest.config),
     {
       handleComplete: D,
       handleProgress: x,
       handleResetDismissibilityClick: L,
       handleResetStatusClick: j,
       handleOverrideDeliveryClick: M
-    } = (0, h.kJ)(e.quest.id),
+    } = (0, y.kJ)(e.quest.id),
     k = () => {
       x(.9 * Math.random() + .03)
     },
     U = i.useCallback(() => {
       if (e.quest.id === S.V6) return void window.open(f.Z.getArticleURL(I.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
-      (0, b.nc)(e.quest, {
+      (0, E.nc)(e.quest, {
         content: e.questContent,
         ctaContent: _.jZ.CONTEXT_MENU_OPEN_GAME_LINK,
         impressionId: P,
@@ -156,7 +156,7 @@ function x(e) {
         questContentPosition: e.questContentPosition,
         questContentCTA: _.jZ.CONTEXT_MENU_HIDE_CONTENT,
         sourceQuestContent: e.sourceQuestContent
-      }), (0, b.GN)(e.questContent) && ((0, p.gl)(e.quest.id, e.questContent), C && (0, v.maybeShowSurveyForQuest)(e.quest))
+      }), (0, E.GN)(e.questContent) && ((0, p.gl)(e.quest.id, e.questContent), C && (0, v.maybeShowSurveyForQuest)(e.quest))
     },
     H = e => (0, o.showToast)((0, o.createToast)(new l.Z(e, e.status).message, o.ToastType.FAILURE)),
     Y = () => (0, p.CS)(e.quest.id, true).catch(H),
@@ -164,7 +164,7 @@ function x(e) {
     K = () => {
       j(), W()
     },
-    z = (0, h.m4)(e.quest),
+    z = (0, y.m4)(e.quest),
     q = i.useMemo(() => (0, r.jsx)(o.S89, {
       id: "delivery",
       label: "Show in Quest Bar",
@@ -227,13 +227,13 @@ function x(e) {
         id: "complete",
         label: A.intl.string(A.t.jQEfRT),
         action: D
-      }), (0, b.$J)(e.quest) && (0, r.jsxs)(o.sNh, {
+      }), (0, E.$J)(e.quest) && (0, r.jsxs)(o.sNh, {
         id: "console",
         label: "Console Heartbeat",
         children: [(0, r.jsx)(o.sNh, {
           disabled: true,
           id: "status",
-          label: "Status: ".concat((0, b.Bz)(e.quest) ? "alive" : "dead")
+          label: "Status: ".concat((0, E.Bz)(e.quest) ? "alive" : "dead")
         }), (0, r.jsx)(o.sNh, {
           id: "start",
           label: "Start heartbeat (cheatmode)",
@@ -249,7 +249,7 @@ function x(e) {
         action: () => {
           (0, d.JG)(e.quest.id)
         }
-      }), (0, y.T)({
+      }), (0, b.T)({
         location: S.dr.QUEST_PREVIEW_TOOL_2
       }) && (0, r.jsx)(o.sNh, {
         id: "preview",

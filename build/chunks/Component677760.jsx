@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk253179 = require("./253179.js"),
+  Chunk205120 = require("./205120.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk447543 = require("./447543.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk271922 = require("./271922.js");
 
-function S(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -138,10 +138,10 @@ function A(e) {
     let e = C(c);
     e !== d && h(e)
   }, [c, d]), (0, r.jsxs)(s.animated.div, {
-    className: y.inviteCard,
+    className: S.inviteCard,
     style: p,
     children: [(0, r.jsx)(s.animated.div, {
-      className: y.inviteChildContainer,
+      className: S.inviteChildContainer,
       style: p,
       children: (0, r.jsx)("section", {
         ref: g,
@@ -156,9 +156,9 @@ function Z(e) {
   let {
     invite: t
   } = e;
-  return null != t && (0, E.JI)(t) ? (0, r.jsx)(A, N(S({
+  return null != t && (0, E.JI)(t) ? (0, r.jsx)(A, N(y({
     startAnimHeightPx: 0,
-    innerStyle: () => y.guildInfoInner
+    innerStyle: () => S.guildInfoInner
   }, e), {
     children: e => null == t ? null : 1 === e ? (0, r.jsx)(j.X, {
       invite: t
@@ -170,11 +170,11 @@ function P(e) {
   let {
     invite: t
   } = e, n = {
-    1: y.inviteCardInner,
-    2: y.inviteCardInnerError,
-    0: y.inviteCardInnerLoading
+    1: S.inviteCardInner,
+    2: S.inviteCardInnerError,
+    0: S.inviteCardInnerLoading
   };
-  return (0, r.jsx)(A, N(S({
+  return (0, r.jsx)(A, N(y({
     startAnimHeightPx: 200,
     innerStyle: e => n[e]
   }, e), {
@@ -182,11 +182,11 @@ function P(e) {
       if (null == t) return (0, r.jsx)(O, {});
       switch (n) {
         case 1:
-          return (0, r.jsx)(v.Z, N(S({}, e), {
+          return (0, r.jsx)(v.Z, N(y({}, e), {
             invite: t
           }));
         case 2:
-          return (0, r.jsx)(T, N(S({}, e), {
+          return (0, r.jsx)(T, N(y({}, e), {
             invite: t
           }));
         default:
@@ -212,12 +212,12 @@ function R(e) {
   }
   return (0, r.jsxs)(d.ZP, {
     theme: b.BRd.DARK,
-    className: y.splashBackground,
+    className: S.splashBackground,
     style: s,
-    contentClassName: y.centerAuthBoxContent,
-    children: [(0, r.jsx)(P, N(S({}, e), {
+    contentClassName: S.centerAuthBoxContent,
+    children: [(0, r.jsx)(P, N(y({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(Z, S({}, e))]
+    })), (0, r.jsx)(Z, y({}, e))]
   })
 }
 

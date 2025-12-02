@@ -6,11 +6,10 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk253179 = require("./253179.js");
-require("./442837.js");
-var Chunk313481 = require("./313481.js");
-require("./616022.js");
+  Chunk205120 = require("./205120.js");
+require("./442837.js"), require("./616022.js");
 var Chunk49436 = require("./49436.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk883333 = require("./883333.jsx"),
   Chunk150588 = require("./150588.jsx"),
@@ -42,7 +41,7 @@ function h(e) {
     initiallyExpanded: _,
     contentPosition: m,
     sourceQuestContent: h
-  } = e, g = (0, o.tP)(t), {
+  } = e, g = (0, s.tP)(t), {
     containerRef: E,
     size: b,
     height: y
@@ -61,11 +60,11 @@ function h(e) {
     questOrQuests: t,
     questContent: n,
     questContentPosition: m,
-    trackGuildAndChannelMetadata: n === s.jn.QUESTS_EMBED,
+    trackGuildAndChannelMetadata: n === o.jn.QUESTS_EMBED,
     sourceQuestContent: h,
     children: e => (0, r.jsx)(a.animated.div, {
       style: {
-        maxHeight: n === s.jn.QUESTS_EMBED ? true : O.to({
+        maxHeight: n === o.jn.QUESTS_EMBED ? true : O.to({
           range: [0, 1],
           output: [f.DJ, P]
         })

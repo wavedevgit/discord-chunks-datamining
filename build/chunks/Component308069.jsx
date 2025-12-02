@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk253179 = require("./253179.js"),
+  Chunk205120 = require("./205120.js"),
   Chunk481060 = require("./481060.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk579605 = require("./579605.js");
-let v = (0, Chunk253179.animated)(Chunk685613.ZP),
+let v = (0, Chunk205120.animated)(Chunk685613.ZP),
   C = e => {
     let {
       quest: t,

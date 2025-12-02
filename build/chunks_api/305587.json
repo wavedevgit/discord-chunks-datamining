@@ -1,1 +1,0 @@
-{"id":"305587","type":"experiment","data":{"kind":"user","id":"2024-09_dm_mute_feedback","label":"DM Mute Feedback Experiment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable DM Mute Feedback Survey","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

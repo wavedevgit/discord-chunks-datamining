@@ -16,21 +16,21 @@ function b(e) {
     transitionState: t,
     startRating: o,
     onClose: b,
-    onSubmit: s
+    onSubmit: m
   } = e;
-  return (0, _.jsx)(c.Z, {
+  return (0, _.jsx)(a.Z, {
     modalType: "summary",
-    header: i.intl.string(i.t.hghcMh),
-    body: i.intl.string(i.t.QFU785),
-    problemTitle: i.intl.string(i.t.CtiHPm),
-    onSubmit: s,
+    header: n.intl.string(n.t.hghcMh),
+    body: n.intl.string(n.t.QFU785),
+    problemTitle: n.intl.string(n.t.CtiHPm),
+    onSubmit: m,
     onClose: b,
-    ratingOptions: [n.aZ.GOOD, n.aZ.BAD],
+    ratingOptions: [i.aZ.GOOD, i.aZ.BAD],
     ratingEmojiKind: "thumb",
     transitionState: t,
-    problems: (0, a.iq)(),
+    problems: (0, c.iq)(),
     freeformNeededProblems: r,
-    otherKey: a.R7.OTHER,
+    otherKey: c.R7.OTHER,
     startRating: o,
     hideDontShowAgainCheckbox: true
   })

@@ -1,14 +1,14 @@
 /** Chunk was on 31216 **/
-/** chunk id: 768015, original params: e,t,n (module,exports,require) **/
+/** chunk id: 768015, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
 var Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e) {
+function o(t) {
   let {
-    problem: t,
+    problem: e,
     channel: n,
     embeddedActivityLocation: o,
     feedback: l,
@@ -16,9 +16,9 @@ function o(e) {
     analyticsData: r = {},
     location: _,
     rating: d = null
-  } = e;
+  } = t;
   i.default.track(a.rMx.ACTIVITY_REPORT_PROBLEM, {
-    reason: t,
+    reason: e,
     guild_id: null == n ? true : n.getGuildId(),
     channel_id: null == n ? true : n.id,
     application_id: null == c ? true : c.id,

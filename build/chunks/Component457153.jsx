@@ -7,9 +7,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk253179 = require("./253179.js"),
-  Chunk313481 = require("./313481.js"),
+  Chunk205120 = require("./205120.js"),
   Chunk49436 = require("./49436.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk164495 = require("./164495.jsx"),
   Chunk759853 = require("./759853.jsx"),
   Chunk95985 = require("./95985.jsx"),
@@ -30,7 +30,7 @@ let h = Chunk473749.forwardRef(function(e, t) {
     onCtxMenuClose: E,
     onCtxMenuSelect: O,
     overlayRef: S
-  } = e, T = (null == (n = j.userStatus) ? true : n.completedAt) != null, w = (0, l.Jf)(j), P = s.useRef(null), N = (null == (o = j.userStatus) ? true : o.enrolledAt) != null, R = null != w ? w.percentComplete : v.percentComplete, [A, B] = s.useState(false);
+  } = e, T = (null == (n = j.userStatus) ? true : n.completedAt) != null, w = (0, c.Jf)(j), P = s.useRef(null), N = (null == (o = j.userStatus) ? true : o.enrolledAt) != null, R = null != w ? w.percentComplete : v.percentComplete, [A, B] = s.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [T && (0, r.jsx)(u.Z, {
       expansionSpring: x,
@@ -79,11 +79,11 @@ let h = Chunk473749.forwardRef(function(e, t) {
           awaitingConsoleConnections: false,
           hasMadeProgress: true,
           isProgressing: false,
-          activeScreen: c.LI.DESKTOP,
+          activeScreen: l.LI.DESKTOP,
           showBackButton: false,
           onBack: () => {},
           taskDetails: v,
-          sourceQuestContent: c.jn.QUEST_BAR_V2
+          sourceQuestContent: l.jn.QUEST_BAR_V2
         })]
       })
     })]

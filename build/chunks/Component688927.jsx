@@ -7,8 +7,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk698716 = require("./698716.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk319889 = require("./319889.js");
@@ -19,7 +19,7 @@ function p(e) {
     onCtxMenuOpen: n,
     onCtxMenuClose: s,
     onCtxMenuSelect: p
-  } = e, m = (0, i.B6)(t.config.expiresAt);
+  } = e, m = (0, l.B6)(t.config.expiresAt);
   return (0, r.jsxs)("div", {
     className: u.questAcceptedHeader,
     children: [(0, r.jsx)(a.Text, {
@@ -32,11 +32,11 @@ function p(e) {
       onOpen: n,
       onClose: s,
       onSelect: p,
-      questContent: l.jn.QUEST_BAR_V2,
+      questContent: i.jn.QUEST_BAR_V2,
       quest: t,
       shouldShowDisclosure: false,
       showShareLink: true,
-      sourceQuestContent: l.jn.QUEST_BAR_V2,
+      sourceQuestContent: i.jn.QUEST_BAR_V2,
       children: e => {
         var t, n;
         return (0, r.jsx)(a.P3F, (t = function(e) {

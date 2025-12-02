@@ -8,7 +8,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk704215 = require("./704215.js"),
   Chunk570140 = require("./570140.js"),
   Chunk972118 = require("./972118.js"),
-  Chunk313481 = require("./313481.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk324805 = require("./324805.js");
 let c = () => {
   let e = (0, Chunk972118.Z)(Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL),
@@ -21,7 +21,7 @@ let c = () => {
     }, [exports, require, module]),
     {
       handleResetStatusClick: u
-    } = (0, Chunk313481.kJ)(Chunk324805.V6);
+    } = (0, Chunk968843.kJ)(Chunk324805.V6);
   return {
     resetOnboardingExperience: c,
     resetQuestStatus: u

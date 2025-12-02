@@ -83,7 +83,7 @@ function _(e) {
     invite: j = null,
     giftCodeSKUId: b = null,
     promoEmailConsent: I = null,
-    usedUsernameSuggestion: y = null
+    usedUsernameSuggestion: S = null
   } = e;
   if (l.Z.dispatch({
       type: "REGISTER"
@@ -117,7 +117,7 @@ function _(e) {
       event: s.NetworkActionNames.USER_REGISTER,
       properties: {
         invite_code: j,
-        used_username_suggestion: y,
+        used_username_suggestion: S,
         promotional_email_opt_in: null == I ? true : I.checked,
         promotional_email_pre_checked: null == I ? true : I.preChecked,
         was_unique_username: true

@@ -12,8 +12,8 @@ var Chunk990547 = require("./990547.js"),
   Chunk981631 = require("./981631.js"),
   Chunk531578 = require("./531578.js"),
   Chunk388032 = require("./388032.jsx");
-let d = [Chunk531578.aZ.BAD, Chunk531578.aZ.GOOD],
-  u = {
+let u = [Chunk531578.aZ.BAD, Chunk531578.aZ.GOOD],
+  d = {
     [Chunk531578.aZ.BAD]: Chunk388032.intl.string(Chunk388032.t.zGnUBV),
     [Chunk531578.aZ.GOOD]: Chunk388032.intl.string(Chunk388032.t.SqprKf)
   },
@@ -62,36 +62,36 @@ function p(e) {
     transitionState: o,
     analyticsData: p
   } = e;
-  return (0, n.jsx)(c.Z, {
+  return (0, i.jsx)(c.Z, {
     modalType: "voice_filter",
     header: s.intl.string(s.t.zZAORN),
     impression: {
-      impressionName: i.ImpressionNames.VOICE_FILTER_FEEDBACK_MODAL,
+      impressionName: n.ImpressionNames.VOICE_FILTER_FEEDBACK_MODAL,
       impressionProperties: {
         rtc_connection_id: p.rtc_connection_id,
         media_session_id: p.media_session_id
       }
     },
-    ratingOptions: d,
-    ratingTextLabels: u,
+    ratingOptions: u,
+    ratingTextLabels: d,
     problemTitle: s.intl.string(s.t.FJmoxF),
     problems: m,
     freeformNeededProblems: b,
     onSubmit: function(e) {
       var t, o;
       let {
-        rating: n,
-        problem: i,
+        rating: i,
+        problem: n,
         dontShowAgain: c,
         feedback: s
       } = e;
       c && (0, a.Uv)({
         feedbackType: _.nw.VOICE_FILTER,
         location: "VoiceFilterFeedbackModal"
-      }), null != n && (0, l.Z)(r.rMx.VOICE_FILTER_FEEDBACK, {
-        rating: n,
-        reasonCode: null != (t = null == i ? true : i.code) ? t : null,
-        reasonDescription: null != (o = null == i ? true : i.value) ? o : null,
+      }), null != i && (0, l.Z)(r.rMx.VOICE_FILTER_FEEDBACK, {
+        rating: i,
+        reasonCode: null != (t = null == n ? true : n.code) ? t : null,
+        reasonDescription: null != (o = null == n ? true : n.value) ? o : null,
         feedback: s,
         analyticsData: p
       })

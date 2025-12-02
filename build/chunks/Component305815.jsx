@@ -17,8 +17,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk960048 = require("./960048.js"),
   Chunk22095 = require("./22095.js"),
-  Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk475595 = require("./475595.js"),
   Chunk115179 = require("./115179.js"),
   Chunk515108 = require("./515108.jsx"),
@@ -35,7 +35,7 @@ function A(e) {
     onUseNow: a,
     user: l,
     mode: s
-  } = e, d = (0, v.fh)(t, v.eC.REWARD).url, u = (0, C.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == i ? true : i.skuId);
+  } = e, d = (0, v.fh)(t, v.eC.REWARD).url, u = (0, h.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == i ? true : i.skuId);
   return (0, r.jsxs)("div", {
     className: w.contentContainer,
     children: [(0, r.jsx)("div", {
@@ -80,7 +80,7 @@ function P(e) {
     preview: w,
     location: P,
     sourceQuestContent: D
-  } = e, E = null != (t = (0, C.B4)(c.id)) ? t : c, T = i.useMemo(() => (0, j.xn)(E.config), [E]), O = (0, l.e7)([f.default], () => f.default.getCurrentUser()), [L, R] = function(e) {
+  } = e, E = null != (t = (0, h.B4)(c.id)) ? t : c, T = i.useMemo(() => (0, j.xn)(E.config), [E]), O = (0, l.e7)([f.default], () => f.default.getCurrentUser()), [L, R] = function(e) {
     let {
       product: n,
       isFetching: t
@@ -101,7 +101,7 @@ function P(e) {
     return [r, l]
   }(null != (o = null == T ? true : T.skuId) ? o : null), I = (null == (n = E.userStatus) ? true : n.claimedAt) != null, k = !w && !I, [S, M] = i.useState(k ? "loading" : "claimed");
   i.useEffect(() => {
-    k && (0, g.QB)(E.id, h.y$.CROSS_PLATFORM, P).then(() => M("claimed")).catch(() => M("error"))
+    k && (0, g.QB)(E.id, C.y$.CROSS_PLATFORM, P).then(() => M("claimed")).catch(() => M("error"))
   }, [E.id, P, k]);
   let Z = true === w && null === L && (null == T ? true : T.skuId) !== "",
     B = null == O,

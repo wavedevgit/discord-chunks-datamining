@@ -1,7 +1,7 @@
 /** Chunk was on 63834 **/
 /** chunk id: 110927, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,28 +16,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk992172 = require("./992172.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function m(e) {
   let {
     onClose: t,
-    transitionState: f,
+    transitionState: m,
     dismissibleContent: p
   } = e;
   (0, i.US)([p]);
   let h = (0, c.Z)((0, u.ny)(p)),
-    g = a.useMemo(() => h.map(e => e.value), [h]);
-  a.useEffect(() => {
+    g = r.useMemo(() => h.map(e => e.value), [h]);
+  r.useEffect(() => {
     _.default.track(s.rMx.OPEN_MODAL, {
       type: "Age Verification User Feedback"
     })
   }, []);
-  let j = a.useCallback(e => {
+  let j = r.useCallback(e => {
     var t;
     let {
-      rating: a,
+      rating: r,
       problem: c,
       feedback: i
-    } = e, l = null == a, _ = (0, b.nH)(p);
-    (0, b.I)(a, "" !== i ? i : null, null != (t = null == c ? true : c.value) ? t : null, l, _), l || (0, r.ZDy)(async () => {
+    } = e, l = null == r, _ = (0, b.nH)(p);
+    (0, b.I)(r, "" !== i ? i : null, null != (t = null == c ? true : c.value) ? t : null, l, _), l || (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("14466").then(n.bind(n, 729328));
@@ -59,23 +59,23 @@ function f(e) {
         }
         return e
       }({
-        body: m.intl.string(d.default["4djgO/"])
+        body: f.intl.string(d.default["4djgO/"])
       }, t))
     })
   }, [p]);
   return (0, o.jsx)(l.Z, {
     modalType: "age_verification",
-    header: m.intl.string(d.default.RqoA4v),
-    body: m.intl.string(d.default.RPb8Zk),
-    problemTitle: m.intl.string(d.default.KZw6kn),
+    header: f.intl.string(d.default.RqoA4v),
+    body: f.intl.string(d.default.RPb8Zk),
+    problemTitle: f.intl.string(d.default.KZw6kn),
     problems: h,
     freeformNeededProblems: g,
     onSubmit: j,
     onClose: t,
-    transitionState: f,
+    transitionState: m,
     otherKey: u.wO.SOMETHING_ELSE,
     hideHelpDeskLink: true,
     hideDontShowAgainCheckbox: true,
-    freeformDescription: e => null == e ? null : e.value === u.wO.SOMETHING_ELSE ? m.intl.string(d.default.Q5cQ46) : m.intl.string(d.default.zApKaR)
+    freeformDescription: e => null == e ? null : e.value === u.wO.SOMETHING_ELSE ? f.intl.string(d.default.Q5cQ46) : f.intl.string(d.default.zApKaR)
   })
 }

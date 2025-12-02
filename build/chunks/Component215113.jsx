@@ -19,11 +19,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk210887 = require("./210887.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
-  Chunk313481 = require("./313481.js"),
   Chunk616022 = require("./616022.js"),
   Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
   Chunk937797 = require("./937797.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk475595 = require("./475595.js"),
   Chunk542347 = require("./542347.js"),
   Chunk602667 = require("./602667.jsx"),
@@ -88,18 +88,18 @@ function U(e) {
   let {
     transitionState: l,
     onClose: a,
-    quest: O,
+    quest: g,
     autoplay: y,
     videoSessionId: N,
     impressionRef: B,
     parentModalOpenStartClockTime: U,
     sourceQuestContent: q
-  } = e, Y = (0, b.il)(O), H = (0, g.tP)(O), Q = (0, E.aM)(), [G, K] = o.useState(Y.progressSeconds), [W, z] = o.useState(142), {
+  } = e, Y = (0, h.il)(g), H = (0, C.tP)(g), Q = (0, E.aM)(), [G, K] = o.useState(Y.progressSeconds), [W, z] = o.useState(142), {
     variant: X,
     enabled: J
-  } = C.EO.useConfig({
+  } = b.EO.useConfig({
     location: w.dr.VIDEO_MODAL
-  }), $ = null == (n = O.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.X.WATCH_VIDEO];
+  }), $ = null == (n = g.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.X.WATCH_VIDEO];
   s()(null != $, "VideoQuestModal: videoTask must not be null");
   let ee = (0, _.ZS)($),
     et = "portrait" === ee,
@@ -107,9 +107,9 @@ function U(e) {
       z(e.target.offsetHeight)
     }),
     er = (0, m.y)(en),
-    eo = X === C.m_.OVERLAY_SHARE_ON_VIDEO,
+    eo = X === b.m_.OVERLAY_SHARE_ON_VIDEO,
     el = (0, A.e)({
-      quest: O,
+      quest: g,
       onClose: a,
       sourceQuestContent: q,
       impressionId: Q
@@ -117,12 +117,12 @@ function U(e) {
     ei = (0, u.e7)([p.Z], () => p.Z.getState().theme),
     ea = (0, d.wjy)(ei) ? k.BR.DARK : k.BR.LIGHT,
     es = o.useMemo(() => ({
-      quest: O,
+      quest: g,
       sourceQuestContent: q,
       videoSessionId: N,
       isPortrait: et,
       onClose: a
-    }), [O, q, N, et, a]);
+    }), [g, q, N, et, a]);
   return (0, r.jsx)(F.Provider, {
     value: es,
     children: (0, r.jsxs)(d.Y0X, {
@@ -170,23 +170,23 @@ function U(e) {
               className: M.contentHeader,
               children: [(0, r.jsxs)(d.P3F, {
                 className: M.contentHeaderGameInfo,
-                onClick: () => el(h.jn.VIDEO_MODAL, v.jZ.OPEN_GAME_LINK),
+                onClick: () => el(O.jn.VIDEO_MODAL, v.jZ.OPEN_GAME_LINK),
                 children: [(0, r.jsx)("img", {
-                  alt: O.config.messages.gameTitle,
+                  alt: g.config.messages.gameTitle,
                   className: i()(M.contentHeaderLogotype, M.accentOnHover),
-                  src: (0, S.fh)(O, S.eC.LOGO_TYPE, ea).url
+                  src: (0, S.fh)(g, S.eC.LOGO_TYPE, ea).url
                 }), (0, r.jsx)(T.Z, {}), (0, r.jsxs)("div", {
                   className: M.questHeading,
                   children: [(0, r.jsx)(d.Heading, {
                     variant: "heading-md/semibold",
                     color: "header-primary",
                     children: L.intl.format(L.t.EQa7os, {
-                      questName: O.config.messages.questName
+                      questName: g.config.messages.questName
                     })
                   }), (0, r.jsx)(d.Text, {
                     variant: "text-sm/medium",
                     color: "header-secondary",
-                    children: O.config.messages.gameTitle
+                    children: g.config.messages.gameTitle
                   })]
                 })]
               }), !H && (0, r.jsx)(D.Z, {
@@ -271,8 +271,8 @@ function q(e) {
     }
     return o
   }(e, ["questId", "overrideQuest", "autoplay", "openStartClockTime"]);
-  let s = (0, u.e7)([O.Z], () => O.Z.getQuest(t)),
-    c = (0, u.e7)([O.Z], () => O.Z.getQuestConfig(t)),
+  let s = (0, u.e7)([g.Z], () => g.Z.getQuest(t)),
+    c = (0, u.e7)([g.Z], () => g.Z.getQuestConfig(t)),
     d = null != n ? n : s,
     m = null != n ? n.config : c,
     f = o.useMemo(() => null != m ? {
@@ -282,7 +282,7 @@ function q(e) {
     value: f,
     children: (0, r.jsx)(y.A, {
       questOrQuests: d,
-      questContent: h.jn.VIDEO_MODAL,
+      questContent: O.jn.VIDEO_MODAL,
       minViewTimeSeconds: N.zw,
       trackGuildAndChannelMetadata: true,
       sourceQuestContent: a.sourceQuestContent,

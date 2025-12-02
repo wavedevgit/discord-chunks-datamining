@@ -438,7 +438,7 @@ class eu extends(r = Chunk473749.PureComponent) {
         username: j,
         global_name: b,
         password: I,
-        date_of_birth: S
+        date_of_birth: y
       } = {}
     } = this.state, {
       consentRequired: N,
@@ -468,11 +468,11 @@ class eu extends(r = Chunk473749.PureComponent) {
       })
     }, L = null != e ? (0, i.jsx)(s.Fragment, {
       children: e()
-    }, "custom-header") : (0, i.jsx)(y.Dx, {
+    }, "custom-header") : (0, i.jsx)(S.Dx, {
       children: er.intl.string(er.t.wC4TlR)
-    }, "title"), k = (0, i.jsxs)(y.gO, {
+    }, "title"), k = (0, i.jsxs)(S.gO, {
       className: es.marginTop20,
-      children: [(0, i.jsx)(y.II, {
+      children: [(0, i.jsx)(S.II, {
         autoFocus: true,
         className: es.marginBottom20,
         label: er.intl.string(er.t.dI4d4S),
@@ -491,7 +491,7 @@ class eu extends(r = Chunk473749.PureComponent) {
         required: true,
         onFocus: () => this.trackInputFocus("email"),
         onBlur: () => this.trackInputBlur("email")
-      }), (0, i.jsx)(y.II, {
+      }), (0, i.jsx)(S.II, {
         label: er.intl.string(er.t["9AjdkD"]),
         className: es.marginBottom20,
         name: "global_name",
@@ -530,7 +530,7 @@ class eu extends(r = Chunk473749.PureComponent) {
         }),
         onFocus: P,
         tabIndex: false,
-        children: [(0, i.jsx)(y.II, {
+        children: [(0, i.jsx)(S.II, {
           label: er.intl.string(er.t.TWzdWj),
           className: es.marginBottom20,
           name: "username",
@@ -545,7 +545,7 @@ class eu extends(r = Chunk473749.PureComponent) {
           onFocus: () => this.trackInputFocus("username"),
           onBlur: () => this.trackInputBlur("username")
         }), this.renderUsernameValidation()]
-      }), (0, i.jsx)(y.II, {
+      }), (0, i.jsx)(S.II, {
         label: er.intl.string(er.t["CIGa+7"]),
         name: "password",
         value: o,
@@ -568,7 +568,7 @@ class eu extends(r = Chunk473749.PureComponent) {
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != _ ? _ : ec(S),
+        error: null != _ ? _ : ec(y),
         value: u,
         required: true,
         onFocus: this.trackInputFocus,
@@ -588,12 +588,12 @@ class eu extends(r = Chunk473749.PureComponent) {
       className: a()(C, ei.horizontalAuthBox),
       children: () => [L, (0, i.jsxs)("div", {
         className: ei.flex,
-        children: [(0, i.jsx)(y.Dx, {
+        children: [(0, i.jsx)(S.Dx, {
           className: ei.createAccountTemplateHeader,
           children: er.intl.string(er.t.wC4TlR)
         }), k]
       }, "register-title")]
-    }) : (0, i.jsxs)(y.ZP, {
+    }) : (0, i.jsxs)(S.ZP, {
       onSubmit: this.handleSubmit,
       tag: "form",
       className: C,

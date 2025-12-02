@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk253179 = require("./253179.js"),
+  Chunk205120 = require("./205120.js"),
   Chunk481060 = require("./481060.js"),
   Chunk152406 = require("./152406.js");
 class d extends Chunk473749.Component {
@@ -66,7 +66,7 @@ class d extends Chunk473749.Component {
     }), module))
   }
 }
-let u = (0, Chunk253179.animated)(d),
+let u = (0, Chunk205120.animated)(d),
   g = function(e) {
     let {
       className: t,

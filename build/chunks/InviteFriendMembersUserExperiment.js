@@ -10,13 +10,22 @@ let l = (0, Chunk818083.B)({
     id: "2025-11_invite_friend_members",
     label: "Show Friends in Server on Invite Modal",
     defaultConfig: {
-      showFriendsInServer: false
+      showFriendsInServer: false,
+      showInviter: false
     },
     treatments: [{
       id: 1,
       label: "Show Friends in Server",
       config: {
-        showFriendsInServer: true
+        showFriendsInServer: true,
+        showInviter: false
+      }
+    }, {
+      id: 2,
+      label: "Show Friends in Server and Inviter",
+      config: {
+        showFriendsInServer: true,
+        showInviter: true
       }
     }]
   }),

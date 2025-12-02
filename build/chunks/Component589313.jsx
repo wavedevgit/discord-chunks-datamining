@@ -8,9 +8,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
   Chunk937797 = require("./937797.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk115179 = require("./115179.js"),
   Chunk969227 = require("./969227.js"),
   Chunk215113 = require("./215113.jsx"),
@@ -27,7 +27,7 @@ function E() {
     enabled: h
   } = Chunk937797.EO.useConfig({
     location: Chunk324805.dr.VIDEO_MODAL
-  }), b = (0, Chunk313481.tP)(E), C = null != (0, Chunk115179.LM)(E.config), S = (0, Chunk969227.D)({
+  }), b = (0, Chunk968843.tP)(E), C = null != (0, Chunk115179.LM)(E.config), S = (0, Chunk969227.D)({
     quest: E,
     questContent: Chunk49436.jn.QUEST_HOME_DESKTOP,
     sourceQuestContent: g,

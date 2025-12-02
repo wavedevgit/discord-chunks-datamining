@@ -35,15 +35,15 @@ let N = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   } = e, C = (0, s.Z)(t), j = (0, d.ZP)(t, true, false), y = (0, m.Z)({
     userId: n.id,
     guildId: null
-  }), A = (0, v.Z)({
+  }), A = (0, h.Z)({
     user: n,
     context: o
-  }), x = (0, p.O)(t.id, u.Z.DM_CONDENSED_MENU), I = (0, p.Z)(n, x), P = (0, f.Z)(n), T = (0, Z.Z)(n.id), U = (0, g.Z)({
+  }), x = (0, p.O)(t.id, u.Z.DM_CONDENSED_MENU), I = (0, p.Z)(n, x), P = (0, f.Z)(n), U = (0, Z.Z)(n.id), T = (0, g.Z)({
     user: n
   }), S = (0, b.Z)({
     user: n,
     location: u.Z.DM_CONDENSED_MENU
-  }), R = (0, h.Z)({
+  }), R = (0, v.Z)({
     user: n,
     location: u.Z.DM_CONDENSED_MENU
   }), D = (0, _.Z)(t.id, a), M = (0, c.l)(t), k = n.isNonUserBot(), w = t.isManaged();
@@ -59,9 +59,9 @@ let N = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
       children: [(0, i.jsx)(l.kSQ, {
         children: y
       }), (0, i.jsxs)(l.kSQ, {
-        children: [A, !w && I, P, T]
+        children: [A, !w && I, P, U]
       }), (0, i.jsxs)(l.kSQ, {
-        children: [U, S, R]
+        children: [T, S, R]
       })]
     }), (0, i.jsxs)(l.kSQ, {
       children: [j, D]

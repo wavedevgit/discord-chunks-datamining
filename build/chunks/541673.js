@@ -30,7 +30,7 @@ letChunk502922 = require("./502922.js"), i = r({
   ro: () => require.e("24213").then(require.t.bind(require, 752435, 19)),
   ru: () => require.e("37056").then(require.t.bind(require, 626480, 19)),
   "sv-SE": () => require.e("37458").then(require.t.bind(require, 918673, 19)),
-  th: () => require.e("9172").then(require.t.bind(require, 999608, 19)),
+  th: () => require.e("72798").then(require.t.bind(require, 999608, 19)),
   tr: () => require.e("9569").then(require.t.bind(require, 393257, 19)),
   uk: () => require.e("84690").then(require.t.bind(require, 142594, 19)),
   vi: () => require.e("56614").then(require.t.bind(require, 510604, 19)),

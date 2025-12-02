@@ -98,14 +98,6 @@ let y = 200,
       storageKey: "inAppReportsFeedback",
       feedbackType: Chunk531578.nw.IN_APP_REPORTS
     },
-    [Chunk531578.nw.USER_DM_MUTE]: {
-      cooldown: 6048e5,
-      chance: 1,
-      group: Chunk531578.FB.SAFETY,
-      hotspot: Chunk536442.v6.USER_DM_MUTE_FEEDBACK,
-      storageKey: "userDmMute",
-      feedbackType: Chunk531578.nw.USER_DM_MUTE
-    },
     [Chunk531578.nw.BLOCK_USER]: {
       cooldown: 0,
       chance: 1,

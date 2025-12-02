@@ -1,8 +1,10 @@
-/** Chunk was on 22002 **/
-/** chunk id: 336079, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 336079, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  CH: () => x,
-  dv: () => b
+  CH: () => m,
+  Gw: () => p,
+  dv: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk43747 = require("./43747.js");
-let p = (0, Chunk473749.createContext)({
+let f = (0, Chunk473749.createContext)({
     skuId: "123",
     loadId: (0, Chunk772848.Z)(),
     analyticsLocations: [],
@@ -24,86 +26,86 @@ let p = (0, Chunk473749.createContext)({
     onRedeemVirtualCurrency: () => {},
     isRental: false
   }),
-  b = e => {
+  p = e => {
+    let {
+      skuId: t,
+      loadId: n,
+      analyticsLocations: r,
+      onCheckoutSuccess: a,
+      isRental: f = false
+    } = e, p = (0, o.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
+      product: _
+    } = (0, s.T)(t), m = (0, i.useMemo)(() => {
+      if (null == _) return null;
+      let e = (0, l.T4)({
+          product: _,
+          isPremiumUser: p,
+          isRental: f
+        }),
+        t = null !== e ? e.amount : null;
+      return {
+        orbPrice: e,
+        orbPriceAmount: t,
+        product: _
+      }
+    }, [_, p, f]), {
+      redeemVirtualCurrency: h,
+      isSubmitting: g,
+      error: E
+    } = (0, d.f)(), b = (0, i.useCallback)(e => {
+      h(t, n, n => {
+        a({
+          entitlements: n,
+          skuId: t
+        }), e()
+      }, f)
+    }, [t, n, h, a, f]);
+    return {
+      skuId: t,
+      loadId: n,
+      analyticsLocations: null != r ? r : [],
+      product: _,
+      orbProductContext: m,
+      onRedeemVirtualCurrency: b,
+      isRedeeming: g,
+      orbRedemptionError: E,
+      isRental: f
+    }
+  },
+  _ = e => {
     let {
       skuId: t,
       loadId: n,
       analyticsSourceLocation: i,
-      analyticsLocations: b,
-      onCheckoutSuccess: x,
-      isRental: y = false,
-      children: f
+      analyticsLocations: a,
+      onCheckoutSuccess: o,
+      isRental: s = false,
+      children: l
     } = e, {
-      orbProductContext: m,
-      onRedeemVirtualCurrency: j,
-      isRedeeming: O,
-      orbRedemptionError: g
-    } = (e => {
-      let {
-        skuId: t,
-        loadId: n,
-        analyticsLocations: r,
-        onCheckoutSuccess: i,
-        isRental: p = false
-      } = e, b = (0, s.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
-        product: x
-      } = (0, o.T)(t), y = (0, l.useMemo)(() => {
-        if (null == x) return null;
-        let e = (0, a.T4)({
-            product: x,
-            isPremiumUser: b,
-            isRental: p
-          }),
-          t = null !== e ? e.amount : null;
-        return {
-          orbPrice: e,
-          orbPriceAmount: t,
-          product: x
-        }
-      }, [x, b, p]), {
-        redeemVirtualCurrency: f,
-        isSubmitting: m,
-        error: j
-      } = (0, d.f)(), O = (0, l.useCallback)(e => {
-        f(t, n, n => {
-          i({
-            entitlements: n,
-            skuId: t
-          }), e()
-        }, p)
-      }, [t, n, f, i, p]);
-      return {
-        skuId: t,
-        loadId: n,
-        analyticsLocations: null != r ? r : [],
-        product: x,
-        orbProductContext: y,
-        onRedeemVirtualCurrency: O,
-        isRedeeming: m,
-        orbRedemptionError: j,
-        isRental: p
-      }
-    })({
+      orbProductContext: c,
+      onRedeemVirtualCurrency: u,
+      isRedeeming: d,
+      orbRedemptionError: _
+    } = p({
       skuId: t,
       loadId: n,
-      analyticsLocations: b,
-      analyticsSourceLocation: i,
-      onCheckoutSuccess: x,
-      isRental: y
+      analyticsLocations: a,
+      onCheckoutSuccess: o,
+      isRental: s
     });
-    return (0, r.jsx)(p.Provider, {
+    return (0, r.jsx)(f.Provider, {
       value: {
         skuId: t,
         loadId: n,
-        analyticsLocations: null != b ? b : [],
+        analyticsLocations: null != a ? a : [],
         analyticsSourceLocation: i,
-        orbProductContext: m,
-        onRedeemVirtualCurrency: j,
-        isRedeeming: O,
-        orbRedemptionError: g,
-        isRental: y
+        orbProductContext: c,
+        onRedeemVirtualCurrency: u,
+        isRedeeming: d,
+        orbRedemptionError: _,
+        isRental: s
       },
-      children: f
+      children: l
     })
   },
-  x = () => (0, Chunk473749.useContext)(p)
+  m = () => (0, Chunk473749.useContext)(f)

@@ -2,7 +2,7 @@
 /** chunk id: 481153, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk569964 = require("./569964.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
-let y = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z, Chunk594174.default], e => {
+let S = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z, Chunk594174.default], e => {
   let {
     giftCode: t
   } = e, n = f.Z.get(t.skuId), {

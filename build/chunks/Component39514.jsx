@@ -205,7 +205,7 @@ class R extends Chunk473749.PureComponent {
         }) : (0, r.jsx)(m.i_, {
           className: Z.marginTop20,
           children: A.intl.format(A.t.NYM08s, {
-            userTag: S.ZP.getUserTag(t),
+            userTag: y.ZP.getUserTag(t),
             onLogoutClick: this.handleLogout
           })
         })]

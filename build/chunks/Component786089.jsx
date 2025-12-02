@@ -19,8 +19,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
   Chunk617136 = require("./617136.js"),
-  Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk475595 = require("./475595.js"),
   Chunk352084 = require("./352084.jsx"),
   Chunk125011 = require("./125011.jsx"),
@@ -35,7 +35,7 @@ let j = (0, Chunk473749.memo)(function(e) {
   } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: H,
     height: V = 0
-  } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, E.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
+  } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
   }), Y = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, W = A.config.rewards[Y], q = (null == W ? true : W.type) === o.w.FRACTIONAL_PREMIUM, K = (null == W ? true : W.type) === o.w.COLLECTIBLE, Q = (null == W ? true : W.type) === o.w.VIRTUAL_CURRENCY, J = null == W || null == (j = W.collectibleProduct) || null == (l = j.items) ? true : l[0], X = (null == J ? true : J.type) === s.Z.AVATAR_DECORATION ? J : null;
@@ -53,7 +53,7 @@ let j = (0, Chunk473749.memo)(function(e) {
     ee = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
     et = (0, i.useMemo)(() => (0, v.fh)(A, v.eC.REWARD), [A]),
     en = Z ? V + 8 : 0,
-    er = (0, b.mH)(O.jn.TROPHY_CASE_CARD),
+    er = (0, b.mH)(E.jn.TROPHY_CASE_CARD),
     {
       content_position: ei,
       row_index: el

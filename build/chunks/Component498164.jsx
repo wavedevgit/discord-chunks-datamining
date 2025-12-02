@@ -22,8 +22,8 @@ var Chunk772848 = require("./772848.js"),
   Chunk962220 = require("./962220.js"),
   Chunk69580 = require("./69580.jsx"),
   Chunk53144 = require("./53144.jsx"),
-  Chunk313481 = require("./313481.js"),
   Chunk36243 = require("./36243.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk703656 = require("./703656.js"),
   Chunk553795 = require("./553795.js"),
   Chunk594174 = require("./594174.js"),
@@ -201,7 +201,7 @@ let M = {
         case Z.jE.QUEST_HOME:
           if (null != n) {
             let e = new URLSearchParams;
-            null != n.sort && e.set(v.tR.SORT, n.sort), null != n.filter && e.set(v.tR.FILTER, n.filter), (0, I.dL)({
+            null != n.sort && e.set(y.tR.SORT, n.sort), null != n.filter && e.set(y.tR.FILTER, n.filter), (0, I.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               hash: n.questId,
               search: "?".concat(e.toString())
@@ -209,11 +209,11 @@ let M = {
           } else(0, I.dL)(w.Z5c.QUEST_HOME_V2);
           break;
         case Z.jE.QUEST_PREVIEW_TOOL:
-          if ((0, y.T)({
+          if ((0, v.T)({
               location: L.dr.QUEST_PREVIEW_TOOL_2
             }) && null != n) {
             let e = new URLSearchParams;
-            e.set(v.tR.TAB, v.e5.PREVIEW_TOOL), null != n.questId && e.set(v.tR.QUEST_ID, n.questId), (0, I.dL)({
+            e.set(y.tR.TAB, y.e5.PREVIEW_TOOL), null != n.questId && e.set(y.tR.QUEST_ID, n.questId), (0, I.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               search: "?".concat(e.toString())
             }), D(n.fingerprint, (0, Z.O)(t))

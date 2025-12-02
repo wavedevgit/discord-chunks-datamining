@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk253179 = require("./253179.js"),
+  Chunk205120 = require("./205120.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -15,10 +15,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk410030 = require("./410030.js"),
   Chunk22095 = require("./22095.js"),
   Chunk617136 = require("./617136.js"),
-  Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
   Chunk111131 = require("./111131.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk623249 = require("./623249.jsx"),
   Chunk477005 = require("./477005.jsx"),
   Chunk698716 = require("./698716.jsx"),
@@ -43,10 +43,10 @@ function R(e) {
   } = e, {
     ref: p,
     height: m = 0
-  } = (0, u.ZP)([o]), g = (null == (t = n.userStatus) ? true : t.completedAt) != null, h = (0, f.z)(n), {
-    type: x,
-    hints: _
-  } = s.useMemo(() => g || h ? {
+  } = (0, u.ZP)([o]), g = (null == (t = n.userStatus) ? true : t.completedAt) != null, f = (0, _.z)(n), {
+    type: h,
+    hints: x
+  } = s.useMemo(() => g || f ? {
     type: 2,
     hints: []
   } : o.length > 0 ? {
@@ -58,11 +58,11 @@ function R(e) {
   } : {
     type: 2,
     hints: []
-  }, [o, g, h, a]), j = 2 !== x, v = (0, d.q_F)({
+  }, [o, g, f, a]), j = 2 !== h, v = (0, d.q_F)({
     opacity: +!!j,
     height: j ? m : 0,
     config: T.Y
-  }), C = 0 === x ? d.Mgn : d.d3s, y = d.TVs.unsafe_rawColors.RED_345.css, E = 0 === x ? y : l ? d.TVs.colors.TEXT_DEFAULT : d.TVs.colors.WHITE;
+  }), C = 0 === h ? d.Mgn : d.d3s, y = d.TVs.unsafe_rawColors.RED_345.css, E = 0 === h ? y : l ? d.TVs.colors.TEXT_DEFAULT : d.TVs.colors.WHITE;
   return (0, r.jsx)(i.animated.div, {
     style: v,
     children: (0, r.jsxs)("div", {
@@ -76,9 +76,9 @@ function R(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-xs/medium",
           color: l ? "text-muted" : "always-white",
-          children: _.at(0)
+          children: x.at(0)
         })]
-      }), 0 === x && (0, r.jsx)(d.Avr, {
+      }), 0 === h && (0, r.jsx)(d.Avr, {
         text: P.intl.string(P.t["yKJi+/"]),
         onClick: () => (0, b.y)({
           quest: n,
@@ -104,29 +104,29 @@ function A(e) {
     onCtxMenuOpen: D,
     onCtxMenuSelect: q,
     sourceQuestContent: L
-  } = e, Q = (0, x.PB)(b), V = (0, p.ZP)(), M = ((0, c.wj)(V) ? w.BRd.DARK : w.BRd.LIGHT) === w.BRd.DARK, Z = (0, f.tP)(b), W = (null == (t = b.userStatus) ? true : t.claimedAt) != null, H = (0, f.B6)(b.config.expiresAt, {
+  } = e, Q = (0, h.PB)(b), V = (0, p.ZP)(), M = ((0, c.wj)(V) ? w.BRd.DARK : w.BRd.LIGHT) === w.BRd.DARK, Z = (0, _.tP)(b), W = (null == (t = b.userStatus) ? true : t.claimedAt) != null, H = (0, _.B6)(b.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), U = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, F = (null == (o = b.userStatus) ? true : o.completedAt) != null, {
     onAssetLoadComplete: z
   } = s.useContext(E.k), G = s.useCallback(async () => {
-    Q && ((0, x.zi)(b) || U ? (0, y.openVideoQuestModal)({
+    Q && ((0, h.zi)(b) || U ? (0, y.openVideoQuestModal)({
       quest: b,
-      questContent: h.jn.QUEST_HOME_DESKTOP,
+      questContent: f.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: L,
       sourceQuestContentCTA: g.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
-    }) : (0, _.R)(S.dr.QUEST_HOME_DESKTOP) ? await (0, y.enrollAndStartVideoQuestWithErrorHandling)(b, {
-      questContent: h.jn.QUEST_HOME_DESKTOP,
+    }) : (0, x.R)(S.dr.QUEST_HOME_DESKTOP) ? await (0, y.enrollAndStartVideoQuestWithErrorHandling)(b, {
+      questContent: f.jn.QUEST_HOME_DESKTOP,
       questContentCTA: g.jZ.ACCEPT_QUEST,
       sourceQuestContent: L,
       sourceQuestContentCTA: g.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     }) : ((0, m.AH)(b.id, {
-      questContent: h.jn.QUEST_HOME_DESKTOP,
+      questContent: f.jn.QUEST_HOME_DESKTOP,
       questContentCTA: g.jZ.ACCEPT_QUEST,
       sourceQuestContent: L
     }), (0, y.openVideoQuestModal)({
       quest: b,
-      questContent: h.jn.QUEST_HOME_DESKTOP,
+      questContent: f.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: L,
       sourceQuestContentCTA: g.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })))
@@ -167,7 +167,7 @@ function A(e) {
               children: P.intl.string(P.t.SKNnqq)
             })
           }), Q && (0, r.jsx)(l.u, {
-            text: F ? P.intl.string(P.t.YsCuyF) : U ? P.intl.string(P.t["74KqrR"]) : (0, x.zi)(b) ? P.intl.string(P.t.I6JG46) : P.intl.string(P.t.umdNin),
+            text: F ? P.intl.string(P.t.YsCuyF) : U ? P.intl.string(P.t["74KqrR"]) : (0, h.zi)(b) ? P.intl.string(P.t.I6JG46) : P.intl.string(P.t.umdNin),
             asContainer: true,
             tag: "span",
             children: (0, r.jsx)(d.P3F, {
@@ -183,7 +183,7 @@ function A(e) {
             onOpen: D,
             onClose: I,
             onSelect: q,
-            questContent: h.jn.QUEST_HOME_DESKTOP,
+            questContent: f.jn.QUEST_HOME_DESKTOP,
             quest: b,
             hideLearnMore: true,
             shouldShowDisclosure: true,

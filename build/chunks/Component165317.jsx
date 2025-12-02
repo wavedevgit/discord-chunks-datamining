@@ -9,9 +9,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
-  Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
   Chunk937797 = require("./937797.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk115179 = require("./115179.js"),
   Chunk472144 = require("./472144.jsx"),
   Chunk644646 = require("./644646.jsx"),
@@ -32,12 +32,12 @@ function C(e) {
     onClose: j
   } = o.useContext(E.VideoQuestModalContext), {
     enabled: P
-  } = d.EO.useConfig({
+  } = u.EO.useConfig({
     location: g.dr.VIDEO_MODAL
   }), [D, R] = o.useState(false), T = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), I = o.useRef(null == (t = y.userStatus) ? true : t.completedAt), [N, A] = o.useState(false), w = (0, m.w8)(y.config), {
     completedRatio: k,
     completedRatioDisplay: L
-  } = (0, c.I)(y), M = (null == (n = y.userStatus) ? true : n.completedAt) != null, V = (null == (C = y.userStatus) ? true : C.claimedAt) != null, Z = O.intl.formatToPlainString(M && !V && P ? O.t.NRp4K4 : O.t["12IWP2"], {
+  } = (0, d.I)(y), M = (null == (n = y.userStatus) ? true : n.completedAt) != null, V = (null == (C = y.userStatus) ? true : C.claimedAt) != null, Z = O.intl.formatToPlainString(M && !V && P ? O.t.NRp4K4 : O.t["12IWP2"], {
     rewardName: w
   });
   o.useEffect(() => {
@@ -46,7 +46,7 @@ function C(e) {
   }, [null == (S = y.userStatus) ? true : S.completedAt, P]);
   let F = (0, v.D)({
       quest: y,
-      questContent: u.jn.QUEST_HOME_DESKTOP,
+      questContent: c.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: x,
       onClick: j,
       shouldShowShopIfAlreadyClaimed: false
@@ -86,7 +86,7 @@ function C(e) {
           children: (0, r.jsx)(p.Z, {
             className: h.questProgressRewardTile,
             quest: y,
-            questContent: u.jn.VIDEO_MODAL,
+            questContent: c.jn.VIDEO_MODAL,
             autoplay: false,
             location: g.dr.VIDEO_MODAL,
             sourceQuestContent: x

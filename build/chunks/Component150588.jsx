@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk253179 = require("./253179.js"),
+  Chunk205120 = require("./205120.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk393903 = require("./393903.js"),
   Chunk448986 = require("./448986.js"),
   Chunk617136 = require("./617136.js"),
-  Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
   Chunk373370 = require("./373370.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk477005 = require("./477005.jsx"),
   Chunk698716 = require("./698716.jsx"),
   Chunk685613 = require("./685613.jsx"),
@@ -68,7 +68,7 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = (0, Chunk253179.animated)(Chunk481060.CJ0),
+let D = (0, Chunk205120.animated)(Chunk481060.CJ0),
   x = e => {
     var t;
     let {
@@ -89,7 +89,7 @@ let D = (0, Chunk253179.animated)(Chunk481060.CJ0),
     } = (0, d.ZP)(), [F, V] = i.useState(null), [H, Y] = i.useState(null), W = (0, p.Z)(e => {
       let t = e.target;
       V(t.offsetWidth), Y(t.scrollWidth)
-    }), K = (0, f.y)(W), z = (0, S.uq)(N), q = N === h.jn.QUESTS_EMBED, X = (0, g.t5)(a, I.dr.QUESTS_CARD, N, G), Q = (null == (t = a.userStatus) ? true : t.completedAt) != null, J = (0, _.O5)(), $ = (0, m.B6)(a.config.expiresAt), ee = (0, m.B6)(a.config.rewardsConfig.rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
+    }), K = (0, f.y)(W), z = (0, S.uq)(N), q = N === m.jn.QUESTS_EMBED, X = (0, h.t5)(a, I.dr.QUESTS_CARD, N, G), Q = (null == (t = a.userStatus) ? true : t.completedAt) != null, J = (0, _.O5)(), $ = (0, g.B6)(a.config.expiresAt), ee = (0, g.B6)(a.config.rewardsConfig.rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
       e.stopPropagation(), e.currentTarget.blur(), U(), J({
         questId: a.id,
         questContent: N,

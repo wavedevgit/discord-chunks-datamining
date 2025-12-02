@@ -40,12 +40,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk63063 = require("./63063.js"),
   Chunk624138 = require("./624138.js"),
   Chunk617136 = require("./617136.js"),
-  Chunk313481 = require("./313481.js"),
   Chunk892046 = require("./892046.js"),
   Chunk49436 = require("./49436.js"),
   Chunk283833 = require("./283833.js"),
   Chunk937797 = require("./937797.js"),
   Chunk36243 = require("./36243.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk877109 = require("./877109.jsx"),
   Chunk110560 = require("./110560.jsx"),
   Chunk150560 = require("./150560.js"),
@@ -164,18 +164,18 @@ function eE(e) {
     onSelectTab: u,
     scrollerRef: d,
     selectedTab: p
-  } = i.useContext(em), f = (0, B._)({
+  } = i.useContext(em), f = (0, G._)({
     location: er.dr.QUEST_HOME_DESKTOP
   }) ? J.Z : J.j, {
     takeover: h,
     isLoading: g
-  } = (0, G.Ut)(), {
+  } = (0, z.Ut)(), {
     enabled: m
   } = (0, Z.WX)({
     location: er.dr.QUEST_HOME_DESKTOP
   }), {
     enabled: _
-  } = F.n0.useConfig({
+  } = V.n0.useConfig({
     location: er.dr.QUEST_HOME_DESKTOP
   }), b = i.useRef(null), E = i.useCallback(() => {
     var e;
@@ -188,7 +188,7 @@ function eE(e) {
       ref: d,
       children: [function() {
         if (!o && _) {
-          if (p !== G.e5.ALL) return null;
+          if (p !== z.e5.ALL) return null;
           if (g) return (0, r.jsx)(et.o, {});
           if (null != h) return (0, r.jsx)(et.Z, {
             config: h,
@@ -199,11 +199,11 @@ function eE(e) {
       }(), (0, r.jsx)(T.Z, {
         children: (0, r.jsxs)("div", {
           className: a()(eo.content, {
-            [eo.contentWithExtraPadding]: _ && !m && p !== G.e5.ALL
+            [eo.contentWithExtraPadding]: _ && !m && p !== z.e5.ALL
           }),
-          children: [n, s ? p === G.e5.CLAIMED ? (0, r.jsx)(f, {
+          children: [n, s ? p === z.e5.CLAIMED ? (0, r.jsx)(f, {
             onSelectTab: u
-          }) : p === G.e5.PREVIEW_TOOL ? (0, r.jsx)(Y.Z, {}) : (0, r.jsx)(Q.Z, {
+          }) : p === z.e5.PREVIEW_TOOL ? (0, r.jsx)(Y.Z, {}) : (0, r.jsx)(Q.Z, {
             ref: b
           }) : null]
         })
@@ -225,16 +225,16 @@ let eO = function(e) {
     withClaimedQuestsTab: !h
   });
   i.useLayoutEffect(() => {
-    h && T === G.e5.CLAIMED && V.Z.setState({
-      tab: G.e5.ALL
+    h && T === z.e5.CLAIMED && H.Z.setState({
+      tab: z.e5.ALL
     })
   }, [h, T]);
   let {
     onScroll: D,
-    scrollPosition: B
-  } = (0, C.M)(), F = q.Z.getState().getUtmCurrentContext(), Y = (0, X.z)(e => e.registerAssetLoad), K = i.useRef(F);
+    scrollPosition: G
+  } = (0, C.M)(), V = q.Z.getState().getUtmCurrentContext(), Y = (0, X.z)(e => e.registerAssetLoad), K = i.useRef(V);
   i.useEffect(() => {
-    K.current = F
+    K.current = V
   }), i.useEffect(() => {
     let {
       current: e
@@ -281,15 +281,15 @@ let eO = function(e) {
   }, []), i.useEffect(() => {
     I.C.trigger()
   }, []);
-  let ed = (0, z.T)({
+  let ed = (0, F.T)({
     location: er.dr.QUEST_PREVIEW_TOOL_2
   });
   i.useEffect(() => {
     if (null != v) return;
     let e = new URLSearchParams(n.search),
-      r = e.get(G.tR.TAB);
-    if (ed && r === G.e5.PREVIEW_TOOL) {
-      let t = e.get(G.tR.QUEST_ID);
+      r = e.get(z.tR.TAB);
+    if (ed && r === z.e5.PREVIEW_TOOL) {
+      let t = e.get(z.tR.QUEST_ID);
       _.Z.openNativeAppModal("quests", ei.Etm.DEEP_LINK, {
         type: ea.jE.QUEST_PREVIEW_TOOL,
         params: {
@@ -300,10 +300,10 @@ let eO = function(e) {
       return
     }
     let i = performance.getEntriesByType("navigation")[0];
-    if ("POP" === l.action && (null == i ? true : i.type) === "navigate" && t && r !== G.e5.PREVIEW_TOOL) {
+    if ("POP" === l.action && (null == i ? true : i.type) === "navigate" && t && r !== z.e5.PREVIEW_TOOL) {
       let t = (0, k.Ew)(n.hash) ? null : n.hash.substring(1),
-        r = e.get(G.tR.SORT),
-        i = e.get(G.tR.FILTER);
+        r = e.get(z.tR.SORT),
+        i = e.get(z.tR.FILTER);
       _.Z.openNativeAppModal("quests", ei.Etm.DEEP_LINK, {
         type: ea.jE.QUEST_HOME,
         params: {
@@ -318,12 +318,12 @@ let eO = function(e) {
   }, [t]);
   let ep = i.useCallback(() => {
       (0, W.navigateToQuestHome)({
-        fromContent: H.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
+        fromContent: B.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
       }), R.default.track(ei.rMx.QUEST_CONTENT_CLICKED, eg({
         cta_name: U.jZ.VIEW_QUESTS,
         click_id: (0, o.Z)(),
         is_targeted: false
-      }, (0, U.mH)(H.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
+      }, (0, U.mH)(B.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
     }, []),
     ef = i.useCallback(e => {
       var t, n, r;
@@ -396,7 +396,7 @@ let eO = function(e) {
             })]
           })
         }) : Q ? (0, r.jsx)(eE, {
-          renderBanner: () => T !== G.e5.PREVIEW_TOOL && (0, r.jsxs)(S.Z, {
+          renderBanner: () => T !== z.e5.PREVIEW_TOOL && (0, r.jsxs)(S.Z, {
             title: ee,
             description: et,
             button: (0, r.jsxs)(p.ButtonGroup, {
@@ -456,7 +456,7 @@ let eO = function(e) {
             children: [(0, r.jsx)("div", {
               className: eo.dragRegion
             }), (0, r.jsx)(j.z6, {
-              scrollPosition: B
+              scrollPosition: G
             }), (0, r.jsx)(j.aV, {
               icon: p.qDn
             })]

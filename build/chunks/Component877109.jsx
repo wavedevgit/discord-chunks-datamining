@@ -9,15 +9,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk22095 = require("./22095.js"),
-  Chunk313481 = require("./313481.js"),
   Chunk616022 = require("./616022.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk606033 = require("./606033.jsx"),
   Chunk778680 = require("./778680.jsx"),
   Chunk751586 = require("./751586.jsx"),
   Chunk981631 = require("./981631.js");
 
 function g(e) {
-  return new URLSearchParams(e).get(c.tR.QUEST_ID)
+  return new URLSearchParams(e).get(u.tR.QUEST_ID)
 }
 let m = function(e) {
   let {
@@ -37,12 +37,12 @@ let m = function(e) {
     }, [e, a]), i.useEffect(() => {
       if (null == n || g(a) === n) return;
       let e = new URLSearchParams;
-      e.set(c.tR.TAB, c.e5.PREVIEW_TOOL), e.set(c.tR.QUEST_ID, n), t.push("".concat(h.Z5c.QUEST_HOME_V2, "?").concat(e.toString()))
+      e.set(u.tR.TAB, u.e5.PREVIEW_TOOL), e.set(u.tR.QUEST_ID, n), t.push("".concat(h.Z5c.QUEST_HOME_V2, "?").concat(e.toString()))
     }, [n, t, a]), {
       questId: n,
       setQuestId: r
     }
-  }(t), _ = (0, a.e7)([u.Z], () => null != n ? u.Z.getQuest(n) : true, [n]), b = (0, a.e7)([u.Z], () => null != n ? u.Z.getQuestLoadedViaPreview(n) : null, [n]);
+  }(t), _ = (0, a.e7)([c.Z], () => null != n ? c.Z.getQuest(n) : true, [n]), b = (0, a.e7)([c.Z], () => null != n ? c.Z.getQuestLoadedViaPreview(n) : null, [n]);
   i.useEffect(() => {
     null != n && (0, o.MG)(n).then(() => {
       (0, o.T0)(n)

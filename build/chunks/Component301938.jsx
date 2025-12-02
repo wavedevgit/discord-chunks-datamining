@@ -26,7 +26,7 @@ function x(e) {
     setSlide: s,
     ready: x,
     token: E
-  } = e, [v, j] = i.useState(false), [b, I] = i.useState(null), [y, S] = i.useState(null), [N, O] = i.useState(""), C = i.useRef(null);
+  } = e, [v, j] = i.useState(false), [b, I] = i.useState(null), [S, y] = i.useState(null), [N, O] = i.useState(""), C = i.useRef(null);
   return i.useEffect(() => {
     if (x) {
       var e;
@@ -34,14 +34,14 @@ function x(e) {
     }
   }, [x]), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(u.Ee, {
-      src: null == y ? n(26230) : n(935227),
+      src: null == S ? n(26230) : n(935227),
       className: l()(_.marginBottom20, _.marginTop8)
     }), (0, r.jsx)(u.Dx, {
       children: p.intl.string(p.t.IfBQ56)
-    }), null != y && "" !== y ? (0, r.jsx)(o.Text, {
+    }), null != S && "" !== S ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
-      children: y
+      children: S
     }) : null, (0, r.jsxs)(u.gO, {
       className: l()(_.marginBottom20, _.marginTop20),
       children: [(0, r.jsx)(u.II, {
@@ -67,7 +67,7 @@ function x(e) {
                 I(p.intl.string(p.t.R98xD5)), d.S.dispatch(m.CkL.WAVE_EMPHASIZE);
                 return
               }
-              return null != y && S(null), null != b && I(null), t(""), j(true), h.Z.post({
+              return null != S && y(null), null != b && I(null), t(""), j(true), h.Z.post({
                 url: m.ANM.ACCOUNT_REVERT,
                 body: {
                   token: E,
@@ -85,12 +85,12 @@ function x(e) {
                 } = e;
                 O(""), t(n), s(g.n.SUCCESS)
               }).catch(e => {
-                if (e instanceof Error) S(p.intl.formatToPlainString(p.t.aTVNes, {
+                if (e instanceof Error) y(p.intl.formatToPlainString(p.t.aTVNes, {
                   statusPageURL: m.yXt.STATUS
                 }));
                 else {
                   let t = new c.Z(e);
-                  t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : S((function(e) {
+                  t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : y((function(e) {
                     switch (e) {
                       case m.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
                         return p.intl.string(p.t["11zzGR"]);

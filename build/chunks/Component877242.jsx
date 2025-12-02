@@ -13,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk624138 = require("./624138.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
-  Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk215113 = require("./215113.jsx"),
   Chunk684245 = require("./684245.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -26,7 +26,7 @@ function h() {
     sourceQuestContent: t,
     isPortrait: n,
     onClose: l
-  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), h = (0, Chunk915750.aM)(), b = (0, Chunk313481.tP)(module), C = Chunk473749.useRef(null), {
+  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), h = (0, Chunk915750.aM)(), b = (0, Chunk968843.tP)(module), C = Chunk473749.useRef(null), {
     isHoveringOrFocusing: S
   } = (0, Chunk104505.Z)(C), _ = (0, Chunk684245.e)({
     quest: module,

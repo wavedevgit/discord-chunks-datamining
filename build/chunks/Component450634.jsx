@@ -1,5 +1,5 @@
 /** Chunk was on 31216 **/
-/** chunk id: 450634, original params: e,t,n (module,exports,require) **/
+/** chunk id: 450634, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   default: () => f
 });
@@ -17,18 +17,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 let p = [Chunk701488.K8.OTHER, Chunk701488.K8.ADS, Chunk701488.K8.NOT_FUN];
 
-function f(e) {
-  var t;
+function f(t) {
+  var e;
   let {
     channel: f,
     embeddedActivityLocation: v,
     activityApplication: g,
     onClose: y,
-    transitionState: h,
-    analyticsData: O
-  } = e;
+    transitionState: O,
+    analyticsData: h
+  } = t;
   a.useEffect(() => {
-    r.default.track(u.rMx.OPEN_MODAL, {
+    r.default.track(s.rMx.OPEN_MODAL, {
       type: "Activity Feedback Modal",
       application_id: g.id,
       application_name: g.name,
@@ -36,7 +36,7 @@ function f(e) {
       source: "Activity End"
     })
   }, [g]);
-  let j = (null == (t = g.embeddedActivityConfig) ? true : t.displays_advertisements) === true;
+  let j = (null == (e = g.embeddedActivityConfig) ? true : e.displays_advertisements) === true;
   return (0, i.jsx)(c.Z, {
     modalType: "activity",
     header: m.intl.formatToPlainString(m.t.QXYwoD, {
@@ -46,57 +46,57 @@ function f(e) {
     problemTitle: m.intl.string(m.t.g1q5fr),
     problems: (0, _.Z)(true, j),
     freeformNeededProblems: p,
-    onSubmit: function(e) {
-      var t;
+    onSubmit: function(t) {
+      var e;
       let {
         rating: a,
         problem: c,
         dontShowAgain: _,
-        feedback: s
-      } = e;
-      _ && (r.default.track(u.rMx.ACTIVITY_REPORT_DONT_SHOW, {
+        feedback: u
+      } = t;
+      _ && (r.default.track(s.rMx.ACTIVITY_REPORT_DONT_SHOW, {
         application_id: g.id,
         rating: a
       }), (0, l.Uv)({
         feedbackType: b.nw.ACTIVITY,
         location: "ActivityFeedback"
       })), null != a && ((0, d.Z)({
-        problem: null != (t = null == c ? true : c.value) ? t : null,
+        problem: null != (e = null == c ? true : c.value) ? e : null,
         channel: f,
         embeddedActivityLocation: v,
-        feedback: s,
+        feedback: u,
         activityApplication: g,
-        analyticsData: O,
+        analyticsData: h,
         location: "Activity End",
         rating: a
       }), null != c && (0, o.ZDy)(async () => {
         let {
-          default: e
+          default: t
         } = await n.e("14466").then(n.bind(n, 729328));
-        return t => (0, i.jsx)(e, function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
+        return e => (0, i.jsx)(t, function(t) {
+          for (var e = 1; e < arguments.length; e++) {
+            var n = null != arguments[e] ? arguments[e] : {},
               i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+              return Object.getOwnPropertyDescriptor(n, t).enumerable
+            }))), i.forEach(function(e) {
               var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
+              i = n[e], e in t ? Object.defineProperty(t, e, {
                 value: i,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = i
+              }) : t[e] = i
             })
           }
-          return e
+          return t
         }({
           body: m.intl.string(m.t["zuHR+y"])
-        }, t))
+        }, e))
       }))
     },
     onClose: y,
-    transitionState: h,
-    otherKey: s.K8.OTHER
+    transitionState: O,
+    otherKey: u.K8.OTHER
   })
 }

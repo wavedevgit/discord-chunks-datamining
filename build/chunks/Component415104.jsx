@@ -8,9 +8,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk617136 = require("./617136.js"),
-  Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk110560 = require("./110560.jsx"),
   Chunk672188 = require("./672188.js"),
@@ -24,13 +24,13 @@ function b(e) {
   var t, n;
   let {
     quest: o,
-    className: c,
+    className: l,
     questContent: u,
     contentPosition: b,
     rowIndex: j,
     impressionRef: v,
     sourceQuestContent: C
-  } = e, [y, E] = s.useState(false), [O, S] = s.useState([]), T = (0, l.qb)(o), w = s.useMemo(() => (0, d.q8)(o), [o]), P = (0, i._F)(), N = s.useCallback(() => {
+  } = e, [y, E] = s.useState(false), [O, S] = s.useState([]), T = (0, d.qb)(o), w = s.useMemo(() => (0, c.q8)(o), [o]), P = (0, i._F)(), N = s.useCallback(() => {
     E(true), P({
       questId: o.id,
       event: x.rMx.QUEST_HOVER,
@@ -73,7 +73,7 @@ function b(e) {
     ref: e => {
       v.current = e, B.current = e
     },
-    className: a()(_.container, c),
+    className: a()(_.container, l),
     onMouseEnter: N,
     onMouseLeave: R,
     onFocus: N,
@@ -104,7 +104,7 @@ function j(e) {
     questContent: e.questContent,
     questContentPosition: e.contentPosition,
     questContentRowIndex: e.rowIndex,
-    trackGuildAndChannelMetadata: e.questContent === c.jn.QUESTS_EMBED,
+    trackGuildAndChannelMetadata: e.questContent === l.jn.QUESTS_EMBED,
     sourceQuestContent: e.sourceQuestContent,
     children: t => {
       var n, s;

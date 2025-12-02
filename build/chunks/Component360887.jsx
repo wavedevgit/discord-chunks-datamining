@@ -52,7 +52,7 @@ function b(e) {
   let {
     match: t,
     location: l
-  } = e, o = (0, s.parse)(l.search).token, [d, b] = i.useState("loading"), I = i.useRef(false), y = i.useCallback(async e => {
+  } = e, o = (0, s.parse)(l.search).token, [d, b] = i.useState("loading"), I = i.useRef(false), S = i.useCallback(async e => {
     try {
       m.default.track(x.rMx.ONE_TIME_LOGIN_ATTEMPTED, {
         source: "web_page"
@@ -68,7 +68,7 @@ function b(e) {
         error_message: e
       }), b("error")
     }
-  }, []), S = i.useCallback(e => {
+  }, []), y = i.useCallback(e => {
     var t;
     let n = null != (t = g.default.getFingerprint()) ? t : g.default.getId(),
       r = "discord://login/one-time?token=".concat(encodeURIComponent(e));
@@ -99,12 +99,12 @@ function b(e) {
           destination: "one_time_login_modal",
           deep_link_provider: "rpc",
           fingerprint: r
-        }), b("app_launched")) : S(e)
+        }), b("app_launched")) : y(e)
       }).catch(() => {
-        S(e)
+        y(e)
       }).then(() => n.disconnect())
     })
-  }, [S]);
+  }, [y]);
   if (i.useEffect(() => {
       let e = null != o && "string" == typeof o,
         t = a.tq ? "mobile" : a.Em ? "tablet" : (0, p.isDesktop)() ? "desktop_app" : "web";
@@ -122,9 +122,9 @@ function b(e) {
         });
         return
       }
-      if ((0, p.isDesktop)()) return void y(o);
+      if ((0, p.isDesktop)()) return void S(o);
       I.current || (I.current = true, b("rpc_attempting"), N(o))
-    }, [o, l, y, N]), a.tq || a.Em) {
+    }, [o, l, S, N]), a.tq || a.Em) {
     let e = null == o || "string" != typeof o ? "missing_token" : "invalid_token";
     return (0, r.jsx)(_.e, {
       token: o,
@@ -140,14 +140,14 @@ function b(e) {
     buttonOnClick: () => {
       m.default.track(x.rMx.ONE_TIME_LOGIN_CONTINUE_IN_BROWSER_CLICKED, {
         previous_status: d
-      }), y(o)
+      }), S(o)
     }
   });
   if ("app_launch_not_supported" === d) return (0, r.jsx)(j, {
     title: v.intl.string(v.t.qq4tjT),
     subtitle: v.intl.string(v.t.CVxYRo),
     buttonText: v.intl.string(v.t["2ixEBi"]),
-    buttonOnClick: () => y(o)
+    buttonOnClick: () => S(o)
   });
   if ("error" === d) {
     let e = null == o || "string" != typeof o ? "missing_token" : "invalid_token";

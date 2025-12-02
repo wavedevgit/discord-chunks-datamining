@@ -19,10 +19,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk572004 = require("./572004.js"),
   Chunk624138 = require("./624138.js"),
   Chunk617136 = require("./617136.js"),
-  Chunk313481 = require("./313481.js"),
   Chunk616022 = require("./616022.js"),
   Chunk49436 = require("./49436.js"),
   Chunk373370 = require("./373370.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk804127 = require("./804127.js"),
   Chunk115179 = require("./115179.js"),
   Chunk602667 = require("./602667.jsx"),
@@ -70,7 +70,7 @@ function R(e) {
     onClose: m,
     transitionState: p,
     impressionRef: f
-  } = e, h = null != (t = (0, b.C1)({
+  } = e, h = null != (t = (0, v.C1)({
     quest: n,
     rewardCode: u,
     selectedPlatformType: d
@@ -184,15 +184,15 @@ function Z(e) {
     preview: c,
     sourceQuestContent: C,
     questContentPosition: f
-  } = e, h = null != (t = (0, y.B4)(n.id)) ? t : n, j = (0, w.zG)(h.config), x = v.jn.REWARD_MODAL, {
-    questStoreRewardCode: b,
+  } = e, h = null != (t = (0, b.B4)(n.id)) ? t : n, j = (0, w.zG)(h.config), x = g.jn.REWARD_MODAL, {
+    questStoreRewardCode: v,
     isFetchingRewardCode: N,
     isClaimingReward: A
-  } = (0, o.cj)([g.Z], () => ({
-    questStoreRewardCode: g.Z.getRewardCode(h.id),
-    isFetchingRewardCode: g.Z.isFetchingRewardCode(h.id),
-    isClaimingReward: g.Z.isClaimingReward(h.id)
-  })), I = true === c ? (0, p.b)(h) : b, {
+  } = (0, o.cj)([y.Z], () => ({
+    questStoreRewardCode: y.Z.getRewardCode(h.id),
+    isFetchingRewardCode: y.Z.isFetchingRewardCode(h.id),
+    isClaimingReward: y.Z.isClaimingReward(h.id)
+  })), I = true === c ? (0, p.b)(h) : v, {
     hasError: D,
     setHasError: Z
   } = (0, _.uL)({

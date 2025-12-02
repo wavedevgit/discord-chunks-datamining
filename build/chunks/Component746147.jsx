@@ -1,7 +1,7 @@
 /** Chunk was on 19611 **/
-/** chunk id: 746147, original params: e,t,o (module,exports,require) **/
+/** chunk id: 746147, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,11 +14,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e) {
+function m(e) {
   let {
     onClose: t,
-    transitionState: d
-  } = e, m = (0, a.Z)(b.Me), p = r.useMemo(() => m.map(e => e.value), [m]);
+    transitionState: m
+  } = e, d = (0, a.Z)(b.Me), p = r.useMemo(() => d.map(e => e.value), [d]);
   r.useEffect(() => {
     l.default.track(s.rMx.OPEN_MODAL, {
       type: "Ignore User Feedback"
@@ -34,21 +34,21 @@ function d(e) {
     (0, _.wT)(r, i, null != (t = null == a ? true : a.value) ? t : null, l), l || (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await o.e("14466").then(o.bind(o, 729328));
-      return t => (0, n.jsx)(e, function(e) {
+      } = await n.e("14466").then(n.bind(n, 729328));
+      return t => (0, o.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var o = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(o);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(o).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(o, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = o[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            o = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), o.forEach(function(t) {
+            var o;
+            o = n[t], t in e ? Object.defineProperty(e, t, {
+              value: o,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = n
+            }) : e[t] = o
           })
         }
         return e
@@ -57,16 +57,16 @@ function d(e) {
       }, t))
     })
   }, []);
-  return (0, n.jsx)(i.Z, {
+  return (0, o.jsx)(i.Z, {
     modalType: "ignore_user",
     header: u.intl.string(u.t.Ib6bic),
     body: u.intl.string(u.t["uW0/nV"]),
     problemTitle: u.intl.string(u.t.avs5Vg),
-    problems: m,
+    problems: d,
     freeformNeededProblems: p,
     onSubmit: f,
     onClose: t,
-    transitionState: d,
+    transitionState: m,
     otherKey: b.XL.SOMETHING_ELSE,
     hideHelpDeskLink: true,
     hideDontShowAgainCheckbox: true,

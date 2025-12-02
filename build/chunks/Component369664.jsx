@@ -1047,7 +1047,7 @@ let eW = Chunk473749.memo(function() {
         }), Chunk388032.intl.string(Chunk388032.t["0klLS7"]), (0, Chunk54381.jsx)(Chunk481060.NoS, {
           onClick: () => {
             var e;
-            (0, Chunk496729.ZZ)(), eY(null == (e = c.metadata) ? true : module.dismissUntil)
+            (0, Chunk496729.Z)(), eY(null == (e = c.metadata) ? true : module.dismissUntil)
           },
           noticeType: Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR,
           children: Chunk388032.intl.string(Chunk388032.t.e4y2VM)

@@ -7,15 +7,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk253179 = require("./253179.js"),
+  Chunk205120 = require("./205120.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
   Chunk607070 = require("./607070.js"),
   Chunk960919 = require("./960919.jsx"),
-  Chunk313481 = require("./313481.js"),
   Chunk509212 = require("./509212.js"),
   Chunk373370 = require("./373370.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk115179 = require("./115179.js"),
   Chunk472144 = require("./472144.jsx"),
   Chunk644646 = require("./644646.jsx"),
@@ -80,7 +80,7 @@ function T(e) {
   }), z = (null == (n = N.userStatus) ? true : n.completedAt) != null, G = (null == (o = N.userStatus) ? true : o.claimedAt) != null, K = (0, h.xN)(N.config), Y = (0, h.LM)(N.config), {
     completedRatio: X,
     completedRatioDisplay: J
-  } = (0, m.I)(N), $ = (0, f.Bd)(N, q, L), ee = s.useMemo(() => G && K ? E.intl.format(E.t["8Op4c4"], {
+  } = (0, f.I)(N), $ = (0, g.Bd)(N, q, L), ee = s.useMemo(() => G && K ? E.intl.format(E.t["8Op4c4"], {
     balanceHook: () => (0, r.jsxs)(w, {
       questId: N.id,
       children: [(0, r.jsx)(p.Z, {
@@ -142,7 +142,7 @@ function T(e) {
               quest: N,
               size: 76,
               percentComplete: X,
-              percentCompleteText: A && !(0, g.zi)(N) ? J : true,
+              percentCompleteText: A && !(0, m.zi)(N) ? J : true,
               children: (0, r.jsx)("div", {
                 className: O.circularRewardTileWrapper,
                 children: (0, r.jsx)(_.Z, {

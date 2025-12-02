@@ -12,11 +12,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk335131 = require("./335131.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
-  Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
   Chunk979232 = require("./979232.js"),
   Chunk373370 = require("./373370.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk115179 = require("./115179.js"),
   Chunk542347 = require("./542347.js"),
   Chunk659302 = require("./659302.jsx"),
@@ -72,7 +72,7 @@ function T(e) {
       let r = (null == (e = t.userStatus) ? true : e.enrolledAt) == null ? d.jZ.ACCEPT_QUEST : d.jZ.WATCH_VIDEO;
       (0, j.openVideoQuestModal)({
         quest: t,
-        questContent: m.jn.QUEST_BAR_V2,
+        questContent: p.jn.QUEST_BAR_V2,
         sourceQuestContent: n,
         sourceQuestContentCTA: r
       })
@@ -85,12 +85,12 @@ let w = e => {
     let {
       quest: t,
       sourceQuestContent: n
-    } = e, s = (0, u.aM)(), a = (0, g.V_)(t);
+    } = e, s = (0, u.aM)(), a = (0, m.V_)(t);
     return (0, r.jsx)(o.zxk, {
       size: "sm",
       fullWidth: true,
-      onClick: () => (0, g.nc)(t, {
-        content: m.jn.QUEST_BAR_V2,
+      onClick: () => (0, m.nc)(t, {
+        content: p.jn.QUEST_BAR_V2,
         ctaContent: d.jZ.OPEN_GAME_LINK,
         impressionId: s,
         sourceQuestContent: n
@@ -106,10 +106,10 @@ let w = e => {
     } = e, a = null == (t = (0, u.WD)()) ? true : t.getId();
     return (0, r.jsx)(o.zxk, {
       fullWidth: true,
-      onClick: () => (0, g.gI)({
+      onClick: () => (0, m.gI)({
         quest: n
       }, {
-        content: m.jn.QUEST_BAR_V2,
+        content: p.jn.QUEST_BAR_V2,
         ctaContent: d.jZ.CONNECT_CONSOLE,
         impressionId: a,
         sourceQuestContent: s
@@ -121,12 +121,12 @@ let w = e => {
   N = e => {
     let {
       quest: t
-    } = e, n = (0, h.CR)({
+    } = e, n = (0, f.CR)({
       quest: t
     }), {
       launchInGameActivity: s
-    } = (0, p.zB)(t);
-    return (0, g.Rt)(t) ? (0, r.jsx)(o.zxk, {
+    } = (0, h.zB)(t);
+    return (0, m.Rt)(t) ? (0, r.jsx)(o.zxk, {
       fullWidth: true,
       variant: "primary",
       icon: (0, j.getPrimaryCtaIcon)(t),
@@ -164,12 +164,12 @@ let w = e => {
   A = e => {
     var t, n, {
         quest: u,
-        useReducedMotion: p,
-        isExpanded: g,
+        useReducedMotion: m,
+        isExpanded: f,
         className: h,
         ctaLabel: _,
         onClick: j,
-        questContent: v = m.jn.QUEST_BAR_V2,
+        questContent: v = p.jn.QUEST_BAR_V2,
         sourceQuestContent: T
       } = e,
       w = function(e, t) {
@@ -203,14 +203,14 @@ let w = e => {
       }, [j, u.config, null == (n = u.userStatus) ? true : n.claimedAt, N]),
       {
         shouldUseShinyButton: A
-      } = f.Z.useConfig({
+      } = g.Z.useConfig({
         location: (0, d._b)(T) + "- CtaButton"
       });
     return A ? (0, r.jsx)(i.gtL, S(O({
       fullWidth: true,
       size: a.zx.Sizes.SMALL,
       onClick: R,
-      pauseAnimation: p || !g && !P,
+      pauseAnimation: m || !f && !P,
       className: h,
       buttonShineClassName: E.shine,
       "data-migration-pending": true
@@ -236,10 +236,10 @@ let w = e => {
       isProgressing: c,
       activeScreen: d,
       taskDetails: u,
-      popoutTargetElementRef: p,
+      popoutTargetElementRef: g,
       onGameSheetOpened: f,
       onGameSheetClosed: h
-    } = e, x = (null == (t = n.userStatus) ? true : t.completedAt) != null, _ = (0, g.q8)(n), b = d !== m.LI.SELECT && !l && !c, j = null;
+    } = e, x = (null == (t = n.userStatus) ? true : t.completedAt) != null, _ = (0, m.q8)(n), b = d !== p.LI.SELECT && !l && !c, j = null;
     return x ? j = (0, r.jsx)(A, {
       quest: n,
       sourceQuestContent: s,
@@ -249,16 +249,16 @@ let w = e => {
       quest: n,
       sourceQuestContent: s,
       taskDetails: u
-    }) : (0, g.Rt)(n) ? j = (0, r.jsx)(N, {
+    }) : (0, m.Rt)(n) ? j = (0, r.jsx)(N, {
       quest: n
-    }) : d === m.LI.CONSOLE && i ? j = (0, r.jsx)(P, {
+    }) : d === p.LI.CONSOLE && i ? j = (0, r.jsx)(P, {
       quest: n,
       sourceQuestContent: s
-    }) : b && (0, g.Pb)(n) ? j = (0, r.jsx)(R, {
+    }) : b && (0, m.Pb)(n) ? j = (0, r.jsx)(R, {
       quest: n,
       sourceQuestContent: s,
       taskDetails: u,
-      popoutTargetElementRef: p,
+      popoutTargetElementRef: g,
       onGameSheetOpened: f,
       onGameSheetClosed: h
     }) : b && (j = (0, r.jsx)(w, {

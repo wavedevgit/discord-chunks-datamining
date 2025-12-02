@@ -12,9 +12,9 @@ var Chunk287734 = require("./287734.js"),
   Chunk503438 = require("./503438.js"),
   Chunk802856 = require("./802856.js"),
   Chunk420660 = require("./420660.js"),
-  Chunk313481 = require("./313481.js"),
   Chunk49436 = require("./49436.js"),
   Chunk509212 = require("./509212.js"),
+  Chunk968843 = require("./968843.js"),
   Chunk364833 = require("./364833.jsx"),
   Chunk81063 = require("./81063.js"),
   Chunk761282 = require("./761282.jsx"),
@@ -34,7 +34,7 @@ function v(e) {
     partiedMembers: S,
     applicationStreams: T,
     guildContext: N
-  } = t, j = (0, d.z1)(v), P = [], x = e => {
+  } = t, j = (0, f.z1)(v), P = [], x = e => {
     let {
       length: t
     } = P;
@@ -87,7 +87,7 @@ function v(e) {
       }
     }, "application-stream-".concat(t.ownerId)))
   }), C.forEach((e, t) => {
-    var n, i, l, d, m, b, y, T, P;
+    var n, i, l, f, m, b, y, T, P;
     let {
       activity: A,
       game: Z,
@@ -118,7 +118,7 @@ function v(e) {
       }, "embedded-activity-".concat(A.application_id)))
     } else(0, c.Z)(A) ? x((0, r.jsx)(_.Z.XboxSection, {
       title: Z.name
-    }, "xbox-".concat(null != (d = A.session_id) ? d : t))) : x((0, r.jsx)(_.Z.RichPresenceSection, {
+    }, "xbox-".concat(null != (f = A.session_id) ? f : t))) : x((0, r.jsx)(_.Z.RichPresenceSection, {
       activity: A,
       getAssetImage: g.xF,
       user: L
@@ -147,7 +147,7 @@ function v(e) {
       getAssetImage: g.xF,
       user: L
     }, "rich-presence-".concat(null != (T = A.session_id) ? T : t, "-").concat(L.id))));
-    j && null != v && null != Z && (0, f._D)(A, v) && (null == v.userStatus || !(0, f.zE)(v.userStatus, p.jn.ACTIVITY_PANEL)) && x((0, r.jsx)(h.Z, {
+    j && null != v && null != Z && (0, p._D)(A, v) && (null == v.userStatus || !(0, p.zE)(v.userStatus, d.jn.ACTIVITY_PANEL)) && x((0, r.jsx)(h.Z, {
       quest: v
     }, "quest-".concat(v.id, "-").concat(null != (P = A.session_id) ? P : t)))
   }), P.length > 0 ? (0, r.jsx)(_.Z.Body, {

@@ -40,7 +40,7 @@ function A(e) {
     let e = new Image;
     e.src = C, e.onload = () => s(true), e.onerror = () => s(true)
   }, [C]), i.useEffect(() => {
-    n && c.uvj.announce(S.intl.string(S.t.j2p125))
+    n && c.uvj.announce(y.intl.string(y.t.j2p125))
   }, [n]), (0, r.jsx)("div", {
     className: N.qrCodeContainer,
     children: "" !== t && n ? (0, r.jsxs)(r.Fragment, {
@@ -57,7 +57,7 @@ function A(e) {
       })]
     }) : (0, r.jsx)("div", {
       className: N.qrCodeOverlay,
-      "aria-label": S.intl.string(S.t.BUGkVF),
+      "aria-label": y.intl.string(y.t.BUGkVF),
       "aria-busy": true,
       children: (0, r.jsx)(c.$jN, {
         className: N.qrCode,
@@ -96,16 +96,16 @@ function P(e) {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
         }), (0, r.jsx)(m.Dx, {
           className: O.marginBottom8,
-          children: S.intl.string(S.t.UPiHaL)
+          children: y.intl.string(y.t.UPiHaL)
         }), null != i ? (0, r.jsx)(Z, {
           children: i
         }) : (0, r.jsx)(m.DK, {
-          children: S.intl.format(S.t["Qq+A6i"], {})
+          children: y.intl.format(y.t["Qq+A6i"], {})
         }), (0, r.jsx)(c.Kqy, {
           padding: 8,
           align: "center",
           children: (0, r.jsx)(c.Avr, {
-            text: S.intl.string(S.t["/kpMDt"]),
+            text: y.intl.string(y.t["/kpMDt"]),
             textVariant: "text-sm/normal",
             onClick: () => (function(e) {
               let t = E.isPlatformEmbedded && b.ZP.supportsFeature(I.eRX.WEBAUTHN) ? b.ZP.webAuthnAuthenticate : e => {
@@ -132,18 +132,18 @@ function P(e) {
           user: e,
           size: c.EFr.SIZE_120,
           isMobile: true,
-          status: y.Sk.ONLINE
+          status: S.Sk.ONLINE
         }), (0, r.jsx)(m.Dx, {
           className: O.marginBottom8,
-          children: S.intl.string(S.t.apGCUT)
+          children: y.intl.string(y.t.apGCUT)
         }), (0, r.jsx)(m.DK, {
-          children: S.intl.format(S.t.Cbl5JK, {
+          children: y.intl.format(y.t.Cbl5JK, {
             username: "".concat(j.ZP.getUserTag(e))
           })
         }), (0, r.jsx)("div", {
           className: N.startOverButton,
           children: (0, r.jsx)(c.Avr, {
-            text: S.intl.string(S.t.nOOhwo),
+            text: y.intl.string(y.t.nOOhwo),
             textVariant: "text-sm/normal",
             onClick: n
           })
