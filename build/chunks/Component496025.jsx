@@ -1,7 +1,7 @@
 /** Chunk was on 837 **/
 /** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 }), require("./388685.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -83,7 +83,7 @@ function E() {
   })
 }
 
-function T() {
+function N() {
   let e = Chunk473749.useCallback(() => {
     Chunk493683.Z.openPrivateChannel({
       recipientIds: [Chunk37812.I]
@@ -97,7 +97,7 @@ function T() {
   })
 }
 
-function N() {
+function T() {
   let e = (0, Chunk442837.e7)([Chunk432877.ZP], () => Chunk432877.ZP.allByCategory(Chunk432877.zU.MESSAGING), [], Chunk442837.pF).map(e => {
     let [t, n, {
       label: l
@@ -115,6 +115,6 @@ function N() {
       className: Chunk165432.divider
     }), (0, Chunk54381.jsx)(E, {}), (0, Chunk54381.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk54381.jsx)(T, {})]
+    }), (0, Chunk54381.jsx)(N, {})]
   })
 }

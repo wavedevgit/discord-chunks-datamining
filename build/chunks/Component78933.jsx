@@ -115,8 +115,8 @@ function eo(e) {
     eC = (0, $.F)(ey),
     eS = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
     eE = (0, g.p)(),
-    eT = F.Sb.useSetting(),
-    eN = (0, $.I)(e_),
+    eN = F.Sb.useSetting(),
+    eT = (0, $.I)(e_),
     eO = (0, q.g)(n),
     eP = (0, v.Z)({
       analyticsLocations: ex
@@ -139,7 +139,7 @@ function eo(e) {
     }, 500)
   }, []);
   let eU = e => {
-      null == n || n(), (0, T.openUserProfileModal)(es({
+      null == n || n(), (0, N.openUserProfileModal)(es({
         customStatusPrompt: eD,
         sourceAnalyticsLocations: ex
       }, ef, e))
@@ -190,7 +190,7 @@ function eo(e) {
               user: t,
               displayProfile: eh,
               themeType: ea.l.POPOUT
-            }), (0, a.jsx)(N.Z, {
+            }), (0, a.jsx)(T.Z, {
               user: t,
               displayProfile: eh,
               themeType: ea.l.POPOUT,
@@ -294,7 +294,7 @@ function eo(e) {
                         className: ei.statusPickerModalMenu,
                         "aria-label": el.intl.string(el.t.E13trI),
                         onClose: t,
-                        children: eN
+                        children: eT
                       })
                     },
                     onClick: i.tq ? () => {
@@ -330,7 +330,7 @@ function eo(e) {
                             hideScroller: true,
                             onClose: l,
                             onSelect: true,
-                            children: eN
+                            children: eT
                           })
                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                           var n = Object.keys(e);
@@ -367,7 +367,7 @@ function eo(e) {
                         children: eO
                       })
                     }
-                  }), !__OVERLAY__ && z.wS && eT && (0, a.jsx)(J.V4, {
+                  }), !__OVERLAY__ && z.wS && eN && (0, a.jsx)(J.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
                     label: el.intl.string(el.t["/AXYnE"]),

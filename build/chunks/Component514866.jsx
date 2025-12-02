@@ -1,7 +1,7 @@
 /** Chunk was on 837 **/
 /** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -9,9 +9,6 @@ var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk668757 = require("./668757.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk168107 = require("./168107.jsx"),
-  Chunk480916 = require("./480916.js"),
-  Chunk963886 = require("./963886.jsx"),
   Chunk110478 = require("./110478.jsx"),
   Chunk677106 = require("./677106.js"),
   Chunk906605 = require("./906605.js"),
@@ -24,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk134612 = require("./134612.js"),
   Chunk517269 = require("./517269.js"),
   Chunk197571 = require("./197571.js");
-let C = () => {
+let j = () => {
   Promise.all([require.e("52030"), require.e("1286")]).then(require.bind(require, 24031)).then(e => {
     let {
       openMFAModal: t
@@ -45,7 +42,7 @@ let C = () => {
   })
 };
 
-function S() {
+function _() {
   let e = Chunk594174.default.getCurrentUser(),
     t = null == module ? true : module.isStaff(),
     l = Chunk695346.Rt.useSetting();
@@ -61,7 +58,7 @@ function S() {
         variant: "primary",
         size: "sm",
         text: "Launch MFA",
-        onClick: C
+        onClick: j
       })
     }), (0, Chunk54381.jsx)("div", {
       className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
@@ -105,7 +102,7 @@ function S() {
               otherUserId: "9876543210",
               channelId: t,
               warningId: "test-warning-id",
-              warningType: h.pj.INAPPROPRIATE_CONVERSATION_TIER_2
+              warningType: u.pj.INAPPROPRIATE_CONVERSATION_TIER_2
             }, n))
           }, {
             modalKey: Chunk134612.X_
@@ -134,24 +131,6 @@ function S() {
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
-          text: "Launch Age Verification Test Tool",
-          onClick: () => (0, Chunk963886.E)()
-        })
-      }), (0, Chunk54381.jsx)("div", {
-        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
-          variant: "primary",
-          size: "sm",
-          text: "Launch Age Verification Modal",
-          onClick: () => Chunk168107.Z.showAgeVerificationGetStartedModal({
-            entryPoint: Chunk480916.cU.DEV_TOOLS_QUICK_ACTIONS
-          })
-        })
-      }), (0, Chunk54381.jsx)("div", {
-        className: i()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
-        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
-          variant: "primary",
-          size: "sm",
           text: "Reset Hang Status State",
           onClick: Chunk906605.YU
         })
@@ -168,7 +147,7 @@ function S() {
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Ignore profile speedbump disabled",
           checked: Chunk120356,
-          onChange: e => f.Rt.updateSetting(e)
+          onChange: e => p.Rt.updateSetting(e)
         })
       })]
     })]

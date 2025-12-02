@@ -1,5 +1,5 @@
 /** Chunk was on 76334 **/
-/** chunk id: 701464, original params: e,t,i (module,exports,require) **/
+/** chunk id: 701464, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -12,8 +12,8 @@ var Chunk987209 = require("./987209.jsx"),
   Chunk391763 = require("./391763.js");
 let c = function(e) {
   let {
-    onSelectSku: t,
-    priceOptions: i,
+    onSelectSku: i,
+    priceOptions: t,
     giftRecipient: c,
     onWishlistItemClick: d
   } = e, {
@@ -23,20 +23,20 @@ let c = function(e) {
     className: o.giftOptionContainer,
     children: [(0, n.jsxs)("div", {
       className: o.cardsRow,
-      children: [(0, n.jsx)(l.jB, {
-        onClick: () => t(s.Si.TIER_2),
+      children: [(0, n.jsx)(a.jB, {
+        onClick: () => i(s.Si.TIER_2),
         isGift: true,
-        priceOptions: i,
+        priceOptions: t,
         showPromotionalGiftBanner: m,
         enablePremiumBrandRefresh: true
-      }), (0, n.jsx)(l.j8, {
-        onClick: () => t(s.Si.TIER_0),
+      }), (0, n.jsx)(a.j8, {
+        onClick: () => i(s.Si.TIER_0),
         isGift: true,
-        priceOptions: i,
+        priceOptions: t,
         enablePremiumBrandRefresh: true,
         removeTopMargin: true
       })]
-    }), (0, n.jsx)(a.Z, {
+    }), (0, n.jsx)(l.Z, {
       giftRecipient: c,
       onWishlistItemClick: d
     })]

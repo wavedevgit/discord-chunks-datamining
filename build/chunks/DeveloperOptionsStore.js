@@ -88,7 +88,9 @@ let h = (() => {
     isStreamInfoOverlayEnabled: false,
     preventPopoutClose: false,
     logKeyboardMismatches: false,
-    alertStartupMetrics: false
+    alertStartupMetrics: false,
+    personaForceFaeFail: false,
+    personaForceIdVerificationFail: false
   },
   b = m({}, E);
 
@@ -173,6 +175,12 @@ class I extends(r = Chunk442837.ZP.Store) {
   }
   get alertStartupMetrics() {
     return b.alertStartupMetrics
+  }
+  get personaForceFaeFail() {
+    return b.personaForceFaeFail
+  }
+  get personaForceIdVerificationFail() {
+    return b.personaForceIdVerificationFail
   }
   getDebugOptionsHeaderValue() {
     return Object.keys(b).map(e => b[e]), Object.keys(b).filter(e => b[e]).join(",")

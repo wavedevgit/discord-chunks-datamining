@@ -1,7 +1,7 @@
 /** Chunk was on 837 **/
 /** chunk id: 682475, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => ec
+  F: () => ed
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,6 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk432877 = require("./432877.js");
 require("./381996.js");
 var Chunk392750 = require("./392750.jsx"),
+  Chunk283162 = require("./283162.jsx"),
   Chunk926976 = require("./926976.jsx"),
   Chunk789654 = require("./789654.jsx"),
   Chunk866730 = require("./866730.jsx"),
@@ -65,7 +66,7 @@ var Chunk392750 = require("./392750.jsx"),
   Chunk167488 = require("./167488.jsx"),
   Chunk324805 = require("./324805.js");
 
-function ec() {
+function ed() {
   return Chunk473749.useMemo(() => {
     let e = [{
       id: "analytics",
@@ -118,6 +119,11 @@ function ec() {
       name: "Performance",
       group: Chunk621060.v0.DEVELOPMENT,
       render: () => (0, Chunk54381.jsx)(Chunk178821.ZP, {})
+    }), module.push({
+      id: "age_verification",
+      name: "Age Verification",
+      group: Chunk621060.v0.DEVELOPMENT,
+      render: () => (0, Chunk54381.jsx)(Chunk283162.Z, {})
     }), module.push({
       id: "feedback",
       name: "Feedback",
