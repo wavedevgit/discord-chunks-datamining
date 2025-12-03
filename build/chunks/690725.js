@@ -1,27 +1,36 @@
 /** Chunk was on web.js **/
 /** chunk id: 690725, original params: e,t,n (module,exports,re quire) **/
 "use strict";
+let r;
 require.d(exports, {
-  f: () => a
+  f: () => o
 }), require("./415506.js");
 var Chunk4646 = require("./4646.js"),
   Chunk665672 = require("./665672.js");
-async function a(e) {
+try {
+  r = require(Object(function() {
+    var e = Error("Cannot find module '@shopify/react-native-skia'");
+    throw module.code = "MODULE_NOT_FOUND", module
+  }())).Skia
+} catch (e) {
+  r = null
+}
+async function o(e) {
   let {
     assetsToLoad: t,
-    drawImage: a,
+    drawImage: r,
     exportConfigs: o
-  } = e, s = await (0, r.k2)(t);
+  } = e, s = await (0, i.k2)(t);
   await s.loadFonts();
   {
     let e = n(503082).Z,
       t = n(97008).Z,
-      r = document.createElement("canvas"),
-      l = new e(r, s),
+      i = document.createElement("canvas"),
+      l = new e(i, s),
       c = new t,
-      u = new i.Z(l, c);
-    a(u.canvas);
+      u = new a.Z(l, c);
+    r(u.canvas);
     let d = await u.export(o);
-    return r.remove(), d
+    return i.remove(), d
   }
 }

@@ -40,11 +40,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = e => a.useExperiment({
-    location: e
-  }, {
-    autoTrackExposure: false
-  }).canSeeConfetti,
+  o = e => false,
   s = e => a.useExperiment({
     location: e
   }, {

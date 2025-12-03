@@ -1,8 +1,14 @@
 /** Chunk was on web.js **/
 /** chunk id: 4646, original params: e,t,n (module,exports,re quire) **/
 "use strict";
+let r;
+require.d(exports, {
+  ZP: () => c,
+  k2: () => s
+}), require("./388685.js");
+var Chunk710845 = require("./710845.js");
 
-function r(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -10,20 +16,24 @@ function r(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-require.d(exports, {
-  ZP: () => s,
-  k2: () => a
-}), require("./388685.js");
-let i = new(require("./710845.js")).Z("AssetMap");
-async function a(e) {
-  let t = new o,
+try {
+  r = require(Object(function() {
+    var e = Error("Cannot find module '@shopify/react-native-skia'");
+    throw module.code = "MODULE_NOT_FOUND", module
+  }())).Skia
+} catch (e) {
+  r = null
+}
+let o = new Chunk710845.Z("AssetMap");
+async function s(e) {
+  let t = new l,
     n = Object.entries(e).map(e => {
       let [n, r] = e;
-      return t.loadRemoteImage(n, r).catch(e => i.warn("Failed to load canvas asset", e, n, r))
+      return t.loadRemoteImage(n, r).catch(e => o.warn("Failed to load canvas asset", e, n, r))
     });
   return await Promise.all(n), t
 }
-class o {
+class l {
   loadFonts() {
     return Promise.resolve()
   }
@@ -38,7 +48,7 @@ class o {
     return null != this.assets[e]
   }
   constructor() {
-    r(this, "assets", {}), r(this, "fontManager", true)
+    a(this, "assets", {}), a(this, "fontManager", true)
   }
 }
-let s = o
+let c = l
