@@ -30,9 +30,9 @@ let b = e => {
   } = e, Z = (0, d.Dt)(), {
     nodes: O,
     root_node_id: I,
-    success_node_id: S,
-    fail_node_id: C
-  } = n, [N, T] = i.useState(I), [P, E] = i.useState(true), [k, w] = i.useState(true), [R, M] = i.useState([]), [D, A] = i.useState(true), [B, U] = i.useState(true), L = (0, m.PO)("in_app_report_modal");
+    success_node_id: C,
+    fail_node_id: S
+  } = n, [N, T] = i.useState(I), [P, E] = i.useState(true), [k, w] = i.useState(true), [M, D] = i.useState([]), [R, A] = i.useState(true), [B, U] = i.useState(true), L = (0, m.PO)("in_app_report_modal");
   (0, s.ZP)(() => {
     L && (0, u.k0)()
   });
@@ -73,7 +73,7 @@ let b = e => {
       })(Object(i)).forEach(function(e) {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r));
-      if (M([...R, e]), null != d.key && (null == v || v(d.key)), E(true), w(true), t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
+      if (D([...M, e]), null != d.key && (null == v || v(d.key)), E(true), w(true), t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
         let e = t.record.id;
         o.ZP.trackWithMetadata(h.rMx.IAR_NAVIGATE, {
           message_id: e,
@@ -87,13 +87,13 @@ let b = e => {
     },
     H = async e => {
       var r;
-      let i = y ? await (0, g.ZD)(n, t, [...R, e]) : await (0, g.fw)(n, t, [...R, e], j),
+      let i = y ? await (0, g.ZD)(n, t, [...M, e]) : await (0, g.fw)(n, t, [...M, e], j),
         l = null == i || null == (r = i.body) ? true : r.report_id;
       null != l && A(l), U(O[e.nodeRef].report_type), null == f || f(l)
     }, W = () => {
       var e, n;
-      if (R.length < 1) return;
-      let r = [...R],
+      if (M.length < 1) return;
+      let r = [...M],
         i = r.pop(),
         l = null != (n = null == i ? true : i.nodeRef) ? n : I;
       if (t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
@@ -106,14 +106,14 @@ let b = e => {
           next_node: O[l].id
         })
       }
-      E(null == i || null == (e = i.multiSelect) ? true : e.state), w(null == i ? true : i.textInput), T(l), M(r), null == v || v("..")
+      E(null == i || null == (e = i.multiSelect) ? true : e.state), w(null == i ? true : i.textInput), T(l), D(r), null == v || v("..")
     }, F = i.useMemo(() => {
       let e = [],
         t = [];
       for (let l in O) {
         var n, r, i;
         let a = O[l];
-        if (a.id !== S && a.id !== C && a.id !== I) {
+        if (a.id !== C && a.id !== S && a.id !== I) {
           if (a.key.endsWith("_SUBMIT") || (null == (n = a.button) ? true : n.type) === "submit") {
             t.push(a);
             continue
@@ -125,8 +125,8 @@ let b = e => {
           }
         }
       }
-      return [O[I], ...e, ...t, O[S], O[C]]
-    }, [O, I, C, S]);
+      return [O[I], ...e, ...t, O[C], O[S]]
+    }, [O, I, S, C]);
   return (0, r.jsx)(a.Y0X, {
     "data-migration-pending": true,
     transitionState: b.transitionState,
@@ -144,16 +144,16 @@ let b = e => {
             node: e,
             reportType: t,
             reportSubType: B,
-            history: R,
+            history: M,
             onModalClose: b.onClose,
             onSelectChild: G,
             onNavigateBack: W,
             multiSelect: P,
             textInput: k,
-            successNodeId: S,
-            failNodeId: C,
+            successNodeId: C,
+            failNodeId: S,
             onSubmit: H,
-            reportId: D,
+            reportId: R,
             nodeMap: O
           })
         })

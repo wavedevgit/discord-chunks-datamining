@@ -294,10 +294,6 @@ let V = {
     throttlePeriod: M,
     throttleKeys: () => []
   },
-  [Chunk981631.rMx.KEYWORD_FILTER_MATCH]: {
-    throttlePeriod: j,
-    throttleKeys: e => [e.message_id]
-  },
   [Chunk981631.rMx.MEDIA_INPUT_VOLUME_CHANGED]: {
     throttlePeriod: L,
     throttleKeys: e => [e.location_stack]

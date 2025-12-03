@@ -51,7 +51,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk342153 = require("./342153.js"),
   Chunk520310 = require("./520310.js");
 
-function K(e) {
+function Y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -106,7 +106,7 @@ let ee = e => {
     multiSelect: el,
     reportId: ea,
     textInput: es
-  } = e, eo = X(t, "checkbox"), ed = X(t, "text_line_resource"), ec = $(t, "external_link"), eu = $(t, "free_text"), em = $(t, "dropdown"), ep = X(t, "text"), eg = l.s.REPORT_TO_MOD.has(n.name), [e_, eh] = i.useState(false), [ex, eb] = i.useState(false), [ef, ev] = i.useState(""), [ej, ey] = i.useState(() => ({})), [eZ, eO] = i.useState(() => ({})), eI = i.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), eS = i.useCallback(e => ({
+  } = e, eo = X(t, "checkbox"), ed = X(t, "text_line_resource"), ec = $(t, "external_link"), eu = $(t, "free_text"), em = $(t, "dropdown"), ep = X(t, "text"), eg = l.s.REPORT_TO_MOD.has(n.name), [e_, eh] = i.useState(false), [ex, eb] = i.useState(false), [ef, ev] = i.useState(""), [ej, ey] = i.useState(() => ({})), [eZ, eO] = i.useState(() => ({})), eI = i.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), eC = i.useCallback(e => ({
     nodeRef: t.id,
     destination: e,
     textInput: null != eu || null != em ? eZ : true,
@@ -114,15 +114,15 @@ let ee = e => {
       name: eo.name,
       state: ej
     } : true
-  }), [t, eu, em, eo, ej, eZ]), eC = i.useMemo(() => (0, m.VP)(eu, em, eo, eZ, ej), [eu, em, eo, eZ, ej]), eN = function(e, t) {
+  }), [t, eu, em, eo, ej, eZ]), eS = i.useMemo(() => (0, m.VP)(eu, em, eo, eZ, ej), [eu, em, eo, eZ, ej]), eN = function(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-      r = K({}, eZ);
+      r = Y({}, eZ);
     r[e] = {
       value: t,
       isValid: n
     }, eO(r)
   }, eT = e => {
-    en(eS(e))
+    en(eC(e))
   };
   i.useEffect(() => {
     null != el && ey(el), null != es && eO(es)
@@ -141,26 +141,26 @@ let ee = e => {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        })(K({}, e), {
+        })(Y({}, e), {
           [t]: n
         }))
     }
   }, [eo]), i.useEffect(() => {
-    t.is_auto_submit && !ex && (eb(true), ei(eS(["", t.id])))
-  }, [t.is_auto_submit, ex, ei, eS, t.id]);
+    t.is_auto_submit && !ex && (eb(true), ei(eC(["", t.id])))
+  }, [t.is_auto_submit, ex, ei, eC, t.id]);
   let eP = (0, u.fW)(ee),
     eE = null != X(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name),
     ek = (0, c.U)(),
     ew = (0, o.PO)("share_with_parent_element"),
-    eR = (0, d.zu)(),
-    eM = ek && eR.length > 0 && ew && null != X(t, "share_with_parents");
+    eM = (0, d.zu)(),
+    eD = ek && eM.length > 0 && ew && null != X(t, "share_with_parents");
   return (0, r.jsxs)("div", {
-    className: J.container,
+    className: K.container,
     children: [(0, r.jsxs)(a.xBx, {
       "data-migration-pending": true,
       separator: false,
       direction: s.Z.Direction.VERTICAL,
-      className: J.header,
+      className: K.header,
       children: [(0, r.jsx)(L.Z, {
         element: X(t, "success")
       }), (0, r.jsx)(N.Z, {
@@ -171,7 +171,7 @@ let ee = e => {
       })]
     }), (0, r.jsxs)(a.hzk, {
       "data-migration-pending": true,
-      className: J.body,
+      className: K.body,
       children: [null != ed && (0, r.jsx)(H.Z, {
         element: ed
       }), null != ep && (0, r.jsx)(G.Z, {
@@ -183,7 +183,7 @@ let ee = e => {
       }) : null, null != X(t, "widget_preview") && "widget" === n.name ? (0, r.jsx)(F.Z, {
         widget: n.widget,
         userId: n.user_id
-      }) : null, null != X(t, "guild_preview") && "guild" === n.name ? (0, r.jsx)(S.Z, {
+      }) : null, null != X(t, "guild_preview") && "guild" === n.name ? (0, r.jsx)(C.Z, {
         guild: n.record
       }) : null, null != X(t, "breadcrumbs") && (0, r.jsx)(h.Z, {
         isModeratorReport: eg,
@@ -198,19 +198,19 @@ let ee = e => {
           } = e;
           return z.O.includes(t)
         })
-      }(t) && (0, r.jsxs)(M.Z, {
+      }(t) && (0, r.jsxs)(D.Z, {
         children: [eE && (0, r.jsx)(T.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: eI,
           reportId: ea
-        }), eM && (0, r.jsx)(B.Z, {
-          parents: eR
+        }), eD && (0, r.jsx)(B.Z, {
+          parents: eM
         }), null != X(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name || "application" === n.name && null != n.record.bot) && (0, r.jsx)(_.Z, {
           user: "application" === n.name ? n.record.bot : "user" === n.name ? n.record : n.record.author,
           channelId: eI,
           reportId: ea,
           reportType: n
-        }), !eE && null != X(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(R.Z, {
+        }), !eE && null != X(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(M.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: eI,
           reportId: ea
@@ -223,7 +223,7 @@ let ee = e => {
         }), null != X(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(b.Z, {
           application: n.record,
           reportId: ea
-        }), null != X(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(D.Z, {
+        }), null != X(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(R.Z, {
           application: n.record,
           reportId: ea
         })]
@@ -236,7 +236,7 @@ let ee = e => {
         reportSubType: ee
       }), null != X(t, "channel_preview") && "stage_channel" === n.name && (0, r.jsx)(U.Z, {
         stageInstance: n.record
-      }), null != X(t, "guild_scheduled_event_preview") && "guild_scheduled_event" === n.name && (0, r.jsx)(C.Z, {
+      }), null != X(t, "guild_scheduled_event_preview") && "guild_scheduled_event" === n.name && (0, r.jsx)(S.Z, {
         event: n.record
       }), null != X(t, "guild_directory_entry_preview") && "guild_directory_entry" === n.name && (0, r.jsx)(O.Z, {
         entry: n.record
@@ -247,7 +247,7 @@ let ee = e => {
       }), null != eo && (0, r.jsx)(w.Z, {
         element: eo,
         onChange: (e, t) => {
-          let n = K({}, ej);
+          let n = Y({}, ej);
           e in ej ? delete n[e] : n[e] = t, ey(n)
         },
         state: ej
@@ -260,7 +260,7 @@ let ee = e => {
         onChange: eN,
         state: eZ
       }), (0, r.jsxs)("div", {
-        className: J.listContainer,
+        className: K.listContainer,
         children: [(0, r.jsx)(x.Z, {
           node: t,
           onSelectChild: eT,
@@ -277,7 +277,7 @@ let ee = e => {
     }), (0, r.jsx)(p.Z, {
       button: t.button,
       submitting: e_,
-      disableNext: eC,
+      disableNext: eS,
       isModeratorReport: eg,
       onClick: t => {
         switch (t.type) {
@@ -291,11 +291,11 @@ let ee = e => {
           case "submit":
             eh(true);
             let n = ["", e.successNodeId];
-            ei(eS(n)).then(() => {
+            ei(eC(n)).then(() => {
               ev(""), eT(n)
             }).catch(e => {
               var t;
-              (null == (t = e.body) ? true : t.code) === V.evJ.INVALID_FORM_BODY ? ev(Q.intl.string(Q.t.VjAAuP)) : eg ? ev(Q.intl.string(Y.default.psKFdJ)) : ev(Q.intl.string(Q.t.h6D8Vy))
+              (null == (t = e.body) ? true : t.code) === V.evJ.INVALID_FORM_BODY ? ev(Q.intl.string(Q.t.VjAAuP)) : eg ? ev(Q.intl.string(J.default.psKFdJ)) : ev(Q.intl.string(Q.t.h6D8Vy))
             }).finally(() => {
               eh(false)
             })
@@ -305,7 +305,7 @@ let ee = e => {
       canNavigateBack: et.length > 0
     }), (0, r.jsx)(a.olH, {
       "data-migration-pending": true,
-      className: J.closeButton,
+      className: K.closeButton,
       onClick: er
     })]
   })

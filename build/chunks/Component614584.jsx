@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 614584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,7 +10,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk39154 = require("./39154.js"),
   Chunk627050 = require("./627050.js"),
   Chunk35125 = require("./35125.js"),
-  Chunk905405 = require("./905405.js"),
   Chunk628238 = require("./628238.js"),
   Chunk499401 = require("./499401.js"),
   Chunk693912 = require("./693912.js"),
@@ -25,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function E(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -44,7 +43,7 @@ function E(e) {
   return e
 }
 
-function j(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,101 +55,100 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = Chunk473749.memo(function(e) {
+let j = Chunk473749.memo(function(e) {
   var t;
   let {
     baseMessage: n,
-    referencedMessage: S,
-    channel: P,
-    compact: I = false,
-    referencedUsernameProfile: Z,
-    referencedAvatarProfile: T,
-    setPopout: N,
-    isReplySpineClickable: A,
-    showReplySpine: w
-  } = e, M = S.state === f.Y.LOADED ? S.message : true, R = (0, y.Uj)(M), L = (0, u.p)(), k = s.d.useExperiment({
+    referencedMessage: j,
+    channel: S,
+    compact: P = false,
+    referencedUsernameProfile: I,
+    referencedAvatarProfile: Z,
+    setPopout: T,
+    isReplySpineClickable: N,
+    showReplySpine: A
+  } = e, w = j.state === h.Y.LOADED ? j.message : true, M = (0, b.Uj)(w), R = s.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, D = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = r.useMemo(() => {
-    if (null == M) return null;
-    let e = (0, o.Z)(M);
-    if (e.type === O.uaV.USER_JOIN) return (0, a.Rp)(x.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
-      username: null != R ? R.nick : e.author.username,
+  }).enabled, L = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), k = r.useMemo(() => {
+    if (null == w) return null;
+    let e = (0, o.Z)(w);
+    if (e.type === _.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id), {
+      username: null != M ? M.nick : e.author.username,
       usernameHook: e => e
     }));
-    if (e.type === O.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.Rp)((0, c.PA)({
-      username: null != R ? R.nick : e.author.username,
-      guildId: null == P ? true : P.guild_id,
+    if (e.type === _.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.Rp)((0, c.PA)({
+      username: null != M ? M.nick : e.author.username,
+      guildId: null == S ? true : S.guild_id,
       roleSubscriptionData: e.roleSubscriptionData
     }));
-    if (e.type === O.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, p.Y)({
+    if (e.type === _.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, d.Y)({
       application: null == e ? true : e.application,
-      username: null == R ? true : R.nick
+      username: null == M ? true : M.nick
     }));
-    if (e.type === O.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, h.B2)({
+    if (e.type === _.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, p.B2)({
       application: null == e ? true : e.application,
-      username: null == R ? true : R.nick
+      username: null == M ? true : M.nick
     }));
-    if (e.type === O.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, h.hj)({
+    if (e.type === _.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, p.hj)({
       application: null == e ? true : e.application,
-      username: null == R ? true : R.nick
+      username: null == M ? true : M.nick
     }));
-    else if (e.type === O.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : x.intl.string(x.t.wnn1Dc);
+    else if (e.type === _.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1Dc);
     if (null != e.content && "" !== e.content) {
       let t = {
           formatInline: true,
-          allowLinks: true,
-          shouldFilterKeywords: L
+          allowLinks: true
         },
-        n = e.isFirstMessageInForumPost(P) ? j(E({}, t), {
+        n = e.isFirstMessageInForumPost(S) ? E(x({}, t), {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
-          allowGameMentions: k
-        }) : j(E({}, t), {
+          allowGameMentions: R
+        }) : E(x({}, t), {
           formatInline: true,
-          allowHeading: D,
-          allowList: D,
-          allowGameMentions: k
+          allowHeading: L,
+          allowList: L,
+          allowGameMentions: R
         });
-      return (0, b.ZP)(e, n).content
+      return (0, g.ZP)(e, n).content
     }
     return null
-  }, [M, R, P, D, L, k]), {
-    isReplyAuthorBlocked: V,
-    isReplyAuthorIgnored: F
-  } = (0, l.cj)([m.Z], () => ({
-    isReplyAuthorBlocked: null != M && m.Z.isBlockedForMessage(M),
-    isReplyAuthorIgnored: null != M && m.Z.isIgnoredForMessage(M)
-  }), [M]), H = (0, _.wq)(null == M ? true : M.author.id, P.id), B = (0, _.$3)(n, M), G = (0, _.Wl)(M, P, Z, N), z = (0, _.rY)(T, N), W = r.useCallback(() => {
-    N({
+  }, [w, M, S, L, R]), {
+    isReplyAuthorBlocked: D,
+    isReplyAuthorIgnored: U
+  } = (0, l.cj)([f.Z], () => ({
+    isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
+    isReplyAuthorIgnored: null != w && f.Z.isIgnoredForMessage(w)
+  }), [w]), V = (0, v.wq)(null == w ? true : w.author.id, S.id), F = (0, v.$3)(n, w), H = (0, v.Wl)(w, S, I, T), B = (0, v.rY)(Z, T), G = r.useCallback(() => {
+    T({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [N]), q = (0, y.Uj)(n);
-  return (0, i.jsx)(C.Z, {
-    repliedAuthor: R,
+  }, [T]), z = (0, b.Uj)(n);
+  return (0, i.jsx)(y.Z, {
+    repliedAuthor: M,
     baseMessage: n,
-    channel: P,
-    baseAuthor: q,
-    referencedMessage: S,
-    content: U,
-    compact: I,
-    isReplyAuthorBlocked: V,
-    isReplyAuthorIgnored: F,
-    showAvatarPopout: T,
-    showUsernamePopout: Z,
-    renderPopout: v.Z,
-    onClickAvatar: z,
-    onClickUsername: G,
-    onClickReply: B,
-    onContextMenu: H,
-    onPopoutRequestClose: W,
-    isReplySpineClickable: A,
-    showReplySpine: w
+    channel: S,
+    baseAuthor: z,
+    referencedMessage: j,
+    content: k,
+    compact: P,
+    isReplyAuthorBlocked: D,
+    isReplyAuthorIgnored: U,
+    showAvatarPopout: Z,
+    showUsernamePopout: I,
+    renderPopout: C.Z,
+    onClickAvatar: B,
+    onClickUsername: H,
+    onClickReply: F,
+    onContextMenu: V,
+    onPopoutRequestClose: G,
+    isReplySpineClickable: N,
+    showReplySpine: A
   })
 });
 
-function P(e) {
+function S(e) {
   let {
     message: t,
     channel: n,
@@ -163,7 +161,7 @@ function P(e) {
     isReplySpineClickable: u,
     showReplySpine: d = true
   } = e;
-  return null != s && (0, i.jsx)(S, {
+  return null != s && (0, i.jsx)(j, {
     baseMessage: t,
     replyReference: s,
     referencedMessage: c,

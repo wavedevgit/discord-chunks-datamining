@@ -142,27 +142,26 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
       isOverlaySupported: eG,
       isClipsBetaTagShowing: eF = false,
       shouldMergeGameSettings: eV,
-      isKeywordFilteringEnabled: eH,
-      isStaff: eY,
-      isInappropriateConversationWarningEnabled: eW,
-      isInapproprateConversationsDefaultOn: eK,
-      paymentsBlocked: ez,
-      isEligibleForQuests: eq,
-      isStricterMessageRequestsEnabled: eX,
-      hasLibraryApplication: eQ,
-      hasTOTPEnabled: eJ,
-      developerMode: e$,
-      isAdultUser: e0,
-      hasSecureFramesVerifiedUserIds: e1,
-      hasIgnoredUsers: e3,
-      hasBlockedUsers: e2,
-      isEligibleForSensitiveContentDefaults: e4,
-      inputMode: e5,
-      activeInputProfile: e8,
-      isInputProfileCustom: e6,
-      isChatMentionSuggestionsSettingEnabled: e7,
-      isCrossDMSearchEnabledSettingVisible: e9,
-      isRedesignedNotificationsEnabled: te
+      isStaff: eH,
+      isInappropriateConversationWarningEnabled: eY,
+      isInapproprateConversationsDefaultOn: eW,
+      paymentsBlocked: eK,
+      isEligibleForQuests: ez,
+      isStricterMessageRequestsEnabled: eq,
+      hasLibraryApplication: eX,
+      hasTOTPEnabled: eQ,
+      developerMode: eJ,
+      isAdultUser: e$,
+      hasSecureFramesVerifiedUserIds: e0,
+      hasIgnoredUsers: e1,
+      hasBlockedUsers: e3,
+      isEligibleForSensitiveContentDefaults: e2,
+      inputMode: e4,
+      activeInputProfile: e5,
+      isInputProfileCustom: e8,
+      isChatMentionSuggestionsSettingEnabled: e6,
+      isCrossDMSearchEnabledSettingVisible: e7,
+      isRedesignedNotificationsEnabled: e9
     } = e;
     return Object.freeze({
       [eA.s6.SEARCH_NO_RESULTS]: {
@@ -201,7 +200,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [eR.intl.string(eR.t["/52UYy"]), eR.intl.string(eR.t.sK0dmH), eR.intl.string(eR.t.XxRj7f), eR.intl.string(eR.t.yNGjyK), eR.intl.string(eR.t.KPGVWl)],
         section: eN.oAB.ACCOUNT,
         parent: eA.s6.ACCOUNT_PROFILE,
-        predicate: () => e4
+        predicate: () => e2
       },
       [eA.s6.ACCOUNT_USERNAME]: {
         searchableTitles: [eR.intl.string(eR.t["+JkHPw"])],
@@ -237,13 +236,13 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [eR.intl.string(eR.t.cDgKte)],
         section: eN.oAB.ACCOUNT,
         parent: eA.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => !eJ
+        predicate: () => !eQ
       },
       [eA.s6.ACCOUNT_REMOVE_2FA]: {
         searchableTitles: [eR.intl.string(eR.t["D+aE7g"])],
         section: eN.oAB.ACCOUNT,
         parent: eA.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => eJ
+        predicate: () => eQ
       },
       [eA.s6.ACCOUNT_VIEW_BACKUP_CODES]: {
         searchableTitles: [eR.intl.string(eR.t.fZSi1D)],
@@ -486,7 +485,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eR.intl.string(eR.t["3o2ojh"])],
         parent: eA.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
-        predicate: () => !eX
+        predicate: () => !eq
       },
       [eA.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_STATUS_V2]: {
         section: eN.oAB.CONTENT_AND_SOCIAL,
@@ -528,23 +527,17 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [eR.intl.string(eR.t.dmBSKo)],
         parent: eA.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY
       },
-      [eA.s6.PRIVACY_KEYWORD_FILTER_V2]: {
-        section: eN.oAB.CONTENT_AND_SOCIAL,
-        searchableTitles: [eR.intl.string(eR.t["1UaUy+"]), eR.intl.string(eR.t["xIk/iF"])],
-        parent: eA.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-        predicate: () => eH
-      },
       [eA.s6.PRIVACY_SAFETY_ALERTS_V2]: {
         section: eN.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [eR.intl.string(eR.t.qFsx5q)],
         parent: eA.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-        predicate: () => eW && !e0 && !eK
+        predicate: () => eY && !e$ && !eW
       },
       [eA.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2]: {
         section: eN.oAB.DATA_AND_PRIVACY,
         searchableTitles: [eR.intl.string(eR.t["5b3FNI"])],
         parent: eA.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-        predicate: () => e1
+        predicate: () => e0
       },
       [eA.s6.PRIVACY_FAMILY_CENTER]: {
         section: eN.oAB.FAMILY_CENTER,
@@ -640,7 +633,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         parent: eA.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
         label: eR.intl.string(eR.t["3wRort"]),
         element: eS.ZP,
-        predicate: () => e3 || e2
+        predicate: () => e1 || e3
       },
       [eA.s6.BLOCKED_USERS]: {
         section: eN.oAB.CONTENT_AND_SOCIAL,
@@ -648,7 +641,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         label: eR.intl.string(eR.t.PFOUKW),
         searchableTitles: [eR.intl.string(eR.t.PFOUKW)],
         element: eS.GF,
-        predicate: () => e2
+        predicate: () => e3
       },
       [eA.s6.IGNORED_USERS]: {
         section: eN.oAB.CONTENT_AND_SOCIAL,
@@ -656,7 +649,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [eR.intl.string(eR.t["93ZDWE"])],
         label: eR.intl.string(eR.t["93ZDWE"]),
         element: eS.yo,
-        predicate: () => e3
+        predicate: () => e1
       },
       [eA.s6.PREMIUM]: {
         section: eN.oAB.PREMIUM,
@@ -700,25 +693,25 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.INVENTORY,
         searchableTitles: [eR.intl.string(eR.t["il+VCo"])],
         parent: eA.s6.GIFT_INVENTORY,
-        predicate: () => !ez
+        predicate: () => !eK
       },
       [eA.s6.GIFT_INVENTORY_QUESTS]: {
         section: eN.oAB.INVENTORY,
         searchableTitles: [eR.intl.string(eR.t.JALI2K)],
         parent: eA.s6.GIFT_INVENTORY,
-        predicate: () => eq
+        predicate: () => ez
       },
       [eA.s6.GIFT_INVENTORY_LIST]: {
         section: eN.oAB.INVENTORY,
         searchableTitles: [eR.intl.string(eR.t["9KeUbY"])],
         parent: eA.s6.GIFT_INVENTORY,
-        predicate: () => !ez
+        predicate: () => !eK
       },
       [eA.s6.GIFT_BLOCKED_PAYMENTS]: {
         section: eN.oAB.INVENTORY,
         searchableTitles: [eR.intl.string(eR.t.vwMEHS)],
         parent: eA.s6.GIFT_INVENTORY,
-        predicate: () => ez
+        predicate: () => eK
       },
       [eA.s6.BILLING]: {
         section: eN.oAB.BILLING,
@@ -899,7 +892,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.ACCESSIBILITY,
         searchableTitles: [eR.intl.string(eR.t.qvTIwX)],
         parent: eA.s6.ACCESSIBILITY_TEXT_TO_SPEECH,
-        predicate: () => !te
+        predicate: () => !e9
       },
       [eA.s6.ACCESSIBILITY_TEXT_TO_SPEECH_RATE]: {
         section: eN.oAB.ACCESSIBILITY,
@@ -982,13 +975,13 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.VOICE,
         searchableTitles: [eR.intl.string(eR.t["pS+K2L"]), eR.intl.string(eR.t.nuFtHH)],
         parent: eA.s6.VOICE_AND_VIDEO_VOICE,
-        predicate: () => e8 !== eT._.STUDIO
+        predicate: () => e5 !== eT._.STUDIO
       },
       [eA.s6.VOICE_AND_VIDEO_SENSITIVITY]: {
         section: eN.oAB.VOICE,
         searchableTitles: [eR.intl.string(eR.t["sqUm+k"]), eR.intl.string(eR.t.nuFtHH)],
         parent: eA.s6.VOICE_AND_VIDEO_VOICE,
-        predicate: () => e5 === eP.pM.VOICE_ACTIVITY && e6
+        predicate: () => e4 === eP.pM.VOICE_ACTIVITY && e8
       },
       [eA.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT]: {
         section: eN.oAB.VOICE,
@@ -1046,7 +1039,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.VOICE,
         searchableTitles: [eR.intl.string(eR.t["6I6GUv"])],
         parent: eA.s6.VOICE_AND_VIDEO_ADVANCED,
-        predicate: () => e6
+        predicate: () => e8
       },
       [eA.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION]: {
         section: eN.oAB.VOICE,
@@ -1156,7 +1149,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.VOICE,
         searchableTitles: [eR.intl.string(eR.t.U4FgFK)],
         parent: eA.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        predicate: () => ("canary" === V.ZP.releaseChannel || "development" === V.ZP.releaseChannel) && eY && k.Z.supports(eP.AN.CONNECTION_REPLAY)
+        predicate: () => ("canary" === V.ZP.releaseChannel || "development" === V.ZP.releaseChannel) && eH && k.Z.supports(eP.AN.CONNECTION_REPLAY)
       },
       [eA.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING]: {
         section: eN.oAB.VOICE,
@@ -1194,13 +1187,13 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.TEXT,
         searchableTitles: [eR.intl.string(eR.t.VYODPD)],
         parent: eA.s6.CHAT,
-        predicate: () => e9
+        predicate: () => e7
       },
       [eA.s6.MESSAGE_SEARCH_ALL_DMS]: {
         section: eN.oAB.TEXT,
         searchableTitles: [eR.intl.string(eR.t["t4+fbe"])],
         parent: eA.s6.MESSAGE_SEARCH,
-        predicate: () => e9
+        predicate: () => e7
       },
       [eA.s6.CHAT_INLINE_MEDIA]: {
         section: eN.oAB.TEXT,
@@ -1302,7 +1295,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.TEXT,
         searchableTitles: [eR.intl.string(eR.t.uXQ2xT)],
         parent: eA.s6.CHAT_TEXT_BOX,
-        predicate: () => e7
+        predicate: () => e6
       },
       [eA.s6.NOTIFICATIONS]: {
         section: eN.oAB.NOTIFICATIONS,
@@ -1533,13 +1526,13 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.ADVANCED,
         searchableTitles: [eR.intl.string(eR.t.fi3UQN)],
         parent: eA.s6.SETTINGS_ADVANCED,
-        predicate: () => eQ
+        predicate: () => eX
       },
       [eA.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE]: {
         section: eN.oAB.ADVANCED,
         searchableTitles: [eR.intl.string(eR.t.erOqlh)],
         parent: eA.s6.SETTINGS_ADVANCED,
-        predicate: () => e$
+        predicate: () => eJ
       },
       [eA.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN]: {
         section: eN.oAB.ADVANCED,
@@ -1707,7 +1700,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Always deliver ads"],
         parent: eA.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => eY && j.Z.isDeveloper
+        predicate: () => eH && j.Z.isDeveloper
       },
       [eA.s6.DEVELOPER_OPTIONS_SOURCE_MAPS]: {
         section: eN.oAB.DEVELOPER_OPTIONS,
@@ -1725,7 +1718,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Idle Status Indicator"],
         parent: eA.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => eY && j.Z.isDeveloper
+        predicate: () => eH && j.Z.isDeveloper
       },
       [eA.s6.DEVELOPER_OPTIONS_ACCESSIBILITY_AUDITING]: {
         section: eN.oAB.DEVELOPER_OPTIONS,
@@ -1737,43 +1730,43 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["CSS Debugging"],
         parent: eA.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => eY && j.Z.isDeveloper
+        predicate: () => eH && j.Z.isDeveloper
       },
       [eA.s6.DEVELOPER_OPTIONS_HIGHLIGHT_MANA_COMPONENTS]: {
         section: eN.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Highlight Mana Components"],
         parent: eA.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => eY && j.Z.isDeveloper
+        predicate: () => eH && j.Z.isDeveloper
       },
       [eA.s6.DEVELOPER_OPTIONS_HIGHLIGHT_VOID_TOGGLEABLES]: {
         section: eN.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Highlight Void Toggleable Components"],
         parent: eA.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => eY && j.Z.isDeveloper
+        predicate: () => eH && j.Z.isDeveloper
       },
       [eA.s6.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING]: {
         section: eN.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Layout Debugging"],
         parent: eA.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => eY && j.Z.isDeveloper
+        predicate: () => eH && j.Z.isDeveloper
       },
       [eA.s6.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING_OPTIONS]: {
         section: eN.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Layout Debugging"],
         parent: eA.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => eY && j.Z.isDeveloper && M.default.layoutDebuggingEnabled
+        predicate: () => eH && j.Z.isDeveloper && M.default.layoutDebuggingEnabled
       },
       [eA.s6.DEVELOPER_OPTIONS_PREVIEW_UNPUBLISHED_COLLECTIONS]: {
         section: eN.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Preview Unpublished Collections"],
         parent: eA.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => eY && j.Z.isDeveloper
+        predicate: () => eH && j.Z.isDeveloper
       },
       [eA.s6.DEVELOPER_OPTIONS_DISABLE_APP_COLLECTIONS_CACHE]: {
         section: eN.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Disable App Collections Cache"],
         parent: eA.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => eY && j.Z.isDeveloper
+        predicate: () => eH && j.Z.isDeveloper
       },
       [eA.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE]: {
         section: eN.oAB.DEVELOPER_OPTIONS,

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 81471, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,7 +9,6 @@ var Chunk54381 = require("./54381.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk905405 = require("./905405.js"),
   Chunk255269 = require("./255269.js"),
   Chunk937889 = require("./937889.js"),
   Chunk267128 = require("./267128.jsx"),
@@ -23,80 +22,79 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk161414 = require("./161414.js"),
   Chunk430864 = require("./430864.js");
-let I = Chunk473749.memo(function(e) {
+let y = Chunk473749.memo(function(e) {
   let {
     channel: t
   } = e, {
     loaded: n,
     error: l,
-    message: I
-  } = (0, _.a)(t), C = (0, c.p)(), {
-    isBlocked: S,
-    isIgnored: T
-  } = (0, s.cj)([m.Z], () => ({
-    isBlocked: null != I && m.Z.isBlockedForMessage(I),
-    isIgnored: null != I && m.Z.isIgnoredForMessage(I)
-  }), [I]), N = (0, s.e7)([g.Z], () => g.Z.can(b.Plq.MANAGE_MESSAGES, t)), j = h.cC.useSetting(), {
-    content: P
-  } = i.useMemo(() => (null == I ? true : I.content) != null && "" !== I.content ? (0, d.ZP)(I, {
+    message: y
+  } = (0, m.a)(t), {
+    isBlocked: I,
+    isIgnored: C
+  } = (0, s.cj)([g.Z], () => ({
+    isBlocked: null != y && g.Z.isBlockedForMessage(y),
+    isIgnored: null != y && g.Z.isIgnoredForMessage(y)
+  }), [y]), S = (0, s.e7)([h.Z], () => h.Z.can(_.Plq.MANAGE_MESSAGES, t)), T = f.cC.useSetting(), {
+    content: N
+  } = i.useMemo(() => (null == y ? true : y.content) != null && "" !== y.content ? (0, u.ZP)(y, {
     formatInline: true,
-    noStyleAndInteraction: true,
-    shouldFilterKeywords: C
+    noStyleAndInteraction: true
   }) : {
     content: null
-  }, [I, C]), x = null;
-  if (l) x = (0, r.jsx)(o.Text, {
-    className: v.messageReplacement,
+  }, [y]), j = null;
+  if (l) j = (0, r.jsx)(o.Text, {
+    className: O.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: O.intl.string(O.t.BZHld2)
+    children: E.intl.string(E.t.BZHld2)
   });
   else if (n)
-    if (null != I && S) x = (0, r.jsx)(o.Text, {
-      className: v.messageReplacement,
+    if (null != y && I) j = (0, r.jsx)(o.Text, {
+      className: O.messageReplacement,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: O.intl.string(O.t["WPe+xL"])
+      children: E.intl.string(E.t["WPe+xL"])
     });
-    else if (null != I && T) x = (0, r.jsx)(o.Text, {
-    className: v.messageReplacement,
+    else if (null != y && C) j = (0, r.jsx)(o.Text, {
+    className: O.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: O.intl.string(O.t.uxrh1O)
+    children: E.intl.string(E.t.uxrh1O)
   });
-  else if (null != I) {
+  else if (null != y) {
     let {
       contentPlaceholder: e,
       renderedContent: t
-    } = (0, p.f)(I, P, S, T, a()(v.messageContent, y.inlineFormat), {
-      leadingIconClass: v.messageContentIcon,
-      trailingIconClass: v.messageContentIcon,
-      iconSize: E.WW
+    } = (0, d.f)(y, N, I, C, a()(O.messageContent, v.inlineFormat), {
+      leadingIconClass: O.messageContentIcon,
+      trailingIconClass: O.messageContentIcon,
+      iconSize: b.WW
     });
-    x = null != t ? (0, r.jsx)(o.Text, {
+    j = null != t ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      className: v.messageContent,
+      className: O.messageContent,
       children: t
     }) : (0, r.jsx)(o.Text, {
       tag: "span",
       variant: "text-sm/normal",
       color: "text-muted",
-      className: v.messageReplacement,
+      className: O.messageReplacement,
       children: e
     })
-  } else x = (0, r.jsx)(o.Text, {
-    className: v.messageReplacement,
+  } else j = (0, r.jsx)(o.Text, {
+    className: O.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: O.intl.string(O.t["0KfDxM"])
+    children: E.intl.string(E.t["0KfDxM"])
   });
-  else x = null;
-  return (0, r.jsx)(f.aQ.Provider, {
-    value: (0, u.Z)(j, N),
+  else j = null;
+  return (0, r.jsx)(p.aQ.Provider, {
+    value: (0, c.Z)(T, S),
     children: (0, r.jsx)(o.Rny, {
-      className: v.messageFocusBlock,
-      children: x
+      className: O.messageFocusBlock,
+      children: j
     })
   })
 })

@@ -2,20 +2,19 @@
 /** chunk id: 937889, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => y,
-  k$: () => v,
-  p6: () => g,
-  rs: () => h
+  ZP: () => b,
+  k$: () => O,
+  p6: () => h,
+  rs: () => m
 }), require("./388685.js"), require("./781311.js"), require("./704826.js"), require("./35282.js"), require("./865427.js");
 var Chunk830121 = require("./830121.js");
 require("./922699.js");
-var Chunk202131 = require("./202131.js"),
-  Chunk454585 = require("./454585.js"),
+var Chunk454585 = require("./454585.js"),
   Chunk408433 = require("./408433.js"),
   Chunk960048 = require("./960048.js"),
   Chunk981631 = require("./981631.js");
 
-function c(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +23,20 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      l(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function u(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,24 +47,24 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = 30,
-  _ = new Set([Chunk981631.hBH.IMAGE, Chunk981631.hBH.GIFV]),
-  m = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
+let f = 30,
+  p = new Set([Chunk981631.hBH.IMAGE, Chunk981631.hBH.GIFV]),
+  _ = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
 
-function h(e, t) {
+function m(e, t) {
   var n;
-  let r = g({
+  let r = h({
       channelId: e.channel_id,
       messageId: e.id,
       renderOptions: t
     }),
     i = null != e.webhookId;
-  return f(u({}, r), {
+  return d(c({}, r), {
     allowLinks: i || r.allowLinks,
     allowEmojiLinks: i,
     mentionChannels: e.mentionChannels,
@@ -73,7 +72,7 @@ function h(e, t) {
   })
 }
 
-function g(e) {
+function h(e) {
   let {
     channelId: t,
     messageId: n,
@@ -105,28 +104,21 @@ function g(e) {
   }
 }
 
-function E(e, t, n) {
-  var r;
+function g(e, t, n) {
   let {
-    toAST: a = false,
-    hideSimpleEmbedContent: o = true,
-    formatInline: s = false,
-    postProcessor: l,
-    shouldFilterKeywords: c,
-    contentMessage: u
-  } = n, d = false, f = (null != u ? u : t).content, p = e(c ? (0, i.N)(f, {
-    escapeReplacement: true,
-    messageId: t.id,
-    channelId: t.channel_id,
-    authorId: null == (r = t.author) ? true : r.id
-  }) : f, true, h(t, n), (e, n) => (Array.isArray(e) || (e = [e]), o && (e = N(e, (null != u ? u : t).embeds)), s || (e = S(e, n)), e = b(e), t.embeds.length > 0 && (d = T(e, n)), s && (e = P(e)), null != l && (e = l(e, n)), e));
+    toAST: r = false,
+    hideSimpleEmbedContent: i = true,
+    formatInline: a = false,
+    postProcessor: o,
+    contentMessage: s
+  } = n, l = false, c = e((null != s ? s : t).content, true, m(t, n), (e, n) => (Array.isArray(e) || (e = [e]), i && (e = C(e, (null != s ? s : t).embeds)), a || (e = v(e, n)), e = E(e), t.embeds.length > 0 && (l = I(e, n)), a && (e = N(e)), null != o && (e = o(e, n)), e));
   return {
-    hasSpoilerEmbeds: d,
-    content: p
+    hasSpoilerEmbeds: l,
+    content: c
   }
 }
 
-function b(e) {
+function E(e) {
   let t = e.some(e => "link" !== e.type);
   return e.filter(e => {
     let n = "link" === e.type,
@@ -135,12 +127,12 @@ function b(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-  return E(t.formatInline ? a.Z.parseInlineReply : a.Z.parse, e, t)
+  return g(t.formatInline ? i.Z.parseInlineReply : i.Z.parse, e, t)
 }
 
-function O(e, t, n, r) {
+function y(e, t, n, r) {
   return e(t, true, {
     allowLinks: false,
     allowDevLinks: false,
@@ -161,47 +153,47 @@ function O(e, t, n, r) {
   }, e => (Array.isArray(e) || (e = [e]), e))
 }
 
-function v(e, t, n) {
-  return O(a.Z.parseAutoModerationSystemMessage, e, t, n)
+function O(e, t, n) {
+  return y(i.Z.parseAutoModerationSystemMessage, e, t, n)
 }
 
-function S(e, t) {
-  return t ? I(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = I(e[0].content)), e)
+function v(e, t) {
+  return t ? S(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = S(e[0].content)), e)
 }
 
-function I(e) {
+function S(e) {
   if (e.some(e => "emoji" !== e.type && "customEmoji" !== e.type && "soundboard" !== e.type && ("string" != typeof e.content || "" !== e.content.trim()))) return e;
   let t = 0;
   return e.forEach(e => {
-    if (("emoji" === e.type || "customEmoji" === e.type || "soundboard" === e.type) && (t += 1), t > p) returnfalse
-  }), t > p || e.forEach(e => {
+    if (("emoji" === e.type || "customEmoji" === e.type || "soundboard" === e.type) && (t += 1), t > f) returnfalse
+  }), t > f || e.forEach(e => {
     e.jumboable = true
   }), e
 }
 
+function I(e, t) {
+  return t ? A(e) : "paragraph" === e[0].type && e[0].content instanceof Array && A(e[0].content)
+}
+
 function T(e, t) {
-  return t ? C(e) : "paragraph" === e[0].type && e[0].content instanceof Array && C(e[0].content)
-}
-
-function A(e, t) {
-  if (e instanceof Array) return e.some(e => A(e, t));
+  if (e instanceof Array) return e.some(e => T(e, t));
   let n = t(e);
-  return null != n ? n : e.content instanceof Array ? A(e.content, t) : e.items instanceof Array && e.items.some(e => A(e, t))
+  return null != n ? n : e.content instanceof Array ? T(e.content, t) : e.items instanceof Array && e.items.some(e => T(e, t))
 }
 
-function C(e) {
-  return A(e, e => "spoiler" === e.type ? A(e, e => "link" === e.type || "attachmentLink" === e.type || null) : null)
+function A(e) {
+  return T(e, e => "spoiler" === e.type ? T(e, e => "link" === e.type || "attachmentLink" === e.type || null) : null)
 }
 
-function N(e, t) {
+function C(e, t) {
   if (1 !== e.length || 1 !== t.length) return e;
   let n = e[0],
     r = t[0];
-  return ("link" === n.type || "attachmentLink" === n.type) && _.has(r.type) && (0, o.dY)(r) ? [] : e
+  return ("link" === n.type || "attachmentLink" === n.type) && p.has(r.type) && (0, a.dY)(r) ? [] : e
 }
 
-function P(e) {
+function N(e) {
   return e.forEach(e => {
-    m.has(e.type) && null != e.content && (Array.isArray(e.content) ? P(e.content) : "string" == typeof e.content ? e.content = e.content.replace(/\n/g, " ") : s.Z.captureMessage("AST node type:".concat(e.type, " with content typeof ").concat(typeof e.content, ". Keys ").concat(Object.keys(e))))
+    _.has(e.type) && null != e.content && (Array.isArray(e.content) ? N(e.content) : "string" == typeof e.content ? e.content = e.content.replace(/\n/g, " ") : o.Z.captureMessage("AST node type:".concat(e.type, " with content typeof ").concat(typeof e.content, ". Keys ").concat(Object.keys(e))))
   }), e
 }
