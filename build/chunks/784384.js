@@ -1,10 +1,10 @@
 /** Chunk was on 36653 **/
 /** chunk id: 784384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  HY: () => v,
+  HY: () => P,
   nm: () => Z,
-  pU: () => P,
-  y: () => O
+  pU: () => O,
+  y: () => j
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk473749 = require("./473749.js"),
   Chunk106351 = require("./106351.js"),
@@ -34,21 +34,28 @@ function Z(e) {
   }), [n])
 }
 
-function v(e, t, n, l) {
+function v(e) {
+  return e.components.length > 0 && e.components[0].type === s.re.CHECKPOINT_CARD
+}
+
+function P(e, t, n, l) {
   let r = n instanceof f.Sf;
   if (null != l) {
     let e = l(n);
     if (null != e) return e
   }
-  if (null != e && null != t) {
-    if ((0, u.Y3)(t) && !(r && (0, u.Y3)(n))) return {
+  if (null == e) return;
+  let i = v(e),
+    s = e.messageSnapshots.length > 0 && v(e.messageSnapshots[0].message);
+  if (null != t || i) {
+    if ((0, a.Y3)(t) && !(r && (0, a.Y3)(n))) return {
       label: S.intl.string(S.t.KgPx1D)
     };
     if (r && (0, f.Km)(n.type)) {
       if ((e.attachments.length > 0 || e.messageSnapshots.some(e => e.message.attachments.length > 0)) && !m.Z.can(E.Plq.ATTACH_FILES, n)) return {
         label: S.intl.string(S.t.P7yvbm)
       };
-      if ((e.embeds.length > 0 || e.messageSnapshots.some(e => e.message.embeds.length > 0)) && !(0, b.eC)(n, m.Z) && !(0, b.En)(e) || e.components.length > 0 && e.components[0].type === s.re.CHECKPOINT_CARD && !(0, b.eC)(n, m.Z)) return {
+      if ((e.embeds.length > 0 || e.messageSnapshots.some(e => e.message.embeds.length > 0)) && !(0, b.eC)(n, m.Z) && !(0, b.En)(e) || (i || s) && !(0, b.eC)(n, m.Z)) return {
         label: S.intl.string(S.t.Wr4RIX)
       };
       let t = [...(0, d.cv)(e), ...e.messageSnapshots.flatMap(e => {
@@ -70,17 +77,17 @@ function v(e, t, n, l) {
   }
 }
 
-function P(e, t) {
+function O(e, t) {
   return !!(null != e.rateLimitPerUser && e.rateLimitPerUser > 0) && !(t.can(E.Plq.MANAGE_CHANNELS, e) || t.can(E.Plq.MANAGE_MESSAGES, e))
 }
 
-function O(e) {
+function j(e) {
   let t = (0, i.Wu)([h.Z, m.Z], () => e.map(e => {
     let {
       type: t,
       id: n
     } = e;
     return "channel" === t ? h.Z.getChannel(n) : null
-  }).filter(y.lm).filter(e => P(e, m.Z)), [e]);
-  return (0, i.Wu)([g.default, p.Z], () => t.map(e => (0, a.F6)(e, g.default, p.Z, true)), [t])
+  }).filter(y.lm).filter(e => O(e, m.Z)), [e]);
+  return (0, i.Wu)([p.default, g.Z], () => t.map(e => (0, u.F6)(e, p.default, g.Z, true)), [t])
 }

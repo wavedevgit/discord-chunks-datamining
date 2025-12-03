@@ -191,14 +191,16 @@ class z extends Chunk473749.PureComponent {
         anchor: n,
         focus: r,
         performSearch: i,
-        replace: a
+        replace: a,
+        searchQuerySource: o
       } = e, {
-        editorState: o
-      } = this.props, s = v.Sq(o);
-      " " !== t.charAt(t.length - 1) && (t += " "), null != n && 0 !== n && " " !== s.charAt(n - 1) && " " !== t.charAt(0) && (t = " " + t), a ? (o = v.c2(t, o), n = 0) : o = v.x0(t, o, n, r), o = v.Hl(o, Y), o = this.tokenize(o);
-      let l = Number(n) + t.length;
-      o = v.iK(l, o), this.setEditorState(o), i && this.search({
-        queryString: v.Sq(o)
+        editorState: s
+      } = this.props, l = v.Sq(s);
+      " " !== t.charAt(t.length - 1) && (t += " "), null != n && 0 !== n && " " !== l.charAt(n - 1) && " " !== t.charAt(0) && (t = " " + t), a ? (s = v.c2(t, s), n = 0) : s = v.x0(t, s, n, r), s = v.Hl(s, Y), s = this.tokenize(s);
+      let c = Number(n) + t.length;
+      s = v.iK(c, s), this.setEditorState(s), i && this.search({
+        queryString: v.Sq(s),
+        searchQuerySource: o
       })
     }), H(this, "handleSelectedIndexChanged", e => {
       var t, n;
@@ -225,7 +227,8 @@ class z extends Chunk473749.PureComponent {
         isSearching: t
       } = this.props, {
         queryString: n,
-        searchEverywhere: r
+        searchEverywhere: r,
+        searchQuerySource: i
       } = null != e ? e : {};
       if (null == n || "" === n) {
         let {
@@ -241,7 +244,8 @@ class z extends Chunk473749.PureComponent {
         this.props.onSearch({
           queryString: n,
           query: t,
-          searchEverywhere: null != r && r
+          searchEverywhere: null != r && r,
+          searchQuerySource: i
         }), d.uvj.announce(F.intl.string(F.t.pKCxWP)), this.handleBlur(true)
       }
       returntrue
@@ -281,7 +285,8 @@ class z extends Chunk473749.PureComponent {
         } = this;
         null == e || e.focus(), this.handleSetSearchQuery({
           query: w.ZP[B.dCx.FILTER_IN].key + "".concat(o, " "),
-          replace: true
+          replace: true,
+          searchQuerySource: G.w7.SEARCH_TEXT_INPUT
         })
       })
     }), H(this, "focusEditor", () => {
@@ -341,8 +346,11 @@ class z extends Chunk473749.PureComponent {
         shiftKey: t
       } = e;
       return e.preventDefault(), (this.props.isSearchFiltersRedesignEnabled ? this.handleRedesignOption() : this.handleOption()) || ((0, A.X$)() && t ? this.search({
-        searchEverywhere: true
-      }) : this.search()), "handled"
+        searchEverywhere: true,
+        searchQuerySource: G.w7.SEARCH_TEXT_INPUT
+      }) : this.search({
+        searchQuerySource: G.w7.SEARCH_TEXT_INPUT
+      })), "handled"
     }), H(this, "handleBeforeInput", e => {
       let {
         editorState: t
@@ -498,12 +506,14 @@ function q(e) {
       let {
         queryString: n,
         query: r,
-        searchEverywhere: i
+        searchEverywhere: i,
+        searchQuerySource: a
       } = e;
       R.Z.refreshSearchQueryAnalyticsId(t), (0, U.tI)({
         searchContext: t,
         query: r,
-        queryString: n
+        queryString: n,
+        searchQuerySource: a
       }), x.Z.updateSearchMode(t, B.QIO.NEWEST), K({
         searchContext: t,
         searchQueryString: n,

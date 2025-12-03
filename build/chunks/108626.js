@@ -17,5 +17,6 @@ module.exports = {
   bodyGradientPadding: "bodyGradientPadding_d5200e",
   bodyGradientContainer: "bodyGradientContainer_d5200e",
   bodyGradient: "bodyGradient_d5200e",
-  nitroText: "nitroText_d5200e"
+  nitroText: "nitroText_d5200e",
+  betaBadgeContainer: "betaBadgeContainer_d5200e"
 }

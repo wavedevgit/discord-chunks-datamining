@@ -63,10 +63,15 @@ function x() {
     legacySettingDirectory: n
   } = (0, Chunk617810.q)(), {
     node: s
-  } = (0, Chunk131051.Z)(Chunk920952.Z, "");
+  } = (0, Chunk131051.ZP)(Chunk920952.Z, ""), c = (0, Chunk131051.ZA)();
   return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
     label: "Settings Tree",
     children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
+      label: "Bypass Predicates",
+      description: "Forces all migrated settings to be visible.",
+      checked: Chunk206412,
+      onChange: Chunk131051.go
+    }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       checked: module,
       onChange: e => t(e),
       label: "Show Legacy Settings Tree"

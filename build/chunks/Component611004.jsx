@@ -2,7 +2,7 @@
 /** chunk id: 611004, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => k
 }), require("./704826.js"), require("./35282.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk923010 = require("./923010.js"),
@@ -159,7 +159,11 @@ function x(e, t) {
   })
 }
 
-function L(e, t, n) {
+function L(e) {
+  c.S.dispatch(S.CkL.SET_SEARCH_QUERY, e)
+}
+
+function j(e, t, n) {
   let r = (0, p.Tm)(e),
     i = b.Z.getEditorState(r);
   if (null == i) return;
@@ -173,7 +177,8 @@ function L(e, t, n) {
   m.Z.refreshSearchQueryAnalyticsId(t), (0, y.tI)({
     searchContext: t,
     query: d,
-    queryString: o
+    queryString: o,
+    searchQuerySource: O.w7.SEARCH_XDM_SETTINGS
   }), R({
     searchContext: t,
     searchQueryString: o,
@@ -183,7 +188,7 @@ function L(e, t, n) {
   s.Z.setSelectedSearchContext(_), E.Z.clearSearchEditorState(e), f.Z.clearSearchMessages(r), null == n || n()
 }
 
-function j() {
+function M() {
   Chunk817190.Z.getSearchStateIds().forEach(e => {
     let t = l.Z.getChannel(e);
     null != t && t.isPrivate() && N({
@@ -192,7 +197,7 @@ function j() {
     })
   })
 }
-let M = {
+let k = {
   cleanUpSearchState: N,
   fetchMessages: R,
   setSearchInputText: D,
@@ -210,25 +215,30 @@ let M = {
       query: t,
       performSearch: n,
       replace: r,
-      resultsState: i
+      resultsState: i,
+      searchQuerySource: a
     } = e, {
-      mode: a,
-      cursorScope: o
-    } = i, s = 0;
-    null != a.token ? s = a.token.start : (null == o ? true : o.currentToken) != null && (s = o.currentToken.end);
-    let l = null != a.token ? a.token.end : s;
-    c.S.dispatch(S.CkL.SET_SEARCH_QUERY, {
+      mode: o,
+      cursorScope: s
+    } = i, l = 0;
+    null != o.token ? l = o.token.start : (null == s ? true : s.currentToken) != null && (l = s.currentToken.end);
+    let c = null != o.token ? o.token.end : l;
+    L({
       query: t,
-      anchor: s,
-      focus: l,
+      anchor: l,
+      focus: c,
       performSearch: n,
-      replace: r
+      replace: r,
+      searchQuerySource: a
     })
   },
-  transitionStateToSearchContext: L,
-  cleanUpPrivateChannelSearchState: j,
+  dispatchSetSearchQuery: L,
+  transitionStateToSearchContext: j,
+  cleanUpPrivateChannelSearchState: M,
   openSearchFiltersModal: function(e) {
-    (0, a.ZD)(async () => {
+    (0, y.aR)({
+      searchContext: e
+    }), (0, a.ZD)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("30474"), n.e("37979")]).then(n.bind(n, 238088));

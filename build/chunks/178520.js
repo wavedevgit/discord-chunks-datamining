@@ -10,25 +10,27 @@ var Chunk658722 = require("./658722.js"),
   Chunk28682 = require("./28682.js");
 
 function s(e, t, n) {
-  let r = new Set,
-    i = function(e) {
-      var a;
-      let s = arguments.length > 1 && true !== arguments[1] && arguments[1],
-        c = arguments.length > 2 && true !== arguments[2] && arguments[2],
-        u = (null == (a = e.usePredicate) ? true : a.call(e)) === false || s,
-        d = l(e, t, u, n) || c,
-        f = false;
+  var r;
+  let i = null != (r = null == n ? true : n.bypassPredicates) && r,
+    a = new Set,
+    s = function(e) {
+      var r;
+      let c = arguments.length > 1 && true !== arguments[1] && arguments[1],
+        u = arguments.length > 2 && true !== arguments[2] && arguments[2],
+        d = (null == (r = e.usePredicate) ? true : r.call(e)) === false && !i || c,
+        f = l(e, t, d, null == n ? true : n.legacyMatches) || u,
+        p = false;
       if ((0, o.Lk)(e))
-        for (let t of e.layout) f = i(t, u, d) || f;
-      return !u && (d || f) && r.add(e.key), d || f
+        for (let t of e.layout) p = s(t, d, f) || p;
+      return !d && (f || p) && a.add(e.key), f || p
     };
-  return i(e), r
+  return s(e), a
 }
 
 function l(e, t, n, r) {
   var s, l, c, u, d, f;
   let p = null == (s = e.getLegacySearchKey) ? true : s.call(e);
-  if (null != p) return t.length < 2 || r.has(p);
+  if (null != p && null != r) return t.length < 2 || r.has(p);
   if (e.type === o.Jq.SECTION && e.hoisted) returntrue;
   let _ = "useTitle" in e ? null == (l = e.useTitle) ? true : l.call(e, false) : true,
     m = "useNavigationTitle" in e ? null == (c = e.useNavigationTitle) ? true : c.call(e) : true,

@@ -397,9 +397,12 @@ class ei extends Chunk473749.PureComponent {
       renderCustomResults: this.renderAutocompletes,
       renderInitialState: this.renderAutocompletes,
       onHighlightQuery: () => this.focusOption(false),
-      onSelectQuery: this.performSearch,
+      onSelectQuery: () => this.performSearch({
+        searchQuerySource: Chunk723642.w7.SEARCH_POPOUT
+      }),
       onSelectSearchEverywhere: () => this.performSearch({
-        searchEverywhere: true
+        searchEverywhere: true,
+        searchQuerySource: Chunk723642.w7.SEARCH_POPOUT
       }),
       renderNoResults: () => null,
       searchFavorites: Chunk120356.type === Chunk981631.aib.FAVORITES && (0, Chunk607802.X$)(),
@@ -544,20 +547,13 @@ class ei extends Chunk473749.PureComponent {
       let d = q(s.resultText);
       return this.setSearchQuery(s.resultText, d), true
     }), B(this, "setSearchQuery", function(e) {
-      let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
-        {
-          mode: r,
-          cursorScope: i
-        } = t.props.resultsState,
-        a = 0;
-      null != r.token ? a = r.token.start : (null == i ? true : i.currentToken) != null && (a = i.currentToken.end);
-      let o = null != r.token ? r.token.end : a;
-      A.S.dispatch(U.CkL.SET_SEARCH_QUERY, {
+      let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
+      x.Z.setSearchQuery({
         query: e,
-        anchor: a,
-        focus: o,
         performSearch: n,
-        replace: false
+        replace: false,
+        resultsState: t.props.resultsState,
+        searchQuerySource: k.w7.SEARCH_POPOUT
       }), t.setSelectedIndex(false)
     }), B(this, "shouldShowSearchQuery", () => {
       let {
@@ -611,7 +607,7 @@ class ei extends Chunk473749.PureComponent {
     })), B(this, "handleHintClick", () => {
       this.setSearchQuery(this.state.dateHint, true)
     }), B(this, "performSearch", e => {
-      A.S.dispatch(U.CkL.PERFORM_SEARCH, null != e ? e : {})
+      A.S.dispatch(U.CkL.PERFORM_SEARCH, e)
     }), B(this, "renderAutocompletes", () => {
       let {
         selectedIndex: e

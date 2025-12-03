@@ -15,7 +15,7 @@ var Chunk36361 = require("./36361.jsx"),
 function c() {
   let {
     node: e
-  } = (0, Chunk131051.Z)(Chunk452784.$Y, "");
+  } = (0, Chunk131051.ZP)(Chunk452784.$Y, "");
   return (0, Chunk54381.jsx)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.KyFVyi),
     children: (0, Chunk54381.jsx)(Chunk36361.Z, {

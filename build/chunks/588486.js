@@ -62,7 +62,8 @@ class E extends Chunk495852.C {
       type: 0,
       isTemplate: false,
       fieldNumbersToCopy: [],
-      engineFeatureFlags: []
+      engineFeatureFlags: [],
+      isAutomatedChange: false
     };
     return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
@@ -169,6 +170,9 @@ class E extends Chunk495852.C {
         case 31:
           a.expectedEndDate = c.E.internalBinaryRead(e, e.uint32(), n, a.expectedEndDate);
           break;
+        case 32:
+          a.isAutomatedChange = e.bool();
+          break;
         default:
           let o = n.readUnknownField;
           if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -193,7 +197,7 @@ class E extends Chunk495852.C {
       t.join()
     }
     for (let n = 0; n < e.engineFeatureFlags.length; n++) t.tag(29, r.TD.LengthDelimited).string(e.engineFeatureFlags[n]);
-    e.debugConfig && I.internalBinaryWrite(e.debugConfig, t.tag(30, r.TD.LengthDelimited).fork(), n).join(), e.expectedEndDate && c.E.internalBinaryWrite(e.expectedEndDate, t.tag(31, r.TD.LengthDelimited).fork(), n).join();
+    e.debugConfig && I.internalBinaryWrite(e.debugConfig, t.tag(30, r.TD.LengthDelimited).fork(), n).join(), e.expectedEndDate && c.E.internalBinaryWrite(e.expectedEndDate, t.tag(31, r.TD.LengthDelimited).fork(), n).join(), false !== e.isAutomatedChange && t.tag(32, r.TD.Varint).bool(e.isAutomatedChange);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -353,6 +357,11 @@ class E extends Chunk495852.C {
       name: "expected_end_date",
       kind: "message",
       T: () => Chunk835913.E
+    }, {
+      no: 32,
+      name: "is_automated_change",
+      kind: "scalar",
+      T: 8
     }])
   }
 }

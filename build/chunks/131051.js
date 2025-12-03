@@ -2,9 +2,12 @@
 /** chunk id: 131051, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  ZA: () => g,
+  ZP: () => E,
+  go: () => h
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
+  Chunk972959 = require("./972959.js"),
   Chunk991346 = require("./991346.js"),
   Chunk839469 = require("./839469.js"),
   Chunk509613 = require("./509613.js"),
@@ -12,7 +15,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk87432 = require("./87432.js"),
   Chunk178520 = require("./178520.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,20 +24,20 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,49 +48,66 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
+let m = (0, Chunk972959.H)(() => ({
+  enabled: false
+}));
 
-function _(e, t) {
-  let n = r.useMemo(() => (0, o.Ql)(e), [e]),
-    u = (0, i.Pt)(),
+function h(e) {
+  m.setState({
+    enabled: e
+  })
+}
+
+function g() {
+  return m.useField("enabled")
+}
+
+function E(e, t) {
+  let n = r.useMemo(() => (0, s.Ql)(e), [e]),
+    i = g(),
+    d = (0, a.Pt)(),
     {
-      searchResults: f
-    } = (0, a.F)(),
-    _ = new Set;
-  for (let e of f) {
+      searchResults: p
+    } = (0, o.F)(),
+    m = new Set;
+  for (let e of p) {
     let t = e;
     for (; null != t;) {
       var h;
-      let e = null == (h = u[t]) ? true : h.parent;
+      let e = null == (h = d[t]) ? true : h.parent;
       if (null == e) {
-        _.add(t);
+        m.add(t);
         break
       }
       t = e
     }
   }
-  let g = (0, c.Z)(n, null != t ? t : "", _),
-    [E, b] = r.useState(g),
-    y = m(E, g);
+  let E = (0, u.Z)(n, null != t ? t : "", {
+      legacyMatches: m,
+      bypassPredicates: i
+    }),
+    [y, O] = r.useState(E),
+    v = b(y, E);
   return r.useEffect(() => {
-    y && b(g)
-  }, [y, g]), r.useMemo(() => {
+    v && O(E)
+  }, [v, E]), r.useMemo(() => {
     var e;
-    let t = new s.Z;
+    let t = new l.Z;
     return {
-      node: null != (e = (0, l.Z)(n, E, t)) ? e : p(d({}, n), {
+      node: null != (e = (0, c.Z)(n, y, t)) ? e : _(f({}, n), {
         layout: []
       }),
       directory: t
     }
-  }, [E, n])
+  }, [y, n])
 }
 
-function m(e, t) {
+function b(e, t) {
   if (e.size !== t.size) returntrue;
   for (let n of e)
     if (!t.has(n)) returntrue;

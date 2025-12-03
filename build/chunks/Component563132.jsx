@@ -225,7 +225,8 @@ function ee(e) {
     }),
     tL = i.useMemo(() => {
       if (tx) return V.cL.APPLE_PAYMENT_LINK
-    }, [tx]);
+    }, [tx]),
+    tj = i.useMemo(() => null != eV && eV.id === Y.Xh.PREMIUM_GROUP_MONTH, [eV]);
   return (0, r.jsx)(Q.Provider, {
     value: X(z({
       stripe: ec,
@@ -315,7 +316,8 @@ function ee(e) {
       isDisplayingWowMomentConfirmation: tR,
       premiumBrandRefreshBackgroundClassName: tw,
       wasTier2PremiumBeforePurchase: el,
-      customCheckoutFlow: tL
+      customCheckoutFlow: tL,
+      isPremiumGroupPurchase: tj
     }),
     children: (0, r.jsx)(a.Elements, {
       options: H.OBo,

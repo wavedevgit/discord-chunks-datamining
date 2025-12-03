@@ -9,6 +9,7 @@ require.d(exports, {
   PJ: () => T,
   Qb: () => g,
   Yc: () => v,
+  aR: () => x,
   bh: () => P,
   bo: () => S,
   cy: () => y,
@@ -208,39 +209,41 @@ function O(e) {
   let {
     searchContext: t,
     query: n,
-    queryString: i
-  } = e, a = Object.keys(n), o = a.reduce((e, t) => {
+    queryString: i,
+    searchQuerySource: a
+  } = e, o = Object.keys(n), p = o.reduce((e, t) => {
     let r = n[t];
     return e[t] = Array.isArray(r) ? r.length : 1, e
-  }, {}), p = null != i ? (0, s.kG)(i) : [], _ = 0, m = 0, h = 0, g = 0, E = 0, b = 0, y = 0, O = 0, v = 0;
-  p.forEach(e => {
-    e.type === c.dCx.ANSWER_IN ? _++ : e.type === c.dCx.ANSWER_USERNAME_FROM ? m++ : e.type === c.dCx.ANSWER_USERNAME_MENTIONS ? h++ : e.type === c.dCx.ANSWER_HAS ? g++ : e.type === c.dCx.ANSWER_BEFORE ? E++ : e.type === c.dCx.ANSWER_ON ? b++ : e.type === c.dCx.ANSWER_AFTER ? y++ : e.type === c.dCx.ANSWER_PINNED ? O++ : e.type === c.dCx.ANSWER_AUTHOR_TYPE && v++
+  }, {}), _ = null != i ? (0, s.kG)(i) : [], m = 0, h = 0, g = 0, E = 0, b = 0, y = 0, O = 0, v = 0, S = 0;
+  _.forEach(e => {
+    e.type === c.dCx.ANSWER_IN ? m++ : e.type === c.dCx.ANSWER_USERNAME_FROM ? h++ : e.type === c.dCx.ANSWER_USERNAME_MENTIONS ? g++ : e.type === c.dCx.ANSWER_HAS ? E++ : e.type === c.dCx.ANSWER_BEFORE ? b++ : e.type === c.dCx.ANSWER_ON ? y++ : e.type === c.dCx.ANSWER_AFTER ? O++ : e.type === c.dCx.ANSWER_PINNED ? v++ : e.type === c.dCx.ANSWER_AUTHOR_TYPE && S++
   });
-  let S = l.Z.getQueryId(t);
+  let I = l.Z.getQueryId(t);
   r.ZP.trackWithMetadata(c.rMx.MESSAGES_SEARCH_STARTED, {
     search_id: f(t),
     search_session_id: l.Z.getSessionId(t),
-    search_query_id: S,
+    search_query_id: I,
     search_type: t.type,
     search_query_length: u(i),
     search_query_content_length: d(n),
     sort_type: (0, s.Vj)(n),
-    filter_in_count: _,
-    filter_from_count: m,
-    filter_mentions_count: h,
-    filter_has_count: g,
-    filter_before_count: E,
-    filter_during_count: b,
-    filter_after_count: y,
-    filter_pinned_count: O,
-    filter_author_type_count: v
+    filter_in_count: m,
+    filter_from_count: h,
+    filter_mentions_count: g,
+    filter_has_count: E,
+    filter_before_count: b,
+    filter_during_count: y,
+    filter_after_count: O,
+    filter_pinned_count: v,
+    filter_author_type_count: S,
+    search_query_source: a
   }), r.ZP.trackWithMetadata(c.rMx.SEARCH_STARTED, {
     search_id: f(t),
     search_session_id: l.Z.getSessionId(t),
     search_query_id: l.Z.getQueryId(t),
     search_type: t.type,
-    num_modifiers: a.length,
-    modifiers: o
+    num_modifiers: o.length,
+    modifiers: p
   })
 }
 
@@ -414,5 +417,17 @@ function D(e) {
     prev_is_cross_dm_setting_enabled: n,
     is_cross_dm_setting_enabled: i,
     setting_location: a
+  })
+}
+
+function x(e) {
+  let {
+    searchContext: t
+  } = e;
+  r.ZP.trackWithMetadata(c.rMx.SEARCH_FILTERS_MODAL_OPENED, {
+    search_id: f(t),
+    search_type: t.type,
+    search_session_id: l.Z.getSessionId(t),
+    search_query_id: l.Z.getQueryId(t)
   })
 }

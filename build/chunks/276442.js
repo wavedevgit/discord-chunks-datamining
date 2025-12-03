@@ -84,10 +84,11 @@ function O(e) {
     activeSubscription: D,
     previousStepRef: x,
     setPurchaseState: L,
-    paymentElementsEnabled: j
+    paymentElementsEnabled: j,
+    isPremiumGroupPurchase: M
   } = (0, d.JL)(), {
-    isGift: M
-  } = (0, u.wD)(), k = b(g({}, (0, s.fL)()), {
+    isGift: k
+  } = (0, u.wD)(), U = b(g({}, (0, s.fL)()), {
     paymentSources: I,
     paymentSourceId: T,
     setPaymentSourceId: A,
@@ -96,25 +97,25 @@ function O(e) {
     purchaseErrorBlockRef: P,
     paymentAuthenticationState: R,
     selectedSkuId: w,
-    isGift: M
-  }), U = (0, o.N)(h), G = !M && null != U && null != w && m.nG[U.trial_id].skus.includes(w), Z = () => {
+    isGift: k
+  }), G = (0, o.N)(h), Z = !k && null != G && null != w && m.nG[G.trial_id].skus.includes(w), B = () => {
     c(Object.values(I).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: j ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE
     })
-  }, B = null != E ? E : Z;
+  }, F = null != E ? E : B;
   i()(S, "Step should be set here");
-  let F = (0, a.Z)(() => Date.now(), [S]),
-    V = (0, a.Z)(() => null != O && null == x.current ? j && O === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : O : j ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE, [O, x.current, j]);
+  let V = (0, a.Z)(() => Date.now(), [S]),
+    H = (0, a.Z)(() => null != O && null == x.current ? j && O === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : O : j ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE, [O, x.current, j]);
   return (0, s.vP)({
-    paymentModalArgs: k,
-    initialStep: V,
+    paymentModalArgs: U,
+    initialStep: H,
     prependSteps: [f.h8.PROMOTION_INFO],
     appendSteps: [f.h8.REVIEW, f.h8.CONFIRM],
     breadcrumpSteps: r,
     currentBreadcrumpStep: S,
     usePaymentModalStep: true,
     analyticsData: t,
-    onReturn: B,
+    onReturn: M ? true : F,
     onComplete: e => {
       f.Nj.has(e) ? (L(p.A.COMPLETED), c(f.h8.CONFIRM, {
         trackedFromStep: e
@@ -130,12 +131,12 @@ function O(e) {
       l.default.track(_.rMx.PAYMENT_FLOW_STEP, b(g({}, t), {
         from_step: n,
         to_step: r,
-        step_duration_ms: i - F,
+        step_duration_ms: i - V,
         flow_duration_ms: i - v.startTime
       }))
     },
-    isEligibleForTrial: G,
-    allowDesktopRedirectPurchase: y(w, M, D),
+    isEligibleForTrial: Z,
+    allowDesktopRedirectPurchase: y(w, k, D),
     continueSessionToInitialStep: O
   })
 }
