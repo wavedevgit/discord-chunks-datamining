@@ -182,7 +182,7 @@ class eu extends(r = Chunk473749.PureComponent) {
       giftCode: o,
       onRegister: c,
       usernameSuggestion: u
-    } = this.props, d = null != Chunk120356 ? Chunk120356.code : null, h = null != Chunk593473 ? Chunk593473.skuId : null, g = Chunk882037.MD.getState(), p = (0, Chunk624138.Ew)(Chunk990547) ? null : exports === Chunk990547, m = Chunk188785.a ? await (0, Chunk692483.K)(exports) : exports, _ = Chunk188785.a ? await (0, Chunk692483.K)(require) : require;
+    } = this.props, d = null != Chunk120356 ? Chunk120356.code : null, h = null != Chunk593473 ? Chunk593473.skuId : null, g = Chunk882037.MD.getState(), p = (0, Chunk624138.Ew)(Chunk990547) ? null : exports === Chunk990547, f = Chunk188785.a ? await (0, Chunk692483.K)(exports) : exports, _ = Chunk188785.a ? await (0, Chunk692483.K)(require) : require;
     Chunk585483.S.dispatch(Chunk981631.CkL.WAVE_EMPHASIZE), this.setState({
       registering: true,
       apiErrors: {}
@@ -429,8 +429,8 @@ class eu extends(r = Chunk473749.PureComponent) {
       parsedDateOfBirth: u,
       globalNameFocused: d,
       emailClientError: h,
-      usernameClientError: m,
-      passwordClientError: f,
+      usernameClientError: f,
+      passwordClientError: m,
       dateOfBirthClientError: _,
       registering: x,
       apiErrors: {
@@ -536,7 +536,7 @@ class eu extends(r = Chunk473749.PureComponent) {
           name: "username",
           value: r,
           onChange: R,
-          error: null != m ? m : ec(b),
+          error: null != f ? f : ec(b),
           autoComplete: "off",
           setRef: e => {
             this.usernameRef = e
@@ -553,7 +553,7 @@ class eu extends(r = Chunk473749.PureComponent) {
           password: e,
           passwordClientError: 0 === e.length ? er.intl.string(er.t.EkokLy) : null
         }),
-        error: null != f ? f : ec(I),
+        error: null != m ? m : ec(I),
         type: "password",
         autoComplete: "new-password",
         setRef: e => {
@@ -646,7 +646,7 @@ class eu extends(r = Chunk473749.PureComponent) {
         d = null != l ? (0, o.parse)(l.search) : {};
       null != s ? t = X.Z5c.INVITE_LOGIN(s.code) : null != r ? t = X.Z5c.GIFT_CODE_LOGIN(r.code) : null != i ? t = X.Z5c.GUILD_TEMPLATE_LOGIN(i.code) : null != c ? (t = X.Z5c.LOGIN, d.redirect_to = c) : (t = X.Z5c.LOGIN, "" !== n && (d = {
         email: n
-      })), m.Z.loginReset(), u(t, {
+      })), f.Z.loginReset(), u(t, {
         search: (0, o.stringify)(d),
         source: "register"
       }), null == a || a(e), K.S.dispatch(X.CkL.WAVE_EMPHASIZE)

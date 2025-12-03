@@ -44,7 +44,7 @@ function A(e) {
   }, [n]), (0, r.jsx)("div", {
     className: O.qrCodeContainer,
     children: "" !== t && n ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(m.ZP, {
+      children: [(0, r.jsx)(f.ZP, {
         className: O.qrCode,
         size: 160,
         text: t
@@ -166,19 +166,19 @@ function R(e) {
     state: u,
     rsaKeyPair: d,
     cancel: p,
-    handleFailure: m
+    handleFailure: f
   } = function(e) {
     let [t, n] = i.useState(0), [r, s] = i.useState(false), [a, o] = i.useState({
       step: 0
-    }), [c, u] = i.useState(null), d = (0, h.Z)(), p = i.useMemo(() => new l.Z(1500, 3e4), []), m = (0, g.Z)(() => {
+    }), [c, u] = i.useState(null), d = (0, h.Z)(), p = i.useMemo(() => new l.Z(1500, 3e4), []), f = (0, g.Z)(() => {
       o({
         step: 0
       }), d ? n(e => e + 1) : (T.info("document is not visible, will defer reconnection when document becomes visible."), s(true))
-    }), f = i.useCallback(() => {
+    }), m = i.useCallback(() => {
       T.error("Could not complete QR code login, trying to restart with a new QR code."), o({
         step: 0
-      }), p.pending || p.fail(m)
-    }, [m, p]);
+      }), p.pending || p.fail(f)
+    }, [f, p]);
     return i.useEffect(() => {
       d && r && 0 === a.step && (T.info("reconnecting, now that document is visible"), s(false), n(e => e + 1))
     }, [a, d, r, s]), i.useEffect(() => {
@@ -201,7 +201,7 @@ function R(e) {
       let g = () => {
         d ? (d = false, r.send(JSON.stringify({
           op: "heartbeat"
-        }))) : (i("heartbeat timeout, reconnecting."), r.close(), f())
+        }))) : (i("heartbeat timeout, reconnecting."), r.close(), m())
       };
       return r.onmessage = async t => {
         let {
@@ -229,7 +229,7 @@ function R(e) {
           }
           case "pending_login": {
             let e = s.ticket;
-            null == e && f(), o({
+            null == e && m(), o({
               step: 4,
               ticket: e
             });
@@ -262,7 +262,7 @@ function R(e) {
             return
           }
           case "cancel":
-            i("remote auth handshake cancelled."), m();
+            i("remote auth handshake cancelled."), f();
             return;
           case "hello": {
             i("got hello, auth timeout=".concat(s.timeout_ms, "ms"));
@@ -283,19 +283,19 @@ function R(e) {
           encoded_public_key: l
         })), u(s)
       }, r.onclose = e => {
-        i("disconnected, code: ".concat(e.code, " ").concat(e.reason)), f()
+        i("disconnected, code: ".concat(e.code, " ").concat(e.reason)), m()
       }, r.onerror = e => {
-        i("disconnected, error: ".concat(JSON.stringify(e))), f()
+        i("disconnected, error: ".concat(JSON.stringify(e))), m()
       }, () => {
         i("cleaning up"), r.onopen = () => null, r.onmessage = () => null, r.onclose = () => null, r.onerror = () => null, r.close(1e3), p.cancel(), null != c && clearTimeout(c), null != a && clearInterval(a)
       }
-    }, [m, e, t, p, f]), {
+    }, [f, e, t, p, m]), {
       state: a,
       rsaKeyPair: c,
-      cancel: m,
-      handleFailure: f
+      cancel: f,
+      handleFailure: m
     }
-  }(t), f = function(e) {
+  }(t), m = function(e) {
     switch (e) {
       case 0:
       case 1:
@@ -321,18 +321,18 @@ function R(e) {
           r = await (0, v.Pk)(d);
         t(n, r)
       } catch (e) {
-        m()
-      } else m()
+        f()
+      } else f()
     }).catch(() => {
-      m()
+      f()
     })
-  }, [u, t, d, m]), (0, r.jsxs)(r.Fragment, {
+  }, [u, t, d, f]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: O.verticalSeparator
     }), (0, r.jsx)(c.qBt, {
       fillParent: true,
       className: O.qrLogin,
-      step: f,
+      step: m,
       steps: [0, 1],
       children: (0, r.jsx)("div", {
         className: O.qrLoginInner,

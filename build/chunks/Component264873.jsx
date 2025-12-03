@@ -28,9 +28,9 @@ function x(e) {
 
   function E() {
     return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, r.jsx)(o.Button, {
-      text: f.intl.string(f.t.dKhVQN),
+      text: m.intl.string(m.t.dKhVQN),
       fullWidth: true,
-      onClick: () => s(m.Z5c.LOGIN, {
+      onClick: () => s(f.Z5c.LOGIN, {
         source: "authorizeIPAdress"
       })
     })
@@ -53,10 +53,10 @@ function x(e) {
       className: _.marginBottom20
     }), (0, r.jsx)(h.Dx, {
       className: _.marginBottom8,
-      children: f.intl.string(f.t["f/54az"])
+      children: m.intl.string(m.t["f/54az"])
     }), (0, r.jsx)(h.DK, {
       className: _.marginBottom40,
-      children: f.intl.string(f.t.i3ehMr)
+      children: m.intl.string(m.t.i3ehMr)
     }), E()]
   }) : "succeeded" === a ? (0, r.jsxs)(h.ZP, {
     children: [(0, r.jsx)("img", {
@@ -65,14 +65,14 @@ function x(e) {
       className: _.marginBottom20
     }), (0, r.jsx)(h.Dx, {
       className: _.marginBottom8,
-      children: f.intl.string(f.t.iG0SlK)
+      children: m.intl.string(m.t.iG0SlK)
     }), (0, r.jsx)(h.DK, {
       className: _.marginBottom40,
-      children: f.intl.string(f.t["Elv+qt"])
+      children: m.intl.string(m.t["Elv+qt"])
     }), E()]
   }) : (0, r.jsxs)(h.ZP, {
     children: [(0, r.jsx)(h.Hh, {}), (0, r.jsx)(h.Dx, {
-      children: f.intl.string(f.t["9exy+V"])
+      children: m.intl.string(m.t["9exy+V"])
     })]
   })
 }

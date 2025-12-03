@@ -72,7 +72,7 @@ function j(e) {
     var t;
     let n = null != (t = g.default.getFingerprint()) ? t : g.default.getId(),
       r = "discord://login/one-time?token=".concat(encodeURIComponent(e));
-    f.Z.launch(r, e => {
+    m.Z.launch(r, e => {
       e ? (p.default.track(x.rMx.DEEP_LINK_CLICKED, {
         source: "web_page",
         destination: "discord://login/one-time",
@@ -107,7 +107,7 @@ function j(e) {
   }, [S]);
   if (i.useEffect(() => {
       let e = null != o && "string" == typeof o,
-        t = a.tq ? "mobile" : a.Em ? "tablet" : (0, m.isDesktop)() ? "desktop_app" : "web";
+        t = a.tq ? "mobile" : a.Em ? "tablet" : (0, f.isDesktop)() ? "desktop_app" : "web";
       if (p.default.track(x.rMx.ONE_TIME_LOGIN_PAGE_VIEWED, {
           has_token: e,
           device_type: t
@@ -122,7 +122,7 @@ function j(e) {
         });
         return
       }
-      if ((0, m.isDesktop)()) return void y(o);
+      if ((0, f.isDesktop)()) return void y(o);
       I.current || (I.current = true, j("rpc_attempting"), O(o))
     }, [o, l, y, O]), a.tq || a.Em) {
     let e = null == o || "string" != typeof o ? "missing_token" : "invalid_token";

@@ -26,7 +26,7 @@ function x(e) {
       if (function(e) {
           var t;
           let n = (0, l.LX)(e, {
-            path: f.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
+            path: m.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
           });
           return (null == n || null == (t = n.params) ? true : t.channelId) === _.oC.ROLE_SUBSCRIPTIONS
         }(t)) g.dL(t);
@@ -81,7 +81,7 @@ function x(e) {
         })
       }
     }
-  }), I || v === f.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
+  }), I || v === m.u34.LOGGING_IN) ? (0, r.jsx)(f.q, {}) : (0, r.jsx)(f.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

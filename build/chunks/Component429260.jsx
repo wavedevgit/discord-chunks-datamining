@@ -1,8 +1,8 @@
 /** Chunk was on 37220 **/
 /** chunk id: 429260, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => S,
-  eH: () => Z,
+  ZP: () => E,
+  eH: () => _,
   wY: () => P
 });
 var Chunk54381 = require("./54381.js");
@@ -26,10 +26,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk342153 = require("./342153.js");
 
-function S(e) {
+function E(e) {
   let t = (0, i.e7)([m.Z], () => m.Z.getGuildId()),
     n = (0, p.Q_)(t);
-  return (0, O.a4)(e) ? (0, r.jsx)(o.sNh, {
+  return (0, y.a4)(e) ? (0, r.jsx)(o.sNh, {
     id: "report",
     label: n ? v.intl.string(v.t.n5EBAJ) : v.intl.string(v.t.GwbdGe),
     action: () => (0, f.ak)(e, "web_message_context_menu"),
@@ -38,7 +38,7 @@ function S(e) {
   }) : null
 }
 
-function E() {
+function S() {
   return (0, Chunk54381.jsx)(Chunk243778.ZP, {
     contentTypes: [Chunk704215.z.REPORT_TO_MOD_NEW_TAG],
     children: e => {
@@ -71,15 +71,15 @@ function P(e) {
         dismissAction: h.L.USER_DISMISS
       }), (0, f.tV)(e)
     },
-    icon: (0, r.jsx)(E, {}),
+    icon: (0, r.jsx)(S, {}),
     disabled: t
   }) : null
 }
 
-function Z(e) {
+function _(e) {
   let t = (0, i.e7)([c.ZP], () => c.ZP.get("iar_testing")),
-    n = (0, i.e7)([y.default], () => y.default.getCurrentUser());
-  return (0, O.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(o.sNh, {
+    n = (0, i.e7)([O.default], () => O.default.getCurrentUser());
+  return (0, y.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(o.sNh, {
     id: "staff-test-message-report",
     label: "[STAFF] Test Message Report",
     action: () => (0, f.Jw)(e, "web_message_context_menu"),

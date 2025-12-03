@@ -12,8 +12,8 @@ module.exports = function(e, t, n, o) {
     var g = a(t[c]),
       p = n;
     if (c != d) {
-      var m = h[g];
-      true === (p = o ? o(m, g, h) : true) && (p = l(m) ? m : s(t[c + 1]) ? [] : {})
+      var f = h[g];
+      true === (p = o ? o(f, g, h) : true) && (p = l(f) ? f : s(t[c + 1]) ? [] : {})
     }
     r(h, g, p), h = h[g]
   }

@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 667922, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,12 +23,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk576311 = require("./576311.js");
 
-function S(e, t) {
+function E(e, t) {
   let {
     reducedMotion: n
-  } = i.useContext(s.Sfi), l = (0, f.$R)(t), a = (0, o.e7)([b.Z], () => (t.isPrivate() || b.Z.can(O.Plq.ADD_REACTIONS, t)) && l, [t, l]), p = (0, c.MZ)(t.getGuildId());
+  } = i.useContext(s.Sfi), l = (0, f.$R)(t), a = (0, o.e7)([b.Z], () => (t.isPrivate() || b.Z.can(y.Plq.ADD_REACTIONS, t)) && l, [t, l]), p = (0, c.MZ)(t.getGuildId());
   if (!g.nc.getSetting() || !a) return null;
-  let j = p.filter(e => !y.ZP.isEmojiFilteredOrLocked({
+  let j = p.filter(e => !O.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: h.Hz.REACTION
@@ -40,7 +40,7 @@ function S(e, t) {
       label: ":".concat(i.name, ":"),
       icon: e => {
         var t, l;
-        return (0, r.jsx)(E, (t = function(e) {
+        return (0, r.jsx)(S, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -81,7 +81,7 @@ function S(e, t) {
     id: "add-reaction",
     label: v.intl.string(v.t.lfIHs4),
     action: () => {
-      m.S.dispatchKeyed(O.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+      m.S.dispatchKeyed(y.LPv.TOGGLE_REACTION_POPOUT, e.id, {
         emojiPicker: true
       })
     },
@@ -93,7 +93,7 @@ function S(e, t) {
         label: v.intl.string(v.t["OBCR+p"]),
         icon: s.EO4,
         action: () => {
-          m.S.dispatchKeyed(O.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+          m.S.dispatchKeyed(y.LPv.TOGGLE_REACTION_POPOUT, e.id, {
             emojiPicker: true
           })
         }
@@ -102,7 +102,7 @@ function S(e, t) {
   })
 }
 
-function E(e) {
+function S(e) {
   var t;
   let {
     emoji: n,
@@ -116,7 +116,7 @@ function E(e) {
       id: n.id,
       animated: n.animated && (!i || o),
       size: 18
-    }) : y.ZP.getURL(null != (t = n.optionallyDiverseSequence) ? t : ""),
+    }) : O.ZP.getURL(null != (t = n.optionallyDiverseSequence) ? t : ""),
     alt: ""
   })
 }

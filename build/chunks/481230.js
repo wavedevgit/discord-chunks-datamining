@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   R$: () => _,
-  ZP: () => f
+  ZP: () => m
 });
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -19,7 +19,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk981631 = require("./981631.js"),
   Chunk723359 = require("./723359.js");
 
-function f(e) {
+function m(e) {
   var t, n, {
     invite: r = null,
     giftCodeSKUId: i = null
@@ -75,7 +75,7 @@ function _(e) {
     email: t,
     phoneToken: n,
     username: r,
-    globalName: f,
+    globalName: m,
     consent: _,
     password: x,
     guildTemplateCode: E,
@@ -89,8 +89,8 @@ function _(e) {
       type: "REGISTER"
     }), null != v) {
     (0, g.Z)(v, p.jXE.REGISTER), d.default.track(p.rMx.AGE_GATE_ACTION, {
-      source: m.L0.REGISTER,
-      action: m.Al.AGE_GATE_SUBMITTED
+      source: f.L0.REGISTER,
+      action: f.Al.AGE_GATE_SUBMITTED
     });
     let e = i()().diff(v, "years");
     e < 13 || d.default.track(p.rMx.USER_AGE_SUBMITTED, {
@@ -103,7 +103,7 @@ function _(e) {
       fingerprint: u.default.getFingerprint(),
       email: t,
       username: r,
-      global_name: f,
+      global_name: m,
       password: x,
       invite: b,
       consent: _,
@@ -129,13 +129,13 @@ function _(e) {
       type: "REGISTER_SUCCESS",
       token: e.body.token
     }), d.default.track(p.rMx.AGE_GATE_ACTION, {
-      source: m.L0.REGISTER,
-      action: m.Al.AGE_GATE_SUCCESS
+      source: f.L0.REGISTER,
+      action: f.Al.AGE_GATE_SUCCESS
     })
   }, e => {
     if (e instanceof c.CaptchaCancelError) throw e;
     let t = new a.Z(e);
-    throw null != t.getFieldErrors("date_of_birth") && o.wE(m.L0.REGISTER), d.default.track(p.rMx.REGISTER_SUBMIT_ERRORED, {
+    throw null != t.getFieldErrors("date_of_birth") && o.wE(f.L0.REGISTER), d.default.track(p.rMx.REGISTER_SUBMIT_ERRORED, {
       is_unique_username_registration: true,
       email_error_reason: t.getFirstFieldErrorMessage("email"),
       phone_error_reason: t.getFirstFieldErrorMessage("phone_token"),

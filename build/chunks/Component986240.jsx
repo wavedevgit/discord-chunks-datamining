@@ -20,28 +20,28 @@ function p(e, t) {
   let n = (0, d.Z)(t),
     p = e.hasPotions(),
     m = (0, u.Nt)(),
-    y = i.useCallback(n => {
+    O = i.useCallback(n => {
       try {
         (0, a.qc)(t.id, e.id, n)
       } catch (e) {
         (0, l.showToast)((0, l.createToast)(b.intl.string(b.t.xsfC2S), l.ToastType.FAILURE))
       }
     }, [t.id, e.id]),
-    O = i.useCallback(() => {
+    y = i.useCallback(() => {
       f.default.track(g.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
         location: s.MG.MessageContextMenu
       }), (0, c.s)({
         channelId: t.id,
         message: e,
-        onRedeem: y,
+        onRedeem: O,
         onClose: o.Qy,
         source: s.YD.MessageContextMenu
       })
-    }, [t.id, e, y]);
+    }, [t.id, e, O]);
   return n && !p && m ? (0, r.jsx)(l.sNh, {
     id: "add-confetti-potion",
     label: b.intl.string(b.t.icaJW5),
     icon: l.l22,
-    action: O
+    action: y
   }) : null
 }

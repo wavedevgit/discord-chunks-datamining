@@ -27,24 +27,24 @@ function _(e) {
     errorReason: _
   } = e;
   return n ? (0, r.jsxs)("div", {
-    className: m.page,
+    className: f.page,
     children: [(0, r.jsx)("div", {
-      className: m.logoContainer,
+      className: f.logoContainer,
       children: (0, r.jsx)("img", {
-        src: f,
+        src: m,
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: m.content,
+      className: f.content,
       children: [(0, r.jsx)(a.SM, {
         alt: ""
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        className: m.headingText,
+        className: f.headingText,
         children: p.intl.string(p.t.RtCSr1)
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: m.bodyText,
+        className: f.bodyText,
         children: p.intl.string(p.t["S+YjYJ"])
       }), (0, r.jsx)(o.Button, {
         variant: "primary",
@@ -58,24 +58,24 @@ function _(e) {
       })]
     })]
   }) : (0, r.jsxs)("div", {
-    className: m.page,
+    className: f.page,
     children: [(0, r.jsx)("div", {
-      className: m.logoContainer,
+      className: f.logoContainer,
       children: (0, r.jsx)("img", {
-        src: f,
+        src: m,
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: m.content,
+      className: f.content,
       children: [(0, r.jsx)(a.SM, {
         alt: ""
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        className: m.headingText,
+        className: f.headingText,
         children: p.intl.string(p.t["9h/0Rl"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: m.bodyText,
+        className: f.bodyText,
         children: p.intl.string(p.t.Wgm7Om)
       }), (0, r.jsx)(o.Button, {
         variant: "primary",

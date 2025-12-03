@@ -2,7 +2,7 @@
 /** chunk id: 822699, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => eA
+  default: () => eZ
 }), require("./35282.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,6 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk521379 = require("./521379.jsx"),
   Chunk765717 = require("./765717.jsx"),
   Chunk267394 = require("./267394.js"),
+  Chunk280466 = require("./280466.js"),
   Chunk761305 = require("./761305.jsx"),
   Chunk698177 = require("./698177.jsx"),
   Chunk353926 = require("./353926.js"),
@@ -60,7 +61,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk188785 = require("./188785.js"),
   Chunk245335 = require("./245335.js");
 
-function ei(e, t, n) {
+function es(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -69,20 +70,20 @@ function ei(e, t, n) {
   }) : e[t] = n, e
 }
 
-function es(e) {
+function el(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      ei(e, t, n[t])
+      es(e, t, n[t])
     })
   }
   return e
 }
 
-function el(e, t) {
+function ea(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -95,29 +96,29 @@ function el(e, t) {
   }), e
 }
 require("./179645.js"), Chunk442837.ZP.initialize();
-let ea = (0, Chunk320830.Z)(Chunk781428.Z),
-  eo = (0, Chunk320830.Z)(Chunk209411.Z),
-  ec = (0, Chunk320830.Z)(Chunk344295.Z),
-  eu = (0, Chunk320830.Z)(Chunk236446.Z),
-  ed = (0, Chunk320830.Z)(Chunk39514.Z),
-  eh = (0, Chunk320830.Z)(Chunk677760.Z),
-  eg = (0, Chunk320830.Z)(Chunk423527.Z),
-  ep = (0, Chunk320830.Z)(Chunk264873.Z),
+let eo = (0, Chunk320830.Z)(Chunk781428.Z),
+  ec = (0, Chunk320830.Z)(Chunk209411.Z),
+  eu = (0, Chunk320830.Z)(Chunk344295.Z),
+  ed = (0, Chunk320830.Z)(Chunk236446.Z),
+  eh = (0, Chunk320830.Z)(Chunk39514.Z),
+  eg = (0, Chunk320830.Z)(Chunk677760.Z),
+  ep = (0, Chunk320830.Z)(Chunk423527.Z),
+  ef = (0, Chunk320830.Z)(Chunk264873.Z),
   em = (0, Chunk320830.Z)(Chunk223543.Z),
-  ef = (0, Chunk320830.Z)(Chunk455502.Z),
-  e_ = (0, Chunk320830.Z)(Chunk698177.Z),
-  ex = (0, Chunk320830.Z)(Chunk479495.Z),
-  eE = (0, Chunk320830.Z)(Chunk299852.Z),
-  ev = (0, Chunk320830.Z)(Chunk761305.Z),
-  eb = (0, Chunk320830.Z)(Chunk637776.Z),
-  ej = (0, Chunk320830.Z)(Chunk73906.Z),
-  eI = (0, Chunk320830.Z)(Chunk939900.Z),
-  ey = (0, Chunk320830.Z)(Chunk649156.Z),
-  eS = (0, Chunk320830.Z)(Chunk909223.Z),
-  eO = (0, Chunk320830.Z)(Chunk424044.Z),
-  eN = (0, Chunk320830.Z)(Chunk521379.Z),
-  eC = (0, Chunk320830.Z)(Chunk360887.Z);
-class eT extends Chunk473749.PureComponent {
+  e_ = (0, Chunk320830.Z)(Chunk455502.Z),
+  ex = (0, Chunk320830.Z)(Chunk698177.Z),
+  eE = (0, Chunk320830.Z)(Chunk479495.Z),
+  ev = (0, Chunk320830.Z)(Chunk299852.Z),
+  eb = (0, Chunk320830.Z)(Chunk761305.Z),
+  ej = (0, Chunk320830.Z)(Chunk637776.Z),
+  eI = (0, Chunk320830.Z)(Chunk73906.Z),
+  ey = (0, Chunk320830.Z)(Chunk939900.Z),
+  eS = (0, Chunk320830.Z)(Chunk649156.Z),
+  eO = (0, Chunk320830.Z)(Chunk909223.Z),
+  eN = (0, Chunk320830.Z)(Chunk424044.Z),
+  eC = (0, Chunk320830.Z)(Chunk521379.Z),
+  eT = (0, Chunk320830.Z)(Chunk360887.Z);
+class eA extends Chunk473749.PureComponent {
   static getDerivedStateFromProps(e, t) {
     var n;
     let {
@@ -126,15 +127,15 @@ class eT extends Chunk473749.PureComponent {
     } = e, {
       backgroundId: l
     } = t, a = null != (n = (0, s.parse)(i.search).redirect_to) ? n : null;
-    (null == a || "" === a || !(0, o.B)(a) || a.startsWith(et.Z5c.ME)) && (a = null);
+    (null == a || "" === a || a.startsWith(en.Z5c.ME) || !(0, o.B)(a) && !(0, x.Eu)(a)) && (a = null);
     let c = null;
-    if (null == r) c = (0, R.gK)(a);
-    else if ((null == r ? true : r.state) === et.r2o.RESOLVED) {
+    if (null == r) c = (0, L.gK)(a);
+    else if ((null == r ? true : r.state) === en.r2o.RESOLVED) {
       let {
         guild: e,
         target_application: t
       } = r;
-      null != t ? null != l && (c = (0, P.xF)(t.id, l, 1024)) : null != e && "string" == typeof e.splash && (c = L.ZP.getGuildSplashURL({
+      null != t ? null != l && (c = (0, R.xF)(t.id, l, 1024)) : null != e && "string" == typeof e.splash && (c = w.ZP.getGuildSplashURL({
         id: e.id,
         splash: e.splash
       }))
@@ -159,7 +160,7 @@ class eT extends Chunk473749.PureComponent {
   }
   componentDidUpdate(e) {
     var t, n;
-    e.hasLoadedExperiments || !this.props.hasLoadedExperiments || en.a || this.resolveInvite(), (null == (t = e.invite) ? true : t.state) !== (null == (n = this.props.invite) ? true : n.state) && this.maybeFetchApplicationSplash()
+    e.hasLoadedExperiments || !this.props.hasLoadedExperiments || er.a || this.resolveInvite(), (null == (t = e.invite) ? true : t.state) !== (null == (n = this.props.invite) ? true : n.state) && this.maybeFetchApplicationSplash()
   }
   componentWillUnmount() {
     Chunk126399.Z.terminate()
@@ -220,35 +221,35 @@ class eT extends Chunk473749.PureComponent {
       splash: module,
       children: [(0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.LOGIN_HANDOFF,
-        render: e => (0, r.jsx)(eo, el(es({}, e), {
+        render: e => (0, r.jsx)(ec, ea(el({}, e), {
           redirectTo: t
         }))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.LOGIN_ONE_TIME,
-        render: e => (0, r.jsx)(eC, es({}, e))
+        render: e => (0, r.jsx)(eT, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         impressionName: Chunk990547.ImpressionNames.USER_LOGIN,
         path: Chunk981631.Z5c.LOGIN,
-        render: e => (0, r.jsx)(ea, el(es({}, e), {
+        render: e => (0, r.jsx)(eo, ea(el({}, e), {
           redirectTo: t
         }))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         impressionName: Chunk990547.ImpressionNames.USER_REGISTRATION,
         path: Chunk981631.Z5c.REGISTER,
-        render: e => en.a ? (0, r.jsx)(ec, el(es({}, e), {
+        render: e => er.a ? (0, r.jsx)(eu, ea(el({}, e), {
           redirectTo: t,
           inviteKey: n
-        })) : (0, r.jsx)(eg, el(es({}, e), {
+        })) : (0, r.jsx)(ep, ea(el({}, e), {
           redirectTo: t
         }))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.GIFT_CODE_LOGIN(":giftCode"),
-        render: e => (0, r.jsx)(ed, es({
+        render: e => (0, r.jsx)(eh, el({
           login: true
         }, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.GIFT_CODE(":giftCode"),
-        render: e => (0, r.jsx)(ed, es({}, e))
+        render: e => (0, r.jsx)(eh, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: [Chunk981631.Z5c.INVITE_LOGIN(":inviteCode"), Chunk981631.Z5c.INVITE(":inviteCode")],
         render: e => {
@@ -261,15 +262,15 @@ class eT extends Chunk473749.PureComponent {
             },
             location: i,
             transitionTo: s
-          } = e, l = (0, y.mb)(t, i.search);
-          return a.tq || a.Em ? (0, r.jsx)(eh, {
+          } = e, l = (0, S.mb)(t, i.search);
+          return a.tq || a.Em ? (0, r.jsx)(eg, {
             inviteKey: l,
             transitionTo: s
-          }, l) : (0, r.jsx)(ec, {
+          }, l) : (0, r.jsx)(eu, {
             inviteKey: l,
             location: i,
             transitionTo: s,
-            login: n === et.Z5c.INVITE_LOGIN(":inviteCode")
+            login: n === en.Z5c.INVITE_LOGIN(":inviteCode")
           })
         }
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
@@ -285,96 +286,96 @@ class eT extends Chunk473749.PureComponent {
             location: i,
             transitionTo: s
           } = e;
-          return a.tq || a.Em ? (0, r.jsx)(W.Z, {
+          return a.tq || a.Em ? (0, r.jsx)(H.Z, {
             code: t
-          }, t) : (0, r.jsx)(eu, {
+          }, t) : (0, r.jsx)(ed, {
             code: t,
             location: i,
             transitionTo: s,
-            login: n === et.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")
+            login: n === en.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")
           })
         }
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.VERIFY,
-        render: e => (0, r.jsx)(ef, es({}, e))
+        render: e => (0, r.jsx)(e_, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.VERIFY_HUB_EMAIL,
-        render: e => (0, r.jsx)(eb, es({}, e))
+        render: e => (0, r.jsx)(ej, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.VERIFY_REQUEST,
-        render: e => (0, r.jsx)(e_, es({}, e))
+        render: e => (0, r.jsx)(ex, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.DISABLE_EMAIL_NOTIFICATIONS,
-        render: e => (0, r.jsx)(eE, es({}, e))
+        render: e => (0, r.jsx)(ev, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
-        render: e => (0, r.jsx)(ev, es({}, e))
+        render: e => (0, r.jsx)(eb, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.AUTHORIZE_IP,
-        render: e => (0, r.jsx)(ep, es({}, e))
+        render: e => (0, r.jsx)(ef, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REJECT_IP,
-        render: e => (0, r.jsx)(ex, es({
-          source: et.Z5c.REJECT_IP
+        render: e => (0, r.jsx)(eE, el({
+          source: en.Z5c.REJECT_IP
         }, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REJECT_MFA,
-        render: e => (0, r.jsx)(ex, es({
-          source: et.Z5c.REJECT_MFA
+        render: e => (0, r.jsx)(eE, el({
+          source: en.Z5c.REJECT_MFA
         }, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.AUTHORIZE_PAYMENT,
-        render: e => (0, r.jsx)(em, es({}, e))
+        render: e => (0, r.jsx)(em, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.RESET,
-        render: e => (0, r.jsx)(ex, es({
-          source: et.Z5c.RESET
+        render: e => (0, r.jsx)(eE, el({
+          source: en.Z5c.RESET
         }, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
-        render: e => (0, r.jsx)(ey, es({}, e))
+        render: e => (0, r.jsx)(eS, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.CHANNELS_GAME_SHOP(Chunk893607.Hw.guildId(), ":pageIndex", ":skuId", ":slug?"),
-        render: e => (0, r.jsx)(eI, es({}, e))
+        render: e => (0, r.jsx)(ey, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
           optional: true
         }), ":messageId?"),
-        render: e => (0, r.jsx)(ej, es({}, e))
+        render: e => (0, r.jsx)(eI, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REPORT,
-        render: e => (0, r.jsx)(eS, es({}, e))
+        render: e => (0, r.jsx)(eO, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.REPORT_SECOND_LOOK,
-        render: e => (0, r.jsx)(eO, es({}, e))
+        render: e => (0, r.jsx)(eN, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.ACCOUNT_REVERT(":token"),
-        render: e => (0, r.jsx)(eN, es({}, e))
+        render: e => (0, r.jsx)(eC, el({}, e))
       })]
     })
   }
   constructor(...e) {
-    super(...e), ei(this, "state", {
+    super(...e), es(this, "state", {
       splash: null,
       redirectTo: null,
       backgroundId: null
     })
   }
 }
-let eA = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk82142.Z, Chunk353926.Z, Chunk409059.Z], e => {
+let eZ = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk82142.Z, Chunk353926.Z, Chunk409059.Z], e => {
   var t, n, r;
   let {
     match: i,
     location: s
-  } = e, l = null == i || null == (t = i.params) ? true : t.inviteCode, a = en.a ? en.Y : true, o = null != l ? (0, y.mb)(l, s.search) : a, c = null == i || null == (n = i.params) ? true : n.giftCode, u = null == i || null == (r = i.params) ? true : r.guildTemplateCode;
+  } = e, l = null == i || null == (t = i.params) ? true : t.inviteCode, a = er.a ? er.Y : true, o = null != l ? (0, S.mb)(l, s.search) : a, c = null == i || null == (n = i.params) ? true : n.giftCode, u = null == i || null == (r = i.params) ? true : r.guildTemplateCode;
   return {
     inviteKey: o,
-    isAuthenticated: C.default.isAuthenticated(),
+    isAuthenticated: T.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
-    gift: null != c ? T.Z.get(c) : null,
-    invite: null != o ? A.Z.getInvite(o) : null,
-    guildTemplate: null != u ? b.Z.getGuildTemplate(u) : null,
-    hasLoadedExperiments: v.Z.hasLoadedExperiments
+    gift: null != c ? A.Z.get(c) : null,
+    invite: null != o ? Z.Z.getInvite(o) : null,
+    guildTemplate: null != u ? j.Z.getGuildTemplate(u) : null,
+    hasLoadedExperiments: b.Z.hasLoadedExperiments
   }
-})(eT)
+})(eA)

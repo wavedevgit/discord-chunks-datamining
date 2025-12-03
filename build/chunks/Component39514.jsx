@@ -315,7 +315,7 @@ let L = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
       isResolved: v.Z.getIsResolved(t),
       isAccepting: v.Z.getIsAccepting(t),
       libraryApplicationsFetched: b.Z.fetched,
-      nativeAppState: m.Z.getState(t)
+      nativeAppState: f.Z.getState(t)
     }
   })(R),
   w = e => {
@@ -324,7 +324,7 @@ let L = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
       children: n,
       giftCodeCode: s,
       transitionTo: l
-    } = e, a = (0, f.K$)(t);
+    } = e, a = (0, m.K$)(t);
     return (i.useEffect(() => {
       null != s && a && l(T.Z5c.APP_WITH_GIFT_CODE(s))
     }, [a, s, l]), a) ? (0, r.jsxs)(p.ZP, {

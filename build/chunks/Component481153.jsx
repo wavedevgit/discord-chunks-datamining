@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
 let y = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z, Chunk594174.default], e => {
   let {
     giftCode: t
-  } = e, n = f.Z.get(t.skuId), {
+  } = e, n = m.Z.get(t.skuId), {
     subscriptionPlanId: r
   } = t;
   return {
@@ -45,10 +45,10 @@ let y = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
     sku: a,
     application: c,
     subscriptionPlan: p
-  } = e, m = null == s ? v.intl.string(v.t.lTGZAl) : v.intl.formatToPlainString(v.t.TjWdPc, {
+  } = e, f = null == s ? v.intl.string(v.t.lTGZAl) : v.intl.formatToPlainString(v.t.TjWdPc, {
     username: s.username
-  }), f = a.name;
-  return null != p && (f = v.intl.formatToPlainString(p.interval === E.rV.MONTH ? v.t.CTpcCZ : v.t["rgPWG/"], {
+  }), m = a.name;
+  return null != p && (m = v.intl.formatToPlainString(p.interval === E.rV.MONTH ? v.t.CTpcCZ : v.t["rgPWG/"], {
     skuName: a.name,
     intervalCount: p.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
@@ -68,7 +68,7 @@ let y = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
       })]
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: m
+        children: f
       }), (0, r.jsxs)(u.Dx, {
         className: l()(I.marginTop8, j.flexCenter),
         children: [a.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
@@ -76,7 +76,7 @@ let y = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
           className: b.applicationIcon,
           game: c,
           skuId: a.id
-        }), f]
+        }), m]
       })]
     })]
   })

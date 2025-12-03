@@ -24,19 +24,19 @@ Chunk442837.ZP.initialize();
 let E = e => {
   let {
     location: t
-  } = e, n = (0, s.e7)([m.default], () => m.default.isAuthenticated()), E = (0, s.e7)([d.Z], () => d.Z.hasLoadedExperiments), v = (0, g.oK)("RSL - Landing Page"), [b, j] = i.useState(false), [I, y] = i.useState(_.intl.string(_.t["9exy+V"])), [S, O] = i.useState(true), N = e => {
+  } = e, n = (0, s.e7)([f.default], () => f.default.isAuthenticated()), E = (0, s.e7)([d.Z], () => d.Z.hasLoadedExperiments), v = (0, g.oK)("RSL - Landing Page"), [b, j] = i.useState(false), [I, y] = i.useState(_.intl.string(_.t["9exy+V"])), [S, O] = i.useState(true), N = e => {
     switch (e) {
-      case f.evJ.INVALID_FORM_BODY:
-      case f.evJ.DSA_RSL_REPORT_NOT_FOUND:
+      case m.evJ.INVALID_FORM_BODY:
+      case m.evJ.DSA_RSL_REPORT_NOT_FOUND:
         y(_.intl.string(_.t.bzXDfc));
         break;
-      case f.evJ.DSA_RSL_ALREADY_REQUESTED:
+      case m.evJ.DSA_RSL_ALREADY_REQUESTED:
         y(_.intl.string(_.t.rV00wq));
         break;
-      case f.evJ.DSA_RSL_LIMITED_TIME:
+      case m.evJ.DSA_RSL_LIMITED_TIME:
         y(_.intl.string(_.t["0dI29h"]));
         break;
-      case f.evJ.DSA_RSL_REPORT_INELIGIBLE:
+      case m.evJ.DSA_RSL_REPORT_INELIGIBLE:
         y(_.intl.string(_.t["RGa/Gb"]));
         break;
       default:

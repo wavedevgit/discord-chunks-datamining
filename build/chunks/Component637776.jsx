@@ -2,7 +2,7 @@
 /** chunk id: 637776, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,10 +18,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function m(e) {
   let {
     location: t
-  } = e, [n, f] = i.useState(false), {
+  } = e, [n, m] = i.useState(false), {
     verifySuccess: _,
     verifyErrors: x,
     redirectGuildId: E
@@ -31,28 +31,28 @@ function f(e) {
     a.Z.verify(e), (0, d.e)("verify_hub_email")
   }, [t]);
   let v = () => {
-    (0, g.Z)(E), f(true)
+    (0, g.Z)(E), m(true)
   };
   return n ? (0, r.jsx)(c.Z, {
-    title: m.intl.string(m.t.csrAMJ),
-    subtitle: m.intl.string(m.t["m1+IBn"]),
-    buttonText: m.intl.string(m.t.fIv16B),
+    title: f.intl.string(f.t.csrAMJ),
+    subtitle: f.intl.string(f.t["m1+IBn"]),
+    buttonText: f.intl.string(f.t.fIv16B),
     onButtonClick: () => (0, u.uL)(p.Z5c.CHANNEL(E))
   }) : _ ? (0, r.jsx)(c.Z, {
-    title: m.intl.string(m.t["dAfGb+"]),
-    buttonText: m.intl.string(m.t["uJWIj/"]),
+    title: f.intl.string(f.t["dAfGb+"]),
+    buttonText: f.intl.string(f.t["uJWIj/"]),
     onButtonClick: v,
     image: (0, r.jsx)(l.dQ, {
-      alt: m.intl.string(m.t["dAfGb+"])
+      alt: f.intl.string(f.t["dAfGb+"])
     })
   }) : null != x ? (0, r.jsx)(c.Z, {
-    title: m.intl.string(m.t["PCgG3+"]),
-    subtitle: m.intl.string(m.t.tQpeA3),
-    buttonText: m.intl.string(m.t["uJWIj/"]),
+    title: f.intl.string(f.t["PCgG3+"]),
+    subtitle: f.intl.string(f.t.tQpeA3),
+    buttonText: f.intl.string(f.t["uJWIj/"]),
     onButtonClick: v
   }) : (0, r.jsx)(c.Z, {
-    title: m.intl.string(m.t["0c8+5n"]),
-    subtitle: m.intl.string(m.t.ULTCBE),
+    title: f.intl.string(f.t["0c8+5n"]),
+    subtitle: f.intl.string(f.t.ULTCBE),
     loading: true
   })
 }

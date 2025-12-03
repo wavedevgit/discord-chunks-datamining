@@ -2,7 +2,7 @@
 /** chunk id: 617730, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 
-function m(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,17 +49,17 @@ function m(e, t) {
   }), e
 }
 
-function f(e) {
+function m(e) {
   let {
     invite: t,
     onAcceptInvite: n,
-    disableUser: f = false
+    disableUser: m = false
   } = e;
   if (null == t) return null;
   let _ = null != t.guild ? (0, o.Qs)(t.guild) : null,
     x = null != t.channel ? (0, l.jD)(t.channel) : null,
     E = null != t.target_application ? new s.ZP(t.target_application) : null,
-    v = f || null == t.inviter ? null : new a.Z(t.inviter),
+    v = m || null == t.inviter ? null : new a.Z(t.inviter),
     b = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.GuildFeatures.COMMUNITY)) && null != v && (0, c.WT)(t),
     j = (e => {
       let {
@@ -91,9 +91,9 @@ function f(e) {
       application: E,
       guild: _,
       user: b || (0, c.X7)(t) ? v : null
-    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, m(p({}, I), {
+    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, f(p({}, I), {
       showBigUserIcon: b
-    })), (0, r.jsx)(c.UM, m(p({}, I), {
+    })), (0, r.jsx)(c.UM, f(p({}, I), {
       showBigUserIcon: b
     })), (0, r.jsx)(c.V6, p({}, I)), (0, r.jsx)("div", {
       className: g.acceptButton,
