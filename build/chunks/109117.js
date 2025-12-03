@@ -112,6 +112,7 @@ function O(e, t, n) {
     was_receiving_stream: I(r.X4.IsReceivingStream),
     video_media_session_id: T(r.X4.VideoMediaSessionId),
     stream_media_session_id: T(r.X4.StreamMediaSessionId),
+    intentional_crash_reason: T(r.X4.IntentionalCrashReason),
     last_memory_usage_kb: null != (f = null == n || null == (i = n.lastMemoryInformation) ? true : i.memoryUsageKB) ? f : null,
     last_used_js_heap_size_kb: null != (_ = null == n || null == (a = n.lastMemoryInformation) ? true : a.usedJSHeapSizeKB) ? _ : null,
     last_memory_usage_uptime: null != (m = null == n || null == (o = n.lastMemoryInformation) ? true : o.uptimeSeconds) ? m : null,
