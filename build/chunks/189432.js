@@ -2,10 +2,11 @@
 /** chunk id: 189432, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => y
+  r: () => O
 });
 var Chunk622822 = require("./622822.js"),
   Chunk100527 = require("./100527.js"),
+  Chunk982168 = require("./982168.js"),
   Chunk703656 = require("./703656.js"),
   Chunk6025 = require("./6025.js"),
   Chunk897473 = require("./897473.js"),
@@ -18,7 +19,7 @@ var Chunk622822 = require("./622822.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +28,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,36 +52,38 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t, n) {
-  var h, E, y;
-  let O = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {
-    modViewPanel: p.k.INFO
+function O(e, t, n) {
+  var g, b, O;
+  let v, S = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {
+    modViewPanel: _.k.INFO
   };
-  if (!(0, f.Y)(e)) return Promise.resolve();
-  let v = null != (h = O.modViewPanel) ? h : p.k.INFO,
-    S = null != (E = O.sourceLocation) ? E : i.Z.MEMBER_SAFETY_PAGE,
-    I = u.Z.getCurrentlySelectedChannelId(),
-    T = null != I ? l.Z.getChannel(I) : null;
-  if (n !== m.oC.MEMBER_SAFETY && (null == T || T.getGuildId() !== e)) {
-    let t = c.ZP.getDefaultChannel(e);
-    null == t || (0, r.Y3)(t) || (0, a.uL)(_.Z5c.CHANNEL(e, t.id))
+  if (!(0, p.Y)(e)) return Promise.resolve();
+  let I = null != (g = S.modViewPanel) ? g : _.k.INFO,
+    T = null != (b = S.sourceLocation) ? b : i.Z.MEMBER_SAFETY_PAGE,
+    A = d.Z.getCurrentlySelectedChannelId(),
+    C = null != A ? c.Z.getChannel(A) : null;
+  if (n !== h.oC.MEMBER_SAFETY && (null == C || C.getGuildId() !== e)) {
+    let t = u.ZP.getDefaultChannel(e);
+    null == t || (0, r.Y3)(t) || (0, o.uL)(m.Z5c.CHANNEL(e, t.id))
   }
-  return (0, d.q)(e, t, v, S), o.Z.openGuildSidebar({
+  let N = n;
+  return (0, a.H0)(N, t) && (v = N), (0, f.q)(e, t, I, T), s.Z.openGuildSidebar({
     guildId: e,
     baseChannelId: n,
-    sidebarType: s.jL.GUILD_MEMBER_MOD_VIEW,
-    details: b(g({
-      type: s.Ff.GUILD_MEMBER_MOD_VIEW,
+    sidebarType: l.jL.GUILD_MEMBER_MOD_VIEW,
+    details: y(E({
+      type: l.Ff.GUILD_MEMBER_MOD_VIEW,
       userId: t,
       guildId: e
-    }, O), {
-      modViewPanel: null != (y = O.modViewPanel) ? y : p.k.INFO
+    }, S), {
+      modViewPanel: null != (O = S.modViewPanel) ? O : _.k.INFO,
+      moderatorReportId: v
     })
   })
 }

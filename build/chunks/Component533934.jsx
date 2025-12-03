@@ -65,7 +65,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk270759 = require("./270759.jsx"),
   Chunk755458 = require("./755458.js"),
   Chunk791250 = require("./791250.jsx"),
-  Chunk509212 = require("./509212.js"),
+  Chunk862657 = require("./862657.js"),
   Chunk121711 = require("./121711.jsx"),
   Chunk982168 = require("./982168.js"),
   Chunk893908 = require("./893908.js"),
@@ -299,7 +299,7 @@ let eU = (0, Chunk608787.Un)({
         t = null != (l = Chunk944486.Z.getChannelId(Chunk981631.ME)) ? Chunk120356 : module;
       return (0, Chunk703656.dL)(Chunk981631.Z5c.CHANNEL(Chunk981631.ME, exports)), (0, Chunk54381.jsx)(Chunk791250.Z, {})
     }
-    return window.location.pathname.startsWith(Chunk981631.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(Chunk981631.Z5c.GUILD_DISCOVERY) || (0, Chunk509212.$V)() ? (0, Chunk54381.jsx)(Chunk135864.Z, {}) : null != module ? (0, Chunk54381.jsx)(Chunk242601.Z, {
+    return window.location.pathname.startsWith(Chunk981631.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(Chunk981631.Z5c.GUILD_DISCOVERY) || (0, Chunk862657.$V)() ? (0, Chunk54381.jsx)(Chunk135864.Z, {}) : null != module ? (0, Chunk54381.jsx)(Chunk242601.Z, {
       selectedChannelId: Chunk473749,
       guildId: module
     }, module) : (0, Chunk54381.jsx)(Chunk791250.Z, {})

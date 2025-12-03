@@ -97,7 +97,7 @@ let E = {
         text: e.text,
         description: h.hideMentionDescription ? null : e.description,
         "aria-label": e.text,
-        badge: "@game" === e.text ? "new" : true
+        badge: "@game" === e.text || "@time" === e.text ? "new" : true
       }, e.text)),
       O = l.map((e, t) => (0, r.jsx)(a.ZP.Role, {
         onClick: E,
@@ -127,9 +127,9 @@ let E = {
       index: i,
       options: a,
       channel: o
-    } = e, s = t[i], l = n[i - t.length], c = r[i - t.length - n.length], d = false;
-    return null != s ? a.insertText(p(s.user, o, a.hidePersonalInformation), _(s.user)) : null != l ? null != l.inlineAutocompleteType ? (a.insertAutocompleteInput(l.inlineAutocompleteType), d = true) : a.insertText(m(l)) : null != c && a.insertText(h(c), g(c)), {
-      type: d ? u.z2.GAME_MENTION : u.z2.MENTION
+    } = e, s = t[i], l = n[i - t.length], c = r[i - t.length - n.length], d = u.z2.MENTION;
+    return null != s ? a.insertText(p(s.user, o, a.hidePersonalInformation), _(s.user)) : null != l ? null != l.inlineAutocompleteType ? (a.insertAutocompleteInput(l.inlineAutocompleteType), d = "timestampMentionInput" === l.inlineAutocompleteType ? u.z2.TIMESTAMP : u.z2.GAME_MENTION) : a.insertText(m(l)) : null != c && a.insertText(h(c), g(c)), {
+      type: d
     }
   }
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 66201 **/
 /** chunk id: 327250, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => G
+  ZP: () => j
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,12 +19,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk910693 = require("./910693.js"),
   Chunk172751 = require("./172751.jsx"),
   Chunk314897 = require("./314897.js"),
-  Chunk592125 = require("./592125.js"),
   Chunk271383 = require("./271383.js"),
   Chunk430824 = require("./430824.js"),
   Chunk496675 = require("./496675.js"),
   Chunk158776 = require("./158776.js"),
-  Chunk944486 = require("./944486.js"),
   Chunk885110 = require("./885110.js"),
   Chunk594174 = require("./594174.js"),
   Chunk572004 = require("./572004.js"),
@@ -34,7 +32,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk428331 = require("./428331.js");
 
-function b(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +51,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,18 +64,18 @@ function v(e, t) {
   }), e
 }
 
-function P(e) {
+function b(e) {
   let {
     user: t,
     guildId: n,
     onClose: l
-  } = e, i = t.id, a = (0, s.e7)([S.Z, f.Z, m.default], () => i === m.default.getId() ? S.Z.getStatus() : f.Z.getStatus(i, n), [i, n]);
+  } = e, i = t.id, a = (0, s.e7)([f.Z, O.Z, m.default], () => i === m.default.getId() ? f.Z.getStatus() : O.Z.getStatus(i, n), [i, n]);
   return (0, r.jsxs)("div", {
-    className: x.topRow,
+    className: L.topRow,
     children: [(0, r.jsxs)("div", {
-      className: x.memberNameContainer,
+      className: L.memberNameContainer,
       children: [(0, r.jsx)("div", {
-        className: x.memberAvatar,
+        className: L.memberAvatar,
         children: (0, r.jsx)(o.qEK, {
           src: t.getAvatarURL(n, 48),
           "aria-label": t.username,
@@ -85,13 +83,13 @@ function P(e) {
           status: a
         })
       }), (0, r.jsxs)("div", {
-        className: x.memberNameAndTagContainer,
+        className: L.memberNameAndTagContainer,
         children: [(0, r.jsxs)("div", {
-          className: x.memberNameTextContainer,
+          className: L.memberNameTextContainer,
           children: [(0, r.jsx)(o.Text, {
             variant: "text-lg/medium",
             children: (0, r.jsx)(o.PUh, {
-              name: D.ZP.getName(n, null, t),
+              name: p.ZP.getName(n, null, t),
               colorString: o.TVs.colors.HEADER_PRIMARY.css,
               colorStrings: null
             })
@@ -99,22 +97,22 @@ function P(e) {
             primaryGuild: null == t ? true : t.primaryGuild,
             userId: null == t ? true : t.id,
             contextGuildId: n,
-            badgeSize: L.Gg.SIZE_16,
+            badgeSize: D.Gg.SIZE_16,
             textVariant: "heading-md/semibold",
-            className: x.memberClanTag,
-            containerClassName: x.memberClanTagContainer
+            className: L.memberClanTag,
+            containerClassName: L.memberClanTagContainer
           })]
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "text-default",
-          children: U.ZP.getUserTag(t)
+          children: C.ZP.getUserTag(t)
         })]
       })]
     }), (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "text-default",
       children: (0, r.jsx)(o.P3F, {
-        className: x.closeAction,
+        className: L.closeAction,
         onClick: l,
         children: (0, r.jsx)(o.Dio, {
           size: "md",
@@ -125,7 +123,7 @@ function P(e) {
   })
 }
 
-function j(e) {
+function v(e) {
   var {
     tag: t = "div",
     text: n,
@@ -149,52 +147,48 @@ function j(e) {
   }(e, ["tag", "text", "disabled", "children", "onClick"]);
   return (0, r.jsx)(a.u, {
     text: n,
-    children: (0, r.jsx)(o.P3F, v(b({}, c), {
+    children: (0, r.jsx)(o.P3F, x(M({}, c), {
       tag: t,
       "aria-label": n,
-      className: i()(x.bottomRowAction, {
-        [x.bottomRowActionDisabled]: l
+      className: i()(L.bottomRowAction, {
+        [L.bottomRowActionDisabled]: l
       }),
       onClick: l ? true : u,
       children: (0, r.jsx)("div", {
-        className: x.innerBottomRowAction,
+        className: L.innerBottomRowAction,
         children: s
       })
     }))
   })
 }
 
-function y(e) {
+function P(e) {
   let {
     user: t,
     member: l,
-    guildId: i
-  } = e, a = (0, s.e7)([h.Z], () => h.Z.getGuild(i)), {
-    canKickUser: I,
-    canBanUser: N,
+    guildId: i,
+    moderatorReportId: a
+  } = e, I = (0, s.e7)([N.Z], () => N.Z.getGuild(i)), {
+    canKickUser: g,
+    canBanUser: O,
     canModerateMembers: f
-  } = (0, s.cj)([O.Z, p.default, h.Z], () => ({
-    canKickUser: (0, A.BK)(t, a),
-    canBanUser: (0, A.mm)(t, a),
-    canModerateMembers: null != a && (0, _.F)(a.id, t.id, [p.default, h.Z, O.Z])
-  }), [t, a]), S = (0, E.b)(l), {
-    analyticsLocations: D,
-    newestAnalyticsLocation: U
-  } = (0, c.ZP)(), L = (0, T.sE)(i, {
+  } = (0, s.cj)([h.Z, R.default, N.Z], () => ({
+    canKickUser: (0, A.BK)(t, I),
+    canBanUser: (0, A.mm)(t, I),
+    canModerateMembers: null != I && (0, _.F)(I.id, t.id, [R.default, N.Z, h.Z])
+  }), [t, I]), p = (0, E.b)(l), {
+    analyticsLocations: C,
+    newestAnalyticsLocation: D
+  } = (0, c.ZP)(), b = (0, T.sE)(i, {
     targetUserId: t.id,
-    location: U,
-    locations: D
-  }), P = (0, s.e7)([m.default], () => m.default.getId() === (null == t ? true : t.id)), y = (0, s.e7)([R.Z, g.Z], () => {
-    let e = R.Z.getChannelId(i),
-      t = null != e ? g.Z.getChannel(e) : null,
-      n = null != t && t.isModeratorReportChannel() ? e : true;
-    return null != n ? n : true
-  }, [i]);
+    location: D,
+    locations: C
+  }), P = (0, s.e7)([m.default], () => m.default.getId() === (null == t ? true : t.id));
   return (0, r.jsxs)("div", {
-    className: x.bottomRow,
-    children: [(0, r.jsx)(j, {
+    className: L.bottomRow,
+    children: [(0, r.jsx)(v, {
       disabled: P,
-      text: M.intl.string(M.t["g33r/P"]),
+      text: U.intl.string(U.t["g33r/P"]),
       onClick: () => {
         u.Z.openPrivateChannel({
           recipientIds: t.id
@@ -206,19 +200,19 @@ function y(e) {
         width: 24,
         height: 24
       })
-    }), (0, r.jsx)(j, {
-      disabled: !I,
-      text: M.intl.string(M.t["3glT6Z"]),
+    }), (0, r.jsx)(v, {
+      disabled: !g,
+      text: U.intl.string(U.t["3glT6Z"]),
       onClick: () => {
         (0, o.ZDy)(async () => {
           let {
             default: e
           } = await n.e("76826").then(n.bind(n, 495494));
-          return n => (0, r.jsx)(e, v(b({}, n), {
-            location: U,
+          return n => (0, r.jsx)(e, x(M({}, n), {
+            location: D,
             guildId: i,
             user: t,
-            modReportId: y
+            modReportId: a
           }))
         })
       },
@@ -228,19 +222,19 @@ function y(e) {
         height: 24,
         color: o.TVs.colors.TEXT_DEFAULT.css
       })
-    }), (0, r.jsx)(j, {
-      disabled: !N,
-      text: M.intl.string(M.t["5MBJ5M"]),
+    }), (0, r.jsx)(v, {
+      disabled: !O,
+      text: U.intl.string(U.t["5MBJ5M"]),
       onClick: () => {
         (0, o.ZDy)(async () => {
           let {
             default: e
           } = await n.e("10533").then(n.bind(n, 497880));
-          return n => (0, r.jsx)(e, v(b({}, n), {
-            location: U,
+          return n => (0, r.jsx)(e, x(M({}, n), {
+            location: D,
             guildId: i,
             user: t,
-            modReportId: y
+            modReportId: a
           }))
         })
       },
@@ -250,19 +244,19 @@ function y(e) {
         height: 24,
         color: o.TVs.colors.TEXT_DEFAULT.css
       })
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(v, {
       disabled: !f,
-      text: S ? M.intl.string(M.t.N86XcP) : M.intl.string(M.t.kTlLrz),
+      text: p ? U.intl.string(U.t.N86XcP) : U.intl.string(U.t.kTlLrz),
       onClick: () => {
-        S ? (0, d.q)({
+        p ? (0, d.q)({
           guildId: l.guildId,
           userId: l.userId,
-          anaylticsLocations: D
+          anaylticsLocations: C
         }) : (0, d.z)({
           guildId: l.guildId,
           userId: l.userId,
-          anaylticsLocations: D,
-          modReportId: y
+          anaylticsLocations: C,
+          modReportId: a
         })
       },
       children: (0, r.jsx)(o.YlB, {
@@ -271,12 +265,12 @@ function y(e) {
         height: 24,
         color: o.TVs.colors.TEXT_DEFAULT.css
       })
-    }), (0, r.jsx)(j, {
-      text: M.intl.string(M.t.IHTjzA),
+    }), (0, r.jsx)(v, {
+      text: U.intl.string(U.t.IHTjzA),
       onClick: () => {
-        L(T.jQ.COPY_ID), (0, C.JG)(t.id)
+        b(T.jQ.COPY_ID), (0, S.JG)(t.id)
       },
-      disabled: !C.wS,
+      disabled: !S.wS,
       children: (0, r.jsx)(o.VuL, {
         size: "custom",
         width: 24,
@@ -287,22 +281,24 @@ function y(e) {
   })
 }
 
-function G(e) {
+function j(e) {
   let {
     userId: t,
     guildId: n,
-    onClose: l
-  } = e, i = (0, s.e7)([p.default], () => p.default.getUser(t), [t]), a = (0, s.e7)([N.ZP], () => N.ZP.getMember(n, t), [n, t]);
-  return null == i || null == a ? null : (0, r.jsxs)("div", {
-    className: x.container,
-    children: [(0, r.jsx)(P, {
-      user: i,
+    onClose: l,
+    moderatorReportId: i
+  } = e, a = (0, s.e7)([R.default], () => R.default.getUser(t), [t]), o = (0, s.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]);
+  return null == a || null == o ? null : (0, r.jsxs)("div", {
+    className: L.container,
+    children: [(0, r.jsx)(b, {
+      user: a,
       guildId: n,
       onClose: l
-    }), (0, r.jsx)(y, {
-      user: i,
-      member: a,
-      guildId: n
+    }), (0, r.jsx)(P, {
+      user: a,
+      member: o,
+      guildId: n,
+      moderatorReportId: i
     })]
   })
 }

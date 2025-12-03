@@ -60,7 +60,9 @@ function h() {
     query: null,
     selectedIndex: null,
     isVisible: false,
-    didInitialQuery: false
+    didInitialQuery: false,
+    hadInitialResults: false,
+    isInitialAfterError: false
   }
 }
 class g extends Chunk836560.EventEmitter {
@@ -120,7 +122,9 @@ class g extends Chunk836560.EventEmitter {
     this.setState({
       query: null,
       isVisible: false,
-      selectedIndex: null
+      selectedIndex: null,
+      hadInitialResults: false,
+      isInitialAfterError: false
     })
   }
   queryResults() {
@@ -139,62 +143,64 @@ class g extends Chunk836560.EventEmitter {
     }, 0)
   }
   updateResults() {
-    var e, t;
-    let n, r, i = arguments.length > 0 && true !== arguments[0] && arguments[0],
-      d = arguments.length > 1 && true !== arguments[1] && arguments[1];
+    var e, t, n;
+    let r, i, d = arguments.length > 0 && true !== arguments[0] && arguments[0],
+      f = arguments.length > 1 && true !== arguments[1] && arguments[1];
     if (null == this.props.editorRef.current) return;
-    let f = (0, Chunk152089.FW)(this.props, this.state),
-      p = this.props.editorRef.current.getSlateEditor();
-    null != p && (r = null != (n = Chunk887490.bN.getSelectedParentOfType(p, m)) ? Chunk887490.bN.getTextFromRange(p, Chunk887490.bN.range(p, require[1])) : null);
-    let _ = (0, Chunk152089.fZ)({
+    let p = (0, Chunk152089.FW)(this.props, this.state),
+      _ = this.props.editorRef.current.getSlateEditor();
+    null != _ && (i = null != (r = Chunk887490.bN.getSelectedParentOfType(_, m)) ? Chunk887490.bN.getTextFromRange(_, Chunk887490.bN.range(_, Chunk836560[1])) : null);
+    let h = (0, Chunk152089.fZ)({
         channel: this.props.channel,
         guild: this.props.guild,
-        options: f,
+        options: p,
         currentWord: this.props.currentWord,
         currentWordIsAtStart: this.props.currentWordIsAtStart,
         textValue: this.props.textValue,
         optionText: this.props.optionText,
-        parentAutocompleteInputType: null == require ? true : require[0].type,
-        parentAutocompleteInputValue: Chunk836560
+        parentAutocompleteInputType: null == Chunk836560 ? true : Chunk836560[0].type,
+        parentAutocompleteInputValue: Chunk555573
       }),
-      h = f.commands !== Chunk590921.L8.DISABLED ? (0, Chunk152089.py)(this.props.activeCommandOption, this.props.currentWord) : null;
-    if (null == _ && null != h) _ = h;
-    else if (null == _ || null != h && _.type !== h.type) return void this.clearQuery();
+      g = p.commands !== Chunk590921.L8.DISABLED ? (0, Chunk152089.py)(this.props.activeCommandOption, this.props.currentWord) : null;
+    if (null == h && null != g) h = g;
+    else if (null == h || null != g && h.type !== g.type) return void this.clearQuery();
     let {
-      type: g,
-      typeInfo: E,
-      query: b
-    } = _, y = d || Chunk555573 && ((null == (e = this.state.query) ? true : module.queryText) !== b || (null == (t = this.state.query) ? true : exports.typeInfo) !== E), O = Chunk695346.fq.getSetting();
-    f.allowStickers = f.allowStickers ? O : f.allowStickers;
-    let v = Chunk695346.eR.getSetting();
-    f.allowSoundmoji = f.allowSoundmoji ? v : f.allowSoundmoji;
+      type: E,
+      typeInfo: b,
+      query: y
+    } = h, O = f || d && ((null == (e = this.state.query) ? true : module.queryText) !== y || (null == (t = this.state.query) ? true : exports.typeInfo) !== b), v = Chunk695346.fq.getSetting();
+    p.allowStickers = p.allowStickers ? v : p.allowStickers;
+    let S = Chunk695346.eR.getSetting();
+    p.allowSoundmoji = p.allowSoundmoji ? S : p.allowSoundmoji;
     let {
-      results: S,
-      metadata: I
-    } = E.queryResults(this.props.channel, this.props.guild, b, f, y), T = 0;
-    for (let e of Object.values(S)) Array.isArray(module) && (T += module.length);
-    let A = true === S.isLoading,
-      C = this.shouldShow(T, A, E),
-      N = this.state.selectedIndex;
-    !C || A ? N = null : null != N && N >= T && (N = T - 1);
-    let P = null != this.props.guild && Chunk627050.N.getCurrentConfig({
+      results: I,
+      metadata: T
+    } = b.queryResults(this.props.channel, this.props.guild, y, p, O), A = 0;
+    for (let e of Object.values(I)) Array.isArray(module) && (A += module.length);
+    let C = true === I.isLoading,
+      N = this.shouldShow(A, C, b),
+      P = this.state.selectedIndex;
+    !N || C ? P = null : null != P && P >= A && (P = A - 1);
+    let R = null != this.props.guild && Chunk627050.N.getCurrentConfig({
       guildId: this.props.guild.id,
       location: "mention autocomplete"
     }, {
       autoTrackExposure: true
     }).enabled;
-    C && !this.state.isVisible && (0, Chunk376918.a7)(g, this.props.channel, I, P), this.setState({
+    N && !this.state.isVisible && (0, Chunk376918.a7)(E, this.props.channel, T, R), this.setState({
       query: {
-        type: g,
-        typeInfo: E,
-        queryText: b,
-        results: S,
-        resultCount: T,
-        options: f,
-        isLoading: A
+        type: E,
+        typeInfo: b,
+        queryText: y,
+        results: I,
+        resultCount: A,
+        options: p,
+        isLoading: C
       },
-      isVisible: C,
-      selectedIndex: N
+      isVisible: N,
+      selectedIndex: P,
+      hadInitialResults: true,
+      isInitialAfterError: true !== this.state.hadInitialResults && null != (n = null == Chunk836560 ? true : Chunk836560[0].error) && require
     })
   }
   shouldShow(e, t, n) {

@@ -421,7 +421,8 @@ class tl extends Chunk473749.PureComponent {
       else {
         let {
           guildId: e,
-          userId: t
+          userId: t,
+          moderatorReportId: n
         } = Chunk120356.details;
         return (0, Chunk54381.jsx)("div", {
           style: {
@@ -431,6 +432,7 @@ class tl extends Chunk473749.PureComponent {
           children: (0, Chunk54381.jsx)(Chunk613464.Z, {
             guildId: module,
             userId: exports,
+            moderatorReportId: require,
             onClose: () => Chunk6025.Z.closeGuildSidebar(module)
           })
         })

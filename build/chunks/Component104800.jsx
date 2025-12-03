@@ -12,9 +12,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
   Chunk49436 = require("./49436.js"),
-  Chunk509212 = require("./509212.js"),
   Chunk184299 = require("./184299.js"),
   Chunk475595 = require("./475595.js"),
+  Chunk304696 = require("./304696.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk215113 = require("./215113.jsx"),
   Chunk874010 = require("./874010.jsx"),
@@ -26,7 +26,7 @@ function C(e) {
   let {
     quest: t,
     sourceQuestContent: n
-  } = e, l = o.useMemo(() => (0, p.fh)(t, p.eC.VIDEO_PLAYER_THUMBNAIL, true, false), [t]);
+  } = e, l = o.useMemo(() => (0, f.fh)(t, f.eC.VIDEO_PLAYER_THUMBNAIL, true, false), [t]);
   return null == l ? null : (0, r.jsx)(v.A, {
     questOrQuests: t,
     questContent: d.jn.VIDEO_MODAL_END_CARD,
@@ -91,12 +91,12 @@ function _(e) {
     videoRef: n,
     onExitFullScreen: l,
     onTrackQuestVideoFullscreenChanged: i,
-    onTrackQuestContentClick: p
+    onTrackQuestContentClick: f
   } = e, {
     onClose: v,
     sourceQuestContent: g,
     quest: _
-  } = o.useContext(E.VideoQuestModalContext), y = (0, f.ZP)(e => e.fullScreenEnabled), x = (0, f.ZP)(e => e.setFullScreenEnabled), j = (0, u.aM)(), P = (0, O.e)({
+  } = o.useContext(E.VideoQuestModalContext), y = (0, m.ZP)(e => e.fullScreenEnabled), x = (0, m.ZP)(e => e.setFullScreenEnabled), j = (0, u.aM)(), P = (0, O.e)({
     quest: _,
     onClose: v,
     sourceQuestContent: g,
@@ -107,12 +107,12 @@ function _(e) {
       let e = (0, s.fn)(null == (t = n.current) ? true : t.parentNode, n.current);
       null != e && (e.removeEventListener(s.NO, l), (0, s.Pr)(e), x(false), i(false))
     }
-    p(e, c.jZ.LEARN_MORE), P(e, c.jZ.OPEN_GAME_LINK)
-  }, [y, n, l, x, i, P, p]), {
+    f(e, c.jZ.LEARN_MORE), P(e, c.jZ.OPEN_GAME_LINK)
+  }, [y, n, l, x, i, P, f]), {
     title: R,
     subtitle: T
   } = {
-    title: (0, m.V_)(_),
+    title: (0, p.V_)(_),
     subtitle: null != (t = _.config.ctaConfig.subtitle) ? t : h.intl.string(h.t.mxaHfx)
   };
   return (0, r.jsxs)(r.Fragment, {

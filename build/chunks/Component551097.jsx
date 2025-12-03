@@ -12,8 +12,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
   Chunk49436 = require("./49436.js"),
-  Chunk509212 = require("./509212.js"),
   Chunk685138 = require("./685138.js"),
+  Chunk387745 = require("./387745.js"),
   Chunk698716 = require("./698716.jsx"),
   Chunk685613 = require("./685613.jsx"),
   Chunk110560 = require("./110560.jsx"),
@@ -34,7 +34,7 @@ let v = (0, Chunk205120.animated)(Chunk685613.ZP),
       isExpansionAnimationComplete: O
     } = e, S = (0, d.aM)(), {
       status: T
-    } = (0, m.n)({
+    } = (0, p.n)({
       location: _.dr.QUESTS_BAR,
       questConfig: t.config
     }), w = null == T ? true : T.progressBlur, P = s.useCallback(() => {
@@ -44,7 +44,7 @@ let v = (0, Chunk205120.animated)(Chunk685613.ZP),
         sourceQuestContent: u.jn.QUEST_BAR_V2
       })
     }, [t]), N = s.useCallback(() => {
-      (0, p.nc)(t, {
+      (0, m.nc)(t, {
         content: u.jn.QUEST_BAR_V2,
         ctaContent: c.jZ.OPEN_GAME_LINK,
         impressionId: S,

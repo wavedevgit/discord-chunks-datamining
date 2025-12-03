@@ -13,9 +13,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk393238 = require("./393238.js"),
   Chunk607070 = require("./607070.js"),
   Chunk960919 = require("./960919.jsx"),
-  Chunk509212 = require("./509212.js"),
   Chunk373370 = require("./373370.js"),
   Chunk968843 = require("./968843.js"),
+  Chunk862657 = require("./862657.js"),
   Chunk115179 = require("./115179.js"),
   Chunk836831 = require("./836831.jsx"),
   Chunk644646 = require("./644646.jsx"),
@@ -42,8 +42,8 @@ function T(e) {
   } = e, L = s.useRef(null), Q = (0, h.w8)(N.config), V = (0, h.B3)(N.config), M = (null == (t = N.userStatus) ? true : t.enrolledAt) != null, {
     ref: Z,
     scrollHeight: W
-  } = (0, d.kE)(), U = 104 !== W, {
-    onAssetLoadComplete: H
+  } = (0, d.kE)(), H = 104 !== W, {
+    onAssetLoadComplete: U
   } = s.useContext(b.k), {
     expansionSpring: F
   } = (0, c.q_F)({
@@ -80,7 +80,7 @@ function T(e) {
   }), z = (null == (n = N.userStatus) ? true : n.completedAt) != null, G = (null == (o = N.userStatus) ? true : o.claimedAt) != null, K = (0, h.xN)(N.config), X = (0, h.LM)(N.config), {
     completedRatio: Y,
     completedRatioDisplay: J
-  } = (0, f.I)(N), $ = (0, g.Bd)(N, q, L), ee = s.useMemo(() => G && K ? E.intl.format(E.t["8Op4c4"], {
+  } = (0, g.I)(N), $ = (0, m.Bd)(N, q, L), ee = s.useMemo(() => G && K ? E.intl.format(E.t["8Op4c4"], {
     balanceHook: () => (0, r.jsxs)(w, {
       questId: N.id,
       children: [(0, r.jsx)(p.Z, {
@@ -142,7 +142,7 @@ function T(e) {
               quest: N,
               size: 76,
               percentComplete: Y,
-              percentCompleteText: A && !(0, m.zi)(N) ? J : true,
+              percentCompleteText: A && !(0, f.zi)(N) ? J : true,
               children: (0, r.jsx)("div", {
                 className: O.circularRewardTileWrapper,
                 children: (0, r.jsx)(_.Z, {
@@ -151,7 +151,7 @@ function T(e) {
                   className: O.circularQuestRewardTileAsset,
                   location: C.dr.QUEST_HOME_DESKTOP,
                   autoplay: A,
-                  onLoadComplete: H,
+                  onLoadComplete: U,
                   lazyLoad: true,
                   sourceQuestContent: q
                 })
@@ -163,7 +163,7 @@ function T(e) {
             questContent: R,
             className: O.questRewardTileAsset,
             location: C.dr.QUEST_HOME_DESKTOP,
-            onLoadComplete: H,
+            onLoadComplete: U,
             lazyLoad: true,
             sourceQuestContent: q
           })]
@@ -171,7 +171,7 @@ function T(e) {
       }), (0, r.jsxs)("div", {
         ref: Z,
         className: a()(O.textContainer, {
-          [O.justifyCenter]: !U
+          [O.justifyCenter]: !H
         }),
         children: [(0, r.jsx)(c.Heading, {
           variant: "eyebrow",
@@ -186,7 +186,7 @@ function T(e) {
           className: O.header,
           children: ee
         }), et]
-      }), U && (0, r.jsx)(i.animated.div, {
+      }), H && (0, r.jsx)(i.animated.div, {
         style: {
           opacity: F.to([0, 1], [1, 0])
         },

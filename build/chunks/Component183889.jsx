@@ -9,15 +9,24 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk248813 = require("./248813.js");
-let s = () => (0, Chunk54381.jsxs)("div", {
-  className: Chunk248813.bar,
-  children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-    variant: "text-xs/bold",
-    color: "text-primary",
-    children: Chunk388032.intl.string(Chunk388032.t["4VDCG0"])
-  }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-    variant: "text-xs/medium",
-    color: "text-tertiary",
-    children: Chunk388032.intl.string(Chunk388032.t["260qZS"])
-  })]
-})
+let s = e => {
+  let {
+    error: t
+  } = e;
+  return (0, r.jsxs)("div", {
+    className: o.bar,
+    children: [(0, r.jsx)(i.Text, {
+      variant: "text-xs/bold",
+      color: "text-primary",
+      children: a.intl.string(a.t["4VDCG0"])
+    }), t ? (0, r.jsx)(i.Text, {
+      variant: "text-xs/medium",
+      className: o.error,
+      children: a.intl.string(a.t.qNorwt)
+    }) : (0, r.jsx)(i.Text, {
+      variant: "text-xs/medium",
+      color: "text-tertiary",
+      children: a.intl.string(a.t["260qZS"])
+    })]
+  })
+}

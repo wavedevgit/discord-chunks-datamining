@@ -28,12 +28,12 @@ function l(e) {
       })
     }
     null == f || f(+t)
-  }, m = (e, t) => {
-    var n;
-    if (null == (n = u.current) || n.scrollToTop(), e && null != d.query) {
+  }, m = (e, t, n) => {
+    var r;
+    if (null == (r = u.current) || r.scrollToTop(), e && null != d.query) {
       let e = d.query.typeInfo.focusMode,
-        n = e !== s.QZ.MANUAL && (e !== s.QZ.AUTO_WHEN_FILTERED || 0 !== d.query.queryText.length);
-      d.isVisible && (true !== t || false !== n) ? (g.setFocus("0"), null == f || f(0)) : (g.setFocus(null), null == f || f(null))
+        r = e !== s.QZ.MANUAL && (e !== s.QZ.AUTO_WHEN_FILTERED || 0 !== d.query.queryText.length);
+      d.isVisible && (true !== t || false !== r) && true !== n ? (g.setFocus("0"), null == f || f(0)) : (g.setFocus(null), null == f || f(null))
     }
   }, h = e => {
     var t;
@@ -55,6 +55,6 @@ function l(e) {
   return r.useEffect(() => {
     E.current = m
   }), r.useEffect(() => {
-    E.current(true, true)
-  }, [null == (t = d.query) ? true : t.type, null == (n = d.query) ? true : n.queryText, null == (l = d.query) ? true : l.isLoading, d.isVisible]), g
+    E.current(true, true, d.isInitialAfterError)
+  }, [null == (t = d.query) ? true : t.type, null == (n = d.query) ? true : n.queryText, null == (l = d.query) ? true : l.isLoading, d.isVisible, d.isInitialAfterError]), g
 }

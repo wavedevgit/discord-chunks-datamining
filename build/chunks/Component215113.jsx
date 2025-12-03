@@ -21,10 +21,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk915750 = require("./915750.jsx"),
   Chunk616022 = require("./616022.js"),
   Chunk49436 = require("./49436.js"),
-  Chunk509212 = require("./509212.js"),
   Chunk937797 = require("./937797.js"),
   Chunk968843 = require("./968843.js"),
   Chunk475595 = require("./475595.js"),
+  Chunk254579 = require("./254579.js"),
   Chunk542347 = require("./542347.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk667109 = require("./667109.jsx"),
@@ -94,10 +94,10 @@ function U(e) {
     impressionRef: B,
     parentModalOpenStartClockTime: U,
     sourceQuestContent: Y
-  } = e, q = (0, h.il)(g), H = (0, C.tP)(g), Q = (0, E.aM)(), [G, K] = o.useState(q.progressSeconds), [W, z] = o.useState(142), {
+  } = e, q = (0, S.il)(g), H = (0, b.tP)(g), Q = (0, E.aM)(), [G, K] = o.useState(q.progressSeconds), [W, z] = o.useState(142), {
     variant: X,
     enabled: $
-  } = b.EO.useConfig({
+  } = h.EO.useConfig({
     location: w.dr.VIDEO_MODAL
   }), J = null == (n = g.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.X.WATCH_VIDEO];
   s()(null != J, "VideoQuestModal: videoTask must not be null");
@@ -107,7 +107,7 @@ function U(e) {
       z(e.target.offsetHeight)
     }),
     er = (0, m.y)(en),
-    eo = X === b.m_.OVERLAY_SHARE_ON_VIDEO,
+    eo = X === h.m_.OVERLAY_SHARE_ON_VIDEO,
     el = (0, A.e)({
       quest: g,
       onClose: a,
@@ -174,7 +174,7 @@ function U(e) {
                 children: [(0, r.jsx)("img", {
                   alt: g.config.messages.gameTitle,
                   className: i()(M.contentHeaderLogotype, M.accentOnHover),
-                  src: (0, S.fh)(g, S.eC.LOGO_TYPE, ea).url
+                  src: (0, C.fh)(g, C.eC.LOGO_TYPE, ea).url
                 }), (0, r.jsx)(T.Z, {}), (0, r.jsxs)("div", {
                   className: M.questHeading,
                   children: [(0, r.jsx)(d.Heading, {

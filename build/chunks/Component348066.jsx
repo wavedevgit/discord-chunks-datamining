@@ -2,47 +2,49 @@
 /** chunk id: 348066, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk670081 = require("./670081.js"),
   Chunk481060 = require("./481060.js"),
   Chunk49436 = require("./49436.js"),
-  Chunk509212 = require("./509212.js"),
   Chunk968843 = require("./968843.js"),
+  Chunk862657 = require("./862657.js"),
+  Chunk254579 = require("./254579.js"),
+  Chunk283689 = require("./283689.js"),
   Chunk867305 = require("./867305.jsx"),
   Chunk557843 = require("./557843.jsx"),
   Chunk10514 = require("./10514.jsx"),
   Chunk686834 = require("./686834.jsx"),
   Chunk159183 = require("./159183.js");
 
-function m(e) {
+function g(e) {
   let {
     questId: t
   } = e, {
     quests: n,
-    excludedQuests: m,
-    isFetchingCurrentQuests: h
-  } = (0, c.J2)({
+    excludedQuests: g,
+    isFetchingCurrentQuests: E
+  } = (0, l.J2)({
     fetchPolicy: "cache-or-network",
     callerSource: "embed"
-  }), g = i.useMemo(() => (0, l._x)(t, n, m), [t, n, m]), E = i.useMemo(() => m.find(e => e.id === t), [t, m]), b = i.useMemo(() => (null == g ? true : g.config.features.includes(a.S.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) === true, [null == g ? true : g.config.features]);
-  return h ? (0, r.jsx)(o.$jN, {
-    className: _.spinner
-  }) : null == g ? null != E ? (0, r.jsx)(u.q, {
+  }), b = i.useMemo(() => (0, c._x)(t, n, g), [t, n, g]), y = i.useMemo(() => g.find(e => e.id === t), [t, g]), O = i.useMemo(() => (null == b ? true : b.config.features.includes(a.S.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) === true, [null == b ? true : b.config.features]);
+  return E ? (0, r.jsx)(o.$jN, {
+    className: h.spinner
+  }) : null == b ? null != y ? (0, r.jsx)(f.q, {
     questId: t
-  }) : (0, r.jsx)(d.W, {
+  }) : (0, r.jsx)(p.W, {
     questId: t,
-    reason: d.X.NOT_FOUND
-  }) : (0, l.HJ)(g) && !b ? (0, r.jsx)(d.W, {
+    reason: p.X.NOT_FOUND
+  }) : (0, u.HJ)(b) && !O ? (0, r.jsx)(p.W, {
     questId: t,
-    reason: d.X.MOBILE_ONLY
-  }) : (0, l.vB)(g.config) ? (0, r.jsx)(p.X, {
-    quest: g,
+    reason: p.X.MOBILE_ONLY
+  }) : (0, d.VB)(b.config) ? (0, r.jsx)(m.X, {
+    quest: b,
     location: s.jn.QUESTS_EMBED,
     sourceQuestContent: s.jn.QUESTS_EMBED
-  }, g.id) : (0, r.jsx)(f.J, {
+  }, b.id) : (0, r.jsx)(_.J, {
     questId: t
   })
 }

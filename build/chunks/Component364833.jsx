@@ -14,10 +14,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk617136 = require("./617136.js"),
   Chunk616022 = require("./616022.js"),
   Chunk49436 = require("./49436.js"),
-  Chunk509212 = require("./509212.js"),
   Chunk373370 = require("./373370.js"),
   Chunk968843 = require("./968843.js"),
   Chunk475595 = require("./475595.js"),
+  Chunk283689 = require("./283689.js"),
   Chunk602667 = require("./602667.jsx"),
   Chunk698716 = require("./698716.jsx"),
   Chunk659302 = require("./659302.jsx"),
@@ -52,13 +52,13 @@ function P(e) {
   var t;
   let {
     quest: n
-  } = e, i = (0, m.B6)(n.config.expiresAt), l = (0, m.B6)(n.config.rewardsConfig.rewardsExpireAt), a = (0, s.e7)([c.Z], () => c.Z.getState().theme), u = (0, o.wjy)(a) ? S.BRd.DARK : S.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
+  } = e, i = (0, g.B6)(n.config.expiresAt), l = (0, g.B6)(n.config.rewardsConfig.rewardsExpireAt), a = (0, s.e7)([c.Z], () => c.Z.getState().theme), u = (0, o.wjy)(a) ? S.BRd.DARK : S.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
   return (0, r.jsxs)("div", {
     className: N.heading,
     children: [(0, r.jsx)("img", {
       className: N.headingGameTile,
       alt: "",
-      src: (0, _.fh)(n, _.eC.GAME_TILE, u).url
+      src: (0, m.fh)(n, m.eC.GAME_TILE, u).url
     }), (0, r.jsxs)("div", {
       className: N.headingCopy,
       children: [(0, r.jsx)(o.Heading, {
@@ -84,49 +84,49 @@ function x(e) {
   var t, n, l;
   let {
     nodeRef: c,
-    quest: _
-  } = e, b = (0, d.O5)(), S = (0, s.e7)([p.Z], () => p.Z.isEnrolling(_.id), [_]), [x, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
+    quest: m
+  } = e, b = (0, d.O5)(), S = (0, s.e7)([p.Z], () => p.Z.isEnrolling(m.id), [m]), [x, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
     launchInGameActivity: L
-  } = (0, m.zB)(_), R = i.useCallback(e => {
+  } = (0, g.zB)(m), R = i.useCallback(e => {
     e.stopPropagation()
   }, []), D = i.useCallback(() => {
-    (0, u.AH)(_.id, {
+    (0, u.AH)(m.id, {
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.ACCEPT_QUEST,
       sourceQuestContent: f.jn.ACTIVITY_PANEL
-    }), (0, h.Rt)(_) && L()
-  }, [_, L]), M = i.useCallback(() => {
-    null != _ && (b({
-      questId: _.id,
+    }), (0, _.Rt)(m) && L()
+  }, [m, L]), M = i.useCallback(() => {
+    null != m && (b({
+      questId: m.id,
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.TRACK_PROGRESS,
       sourceQuestContent: f.jn.ACTIVITY_PANEL
     }), (0, I.navigateToQuestHome)({
       fromContent: f.jn.ACTIVITY_PANEL,
-      questId: _.id
+      questId: m.id
     }))
-  }, [_, b]), k = i.useCallback(() => {
+  }, [m, b]), k = i.useCallback(() => {
     b({
-      questId: _.id,
+      questId: m.id,
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.LEARN_MORE,
       sourceQuestContent: f.jn.ACTIVITY_PANEL
     }), (0, I.navigateToQuestHome)({
       fromContent: f.jn.ACTIVITY_PANEL,
-      questId: _.id
+      questId: m.id
     })
-  }, [_.id, b]), U = (0, O.hf)({
-    quest: _,
+  }, [m.id, b]), U = (0, O.hf)({
+    quest: m,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL
-  }), G = (null == (t = _.userStatus) ? true : t.enrolledAt) != null, B = (null == (n = _.userStatus) ? true : n.completedAt) != null, H = (0, m.Rf)(_), V = (0, g.DD)({
-    quest: _,
+  }), G = (null == (t = m.userStatus) ? true : t.enrolledAt) != null, B = (null == (n = m.userStatus) ? true : n.completedAt) != null, H = (0, g.Rf)(m), V = (0, h.DD)({
+    quest: m,
     taskDetails: H,
     location: C.dr.ACTIVITY_PANEL,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL
-  }), F = (0, h.Rt)(_), z = (0, g.CR)({
-    quest: _
+  }), F = (0, _.Rt)(m), z = (0, h.CR)({
+    quest: m
   }), Y = F ? z : T.intl.string(T.t.l7E81v);
   return (0, r.jsxs)("div", {
     ref: e => {
@@ -144,11 +144,11 @@ function x(e) {
     children: [(0, r.jsxs)("div", {
       className: N.utils,
       children: [G ? (0, r.jsx)(P, {
-        quest: _
+        quest: m
       }) : (0, r.jsx)(v.Z, {}), (0, r.jsx)(E.i, {
-        quest: _,
+        quest: m,
         questContent: f.jn.ACTIVITY_PANEL,
-        shouldShowDisclosure: (null == (l = _.userStatus) ? true : l.enrolledAt) == null,
+        shouldShowDisclosure: (null == (l = m.userStatus) ? true : l.enrolledAt) == null,
         showShareLink: true,
         sourceQuestContent: f.jn.ACTIVITY_PANEL,
         children: e => {
@@ -174,7 +174,7 @@ function x(e) {
       })]
     }), !G && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(P, {
-        quest: _
+        quest: m
       }), (0, r.jsx)("div", {
         className: N.instructions,
         children: (0, r.jsx)(o.Text, {
@@ -186,7 +186,7 @@ function x(e) {
     }), G && !B && (0, r.jsx)(y.Z, {
       autoplay: x,
       className: N.rewardTileWithInstructions,
-      quest: _,
+      quest: m,
       questContent: f.jn.ACTIVITY_PANEL,
       location: C.dr.ACTIVITY_PANEL,
       taskDetails: H,
@@ -206,7 +206,7 @@ function x(e) {
           text: Y,
           onClick: D,
           loading: S,
-          icon: (0, I.getPrimaryCtaIcon)(_)
+          icon: (0, I.getPrimaryCtaIcon)(m)
         })]
       }), G && !B && (0, r.jsx)(o.Button, {
         variant: "primary",

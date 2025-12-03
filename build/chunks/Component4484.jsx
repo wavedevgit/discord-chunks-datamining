@@ -60,27 +60,28 @@ let k = Chunk473749.forwardRef(function(e, t) {
     onTab: J,
     onEnter: $,
     onSubmit: ee,
-    maybeShowAutocomplete: et,
-    hideAutocomplete: en,
-    moveSelection: er,
-    spellcheckEnabled: ei,
-    canUseCommands: ea,
-    canOnlyUseTextCommands: eo,
-    disableAutoFocus: es,
-    disableEnterToSubmit: el,
-    allowNewLines: ec,
-    isEditorIdle: eu,
-    currentAutocompleteType: ed,
-    "aria-owns": ef,
-    "aria-expanded": ep,
-    "aria-haspopup": e_,
-    "aria-activedescendant": em,
-    "aria-controls": eh,
-    "aria-invalid": eg,
-    "aria-describedby": eE,
-    "aria-labelledby": eb,
-    "aria-autocomplete": ey
-  } = e, eO = i.useRef(null), ev = i.useRef(null), eS = i.useRef(true), eI = i.useRef(true), eT = Z || B, eA = i.useCallback((e, t, n) => {
+    onSubmitFailure: et,
+    maybeShowAutocomplete: en,
+    hideAutocomplete: er,
+    moveSelection: ei,
+    spellcheckEnabled: ea,
+    canUseCommands: eo,
+    canOnlyUseTextCommands: es,
+    disableAutoFocus: el,
+    disableEnterToSubmit: ec,
+    allowNewLines: eu,
+    isEditorIdle: ed,
+    currentAutocompleteType: ef,
+    "aria-owns": ep,
+    "aria-expanded": e_,
+    "aria-haspopup": em,
+    "aria-activedescendant": eh,
+    "aria-controls": eg,
+    "aria-invalid": eE,
+    "aria-describedby": eb,
+    "aria-labelledby": ey,
+    "aria-autocomplete": eO
+  } = e, ev = i.useRef(null), eS = i.useRef(null), eI = i.useRef(true), eT = i.useRef(true), eA = Z || B, eC = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -104,7 +105,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
       }
     }
     let u = null != a && !b.Ew.equals(a, s);
-    if (l && !es && b.bN.focus(e), null != a && u) {
+    if (l && !el && b.bN.focus(e), null != a && u) {
       e.selection = a;
       let t = m.T.currentEntry(e);
       null != t && (t.selection = a), l = true
@@ -114,46 +115,46 @@ let k = Chunk473749.forwardRef(function(e, t) {
         (0, P.L)(e, k.id, null, true)
       }), l)
       if ("parent" === t) try {
-        eI.current = false, e.onChange()
+        eT.current = false, e.onChange()
       } finally {
-        eI.current = true
+        eT.current = true
       } else e.onChange()
-  }, [k.id, k.guild_id, es]), eC = i.useCallback(() => {
-    eS.current = false
-  }, []), eN = i.useCallback(() => {
-    eS.current = true
-  }, []), eP = (0, I.Z)({
+  }, [k.id, k.guild_id, el]), eN = i.useCallback(() => {
+    eI.current = false
+  }, []), eP = i.useCallback(() => {
+    eI.current = true
+  }, []), eR = (0, I.Z)({
     channel: k,
     chatInputType: a,
-    canUseCommands: ea,
-    canOnlyUseTextCommands: eo,
-    onChangeStart: eC,
-    onChangeEnd: eN,
-    updateState: eA
-  }), eR = i.useCallback((e, t) => {
-    let n = _.tM(eP, e, k.id),
+    canUseCommands: eo,
+    canOnlyUseTextCommands: es,
+    onChangeStart: eN,
+    onChangeEnd: eP,
+    updateState: eC
+  }), ew = i.useCallback((e, t) => {
+    let n = _.tM(eR, e, k.id),
       r = _.lk(e, k.guild_id, k.id, n, t);
     return {
       values: n,
       results: r
     }
-  }, [k.guild_id, k.id, eP]), ew = i.useCallback(() => {
-    let e, t = b.bN.getNodesOfType(eP, ["gameMentionInput", "timestampMentionInput"]),
+  }, [k.guild_id, k.id, eR]), eD = i.useCallback(() => {
+    let e, t = b.bN.getNodesOfType(eR, ["gameMentionInput", "timestampMentionInput"]),
       n = null != t ? [...t] : null,
-      r = ea ? c.Z.getActiveCommand(k.id) : null,
+      r = eo ? c.Z.getActiveCommand(k.id) : null,
       i = false;
     if (null != r && null != r.options) {
-      let t = eR(r, false);
+      let t = ew(r, false);
       e = t.values;
-      let n = _.cu(eP).filter(e => !t.results[e].success).map(e => {
+      let n = _.cu(eR).filter(e => !t.results[e].success).map(e => {
         var t;
         return (null != (t = r.options) ? t : []).find(t => t.name === e)
       });
-      for (let e of r.options) !e.required || e.name in t.values || (E.Q.insertCommandOption(eP, e), n.push(e));
+      for (let e of r.options) !e.required || e.name in t.values || (E.Q.insertCommandOption(eR, e), n.push(e));
       if (n.length > 0) {
         var a, o;
         let e = n[0];
-        E.Q.selectCommandOption(eP, e.name), i = true, (0, l.yw)(j.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
+        E.Q.selectCommandOption(eR, e.name), i = true, (0, l.yw)(j.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
           application_id: null == r ? true : r.applicationId,
           command_id: null == r || null == (a = r.rootCommand) ? true : a.id,
           argument_type: s.jw[null != (o = null == e ? true : e.type) ? o : 3],
@@ -162,104 +163,107 @@ let k = Chunk473749.forwardRef(function(e, t) {
       }
     }
     if (null != n)
-      for (let [e, t] of n) i = true, E.Q.setNodes(eP, {
+      for (let [e, t] of n) E.Q.setNodes(eR, {
         error: true
       }, {
         at: t
-      });
-    if (i) return void f.S.dispatch(j.CkL.SHAKE_APP, {
-      duration: 200,
-      intensity: 2
-    });
-    null == ee || ee((0, g.sk)(b.bN.richValue(eP), {
+      }), i || E.Q.select(eR, b.bN.end(eR, t)), i = true;
+    if (i) {
+      f.S.dispatch(j.CkL.SHAKE_APP, {
+        duration: 200,
+        intensity: 2
+      }), null == et || et();
+      return
+    }
+    null == ee || ee((0, g.sk)(b.bN.richValue(eR), {
       mode: "raw",
       ignoreTrailingEmptyNodes: true
     }), r, e)
-  }, [k.id, eP, ee, eR, ea]);
-  (0, T.Z)(t, eP, k, ew), (0, N.Z)(eP, eO, K);
+  }, [k.id, eR, ee, et, ew, eo]);
+  (0, T.Z)(t, eR, k, eD), (0, N.Z)(eR, ev, K);
   let {
-    handleKeyDown: eD,
-    handleKeyUp: ex
+    handleKeyDown: ex,
+    handleKeyUp: eL
   } = (0, A.Z)({
-    editor: eP,
+    editor: eR,
     channel: k,
-    disableEnterToSubmit: el,
+    disableEnterToSubmit: ec,
     onKeyDown: X,
     onKeyUp: Q,
     onTab: J,
     onEnter: $,
-    allowNewLines: ec,
-    submit: ew,
-    hideAutocomplete: en,
-    moveSelection: er
+    allowNewLines: eu,
+    submit: eD,
+    hideAutocomplete: er,
+    moveSelection: ei
   }), {
-    handlePaste: eL,
-    handleGlobalPaste: ej
-  } = (0, C.Z)(eP, eT, W), eM = i.useCallback(e => {
-    null == et || et()
-  }, [et]), ek = i.useCallback(e => {
-    e !== ev.current ? eI.current && (null == Y || Y(null, (0, g.sk)(e, {
+    handlePaste: ej,
+    handleGlobalPaste: eM
+  } = (0, C.Z)(eR, eA, W), ek = i.useCallback(e => {
+    null == en || en()
+  }, [en]), eU = i.useCallback(e => {
+    e !== eS.current ? eT.current && (null == Y || Y(null, (0, g.sk)(e, {
       mode: "raw"
-    }), e)) : eI.current && et()
-  }, [et, Y]);
+    }), e)) : eT.current && en()
+  }, [en, Y]);
   i.useLayoutEffect(() => {
-    eS.current && (ev.current = n, eA(eP, "parent", {
+    eI.current && (eS.current = n, eC(eR, "parent", {
       value: n
     }))
-  }, [eP, n, eA]), i.useEffect(() => {
+  }, [eR, n, eC]), i.useEffect(() => {
     let e = () => {
       var e;
       let t = null != (e = c.Z.getActiveCommand(k.id)) ? e : null;
-      null !== t && null != t.options && eR(t, true)
+      null !== t && null != t.options && ew(t, true)
     };
     return u.Z.addChangeListener(e), () => u.Z.removeChangeListener(e)
-  }, [k, eP, eR]);
-  let eU = i.useCallback(e => [...(0, v.Z)(eP, e, k.guild_id), ...(0, y.Z)(eP, e), ...(0, O.Z)(eP, e), ...(0, S.Z)(eP, e, k, {
-      isIdle: eu,
-      currentAutocompleteType: ed
-    })], [eP, k, eu, ed]),
-    eG = i.useCallback(e => {
-      let t = (0, w.Z)(eP, e, k.id);
-      return null == t && (t = (0, x.Z)(eP, e)), null == t && (t = (0, L.Z)(eP, e)), t
-    }, [k.id, eP]),
-    eZ = i.useCallback(e => (0, D.Z)(e), []);
+  }, [k, eR, ew]);
+  let eG = i.useCallback(e => [...(0, v.Z)(eR, e, k.guild_id), ...(0, y.Z)(eR, e), ...(0, O.Z)(eR, e), ...(0, S.Z)(eR, e, k, {
+      isIdle: ed,
+      currentAutocompleteType: ef
+    })], [eR, k, ed, ef]),
+    eZ = i.useCallback(e => {
+      let t = (0, w.Z)(eR, e, k.id);
+      return null == t && (t = (0, x.Z)(eR, e)), null == t && (t = (0, L.Z)(eR, e)), t
+    }, [k.id, eR]),
+    eB = i.useCallback(e => (0, D.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.d9, {
       event: j.CkL.GLOBAL_CLIPBOARD_PASTE,
-      handler: ej
+      handler: eM
     }), (0, r.jsx)("div", {
-      ref: eO,
+      ref: ev,
       className: o()(U, M.slateContainer),
       children: (0, r.jsx)(h.Z, {
         id: G,
-        editor: eP,
+        editor: eR,
         channelId: k.id,
         guildId: k.guild_id,
         className: o()(M.slateTextArea, H),
         placeholder: F,
-        readOnly: eT,
-        spellCheck: ei,
-        autoFocus: !es,
+        readOnly: eA,
+        spellCheck: ea,
+        autoFocus: !el,
         canFocus: !Z,
-        onChange: ek,
+        onChange: eU,
         onFocus: z,
         onBlur: q,
-        onClick: eM,
-        onPaste: eL,
-        onKeyDown: eD,
-        onKeyUp: ex,
-        decorate: eU,
-        renderExtraElement: eG,
-        renderExtraLeaf: eZ,
-        "aria-owns": ef,
-        "aria-haspopup": e_,
-        "aria-expanded": ep,
-        "aria-activedescendant": em,
-        "aria-controls": eh,
-        "aria-labelledby": eb,
-        "aria-describedby": eE,
-        "aria-invalid": eg,
-        "aria-autocomplete": ey,
+        onClick: ek,
+        onPaste: ej,
+        onKeyDown: ex,
+        onKeyUp: eL,
+        decorate: eG,
+        renderExtraElement: eZ,
+        renderExtraLeaf: eB,
+        "aria-owns": ep,
+        "aria-haspopup": em,
+        "aria-expanded": e_,
+        "aria-activedescendant": eh,
+        "aria-controls": eg,
+        "aria-labelledby": ey,
+        "aria-describedby": eb,
+        "aria-invalid": eE,
+        "aria-autocomplete": eO,
         "aria-required": V
       })
     })]

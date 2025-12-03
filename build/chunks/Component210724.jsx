@@ -21,11 +21,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk823289 = require("./823289.js"),
   Chunk616022 = require("./616022.js"),
   Chunk49436 = require("./49436.js"),
-  Chunk509212 = require("./509212.js"),
   Chunk685138 = require("./685138.js"),
   Chunk787695 = require("./787695.js"),
   Chunk535584 = require("./535584.js"),
   Chunk968843 = require("./968843.js"),
+  Chunk254579 = require("./254579.js"),
   Chunk455357 = require("./455357.jsx"),
   Chunk602667 = require("./602667.jsx"),
   Chunk659302 = require("./659302.jsx"),
@@ -47,7 +47,7 @@ function V(e) {
     isExpanded: t,
     questId: n
   } = e;
-  return (0, E.qI)({
+  return (0, y.qI)({
     mode: t ? D.NH.EXPANDED : D.NH.COLLAPSED,
     questContent: b.jn.QUEST_BAR_V2,
     questId: n,
@@ -65,21 +65,21 @@ function Z(e) {
   var t, n;
   let {
     quest: o
-  } = e, m = (0, y.T)({
+  } = e, m = (0, C.T)({
     quest: o,
     location: D.dr.QUESTS_BAR
-  }), Z = (0, C.Z)({
+  }), Z = (0, v.Z)({
     location: D.dr.QUESTS_BAR
   }), W = (0, c.e7)([_.Z], () => null != _.Z.questEnrollmentBlockedUntil), {
-    isQuestBarVisible: U,
-    reason: H
+    isQuestBarVisible: H,
+    reason: U
   } = (0, T.qN)({
     quest: o,
     location: D.dr.QUESTS_BAR
-  }), F = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), G = s.useRef(null), K = s.useMemo(() => (0, j.q8)(o), [o]), X = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, Y = (0, u.Z)(X), J = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
+  }), F = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), G = s.useRef(null), K = s.useMemo(() => (0, E.q8)(o), [o]), X = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, Y = (0, u.Z)(X), J = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
     hasError: $,
     isLoading: ee
-  } = (0, O.kC)(), et = s.useContext(k.T) || Z && U && !ee && !W, en = s.useRef(et), er = s.useRef(false), es = s.useRef(false), [eo, ea] = s.useState(false), [ei, el] = s.useState(false), [ec, ed] = s.useState(false), [eu, ep] = s.useState(true), [em, eg] = s.useState(true), ef = s.useRef(null), eh = s.useRef(null), ex = s.useRef(null), e_ = (0, E.Rf)(o), eb = s.useCallback(e => {
+  } = (0, O.kC)(), et = s.useContext(k.T) || Z && H && !ee && !W, en = s.useRef(et), er = s.useRef(false), es = s.useRef(false), [eo, ea] = s.useState(false), [ei, el] = s.useState(false), [ec, ed] = s.useState(false), [eu, ep] = s.useState(true), [em, eg] = s.useState(true), ef = s.useRef(null), eh = s.useRef(null), ex = s.useRef(null), e_ = (0, y.Rf)(o), eb = s.useCallback(e => {
     J || (ep(false), ed(e))
   }, [J]), ej = s.useCallback(() => {
     eb(true)
@@ -227,19 +227,19 @@ function Z(e) {
         properties: {
           content_id: b.jn.QUEST_BAR,
           content_name: (0, h._b)(b.jn.QUEST_BAR),
-          reason: H,
+          reason: U,
           impression_id: null == (e = G.current) ? true : e.getId()
         },
         sourceQuestContent: b.jn.QUEST_BAR_V2
       })
     }
-  }, [et, em, ee, o.id, H]), s.useEffect(() => {
-    (!U || W) && x.Z.clearTracking(), et && em && !ee && !$ && Z && x.Z.stopTracking(o.id)
-  }, [U, W, et, em, ee, $, Z, o.id]);
+  }, [et, em, ee, o.id, U]), s.useEffect(() => {
+    (!H || W) && x.Z.clearTracking(), et && em && !ee && !$ && Z && x.Z.stopTracking(o.id)
+  }, [H, W, et, em, ee, $, Z, o.id]);
   let {
     enabled: eI,
     status: eD
-  } = (0, v.n)({
+  } = (0, j.n)({
     location: D.dr.QUESTS_BAR,
     questConfig: o.config
   }), eq = (null == eD ? true : eD.progressBlur) && !X ? 88 : 70;
