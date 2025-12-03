@@ -2,15 +2,15 @@
 /** chunk id: 69626, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Wf: () => P,
-  ZP: () => w,
-  wz: () => R
+  Wf: () => T,
+  ZP: () => C,
+  wz: () => A
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk248514 = require("./248514.jsx"),
   Chunk28664 = require("./28664.jsx"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk555573 = require("./555573.js"),
   Chunk10718 = require("./10718.js"),
@@ -28,57 +28,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk761652 = require("./761652.js"),
   Chunk388032 = require("./388032.jsx");
 
-function I(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function T(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      I(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function A(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function N(e, t, n, i, a) {
+function I(e, t, n, r, i) {
   if (null == e) return;
-  let o = () => {
-    let r = m.Z.getChannel(e);
-    if (null == r) return;
+  let a = () => {
+    let a = m.Z.getChannel(e);
+    if (null == a) return;
     let {
       command: o,
       application: s
     } = u.Xq({
-      channel: r,
+      channel: a,
       type: "channel"
-    }, n, a);
+    }, n, i);
     if (null != o && o.untranslatedName === t) {
       var l, f;
       b.S.dispatch(y.CkL.FOCUS_CHANNEL_TEXT_AREA, {
@@ -99,30 +60,24 @@ function N(e, t, n, i, a) {
         channelId: e,
         command: o,
         section: t,
-        location: i
+        location: r
       })
     }
   };
-  "" !== h.Z.getDraft(e, h.d.ChannelMessage) ? (0, l.h7j)(t => (0, r.jsx)(l.ConfirmModal, C(T({
-    header: S.intl.string(S.t.pe26Cj),
+  "" !== h.Z.getDraft(e, h.d.ChannelMessage) ? (0, o.Z)({
+    title: S.intl.string(S.t.pe26Cj),
+    subtitle: S.intl.string(S.t["+awCIy"]),
     confirmText: S.intl.string(S.t.VkKicb),
-    cancelText: S.intl.string(S.t["ETE/oC"]),
-    onConfirm: () => o(),
-    confirmButtonColor: s.zx.Colors.BRAND,
+    onConfirm: () => a(),
     onCloseCallback: () => {
       b.S.dispatch(y.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       })
     }
-  }, t), {
-    children: (0, r.jsx)(l.Text, {
-      variant: "text-md/normal",
-      children: S.intl.string(S.t["+awCIy"])
-    })
-  }))) : o()
+  }) : a()
 }
 
-function P(e) {
+function T(e) {
   var t;
   let {
     node: n,
@@ -144,35 +99,35 @@ function P(e) {
     type: "contextless"
   }, {
     command: S
-  } = u.YZ(b, null != (t = n.commandKey) ? t : ""), I = _.dN.useSetting(), T = i.useMemo(() => {
-    if (null == S || null == l || S.untranslatedName !== n.commandName || I) returnfalse;
+  } = u.YZ(b, null != (t = n.commandKey) ? t : ""), T = _.dN.useSetting(), A = i.useMemo(() => {
+    if (null == S || null == l || S.untranslatedName !== n.commandName || T) returnfalse;
     let e = l.isPrivate();
     if ((0, p.xl)(l) || !e && !c) returnfalse;
     let t = (null == S ? true : S.applicationId) === O.bi.BUILT_IN;
     return !!e || !!t || !!h
-  }, [l, S, c, h, n.commandName, I]), A = i.useCallback(e => {
-    null == e || e.stopPropagation(), null != l && null != n.commandName && null != n.commandKey && N(l.id, n.commandName, n.commandKey, d.Vh.MENTION)
+  }, [l, S, c, h, n.commandName, T]), C = i.useCallback(e => {
+    null == e || e.stopPropagation(), null != l && null != n.commandName && null != n.commandKey && I(l.id, n.commandName, n.commandKey, d.Vh.MENTION)
   }, [l, n.commandKey, n.commandName]);
-  return T ? (0, r.jsxs)(f.Z, {
+  return A ? (0, r.jsxs)(f.Z, {
     role: "link",
-    onClick: A,
+    onClick: C,
     children: [v.GI, s]
   }, o) : (0, r.jsxs)("span", {
     children: [v.GI, s]
   })
 }
 
-function R(e) {
+function A(e) {
   let {
     commandId: t,
     commandName: n,
     commandDescription: i,
-    applicationId: s,
+    applicationId: o,
     onClick: c
   } = e, u = (0, a.e7)([E.Z], () => E.Z.getChannelId()), f = e => {
-    null == e || e.stopPropagation(), N(u, n, t, d.Vh.POPULAR_COMMANDS, s), null == c || c(t)
+    null == e || e.stopPropagation(), I(u, n, t, d.Vh.POPULAR_COMMANDS, o), null == c || c(t)
   };
-  return (0, r.jsx)(o.u, {
+  return (0, r.jsx)(s.u, {
     text: i,
     position: "top",
     children: (0, r.jsx)(l.Button, {
@@ -184,9 +139,9 @@ function R(e) {
   })
 }
 
-function w(e) {
+function C(e) {
   return {
-    react: (e, t, n) => (0, r.jsx)(P, {
+    react: (e, t, n) => (0, r.jsx)(T, {
       node: e,
       stateKey: n.key,
       children: t(e.content, n)

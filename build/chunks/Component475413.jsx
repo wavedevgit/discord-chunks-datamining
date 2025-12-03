@@ -82,7 +82,7 @@ var E = function(e) {
 let b = e => {
     var {
       action: t,
-      color: n = s.Button.Colors.PRIMARY,
+      color: n = s.zx.Colors.PRIMARY,
       themeColor: i = "primary",
       className: a,
       innerClassName: l,
@@ -96,13 +96,13 @@ let b = e => {
         action: t
       }), null == d || d(e)
     };
-    return (0, r.jsx)(s.Button, _(f({
+    return (0, r.jsx)(s.zx, _(f({
       buttonRef: p,
       className: o()(u.button, a),
       innerClassName: o()(u.buttonInner, l),
       color: o()(n, g[i]),
-      look: s.Button.Looks.FILLED,
-      size: s.Button.Sizes.SMALL,
+      look: s.zx.Looks.FILLED,
+      size: s.zx.Sizes.SMALL,
       onClick: b
     }, h), {
       "data-migration-pending": true
@@ -135,8 +135,8 @@ let b = e => {
         buttonRef: t,
         className: o()(u.icon, E),
         innerClassName: o()(u.icon, y),
-        look: s.Button.Looks.FILLED,
-        size: s.Button.Sizes.NONE,
+        look: s.zx.Looks.FILLED,
+        size: s.zx.Sizes.NONE,
         grow: false,
         "aria-label": "string" == typeof i && null == g ? i : g
       }, v), {

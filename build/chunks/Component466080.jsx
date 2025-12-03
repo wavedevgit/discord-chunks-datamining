@@ -1,71 +1,55 @@
 /** Chunk was on 24874 **/
-/** chunk id: 466080, original params: e,t,r (module,exports,require) **/
+/** chunk id: 466080, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => l
+  default: () => c
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx");
 
-function l(e) {
-  var t, r, {
-      onConfirm: l,
-      onBack: a
-    } = e,
-    u = function(e, t) {
-      if (null == e) return {};
-      var r, n, o = function(e, t) {
-        if (null == e) return {};
-        var r, n, o = {},
-          c = Object.keys(e);
-        for (n = 0; n < c.length; n++) r = c[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
-        return o
-      }(e, t);
-      if (Object.getOwnPropertySymbols) {
-        var c = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
-      }
+function c(t) {
+  var {
+    onConfirm: e,
+    onBack: n
+  } = t, c = function(t, e) {
+    if (null == t) return {};
+    var n, r, o = function(t, e) {
+      if (null == t) return {};
+      var n, r, o = {},
+        i = Object.keys(t);
+      for (r = 0; r < i.length; r++) n = i[r], e.indexOf(n) >= 0 || (o[n] = t[n]);
       return o
-    }(e, ["onConfirm", "onBack"]);
-  return (0, n.jsx)(c.ConfirmModal, (t = function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), n.forEach(function(t) {
-        var n;
-        n = r[t], t in e ? Object.defineProperty(e, t, {
-          value: n,
+    }(t, e);
+    if (Object.getOwnPropertySymbols) {
+      var i = Object.getOwnPropertySymbols(t);
+      for (r = 0; r < i.length; r++) n = i[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (o[n] = t[n])
+    }
+    return o
+  }(t, ["onConfirm", "onBack"]);
+  return (0, r.jsx)(o.ConfirmModal, function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var n = null != arguments[e] ? arguments[e] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+        return Object.getOwnPropertyDescriptor(n, t).enumerable
+      }))), r.forEach(function(e) {
+        var r;
+        r = n[e], e in t ? Object.defineProperty(t, e, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = n
+        }) : t[e] = r
       })
     }
-    return e
+    return t
   }({
-    header: i.intl.string(i.t.YrV3I9),
+    title: i.intl.string(i.t.YrV3I9),
+    subtitle: i.intl.string(i.t.MXSMtl),
     confirmText: i.intl.string(i.t.X7eUJq),
     cancelText: i.intl.string(i.t["13/7kX"]),
-    confirmButtonColor: o.zx.Colors.BRAND,
-    onConfirm: l,
-    onCancel: a
-  }, u), r = r = {
-    children: (0, n.jsx)(c.Text, {
-      variant: "text-md/medium",
-      children: i.intl.string(i.t.MXSMtl)
-    })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-    var r = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
-    }
-    return r
-  })(Object(r)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-  }), t))
+    onConfirm: e,
+    onCancel: n
+  }, c))
 }

@@ -1,10 +1,11 @@
 /** Chunk was on 91053 **/
 /** chunk id: 643560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk248514 = require("./248514.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk299206 = require("./299206.jsx"),
@@ -13,112 +14,104 @@ var Chunk54381 = require("./54381.js"),
   Chunk683818 = require("./683818.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
-    })
-  }
-  return e
-}
-
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function f(e) {
+function h(e) {
   let {
     entry: t,
-    onSelect: f,
-    closePopout: g,
-    hideEditButton: m = false
+    onSelect: h,
+    closePopout: f,
+    hideEditButton: g = false
   } = e, {
-    isEntryAdmin: b,
-    canEdit: _,
-    canRemove: y
-  } = (0, d.Z)(t), O = (0, s.Z)({
+    isEntryAdmin: m,
+    canEdit: b,
+    canRemove: _
+  } = (0, u.Z)(t), y = (0, o.Z)({
     id: t.guildId,
-    label: u.intl.string(u.t["94lLD7"]),
-    onSuccess: g
+    label: p.intl.string(p.t["94lLD7"]),
+    onSuccess: f
   });
   i.useEffect(() => {
-    _ || y || null != O || (0, a.Zy)()
+    b || _ || null != y || (0, s.Zy)()
   });
-  let j = () => {
-    c.kx(t.channelId, t.guildId)
+  let O = () => {
+    d.kx(t.channelId, t.guildId)
   };
 
-  function x() {
-    (0, a.Zy)(), null == g || g()
+  function j() {
+    (0, s.Zy)(), null == f || f()
   }
-  return (0, r.jsxs)(l.v2r, {
+  return (0, r.jsxs)(a.v2r, {
     navId: "guild-entry-context",
-    onClose: x,
-    "aria-label": u.intl.string(u.t.HpQykc),
-    onSelect: f,
-    children: [(0, r.jsxs)(l.kSQ, {
-      children: [_ && !m ? (0, r.jsx)(l.sNh, {
+    onClose: j,
+    "aria-label": p.intl.string(p.t.HpQykc),
+    onSelect: h,
+    children: [(0, r.jsxs)(a.kSQ, {
+      children: [b && !g ? (0, r.jsx)(a.sNh, {
         id: "update-entry",
-        label: u.intl.string(u.t.XnuOvN),
+        label: p.intl.string(p.t.XnuOvN),
         action: function() {
-          (0, l.ZDy)(async () => {
+          (0, a.ZDy)(async () => {
             let {
               default: e
             } = await n.e("34191").then(n.bind(n, 303647));
-            return n => (0, r.jsx)(e, h(p({}, n), {
-              entry: t
-            }))
-          }), x()
+            return n => {
+              var i, l;
+              return (0, r.jsx)(e, (i = function(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                  var n = null != arguments[t] ? arguments[t] : {},
+                    r = Object.keys(n);
+                  "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(n, e).enumerable
+                  }))), r.forEach(function(t) {
+                    var r;
+                    r = n[t], t in e ? Object.defineProperty(e, t, {
+                      value: r,
+                      enumerable: true,
+                      configurable: true,
+                      writable: true
+                    }) : e[t] = r
+                  })
+                }
+                return e
+              }({}, n), l = l = {
+                entry: t
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+                var n = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                  var r = Object.getOwnPropertySymbols(e);
+                  n.push.apply(n, r)
+                }
+                return n
+              })(Object(l)).forEach(function(e) {
+                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+              }), i))
+            }
+          }), j()
         }
-      }) : null, y ? (0, r.jsx)(l.sNh, {
+      }) : null, _ ? (0, r.jsx)(a.sNh, {
         id: "remove-from-hub",
-        label: u.intl.string(u.t.KUxYWH),
+        label: p.intl.string(p.t.KUxYWH),
         action: function() {
-          (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, h(p({
-            header: u.intl.string(u.t.KUxYWH),
-            confirmText: u.intl.string(u.t.N86XcP),
-            cancelText: u.intl.string(u.t["ETE/oC"]),
-            onConfirm: j
-          }, e), {
-            children: (0, r.jsx)(l.Text, {
-              variant: "text-md/normal",
-              children: u.intl.format(u.t["/5y0uV"], {
-                guildName: t.name
-              })
-            })
-          }))), x()
+          (0, l.Z)({
+            title: p.intl.string(p.t.KUxYWH),
+            subtitle: p.intl.format(p.t["/5y0uV"], {
+              guildName: t.name
+            }),
+            confirmText: p.intl.string(p.t.N86XcP),
+            onConfirm: O
+          }), j()
         },
         color: "danger"
-      }) : null, b ? null : (0, r.jsx)(l.sNh, {
+      }) : null, m ? null : (0, r.jsx)(a.sNh, {
         id: "report-server-listing",
-        label: u.intl.string(u.t.Aen9eh),
+        label: p.intl.string(p.t.Aen9eh),
         action: function() {
-          null != t && ((0, o.sq)(t), x())
+          null != t && ((0, c.sq)(t), j())
         },
-        icon: l.U65,
+        icon: a.U65,
         color: "danger"
       })]
-    }), (0, r.jsx)(l.kSQ, {
-      children: O
+    }), (0, r.jsx)(a.kSQ, {
+      children: y
     })]
   })
 }

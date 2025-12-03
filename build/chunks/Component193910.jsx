@@ -72,8 +72,8 @@ function L(e) {
     setValue: V,
     openClips: F
   } = e, {
-    analyticsLocations: B,
-    newestAnalyticsLocation: H
+    analyticsLocations: H,
+    newestAnalyticsLocation: B
   } = (0, d.ZP)(), G = (0, y.Dt)({
     channel: t
   }), z = (0, l.e7)([v.Z], () => v.Z.isInProgress());
@@ -147,7 +147,7 @@ function L(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: H
+      analyticsLocation: B
     }), (0, u.w1)({
       guildId: t.guild_id
     })
@@ -228,7 +228,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.JOIN,
                 activity: n,
-                location: B[B.length - 1]
+                location: H[H.length - 1]
               })
             }
           }, "play");
@@ -242,7 +242,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.LISTEN,
                 activity: n,
-                location: B[B.length - 1]
+                location: H[H.length - 1]
               })
             }
           }, "listen");
@@ -256,7 +256,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.WATCH,
                 activity: n,
-                location: B[B.length - 1]
+                location: H[H.length - 1]
               })
             }
           }, "watch");

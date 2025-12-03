@@ -1,7 +1,7 @@
 /** Chunk was on 86736 **/
 /** chunk id: 335049, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk243226 = require("./243226.js");
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -47,7 +47,7 @@ function P(e) {
   return e
 }
 
-function w(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function w(e, t) {
   }), e
 }
 
-function E(e) {
+function w(e) {
   let {
     guild: t,
     id: l,
@@ -74,7 +74,7 @@ function E(e) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, i.jsx)(e, w(P({}, t), {
+      return t => (0, i.jsx)(e, E(I({}, t), {
         id: l,
         label: N.intl.string(N.t.oJ1Muw)
       }))
@@ -82,7 +82,7 @@ function E(e) {
   }, [l]);
   switch (a) {
     case m.Kw.CHANNEL:
-      return (0, i.jsx)(I, {
+      return (0, i.jsx)(P, {
         guild: t,
         id: l,
         isLocked: o,
@@ -108,7 +108,7 @@ function E(e) {
   }
 }
 
-function I(e) {
+function P(e) {
   let {
     guild: t,
     id: n,
@@ -165,7 +165,7 @@ function T(e) {
     id: o,
     isLocked: s,
     lockTooltipText: d
-  } = e, m = (0, c.e7)([O.Z], () => O.Z.getRole(l.id, o)), b = (0, f.p9)({
+  } = e, m = (0, c.e7)([v.Z], () => v.Z.getRole(l.id, o)), b = (0, f.p9)({
     guildId: l.id,
     roleId: o,
     size: 24
@@ -174,7 +174,7 @@ function T(e) {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, i.jsx)(e, w(P({}, t), {
+      return t => (0, i.jsx)(e, E(I({}, t), {
         guild: l,
         role: m
       }))
@@ -183,7 +183,7 @@ function T(e) {
   return (null == m ? true : m.name) == null ? null : (0, i.jsxs)("div", {
     onContextMenu: g,
     className: S.identifier,
-    children: [null != b ? (0, i.jsx)(h.Z, P({
+    children: [null != b ? (0, i.jsx)(h.Z, I({
       className: a()(S.__invalid_icon, S.image)
     }, b)) : (0, i.jsx)(u.lZ8, {
       size: "custom",
@@ -212,7 +212,7 @@ function Z(e) {
   } = e, o = (0, c.e7)([y.default], () => y.default.getUser(n)), s = (0, c.e7)([j.ZP], () => {
     var e;
     return null == (e = j.ZP.getMember(t.id, n)) ? true : e.nick
-  }, [t.id, n]), d = (0, c.e7)([v.Z], () => v.Z.hidePersonalInformation);
+  }, [t.id, n]), d = (0, c.e7)([O.Z], () => O.Z.hidePersonalInformation);
   return null == o ? null : (0, i.jsxs)("div", {
     onContextMenu: a,
     className: S.identifier,

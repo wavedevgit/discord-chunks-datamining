@@ -1,7 +1,7 @@
 /** Chunk was on 73628 **/
 /** chunk id: 513669, original params: e,t,A (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -57,7 +57,7 @@ let p = "custom-image",
     } = e, p = l === A, m = (0, o.jm)({
       isSelected: p,
       label: d
-    }), h = a ? true : () => {
+    }), v = a ? true : () => {
       r(u, l)
     };
     return (0, n.jsx)(s.P3F, f(g({
@@ -66,7 +66,7 @@ let p = "custom-image",
         [c.selected]: p,
         [c.disabled]: a
       }),
-      onClick: h,
+      onClick: v,
       "aria-disabled": a
     }, m), {
       children: (0, n.jsx)("img", {
@@ -77,20 +77,20 @@ let p = "custom-image",
     }))
   });
 
-function h(e) {
+function v(e) {
   let {
     presetImages: t,
     image: A,
     imageName: a,
-    savedImageName: h,
-    onChange: v,
+    savedImageName: v,
+    onChange: h,
     uploadButtonLabel: q = u.intl.string(u.t["MsUY/S"]),
     radioGroupAriaLabel: b = u.intl.string(u.t["0Q0UJq"]),
     disabled: C = false
   } = e, U = a === p, [j, V] = r.useState(U ? A : null), [x, O] = r.useState(null), P = r.useRef(null), F = r.useRef(null);
   r.useEffect(() => {
-    h !== p && (V(null), O(null))
-  }, [h]);
+    v !== p && (V(null), O(null))
+  }, [v]);
   let y = null != x ? u.intl.formatToPlainString(u.t["Kw+5YX"], {
       filename: x
     }) : u.intl.string(u.t.SNPvSv),
@@ -144,7 +144,7 @@ function h(e) {
           ref: P,
           tabIndex: 0,
           onChange: (e, t) => {
-            null != t && (O(t.name), V(e), v(e, p))
+            null != t && (O(t.name), V(e), h(e, p))
           },
           "aria-label": q
         })]
@@ -175,7 +175,7 @@ function h(e) {
         children: (0, n.jsx)(s.P3F, {
           className: c.customImageAction,
           onClick: () => {
-            a === p && v(t[0].data, t[0].name), V(null), O(null)
+            a === p && h(t[0].data, t[0].name), V(null), O(null)
           },
           "aria-label": u.intl.formatToPlainString(u.t.Z43V9S, {
             filename: x
@@ -195,14 +195,14 @@ function h(e) {
       children: [null != j && (0, n.jsx)(m, {
         ref: F,
         selectedImageName: a,
-        onChange: v,
+        onChange: h,
         disabled: C,
         name: p,
         alt: y,
         data: j
       }), t.map(e => (0, n.jsx)(m, g({
         selectedImageName: a,
-        onChange: v,
+        onChange: h,
         disabled: C
       }, e), e.name))]
     }))]

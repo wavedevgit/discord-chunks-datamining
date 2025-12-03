@@ -67,8 +67,8 @@ function U(n) {
   let {
     channel: t,
     guild: e,
-    onSelect: c
-  } = n, s = t.isGuildStageVoice(), d = (0, l.e7)([C.Z], () => s ? C.Z.getStageInstanceByChannel(t.id) : true, [s, t.id]), Z = (0, y.Z)(t), j = (0, b.qY)(t.id), S = (0, x.Z)(null == j ? true : j.id, e, t), N = (0, A.Z)(t, d), P = (0, h.l)(t), O = (0, h.P)(t), m = (0, g.Z)(t), _ = (0, f.Z)(t), G = (0, v.Z)(t), w = (0, E.Z)(t), M = (0, L.Z)(t), q = (0, k.Z)(t), D = (0, I.Z)(t, e), U = (0, u.Z)({
+    onSelect: s
+  } = n, c = t.isGuildStageVoice(), d = (0, l.e7)([C.Z], () => c ? C.Z.getStageInstanceByChannel(t.id) : true, [c, t.id]), Z = (0, y.Z)(t), j = (0, b.qY)(t.id), S = (0, x.Z)(null == j ? true : j.id, e, t), N = (0, A.Z)(t, d), P = (0, h.l)(t), O = (0, h.P)(t), m = (0, g.Z)(t), _ = (0, f.Z)(t), G = (0, v.Z)(t), w = (0, E.Z)(t), M = (0, L.Z)(t), q = (0, k.Z)(t), D = (0, I.Z)(t, e), U = (0, u.Z)({
     id: t.id,
     label: X.intl.string(X.t.gFHI3k)
   }), H = (0, V.Z)(t), Y = (0, o.Z)(t), z = (0, p.Mn)("ChannelListVoiceContextMenuFavorite"), R = (0, Q.ZP)(t), W = (0, T.Z)();
@@ -76,7 +76,7 @@ function U(n) {
     navId: "channel-context",
     onClose: a.Zy,
     "aria-label": X.intl.string(X.t.Xm41aV),
-    onSelect: c,
+    onSelect: s,
     children: [(0, i.jsx)(r.kSQ, {
       children: null != j ? S : N
     }), (0, i.jsxs)(r.kSQ, {
@@ -101,16 +101,16 @@ function H(n) {
   let {
     channel: t,
     guild: e,
-    onSelect: c
-  } = n, s = t.isGuildStageVoice(), d = (0, l.e7)([C.Z], () => s ? C.Z.getStageInstanceByChannel(t.id) : true, [s, t.id]), Z = (0, m.Z)(t), g = (0, y.Z)(t), f = (0, b.qY)(t.id), v = (0, x.Z)(null == f ? true : f.id, e, t), q = (0, A.Z)(t, d), D = (0, h.l)(t), U = (0, h.P)(t), H = (0, E.Z)(t), Y = (0, L.Z)(t), z = (0, k.Z)(t), R = (0, O.Z)(t, e, d), W = (0, I.Z)(t, e), B = (0, w.Z)(t, e), F = (0, M.Z)(t, e.id), J = (0, S.Z)(t, e), K = (0, N.Z)(t, e), $ = (0, P.Z)(t), nn = (0, u.Z)({
+    onSelect: s
+  } = n, c = t.isGuildStageVoice(), d = (0, l.e7)([C.Z], () => c ? C.Z.getStageInstanceByChannel(t.id) : true, [c, t.id]), Z = (0, m.Z)(t), g = (0, y.Z)(t), f = (0, b.qY)(t.id), v = (0, x.Z)(null == f ? true : f.id, e, t), q = (0, A.Z)(t, d), D = (0, h.l)(t), U = (0, h.P)(t), H = (0, E.Z)(t), Y = (0, L.Z)(t), z = (0, k.Z)(t), R = (0, O.Z)(t, e, d), W = (0, I.Z)(t, e), B = (0, w.Z)(t, e), F = (0, M.Z)(t, e.id), J = (0, S.Z)(t, e), K = (0, N.Z)(t, e), $ = (0, P.Z)(t), nn = (0, u.Z)({
     id: t.id,
     label: X.intl.string(X.t.gFHI3k)
-  }), nt = (0, V.Z)(t), ne = (0, o.Z)(t), ni = (0, G.Z)(t), nl = (0, j.Z)(t), nr = (0, _.ZP)(t), na = (0, p.Mn)("ChannelListVoiceContextMenuNormal"), nc = (0, Q.ZP)(t), ns = (0, T.Z)();
+  }), nt = (0, V.Z)(t), ne = (0, o.Z)(t), ni = (0, G.Z)(t), nl = (0, j.Z)(t), nr = (0, _.ZP)(t), na = (0, p.Mn)("ChannelListVoiceContextMenuNormal"), ns = (0, Q.ZP)(t), nc = (0, T.Z)();
   return (0, i.jsxs)(r.v2r, {
     navId: "channel-context",
     onClose: a.Zy,
     "aria-label": X.intl.string(X.t.Xm41aV),
-    onSelect: c,
+    onSelect: s,
     children: [(0, i.jsx)(r.kSQ, {
       children: null != f ? v : q
     }), (0, i.jsxs)(r.kSQ, {
@@ -120,13 +120,13 @@ function H(n) {
     }, "channel-actions"), (0, i.jsxs)(r.kSQ, {
       children: [F, W, B, H, nl, nt]
     }, "voice-actions"), (0, i.jsxs)(r.kSQ, {
-      children: [nr, na ? nc : Y]
+      children: [nr, na ? ns : Y]
     }, "notifications"), (0, i.jsx)(r.kSQ, {
       children: U
     }), (0, i.jsxs)(r.kSQ, {
       children: [z, J, K, $]
     }, "admin-actions"), (0, i.jsxs)(r.kSQ, {
-      children: [nn, ns]
+      children: [nn, nc]
     }, "developer-actions")]
   })
 }

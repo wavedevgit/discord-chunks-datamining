@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 473121, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => c
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,11 +10,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk273744 = require("./273744.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk204800 = require("./204800.js");
-let d = e => {
+let c = e => {
   var t, n;
   let {
     node: {
-      header: d,
+      header: c,
       subheader: u,
       button: m
     },
@@ -49,12 +49,12 @@ let d = e => {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t)));
   return (0, r.jsxs)("div", {
-    className: c.headerContainer,
-    children: [null != d && "" !== d ? (0, r.jsx)(l.Heading, {
+    className: d.headerContainer,
+    children: [null != c && "" !== c ? (0, r.jsx)(l.Heading, {
       variant: "heading-xl/semibold",
       color: "header-primary",
-      children: d
-    }) : null, null != u && "" !== d ? (0, r.jsx)(l.Text, {
+      children: c
+    }) : null, null != u && "" !== c ? (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
       children: _.current(u)

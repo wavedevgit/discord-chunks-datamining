@@ -1,39 +1,36 @@
 /** Chunk was on 64271 **/
 /** chunk id: 901492, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => c
+  default: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+var Chunk793030 = require("./793030.js"),
   Chunk933557 = require("./933557.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk791603 = require("./791603.js");
+  Chunk388032 = require("./388032.jsx");
 
-function c(e) {
-  var t, n, {
-      channel: c,
-      category: u
-    } = e,
-    d = function(e, t) {
+function a(e) {
+  var {
+    channel: t,
+    category: n
+  } = e, a = function(e, t) {
+    if (null == e) return {};
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, r, i = function(e, t) {
-        if (null == e) return {};
-        var n, r, i = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
-      }(e, t);
-      if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-      }
+      var n, r, i = {},
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
-    }(e, ["channel", "category"]);
-  let f = (0, o.ZP)(c, true),
-    h = (0, o.ZP)(u);
-  return (0, r.jsx)(l.ConfirmModal, (t = function(e) {
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    }
+    return i
+  }(e, ["channel", "category"]);
+  let s = (0, l.ZP)(t, true),
+    c = (0, l.ZP)(n);
+  return (0, r.jsx)(i.ConfirmModal, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -51,28 +48,11 @@ function c(e) {
     }
     return e
   }({
-    header: a.intl.string(a.t.YWMtRe),
-    confirmText: a.intl.string(a.t.eW8Gy4),
-    cancelText: a.intl.string(a.t.s4uM3b),
-    confirmButtonColor: i.zx.Colors.BRAND
-  }, d), n = n = {
-    children: (0, r.jsx)(l.Text, {
-      variant: "text-md/normal",
-      className: s.message,
-      selectable: false,
-      children: a.intl.format(a.t["iKW+jY"], {
-        channelName: f,
-        categoryName: h
-      })
-    })
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(n)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-  }), t))
+    title: o.intl.string(o.t.YWMtRe),
+    subtitle: o.intl.format(o.t["iKW+jY"], {
+      channelName: s,
+      categoryName: c
+    }),
+    confirmText: o.intl.string(o.t.eW8Gy4)
+  }, a))
 }

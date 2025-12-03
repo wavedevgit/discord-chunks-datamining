@@ -83,15 +83,15 @@ function _() {
     refreshEntitlementList: C,
     grantFractionalPremium: S,
     deleteFractionalPremium: E,
-    triggerNextEntitlementFulfillment: T,
-    entitlements: N,
+    triggerNextEntitlementFulfillment: N,
+    entitlements: T,
     loading: O
   } = (0, Chunk232867.m)();
   return Chunk473749.useEffect(() => {
     C()
   }, [C]), Chunk473749.useEffect(() => {
-    b(N.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION)), y(N.filter(e => Object.values(s.a).includes(e.skuId) && null == e.startsAt))
-  }, [N]), (0, Chunk54381.jsx)(Chunk481060.zJl, {
+    b(T.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION)), y(T.filter(e => Object.values(s.a).includes(e.skuId) && null == e.startsAt))
+  }, [T]), (0, Chunk54381.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
     children: (0, Chunk54381.jsxs)("div", {
       className: Chunk711322.panelInner,
@@ -173,7 +173,7 @@ function _() {
               size: Chunk755721.zx.Sizes.TINY,
               color: Chunk755721.zx.Colors.PRIMARY,
               look: Chunk755721.zx.Looks.OUTLINED,
-              onClick: () => T(),
+              onClick: () => N(),
               children: "Run fulfillment"
             }), (0, Chunk54381.jsx)(Chunk755721.zx, {
               disabled: O,

@@ -21,11 +21,11 @@ function f(t) {
     f = (0, i.e7)([o.Z], () => o.Z.getTargetManifests(t.id, t.branchId), [t.branchId, t.id]);
   return n ? e ? null : (0, r.jsx)(l.sNh, {
     id: "uninstall",
-    label: d.intl.string(d.t.DwgfOM),
-    action: () => (0, a.W)(t.id, t.branchId, b.Sbl.APPLICATION_CONTEXT_MENU_TOGGLE_INSTALL)
+    label: b.intl.string(b.t.DwgfOM),
+    action: () => (0, a.W)(t.id, t.branchId, d.Sbl.APPLICATION_CONTEXT_MENU_TOGGLE_INSTALL)
   }) : null == f ? null : (0, r.jsx)(l.sNh, {
     id: "install",
-    label: d.intl.string(d.t["N+XVnt"]),
-    action: () => s.installApplication(t.id, t.branchId, b.Sbl.APPLICATION_CONTEXT_MENU_TOGGLE_INSTALL)
+    label: b.intl.string(b.t["N+XVnt"]),
+    action: () => s.installApplication(t.id, t.branchId, d.Sbl.APPLICATION_CONTEXT_MENU_TOGGLE_INSTALL)
   })
 }

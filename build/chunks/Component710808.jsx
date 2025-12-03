@@ -2,14 +2,15 @@
 /** chunk id: 710808, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W2: () => R,
-  ZP: () => j,
-  rT: () => x,
-  xI: () => L
+  W2: () => w,
+  ZP: () => M,
+  rT: () => L,
+  xI: () => j
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk248514 = require("./248514.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
@@ -31,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,20 +41,20 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
 }
 
-function N(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,43 +65,43 @@ function N(e, t) {
   return n
 }
 
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function R() {
+async function w() {
   let e = await Chunk579806.Z.fileManager.getLogPath();
   Chunk579806.Z.fileManager.showItemInFolder(module)
 }
 
-function w() {
+function D() {
   let e = Chunk388032.intl.string(Chunk388032.t["fKBB8+"]),
     t = Chunk388032.intl.string(Chunk388032.t.BvyxE7);
-  (0, Chunk481060.h7j)(n => (0, r.jsx)(s.ConfirmModal, P(C({
+  (0, Chunk481060.h7j)(n => (0, r.jsx)(l.ConfirmModal, R(N({
     header: e,
-    confirmButtonColor: o.zx.Colors.BRAND,
-    confirmText: I.intl.string(I.t.BddRzS)
+    confirmButtonColor: s.zx.Colors.BRAND,
+    confirmText: T.intl.string(T.t.BddRzS)
   }, n), {
-    children: (0, r.jsx)(s.Text, {
+    children: (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       children: t
     })
   })))
 }
 
-function D(e) {
+function x(e) {
   var t;
-  let n = I.intl.string(I.t.QZg0J7),
-    i = null != e ? e : I.intl.string(I.t.VzHcSm),
-    a = null == (t = (0, _.hp)(_.u.DEBUG_LOG_UPLOAD_FAILED)) ? true : t.errorCode,
-    l = I.intl.formatToPlainString(I.t.ejOT95, {
+  let n = T.intl.string(T.t.QZg0J7),
+    i = null != e ? e : T.intl.string(T.t.VzHcSm),
+    a = null == (t = (0, m.hp)(m.u.DEBUG_LOG_UPLOAD_FAILED)) ? true : t.errorCode,
+    o = T.intl.formatToPlainString(T.t.ejOT95, {
       errorCode: a
     });
-  (0, s.h7j)(e => (0, r.jsx)(s.ConfirmModal, P(C({
+  (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, R(N({
     header: n,
-    confirmButtonColor: o.zx.Colors.BRAND,
-    confirmText: I.intl.string(I.t.BddRzS)
+    confirmButtonColor: s.zx.Colors.BRAND,
+    confirmText: T.intl.string(T.t.BddRzS)
   }, e), {
     children: (0, r.jsxs)("div", {
       style: {
@@ -108,55 +109,49 @@ function D(e) {
         flexDirection: "column",
         height: "100%"
       },
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         children: i
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
         selectable: true,
         style: {
           marginTop: "auto"
         },
-        children: l
+        children: o
       })]
     })
   })))
 }
 
-function x(e) {
-  (0, s.h7j)(t => (0, r.jsx)(s.ConfirmModal, P(C({
-    header: I.intl.string(I.t["7UXEF2"]),
-    confirmText: I.intl.string(I.t.BddRzS),
-    cancelText: I.intl.string(I.t["ETE/oC"]),
-    onCancel: t.onClose,
-    onConfirm: () => l.Z.setDebugLogging(e)
-  }, t), {
-    children: (0, r.jsx)(s.Text, {
-      variant: "text-md/normal",
-      children: I.intl.string(I.t.IYPrRl)
-    })
-  })))
+function L(e) {
+  (0, o.Z)({
+    title: T.intl.string(T.t["7UXEF2"]),
+    subtitle: T.intl.string(T.t.IYPrRl),
+    confirmText: T.intl.string(T.t.BddRzS),
+    onConfirm: () => c.Z.setDebugLogging(e)
+  })
 }
-async function L(e) {
+async function j(e) {
   let {
     onUploadStart: t,
     onUploadFinish: n
   } = e;
   null == t || t();
   try {
-    await g.Z.getMediaEngine().writeAudioDebugState(), await b.Z.submitLiveCrashReport({
+    await E.Z.getMediaEngine().writeAudioDebugState(), await y.Z.submitLiveCrashReport({
       message: {
         message: "User Live Dump"
       }
-    }), await (0, p.E)(v.GU0.RTC), w()
+    }), await (0, _.E)(S.GU0.RTC), D()
   } catch (e) {
-    D(e.displayMessage)
+    x(e.displayMessage)
   } finally {
     null == n || n()
   }
 }
 
-function j() {
+function M() {
   let [e, t] = Chunk473749.useState(false), {
     debugLogging: n,
     aecDumpEnabled: o
@@ -165,8 +160,8 @@ function j() {
     debugLogging: Chunk131951.Z.getDebugLogging(),
     aecDumpEnabled: Chunk131951.Z.getAecDump(),
     supportsConnectionReplay: Chunk131951.Z.supports(Chunk65154.AN.CONNECTION_REPLAY)
-  })), d = (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.isStreamInfoOverlayEnabled), p = (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.shouldRecordNextConnection()), _ = Chunk473749.useCallback(async () => {
-    await L({
+  })), s = (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.isStreamInfoOverlayEnabled), f = (0, Chunk442837.e7)([Chunk226961.ZP], () => Chunk226961.ZP.shouldRecordNextConnection()), _ = Chunk473749.useCallback(async () => {
+    await j({
       onUploadStart: () => exports(true)
     })
   }, []);
@@ -176,9 +171,9 @@ function j() {
       children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t["0CEP6e"]),
         description: Chunk388032.intl.string(Chunk388032.t["kBXuW+"]),
-        checked: Chunk579806,
+        checked: Chunk755721,
         onChange: e => {
-          (0, y.Z)("stream_info_overlay_enabled", e, d), (0, c.y)({
+          (0, O.Z)("stream_info_overlay_enabled", e, s), (0, u.y)({
             isStreamInfoOverlayEnabled: e
           })
         }
@@ -188,16 +183,16 @@ function j() {
       children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t["r6K+TL"]),
         description: Chunk388032.intl.string(Chunk388032.t["xl9+I6"]),
-        checked: Chunk755721,
-        onChange: e => l.Z.setAecDump(e)
+        checked: Chunk248514,
+        onChange: e => c.Z.setAecDump(e)
       })
     }), (0, Chunk54381.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
       children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.U4FgFK),
         description: Chunk388032.intl.string(Chunk388032.t.Lm72RU),
-        checked: Chunk729345,
-        onChange: e => u.TC(e)
+        checked: Chunk579806,
+        onChange: e => d.TC(e)
       }), (0, Chunk54381.jsx)(Chunk600164.Z, {
         className: Chunk197571.marginBottom20,
         children: (0, Chunk54381.jsx)(Chunk600164.Z.Child, {
@@ -218,18 +213,18 @@ function j() {
           label: Chunk388032.intl.string(Chunk388032.t["726JHL"]),
           description: Chunk388032.intl.string(Chunk388032.t["/7ak9Q"]),
           checked: require,
-          onChange: x
+          onChange: L
         }), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
           size: "sm",
           children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: Chunk388032.intl.string(Chunk388032.t["3UB9ad"]),
             disabled: module,
-            onClick: Chunk458725
+            onClick: Chunk729345
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "secondary",
             text: Chunk388032.intl.string(Chunk388032.t.nuPtYi),
-            onClick: R
+            onClick: w
           })]
         })]
       })

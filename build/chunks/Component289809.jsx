@@ -18,7 +18,7 @@ function o(e) {
         is_localized: o
       }
     }
-  } = e, c = i.useRef(a.Z.reactParserFor(a.Z.defaultRules));
+  } = e, d = i.useRef(a.Z.reactParserFor(a.Z.defaultRules));
   return o && (null != t || null != n) ? (0, r.jsxs)("div", {
     className: s.container,
     children: [null != t && (0, r.jsx)(l.Heading, {
@@ -29,7 +29,7 @@ function o(e) {
     }), null != n && (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       className: s.bodyText,
-      children: c.current(n)
+      children: d.current(n)
     })]
   }) : null
 }

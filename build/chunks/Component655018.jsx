@@ -76,8 +76,8 @@ function V(e) {
   let {
     channel: V,
     setIsHangStatusInputFocused: F,
-    setIsEmojiPickerOpen: B,
-    setPopoutRef: H
+    setIsEmojiPickerOpen: H,
+    setPopoutRef: B
   } = e, G = r.useRef(null), z = (0, u.e7)([v.Z], () => v.Z.getCustomHangStatus()), W = (0, j.Z)(), q = (0, u.e7)([v.Z], () => v.Z.getFavoritedStatuses()), {
     defaultStatusVariant: K,
     allowPermanentClear: Y
@@ -96,8 +96,8 @@ function V(e) {
     var e;
     en || Q !== (null != (e = null == z ? true : z.status) ? e : "") && "" !== Q.trim() ? F(true) : F(false)
   }, [Q, null == z ? true : z.status, ee, null == z ? true : z.emoji, F, en]), r.useEffect(() => {
-    null == H || H(null == J ? true : J.current)
-  }, [J, H]);
+    null == B || B(null == J ? true : J.current)
+  }, [J, B]);
   let eg = r.useCallback(e => {
       e !== er && ((0, y.Zx)(e, true), null != ee && et(null), "" !== Q.trim() && $(""))
     }, [er, ee, Q]),
@@ -224,7 +224,7 @@ function V(e) {
                 setCustomStatusEmoji: et,
                 selectedDefaultStatus: en || eh ? null : er,
                 defaultStatusVariant: K,
-                setIsEmojiPickerOpen: B
+                setIsEmojiPickerOpen: H
               })
             },
             trailing: null == z && null == er || ec ? ec ? {

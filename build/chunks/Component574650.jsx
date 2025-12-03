@@ -2,7 +2,7 @@
 /** chunk id: 574650, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => I
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk828700 = require("./828700.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk248514 = require("./248514.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk430824 = require("./430824.js"),
   Chunk914010 = require("./914010.js"),
@@ -46,49 +46,27 @@ function S(e) {
   }
   return e
 }
-
-function I(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let A = () => {
+let I = () => {
   var e, t;
   let i = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []),
     v = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk120356), [Chunk120356]),
     I = (0, Chunk442837.e7)([Chunk937111.Z], () => null != Chunk120356 ? Chunk937111.Z.getRequest(Chunk120356) : null, [Chunk120356]),
-    A = (0, Chunk828700.TH)(),
-    C = (null == (e = (0, Chunk828700.LX)(A.pathname, Chunk981631.Z5c.CHANNEL(null == v ? true : v.id, Chunk176505.oC.GUILD_ONBOARDING))) ? true : module.isExact) === true;
-  if (null == v || !(0, Chunk983736.Dc)(v) || C) return null;
-  let N = () => {
+    T = (0, Chunk828700.TH)(),
+    A = (null == (e = (0, Chunk828700.LX)(T.pathname, Chunk981631.Z5c.CHANNEL(null == v ? true : v.id, Chunk176505.oC.GUILD_ONBOARDING))) ? true : module.isExact) === true;
+  if (null == v || !(0, Chunk983736.Dc)(v) || A) return null;
+  let C = () => {
       (0, Chunk305325.hk)(v.id)
     },
-    P = () => {
-      (0, Chunk481060.h7j)(e => (0, r.jsx)(c.ConfirmModal, T(S({
-        header: b.intl.string(b.t.aIz1oV),
-        confirmText: b.intl.string(b.t["cY+Oob"]),
-        cancelText: b.intl.string(b.t["ETE/oC"]),
-        onConfirm: () => f.Z.removeGuildJoinRequest(v.id),
-        confirmButtonColor: l.zx.Colors.BRAND
-      }, e), {
-        children: (0, r.jsx)(c.Text, {
-          variant: "text-md/normal",
-          children: b.intl.string(b.t["13tjTU"])
-        })
-      })))
+    N = () => {
+      (0, Chunk248514.Z)({
+        title: Chunk388032.intl.string(Chunk388032.t.aIz1oV),
+        subtitle: Chunk388032.intl.string(Chunk388032.t["13tjTU"]),
+        variant: "primary",
+        confirmText: Chunk388032.intl.string(Chunk388032.t["cY+Oob"]),
+        onConfirm: () => Chunk693546.Z.removeGuildJoinRequest(v.id)
+      })
     },
-    R = () => {
+    P = () => {
       (0, Chunk481060.ZDy)(async () => {
         let {
           default: e
@@ -98,32 +76,32 @@ let A = () => {
         }, t))
       })
     },
-    w = null != (t = null == I ? true : I.applicationStatus) ? exports : Chunk246364.wB.STARTED,
+    R = null != (t = null == I ? true : I.applicationStatus) ? exports : Chunk246364.wB.STARTED,
+    w = null,
     D = null,
     x = null,
-    L = null,
-    j = [Chunk342891.notice, Chunk226910.notice];
-  switch (w) {
+    L = [Chunk342891.notice, Chunk226910.notice];
+  switch (R) {
     case Chunk246364.wB.SUBMITTED:
-      D = Chunk388032.intl.string(Chunk388032.t["5iLvSx"]), x = Chunk388032.intl.string(Chunk388032.t.mqtdmQ), L = P;
+      w = Chunk388032.intl.string(Chunk388032.t["5iLvSx"]), D = Chunk388032.intl.string(Chunk388032.t.mqtdmQ), x = N;
       break;
     case Chunk246364.wB.REJECTED:
-      D = Chunk388032.intl.string(Chunk388032.t.lk30cY), x = Chunk388032.intl.string(Chunk388032.t["8RrsHr"]), L = R, j.push(Chunk342891.error);
+      w = Chunk388032.intl.string(Chunk388032.t.lk30cY), D = Chunk388032.intl.string(Chunk388032.t["8RrsHr"]), x = P, L.push(Chunk342891.error);
       break;
     default:
-      D = Chunk388032.intl.string(Chunk388032.t.G5YKXP), x = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), L = N
+      w = Chunk388032.intl.string(Chunk388032.t.G5YKXP), D = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), x = C
   }
   return (0, Chunk54381.jsxs)("div", {
-    className: a()(...j),
+    className: a()(...L),
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk342891.header,
       variant: "text-sm/normal",
-      children: D
+      children: w
     }), (0, Chunk54381.jsx)(Chunk481060.Button, {
       variant: "overlay-primary",
       size: "sm",
-      onClick: L,
-      text: x
+      onClick: x,
+      text: D
     })]
   })
 }

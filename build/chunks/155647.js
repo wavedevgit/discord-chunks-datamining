@@ -11,7 +11,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk218471 = require("./218471.js"),
   Chunk46912 = require("./46912.js"),
   Chunk82554 = require("./82554.js");
-let d = {
+let c = {
   [Chunk82554.zR.SAFETY_DM_SPAM_FILTER]: Chunk568315.Z,
   [Chunk82554.zR.SAFETY_SC_FILTERS_SEXUAL_MEDIA]: Chunk46912.Z,
   [Chunk82554.zR.SAFETY_SC_FILTERS_GRAPHIC_MEDIA]: Chunk218471.Z,
@@ -21,7 +21,7 @@ let d = {
 function u(e) {
   return r.useMemo(() => null != e ? function(e) {
     let t = [];
-    return Object.entries(d).forEach(n => {
+    return Object.entries(c).forEach(n => {
       let [r, i] = n;
       (null == i.eligibleReportSubtypes || i.eligibleReportSubtypes.includes(e)) && t.push(r)
     }), 0 === t.length ? null : t
@@ -30,7 +30,7 @@ function u(e) {
 
 function m(e, t) {
   return r.useMemo(() => e.map(e => (function(e, t) {
-    let n = d[e];
+    let n = c[e];
     return ! function(e, t) {
       let {
         predicate: n,

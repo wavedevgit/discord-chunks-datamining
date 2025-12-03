@@ -55,8 +55,8 @@ function j(e, t) {
 function _() {
   var e, t;
   let [n, i] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [h, f] = (0, Chunk473749.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
-    setToolsCache: T,
-    removeToolsCache: N
+    setToolsCache: N,
+    removeToolsCache: T
   } = (0, Chunk396821.L3)(), {
     setImgCache: O
   } = (0, Chunk396821.W_)(), P = (0, Chunk473749.useCallback)(e => {
@@ -73,14 +73,14 @@ function _() {
       src: e,
       preview: true
     }))
-  }, [_]), w = (0, Chunk473749.useCallback)(e => {
+  }, [_]), I = (0, Chunk473749.useCallback)(e => {
     f(t => null == t ? null : j(v({}, t), {
       palette: e,
       preview: true
     }))
-  }, []), I = (0, Chunk473749.useCallback)(e => {
-    N(e)
-  }, [N]);
+  }, []), w = (0, Chunk473749.useCallback)(e => {
+    T(e)
+  }, [T]);
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk30827.controls,
@@ -106,7 +106,7 @@ function _() {
         children: [require && (0, Chunk54381.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk54381.jsx)(Chunk711325.Z, {
           selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
-            (null == h ? true : h.src) != null && T(h.src, h.src, e), w(e)
+            (null == h ? true : h.src) != null && N(h.src, h.src, e), I(e)
           }
         })]
       })]
@@ -127,7 +127,7 @@ function _() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               a = await n.arrayBuffer();
-            O(t, t, (0, p.xh)(a)), T(t, t, m.jD)
+            O(t, t, (0, p.xh)(a)), N(t, t, m.jD)
           }
         }), (0, Chunk54381.jsx)("div", {
           className: Chunk30827.uploadedArea,
@@ -138,12 +138,12 @@ function _() {
             return (0, a.jsx)(C, {
               src: t,
               onSetStatic: P,
-              removeAsset: I
+              removeAsset: w
             }, t)
           })
         }), (0, Chunk54381.jsx)(E, {
           label: "gradient override",
-          onChange: e => w({
+          onChange: e => I({
             name: m._j,
             darkBackground: e,
             lightBackground: e
@@ -191,12 +191,12 @@ function y(e) {
       children: [(0, a.jsx)(r.Text, {
         variant: "text-sm/semibold",
         children: "Memberlist"
-      }), (0, a.jsx)(T, {
+      }), (0, a.jsx)(N, {
         nameplate: t
       }), (0, a.jsx)(r.Text, {
         variant: "text-sm/semibold",
         children: "DMs"
-      }), (0, a.jsx)(N, {
+      }), (0, a.jsx)(T, {
         nameplate: t
       }), (0, a.jsx)(r.Text, {
         variant: "text-sm/semibold",
@@ -284,7 +284,7 @@ function E(e) {
   })
 }
 
-function T(e) {
+function N(e) {
   let {
     nameplate: t
   } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser());
@@ -320,7 +320,7 @@ function T(e) {
   })
 }
 
-function N(e) {
+function T(e) {
   let {
     nameplate: t
   } = e;

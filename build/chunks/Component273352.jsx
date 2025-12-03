@@ -1,7 +1,7 @@
 /** Chunk was on 84112 **/
-/** chunk id: 273352, original params: e,t,n (module,exports,require) **/
+/** chunk id: 273352, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,66 +14,66 @@ var Chunk54381 = require("./54381.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk573857 = require("./573857.js");
-let _ = e => {
-  let t, n, a, {
-      body: _,
-      cancelText: p,
-      className: x,
+let x = e => {
+  let n, t, o, {
+      body: x,
+      cancelText: _,
+      className: p,
       confirmColor: y,
       confirmText: b = m.intl.string(m.t.BddRzS),
       secondaryConfirmText: j,
       onCancel: f,
       onClose: C,
-      onConfirm: B,
+      onConfirm: z,
       onConfirmSecondary: N,
       title: g,
-      transitionState: k,
-      titleClassName: z
+      transitionState: B,
+      titleClassName: k
     } = e,
-    v = r.Button.Sizes.MEDIUM,
-    [A, R] = o.useState(false);
-  return o.useEffect(() => () => {
+    v = r.zx.Sizes.MEDIUM,
+    [A, R] = a.useState(false);
+  return a.useEffect(() => () => {
     A && (null == N || N())
-  }, [A, N]), null != p && "" !== p && (t = (0, l.jsx)(r.Button, {
+  }, [A, N]), null != _ && "" !== _ && (n = (0, l.jsx)(r.zx, {
     type: "button",
     size: v,
-    color: r.Button.Colors.PRIMARY,
+    color: r.zx.Colors.PRIMARY,
     onClick: () => {
       null == C || C(), null == f || f()
     },
     className: h.secondaryButton,
-    children: p
-  })), null != b && "" !== b && (n = (0, l.jsx)(r.Button, {
+    children: _
+  })), null != b && "" !== b && (t = (0, l.jsx)(r.zx, {
     type: "submit",
     color: y,
     size: v,
     className: h.primaryButton,
     autoFocus: true,
     children: b
-  })), null != j && "" !== j && (a = (0, l.jsx)(d.Checkbox, {
+  })), null != j && "" !== j && (o = (0, l.jsx)(d.Checkbox, {
     checked: A,
     onChange: e => R(e),
     label: j,
     labelType: "secondary"
   })), (0, l.jsx)(i.Y0, {
-    transitionState: k,
+    transitionState: B,
     size: i.Cg.DYNAMIC,
-    className: s()(x, h.container),
+    className: s()(p, h.container),
     "aria-label": g,
     parentComponent: "Alert",
     children: (0, l.jsxs)("form", {
       onSubmit: e => {
-        null != e && e.preventDefault(), null == C || C(), null == B || B()
+        null != e && e.preventDefault(), null == C || C(), null == z || z()
       },
       className: h.form,
       children: [(0, l.jsx)(i.xB, {
         children: null != g ? (0, l.jsx)(d.Heading, {
           variant: "heading-lg/semibold",
-          className: s()(h.title, z),
+          className: s()(h.title, k),
           children: g
         }) : (0, l.jsx)(d.Heading, {
           variant: "heading-md/semibold",
-          className: s()(h.title, z),
+          className: s()(h.title, k),
           children: g
         })
       }), (0, l.jsx)(i.hz, {
@@ -82,18 +82,18 @@ let _ = e => {
           direction: u.Z.Direction.VERTICAL,
           justify: u.Z.Justify.START,
           className: h.content,
-          children: null != _ && (0, l.jsx)(c.x, {
+          children: null != x && (0, l.jsx)(c.x, {
             variant: "text-md/normal",
             className: h.body,
             color: "header-secondary",
-            children: _
+            children: x
           })
         })
       }), (0, l.jsxs)(i.mz, {
         justify: true,
         wrap: u.Z.Wrap.WRAP,
         className: h.modalFooter,
-        children: [n, t, a]
+        children: [t, n, o]
       })]
     })
   })

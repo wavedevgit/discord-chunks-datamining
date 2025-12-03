@@ -119,8 +119,8 @@ let F = (0, Chunk888651.$)(function(e) {
     channel: U,
     mute: V,
     localMute: F,
-    localVideoDisabled: B,
-    deaf: H,
+    localVideoDisabled: H,
+    deaf: B,
     video: G,
     embeddedApplication: z,
     serverMute: W,
@@ -202,11 +202,11 @@ let F = (0, Chunk888651.$)(function(e) {
       channel: U,
       userId: h.id
     })) : null,
-    eB = () => (0, i.jsx)(j.Z, {
+    eH = () => (0, i.jsx)(j.Z, {
       userId: h.id,
       channel: U
     }),
-    eH = () => (0, f.dl)() && (0, f.zd)(U.id) ? null : (0, i.jsx)(O.Z, {
+    eB = () => (0, f.dl)() && (0, f.zd)(U.id) ? null : (0, i.jsx)(O.Z, {
       user: h,
       channel: U,
       onWatch: eU,
@@ -238,13 +238,13 @@ let F = (0, Chunk888651.$)(function(e) {
               disconnected: Q,
               mute: V,
               localMute: F,
-              localVideoDisabled: B,
+              localVideoDisabled: H,
               isStreaming: et,
               isGuest: ei,
               video: G,
               priority: er,
               ringing: Y,
-              deaf: H,
+              deaf: B,
               nick: K,
               collapsed: l,
               overlap: l,
@@ -279,7 +279,7 @@ let F = (0, Chunk888651.$)(function(e) {
             })
           }
           let c = () => null;
-          return ey && eA ? c = eF : et ? c = eH : ew && h.id !== I.default.getId() ? c = eB : ey && (c = eF), (0, i.jsx)(s.yRy, {
+          return ey && eA ? c = eF : et ? c = eB : ew && h.id !== I.default.getId() ? c = eH : ey && (c = eF), (0, i.jsx)(s.yRy, {
             targetElementRef: eC,
             position: "right",
             renderPopout: c,

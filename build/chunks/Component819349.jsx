@@ -67,12 +67,12 @@ function I(e) {
     [L, k] = r.useState(null),
     [D, U] = r.useState(false),
     [V, F] = r.useState("unknown"),
-    B = r.useRef(null),
+    H = r.useRef(null),
     {
-      isHoveringOrFocusing: H
-    } = (0, _.Tu)(null == L ? B : l),
+      isHoveringOrFocusing: B
+    } = (0, _.Tu)(null == L ? H : l),
     [G, z] = r.useState(false),
-    W = H || G,
+    W = B || G,
     q = r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
       C.default.track(O.rMx.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
@@ -202,7 +202,7 @@ function I(e) {
                 lineClamp: 1,
                 children: x.intl.string(x.t["EE+P0H"])
               })
-            }), H ? (0, i.jsx)(d.P3F, {
+            }), B ? (0, i.jsx)(d.P3F, {
               className: E.close,
               onClick: () => Y("user_explicit"),
               "aria-label": x.intl.string(x.t.cpT0Cq),

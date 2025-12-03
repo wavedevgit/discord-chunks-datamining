@@ -2,8 +2,8 @@
 /** chunk id: 822591, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  X: () => R,
-  Z: () => L
+  X: () => Z,
+  Z: () => A
 }), require("./953529.js"), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,6 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk544891 = require("./544891.js"),
   Chunk433517 = require("./433517.js"),
   Chunk796027 = require("./796027.jsx"),
+  Chunk248514 = require("./248514.jsx"),
   Chunk28664 = require("./28664.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -32,40 +33,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk560818 = require("./560818.js"),
   Chunk922905 = require("./922905.js");
-
-function P(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
-    })
-  }
-  return e
-}
-
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let Z = "dismissedCommunityFeaturesUpsell",
-  R = () => {
+let w = "dismissedCommunityFeaturesUpsell",
+  Z = () => {
     let e, {
         guild: t,
         submitting: n,
@@ -95,116 +64,116 @@ let Z = "dismissedCommunityFeaturesUpsell",
       errorMessage: module
     })
   },
-  D = e => {
+  R = e => {
     let {
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: l
-    } = e, [c, d] = i.useState(true === o.K.get(Z)), p = (0, a.e7)([b.Z], () => {
+    } = e, [c, d] = i.useState(true === o.K.get(w)), u = (0, a.e7)([x.Z], () => {
       var e;
-      return null != (e = b.Z.getMemberCount(l.id)) ? e : 0
-    }), [h, j] = i.useState(false);
-    (0, m.ZP)(() => {
+      return null != (e = x.Z.getMemberCount(l.id)) ? e : 0
+    }), [f, b] = i.useState(false);
+    (0, p.ZP)(() => {
       s.tn.get({
-        url: E.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
+        url: I.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
         rejectWithError: true
       }).then(e => {
-        j(e.body.eligible_for_admin_server)
-      }).catch(() => j(false))
+        b(e.body.eligible_for_admin_server)
+      }).catch(() => b(false))
     });
-    let _ = (0, a.e7)([x.Z], () => x.Z.getGuild("942897714956472401")),
-      v = l.features.has(E.GuildFeatures.COMMUNITY) && p >= 1e3 && h && null == _;
+    let _ = (0, a.e7)([j.Z], () => j.Z.getGuild("942897714956472401")),
+      v = l.features.has(I.GuildFeatures.COMMUNITY) && u >= 1e3 && f && null == _;
     if (t && n && !v) return null;
-    let C = async () => {
+    let O = async () => {
       try {
         let e = await s.tn.post({
-          url: E.ANM.JOIN_ADMIN_SERVER(l.id),
+          url: I.ANM.JOIN_ADMIN_SERVER(l.id),
           oldFormErrors: true,
           rejectWithError: true
         });
-        O.Z.close(), (0, f.X)(e.body.id)
+        C.Z.close(), (0, h.X)(e.body.id)
       } catch (e) {}
     };
     return c && !v ? null : (0, r.jsxs)("div", {
-      className: S.upsellContainer,
+      className: T.upsellContainer,
       children: [(0, r.jsxs)("div", {
-        className: S.upsellContent,
+        className: T.upsellContent,
         children: [(0, r.jsx)("img", {
-          src: T,
+          src: P,
           alt: "",
           width: 60,
-          className: S.upsellImage
+          className: T.upsellImage
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(g.Heading, {
+          children: [(0, r.jsx)(m.Heading, {
             variant: "heading-md/semibold",
-            className: S.upsellHeader,
-            children: I.intl.string(I.t["pR/Bge"])
-          }), (0, r.jsx)(g.Text, {
+            className: T.upsellHeader,
+            children: S.intl.string(S.t["pR/Bge"])
+          }), (0, r.jsx)(m.Text, {
             variant: "text-sm/normal",
-            children: I.intl.string(I.t["V+Yo1l"])
+            children: S.intl.string(S.t["V+Yo1l"])
           })]
         })]
-      }), (0, r.jsx)(u.zx, {
-        "aria-label": I.intl.string(I.t.cpT0Cq),
-        look: u.zx.Looks.BLANK,
-        size: u.zx.Sizes.NONE,
-        className: S.upsellClose,
+      }), (0, r.jsx)(g.zx, {
+        "aria-label": S.intl.string(S.t.cpT0Cq),
+        look: g.zx.Looks.BLANK,
+        size: g.zx.Sizes.NONE,
+        className: T.upsellClose,
         onClick: () => {
-          o.K.set(Z, true), d(true)
+          o.K.set(w, true), d(true)
         },
-        children: (0, r.jsx)(g.Dio, {
+        children: (0, r.jsx)(m.Dio, {
           size: "md",
           color: "currentColor"
         })
       }), (0, r.jsxs)("div", {
-        className: S.upsellFooter,
+        className: T.upsellFooter,
         children: [v && (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: S.upsellButton,
-          children: (0, r.jsx)(g.Button, {
+          className: T.upsellButton,
+          children: (0, r.jsx)(m.Button, {
             variant: "primary",
             size: "sm",
-            text: I.intl.string(I.t.iF1Asi),
-            onClick: C
+            text: S.intl.string(S.t.iF1Asi),
+            onClick: O
           })
         }), n ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: S.upsellButton,
-          children: (0, r.jsx)(g.Button, {
+          className: T.upsellButton,
+          children: (0, r.jsx)(m.Button, {
             variant: "primary",
             size: "sm",
-            text: I.intl.string(I.t["S/Dfid"]),
+            text: S.intl.string(S.t["S/Dfid"]),
             onClick: () => {
-              O.Z.setSection(E.pNK.ONBOARDING)
+              C.Z.setSection(I.pNK.ONBOARDING)
             }
           })
         }), t ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: S.upsellButton,
-          children: (0, r.jsx)(g.Button, {
+          className: T.upsellButton,
+          children: (0, r.jsx)(m.Button, {
             variant: "secondary",
             size: "sm",
-            text: I.intl.string(I.t["0kmJdw"]),
+            text: S.intl.string(S.t["0kmJdw"]),
             onClick: () => {
-              O.Z.setSection(E.pNK.ACCESS, E.KsC.ACCESS_DISCOVERABLE)
+              C.Z.setSection(I.pNK.ACCESS, I.KsC.ACCESS_DISCOVERABLE)
             }
           })
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: S.upsellButton,
-          children: (0, r.jsx)(g.Button, {
+          className: T.upsellButton,
+          children: (0, r.jsx)(m.Button, {
             variant: "secondary",
             size: "sm",
-            text: I.intl.string(I.t.BQIYTb),
+            text: S.intl.string(S.t.BQIYTb),
             onClick: () => {
-              O.Z.setSection(E.pNK.ANALYTICS)
+              C.Z.setSection(I.pNK.ANALYTICS)
             }
           })
         })]
       })]
     })
   },
-  A = () => {
+  D = () => {
     let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
       {
         canManageGuild: t,
@@ -215,19 +184,19 @@ let Z = "dismissedCommunityFeaturesUpsell",
       })),
       s = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != module ? Chunk984933.ZP.getChannels(module.id) : null),
       c = Chunk473749.useMemo(Chunk929834.jb, []),
-      u = true !== Chunk433517.K.get(Z);
+      g = true !== Chunk433517.K.get(w);
     if (null == module) return null;
-    let m = [];
+    let p = [];
     null != Chunk544891 && Chunk544891[Chunk984933.sH].forEach(e => {
       let {
         channel: t
       } = e;
-      t.type === E.d4z.GUILD_TEXT && m.push({
+      t.type === I.d4z.GUILD_TEXT && p.push({
         value: t.id,
-        label: (0, p.F6)(t, v.default, _.Z, true)
+        label: (0, f.F6)(t, O.default, v.Z, true)
       })
     });
-    let f = () => {
+    let h = () => {
         if (null == module) return;
         let t = new Set(module.features);
         exports.delete(Chunk981631.GuildFeatures.COMMUNITY), exports.delete(Chunk981631.GuildFeatures.DISCOVERABLE), exports.delete(Chunk981631.GuildFeatures.PREVIEW_ENABLED), Chunk434404.Z.updateGuild({
@@ -236,8 +205,8 @@ let Z = "dismissedCommunityFeaturesUpsell",
           publicUpdatesChannelId: null
         })
       },
-      b = e => {
-        O.Z.updateGuild({
+      x = e => {
+        C.Z.updateGuild({
           description: e
         })
       };
@@ -246,7 +215,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.nRtNqn)
-      }), Chunk755721 ? (0, Chunk54381.jsx)(D, {
+      }), Chunk755721 ? (0, Chunk54381.jsx)(R, {
         discoveryEnabled: module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE),
         onboardingEnabled: module.features.has(Chunk981631.GuildFeatures.GUILD_ONBOARDING),
         guild: module
@@ -257,7 +226,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         value: module.rulesChannelId,
         options: Chunk493773,
         onChange: e => {
-          O.Z.updateGuild({
+          C.Z.updateGuild({
             rulesChannelId: e
           })
         },
@@ -269,7 +238,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         value: module.publicUpdatesChannelId,
         options: Chunk493773,
         onChange: e => {
-          O.Z.updateGuild({
+          C.Z.updateGuild({
             publicUpdatesChannelId: e
           })
         },
@@ -281,7 +250,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         value: module.safetyAlertsChannelId,
         options: Chunk493773,
         onChange: e => {
-          O.Z.updateGuild({
+          C.Z.updateGuild({
             safetyAlertsChannelId: e
           })
         },
@@ -293,7 +262,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         value: module.preferredLocale,
         options: Chunk796027,
         onChange: e => {
-          O.Z.updateGuild({
+          C.Z.updateGuild({
             preferredLocale: e
           })
         },
@@ -321,34 +290,25 @@ let Z = "dismissedCommunityFeaturesUpsell",
             size: "sm",
             text: Chunk388032.intl.string(Chunk388032.t.c1BmbC),
             onClick: () => {
-              module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE) && module.features.has(Chunk981631.GuildFeatures.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(g.ConfirmModal, w(P({}, e), {
-                header: I.intl.string(I.t.iBnVHc),
-                confirmText: I.intl.string(I.t["cY+Oob"]),
-                cancelText: I.intl.string(I.t.oEAioF),
-                onConfirm: f,
-                children: (0, r.jsx)(g.Text, {
-                  variant: "text-sm/normal",
-                  children: I.intl.string(I.t["P+Sh8V"])
-                })
-              }))) : module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(g.ConfirmModal, w(P({}, e), {
-                header: I.intl.string(I.t.iBnVHc),
-                confirmText: I.intl.string(I.t["cY+Oob"]),
-                cancelText: I.intl.string(I.t.oEAioF),
-                onConfirm: f,
-                children: (0, r.jsx)(g.Text, {
-                  variant: "text-sm/normal",
-                  children: I.intl.string(I.t["eMx/uZ"])
-                })
-              }))) : module.features.has(Chunk981631.GuildFeatures.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(g.ConfirmModal, w(P({}, e), {
-                header: I.intl.string(I.t.iBnVHc),
-                confirmText: I.intl.string(I.t["cY+Oob"]),
-                cancelText: I.intl.string(I.t.oEAioF),
-                onConfirm: f,
-                children: (0, r.jsx)(g.Text, {
-                  variant: "text-sm/normal",
-                  children: I.intl.string(I.t.l1wLeX)
-                })
-              }))) : Chunk769654()
+              module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE) && module.features.has(Chunk981631.GuildFeatures.PARTNERED) ? (0, Chunk248514.Z)({
+                title: Chunk388032.intl.string(Chunk388032.t.iBnVHc),
+                subtitle: Chunk388032.intl.string(Chunk388032.t["P+Sh8V"]),
+                confirmText: Chunk388032.intl.string(Chunk388032.t["cY+Oob"]),
+                cancelText: Chunk388032.intl.string(Chunk388032.t.oEAioF),
+                onConfirm: Chunk769654
+              }) : module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE) ? (0, Chunk248514.Z)({
+                title: Chunk388032.intl.string(Chunk388032.t.iBnVHc),
+                subtitle: Chunk388032.intl.string(Chunk388032.t["eMx/uZ"]),
+                confirmText: Chunk388032.intl.string(Chunk388032.t["cY+Oob"]),
+                cancelText: Chunk388032.intl.string(Chunk388032.t.oEAioF),
+                onConfirm: Chunk769654
+              }) : module.features.has(Chunk981631.GuildFeatures.PARTNERED) ? (0, Chunk248514.Z)({
+                title: Chunk388032.intl.string(Chunk388032.t.iBnVHc),
+                subtitle: Chunk388032.intl.string(Chunk388032.t.l1wLeX),
+                confirmText: Chunk388032.intl.string(Chunk388032.t["cY+Oob"]),
+                cancelText: Chunk388032.intl.string(Chunk388032.t.oEAioF),
+                onConfirm: Chunk769654
+              }) : Chunk769654()
             },
             disabled: !require
           })
@@ -356,9 +316,9 @@ let Z = "dismissedCommunityFeaturesUpsell",
       })]
     })
   },
-  L = () => {
+  A = () => {
     let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild());
-    return null == module ? null : module.features.has(Chunk981631.GuildFeatures.COMMUNITY) ? (0, Chunk54381.jsx)(A, {}) : (0, Chunk54381.jsx)(Chunk906512.Z, {
+    return null == module ? null : module.features.has(Chunk981631.GuildFeatures.COMMUNITY) ? (0, Chunk54381.jsx)(D, {}) : (0, Chunk54381.jsx)(Chunk906512.Z, {
       guild: module
     })
   }

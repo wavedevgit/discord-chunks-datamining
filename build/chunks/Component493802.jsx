@@ -12,10 +12,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function o(n) {
-  let t = (0, l.e7)([c.Z], () => c.Z.isCollapsed(n.id), [n.id]);
+  let t = (0, l.e7)([s.Z], () => s.Z.isCollapsed(n.id), [n.id]);
   return __OVERLAY__ ? null : (0, i.jsx)(r.S89, {
     id: "hide-voice-names",
-    label: s.intl.string(s.t.LxzNiu),
+    label: c.intl.string(c.t.LxzNiu),
     action: () => a.Z.update(n.id),
     checked: t
   })

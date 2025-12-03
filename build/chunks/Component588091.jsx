@@ -29,21 +29,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk800372 = require("./800372.js");
 
-function z(e) {
+function O(e) {
   let {
     guildProductListing: t,
     guildId: n,
     skuPricePreview: a
   } = e, i = (0, y.C)(t), l = (0, p.T4)(a.amount, a.currency), s = (0, u.e7)([v.Z], () => v.Z.getGuild(n));
   return c()(null != s, "guild cannot be null"), (0, r.jsxs)("div", {
-    className: O.purchaseSummaryContainer,
+    className: z.purchaseSummaryContainer,
     children: [(0, r.jsx)(x.Z, {
       alt: "",
-      className: O.purchaseSummaryImage,
+      className: z.purchaseSummaryImage,
       listing: t,
       imageSize: 100
     }), (0, r.jsxs)("div", {
-      className: O.purchaseSummarInfo,
+      className: z.purchaseSummarInfo,
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/medium",
         color: "header-primary",
@@ -64,7 +64,7 @@ function z(e) {
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: O.purchaseSummaryPrice,
+      className: z.purchaseSummaryPrice,
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/medium",
         color: "header-primary",
@@ -92,11 +92,11 @@ function P(e) {
   return 0 === i.length ? null : (0, r.jsx)(Z.Z, {
     label: S.intl.string(S.t.HOkHPB),
     children: (0, r.jsxs)("div", {
-      className: l()(O.attachmentsContainer, {
-        [O.attachmentsContainerMultiple]: s
+      className: l()(z.attachmentsContainer, {
+        [z.attachmentsContainerMultiple]: s
       }),
       children: [(0, r.jsx)("div", {
-        className: O.attachmentGrid,
+        className: z.attachmentGrid,
         children: i.map(e => (0, r.jsx)(C.Z, {
           attachment: e
         }, e.id))
@@ -165,7 +165,7 @@ function T(e) {
           body: S.intl.string(S.t.VQ0lXY),
           confirmText: S.intl.string(S.t["NX+WJN"]),
           header: S.intl.string(S.t.OCwKlu),
-          confirmButtonColor: d.Button.Colors.BRAND
+          confirmButtonColor: d.zx.Colors.BRAND
         })
       }
     }()
@@ -199,18 +199,18 @@ function T(e) {
         children: S.intl.string(S.t["9S3QHF"])
       }), (0, r.jsx)(f.LZC, {
         size: 24
-      }), (0, r.jsx)(z, {
+      }), (0, r.jsx)(O, {
         guildProductListing: x,
         guildId: s,
         skuPricePreview: m
       }), (0, r.jsx)(f.LZC, {
         size: 32
       }), (0, r.jsx)("div", {
-        className: O.divider
+        className: z.divider
       }), (0, r.jsx)(f.LZC, {
         size: 32
       }), (0, r.jsxs)("ul", {
-        className: O.benefitsContainer,
+        className: z.benefitsContainer,
         children: [(0, r.jsx)(P, {
           guildProductListing: x,
           guildId: s

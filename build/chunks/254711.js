@@ -71,7 +71,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let L = require("./227419.jsx").Z,
+let L = require("./227419.js").Z,
   j = (e, t) => {
     var n;
     return null == (n = e.find(e => e.name === t)) ? true : n.value

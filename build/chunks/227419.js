@@ -2,13 +2,11 @@
 /** chunk id: 227419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => g
 }), require("./388685.js");
-var Chunk54381 = require("./54381.js");
-require("./473749.js");
 var Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
-  Chunk481060 = require("./481060.js"),
+  i = require.n(Chunk392711),
+  Chunk248514 = require("./248514.jsx"),
   Chunk493683 = require("./493683.js"),
   Chunk904245 = require("./904245.js"),
   Chunk911969 = require("./911969.js"),
@@ -20,76 +18,37 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function E(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      g(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function b(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function O(e) {
+function h(e) {
   switch (e) {
-    case m.nkL.GIF.title:
-    case m.nkL.TENOR.title:
-      return h.intl.string(h.t["0vrCgJ"]);
+    case _.nkL.GIF.title:
+    case _.nkL.TENOR.title:
+      return m.intl.string(m.t["0vrCgJ"]);
     default:
       return ""
   }
 }
-let v = [...a()(Chunk981631.nkL).values().map(e => ({
+let g = [...i()(Chunk981631.nkL).values().map(e => ({
   id: e.commandId,
   untranslatedName: e.command,
   displayName: e.command,
-  type: c.yU.CHAT,
-  inputType: p.iw.BUILT_IN_INTEGRATION,
-  applicationId: _.bi.BUILT_IN,
+  type: l.yU.CHAT,
+  inputType: f.iw.BUILT_IN_INTEGRATION,
+  applicationId: p.bi.BUILT_IN,
   get untranslatedDescription() {
-    return O(e.title)
+    return h(e.title)
   },
   get displayDescription() {
-    return O(e.title)
+    return h(e.title)
   },
-  options: e.type === m.q9n.GIF ? [{
+  options: e.type === _.q9n.GIF ? [{
     name: "query",
     displayName: "query",
-    type: c.jw.STRING,
+    type: l.jw.STRING,
     get description() {
-      return h.intl.string(h.t["+9g3Du"])
+      return m.intl.string(m.t["+9g3Du"])
     },
     get displayDescription() {
-      return h.intl.string(h.t["+9g3Du"])
+      return m.intl.string(m.t["+9g3Du"])
     },
     required: true
   }] : [],
@@ -127,41 +86,36 @@ let v = [...a()(Chunk981631.nkL).values().map(e => ({
     return null != t && t.isGroupDM()
   },
   execute: (e, t) => {
-    var n, i;
+    var n, r;
     let {
-      channel: a
+      channel: i
     } = t;
-    if (null == a) return;
-    let c = (0, u.F6)(a, f.default, d.Z),
-      p = h.intl.formatToPlainString(h.t.hJ5Ap4, {
-        name: c
+    if (null == i) return;
+    let l = (0, c.F6)(i, d.default, u.Z),
+      f = m.intl.formatToPlainString(m.t.hJ5Ap4, {
+        name: l
       }),
-      _ = h.intl.format(h.t.SSIVOu, {
-        name: c
+      p = m.intl.format(m.t.SSIVOu, {
+        name: l
       }),
-      m = null != (i = null == (n = e.find(e => "silent" === e.name)) ? true : n.value) && i;
-    async function g() {
-      if (null != a) try {
-        await s.Z.closePrivateChannel(a.id, true, m)
+      _ = null != (r = null == (n = e.find(e => "silent" === e.name)) ? true : n.value) && r;
+    async function h() {
+      if (null != i) try {
+        await o.Z.closePrivateChannel(i.id, true, _)
       } catch (e) {
-        l.Z.sendBotMessage(a.id, h.intl.string(h.t["YOsuT/"]))
+        s.Z.sendBotMessage(i.id, m.intl.string(m.t["YOsuT/"]))
       }
     }
-    a.isManaged() && (p = h.intl.formatToPlainString(h.t.hVGjEW, {
-      name: c
-    }), _ = h.intl.format(h.t.IK1Qvs, {
-      name: c
-    })), (0, o.h7j)(e => (0, r.jsx)(o.ConfirmModal, y(E({
-      header: p,
-      confirmText: h.intl.string(h.t["26C4oi"]),
-      cancelText: h.intl.string(h.t["ETE/oC"]),
-      onConfirm: g
-    }, e), {
-      children: (0, r.jsx)(o.Text, {
-        variant: "text-md/normal",
-        children: _
-      })
-    })))
+    i.isManaged() && (f = m.intl.formatToPlainString(m.t.hVGjEW, {
+      name: l
+    }), p = m.intl.format(m.t.IK1Qvs, {
+      name: l
+    })), (0, a.Z)({
+      title: f,
+      subtitle: p,
+      confirmText: m.intl.string(m.t["26C4oi"]),
+      onConfirm: h
+    })
   }
 }, {
   id: "-17",

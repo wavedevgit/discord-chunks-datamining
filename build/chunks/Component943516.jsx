@@ -3,7 +3,7 @@
 require.d(exports, {
   YP: () => p,
   ZP: () => q,
-  aN: () => h
+  aN: () => v
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -49,7 +49,7 @@ function m(e) {
   }))
 }
 
-function h() {
+function v() {
   return (0, Chunk54381.jsx)(Chunk481060.Mgn, {
     size: "xs",
     color: "currentColor",
@@ -57,7 +57,7 @@ function h() {
   })
 }
 
-function v(e) {
+function h(e) {
   let {
     roleName: t
   } = e;
@@ -116,13 +116,13 @@ function q(e) {
     productId: c,
     listingRoleId: f,
     error: p
-  } = e, h = (0, l.e7)([d.Z], () => null != f ? d.Z.getRole(i, f) : true);
+  } = e, v = (0, l.e7)([d.Z], () => null != f ? d.Z.getRole(i, f) : true);
   return null === t ? (0, n.jsx)(s.gNt, {
     label: g.intl.string(g.t.ovXIrP),
     description: g.intl.string(g.t["H7coX+"]),
     children: (0, n.jsxs)(s.NIo, {
       children: [(0, n.jsx)(m, {
-        role: h,
+        role: v,
         onRemove: true
       }), (0, n.jsx)(o.zxk, {
         text: g.intl.string(g.t.KkRpFi),
@@ -139,9 +139,9 @@ function q(e) {
     description: g.intl.string(g.t.OfuEkP),
     errorMessage: p,
     children: (0, n.jsx)(m, {
-      role: h,
+      role: v,
       onRemove: () => {
-        a()(null != c, "productId cannot be null"), a()(null != h, "no role attached"),
+        a()(null != c, "productId cannot be null"), a()(null != v, "no role attached"),
           function(e) {
             let {
               onConfirm: t,
@@ -170,7 +170,7 @@ function q(e) {
                 return e
               }({
                 title: g.intl.string(g.t.Y3Hi3R),
-                body: (0, n.jsx)(v, {
+                body: (0, n.jsx)(h, {
                   roleName: r
                 }),
                 cta: g.intl.string(g.t.VawZVx),
@@ -179,7 +179,7 @@ function q(e) {
               }, A))
             })
           }({
-            roleName: h.name,
+            roleName: v.name,
             onConfirm: () => r(null)
           })
       }

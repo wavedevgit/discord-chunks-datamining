@@ -47,16 +47,16 @@ function S() {
       var e, t;
       return null != (t = null == S || null == (e = S.linkedGames) ? true : module.map(e => p.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
     }),
-    T = (0, Chunk524995.F)(S, {
+    N = (0, Chunk524995.F)(S, {
       allowedFlows: [Chunk524995.r.RPC]
     }),
-    N = (0, Chunk524995.F)(S, {
+    T = (0, Chunk524995.F)(S, {
       allowedFlows: [Chunk524995.r.WEB]
     }),
     O = (0, Chunk524995.F)(S),
     {
       canDeauthorize: P,
-      deauthorize: w
+      deauthorize: I
     } = function(e) {
       let t = (0, s.e7)([b.default], () => b.default.getNewestTokenForApplication(e)),
         n = l.useCallback(() => {
@@ -121,18 +121,18 @@ function S() {
         color: "text-secondary",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !T.canStartAuthorization,
-        onClick: () => T.startAuthorization(),
+        disabled: !N.canStartAuthorization,
+        onClick: () => N.startAuthorization(),
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !N.canStartAuthorization,
-        onClick: () => N.startAuthorization(),
+        disabled: !T.canStartAuthorization,
+        onClick: () => T.startAuthorization(),
         variant: "secondary",
         text: "Start Web Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         disabled: !P,
-        onClick: w,
+        onClick: I,
         variant: "critical-primary",
         text: "Deauthorize"
       })]

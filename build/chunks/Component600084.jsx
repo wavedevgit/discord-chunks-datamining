@@ -79,11 +79,11 @@ function F(e) {
     canReadMessageHistory: _.Z.can(R.Plq.READ_MESSAGE_HISTORY, n)
   })), w = (0, l.e7)([g.Z], () => y === R.d4z.DM ? g.Z.getMutualGuilds(n.getRecipientId()) : null, [n, y]), M = (0, u.Z)(null != (t = null == v ? true : v.id) ? t : R.lds), {
     authorizedAppToken: F,
-    authorizedAppsFetchState: B
+    authorizedAppsFetchState: H
   } = (0, l.cj)([C.default], () => ({
     authorizedAppToken: C.default.getNewestTokenForApplication(null == M ? true : M.id),
     authorizedAppsFetchState: C.default.getFetchState()
-  })), H = c.Z.useExperiment({
+  })), B = c.Z.useExperiment({
     location: "EmptyMessages"
   }).enabledDesktop;
   if (r.useEffect(() => {
@@ -91,8 +91,8 @@ function F(e) {
         withMutualGuilds: true
       }))
     }, [w, y, n, v]), r.useEffect(() => {
-      (null == v ? true : v.bot) && B === C.FetchState.NOT_FETCHED && s.Z.fetch()
-    }, [null == v ? true : v.bot, B]), n.isSystemDM()) return (0, i.jsx)(T.Z, {
+      (null == v ? true : v.bot) && H === C.FetchState.NOT_FETCHED && s.Z.fetch()
+    }, [null == v ? true : v.bot, H]), n.isSystemDM()) return (0, i.jsx)(T.Z, {
     channel: n,
     children: k.intl.string(k.t.Rzvnig)
   });
@@ -108,7 +108,7 @@ function F(e) {
         application: M,
         channel: n,
         oauth2Token: F
-      }), H && (0, i.jsx)(f.Z, {
+      }), B && (0, i.jsx)(f.Z, {
         channel: n
       })]
     })) : e = (0, i.jsx)(E.Z, {

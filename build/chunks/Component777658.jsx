@@ -2,7 +2,7 @@
 /** chunk id: 777658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,85 +36,64 @@ function p(e) {
   return e
 }
 
-function _(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function h(e) {
+function _(e) {
   let {
     user: t,
     location: f = "ContextMenu",
     onFriendRequestSent: _,
-    onFriendRemove: h,
-    appContext: g
+    onFriendRemove: m,
+    appContext: h
   } = e, {
-    id: E,
-    username: b,
-    bot: y
-  } = t, O = (0, a.e7)([u.default], () => {
+    id: g,
+    username: E,
+    bot: b
+  } = t, y = (0, a.e7)([u.default], () => {
     var e;
-    return (null == (e = u.default.getCurrentUser()) ? true : e.id) === E
-  }, [E]), v = (0, l.n)({
-    userId: E
-  }), [S, I] = (0, a.Wu)([c.Z], () => [c.Z.isFriend(E), c.Z.isBlocked(E)], [E]), [T, A] = i.useState(false);
-  if (y || O) return null;
+    return (null == (e = u.default.getCurrentUser()) ? true : e.id) === g
+  }, [g]), O = (0, l.n)({
+    userId: g
+  }), [v, S] = (0, a.Wu)([c.Z], () => [c.Z.isFriend(g), c.Z.isBlocked(g)], [g]), [I, T] = i.useState(false);
+  if (b || y) return null;
 
-  function C() {
+  function A() {
     (0, o.ZDy)(async () => {
       let {
         ConfirmModal: e
-      } = await Promise.resolve().then(n.bind(n, 878678));
-      return t => (0, r.jsx)(e, m(p({
-        header: d.intl.formatToPlainString(d.t.fPLvZd, {
-          name: b
+      } = await Promise.resolve().then(n.bind(n, 793030));
+      return t => (0, r.jsx)(e, p({
+        title: d.intl.formatToPlainString(d.t.fPLvZd, {
+          name: E
+        }),
+        subtitle: d.intl.format(d.t.l5FFq6, {
+          name: E
         }),
         confirmText: d.intl.string(d.t.cvSt1J),
         cancelText: d.intl.string(d.t["ETE/oC"]),
         onConfirm: () => {
-          s.Z.removeFriend(E, {
+          s.Z.removeFriend(g, {
             location: f
-          }), A(false), null == h || h()
+          }), T(false), null == m || m()
         }
-      }, t), {
-        children: (0, r.jsx)(o.Text, {
-          variant: "text-md/normal",
-          children: d.intl.format(d.t.l5FFq6, {
-            name: b
-          })
-        })
-      }))
+      }, t))
     }, {
-      contextKey: null != g ? (0, o.VnL)(g) : true
+      contextKey: null != h ? (0, o.VnL)(h) : true
     })
   }
-  return S ? (0, r.jsx)(o.sNh, {
+  return v ? (0, r.jsx)(o.sNh, {
     id: "remove-friend",
     label: d.intl.string(d.t.cvSt1J),
-    action: C
+    action: A
   }) : (0, r.jsx)(o.sNh, {
     id: "add-friend",
-    label: T ? d.intl.string(d.t.xMH6vD) : v,
+    label: I ? d.intl.string(d.t.xMH6vD) : O,
     action: () => {
-      T || (s.Z.addRelationship({
-        userId: E,
+      I || (s.Z.addRelationship({
+        userId: g,
         context: {
           location: f
         }
-      }), A(true), null == _ || _())
+      }), T(true), null == _ || _())
     },
-    disabled: I || T && !S
+    disabled: S || I && !v
   })
 }

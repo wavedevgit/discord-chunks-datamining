@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
 
 function g(n, t) {
   let g = (0, l.e7)([d.Z], () => d.Z.can(Z.Plq.MANAGE_CHANNELS, t)),
-    f = (0, c.ZP)(n),
+    f = (0, s.ZP)(n),
     v = (0, o.W)(n),
     j = (0, l.e7)([u.Z], () => u.Z.getChannelStatus(n)),
     b = null != j && j.length > 0;
@@ -57,7 +57,7 @@ function g(n, t) {
           channel: n
         }, e))
       }, {
-        modalKey: s.a
+        modalKey: c.a
       })
     }
   }) : null : null

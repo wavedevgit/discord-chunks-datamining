@@ -18,13 +18,13 @@ var Chunk442837 = require("./442837.js"),
 function h(n, t) {
   let e = (0, l.e7)([o.Z], () => o.Z.can(u.Plq.CONNECT, n), [n]),
     h = (0, l.e7)([d.Z], () => d.Z.getVoiceChannelId()),
-    g = (0, s.tT)(t),
+    g = (0, c.tT)(t),
     f = h === n.id;
   return n.isGuildVocal() && e && null != g && !f ? (0, i.jsx)(r.sN, {
     id: "join-muted-custom-join-sound",
     label: Z.intl.string(Z.t.saLMWc),
     action: () => {
-      (0, c.Db)(n.id), a.default.selectVoiceChannel(n.id)
+      (0, s.Db)(n.id), a.default.selectVoiceChannel(n.id)
     }
   }) : null
 }

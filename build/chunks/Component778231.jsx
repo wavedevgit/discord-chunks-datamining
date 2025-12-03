@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 778231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,19 +17,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk719706 = require("./719706.js"),
   Chunk970952 = require("./970952.js");
-let b = e => {
+let x = e => {
   var t, n;
   let {
-    entry: b
+    entry: x
   } = e, {
-    name: x
-  } = b, f = (0, l.e7)([m.default], () => m.default.getNewestTokenForApplication(b.id)), v = null != (n = b.getIconURL(40)) ? n : h, j = (0, d.Z)({
-    application: b
+    name: b
+  } = x, f = (0, l.e7)([m.default], () => m.default.getNewestTokenForApplication(x.id)), v = null != (n = x.getIconURL(40)) ? n : h, j = (0, c.Z)({
+    application: x
   }), y = i.useRef(false);
   i.useEffect(() => {
     y.current || (o.Z.fetch(), y.current = true)
   }, []);
-  let O = null != f ? p.default.extractTimestamp(f.id) : true;
+  let Z = null != f ? p.default.extractTimestamp(f.id) : true;
   return (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(s.Heading, {
@@ -40,8 +40,8 @@ let b = e => {
       className: _.appContainer,
       children: (0, r.jsxs)("div", {
         className: _.appInfo,
-        children: [(0, r.jsx)(c.ZP, {
-          mask: c.ZP.Masks.AVATAR_DEFAULT,
+        children: [(0, r.jsx)(d.ZP, {
+          mask: d.ZP.Masks.AVATAR_DEFAULT,
           width: 40,
           height: 40,
           className: _.appIconMask,
@@ -55,7 +55,7 @@ let b = e => {
           children: [(0, r.jsx)(s.Text, {
             color: "header-primary",
             variant: "text-md/medium",
-            children: x
+            children: b
           }), j.length > 0 ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(s.Text, {
               color: "text-default",
@@ -70,12 +70,12 @@ let b = e => {
             children: [(0, r.jsx)(s.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: null == (t = b.bot) ? true : t.tag
-            }), null != O && (0, r.jsx)(s.Text, {
+              children: null == (t = x.bot) ? true : t.tag
+            }), null != Z && (0, r.jsx)(s.Text, {
               color: "text-default",
               variant: "text-md/normal",
               children: g.intl.formatToPlainString(g.t.C9rUO8, {
-                authorizedAt: O
+                authorizedAt: Z
               })
             })]
           })]

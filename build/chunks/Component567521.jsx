@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(n, t) {
-  let e = (0, l.e7)([o.Z], () => o.Z.can(s.yP, n), [n]);
+  let e = (0, l.e7)([o.Z], () => o.Z.can(c.yP, n), [n]);
   return null != t && e ? (0, i.jsx)(a.sNh, {
     id: "end-stage",
     label: d.intl.string(d.t.saZaRb),
@@ -24,8 +24,7 @@ function u(n, t) {
         title: d.intl.string(d.t.gW9je1),
         subtitle: d.intl.string(d.t.mT7jwN),
         confirmText: d.intl.string(d.t.saZaRb),
-        onConfirm: () => (0, c.NZ)(n),
-        variant: "critical"
+        onConfirm: () => (0, s.NZ)(n)
       })
     }
   }) : null

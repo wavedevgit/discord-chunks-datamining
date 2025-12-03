@@ -1,7 +1,7 @@
 /** Chunk was on 86736 **/
 /** chunk id: 125657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,27 +21,27 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk144645 = require("./144645.js");
 
-function O(e) {
+function v(e) {
   var t;
   let {
     guild: n,
-    applicationIntegration: O
+    applicationIntegration: v
   } = e, {
-    application: v
-  } = O, y = null != v.bot ? new b.Z(v.bot) : null, _ = (0, a.e7)([g.ZP], () => null != y ? g.ZP.getMember(n.id, y.id) : null, [y, n]), C = (0, a.e7)([f.Z], () => f.Z.getEveryoneRole(n)), N = (0, a.Wu)([f.Z], () => {
+    application: O
+  } = v, y = null != O.bot ? new b.Z(O.bot) : null, _ = (0, a.e7)([g.ZP], () => null != y ? g.ZP.getMember(n.id, y.id) : null, [y, n]), C = (0, a.e7)([f.Z], () => f.Z.getEveryoneRole(n)), N = (0, a.Wu)([f.Z], () => {
     var e;
     return f.Z.getManyRoles(n.id, null != (e = null == _ ? true : _.roles) ? e : [])
   }), S = null == y ? true : y.id;
   r.useEffect(() => {
     null != S && s.Z.requestMembersById(n.id, S)
   }, [n.id, S]);
-  let P = r.useMemo(() => l.$e(C.permissions, ...N.map(e => e.permissions)), [N, C]);
+  let I = r.useMemo(() => l.$e(C.permissions, ...N.map(e => e.permissions)), [N, C]);
   if (null == y) return null;
-  let w = h.ZP.getApplicationIconURL({
-    id: v.id,
+  let E = h.ZP.getApplicationIconURL({
+    id: O.id,
     guildMember: _,
-    bot: v.bot,
-    icon: v.icon,
+    bot: O.bot,
+    icon: O.icon,
     size: 32
   });
   return (0, i.jsx)(o.Zbd, {
@@ -53,7 +53,7 @@ function O(e) {
         align: p.Z.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
-          src: w,
+          src: E,
           className: j.iconWrapper
         }), (0, i.jsx)(o.Text, {
           color: "header-primary",
@@ -91,7 +91,7 @@ function O(e) {
             disabledPermissionsHeader: x.intl.string(x.t["/rEZ2i"])
           }) : null]
         })
-      }(y, n, null != (t = null == _ ? true : _.roles) ? t : [], P)]
+      }(y, n, null != (t = null == _ ? true : _.roles) ? t : [], I)]
     })
   })
 }

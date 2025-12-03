@@ -17,8 +17,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk231319 = require("./231319.js"),
   Chunk8542 = require("./8542.js");
-let h = (0, Chunk772848.Z)(),
-  v = (0, Chunk131704.createChannelRecord)({
+let v = (0, Chunk772848.Z)(),
+  h = (0, Chunk131704.createChannelRecord)({
     id: "1",
     type: Chunk981631.d4z.DM
   });
@@ -66,7 +66,7 @@ function C(e) {
     parentModalKey: P,
     label: F,
     errorMessage: y
-  } = e, I = (0, o.Gc0)(), [N, K] = r.useState(() => (0, s.JM)(x)), T = r.useRef(true === u), Z = null != A ? A : null == I ? true : I.titleId, W = null != (t = null == I ? true : I.errorId) ? t : h;
+  } = e, I = (0, o.Gc0)(), [N, K] = r.useState(() => (0, s.JM)(x)), T = r.useRef(true === u), Z = null != A ? A : null == I ? true : I.titleId, W = null != (t = null == I ? true : I.errorId) ? t : v;
 
   function X(e, t, A) {
     m(t), K(A)
@@ -111,7 +111,7 @@ function C(e) {
         onChange: X,
         placeholder: j,
         required: V,
-        channel: v,
+        channel: h,
         textValue: x,
         richValue: N,
         type: Q,
@@ -131,7 +131,7 @@ function C(e) {
           text: x,
           maxLength: g
         }), null != g && (0, n.jsx)(o.nn4, {
-          id: h,
+          id: v,
           children: f.intl.format(f.t["+DFxLc"], {
             maxLength: g
           })

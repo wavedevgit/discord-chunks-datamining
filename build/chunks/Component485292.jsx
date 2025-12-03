@@ -1,7 +1,7 @@
 /** Chunk was on 98335 **/
 /** chunk id: 485292, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => A
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -23,7 +23,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function v(t) {
+function P(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function v(t) {
   return t
 }
 
-function I(t, e) {
+function Z(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -55,37 +55,37 @@ function I(t, e) {
   }), t
 }
 
-function Z(t) {
+function I(t) {
   let {
     application: e,
     libraryApplication: n,
     analyticsContext: i,
     onSelect: c
-  } = t, o = I(v({}, null != i ? i.location : null), {
+  } = t, o = Z(P({}, null != i ? i.location : null), {
     object: j.qAy.CONTEXT_MENU
-  }), u = (0, f.Z)(n, o), Z = (0, p.Z)(n), S = (0, y.Z)(n), A = (0, h.Z)(n), m = (0, g.Z)(n), E = (0, d.Z)(n, e), w = (0, O.Z)(n, e), T = (0, s.Z)(n, e), D = (0, b.Z)(e);
+  }), u = (0, f.Z)(n, o), I = (0, p.Z)(n), A = (0, g.Z)(n), S = (0, h.Z)(n), E = (0, y.Z)(n), m = (0, b.Z)(n, e), T = (0, O.Z)(n, e), w = (0, s.Z)(n, e), D = (0, d.Z)(e);
   return (0, r.jsxs)(l.v2r, {
     navId: "game-context",
     onClose: a.Zy,
-    "aria-label": P.intl.string(P.t.tKobzb),
+    "aria-label": v.intl.string(v.t.tKobzb),
     onSelect: c,
-    children: [u, Z, S, A, m, E, w, (0, r.jsx)(l.kSQ, {
-      children: T
+    children: [u, I, A, S, E, m, T, (0, r.jsx)(l.kSQ, {
+      children: w
     }), (0, r.jsx)(l.kSQ, {
       children: D
     })]
   })
 }
 
-function S(t) {
+function A(t) {
   let {
     applicationId: e,
     branchId: n
   } = t, l = (0, i.e7)([c.Z], () => c.Z.getApplication(e), [e]), a = (0, i.e7)([u.Z], () => null != n ? u.Z.getLibraryApplication(e, n) : u.Z.getActiveLibraryApplication(e), [e, n]);
-  return null == l || null == a ? (0, r.jsx)(o.default, I(v({}, t), {
+  return null == l || null == a ? (0, r.jsx)(o.default, Z(P({}, t), {
     id: e,
-    label: P.intl.string(P.t["FfCL+6"])
-  })) : (0, r.jsx)(Z, I(v({}, t), {
+    label: v.intl.string(v.t["FfCL+6"])
+  })) : (0, r.jsx)(I, Z(P({}, t), {
     application: l,
     libraryApplication: a
   }))

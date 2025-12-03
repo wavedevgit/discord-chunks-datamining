@@ -2,7 +2,7 @@
 /** chunk id: 208567, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => j,
-  Z: () => v
+  Z: () => O
 }), require("./35282.js"), require("./388685.js");
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -65,7 +65,7 @@ function j(e) {
     })
   })
 }
-class O extends(i = Chunk473749.PureComponent) {
+class v extends(i = Chunk473749.PureComponent) {
   handleExternalFileChange(e) {
     c()(null != this.inputRef.current, "ImageInputRef asked to handleExternalFileChange when not mounted"), this.inputRef.current.handleFileChange(e)
   }
@@ -76,17 +76,17 @@ class O extends(i = Chunk473749.PureComponent) {
       hint: s,
       name: c,
       makeURL: f,
-      disabled: O,
-      onChange: v,
+      disabled: v,
+      onChange: O,
       showIcon: y,
       showIconDisabled: _,
       className: C,
       imageClassName: N,
       iconClassName: S,
-      iconWrapperClassName: P,
-      icon: w,
-      hideSize: E,
-      imageStyle: I,
+      iconWrapperClassName: I,
+      icon: E,
+      hideSize: w,
+      imageStyle: P,
       showRemoveButton: T,
       maxFileSizeBytes: Z,
       onFileSizeError: k,
@@ -98,16 +98,16 @@ class O extends(i = Chunk473749.PureComponent) {
         color: "always-white",
         className: Chunk270956.imageUploaderAcronym,
         children: (0, Chunk624138.Zg)(c)
-      })), O) return (0, Chunk54381.jsx)("div", {
+      })), v) return (0, Chunk54381.jsx)("div", {
       className: o()(Chunk270956.imageUploader, Chunk270956.disabled, C),
       children: (0, Chunk54381.jsxs)("div", {
         className: o()(Chunk270956.imageUploaderInner, N),
-        style: x(h({}, I), {
+        style: x(h({}, P), {
           backgroundImage: require
         }),
         children: [i, _ && (0, Chunk54381.jsx)("div", {
           className: o()(Chunk270956.imageUploaderIcon, Chunk270956.imageUploaderIconDisabled, S),
-          children: w
+          children: E
         })]
       })
     });
@@ -115,7 +115,7 @@ class O extends(i = Chunk473749.PureComponent) {
       className: Chunk270956.removeButton,
       onClick: this.handleRemove,
       children: Chunk388032.intl.string(Chunk388032.t.N86XcP)
-    }) : E || (l = (0, Chunk54381.jsx)("small", {
+    }) : w || (l = (0, Chunk54381.jsx)("small", {
       className: Chunk270956.sizeInfo,
       children: Chunk388032.intl.format(Chunk388032.t.AH4c7Y, {
         size: Chunk981631.IXf
@@ -127,10 +127,10 @@ class O extends(i = Chunk473749.PureComponent) {
       children: [(0, Chunk54381.jsx)(Chunk481060.tEY, {
         within: true,
         children: (0, Chunk54381.jsxs)("div", {
-          className: y ? o()(Chunk270956.imageUploaderIconWrapper, P) : true,
+          className: y ? o()(Chunk270956.imageUploaderIconWrapper, I) : true,
           children: [(0, Chunk54381.jsxs)("div", {
             className: o()(Chunk270956.imageUploaderInner, N),
-            style: x(h({}, I), {
+            style: x(h({}, P), {
               backgroundImage: require
             }),
             children: [(0, Chunk54381.jsx)("span", {
@@ -142,7 +142,7 @@ class O extends(i = Chunk473749.PureComponent) {
               onClick: A
             }) : (0, Chunk54381.jsx)(Chunk813197.ZP, {
               ref: this.inputRef,
-              onChange: v,
+              onChange: O,
               className: Chunk270956.imageUploaderFileInput,
               "aria-label": R,
               tabIndex: 0,
@@ -155,7 +155,7 @@ class O extends(i = Chunk473749.PureComponent) {
             children: Chunk512722
           }), y && (0, Chunk54381.jsx)(j, {
             className: S,
-            icon: w
+            icon: E
           })]
         })
       }), T ? Chunk473749 : null]
@@ -167,7 +167,7 @@ class O extends(i = Chunk473749.PureComponent) {
     })
   }
 }
-f(O, "defaultProps", {
+f(v, "defaultProps", {
   name: "",
   makeURL: e => e,
   disabled: false,
@@ -177,4 +177,4 @@ f(O, "defaultProps", {
   maxFileSizeBytes: 1 / 0,
   icon: null
 });
-let v = O
+let O = v

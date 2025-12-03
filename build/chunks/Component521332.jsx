@@ -19,22 +19,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk769450 = require("./769450.js");
 
-function x(e) {
+function b(e) {
   let {
     title: t,
     description: n,
     onButtonClick: l,
     trackSettingsUpsellsAction: a
-  } = e, [o, d] = i.useState(false);
+  } = e, [o, c] = i.useState(false);
   return (0, s.ZP)(() => {
     a(g.M4.SETTINGS_UPSELLS_VIEWED)
-  }), (0, r.jsx)(c.JZ, {
+  }), (0, r.jsx)(d.JZ, {
     title: t,
     description: n,
     buttonText: o ? h.intl.string(h.t["h+WsPb"]) : h.intl.string(h.t.A8t4Nf),
     buttonDisabled: o,
     onButtonPress: () => {
-      l(), d(true), a(g.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
+      l(), c(true), a(g.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
     }
   })
 }
@@ -45,24 +45,24 @@ function f(e) {
     channelId: n,
     onModalClose: i,
     reportId: s,
-    reportType: c,
+    reportType: d,
     reportSubType: f
-  } = e, v = (0, l.e7)([m.Z], () => m.Z.getChannel(n)), j = (0, p.jc)(t, null == v ? true : v.type), y = (0, g.i_)(c, f, s);
+  } = e, v = (0, l.e7)([m.Z], () => m.Z.getChannel(n)), j = (0, p.jc)(t, null == v ? true : v.type), y = (0, g.i_)(d, f, s);
   return 0 === j.length ? null : (0, r.jsxs)("div", {
-    className: b.container,
+    className: x.container,
     children: [(0, r.jsx)(a.Heading, {
       variant: "text-sm/semibold",
-      className: b.header,
+      className: x.header,
       children: h.intl.string(h.t["1yxTIJ"])
     }), (0, r.jsx)("div", {
-      className: b.upsellsContainer,
+      className: x.upsellsContainer,
       children: j.map((e, n) => {
         let {
           getTitle: i,
           getDescription: l,
           onApply: a
         } = e;
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(b, {
           title: i(),
           description: l(),
           onButtonClick: a,
@@ -72,11 +72,11 @@ function f(e) {
     }), (0, r.jsx)(a.Avr, {
       text: h.intl.string(h.t.olebGx),
       onClick: () => {
-        (0, u.openUserSettings)(d.n.CONTENT_AND_SOCIAL_PANEL, {
+        (0, u.openUserSettings)(c.n.CONTENT_AND_SOCIAL_PANEL, {
           section: _.oAB.CONTENT_AND_SOCIAL
         }), i(), o.ZP.trackWithMetadata(_.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
           report_id: s,
-          report_type: c.name,
+          report_type: d.name,
           report_subtype: f,
           action: g.M4.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
         })

@@ -23,14 +23,14 @@ let u = e => {
   } = e;
   return o ? (0, r.jsxs)(a.P3F, {
     role: "link",
-    className: l()(d.linkButton, c.listElement),
+    className: l()(c.linkButton, d.listElement),
     onClick: () => {
       (0, s.Z)(t)
     },
     children: [(0, r.jsxs)("div", {
-      className: d.linkTextContainer,
+      className: c.linkTextContainer,
       children: [(0, r.jsx)(a.Text, {
-        className: d.__invalid_linkText,
+        className: c.__invalid_linkText,
         variant: "text-md/semibold",
         children: n
       }), null != i && "" !== i && (0, r.jsx)(a.Text, {
@@ -41,7 +41,7 @@ let u = e => {
     }), (0, r.jsx)(a.Gr1, {
       size: "sm",
       color: "currentColor",
-      className: d.linkIcon
+      className: c.linkIcon
     })]
   }) : null
 };
@@ -71,11 +71,11 @@ function m(e) {
       return t.is_header_hidden
     });
   return (0, r.jsxs)("div", {
-    className: l()(d.linksContainer, c.listElementWrapper),
+    className: l()(c.linksContainer, d.listElementWrapper),
     children: [!i && (0, r.jsx)(a.Heading, {
       variant: "heading-sm/semibold",
       color: "header-secondary",
-      className: d.header,
+      className: c.header,
       children: o.intl.string(o.t.hvVgAZ)
     }), n]
   })

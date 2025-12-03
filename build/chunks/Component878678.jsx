@@ -50,7 +50,7 @@ function p(e) {
       bodyClassName: b,
       transitionState: y,
       loading: O = false,
-      confirmButtonColor: v = s.Button.Colors.RED,
+      confirmButtonColor: v = s.zx.Colors.RED,
       focusCancel: S = false,
       impression: I
     } = e,
@@ -60,24 +60,24 @@ function p(e) {
       var e;
       return null == (e = T.current) ? true : e.focus()
     }, 0)
-  }, [S]), i.useLayoutEffect(() => () => null == E ? true : E()), null != p && (t = (0, r.jsx)(s.Button, {
+  }, [S]), i.useLayoutEffect(() => () => null == E ? true : E()), null != p && (t = (0, r.jsx)(s.zx, {
     "data-migration-pending": true,
     type: "button",
-    look: s.Button.Looks.FILLED,
-    color: s.Button.Colors.PRIMARY,
+    look: s.zx.Looks.FILLED,
+    color: s.zx.Colors.PRIMARY,
     className: u.cancelButton,
-    size: s.Button.Sizes.MEDIUM,
+    size: s.zx.Sizes.MEDIUM,
     disabled: O,
     onClick: () => {
       null == h || h(), g()
     },
     autoFocus: S,
     children: p
-  })), null != f && (n = (0, r.jsx)(s.Button, {
+  })), null != f && (n = (0, r.jsx)(s.zx, {
     "data-migration-pending": true,
     buttonRef: T,
     type: "submit",
-    size: s.Button.Sizes.MEDIUM,
+    size: s.zx.Sizes.MEDIUM,
     color: v,
     submitting: O,
     onClick: async () => {

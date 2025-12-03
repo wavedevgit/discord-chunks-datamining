@@ -821,7 +821,7 @@ class e3 extends Chunk473749.PureComponent {
       let {
         activeView: t
       } = e;
-      (0, B.PG)(t, this.props.chatInputType, this.props.channel.id)
+      (0, H.PG)(t, this.props.chatInputType, this.props.channel.id)
     }), eY(this, "handleOpenAppLauncher", e => {
       let {
         applicationId: t
@@ -862,7 +862,7 @@ let e4 = Chunk473749.memo(function(e) {
     accessibilityLabel: o
   } = (0, eD.Z)({
     channel: t
-  }), s = (0, es.S)(eI.default.getCurrentUser(), t), [c] = (0, W.AB)(null == n ? true : n.id), u = (0, H.Ux)(null == n ? true : n.id), d = (0, p.e7)([eI.default], () => eI.default.getCurrentUser()), f = (0, p.e7)([ex.ZP], () => {
+  }), s = (0, es.S)(eI.default.getCurrentUser(), t), [c] = (0, W.AB)(null == n ? true : n.id), u = (0, B.Ux)(null == n ? true : n.id), d = (0, p.e7)([eI.default], () => eI.default.getCurrentUser()), f = (0, p.e7)([ex.ZP], () => {
     var e, t, i;
     return null != d && null != (i = null == (e = ex.ZP.getMember(null != (t = null == n ? true : n.id) ? t : ez.lds, null == d ? true : d.id)) ? true : e.isPending) && i
   }), m = (0, p.e7)([er.Z], () => er.Z.isEnabled()), g = (0, eo.Z)(t.id), b = (0, K.Z)(t.id), C = (0, eh.k)(t.id), v = (0, p.e7)([eS.Z], () => eS.Z.getVoiceChannelId()), O = (0, p.e7)([ev.Z], () => ev.Z.getChannel(v)), x = (0, p.e7)([eI.default], () => t.type !== ez.d4z.DM ? null : eI.default.getUser(t.getRecipientId())), E = (0, p.e7)([el.ZP, ey.default], () => el.ZP.getUserCombo(ey.default.getId(), t.id)), j = (0, y.iD)(t), S = (0, y.d7)(t), P = j.length > 0 || t.rateLimitPerUser > 0 || null != E || null != S, {

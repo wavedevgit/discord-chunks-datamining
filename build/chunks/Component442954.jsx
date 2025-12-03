@@ -387,56 +387,13 @@ let j = {
   ConfirmModal: async () => {
     let {
       ConfirmModal: e
-    } = await Promise.resolve().then(require.bind(require, 878678)), {
-      Text: t
-    } = await Promise.resolve().then(require.bind(require, 481060));
-    return n => (0, a.jsx)(e, v(b({}, n), {
-      header: "Confirm Action",
+    } = await Promise.resolve().then(require.bind(require, 793030));
+    return t => (0, a.jsx)(e, v(b({}, t), {
+      title: "Confirm Action",
+      subtitle: "Are you sure you want to perform this action? This action cannot be undone.",
       confirmText: "Confirm",
-      cancelText: "Cancel",
       onConfirm: () => console.log("ConfirmModal: Confirmed"),
-      onCancel: () => console.log("ConfirmModal: Cancelled"),
-      children: (0, a.jsx)(t, {
-        variant: "text-md/normal",
-        children: "Are you sure you want to perform this action? This action cannot be undone."
-      })
-    }))
-  },
-  ConfirmModalDanger: async () => {
-    let {
-      ConfirmModal: e
-    } = await Promise.resolve().then(require.bind(require, 878678)), {
-      Text: t
-    } = await Promise.resolve().then(require.bind(require, 481060)), {
-      Button: l
-    } = await Promise.resolve().then(require.bind(require, 693789));
-    return n => (0, a.jsx)(e, v(b({}, n), {
-      header: "Delete Item",
-      confirmText: "Delete",
-      cancelText: "Cancel",
-      confirmButtonColor: l.Colors.RED,
-      onConfirm: () => console.log("ConfirmModalDanger: Deleted"),
-      onCancel: () => console.log("ConfirmModalDanger: Cancelled"),
-      children: (0, a.jsx)(t, {
-        variant: "text-md/normal",
-        children: "Are you sure you want to delete this item? This action is permanent and cannot be undone."
-      })
-    }))
-  },
-  ConfirmModalNoCancel: async () => {
-    let {
-      ConfirmModal: e
-    } = await Promise.resolve().then(require.bind(require, 878678)), {
-      Text: t
-    } = await Promise.resolve().then(require.bind(require, 481060));
-    return n => (0, a.jsx)(e, v(b({}, n), {
-      header: "Information",
-      confirmText: "Got it",
-      onConfirm: () => console.log("ConfirmModalNoCancel: Acknowledged"),
-      children: (0, a.jsx)(t, {
-        variant: "text-md/normal",
-        children: 'This is an informational message. Click "Got it" to continue.'
-      })
+      onCancel: () => console.log("ConfirmModal: Cancelled")
     }))
   },
   AlertModal: async () => {

@@ -14,11 +14,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(n, t) {
-  return (0, l.e7)([s.Z], () => s.Z.can(o.Plq.CONNECT, n), [n]) && n.isGuildVocal() ? (0, i.jsx)(r.sNh, {
+  return (0, l.e7)([c.Z], () => c.Z.can(o.Plq.CONNECT, n), [n]) && n.isGuildVocal() ? (0, i.jsx)(r.sNh, {
     id: "open-chat",
     label: d.intl.string(d.t.ZXxLQg),
     action: () => {
-      a.Z.updateChatOpen(n.id, true), (0, c.XU)(t.id, n.id)
+      a.Z.updateChatOpen(n.id, true), (0, s.XU)(t.id, n.id)
     }
   }) : null
 }

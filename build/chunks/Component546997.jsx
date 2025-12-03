@@ -2,13 +2,13 @@
 /** chunk id: 546997, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => E,
-  Z: () => b
+  E: () => _,
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk248514 = require("./248514.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
   Chunk579806 = require("./579806.js"),
@@ -18,67 +18,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function m(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      _(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function h(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function E(e) {
-  (0, d.isMac)() && e ? (0, o.ZDy)(async () => {
-    let {
-      ConfirmModal: t
-    } = await Promise.resolve().then(n.bind(n, 878678));
-    return n => (0, r.jsx)(t, g(m({}, n), {
-      onConfirm: () => {
-        s.Z.setUseSystemScreensharePicker(e), l.Z.app.relaunch()
-      },
-      confirmButtonColor: a.zx.Colors.BRAND,
-      header: p.intl.string(p.t["9jf31O"]),
-      cancelText: p.intl.string(p.t["ETE/oC"]),
-      confirmText: p.intl.string(p.t.BddRzS),
-      children: (0, r.jsx)(o.Text, {
-        variant: "text-md/normal",
-        children: p.intl.string(p.t.uBd6JW)
-      })
-    }))
+function _(e) {
+  (0, d.isMac)() && e ? (0, a.Z)({
+    title: p.intl.string(p.t["9jf31O"]),
+    subtitle: p.intl.string(p.t.uBd6JW),
+    variant: "primary",
+    onConfirm: () => {
+      s.Z.setUseSystemScreensharePicker(e), l.Z.app.relaunch()
+    },
+    confirmText: p.intl.string(p.t.BddRzS)
   }) : s.Z.setUseSystemScreensharePicker(e)
 }
 
-function b() {
+function m() {
   let {
     videoHook: e,
     experimentalSoundshare: t,
@@ -102,7 +54,7 @@ function b() {
         checked: module,
         onChange: e => s.Z.setVideoHook(e)
       })
-    }), require && Chunk755721 && (0, Chunk54381.jsx)(Chunk921801.F, {
+    }), require && Chunk248514 && (0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_EXPERIMENTAL_SOUNDSHARE,
       children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t["4I0qzZ"]),
@@ -114,7 +66,7 @@ function b() {
       children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.ie1mgY),
         checked: Chunk579806,
-        onChange: E
+        onChange: _
       })
     })]
   })

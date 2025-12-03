@@ -30,17 +30,17 @@ function y(e) {
     onClose: y
   } = e, [C, S] = l.useState(false), {
     trackUserProfileEditAction: E
-  } = (0, u.KZ)(), T = (0, r.e7)([b.default], () => b.default.getId()), {
-    config: N,
+  } = (0, u.KZ)(), N = (0, r.e7)([b.default], () => b.default.getId()), {
+    config: T,
     application: O
   } = (0, h.G)(), {
     fetched: P,
-    hasAlreadyLinked: w,
-    canStartAuthorization: I,
+    hasAlreadyLinked: I,
+    canStartAuthorization: w,
     startAuthorization: k
-  } = (0, c.F)(O), R = (0, x.ZP)(T), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == O ? true : O.id));
-  return null != N && null != N.edit_profile_upsell_image && null != O && P ? (0, a.jsx)(d.ZP, {
-    contentTypes: w ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : I ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+  } = (0, c.F)(O), R = (0, x.ZP)(N), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == O ? true : O.id));
+  return null != T && null != T.edit_profile_upsell_image && null != O && P ? (0, a.jsx)(d.ZP, {
+    contentTypes: I ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : w ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
@@ -54,7 +54,7 @@ function y(e) {
         gradientColor: "blue",
         graphic: {
           type: "image",
-          src: N.edit_profile_upsell_image
+          src: T.edit_profile_upsell_image
         },
         title: _.intl.format(_.t.TXDztH, {
           applicationName: O.name
@@ -67,7 +67,7 @@ function y(e) {
           text: _.intl.string(_.t.VSLDly),
           onClick: () => {
             S(true), (0, f.openUserProfileModal)({
-              userId: T,
+              userId: N,
               section: j.oh.WIDGETS
             }).then(() => {
               l(v.L.TAKE_ACTION), y();
@@ -104,7 +104,7 @@ function y(e) {
             k({
               onConfirm: () => {
                 S(true), (0, f.openUserProfileModal)({
-                  userId: T,
+                  userId: N,
                   section: j.oh.WIDGETS
                 }).then(() => {
                   l(v.L.TAKE_ACTION), y()

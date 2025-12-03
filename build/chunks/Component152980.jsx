@@ -30,10 +30,10 @@ function C(e) {
     onDeleteAttachment: d
   } = e, u = r.useCallback(() => {
     null == d || d(A.id)
-  }, [d, A.id]), c = a >= 1, g = a < 0, f = c || g, m = null != (t = A.filename) ? t : A.id, h = (0, p.kg)(a);
+  }, [d, A.id]), c = a >= 1, g = a < 0, f = c || g, m = null != (t = A.filename) ? t : A.id, v = (0, p.kg)(a);
   return (0, n.jsx)(o.u, {
     asContainer: true,
-    text: h,
+    text: v,
     children: (0, n.jsxs)("div", {
       className: i()(q.attachedFileCard, {
         [q.attachedFileCardError]: g,
@@ -53,7 +53,7 @@ function C(e) {
         type: s.$jN.Type.SPINNING_CIRCLE
       }), f && null != d && (0, n.jsx)(s.P3F, {
         onClick: u,
-        "aria-label": v.intl.formatToPlainString(v.t["1o5hyW"], {
+        "aria-label": h.intl.formatToPlainString(h.t["1o5hyW"], {
           attachment: m
         }),
         "aria-hidden": false,
@@ -96,15 +96,15 @@ function U(e) {
     className: q.container,
     children: [(0, n.jsx)(d.Z, {
       className: q.uploadArea,
-      title: v.intl.string(v.t["5eTk2g"]),
-      description: v.intl.string(v.t.Ecxoxl),
+      title: h.intl.string(h.t["5eTk2g"]),
+      description: h.intl.string(h.t.Ecxoxl),
       icons: m.J6,
       onDrop: U
     }), (0, n.jsxs)(g.Z, {
       className: q.addFileButtonLook,
       innerClassName: q.addFileButton,
       disabled: !a,
-      "aria-label": v.intl.string(v.t["23LeCD"]),
+      "aria-label": h.intl.string(h.t["23LeCD"]),
       "aria-describedby": b,
       multiple: true,
       onChange: function(e) {
@@ -118,7 +118,7 @@ function U(e) {
       }), (0, n.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: v.intl.string(v.t["23LeCD"])
+        children: h.intl.string(h.t["23LeCD"])
       })]
     }), (0, n.jsx)(s.LZC, {
       size: 12
@@ -126,17 +126,17 @@ function U(e) {
       id: b,
       color: "text-muted",
       variant: "text-xs/normal",
-      children: i ? v.intl.formatToPlainString(v.t.lvU6sr, {
-        fileUploadLimit: h.TR
-      }) : v.intl.formatToPlainString(v.t.DOXzIU, {
-        fileUploadLimit: h.TR
+      children: i ? h.intl.formatToPlainString(h.t.lvU6sr, {
+        fileUploadLimit: v.TR
+      }) : h.intl.formatToPlainString(h.t.DOXzIU, {
+        fileUploadLimit: v.TR
       })
     }), A.length > 0 && (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("div", {
         className: q.separator
       }), (0, n.jsx)("ul", {
         className: q.attachedFilesContainer,
-        "aria-label": v.intl.string(v.t.YZ6cTW),
+        "aria-label": h.intl.string(h.t.YZ6cTW),
         children: A.map(e => (0, n.jsx)("li", {
           children: (0, n.jsx)(C, {
             upload: e,

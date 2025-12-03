@@ -1,8 +1,8 @@
 /** Chunk was on 837 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => w,
-  openDevToolsPopout: () => T
+  default: () => I,
+  openDevToolsPopout: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,12 +45,12 @@ function E(e) {
   })
 }
 
-function T() {
+function N() {
   (0, Chunk788983.open)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk54381.jsx)(Chunk238246.Z, {
     windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
     withTitleBar: true,
-    children: (0, Chunk54381.jsx)(w, {
+    children: (0, Chunk54381.jsx)(I, {
       mobile: false,
       isPopout: true
     })
@@ -60,7 +60,7 @@ function T() {
   })
 }
 
-function N(e) {
+function T(e) {
   var t;
   let {
     isPopout: n = false
@@ -90,7 +90,7 @@ function N(e) {
         children: [(0, a.jsx)(m.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
-          onClick: T
+          onClick: N
         }), (0, a.jsx)(m.ZP.Icon, {
           icon: c.Dio,
           tooltip: y.intl.string(y.t.cpT0Cq),
@@ -132,7 +132,7 @@ function O() {
       onResizeEnd: r
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk54381.jsx)(N, {})
+      children: (0, Chunk54381.jsx)(T, {})
     })]
   })
 }
@@ -142,7 +142,7 @@ function P() {
     className: r()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
     children: (0, Chunk54381.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk54381.jsx)(N, {})
+      children: (0, Chunk54381.jsx)(T, {})
     })
   }) : (0, Chunk54381.jsx)("div", {
     className: Chunk552883.container,
@@ -164,14 +164,14 @@ function P() {
   })
 }
 
-function w(e) {
+function I(e) {
   let {
     mobile: t,
     isPopout: n = false
   } = e;
   return t ? (0, a.jsx)(P, {}) : n ? (0, a.jsx)("div", {
     className: C.popoutContainer,
-    children: (0, a.jsx)(N, {
+    children: (0, a.jsx)(T, {
       isPopout: true
     })
   }) : (0, a.jsx)(O, {})

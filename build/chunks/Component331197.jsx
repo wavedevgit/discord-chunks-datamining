@@ -49,8 +49,8 @@ function E(e) {
     analyticsLocations: V
   } = (0, u.ZP)(), {
     isHovered: F,
-    setIsHovered: B,
-    onMouseEnter: H,
+    setIsHovered: H,
+    onMouseEnter: B,
     onMouseLeave: G
   } = (0, f.Z)(200, 300);
 
@@ -98,7 +98,7 @@ function E(e) {
   }
 
   function W() {
-    (0, d.v)(P, d.d.SOUNDBOARD), j === O.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), H()) : Z(), null == S || S(O.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), j === O.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), B()) : Z(), null == S || S(O.D.SOUNDBOARD))
   }
   let q = r.useRef(null);
   return (0, i.jsx)(s.y, {
@@ -110,7 +110,7 @@ function E(e) {
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      B(false), null == S || S(true)
+      H(false), null == S || S(true)
     },
     renderPopout: e => {
       let {
@@ -118,7 +118,7 @@ function E(e) {
       } = e;
       return L ? null : (0, i.jsx)(v.Z, {
         children: (0, i.jsx)("div", {
-          onMouseEnter: H,
+          onMouseEnter: B,
           onMouseLeave: G,
           children: (0, i.jsx)(b.Z, {
             guildId: A,
@@ -143,7 +143,7 @@ function E(e) {
       onContextMenu: z,
       onClick: W,
       onMouseEnter: () => {
-        H(), T()
+        B(), T()
       },
       onMouseLeave: () => {
         null == j && (G(), N())

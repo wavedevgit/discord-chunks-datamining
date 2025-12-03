@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx");
 
 function i(e) {
@@ -13,7 +13,7 @@ function i(e) {
       ruleName: i,
       keyword: l
     } = e,
-    a = function(e, t) {
+    u = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -28,7 +28,7 @@ function i(e) {
       }
       return o
     }(e, ["ruleName", "keyword"]);
-  let u = null != i ? i : c.intl.string(c.t.ffR2cM);
+  let b = null != i ? i : c.intl.string(c.t.ffR2cM);
   return (0, n.jsx)(o.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -46,17 +46,13 @@ function i(e) {
       })
     }
     return e
-  }({}, a), r = r = {
-    header: c.intl.string(c.t["zib/xJ"]),
-    cancelText: c.intl.string(c.t["ETE/oC"]),
-    confirmText: c.intl.string(c.t["cY+Oob"]),
-    children: (0, n.jsx)(o.Text, {
-      variant: "text-md/normal",
-      children: c.intl.format(c.t.AxSYKB, {
-        ruleName: u,
-        keyword: l
-      })
-    })
+  }({}, u), r = r = {
+    title: c.intl.string(c.t["zib/xJ"]),
+    subtitle: c.intl.format(c.t.AxSYKB, {
+      ruleName: b,
+      keyword: l
+    }),
+    confirmText: c.intl.string(c.t["cY+Oob"])
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

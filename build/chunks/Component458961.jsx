@@ -13,6 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk692547 = require("./692547.js"),
   Chunk215569 = require("./215569.js"),
   Chunk796027 = require("./796027.jsx"),
+  Chunk248514 = require("./248514.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk749210 = require("./749210.js"),
   Chunk725803 = require("./725803.js"),
@@ -44,7 +45,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk179598 = require("./179598.js");
 
-function D(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var A = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(A);
@@ -62,19 +63,6 @@ function D(e) {
   }
   return e
 }
-
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var A = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      A.push.apply(A, n)
-    }
-    return A
-  })(Object(t)).forEach(function(A) {
-    Object.defineProperty(e, A, Object.getOwnPropertyDescriptor(t, A))
-  }), e
-}
 let k = (0, Chunk313201.hQ)(),
   E = (0, Chunk313201.hQ)(),
   G = (0, Chunk313201.hQ)();
@@ -86,22 +74,22 @@ function Y(e) {
     value: r,
     disabled: a,
     warning: l
-  } = e, o = (0, m.Dt)(), s = a ? "text-muted" : "text-default";
+  } = e, o = (0, v.Dt)(), s = a ? "text-muted" : "text-default";
   return (0, n.jsxs)("label", {
-    className: i()(L.benefitToggleContainer, {
-      [L.disabled]: a
+    className: i()(D.benefitToggleContainer, {
+      [D.disabled]: a
     }),
     htmlFor: o,
-    children: [(0, n.jsx)(g.Text, {
+    children: [(0, n.jsx)(f.Text, {
       variant: "text-sm/medium",
       color: s,
       children: t
     }), null != l && (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(g.LZC, {
+      children: [(0, n.jsx)(f.LZC, {
         size: 4,
         horizontal: true
       }), l]
-    }), (0, n.jsx)(g.rsf, {
+    }), (0, n.jsx)(f.rsf, {
       onChange: A,
       checked: r,
       disabled: a,
@@ -129,15 +117,15 @@ function M(e) {
     errorMessage: l
   } = e, {
     priceTiers: o
-  } = (0, h.R)(t, z.RG5.GUILD_PRODUCTS), s = r.useMemo(() => (null != o ? o : null != A ? [A] : []).map(e => ({
+  } = (0, h.R)(t, w.RG5.GUILD_PRODUCTS), s = r.useMemo(() => (null != o ? o : null != A ? [A] : []).map(e => ({
     value: e,
-    label: (0, j.T4)(e, z.pKx.USD)
+    label: (0, V.T4)(e, w.pKx.USD)
   })), [o, A]);
-  return (0, n.jsx)(g.VcW, {
+  return (0, n.jsx)(f.VcW, {
     label: i,
     errorMessage: l,
     value: A,
-    placeholder: B.intl.string(B.t.aI4J5H),
+    placeholder: L.intl.string(L.t.aI4J5H),
     maxVisibleItems: 5,
     options: s,
     onChange: a,
@@ -147,333 +135,334 @@ function M(e) {
 }
 
 function J(e) {
-  var t, a, i, l, m, h, b, H, J, $, ee, et;
+  var t, A, a, i, l, v, h, C, H, J, $, ee;
   let {
-    guildId: eA,
-    productId: en,
-    transitionState: er,
-    onClose: ea
-  } = e, [ei, el] = r.useState(en), eo = (0, s.e7)([P.Z], () => null == ei ? null : P.Z.getGuildProduct(ei), [ei]), es = (0, s.e7)([P.Z], () => P.Z.getGuildProductsForGuild(eA, {
+    guildId: et,
+    productId: eA,
+    transitionState: en,
+    onClose: er
+  } = e, [ea, ei] = r.useState(eA), el = (0, s.e7)([F.Z], () => null == ea ? null : F.Z.getGuildProduct(ea), [ea]), eo = (0, s.e7)([F.Z], () => F.Z.getGuildProductsForGuild(et, {
     publishedOnly: true
-  }).length, [eA]), ed = (null == eo ? true : eo.published) === true, {
-    application: eu
-  } = (0, p.Z)(eA, w.wW.GUILD_ROLE_SUBSCRIPTIONS), ec = y.M["0"], eg = C.QK.useSetting(), ef = (0, x.n)(), ep = r.useCallback(() => {
+  }).length, [et]), es = (null == el ? true : el.published) === true, {
+    application: ed
+  } = (0, m.Z)(et, B.wW.GUILD_ROLE_SUBSCRIPTIONS), eu = I.M["0"], ec = U.QK.useSetting(), eg = (0, O.n)(), ef = r.useCallback(() => {
     var e;
-    return (null == eo || null == (e = eo.image_asset) ? true : e.application_id) == null ? ec.data : (0, V._W)(eo.image_asset.application_id, eo.image_asset, 600, ef && eg ? true : "webp")
-  }, [ec, eo, ef, eg]), {
-    shouldRestrictUpdatingCreatorMonetizationSettings: em
-  } = (0, q.gX)(eA);
+    return (null == el || null == (e = el.image_asset) ? true : e.application_id) == null ? eu.data : (0, x._W)(el.image_asset.application_id, el.image_asset, 600, eg && ec ? true : "webp")
+  }, [eu, el, eg, ec]), {
+    shouldRestrictUpdatingCreatorMonetizationSettings: ep
+  } = (0, b.gX)(et);
   r.useEffect(() => {
-    em && (ea(), (0, T.B)(B.intl.string(B.t.OLf3xn), B.t["90LBVr"]))
-  }, [em, ea]);
-  let [eh, ev] = r.useState(null != (i = null == eo ? true : eo.name) ? i : ""), [eq, eb] = r.useState(null != (l = null == eo ? true : eo.description) ? l : ""), [eC, eU] = r.useState(null != (m = null == eo ? true : eo.price_tier) ? m : true), [ej, eV] = r.useState(ep), [ex, eO] = r.useState(null != (h = null == eo || null == (t = eo.image_asset) ? true : t.filename) ? h : ec.name), [eP, eF] = r.useState(false), [ey, eI] = r.useState(), eN = r.useMemo(() => null != eC ? (0, j.T4)(eC, z.pKx.USD) : true, [eC]), [eK, eT] = r.useState(true), {
-    changesSaving: eZ,
-    saveError: eW,
-    saveProductWithAttachments: eX,
-    hasUnsavedAttachmentChanges: eQ,
-    cancelUnusedUploads: eS
-  } = (0, O.P)(), ez = (null == eo ? true : eo.attachments) != null && (null == eo ? true : eo.attachments.length) > 0, ew = null != eW ? eW : ey, eB = null != eZ && "published" in eZ, eL = null != eZ && !eB, eD = null != (b = null == eo ? true : eo.role_id) ? b : null, [eR, ek] = r.useState(), eE = null != eR || null != eD, eG = (0, s.e7)([U.Z], () => null != eD && null !== eR ? U.Z.getRole(eA, eD) : null != eR ? eR : true, [eR, eD, eA]), eY = "";
-  eE && eK ? eY = B.intl.string(B.t.ih4QMU) : eE ? eY = B.intl.string(B.t.o9xphc) : eK && (eY = B.intl.string(B.t.DWYJua));
-  let eH = () => {
-      eT(false), eS()
+    ep && (er(), (0, Z.B)(L.intl.string(L.t.OLf3xn), L.t["90LBVr"]))
+  }, [ep, er]);
+  let [em, ev] = r.useState(null != (a = null == el ? true : el.name) ? a : ""), [eh, eq] = r.useState(null != (i = null == el ? true : el.description) ? i : ""), [eb, eC] = r.useState(null != (l = null == el ? true : el.price_tier) ? l : true), [eU, ej] = r.useState(ef), [eV, ex] = r.useState(null != (v = null == el || null == (t = el.image_asset) ? true : t.filename) ? v : eu.name), [eO, eP] = r.useState(false), [eF, ey] = r.useState(), eI = r.useMemo(() => null != eb ? (0, V.T4)(eb, w.pKx.USD) : true, [eb]), [eN, eK] = r.useState(true), {
+    changesSaving: eT,
+    saveError: eZ,
+    saveProductWithAttachments: eW,
+    hasUnsavedAttachmentChanges: eX,
+    cancelUnusedUploads: eQ
+  } = (0, P.P)(), eS = (null == el ? true : el.attachments) != null && (null == el ? true : el.attachments.length) > 0, ez = null != eZ ? eZ : eF, ew = null != eT && "published" in eT, eB = null != eT && !ew, eL = null != (h = null == el ? true : el.role_id) ? h : null, [eD, eR] = r.useState(), ek = null != eD || null != eL, eE = (0, s.e7)([j.Z], () => null != eL && null !== eD ? j.Z.getRole(et, eL) : null != eD ? eD : true, [eD, eL, et]), eG = "";
+  ek && eN ? eG = L.intl.string(L.t.ih4QMU) : ek ? eG = L.intl.string(L.t.o9xphc) : eN && (eG = L.intl.string(L.t.DWYJua));
+  let eY = () => {
+      eK(false), eQ()
     },
-    [eM, eJ] = r.useState(),
+    [eH, eM] = r.useState(),
     {
-      changes: e_,
-      hasUnsavedChanges: e$,
-      canSaveForDraft: e0,
-      canSaveForPublished: e1,
-      canPublishOrUnpublish: e3
-    } = r.useMemo(() => (0, F.fG)({
-      guildProductListing: eo,
-      name: eh,
-      priceTier: eC,
-      description: eq,
-      image: ej,
-      imageName: ex,
-      isImageChanged: eP,
-      newRoleParams: eR,
-      hasSavedAttachments: ez,
-      hasUnsavedAttachmentChanges: eQ
-    }), [eo, eh, eC, eq, ej, ex, eP, eR, ez, eQ]),
-    e9 = r.useMemo(() => e$ || null == eM || "publish" === eM || null != ew ? null : (0, n.jsx)(g.oXn, {
-      className: L.successNotice,
+      changes: eJ,
+      hasUnsavedChanges: e_,
+      canSaveForDraft: e$,
+      canSaveForPublished: e0,
+      canPublishOrUnpublish: e1
+    } = r.useMemo(() => (0, y.fG)({
+      guildProductListing: el,
+      name: em,
+      priceTier: eb,
+      description: eh,
+      image: eU,
+      imageName: eV,
+      isImageChanged: eO,
+      newRoleParams: eD,
+      hasSavedAttachments: eS,
+      hasUnsavedAttachmentChanges: eX
+    }), [el, em, eb, eh, eU, eV, eO, eD, eS, eX]),
+    e3 = r.useMemo(() => e_ || null == eH || "publish" === eH || null != ez ? null : (0, n.jsx)(f.oXn, {
+      className: D.successNotice,
       children: (0, n.jsx)(c.Z, {
         message: (0, n.jsxs)("div", {
-          className: L.successNoticeMessage,
-          children: [(0, n.jsx)(g.owK, {
+          className: D.successNoticeMessage,
+          children: [(0, n.jsx)(f.owK, {
             size: "md",
             color: d.Z.colors.BUTTON_POSITIVE_BACKGROUND.css,
             secondaryColor: d.Z.colors.WHITE.css
-          }), (0, n.jsx)(g.Text, {
+          }), (0, n.jsx)(f.Text, {
             variant: "text-md/medium",
-            children: "draft" === eM ? B.intl.string(B.t["3Rv4MB"]) : "update_publish" === eM ? B.intl.string(B.t["8fPiB3"]) : B.intl.string(B.t["3LUFnI"])
+            children: "draft" === eH ? L.intl.string(L.t["3Rv4MB"]) : "update_publish" === eH ? L.intl.string(L.t["8fPiB3"]) : L.intl.string(L.t["3LUFnI"])
           })]
         }),
-        onReset: () => eJ(true),
-        onResetText: B.intl.string(B.t.T6QuWe)
+        onReset: () => eM(true),
+        onResetText: L.intl.string(L.t.T6QuWe)
       })
-    }), [ew, e$, eM]),
-    e6 = r.useCallback(() => {
-      e$ ? (0, K.Z)({
-        title: B.intl.string(B.t.FVDhIW),
-        body: B.intl.string(B.t.Hgdhwb),
-        cta: B.intl.string(B.t["h0bti/"]),
-        closeLabel: B.intl.string(B.t["+WYo0m"]),
+    }), [ez, e_, eH]),
+    e9 = r.useCallback(() => {
+      e_ ? (0, T.Z)({
+        title: L.intl.string(L.t.FVDhIW),
+        body: L.intl.string(L.t.Hgdhwb),
+        cta: L.intl.string(L.t["h0bti/"]),
+        closeLabel: L.intl.string(L.t["+WYo0m"]),
         onConfirm: () => {
-          ea()
+          er()
         }
-      }) : ea()
-    }, [ea, e$]);
+      }) : er()
+    }, [er, e_]);
   r.useEffect(() => {
-    (0, g.oav)(S.Yz, e => (0, n.jsx)(_, D({
-      guildId: eA,
-      productId: ei
-    }, e)), e6)
-  }, [eA, e6, ei]);
-  let e7 = async e => {
-    let t = (0, F.pM)({
-      newRoleParams: eR
+    (0, f.oav)(z.Yz, e => (0, n.jsx)(_, R({
+      guildId: et,
+      productId: ea
+    }, e)), e9)
+  }, [et, e9, ea]);
+  let e6 = async e => {
+    let t = (0, y.pM)({
+      newRoleParams: eD
     });
-    if (eI(t), null != t) return;
-    let A = await eX(e);
-    if (eF(false), null != A) {
-      if (null != e.name && ev(A.name), null != e.description && eb(A.description), null != eR) {
+    if (ey(t), null != t) return;
+    let A = await eW(e);
+    if (eP(false), null != A) {
+      if (null != e.name && ev(A.name), null != e.description && eq(A.description), null != eD) {
         let e = A.role_id;
-        o()(null != e, "Cannot update role without role ID"), await f.Z.updateRole(eA, e, eR)
+        o()(null != e, "Cannot update role without role ID"), await p.Z.updateRole(et, e, eD)
       }
-      ek(true), el(A.id), "published" in e && true === e.published && ea()
+      eR(true), ei(A.id), "published" in e && true === e.published && er()
     }
   };
   r.useEffect(() => {
-    if (null != ew) {
+    if (null != ez) {
       var e;
-      (0, Z.V)(ew, eA, null == eu || null == (e = eu.team) ? true : e.id)
+      (0, W.V)(ez, et, null == ed || null == (e = ed.team) ? true : e.id)
     }
-  }, [ew, eA, eu]), r.useEffect(() => {
-    e$ && eJ(true)
-  }, [e$]);
-  let e2 = r.useRef(null),
-    e8 = !e3 || !ed && es >= S.dD;
-  return (0, n.jsxs)(g.Y0X, {
-    transitionState: er,
-    size: g.CgR.DYNAMIC,
-    className: L.modalRoot,
+  }, [ez, et, ed]), r.useEffect(() => {
+    e_ && eM(true)
+  }, [e_]);
+  let e7 = r.useRef(null),
+    e2 = !e1 || !es && eo >= z.dD;
+  return (0, n.jsxs)(f.Y0X, {
+    transitionState: en,
+    size: f.CgR.DYNAMIC,
+    className: D.modalRoot,
     "aria-labelledby": k,
     parentComponent: "GuildProductEditModal",
     "data-migration-pending": true,
-    children: [(0, n.jsxs)(g.xBx, {
-      className: L.modalHeader,
+    children: [(0, n.jsxs)(f.xBx, {
+      className: D.modalHeader,
       separator: false,
       "data-migration-pending": true,
       children: [(0, n.jsxs)("div", {
-        className: L.headerText,
-        children: [(0, n.jsx)(g.Heading, {
+        className: D.headerText,
+        children: [(0, n.jsx)(f.Heading, {
           id: k,
           variant: "heading-xl/semibold",
           color: "header-primary",
-          children: B.intl.string(B.t.DnNl1T)
-        }), (0, n.jsx)(g.Text, {
+          children: L.intl.string(L.t.DnNl1T)
+        }), (0, n.jsx)(f.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: B.intl.string(B.t["Tu7f+f"])
+          children: L.intl.string(L.t["Tu7f+f"])
         })]
-      }), (0, n.jsx)(g.olH, {
-        onClick: e6,
-        className: L.__invalid_modalCloseButton,
+      }), (0, n.jsx)(f.olH, {
+        onClick: e9,
+        className: D.__invalid_modalCloseButton,
         "data-migration-pending": true
       })]
-    }), (0, n.jsxs)(g.hzk, {
-      className: L.modalContent,
+    }), (0, n.jsxs)(f.hzk, {
+      className: D.modalContent,
       scrollbarType: "none",
       "data-migration-pending": true,
-      children: [(0, n.jsx)(g.zJl, {
+      children: [(0, n.jsx)(f.zJl, {
         children: (0, n.jsxs)("div", {
-          className: L.productFieldsSection,
-          ref: e2,
-          children: [(0, n.jsx)(g.oil, {
-            label: B.intl.string(B.t.Hsk7xT),
-            error: null == ew ? true : ew.getFirstFieldErrorMessage("name"),
-            value: eh,
+          className: D.productFieldsSection,
+          ref: e7,
+          children: [(0, n.jsx)(f.oil, {
+            label: L.intl.string(L.t.Hsk7xT),
+            error: null == ez ? true : ez.getFirstFieldErrorMessage("name"),
+            value: em,
             onChange: ev,
             id: E,
             maxLength: 100,
-            placeholder: B.intl.string(B.t["/BiYSO"]),
+            placeholder: L.intl.string(L.t["/BiYSO"]),
             required: true
-          }), (0, n.jsx)(v.Z, {
-            label: B.intl.string(B.t.QdKLyW),
-            errorMessage: null != (H = null == ew ? true : ew.getFirstFieldErrorMessage("description")) ? H : true,
+          }), (0, n.jsx)(q.Z, {
+            label: L.intl.string(L.t.QdKLyW),
+            errorMessage: null != (C = null == ez ? true : ez.getFirstFieldErrorMessage("description")) ? C : true,
             id: G,
-            className: L.descriptionArea,
-            value: eq,
-            onChange: eb,
+            className: D.descriptionArea,
+            value: eh,
+            onChange: eq,
             maxLength: 1500,
-            placeholder: B.intl.string(B.t.BFwyum),
-            showCharacterCount: eq.length > 0,
-            parentModalKey: S.Yz,
+            placeholder: L.intl.string(L.t.BFwyum),
+            showCharacterCount: eh.length > 0,
+            parentModalKey: z.Yz,
             required: true
           }), (0, n.jsx)(M, {
-            label: B.intl.string(B.t["CAY/vh"]),
-            errorMessage: null != (J = null == ew ? true : ew.getFirstFieldErrorMessage("price_tier")) ? J : true,
-            guildId: eA,
-            selectedPriceTier: eC,
-            setPriceTier: eU
-          }), (0, n.jsx)(g.gNt, {
-            label: B.intl.string(B.t.sqXj60),
-            errorMessage: null != ($ = null == ew ? true : ew.getFirstFieldErrorMessage("image")) ? $ : true,
-            description: B.intl.string(B.t.yOU4Vm),
-            children: (0, n.jsx)(W.Z, {
-              presetImages: y.M,
-              radioGroupAriaLabel: B.intl.string(B.t.fKzQj0),
-              image: ej,
-              imageName: ex,
-              savedImageName: null == eo || null == (a = eo.image_asset) ? true : a.filename,
+            label: L.intl.string(L.t["CAY/vh"]),
+            errorMessage: null != (H = null == ez ? true : ez.getFirstFieldErrorMessage("price_tier")) ? H : true,
+            guildId: et,
+            selectedPriceTier: eb,
+            setPriceTier: eC
+          }), (0, n.jsx)(f.gNt, {
+            label: L.intl.string(L.t.sqXj60),
+            errorMessage: null != (J = null == ez ? true : ez.getFirstFieldErrorMessage("image")) ? J : true,
+            description: L.intl.string(L.t.yOU4Vm),
+            children: (0, n.jsx)(X.Z, {
+              presetImages: I.M,
+              radioGroupAriaLabel: L.intl.string(L.t.fKzQj0),
+              image: eU,
+              imageName: eV,
+              savedImageName: null == el || null == (A = el.image_asset) ? true : A.filename,
               onChange: (e, t) => {
                 if (null != e) {
                   var A;
-                  eV(e), eO(t), eF(e.startsWith("data:") || t !== (null == eo || null == (A = eo.image_asset) ? true : A.filename))
+                  ej(e), ex(t), eP(e.startsWith("data:") || t !== (null == el || null == (A = el.image_asset) ? true : A.filename))
                 }
               }
             })
-          }), eK ? (0, n.jsx)(g.gNt, {
-            label: B.intl.string(B.t.zLrtkN),
-            errorMessage: null != (ee = null == ew ? true : ew.getFirstFieldErrorMessage("attachments")) ? ee : true,
-            children: (0, n.jsx)(N.s, {
+          }), eN ? (0, n.jsx)(f.gNt, {
+            label: L.intl.string(L.t.zLrtkN),
+            errorMessage: null != ($ = null == ez ? true : ez.getFirstFieldErrorMessage("attachments")) ? $ : true,
+            children: (0, n.jsx)(K.s, {
               onFileAdded: () => {
                 var e;
-                null == (e = e2.current) || e.scrollIntoView({
+                null == (e = e7.current) || e.scrollIntoView({
                   behavior: "smooth",
                   block: "end"
                 })
               }
             })
-          }) : null, eE ? (0, n.jsx)(Q.ZP, {
-            error: null != (et = null == ew ? true : ew.getFirstFieldErrorMessage(F.NB)) ? et : true,
-            newRoleParams: eR,
-            setNewRoleParams: ek,
-            guildId: eA,
-            listingRoleId: eD,
-            productId: ei
+          }) : null, ek ? (0, n.jsx)(S.ZP, {
+            error: null != (ee = null == ez ? true : ez.getFirstFieldErrorMessage(y.NB)) ? ee : true,
+            newRoleParams: eD,
+            setNewRoleParams: eR,
+            guildId: et,
+            listingRoleId: eL,
+            productId: ea
           }) : null]
         })
       }), (0, n.jsx)("div", {
-        className: L.horizontalSeparator
-      }), (0, n.jsx)(g.zJl, {
+        className: D.horizontalSeparator
+      }), (0, n.jsx)(f.zJl, {
         children: (0, n.jsxs)("div", {
-          className: L.productPreview,
-          children: [(0, n.jsx)(X.Z, {
-            disabled: e8,
-            disabledTooltip: ed ? B.intl.string(B.t["0NQ00t"]) : es >= S.dD ? B.intl.format(B.t.IqWPVt, {
-              maxProducts: S.dD
-            }) : B.intl.string(B.t["Ax89/c"]),
-            published: ed,
+          className: D.productPreview,
+          children: [(0, n.jsx)(Q.Z, {
+            disabled: e2,
+            disabledTooltip: es ? L.intl.string(L.t["0NQ00t"]) : eo >= z.dD ? L.intl.format(L.t.IqWPVt, {
+              maxProducts: z.dD
+            }) : L.intl.string(L.t["Ax89/c"]),
+            published: es,
             onClick: () => {
-              o()(e3, "Attempting to publish/unpublish when not allowed"), eJ(ed ? "unpublish" : "publish"), e7(R(D({}, e_), {
-                published: !ed
-              }))
+              var e, t;
+              o()(e1, "Attempting to publish/unpublish when not allowed"), eM(es ? "unpublish" : "publish"), e6((e = R({}, eJ), t = t = {
+                published: !es
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+                var A = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                  var n = Object.getOwnPropertySymbols(e);
+                  A.push.apply(A, n)
+                }
+                return A
+              })(Object(t)).forEach(function(A) {
+                Object.defineProperty(e, A, Object.getOwnPropertyDescriptor(t, A))
+              }), e))
             },
-            submitting: eB
+            submitting: ew
           }), (0, n.jsx)("div", {
-            className: L.verticalSeparator
-          }), (0, n.jsx)(g.Heading, {
+            className: D.verticalSeparator
+          }), (0, n.jsx)(f.Heading, {
             variant: "text-xs/bold",
             color: "header-secondary",
-            className: L.previewHeading,
-            children: B.intl.string(B.t["6I7nQT"])
-          }), (0, n.jsx)(g.LZC, {
+            className: D.previewHeading,
+            children: L.intl.string(L.t["6I7nQT"])
+          }), (0, n.jsx)(f.LZC, {
             size: 4
-          }), (0, n.jsx)(g.Text, {
+          }), (0, n.jsx)(f.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: B.intl.string(B.t.Oq4dfU)
-          }), (0, n.jsx)(g.LZC, {
+            children: L.intl.string(L.t.Oq4dfU)
+          }), (0, n.jsx)(f.LZC, {
             size: 16
-          }), (0, n.jsx)(I.Z, {
-            imageUrl: ej,
-            name: "" === eh ? B.intl.string(B.t.EmqIwl) : eh,
-            description: "" === eq ? B.intl.string(B.t["11NA2L"]) : eq,
-            formattedPrice: eN,
-            role: eG,
-            productType: eY,
-            ctaComponent: (0, n.jsx)(g.Button, {
-              text: B.intl.string(B.t.xUi3BL)
+          }), (0, n.jsx)(N.Z, {
+            imageUrl: eU,
+            name: "" === em ? L.intl.string(L.t.EmqIwl) : em,
+            description: "" === eh ? L.intl.string(L.t["11NA2L"]) : eh,
+            formattedPrice: eI,
+            role: eE,
+            productType: eG,
+            ctaComponent: (0, n.jsx)(f.Button, {
+              text: L.intl.string(L.t.xUi3BL)
             }),
             cardWidth: 340,
             thumbnailHeight: 190
           })]
         })
       })]
-    }), (0, n.jsx)(g.mzw, {
+    }), (0, n.jsx)(f.mzw, {
       "data-migration-pending": true,
       children: (0, n.jsxs)("div", {
-        className: L.footerActionButtons,
+        className: D.footerActionButtons,
         children: [(0, n.jsxs)("div", {
-          className: L.footerActionLeftButtons,
+          className: D.footerActionLeftButtons,
           children: [(0, n.jsx)(Y, {
-            text: B.intl.string(B.t.YzGIVF),
-            value: eE,
+            text: L.intl.string(L.t.YzGIVF),
+            value: ek,
             onChange: e => {
-              e ? ek((0, Q.YP)()) : ek(true)
+              e ? eR((0, S.YP)()) : eR(true)
             },
-            warning: null === eR ? (0, n.jsx)(Q.aN, {}) : true,
-            disabled: null != eD
+            warning: null === eD ? (0, n.jsx)(S.aN, {}) : true,
+            disabled: null != eL
           }), (0, n.jsx)(Y, {
-            text: B.intl.string(B.t.C6wP2Q),
-            value: eK,
+            text: L.intl.string(L.t.C6wP2Q),
+            value: eN,
             onChange: e => {
-              e ? eT(true) : eQ ? (0, g.ZDy)(async () => {
-                let {
-                  ConfirmModal: e
-                } = await Promise.resolve().then(A.bind(A, 481060));
-                return t => (0, n.jsx)(e, R(D({}, t), {
-                  header: B.intl.string(B.t["2WihyY"]),
-                  confirmText: B.intl.string(B.t.N86XcP),
-                  cancelText: B.intl.string(B.t["ETE/oC"]),
-                  onConfirm: eH,
-                  children: (0, n.jsx)(g.Text, {
-                    variant: "text-md/normal",
-                    children: B.intl.string(B.t.ixRBLh)
-                  })
-                }))
-              }) : eH()
+              e ? eK(true) : eX ? (0, g.Z)({
+                title: L.intl.string(L.t["2WihyY"]),
+                subtitle: L.intl.string(L.t.ixRBLh),
+                confirmText: L.intl.string(L.t.N86XcP),
+                onConfirm: eY
+              }) : eY()
             },
-            disabled: ez
+            disabled: eS
           })]
         }), (0, n.jsx)("div", {
-          className: L.footerActionRightButtons,
-          children: ed ? (0, n.jsx)(g.Button, {
+          className: D.footerActionRightButtons,
+          children: es ? (0, n.jsx)(f.Button, {
             variant: "secondary",
-            text: B.intl.string(B.t.XYBEaV),
-            disabled: !e1,
-            loading: eL,
-            onClick: () => {
-              o()(e1, "cannot save changes for published product without adding all fields"), eJ("update_publish"), e7(e_)
-            }
-          }) : (0, n.jsx)(g.Button, {
-            variant: "secondary",
-            text: B.intl.string(B.t.ZCjwob),
+            text: L.intl.string(L.t.XYBEaV),
             disabled: !e0,
-            loading: eL,
+            loading: eB,
             onClick: () => {
-              o()(e0, "cannot save changes without name or price tier"), eJ("draft"), e7(e_)
+              o()(e0, "cannot save changes for published product without adding all fields"), eM("update_publish"), e6(eJ)
+            }
+          }) : (0, n.jsx)(f.Button, {
+            variant: "secondary",
+            text: L.intl.string(L.t.ZCjwob),
+            disabled: !e$,
+            loading: eB,
+            onClick: () => {
+              o()(e$, "cannot save changes without name or price tier"), eM("draft"), e6(eJ)
             }
           })
         })]
       })
     }), (0, n.jsx)(u.W, {
       component: "div",
-      className: L.successNoticeContainer,
-      children: e9
+      className: D.successNoticeContainer,
+      children: e3
     })]
   })
 }
 
 function _(e) {
   var t;
-  return (0, n.jsx)(O.W, {
+  return (0, n.jsx)(P.W, {
     guildId: e.guildId,
     editSkuId: null != (t = e.productId) ? t : true,
-    onFileSizeError: () => (0, b.Z)(S.ve),
-    children: (0, n.jsx)(J, D({}, e))
+    onFileSizeError: () => (0, C.Z)(z.ve),
+    children: (0, n.jsx)(J, R({}, e))
   })
 }

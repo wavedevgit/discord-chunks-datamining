@@ -1,7 +1,7 @@
 /** Chunk was on 73628 **/
 /** chunk id: 470209, original params: e,t,A (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,14 +48,14 @@ function p(e, t) {
 }
 let m = (0, Chunk313201.hQ)();
 
-function h(e) {
+function v(e) {
   let {
     newRoleParams: t,
     setNewRoleParams: A
   } = e, a = r.useRef(null), {
     name: s,
-    color: h
-  } = t, v = e => A(t => (i()(null != t, "newRoleParams should be defined"), p(f({}, t), {
+    color: v
+  } = t, h = e => A(t => (i()(null != t, "newRoleParams should be defined"), p(f({}, t), {
     color: e
   })));
   return (0, n.jsxs)("div", {
@@ -73,13 +73,13 @@ function h(e) {
       className: g.roleColorContainer,
       children: [(0, n.jsx)(o.nn4, {
         children: c.intl.format(c.t["Vlq/pH"], {
-          color: (0, l.Rf)(h)
+          color: (0, l.Rf)(v)
         })
       }), (0, n.jsx)(o.yRy, {
         targetElementRef: a,
         renderPopout: e => (0, n.jsx)(o.Z$W, p(f({}, e), {
-          value: h,
-          onChange: v
+          value: v,
+          onChange: h
         })),
         children: e => (0, n.jsx)(o.hU, p(f({}, e), {
           variant: "secondary",

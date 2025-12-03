@@ -1,11 +1,12 @@
 /** Chunk was on 86736 **/
 /** chunk id: 919196, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => I
 }), require("./388685.js"), require("./539854.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk243814 = require("./243814.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
@@ -25,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk85541 = require("./85541.js");
 
-function C(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -44,13 +45,13 @@ function C(e) {
   return e
 }
 
-function N(e) {
+function S(e) {
   var t, n, {
       application: r,
       guild: l,
-      integration: a
+      integration: o
     } = e,
-    c = function(e, t) {
+    s = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -65,26 +66,22 @@ function N(e) {
       }
       return r
     }(e, ["application", "guild", "integration"]);
-  return (0, i.jsx)(o.ConfirmModal, (t = C({}, c), n = n = {
-    header: y.intl.formatToPlainString(y.t["rL9d/1"], {
+  return (0, i.jsx)(a.ConfirmModal, (t = N({}, s), n = n = {
+    title: _.intl.formatToPlainString(_.t["rL9d/1"], {
       applicationName: r.name
     }),
-    confirmText: y.intl.string(y.t.ebGf4m),
-    cancelText: y.intl.string(y.t["ETE/oC"]),
+    subtitle: _.intl.format(_.t.FGE8ya, {
+      applicationName: r.name
+    }),
+    confirmText: _.intl.string(_.t.ebGf4m),
     onConfirm: () => {
-      d.Z.disableIntegration(l.id, a.id).catch(() => {
-        s.Z.show({
-          title: y.intl.string(y.t.wYqMmI),
-          body: y.intl.string(y.t.A4Mnst)
+      u.Z.disableIntegration(l.id, o.id).catch(() => {
+        c.Z.show({
+          title: _.intl.string(_.t.wYqMmI),
+          body: _.intl.string(_.t.A4Mnst)
         })
       })
-    },
-    children: (0, i.jsx)(o.Text, {
-      variant: "text-md/normal",
-      children: y.intl.format(y.t.FGE8ya, {
-        applicationName: r.name
-      })
-    })
+    }
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -97,120 +94,120 @@ function N(e) {
   }), t))
 }
 
-function S(e) {
+function I(e) {
   let {
     guild: t,
     applicationIntegration: n,
-    selectableWebhookChannels: s,
-    editedWebhook: d,
-    errors: S,
-    canNavigate: P
+    selectableWebhookChannels: a,
+    editedWebhook: c,
+    errors: u,
+    canNavigate: I
   } = e, {
-    application: w,
-    integration: E,
-    webhooks: I
-  } = n, [T, Z] = (0, a.Wu)([m.Z], () => [m.Z.can(v.Plq.MANAGE_ROLES, t), null == w.bot || m.Z.canManageUser(v.Plq.MANAGE_GUILD, w.bot.id, t)], [w.bot, t]), k = (0, a.e7)([m.Z], () => m.Z.can(v.Plq.MANAGE_WEBHOOKS, t), [t]), A = r.useCallback(() => {
-    P() && (0, o.h7j)(e => (0, i.jsx)(N, C({
+    application: E,
+    integration: w,
+    webhooks: P
+  } = n, [T, Z] = (0, o.Wu)([b.Z], () => [b.Z.can(y.Plq.MANAGE_ROLES, t), null == E.bot || b.Z.canManageUser(y.Plq.MANAGE_GUILD, E.bot.id, t)], [E.bot, t]), k = (0, o.e7)([b.Z], () => b.Z.can(y.Plq.MANAGE_WEBHOOKS, t), [t]), A = r.useCallback(() => {
+    I() && (0, s.h7j)(e => (0, i.jsx)(S, N({
       guild: t,
-      application: w,
-      integration: E
+      application: E,
+      integration: w
     }, e)))
-  }, [w, P, t, E]), D = r.useMemo(() => {
+  }, [E, I, t, w]), D = r.useMemo(() => {
     let e = [{
-      icon: o.T39,
-      text: y.intl.formatToPlainString(y.t.gcdJ8J, {
-        timestamp: g.default.extractTimestamp(E.id)
+      icon: s.T39,
+      text: _.intl.formatToPlainString(_.t.gcdJ8J, {
+        timestamp: f.default.extractTimestamp(w.id)
       })
     }];
-    return null != E.user && e.push({
-      icon: o.tBG,
-      text: y.intl.formatToPlainString(y.t.qE7oqs, {
-        user: f.ZP.getUserTag(E.user)
+    return null != w.user && e.push({
+      icon: s.tBG,
+      text: _.intl.formatToPlainString(_.t.qE7oqs, {
+        user: h.ZP.getUserTag(w.user)
       })
     }), e
-  }, [E.id, E.user]), R = r.useMemo(() => {
+  }, [w.id, w.user]), R = r.useMemo(() => {
     var e;
-    return null != w.bot && (null == (e = E.scopes) ? true : e.includes(l.x.BOT)) ? (0, i.jsx)(j.Z, {
+    return null != E.bot && (null == (e = w.scopes) ? true : e.includes(l.x.BOT)) ? (0, i.jsx)(v.Z, {
       guild: t,
       applicationIntegration: n
-    }) : (0, i.jsx)(o.Zbd, {
-      className: _.emptyCard,
+    }) : (0, i.jsx)(s.Zbd, {
+      className: C.emptyCard,
       editable: true,
-      children: (0, i.jsx)(o.Text, {
+      children: (0, i.jsx)(s.Text, {
         color: "text-muted",
         variant: "text-sm/normal",
-        children: y.intl.string(y.t.pfLnza)
+        children: _.intl.string(_.t.pfLnza)
       })
     })
-  }, [w.bot, n, t, E.scopes]);
+  }, [E.bot, n, t, w.scopes]);
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(h.Z, {
-      name: w.name,
-      imageSrc: b.ZP.getApplicationIconURL({
-        id: w.id,
-        icon: w.icon,
+    children: [(0, i.jsx)(x.Z, {
+      name: E.name,
+      imageSrc: g.ZP.getApplicationIconURL({
+        id: E.id,
+        icon: E.icon,
         size: 32
       }),
       details: D,
       isHeader: true
-    }), (null == w ? true : w.description) != null ? (0, i.jsx)(p.Z, {
-      userBio: w.description,
-      className: _.headerDescription
-    }) : null, T ? (0, i.jsx)(u.Z, {
-      application: w,
-      canNavigate: P,
+    }), (null == E ? true : E.description) != null ? (0, i.jsx)(m.Z, {
+      userBio: E.description,
+      className: C.headerDescription
+    }) : null, T ? (0, i.jsx)(p.Z, {
+      application: E,
+      canNavigate: I,
       guildId: t.id
-    }) : null, (0, i.jsx)(o.izJ, {
-      className: _.headerDivider
-    }), null != w.bot ? (0, i.jsxs)("div", {
-      className: _.section,
-      children: [(0, i.jsx)(x.Z, {
-        icon: (0, i.jsx)(o.wGt, {
+    }) : null, (0, i.jsx)(s.izJ, {
+      className: C.headerDivider
+    }), null != E.bot ? (0, i.jsxs)("div", {
+      className: C.section,
+      children: [(0, i.jsx)(j.Z, {
+        icon: (0, i.jsx)(s.wGt, {
           size: "xs",
           color: "currentColor"
         }),
-        title: y.intl.string(y.t.AOdOYr)
+        title: _.intl.string(_.t.AOdOYr)
       }), R]
     }) : null, (0, i.jsxs)("div", {
-      className: _.section,
-      children: [(0, i.jsx)(x.Z, {
-        icon: (0, i.jsx)(o.tYf, {
+      className: C.section,
+      children: [(0, i.jsx)(j.Z, {
+        icon: (0, i.jsx)(s.tYf, {
           size: "md",
           color: "currentColor"
         }),
-        title: y.intl.string(y.t["t9ZX/I"])
-      }), I.length > 0 ? (0, i.jsx)(O.Z, {
-        webhooks: I,
-        editedWebhook: d,
-        selectableWebhookChannels: s,
-        errors: S,
-        canNavigate: P
-      }) : (0, i.jsx)(o.Zbd, {
-        className: _.emptyCard,
+        title: _.intl.string(_.t["t9ZX/I"])
+      }), P.length > 0 ? (0, i.jsx)(O.Z, {
+        webhooks: P,
+        editedWebhook: c,
+        selectableWebhookChannels: a,
+        errors: u,
+        canNavigate: I
+      }) : (0, i.jsx)(s.Zbd, {
+        className: C.emptyCard,
         editable: true,
-        children: (0, i.jsx)(o.Text, {
+        children: (0, i.jsx)(s.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: k ? y.intl.string(y.t.ahPd2Y) : y.intl.string(y.t.axqYMl)
+          children: k ? _.intl.string(_.t.ahPd2Y) : _.intl.string(_.t.axqYMl)
         })
       })]
-    }), (0, i.jsx)(o.izJ, {
-      className: _.headerDivider
-    }), (0, i.jsxs)(c.Z, {
-      className: _.section,
-      justify: c.Z.Justify.BETWEEN,
-      align: c.Z.Align.CENTER,
-      children: [(0, i.jsx)(o.Text, {
+    }), (0, i.jsx)(s.izJ, {
+      className: C.headerDivider
+    }), (0, i.jsxs)(d.Z, {
+      className: C.section,
+      justify: d.Z.Justify.BETWEEN,
+      align: d.Z.Align.CENTER,
+      children: [(0, i.jsx)(s.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: Z ? y.intl.string(y.t.hdneL4) : y.intl.string(y.t.xRCMqx)
-      }), (0, i.jsx)(c.Z.Child, {
+        children: Z ? _.intl.string(_.t.hdneL4) : _.intl.string(_.t.xRCMqx)
+      }), (0, i.jsx)(d.Z.Child, {
         grow: 0,
         shrink: 0,
-        children: (0, i.jsx)(o.Button, {
+        children: (0, i.jsx)(s.Button, {
           variant: "critical-primary",
           size: "sm",
-          text: y.intl.string(y.t.ebGf4m),
+          text: _.intl.string(_.t.ebGf4m),
           disabled: !Z,
           onClick: A
         })

@@ -2,18 +2,19 @@
 /** chunk id: 226192, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  UV: () => _,
-  _s: () => f,
-  kW: () => p,
-  km: () => d
+  UV: () => m,
+  _s: () => p,
+  kW: () => _,
+  km: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk248514 = require("./248514.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk273504 = require("./273504.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,20 +23,20 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      l(e, t, n[t])
     })
   }
   return e
 }
 
-function c(e, t) {
+function u(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,21 +47,21 @@ function c(e, t) {
   return n
 }
 
-function u(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+function d(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function d(e) {
+function f(e) {
   let t = (e, t) => new Promise(e => {
-      (0, i.ZDy)(async () => {
+      (0, a.ZDy)(async () => {
         let {
           default: i
         } = await n.e("94005").then(n.bind(n, 144462));
         return n => {
           var a;
-          return (0, r.jsx)(i, u(l({
+          return (0, r.jsx)(i, d(c({
             initialCustomMessage: null != (a = t.metadata.customMessage) ? a : "",
             onSubmit: r => {
               t.metadata.customMessage = r, e(t), n.onClose()
@@ -71,86 +72,81 @@ function d(e) {
         }
       })
     }),
-    o = (t, o) => new Promise(s => {
-      (0, i.ZDy)(async () => {
+    i = (t, i) => new Promise(s => {
+      (0, a.ZDy)(async () => {
         let {
-          default: i
-        } = await n.e("74543").then(n.bind(n, 643611)), c = t.actions.find(e => e.type === a.jj.FLAG_TO_CHANNEL);
-        return n => (0, r.jsx)(i, u(l({
-          action: o,
-          isEdit: null != c,
+          default: a
+        } = await n.e("74543").then(n.bind(n, 643611)), l = t.actions.find(e => e.type === o.jj.FLAG_TO_CHANNEL);
+        return n => (0, r.jsx)(a, d(c({
+          action: i,
+          isEdit: null != l,
           triggerType: t.triggerType,
           guildId: e,
           onEditChannel: e => {
-            o.metadata.channelId = e, t.exemptChannels.add(e), s(o), n.onClose()
+            i.metadata.channelId = e, t.exemptChannels.add(e), s(i), n.onClose()
           }
         }, n), {
           onClose: () => (s(null), n.onClose())
         }))
       })
     }),
-    s = (e, t) => new Promise(o => {
-      (0, i.ZDy)(async () => {
+    s = (e, t) => new Promise(i => {
+      (0, a.ZDy)(async () => {
         let {
-          default: i
-        } = await n.e("78273").then(n.bind(n, 41767)), s = e.actions.find(e => e.type === a.jj.USER_COMMUNICATION_DISABLED);
-        return n => (0, r.jsx)(i, u(l({
+          default: a
+        } = await n.e("78273").then(n.bind(n, 41767)), s = e.actions.find(e => e.type === o.jj.USER_COMMUNICATION_DISABLED);
+        return n => (0, r.jsx)(a, d(c({
           action: t,
           isEdit: null != s,
           triggerType: e.triggerType,
           onUpdateDuration: e => {
-            null != e && (t.metadata.durationSeconds = e), o(t), n.onClose()
+            null != e && (t.metadata.durationSeconds = e), i(t), n.onClose()
           }
         }, n), {
-          onClose: () => (o(null), n.onClose())
+          onClose: () => (i(null), n.onClose())
         }))
       })
     });
   return {
-    [a.jj.BLOCK_MESSAGE]: t,
-    [a.jj.FLAG_TO_CHANNEL]: o,
-    [a.jj.USER_COMMUNICATION_DISABLED]: s
+    [o.jj.BLOCK_MESSAGE]: t,
+    [o.jj.FLAG_TO_CHANNEL]: i,
+    [o.jj.USER_COMMUNICATION_DISABLED]: s
   }
 }
 
-function f(e, t, a, o) {
-  (0, i.ZDy)(async () => {
+function p(e, t, i, o) {
+  (0, a.ZDy)(async () => {
     let {
-      default: i
+      default: a
     } = await n.e("37483").then(n.bind(n, 241046));
-    return n => (0, r.jsx)(i, u(l({}, n), {
+    return n => (0, r.jsx)(a, d(c({}, n), {
       automodDecision: {
         messageId: e,
         messageContent: t,
-        decisionId: a,
+        decisionId: i,
         channel: o
       }
     }))
   })
 }
 
-function p(e, t) {
-  (0, i.ZDy)(async () => {
+function _(e, t) {
+  (0, a.ZDy)(async () => {
     let {
       default: i
     } = await n.e("28382").then(n.bind(n, 537623));
-    return n => (0, r.jsx)(i, u(l({}, n), {
+    return n => (0, r.jsx)(i, d(c({}, n), {
       messageId: e,
       guildId: t
     }))
   })
 }
 
-function _(e) {
-  (0, i.h7j)(t => (0, r.jsx)(i.ConfirmModal, u(l({
-    header: o.intl.string(o.t.wLGrjB),
-    confirmText: o.intl.string(o.t["cY+Oob"]),
-    onConfirm: e,
-    cancelText: o.intl.string(o.t["ETE/oC"])
-  }, t), {
-    children: (0, r.jsx)(i.Text, {
-      variant: "text-md/normal",
-      children: o.intl.string(o.t.arYQ2X)
-    })
-  })))
+function m(e) {
+  (0, i.Z)({
+    title: s.intl.string(s.t.wLGrjB),
+    subtitle: s.intl.string(s.t.arYQ2X),
+    confirmText: s.intl.string(s.t["cY+Oob"]),
+    onConfirm: e
+  })
 }

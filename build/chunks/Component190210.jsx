@@ -139,7 +139,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
   s()(null != D, "chat input type must be set");
   let {
     analyticsLocations: eI
-  } = (0, v.ZP)(C.Z.CHANNEL_TEXT_AREA), eZ = (0, H.qz)(t), eT = r.useRef(null), eN = r.useRef(null), eA = r.useRef(null), ew = r.useRef(null);
+  } = (0, v.ZP)(C.Z.CHANNEL_TEXT_AREA), eZ = (0, B.qz)(t), eT = r.useRef(null), eN = r.useRef(null), eA = r.useRef(null), ew = r.useRef(null);
   null == ey || ey(eN.current);
   let {
     activeCommand: eM
@@ -155,17 +155,17 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     disabled: ek,
     canAttachFiles: eD,
     canEveryoneSendMessages: eU
-  } = (0, H.TE)(L, D, eM, I), eV = !A.dN.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eF = !eV || !(null == (n = D.commands) ? true : n.enabled) || !G || p !== q.GI, eB = (0, T.Z)(), {
-    fontSize: eH
+  } = (0, B.TE)(L, D, eM, I), eV = !A.dN.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eF = !eV || !(null == (n = D.commands) ? true : n.enabled) || !G || p !== q.GI, eH = (0, T.Z)(), {
+    fontSize: eB
   } = (0, d.cj)([y.Z], () => ({
     fontSize: y.Z.fontSize,
     isSubmitButtonEnabled: y.Z.isSubmitButtonEnabled
   })), eG = (0, d.e7)([M.Z], () => M.Z.isEnabled()), ez = (0, N.NE)(L);
-  (0, H.hJ)(D, ek, L.id);
+  (0, B.hJ)(D, ek, L.id);
   let {
     eventEmitter: eW,
     handleEditorSelectionChanged: eq
-  } = (0, H.x2)(eN, p, h), eK = r.useCallback(e => {
+  } = (0, B.x2)(eN, p, h), eK = r.useCallback(e => {
     let t = e => {
         if (e.shouldClear) {
           var t;
@@ -221,17 +221,17 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
   }, [eu, eE, ej, L.id, eP, eS, ez]), {
     submit: eY,
     handleSubmit: eX
-  } = (0, H.bL)(eK, D, eN, ew, L.id), {
+  } = (0, B.bL)(eK, D, eN, ew, L.id), {
     autocompleteRef: eJ,
     handleMaybeShowAutocomplete: eQ,
     handleHideAutocomplete: e$
-  } = (0, H.jx)(), e0 = r.useCallback(() => {
+  } = (0, B.jx)(), e0 = r.useCallback(() => {
     var e;
     return null == ew || null == (e = ew.current) ? true : e.hide()
   }, []), {
     editorHeight: e1,
     handleResize: e2
-  } = (0, H.oR)(en), {
+  } = (0, B.oR)(en), {
     handleTab: e3,
     handleEnter: e4,
     handleMoveSelection: e7
@@ -255,10 +255,10 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     expressionPickerView: e8,
     shouldHideExpressionPicker: e5,
     handleOuterClick: e6
-  } = (0, H.iV)(D, eN, L.id), e9 = (0, H.aT)(p), {
+  } = (0, B.iV)(D, eN, L.id), e9 = (0, B.aT)(p), {
     currentAutocompleteType: te,
     handleAutocompleteVisibilityChange: tt
-  } = (0, H.vB)(D, L.id), tn = (0, H.ae)(eN), ti = (0, H.Sg)(eY, D, eN), tr = (0, H.O1)({
+  } = (0, B.vB)(D, L.id), tn = (0, B.ae)(eN), ti = (0, B.Sg)(eY, D, eN), tr = (0, B.O1)({
     editorRef: eN,
     disabled: ek,
     textValue: p,
@@ -363,7 +363,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                     type: V.Ie.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: eD,
                     uploadPromptCharacterCount: W.en1,
-                    maxCharacterCount: null != ef ? ef : eB,
+                    maxCharacterCount: null != ef ? ef : eH,
                     allowNewLines: true,
                     "aria-describedby": eg,
                     onChange: Y,
@@ -379,7 +379,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                     onMaybeShowAutocomplete: eQ,
                     onHideAutocomplete: e$,
                     promptToUpload: ed,
-                    fontSize: eH,
+                    fontSize: eB,
                     spellcheckEnabled: eG,
                     canOnlyUseTextCommands: false,
                     isEditorIdle: e9,
@@ -407,7 +407,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
             className: J.footerPart,
             children: [(0, i.jsx)(el, {
               channel: L
-            }), (0, i.jsx)(B.Z, {
+            }), (0, i.jsx)(H.Z, {
               type: V.Ie.CREATE_ANNOUNCEMENT_POST,
               disabled: ek,
               channel: L,

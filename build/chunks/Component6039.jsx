@@ -1,13 +1,12 @@
 /** Chunk was on 1272 **/
 /** chunk id: 6039, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk248514 = require("./248514.jsx"),
   Chunk393238 = require("./393238.js"),
   Chunk877604 = require("./877604.jsx"),
   Chunk998730 = require("./998730.js"),
@@ -27,146 +26,111 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk555562 = require("./555562.js");
 
-function T(e) {
+function S(e) {
   let {
     guild: t,
     width: n,
     height: l
-  } = e, a = i.useMemo(() => (null == t ? true : t.splash) != null ? f.ZP.getGuildSplashURL({
+  } = e, a = i.useMemo(() => (null == t ? true : t.splash) != null ? p.ZP.getGuildSplashURL({
     id: null == t ? true : t.id,
     splash: null == t ? true : t.splash
-  }) : null, [null == t ? true : t.splash, null == t ? true : t.id]), s = (0, u.N)(a);
+  }) : null, [null == t ? true : t.splash, null == t ? true : t.id]), s = (0, c.N)(a);
   return null == a ? (0, r.jsx)("div", {
-    className: S.defaultGradient
+    className: C.defaultGradient
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.Z, {
-      className: S.splash,
+    children: [(0, r.jsx)(o.Z, {
+      className: C.splash,
       src: a,
-      imageClassName: S.cover,
+      imageClassName: C.cover,
       width: n,
       height: l
     }), null != s && (0, r.jsx)("div", {
-      className: S.splashGradient,
+      className: C.splashGradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, h.aD)(s, .16), " 0%, ").concat((0, h.aD)(s, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, f.aD)(s, .16), " 0%, ").concat((0, f.aD)(s, 1), " 100%)")
       }
     }), (0, r.jsx)("div", {
-      className: S.splashGradient
+      className: C.splashGradient
     })]
   })
 }
-let N = e => {
+let T = e => {
   let {
     guildId: t
   } = e, {
     ref: n,
-    width: c,
-    height: u
-  } = (0, o.ZP)(), [f, h] = i.useState(I.hO.INITIAL), N = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), j = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
-    hasFetchedRequestToJoinGuilds: P,
-    guildPreviewDisabled: x
-  } = (0, l.cj)([b.Z], () => ({
-    hasFetchedRequestToJoinGuilds: b.Z.hasFetchedRequestToJoinGuilds,
-    guildPreviewDisabled: b.Z.getJoinRequestGuild(t)
+    width: o,
+    height: c
+  } = (0, s.ZP)(), [p, f] = i.useState(y.hO.INITIAL), T = (0, l.e7)([_.Z], () => _.Z.getRequest(t)), N = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
+    hasFetchedRequestToJoinGuilds: j,
+    guildPreviewDisabled: P
+  } = (0, l.cj)([_.Z], () => ({
+    hasFetchedRequestToJoinGuilds: _.Z.hasFetchedRequestToJoinGuilds,
+    guildPreviewDisabled: _.Z.getJoinRequestGuild(t)
   }));
   i.useEffect(() => {
-    null != j && (0, d.uL)(y.Z5c.CHANNEL(t))
-  }, [j, t]), i.useEffect(() => {
-    P || g.Z.fetchRequestToJoinGuilds()
-  }, [P]);
-  let A = i.useCallback(() => {
-      h(Math.max(f, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(y.Z5c.ME)
-    }, [t, f]),
-    Z = (e, t) => () => {
-      (0, s.h7j)(n => {
-        var i, l;
-        return (0, r.jsx)(s.ConfirmModal, (i = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = r
-            })
-          }
-          return e
-        }({
-          header: C.intl.string(C.t.y0CVes),
-          cancelText: C.intl.string(C.t.oEAioF),
-          onConfirm: t,
-          confirmText: C.intl.string(C.t.p89ACt),
-          confirmButtonColor: a.zx.Colors.RED
-        }, n), l = l = {
-          children: (0, r.jsx)(s.Text, {
-            variant: "text-sm/normal",
-            color: "header-secondary",
-            children: e
-          })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
-          }
-          return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
-        }), i))
+    null != N && (0, u.uL)(v.Z5c.CHANNEL(t))
+  }, [N, t]), i.useEffect(() => {
+    j || h.Z.fetchRequestToJoinGuilds()
+  }, [j]);
+  let x = i.useCallback(() => {
+      f(Math.max(p, y.hO.FILLING)), h.Z.removeGuildJoinRequest(t), (0, u.uL)(v.Z5c.ME)
+    }, [t, p]),
+    A = (e, t) => () => {
+      (0, a.Z)({
+        title: I.intl.string(I.t.y0CVes),
+        subtitle: e,
+        cancelText: I.intl.string(I.t.oEAioF),
+        onConfirm: t,
+        confirmText: I.intl.string(I.t.p89ACt)
       })
     },
-    w = async () => {
-      await g.Z.resetGuildJoinRequest(t), (0, m.hk)(t)
-    }, L = e => {
-      if (!e) return void A();
-      Z(C.intl.format(C.t["9ZezpN"], {
-        name: null == x ? true : x.name
-      }), A)()
-    }, R = Z(C.intl.format(C.t.fJwWVt, {
-      name: null == x ? true : x.name
-    }), A);
+    Z = async () => {
+      await h.Z.resetGuildJoinRequest(t), (0, g.hk)(t)
+    }, w = e => {
+      if (!e) return void x();
+      A(I.intl.format(I.t["9ZezpN"], {
+        name: null == P ? true : P.name
+      }), x)()
+    }, L = A(I.intl.format(I.t.fJwWVt, {
+      name: null == P ? true : P.name
+    }), x);
   return (0, r.jsxs)("div", {
-    className: S.page,
+    className: C.page,
     ref: n,
-    children: [(0, r.jsx)(T, {
-      guild: x,
-      height: u,
-      width: c
+    children: [(0, r.jsx)(S, {
+      guild: P,
+      height: c,
+      width: o
     }), (0, r.jsx)("div", {
-      className: S.contentWrapper,
+      className: C.contentWrapper,
       children: (() => {
-        if (null == N) return null;
-        switch (N.applicationStatus) {
-          case _.wB.SUBMITTED:
-            return (0, r.jsx)(v.Z, {
-              onWithdrawApplication: () => L(true),
-              guild: x
-            });
-          case _.wB.REJECTED:
+        if (null == T) return null;
+        switch (T.applicationStatus) {
+          case m.wB.SUBMITTED:
             return (0, r.jsx)(O.Z, {
-              reapplyText: C.intl.string(C.t.I1LYVk),
-              onReapply: w,
-              confirmText: C.intl.string(C.t.g9tK0o),
-              onWithdrawApplication: L,
-              rejectionReason: N.rejectionReason,
-              guild: x
+              onWithdrawApplication: () => w(true),
+              guild: P
+            });
+          case m.wB.REJECTED:
+            return (0, r.jsx)(E.Z, {
+              reapplyText: I.intl.string(I.t.I1LYVk),
+              onReapply: Z,
+              confirmText: I.intl.string(I.t.g9tK0o),
+              onWithdrawApplication: w,
+              rejectionReason: T.rejectionReason,
+              guild: P
             });
           default:
-            return (0, r.jsx)(E.s, {
-              onDiscardApplication: R,
-              onContinueApplication: () => (0, m.hk)(t),
-              guild: x
+            return (0, r.jsx)(b.s, {
+              onDiscardApplication: L,
+              onContinueApplication: () => (0, g.hk)(t),
+              guild: P
             })
         }
       })()
     }), (0, r.jsx)("div", {
-      className: S.dragRegion
+      className: C.dragRegion
     })]
   })
 }

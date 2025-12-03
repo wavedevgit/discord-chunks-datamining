@@ -201,7 +201,7 @@ let D = function() {
                 disabled: F.length < 1
               }, e), {
                 onClick: () => {
-                  window.open(w.Z5c.BILLING_PROMOTION_REDEMPTION(F))
+                  window.open(I.Z5c.BILLING_PROMOTION_REDEMPTION(F))
                 }
               }))
             })]
@@ -250,7 +250,7 @@ let D = function() {
           }, e), {
             disabled: H,
             onClick: () => {
-              window.open(w.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(R({}, G)))
+              window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(R({}, G)))
             }
           }))
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsxs)(Chunk481060.C3N, {

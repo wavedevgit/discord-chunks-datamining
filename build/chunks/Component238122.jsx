@@ -22,8 +22,8 @@ let u = e => {
         character_limit: _,
         pattern: h
       },
-      onChange: b,
-      initialText: x,
+      onChange: x,
+      initialText: b,
       isRequired: f
     } = e, v = i.useRef(a.Z.reactParserFor((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -53,29 +53,29 @@ let u = e => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, y] = i.useState(""), [O, Z] = i.useState(null);
+    }), t))), [j, y] = i.useState(""), [Z, O] = i.useState(null);
     i.useEffect(() => {
       var e;
-      y(null != (e = null == x ? true : x.value) ? e : "")
-    }, [x]);
+      y(null != (e = null == b ? true : b.value) ? e : "")
+    }, [b]);
     let I = i.useCallback(e => {
       let t = null != h ? new RegExp(h) : null;
-      null == t || t.test(e) ? null != e && (Z(null), y(e), b({
+      null == t || t.test(e) ? null != e && (O(null), y(e), x({
         value: e,
         isValid: true
-      })) : (Z(o.intl.string(o.t["24xrGb"])), b({
+      })) : (O(o.intl.string(o.t["24xrGb"])), x({
         value: e,
         isValid: false
       }))
-    }, [b, h]);
+    }, [x, h]);
     return (0, r.jsxs)("div", {
-      className: d.marginBottom8,
+      className: c.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
-        className: d.marginBottom8,
+        className: c.marginBottom8,
         children: (0, r.jsxs)(l.Text, {
           variant: "text-sm/bold",
           children: [u, f && (0, r.jsx)("span", {
-            className: c.required,
+            className: d.required,
             children: "*"
           })]
         })
@@ -83,7 +83,7 @@ let u = e => {
         maxLength: _,
         onChange: I,
         value: j,
-        error: O,
+        error: Z,
         rows: g,
         placeholder: p,
         autoFocus: true

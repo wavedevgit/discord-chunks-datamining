@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk846027 = require("./846027.js"),
   Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
-  Chunk680924 = require("./680924.jsx"),
+  Chunk680924 = require("./680924.js"),
   Chunk388032 = require("./388032.jsx");
 let a = (0, Chunk509613.ax)(Chunk313789.n.VOICE_AND_VIDEO_RESET_ALL_SETTINGS, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.SXfv1v),

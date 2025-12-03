@@ -45,19 +45,6 @@ function E(e) {
   return e
 }
 
-function T(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, a)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
 function N() {
   let {
     action: e,
@@ -65,7 +52,7 @@ function N() {
   } = (0, Chunk442837.cj)([Chunk23434.Z, Chunk210887.Z], () => ({
     action: Chunk23434.Z.getAction(),
     theme: Chunk210887.Z.theme
-  })), N = Chunk1964.Z.getVerificationTypes(module), [O, P] = Chunk473749.useState(0), w = (0, Chunk110924.Z)(N);
+  })), N = Chunk1964.Z.getVerificationTypes(module), [T, O] = Chunk473749.useState(0), P = (0, Chunk110924.Z)(N);
   (0, Chunk213609.Z)({
     type: Chunk990547.ImpressionTypes.MODAL,
     name: Chunk990547.ImpressionNames.USER_ACTION_REQUIRED,
@@ -88,23 +75,35 @@ function N() {
   return Chunk473749.useEffect(() => (Chunk714338.Z.disable(), () => {
     Chunk714338.Z.enable()
   }), []), Chunk473749.useEffect(() => {
-    (null == w ? true : w[0]) === Chunk981631.PUi.PHONE && (null == N ? true : N[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
+    (null == P ? true : P[0]) === Chunk981631.PUi.PHONE && (null == N ? true : N[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
       } = await require.e("84112").then(require.bind(require, 273352));
-      return t => (0, a.jsx)(e, T(E({}, t), {
-        title: S.intl.string(S.t.KLnLIP),
-        body: S.intl.string(S.t.XGbCq3),
-        confirmText: S.intl.string(S.t["3oK4qw"])
-      }))
+      return t => {
+        var n, l;
+        return (0, a.jsx)(e, (n = E({}, t), l = l = {
+          title: S.intl.string(S.t.KLnLIP),
+          body: S.intl.string(S.t.XGbCq3),
+          confirmText: S.intl.string(S.t["3oK4qw"])
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var a = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, a)
+          }
+          return n
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+        }), n))
+      }
     }, {
       modalKey: Chunk308569.HR,
       Layer: Chunk429142.ZP,
       onCloseCallback: I
     })
-  }, [N, w]), (0, Chunk54381.jsx)(Chunk762756.Z, {
+  }, [N, P]), (0, Chunk54381.jsx)(Chunk762756.Z, {
     types: N,
-    captchaKey: O,
+    captchaKey: T,
     onCaptchaVerify: e => {
       s.tn.post({
         url: y.ANM.CAPTCHA,
@@ -114,7 +113,7 @@ function N() {
         oldFormErrors: true,
         rejectWithError: true
       }).then(d.xf, () => {
-        P(e => e + 1)
+        O(e => e + 1)
       })
     },
     theme: exports,
@@ -135,20 +134,15 @@ function N() {
     onLogout: () => {
       (0, Chunk481060.ZDy)(async () => {
         let {
-          ConfirmModal: e,
-          Text: t
-        } = await Promise.resolve().then(require.bind(require, 481060));
-        return n => (0, a.jsx)(e, T(E({
-          header: S.intl.string(S.t["2jxGer"]),
+          ConfirmModal: e
+        } = await Promise.resolve().then(require.bind(require, 201265));
+        return t => (0, a.jsx)(e, E({
+          title: S.intl.string(S.t["2jxGer"]),
+          subtitle: S.intl.string(S.t.SUnWBB),
           confirmText: S.intl.string(S.t["2jxGer"]),
           cancelText: S.intl.string(S.t["ETE/oC"]),
           onConfirm: () => c.Z.logout("verification")
-        }, n), {
-          children: (0, a.jsx)(t, {
-            variant: "text-md/normal",
-            children: S.intl.string(S.t.SUnWBB)
-          })
-        }))
+        }, t))
       }, {
         Layer: Chunk429142.ZP
       })

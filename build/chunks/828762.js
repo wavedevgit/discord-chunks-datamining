@@ -69,7 +69,7 @@ class x {
       var r;
       A === q.evJ.ENTITY_TOO_LARGE && this.onFileSizeError();
       let a = "number" == typeof A && A > 0 ? -A : false,
-        l = (0, v.kg)(a),
+        l = (0, h.kg)(a),
         o = null == (r = e.file) ? true : r.name;
       null != o ? i.uv.announce(b.intl.formatToPlainString(b.t["+YVkfX"], {
         filename: o,
@@ -128,7 +128,7 @@ class x {
       g = (await u.uploadFiles(o)).map((e, t) => (0, p.B)(e, t)),
       f = null != this.editSkuId ? a.tn.patch : a.tn.post,
       m = null != this.editSkuId ? q.ANM.GUILD_PRODUCT_LISTINGS(this.guildId, this.editSkuId) : q.ANM.GUILD_PRODUCTS(this.guildId),
-      h = (await f({
+      v = (await f({
         url: m,
         rejectWithError: false,
         body: j(U({}, i), {
@@ -139,13 +139,13 @@ class x {
           attachments: d.length > 0 ? [...d, ...g] : g
         })
       })).body;
-    return V.log("Created/updated product:", h), null != h && (null != this.editSkuId ? await l.Z.dispatch({
+    return V.log("Created/updated product:", v), null != v && (null != this.editSkuId ? await l.Z.dispatch({
       type: "GUILD_PRODUCT_UPDATE",
-      product: h
+      product: v
     }) : await l.Z.dispatch({
       type: "GUILD_PRODUCT_CREATE",
-      product: h
-    })), h
+      product: v
+    })), v
   }
   constructor({
     guildId: e,
@@ -158,7 +158,7 @@ class x {
       for (let t of this.uploads) e[t.id] = 1;
       return e
     }), this.editSkuId = t, this.guildId = e, this.onFileSizeError = A;
-    let r = null == (n = h.Z.getGuildProduct(null != t ? t : "")) ? true : n.attachments;
+    let r = null == (n = v.Z.getGuildProduct(null != t ? t : "")) ? true : n.attachments;
     null != r && (this.uploads = r.map(t => {
       var A;
       this.existingAttachmentIds.add(t.id);
@@ -191,13 +191,13 @@ function O(e, t) {
   n.useLayoutEffect(() => {
     g(u.generateInitialProgresses())
   }, [u]);
-  let [m, h] = n.useState(), [v, b] = n.useState(), C = n.useCallback(e => {
+  let [m, v] = n.useState(), [h, b] = n.useState(), C = n.useCallback(e => {
     u.deleteAttachment(e) && p({})
   }, [u]), j = n.useCallback(e => {
     u.addAttachment(e, g), p({})
   }, [u]), V = n.useCallback(async e => {
     try {
-      h(e), b(true);
+      v(e), b(true);
       let t = await u.saveProductWithAttachments(e);
       return null != t && d({
         editSkuId: t.id,
@@ -206,7 +206,7 @@ function O(e, t) {
     } catch (e) {
       b(e instanceof o.Hx ? e : new o.Hx(e))
     } finally {
-      h(true)
+      v(true)
     }
   }, [u, i]), O = n.useCallback(() => {
     u.cancelUnusedUploads(), p({})
@@ -226,7 +226,7 @@ function O(e, t) {
     saveProductWithAttachments: V,
     isSaving: null != m,
     changesSaving: m,
-    saveError: v,
+    saveError: h,
     hasUnsavedAttachmentChanges: F,
     canAttachFiles: P.length < u.target.getMaxAttachmentsCount(),
     canAttachArchives: null != (A = null == l ? true : l.features.has(q.GuildFeatures.GUILD_PRODUCTS_ALLOW_ARCHIVED_FILE)) && A

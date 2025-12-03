@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
 function P(e) {
   return parseFloat(e.toFixed(3))
 }
-let w = [{
+let I = [{
   key: "store",
   cellClassName: Chunk687278.actionColumn,
   render(e) {
@@ -53,7 +53,7 @@ let w = [{
   }
 }];
 
-function I(e) {
+function w(e) {
   let {
     actionLog: t
   } = e, n = l.useMemo(() => t.traces.map(e => ({
@@ -62,7 +62,7 @@ function I(e) {
   })), [t]);
   return (0, a.jsx)(p.zJl, {
     children: (0, a.jsx)(S.Z, {
-      columns: w,
+      columns: I,
       data: n
     })
   })
@@ -78,7 +78,7 @@ let k = [{
     } = e, l = d()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)(y.E, {
-        className: N.actionProperties,
+        className: T.actionProperties,
         children: [(0, a.jsx)(y.Z9, {
           name: "Created at",
           children: (0, a.jsx)("time", {
@@ -91,7 +91,7 @@ let k = [{
           children: [P(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(p.zJl, {
-        className: N.inspectorContainer,
+        className: T.inspectorContainer,
         children: (0, a.jsx)(_.Z, {
           data: n.action
         })
@@ -106,7 +106,7 @@ let k = [{
     let {
       actionLog: t
     } = e;
-    return (0, a.jsx)(I, {
+    return (0, a.jsx)(w, {
       actionLog: t
     })
   }
@@ -120,7 +120,7 @@ function R(e) {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(b.Z, {
-        className: N.errorIcon
+        className: T.errorIcon
       }), "Error"]
     }),
     group: E.v0.NONE,
@@ -130,7 +130,7 @@ function R(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: r()(N.errorToolbar, O.toolbar),
+          className: r()(T.errorToolbar, O.toolbar),
           children: (0, a.jsx)("div", {
             className: O.toolbarGroup,
             children: (0, a.jsx)(m.zx, {
@@ -141,7 +141,7 @@ function R(e) {
             })
           })
         }), (0, a.jsx)(p.zJl, {
-          className: N.inspectorContainer,
+          className: T.inspectorContainer,
           children: (0, a.jsx)(_.Z, {
             data: t.error
           })
@@ -155,11 +155,11 @@ function R(e) {
     tabs: i
   }, [i]);
   return (0, a.jsxs)(C.Z, {
-    className: N.subPanel,
+    className: T.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(s, {}), (0, a.jsxs)(x.ZP, {
-      className: r()(O.headerBar, N.subPanelHeaderBar),
+      className: r()(O.headerBar, T.subPanelHeaderBar),
       children: [(0, a.jsx)(x.ZP.Icon, {
         icon: p.xVZ,
         tooltip: t.name
@@ -174,7 +174,7 @@ function R(e) {
           var e;
           let n = JSON.stringify(Object.keys(e = t.action).reduce((t, n) => {
             var a;
-            return t[n] = (a = e[n], T.Jn9.test(a) ? "REDACTED" : a), t
+            return t[n] = (a = e[n], N.Jn9.test(a) ? "REDACTED" : a), t
           }, {}), null, 2);
           (0, v.JG)(n, () => (0, p.showToast)({
             id: "copy-action-log-name",
@@ -197,7 +197,7 @@ let A = [{
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [t.error && (0, a.jsx)(b.Z, {
-          className: N.errorIcon
+          className: T.errorIcon
         }), t.name]
       })
     }
@@ -262,7 +262,7 @@ function D() {
     }, [Chunk299608]),
     C = exports.trim().length > 0,
     E = Chunk473749.useMemo(() => Chunk484036 ? Chunk755721 : Chunk886118 ? Chunk913527 : Chunk299608, [Chunk299608, Chunk755721, Chunk484036, Chunk886118, Chunk913527]),
-    T = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
+    N = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
     className: r()(Chunk451429.panel, Chunk687278.panel),
