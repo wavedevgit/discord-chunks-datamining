@@ -59,5 +59,5 @@ let o = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = arguments.length > 2 ? arguments[2] : true,
       i = (null == e ? true : e.skuId) != null && (0, a.o0)(null == e ? true : e.skuId);
-    return (0, r.useMemo)(() => null != n ? 1 === n ? l.intl.string(l.t.ggwFN5) : 3 === n ? l.intl.string(l.t.QUjmjp) : l.intl.string(l.t["o+VpXZ"]) : i ? s(e, t) : c(e, t), [i, e, t, n])
+    return (0, r.useMemo)(() => null != n ? 3 === n ? l.intl.string(l.t.QUjmjp) : 7 === n ? l.intl.string(l.t.yPxJA2) : l.intl.string(l.t["o+VpXZ"]) : i ? s(e, t) : c(e, t), [i, e, t, n])
   }

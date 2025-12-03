@@ -36,7 +36,7 @@ function E() {
   return Chunk473749.useContext(h).rentalDuration
 }
 var b = function(e) {
-    return e.NONE = "none", e.NEW = "new", e.ORBS_EXCLUSIVE = "orbs_exclusive", e.LIMITED_TIME = "limited_time", e.NITRO_EXCLUSIVE = "nitro_exclusive", e.ONE_DAY_RENTAL = "one_day_rental", e.THREE_DAY_RENTAL = "three_day_rental", e.RENTAL = "rental", e
+    return e.NONE = "none", e.NEW = "new", e.ORBS_EXCLUSIVE = "orbs_exclusive", e.LIMITED_TIME = "limited_time", e.NITRO_EXCLUSIVE = "nitro_exclusive", e.THREE_DAY_RENTAL = "three_day_rental", e.SEVEN_DAY_RENTAL = "seven_day_rental", e.RENTAL = "rental", e
   }({}),
   y = function(e) {
     return e.FIAT = "fiat", e.ORBS = "orbs", e

@@ -40,7 +40,7 @@ let v = e => {
       prioritizedCurrency: m,
       hasDiscountOffer: null != I
     }), L = n;
-    if (null == L && (null == y || l ? !E && !x && (0, f.Yq)(t.skuId) ? L = p.Zh.NEW : null != v && 1 === v ? L = p.Zh.ONE_DAY_RENTAL : null != v && 3 === v ? L = p.Zh.THREE_DAY_RENTAL : null != v ? L = p.Zh.RENTAL : T ? L = p.Zh.ORBS_EXCLUSIVE : O && (L = p.Zh.NITRO_EXCLUSIVE) : L = p.Zh.LIMITED_TIME), null == L || L === p.Zh.NONE) return null;
+    if (null == L && (null == y || l ? !E && !x && (0, f.Yq)(t.skuId) ? L = p.Zh.NEW : null != v && 3 === v ? L = p.Zh.THREE_DAY_RENTAL : null != v && 7 === v ? L = p.Zh.SEVEN_DAY_RENTAL : null != v ? L = p.Zh.RENTAL : T ? L = p.Zh.ORBS_EXCLUSIVE : O && (L = p.Zh.NITRO_EXCLUSIVE) : L = p.Zh.LIMITED_TIME), null == L || L === p.Zh.NONE) return null;
     let P = null;
     switch (L) {
       case p.Zh.LIMITED_TIME:
@@ -57,11 +57,11 @@ let v = e => {
       case p.Zh.ORBS_EXCLUSIVE:
         P = _.intl.string(_.t["0TmQRG"]);
         break;
-      case p.Zh.ONE_DAY_RENTAL:
-        P = _.intl.string(_.t["9dHf8O"]);
-        break;
       case p.Zh.THREE_DAY_RENTAL:
         P = _.intl.string(_.t["52UXCo"]);
+        break;
+      case p.Zh.SEVEN_DAY_RENTAL:
+        P = _.intl.string(_.t.FRR2s2);
         break;
       case p.Zh.RENTAL:
         P = _.intl.string(_.t.VgsFa1)

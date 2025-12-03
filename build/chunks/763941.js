@@ -23,7 +23,7 @@ let r = (0, require("./427164.js").le)({
       },
       2: {
         enabled: true,
-        rentalDuration: 1
+        rentalDuration: 7
       },
       3: {
         enabled: true,

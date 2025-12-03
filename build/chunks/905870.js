@@ -158,9 +158,9 @@ class B extends Chunk147913.Z {
   }
   trackPartitionAllocPerformanceStats() {
     var e, t, n;
-    let r = Chunk848479.Z.getPartitionAllocatorStats();
+    let r = Chunk848479.Z.getMemoryHeapStats();
     if (null == Chunk268146) return;
-    let i = null != (e = Chunk268146.total_alloc_kb) ? module : 0;
+    let i = null != (e = Chunk268146.usedHeapSize) ? module : 0;
     if (!this._paHeapHooksInstalled && Chunk433517 > P) {
       let e = Chunk848479.Z.enablePAMemoryProfiler({
         allocationThresholdKB: D,
