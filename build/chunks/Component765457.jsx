@@ -1,12 +1,12 @@
 /** Chunk was on 80448 **/
-/** chunk id: 765457, original params: t,e,i (module,exports,require) **/
+/** chunk id: 765457, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => D
+  default: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk37234 = require("./37234.js"),
   Chunk2835 = require("./2835.jsx"),
@@ -25,75 +25,75 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk691446 = require("./691446.js");
 
-function D(t) {
-  let {} = t, [e, i] = r.useState(v.ij.WELCOME), l = v.bq[e], D = r.useCallback(() => {
-    if (e >= v.ij.END_SUMMARY) return void(0, d.xf)();
-    i(e + 1)
-  }, [e]);
-  return (0, n.jsx)(s.f6W, {
+function E(e) {
+  let {} = e, [t, n] = r.useState(g.ij.WELCOME), l = g.bq[t], E = r.useCallback(() => {
+    if (t >= g.ij.END_SUMMARY) return void(0, o.xf)();
+    n(t + 1)
+  }, [t]);
+  return (0, i.jsx)(a.f6W, {
     theme: j.BR.DARKER,
-    children: t => (0, n.jsxs)("div", {
-      className: a()(T.container, t),
-      "aria-label": Z.intl.string(S.default["CdU/PF"]),
-      children: [(0, n.jsxs)(s.MyZ, {
+    children: e => (0, i.jsxs)("div", {
+      className: s()(M.container, e),
+      "aria-label": Z.intl.string(_.default["CdU/PF"]),
+      children: [(0, i.jsxs)(a.MyZ, {
         activeSlide: l,
-        children: [(0, n.jsx)(s.Mi4, {
-          id: v.yD.WELCOME,
-          children: (0, n.jsx)(E.Z, {})
-        }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.MESSAGES,
-          children: (0, n.jsx)(m.Z, {})
-        }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.EMOJIS,
-          children: (0, n.jsx)(o.Z, {})
-        }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.VOICE,
-          children: (0, n.jsx)(y.Z, {})
-        }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.GUILDS,
-          children: (0, n.jsx)(h.Z, {})
-        }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.FRIENDS,
-          children: (0, n.jsx)(x.Z, {
-            step: e
+        children: [(0, i.jsx)(a.Mi4, {
+          id: g.yD.WELCOME,
+          children: (0, i.jsx)(v.Z, {})
+        }), (0, i.jsx)(a.Mi4, {
+          id: g.yD.MESSAGES,
+          children: (0, i.jsx)(h.Z, {})
+        }), (0, i.jsx)(a.Mi4, {
+          id: g.yD.EMOJIS,
+          children: (0, i.jsx)(u.Z, {})
+        }), (0, i.jsx)(a.Mi4, {
+          id: g.yD.VOICE,
+          children: (0, i.jsx)(f.Z, {})
+        }), (0, i.jsx)(a.Mi4, {
+          id: g.yD.GUILDS,
+          children: (0, i.jsx)(x.Z, {})
+        }), (0, i.jsx)(a.Mi4, {
+          id: g.yD.FRIENDS,
+          children: (0, i.jsx)(m.Z, {
+            step: t
           })
-        }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.GAMING,
-          children: (0, n.jsx)(p.Z, {})
-        }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.QUESTS,
-          children: (0, n.jsx)(f.Z, {})
-        }), (0, n.jsx)(s.Mi4, {
-          id: v.yD.END,
-          children: (0, n.jsx)(u.Z, {
-            step: e
+        }), (0, i.jsx)(a.Mi4, {
+          id: g.yD.GAMING,
+          children: (0, i.jsx)(p.Z, {})
+        }), (0, i.jsx)(a.Mi4, {
+          id: g.yD.QUESTS,
+          children: (0, i.jsx)(y.Z, {})
+        }), (0, i.jsx)(a.Mi4, {
+          id: g.yD.END,
+          children: (0, i.jsx)(d.Z, {
+            step: t
           })
         })]
-      }), (0, n.jsxs)("div", {
-        className: a()(T.header, t),
-        children: [(0, n.jsxs)("div", {
-          className: T.logo,
-          children: [(0, n.jsx)(s.gw7, {
-            color: s.TVs.colors.BG_BRAND
-          }), (0, n.jsx)(s.Text, {
+      }), (0, i.jsxs)("div", {
+        className: s()(M.header, e),
+        children: [(0, i.jsxs)("div", {
+          className: M.logo,
+          children: [(0, i.jsx)(a.gw7, {
+            color: a.TVs.colors.BG_BRAND
+          }), (0, i.jsx)(a.Text, {
             variant: "display-sm",
             color: "text-primary",
-            className: T.logoText,
-            children: Z.intl.string(S.default["CdU/PF"])
+            className: M.logoText,
+            children: Z.intl.string(_.default["CdU/PF"])
           })]
-        }), (0, n.jsx)(c.Z, {
+        }), (0, i.jsx)(c.Z, {
           activeSlide: l,
-          totalSlides: Object.keys(v.yD).length,
-          className: T.stepIndicator
-        }), (0, n.jsx)(s.P3F, {
-          onClick: d.xf,
-          className: T.closeButton,
-          children: (0, n.jsx)(s.Uz9, {})
+          totalSlides: Object.keys(g.yD).length,
+          className: M.stepIndicator
+        }), (0, i.jsx)(a.P3F, {
+          onClick: o.xf,
+          className: M.closeButton,
+          children: (0, i.jsx)(a.Uz9, {})
         })]
-      }), (0, n.jsx)(s.P3F, {
-        onClick: D,
-        className: T.nextButton,
-        children: (0, n.jsx)(s.Text, {
+      }), (0, i.jsx)(a.P3F, {
+        onClick: E,
+        className: M.nextButton,
+        children: (0, i.jsx)(a.Text, {
           variant: "display-sm",
           color: "text-primary",
           children: Z.intl.string(Z.t.PDTjLN)

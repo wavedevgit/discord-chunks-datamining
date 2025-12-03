@@ -2,14 +2,14 @@
 /** chunk id: 292419, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  SD: () => g,
-  VD: () => A,
-  Wo: () => E,
-  cd: () => I,
-  kS: () => y,
-  np: () => S,
-  uZ: () => N,
-  yw: () => C
+  SD: () => E,
+  VD: () => C,
+  Wo: () => b,
+  cd: () => T,
+  kS: () => O,
+  np: () => I,
+  uZ: () => P,
+  yw: () => N
 }), require("./388685.js"), require("./49124.js"), require("./953529.js");
 var Chunk772848 = require("./772848.js"),
   Chunk866442 = require("./866442.js"),
@@ -19,11 +19,12 @@ var Chunk772848 = require("./772848.js"),
   Chunk768494 = require("./768494.js"),
   Chunk768581 = require("./768581.js"),
   Chunk823379 = require("./823379.js"),
+  Chunk709054 = require("./709054.js"),
   Chunk280501 = require("./280501.js"),
   Chunk790642 = require("./790642.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = new Chunk710845.Z("InteractionComponentUtils"),
-  m = (e, t) => ({
+let m = new Chunk710845.Z("InteractionComponentUtils"),
+  h = (e, t) => ({
     id: e.id,
     name: e.name,
     animated: e.animated,
@@ -33,20 +34,20 @@ let _ = new Chunk710845.Z("InteractionComponentUtils"),
       size: 48
     }) : true
   }),
-  h = e => (null == e ? true : e.errorCode) === 429 ? p.intl.string(p.t.fitPBS) : p.intl.string(p.t.VCsUJu),
-  g = (e, t, n) => {
+  g = e => (null == e ? true : e.errorCode) === 429 ? _.intl.string(_.t.fitPBS) : _.intl.string(_.t.VCsUJu),
+  E = (e, t, n) => {
     let r = (null == e ? true : e.data.interactionType) === a.B8.MESSAGE_COMPONENT && (null == e ? true : e.state) === s.F.FAILED ? e.data.componentId : null;
-    if (null != (null != r ? v(n, r) : null)) {
+    if (null != (null != r ? S(n, r) : null)) {
       var i;
-      return null != (i = null == t ? true : t.interactionError) ? i : h(e)
+      return null != (i = null == t ? true : t.interactionError) ? i : g(e)
     }
   };
 
-function E(e) {
+function b(e) {
   var t;
-  return null != (t = e.placeholder) ? t : p.intl.string(p.t.Otr6W2)
+  return null != (t = e.placeholder) ? t : _.intl.string(_.t.Otr6W2)
 }
-let b = e => {
+let y = e => {
   switch (e) {
     case a.re.ACTION_ROW:
     case a.re.BUTTON:
@@ -68,30 +69,30 @@ let b = e => {
     case a.re.CHECKPOINT_CARD:
       returntrue;
     case a.re.CONTENT_INVENTORY_ENTRY:
-      return (0, f.Io)("canShowComponent")
+      return (0, p.Io)("canShowComponent")
   }
 };
 
-function y(e) {
+function O(e) {
   let t = new Map;
-  for (let n of e) O(t, n);
+  for (let n of e) v(t, n);
   return t
 }
 
-function O(e, t) {
+function v(e, t) {
   switch (e.set(t.id, t), t.type) {
     case a.re.ACTION_ROW:
-      t.components.forEach(t => O(e, t));
+      t.components.forEach(t => v(e, t));
       break;
     case a.re.SECTION:
-      t.components.forEach(t => O(e, t)), O(e, t.accessory);
+      t.components.forEach(t => v(e, t)), v(e, t.accessory);
       break;
     case a.re.CONTAINER:
-      t.components.forEach(t => O(e, t))
+      t.components.forEach(t => v(e, t))
   }
 }
 
-function v(e, t) {
+function S(e, t) {
   var n, r, i;
   switch (e.type) {
     case a.re.ACTION_ROW:
@@ -104,16 +105,16 @@ function v(e, t) {
   }
 }
 
-function S(e) {
-  let t = Array.from(y(e).values()).filter(e => e.type === a.re.TEXT_DISPLAY).map(e => e.content).join("\n");
+function I(e) {
+  let t = Array.from(O(e).values()).filter(e => e.type === a.re.TEXT_DISPLAY).map(e => e.content).join("\n");
   return "" !== t ? t : null
 }
 
-function I(e, t) {
+function T(e, t) {
   function n(e) {
     let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
     for (let i of e) {
-      let e = T(i);
+      let e = A(i);
       if (e.some(e => e.id === t.id)) return [i, ...r];
       let a = n(e, [i, ...r]);
       if (null != a) return a
@@ -123,7 +124,7 @@ function I(e, t) {
   return n(e)
 }
 
-function T(e) {
+function A(e) {
   switch (e.type) {
     case a.re.ACTION_ROW:
       return e.components;
@@ -150,11 +151,11 @@ function T(e) {
     case a.re.CHECKPOINT_CARD:
       return [];
     default:
-      return _.warn("getComponentChildren: Unknown component type", e.type), []
+      return m.warn("getComponentChildren: Unknown component type", e.type), []
   }
 }
 
-function A(e) {
+function C(e) {
   var t, n, i;
   return JSON.stringify({
     type: "component-upload",
@@ -163,7 +164,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function N(e) {
   try {
     let t = JSON.parse(e);
     if ((null == t ? true : t.type) !== "component-upload" || "string" != typeof t.containerId || "string" != typeof t.uniqueId) return null;
@@ -173,33 +174,33 @@ function C(e) {
   }
 }
 
-function N(e) {
-  return e.map((e, t) => P(e, [t])).filter(e => null != e)
+function P(e) {
+  return e.map((e, t) => R(e, [t])).filter(e => null != e)
 }
 
-function P(e, t) {
-  var n, r, o, s, c, f, p, h, g;
-  if (!b(e.type)) return null;
+function R(e, t) {
+  var n, r, o, s, c, p, _, g, E, b;
+  if (!y(e.type)) return null;
 
-  function E(e, n) {
-    let r = P(e, [...t, n]);
+  function O(e, n) {
+    let r = R(e, [...t, n]);
     return null == r ? null : r
   }
-  let y = false;
+  let v = false;
   switch (e.type) {
     case a.re.ACTION_ROW: {
-      let n = e.components.map((e, t) => E(e, t)).filter(u.lm);
+      let n = e.components.map((e, t) => O(e, t)).filter(u.lm);
       return {
         type: a.re.ACTION_ROW,
-        id: R(t),
+        id: w(t),
         components: n
       }
     }
     case a.re.BUTTON: {
-      let n = null != e.emoji ? m(e.emoji, y) : true;
+      let n = null != e.emoji ? h(e.emoji, v) : true;
       return {
         type: a.re.BUTTON,
-        id: R(t),
+        id: w(t),
         customId: e.custom_id,
         style: e.style,
         disabled: e.disabled,
@@ -211,57 +212,57 @@ function P(e, t) {
     }
     case a.re.STRING_SELECT:
       return {
-        type: a.re.STRING_SELECT, id: R(t), customId: e.custom_id, disabled: e.disabled, required: null != (n = e.required) && n, options: e.options.map(e => ({
-          type: d.tM.STRING,
+        type: a.re.STRING_SELECT, id: w(t), customId: e.custom_id, disabled: e.disabled, required: null != (n = e.required) && n, options: e.options.map(e => ({
+          type: f.tM.STRING,
           label: e.label,
           value: e.value,
           default: e.default,
           description: e.description,
-          emoji: null != e.emoji ? m(e.emoji, y) : true
+          emoji: null != e.emoji ? h(e.emoji, v) : true
         })), placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values
       };
     case a.re.TEXT_INPUT:
       return {
-        type: e.type, id: R(t), style: e.style, customId: e.custom_id, label: e.label, value: e.value, placeholder: e.placeholder, disabled: e.disabled, required: null != (r = e.required) && r, minLength: e.min_length, maxLength: e.max_length
+        type: e.type, id: w(t), style: e.style, customId: e.custom_id, label: e.label, value: e.value, placeholder: e.placeholder, disabled: e.disabled, required: null != (r = e.required) && r, minLength: e.min_length, maxLength: e.max_length
       };
     case a.re.USER_SELECT:
       return {
-        type: a.re.USER_SELECT, id: R(t), customId: e.custom_id, disabled: e.disabled, required: null != (o = e.required) && o, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: a.re.USER_SELECT, id: w(t), customId: e.custom_id, disabled: e.disabled, required: null != (o = e.required) && o, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case a.re.ROLE_SELECT:
       return {
-        type: a.re.ROLE_SELECT, id: R(t), customId: e.custom_id, disabled: e.disabled, required: null != (s = e.required) && s, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: a.re.ROLE_SELECT, id: w(t), customId: e.custom_id, disabled: e.disabled, required: null != (s = e.required) && s, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case a.re.MENTIONABLE_SELECT:
       return {
-        type: a.re.MENTIONABLE_SELECT, id: R(t), customId: e.custom_id, disabled: e.disabled, required: null != (c = e.required) && c, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+        type: a.re.MENTIONABLE_SELECT, id: w(t), customId: e.custom_id, disabled: e.disabled, required: null != (c = e.required) && c, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
       };
     case a.re.CHANNEL_SELECT:
       return {
-        type: a.re.CHANNEL_SELECT, id: R(t), customId: e.custom_id, disabled: e.disabled, required: null != (f = e.required) && f, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, channelTypes: e.channel_types, defaultValues: e.default_values
+        type: a.re.CHANNEL_SELECT, id: w(t), customId: e.custom_id, disabled: e.disabled, required: null != (p = e.required) && p, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, channelTypes: e.channel_types, defaultValues: e.default_values
       };
     case a.re.SECTION: {
-      let n = e.components.map((e, t) => E(e, t)).filter(u.lm),
-        r = E(e.accessory, n.length);
+      let n = e.components.map((e, t) => O(e, t)).filter(u.lm),
+        r = O(e.accessory, n.length);
       if (0 === n.length || null == r) return null;
       return {
         type: a.re.SECTION,
-        id: R(t),
+        id: w(t),
         components: n,
         accessory: r
       }
     }
     case a.re.TEXT_DISPLAY:
       return {
-        type: a.re.TEXT_DISPLAY, id: R(t), content: e.content
+        type: a.re.TEXT_DISPLAY, id: w(t), content: e.content
       };
     case a.re.THUMBNAIL:
       return {
-        type: a.re.THUMBNAIL, id: R(t), media: (0, l.ym)(e.media), description: e.description, spoiler: e.spoiler
+        type: a.re.THUMBNAIL, id: w(t), media: (0, l.ym)(e.media), description: e.description, spoiler: e.spoiler
       };
     case a.re.MEDIA_GALLERY:
       return {
-        type: a.re.MEDIA_GALLERY, id: R(t), items: e.items.map(e => ({
+        type: a.re.MEDIA_GALLERY, id: w(t), items: e.items.map(e => ({
           media: (0, l.ym)(e.media),
           description: e.description,
           spoiler: e.spoiler
@@ -269,33 +270,33 @@ function P(e, t) {
       };
     case a.re.FILE:
       return {
-        type: a.re.FILE, id: R(t), file: (0, l.ym)(e.file), name: e.name, size: e.size, spoiler: e.spoiler
+        type: a.re.FILE, id: w(t), file: (0, l.ym)(e.file), name: e.name, size: e.size, spoiler: e.spoiler
       };
     case a.re.SEPARATOR:
       return {
-        type: a.re.SEPARATOR, id: R(t), divider: null == (p = e.divider) || p, spacing: null != (h = e.spacing) ? h : a.US.SMALL
+        type: a.re.SEPARATOR, id: w(t), divider: null == (_ = e.divider) || _, spacing: null != (g = e.spacing) ? g : a.US.SMALL
       };
     case a.re.CONTENT_INVENTORY_ENTRY:
       if (null == e.content_inventory_entry) return null;
       return {
-        type: a.re.CONTENT_INVENTORY_ENTRY, id: R(t), contentInventoryEntry: e.content_inventory_entry
+        type: a.re.CONTENT_INVENTORY_ENTRY, id: w(t), contentInventoryEntry: e.content_inventory_entry
       };
     case a.re.CONTAINER: {
-      let n = e.components.map((e, t) => E(e, t)).filter(u.lm);
+      let n = e.components.map((e, t) => O(e, t)).filter(u.lm);
       return {
         type: a.re.CONTAINER,
-        id: R(t),
+        id: w(t),
         accentColor: null != e.accent_color ? (0, i.ho)(e.accent_color, true) : true,
         spoiler: e.spoiler,
         components: n
       }
     }
     case a.re.LABEL: {
-      let n = E(e.component, 0);
+      let n = O(e.component, 0);
       if (null == n) return null;
       return {
         type: a.re.LABEL,
-        id: R(t),
+        id: w(t),
         label: e.label,
         description: e.description,
         component: n
@@ -303,17 +304,42 @@ function P(e, t) {
     }
     case a.re.FILE_UPLOAD:
       return {
-        type: e.type, id: R(t), customId: e.custom_id, disabled: e.disabled, required: null != (g = e.required) && g, minValues: e.min_values, maxValues: e.max_values
+        type: e.type, id: w(t), customId: e.custom_id, disabled: e.disabled, required: null != (E = e.required) && E, minValues: e.min_values, maxValues: e.max_values
       };
-    case a.re.CHECKPOINT_CARD:
+    case a.re.CHECKPOINT_CARD: {
+      let n = e.checkpoint_data;
       return {
-        type: e.type, id: R(t), checkpointData: {}
-      };
+        type: e.type,
+        id: w(t),
+        checkpointData: {
+          cardId: n.card_id,
+          powerLevel: n.power_level,
+          powerLevelPercentile: n.power_level_percentile,
+          numMessagesSent: n.num_messages_sent,
+          totalVoiceMinutes: n.total_voice_minutes,
+          numEmojisSent: n.num_emojis_sent,
+          topGuild: null != n.top_guild ? {
+            guildId: n.top_guild.guild_id,
+            guildName: n.top_guild.guild_name,
+            guildIcon: n.top_guild.guild_icon
+          } : true,
+          topEmoji: null != n.top_emoji ? {
+            emojiId: d.default.isProbablyAValidSnowflake(n.top_emoji.emoji_id) ? n.top_emoji.emoji_id : true,
+            emojiName: null == (b = n.top_emoji) ? true : b.emoji_name
+          } : true,
+          topGame: null != n.top_game ? {
+            applicationId: n.top_game.application_id,
+            applicationName: n.top_game.application_name,
+            applicationImageId: n.top_game.application_image_id
+          } : true
+        }
+      }
+    }
     default:
-      return _.warn("transformComponent: Unknown component type", e.type), null
+      return m.warn("transformComponent: Unknown component type", e.type), null
   }
 }
 
-function R(e) {
-  return (0, d.FF)(e.join(","))
+function w(e) {
+  return (0, f.FF)(e.join(","))
 }

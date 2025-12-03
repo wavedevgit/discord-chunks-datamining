@@ -1,5 +1,5 @@
 /** Chunk was on 80448 **/
-/** chunk id: 860277, original params: t,e,i (module,exports,require) **/
+/** chunk id: 860277, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
@@ -14,61 +14,61 @@ var Chunk54381 = require("./54381.js"),
   Chunk140939 = require("./140939.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(t) {
+function p(e) {
   let {
-    step: e
-  } = t, {
-    users: i = [],
+    step: t
+  } = e, {
+    users: n = [],
     sidekick: p
-  } = (0, l.e7)([s.Z], () => s.Z.getCheckpointData());
-  if (null != p) return (0, n.jsxs)(d.Z, {
-    children: [e === c.ij.FRIENDS_INTRO && (0, n.jsxs)("div", {
-      children: [(0, n.jsx)(r.xvT, {
+  } = (0, l.e7)([a.Z], () => a.Z.getCheckpointData());
+  if (null != p) return (0, i.jsxs)(o.Z, {
+    children: [t === c.ij.FRIENDS_INTRO && (0, i.jsxs)("div", {
+      children: [(0, i.jsx)(r.xvT, {
         variant: "display-md",
         color: "text-primary",
-        children: x.intl.string(u.default["4xZpq4"])
-      }), i.map(t => (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(a.Z, {
-          user: t,
-          size: o.EF.SIZE_120
-        }), (0, n.jsx)(r.xvT, {
+        children: m.intl.string(d.default["4xZpq4"])
+      }), n.map(e => (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(s.Z, {
+          user: e,
+          size: u.EF.SIZE_120
+        }), (0, i.jsx)(r.xvT, {
           variant: "display-lg",
           color: "text-primary",
-          children: t.username
+          children: e.username
         })]
-      }, t.id))]
-    }), e === c.ij.FRIENDS_BEST && (0, n.jsxs)("div", {
-      children: [(0, n.jsx)(r.xvT, {
+      }, e.id))]
+    }), t === c.ij.FRIENDS_BEST && (0, i.jsxs)("div", {
+      children: [(0, i.jsx)(r.xvT, {
         variant: "display-md",
         color: "text-primary",
-        children: x.intl.string(u.default.d5HUsD)
-      }), (0, n.jsx)(a.Z, {
+        children: m.intl.string(d.default.d5HUsD)
+      }), (0, i.jsx)(s.Z, {
         user: p.user,
-        size: o.EF.SIZE_120
-      }), (0, n.jsx)(r.xvT, {
+        size: u.EF.SIZE_120
+      }), (0, i.jsx)(r.xvT, {
         variant: "display-md",
         color: "text-primary",
-        children: x.intl.format(u.default.wz2JuF, {
+        children: m.intl.format(d.default.wz2JuF, {
           user: null == p ? true : p.user.username,
-          userHook: (t, e) => (0, n.jsx)(r.xvT, {
+          userHook: (e, t) => (0, i.jsx)(r.xvT, {
             variant: "display-lg",
             color: "text-primary",
-            children: t
-          }, e)
+            children: e
+          }, t)
         })
-      }), (0, n.jsx)(r.xvT, {
+      }), (0, i.jsx)(r.xvT, {
         variant: "display-sm",
         color: "text-primary",
-        children: x.intl.string(u.default.wWKySP)
-      }), (0, n.jsx)(r.xvT, {
+        children: m.intl.string(d.default.wWKySP)
+      }), (0, i.jsx)(r.xvT, {
         variant: "display-sm",
         color: "text-primary",
         children: p.numMessagesSent
-      }), (0, n.jsx)(r.xvT, {
+      }), (0, i.jsx)(r.xvT, {
         variant: "display-sm",
         color: "text-primary",
-        children: x.intl.string(u.default.lXT6ns)
-      }), (0, n.jsx)(r.xvT, {
+        children: m.intl.string(d.default.lXT6ns)
+      }), (0, i.jsx)(r.xvT, {
         variant: "display-sm",
         color: "text-primary",
         children: p.numVoiceMinutes

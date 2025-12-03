@@ -1,7 +1,7 @@
 /** Chunk was on 80448 **/
-/** chunk id: 271268, original params: t,e,i (module,exports,require) **/
+/** chunk id: 271268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
@@ -11,11 +11,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk140939 = require("./140939.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o() {
+function u() {
   let {
     voice: {
-      totalVoiceMinutes: t,
-      totalVoiceMinutesPercentile: e
+      totalVoiceMinutes: e,
+      totalVoiceMinutesPercentile: t
     } = {
       totalVoiceMinutes: 0,
       totalVoiceMinutesPercentile: 0
@@ -39,11 +39,11 @@ function o() {
       color: "text-primary",
       children: Chunk388032.intl.format(Chunk140939.default["36PZwu"], {
         percent: 100 - exports,
-        percentHook: (t, e) => (0, n.jsx)(r.xvT, {
+        percentHook: (e, t) => (0, i.jsx)(r.xvT, {
           variant: "display-sm",
           color: "text-primary",
-          children: t
-        }, e)
+          children: e
+        }, t)
       })
     }) : null]
   })

@@ -1,13 +1,14 @@
 /** Chunk was on 1272 **/
 /** chunk id: 5888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m,
-  p: () => c
+  Z: () => _,
+  p: () => u
 });
 var r, i, Chunk442837 = require("./442837.js"),
-  Chunk570140 = require("./570140.js");
+  Chunk570140 = require("./570140.js"),
+  Chunk612776 = require("./612776.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,69 +17,76 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
 }
-var c = ((r = {})[r.INIT = 0] = "INIT", r[r.FETCHING = 1] = "FETCHING", r[r.SUCCESS = 2] = "SUCCESS", r[r.ERROR = 3] = "ERROR", r);
-let u = {},
-  d = 0,
-  p = {
+var u = ((r = {})[r.INIT = 0] = "INIT", r[r.FETCHING = 1] = "FETCHING", r[r.SUCCESS = 2] = "SUCCESS", r[r.ERROR = 3] = "ERROR", r);
+let d = {},
+  p = 0,
+  f = {
     volume: 1,
-    isMuted: false
+    isMuted: false,
+    highestSlideSeen: Chunk612776.yD.WELCOME
   },
-  f = o({}, p);
+  h = c({}, f);
 
-function h() {
-  u = {}, d = 0
+function g() {
+  d = {}, p = 0
 }
-class g extends(i = Chunk442837.ZP.PersistedStore) {
+class m extends(i = Chunk442837.ZP.PersistedStore) {
   getState() {
-    return f
+    return h
   }
   initialize(e) {
-    h(), null != e && (f = e)
+    g(), null != e && (h = c({}, h, e))
   }
   getCheckpointData() {
-    return u
-  }
-  getFetchState() {
     return d
   }
+  getFetchState() {
+    return p
+  }
   get volume() {
-    return f.volume
+    return h.volume
   }
   get isMuted() {
-    return f.isMuted
+    return h.isMuted
+  }
+  get highestSlideSeen() {
+    return h.highestSlideSeen
   }
 }
-s(g, "displayName", "CheckpointStore"), s(g, "persistKey", "CheckpointStore");
-let m = new g(Chunk570140.Z, {
-  CONNECTION_OPEN: h,
+o(m, "displayName", "CheckpointStore"), o(m, "persistKey", "CheckpointStore");
+let _ = new m(Chunk570140.Z, {
+  CONNECTION_OPEN: g,
   CHECKPOINT_FETCH_START: function() {
-    d = 1
+    p = 1
   },
   CHECKPOINT_FETCH_SUCCESS: function(e) {
-    u = e.data, d = 2
+    d = e.data, p = 2
   },
   CHECKPOINT_FETCH_FAILED: function() {
-    d = 3
+    p = 3
   },
   CHECKPOINT_SET_VOLUME: function(e) {
-    f.volume = e.volume
+    h.volume = e.volume
   },
   CHECKPOINT_TOGGLE_MUTE: function() {
-    f.isMuted = !f.isMuted
+    h.isMuted = !h.isMuted
+  },
+  CHECKPOINT_SET_HIGHEST_SLIDE_SEEN: function(e) {
+    h.highestSlideSeen = e.slide
   },
   LOGOUT: function() {
-    h(), f = o({}, p)
+    g(), h = c({}, f)
   }
 })
