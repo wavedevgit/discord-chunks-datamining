@@ -1,17 +1,16 @@
 /** Chunk was on 64271 **/
 /** chunk id: 262212, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => j,
-  ms: () => y
+  ZP: () => v,
+  ms: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk159691 = require("./159691.js"),
-  Chunk10765 = require("./10765.js"),
+  Chunk686866 = require("./686866.js"),
   Chunk639777 = require("./639777.js"),
-  Chunk973772 = require("./973772.js"),
   Chunk880419 = require("./880419.jsx"),
   Chunk827397 = require("./827397.js"),
   Chunk279604 = require("./279604.jsx"),
@@ -20,8 +19,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk292609 = require("./292609.js");
 
-function b() {
-  return (b = Object.assign || function(e) {
+function m() {
+  return (m = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -30,7 +29,7 @@ function b() {
   }).apply(this, arguments)
 }
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,24 +48,46 @@ function _(e) {
   return e
 }
 
-function y(e) {
+function _(e) {
   let {
     className: t,
     guildId: n,
     powerup: i,
     onClick: a
-  } = e, s = (0, d.Z)(n, i), {
+  } = e, s = (0, u.Z)(n, i), {
     onShowMore: c
-  } = (0, f.ZP)(n, i), u = h.uc.has(i.skuId);
+  } = (0, d.ZP)(n, i), m = f.uc.has(i.skuId);
   return (0, r.jsx)("div", {
-    className: l()(m.primaryButton, t),
+    className: l()(g.primaryButton, t),
     children: (0, r.jsx)(o.zxk, {
       variant: "primary",
       fullWidth: true,
-      text: u ? g.intl.string(p.default.g5Ds69) : g.intl.string(g.t["0Q61kF"]),
+      text: m ? p.intl.string(h.default.g5Ds69) : p.intl.string(p.t["0Q61kF"]),
       onClick: e => {
-        null == a || a(e), u ? null == s || s(e) : null == c || c()
+        null == a || a(e), m ? null == s || s(e) : null == c || c()
       }
+    })
+  })
+}
+
+function y(e) {
+  let {
+    className: t,
+    guildId: n,
+    powerup: i
+  } = e, {
+    onShowMore: a
+  } = (0, d.ZP)(n, i);
+  return (0, r.jsx)("div", {
+    className: l()(g.container, t),
+    children: (0, r.jsx)("div", {
+      className: g.primaryButton,
+      children: (0, r.jsx)(o.zxk, {
+        variant: "primary",
+        fullWidth: true,
+        text: i.type === f.Us.LEVEL ? p.intl.string(p.t["0Q61kF"]) : p.intl.string(p.t.Xa11Ep),
+        onClick: a
+      })
     })
   })
 }
@@ -75,50 +96,31 @@ function O(e) {
   let {
     className: t,
     guildId: n,
-    powerup: i
-  } = e, {
-    onShowMore: a
-  } = (0, f.ZP)(n, i);
-  return (0, r.jsx)("div", {
-    className: l()(m.container, t),
-    children: (0, r.jsx)("div", {
-      className: m.primaryButton,
-      children: (0, r.jsx)(o.zxk, {
-        variant: "primary",
-        fullWidth: true,
-        text: i.type === h.Us.LEVEL ? g.intl.string(g.t["0Q61kF"]) : g.intl.string(g.t.Xa11Ep),
-        onClick: a
-      })
-    })
-  })
-}
-
-function v(e) {
-  let {
-    className: t,
-    guildId: n,
     powerup: i,
     onError: o
-  } = e, s = (0, c.ZP)(n, i).type !== h.A3.INACTIVE, d = (0, a.Z)(n, i, "GuildPowerupCardFooterAdmin"), f = s || !d, p = !s;
+  } = e, {
+    showToggleButton: s,
+    isPowerupActive: u
+  } = (0, a.Z)(n, i), d = !u;
   return (0, r.jsxs)("div", {
-    className: l()(m.container, t),
-    children: [f && (0, r.jsx)(u.Z, {
+    className: l()(g.container, t),
+    children: [s && (0, r.jsx)(c.Z, {
       guildId: n,
       powerup: i,
       onError: o,
-      grow: p,
-      compact: !p
-    }), s && (0, r.jsx)(y, {
+      grow: d,
+      compact: !d
+    }), u && (0, r.jsx)(_, {
       guildId: n,
       powerup: i
     })]
   })
 }
 
-function j(e) {
-  var t = b({}, function(e) {
+function v(e) {
+  var t = m({}, function(e) {
     if (null == e) throw TypeError("Cannot destructure " + e);
     return e
   }(e));
-  return (0, s.Z)(t.guildId) ? (0, r.jsx)(v, _({}, t)) : (0, r.jsx)(O, _({}, t))
+  return (0, s.Z)(t.guildId) ? (0, r.jsx)(O, b({}, t)) : (0, r.jsx)(y, b({}, t))
 }

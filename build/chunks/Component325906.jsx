@@ -14,10 +14,11 @@ let l = e => {
       applicationId: t,
       transitionState: i,
       analyticsLocations: o,
-      renderHeader: l
+      renderHeader: l,
+      paymentModalVersion: s = "v2"
     } = e, {
-      paymentModalProps: s
-    } = (0, c.Li)(), d = null != s && null != s.onClose ? s.onClose : () => {};
+      paymentModalProps: d
+    } = (0, c.Li)(), u = null != d && null != d.onClose ? d.onClose : () => {};
     return (0, a.jsx)(r.PaymentModal, function(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t = null != arguments[n] ? arguments[n] : {},
@@ -38,13 +39,14 @@ let l = e => {
     }({
       applicationId: t,
       transitionState: i,
-      onClose: d,
+      onClose: u,
       hideShadow: true,
       skuId: n,
       renderHeader: l,
       initialPlanId: null,
-      analyticsLocations: o
-    }, s))
+      analyticsLocations: o,
+      paymentModalVersion: s
+    }, d))
   },
   s = e => {
     let {

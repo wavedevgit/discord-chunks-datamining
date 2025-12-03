@@ -73,7 +73,7 @@ class g {
       })
     }, {
       key: Chunk409813.h8.REVIEW,
-      renderStep: e => (0, r.jsx)(u.s, {
+      renderStep: e => (0, r.jsx)(u.z, {
         paymentModalStepProps: e
       }),
       options: {

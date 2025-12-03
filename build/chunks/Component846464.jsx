@@ -114,10 +114,7 @@ function y(e) {
     priceOptions: s,
     showPromotionalGiftBanner: d,
     onSelectPremiumGroup: p
-  } = e, m = (0, r.jsx)(i.Heading, {
-    variant: "heading-lg/bold",
-    children: g.intl.string(g.t["r+SebU"])
-  }), h = (0, o.Z)({
+  } = e, m = (0, o.Z)({
     location: "PremiumPaymentSKUSelectStep"
   }) && !l;
   return (0, r.jsxs)(r.Fragment, {
@@ -128,14 +125,17 @@ function y(e) {
       children: (0, r.jsxs)(i.Kqy, {
         direction: "horizontal",
         justify: "space-between",
-        children: [m, (0, r.jsx)(i.olH, {
+        children: [(0, r.jsx)(i.Heading, {
+          variant: "heading-lg/bold",
+          children: g.intl.string(g.t["r+SebU"])
+        }), (0, r.jsx)(i.olH, {
           "data-migration-pending": true,
           className: v.close,
           innerClassName: v.closeInner,
           onClick: n
         })]
       })
-    }), h ? (0, r.jsx)(i.hzk, {
+    }), m ? (0, r.jsx)(i.hzk, {
       "data-migration-pending": true,
       className: v.skuSelectWithPremiumGroupModalContent,
       children: (0, r.jsx)(u.wz, {
