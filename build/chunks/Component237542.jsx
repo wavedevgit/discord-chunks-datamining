@@ -1,19 +1,14 @@
 /** Chunk was on web.js **/
-/** chunk id: 938941, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 237542, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dw: () => _,
-  RM: () => h,
-  SC: () => m,
-  iA: () => E,
-  pj: () => p,
-  xD: () => g
+  b: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk676733 = require("./676733.js"),
-  Chunk993365 = require("./993365.js"),
-  Chunk864978 = require("./864978.js");
+var Chunk141639 = require("./141639.js"),
+  Chunk404726 = require("./404726.jsx"),
+  Chunk98123 = require("./98123.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,62 +66,24 @@ function f(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-
-function p(e) {
-  return (0, r.jsx)(i.bL, u(l({}, e), {
-    className: o.cell
-  }))
-}
+let p = {
+  Wumpus: {},
+  Background: {}
+};
 
 function _(e) {
-  var {
-    children: t
-  } = e, n = d(e, ["children"]);
-  return (0, r.jsx)(i.sg, u(l({}, n), {
-    className: o.column,
-    children: (0, r.jsx)(a.x, {
-      variant: "eyebrow",
-      className: o.columnText,
-      children: t
-    })
-  }))
+  let {
+    artboard: t = "Wumpus"
+  } = e, n = d(e, ["artboard"]), {
+    status: s,
+    buffer: c
+  } = (0, o.VG)(i.Z), f = (0, o.T3)(i.Z);
+  return s === o.Jt.Loading ? null : (0, r.jsx)(a.v, l(u(l({}, f ? {
+    key: "override"
+  } : {}), {
+    buffer: c,
+    artboard: t,
+    artboardProperties: p
+  }), n))
 }
-
-function m(e) {
-  return (0, r.jsx)(i.X2, u(l({}, e), {
-    className: o.row
-  }))
-}
-
-function h(e) {
-  return (0, r.jsx)(i.RM, u(l({}, e), {
-    className: o.body
-  }))
-}
-
-function g(e) {
-  return (0, r.jsx)(i.xD, u(l({}, e), {
-    className: o.header
-  }))
-}
-
-function E(e) {
-  var {
-    header: t,
-    footer: n,
-    children: a
-  } = e, s = d(e, ["header", "footer", "children"]);
-  return (0, r.jsx)("div", {
-    className: o.container,
-    children: (0, r.jsxs)(i.iA, u(l({}, s), {
-      className: o.table,
-      children: [null != t && (0, r.jsx)("div", {
-        className: o.header,
-        children: t
-      }), a, null != n && (0, r.jsx)("div", {
-        className: o.footer,
-        children: n
-      })]
-    }))
-  })
-}
+_.riveSrc = Chunk141639.Z

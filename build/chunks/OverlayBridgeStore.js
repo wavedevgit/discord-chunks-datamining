@@ -23,7 +23,7 @@ var i, Chunk807864 = require("./807864.js"),
   Chunk353926 = require("./353926.js"),
   Chunk594190 = require("./594190.js"),
   Chunk40766 = require("./40766.js"),
-  Chunk41534 = require("./41534.js"),
+  Chunk338388 = require("./338388.js"),
   Chunk454991 = require("./454991.js"),
   Chunk837268 = require("./837268.js"),
   Chunk633565 = require("./633565.js"),
@@ -214,7 +214,7 @@ function eh() {
         }
     })
   } catch (e) {
-    el.error("tryUploadDiscordHookCrashes", module), (0, Chunk41534.D1)(module)
+    el.error("tryUploadDiscordHookCrashes", module), (0, Chunk338388.D1)(module)
   }
 }
 
@@ -482,7 +482,7 @@ function ek(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "21afc83e318b5b5504b541d63f588f1e39a358af"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "459f7311c5d527e78d75237a7908b36759fdcc32"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {

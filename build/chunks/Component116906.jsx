@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 116906, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -26,18 +26,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk7994 = require("./7994.js"),
   Chunk878449 = require("./878449.js");
 
-function Z(e) {
+function _(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: Z,
+    guildId: _,
     subsection: O,
     onClose: N
   } = e, {
-    voiceActivityStatusEnabled: A
+    voiceActivityStatusEnabled: T
   } = (0, r.U)({
     location: "UserProfileModalActivity"
-  }), T = (0, u.b)({
+  }), A = (0, u.b)({
     location: "UserProfileModalActivity"
   }), {
     live: P,
@@ -48,11 +48,11 @@ function Z(e) {
     voiceActivity: w
   } = (0, p.Z)({
     userId: n.id,
-    guildId: Z
+    guildId: _
   }), D = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {
     let e = R ? c.Z.getStatus() : a.Z.getStatus(n.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
-  }), M = P.length > 0 || null != C, B = A && null == C && null == w && null != S, U = !L && (M || B), k = E.length > 0;
+  }), M = P.length > 0 || null != C, B = T && null == C && null == w && null != S, U = !L && (M || B), k = E.length > 0;
   return U || k || !D ? (0, l.jsxs)(o.zJl, {
     className: y.scroller,
     fade: true,
@@ -60,7 +60,7 @@ function Z(e) {
       "aria-label": I.intl.string(I.t.J6STd9),
       children: (0, l.jsxs)("ul", {
         className: y.activityList,
-        children: [!T && B && (0, l.jsx)("li", {
+        children: [!A && B && (0, l.jsx)("li", {
           children: (0, l.jsx)(j.Z, {
             user: n,
             currentUser: t,
@@ -104,7 +104,7 @@ function Z(e) {
       })
     }) : null]
   }) : (0, l.jsx)("div", {
-    className: _.empty,
+    className: Z.empty,
     children: (0, l.jsx)(o.$jN, {})
   })
 }

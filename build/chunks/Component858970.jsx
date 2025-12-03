@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 858970, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => Z
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -42,16 +42,16 @@ function y(e) {
   return e
 }
 
-function _(e) {
+function Z(e) {
   let {
     user: n,
     guildId: t,
-    channelId: _,
-    messageId: Z,
+    channelId: Z,
+    messageId: _,
     roleId: O,
     transitionState: N,
-    openedAt: A,
-    onHide: T,
+    openedAt: T,
+    onHide: A,
     sourceAnalyticsLocations: P = []
   } = e, E = t === j.ME ? true : t, C = (0, i.e7)([c.Z], () => c.Z.isBlocked(n.id)), {
     analyticsLocations: S
@@ -60,8 +60,8 @@ function _(e) {
     userId: n.id,
     showGuildProfile: true,
     guildId: E,
-    channelId: _,
-    messageId: Z,
+    channelId: Z,
+    messageId: _,
     roleId: O
   }), D = [{
     icon: o.owK,
@@ -69,14 +69,14 @@ function _(e) {
   }, {
     icon: o.owK,
     description: b.intl.string(C ? b.t.QxrDY1 : b.t.W6fjkS)
-  }], R = (0, p.ZP)(n.id, E), L = d.ZP.getName(null == R ? true : R.guildId, _, n), M = b.intl.formatToPlainString(b.t.KRe1Fk, {
+  }], R = (0, p.ZP)(n.id, E), L = d.ZP.getName(null == R ? true : R.guildId, Z, n), M = b.intl.formatToPlainString(b.t.KRe1Fk, {
     name: L
   });
   return (0, l.jsx)(s.Gt, {
     value: S,
     children: (0, l.jsx)(u.Mt, {
       value: w,
-      openedAt: A,
+      openedAt: T,
       fetchStartedAt: null == R ? true : R.fetchStartedAt,
       fetchEndedAt: null == R ? true : R.fetchEndedAt,
       isLoaded: null == R ? true : R.isLoaded,
@@ -130,7 +130,7 @@ function _(e) {
                 size: "md",
                 isBlocked: C,
                 onClick: () => {
-                  T(), (0, m.pQ)(y({
+                  A(), (0, m.pQ)(y({
                     action: C ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                     analyticsLocations: S
                   }, w))
@@ -138,7 +138,7 @@ function _(e) {
               }), (0, l.jsx)(h.Z, {
                 userId: n.id,
                 onClick: () => {
-                  T(), (0, m.pQ)(y({
+                  A(), (0, m.pQ)(y({
                     action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                     analyticsLocations: S
                   }, w))

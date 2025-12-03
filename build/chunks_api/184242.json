@@ -1,1 +1,0 @@
-{"id":"184242","type":"experiment","data":{"kind":"user","id":"2024-08_user_profile_blockee_hide_mutuals","label":"User Profile Blockee Hide Mutuals","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable User Profile Blockee Hide Mutuals","config":{"enabled":true}}]},"fromModule":{"id":"93979"}}

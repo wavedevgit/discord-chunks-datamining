@@ -81,9 +81,9 @@ function ea(e) {
     onClose: eb,
     showGuildProfile: eI = true,
     sourceAnalyticsLocations: ey = [],
-    disableActionsForPreview: e_ = false
+    disableActionsForPreview: eZ = false
   } = e, {
-    analyticsLocations: eZ
+    analyticsLocations: e_
   } = (0, u.ZP)([...ey, d.Z.USER_PROFILE_MODAL_V2]), eO = (0, N.ZB)({
     layout: "MODAL_V2",
     userId: ea.id,
@@ -93,10 +93,10 @@ function ea(e) {
     messageId: em,
     roleId: ep,
     showGuildProfile: eI
-  }), eN = i.useRef(null), eA = (0, p.X)(eN), [eT, eP] = i.useState(false), {
+  }), eN = i.useRef(null), eT = (0, p.X)(eN), [eA, eP] = i.useState(false), {
     defaultWishlistId: eE
-  } = (0, r.cj)([T.Z], () => ({
-    defaultWishlistId: T.Z.getFirstWishlistId(ea.id)
+  } = (0, r.cj)([A.Z], () => ({
+    defaultWishlistId: A.Z.getFirstWishlistId(ea.id)
   }));
   (0, b.kZ)(eE, ea.id);
   let eC = (0, S.$m)(),
@@ -111,7 +111,7 @@ function ea(e) {
     } : {}, [ed, ea.id]);
   (0, c.$)(ew, "UserProfileModalV2");
   let eD = (0, P.ZP)(ea.id, eI ? ed : true),
-    eR = Z.ZP.useName(null == eD ? true : eD.guildId, eu, ea),
+    eR = _.ZP.useName(null == eD ? true : eD.guildId, eu, ea),
     {
       relationshipType: eL,
       originApplicationId: eM
@@ -136,8 +136,8 @@ function ea(e) {
       userId: ea.id
     }),
     eW = (0, h.vh)(ea.id),
-    eH = (0, C.Z)(ea.id),
-    ez = (0, E.Z)(ea.id),
+    ez = (0, C.Z)(ea.id),
+    eH = (0, E.Z)(ea.id),
     eY = (0, m.Dt)(),
     eK = er.intl.format(er.t.KRe1Fk, {
       name: eR
@@ -148,11 +148,11 @@ function ea(e) {
         eP(false)
       }, 1e3)
     };
-    return _.S.subscribe(ei.CkL.SHAKE_PROFILE_MODAL, e), () => {
-      _.S.unsubscribe(ei.CkL.SHAKE_PROFILE_MODAL, e), (0, en.L$)(null)
+    return Z.S.subscribe(ei.CkL.SHAKE_PROFILE_MODAL, e), () => {
+      Z.S.unsubscribe(ei.CkL.SHAKE_PROFILE_MODAL, e), (0, en.L$)(null)
     }
   }, []), (0, l.jsx)(u.Gt, {
-    value: eZ,
+    value: e_,
     children: (0, l.jsx)(N.Mt, {
       value: eO,
       openedAt: eg,
@@ -169,9 +169,9 @@ function ea(e) {
           "aria-labelledby": eY,
           parentComponent: "UserProfileModalV2",
           children: [(0, l.jsxs)(s.UkV, {
-            isShaking: eT,
+            isShaking: eA,
             intensity: 1.4,
-            children: [e_ ? (0, l.jsxs)("div", {
+            children: [eZ ? (0, l.jsxs)("div", {
               className: es.previewBar,
               children: [(0, l.jsxs)(s.Heading, {
                 id: eY,
@@ -197,7 +197,7 @@ function ea(e) {
               })
             }), (0, l.jsx)(s.y5t, {
               children: (0, l.jsxs)(W.Z, {
-                className: e_ ? es.disabled : true,
+                className: eZ ? es.disabled : true,
                 user: ea,
                 displayProfile: eD,
                 themeType: eo.l.MODAL_V2,
@@ -231,23 +231,23 @@ function ea(e) {
                       guildId: ed,
                       channelId: eu,
                       themeType: eo.l.MODAL_V2
-                    }), (0, l.jsx)(z.Z, {
+                    }), (0, l.jsx)(H.Z, {
                       user: ea,
                       guildId: ed,
                       channelId: eu,
                       themeType: eo.l.MODAL_V2,
                       hasEntered: ev === s.Dvm.ENTERED,
                       prompt: ek && ea.id === ec.id ? eG : null,
-                      disableToolbar: e_
+                      disableToolbar: eZ
                     })]
                   }), (0, l.jsxs)(s.Ttm, {
                     fade: true,
                     className: es.profileBody,
-                    children: [(0, l.jsx)(H.Z, {
+                    children: [(0, l.jsx)(z.Z, {
                       user: ea,
                       guildId: null != (n = null == eD ? true : eD.guildId) ? n : true,
                       onClose: eb,
-                      nickname: Z.ZP.useName(null == eD ? true : eD.guildId, eu, ea),
+                      nickname: _.ZP.useName(null == eD ? true : eD.guildId, eu, ea),
                       nicknameIcons: (0, l.jsx)(B.Z, {
                         size: "sm",
                         userId: ea.id
@@ -339,19 +339,19 @@ function ea(e) {
                       headingVariant: "text-xs/medium",
                       headingColor: "currentColor",
                       scrollIntoView: eh === el.Tb.ROLES
-                    }), eH.length > 0 && (0, l.jsx)(Q.Z, {
+                    }), ez.length > 0 && (0, l.jsx)(Q.Z, {
                       heading: er.intl.string(er.t["3fe7U5"]),
                       scrollIntoView: eh === el.Tb.CONNECTIONS,
                       children: (0, l.jsx)(q.Z, {
-                        connections: eH,
+                        connections: ez,
                         userId: ea.id,
                         className: es.profileAppConnections
                       })
-                    }), ez.length > 0 && (0, l.jsx)(Q.Z, {
+                    }), eH.length > 0 && (0, l.jsx)(Q.Z, {
                       heading: er.intl.string(er.t.PHjkRE),
                       scrollIntoView: eh === el.Tb.APPS,
                       children: (0, l.jsx)(K.Z, {
-                        applicationRoleConnections: ez,
+                        applicationRoleConnections: eH,
                         onClose: eb,
                         className: es.profileAppConnections
                       })
@@ -362,7 +362,7 @@ function ea(e) {
                         userId: ea.id,
                         className: es.profileNote,
                         autoFocus: eh === el.Tb.NOTE,
-                        onUpdate: () => (0, A.pQ)(function(e) {
+                        onUpdate: () => (0, T.pQ)(function(e) {
                           for (var n = 1; n < arguments.length; n++) {
                             var t = null != arguments[n] ? arguments[n] : {},
                               l = Object.keys(t);
@@ -386,7 +386,7 @@ function ea(e) {
                     })]
                   }), (null == eD ? true : eD.profileEffect) != null && (0, l.jsx)(j.Z, {
                     skuId: null == eD ? true : eD.profileEffect.skuId,
-                    isHovering: eA
+                    isHovering: eT
                   })]
                 }), (0, l.jsx)($.Z, {
                   user: ea,

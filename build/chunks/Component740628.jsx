@@ -74,11 +74,11 @@ function b(e) {
     initialSubsection: I,
     onClose: y
   } = e, {
-    trackUserProfileAction: _
-  } = (0, a.KZ)(), Z = (0, o.e7)([s.Z], () => s.Z.hidePersonalInformation), [{
+    trackUserProfileAction: Z
+  } = (0, a.KZ)(), _ = (0, o.e7)([s.Z], () => s.Z.hidePersonalInformation), [{
     section: O,
     subsection: N
-  }, A] = i.useState({
+  }, T] = i.useState({
     section: null != (c = null == (n = f.find(e => {
       let {
         section: n
@@ -88,21 +88,21 @@ function b(e) {
     subsection: I
   });
   i.useEffect(() => {
-    null == f.find(e => e.section === O) && A({
+    null == f.find(e => e.section === O) && T({
       section: f[0].section,
       subsection: true
     })
   }, [f, O]);
-  let T = i.useCallback(e => {
-    _({
+  let A = i.useCallback(e => {
+    Z({
       action: "PRESS_SECTION",
       section: e
-    }), A({
+    }), T({
       section: e,
       subsection: true
     })
-  }, [_, A]);
-  return Z ? (0, l.jsx)("div", {
+  }, [Z, T]);
+  return _ ? (0, l.jsx)("div", {
     className: j.container,
     children: (0, l.jsxs)("div", {
       className: v.empty,
@@ -119,7 +119,7 @@ function b(e) {
       className: j.tabBar,
       type: "top",
       selectedItem: O,
-      onItemSelect: T,
+      onItemSelect: A,
       children: f.map(e => {
         let {
           section: n,

@@ -47,7 +47,7 @@ function C(e) {
     sourceAnalyticsLocations: U = []
   } = e, k = C === O.ME ? true : C, G = (0, p.ZP)(t.id, k), V = u.ZP.getName(k, S, t), F = (0, a.Dt)(), {
     analyticsLocations: W
-  } = (0, s.ZP)([...U, r.Z.USER_PROFILE_MODAL]), H = (0, m.ZB)({
+  } = (0, s.ZP)([...U, r.Z.USER_PROFILE_MODAL]), z = (0, m.ZB)({
     layout: "MODAL",
     userId: t.id,
     sourceSessionId: R,
@@ -55,11 +55,11 @@ function C(e) {
     channelId: S,
     messageId: w,
     roleId: D
-  }), z = i.useRef(null), Y = (0, c.X)(z);
+  }), H = i.useRef(null), Y = (0, c.X)(H);
   return (0, l.jsx)(s.Gt, {
     value: W,
     children: (0, l.jsx)(m.Mt, {
-      value: H,
+      value: z,
       openedAt: M,
       fetchStartedAt: null == G ? true : G.fetchStartedAt,
       fetchEndedAt: null == G ? true : G.fetchEndedAt,
@@ -67,7 +67,7 @@ function C(e) {
       children: (0, l.jsxs)(o.Y0X, {
         "data-migration-pending": true,
         transitionState: L,
-        className: T.root,
+        className: A.root,
         hideShadow: true,
         "aria-labelledby": F,
         parentComponent: "NonUserBotProfileModal",
@@ -75,7 +75,7 @@ function C(e) {
           component: (0, l.jsx)(o.nn4, {
             children: (0, l.jsx)(o.H, {
               id: F,
-              children: A.intl.format(A.t.KRe1Fk, {
+              children: T.intl.format(T.t.KRe1Fk, {
                 name: V
               })
             })
@@ -84,8 +84,8 @@ function C(e) {
             user: t,
             displayProfile: G,
             themeType: N.l.MODAL,
-            ref: (null == G ? true : G.profileEffect) != null ? z : true,
-            children: [(0, l.jsx)(_.Z, {
+            ref: (null == G ? true : G.profileEffect) != null ? H : true,
+            children: [(0, l.jsx)(Z.Z, {
               children: (0, l.jsx)(y.Z, {
                 user: t
               })
@@ -95,7 +95,7 @@ function C(e) {
                 displayProfile: G,
                 themeType: N.l.MODAL
               }), (0, l.jsx)("div", {
-                className: T.headerInner,
+                className: A.headerInner,
                 children: (0, l.jsx)(f.Z, {
                   user: t,
                   displayProfile: G,
@@ -105,9 +105,9 @@ function C(e) {
                 })
               })]
             }), (0, l.jsxs)("div", {
-              className: T.body,
+              className: A.body,
               children: [(0, l.jsx)(I.Z, {
-                className: T.username,
+                className: A.username,
                 user: t,
                 guildId: k,
                 nickname: V,
@@ -123,17 +123,17 @@ function C(e) {
                 children: [(0, l.jsx)(o.njP, {
                   className: E.tabBar,
                   type: "top",
-                  selectedItem: Z.oh.BOT_INFO,
+                  selectedItem: _.oh.BOT_INFO,
                   onItemSelect: O.dG4,
                   children: (0, l.jsx)(o.njP.Item, {
                     className: E.tabBarItem,
-                    id: Z.oh.BOT_INFO,
-                    "aria-label": A.intl.string(A.t.jGoPJT),
+                    id: _.oh.BOT_INFO,
+                    "aria-label": T.intl.string(T.t.jGoPJT),
                     children: (0, l.jsx)(o.Text, {
                       variant: "text-sm/normal",
-                      children: A.intl.string(A.t.jGoPJT)
+                      children: T.intl.string(T.t.jGoPJT)
                     })
-                  }, Z.oh.BOT_INFO)
+                  }, _.oh.BOT_INFO)
                 }), (0, l.jsxs)(o.zJl, {
                   fade: true,
                   className: P.scroller,
@@ -142,11 +142,11 @@ function C(e) {
                     userBio: null == G ? true : G.bio,
                     setLineClamp: false
                   }), (0, l.jsx)(g.Z, {
-                    heading: A.intl.string(A.t["A//N4k"]),
+                    heading: T.intl.string(T.t["A//N4k"]),
                     children: (0, l.jsx)(j.Z, {
                       userId: t.id,
                       guildId: k,
-                      tooltipDelay: Z.vB
+                      tooltipDelay: _.vB
                     })
                   })]
                 })]

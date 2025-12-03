@@ -1,17 +1,14 @@
 /** Chunk was on 93979 **/
 /** chunk id: 585305, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => r
 });
 var Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk184242 = require("./184242.js"),
   Chunk349902 = require("./349902.js");
 
-function s(e) {
+function r(e) {
   let n = (0, l.e7)([i.default], () => i.default.getCurrentUser()),
-    t = (0, r.Z)(e);
-  return !(0, o.Ac)({
-    location: "useShouldShowMutualInfo"
-  }) || (null == n ? true : n.id) !== e.id && !t
+    t = (0, o.Z)(e);
+  return (null == n ? true : n.id) !== e.id && !t
 }
