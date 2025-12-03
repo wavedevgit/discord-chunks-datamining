@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
 function m(e) {
   let {
     locked: t
-  } = e, n = (0, h.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, l.e7)([u.default], () => u.default.getCurrentUser()), O = null != g ? g : m, [E, v] = r.useState(new Set), [S, b] = r.useState(new Set), x = r.useCallback((e, t, n) => {
+  } = e, n = (0, h.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, l.e7)([c.default], () => c.default.getCurrentUser()), O = null != g ? g : m, [E, v] = r.useState(new Set), [S, b] = r.useState(new Set), x = r.useCallback((e, t, n) => {
     v(n => {
       if (t) {
         if (n.has(e)) return n;
@@ -39,7 +39,7 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), j = (0, c.ee)(() => E, [E]), I = (0, c.ee)(() => S, [S]), C = (0, a.h)(c.zi, 3e3, []);
+  }, []), j = (0, u.ee)(() => E, [E]), I = (0, u.ee)(() => S, [S]), C = (0, a.h)(u.zi, 3e3, []);
   r.useEffect(() => {
     0 === j.size || t || C(p.Odu.FRIENDS, {
       locked: t,
@@ -54,47 +54,47 @@ function m(e) {
         switch (e) {
           case o.sG.OPEN_DIRECT_MESSAGE:
             return {
-              type: c.Qu.FRIEND_LIST, value: c.bk.CHAT
+              type: u.Qu.FRIEND_LIST, value: u.bk.CHAT
             };
           case o.sG.ACCEPT_FRIEND_REQUEST:
             return {
-              type: c.Qu.FRIEND_REQUEST, value: c.bk.ACCEPT_REQUEST
+              type: u.Qu.FRIEND_REQUEST, value: u.bk.ACCEPT_REQUEST
             };
           case o.sG.DECLINE_FRIEND_REQUEST:
             return {
-              type: c.Qu.FRIEND_REQUEST, value: c.bk.DECLINE_REQUEST
+              type: u.Qu.FRIEND_REQUEST, value: u.bk.DECLINE_REQUEST
             };
           case o.sG.CANCEL_FRIEND_REQUEST:
             return {
-              type: c.Qu.FRIEND_REQUEST, value: c.bk.CANCEL_REQUEST
+              type: u.Qu.FRIEND_REQUEST, value: u.bk.CANCEL_REQUEST
             };
           case o.sG.SEND_FRIEND_REQUEST:
             return {
-              type: c.Qu.FRIEND_REQUEST, value: c.bk.SEND_REQUEST
+              type: u.Qu.FRIEND_REQUEST, value: u.bk.SEND_REQUEST
             };
           case o.sG.SEND_ACTIVITY_INVITE:
             return {
-              type: c.Qu.INVITE, value: c.bk.INVITE_SENT
+              type: u.Qu.INVITE, value: u.bk.INVITE_SENT
             };
           case o.sG.ASK_TO_JOIN:
             return {
-              type: c.Qu.INVITE, value: c.bk.JOIN_REQUEST_SENT
+              type: u.Qu.INVITE, value: u.bk.JOIN_REQUEST_SENT
             };
           case o.sG.USER_CONTEXT_MENU:
             return {
-              type: c.Qu.FRIEND_LIST, value: c.bk.SETTINGS_OPENED
+              type: u.Qu.FRIEND_LIST, value: u.bk.SETTINGS_OPENED
             };
           case o.sG.OPEN_FRIEND_MODAL:
             return {
-              type: c.Qu.FRIEND_LIST, value: c.bk.PROFILE_OPENED
+              type: u.Qu.FRIEND_LIST, value: u.bk.PROFILE_OPENED
             };
           case o.sG.OPEN_SETTINGS_MODAL:
             return {
-              type: c.Qu.FRIEND_LIST, value: c.bk.SETTINGS_OPENED
+              type: u.Qu.FRIEND_LIST, value: u.bk.SETTINGS_OPENED
             };
           case o.sG.SEARCH_FRIENDS:
             return {
-              type: c.Qu.FRIEND_LIST, value: c.bk.SEARCH
+              type: u.Qu.FRIEND_LIST, value: u.bk.SEARCH
             };
           default:
             return null
@@ -102,7 +102,7 @@ function m(e) {
       }(e);
       if (null != n) {
         var i, r;
-        (0, c.Ws)(p.Odu.FRIENDS, (i = function(e) {
+        (0, u.Ws)(p.Odu.FRIENDS, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);

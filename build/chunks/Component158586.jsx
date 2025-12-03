@@ -16,10 +16,10 @@ var Chunk54381 = require("./54381.js"),
 let j = e => {
   var t, n, j, p, b, h, x;
   let {
-    channel: v,
-    onClose: f,
+    channel: f,
+    onClose: v,
     transitionState: y
-  } = e, [g, O] = o.useState(null != (j = v.defaultReactionEmoji) ? j : null), [N, w] = o.useState(false), [E, P] = o.useState(false), k = o.useRef(null), _ = (null != (p = null == (t = v.defaultReactionEmoji) ? true : t.emojiId) ? p : null) !== (null != (b = null == g ? true : g.emojiId) ? b : null), C = (null != (h = null == (n = v.defaultReactionEmoji) ? true : n.emojiName) ? h : null) !== (null != (x = null == g ? true : g.emojiName) ? x : null), R = _ || C, B = e => {
+  } = e, [g, O] = o.useState(null != (j = f.defaultReactionEmoji) ? j : null), [N, w] = o.useState(false), [E, P] = o.useState(false), k = o.useRef(null), _ = (null != (p = null == (t = f.defaultReactionEmoji) ? true : t.emojiId) ? p : null) !== (null != (b = null == g ? true : g.emojiId) ? b : null), C = (null != (h = null == (n = f.defaultReactionEmoji) ? true : n.emojiName) ? h : null) !== (null != (x = null == g ? true : g.emojiName) ? x : null), R = _ || C, B = e => {
     O(null == e ? null : (null == e ? true : e.id) != null ? {
       emojiId: e.id
     } : {
@@ -29,9 +29,9 @@ let j = e => {
     if (R) {
       w(true), P(false);
       try {
-        await (0, a.wk)(v.id, {
+        await (0, a.wk)(f.id, {
           defaultReactionEmoji: g
-        }), f()
+        }), v()
       } catch (e) {
         P(true)
       } finally {
@@ -43,11 +43,11 @@ let j = e => {
     title: u.intl.string(u.t.XlDE3k),
     subtitle: u.intl.string(u.t.lVqhdd),
     transitionState: y,
-    onClose: f,
+    onClose: v,
     actions: [{
       variant: "secondary",
       text: u.intl.string(u.t["ETE/oC"]),
-      onClick: f
+      onClick: v
     }, {
       variant: "primary",
       text: u.intl.string(u.t["R3BPH+"]),
@@ -68,7 +68,7 @@ let j = e => {
             closePopout: t
           } = e;
           return (0, i.jsx)(c.Z, {
-            guildId: null == v ? true : v.guild_id,
+            guildId: null == f ? true : f.guild_id,
             closePopout: t,
             onSelectEmoji: e => {
               let {
@@ -78,7 +78,7 @@ let j = e => {
               B(n), i && t()
             },
             pickerIntention: d.Hz.COMMUNITY_CONTENT,
-            channel: v
+            channel: f
           })
         },
         position: "right",
@@ -129,7 +129,7 @@ let j = e => {
       })]
     }), E ? (0, i.jsx)(r.Text, {
       variant: "text-sm/normal",
-      color: "text-danger",
+      color: "text-feedback-critical",
       children: u.intl.string(u.t.F75nNl)
     }) : null]
   })

@@ -149,8 +149,8 @@ function D(e) {
     inviteCodes: c
   } = (0, x.s)(n), p = (0, d.e7)([m.Z], () => m.Z.getGuild(n)), D = null != (t = null == p ? true : p.vanityURLCode) ? t : null, [N, R] = l.useState(false), {
     selectedSourceInviteCode: L,
-    selectedJoinSourceType: P
-  } = a, I = null != P && P !== j.gq.UNSPECIFIED, V = (0, d.e7)([b.Z], () => b.Z.hideInstantInvites, []);
+    selectedJoinSourceType: I
+  } = a, P = null != I && I !== j.gq.UNSPECIFIED, V = (0, d.e7)([b.Z], () => b.Z.hideInstantInvites, []);
   V && (c = []);
   let M = l.useMemo(() => s()(e => {
     let t = e.trim();
@@ -170,14 +170,14 @@ function D(e) {
       })
     }, [n]),
     T = l.useCallback(e => {
-      e === P ? (0, g.Dr)(n, {
+      e === I ? (0, g.Dr)(n, {
         selectedSourceInviteCode: true,
         selectedJoinSourceType: true
       }) : (0, g.Dr)(n, {
         selectedSourceInviteCode: null,
         selectedJoinSourceType: e
       }), R(false)
-    }, [n, P]),
+    }, [n, I]),
     k = l.useCallback(e => {
       (0, g.Dr)(n, {
         selectedSourceInviteCode: e,
@@ -216,7 +216,7 @@ function D(e) {
           vanityUrl: D,
           text: (0, j.bE)(e, D, V)
         })),
-        checked: P === e,
+        checked: I === e,
         disabled: false,
         action: () => T(e),
         group: "join-source-type-options"
@@ -233,7 +233,7 @@ function D(e) {
       }, "invite-code-filter-search"), (0, r.jsx)(C.Clw, {}), (0, r.jsx)(C.k5B, {
         id: "join-source-type-option-all",
         label: y.intl.string(y.t.an9Ry3),
-        checked: null == L && null == P,
+        checked: null == L && null == I,
         disabled: false,
         action: () => T(null),
         group: "join-source-type-options"
@@ -261,16 +261,16 @@ function D(e) {
                 [O.focused]: e.isFocused
               }),
               children: y.intl.string(y.t["Kz/cho"])
-            }), I ? (0, r.jsx)("div", {
+            }), P ? (0, r.jsx)("div", {
               className: O.selectedOption,
               children: (0, r.jsx)(Z, w(_({}, e), {
                 size: 12,
-                text: (0, j.bE)(P, D, V),
-                type: P,
+                text: (0, j.bE)(I, D, V),
+                type: I,
                 vanityUrl: D
               }))
             }) : null]
-          }), I ? (0, r.jsx)(f.Z, {
+          }), P ? (0, r.jsx)(f.Z, {
             background: O.__invalid_radio,
             foreground: O.radioSelection,
             width: 16,

@@ -31,7 +31,7 @@ function d(e) {
     }
     return o
   }(e, ["guildId", "gameInstance"]);
-  let [f, m] = o.useState(false), [b, p] = o.useState(true), g = (0, l.Z)(n.gameId, "cover");
+  let [f, b] = o.useState(false), [m, p] = o.useState(true), g = (0, c.Z)(n.gameId, "cover");
   return (0, r.jsx)(a.f, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -60,18 +60,18 @@ function d(e) {
         className: u.image
       })
     }),
-    warningText: s.intl.string(c.default.ukbS3E),
-    acknowledgementText: s.intl.string(c.default.xjRtF9),
+    warningText: s.intl.string(l.default.ukbS3E),
+    acknowledgementText: s.intl.string(l.default.xjRtF9),
     isLoading: f,
-    error: b,
+    error: m,
     onDeactivate: () => {
-      p(true), m(true), (0, i.s9)(t, n.planId, n.entitlementId).then(() => {
+      p(true), b(true), (0, i.s9)(t, n.planId, n.entitlementId).then(() => {
         d.onClose()
       }).catch(e => {
         var t;
         p(null != (t = e.body.message) ? t : e.message)
       }).finally(() => {
-        m(false)
+        b(false)
       })
     }
   }, d))

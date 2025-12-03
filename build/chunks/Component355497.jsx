@@ -62,7 +62,7 @@ class u extends(r = Chunk473749.PureComponent) {
               required: true
             }), null != c && "" !== c ? (0, Chunk54381.jsxs)(Chunk481060.Text, {
               variant: "text-xs/normal",
-              color: "text-danger",
+              color: "text-feedback-critical",
               className: Chunk718325.error,
               children: [" ", c, " "]
             }) : null]

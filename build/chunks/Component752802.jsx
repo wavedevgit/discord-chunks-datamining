@@ -89,14 +89,14 @@ function M(e) {
   let {
     participant: t
   } = e;
-  return (0, i.jsx)(u.aML, {
+  return (0, i.jsx)(c.aML, {
     "data-migration-pending": true,
     text: A.intl.string(A.t["4EGMWL"]),
     children: e => {
       var {
         onClick: n
       } = e, r = L(e, ["onClick"]);
-      return (0, i.jsx)(u.P3F, k(R({}, r), {
+      return (0, i.jsx)(c.P3F, k(R({}, r), {
         className: D.controlAction,
         onClick: e => {
           null == n || n(), (0, p.g)((0, y.V9)(t.stream), false), e.stopPropagation(), (0, w.Ws)(P.Odu.GO_LIVE, {
@@ -105,9 +105,9 @@ function M(e) {
             userId: t.user.id
           })
         },
-        children: (0, i.jsx)(u.g5r, {
+        children: (0, i.jsx)(c.g5r, {
           size: "sm",
-          color: u.TVs.colors.WHITE
+          color: c.TVs.colors.WHITE
         })
       }))
     }
@@ -123,16 +123,16 @@ function V(e) {
   }, [t]), a = (0, o.e7)([I.default], () => I.default.getId()), {
     hasVideo: d
   } = (0, x.Z)(t, a), h = l && d, p = r.useCallback(() => {
-    c.Z.toggleLocalMute(n, s.Yn.STREAM)
+    u.Z.toggleLocalMute(n, s.Yn.STREAM)
   }, [n]);
-  return (0, i.jsx)(u.aML, {
+  return (0, i.jsx)(c.aML, {
     "data-migration-pending": true,
     text: h ? A.intl.string(A.t.YqAjXy) : A.intl.string(A.t.w4m945),
     children: e => {
       var {
         onClick: n
       } = e, r = L(e, ["onClick"]);
-      return (0, i.jsx)(u.P3F, k(R({}, r), {
+      return (0, i.jsx)(c.P3F, k(R({}, r), {
         className: D.controlAction,
         onClick: e => {
           e.stopPropagation(), (0, w.Ws)(P.Odu.GO_LIVE, {
@@ -141,10 +141,10 @@ function V(e) {
             userId: t.user.id
           }), null == n || n(), p()
         },
-        children: h ? (0, i.jsx)(u.OyP, {
+        children: h ? (0, i.jsx)(c.OyP, {
           size: "sm",
           color: "currentColor"
-        }) : (0, i.jsx)(u.gj8, {
+        }) : (0, i.jsx)(c.gj8, {
           size: "sm",
           color: "currentColor"
         })
@@ -177,7 +177,7 @@ function U(e) {
     hasActiveStream: t,
     participant: n,
     onEnablePin: r
-  } = e, l = (0, v.bp)(), s = n.user, c = (0, o.e7)([Z.default], () => {
+  } = e, l = (0, v.bp)(), s = n.user, u = (0, o.e7)([Z.default], () => {
     var e;
     return null != (e = Z.default.getUser(s.id)) ? e : s
   }, [s]), d = t ? A.intl.string(A.t.tLxK4l) : A.intl.string(A.t.E5RDnK), {
@@ -190,10 +190,10 @@ function U(e) {
       })
     }), !t && (0, i.jsx)("div", {
       className: D.watchActionContainer,
-      children: (0, i.jsx)(u.aML, {
+      children: (0, i.jsx)(c.aML, {
         "data-migration-pending": true,
         text: d,
-        children: e => (0, i.jsxs)(u.P3F, k(R({}, e), {
+        children: e => (0, i.jsxs)(c.P3F, k(R({}, e), {
           className: D.watchButton,
           onClick: () => {
             var t;
@@ -206,11 +206,11 @@ function U(e) {
               userId: n.user.id
             })
           },
-          children: [(0, i.jsx)(u.Text, {
+          children: [(0, i.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "always-white",
             children: A.intl.string(A.t.I6JG46)
-          }), (0, i.jsx)(u.OgY, {
+          }), (0, i.jsx)(c.OgY, {
             size: "sm",
             color: "currentColor"
           })]
@@ -222,14 +222,14 @@ function U(e) {
         className: D.controlUser,
         children: (0, i.jsxs)("div", {
           className: D.controlUserContainer,
-          children: [(0, i.jsx)(u.Text, {
+          children: [(0, i.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "always-white",
             className: D.controlUserName,
             children: N.ZP.getName(n.stream.guildId, n.stream.channelId, s)
           }), (0, i.jsx)(E.ZP, {
-            primaryGuild: c.primaryGuild,
-            userId: c.id,
+            primaryGuild: u.primaryGuild,
+            userId: u.id,
             containerClassName: D.guildTag,
             inline: false,
             onShowProfile: () => {
@@ -248,17 +248,17 @@ function U(e) {
             participant: n
           }), (0, i.jsx)(V, {
             participant: n
-          }), (0, i.jsx)(u.aML, {
+          }), (0, i.jsx)(c.aML, {
             "data-migration-pending": true,
             text: A.intl.string(A.t["3D5yo/"]),
             children: e => {
               var {
                 onClick: t
               } = e, r = L(e, ["onClick"]);
-              return (0, i.jsx)(u.P3F, k(R({}, r), {
+              return (0, i.jsx)(c.P3F, k(R({}, r), {
                 className: D.controlAction,
                 onClick: z(n, l, t),
-                children: (0, i.jsx)(u.xhG, {
+                children: (0, i.jsx)(c.xhG, {
                   size: "sm",
                   color: "currentColor"
                 })
@@ -278,7 +278,7 @@ let W = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
       locked: r,
       widgetId: l,
       pinned: a
-    } = e, s = (0, o.e7)([j.Z], () => j.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), c = (0, v.bp)(), d = null != s && W.has(s.state), p = null != s, f = (0, _.yA)(t.stream), y = (0, _.xN)(t.stream);
+    } = e, s = (0, o.e7)([j.Z], () => j.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, v.bp)(), d = null != s && W.has(s.state), p = null != s, f = (0, _.yA)(t.stream), y = (0, _.xN)(t.stream);
     return !p && r || d ? null : (0, i.jsxs)("div", {
       className: D.tile,
       children: [p && !r && (0, i.jsx)(g.ZP, {
@@ -286,12 +286,12 @@ let W = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
         className: D.liveIndicator
       }), p ? (0, i.jsx)("div", {
         className: D.streamTile,
-        children: (0, i.jsx)(u.kL8, {
+        children: (0, i.jsx)(c.kL8, {
           "aria-label": A.intl.formatToPlainString(A.t.gHPz3Q, {
             streamerName: t.user.username
           }),
           onClick: () => {},
-          onContextMenu: z(t, c),
+          onContextMenu: z(t, u),
           className: D.streamTile,
           style: {
             transform: "scale(".concat(f, ")")

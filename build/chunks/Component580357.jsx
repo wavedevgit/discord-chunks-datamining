@@ -15,7 +15,7 @@ function s() {
       className: Chunk75684.marker,
       tag: "span",
       variant: "text-md/semibold",
-      color: "text-danger",
+      color: "text-feedback-critical",
       children: "*"
     }), (0, Chunk54381.jsx)(Chunk481060.nn4, {
       children: Chunk388032.intl.string(Chunk388032.t.EkokLy)

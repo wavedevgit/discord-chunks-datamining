@@ -30,9 +30,9 @@ function j(e) {
   } = e, {
     guild_id: y,
     privacy_level: k
-  } = j, E = (0, r.e7)([d.Z], () => d.Z.getChannel(j.channel_id), [j]), b = (0, r.e7)([h.Z], () => h.Z.getGuild(y), [y]), {
+  } = j, b = (0, r.e7)([d.Z], () => d.Z.getChannel(j.channel_id), [j]), E = (0, r.e7)([h.Z], () => h.Z.getGuild(y), [y]), {
     canManageGuildEvent: w
-  } = (0, o.XJ)(null != E ? E : b), I = w(j), O = (0, r.e7)([c.Z], () => c.Z.isLurking(y), [y]), S = j.entity_type === x.WX.STAGE_INSTANCE, [Z, _] = l.useState(S), [T, {
+  } = (0, o.XJ)(null != b ? b : E), I = w(j), O = (0, r.e7)([c.Z], () => c.Z.isLurking(y), [y]), S = j.entity_type === x.WX.STAGE_INSTANCE, [Z, _] = l.useState(S), [T, {
     loading: L,
     error: P
   }] = (0, v.Z)();
@@ -77,8 +77,8 @@ function j(e) {
       loading: L
     }],
     children: [(0, i.jsx)(g.Z, {
-      guild: b,
-      channel: E,
+      guild: E,
+      channel: b,
       name: j.name,
       description: null != (n = j.description) ? n : true,
       imageSource: (0, m.Z)(j),
@@ -97,7 +97,7 @@ function j(e) {
         labelType: "secondary"
       })
     }), null != P && null != P.getAnyErrorMessage() ? (0, i.jsx)(s.Text, {
-      color: "text-danger",
+      color: "text-feedback-critical",
       variant: "text-sm/normal",
       className: C.errorMessage,
       children: P.getAnyErrorMessage()

@@ -2,7 +2,7 @@
 /** chunk id: 320596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ie: () => h,
-  mv: () => b
+  mv: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk930180 = require("./930180.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk165393 = require("./165393.js");
-let b = e => {
+let x = e => {
     let {
       channelId: t
     } = e;
@@ -30,7 +30,7 @@ let b = e => {
       channelId: t
     } = e, n = (0, g._d)(t), l = (0, g.K3)(t);
     if (0 === n && 0 === l) return null;
-    let o = e => {
+    let c = e => {
       (0, s.vq)(e, e => {
         var n, l;
         return (0, r.jsx)(j, (n = function(e) {
@@ -68,7 +68,7 @@ let b = e => {
       })
     };
     return n > 0 && l > 0 ? (0, r.jsxs)("div", {
-      className: x.blockedNotice,
+      className: b.blockedNotice,
       children: [(0, r.jsx)(a.t6m, {
         size: "lg",
         color: i.Z.unsafe_rawColors.RED_400.css
@@ -77,12 +77,12 @@ let b = e => {
         color: "header-secondary",
         children: m.intl.string(m.t["P/KFXz"])
       }), (0, r.jsx)(a.P3F, {
-        className: x.blockedButton,
-        onClick: o,
+        className: b.blockedButton,
+        onClick: c,
         children: m.intl.string(m.t.rUEjBe)
       })]
     }) : l > 0 ? (0, r.jsxs)("div", {
-      className: x.blockedNotice,
+      className: b.blockedNotice,
       children: [(0, r.jsx)(a.kZF, {
         size: "lg"
       }), (0, r.jsx)(a.Text, {
@@ -92,12 +92,12 @@ let b = e => {
           number: l
         })
       }), (0, r.jsx)(a.P3F, {
-        className: x.blockedButton,
-        onClick: o,
+        className: b.blockedButton,
+        onClick: c,
         children: m.intl.string(m.t.rUEjBe)
       })]
     }) : (0, r.jsxs)("div", {
-      className: x.blockedNotice,
+      className: b.blockedNotice,
       children: [(0, r.jsx)(a.t6m, {
         size: "lg",
         color: i.Z.unsafe_rawColors.RED_400.css
@@ -108,8 +108,8 @@ let b = e => {
           number: n
         })
       }), (0, r.jsx)(a.P3F, {
-        className: x.blockedButton,
-        onClick: o,
+        className: b.blockedButton,
+        onClick: c,
         children: m.intl.string(m.t.rUEjBe)
       })]
     })
@@ -120,10 +120,10 @@ let b = e => {
       showStatus: n,
       speaker: i,
       channelId: s
-    } = e, g = (0, l.e7)([d.ZP], () => d.ZP.isModerator(t.id, s)), b = (0, l.e7)([c.Z], () => c.Z.isBlocked(t.id)), f = null;
+    } = e, g = (0, l.e7)([d.ZP], () => d.ZP.isModerator(t.id, s)), x = (0, l.e7)([o.Z], () => o.Z.isBlocked(t.id)), f = null;
     return n && (f = i ? m.intl.string(m.t.LqMmG2) : g ? m.intl.string(m.t.GMZqSi) : m.intl.string(m.t.suRApw)), (0, r.jsxs)("div", {
-      className: x.user,
-      children: [(0, r.jsx)(o.Z, {
+      className: b.user,
+      children: [(0, r.jsx)(c.Z, {
         src: t.getAvatarURL(null, 32),
         size: a.EFr.SIZE_32,
         muted: false,
@@ -133,12 +133,12 @@ let b = e => {
         renderIcon: i ? () => (0, r.jsx)(a.S6n, {
           size: "md",
           color: "currentColor",
-          className: x.icon
+          className: b.icon
         }) : null
       }, t.id), (0, r.jsxs)("div", {
-        className: x.userInfo,
+        className: b.userInfo,
         children: [(0, r.jsxs)("div", {
-          className: x.username,
+          className: b.username,
           children: [(0, r.jsx)(a.Text, {
             variant: n ? "text-md/normal" : "text-sm/normal",
             children: u.ZP.getName(t)
@@ -148,11 +148,11 @@ let b = e => {
             children: "#".concat(t.discriminator)
           })]
         }), (0, r.jsxs)("div", {
-          className: x.username,
+          className: b.username,
           children: [(0, r.jsx)(a.Text, {
             variant: "text-xs/normal",
-            color: b ? "text-danger" : "text-default",
-            children: b ? m.intl.string(m.t["4bDptI"]) : m.intl.string(m.t.tFY5Zb)
+            color: x ? "text-feedback-critical" : "text-default",
+            children: x ? m.intl.string(m.t["4bDptI"]) : m.intl.string(m.t.tFY5Zb)
           }), (0, r.jsxs)(a.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
@@ -167,7 +167,7 @@ let b = e => {
       channelId: t
     } = e, n = (0, g.z)(t), l = (0, g.bA)(t);
     return (0, r.jsx)(a.Ttm, {
-      className: x.container,
+      className: b.container,
       children: [...n, ...l].map(e => {
         let {
           user: n

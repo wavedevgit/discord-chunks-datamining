@@ -130,24 +130,24 @@ function z(e) {
     loading: h,
     error: v,
     onChange: p,
-    onSave: f,
+    onSave: j,
     onClose: b,
     createdEvent: y
   } = e, O = (0, m.Dt)(), E = i.useRef(n), N = !(0, a.isEqual)(E.current, n), T = i.useMemo(() => [{
     slideId: 0,
-    label: k.intl.string(k.t["56QlKS"]),
+    label: D.intl.string(D.t["56QlKS"]),
     valid: null == d.entity,
     userErrorMessage: d.entity
   }, {
     slideId: 1,
-    label: k.intl.string(k.t["w5/ntT"]),
+    label: D.intl.string(D.t["w5/ntT"]),
     valid: null == d.schedule && null == d.topic && (!c || N),
     userErrorMessage: d.schedule
   }, {
     slideId: 2,
-    label: k.intl.string(k.t["8aJzT4"]),
+    label: D.intl.string(D.t["8aJzT4"]),
     valid: true
-  }], [d, c, N]), w = Object.keys(U).length, D = (0, j.xt)(n), _ = e => Math.max(0, Math.min(e, w - 1)), [A, G] = i.useState(+!!D), [z, F] = i.useState(false), M = i.useMemo(() => T.slice(0, A + 1).map(e => e.valid).every(Boolean), [T, A]), V = A >= T.length ? 3 : T[_(A)].slideId, B = 3 === V;
+  }], [d, c, N]), w = Object.keys(U).length, k = (0, f.xt)(n), _ = e => Math.max(0, Math.min(e, w - 1)), [A, G] = i.useState(+!!k), [z, F] = i.useState(false), M = i.useMemo(() => T.slice(0, A + 1).map(e => e.valid).every(Boolean), [T, A]), V = A >= T.length ? 3 : T[_(A)].slideId, B = 3 === V;
   (0, C.l)(e => e.onUpdateCanCloseModal)(B);
   let X = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
     W = i.useRef(null),
@@ -161,13 +161,13 @@ function z(e) {
     (null == y ? true : y.id) != null && H.current(3)
   }, [null == y ? true : y.id]);
   let Y = () => {
-      M && (2 === V ? f() : B ? b() : q(A + 1))
+      M && (2 === V ? j() : B ? b() : q(A + 1))
     },
     K = () => {
       q(A - 1)
     },
-    J = k.intl.string(k.t.PDTjLN);
-  return 2 === V && (J = c ? k.intl.string(k.t.e5VEcE) : k.intl.string(k.t["60lJ0C"])), (0, l.jsxs)(o.Y0X, {
+    J = D.intl.string(D.t.PDTjLN);
+  return 2 === V && (J = c ? D.intl.string(D.t.e5VEcE) : D.intl.string(D.t["60lJ0C"])), (0, l.jsxs)(o.Y0X, {
     transitionState: x,
     "aria-labelledby": O,
     size: o.CgR.DYNAMIC,
@@ -234,7 +234,7 @@ function z(e) {
         className: R.inline,
         children: [(0, l.jsx)(o.Button, {
           variant: "secondary",
-          text: k.intl.string(k.t["ETE/oC"]),
+          text: D.intl.string(D.t["ETE/oC"]),
           onClick: b
         }), (0, l.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
@@ -253,7 +253,7 @@ function z(e) {
           variant: "secondary",
           size: "sm",
           onClick: K,
-          text: k.intl.string(k.t["13/7kX"])
+          text: D.intl.string(D.t["13/7kX"])
         })
       })]
     })]
@@ -268,7 +268,7 @@ function F(e) {
     onClose: u
   } = e;
   (0, s.e7)([h.Z], () => h.Z.getGuild(t));
-  let d = (0, s.e7)([j.ZP], () => j.ZP.getGuildScheduledEvent(r), [r]),
+  let d = (0, s.e7)([f.ZP], () => f.ZP.getGuildScheduledEvent(r), [r]),
     g = (0, s.e7)([x.ZP], () => x.ZP.getDefaultChannel(t), [t]),
     m = (0, O.j$)(d, g),
     [v, C] = i.useState(m),
@@ -279,8 +279,8 @@ function F(e) {
       error: U
     }] = (0, p.Z)(async () => {
       if (null != S) return;
-      if (P && null != r) return await f.Z.saveEvent(r, v, t), u();
-      let e = await f.Z.createGuildEvent(v, t);
+      if (P && null != r) return await j.Z.saveEvent(r, v, t), u();
+      let e = await j.Z.createGuildEvent(v, t);
       return (e => {
         var t;
         let n = (0, b.so)(e),
@@ -288,7 +288,7 @@ function F(e) {
         null != r && c.ZP.createInvite(r, {
           max_age: A.value,
           max_uses: G.value
-        }, D.t4x.GUILD_EVENTS), n ? I(e) : u()
+        }, k.t4x.GUILD_EVENTS), n ? I(e) : u()
       })(e.body), e
     }),
     L = i.useMemo(() => (0, T.Z)(v, P), [v, P]);
@@ -318,16 +318,16 @@ function F(e) {
         return t => {
           var n, r;
           return (0, l.jsxs)(e, (n = _({}, t), r = r = {
-            header: k.intl.string(k.t.BW1Qoh),
-            confirmText: k.intl.string(k.t.e5VEcE),
-            cancelText: k.intl.string(k.t.oEAioF),
+            header: D.intl.string(D.t.BW1Qoh),
+            confirmText: D.intl.string(D.t.e5VEcE),
+            cancelText: D.intl.string(D.t.oEAioF),
             onConfirm: Z,
             children: [(0, l.jsx)(o.Text, {
               variant: "text-md/normal",
-              children: k.intl.string(k.t.aNCYas)
+              children: D.intl.string(D.t.aNCYas)
             }), (0, l.jsx)("br", {}), (0, l.jsx)(o.Text, {
               variant: "text-md/normal",
-              children: k.intl.format(k.t.RWBa5X, {})
+              children: D.intl.format(D.t.RWBa5X, {})
             })]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
             var n = Object.keys(e);

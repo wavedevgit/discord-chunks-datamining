@@ -63,7 +63,7 @@ let I = {
   y: 0
 };
 
-function N(e) {
+function v(e) {
   switch (e) {
     case O.pC.BANNER:
       return {
@@ -94,7 +94,7 @@ function N(e) {
   }
 }
 
-function v(e) {
+function N(e) {
   let {
     zoomRatio: t,
     imageRotation: r,
@@ -142,7 +142,7 @@ function G(e, t) {
     case "STOP_DRAGGING_IMAGE":
       return _(T({}, e), {
         isDragging: false,
-        hasImageEdits: v({
+        hasImageEdits: N({
           zoomRatio: e.zoomRatio,
           imageRotation: e.imageRotation,
           imageTransformCoordinates: t.imageTransformCoordinates
@@ -155,7 +155,7 @@ function G(e, t) {
         imageDimensions: null != (r = t.imageDimensions) ? r : e.imageDimensions,
         cropDimensions: null != (n = t.cropDimensions) ? n : e.cropDimensions,
         dragBoundaries: null != (i = t.dragBoundaries) ? i : e.dragBoundaries,
-        hasImageEdits: v({
+        hasImageEdits: N({
           zoomRatio: e.zoomRatio,
           imageRotation: t.imageRotation,
           imageTransformCoordinates: t.imageTransformCoordinates
@@ -166,7 +166,7 @@ function G(e, t) {
         imageTransformCoordinates: t.imageTransformCoordinates,
         zoomRatio: t.zoomRatio,
         dragBoundaries: t.dragBoundaries,
-        hasImageEdits: v({
+        hasImageEdits: N({
           zoomRatio: t.zoomRatio,
           imageRotation: e.imageRotation,
           imageTransformCoordinates: t.imageTransformCoordinates
@@ -193,7 +193,7 @@ function M(e) {
     originalAsset: a,
     transitionState: f,
     onCrop: y,
-    onClose: v,
+    onClose: N,
     uploadType: M = O.pC.AVATAR,
     showUpsellHeader: S = false,
     analyticsPage: j
@@ -355,7 +355,7 @@ function M(e) {
       }
     }, [U, em, H, F, eo]),
     ep = i.useCallback(() => {
-      let e = N(M);
+      let e = v(M);
       return e.width !== e.height
     }, [M]),
     eE = i.useCallback(() => {
@@ -390,7 +390,7 @@ function M(e) {
       if (null == k.current) return;
       $(true);
       let r = k.current,
-        n = N(M);
+        n = v(M);
       if (en) try {
         let {
           result: i,
@@ -431,15 +431,15 @@ function M(e) {
         imageUri: e,
         file: t,
         originalAsset: a
-      }), $(false), await v()
-    }, [U, t, Y, F, en, ei, v, y, a, M]),
+      }), $(false), await N()
+    }, [U, t, Y, F, en, ei, N, y, a, M]),
     ef = i.useCallback(async () => {
       if (null != P.current) {
         P.current(), P.current = null, $(false);
         return
       }
-      await v()
-    }, [v]);
+      await N()
+    }, [N]);
   i.useEffect(() => (window.addEventListener("mouseup", eu), window.addEventListener("resize", es), () => {
     window.removeEventListener("mouseup", eu), window.removeEventListener("resize", es)
   }), [es, eu]), i.useEffect(() => {
@@ -475,7 +475,7 @@ function M(e) {
         disabled: ea
       }],
       transitionState: f,
-      onClose: v,
+      onClose: N,
       children: [S && !eR && (0, n.jsx)(g.Z, {
         type: M,
         analyticsPage: j,
@@ -490,10 +490,10 @@ function M(e) {
             className: b.errorContainer,
             children: [(0, n.jsx)(u.Mgn, {
               size: "sm",
-              color: u.TVs.colors.TEXT_DANGER
+              color: u.TVs.colors.TEXT_FEEDBACK_CRITICAL
             }), (0, n.jsx)(u.Text, {
               variant: "text-md/normal",
-              color: "text-danger",
+              color: "text-feedback-critical",
               children: w.intl.string(w.t["+ITMYX"])
             })]
           }) : (0, n.jsxs)(n.Fragment, {

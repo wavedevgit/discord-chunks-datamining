@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 1226, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  BO: () => c,
+  BO: () => u,
   cq: () => h,
   gI: () => p,
   xN: () => f,
@@ -43,23 +43,23 @@ function s(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = (0, Chunk972959.H)(() => ({
+let c = (0, Chunk972959.H)(() => ({
   streams: {}
 }));
 
-function c(e) {
+function u(e) {
   var t, n;
   let i = (0, a.V9)(e);
-  return null != (n = null == (t = u.useState(e => e.streams, r())[i]) ? true : t.zoom) ? n : 100
+  return null != (n = null == (t = c.useState(e => e.streams, r())[i]) ? true : t.zoom) ? n : 100
 }
 
 function d(e) {
-  return c(e) / 100
+  return u(e) / 100
 }
 
 function h(e, t) {
   let n = (0, a.V9)(e);
-  u.setState(e => {
+  c.setState(e => {
     var i;
     return s(o({}, e), {
       streams: s(o({}, e.streams), {
@@ -74,7 +74,7 @@ function h(e, t) {
 
 function p(e, t) {
   let n = (0, a.V9)(e);
-  u.setState(e => {
+  c.setState(e => {
     var i;
     return s(o({}, e), {
       streams: s(o({}, e.streams), {
@@ -90,5 +90,5 @@ function p(e, t) {
 function f(e) {
   var t;
   let n = (0, a.V9)(e);
-  return null == (t = u.useState(e => e.streams, r())[n]) ? true : t.fitOverride
+  return null == (t = c.useState(e => e.streams, r())[n]) ? true : t.fitOverride
 }

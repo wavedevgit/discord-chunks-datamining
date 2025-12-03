@@ -52,16 +52,16 @@ function C(e) {
     participantsVersion: H
   } = function(e, t, n, i, a) {
     let o = (0, l.Wu)([h.Z], () => null == e ? [] : h.Z.getAllActiveStreamsForChannel(e)),
-      s = r.useMemo(() => new Set(o.map(e => (0, c.V9)(e))), [o]),
-      d = (0, l.e7)([u.Z], () => null == e ? false : u.Z.getParticipantsVersion(e));
+      s = r.useMemo(() => new Set(o.map(e => (0, u.V9)(e))), [o]),
+      d = (0, l.e7)([c.Z], () => null == e ? false : c.Z.getParticipantsVersion(e));
     return {
-      streamParticipants: (0, l.Wu)([u.Z, h.Z], () => {
+      streamParticipants: (0, l.Wu)([c.Z, h.Z], () => {
         if (null == e) return [];
 
         function r(e) {
-          return s.has((0, c.V9)(e.stream))
+          return s.has((0, u.V9)(e.stream))
         }
-        let l = u.Z.getStreamParticipants(e).filter(e => {
+        let l = c.Z.getStreamParticipants(e).filter(e => {
           if (e.user.id === t) returnfalse;
           let i = h.Z.getActiveStreamForUser(e.user.id, e.stream.guildId);
           return !(null != i && v.q.has(i.state)) && (!!n || r(e))

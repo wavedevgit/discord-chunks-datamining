@@ -46,7 +46,7 @@ function f(e) {
       children: c.intl.string(c.t["8qKd+J"])
     }), null != _ && "" !== _ ? (0, r.jsx)(o.x, {
       variant: "text-xs/normal",
-      color: "text-danger",
+      color: "text-feedback-critical",
       children: _
     }) : null, (0, r.jsx)(s.VcW, {
       wrapperClassName: u.select,

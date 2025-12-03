@@ -140,9 +140,9 @@ function S(e) {
     onRsvpClick: _,
     onStartClick: p,
     onInviteClick: f,
-    onEndClick: g,
-    onJoinGuildClick: v
-  } = e, b = (0, h.Q)(n, t), x = (0, m.Zs)({
+    onEndClick: m,
+    onJoinGuildClick: g
+  } = e, b = (0, h.Q)(n, t), x = (0, v.Zs)({
     entityType: t,
     isJoined: i,
     isActive: a,
@@ -155,13 +155,13 @@ function S(e) {
     onRsvpClick: _,
     onStartClick: p,
     onInviteClick: f,
-    onEndClick: g,
-    onJoinGuildClick: v
+    onEndClick: m,
+    onJoinGuildClick: g
   });
   return (0, r.jsxs)(s.ButtonGroup, {
     fullWidth: false,
     size: "sm",
-    children: [null != d ? (0, r.jsx)(m.b5, {
+    children: [null != d ? (0, r.jsx)(v.b5, {
       onClick: d
     }) : null, null == x ? true : x.map((e, n) => (0, r.jsx)(s.Button, N({}, e), n))]
   })
@@ -181,7 +181,7 @@ function O(e) {
     isActive: p,
     isUserLurking: f,
     isJoined: h = false,
-    isMember: m = false,
+    isMember: v = false,
     speakers: k,
     speakerCount: I,
     rsvped: N,
@@ -203,8 +203,8 @@ function O(e) {
     recurrenceId: M
   } = e, q = c === j.WX.EXTERNAL, J = q ? e => e.stopPropagation() : true, X = [];
   if (null != H && null != event) {
-    let e = (0, g.Ho)(H);
-    X = (0, g.PJ)(4, e, new Date(z.scheduled_start_time))
+    let e = (0, m.Ho)(H);
+    X = (0, m.PJ)(4, e, new Date(z.scheduled_start_time))
   }
   let V = X.length > 0;
   return (0, r.jsxs)(s.kL8, {
@@ -219,7 +219,7 @@ function O(e) {
       className: o()(y.padding, {
         [y.isRecurring]: V
       }),
-      children: [0 === u && (0, r.jsx)(v.Z, {
+      children: [0 === u && (0, r.jsx)(g.Z, {
         source: _
       }), (0, r.jsx)(b.ZP, {
         creator: a,
@@ -255,7 +255,7 @@ function O(e) {
             isActive: p,
             isJoined: h,
             isUserLurking: f,
-            isMember: m,
+            isMember: v,
             rsvped: N,
             canInvite: w,
             onContextMenu: O,

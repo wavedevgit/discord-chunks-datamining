@@ -2,7 +2,7 @@
 /** chunk id: 382086, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   Z: () => u,
-  v: () => C
+  v: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,13 +15,13 @@ var Chunk755721 = require("./755721.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk470816 = require("./470816.js");
-let g = .5 > Math.random();
+let C = .5 > Math.random();
 
-function C(t) {
+function g(t) {
   let {
     onClose: n,
     onBack: e,
-    onCreationIntentChosen: C,
+    onCreationIntentChosen: g,
     hasFooter: u = true
   } = t, _ = (0, i.jsx)(a.zx, {
     "data-migration-pending": true,
@@ -36,7 +36,7 @@ function C(t) {
     r.default.track(c.rMx.GUILD_CREATION_INTENT_SELECTED, {
       skipped: null == t,
       is_community: t === o.lr.COMMUNITY
-    }), C(t)
+    }), g(t)
   }
   return {
     content: (0, i.jsxs)(i.Fragment, {
@@ -62,7 +62,7 @@ function C(t) {
       }), (0, i.jsxs)(l.hzk, {
         "data-migration-pending": true,
         className: p.optionsList,
-        children: [g ? (0, i.jsxs)(i.Fragment, {
+        children: [C ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(d.Z, {
             icon: l.Nye,
             message: m.intl.string(m.t.uE7zcu),
@@ -103,6 +103,6 @@ function C(t) {
 function u(t) {
   let {
     content: n
-  } = C(t);
+  } = g(t);
   return n
 }

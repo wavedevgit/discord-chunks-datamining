@@ -265,10 +265,10 @@ function H(e) {
     header: (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(P, {
         size: "xs",
-        color: f.Z.colors.TEXT_DANGER.css
+        color: f.Z.colors.TEXT_FEEDBACK_CRITICAL.css
       }), (0, r.jsx)(p.Text, {
         variant: "text-md/semibold",
-        color: "text-danger",
+        color: "text-feedback-critical",
         children: C ? x.intl.string(x.t["8+lHUb"]) : x.intl.string(x.t.xMwcwV)
       })]
     }),
@@ -355,10 +355,10 @@ function Y(e) {
     header: (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(p.Mgn, {
         size: "xs",
-        color: f.Z.colors.TEXT_DANGER.css
+        color: f.Z.colors.TEXT_FEEDBACK_CRITICAL.css
       }), (0, r.jsx)(p.Text, {
         variant: "text-md/semibold",
-        color: "text-danger",
+        color: "text-feedback-critical",
         children: x.intl.string(x.t.C2uIXE)
       })]
     }),

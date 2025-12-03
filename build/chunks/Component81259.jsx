@@ -21,7 +21,7 @@ let d = () => (0, Chunk54381.jsx)(Chunk551556.Z, {
     size: "custom",
     width: 13,
     height: 13,
-    color: Chunk692547.Z.colors.TEXT_DANGER.css
+    color: Chunk692547.Z.colors.TEXT_FEEDBACK_CRITICAL.css
   }),
   g = () => (0, Chunk54381.jsx)(Chunk481060.k$p, {
     size: "custom",

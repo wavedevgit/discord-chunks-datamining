@@ -89,7 +89,7 @@ function A(e, t) {
     case x.nc.WELCOME: {
       let t = (null == e ? true : e.altId) != null ? m.Z.getApplicationActivity(e.altId) : (null == e ? true : e.id) != null ? m.Z.getApplicationActivity(e.id) : null;
       null != t && (0, d.Z)(t, j.xjy.JOIN) && (C.cancelText = Z.intl.string(Z.t["6F9ivu"]), C.onCancelClick = (e, n) => {
-        p("unlock"), c.Z.updateNotificationStatus(n), c.Z.setInputLocked(false, v.Z.getTargetPID()), (0, u.h7)(t, false, j.IlC.POPOUT)
+        p("unlock"), u.Z.updateNotificationStatus(n), u.Z.setInputLocked(false, v.Z.getTargetPID()), (0, c.h7)(t, false, j.IlC.POPOUT)
       }), r && D.push((0, i.jsx)("div", {
         className: w.keybindShortcutReminder,
         children: (0, S.Ae)((0, b.wq)(), Z.t.mRbUco)
@@ -101,9 +101,9 @@ function A(e, t) {
       let {
         oneClickGoLiveEnabled: e,
         useStreamCtaCopy: t
-      } = (0, g.tU)("welcomeNotification"), l = Z.intl.string(t ? Z.t.pEuzii : Z.t.U76Ft2), u = e ? e => {
+      } = (0, g.tU)("welcomeNotification"), l = Z.intl.string(t ? Z.t.pEuzii : Z.t.U76Ft2), c = e ? e => {
         let t = () => {
-            p("go-live-modal"), c.Z.setInputLocked(false, v.Z.getTargetPID())
+            p("go-live-modal"), u.Z.setInputLocked(false, v.Z.getTargetPID())
           },
           n = () => {
             p("one-click-go-live")
@@ -119,7 +119,7 @@ function A(e, t) {
       } : e => {
         p("go-live-modal");
         let t = v.Z.getTargetPID();
-        c.Z.setInputLocked(false, t), (0, s.ZD)(async () => {
+        u.Z.setInputLocked(false, t), (0, s.ZD)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("4093"), n.e("47863"), n.e("59416")]).then(n.bind(n, 60594));
@@ -137,16 +137,16 @@ function A(e, t) {
       r ? D.push((0, i.jsx)(a.zxk, {
         size: "sm",
         variant: "active",
-        onClick: e => u(e),
+        onClick: e => c(e),
         text: l
       })) : (C.confirmText = l, C.onConfirmClick = (e, t) => {
-        c.Z.updateNotificationStatus(t), u(e)
+        u.Z.updateNotificationStatus(t), c(e)
       });
       break
     }
     case x.nc.CONTENT_INVENTORY: {
       C.onNotificationShow = () => {
-        c.Z.track(j.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
+        u.Z.track(j.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
           user_ids: o.entries.map(e => e.author_id),
           entry_ids: o.entries.map(e => e.id)
         })
@@ -198,7 +198,7 @@ function A(e, t) {
     },
     onNotificationClick: (e, t) => {
       var n;
-      p("unlock"), c.Z.setInputLocked(false, v.Z.getTargetPID()), R || (0, f.Q3)(o.z.OVERLAY_OOP_WELCOME_NUX), null == (n = C.onNotificationClick) || n.call(C, e, t)
+      p("unlock"), u.Z.setInputLocked(false, v.Z.getTargetPID()), R || (0, f.Q3)(o.z.OVERLAY_OOP_WELCOME_NUX), null == (n = C.onNotificationClick) || n.call(C, e, t)
     },
     onDismissClick: (e, t) => {
       var n;

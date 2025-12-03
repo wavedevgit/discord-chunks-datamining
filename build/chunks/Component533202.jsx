@@ -25,14 +25,14 @@ function j(e) {
     transitionState: n,
     initialSlide: j = f.VX.CHOOSE_GUILD,
     onClose: h,
-    directoryGuildName: _,
-    directoryGuildId: b,
+    directoryGuildName: b,
+    directoryGuildId: _,
     currentCategoryId: L
   } = e, [v, I] = l.useState(j), [y, O] = l.useState(null), [Z, S] = l.useState(null), [N, T] = l.useState(null), [E, M] = l.useState(null), [H, G] = l.useState(null), [U, D] = l.useState(""), [w, P] = l.useState(null != L ? L : f.AR.UNCATEGORIZED), [k, R] = l.useState(false), {
     availableGuilds: A,
     addedGuilds: B,
     loading: V
-  } = (0, m.Z)(b, t);
+  } = (0, m.Z)(_, t);
   l.useEffect(() => {
     I(j)
   }, [I, j]);
@@ -60,7 +60,7 @@ function j(e) {
           impressionProperties: X,
           children: (0, i.jsx)(x.Z, {
             directoryChannelId: t,
-            directoryGuildName: _,
+            directoryGuildName: b,
             onGuildChosen: e => {
               R(true), I(f.VX.CUSTOMIZE_EXISTING_GUILD), G(e)
             },
@@ -76,7 +76,7 @@ function j(e) {
           impressionName: r.ImpressionNames.HUB_CREATE_GUILD_TEMPLATE,
           impressionProperties: X,
           children: (0, i.jsx)(p.Z, {
-            directoryGuildName: _,
+            directoryGuildName: b,
             onChooseTemplate: e => {
               R(false), I(f.VX.CUSTOMIZE_NEW_GUILD), S(e)
             },
@@ -98,7 +98,7 @@ function j(e) {
           id: f.VX.CUSTOMIZE_EXISTING_GUILD,
           impressionName: r.ImpressionNames.HUB_EXISTING_GUILD_CUSTOMIZE,
           impressionProperties: X,
-          children: (0, i.jsx)(g.Z, {
+          children: (0, i.jsx)(C.Z, {
             directoryChannelId: t,
             description: U,
             onDescriptionChange: D,
@@ -111,8 +111,8 @@ function j(e) {
           id: f.VX.CONFIRMATION,
           impressionName: r.ImpressionNames.DIRECTORY_ADD_GUILD_CONFIRMATION,
           impressionProperties: X,
-          children: (0, i.jsx)(C.Z, {
-            directoryGuildName: _,
+          children: (0, i.jsx)(g.Z, {
+            directoryGuildName: b,
             guildToAdd: H,
             isExistingGuildFlow: k,
             onClose: h

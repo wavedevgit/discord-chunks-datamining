@@ -140,7 +140,7 @@ function E() {
       })
     }), null != O && (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
-      color: "text-danger",
+      color: "text-feedback-critical",
       children: O
     }), (0, Chunk54381.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,

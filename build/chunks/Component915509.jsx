@@ -47,7 +47,7 @@ function s(e) {
     children: [g, null != t && "" !== t ? (0, r.jsx)(a.Text, {
       className: c.errorText,
       variant: "text-xs/normal",
-      color: "text-danger",
+      color: "text-feedback-critical",
       children: t
     }) : null]
   })

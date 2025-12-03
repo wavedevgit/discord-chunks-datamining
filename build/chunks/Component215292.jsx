@@ -26,7 +26,7 @@ function L(t) {
     onClose: L,
     onChannelPromptCompleted: x,
     isSlideReady: T
-  } = t, [E, h] = a.useState(""), [G, I] = a.useState(null), [D, y] = a.useState(false), U = (0, m.Dt)(), z = (0, l.e7)([C.Z], () => C.Z.getGuild(n), [n]), f = a.useRef(null);
+  } = t, [E, h] = a.useState(""), [G, I] = a.useState(null), [D, y] = a.useState(false), U = (0, m.Dt)(), z = (0, l.e7)([g.Z], () => g.Z.getGuild(n), [n]), f = a.useRef(null);
   a.useEffect(() => {
     var t;
     T && (null == (t = f.current) || t.focus())
@@ -34,7 +34,7 @@ function L(t) {
   let N = a.useCallback(async t => {
       if (t.preventDefault(), null == z) return;
       y(true), I(null);
-      let n = g.ZP.getDefaultChannel(z.id);
+      let n = C.ZP.getDefaultChannel(z.id);
       try {
         let t = u.intl.formatToPlainString(u.t.V4lepJ, {
           topic: E
@@ -106,7 +106,7 @@ function L(t) {
           })
         }), null != G && 0 === Object.keys(G.fields).length && (0, i.jsx)(r.Text, {
           variant: "text-xs/normal",
-          color: "text-danger",
+          color: "text-feedback-critical",
           children: G.message
         })]
       }), e && (0, i.jsx)(r.mzw, {

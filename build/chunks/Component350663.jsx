@@ -77,7 +77,7 @@ let S = {
       locked: x,
       widgetId: t,
       pinned: Z
-    })), T = (0, u.Z)(n), _ = (0, u.Z)(x), P = b === g.C5.VERTICAL, A = x || _ !== x || T !== n, D = r.useMemo(() => {
+    })), T = (0, c.Z)(n), _ = (0, c.Z)(x), P = b === g.C5.VERTICAL, A = x || _ !== x || T !== n, D = r.useMemo(() => {
       let e = 0,
         t = 0;
       return P ? w.map((t, n) => v(E({}, t), {
@@ -128,7 +128,7 @@ let S = {
       },
       config: S,
       trail: 100 * !A
-    }, A ? "animate-never" : "respect-motion-settings"), M = (0, h.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), V = (0, h.ee)(() => new Set(I.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [I, j, C]);
+    }, A ? "animate-never" : "respect-motion-settings"), M = (0, h.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), V = (0, h.ee)(() => new Set(I.filter(e => j.has((0, u.V9)(e.stream))).map(e => e.user.id)), [I, j, C]);
     return r.useEffect(() => {
       0 !== M.size && (0, h.zi)(y.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),

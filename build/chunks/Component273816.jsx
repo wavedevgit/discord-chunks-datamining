@@ -42,7 +42,7 @@ function O(e) {
     [D, R] = (0, d.Y5)(_, T, v),
     k = performance.now() - b.current < d.MC,
     L = P(j, w.current);
-  (0, c.ZP)(() => (D(), () => {
+  (0, u.ZP)(() => (D(), () => {
     R()
   }));
   let M = r.useCallback(() => {
@@ -59,18 +59,18 @@ function O(e) {
       className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: y.measurementCheckbox,
-        children: (0, i.jsx)(u.rsf, {
+        children: (0, i.jsx)(c.rsf, {
           checked: V,
           onChange: e => z(e)
         })
-      }), (0, i.jsxs)(u.Text, {
+      }), (0, i.jsxs)(c.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         className: y.measurementText,
-        children: ["FPS:", " ", (0, i.jsx)(u.Text, {
+        children: ["FPS:", " ", (0, i.jsx)(c.Text, {
           tag: "span",
           variant: "code",
-          color: x < 30 ? "text-danger" : x < 45 ? "text-feedback-warning" : "text-primary",
+          color: x < 30 ? "text-feedback-critical" : x < 45 ? "text-feedback-warning" : "text-primary",
           children: x.toFixed(2)
         })]
       })]
@@ -78,15 +78,15 @@ function O(e) {
       className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: y.measurementCheckbox,
-        children: (0, i.jsx)(u.rsf, {
+        children: (0, i.jsx)(c.rsf, {
           checked: U,
           onChange: e => W(e)
         })
-      }), (0, i.jsxs)(u.Text, {
+      }), (0, i.jsxs)(c.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         className: y.measurementText,
-        children: ["Frame Times:", " ", (0, i.jsxs)(u.Text, {
+        children: ["Frame Times:", " ", (0, i.jsxs)(c.Text, {
           tag: "span",
           variant: "code",
           color: j > 1.1 * d.tO ? "text-feedback-warning" : "text-primary",
@@ -97,20 +97,20 @@ function O(e) {
       className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: y.measurementCheckbox,
-        children: (0, i.jsx)(u.rsf, {
+        children: (0, i.jsx)(c.rsf, {
           checked: G,
           onChange: e => F(e)
         })
-      }), (0, i.jsxs)(u.Text, {
+      }), (0, i.jsxs)(c.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         className: y.measurementText,
-        children: ["Dropped Frames:", " ", (0, i.jsx)(u.Text, {
+        children: ["Dropped Frames:", " ", (0, i.jsx)(c.Text, {
           tag: "span",
           variant: "code",
-          color: I < 2 ? "text-danger" : I < 5 ? "text-feedback-warning" : "text-primary",
+          color: I < 2 ? "text-feedback-critical" : I < 5 ? "text-feedback-warning" : "text-primary",
           children: Z.current
-        }), (0, i.jsxs)(u.Text, {
+        }), (0, i.jsxs)(c.Text, {
           tag: "span",
           variant: "code",
           color: "text-secondary",
@@ -122,15 +122,15 @@ function O(e) {
       className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: y.measurementCheckbox,
-        children: (0, i.jsx)(u.rsf, {
+        children: (0, i.jsx)(c.rsf, {
           checked: H,
           onChange: e => Y(e)
         })
-      }), (0, i.jsxs)(u.Text, {
+      }), (0, i.jsxs)(c.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
         className: y.measurementText,
-        children: ["Rendered Frames:", " ", (0, i.jsx)(u.Text, {
+        children: ["Rendered Frames:", " ", (0, i.jsx)(c.Text, {
           tag: "span",
           variant: "code",
           color: "text-primary",
@@ -141,7 +141,7 @@ function O(e) {
       className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: y.measurementCheckbox,
-        children: (0, i.jsx)(u.rsf, {
+        children: (0, i.jsx)(c.rsf, {
           checked: B,
           onChange: e => Q(e)
         })
@@ -149,14 +149,14 @@ function O(e) {
         position: "left",
         text: "The average amount of 'lag' between us rendering a frame and being able to process background tasks. Values constantly above 1-2ms means our main thread is being burried by work and is taking all of its time in animation frames, most likely producing user interaciton blocking jank. (This doesn't work when the app is backgrounded though)",
         children: (0, i.jsx)("div", {
-          children: (0, i.jsxs)(u.Text, {
+          children: (0, i.jsxs)(c.Text, {
             variant: "text-md/normal",
             color: "text-secondary",
             className: y.measurementText,
-            children: ["Idle Frame Delta:", " ", (0, i.jsxs)(u.Text, {
+            children: ["Idle Frame Delta:", " ", (0, i.jsxs)(c.Text, {
               tag: "span",
               variant: "code",
-              color: L > 1 ? "text-danger" : "text-primary",
+              color: L > 1 ? "text-feedback-critical" : "text-primary",
               children: [L.toFixed(2), "ms"]
             })]
           })
@@ -166,14 +166,14 @@ function O(e) {
       position: "left",
       text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
       children: (0, i.jsx)("span", {
-        children: (0, i.jsx)(u.Text, {
+        children: (0, i.jsx)(c.Text, {
           tag: "span",
           variant: "code",
-          color: "text-danger",
+          color: "text-feedback-critical",
           children: "(Main App Backgrounded)"
         })
       })
-    }), E && (0, i.jsx)(u.Text, {
+    }), E && (0, i.jsx)(c.Text, {
       tag: "span",
       variant: "code",
       color: "text-feedback-positive",
@@ -181,7 +181,7 @@ function O(e) {
     }), !t && (0, i.jsx)("div", {
       className: y.bottomPanelButton,
       children: (0, i.jsx)(f.Z, {
-        children: (0, i.jsx)(u.Button, {
+        children: (0, i.jsx)(c.Button, {
           variant: "primary",
           text: "Reset Frame Data",
           onClick: M

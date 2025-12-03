@@ -24,14 +24,14 @@ function f(e) {
     onClick: n
   } = e;
   return (0, i.jsxs)(c.P3F, {
-    className: g.clickableGuildRow,
+    className: C.clickableGuildRow,
     onClick: n,
     children: [(0, i.jsx)(d.Z, {
       guild: t,
       size: d.Z.Sizes.MEDIUM,
       active: true
     }), (0, i.jsx)(c.Text, {
-      className: g.guildName,
+      className: C.guildName,
       variant: "text-md/semibold",
       children: t.name
     }), (0, i.jsx)("img", {
@@ -47,13 +47,13 @@ function j(e) {
     guild: n
   } = e, r = (0, o.e7)([u.Z], () => u.Z.getDirectoryEntry(t, n.id)), s = l.useRef(null);
   return (0, i.jsxs)("div", {
-    className: g.guildRow,
+    className: C.guildRow,
     children: [(0, i.jsx)(d.Z, {
       guild: n,
       size: d.Z.Sizes.MEDIUM,
       active: true
     }), (0, i.jsx)(c.Text, {
-      className: g.guildName,
+      className: C.guildName,
       variant: "text-md/normal",
       children: n.name
     }), (0, i.jsx)(m.Z, {
@@ -83,7 +83,7 @@ function j(e) {
           size: "md",
           color: "currentColor"
         }, e), n = n = {
-          className: g.overflowIcon
+          className: C.overflowIcon
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -109,18 +109,18 @@ function h(e) {
       addedGuilds: m,
       loading: p
     } = e,
-    [h, _] = l.useState(0);
+    [h, b] = l.useState(0);
   return t = p ? (0, i.jsx)("div", {
-    className: g.emptyContainer,
+    className: C.emptyContainer,
     children: (0, i.jsx)(c.$jN, {})
   }) : 0 === h ? 0 === u.length ? (0, i.jsxs)("div", {
-    className: g.emptyContainer,
+    className: C.emptyContainer,
     children: [(0, i.jsx)("img", {
-      src: C,
+      src: g,
       alt: "",
-      className: g.emptyImage
+      className: C.emptyImage
     }), (0, i.jsx)(c.Text, {
-      className: g.emptyText,
+      className: C.emptyText,
       color: "header-secondary",
       variant: "text-md/normal",
       children: x.intl.string(x.t.liuEhd)
@@ -129,13 +129,13 @@ function h(e) {
     guild: e,
     onClick: () => r(e)
   }, e.id)) : 0 === m.length ? (0, i.jsxs)("div", {
-    className: g.emptyContainer,
+    className: C.emptyContainer,
     children: [(0, i.jsx)("img", {
-      src: C,
+      src: g,
       alt: "",
-      className: g.emptyImage
+      className: C.emptyImage
     }), (0, i.jsx)(c.Text, {
-      className: g.emptyText,
+      className: C.emptyText,
       color: "header-secondary",
       variant: "text-md/normal",
       children: x.intl.string(x.t.WJLuKK)
@@ -151,36 +151,36 @@ function h(e) {
       subtitle: x.intl.string(x.t.pYFZ9p)
     }), (0, i.jsx)(a.fef, {
       controls: (0, i.jsxs)(c.njP, {
-        className: g.tabBar,
+        className: C.tabBar,
         selectedItem: h,
-        onItemSelect: _,
+        onItemSelect: b,
         type: "top",
         look: "brand",
         children: [(0, i.jsx)(c.njP.Item, {
-          className: s()(g.tabBarItem, {
-            [g.selectedTab]: 0 === h
+          className: s()(C.tabBarItem, {
+            [C.selectedTab]: 0 === h
           }),
           id: 0,
           children: x.intl.string(x.t.FTe8HS)
         }), (0, i.jsx)(c.njP.Item, {
-          className: s()(g.tabBarItem, {
-            [g.selectedTab]: 1 === h
+          className: s()(C.tabBarItem, {
+            [C.selectedTab]: 1 === h
           }),
           id: 1,
           children: x.intl.string(x.t.epOumr)
         })]
       }),
       children: (0, i.jsx)(c.Ttm, {
-        className: g.scroller,
+        className: C.scroller,
         children: (0, i.jsx)("div", {
-          className: g.guildList,
+          className: C.guildList,
           children: t
         })
       })
     }), (0, i.jsxs)(a.mzw, {
       children: [(0, i.jsx)(c.Heading, {
         variant: "heading-lg/semibold",
-        className: g.footerTitle,
+        className: C.footerTitle,
         children: x.intl.string(x.t.pgCZRP)
       }), (0, i.jsx)(a.Go$, {
         actionsFullWidth: true,

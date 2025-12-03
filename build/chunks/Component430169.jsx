@@ -54,13 +54,13 @@ function _(e) {
         width: 16,
         height: 16
       },
-      children: (0, i.jsx)(c.Z, {
+      children: (0, i.jsx)(u.Z, {
         user: t,
         "aria-hidden": true,
         size: a.EFr.SIZE_40
       })
     })
-  }) : (0, i.jsx)(c.Z, {
+  }) : (0, i.jsx)(u.Z, {
     user: t,
     "aria-hidden": true,
     size: a.EFr.SIZE_40
@@ -74,7 +74,7 @@ function P(e) {
     runningGame: r,
     username: o,
     onWatchClick: s,
-    buttonColor: u
+    buttonColor: c
   } = e;
   return (0, i.jsxs)("div", {
     className: T.container,
@@ -99,7 +99,7 @@ function P(e) {
       className: T.watchButtonContainer,
       children: (0, i.jsx)(a.P3F, {
         onClick: s,
-        className: l()(T.watchButton, "green" === u && T.greenButton, "gray" === u && T.grayButton),
+        className: l()(T.watchButton, "green" === c && T.greenButton, "gray" === c && T.grayButton),
         children: (0, i.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "always-white",
@@ -118,7 +118,7 @@ function A(e) {
     runningGame: r,
     username: o,
     onWatchClick: s,
-    iconColor: u
+    iconColor: c
   } = e;
   return (0, i.jsxs)("div", {
     className: T.container,
@@ -148,7 +148,7 @@ function A(e) {
         className: T.watchIconButton,
         children: (0, i.jsx)(I.a, {
           size: "sm",
-          color: "green" === u ? "white" : a.TVs.colors.INTERACTIVE_ACTIVE.css
+          color: "green" === c ? "white" : a.TVs.colors.INTERACTIVE_ACTIVE.css
         })
       })
     })]
@@ -161,7 +161,7 @@ function D(e, t, n) {
   let a = E.default.getUser(e);
   if (null == a) return null;
   let {
-    designVariant: c
+    designVariant: u
   } = (0, b.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, I = g.Z.getChannel(t), w = null != f ? d.Z.getApplication(f) : null, T = null != f ? y.Z.getDetectableGame(f) : null, _ = null != f ? p.ZP.getRunningGames().find(e => e.id === f) : null, D = null != (l = null != (r = null == _ ? true : _.name) ? r : null == T ? true : T.name) ? l : null == w ? true : w.name, R = (0, v.oY)(null == I ? true : I.guild_id, null == I ? true : I.id, a), {
     trackView: k,
     trackClick: L
@@ -173,7 +173,7 @@ function D(e, t, n) {
   });
   return {
     body: (() => {
-      switch (c) {
+      switch (u) {
         case b.RD.GREEN_BUTTON_WITH_TEXT:
           return (0, i.jsx)(P, {
             user: a,
@@ -204,7 +204,7 @@ function D(e, t, n) {
     onNotificationClick: (n, i) => {
       L("overlay-watch-stream");
       let [r] = O.Z.getWidgetsByType(N.Odu.GO_LIVE), l = h.Z.getStreamParticipants(t).find(t => t.user.id === e);
-      null != r && null != l && ((0, x.gI)(l.stream, m.L.COVER), (0, u.rn)(l.stream, {
+      null != r && null != l && ((0, x.gI)(l.stream, m.L.COVER), (0, c.rn)(l.stream, {
         forceMultiple: true,
         noFocus: true
       }), (0, o.xh)(r.id, {

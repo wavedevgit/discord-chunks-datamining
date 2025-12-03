@@ -29,10 +29,10 @@ function p(l) {
     setNickname: i,
     nickname: a,
     error: s,
-    hasNick: d
-  } = l, c = r.useRef(null), x = r.useCallback(() => {
+    hasNick: c
+  } = l, d = r.useRef(null), x = r.useCallback(() => {
     var l;
-    i(""), null == (l = c.current) || l.focus()
+    i(""), null == (l = d.current) || l.focus()
   }, [i]);
   return (0, e.jsxs)(e.Fragment, {
     children: [t || null == n || n.id === o.default.getId() ? null : (0, e.jsx)(u.Zbd, {
@@ -45,7 +45,7 @@ function p(l) {
     }), (0, e.jsx)(u.oil, {
       label: t ? h.intl.string(h.t.EyA4q5) : h.intl.string(h.t["621LJD"]),
       disabled: t,
-      inputRef: c,
+      inputRef: d,
       maxLength: E.l$U,
       value: a,
       placeholder: m.ZP.getName(n),
@@ -53,10 +53,10 @@ function p(l) {
       autoFocus: true
     }), null != s ? (0, e.jsx)(u.Text, {
       variant: "text-xs/normal",
-      color: "text-danger",
+      color: "text-feedback-critical",
       className: C.nickError,
       children: s
-    }) : null, d && !t ? (0, e.jsx)("div", {
+    }) : null, c && !t ? (0, e.jsx)("div", {
       className: C.reset,
       children: (0, e.jsx)(u.Avr, {
         text: h.intl.string(h.t.aE02Rz),
@@ -75,24 +75,24 @@ let A = function(l) {
     onClose: m,
     analyticsSource: C,
     analyticsLocations: A
-  } = l, f = (0, i.e7)([x.ZP], () => null != o ? x.ZP.getMember(o, u.id) : null), _ = (0, i.e7)([N.Z, g.default, v.Z], () => {
+  } = l, f = (0, i.e7)([x.ZP], () => null != o ? x.ZP.getMember(o, u.id) : null), b = (0, i.e7)([N.Z, k.default, v.Z], () => {
     var l;
     let t = v.Z.getGuild(o);
-    return null != t && ((null == (l = g.default.getCurrentUser()) ? true : l.id) === u.id ? N.Z.can(E.Plq.CHANGE_NICKNAME, t) || N.Z.can(E.Plq.MANAGE_NICKNAMES, t) : N.Z.canManageUser(E.Plq.MANAGE_NICKNAMES, u.id, t))
-  }), [b, M] = r.useState(false), [Z, j] = r.useState(null != (t = null == f ? true : f.nick) ? t : ""), [y, I] = r.useState({});
-  (0, d.ZP)(() => {
-    k.default.track(E.rMx.OPEN_MODAL, {
+    return null != t && ((null == (l = k.default.getCurrentUser()) ? true : l.id) === u.id ? N.Z.can(E.Plq.CHANGE_NICKNAME, t) || N.Z.can(E.Plq.MANAGE_NICKNAMES, t) : N.Z.canManageUser(E.Plq.MANAGE_NICKNAMES, u.id, t))
+  }), [_, M] = r.useState(false), [Z, j] = r.useState(null != (t = null == f ? true : f.nick) ? t : ""), [y, I] = r.useState({});
+  (0, c.ZP)(() => {
+    g.default.track(E.rMx.OPEN_MODAL, {
       type: "Change Server Identity",
       location: E.ZY5.GUILD_CHANNEL,
       source: C
     })
   });
-  let P = (0, c.sE)(o, {
+  let P = (0, d.sE)(o, {
       location: null == A ? true : A[0],
       targetUserId: u.id
     }),
     S = r.useCallback(async l => {
-      var t, n, e, r, i, s, d, x, v;
+      var t, n, e, r, i, s, c, x, v;
       l.preventDefault();
       let N = null;
       if (Z !== (null != (t = null == f ? true : f.nick) ? t : "") && ((N = null != N ? N : {}).nick = Z), null == N) return void m();
@@ -101,12 +101,12 @@ let A = function(l) {
           url: E.ANM.GUILD_MEMBER(o, u.id),
           body: N,
           rejectWithError: false
-        }), P(c.jQ.CHANGE_NICKNAME), m()
+        }), P(d.jQ.CHANGE_NICKNAME), m()
       } catch (a) {
         let l;
         M(false);
         let t = null != (e = null == (n = a.body) ? true : n.errors) ? e : null;
-        (null == t ? true : t.nick) != null ? l = (null == (s = t.nick) || null == (i = s._errors) || null == (r = i[0]) ? true : r.message) || h.intl.string(h.t.xex86n) : (null == t ? true : t.username) != null && (l = (null == (v = t.username) || null == (x = v._errors) || null == (d = x[0]) ? true : d.message) || h.intl.string(h.t.xex86n)), I({
+        (null == t ? true : t.nick) != null ? l = (null == (s = t.nick) || null == (i = s._errors) || null == (r = i[0]) ? true : r.message) || h.intl.string(h.t.xex86n) : (null == t ? true : t.username) != null && (l = (null == (v = t.username) || null == (x = v._errors) || null == (c = x[0]) ? true : c.message) || h.intl.string(h.t.xex86n)), I({
           nick: l
         })
       }
@@ -125,10 +125,10 @@ let A = function(l) {
         text: h.intl.string(h.t["R3BPH+"]),
         variant: "primary",
         type: "submit",
-        disabled: b
+        disabled: _
       }],
       children: (0, e.jsx)(p, {
-        disabled: !_,
+        disabled: !b,
         user: u,
         error: y.nick,
         nickname: Z,

@@ -31,16 +31,16 @@ let v = Chunk473749.forwardRef(function(e, t) {
     formValues: v,
     displayProfile: x,
     onChangeFormValue: T,
-    onFocusDisplayName: j,
-    onFocusUsername: I,
+    onFocusDisplayName: I,
+    onFocusUsername: j,
     editState: P,
     footerNotice: C,
     usernameSuggestionLoading: A,
     oneClickFlow: R
   } = e, {
     username: M,
-    globalName: w
-  } = v, L = i.useRef(null), D = i.useRef(null), k = i.useMemo(() => n.merge({
+    globalName: L
+  } = v, w = i.useRef(null), D = i.useRef(null), k = i.useMemo(() => n.merge({
     discriminator: "0000"
   }), [n]), [Z, U] = (0, u.q_F)(() => ({
     opacity: 0,
@@ -62,14 +62,14 @@ let v = Chunk473749.forwardRef(function(e, t) {
     },
     focusUsername: () => {
       var e;
-      null == (e = L.current) || e.focus()
+      null == (e = w.current) || e.focus()
     }
   }), []);
   let G = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
     {
       createMultipleConfettiAt: W
     } = i.useContext(m.h),
-    q = null == x ? true : x.getLegacyUsername();
+    F = null == x ? true : x.getLegacyUsername();
   return i.useEffect(() => {
     !G && P === O.Wq.PREVIEW && n.username.includes(O.nA) && (W(window.innerWidth / 2 + 150, 0, {
       velocity: {
@@ -111,12 +111,12 @@ let v = Chunk473749.forwardRef(function(e, t) {
         displayProfile: x,
         themeType: S.l.SIDEBAR,
         className: _.avatar
-      }), P === O.Wq.PREVIEW && null != q && (0, r.jsx)("div", {
+      }), P === O.Wq.PREVIEW && null != F && (0, r.jsx)("div", {
         className: _.legacyUsernameBadgeContainer,
         children: (0, r.jsx)(c.u, {
           position: "top",
           text: b.intl.formatToPlainString(b.t.bhrgkA, {
-            legacyUsername: q
+            legacyUsername: F
           }),
           spacing: 12,
           children: (0, r.jsx)(u.Anchor, {
@@ -138,13 +138,13 @@ let v = Chunk473749.forwardRef(function(e, t) {
         gap: 16,
         children: [P === O.Wq.EDIT_DISPLAY_NAME && (0, r.jsx)(u.oil, {
           label: b.intl.string(b.t["9AjdkD"]),
-          value: null != w ? w : "",
+          value: null != L ? L : "",
           placeholder: E.ZP.getName(n),
           maxLength: O.hy,
           onChange: e => T({
             globalName: e
           }),
-          onFocus: j,
+          onFocus: I,
           inputRef: D
         }), (P === O.Wq.EDIT_USERNAME || P === O.Wq.SUGGESTION) && (0, r.jsx)(u.oil, {
           label: b.intl.string(b.t.IEpCBQ),
@@ -155,8 +155,8 @@ let v = Chunk473749.forwardRef(function(e, t) {
           onChange: e => T({
             username: e.replace("@", "")
           }),
-          onFocus: I,
-          inputRef: L
+          onFocus: j,
+          inputRef: w
         })]
       }), (0, r.jsx)("div", {
         className: _.messageContainer,

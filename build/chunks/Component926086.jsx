@@ -53,7 +53,7 @@ function m(e) {
       o(Date.now()), S(e => e + 1)
     },
     Z = l > 0 && m - l < 1e3,
-    N = (0, c.Yzy)(y > 0 && y < m && m - y < b, {
+    N = (0, u.Yzy)(y > 0 && y < m && m - y < b, {
       from: {
         opacity: 0
       },
@@ -70,15 +70,15 @@ function m(e) {
       v > 10 && T(true)
     }, [v]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
   return t && !n ? null : (0, i.jsx)(i.Fragment, {
-    children: N((e, t) => t && (0, i.jsx)(u.animated.div, {
+    children: N((e, t) => t && (0, i.jsx)(c.animated.div, {
       style: e,
       className: p.clickZoneDebugContainer,
       children: (0, i.jsx)(h.Z, {
         className: a()(p.clickZone, Z && p.clickBackground),
-        children: (0, i.jsx)(c.P3F, {
+        children: (0, i.jsx)(u.P3F, {
           onClick: C,
           className: p.clickable,
-          children: (0, i.jsxs)(c.Text, {
+          children: (0, i.jsxs)(u.Text, {
             variant: "text-md/semibold",
             color: "always-white",
             children: ["Click Me (", v, ")"]

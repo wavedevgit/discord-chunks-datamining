@@ -143,7 +143,7 @@ class O extends Chunk473749.PureComponent {
         })(e)
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: Chunk570140 || null != Chunk120356 ? "text-danger" : "text-muted",
+        color: Chunk570140 || null != Chunk120356 ? "text-feedback-critical" : "text-muted",
         className: Chunk394330.bottomMargin,
         children: null != Chunk120356 ? Chunk120356 : Chunk528963
       })]
@@ -170,7 +170,7 @@ class O extends Chunk473749.PureComponent {
         children: Chunk388032.intl.string(Chunk388032.t.kbpkxJ)
       }), module ? (0, Chunk54381.jsx)(Chunk481060.Text, {
         className: i()(Chunk394330.formMargin, Chunk394330.topMargin),
-        color: "text-danger",
+        color: "text-feedback-critical",
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk388032.t["DrNm/5"])
       }) : null]

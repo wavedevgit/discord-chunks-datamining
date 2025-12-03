@@ -1,28 +1,28 @@
 /** Chunk was on 74673 **/
 /** chunk id: 112612, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  Z: () => c
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk881052 = require("./881052.js");
 
-function r(t) {
+function c(t) {
   let {
     onSubmit: n,
     onClose: e
-  } = t, [r, c] = i.useState(false), [o, l] = i.useState(null), s = i.useCallback(async () => {
-    if (!r) {
-      c(true), l(null);
+  } = t, [c, r] = i.useState(false), [l, o] = i.useState(null), s = i.useCallback(async () => {
+    if (!c) {
+      r(true), o(null);
       try {
         await n(), e()
       } catch (t) {
-        l(new a.Hx(t).getAnyErrorMessage()), c(false)
+        o(new a.Hx(t).getAnyErrorMessage()), r(false)
       }
     }
-  }, [e, n, r]);
+  }, [e, n, c]);
   return {
-    submitting: r,
-    errorMessage: o,
+    submitting: c,
+    errorMessage: l,
     onSubmit: s
   }
 }

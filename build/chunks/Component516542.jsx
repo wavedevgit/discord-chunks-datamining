@@ -29,7 +29,7 @@ function E(e) {
   } = e, S = (0, f.Z)(), {
     placeholder: b,
     accessibilityLabel: x
-  } = (0, u.Z)({
+  } = (0, c.Z)({
     channel: E
   }), [j, I] = r.useState(() => (0, d.H2)()), {
     textValue: C,
@@ -67,7 +67,7 @@ function E(e) {
       channel: E,
       textValue: C,
       richValue: Z,
-      type: c.Ie.OVERLAY_INLINE_REPLY,
+      type: u.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: false,
       onBlur: _,
       onFocus: T,

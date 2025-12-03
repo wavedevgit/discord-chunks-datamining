@@ -27,7 +27,7 @@ function p(e, n, t) {
     let t = f.map(e => s.default.fromTimestamp(Math.floor(e.getTime() / c.Z.Millis.SECOND) * c.Z.Millis.SECOND));
     d.Z.getGuildEventUserCounts(n, e, t)
   }, [e, n, f]);
-  let g = i.useMemo(() => {
+  let m = i.useMemo(() => {
     if (null == t || 0 === f.length || (null == r ? true : r.scheduled_start_time) == null) returnfalse;
     let e = new Date;
     e.setFullYear(e.getFullYear() + _.hn);
@@ -37,7 +37,7 @@ function p(e, n, t) {
   }, [t, f, null == r ? true : r.scheduled_start_time]);
   return {
     recurrenceStartTimes: f,
-    canViewMoreRecurrences: g,
+    canViewMoreRecurrences: m,
     updateRecurrenceStartTimes: () => {
       if (null == t || null == r) return;
       let e = (0, _.Ho)(t),

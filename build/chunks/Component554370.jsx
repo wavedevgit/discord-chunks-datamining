@@ -63,7 +63,7 @@ function J(e) {
 }
 
 function q(e) {
-  (0, c.jW)(e, async () => {
+  (0, u.jW)(e, async () => {
     let {
       default: e
     } = await n.e("17610").then(n.bind(n, 385620));
@@ -108,7 +108,7 @@ let $ = Chunk473749.memo(function(e) {
       onClick: n,
       locked: r
     } = e, l = (0, T.T_)(p.Z.OVERLAY);
-    return (0, i.jsx)(u.P3F, {
+    return (0, i.jsx)(c.P3F, {
       className: a()(Q.overlayBackground, {
         [Q.overlayActive]: !r,
         [Q.overlayLocked]: r
@@ -126,11 +126,11 @@ let $ = Chunk473749.memo(function(e) {
         className: Q.topRightContainer,
         children: [l ? (0, i.jsx)(P.Z, {
           onClick: () => (0, U.N)(p.Z.OVERLAY, B.IlC.OVERLAY),
-          IconComponent: u.U65
+          IconComponent: c.U65
         }) : null, (0, i.jsx)(P.Z, {
           keybind: t,
           onClick: n,
-          IconComponent: u.Uz9
+          IconComponent: c.Uz9
         })]
       })
     })
@@ -144,7 +144,7 @@ let $ = Chunk473749.memo(function(e) {
       className: Q.topRightContainer,
       children: (0, i.jsx)(P.Z, {
         onClick: () => d.Z.setInputLocked(false, M.Z.getTargetPID()),
-        IconComponent: u.d$P
+        IconComponent: c.d$P
       })
     }) : null
   });
@@ -172,7 +172,7 @@ function er(e) {
   let {
     isEmbeddedActivity: t
   } = e, n = (0, F.Z)(), l = (0, o.e7)([M.Z], () => M.Z.getTargetPID()), {
-    locked: c,
+    locked: u,
     focused: m,
     incompatibleApp: C,
     hasZeroSizeDimension: w,
@@ -223,13 +223,13 @@ function er(e) {
       o = l && null != i && null != t,
       s = M.Z.getTargetPID();
     if (k.default.hasChangedRenderMode(s)) return;
-    let u = L.Z.isNotificationDisabled(H.n0.WelcomeNudge),
-      c = L.Z.isNotificationDisabled(H.n0.GoLiveNudge),
+    let c = L.Z.isNotificationDisabled(H.n0.WelcomeNudge),
+      u = L.Z.isNotificationDisabled(H.n0.GoLiveNudge),
       h = L.Z.isNotificationDisabled(H.n0.ActivityInvite),
       p = [];
-    !u && (p.push({
+    !c && (p.push({
       type: H.nc.WELCOME
-    }), !c && (a && o ? p.push({
+    }), !u && (a && o ? p.push({
       type: H.nc.GO_LIVE_VOICE,
       game: e,
       voiceChannelId: t,
@@ -248,30 +248,30 @@ function er(e) {
   }), r.useEffect(() => {
     if (I.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: true
-      }), c) return (0, s.Ay)(u.u1M), n.addEventListener("contextmenu", J, false), () => {
+      }), u) return (0, s.Ay)(c.u1M), n.addEventListener("contextmenu", J, false), () => {
       n.removeEventListener("contextmenu", J, false)
     };
     n.removeEventListener("contextmenu", J, false)
-  }, [c, n]), (0, i.jsx)(f.Gt, {
+  }, [u, n]), (0, i.jsx)(f.Gt, {
     value: R,
     children: w || C ? null : (0, i.jsxs)("div", {
       id: "overlay-container",
       className: Q.overlay,
       children: [!t && X, (0, i.jsx)($, {
-        locked: c,
+        locked: u,
         keybind: P,
         onClick: et
       }), (0, i.jsx)(D.Z, {
         className: a()({
-          [Q.layoutLocked]: c,
-          [Q.layoutUnlocked]: !c
+          [Q.layoutLocked]: u,
+          [Q.layoutUnlocked]: !u
         })
       }), (0, i.jsx)(G.Z, {}), !t && K && (0, i.jsx)(ee, {
-        locked: c,
+        locked: u,
         focused: m
       }), (0, i.jsx)(_.Z, {}), (0, i.jsx)(A.Z, {
-        locked: c
-      }), (0, i.jsx)(u.Ixi, {
+        locked: u
+      }), (0, i.jsx)(c.Ixi, {
         appContext: B.IlC.OVERLAY
       }), (0, i.jsx)(ei, {})]
     })

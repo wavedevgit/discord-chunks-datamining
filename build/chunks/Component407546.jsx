@@ -33,7 +33,7 @@ function d(e) {
       children: l.intl.string(l.t["1DXFFd"])
     }), null != t && "" !== t ? (0, r.jsx)(a.x, {
       variant: "text-xs/normal",
-      color: "text-danger",
+      color: "text-feedback-critical",
       children: t
     }) : null, (0, r.jsx)(o.VcW, {
       wrapperClassName: c.select,

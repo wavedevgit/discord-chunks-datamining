@@ -1,7 +1,7 @@
 /** Chunk was on 3291 **/
 /** chunk id: 24722, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => R
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,34 +22,34 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk98678 = require("./98678.js");
 
-function h(e) {
+function R(e) {
   let {
     transitionState: t,
     onClose: r,
-    roleId: h,
-    guildId: k
-  } = e, y = (0, l.e7)([w.Z], () => w.Z.getRole(h), [h]), [T, C] = n.useState(""), [M, v] = n.useState({}), [E, Z] = n.useState(false), [S, H] = n.useState(null), B = n.useRef(null);
+    roleId: R,
+    guildId: h
+  } = e, y = (0, l.e7)([w.Z], () => w.Z.getRole(R), [R]), [T, C] = n.useState(""), [M, v] = n.useState({}), [E, Z] = n.useState(false), [S, H] = n.useState(null), B = n.useRef(null);
   n.useEffect(() => {
-    d.Z.requestMembers(k, T.trim().toLowerCase(), x._4)
-  }, [k, T]);
-  let L = n.useCallback(e => !e.roles.includes(h), [h]),
-    O = (0, x.lJ)(k, L),
+    d.Z.requestMembers(h, T.trim().toLowerCase(), x._4)
+  }, [h, T]);
+  let L = n.useCallback(e => !e.roles.includes(R), [R]),
+    O = (0, x.lJ)(h, L),
     j = n.useMemo(() => O.filter(e => (0, x.eg)(T, e)), [T, O]),
     P = n.useCallback(async () => {
       let e = Object.values(M).map(e => e.row.id);
       Z(true);
       try {
-        await g.Z.bulkAddMemberRoles(k, h, e), (0, m.H)(k, h, false), r()
+        await f.Z.bulkAddMemberRoles(h, R, e), (0, m.H)(h, R, false), r()
       } catch (t) {
         let e = new c.Hx(t);
         Z(false), H(e)
       }
-    }, [k, h, M, r]),
+    }, [h, R, M, r]),
     q = n.useMemo(() => j.map(e => {
       var t;
       let r = b.ZP.getUserTag(e.user);
       return {
-        rowType: f.aC.MEMBER,
+        rowType: g.aC.MEMBER,
         name: null != (t = e.name) ? t : r,
         nickname: e.name,
         username: r,
@@ -64,7 +64,7 @@ function h(e) {
     A = u.Z.useSections({
       members: q
     }),
-    N = n.useCallback(e => e.rowType === f.aC.MEMBER || e.rowType === f.aC.OWNER ? {
+    N = n.useCallback(e => e.rowType === g.aC.MEMBER || e.rowType === g.aC.OWNER ? {
       type: s.F.MEMBER,
       label: e.name,
       avatar: e.avatarURL
@@ -82,20 +82,20 @@ function h(e) {
     children: (0, a.jsx)(i.Modal, {
       onClose: r,
       transitionState: t,
-      title: p.intl.string(p.t.ZYOK46),
-      subtitle: null != y ? p.intl.format(p.t["qP+nuZ"], {
+      title: k.intl.string(k.t.ZYOK46),
+      subtitle: null != y ? k.intl.format(k.t["qP+nuZ"], {
         numMembers: _.ey,
         roleName: y.name
-      }) : p.intl.format(p.t["3OxP4q"], {
+      }) : k.intl.format(k.t["3OxP4q"], {
         numMembers: _.ey
       }),
       input: (0, a.jsxs)("div", {
         children: [(0, a.jsx)(u.Z.SearchBox, {
-          placeholderText: p.intl.string(p.t.vMiCaQ)
+          placeholderText: k.intl.string(k.t.vMiCaQ)
         }), null != S ? (0, a.jsx)(o.Text, {
-          className: R.errorText,
+          className: p.errorText,
           variant: "text-xs/normal",
-          color: "text-danger",
+          color: "text-feedback-critical",
           children: S.getAnyErrorMessage()
         }) : null]
       }),
@@ -108,11 +108,11 @@ function h(e) {
         sections: A
       },
       actions: [{
-        text: p.intl.string(p.t["ETE/oC"]),
+        text: k.intl.string(k.t["ETE/oC"]),
         variant: "secondary",
         onClick: r
       }, {
-        text: p.intl.string(p.t.OYkgVk),
+        text: k.intl.string(k.t.OYkgVk),
         variant: "primary",
         onClick: P,
         loading: E,

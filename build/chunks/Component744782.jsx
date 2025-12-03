@@ -43,51 +43,51 @@ function O(e) {
   }, [I, P]);
   if (null == N) return E(), null;
   let w = null != (t = null == S ? true : S.vanityURLCode) ? t : null == T ? true : T.code,
-    D = null != w ? (0, a.tV)({
+    k = null != w ? (0, a.tV)({
       baseCode: w,
       guildScheduledEventId: Z
     }) : null,
-    k = null == D || null == T,
-    R = (0, s.Z)(null != D ? D : ""),
+    D = null == k || null == T,
+    R = (0, s.Z)(null != k ? k : ""),
     _ = null != (n = null == T ? true : T.maxAge) ? n : b.value,
     A = null != (O = null == T ? true : T.maxUses) ? O : y.value;
   return (0, r.jsxs)("div", {
-    className: f.container,
+    className: j.container,
     children: [(0, r.jsx)(i.P3F, {
       onClick: E,
-      className: f.close,
-      "aria-label": j.intl.string(j.t.cpT0Cq),
+      className: j.close,
+      "aria-label": f.intl.string(f.t.cpT0Cq),
       children: (0, r.jsx)(i.Dio, {
         size: "md",
         color: "currentColor"
       })
     }), (0, r.jsx)(c.Z, {
       children: (0, r.jsx)("div", {
-        className: f.iconContainer,
+        className: j.iconContainer,
         children: (0, r.jsx)(i.Que, {
           size: "custom",
           color: "currentColor",
           height: 30,
           width: 30,
-          className: f.icon
+          className: j.icon
         })
       })
     }), (0, r.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
-      className: f.header,
-      children: j.intl.string(j.t.UzNv7u)
+      className: j.header,
+      children: f.intl.string(f.t.UzNv7u)
     }), (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      className: f.body,
-      children: j.intl.string(j.t.UetJjH)
+      className: j.body,
+      children: f.intl.string(f.t.UetJjH)
     }), (0, r.jsxs)("div", {
-      className: f.invite,
+      className: j.invite,
       children: [(0, r.jsx)(o.S, {
         value: R,
         autoFocus: false,
         onCopy: e => {
-          if (k) return;
+          if (D) return;
           (0, x.JG)(e);
           let t = (0, v.xC)(N.entity_type);
           m.default.track(p.rMx.COPY_INSTANT_INVITE, {
@@ -102,7 +102,7 @@ function O(e) {
       }), (null == S ? true : S.vanityURLCode) == null && (0, r.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
-        className: f.inviteDetail,
+        className: j.inviteDetail,
         children: (0, h.Vg)(_, A)
       })]
     })]

@@ -40,7 +40,7 @@ function x(e) {
       children: f.intl.string(f.t.IfBQ56)
     }), null != y && "" !== y ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
-      color: "text-danger",
+      color: "text-feedback-critical",
       children: y
     }) : null, (0, r.jsxs)(u.gO, {
       className: l()(_.marginBottom20, _.marginTop20),

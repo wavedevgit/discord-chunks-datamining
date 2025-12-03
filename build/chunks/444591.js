@@ -36,6 +36,6 @@ class i {
   constructor(e) {
     r(this, "container", true), r(this, "svg", true), r(this, "foreignObject", true), this.container = null == e ? true : e.createElement("div");
     let t = this.svg = null == e ? true : e.createElement("svg");
-    null != t && (t.style.contain = "paint"), this.foreignObject = null == e ? true : e.createElement("foreignObject"), null != this.container && null != this.svg && null != this.foreignObject && (this.container.className = "drag-previewer", this.container.style.cssText = "z-index: 1000; filter: drop-shadow(0 0 0 var(--background-floating)) drop-shadow(var(--elevation-high))", this.svg.appendChild(this.foreignObject), this.container.appendChild(this.svg), null == e || e.body.appendChild(this.container))
+    null != t && (t.style.contain = "paint"), this.foreignObject = null == e ? true : e.createElement("foreignObject"), null != this.container && null != this.svg && null != this.foreignObject && (this.container.className = "drag-previewer", this.container.style.cssText = "z-index: 1000; filter: drop-shadow(0 0 0 var(--background-surface-high)) drop-shadow(var(--elevation-high))", this.svg.appendChild(this.foreignObject), this.container.appendChild(this.svg), null == e || e.body.appendChild(this.container))
   }
 }

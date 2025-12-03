@@ -65,11 +65,11 @@ function h(e) {
     emojiId: b,
     emojiName: y
   }), N = (0, r.e7)([m.ZP], () => null != l ? m.ZP.getDefaultChannel(l) : null), O = i.useRef(null), {
-    isHoveringOrFocusing: P
-  } = (0, u.Z)(O), k = () => {
+    isHoveringOrFocusing: k
+  } = (0, u.Z)(O), P = () => {
     w(true), I(true)
   }, D = e => {
-    e.stopPropagation(), k()
+    e.stopPropagation(), P()
   }, Z = i.useMemo(() => {
     let e = null != b && "" !== b,
       t = null != y && "" !== y,
@@ -105,7 +105,7 @@ function h(e) {
                 emoji: l,
                 willClose: n
               } = e, i = (null == l ? true : l.id) == null;
-              k(), i ? w(null == l ? true : l.optionallyDiverseSequence) : (S && w(null == l ? true : l.name), I(null == l ? true : l.id)), n && t()
+              P(), i ? w(null == l ? true : l.optionallyDiverseSequence) : (S && w(null == l ? true : l.name), I(null == l ? true : l.id)), n && t()
             },
             guildId: l,
             channel: N
@@ -130,7 +130,7 @@ function h(e) {
               lineClamp: 1,
               color: T ? "text-default" : "text-muted",
               children: T ? ":".concat(C, ":") : p.intl.string(p.t.QTK0TJ)
-            }), T && P && (0, n.jsx)(o.Z, x(v({}, e), {
+            }), T && k && (0, n.jsx)(o.Z, x(v({}, e), {
               onClick: D
             }))]
           }))

@@ -14,8 +14,8 @@ function s(e) {
     startDate: t,
     recurrenceRule: n,
     onRecurrenceChange: s
-  } = e, d = l.useMemo(() => (0, a.zi)(t, n), [n, t]), c = (0, a.P8)(t), o = e => e.toString();
-  return (0, r.jsx)(i.PhF, {
+  } = e, d = r.useMemo(() => (0, a.zi)(t, n), [n, t]), c = (0, a.P8)(t), o = e => e.toString();
+  return (0, l.jsx)(i.PhF, {
     label: u.intl.string(u.t["59TVxL"]),
     required: true,
     placeholder: "gaming",

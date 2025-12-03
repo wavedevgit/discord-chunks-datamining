@@ -10,8 +10,8 @@ var Chunk692547 = require("./692547.js"),
   Chunk325767 = require("./325767.js");
 let o = e => {
   var t, n, o, s, {
-      size: u = "md",
-      width: c,
+      size: c = "md",
+      width: u,
       height: d,
       color: h = r.Z.colors.INTERACTIVE_NORMAL,
       colorClass: p = ""
@@ -31,8 +31,8 @@ let o = e => {
       }
       return r
     }(e, ["size", "width", "height", "color", "colorClass"]);
-  let m = (0, l.m)(u),
-    g = null != (o = null == m ? true : m.width) ? o : c,
+  let m = (0, l.m)(c),
+    g = null != (o = null == m ? true : m.width) ? o : u,
     y = null != (s = null == m ? true : m.height) ? s : d;
   return (0, i.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {

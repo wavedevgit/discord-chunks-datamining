@@ -577,7 +577,7 @@ class e2 extends Chunk473749.PureComponent {
       var t, n;
       let i = null == (t = this.editorRef) ? true : t.getSlateEditor();
       null != i && (V.Q.select(i, []), i.insertText(e), null == (n = this.editorRef) || n.focus())
-    }), eY(this, "renderAttachButton", (e, t) => (0, i.jsx)(k.Z, {
+    }), eY(this, "renderAttachButton", (e, t) => (0, i.jsx)(D.Z, {
       className: t,
       channel: this.props.channel,
       draftType: e_.d.ChannelMessage,
@@ -585,7 +585,7 @@ class e2 extends Chunk473749.PureComponent {
       setValue: this.handleSetValue,
       canOnlyUseTextCommands: e,
       chatInputType: this.props.chatInputType
-    })), eY(this, "renderApplicationCommandIcon", (e, t, n) => (0, i.jsx)(D.Z, {
+    })), eY(this, "renderApplicationCommandIcon", (e, t, n) => (0, i.jsx)(k.Z, {
       className: n,
       command: e,
       section: t,
@@ -686,7 +686,7 @@ class e3 extends Chunk473749.PureComponent {
         guildId: null == Chunk827498 ? true : Chunk827498.guild_id,
         location: "ChannelChat"
       }),
-      D = Chunk190210 && null != Chunk541099 && null != Chunk827498 && null != Chunk827498.guild_id;
+      k = Chunk190210 && null != Chunk541099 && null != Chunk827498 && null != Chunk827498.guild_id;
     return (0, Chunk54381.jsx)(Chunk410575.Z, {
       page: (0, Chunk934415.mE)(this.props.channel),
       children: (0, Chunk54381.jsx)(Chunk549006.sW, {
@@ -860,14 +860,14 @@ let e4 = Chunk473749.memo(function(e) {
   } = e, {
     placeholder: a,
     accessibilityLabel: o
-  } = (0, ek.Z)({
+  } = (0, eD.Z)({
     channel: t
   }), s = (0, es.S)(eI.default.getCurrentUser(), t), [c] = (0, W.AB)(null == n ? true : n.id), u = (0, H.Ux)(null == n ? true : n.id), d = (0, p.e7)([eI.default], () => eI.default.getCurrentUser()), f = (0, p.e7)([ex.ZP], () => {
     var e, t, i;
     return null != d && null != (i = null == (e = ex.ZP.getMember(null != (t = null == n ? true : n.id) ? t : ez.lds, null == d ? true : d.id)) ? true : e.isPending) && i
   }), m = (0, p.e7)([er.Z], () => er.Z.isEnabled()), g = (0, eo.Z)(t.id), b = (0, K.Z)(t.id), C = (0, eh.k)(t.id), v = (0, p.e7)([eS.Z], () => eS.Z.getVoiceChannelId()), O = (0, p.e7)([ev.Z], () => ev.Z.getChannel(v)), x = (0, p.e7)([eI.default], () => t.type !== ez.d4z.DM ? null : eI.default.getUser(t.getRecipientId())), E = (0, p.e7)([el.ZP, ey.default], () => el.ZP.getUserCombo(ey.default.getId(), t.id)), j = (0, y.iD)(t), S = (0, y.d7)(t), P = j.length > 0 || t.rateLimitPerUser > 0 || null != E || null != S, {
     showLinkedLobbyApplicationLoadingIndicator: I
-  } = (0, eD.Z)(t.linkedLobby), Z = (0, F.Z)("ChannelChat");
+  } = (0, ek.Z)(t.linkedLobby), Z = (0, F.Z)("ChannelChat");
   return (0, i.jsx)(e3, {
     channel: t,
     isEditing: null != (0, p.e7)([eO.Z], () => eO.Z.getEditingMessageId(t.id)),

@@ -43,44 +43,44 @@ let C = function(n) {
     onSelectUnicodeEmoji: p,
     onClose: m,
     transitionState: C
-  } = n, v = (0, d.Dt)(), b = u.ZP.getDefaultChannel(e), [N, y] = o.useState("tab-id-role-icon-file-upload"), [_, k] = o.useState(false), z = (0, i.Z)(h);
+  } = n, v = (0, d.Dt)(), b = u.ZP.getDefaultChannel(e), [N, y] = o.useState("tab-id-role-icon-file-upload"), [_, k] = o.useState(false), z = (0, l.Z)(h);
   return o.useEffect(() => {
     k(false)
-  }, [N]), (0, t.jsx)(l.Y0X, {
+  }, [N]), (0, t.jsx)(i.Y0X, {
     transitionState: C,
     "aria-labelledby": v,
-    size: l.CgR.MEDIUM,
+    size: i.CgR.MEDIUM,
     className: I.modalRoot,
     parentComponent: "CustomRoleIconUploadModal",
     "data-migration-pending": true,
     children: (0, t.jsxs)("div", {
       className: I.contentWrapper,
-      children: [(0, t.jsxs)(l.njP, {
+      children: [(0, t.jsxs)(i.njP, {
         selectedItem: N,
         onItemSelect: y,
         type: "top",
         look: "grey",
         "aria-label": "Expression Picker",
         className: I.nav,
-        children: [(0, t.jsx)(l.njP.Item, {
+        children: [(0, t.jsx)(i.njP.Item, {
           id: "tab-id-role-icon-file-upload",
           children: x.intl.string(x.t.royWSB)
-        }), (0, t.jsx)(l.njP.Item, {
+        }), (0, t.jsx)(i.njP.Item, {
           id: "tab-id-role-icon-emoji",
           children: x.intl.string(x.t["/Ny2wZ"])
         })]
-      }), "tab-id-role-icon-file-upload" === N ? (0, t.jsx)(l.hzk, {
+      }), "tab-id-role-icon-file-upload" === N ? (0, t.jsx)(i.hzk, {
         "data-migration-pending": true,
         children: (0, t.jsxs)("div", {
           className: I.uploadContainer,
           children: [(0, t.jsxs)("div", {
             className: I.uploadIconOuterContainer,
             children: [(0, t.jsx)("img", {
-              src: f,
+              src: g,
               alt: "sparkles"
             }), (0, t.jsx)("div", {
               className: I.uploadIconInnerContainer,
-              children: (0, t.jsx)(l.FmF, {
+              children: (0, t.jsx)(i.FmF, {
                 size: "md",
                 color: "currentColor",
                 className: I.uploadIcon
@@ -101,9 +101,9 @@ let C = function(n) {
             text: x.intl.string(x.t.sdCQY4),
             size: "md",
             variant: "primary"
-          }), _ ? (0, t.jsx)(l.Text, {
+          }), _ ? (0, t.jsx)(i.Text, {
             className: I.uploadError,
-            color: "text-danger",
+            color: "text-feedback-critical",
             variant: "text-sm/normal",
             children: x.intl.string(x.t.HFyKsa)
           }) : null]
@@ -122,7 +122,7 @@ let C = function(n) {
           }
           m()
         },
-        pickerIntention: g.Hz.COMMUNITY_CONTENT,
+        pickerIntention: f.Hz.COMMUNITY_CONTENT,
         channel: b
       }) : null]
     })

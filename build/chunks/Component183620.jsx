@@ -92,7 +92,7 @@ class f extends(r = Chunk473749.PureComponent) {
               autoComplete: "one-time-code",
               autoFocus: true
             }), this.errorPresent() ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-              color: "text-danger",
+              color: "text-feedback-critical",
               variant: "text-xs/normal",
               className: Chunk791373.error,
               children: null != Chunk120356 ? Chunk120356 : E

@@ -217,7 +217,7 @@ let R = Chunk473749.memo(function(e) {
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-xs/semibold",
-        color: c ? "text-danger" : "text-feedback-positive",
+        color: c ? "text-feedback-critical" : "text-feedback-positive",
         className: N.messageState,
         children: d
       }), (0, r.jsxs)("div", {

@@ -30,8 +30,8 @@ function S(e) {
     allowOneClickGoLive: i = false,
     onBeforeShowModal: a,
     onOneClickGoLive: o,
-    appContext: c
-  } = e, d = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), O = (0, l.e7)([h.Z], () => h.Z.getChannel(d), [d]), E = (0, l.e7)([y.default], () => y.default.getCurrentUser()), v = null == O ? true : O.getGuildId(), S = (0, l.e7)([f.Z], () => (0, u.Z)(f.Z)), b = (0, l.e7)([p.Z, m.Z], () => null != O && (0, s.JL)(O, p.Z, m.Z));
+    appContext: u
+  } = e, d = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), O = (0, l.e7)([h.Z], () => h.Z.getChannel(d), [d]), E = (0, l.e7)([y.default], () => y.default.getCurrentUser()), v = null == O ? true : O.getGuildId(), S = (0, l.e7)([f.Z], () => (0, c.Z)(f.Z)), b = (0, l.e7)([p.Z, m.Z], () => null != O && (0, s.JL)(O, p.Z, m.Z));
   return r.useCallback(async () => {
     await x({
       pid: t,
@@ -44,9 +44,9 @@ function S(e) {
       allowOneClickGoLive: i,
       onBeforeShowModal: a,
       onOneClickGoLive: o,
-      appContext: c
+      appContext: u
     })
-  }, [t, d, E, v, S, b, n, i, a, o, c])
+  }, [t, d, E, v, S, b, n, i, a, o, u])
 }
 async function b(e) {
   let {
@@ -56,7 +56,7 @@ async function b(e) {
     onBeforeShowModal: r,
     onOneClickGoLive: l,
     appContext: a
-  } = e, o = g.Z.getVoiceChannelId(), c = h.Z.getChannel(o), d = y.default.getCurrentUser(), O = null == c ? true : c.getGuildId(), E = null != c && (0, s.JL)(c, p.Z, m.Z), v = (0, u.Z)(f.Z);
+  } = e, o = g.Z.getVoiceChannelId(), u = h.Z.getChannel(o), d = y.default.getCurrentUser(), O = null == u ? true : u.getGuildId(), E = null != u && (0, s.JL)(u, p.Z, m.Z), v = (0, c.Z)(f.Z);
   await x({
     pid: t,
     voiceChannelId: o,
@@ -77,7 +77,7 @@ async function x(e) {
     voiceChannelId: r,
     user: l,
     targetGuildId: s,
-    canGoLive: u,
+    canGoLive: c,
     canStream: h,
     analyticsLocation: p,
     allowOneClickGoLive: f,
@@ -85,7 +85,7 @@ async function x(e) {
     onOneClickGoLive: g,
     appContext: y
   } = e;
-  if (u && h) {
+  if (c && h) {
     if (f && null !== r) {
       let e = d.Z.getState().preset;
       if (e === E.ApplicationStreamPresets.PRESET_DOCUMENTS) {
@@ -96,7 +96,7 @@ async function x(e) {
         });
         e = t ? E.ApplicationStreamPresets.PRESET_AUTO : E.ApplicationStreamPresets.PRESET_VIDEO
       }
-      let [n] = await (0, c.Z)(t, {
+      let [n] = await (0, u.Z)(t, {
         preset: e
       });
       if (n) {

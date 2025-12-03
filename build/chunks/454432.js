@@ -13,7 +13,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk273387 = require("./273387.js"),
   Chunk981631 = require("./981631.js");
 let m = (e, t) => {
-  let [n, m] = i.useState(false), x = (0, l.e7)([d.Z], () => d.Z.getAdminGuildEntryIds(t)), g = (0, l.Wu)([o.ZP, s.Z, a.Z], () => {
+  let [n, m] = i.useState(false), x = (0, l.e7)([d.Z], () => d.Z.getAdminGuildEntryIds(t)), C = (0, l.Wu)([o.ZP, s.Z, a.Z], () => {
     let t = o.ZP.getFlattenedGuildIds(),
       n = [];
     return t.forEach(t => {
@@ -23,11 +23,11 @@ let m = (e, t) => {
   }, [e]);
   return (0, r.ZP)(() => {
     (async () => {
-      m(true), await c._Q(t, g.map(e => e.id)), m(false)
+      m(true), await c._Q(t, C.map(e => e.id)), m(false)
     })()
   }), {
-    availableGuilds: i.useMemo(() => g.filter(e => !(null == x ? true : x.has(e.id))), [g, x]),
-    addedGuilds: i.useMemo(() => g.filter(e => null == x ? true : x.has(e.id)), [g, x]),
+    availableGuilds: i.useMemo(() => C.filter(e => !(null == x ? true : x.has(e.id))), [C, x]),
+    addedGuilds: i.useMemo(() => C.filter(e => null == x ? true : x.has(e.id)), [C, x]),
     loading: n
   }
 }

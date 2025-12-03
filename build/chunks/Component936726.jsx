@@ -152,7 +152,7 @@ function w(e) {
             imageClassName: C.avatarUploaderInner,
             showIcon: true
           }), null != I.avatar && "" !== I.avatar ? (0, i.jsx)(c.Text, {
-            color: "text-danger",
+            color: "text-feedback-critical",
             variant: "text-sm/normal",
             children: I.avatar
           }) : null]

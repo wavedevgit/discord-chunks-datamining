@@ -277,7 +277,7 @@ let y = {
               children: "Please download both configs for the drop package!"
             }), (0, a.jsx)(c.Text, {
               variant: "text-sm/bold",
-              color: "text-danger",
+              color: "text-feedback-critical",
               children: "WARNING: The full config is really big :0"
             }), (0, a.jsxs)("div", {
               className: g.row,

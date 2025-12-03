@@ -200,7 +200,7 @@ function v(e) {
     className: y.recentAvatarContainer,
     children: [null != _ && !o && (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
-      color: "text-danger",
+      color: "text-feedback-critical",
       children: _
     }), (0, r.jsxs)("div", {
       className: y.recentAvatarSlots,

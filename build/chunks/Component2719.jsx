@@ -557,7 +557,7 @@ function eo() {
       children: [null != Chunk512722 ? (0, Chunk54381.jsx)(Chunk481060.Text, {
         className: Chunk378846.avatarError,
         variant: "text-xs/normal",
-        color: "text-danger",
+        color: "text-feedback-critical",
         children: Chunk512722
       }) : null, (0, Chunk54381.jsxs)("div", {
         className: Chunk378846.fieldList,

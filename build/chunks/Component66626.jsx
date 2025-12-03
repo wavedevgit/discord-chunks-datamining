@@ -19,8 +19,8 @@ function d(e) {
     categoryId: u,
     onCategoryIdChange: m,
     onSubmit: x,
-    onBack: g
-  } = e, [C, p] = l.useState(false), [f, j] = l.useState(null), h = async () => {
+    onBack: C
+  } = e, [g, p] = l.useState(false), [f, j] = l.useState(null), h = async () => {
     p(true);
     try {
       await x()
@@ -55,13 +55,13 @@ function d(e) {
         size: "sm",
         variant: "secondary",
         text: c.intl.string(c.t["13/7kX"]),
-        onClick: g
+        onClick: C
       }),
       actions: [{
         variant: "primary",
         text: c.intl.string(c.t.H9jxS1),
         onClick: h,
-        loading: C,
+        loading: g,
         disabled: "" === n || u === o.AR.UNCATEGORIZED
       }]
     })]

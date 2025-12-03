@@ -74,7 +74,7 @@ let Z = e => {
   } = e;
   return (0, r.jsx)(c.Text, {
     variant: "text-md/normal",
-    color: "text-danger",
+    color: "text-feedback-critical",
     className: t,
     children: n
   })

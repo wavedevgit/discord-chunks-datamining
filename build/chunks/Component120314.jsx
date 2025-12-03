@@ -83,7 +83,7 @@ require.a(module, async function(e, r) {
           children: n
         }), (0, l.jsxs)(o.Text, {
           variant: "text-md/normal",
-          color: "text-danger",
+          color: "text-feedback-critical",
           className: w.errorMessage,
           children: [(0, l.jsx)(s.Z, {
             width: 16,

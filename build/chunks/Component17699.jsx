@@ -123,7 +123,7 @@ function R(e) {
         children: null != s.reason && "" !== s.reason ? s.reason : S.intl.string(S.t["t+2Zci"])
       }), null != b ? (0, r.jsx)(o.Text, {
         className: T.error,
-        color: "text-danger",
+        color: "text-feedback-critical",
         variant: "text-sm/normal",
         children: b.getAnyErrorMessage()
       }) : null]

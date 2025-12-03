@@ -37,15 +37,15 @@ function y(e) {
     description: Z,
     name: T,
     image: w,
-    scheduledEndTime: D,
-    scheduledStartTime: k,
+    scheduledEndTime: k,
+    scheduledStartTime: D,
     recurrenceRule: R
   } = t, _ = (0, u._d)(I), A = (0, u.K3)(I), G = null != t && (0, g.xt)(t), U = l.useMemo(() => {
     let e = (0, x.v1)(t);
     return null != e ? e : {
-      startDate: a()(k)
+      startDate: a()(D)
     }
-  }, [t, k]), [L, z] = l.useState(() => (0, x.zi)(a()(k), R)), F = l.useRef(null);
+  }, [t, D]), [L, z] = l.useState(() => (0, x.zi)(a()(D), R)), F = l.useRef(null);
   l.useEffect(() => {
     if (P) {
       var e;
@@ -89,7 +89,7 @@ function y(e) {
             } = e;
             return M(t)
           },
-          uploadType: j.pC.SCHEDULED_EVENT_IMAGE
+          uploadType: f.pC.SCHEDULED_EVENT_IMAGE
         }, n))
       })
     },
@@ -107,7 +107,7 @@ function y(e) {
       children: (0, r.jsxs)(s.Kqy, {
         gap: 16,
         children: [(0, r.jsx)(s.oil, {
-          label: f.intl.string(f.t["0HbEQ6"]),
+          label: j.intl.string(j.t["0HbEQ6"]),
           required: true,
           error: null != B ? B : W,
           onChange: e => {
@@ -115,7 +115,7 @@ function y(e) {
               name: e
             })
           },
-          placeholder: f.intl.string(f.t["6/yars"]),
+          placeholder: j.intl.string(j.t["6/yars"]),
           maxLength: p.p,
           value: T,
           autoComplete: "off",
@@ -130,7 +130,7 @@ function y(e) {
               scheduledStartTime: null == t ? true : t.toISOString(),
               scheduledEndTime: null == n ? true : n.toISOString()
             };
-            null != t && null != D && (null == n ? true : n.isBefore(t)) && (r.scheduledEndTime = t.add(1, "hour").toISOString()), null != t && null != L && (r.recurrenceRule = (0, x.mF)(L, t)), C(r)
+            null != t && null != k && (null == n ? true : n.isBefore(t)) && (r.scheduledEndTime = t.add(1, "hour").toISOString()), null != t && null != L && (r.recurrenceRule = (0, x.mF)(L, t)), C(r)
           },
           onRecurrenceChange: e => {
             let t = U.startDate;
@@ -147,9 +147,9 @@ function y(e) {
         }), (0, r.jsx)(O, {
           error: N
         }), (0, r.jsx)(s.Kx8, {
-          label: f.intl.string(f.t["+gRCC7"]),
+          label: j.intl.string(j.t["+gRCC7"]),
           error: X,
-          placeholder: f.intl.string(f.t["kWO/E8"]),
+          placeholder: j.intl.string(j.t["kWO/E8"]),
           value: Z,
           onChange: e => {
             C({
@@ -159,8 +159,8 @@ function y(e) {
           maxLength: p.wm,
           autosize: true
         }), (0, r.jsx)(s.gNt, {
-          label: f.intl.string(f.t.Ly121e),
-          description: f.intl.string(f.t.B9C9be),
+          label: j.intl.string(j.t.Ly121e),
+          description: j.intl.string(j.t.B9C9be),
           children: null != w ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.Z, {
               className: b.imagePreview,
@@ -174,20 +174,20 @@ function y(e) {
                 }
               },
               onChange: V,
-              hint: f.intl.string(f.t.G44Xml),
+              hint: j.intl.string(j.t.G44Xml),
               showRemoveButton: false,
               enabled: true
             }), (0, r.jsx)(s.Button, {
               variant: "primary",
               size: "sm",
-              text: f.intl.string(f.t.gmUvO1),
+              text: j.intl.string(j.t.gmUvO1),
               onClick: () => M(null)
             })]
           }) : (0, r.jsx)(c.Z, {
             size: "sm",
             variant: "primary",
             onChange: V,
-            text: f.intl.string(f.t.vKCGYb)
+            text: j.intl.string(j.t.vKCGYb)
           })
         })]
       })
@@ -200,7 +200,7 @@ function O(e) {
     error: t
   } = e;
   return null == t ? null : (0, r.jsx)(s.Text, {
-    color: "text-danger",
+    color: "text-feedback-critical",
     variant: "text-xs/normal",
     className: b.warning,
     children: t

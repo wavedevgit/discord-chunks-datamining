@@ -73,7 +73,7 @@ function J(e) {
   let {
     platformType: n,
     className: t
-  } = e, o = (0, j.ZP)(), a = b.Z.get(n);
+  } = e, o = (0, b.ZP)(), a = j.Z.get(n);
   return (0, c.jsx)("img", {
     src: (0, x.ap)(o) ? a.icon.lightSVG : a.icon.darkSVG,
     alt: "",
@@ -151,7 +151,7 @@ function X(e) {
         value: l
       }))) return null
   }
-  return n = i ? "header-secondary" : "text-danger", (0, c.jsx)(p.Text, {
+  return n = i ? "header-secondary" : "text-feedback-critical", (0, c.jsx)(p.Text, {
     variant: "text-xs/normal",
     color: n,
     className: q.connectionsCheck,
@@ -164,12 +164,12 @@ function $(e) {
     eligibilityStatesGroups: n,
     onPlatformConnect: t,
     onPlatformConnected: a
-  } = e, [i, s] = o.useState({}), [u, x] = o.useState(0), [N, A] = o.useState(null), [f, j] = o.useState(null), _ = o.useMemo(() => d().flatten(n), [n]), y = o.useMemo(() => d().groupBy(_, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : "")), [_]);
+  } = e, [i, s] = o.useState({}), [u, x] = o.useState(0), [N, A] = o.useState(null), [v, b] = o.useState(null), _ = o.useMemo(() => d().flatten(n), [n]), y = o.useMemo(() => d().groupBy(_, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : "")), [_]);
   o.useEffect(() => x(Date.now()), [_]), o.useEffect(() => {
     if (null == N) return;
-    let e = y["".concat(N).concat(null != f ? ":".concat(f.id) : "")];
-    null != e && e.every(e => e.result) && a(N, f)
-  }, [y, N, f, a]);
+    let e = y["".concat(N).concat(null != v ? ":".concat(v.id) : "")];
+    null != e && e.every(e => e.result) && a(N, v)
+  }, [y, N, v, a]);
   let g = (0, p.dQu)(h.Z.unsafe_rawColors.GREEN_330).hex();
   return (0, c.jsx)(c.Fragment, {
     children: Object.keys(y).sort((e, n) => {
@@ -179,13 +179,13 @@ function $(e) {
     }).map(e => {
       var n, o, a;
       let d, h, x, N = y[e],
-        f = N.find(e => null == e.operator),
+        v = N.find(e => null == e.operator),
         _ = N.filter(e => null != e.operator),
-        I = (null == f || f.result) && _.every(e => e.result),
-        E = N.find(e => null != e.application),
-        k = b.Z.get(e),
-        O = null == k || k.enabled,
-        S = null == E ? true : E.application,
+        I = (null == v || v.result) && _.every(e => e.result),
+        k = N.find(e => null != e.application),
+        E = j.Z.get(e),
+        O = null == E || E.enabled,
+        S = null == k ? true : k.application,
         G = (null == S ? true : S.bot) != null ? new P.Z(S.bot) : null;
       D.SJ.includes(null != (n = null == S ? true : S.id) ? n : "") ? d = (0, c.jsx)(U.Z, {
         className: q.botTag,
@@ -195,7 +195,7 @@ function $(e) {
         className: q.botTag,
         verified: G.isVerifiedBot()
       }));
-      let w = i[null != (o = null == k ? true : k.type) ? o : V.Kt],
+      let w = i[null != (o = null == E ? true : E.type) ? o : V.Kt],
         R = !I && null != w && w <= u;
       return h = I ? (0, c.jsx)(p.dz2, {
         size: "md",
@@ -214,11 +214,11 @@ function $(e) {
         variant: "text-md/medium",
         color: "text-muted",
         children: Y.intl.string(Y.t.cEts68)
-      }), (null == k ? true : k.type) === W.ABu.STEAM && (x = Y.intl.string(Y.t.NcZh6K)), (0, c.jsxs)(p.P3F, {
+      }), (null == E ? true : E.type) === W.ABu.STEAM && (x = Y.intl.string(Y.t.NcZh6K)), (0, c.jsxs)(p.P3F, {
         className: l()(q.connectionsChecksGroup, I ? q.connectionsChecksGroupPassed : null, O ? null : q.connectionsChecksGroupPlatformDisabled),
         onClick: !I && O ? () => {
           var e, n, c, o;
-          return n = null != (e = null == k ? true : k.type) ? e : V.Kt, void((0, H.Z)({
+          return n = null != (e = null == E ? true : E.type) ? e : V.Kt, void((0, H.Z)({
             platformType: n,
             location: "Verified Roles Connect Accounts Modal",
             overrideUrl: null == S ? true : S.role_connections_verification_url
@@ -233,7 +233,7 @@ function $(e) {
             return t
           })(Object(o)).forEach(function(e) {
             Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(o, e))
-          }), c)), A(n), j(null != S ? S : null), t())
+          }), c)), A(n), b(null != S ? S : null), t())
         } : true,
         children: [!I && R ? (0, c.jsx)("div", {
           className: q.connectionsChecksGroupRequirementsNotMet,
@@ -242,9 +242,9 @@ function $(e) {
             color: "always-white",
             children: Y.intl.string(Y.t.UB3hKo)
           })
-        }) : null, null != k ? (0, c.jsx)(J, {
-          platformType: k.type
-        }) : null, null != G ? (0, c.jsx)(v.Z, {
+        }) : null, null != E ? (0, c.jsx)(J, {
+          platformType: E.type
+        }) : null, null != G ? (0, c.jsx)(f.Z, {
           user: G
         }) : null, (0, c.jsxs)("div", {
           className: q.connectionsChecksGroupTextContainer,
@@ -253,7 +253,7 @@ function $(e) {
             children: [(0, c.jsx)(p.Text, {
               variant: "text-md/medium",
               color: "header-primary",
-              children: null != (a = null == k ? true : k.name) ? a : null == S ? true : S.name
+              children: null != (a = null == E ? true : E.name) ? a : null == S ? true : S.name
             }), d, null != x ? (0, c.jsx)(m.u, {
               text: x,
               children: (0, c.jsx)(p.d3s, {
@@ -296,10 +296,10 @@ function ee(e) {
     [u, h] = o.useState(l.showActivity),
     [m, x] = o.useState(1 === l.metadataVisibility),
     [C, A] = o.useState(1 === l.visibility);
-  (0, f.ZP)(() => {
+  (0, v.ZP)(() => {
     i(!C), r(m)
   });
-  let v = b.Z.get(l.type);
+  let f = j.Z.get(l.type);
   return W.BFP.has(l.type) && (n = (0, c.jsx)(p.rsf, {
     label: Y.intl.string(Y.t["+KCMSi"]),
     checked: s,
@@ -308,13 +308,13 @@ function ee(e) {
     }
   })), W.vbS.has(l.type) && (t = (0, c.jsx)(p.rsf, {
     label: Y.intl.format(Y.t["6u6J0q"], {
-      platform: v.name
+      platform: f.name
     }),
     checked: u,
     onChange: e => {
       h(e), N.Z.setShowActivity(l.type, l.id, e)
     }
-  })), true === v.hasMetadata && (a = (0, c.jsx)(p.rsf, {
+  })), true === f.hasMetadata && (a = (0, c.jsx)(p.rsf, {
     label: Y.intl.string(Y.t.FYKGsL),
     checked: m,
     disabled: !C,
@@ -339,7 +339,7 @@ function en(e) {
     onClose: t,
     guildId: a,
     role: l
-  } = e, [i, s] = o.useState(0), [d, h] = o.useState(null), [x, C] = o.useState(false), [N, v] = o.useState(true), [f, T] = o.useState(false), [g, P] = o.useState(true), [B, D] = o.useState(false), H = (0, u.e7)([w.Z], () => w.Z.getAccounts()), U = (0, u.e7)([S.default], () => S.default.getId()), [V, J] = o.useState(null), [X, en] = o.useState(null), [et, ec] = o.useState(null), eo = (0, j.ZP)(), ea = (0, u.e7)([E.default], () => E.default.locale), el = (0, u.e7)([R.ZP], () => R.ZP.getMember(a, U)), ei = Object.values((0, u.e7)([G.Z], () => G.Z.getMutableGuildChannelsForGuild(a))).filter(e => Z.Z.can(W.Plq.VIEW_CHANNEL, e) && Z.Z.can(W.Plq.SEND_MESSAGES, e) && (0, y.Z)(e).includes(l));
+  } = e, [i, s] = o.useState(0), [d, h] = o.useState(null), [x, C] = o.useState(false), [N, f] = o.useState(true), [v, T] = o.useState(false), [g, P] = o.useState(true), [B, D] = o.useState(false), H = (0, u.e7)([w.Z], () => w.Z.getAccounts()), U = (0, u.e7)([S.default], () => S.default.getId()), [V, J] = o.useState(null), [X, en] = o.useState(null), [et, ec] = o.useState(null), eo = (0, b.ZP)(), ea = (0, u.e7)([k.default], () => k.default.locale), el = (0, u.e7)([R.ZP], () => R.ZP.getMember(a, U)), ei = Object.values((0, u.e7)([G.Z], () => G.Z.getMutableGuildChannelsForGuild(a))).filter(e => Z.Z.can(W.Plq.VIEW_CHANNEL, e) && Z.Z.can(W.Plq.SEND_MESSAGES, e) && (0, y.Z)(e).includes(l));
 
   function er() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
@@ -347,13 +347,13 @@ function en(e) {
   }
 
   function es() {
-    er(true), (0, O.openUserSettings)(k.n.AUTHORIZED_APPS_PANEL, {
+    er(true), (0, O.openUserSettings)(E.n.AUTHORIZED_APPS_PANEL, {
       section: W.oAB.AUTHORIZED_APPS
     })
   }
 
   function ed() {
-    er(true), (0, O.openUserSettings)(k.n.CONNECTIONS_PANEL, {
+    er(true), (0, O.openUserSettings)(E.n.CONNECTIONS_PANEL, {
       section: W.oAB.CONNECTIONS
     })
   }
@@ -375,17 +375,17 @@ function en(e) {
   }
   return o.useEffect(() => {
     A.Z.fetchGuildRoleConnectionsEligibility(a, l.id).then(e => {
-      h(e), C(e.some(e => e.every(e => e.result))), v(false)
+      h(e), C(e.some(e => e.every(e => e.result))), f(false)
     })
   }, [a, l.id, H]), o.useEffect(() => {
     L.default.track(W.rMx.PASSPORT_CHALLENGE_VIEWED, K({
       role_id: l.id
     }, (0, _.hH)(a)))
   }, [a, l.id]), o.useEffect(() => {
-    f && null != el && el.roles.includes(l.id) && (T(false), ei.length > 0 ? s(2) : null == t || t(), L.default.track(W.rMx.PASSPORT_CHALLENGE_FINISHED, K({
+    v && null != el && el.roles.includes(l.id) && (T(false), ei.length > 0 ? s(2) : null == t || t(), L.default.track(W.rMx.PASSPORT_CHALLENGE_FINISHED, K({
       role_id: l.id
     }, (0, _.hH)(a))))
-  }, [f, ei.length, el, a, l.id, t]), (0, c.jsxs)(p.Y0X, {
+  }, [v, ei.length, el, a, l.id, t]), (0, c.jsxs)(p.Y0X, {
     size: p.CgR.MEDIUM,
     transitionState: n,
     "aria-label": Y.intl.string(Y.t.zOZh3R),
@@ -410,7 +410,7 @@ function en(e) {
         case 1: {
           var e, n;
           r()(null != V, "lastPlatformConnected is null");
-          let t = null != (n = null == X ? true : X.name) ? n : null == (e = b.Z.get(V)) ? true : e.name;
+          let t = null != (n = null == X ? true : X.name) ? n : null == (e = j.Z.get(V)) ? true : e.name;
           return (0, c.jsxs)(p.xBx, {
             className: q.header,
             separator: false,
@@ -595,7 +595,7 @@ function en(e) {
               variant: "primary",
               text: Y.intl.string(Y.t["8SuVoE"]),
               onClick: () => eu(),
-              disabled: N || !x || f
+              disabled: N || !x || v
             }), n ? (0, c.jsx)("div", {
               className: q.manageConnectionsFooterButton,
               children: (0, c.jsx)(p.Avr, {

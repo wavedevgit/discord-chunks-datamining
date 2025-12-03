@@ -54,7 +54,7 @@ function h(e) {
         children: [(0, r.jsx)(a.Heading, {
           className: p.heading,
           variant: "heading-lg/semibold",
-          color: "text-danger",
+          color: "text-feedback-critical",
           children: (0, u.kk)(o) ? b.intl.string(b.t.raRxxT) : b.intl.string(b.t["4nbAta"])
         }), (0, r.jsx)(a.Text, {
           className: p.tagLine,

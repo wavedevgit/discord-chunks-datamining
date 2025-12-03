@@ -2,7 +2,7 @@
 /** chunk id: 512508, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   PM: () => V,
-  WG: () => I,
+  WG: () => P,
   ZP: () => k
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
@@ -85,11 +85,11 @@ function L(e) {
   return 1 === e.type
 }
 
-function P(e) {
+function I(e) {
   return 0 === e.type
 }
 
-function I(e) {
+function P(e) {
   let t = "".concat(!e.name.includes(g.CR) ? "@" : "").concat(e.name);
   return {
     tag: {
@@ -180,7 +180,7 @@ function T(e, t, n) {
     row: e,
     guildId: t,
     className: n
-  }, e.record.id) : P(e) ? (0, r.jsx)(E, {
+  }, e.record.id) : I(e) ? (0, r.jsx)(E, {
     row: e,
     channel: e.record,
     className: n
@@ -205,7 +205,7 @@ function k(e) {
       let t = j.Z.getChannel(e);
       null != t && (r[e] = V(t))
     }), t.forEach(e => {
-      e in n && (r[e] = I(n[e]))
+      e in n && (r[e] = P(n[e]))
     }), r
   })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(g), [g]), [y, Z] = l.useState(""), [R, M] = l.useState(false), [E, k] = l.useState(false), [A, U] = l.useState(false), F = l.useRef(null), {
     sections: B,
@@ -225,7 +225,7 @@ function k(e) {
         let {
           row: t
         } = e;
-        return P(t)
+        return I(t)
       }).map(e => e.row.record.id),
       r = t.filter(e => {
         let {
@@ -250,7 +250,7 @@ function k(e) {
     },
     W = l.useCallback(e => {
       let t = _({}, g);
-      P(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = I(e.record)), G(t), Z(""), z(), setTimeout(() => {
+      I(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = P(e.record)), G(t), Z(""), z(), setTimeout(() => {
         var e;
         let t = null == (e = F.current) ? true : e.containerRef.current,
           n = null == t ? true : t.firstChild;

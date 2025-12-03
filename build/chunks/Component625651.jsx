@@ -63,15 +63,15 @@ function T(e) {
   var t, n, {
       size: a,
       title: c,
-      body: l,
+      body: s,
       warningText: u,
       acknowledgementText: d,
       error: f,
-      isLoading: m,
-      onDeactivate: b
+      isLoading: b,
+      onDeactivate: m
     } = e,
     p = _(e, ["size", "title", "body", "warningText", "acknowledgementText", "error", "isLoading", "onDeactivate"]);
-  let [g, k] = o.useState(false);
+  let [k, g] = o.useState(false);
   return (0, r.jsxs)(i.Modal, (t = j({}, p), n = n = {
     size: a,
     title: O.intl.formatToPlainString(v.default.iEBw1M, {
@@ -87,14 +87,14 @@ function T(e) {
     }, {
       variant: "critical-primary",
       text: O.intl.string(v.default.PYPdl4),
-      loading: m,
-      onClick: b,
-      disabled: null != d && !g
+      loading: b,
+      onClick: m,
+      disabled: null != d && !k
     }],
-    children: [l, (0, r.jsxs)("div", {
+    children: [s, (0, r.jsxs)("div", {
       className: I.warningContainer,
       children: [(0, r.jsx)(i.xvT, {
-        color: "text-danger",
+        color: "text-feedback-critical",
         variant: "eyebrow",
         children: O.intl.string(v.default.OVt5CC)
       }), (0, r.jsx)(i.xvT, {
@@ -105,14 +105,14 @@ function T(e) {
       })]
     }), null != f && (0, r.jsx)(i.xvT, {
       className: I.errorText,
-      color: "text-danger",
+      color: "text-feedback-critical",
       variant: "text-sm/semibold",
       children: f
     }), null != d && (0, r.jsx)("div", {
       className: I.acknowledgementContainer,
-      children: (0, r.jsx)(s.Checkbox, {
-        checked: g,
-        onChange: k,
+      children: (0, r.jsx)(l.Checkbox, {
+        checked: k,
+        onChange: g,
         label: d,
         labelType: "secondary"
       })
@@ -133,47 +133,47 @@ function h(e) {
   var {
     guildId: t,
     powerup: n
-  } = e, s = _(e, ["guildId", "powerup"]);
+  } = e, l = _(e, ["guildId", "powerup"]);
   let {
     onDeactivate: h,
     error: y,
     isLoading: w
-  } = (0, k.ZP)(t, n), {
+  } = (0, g.ZP)(t, n), {
     onClose: C
-  } = s, E = o.useCallback(e => {
+  } = l, E = o.useCallback(e => {
     h(e).then(() => {
       null == C || C()
     })
   }, [C, h]), S = function(e, t) {
     let n = (0, c.e7)([u.Z], () => u.Z.getMemberCount(e)),
-      s = (0, l.Z)(e),
-      m = (0, c.e7)([f.Z], () => {
+      l = (0, s.Z)(e),
+      b = (0, c.e7)([f.Z], () => {
         var t;
         return (null == (t = f.Z.getGuild(e)) ? true : t.vanityURLCode) != null
       }),
-      p = (0, b.g1)(e, "Powerup Deactivate Modal"),
-      g = (0, c.e7)([d.Z], () => t.skuId !== a.If || null == s ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
+      p = (0, m.g1)(e, "Powerup Deactivate Modal"),
+      k = (0, c.e7)([d.Z], () => t.skuId !== a.If || null == l ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
         var n, r;
-        return (null == (n = t.colorStrings) ? true : n.secondaryColor) == null ? e : e + (null != (r = s[t.id]) ? r : 0)
-      }, 0), [e, t.skuId, s]);
+        return (null == (n = t.colorStrings) ? true : n.secondaryColor) == null ? e : e + (null != (r = l[t.id]) ? r : 0)
+      }, 0), [e, t.skuId, l]);
     return o.useMemo(() => {
       let e;
       switch (t.skuId) {
         case a.If:
-          e = g > 0 ? O.intl.formatToPlainString(v.default["4jSvr1"], {
+          e = k > 0 ? O.intl.formatToPlainString(v.default["4jSvr1"], {
             perk: t.title,
-            memberCount: g
+            memberCount: k
           }) : O.intl.formatToPlainString(v.default.cavtEo, {
             perk: t.title
           });
           break;
         case a.A$:
-          e = m ? (0, r.jsx)(i.xvT, {
-            color: "text-danger",
+          e = b ? (0, r.jsx)(i.xvT, {
+            color: "text-feedback-critical",
             variant: "text-sm/semibold",
             children: O.intl.string(v.default.hN75yb)
           }) : (0, r.jsx)(i.xvT, {
-            color: "text-danger",
+            color: "text-feedback-critical",
             variant: "text-sm/semibold",
             children: O.intl.string(v.default.Du91Rb)
           });
@@ -188,22 +188,22 @@ function h(e) {
             memberCount: null != n ? n : 0
           })
       }
-      return m && t.skuId === a.XW && (e = (0, r.jsxs)(r.Fragment, {
+      return b && t.skuId === a.XW && (e = (0, r.jsxs)(r.Fragment, {
         children: [e, (0, r.jsx)(i.xvT, {
-          color: "text-danger",
+          color: "text-feedback-critical",
           variant: "text-sm/semibold",
           children: p ? O.intl.string(v.default.TkNA7b) : O.intl.string(v.default.M4XL5n)
         })]
       })), e
-    }, [t, g, n, m, p])
+    }, [t, k, n, b, p])
   }(t, n);
-  return (0, m.$)(t, n, m.w.DEACTIVATE), (0, r.jsx)(T, j({
+  return (0, b.$)(t, n, b.w.DEACTIVATE), (0, r.jsx)(T, j({
     size: n.type === x.Us.LEVEL ? "md" : "sm",
     title: n.title,
     body: (() => {
       switch (n.type) {
         case x.Us.LEVEL:
-          return (0, r.jsx)(g.Z, {
+          return (0, r.jsx)(k.Z, {
             powerup: n
           });
         case x.Us.PERK:
@@ -217,5 +217,5 @@ function h(e) {
     error: y,
     isLoading: w,
     onDeactivate: E
-  }, s))
+  }, l))
 }

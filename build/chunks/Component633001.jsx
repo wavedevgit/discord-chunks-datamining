@@ -391,7 +391,7 @@ function eo() {
               return (0, a.jsx)("div", $(Q({}, e), {
                 children: (0, a.jsxs)(m.Text, {
                   variant: "text-sm/medium",
-                  color: i === _.d5.TRACK_FOCUS ? "text-default" : "text-danger",
+                  color: i === _.d5.TRACK_FOCUS ? "text-default" : "text-feedback-critical",
                   children: [(0, a.jsx)(es, {
                     pid: n,
                     tag: "span"
@@ -592,12 +592,12 @@ let ec = Chunk473749.memo(function(e) {
             className: J.panelGroup,
             children: [(0, a.jsx)(m.Text, {
               variant: "text-md/bold",
-              color: "text-danger",
+              color: "text-feedback-critical",
               children: "Untracked Running Games"
             }), t.map(e => (0, a.jsxs)(a.Fragment, {
               children: [(0, a.jsx)(m.Text, {
                 variant: "text-sm/normal",
-                color: "text-danger",
+                color: "text-feedback-critical",
                 children: "".concat(e.pid, " - ").concat(e.name, " (").concat(e.exeName, ")")
               }, e.pid), (0, a.jsx)(ec, {
                 pid: e.pid
@@ -682,7 +682,7 @@ function ef(e) {
       justify: b.Z.Justify.BETWEEN,
       children: [(0, a.jsx)(m.Text, {
         variant: "text-md/bold",
-        color: "text-danger",
+        color: "text-feedback-critical",
         children: "Breadcrumb Import"
       }), (0, a.jsx)(m.olH, {
         onClick: s
@@ -736,7 +736,7 @@ let eg = {
 
 function eb(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : y.l6.Info;
-  if (t === y.l6.Error) return "var(--text-danger)";
+  if (t === y.l6.Error) return "var(--text-feedback-critical)";
   switch (e) {
     case y.C7.NativeLegacy:
       return "var(--yellow-500)";
@@ -793,7 +793,7 @@ let ev = [{
             case y.l6.Warning:
               return "text-feedback-warning";
             case y.l6.Error:
-              return "text-danger";
+              return "text-feedback-critical";
             default:
               return "text-secondary"
           }

@@ -429,7 +429,7 @@ let w = e => {
                     })
                   }), null != Y && (0, r.jsx)(a.Text, {
                     variant: "text-xs/normal",
-                    color: "text-danger",
+                    color: "text-feedback-critical",
                     children: Y
                   }), null == Y && K && (0, r.jsxs)("div", {
                     className: E.disclaimerFooter,

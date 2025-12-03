@@ -199,11 +199,11 @@ let x = {
         dragStart: a,
         anchorTop: o,
         anchorLeft: s,
-        showEmpty: c,
+        showEmpty: u,
         padding: h,
         borderWidth: p
       } = e;
-      return (0, d.ZL)(n) ? (0, i.jsx)(u.Z, {
+      return (0, d.ZL)(n) ? (0, i.jsx)(c.Z, {
         id: n.id,
         locked: r,
         pinned: n.pinned,
@@ -217,7 +217,7 @@ let x = {
         horizontal: null != (t = n.meta.horizontal) && t,
         padding: h,
         borderWidth: p,
-        showEmpty: c
+        showEmpty: u
       }) : null
     },
     renderTitle: e => (0, i.jsx)(g.XM, {

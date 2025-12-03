@@ -237,7 +237,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           guildMetadata: D,
                           disabled: !Z
                         }), (null == W ? true : W.category) != null ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-                          color: "text-danger",
+                          color: "text-feedback-critical",
                           className: Chunk133190.error,
                           variant: "text-sm/normal",
                           children: W.category
@@ -383,7 +383,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           })]
                         }, "social-container-" + t)
                       }), (null == W ? true : W.social_links) != null ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-                        color: "text-danger",
+                        color: "text-feedback-critical",
                         variant: "text-sm/normal",
                         children: W.social_links
                       }) : null, (0, Chunk54381.jsx)(Chunk481060.Button, {
@@ -411,7 +411,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         })
                       })]
                     }), (null == W ? true : W.is_published) != null ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-                      color: "text-danger",
+                      color: "text-feedback-critical",
                       variant: "text-sm/normal",
                       children: W.is_published
                     }) : null]

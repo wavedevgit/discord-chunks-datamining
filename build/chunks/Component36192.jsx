@@ -112,7 +112,7 @@ function N() {
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         className: Chunk844642.toolsTitle,
         variant: "text-sm/normal",
-        color: "text-danger",
+        color: "text-feedback-critical",
         children: "These tools are only shown to staff users."
       }), (0, Chunk54381.jsx)(Chunk28664.u, {
         text: "Triggers mobile and email suspicious session notifications for the current user",

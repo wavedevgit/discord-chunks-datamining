@@ -869,9 +869,9 @@ function ep(e) {
   var {
     channel: t
   } = e, n = ea(e, ["channel"]);
-  let i = (0, u.cj)([k.Z, D.Z, B.Z], () => {
+  let i = (0, u.cj)([D.Z, k.Z, B.Z], () => {
     let e;
-    return null != t && null != (e = D.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, k.Z.getState()), {
+    return null != t && null != (e = k.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, D.Z.getState()), {
       invite: e,
       hideDiscriminator: B.Z.hidePersonalInformation,
       hideInstantInvites: B.Z.hideInstantInvites

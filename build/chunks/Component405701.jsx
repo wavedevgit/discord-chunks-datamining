@@ -52,7 +52,7 @@ function g(e) {
   let v = (0, i.jsxs)(c.Text, {
     className: m.cooldownText,
     variant: "text-xs/medium",
-    color: O ? "text-danger" : "text-muted",
+    color: O ? "text-feedback-critical" : "text-muted",
     tabularNumbers: true,
     children: [(0, i.jsx)(c.ANZ, {
       size: "xxs",

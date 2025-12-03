@@ -43,7 +43,7 @@ function c(e) {
       null == (e = w.current) || e.focus()
     }
   }, [f]);
-  let E = null == b ? u.intl.string(u.t.LQdCQE) : u.intl.formatToPlainString(u.t["8r6h7+"], {
+  let k = null == b ? u.intl.string(u.t.LQdCQE) : u.intl.formatToPlainString(u.t["8r6h7+"], {
     phoneNumber: b
   });
   return (0, l.jsxs)("form", {
@@ -59,7 +59,7 @@ function c(e) {
       })
     },
     children: [(0, l.jsx)(o.Z.SlideHeader, {
-      subtitle: E,
+      subtitle: k,
       onClose: h,
       headerAlignStart: g
     }), (0, l.jsxs)(o.Z.SlideContent, {

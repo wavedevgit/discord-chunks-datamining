@@ -117,7 +117,7 @@ function en(e) {
       onMembersChange: C,
       pendingPermissionOverwrites: f
     } = e,
-    [O, b] = r.useState(""),
+    [b, O] = r.useState(""),
     [E, I] = r.useState({}),
     v = r.useRef(null),
     S = (0, h.e7)([R.Z], () => R.Z.getGuild(u)),
@@ -126,7 +126,7 @@ function en(e) {
       roles: x,
       members: P,
       getRichTag: T
-    } = (0, N.Q)(S, null, j ? G.yP : (0, L.CG)(s), O, j),
+    } = (0, N.Q)(S, null, j ? G.yP : (0, L.CG)(s), b, j),
     A = y.Z.useSections({
       roles: x,
       members: P
@@ -135,8 +135,8 @@ function en(e) {
     C(E)
   }, [E, C]), null == S) ? null : (t = 0 === Object.keys(f).length ? Q.intl.string(Q.t["5Wxrcd"]) : s === Y.d4z.GUILD_CATEGORY ? Q.intl.string(Q.t["ISN+NM"]) : Q.intl.string(Q.t["fUYU+j"]), (0, i.jsx)(y.Z.Provider, {
     listRef: v,
-    query: O,
-    setQuery: b,
+    query: b,
+    setQuery: O,
     pendingAdditions: E,
     setPendingAdditions: I,
     roles: x,
@@ -728,13 +728,13 @@ class er extends Chunk473749.PureComponent {
         channelType: g,
         skuId: C,
         branchId: f,
-        isPrivate: O
+        isPrivate: b
       } = this.state, E = this.getGuildId();
       if (null != E) {
         if (null != r) t = u().values(r.permissionOverwrites), n = r.bitrate, i = r.userLimit;
         else if (g === Y.d4z.GUILD_ANNOUNCEMENT) t = (0, H.rt)(E);
         else {
-          if (O) {
+          if (b) {
             t = (0, H.oQ)(E, g, [], true);
             let e = (0, v.Tj)(p, g);
             e.length > 0 && (t = t.concat(e));
@@ -745,7 +745,7 @@ class er extends Chunk473749.PureComponent {
             let {
               row: n
             } = e;
-            null != n.id && "" !== n.id && (n.rowType === q.aC.ROLE ? t.push((0, w.A)(n.id, b.BN.ROLE)) : n.rowType === q.aC.MEMBER && t.push((0, w.A)(n.id, b.BN.MEMBER)))
+            null != n.id && "" !== n.id && (n.rowType === q.aC.ROLE ? t.push((0, w.A)(n.id, O.BN.ROLE)) : n.rowType === q.aC.MEMBER && t.push((0, w.A)(n.id, O.BN.MEMBER)))
           }))
         }
         this.setState({

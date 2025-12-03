@@ -100,18 +100,18 @@ let en = 5 * Chunk70956.Z.Millis.SECOND,
   }),
   eo = [],
   es = false,
-  eu = [],
-  ec = {};
+  ec = [],
+  eu = {};
 
 function ed(e, t, n) {
-  null == ec[e] && (ec[e] = {}), ec[e][t] = n
+  null == eu[e] && (eu[e] = {}), eu[e][t] = n
 }
 let eh = 30 * Chunk70956.Z.Millis.MINUTE,
   ep = 2 * Chunk70956.Z.Millis.MINUTE;
 
 function ef() {
   if (es && null == eo.find(e => e.status === J._1z.FOCUSED))
-    for (let e of (es = false, eo = [...eo, ...eu], eu = [], eo.length > 40 && (eo.length = 40), eo)) module.timer.start()
+    for (let e of (es = false, eo = [...eo, ...ec], ec = [], eo.length > 40 && (eo.length = 40), eo)) module.timer.start()
 }
 
 function em() {
@@ -161,7 +161,7 @@ function eO(e, t) {
           start() {
             let r = arguments.length > 0 && true !== arguments[0] ? arguments[0] : t,
               l = r ? J._1z.TIMED_OUT : J._1z.DISMISSED;
-            false === i && (i = setTimeout(() => u.Z.updateNotificationStatus(e, l), null != n ? n : en))
+            false === i && (i = setTimeout(() => c.Z.updateNotificationStatus(e, l), null != n ? n : en))
           },
           stop() {
             clearTimeout(i), i = false
@@ -175,7 +175,7 @@ function eO(e, t) {
         }
       })
     }, n),
-    o = es ? eu : [...eo],
+    o = es ? ec : [...eo],
     s = o.findIndex(e => e.priority <= n.priority);
   if (false === s ? o.push(l) : o.splice(s, 0, l), o.length > 40) {
     let e = o.pop();
@@ -198,7 +198,7 @@ function ev() {
     t = new Set,
     n = function() {
       let e = [];
-      for (let t in ec) module.push(...Object.keys(ec[exports]).map(e => e));
+      for (let t in eu) module.push(...Object.keys(eu[exports]).map(e => e));
       return module
     }(),
     i = false;
@@ -220,7 +220,7 @@ function ev() {
     if (null == o || o.id !== i) returnfalse;
     if (! function(e, t) {
         var n, i;
-        let r = null === (n = null == (i = ec[e]) ? true : i[t]) || true === n ? true : n.lastSentTimestamp;
+        let r = null === (n = null == (i = eu[e]) ? true : i[t]) || true === n ? true : n.lastSentTimestamp;
         return null == r || Date.now() - r > eh
       }(i, e)) return ed(i, e, {
       userId: e,
@@ -247,8 +247,8 @@ function ev() {
         let n = (0, V.pL)();
         return null != n && null != t.find(e => e.application_id === n.id)
       }(module) && !l) {
-      for (let t in ec) {
-        let n = ec[exports][module];
+      for (let t in eu) {
+        let n = eu[exports][module];
         null != require && (require.lastSentTimestamp = null)
       }
       i = true
@@ -360,14 +360,14 @@ let eI = new ej(Chunk570140.Z, {
             break;
           case J.mFx.STREAM_REQUEST:
             let {
-              enableRequestToStreamOverlayNotification: u
+              enableRequestToStreamOverlayNotification: c
             } = f.A.getCurrentConfig({
               guildId: e.guild_id,
               location: "showActivityNotification"
             }, {
               autoTrackExposure: false
             });
-            if (!u || null == (r = Z.Z.getApplicationActivity(s)) || r.application_id !== s) returnfalse;
+            if (!c || null == (r = Z.Z.getApplicationActivity(s)) || r.application_id !== s) returnfalse;
             a = (0, B.Z)(e, n, o, r)
         }
         if (null == a) returnfalse;
@@ -378,17 +378,17 @@ let eI = new ej(Chunk570140.Z, {
           duration: el,
           uniqueKey: "activity-".concat(t.activity.type, "-").concat(n.id, "-").concat(e.id, "-").concat(s)
         });
-        let c = new Set;
+        let u = new Set;
         return eo.filter(e => null != e.uniqueKey).sort((e, t) => t.timestamp - e.timestamp).forEach(e => {
-          null != e.uniqueKey && (c.has(e.uniqueKey) ? eg(e.id, J._1z.DISMISSED) : c.add(e.uniqueKey))
+          null != e.uniqueKey && (u.has(e.uniqueKey) ? eg(e.id, J._1z.DISMISSED) : u.add(e.uniqueKey))
         }), true
       }(o, a, s);
       if (false !== e) return e
     }
     if (k.Z.isNotificationDisabled(X.n0.TextChat) || N.Z.disableNotifications || !(0, p.eF)(a, r)) returnfalse;
-    let u = !S.Z.isSoundDisabled(_.Ay),
-      c = null != (i = v.Z.getMessage(r, a.id)) ? i : (0, h.e5)(a),
-      d = (0, Q.Z)(o, c, s, u);
+    let c = !S.Z.isSoundDisabled(_.Ay),
+      u = null != (i = v.Z.getMessage(r, a.id)) ? i : (0, h.e5)(a),
+      d = (0, Q.Z)(o, u, s, c);
     if (null == d) returnfalse;
     eO(d, {
       type: M.kL.TEXT,

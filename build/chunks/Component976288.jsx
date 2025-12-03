@@ -32,7 +32,7 @@ function E() {
   return (0, Chunk54381.jsx)(Chunk481060.Text, {
     tag: "span",
     variant: "text-xs/bold",
-    color: "text-danger",
+    color: "text-feedback-critical",
     className: Chunk912440.required,
     children: "*"
   })
@@ -191,7 +191,7 @@ function S(e) {
           guildMetadata: n
         })
       }), null != l ? (0, r.jsx)(s.Text, {
-        color: "text-danger",
+        color: "text-feedback-critical",
         variant: "text-sm/normal",
         className: N.error,
         children: l
@@ -243,7 +243,7 @@ function T(e) {
         maxTaxLength: O._0,
         placeholder: n.keywords.length < 1 ? y.intl.string(y.t.EL4Lhs) : true
       }), null != b ? (0, r.jsx)(s.Text, {
-        color: "text-danger",
+        color: "text-feedback-critical",
         variant: "text-sm/normal",
         className: N.error,
         children: b

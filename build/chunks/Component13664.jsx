@@ -1,7 +1,7 @@
 /** Chunk was on 24753 **/
 /** chunk id: 13664, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,17 +11,17 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk788931 = require("./788931.js");
 
-function c(e) {
+function o(e) {
   let {
     sendStartNotification: t,
     setSendStartNotification: n
-  } = e, c = t ? s.intl.string(s.t.xAT8lI) : s.intl.string(s.t["Y+18hV"]);
+  } = e, o = t ? s.intl.string(s.t.xAT8lI) : s.intl.string(s.t["Y+18hV"]);
   return (0, r.jsx)("div", {
-    className: o.notificationToggle,
+    className: c.notificationToggle,
     children: (0, r.jsx)(i.$q, {
       type: i.M0.INVERTED,
       size: 14,
-      className: o.__invalid_checkbox,
+      className: c.__invalid_checkbox,
       value: t,
       onChange: function() {
         n(!t)
@@ -34,7 +34,7 @@ function c(e) {
           text: s.intl.string(s.t["4A/xnW"]),
           "aria-label": s.intl.string(s.t["4A/xnW"]),
           children: (0, r.jsx)("span", {
-            children: c
+            children: o
           })
         })
       })

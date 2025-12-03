@@ -34,7 +34,7 @@ let P = e => {
       onSelectChannel: i,
       disabled: a,
       entityType: s
-    } = e, d = n === E.d4z.GUILD_STAGE_VOICE, g = (0, f.Q)(l, s), h = (0, p.sR)(t, n);
+    } = e, d = n === E.d4z.GUILD_STAGE_VOICE, g = (0, j.Q)(l, s), h = (0, p.sR)(t, n);
     return (0, r.jsx)(o.VcW, {
       label: d ? N.intl.string(N.t.S7GjDz) : N.intl.string(N.t["7RYWCP"]),
       required: true,
@@ -52,7 +52,7 @@ let P = e => {
         let n = u.Z.getChannel(e);
         if (null == n) return null;
         let l = n.type === E.d4z.GUILD_STAGE_VOICE,
-          i = (0, f.Q)(n, t),
+          i = (0, j.Q)(n, t),
           a = i ? o.gj8 : o.gjC,
           s = i ? o.ewx : o.pki;
         return (0, r.jsx)(l ? s : a, {
@@ -100,7 +100,7 @@ function I(e) {
     },
     v = (0, b.xV)(n),
     p = (0, b.xC)(c),
-    j = (0, h.xt)(n);
+    f = (0, h.xt)(n);
   return null == c || c === O.WX.NONE ? null : c === O.WX.EXTERNAL ? (0, r.jsx)(o.oil, {
     label: N.intl.string(N.t.yx785A),
     required: true,
@@ -121,7 +121,7 @@ function I(e) {
     onSelectChannel: x,
     channel: g,
     entityType: c,
-    disabled: j
+    disabled: f
   })
 }
 
@@ -130,7 +130,7 @@ function Z(e) {
     guildId: t,
     guildEvent: n,
     onChange: i
-  } = e, a = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), c = (0, v.Z)(t, true), u = (0, v.Z)(t, E.d4z.GUILD_VOICE), g = (0, v.Z)(t, E.d4z.GUILD_STAGE_VOICE), m = (0, p.sR)(t, E.d4z.GUILD_VOICE), x = (0, j.q)(a), f = null == a ? true : a.features.has(E.GuildFeatures.COMMUNITY), b = (0, h.xt)(n), y = S(i, n), C = l.useMemo(() => {
+  } = e, a = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), c = (0, v.Z)(t, true), u = (0, v.Z)(t, E.d4z.GUILD_VOICE), g = (0, v.Z)(t, E.d4z.GUILD_STAGE_VOICE), m = (0, p.sR)(t, E.d4z.GUILD_VOICE), x = (0, f.q)(a), j = null == a ? true : a.features.has(E.GuildFeatures.COMMUNITY), b = (0, h.xt)(n), y = S(i, n), C = l.useMemo(() => {
     let e = !u || 0 === m.length,
       t = u ? N.intl.string(N.t["DkY+cO"]) : N.intl.string(N.t.HeF1kV),
       n = [{
@@ -146,7 +146,7 @@ function Z(e) {
         leadingIcon: o._tJ,
         disabled: !c
       }];
-    if (f) {
+    if (j) {
       let e = !g || 0 === x.length,
         t = g ? N.intl.string(N.t["DkY+cO"]) : N.intl.string(N.t.HeF1kV);
       return [{
@@ -158,7 +158,7 @@ function Z(e) {
       }, ...n]
     }
     return n
-  }, [c, u, g, f, m.length, x.length]);
+  }, [c, u, g, j, m.length, x.length]);
   return (0, r.jsx)(o.FXm, {
     value: n.entityType,
     options: C,
@@ -177,7 +177,7 @@ function T(e) {
     isSlideReady: c = false
   } = e, {
     entityType: u
-  } = l, m = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), x = (0, j.q)(m), h = (0, s.e7)([g.Z], () => g.Z.can(E.Plq.MANAGE_CHANNELS, m)), v = null == m ? true : m.features.has(E.GuildFeatures.COMMUNITY), p = S(a, l), f = v && u !== O.WX.EXTERNAL && 0 === x.length && h && null != u;
+  } = l, m = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), x = (0, f.q)(m), h = (0, s.e7)([g.Z], () => g.Z.can(E.Plq.MANAGE_CHANNELS, m)), v = null == m ? true : m.features.has(E.GuildFeatures.COMMUNITY), p = S(a, l), j = v && u !== O.WX.EXTERNAL && 0 === x.length && h && null != u;
   return (0, r.jsxs)("div", {
     className: C.container,
     children: [(0, r.jsxs)(o.Kqy, {
@@ -199,7 +199,7 @@ function T(e) {
       guildEvent: l,
       isFocusReady: c,
       onChange: a
-    }), f ? (0, r.jsx)(y.Z, {
+    }), j ? (0, r.jsx)(y.Z, {
       onClick: () => {
         p(O.WX.STAGE_INSTANCE), (0, o.ZDy)(async () => {
           let {

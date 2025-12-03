@@ -39,7 +39,7 @@ function m(t) {
   let {
     onClose: n,
     transitionState: e
-  } = t, [o, m] = s.useState(""), [j, p] = s.useState(""), [v, N] = s.useState(null), [_, g] = s.useState(false), [C, b] = s.useState("DOMAIN"), f = () => {
+  } = t, [o, m] = s.useState(""), [j, p] = s.useState(""), [v, N] = s.useState(null), [_, g] = s.useState(false), [b, f] = s.useState("DOMAIN"), C = () => {
     g(true), N(null), a.tn.post({
       url: d.ANM.CONNECTION(d.ABu.DOMAIN, o),
       body: {},
@@ -48,7 +48,7 @@ function m(t) {
       n()
     }).catch(t => {
       var n, e, i, s, a, l, r;
-      (null == (n = t.body) ? true : n.proof) && "DOMAIN" === C ? (p(t.body.proof), b("PROOF_DNS")) : N((null == (l = t.body) || null == (a = l.errors) || null == (s = a.domain) || null == (i = s._errors) || null == (e = i[0]) ? true : e.message) || (null == (r = t.body) ? true : r.message) || t.message)
+      (null == (n = t.body) ? true : n.proof) && "DOMAIN" === b ? (p(t.body.proof), f("PROOF_DNS")) : N((null == (l = t.body) || null == (a = l.errors) || null == (s = a.domain) || null == (i = s._errors) || null == (e = i[0]) ? true : e.message) || (null == (r = t.body) ? true : r.message) || t.message)
     }).finally(() => {
       g(false)
     })
@@ -69,13 +69,13 @@ function m(t) {
         onClick: n
       })]
     }), (0, i.jsxs)(l.MyZ, {
-      activeSlide: C,
+      activeSlide: b,
       width: 440,
       children: [(0, i.jsx)(l.Mi4, {
         id: "DOMAIN",
         children: (0, i.jsxs)("form", {
           onSubmit: t => {
-            t.preventDefault(), f()
+            t.preventDefault(), C()
           },
           children: [(0, i.jsxs)(l.hzk, {
             className: u.content,
@@ -149,7 +149,7 @@ function m(t) {
             children: x.intl.string(x.t.CUBxDB)
           }), null != v && (0, i.jsx)(l.Text, {
             variant: "text-sm/normal",
-            color: "text-danger",
+            color: "text-feedback-critical",
             className: u.text,
             children: v
           })]
@@ -160,7 +160,7 @@ function m(t) {
             variant: "secondary",
             text: x.intl.string(x.t["13/7kX"]),
             onClick: () => {
-              b("DOMAIN"), N(null)
+              f("DOMAIN"), N(null)
             }
           }), (0, i.jsxs)("div", {
             className: u.footerInner,
@@ -171,14 +171,14 @@ function m(t) {
                 variant: "secondary",
                 text: x.intl.string(x.t.CkfdNx),
                 onClick: () => {
-                  b("PROOF_HTTP"), N(null)
+                  f("PROOF_HTTP"), N(null)
                 }
               })
             }), (0, i.jsx)(l.Button, {
               variant: "primary",
               text: x.intl.string(x.t["13ofGu"]),
               loading: _,
-              onClick: f
+              onClick: C
             })]
           })]
         })]
@@ -201,7 +201,7 @@ function m(t) {
             })]
           }), null != v && (0, i.jsx)(l.Text, {
             variant: "text-sm/normal",
-            color: "text-danger",
+            color: "text-feedback-critical",
             className: u.text,
             children: v
           })]
@@ -212,7 +212,7 @@ function m(t) {
             variant: "secondary",
             text: x.intl.string(x.t["13/7kX"]),
             onClick: () => {
-              b("DOMAIN"), N(null)
+              f("DOMAIN"), N(null)
             }
           }), (0, i.jsxs)("div", {
             className: u.footerInner,
@@ -223,14 +223,14 @@ function m(t) {
                 variant: "secondary",
                 text: x.intl.string(x.t.RhJMVQ),
                 onClick: () => {
-                  b("PROOF_DNS"), N(null)
+                  f("PROOF_DNS"), N(null)
                 }
               })
             }), (0, i.jsx)(l.Button, {
               variant: "primary",
               text: x.intl.string(x.t["13ofGu"]),
               loading: _,
-              onClick: f
+              onClick: C
             })]
           })]
         })]

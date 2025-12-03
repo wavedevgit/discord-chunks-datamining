@@ -26,7 +26,7 @@ var Chunk13245 = require("./13245.js"),
 
 function b(e, t, n, b) {
   var x;
-  if (p.Z.isNotificationDisabled(E.n0.TextChat)) return (0, u.GN)(c.Ay, c.yk), null;
+  if (p.Z.isNotificationDisabled(E.n0.TextChat)) return (0, c.GN)(u.Ay, u.yk), null;
   let {
     icon: j,
     title: I,
@@ -60,7 +60,7 @@ function b(e, t, n, b) {
       onSend: () => N("send")
     }) : null,
     onNotificationShow: () => {
-      b && (0, u.GN)(c.Ay, c.yk), Z()
+      b && (0, c.GN)(u.Ay, u.yk), Z()
     },
     onNotificationClick: () => {
       let n = f.Z.getTargetPID();

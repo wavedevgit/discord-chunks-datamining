@@ -23,9 +23,9 @@ function u(e) {
     entityType: p,
     onJoinClick: f,
     onRsvpClick: h,
-    onStartClick: g,
-    onInviteClick: m,
-    onEndClick: v,
+    onStartClick: m,
+    onInviteClick: v,
+    onEndClick: g,
     onJoinGuildClick: b,
     isJoined: x = false,
     channel: C
@@ -55,7 +55,7 @@ function u(e) {
       "aria-label": d.intl.string(d.t.WqhZss)
     }
   }({
-    onInviteClick: m,
+    onInviteClick: v,
     canInvite: u,
     isChannelPublic: _,
     channel: C
@@ -93,15 +93,15 @@ function u(e) {
       disabled: t
     })
   }
-  return n || null == g || I.push({
+  return n || null == m || I.push({
     variant: "primary",
     size: "sm",
-    onClick: g,
+    onClick: m,
     text: d.intl.string(d.t.I0v0Qv)
-  }), n && null != v && I.push({
+  }), n && null != g && I.push({
     variant: "secondary",
     size: "sm",
-    onClick: v,
+    onClick: g,
     text: d.intl.string(d.t.qaYzPA)
   }), I
 }

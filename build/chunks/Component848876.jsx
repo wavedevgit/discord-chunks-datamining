@@ -16,7 +16,7 @@ function u(t) {
     onClose: n,
     guildName: u,
     transitionState: c
-  } = t, [d, m] = i.useState(""), [p, f] = i.useState(null), x = i.useMemo(() => [{
+  } = t, [d, f] = i.useState(""), [m, p] = i.useState(null), x = i.useMemo(() => [{
     text: l.intl.string(l.t["ETE/oC"]),
     onClick: n,
     variant: "secondary"
@@ -27,7 +27,7 @@ function u(t) {
   }], [n]);
   return (0, r.jsx)("form", {
     onSubmit: function(t) {
-      if (t.preventDefault(), d.toLowerCase() !== u.toLowerCase()) return void f(l.intl.string(l.t["c2/DS/"]));
+      if (t.preventDefault(), d.toLowerCase() !== u.toLowerCase()) return void p(l.intl.string(l.t["c2/DS/"]));
       null == e || e(), n()
     },
     children: (0, r.jsxs)(o.u_l, {
@@ -46,13 +46,13 @@ function u(t) {
         label: l.intl.string(l.t.abprOC),
         value: d,
         autoComplete: "off",
-        onChange: m,
+        onChange: f,
         autoFocus: true
-      }), null != p && "" !== p ? (0, r.jsx)(a.Text, {
-        color: "text-danger",
+      }), null != m && "" !== m ? (0, r.jsx)(a.Text, {
+        color: "text-feedback-critical",
         variant: "text-xs/normal",
         className: s.error,
-        children: p
+        children: m
       }) : null]
     })
   })

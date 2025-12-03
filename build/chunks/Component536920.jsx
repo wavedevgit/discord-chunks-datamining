@@ -25,14 +25,14 @@ function y(t) {
     onClose: e,
     transitionState: n,
     clientSettingType: y,
-    gameId: C
-  } = t, [f, k] = i.useState("unreported"), [b, w] = i.useState(""), [S, j] = i.useState(false), [Z, M] = i.useState(false), [H, P] = i.useState(false), [F, R] = i.useState(false), D = (0, r.e7)([m.Z, c.ZP], () => {
+    gameId: f
+  } = t, [k, C] = i.useState("unreported"), [b, w] = i.useState(""), [S, j] = i.useState(false), [Z, M] = i.useState(false), [H, P] = i.useState(false), [F, R] = i.useState(false), D = (0, r.e7)([m.Z, c.ZP], () => {
     var t;
-    let e = null != C ? C : null == (t = c.ZP.getCurrentGameForAnalytics()) ? true : t.id;
+    let e = null != f ? f : null == (t = c.ZP.getCurrentGameForAnalytics()) ? true : t.id;
     return null == e ? null : m.Z.getDetectableGame(e)
-  }), E = (0, r.e7)([g.default], () => {
+  }), E = (0, r.e7)([h.default], () => {
     var t;
-    let e = null != (t = null === g.default || true === g.default ? true : g.default.getMostRecentOverlayRenderMethod()) ? t : true;
+    let e = null != (t = null === h.default || true === h.default ? true : h.default.getMostRecentOverlayRenderMethod()) ? t : true;
     return null != e ? v.gl[e] : true
   }), L = i.useMemo(() => {
     let t = {
@@ -51,12 +51,12 @@ function y(t) {
     }))
   }, []), O = i.useCallback(async () => {
     var t, n, a;
-    if ("unreported" === f && 0 === b.length) {
+    if ("unreported" === k && 0 === b.length) {
       P(true), await (0, o._v)(100), P(false), R(true);
       return
     }
-    j(true), await _.default.track(h.rMx.OVERLAY_DISABLED_SURVEY, {
-      reason: f,
+    j(true), await _.default.track(g.rMx.OVERLAY_DISABLED_SURVEY, {
+      reason: k,
       comment: b,
       client_setting_type: y,
       application_id: null == D ? true : D.id,
@@ -64,9 +64,9 @@ function y(t) {
       most_recent_overlay_render_method: E,
       hardware_display_count: null != (a = await (null === u.Z || true === u.Z || null == (n = u.Z.hardware) || null == (t = n.getDisplayCount) ? true : t.call(n))) ? a : null
     }), await (0, o._v)(1e3), j(false), M(true), await (0, o._v)(1500), e()
-  }, [f, b, y, null == D ? true : D.id, null == D ? true : D.name, E, e]);
+  }, [k, b, y, null == D ? true : D.id, null == D ? true : D.name, E, e]);
   (0, d.ZP)(() => {
-    _.default.track(h.rMx.OPEN_MODAL, {
+    _.default.track(g.rMx.OPEN_MODAL, {
       type: "overlay_disabled_questionnaire_modal"
     })
   });
@@ -96,14 +96,14 @@ function y(t) {
         className: x.radioHeader,
         children: (0, a.jsx)(s.Text, {
           variant: "text-sm/semibold",
-          color: F ? "text-danger" : "text-muted",
+          color: F ? "text-feedback-critical" : "text-muted",
           children: p.intl.string(p.t.yhUvdd)
         })
       }), (0, a.jsx)(s.FXm, {
-        value: f,
+        value: k,
         options: L,
         onChange: t => {
-          k(t), R(false), P(false)
+          C(t), R(false), P(false)
         }
       })]
     }), (0, a.jsxs)("div", {

@@ -127,7 +127,7 @@ function y(e) {
     H(e)
   }, [H]), L = i.useCallback(e => {
     _(e)
-  }, [_]), P = i.useCallback(() => {
+  }, [_]), I = i.useCallback(() => {
     null == o && null == r && y(0, null), Z(false)
   }, [r, o, y]);
   return (0, l.jsx)(d.v2r, {
@@ -139,7 +139,7 @@ function y(e) {
       children: S ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(d.sNh, {
           id: "back",
-          action: P,
+          action: I,
           render: e => (0, l.jsxs)("span", h(f({}, e), {
             className: p.nagivateBackContainer,
             children: [(0, l.jsx)(d.V7D, {

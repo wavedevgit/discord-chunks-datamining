@@ -145,7 +145,7 @@ function Z() {
     }, [require, s, Chunk120356]), Chunk473749.useEffect(() => () => {
       S.reset(), S.setError(null)
     }, []), require) return null != exports ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-    color: "text-danger",
+    color: "text-feedback-critical",
     variant: "text-sm/normal",
     children: exports.message
   }) : (0, Chunk54381.jsx)(Chunk481060.$jN, {
@@ -159,7 +159,7 @@ function Z() {
       guildTemplate: s
     }), Chunk512722 ? (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk197571.marginTop8,
-      color: "text-danger",
+      color: "text-feedback-critical",
       variant: "text-sm/normal",
       children: exports.getAnyErrorMessage()
     }) : null]

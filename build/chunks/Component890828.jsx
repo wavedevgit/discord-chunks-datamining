@@ -62,8 +62,8 @@ let P = e => [e.userId, ... function(e) {
     let {
       channel: t,
       query: n
-    } = e, [l] = (0, o.e7)([C.Z], () => [C.Z.getVoiceStatesForChannel(t.id), C.Z.getVoiceStateVersion()], [t.id], N.Q), [a, c] = r.useState([]);
-    (0, O.BO)(n, Object.values(l), c, D);
+    } = e, [l] = (0, o.e7)([C.Z], () => [C.Z.getVoiceStatesForChannel(t.id), C.Z.getVoiceStateVersion()], [t.id], N.Q), [a, u] = r.useState([]);
+    (0, O.BO)(n, Object.values(l), u, D);
     let d = (0, o.Wu)([C.Z, I.default, E.Z, j.Z], () => Object.values(C.Z.getVoiceStatesForChannel(t.id)).map(e => I.default.getUser(e.userId)).filter(Z.lm).sort((e, t) => {
         var i, r, l, o;
         if (a.length > 0 && "" !== n.trim()) {
@@ -78,7 +78,7 @@ let P = e => [e.userId, ... function(e) {
       users: d,
       guildId: h,
       maxUsers: Math.min(p, 4),
-      size: u.EFr.SIZE_24,
+      size: c.EFr.SIZE_24,
       overflowCountClassName: _.overflowCount,
       overflowCountVariant: "text-xs/semibold",
       disableUserPopout: true,
@@ -94,12 +94,12 @@ let P = e => [e.userId, ... function(e) {
       case w.d4z.DM:
         return (0, i.jsx)(f.je, {
           channel: n,
-          size: u.EFr.SIZE_32
+          size: c.EFr.SIZE_32
         });
       case w.d4z.GROUP_DM:
         return (0, i.jsx)(f.ge, {
           channel: n,
-          size: u.EFr.SIZE_32
+          size: c.EFr.SIZE_32
         });
       default:
         return null
@@ -129,8 +129,8 @@ let P = e => [e.userId, ... function(e) {
       onMouseOver: h,
       onMouseLeave: p,
       query: f
-    } = e, m = (0, o.e7)([v.Z], () => v.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), y = (0, o.e7)([b.Z], () => b.Z.getGuild(g), [g]), O = (0, d.KS)(m, y), E = (null == l ? true : l.id) === n, S = E ? "text-feedback-positive" : r ? "interactive-active" : "text-muted", x = E ? u.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? u.TVs.colors.INTERACTIVE_ACTIVE : u.TVs.colors.ICON_MUTED;
-    return null == m ? null : (0, i.jsxs)(u.kL8, {
+    } = e, m = (0, o.e7)([v.Z], () => v.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), y = (0, o.e7)([b.Z], () => b.Z.getGuild(g), [g]), O = (0, d.KS)(m, y), E = (null == l ? true : l.id) === n, S = E ? "text-feedback-positive" : r ? "interactive-active" : "text-muted", x = E ? c.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? c.TVs.colors.INTERACTIVE_ACTIVE : c.TVs.colors.ICON_MUTED;
+    return null == m ? null : (0, i.jsxs)(c.kL8, {
       className: a()(_.channelItemContainer, r && _.channelItemHighlighted),
       "aria-label": m.name,
       onClick: () => s(n),
@@ -149,13 +149,13 @@ let P = e => [e.userId, ... function(e) {
             color: x,
             size: "xs",
             className: _.channelIcon
-          }) : true, (0, i.jsx)(u.Text, {
+          }) : true, (0, i.jsx)(c.Text, {
             variant: E ? "text-sm/semibold" : "text-sm/medium",
             color: S,
             className: _.channelItemNameText,
-            children: (0, c.F6)(m, I.default, j.Z)
+            children: (0, u.F6)(m, I.default, j.Z)
           })]
-        }), (0, i.jsx)(u.Text, {
+        }), (0, i.jsx)(c.Text, {
           variant: E ? "text-xs/semibold" : "text-xs/medium",
           color: S,
           children: null != (t = null == y ? true : y.name) ? t : m.name
@@ -176,7 +176,7 @@ let P = e => [e.userId, ... function(e) {
     } = e;
     return (0, i.jsx)("div", {
       className: _.emptyChannelItem,
-      children: (0, i.jsx)(u.Text, {
+      children: (0, i.jsx)(c.Text, {
         variant: "text-md/normal",
         color: "text-primary",
         children: t
@@ -191,16 +191,16 @@ let P = e => [e.userId, ... function(e) {
       onSelect: a,
       hasQuery: o,
       query: s,
-      scrollable: c = true
+      scrollable: u = true
     } = e, [d, h] = r.useState(null), p = e => {
       h(e)
     }, f = () => {
       h(null)
-    }, m = c ? u.zJl : "div";
+    }, m = u ? c.zJl : "div";
     return (0, i.jsxs)("div", {
       children: [(0, i.jsx)("div", {
         className: _.recentChannelsMenuHeader,
-        children: (0, i.jsx)(u.Text, {
+        children: (0, i.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "text-muted",
           children: t
@@ -261,7 +261,7 @@ function z(e) {
       recentVoiceChannelIds: t
     }
   }();
-  return l.length > 0 || s.length > 0 ? (0, i.jsxs)(u.zJl, {
+  return l.length > 0 || s.length > 0 ? (0, i.jsxs)(c.zJl, {
     className: a()(_.channelList, _.channelListWrapper),
     children: [l.length > 0 && (0, i.jsx)(V, {
       sectionHeader: T.intl.string(T.t.lnk2NQ),
@@ -295,7 +295,7 @@ function W(e) {
     currentVoiceChannel: l,
     onClose: a,
     onSelect: s
-  } = e, c = (0, o.Wu)([b.Z, S.ZP, C.Z, j.Z, x.Z], () => b.Z.getGuildsArray().reduce((e, t) => [...e, ...S.ZP.getChannels(t.id)[S.Zb].filter(e => x.Z.can(w.Plq.VIEW_CHANNEL, e.channel) && x.Z.can(w.Plq.CONNECT, e.channel)).map(e => {
+  } = e, u = (0, o.Wu)([b.Z, S.ZP, C.Z, j.Z, x.Z], () => b.Z.getGuildsArray().reduce((e, t) => [...e, ...S.ZP.getChannels(t.id)[S.Zb].filter(e => x.Z.can(w.Plq.VIEW_CHANNEL, e.channel) && x.Z.can(w.Plq.CONNECT, e.channel)).map(e => {
     let {
       channel: t
     } = e;
@@ -304,7 +304,7 @@ function W(e) {
     channel: e,
     voiceStates: Object.values(C.Z.getVoiceStatesForChannel(e.id)).filter(e => j.Z.isFriend(e.userId))
   })), []), [d, h] = r.useState(""), [p, f] = r.useState([]);
-  (0, O.BO)(d, c, f, A);
+  (0, O.BO)(d, u, f, A);
   let m = r.useCallback(e => {
       "Escape" === e.key && a()
     }, [a]),
@@ -348,7 +348,7 @@ function W(e) {
   }, I), n = n = {
     children: [(0, i.jsx)("div", {
       className: _.searchBarContainer,
-      children: (0, i.jsx)(u.E1j, {
+      children: (0, i.jsx)(c.E1j, {
         autoFocus: true,
         query: d,
         placeholder: T.intl.string(T.t.UyA6ST),

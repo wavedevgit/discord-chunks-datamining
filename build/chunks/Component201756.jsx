@@ -111,11 +111,11 @@ function N(e) {
   let {
     guildId: t,
     currentPagedMembers: n
-  } = e, i = l.useRef(null), a = l.useRef(null), N = l.useRef(null), R = l.useRef(null), L = l.useRef(null), P = (0, c.e7)([f.Z], () => f.Z.getSearchStateByGuildId(t), [t], s()), I = (0, c.e7)([m.Z, C.Z], () => m.Z.can(O.Plq.MANAGE_GUILD, C.Z.getGuild(t)), [t]), {
+  } = e, i = l.useRef(null), a = l.useRef(null), N = l.useRef(null), R = l.useRef(null), L = l.useRef(null), I = (0, c.e7)([f.Z], () => f.Z.getSearchStateByGuildId(t), [t], s()), P = (0, c.e7)([m.Z, C.Z], () => m.Z.can(O.Plq.MANAGE_GUILD, C.Z.getGuild(t)), [t]), {
     selectedUserIds: V,
     addUsers: M,
     clearSelection: E
-  } = (0, h.Z)(t), T = P.requireUnusualDmActivity || P.requireCommunicationDisabled || P.requireUnusualAccountActivity || P.requireUsernameQuarantined, k = P.selectedRoleIds.size > 0, A = null != P.selectedJoinDateOption.afterDate, U = P.selectedSort === b.d$.ORDER_BY_GUILD_JOINED_AT_ASC, F = null != P.selectedAccountAgeOption.afterDate, B = P.selectedSort === b.d$.ORDER_BY_USER_ID_ASC || P.selectedSort === b.d$.ORDER_BY_USER_ID_DESC, q = null != P.selectedSourceInviteCode && "" !== P.selectedSourceInviteCode, G = null != P.selectedJoinSourceType, z = q || G, Y = (0, p.xC)(t), W = l.useMemo(() => n.filter(e => (0, p.rX)(t, Y, e)), [Y, n, t]), Q = W.length > 0, K = 0 === W.filter(e => !V.has(e)).length, J = l.useCallback(() => {
+  } = (0, h.Z)(t), T = I.requireUnusualDmActivity || I.requireCommunicationDisabled || I.requireUnusualAccountActivity || I.requireUsernameQuarantined, k = I.selectedRoleIds.size > 0, A = null != I.selectedJoinDateOption.afterDate, U = I.selectedSort === b.d$.ORDER_BY_GUILD_JOINED_AT_ASC, F = null != I.selectedAccountAgeOption.afterDate, B = I.selectedSort === b.d$.ORDER_BY_USER_ID_ASC || I.selectedSort === b.d$.ORDER_BY_USER_ID_DESC, q = null != I.selectedSourceInviteCode && "" !== I.selectedSourceInviteCode, G = null != I.selectedJoinSourceType, z = q || G, Y = (0, p.xC)(t), W = l.useMemo(() => n.filter(e => (0, p.rX)(t, Y, e)), [Y, n, t]), Q = W.length > 0, K = 0 === W.filter(e => !V.has(e)).length, J = l.useCallback(() => {
     Q && (K ? E() : M(W))
   }, [Q, K, E, M, W]);
   return (0, r.jsx)("thead", {
@@ -137,7 +137,7 @@ function N(e) {
         })
       }), (0, r.jsx)(D, {
         label: H.intl.string(H.t.Es7n9c)
-      }), I ? (0, r.jsxs)(r.Fragment, {
+      }), P ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.yRy, {
           targetElementRef: i,
           animation: d.yRy.Animation.FADE,
@@ -193,7 +193,7 @@ function N(e) {
           label: H.intl.string(H.t.sPph4O),
           className: w.smallCol
         })]
-      }), I ? (0, r.jsx)(d.yRy, {
+      }), P ? (0, r.jsx)(d.yRy, {
         targetElementRef: N,
         animation: d.yRy.Animation.FADE,
         position: "bottom",
@@ -215,7 +215,7 @@ function N(e) {
             className: w.smallCol
           }, n))
         }
-      }) : I && (0, r.jsx)(D, {
+      }) : P && (0, r.jsx)(D, {
         label: H.intl.string(H.t["yn0w1+"]),
         className: w.smallCol
       }), (0, r.jsx)(d.yRy, {

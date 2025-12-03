@@ -19,18 +19,18 @@ function p(t) {
     guild: p,
     onClose: b,
     hideColors: g
-  } = t, [y, f] = a.useState(p.verificationLevel), [_, O] = a.useState(null), m = p.features.has(u.GuildFeatures.COMMUNITY), v = (0, l.IF)(m, g).filter(t => !t.disabled), j = a.useCallback(async () => {
+  } = t, [f, y] = a.useState(p.verificationLevel), [_, O] = a.useState(null), m = p.features.has(u.GuildFeatures.COMMUNITY), v = (0, l.IF)(m, g).filter(t => !t.disabled), j = a.useCallback(async () => {
     null != _ && O(null);
     try {
       await c.Z.saveGuild(p.id, {
-        verificationLevel: y
+        verificationLevel: f
       }), c.Z.updateGuild({
-        verificationLevel: y
+        verificationLevel: f
       }), b()
     } catch (t) {
       O(new o.Hx(t).getAnyErrorMessage())
     }
-  }, [_, p.id, y, b]);
+  }, [_, p.id, f, b]);
   return (0, n.jsx)(s.Z, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var r = null != arguments[e] ? arguments[e] : {},
@@ -55,9 +55,9 @@ function p(t) {
     onConfirm: j,
     onCancel: b,
     children: (0, n.jsx)(i.FXm, {
-      value: y,
+      value: f,
       options: v,
-      onChange: t => f(t)
+      onChange: t => y(t)
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
     var r = Object.keys(t);

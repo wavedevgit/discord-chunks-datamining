@@ -61,7 +61,7 @@ function y(e) {
             variant: "text-sm/semibold",
             tabularNumbers: true,
             "aria-hidden": true,
-            color: G ? "text-default" : "text-danger",
+            color: G ? "text-default" : "text-feedback-critical",
             children: L
           })
         })]

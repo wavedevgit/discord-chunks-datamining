@@ -24,8 +24,8 @@ function O(e, t, n) {
   if (p.Z.isNotificationDisabled(m.n0.NowPlayingNotification)) return null;
   let E = d.default.getUser(e);
   if (null == E) return null;
-  let v = c.Z.getCurrentlySelectedChannelId(),
-    S = u.Z.getChannel(v),
+  let v = u.Z.getCurrentlySelectedChannelId(),
+    S = c.Z.getChannel(v),
     b = a.Z.getApplication(t),
     x = o.ZP.getRunningGames().find(e => e.id === t),
     j = null != (O = null == x ? true : x.name) ? O : null == b ? true : b.name,

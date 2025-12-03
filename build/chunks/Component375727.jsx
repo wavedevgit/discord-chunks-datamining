@@ -291,7 +291,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
           children: [null != B && (0, l.jsx)(I.H4, {
             error: B,
             variant: "text-sm/normal",
-            color: "text-danger"
+            color: "text-feedback-critical"
           }), (0, l.jsx)(u.Button, {
             text: M.intl.string(M.t.Q7UP6F),
             onClick: ei,

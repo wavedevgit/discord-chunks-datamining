@@ -27,7 +27,7 @@ class l extends Chunk473749.PureComponent {
   render() {
     return null != this.state.error ? (0, Chunk54381.jsx)("div", {
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-        color: "text-danger",
+        color: "text-feedback-critical",
         variant: "text-md/normal",
         className: Chunk534924.labelSpacing,
         children: "Error rendering component. Check console for more information on the error."

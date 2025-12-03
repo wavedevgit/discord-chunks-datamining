@@ -83,7 +83,7 @@ let k = Chunk473749.memo(function(e) {
       locked: a,
       channel: o,
       width: s,
-      height: c,
+      height: u,
       shouldDisplay: d
     } = e, h = r.useCallback((e, r) => {
       let l = e.user;
@@ -91,7 +91,7 @@ let k = Chunk473749.memo(function(e) {
         type: x.Qu.CAMERA,
         value: x.bk.SETTINGS_OPENED,
         userId: null == l ? true : l.id
-      }), (0, u.jW)(r, async () => {
+      }), (0, c.jW)(r, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
@@ -121,8 +121,8 @@ let k = Chunk473749.memo(function(e) {
     }, [m, d]);
     let g = r.useMemo(() => ({
       width: s,
-      height: c
-    }), [s, c]);
+      height: u
+    }), [s, u]);
     return (0, i.jsx)(i.Fragment, {
       children: l.map(e => (0, i.jsx)(k, {
         participant: e,
@@ -147,30 +147,30 @@ let k = Chunk473749.memo(function(e) {
       participants: n,
       participantsVersion: l,
       locked: o,
-      widget: u,
-      channel: c,
+      widget: c,
+      channel: u,
       width: d,
       height: h,
       showEmpty: p = true,
       containerRef: f
-    } = e, m = "boolean" != typeof u.meta.horizontal || u.meta.horizontal, g = n.length > 0 && null != t && null != c && (!o || u.pinned);
+    } = e, m = "boolean" != typeof c.meta.horizontal || c.meta.horizontal, g = n.length > 0 && null != t && null != u && (!o || c.pinned);
     r.useEffect(() => {
       (0, j.m3)({
         locked: o,
-        pinned: u.pinned,
-        widget: u.type,
+        pinned: c.pinned,
+        widget: c.type,
         isPreviewingInGame: false
       }, g)
-    }, [o, u, g]);
+    }, [o, c, g]);
     let y = r.useMemo(() => ({
-        opacity: u.opacity
-      }), [u.opacity]),
+        opacity: c.opacity
+      }), [c.opacity]),
       O = r.useMemo(() => a()({
         [A.videoList]: true,
         [A.vertical]: !m,
         [A.hidden]: !g && o
       }), [m, g, o]);
-    return 0 !== n.length || o ? null == c ? null : (0, i.jsx)("div", {
+    return 0 !== n.length || o ? null == u ? null : (0, i.jsx)("div", {
       ref: f,
       className: O,
       style: y,
@@ -178,7 +178,7 @@ let k = Chunk473749.memo(function(e) {
         context: t,
         participants: n,
         locked: o,
-        channel: c,
+        channel: u,
         width: d,
         height: h,
         shouldDisplay: g,
@@ -211,25 +211,25 @@ let k = Chunk473749.memo(function(e) {
         height: Math.max(n.height, w.vZ),
         width: Math.min(n.width, 2 * w.mo + o)
       },
-      u = {
+      c = {
         maxWidth: .75 * l.maxX,
         maxHeight: .75 * l.maxY
       };
-    return (0, Z.hJ)(s, u)
+    return (0, Z.hJ)(s, c)
   };
 
 function z(e) {
   var t, n, l, a;
   let s = (0, o.e7)([v.Z, O.Z], () => O.Z.getChannel(v.Z.getVoiceChannelId())),
-    u = 2 * e.padding + 2 * e.borderWidth,
+    c = 2 * e.padding + 2 * e.borderWidth,
     p = null == s ? true : s.id,
     [f, g] = (0, o.e7)([h.Z], () => null == p ? [
       [], 0
     ] : [h.Z.getVideoParticipants(p), h.Z.getParticipantsVersion(p)], [p], b.Q),
     E = "boolean" != typeof e.widget.meta.horizontal || e.widget.meta.horizontal,
     {
-      width: S = e.width - u,
-      height: x = e.height - u,
+      width: S = e.width - c,
+      height: x = e.height - c,
       ref: j
     } = (0, d.ZP)(e.locked, e.widget.pinned),
     {
@@ -250,12 +250,12 @@ function z(e) {
         containerHeight: x,
         containerWidth: S
       },
-      sizeOffset: u,
+      sizeOffset: c,
       padding: e.padding,
       borderWidth: e.borderWidth,
       containerSpecs: {
-        maxX: null != (t = null == N ? true : N.width) ? t : e.width - u,
-        maxY: null != (n = null == N ? true : N.height) ? n : e.height - u,
+        maxX: null != (t = null == N ? true : N.width) ? t : e.width - c,
+        maxY: null != (n = null == N ? true : N.height) ? n : e.height - c,
         minX: 0,
         minY: 0
       },
@@ -292,7 +292,7 @@ function z(e) {
       if (!(t && e.height > e.width || !t && e.width > e.height)) return;
       let {
         width: s,
-        height: u
+        height: c
       } = V(R(D({}, o), {
         widget: l,
         operation: I.B.RESIZE_NORTH,
@@ -305,12 +305,12 @@ function z(e) {
           height: i
         }
       }));
-      (0, c.nv)({
+      (0, u.nv)({
         widgetId: n,
         size: {
           fixed: true,
           width: s,
-          height: u
+          height: c
         }
       })
     }, [t])

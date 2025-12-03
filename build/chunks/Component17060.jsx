@@ -271,7 +271,7 @@ function K(e) {
         returntrue
       }),
       j = O.Z.getRecentActions(10),
-      D = b.Z.getRecentExperimentBuckets(v.Z.getAllExperimentAssignments(), new Date(Date.now() - 7776e6)),
+      D = N.Z.getRecentExperimentBuckets(v.Z.getAllExperimentAssignments(), new Date(Date.now() - 7776e6)),
       C = (null == c ? true : c.fullscreenHistory) == null ? null : Object.entries(c.fullscreenHistory).sort((e, t) => {
         let [n] = e, [l] = t;
         return Number(l) - Number(n)
@@ -299,7 +299,7 @@ function K(e) {
         recent_experiment_buckets: JSON.stringify(D),
         location: _
       };
-    await N.default.track(T.rMx.OVERLAY_BUG_REPORT, M), await (0, s._v)(1e3), et(false), null == i || i(), (0, d.ZDy)(async () => {
+    await b.default.track(T.rMx.OVERLAY_BUG_REPORT, M), await (0, s._v)(1e3), et(false), null == i || i(), (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("86974").then(n.bind(n, 251889));
@@ -326,7 +326,7 @@ function K(e) {
     })
   };
   return (0, g.ZP)(() => {
-    N.default.track(T.rMx.OPEN_MODAL, {
+    b.default.track(T.rMx.OPEN_MODAL, {
       type: "overlay_bug_reporter_modal",
       location: _
     })
@@ -354,7 +354,7 @@ function K(e) {
           intensity: 1.5,
           children: (0, l.jsx)(d.Text, {
             variant: "text-md/medium",
-            color: er ? "text-danger" : "text-primary",
+            color: er ? "text-feedback-critical" : "text-primary",
             children: D.intl.string(D.t.Trx7eJ)
           })
         }), (0, l.jsx)(d.PhF, {
@@ -367,7 +367,7 @@ function K(e) {
           serialize: e => e
         }), er && (0, l.jsx)(d.Text, {
           variant: "text-xs/semibold",
-          color: "text-danger",
+          color: "text-feedback-critical",
           children: D.intl.string(D.t["5cqa9J"])
         })]
       }), (0, l.jsxs)("div", {

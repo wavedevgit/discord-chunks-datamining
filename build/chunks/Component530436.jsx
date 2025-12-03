@@ -45,7 +45,7 @@ function g(e) {
   return (0, i.jsx)(s.Text, {
     className: c.errorMessage,
     variant: "text-xs/normal",
-    color: "text-danger",
+    color: "text-feedback-critical",
     children: m
   })
 }

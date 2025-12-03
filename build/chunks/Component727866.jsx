@@ -16,7 +16,7 @@ let o = (e, t) => {
       alignItems: "center"
     };
     return (0, r.jsxs)(i.Text, {
-      color: "text-danger",
+      color: "text-feedback-critical",
       style: n,
       variant: "text-sm/normal",
       children: [(0, r.jsx)(i.Mgn, {

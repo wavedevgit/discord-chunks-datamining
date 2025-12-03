@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk658722 = require("./658722.js"),
-  o = require.n(Chunk658722),
+  i = require.n(Chunk658722),
   Chunk793030 = require("./793030.js"),
   Chunk399606 = require("./399606.js"),
   Chunk159691 = require("./159691.js"),
@@ -67,7 +67,7 @@ function y(e) {
       let l = p.default.getUser(t.userId);
       if (null != l && (n[t.userId] = l), null == w || null == l || !(0, h.Y)(w, l)) returnfalse;
       let a = "".concat(null != (r = t.nick) ? r : "", " ").concat(null == l ? true : l.username);
-      return o()(e.toLowerCase(), a.toLowerCase())
+      return i()(e.toLowerCase(), a.toLowerCase())
     }).map(e => {
       var t, r, l;
       return {
@@ -122,7 +122,7 @@ function y(e) {
     variant: "primary",
     disabled: 0 === C.message.length || null != R
   }], [R, H, k, C.message.length]);
-  return (0, r.jsxs)(i.IX, {
+  return (0, r.jsxs)(o.IX, {
     transitionState: y,
     onClose: k,
     children: [(0, r.jsx)("div", {
@@ -171,11 +171,11 @@ function y(e) {
           maxLength: d.W4
         }), null != R ? (0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
-          color: "text-danger",
+          color: "text-feedback-critical",
           children: R
         }) : null]
       })]
-    }), (0, r.jsx)(i.Go$, {
+    }), (0, r.jsx)(o.Go$, {
       actions: X,
       leading: (0, r.jsx)(c.Avr, {
         text: b.intl.string(b.t.N86XcP),

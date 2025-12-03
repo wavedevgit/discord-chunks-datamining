@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 598948, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -54,15 +54,15 @@ let w = {
       compact: s,
       onSelectRow: m,
       onResetForNewMembers: b
-    } = e, f = (0, c.e7)([C.Z], () => C.Z.useReducedMotion), H = (0, u.f9)(), L = (0, p.n)(), [P, I] = l.useState(false), [V, M] = l.useState(false), E = !H && P && V;
+    } = e, f = (0, c.e7)([C.Z], () => C.Z.useReducedMotion), H = (0, u.f9)(), L = (0, p.n)(), [I, P] = l.useState(false), [V, M] = l.useState(false), E = !H && I && V;
     l.useEffect(() => {
-      L || (I(false), M(false))
+      L || (P(false), M(false))
     }, [L]), l.useLayoutEffect(() => {
       let e = e => {
-          N(e) && I(true), R(e) && M(true)
+          N(e) && P(true), R(e) && M(true)
         },
         t = e => {
-          N(e) && I(false), R(e) && M(false)
+          N(e) && P(false), R(e) && M(false)
         };
       return window.addEventListener("keydown", e), window.addEventListener("keyup", t), () => {
         window.removeEventListener("keydown", e), window.removeEventListener("keyup", t)
@@ -119,7 +119,7 @@ let w = {
       i = e.compact === t.compact;
     return n && r && l && i
   }),
-  P = function(e) {
+  I = function(e) {
     var t, n;
     let {
       guild: i,

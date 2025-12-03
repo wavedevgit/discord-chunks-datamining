@@ -69,7 +69,7 @@ function j() {
     submitting: Chunk999382.Z.isSubmitting()
   })), c = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.can(Chunk981631.Plq.KICK_MEMBERS, exports)), x = false, j = null;
   return Chunk490655 || (null == (e = Chunk145260.default.editedIntegration) ? true : module.expire_behavior) !== Chunk13107.l.KICK || (x = true, j = (0, Chunk54381.jsx)(Chunk481060.Text, {
-    color: "text-danger",
+    color: "text-feedback-critical",
     variant: "text-md/normal",
     children: Chunk388032.intl.string(Chunk388032.t["mrO/ZQ"])
   })), (0, Chunk54381.jsx)(Chunk796027.Z, {

@@ -133,7 +133,7 @@ let z = e => {
       }), i]
     }), c && (0, r.jsx)(p.Text, {
       variant: "text-xs/normal",
-      color: "text-danger",
+      color: "text-feedback-critical",
       className: V.integrationError,
       children: s
     })]

@@ -281,7 +281,7 @@ class ei extends Chunk473749.Component {
     }) : null != Chunk473749 && 0 === Object.keys(Chunk473749).length ? this.renderEmpty() : this.renderItems();
     let a = !require && !exports && this.getAvailableProjects().length > 0,
       o = en(null != Chunk473749 ? Chunk473749 : {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-        color: "text-danger",
+        color: "text-feedback-critical",
         variant: "text-md/normal",
         children: "Mobile build overrides must be generated using the desktop/web stable client for now!"
       }) : null;

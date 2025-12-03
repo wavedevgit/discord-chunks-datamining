@@ -1,7 +1,7 @@
 /** Chunk was on 74673 **/
 /** chunk id: 394045, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,56 +14,56 @@ var Chunk54381 = require("./54381.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk820954 = require("./820954.js");
-let f = function(t) {
+let h = function(t) {
   let {
     guildId: n,
     submittedGuildJoinRequestsCount: e,
-    onClose: f,
+    onClose: h,
     transitionState: p,
     onConfirm: C
   } = t, {
     submitting: T,
-    errorMessage: m,
-    onSubmit: k
+    errorMessage: k,
+    onSubmit: m
   } = (0, s.Z)({
     onSubmit: C,
-    onClose: f
+    onClose: h
   }), b = a.useCallback(() => {
-    f(), o.Z.close(), (0, l.uL)(u.Z5c.CHANNEL(n, x.oC.MEMBER_APPLICATIONS))
-  }, [n, f]);
-  return (0, i.jsxs)(r.Modal, {
+    h(), l.Z.close(), (0, o.uL)(u.Z5c.CHANNEL(n, x.oC.MEMBER_APPLICATIONS))
+  }, [n, h]);
+  return (0, i.jsxs)(c.Modal, {
     transitionState: p,
-    onClose: f,
+    onClose: h,
     title: d.intl.formatToPlainString(d.t.chV4Jb, {
       count: e
     }),
     actions: [{
       text: d.intl.string(d.t["ETE/oC"]),
-      onClick: f,
+      onClick: h,
       variant: "secondary"
     }, {
       text: d.intl.string(d.t.LW0aUP),
-      onClick: k,
+      onClick: m,
       variant: "primary",
       loading: T
     }],
-    children: [(0, i.jsx)(c.Text, {
-      className: h.descriptionText,
+    children: [(0, i.jsx)(r.Text, {
+      className: f.descriptionText,
       color: "header-secondary",
       variant: "text-sm/normal",
       children: d.intl.string(d.t.uNQItz)
-    }), (0, i.jsx)(c.P3F, {
-      className: h.actionText,
+    }), (0, i.jsx)(r.P3F, {
+      className: f.actionText,
       onClick: b,
-      children: (0, i.jsx)(c.Text, {
+      children: (0, i.jsx)(r.Text, {
         variant: "text-sm/normal",
         color: "text-link",
         children: d.intl.string(d.t.szESVF)
       })
-    }), null != m && (0, i.jsx)(c.Text, {
+    }), null != k && (0, i.jsx)(r.Text, {
       variant: "text-xs/normal",
-      color: "text-danger",
-      children: m
+      color: "text-feedback-critical",
+      children: k
     })]
   })
 }

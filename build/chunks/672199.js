@@ -28,7 +28,7 @@ function g(e, t, n, g) {
     {
       trackView: v,
       trackClick: S
-    } = (0, c.Rg)(d.n0.RequestToStream, {
+    } = (0, u.Rg)(d.n0.RequestToStream, {
       notif_type: d.n0.RequestToStream,
       notif_user_id: t.id,
       activity_type: h.mFx.STREAM_REQUEST,
@@ -52,7 +52,7 @@ function g(e, t, n, g) {
           location: "requestToStreamNotification"
         });
         n = e ? p.ApplicationStreamPresets.PRESET_AUTO : p.ApplicationStreamPresets.PRESET_VIDEO
-      }(0, a.Z)(u.Z.getTargetPID(), {
+      }(0, a.Z)(c.Z.getTargetPID(), {
         preset: n
       }), S("request-to-stream"), i.Z.updateNotificationStatus(t)
     },

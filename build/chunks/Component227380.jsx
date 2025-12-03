@@ -186,11 +186,11 @@ let I = e => {
           variant: "text-sm/normal",
           children: v.intl.string(v.t.LjqS0G)
         }), (null == g ? true : g.engagementHealthy) ? null : (0, r.jsx)(p.Text, {
-          color: "text-danger",
+          color: "text-feedback-critical",
           variant: "text-sm/normal",
           children: v.intl.string(v.t.X8Lt77)
         }), (null == g ? true : g.retentionHealthy) ? null : (0, r.jsx)(p.Text, {
-          color: "text-danger",
+          color: "text-feedback-critical",
           variant: "text-sm/normal",
           children: v.intl.string(v.t.esdy89)
         }), (() => {

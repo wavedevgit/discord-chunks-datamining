@@ -35,12 +35,12 @@ function j(e) {
   } = e, {
     currentUser: a,
     hidePrivateData: r,
-    isAuthenticated: N
-  } = (0, c.cj)([f.default, _.Z, h.default], () => ({
-    currentUser: f.default.getCurrentUser(),
-    hidePrivateData: _.Z.hidePersonalInformation,
+    isAuthenticated: E
+  } = (0, c.cj)([_.default, f.Z, h.default], () => ({
+    currentUser: _.default.getCurrentUser(),
+    hidePrivateData: f.Z.hidePersonalInformation,
     isAuthenticated: h.default.isAuthenticated()
-  })), v = new x.Z(n), j = N && (null == a ? true : a.id) === v.id, U = n.tokenStatus === E.q.INVALID, I = r || v.hasUniqueUsername() ? null : "#".concat(v.discriminator), M = null;
+  })), v = new x.Z(n), j = E && (null == a ? true : a.id) === v.id, U = n.tokenStatus === b.q.INVALID, I = r || v.hasUniqueUsername() ? null : "#".concat(v.discriminator), M = null;
   return m.Z.useConfig({
     location: "Account card load"
   }), j ? M = (0, i.jsx)(o.Text, {
@@ -51,7 +51,7 @@ function j(e) {
   }) : U && (M = (0, i.jsx)(o.Text, {
     variant: "text-sm/semibold",
     className: p.hintText,
-    color: "text-danger",
+    color: "text-feedback-critical",
     children: A.intl.string(A.t.tYX2ps)
   })), (0, i.jsx)("div", {
     className: p.accountCard,
@@ -88,9 +88,9 @@ function j(e) {
           text: U ? A.intl.string(A.t["DSN+hw"]) : t,
           onClick: function() {
             if (U) return void s(0, n.id);
-            g.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+            g.default.track(N.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
               location: {
-                section: b.jXE.MANAGE_ACCOUNTS_MODAL
+                section: N.jXE.MANAGE_ACCOUNTS_MODAL
               }
             }), T.yD(n.id), s(1, n.id)
           }
@@ -114,7 +114,7 @@ function j(e) {
                       T.Zd(n.id)
                     });
                     let e = {};
-                    null != a ? e.section = b.jXE.MANAGE_ACCOUNTS_MODAL : e.page = b.Usc.LOGIN, g.default.track(b.rMx.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
+                    null != a ? e.section = N.jXE.MANAGE_ACCOUNTS_MODAL : e.page = N.Usc.LOGIN, g.default.track(N.rMx.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
                       location: e
                     }), s(2, n.id), null != t && t()
                   },
@@ -138,7 +138,7 @@ function U(e) {
   } = e, {
     isLoading: s,
     multiAccountUsers: r
-  } = (0, N.L)();
+  } = (0, E.L)();
   return (0, i.jsx)("div", {
     className: p.list,
     children: s ? (0, i.jsx)(o.$jN, {

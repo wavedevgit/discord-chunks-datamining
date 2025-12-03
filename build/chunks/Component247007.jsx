@@ -131,7 +131,7 @@ let I = e => {
           v(true)
         }
       }), (0, n.jsx)(u.Text, {
-        color: "text-danger",
+        color: "text-feedback-critical",
         variant: "text-xs/normal",
         children: null == p ? true : p.getAnyErrorMessage()
       })]

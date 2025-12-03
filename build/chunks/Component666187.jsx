@@ -107,7 +107,7 @@ class S extends(r = Chunk473749.Component) {
     return null == module ? null : (0, Chunk54381.jsx)(Chunk993365.x, {
       id: E,
       variant: "text-xs/normal",
-      color: "text-danger",
+      color: "text-feedback-critical",
       className: Chunk8542.errorMessage,
       children: module
     })

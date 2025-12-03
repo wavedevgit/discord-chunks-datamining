@@ -28,7 +28,7 @@ function p(e) {
   return (0, r.jsx)(r.Fragment, {
     children: t.map((e, t) => (0, r.jsx)(s.Text, {
       variant: "text-xs/normal",
-      color: "text-danger",
+      color: "text-feedback-critical",
       className: d.errorMessage,
       children: f(e)
     }, t))

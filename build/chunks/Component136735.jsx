@@ -29,8 +29,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk491202 = require("./491202.js"),
   Chunk434227 = require("./434227.js"),
   Chunk600126 = require("./600126.js");
-let P = new Set(["application/json", "image/png", "image/apng", "image/gif", "image/jpeg", "image/jpg"]),
-  k = [{
+let k = new Set(["application/json", "image/png", "image/apng", "image/gif", "image/jpeg", "image/jpg"]),
+  P = [{
     name: "Sticker file",
     extensions: ["json", "png", "apng", "gif", "jpeg", "jpg"]
   }];
@@ -84,7 +84,7 @@ function R(e) {
     var t;
     if (null == e) return;
     let l = null == (t = e.type) ? true : t.split(";")[0];
-    if (!P.has(l)) return void ei({
+    if (!k.has(l)) return void ei({
       message: w.intl.string(w.t.B2hGAG),
       isBlocking: true
     });
@@ -240,7 +240,7 @@ function R(e) {
               required: true,
               children: (0, n.jsx)(m.Z, {
                 buttonText: w.intl.string(w.t.xEnDUa),
-                filters: k,
+                filters: P,
                 filename: null != (z = null == X ? true : X.filename) ? z : "",
                 placeholder: w.intl.string(w.t.rUYLJ4),
                 onFileSelect: ec
@@ -271,7 +271,7 @@ function R(e) {
           }), null != en && (0, n.jsx)(u.Text, {
             className: C.formItem,
             variant: "text-sm/normal",
-            color: "text-danger",
+            color: "text-feedback-critical",
             children: en.message
           })]
         })

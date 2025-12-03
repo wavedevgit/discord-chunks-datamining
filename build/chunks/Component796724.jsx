@@ -310,7 +310,7 @@ function w() {
       })
     }), null != M && (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/medium",
-      color: "text-danger",
+      color: "text-feedback-critical",
       children: M
     }), (0, Chunk54381.jsxs)(Chunk30910.o2, {
       step: Chunk619733.EK.SERVER_SETTINGS,

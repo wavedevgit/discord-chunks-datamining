@@ -227,7 +227,7 @@ let h = Chunk473749.createContext({
         className: Chunk198764.validationSummary,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
-          color: Chunk281598 ? "text-danger" : "text-default",
+          color: Chunk281598 ? "text-feedback-critical" : "text-default",
           children: "".concat(Chunk619899.length, " errors")
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
@@ -257,14 +257,14 @@ let h = Chunk473749.createContext({
             return (0, a.jsxs)("li", {
               children: [(0, a.jsx)(i.Text, {
                 variant: "text-md/bold",
-                color: "text-danger",
+                color: "text-feedback-critical",
                 children: n
               }), l.length > 0 && (0, a.jsx)("ul", {
                 className: m.validationIssuesList,
                 children: l.map((e, t) => (0, a.jsx)("li", {
                   children: (0, a.jsx)(i.Text, {
                     variant: "text-sm/normal",
-                    color: "text-danger",
+                    color: "text-feedback-critical",
                     children: e
                   })
                 }, "".concat(e, "-").concat(t)))
