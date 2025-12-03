@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk622535 = require("./622535.js"),
@@ -34,9 +34,9 @@ let j = Chunk473749.memo(function(e) {
   } = e, {
     handleCardVisibilityChange: i
   } = (0, C.E)(n), j = l.useRef(null), {
-    isHoveringOrFocusing: k
+    isHoveringOrFocusing: I
   } = (0, f.Z)(j), {
-    readyToClaim: I,
+    readyToClaim: k,
     collectibleProductSkuIds: T,
     collectedSkuIds: L
   } = (0, b.q)(t, n), P = (0, s.e7)([h.Z], () => h.Z.isClaiming === n);
@@ -46,8 +46,8 @@ let j = Chunk473749.memo(function(e) {
     innerRef: j,
     children: (0, r.jsx)("div", {
       ref: j,
-      className: a()(x.productCardContainer, E.defaultCursor, {
-        [x.hovered]: k
+      className: o()(x.productCardContainer, E.defaultCursor, {
+        [x.hovered]: I
       }),
       "aria-label": v.intl.formatToPlainString(v.t.Ez6aHE, {
         category: t.name
@@ -78,7 +78,7 @@ let j = Chunk473749.memo(function(e) {
                 className: x.productName,
                 children: v.intl.string(v.t["0mDmg/"])
               }), (0, r.jsx)(u.u, {
-                text: I ? v.intl.string(v.t.cKH3tk) : v.intl.formatToPlainString(v.t["8aMDPc"], {
+                text: k ? v.intl.string(v.t.cKH3tk) : v.intl.formatToPlainString(v.t["8aMDPc"], {
                   totalCount: T.length
                 }),
                 align: "right",
@@ -89,7 +89,7 @@ let j = Chunk473749.memo(function(e) {
                 position: "top",
                 children: (0, r.jsx)("span", {
                   className: E.questionIconContainer,
-                  children: (0, r.jsx)(o.idN, {
+                  children: (0, r.jsx)(a.idN, {
                     size: "xs"
                   })
                 })
@@ -104,13 +104,13 @@ let j = Chunk473749.memo(function(e) {
                   progress: L.length,
                   maximum: T.length
                 }), (0, r.jsxs)("div", {
-                  className: a()(E.progressTextContainer, {
-                    [E.readyToClaimText]: I
+                  className: o()(E.progressTextContainer, {
+                    [E.readyToClaimText]: k
                   }),
-                  children: [I ? (0, r.jsx)(o.kmB, {
+                  children: [k ? (0, r.jsx)(a.kmB, {
                     size: "xs",
                     color: "currentColor"
-                  }) : null, (0, r.jsx)(o.xvT, {
+                  }) : null, (0, r.jsx)(a.xvT, {
                     variant: "text-xs/medium",
                     color: "currentColor",
                     children: v.intl.formatToPlainString(v.t["5TwASM"], {
@@ -123,14 +123,14 @@ let j = Chunk473749.memo(function(e) {
             })]
           }), (0, r.jsx)("div", {
             className: x.footerButtonContainer,
-            children: (0, r.jsx)(o.hE2, {
+            children: (0, r.jsx)(a.hE2, {
               wrap: false,
               className: x.footerButtonGroup,
               fullWidth: true,
-              children: (0, r.jsx)(o.zxk, {
+              children: (0, r.jsx)(a.zxk, {
                 variant: "primary",
                 onClick: e => {
-                  e.stopPropagation(), I && (0, p.wW)(t.skuId, n).then(() => {
+                  e.stopPropagation(), k && (0, p.wW)(t.skuId, n).then(() => {
                     let e = m.Z.getProduct(n);
                     null != e && (0, _.Z)({
                       product: e,
@@ -145,7 +145,7 @@ let j = Chunk473749.memo(function(e) {
                       }
                     })
                   }).catch(() => {
-                    (0, d.ZDy)(() => Promise.resolve(e => (0, r.jsx)(o.Modal, {
+                    (0, d.ZDy)(() => Promise.resolve(e => (0, r.jsx)(a.Modal, {
                       transitionState: e.transitionState,
                       onClose: e.onClose,
                       size: "sm",
@@ -163,7 +163,7 @@ let j = Chunk473749.memo(function(e) {
                 },
                 text: v.intl.string(v.t.VnVTNc),
                 fullWidth: true,
-                disabled: !I,
+                disabled: !k,
                 loading: P
               })
             })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk704215 = require("./704215.js"),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
@@ -29,12 +29,12 @@ let O = e => {
   let {
     wideBannerBlock: n,
     tab: i
-  } = e, O = p.Z.getCategoryByStoreListingId(n.categoryStoreListingId), S = l.useRef(null), y = l.useRef(null), [j, k] = l.useState(), [I, T] = l.useState(false);
+  } = e, O = p.Z.getCategoryByStoreListingId(n.categoryStoreListingId), S = l.useRef(null), y = l.useRef(null), [j, I] = l.useState(), [k, T] = l.useState(false);
   l.useEffect(() => {
     let e = y.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && k(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && I(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
@@ -54,7 +54,7 @@ let O = e => {
       if (T(true), n.isDismissible) {
         var e;
         let t = null != (e = n.dismissibleContentVersion) ? e : 0;
-        (0, u.wH)(o.z.COLLECTIBLES_SHOP_WIDE_BANNER, t, {
+        (0, u.wH)(a.z.COLLECTIBLES_SHOP_WIDE_BANNER, t, {
           dismissAction: b.L.USER_DISMISS
         })
       }
@@ -75,7 +75,7 @@ let O = e => {
         } else(0, d.uL)(e)
       }
     }, [n.ctaRoute]);
-  return null == B || I ? null : (0, r.jsx)(c.f6W, {
+  return null == B || k ? null : (0, r.jsx)(c.f6W, {
     theme: N ? true : v.BR.DARK,
     children: e => {
       var t, l;
@@ -85,7 +85,7 @@ let O = e => {
         threshold: 0,
         children: (0, r.jsxs)("div", {
           ref: S,
-          className: a()(e, E.row, E.between, E.bannerBlockContainer, E.centeredSection, {
+          className: o()(e, E.row, E.between, E.bannerBlockContainer, E.centeredSection, {
             [E.extraRounded]: N
           }),
           children: [n.isDismissible && (0, r.jsx)("div", {
@@ -96,7 +96,7 @@ let O = e => {
               "aria-label": x.intl.string(x.t.WAI6xu)
             })
           }), (0, r.jsx)("div", {
-            className: a()(E.wideBannerBackgroundImg, {
+            className: o()(E.wideBannerBackgroundImg, {
               [E.extraRounded]: N
             }),
             style: null != j ? {
@@ -106,12 +106,12 @@ let O = e => {
               ref: y,
               src: B,
               alt: n.title,
-              className: a()(E.wideBannerArt, {
+              className: o()(E.wideBannerArt, {
                 [E.wideBannerArtOrbs]: N
               })
             })
           }), (0, r.jsx)("div", {
-            className: a()(E.wideBannerContentContainer, {
+            className: o()(E.wideBannerContentContainer, {
               [E.wideBannerWithCTAContentContainer]: A
             }),
             style: {

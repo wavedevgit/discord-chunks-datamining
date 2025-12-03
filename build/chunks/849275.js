@@ -26,48 +26,48 @@ function _(e) {
     isPremiumUser: n,
     prioritizeUserDiscounts: l,
     orbsSupportedOnly: _
-  } = e, b = (0, o.e7)([s.Z], () => s.Z.hasConsented(h.pjP.PERSONALIZATION)), v = r.useMemo(() => {
+  } = e, b = (0, a.e7)([s.Z], () => s.Z.hasConsented(h.pjP.PERSONALIZATION)), v = r.useMemo(() => {
     var e;
-    return null != (e = null == t ? true : t[a.m.RECOMMENDED]) ? e : []
+    return null != (e = null == t ? true : t[o.m.RECOMMENDED]) ? e : []
   }, [t]), x = r.useMemo(() => {
     var e;
-    return null != (e = null == t ? true : t[a.m.POPULAR]) ? e : []
-  }, [t]), E = v.length > 0 && b, [O, S] = r.useState(E ? a.m.RECOMMENDED : a.m.POPULAR), y = (0, m.Z)(), j = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), k = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), I = (0, f.a)(), [T, L] = r.useState([]), P = r.useCallback(() => {
-    S(a.m.RANDOM), L(i().shuffle(j))
+    return null != (e = null == t ? true : t[o.m.POPULAR]) ? e : []
+  }, [t]), E = v.length > 0 && b, [O, S] = r.useState(E ? o.m.RECOMMENDED : o.m.POPULAR), y = (0, m.Z)(), j = (0, a.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), I = (0, a.e7)([u.Z], () => u.Z.getUserDiscounts()), k = (0, f.a)(), [T, L] = r.useState([]), P = r.useCallback(() => {
+    S(o.m.RANDOM), L(i().shuffle(j))
   }, [j]);
   r.useEffect(() => {
     L(i().shuffle(j))
   }, [j]);
   let B = r.useMemo(() => {
     let e = [];
-    if (O === a.m.RECENT) e = j;
-    else if (O === a.m.PRICE_LOW_TO_HIGH) e = (0, d.hC)([...j], n, _);
-    else if (O === a.m.RECOMMENDED) {
+    if (O === o.m.RECENT) e = j;
+    else if (O === o.m.PRICE_LOW_TO_HIGH) e = (0, d.hC)([...j], n, _);
+    else if (O === o.m.RECOMMENDED) {
       let t = y(v);
-      e = l ? (0, d.Qf)(t, k) : t
-    } else if (O === a.m.POPULAR) {
+      e = l ? (0, d.Qf)(t, I) : t
+    } else if (O === o.m.POPULAR) {
       let t = y(x);
-      e = l ? (0, d.Qf)(t, k) : t
-    } else O === a.m.RANDOM && (e = T);
-    return _ ? (0, p.cf)(I(e)) : I(e)
-  }, [O, _, I, n, j, y, v, l, k, x, T]);
+      e = l ? (0, d.Qf)(t, I) : t
+    } else O === o.m.RANDOM && (e = T);
+    return _ ? (0, p.cf)(k(e)) : k(e)
+  }, [O, _, k, n, j, y, v, l, I, x, T]);
   return {
     sortType: O,
     setSortType: S,
     sortedItems: (0, g.l)(B),
     sortOptions: r.useMemo(() => {
       let e = [{
-        value: a.m.POPULAR,
+        value: o.m.POPULAR,
         label: C.intl.string(C.t["1wQj4E"])
       }, {
-        value: a.m.RECENT,
+        value: o.m.RECENT,
         label: C.intl.string(C.t["6NZpt6"])
       }, {
-        value: a.m.PRICE_LOW_TO_HIGH,
+        value: o.m.PRICE_LOW_TO_HIGH,
         label: C.intl.string(C.t.RTG4yJ)
       }];
       return E && e.unshift({
-        value: a.m.RECOMMENDED,
+        value: o.m.RECOMMENDED,
         label: C.intl.string(C.t.JrlKlh)
       }), e
     }, [E]),

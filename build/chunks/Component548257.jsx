@@ -36,9 +36,9 @@ let h = {
     let {
       isLoading: n = false,
       heroBlock: l,
-      tab: o,
+      tab: a,
       onVisibilityChange: d
-    } = e, C = (0, a.O)(e => {
+    } = e, C = (0, o.O)(e => {
       null == d || d(e)
     }, .1, null != d), _ = (0, s.e7)([u.default], () => u.default.getCurrentUser()), {
       bannerStyleOverrides: b,
@@ -97,7 +97,7 @@ let h = {
         }), (0, r.jsx)(p.Z, {
           isBlockLoading: n,
           heroBlock: l,
-          tab: o
+          tab: a
         })]
       })]
     }) : null

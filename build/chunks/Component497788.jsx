@@ -27,7 +27,7 @@ let x = e => {
     isBlockLoading: t = false,
     heroBlock: n,
     tab: x
-  } = e, E = (0, o.sp)(), {
+  } = e, E = (0, a.sp)(), {
     hasPromoUpsell: O
   } = u.Z.useConfig({
     location: "RewardHeroBlockCards"
@@ -35,25 +35,25 @@ let x = e => {
     products: j
   } = ((e, t, n) => {
     let r = (0, C.Z)(),
-      a = (0, i.e7)([s.Z], () => s.Z.products),
-      o = l.useMemo(() => e ? [] : a.size > 0 ? r(t.rankedSkuIds).filter(e => e.skuId !== t.rewardSkuId || null != n) : [], [e, r, t.rankedSkuIds, a, n, t.rewardSkuId]),
-      c = (0, d.a)()(o),
+      o = (0, i.e7)([s.Z], () => s.Z.products),
+      a = l.useMemo(() => e ? [] : o.size > 0 ? r(t.rankedSkuIds).filter(e => e.skuId !== t.rewardSkuId || null != n) : [], [e, r, t.rankedSkuIds, o, n, t.rewardSkuId]),
+      c = (0, d.a)()(a),
       u = (0, f.l)(c);
     return {
       products: (0, _.St)(u)
     }
-  })(t, n, y), k = l.useMemo(() => !t && 0 !== n.rankedSkuIds.length && !(j.length > 0) && n.rankedSkuIds.every(e => {
+  })(t, n, y), I = l.useMemo(() => !t && 0 !== n.rankedSkuIds.length && !(j.length > 0) && n.rankedSkuIds.every(e => {
     var t;
     return (null == (t = s.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-  }), [t, n.rankedSkuIds, j.length]), I = t || k, {
+  }), [t, n.rankedSkuIds, j.length]), k = t || I, {
     readyToClaim: T
   } = (0, b.q)(S, n.rewardSkuId), L = null == y && null != n.rewardSkuId && null != S;
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     gap: "xl",
-    children: I ? (0, r.jsx)(r.Fragment, {
+    children: k ? (0, r.jsx)(r.Fragment, {
       children: [true, true, true, true, true].map((e, t) => (0, r.jsx)(m.Z, {}, t))
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [L && !!(O || T) && (0, r.jsx)(o.k0, {
+      children: [L && !!(O || T) && (0, r.jsx)(a.k0, {
         newValue: {
           tilePosition: 0,
           pageSection: "top 4",
@@ -65,7 +65,7 @@ let x = e => {
         })
       }, n.rewardSkuId), j.map((e, t) => {
         let n = s.Z.getCategoryForProduct(e.skuId);
-        return null == e || null == n ? null : (0, r.jsx)(o.k0, {
+        return null == e || null == n ? null : (0, r.jsx)(a.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "top 4",

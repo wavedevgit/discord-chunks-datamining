@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -42,7 +42,7 @@ function L(e) {
   return (0, r.jsx)(g.Z.Title, {
     onClick: () => i(t),
     wrapperClassName: T.tabWrapper,
-    className: a()(T.tab, {
+    className: o()(T.tab, {
       [T.selected]: l
     }),
     children: n
@@ -54,7 +54,7 @@ function P(e) {
     tab: t,
     selected: n,
     displayText: i,
-    handleTransition: o
+    handleTransition: a
   } = e, [s, u] = l.useState(false), p = l.useRef(null), [m, h] = l.useState(0), C = l.useRef(false), _ = e => {
     clearTimeout(m), h(setTimeout(() => {
       u(e)
@@ -81,7 +81,7 @@ function P(e) {
           closePopout: t
         } = e;
         return (0, r.jsx)(O.Z, {
-          handleTransition: o,
+          handleTransition: a,
           onClose: t
         })
       },
@@ -109,10 +109,10 @@ function P(e) {
           return e
         }({}, e), u = u = {
           ref: p,
-          onClick: () => o(t),
+          onClick: () => a(t),
           onKeyDown: b,
           wrapperClassName: T.tabWrapper,
-          className: a()(T.tab, {
+          className: o()(T.tab, {
             [T.selected]: n
           }),
           children: (0, r.jsxs)("span", {
@@ -152,14 +152,14 @@ function B(e) {
     location: "CollectiblesShopHeaderBar"
   }), B = [{
     tab: y.AW.HOME,
-    displayText: I.intl.string(I.t.ijDDwz)
+    displayText: k.intl.string(k.t.ijDDwz)
   }, {
     tab: y.AW.CATALOG,
-    displayText: I.intl.string(I.t.Ah5sJo)
+    displayText: k.intl.string(k.t.Ah5sJo)
   }];
   f && B.push({
     tab: y.AW.ORBS,
-    displayText: I.intl.string(I.t.EBYkzk)
+    displayText: k.intl.string(k.t.EBYkzk)
   });
   let N = t === y.AW.ORBS ? j.ZY5.SHOP_ORBS_TAB : j.ZY5.COLLECTIBLES_SHOP,
     A = l.useCallback(() => {
@@ -168,14 +168,14 @@ function B(e) {
         sectionType: j.jXE.ORBS_BALANCE_MENU,
         ctaObject: j.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
-        fromContent: o.j.ORBS_BALANCE_MENU
+        fromContent: a.j.ORBS_BALANCE_MENU
       })
     }, [N]),
     R = (0, E.eN)("collectibles_shop_header_bar"),
     Z = l.useCallback(() => {
       (null == d ? true : d.id) != null && (0, h.openUserProfileModal)({
         userId: d.id,
-        section: k.oh.WISHLIST,
+        section: I.oh.WISHLIST,
         showGuildProfile: false
       })
     }, [null == d ? true : d.id]);
@@ -183,16 +183,16 @@ function B(e) {
     theme: i,
     children: e => (0, r.jsxs)(g.Z, {
       disableDoubleClick: true,
-      className: a()(e, T.headerBar),
+      className: o()(e, T.headerBar),
       innerClassname: f ? T.headerBarInner : true,
       children: [(0, r.jsxs)(c.P3F, {
         className: T.shopHomeLink,
         onClick: () => n(y.AW.HOME),
-        "aria-label": I.intl.string(I.t.pWG4ze) + " home",
+        "aria-label": k.intl.string(k.t.pWG4ze) + " home",
         children: [(0, r.jsx)(x.Z, {
           className: T.discordLogo
         }), (0, r.jsx)(g.Z.Title, {
-          children: I.intl.string(I.t.pWG4ze)
+          children: k.intl.string(k.t.pWG4ze)
         })]
       }), (0, r.jsx)("div", {
         className: T.tabs,
@@ -221,7 +221,7 @@ function B(e) {
         }), O && (0, r.jsx)(c.P3F, {
           className: T.wishlistButton,
           onClick: Z,
-          "aria-label": I.intl.string(I.t["7lZ31J"]),
+          "aria-label": k.intl.string(k.t["7lZ31J"]),
           children: (0, r.jsx)(c.h_8, {
             size: "xs",
             color: "currentColor"
@@ -229,7 +229,7 @@ function B(e) {
         }), f && (0, r.jsx)(b.V9, {
           analyticsPage: N,
           cardAlignment: b.V9.CardAlignment.END,
-          ctaText: I.intl.string(I.t.VC4Mq0),
+          ctaText: k.intl.string(k.t.VC4Mq0),
           ctaOnClick: A,
           className: T.balanceWidgetMenu
         })]

@@ -27,13 +27,11 @@ let c = function(e) {
         onClick: () => i(s.Si.TIER_2),
         isGift: true,
         priceOptions: t,
-        showPromotionalGiftBanner: m,
-        enablePremiumBrandRefresh: true
+        showPromotionalGiftBanner: m
       }), (0, n.jsx)(a.j8, {
         onClick: () => i(s.Si.TIER_0),
         isGift: true,
         priceOptions: t,
-        enablePremiumBrandRefresh: true,
         removeTopMargin: true
       })]
     }), (0, n.jsx)(l.Z, {

@@ -1,9 +1,10 @@
 /** Chunk was on 76334 **/
 /** chunk id: 973007, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
-  ZP: () => h,
-  j8: () => m,
-  jB: () => u
+  ZP: () => _,
+  j8: () => u,
+  jB: () => d,
+  wz: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,106 +12,114 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk744129 = require("./744129.jsx"),
-  Chunk823188 = require("./823188.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk402450 = require("./402450.js");
 
-function u(e) {
+function d(e) {
   let {
     onClick: i,
     isGift: t,
     priceOptions: r,
-    showPromotionalGiftBanner: a,
-    enablePremiumBrandRefresh: c
+    showPromotionalGiftBanner: o,
+    narrowLayout: d
   } = e;
-  return c ? (0, n.jsx)(l.P3F, {
+  return (0, n.jsx)(l.P3F, {
     onClick: i,
     style: {
       cursor: "pointer"
     },
     children: (0, n.jsx)(s.IL, {
       ctaButton: null,
-      showPromotionalGiftBanner: a,
+      showPromotionalGiftBanner: o,
       showYearlyPrice: true,
       isGift: t,
       isModal: true,
-      priceOptions: r
-    })
-  }) : (0, n.jsx)(l.P3F, {
-    onClick: i,
-    style: {
-      cursor: "pointer"
-    },
-    children: (0, n.jsx)(o.wp, {
-      className: d.tier2MarketingCard,
-      ctaButton: null,
-      showWumpus: !a,
-      showPromotionalGiftBanner: a,
-      showYearlyPrice: true,
-      isGift: t,
-      isModal: true,
-      priceOptions: r
+      priceOptions: r,
+      className: a()({
+        [c.narrowLayout]: d
+      }),
+      showWumpus: !d,
+      showPill: !d
     })
   })
 }
 
-function m(e) {
+function u(e) {
   let {
     onClick: i,
     isGift: t,
     priceOptions: r,
-    enablePremiumBrandRefresh: c,
-    removeTopMargin: u
+    removeTopMargin: o,
+    narrowLayout: d
   } = e;
-  return c ? (0, n.jsx)(l.P3F, {
+  return (0, n.jsx)(l.P3F, {
     onClick: i,
     style: {
       cursor: "pointer"
     },
     children: (0, n.jsx)(s.UQ, {
       className: a()({
-        [d.premiumBrandRefreshTier0Card]: !u
+        [c.premiumBrandRefreshTier0Card]: !o,
+        [c.narrowLayout]: d
       }),
       ctaButton: null,
       showYearlyPrice: true,
       isGift: t,
-      priceOptions: r
-    })
-  }) : (0, n.jsx)(l.P3F, {
-    onClick: i,
-    style: {
-      cursor: "pointer"
-    },
-    children: (0, n.jsx)(o.Gq, {
-      className: d.tier0MarketingCard,
-      ctaButton: null,
-      showWumpus: true,
-      showYearlyPrice: true,
-      isGift: t,
-      priceOptions: r
+      priceOptions: r,
+      useShortTitle: d
     })
   })
 }
-let h = function(e) {
+
+function m(e) {
+  let {
+    onSelectSku: i,
+    onSelectPremiumGroup: t,
+    priceOptions: r,
+    showPromotionalGiftBanner: a
+  } = e;
+  return (0, n.jsxs)(n.Fragment, {
+    children: [(0, n.jsx)(u, {
+      onClick: () => i(o.Si.TIER_0),
+      isGift: false,
+      priceOptions: r,
+      narrowLayout: true,
+      removeTopMargin: true
+    }), (0, n.jsx)(d, {
+      onClick: () => i(o.Si.TIER_2),
+      isGift: false,
+      priceOptions: r,
+      showPromotionalGiftBanner: a,
+      narrowLayout: true
+    }), (0, n.jsx)(l.P3F, {
+      onClick: t,
+      style: {
+        cursor: "pointer"
+      },
+      children: (0, n.jsx)(s.Fc, {
+        priceOptions: r,
+        className: c.narrowLayout
+      })
+    })]
+  })
+}
+let _ = function(e) {
   let {
     onSelectSku: i,
     isGift: t,
     priceOptions: r,
-    showPromotionalGiftBanner: a,
-    enablePremiumBrandRefresh: l
+    showPromotionalGiftBanner: a
   } = e;
   return (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(u, {
-      onClick: () => i(c.Si.TIER_2),
+    children: [(0, n.jsx)(d, {
+      onClick: () => i(o.Si.TIER_2),
       isGift: t,
       priceOptions: r,
-      showPromotionalGiftBanner: a,
-      enablePremiumBrandRefresh: l
-    }), (0, n.jsx)(m, {
-      onClick: () => i(c.Si.TIER_0),
+      showPromotionalGiftBanner: a
+    }), (0, n.jsx)(u, {
+      onClick: () => i(o.Si.TIER_0),
       isGift: t,
-      priceOptions: r,
-      enablePremiumBrandRefresh: l
+      priceOptions: r
     })]
   })
 }

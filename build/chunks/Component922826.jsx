@@ -163,13 +163,13 @@ function R(e) {
     size: N,
     handlePlaybackBtnClick: A,
     handleTranscriptBtnClick: w,
-    handleCaptionBtnClick: k,
-    handleFullScreenBtnClick: L,
+    handleCaptionBtnClick: L,
+    handleFullScreenBtnClick: k,
     handleSeekBackBtnClick: M,
     handleSeekForwardBtnClick: V,
     handleControlBarPendingInteraction: Z,
     onVolumeChange: F
-  } = e, B = (0, p.km)(e => e.volume), U = (0, p.km)(e => e.setVolume), q = (0, p.km)(e => e.muted), Y = (0, p.km)(e => e.setMuted), H = (0, p.km)(e => e.transcriptEnabled), Q = (0, p.km)(e => e.captionEnabled), G = (0, p.km)(e => e.fullScreenEnabled), K = (0, s.e7)([f.Z], () => f.Z.useReducedMotion), W = (0, s.e7)([f.Z], () => f.Z.keyboardModeEnabled), [z, X] = o.useState(q ? 0 : B), [J, $] = o.useState(false), [ee, et] = o.useState(false), [{
+  } = e, B = (0, p.km)(e => e.volume), U = (0, p.km)(e => e.setVolume), Y = (0, p.km)(e => e.muted), q = (0, p.km)(e => e.setMuted), H = (0, p.km)(e => e.transcriptEnabled), Q = (0, p.km)(e => e.captionEnabled), G = (0, p.km)(e => e.fullScreenEnabled), K = (0, s.e7)([f.Z], () => f.Z.useReducedMotion), W = (0, s.e7)([f.Z], () => f.Z.keyboardModeEnabled), [z, X] = o.useState(Y ? 0 : B), [$, J] = o.useState(false), [ee, et] = o.useState(false), [{
     volumeAnimSpring: en
   }, er] = (0, m.q_F)(() => ({
     from: {
@@ -183,11 +183,11 @@ function R(e) {
   })), eo = o.useRef(null), el = (0, v.ZS)(I), ei = o.useCallback(e => {
     null != l.current && (e !== l.current.volume && (l.current.volume = e), e !== z && X(e))
   }, [l, z]), ea = o.useCallback(() => {
-    null != l.current && (0 === z ? (ei(B), Y(false), F(B)) : (U(z), ei(0), Y(true), F(0)))
-  }, [l, z, ei, B, Y, U, F]), es = () => {
-    $(true)
+    null != l.current && (0 === z ? (ei(B), q(false), F(B)) : (U(z), ei(0), q(true), F(0)))
+  }, [l, z, ei, B, q, U, F]), es = () => {
+    J(true)
   }, ec = () => {
-    $(false)
+    J(false)
   }, eu = o.useCallback(e => {
     switch (e.key) {
       case h.Y1.PLAYBACK:
@@ -203,23 +203,23 @@ function R(e) {
         V();
         break;
       case h.Y1.CAPTION:
-        k();
+        L();
         break;
       case h.Y1.FULLSCREEN:
-        L();
+        k();
         break;
       case h.Y1.MUTE:
         ea()
     }
-  }, [k, L, A, M, V, ea, W]);
+  }, [L, k, A, M, V, ea, W]);
   o.useEffect(() => {
     null != eo.current && eo.current.focus()
   }, []), o.useEffect(() => (er({
-    volumeAnimSpring: ee || J ? 1 : 0,
+    volumeAnimSpring: ee || $ ? 1 : 0,
     immediate: K
   }), () => {
     en.stop()
-  }), [ee, J, er, K, en]), o.useEffect(() => (window.addEventListener("keydown", eu), () => {
+  }), [ee, $, er, K, en]), o.useEffect(() => (window.addEventListener("keydown", eu), () => {
     window.removeEventListener("keydown", eu)
   }), [eu]);
   let ed = 0 === z ? m.OyP : z < .5 ? m.X2j : m.gj8,
@@ -305,7 +305,7 @@ function R(e) {
             minValue: 0,
             maxValue: 1,
             onValueChange: e => {
-              ei(e), U(e), F(e), ee && (et(false), Z(false)), q && e > 0 && Y(false)
+              ei(e), U(e), F(e), ee && (et(false), Z(false)), Y && e > 0 && q(false)
             },
             asValueChanges: e => {
               ei(e), ee || (et(true), Z(true))
@@ -338,7 +338,7 @@ function R(e) {
         animationTime: b,
         visible: _,
         active: Q,
-        onClick: k,
+        onClick: L,
         ariaLabel: C.intl.string(C.t.bDSZO1),
         tooltipLabel: C.intl.string(C.t.bDSZO1),
         shortcut: h.Y1.CAPTION,
@@ -347,7 +347,7 @@ function R(e) {
         iconComponent: G ? m.wvt : m.NpZ,
         animationTime: b,
         visible: _,
-        onClick: L,
+        onClick: k,
         ariaLabel: C.intl.string(C.t.vKZT5t),
         tooltipLabel: C.intl.string(C.t.vKZT5t),
         shortcut: h.Y1.FULLSCREEN,

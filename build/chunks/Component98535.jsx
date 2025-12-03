@@ -26,22 +26,22 @@ function v(e) {
   let {
     tab: t,
     sortedCategories: n,
-    transitionToTab: o,
+    transitionToTab: a,
     transitionState: s,
     updateAnalyticsState: c,
     refreshCategories: u
   } = e, m = x();
   E(m);
-  let v = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
+  let v = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
     [O, S] = l.useState(true),
     [y, j] = l.useState(true),
-    k = l.useMemo(() => n.filter(e => !_.y8.some(t => {
+    I = l.useMemo(() => n.filter(e => !_.y8.some(t => {
       let {
         categorySkuId: n
       } = t;
       return n === e.skuId
     })), [n]),
-    I = l.useCallback(e => {
+    k = l.useCallback(e => {
       let {
         sourceButton: t,
         categorySkuId: n,
@@ -50,10 +50,10 @@ function v(e) {
         isOrbsExclusive: i
       } = e;
       c(t, n);
-      let a = r && !v,
+      let o = r && !v,
         s = i ? _.AW.ORBS : _.AW.CATALOG;
-      S(n), j(!l), o(s, a)
-    }, [v, o, c]),
+      S(n), j(!l), a(s, o)
+    }, [v, a, c]),
     T = (0, d.FF)("CollectiblesContent"),
     {
       searchError: L
@@ -63,12 +63,12 @@ function v(e) {
     errorMessage: m,
     errorOrigin: p.i.SHOP_PAGE
   }) : b.includes(t) ? (0, r.jsx)(h.Z, {
-    handleTransition: I,
+    handleTransition: k,
     tab: t,
     transitionState: s
   }) : (0, r.jsx)(g.Z, {
     tab: t,
-    sortedCategories: k,
+    sortedCategories: I,
     initialCategoryId: O,
     showFilterInitially: y,
     onUnmount: () => {
@@ -78,7 +78,7 @@ function v(e) {
 }
 let x = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
   E = e => {
-    let t = (0, i.e7)([o.default], () => o.default.getCurrentUser()),
+    let t = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r

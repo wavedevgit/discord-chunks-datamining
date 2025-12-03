@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 400981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,33 +22,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk473936 = require("./473936.js");
 
-function y(e) {
+function x(e) {
   let {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
-    selectedGiftingPromotionReward: y
-  } = e, j = (0, i.e7)([g.default], () => g.default.getCurrentUser()), S = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), {
+    selectedGiftingPromotionReward: x
+  } = e, P = (0, i.e7)([g.default], () => g.default.getCurrentUser()), j = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), {
     analyticsLocations: _
-  } = (0, c.ZP)(), w = s.EFr.SIZE_32, C = (0, u.Z)(null == y ? true : y.assetId, w, !S), O = (0, b.Z)(), E = null == O ? true : O.giftPurchaseConfirmation, k = (null == y ? true : y.type) === a.Z.NAMEPLATE, [I, T] = l.useState(false), N = l.useMemo(() => {
+  } = (0, c.ZP)(), O = s.EFr.SIZE_32, w = (0, d.Z)(null == x ? true : x.assetId, O, !j), C = (0, b.Z)(), E = null == C ? true : C.giftPurchaseConfirmation, k = (null == x ? true : x.type) === a.Z.NAMEPLATE, [I, T] = l.useState(false), N = l.useMemo(() => {
     var e, t;
-    return k && (null == y ? true : y.assetId) != null ? {
-      src: y.assetId,
-      palette: (0, h.t1)(null != (t = y.palette) ? t : "sky"),
-      imgAlt: null == (e = y.a11yLabel) ? true : e.call(y)
+    return k && (null == x ? true : x.assetId) != null ? {
+      src: x.assetId,
+      palette: (0, h.t1)(null != (t = x.palette) ? t : "sky"),
+      imgAlt: null == (e = x.a11yLabel) ? true : e.call(x)
     } : null
-  }, [k, y]);
+  }, [k, x]);
   return null == n || null == E ? null : (0, r.jsx)(v.O3, {
     children: (0, r.jsx)(s.mzw, {
       align: m.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
-        className: P.promotionalFooter,
+        className: y.promotionalFooter,
         children: [k && null != N ? (0, r.jsx)("div", {
-          className: P.nameplatePreviewContainer,
+          className: y.nameplatePreviewContainer,
           onMouseEnter: () => T(true),
           onMouseLeave: () => T(false),
           children: (0, r.jsx)(f.R, {
-            user: j,
+            user: P,
             nameplate: null,
             nameplateData: N,
             showPlaceholderUser: true,
@@ -56,10 +56,10 @@ function y(e) {
             isHighlighted: I
           })
         }) : (0, r.jsx)(s.Xo$, {
-          "aria-label": null == j ? true : j.username,
-          size: w,
-          src: null == j ? true : j.getAvatarURL(true, (0, s.pxk)(w), !S),
-          avatarDecoration: C
+          "aria-label": null == P ? true : P.username,
+          size: O,
+          src: null == P ? true : P.getAvatarURL(true, (0, s.pxk)(O), !j),
+          avatarDecoration: w
         }), (0, r.jsx)(o.zxk, {
           variant: "primary",
           text: E.collectRewardButtonText(),
@@ -68,7 +68,7 @@ function y(e) {
               product: n,
               shouldShowPromotionalExperience: true,
               analyticsLocations: _,
-              purchaseType: x.o8.PROMOTIONAL
+              purchaseType: S.o8.PROMOTIONAL
             })
           }
         })]

@@ -1,121 +1,121 @@
 /** Chunk was on 54597 **/
-/** chunk id: 84058, original params: e,t,n (module,exports,require) **/
+/** chunk id: 84058, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Gf: () => N,
   Jf: () => p,
   OW: () => _,
-  S1: () => r,
+  S1: () => a,
   TW: () => u,
   TY: () => c,
   Uv: () => d,
-  _l: () => m,
-  d_: () => E,
-  lO: () => l,
+  _l: () => S,
+  d_: () => f,
+  lO: () => r,
   sI: () => s,
-  we: () => f
+  we: () => E
 }), require("./953529.js"), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk749210 = require("./749210.js"),
   Chunk228643 = require("./228643.js");
 
-function s(e) {
+function s(t) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_SORT_UPDATE",
-    roles: e
+    roles: t
   })
 }
 
-function r() {
+function a() {
   Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_INIT"
   })
 }
 
-function l(e, t, n) {
+function r(t, e, n) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_PERMISSIONS",
-    id: e,
-    flag: t,
+    id: t,
+    flag: e,
     allow: n
   })
 }
 
-function c(e) {
+function c(t) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_CLEAR_PERMISSIONS",
-    id: e
+    id: t
   })
 }
 
-function d(e, t) {
+function d(t, e) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_NAME",
-    id: e,
-    name: t
+    id: t,
+    name: e
   })
 }
 
-function _(e, t) {
+function _(t, e) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_COLOR",
-    id: e,
-    color: t
+    id: t,
+    color: e
   })
 }
 
-function u(e, t, n) {
+function u(t, e, n) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_COLORS",
-    id: e,
-    colors: t,
+    id: t,
+    colors: e,
     currentStyle: n
   })
 }
 
-function p(e, t) {
+function p(t, e) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_ROLE_STYLE_UPDATE",
-    id: e,
-    currentStyle: t
+    id: t,
+    currentStyle: e
   })
 }
 
-function f(e, t, n) {
+function E(t, e, n) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_SETTINGS",
-    id: e,
-    hoist: t,
+    id: t,
+    hoist: e,
     mentionable: n
   })
 }
 
-function m(e, t, n) {
+function S(t, e, n) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_ROLE_ICON",
-    id: e,
-    icon: t,
+    id: t,
+    icon: e,
     unicodeEmoji: n
   })
 }
 
-function E(e, t) {
+function f(t, e) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_UPDATE_ROLE_CONNECTION_CONFIGURATIONS",
-    roleId: e,
-    roleConnectionConfigurations: t
+    roleId: t,
+    roleConnectionConfigurations: e
   })
 }
-async function N(e, t, n, s, r) {
-  var l, c, d, _;
+async function N(t, e, n, s, a) {
+  var r, c, d, _;
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_SUBMITTING"
   });
   try {
-    for (null != n && n.length > 0 && await a.Z.batchRoleUpdate(e, n); null != t && t.length > 0;) {
-      let n = t.pop();
-      null != n && "" !== n.name && await a.Z.updateRole(e, n.id, {
+    for (null != n && n.length > 0 && await o.Z.batchRoleUpdate(t, n); null != e && e.length > 0;) {
+      let n = e.pop();
+      null != n && "" !== n.name && await o.Z.updateRole(t, n.id, {
         name: n.name,
-        description: null != (l = n.description) ? l : true,
+        description: null != (r = n.description) ? r : true,
         permissions: n.permissions,
         color: n.color,
         colors: null != (c = n.colors) ? c : true,
@@ -125,18 +125,18 @@ async function N(e, t, n, s, r) {
         unicodeEmoji: n.unicodeEmoji
       })
     }
-    if (null != r && null != s)
-      for await (let t of s) {
-        let n = r.get(t);
-        await (0, o.L_)(e, t, null != n ? n : [])
+    if (null != a && null != s)
+      for await (let e of s) {
+        let n = a.get(e);
+        await (0, l.L_)(t, e, null != n ? n : [])
       }
     i.Z.dispatch({
       type: "GUILD_SETTINGS_ROLES_SAVE_SUCCESS"
     })
-  } catch (e) {
+  } catch (t) {
     i.Z.dispatch({
       type: "GUILD_SETTINGS_ROLES_SAVE_FAIL",
-      message: null != (_ = null == (d = e.body) ? true : d.message) ? _ : Object.values(e.body)[0]
+      message: null != (_ = null == (d = t.body) ? true : d.message) ? _ : Object.values(t.body)[0]
     })
   }
 }

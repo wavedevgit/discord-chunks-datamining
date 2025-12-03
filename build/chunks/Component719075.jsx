@@ -26,14 +26,14 @@ let x = e => {
     let {
       product: t,
       prioritizedCurrency: n
-    } = e, u = (0, i.e7)([o.default], () => o.default.getCurrentUser()), h = (0, m.jB)(), x = c.ZP.canUseCollectibles(u), {
+    } = e, u = (0, i.e7)([a.default], () => a.default.getCurrentUser()), h = (0, m.jB)(), x = c.ZP.canUseCollectibles(u), {
       isDisabled: E
     } = (0, f.G)(t.skuId), {
       isPurchased: O,
       isPartiallyOwnedBundle: S,
       isRented: y,
       rentalExpiresAt: j
-    } = (0, g.L)(t), k = (0, d.G1)(t), I = (0, d.rN)(t), T = l.useMemo(() => (0, d.BH)(t, x), [t, x]), L = (0, C.Iw)(t), {
+    } = (0, g.L)(t), I = (0, d.G1)(t), k = (0, d.rN)(t), T = l.useMemo(() => (0, d.BH)(t, x), [t, x]), L = (0, C.Iw)(t), {
       checkoutEligiblePrices: P,
       hasSufficientOrbs: B,
       shouldCheckoutWithOrbs: N
@@ -43,14 +43,14 @@ let x = e => {
       prioritizedCurrency: n,
       hasDiscountOffer: null != L,
       isRental: null != h
-    }), A = k && !x;
-    if (E) return (0, r.jsx)(a.Text, {
+    }), A = I && !x;
+    if (E) return (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "text-tertiary",
       lineClamp: 1,
       children: b.intl.string(b.t.wu4gyV)
     });
-    if (S) return (0, r.jsx)(a.Text, {
+    if (S) return (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "text-tertiary",
       lineClamp: 1,
@@ -58,7 +58,7 @@ let x = e => {
     });
     if (y && null != j) {
       let e = (0, s.TD)(Date.now(), j);
-      return (0, r.jsx)(a.Text, {
+      return (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-tertiary",
         lineClamp: 1,
@@ -67,17 +67,17 @@ let x = e => {
         })
       })
     }
-    return O && !A ? (0, r.jsx)(a.Text, {
+    return O && !A ? (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "text-tertiary",
       lineClamp: 1,
       children: b.intl.string(b.t["6cfuDj"])
-    }) : I ? (0, r.jsx)(a.Text, {
+    }) : k ? (0, r.jsx)(o.Text, {
       variant: "text-md/bold",
       color: "text-primary",
       lineClamp: 1,
       children: b.intl.string(b.t.nBtvYB)
-    }) : k ? (0, r.jsx)(a.Text, {
+    }) : I ? (0, r.jsx)(o.Text, {
       variant: "text-md/bold",
       color: "text-primary",
       lineClamp: 1,
@@ -98,9 +98,9 @@ let x = e => {
       prioritizedCurrency: n
     } = e, l = (0, m.LJ)(t), i = (0, u.o)(l);
     if (null == l) return null;
-    let a = (0, h.W)(l, i);
+    let o = (0, h.W)(l, i);
     return (0, r.jsx)(x, {
-      product: a,
+      product: o,
       prioritizedCurrency: n
     })
   }

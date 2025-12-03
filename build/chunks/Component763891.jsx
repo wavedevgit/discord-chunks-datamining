@@ -2,7 +2,7 @@
 /** chunk id: 763891, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,12 +15,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk381585 = require("./381585.jsx"),
   Chunk597688 = require("./597688.js"),
-  Chunk128922 = require("./128922.js"),
   Chunk370039 = require("./370039.js"),
   Chunk937510 = require("./937510.js"),
   Chunk303952 = require("./303952.js"),
   Chunk38900 = require("./38900.jsx"),
-  Chunk709999 = require("./709999.jsx"),
   Chunk653126 = require("./653126.jsx"),
   Chunk786040 = require("./786040.js"),
   Chunk81136 = require("./81136.js"),
@@ -37,102 +35,90 @@ var Chunk54381 = require("./54381.js"),
   Chunk266058 = require("./266058.js"),
   Chunk719138 = require("./719138.js");
 
-function R(e) {
+function N(e) {
   var t;
   let {
     isFetchingCategories: n,
-    scrollerRef: R,
-    tab: Z
-  } = e, w = (0, f.sp)(), D = null != (t = null == w ? true : w.sessionId) ? t : "", {
-    noCache: H,
-    includeUnpublished: M
-  } = (0, E.Z)(), F = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, o.ap)(z), [K, Y, q] = l.useMemo(() => {
-    switch (Z) {
-      case O.AW.AVATAR_DECORATIONS:
-        return [y.intl.string(y.t.dRZYNE), G ? L.Z : T.Z, i.Z.AVATAR_DECORATION];
-      case O.AW.PROFILE_EFFECTS:
-        return [y.intl.string(y.t["1cNjtx"]), G ? A.Z : N.Z, i.Z.PROFILE_EFFECT];
-      case O.AW.NAMEPLATES:
-        return [y.intl.string(y.t.V68Fqz), G ? B.Z : P.Z, i.Z.NAMEPLATE];
-      case O.AW.BUNDLES:
-        return [y.intl.string(y.t.FYFpps), G ? I.Z : k.Z, i.Z.BUNDLE]
+    scrollerRef: N,
+    tab: A
+  } = e, R = (0, f.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
+    noCache: w,
+    includeUnpublished: H
+  } = (0, v.Z)(), D = (0, o.e7)([u.default], () => u.default.getCurrentUser()), M = (0, o.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), V = (0, c.Fg)(), U = (0, a.ap)(V), [z, G, K] = l.useMemo(() => {
+    switch (A) {
+      case x.AW.AVATAR_DECORATIONS:
+        return [O.intl.string(O.t.dRZYNE), U ? k.Z : I.Z, i.Z.AVATAR_DECORATION];
+      case x.AW.PROFILE_EFFECTS:
+        return [O.intl.string(O.t["1cNjtx"]), U ? B.Z : P.Z, i.Z.PROFILE_EFFECT];
+      case x.AW.NAMEPLATES:
+        return [O.intl.string(O.t.V68Fqz), U ? L.Z : T.Z, i.Z.NAMEPLATE];
+      case x.AW.BUNDLES:
+        return [O.intl.string(O.t.FYFpps), U ? j.Z : y.Z, i.Z.BUNDLE]
     }
-  }, [Z, G]), J = (0, m.a)(), Q = l.useMemo(() => J(W.filter(e => {
+  }, [A, U]), Y = (0, p.a)(), q = l.useMemo(() => Y(M.filter(e => {
     var t;
-    return (e.type === q || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === q)) === true) && !O.y8.some(t => {
+    return (e.type === K || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === K)) === true) && !x.y8.some(t => {
       let {
         categorySkuId: n
       } = t;
       return n === e.categorySkuId
     })
-  })), [W, q, J]), X = (0, h.l)(Q);
-  l.useEffect(() => {
-    (0, C.n)({
-      sessionId: D,
-      checkpoint: C.a.SHOP_MOUNTED,
-      tab: Z,
-      unpublishedCategoriesShown: M,
-      cacheDisabled: H
+  })), [M, K, Y]), J = (0, m.l)(q);
+  return (l.useEffect(() => {
+    (0, h.n)({
+      sessionId: Z,
+      checkpoint: h.a.SHOP_MOUNTED,
+      tab: A,
+      unpublishedCategoriesShown: H,
+      cacheDisabled: w
     })
   }, []), l.useEffect(() => {
-    n || (0, C.n)({
-      sessionId: D,
-      checkpoint: C.a.SHOP_RENDERED,
-      tab: Z,
-      unpublishedCategoriesShown: M,
-      cacheDisabled: H
+    n || (0, h.n)({
+      sessionId: Z,
+      checkpoint: h.a.SHOP_RENDERED,
+      tab: A,
+      unpublishedCategoriesShown: H,
+      cacheDisabled: w
     })
-  }, [D, M, H, n, Z]);
-  let $ = p.Z.useConfig({
-    location: "CollectiblesFilterableShop"
-  }).showCardsV2;
-  return n || null == F ? (0, r.jsx)(_.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [Z, H, w, n, A]), n || null == D) ? (0, r.jsx)(C.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
-        backgroundImage: "url(".concat(Y, ")")
+        backgroundImage: "url(".concat(G, ")")
       },
-      className: j.bannerContainer,
+      className: S.bannerContainer,
       children: (0, r.jsx)(s.Heading, {
         variant: "heading-xxl/extrabold",
-        children: K
+        children: z
       })
     }), (0, r.jsx)("div", {
-      className: j.products,
-      children: X.slice(40 * (V - 1), 40 * V).map((e, t) => {
-        let n = g.Z.getCategory(e.categorySkuId);
-        return null == n ? null : (0, r.jsx)(f.k0, {
-          newValue: {
-            tilePosition: t
-          },
-          children: $ ? (0, r.jsx)(v.Z, {
-            skuId: e.skuId,
-            onClickAnalytics: (0, x.wO)(e, Z, w)
-          }, e.skuId) : (0, r.jsx)(b.Z, {
-            product: e,
-            user: F,
-            category: n,
-            tab: Z
-          }, e.skuId)
+      className: S.products,
+      children: J.slice(40 * (F - 1), 40 * F).map((e, t) => null == g.Z.getCategory(e.categorySkuId) ? null : (0, r.jsx)(f.k0, {
+        newValue: {
+          tilePosition: t
+        },
+        children: (0, r.jsx)(_.Z, {
+          skuId: e.skuId,
+          onClickAnalytics: (0, b.wO)(e, A, R)
         }, e.skuId)
-      })
-    }), X.length > 40 && (0, r.jsx)("div", {
-      className: j.paginationContainer,
+      }, e.skuId))
+    }), J.length > 40 && (0, r.jsx)("div", {
+      className: S.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(s.DsT, {
-          currentPage: V,
-          totalCount: X.length,
+          currentPage: F,
+          totalCount: J.length,
           pageSize: 40,
           onPageChange: e => {
             var t;
-            d.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == w ? true : w.sessionId,
-              page_section: null == w ? true : w.pageSection,
-              page_category: null == w ? true : w.pageCategory,
+            d.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              collectibles_shop_session_id: null == R ? true : R.sessionId,
+              page_section: null == R ? true : R.pageSection,
+              page_category: null == R ? true : R.pageCategory,
               page_index: e,
               page_size: 40,
-              cta_name: "".concat(Z, " page ").concat(e),
-              page_type: Z
-            }), U(e), null == R || null == (t = R.current) || t.scrollToTop({
+              cta_name: "".concat(A, " page ").concat(e),
+              page_type: A
+            }), W(e), null == N || null == (t = N.current) || t.scrollToTop({
               animate: true
             })
           },

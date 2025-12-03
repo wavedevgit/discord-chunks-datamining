@@ -32,13 +32,13 @@ let v = e => {
     } = e, v = (0, p.jB)(), {
       isPurchased: x,
       isPartiallyOwnedBundle: E
-    } = (0, g.L)(t), O = (0, f.G1)(t), S = (0, a.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), y = (null == S ? true : S.unpublishedAt) != null ? (0, f.OT)(S.unpublishedAt) : null, j = (0, a.e7)([s.default], () => s.default.getCurrentUser()), k = c.ZP.canUseCollectibles(j), I = (0, h.Iw)(t), {
+    } = (0, g.L)(t), O = (0, f.G1)(t), S = (0, o.e7)([u.Z], () => u.Z.getCategoryForProduct(t.skuId)), y = (null == S ? true : S.unpublishedAt) != null ? (0, f.OT)(S.unpublishedAt) : null, j = (0, o.e7)([s.default], () => s.default.getCurrentUser()), I = c.ZP.canUseCollectibles(j), k = (0, h.Iw)(t), {
       isOrbExclusive: T
     } = (0, C.Ip)({
       product: t,
-      isPremiumUser: k,
+      isPremiumUser: I,
       prioritizedCurrency: m,
-      hasDiscountOffer: null != I
+      hasDiscountOffer: null != k
     }), L = n;
     if (null == L && (null == y || l ? !E && !x && (0, f.Yq)(t.skuId) ? L = p.Zh.NEW : null != v && 3 === v ? L = p.Zh.THREE_DAY_RENTAL : null != v && 7 === v ? L = p.Zh.SEVEN_DAY_RENTAL : null != v ? L = p.Zh.RENTAL : T ? L = p.Zh.ORBS_EXCLUSIVE : O && (L = p.Zh.NITRO_EXCLUSIVE) : L = p.Zh.LIMITED_TIME), null == L || L === p.Zh.NONE) return null;
     let P = null;
@@ -66,7 +66,7 @@ let v = e => {
       case p.Zh.RENTAL:
         P = _.intl.string(_.t.VgsFa1)
     }
-    return (0, r.jsx)(o.IGR, {
+    return (0, r.jsx)(a.IGR, {
       text: P,
       disableColor: true,
       className: i()(d, b.productCardBadge)
@@ -78,14 +78,14 @@ let v = e => {
       badgeOverride: n,
       className: l,
       prioritizedCurrency: i,
-      skipLimitedTimeCheck: a
-    } = e, o = (0, p.LJ)(t), s = (0, d.o)(o);
-    if (null == o) return null;
-    let c = (0, m.W)(o, s);
+      skipLimitedTimeCheck: o
+    } = e, a = (0, p.LJ)(t), s = (0, d.o)(a);
+    if (null == a) return null;
+    let c = (0, m.W)(a, s);
     return (0, r.jsx)(v, {
       product: c,
       badgeOverride: n,
-      skipLimitedTimeCheck: a,
+      skipLimitedTimeCheck: o,
       className: l,
       prioritizedCurrency: i
     })

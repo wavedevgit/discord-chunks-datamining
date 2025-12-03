@@ -15,12 +15,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk926845 = require("./926845.js");
 
-function _(e) {
+function h(e) {
   let {
     giftRecipient: i,
     onClose: t,
     transitionState: l,
-    analyticsLocations: _,
+    analyticsLocations: h,
     analyticsObject: p
   } = e, {
     priceOptions: f
@@ -30,7 +30,7 @@ function _(e) {
       giftRecipient: i,
       subscriptionTier: e,
       giftingOrigin: d.Wt.DM_CHANNEL,
-      analyticsLocations: null != _ ? _ : [],
+      analyticsLocations: null != h ? h : [],
       analyticsObject: null != p ? p : {
         page: u.ZY5.DM_CHANNEL,
         section: u.jXE.CHANNEL_TEXT_AREA,
@@ -38,15 +38,15 @@ function _(e) {
         objectType: u.AnalyticsObjectTypes.GIFT
       }
     }), t()
-  }, [i, _, p, t]);
+  }, [i, h, p, t]);
   return (0, n.jsxs)(a.Y0X, {
     transitionState: l,
     size: a.CgR.DYNAMIC,
-    className: h.modalContainer,
+    className: _.modalContainer,
     parentComponent: "GiftOptionSelectModal",
     "data-migration-pending": true,
     children: [(0, n.jsx)(a.xBx, {
-      className: h.modalHeader,
+      className: _.modalHeader,
       "data-migration-pending": true,
       children: (0, n.jsxs)(a.Kqy, {
         direction: "horizontal",
@@ -60,7 +60,7 @@ function _(e) {
         })]
       })
     }), (0, n.jsx)(a.hzk, {
-      className: h.modalBody,
+      className: _.modalBody,
       "data-migration-pending": true,
       children: (0, n.jsx)(c.Z, {
         onSelectSku: g,
@@ -89,7 +89,7 @@ function p(e) {
       isGift: true,
       giftRecipient: i,
       giftingOrigin: d.Wt.DM_CHANNEL,
-      children: (0, n.jsx)(_, {
+      children: (0, n.jsx)(h, {
         giftRecipient: i,
         onClose: t,
         transitionState: r,

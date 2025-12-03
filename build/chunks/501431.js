@@ -216,8 +216,8 @@ let p = {
       themeFilters: r,
       orbEligible: l,
       sort: i,
-      searchQuery: a,
-      queryPageSize: o,
+      searchQuery: o,
+      queryPageSize: a,
       queryPageOffset: s
     } = e;
     return {
@@ -226,10 +226,10 @@ let p = {
       themes: Array.from(r),
       orbs_eligible: !!l || true,
       offset: s,
-      limit: o,
+      limit: a,
       sort_type: i.sortType,
       sort_direction: i.sortDirection,
-      search: "" !== a ? a : true
+      search: "" !== o ? o : true
     }
   },
   x = () => {
@@ -270,7 +270,7 @@ let p = {
       let i = b.subscribe(v, Chunk473749, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
-        a = b.subscribe(e => e.hasFilters(), (e, t) => {
+        o = b.subscribe(e => e.hasFilters(), (e, t) => {
           if (!e && t) {
             let e = b.getState();
             e.userHasSelectedSort || b.setState({

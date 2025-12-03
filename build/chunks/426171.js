@@ -35,7 +35,7 @@ let C = "".concat("#").concat("itemSkuId", "="),
     let e = (0, Chunk258939.R)(),
       t = Chunk473749.useRef(null),
       n = (0, Chunk828700.TH)(),
-      a = require.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk100527.Z.COLLECTIBLES_SHOP,
+      o = require.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk100527.Z.COLLECTIBLES_SHOP,
       {
         analyticsLocations: C
       } = (0, Chunk906732.ZP)(Chunk607070),
@@ -56,8 +56,8 @@ let C = "".concat("#").concat("itemSkuId", "="),
               analyticsLocations: n,
               analyticsSource: r,
               tab: l
-            } = e, i = c.Z.getProduct(t), a = c.Z.getCategoryForProduct(t);
-            if (null != i && null != a) {
+            } = e, i = c.Z.getProduct(t), o = c.Z.getCategoryForProduct(t);
+            if (null != i && null != o) {
               let e = i,
                 s = (0, m.oQ)({
                   product: i
@@ -66,14 +66,14 @@ let C = "".concat("#").concat("itemSkuId", "="),
               if (u !== document.activeElement && (null == u || u.focus()), null != i.variantGroupStoreListingId) {
                 let n = c.Z.getProductByStoreListingId(i.variantGroupStoreListingId);
                 if (null != n) {
-                  var o;
+                  var a;
                   e = n;
-                  let r = null == (o = n.variants) ? true : o.findIndex(e => e.skuId === t);
+                  let r = null == (a = n.variants) ? true : a.findIndex(e => e.skuId === t);
                   null != r && r > false && (0, d.$)(n, r)
                 }
               }(0, g.T)({
                 product: e,
-                category: a,
+                category: o,
                 analyticsSource: r,
                 analyticsLocations: n,
                 tab: l,
@@ -93,9 +93,9 @@ let C = "".concat("#").concat("itemSkuId", "="),
   },
   E = e => {
     let t = r.useRef({}),
-      n = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
+      n = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
       l = (0, i.e7)([c.Z], () => c.Z.isFetchingCategories),
-      [o, s] = r.useState(null),
+      [a, s] = r.useState(null),
       u = r.useCallback((e, n) => {
         t.current[e] = n
       }, []),
@@ -111,8 +111,8 @@ let C = "".concat("#").concat("itemSkuId", "="),
         }, 100)
       }, [e, n, l, s]);
     return r.useEffect(() => {
-      l || null == o || (d(o), s(null))
-    }, [l, d, o, s]), {
+      l || null == a || (d(a), s(null))
+    }, [l, d, a, s]), {
       setCategoryRef: u,
       handleScrollToCategory: d
     }

@@ -35,8 +35,8 @@ function C(e) {
   } = u.EO.useConfig({
     location: g.dr.VIDEO_MODAL
   }), [D, R] = o.useState(false), T = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), I = o.useRef(null == (t = y.userStatus) ? true : t.completedAt), [N, A] = o.useState(false), w = (0, m.w8)(y.config), {
-    completedRatio: k,
-    completedRatioDisplay: L
+    completedRatio: L,
+    completedRatioDisplay: k
   } = (0, d.I)(y), M = (null == (n = y.userStatus) ? true : n.completedAt) != null, V = (null == (C = y.userStatus) ? true : C.claimedAt) != null, Z = O.intl.formatToPlainString(M && !V && P ? O.t.NRp4K4 : O.t["12IWP2"], {
     rewardName: w
   });
@@ -80,8 +80,8 @@ function C(e) {
         children: (0, r.jsx)(f.Z, {
           quest: y,
           size: 48,
-          percentComplete: k,
-          percentCompleteText: D ? L : true,
+          percentComplete: L,
+          percentCompleteText: D ? k : true,
           percentCompleteTextVariant: "text-sm/medium",
           children: (0, r.jsx)(p.Z, {
             className: h.questProgressRewardTile,

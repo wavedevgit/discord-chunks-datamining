@@ -17,7 +17,7 @@ let c = e => {
       selectedVariantIndex: n,
       isCardHovered: l
     } = e;
-    return (0, r.jsx)(o.a, {
+    return (0, r.jsx)(a.a, {
       product: t,
       selectedVariantIndex: n,
       isCardHovered: l,
@@ -28,10 +28,10 @@ let c = e => {
     let {
       skuId: t,
       isCardHovered: n
-    } = e, o = (0, l.Y)({
+    } = e, a = (0, l.Y)({
       location: "ProductWishlistButton"
-    }), s = (0, a.LJ)(t), u = (0, i.o)(s);
-    return null != s && o ? (0, r.jsx)(c, {
+    }), s = (0, o.LJ)(t), u = (0, i.o)(s);
+    return null != s && a ? (0, r.jsx)(c, {
       product: s,
       selectedVariantIndex: u,
       isCardHovered: n

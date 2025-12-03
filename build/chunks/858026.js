@@ -44,16 +44,16 @@ function o(e) {
     claimableVariants: n,
     defaultSelection: o,
     selectedGiftingPromotionReward: s,
-    setSelectedGiftingPromotionReward: d,
+    setSelectedGiftingPromotionReward: u,
     hasUserMadeSelection: c
-  } = e, u = null != n && n.length > 0, [p, m] = r.useState(null != (t = null == o ? true : o.defaultCategory) ? t : l.KN.Trick), h = r.useRef(p), f = r.useMemo(() => u ? n.flatMap(e => e.variants.length < l.mo ? [] : i(a({}, e.variants[p]), {
+  } = e, d = null != n && n.length > 0, [p, m] = r.useState(null != (t = null == o ? true : o.defaultCategory) ? t : l.KN.Trick), h = r.useRef(p), f = r.useMemo(() => d ? n.flatMap(e => e.variants.length < l.mo ? [] : i(a({}, e.variants[p]), {
     name: e.name
-  })) : [], [n, p, u]), b = r.useMemo(() => null != s && f.some(e => e.skuId === s.skuId), [f, s]);
+  })) : [], [n, p, d]), b = r.useMemo(() => null != s && f.some(e => e.skuId === s.skuId), [f, s]);
   if (r.useEffect(() => {
-      u && ((null == o ? true : o.defaultCategory) == null || c || m(o.defaultCategory))
-    }, [null == o ? true : o.defaultCategory, c, u]), r.useEffect(() => {
-      u && (h.current === p || b || d(true), h.current = p)
-    }, [p, b, d, u]), !u) return null;
+      d && ((null == o ? true : o.defaultCategory) == null || c || m(o.defaultCategory))
+    }, [null == o ? true : o.defaultCategory, c, d]), r.useEffect(() => {
+      d && (h.current === p || b || u(true), h.current = p)
+    }, [p, b, u, d]), !d) return null;
   let g = n.length > 1;
   return i(a({}, g && {
     selectedCategory: p

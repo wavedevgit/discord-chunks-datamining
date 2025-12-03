@@ -22,88 +22,88 @@ let g = e => {
       skuId: a,
       assetId: g,
       user: v,
-      claimed: x,
-      onSelect: P,
-      productName: y,
-      a11yLabel: j,
-      selectedSkuId: S,
+      claimed: S,
+      onSelect: y,
+      productName: x,
+      a11yLabel: P,
+      selectedSkuId: j,
       category: _,
-      type: w,
-      palette: C
+      type: O,
+      palette: w
     } = e,
-    O = l.useRef(null),
+    C = l.useRef(null),
     {
       isHoveringOrFocusing: E
-    } = (0, u.Z)(O),
-    k = !x && E,
+    } = (0, d.Z)(C),
+    k = !S && E,
     I = (0, c.ZP)(),
     T = (0, s.wj)(I);
-  return w === o.Z.AVATAR_DECORATION ? (t = {
+  return O === o.Z.AVATAR_DECORATION ? (t = {
     type: o.Z.AVATAR_DECORATION,
-    label: j,
+    label: P,
     asset: g
   }, n = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.R, {
       item: t,
       user: v,
       isHighlighted: k,
-      avatarSize: d.EFr.SIZE_96,
-      isPurchased: x
-    }), x && (0, r.jsx)(d.sV5, {
+      avatarSize: u.EFr.SIZE_96,
+      isPurchased: S
+    }), S && (0, r.jsx)(u.sV5, {
       size: "custom",
       width: 48,
       height: 48,
-      color: T ? d.TVs.colors.WHITE : d.TVs.colors.BLACK,
+      color: T ? u.TVs.colors.WHITE : u.TVs.colors.BLACK,
       className: b.claimedIcon
     })]
-  })) : w === o.Z.NAMEPLATE && (t = {
+  })) : O === o.Z.NAMEPLATE && (t = {
     type: o.Z.NAMEPLATE,
-    label: j,
+    label: P,
     asset: g,
-    palette: null != C ? C : "none"
+    palette: null != w ? w : "none"
   }, n = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h.Z, {
       nameplate: t,
       user: v,
       isHighlighted: k,
-      isPurchased: x,
+      isPurchased: S,
       size: "small"
-    }), x && (0, r.jsx)(d.sV5, {
+    }), S && (0, r.jsx)(u.sV5, {
       size: "custom",
       width: 48,
       height: 48,
-      color: T ? d.TVs.colors.WHITE : d.TVs.colors.BLACK,
+      color: T ? u.TVs.colors.WHITE : u.TVs.colors.BLACK,
       className: b.claimedIcon
     })]
-  })), (0, r.jsx)(d.tEY, {
-    children: (0, r.jsxs)(d.kL8, {
-      ref: O,
-      "aria-label": null != y ? y : "",
+  })), (0, r.jsx)(u.tEY, {
+    children: (0, r.jsxs)(u.kL8, {
+      ref: C,
+      "aria-label": null != x ? x : "",
       onClick: () => {
-        null == a || null == P || x || P(a)
+        null == a || null == y || S || y(a)
       },
       className: i()(T ? b.shopCardDark : b.shopCard, {
-        [b.shopCardAnimation]: !x,
+        [b.shopCardAnimation]: !S,
         [T ? b.shopCardDarkHighlighted : b.shopCardHighlighted]: k,
-        [b.shopCardSelected]: S === a
+        [b.shopCardSelected]: j === a
       }),
       children: [(0, r.jsx)("div", {
         className: i()(b.preview, {
-          [b.avatarPreview]: w === o.Z.AVATAR_DECORATION,
-          [b.nameplatePreview]: w === o.Z.NAMEPLATE,
+          [b.avatarPreview]: O === o.Z.AVATAR_DECORATION,
+          [b.nameplatePreview]: O === o.Z.NAMEPLATE,
           [b.previewTrick]: _ === p.KN.Trick,
           [b.previewTreat]: _ === p.KN.Treat,
-          [b.shopCardClaimed]: x
+          [b.shopCardClaimed]: S
         }),
         children: null != t && n
       }), (0, r.jsxs)("div", {
         className: b.productName,
-        children: [(0, r.jsx)(d.Heading, {
+        children: [(0, r.jsx)(u.Heading, {
           variant: "heading-md/extrabold",
-          children: y
-        }), (0, r.jsx)(d.Text, {
+          children: x
+        }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
-          children: x ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)
+          children: S ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)
         })]
       })]
     })

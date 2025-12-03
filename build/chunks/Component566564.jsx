@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk685816 = require("./685816.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
@@ -43,7 +43,7 @@ let A = e => {
       isFetchingCategories: f,
       tab: b
     } = e, {
-      noCache: I,
+      noCache: k,
       includeUnpublished: P
     } = (0, v.Z)(), A = (0, m.Pc)("CollectiblesFeedShop") && b === L.AW.ORBS, R = (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -74,14 +74,14 @@ let A = e => {
       return n
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-    }), n), [Z, w] = l.useState(false), D = (0, g.sp)(), H = null != (t = null == D ? true : D.sessionId) ? t : "";
+    }), n), [Z, w] = l.useState(false), H = (0, g.sp)(), D = null != (t = null == H ? true : H.sessionId) ? t : "";
     l.useEffect(() => {
       (0, C.n)({
-        sessionId: H,
+        sessionId: D,
         checkpoint: C.a.SHOP_MOUNTED,
         tab: b,
         unpublishedCategoriesShown: P,
-        cacheDisabled: I
+        cacheDisabled: k
       })
     }, [b]);
     let {
@@ -90,30 +90,30 @@ let A = e => {
       shopBlocks: W,
       refreshShopHome: V
     } = (0, h.E)(b, {
-      noCache: I,
+      noCache: k,
       includeUnpublished: P,
       includeBundles: true,
       logPerf: true
     }, {
-      sessionId: H,
+      sessionId: D,
       tab: b
     }), U = l.useCallback(() => {
       V()
     }, [V]);
     return (l.useEffect(() => {
       null != F || M || 0 === W.length || (0, C.n)({
-        sessionId: H,
+        sessionId: D,
         checkpoint: C.a.SHOP_RENDERED,
         tab: b,
         unpublishedCategoriesShown: P,
-        cacheDisabled: I
+        cacheDisabled: k
       })
-    }, [F, M, W.length, P, I, H, b]), null != F) ? (0, r.jsx)(_.Z, {
+    }, [F, M, W.length, P, k, D, b]), null != F) ? (0, r.jsx)(_.Z, {
       onRetry: U,
       errorOrigin: _.i.SHOP_PAGE,
       errorMessage: F.message
     }) : M || 0 === W.length ? (0, r.jsxs)("div", {
-      className: a()(N.loadingContainer, N.feedContent),
+      className: o()(N.loadingContainer, N.feedContent),
       children: [(0, r.jsx)(S.Z, {
         isLoading: M,
         handleTransition: c,
@@ -134,7 +134,7 @@ let A = e => {
         let l = null,
           i = false;
         switch (e.type) {
-          case o.z.HERO:
+          case a.z.HERO:
             l = (0, r.jsx)(S.Z, {
               isLoading: M,
               handleTransition: c,
@@ -142,27 +142,27 @@ let A = e => {
               tab: b
             }, n);
             break;
-          case o.z.FEATURED:
+          case a.z.FEATURED:
             l = (0, r.jsx)(E.Z, {
               isLoading: M,
               handleTransition: c,
               featuredBlockRecord: e
             }, n);
             break;
-          case o.z.FEED:
+          case a.z.FEED:
             let g = e.sortedSkuIds;
             l = (0, r.jsx)(O.Z, {
               title: b === L.AW.ORBS ? B.intl.string(B.t.dFgeuZ) : B.intl.string(B.t.NSv5KV),
               isLoading: M || f,
               numVisibleItems: u,
               sortedSkuIds: g,
-              buttonContainerClassName: (null == t ? true : t.type) === o.z.IMMERSIVE_BANNER ? N.feedblockInteractiveBackground : true,
+              buttonContainerClassName: (null == t ? true : t.type) === a.z.IMMERSIVE_BANNER ? N.feedblockInteractiveBackground : true,
               prioritizeUserDiscounts: b === L.AW.HOME,
               tab: b,
               orbsSupportedOnly: b === L.AW.ORBS
             }, n);
             break;
-          case o.z.WIDE_BANNER:
+          case a.z.WIDE_BANNER:
             if (e.isDismissible) {
               var m;
               let t = null != (m = e.dismissibleContentVersion) ? m : 0,
@@ -176,26 +176,26 @@ let A = e => {
               tab: b
             }, n);
             break;
-          case o.z.SHELF:
-            l = (0, r.jsx)(k.Z, {
+          case a.z.SHELF:
+            l = (0, r.jsx)(I.Z, {
               handleTransition: c,
               shelf: e,
               tab: b
             }, n);
             break;
-          case o.z.COUNTDOWN_TIMER:
+          case a.z.COUNTDOWN_TIMER:
             l = (0, r.jsx)(x.J, {
               countdownTimerBlock: e,
               isVisible: Z
             }, n), i = true;
             break;
-          case o.z.IMMERSIVE_BANNER:
+          case a.z.IMMERSIVE_BANNER:
             l = (0, r.jsx)(y.Z, {
               immersiveBannerBlock: e,
               onVisibilityChange: e => w(!e)
             }, n);
             break;
-          case o.z.REWARD_HERO:
+          case a.z.REWARD_HERO:
             l = (0, r.jsx)(j.Z, {
               isLoading: M,
               handleTransition: c,
@@ -209,7 +209,7 @@ let A = e => {
         return (0, r.jsx)(p.g6, {
           blockType: e.type,
           children: (0, r.jsx)("div", {
-            className: a()(N.blockContainer, N.feedContent, {
+            className: o()(N.blockContainer, N.feedContent, {
               [N.skipPadding]: 0 === n || i
             }),
             children: l
@@ -223,25 +223,25 @@ let A = e => {
       handleTransition: t,
       tab: n,
       transitionState: i
-    } = e, a = l.useRef(null), {
-      handleScroll: o
-    } = (0, u.z)(a, n), s = (0, b.R)(), d = (0, g.sp)(), [p, m] = l.useState(L.IV), [h, C] = l.useState(false);
+    } = e, o = l.useRef(null), {
+      handleScroll: a
+    } = (0, u.z)(o, n), s = (0, b.R)(), d = (0, g.sp)(), [p, m] = l.useState(L.IV), [h, C] = l.useState(false);
     return l.useEffect(() => {
-      if (null != a.current) {
+      if (null != o.current) {
         let e = () => {
-            if (null == a.current) return;
-            let e = a.current.getDistanceFromBottom();
+            if (null == o.current) return;
+            let e = o.current.getDistanceFromBottom();
             p >= 36 ? C(e < 20) : e <= 200 && m(e => e + L.IV)
           },
-          t = a.current.getScrollerNode();
+          t = o.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [a, p, m, C]), (0, r.jsx)(c.Den, {
+    }, [o, p, m, C]), (0, r.jsx)(c.Den, {
       className: N.shopScroll,
-      ref: a,
-      onScroll: o,
+      ref: o,
+      onScroll: a,
       children: (0, r.jsxs)("div", {
         className: N.shop,
         children: [(0, r.jsxs)("div", {
@@ -273,10 +273,10 @@ let A = e => {
               fullWidth: true
             })]
           })]
-        }), (0, r.jsx)(I.Z, {
+        }), (0, r.jsx)(k.Z, {
           peaking: h,
           transitioning: i === L.f7.OUT
-        }), (0, r.jsx)(I.Z, {
+        }), (0, r.jsx)(k.Z, {
           style: {
             left: 1850
           },

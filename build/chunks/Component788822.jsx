@@ -37,7 +37,7 @@ let m = e => {
     innerRef: S,
     onChange: E,
     threshold: 0,
-    children: (0, r.jsxs)(a.P3F, {
+    children: (0, r.jsxs)(o.P3F, {
       className: p.featuredBlock,
       innerRef: S,
       style: function(e) {
@@ -66,7 +66,7 @@ let m = e => {
           categorySkuId: x,
           isInternalShopDeeplink: true,
           isOrbsExclusive: null == C ? true : C.isOrbsExclusive
-        }), o.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        }), a.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == j ? true : j.sessionId,
           sku_id: x,
           page_type: "home",
@@ -77,13 +77,13 @@ let m = e => {
           cta_name: null
         })
       },
-      children: [null != b && (0, r.jsx)(a.IGR, {
+      children: [null != b && (0, r.jsx)(o.IGR, {
         disableColor: true,
         text: b,
         className: p.featuredBlockBadge
       }), (0, r.jsx)("div", {
         className: p.featuredBlockTextContainer,
-        children: null != y && (0, r.jsx)(a.Heading, {
+        children: null != y && (0, r.jsx)(o.Heading, {
           lineClamp: 4,
           className: p.featuredBlockBodyText,
           style: {
@@ -94,7 +94,7 @@ let m = e => {
         })
       }), (0, r.jsx)("div", {
         className: p.featuredBlockButtonContainer,
-        children: (0, r.jsx)(a.Button, {
+        children: (0, r.jsx)(o.Button, {
           variant: "overlay-primary",
           text: g.intl.string(g.t.jVcuVY),
           onClick: e => {
@@ -103,7 +103,7 @@ let m = e => {
               categorySkuId: x,
               isInternalShopDeeplink: true,
               isOrbsExclusive: null == C ? true : C.isOrbsExclusive
-            }), e.stopPropagation(), o.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            }), e.stopPropagation(), a.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == j ? true : j.sessionId,
               sku_id: x,
               page_type: "home",

@@ -1,5 +1,5 @@
 /** Chunk was on 84992 **/
-/** chunk id: 335105, original params: e,t,n (module,exports,require) **/
+/** chunk id: 335105, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -11,37 +11,37 @@ var Chunk780384 = require("./780384.js"),
   Chunk210642 = require("./210642.jsx"),
   Chunk859218 = require("./859218.jsx"),
   Chunk298522 = require("./298522.js");
-let d = e => {
+let d = t => {
   let {
-    type: t,
+    type: e,
     theme: n
-  } = e;
-  return (0, s.jsx)("div", {
+  } = t;
+  return (0, l.jsx)("div", {
     className: c.gradientOuterBorder,
-    children: (0, s.jsx)("div", {
+    children: (0, l.jsx)("div", {
       className: c.gradientInnerBorder,
-      children: ((e, t) => {
-        let n = (0, l.wj)(t) ? "white" : "black";
-        switch (e) {
+      children: ((t, e) => {
+        let n = (0, s.wj)(e) ? "white" : "black";
+        switch (t) {
           case i.Yk.PREMIUM_UPDATED:
-            return (0, s.jsx)(C.Z, {
+            return (0, l.jsx)(C.Z, {
               color: n,
               className: c.svgCopy
             });
           case i.Yk.PREMIUM_ACTIVATED:
-            return (0, s.jsx)(a.Z, {
+            return (0, l.jsx)(a.Z, {
               color: n,
               className: c.svgCopy
             });
           case i.Yk.PREMIUM_PAYMENT_STARTED:
-            return (0, s.jsx)(r.Z, {
+            return (0, l.jsx)(r.Z, {
               color: n,
               className: c.svgCopy
             });
           default:
             return null
         }
-      })(t, n)
+      })(e, n)
     })
   })
 }
