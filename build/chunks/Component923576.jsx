@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 923576, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -56,7 +56,7 @@ function b() {
       endedAt: true,
       premium_streak_started_at: p.default.fromTimestamp(t.getTime())
     };
-    b(true), await r.tn.patch({
+    b(true), await i.tn.patch({
       url: "/debug/subscriptions/".concat(_.id),
       body: n,
       rejectWithError: false

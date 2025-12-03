@@ -1,4 +1,4 @@
-/** Chunk was on 6377 **/
+/** Chunk was on 2026 **/
 /** chunk id: 539598, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -19,18 +19,18 @@ function m(e) {
     product: t
   } = e, n = (0, o.ql)(t, c.tuJ.PREMIUM_TIER_2);
   if (null == n) return null;
-  let m = (0, l.qr)(n.amount, n.currency);
+  let m = (0, a.qr)(n.amount, n.currency);
   return (0, r.jsxs)("div", {
     className: d.container,
     children: [(0, r.jsx)(i.u, {
       text: u.intl.string(u.t.MPFyJ5),
       "aria-label": u.intl.string(u.t.X3Ekj8),
-      children: (0, r.jsx)(a.SrA, {
+      children: (0, r.jsx)(l.SrA, {
         size: "md",
         color: "currentColor",
         className: d.nitroIcon
       })
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
       children: u.intl.format(u.t.Sv8iic, {
         price: m,

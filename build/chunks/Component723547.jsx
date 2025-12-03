@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 723547, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   v: () => o
@@ -21,21 +21,21 @@ function o(e) {
       className: s.content,
       children: [(0, a.jsx)(l.P3F, {
         className: s.closeIcon,
-        onClick: () => t(i.L.USER_DISMISS),
+        onClick: () => t(r.L.USER_DISMISS),
         children: (0, a.jsx)(l.Dio, {
           size: "xs"
         })
       }), (0, a.jsx)(l.Text, {
         className: s.description,
         variant: "text-md/normal",
-        children: r.intl.string(r.t["Ny/0ui"])
+        children: i.intl.string(i.t["Ny/0ui"])
       }), (0, a.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
-        text: r.intl.string(r.t.TYo738),
+        text: i.intl.string(i.t.TYo738),
         fullWidth: true,
         onClick: () => {
-          t(i.L.TAKE_ACTION), n()
+          t(r.L.TAKE_ACTION), n()
         }
       })]
     })

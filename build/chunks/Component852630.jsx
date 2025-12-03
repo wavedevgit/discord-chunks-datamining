@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 852630, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -13,7 +13,7 @@ function o(e) {
   let {
     selected: t,
     nameplate: n
-  } = e, o = (0, i.x)(), c = new r.mn({
+  } = e, o = (0, r.x)(), c = new i.mn({
     id: "0",
     type: s.d4z.DM,
     name: "self",

@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 189, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
 let s = e => {
   let {
     config: t
-  } = e, n = l.useMemo(() => (0, i.cloneDeep)(t), [t]), s = l.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), o = l.useMemo(() => {
+  } = e, n = l.useMemo(() => (0, r.cloneDeep)(t), [t]), s = l.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), o = l.useMemo(() => {
     if (s) {
       var e;
       let a = 1 === (e = n.effects.reduce((e, t) => {
@@ -24,7 +24,7 @@ let s = e => {
     }
     return n
   }, [t.effects, n, s]);
-  return (0, a.jsx)(r.n, {
+  return (0, a.jsx)(i.n, {
     profileEffectConfig: o,
     skuId: "debug"
   })

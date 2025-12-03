@@ -2,12 +2,12 @@
 /** chunk id: 963102, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  I: () => B
+  I: () => A
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -39,58 +39,58 @@ function L(e) {
     selected: l,
     handleTransition: i
   } = e;
-  return (0, r.jsx)(g.Z.Title, {
+  return (0, r.jsx)(f.Z.Title, {
     onClick: () => i(t),
-    wrapperClassName: T.tabWrapper,
-    className: o()(T.tab, {
-      [T.selected]: l
+    wrapperClassName: I.tabWrapper,
+    className: s()(I.tab, {
+      [I.selected]: l
     }),
     children: n
   })
 }
 
-function P(e) {
+function B(e) {
   let {
     tab: t,
     selected: n,
     displayText: i,
-    handleTransition: a
-  } = e, [s, u] = l.useState(false), p = l.useRef(null), [m, h] = l.useState(0), C = l.useRef(false), _ = e => {
-    clearTimeout(m), h(setTimeout(() => {
+    handleTransition: o
+  } = e, [a, u] = l.useState(false), p = l.useRef(null), [m, C] = l.useState(0), h = l.useRef(false), _ = e => {
+    clearTimeout(m), C(setTimeout(() => {
       u(e)
-    }, 100)), e && (C.current = f.Z.keyboardModeEnabled)
+    }, 100)), e && (h.current = g.Z.keyboardModeEnabled)
   }, b = e => {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), _(true))
   };
   return (0, r.jsx)("div", {
-    className: T.tabWithMenuContainer,
+    className: I.tabWithMenuContainer,
     onMouseEnter: () => _(true),
     onMouseLeave: () => _(false),
     children: (0, r.jsx)(c.yRy, {
       targetElementRef: p,
-      shouldShow: s,
+      shouldShow: a,
       position: "bottom",
       align: "left",
       onRequestOpen: () => _(true),
       onRequestClose: () => {
         var e;
-        C.current && !f.Z.keyboardModeEnabled && (0, d.Qj)(), _(false), null == (e = p.current) || e.focus()
+        h.current && !g.Z.keyboardModeEnabled && (0, d.Qj)(), _(false), null == (e = p.current) || e.focus()
       },
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
         return (0, r.jsx)(O.Z, {
-          handleTransition: a,
+          handleTransition: o,
           onClose: t
         })
       },
       children: (e, l) => {
-        var s, u;
+        var a, u;
         let {
           isShown: d
         } = l;
-        return (0, r.jsx)(g.Z.Title, (s = function(e) {
+        return (0, r.jsx)(f.Z.Title, (a = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -109,14 +109,14 @@ function P(e) {
           return e
         }({}, e), u = u = {
           ref: p,
-          onClick: () => a(t),
+          onClick: () => o(t),
           onKeyDown: b,
-          wrapperClassName: T.tabWrapper,
-          className: o()(T.tab, {
-            [T.selected]: n
+          wrapperClassName: I.tabWrapper,
+          className: s()(I.tab, {
+            [I.selected]: n
           }),
           children: (0, r.jsxs)("span", {
-            className: T.tabWithChevron,
+            className: I.tabWithChevron,
             children: [i, d ? (0, r.jsx)(c.u04, {
               size: "sm",
               color: "currentColor"
@@ -125,7 +125,7 @@ function P(e) {
               color: "currentColor"
             })]
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
@@ -133,75 +133,75 @@ function P(e) {
           }
           return n
         })(Object(u)).forEach(function(e) {
-          Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(u, e))
-        }), s))
+          Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(u, e))
+        }), a))
       }
     })
   })
 }
 
-function B(e) {
+function A(e) {
   let {
     selectedTab: t,
     handleTransition: n
-  } = e, i = (0, u.ZP)(), d = (0, s.e7)([v.default], () => v.default.getCurrentUser()), {
-    enabled: f
+  } = e, i = (0, u.ZP)(), d = (0, a.e7)([E.default], () => E.default.getCurrentUser()), {
+    enabled: g
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
   }), O = (0, m.Y)({
     location: "CollectiblesShopHeaderBar"
-  }), B = [{
+  }), A = [{
     tab: y.AW.HOME,
     displayText: k.intl.string(k.t.ijDDwz)
   }, {
     tab: y.AW.CATALOG,
     displayText: k.intl.string(k.t.Ah5sJo)
   }];
-  f && B.push({
+  g && A.push({
     tab: y.AW.ORBS,
     displayText: k.intl.string(k.t.EBYkzk)
   });
-  let N = t === y.AW.ORBS ? j.ZY5.SHOP_ORBS_TAB : j.ZY5.COLLECTIBLES_SHOP,
-    A = l.useCallback(() => {
-      (0, C.Y)({
+  let N = t === y.AW.ORBS ? T.ZY5.SHOP_ORBS_TAB : T.ZY5.COLLECTIBLES_SHOP,
+    P = l.useCallback(() => {
+      (0, h.Y)({
         pageType: N,
-        sectionType: j.jXE.ORBS_BALANCE_MENU,
-        ctaObject: j.qAy.CTA_TO_QUEST_HOME
+        sectionType: T.jXE.ORBS_BALANCE_MENU,
+        ctaObject: T.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
-        fromContent: a.j.ORBS_BALANCE_MENU
+        fromContent: o.j.ORBS_BALANCE_MENU
       })
     }, [N]),
-    R = (0, E.eN)("collectibles_shop_header_bar"),
+    R = (0, S.eN)("collectibles_shop_header_bar"),
     Z = l.useCallback(() => {
-      (null == d ? true : d.id) != null && (0, h.openUserProfileModal)({
+      (null == d ? true : d.id) != null && (0, C.openUserProfileModal)({
         userId: d.id,
-        section: I.oh.WISHLIST,
+        section: j.oh.WISHLIST,
         showGuildProfile: false
       })
     }, [null == d ? true : d.id]);
   return (0, r.jsx)(c.f6W, {
     theme: i,
-    children: e => (0, r.jsxs)(g.Z, {
+    children: e => (0, r.jsxs)(f.Z, {
       disableDoubleClick: true,
-      className: o()(e, T.headerBar),
-      innerClassname: f ? T.headerBarInner : true,
+      className: s()(e, I.headerBar),
+      innerClassname: g ? I.headerBarInner : true,
       children: [(0, r.jsxs)(c.P3F, {
-        className: T.shopHomeLink,
+        className: I.shopHomeLink,
         onClick: () => n(y.AW.HOME),
         "aria-label": k.intl.string(k.t.pWG4ze) + " home",
-        children: [(0, r.jsx)(x.Z, {
-          className: T.discordLogo
-        }), (0, r.jsx)(g.Z.Title, {
+        children: [(0, r.jsx)(v.Z, {
+          className: I.discordLogo
+        }), (0, r.jsx)(f.Z.Title, {
           children: k.intl.string(k.t.pWG4ze)
         })]
       }), (0, r.jsx)("div", {
-        className: T.tabs,
-        children: B.map(e => {
+        className: I.tabs,
+        children: A.map(e => {
           let {
             tab: l,
             displayText: i
           } = e;
-          return l === y.AW.CATALOG ? (0, r.jsx)(P, {
+          return l === y.AW.CATALOG ? (0, r.jsx)(B, {
             tab: l,
             selected: (0, y.RE)(t) || t === l,
             displayText: i,
@@ -213,25 +213,25 @@ function B(e) {
             handleTransition: n
           }, l)
         })
-      }), (f || R || O) && (0, r.jsxs)("div", {
-        className: T.alignedRightContent,
-        children: [R && (0, r.jsx)(S.Z, {
+      }), (g || R || O) && (0, r.jsxs)("div", {
+        className: I.alignedRightContent,
+        children: [R && (0, r.jsx)(x.Z, {
           handleTransition: n,
           selectedTab: t
         }), O && (0, r.jsx)(c.P3F, {
-          className: T.wishlistButton,
+          className: I.wishlistButton,
           onClick: Z,
           "aria-label": k.intl.string(k.t["7lZ31J"]),
           children: (0, r.jsx)(c.h_8, {
             size: "xs",
             color: "currentColor"
           })
-        }), f && (0, r.jsx)(b.V9, {
+        }), g && (0, r.jsx)(b.V9, {
           analyticsPage: N,
           cardAlignment: b.V9.CardAlignment.END,
           ctaText: k.intl.string(k.t.VC4Mq0),
-          ctaOnClick: A,
-          className: T.balanceWidgetMenu
+          ctaOnClick: P,
+          className: I.balanceWidgetMenu
         })]
       })]
     })

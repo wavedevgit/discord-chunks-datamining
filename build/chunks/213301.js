@@ -1,6 +1,5 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 88282 **/
 /** chunk id: 213301, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   productCardContainer: "productCardContainer_fcbddd",
   productCardContentContainer: "productCardContentContainer_fcbddd",

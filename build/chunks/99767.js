@@ -2,7 +2,7 @@
 /** chunk id: 99767, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  B: () => g
+  B: () => f
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk828700 = require("./828700.js"),
@@ -13,52 +13,52 @@ var Chunk473749 = require("./473749.js"),
   Chunk149705 = require("./149705.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js");
-let f = {
+let g = {
     [Chunk215023.AW.AVATAR_DECORATIONS]: Chunk335818.G.AVATAR_DECORATION,
     [Chunk215023.AW.PROFILE_EFFECTS]: Chunk335818.G.PROFILE_EFFECT,
     [Chunk215023.AW.NAMEPLATES]: Chunk335818.G.NAMEPLATE,
     [Chunk215023.AW.BUNDLES]: Chunk335818.G.BUNDLE
   },
-  g = e => {
+  f = e => {
     let {
       enabled: t
-    } = (0, o.WX)({
+    } = (0, s.WX)({
       location: "useShopViewTransition"
-    }), n = (0, a.FF)("CollectiblesBrowse"), {
+    }), n = (0, o.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: i,
-      reset: g,
+      reset: f,
       setCurrentTab: p
-    } = (0, s.S)(), m = r.useMemo(() => e !== u.AW.ORBS || t ? (0, u.RE)(e) && n ? u.AW.CATALOG : e : u.AW.HOME, [e, t, n]), [h, C] = r.useState(m), [_, b] = r.useState(u.f7.VISIBLE);
+    } = (0, a.S)(), m = r.useMemo(() => e !== u.AW.ORBS || t ? (0, u.RE)(e) && n ? u.AW.CATALOG : e : u.AW.HOME, [e, t, n]), [C, h] = r.useState(m), [_, b] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
-      p(h)
-    }, [h, p]), r.useEffect(() => {
-      if (C(m), e === u.AW.CATALOG) g();
+      p(C)
+    }, [C, p]), r.useEffect(() => {
+      if (h(m), e === u.AW.CATALOG) f();
       else if ((0, u.RE)(e)) {
-        let t = f[e];
-        null != t ? i(t) : g()
+        let t = g[e];
+        null != t ? i(t) : f()
       }
-    }, [m, e, i, g]);
+    }, [m, e, i, f]);
     let {
-      clearError: v
-    } = (0, c.a)(), x = (0, l.k6)(), E = r.useCallback(async (e, t) => {
-      if (v(), e === u.AW.CATALOG) g();
-      else if ((0, u.RE)(e) && e !== h) {
-        let t = f[e];
-        null != t ? i(t) : g()
+      clearError: E
+    } = (0, c.a)(), v = (0, l.k6)(), S = r.useCallback(async (e, t) => {
+      if (E(), e === u.AW.CATALOG) f();
+      else if ((0, u.RE)(e) && e !== C) {
+        let t = g[e];
+        null != t ? i(t) : f()
       }
-      if (h !== e) {
+      if (C !== e) {
         if (t) {
           let e;
           b(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
         }
-        C(n && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e), t && b(u.f7.IN), x.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(e), {
+        h(n && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e), t && b(u.f7.IN), v.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(e), {
           shallow: true
         }), b(u.f7.VISIBLE)
       }
-    }, [x, i, n, g, h, v]);
+    }, [v, i, n, f, C, E]);
     return {
-      selectedTab: h,
+      selectedTab: C,
       transitionState: _,
-      transitionToTab: E
+      transitionToTab: S
     }
   }

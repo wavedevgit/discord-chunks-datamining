@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 474376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => _
@@ -26,17 +26,17 @@ var Chunk442837 = require("./442837.js"),
 function _(e) {
   let t = (0, l.e7)([u.default], () => u.default.getCurrentUser()),
     n = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation),
-    _ = (0, l.e7)([o.Z], () => (0, r.wj)(o.Z.theme)),
+    _ = (0, l.e7)([o.Z], () => (0, i.wj)(o.Z.theme)),
     {
       multiAccountUsers: y
     } = (0, f.L)(),
     C = y.map(l => {
-      let r = new c.Z(l),
-        o = r.id === (null == t ? true : t.id),
+      let i = new c.Z(l),
+        o = i.id === (null == t ? true : t.id),
         d = l.tokenStatus === x.q.INVALID,
-        u = n ? null : "#".concat(r.discriminator);
+        u = n ? null : "#".concat(i.discriminator);
       return (0, a.jsx)(s.sNh, {
-        id: r.id,
+        id: i.id,
         focusedClassName: j.focused,
         label: e => {
           let {
@@ -45,7 +45,7 @@ function _(e) {
           return (0, a.jsxs)("div", {
             className: j.userMenuItem,
             children: [(0, a.jsx)(s.qEK, {
-              src: r.getAvatarURL(true, 40),
+              src: i.getAvatarURL(true, 40),
               size: s.EFr.SIZE_24,
               "aria-label": l.username
             }), (0, a.jsxs)("div", {
@@ -53,23 +53,23 @@ function _(e) {
               children: [(0, a.jsx)(s.Text, {
                 className: j.userMenuText,
                 variant: "text-sm/normal",
-                children: p.ZP.getUserTag(r, {
+                children: p.ZP.getUserTag(i, {
                   mode: "username",
                   identifiable: n ? "never" : "always"
                 })
-              }), !r.hasUniqueUsername() && (0, a.jsx)(s.Text, {
+              }), !i.hasUniqueUsername() && (0, a.jsx)(s.Text, {
                 className: j.userMenuDiscriminator,
                 variant: "text-sm/normal",
                 children: u
               })]
             }), o && (0, a.jsx)(s.owK, {
               size: "sm",
-              color: t ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.BRAND_500.css,
-              secondaryColor: t && _ || t && !_ ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE_500.css,
+              color: t ? r.Z.unsafe_rawColors.WHITE_500.css : r.Z.unsafe_rawColors.BRAND_500.css,
+              secondaryColor: t && _ || t && !_ ? r.Z.unsafe_rawColors.BRAND_500.css : r.Z.unsafe_rawColors.WHITE_500.css,
               className: j.activeIcon
             }), d && (0, a.jsx)(s.Mgn, {
-              color: i.Z.unsafe_rawColors.RED_400.css,
-              secondaryColor: t && _ || t && !_ ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE_500.css,
+              color: r.Z.unsafe_rawColors.RED_400.css,
+              secondaryColor: t && _ || t && !_ ? r.Z.unsafe_rawColors.BRAND_500.css : r.Z.unsafe_rawColors.WHITE_500.css,
               size: "xs",
               className: j.activeIcon
             })]
@@ -79,14 +79,14 @@ function _(e) {
           if (null == e || e(), d)(0, g.Z)();
           else {
             var n;
-            (n = r.id) !== (null == t ? true : t.id) && (m.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+            (n = i.id) !== (null == t ? true : t.id) && (m.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
               location: {
                 section: b.jXE.USER_PROFILE
               }
             }), h.yD(n))
           }
         }
-      }, r.id)
+      }, i.id)
     });
   return C.push((0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.Clw, {}), (0, a.jsx)(s.sNh, {

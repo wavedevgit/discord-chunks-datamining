@@ -1,12 +1,11 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 88282 **/
 /** chunk id: 659755, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -23,66 +22,66 @@ var Chunk54381 = require("./54381.js"),
   Chunk58201 = require("./58201.js"),
   Chunk201964 = require("./201964.js"),
   Chunk1327 = require("./1327.js");
-let E = e => {
+let y = e => {
     let {
       product: t,
       isCardHovered: n
-    } = e, l = (0, p.rC)(t), {
-      isPurchased: a,
-      isPartiallyOwnedBundle: s
-    } = (0, g.L)(t), c = l === o.Z.PROFILE_EFFECT;
-    return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)("div", {
-        className: i()(x.productPreview, {
-          [x.faded]: (a || s) && !n,
-          [x.fullPreview]: c
+    } = e, l = (0, h.rC)(t), {
+      isPurchased: s,
+      isPartiallyOwnedBundle: o
+    } = (0, p.L)(t), c = l === i.Z.PROFILE_EFFECT;
+    return (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsx)("div", {
+        className: r()(_.productPreview, {
+          [_.faded]: (s || o) && !n,
+          [_.fullPreview]: c
         }),
-        children: (0, r.jsx)(O, {
+        children: (0, a.jsx)(C, {
           product: t,
           isCardHovered: n
         })
-      }), a && (0, r.jsx)(S, {
+      }), s && (0, a.jsx)(S, {
         hidden: n
       })]
     })
   },
-  O = e => {
+  C = e => {
     let {
       product: t,
       isCardHovered: n
-    } = e, l = (0, s.e7)([d.default], () => d.default.getCurrentUser()), i = (0, p.rC)(t), a = (0, v.o)(t);
-    switch (i) {
-      case o.Z.PROFILE_EFFECT:
-        return (0, r.jsx)(u.Z, {
-          skuId: a.skuId,
+    } = e, l = (0, o.e7)([u.default], () => u.default.getCurrentUser()), r = (0, h.rC)(t), s = (0, j.o)(t);
+    switch (r) {
+      case i.Z.PROFILE_EFFECT:
+        return (0, a.jsx)(d.Z, {
+          skuId: s.skuId,
           isHighlighted: n,
           isPurchased: false,
           removeSetHeight: true
         });
-      case o.Z.AVATAR_DECORATION:
-        return (0, r.jsx)(h.R, {
-          item: a,
+      case i.Z.AVATAR_DECORATION:
+        return (0, a.jsx)(f.R, {
+          item: s,
           user: l,
           isHighlighted: n,
           isPurchased: false,
           avatarSize: c.EFr.SIZE_120
         });
-      case o.Z.NAMEPLATE:
-        return (0, r.jsx)(_.Z, {
-          nameplate: a,
+      case i.Z.NAMEPLATE:
+        return (0, a.jsx)(b.Z, {
+          nameplate: s,
           user: l,
           isHighlighted: n,
           isPurchased: false
         });
-      case o.Z.BUNDLE:
-        return (0, r.jsx)(C.U, {
+      case i.Z.BUNDLE:
+        return (0, a.jsx)(g.U, {
           product: t,
           user: l,
           isHighlighted: n,
           isPurchased: false
         });
-      case o.Z.EXTERNAL_SKU:
-        return (0, r.jsx)(m.b, {
+      case i.Z.EXTERNAL_SKU:
+        return (0, a.jsx)(x.b, {
           product: t,
           animationState: n ? "on" : "off"
         });
@@ -94,26 +93,26 @@ let E = e => {
     let {
       hidden: t
     } = e;
-    return (0, r.jsx)(a.sV5, {
+    return (0, a.jsx)(s.sV5, {
       size: "custom",
       color: c.TVs.colors.INTERACTIVE_ACTIVE,
       width: 40,
       height: 40,
-      className: i()(x.productPreviewIconOverlay, {
-        [x.hidden]: t
+      className: r()(_.productPreviewIconOverlay, {
+        [_.hidden]: t
       })
     })
   },
-  y = e => {
+  E = e => {
     let {
       skuId: t,
       isCardHovered: n,
       overrideVariantIndex: l
-    } = e, i = (0, p.LJ)(t), o = (0, f.o)(i);
-    if (null == i) return null;
-    let a = (0, b.W)(i, null != l ? l : o);
-    return (0, r.jsx)(E, {
-      product: a,
+    } = e, r = (0, h.LJ)(t), i = (0, m.o)(r);
+    if (null == r) return null;
+    let s = (0, v.W)(r, null != l ? l : i);
+    return (0, a.jsx)(y, {
+      product: s,
       isCardHovered: n
     })
   }

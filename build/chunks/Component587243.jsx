@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 587243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => b,
@@ -42,30 +42,30 @@ function g(e) {
   let {
     status: t,
     currentStatus: n,
-    description: i
-  } = e, r = t !== m.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
+    description: r
+  } = e, i = t !== m.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
     children: x.map(e => {
       let {
-        duration: i,
-        label: r
+        duration: r,
+        label: i
       } = e;
       return (0, a.jsx)(l.sNh, {
-        id: "".concat(t, "-").concat(i),
-        label: r(),
+        id: "".concat(t, "-").concat(r),
+        label: i(),
         action: () => (0, u.Z)({
           nextStatus: t,
           prevStatus: n,
-          durationMillis: i
+          durationMillis: r
         }),
         dontCloseOnAction: true
-      }, null != i ? i : f)
+      }, null != r ? r : f)
     })
   });
   return (0, a.jsx)(l.sNh, {
     id: t,
     className: h.expiringStatusMenuItem,
     keepItemStyles: true,
-    hasSubmenu: r,
+    hasSubmenu: i,
     label: e => {
       let {
         isFocused: n
@@ -80,9 +80,9 @@ function g(e) {
         }), (0, a.jsx)("div", {
           className: h.status,
           children: (0, c.u5)(t)
-        }), null != i && (0, a.jsx)("div", {
+        }), null != r && (0, a.jsx)("div", {
           className: h.description,
-          children: i
+          children: r
         })]
       })
     },
@@ -93,7 +93,7 @@ function g(e) {
       })
     },
     dontCloseOnAction: true,
-    children: r ? s : true
+    children: i ? s : true
   })
 }
 
@@ -114,8 +114,8 @@ function b(e) {
 
 function v(e) {
   let t = s.Cr.useSetting(),
-    n = (0, i.p)(),
-    o = r.e.useExperiment({
+    n = (0, r.p)(),
+    o = i.e.useExperiment({
       location: "UserProfileAccountPopout"
     }).allowQuietMode || n,
     c = s.fv.useSetting(),
@@ -136,13 +136,13 @@ function v(e) {
       children: x.map(t => {
         let {
           duration: n,
-          label: r
+          label: i
         } = t;
         return (0, a.jsx)(l.sNh, {
           id: "".concat(e, "-").concat(n),
-          label: r(),
+          label: i(),
           action: () => {
-            (0, i.oW)(true, n)
+            (0, r.oW)(true, n)
           },
           dontCloseOnAction: true
         }, null != n ? n : f)
@@ -199,7 +199,7 @@ function v(e) {
           })]
         }),
         action: () => {
-          (0, i.oW)(!n)
+          (0, r.oW)(!n)
         },
         dontCloseOnAction: true,
         children: v

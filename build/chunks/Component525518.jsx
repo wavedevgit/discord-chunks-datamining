@@ -1,4 +1,4 @@
-/** Chunk was on 6377 **/
+/** Chunk was on 2026 **/
 /** chunk id: 525518, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => d
@@ -17,16 +17,16 @@ function d(e) {
     skuId: t,
     tab: n
   } = e, d = i.useCallback(() => {
-    l.default.track(c.rMx.COLLECTIBLES_SHARE_LINK_BUTTON_CLICKED, {
+    a.default.track(c.rMx.COLLECTIBLES_SHARE_LINK_BUTTON_CLICKED, {
       sku_id: t
     });
     let e = "".concat(location.protocol, "//").concat(location.host).concat(c.Z5c.COLLECTIBLES_SHOP).concat((0, s.aK)(n) ? "?tab=".concat(n) : "", "#itemSkuId=").concat(t);
-    (0, o.JG)(e, () => (0, a.showToast)((0, a.createToast)(u.intl.string(u.t["L/PwZf"]), a.ToastType.SUCCESS)))
+    (0, o.JG)(e, () => (0, l.showToast)((0, l.createToast)(u.intl.string(u.t["L/PwZf"]), l.ToastType.SUCCESS)))
   }, [t, n]);
-  return (0, r.jsx)(a.hU, {
+  return (0, r.jsx)(l.hU, {
     "aria-label": u.intl.string(u.t.WqhZss),
     onClick: d,
-    icon: a.xPt,
+    icon: l.xPt,
     variant: "overlay-secondary",
     size: "sm"
   })

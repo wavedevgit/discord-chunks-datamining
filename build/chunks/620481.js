@@ -1,14 +1,14 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 620481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   FB: () => _,
   Jt: () => E,
   OC: () => S,
   Sr: () => C,
-  V_: () => N,
+  V_: () => O,
   lG: () => y,
   mo: () => j,
-  tb: () => T
+  tb: () => N
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
 var Chunk279779 = require("./279779.js"),
   Chunk933557 = require("./933557.js"),
@@ -46,8 +46,8 @@ function j() {
       let n = t.username,
         a = f.ZP.getGlobalName(t),
         l = m.Z.getNickname(t.id),
-        i = d.ZP.getNicknames(t.id);
-      b.info("username: ".concat(n)), b.info("global name: ".concat(a)), b.info("nickname: ".concat(l)), b.info("guild nicknames: ".concat(i)), v()
+        r = d.ZP.getNicknames(t.id);
+      b.info("username: ".concat(n)), b.info("global name: ".concat(a)), b.info("nickname: ".concat(l)), b.info("guild nicknames: ".concat(r)), v()
     })
   }), b.info("END Logging Group DM Channels\n"), b.info("START Logging DM Channels"), require.forEach(e => {
     let t = (0, l.F6)(e, p.default, m.Z);
@@ -55,10 +55,10 @@ function j() {
     let n = e.getRecipientId(),
       a = p.default.getUser(n);
     if (null == a) return;
-    let i = a.username,
-      r = f.ZP.getGlobalName(a),
+    let r = a.username,
+      i = f.ZP.getGlobalName(a),
       s = m.Z.getNickname(a.id);
-    b.info("username: ".concat(i)), b.info("global name: ".concat(r)), b.info("nickname: ".concat(s)), v()
+    b.info("username: ".concat(r)), b.info("global name: ".concat(i)), b.info("nickname: ".concat(s)), v()
   }), b.info("END Logging DM Channels\n")
 }
 
@@ -77,8 +77,8 @@ function _() {
       let n = t.username,
         a = f.ZP.getGlobalName(t),
         l = m.Z.getNickname(t.id),
-        i = d.ZP.getNicknames(t.id);
-      b.info("username: ".concat(n)), b.info("global name: ".concat(a)), b.info("nickname: ".concat(l)), b.info("guild nicknames: ".concat(i)), v()
+        r = d.ZP.getNicknames(t.id);
+      b.info("username: ".concat(n)), b.info("global name: ".concat(a)), b.info("nickname: ".concat(l)), b.info("guild nicknames: ".concat(r)), v()
     })
   }), b.info("END Logging Group DM Channels\n"), b.info("START Logging DM Channels"), require.forEach(e => {
     let t = (0, l.F6)(e, p.default, m.Z);
@@ -86,10 +86,10 @@ function _() {
     let n = e.getRecipientId(),
       a = p.default.getUser(n);
     if (null == a) return;
-    let i = a.username,
-      r = f.ZP.getGlobalName(a),
+    let r = a.username,
+      i = f.ZP.getGlobalName(a),
       s = m.Z.getNickname(a.id);
-    b.info("username: ".concat(i)), b.info("global name: ".concat(r)), b.info("nickname: ".concat(s)), v()
+    b.info("username: ".concat(r)), b.info("global name: ".concat(i)), b.info("nickname: ".concat(s)), v()
   }), b.info("END Logging DM Channels\n")
 }
 
@@ -101,8 +101,8 @@ function y() {
     let n = t.username,
       a = f.ZP.getGlobalName(t),
       l = m.Z.getNickname(t.id),
-      i = d.ZP.getNicknames(t.id);
-    b.info("username: ".concat(n)), b.info("global name: ".concat(a)), b.info("nickname: ".concat(l)), b.info("guild nicknames: ".concat(i)), v()
+      r = d.ZP.getNicknames(t.id);
+    b.info("username: ".concat(n)), b.info("global name: ".concat(a)), b.info("nickname: ".concat(l)), b.info("guild nicknames: ".concat(r)), v()
   }), b.info("END Discord Friends\n")
 }
 
@@ -111,9 +111,9 @@ function C() {
     t = [],
     n = [],
     a = [],
-    i = [];
+    r = [];
   module.forEach(e => {
-    (0, h.lM)(e) ? t.push(e): e.isDM() ? a.push(e) : e.isMultiUserDM() ? i.push(e) : n.push(e)
+    (0, h.lM)(e) ? t.push(e): e.isDM() ? a.push(e) : e.isMultiUserDM() ? r.push(e) : n.push(e)
   }), b.info("START Frecency"), b.info("Guilds"), exports.forEach(e => {
     let t = o.Z.getScoreWithoutFetchingLatest(e.id);
     b.info("id: ".concat(e.id, " - name: ").concat(e.name, " - Frecency Score: ").concat(t))
@@ -170,32 +170,32 @@ async function E() {
     }), v()
   }), b.info("END User Search Worker State\n")
 }
-async function T() {
+async function N() {
   let e = await Chunk279779.Z.requestDebugState();
   if (null == module) throw Error("Unable to get debug state from User Search Worker");
   let t = JSON.parse(module.users),
     n = Chunk594174.default.getUsers(),
     l = new Set(Object.keys(exports)),
-    i = Chunk709054.default.keys(require),
-    r = [];
+    r = Chunk709054.default.keys(require),
+    i = [];
   return Chunk710845.forEach(e => {
-    l.has(e) || r.push(e)
+    l.has(e) || i.push(e)
   }), Chunk823385
 }
-async function N(e) {
+async function O(e) {
   let t = await a.Z.requestDebugState(),
     n = null != t ? JSON.parse(t.users)[e] : null,
     l = u.Z.getGuildIds(),
-    i = [];
+    r = [];
   l.forEach(t => {
     let n = d.ZP.getMember(t, e);
-    null != n && i.push(n)
+    null != n && r.push(n)
   });
-  let r = c.Z.getDebugState(e);
+  let i = c.Z.getDebugState(e);
   return {
     user: p.default.getUser(e),
     searchWorkerUser: n,
-    guildMembers: i,
-    guildMemberRequests: r
+    guildMembers: r,
+    guildMemberRequests: i
   }
 }

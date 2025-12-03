@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 812055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C,
@@ -50,17 +50,17 @@ function C(e) {
     onDismiss: n,
     children: l
   } = e, {
-    enabled: i,
-    titleText: r,
+    enabled: r,
+    titleText: i,
     bodyText: o
   } = (0, h.a)({
     location: "popover",
     autoTrackExposure: false
   });
-  return null != t.current && i ? (0, a.jsxs)(a.Fragment, {
+  return null != t.current && r ? (0, a.jsxs)(a.Fragment, {
     children: [l, (0, a.jsx)(s.J2, {
       targetElementRef: t,
-      title: g.intl.string(r),
+      title: g.intl.string(i),
       body: g.intl.string(o),
       caretConfig: {
         align: "start"

@@ -2,7 +2,7 @@
 /** chunk id: 548257, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk497788 = require("./497788.jsx"),
   Chunk310582 = require("./310582.js");
 (0, Chunk884697.IC)(90);
-let h = {
+let C = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: true,
@@ -31,42 +31,42 @@ let h = {
     categoryStoreListingId: "",
     rewardSkuId: true
   },
-  C = e => {
+  h = e => {
     var t;
     let {
       isLoading: n = false,
       heroBlock: l,
-      tab: a,
+      tab: o,
       onVisibilityChange: d
-    } = e, C = (0, o.O)(e => {
+    } = e, h = (0, s.O)(e => {
       null == d || d(e)
-    }, .1, null != d), _ = (0, s.e7)([u.default], () => u.default.getCurrentUser()), {
+    }, .1, null != d), _ = (0, a.e7)([u.default], () => u.default.getCurrentUser()), {
       bannerStyleOverrides: b,
-      logoStyleOverrides: v,
-      heroLogo: x,
-      heroBannerStatic: E,
+      logoStyleOverrides: E,
+      heroLogo: v,
+      heroBannerStatic: S,
       heroBannerAnimated: O
-    } = (0, f.hr)(l), S = null != (t = null == b ? true : b.responsive) && t, y = null == b ? true : b.backgroundStyle;
-    return null != _ && (n || l !== h) ? (0, r.jsxs)("div", {
-      ref: C,
+    } = (0, g.hr)(l), x = null != (t = null == b ? true : b.responsive) && t, y = null == b ? true : b.backgroundStyle;
+    return null != _ && (n || l !== C) ? (0, r.jsxs)("div", {
+      ref: h,
       className: m.heroBlock,
       children: [(0, r.jsx)("div", {
         className: i()(m.banner, {
-          [m.responsive]: S
+          [m.responsive]: x
         }),
         style: null != y ? {
           background: y
         } : true,
-        children: null != E && (0, r.jsx)(g.Z, {
-          bannerStatic: E,
+        children: null != S && (0, r.jsx)(f.Z, {
+          bannerStatic: S,
           bannerAnimated: O,
-          isResponsive: S
+          isResponsive: x
         })
       }), (0, r.jsxs)("div", {
         className: m.heroBlockContent,
         children: [(0, r.jsx)("div", {
           className: i()(m.heroHeaderContainer, {
-            [m.responsive]: S
+            [m.responsive]: x
           }),
           children: n ? (0, r.jsx)("div", {
             className: m.heroHeaderBadgeLogoSummaryContainer
@@ -74,11 +74,11 @@ let h = {
             className: m.heroHeaderBadgeLogoSummaryContainer,
             children: (0, r.jsxs)("div", {
               className: m.heroLogoNameContainer,
-              children: [null != x && (0, r.jsx)("img", {
+              children: [null != v && (0, r.jsx)("img", {
                 className: m.heroHeaderLogo,
-                src: x,
+                src: v,
                 alt: l.name,
-                style: null == v ? true : v.toDesktopStyles()
+                style: null == E ? true : E.toDesktopStyles()
               }), null != l.title && (0, r.jsx)(c.Heading, {
                 variant: "heading-xxl/bold",
                 className: m.title,
@@ -97,7 +97,7 @@ let h = {
         }), (0, r.jsx)(p.Z, {
           isBlockLoading: n,
           heroBlock: l,
-          tab: a
+          tab: o
         })]
       })]
     }) : null

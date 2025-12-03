@@ -2,12 +2,12 @@
 /** chunk id: 373183, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk622535 = require("./622535.js"),
@@ -27,59 +27,59 @@ var Chunk54381 = require("./54381.js"),
   Chunk250967 = require("./250967.js"),
   Chunk182975 = require("./182975.js"),
   Chunk655603 = require("./655603.js");
-let j = Chunk473749.memo(function(e) {
+let T = Chunk473749.memo(function(e) {
   let {
     category: t,
     rewardSkuId: n
   } = e, {
     handleCardVisibilityChange: i
-  } = (0, C.E)(n), j = l.useRef(null), {
-    isHoveringOrFocusing: I
-  } = (0, f.Z)(j), {
+  } = (0, h.E)(n), T = l.useRef(null), {
+    isHoveringOrFocusing: j
+  } = (0, g.Z)(T), {
     readyToClaim: k,
-    collectibleProductSkuIds: T,
+    collectibleProductSkuIds: I,
     collectedSkuIds: L
-  } = (0, b.q)(t, n), P = (0, s.e7)([h.Z], () => h.Z.isClaiming === n);
+  } = (0, b.q)(t, n), B = (0, a.e7)([C.Z], () => C.Z.isClaiming === n);
   return (0, r.jsx)(c.$, {
     onChange: i,
     threshold: 0,
-    innerRef: j,
+    innerRef: T,
     children: (0, r.jsx)("div", {
-      ref: j,
-      className: o()(x.productCardContainer, E.defaultCursor, {
-        [x.hovered]: I
+      ref: T,
+      className: s()(v.productCardContainer, S.defaultCursor, {
+        [v.hovered]: j
       }),
-      "aria-label": v.intl.formatToPlainString(v.t.Ez6aHE, {
+      "aria-label": E.intl.formatToPlainString(E.t.Ez6aHE, {
         category: t.name
       }),
       children: (0, r.jsxs)("div", {
-        className: x.productCardContentContainer,
+        className: v.productCardContentContainer,
         children: [(0, r.jsx)("img", {
           alt: "Reward Bow",
           src: y.Z,
-          className: E.rewardImage
+          className: S.rewardImage
         }), (0, r.jsx)("div", {
-          className: x.headerContainer,
+          className: v.headerContainer,
           children: (0, r.jsx)(d.IGR, {
-            text: v.intl.string(v.t.rykAJ9),
+            text: E.intl.string(E.t.rykAJ9),
             disableColor: true,
-            className: E.unlockRewardBadge
+            className: S.unlockRewardBadge
           })
         }), (0, r.jsxs)("div", {
-          className: x.footerContainer,
+          className: v.footerContainer,
           children: [(0, r.jsxs)("div", {
-            className: E.footerInfoContainer,
+            className: S.footerInfoContainer,
             children: [(0, r.jsxs)("div", {
-              className: E.footerInfo,
+              className: S.footerInfo,
               children: [(0, r.jsx)(d.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
                 lineClamp: 1,
-                className: x.productName,
-                children: v.intl.string(v.t["0mDmg/"])
+                className: v.productName,
+                children: E.intl.string(E.t["0mDmg/"])
               }), (0, r.jsx)(u.u, {
-                text: k ? v.intl.string(v.t.cKH3tk) : v.intl.formatToPlainString(v.t["8aMDPc"], {
-                  totalCount: T.length
+                text: k ? E.intl.string(E.t.cKH3tk) : E.intl.formatToPlainString(E.t["8aMDPc"], {
+                  totalCount: I.length
                 }),
                 align: "right",
                 caretConfig: {
@@ -88,46 +88,46 @@ let j = Chunk473749.memo(function(e) {
                 },
                 position: "top",
                 children: (0, r.jsx)("span", {
-                  className: E.questionIconContainer,
-                  children: (0, r.jsx)(a.idN, {
+                  className: S.questionIconContainer,
+                  children: (0, r.jsx)(o.idN, {
                     size: "xs"
                   })
                 })
               })]
             }), (0, r.jsx)("div", {
-              className: x.footerInfoShrinkOnHover,
+              className: v.footerInfoShrinkOnHover,
               "aria-hidden": true,
               children: (0, r.jsxs)("div", {
-                className: E.progressContainer,
-                children: [(0, r.jsx)(g.Z, {
-                  variant: g.y.BLUE,
+                className: S.progressContainer,
+                children: [(0, r.jsx)(f.Z, {
+                  variant: f.y.BLUE,
                   progress: L.length,
-                  maximum: T.length
+                  maximum: I.length
                 }), (0, r.jsxs)("div", {
-                  className: o()(E.progressTextContainer, {
-                    [E.readyToClaimText]: k
+                  className: s()(S.progressTextContainer, {
+                    [S.readyToClaimText]: k
                   }),
-                  children: [k ? (0, r.jsx)(a.kmB, {
+                  children: [k ? (0, r.jsx)(o.kmB, {
                     size: "xs",
                     color: "currentColor"
-                  }) : null, (0, r.jsx)(a.xvT, {
+                  }) : null, (0, r.jsx)(o.xvT, {
                     variant: "text-xs/medium",
                     color: "currentColor",
-                    children: v.intl.formatToPlainString(v.t["5TwASM"], {
+                    children: E.intl.formatToPlainString(E.t["5TwASM"], {
                       collectedCount: L.length,
-                      totalCount: T.length
+                      totalCount: I.length
                     })
                   })]
                 })]
               })
             })]
           }), (0, r.jsx)("div", {
-            className: x.footerButtonContainer,
-            children: (0, r.jsx)(a.hE2, {
+            className: v.footerButtonContainer,
+            children: (0, r.jsx)(o.hE2, {
               wrap: false,
-              className: x.footerButtonGroup,
+              className: v.footerButtonGroup,
               fullWidth: true,
-              children: (0, r.jsx)(a.zxk, {
+              children: (0, r.jsx)(o.zxk, {
                 variant: "primary",
                 onClick: e => {
                   e.stopPropagation(), k && (0, p.wW)(t.skuId, n).then(() => {
@@ -137,7 +137,7 @@ let j = Chunk473749.memo(function(e) {
                       analyticsLocations: [],
                       overrideGraphic: {
                         type: "video",
-                        src: S.Z,
+                        src: x.Z,
                         fallbackImageSrc: O.Z,
                         loop: true,
                         loopAt: 6,
@@ -145,26 +145,26 @@ let j = Chunk473749.memo(function(e) {
                       }
                     })
                   }).catch(() => {
-                    (0, d.ZDy)(() => Promise.resolve(e => (0, r.jsx)(a.Modal, {
+                    (0, d.ZDy)(() => Promise.resolve(e => (0, r.jsx)(o.Modal, {
                       transitionState: e.transitionState,
                       onClose: e.onClose,
                       size: "sm",
-                      title: v.intl.string(v.t.SRTlyA),
+                      title: E.intl.string(E.t.SRTlyA),
                       actions: [{
-                        text: v.intl.string(v.t.TyCVIq),
+                        text: E.intl.string(E.t.TyCVIq),
                         onClick: e.onClose,
                         variant: "primary"
                       }],
                       children: (0, r.jsx)("div", {
-                        children: v.intl.string(v.t["0YpIF/"])
+                        children: E.intl.string(E.t["0YpIF/"])
                       })
                     })))
                   })
                 },
-                text: v.intl.string(v.t.VnVTNc),
+                text: E.intl.string(E.t.VnVTNc),
                 fullWidth: true,
                 disabled: !k,
-                loading: P
+                loading: B
               })
             })
           })]

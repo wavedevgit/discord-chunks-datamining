@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 206878, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => v
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js"),
   Chunk281598 = require("./281598.js");
 
-function i(e) {
+function r(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -25,7 +25,7 @@ function i(e) {
   return e
 }
 
-function r(e, t) {
+function i(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -93,12 +93,12 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
     l.length > 0 && n("File names must be in lowercase snake case", l)
   }, g = (e, t, n, a) => {
     let l = t.size,
-      i = l > 1e6 ? "".concat((l / 1e6).toFixed(2), "MB") : "".concat((l / 1e3).toFixed(2), "KB"),
-      r = "".concat(t.name, " - ").concat(i);
+      r = l > 1e6 ? "".concat((l / 1e6).toFixed(2), "MB") : "".concat((l / 1e3).toFixed(2), "KB"),
+      i = "".concat(t.name, " - ").concat(r);
     if (l > e.max) {
       let t = e.max > 1e6 ? "".concat(Math.round(e.max / 1e6), "MB") : "".concat(Math.round(e.max / 1e3), "KB");
-      n("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(r, " (max: ").concat(t, ")")])
-    } else l > e.warn && a("Files are a tad chonky - are you sure they're optimized?", ["".concat(r)])
+      n("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(i, " (max: ").concat(t, ")")])
+    } else l > e.warn && a("Files are a tad chonky - are you sure they're optimized?", ["".concat(i)])
   }, b = (e, t, n, a) => {
     let l = h[e];
     if (null != l)
@@ -109,7 +109,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
       u(n => {
         var a;
         let l = null != (a = n[e]) ? a : [];
-        return r(i({}, n), {
+        return i(r({}, n), {
           [e]: [...l, ...t]
         })
       })
@@ -118,7 +118,7 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
       c(n => {
         var a;
         let l = null != (a = n[e]) ? a : [];
-        return r(i({}, n), {
+        return i(r({}, n), {
           [e]: [...l, ...t]
         })
       })
@@ -146,17 +146,17 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
             } = e;
             for (let e of t.collectionFiles) {
               let t = (0, l.BU)(e),
-                i = null != t ? h[t] : null;
-              null != i && g(i, e, n, a)
+                r = null != t ? h[t] : null;
+              null != r && g(r, e, n, a)
             }
             f({
               names: t.collectionFiles.map(e => e.name),
               addError: n
             });
-            let i = new Set(t.collectionFiles.map(e => e.name)),
-              r = Array.from(s).filter(e => !i.has(e));
-            r.length > 0 && n("Missing required files", r);
-            let o = Object.values(l.jE).filter(e => !s.has(e)).filter(e => !i.has(e));
+            let r = new Set(t.collectionFiles.map(e => e.name)),
+              i = Array.from(s).filter(e => !r.has(e));
+            i.length > 0 && n("Missing required files", i);
+            let o = Object.values(l.jE).filter(e => !s.has(e)).filter(e => !r.has(e));
             o.length > 0 && a("Missing optional assets", o)
           })({
             files: n,
@@ -172,17 +172,17 @@ let s = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
               names: Object.keys(t.profileEffectFilesMap),
               addError: n
             }), Object.entries(t.profileEffectFilesMap).forEach(e => {
-              let [t, i] = e, r = i.map(e => e.name);
+              let [t, r] = e, i = r.map(e => e.name);
               f({
-                names: r.map(e => {
+                names: i.map(e => {
                   let t = e.indexOf("-");
                   return e.substring(0, t > 0 ? t : e.length)
                 }),
                 addError: n
-              }), b(l.aB.PROFILE_EFFECT, i, n, a);
-              let s = o.filter(e => !r.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, "/").concat(e));
-              s.length > 0 && n("Missing required PFX files with prefix", s), r.some(e => e.endsWith(".txt")) || n("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
-              let c = r.filter(e => !o.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
+              }), b(l.aB.PROFILE_EFFECT, r, n, a);
+              let s = o.filter(e => !i.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, "/").concat(e));
+              s.length > 0 && n("Missing required PFX files with prefix", s), i.some(e => e.endsWith(".txt")) || n("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
+              let c = i.filter(e => !o.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
               c.length > 0 && a("Contains unrecognized files", c)
             })
           })({

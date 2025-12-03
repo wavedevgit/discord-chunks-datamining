@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 983380, original params: e,t,n (module,exports,require) **/
 module.exports = {
   hotspotsSection: "hotspotsSection__16e9e",

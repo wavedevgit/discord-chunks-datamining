@@ -1,10 +1,10 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 176038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _Y: () => N,
+  _Y: () => O,
   aB: () => E,
-  th: () => T,
-  ub: () => O
+  th: () => N,
+  ub: () => T
 }), require("./388685.js"), require("./457542.js");
 var Chunk473749 = require("./473749.js"),
   Chunk524437 = require("./524437.js"),
@@ -61,7 +61,7 @@ async function E() {
     }
   } catch (e) {}
 }
-async function T() {
+async function N() {
   let e = Chunk1870.Z.purchases,
     t = (0, Chunk884697.Ad)(module),
     n = (0, Chunk884697.jT)(module),
@@ -77,12 +77,12 @@ async function T() {
       (0, Chunk150039.Wh)(module)
     }
     let e = Chunk25990.Z.getAllPending(),
-      r = (0, Chunk164946.ED)(module);
+      i = (0, Chunk164946.ED)(module);
     await (0, Chunk809206.Mn)(Chunk153867).finally(Chunk809206.si)
   } catch (e) {}
 }
 
-function N() {
+function O() {
   try {
     let e = S(Chunk981631.yqN.FONT_SIZES);
     (0, Chunk857595.oL)(module);
@@ -93,7 +93,7 @@ function N() {
   } catch (e) {}
 }
 
-function O() {
+function T() {
   Chunk473749.useEffect(() => {
     var e, t, n, a, l;
     let b = Chunk594174.default.getCurrentUser(),
@@ -104,9 +104,9 @@ function O() {
       C = Chunk210887.Z.theme,
       S = Chunk981631.backgroundGradientPresetId,
       E = null == Chunk74538 || null == (e = Chunk74538.avatarDecoration) ? true : module.skuId,
-      T = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-      N = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk473749 : null,
-      O = null != T && null != (l = y.find(e => e.skuId === T)) ? Chunk524437 : null,
+      N = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
+      O = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk473749 : null,
+      T = null != N && null != (l = y.find(e => e.skuId === N)) ? Chunk524437 : null,
       P = Chunk607070.Z.fontSize,
       I = Chunk607070.Z.messageGroupSpacing,
       w = Chunk695346.YC.getSetting();
@@ -116,7 +116,7 @@ function O() {
           theme: C,
           backgroundGradientPresetId: null != S ? S : true,
           customUserThemeSettings: true
-        }, Chunk675478.fy.INFREQUENT_USER_ACTION), (0, Chunk150039.PO)(N), (0, Chunk150039.Wh)(O);
+        }, Chunk675478.fy.INFREQUENT_USER_ACTION), (0, Chunk150039.PO)(O), (0, Chunk150039.Wh)(T);
         let e = Chunk25990.Z.getAllPending(),
           t = (0, Chunk164946.ED)(module);
         (0, Chunk809206.Mn)(exports).finally(Chunk809206.si), (0, Chunk857595.oL)(P), (0, Chunk857595.ZZ)(I), Chunk695346.YC.updateSetting(w)

@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 206412, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   r: () => o
@@ -20,22 +20,22 @@ function o(e) {
   }, [d]), p = o ? "status-warning" : "text-default";
   return null == c ? (0, a.jsx)("div", {
     className: s.settingNode,
-    children: (0, a.jsx)(i.Text, {
+    children: (0, a.jsx)(r.Text, {
       variant: "text-md/normal",
       color: p,
       children: t
     })
   }) : (0, a.jsxs)("div", {
     className: s.settingNode,
-    children: [(0, a.jsxs)(i.P3F, {
+    children: [(0, a.jsxs)(r.P3F, {
       className: s.headerBar,
       onClick: m,
-      children: [(0, a.jsx)(i.Text, {
+      children: [(0, a.jsx)(r.Text, {
         variant: "text-md/bold",
         color: p,
         children: t
-      }), (0, a.jsx)(r.Z, {
-        direction: d ? r.Z.Directions.DOWN : r.Z.Directions.RIGHT,
+      }), (0, a.jsx)(i.Z, {
+        direction: d ? i.Z.Directions.DOWN : i.Z.Directions.RIGHT,
         className: s.headerCaret
       })]
     }), d && (0, a.jsx)("div", {

@@ -2,21 +2,21 @@
 /** chunk id: 501678, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  g6: () => o
+  g6: () => s
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js");
 let i = Chunk473749.createContext(null);
 
-function o(e) {
+function s(e) {
   let {
     blockType: t,
     children: n
-  } = e, o = l.useMemo(() => ({
+  } = e, s = l.useMemo(() => ({
     blockType: t
   }), [t]);
   return (0, r.jsx)(i.Provider, {
-    value: o,
+    value: s,
     children: n
   })
 }

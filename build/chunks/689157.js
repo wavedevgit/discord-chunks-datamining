@@ -1,6 +1,5 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 88282 **/
 /** chunk id: 689157, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   container: "container__2451c",
   profileEffectShopPreview: "profileEffectShopPreview__2451c",

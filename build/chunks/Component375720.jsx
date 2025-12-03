@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 375720, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   a: () => p
@@ -18,11 +18,11 @@ let p = e => {
     targetElementRef: t,
     markAsDismissed: n
   } = e, p = (0, l.useCallback)(() => {
-    (0, s.openUserSettings)(r.n.PRIVATE_BROWSING_PANEL, {
+    (0, s.openUserSettings)(i.n.PRIVATE_BROWSING_PANEL, {
       section: o.oAB.CF_WARP
     })
   }, []);
-  return (0, a.jsx)(i.J2, {
+  return (0, a.jsx)(r.J2, {
     badge: {
       type: "beta",
       variant: "expressive"

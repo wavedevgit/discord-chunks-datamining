@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 79869, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => Chunk951366.Oz,
@@ -12,5 +12,5 @@ let s = e => {
   l.PlaygroundStore.setState({
     selectedCollection: e,
     selectedStory: null
-  }), (0, a.jN)(r.S9g.COMPONENT_PLAYGROUND)
+  }), (0, a.jN)(i.S9g.COMPONENT_PLAYGROUND)
 }

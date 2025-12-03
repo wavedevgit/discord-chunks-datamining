@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
@@ -40,20 +40,20 @@ let C = [{
 function S() {
   let e = Chunk473749.useRef(null),
     t = Chunk695346.JG.useSetting(),
-    [n, i] = Chunk473749.useState(""),
+    [n, r] = Chunk473749.useState(""),
     o = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
     S = (0, Chunk835473.q)(require),
     E = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
       var e, t;
       return null != (t = null == S || null == (e = S.linkedGames) ? true : module.map(e => p.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
     }),
-    T = (0, Chunk524995.F)(S, {
+    N = (0, Chunk524995.F)(S, {
       allowedFlows: [Chunk524995.r.RPC]
     }),
-    N = (0, Chunk524995.F)(S, {
+    O = (0, Chunk524995.F)(S, {
       allowedFlows: [Chunk524995.r.WEB]
     }),
-    O = (0, Chunk524995.F)(S),
+    T = (0, Chunk524995.F)(S),
     {
       canDeauthorize: P,
       deauthorize: I
@@ -69,7 +69,7 @@ function S() {
     }(null == S ? true : S.id);
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: r()(Chunk451429.panel, Chunk441900.panel),
+    className: i()(Chunk451429.panel, Chunk441900.panel),
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk441900.container,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
@@ -112,8 +112,8 @@ function S() {
         variant: "heading-lg/normal",
         children: "Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !O.canStartAuthorization,
-        onClick: () => O.startAuthorization(),
+        disabled: !T.canStartAuthorization,
+        onClick: () => T.startAuthorization(),
         variant: "primary",
         text: "Start Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -121,13 +121,13 @@ function S() {
         color: "text-subtle",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !T.canStartAuthorization,
-        onClick: () => T.startAuthorization(),
+        disabled: !N.canStartAuthorization,
+        onClick: () => N.startAuthorization(),
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !N.canStartAuthorization,
-        onClick: () => N.startAuthorization(),
+        disabled: !O.canStartAuthorization,
+        onClick: () => O.startAuthorization(),
         variant: "secondary",
         text: "Start Web Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {

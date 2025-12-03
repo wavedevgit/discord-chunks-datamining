@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 620799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -20,11 +20,11 @@ function h(e) {
     targetElementRef: t,
     markAsDismissed: n,
     children: h
-  } = e, x = (0, l.e7)([o.default], () => o.default.getId()), f = (0, l.e7)([r.Z], () => r.Z.useReducedMotion), g = (0, c.bg)({
+  } = e, x = (0, l.e7)([o.default], () => o.default.getId()), f = (0, l.e7)([i.Z], () => i.Z.useReducedMotion), g = (0, c.bg)({
     location: "GameWidgetsPopover"
   });
   return (0, a.jsxs)(a.Fragment, {
-    children: [h, (0, a.jsx)(i.J2, {
+    children: [h, (0, a.jsx)(r.J2, {
       targetElementRef: t,
       badge: g ? {
         type: "early_access",

@@ -1,7 +1,7 @@
-/** Chunk was on 50614 **/
-/** chunk id: 629235, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 88282 **/
+/** chunk id: 629235, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./953529.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -11,44 +11,44 @@ var Chunk473749 = require("./473749.js"),
   Chunk81643 = require("./81643.js"),
   Chunk469775 = require("./469775.js"),
   Chunk388032 = require("./388032.jsx");
-let d = function(t) {
+let u = function(e) {
   let {
-    onClose: e,
+    onClose: t,
     onMethodClick: n,
-    classificationId: d
-  } = t, {
-    methods: E,
-    loading: _
-  } = (0, l.cj)([a.Z], () => ({
-    methods: a.Z.methods,
-    loading: a.Z.loading
+    classificationId: u
+  } = e, {
+    methods: m,
+    loading: p
+  } = (0, l.cj)([i.Z], () => ({
+    methods: i.Z.methods,
+    loading: i.Z.loading
   })), {
-    initiateAgeVerification: f
-  } = (0, s.WD)({
-    onComplete: e,
+    initiateAgeVerification: h
+  } = (0, o.WD)({
+    onComplete: t,
     entryPoint: r.cU.EXPRESSIVE_GET_STARTED,
     shouldShowExpressiveModal: true,
-    classificationId: d
+    classificationId: u
   });
-  return i.useEffect(() => {
-    null == E && (0, o.Jh)()
-  }, [E]), {
-    ageVerificationMethods: null == E ? true : E.map(t => {
-      let e = c.ed[t];
-      if (null == e) return null;
+  return a.useEffect(() => {
+    null == m && (0, s.Jh)()
+  }, [m]), {
+    ageVerificationMethods: null == m ? true : m.map(e => {
+      let t = c.ed[e];
+      if (null == t) return null;
       let {
-        title: i,
+        title: a,
         description: l
-      } = e;
+      } = t;
       return {
-        id: t,
-        title: u.intl.string(i),
-        description: u.intl.string(l),
-        onClick: async e => {
-          (0, r.x3)(e, r.d_.EXPRESSIVE_PRIMARY, r.sU.METHOD_SELECT, t), null == n || n(), await f(t)
+        id: e,
+        title: d.intl.string(a),
+        description: d.intl.string(l),
+        onClick: async t => {
+          (0, r.x3)(t, r.d_.EXPRESSIVE_PRIMARY, r.sU.METHOD_SELECT, e), null == n || n(), await h(e)
         }
       }
-    }).filter(t => null != t),
-    loading: _
+    }).filter(e => null != e),
+    loading: p
   }
 }

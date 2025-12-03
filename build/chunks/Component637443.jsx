@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 637443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ShopAssetsPreviewInstructionModal: () => d,
@@ -30,16 +30,16 @@ let o = "shop-assets-preview-instructions-modal",
       onClose: n,
       children: (0, a.jsxs)("div", {
         className: s.modalContent,
-        children: [(0, a.jsx)(i.Text, {
+        children: [(0, a.jsx)(r.Text, {
           variant: "text-md/bold",
           children: "Upload Shop assets for preview in the app!"
-        }), (0, a.jsx)(i.Text, {
+        }), (0, a.jsx)(r.Text, {
           variant: "text-md/normal",
           children: 'Toggle "Enable Preview" to switch between viewing the live and preview assets.'
-        }), (0, a.jsx)(i.Text, {
+        }), (0, a.jsx)(r.Text, {
           variant: "text-md/normal",
           children: "These are only visible to you. Reloading the app will reset the state."
-        }), (0, a.jsx)(i.Heading, {
+        }), (0, a.jsx)(r.Heading, {
           variant: "heading-md/bold",
           children: "Valid Upload Types"
         }), (0, a.jsxs)("ul", {
@@ -49,12 +49,12 @@ let o = "shop-assets-preview-instructions-modal",
           }), (0, a.jsx)("li", {
             children: "A folder containing image or video files"
           })]
-        }), (0, a.jsx)(i.Heading, {
+        }), (0, a.jsx)(r.Heading, {
           variant: "heading-md/bold",
           children: "Valid File Names"
         }), (0, a.jsx)("ul", {
           className: s.instructionsList,
-          children: Array.from(r.w6).map(e => (0, a.jsx)("li", {
+          children: Array.from(i.w6).map(e => (0, a.jsx)("li", {
             children: e
           }, e))
         })]
@@ -77,16 +77,16 @@ let o = "shop-assets-preview-instructions-modal",
       onClose: n,
       children: (0, a.jsxs)("div", {
         className: s.modalContent,
-        children: [(0, a.jsx)(i.Text, {
+        children: [(0, a.jsx)(r.Text, {
           variant: "text-md/normal",
           children: "1. Draft your PFX in the PFX Editor (in User Settings)"
-        }), (0, a.jsx)(i.Text, {
+        }), (0, a.jsx)(r.Text, {
           variant: "text-md/normal",
           children: "2. In this devtools dropdown, select one of your PFX drafts"
-        }), (0, a.jsx)(i.Text, {
+        }), (0, a.jsx)(r.Text, {
           variant: "text-md/normal",
           children: "The selected PFX should now be visible everywhere that already has a PFX, such as Shop cards, Shop PDPs, and user profiles (with PFX applied)."
-        }), (0, a.jsx)(i.Text, {
+        }), (0, a.jsx)(r.Text, {
           variant: "text-md/normal",
           children: 'Toggle "Enable Preview" to switch between viewing the live and preview PFX.'
         })]

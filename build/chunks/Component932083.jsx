@@ -1,24 +1,23 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 88282 **/
 /** chunk id: 932083, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk786040 = require("./786040.js"),
   Chunk29121 = require("./29121.js");
-let a = e => {
+let s = e => {
   let {
     skuId: t,
     className: n
-  } = e, a = (0, i.LJ)(t), s = (0, o.To)(a);
-  return (0, r.jsx)(l.Heading, {
+  } = e, s = (0, r.LJ)(t), o = (0, i.To)(s);
+  return (0, a.jsx)(l.Heading, {
     variant: "heading-md/medium",
     color: "text-strong",
     className: n,
     lineClamp: 1,
-    children: s
+    children: o
   })
 }

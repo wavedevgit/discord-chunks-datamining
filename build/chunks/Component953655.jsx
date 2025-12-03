@@ -14,30 +14,30 @@ var Chunk120356 = require("./120356.js"),
   Chunk788822 = require("./788822.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let f = e => {
+let g = e => {
     let {
       handleTransition: t,
       featuredBlockRecord: n
-    } = e, l = (0, s.QH)("collectibles_featured_block");
+    } = e, l = (0, a.QH)("collectibles_featured_block");
     return (0, r.jsx)("div", {
       className: i()(d.col2, d.centeredSection),
       children: null == n ? true : n.subblocks.map((e, n) => {
-        if (e.type === o.O.CATEGORY) {
+        if (e.type === s.O.CATEGORY) {
           let i = null != e.unpublishedAt ? u.intl.string(u.t["h/uBCR"]) : (e => {
             switch (l) {
-              case s.pj.NO_BADGE:
+              case a.pj.NO_BADGE:
                 returnfalse;
-              case s.pj.FIRST_BLOCK_ONLY:
+              case a.pj.FIRST_BLOCK_ONLY:
                 return 0 === e;
-              case s.pj.RIGHT_BLOCK_ONLY:
+              case a.pj.RIGHT_BLOCK_ONLY:
                 return 1 === e;
-              case s.pj.BOTH_BLOCKS:
+              case a.pj.BOTH_BLOCKS:
                 returntrue;
               default:
                 returnfalse
             }
           })(n) ? u.intl.string(u.t.soka7y) : true;
-          return (0, r.jsx)(a.k0, {
+          return (0, r.jsx)(o.k0, {
             newValue: {
               categoryPosition: 1,
               pageCategory: e.name,
@@ -55,44 +55,44 @@ let f = e => {
       })
     })
   },
-  g = e => {
+  f = e => {
     let {
       handleTransition: t,
       categories: n
-    } = e, l = (0, s.QH)("collectibles_featured_block");
+    } = e, l = (0, a.QH)("collectibles_featured_block");
     if (null == n || n.length < 2) return null;
-    let [o, f] = n, g = (null == o ? true : o.unpublishedAt) != null ? u.intl.string(u.t["h/uBCR"]) : (() => {
+    let [s, g] = n, f = (null == s ? true : s.unpublishedAt) != null ? u.intl.string(u.t["h/uBCR"]) : (() => {
       switch (l) {
-        case s.pj.FIRST_BLOCK_ONLY:
-        case s.pj.BOTH_BLOCKS:
+        case a.pj.FIRST_BLOCK_ONLY:
+        case a.pj.BOTH_BLOCKS:
           returntrue;
         default:
           returnfalse
       }
-    })() && (null == o ? true : o.storeListingId) != null && "" !== o.storeListingId ? u.intl.string(u.t.soka7y) : true, p = (null == f ? true : f.unpublishedAt) != null ? u.intl.string(u.t["h/uBCR"]) : (() => {
+    })() && (null == s ? true : s.storeListingId) != null && "" !== s.storeListingId ? u.intl.string(u.t.soka7y) : true, p = (null == g ? true : g.unpublishedAt) != null ? u.intl.string(u.t["h/uBCR"]) : (() => {
       switch (l) {
-        case s.pj.RIGHT_BLOCK_ONLY:
-        case s.pj.BOTH_BLOCKS:
+        case a.pj.RIGHT_BLOCK_ONLY:
+        case a.pj.BOTH_BLOCKS:
           returntrue;
         default:
           returnfalse
       }
-    })() && (null == f ? true : f.storeListingId) != null && "" !== f.storeListingId ? u.intl.string(u.t.soka7y) : u.intl.string(u.t["o/oRJB"]);
+    })() && (null == g ? true : g.storeListingId) != null && "" !== g.storeListingId ? u.intl.string(u.t.soka7y) : u.intl.string(u.t["o/oRJB"]);
     return (0, r.jsx)("div", {
       className: i()(d.col2, d.centeredSection),
-      children: (0, r.jsxs)(a.k0, {
+      children: (0, r.jsxs)(o.k0, {
         newValue: {
           categoryPosition: 1,
-          pageCategory: null != o ? o.name : null == f ? true : f.name,
+          pageCategory: null != s ? s.name : null == g ? true : g.name,
           pageSection: "featured_block",
-          tilePosition: +(null == o)
+          tilePosition: +(null == s)
         },
-        children: [null != o && (0, r.jsx)(c.q, {
-          category: o,
-          badgeText: g,
+        children: [null != s && (0, r.jsx)(c.q, {
+          category: s,
+          badgeText: f,
           handleTransition: t
-        }), null != f && (0, r.jsx)(c.q, {
-          category: f,
+        }), null != g && (0, r.jsx)(c.q, {
+          category: g,
           badgeText: p,
           handleTransition: t
         })]
@@ -104,7 +104,7 @@ let f = e => {
       isLoading: t,
       handleTransition: n,
       categories: l,
-      featuredBlockRecord: o
+      featuredBlockRecord: s
     } = e;
     return t ? (0, r.jsxs)("div", {
       className: i()(d.col2, d.centeredSection),
@@ -119,11 +119,11 @@ let f = e => {
           className: d.skeletonBody
         })
       })]
-    }) : null != o ? (0, r.jsx)(f, {
-      featuredBlockRecord: o,
+    }) : null != s ? (0, r.jsx)(g, {
+      featuredBlockRecord: s,
       handleTransition: n,
       isLoading: false
-    }) : (0, r.jsx)(g, {
+    }) : (0, r.jsx)(f, {
       categories: l,
       handleTransition: n,
       isLoading: false

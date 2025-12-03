@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 252899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => d
@@ -26,17 +26,17 @@ function d(e, t) {
     let t = n.toLowerCase().trim();
     return e.filter(e => {
       var n, a, l;
-      let r = (null != (n = (0, i.q)(e.name)) ? n : "").toLowerCase(),
+      let i = (null != (n = (0, r.q)(e.name)) ? n : "").toLowerCase(),
         s = (null != (a = e.group) ? a : "").toLowerCase(),
         o = null != (l = e.tags) ? l : [];
-      return r.includes(t) || e.id.toLowerCase().includes(t) || s.includes(t) || o.some(e => e.toLowerCase().includes(t))
+      return i.includes(t) || e.id.toLowerCase().includes(t) || s.includes(t) || o.some(e => e.toLowerCase().includes(t))
     })
   }, [e, n]);
-  return [l.useMemo(() => (0, a.jsx)(r.II_, {
+  return [l.useMemo(() => (0, a.jsx)(i.II_, {
     id: "devtools-search",
     control: (e, t) => {
-      var l, i;
-      return (0, a.jsx)(r.ne, (l = function(e) {
+      var l, r;
+      return (0, a.jsx)(i.ne, (l = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(n);
@@ -53,25 +53,25 @@ function d(e, t) {
           })
         }
         return e
-      }({}, e), i = i = {
+      }({}, e), r = r = {
         query: n,
         onChange: o,
         placeholder: "Search DevTools...",
         ref: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e);
           n.push.apply(n, a)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
       }), l))
     }
   }, "devtools-search"), [n]), ...l.useMemo(() => {
     let e = [];
-    if ("" !== n.trim() && 0 === d.length) e.push((0, a.jsx)(r.sNh, {
+    if ("" !== n.trim() && 0 === d.length) e.push((0, a.jsx)(i.sNh, {
       id: "devtools-no-results",
       label: 'No DevTools found for "'.concat(n, '"'),
       disabled: true
@@ -90,12 +90,12 @@ function d(e, t) {
       l.forEach(n => {
         let {
           id: l,
-          name: i
+          name: r
         } = n;
-        return e.push((0, a.jsx)(r.sNh, {
+        return e.push((0, a.jsx)(i.sNh, {
           id: l,
           label: (0, a.jsx)(c, {
-            label: i
+            label: r
           }),
           action: () => t(l)
         }, l))
@@ -104,15 +104,15 @@ function d(e, t) {
         if (null != s && s.length > 0) {
           let o = s.sort((e, t) => {
             var n, a;
-            return (null != (n = (0, i.q)(e.name)) ? n : "").localeCompare(null != (a = (0, i.q)(t.name)) ? a : "")
+            return (null != (n = (0, r.q)(e.name)) ? n : "").localeCompare(null != (a = (0, r.q)(t.name)) ? a : "")
           });
-          "" === n.trim() ? e.push((0, a.jsx)(r.sNh, {
+          "" === n.trim() ? e.push((0, a.jsx)(i.sNh, {
             id: "devtools-".concat(l),
             label: (0, a.jsx)(c, {
               label: l
             }),
-            children: (0, a.jsx)(r.kSQ, {
-              children: o.map(e => (0, a.jsx)(r.sNh, {
+            children: (0, a.jsx)(i.kSQ, {
+              children: o.map(e => (0, a.jsx)(i.sNh, {
                 id: "devtools-".concat(e.id),
                 label: (0, a.jsx)(c, {
                   label: e.name
@@ -120,9 +120,9 @@ function d(e, t) {
                 action: () => t(e.id)
               }, e.id))
             })
-          }, "devtools-".concat(l))) : e.push((0, a.jsx)(r.kSQ, {
+          }, "devtools-".concat(l))) : e.push((0, a.jsx)(i.kSQ, {
             label: l,
-            children: o.map(e => (0, a.jsx)(r.sNh, {
+            children: o.map(e => (0, a.jsx)(i.sNh, {
               id: "devtools-filtered-".concat(e.id),
               label: (0, a.jsx)(c, {
                 label: e.name

@@ -1,54 +1,54 @@
-/** Chunk was on 54400 **/
+/** Chunk was on 88282 **/
 /** chunk id: 396728, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk956748 = require("./956748.jsx"),
   Chunk566697 = require("./566697.jsx"),
   Chunk346284 = require("./346284.js");
-let s = Chunk473749.memo(function(e) {
+let o = Chunk473749.memo(function(e) {
   let {
     user: t,
     nameplate: n,
     isHighlighted: l,
-    isPurchased: s,
-    size: u = "default"
-  } = e, c = "small" === u ? 62 : 94, d = "small" === u ? 72 : 110;
-  return (0, r.jsx)("div", {
-    className: o.nameplatePreviewContainer,
-    children: (0, r.jsxs)("div", {
-      className: o.nameplatePreviewList,
-      children: [(0, r.jsx)(a.G, {
-        showStatus: true,
-        width: c,
-        opacity: .7,
-        size: u
-      }), (0, r.jsx)(a.G, {
+    isPurchased: o,
+    size: c = "default"
+  } = e, d = "small" === c ? 62 : 94, u = "small" === c ? 72 : 110;
+  return (0, a.jsx)("div", {
+    className: s.nameplatePreviewContainer,
+    children: (0, a.jsxs)("div", {
+      className: s.nameplatePreviewList,
+      children: [(0, a.jsx)(r.G, {
         showStatus: true,
         width: d,
+        opacity: .7,
+        size: c
+      }), (0, a.jsx)(r.G, {
+        showStatus: true,
+        width: u,
         opacity: .85,
-        size: u
-      }), (0, r.jsx)(i.Z, {
+        size: c
+      }), (0, a.jsx)(i.Z, {
         user: t,
         nameplate: n,
-        className: o.nameplatePreviewSampleItem,
+        className: s.nameplatePreviewSampleItem,
         isHighlighted: l,
         showPlaceholderUser: !l,
         showStatus: true,
-        isPurchased: s,
-        nameplatePreviewSize: "small" === u ? "small" : "default"
-      }), (0, r.jsx)(a.G, {
+        isPurchased: o,
+        nameplatePreviewSize: "small" === c ? "small" : "default"
+      }), (0, a.jsx)(r.G, {
+        showStatus: true,
+        width: u,
+        opacity: .85,
+        size: c
+      }), (0, a.jsx)(r.G, {
         showStatus: true,
         width: d,
-        opacity: .85,
-        size: u
-      }), (0, r.jsx)(a.G, {
-        showStatus: true,
-        width: c,
         opacity: .7,
-        size: u
+        size: c
       })]
     })
   })

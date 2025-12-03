@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   EB: () => m,
-  MV: () => g,
+  MV: () => f,
   q3: () => p
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
-let g = e => {
+let f = e => {
     let {
       analyticsSource: t,
       analyticsLocations: n
@@ -38,42 +38,42 @@ let g = e => {
           return i.Z.COLLECTIBLES_SHOP
       }
     })(e), {
-      analyticsLocations: a,
-      newestAnalyticsLocation: s
-    } = (0, o.ZP)([...n, i.Z.COLLECTIBLES_SHOP, r]);
+      analyticsLocations: o,
+      newestAnalyticsLocation: a
+    } = (0, s.ZP)([...n, i.Z.COLLECTIBLES_SHOP, r]);
     return {
       analyticsSource: t,
-      analyticsLocations: a,
-      newestAnalyticsLocation: s,
+      analyticsLocations: o,
+      newestAnalyticsLocation: a,
       currentTabLocation: r
     }
   },
   p = (e, t, n, l, i) => {
     let {
-      analyticsLocations: o,
-      analyticsSource: s,
+      analyticsLocations: s,
+      analyticsSource: a,
       currentTabLocation: c,
-      newestAnalyticsLocation: f
-    } = g(t);
+      newestAnalyticsLocation: g
+    } = f(t);
     r.useEffect(() => {
-      if (l !== u.f7.VISIBLE || f !== c) return;
-      let r = t === u.AW.CATALOG ? i : s;
-      a.default.track(d.rMx.COLLECTIBLES_SHOP_VIEWED, {
-        location_stack: o,
+      if (l !== u.f7.VISIBLE || g !== c) return;
+      let r = t === u.AW.CATALOG ? i : a;
+      o.default.track(d.rMx.COLLECTIBLES_SHOP_VIEWED, {
+        location_stack: s,
         source: r,
         page_session_id: e,
         page_type: t === u.AW.CATALOG ? "full" : t,
         category: t === u.AW.HOME ? true : n
       })
-    }, [o, e, t, n, c, l, i, s, f])
+    }, [s, e, t, n, c, l, i, a, g])
   },
   m = (e, t) => {
     let {
       analyticsLocations: n
-    } = g(e);
+    } = f(e);
     r.useEffect(() => {
-      null == t || s.ZP.canUseCollectibles(t) || a.default.track(d.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: f.cd.COLLECTIBLES_SHOP,
+      null == t || a.ZP.canUseCollectibles(t) || o.default.track(d.rMx.PREMIUM_UPSELL_VIEWED, {
+        type: g.cd.COLLECTIBLES_SHOP,
         location_stack: n
       })
     }, [n, t])

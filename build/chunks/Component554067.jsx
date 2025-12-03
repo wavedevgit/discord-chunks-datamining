@@ -23,20 +23,20 @@ function m(e) {
     selectedTab: n
   } = e, {
     searchQuery: m,
-    onSetSearchQuery: h
-  } = (0, u.S)(), [C, _] = l.useState(""), b = (0, c.sp)(), v = (0, i.e7)([a.default], () => a.default.locale);
+    onSetSearchQuery: C
+  } = (0, u.S)(), [h, _] = l.useState(""), b = (0, c.sp)(), E = (0, i.e7)([o.default], () => o.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
-      h(C)
+      C(h)
     }, 250);
     return () => clearTimeout(e)
-  }, [C, h]), l.useEffect(() => {
+  }, [h, C]), l.useEffect(() => {
     _(m)
-  }, [m]), (0, r.jsx)(o.P3F, {
+  }, [m]), (0, r.jsx)(s.P3F, {
     ignoreKeyPress: true,
     className: p.searchBar,
     onClick: () => {
-      n !== d.AW.CATALOG && t(d.AW.CATALOG), s.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      n !== d.AW.CATALOG && t(d.AW.CATALOG), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == b ? true : b.sessionId,
         page_section: null == b ? true : b.pageSection,
         page_category: null == b ? true : b.pageCategory,
@@ -46,15 +46,15 @@ function m(e) {
         page_type: n
       })
     },
-    children: (0, r.jsx)(o.E1j, {
+    children: (0, r.jsx)(s.E1j, {
       size: "sm",
       onKeyDown: e => {
-        "Enter" === e.key && h(C)
+        "Enter" === e.key && C(h)
       },
-      query: C,
+      query: h,
       onChange: _,
       onClear: () => {
-        _(""), s.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        _(""), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == b ? true : b.sessionId,
           page_section: null == b ? true : b.pageSection,
           page_category: null == b ? true : b.pageCategory,
@@ -64,7 +64,7 @@ function m(e) {
           page_type: n
         })
       },
-      placeholder: "en-US" === v ? g.intl.string(g.t.arz34K) : g.intl.string(g.t["hIt/Nm"])
+      placeholder: "en-US" === E ? f.intl.string(f.t.arz34K) : f.intl.string(f.t["hIt/Nm"])
     })
   })
 }

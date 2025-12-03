@@ -2,7 +2,7 @@
 /** chunk id: 98535, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,20 +22,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js");
 let b = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
 
-function v(e) {
+function E(e) {
   let {
     tab: t,
     sortedCategories: n,
-    transitionToTab: a,
-    transitionState: s,
+    transitionToTab: o,
+    transitionState: a,
     updateAnalyticsState: c,
     refreshCategories: u
-  } = e, m = x();
-  E(m);
-  let v = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
-    [O, S] = l.useState(true),
-    [y, j] = l.useState(true),
-    I = l.useMemo(() => n.filter(e => !_.y8.some(t => {
+  } = e, m = v();
+  S(m);
+  let E = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
+    [O, x] = l.useState(true),
+    [y, T] = l.useState(true),
+    j = l.useMemo(() => n.filter(e => !_.y8.some(t => {
       let {
         categorySkuId: n
       } = t;
@@ -50,42 +50,42 @@ function v(e) {
         isOrbsExclusive: i
       } = e;
       c(t, n);
-      let o = r && !v,
-        s = i ? _.AW.ORBS : _.AW.CATALOG;
-      S(n), j(!l), a(s, o)
-    }, [v, a, c]),
-    T = (0, d.FF)("CollectiblesContent"),
+      let s = r && !E,
+        a = i ? _.AW.ORBS : _.AW.CATALOG;
+      x(n), T(!l), o(a, s)
+    }, [E, o, c]),
+    I = (0, d.FF)("CollectiblesContent"),
     {
       searchError: L
-    } = (0, f.a)();
-  return T && null != L ? (0, r.jsx)(C.Z, {}) : null != m ? (0, r.jsx)(p.Z, {
+    } = (0, g.a)();
+  return I && null != L ? (0, r.jsx)(h.Z, {}) : null != m ? (0, r.jsx)(p.Z, {
     onRetry: u,
     errorMessage: m,
     errorOrigin: p.i.SHOP_PAGE
-  }) : b.includes(t) ? (0, r.jsx)(h.Z, {
+  }) : b.includes(t) ? (0, r.jsx)(C.Z, {
     handleTransition: k,
     tab: t,
-    transitionState: s
-  }) : (0, r.jsx)(g.Z, {
+    transitionState: a
+  }) : (0, r.jsx)(f.Z, {
     tab: t,
-    sortedCategories: I,
+    sortedCategories: j,
     initialCategoryId: O,
     showFilterInitially: y,
     onUnmount: () => {
-      S(true), j(true)
+      x(true), T(true)
     }
   })
 }
-let x = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
-  E = e => {
-    let t = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
+let v = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
+  S = e => {
+    let t = (0, i.e7)([o.default], () => o.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r
       } = (0, m.Z)();
     l.useEffect(() => {
       var l, i;
-      null != e && s.Z.captureMessage(e, {
+      null != e && a.Z.captureMessage(e, {
         tags: {
           isStaff: null != (i = null == t || null == (l = t.isStaff()) ? true : l.toString()) ? i : "unknown",
           disableCache: n.toString(),

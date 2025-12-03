@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 78933, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eo
@@ -115,13 +115,13 @@ function eo(e) {
     eC = (0, $.F)(ey),
     eS = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
     eE = (0, g.p)(),
-    eT = F.Sb.useSetting(),
-    eN = (0, $.I)(e_),
-    eO = (0, q.g)(n),
+    eN = F.Sb.useSetting(),
+    eO = (0, $.I)(e_),
+    eT = (0, q.g)(n),
     eP = (0, v.Z)({
       analyticsLocations: ex
     }),
-    eI = (0, V.I5)(t),
+    eI = (0, H.I5)(t),
     ew = (0, h.p)({
       location: "UserProfileAccountPopout"
     }),
@@ -139,7 +139,7 @@ function eo(e) {
     }, 500)
   }, []);
   let eU = e => {
-      null == n || n(), (0, T.openUserProfileModal)(es({
+      null == n || n(), (0, N.openUserProfileModal)(es({
         customStatusPrompt: eD,
         sourceAnalyticsLocations: ex
       }, ef, e))
@@ -149,16 +149,16 @@ function eo(e) {
     }),
     eB = (null == eh ? true : eh.widgets) != null && eh.widgets.length > 0,
     eG = eB ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
-    [ez, eH] = (0, f.US)(eG),
-    eV = ez === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
+    [ez, eV] = (0, f.US)(eG),
+    eH = ez === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     eW = l.useCallback(() => {
-      eH(en.L.USER_DISMISS), n()
-    }, [eH, n]),
+      eV(en.L.USER_DISMISS), n()
+    }, [eV, n]),
     eK = l.useCallback(() => {
       em && null != eu || (eP(), eW())
     }, [eP, eW, em, eu]),
     eq = em && null != eu,
-    eY = (0, K.K)(eu, ex, eV, n, eW),
+    eY = (0, K.K)(eu, ex, eH, n, eW),
     eJ = (0, y.k)({
       location: "UserProfileAccountPopout"
     });
@@ -173,24 +173,24 @@ function eo(e) {
       children: (0, a.jsxs)(c.VqE, {
         ref: eg,
         "aria-label": t.username,
-        className: ei.popoutContainer,
+        className: er.popoutContainer,
         "data-layer": "base",
         children: [(0, a.jsx)(Q.Z, {
           displayProfile: eh,
           handleOpenUserProfileModal: eU,
           height: eb
         }), (0, a.jsxs)(Z.Z, {
-          className: ei.themeContainer,
+          className: er.themeContainer,
           user: t,
           displayProfile: eh,
           themeType: ea.l.POPOUT,
           children: [(0, a.jsxs)("div", {
-            className: er.header,
+            className: ei.header,
             children: [(0, a.jsx)(P.Z, {
               user: t,
               displayProfile: eh,
               themeType: ea.l.POPOUT
-            }), (0, a.jsx)(N.Z, {
+            }), (0, a.jsx)(O.Z, {
               user: t,
               displayProfile: eh,
               themeType: ea.l.POPOUT,
@@ -203,17 +203,17 @@ function eo(e) {
               prompt: ew ? eD : null
             })]
           }), (0, a.jsxs)(c.Ttm, {
-            className: ei.body,
+            className: er.body,
             style: {
               pointerEvents: eL ? "none" : true
             },
             children: [(0, a.jsx)(D.Z, {
               user: t,
-              className: ei.username,
-              nickname: H.ZP.getName(eu, null, t),
+              className: er.username,
+              nickname: V.ZP.getName(eu, null, t),
               onOpenProfile: ep ? true : eU,
               pronouns: null == eh ? true : eh.pronouns,
-              tags: (0, a.jsx)(O.Z, {
+              tags: (0, a.jsx)(T.Z, {
                 displayProfile: eh,
                 themeType: ea.l.POPOUT,
                 onClose: n,
@@ -250,9 +250,9 @@ function eo(e) {
               currentUser: t,
               onClose: n
             }), (0, a.jsxs)("div", {
-              className: ei.menus,
+              className: er.menus,
               children: [(0, a.jsx)(Z.Z.Overlay, {
-                className: ei.menuOverlay,
+                className: er.menuOverlay,
                 children: (0, a.jsxs)(J.XE, {
                   children: [(0, a.jsx)(J.V4, {
                     action: "EDIT_PROFILE",
@@ -270,7 +270,7 @@ function eo(e) {
                         children: eY
                       })
                     } : true,
-                    trailing: eV ? (0, a.jsx)(c.IGR, {
+                    trailing: eH ? (0, a.jsx)(c.IGR, {
                       text: el.intl.string(el.t.y2b7CA)
                     }) : true,
                     ref: eA
@@ -285,52 +285,52 @@ function eo(e) {
                     trailing: (eE || e_ === et.Skl.DND) && (0, a.jsx)(c.owu, {
                       size: "xxs"
                     }),
-                    renderSubmenu: i.tq ? true : e => {
+                    renderSubmenu: r.tq ? true : e => {
                       let {
                         closePopout: t
                       } = e;
                       return (0, a.jsx)(J.gp, {
                         navId: "set-status-submenu",
-                        className: ei.statusPickerModalMenu,
+                        className: er.statusPickerModalMenu,
                         "aria-label": el.intl.string(el.t.E13trI),
                         onClose: t,
-                        children: eN
+                        children: eO
                       })
                     },
-                    onClick: i.tq ? () => {
+                    onClick: r.tq ? () => {
                       n(), (0, c.ZDy)(() => new Promise(e => e(e => {
                         var t, n, {
                             onClose: l
                           } = e,
-                          i = function(e, t) {
+                          r = function(e, t) {
                             if (null == e) return {};
                             var n, a, l = function(e, t) {
                               if (null == e) return {};
                               var n, a, l = {},
-                                i = Object.keys(e);
-                              for (a = 0; a < i.length; a++) n = i[a], t.indexOf(n) >= 0 || (l[n] = e[n]);
+                                r = Object.keys(e);
+                              for (a = 0; a < r.length; a++) n = r[a], t.indexOf(n) >= 0 || (l[n] = e[n]);
                               return l
                             }(e, t);
                             if (Object.getOwnPropertySymbols) {
-                              var i = Object.getOwnPropertySymbols(e);
-                              for (a = 0; a < i.length; a++) n = i[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+                              var r = Object.getOwnPropertySymbols(e);
+                              for (a = 0; a < r.length; a++) n = r[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
                             }
                             return l
                           }(e, ["onClose"]);
-                        return (0, a.jsx)(r.IX, (t = es({
+                        return (0, a.jsx)(i.IX, (t = es({
                           onClose: l
-                        }, i), n = n = {
+                        }, r), n = n = {
                           size: "sm",
                           "aria-label": el.intl.string(el.t["3Uj+2p"]),
                           children: (0, a.jsx)(c.v2r, {
                             navId: "set-status-submenu-mobile-web",
                             variant: "fixed",
                             "aria-label": el.intl.string(el.t.E13trI),
-                            className: ei.statusPickerModal,
+                            className: er.statusPickerModal,
                             hideScroller: true,
                             onClose: l,
                             onSelect: true,
-                            children: eN
+                            children: eO
                           })
                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                           var n = Object.keys(e);
@@ -347,7 +347,7 @@ function eo(e) {
                   })]
                 })
               }), (0, a.jsx)(Z.Z.Overlay, {
-                className: ei.menuOverlay,
+                className: er.menuOverlay,
                 children: (0, a.jsxs)(J.XE, {
                   children: [(0, a.jsx)(J.V4, {
                     action: "PRESS_SWITCH_ACCOUNTS",
@@ -364,10 +364,10 @@ function eo(e) {
                         navId: "switch-accounts-submenu",
                         "aria-label": el.intl.string(el.t.wFhVqL),
                         onClose: t,
-                        children: eO
+                        children: eT
                       })
                     }
-                  }), !__OVERLAY__ && z.wS && eT && (0, a.jsx)(J.V4, {
+                  }), !__OVERLAY__ && z.wS && eN && (0, a.jsx)(J.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
                     label: el.intl.string(el.t["/AXYnE"]),

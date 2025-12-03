@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 272193, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
 function u() {
   let e = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getDevToolTotalFriendAnniversaries()),
     t = e => {
-      r.Z.dispatch({
+      i.Z.dispatch({
         type: "DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT",
         total: e
       })

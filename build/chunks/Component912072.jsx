@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 912072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk98357 = require("./98357.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
 function p(e) {
   let {
     devSettingsCategory: t
-  } = e, n = (0, s.e7)([d.ZP], () => d.ZP.allByCategory(t), [t], s.pF), i = l.useMemo(() => n.map(e => {
+  } = e, n = (0, s.e7)([d.ZP], () => d.ZP.allByCategory(t), [t], s.pF), r = l.useMemo(() => n.map(e => {
     let [t, n, {
       label: l
     }] = e;
@@ -29,7 +29,7 @@ function p(e) {
     }, t)
   }), [n]);
   return (0, a.jsx)("div", {
-    className: r()(m.panel, u.panel),
-    children: i
+    className: i()(m.panel, u.panel),
+    children: r
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 6377 **/
+/** Chunk was on 2026 **/
 /** chunk id: 259673, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => d
@@ -16,28 +16,28 @@ let d = e => {
   let {
     user: d
   } = e, m = s.ZP.canUsePremiumProfileCustomization(d), p = (0, i.cj)([o.Z], () => o.Z.getAllPending()), {
-    pendingAvatar: f
-  } = p, v = function(e, t) {
+    pendingAvatar: v
+  } = p, f = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(p, ["pendingAvatar"]), h = (0, l.SD)({
+  }(p, ["pendingAvatar"]), g = (0, a.SD)({
     userId: d.id,
-    image: f
+    image: v
   });
   return (0, r.jsx)("div", {
     className: u.container,
-    children: (0, r.jsx)(a.Z, (t = function(e) {
+    children: (0, r.jsx)(l.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -54,8 +54,8 @@ let d = e => {
         })
       }
       return e
-    }({}, v), n = n = {
-      pendingAvatar: h,
+    }({}, f), n = n = {
+      pendingAvatar: g,
       user: d,
       pendingBadges: [(0, c.X)()],
       canUsePremiumCustomization: m,

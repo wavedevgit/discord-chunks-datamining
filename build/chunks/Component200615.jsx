@@ -1,4 +1,4 @@
-/** Chunk was on 6377 **/
+/** Chunk was on 2026 **/
 /** chunk id: 200615, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => u
@@ -15,8 +15,8 @@ let u = e => {
     text: t
   } = e, {
     analyticsLocations: n
-  } = (0, l.ZP)(), u = i.useRef(null);
-  return (0, r.jsx)(a.P3F, {
+  } = (0, a.ZP)(), u = i.useRef(null);
+  return (0, r.jsx)(l.P3F, {
     className: c.subscribeNow,
     innerRef: u,
     onClick: () => {

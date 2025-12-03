@@ -2,7 +2,7 @@
 /** chunk id: 92589, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -32,32 +32,32 @@ function d(e) {
   }
   return e
 }
-let f = e => {
+let g = e => {
   let {
     immersiveBannerBlock: t,
     onVisibilityChange: n
-  } = e, f = (0, l.O)(e => {
+  } = e, g = (0, l.O)(e => {
     null == n || n(e)
   }, .33, null != n), {
-    bannerUrl: g,
+    bannerUrl: f,
     bannerAnimatedUrl: p
-  } = (0, a._M)(t), m = null != t.textColor ? {
+  } = (0, o._M)(t), m = null != t.textColor ? {
     color: t.textColor
-  } : true, h = null != t.body && "" !== t.body, C = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
+  } : true, C = null != t.body && "" !== t.body, h = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, r.jsxs)("div", {
-    ref: f,
+    ref: g,
     className: u.immersiveBannerBlock,
     children: [(0, r.jsx)("div", {
       className: u.banner,
-      children: null != g && (0, r.jsx)(s.Z, {
-        bannerStatic: g,
+      children: null != f && (0, r.jsx)(a.Z, {
+        bannerStatic: f,
         bannerAnimated: p
       })
     }), (0, r.jsx)("div", {
       className: u.immersiveBannerContent,
       children: (0, r.jsxs)("div", {
         className: u.immersiveBannerTextContainer,
-        children: [null != t.endTime ? (0, r.jsx)(o.R, {
+        children: [null != t.endTime ? (0, r.jsx)(s.R, {
           endDate: t.endTime,
           size: "lg"
         }) : null, (0, r.jsx)(i.Heading, {
@@ -66,10 +66,10 @@ let f = e => {
           color: "header-primary",
           style: d({}, m),
           children: t.title
-        }), h || C ? (0, r.jsxs)(i.Text, {
+        }), C || h ? (0, r.jsxs)(i.Text, {
           variant: "text-md/medium",
           style: d({}, m),
-          children: [h && t.body, h && C && " ", C && (0, r.jsx)(i.Anchor, {
+          children: [C && t.body, C && h && " ", h && (0, r.jsx)(i.Anchor, {
             href: t.helpCenterUrl,
             className: u.learnMoreLink,
             style: d({}, m),

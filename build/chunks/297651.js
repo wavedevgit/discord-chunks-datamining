@@ -1,4 +1,4 @@
-/** Chunk was on 837 **/
+/** Chunk was on 88282 **/
 /** chunk id: 297651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => m
@@ -18,12 +18,12 @@ function m(e, t) {
     m = (0, s.sp)(),
     p = (0, l.e7)([o.Z], () => o.Z.getProduct(e)),
     h = (0, d.x)(),
-    x = r.ZP.canUseCollectibles(h),
+    x = i.ZP.canUseCollectibles(h),
     f = a.useRef(null),
     g = a.useCallback(() => {
       let a = null != p ? (0, c.Vw)(p, x, false) : null,
         l = null != p ? (0, c.eu)(p, x, false) : true;
-      i.default.track(u.rMx.COLLECTIBLES_TILE_IMPRESSION, {
+      r.default.track(u.rMx.COLLECTIBLES_TILE_IMPRESSION, {
         collectibles_shop_session_id: null == m ? true : m.sessionId,
         sku_id: e,
         display_price: null == a ? true : a.amount,
