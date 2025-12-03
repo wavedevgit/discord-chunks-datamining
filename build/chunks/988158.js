@@ -1,41 +1,41 @@
 /** Chunk was on 85668 **/
 /** chunk id: 988158, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  X: () => i,
-  h: () => s
+  X: () => s,
+  h: () => i
 }), require("./704826.js"), require("./35282.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk902676 = require("./902676.js");
 
-function s(t) {
+function i(t) {
   let {
     protocol: e,
     hostname: n
   } = a.useMemo(() => ({
     protocol: (0, r.E)(t),
     hostname: (0, r.F)(t)
-  }), [t]), s = "//" === t.substr(e.length, 2) ? "//" : "", i = "".concat(e).concat(s).concat(n);
+  }), [t]), i = "//" === t.substr(e.length, 2) ? "//" : "", s = "".concat(e).concat(i).concat(n);
   return {
     protocol: e,
-    authorityPrefix: s,
+    authorityPrefix: i,
     hostname: n,
-    theRestOfTheUrl: t.replace(i, "")
+    theRestOfTheUrl: t.replace(s, "")
   }
 }
 
-function i(t) {
+function s(t) {
   let {
     url: e,
     trustUrl: n,
     onConfirm: r,
-    onCancel: i,
+    onCancel: s,
     onClose: l
   } = t, [c, o] = a.useState(false), {
     protocol: d,
     authorityPrefix: u,
     hostname: _,
     theRestOfTheUrl: x
-  } = s(e), m = a.useCallback(() => {
+  } = i(e), m = a.useCallback(() => {
     c && n(e), null == l || l(), r()
   }, [e, c, n, r, l]);
   return {
@@ -47,7 +47,7 @@ function i(t) {
     setShouldTrustUrl: o,
     handleConfirm: m,
     handleCancel: a.useCallback(() => {
-      null == l || l(), i()
-    }, [i, l])
+      null == l || l(), s()
+    }, [s, l])
   }
 }

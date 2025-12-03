@@ -78,7 +78,7 @@ let k = [{
     } = e, l = d()(n.createdAt);
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsxs)(y.E, {
-        className: T.actionProperties,
+        className: N.actionProperties,
         children: [(0, a.jsx)(y.Z9, {
           name: "Created at",
           children: (0, a.jsx)("time", {
@@ -91,7 +91,7 @@ let k = [{
           children: [P(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(p.zJl, {
-        className: T.inspectorContainer,
+        className: N.inspectorContainer,
         children: (0, a.jsx)(_.Z, {
           data: n.action
         })
@@ -120,7 +120,7 @@ function R(e) {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(b.Z, {
-        className: T.errorIcon
+        className: N.errorIcon
       }), "Error"]
     }),
     group: E.v0.NONE,
@@ -130,7 +130,7 @@ function R(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: r()(T.errorToolbar, O.toolbar),
+          className: r()(N.errorToolbar, O.toolbar),
           children: (0, a.jsx)("div", {
             className: O.toolbarGroup,
             children: (0, a.jsx)(m.zx, {
@@ -141,7 +141,7 @@ function R(e) {
             })
           })
         }), (0, a.jsx)(p.zJl, {
-          className: T.inspectorContainer,
+          className: N.inspectorContainer,
           children: (0, a.jsx)(_.Z, {
             data: t.error
           })
@@ -155,11 +155,11 @@ function R(e) {
     tabs: i
   }, [i]);
   return (0, a.jsxs)(C.Z, {
-    className: T.subPanel,
+    className: N.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(s, {}), (0, a.jsxs)(x.ZP, {
-      className: r()(O.headerBar, T.subPanelHeaderBar),
+      className: r()(O.headerBar, N.subPanelHeaderBar),
       children: [(0, a.jsx)(x.ZP.Icon, {
         icon: p.xVZ,
         tooltip: t.name
@@ -174,7 +174,7 @@ function R(e) {
           var e;
           let n = JSON.stringify(Object.keys(e = t.action).reduce((t, n) => {
             var a;
-            return t[n] = (a = e[n], N.Jn9.test(a) ? "REDACTED" : a), t
+            return t[n] = (a = e[n], T.Jn9.test(a) ? "REDACTED" : a), t
           }, {}), null, 2);
           (0, v.JG)(n, () => (0, p.showToast)({
             id: "copy-action-log-name",
@@ -197,7 +197,7 @@ let A = [{
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [t.error && (0, a.jsx)(b.Z, {
-          className: T.errorIcon
+          className: N.errorIcon
         }), t.name]
       })
     }
@@ -262,7 +262,7 @@ function D() {
     }, [Chunk299608]),
     C = exports.trim().length > 0,
     E = Chunk473749.useMemo(() => Chunk484036 ? Chunk755721 : Chunk886118 ? Chunk913527 : Chunk299608, [Chunk299608, Chunk755721, Chunk484036, Chunk886118, Chunk913527]),
-    N = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
+    T = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
     className: r()(Chunk451429.panel, Chunk687278.panel),
