@@ -1,1 +1,0 @@
-{"id":"517858","type":"experiment","data":{"kind":"user","id":"2024-08_keyword_filter_upsells","label":"Language Filter Upsells","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Upsell for Keyword Language Filters","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
