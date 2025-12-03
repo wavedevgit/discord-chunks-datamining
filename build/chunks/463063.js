@@ -29,5 +29,6 @@ module.exports = {
   primaryIcon: "primaryIcon__9be63",
   lockIcon: "lockIcon__9be63",
   primaryIconTopLevel: "primaryIconTopLevel__9be63",
-  unavailableTooltip: "unavailableTooltip__9be63"
+  unavailableTooltip: "unavailableTooltip__9be63",
+  unavailableTooltipActions: "unavailableTooltipActions__9be63"
 }

@@ -401,8 +401,13 @@ let X = Chunk473749.forwardRef(function(e, t) {
       }))
     }), !I.available && (0, r.jsx)(d.u, {
       text: x.intl.string(x.t.MDOXJR),
+      shouldShow: !eD,
       children: (0, r.jsx)("div", {
-        className: L.unavailableTooltip
+        className: L.unavailableTooltip,
+        children: !er && (0, r.jsxs)("div", {
+          className: L.unavailableTooltipActions,
+          children: [eG, eB]
+        })
       })
     }), true === eo && (0, r.jsx)(b.Z, {
       sound: I,
