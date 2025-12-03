@@ -271,7 +271,8 @@ function ep(e) {
   }(e), ec = r.useRef(null), ep = r.useCallback(() => {
     U || G.default.track(ei.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: n.id,
-      channel: n.channel_id
+      channel: n.channel_id,
+      location: "expanding_buttons"
     }), er({
       moreUtilities: !U
     })

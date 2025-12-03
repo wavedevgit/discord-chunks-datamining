@@ -1,0 +1,34 @@
+/** Chunk was on 83615 **/
+/** chunk id: 676728, original params: e,t,n (module,exports,require) **/
+require.d(exports, {
+  Z: () => i
+});
+var Chunk54381 = require("./54381.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk669789 = require("./669789.js");
+let i = function(e) {
+  let {
+    onDesktop: t,
+    onConsole: n
+  } = e;
+  return (0, r.jsxs)(s.ButtonGroup, {
+    direction: "vertical",
+    fullWidth: true,
+    className: a.buttonGroup,
+    size: "sm",
+    children: [(0, r.jsx)(s.Button, {
+      onClick: t,
+      text: o.intl.string(o.t["QXc01+"]),
+      variant: "secondary",
+      icon: s.pzj,
+      iconPosition: "end"
+    }), (0, r.jsx)(s.Button, {
+      onClick: n,
+      text: o.intl.string(o.t["8lAfuB"]),
+      variant: "secondary",
+      icon: s.iWm,
+      iconPosition: "end"
+    })]
+  })
+}

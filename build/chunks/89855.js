@@ -8,5 +8,7 @@ module.exports = {
   contentWrapperBrandColorRemoval: "contentWrapperBrandColorRemoval__0d616",
   contentWrapperExpanded: "contentWrapperExpanded__0d616",
   contentWrapperAccepted: "contentWrapperAccepted__0d616",
-  mask: "mask__0d616"
+  mask: "mask__0d616",
+  content: "content__0d616",
+  overlay: "overlay__0d616"
 }

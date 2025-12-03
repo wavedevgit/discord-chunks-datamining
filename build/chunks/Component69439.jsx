@@ -96,7 +96,7 @@ function O(e) {
     isClaiming: p.Z.isClaimingReward(T.id) || p.Z.isFetchingRewardCode(T.id),
     isEnrolling: p.Z.isEnrolling(T.id),
     isQuestEnrollmentBlocked: null != p.Z.questEnrollmentBlockedUntil
-  })), Z = (null == (t = T.userStatus) ? true : t.enrolledAt) != null, W = (null == (n = T.userStatus) ? true : n.completedAt) != null, H = W && (null == (O = T.userStatus) ? true : O.claimedAt) == null, U = (0, g.iQ)(T), F = !(0, g.zi)(T), z = (0, h._Q)(T), G = (0, g.PB)(T), K = (0, g.HJ)(T), Y = (0, g.Vl)(T), X = (0, h.Rf)(T), [J, $, ee] = (0, h.me)(T, X), et = F && z === h.OH.ACCEPTED, en = et && J === m.LI.SELECT, er = et && !en && $.length > 1, es = s.useCallback(e => {
+  })), Z = (null == (t = T.userStatus) ? true : t.enrolledAt) != null, W = (null == (n = T.userStatus) ? true : n.completedAt) != null, U = W && (null == (O = T.userStatus) ? true : O.claimedAt) == null, H = (0, g.iQ)(T), F = !(0, g.zi)(T), z = (0, h._Q)(T), G = (0, g.PB)(T), K = (0, g.HJ)(T), X = (0, g.Vl)(T), Y = (0, h.Rf)(T), [J, $, ee] = (0, h.me)(T, Y), et = F && z === h.OH.ACCEPTED, en = et && J === m.LI.SELECT, er = et && !en && $.length > 1, es = s.useCallback(e => {
     ee(e), e === b.cd.DESKTOP && P([])
   }, [ee, P]), {
     text: eo,
@@ -109,7 +109,7 @@ function O(e) {
     questContentRowIndex: R,
     inGiftInventory: true,
     isVideoQuest: G,
-    inGameQuest: Y,
+    inGameQuest: X,
     sourceQuestContent: A
   }), {
     startingConsoleQuest: ei,
@@ -135,7 +135,7 @@ function O(e) {
     quest: T,
     shortText: true
   }), em = null;
-  return (U && H ? em = (0, r.jsx)("div", {
+  return (H && U ? em = (0, r.jsx)("div", {
     className: v.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "primary",
@@ -188,7 +188,7 @@ function O(e) {
       text: eo,
       fullWidth: true
     })
-  }) : F ? F && H ? em = (0, r.jsx)("div", {
+  }) : F ? F && U ? em = (0, r.jsx)("div", {
     className: v.button,
     children: (0, r.jsx)(a.zxk, {
       variant: "primary",

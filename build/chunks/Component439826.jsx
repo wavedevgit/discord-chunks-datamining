@@ -104,13 +104,13 @@ function A(e) {
     onCtxMenuOpen: D,
     onCtxMenuSelect: q,
     sourceQuestContent: L
-  } = e, Q = (0, h.PB)(b), V = (0, p.ZP)(), M = ((0, c.wj)(V) ? w.BRd.DARK : w.BRd.LIGHT) === w.BRd.DARK, Z = (0, _.tP)(b), W = (null == (t = b.userStatus) ? true : t.claimedAt) != null, H = (0, _.B6)(b.config.expiresAt, {
+  } = e, Q = (0, h.PB)(b), V = (0, p.ZP)(), M = ((0, c.wj)(V) ? w.BRd.DARK : w.BRd.LIGHT) === w.BRd.DARK, Z = (0, _.tP)(b), W = (null == (t = b.userStatus) ? true : t.claimedAt) != null, U = (0, _.B6)(b.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), U = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, F = (null == (o = b.userStatus) ? true : o.completedAt) != null, {
+  }), H = (null == (n = b.userStatus) ? true : n.enrolledAt) != null, F = (null == (o = b.userStatus) ? true : o.completedAt) != null, {
     onAssetLoadComplete: z
   } = s.useContext(E.k), G = s.useCallback(async () => {
-    Q && ((0, h.zi)(b) || U ? (0, y.openVideoQuestModal)({
+    Q && ((0, h.zi)(b) || H ? (0, y.openVideoQuestModal)({
       quest: b,
       questContent: f.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: L,
@@ -130,7 +130,7 @@ function A(e) {
       sourceQuestContent: L,
       sourceQuestContentCTA: g.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })))
-  }, [Q, b, U, L]);
+  }, [Q, b, H, L]);
   return (0, r.jsxs)("div", {
     className: N.container,
     children: [(0, r.jsx)("div", {
@@ -167,7 +167,7 @@ function A(e) {
               children: P.intl.string(P.t.SKNnqq)
             })
           }), Q && (0, r.jsx)(l.u, {
-            text: F ? P.intl.string(P.t.YsCuyF) : U ? P.intl.string(P.t["74KqrR"]) : (0, h.zi)(b) ? P.intl.string(P.t.I6JG46) : P.intl.string(P.t.umdNin),
+            text: F ? P.intl.string(P.t.YsCuyF) : H ? P.intl.string(P.t["74KqrR"]) : (0, h.zi)(b) ? P.intl.string(P.t.I6JG46) : P.intl.string(P.t.umdNin),
             asContainer: true,
             tag: "span",
             children: (0, r.jsx)(d.P3F, {
@@ -253,7 +253,7 @@ function A(e) {
             variant: "text-sm/medium",
             color: M ? "text-muted" : "always-white",
             children: P.intl.format(P.t["7D8r4F"], {
-              expiryDate: H
+              expiryDate: U
             })
           })]
         })]

@@ -64,7 +64,7 @@ let u = [{
     value: 40
   }],
   d = () => {
-    let [e, t] = Chunk473749.useState(15), [n, d] = Chunk473749.useState(8), [f, p] = Chunk473749.useState("xl"), _ = Chunk473749.useMemo(() => [...Array(module)].map((e, t) => (0, r.jsx)(o.P3F, {
+    let [e, t] = Chunk473749.useState(15), [n, d] = Chunk473749.useState(8), [f, p] = Chunk473749.useState("xl"), [_, m] = Chunk473749.useState(true), h = Chunk473749.useMemo(() => [...Array(module)].map((e, t) => (0, r.jsx)(o.P3F, {
       className: c.child,
       onClick: () => console.log(t),
       children: t
@@ -73,9 +73,14 @@ let u = [{
       children: [(0, Chunk54381.jsx)(Chunk624968.Z, {
         gap: require,
         edgeFade: f,
-        children: _
-      }), (0, Chunk54381.jsx)(Chunk261538.dv, {}), (0, Chunk54381.jsx)(Chunk261538.BZ, {
-        children: (0, Chunk54381.jsx)(Chunk481060.oil, {
+        hideActionsWhenDisabled: _,
+        children: h
+      }), (0, Chunk54381.jsx)(Chunk261538.dv, {}), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.Checkbox, {
+          checked: _,
+          onChange: () => m(!_),
+          label: "Hide Actions When Disabled"
+        }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           type: "number",
           min: 0,
           value: module.toString(),
@@ -83,21 +88,17 @@ let u = [{
             t((0, a.clamp)(+e, 0, 100))
           },
           label: "Children Count"
-        })
-      }), (0, Chunk54381.jsx)(Chunk261538.BZ, {
-        children: (0, Chunk54381.jsx)(Chunk481060.q4e, {
+        }), (0, Chunk54381.jsx)(Chunk481060.q4e, {
           value: require,
           options: u,
           onChange: e => d(e),
           label: "Children Gap"
-        })
-      }), (0, Chunk54381.jsx)(Chunk261538.BZ, {
-        children: (0, Chunk54381.jsx)(Chunk481060.q4e, {
+        }), (0, Chunk54381.jsx)(Chunk481060.q4e, {
           value: f,
           options: u,
           onChange: e => p(e),
           label: "Edge Fade Space"
-        })
+        })]
       })]
     })
   }
