@@ -2,7 +2,7 @@
 /** chunk id: 319392, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -35,11 +35,11 @@ function b() {
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         tag: "p",
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: Chunk388032.intl.string(Chunk388032.t.M5yEcb)
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: (0, Chunk54381.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.XBOX_CONNECTION),
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
@@ -53,7 +53,7 @@ function b() {
   })
 }
 
-function g(e) {
+function x(e) {
   let {
     onClose: t
   } = e;

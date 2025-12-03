@@ -1,5 +1,5 @@
 /** Chunk was on 4419 **/
-/** chunk id: 742699, original params: n,e,t (module,exports,require) **/
+/** chunk id: 742699, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -14,8 +14,8 @@ var Chunk54381 = require("./54381.js"),
 
 function u(n) {
   let {
-    onContinue: e,
-    onClose: t
+    onContinue: t,
+    onClose: e
   } = n, u = s.Z.getArticleURL(a.BhN.CRUNCHYROLL_CONNECTION), C = i.useMemo(() => [{
     label: c.intl.string(c.t["2TXHQd"]),
     icon: r.ARS
@@ -25,8 +25,8 @@ function u(n) {
     headerConnect: c.intl.string(c.t["Da+3NJ"]),
     body: c.intl.string(c.t.MaPpPL),
     learnMoreLink: u,
-    onClose: t,
-    onContinue: e,
+    onClose: e,
+    onContinue: t,
     img: (0, o.jsx)("img", {
       src: d,
       width: 234,

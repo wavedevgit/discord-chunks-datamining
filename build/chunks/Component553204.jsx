@@ -25,7 +25,7 @@ function h(e) {
     className: l,
     onClick: s,
     disabled: g = false
-  } = e, h = i.useRef(null), b = i.useMemo(() => (0, c.Kz)(t, f), [t]), x = null != b ? (0, r.jsx)(u.Z, function(e) {
+  } = e, h = i.useRef(null), b = i.useMemo(() => (0, c.Kz)(t, f), [t]), x = null != b ? (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -63,7 +63,7 @@ function h(e) {
         ref: h,
         className: p.preview,
         children: x
-      }), null != b ? (0, r.jsx)(d.S, {
+      }), null != b ? (0, r.jsx)(u.S, {
         className: p.uploaderIcon
       }) : null]
     })

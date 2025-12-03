@@ -92,7 +92,7 @@ function A(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
-      color: "text-primary",
+      color: "text-strong",
       children: E.intl.format(E.t["50bA2I"], {
         percent: n.percentage
       })
@@ -121,7 +121,7 @@ function C(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
-      color: "text-primary",
+      color: "text-strong",
       children: E.intl.format(E.t.sFO20P, {
         percent: t.discount.amount
       })
@@ -214,7 +214,7 @@ let N = function(e) {
           }), (0, r.jsx)(i.Text, {
             className: b.churnDiscountBannerExpiryDate,
             variant: "text-sm/medium",
-            color: "text-primary",
+            color: "text-strong",
             children: null != S && x
           })]
         }), (0, r.jsx)("div", {

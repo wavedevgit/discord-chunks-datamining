@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
@@ -45,7 +45,7 @@ function x(e) {
     selected: false
   }];
   t && n.pop();
-  let r = t ? (0, l.jsx)(s.Text, {
+  let i = t ? (0, l.jsx)(s.Text, {
       variant: "text-sm/semibold",
       color: "header-primary",
       children: E.intl.string(E.t.nTI2mQ)
@@ -61,25 +61,25 @@ function x(e) {
       children: E.intl.format(E.t["8XLD3r"], {})
     });
   return (0, l.jsxs)("div", {
-    className: i()(S.upsellPreview, S.spacingLarge, {
+    className: r()(S.upsellPreview, S.spacingLarge, {
       [S.tooltip]: t
     }),
-    children: [r, (0, l.jsx)("div", {
+    children: [i, (0, l.jsx)("div", {
       className: S.spacingSmall,
       children: n.map((e, t) => {
         let {
           emoji: n,
-          emojiDescription: r,
+          emojiDescription: i,
           title: a,
           selected: o
         } = e;
         return (0, l.jsxs)("div", {
-          className: i()(S.previewListItem, {
+          className: r()(S.previewListItem, {
             [S.selected]: o
           }),
           children: [(0, l.jsx)("span", {
             role: "img",
-            "aria-label": r,
+            "aria-label": i,
             children: n
           }), (0, l.jsx)(s.Text, {
             variant: "text-sm/medium",
@@ -216,7 +216,7 @@ function _() {
             children: Chunk388032.intl.string(Chunk388032.t["l/l/Gw"])
           })]
         }), (0, Chunk54381.jsxs)("div", {
-          className: i()(Chunk473450.upsellPreview, Chunk473450.spacingLarge),
+          className: r()(Chunk473450.upsellPreview, Chunk473450.spacingLarge),
           children: [(0, Chunk54381.jsx)(Chunk150512.Z, {
             guildId: module,
             welcomeMessage: {
@@ -240,7 +240,7 @@ function _() {
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk473450.valueContainer,
         children: [(0, Chunk54381.jsx)("div", {
-          className: i()(Chunk473450.upsellPreview, Chunk473450.spacingLarge),
+          className: r()(Chunk473450.upsellPreview, Chunk473450.spacingLarge),
           children: [{
             channelIcon: () => (0, Chunk54381.jsx)(Chunk481060.MqZ, {
               size: "xs",
@@ -276,11 +276,11 @@ function _() {
           }].map((e, t) => {
             let {
               channelIcon: n,
-              channel: r,
+              channel: i,
               selected: a
             } = e;
             return (0, l.jsxs)("div", {
-              className: i()(S.previewListItem, S.spaceBetween, {
+              className: r()(S.previewListItem, S.spaceBetween, {
                 [S.selected]: a
               }),
               children: [(0, l.jsxs)("div", {
@@ -288,10 +288,10 @@ function _() {
                 children: [n(), (0, l.jsx)(s.Text, {
                   variant: "text-md/medium",
                   color: "header-primary",
-                  children: r
+                  children: i
                 })]
               }), (0, l.jsx)("div", {
-                className: i()(S.checkbox, {
+                className: r()(S.checkbox, {
                   [S.selected]: a
                 }),
                 children: a && (0, l.jsx)(s.dz2, {

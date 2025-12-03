@@ -30,18 +30,18 @@ function d(e) {
     p(false)
   };
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(r.xBx, {
+    children: [(0, i.jsx)(s.xBx, {
       title: c.intl.string(c.t["5bQcoa"]),
       subtitle: c.intl.string(c.t.Ie60Wc)
-    }), (0, i.jsxs)(r.fef, {
-      children: [(0, i.jsx)(s.Kx8, {
+    }), (0, i.jsxs)(s.fef, {
+      children: [(0, i.jsx)(r.Kx8, {
         label: c.intl.string(c.t.FFFAGt),
         value: n,
         maxLength: 200,
         placeholder: c.intl.string(c.t.VzuITC),
         onChange: d,
         error: null == f ? true : f.getAnyErrorMessage()
-      }), (0, i.jsx)(s.q4e, {
+      }), (0, i.jsx)(r.q4e, {
         label: c.intl.string(c.t.Olo8FB),
         placeholder: c.intl.string(c.t.XqMe3N),
         options: (0, o.b7)(t),
@@ -50,8 +50,8 @@ function d(e) {
         onChange: m,
         maxVisibleItems: 4
       })]
-    }), (0, i.jsx)(r.Go$, {
-      leading: (0, i.jsx)(s.Avr, {
+    }), (0, i.jsx)(s.Go$, {
+      leading: (0, i.jsx)(r.Avr, {
         size: "sm",
         variant: "secondary",
         text: c.intl.string(c.t["13/7kX"]),

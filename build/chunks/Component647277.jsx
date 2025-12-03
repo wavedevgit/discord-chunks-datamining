@@ -178,7 +178,7 @@ let I = e => {
             children: g.intl.string(g.t.USo4s7)
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/medium",
-            color: "text-secondary",
+            color: "text-subtle",
             children: b()
           })]
         }), (0, r.jsx)(s.Button, {

@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 901434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,14 +21,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk427538 = require("./427538.js");
 let O = (e, t) => g.ZP.getName(e.getGuildId(), e.id, t.user),
-  j = function(e) {
+  x = function(e) {
     let {
       participants: t,
       channel: n,
       hasConnectPermission: g
-    } = e, j = (0, u.J)(n.guild_id), x = i.useCallback(() => {
-      j ? (0, d.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, j]), v = t.filter(e => e.type === m.Ui.VOICE), C = 4 === v.length ? 2 : 3, I = (0, l.Wu)([o.Z], () => v.map(e => o.Z.getParticipant(n.id, e.id)).filter(f.lm), [n.id, v]);
+    } = e, x = (0, u.J)(n.guild_id), j = i.useCallback(() => {
+      x ? (0, d.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
+    }, [n.id, n.guild_id, x]), v = t.filter(e => e.type === m.Ui.VOICE), C = 4 === v.length ? 2 : 3, I = (0, l.Wu)([o.Z], () => v.map(e => o.Z.getParticipant(n.id, e.id)).filter(f.lm), [n.id, v]);
     return (0, r.jsxs)("div", {
       className: y.container,
       children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)("div", {
@@ -53,7 +53,7 @@ let O = (e, t) => g.ZP.getName(e.getGuildId(), e.id, t.user),
         className: y.participantsRow,
         children: (0, r.jsx)(a.Text, {
           tag: "div",
-          color: "header-secondary",
+          color: "text-default",
           variant: "heading-lg/normal",
           children: 0 === v.length ? _.intl.string(_.t.FUVhyC) : 1 === v.length ? _.intl.formatToPlainString(_.t.EQwZlN, {
             a: O(n, v[0])
@@ -73,7 +73,7 @@ let O = (e, t) => g.ZP.getName(e.getGuildId(), e.id, t.user),
           children: (0, r.jsx)(a.Button, {
             variant: "overlay-primary",
             text: g ? _.intl.string(_.t["7vb2cc"]) : _.intl.string(_.t.TVBCKZ),
-            onClick: x,
+            onClick: j,
             disabled: !g
           })
         }), (0, r.jsx)(b.e, {

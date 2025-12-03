@@ -70,7 +70,7 @@ function R(e) {
       effectId: t,
       colors: n
     } = (0, _.aY)();
-    U(e), K(t), t === i.m.GRADIENT ? ee(n) : J(n[0]), x.default.track(O.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
+    U(e), K(t), t === i.m.GRADIENT ? ee(n) : J(n[0]), x.default.track(y.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
   }, [ee, J]), ei = o.useCallback(e => {
     K(e)
   }, [K]), ea = o.useCallback(e => {
@@ -120,7 +120,7 @@ function R(e) {
               className: D.selectionSubSection,
               defaultColor: X.defaultColors[0]
             })]
-          }), (0, l.jsx)(y.Z, {
+          }), (0, l.jsx)(O.Z, {
             user: B,
             guild: M,
             displayName: Z,

@@ -88,13 +88,13 @@ function _(e) {
           children: (0, r.jsxs)("div", {
             className: u.benefitsList,
             children: [(0, r.jsx)(l.xvT, {
-              color: "header-secondary",
+              color: "text-default",
               variant: "eyebrow",
               children: s.Z.Messages.STOREFRONT_BENEFITS_TITLE
             }), g.length > y ? (0, r.jsxs)(r.Fragment, {
               children: [g.slice(0, y), (0, r.jsx)(l.xvT, {
                 variant: "text-md/semibold",
-                color: "text-secondary",
+                color: "text-subtle",
                 children: s.Z.Messages.STOREFRONT_MORE_BENEFITS.format({
                   count: g.length - y
                 })

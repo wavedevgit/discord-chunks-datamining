@@ -15,7 +15,7 @@ function s(e) {
     [s, o] = r.useState((0, a.se)(t)),
     {
       errorMessage: c,
-      handleValidateKeywords: d
+      handleValidateKeywords: u
     } = function(e) {
       let [t, n] = r.useState(null);
       return {
@@ -32,15 +32,15 @@ function s(e) {
         }), [e])
       }
     }(n),
-    u = r.useCallback(e => 0 !== e.length && (0, a.kU)(e) ? (0, a.se)((0, a.Ac)(e)) : e, []);
+    d = r.useCallback(e => 0 !== e.length && (0, a.kU)(e) ? (0, a.se)((0, a.Ac)(e)) : e, []);
   return {
     value: s,
     errorMessage: c,
     onChange: r.useCallback(t => {
       let n = t.currentTarget.value;
-      "insertFromPaste" === t.nativeEvent.inputType && (n = u(n));
+      "insertFromPaste" === t.nativeEvent.inputType && (n = d(n));
       let r = (0, a.Ac)(n);
-      o(n), e(r), d(r)
-    }, [d, u, e])
+      o(n), e(r), u(r)
+    }, [u, d, e])
   }
 }

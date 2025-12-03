@@ -79,7 +79,7 @@ let E = () => {
       className: Chunk950728.legalContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: E.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.format(Chunk388032.t.mY3ysK, {
           discountedPrice: v,
           billingPeriod: (0, Chunk74538.JP)(O.discount.user_usage_limit_interval),

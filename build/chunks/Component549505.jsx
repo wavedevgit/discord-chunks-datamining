@@ -81,7 +81,7 @@ function u(t) {
           children: r
         }), (0, i.jsx)(s.Text, {
           variant: "text-sm/medium",
-          color: "text-tertiary",
+          color: "text-muted",
           children: n
         })]
       }, "memberlist-learn-more-note-".concat(e))

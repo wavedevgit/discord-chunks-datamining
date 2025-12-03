@@ -176,7 +176,7 @@ function ea(e) {
               children: [(0, l.jsxs)(s.Heading, {
                 id: eY,
                 variant: "heading-sm/normal",
-                color: "text-primary",
+                color: "text-strong",
                 children: [(0, l.jsx)(s.nn4, {
                   children: "".concat(er.intl.string(er.t.apVial), ": ").concat(eK)
                 }), (0, l.jsx)("span", {

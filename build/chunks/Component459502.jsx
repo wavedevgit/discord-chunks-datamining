@@ -22,9 +22,9 @@ function b(e) {
   let {
     channelId: t,
     showDismiss: b = true
-  } = e, y = (0, l.e7)([c.Z], () => c.Z.getChannel(t), [t]), C = (0, p.sz)(t), v = null != (0, p.qY)(t), {
+  } = e, C = (0, l.e7)([c.Z], () => c.Z.getChannel(t), [t]), y = (0, p.sz)(t), v = null != (0, p.qY)(t), {
     canManageGuildEvent: _
-  } = (0, s.XJ)(y), [O, x] = r.useState(() => new Set), E = r.useMemo(() => C.filter(e => !O.has(e.id)), [C, O]), j = (0, l.cj)([d.ZP], () => E.reduce((e, t) => (e[t.id] = d.ZP.getUserCount(t.id, (0, h.DK)(t)), e), {}), [E]);
+  } = (0, s.XJ)(C), [O, x] = r.useState(() => new Set), E = r.useMemo(() => y.filter(e => !O.has(e.id)), [y, O]), j = (0, l.cj)([d.ZP], () => E.reduce((e, t) => (e[t.id] = d.ZP.getUserCount(t.id, (0, h.DK)(t)), e), {}), [E]);
   return E.length < 1 || v ? null : (0, i.jsx)(i.Fragment, {
     children: E.map(e => (0, i.jsx)(f.Z, {
       icon: (0, i.jsx)(o.Que, {

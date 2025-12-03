@@ -169,7 +169,7 @@ function C(e) {
         onClick: () => p(true),
         children: [(0, r.jsx)(d.Text, {
           variant: "text-sm/semibold",
-          color: "text-secondary",
+          color: "text-subtle",
           children: f.intl.string(b.default["2tkPDy"])
         }), (0, r.jsx)(l.CJ0, {
           size: "sm"
@@ -194,7 +194,7 @@ function C(e) {
         onClick: () => p(false),
         children: [(0, r.jsx)(d.Text, {
           variant: "text-sm/semibold",
-          color: "text-secondary",
+          color: "text-subtle",
           children: f.intl.string(b.default.idxnf7)
         }), (0, r.jsx)(l.u04, {
           size: "sm"

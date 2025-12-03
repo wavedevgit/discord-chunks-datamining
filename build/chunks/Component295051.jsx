@@ -15,13 +15,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk30513 = require("./30513.js"),
   Chunk829930 = require("./829930.js");
 
-function u(e) {
+function d(e) {
   let {
     guild: t,
     guildFeature: n,
     analyticsSection: o,
     analyticsObject: c,
-    getPerks: u,
+    getPerks: d,
     targetPremiumGuildTier: g
   } = e, {
     analyticsLocations: m
@@ -31,14 +31,14 @@ function u(e) {
       analyticsLocations: m,
       analyticsSection: o,
       analyticsObject: c,
-      perks: u(),
+      perks: d(),
       targetPremiumGuildTier: g
     })
-  }, [m, c, o, t, u, g]);
+  }, [m, c, o, t, d, g]);
   return (0, r.jsx)(a.Z, {
     guild: t,
     guildFeature: n,
-    className: d.guildFeatureAvailabilityIndicator,
+    className: u.guildFeatureAvailabilityIndicator,
     onClick: p
   })
 }
@@ -47,7 +47,7 @@ function g(e) {
   let {
     guild: t
   } = e;
-  return (0, r.jsx)(u, {
+  return (0, r.jsx)(d, {
     guild: t,
     guildFeature: o.GuildFeatures.BANNER,
     analyticsSection: o.jXE.GUILD_BANNER,
@@ -60,7 +60,7 @@ function m(e) {
   let {
     guild: t
   } = e;
-  return (0, r.jsx)(u, {
+  return (0, r.jsx)(d, {
     guild: t,
     guildFeature: o.GuildFeatures.INVITE_SPLASH,
     analyticsSection: o.jXE.GUILD_INVITE_BACKGROUND,
@@ -73,7 +73,7 @@ function p(e) {
   let {
     guild: t
   } = e;
-  return (0, r.jsx)(u, {
+  return (0, r.jsx)(d, {
     guild: t,
     guildFeature: o.GuildFeatures.VANITY_URL,
     analyticsSection: o.jXE.GUILD_SETTINGS_VANITY_URL,

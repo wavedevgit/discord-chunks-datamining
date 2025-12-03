@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => I
 }), require("./388685.js"), require("./642613.js");
-var l, r, Chunk392711 = require("./392711.js"),
+var l, i, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -36,12 +36,12 @@ class N extends(l = Chunk442837.ZP.Store) {
   get editedDefaultChannelIds() {
     return h
   }
-}(r = "displayName") in N ? Object.defineProperty(N, r, {
+}(i = "displayName") in N ? Object.defineProperty(N, i, {
   value: "GuildSettingsDefaultChannelsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : N[r] = "GuildSettingsDefaultChannelsStore";
+}) : N[i] = "GuildSettingsDefaultChannelsStore";
 let I = new N(Chunk570140.Z, {
   GUILD_SETTINGS_INIT: f,
   GUILD_SETTINGS_SET_SECTION: f,

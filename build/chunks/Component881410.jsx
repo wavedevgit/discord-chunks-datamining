@@ -51,13 +51,13 @@ function p(e, t) {
   var n, r, i = function(e, t) {
     if (null == e) return {};
     var n, r, i = {},
-      a = Object.keys(e);
-    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      l = Object.keys(e);
+    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -69,12 +69,12 @@ function m(e) {
     onAddGame: m,
     children: b
   } = e, h = p(e, ["widgetType", "widget", "onAddGame", "children"]);
-  let [y] = (0, l.ynZ)(), [v, O] = i.useState(""), j = i.useRef(""), x = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+  let [y] = (0, a.ynZ)(), [v, O] = i.useState(""), j = i.useRef(""), x = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
     trackUserProfileEditAction: _
   } = (0, c.KZ)(), P = i.useCallback(e => {
     (0, s.ES)(t, {
       applicationId: e
-    }), l.uvj.announce(u.intl.string(u.t.q0U3DE)), _({
+    }), a.uvj.announce(u.intl.string(u.t.q0U3DE)), _({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
@@ -82,8 +82,8 @@ function m(e) {
   }, [t, _, m]), {
     options: I,
     matchSorterOptions: w
-  } = (0, o.h)(), S = i.useCallback(e => "" === e.trim() ? I : (0, a.Lu)(I, e, g(f({}, w), {
-    threshold: a.Lu.rankings.CONTAINS
+  } = (0, o.h)(), S = i.useCallback(e => "" === e.trim() ? I : (0, l.Lu)(I, e, g(f({}, w), {
+    threshold: l.Lu.rankings.CONTAINS
   })), [I, w]), E = i.useCallback(e => {
     "" === v.trim() && "" !== e.trim() && _({
       action: "GAME_SEARCH_SESSION_STARTED",
@@ -94,7 +94,7 @@ function m(e) {
   }, [v, _, t, S]), T = i.useMemo(() => "" !== v.trim() ? u.intl.format(u.t.jhiTsN, {
     searchTerm: v.trim()
   }) : u.intl.string(u.t.QwSXv8), [v]);
-  return (0, r.jsx)(l.yRy, g(f({}, h), {
+  return (0, r.jsx)(a.yRy, g(f({}, h), {
     onRequestOpen: () => {
       _({
         action: "PRESS_ADD_GAME",
@@ -113,7 +113,7 @@ function m(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(l.DBG, {
+      return (0, r.jsx)(a.DBG, {
         className: d.gameSearchCombobox,
         placeholder: u.intl.string(u.t["5h0QOP"]),
         autoFocus: true,
@@ -126,13 +126,13 @@ function m(e) {
         emptyStateText: T,
         emptyStateHeader: "",
         onQueryChange: E,
-        children: e => S(e).map(e => (0, r.jsx)(l.lo1, {
+        children: e => S(e).map(e => (0, r.jsx)(a.lo1, {
           disabled: x.has(e.value),
           value: String(e.value),
-          children: (0, r.jsx)(l.lo1.Label, {
-            children: (0, r.jsx)(l.Text, {
+          children: (0, r.jsx)(a.lo1.Label, {
+            children: (0, r.jsx)(a.Text, {
               variant: "text-md/medium",
-              color: "header-secondary",
+              color: "text-default",
               children: e.label
             })
           })
@@ -147,17 +147,17 @@ function b(e) {
   var {
     disabled: t
   } = e, n = p(e, ["disabled"]);
-  let a = i.useRef(null);
+  let l = i.useRef(null);
   return (0, r.jsx)(m, g(f({
-    targetElementRef: a,
+    targetElementRef: l,
     position: "bottom",
     align: "center"
   }, n), {
-    children: e => (0, r.jsx)(l.Button, f({
-      buttonRef: a,
+    children: e => (0, r.jsx)(a.Button, f({
+      buttonRef: l,
       variant: "secondary",
       size: "sm",
-      icon: l.qJs,
+      icon: a.qJs,
       text: u.intl.string(u.t.SgTOtX),
       disabled: t
     }, e))
@@ -171,12 +171,12 @@ function h(e) {
     position: "right",
     align: "top"
   }, e), {
-    children: e => (0, r.jsx)(l.P3F, g(f({
+    children: e => (0, r.jsx)(a.P3F, g(f({
       innerRef: t,
       className: d.coverButton,
       "aria-label": u.intl.string(u.t.SgTOtX)
     }, e), {
-      children: (0, r.jsx)(l.svS, {
+      children: (0, r.jsx)(a.svS, {
         color: "currentColor"
       })
     }))

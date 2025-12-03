@@ -26,17 +26,17 @@ function E(e) {
     replyToMessageId: n,
     channel: E,
     onSend: v
-  } = e, S = (0, f.Z)(), {
-    placeholder: b,
+  } = e, b = (0, f.Z)(), {
+    placeholder: S,
     accessibilityLabel: x
-  } = (0, c.Z)({
+  } = (0, u.Z)({
     channel: E
   }), [j, I] = r.useState(() => (0, d.H2)()), {
     textValue: C,
     richValue: Z
   } = j, [N, w] = r.useState(false), T = r.useCallback(() => w(true), []), _ = r.useCallback(() => w(false), []);
   (0, s.ZP)(() => {
-    (0, o.ack)(E.id, {
+    (0, a.ack)(E.id, {
       section: g.jXE.OVERLAY,
       object: g.qAy.ACK_INLINE_REPLY,
       objectType: g.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
@@ -49,25 +49,25 @@ function E(e) {
       })
     }, []),
     A = r.useCallback(e => {
-      "Escape" === e.key && a.Z.updateNotificationStatus(t, g._1z.ACTIVE)
+      "Escape" === e.key && o.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    D = r.useCallback(() => (C.length > S || (l.Z.sendMessage(E.id, p.ZP.parse(E, C), false, {
-      location: y.dy.OVERLAY
-    }), a.Z.setInputLocked(true, m.Z.getTargetPID()), a.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(C)), Promise.resolve({
+    D = r.useCallback(() => (C.length > b || (l.Z.sendMessage(E.id, p.ZP.parse(E, C), false, {
+      location: O.dy.OVERLAY
+    }), o.Z.setInputLocked(true, m.Z.getTargetPID()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(C)), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
-    })), [C, S, E, t, v]);
+    })), [C, b, E, t, v]);
   return (0, i.jsx)("div", {
-    className: O.container,
+    className: y.container,
     children: (0, i.jsx)(h.ZP, {
-      innerClassName: O.textArea,
+      innerClassName: y.textArea,
       onChange: P,
-      placeholder: b,
+      placeholder: S,
       accessibilityLabel: x,
       channel: E,
       textValue: C,
       richValue: Z,
-      type: u.Ie.OVERLAY_INLINE_REPLY,
+      type: c.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: false,
       onBlur: _,
       onFocus: T,

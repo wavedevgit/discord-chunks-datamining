@@ -1,7 +1,7 @@
 /** Chunk was on 91848 **/
 /** chunk id: 877758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => r
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -10,10 +10,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk785997 = require("./785997.js"),
   Chunk880837 = require("./880837.js");
 
-function l(e) {
+function r(e) {
   let {
     step: t
-  } = e, n = t === r.F.AGE_GATE, o = t === r.F.CHOOSE_TEMPLATE || t === r.F.CREATION_INTENT, l = t === r.F.CUSTOMIZE_GUILD, c = t === r.F.CHANNEL_PROMPT || t === r.F.JOIN_GUILD, u = l || c, d = o || u;
+  } = e, n = t === l.F.AGE_GATE, o = t === l.F.CHOOSE_TEMPLATE || t === l.F.CREATION_INTENT, r = t === l.F.CUSTOMIZE_GUILD, c = t === l.F.CHANNEL_PROMPT || t === l.F.JOIN_GUILD, u = r || c, d = o || u;
   return (0, a.jsxs)("div", {
     className: i.sidebar,
     children: [(0, a.jsx)("div", {
@@ -50,7 +50,7 @@ function l(e) {
       })
     }), (0, a.jsx)("div", {
       className: s()(i.step3Character, {
-        [i.show]: l
+        [i.show]: r
       })
     }), (0, a.jsx)("div", {
       className: s()(i.step4Character, {

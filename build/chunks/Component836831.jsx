@@ -21,15 +21,15 @@ let p = Chunk473749.forwardRef((e, o) => {
     glowBlur: u = .4,
     percentCompleteText: C,
     percentCompleteTextVariant: v = "text-lg/medium",
-    children: m
-  } = e, g = (0, d.E)(t, n > 0), x = a / 2, f = a / 2 - p / 2, B = 2 * Math.PI * f, P = B - n * B, y = {
+    children: g
+  } = e, m = (0, d.E)(t, n > 0), x = a / 2, f = a / 2 - p / 2, B = 2 * Math.PI * f, P = B - n * B, y = {
     strokeDasharray: "".concat(B, " ").concat(B),
     strokeDashoffset: P
   }, b = {
     strokeDasharray: "".concat(B, " ").concat(B),
     strokeDashoffset: -n * B
   }, T = {
-    boxShadow: "0 0 20px 0px ".concat(g.glow)
+    boxShadow: "0 0 20px 0px ".concat(m.glow)
   }, {
     progressTextAnimation: S
   } = (0, _.q_F)({
@@ -42,7 +42,7 @@ let p = Chunk473749.forwardRef((e, o) => {
     children: [(0, r.jsxs)("div", {
       className: c.inner,
       style: T,
-      children: [m, (0, r.jsxs)(s.animated.div, {
+      children: [g, (0, r.jsxs)(s.animated.div, {
         style: {
           opacity: S
         },
@@ -51,7 +51,7 @@ let p = Chunk473749.forwardRef((e, o) => {
           className: i()(c.coverContent, c.progressTextOverlay)
         }), (0, r.jsx)(_.Text, {
           variant: v,
-          color: "text-primary",
+          color: "text-strong",
           className: c.progressText,
           children: C
         })]
@@ -85,10 +85,10 @@ let p = Chunk473749.forwardRef((e, o) => {
           y2: "0%",
           children: [(0, r.jsx)("stop", {
             offset: "0%",
-            stopColor: g.backgroundTop
+            stopColor: m.backgroundTop
           }), (0, r.jsx)("stop", {
             offset: "100%",
-            stopColor: g.backgroundBottom
+            stopColor: m.backgroundBottom
           })]
         })]
       }), (0, r.jsx)("circle", {
@@ -107,7 +107,7 @@ let p = Chunk473749.forwardRef((e, o) => {
         r: f,
         cx: x,
         cy: x,
-        stroke: g.foreground,
+        stroke: m.foreground,
         style: y
       })]
     })]

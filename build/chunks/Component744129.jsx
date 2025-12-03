@@ -112,7 +112,7 @@ function B(e) {
       priceOptions: p,
       enablePremiumBrandRefresh: true,
       headingVariant: "text-md/medium",
-      headingColor: "text-primary",
+      headingColor: "text-strong",
       headerClassName: x.priceHeader
     }), (0, r.jsx)("hr", {
       className: x.divider
@@ -187,7 +187,7 @@ function F(e) {
       priceOptions: E,
       enablePremiumBrandRefresh: true,
       headingVariant: "text-md/medium",
-      headingColor: "text-primary",
+      headingColor: "text-strong",
       headerClassName: x.priceHeader
     }), (0, r.jsx)("hr", {
       className: x.divider
@@ -226,7 +226,7 @@ function V(e) {
       priceOptions: s
     }), (0, r.jsx)(o.X, {
       variant: "heading-md/semibold",
-      color: "text-tertiary",
+      color: "text-muted",
       children: D.intl.string(w.default["R+dzZw"])
     }), (0, r.jsx)("hr", {
       className: x.divider

@@ -119,7 +119,7 @@ function S(e) {
           variant: "text-sm/normal",
           "aria-hidden": true,
           lineClamp: 1,
-          color: "header-secondary",
+          color: "text-default",
           className: b.bottomLine,
           children: y
         })]

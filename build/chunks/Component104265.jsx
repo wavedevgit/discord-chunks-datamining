@@ -103,7 +103,7 @@ function v(e) {
           children: n.title
         }), n.description.length > 0 ? (0, l.jsx)(d.Text, {
           variant: "text-xs/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: n.description
         }) : null]
       }), (0, l.jsx)(a.animated.div, {

@@ -1,5 +1,5 @@
 /** Chunk was on 65652 **/
-/** chunk id: 451426, original params: n,e,i (module,exports,require) **/
+/** chunk id: 451426, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
   Z: () => N
 }), require("./953529.js"), require("./388685.js");
@@ -20,109 +20,109 @@ var Chunk54381 = require("./54381.js"),
 
 function N(n) {
   let {
-    className: e,
-    isDsaEligible: i,
+    className: t,
+    isDsaEligible: e,
     onClose: N,
     onNext: C,
     onBack: j
   } = n, _ = (0, s.e7)([d.Z], () => d.Z.getAppealClassificationId()), {
     classification: E
-  } = (0, m.YG)(null != _ ? _ : g.lds), I = (0, x.c7)(null == E ? true : E.description), v = (0, s.e7)([d.Z], () => d.Z.getIsSubmitting()), T = (0, s.e7)([d.Z], () => d.Z.getAppealSignal()), S = (0, s.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [A, k] = a.useState(false), [Z, L] = a.useState(""), P = a.useCallback(n => {
+  } = (0, m.YG)(null != _ ? _ : g.lds), I = (0, x.c7)(null == E ? true : E.description), v = (0, s.e7)([d.Z], () => d.Z.getIsSubmitting()), T = (0, s.e7)([d.Z], () => d.Z.getAppealSignal()), S = (0, s.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [A, k] = a.useState(false), [Z, f] = a.useState(""), L = a.useCallback(n => {
     r.Z.dispatch({
       type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
       userInput: n
     })
-  }, []), b = a.useCallback(async () => {
+  }, []), P = a.useCallback(async () => {
     if (null !== _) try {
-      L(""), await c.uR(_, T, S), null == C || C()
-    } catch (e) {
+      f(""), await c.uR(_, T, S), null == C || C()
+    } catch (t) {
       var n;
-      L((0, x.Zs)(null == (n = e.body) ? true : n.code))
+      f((0, x.Zs)(null == (n = t.body) ? true : n.code))
     }
   }, [_, T, S, C]);
-  return (0, t.jsxs)(t.Fragment, {
-    children: [(0, t.jsxs)(l.xBx, {
+  return (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)(l.xBx, {
       "data-migration-pending": true,
       direction: o.Z.Direction.VERTICAL,
       className: h.header,
       separator: false,
-      children: [(0, t.jsx)(l.Heading, {
+      children: [(0, i.jsx)(l.Heading, {
         className: h.title,
         variant: "heading-xl/semibold",
-        children: p.intl.string(p.t["C5q+pW"])
-      }), (0, t.jsx)(l.Text, {
+        children: u.intl.string(u.t["C5q+pW"])
+      }), (0, i.jsx)(l.Text, {
         className: h.subtitle,
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-md/normal",
-        children: p.intl.string(p.t["G2g/g5"])
-      }), null != N && (0, t.jsx)(l.olH, {
+        children: u.intl.string(u.t["G2g/g5"])
+      }), null != N && (0, i.jsx)(l.olH, {
         "data-migration-pending": true,
         className: h.closeButton,
         onClick: N
       })]
-    }), (0, t.jsxs)(l.hzk, {
+    }), (0, i.jsxs)(l.hzk, {
       "data-migration-pending": true,
-      className: e,
+      className: t,
       paddingFix: false,
-      children: [(0, t.jsx)("ul", {
-        className: u.listContainer,
-        children: [(0, x.ox)(T), S].filter(n => n.length > 0).map((n, e) => (0, t.jsx)("li", {
-          className: u.listItem,
-          children: (0, t.jsx)(l.Text, {
+      children: [(0, i.jsx)("ul", {
+        className: p.listContainer,
+        children: [(0, x.ox)(T), S].filter(n => n.length > 0).map((n, t) => (0, i.jsx)("li", {
+          className: p.listItem,
+          children: (0, i.jsx)(l.Text, {
             tag: "span",
             variant: "text-md/normal",
             children: n
           })
-        }, e))
-      }), i && (0, t.jsx)("div", {
-        className: u.anchorContainer,
-        children: (0, t.jsx)(l.Anchor, {
+        }, t))
+      }), e && (0, i.jsx)("div", {
+        className: p.anchorContainer,
+        children: (0, i.jsx)(l.Anchor, {
           onClick: () => k(n => !n),
-          children: (0, t.jsx)(l.Heading, {
+          children: (0, i.jsx)(l.Heading, {
             variant: "heading-md/normal",
             color: "text-link",
-            children: S.length > 0 ? p.intl.string(p.t.tnE3bZ) : p.intl.string(p.t.uoQFIp)
+            children: S.length > 0 ? u.intl.string(u.t.tnE3bZ) : u.intl.string(u.t.uoQFIp)
           })
         })
-      }), A && i && (0, t.jsx)("div", {
-        className: u.inputContainer,
-        children: (0, t.jsx)(l.Kx8, {
+      }), A && e && (0, i.jsx)("div", {
+        className: p.inputContainer,
+        children: (0, i.jsx)(l.Kx8, {
           value: S,
-          onChange: P
+          onChange: L
         })
-      }), (0, t.jsx)("div", {
+      }), (0, i.jsx)("div", {
         className: h.policyContainer,
-        children: (0, t.jsx)(l.Text, {
+        children: (0, i.jsx)(l.Text, {
           variant: "text-md/semibold",
           children: I
         })
-      }), (0, t.jsx)(l.Text, {
+      }), (0, i.jsx)(l.Text, {
         variant: "text-xs/medium",
-        color: "header-secondary",
-        className: u.footerText,
-        children: p.intl.string(p.t["d6qgY/"])
+        color: "text-default",
+        className: p.footerText,
+        children: u.intl.string(u.t["d6qgY/"])
       })]
-    }), (0, t.jsxs)(l.mzw, {
+    }), (0, i.jsxs)(l.mzw, {
       "data-migration-pending": true,
       direction: o.Z.Direction.VERTICAL,
-      children: ["" !== Z && (0, t.jsx)(l.Text, {
-        className: u.errorText,
+      children: ["" !== Z && (0, i.jsx)(l.Text, {
+        className: p.errorText,
         variant: "text-lg/normal",
         color: "text-feedback-critical",
         children: Z
-      }), (0, t.jsx)("div", {
-        className: u.buttonContainer,
-        children: (0, t.jsxs)(l.ButtonGroup, {
+      }), (0, i.jsx)("div", {
+        className: p.buttonContainer,
+        children: (0, i.jsxs)(l.ButtonGroup, {
           direction: "horizontal-reverse",
-          children: [(0, t.jsx)(l.Button, {
+          children: [(0, i.jsx)(l.Button, {
             variant: "secondary",
-            text: p.intl.string(p.t["13/7kX"]),
+            text: u.intl.string(u.t["13/7kX"]),
             onClick: j,
             disabled: v
-          }), (0, t.jsx)(l.Button, {
+          }), (0, i.jsx)(l.Button, {
             variant: "critical-primary",
-            text: p.intl.string(p.t.geKm7t),
-            onClick: b,
+            text: u.intl.string(u.t.geKm7t),
+            onClick: P,
             loading: v
           })]
         })

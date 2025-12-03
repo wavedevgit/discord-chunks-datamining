@@ -90,8 +90,8 @@ let _ = function(e) {
   i.useEffect(() => (D(), () => {
     N()
   }), [D, N]);
-  let x = (0, c.dQu)(l.Z.colors.TEXT_SECONDARY).hex(),
-    L = (0, c.dQu)(l.Z.colors.TEXT_PRIMARY).hex();
+  let x = (0, c.dQu)(l.Z.colors.TEXT_SUBTLE).hex(),
+    L = (0, c.dQu)(l.Z.colors.TEXT_STRONG).hex();
 
   function j() {
     return s()(f.cardInput, {

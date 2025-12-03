@@ -19,8 +19,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p(e, t) {
-  let n = (0, l.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts));
-  return [(0, l.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts, c.V7)), n]
+  let n = (0, l.Wu)([d.Z], () => (0, c.kl)(e, t, d.Z.editedOnboardingPrompts));
+  return [(0, l.Wu)([d.Z], () => (0, c.kl)(e, t, d.Z.editedOnboardingPrompts, c.V7)), n]
 }
 
 function f(e) {
@@ -36,26 +36,26 @@ function h(e) {
   let {
     guildId: t,
     className: n
-  } = e, c = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(t)), u = i.useCallback(() => {
+  } = e, c = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(t)), d = i.useCallback(() => {
     let e = c ? g.Un.ONBOARDING_DEFAULT : g.Un.ONBOARDING_ADVANCED;
     c ? (0, a.Z)({
       title: m.intl.string(m.t["49+ONj"]),
       subtitle: m.intl.string(m.t.TLkoOt),
       variant: "primary",
       confirmText: m.intl.string(m.t.R9GHya),
-      onConfirm: () => (0, d.Ts)(t, e)
+      onConfirm: () => (0, u.Ts)(t, e)
     }) : (0, a.Z)({
       title: m.intl.string(m.t.YB9xUF),
       subtitle: m.intl.string(m.t.BcGGVn),
       variant: "primary",
       confirmText: m.intl.string(m.t.ts6u6r),
-      onConfirm: () => (0, d.Ts)(t, e)
+      onConfirm: () => (0, u.Ts)(t, e)
     })
   }, [t, c]);
   return (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)(s.Anchor, {
-      onClick: u,
+      onClick: d,
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-link",

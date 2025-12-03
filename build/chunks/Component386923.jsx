@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk205120 = require("./205120.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -45,7 +45,7 @@ let y = {
           gap: 4,
           children: (0, r.jsx)(c.Text, {
             variant: "text-md/medium",
-            color: "header-secondary",
+            color: "text-default",
             children: b.intl.string(p.default.fP8DVx)
           })
         }), (0, r.jsxs)(c.Kqy, {
@@ -53,51 +53,51 @@ let y = {
           gap: 8,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-lg/semibold",
-            color: "header-secondary",
+            color: "text-default",
             children: b.intl.string(p.default["i7CH/I"])
           }), (0, r.jsxs)("ol", {
-            className: l()(j.list, j.orderedList, j.topLevelList),
+            className: a()(j.list, j.orderedList, j.topLevelList),
             children: [(0, r.jsx)("li", {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
-                color: "header-secondary",
+                color: "text-default",
                 children: b.intl.string(p.default["+Izoz7"])
               })
             }), (0, r.jsxs)("li", {
               children: [(0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
-                color: "header-secondary",
+                color: "text-default",
                 children: b.intl.string(p.default["iu/RkU"])
               }), (0, r.jsxs)("ul", {
-                className: l()(j.list, j.innerList, j.unorderedList),
+                className: a()(j.list, j.innerList, j.unorderedList),
                 children: [(0, r.jsx)("li", {
                   children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
-                    color: "header-secondary",
+                    color: "text-default",
                     children: b.intl.string(p.default.QogKbP)
                   })
                 }), (0, r.jsx)("li", {
                   children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
-                    color: "header-secondary",
+                    color: "text-default",
                     children: b.intl.string(p.default.V4orHT)
                   })
                 }), (0, r.jsx)("li", {
                   children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
-                    color: "header-secondary",
+                    color: "text-default",
                     children: b.intl.string(p.default.VrrQXe)
                   })
                 }), (0, r.jsx)("li", {
                   children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
-                    color: "header-secondary",
+                    color: "text-default",
                     children: b.intl.string(p.default.pSuM5e)
                   })
                 }), (0, r.jsx)("li", {
                   children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
-                    color: "header-secondary",
+                    color: "text-default",
                     children: b.intl.string(p.default["/RLXlI"])
                   })
                 })]
@@ -105,13 +105,13 @@ let y = {
             }), (0, r.jsx)("li", {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
-                color: "header-secondary",
+                color: "text-default",
                 children: b.intl.string(p.default.j4AmYy)
               })
             }), (0, r.jsx)("li", {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
-                color: "header-secondary",
+                color: "text-default",
                 children: b.intl.format(p.default["/g+PvX"], {
                   termsOfService: x.EYA.TERMS,
                   communityGuidelines: x.EYA.GUIDELINES,
@@ -125,14 +125,14 @@ let y = {
           gap: 8,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-lg/semibold",
-            color: "header-secondary",
+            color: "text-default",
             children: b.intl.string(p.default.qJWXsz)
           }), (0, r.jsxs)("ul", {
-            className: l()(j.list, j.unorderedList, j.topLevelList),
+            className: a()(j.list, j.unorderedList, j.topLevelList),
             children: [(0, r.jsx)("li", {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
-                color: "header-secondary",
+                color: "text-default",
                 children: b.intl.format(p.default.FUBV1P, {
                   survey: "https://discord.sjc1.qualtrics.com/jfe/form/SV_3WvT7SqlWpCJ4HQ"
                 })
@@ -140,7 +140,7 @@ let y = {
             }), (0, r.jsx)("li", {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
-                color: "header-secondary",
+                color: "text-default",
                 children: b.intl.format(p.default.W4MIAG, {
                   feedback: "https://forms.gle/RbDhW46PMmR39XUP7"
                 })
@@ -152,11 +152,11 @@ let y = {
           gap: 8,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/normal",
-            color: "header-secondary",
+            color: "text-default",
             children: b.intl.string(p.default.J3HKmx)
           }), n && (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
-            color: "header-secondary",
+            color: "text-default",
             children: b.intl.format(p.default["9x2vbP"], {
               optOutHook: e => (0, r.jsx)(h.Z, {
                 onClick: () => m.Z.open(t.id, x.pNK.MODERATION, null, x.KsC.SAFETY_OVERVIEW),
@@ -165,7 +165,7 @@ let y = {
             })
           }), (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
-            color: "header-secondary",
+            color: "text-default",
             children: b.intl.string(p.default.KcCY25)
           })]
         })]
@@ -182,7 +182,7 @@ function w(e) {
   let t, {
       guild: n
     } = e,
-    [a, o] = (0, d.R)("report-to-mod-education-dismissed", false),
+    [l, o] = (0, d.R)("report-to-mod-education-dismissed", false),
     [u, m] = (0, d.R)("report-to-mod-education-expanded", false),
     {
       transitions: h,
@@ -222,11 +222,11 @@ function w(e) {
       }
     }));
   return (i.useEffect(() => {
-    a && g(false)
-  }, [a, g]), a) ? null : h((e, t) => t ? (0, r.jsxs)(s.animated.div, {
+    l && g(false)
+  }, [l, g]), l) ? null : h((e, t) => t ? (0, r.jsxs)(s.animated.div, {
     style: e,
     onClick: () => m(!u),
-    className: l()(_.container, j.container, v.mainCard),
+    className: a()(_.container, j.container, v.mainCard),
     children: [(0, r.jsxs)("div", {
       className: j.inline,
       children: [(0, r.jsxs)("div", {

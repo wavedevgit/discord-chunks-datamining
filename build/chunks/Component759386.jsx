@@ -17,17 +17,17 @@ var Chunk409813 = require("./409813.js"),
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      i = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), i.forEach(function(t) {
+      var i;
+      i = n[t], t in e ? Object.defineProperty(e, t, {
+        value: i,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = i
     })
   }
   return e
@@ -40,27 +40,27 @@ function p(e) {
   } = e;
   return [{
     key: null,
-    renderStep: e => (0, r.jsx)(c.Z, m({
-      initialStep: n ? i.h8.BENEFITS : i.h8.REVIEW,
+    renderStep: e => (0, i.jsx)(c.Z, m({
+      initialStep: n ? r.h8.BENEFITS : r.h8.REVIEW,
       guildId: t
     }, e))
   }, {
-    key: i.h8.BENEFITS,
-    renderStep: e => (0, r.jsx)(o.Z, m({}, e)),
+    key: r.h8.BENEFITS,
+    renderStep: e => (0, i.jsx)(o.Z, m({}, e)),
     options: {
       useBreadcrumbLabel: () => d.intl.string(d.t["5LD2+B"])
     }
   }, {
-    key: i.h8.ADD_PAYMENT_STEPS,
+    key: r.h8.ADD_PAYMENT_STEPS,
     renderStep: e => {
       var t, n;
-      return (0, r.jsx)(l.J, (t = m({}, e), n = n = {
-        breadcrumbSteps: [i.h8.ADD_PAYMENT_STEPS, i.h8.REVIEW, i.h8.CONFIRM]
+      return (0, i.jsx)(l.J, (t = m({}, e), n = n = {
+        breadcrumbSteps: [r.h8.ADD_PAYMENT_STEPS, r.h8.REVIEW, r.h8.CONFIRM]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var i = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, i)
         }
         return n
       })(Object(n)).forEach(function(e) {
@@ -71,18 +71,18 @@ function p(e) {
       renderHeader: true
     }
   }, ...a.yp, {
-    key: i.h8.REVIEW,
-    renderStep: e => (0, r.jsx)(u.Z, m({
+    key: r.h8.REVIEW,
+    renderStep: e => (0, i.jsx)(u.Z, m({
       backButtonEligible: !!n || true,
-      prevStep: n ? i.h8.BENEFITS : true
+      prevStep: n ? r.h8.BENEFITS : true
     }, e)),
     options: {
       renderHeader: true,
       useBreadcrumbLabel: () => d.intl.string(d.t.QBnNHq)
     }
   }, {
-    key: i.h8.CONFIRM,
-    renderStep: e => (0, r.jsx)(s.Z, m({
+    key: r.h8.CONFIRM,
+    renderStep: e => (0, i.jsx)(s.Z, m({
       showBenefits: !n
     }, e))
   }]

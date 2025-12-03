@@ -29,10 +29,10 @@ function _(e) {
     quest: t,
     sourceQuestContent: n,
     onLoadComplete: _
-  } = e, w = (0, l.ZP)(), O = (0, o.wjy)(w) ? g.BR.DARK : g.BR.LIGHT, N = (0, p.V_)(t), P = (0, u.aM)(), E = (0, f.VB)(t.config), T = a.useMemo(() => {
+  } = e, w = (0, l.ZP)(), O = (0, o.wjy)(w) ? y.BR.DARK : y.BR.LIGHT, N = (0, p.V_)(t), P = (0, u.aM)(), E = (0, f.VB)(t.config), T = a.useMemo(() => {
     var e;
     let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
-    return null != n ? n : (0, f.BI)(t.config) !== i.W.GAMEPLAY || t.config.features.includes(y.S7.NON_GAMING_PLAY_QUEST) || (0, f.Pb)(t) ? v.intl.string(v.t.y8Xf3k) : v.intl.string(v.t["wirwN+"])
+    return null != n ? n : (0, f.BI)(t.config) !== i.W.GAMEPLAY || t.config.features.includes(g.S7.NON_GAMING_PLAY_QUEST) || (0, f.Pb)(t) ? v.intl.string(v.t.y8Xf3k) : v.intl.string(v.t["wirwN+"])
   }, [t]), {
     isLoading: A
   } = (0, h.kC)();
@@ -89,7 +89,7 @@ function _(e) {
           })
         }), (0, r.jsx)(o.xvT, {
           variant: "text-sm/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: T
         })]
       }), (0, r.jsx)(h.Fl, {

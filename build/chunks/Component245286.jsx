@@ -153,11 +153,11 @@ function _() {
     className: Chunk942408.emptySearchResultsContainer,
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/semibold",
-      color: "text-primary",
+      color: "text-strong",
       children: Chunk388032.intl.string(Chunk388032.t.zihbmv)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       children: Chunk388032.intl.string(Chunk388032.t.XclvsB)
     })]
   })

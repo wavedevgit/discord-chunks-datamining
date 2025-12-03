@@ -16,11 +16,11 @@ let m = e => {
   let {
     guildId: t,
     reportId: n
-  } = e, [m, p] = i.useState(false), g = d.Z.getGuild(t), _ = null != g;
-  i.useEffect(() => {
+  } = e, [m, p] = l.useState(false), g = d.Z.getGuild(t), _ = null != g;
+  l.useEffect(() => {
     p(!_)
   }, [_]);
-  let h = i.useCallback(() => {
+  let x = l.useCallback(() => {
     p(true), a.ZP.trackWithMetadata(c.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,
       report_id: n
@@ -35,7 +35,7 @@ let m = e => {
     buttonDisabled: m,
     buttonVariant: "critical-primary",
     onButtonPress: () => {
-      (0, l.Z)({
+      (0, i.Z)({
         title: u.intl.formatToPlainString(u.t["1GX6P/"], {
           name: g.name
         }),
@@ -43,7 +43,7 @@ let m = e => {
           name: g.name
         }),
         confirmText: u.intl.string(u.t.J2TBi3),
-        onConfirm: h
+        onConfirm: x
       })
     }
   })

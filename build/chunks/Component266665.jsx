@@ -37,7 +37,7 @@ function w(e) {
   var t, i;
   let l, {
       guild: c,
-      role: d,
+      role: u,
       highestRole: m,
       selectedItem: p,
       onClick: f,
@@ -47,15 +47,15 @@ function w(e) {
       onDragComplete: O,
       roleStyle: y
     } = e,
-    N = (0, C.T)(c, m, d),
-    E = (0, j.fI)(d),
+    N = (0, C.T)(c, m, u),
+    E = (0, j.fI)(u),
     S = null == N && !E,
-    w = (null == (t = d.tags) ? true : t.guild_connections) !== true,
-    Z = (0, x._f)(c.id, d, d.colorStrings),
+    w = (null == (t = u.tags) ? true : t.guild_connections) !== true,
+    Z = (0, x._f)(c.id, u, u.colorStrings),
     [, R] = (0, s.c)({
       type: P,
-      item: () => (_(d.id), {
-        id: d.id,
+      item: () => (_(u.id), {
+        id: u.id,
         position: b
       }),
       canDrag: () => S,
@@ -79,28 +79,28 @@ function w(e) {
         }
       },
       drop: () => ({
-        roleId: d.id
+        roleId: u.id
       })
     }),
-    L = null != (i = d.colorString) ? i : I.Pbq;
+    L = null != (i = u.colorString) ? i : I.Pbq;
   return l = w ? (0, r.jsx)(h.Z, {
     size: 12,
-    color: d.colorString,
+    color: u.colorString,
     className: T.verifiedRoleIcon
-  }) : "dot" === y ? (0, r.jsx)(u.FhE, {
+  }) : "dot" === y ? (0, r.jsx)(d.FhE, {
     color: L,
     colors: Z,
     background: false,
     tooltip: false
-  }) : (0, r.jsx)(u.xko, {
+  }) : (0, r.jsx)(d.xko, {
     color: L,
     colors: Z
-  }), (0, r.jsxs)(u.njP.Item, {
+  }), (0, r.jsxs)(d.njP.Item, {
     className: a()(T.row, {
       [T.dragBefore]: null !== D && b < D,
       [T.dragAfter]: null !== D && b > D
     }),
-    id: d.id,
+    id: u.id,
     selectedItem: p,
     itemType: "side",
     onClick: f,
@@ -129,7 +129,7 @@ function w(e) {
             }
             return e
           }({}, t), i = i = {
-            role: d,
+            role: u,
             guild: c
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
@@ -144,7 +144,7 @@ function w(e) {
         }
       })
     },
-    "aria-label": d.name,
+    "aria-label": u.name,
     clickableRef: e => {
       var t;
       R(A(null != (t = null == e ? true : e.ref) ? t : null))
@@ -152,11 +152,11 @@ function w(e) {
     children: [l, null != N ? (0, r.jsx)(C.Z, {
       className: T.lock,
       tooltipText: N
-    }) : null, (0, r.jsx)(u.Text, {
+    }) : null, (0, r.jsx)(d.Text, {
       variant: "text-sm/medium",
       color: E ? "header-primary" : "interactive-active",
       lineClamp: 1,
-      children: d.name
+      children: u.name
     })]
   })
 }
@@ -193,31 +193,31 @@ function Z(e) {
         className: a()(T.titleContainer, {
           [T.titleElevated]: !C
         }),
-        children: [(0, r.jsxs)(u.P3F, {
+        children: [(0, r.jsxs)(d.P3F, {
           className: T.title,
           onClick: () => l(null),
           children: [(0, r.jsx)(v.Z, {
             direction: v.Z.Directions.LEFT
-          }), (0, r.jsx)(u.Text, {
+          }), (0, r.jsx)(d.Text, {
             className: T.titleText,
             variant: "text-md/semibold",
             color: "none",
             children: S.intl.string(S.t["13/7kX"])
           })]
-        }), (0, r.jsx)(d.u, {
+        }), (0, r.jsx)(u.u, {
           position: "top",
           "aria-label": S.intl.string(S.t.AbxKtv),
-          __unsupportedReactNodeAsText: (0, r.jsx)(u.Text, {
+          __unsupportedReactNodeAsText: (0, r.jsx)(d.Text, {
             className: T.tooltip,
             variant: "text-sm/normal",
             children: S.intl.string(S.t.AbxKtv)
           }),
-          children: (0, r.jsx)(u.P3F, {
+          children: (0, r.jsx)(d.P3F, {
             className: T.addRole,
             onClick: () => {
               m.Z.createRole(t.id), s(E.ZI.DISPLAY)
             },
-            children: (0, r.jsx)(u.qJs, {
+            children: (0, r.jsx)(d.qJs, {
               size: "custom",
               color: "currentColor",
               width: 20,
@@ -225,11 +225,11 @@ function Z(e) {
             })
           })
         })]
-      }), (0, r.jsx)(u.Den, {
+      }), (0, r.jsx)(d.Den, {
         className: T.list,
         ref: D,
         onScroll: I,
-        children: (0, r.jsx)(u.njP, {
+        children: (0, r.jsx)(d.njP, {
           selectedItem: n,
           onItemSelect: e => l(e),
           orientation: "vertical",

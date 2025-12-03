@@ -44,7 +44,7 @@ function v(e) {
         children: b.intl.string(i ? b.t.PFOUKW : b.t["93ZDWE"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: i ? b.intl.format(b.t["r91W/h"], {
           numberOfBlockedUsers: n
         }) : b.intl.format(b.t.rXUeOl, {
@@ -84,7 +84,7 @@ function S(e) {
           children: null != (t = m.globalName) ? t : m.username
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
-          color: "header-secondary",
+          color: "text-default",
           children: null != m.globalName ? m.username : null
         })]
       })]

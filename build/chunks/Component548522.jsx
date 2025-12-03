@@ -31,7 +31,7 @@ function f(e) {
     v = i.useMemo(() => null == f ? true : f.some(e => (0, a.J)(e)), [f]),
     O = i.useMemo(() => f.length === g.nx, [f]),
     C = i.useCallback(e => {
-      u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && _(null)
+      d.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && _(null)
     }, [j, n.id]),
     y = i.useCallback(e => {
       C([...f, e])
@@ -58,7 +58,7 @@ function f(e) {
         currentCount: f.length,
         maxCount: g.nx
       })
-    }), f.map(e => (0, d.a0)({
+    }), f.map(e => (0, u.a0)({
       dropHoveredIndex: j,
       formField: e,
       guild: n,

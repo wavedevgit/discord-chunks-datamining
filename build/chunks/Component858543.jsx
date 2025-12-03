@@ -1,5 +1,5 @@
 /** Chunk was on 22173 **/
-/** chunk id: 858543, original params: e,n,t (module,exports,require) **/
+/** chunk id: 858543, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   DM: () => x,
   ZP: () => j
@@ -21,9 +21,9 @@ var Chunk120356 = require("./120356.js"),
 
 function x(e) {
   let {
-    channel: n,
-    isNew: t
-  } = e, s = (0, u.eV)(n), l = s.slice(true, 3), a = s.slice(3), r = s.length > 3 ? s.length - 3 : 0, i = n.hasFlag(m.zZ.PINNED), o = l.length > 0 || i || t;
+    channel: t,
+    isNew: n
+  } = e, s = (0, u.eV)(t), l = s.slice(true, 3), a = s.slice(3), r = s.length > 3 ? s.length - 3 : 0, i = t.hasFlag(m.zZ.PINNED), o = l.length > 0 || i || n;
   return {
     shownTags: l,
     remainingTags: a,
@@ -36,8 +36,8 @@ function x(e) {
 
 function j(e) {
   let {
-    channel: n,
-    isNew: t,
+    channel: t,
+    isNew: n,
     tagsClassName: l,
     className: u
   } = e, {
@@ -47,14 +47,14 @@ function j(e) {
     isPinned: v,
     shouldRenderTagsRow: p
   } = x({
-    channel: n,
-    isNew: t
+    channel: t,
+    isNew: n
   }), {
     tagFilter: N
-  } = (0, c.H)(n.id);
+  } = (0, c.H)(t.id);
   return p ? (0, s.jsxs)("div", {
     className: a()(f.tags, u),
-    children: [t ? (0, s.jsx)(o.IGR, {
+    children: [n ? (0, s.jsx)(o.IGR, {
       className: a()(g.newBadge, g.inTagsRow),
       color: r.Z.unsafe_rawColors.BRAND_260.css,
       text: h.intl.string(h.t.y2b7CA)

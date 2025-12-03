@@ -18,28 +18,28 @@ let g = e => {
   let {
     application: t,
     reportId: n
-  } = e, [g, _] = i.useState(false), h = (0, l.e7)([u.default], () => u.default.getNewestTokenForApplication(t.id));
-  i.useEffect(() => {
-    null != h && _(true)
-  }, [h]);
-  let x = i.useRef(false);
-  i.useEffect(() => {
-    x.current || (a.Z.fetch(), x.current = true)
+  } = e, [g, _] = l.useState(false), x = (0, i.e7)([u.default], () => u.default.getNewestTokenForApplication(t.id));
+  l.useEffect(() => {
+    null != x && _(true)
+  }, [x]);
+  let h = l.useRef(false);
+  l.useEffect(() => {
+    h.current || (a.Z.fetch(), h.current = true)
   }, []);
-  let b = (0, l.e7)([s.ZP], () => s.ZP.getSelfEmbeddedActivities()),
-    f = i.useCallback(() => {
+  let b = (0, i.e7)([s.ZP], () => s.ZP.getSelfEmbeddedActivities()),
+    f = l.useCallback(() => {
       if (_(false), d.ZP.trackWithMetadata(m.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
           application_id: t.id,
           report_id: n
-        }), null == h) return;
-      a.Z.delete(h.id);
+        }), null == x) return;
+      a.Z.delete(x.id);
       let e = b.get(t.id);
       null != e && o.Z.leaveActivity({
         location: e.location,
         applicationId: t.id,
         showFeedback: false
       })
-    }, [t.id, h, b, n]);
+    }, [t.id, x, b, n]);
   return null == t ? null : (0, r.jsx)(c.JZ, {
     title: p.intl.string(p.t.ygG62M),
     description: p.intl.string(p.t.S51EKg),

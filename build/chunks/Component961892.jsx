@@ -37,7 +37,7 @@ let h = e => {
       className: f.churnDiscountBadgeIcon
     }), (0, r.jsx)(o.Text, {
       variant: "eyebrow",
-      color: "text-secondary",
+      color: "text-subtle",
       children: p.intl.format(p.t.AYcXGW, {
         discountOfferAmount: n.discount.amount
       })

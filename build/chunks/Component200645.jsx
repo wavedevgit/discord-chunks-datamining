@@ -72,7 +72,7 @@ function E() {
         children: Chunk388032.intl.string(Chunk388032.t.roHq80)
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: Chunk388032.intl.format(Chunk388032.t["8CAL+D"], {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SYSTEM_SERVICE)
         })

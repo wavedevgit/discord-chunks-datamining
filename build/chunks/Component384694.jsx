@@ -32,8 +32,8 @@ let x = e => ({
       labelledBy: _,
       isEmojiAnimated: E,
       label: O,
-      required: y,
-      errorMessage: C
+      required: C,
+      errorMessage: y
     } = e, I = (0, i.cj)([c.Z, m.ZP], () => Object.fromEntries(m.ZP.getFlattenedGuildIds().map(e => c.Z.getGuild(e)).filter(h.lm).map(e => [e.id, e]))), N = (0, i.cj)([o.ZP], () => Object.fromEntries(Object.entries(I).map(e => {
       let [t, n] = e;
       return [t, function(e) {
@@ -85,7 +85,7 @@ let x = e => ({
             children: e.label
           }), (0, l.jsx)(a.Text, {
             variant: "text-xs/normal",
-            color: "text-tertiary",
+            color: "text-muted",
             className: p.sublabel,
             lineClamp: 1,
             children: v.intl.format(v.t.WkK72v, {
@@ -100,8 +100,8 @@ let x = e => ({
       S.length < 1 ? d(f.ze.NO_PERMISSIONS) : null != n && (null != (e = null == N ? true : N[n]) ? e : 0) < 1 ? d(b.evJ.TOO_MANY_EMOJI) : d(null)
     }, [S, t, d, n, N]), (0, l.jsx)(a.q4e, {
       label: O,
-      required: y,
-      errorMessage: C,
+      required: C,
+      errorMessage: y,
       onChange: t,
       options: S,
       popoutPosition: "bottom",

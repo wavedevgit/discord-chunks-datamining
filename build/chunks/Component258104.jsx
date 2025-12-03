@@ -36,10 +36,10 @@ let N = e => {
     } = e, {
       avatarSrc: n,
       eventHandlers: l
-    } = (0, f.Z)({
+    } = (0, h.Z)({
       userId: null == t ? true : t.id,
       size: c.EFr.SIZE_56
-    }), o = j.ZP.getName(t), d = t.username !== o && r === _.Fz.SUCCESS, h = r === _.Fz.FAIL;
+    }), o = j.ZP.getName(t), d = t.username !== o && r === _.Fz.SUCCESS, f = r === _.Fz.FAIL;
     return (0, a.jsxs)("div", {
       className: w.referredUserRowContainer,
       children: [(0, a.jsx)(c.qEK, function(e) {
@@ -61,14 +61,14 @@ let N = e => {
         return e
       }({
         imageClassName: s()({
-          [w.erroredAvatar]: h
+          [w.erroredAvatar]: f
         }),
         src: n,
         "aria-label": o,
         size: c.EFr.SIZE_56
       }, l)), (0, a.jsxs)("div", {
         className: w.referredUserRowBody,
-        children: [h ? (0, a.jsxs)(a.Fragment, {
+        children: [f ? (0, a.jsxs)(a.Fragment, {
           children: [(0, a.jsx)(c.Text, {
             className: w.errorDisplayName,
             variant: "text-md/medium",
@@ -117,13 +117,13 @@ let N = e => {
       onClose: i
     }, e.id)), n = (0, o.e7)([g.Z], () => g.Z.getReferralsRemaining());
     l()(null !== n, "Referrals remaining should not be null");
-    let C = (0, h.Fg)(),
+    let C = (0, f.Fg)(),
       x = (0, d.ap)(C) ? y.Z : L.Z,
       p = b.intl.string(b.t.Pcb7KF),
-      f = [...r.values()].filter(e => e === _.Fz.SUCCESS).length;
+      h = [...r.values()].filter(e => e === _.Fz.SUCCESS).length;
     return n > 0 && (p = b.intl.formatToPlainString(b.t.iWtOfC, {
-      numReferrals: f
-    })), 0 === f && (p = b.intl.string(b.t["7VBEue"])), (0, a.jsxs)("div", {
+      numReferrals: h
+    })), 0 === h && (p = b.intl.string(b.t["7VBEue"])), (0, a.jsxs)("div", {
       className: w.confrimationContainer,
       children: [(0, a.jsx)(c.P3F, {
         onClick: i,

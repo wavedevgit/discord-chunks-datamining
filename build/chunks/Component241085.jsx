@@ -54,7 +54,7 @@ function R(e) {
         size: "refresh_sm"
       }), (0, r.jsx)(u.Text, {
         variant: "text-md/normal",
-        color: "text-tertiary",
+        color: "text-muted",
         children: N.intl.format(N.t.y68I8P, {
           onClick: () => {
             var e;
@@ -84,7 +84,7 @@ function R(e) {
         size: "refresh_sm"
       }), (0, r.jsx)(u.Text, {
         variant: "text-md/normal",
-        color: "text-primary",
+        color: "text-strong",
         children: N.intl.string(N.t["8OJlsH"])
       })]
     })]
@@ -99,7 +99,7 @@ function w() {
       size: "refresh_sm"
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
-      color: "text-primary",
+      color: "text-strong",
       children: Chunk388032.intl.string(Chunk388032.t["0PhgpK"])
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",

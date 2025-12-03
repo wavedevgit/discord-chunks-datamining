@@ -20,7 +20,7 @@ function T() {
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk823087.Z, {}), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       children: Chunk388032.intl.format(Chunk388032.t["V+B3FH"], {
         guideURL: I
       })

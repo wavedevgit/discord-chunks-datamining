@@ -131,13 +131,13 @@ function I(e) {
         clamp: true
       })
     }, em),
-    ey = (0, s.q_F)({
+    eC = (0, s.q_F)({
       value: eu,
       config: j(E({}, o.config.stiff), {
         clamp: true
       })
     }, en === et && eb.value.idle && !el || ea || ef ? "animate-never" : "animate-always"),
-    eC = (0, s.q_F)({
+    ey = (0, s.q_F)({
       value: n,
       config: j(E({}, o.config.stiff), {
         clamp: true
@@ -162,11 +162,11 @@ function I(e) {
     e_ = r.useCallback(e => {
       z(e), K(false)
     }, []),
-    eO = et ? [] : (0, y.n3)(T, R, B),
+    eO = et ? [] : (0, C.n3)(T, R, B),
     {
       visibleParticipants: ex,
       participantTileWidth: eE
-    } = (0, C.ZB)(D, N);
+    } = (0, y.ZB)(D, N);
   return (0, i.jsxs)("div", {
     className: a()(x.root, O.flexCenter, k),
     children: [(0, i.jsxs)("div", {
@@ -181,7 +181,7 @@ function I(e) {
         },
         children: [(0, i.jsx)(o.animated.div, {
           style: {
-            width: ey.value
+            width: eC.value
           },
           className: x.videoWrapper,
           children: (0, i.jsx)("div", {
@@ -220,7 +220,7 @@ function I(e) {
             [x.idle]: F
           }),
           style: {
-            bottom: eC.value
+            bottom: ey.value
           },
           children: (0, i.jsx)(d.Z, {
             channelId: M.id,
@@ -235,7 +235,7 @@ function I(e) {
           opacity: eg.value,
           visibility: eg.value.to(e => 0 === e ? "hidden" : "visible")
         },
-        children: (0, i.jsx)(C.ZP, {
+        children: (0, i.jsx)(y.ZP, {
           channel: M,
           onClick: l,
           onContextMenu: I,

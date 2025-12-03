@@ -35,7 +35,7 @@ function s(e) {
       variant: "heading-xl/semibold",
       children: n
     }), (0, r.jsxs)(i.Text, {
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-xs/normal",
       children: [c ? null : (0, r.jsxs)(i.Text, {
         tag: "span",

@@ -77,12 +77,12 @@ function _(e) {
             focusable: false
           }), (0, r.jsx)(f.x, {
             variant: "text-md/normal",
-            color: "primary" === y ? "text-primary" : "text-secondary",
+            color: "primary" === y ? "text-strong" : "text-subtle",
             children: h
           })]
         }), P && (0, r.jsx)(f.x, {
           variant: "text-sm/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: n
         })]
       })]

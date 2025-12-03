@@ -37,10 +37,10 @@ function S(e) {
     isGuildProducts: l = false
   } = e, {
     format: s
-  } = (0, O.Z)(n.id), u = (0, j.YB)(n.id), x = i.useCallback(() => {
+  } = (0, O.Z)(n.id), d = (0, j.YB)(n.id), x = i.useCallback(() => {
     var e;
-    return (null == u || null == (e = u.cover_image_asset) ? true : e.application_id) == null ? null : (0, b._W)(u.cover_image_asset.application_id, u.cover_image_asset, I)
-  }, [u]), [S, T] = i.useState(s), [P, w] = i.useState(null != (t = null == u ? true : u.description) ? t : ""), [Z, R] = i.useState(x), [D, A] = i.useState(null == u ? true : u.store_page_guild_products_default_sort), [L, k] = i.useState(null == u ? true : u.server_shop_tab_order), {
+    return (null == d || null == (e = d.cover_image_asset) ? true : e.application_id) == null ? null : (0, b._W)(d.cover_image_asset.application_id, d.cover_image_asset, I)
+  }, [d]), [S, T] = i.useState(s), [P, w] = i.useState(null != (t = null == d ? true : d.description) ? t : ""), [Z, R] = i.useState(x), [D, A] = i.useState(null == d ? true : d.store_page_guild_products_default_sort), [L, k] = i.useState(null == d ? true : d.server_shop_tab_order), {
     loading: G,
     error: M,
     updateSubscriptionsSettings: U
@@ -48,20 +48,20 @@ function S(e) {
     imageCTA: B,
     imageAriaLabel: F,
     setFilename: H
-  } = (0, v.Z)(null == u ? true : u.cover_image_asset), W = (0, p.Dt)();
+  } = (0, v.Z)(null == d ? true : d.cover_image_asset), W = (0, p.Dt)();
 
   function z(e, t) {
     a()(null != e, "Null value not allowed"), null != t && H(t.name), R(e)
   }
   let V = i.useMemo(() => {
       var e;
-      return null != P && P !== (null != (e = null == u ? true : u.description) ? e : "") || (null == Z ? true : Z.startsWith("data:")) === true || S !== s || (null == u ? true : u.store_page_guild_products_default_sort) !== D || (null == u ? true : u.server_shop_tab_order) !== L
-    }, [Z, s, P, u, S, D, L]),
+      return null != P && P !== (null != (e = null == d ? true : d.description) ? e : "") || (null == Z ? true : Z.startsWith("data:")) === true || S !== s || (null == d ? true : d.store_page_guild_products_default_sort) !== D || (null == d ? true : d.server_shop_tab_order) !== L
+    }, [Z, s, P, d, S, D, L]),
     K = null != P && "" !== P && null != Z;
   i.useEffect(() => {
     var e;
-    (null == u || null == (e = u.cover_image_asset) ? true : e.application_id) != null && R((0, b._W)(u.cover_image_asset.application_id, u.cover_image_asset, I))
-  }, [null == u ? true : u.cover_image_asset]);
+    (null == d || null == (e = d.cover_image_asset) ? true : e.application_id) != null && R((0, b._W)(d.cover_image_asset.application_id, d.cover_image_asset, I))
+  }, [null == d ? true : d.cover_image_asset]);
   let Y = (0, _.mY)(),
     q = i.useMemo(() => y.kL.map(e => ({
       label: (0, y.eJ)(e),
@@ -204,17 +204,17 @@ function S(e) {
       component: "div",
       className: E.contentRegion,
       children: V && (0, r.jsx)(m.oXn, {
-        children: (0, r.jsx)(d.Z, {
+        children: (0, r.jsx)(u.Z, {
           submitting: G,
           disabled: !K,
           onReset: () => {
             var e;
-            T(s), w(null != (e = null == u ? true : u.description) ? e : ""), R(x), A(null == u ? true : u.store_page_guild_products_default_sort), k(null == u ? true : u.server_shop_tab_order)
+            T(s), w(null != (e = null == d ? true : d.description) ? e : ""), R(x), A(null == d ? true : d.store_page_guild_products_default_sort), k(null == d ? true : d.server_shop_tab_order)
           },
           onSave: () => {
-            a()(null != u, "Settings must be defined");
+            a()(null != d, "Settings must be defined");
             let e = {};
-            P !== u.description && (e.description = P), null != Z && Z.startsWith("data:") && (e.cover_image = Z), S !== s && (e.full_server_gate = S === C.e3.ALL_CHANNELS), D !== u.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = D), L !== u.server_shop_tab_order && (e.server_shop_tab_order = L), o().isEmpty(e) || U(n.id, e)
+            P !== d.description && (e.description = P), null != Z && Z.startsWith("data:") && (e.cover_image = Z), S !== s && (e.full_server_gate = S === C.e3.ALL_CHANNELS), D !== d.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = D), L !== d.server_shop_tab_order && (e.server_shop_tab_order = L), o().isEmpty(e) || U(n.id, e)
           },
           saveButtonTooltip: K ? true : N.intl.string(N.t["6HRvit"])
         })

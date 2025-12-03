@@ -24,15 +24,15 @@ async function p(e, t) {
 function f(e) {
   let {
     guild: t
-  } = e, n = (0, l.e7)([o.Z], () => null != t && o.Z.can(d.Plq.MANAGE_GUILD, t), [t]), c = t.features.has(d.GuildFeatures.REPORT_TO_MOD_PILOT), [f, h] = i.useState((0, s.Z)(t) && c), b = i.useCallback(async e => {
+  } = e, n = (0, l.e7)([o.Z], () => null != t && o.Z.can(u.Plq.MANAGE_GUILD, t), [t]), c = t.features.has(u.GuildFeatures.REPORT_TO_MOD_PILOT), [f, h] = i.useState((0, s.Z)(t) && c), b = i.useCallback(async e => {
     h(e), await p(t, e)
   }, [t]);
   return c && n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: m.setupContainer,
       children: (0, r.jsx)(a.rsf, {
-        label: u.intl.string(g.default["/xIz7G"]),
-        description: u.intl.string(g.default.uUMXyu),
+        label: d.intl.string(g.default["/xIz7G"]),
+        description: d.intl.string(g.default.uUMXyu),
         badge: "beta",
         checked: f,
         onChange: b,

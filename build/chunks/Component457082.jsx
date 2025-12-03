@@ -1,5 +1,5 @@
 /** Chunk was on 84735 **/
-/** chunk id: 457082, original params: r,a,e (module,exports,require) **/
+/** chunk id: 457082, original params: r,e,a (module,exports,require) **/
 require.d(exports, {
   Z: () => o
 });
@@ -8,14 +8,14 @@ require("./473749.js");
 var Chunk289556 = require("./289556.js");
 let o = r => {
   let {
-    innerRingPercent: a,
-    outerRingColor: e = "currentColor",
+    innerRingPercent: e,
+    outerRingColor: a = "currentColor",
     innerRingColor: o = "currentColor",
     strokeWidth: t = 4,
     children: s,
     backgroundCircleColor: i,
     backgroundCircleBlurAmount: l = 0
-  } = r, d = Math.min(Math.max(a, 0), 100), g = (100 - t) / 2, u = g * Math.PI * 2, v = (100 - t) / 2, h = v * Math.PI * 2;
+  } = r, d = Math.min(Math.max(e, 0), 100), g = (100 - t) / 2, u = g * Math.PI * 2, v = (100 - t) / 2, h = v * Math.PI * 2;
   return (0, c.jsxs)("div", {
     className: n.container,
     children: [(0, c.jsx)("svg", {
@@ -38,7 +38,7 @@ let o = r => {
         cy: 50,
         r: g,
         strokeWidth: t,
-        stroke: e,
+        stroke: a,
         fill: "none",
         strokeLinecap: "round",
         transform: "rotate(-90 ".concat(50, " ").concat(50, ")"),

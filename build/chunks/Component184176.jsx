@@ -31,7 +31,7 @@ let d = () => {
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk838344.bodyContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-        color: "text-secondary",
+        color: "text-subtle",
         variant: "text-sm/normal",
         children: Chunk388032.intl.format(Chunk388032.t.uu1WAa, {
           weeks: 1

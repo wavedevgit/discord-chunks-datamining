@@ -18,36 +18,36 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let d = [],
-  u = false,
+let u = [],
+  d = false,
   g = [];
 
 function m() {
   let e = Chunk999382.Z.getGuildId();
   if (null == module) {
-    d = [], g = [], u = false;
+    u = [], g = [], d = false;
     return
   }
-  d = [...Chunk45966.Z.getConnections(module)], g = [], u = false
+  u = [...Chunk45966.Z.getConnections(module)], g = [], d = false
 }
 class p extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk45966.Z, Chunk999382.Z)
   }
   getEditedConnections() {
-    return d
+    return u
   }
   getErrors() {
     return g
   }
   isSubmitting() {
-    return u
+    return d
   }
   hasChanges() {
     let e = Chunk999382.Z.getGuildId();
     if (null == module) returnfalse;
     let t = Chunk45966.Z.getConnections(module);
-    return d.length !== exports.length || d.some((e, n) => {
+    return u.length !== exports.length || u.some((e, n) => {
       let r = t[n];
       return null == r || e.connection_type !== r.connection_type || e.application_id !== r.application_id || e.provider_id !== r.provider_id || e.description !== r.description
     })
@@ -68,24 +68,24 @@ let f = new p(Chunk570140.Z, {
     let {
       connection: t
     } = e;
-    if (d.length >= o.yx) {
+    if (u.length >= o.yx) {
       g = ["Maximum ".concat(o.yx, " connections allowed")];
       return
     }
-    d = [...d, t], g = (0, o.rZ)(d)
+    u = [...u, t], g = (0, o.rZ)(u)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REMOVE: function(e) {
     let {
       index: t
     } = e;
-    d = d.filter((e, n) => n !== t), g = (0, o.rZ)(d)
+    u = u.filter((e, n) => n !== t), g = (0, o.rZ)(u)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_UPDATE: function(e) {
     let {
       index: t,
       updates: n
     } = e;
-    d = d.map((e, r) => r === t ? function(e) {
+    u = u.map((e, r) => r === t ? function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -96,35 +96,35 @@ let f = new p(Chunk570140.Z, {
         })
       }
       return e
-    }({}, e, n) : e), g = (0, o.rZ)(d)
+    }({}, e, n) : e), g = (0, o.rZ)(u)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REORDER: function(e) {
     let {
       connections: t
     } = e;
-    d = [...t], g = (0, o.rZ)(d)
+    u = [...t], g = (0, o.rZ)(u)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_RESET: function() {
     let e = Chunk999382.Z.getGuildId();
     if (null == module) {
-      d = [], g = [];
+      u = [], g = [];
       return
     }
-    d = [...Chunk45966.Z.getConnections(module)], g = []
+    u = [...Chunk45966.Z.getConnections(module)], g = []
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SUBMIT: function() {
-    u = true, g = (0, Chunk290511.rZ)(d)
+    d = true, g = (0, Chunk290511.rZ)(u)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_SUCCESS: function(e) {
     let {
       connections: t
     } = e;
-    u = false, g = [], d = [...t]
+    d = false, g = [], u = [...t]
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_FAILED: function(e) {
     let {
       errors: t
     } = e;
-    u = false, g = t
+    d = false, g = t
   }
 })

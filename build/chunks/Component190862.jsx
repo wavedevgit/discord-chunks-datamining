@@ -43,13 +43,13 @@ function v(e, t) {
   var n, r, i = function(e, t) {
     if (null == e) return {};
     var n, r, i = {},
-      a = Object.keys(e);
-    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      l = Object.keys(e);
+    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -58,19 +58,19 @@ let O = e => {
       widget: t
     } = e, n = v(e, ["widget"]);
     switch (t.type) {
-      case a.l.FAVORITE_GAMES:
+      case l.l.FAVORITE_GAMES:
         return (0, r.jsx)(g.Z, y({
           widget: t
         }, n));
-      case a.l.CURRENT_GAMES:
+      case l.l.CURRENT_GAMES:
         return (0, r.jsx)(f.Z, y({
           widget: t
         }, n));
-      case a.l.WANT_TO_PLAY_GAMES:
+      case l.l.WANT_TO_PLAY_GAMES:
         return (0, r.jsx)(m.Z, y({
           widget: t
         }, n));
-      case a.l.PLAYED_GAMES:
+      case l.l.PLAYED_GAMES:
         return (0, r.jsx)(p.Z, y({
           widget: t
         }, n));
@@ -82,12 +82,12 @@ let O = e => {
     var {
       widget: t,
       user: n,
-      disableInteraction: a
+      disableInteraction: l
     } = e, f = v(e, ["widget", "user", "disableInteraction"]);
     let {
       shouldShowSuggestions: g,
       handleDismissSuggestions: p
-    } = (0, s.h)(t), m = (0, l.e7)([o.default], () => o.default.getId() === n.id), j = m && !a && g, x = (0, c.mR)(t), _ = (0, c.Hy)(t, {
+    } = (0, s.h)(t), m = (0, a.e7)([o.default], () => o.default.getId() === n.id), j = m && !l && g, x = (0, c.mR)(t), _ = (0, c.Hy)(t, {
       isCurrentUser: m
     }), P = (0, c.kQ)(t), I = 1 === (0, c.Gv)(t.type), [w, S] = i.useState(false);
     return (0, r.jsx)(d.N, {
@@ -98,7 +98,7 @@ let O = e => {
       children: (0, r.jsx)(O, y({
         widget: t,
         user: n,
-        disableInteraction: a,
+        disableInteraction: l,
         headerTitle: x,
         headerSubtitle: _,
         headerActionButtons: m && !I ? [(0, r.jsx)(u.yX, {

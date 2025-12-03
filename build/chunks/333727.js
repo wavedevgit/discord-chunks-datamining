@@ -14,7 +14,7 @@ var Chunk278323 = require("./278323.js"),
   Chunk388032 = require("./388032.jsx");
 
 function h(e, t, n, h) {
-  if (a.Z.isNotificationDisabled(c.n0.ActivityInvite)) return null;
+  if (o.Z.isNotificationDisabled(u.n0.ActivityInvite)) return null;
   let p = t.username,
     f = d.intl.format(d.t.VDODnv, {
       username: "",
@@ -23,11 +23,11 @@ function h(e, t, n, h) {
     m = t.getAvatarURL(e.guild_id, 80),
     {
       trackView: g,
-      trackClick: y
-    } = (0, s.Rg)(c.n0.ActivityInvite, {
-      notif_type: c.n0.ActivityInvite,
+      trackClick: O
+    } = (0, s.Rg)(u.n0.ActivityInvite, {
+      notif_type: u.n0.ActivityInvite,
       notif_user_id: t.id,
-      activity_type: u.mFx.JOIN_REQUEST,
+      activity_type: c.mFx.JOIN_REQUEST,
       activity_name: h.name
     });
   return {
@@ -42,20 +42,20 @@ function h(e, t, n, h) {
     onConfirmClick: (t, n) => {
       i.Z.sendActivityInvite({
         channelId: e.id,
-        type: u.mFx.JOIN,
+        type: c.mFx.JOIN,
         activity: h,
-        location: (0, o._)() ? u.Sbl.LOCKED_OVERLAY : u.Sbl.UNLOCKED_OVERLAY
-      }), y("join"), r.Z.updateNotificationStatus(n)
+        location: (0, a._)() ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
+      }), O("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
       (0, l.ack)(e.id, {
-        section: u.jXE.OVERLAY,
-        object: u.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
-        objectType: u.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-      }, true, true), r.Z.updateNotificationStatus(n), y("decline")
+        section: c.jXE.OVERLAY,
+        object: c.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
+        objectType: c.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
+      }, true, true), r.Z.updateNotificationStatus(n), O("decline")
     },
     onDismissClick: () => {
-      y("dismiss")
+      O("dismiss")
     }
   }
 }

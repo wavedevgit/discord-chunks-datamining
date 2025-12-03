@@ -38,25 +38,25 @@ function g(e) {
     games: t,
     user: n,
     widgetType: i
-  } = e, a = function(e, t) {
+  } = e, l = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["games", "user", "widgetType"]);
   let {
     registerItemRef: o,
     manageFocusOnDelete: c
-  } = (0, l.C)();
+  } = (0, a.C)();
   return (0, r.jsx)("ul", {
     className: d.cardList,
     children: t.map((e, t) => (0, r.jsx)("li", {
@@ -67,7 +67,7 @@ function g(e) {
         widgetType: i,
         coverRef: o(e.applicationId),
         onRemoveGame: c
-      }, a))
+      }, l))
     }, e.applicationId))
   })
 }
@@ -79,7 +79,7 @@ function p(e) {
     widgetType: d,
     disableInteraction: p,
     games: m
-  } = e, b = (0, i.e7)([a.default], () => a.default.getId() === s.id), {
+  } = e, b = (0, i.e7)([l.default], () => l.default.getId() === s.id), {
     getManageButtonForWidget: h
   } = (0, u.j)(), y = h(d), {
     expanded: v,
@@ -101,7 +101,7 @@ function p(e) {
       onClick: () => O(e => !e)
     })]
   });
-  return b && !p ? (0, r.jsx)(l.d, {
+  return b && !p ? (0, r.jsx)(a.d, {
     emptyListFallbackRef: y,
     children: _
   }) : _

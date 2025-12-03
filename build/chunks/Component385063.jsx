@@ -38,7 +38,7 @@ function f(e) {
       channelName: (0, r.jsx)(a.Text, {
         tag: "span",
         variant: "text-md/medium",
-        color: "text-primary",
+        color: "text-strong",
         children: t.content
       }, "group-name-".concat(t.id)),
       editGroupButton: (0, r.jsx)(a.Text, {

@@ -249,14 +249,14 @@ function S(e) {
           className: m.productDetails,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-md/normal",
-            color: "header-secondary",
+            color: "text-default",
             children: A
           }), null != C ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
               className: m.dotSeparator
             }), (0, r.jsx)(s.Text, {
               variant: "text-md/normal",
-              color: "header-secondary",
+              color: "text-default",
               children: C
             })]
           }) : null]

@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 428936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,7 +34,7 @@ function b(e) {
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,11 +47,11 @@ function p(e, t) {
   }), e
 }
 
-function f(e) {
+function p(e) {
   let {
     guildId: t,
     onPageChange: n
-  } = e, [f, h] = l.useTransition(), g = (0, i.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), j = (0, i.cj)([u.Z], () => u.Z.getPaginationStateByGuildId(t), [t]), x = (0, c.$j)(t), v = l.useMemo(() => s.LU.map(e => ({
+  } = e, [p, h] = l.useTransition(), g = (0, i.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), j = (0, i.cj)([u.Z], () => u.Z.getPaginationStateByGuildId(t), [t]), x = (0, c.$j)(t), v = l.useMemo(() => s.LU.map(e => ({
     value: e,
     label: Number(e).toLocaleString()
   })), []), y = new Intl.NumberFormat(C.intl.currentLocale).format(g), O = C.intl.formatToPlainString(C.t["RNDnQ/"], {
@@ -73,7 +73,7 @@ function f(e) {
           isSelected: e => e === j.pageSize,
           select: e => {
             h(() => {
-              (0, d._o)(t, p(b({}, j), {
+              (0, d._o)(t, f(b({}, j), {
                 pageSize: e
               }))
             })
@@ -110,7 +110,7 @@ function f(e) {
         onPageChange: e => {
           null == n || n(e), requestIdleCallback(() => {
             h(() => {
-              (0, d._o)(t, p(b({}, j), {
+              (0, d._o)(t, f(b({}, j), {
                 currentPage: e
               }))
             })

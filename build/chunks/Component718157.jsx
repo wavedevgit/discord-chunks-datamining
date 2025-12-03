@@ -2,7 +2,7 @@
 /** chunk id: 718157, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  E: () => u
+  E: () => d
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,17 +13,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk128449 = require("./128449.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function d(e) {
   let {
     label: t,
     description: n,
-    guildId: u,
+    guildId: d,
     guildMetadata: g,
     isDisabled: m,
     clearable: p = true
   } = e, f = (0, l.Wu)([o.Z], () => o.Z.getPrimaryCategories()), h = i.useCallback(e => {
-    (0, s.TA)(u, null != e ? e : c.o3)
-  }, [u]), b = i.useMemo(() => f.map(e => {
+    (0, s.TA)(d, null != e ? e : c.o3)
+  }, [d]), b = i.useMemo(() => f.map(e => {
     let {
       categoryId: t,
       name: n
@@ -37,7 +37,7 @@ function u(e) {
     value: g.primaryCategoryId === c.o3 ? null : g.primaryCategoryId,
     label: t,
     description: n,
-    placeholder: d.intl.string(d.t.XqMe3N),
+    placeholder: u.intl.string(u.t.XqMe3N),
     options: b,
     onChange: h,
     isDisabled: m,

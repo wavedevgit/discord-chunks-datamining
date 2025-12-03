@@ -38,7 +38,7 @@ function S(e) {
   } = e, {
     days: i,
     hours: l
-  } = (0, u.Z)(t);
+  } = (0, d.Z)(t);
   return n <= 0 ? null : 0 === i && 0 === l ? E.intl.format(E.t.kF0HEa, {
     tierName: r,
     numPremiumSubscriptions: n

@@ -28,12 +28,12 @@ function O(e) {
     onClose: O,
     connection: S,
     index: v
-  } = e, m = (0, c.ZP)(), L = null != S && null != v, N = h.Z.getGuildId(), C = (0, o.e7)([f.Z], () => {
+  } = e, m = (0, c.ZP)(), L = null != S && null != v, N = g.Z.getGuildId(), C = (0, o.e7)([f.Z], () => {
     var e;
     return null != (e = f.Z.getAllowedApplicationIds(N)) ? e : []
   }, [N]);
   i.useEffect(() => {
-    null != N && (0, g.X)(N)
+    null != N && (0, h.X)(N)
   }, [N]), i.useEffect(() => {
     for (let e of C) null != u.Z.getApplication(e) || u.Z.isFetchingApplication(e) || (0, d.UM)(e).catch(() => {})
   }, [C]);
@@ -45,8 +45,8 @@ function O(e) {
       }
       return e
     }, [C]),
-    [E, y] = i.useState(() => null != S ? (0, _.a4)(S) : true),
-    [b, j] = i.useState(null != (t = null == S ? true : S.description) ? t : ""),
+    [E, b] = i.useState(() => null != S ? (0, _.a4)(S) : true),
+    [y, j] = i.useState(null != (t = null == S ? true : S.description) ? t : ""),
     [G, P] = i.useState([]),
     D = i.useMemo(() => {
       let e = [];
@@ -75,7 +75,7 @@ function O(e) {
       if (null == E || "" === E) return void P(["Please select a connection"]);
       let e = (0, _.BN)(E);
       if (null == e) return void P(["Invalid connection selected"]);
-      let t = b.trim(),
+      let t = y.trim(),
         n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -104,7 +104,7 @@ function O(e) {
         l = (0, _.t9)(n);
       if (l.length > 0) return void P(l);
       L ? (0, I.HZ)(v, n) : (0, I.HE)(n), O()
-    }, [E, b, L, v, O]),
+    }, [E, y, L, v, O]),
     Z = i.useCallback(e => (0, l.jsxs)("div", {
       style: {
         display: "flex",
@@ -167,14 +167,14 @@ function O(e) {
       children: [!L && (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(a.Text, {
           variant: "text-sm/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: A.intl.string(A.t.mGhCgX)
         }), (0, l.jsx)(a.xJW, {
           title: A.intl.string(A.t.joNLrt),
           children: (0, l.jsx)(a.q4e, {
             value: null != E ? E : "",
             onChange: e => {
-              y(e), P([])
+              b(e), P([])
             },
             options: D,
             placeholder: A.intl.string(A.t.Wq1LfI),
@@ -205,15 +205,15 @@ function O(e) {
           },
           children: [(0, l.jsx)(a.Text, {
             variant: "text-md/medium",
-            color: "text-primary",
+            color: "text-strong",
             children: A.intl.string(A.t.WoyrU8)
           }), (0, l.jsx)(a.Text, {
             variant: "text-sm/normal",
-            color: "text-secondary",
+            color: "text-subtle",
             children: A.intl.string(A.t.zdWNET)
           })]
         }), (0, l.jsx)(a.Kx8, {
-          value: b,
+          value: y,
           onChange: j,
           placeholder: A.intl.string(A.t["28bQNf"]),
           maxLength: _.kk

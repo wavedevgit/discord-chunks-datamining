@@ -143,9 +143,9 @@ function F(e) {
     totalResults: _,
     isSearching: y,
     isIndexing: O,
-    hasError: j
+    hasError: x
   } = l;
-  if (j) return (0, r.jsxs)(G, {
+  if (x) return (0, r.jsxs)(G, {
     children: [(0, r.jsx)("div", {
       className: k.errorImage
     }), (0, r.jsx)("div", {
@@ -180,16 +180,16 @@ function F(e) {
     isFavoritesSearch: b
   });
   let {
-    showNoResultsAlt: x
-  } = l, v = x ? M.intl.string(M.t["VrK/2R"]) : M.intl.string(M.t.V6nAfF);
+    showNoResultsAlt: j
+  } = l, v = j ? M.intl.string(M.t["VrK/2R"]) : M.intl.string(M.t.V6nAfF);
   return (0, r.jsxs)(G, {
     children: [(0, r.jsx)("div", {
       className: a()(k.noResultsImage, {
-        [k.alt]: x
+        [k.alt]: j
       })
     }), (0, r.jsx)("div", {
       className: a()(k.emptyResultsText, k.noResults, {
-        [k.alt]: x
+        [k.alt]: j
       }),
       children: v
     })]
@@ -207,8 +207,8 @@ let B = [],
       ignoreCount: f,
       isFeedbackVisible: b,
       dismissFeedbackEntrypoint: O,
-      onSearchModeChange: j,
-      onPageChange: x,
+      onSearchModeChange: x,
+      onPageChange: j,
       searchMode: I,
       onBlockedResultsClick: S,
       searchResultsQuery: Z,
@@ -265,8 +265,8 @@ let B = [],
           searchContext: t,
           searchRequestAnalyticsId: a,
           mode: e
-        }), j(e))
-      }, [j, n.isSearching, t, I, a]),
+        }), x(e))
+      }, [x, n.isSearching, t, I, a]),
       K = i.useCallback((e, r) => {
         let i = g.Z.getChannel(e.channel_id),
           l = null != i ? i.getGuildId() : null,
@@ -296,8 +296,8 @@ let B = [],
           searchContext: t,
           searchRequestAnalyticsId: a,
           newPageIndex: e
-        }), x(e)
-      }, [x, t, a]),
+        }), j(e)
+      }, [j, t, a]),
       X = Math.floor(n.offset / D.vpv),
       J = W && X >= z,
       $ = z + 1,
@@ -383,11 +383,11 @@ function z(e) {
     isFeedbackVisible: l,
     dismissFeedbackEntrypoint: a
   } = function(e) {
-    let [t, n] = i.useState(false), r = (0, j.M_)({
+    let [t, n] = i.useState(false), r = (0, x.M_)({
       location: "SearchResults"
     }), l = (0, O.Gc)({
       location: "SearchResults"
-    }), a = (0, x.f)({
+    }), a = (0, j.f)({
       location: "SearchResults"
     }), s = e.type === D.aib.DMS || e.type === D.aib.CHANNEL, o = a && (r || s && l);
     return (0, u.ZP)(() => {

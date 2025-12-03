@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk482908 = require("./482908.js");
 
-function d(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -31,7 +31,7 @@ function d(e) {
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ let g = Chunk473749.memo(function(e) {
     guildId: t.guildId,
     selectedChannelIds: t.exemptChannels,
     selectedRoleIds: t.exemptRoles,
-    onChange: (e, n) => i(u(d({}, t), {
+    onChange: (e, n) => i(d(u({}, t), {
       exemptChannels: e,
       exemptRoles: n
     })),
@@ -62,14 +62,14 @@ let g = Chunk473749.memo(function(e) {
   return n && (g = (0, r.jsx)(s.Z, {
     guildId: t.guildId,
     selectedRoleIds: t.exemptRoles,
-    onChange: e => i(u(d({}, t), {
+    onChange: e => i(d(u({}, t), {
       exemptRoles: e
     })),
     placeholder: o.intl.string(o.t.aFO1I6),
     disableEveryoneRole: true
   })), (0, r.jsxs)("div", {
     children: [g, (0, r.jsx)(l.Text, {
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-xs/normal",
       className: c.exemptionHint,
       children: o.intl.string(o.t.GKlYaS)

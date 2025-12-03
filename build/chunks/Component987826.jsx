@@ -23,7 +23,7 @@ function l(e) {
   (null == l ? true : l.isActive) && !c ? f = s.active : (null == l || null == (t = l.lastValidationResult) ? true : t.success) === false ? f = s.error : (null == l ? true : l.hasValue) && !c && (f = s.set);
   let p = (0, r.jsx)(o.Text, {
     variant: c ? "text-md/normal" : "text-sm/normal",
-    color: "text-primary",
+    color: "text-strong",
     className: a()(s.option, {
       [s.inline]: c
     }, f, i),

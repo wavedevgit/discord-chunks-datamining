@@ -23,14 +23,14 @@ function p(e) {
   let {
     guildId: t,
     welcomeMessage: n,
-    className: i
-  } = e, p = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), O = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), E = (0, s.e7)([h.default], () => h.default.getUser(null == n ? true : n.authorIds[0])), S = r.useMemo(() => null != p && null != E && (0, u.Y)(p, E) ? E : null, [p, E]), x = (0, s.e7)([h.default], () => h.default.getCurrentUser()), T = r.useMemo(() => {
+    className: r
+  } = e, p = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), O = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), E = (0, s.e7)([h.default], () => h.default.getUser(null == n ? true : n.authorIds[0])), S = i.useMemo(() => null != p && null != E && (0, u.Y)(p, E) ? E : null, [p, E]), x = (0, s.e7)([h.default], () => h.default.getCurrentUser()), T = i.useMemo(() => {
     var e;
     return null != (e = null == n ? true : n.authorIds) ? e : []
   }, [n]);
-  r.useEffect(() => {
+  i.useEffect(() => {
     c.Z.requestMembersById(t, T)
-  }, [t, T]), r.useEffect(() => {
+  }, [t, T]), i.useEffect(() => {
     null != S && (0, m.Z)(S.id, S.getAvatarURL(t, 48), {
       guildId: t
     })
@@ -40,7 +40,7 @@ function p(e) {
   if (null == S || null == x || null == n) return null;
   let v = null != p && p.ownerId === S.id;
   return (0, l.jsxs)(o.Zbd, {
-    className: a()(I.welcomeMessageContainer, i),
+    className: a()(I.welcomeMessageContainer, r),
     children: [(0, l.jsx)("div", {
       className: I.avatarBackground
     }), O ? (0, l.jsx)(o.qEK, {
@@ -73,13 +73,13 @@ function p(e) {
         children: function(e, t) {
           let n = e.split(/\[@username\]/g);
           return (0, l.jsx)("span", {
-            children: n.map((e, i) => (0, l.jsxs)(r.Fragment, {
-              children: [e, i < n.length - 1 ? (0, l.jsx)(o.Text, {
+            children: n.map((e, r) => (0, l.jsxs)(i.Fragment, {
+              children: [e, r < n.length - 1 ? (0, l.jsx)(o.Text, {
                 tag: "span",
                 variant: "text-md/semibold",
                 children: "@".concat(t)
               }) : null]
-            }, "username-".concat(i)))
+            }, "username-".concat(r)))
           })
         }(null == n ? true : n.message, null != j ? j : x.username)
       })]

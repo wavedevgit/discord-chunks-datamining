@@ -1,5 +1,5 @@
 /** Chunk was on 4419 **/
-/** chunk id: 779341, original params: n,e,t (module,exports,require) **/
+/** chunk id: 779341, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
   Z: () => l
 });
@@ -11,8 +11,8 @@ var Chunk585183 = require("./585183.jsx"),
 
 function l(n) {
   let {
-    authToken: e,
-    onContinue: t,
+    authToken: t,
+    onContinue: e,
     onError: l,
     onClose: a
   } = n;
@@ -20,8 +20,8 @@ function l(n) {
     platformType: s.ABu.CRUNCHYROLL,
     clientId: r.sp,
     scopes: r.Ii,
-    authToken: e,
-    onContinue: t,
+    authToken: t,
+    onContinue: e,
     onError: l,
     onClose: a
   })

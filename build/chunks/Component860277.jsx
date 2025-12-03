@@ -20,57 +20,57 @@ function p(e) {
   } = e, {
     users: n = [],
     sidekick: p
-  } = (0, l.e7)([a.Z], () => a.Z.getCheckpointData());
-  if (null != p) return (0, i.jsxs)(o.Z, {
+  } = (0, r.e7)([o.Z], () => o.Z.getCheckpointData());
+  if (null != p) return (0, i.jsxs)(a.Z, {
     children: [t === c.ij.FRIENDS_INTRO && (0, i.jsxs)("div", {
-      children: [(0, i.jsx)(r.xvT, {
+      children: [(0, i.jsx)(s.xvT, {
         variant: "display-md",
-        color: "text-primary",
+        color: "text-strong",
         children: m.intl.string(d.default["4xZpq4"])
       }), n.map(e => (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(s.Z, {
+        children: [(0, i.jsx)(l.Z, {
           user: e,
           size: u.EF.SIZE_120
-        }), (0, i.jsx)(r.xvT, {
+        }), (0, i.jsx)(s.xvT, {
           variant: "display-lg",
-          color: "text-primary",
+          color: "text-strong",
           children: e.username
         })]
       }, e.id))]
     }), t === c.ij.FRIENDS_BEST && (0, i.jsxs)("div", {
-      children: [(0, i.jsx)(r.xvT, {
+      children: [(0, i.jsx)(s.xvT, {
         variant: "display-md",
-        color: "text-primary",
+        color: "text-strong",
         children: m.intl.string(d.default.d5HUsD)
-      }), (0, i.jsx)(s.Z, {
+      }), (0, i.jsx)(l.Z, {
         user: p.user,
         size: u.EF.SIZE_120
-      }), (0, i.jsx)(r.xvT, {
+      }), (0, i.jsx)(s.xvT, {
         variant: "display-md",
-        color: "text-primary",
+        color: "text-strong",
         children: m.intl.format(d.default.wz2JuF, {
           user: null == p ? true : p.user.username,
-          userHook: (e, t) => (0, i.jsx)(r.xvT, {
+          userHook: (e, t) => (0, i.jsx)(s.xvT, {
             variant: "display-lg",
-            color: "text-primary",
+            color: "text-strong",
             children: e
           }, t)
         })
-      }), (0, i.jsx)(r.xvT, {
+      }), (0, i.jsx)(s.xvT, {
         variant: "display-sm",
-        color: "text-primary",
+        color: "text-strong",
         children: m.intl.string(d.default.wWKySP)
-      }), (0, i.jsx)(r.xvT, {
+      }), (0, i.jsx)(s.xvT, {
         variant: "display-sm",
-        color: "text-primary",
+        color: "text-strong",
         children: p.numMessagesSent
-      }), (0, i.jsx)(r.xvT, {
+      }), (0, i.jsx)(s.xvT, {
         variant: "display-sm",
-        color: "text-primary",
+        color: "text-strong",
         children: m.intl.string(d.default.lXT6ns)
-      }), (0, i.jsx)(r.xvT, {
+      }), (0, i.jsx)(s.xvT, {
         variant: "display-sm",
-        color: "text-primary",
+        color: "text-strong",
         children: p.numVoiceMinutes
       })]
     })]

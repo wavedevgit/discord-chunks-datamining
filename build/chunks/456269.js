@@ -235,7 +235,7 @@ function W(e) {
     hasUnreads: u = true
   } = e, i = f.d.useExperiment({
     location: "modules/forums/ForumHooks"
-  }).enabled, a = u ? "text-normal" : "text-muted", {
+  }).enabled, a = u ? "text-default" : "text-muted", {
     hasSpoilerEmbeds: o,
     content: d
   } = r.useMemo(() => (null == t ? true : t.content) != null && "" !== t.content ? (0, g.ZP)(t, {

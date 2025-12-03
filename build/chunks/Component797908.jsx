@@ -18,22 +18,22 @@ let m = function(e) {
   let {
     application: h,
     onSelectApplication: g,
-    showCategory: _ = false
-  } = e, f = a.useRef(null), b = null == (t = h.categories) ? true : t[0], [x, v] = a.useState(false), C = a.useCallback(e => {
+    showCategory: f = false
+  } = e, _ = i.useRef(null), b = null == (t = h.categories) ? true : t[0], [x, v] = i.useState(false), C = i.useCallback(e => {
     e && v(true)
-  }, []), j = (0, s.lf)(h), y = a.useCallback(() => {
+  }, []), j = (0, s.lf)(h), y = i.useCallback(() => {
     g(h.id)
-  }, [g, h.id]), I = a.useMemo(() => x ? c.ZP.getApplicationIconURL({
+  }, [g, h.id]), I = i.useMemo(() => x ? c.ZP.getApplicationIconURL({
     id: h.id,
     icon: h.icon,
     size: 48
-  }) : true, [x, h]), S = _ && null != b;
-  return (0, r.jsx)(i.$, {
-    innerRef: f,
+  }) : true, [x, h]), S = f && null != b;
+  return (0, r.jsx)(a.$, {
+    innerRef: _,
     onChange: C,
     active: !x,
     children: (0, r.jsx)("div", {
-      ref: f,
+      ref: _,
       className: p.container,
       children: (0, r.jsxs)(o.Z, {
         className: p.card,
@@ -92,17 +92,17 @@ let m = function(e) {
               children: b.name
             }) : null, S && j ? (0, r.jsx)(l.Text, {
               variant: "text-xs/medium",
-              color: "text-secondary",
+              color: "text-subtle",
               children: "•"
             }) : null, j ? (0, r.jsx)(l.Text, {
               variant: "text-xs/medium",
-              color: "text-secondary",
+              color: "text-subtle",
               children: u.intl.string(u.t["/eVltv"])
             }) : null]
           }) : null, (0, r.jsx)(l.Text, {
             className: p.description,
             variant: "text-sm/medium",
-            color: "header-secondary",
+            color: "text-default",
             lineClamp: S || j ? 2 : 3,
             children: null != (m = null == (n = h.directory_entry) ? true : n.short_description) ? m : h.description
           })]

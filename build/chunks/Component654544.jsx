@@ -18,7 +18,7 @@ function d(e) {
     handleOpenCollectiblesShop: n,
     handleOpenGameShop: d,
     socialLayerStorefrontApplicationId: f
-  } = e, g = i.useRef(null), [p, m] = i.useState(false), b = (0, l.q)(f), h = i.useMemo(() => {
+  } = e, g = i.useRef(null), [p, m] = i.useState(false), b = (0, a.q)(f), h = i.useMemo(() => {
     let e = null == b || b.id !== c.t9 ? s.intl.string(s.t.apFNLU) : s.intl.string(s.t["kq/75v"]);
     if (null == b) return e;
     let t = o.ZP.getApplicationIconURL({
@@ -32,26 +32,26 @@ function d(e) {
         className: u.applicationIcon,
         src: t,
         alt: e
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "header-primary",
         children: e
       })]
     })
-  }, [b]), y = i.useMemo(() => (0, r.jsxs)(a.kSQ, {
-    children: [(0, r.jsx)(a.sNh, {
+  }, [b]), y = i.useMemo(() => (0, r.jsxs)(l.kSQ, {
+    children: [(0, r.jsx)(l.sNh, {
       id: "browse-collectibles-shop",
       label: s.intl.string(s.t["5upuqx"]),
-      iconLeft: a.EOn,
+      iconLeft: l.EOn,
       action: n
-    }), (0, r.jsx)(a.sNh, {
+    }), (0, r.jsx)(l.sNh, {
       id: "browse-social-layer-storefront",
       label: h,
-      iconLeft: null != b ? true : a.EOn,
+      iconLeft: null != b ? true : l.EOn,
       action: d
     })]
   }), [n, d, h, b]);
-  return (0, r.jsx)(a.yRy, {
+  return (0, r.jsx)(l.yRy, {
     targetElementRef: g,
     position: "bottom",
     onRequestOpen: () => m(true),
@@ -60,7 +60,7 @@ function d(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(l.v2r, {
         navId: "wishlist-overflow-menu",
         onSelect: true,
         onClose: t,
@@ -68,7 +68,7 @@ function d(e) {
         children: y
       })
     },
-    children: e => (0, r.jsx)(a.Button, function(e) {
+    children: e => (0, r.jsx)(l.Button, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -89,7 +89,7 @@ function d(e) {
       buttonRef: g,
       variant: "secondary",
       size: "sm",
-      icon: p ? a.Dio : a.CJ0,
+      icon: p ? l.Dio : l.CJ0,
       iconPosition: "end",
       text: t
     }, e))

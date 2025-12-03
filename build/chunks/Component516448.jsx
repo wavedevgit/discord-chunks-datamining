@@ -29,7 +29,7 @@ function x(e) {
   } = (0, s.N)(), [j, _] = o.UE(n), [v, O] = o.R7(n), C = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
     isFullServerGating: y
   } = (0, c.Z)(x), N = (0, a.mY)();
-  return (0, r.jsx)(d.Z, {
+  return (0, r.jsx)(u.Z, {
     title: b.intl.string(b.t.YNw2Sm),
     description: b.intl.string(b.t.zMW5r0),
     children: (0, r.jsxs)(l.Kqy, {
@@ -38,14 +38,14 @@ function x(e) {
         disabled: N,
         label: b.intl.string(b.t.DFlDaE),
         description: b.intl.string(b.t.kHalVA),
-        children: [(0, r.jsx)(u.Z, {
+        children: [(0, r.jsx)(d.Z, {
           channelBenefits: j,
           intangibleBenefits: v,
           subscriptionListings: C,
           onImport: function(e, t) {
             _(t => t.concat(e)), O(e => e.concat(t))
           }
-        }), (0, r.jsx)(u.w, {
+        }), (0, r.jsx)(d.w, {
           guildId: x,
           onImport: function(e) {
             _(t => {

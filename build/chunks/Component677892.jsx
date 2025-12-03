@@ -32,7 +32,7 @@ function x(e) {
     hasStarted: s,
     status: o,
     onEdit: c,
-    extra: d
+    extra: u
   } = e;
   switch (o) {
     case "good":
@@ -97,7 +97,7 @@ function x(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: b.rightContainer,
-      children: [t, d, (0, r.jsx)("div", {
+      children: [t, u, (0, r.jsx)("div", {
         className: b.cta,
         children: s ? (0, r.jsx)(a.Button, {
           size: "sm",
@@ -135,9 +135,9 @@ function v(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, d = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), u = (0, l.e7)([s.Z], () => (0, o.kl)(t, s.Z.getDefaultChannelIds(t), s.Z.getOnboardingPrompts(t)).length), g = i.useMemo(() => new Set(d), [d]), [, m] = (0, o.VF)(t, g), _ = m.length, v = j(t), O = (0, p.O4)(t), C = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), y = C ? h.intl.formatToPlainString(h.t.nHwnLK, {
+  } = e, u = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), d = (0, l.e7)([s.Z], () => (0, o.kl)(t, s.Z.getDefaultChannelIds(t), s.Z.getOnboardingPrompts(t)).length), g = i.useMemo(() => new Set(u), [u]), [, m] = (0, o.VF)(t, g), _ = m.length, v = j(t), O = (0, p.O4)(t), C = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), y = C ? h.intl.formatToPlainString(h.t.nHwnLK, {
     numDefaultChannels: _,
-    numFromQuestions: u - _
+    numFromQuestions: d - _
   }) : v ? h.intl.formatToPlainString(h.t.HxEwSv, {
     numDefaultChannels: _
   }) : h.intl.formatToPlainString(h.t.ey3uVZ, {
@@ -163,7 +163,7 @@ function O(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: i
-  } = e, c = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([s.Z], () => s.Z.getOnboardingPrompts(t)), u = d.length, [g, m] = (0, o.dF)(t, d, c), p = g.length, f = g.length + m.length, j = p / f * 100, _ = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), v = u > 0, O = "none";
+  } = e, c = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), u = (0, l.Wu)([s.Z], () => s.Z.getOnboardingPrompts(t)), d = u.length, [g, m] = (0, o.dF)(t, u, c), p = g.length, f = g.length + m.length, j = p / f * 100, _ = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), v = d > 0, O = "none";
   return v && (j >= 85 && !i ? O = "good" : j < 85 && (O = "warning")), (0, r.jsx)(x, {
     title: _ ? h.intl.string(h.t.AGjtFv) : h.intl.string(h.t.dqCzoT),
     description: h.intl.format(h.t.iuNisr, {
@@ -192,9 +192,9 @@ function C(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: o
-  } = e, d = (0, l.e7)([g.Z], () => g.Z.getSettings()), m = (0, l.e7)([s.Z], () => s.Z.getEnabled(t)), p = (0, c.uo)(d), f = d.enabled, j = i.useCallback(() => {
-    (0, u.To)(t, !f)
-  }, [t, f]), _ = !(0, c.av)(d), v = "none";
+  } = e, u = (0, l.e7)([g.Z], () => g.Z.getSettings()), m = (0, l.e7)([s.Z], () => s.Z.getEnabled(t)), p = (0, c.uo)(u), f = u.enabled, j = i.useCallback(() => {
+    (0, d.To)(t, !f)
+  }, [t, f]), _ = !(0, c.av)(u), v = "none";
   _ && (p && !o ? v = "good" : p || (v = "required"));
   let O = h.intl.string(h.t.GMOwOD);
   p ? _ || (O = h.intl.string(h.t.wHOoyE)) : O = h.intl.string(h.t.wXFbgZ);
@@ -233,11 +233,11 @@ function y(e) {
     location: "guild_settings"
   }, {
     autoTrackExposure: true
-  }), o = (0, l.Wu)([d.Z], () => d.Z.getEditedConnections());
+  }), o = (0, l.Wu)([u.Z], () => u.Z.getEditedConnections());
   if (!s) return null;
   let c = o.length > 0,
-    u = "none";
-  c && !i && (u = "good");
+    d = "none";
+  c && !i && (d = "good");
   let g = c ? h.intl.format(h.t["9swnQZ"], {
     count: o.length
   }) : h.intl.string(h.t["3d3Cd5"]);
@@ -250,7 +250,7 @@ function y(e) {
       className: b.channelIcon
     }),
     hasStarted: c,
-    status: u,
+    status: d,
     onEdit: n
   })
 }

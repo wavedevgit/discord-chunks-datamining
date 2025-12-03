@@ -47,7 +47,7 @@ function c(e) {
           })]
         }), null != n && "" !== n && (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
-          color: "header-secondary",
+          color: "text-default",
           className: o.subtitle,
           children: n
         })]

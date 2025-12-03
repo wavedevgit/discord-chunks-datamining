@@ -1,9 +1,9 @@
 /** Chunk was on 69844 **/
 /** chunk id: 547563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => _
 }), require("./35282.js");
-var r, a, Chunk54381 = require("./54381.js");
+var r, i, Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk159635 = require("./159635.js"),
   s = require.n(Chunk159635),
@@ -33,13 +33,13 @@ function g(e) {
   }
   return e
 }
-let _ = /^discord.gg\/[a-zA-Z0-9-]+/,
-  f = (r = g({}, Chunk241209.Z.rules), a = a = {
+let f = /^discord.gg\/[a-zA-Z0-9-]+/,
+  _ = (r = g({}, Chunk241209.Z.rules), i = i = {
     heading: g({}, Chunk15470.i.heading),
     image: g({}, s().defaultRules.image),
     inviteLink: {
       order: Chunk241209.Z.rules.link.order + 1,
-      match: (e, t) => t.inline ? _.exec(e) : null,
+      match: (e, t) => t.inline ? f.exec(e) : null,
       parse: (e, t, n) => {
         let r = (0, p.zO)(e[0]);
         return null == r || r.type !== u.g.INVITE ? {
@@ -62,20 +62,20 @@ let _ = /^discord.gg\/[a-zA-Z0-9-]+/,
           }
         }
       },
-      react: (e, t, n) => (0, i.jsx)(o.Anchor, {
+      react: (e, t, n) => (0, a.jsx)(o.Anchor, {
         onClick: t => {
           t.preventDefault(), e.onClick()
         },
         children: (0, m.S)(e, t, n)
       }, n.key)
     }
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
       n.push.apply(n, r)
     }
     return n
-  })(Object(a)).forEach(function(e) {
-    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
+  })(Object(i)).forEach(function(e) {
+    Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
   }), r)

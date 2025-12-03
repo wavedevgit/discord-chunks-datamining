@@ -78,7 +78,7 @@ function O() {
           })]
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: Chunk388032.intl.string(Chunk388032.t.HdKh65)
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {

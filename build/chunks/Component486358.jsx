@@ -38,7 +38,7 @@ let v = function() {
           children: Chunk388032.intl.string(Chunk388032.t["6TAHbx"])
         }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-sm/medium",
-          color: "header-secondary",
+          color: "text-default",
           tag: "p",
           className: Chunk566945.description,
           children: Chunk388032.intl.string(Chunk388032.t.XCGZFk)

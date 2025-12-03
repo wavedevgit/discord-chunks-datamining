@@ -59,7 +59,7 @@ function _(e) {
           size: 8
         }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: r === s.Skl.INVISIBLE ? p.intl.string(h.default.a3AofS) : p.intl.string(p.t.WbGtnH)
         })]
       })]
@@ -97,7 +97,7 @@ function O(e) {
       showCurrentGame: n
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       children: p.intl.string(h.default["7cfFob"])
     }), (0, i.jsx)(s.izJ, {
       className: g.divider
@@ -130,13 +130,13 @@ function v(e) {
           size: 8
         }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: p.intl.string(h.default.U8MFdR)
         })]
       })]
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       children: p.intl.string(h.default.Yl0mh4)
     }), (0, i.jsx)(b, {
       closePopout: t
@@ -154,7 +154,7 @@ function j(e) {
       shouldShowStatus: true
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       children: p.intl.string(h.default["7cfFob"])
     }), (0, i.jsx)(s.izJ, {
       className: g.divider

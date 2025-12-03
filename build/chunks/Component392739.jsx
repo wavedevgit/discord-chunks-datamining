@@ -1,14 +1,14 @@
 /** Chunk was on 38062 **/
 /** chunk id: 392739, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => l
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk282971 = require("./282971.js");
 
-function s(e) {
+function l(e) {
   let {
     children: t,
     label: n
@@ -16,7 +16,7 @@ function s(e) {
   return (0, r.jsxs)("li", {
     children: [(0, r.jsx)(a.Text, {
       variant: "text-xs/semibold",
-      color: "header-secondary",
+      color: "text-default",
       className: i.benefitLabel,
       children: n
     }), (0, r.jsx)(a.LZC, {

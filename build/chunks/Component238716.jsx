@@ -23,22 +23,22 @@ function h(t) {
     heading: m,
     formTitle: f,
     allowReset: v = false
-  } = t, C = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), k = (0, o.ZP)(C), g = u.Z.getNickname(n), [j, b] = a.useState(null != g ? g : "");
+  } = t, C = (0, a.e7)([c.Z], () => c.Z.getChannel(n)), k = (0, o.ZP)(C), g = u.Z.getNickname(n), [j, b] = l.useState(null != g ? g : "");
 
-  function y(t) {
+  function _(t) {
     t.preventDefault(), (0, d.UT)(n, j), e()
   }
   return (0, i.jsx)("form", {
-    onSubmit: y,
+    onSubmit: _,
     children: (0, i.jsxs)(s.u_l, {
       title: m,
       actions: [{
-        text: p.intl.string(p.t["ETE/oC"]),
+        text: x.intl.string(x.t["ETE/oC"]),
         onClick: e,
         variant: "secondary"
       }, {
         text: m,
-        onClick: y,
+        onClick: _,
         variant: "primary",
         type: "submit"
       }],
@@ -52,19 +52,19 @@ function h(t) {
         maxLength: 100,
         autoFocus: true
       }), v && null != g ? (0, i.jsx)("div", {
-        className: x.reset,
+        className: p.reset,
         children: (0, i.jsx)(r.Avr, {
-          text: p.intl.string(p.t.aE02Rz),
+          text: x.intl.string(x.t.aE02Rz),
           onClick: function() {
             (0, d.UT)(n, null), e()
           },
           textVariant: "text-sm/normal"
         })
       }) : null, (0, i.jsx)(r.Text, {
-        className: x.description,
+        className: p.description,
         variant: "text-sm/normal",
-        color: "header-secondary",
-        children: p.intl.string(p.t["2vyz+N"])
+        color: "text-default",
+        children: x.intl.string(x.t["2vyz+N"])
       })]
     })
   })

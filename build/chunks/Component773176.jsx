@@ -142,7 +142,7 @@ let ed = Chunk473749.memo(function(e) {
             children: ":".concat(e.name, ":")
           }), (0, i.jsx)(d.Text, {
             variant: "text-xs/normal",
-            color: "header-secondary",
+            color: "text-default",
             className: ea.emojiTooltipText,
             children: o
           })]
@@ -207,7 +207,7 @@ function ep(e) {
       author: d
     } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([D.default], () => D.default.getId()), g = (0, L.$R)(t), b = (0, L.Gu)(t), {
       firstMessage: v
-    } = (0, u.e7)([y.Z], () => y.Z.getMessage(t.id), [t.id]), _ = k.nc.useSetting(), O = k.Sb.useSetting(), E = (0, u.e7)([H.Z], () => null == t.guild_id || H.Z.canChatInGuild(t.guild_id), [t]), {
+    } = (0, u.e7)([C.Z], () => C.Z.getMessage(t.id), [t.id]), _ = k.nc.useSetting(), O = k.Sb.useSetting(), E = (0, u.e7)([H.Z], () => null == t.guild_id || H.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: j,
       canAddNewReactions: S
     } = (0, u.cj)([B.Z], () => ({
@@ -234,7 +234,7 @@ function ep(e) {
       en = null != et && n.type === ei.uaV.USER_JOIN && B.Z.canWithPartialContext(ei.Plq.MANAGE_GUILD, {
         guildId: et
       }),
-      er = (0, C.a)(n),
+      er = (0, y.a)(n),
       {
         enabled: el
       } = M.Z.useExperiment({
@@ -280,7 +280,7 @@ function ep(e) {
     er({
       emojiPicker: !W
     })
-  }, [W, er]), ef = (0, L.$R)(t), eg = n.hasFlag(ei.iLy.CROSSPOSTED), eb = (0, Z.Z)(t), ey = (0, I.Nt)(), eC = eb && ey && !n.hasPotions(), ev = r.useCallback(e => {
+  }, [W, er]), ef = (0, L.$R)(t), eg = n.hasFlag(ei.iLy.CROSSPOSTED), eb = (0, Z.Z)(t), eC = (0, I.Nt)(), ey = eb && eC && !n.hasPotions(), ev = r.useCallback(e => {
     try {
       (0, E.qc)(t.id, n.id, e)
     } catch (e) {
@@ -335,7 +335,7 @@ function ep(e) {
         isFocused: es,
         channel: t,
         message: n
-      }), eC ? (0, i.jsx)($.sF, {
+      }), ey ? (0, i.jsx)($.sF, {
         label: el.intl.string(el.t.icaJW5),
         icon: d.l22,
         onClick: () => {

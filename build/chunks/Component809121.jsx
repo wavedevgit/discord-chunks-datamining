@@ -244,7 +244,7 @@ function W(e) {
             children: t.name
           }), (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
-            color: "text-tertiary",
+            color: "text-muted",
             children: [null == L ? true : L.name, J].filter(v.lm).join(" • ")
           })]
         })]

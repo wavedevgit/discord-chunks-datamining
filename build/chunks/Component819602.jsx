@@ -134,7 +134,7 @@ function A(e) {
           }), v]
         }), null != S ? (0, l.jsx)(c.Text, {
           variant: "text-xs/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: N.intl.format(N.t["9rfonh"], {
             date: S
           })

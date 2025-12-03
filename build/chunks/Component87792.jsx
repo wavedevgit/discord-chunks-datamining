@@ -134,7 +134,7 @@ function B(e) {
       }), true !== v.sectionDescription ? (0, r.jsx)(u.Text, {
         className: j.sectionDescription,
         variant: "text-md/medium",
-        color: "text-tertiary",
+        color: "text-muted",
         children: v.sectionDescription(null != s && s)
       }) : null]
     }), [P, v, s]);

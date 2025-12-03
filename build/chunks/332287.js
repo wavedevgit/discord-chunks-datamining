@@ -1,5 +1,5 @@
 /** Chunk was on 59385 **/
-/** chunk id: 332287, original params: n,t,e (module,exports,require) **/
+/** chunk id: 332287, original params: t,n,e (module,exports,require) **/
 module.exports = {
   feedback: "feedback__4c857",
   buttonsContainer: "buttonsContainer__4c857",

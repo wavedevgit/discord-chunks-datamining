@@ -13,24 +13,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk969632 = require("./969632.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function d(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.getSettings()), s = (0, l.e7)([c.Z], () => c.Z.getSubmitting()), u = i.useCallback(() => {
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.getSettings()), s = (0, l.e7)([c.Z], () => c.Z.getSubmitting()), d = i.useCallback(() => {
     try {
       (0, o.oo)(t, n)
     } catch (e) {}
   }, [t, n]);
   return (0, r.jsx)(a.Z, {
-    onSave: u,
+    onSave: d,
     onReset: o.bj,
     submitting: s,
-    onSaveText: d.intl.string(d.t["R3BPH+"])
+    onSaveText: u.intl.string(u.t["R3BPH+"])
   })
 }
 let g = function() {
   let e = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild());
-  return null == module ? null : (0, Chunk54381.jsx)(u, {
+  return null == module ? null : (0, Chunk54381.jsx)(d, {
     guildId: module.id
   })
 }

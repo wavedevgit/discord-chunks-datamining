@@ -1,5 +1,5 @@
 /** Chunk was on 51343 **/
-/** chunk id: 424071, original params: e,a,t (module,exports,require) **/
+/** chunk id: 424071, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   Z: () => s
 });
@@ -9,10 +9,10 @@ var Chunk771831 = require("./771831.js");
 
 function s(e) {
   let {
-    children: a
+    children: t
   } = e;
-  return (0, n.jsx)("div", {
-    className: r.slideContainer,
-    children: a
+  return (0, l.jsx)("div", {
+    className: n.slideContainer,
+    children: t
   })
 }

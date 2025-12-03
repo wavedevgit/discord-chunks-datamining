@@ -24,7 +24,7 @@ function f(e) {
     scrollIntoView: _ = false,
     headingClassName: m,
     headingVariant: h = "text-xs/semibold",
-    headingColor: g = "header-secondary"
+    headingColor: g = "text-default"
   } = e, E = (0, u.Dt)(), b = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), y = i.useRef(null);
   return i.useEffect(() => {
     let e = y.current;

@@ -89,7 +89,7 @@ function b(e) {
       className: m.textContainer,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
-        color: "text-primary",
+        color: "text-strong",
         children: g(n, o)
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",

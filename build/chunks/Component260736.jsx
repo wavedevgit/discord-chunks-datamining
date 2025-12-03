@@ -54,7 +54,7 @@ function p(e) {
           className: f.title,
           children: d.intl.string(d.t["Fh/mk/"])
         }), (0, r.jsx)(i.Text, {
-          color: "text-primary",
+          color: "text-strong",
           variant: "text-xs/normal",
           children: d.intl.format(d.t["bmGF+V"], {
             helpCenterLink: h

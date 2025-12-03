@@ -61,13 +61,13 @@ function C(e) {
     guildId: t,
     emojiData: n,
     onSelectEmoji: l
-  } = e, a = i.useRef(null), s = (0, o.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : true), u = (0, o.e7)([h.ZP], () => h.ZP.getDefaultChannel(t)), b = i.useCallback(e => {
+  } = e, a = i.useRef(null), s = (0, o.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : true), d = (0, o.e7)([h.ZP], () => h.ZP.getDefaultChannel(t)), b = i.useCallback(e => {
     let {
       closePopout: t
     } = e;
     return (0, r.jsx)(m.Z, {
       pickerIntention: x.Hz.GUILD_ROLE_BENEFIT_EMOJI,
-      channel: u,
+      channel: d,
       closePopout: t,
       onNavigateAway: t,
       onSelectEmoji: e => {
@@ -84,8 +84,8 @@ function C(e) {
         }), r && t()
       }
     })
-  }, [l, u]), j = i.useMemo(() => null == s && null == n.name ? null : function() {
-    return (0, r.jsx)(d.Z, {
+  }, [l, d]), j = i.useMemo(() => null == s && null == n.name ? null : function() {
+    return (0, r.jsx)(u.Z, {
       className: _.emoji,
       emojiId: n.id,
       emojiName: n.name,
@@ -127,15 +127,15 @@ function y(e) {
     initialData: l,
     benefitTypeInput: a,
     descriptionPlaceholder: o,
-    canSubmit: d,
+    canSubmit: u,
     onSave: g,
     onDelete: m,
     transitionState: p,
     onClose: f
-  } = e, h = (0, u.Dt)(), [b, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [_, v] = i.useState(() => ({
+  } = e, h = (0, d.Dt)(), [b, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [_, v] = i.useState(() => ({
     id: null == l ? true : l.emoji_id,
     name: null == l ? true : l.emoji_name
-  })), O = d && "" !== b && (null != _.id || null != _.name);
+  })), O = u && "" !== b && (null != _.id || null != _.name);
 
   function y(e) {
     e.preventDefault(), O && (g({
@@ -198,9 +198,9 @@ function N(e) {
     initialData: l,
     onSave: s,
     onDelete: o,
-    transitionState: d,
+    transitionState: u,
     onClose: g
-  } = e, [m, p] = i.useState(null == l ? true : l.ref_id), f = (0, u.Dt)(), h = (0, r.jsxs)(c.Kqy, {
+  } = e, [m, p] = i.useState(null == l ? true : l.ref_id), f = (0, d.Dt)(), h = (0, r.jsxs)(c.Kqy, {
     gap: 16,
     children: [(0, r.jsx)(c.Wn, {
       messageType: c.QYI.WARNING,
@@ -228,7 +228,7 @@ function N(e) {
         channelId: m
       }))
     },
-    transitionState: d,
+    transitionState: u,
     onClose: g,
     onDelete: o
   })
@@ -241,9 +241,9 @@ function E(e) {
     onSave: l,
     transitionState: s,
     onClose: o,
-    onDelete: d,
+    onDelete: u,
     guildId: g
-  } = e, [m, p] = i.useState(null != (t = null == n ? true : n.name) ? t : ""), f = (0, u.Dt)(), h = (0, r.jsx)(c.Kx8, {
+  } = e, [m, p] = i.useState(null != (t = null == n ? true : n.name) ? t : ""), f = (0, d.Dt)(), h = (0, r.jsx)(c.Kx8, {
     label: j.intl.string(j.t.NPOJrU),
     placeholder: j.intl.string(j.t.NPOJrU),
     value: m,
@@ -266,6 +266,6 @@ function E(e) {
     },
     transitionState: s,
     onClose: o,
-    onDelete: d
+    onDelete: u
   })
 }

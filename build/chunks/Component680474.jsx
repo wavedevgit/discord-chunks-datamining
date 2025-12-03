@@ -1,7 +1,7 @@
 /** Chunk was on 69844 **/
 /** chunk id: 680474, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,10 +17,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk964645 = require("./964645.js");
 
-function _(e) {
+function f(e) {
   let {
     application: t
-  } = e, n = a.useMemo(() => {
+  } = e, n = i.useMemo(() => {
     var e, n, r;
     return null != (r = (null != (n = null == (e = t.directory_entry) ? true : e.carousel_items) ? n : []).map(s.RF).filter(l.lm)) ? r : []
   }, [t]);
@@ -43,7 +43,7 @@ function _(e) {
       className: g.informationContainer,
       children: [(0, r.jsx)("div", {
         className: g.divider
-      }), (0, r.jsx)(i.X6q, {
+      }), (0, r.jsx)(a.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: h.intl.string(h.t["mD+J/i"])

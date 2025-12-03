@@ -46,7 +46,7 @@ function E(e) {
       })]
     }), (0, l.jsx)(a.Text, {
       variant: "text-xs/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       children: h.intl.string(h.t.B9JNsl)
     }), (0, l.jsxs)("div", {
       className: p.header,
@@ -65,7 +65,7 @@ function E(e) {
       columns: g.WK
     }), (0, l.jsx)(a.Text, {
       variant: "text-xs/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       children: h.intl.format(h.t.wKxADe, {
         helpArticle: (0, u.uV)()
       })

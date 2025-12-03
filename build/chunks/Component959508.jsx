@@ -32,7 +32,7 @@ function C(e) {
   let {
     guild: n,
     prompt: l,
-    disableAutofocus: u,
+    disableAutofocus: d,
     promptIndex: x,
     dragIndex: C,
     includeCount: E,
@@ -45,7 +45,7 @@ function C(e) {
     dragSourcePosition: R,
     drop: D,
     setIsDraggable: A
-  } = (0, d.Z)({
+  } = (0, u.Z)({
     type: "ONBOARDING_PROMPT_CARD",
     index: C,
     optionId: l.id,
@@ -60,12 +60,12 @@ function C(e) {
     V.current = x
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
-      if (0 === V.current && !u) {
+      if (0 === V.current && !d) {
         var e;
         null == (e = z.current) || e.focus()
       }
     }, 0)
-  }, [u]), k) ? (0, r.jsx)(c.tEY, {
+  }, [d]), k) ? (0, r.jsx)(c.tEY, {
     children: (0, r.jsxs)("div", {
       tabIndex: 0,
       onFocus: () => U(true),
@@ -271,12 +271,12 @@ function N(e) {
     handleDragStart: s,
     handleDragReset: o,
     handleDragComplete: c
-  } = (0, u.Z)(n.options, e => (0, h.Kk)(t, n.id, {
+  } = (0, d.Z)(n.options, e => (0, h.Kk)(t, n.id, {
     options: e
   }));
   return (0, r.jsxs)("div", {
     className: v.options,
-    children: [n.options.map((e, d) => (0, r.jsx)(x.Z, {
+    children: [n.options.map((e, u) => (0, r.jsx)(x.Z, {
       guild: t,
       prompt: n,
       promptIndex: i,
@@ -285,7 +285,7 @@ function N(e) {
       onDragStart: s,
       onDragComplete: c,
       onDragReset: o,
-      hasError: null != a.optionErrors[d]
+      hasError: null != a.optionErrors[u]
     }, e.id)), n.options.length < j.qm ? (0, r.jsx)(x.B, {
       guild: t,
       prompt: n,

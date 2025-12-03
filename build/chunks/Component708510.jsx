@@ -63,11 +63,11 @@ function E(e) {
   } = e, {
     nsfwLevel: n,
     ownerConfiguredContentLevel: s
-  } = (0, l.cj)([d.Z], () => {
+  } = (0, l.cj)([u.Z], () => {
     var e, n;
     return {
-      nsfwLevel: null == (e = d.Z.getGuild(t)) ? true : e.nsfwLevel,
-      ownerConfiguredContentLevel: null == (n = d.Z.getGuild(t)) ? true : n.ownerConfiguredContentLevel
+      nsfwLevel: null == (e = u.Z.getGuild(t)) ? true : e.nsfwLevel,
+      ownerConfiguredContentLevel: null == (n = u.Z.getGuild(t)) ? true : n.ownerConfiguredContentLevel
     }
   }), o = (0, l.e7)([j.Z], () => {
     var e;
@@ -78,7 +78,7 @@ function E(e) {
   return (0, r.jsx)(a.rsf, {
     label: C.intl.string(C.t.N9xEJF),
     description: C.intl.format(C.t.iyQQ62, {
-      helpArticleLink: u.Z.getArticleURL(O.BhN.NSFW_SERVER_AGE_RESTRICTION)
+      helpArticleLink: d.Z.getArticleURL(O.BhN.NSFW_SERVER_AGE_RESTRICTION)
     }),
     checked: o,
     onChange: c,
@@ -98,7 +98,7 @@ function I() {
   }, [null == module ? true : module.id]);
   if (null == module || null == exports) return null;
   let {
-    joinType: d
+    joinType: u
   } = exports;
   return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
     gap: 32,

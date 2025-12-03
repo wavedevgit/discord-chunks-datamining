@@ -107,7 +107,7 @@ function K(e) {
           user: n
         }), r && null != l && (0, i.jsx)(f.Text, {
           variant: "text-xs/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: (0, N.F6)(l, D.default, A.Z, true)
         })]
       })]
@@ -354,7 +354,7 @@ function V(e) {
         children: [(0, i.jsx)(f.Text, {
           className: H.marginBottom20,
           variant: "text-sm/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: true === o ? U.intl.format(U.t["97VdNm"], {
             onCreateInvite: N
           }) : U.intl.string(U.t.WDw38H)

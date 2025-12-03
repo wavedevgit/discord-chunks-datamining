@@ -25,10 +25,10 @@ let d = Chunk473749.forwardRef(function(e, t) {
     skuId: y,
     skuProductLine: O
   } = _, {
-    trackUserProfileWishlistAction: j
-  } = (0, o.KZ)(), x = h ? c.cardPreview : c.cardPreviewNoScale, v = m ? c.cardSingle : c.card, C = null != g && g > 0, I = (0, r.jsxs)(a.P3F, {
+    trackUserProfileWishlistAction: x
+  } = (0, o.KZ)(), j = h ? c.cardPreview : c.cardPreviewNoScale, v = m ? c.cardSingle : c.card, C = null != g && g > 0, I = (0, r.jsxs)(a.P3F, {
     onClick: () => {
-      u(), j({
+      u(), x({
         action: C ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
         skuId: C ? null : y,
         wishlistId: b,
@@ -39,7 +39,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
     "aria-label": null != (i = p.title) ? i : "",
     innerRef: t,
     children: [(0, r.jsx)("div", {
-      className: x,
+      className: j,
       children: f()
     }), C && (0, r.jsx)("div", {
       className: c.moreOverlay,

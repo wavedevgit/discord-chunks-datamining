@@ -42,12 +42,12 @@ function p(e) {
       className: g.title,
       children: d.intl.string(d.t["WgZ+3D"])
     }), (0, r.jsx)(l.Text, {
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-sm/normal",
       className: g.subtitle,
       children: d.intl.string(d.t["v/S/PG"])
     }), p && (0, r.jsx)(l.Text, {
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-sm/normal",
       className: g.roleTip,
       children: d.intl.format(d.t["K+DH2o"], {

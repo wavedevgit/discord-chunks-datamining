@@ -15,7 +15,7 @@ let c = (0, Chunk509613.ON)(Chunk313789.n.SOUNDS_HOLIDAY_NOTICE, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.fgSHf8)],
   render: () => (0, Chunk54381.jsx)(Chunk793030.xvT, {
     variant: "text-md/normal",
-    color: "text-secondary",
+    color: "text-subtle",
     children: Chunk388032.intl.format(Chunk388032.t.Eup6Wv, {
       onClick: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.NOTIFICATIONS_SOUNDS_CATEGORY)
     })

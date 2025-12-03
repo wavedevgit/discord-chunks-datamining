@@ -1,5 +1,5 @@
 /** Chunk was on 84112 **/
-/** chunk id: 273352, original params: e,n,t (module,exports,require) **/
+/** chunk id: 273352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => x
 }), require("./388685.js");
@@ -15,14 +15,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk573857 = require("./573857.js");
 let x = e => {
-  let n, t, o, {
+  let t, n, o, {
       body: x,
       cancelText: _,
       className: p,
       confirmColor: y,
       confirmText: b = m.intl.string(m.t.BddRzS),
-      secondaryConfirmText: j,
-      onCancel: f,
+      secondaryConfirmText: f,
+      onCancel: j,
       onClose: C,
       onConfirm: z,
       onConfirmSecondary: N,
@@ -30,34 +30,34 @@ let x = e => {
       transitionState: B,
       titleClassName: k
     } = e,
-    v = r.zx.Sizes.MEDIUM,
+    v = i.zx.Sizes.MEDIUM,
     [A, R] = a.useState(false);
   return a.useEffect(() => () => {
     A && (null == N || N())
-  }, [A, N]), null != _ && "" !== _ && (n = (0, l.jsx)(r.zx, {
+  }, [A, N]), null != _ && "" !== _ && (t = (0, l.jsx)(i.zx, {
     type: "button",
     size: v,
-    color: r.zx.Colors.PRIMARY,
+    color: i.zx.Colors.PRIMARY,
     onClick: () => {
-      null == C || C(), null == f || f()
+      null == C || C(), null == j || j()
     },
     className: h.secondaryButton,
     children: _
-  })), null != b && "" !== b && (t = (0, l.jsx)(r.zx, {
+  })), null != b && "" !== b && (n = (0, l.jsx)(i.zx, {
     type: "submit",
     color: y,
     size: v,
     className: h.primaryButton,
     autoFocus: true,
     children: b
-  })), null != j && "" !== j && (o = (0, l.jsx)(d.Checkbox, {
+  })), null != f && "" !== f && (o = (0, l.jsx)(d.Checkbox, {
     checked: A,
     onChange: e => R(e),
-    label: j,
+    label: f,
     labelType: "secondary"
-  })), (0, l.jsx)(i.Y0, {
+  })), (0, l.jsx)(r.Y0, {
     transitionState: B,
-    size: i.Cg.DYNAMIC,
+    size: r.Cg.DYNAMIC,
     className: s()(p, h.container),
     "aria-label": g,
     parentComponent: "Alert",
@@ -66,7 +66,7 @@ let x = e => {
         null != e && e.preventDefault(), null == C || C(), null == z || z()
       },
       className: h.form,
-      children: [(0, l.jsx)(i.xB, {
+      children: [(0, l.jsx)(r.xB, {
         children: null != g ? (0, l.jsx)(d.Heading, {
           variant: "heading-lg/semibold",
           className: s()(h.title, k),
@@ -76,7 +76,7 @@ let x = e => {
           className: s()(h.title, k),
           children: g
         })
-      }), (0, l.jsx)(i.hz, {
+      }), (0, l.jsx)(r.hz, {
         className: h.modalContent,
         children: (0, l.jsx)(u.Z, {
           direction: u.Z.Direction.VERTICAL,
@@ -85,15 +85,15 @@ let x = e => {
           children: null != x && (0, l.jsx)(c.x, {
             variant: "text-md/normal",
             className: h.body,
-            color: "header-secondary",
+            color: "text-default",
             children: x
           })
         })
-      }), (0, l.jsxs)(i.mz, {
+      }), (0, l.jsxs)(r.mz, {
         justify: true,
         wrap: u.Z.Wrap.WRAP,
         className: h.modalFooter,
-        children: [t, n, o]
+        children: [n, t, o]
       })]
     })
   })

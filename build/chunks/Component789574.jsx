@@ -30,8 +30,8 @@ function x(e) {
     sectionId: a,
     integrations: s,
     editedIntegration: o,
-    webhooks: d,
-    editedWebhook: u,
+    webhooks: u,
+    editedWebhook: d,
     isFetching: p,
     errors: f
   } = (0, l.cj)([m.default], () => ({
@@ -49,9 +49,9 @@ function x(e) {
     section: i,
     sectionId: a,
     integrations: s,
-    webhooks: d,
+    webhooks: u,
     editedIntegration: o,
-    editedWebhook: u,
+    editedWebhook: d,
     isFetchingWebhooks: p,
     hasChanges: m.default.hasChanges,
     errors: f,

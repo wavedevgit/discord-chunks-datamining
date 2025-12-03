@@ -105,15 +105,15 @@ function x(e) {
 let j = function(e) {
   let {
     guildId: t
-  } = e, n = (0, l.Wu)([d.Z], () => {
+  } = e, n = (0, l.Wu)([u.Z], () => {
     var e;
-    return null != (e = d.Z.getSettings().newMemberActions) ? e : h
+    return null != (e = u.Z.getSettings().newMemberActions) ? e : h
   }), a = i.useCallback((e, n) => {
     (0, c.vR)(e), (0, c.ad)(t, e.channelId, n, true)
   }, [t]), g = i.useCallback((e, r, i, l) => {
     var a;
     let s = null == (a = n[e]) ? true : a.channelId;
-    null != s && null != d.Z.getSettings() && ((0, c.el)(s, r), (0, c.ad)(t, s, i, l))
+    null != s && null != u.Z.getSettings() && ((0, c.el)(s, r), (0, c.ad)(t, s, i, l))
   }, [n, t]), j = i.useCallback(e => {
     var t;
     let r = null == (t = n[e]) ? true : t.channelId;
@@ -129,7 +129,7 @@ let j = function(e) {
   } = (0, s.Z)(_, v);
   return (0, r.jsxs)("div", {
     className: m.section,
-    children: [n.map((e, n) => (0, r.jsx)(u.Z, {
+    children: [n.map((e, n) => (0, r.jsx)(d.Z, {
       guildId: t,
       action: e,
       actionIndex: n,

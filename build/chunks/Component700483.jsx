@@ -131,7 +131,7 @@ function ed(e) {
     canManageGuildEvent: c
   } = (0, C.XJ)(t), p = (0, l.e7)([Y.Z], () => Y.Z.getStageInstanceByChannel(t.id), [t.id]), h = (0, l.e7)([O.ZP], () => O.ZP.getGuildScheduledEvent(null == p ? true : p.guild_scheduled_event_id)), {
     suppress: f
-  } = (0, Z.Z)(t), g = M.default.getId(), [_] = (0, er.Z)(t), y = W.ZP.isModerator(g, t.id), j = (0, V.B)(t.id), x = c(h), {
+  } = (0, Z.Z)(t), g = M.default.getId(), [_] = (0, er.Z)(t), y = W.ZP.isModerator(g, t.id), x = (0, V.B)(t.id), j = c(h), {
     parentAnalyticsLocation: I
   } = (0, u.ZP)(), S = i.useRef(null), E = () => (function(e) {
     let {
@@ -144,7 +144,7 @@ function ed(e) {
     channel: t,
     appContext: o
   });
-  return (y || x) && null != p ? (0, r.jsx)(a.yRy, {
+  return (y || j) && null != p ? (0, r.jsx)(a.yRy, {
     targetElementRef: S,
     renderPopout: e => {
       let {
@@ -187,7 +187,7 @@ function ed(e) {
         popoutOpen: i
       })
     }
-  }) : f && !j || _ ? (0, r.jsx)(A.Z, {
+  }) : f && !x || _ ? (0, r.jsx)(A.Z, {
     label: el.intl.string(el.t.SMKyih),
     onClick: E
   }) : (0, r.jsx)(A.Z, {
@@ -248,8 +248,8 @@ let eh = Chunk473749.memo(function(e) {
     selfMute: o,
     mute: c
   } = (0, Z.Z)(t), d = (0, V.B)(t.id), m = (0, ee.Z)(t.id), O = (0, l.e7)([_.default], () => null != _.default.getAwaitingRemoteSessionInfo()), {
-    cameraUnavailable: j,
-    enabled: x
+    cameraUnavailable: x,
+    enabled: j
   } = (0, I.Z)(), v = (0, E.Z)(t), {
     limit: C,
     reachedLimit: w
@@ -287,8 +287,8 @@ let eh = Chunk473749.memo(function(e) {
         ref: K,
         centerButton: true,
         hasPermission: v,
-        enabled: x,
-        cameraUnavailable: j,
+        enabled: j,
+        cameraUnavailable: x,
         onChange: P.r,
         onCameraUnavailable: N.Z,
         channelLimitReached: w,
@@ -398,11 +398,11 @@ let eg = Chunk473749.memo(function(e) {
     className: ea.containerColumn,
     children: [(0, r.jsxs)("div", {
       className: ea.eventPrompts,
-      children: [u ? (0, r.jsx)(j.Z, {
+      children: [u ? (0, r.jsx)(x.Z, {
         channelId: null == t ? true : t.id
       }) : null, (0, r.jsx)("div", {
         className: ea.separator
-      }), u && s && !o ? (0, r.jsx)(x.Z, {
+      }), u && s && !o ? (0, r.jsx)(j.Z, {
         highlight: true,
         channel: t
       }) : null, (0, r.jsx)("div", {

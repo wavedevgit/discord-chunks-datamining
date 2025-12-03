@@ -87,7 +87,7 @@ function q(e) {
     hash: n.iconHash,
     size: 160,
     format: P.$k ? "webp" : "png"
-  }), f = C.default.extractTimestamp(r.id), p = o()().diff(o()(f), "days") <= K.G, x = s.some(e => (0, y.ig)(e) === d.o.GLOBAL), h = null != (t = n.name) ? t : null == r ? true : r.name;
+  }), f = C.default.extractTimestamp(r.id), p = o()().diff(o()(f), "days") <= K.G, x = s.some(e => (0, O.ig)(e) === d.o.GLOBAL), h = null != (t = n.name) ? t : null == r ? true : r.name;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)("div", {
       className: J.gameArtHero,
@@ -289,12 +289,12 @@ let et = e => {
     trackExternalAction: m
   } = e, {
     clientThemesClassName: x
-  } = (0, I.ZP)(), h = (0, u.e7)([N.default], () => N.default.locale), v = i.useMemo(() => (0, A.fP)(), []), j = (0, u.Wu)([G.Z], () => {
+  } = (0, I.ZP)(), h = (0, u.e7)([N.default], () => N.default.locale), v = i.useMemo(() => (0, T.fP)(), []), j = (0, u.Wu)([G.Z], () => {
     var e;
     return (null != (e = G.Z.getSimilarGames(n)) ? e : []).slice(0, 25)
-  }), [E, w] = i.useState(null), P = (0, M.N)(n), [S, C] = i.useState(null), k = (0, _.q)(n), L = (0, u.e7)([O.Z], () => O.Z.getGame(n)), R = null != (t = null == L ? true : L.name) ? t : null == k ? true : k.name, D = (e, t) => {
+  }), [E, w] = i.useState(null), P = (0, M.N)(n), [S, C] = i.useState(null), k = (0, _.q)(n), L = (0, u.e7)([y.Z], () => y.Z.getGame(n)), R = null != (t = null == L ? true : L.name) ? t : null == k ? true : k.name, D = (e, t) => {
     var a;
-    (0, A.UE)({
+    (0, T.UE)({
       gameName: null != R ? R : "",
       applicationId: n,
       action: e,
@@ -304,13 +304,13 @@ let et = e => {
     })
   };
   return ((0, p.ZP)(() => {
-    (0, A.IS)({
+    (0, T.IS)({
       source: r,
       viewId: v,
       applicationId: n,
       gameName: null != R ? R : "",
       authorId: s,
-      profileType: A.j7.FullProfile
+      profileType: T.j7.FullProfile
     }), (0, b.Jn)()
   }), (0, _.Z)(j), i.useEffect(() => {
     h.startsWith("en") || (null == L ? true : L.summaryLocalized) != null || f.Z.getDetectableGamesSupplemental([n], {
@@ -321,7 +321,7 @@ let et = e => {
       if (0 === j.length) {
         w(null);
         try {
-          await (0, T.i)(n)
+          await (0, A.i)(n)
         } catch (e) {
           w(e)
         }
@@ -331,14 +331,14 @@ let et = e => {
     var e;
     let t = Date.now(),
       a = P.map(e => {
-        let n = (0, y.kr)(e) ? (0, y.T_)(e, t) : (0, y.GL)(e, h);
+        let n = (0, O.kr)(e) ? (0, O.T_)(e, t) : (0, O.GL)(e, h);
         return JSON.stringify({
           item_id: e.id,
           trait: e.traits,
           time_played: n
         })
       });
-    (0, A.wz)({
+    (0, T.wz)({
       viewId: v,
       applicationId: n,
       gameName: null != R ? R : "",

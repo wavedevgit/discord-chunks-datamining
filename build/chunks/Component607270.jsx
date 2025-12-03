@@ -53,7 +53,7 @@ function g() {
       className: Chunk640744.textContent,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
-        color: "text-primary",
+        color: "text-strong",
         children: exports
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",

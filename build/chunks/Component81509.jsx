@@ -52,17 +52,17 @@ function x(e) {
     guildIcon: n,
     guildAvatarUrl: i,
     subscriberCount: l
-  } = e, a = (0, u.dangerouslyConstructGuildRecordFromUntypedObject)({
+  } = e, a = (0, d.dangerouslyConstructGuildRecordFromUntypedObject)({
     name: t,
     icon: n
   });
   return (0, r.jsxs)("div", {
     className: h.guildCardHeader,
-    children: [(0, r.jsx)(d.Z, {
+    children: [(0, r.jsx)(u.Z, {
       className: h.guildCardHeaderAvatar,
       iconSrc: i,
       guild: a,
-      size: d.Z.Sizes.LARGE
+      size: u.Z.Sizes.LARGE
     }), (0, r.jsxs)("div", {
       className: h.guildCardHeaderTitle,
       children: [(0, r.jsx)(s.Heading, {
@@ -104,7 +104,7 @@ function _(e) {
     emojisToShow: t,
     notShownEmojiCount: n,
     storePageUrl: i
-  } = e, a = null != t && t.length > 0, d = () => {
+  } = e, a = null != t && t.length > 0, u = () => {
     null != i && (0, c.Z)(i)
   };
   return (0, r.jsx)("div", {
@@ -137,7 +137,7 @@ function _(e) {
           children: (0, r.jsx)(s.Button, {
             variant: "secondary",
             disabled: null == i,
-            onClick: d,
+            onClick: u,
             text: f.intl.string(f.t.mQ2IGa),
             fullWidth: true
           })
@@ -148,7 +148,7 @@ function _(e) {
       children: (0, r.jsx)(s.Button, {
         variant: "secondary",
         disabled: null == i,
-        onClick: d,
+        onClick: u,
         text: f.intl.string(f.t.mQ2IGa),
         fullWidth: true
       })
@@ -166,15 +166,15 @@ function v(e) {
     quote_attribution_title: a
   } = t, o = (0, g.Z)(n, 4, 60), {
     isLoading: c,
-    hasAllImperativeDetails: d
+    hasAllImperativeDetails: u
   } = o;
   if (c) return (0, r.jsx)("div", {
     className: h.guildCard,
     children: (0, r.jsx)(s.$jN, {})
   });
-  if (!d) return null;
+  if (!u) return null;
   let {
-    guildIcon: u,
+    guildIcon: d,
     guildName: m,
     guildAvatarUrl: p,
     subscriberCount: f,
@@ -185,7 +185,7 @@ function v(e) {
   return (0, r.jsxs)("div", {
     className: h.guildCard,
     children: [(0, r.jsx)(x, {
-      guildIcon: u,
+      guildIcon: d,
       guildName: m,
       guildAvatarUrl: p,
       subscriberCount: f

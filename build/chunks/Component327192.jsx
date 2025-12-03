@@ -126,7 +126,7 @@ let z = e => {
           href: null == (n = b.Z.get(a.type)) || null == (t = n.getPlatformUserUrl) ? true : t.call(n, a.account),
           children: (0, r.jsx)(p.Text, {
             variant: "text-xs/normal",
-            color: "header-secondary",
+            color: "text-default",
             children: a.account.name
           })
         })]
@@ -191,7 +191,7 @@ function q(e) {
           })]
         }), (0, r.jsx)(p.Text, {
           variant: "text-xs/normal",
-          color: "header-secondary",
+          color: "text-default",
           className: V.connectionAccountLabel,
           children: i.name
         })]
@@ -246,7 +246,7 @@ function q(e) {
     }
     null !== a && (null == i && (i = []), null == i || i.push((0, r.jsx)(p.Text, {
       variant: "text-xs/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       className: V.connectedAccountVanityMetadataCreatedAt,
       children: F.intl.format(F.t["9rfonh"], {
         date: a

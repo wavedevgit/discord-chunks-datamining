@@ -10,10 +10,10 @@ var Chunk473749 = require("./473749.js"),
 function s(e) {
   let {
     searchOptions: t
-  } = e, [n, s] = r.useState({
+  } = e, [n, s] = l.useState({
     results: [],
     query: ""
-  }), i = (0, l.Z)(() => {
+  }), i = (0, r.Z)(() => {
     let e = new a.ZP((e, t) => {
       s({
         results: e,
@@ -22,34 +22,34 @@ function s(e) {
     });
     return e.setLimit(20), e.search(""), e
   });
-  return r.useEffect(() => () => i.destroy(), [i]), r.useEffect(() => {
+  return l.useEffect(() => () => i.destroy(), [i]), l.useEffect(() => {
       null != t && t !== i.options && i.setOptions(t)
     }, [i, t]),
     function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          l = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), l.forEach(function(t) {
+          var l;
+          l = n[t], t in e ? Object.defineProperty(e, t, {
+            value: l,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = l
         })
       }
       return e
     }({
-      search: r.useCallback(e => {
+      search: l.useCallback(e => {
         var t;
         let {
           query: n,
-          resultTypes: r
+          resultTypes: l
         } = e;
-        null != i.resultTypes && (t = i.resultTypes, r.length === t.size && r.every(e => t.has(e))) || (i.setResultTypes(r), i.setLimit(1 === r.length ? 50 : 20)), i.search("" === n.trim() ? "" : n)
+        null != i.resultTypes && (t = i.resultTypes, l.length === t.size && l.every(e => t.has(e))) || (i.setResultTypes(l), i.setLimit(1 === l.length ? 50 : 20)), i.search("" === n.trim() ? "" : n)
       }, [i])
     }, n)
 }

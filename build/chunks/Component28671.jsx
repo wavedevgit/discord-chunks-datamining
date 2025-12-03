@@ -25,7 +25,7 @@ function b(e) {
   } = e, {
     trackUserProfileEditAction: h
   } = (0, c.KZ)(), y = i.useMemo(() => new s.q({
-    type: a.l.APPLICATION,
+    type: l.l.APPLICATION,
     applicationId: n.id
   }), [n.id]), v = i.useCallback(() => {
     null != y && ((0, u.qH)(y.type, y, true), h(function(e) {
@@ -62,7 +62,7 @@ function b(e) {
         applicationName: n.name
       }),
       buttons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(l.u, {
+        children: [(0, r.jsx)(a.u, {
           text: m.intl.string(m.t.WAI6xu),
           ariaHidden: true,
           children: (0, r.jsx)(o.Yd2, {
@@ -74,7 +74,7 @@ function b(e) {
               b(p.L.USER_DISMISS)
             }
           })
-        }), (0, r.jsx)(l.u, {
+        }), (0, r.jsx)(a.u, {
           text: m.intl.string(m.t["lBG2s/"]),
           ariaHidden: true,
           children: (0, r.jsx)(o.Yd2, {

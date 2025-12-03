@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk16084 = require("./16084.js"),
   Chunk55563 = require("./55563.js"),
   Chunk388032 = require("./388032.jsx");
-class u extends Chunk473749.Component {
+class c extends Chunk473749.Component {
   componentDidMount() {
     let {
       applicationId: e,
@@ -69,4 +69,4 @@ let d = Chunk442837.ZP.connectStores([Chunk55563.Z], e => {
   return {
     skus: o.Z.getForApplication(t)
   }
-})(u)
+})(c)

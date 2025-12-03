@@ -54,8 +54,8 @@ function m(e) {
     mfaFinish: m,
     onEarlyClose: p,
     onClose: b,
-    headerAlignStart: S,
-    width: x = 440
+    headerAlignStart: x,
+    width: S = 440
   } = e, [j, y] = r.useState(null != (n = null == (t = h.methods[0]) ? true : t.type) ? n : "select"), [v, C] = r.useState(j), Z = async e => {
     let {
       mfaType: t,
@@ -71,11 +71,11 @@ function m(e) {
     finish: Z,
     setSlide: y,
     onClose: p,
-    headerAlignStart: S
+    headerAlignStart: x
   };
   return (0, l.jsxs)(i.MyZ, {
     activeSlide: j,
-    width: x,
+    width: S,
     onSlideReady: C,
     children: [(0, l.jsx)(i.Mi4, {
       id: "select",

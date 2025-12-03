@@ -111,7 +111,7 @@ function k(e) {
       }), Z && null != f && (0, l.jsx)(c.Text, {
         className: E.messageContent,
         variant: "text-sm/normal",
-        color: "header-secondary",
+        color: "text-default",
         lineClamp: 3,
         children: m.Z.parse(f, true, {
           guildId: t.guild_id,
@@ -120,7 +120,7 @@ function k(e) {
       }), !Z && (0, l.jsx)(c.Text, {
         className: i()(E.messageContent, S.markup),
         variant: "text-sm/normal",
-        color: "header-secondary",
+        color: "text-default",
         lineClamp: 3,
         children: m.Z.parse(n.description, true, {
           guildId: t.guild_id,

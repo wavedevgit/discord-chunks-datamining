@@ -71,7 +71,7 @@ let I = function() {
             children: Chunk388032.intl.string(Chunk388032.t.txdaxf)
           }), (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",
-            color: "header-secondary",
+            color: "text-default",
             className: Chunk805220.description,
             children: Chunk388032.intl.string(Chunk388032.t["5PGZWS"])
           })]

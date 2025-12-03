@@ -118,7 +118,7 @@ function S() {
         text: "Start Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         disabled: !T.canStartAuthorization,

@@ -1,14 +1,14 @@
 /** Chunk was on 88742 **/
 /** chunk id: 438926, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  y: () => o
+  y: () => l
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk793030 = require("./793030.js"),
   Chunk882508 = require("./882508.js");
 
-function o(t) {
+function l(t) {
   let {
     sku: e,
     title: n

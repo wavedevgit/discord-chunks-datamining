@@ -70,12 +70,12 @@ function C(e) {
         children: f.intl.string(f.t.utqWEC)
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: f.intl.string(f.t["+9etcM"])
       }), (0, r.jsx)(o.Text, {
         className: g.tip,
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: f.intl.format(f.t.Z0axjk, {})
       })]
     })]

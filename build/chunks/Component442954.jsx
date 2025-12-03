@@ -525,7 +525,7 @@ let j = {
         }), (0, a.jsx)(t, {
           variant: "text-sm/normal",
           className: "mb-4",
-          color: "text-secondary",
+          color: "text-subtle",
           children: "This will temporarily disable the user's ability to communicate in this server."
         }), (0, a.jsxs)("div", {
           className: "mb-4",
@@ -558,7 +558,7 @@ let j = {
               border: "1px solid var(--border-subtle)",
               borderRadius: "4px",
               backgroundColor: "var(--background-base-low)",
-              color: "var(--text-primary)",
+              color: "var(--text-strong)",
               resize: "vertical"
             }
           })]
@@ -617,7 +617,7 @@ let j = {
         }), (0, a.jsxs)(t, {
           variant: "text-sm/normal",
           className: "mb-4",
-          color: "text-secondary",
+          color: "text-subtle",
           children: ["This will remove the ", s, " from your server and disable all associated features."]
         }), (0, a.jsxs)("div", {
           className: "mb-4",
@@ -639,19 +639,19 @@ let j = {
             },
             children: [(0, a.jsxs)(t, {
               variant: "text-sm/normal",
-              color: "text-secondary",
+              color: "text-subtle",
               children: ["• ", o, " emoji slots"]
             }), (0, a.jsxs)(t, {
               variant: "text-sm/normal",
-              color: "text-secondary",
+              color: "text-subtle",
               children: ["• ", c, " sticker slots"]
             }), (0, a.jsxs)(t, {
               variant: "text-sm/normal",
-              color: "text-secondary",
+              color: "text-subtle",
               children: ["• ", d, " sound slots"]
             }), (0, a.jsx)(t, {
               variant: "text-sm/normal",
-              color: "text-secondary",
+              color: "text-subtle",
               children: "• Custom server banner"
             })]
           })]
@@ -882,7 +882,7 @@ let j = {
               })
             }), (0, a.jsxs)(l, {
               variant: "text-sm/normal",
-              color: "text-secondary",
+              color: "text-subtle",
               style: {
                 marginTop: "8px"
               },
@@ -902,7 +902,7 @@ let j = {
               muted: true
             }), (0, a.jsxs)(l, {
               variant: "text-sm/normal",
-              color: "text-secondary",
+              color: "text-subtle",
               style: {
                 marginTop: "8px"
               },

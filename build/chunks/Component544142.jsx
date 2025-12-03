@@ -58,11 +58,11 @@ function x(e, t) {
 function E(e) {
   var t, l, p;
   let {
-    userId: y,
-    channel: C
+    userId: C,
+    channel: y
   } = e, v = r.useRef(null), {
     analyticsLocations: E
-  } = (0, d.ZP)(u.Z.USERNAME), j = (0, o.e7)([g.default], () => g.default.getUser(y)), S = (0, o.e7)([m.ZP], () => null != y ? m.ZP.getMember(C.guild_id, y) : null), P = (0, h.X7)(C.guild_id, null != y ? y : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
+  } = (0, d.ZP)(u.Z.USERNAME), j = (0, o.e7)([g.default], () => g.default.getUser(C)), S = (0, o.e7)([m.ZP], () => null != C ? m.ZP.getMember(y.guild_id, C) : null), P = (0, h.X7)(y.guild_id, null != C ? C : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
 
   function I(e) {
     if (null == j) return null;
@@ -72,8 +72,8 @@ function E(e) {
       } = await Promise.all([n.e("79695"), n.e("70675"), n.e("85994")]).then(n.bind(n, 654663));
       return t => (0, i.jsx)(e, x(O({}, t), {
         user: j,
-        guildId: C.guild_id,
-        channel: C
+        guildId: y.guild_id,
+        channel: y
       }))
     })
   }
@@ -87,8 +87,8 @@ function E(e) {
     children: (0, i.jsx)(f.Z, {
       targetElementRef: v,
       user: j,
-      guildId: C.guild_id,
-      channelId: C.id,
+      guildId: y.guild_id,
+      channelId: y.id,
       roleId: null == S ? true : S.colorRoleId,
       clickTrap: true,
       children: e => (0, i.jsx)(s.P3F, x(O({}, e), {
@@ -119,7 +119,7 @@ function j(e) {
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.Text, {
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: (0, i.jsx)("div", {
         className: _.subtitle,
         children: v.intl.format(v.t.imPXd5, {
@@ -129,9 +129,9 @@ function j(e) {
           }, n)
         })
       })
-    }), t.type === C.d4z.PRIVATE_THREAD ? (0, i.jsx)(s.Text, {
+    }), t.type === y.d4z.PRIVATE_THREAD ? (0, i.jsx)(s.Text, {
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: v.intl.string(v.t["1awbZG"])
     }) : null]
   })
@@ -142,14 +142,14 @@ function S(e) {
   let {
     channel: n
   } = e, r = null != (t = (0, p.KS)(n)) ? t : s.or_;
-  return (0, i.jsxs)(y.ZP, {
+  return (0, i.jsxs)(C.ZP, {
     channelId: n.id,
     children: [(0, i.jsx)("div", {
       className: _.iconWrapper,
       children: (0, i.jsx)(r, {
         className: _.icon
       })
-    }), (0, i.jsx)(y.Ot, {
+    }), (0, i.jsx)(C.Ot, {
       children: n.name
     }), (0, i.jsx)(j, {
       channel: n

@@ -171,7 +171,7 @@ class I extends Chunk473749.PureComponent {
         }), " ", Chunk388032.intl.string(Chunk388032.t.W26xGQ)]
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: Chunk388032.intl.string(Chunk388032.t.h6V3uK)
       }), Chunk212895, Chunk159351 !== Chunk159691.length - 1 ? (0, Chunk54381.jsx)(Chunk481060.izJ, {
         className: Chunk579378.__invalid_sourceDivider

@@ -34,7 +34,7 @@ let c = function(e) {
         }) : s.intl.string(s.t["5iLvSx"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: s.intl.string(s.t.FdsK4h)
       })]
     }), (0, r.jsx)(l.Button, {

@@ -78,7 +78,7 @@ let p = function(e) {
     children: [(0, a.jsx)(o.Heading, {
       className: u.sectionHeader,
       variant: "text-xs/semibold",
-      color: "header-secondary",
+      color: "text-default",
       children: d.intl.string(d.t["Oj3o1/"])
     }), (0, a.jsx)("div", {
       className: r()(u.row, u.gapMd),

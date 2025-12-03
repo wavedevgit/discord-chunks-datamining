@@ -39,7 +39,7 @@ function Z(e) {
     guildId: t
   } = e, n = (0, s.e7)([b.Z], () => b.Z.getGuild(t)), {
     analyticsLocations: l
-  } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), Z = (0, u.m)(t), R = (0, s.e7)([h.ZP], () => h.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
+  } = (0, u.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), Z = (0, d.m)(t), R = (0, s.e7)([h.ZP], () => h.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
     p.Z.closeGuildSidebar(t)
   }, [t]), A = false == !!(null == n ? true : n.features.has(S.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, s.e7)([x.Z], () => x.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
     null != e && (0, f.openUserProfileModal)({
@@ -53,7 +53,7 @@ function Z(e) {
   }, []);
   if (null == n) return null;
   let U = (0, C.xb)(false, false, L);
-  return (0, r.jsxs)(d.Gt, {
+  return (0, r.jsxs)(u.Gt, {
     value: l,
     children: [(0, r.jsx)("div", {
       className: a()(w.customColumn, P.override, P.settingsColumn),

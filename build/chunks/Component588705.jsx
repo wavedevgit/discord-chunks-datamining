@@ -82,23 +82,23 @@ let P = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
       }));
     if (null == d) return null;
     let k = null != d.guild ? p.lM(d.guild) ? d.guild : p.Qs(d.guild) : null,
-      y = null != d.channel ? (0, x.jD)(d.channel) : null,
-      z = null != d.target_application ? new g.ZP(d.target_application) : null,
-      R = P || null == d.inviter ? null : new h.Z(d.inviter),
-      M = !(null != d.approximate_member_count && d.approximate_member_count > 100 || null != k && k.features.has(N.GuildFeatures.COMMUNITY)) && null != R,
-      A = null,
-      w = false;
-    if (null != k) A = null == R ? _.intl.string(_.t["3rE1P8"]) : _.intl.formatToPlainString(_.t["5u47va"], {
-      username: v.ZP.getFormattedName(R)
-    }), d.target_type === E.Iq.STREAM && null != d.target_user && (A = _.intl.formatToPlainString(_.t.x2L32Q, {
+      z = null != d.channel ? (0, g.jD)(d.channel) : null,
+      R = null != d.target_application ? new x.ZP(d.target_application) : null,
+      M = P || null == d.inviter ? null : new h.Z(d.inviter),
+      A = !(null != d.approximate_member_count && d.approximate_member_count > 100 || null != k && k.features.has(N.GuildFeatures.COMMUNITY)) && null != M,
+      w = null,
+      y = false;
+    if (null != k) w = null == M ? _.intl.string(_.t["3rE1P8"]) : _.intl.formatToPlainString(_.t["5u47va"], {
+      username: v.ZP.getFormattedName(M)
+    }), d.target_type === E.Iq.STREAM && null != d.target_user && (w = _.intl.formatToPlainString(_.t.x2L32Q, {
       username: v.ZP.getFormattedName(d.target_user)
-    })), d.target_type === E.Iq.EMBEDDED_APPLICATION && null != d.target_application && (A = null != R ? _.intl.formatToPlainString(_.t.UW1Cav, {
-      username: v.ZP.getFormattedName(R)
-    }) : _.intl.string(_.t.ENSuN3)), M && null == z && (n = (0, t.jsx)(u.Vj, {
+    })), d.target_type === E.Iq.EMBEDDED_APPLICATION && null != d.target_application && (w = null != M ? _.intl.formatToPlainString(_.t.UW1Cav, {
+      username: v.ZP.getFormattedName(M)
+    }) : _.intl.string(_.t.ENSuN3)), A && null == R && (n = (0, t.jsx)(u.Vj, {
       className: Z.icon,
       guild: k,
       size: u.Vj.Sizes.SMALL
-    })), a = k.name, null != z && (a = z.name, c = (0, t.jsxs)("div", {
+    })), a = k.name, null != R && (a = R.name, c = (0, t.jsxs)("div", {
       children: [(0, t.jsx)(u.DK, {
         className: Z.appIn,
         children: _.intl.string(_.t["3gg9fF"])
@@ -116,20 +116,20 @@ let P = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
         })]
       })]
     }));
-    else if (null != y) {
-      if (null == R) throw Error("no inviter in group DM invite");
-      let e = v.ZP.getFormattedName(R);
-      null != y.name && "" !== y.name ? (A = _.intl.formatToPlainString(_.t["5u47va"], {
+    else if (null != z) {
+      if (null == M) throw Error("no inviter in group DM invite");
+      let e = v.ZP.getFormattedName(M);
+      null != z.name && "" !== z.name ? (w = _.intl.formatToPlainString(_.t["5u47va"], {
         username: e
-      }), a = y.name, null != y.icon && (n = (0, t.jsx)(u.MC, {
-        channel: y,
+      }), a = z.name, null != z.icon && (n = (0, t.jsx)(u.MC, {
+        channel: z,
         size: r.EFr.SIZE_32
-      }))) : (A = _.intl.string(_.t.OsdY8B), a = e)
-    } else if (null != R) {
-      let e = v.ZP.getFormattedName(R, true);
+      }))) : (w = _.intl.string(_.t.OsdY8B), a = e)
+    } else if (null != M) {
+      let e = v.ZP.getFormattedName(M, true);
       a = _.intl.formatToPlainString(_.t["4aF92R"], {
         username: e
-      }), w = true, c = null != I ? null : (0, t.jsx)(u.DK, {
+      }), y = true, c = null != I ? null : (0, t.jsx)(u.DK, {
         className: Z.directInviteSubTitle,
         children: D ? _.intl.format(_.t["6r4JiR"], {
           username: e
@@ -141,10 +141,10 @@ let P = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
     return (0, t.jsxs)("div", {
       className: Z.container,
       children: [(0, t.jsx)(S, {
-        application: z,
+        application: R,
         guild: k,
-        user: M ? R : null,
-        compact: w
+        user: A ? M : null,
+        compact: y
       }), null != I ? (0, t.jsxs)(t.Fragment, {
         children: [(0, t.jsx)(u.DK, {
           children: _.intl.string(_.t.mDFGFj)
@@ -153,7 +153,7 @@ let P = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
         })]
       }) : (0, t.jsxs)(t.Fragment, {
         children: [(0, t.jsx)(u.DK, {
-          children: A
+          children: w
         }), (0, t.jsxs)(u.Dx, {
           className: Z.title,
           children: [null != k ? (0, t.jsx)(o.Z, {
@@ -165,7 +165,7 @@ let P = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
       }), c, (0, t.jsxs)(r.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: [null != z || w || (null == d || null == (l = d.guild) ? true : l.id) === f.fQ ? null : (0, t.jsx)(u.EJ, {
+        children: [null != R || y || (null == d || null == (l = d.guild) ? true : l.id) === f.fQ ? null : (0, t.jsx)(u.EJ, {
           className: Z.activityCount,
           online: d.approximate_presence_count,
           total: d.approximate_member_count,

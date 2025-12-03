@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 460608, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,7 +11,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk240379 = require("./240379.js");
 
-function c(e) {
+function u(e) {
   let {
     guildId: t
   } = e, n = (0, o.Z)(t);
@@ -19,7 +19,7 @@ function c(e) {
     children: [(0, r.jsx)(i.X6q, {
       className: s.header,
       variant: "eyebrow",
-      color: "text-secondary",
+      color: "text-subtle",
       children: a.intl.string(a.t.yM9Krm)
     }), (0, r.jsx)(i.zJl, {
       className: s.container,

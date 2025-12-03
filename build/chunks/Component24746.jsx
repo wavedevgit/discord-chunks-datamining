@@ -17,12 +17,12 @@ var Chunk54381 = require("./54381.js"),
 let h = o().parserFor(Chunk547563.Z),
   g = o().reactFor(o().ruleOutput(Chunk547563.Z, "react"));
 
-function _(e) {
+function f(e) {
   let {
     description: t,
     supportsMarkdown: n
-  } = e, [i, s] = a.useState(false), o = a.useRef(null);
-  a.useEffect(() => {
+  } = e, [a, s] = i.useState(false), o = i.useRef(null);
+  i.useEffect(() => {
     if (null == o.current) return;
     let e = new ResizeObserver(() => {
       var e, t, n, r;
@@ -30,7 +30,7 @@ function _(e) {
     });
     return e.observe(o.current), () => e.disconnect()
   }, []);
-  let [u, p] = a.useState(false), _ = a.useCallback(() => {
+  let [u, p] = i.useState(false), f = i.useCallback(() => {
     p(e => !e)
   }, []);
   return (0, r.jsxs)(r.Fragment, {
@@ -53,18 +53,18 @@ function _(e) {
         color: "text-default",
         children: t
       })
-    }), i || u ? (0, r.jsx)(f, {
+    }), a || u ? (0, r.jsx)(_, {
       isShowingMore: u,
-      onToggle: _
+      onToggle: f
     }) : null]
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     onToggle: t,
     isShowingMore: n
-  } = e, i = a.useMemo(() => (0, r.jsxs)("div", {
+  } = e, a = i.useMemo(() => (0, r.jsxs)("div", {
     className: m.showMoreContent,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/semibold",
@@ -85,7 +85,7 @@ function f(e) {
     onClick: t,
     children: [(0, r.jsx)("div", {
       className: m.divider
-    }), i, (0, r.jsx)("div", {
+    }), a, (0, r.jsx)("div", {
       className: m.divider
     })]
   })
@@ -93,11 +93,11 @@ function f(e) {
 let b = function(e) {
   var t, n;
   let {
-    application: i
-  } = e, l = null == (t = i.directory_entry) ? true : t.detailed_description, s = null == (n = i.directory_entry) ? true : n.short_description, o = a.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(_, {
+    application: a
+  } = e, l = null == (t = a.directory_entry) ? true : t.detailed_description, s = null == (n = a.directory_entry) ? true : n.short_description, o = i.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(f, {
     description: l,
     supportsMarkdown: true
-  }) : null != s && s.length > 0 ? (0, r.jsx)(_, {
+  }) : null != s && s.length > 0 ? (0, r.jsx)(f, {
     description: s,
     supportsMarkdown: false
   }) : null, [l, s]);

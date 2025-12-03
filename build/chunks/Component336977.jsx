@@ -152,7 +152,7 @@ function m(t) {
           children: f.intl.string(f.t.L4ifkZ)
         }), (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: f.intl.string(f.t.R8LCMZ)
         })]
       })

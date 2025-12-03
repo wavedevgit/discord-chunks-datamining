@@ -60,7 +60,7 @@ function l(e) {
       }), null != t && (0, r.jsxs)("div", {
         className: o.benefits,
         children: [(0, r.jsx)(a.xvT, {
-          color: "header-secondary",
+          color: "text-default",
           variant: "eyebrow",
           children: i.Z.Messages.STOREFRONT_BENEFITS_TITLE
         }), t]

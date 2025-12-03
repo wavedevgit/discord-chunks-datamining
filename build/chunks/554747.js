@@ -4,9 +4,9 @@ require.d(exports, {
   Vm: () => p,
   ZP: () => m,
   eF: () => S,
-  gM: () => O,
+  gM: () => h,
   k5: () => C,
-  qY: () => h,
+  qY: () => O,
   sz: () => I,
   u1: () => v
 }), require("./388685.js");
@@ -38,7 +38,7 @@ function m(e, t) {
   }, [t, e])
 }
 
-function h(e) {
+function O(e) {
   return (0, i.e7)([s.ZP, r.Z, a.Z], () => {
     let t = r.Z.getChannel(e);
     if (!a.Z.can(g.Plq.VIEW_CHANNEL, t) || null == (null == t ? true : t.guild_id)) return null;
@@ -47,7 +47,7 @@ function h(e) {
   }, [e])
 }
 
-function O(e) {
+function h(e) {
   let t = (0, i.Wu)([s.ZP], () => s.ZP.getGuildScheduledEventsForGuild(e), [e]);
   return l.useMemo(() => {
     let e = new Map;

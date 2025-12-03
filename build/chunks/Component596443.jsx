@@ -109,7 +109,7 @@ function L(e) {
       className: U.permissionItemDescription,
       children: (0, r.jsx)(E.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: x
       })
     }), (0, r.jsx)("div", {

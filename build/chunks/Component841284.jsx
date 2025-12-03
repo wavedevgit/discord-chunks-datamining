@@ -32,7 +32,7 @@ function d(e) {
       children: (0, r.jsxs)("div", {
         className: u.scheduledMessageBar,
         children: [(0, r.jsx)(o.x, {
-          color: "header-secondary",
+          color: "text-default",
           className: a()(u.text, u.scheduledMessageBarLabel),
           variant: "text-sm/normal",
           children: c.intl.formatToPlainString(c.t["MQcRX/"], {

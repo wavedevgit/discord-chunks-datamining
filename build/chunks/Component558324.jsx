@@ -13,8 +13,8 @@ let o = e => {
   var t, n, {
       tags: o,
       tagsLabel: c,
-      value: d,
-      onRemoveTag: u,
+      value: u,
+      onRemoveTag: d,
       onAddTag: g,
       onAddTagError: m,
       maxTaxLength: p,
@@ -37,7 +37,7 @@ let o = e => {
       }
       return i
     }(e, ["tags", "tagsLabel", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [j, _] = i.useState(null != d ? d : ""), v = i.useCallback(() => {
+  let [j, _] = i.useState(null != u ? u : ""), v = i.useCallback(() => {
     let e = j.trim();
     if (0 !== e.length) {
       if (null != f && o.length >= f) {
@@ -49,14 +49,14 @@ let o = e => {
   }, [j, f, g, m, o.length]), O = i.useCallback(e => {
     switch (e.key) {
       case a.vn.BACKSPACE:
-        0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));
+        0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == d || d(new Set([o[o.length - 1].id])));
         break;
       case a.vn.ENTER:
       case a.vn.TAB:
       case a.vn.COMMA:
         e.preventDefault(), e.stopPropagation(), v()
     }
-  }, [v, j.length, u, o]);
+  }, [v, j.length, d, o]);
   return (0, r.jsx)(l.oil, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -79,7 +79,7 @@ let o = e => {
       type: "tags",
       label: c,
       items: o,
-      onRemove: u
+      onRemove: d
     }
   }, x), n = n = {
     value: j,

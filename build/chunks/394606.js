@@ -16,7 +16,7 @@ function s(e) {
     coverImageUrl: n,
     localizedName: s,
     isFetching: u
-  } = (0, a.$)(e), d = (0, r.e7)([l.Z], () => l.Z.getDetectableGame(e)), f = (0, r.e7)([i.Z], () => i.Z.canFetch(e));
+  } = (0, l.$)(e), d = (0, r.e7)([a.Z], () => a.Z.getDetectableGame(e)), f = (0, r.e7)([i.Z], () => i.Z.canFetch(e));
   return {
     coverImageUrl: null != n ? n : o.ZP.getGameAssetURL({
       id: e,

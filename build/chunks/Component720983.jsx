@@ -66,10 +66,10 @@ function N(e) {
     }), window.open(h.Z.getArticleURL(k.BhN.SOCIAL_LAYER_STOREFRONT))
   }, [R, T]);
   if (null == t) return null;
-  let y = null != t.logoAssetId ? (0, x._W)(t.applicationId, t.logoAssetId, 75) : null,
-    O = null != t.lightThemeLogoAssetId ? (0, x._W)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
-    P = null;
-  return P = N ? null != y ? y : O : null != O ? O : y, (0, l.jsxs)(g.Z, {
+  let O = null != t.logoAssetId ? (0, x._W)(t.applicationId, t.logoAssetId, 75) : null,
+    P = null != t.lightThemeLogoAssetId ? (0, x._W)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
+    y = null;
+  return y = N ? null != O ? O : P : null != P ? P : O, (0, l.jsxs)(g.Z, {
     disableDoubleClick: true,
     className: S.headerContainer,
     children: [(0, l.jsxs)(s.P3F, {
@@ -80,9 +80,9 @@ function N(e) {
         })
       },
       className: S.titleContainer,
-      children: [null != P && (0, l.jsx)("img", {
+      children: [null != y && (0, l.jsx)("img", {
         className: S.logo,
-        src: P,
+        src: y,
         alt: t.title
       }), (0, l.jsx)(g.Z.Title, {
         children: t.title

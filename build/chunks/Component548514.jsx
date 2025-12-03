@@ -36,9 +36,9 @@ function A(e) {
   let {
     renderDropdown: t,
     size: n
-  } = e, i = a.useRef(null);
+  } = e, a = i.useRef(null);
   return (0, r.jsx)(c.yRy, {
-    targetElementRef: i,
+    targetElementRef: a,
     renderPopout: e => {
       let {
         closePopout: n
@@ -66,7 +66,7 @@ function A(e) {
       }
       return e
     }({
-      buttonRef: i,
+      buttonRef: a,
       variant: "secondary",
       size: n,
       icon: c.xhG,
@@ -79,14 +79,14 @@ function L(e) {
   let {
     application: t,
     variant: n,
-    size: i,
+    size: a,
     contentWidth: l
   } = e, {
     onClickInstallApplication: o,
     canInstall: d
   } = function(e) {
     let t = (0, I.nu)(),
-      n = a.useCallback(() => {
+      n = i.useCallback(() => {
         var t;
         let n = null != (t = S.z8.getField("guildId")) ? t : true;
         (0, y.L)({
@@ -98,7 +98,7 @@ function L(e) {
           source: "product_page"
         })
       }, [e]);
-    return a.useEffect(() => {
+    return i.useEffect(() => {
       let e = new URL(location.href);
       if (t && "true" === e.searchParams.get(N)) {
         e.searchParams.delete(N);
@@ -106,7 +106,7 @@ function L(e) {
         (0, b.dL)(t), n()
       }
     }, [t, n]), {
-      onClickInstallApplication: a.useCallback(() => {
+      onClickInstallApplication: i.useCallback(() => {
         if ((0, I.zZ)(P.rMx.APP_DIRECTORY_INSTALL_CLICKED, {
             application_id: e.id
           }), (s.tq || s.Em) && null == e.custom_install_url) {
@@ -132,7 +132,7 @@ function L(e) {
           })
         }
       }, [e, n, t]),
-      canInstall: a.useMemo(() => (0, g.Eb)({
+      canInstall: i.useMemo(() => (0, g.Eb)({
         customInstallUrl: e.custom_install_url,
         installParams: e.install_params,
         integrationTypesConfig: e.integration_types_config
@@ -142,13 +142,13 @@ function L(e) {
   return "icon" === l ? (0, r.jsx)(c.hU, {
     variant: n,
     icon: c.svS,
-    size: i,
+    size: a,
     onClick: o,
     "aria-label": O.intl.string(O.t.NgXl3C),
     disabled: !d
   }) : (0, r.jsx)(c.Button, {
     variant: n,
-    size: i,
+    size: a,
     text: "small" === l ? O.intl.string(O.t.qRZ35t) : O.intl.string(O.t.NgXl3C),
     onClick: o,
     disabled: !d
@@ -159,46 +159,46 @@ function R(e) {
   let {
     size: t,
     contentWidth: n,
-    onClick: a,
-    isSubmitting: i
+    onClick: i,
+    isSubmitting: a
   } = e;
   return "icon" === n ? (0, r.jsx)(c.hU, {
     variant: "primary",
     icon: c.o1U,
     size: t,
-    onClick: a,
-    loading: i,
+    onClick: i,
+    loading: a,
     "aria-label": O.intl.string(O.t.QO7rO6)
   }) : (0, r.jsx)(c.Button, {
     variant: "primary",
     size: t,
     text: O.intl.string(O.t.QO7rO6),
-    onClick: a,
-    loading: i
+    onClick: i,
+    loading: a
   })
 }
 let Z = Chunk473749.forwardRef(function(e, t) {
   let {
     application: n,
-    size: i
+    size: a
   } = e, {
     analyticsLocations: s
-  } = (0, p.ZP)(), g = a.useCallback(() => {
+  } = (0, p.ZP)(), g = i.useCallback(() => {
     let e;
     (0, I.zZ)(P.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
       application_id: n.id
     }), (0, j.JG)((e = n.id, "".concat(location.protocol, "//").concat(location.host).concat(P.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e))), () => (0, c.showToast)((0, c.createToast)(O.intl.string(O.t["L/PwZf"]), c.ToastType.SUCCESS)))
-  }, [n.id]), C = a.useCallback(() => {
+  }, [n.id]), C = i.useCallback(() => {
     let e = x.ZP.createFromServer(n);
-    (0, f.uu)({
+    (0, _.uu)({
       application: e,
       entrypoint: "app_directory"
     })
-  }, [n]), y = (0, _.Z)({
+  }, [n]), y = (0, f.Z)({
     id: n.id,
     label: O.intl.string(O.t["FfCL+6"]),
     onSuccess: () => (0, c.showToast)((0, c.createToast)(O.intl.string(O.t.eNjAah), c.ToastType.SUCCESS))
-  }), S = a.useCallback((e, t) => (0, r.jsxs)(c.v2r, {
+  }), S = i.useCallback((e, t) => (0, r.jsxs)(c.v2r, {
     navId: "application-directory-profile",
     "aria-label": O.intl.string(O.t["/7I4/C"]),
     onClose: t,
@@ -226,15 +226,15 @@ let Z = Chunk473749.forwardRef(function(e, t) {
   } = function(e, t) {
     var n;
     let r = e.id,
-      i = null == e || null == (n = e.bot) ? true : n.id,
-      l = null != i && (0, h.BQ)(e) && (0, h.ye)(e),
-      [s, c] = a.useState(false),
+      a = null == e || null == (n = e.bot) ? true : n.id,
+      l = null != a && (0, h.BQ)(e) && (0, h.ye)(e),
+      [s, c] = i.useState(false),
       p = (0, I.nu)(),
       g = (0, o.e7)([v.default], () => v.default.getCurrentUser()),
-      _ = (0, o.e7)([d.ZP], () => d.ZP.getCurrentEmbeddedActivity()),
-      f = a.useCallback(async (t, n, r) => {
-        if (null != _ && _.applicationId === e.id) {
-          let e = _.location;
+      f = (0, o.e7)([d.ZP], () => d.ZP.getCurrentEmbeddedActivity()),
+      _ = i.useCallback(async (t, n, r) => {
+        if (null != f && f.applicationId === e.id) {
+          let e = f.location;
           (0, u.Z)("guild_id" in e ? e.guild_id : null, e);
           return
         }
@@ -247,26 +247,26 @@ let Z = Chunk473749.forwardRef(function(e, t) {
           })
         } catch (e) {}
         c(false)
-      }, [_, e.id]);
-    a.useEffect(() => {
+      }, [f, e.id]);
+    i.useEffect(() => {
       let e = new URL(location.href),
         n = "true" === e.searchParams.get(T);
-      if (p && l && n && null != i && null != g) {
+      if (p && l && n && null != a && null != g) {
         e.searchParams.delete(T);
         let n = e.pathname + e.search;
-        (0, b.dL)(n), f(i, r, t)
+        (0, b.dL)(n), _(a, r, t)
       }
-    }, [p, l, i, r, t, g, f]);
-    let x = a.useCallback(async () => {
-      if (null != i) {
+    }, [p, l, a, r, t, g, _]);
+    let x = i.useCallback(async () => {
+      if (null != a) {
         if ((0, I.zZ)(P.rMx.APP_DIRECTORY_LAUNCH_CLICKED, {
             application_id: r
           }), !p) return void(0, I.rf)({
           [T]: "true"
         });
-        await f(i, r, t)
+        await _(a, r, t)
       }
-    }, [i, r, t, p, f]);
+    }, [a, r, t, p, _]);
     return {
       onClickLaunchActivity: l ? x : true,
       isSubmitting: s
@@ -277,56 +277,56 @@ let Z = Chunk473749.forwardRef(function(e, t) {
     children: [(0, r.jsxs)("div", {
       className: l()(E.actionContainer, E.wide),
       children: [w && (0, r.jsx)(R, {
-        size: i,
+        size: a,
         contentWidth: "normal",
         onClick: N,
         isSubmitting: Z
       }), (0, r.jsx)(L, {
         application: n,
-        size: i,
+        size: a,
         contentWidth: "normal",
         variant: D
       }), j.wS ? (0, r.jsx)(c.hU, {
         variant: "secondary",
-        size: i,
+        size: a,
         icon: c.xPt,
         onClick: g,
         "aria-label": O.intl.string(O.t.z4sP5J)
       }) : null, (0, r.jsx)(A, {
         renderDropdown: e => S(false, e),
-        size: i
+        size: a
       })]
     }), (0, r.jsxs)("div", {
       className: l()(E.actionContainer, E.small),
       children: [w && (0, r.jsx)(R, {
-        size: i,
+        size: a,
         contentWidth: "small",
         onClick: N,
         isSubmitting: Z
       }), (0, r.jsx)(L, {
         application: n,
-        size: i,
+        size: a,
         contentWidth: "small",
         variant: D
       }), (0, r.jsx)(A, {
         renderDropdown: e => S(j.wS, e),
-        size: i
+        size: a
       })]
     }), (0, r.jsxs)("div", {
       className: l()(E.actionContainer, E.tiny),
       children: [w && (0, r.jsx)(R, {
-        size: i,
+        size: a,
         contentWidth: "icon",
         onClick: N,
         isSubmitting: Z
       }), (0, r.jsx)(L, {
         application: n,
-        size: i,
+        size: a,
         contentWidth: "icon",
         variant: D
       }), (0, r.jsx)(A, {
         renderDropdown: e => S(j.wS, e),
-        size: i
+        size: a
       })]
     })]
   })

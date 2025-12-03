@@ -126,7 +126,7 @@ function D(e) {
               className: R.pillIcon
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
-              color: "header-secondary",
+              color: "text-default",
               className: R.pillLabel,
               children: u
             })]
@@ -162,7 +162,7 @@ function D(e) {
             className: R.pillIcon
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
-            color: "header-secondary",
+            color: "text-default",
             className: R.pillLabel,
             children: u
           })]
@@ -201,7 +201,7 @@ function D(e) {
             className: R.pillIcon
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
-            color: "header-secondary",
+            color: "text-default",
             className: R.pillLabel,
             children: n
           })]
@@ -235,7 +235,7 @@ function D(e) {
             className: R.pillIcon
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
-            color: "header-secondary",
+            color: "text-default",
             className: R.pillLabel,
             children: n
           })]

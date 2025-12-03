@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  r = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk755721 = require("./755721.js"),
@@ -24,9 +24,9 @@ function N(e) {
   let {
     onComplete: t,
     onClose: n
-  } = e, [s, N] = o.useState(null), [x, A] = o.useState(null), [T, C] = o.useState(false), j = (0, i.e7)([p.default], () => p.default.getCurrentUser()), y = o.useRef(null);
-  async function O(e) {
-    e.preventDefault(), r()(null != s, "Cannot submit null birthday."), C(true);
+  } = e, [s, N] = o.useState(null), [x, A] = o.useState(null), [T, C] = o.useState(false), j = (0, i.e7)([p.default], () => p.default.getCurrentUser()), O = o.useRef(null);
+  async function v(e) {
+    e.preventDefault(), l()(null != s, "Cannot submit null birthday."), C(true);
     try {
       await d.Av(s, h.L0.NEW_USER_FLOW), t()
     } catch (e) {
@@ -41,22 +41,22 @@ function N(e) {
   o.useEffect(() => {
     null != j && null != j.nsfwAllowed && t()
   }, [j, t]);
-  let v = o.useCallback(e => {
+  let y = o.useCallback(e => {
       N(e)
     }, [N]),
     I = o.useCallback(() => {
       var e;
-      null == (e = y.current) || e.focus()
-    }, [y]);
+      null == (e = O.current) || e.focus()
+    }, [O]);
   return null == j ? null : (0, a.jsxs)("form", {
     className: E.content,
-    onSubmit: O,
+    onSubmit: v,
     children: [(0, a.jsx)(u.gw7, {
       size: "custom",
       width: 56,
       height: 40,
       className: E.logo,
-      color: l.Z.unsafe_rawColors.BRAND_500.css
+      color: r.Z.unsafe_rawColors.BRAND_500.css
     }), (0, a.jsx)(u.Heading, {
       className: E.title,
       variant: "heading-xl/semibold",
@@ -76,7 +76,7 @@ function N(e) {
         wrapperClassName: E.formItem,
         label: b.intl.string(b.t.rhBeKe),
         name: "birthday",
-        onChange: v,
+        onChange: y,
         onPopulated: I,
         error: x,
         value: s
@@ -86,7 +86,7 @@ function N(e) {
       children: (0, a.jsx)("div", {
         className: E.buttonWrapper,
         children: (0, a.jsx)(c.zx, {
-          buttonRef: y,
+          buttonRef: O,
           type: "submit",
           size: c.zx.Sizes.LARGE,
           submitting: T,

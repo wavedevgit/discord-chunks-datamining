@@ -37,12 +37,12 @@ let u = () => (0, Chunk54381.jsxs)(Chunk600164.Z, {
     })]
   }), (0, Chunk54381.jsx)(Chunk481060.Text, {
     className: Chunk5146.description,
-    color: "header-secondary",
+    color: "text-default",
     variant: "text-sm/normal",
     children: Chunk388032.intl.string(Chunk388032.t.BUZ0sl)
   }), (0, Chunk54381.jsx)(Chunk481060.Text, {
     className: Chunk5146.description,
-    color: "header-secondary",
+    color: "text-default",
     variant: "text-sm/normal",
     children: Chunk388032.intl.string(Chunk388032.t.w5beJH)
   })]

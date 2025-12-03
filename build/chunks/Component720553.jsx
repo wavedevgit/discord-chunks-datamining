@@ -31,10 +31,10 @@ function C(t) {
     authorityPrefix: N,
     hostname: E,
     theRestOfTheUrl: T,
-    shouldTrustUrl: v,
-    setShouldTrustUrl: k,
-    handleConfirm: L,
-    handleCancel: b
+    shouldTrustUrl: b,
+    setShouldTrustUrl: v,
+    handleConfirm: k,
+    handleCancel: L
   } = (0, u.X)({
     url: e,
     trustUrl: n,
@@ -54,8 +54,8 @@ function C(t) {
     actions: [{
       text: x.intl.string(x.t["/g10LC"]),
       onClick: () => {
-        b(), d.default.track(_.rMx.MASKED_LINK_MODAL_CLICKED, {
-          is_trust_url_selected: v,
+        L(), d.default.track(_.rMx.MASKED_LINK_MODAL_CLICKED, {
+          is_trust_url_selected: b,
           action_type: "cancel"
         })
       },
@@ -63,8 +63,8 @@ function C(t) {
     }, {
       text: C ? x.intl.string(x.t.COq6kk) : x.intl.string(x.t.NcJfJG),
       onClick: () => {
-        L(), d.default.track(_.rMx.MASKED_LINK_MODAL_CLICKED, {
-          is_trust_url_selected: v,
+        k(), d.default.track(_.rMx.MASKED_LINK_MODAL_CLICKED, {
+          is_trust_url_selected: b,
           action_type: "confirm"
         })
       },
@@ -91,8 +91,8 @@ function C(t) {
     }), (0, a.jsx)("div", {
       className: m.checkboxMana,
       children: (0, a.jsx)(l.Checkbox, {
-        checked: v,
-        onChange: t => k(t),
+        checked: b,
+        onChange: t => v(t),
         label: C ? x.intl.format(x.t["haA+Xw"], {
           protocol: g.replace(":", "")
         }) : x.intl.format(x.t.ZgXDsI, {

@@ -2,7 +2,7 @@
 /** chunk id: 206950, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  F: () => u
+  F: () => d
 });
 var Chunk473749 = require("./473749.js"),
   Chunk232567 = require("./232567.js"),
@@ -13,7 +13,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk540167 = require("./540167.js");
 
-function u(e) {
+function d(e) {
   return r.useMemo(() => {
     var t, n;
     let r = (0, l.e5)((t = function(e) {
@@ -49,14 +49,14 @@ function u(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      u = new s.Z({
+      d = new s.Z({
         id: "313337",
         username: c.intl.string(c.t.cqpybK),
         discriminator: "0000",
         bot: false
       });
-    r.author = u;
-    let g = i.$k(u);
-    return null != g && (r.author = g, r.author.getAvatarURL = () => d.Z), r
+    r.author = d;
+    let g = i.$k(d);
+    return null != g && (r.author = g, r.author.getAvatarURL = () => u.Z), r
   }, [e])
 }

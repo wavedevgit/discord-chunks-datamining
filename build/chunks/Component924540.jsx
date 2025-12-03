@@ -53,7 +53,7 @@ function y(e) {
         className: E.premiumTrialBadgeIcon
       }), (0, r.jsx)(c.Text, {
         variant: "eyebrow",
-        color: S ? "always-white" : "text-primary",
+        color: S ? "always-white" : "text-strong",
         children: a
       })]
     })

@@ -1,7 +1,7 @@
 /** Chunk was on 5749 **/
 /** chunk id: 955708, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _,
+  default: () => f,
   x: () => m
 }), require("./388685.js");
 var i, Chunk54381 = require("./54381.js"),
@@ -47,20 +47,20 @@ function h(t, e) {
   }), t
 }
 var m = ((i = {})[i.INTRO = 0] = "INTRO", i[i.SAFETY_TIPS = 1] = "SAFETY_TIPS", i[i.TAKE_ACTION = 2] = "TAKE_ACTION", i);
-let _ = t => {
+let f = t => {
   let {
     warningId: e,
     warningType: n,
     senderId: i,
     modalProps: m,
-    channelId: _
-  } = t, [f, b] = s.useState(0), O = s.useMemo(() => ({
-    channelId: _,
+    channelId: f
+  } = t, [_, b] = s.useState(0), O = s.useMemo(() => ({
+    channelId: f,
     senderId: i,
     warningId: e,
     warningType: n,
     isNudgeWarning: false
-  }), [_, i, e, n]);
+  }), [f, i, e, n]);
   s.useEffect(() => {
     (0, c.KQ)(h(g({}, O), {
       viewName: c.pb.SAFETY_TAKEOVER_MODAL
@@ -84,7 +84,7 @@ let _ = t => {
       className: x.container,
       children: (0, r.jsxs)(a.MyZ, {
         width: 440,
-        activeSlide: f,
+        activeSlide: _,
         centered: false,
         overflow: "visible",
         contentDisplay: "flex",
@@ -109,7 +109,7 @@ let _ = t => {
             warningId: e,
             senderId: i,
             trackAnalyticsEvent: v,
-            channelId: _,
+            channelId: f,
             hasReported: j,
             onReport: function() {
               T(true)
@@ -125,10 +125,10 @@ let _ = t => {
         size: "sm",
         text: p.intl.string(p.t.cpT0Cq),
         onClick: function() {
-          m.onClose(), (0, o.T)(_, [e]), v(c.NM.USER_TAKEOVER_MODAL_DISMISS)
+          m.onClose(), (0, o.T)(f, [e]), v(c.NM.USER_TAKEOVER_MODAL_DISMISS)
         },
         textVariant: "text-sm/normal"
-      }), 0 !== f && (0, r.jsx)(a.Avr, {
+      }), 0 !== _ && (0, r.jsx)(a.Avr, {
         variant: "secondary",
         size: "sm",
         text: p.intl.string(p.t["13/7kX"]),

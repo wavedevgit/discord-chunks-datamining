@@ -41,7 +41,7 @@ function p(e) {
           if (null != j) j(v, y);
           else {
             let e = await m.Z.createGuildFromTemplate(v, y, n, L, M);
-            s.Z.transitionToGuildSync(e.id), null == h || h(e.id)
+            r.Z.transitionToGuildSync(e.id), null == h || h(e.id)
           }
         } catch (e) {
           T(e)
@@ -50,13 +50,13 @@ function p(e) {
       }
     }, [n, j, v, y, L, M, h]),
     w = (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(r.Button, {
+      children: [(0, i.jsx)(s.Button, {
         variant: "primary",
         text: null != j ? C.intl.string(C.t.PDTjLN) : C.intl.string(C.t.CumH4u),
         onClick: D,
         disabled: 0 === v.length,
         loading: Z
-      }), (0, i.jsx)(r.Avr, {
+      }), (0, i.jsx)(s.Avr, {
         size: "sm",
         variant: "secondary",
         text: C.intl.string(C.t["13/7kX"]),
@@ -65,26 +65,26 @@ function p(e) {
     });
   return {
     content: (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsxs)(r.xBx, {
+      children: [(0, i.jsxs)(s.xBx, {
         "data-migration-pending": true,
         direction: o.Z.Direction.VERTICAL,
         className: g.header,
         separator: false,
-        children: [(0, i.jsx)(r.Heading, {
+        children: [(0, i.jsx)(s.Heading, {
           className: g.title,
           variant: "heading-xl/semibold",
           children: C.intl.string(C.t["2H6Nij"])
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(s.Text, {
           className: g.subtitle,
-          color: "header-secondary",
+          color: "text-default",
           variant: "text-md/normal",
           children: C.intl.string(C.t.AAfVqR)
-        }), null != p && (0, i.jsx)(r.olH, {
+        }), null != p && (0, i.jsx)(s.olH, {
           "data-migration-pending": true,
           className: g.closeButton,
           onClick: p
         })]
-      }), (0, i.jsxs)(r.hzk, {
+      }), (0, i.jsxs)(s.hzk, {
         "data-migration-pending": true,
         className: g.createGuild,
         children: [(0, i.jsx)("div", {
@@ -95,9 +95,9 @@ function p(e) {
           })
         }), (0, i.jsx)("form", {
           onSubmit: D,
-          children: (0, i.jsxs)(r.Kqy, {
+          children: (0, i.jsxs)(s.Kqy, {
             gap: 16,
-            children: [(0, i.jsx)(r.oil, {
+            children: [(0, i.jsx)(s.oil, {
               label: C.intl.string(C.t.dBih7e),
               required: true,
               error: null == N ? true : N.getFirstFieldErrorMessage("name"),
@@ -106,12 +106,12 @@ function p(e) {
               onChange: I,
               inputRef: U,
               id: G
-            }), E && (0, i.jsx)(r.rsf, {
+            }), E && (0, i.jsx)(s.rsf, {
               label: "Staff Only",
               description: C.intl.string(C.t.edQ5va),
               checked: M,
               onChange: e => H(e)
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(s.Text, {
               variant: "text-xs/normal",
               color: "text-muted",
               children: C.intl.format(C.t["2bprXx"], {
@@ -119,12 +119,12 @@ function p(e) {
               })
             })]
           })
-        }), null == N || N.hasFieldErrors() ? null : (0, i.jsx)(r.Text, {
+        }), null == N || N.hasFieldErrors() ? null : (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-feedback-critical",
           children: N.message
         })]
-      }), _ && (0, i.jsx)(r.mzw, {
+      }), _ && (0, i.jsx)(s.mzw, {
         "data-migration-pending": true,
         className: g.footer,
         children: w

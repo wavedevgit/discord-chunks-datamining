@@ -69,7 +69,7 @@ function b(e) {
     children: n.map((e, t) => ((e, t) => {
       switch (e.field_type) {
         case o.QJ.TERMS:
-          return (0, r.jsx)(h.dd, {
+          return (0, r.jsx)(x.dd, {
             channelId: a,
             formField: e,
             onChange: e => ((e, t) => {
@@ -80,7 +80,7 @@ function b(e) {
             })(t, e)
           }, t);
         case o.QJ.TEXT_INPUT:
-          return (0, r.jsx)(x.zY, {
+          return (0, r.jsx)(h.zY, {
             formField: e,
             autofocus: 0 === t,
             onChange: e => c(t, e)
@@ -136,13 +136,13 @@ function C(e) {
       disableVerification: d
     } = e,
     m = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
-    h = (0, c.i)({
+    x = (0, c.i)({
       guildId: n
     }),
-    x = (null == m ? true : m.isPhoneVerified()) || (null == m ? true : m.isStaff()),
-    p = (null == m ? true : m.verified) || x,
+    h = (null == m ? true : m.isPhoneVerified()) || (null == m ? true : m.isStaff()),
+    p = (null == m ? true : m.verified) || h,
     v = false;
-  h === g.sFg.NONE ? (v = true, t = null) : h === g.sFg.VERY_HIGH ? (v = null != x && x, t = f.v) : (v = null != p && p, t = u.B);
+  x === g.sFg.NONE ? (v = true, t = null) : x === g.sFg.VERY_HIGH ? (v = null != h && h, t = f.v) : (v = null != p && p, t = u.B);
   let j = l.useRef(v);
   return null == m ? null : (0, r.jsxs)(r.Fragment, {
     children: [!d && !j.current && null != t && (0, r.jsx)(t, {

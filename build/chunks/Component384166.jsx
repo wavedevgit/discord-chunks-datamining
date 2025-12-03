@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk205120 = require("./205120.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -27,7 +27,7 @@ function j(e) {
     className: t
   } = e, {
     trackUserProfileEditSaved: n
-  } = (0, f.KZ)(), [a, j] = i.useState(false), x = (0, c.Wu)([m.Z], () => {
+  } = (0, f.KZ)(), [l, j] = i.useState(false), x = (0, c.Wu)([m.Z], () => {
     var e;
     return null != (e = m.Z.getSaveablePendingWidgets()) ? e : []
   }), _ = (0, c.Wu)([m.Z], () => m.Z.getChangedWidgets()), P = (0, c.Wu)([m.Z], () => m.Z.getRemovedWidgets()), I = (0, c.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), w = (0, c.e7)([m.Z], () => m.Z.isSubmitting), S = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, s.Yzy)(I, {
@@ -88,13 +88,13 @@ function j(e) {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
-      className: l()(O.content, {
-        [O.emphasized]: a
+      className: a()(O.content, {
+        [O.emphasized]: l
       }),
       "aria-label": v.intl.string(v.t["odDw+z"]),
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/medium",
-        color: "text-primary",
+        color: "text-strong",
         className: O.message,
         children: v.intl.string(v.t["/lQiX/"])
       }), (0, r.jsxs)("div", {

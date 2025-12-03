@@ -1,21 +1,21 @@
 /** Chunk was on 90946 **/
-/** chunk id: 69480, original params: e,n,i (module,exports,require) **/
+/** chunk id: 69480, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  default: () => o
+  default: () => a
 }), require("./49124.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js");
 
-function o(e) {
+function a(e) {
   let {
-    clip: n,
+    clip: t,
     onClose: i,
-    transitionState: o
+    transitionState: a
   } = e;
-  return (0, t.jsx)(l.Modal, {
-    transitionState: o,
+  return (0, l.jsx)(n.Modal, {
+    transitionState: a,
     onClose: i,
     title: "Clip Debug",
     size: "md",
@@ -24,35 +24,35 @@ function o(e) {
       variant: "secondary",
       onClick: i
     }],
-    children: (0, t.jsxs)(a.C3N, {
+    children: (0, l.jsxs)(s.C3N, {
       label: "Decision",
-      children: [null != n.decision && (0, t.jsxs)(t.Fragment, {
-        children: [null != n.decision.reason ? (0, t.jsx)(a.gNt, {
+      children: [null != t.decision && (0, l.jsxs)(l.Fragment, {
+        children: [null != t.decision.reason ? (0, l.jsx)(s.gNt, {
           label: "Reason",
-          children: (0, t.jsx)(a.Text, {
+          children: (0, l.jsx)(s.Text, {
             variant: "text-sm/normal",
-            color: "text-secondary",
-            children: n.decision.reason
+            color: "text-subtle",
+            children: t.decision.reason
           })
-        }) : null, (0, t.jsx)(a.gNt, {
+        }) : null, (0, l.jsx)(s.gNt, {
           label: "Timestamp",
           layout: "horizontal",
-          children: (0, t.jsx)(a.Text, {
+          children: (0, l.jsx)(s.Text, {
             variant: "text-sm/normal",
-            color: "text-secondary",
-            children: new Date(n.decision.timestamp).toLocaleString()
+            color: "text-subtle",
+            children: new Date(t.decision.timestamp).toLocaleString()
           })
         })]
-      }), n.timeline.length > 0 && (0, t.jsx)(a.C3N, {
+      }), t.timeline.length > 0 && (0, l.jsx)(s.C3N, {
         label: "Timeline",
-        children: (0, t.jsx)("pre", {
-          children: (0, t.jsx)(a.Text, {
+        children: (0, l.jsx)("pre", {
+          children: (0, l.jsx)(s.Text, {
             variant: "code",
-            color: "text-secondary",
-            children: JSON.stringify(n.timeline, null, 2)
+            color: "text-subtle",
+            children: JSON.stringify(t.timeline, null, 2)
           })
         })
-      }), null == n.decision && 0 === n.timeline.length && (0, t.jsx)(a.Text, {
+      }), null == t.decision && 0 === t.timeline.length && (0, l.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         children: "No debug information available for this clip."

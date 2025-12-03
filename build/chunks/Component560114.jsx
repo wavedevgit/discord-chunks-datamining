@@ -198,7 +198,7 @@ class eu extends(i = Chunk473749.PureComponent) {
         width: 12
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: Chunk388032.intl.string(Chunk388032.t.x1SQZb)
       })]
     }) : null

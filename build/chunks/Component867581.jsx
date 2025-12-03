@@ -20,8 +20,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk286359 = require("./286359.js");
 let O = "hTKzmak",
   S = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/")),
-  E = [O, "".concat(S).concat(O), "".concat(S).concat("wumpus-friends")],
-  b = e => {
+  b = [O, "".concat(S).concat(O), "".concat(S).concat("wumpus-friends")],
+  E = e => {
     let {
       onClick: t
     } = e;
@@ -107,7 +107,7 @@ function g(e) {
         variant: "heading-xl/semibold",
         children: f.intl.string(f.t.riOUtB)
       }), (0, i.jsx)(s.Text, {
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-sm/normal",
         children: f.intl.string(f.t["7jub2t"])
       }), (0, i.jsx)(s.olH, {
@@ -132,16 +132,16 @@ function g(e) {
         })
       }), (0, i.jsx)(s.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: f.intl.string(f.t.Bnq46H)
       }), (0, i.jsx)("div", {
         className: I.sampleLinks,
-        children: E.map(e => (0, i.jsx)(s.P3F, {
+        children: b.map(e => (0, i.jsx)(s.P3F, {
           className: I.sampleLink,
           onClick: () => d(e),
           children: e
         }, e))
-      }), (0, i.jsx)(b, {
+      }), (0, i.jsx)(E, {
         onClick: n
       })]
     }), (0, i.jsxs)(s.mzw, {

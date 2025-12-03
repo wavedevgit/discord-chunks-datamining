@@ -19,7 +19,7 @@ let u = e => {
     onClose: f
   } = e, b = i.useCallback(() => {
     f()
-  }, [f]), h = t.nsfwAllowed, [p, j] = i.useState(false), [g, y] = i.useState(false), x = i.useCallback(() => {
+  }, [f]), p = t.nsfwAllowed, [h, j] = i.useState(false), [g, y] = i.useState(false), x = i.useCallback(() => {
     y(true), j(false)
   }, []), {
     disconnectLinkRequest: O,
@@ -33,13 +33,13 @@ let u = e => {
     onClose: f,
     children: [g && (0, n.jsx)(o.M14, {
       type: "critical",
-      children: s.intl.string(l.default.krIDdy)
+      children: s.intl.string(a.default.krIDdy)
     }), (0, n.jsxs)(o.fef, {
-      children: [(0, n.jsx)(a.Z.Header, {
+      children: [(0, n.jsx)(l.Z.Header, {
         currentUser: t,
         otherUser: r,
-        header: s.intl.formatToPlainString(l.default["NMSTb/"], {
-          isAdult: String(h)
+        header: s.intl.formatToPlainString(a.default["NMSTb/"], {
+          isAdult: String(p)
         }),
         icon: (0, n.jsx)(o.Dio, {
           size: "md",
@@ -48,14 +48,14 @@ let u = e => {
         })
       }), (0, n.jsxs)(o.Kqy, {
         gap: 16,
-        children: [(0, n.jsx)(a.Z.Notice, {
-          notice: h ? s.intl.string(l.default.EvMGLT) : s.intl.string(l.default.f1SUeW)
+        children: [(0, n.jsx)(l.Z.Notice, {
+          notice: p ? s.intl.string(a.default.EvMGLT) : s.intl.string(a.default.f1SUeW)
         }), (0, n.jsx)(o.Checkbox, {
-          checked: p,
+          checked: h,
           onChange: e => {
             j(e), y(false)
           },
-          label: h ? s.intl.string(l.default["/MYCee"]) : s.intl.string(l.default.VJaHUb)
+          label: p ? s.intl.string(a.default["/MYCee"]) : s.intl.string(a.default.VJaHUb)
         })]
       })]
     }), (0, n.jsx)(o.Go$, {
@@ -67,11 +67,11 @@ let u = e => {
         disabled: m
       }, {
         variant: "critical-primary",
-        text: s.intl.string(l.default["c5L+sl"]),
+        text: s.intl.string(a.default["c5L+sl"]),
         onClick: () => {
           y(false), O(r.id)
         },
-        disabled: !p || m,
+        disabled: !h || m,
         loading: m
       }]
     })]

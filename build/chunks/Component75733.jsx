@@ -42,7 +42,7 @@ function h(e) {
   let {
     emoji: t,
     disabled: n,
-    handleSelectEmoji: d
+    handleSelectEmoji: u
   } = e, g = i.useRef(null), m = i.useMemo(() => null == t || null == t.name ? null : function() {
     var e;
     let n = c.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
@@ -65,8 +65,8 @@ function h(e) {
       } = e;
       return (0, r.jsx)(o.Z, {
         closePopout: t,
-        onSelectEmoji: d(t),
-        pickerIntention: u.Hz.GUILD_PROFILE
+        onSelectEmoji: u(t),
+        pickerIntention: d.Hz.GUILD_PROFILE
       })
     },
     children: (e, t) => {
@@ -105,7 +105,7 @@ function b(e) {
       emoji: true,
       label: ""
     })
-  }, [t, a, s]), d = i.useCallback(e => n => {
+  }, [t, a, s]), u = i.useCallback(e => n => {
     let {
       emoji: r,
       willClose: i
@@ -113,7 +113,7 @@ function b(e) {
     s(t, a, {
       emoji: null != r ? r : true
     }), i && e()
-  }, [t, a, s]), u = i.useCallback(e => {
+  }, [t, a, s]), d = i.useCallback(e => {
     s(t, a, {
       label: e
     })
@@ -123,14 +123,14 @@ function b(e) {
     children: (0, r.jsx)(l.oil, {
       disabled: o,
       value: n.label,
-      onChange: u,
+      onChange: d,
       maxLength: 24,
       leading: {
         type: "emoji",
         button: (0, r.jsx)(h, {
           emoji: g,
           disabled: o,
-          handleSelectEmoji: d
+          handleSelectEmoji: u
         })
       },
       clearable: {
@@ -148,7 +148,7 @@ function j(e) {
     canManageGuild: n
   } = e, a = i.useMemo(() => t.traits, [t]), s = i.useCallback((e, t, n) => {
     let r = [...a];
-    r[t] = p({}, a[t], n), d.Z.updateGuildProfile(e, {
+    r[t] = p({}, a[t], n), u.Z.updateGuildProfile(e, {
       traits: r
     })
   }, [a]);

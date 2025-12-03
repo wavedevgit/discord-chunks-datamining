@@ -111,7 +111,7 @@ class k extends Chunk473749.PureComponent {
             }) : null, (0, g.F6)(t, E.default, Z.Z), null != n ? (0, i.jsx)(s.Text, {
               tag: "span",
               variant: "text-xs/semibold",
-              color: "header-secondary",
+              color: "text-default",
               lineClamp: 1,
               className: A.category,
               children: (0, g.F6)(n, E.default, Z.Z)

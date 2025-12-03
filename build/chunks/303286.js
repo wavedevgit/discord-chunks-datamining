@@ -17,13 +17,13 @@ var Chunk26151 = require("./26151.js"),
   Chunk388032 = require("./388032.jsx");
 
 function m(e) {
-  let t = (0, o.F6)(e, c.default, s.Z),
+  let t = (0, a.F6)(e, u.default, s.Z),
     n = f.intl.string(f.t.ssrVzG),
-    m = (0, a.x)(e),
-    g = (0, u.Z)(e),
+    m = (0, o.x)(e),
+    g = (0, c.Z)(e),
     {
-      trackView: y,
-      trackClick: O
+      trackView: O,
+      trackClick: y
     } = (0, d.Rg)(h.n0.IncomingCall, {
       notif_type: h.n0.IncomingCall,
       notif_user_id: g,
@@ -38,10 +38,10 @@ function m(e) {
     confirmText: f.intl.string(f.t["0D/6Rz"]),
     cancelText: f.intl.string(f.t.BVN4pL),
     onNotificationShow: () => {
-      y()
+      O()
     },
     onConfirmClick: (t, n) => {
-      if (O("join"), p.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, false, false);
+      if (y("join"), p.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, false, false);
       else {
         if (e.type !== p.d4z.GUILD_VOICE) return;
         l.default.selectVoiceChannel(e.id)
@@ -54,10 +54,10 @@ function m(e) {
       })
     },
     onCancelClick: () => {
-      O("decline"), i.Z.stopRinging(e.id)
+      y("decline"), i.Z.stopRinging(e.id)
     },
     onDismissClick: () => {
-      O("dismiss")
+      y("dismiss")
     }
   }
 }

@@ -25,7 +25,7 @@ let d = e => {
   })) ? t : true;
   return (0, r.jsxs)("div", {
     className: o.container,
-    children: [(0, r.jsx)(i.Heading, {
+    children: [(0, r.jsx)(l.Heading, {
       className: o.header,
       variant: "heading-sm/semibold",
       children: s.intl.string(s.t.nTe4HC)
@@ -33,8 +33,8 @@ let d = e => {
       className: o.guildContainer,
       children: (0, r.jsxs)("div", {
         className: o.guildInfo,
-        children: [(0, r.jsx)(l.ZP, {
-          mask: l.ZP.Masks.SQUIRCLE,
+        children: [(0, r.jsx)(i.ZP, {
+          mask: i.ZP.Masks.SQUIRCLE,
           width: 32,
           height: 32,
           className: o.guildIconMask,
@@ -43,8 +43,8 @@ let d = e => {
             alt: "",
             className: o.guildIcon
           })
-        }), (0, r.jsx)(i.Text, {
-          color: "header-secondary",
+        }), (0, r.jsx)(l.Text, {
+          color: "text-default",
           variant: "text-sm/normal",
           children: u
         })]

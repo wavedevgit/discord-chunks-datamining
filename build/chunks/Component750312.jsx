@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk313201 = require("./313201.js"),
@@ -25,7 +25,7 @@ function O(e) {
   let {
     index: t,
     widget: n,
-    additionalManageWidgetMenuItems: a,
+    additionalManageWidgetMenuItems: l,
     children: o
   } = e, c = i.useRef(null), u = i.useRef(null), {
     registerManageWidgetButtonRef: d,
@@ -60,7 +60,7 @@ function O(e) {
     P = x && t > j;
   return (0, r.jsxs)("div", {
     ref: u,
-    className: l()(v.dragAndDropTarget, {
+    className: a()(v.dragAndDropTarget, {
       [v.dropIndicatorBefore]: _,
       [v.dropIndicatorAfter]: P,
       [v.isDragging]: O
@@ -72,7 +72,7 @@ function O(e) {
       buttonRef: c,
       widget: n,
       className: v.dragHandleButton,
-      additionalMenuItems: a
+      additionalMenuItems: l
     }), o]
   })
 }
@@ -82,7 +82,7 @@ function j(e) {
     userId: t,
     widget: n,
     children: i,
-    disableInteraction: a,
+    disableInteraction: l,
     className: f,
     index: p,
     trailingContent: m,
@@ -96,8 +96,8 @@ function j(e) {
   } = (0, d.KZ)(), S = (0, g.Z)({
     widget: n,
     onAction: w
-  }), E = I && null != p && !a, T = () => (0, r.jsxs)("div", {
-    className: l()(v.container, f),
+  }), E = I && null != p && !l, T = () => (0, r.jsxs)("div", {
+    className: a()(v.container, f),
     children: [(0, r.jsx)(b.Z, {
       userId: t,
       headingId: P,
@@ -105,7 +105,7 @@ function j(e) {
       subtitle: y,
       actionButtons: j,
       widget: n,
-      disableInteraction: a,
+      disableInteraction: l,
       className: x
     }), (0, r.jsxs)(o.y5t, {
       children: [i, m]

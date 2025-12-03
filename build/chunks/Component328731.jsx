@@ -94,7 +94,7 @@ function y(e) {
       })]
     }) : null, (0, r.jsx)(l.Heading, {
       variant: "text-sm/semibold",
-      color: "text-secondary",
+      color: "text-subtle",
       className: o()(m.truncatedText, m.usersHeader),
       scaleFontToUserSetting: true,
       children: _.intl.format(_.t.rH95Gu, {
@@ -120,7 +120,7 @@ function y(e) {
             children: (0, r.jsx)(l.Text, {
               ref: E,
               variant: "text-sm/semibold",
-              color: "text-primary",
+              color: "text-strong",
               lineClamp: 1,
               scaleFontToUserSetting: true,
               children: e

@@ -3,7 +3,7 @@
 require.d(exports, {
   FO: () => Z,
   nA: () => w,
-  qQ: () => y,
+  qQ: () => O,
   r7: () => b
 }), require("./388685.js"), require("./642613.js"), require("./583741.js");
 var Chunk473749 = require("./473749.js"),
@@ -32,13 +32,13 @@ function b() {
 
 function Z(e) {
   let t = function(e) {
-      let t = (0, s.Wu)([d.Z, m.Z, c.Z], () => a()(m.Z.getThreadsForParent(e.guild_id, e.id)).values().map(e => {
+      let t = (0, s.Wu)([u.Z, f.Z, c.Z], () => a()(f.Z.getThreadsForParent(e.guild_id, e.id)).values().map(e => {
         let {
           id: t
         } = e;
         return c.Z.getChannel(t)
-      }).filter(h.lm).filter(e => d.Z.can(p.Pl.VIEW_CHANNEL, e)).map(e => e.id).value(), [e.guild_id, e.id]);
-      return r.useMemo(() => a()(t).sort((e, t) => g.default.compare(u.ZP.lastMessageId(e), u.ZP.lastMessageId(t))).reverse().value(), [t])
+      }).filter(h.lm).filter(e => u.Z.can(p.Pl.VIEW_CHANNEL, e)).map(e => e.id).value(), [e.guild_id, e.id]);
+      return r.useMemo(() => a()(t).sort((e, t) => g.default.compare(d.ZP.lastMessageId(e), d.ZP.lastMessageId(t))).reverse().value(), [t])
     }(e),
     [n, l] = (0, s.e7)([j.Z], () => a().partition(t, e => j.Z.hasJoined(e)), [t], s.pF);
   return {
@@ -48,33 +48,33 @@ function Z(e) {
 }
 
 function w(e) {
-  let t = (0, s.Wu)([d.Z, m.Z, c.Z], () => a()(m.Z.getThreadsForGuild(e)).values().map(e => a().values(e)).flatten().map(e => {
+  let t = (0, s.Wu)([u.Z, f.Z, c.Z], () => a()(f.Z.getThreadsForGuild(e)).values().map(e => a().values(e)).flatten().map(e => {
     let {
       id: t
     } = e;
     return c.Z.getChannel(t)
-  }).filter(h.lm).filter(e => d.Z.can(p.Pl.VIEW_CHANNEL, e)).map(e => e.id).value(), [e]);
-  return r.useMemo(() => a()(t).sort((e, t) => g.default.compare(u.ZP.lastMessageId(e), u.ZP.lastMessageId(t))).reverse().value(), [t])
+  }).filter(h.lm).filter(e => u.Z.can(p.Pl.VIEW_CHANNEL, e)).map(e => e.id).value(), [e]);
+  return r.useMemo(() => a()(t).sort((e, t) => g.default.compare(d.ZP.lastMessageId(e), d.ZP.lastMessageId(t))).reverse().value(), [t])
 }
 
-function y(e, t, n, l) {
-  let u = e.isModeratorReportChannel(),
+function O(e, t, n, l) {
+  let d = e.isModeratorReportChannel(),
     {
       showResolvedFlags: h
     } = (0, i.N)(e.id),
     {
       canLoadMore: g,
-      loading: m,
+      loading: f,
       nextOffset: j,
       isInitialLoad: x
-    } = (0, s.cj)([f.Z], () => ({
-      loading: f.Z.isLoading(e.id, t, n, l),
-      isInitialLoad: f.Z.isInitialLoad,
-      canLoadMore: f.Z.canLoadMore,
-      nextOffset: f.Z.nextOffset
+    } = (0, s.cj)([m.Z], () => ({
+      loading: m.Z.isLoading(e.id, t, n, l),
+      isInitialLoad: m.Z.isInitialLoad,
+      canLoadMore: m.Z.canLoadMore,
+      nextOffset: m.Z.nextOffset
     })),
     b = r.useCallback(() => {
-      d.Z.can(p.Pl.READ_MESSAGE_HISTORY, e) && (!u || h) && v.Z.loadArchivedThreads({
+      u.Z.can(p.Pl.READ_MESSAGE_HISTORY, e) && (!d || h) && v.Z.loadArchivedThreads({
         guildId: e.guild_id,
         channelId: e.id,
         sortOrder: t,
@@ -82,7 +82,7 @@ function y(e, t, n, l) {
         tagSetting: l,
         offset: j
       })
-    }, [e, t, n, l, j, h, u]),
+    }, [e, t, n, l, j, h, d]),
     Z = r.useRef(b);
   return r.useEffect(() => {
     Z.current = b
@@ -91,13 +91,13 @@ function y(e, t, n, l) {
   }, [e.id, t, n, x, h]), r.useEffect(() => {
     o.Z.resort(e.id)
   }, [e.id, h]), {
-    threadIds: (0, s.Wu)([f.Z, c.Z, d.Z], () => a()(f.Z.getThreads(e.id, t, n, l)).filter(e => {
-      if (u && !h) returnfalse;
+    threadIds: (0, s.Wu)([m.Z, c.Z, u.Z], () => a()(m.Z.getThreads(e.id, t, n, l)).filter(e => {
+      if (d && !h) returnfalse;
       let t = c.Z.getChannel(e);
-      return null != t && d.Z.can(p.Pl.VIEW_CHANNEL, t)
+      return null != t && u.Z.can(p.Pl.VIEW_CHANNEL, t)
     }).value()),
     canLoadMore: g,
-    loading: (m || x) && h,
+    loading: (f || x) && h,
     loadMore: b
   }
 }

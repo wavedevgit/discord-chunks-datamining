@@ -57,12 +57,12 @@ let O = Chunk473749.forwardRef(function(e, t) {
   let {
     guild: n
   } = e, i = l.useRef(null), a = (0, u.e7)([b.Z], () => b.Z.hasDefaultSearchStateByGuildId(n.id), [n.id]), O = (0, u.e7)([C.Z], () => C.Z.can(c.$e(g.Pl.MANAGE_GUILD, g.Pl.KICK_MEMBERS), n)), H = l.useCallback(() => {
-    null != n && O && (0, d.ZDy)(async () => e => (0, r.jsx)(f.Z, y(v({}, e), {
+    null != n && O && (0, d.ZDy)(async () => e => (0, r.jsx)(p.Z, y(v({}, e), {
       guild: n
     })))
   }, [n, O]), _ = (0, u.e7)([b.Z], () => b.Z.getSearchStateByGuildId(n.id), [n.id], s()), w = (0, m.gm)(n.id), [S, Z] = l.useState(_.query), D = l.useCallback(e => {
     let t = e.trim();
-    t.length > 0 && w(), (0, p.Dr)(n.id, {
+    t.length > 0 && w(), (0, f.Dr)(n.id, {
       query: t
     })
   }, [n.id, w]), N = l.useMemo(() => o()(D, 300), [D]), R = l.useCallback(e => {

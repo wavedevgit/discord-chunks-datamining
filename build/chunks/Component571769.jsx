@@ -1,5 +1,5 @@
 /** Chunk was on 19038 **/
-/** chunk id: 571769, original params: e,t,n (module,exports,require) **/
+/** chunk id: 571769, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   default: () => C
 });
@@ -23,25 +23,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk71124 = require("./71124.js");
 
-function C(e) {
+function C(t) {
   let {
-    guildId: t,
+    guildId: e,
     instance: n,
     onClose: r,
     transitionState: C
-  } = e, S = (0, c.e7)([_.Z], () => {
-    var e;
-    return null == (e = _.Z.getStateForGuild(t)) ? true : e.instructions[n.planId]
+  } = t, S = (0, c.e7)([_.Z], () => {
+    var t;
+    return null == (t = _.Z.getStateForGuild(e)) ? true : t.instructions[n.planId]
   });
   i.useEffect(() => {
-    null == S && (0, m.iX)(t, n.planId)
-  }, [t, n.planId, S]);
+    null == S && (0, m.iX)(e, n.planId)
+  }, [e, n.planId, S]);
   let g = (0, v.Z)(n),
     {
       handleCopyServerIp: T,
       animateCopyIcon: E
-    } = (0, h.Z)(t, n.id, u.Z.GAME_SERVER_INSTRUCTIONS_MODAL, null != g ? g : ""),
-    A = i.useMemo(() => {
+    } = (0, h.Z)(e, n.id, d.Z.GAME_SERVER_INSTRUCTIONS_MODAL, null != g ? g : ""),
+    b = i.useMemo(() => {
       switch (n.status) {
         case l.V.STARTING:
           return N.intl.string(I.default.ud4hxY);
@@ -60,7 +60,7 @@ function C(e) {
       gradientColor: "purple",
       graphic: {
         type: "dynamic",
-        component: d.DynamicGraphicComponent.GAME_SERVER_GAME_INSTRUCTIONS_ASSET,
+        component: p.DynamicGraphicComponent.GAME_SERVER_GAME_INSTRUCTIONS_ASSET,
         props: {
           instance: n
         }
@@ -68,46 +68,46 @@ function C(e) {
       alignCenter: true,
       title: n.name,
       subtitle: N.intl.string(I.default["4HqfaU"])
-    }), null == S ? (0, s.jsx)(p.$jN, {}) : (0, s.jsxs)("div", {
+    }), null == S ? (0, s.jsx)(u.$jN, {}) : (0, s.jsxs)("div", {
       className: j.content,
-      children: [null != A && (0, s.jsx)(x.Z, {
+      children: [null != b && (0, s.jsx)(x.Z, {
         className: j.infoBox,
-        children: A
+        children: b
       }), (0, s.jsx)("div", {
         className: j.stepsContainer,
-        children: S.map((e, t) => (0, s.jsxs)("div", {
+        children: S.map((t, e) => (0, s.jsxs)("div", {
           className: j.step,
           children: [(0, s.jsx)("div", {
             className: j.stepNumber,
-            children: (0, s.jsx)(p.Text, {
+            children: (0, s.jsx)(u.Text, {
               variant: "text-xs/semibold",
-              color: "text-secondary",
+              color: "text-subtle",
               children: N.intl.formatToPlainString(I.default.oSU1fF, {
-                step: t + 1
+                step: e + 1
               })
             })
-          }), (0, s.jsx)(p.Text, {
+          }), (0, s.jsx)(u.Text, {
             variant: "text-sm/normal",
-            color: "text-secondary",
-            children: f.Z.parse(e, false, {
+            color: "text-subtle",
+            children: f.Z.parse(t, false, {
               allowLinks: true
             })
           })]
-        }, t))
+        }, e))
       }), null != g && (0, s.jsxs)("div", {
         className: j.serverIpContainer,
         children: [(0, s.jsx)("div", {
           className: a()(j.serverIpInput, E && j.animate),
-          children: (0, s.jsx)(p.Text, {
+          children: (0, s.jsx)(u.Text, {
             variant: "text-md/medium",
             color: "header-primary",
             children: g
           })
-        }), (0, s.jsx)(p.Button, {
+        }), (0, s.jsx)(u.Button, {
           variant: E ? "active" : "primary",
           text: E ? N.intl.string(N.t.t5VZ88) : N.intl.string(N.t.OpuAlK),
           onClick: T,
-          icon: p.TIy
+          icon: u.TIy
         })]
       })]
     })]

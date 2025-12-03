@@ -46,11 +46,11 @@ function m() {
         className: Chunk574876.textContent,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
-          color: "text-primary",
+          color: "text-strong",
           children: Chunk388032.intl.string(Chunk896591.default.XP4jzJ)
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
-          color: "text-tertiary",
+          color: "text-muted",
           children: Chunk388032.intl.string(Chunk896591.default.MJYvmG)
         })]
       })]

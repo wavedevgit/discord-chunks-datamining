@@ -43,7 +43,7 @@ function o(e) {
       }), (0, r.jsx)(i.Text, {
         id: f,
         variant: "text-md/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: (0, r.jsx)("div", {
           dangerouslySetInnerHTML: {
             __html: n.Display

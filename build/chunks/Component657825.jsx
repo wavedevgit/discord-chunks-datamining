@@ -34,7 +34,7 @@ let p = Chunk473749.memo(e => {
           children: u.ZP.getName(a)
         }), null != n && (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: n
         })]
       })

@@ -1,10 +1,10 @@
 /** Chunk was on 80448 **/
 /** chunk id: 515970, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  pg: () => g
+  pg: () => j
 }), require("./388685.js"), require("./415506.js"), require("./781311.js");
 var Chunk512722 = require("./512722.js"),
-  r = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js");
 require("./493683.js"), require("./904245.js");
@@ -53,7 +53,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function g() {
+async function j() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   if (Chunk570140.Z.dispatch({
       type: "CHECKPOINT_FETCH_START"
@@ -63,19 +63,19 @@ async function g() {
       guilds: t,
       emojis: n,
       applications: i,
-      cardId: l,
+      cardId: r,
       powerLevel: u,
       powerLevelPercentile: d,
-      messages: y,
-      voice: g,
-      sidekick: j,
+      messages: h,
+      voice: j,
+      sidekick: y,
       quests: _
     } = function() {
       let e = Chunk752048.Z.getUserAffinities().slice(0, 4).map(e => x.default.getUser(e.otherUserId)).filter(e => null != e),
         t = Chunk165630.Z.affinities.slice(0, 3).map(e => {
           let t = p.Z.getGuild(e.guildId);
-          return r()(null != t, "Guild must exist"), {
-            guild: (0, h.yS)(v(f({}, t), {
+          return s()(null != t, "Guild must exist"), {
+            guild: (0, g.yS)(v(f({}, t), {
               features: [...t.features]
             })),
             numMessagesSent: 0x9e6ca8,
@@ -148,12 +148,12 @@ async function g() {
         powerLevelPercentile: Chunk77498,
         messages: Chunk709054,
         emojis: require,
-        voice: g,
+        voice: j,
         guilds: exports,
         users: module,
         applications: Chunk512722,
         quests: _,
-        sidekick: j
+        sidekick: y
       }
     });
     return
@@ -168,14 +168,14 @@ async function g() {
       card_id: t,
       power_level: n,
       power_level_percentile: i,
-      messages: r,
-      emojis: a,
-      voice: o,
+      messages: s,
+      emojis: o,
+      voice: a,
       guilds: c,
       users: m,
       sidekick: x,
-      applications: g,
-      quests: j,
+      applications: j,
+      quests: y,
       avatar_decoration: _
     } = module;
     Chunk570140.Z.dispatch({
@@ -184,17 +184,17 @@ async function g() {
         cardId: exports,
         powerLevel: require,
         powerLevelPercentile: Chunk512722,
-        messages: null != r ? {
-          numMessagesSent: r.num_messages_sent,
-          numMessagesSentPercentile: r.num_messages_sent_percentile,
+        messages: null != s ? {
+          numMessagesSent: s.num_messages_sent,
+          numMessagesSentPercentile: s.num_messages_sent_percentile,
           topMonth: {
-            month: r.top_month.month,
-            numMessagesSent: r.top_month.num_messages_sent
+            month: s.top_month.month,
+            numMessagesSent: s.top_month.num_messages_sent
           }
         } : true,
         emojis: null != Chunk812206 ? {
           emojis: Chunk812206.emojis.map(e => v(f({}, e), {
-            id: y.default.isProbablyAValidSnowflake(e.id) ? e.id : true
+            id: h.default.isProbablyAValidSnowflake(e.id) ? e.id : true
           })),
           numEmojisSent: Chunk812206.num_emojis_sent
         } : true,
@@ -210,7 +210,7 @@ async function g() {
           guilds: Chunk752048.guilds.map(e => ({
             numMessagesSent: e.num_messages_sent,
             numVoiceMinutes: e.num_voice_minutes,
-            guild: (0, h.wD)(e.guild, p.Z.getGuild(e.guild.id))
+            guild: (0, g.wD)(e.guild, p.Z.getGuild(e.guild.id))
           })),
           numGuildsJoined: Chunk752048.num_guilds_joined
         } : true,
@@ -220,18 +220,18 @@ async function g() {
           } = e;
           return new u.Z(t)
         }) : true,
-        applications: null != g ? {
-          applications: g.applications.map(e => ({
+        applications: null != j ? {
+          applications: j.applications.map(e => ({
             game: v(f({}, (0, d.m)(e.game)), {
               coverImageHash: e.game.cover_image_hash
             }),
             numDaysPlayed: e.num_sessions
           })),
-          totalGamesPlayed: g.total_games_played
+          totalGamesPlayed: j.total_games_played
         } : true,
-        quests: null != j ? {
-          numCompleted: j.num_completed,
-          numOrbs: j.num_orbs
+        quests: null != y ? {
+          numCompleted: y.num_completed,
+          numOrbs: y.num_orbs
         } : true,
         sidekick: null != Chunk594174 ? {
           numMessagesSent: Chunk594174.num_messages_sent,

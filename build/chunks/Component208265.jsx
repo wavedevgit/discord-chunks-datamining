@@ -1,5 +1,5 @@
 /** Chunk was on 65652 **/
-/** chunk id: 208265, original params: n,e,i (module,exports,require) **/
+/** chunk id: 208265, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
   default: () => h
 }), require("./388685.js");
@@ -19,14 +19,14 @@ var Chunk54381 = require("./54381.js"),
 
 function h(n) {
   let {
-    classificationId: e,
-    transitionState: i,
+    classificationId: t,
+    transitionState: e,
     initialSlide: h = g.Cs.SPEED_BUMP,
     onClose: N
   } = n, [C, j] = a.useState(h), {
     classification: _,
     isDsaEligible: E
-  } = (0, r.YG)(null != e ? e : p.lds), I = (null == _ ? true : _.is_spam) || false, v = (null == _ ? true : _.is_coppa) || false, T = null == _ ? true : _.appeal_ingestion_type;
+  } = (0, r.YG)(null != t ? t : u.lds), I = (null == _ ? true : _.is_spam) || false, v = (null == _ ? true : _.is_coppa) || false, T = null == _ ? true : _.appeal_ingestion_type;
   a.useEffect(() => {
     j(h)
   }, [j, h]);
@@ -35,30 +35,30 @@ function h(n) {
     }, [N]),
     A = a.useCallback(() => {
       var n;
-      let e = null == (n = g.JQ[C]) ? true : n.next;
-      e ? j(e) : S()
+      let t = null == (n = g.JQ[C]) ? true : n.next;
+      t ? j(t) : S()
     }, [C, S]),
     k = a.useCallback(() => {
       var n;
-      let e = null == (n = g.JQ[C]) ? true : n.prev;
-      e ? j(e) : S()
+      let t = null == (n = g.JQ[C]) ? true : n.prev;
+      t ? j(t) : S()
     }, [C, S]);
-  return (0, t.jsx)(l.Y0X, {
+  return (0, i.jsx)(l.Y0X, {
     "data-migration-pending": true,
-    transitionState: i,
+    transitionState: e,
     disableTrack: true,
     size: l.CgR.DYNAMIC,
     parentComponent: "AppealIngestionModal",
-    children: (0, t.jsx)("div", {
-      className: u.container,
-      children: (0, t.jsxs)(l.MyZ, {
+    children: (0, i.jsx)("div", {
+      className: p.container,
+      children: (0, i.jsxs)(l.MyZ, {
         activeSlide: C,
         width: 500,
-        children: [(0, t.jsx)(l.Mi4, {
+        children: [(0, i.jsx)(l.Mi4, {
           id: g.Cs.SPEED_BUMP,
           impressionName: s.ImpressionNames.APPEAL_INGESTION_SPEED_BUMP,
           impressionProperties: g.ZW,
-          children: (0, t.jsx)(m.Z, {
+          children: (0, i.jsx)(m.Z, {
             classification: _,
             onClose: S,
             onNext: A,
@@ -67,31 +67,31 @@ function h(n) {
             appealIngestionType: T,
             isDsaEligible: E
           })
-        }), (0, t.jsx)(l.Mi4, {
+        }), (0, i.jsx)(l.Mi4, {
           id: g.Cs.COLLECT_SIGNAL,
           impressionName: s.ImpressionNames.APPEAL_INGESTION_COLLECT_SIGNAL,
           impressionProperties: g.ZW,
-          children: (0, t.jsx)(o.Z, {
+          children: (0, i.jsx)(o.Z, {
             isDsaEligible: E,
             onClose: S,
             onNext: A,
             onBack: k
           })
-        }), (0, t.jsx)(l.Mi4, {
+        }), (0, i.jsx)(l.Mi4, {
           id: g.Cs.CONFIRM_SUBMISSION,
           impressionName: s.ImpressionNames.APPEAL_INGESTION_CONFIRM_SUBMISSION,
           impressionProperties: g.ZW,
-          children: (0, t.jsx)(c.Z, {
+          children: (0, i.jsx)(c.Z, {
             isDsaEligible: E,
             onClose: S,
             onNext: A,
             onBack: k
           })
-        }), (0, t.jsx)(l.Mi4, {
+        }), (0, i.jsx)(l.Mi4, {
           id: g.Cs.REQUEST_SENT,
           impressionName: s.ImpressionNames.APPEAL_INGESTION_REQUEST_SENT,
           impressionProperties: g.ZW,
-          children: (0, t.jsx)(x.Z, {
+          children: (0, i.jsx)(x.Z, {
             onNext: A
           })
         })]

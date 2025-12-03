@@ -159,7 +159,7 @@ let ee = (e, t, i) => {
           }), z && null != v && (0, r.jsx)(u.Text, {
             className: W.churnEntrypointDescriptionBrandRefresh,
             variant: "text-sm/medium",
-            color: "text-primary",
+            color: "text-strong",
             children: Y.intl.format(Y.t["3Q4wCy"], {
               discountedPrice: v,
               billingPeriod: (0, b.JP)(O.discount.user_usage_limit_interval),

@@ -109,7 +109,7 @@ class C extends Chunk473749.PureComponent {
     } = this.state;
     return (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       className: Chunk953620.micTestCaption,
       children: require ? Chunk473749 ? module : exports : null
     })

@@ -61,7 +61,7 @@ let f = e => {
       case "applied":
         if (d.status === s.O0b.CANCELED) return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: l.intl.formatToPlainString(l.t.h2g1Ia, {
             billingPeriod: (0, a.JP)(t.discount.user_usage_limit_interval),
             numMonths: t.discount.user_usage_limit,
@@ -70,7 +70,7 @@ let f = e => {
         });
         return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: l.intl.formatToPlainString(l.t.gPzMHa, {
             numMonths: t.discount.user_usage_limit,
             discountedPrice: c,
@@ -80,7 +80,7 @@ let f = e => {
       case "confirming":
         if (d.status === s.O0b.CANCELED) return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: l.intl.formatToPlainString(l.t.iDFk3v, {
             billingPeriod: (0, a.JP)(t.discount.user_usage_limit_interval),
             numMonths: t.discount.user_usage_limit,
@@ -89,7 +89,7 @@ let f = e => {
         });
         return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: l.intl.formatToPlainString(l.t.Eq1RHL, {
             percent: t.discount.amount,
             numMonths: t.discount.user_usage_limit,
@@ -99,7 +99,7 @@ let f = e => {
       default:
         return (0, r.jsx)(i.xvT, {
           variant: "text-md/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: l.intl.formatToPlainString(l.t["2gem05"], {
             percent: t.discount.amount,
             numMonths: t.discount.user_usage_limit

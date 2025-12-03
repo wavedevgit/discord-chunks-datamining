@@ -108,7 +108,7 @@ class h extends(r = Chunk473749.PureComponent) {
           }) : null]
         }), require && null != Chunk46141 ? (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           className: Chunk916648.subText,
           children: Chunk46141
         }) : null]

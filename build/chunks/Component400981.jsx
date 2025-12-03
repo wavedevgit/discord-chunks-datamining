@@ -1,7 +1,7 @@
 /** Chunk was on 54400 **/
 /** chunk id: 400981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,29 +22,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk473936 = require("./473936.js");
 
-function x(e) {
+function y(e) {
   let {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
-    selectedGiftingPromotionReward: x
+    selectedGiftingPromotionReward: y
   } = e, P = (0, i.e7)([g.default], () => g.default.getCurrentUser()), j = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), {
     analyticsLocations: _
-  } = (0, c.ZP)(), O = s.EFr.SIZE_32, w = (0, d.Z)(null == x ? true : x.assetId, O, !j), C = (0, b.Z)(), E = null == C ? true : C.giftPurchaseConfirmation, k = (null == x ? true : x.type) === a.Z.NAMEPLATE, [I, T] = l.useState(false), N = l.useMemo(() => {
+  } = (0, c.ZP)(), O = s.EFr.SIZE_32, w = (0, d.Z)(null == y ? true : y.assetId, O, !j), C = (0, b.Z)(), E = null == C ? true : C.giftPurchaseConfirmation, k = (null == y ? true : y.type) === a.Z.NAMEPLATE, [I, T] = l.useState(false), N = l.useMemo(() => {
     var e, t;
-    return k && (null == x ? true : x.assetId) != null ? {
-      src: x.assetId,
-      palette: (0, h.t1)(null != (t = x.palette) ? t : "sky"),
-      imgAlt: null == (e = x.a11yLabel) ? true : e.call(x)
+    return k && (null == y ? true : y.assetId) != null ? {
+      src: y.assetId,
+      palette: (0, h.t1)(null != (t = y.palette) ? t : "sky"),
+      imgAlt: null == (e = y.a11yLabel) ? true : e.call(y)
     } : null
-  }, [k, x]);
+  }, [k, y]);
   return null == n || null == E ? null : (0, r.jsx)(v.O3, {
     children: (0, r.jsx)(s.mzw, {
       align: m.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
-        className: y.promotionalFooter,
+        className: x.promotionalFooter,
         children: [k && null != N ? (0, r.jsx)("div", {
-          className: y.nameplatePreviewContainer,
+          className: x.nameplatePreviewContainer,
           onMouseEnter: () => T(true),
           onMouseLeave: () => T(false),
           children: (0, r.jsx)(f.R, {

@@ -158,7 +158,7 @@ let x = [Chunk657707.tBG, Chunk657707.b7C, Chunk657707.OgN, Chunk657707.e5I, Chu
                       children: e.username
                     }), (0, a.jsx)(c.Text, {
                       variant: "text-xs/normal",
-                      color: "text-tertiary",
+                      color: "text-muted",
                       className: h.emailText,
                       children: e.email
                     })]

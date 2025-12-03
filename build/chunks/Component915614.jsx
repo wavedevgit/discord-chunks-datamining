@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 915614, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,25 +11,25 @@ var Chunk120356 = require("./120356.js"),
   Chunk809357 = require("./809357.js"),
   Chunk795482 = require("./795482.js");
 
-function c(e) {
+function u(e) {
   let {
     onClick: t,
     keybind: n,
     className: r,
-    IconComponent: c
-  } = e, u = (0, o.o)();
+    IconComponent: u
+  } = e, c = (0, a.o)();
   return (0, i.jsxs)("div", {
     className: l()(s.buttonContainer, r),
-    children: [(0, i.jsx)(a.P3F, {
+    children: [(0, i.jsx)(o.P3F, {
       className: s.button,
       onClick: t,
       "aria-hidden": true,
-      children: (0, i.jsx)(c, {
+      children: (0, i.jsx)(u, {
         size: "md",
         color: "currentColor",
         "aria-hidden": true
       })
-    }), null != n && u ? (0, i.jsx)(a.Text, {
+    }), null != n && c ? (0, i.jsx)(o.Text, {
       className: s.keybind,
       "aria-hidden": true,
       variant: "text-xxs/bold",

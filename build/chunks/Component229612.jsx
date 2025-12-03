@@ -32,7 +32,7 @@ function v(t) {
       gap: 16,
       children: [(0, l.jsx)(r.Heading, {
         variant: "heading-lg/semibold",
-        color: "text-primary",
+        color: "text-strong",
         children: e
       }), (0, l.jsx)(r.FXm, {
         options: E,
@@ -43,7 +43,7 @@ function v(t) {
       gap: 16,
       children: [(0, l.jsx)(r.Heading, {
         variant: "heading-lg/semibold",
-        color: "text-primary",
+        color: "text-strong",
         children: o.intl.string(o.t.oV10fv)
       }), (0, l.jsx)(r.Kx8, {
         value: u,
@@ -81,7 +81,7 @@ let O = function(t) {
       searchContext: e
     })
   }, [n, e]);
-  let [h, p] = a.useState(0), S = 0 === h, N = h === g.length - 1, D = a.useMemo(() => {
+  let [h, S] = a.useState(0), p = 0 === h, N = h === g.length - 1, D = a.useMemo(() => {
     let t = g[h],
       e = _[h];
     return (0, l.jsx)(v, function(t) {
@@ -117,13 +117,13 @@ let O = function(t) {
       describeSearchQuestionText: (0, s.sG)(f)
     }), O())
   }, [L, n, e, c, E, f, O]), T = a.useCallback(() => {
-    if (S) return void O();
-    p(h - 1)
-  }, [S, h, O]), M = a.useCallback(() => {
-    p(h + 1)
+    if (p) return void O();
+    S(h - 1)
+  }, [p, h, O]), M = a.useCallback(() => {
+    S(h + 1)
   }, [h]), y = a.useMemo(() => {
     let t = [];
-    return S ? t.push({
+    return p ? t.push({
       variant: "secondary",
       text: o.intl.string(o.t["ETE/oC"]),
       onClick: O
@@ -142,7 +142,7 @@ let O = function(t) {
       onClick: M,
       disabled: !I
     }), t
-  }, [S, N, L, I, O, T, C, M]);
+  }, [p, N, L, I, O, T, C, M]);
   return (0, l.jsx)(i.Modal, {
     title: o.intl.string(o.t.LRGdVy),
     actions: y,

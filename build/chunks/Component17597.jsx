@@ -43,7 +43,7 @@ function O(t) {
     textVariant: "text-sm/medium",
     text: m.intl.string(m.t["2jxGer"]),
     onClick: () => {
-      (0, A.x3)(e, A.d_.EXPRESSIVE_PRIMARY, A.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
+      (0, A.x3)(e, A.d_.EXPRESSIVE_PRIMARY, A.sU.LOG_OUT), (0, d.R)("age_verification_get_started_modal")
     }
   }) : null
 }
@@ -51,20 +51,20 @@ let v = function(t) {
   let {
     transitionState: e,
     entryPoint: n,
-    onClose: u,
+    onClose: d,
     onComplete: p,
     dismissable: v,
     classificationId: C
-  } = t, [M, P] = l.useState(o.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), U = l.useRef(M), [L, V] = (0, c.US)([M], true, true), b = l.useMemo(() => (0, r.Z)(), []), j = l.useRef(false), Z = (0, E.GE)();
+  } = t, [M, P] = l.useState(o.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), U = l.useRef(M), [b, L] = (0, c.US)([M], true, true), V = l.useMemo(() => (0, r.Z)(), []), j = l.useRef(false), Z = (0, E.GE)();
   l.useEffect(() => {
-    U.current = L
-  }, [L]);
+    U.current = b
+  }, [b]);
   let {
-    loading: y,
-    ageVerificationMethods: D
+    loading: D,
+    ageVerificationMethods: G
   } = (0, x.Z)({
     onClose: () => {
-      null == p || p(), u()
+      null == p || p(), d()
     },
     onMethodClick: () => {
       P(o.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
@@ -79,10 +79,10 @@ let v = function(t) {
       visibleContent: t
     }))
   }, []), l.useEffect(() => {
-    (0, A.lA)(b, A.d_.EXPRESSIVE_PRIMARY, n)
-  }, [b, n]), (0, i.jsx)(a.ExpressiveModal, {
+    (0, A.lA)(V, A.d_.EXPRESSIVE_PRIMARY, n)
+  }, [V, n]), (0, i.jsx)(a.ExpressiveModal, {
     transitionState: e,
-    onClose: u,
+    onClose: d,
     gradientColor: "blue",
     dismissable: v,
     graphic: {
@@ -92,11 +92,11 @@ let v = function(t) {
     title: m.intl.string(m.t.JHNunj),
     subtitle: Z ? m.intl.string(h.default["1/6wta"]) : m.intl.format(h.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
-        R.Z.openUrl(f.Z.getArticleURL(S.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, A.x3)(b, A.d_.EXPRESSIVE_PRIMARY, A.sU.LEARN_MORE)
+        R.Z.openUrl(f.Z.getArticleURL(S.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, A.x3)(V, A.d_.EXPRESSIVE_PRIMARY, A.sU.LEARN_MORE)
       }
     }),
     actionBarInput: (0, i.jsx)(O, {
-      modalSessionId: b,
+      modalSessionId: V,
       entryPoint: n
     }),
     children: (0, i.jsxs)(s.Kqy, {
@@ -122,13 +122,13 @@ let v = function(t) {
           color: "text-feedback-info",
           children: m.intl.string(h.default.ar3a3q)
         })]
-      }), null == D || 0 === D.length ? (0, i.jsxs)(s.Kqy, {
+      }), null == G || 0 === G.length ? (0, i.jsxs)(s.Kqy, {
         direction: "vertical",
         align: "center",
         gap: 16,
         children: [(0, i.jsx)(s.Text, {
           variant: "text-xs/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: m.intl.string(h.default.cR6336)
         }), (0, i.jsx)(s.Button, {
           variant: "primary",
@@ -141,18 +141,18 @@ let v = function(t) {
       }) : (0, i.jsx)(s.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: D.map(t => {
+        children: G.map(t => {
           let {
             title: e,
             description: n,
             onClick: l
           } = t;
-          return (0, i.jsx)(d.JZ, {
+          return (0, i.jsx)(u.JZ, {
             variant: "clickable",
             title: e,
             description: n,
-            buttonDisabled: y,
-            onButtonPress: () => l(b)
+            buttonDisabled: D,
+            onButtonPress: () => l(V)
           }, e)
         })
       })]

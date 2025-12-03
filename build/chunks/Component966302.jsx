@@ -279,7 +279,7 @@ function el(e) {
           variant: O ? "text-md/semibold" : "text-lg/semibold",
           children: P
         }), (0, r.jsx)(c.Text, {
-          color: "header-secondary",
+          color: "text-default",
           className: q.subtitle,
           variant: O ? "text-sm/normal" : "text-md/normal",
           children: Q

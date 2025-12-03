@@ -15,26 +15,26 @@ var Chunk473749 = require("./473749.js"),
 
 function g(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
-    [g, m] = r.useState(false),
-    [b, x] = r.useState(null),
-    f = r.useMemo(() => u.Z.getStageInstanceByChannel(null == e ? true : e.id), [null == e ? true : e.id]),
+    [g, m] = l.useState(false),
+    [x, b] = l.useState(null),
+    f = l.useMemo(() => u.Z.getStageInstanceByChannel(null == e ? true : e.id), [null == e ? true : e.id]),
     h = (0, c.J)(e);
   return {
     loading: g,
-    error: b,
-    onSave: async r => {
+    error: x,
+    onSave: async l => {
       let {
         topic: c,
         privacyLevel: u,
         sendStartNotification: g
-      } = r;
+      } = l;
       if (null != e && "" !== c && null != u) {
-        m(true), x(null), null != n && (l.Z.selectGuild(n), i.default.selectVoiceChannel(e.id));
+        m(true), b(null), null != n && (r.Z.selectGuild(n), i.default.selectVoiceChannel(e.id));
         try {
           let n;
           null != f ? n = await o.Ef(e, c, u) : (n = await o.HO(e, c, u, null != g && g), h && s.Kw(d.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
         } catch (e) {
-          x(new a.Hx(e)), m(false)
+          b(new a.Hx(e)), m(false)
         }
       }
     }

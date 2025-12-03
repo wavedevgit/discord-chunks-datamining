@@ -123,7 +123,7 @@ class y extends(r = Chunk473749.Component) {
       currentIndex: n
     } = this.state, {
       items: r
-    } = this.props, a = ((require + 1) % (e = r.length) + module) % module, i = ((require - 1) % (t = r.length) + exports) % exports;
+    } = this.props, i = ((require + 1) % (e = r.length) + module) % module, a = ((require - 1) % (t = r.length) + exports) % exports;
     this.preloadImage(r[Chunk54381]), this.preloadImage(r[Chunk473749])
   }
   preloadImage(e) {
@@ -138,12 +138,12 @@ class y extends(r = Chunk473749.Component) {
   navigateTo(e) {
     var t, n, r;
     let {
-      directionHistory: a,
-      currentIndex: i
+      directionHistory: i,
+      currentIndex: a
     } = this.state;
-    a.push(e - i), e = (e % (r = this.props.items.length) + r) % r, this.setState({
+    i.push(e - a), e = (e % (r = this.props.items.length) + r) % r, this.setState({
       currentIndex: e,
-      directionHistory: a
+      directionHistory: i
     }), null == (t = (n = this.props).onIndexChange) || t.call(n, e)
   }
   render() {
@@ -154,7 +154,7 @@ class y extends(r = Chunk473749.Component) {
       currentIndex: n,
       directionHistory: r
     } = this.state, {
-      modalCarouselItemClassName: i
+      modalCarouselItemClassName: a
     } = this.props, l = this.props.items[require], o = this.props.items;
     return (0, Chunk54381.jsxs)(Chunk215569.W, {
       component: "div",

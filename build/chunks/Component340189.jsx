@@ -14,7 +14,7 @@ let s = function() {
     className: Chunk197530.badExample,
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
-      color: "header-secondary",
+      color: "text-default",
       children: Chunk388032.intl.string(Chunk388032.t.MjVwl8)
     }), (0, Chunk54381.jsxs)("div", {
       className: Chunk197530.example,

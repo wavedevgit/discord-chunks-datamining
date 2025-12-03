@@ -3,7 +3,7 @@
 require.d(exports, {
   s: () => d
 });
-var r, i, Chunk54381 = require("./54381.js");
+var r, l, Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk159635 = require("./159635.js"),
   s = require.n(Chunk159635),
@@ -25,21 +25,21 @@ let d = (r = function(e) {
     })
   }
   return e
-}({}, s().defaultRules.link), i = i = {
+}({}, s().defaultRules.link), l = l = {
   react: function(e, t, n) {
-    return (0, l.jsx)(o.Anchor, {
+    return (0, i.jsx)(o.Anchor, {
       href: e.target,
       target: "_blank",
       children: t(e.content, n)
     })
   }
-}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
     n.push.apply(n, r)
   }
   return n
-})(Object(i)).forEach(function(e) {
-  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+})(Object(l)).forEach(function(e) {
+  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
 }), r)

@@ -70,10 +70,10 @@ function y(e) {
         location: "Spam requests modal"
       }
     })
-  }, h = n === g.Skl.OFFLINE ? g.Skl.UNKNOWN : n, _ = o ? f.intl.string(f.t.pO68Oz) : f.intl.string(f.t["gp+Ytz"]);
+  }, g = n === h.Skl.OFFLINE ? h.Skl.UNKNOWN : n, _ = o ? f.intl.string(f.t.pO68Oz) : f.intl.string(f.t["gp+Ytz"]);
   return (0, s.jsx)("div", {
     className: O.spamRequest,
-    children: (0, s.jsx)(p.Z, {
+    children: (0, s.jsx)(u.Z, {
       isFocused: false,
       user: t,
       className: O.listItem,
@@ -84,10 +84,10 @@ function y(e) {
       }),
       children: e => (0, s.jsxs)("div", {
         className: O.listItemContents,
-        children: [(0, s.jsx)(u.Z, {
+        children: [(0, s.jsx)(p.Z, {
           user: t,
           hovered: e,
-          status: h,
+          status: g,
           subText: _,
           className: O.userInfo
         }), (0, s.jsxs)("div", {
@@ -117,10 +117,10 @@ function x(e) {
     onClose: n
   } = e, {
     rows: d
-  } = (0, l.cj)([h.ZP], () => h.ZP.getState()), m = d.filter(g.pJs.PENDING_IGNORED), p = d.filter(g.pJs.SPAM), u = p.length + m.length;
+  } = (0, l.cj)([g.ZP], () => g.ZP.getState()), m = d.filter(h.pJs.PENDING_IGNORED), u = d.filter(h.pJs.SPAM), p = u.length + m.length;
   return o.useEffect(() => {
-    0 === u && n()
-  }, [u, n]), (0, s.jsxs)(a.Y0X, {
+    0 === p && n()
+  }, [p, n]), (0, s.jsxs)(a.Y0X, {
     transitionState: t,
     className: O.modal,
     impression: {
@@ -136,7 +136,7 @@ function x(e) {
         children: f.intl.string(f.t.kaYqnm)
       }), (0, s.jsx)(a.Text, {
         variant: "text-md/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: f.intl.string(f.t.tRxb4H)
       })]
     }), (0, s.jsxs)(a.hzk, {
@@ -145,11 +145,11 @@ function x(e) {
         isFocused: false,
         key: e.key,
         ignoredUser: true
-      }))), p.map(e => (0, o.createElement)(y, j(_({}, e), {
+      }))), u.map(e => (0, o.createElement)(y, j(_({}, e), {
         isFocused: false,
         key: e.key
       })))]
-    }), u > 1 && (0, s.jsx)("div", {
+    }), p > 1 && (0, s.jsx)("div", {
       className: O.modalFooter,
       children: (0, s.jsx)(r.zx, {
         className: O.clearAllButton,

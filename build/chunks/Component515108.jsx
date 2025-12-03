@@ -30,7 +30,7 @@ function m(e) {
     transitionState: n,
     children: (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
-      color: "text-secondary",
+      color: "text-subtle",
       children: u.intl.string(u.t.Ij97SL)
     })
   })
@@ -46,28 +46,28 @@ function p(e) {
     isRewardContentLoading: C,
     rewardContentHasError: f,
     location: h
-  } = e, j = s.jn.REWARD_MODAL, [x, y] = a.useState(true);
+  } = e, j = s.jn.REWARD_MODAL, [x, g] = a.useState(true);
   if (f) return (0, r.jsx)(m, {
     onClose: u,
     transitionState: i
   });
-  let g = C || x;
+  let y = C || x;
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: j,
     sourceQuestContent: n,
     children: e => (0, r.jsxs)(r.Fragment, {
-      children: [g ? (0, r.jsx)(o.$jN, {
+      children: [y ? (0, r.jsx)(o.$jN, {
         className: d.spinner,
         type: o.$jN.Type.WANDERING_CUBES
       }) : null, (0, r.jsx)("div", {
         ref: e,
         style: {
-          visibility: g ? "hidden" : "visible"
+          visibility: y ? "hidden" : "visible"
         },
         children: (0, r.jsxs)(o.Y0X, {
           "data-migration-pending": true,
-          transitionState: g ? o.Dvm.HIDDEN : i,
+          transitionState: y ? o.Dvm.HIDDEN : i,
           size: o.CgR.DYNAMIC,
           className: d.modal,
           parentComponent: "QuestRewardV2ModalBase",
@@ -86,7 +86,7 @@ function p(e) {
               children: (0, r.jsx)(c.Z, {
                 quest: t,
                 sourceQuestContent: n,
-                onLoadComplete: () => y(false),
+                onLoadComplete: () => g(false),
                 location: h
               })
             })]

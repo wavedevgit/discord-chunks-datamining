@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 778231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,16 +17,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk719706 = require("./719706.js"),
   Chunk970952 = require("./970952.js");
-let x = e => {
+let h = e => {
   var t, n;
   let {
-    entry: x
+    entry: h
   } = e, {
     name: b
-  } = x, f = (0, l.e7)([m.default], () => m.default.getNewestTokenForApplication(x.id)), v = null != (n = x.getIconURL(40)) ? n : h, j = (0, c.Z)({
-    application: x
-  }), y = i.useRef(false);
-  i.useEffect(() => {
+  } = h, f = (0, i.e7)([m.default], () => m.default.getNewestTokenForApplication(h.id)), v = null != (n = h.getIconURL(40)) ? n : x, j = (0, c.Z)({
+    application: h
+  }), y = l.useRef(false);
+  l.useEffect(() => {
     y.current || (o.Z.fetch(), y.current = true)
   }, []);
   let Z = null != f ? p.default.extractTimestamp(f.id) : true;
@@ -70,7 +70,7 @@ let x = e => {
             children: [(0, r.jsx)(s.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: null == (t = x.bot) ? true : t.tag
+              children: null == (t = h.bot) ? true : t.tag
             }), null != Z && (0, r.jsx)(s.Text, {
               color: "text-default",
               variant: "text-md/normal",

@@ -43,15 +43,15 @@ function c(e, t) {
     state: {
       value: o,
       tags: c,
-      selections: d
+      selections: u
     },
-    setState: u,
+    setState: d,
     goBack: g,
     goForward: m
   } = e;
   r.useLayoutEffect(() => {
     let e = e => t => {
-        ("Meta" === t.key || "Control" === t.key) && u(t => {
+        ("Meta" === t.key || "Control" === t.key) && d(t => {
           var n, r;
           return n = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -89,12 +89,12 @@ function c(e, t) {
     return document.addEventListener("keydown", t), document.addEventListener("keyup", n), () => {
       document.removeEventListener("keydown", t), document.removeEventListener("keyup", n)
     }
-  }, [u]);
+  }, [d]);
   let p = r.useCallback(e => {
       var t, r;
       let i = (null != (r = e.clipboardData.getData("text")) ? r : "").split(s.uz).map(e => e.trim()).filter(e => e.length > 0);
       i.length <= 1 || ((0, a.flushSync)(() => {
-        u(e => {
+        d(e => {
           let {
             tags: t,
             value: n
@@ -107,9 +107,9 @@ function c(e, t) {
           }
         })
       }), e.preventDefault(), e.stopPropagation(), null == (t = n.current) || t.scrollToBottom())
-    }, [u, n]),
+    }, [d, n]),
     f = r.useCallback(e => {
-      u(t => {
+      d(t => {
         let {
           tags: n,
           value: r
@@ -121,9 +121,9 @@ function c(e, t) {
           isSelecting: false
         }
       })
-    }, [u]),
+    }, [d]),
     h = r.useCallback(e => t => {
-      u(n => {
+      d(n => {
         let {
           tags: r,
           value: i
@@ -135,9 +135,9 @@ function c(e, t) {
           isSelecting: false
         }
       })
-    }, [u]),
+    }, [d]),
     b = r.useCallback(e => {
-      u(t => {
+      d(t => {
         let {
           tags: n,
           value: r,
@@ -151,10 +151,10 @@ function c(e, t) {
           isSelecting: l
         }
       })
-    }, [u]),
+    }, [d]),
     x = r.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-      u(n => {
+      d(n => {
         let {
           tags: r,
           value: i,
@@ -168,10 +168,10 @@ function c(e, t) {
           isSelecting: a
         }
       })
-    }, [u]),
+    }, [d]),
     j = r.useCallback(e => {
       var t;
-      u(e => {
+      d(e => {
         let {
           tags: t,
           value: n
@@ -183,9 +183,9 @@ function c(e, t) {
           isSelecting: false
         }
       }), null != e && (e.preventDefault(), e.stopPropagation()), null == (t = i.current) || t.focus()
-    }, [i, u]),
+    }, [i, d]),
     _ = r.useCallback(e => {
-      u(t => {
+      d(t => {
         let {
           tags: n
         } = t;
@@ -196,12 +196,12 @@ function c(e, t) {
           isSelecting: false
         }
       })
-    }, [u]),
+    }, [d]),
     v = r.useCallback(function(e) {
       let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
         r = !(arguments.length > 2) || true === arguments[2] || arguments[2];
       !(o.trim().length <= 0) && ((0, a.flushSync)(() => {
-        u(e => {
+        d(e => {
           let {
             tags: t
           } = e;
@@ -213,13 +213,13 @@ function c(e, t) {
           }
         })
       }), r && null != n.current && n.current.scrollToBottom(), t && (e.preventDefault(), e.stopPropagation()))
-    }, [n, u, o]),
+    }, [n, d, o]),
     O = r.useCallback(e => {
       let t = o.trim().length <= 0;
-      if (d.length > 0) {
+      if (u.length > 0) {
         var n;
         (0, a.flushSync)(() => {
-          u(e => {
+          d(e => {
             let {
               tags: t,
               value: n,
@@ -234,7 +234,7 @@ function c(e, t) {
           })
         }), null == (n = i.current) || n.focus(), e.preventDefault(), e.stopPropagation()
       } else t && ((0, a.flushSync)(() => {
-        u(e => {
+        d(e => {
           let {
             tags: t
           } = e, n = [...t], r = n.pop();
@@ -246,7 +246,7 @@ function c(e, t) {
           }
         })
       }), e.preventDefault(), e.stopPropagation())
-    }, [i, d.length, u, o]),
+    }, [i, u.length, d, o]),
     C = r.useCallback(e => {
       var t, n, r, l;
       let a = e.metaKey || e.ctrlKey;
@@ -260,7 +260,7 @@ function c(e, t) {
           selectionEnd: s = 0
         } = null != (t = i.current) ? t : {};
       0 === c.length || n && r === s || ((0, a.flushSync)(() => {
-        u(e => {
+        d(e => {
           let {
             tags: t,
             value: n
@@ -279,7 +279,7 @@ function c(e, t) {
           null == (e = l.current) || e.focus()
         }, 16)
       }), e.preventDefault(), e.stopPropagation())
-    }, [l, i, u, c.length, o]),
+    }, [l, i, d, c.length, o]),
     N = r.useCallback(e => {
       e.relatedTarget !== e.currentTarget && v(e, false, false)
     }, [v]);

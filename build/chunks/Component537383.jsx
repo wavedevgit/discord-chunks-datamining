@@ -1,5 +1,5 @@
 /** Chunk was on 33285 **/
-/** chunk id: 537383, original params: e,t,r (module,exports,require) **/
+/** chunk id: 537383, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => i
 });
@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk794433 = require("./794433.jsx");
 let i = Chunk473749.forwardRef(function(e, t) {
   let {
-    query: r,
+    query: n,
     onQueryChange: l,
     onRemoveTag: i,
     onSelect: s,
@@ -23,7 +23,7 @@ let i = Chunk473749.forwardRef(function(e, t) {
     "aria-labelledby": w,
     "aria-controls": f
   } = e;
-  return (0, n.jsx)(o.Z, {
+  return (0, r.jsx)(o.Z, {
     autoFocus: true,
     maxHeight: 100,
     onQueryChange: l,
@@ -33,7 +33,7 @@ let i = Chunk473749.forwardRef(function(e, t) {
     onSelect: s,
     onSelectionChange: a,
     placeholder: 0 === d.length ? x : "",
-    query: r,
+    query: n,
     ref: t,
     size: o.Z.Sizes.MEDIUM,
     tags: d,

@@ -21,8 +21,8 @@ let h = Chunk473749.memo(function(e) {
     compact: m = false,
     interactionUsernameProfile: g,
     interactionAvatarProfile: b,
-    interactionData: y,
-    referencedUsernameProfile: C,
+    interactionData: C,
+    referencedUsernameProfile: y,
     referencedAvatarProfile: v,
     setPopout: _
   } = e, {
@@ -31,7 +31,7 @@ let h = Chunk473749.memo(function(e) {
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
-  }), [h]), E = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), j = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, _), P = (0, d.NU)(b, _), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, C, _), A = (0, d.rY)(v, _), w = (0, d.Xn)(y, _), M = r.useCallback(() => {
+  }), [h]), E = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), j = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, _), P = (0, d.NU)(b, _), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, y, _), A = (0, d.rY)(v, _), w = (0, d.Xn)(C, _), M = r.useCallback(() => {
     _({
       interactionUsernameProfile: false,
       interactionAvatarProfile: false,
@@ -45,12 +45,12 @@ let h = Chunk473749.memo(function(e) {
     compact: m,
     setPopout: _,
     referencedAvatarProfile: v,
-    referencedUsernameProfile: C,
+    referencedUsernameProfile: y,
     replyReference: h.messageReference,
     replyMessage: E,
     isReplySpineClickable: false,
     showReplySpine: false
-  }), [f, m, h, v, E, C, _]);
+  }), [f, m, h, v, E, y, _]);
   return (0, i.jsx)(u.Z, {
     message: h,
     channel: f,
@@ -59,9 +59,9 @@ let h = Chunk473749.memo(function(e) {
     isInteractionUserIgnored: x,
     showAvatarPopout: b,
     showUsernamePopout: g,
-    showDataPopout: y,
+    showDataPopout: C,
     showTargetAvatarPopout: v,
-    showTargetUsernamePopout: C,
+    showTargetUsernamePopout: y,
     onClickAvatar: P,
     onClickUsername: S,
     onClickCommand: w,

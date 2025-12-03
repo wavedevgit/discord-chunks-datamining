@@ -57,14 +57,14 @@ function g(e) {
           id: "sort-by-recent-activity",
           group: "sort-by",
           label: u.intl.string(u.t.jOPmcI),
-          action: () => _(l.z.LATEST_ACTIVITY),
-          checked: g === l.z.LATEST_ACTIVITY
+          action: () => _(a.z.LATEST_ACTIVITY),
+          checked: g === a.z.LATEST_ACTIVITY
         }), (0, r.jsx)(s.k5B, {
           id: "sort-by-date-posted",
           group: "sort-by",
           label: u.intl.string(u.t.UIltXd),
-          action: () => _(l.z.CREATION_DATE),
-          checked: g === l.z.CREATION_DATE
+          action: () => _(a.z.CREATION_DATE),
+          checked: g === a.z.CREATION_DATE
         })]
       }), t.isModeratorReportChannel() && (0, r.jsx)(s.kSQ, {
         label: u.intl.string(m.default.PsM2b4),
@@ -95,14 +95,14 @@ function g(e) {
           id: "match-some",
           group: "tag-setting",
           label: u.intl.string(u.t.rQ0ctQ),
-          action: () => y(a.z.MATCH_SOME),
-          checked: x === a.z.MATCH_SOME
+          action: () => y(l.z.MATCH_SOME),
+          checked: x === l.z.MATCH_SOME
         }), (0, r.jsx)(s.k5B, {
           id: "match-all",
           group: "tag-setting",
           label: u.intl.string(u.t.FCXUu0),
-          action: () => y(a.z.MATCH_ALL),
-          checked: x === a.z.MATCH_ALL
+          action: () => y(l.z.MATCH_ALL),
+          checked: x === l.z.MATCH_ALL
         })]
       }) : null, (0, r.jsx)(s.kSQ, {
         children: (0, r.jsx)(s.sNh, {

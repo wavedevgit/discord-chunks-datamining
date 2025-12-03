@@ -16,7 +16,7 @@ let d = e => {
   } = e, n = a.Z.getGuild(t.guild_id);
   return null == n ? null : (0, r.jsxs)("div", {
     className: o.container,
-    children: [(0, r.jsx)(i.Heading, {
+    children: [(0, r.jsx)(l.Heading, {
       className: o.header,
       variant: "heading-sm/semibold",
       children: s.intl.string(s.t.InbJ8x)
@@ -24,16 +24,16 @@ let d = e => {
       className: o.guildContainer,
       children: [(0, r.jsxs)("div", {
         className: o.guildInfo,
-        children: [(0, r.jsx)(l.Z, {
+        children: [(0, r.jsx)(i.Z, {
           guild: n,
-          size: l.Z.Sizes.MINI,
+          size: i.Z.Sizes.MINI,
           className: o.guildIcon
-        }), (0, r.jsx)(i.Text, {
-          color: "header-secondary",
+        }), (0, r.jsx)(l.Text, {
+          color: "text-default",
           variant: "text-sm/normal",
           children: n.name
         })]
-      }), (0, r.jsx)(i.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: t.topic

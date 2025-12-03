@@ -30,10 +30,10 @@ let C = e => {
     transitionState: v
   } = e, S = (0, o.ZP)(t, true), I = t.id, P = t.isForumPost(), T = (0, u.e7)([m.Z], () => m.Z.getGuild(t.getGuildId())), D = (0, N.u1)(I), {
     isSubscriptionGated: y
-  } = (0, E.Z)(t.id), b = (0, f.Z)(T, t), [G, w] = i.useState(), A = (0, u.e7)([Z.default], () => t.isOwner(Z.default.getId()), [t]), U = (0, u.e7)([h.Z], () => h.Z.can(t.isThread() ? O.Plq.MANAGE_THREADS : O.Plq.MANAGE_CHANNELS, t), [t]), L = (0, u.e7)([_.Z], () => {
+  } = (0, E.Z)(t.id), b = (0, f.Z)(T, t), [G, w] = i.useState(), A = (0, u.e7)([Z.default], () => t.isOwner(Z.default.getId()), [t]), U = (0, u.e7)([O.Z], () => O.Z.can(t.isThread() ? h.Plq.MANAGE_THREADS : h.Plq.MANAGE_CHANNELS, t), [t]), L = (0, u.e7)([_.Z], () => {
     var e;
     return null != (e = _.Z.getCount(t.id)) ? e : 0
-  }, [t.id]), j = P && (U || A && L < 1), V = D.length > 0 && (t.type === O.d4z.GUILD_VOICE || t.type === O.d4z.GUILD_STAGE_VOICE);
+  }, [t.id]), j = P && (U || A && L < 1), V = D.length > 0 && (t.type === h.d4z.GUILD_VOICE || t.type === h.d4z.GUILD_STAGE_VOICE);
   if (i.useEffect(() => {
       (async () => {
         if (!await (0, s.C)(t.getGuildId(), I)) return w(d.j.DEFAULT);
@@ -41,13 +41,13 @@ let C = e => {
         if (null != e) return w(e)
       })()
     }, [t, I]), i.useEffect(() => {
-      null != T && T.features.has(O.GuildFeatures.COMMUNITY) && (T.rulesChannelId === I ? w(d.j.RULES) : T.publicUpdatesChannelId === I && w(d.j.UPDATES))
+      null != T && T.features.has(h.GuildFeatures.COMMUNITY) && (T.rulesChannelId === I ? w(d.j.RULES) : T.publicUpdatesChannelId === I && w(d.j.UPDATES))
     }, [T, I]), null == T) return null;
   if (null != G) {
     let e, t = async () => {
-      await g.Z.open(T.id, O.pNK.ONBOARDING), await n()
+      await g.Z.open(T.id, h.pNK.ONBOARDING), await n()
     }, i = async () => {
-      await g.Z.open(T.id, O.pNK.COMMUNITY), await n()
+      await g.Z.open(T.id, h.pNK.COMMUNITY), await n()
     };
     switch (G) {
       case d.j.DEFAULT:
@@ -92,7 +92,7 @@ let C = e => {
   let {
     deleteText: M,
     deleteBody: k
-  } = t.type === O.d4z.GUILD_CATEGORY ? {
+  } = t.type === h.d4z.GUILD_CATEGORY ? {
     deleteText: p.intl.string(p.t.ifbXnL),
     deleteBody: p.intl.format(p.t.a6Gz9J, {
       channelName: S
@@ -138,7 +138,7 @@ let C = e => {
     }],
     children: V ? (0, l.jsx)(a.Text, {
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: p.intl.format(p.t.Ze005A, {
         count: D.length
       })

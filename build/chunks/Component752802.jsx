@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk46973 = require("./46973.js"),
   Chunk481060 = require("./481060.js"),
@@ -89,25 +89,25 @@ function M(e) {
   let {
     participant: t
   } = e;
-  return (0, i.jsx)(c.aML, {
+  return (0, i.jsx)(u.aML, {
     "data-migration-pending": true,
     text: A.intl.string(A.t["4EGMWL"]),
     children: e => {
       var {
         onClick: n
       } = e, r = L(e, ["onClick"]);
-      return (0, i.jsx)(c.P3F, k(R({}, r), {
+      return (0, i.jsx)(u.P3F, k(R({}, r), {
         className: D.controlAction,
         onClick: e => {
-          null == n || n(), (0, p.g)((0, y.V9)(t.stream), false), e.stopPropagation(), (0, w.Ws)(P.Odu.GO_LIVE, {
+          null == n || n(), (0, p.g)((0, O.V9)(t.stream), false), e.stopPropagation(), (0, w.Ws)(P.Odu.GO_LIVE, {
             type: w.Qu.SCREEN_SHARE,
             value: w.bk.DISABLED,
             userId: t.user.id
           })
         },
-        children: (0, i.jsx)(c.g5r, {
+        children: (0, i.jsx)(u.g5r, {
           size: "sm",
-          color: c.TVs.colors.WHITE
+          color: u.TVs.colors.WHITE
         })
       }))
     }
@@ -117,22 +117,22 @@ function M(e) {
 function V(e) {
   let {
     participant: t
-  } = e, n = t.user.id, l = (0, o.e7)([C.Z], () => {
+  } = e, n = t.user.id, l = (0, a.e7)([C.Z], () => {
     let e = (0, f.Z)(t.type);
     return C.Z.isLocalMute(t.user.id, e)
-  }, [t]), a = (0, o.e7)([I.default], () => I.default.getId()), {
+  }, [t]), o = (0, a.e7)([I.default], () => I.default.getId()), {
     hasVideo: d
-  } = (0, x.Z)(t, a), h = l && d, p = r.useCallback(() => {
-    u.Z.toggleLocalMute(n, s.Yn.STREAM)
+  } = (0, x.Z)(t, o), h = l && d, p = r.useCallback(() => {
+    c.Z.toggleLocalMute(n, s.Yn.STREAM)
   }, [n]);
-  return (0, i.jsx)(c.aML, {
+  return (0, i.jsx)(u.aML, {
     "data-migration-pending": true,
     text: h ? A.intl.string(A.t.YqAjXy) : A.intl.string(A.t.w4m945),
     children: e => {
       var {
         onClick: n
       } = e, r = L(e, ["onClick"]);
-      return (0, i.jsx)(c.P3F, k(R({}, r), {
+      return (0, i.jsx)(u.P3F, k(R({}, r), {
         className: D.controlAction,
         onClick: e => {
           e.stopPropagation(), (0, w.Ws)(P.Odu.GO_LIVE, {
@@ -141,10 +141,10 @@ function V(e) {
             userId: t.user.id
           }), null == n || n(), p()
         },
-        children: h ? (0, i.jsx)(c.OyP, {
+        children: h ? (0, i.jsx)(u.OyP, {
           size: "sm",
           color: "currentColor"
-        }) : (0, i.jsx)(c.gj8, {
+        }) : (0, i.jsx)(u.gj8, {
           size: "sm",
           color: "currentColor"
         })
@@ -177,7 +177,7 @@ function U(e) {
     hasActiveStream: t,
     participant: n,
     onEnablePin: r
-  } = e, l = (0, v.bp)(), s = n.user, u = (0, o.e7)([Z.default], () => {
+  } = e, l = (0, v.bp)(), s = n.user, c = (0, a.e7)([Z.default], () => {
     var e;
     return null != (e = Z.default.getUser(s.id)) ? e : s
   }, [s]), d = t ? A.intl.string(A.t.tLxK4l) : A.intl.string(A.t.E5RDnK), {
@@ -185,15 +185,15 @@ function U(e) {
   } = (0, T.aq)("GoLiveTile");
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: a()(D.controlBackground, {
+      className: o()(D.controlBackground, {
         [D.controlsWithActiveStream]: t
       })
     }), !t && (0, i.jsx)("div", {
       className: D.watchActionContainer,
-      children: (0, i.jsx)(c.aML, {
+      children: (0, i.jsx)(u.aML, {
         "data-migration-pending": true,
         text: d,
-        children: e => (0, i.jsxs)(c.P3F, k(R({}, e), {
+        children: e => (0, i.jsxs)(u.P3F, k(R({}, e), {
           className: D.watchButton,
           onClick: () => {
             var t;
@@ -206,11 +206,11 @@ function U(e) {
               userId: n.user.id
             })
           },
-          children: [(0, i.jsx)(c.Text, {
+          children: [(0, i.jsx)(u.Text, {
             variant: "text-sm/semibold",
             color: "always-white",
             children: A.intl.string(A.t.I6JG46)
-          }), (0, i.jsx)(c.OgY, {
+          }), (0, i.jsx)(u.OgY, {
             size: "sm",
             color: "currentColor"
           })]
@@ -222,14 +222,14 @@ function U(e) {
         className: D.controlUser,
         children: (0, i.jsxs)("div", {
           className: D.controlUserContainer,
-          children: [(0, i.jsx)(c.Text, {
+          children: [(0, i.jsx)(u.Text, {
             variant: "text-md/medium",
             color: "always-white",
             className: D.controlUserName,
             children: N.ZP.getName(n.stream.guildId, n.stream.channelId, s)
           }), (0, i.jsx)(E.ZP, {
-            primaryGuild: u.primaryGuild,
-            userId: u.id,
+            primaryGuild: c.primaryGuild,
+            userId: c.id,
             containerClassName: D.guildTag,
             inline: false,
             onShowProfile: () => {
@@ -248,17 +248,17 @@ function U(e) {
             participant: n
           }), (0, i.jsx)(V, {
             participant: n
-          }), (0, i.jsx)(c.aML, {
+          }), (0, i.jsx)(u.aML, {
             "data-migration-pending": true,
             text: A.intl.string(A.t["3D5yo/"]),
             children: e => {
               var {
                 onClick: t
               } = e, r = L(e, ["onClick"]);
-              return (0, i.jsx)(c.P3F, k(R({}, r), {
+              return (0, i.jsx)(u.P3F, k(R({}, r), {
                 className: D.controlAction,
                 onClick: z(n, l, t),
-                children: (0, i.jsx)(c.xhG, {
+                children: (0, i.jsx)(u.xhG, {
                   size: "sm",
                   color: "currentColor"
                 })
@@ -277,8 +277,8 @@ let W = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
       width: n,
       locked: r,
       widgetId: l,
-      pinned: a
-    } = e, s = (0, o.e7)([j.Z], () => j.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, v.bp)(), d = null != s && W.has(s.state), p = null != s, f = (0, _.yA)(t.stream), y = (0, _.xN)(t.stream);
+      pinned: o
+    } = e, s = (0, a.e7)([j.Z], () => j.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), c = (0, v.bp)(), d = null != s && W.has(s.state), p = null != s, f = (0, _.yA)(t.stream), O = (0, _.xN)(t.stream);
     return !p && r || d ? null : (0, i.jsxs)("div", {
       className: D.tile,
       children: [p && !r && (0, i.jsx)(g.ZP, {
@@ -286,20 +286,20 @@ let W = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
         className: D.liveIndicator
       }), p ? (0, i.jsx)("div", {
         className: D.streamTile,
-        children: (0, i.jsx)(c.kL8, {
+        children: (0, i.jsx)(u.kL8, {
           "aria-label": A.intl.formatToPlainString(A.t.gHPz3Q, {
             streamerName: t.user.username
           }),
           onClick: () => {},
-          onContextMenu: z(t, u),
+          onContextMenu: z(t, c),
           className: D.streamTile,
           style: {
             transform: "scale(".concat(f, ")")
           },
-          children: (0, i.jsx)(b.Z, {
+          children: (0, i.jsx)(S.Z, {
             participant: t,
             width: n,
-            fit: null != y ? y : S.L.CONTAIN,
+            fit: null != O ? O : b.L.CONTAIN,
             popoutType: m.P.OVERLAY,
             focused: !r,
             selected: false,
@@ -308,7 +308,7 @@ let W = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
         })
       }) : (0, i.jsx)("div", {
         className: D.streamPreview,
-        children: (0, i.jsx)(O.Z, {
+        children: (0, i.jsx)(y.Z, {
           noText: true,
           className: D.absoluteFill,
           stream: t.stream
@@ -317,7 +317,7 @@ let W = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
         participant: t,
         hasActiveStream: p,
         onEnablePin: () => {
-          a || (0, h.xh)(l)
+          o || (0, h.xh)(l)
         }
       })]
     })

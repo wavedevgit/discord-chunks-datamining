@@ -39,7 +39,7 @@ let E = function(t) {
     style: _.wrapperStyle,
     children: [(0, i.jsx)(r.Text, {
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: x.intl.format(x.t["njJ/Cg"], {
         learnMoreLink: o.Z.getArticleURL(u.BhN.SAFETY_ALERTS)
       })

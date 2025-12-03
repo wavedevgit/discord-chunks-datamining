@@ -12,8 +12,8 @@ let a = e => {
     element: t
   } = e;
   return (null == t ? true : t.type) !== "success" ? null : (0, r.jsx)("div", {
-    className: l.successImg,
-    children: (0, r.jsx)(i.sm, {
+    className: i.successImg,
+    children: (0, r.jsx)(l.sm, {
       alt: ""
     })
   })

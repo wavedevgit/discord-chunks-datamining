@@ -54,7 +54,7 @@ function D(e) {
   return e
 }
 
-function A(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ function A(e, t) {
   }), e
 }
 
-function k(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, l, r = function(e, t) {
     if (null == e) return {};
@@ -143,14 +143,14 @@ function F(e) {
   var {
     user: t,
     subLabel: n
-  } = e, r = k(e, ["user", "subLabel"]);
+  } = e, r = A(e, ["user", "subLabel"]);
   let i = Z.ZP.useName(t),
     a = Z.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    s = (0, o.e7)([O.Z], () => O.Z.getNickname(t.id)),
-    u = (0, o.e7)([C.Z], () => C.Z.getStatus(t.id));
-  return (0, l.jsx)(I, A(D({}, r), {
+    s = (0, o.e7)([P.Z], () => P.Z.getNickname(t.id)),
+    u = (0, o.e7)([_.Z], () => _.Z.getStatus(t.id));
+  return (0, l.jsx)(I, k(D({}, r), {
     icon: (0, l.jsx)(d.Z, {
       "aria-hidden": true,
       size: c.EFr.SIZE_32,
@@ -166,10 +166,10 @@ function R(e) {
   var {
     channel: t,
     subLabel: n
-  } = e, r = k(e, ["channel", "subLabel"]);
+  } = e, r = A(e, ["channel", "subLabel"]);
   let i = (0, p.ZP)(t),
     a = (0, g._)(t);
-  return (0, l.jsx)(I, A(D({}, r), {
+  return (0, l.jsx)(I, k(D({}, r), {
     icon: (0, l.jsx)(h.Z, {
       "aria-hidden": true,
       size: c.EFr.SIZE_32,
@@ -184,42 +184,42 @@ function q(e) {
   var {
     channel: t,
     subLabel: n
-  } = e, r = k(e, ["channel", "subLabel"]);
+  } = e, r = A(e, ["channel", "subLabel"]);
   let i = (0, o.e7)([j.Z], () => j.Z.getGuild(null == t ? true : t.guild_id)),
     a = (0, p.ZP)(t),
-    s = (0, o.e7)([x.Z, P.default, O.Z], () => {
+    s = (0, o.e7)([x.Z, O.default, P.Z], () => {
       let e = x.Z.getChannel(t.parent_id);
-      return null == e ? null : (0, p.F6)(e, P.default, O.Z, false)
+      return null == e ? null : (0, p.F6)(e, O.default, P.Z, false)
     }),
-    d = (0, o.e7)([_.ZP], () => _.ZP.lastMessageTimestamp(t.id, N.W.CHANNEL)),
+    d = (0, o.e7)([C.ZP], () => C.ZP.lastMessageTimestamp(t.id, N.W.CHANNEL)),
     f = null == i ? true : i.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? c.Mmi : c.VL1;
     f = (0, l.jsxs)("div", {
       className: T.threadSubLabel,
       children: [(0, l.jsx)(e, {
-        color: c.TVs.colors.TEXT_SECONDARY,
+        color: c.TVs.colors.TEXT_SUBTLE,
         className: T.subLabelIcon
       }), (0, l.jsx)(c.Text, {
         variant: "text-xs/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         lineClamp: 1,
         children: s
       }), null != d ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(c.Text, {
           className: T.subLabelSeparator,
           variant: "text-xs/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: "•"
         }), (0, l.jsx)(c.Text, {
           variant: "text-xs/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: (0, E.Xf)(u()(d))
         })]
       }) : null]
     })
   }
-  return (0, l.jsx)(I, A(D({}, r), {
+  return (0, l.jsx)(I, k(D({}, r), {
     icon: (0, l.jsx)(m.Z, {
       size: m.E.SMALL_32,
       guild: i,

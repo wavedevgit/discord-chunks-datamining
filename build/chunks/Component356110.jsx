@@ -13,8 +13,8 @@ let o = e => {
       element: t,
       onChange: n,
       initialOption: o
-    } = e, [d, c] = i.useState("");
-    i.useEffect(() => {
+    } = e, [d, c] = l.useState("");
+    l.useEffect(() => {
       c(null != o ? o : "")
     }, [o]);
     let u = t.name,
@@ -22,21 +22,21 @@ let o = e => {
         title: m,
         options: p
       } = t.data,
-      g = i.useCallback(e => {
+      g = l.useCallback(e => {
         null != e && (c(e), n(e))
       }, [n]);
     return (0, r.jsxs)("div", {
       className: s.marginBottom8,
       children: [null != m && (0, r.jsx)("div", {
         className: s.marginBottom8,
-        children: (0, r.jsxs)(l.Text, {
+        children: (0, r.jsxs)(i.Text, {
           variant: "text-sm/bold",
           children: [m, t.should_submit_data && (0, r.jsx)("span", {
             className: a.required,
             children: "*"
           })]
         })
-      }), (0, r.jsx)(l.q4e, {
+      }), (0, r.jsx)(i.q4e, {
         value: d,
         onChange: g,
         options: p
@@ -47,17 +47,17 @@ let o = e => {
     let {
       elements: t,
       onChange: n,
-      state: i
-    } = e, l = t.map(e => {
-      var t, l;
+      state: l
+    } = e, i = t.map(e => {
+      var t, i;
       let a = e.name;
       return (0, r.jsx)(o, {
         element: e,
-        initialOption: null != (l = null == i || null == (t = i[a]) ? true : t.value) ? l : true,
+        initialOption: null != (i = null == l || null == (t = l[a]) ? true : t.value) ? i : true,
         onChange: e => n(a, e)
       }, a)
     });
     return (0, r.jsx)("div", {
-      children: l
+      children: i
     })
   }

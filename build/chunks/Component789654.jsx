@@ -528,7 +528,7 @@ function P(e) {
           children: t
         }), null != n ? (0, a.jsx)(p.Text, {
           variant: "text-sm/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           tabularNumbers: true,
           children: n
         }) : null]

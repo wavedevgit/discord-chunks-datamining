@@ -133,7 +133,7 @@ function M(e) {
   return (0, r.jsx)(c.Text, {
     className: S.sliderDescription,
     variant: "text-sm/normal",
-    color: "header-secondary",
+    color: "text-default",
     children: t
   })
 }
@@ -394,7 +394,7 @@ function F(e) {
         children: v.intl.string(v.t["6jI0hd"])
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: v.intl.string(v.t.GuUItX)
       })]
     }), (0, r.jsx)(c.Fbu, {

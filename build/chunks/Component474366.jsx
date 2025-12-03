@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -30,7 +30,7 @@ function T(e) {
   let {
     className: t,
     sound: n,
-    playSound: a,
+    playSound: l,
     isPlaying: s,
     text: d
   } = e, u = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, m = C.intl.formatToPlainString(C.t.tuMUJ2, {
@@ -40,13 +40,13 @@ function T(e) {
     x.default.track(b.rMx.MODERATOR_QUEUE_ACTION, {
       guild_id: f.Z.getGuildId(),
       action: "airhorn"
-    }), null != a && a()
-  }, [a]);
+    }), null != l && l()
+  }, [l]);
   return (0, r.jsxs)(o.P3F, {
     "aria-label": m,
     tag: "span",
     onClick: h,
-    className: l()(y.inlineContainer, y.inlineButton, {
+    className: a()(y.inlineContainer, y.inlineButton, {
       [y.playing]: true === s
     }, t),
     children: [u && (0, r.jsx)(c.Z, {
@@ -63,7 +63,7 @@ function w(e) {
   let {
     containerRef: t,
     text: n
-  } = e, a = i.useRef(null), l = (0, s.e7)([g.Z], () => {
+  } = e, l = i.useRef(null), a = (0, s.e7)([g.Z], () => {
     var e;
     return null == (e = g.Z.getSoundsForGuild(v.X8)) ? true : e.find(e => "airhorn" === e.name)
   }), {
@@ -71,14 +71,14 @@ function w(e) {
   } = i.useContext(m.h), c = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), {
     isPlaying: f,
     playSound: x
-  } = (0, p.W)(l);
+  } = (0, p.W)(a);
   (0, d.ZP)(() => {
     (0, h.w)()
   });
   let b = i.useCallback(async () => {
     if (await x()) {
       var e;
-      if (null == (e = a.current) || e.addAnimation(), !c && (null == t ? true : t.current) != null) {
+      if (null == (e = l.current) || e.addAnimation(), !c && (null == t ? true : t.current) != null) {
         let e = t.current.getBoundingClientRect(),
           n = {
             x: e.left + e.width / 2,
@@ -103,8 +103,8 @@ function w(e) {
       }
     }
   }, [x, o, c, t]);
-  return true === l ? null : (0, r.jsx)(T, {
-    sound: l,
+  return true === a ? null : (0, r.jsx)(T, {
+    sound: a,
     playSound: b,
     isPlaying: f,
     text: n
@@ -138,7 +138,7 @@ function S() {
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         className: Chunk65766.text,
         variant: "text-md/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: Chunk388032.intl.format(Chunk342153.default["8N4c58"], {
           airhornHook: t => (0, r.jsx)(w, {
             containerRef: e,

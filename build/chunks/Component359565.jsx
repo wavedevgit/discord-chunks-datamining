@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 359565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => y,
+  q: () => C,
   s: () => b
 });
 var Chunk54381 = require("./54381.js"),
@@ -65,7 +65,7 @@ function b(e) {
     children: [(0, i.jsx)(o.Text, {
       className: f.chatHeaderBarText,
       variant: "text-sm/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: t.isForumPost() ? h.intl.string(h.t["833FDn"]) : h.intl.string(h.t.rEeodK)
     }), l ? (0, i.jsx)(o.Button, {
       variant: "secondary",
@@ -81,7 +81,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     channel: t,
     narrow: n
@@ -97,7 +97,7 @@ function y(e) {
     children: [(0, i.jsx)(o.Text, {
       className: f.chatHeaderBarText,
       variant: "text-sm/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: t.isForumPost() ? h.intl.string(h.t.E7oO8u) : h.intl.string(h.t["V/JF2N"])
     }), l ? (0, i.jsx)(o.Button, {
       variant: "secondary",

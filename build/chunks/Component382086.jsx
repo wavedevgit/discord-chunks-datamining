@@ -51,7 +51,7 @@ function g(t) {
           children: m.intl.string(m.t.f3MvGS)
         }), (0, i.jsx)(l.Text, {
           className: p.subtitle,
-          color: "header-secondary",
+          color: "text-default",
           variant: "text-md/normal",
           children: m.intl.string(m.t.nOzc7w)
         }), null != n && (0, i.jsx)(l.olH, {
@@ -84,7 +84,7 @@ function g(t) {
           })]
         }), (0, i.jsx)(l.Text, {
           className: p.skip,
-          color: "header-secondary",
+          color: "text-default",
           variant: "text-sm/normal",
           children: m.intl.format(m.t["SMc+Gz"], {
             onSkip: () => L(null)

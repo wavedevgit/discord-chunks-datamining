@@ -1,5 +1,5 @@
 /** Chunk was on 4419 **/
-/** chunk id: 573703, original params: n,e,t (module,exports,require) **/
+/** chunk id: 573703, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
   Z: () => C
 });
@@ -20,7 +20,7 @@ function u() {
       className: Chunk224942.__invalid_getCrunchyrollAppBody,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: (0, Chunk54381.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.CRUNCHYROLL_CONNECTION),
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
@@ -32,7 +32,7 @@ function u() {
 
 function C(n) {
   let {
-    onClose: e
+    onClose: t
   } = n;
   return (0, o.jsx)(s.L, {
     img: (0, o.jsx)("img", {
@@ -44,6 +44,6 @@ function C(n) {
     title: a.intl.string(a.t.Fnvxvk),
     body: a.intl.string(a.t.YwXceg),
     content: (0, o.jsx)(u, {}),
-    onClose: e
+    onClose: t
   })
 }

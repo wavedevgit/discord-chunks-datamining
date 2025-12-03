@@ -22,18 +22,18 @@ function o(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          a = Object.keys(e);
-        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["user", "widget", "guildId", "channelId", "disableInteraction"]);
   let g = c.games[0];
-  return (0, r.jsx)(a.Z, (t = function(e) {
+  return (0, r.jsx)(l.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -55,7 +55,7 @@ function o(e) {
     widget: c,
     disableInteraction: d
   }, f), n = n = {
-    children: null != g ? (0, r.jsx)(l.Z, {
+    children: null != g ? (0, r.jsx)(a.Z, {
       user: o,
       widgetType: c.type,
       game: g,

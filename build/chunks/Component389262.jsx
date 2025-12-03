@@ -1,5 +1,5 @@
 /** Chunk was on 18879 **/
-/** chunk id: 389262, original params: t,e,i (module,exports,require) **/
+/** chunk id: 389262, original params: t,i,e (module,exports,require) **/
 require.d(exports, {
   default: () => d
 });
@@ -14,15 +14,15 @@ var Chunk793030 = require("./793030.js"),
 
 function d(t) {
   let {
-    transitionState: e,
-    onClose: i,
+    transitionState: i,
+    onClose: e,
     storeListing: d,
     subscription: u
   } = t, p = (0, s.Dt)();
-  return (0, a.jsx)(r.ExpressiveModal, {
+  return (0, a.jsx)(n.ExpressiveModal, {
     actions: [{
       variant: "secondary",
-      onClick: i,
+      onClick: e,
       text: l.intl.string(l.t["JtWl+a"])
     }],
     "aria-labelledby": p,
@@ -30,15 +30,15 @@ function d(t) {
       type: "image",
       src: c
     },
-    onClose: i,
-    transitionState: e,
+    onClose: e,
+    transitionState: i,
     title: l.intl.formatToPlainString(l.t.wLFT6z, {
       tier: d.summary
     }),
-    children: (0, a.jsx)(n.Text, {
+    children: (0, a.jsx)(r.Text, {
       className: o.subtitle,
       variant: "text-md/medium",
-      color: "header-secondary",
+      color: "text-default",
       children: l.intl.format(l.t.OsAK9h, {
         timestamp: null == u ? true : u.currentPeriodEnd
       })

@@ -2,7 +2,7 @@
 /** chunk id: 195189, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,7 +13,7 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824804 = require("./824804.js");
 
-function d(e) {
+function u(e) {
   let {
     title: t,
     details: n
@@ -28,7 +28,7 @@ function d(e) {
         children: t
       }), "string" == typeof n ? (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: n
       }) : n]
     }), (0, r.jsx)(i.u, {

@@ -1,7 +1,7 @@
 /** Chunk was on 61342 **/
 /** chunk id: 410426, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,29 +18,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk641719 = require("./641719.js");
 
-function h(e) {
+function v(e) {
   let {
     isEmptyBecauseQuery: t
-  } = e, n = (0, s.e7)([u.ZP], () => u.ZP.getKeybindForAction(m.kg4.SAVE_CLIP)), i = (0, p.z8)(), h = t ? b.noSearchResultsImage : b.noClipsImage, v = r.useCallback(() => {
+  } = e, n = (0, s.e7)([u.ZP], () => u.ZP.getKeybindForAction(m.kg4.SAVE_CLIP)), i = (0, p.z8)(), v = t ? y.noSearchResultsImage : y.noClipsImage, h = r.useCallback(() => {
     (0, o.Z)(f.Z.CLIPS, {
       stackingBehavior: "stack"
     })
   }, []), j = (() => {
-    if (!i) return y.intl.format(y.t["3iveao"], {
-      onClick: v
+    if (!i) return b.intl.format(b.t["3iveao"], {
+      onClick: h
     });
-    if (t) return y.intl.string(y.t["xrEs6/"]);
-    if (null == n) return y.intl.format(y.t.jpKk7e, {
-      onClick: v
+    if (t) return b.intl.string(b.t["xrEs6/"]);
+    if (null == n) return b.intl.format(b.t.jpKk7e, {
+      onClick: h
     });
     {
       let e = d.BB(n.shortcut, true);
-      return y.intl.format(y.t["xY/8K5"], {
+      return b.intl.format(b.t["xY/8K5"], {
         keybind: e,
         keybindHook: () => (0, l.jsx)("span", {
-          className: b.keybindHintKeys,
+          className: y.keybindHintKeys,
           children: (0, l.jsx)(c.M2$, {
-            className: b.keybindShortcut,
+            className: y.keybindShortcut,
             shortcut: e
           })
         })
@@ -48,15 +48,15 @@ function h(e) {
     }
   })();
   return (0, l.jsx)("div", {
-    className: b.container,
+    className: y.container,
     children: (0, l.jsxs)("div", {
-      className: b.content,
+      className: y.content,
       children: [(0, l.jsx)("div", {
-        className: h
+        className: v
       }), (0, l.jsx)(c.Text, {
         variant: "text-md/medium",
-        className: a()(b.noClipsText, {
-          [b.noSearchResultsText]: t
+        className: a()(y.noClipsText, {
+          [y.noSearchResultsText]: t
         }),
         children: j
       })]

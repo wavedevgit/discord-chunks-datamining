@@ -75,7 +75,7 @@ let g = () => {
           color: Chunk481060.TVs.colors.INTERACTIVE_NORMAL
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "eyebrow",
-          color: "header-secondary",
+          color: "text-default",
           children: Chunk388032.intl.string(Chunk388032.t["13/7kX"])
         })]
       }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
@@ -87,7 +87,7 @@ let g = () => {
           className: Chunk84989.titleContainer,
           children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",
-            color: "text-secondary",
+            color: "text-subtle",
             children: Chunk388032.intl.string(Chunk744038.default.RZqaJn)
           }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-xl/semibold",

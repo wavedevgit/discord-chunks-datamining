@@ -90,7 +90,7 @@ function h(e) {
         className: f.infoFilledIcon
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: d.intl.string(d.t.yb7itQ)
       })]
     })]

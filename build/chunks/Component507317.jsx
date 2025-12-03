@@ -82,7 +82,7 @@ let j = function(e) {
     })
   }, [t]), O = (0, r.jsx)(c.Z, {
     image: t.homeHeader,
-    makeURL: e => null != e ? u.ZP.getGuildHomeHeaderURL({
+    makeURL: e => null != e ? d.ZP.getGuildHomeHeaderURL({
       id: t.id,
       homeHeader: e
     }) : null,
@@ -111,11 +111,11 @@ let j = function(e) {
         className: x.homeBannerExplainer,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: b.intl.string(b.t.Vwintv)
         }), (0, r.jsx)("div", {
           className: x.uploadButton,
-          children: (0, r.jsx)(d.Z, {
+          children: (0, r.jsx)(u.Z, {
             onChange: _,
             maxFileSizeBytes: h.B,
             text: b.intl.string(b.t.yG2pUi),
@@ -146,7 +146,7 @@ let j = function(e) {
         className: x.homeBannerExplainer,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
-          color: "header-secondary",
+          color: "text-default",
           className: x.bannerDescription,
           children: b.intl.string(b.t.Vwintv)
         }), (0, r.jsx)(l.Button, {

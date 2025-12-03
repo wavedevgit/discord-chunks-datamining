@@ -25,13 +25,13 @@ function b(e) {
     onClose: h
   } = e, {
     analyticsLocations: y
-  } = (0, l.ZP)(), {
+  } = (0, a.ZP)(), {
     context: v,
     trackUserProfileAction: O
   } = (0, c.KZ)(), {
     mutualFriends: j,
     mutualFriendsCount: x
-  } = (0, s.Z)(t), _ = (0, a.Z)();
+  } = (0, s.Z)(t), _ = (0, l.Z)();
   return i.useEffect(() => {
     (0, u.Z)(t.id, _)
   }, [t.id, _]), (0, r.jsx)(p.F, {
@@ -51,11 +51,11 @@ function b(e) {
       let {
         key: t,
         user: i,
-        status: a
+        status: l
       } = e;
       return (0, r.jsx)(f.Z, {
         user: i,
-        status: a,
+        status: l,
         guildId: n,
         channelId: b,
         onSelect: () => {

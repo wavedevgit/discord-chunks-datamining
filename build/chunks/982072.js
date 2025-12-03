@@ -12,9 +12,9 @@ function o(e) {
   let {
     widget: t,
     onAction: n
-  } = e, [o, c] = (0, r.useState)(false), s = t instanceof l.q ? t.applicationId : null, {
+  } = e, [o, c] = (0, r.useState)(false), s = t instanceof a.q ? t.applicationId : null, {
     fetched: u
-  } = (0, a.o)(s), d = (0, r.useCallback)(e => {
+  } = (0, l.o)(s), d = (0, r.useCallback)(e => {
     e && (n(function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

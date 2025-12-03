@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
@@ -25,7 +25,7 @@ function f(e) {
   } = e, {
     trackUserProfileEditAction: m
   } = (0, c.KZ)();
-  return (0, r.jsx)(l.u, {
+  return (0, r.jsx)(a.u, {
     text: u.intl.string(u.t.HUvyDc),
     ariaHidden: true,
     children: (0, r.jsx)(o.P3F, {
@@ -38,7 +38,7 @@ function f(e) {
         }), null == p || p()
       },
       "aria-label": u.intl.string(u.t.HUvyDc),
-      className: a()(f, d.clickable),
+      className: l()(f, d.clickable),
       children: (0, r.jsx)(o.XHJ, {
         size: i,
         className: d.icon,

@@ -33,11 +33,11 @@ function u() {
           className: Chunk333275.header,
           children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
             variant: "heading-lg/semibold",
-            color: "text-primary",
+            color: "text-strong",
             children: module.name
           }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
             variant: "text-md/medium",
-            color: "text-secondary",
+            color: "text-subtle",
             children: null == u ? true : u.name
           })]
         })]
@@ -50,11 +50,11 @@ function u() {
               className: c.statItem,
               children: [(0, r.jsx)(l.X6q, {
                 variant: "heading-sm/semibold",
-                color: "text-primary",
+                color: "text-strong",
                 children: e.title
               }), (0, r.jsx)(l.xvT, {
                 variant: "text-sm/medium",
-                color: "text-tertiary",
+                color: "text-muted",
                 children: e.description
               })]
             }), n !== (null != (t = null == u ? true : u.specifications.length) ? t : 0) - 1 && (0, r.jsx)("div", {

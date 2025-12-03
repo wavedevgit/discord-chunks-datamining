@@ -1,7 +1,7 @@
 /** Chunk was on 37979 **/
 /** chunk id: 238088, original params: e,t,l (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => v
 }), require("./388685.js"), require("./539854.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk540432 = require("./540432.js");
 
-function y(e) {
+function m(e) {
   let {
     index: t,
     query: l,
@@ -94,7 +94,7 @@ function y(e) {
   })
 }
 
-function m(e) {
+function y(e) {
   let {
     options: t,
     dates: l,
@@ -110,14 +110,14 @@ function m(e) {
       className: R.labelContainer,
       children: [(0, n.jsx)(c.Text, {
         variant: "text-md/medium",
-        color: "text-primary",
+        color: "text-strong",
         children: _.intl.string(_.t.oesnwm)
       }), (0, n.jsx)(c.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: _.intl.string(_.t.A2DY6J)
       })]
-    }), l.map((e, l) => (0, n.jsx)(y, {
+    }), l.map((e, l) => (0, n.jsx)(m, {
       options: t,
       index: l,
       query: e,
@@ -189,7 +189,7 @@ function L(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     label: t,
     sublabel: l,
@@ -234,7 +234,7 @@ function v(e) {
   })
 }
 
-function b(e) {
+function v(e) {
   let {
     transitionState: t,
     onClose: l,
@@ -245,10 +245,10 @@ function b(e) {
   }), d = (0, s.e7)([x.default], () => {
     let e = x.default.getCurrentUser();
     return null != e ? e.username : _.intl.string(_.t.cqpybK)
-  }), [R, y] = r.useState(S.Z.getSearchInputText(i)), b = r.useMemo(() => (0, p.kG)(null != R ? R : ""), [R]), {
+  }), [R, m] = r.useState(S.Z.getSearchInputText(i)), v = r.useMemo(() => (0, p.kG)(null != R ? R : ""), [R]), {
     prefilledSearchFilters: N,
     eligibleFilterTokens: O
-  } = (0, E.p4)(b, i), j = O.has(f.dCx.FILTER_FROM), M = O.has(f.dCx.FILTER_MENTIONS), A = O.has(f.dCx.FILTER_IN), P = O.has(f.dCx.FILTER_AUTHOR_TYPE), Q = r.useMemo(() => (0, p.nI)(b), [b]), k = (0, T.g_)({
+  } = (0, E.p4)(v, i), j = O.has(f.dCx.FILTER_FROM), M = O.has(f.dCx.FILTER_MENTIONS), A = O.has(f.dCx.FILTER_IN), P = O.has(f.dCx.FILTER_AUTHOR_TYPE), Q = r.useMemo(() => (0, p.nI)(v), [v]), k = (0, T.g_)({
     location: "SearchFiltersModal"
   }), {
     options: D,
@@ -297,12 +297,12 @@ function b(e) {
   } = (0, E.fI)(N.dateFilters), {
     options: e_,
     query: eR,
-    setQuery: ey,
-    handleClearFilter: em,
+    setQuery: em,
+    handleClearFilter: ey,
     getApplyQueryString: eL,
-    handleFocusFilter: ev
+    handleFocusFilter: eb
   } = (0, E.fJ)(i, N[f.dCx.FILTER_AUTHOR_TYPE], k), {
-    options: eb,
+    options: ev,
     query: eN,
     setQuery: eO,
     handleClearFilter: ej,
@@ -357,8 +357,8 @@ function b(e) {
     let e = "(".concat(eA, ")");
     return "".concat(_.intl.string(_.t.YfwFu1), " ").concat(e)
   }, [eA]), eq = r.useCallback(() => {
-    j && Y(), M && K(), A && ed(), P && em(), en(), eI(), ej()
-  }, [j, M, en, A, eI, Y, K, ed, P, em, ej]), eY = M && (0, n.jsx)(L, {
+    j && Y(), M && K(), A && ed(), P && ey(), en(), eI(), ej()
+  }, [j, M, en, A, eI, Y, K, ed, P, ey, ej]), eY = M && (0, n.jsx)(L, {
     label: _.intl.string(_.t.HEBnRU),
     sublabel: _.intl.string(_.t.PdfTqT),
     textPlaceholder: _.intl.formatToPlainString(_.t.zka3aJ, {
@@ -440,7 +440,7 @@ function b(e) {
       filterType: f.dCx.FILTER_IN,
       validateFilter: eQ,
       onBlur: eg
-    }), k ? eU : eY, k ? eY : eU, (0, n.jsx)(m, {
+    }), k ? eU : eY, k ? eY : eU, (0, n.jsx)(y, {
       options: eF,
       dates: ex,
       handleDateQueryChange: ep,
@@ -453,20 +453,20 @@ function b(e) {
       sublabel: _.intl.string(_.t.XaOAdt),
       textPlaceholder: _.intl.string(_.t.CAdOdf),
       value: eR,
-      onChange: ey,
-      onFocus: ev,
+      onChange: em,
+      onFocus: eb,
       options: e_,
       filter: false,
       closeOnSelect: false,
       filterType: f.dCx.FILTER_AUTHOR_TYPE,
       validateFilter: eQ
-    }), (0, n.jsx)(v, {
+    }), (0, n.jsx)(b, {
       label: _.intl.string(_.t["6LYPWS"]),
       sublabel: _.intl.string(_.t.L8jjfu),
       textPlaceholder: _.intl.string(_.t.AQpFbX),
       value: eN,
       onChange: eO,
-      options: eb,
+      options: ev,
       filterType: f.dCx.FILTER_PINNED,
       validateFilter: eQ
     })]

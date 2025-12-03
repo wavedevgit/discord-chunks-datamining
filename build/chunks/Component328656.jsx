@@ -51,7 +51,7 @@ function _(e) {
     className: o()(d.body, n),
     children: [h ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       children: t.description
     }) : null, (0, r.jsx)(c.Z, {
       gamesToDisplay: a,

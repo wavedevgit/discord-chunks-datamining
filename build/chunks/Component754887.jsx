@@ -19,7 +19,7 @@ function c(e) {
       footerInfoText: f,
       footerAction: v
     } = e,
-    m = function(e, t) {
+    b = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -35,7 +35,7 @@ function c(e) {
       return o
     }(e, ["guildId", "title", "description", "powerups", "footerInfoText", "footerAction"]);
   let j = (0, i.Z)(c),
-    x = null != f && f.length > 0 ? (0, n.jsx)("div", {
+    m = null != f && f.length > 0 ? (0, n.jsx)("div", {
       className: l.footerInfoContainer,
       children: (0, n.jsx)(a.Text, {
         variant: "text-sm/medium",
@@ -62,9 +62,9 @@ function c(e) {
   }({
     title: d,
     subtitle: u,
-    actionBarInput: x,
+    actionBarInput: m,
     actions: null != v ? [v] : []
-  }, m), r = r = {
+  }, b), r = r = {
     children: (0, n.jsx)("div", {
       className: l.perkCardsContainer,
       children: p.map(e => (0, n.jsx)(s.Z, {

@@ -122,7 +122,7 @@ function w(e) {
               children: [(0, r.jsx)(v.Z, {
                 heading: P.intl.string(P.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(j.Z, {
+                children: (0, r.jsx)(x.Z, {
                   userBio: null == D ? true : D.bio,
                   userId: n.id,
                   animateOnHoverOrFocusOnly: true,
@@ -131,7 +131,7 @@ function w(e) {
               }), (0, r.jsx)(v.Z, {
                 heading: P.intl.string(P.t["A//N4k"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(x.Z, {
+                children: (0, r.jsx)(j.Z, {
                   userId: n.id
                 })
               })]

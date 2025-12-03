@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk205120 = require("./205120.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -51,13 +51,13 @@ function P(e) {
     username: t,
     title: n,
     videoSrc: i,
-    messageCount: a,
+    messageCount: l,
     reaction: s,
     reactionCount: o,
     classname: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: l()(y.videoPreview, c),
+    className: a()(y.videoPreview, c),
     children: [(0, r.jsx)("div", {
       className: y.authorRow,
       children: (0, r.jsxs)("div", {
@@ -69,7 +69,7 @@ function P(e) {
           children: t
         }), (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
-          color: "header-secondary",
+          color: "text-default",
           className: y.postCreationTimestamp,
           children: C.intl.string(C.t.mA0IvI)
         })]
@@ -105,7 +105,7 @@ function P(e) {
           }), (0, r.jsx)(d.Text, {
             variant: "text-xs/normal",
             color: "interactive-normal",
-            children: a
+            children: l
           })]
         }), (0, r.jsxs)("div", {
           className: y.reactionBox,
@@ -126,23 +126,23 @@ function P(e) {
 let I = e => {
   var t, n;
   let {
-    channel: a
-  } = e, m = (0, u.ZP)(), I = (0, c.wj)(m), E = (0, o.e7)([b.Z], () => b.Z.getGuild(a.guild_id)), R = (0, o.e7)([h.Z], () => h.Z.hasHidden(a.id)), M = (0, x.C)({
-    guildId: a.guild_id,
-    channelId: a.id
+    channel: l
+  } = e, m = (0, u.ZP)(), I = (0, c.wj)(m), E = (0, o.e7)([b.Z], () => b.Z.getGuild(l.guild_id)), R = (0, o.e7)([h.Z], () => h.Z.hasHidden(l.id)), M = (0, x.C)({
+    guildId: l.guild_id,
+    channelId: l.id
   }), {
     transitions: Z,
     setVisible: k
   } = (0, v.H)(), A = i.useCallback(() => {
-    k(false), g.Z.hideAdminOnboarding(a.id, true)
-  }, [a, k]);
+    k(false), g.Z.hideAdminOnboarding(l.id, true)
+  }, [l, k]);
   i.useEffect(() => {
-    (0, f.c)(a.id) || k(!R)
-  }, [a, k, R]);
+    (0, f.c)(l.id) || k(!R)
+  }, [l, k, R]);
   let L = i.useMemo(() => [C.intl.string(C.t["8pEGAw"]), C.intl.string(C.t.jwfgDd), C.intl.string(C.t.mPKs27), C.intl.string(C.t.StRbvG)], []),
     F = i.useMemo(() => [C.intl.string(C.t["m/b58M"]), C.intl.string(C.t.MuJSKw), C.intl.string(C.t["d/Wqvu"]), C.intl.string(C.t.GJklAw)], []),
     D = () => {
-      p.Z.open(a.guild_id, _.pNK.ROLE_SUBSCRIPTIONS)
+      p.Z.open(l.guild_id, _.pNK.ROLE_SUBSCRIPTIONS)
     },
     H = null != (t = null == E ? true : E.features.has(_.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) && t ? C.intl.string(C.t.n0q7sI) : C.intl.string(C.t.QoYdie),
     z = null != (n = (null == E ? true : E.features.has(_.GuildFeatures.CREATOR_MONETIZABLE)) || (null == E ? true : E.features.has(_.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL))) && n,
@@ -168,7 +168,7 @@ let I = e => {
       }), (0, r.jsxs)("div", {
         className: y.contentContainer,
         children: [(0, r.jsxs)("div", {
-          className: l()(y.contentRow, z && y.contentRowOne),
+          className: a()(y.contentRow, z && y.contentRowOne),
           children: [(0, r.jsx)("div", {
             className: y.contentMediaContainer,
             children: (0, r.jsxs)("div", {
@@ -238,7 +238,7 @@ let I = e => {
             })]
           })]
         }), z && (0, r.jsxs)("div", {
-          className: l()(y.contentRow, y.contentRowTwo),
+          className: a()(y.contentRow, y.contentRowTwo),
           children: [(0, r.jsx)("div", {
             className: y.contentMediaContainer,
             children: (0, r.jsxs)("div", {

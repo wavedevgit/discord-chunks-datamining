@@ -50,12 +50,12 @@ function p(e, t) {
 function f(e) {
   let {
     guild: t
-  } = e, f = (0, i.e7)([a.Z], () => a.Z.isUploadingEmoji()), h = (0, u.Z)(t.id), b = (0, d.Z)(t) - h.length, x = (0, c.mY)();
+  } = e, f = (0, i.e7)([a.Z], () => a.Z.isUploadingEmoji()), h = (0, d.Z)(t.id), b = (0, u.Z)(t) - h.length, x = (0, c.mY)();
   return (0, r.jsxs)(l.gNt, {
     label: g.intl.string(g.t["LDT0Q/"]),
     disabled: x,
     description: g.intl.format(g.t.H9Jxp6, {
-      maxSlots: (0, d.Z)(t)
+      maxSlots: (0, u.Z)(t)
     }),
     children: [(0, r.jsx)(l.LZC, {
       size: 16
@@ -81,7 +81,7 @@ function f(e) {
       size: 24
     }), (0, r.jsx)(s.L3, {
       title: g.intl.string(g.t.lu1ZQ2),
-      maxSlots: (0, d.Z)(t),
+      maxSlots: (0, u.Z)(t),
       emojiCount: h.length,
       children: (0, r.jsx)(s.FT, {
         guild: t,

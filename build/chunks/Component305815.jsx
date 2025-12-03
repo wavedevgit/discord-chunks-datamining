@@ -53,16 +53,16 @@ function A(e) {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: w.heading,
-        children: b.intl.string(b.t["0/Yz+Y"])
+        children: N.intl.string(N.t["0/Yz+Y"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: u
       })]
     }), (0, r.jsx)(o.Button, {
       variant: "secondary",
       size: "sm",
-      text: m ? b.intl.string(b.t.hjaYYn) : b.intl.string(b.t.MAS7uK),
+      text: m ? N.intl.string(N.t.hjaYYn) : N.intl.string(N.t.MAS7uK),
       loading: "applying" === s,
       disabled: "claimed" !== s || m,
       onClick: a,
@@ -76,7 +76,7 @@ function P(e) {
   let {
     initialQuest: c,
     onClose: v,
-    transitionState: b,
+    transitionState: N,
     preview: w,
     location: P,
     sourceQuestContent: D
@@ -112,13 +112,13 @@ function P(e) {
     };
   return (0, r.jsx)(_.Z, {
     onClose: v,
-    transitionState: b,
+    transitionState: N,
     quest: E,
     sourceQuestContent: D,
-    location: N.dr.COLLECTIBLE_REWARD_MODAL,
+    location: y.dr.COLLECTIBLE_REWARD_MODAL,
     isRewardContentLoading: W,
     rewardContentHasError: q,
-    rewardContent: q || B ? null : (0, r.jsx)(y.Z, {
+    rewardContent: q || B ? null : (0, r.jsx)(b.Z, {
       rewardName: T.messages.name,
       children: (0, r.jsx)(A, {
         quest: E,

@@ -23,8 +23,8 @@ function b(e) {
     onClose: n,
     analyticsLocation: b
   } = e, {
-    slide: g,
-    gotoNext: x,
+    slide: x,
+    gotoNext: g,
     gotoError: h,
     handleWaitingForConnection: C,
     handleAuthToken: _,
@@ -37,12 +37,12 @@ function b(e) {
     disableTrack: true,
     parentComponent: "XboxLinkModal",
     children: (0, o.jsxs)(r.MyZ, {
-      activeSlide: g,
+      activeSlide: x,
       width: 408,
       children: [(0, o.jsx)(r.Mi4, {
         id: u.O.LANDING,
         children: (0, o.jsx)(c.Z, {
-          onContinue: x,
+          onContinue: g,
           onClose: n
         })
       }), (0, o.jsx)(r.Mi4, {
@@ -67,14 +67,14 @@ function b(e) {
         id: u.O.DISCORD_CONSENT,
         children: (0, o.jsx)(s.Z, {
           authToken: v,
-          onContinue: x,
+          onContinue: g,
           onError: h,
           onClose: n
         })
       }), (0, o.jsx)(r.Mi4, {
         id: u.O.ERROR,
         children: (0, o.jsx)(a.Z, {
-          onContinue: x,
+          onContinue: g,
           onClose: n
         })
       }), (0, o.jsx)(r.Mi4, {

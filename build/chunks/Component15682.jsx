@@ -15,8 +15,8 @@ let a = e => {
       selected: s
     } = e;
     return (0, r.jsx)("div", {
-      className: l.checkboxRow,
-      children: (0, r.jsx)(i.Checkbox, {
+      className: i.checkboxRow,
+      children: (0, r.jsx)(l.Checkbox, {
         checked: s,
         onChange: t,
         label: n,
@@ -28,18 +28,18 @@ let a = e => {
     let {
       element: t,
       state: n,
-      onChange: i
+      onChange: l
     } = e;
     if ((null == t ? true : t.type) !== "checkbox") return null;
     let {
-      data: l
+      data: i
     } = t;
     return (0, r.jsx)("div", {
-      children: l.map((e, t) => {
-        let [l, s, o] = e;
+      children: i.map((e, t) => {
+        let [i, s, o] = e;
         return (0, r.jsx)(a, {
-          onChange: () => i(l, s),
-          selected: l in n,
+          onChange: () => l(i, s),
+          selected: i in n,
           label: s,
           subtitle: o
         }, "".concat(t, "+button"))

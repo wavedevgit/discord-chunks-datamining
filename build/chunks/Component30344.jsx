@@ -41,27 +41,27 @@ function g(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["games"]);
   let {
     registerItemRef: i,
-    manageFocusOnDelete: a
-  } = (0, l.C)();
+    manageFocusOnDelete: l
+  } = (0, a.C)();
   return (0, r.jsx)(o.Z, {
     games: t,
     renderGame: (e, t) => (0, r.jsx)(u.S, f({
       index: t,
       game: e,
       coverRef: i(e.applicationId),
-      onRemoveGame: a
+      onRemoveGame: l
     }, n))
   })
 }
@@ -73,7 +73,7 @@ function p(e) {
     widgetType: u,
     disableInteraction: p,
     games: m
-  } = e, b = (0, i.e7)([a.default], () => a.default.getId() === o), {
+  } = e, b = (0, i.e7)([l.default], () => l.default.getId() === o), {
     getManageButtonForWidget: h
   } = (0, d.j)(), y = h(u), {
     expanded: v,
@@ -95,7 +95,7 @@ function p(e) {
       onClick: () => O(e => !e)
     })]
   });
-  return b && !p ? (0, r.jsx)(l.d, {
+  return b && !p ? (0, r.jsx)(a.d, {
     emptyListFallbackRef: y,
     children: _
   }) : _

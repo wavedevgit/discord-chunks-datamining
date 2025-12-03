@@ -26,11 +26,11 @@ function b(e) {
   } = e, b = t.features.has(g.GuildFeatures.INVITE_SPLASH), x = n && b, {
     analyticsLocations: j
   } = (0, a.ZP)(), _ = i.useCallback(e => {
-    d.Z.updateGuild({
+    u.Z.updateGuild({
       splash: e
     })
   }, []), v = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, u.E6)({
+    e.preventDefault(), e.stopPropagation(), (0, d.E6)({
       guild: t,
       analyticsLocations: j,
       analyticsSection: g.jXE.GUILD_INVITE_BACKGROUND,

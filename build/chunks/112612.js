@@ -1,5 +1,5 @@
 /** Chunk was on 74673 **/
-/** chunk id: 112612, original params: t,n,e (module,exports,require) **/
+/** chunk id: 112612, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 }), require("./388685.js");
@@ -9,20 +9,20 @@ var Chunk473749 = require("./473749.js"),
 function c(t) {
   let {
     onSubmit: n,
-    onClose: e
-  } = t, [c, r] = i.useState(false), [l, o] = i.useState(null), s = i.useCallback(async () => {
+    onClose: i
+  } = t, [c, l] = e.useState(false), [r, o] = e.useState(null), s = e.useCallback(async () => {
     if (!c) {
-      r(true), o(null);
+      l(true), o(null);
       try {
-        await n(), e()
+        await n(), i()
       } catch (t) {
-        o(new a.Hx(t).getAnyErrorMessage()), r(false)
+        o(new a.Hx(t).getAnyErrorMessage()), l(false)
       }
     }
-  }, [e, n, c]);
+  }, [i, n, c]);
   return {
     submitting: c,
-    errorMessage: l,
+    errorMessage: r,
     onSubmit: s
   }
 }

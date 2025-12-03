@@ -87,7 +87,7 @@ let j = new Chunk710845.Z("ImageEditor"),
       }, [M, z, G, D]),
       ee = r.useCallback(e => {
         if (null == T) return;
-        let t = C(T, e, V);
+        let t = y(T, e, V);
         A(e), Z(t), $(), null == K || K()
       }, [T, $, V, K]),
       et = r.useCallback(() => {
@@ -95,7 +95,7 @@ let j = new Chunk710845.Z("ImageEditor"),
         let e = (z + 90) % 360,
           t = T.height,
           n = T.width,
-          l = C({
+          l = y({
             width: t,
             height: n
           }, R, V);
@@ -112,7 +112,7 @@ let j = new Chunk710845.Z("ImageEditor"),
         let {
           height: e,
           width: t
-        } = y(O(T, z), R);
+        } = C(O(T, z), R);
         return {
           height: e,
           width: t,
@@ -212,7 +212,7 @@ let j = new Chunk710845.Z("ImageEditor"),
           height: t
         }), L(0), k(false);
         let n = Math.min(Math.max(e, t) / Math.min(e, t), 4);
-        A(n), q(n), Q.current += 1, Z(C({
+        A(n), q(n), Q.current += 1, Z(y({
           width: e,
           height: t
         }, n, V)), $({
@@ -263,7 +263,7 @@ let j = new Chunk710845.Z("ImageEditor"),
           children: (0, l.jsx)(c.Text, {
             className: p.panHint,
             variant: "text-xs/normal",
-            color: "text-primary",
+            color: "text-strong",
             children: v.intl.string(v.t.oBPhdN)
           })
         })]
@@ -362,7 +362,7 @@ let j = new Chunk710845.Z("ImageEditor"),
       height: l
     }
   },
-  y = (e, t) => {
+  C = (e, t) => {
     let {
       width: n,
       height: l
@@ -373,11 +373,11 @@ let j = new Chunk710845.Z("ImageEditor"),
     }
   };
 
-function C(e, t, n) {
+function y(e, t, n) {
   let {
     width: l,
     height: r
-  } = y(e, t), i = Math.abs(288 - l) / 2, a = Math.abs(288 - r) / 2;
+  } = C(e, t), i = Math.abs(288 - l) / 2, a = Math.abs(288 - r) / 2;
   return n && (l < 288 || r < 288) ? {
     top: 0,
     bottom: 0,
@@ -395,7 +395,7 @@ let I = (e, t, n) => {
   let {
     height: i,
     width: a
-  } = y(t, n), o = (i = Math.min(i, 288)) / (a = Math.min(a, 288)), s = {
+  } = C(t, n), o = (i = Math.min(i, 288)) / (a = Math.min(a, 288)), s = {
     height: i,
     width: a
   }, u = Math.floor(o < 1 ? f.eT * o : f.eT / o), c = o < 1 ? u : f.eT, d = o > 1 ? u : f.eT;

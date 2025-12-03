@@ -16,14 +16,14 @@ function a(e) {
     createEnableRequest: s,
     requestRejectedNoticeText: o,
     reapplyNoticeText: c,
-    isApplicationPending: d
+    isApplicationPending: u
   } = e;
   if (null != a) return (0, r.jsx)(i.M14, {
     type: "critical",
     children: a.getAnyErrorMessage()
   });
-  let u = null;
-  return d ? u = l.intl.string(l.t.OrkTBn) : null != o ? u = o : null != c && (u = c, t = l.intl.string(l.t["YKw/NQ"])), null != u ? (0, r.jsx)(i.Wn, {
+  let d = null;
+  return u ? d = l.intl.string(l.t.OrkTBn) : null != o ? d = o : null != c && (d = c, t = l.intl.string(l.t["YKw/NQ"])), null != d ? (0, r.jsx)(i.Wn, {
     messageType: i.QYI.WARNING,
     action: (0, r.jsx)(i.zxk, {
       variant: "overlay-secondary",
@@ -31,6 +31,6 @@ function a(e) {
       onClick: s,
       loading: n
     }),
-    children: u
+    children: d
   }) : null
 }

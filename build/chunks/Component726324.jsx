@@ -43,7 +43,7 @@ function u(e) {
     }), (0, r.jsx)(i.Text, {
       className: c.ctaSubtitle,
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: d
     }), p]
   })

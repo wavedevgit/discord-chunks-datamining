@@ -51,7 +51,7 @@ function u(t) {
         children: e ? p.intl.string(p.t["9U0b1k"]) : p.intl.string(p.t["5HZu07"])
       }), (0, i.jsx)(r.Text, {
         className: C.subtitle,
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-md/normal",
         children: p.intl.string(p.t["wti/H4"])
       }), null != a && (0, i.jsx)(r.olH, {
@@ -69,7 +69,7 @@ function u(t) {
         autoFocus: true
       }), (0, i.jsx)(r.Text, {
         className: C.optionHeader,
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-xs/bold",
         children: p.intl.string(p.t.JGDkfg)
       }), (0, i.jsx)(g, {

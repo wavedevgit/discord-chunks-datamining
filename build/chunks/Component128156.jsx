@@ -39,7 +39,7 @@ function w(e) {
     onClose: C
   } = e, {
     voiceActivityStatusEnabled: D
-  } = (0, l.U)({
+  } = (0, a.U)({
     location: "UserProfileModalV2Activity"
   }), k = (0, f.b)({
     location: "UserProfileModalV2Activity"
@@ -55,7 +55,7 @@ function w(e) {
     guildId: S
   }), L = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, B = (0, i.e7)([u.Z, s.Z], () => {
     let e = M ? u.Z.getStatus() : s.Z.getStatus(t.id);
-    return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
+    return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
   }), F = N.length > 0 || null != Z, U = D && null == Z && null == G && null != R, W = !B && (F || U), H = A.length > 0;
   if (!W && !H && L) return (0, r.jsx)("div", {
     className: I.cards,
@@ -123,7 +123,7 @@ function w(e) {
     }) : null, H ? (0, r.jsx)(O.Z, {
       heading: P.intl.string(P.t.jzgEoL),
       introText: M ? P.intl.format(P.t["4bk9Ak"], {
-        learnMoreHook: (e, t) => (0, r.jsx)(a.Anchor, {
+        learnMoreHook: (e, t) => (0, r.jsx)(l.Anchor, {
           href: d.Z.getArticleURL(_.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)

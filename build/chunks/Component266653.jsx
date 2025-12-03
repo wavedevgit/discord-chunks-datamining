@@ -29,15 +29,15 @@ function C(e) {
   } = (0, l.cj)([d.default, u.Z], () => ({
     currentUser: d.default.getCurrentUser(),
     multiAccountUsers: u.Z.getUsers()
-  })), [b, E] = i.useState(false), [N, A] = i.useState(f.lds), [p, v] = i.useState(null);
+  })), [b, E] = i.useState(false), [N, A] = i.useState(h.lds), [p, v] = i.useState(null);
   return i.useEffect(() => {
     if (b) v((0, s.jsx)(c.Wn, {
       messageType: c.QYI.ERROR,
       className: g.infoMessage,
       children: _.intl.format(_.t.HAuRSM, {
-        maxNumAccounts: h.$H
+        maxNumAccounts: f.$H
       })
-    })), A(f.lds);
+    })), A(h.lds);
     else if (null != N) {
       let e = d.default.getUser(N);
       null != e && v((0, s.jsx)(c.Wn, {
@@ -49,7 +49,7 @@ function C(e) {
       })), E(false)
     }
   }, [N, b]), i.useEffect(() => {
-    T.length < h.$H && E(false)
+    T.length < f.$H && E(false)
   }, [T]), (0, o.Z)({
     type: a.ImpressionTypes.MODAL,
     name: a.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
@@ -64,7 +64,7 @@ function C(e) {
       text: _.intl.string(_.t["9g2mqT"]),
       variant: "secondary",
       onClick: () => {
-        if (T.length >= h.$H) return void E(true);
+        if (T.length >= f.$H) return void E(true);
         n(), (0, x.y)()
       }
     }],

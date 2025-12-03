@@ -16,7 +16,7 @@ function a(e) {
   } = e;
   return (0, r.jsxs)(i.Text, {
     variant: "text-xs/normal",
-    color: "text-secondary",
+    color: "text-subtle",
     tabularNumbers: true,
     children: [null != (t = null == n ? true : n.length) ? t : 0, null != a && " / ".concat(a)]
   })

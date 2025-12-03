@@ -13,11 +13,11 @@ let s = () => (0, Chunk54381.jsxs)("div", {
   className: Chunk598267.bar,
   children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
     variant: "text-xs/bold",
-    color: "text-primary",
+    color: "text-strong",
     children: Chunk388032.intl.string(Chunk388032.t.md9HmB)
   }), (0, Chunk54381.jsx)(Chunk481060.Text, {
     variant: "text-xs/medium",
-    color: "text-tertiary",
+    color: "text-muted",
     children: Chunk388032.intl.string(Chunk388032.t.fiq8O5)
   })]
 })

@@ -20,7 +20,7 @@ function m(e) {
     defaultCategory: h,
     onCategoryChange: f,
     className: b
-  } = e, [g, v] = l.useState(h), [S, y] = l.useState(null), x = (0, s.Z)(), P = l.useMemo(() => [{
+  } = e, [g, v] = l.useState(h), [S, x] = l.useState(null), y = (0, s.Z)(), P = l.useMemo(() => [{
     name: d.intl.string(d.t["6Zuivx"]),
     value: u.KN.Trick,
     key: "Trick",
@@ -28,8 +28,8 @@ function m(e) {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => y(u.KN.Trick),
-    onMouseLeave: () => y(null)
+    onMouseEnter: () => x(u.KN.Trick),
+    onMouseLeave: () => x(null)
   }, {
     name: d.intl.string(d.t["2UeOlY"]),
     value: u.KN.Treat,
@@ -38,11 +38,11 @@ function m(e) {
       size: "sm",
       color: "currentColor"
     }),
-    onMouseEnter: () => y(u.KN.Treat),
-    onMouseLeave: () => y(null)
+    onMouseEnter: () => x(u.KN.Treat),
+    onMouseLeave: () => x(null)
   }], []), j = l.useCallback(e => {
     v(e.value), f(e.value)
-  }, [f]), _ = null == x || null == (n = x.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, O = null == x || null == (m = x.segmentedControlAnimations) || null == (a = m.treat) ? true : a.getAnimationData;
+  }, [f]), _ = null == y || null == (n = y.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, O = null == y || null == (m = y.segmentedControlAnimations) || null == (a = m.treat) ? true : a.getAnimationData;
   return (0, r.jsxs)("div", {
     className: i()(p.container, b),
     children: [(0, r.jsx)(c.w, {

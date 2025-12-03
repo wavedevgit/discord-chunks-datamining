@@ -35,10 +35,10 @@ function j() {
 function C(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([c.Z], () => {
+  } = e, n = (0, l.e7)([u.Z], () => {
     var e;
-    return (null == (e = c.Z.getGuild(t)) ? true : e.features.has(v.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true
-  }), C = (0, d.Z)(t), w = (0, u.Z)(t), Z = C.length > 0 || w.length > 0, {
+    return (null == (e = u.Z.getGuild(t)) ? true : e.features.has(v.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true
+  }), C = (0, d.Z)(t), w = (0, c.Z)(t), Z = C.length > 0 || w.length > 0, {
     shouldShow: I,
     notificationConfig: E
   } = (0, g._)(t, "GuildPowerupNotificationContainer"), P = [];
@@ -70,7 +70,7 @@ function C(e) {
     className: h.container,
     children: [(0, r.jsx)(o.xvT, {
       variant: "eyebrow",
-      color: "text-secondary",
+      color: "text-subtle",
       children: b.intl.string(_.default["3FRirU"])
     }), n && (0, r.jsx)(j, {}), k.map(e => e)]
   }) : null

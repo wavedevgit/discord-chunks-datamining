@@ -1,8 +1,8 @@
 /** Chunk was on 61342 **/
 /** chunk id: 542055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => O,
-  default: () => x
+  U: () => x,
+  default: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -52,17 +52,17 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = Chunk473749.createContext({
+let x = Chunk473749.createContext({
   selectedClipIds: new Set,
   toggleClipSelection: () => {},
   clearSelection: () => {},
   isMultiSelectMode: false
 });
 
-function x(e) {
+function O(e) {
   var {
     channelId: t,
-    onClose: x,
+    onClose: O,
     onClipClick: C
   } = e, w = function(e, t) {
     if (null == e) return {};
@@ -86,9 +86,9 @@ function x(e) {
     filteredClips: E,
     favoriteClips: N,
     allClips: M
-  } = (0, b.n)(), {
+  } = (0, y.n)(), {
     onShareClick: D
-  } = (0, p.Z)(t), Z = (0, i.e7)([d.Z], () => d.Z.getExportingClipIds().length > 0), L = (0, y.f)(e => e.selectedGameId), H = r.useMemo(() => {
+  } = (0, p.Z)(t), Z = (0, i.e7)([d.Z], () => d.Z.getExportingClipIds().length > 0), L = (0, b.f)(e => e.selectedGameId), H = r.useMemo(() => {
     var e;
     return null == L || "favorites" === L ? null : null != (e = S.find(e => e.applicationId === L)) ? e : null
   }, [L, S]), T = r.useMemo(() => {
@@ -96,7 +96,7 @@ function x(e) {
     return "favorites" === L ? N : null != (e = null == H ? true : H.filteredClips) ? e : E
   }, [L, H, E, N]), A = r.useMemo(() => {
     var e;
-    return "favorites" === L ? h.intl.string(h.t["9rlCk1"]) : null != (e = null == H ? true : H.name) ? e : h.intl.string(h.t.dPVrEv)
+    return "favorites" === L ? v.intl.string(v.t["9rlCk1"]) : null != (e = null == H ? true : H.name) ? e : v.intl.string(v.t.dPVrEv)
   }, [L, H]), R = r.useCallback(e => {
     I(t => {
       let n = new Set(t);
@@ -132,55 +132,55 @@ function x(e) {
   }), [k, R, V, _]);
   return (0, l.jsx)(u.Gt, {
     value: P,
-    children: (0, l.jsx)(O.Provider, {
+    children: (0, l.jsx)(x.Provider, {
       value: B,
       children: (0, l.jsx)(s.A, g(j({
-        onClose: x
+        onClose: O
       }, w), {
         children: (0, l.jsxs)("div", {
-          className: v.modalContainer,
+          className: h.modalContainer,
           children: [(0, l.jsx)(f.Z, {
             clipsByGame: S,
             filteredClips: E,
             favoriteClips: N,
             allClips: M
           }), (0, l.jsxs)("div", {
-            className: v.content,
+            className: h.content,
             children: [(0, l.jsxs)("div", {
-              className: v.contentHeader,
+              className: h.contentHeader,
               children: [(0, l.jsx)(c.Heading, {
                 variant: "heading-md/medium",
-                color: "header-secondary",
+                color: "text-default",
                 children: A
               }), (0, l.jsxs)("div", {
-                className: v.headerActions,
+                className: h.headerActions,
                 children: [_ && (0, l.jsxs)(l.Fragment, {
                   children: [(0, l.jsx)(a.u, {
-                    text: h.intl.string(h.t.RDE0Sc),
+                    text: v.intl.string(v.t.RDE0Sc),
                     children: (0, l.jsx)(c.hU, {
                       onClick: z,
                       icon: c.aAc,
                       size: "sm",
                       variant: "icon-only",
-                      "aria-label": h.intl.string(h.t.RDE0Sc),
+                      "aria-label": v.intl.string(v.t.RDE0Sc),
                       loading: Z
                     })
                   }), (0, l.jsx)(a.u, {
-                    text: h.intl.string(h.t.oyYWHE),
+                    text: v.intl.string(v.t.oyYWHE),
                     children: (0, l.jsx)(c.hU, {
                       onClick: U,
                       icon: c.XHJ,
                       size: "sm",
                       variant: "icon-only",
-                      "aria-label": h.intl.string(h.t.oyYWHE)
+                      "aria-label": v.intl.string(v.t.oyYWHE)
                     })
                   })]
                 }), (0, l.jsx)(c.hU, {
-                  onClick: x,
+                  onClick: O,
                   icon: c.Uz9,
                   size: "sm",
                   variant: "icon-only",
-                  "aria-label": h.intl.string(h.t.cpT0Cq)
+                  "aria-label": v.intl.string(v.t.cpT0Cq)
                 })]
               })]
             }), (0, l.jsx)(m.Z, {

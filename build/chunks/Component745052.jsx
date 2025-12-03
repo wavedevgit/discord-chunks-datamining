@@ -134,7 +134,7 @@ function ei() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           className: Chunk803882.titleDivider,
           variant: "eyebrow",
-          color: "header-secondary",
+          color: "text-default",
           tag: "span",
           children: "•"
         }), (0, Chunk54381.jsx)(Chunk481060.Avr, {

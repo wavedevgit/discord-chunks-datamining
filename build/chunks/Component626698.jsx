@@ -14,7 +14,7 @@ function c() {
   return (0, Chunk824480.d)(), (0, Chunk54381.jsx)(Chunk198358.Z, {
     children: (0, Chunk54381.jsx)(Chunk793030.xvT, {
       variant: "display-lg",
-      color: "text-primary",
+      color: "text-strong",
       children: Chunk388032.intl.string(Chunk140939.default.wnuxp5)
     })
   })

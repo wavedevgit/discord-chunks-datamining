@@ -627,7 +627,7 @@ function H() {
         }), (0, Chunk54381.jsxs)("div", {
           className: Chunk188764.questBarPreviewWrapper,
           children: [(null == (d = H.userStatus) ? true : Chunk820827.claimedAt) != null && (0, Chunk54381.jsx)(Chunk481060.Text, {
-            color: "text-secondary",
+            color: "text-subtle",
             variant: "text-sm/normal",
             children: "The Quest Bar is hidden when the user has claimed the reward."
           }), (0, Chunk54381.jsx)("div", {
@@ -668,7 +668,7 @@ function H() {
           variant: "heading-sm/semibold",
           children: "Channel Call Header"
         }), (null == (u = H.userStatus) ? true : Chunk458708.claimedAt) != null && (0, Chunk54381.jsx)(Chunk481060.Text, {
-          color: "text-secondary",
+          color: "text-subtle",
           variant: "text-sm/normal",
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
         }), (0, Chunk54381.jsx)("div", {

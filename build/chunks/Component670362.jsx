@@ -17,7 +17,7 @@ function o(e) {
   } = e;
   return (0, r.jsx)(l.Text, {
     className: s.popoutHeading,
-    color: "text-secondary",
+    color: "text-subtle",
     id: n,
     variant: "text-sm/semibold",
     children: t

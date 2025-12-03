@@ -77,18 +77,18 @@ function k(e) {
     otherRoles: a,
     setSelectedSection: s,
     renderHeader: o,
-    headerHeight: d,
-    query: u
-  } = e, g = (0, c.e7)([N.Z], () => N.Z.getRoleMemberCount(n.id), [n.id]), m = (0, c.e7)([O.Z], () => O.Z.getHighestRole(n), [n]), f = u.trim();
+    headerHeight: u,
+    query: d
+  } = e, g = (0, c.e7)([N.Z], () => N.Z.getRoleMemberCount(n.id), [n.id]), m = (0, c.e7)([O.Z], () => O.Z.getHighestRole(n), [n]), f = d.trim();
   i.useEffect(() => {
     (0, y.E)(n.id)
   }, [n.id]);
   let h = i.useRef(false);
   i.useEffect(() => {
-    h.current || "" === u.trimStart() || (C.default.track(P.rMx.SEARCH_STARTED, {
+    h.current || "" === d.trimStart() || (C.default.track(P.rMx.SEARCH_STARTED, {
       search_type: "Roles"
     }), h.current = true)
-  }, [u]);
+  }, [d]);
   let b = i.useMemo(() => a.filter(e => (0, E.uo)(e, f)), [a, f]),
     x = i.useMemo(() => [...a, l], [a, l]),
     {
@@ -121,7 +121,7 @@ function k(e) {
     }, [b, n, m, g, _, v, I, j, a, t, s]);
   return (0, r.jsx)(p.Xi, {
     sections: [Math.max(b.length, 1)],
-    sectionHeight: d,
+    sectionHeight: u,
     renderSection: o,
     rowHeight: 61,
     renderRow: T
@@ -148,7 +148,7 @@ function G() {
 function M(e) {
   var t, l, c;
   let {
-    role: d,
+    role: u,
     guild: p,
     highestRole: x,
     currentPosition: _,
@@ -160,10 +160,10 @@ function M(e) {
     disableDrag: E,
     setEditRoleId: S,
     setSelectedSection: P
-  } = e, k = (0, I.T)(p, x, d), G = null != k, [M, B] = i.useState(false), F = i.useMemo(() => ({
+  } = e, k = (0, I.T)(p, x, u), G = null != k, [M, B] = i.useState(false), F = i.useMemo(() => ({
     type: L,
-    item: () => (O(d.id), {
-      id: d.id,
+    item: () => (O(u.id), {
+      id: u.id,
       position: _
     }),
     canDrag: () => M && !G,
@@ -175,7 +175,7 @@ function M(e) {
       if (null == n) return void C();
       y(n.roleId)
     }
-  }), [d, O, C, y, G, M, _]), [{
+  }), [u, O, C, y, G, M, _]), [{
     isDragging: H
   }, W] = (0, s.c)(F), z = i.useMemo(() => ({
     accept: L,
@@ -189,9 +189,9 @@ function M(e) {
       }
     },
     drop: () => ({
-      roleId: d.id
+      roleId: u.id
     })
-  }), [G, d]), [{
+  }), [G, u]), [{
     dragSourcePosition: V
   }, K] = (0, o.L)(z), Y = i.useCallback(e => {
     (0, m.jW)(e, async () => {
@@ -199,11 +199,11 @@ function M(e) {
         default: e
       } = await Promise.resolve().then(n.bind(n, 741247));
       return t => (0, r.jsx)(e, A(D({}, t), {
-        role: d,
+        role: u,
         guild: p
       }))
     })
-  }, [p, d]), q = (0, b.e)(p, d);
+  }, [p, u]), q = (0, b.e)(p, u);
   if (H) return (0, r.jsx)("div", {
     ref: e => {
       W(e)
@@ -212,7 +212,7 @@ function M(e) {
   });
 
   function X() {
-    S(d.id)
+    S(u.id)
   }
   return (0, r.jsxs)(g.P3F, {
     className: a()(Z.roleRow, {
@@ -225,9 +225,9 @@ function M(e) {
     innerRef: e => {
       W(K(e))
     },
-    "data-dnd-name": d.name,
+    "data-dnd-name": u.name,
     "aria-label": w.intl.formatToPlainString(w.t.Vu0Acc, {
-      name: d.name,
+      name: u.name,
       count: "".concat(v)
     }),
     children: [(0, r.jsx)("div", {
@@ -242,13 +242,13 @@ function M(e) {
       })
     }), (0, r.jsxs)("div", {
       className: a()(Z.roleNameContainer, R.roleNameSpacing),
-      children: [(null == (t = d.tags) ? true : t.guild_connections) === null ? (0, r.jsx)(f.Z, {
+      children: [(null == (t = u.tags) ? true : t.guild_connections) === null ? (0, r.jsx)(f.Z, {
         className: Z.roleFlowerStar,
-        color: d.colorString,
+        color: u.colorString,
         size: 24
       }) : (0, r.jsx)(U, {
         guildId: p.id,
-        role: d,
+        role: u,
         size: 24,
         className: Z.roleIcon,
         defaultIconClassName: Z.shield
@@ -259,12 +259,12 @@ function M(e) {
         className: Z.roleName,
         color: "header-primary",
         variant: "text-md/medium",
-        children: d.name
-      }), (null == (l = d.tags) ? true : l.subscription_listing_id) != null && (0, r.jsx)(j.Z, {
+        children: u.name
+      }), (null == (l = u.tags) ? true : l.subscription_listing_id) != null && (0, r.jsx)(j.Z, {
         className: Z.subscriptionRoleIcon,
         "aria-label": w.intl.string(w.t.a2Ak8b)
-      }), (null == (c = d.tags) ? true : c.is_guild_product_role) === true && (0, r.jsx)(h.Z, {})]
-    }), (0, r.jsx)(u.u, {
+      }), (null == (c = u.tags) ? true : c.is_guild_product_role) === true && (0, r.jsx)(h.Z, {})]
+    }), (0, r.jsx)(d.u, {
       text: w.intl.string(w.t.CW75t0),
       "aria-label": w.intl.formatToPlainString(w.t.Fgs8fD, {
         count: "".concat(v)
@@ -289,7 +289,7 @@ function M(e) {
       })
     }), (0, r.jsxs)("div", {
       className: a()(Z.buttonsContainer, R.buttonsSpacing),
-      children: [(0, r.jsx)(u.u, {
+      children: [(0, r.jsx)(d.u, {
         text: G ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75uw),
         children: (0, r.jsx)(g.hU, {
           variant: "secondary",
@@ -297,7 +297,7 @@ function M(e) {
           icon: G ? g.tEF : g.vdY,
           onClick: X
         })
-      }), (0, r.jsx)(u.u, {
+      }), (0, r.jsx)(d.u, {
         text: w.intl.string(w.t["UKOtz+"]),
         shouldShow: q,
         children: (0, r.jsx)(g.hU, {
@@ -318,21 +318,21 @@ function U(e) {
     guildId: s,
     role: o,
     size: c,
-    enableTooltip: u,
+    enableTooltip: d,
     className: m,
     defaultIconClassName: p
   } = e, {
     hasGradient: f,
     stops: h,
     gradientId: b
-  } = (0, d.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), j = (0, _.yH)(s, o), O = (0, x.p9)({
+  } = (0, u.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), j = (0, _.yH)(s, o), O = (0, x.p9)({
     guildId: s,
     roleId: o.id,
     size: c
   });
   if (null != O) return (0, r.jsx)(v.Z, A(D({}, O), {
     className: m,
-    enableTooltip: u
+    enableTooltip: d
   }));
   let C = null != (l = o.colorString) ? l : P.Pbq;
   return j && f && (C = "url(#".concat(b, ")")), (0, r.jsxs)(r.Fragment, {

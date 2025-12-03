@@ -1,7 +1,7 @@
 /** Chunk was on 18417 **/
 /** chunk id: 740696, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => h
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,10 +18,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87612 = require("./87612.js");
 
-function f(t) {
+function h(t) {
   let {
     guildId: e,
-    shouldUpsellCreation: f,
+    shouldUpsellCreation: h,
     transitionState: v,
     onClose: j
   } = t, b = (0, s.e7)([l.Z], () => l.Z.getGuild(e), [e]), y = (0, s.e7)([c.Z], () => c.Z.can(u.Plq.MANAGE_CHANNELS, b)), N = [{
@@ -34,11 +34,11 @@ function f(t) {
     id: 2,
     name: x.intl.string(x.t.x3drh1)
   }], [P, S] = r.useState(0), O = [{
-    variant: f ? "secondary" : "primary",
-    text: f ? x.intl.string(x.t.TulDPl) : x.intl.string(x.t["NX+WJN"]),
+    variant: h ? "secondary" : "primary",
+    text: h ? x.intl.string(x.t.TulDPl) : x.intl.string(x.t["NX+WJN"]),
     onClick: () => j(p.L.SECONDARY)
   }];
-  return f && O.push({
+  return h && O.push({
     variant: "primary",
     text: x.intl.string(x.t["1X8SK/"]),
     onClick: () => {
@@ -68,7 +68,7 @@ function f(t) {
           }({}, n), i = i = {
             channelType: u.d4z.GUILD_FORUM,
             guildId: e,
-            prefillChannelName: f ? x.intl.string(x.t["5z1Xat"]) : true
+            prefillChannelName: h ? x.intl.string(x.t["5z1Xat"]) : true
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(t, e) {
             var n = Object.keys(t);
             if (Object.getOwnPropertySymbols) {
@@ -94,16 +94,16 @@ function f(t) {
         selectedItem: P,
         type: "top",
         onItemSelect: t => {
-          S(t), (0, d.ws)({
+          S(t), (0, g.ws)({
             forumDemoId: t
           })
         },
-        className: h.tags,
+        className: f.tags,
         children: N.map((t, e) => (0, a.jsx)(o.njP.Item, {
           id: e,
           children: t.name
         }, e))
-      }), (0, a.jsx)(g.Z, {
+      }), (0, a.jsx)(d.Z, {
         id: P
       })]
     }), y && (0, a.jsx)(i.Go$, {

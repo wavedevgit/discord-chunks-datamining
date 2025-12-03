@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk205120 = require("./205120.js"),
   Chunk55160 = require("./55160.js"),
   Chunk481060 = require("./481060.js"),
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
 let b = Chunk473749.memo(function(e) {
   let {
     channel: t,
-    onChange: a
+    onChange: l
   } = e, b = (0, h.AF)(), {
     guidelinesOpen: j
   } = (0, h.xH)(e => {
@@ -38,8 +38,8 @@ let b = Chunk473749.memo(function(e) {
     t !== _ && C(t)
   }, [_]);
   i.useLayoutEffect(() => {
-    setTimeout(a, 350)
-  }, [j, a]);
+    setTimeout(l, 350)
+  }, [j, l]);
   let [T, w] = i.useState(!j), S = (0, c.q_F)({
     opacity: +!!j,
     maxHeight: 500 * !!j,
@@ -90,11 +90,11 @@ let b = Chunk473749.memo(function(e) {
         children: [(0, r.jsx)(c.Text, {
           selectable: true,
           variant: "text-sm/normal",
-          color: "header-secondary",
+          color: "text-default",
           style: {
             maxHeight: 220
           },
-          className: l()(x.guidelines, p.markup),
+          className: a()(x.guidelines, p.markup),
           children: (0, r.jsx)("div", {
             ref: y,
             children: u.Z.parseForumPostGuidelines(t.topic, true, {
@@ -117,7 +117,7 @@ let b = Chunk473749.memo(function(e) {
                     default: e
                   } = await n.e("78712").then(n.bind(n, 223164));
                   return n => {
-                    var i, a;
+                    var i, l;
                     return (0, r.jsx)(e, (i = function(e) {
                       for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {},
@@ -135,17 +135,17 @@ let b = Chunk473749.memo(function(e) {
                         })
                       }
                       return e
-                    }({}, n), a = a = {
+                    }({}, n), l = l = {
                       channel: t
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                       var n = Object.keys(e);
                       if (Object.getOwnPropertySymbols) {
                         var r = Object.getOwnPropertySymbols(e);
                         n.push.apply(n, r)
                       }
                       return n
-                    })(Object(a)).forEach(function(e) {
-                      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+                    })(Object(l)).forEach(function(e) {
+                      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
                     }), i))
                   }
                 })

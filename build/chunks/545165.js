@@ -12,22 +12,22 @@ var Chunk984933 = require("./984933.js");
 function a(e, t) {
   let [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [i.ZP];
   if (null == t) return [];
-  let r = n.getChannels(e)[i.Zb],
+  let l = n.getChannels(e)[i.Zb],
     a = [];
   for (let {
       channel: e
     }
-    of r) {
+    of l) {
     let {
       canCreateGuildEvent: n,
-      canManageAllEvents: r
-    } = (0, l.Gw)(e), i = n || r;
+      canManageAllEvents: l
+    } = (0, r.Gw)(e), i = n || l;
     e.type === t && (e.isGuildVoice() && i ? a.push(e) : e.isGuildStageVoice() && i && a.push(e))
   }
   return a
 }
 
 function s(e, t) {
-  return (0, r.Wu)([i.ZP], () => a(e, t, [i.ZP]), [e, t])
+  return (0, l.Wu)([i.ZP], () => a(e, t, [i.ZP]), [e, t])
 }
 require("./496675.js"), require("./85243.js")

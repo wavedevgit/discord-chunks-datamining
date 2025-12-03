@@ -52,7 +52,7 @@ function j(e) {
     }), (0, r.jsx)(u.Text, {
       className: P.parentChannelNameText,
       variant: "text-xs/medium",
-      color: "header-secondary",
+      color: "text-default",
       children: t.name
     })]
   });

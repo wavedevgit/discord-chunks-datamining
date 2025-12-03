@@ -22,26 +22,26 @@ function p(e) {
     attachments: t,
     role: n,
     roleLocked: i
-  } = e, [l, m] = a.useState(false);
+  } = e, [s, m] = a.useState(false);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(s.P3F, {
+    children: [(0, r.jsxs)(l.P3F, {
       className: f.viewContents,
       onClick: () => {
         m(e => !e)
       },
-      "aria-expanded": l,
+      "aria-expanded": s,
       "aria-controls": h,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: l ? x.intl.string(x.t.DKNxgB) : x.intl.string(x.t.ESEKua)
+        children: s ? x.intl.string(x.t.DKNxgB) : x.intl.string(x.t.ESEKua)
       }), (0, r.jsx)(o.Z, {
         className: f.caretIcon,
-        direction: l ? o.Z.Directions.UP : o.Z.Directions.DOWN
+        direction: s ? o.Z.Directions.UP : o.Z.Directions.DOWN
       })]
-    }), (0, r.jsx)(s.LZC, {
+    }), (0, r.jsx)(l.LZC, {
       size: 12
-    }), l && (0, r.jsxs)("ul", {
+    }), s && (0, r.jsxs)("ul", {
       className: f.contentsContainer,
       id: h,
       children: [(0, r.jsx)(d.Z, {
@@ -72,17 +72,17 @@ function j(e) {
   var t;
   let {
     listing: n
-  } = e, a = null != (t = n.attachments) ? t : [], s = (0, i.e7)([l.Z], () => {
+  } = e, a = null != (t = n.attachments) ? t : [], l = (0, i.e7)([s.Z], () => {
     var e;
-    return l.Z.getRole(n.guild_id, null != (e = n.role_id) ? e : m.lds)
+    return s.Z.getRole(n.guild_id, null != (e = n.role_id) ? e : m.lds)
   }), o = !n.has_entitlement;
-  return 0 === a.length && null == s ? null : 0 === a.length && null != s ? (0, r.jsx)(u.Z, {
-    role: s,
+  return 0 === a.length && null == l ? null : 0 === a.length && null != l ? (0, r.jsx)(u.Z, {
+    role: l,
     textVariant: "text-md/medium",
     locked: o
   }) : (0, r.jsx)(p, {
     attachments: a,
-    role: s,
+    role: l,
     roleLocked: o
   })
 }

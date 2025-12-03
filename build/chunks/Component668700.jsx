@@ -66,7 +66,7 @@ function I(e) {
     x = () => {
       if (!w) return (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         lineClamp: 1,
         children: (0, r.jsx)(a.Z, {
           children: P
@@ -82,7 +82,7 @@ function I(e) {
         className: v.clickableText,
         children: (0, r.jsx)(l.Text, {
           variant: "text-xs/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           lineClamp: 1,
           children: (0, r.jsx)(a.Z, {
             children: P
@@ -98,13 +98,13 @@ function I(e) {
       className: v.voiceChannel,
       children: [D(), (0, r.jsx)(l.Fbu, {
         size: "xxs",
-        color: l.TVs.colors.TEXT_SECONDARY
+        color: l.TVs.colors.TEXT_SUBTLE
       }), (0, r.jsxs)("div", {
         className: v.voiceChannelText,
         children: [(0, r.jsx)(E.Z, {
           channel: I,
           size: "xxs",
-          color: l.TVs.colors.TEXT_SECONDARY,
+          color: l.TVs.colors.TEXT_SUBTLE,
           className: v.voiceIcon
         }), x()]
       }), (0, r.jsx)(o.Z, {
@@ -113,7 +113,7 @@ function I(e) {
         channelId: I.id,
         maxUsers: S,
         size: l.EFr.SIZE_16,
-        overflowCountColor: "text-secondary",
+        overflowCountColor: "text-subtle",
         overflowCountClassName: v.voiceChannelOverflowCount,
         onClickOverflow: e => {
           e.stopPropagation(), null == T || T({

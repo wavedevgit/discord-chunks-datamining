@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk512722 = require("./512722.js"),
   r = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
-  d = require.n(Chunk392711),
+  u = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -85,7 +85,7 @@ function Q(e) {
   let {
     channel: n,
     className: t
-  } = e, o = (0, g.KS)(n);
+  } = e, o = (0, y.KS)(n);
   return (0, c.jsxs)("div", {
     className: l()(q.channelName, t),
     children: [null != o ? (0, c.jsx)(o, {
@@ -151,7 +151,7 @@ function X(e) {
         value: l
       }))) return null
   }
-  return n = i ? "header-secondary" : "text-feedback-critical", (0, c.jsx)(p.Text, {
+  return n = i ? "text-default" : "text-feedback-critical", (0, c.jsx)(p.Text, {
     variant: "text-xs/normal",
     color: n,
     className: q.connectionsCheck,
@@ -164,21 +164,21 @@ function $(e) {
     eligibilityStatesGroups: n,
     onPlatformConnect: t,
     onPlatformConnected: a
-  } = e, [i, s] = o.useState({}), [u, x] = o.useState(0), [N, A] = o.useState(null), [v, b] = o.useState(null), _ = o.useMemo(() => d().flatten(n), [n]), y = o.useMemo(() => d().groupBy(_, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : "")), [_]);
+  } = e, [i, s] = o.useState({}), [d, x] = o.useState(0), [N, A] = o.useState(null), [v, b] = o.useState(null), _ = o.useMemo(() => u().flatten(n), [n]), g = o.useMemo(() => u().groupBy(_, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : "")), [_]);
   o.useEffect(() => x(Date.now()), [_]), o.useEffect(() => {
     if (null == N) return;
-    let e = y["".concat(N).concat(null != v ? ":".concat(v.id) : "")];
+    let e = g["".concat(N).concat(null != v ? ":".concat(v.id) : "")];
     null != e && e.every(e => e.result) && a(N, v)
-  }, [y, N, v, a]);
-  let g = (0, p.dQu)(h.Z.unsafe_rawColors.GREEN_330).hex();
+  }, [g, N, v, a]);
+  let y = (0, p.dQu)(h.Z.unsafe_rawColors.GREEN_330).hex();
   return (0, c.jsx)(c.Fragment, {
-    children: Object.keys(y).sort((e, n) => {
-      let t = y[e].every(e => e.result),
-        c = y[n].every(e => e.result);
+    children: Object.keys(g).sort((e, n) => {
+      let t = g[e].every(e => e.result),
+        c = g[n].every(e => e.result);
       returntrue === t && false === c ? 1 : false === t && true === c ? false : 0
     }).map(e => {
       var n, o, a;
-      let d, h, x, N = y[e],
+      let u, h, x, N = g[e],
         v = N.find(e => null == e.operator),
         _ = N.filter(e => null != e.operator),
         I = (null == v || v.result) && _.every(e => e.result),
@@ -187,16 +187,16 @@ function $(e) {
         O = null == E || E.enabled,
         S = null == k ? true : k.application,
         G = (null == S ? true : S.bot) != null ? new P.Z(S.bot) : null;
-      D.SJ.includes(null != (n = null == S ? true : S.id) ? n : "") ? d = (0, c.jsx)(U.Z, {
+      D.SJ.includes(null != (n = null == S ? true : S.id) ? n : "") ? u = (0, c.jsx)(U.Z, {
         className: q.botTag,
-        color: g,
+        color: y,
         size: 16
-      }) : null != G && (d = (0, c.jsx)(T.Z, {
+      }) : null != G && (u = (0, c.jsx)(T.Z, {
         className: q.botTag,
         verified: G.isVerifiedBot()
       }));
       let w = i[null != (o = null == E ? true : E.type) ? o : V.Kt],
-        R = !I && null != w && w <= u;
+        R = !I && null != w && w <= d;
       return h = I ? (0, c.jsx)(p.dz2, {
         size: "md",
         color: "currentColor",
@@ -254,7 +254,7 @@ function $(e) {
               variant: "text-md/medium",
               color: "header-primary",
               children: null != (a = null == E ? true : E.name) ? a : null == S ? true : S.name
-            }), d, null != x ? (0, c.jsx)(m.u, {
+            }), u, null != x ? (0, c.jsx)(m.u, {
               text: x,
               children: (0, c.jsx)(p.d3s, {
                 size: "xs",
@@ -292,8 +292,8 @@ function ee(e) {
       setShowPreviewInvisibleIcon: i,
       setShowPreviewMetadata: r
     } = e,
-    [s, d] = o.useState(l.friendSync),
-    [u, h] = o.useState(l.showActivity),
+    [s, u] = o.useState(l.friendSync),
+    [d, h] = o.useState(l.showActivity),
     [m, x] = o.useState(1 === l.metadataVisibility),
     [C, A] = o.useState(1 === l.visibility);
   (0, v.ZP)(() => {
@@ -304,13 +304,13 @@ function ee(e) {
     label: Y.intl.string(Y.t["+KCMSi"]),
     checked: s,
     onChange: e => {
-      d(e), N.Z.setFriendSync(l.type, l.id, e)
+      u(e), N.Z.setFriendSync(l.type, l.id, e)
     }
   })), W.vbS.has(l.type) && (t = (0, c.jsx)(p.rsf, {
     label: Y.intl.format(Y.t["6u6J0q"], {
       platform: f.name
     }),
-    checked: u,
+    checked: d,
     onChange: e => {
       h(e), N.Z.setShowActivity(l.type, l.id, e)
     }
@@ -339,7 +339,7 @@ function en(e) {
     onClose: t,
     guildId: a,
     role: l
-  } = e, [i, s] = o.useState(0), [d, h] = o.useState(null), [x, C] = o.useState(false), [N, f] = o.useState(true), [v, T] = o.useState(false), [g, P] = o.useState(true), [B, D] = o.useState(false), H = (0, u.e7)([w.Z], () => w.Z.getAccounts()), U = (0, u.e7)([S.default], () => S.default.getId()), [V, J] = o.useState(null), [X, en] = o.useState(null), [et, ec] = o.useState(null), eo = (0, b.ZP)(), ea = (0, u.e7)([k.default], () => k.default.locale), el = (0, u.e7)([R.ZP], () => R.ZP.getMember(a, U)), ei = Object.values((0, u.e7)([G.Z], () => G.Z.getMutableGuildChannelsForGuild(a))).filter(e => Z.Z.can(W.Plq.VIEW_CHANNEL, e) && Z.Z.can(W.Plq.SEND_MESSAGES, e) && (0, y.Z)(e).includes(l));
+  } = e, [i, s] = o.useState(0), [u, h] = o.useState(null), [x, C] = o.useState(false), [N, f] = o.useState(true), [v, T] = o.useState(false), [y, P] = o.useState(true), [B, D] = o.useState(false), H = (0, d.e7)([w.Z], () => w.Z.getAccounts()), U = (0, d.e7)([S.default], () => S.default.getId()), [V, J] = o.useState(null), [X, en] = o.useState(null), [et, ec] = o.useState(null), eo = (0, b.ZP)(), ea = (0, d.e7)([k.default], () => k.default.locale), el = (0, d.e7)([R.ZP], () => R.ZP.getMember(a, U)), ei = Object.values((0, d.e7)([G.Z], () => G.Z.getMutableGuildChannelsForGuild(a))).filter(e => Z.Z.can(W.Plq.VIEW_CHANNEL, e) && Z.Z.can(W.Plq.SEND_MESSAGES, e) && (0, g.Z)(e).includes(l));
 
   function er() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
@@ -352,12 +352,12 @@ function en(e) {
     })
   }
 
-  function ed() {
+  function eu() {
     er(true), (0, O.openUserSettings)(E.n.CONNECTIONS_PANEL, {
       section: W.oAB.CONNECTIONS
     })
   }
-  async function eu() {
+  async function ed() {
     T(true), await A.Z.assignGuildRoleConnection(a, l.id)
   }
 
@@ -446,33 +446,33 @@ function en(e) {
       children: function() {
         switch (i) {
           case 0: {
-            let e = null != d && d.length > 1,
-              n = null != d && 1 === d.length && 1 === d[0].length;
+            let e = null != u && u.length > 1,
+              n = null != u && 1 === u.length && 1 === u[0].length;
             return (0, c.jsx)(p.hzk, {
-              children: N || null == d ? (0, c.jsx)(p.$jN, {
+              children: N || null == u ? (0, c.jsx)(p.$jN, {
                 className: q.connectionsChecksGroups
               }) : (0, c.jsxs)(c.Fragment, {
                 children: [(0, c.jsx)(p.Text, {
                   variant: "text-md/medium",
-                  color: "header-secondary",
+                  color: "text-default",
                   children: Y.intl.format(n ? Y.t.jHfRvZ : e ? Y.t["mOQ8k+"] : Y.t.U0olLg, {
                     roleName: l.name
                   })
                 }), (0, c.jsx)(p.zJl, {
                   className: q.connectionsChecksGroups,
                   children: (0, c.jsx)($, {
-                    eligibilityStatesGroups: d,
+                    eligibilityStatesGroups: u,
                     onPlatformConnect: eh,
                     onPlatformConnected: em
                   })
                 }), (0, c.jsx)(p.Text, {
                   variant: "text-xs/normal",
                   className: q.footerText,
-                  color: "header-secondary",
+                  color: "text-default",
                   children: Y.intl.format(Y.t.gsgvxh, {
                     privacyPolicyUrl: W.EYA.PRIVACY,
                     onAuthorizedApplicationsClick: () => es(),
-                    onConnectionsClick: () => ed()
+                    onConnectionsClick: () => eu()
                   })
                 })]
               })
@@ -495,11 +495,11 @@ function en(e) {
             return (0, c.jsxs)(p.hzk, {
               children: [(0, c.jsx)(p.Text, {
                 variant: "text-md/normal",
-                color: "header-secondary",
+                color: "text-default",
                 children: Y.intl.format(Y.t.gsgvxh, {
                   privacyPolicyUrl: W.EYA.PRIVACY,
                   onAuthorizedApplicationsClick: () => es(),
-                  onConnectionsClick: () => ed()
+                  onConnectionsClick: () => eu()
                 })
               }), (0, c.jsx)("div", {
                 className: q.accountConnectedContainer,
@@ -511,7 +511,7 @@ function en(e) {
                       className: q.accountConnectedContainerChild,
                       children: [(0, c.jsx)(p.Text, {
                         variant: "eyebrow",
-                        color: "header-secondary",
+                        color: "text-default",
                         children: Y.intl.string(Y.t.TOjkEg)
                       }), (0, c.jsx)(I.E3, {
                         connectedAccount: e,
@@ -519,14 +519,14 @@ function en(e) {
                         theme: eo,
                         locale: ea,
                         className: q.accountConnectedPreviewConnectedUserAccount,
-                        showMetadata: g,
+                        showMetadata: y,
                         showInvisibleIcon: B
                       })]
                     }), (0, c.jsxs)("div", {
                       className: q.accountConnectedContainerChild,
                       children: [(0, c.jsx)(p.Text, {
                         variant: "eyebrow",
-                        color: "header-secondary",
+                        color: "text-default",
                         children: Y.intl.string(Y.t.jndPhX)
                       }), (0, c.jsx)(ee, {
                         account: e,
@@ -540,7 +540,7 @@ function en(e) {
                       className: q.accountConnectedHeader,
                       children: [(0, c.jsx)(p.Text, {
                         variant: "eyebrow",
-                        color: "header-secondary",
+                        color: "text-default",
                         children: Y.intl.string(Y.t.TOjkEg)
                       }), (0, c.jsx)(m.u, {
                         text: Y.intl.string(Y.t.x3svVc),
@@ -587,21 +587,21 @@ function en(e) {
       }()
     }), function() {
       var e;
-      let n = null != (e = null == d ? true : d.flat().some(e => null == e.application_id)) && e;
+      let n = null != (e = null == u ? true : u.flat().some(e => null == e.application_id)) && e;
       switch (i) {
         case 0:
           return (0, c.jsxs)(p.mzw, {
             children: [(0, c.jsx)(p.Button, {
               variant: "primary",
               text: Y.intl.string(Y.t["8SuVoE"]),
-              onClick: () => eu(),
+              onClick: () => ed(),
               disabled: N || !x || v
             }), n ? (0, c.jsx)("div", {
               className: q.manageConnectionsFooterButton,
               children: (0, c.jsx)(p.Avr, {
                 variant: "primary",
                 text: Y.intl.string(Y.t.VXV55P),
-                onClick: ed
+                onClick: eu
               })
             }) : null]
           });
@@ -624,7 +624,7 @@ function en(e) {
               children: (0, c.jsx)(p.Avr, {
                 variant: "primary",
                 text: Y.intl.string(Y.t.VXV55P),
-                onClick: ed
+                onClick: eu
               })
             }) : null]
           })

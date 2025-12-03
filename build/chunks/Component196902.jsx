@@ -70,12 +70,12 @@ let x = function(e) {
           })
         })]
       })
-    }), C && (0, r.jsx)(d.Z, {
+    }), C && (0, r.jsx)(u.Z, {
       className: b.tagChangeInfoBox,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         children: h.intl.format(f.default["4ZKDXq"], {
-          articleUrl: u.Z.getArticleURL(p.BhN.SERVER_TAGS)
+          articleUrl: d.Z.getArticleURL(p.BhN.SERVER_TAGS)
         })
       })
     })]

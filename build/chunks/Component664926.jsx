@@ -40,7 +40,7 @@ function d(e) {
       }, e.id))
     }), (0, t.jsx)(i.Text, {
       variant: "text-sm/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: m
     })]
   })

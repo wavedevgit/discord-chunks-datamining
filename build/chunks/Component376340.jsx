@@ -1,5 +1,5 @@
 /** Chunk was on 51343 **/
-/** chunk id: 376340, original params: e,a,t (module,exports,require) **/
+/** chunk id: 376340, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   L: () => c
 });
@@ -13,46 +13,46 @@ var Chunk481060 = require("./481060.js"),
 
 function c(e) {
   let {
-    onClose: a,
-    img: t,
+    onClose: t,
+    img: a,
     title: c,
     body: d,
-    content: x
+    content: u
   } = e;
-  return (0, n.jsxs)(l.Z, {
-    children: [(0, n.jsxs)(r.xBx, {
+  return (0, l.jsxs)(r.Z, {
+    children: [(0, l.jsxs)(n.xBx, {
       direction: s.Z.Direction.VERTICAL,
       className: o.header,
       separator: false,
-      children: [(0, n.jsx)("div", {
+      children: [(0, l.jsx)("div", {
         className: o.illustration,
-        children: t
-      }), (0, n.jsx)(r.Heading, {
+        children: a
+      }), (0, l.jsx)(n.Heading, {
         className: o.title,
         variant: "heading-xl/extrabold",
         children: c
-      }), (0, n.jsx)(r.olH, {
+      }), (0, l.jsx)(n.olH, {
         className: o.closeButton,
-        onClick: a
+        onClick: t
       })]
-    }), (0, n.jsxs)(r.hzk, {
+    }), (0, l.jsxs)(n.hzk, {
       className: o.body,
       paddingFix: false,
-      children: [(0, n.jsx)(r.Text, {
+      children: [(0, l.jsx)(n.Text, {
         tag: "p",
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: d
-      }), x]
-    }), (0, n.jsx)(r.mzw, {
+      }), u]
+    }), (0, l.jsx)(n.mzw, {
       className: o.footer,
-      children: (0, n.jsx)("div", {
+      children: (0, l.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: o.footerButton,
-        children: (0, n.jsx)(r.Button, {
+        children: (0, l.jsx)(n.Button, {
           variant: "primary",
           text: i.intl.string(i.t.i4jeWR),
-          onClick: a
+          onClick: t
         })
       })
     })]

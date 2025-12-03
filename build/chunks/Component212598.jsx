@@ -1,12 +1,12 @@
 /** Chunk was on 51343 **/
-/** chunk id: 212598, original params: e,a,t (module,exports,require) **/
+/** chunk id: 212598, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   t: () => v
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  r = require.n(Chunk512722),
   Chunk478677 = require("./478677.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -22,91 +22,91 @@ let p = new Chunk710845.Z("TwoWayLink");
 
 function v(e) {
   let {
-    platformType: a,
-    isWaitingForConnection: t,
+    platformType: t,
+    isWaitingForConnection: a,
     onWaitingForConnection: s,
-    expectedCallbackState: m,
+    expectedCallbackState: h,
     onAuthToken: v,
-    onError: b,
-    onClose: f,
+    onError: f,
+    onClose: b,
     img: k,
     title: g,
     body: E,
     redirectDestination: T
-  } = e, O = r.useCallback(async () => {
+  } = e, O = n.useCallback(async () => {
     let e;
     try {
-      if (e = await (0, u.H)(a, {
+      if (e = await (0, x.H)(t, {
           twoWayLinkType: i.g.DESKTOP
         }), null == e) throw Error("missing authorizeURL")
     } catch (e) {
-      p.error("Error opening provider authorize page", e), b();
+      p.error("Error opening provider authorize page", e), f();
       return
     }
     let {
-      state: t
-    } = (0, x.xp)(e);
-    l()(null != t, "Authorize URL state query parameter must be present"), null == s || s(t)
-  }, [a, b, s]), R = r.useCallback(e => {
+      state: a
+    } = (0, u.xp)(e);
+    r()(null != a, "Authorize URL state query parameter must be present"), null == s || s(a)
+  }, [t, f, s]), R = n.useCallback(e => {
     let {
-      callbackCode: t,
-      callbackState: n
+      callbackCode: a,
+      callbackState: l
     } = e;
-    if (n !== m) return void p.warn("".concat(a, " link: received mismatching callback state!"));
+    if (l !== h) return void p.warn("".concat(t, " link: received mismatching callback state!"));
     v({
-      callbackCode: t,
-      callbackState: n
+      callbackCode: a,
+      callbackState: l
     })
-  }, [a, m, v]);
-  return r.useEffect(() => (d.Z.subscribe("USER_CONNECTIONS_LINK_CALLBACK", R), () => {
+  }, [t, h, v]);
+  return n.useEffect(() => (d.Z.subscribe("USER_CONNECTIONS_LINK_CALLBACK", R), () => {
     d.Z.unsubscribe("USER_CONNECTIONS_LINK_CALLBACK", R)
-  }), [R]), (0, n.jsxs)(N.Z, {
-    children: [(0, n.jsxs)(c.xBx, {
-      direction: h.Z.Direction.VERTICAL,
+  }), [R]), (0, l.jsxs)(N.Z, {
+    children: [(0, l.jsxs)(c.xBx, {
+      direction: m.Z.Direction.VERTICAL,
       className: j.header,
       separator: false,
-      children: [(0, n.jsx)(c.Text, {
+      children: [(0, l.jsx)(c.Text, {
         className: j.stepHeader,
         variant: "text-xs/bold",
-        color: "header-secondary",
+        color: "text-default",
         children: C.intl.format(C.t.fHz6eR, {
           number: 1,
           total: 2
         })
-      }), (0, n.jsxs)("div", {
+      }), (0, l.jsxs)("div", {
         className: j.illustration,
         children: [k, " "]
-      }), (0, n.jsx)(c.Heading, {
+      }), (0, l.jsx)(c.Heading, {
         className: j.title,
         variant: "heading-xl/extrabold",
         children: g
-      }), null != f && (0, n.jsx)(c.olH, {
+      }), null != b && (0, l.jsx)(c.olH, {
         className: j.closeButton,
-        onClick: f
+        onClick: b
       })]
-    }), (0, n.jsxs)(c.hzk, {
+    }), (0, l.jsxs)(c.hzk, {
       className: j.body,
       paddingFix: false,
-      children: [(0, n.jsx)(c.Text, {
+      children: [(0, l.jsx)(c.Text, {
         tag: "p",
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: E
-      }), !t && null != T && (0, n.jsx)(c.Text, {
+      }), !a && null != T && (0, l.jsx)(c.Text, {
         tag: "p",
         variant: "text-sm/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: C.intl.format(C.t.XhlYYn, {
           redirectUrl: T
         })
       })]
-    }), (0, n.jsx)(c.mzw, {
+    }), (0, l.jsx)(c.mzw, {
       className: j.footer,
-      children: (0, n.jsxs)(o.zx, {
+      children: (0, l.jsxs)(o.zx, {
         className: j.footerButton,
-        color: t ? o.zx.Colors.PRIMARY : o.zx.Colors.BRAND,
+        color: a ? o.zx.Colors.PRIMARY : o.zx.Colors.BRAND,
         onClick: O,
-        children: [t ? C.intl.string(C.t["5911Lb"]) : C.intl.string(C.t["3PatSz"]), (0, n.jsx)(c.rgF, {
+        children: [a ? C.intl.string(C.t["5911Lb"]) : C.intl.string(C.t["3PatSz"]), (0, l.jsx)(c.rgF, {
           color: "currentColor",
           className: j.launchIcon,
           size: "xs"

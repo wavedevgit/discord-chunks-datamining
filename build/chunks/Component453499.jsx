@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => j
 }), require("./388685.js");
-var r, a, Chunk54381 = require("./54381.js"),
+var r, i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
@@ -39,7 +39,7 @@ class v extends(r = Chunk473749.PureComponent) {
       count: t,
       includeHitboxPadding: n,
       arrowClassName: r,
-      paginationDotClassName: a,
+      paginationDotClassName: i,
       paginationDotSelectedClassName: l,
       paginationArrowIconType: s = "arrow"
     } = this.props, c = o()(Chunk633448.arrowHitbox, {
@@ -57,10 +57,10 @@ class v extends(r = Chunk473749.PureComponent) {
         })
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk633448.dots,
-        children: d().times(exports, t => (0, i.jsx)(p.P3F, {
+        children: d().times(exports, t => (0, a.jsx)(p.P3F, {
           onClick: () => this.handleDotClick(t),
-          className: t === e ? o()(b.dotSelected, l) : o()(b.dotNormal, a),
-          "aria-label": f.intl.formatToPlainString(f.t["2SXOrM"], {
+          className: t === e ? o()(b.dotSelected, l) : o()(b.dotNormal, i),
+          "aria-label": _.intl.formatToPlainString(_.t["2SXOrM"], {
             pageNumber: t + 1
           })
         }, "dot-".concat(t)))
@@ -103,7 +103,7 @@ class v extends(r = Chunk473749.PureComponent) {
 x(v, "defaultProps", {
   includeHitboxPadding: true
 });
-class C extends(a = Chunk473749.PureComponent) {
+class C extends(i = Chunk473749.PureComponent) {
   componentDidMount() {
     Chunk570140.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocusChange), this.props.initialPaused || this.state.paused || this.startTimer()
   }
@@ -113,14 +113,14 @@ class C extends(a = Chunk473749.PureComponent) {
   componentDidUpdate(e, t) {
     let n = (e, t) => !e.initialPaused && !t.paused,
       r = n(this.props, this.state),
-      a = n(e, t);
-    r && !a ? this.startTimer() : !r && a && this.stopTimer();
+      i = n(e, t);
+    r && !i ? this.startTimer() : !r && i && this.stopTimer();
     let {
-      items: i
+      items: a
     } = this.props, {
       visibleIndex: l
     } = this.state;
-    null == i[l] && this.changeItem(i, 1)
+    null == a[l] && this.changeItem(a, 1)
   }
   startTimer() {
     null != this.props.delay && this.timer.start(this.props.delay, this.nextItem)
@@ -135,10 +135,10 @@ class C extends(a = Chunk473749.PureComponent) {
       onChangeItem: r
     } = this.props;
     null == r || r(e[n], this.state.visibleIndex, n);
-    let a = t > 0 ? h.n.LEFT : h.n.RIGHT;
+    let i = t > 0 ? h.n.LEFT : h.n.RIGHT;
     return this.setState({
       visibleIndex: n,
-      direction: a
+      direction: i
     }), n
   }
   render() {
@@ -147,7 +147,7 @@ class C extends(a = Chunk473749.PureComponent) {
       renderItem: t,
       className: n,
       slideAnimatorClassName: r,
-      slideAnimatorSpringSettings: a,
+      slideAnimatorSpringSettings: i,
       slideAnimatorFadeInOut: l,
       paginationClassName: s,
       paginationArrowClassName: c,
@@ -156,8 +156,8 @@ class C extends(a = Chunk473749.PureComponent) {
       paginationDotSelectedClassName: p,
       themedPagination: m,
       includeHitboxPadding: g,
-      style: _,
-      aspectRatio: f,
+      style: f,
+      aspectRatio: _,
       children: x
     } = this.props, {
       visibleIndex: C
@@ -177,7 +177,7 @@ class C extends(a = Chunk473749.PureComponent) {
             className: o()(Chunk633448.carousel, r),
             step: C,
             direction: this.getCurrentDirection(),
-            springSettings: a,
+            springSettings: i,
             fadeInOut: Chunk473749,
             children: exports(module[C], C)
           })
@@ -236,9 +236,9 @@ class C extends(a = Chunk473749.PureComponent) {
     }), x(this, "handleIntentionalChange", (e, t, n) => {
       let {
         items: r,
-        onIntentionalChange: a
+        onIntentionalChange: i
       } = this.props;
-      return null == a ? true : a(r[t], e, t, n)
+      return null == i ? true : i(r[t], e, t, n)
     }), this.state = {
       visibleIndex: true === e.randomize ? d().random(0, e.items.length - 1) : 0,
       direction: h.n.LEFT,

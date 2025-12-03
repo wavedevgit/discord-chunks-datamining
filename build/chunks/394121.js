@@ -1,5 +1,5 @@
 /** Chunk was on 3378 **/
-/** chunk id: 394121, original params: n,e,t (module,exports,require) **/
+/** chunk id: 394121, original params: n,t,e (module,exports,require) **/
 module.exports = {
   confirmation: "confirmation__1051d",
   iconWrapper: "iconWrapper__1051d",

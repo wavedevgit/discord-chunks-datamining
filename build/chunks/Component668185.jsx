@@ -59,7 +59,7 @@ function d(e) {
     children: [h.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.x, {
         variant: "text-sm/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: c.intl.format(c.t.sOaT2j, {
           applicationName: t.name,
           guildName: p.name
@@ -71,7 +71,7 @@ function d(e) {
     }) : null, g.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.x, {
         variant: "text-sm/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: c.intl.format(c.t.fsOkF4, {
           applicationName: t.name
         })

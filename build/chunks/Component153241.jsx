@@ -90,7 +90,7 @@ let E = e => {
       onClose: r,
       subscriptionId: s
     } = e, a = C(e, ["onInvite", "onClose", "subscriptionId"]);
-    let [l, p] = i.useState([]), [f, m] = i.useState(""), h = (0, d.Z)(f, 400), {
+    let [l, p] = i.useState([]), [f, b] = i.useState(""), h = (0, d.Z)(f, 400), {
       eligibleUsers: v,
       getNextRows: O,
       hasError: w,
@@ -117,14 +117,14 @@ let E = e => {
       input: (0, n.jsx)(u.Z, {
         className: _.searchbar,
         size: u.Z.Sizes.MEDIUM,
-        tags: l.map(e => b.ZP.getName(e)),
+        tags: l.map(e => m.ZP.getName(e)),
         placeholder: 0 === l.length ? x.intl.string(j.default.wRS8vo) : "",
         query: f,
         onRemoveTag: e => {
           p(t => t.filter((t, r) => r !== e))
         },
-        onQueryChange: m,
-        onClear: () => m("")
+        onQueryChange: b,
+        onClear: () => b("")
       }),
       actions: [],
       actionBarInput: (() => {
@@ -203,7 +203,7 @@ let E = e => {
       if (null == e) throw TypeError("Cannot destructure " + e);
       return e
     }(e));
-    let r = (0, l.e7)([m.Z], () => m.Z.getPremiumGroupSubscription()),
+    let r = (0, l.e7)([b.Z], () => b.Z.getPremiumGroupSubscription()),
       [s, o] = i.useState([]);
     a()(null != r, "Subscription not found");
     let [c, u] = i.useState(1), d = async e => {

@@ -22,14 +22,14 @@ var Chunk54381 = require("./54381.js"),
 
 function _(e, t) {
   var _;
-  let b = null != (_ = (0, u.Z)(t)) && _,
-    h = (0, l.e7)([c.Z], () => {
+  let b = null != (_ = (0, c.Z)(t)) && _,
+    h = (0, l.e7)([u.Z], () => {
       var e;
-      return null == (e = c.Z.getStateForGuild(t)) ? true : e.allPowerups
+      return null == (e = u.Z.getStateForGuild(t)) ? true : e.allPowerups
     }),
-    j = (0, l.e7)([c.Z], () => {
+    j = (0, l.e7)([u.Z], () => {
       var e;
-      return null == (e = c.Z.getStateForGuild(t)) ? true : e.unlockedPowerups
+      return null == (e = u.Z.getStateForGuild(t)) ? true : e.unlockedPowerups
     });
   return i.useMemo(() => {
     let i = e => "guildTagsBadgePacks" === e ? function(e) {
@@ -37,9 +37,9 @@ function _(e, t) {
           guildId: t,
           canUseBoosts: i,
           allPowerups: l,
-          unlockedPowerups: c,
-          skuIds: u
-        } = e, d = g.intl.string(m.default.KC9HRW), _ = g.intl.string(m.default.GJiSmP), b = null == l ? true : l[o.IN], h = (null == c ? true : c[o.IN]) != null, j = g.intl.string(m.default["/egwJA"]), C = h ? true : g.intl.string(m.default.W6Vwn3), w = h ? true : g.intl.string(m.default.lvk1Gc), Z = h ? g.intl.string(m.default["9CfkLO"]) : g.intl.string(g.t["+7XY31"]), I = h ? "secondary" : "expressive", E = i ? () => {
+          unlockedPowerups: u,
+          skuIds: c
+        } = e, d = g.intl.string(m.default.KC9HRW), _ = g.intl.string(m.default.GJiSmP), b = null == l ? true : l[o.IN], h = (null == u ? true : u[o.IN]) != null, j = g.intl.string(m.default["/egwJA"]), C = h ? true : g.intl.string(m.default.W6Vwn3), w = h ? true : g.intl.string(m.default.lvk1Gc), Z = h ? g.intl.string(m.default["9CfkLO"]) : g.intl.string(g.t["+7XY31"]), I = h ? "secondary" : "expressive", E = i ? () => {
           h ? s.Z.open(t, f.pNK.TAG, f.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != b && (0, p.KE)(t, b), (0, a.pTH)()
         } : true;
         return {
@@ -91,7 +91,7 @@ function _(e, t) {
             staticUrl: x.Z,
             animatedUrl: v.Z
           },
-          skuIds: u
+          skuIds: c
         }
       }({
         guildId: t,

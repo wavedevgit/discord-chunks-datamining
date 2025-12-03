@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   o = require.n(Chunk913527),
   Chunk205120 = require("./205120.js"),
@@ -171,7 +171,7 @@ let Y = e => {
   },
   ee = e => {
     let t, {
-        hasAnyThread: a,
+        hasAnyThread: l,
         hasActiveThreads: s,
         channel: x
       } = e,
@@ -213,7 +213,7 @@ let Y = e => {
           setVisible: t
         }
       })(),
-      ea = (0, g.Yzy)(U, {
+      el = (0, g.Yzy)(U, {
         from: {
           maxHeight: 0
         },
@@ -227,7 +227,7 @@ let Y = e => {
           duration: 200
         }
       }),
-      el = i.useCallback(e => {
+      ea = i.useCallback(e => {
         var t;
         null == (t = e.clickHandler) || t.call(e)
       }, []),
@@ -240,18 +240,18 @@ let Y = e => {
       } = (e => {
         let {
           guild: t,
-          channel: a,
-          hasAnyThread: l,
+          channel: l,
+          hasAnyThread: a,
           handleHide: s
-        } = e, [c, d] = i.useState(false), h = (0, A.c)(a.id), x = (0, m.e7)([I.Z], () => I.Z.hasHidden(a.id)), p = function(e, t, a, l) {
+        } = e, [c, d] = i.useState(false), h = (0, A.c)(l.id), x = (0, m.e7)([I.Z], () => I.Z.hasHidden(l.id)), p = function(e, t, l, a) {
           let s = null == e ? true : e.id,
             o = (0, m.e7)([T.Z], () => null != s ? T.Z.getSortedRoles(s) : true);
           return i.useMemo(() => {
             let i, s = new X,
               c = (null == t ? true : t.isMediaChannel()) === true;
-            return null == e || null == t || c || null == o || s.addStep(function(e, t, i, a) {
-              let l = (0, b.Z)(i) ? u.$e(H.Plq.VIEW_CHANNEL, H.Plq.SEND_MESSAGES) : H.Plq.SEND_MESSAGES,
-                s = null != e ? (0, R.E)(t, i, l).filter(e => i.permissionOverwrites.hasOwnProperty(e.id) || (0, y.fI)(e)) : [],
+            return null == e || null == t || c || null == o || s.addStep(function(e, t, i, l) {
+              let a = (0, b.Z)(i) ? u.$e(H.Plq.VIEW_CHANNEL, H.Plq.SEND_MESSAGES) : H.Plq.SEND_MESSAGES,
+                s = null != e ? (0, R.E)(t, i, a).filter(e => i.permissionOverwrites.hasOwnProperty(e.id) || (0, y.fI)(e)) : [],
                 o = s.length > 0,
                 c = s.some(e => (0, y.fI)(e));
               return {
@@ -268,20 +268,20 @@ let Y = e => {
                     let {
                       default: t
                     } = await n.e("78704").then(n.bind(n, 560602));
-                    return a(true), n => (0, r.jsx)(t, V(G({}, n), {
+                    return l(true), n => (0, r.jsx)(t, V(G({}, n), {
                       channel: i,
                       guild: e,
-                      permission: l,
+                      permission: a,
                       currentSelectedRoles: s
                     }))
                   }, {
                     modalKey: "SEND_MESSAGE_ROLE_PERMISSION_FIX_MODAL_KEY",
                     onCloseRequest: H.VqG,
-                    onCloseCallback: () => a(false)
+                    onCloseCallback: () => l(false)
                   })
                 }
               }
-            }(e, o, t, l)), c || s.addStep((e => {
+            }(e, o, t, a)), c || s.addStep((e => {
               let t = null != e.topic && e.topic.length > 0;
               return {
                 name: z.intl.string(z.t.UgJu1e),
@@ -343,13 +343,13 @@ let Y = e => {
               clickHandler: () => {
                 K(D.ZI.CREATE_POST), N.S.dispatch(H.CkL.FOCUS_COMPOSER_TITLE)
               },
-              isDone: a
+              isDone: l
             })), s
-          }, [t, e, o, a, l])
-        }(t, a, l, d), j = p.isAllDone(), v = h || x || !(e => {
+          }, [t, e, o, l, a])
+        }(t, l, a, d), j = p.isAllDone(), v = h || x || !(e => {
           let t = P.default.extractTimestamp(e);
           return o()().isBefore(o()(t).add(o().duration(15, "days")))
-        })(a.id), _ = i.useRef(0);
+        })(l.id), _ = i.useRef(0);
         return i.useEffect(() => (c || !j || v ? clearTimeout(_.current) : _.current = setTimeout(() => {
           s()
         }, 60 * O.Z.Millis.SECOND), () => clearTimeout(_.current)), [j, v, s, c]), {
@@ -361,7 +361,7 @@ let Y = e => {
       })({
         guild: et,
         channel: x,
-        hasAnyThread: a,
+        hasAnyThread: l,
         handleHide: es
       }),
       em = !ed && !ec,
@@ -375,14 +375,14 @@ let Y = e => {
         isAllDone: t,
         isVisible: n,
         canManageChannel: r,
-        guildId: a,
-        channel: l
-      } = e, s = (0, m.e7)([T.Z], () => null != a ? T.Z.partitionVersion(a) : true), o = i.useCallback(() => {
+        guildId: l,
+        channel: a
+      } = e, s = (0, m.e7)([T.Z], () => null != l ? T.Z.partitionVersion(l) : true), o = i.useCallback(() => {
         N.S.dispatch(H.CkL.REMEASURE_TARGET)
       }, []);
       i.useEffect(() => {
         o()
-      }, [o, t, n, r, s, l.id, l.permissionOverwrites])
+      }, [o, t, n, r, s, a.id, a.permissionOverwrites])
     })({
       isAllDone: eu,
       isVisible: em,
@@ -392,14 +392,14 @@ let Y = e => {
     }), i.useEffect(() => {
       ec || ei(!ed)
     }, [ec, ei, ed]), (0, p.ZP)(() => {
-      a && em || ef(true)
+      l && em || ef(true)
     }), null == et) ? null : (0, v.iZ)(x) ? s || 0 !== ee.size ? ee.size > 0 ? null : (0, r.jsx)(_.Z, {
       guild: et
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(_.Z, {
         guild: et
       }), (0, r.jsx)(C.q, {})]
-    }) : em && en ? eg ? a ? null : (0, r.jsx)(j.Z, {
+    }) : em && en ? eg ? l ? null : (0, r.jsx)(j.Z, {
       channel: x
     }) : (0, r.jsx)(r.Fragment, {
       children: er((e, t) => t ? (0, r.jsx)(c.animated.div, {
@@ -436,7 +436,7 @@ let Y = e => {
                 handleHide: es
               })]
             })
-          }), ea((e, t) => t ? (0, r.jsx)(c.animated.div, {
+          }), el((e, t) => t ? (0, r.jsx)(c.animated.div, {
             style: e,
             className: B.listContainer,
             children: (0, r.jsx)("ol", {
@@ -444,8 +444,8 @@ let Y = e => {
               children: eo.getSteps().map(e => (0, r.jsxs)(g.P3F, {
                 tag: "li",
                 "aria-label": e.name,
-                onClick: () => el(e),
-                className: l()(B.stepContainer, {
+                onClick: () => ea(e),
+                className: a()(B.stepContainer, {
                   [B.completed]: e.isDone
                 }),
                 children: [e.shouldWarn ? (0, r.jsx)(g.Mgn, {
@@ -463,17 +463,17 @@ let Y = e => {
                   disableColor: true,
                   icon: (0, g.GSL)(S.Z),
                   style: W,
-                  className: l()(B.stepStatus, B.completed)
+                  className: a()(B.stepStatus, B.completed)
                 }), (0, r.jsxs)("div", {
                   className: B.step,
                   children: [(0, r.jsx)(g.Text, {
                     variant: "text-md/medium",
-                    color: e.isDone ? "header-secondary" : "header-primary",
+                    color: e.isDone ? "text-default" : "header-primary",
                     className: B.stepName,
                     children: e.name
                   }), (0, r.jsx)(g.Text, {
                     variant: "text-sm/normal",
-                    color: "header-secondary",
+                    color: "text-default",
                     className: B.stepDescription,
                     children: e.description
                   }), e.children]
@@ -488,7 +488,7 @@ let Y = e => {
           }) : null)]
         })
       }) : null)
-    }) : a ? null : (0, r.jsx)(L.Z, {
+    }) : l ? null : (0, r.jsx)(L.Z, {
       channelName: x.name,
       guildId: x.guild_id,
       tagFilter: ee,

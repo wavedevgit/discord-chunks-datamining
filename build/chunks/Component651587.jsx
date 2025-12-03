@@ -1,7 +1,7 @@
 /** Chunk was on 61342 **/
 /** chunk id: 651587, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 }), require("./388685.js"), require("./539854.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,18 +18,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk356659 = require("./356659.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk280407 = require("./280407.js");
-let v = 16 / 9,
+let h = 16 / 9,
   j = [0, 16, 0, 16],
   g = j[1] + j[3];
 
-function O(e, t) {
+function x(e, t) {
   return Math.ceil(t / e)
 }
 
-function x(e) {
+function O(e) {
   let {
     channelId: t,
-    filteredClips: x,
+    filteredClips: O,
     totalClipCount: C,
     onClipClick: w
   } = e, [P, k] = r.useState(true), [I, S] = r.useState({
@@ -40,11 +40,11 @@ function x(e) {
     type: i.ImpressionTypes.MODAL,
     name: i.ImpressionNames.CLIP_GALLERY_VIEWED,
     properties: {
-      number_of_clips_loaded: x.length
+      number_of_clips_loaded: O.length
     }
   }, {
     disableTrack: P
-  }, [x.length, P]), r.useEffect(() => ((0, p.eL)(), () => {
+  }, [O.length, P]), r.useEffect(() => ((0, p.eL)(), () => {
     (0, p.eL)(), (0, p.zq)()
   }), []);
   let D = r.useMemo(() => {
@@ -54,7 +54,7 @@ function x(e) {
         l = new Date;
       l.setHours(0, 0, 0, 0);
       let r = l.getTime();
-      if (x.forEach(e => {
+      if (O.forEach(e => {
           let l = u.default.extractTimestamp(e.id),
             i = new Date(l);
           if (i.setHours(0, 0, 0, 0), i.getTime() === r) n.push(e);
@@ -71,8 +71,8 @@ function x(e) {
         let t = n.some(e => e.isTemporary);
         e.push({
           type: "today",
-          title: b.intl.string(b.t["kB2R/0"]),
-          description: t ? b.intl.string(b.t["6AXirz"]) : true,
+          title: y.intl.string(y.t["kB2R/0"]),
+          description: t ? y.intl.string(y.t["6AXirz"]) : true,
           clips: n
         })
       }
@@ -84,7 +84,7 @@ function x(e) {
           clips: l
         })
       }), e
-    }, [x]),
+    }, [O]),
     {
       width: Z
     } = I,
@@ -95,13 +95,13 @@ function x(e) {
       let n = t - g,
         l = Math.max(1, Math.floor((n + 16) / 336)),
         r = Math.max(320, (n - 16 * (l - 1)) / l),
-        i = O(l, e);
+        i = x(l, e);
       return {
         tileWidth: r,
         columns: l,
         rows: i
       }
-    })(x.length, Z), [x.length, Z]);
+    })(O.length, Z), [O.length, Z]);
   r.useEffect(() => {
     !async function() {
       k(true);
@@ -151,13 +151,13 @@ function x(e) {
           }), i))
         }
       }, {
-        modalKey: y.Ut,
+        modalKey: b.Ut,
         stackingBehavior: "stack"
       })
     }, [t]),
-    A = r.useMemo(() => D.map(e => O(H, e.clips.length)), [D, H]),
+    A = r.useMemo(() => D.map(e => x(H, e.clips.length)), [D, H]),
     R = r.useMemo(() => A.reduce((e, t) => e + t, 0), [A]),
-    V = Math.floor(L / v),
+    V = Math.floor(L / h),
     _ = r.useCallback((e, t) => {
       let {
         sectionIndex: n,
@@ -167,7 +167,7 @@ function x(e) {
       let a = r * H,
         s = i.clips.slice(a, a + H);
       return (0, l.jsx)("div", {
-        className: h.clipsRow,
+        className: v.clipsRow,
         children: s.map(e => (0, l.jsx)("div", {
           style: {
             width: L
@@ -188,21 +188,21 @@ function x(e) {
     z = r.useCallback(e => {
       let t = D[e];
       return null == t ? null : (0, l.jsxs)("div", {
-        className: h.sectionHeaderContainer,
+        className: v.sectionHeaderContainer,
         children: [(0, l.jsx)(s.Heading, {
           variant: "text-md/semibold",
-          color: "header-secondary",
+          color: "text-default",
           children: t.title
         }), null != t.description && (0, l.jsx)(s.Text, {
           variant: "text-sm/normal",
-          color: "text-secondary",
-          className: h.sectionDescription,
+          color: "text-subtle",
+          className: v.sectionDescription,
           children: t.description
         })]
       }, "header-".concat(e))
     }, [D]);
   return P || 0 !== D.length ? P ? (0, l.jsx)("div", {
-    className: h.spinnerContainer,
+    className: v.spinnerContainer,
     children: (0, l.jsx)(s.$jN, {})
   }) : (0, l.jsx)(o.Z, {
     listPadding: j,

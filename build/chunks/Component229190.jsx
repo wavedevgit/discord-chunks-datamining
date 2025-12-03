@@ -16,16 +16,16 @@ function o(e) {
     palette: n,
     onPrimaryColorChange: o,
     onSecondaryColorChange: c
-  } = e, d = i.useRef(null);
-  return (0, l.Tbt)(d), (0, r.jsxs)("div", {
+  } = e, u = i.useRef(null);
+  return (0, l.Tbt)(u), (0, r.jsxs)("div", {
     className: s.popoutContainer,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-xs/semibold",
-      color: "header-secondary",
+      color: "text-default",
       className: s.customColorsHeader,
       children: a.intl.string(a.t.JhNpgy)
     }), (0, r.jsxs)("div", {
-      ref: d,
+      ref: u,
       className: s.colorPickersContainer,
       children: [(0, r.jsxs)("div", {
         className: s.colorColumn,
@@ -78,16 +78,16 @@ function c(e) {
     children: a,
     palette: s,
     onPrimaryColorChange: c,
-    onSecondaryColorChange: d,
-    popoutTargetRef: u
+    onSecondaryColorChange: u,
+    popoutTargetRef: d
   } = e;
   return (0, r.jsx)(l.yRy, {
-    targetElementRef: u,
+    targetElementRef: d,
     renderPopout: () => (0, r.jsx)(o, {
       showSecondaryColor: n,
       palette: s,
       onPrimaryColorChange: c,
-      onSecondaryColorChange: d
+      onSecondaryColorChange: u
     }),
     position: "top",
     shouldShow: t,

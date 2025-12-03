@@ -27,7 +27,7 @@ function h(e) {
     guildId: b,
     toggled: x,
     onToggleAction: j
-  } = e, _ = e => () => j(e), v = (0, d.c)(n.type, n, h), O = null == (t = n.metadata) ? true : t.durationSeconds, C = null != O ? (0, m.getFriendlyDurationString)(O) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(b)), [b]);
+  } = e, _ = e => () => j(e), v = (0, u.c)(n.type, n, h), O = null == (t = n.metadata) ? true : t.durationSeconds, C = null != O ? (0, m.getFriendlyDurationString)(O) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(b)), [b]);
   if (null == v) return null;
   let {
     headerText: N,
@@ -55,7 +55,7 @@ function h(e) {
       }), x && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: [null === C ? null : h === u.fX.MENTION_SPAM ? p.intl.format(p.t.i3lsKD, {
+        children: [null === C ? null : h === d.fX.MENTION_SPAM ? p.intl.format(p.t.i3lsKD, {
           friendlyDurationString: C
         }) : p.intl.format(p.t.mvHxze, {
           friendlyDurationString: C

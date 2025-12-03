@@ -36,7 +36,7 @@ function h(e) {
       children: n.name
     }), null == f && (0, i.jsx)(l.Text, {
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: d.intl.string(d.t.mE3KJN)
     }), (0, i.jsx)(c.Z, {
       appliedTags: m,

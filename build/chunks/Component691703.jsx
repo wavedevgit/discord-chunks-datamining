@@ -24,8 +24,8 @@ function g(e) {
     onGoToSupportServer: g
   } = function(e) {
     let t = (0, d.nu)(),
-      n = (0, i.e7)([o.default], () => o.default.getSessionId()),
-      r = a.useCallback(async () => {
+      n = (0, a.e7)([o.default], () => o.default.getSessionId()),
+      r = i.useCallback(async () => {
         try {
           var t;
           let n = null == e || null == (t = e.guild) ? true : t.id;
@@ -41,15 +41,15 @@ function g(e) {
           }
         } catch (e) {}
       }, [e]);
-    return a.useEffect(() => {
-      let a = new URL(location.href);
-      if (null != e && t && null != n && "true" === a.searchParams.get(h)) {
-        a.searchParams.delete(h);
-        let e = a.pathname + a.search;
+    return i.useEffect(() => {
+      let i = new URL(location.href);
+      if (null != e && t && null != n && "true" === i.searchParams.get(h)) {
+        i.searchParams.delete(h);
+        let e = i.pathname + i.search;
         (0, s.dL)(e), r()
       }
     }, [t, r, n, e]), {
-      onGoToSupportServer: a.useCallback(() => {
+      onGoToSupportServer: i.useCallback(() => {
         var n;
         null != (null == e || null == (n = e.guild) ? true : n.id) && (t ? r() : (0, d.rf)({
           [h]: "true"

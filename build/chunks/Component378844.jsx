@@ -69,7 +69,7 @@ let O = e => {
         id: O,
         children: S
       }), (0, i.jsx)(a.Text, {
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-sm/normal",
         children: I
       }), (0, i.jsxs)("div", {

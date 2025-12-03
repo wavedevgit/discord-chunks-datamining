@@ -55,7 +55,7 @@ function _(e) {
         size: "xxs",
         color: o.TVs.colors.HEADER_PRIMARY
       }),
-      headingColor: "header-secondary",
+      headingColor: "text-default",
       children: (0, l.jsx)(a.n, {
         userId: n.id
       })

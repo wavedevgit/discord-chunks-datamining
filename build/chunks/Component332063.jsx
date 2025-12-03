@@ -46,7 +46,7 @@ class h extends(i = Chunk473749.Component) {
       label: o
     } = this.props;
     if (0 === module.length || Chunk473749) return null;
-    let c = i ? module : module.filter(e => e.id !== n);
+    let u = i ? module : module.filter(e => e.id !== n);
     return (0, Chunk54381.jsx)(Chunk481060.q4e, {
       label: Chunk274616,
       options: Chunk560587.map(e => ({
@@ -73,6 +73,6 @@ let p = Chunk442837.ZP.connectStores([Chunk560587.Z], e => {
     applicationId: t
   } = e;
   return {
-    branches: c.Z.getBranches(t)
+    branches: u.Z.getBranches(t)
   }
 })(h)

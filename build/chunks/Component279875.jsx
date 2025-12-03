@@ -1,7 +1,7 @@
 /** Chunk was on 43889 **/
 /** chunk id: 279875, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  GuildSubscriptionSelectionModal: () => p
+  GuildSubscriptionSelectionModal: () => x
 }), require("./388685.js"), require("./290780.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,17 +13,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk250117 = require("./250117.js");
 
-function p(t) {
+function x(t) {
   let {
     transitionState: n,
     onClose: e,
-    sku: p,
-    onSelect: x,
+    sku: x,
+    onSelect: p,
     currentGuildId: h
   } = t, [g, f] = l.useState(), {
     guilds: j,
     isFetching: v
-  } = (0, o.CR)(p.applicationId, p.id, true), I = l.useMemo(() => {
+  } = (0, o.CR)(x.applicationId, x.id, true), I = l.useMemo(() => {
     if (!v && null != h) return j.findIndex(t => {
       let {
         id: n
@@ -59,7 +59,7 @@ function p(t) {
       text: d.intl.string(d.t["cY+Oob"]),
       disabled: null == g,
       onClick: function() {
-        null != g && (x(g), e())
+        null != g && (p(g), e())
       }
     }],
     children: v ? (0, i.jsx)(s.$jN, {
@@ -89,7 +89,7 @@ function p(t) {
             children: n
           }), e === h && (0, i.jsx)(s.Text, {
             variant: "text-xs/normal",
-            color: "header-secondary",
+            color: "text-default",
             children: d.intl.string(d.t.RjtuAI)
           })]
         })

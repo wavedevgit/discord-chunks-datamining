@@ -44,8 +44,8 @@ function G(e) {
   let {
     applicationId: t,
     hideDetailHeaderButtons: n,
-    onClickBack: i
-  } = e, s = (0, o.e7)([j.Z], () => j.Z.getApplication(t)), [d, u] = a.useState(n), m = a.useCallback(() => {
+    onClickBack: a
+  } = e, s = (0, o.e7)([j.Z], () => j.Z.getApplication(t)), [d, u] = i.useState(n), m = i.useCallback(() => {
     u(n)
   }, [n]);
   return (0, r.jsxs)("div", {
@@ -54,7 +54,7 @@ function G(e) {
       className: M.detailHeaderSection,
       children: (0, r.jsx)(p.Cm, {
         icon: c.j9r,
-        onClick: i
+        onClick: a
       })
     }), (0, r.jsx)(c.Heading, {
       variant: "heading-lg/semibold",
@@ -116,7 +116,7 @@ let U = function() {
   let t = (0, Chunk442837.e7)([Chunk314897.default], () => !Chunk314897.default.isAuthenticated()),
     {
       onScroll: n,
-      scrollPosition: i,
+      scrollPosition: a,
       resetScrollPosition: j
     } = (0, Chunk979233.M)(),
     L = (0, Chunk258971.Xh)(),
@@ -165,8 +165,8 @@ let U = function() {
   }, [U]), Chunk473749.useEffect(() => Chunk258971.aQ.setState({
     lastItem: Chunk548514
   }), [Chunk548514]);
-  let ea = null != H,
-    ei = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.SEARCH,
+  let ei = null != H,
+    ea = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.SEARCH,
     {
       searchQuery: el,
       onSearchTextChange: es,
@@ -189,13 +189,13 @@ let U = function() {
       })
     }),
     eh = Chunk473749.useCallback(e => {
-      J(e), ei && eo(), j()
-    }, [ei, eo, J, Chunk370210]),
+      J(e), ea && eo(), j()
+    }, [ea, eo, J, Chunk370210]),
     eg = Chunk473749.useCallback(e => (0, N.ph)({
       applicationId: e
     }), []),
-    e_ = ea || ei,
-    ef = Chunk473749.useCallback(() => {
+    ef = ei || ea,
+    e_ = Chunk473749.useCallback(() => {
       null != (0, Chunk258971.Uc)() ? (0, Chunk703656.op)() : (0, Chunk133743.Yp)()
     }, []),
     eb = Chunk473749.useMemo(() => (0, Chunk392711.debounce)(e => {
@@ -203,11 +203,11 @@ let U = function() {
         scrollTop: t,
         offsetHeight: n,
         scrollHeight: r,
-        location: a
+        location: i
       } = e;
       t > 0 && (0, S.zZ)(D.rMx.APP_DIRECTORY_PAGE_SCROLLED, {
         scroll_visible_percentile: (t + n) / r,
-        current_page: a
+        current_page: i
       })
     }, 200), []),
     ex = Chunk473749.useCallback((e, t) => {
@@ -225,20 +225,20 @@ let U = function() {
     children: [exports ? (0, Chunk54381.jsx)(B, {}) : null, (0, Chunk54381.jsxs)("div", {
       className: Chunk813525.innerContainer,
       children: [(0, Chunk54381.jsxs)(Chunk611928.ZP, {
-        variant: e_ ? Chunk611928._6.RELATIVE : Chunk611928._6.OVERLAY,
-        children: [!e_ && (0, Chunk54381.jsx)(Chunk611928.z6, {
+        variant: ef ? Chunk611928._6.RELATIVE : Chunk611928._6.OVERLAY,
+        children: [!ef && (0, Chunk54381.jsx)(Chunk611928.z6, {
           scrollPosition: Chunk120356
-        }), ea ? (0, Chunk54381.jsx)(G, {
+        }), ei ? (0, Chunk54381.jsx)(G, {
           applicationId: H,
           hideDetailHeaderButtons: $,
-          onClickBack: ef
+          onClickBack: e_
         }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-          children: [ei ? (0, Chunk54381.jsx)(Chunk611928.Cm, {
+          children: [ea ? (0, Chunk54381.jsx)(Chunk611928.Cm, {
             icon: Chunk481060.j9r,
-            onClick: ef
+            onClick: e_
           }) : (0, Chunk54381.jsx)(Chunk611928.aV, {
             icon: Chunk481060.jje
-          }), ei ? (0, Chunk54381.jsx)(Chunk481060.Heading, {
+          }), ea ? (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
             color: "header-primary",
             className: Chunk813525.searchHeader,
@@ -263,13 +263,13 @@ let U = function() {
             onBlur: em
           })]
         })]
-      }), ea ? (0, Chunk54381.jsx)(Chunk666697.Z, {
+      }), ei ? (0, Chunk54381.jsx)(Chunk666697.Z, {
         onScroll: e => ex(e, E.m_.APPLICATION),
         onSelectApplication: eg,
         applicationId: H,
         initialTab: z,
         onButtonsVisibilityChange: ee
-      }) : ei ? (0, Chunk54381.jsx)(Chunk569527.Z, {
+      }) : ea ? (0, Chunk54381.jsx)(Chunk569527.Z, {
         onSelectApplication: eg,
         onScroll: e => ex(e, E.m_.SEARCH)
       }) : Q === Chunk979007.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, Chunk54381.jsx)(Chunk370648.Z, {

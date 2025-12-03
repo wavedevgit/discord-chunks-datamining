@@ -67,7 +67,7 @@ function P(e) {
     guild: t,
     role: n,
     locked: l
-  } = e, a = (0, o.e7)([p.default], () => p.default.getCurrentUser()), u = i.useMemo(() => b.uB({
+  } = e, a = (0, o.e7)([p.default], () => p.default.getCurrentUser()), d = i.useMemo(() => b.uB({
     user: a,
     context: t
   }), [a, t]), g = i.useMemo(() => ({
@@ -78,13 +78,13 @@ function P(e) {
     user: a,
     context: t,
     roles: g
-  }), [a, t, g]), f = !s.fS(u, m);
+  }), [a, t, g]), f = !s.fS(d, m);
   return (0, r.jsx)(c.u, {
     text: f ? N.intl.string(N.t["IQ/6Sg"]) : null,
     position: "top",
     children: (0, r.jsx)("div", {
       className: E.clearButtonWrapper,
-      children: (0, r.jsx)(d.Avr, {
+      children: (0, r.jsx)(u.Avr, {
         variant: "primary",
         textVariant: "text-sm/semibold",
         onClick: () => (0, x.TY)(n.id),
@@ -103,7 +103,7 @@ function w(e) {
     locked: l
   } = e, {
     enabled: a
-  } = u.Z.useExperiment({
+  } = d.Z.useExperiment({
     location: "PermissionsList",
     guildId: t.id
   });
@@ -111,7 +111,7 @@ function w(e) {
     className: E.noResultsContainer,
     children: [(0, r.jsx)(j.Z, {
       className: E.noResults
-    }), (0, r.jsx)(d.Text, {
+    }), (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
       children: N.intl.string(N.t.DEBGqA)
     })]
@@ -152,7 +152,7 @@ function Z(e) {
     locked: l,
     setSelectedSection: s,
     initialSearchQuery: o
-  } = e, [c, u] = i.useState(null != o ? o : ""), g = i.useMemo(() => h.Z.generateGuildPermissionSpec(t), [t]).map(e => T(S({}, e), {
+  } = e, [c, d] = i.useState(null != o ? o : ""), g = i.useMemo(() => h.Z.generateGuildPermissionSpec(t), [t]).map(e => T(S({}, e), {
     permissions: e.permissions.filter(e => {
       let t = c.trimStart().toLowerCase();
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
@@ -168,7 +168,7 @@ function Z(e) {
     j.current || "" === c.trimStart() || (f.default.track(y.rMx.SEARCH_STARTED, {
       search_type: "Permissions"
     }), j.current = true)
-  }, [c]), (0, r.jsx)(d.yWw, {
+  }, [c]), (0, r.jsx)(u.yWw, {
     className: E.scroller,
     style: {
       scrollPaddingTop: m
@@ -193,10 +193,10 @@ function Z(e) {
           })
         }), (0, r.jsx)("div", {
           className: E.searchContainer,
-          children: (0, r.jsx)(d.E1j, {
+          children: (0, r.jsx)(u.E1j, {
             query: c,
-            onChange: u,
-            onClear: () => u(""),
+            onChange: d,
+            onClear: () => d(""),
             placeholder: N.intl.string(N.t.OLJAk3),
             "aria-label": N.intl.string(N.t.OLJAk3)
           })

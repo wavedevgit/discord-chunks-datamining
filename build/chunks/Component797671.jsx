@@ -34,7 +34,7 @@ function I(e) {
     transitionState: L,
     onSubmit: R,
     onClose: S
-  } = e, [j, N] = i.useState(E.Sc2), [M, k] = i.useState(E.d4z.GUILD_TEXT), [D, Z] = i.useState(""), [A, B] = i.useState(false), G = (0, a.e7)([m.Z], () => m.Z.getGuild(I), [I]), O = (0, g.m)(I), H = (0, h.Ui)(G), U = i.useMemo(() => (function(e) {
+  } = e, [j, N] = i.useState(E.Sc2), [M, k] = i.useState(E.d4z.GUILD_TEXT), [D, Z] = i.useState(""), [A, B] = i.useState(false), G = (0, a.e7)([x.Z], () => x.Z.getGuild(I), [I]), O = (0, g.m)(I), H = (0, h.Ui)(G), U = i.useMemo(() => (function(e) {
     let {
       canCreateStageChannel: t,
       canCreateMediaChannel: n
@@ -87,7 +87,7 @@ function I(e) {
               })]
             }), (0, l.jsx)(u.Text, {
               variant: "text-xs/normal",
-              color: "header-secondary",
+              color: "text-default",
               children: r
             })]
           })]
@@ -182,7 +182,7 @@ function I(e) {
           label: y.intl.string(y.t.PVbHDl),
           value: D,
           onChange: function(e) {
-            (0, f.zi)(M) && (e = (0, x.Nj)(e)), Z(e)
+            (0, f.zi)(M) && (e = (0, m.Nj)(e)), Z(e)
           },
           maxLength: E.HN8,
           placeholder: y.intl.string(y.t["bw/b8E"]),

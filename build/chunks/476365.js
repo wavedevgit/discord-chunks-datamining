@@ -41,7 +41,7 @@ let _ = new Chunk710845.Z("useStripePaymentElementOptions"),
     var e, t, n, a, o;
     let s = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       l = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.MODAL_BACKGROUND),
-      c = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.TEXT_PRIMARY),
+      c = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.TEXT_STRONG),
       u = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.INPUT_BACKGROUND),
       d = null != (e = Chunk351402.theme) ? module : "flat",
       f = null != (t = Chunk351402.colorText) ? exports : Chunk947673.hex(),

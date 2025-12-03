@@ -52,7 +52,7 @@ function w(e) {
     isWarning: (null == Z ? true : Z.type) === "expiring",
     onClick: () => (0, g.Z)({
       guildId: t,
-      analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
+      analyticsLocation: c.Z.GUILD_POWERUPS_OVERVIEW
     }),
     children: [(0, r.jsxs)("div", {
       className: j.imageContainer,
@@ -78,14 +78,14 @@ function w(e) {
         children: _.intl.string(x.default.EGkJAG)
       })
     }), (0, r.jsx)(d.N4, {
-      children: (0, r.jsx)(c.Button, {
+      children: (0, r.jsx)(u.Button, {
         variant: "primary",
         fullWidth: true,
         text: Object.values(n.entitlements).length > 0 ? _.intl.string(x.default.PuvU5b) : _.intl.string(x.default.b62EHM),
         onClick: e => {
           e.stopPropagation(), (0, g.Z)({
             guildId: t,
-            analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
+            analyticsLocation: c.Z.GUILD_POWERUPS_OVERVIEW
           })
         }
       })

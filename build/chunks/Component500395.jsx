@@ -24,13 +24,13 @@ function g(e) {
     onCtaClicked: s
   } = t;
   return (0, r.jsxs)("div", {
-    className: d.__invalid_ctaContainer,
+    className: u.__invalid_ctaContainer,
     children: [(0, r.jsx)("img", {
-      className: d.__invalid_heroBanner,
-      src: u,
+      className: u.__invalid_heroBanner,
+      src: d,
       alt: c.intl.string(c.t.Af4klP)
     }), (0, r.jsxs)("div", {
-      className: d.__invalid_ctaContent,
+      className: u.__invalid_ctaContent,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
@@ -39,7 +39,7 @@ function g(e) {
         size: 12
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: c.intl.string(c.t["41wkMc"])
       }), (0, r.jsx)(l.LZC, {
         size: 24
@@ -63,7 +63,7 @@ function m(e) {
     config: n
   } = e, {
     isLoading: c,
-    error: u,
+    error: d,
     creatorMonetizationOnboardingMarketing: m
   } = (0, s.Z)(t.id);
   return ((0, a.Z)({
@@ -73,12 +73,12 @@ function m(e) {
       guild_id: t.id
     }
   }), c) ? (0, r.jsx)(l.$jN, {}) : (0, r.jsxs)("div", {
-    className: d.__invalid_container,
+    className: u.__invalid_container,
     children: [(0, r.jsx)(g, {
       config: n
     }), (0, r.jsx)(o.C, {
       onboardingMarketing: m,
-      onboardingMarketingError: u
+      onboardingMarketingError: d
     })]
   })
 }

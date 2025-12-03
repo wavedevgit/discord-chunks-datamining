@@ -35,9 +35,9 @@ function O(e) {
   } = (0, p.V)(), {
     guild: E,
     subsection: I
-  } = (0, l.cj)([s.Z], () => s.Z.getProps()), S = null != (n = null != (t = null == E ? true : E.id) ? t : O) ? n : j.lds, T = null != y, [P] = (0, u.RD)(S), {
+  } = (0, l.cj)([s.Z], () => s.Z.getProps()), S = null != (n = null != (t = null == E ? true : E.id) ? t : O) ? n : j.lds, T = null != y, [P] = (0, d.RD)(S), {
     rulesByTriggerType: w
-  } = (0, u.pH)(S), Z = {
+  } = (0, d.pH)(S), Z = {
     [g.vh.MEMBERS]: _.intl.string(_.t.sx4E5v),
     [g.vh.CONTENT]: _.intl.string(_.t.fphZb0)
   }, R = i.useMemo(() => Object.values(null != w ? w : {}).flat().filter(c.lm), [w]), D = {
@@ -84,13 +84,13 @@ function O(e) {
         className: v.description,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: _.intl.string(_.t.EwuSCR)
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           className: v.helpUrl,
           children: _.intl.format(_.t["B+sgGt"], {
-            helpUrl: d.Z.getArticleURL(j.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+            helpUrl: u.Z.getArticleURL(j.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
       })

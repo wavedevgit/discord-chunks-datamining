@@ -1,7 +1,7 @@
 /** Chunk was on 86722 **/
-/** chunk id: 264333, original params: i,s,t (module,exports,require) **/
+/** chunk id: 264333, original params: i,t,s (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,25 +15,25 @@ var Chunk793030 = require("./793030.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g(i) {
+function x(i) {
   let {
-    guildId: s
+    guildId: t
   } = i;
-  return (0, n.jsxs)(o.Z, {
-    children: [(0, n.jsx)(l.Z, {
+  return (0, n.jsxs)(l.Z, {
+    children: [(0, n.jsx)(d.Z, {
       ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: s
+      guildId: t
     }), (0, n.jsx)(c.Z, {
       ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: s
-    }), (0, n.jsx)(d.Z, {
-      ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: s
+      guildId: t
     }), (0, n.jsx)(a.Z, {
       ingress: u.f4.SERVER_PRIVACY_MODAL,
-      guildId: s
+      guildId: t
+    }), (0, n.jsx)(o.Z, {
+      ingress: u.f4.SERVER_PRIVACY_MODAL,
+      guildId: t
     }), (0, n.jsx)(r.Text, {
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-sm/normal",
       children: R.intl.format(R.t.LNsV04, {
         policyLink: "https://discord.com/safety/360043709612-our-policies"
@@ -42,24 +42,24 @@ function g(i) {
   })
 }
 
-function p(i) {
+function f(i) {
   let {
-    guild: s,
-    transitionState: t,
+    guild: t,
+    transitionState: s,
     onClose: r
-  } = i, o = "".concat(R.intl.string(R.t.BayiAo), "—").concat(null != s ? s.name : "??");
+  } = i, l = "".concat(R.intl.string(R.t.BayiAo), "—").concat(null != t ? t.name : "??");
   return (0, n.jsx)(e.Modal, {
-    transitionState: t,
+    transitionState: s,
     size: "sm",
-    title: o,
+    title: l,
     actions: [{
       onClick: () => r(),
       variant: "primary",
       text: R.intl.string(R.t.i4jeWR)
     }],
     onClose: () => Promise.resolve(r()),
-    children: (0, n.jsx)(g, {
-      guildId: s.id
+    children: (0, n.jsx)(x, {
+      guildId: t.id
     })
   })
 }

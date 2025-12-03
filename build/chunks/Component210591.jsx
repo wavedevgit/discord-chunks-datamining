@@ -45,13 +45,13 @@ function f(e) {
   } = e, [n, l] = i.useState(false), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, f = 1 === o, h = (0, c.q_F)({
     width: "".concat(100 * o, "%")
   }), b = [g.intl.format(g.t.wtQtXs, {
-    promoPageGuideUrl: u.iv.PROMO_PAGE_GUIDE
+    promoPageGuideUrl: d.iv.PROMO_PAGE_GUIDE
   }), g.intl.format(g.t["0Fo0wf"], {
-    caseStudiesUrl: u.iv.CASE_STUDIES
+    caseStudiesUrl: d.iv.CASE_STUDIES
   }), g.intl.format(g.t["7JdzjA"], {
-    subscriptionOfferingGuideUrl: u.iv.SUBSCRIPTION_OFFERING_GUIDE
+    subscriptionOfferingGuideUrl: d.iv.SUBSCRIPTION_OFFERING_GUIDE
   }), g.intl.format(g.t.zkXN6I, {
-    tierStructureGuideUrl: u.iv.TIER_STRUCTURE_GUIDE
+    tierStructureGuideUrl: d.iv.TIER_STRUCTURE_GUIDE
   })], x = n ? null : (0, r.jsxs)(c.C3N, {
     children: [!f && t.map((e, t) => {
       let {
@@ -97,8 +97,8 @@ function f(e) {
             variant: "heading-md/semibold",
             className: m.headerText,
             children: g.intl.string(g.t["2Xbd/G"])
-          }), (0, r.jsx)(d.Z, {
-            direction: n ? d.Z.Directions.DOWN : d.Z.Directions.UP,
+          }), (0, r.jsx)(u.Z, {
+            direction: n ? u.Z.Directions.DOWN : u.Z.Directions.UP,
             className: m.headerCaret
           })]
         }), !f && (0, r.jsx)("div", {

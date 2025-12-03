@@ -70,7 +70,7 @@ function j(e) {
     dragSourcePosition: w,
     drop: Z,
     setIsDraggable: R
-  } = (0, d.Z)({
+  } = (0, u.Z)({
     type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(_.id),
     index: T,
     optionId: C.id,
@@ -80,7 +80,7 @@ function j(e) {
   }), {
     customEmoji: D,
     unicodeEmoji: A
-  } = (0, u.Z)(null == (t = C.emoji) ? true : t.id, null == (i = C.emoji) ? true : i.name);
+  } = (0, d.Z)(null == (t = C.emoji) ? true : t.id, null == (i = C.emoji) ? true : i.name);
   return (0, p.Oq)(C.emoji) || null != D || null != A || (S = f.intl.string(f.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
     className: l()(h.optionCard, {
       [h.hasError]: y || null != S,
@@ -140,7 +140,7 @@ function j(e) {
         }), "" !== C.description && (0, r.jsx)(o.Text, {
           className: h.description,
           variant: "text-xs/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: C.description
         })]
       })]
@@ -158,7 +158,7 @@ function _(e) {
     prompt: i,
     promptIndex: a,
     singleColumn: s
-  } = e, d = () => {
+  } = e, u = () => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -187,8 +187,8 @@ function _(e) {
         }),
         confirmText: f.intl.string(f.t.BddRzS),
         cancelText: f.intl.string(f.t["ETE/oC"]),
-        onConfirm: d
-      }) : d()
+        onConfirm: u
+      }) : u()
     },
     children: (0, r.jsxs)("div", {
       className: h.optionCardRow,

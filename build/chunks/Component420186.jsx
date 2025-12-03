@@ -48,7 +48,7 @@ let h = () => {
       className: Chunk181174.serverNickname,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        color: "header-secondary",
+        color: "text-default",
         children: Chunk388032.intl.string(Chunk388032.t.me1lRk)
       }), (0, Chunk54381.jsx)(Chunk481060.oil, {
         placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8yp"]),

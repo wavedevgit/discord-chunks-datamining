@@ -35,8 +35,8 @@ function Z(e) {
     onCopyLink: O,
     onShare: C,
     transitionState: L
-  } = e, [T] = (0, c.Z)([t]), N = (0, s.e7)([p.default], () => p.default.getCurrentUser()), [w, R] = l.useState(false), [k, D] = l.useState(""), [M, A] = l.useState("");
-  l.useEffect(() => {
+  } = e, [T] = (0, c.Z)([t]), N = (0, s.e7)([p.default], () => p.default.getCurrentUser()), [w, R] = r.useState(false), [k, M] = r.useState(""), [D, A] = r.useState("");
+  r.useEffect(() => {
     A((0, o.H)({
       applicationId: t,
       referrerId: null == N ? true : N.id,
@@ -44,47 +44,47 @@ function Z(e) {
       linkId: Z
     }))
   }, [t, N, n, Z, A]);
-  let I = l.useRef(0),
-    [U, F] = l.useState([]),
-    H = U.length,
+  let U = r.useRef(0),
+    [I, F] = r.useState([]),
+    H = I.length,
     q = H >= 5;
-  l.useEffect(() => {
+  r.useEffect(() => {
     if ("" === k) {
       var e;
       null == (e = z.current) || e.focus()
     }
   }, [k]);
-  let G = l.useCallback(() => {
-      D("")
-    }, [D]),
-    z = l.useRef(null),
+  let G = r.useCallback(() => {
+      M("")
+    }, [M]),
+    z = r.useRef(null),
     {
       results: V,
       updateSearchText: W
     } = (0, b.s)({
-      selectedDestinations: U,
+      selectedDestinations: I,
       includeMissingDMs: true
     }),
-    Q = l.useCallback(e => {
-      D(e), W(e)
-    }, [D, W]),
-    X = l.useCallback(e => {
+    Q = r.useCallback(e => {
+      M(e), W(e)
+    }, [M, W]),
+    X = r.useCallback(e => {
       F(t => {
         let n = t.findIndex(t => {
           let {
             type: n,
-            id: r
+            id: l
           } = t;
-          return n === e.type && r === e.id
+          return n === e.type && l === e.id
         });
-        if (false === n) return q ? t : (D(""), I.current += 1, [e, ...t]);
-        let r = [...t];
-        return r.splice(n, 1), I.current += 1, r
+        if (false === n) return q ? t : (M(""), U.current += 1, [e, ...t]);
+        let l = [...t];
+        return l.splice(n, 1), U.current += 1, l
       })
     }, [q]),
-    J = l.useCallback(async e => {
+    J = r.useCallback(async e => {
       if (null == T) return;
-      let t = (0, y.P)(P, T, M);
+      let t = (0, y.P)(P, T, D);
       R(true), (await Promise.all(e.map(f.qx))).filter(g.lm).forEach(async e => {
         let n = h.Z.getChannel(e);
         null != n && await u.Z.sendMessage(e, d.ZP.parse(n, t), false, {
@@ -93,38 +93,38 @@ function Z(e) {
       }), (0, i.showToast)((0, i.createToast)(S.intl.formatToPlainString(S.t.jQULqL, {
         applicationName: T.name
       }), i.ToastType.SUCCESS)), C(true), _()
-    }, [P, M, _, C, T]),
-    Y = l.useCallback(() => {
-      (0, m.JG)(M, () => {
+    }, [P, D, _, C, T]),
+    B = r.useCallback(() => {
+      (0, m.JG)(D, () => {
         O(), (0, i.showToast)((0, i.createToast)(S.intl.string(S.t.t5VZ88), i.ToastType.SUCCESS))
       })
-    }, [M, O]),
-    B = V.length > 0 ? (0, r.jsx)(x.Q, {
+    }, [D, O]),
+    Y = V.length > 0 ? (0, l.jsx)(x.Q, {
       paddingBottom: 8,
       paddingTop: 8,
       rowData: V,
       handleToggleDestination: X,
-      selectedDestinations: U,
+      selectedDestinations: I,
       disableSelection: q
-    }) : (0, r.jsxs)("div", {
+    }) : (0, l.jsxs)("div", {
       className: E.noResults,
-      children: [(0, r.jsx)("img", {
+      children: [(0, l.jsx)("img", {
         className: E.noResultsImg,
         src: j,
         alt: ""
-      }), (0, r.jsx)(i.Text, {
+      }), (0, l.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "text-muted",
         children: S.intl.string(S.t.V6nAfF)
       })]
     });
-  return (0, r.jsx)(a.Modal, {
+  return (0, l.jsx)(a.Modal, {
     transitionState: L,
     onClose: _,
     title: S.intl.string(S.t.r9qKow),
     subtitle: P,
     size: "md",
-    input: (0, r.jsx)(i.E1j, {
+    input: (0, l.jsx)(i.E1j, {
       ref: z,
       query: k,
       onChange: Q,
@@ -136,14 +136,14 @@ function Z(e) {
     actions: [{
       text: S.intl.string(S.t.WqhZss),
       variant: "secondary",
-      onClick: Y
+      onClick: B
     }, {
       text: S.intl.string(S.t.TXNS7S),
       variant: "primary",
-      onClick: () => J(U),
+      onClick: () => J(I),
       loading: w,
       disabled: !(H > 0)
     }],
-    children: B
+    children: Y
   })
 }

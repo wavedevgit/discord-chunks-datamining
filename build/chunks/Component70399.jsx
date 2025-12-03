@@ -84,7 +84,7 @@ function x(e) {
       size: "xs"
     }), (0, i.jsx)(s.xvT, {
       variant: "text-sm/medium",
-      color: "text-secondary",
+      color: "text-subtle",
       children: x ? c ? m.intl.format(m.t.wiyuG9, {
         applicationName: r.name
       }) : p ? m.intl.format(m.t.RNWFOQ, {

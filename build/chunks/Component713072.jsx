@@ -67,7 +67,7 @@ function d(e) {
   });
   if ("string" == typeof t) return (0, r.jsx)(s.xvT, {
     variant: "text-sm/normal",
-    color: "text-secondary",
+    color: "text-subtle",
     children: t
   });
   if ("object" == typeof t && "type" in t && "image" === t.type) return (0, r.jsx)("img", {

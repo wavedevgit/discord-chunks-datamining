@@ -40,7 +40,7 @@ function v(e) {
     }), x()
   };
   return r.useEffect(() => {
-    (0, f.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
+    (0, f.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
       warningId: v,
       senderId: _,
@@ -53,11 +53,11 @@ function v(e) {
     warningId: v,
     senderId: _,
     warningType: h.pj.LIKELY_ATO,
-    header: C.intl.string(C.t.R8UsiI),
-    description: C.intl.string(C.t.lI8nQl),
+    header: y.intl.string(y.t.R8UsiI),
+    description: y.intl.string(y.t.lI8nQl),
     onDismiss: x,
     buttons: [{
-      text: C.intl.string(C.t.tC1pvL),
+      text: y.intl.string(y.t.tC1pvL),
       variant: "primary",
       onClick: () => {
         (0, a.ZDy)(async () => {
@@ -75,7 +75,7 @@ function v(e) {
               channelId: t,
               warningId: v,
               senderId: _,
-              description: C.intl.string(C.t["/uid3p"]),
+              description: y.intl.string(y.t["/uid3p"]),
               safetyTipRows: O.map((e, t) => (0, i.jsx)(u.q, {
                 listType: "numbered",
                 index: t,
@@ -83,9 +83,9 @@ function v(e) {
                 description: e.description
               }, t)),
               actionRows: [(0, i.jsx)(d.JZ, {
-                title: C.intl.string(C.t.ftIK2A),
-                description: C.intl.string(C.t.w2ve0t),
-                buttonText: C.intl.string(C.t.ftIK2A),
+                title: y.intl.string(y.t.ftIK2A),
+                description: y.intl.string(y.t.w2ve0t),
+                buttonText: y.intl.string(y.t.ftIK2A),
                 onButtonPress: () => {
                   E(f.NM.USER_MODAL_MUTE), l()
                 }
@@ -101,7 +101,7 @@ function v(e) {
                 children: (0, i.jsx)(a.Heading, {
                   variant: "heading-sm/medium",
                   color: "text-link",
-                  children: C.intl.format(C.t.UkH122, {
+                  children: y.intl.format(y.t.UkH122, {
                     learnMoreLink: b.D8
                   })
                 })
@@ -117,7 +117,7 @@ function v(e) {
         })
       }
     }, {
-      text: C.intl.string(C.t.ftIK2A),
+      text: y.intl.string(y.t.ftIK2A),
       onClick: () => E(f.NM.USER_BANNER_MUTE)
     }]
   })

@@ -36,7 +36,7 @@ function h(t) {
     userId: d,
     onClose: h,
     trackUserProfileEditAction: w
-  } = t, y = r.useCallback(() => {
+  } = t, v = r.useCallback(() => {
     (0, u.y8)(n.type), w(function(t) {
       for (var e = 1; e < arguments.length; e++) {
         var n = null != arguments[e] ? arguments[e] : {},
@@ -57,13 +57,13 @@ function h(t) {
     }({
       action: "WIDGET_REMOVED"
     }, n.getProfileEditAnalyticsOptions())), h(), (0, b.L$)(f.qb.WIDGET_REMOVED)
-  }, [n, h, w]), v = (0, a.e7)([o.default], () => o.default.getUser(d));
-  return null == v ? null : (0, i.jsxs)(l.Modal, {
+  }, [n, h, w]), y = (0, a.e7)([s.default], () => s.default.getUser(d));
+  return null == y ? null : (0, i.jsxs)(l.Modal, {
     transitionState: e,
     onClose: h,
     title: p.intl.string(p.t.Mm07Yc),
     subtitle: p.intl.format(p.t["x+djI4"], {
-      helpUrl: s.w
+      helpUrl: o.w
     }),
     actions: [{
       variant: "secondary",
@@ -72,18 +72,18 @@ function h(t) {
     }, {
       variant: "critical-primary",
       text: p.intl.string(p.t.Mm07Yc),
-      onClick: y
+      onClick: v
     }],
     children: [(0, i.jsx)("div", {
       className: g.widgetPreview,
       children: (0, i.jsx)(x, {
         widget: n,
-        user: v
+        user: y
       })
     }), (0, i.jsx)("div", {
       className: g.hintText,
       children: (0, i.jsx)(c.Text, {
-        color: "text-secondary",
+        color: "text-subtle",
         variant: "text-sm/normal",
         children: p.intl.string(p.t.bQNGeT)
       })

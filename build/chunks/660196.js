@@ -28,9 +28,9 @@ function h(e) {
     return (null == (t = d.Z.getSubscriptionListing(e)) ? true : t.published) === true
   }), [g]), {
     analyticsLocations: O
-  } = (0, a.ZP)(null != (t = (0, s.DR)()) ? t : []), j = r.useRef(false);
+  } = (0, a.ZP)(null != (t = (0, s.DR)()) ? t : []), x = r.useRef(false);
   r.useEffect(() => {
-    m && null != h && null != y && !j.current && (j.current = true, o.default.track(p.rMx.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, function(e) {
+    m && null != h && null != y && !x.current && (x.current = true, o.default.track(p.rMx.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

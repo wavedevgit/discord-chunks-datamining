@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk498607 = require("./498607.js"),
   o = require.n(Chunk498607),
   Chunk913527 = require("./913527.js"),
-  d = require.n(Chunk913527),
+  u = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk755721 = require("./755721.js"),
@@ -65,28 +65,28 @@ let N = e => {
     pending: a,
     pendingDescription: s,
     failingDescription: o
-  } = e, c = t, d = null, u = null;
-  return a ? (d = (0, r.jsx)(p.Mgn, {
+  } = e, c = t, u = null, d = null;
+  return a ? (u = (0, r.jsx)(p.Mgn, {
     size: "custom",
     color: g.Z.unsafe_rawColors.YELLOW_300.css,
     width: 20,
     height: 20
-  }), u = null != s ? s : i) : l ? (d = (0, r.jsx)(m.$q, {
+  }), d = null != s ? s : i) : l ? (u = (0, r.jsx)(m.$q, {
     readOnly: true,
     shape: m.zV.ROUND,
     size: 20,
     type: m.M0.INVERTED,
     value: true
-  }), u = i) : (d = (0, r.jsx)(p.k$p, {
+  }), d = i) : (u = (0, r.jsx)(p.k$p, {
     size: "custom",
     color: g.Z.unsafe_rawColors.RED_400.css,
     width: 20,
     height: 20
-  }), c = null != n ? n : t, u = null != o ? o : i), (0, r.jsxs)("div", {
+  }), c = null != n ? n : t, d = null != o ? o : i), (0, r.jsxs)("div", {
     className: O.checklistItem,
     children: [(0, r.jsx)("div", {
       className: O.checklistIcon,
-      children: d
+      children: u
     }), (0, r.jsxs)("div", {
       className: O.checklistText,
       children: [(0, r.jsx)(p.Heading, {
@@ -95,7 +95,7 @@ let N = e => {
       }), (0, r.jsx)(p.Text, {
         color: "text-muted",
         variant: "text-sm/normal",
-        children: u
+        children: d
       })]
     })]
   })
@@ -117,9 +117,9 @@ let I = e => {
     className: s,
     headerContent: o,
     failedItemsOnly: c = false
-  } = e, [g, I] = (0, u.Wu)([j.ZP], () => [j.ZP.getDiscoveryChecklist(l), j.ZP.isLoading()], [l]), {
+  } = e, [g, I] = (0, d.Wu)([j.ZP], () => [j.ZP.getDiscoveryChecklist(l), j.ZP.isLoading()], [l]), {
     nsfwProperties: S
-  } = null != g ? g : {}, T = null == t ? true : t.features.has(_.GuildFeatures.PARTNERED), P = null == S ? true : S.channels_banned_keywords, w = (0, u.e7)([f.ZP], () => {
+  } = null != g ? g : {}, T = null == t ? true : t.features.has(_.GuildFeatures.PARTNERED), P = null == S ? true : S.channels_banned_keywords, w = (0, d.e7)([f.ZP], () => {
     var e, n, r;
     if (null == P) return [];
     let i = null != (n = (null != (e = f.ZP.getChannels(t.id)) ? e : {})[f.sH]) ? n : [],
@@ -136,7 +136,7 @@ let I = e => {
     children: [(0, r.jsx)(p.Heading, {
       className: O.loadingText,
       variant: "heading-md/semibold",
-      color: "header-secondary",
+      color: "text-default",
       children: v.intl.string(v.t.e1gm0f)
     }), (0, r.jsx)(p.$jN, {
       className: O.__invalid_spinner
@@ -172,7 +172,7 @@ let I = e => {
       }),
       failingDescription: v.intl.formatToPlainString(v.t.jYwM1Y, {
         minimumGuildAge: Math.ceil(g.minimumGuildAge / 7),
-        passDate: d()(b.default.extractTimestamp(l)).add(g.minimumGuildAge, "days").format("LL")
+        passDate: u()(b.default.extractTimestamp(l)).add(g.minimumGuildAge, "days").format("LL")
       }),
       checked: null == g ? true : g.age
     }, {

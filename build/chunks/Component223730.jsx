@@ -35,7 +35,7 @@ function b(e) {
       className: g.chevronButtonContent,
       children: t
     }), (0, r.jsx)(l.Fbu, {
-      color: l.TVs.colors.TEXT_SECONDARY,
+      color: l.TVs.colors.TEXT_SUBTLE,
       size: "xs"
     })]
   })

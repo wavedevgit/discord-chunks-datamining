@@ -46,13 +46,13 @@ let x = e => {
     }), A = I && !x;
     if (E) return (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
-      color: "text-tertiary",
+      color: "text-muted",
       lineClamp: 1,
       children: b.intl.string(b.t.wu4gyV)
     });
     if (S) return (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
-      color: "text-tertiary",
+      color: "text-muted",
       lineClamp: 1,
       children: b.intl.string(b.t.BEjTij)
     });
@@ -60,7 +60,7 @@ let x = e => {
       let e = (0, s.TD)(Date.now(), j);
       return (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
-        color: "text-tertiary",
+        color: "text-muted",
         lineClamp: 1,
         children: b.intl.format(b.t.Io7ozn, {
           days: e.days.toString()
@@ -69,17 +69,17 @@ let x = e => {
     }
     return O && !A ? (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
-      color: "text-tertiary",
+      color: "text-muted",
       lineClamp: 1,
       children: b.intl.string(b.t["6cfuDj"])
     }) : k ? (0, r.jsx)(o.Text, {
       variant: "text-md/bold",
-      color: "text-primary",
+      color: "text-strong",
       lineClamp: 1,
       children: b.intl.string(b.t.nBtvYB)
     }) : I ? (0, r.jsx)(o.Text, {
       variant: "text-md/bold",
-      color: "text-primary",
+      color: "text-strong",
       lineClamp: 1,
       children: b.intl.string(b.t.rt69oo)
     }) : 0 === P.length ? null : (0, r.jsx)(p.F, {

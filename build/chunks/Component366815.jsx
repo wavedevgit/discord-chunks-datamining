@@ -40,46 +40,46 @@ function g(e) {
   let {
     onClick: t
   } = e;
-  return (0, l.e7)([a.qc], () => !a.qc.hasHotspot(a.v6.STAGE_CHANNEL_UPSELL)) ? null : (0, r.jsxs)("div", {
+  return (0, r.e7)([a.qc], () => !a.qc.hasHotspot(a.v6.STAGE_CHANNEL_UPSELL)) ? null : (0, l.jsxs)("div", {
     className: c.container,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, l.jsxs)("div", {
       className: c.content,
-      children: [(0, r.jsxs)("div", {
+      children: [(0, l.jsxs)("div", {
         className: c.textContainer,
-        children: [(0, r.jsx)(i.Heading, {
+        children: [(0, l.jsx)(i.Heading, {
           variant: "heading-md/semibold",
           children: o.intl.string(o.t.Sx8Ezi)
-        }), (0, r.jsx)(i.Text, {
-          color: "header-secondary",
+        }), (0, l.jsx)(i.Text, {
+          color: "text-default",
           variant: "text-xs/normal",
           className: c.descriptionText,
           children: o.intl.string(o.t.JUzPhm)
-        }), (0, r.jsx)(i.Text, {
-          color: "header-secondary",
+        }), (0, l.jsx)(i.Text, {
+          color: "text-default",
           variant: "text-xs/normal",
           children: o.intl.format(o.t.Vh7rP7, {
             suggestionsHook: d
           })
         })]
-      }), (0, r.jsx)("div", {
+      }), (0, l.jsx)("div", {
         className: c.image,
-        children: (0, r.jsx)("img", {
+        children: (0, l.jsx)("img", {
           src: u,
           alt: o.intl.string(o.t["uIm/n4"])
         })
       })]
-    }), (0, r.jsx)("div", {
+    }), (0, l.jsx)("div", {
       className: c.footer,
-      children: (0, r.jsxs)(i.ButtonGroup, {
+      children: (0, l.jsxs)(i.ButtonGroup, {
         direction: "horizontal",
         size: "sm",
-        children: [(0, r.jsx)(i.Button, {
+        children: [(0, l.jsx)(i.Button, {
           onClick: t,
           variant: "secondary",
           text: o.intl.string(o.t["X/3SyA"])
-        }), (0, r.jsx)("div", {
+        }), (0, l.jsx)("div", {
           className: c.textButtonWrapper,
-          children: (0, r.jsx)(i.Avr, {
+          children: (0, l.jsx)(i.Avr, {
             onClick: () => {
               s.Kw(a.v6.STAGE_CHANNEL_UPSELL)
             },

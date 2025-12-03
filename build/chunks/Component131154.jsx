@@ -29,7 +29,7 @@ function s(e) {
       }), (0, i.jsx)("div", {
         className: c.textInGridContainer,
         children: (0, i.jsx)(l.Text, {
-          color: "header-secondary",
+          color: "text-default",
           variant: "text-sm/normal",
           className: c.textInGrid,
           children: null == e ? true : e.userNick
@@ -49,7 +49,7 @@ function s(e) {
           height: 12
         })
       }), (0, i.jsx)(l.Text, {
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-sm/normal",
         className: c.textInGrid,
         children: o.intl.format(o.t["185ggO"], {

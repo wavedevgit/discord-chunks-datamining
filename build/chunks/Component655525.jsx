@@ -26,7 +26,7 @@ function f() {
       className: Chunk400963.BogoBadgeClockIcon
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
-      color: "text-secondary",
+      color: "text-subtle",
       children: Chunk388032.intl.string(Chunk388032.t.OS9KPu)
     })]
   }) : (0, Chunk54381.jsx)("div", {

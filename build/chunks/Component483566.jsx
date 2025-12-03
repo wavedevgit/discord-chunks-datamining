@@ -130,7 +130,7 @@ function g(e) {
     id: N,
     tag: M,
     variant: "text-md/medium",
-    color: "text-primary",
+    color: "text-strong",
     htmlFor: P,
     className: f.label,
     children: [null != v ? (0, r.jsx)(v, {
@@ -176,7 +176,7 @@ function g(e) {
         className: f.labelContainer,
         children: [n ? null : B, Z && (0, r.jsx)(u.x, {
           variant: "text-sm/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           className: f.description,
           id: x,
           children: l
@@ -222,7 +222,7 @@ function E(e) {
     })]
   })) : null != i && (_ = true, p = (0, r.jsx)(u.x, {
     variant: "text-xs/normal",
-    color: "text-secondary",
+    color: "text-subtle",
     id: s,
     children: i
   })), _) ? (0, r.jsxs)("div", {

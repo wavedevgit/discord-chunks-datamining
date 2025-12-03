@@ -127,7 +127,7 @@ function $(e) {
             children: l.username
           }), !l.hasUniqueUsername() && (0, r.jsxs)(f.Text, {
             tag: "span",
-            color: "header-secondary",
+            color: "text-default",
             variant: "text-md/normal",
             children: ["#", l.discriminator]
           })]

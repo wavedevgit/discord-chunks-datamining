@@ -19,18 +19,18 @@ function d(e) {
     children: d,
     className: o,
     isExpanded: m,
-    onExpandedChange: g,
-    defaultExpanded: x = false,
+    onExpandedChange: x,
+    defaultExpanded: g = false,
     onOpen: h,
     maxHeight: j
-  } = e, [p, v] = a.useState(x), N = a.useRef(null), [f, E] = a.useState(null), _ = true !== m, Z = _ ? m : p;
+  } = e, [p, v] = a.useState(g), N = a.useRef(null), [f, E] = a.useState(null), _ = true !== m, Z = _ ? m : p;
   a.useEffect(() => {
     Z && null != N.current && E(N.current.scrollHeight)
   }, [Z, d]);
   let P = a.useCallback(() => {
       let e = !Z;
-      _ || v(e), null == g || g(e), e && null != h && h()
-    }, [Z, _, g, h]),
+      _ || v(e), null == x || x(e), e && null != h && h()
+    }, [Z, _, x, h]),
     S = a.useMemo(() => {
       if (Z) {
         if (null != j) return {
@@ -55,7 +55,7 @@ function d(e) {
         className: c.title,
         children: [(0, t.jsx)(s.Text, {
           variant: "eyebrow",
-          color: "header-secondary",
+          color: "text-default",
           children: n
         }), null != i && "" !== i && (0, t.jsx)(s.Text, {
           variant: "text-sm/medium",

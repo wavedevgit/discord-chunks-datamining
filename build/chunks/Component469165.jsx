@@ -118,7 +118,7 @@ let D = {
           className: T.claimedFooterCode,
           children: (0, r.jsx)(a.xvT, {
             variant: "text-md/medium",
-            color: "text-primary",
+            color: "text-strong",
             children: t.code
           })
         }), l, (0, r.jsx)(a.zxk, {
@@ -151,11 +151,11 @@ let D = {
             className: T.promoCardContentText,
             children: [(0, r.jsx)(a.X6q, {
               variant: "heading-lg/semibold",
-              color: "text-primary",
+              color: "text-strong",
               children: I.intl.string(n.title)
             }), (0, r.jsx)(a.X6q, {
               variant: "heading-sm/medium",
-              color: "text-secondary",
+              color: "text-subtle",
               children: I.intl.string(n.body)
             })]
           })]
@@ -201,11 +201,11 @@ let D = {
                 className: T.promoCardContentText,
                 children: [(0, r.jsx)(a.X6q, {
                   variant: "heading-lg/semibold",
-                  color: "text-primary",
+                  color: "text-strong",
                   children: I.intl.string(e.title)
                 }), (0, r.jsx)(a.X6q, {
                   variant: "heading-sm/medium",
-                  color: "text-secondary",
+                  color: "text-subtle",
                   children: n ? I.intl.format(I.t.i2EuFO, {
                     helpdeskArticle: d.Z.getArticleURL(S.BhN.RECURRING_PROMOTION)
                   }) : i ? I.intl.string(e.body) : I.intl.format(e.bodyWithExpiration, {
@@ -251,7 +251,7 @@ let D = {
         },
         children: (0, r.jsx)(a.xvT, {
           variant: "text-sm/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: I.intl.string(I.t.rjjZxV)
         })
       })]
@@ -345,7 +345,7 @@ let D = {
             className: T.progressHeader,
             children: (0, r.jsx)(a.xvT, {
               variant: "text-md/medium",
-              color: "text-secondary",
+              color: "text-subtle",
               children: I.intl.format(I.t["43kZKL"], {
                 days: t - e.getDate()
               })

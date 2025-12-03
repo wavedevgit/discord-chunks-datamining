@@ -6,7 +6,7 @@ require.r(exports), require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk37234 = require("./37234.js"),
   Chunk2835 = require("./2835.jsx"),
@@ -26,76 +26,76 @@ var Chunk54381 = require("./54381.js"),
   Chunk691446 = require("./691446.js");
 
 function E(e) {
-  let {} = e, [t, n] = r.useState(g.ij.WELCOME), l = g.bq[t], E = r.useCallback(() => {
-    if (t >= g.ij.END_SUMMARY) return void(0, o.xf)();
+  let {} = e, [t, n] = s.useState(j.ij.WELCOME), r = j.bq[t], E = s.useCallback(() => {
+    if (t >= j.ij.END_SUMMARY) return void(0, a.xf)();
     n(t + 1)
   }, [t]);
-  return (0, i.jsx)(a.f6W, {
-    theme: j.BR.DARKER,
+  return (0, i.jsx)(o.f6W, {
+    theme: y.BR.DARKER,
     children: e => (0, i.jsxs)("div", {
-      className: s()(M.container, e),
+      className: l()(M.container, e),
       "aria-label": Z.intl.string(_.default["CdU/PF"]),
-      children: [(0, i.jsxs)(a.MyZ, {
-        activeSlide: l,
-        children: [(0, i.jsx)(a.Mi4, {
-          id: g.yD.WELCOME,
+      children: [(0, i.jsxs)(o.MyZ, {
+        activeSlide: r,
+        children: [(0, i.jsx)(o.Mi4, {
+          id: j.yD.WELCOME,
           children: (0, i.jsx)(v.Z, {})
-        }), (0, i.jsx)(a.Mi4, {
-          id: g.yD.MESSAGES,
-          children: (0, i.jsx)(h.Z, {})
-        }), (0, i.jsx)(a.Mi4, {
-          id: g.yD.EMOJIS,
+        }), (0, i.jsx)(o.Mi4, {
+          id: j.yD.MESSAGES,
+          children: (0, i.jsx)(g.Z, {})
+        }), (0, i.jsx)(o.Mi4, {
+          id: j.yD.EMOJIS,
           children: (0, i.jsx)(u.Z, {})
-        }), (0, i.jsx)(a.Mi4, {
-          id: g.yD.VOICE,
+        }), (0, i.jsx)(o.Mi4, {
+          id: j.yD.VOICE,
           children: (0, i.jsx)(f.Z, {})
-        }), (0, i.jsx)(a.Mi4, {
-          id: g.yD.GUILDS,
+        }), (0, i.jsx)(o.Mi4, {
+          id: j.yD.GUILDS,
           children: (0, i.jsx)(x.Z, {})
-        }), (0, i.jsx)(a.Mi4, {
-          id: g.yD.FRIENDS,
+        }), (0, i.jsx)(o.Mi4, {
+          id: j.yD.FRIENDS,
           children: (0, i.jsx)(m.Z, {
             step: t
           })
-        }), (0, i.jsx)(a.Mi4, {
-          id: g.yD.GAMING,
+        }), (0, i.jsx)(o.Mi4, {
+          id: j.yD.GAMING,
           children: (0, i.jsx)(p.Z, {})
-        }), (0, i.jsx)(a.Mi4, {
-          id: g.yD.QUESTS,
-          children: (0, i.jsx)(y.Z, {})
-        }), (0, i.jsx)(a.Mi4, {
-          id: g.yD.END,
+        }), (0, i.jsx)(o.Mi4, {
+          id: j.yD.QUESTS,
+          children: (0, i.jsx)(h.Z, {})
+        }), (0, i.jsx)(o.Mi4, {
+          id: j.yD.END,
           children: (0, i.jsx)(d.Z, {
             step: t
           })
         })]
       }), (0, i.jsxs)("div", {
-        className: s()(M.header, e),
+        className: l()(M.header, e),
         children: [(0, i.jsxs)("div", {
           className: M.logo,
-          children: [(0, i.jsx)(a.gw7, {
-            color: a.TVs.colors.BG_BRAND
-          }), (0, i.jsx)(a.Text, {
+          children: [(0, i.jsx)(o.gw7, {
+            color: o.TVs.colors.BG_BRAND
+          }), (0, i.jsx)(o.Text, {
             variant: "display-sm",
-            color: "text-primary",
+            color: "text-strong",
             className: M.logoText,
             children: Z.intl.string(_.default["CdU/PF"])
           })]
         }), (0, i.jsx)(c.Z, {
-          activeSlide: l,
-          totalSlides: Object.keys(g.yD).length,
+          activeSlide: r,
+          totalSlides: Object.keys(j.yD).length,
           className: M.stepIndicator
-        }), (0, i.jsx)(a.P3F, {
-          onClick: o.xf,
+        }), (0, i.jsx)(o.P3F, {
+          onClick: a.xf,
           className: M.closeButton,
-          children: (0, i.jsx)(a.Uz9, {})
+          children: (0, i.jsx)(o.Uz9, {})
         })]
-      }), (0, i.jsx)(a.P3F, {
+      }), (0, i.jsx)(o.P3F, {
         onClick: E,
         className: M.nextButton,
-        children: (0, i.jsx)(a.Text, {
+        children: (0, i.jsx)(o.Text, {
           variant: "display-sm",
-          color: "text-primary",
+          color: "text-strong",
           children: Z.intl.string(Z.t.PDTjLN)
         })
       })]

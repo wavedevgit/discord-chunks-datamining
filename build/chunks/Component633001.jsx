@@ -149,15 +149,15 @@ let ea = Chunk473749.memo(function(e) {
       className: J.panelGroup,
       children: [(0, a.jsx)(m.Text, {
         variant: "text-md/bold",
-        color: "text-primary",
+        color: "text-strong",
         children: t.gameName
       }), (0, a.jsx)(m.Text, {
         variant: "text-sm/bold",
-        color: "text-secondary",
+        color: "text-subtle",
         children: t.pid
       }), (0, a.jsx)(m.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: null == n ? true : n.exeName
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
@@ -165,7 +165,7 @@ let ea = Chunk473749.memo(function(e) {
         children: ["isLauncher: ", (null == n ? true : n.isLauncher) ? "Yes" : "No"]
       }), null != t.applicationId && (0, a.jsx)(m.Text, {
         variant: "text-md/bold",
-        color: "text-primary",
+        color: "text-strong",
         children: (0, a.jsx)(en, {
           id: t.applicationId
         })
@@ -250,11 +250,11 @@ let ea = Chunk473749.memo(function(e) {
       className: J.panelGroup,
       children: [(0, a.jsx)(m.Text, {
         variant: "text-md/semibold",
-        color: "text-primary",
+        color: "text-strong",
         children: "".concat(t)
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: ["Screen Type Resolution: ", (e => {
           var t;
           let n = null == (t = l[e]) ? true : t.timer;
@@ -264,7 +264,7 @@ let ea = Chunk473749.memo(function(e) {
         })(t)]
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: ["Window Creation: ", (e => {
           var t;
           let n = null == (t = l[e]) ? true : t.timer;
@@ -274,7 +274,7 @@ let ea = Chunk473749.memo(function(e) {
         })(t)]
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: ["Rendering: ", (e => {
           var t;
           let n = null == (t = l[e]) ? true : t.timer;
@@ -284,23 +284,23 @@ let ea = Chunk473749.memo(function(e) {
         })(t)]
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
-        color: "text-primary",
+        color: "text-strong",
         children: ["Bridge Status: ", n.get(Number(t))]
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
-        color: "text-primary",
+        color: "text-strong",
         children: ["isInputLocked: ", i]
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
-        color: "text-primary",
+        color: "text-strong",
         children: ["isInputLockedV3: ", r]
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
-        color: "text-primary",
+        color: "text-strong",
         children: ["isInputLockedV2: ", s]
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
-        color: "text-primary",
+        color: "text-strong",
         children: ["isReady: ", o]
       })]
     })
@@ -349,7 +349,7 @@ let es = Chunk473749.memo(function(e) {
   }, [t]);
   return (0, a.jsx)(m.Text, $(Q({}, n), {
     variant: "text-md/semibold",
-    color: "text-primary",
+    color: "text-strong",
     children: l
   }))
 });
@@ -418,7 +418,7 @@ let ec = Chunk473749.memo(function(e) {
     }, [t]);
     return (0, a.jsxs)(m.Text, {
       variant: "text-sm/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       tag: "span",
       children: ["Original Screen Type: ", null != n ? (0, E.sS)(n) : "Unknown"]
     })
@@ -497,27 +497,27 @@ let ec = Chunk473749.memo(function(e) {
       }, e.pid)), (0, Chunk54381.jsxs)("div", {
         children: [(0, Chunk54381.jsxs)(Chunk481060.Text, {
           variant: "text-sm/medium",
-          color: "text-primary",
+          color: "text-strong",
           children: ["focusedPID: ", null != (e = null == o ? true : o.toString()) ? module : "null"]
         }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: ["isFocusedPidOutOfProcess: ", Chunk772848 ? "Yes" : "No"]
         }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
           variant: "text-sm/medium",
-          color: "text-primary",
+          color: "text-strong",
           children: ["processPid: ", null != (t = null == Chunk473749 ? true : Chunk473749.toString()) ? exports : "unknown"]
         }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: ["isOOPEnabledForPid: ", Chunk120356 ? "Yes" : "No"]
         }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: ["SoundboardOverlay.enabled: ", r ? "Yes" : "No"]
         }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: ["SoundboardOverlay.keepOpen: ", Chunk913527 ? "Yes" : "No"]
         })]
       })]
@@ -789,19 +789,19 @@ let ev = [{
         color: function(e) {
           switch (e) {
             case y.l6.Info:
-              return "text-primary";
+              return "text-strong";
             case y.l6.Warning:
               return "text-feedback-warning";
             case y.l6.Error:
               return "text-feedback-critical";
             default:
-              return "text-secondary"
+              return "text-subtle"
           }
         }(l),
         children: t
       }), (0, a.jsxs)(m.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: ["(", n, ")"]
       })]
     })
@@ -1055,7 +1055,7 @@ function eT() {
           onClick: Chunk246992,
           children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
-            color: "text-secondary",
+            color: "text-subtle",
             children: Chunk70956 ? "Copied" : "Copy All"
           }), Chunk70956 ? (0, Chunk54381.jsx)(Chunk481060.dz2, {
             size: "sm",
@@ -1125,12 +1125,12 @@ let eN = Chunk473749.memo(function() {
         className: Chunk454741.panelHeader,
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/bold",
-          color: "text-primary",
+          color: "text-strong",
           children: "Popout Initialization Stages"
         })
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: (0, Chunk54381.jsx)("pre", {
           children: JSON.stringify(module, true, 2)
         })
@@ -1153,7 +1153,7 @@ let eN = Chunk473749.memo(function() {
         })
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: (0, Chunk54381.jsx)("pre", {
           children: JSON.stringify(exports, true, 2)
         })
@@ -1193,7 +1193,7 @@ let eI = e => {
         children: "Experiment State"
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: (0, Chunk54381.jsx)("pre", {
           children: JSON.stringify($(Q({}, module), {
             overlayKeybind: (0, Chunk13140.BB)(exports.shortcut)

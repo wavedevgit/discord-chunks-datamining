@@ -240,7 +240,7 @@ class eu extends(r = Chunk473749.PureComponent) {
       subtextClassName: Chunk33724.consentSubText
     }) : (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       className: a()(Chunk197571.marginTop8, Chunk33724.consentSubText),
       children: Chunk388032.intl.format(Chunk388032.t["KI+BSb"], {
         termsURL: Chunk981631.EYA.TERMS,
@@ -276,7 +276,7 @@ class eu extends(r = Chunk473749.PureComponent) {
           })
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           className: a()(Chunk197571.marginTop20, Chunk33724.consentSubText),
           children: Chunk388032.intl.format(Chunk388032.t["KI+BSb"], {
             termsURL: Chunk981631.EYA.TERMS,

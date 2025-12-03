@@ -38,22 +38,22 @@ function d(e) {
       className: u.textContainer,
       children: [(0, i.jsx)(s.Heading, {
         variant: "heading-md/semibold",
-        color: "text-primary",
+        color: "text-strong",
         children: d
       }), (0, i.jsx)(s.Text, {
         variant: "text-xs/normal",
-        color: "text-primary",
+        color: "text-strong",
         className: u.inline,
         children: p
       }), null != h && h > 0 ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
-          color: "text-primary",
+          color: "text-strong",
           className: u.dot,
           children: "•"
         }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
-          color: "text-primary",
+          color: "text-strong",
           className: u.inline,
           children: c.intl.format(c.t.NywdIj, {
             count: h

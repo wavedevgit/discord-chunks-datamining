@@ -23,13 +23,13 @@ let p = function(e) {
     children: [(0, r.jsx)(l.Z, {
       title: d.intl.format(d.t.kEcZ97, {}),
       description: d.intl.string(d.t.XxFts9),
-      children: (0, r.jsx)(i.Z, {})
+      children: (0, r.jsx)(a.Z, {})
     }), (0, r.jsx)(s.Z, {
       children: (0, r.jsxs)("div", {
         className: u.contentContainer,
         children: [(0, r.jsx)(c.Z, {
           onSelectApplication: n
-        }), (0, r.jsx)(a.Z, {
+        }), (0, r.jsx)(i.Z, {
           padding: true
         })]
       })

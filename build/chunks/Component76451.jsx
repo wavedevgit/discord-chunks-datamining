@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk205120 = require("./205120.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -46,10 +46,10 @@ function N(e) {
   let {
     channelId: t,
     onClick: n,
-    onClose: a,
+    onClose: l,
     onMouseEnter: s
   } = e, u = i.useRef(null), m = (0, o.e7)([f.Z], () => f.Z.getChannel(t), [t]);
-  return l()(null != m, "Forum Channel is null"), (0, r.jsxs)(c.P3F, {
+  return a()(null != m, "Forum Channel is null"), (0, r.jsxs)(c.P3F, {
     className: C.uploadInput,
     onMouseEnter: s,
     onClick: () => {
@@ -69,7 +69,7 @@ function N(e) {
       className: C.fileInput,
       ref: u,
       onChange: e => {
-        null == a || a(), (0, j.d)(e.currentTarget.files, m, x.d.FirstThreadMessage, {
+        null == l || l(), (0, j.d)(e.currentTarget.files, m, x.d.FirstThreadMessage, {
           requireConfirm: true,
           origin: "file_picker"
         }), b.S.dispatch(_.CkL.TEXTAREA_FOCUS), e.currentTarget.value = null
@@ -91,7 +91,7 @@ function O(e) {
   let {
     channelId: t,
     closePopout: n
-  } = e, [a, l] = i.useState(false), {
+  } = e, [l, a] = i.useState(false), {
     reducedMotion: d
   } = i.useContext(c.Sfi), f = (0, c.q_F)({
     from: d.enabled ? T : y,
@@ -101,7 +101,7 @@ function O(e) {
   return (0, r.jsx)(s.animated.div, {
     className: C.popoutContainer,
     onMouseLeave: () => {
-      a || n()
+      l || n()
     },
     style: f,
     children: (0, r.jsxs)(c.zJl, {
@@ -112,10 +112,10 @@ function O(e) {
       children: [(0, r.jsx)(N, {
         channelId: t,
         onClick: () => {
-          l(true)
+          a(true)
         },
         onClose: () => {
-          l(false), n()
+          a(false), n()
         }
       }), (0, r.jsx)("div", {
         className: C.uploads,
@@ -135,18 +135,18 @@ function O(e) {
 function P(e) {
   let {
     channelId: t
-  } = e, [n, a] = i.useState(false), l = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type)), s = l.length, c = s > 0;
+  } = e, [n, l] = i.useState(false), a = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type)), s = a.length, c = s > 0;
   i.useEffect(() => {
-    n && !c && a(false)
+    n && !c && l(false)
   }, [n, c]);
   let d = () => {
-    c && a(true)
+    c && l(true)
   };
   return (0, r.jsxs)("div", {
     className: C.container,
     children: [c ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g.r, {
-        upload: l[0],
+        upload: a[0],
         size: h.q.SMALL,
         onMouseEnter: d
       }), !n && (0, r.jsx)("div", {
@@ -159,7 +159,7 @@ function P(e) {
     }), n && (0, r.jsx)(O, {
       channelId: t,
       closePopout: () => {
-        a(false)
+        l(false)
       }
     })]
   })

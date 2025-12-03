@@ -18,13 +18,13 @@ function d(e) {
     onClose: u,
     isSlideReady: c,
     headerAlignStart: h
-  } = e, [f, g] = r.useState(false), [m, p] = r.useState(null), [b, S] = r.useState(""), x = r.useRef(null), j = o.intl.string(o.t["C/ZAw/"]), y = o.intl.string(o.t.fZSi1D), v = r.useCallback(e => {
-    S(e), p(null)
-  }, [S, p]);
+  } = e, [f, g] = r.useState(false), [m, p] = r.useState(null), [b, x] = r.useState(""), S = r.useRef(null), j = o.intl.string(o.t["C/ZAw/"]), y = o.intl.string(o.t.fZSi1D), v = r.useCallback(e => {
+    x(e), p(null)
+  }, [x, p]);
   return r.useEffect(() => {
     if (c) {
       var e;
-      null == (e = x.current) || e.focus()
+      null == (e = S.current) || e.focus()
     }
   }, [c]), (0, l.jsxs)("form", {
     onSubmit: e => {
@@ -44,7 +44,7 @@ function d(e) {
     }), (0, l.jsxs)(a.Z.SlideContent, {
       children: [(0, l.jsx)(s.oil, {
         label: j,
-        inputRef: x,
+        inputRef: S,
         onChange: v,
         placeholder: y,
         maxLength: i.tL,

@@ -309,7 +309,7 @@ let X = e => {
             className: j.guildSection,
             children: [(0, r.jsx)(d.Text, {
               variant: "text-sm/normal",
-              color: "text-secondary",
+              color: "text-subtle",
               className: j.guildTitle,
               children: B ? x.intl.string(x.t.kx6pEG) : x.intl.string(x.t.pDE7Gb)
             }), (0, r.jsx)(E.Oe, {

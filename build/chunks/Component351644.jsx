@@ -210,11 +210,11 @@ function W(e) {
             src: R,
             className: D.emptyStateImage
           }), (0, i.jsx)(u.Heading, {
-            color: "header-secondary",
+            color: "text-default",
             variant: "heading-xl/bold",
             children: A.intl.string(A.t.nQQeFM)
           }), (0, i.jsx)(u.Text, {
-            color: "header-secondary",
+            color: "text-default",
             variant: "text-sm/normal",
             children: A.intl.format(A.t.snvKU3, {
               handleGoToAppDirectory: () => {

@@ -1,36 +1,36 @@
 /** Chunk was on 51343 **/
-/** chunk id: 239358, original params: e,a,t (module,exports,require) **/
+/** chunk id: 239358, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => r
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk771831 = require("./771831.js");
-let l = function(e) {
+let r = function(e) {
   let {
-    label: a,
-    subLabel: t,
-    icon: l
+    label: t,
+    subLabel: a,
+    icon: r
   } = e;
-  return (0, n.jsxs)("div", {
+  return (0, l.jsxs)("div", {
     className: s.valueProp,
-    children: [(0, n.jsx)("div", {
+    children: [(0, l.jsx)("div", {
       className: s.valuePropIconContainer,
-      children: (0, n.jsx)(l, {
+      children: (0, l.jsx)(r, {
         size: "md",
         color: "currentColor"
       })
-    }), (0, n.jsxs)("div", {
+    }), (0, l.jsxs)("div", {
       className: s.valuePropText,
-      children: [(0, n.jsx)(r.Text, {
+      children: [(0, l.jsx)(n.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: a
-      }), null != t && (0, n.jsx)(r.Text, {
-        variant: "text-xs/normal",
-        color: "text-secondary",
         children: t
+      }), null != a && (0, l.jsx)(n.Text, {
+        variant: "text-xs/normal",
+        color: "text-subtle",
+        children: a
       })]
     })]
   })

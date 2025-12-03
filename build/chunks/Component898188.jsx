@@ -33,13 +33,13 @@ function T(e) {
   } = e, n = (0, l.e7)([p.Z], () => p.Z.getChannel(t.channelId)), i = (0, d.ZP)(n, true);
   return null == n ? (0, r.jsx)(c.Text, {
     variant: "text-xxs/normal",
-    color: "header-secondary",
+    color: "text-default",
     children: v.intl.format(v.t.MkzlDL, {
       channelName: v.intl.string(v.t.J90oLW)
     })
   }) : (0, r.jsx)(c.Text, {
     variant: "text-xxs/normal",
-    color: "header-secondary",
+    color: "text-default",
     children: v.intl.format(v.t.MkzlDL, {
       channelName: i
     })

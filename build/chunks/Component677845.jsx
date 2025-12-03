@@ -38,7 +38,7 @@ function S(e) {
     inCall: T,
     totalNumberOfParticipants: N,
     popoutType: A
-  } = e, w = (0, m.bp)() === E.IlC.POPOUT, M = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
+  } = e, w = (0, m.bp)() === E.IlC.POPOUT, M = (0, o.e7)([C.Z], () => C.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
   } = (0, O.d)(), L = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), k = (0, b.bt)(I.id, t), D = r.useCallback(() => {
     (0, a.j)(() => {
@@ -54,7 +54,7 @@ function S(e) {
       })
     })
   }, [I.id, R]);
-  let U = (0, o.e7)([C.Z], () => I.isPrivate() || (0, f.b)(C.Z, M, I), [M, I]),
+  let U = (0, o.e7)([y.Z], () => I.isPrivate() || (0, f.b)(y.Z, M, I), [M, I]),
     V = (null == M ? true : M.afkChannelId) === I.id,
     F = I.userLimit <= 0 || I.userLimit > 1,
     H = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),

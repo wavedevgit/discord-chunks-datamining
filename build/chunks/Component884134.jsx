@@ -460,14 +460,14 @@ function en(e) {
           className: B.section,
           children: [(0, r.jsx)(f.Text, {
             variant: "text-sm/semibold",
-            color: "text-secondary",
+            color: "text-subtle",
             children: Z.intl.string(G.default.o2NfLF)
           }), (0, r.jsx)(j.o, {})]
         }), (0, r.jsxs)("div", {
           className: B.section,
           children: [(0, r.jsx)(f.Text, {
             variant: "text-sm/semibold",
-            color: "text-secondary",
+            color: "text-subtle",
             children: Z.intl.string(G.default.uSL2Gy)
           }), (0, r.jsx)(x.U, {
             onChange: e => {
@@ -481,7 +481,7 @@ function en(e) {
           className: B.section,
           children: [(0, r.jsx)(f.Text, {
             variant: "text-sm/semibold",
-            color: "text-secondary",
+            color: "text-subtle",
             children: Z.intl.string(G.default.F1t0c8)
           }), T.length > 1 && (0, r.jsx)(X, {
             gradientAngle: L,

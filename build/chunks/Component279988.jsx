@@ -30,7 +30,7 @@ let m = function(e) {
     actionsLocation: _,
     fieldStyle: v
   } = e, O = n.values, C = O.slice(0, 1), y = O.length - C.length;
-  return (0, r.jsxs)(d.Z, {
+  return (0, r.jsxs)(u.Z, {
     field: n,
     index: i,
     isDragEnabled: m,
@@ -51,7 +51,7 @@ let m = function(e) {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: g.clickable,
-        children: u.intl.format(u.t.jnhD0S, {
+        children: d.intl.format(d.t.jnhD0S, {
           count: y
         })
       }), (0, r.jsx)(o.Z, {

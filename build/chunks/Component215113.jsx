@@ -185,7 +185,7 @@ function U(e) {
                     })
                   }), (0, r.jsx)(d.Text, {
                     variant: "text-sm/medium",
-                    color: "header-secondary",
+                    color: "text-default",
                     children: g.config.messages.gameTitle
                   })]
                 })]

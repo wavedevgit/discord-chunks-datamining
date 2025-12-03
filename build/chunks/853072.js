@@ -13,13 +13,13 @@ function c(e) {
   let {
     userId: t
   } = (0, o.z)(), n = (0, i.N)(e);
-  return (0, r.Wu)([a.default], () => {
-    let e = a.default.getCurrentUser(),
+  return (0, r.Wu)([l.default], () => {
+    let e = l.default.getCurrentUser(),
       r = new Set;
     return n.forEach(e => {
       r.add(e.author_id), e.participants.forEach(e => {
         r.add(e)
       })
-    }), Array.from(r).filter(n => n !== (null == e ? true : e.id) && n !== t).map(e => a.default.getUser(e)).filter(l.lm)
+    }), Array.from(r).filter(n => n !== (null == e ? true : e.id) && n !== t).map(e => l.default.getUser(e)).filter(a.lm)
   }, [n, t])
 }

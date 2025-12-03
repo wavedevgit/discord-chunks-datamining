@@ -28,7 +28,7 @@ function x(e) {
     onDragReset: j,
     onDragComplete: _,
     draggingId: v
-  } = e, O = (0, d.ZP)(), {
+  } = e, O = (0, u.ZP)(), {
     drag: C,
     drop: y,
     dragSourcePosition: N,
@@ -89,7 +89,7 @@ function x(e) {
         icon: null != (r = n.getIconURL(128)) ? r : null
       }
     } else if (null != e.provider_id) {
-      let n = u.Z.get(e.provider_id);
+      let n = d.Z.get(e.provider_id);
       return null != n ? {
         name: n.name,
         icon: "light" === t ? null == (i = n.icon) ? true : i.lightPNG : null == (l = n.icon) ? true : l.darkPNG
@@ -138,7 +138,7 @@ function x(e) {
         className: b.textContent,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
-          color: "text-primary",
+          color: "text-strong",
           children: Z.name
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",

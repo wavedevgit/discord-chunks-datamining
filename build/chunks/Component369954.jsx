@@ -72,7 +72,7 @@ let v = e => {
           children: Chunk388032.intl.string(Chunk744038.default.ahKIJO)
         }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-md/medium",
-          color: "text-tertiary",
+          color: "text-muted",
           children: Chunk388032.intl.format(Chunk744038.default.X9rW0j, {
             openSettingsHook: (e, t) => (0, r.jsx)(o.Anchor, {
               onClick: n,
@@ -111,7 +111,7 @@ let v = e => {
           children: Chunk388032.intl.string(Chunk744038.default.ahKIJO)
         }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-md/medium",
-          color: "text-tertiary",
+          color: "text-muted",
           children: Chunk388032.intl.string(Chunk744038.default.Sv236e)
         })]
       }), (0, Chunk54381.jsx)(v, {

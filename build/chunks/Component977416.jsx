@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -22,20 +22,20 @@ var Chunk120356 = require("./120356.js"),
 function h(e) {
   var t, n, {
       gameName: i,
-      onClick: a
+      onClick: l
     } = e,
     s = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          a = Object.keys(e);
-        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["gameName", "onClick"]);
@@ -43,7 +43,7 @@ function h(e) {
     h = p.intl.formatToPlainString(p.t["3mb1s5"], {
       game: g
     }),
-    y = (0, l.e7)([u.Z], () => u.Z.suggestedFetchIsLoading);
+    y = (0, a.e7)([u.Z], () => u.Z.suggestedFetchIsLoading);
   return (0, d.kO)(s.applicationId) || y ? (0, r.jsx)("div", {
     className: m.loadingCover
   }) : (0, r.jsx)(o.u, {
@@ -51,7 +51,7 @@ function h(e) {
     ariaHidden: true,
     children: (0, r.jsxs)(c.P3F, {
       className: b.addButton,
-      onClick: a,
+      onClick: l,
       "aria-label": h,
       children: [(0, r.jsx)(f.Z, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -98,11 +98,11 @@ function y(e) {
     userId: t,
     games: n,
     onDismiss: i,
-    onClick: l,
+    onClick: a,
     className: o
   } = e, u = (0, s.Dt)();
   return (0, r.jsxs)("aside", {
-    className: a()(b.container, o),
+    className: l()(b.container, o),
     "aria-labelledby": u,
     children: [(0, r.jsxs)("div", {
       className: b.header,
@@ -117,7 +117,7 @@ function y(e) {
       }), (0, r.jsx)(c.Heading, {
         id: u,
         variant: "text-xs/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: p.intl.string(p.t.zMUr6Z)
       })]
     }), (0, r.jsx)(g.Z, {
@@ -126,14 +126,14 @@ function y(e) {
         let {
           applicationId: n,
           gameName: i,
-          imageSrc: a
+          imageSrc: l
         } = e;
         return (0, r.jsx)(h, {
-          onClick: () => l(n, i, a),
+          onClick: () => a(n, i, l),
           userId: t,
           applicationId: n,
           gameName: i,
-          imageSrc: a
+          imageSrc: l
         })
       }
     })]

@@ -1,17 +1,17 @@
 /** Chunk was on 44097 **/
 /** chunk id: 5136, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  r: () => l
+  r: () => a
 });
 var Chunk473749 = require("./473749.js"),
   Chunk85707 = require("./85707.js"),
   Chunk481060 = require("./481060.js");
 
-function l(e) {
+function a(e) {
   let {
     container: t,
     edgeDistance: n = 130,
-    maxSpeed: l = 1700,
+    maxSpeed: a = 1700,
     power: o = 2.2
   } = e, c = (0, r.useRef)(null), s = (0, r.useRef)(0), u = (0, r.useRef)({
     top: 0,
@@ -28,7 +28,7 @@ function l(e) {
   (0, r.useEffect)(() => {
     d.current = p
   }, [p]);
-  let b = (0, a.zPA)();
+  let b = (0, l.zPA)();
   (0, r.useEffect)(() => {
     if (null == t) return;
     if (!(true === g && (null == m ? true : m.itemType) === "WIDGET" && !b)) {
@@ -46,18 +46,18 @@ function l(e) {
         s.current = r;
         return
       }
-      let a = Math.min(32, 0 !== s.current ? r - s.current : 16) / 1e3;
+      let l = Math.min(32, 0 !== s.current ? r - s.current : 16) / 1e3;
       s.current = r;
       let {
         top: f,
         bottom: g
       } = u.current, p = i.y, m = p - f, b = g - p, h = 0;
-      if (m >= 0 && m < n ? h = -l * Math.pow(1 - m / n, o) : b >= 0 && b < n && (h = l * Math.pow(1 - b / n, o)), 0 !== h) {
-        let e = h * a;
+      if (m >= 0 && m < n ? h = -a * Math.pow(1 - m / n, o) : b >= 0 && b < n && (h = a * Math.pow(1 - b / n, o)), 0 !== h) {
+        let e = h * l;
         Math.abs(e) >= 1 && (t.scrollTop += Math.round(e))
       }
     }), () => {
       null !== c.current && cancelAnimationFrame(c.current), c.current = null, s.current = 0, null != t && (t.style.overflowAnchor = "auto", t.style.overscrollBehavior = "auto")
     }
-  }, [t, g, null == m ? true : m.itemType, n, l, o, b])
+  }, [t, g, null == m ? true : m.itemType, n, a, o, b])
 }

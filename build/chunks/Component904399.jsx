@@ -33,7 +33,7 @@ function l(e) {
       children: p.header
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/medium",
-      color: "text-secondary",
+      color: "text-subtle",
       children: p.body
     })]
   }) : (0, r.jsxs)(a.u2D, {

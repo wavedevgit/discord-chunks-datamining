@@ -39,12 +39,12 @@ function x(e) {
       }), (0, a.jsxs)("div", {
         children: [(0, a.jsx)(r.Heading, {
           variant: "heading-md/semibold",
-          color: "text-primary",
+          color: "text-strong",
           className: p.title,
           children: m.intl.string(m.t.PRXV49)
         }), (0, a.jsx)(r.Text, {
           variant: "text-sm/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: m.intl.string(m.t["RSHtF+"])
         })]
       }), f ? (0, a.jsx)(r.Button, {

@@ -43,7 +43,7 @@ function m(e) {
           children: p.intl.string(p.t["6jI0hd"])
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: p.intl.string(p.t.GuUItX)
         })]
       }), (0, r.jsx)("div", {
@@ -76,7 +76,7 @@ function m(e) {
         className: _.headerTextContainer,
         children: (0, r.jsx)(s.Text, {
           variant: "text-md/bold",
-          color: "header-secondary",
+          color: "text-default",
           children: p.intl.string(p.t.GFyMg1)
         })
       }), (0, r.jsx)("div", {

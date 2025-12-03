@@ -15,7 +15,7 @@ let s = e => {
     message: s,
     originalAuthor: o,
     channel: c
-  } = e, d = (0, a.Sw)(o, c), u = null != (n = null != (t = null == d ? true : d.nick) ? t : null == o ? true : o.username) ? n : "", m = (0, l.l)({
+  } = e, d = (0, l.Sw)(o, c), u = null != (n = null != (t = null == d ? true : d.nick) ? t : null == o ? true : o.username) ? n : "", m = (0, a.l)({
     user: null != o ? o : true,
     channelId: c.id,
     guildId: c.guild_id,

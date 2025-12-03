@@ -35,7 +35,7 @@ function E(e) {
   }), T = u.ZP.getUserAvatarURL(t), A = i.useMemo(() => v.some(e => (0, f.sg)(e)) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.x, {
       variant: "text-lg/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: h.intl.string(h.t.uT1CPa)
     }), (0, r.jsx)(o.X6q, {
       variant: "heading-xxl/bold",
@@ -52,11 +52,11 @@ function E(e) {
       }) : null]
     }), b.length > 0 ? (0, r.jsx)(l.x, {
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: h.intl.string(h.t.jFbDnJ)
     }) : (0, r.jsx)(l.x, {
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: h.intl.string(h.t["X+Fdpo"])
     })]
   }), [b.length, n, E, v]);

@@ -37,22 +37,22 @@ function O(t) {
   }, Z = r.useMemo(() => {
     switch (R) {
       case 0:
-        return _.intl.string(_.t.sZf6cz);
+        return f.intl.string(f.t.sZf6cz);
       case 2:
-        return _.intl.string(_.t.HQ2nKl);
+        return f.intl.string(f.t.HQ2nKl);
       default:
-        return _.intl.string(_.t["65XQar"])
+        return f.intl.string(f.t["65XQar"])
     }
   }, [R]);
   return (0, i.jsx)(h.Z, {
     heroImageSrc: b,
-    heroImageAlt: _.intl.string(_.t.RVyYCK),
-    header: _.intl.string(_.t["mWO+ys"]),
-    description: _.intl.string(_.t.S0XtKF),
+    heroImageAlt: f.intl.string(f.t.RVyYCK),
+    header: f.intl.string(f.t["mWO+ys"]),
+    description: f.intl.string(f.t.S0XtKF),
     children: (0, i.jsxs)("div", {
-      className: f.buttonContainer,
+      className: _.buttonContainer,
       children: [(0, i.jsx)(s.Button, {
-        text: E ? _.intl.string(_.t.XyHpKH) : _.intl.string(_.t.l4Emac),
+        text: E ? f.intl.string(f.t.XyHpKH) : f.intl.string(f.t.l4Emac),
         variant: "primary",
         fullWidth: true,
         icon: s.k$p,
@@ -66,7 +66,7 @@ function O(t) {
           }))
         }
       }), (0, i.jsx)(s.Button, {
-        text: O ? _.intl.string(_.t.QvwOJ6) : _.intl.string(_.t["7fHyE6"]),
+        text: O ? f.intl.string(f.t.QvwOJ6) : f.intl.string(f.t["7fHyE6"]),
         variant: "secondary",
         fullWidth: true,
         icon: s.U65,

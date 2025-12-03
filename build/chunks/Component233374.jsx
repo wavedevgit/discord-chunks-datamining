@@ -6,34 +6,34 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk538719 = require("./538719.js");
 let o = function(e) {
   let {
     tabs: t,
     onTabSelect: n,
-    selectedTab: a,
+    selectedTab: i,
     className: o
   } = e;
   return (0, r.jsx)(l.njP, {
     type: "top-pill",
-    selectedItem: a,
+    selectedItem: i,
     onItemSelect: n,
     className: o,
     children: t.map((e, t) => {
       let {
         id: n,
-        label: a,
+        label: i,
         count: o
       } = e;
       return (0, r.jsx)(l.njP.Item, {
         id: n,
-        className: i()(s.tabItem, {
+        className: a()(s.tabItem, {
           [s.firstChildSpacingFix]: 0 === t
         }),
-        "aria-label": a,
-        children: null != o && o > 0 ? "".concat(a, " (").concat(o, ")") : a
+        "aria-label": i,
+        children: null != o && o > 0 ? "".concat(i, " (").concat(o, ")") : i
       }, n)
     })
   })

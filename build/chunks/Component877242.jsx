@@ -76,7 +76,7 @@ function h() {
               [Chunk273339.adDetailsTextPrimaryPortrait]: require,
               [Chunk273339.addFourPxMarginRight]: require
             }),
-            color: S ? "text-primary" : "text-secondary",
+            color: S ? "text-strong" : "text-subtle",
             lineClamp: 1,
             children: module.config.messages.gamePublisher
           }), x ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -91,7 +91,7 @@ function h() {
               }),
               variant: "heading-sm/medium",
               lineClamp: require ? true : 1,
-              color: S ? "text-primary" : "text-secondary",
+              color: S ? "text-strong" : "text-subtle",
               children: y
             })]
           }) : null]

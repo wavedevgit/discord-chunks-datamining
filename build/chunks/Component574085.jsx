@@ -64,7 +64,7 @@ function p() {
       description: i,
       emoji_id: l,
       emoji_name: a,
-      ref_type: d.Qs.INTANGIBLE,
+      ref_type: u.Qs.INTANGIBLE,
       ref_id: true
     };
     null != t ? s[t] = o : s.push(o), p(s)

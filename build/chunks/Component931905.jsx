@@ -20,30 +20,30 @@ let c = e => {
     confirmCta: d,
     showOpenDiscord: m = true
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: s.confirmationContainer,
-    children: [(0, r.jsx)(l.Heading, {
+    children: [(0, i.jsx)(l.Heading, {
       className: s.confirmationHeader,
       variant: "heading-lg/extrabold",
       children: c
-    }), null != u ? (0, r.jsx)(l.Text, {
+    }), null != u ? (0, i.jsx)(l.Text, {
       className: s.confirmationSubtitle,
       variant: "text-sm/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: u
-    }) : null, (0, r.jsxs)("div", {
+    }) : null, (0, i.jsxs)("div", {
       className: s.buttonContainer,
-      children: [m && (0, r.jsx)(i.zxk, {
+      children: [m && (0, i.jsx)(r.zxk, {
         variant: "primary",
         text: o.intl.string(o.t["8L5bZG"]),
         fullWidth: true,
         onClick: () => (0, a.Z)("application_sub_mweb_success_modal")
-      }), (0, r.jsx)(i.zxk, {
+      }), (0, i.jsx)(r.zxk, {
         variant: "secondary",
         text: d,
         fullWidth: true,
         onClick: t
-      }), null != n && (0, r.jsx)(i.zxk, {
+      }), null != n && (0, i.jsx)(r.zxk, {
         variant: "secondary",
         text: o.intl.string(o.t.iAfxo3),
         fullWidth: true,
@@ -59,32 +59,32 @@ function u(e) {
     tierName: n,
     subscription: c
   } = e;
-  return (0, r.jsxs)("div", {
+  return (0, i.jsxs)("div", {
     className: s.confirmationContainer,
-    children: [(0, r.jsx)(l.Heading, {
+    children: [(0, i.jsx)(l.Heading, {
       className: s.confirmationHeader,
       variant: "heading-lg/extrabold",
       children: o.intl.format(o.t.wLFT6z, {
         tier: n
       })
-    }), (0, r.jsx)(l.Text, {
+    }), (0, i.jsx)(l.Text, {
       className: s.confirmationSubtitle,
       variant: "text-sm/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: o.intl.format(o.t.OsAK9h, {
         timestamp: null == c ? true : c.currentPeriodEnd
       })
-    }), (0, r.jsxs)("div", {
+    }), (0, i.jsxs)("div", {
       className: s.buttonContainer,
-      children: [(0, r.jsx)("div", {
+      children: [(0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: s.__invalid_openDiscordButton,
-        children: (0, r.jsx)(i.zxk, {
+        children: (0, i.jsx)(r.zxk, {
           variant: "primary",
           text: o.intl.string(o.t["8L5bZG"]),
           onClick: () => (0, a.Z)("application_sub_mweb_success_modal")
         })
-      }), (0, r.jsx)(i.zxk, {
+      }), (0, i.jsx)(r.zxk, {
         variant: "secondary",
         text: o.intl.string(o.t.nlkywz),
         onClick: t

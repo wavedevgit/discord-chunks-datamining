@@ -2,7 +2,7 @@
 /** chunk id: 795691, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./388685.js"), require("./457542.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,12 +12,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk661656 = require("./661656.js");
 
-function d(e) {
+function u(e) {
   let {
     guildId: t,
     selectedGameApplicationIds: n,
-    onUpdateGames: d,
-    disabled: u
+    onUpdateGames: u,
+    disabled: d
   } = e, {
     topGames: g,
     tryFetchTopGames: m
@@ -29,8 +29,8 @@ function d(e) {
   }, [t, m]);
   let b = i.useMemo(() => null == p ? [] : Object.keys(p).filter(e => !n.includes(e)).sort((e, t) => p[t].score - p[e].score), [p, n]),
     x = i.useCallback(e => {
-      n.includes(e) ? d(n.filter(t => t !== e)) : d([...n, e])
-    }, [d, n]);
+      n.includes(e) ? u(n.filter(t => t !== e)) : u([...n, e])
+    }, [u, n]);
   return f && null == p ? (0, r.jsx)(l.$jN, {}) : null == b || 0 === b.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: c.separator
@@ -46,7 +46,7 @@ function d(e) {
           applicationId: e,
           selected: false,
           onClick: x,
-          disabled: u
+          disabled: d
         }, e))
       })]
     })]

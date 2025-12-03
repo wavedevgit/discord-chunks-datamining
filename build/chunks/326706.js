@@ -14,7 +14,7 @@ function s(e) {
     isPlaying: t,
     playSound: n,
     preloadSound: s
-  } = (0, l.Z)(null != e ? (0, i.Z)(e.soundId) : null);
+  } = (0, a.Z)(null != e ? (0, i.Z)(e.soundId) : null);
   return r.useEffect(() => {
     null != e && s()
   }, [e, s]), {
@@ -22,7 +22,7 @@ function s(e) {
     playSound: r.useCallback(() => {
       var t;
       return !!n({
-        volume: (0, a.Z)(null != (t = null == e ? true : e.volume) ? t : 1)
+        volume: (0, l.Z)(null != (t = null == e ? true : e.volume) ? t : 1)
       })
     }, [n, null == e ? true : e.volume])
   }

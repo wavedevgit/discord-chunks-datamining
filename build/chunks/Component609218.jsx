@@ -117,7 +117,7 @@ function M(e) {
               children: a
             }), (0, r.jsx)(u.Text, {
               variant: "text-md/medium",
-              color: "text-secondary",
+              color: "text-subtle",
               className: N.body,
               children: j
             })]

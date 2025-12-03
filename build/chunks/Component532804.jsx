@@ -32,10 +32,10 @@ function f(e) {
     clearTimeout(E.current)
   }, []);
   let I = b.find(e => e.value === _);
-  return (0, r.jsx)(u.Z, {
+  return (0, r.jsx)(d.Z, {
     title: O ? f : null != (t = null == I ? true : I.title) ? t : f,
     description: O ? "(".concat(null != (n = null == I ? true : I.title) ? n : m.intl.string(m.t.PoWNfe), ")") : null != (l = null == I ? true : I.description) ? l : "",
-    highlightColor: O ? d.q.NONE : null == I ? true : I.highlightColor,
+    highlightColor: O ? u.q.NONE : null == I ? true : I.highlightColor,
     action: (0, r.jsx)(s.zx, {
       look: s.zx.Looks.LINK,
       size: s.zx.Sizes.MIN,

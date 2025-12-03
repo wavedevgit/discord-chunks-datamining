@@ -2,7 +2,7 @@
 /** chunk id: 957011, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,17 +13,17 @@ var Chunk473749 = require("./473749.js"),
   Chunk53365 = require("./53365.js"),
   Chunk223892 = require("./223892.js");
 
-function u(e, t) {
+function d(e, t) {
   let n = (0, i.e7)([s.Z], () => s.Z.getGuild(e)),
-    [u, g] = r.useState(),
+    [d, g] = r.useState(),
     [m, p] = r.useState(false),
-    f = (0, d.Ob)(n);
+    f = (0, u.Ob)(n);
   return {
     canSubmitAcceptance: (0, i.e7)([o.default], () => {
       let e = o.default.getCurrentUser();
       return null != n && (0, a.eM)(n, e)
     }, [n]),
-    error: u,
+    error: d,
     loading: m,
     submitAcceptTermsRequest: r.useCallback(async () => {
       if (null != e && (f || null != t)) {

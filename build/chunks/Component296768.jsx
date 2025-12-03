@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 296768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk226788 = require("./226788.js"),
   Chunk414642 = require("./414642.js");
-let y = e => {
+let O = e => {
   let {
     game: t,
     onClose: n,
@@ -67,7 +67,7 @@ let y = e => {
   })
 };
 
-function O(e) {
+function y(e) {
   let {
     applicationId: t,
     onClose: n,
@@ -99,7 +99,7 @@ function O(e) {
     }), (0, a.jsx)("div", {
       className: b.similarGames,
       style: {},
-      children: p.map(e => (0, a.jsx)(y, {
+      children: p.map(e => (0, a.jsx)(O, {
         game: e,
         onClose: n,
         trackClick: r

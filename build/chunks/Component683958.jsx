@@ -1,7 +1,7 @@
 /** Chunk was on 53682 **/
 /** chunk id: 683958, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ApplicationCommandShareModal: () => _
+  ApplicationCommandShareModal: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,18 +23,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk963354 = require("./963354.js"),
   Chunk621054 = require("./621054.js");
 let S = [Chunk911969.yU.CHAT],
-  C = () => {
+  _ = () => {
     (0, Chunk481060.Mr3)(Chunk333861.s)
   };
 
-function _(e) {
+function C(e) {
   var t, {
       applicationId: n,
       channel: s,
       command: y,
-      onClose: _,
-      requireLaunchChannel: O,
-      onShareResult: P,
+      onClose: C,
+      requireLaunchChannel: P,
+      onShareResult: O,
       previewMessage: E
     } = e,
     w = function(e, t) {
@@ -70,22 +70,22 @@ function _(e) {
       allowApplicationState: true
     })),
     D = r.useRef(0),
-    [A, k] = r.useState(O && null != Z ? [Z] : []),
-    I = A.length,
+    [k, A] = r.useState(P && null != Z ? [Z] : []),
+    I = k.length,
     F = I >= 5,
     [R, q] = r.useState(""),
     {
       results: U,
       updateSearchText: z
     } = (0, c.s)({
-      selectedDestinations: A,
+      selectedDestinations: k,
       originDestination: null != Z ? Z : true,
       includeMissingDMs: true
     }),
     H = r.useCallback(e => {
       q(e), z(e)
     }, [z]),
-    G = r.useCallback(() => (P(false), _()), [P, _]),
+    G = r.useCallback(() => (O(false), C()), [O, C]),
     [W] = (0, u.Z)([n]),
     V = r.useCallback(() => {
       q("")
@@ -97,8 +97,8 @@ function _(e) {
       null == (e = X.current) || e.focus()
     }
   }, [R]);
-  let Y = r.useCallback(e => {
-      k(t => {
+  let B = r.useCallback(e => {
+      A(t => {
         let n = t.findIndex(t => {
           let {
             type: n,
@@ -111,7 +111,7 @@ function _(e) {
         return l.splice(n, 1), D.current += 1, l
       })
     }, [F, z]),
-    [Q, B] = r.useMemo(() => {
+    [Q, Y] = r.useMemo(() => {
       if (T) return [null, false];
       let e = M.find(e => e.untranslatedName === y.name);
       return true !== e ? [e, false] : [null, true]
@@ -123,7 +123,7 @@ function _(e) {
       if (null === Q) return;
       N(true);
       let n = (await Promise.all(e.map(o.qx))).filter(b.lm);
-      t && (P(true), C()), n.forEach(async e => {
+      t && (O(true), _()), n.forEach(async e => {
         var t, n;
         let l = d.Z.getChannel(e);
         if (null == l) return;
@@ -140,39 +140,39 @@ function _(e) {
             guild: i
           }
         }) && (0, a.showToast)((0, a.createToast)(v.intl.string(v.t["5WjJcl"]), a.ToastType.MESSAGE))
-      }), P(true), C()
-    }, [P, Q, y.options]),
+      }), O(true), _()
+    }, [O, Q, y.options]),
     K = r.useCallback(() => {
-      J(A, {
+      J(k, {
         closeAfterSend: true
       })
-    }, [J, A]);
+    }, [J, k]);
   if (T) return (0, l.jsx)(i.Modal, {
     title: v.intl.string(v.t.fuFvwx),
     "aria-label": v.intl.string(v.t.fuFvwx),
     transitionState: w.transitionState,
-    onClose: _,
+    onClose: C,
     actions: [],
     children: (0, l.jsx)(a.$jN, {
       className: x.spinnerContainer
     })
   });
-  if (B) return (0, l.jsx)(i.Modal, {
+  if (Y) return (0, l.jsx)(i.Modal, {
     title: v.intl.string(v.t.fuFvwx),
     "aria-label": v.intl.string(v.t.fuFvwx),
     transitionState: w.transitionState,
-    onClose: _,
+    onClose: C,
     actions: [{
       text: v.intl.string(v.t.cpT0Cq),
-      onClick: _,
+      onClick: C,
       variant: "primary"
     }],
     children: v.intl.string(v.t.yAk8ZT)
   });
   let $ = U.length > 0 ? (0, l.jsx)(g.F, {
       rowData: U,
-      handleToggleDestination: Y,
-      selectedDestinations: A,
+      handleToggleDestination: B,
+      selectedDestinations: k,
       disableSelection: F,
       originDestination: Z
     }) : (0, l.jsxs)(l.Fragment, {

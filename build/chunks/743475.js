@@ -32,7 +32,7 @@ function h(e) {
   })
 }
 async function b(e) {
-  let t = Array.from(d.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
+  let t = Array.from(u.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
     n = g.Z.advancedMode,
     [f, h] = (0, s.d9)(e.id, [...t]),
     b = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts),
@@ -41,12 +41,12 @@ async function b(e) {
     title: p.intl.string(p.t.iLdiqY),
     body: p.intl.string(p.t.JOT74c)
   });
-  if (d.Z.hasChanges()) {
+  if (u.Z.hasChanges()) {
     r.Z.dispatch({
       type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SUBMIT"
     });
     try {
-      await (0, u.n_)(e.id, {
+      await (0, d.n_)(e.id, {
         default_channel_ids: t
       }), r.Z.dispatch({
         type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS",

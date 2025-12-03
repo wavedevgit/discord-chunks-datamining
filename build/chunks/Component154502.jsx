@@ -19,8 +19,8 @@ function s(e) {
   } = e, c = (0, l.c)(null != (t = null == n ? true : n.type) ? t : s, n, o);
   if (null == c) return null;
   let {
-    headerText: d,
-    helperText: u,
+    headerText: u,
+    helperText: d,
     icon: g
   } = c;
   return (0, r.jsxs)("div", {
@@ -40,12 +40,12 @@ function s(e) {
         className: a.actionTextHeader,
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: [d, null != u && (0, r.jsx)(i.Text, {
+        children: [u, null != d && (0, r.jsx)(i.Text, {
           className: a.actionTextHelper,
           variant: "text-xs/medium",
           color: "text-muted",
           tag: "span",
-          children: u
+          children: d
         })]
       })
     })]

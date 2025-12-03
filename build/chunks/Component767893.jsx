@@ -79,7 +79,7 @@ function y(e) {
       size: "xxs"
     }), (0, r.jsx)(c.Heading, {
       variant: "text-md/semibold",
-      color: "header-secondary",
+      color: "text-default",
       children: s
     })]
   })

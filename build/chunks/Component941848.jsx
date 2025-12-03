@@ -29,7 +29,7 @@ function c(t) {
   return t
 }
 
-function d(t, e) {
+function g(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -42,15 +42,15 @@ function d(t, e) {
   }), t
 }
 
-function g(t) {
+function d(t) {
   let {
     user: e,
     tagId: n,
     title: r,
     messageCount: s,
     reactionCount: c,
-    activeAgo: d,
-    tags: g,
+    activeAgo: g,
+    tags: d,
     attachment: m
   } = t, {
     name: u,
@@ -79,7 +79,7 @@ function g(t) {
             color: "header-primary",
             variant: "text-xxs/medium",
             className: l.inlineTag,
-            children: g[n]
+            children: d[n]
           })]
         })]
       }), (0, a.jsx)(i.Heading, {
@@ -90,7 +90,7 @@ function g(t) {
       }), (0, a.jsxs)("div", {
         className: l.inline,
         children: [(0, a.jsxs)(i.Text, {
-          color: "header-secondary",
+          color: "text-default",
           variant: "text-xs/medium",
           className: l.alignCenter,
           children: [(0, a.jsx)(i.kBi, {
@@ -103,7 +103,7 @@ function g(t) {
             className: l.bullet,
             children: "•"
           }), (0, a.jsxs)(i.Text, {
-            color: "header-secondary",
+            color: "text-default",
             variant: "text-xs/medium",
             className: l.alignCenter,
             children: [(0, a.jsx)("span", {
@@ -117,9 +117,9 @@ function g(t) {
           className: l.bullet,
           children: "•"
         }), (0, a.jsx)(i.Text, {
-          color: "header-secondary",
+          color: "text-default",
           variant: "text-xs/medium",
-          children: d
+          children: g
         })]
       })]
     }), null != m && (0, a.jsx)("img", {
@@ -241,8 +241,8 @@ function p(t) {
   } = t, [n, o] = r.useState(0), m = r.useRef(null), {
     tags: p,
     posts: x,
-    postPreview: h,
-    ariaLabel: f
+    postPreview: f,
+    ariaLabel: h
   } = (0, s.Z)(e);
   return r.useEffect(() => {
     o(0)
@@ -252,7 +252,7 @@ function p(t) {
   }, [n]), (0, a.jsxs)("div", {
     className: l.container,
     role: "image",
-    "aria-label": f,
+    "aria-label": h,
     children: [(0, a.jsxs)("div", {
       ref: m,
       className: l.browser,
@@ -267,11 +267,11 @@ function p(t) {
         }, e))
       }), (0, a.jsx)("div", {
         className: l.posts,
-        children: x.map((t, e) => (0, a.jsx)(g, d(c({}, t), {
+        children: x.map((t, e) => (0, a.jsx)(d, g(c({}, t), {
           tags: p
         }), e))
       })]
-    }), (0, a.jsx)(u, d(c({}, h), {
+    }), (0, a.jsx)(u, g(c({}, f), {
       maxHeight: n
     }))]
   })

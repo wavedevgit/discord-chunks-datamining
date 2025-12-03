@@ -1,7 +1,7 @@
 /** Chunk was on 65652 **/
-/** chunk id: 534044, original params: n,e,i (module,exports,require) **/
+/** chunk id: 534044, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,63 +17,63 @@ var Chunk120356 = require("./120356.js"),
   Chunk186425 = require("./186425.js"),
   Chunk160557 = require("./160557.js");
 
-function u(n) {
+function p(n) {
   let {
-    className: e,
-    onNext: i,
+    className: t,
+    onNext: e,
     onClose: a
-  } = n, u = (0, o.n)();
-  return (0, t.jsxs)(t.Fragment, {
-    children: [(0, t.jsxs)(l.xBx, {
+  } = n, p = (0, o.n)();
+  return (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)(l.xBx, {
       "data-migration-pending": true,
       direction: r.Z.Direction.VERTICAL,
       className: g.header,
       separator: false,
-      children: [(0, t.jsx)("div", {
+      children: [(0, i.jsx)("div", {
         className: m.iconContainer,
-        children: (0, t.jsx)("img", {
-          src: p,
+        children: (0, i.jsx)("img", {
+          src: u,
           alt: "",
           className: m.icon
         })
-      }), (0, t.jsx)(l.Heading, {
+      }), (0, i.jsx)(l.Heading, {
         className: g.title,
         variant: "heading-xl/semibold",
         children: x.intl.string(x.t.QMbTSu)
-      }), (0, t.jsx)(l.Heading, {
+      }), (0, i.jsx)(l.Heading, {
         className: g.subtitle,
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-md/normal",
         children: x.intl.string(x.t.Qdx8AP)
-      }), null != a && (0, t.jsx)(l.olH, {
+      }), null != a && (0, i.jsx)(l.olH, {
         "data-migration-pending": true,
         className: g.closeButton,
         onClick: a
       })]
-    }), (0, t.jsxs)(l.hzk, {
+    }), (0, i.jsxs)(l.hzk, {
       "data-migration-pending": true,
-      className: s()(m.modalContent, e),
+      className: s()(m.modalContent, t),
       paddingFix: false,
-      children: [(0, t.jsx)(l.Heading, {
+      children: [(0, i.jsx)(l.Heading, {
         variant: "heading-md/bold",
         color: "header-primary",
         className: m.actionsHeader,
         children: x.intl.string(x.t["9BRc1N"])
-      }), (0, t.jsx)(c.Z, {
+      }), (0, i.jsx)(c.Z, {
         text: x.intl.string(x.t.PxL38B),
         url: d.sQ.COMMUNITY_GUIDELINES,
-        onClick: () => u(d.n0.ClickCommunityGuidelinesLink)
-      }), (0, t.jsx)(c.Z, {
+        onClick: () => p(d.n0.ClickCommunityGuidelinesLink)
+      }), (0, i.jsx)(c.Z, {
         text: x.intl.string(x.t.qC3XKa),
         url: d.sQ.WARNING_SYSTEM_HELPCENTER_LINK,
-        onClick: () => u(d.n0.ClickWarningSystemHelpcenterLink)
+        onClick: () => p(d.n0.ClickWarningSystemHelpcenterLink)
       })]
-    }), (0, t.jsx)(l.mzw, {
+    }), (0, i.jsx)(l.mzw, {
       "data-migration-pending": true,
-      children: (0, t.jsx)(l.Button, {
+      children: (0, i.jsx)(l.Button, {
         variant: "primary",
         text: x.intl.string(x.t.i4jeWR),
-        onClick: i
+        onClick: e
       })
     })]
   })

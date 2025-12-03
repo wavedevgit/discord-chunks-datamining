@@ -16,9 +16,9 @@ function o(e) {
     sendStartNotification: t,
     setSendStartNotification: n
   } = e, o = t ? s.intl.string(s.t.xAT8lI) : s.intl.string(s.t["Y+18hV"]);
-  return (0, r.jsx)("div", {
+  return (0, l.jsx)("div", {
     className: c.notificationToggle,
-    children: (0, r.jsx)(i.$q, {
+    children: (0, l.jsx)(i.$q, {
       type: i.M0.INVERTED,
       size: 14,
       className: c.__invalid_checkbox,
@@ -26,14 +26,14 @@ function o(e) {
       onChange: function() {
         n(!t)
       },
-      children: (0, r.jsx)(a.Text, {
-        color: "header-secondary",
+      children: (0, l.jsx)(a.Text, {
+        color: "text-default",
         variant: "text-sm/normal",
-        children: (0, r.jsx)(l.u, {
+        children: (0, l.jsx)(r.u, {
           position: "bottom",
           text: s.intl.string(s.t["4A/xnW"]),
           "aria-label": s.intl.string(s.t["4A/xnW"]),
-          children: (0, r.jsx)("span", {
+          children: (0, l.jsx)("span", {
             children: o
           })
         })

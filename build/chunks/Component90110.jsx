@@ -144,7 +144,7 @@ function N() {
           }, e.id))
         }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-md/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: Chunk388032.intl.string(Chunk222613.default["no+FQS"])
         }), (0, Chunk54381.jsx)(P, {
           overallStatus: Chunk782568 ? 0 : C ? 3 : 1,
@@ -232,7 +232,7 @@ function P(e) {
       className: S.calloutBox,
       children: (0, r.jsx)(l.xvT, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: v.intl.string(O.default.OEkrCx)
       })
     })]
@@ -248,7 +248,7 @@ function R(e) {
     className: S.categoryHeader,
     children: [(0, r.jsx)(l.xvT, {
       variant: "text-md/semibold",
-      color: "text-secondary",
+      color: "text-subtle",
       children: t
     }), (0, r.jsx)(D, {
       status: n
@@ -274,7 +274,7 @@ function w(e) {
         children: n
       }), null != i && (0, r.jsx)(l.xvT, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: i
       }), null != a && (0, r.jsx)(l.Avr, {
         textVariant: "text-sm/medium",

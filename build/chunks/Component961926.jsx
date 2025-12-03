@@ -71,11 +71,11 @@ function h(e) {
       }), (0, r.jsx)(l.Z, {
         onChange: j,
         initialValue: null == (t = b.triggerMetadata) ? true : t.allowList,
-        maxWordCount: u.I3,
+        maxWordCount: d.I3,
         collapsed: (null == (n = b.triggerMetadata) ? true : n.allowList) == null || (null == (h = b.triggerMetadata) ? true : h.allowList.length) === 0
       })]
-    }), (0, r.jsx)(d.Z, {
-      type: d.Z.Type.ARROW_DOWN
+    }), (0, r.jsx)(u.Z, {
+      type: u.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(c.Z, {
       step: 2,
       header: g.intl.string(g.t["18TOiQ"]),
@@ -83,8 +83,8 @@ function h(e) {
         rule: b,
         onChangeRule: x
       })
-    }), (0, r.jsx)(d.Z, {
-      type: d.Z.Type.CROSS
+    }), (0, r.jsx)(u.Z, {
+      type: u.Z.Type.CROSS
     }), (0, r.jsx)(c.Z, {
       step: 3,
       header: g.intl.string(g.t.eq3gjh),

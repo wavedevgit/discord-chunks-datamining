@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk911969 = require("./911969.js"),
@@ -178,13 +178,13 @@ function G(e) {
         var n, r, i = function(e, t) {
           if (null == e) return {};
           var n, r, i = {},
-            a = Object.keys(e);
-          for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            l = Object.keys(e);
+          for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
           return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var a = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          var l = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
       }(t, ["body"]);
@@ -226,7 +226,7 @@ function B(e) {
     title: t,
     body: n,
     image: i,
-    imagePlaceholder: a
+    imagePlaceholder: l
   } = e;
   return (0, r.jsxs)("div", {
     className: D.heroSection,
@@ -252,10 +252,10 @@ function B(e) {
         responsive: true,
         className: D.heroImage
       })
-    }) : null != a ? (0, r.jsx)("div", {
+    }) : null != l ? (0, r.jsx)("div", {
       className: D.heroImageContainer,
       children: (0, r.jsx)("img", {
-        src: a,
+        src: l,
         alt: "",
         className: D.heroImage
       })
@@ -288,14 +288,14 @@ function U(e) {
 function W(e) {
   let {
     content: t
-  } = e, n = i.useId(), a = (0, b._)();
+  } = e, n = i.useId(), l = (0, b._)();
   return null != t ? (0, r.jsx)(y.Z, {
     type: s.re.TEXT_DISPLAY,
     id: n,
     content: t,
     className: D.text
   }) : (0, r.jsx)("div", {
-    className: l()(D.textPlaceholder, a.className)
+    className: a()(D.textPlaceholder, l.className)
   })
 }
 
@@ -304,8 +304,8 @@ function H(e) {
     content: t,
     image: n,
     imagePosition: i
-  } = e, a = (0, b._)(), o = R(n) ? (0, r.jsx)("div", {
-    className: l()(D.image, a.className),
+  } = e, l = (0, b._)(), o = R(n) ? (0, r.jsx)("div", {
+    className: a()(D.image, l.className),
     "data-position": i,
     children: (0, r.jsx)(O.ZP, {
       src: n.proxyUrl,
@@ -315,7 +315,7 @@ function H(e) {
       responsive: true
     })
   }) : null == t ? (0, r.jsx)("div", {
-    className: l()(D.imagePlaceholder, a.className)
+    className: a()(D.imagePlaceholder, l.className)
   }) : null;
   return (0, r.jsxs)("div", {
     className: D.textWithImage,
@@ -333,10 +333,10 @@ function z(e) {
   let {
     size: t = "small",
     divider: n = false
-  } = e, a = i.useId();
+  } = e, l = i.useId();
   return (0, r.jsx)(h.Z, {
     type: s.re.SEPARATOR,
-    id: a,
+    id: l,
     divider: n,
     spacing: "large" === t ? s.US.LARGE : s.US.SMALL
   })
@@ -371,8 +371,8 @@ function V(e, t) {
       r += i;
       continue
     }
-    let a = t.variables[i];
-    null == a ? r += "––" : "unfurled_media" === a.type ? r += a.media.url : "number" === a.type ? r += t.numberFormat.format(a.value) : "string" === a.type && (r += a.value)
+    let l = t.variables[i];
+    null == l ? r += "––" : "unfurled_media" === l.type ? r += l.media.url : "number" === l.type ? r += t.numberFormat.format(l.value) : "string" === l.type && (r += l.value)
   }
   return r
 }
@@ -382,8 +382,8 @@ function q(e, t) {
   if (null == e || "skeleton" === t.mode) return null;
   let i = null == (r = e.match(A)) || null == (n = r[0]) ? true : n.slice(2, false);
   if (null == i) return null;
-  let a = t.variables[i];
-  return null == a || "unfurled_media" !== a.type ? null : a.media
+  let l = t.variables[i];
+  return null == l || "unfurled_media" !== l.type ? null : l.media
 }
 let Y = Chunk473749.createContext(null);
 
@@ -438,7 +438,7 @@ function J(e) {
         children: e.heading
       }), (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: e.content
       })]
     }), (0, r.jsx)(c.Kqy, {
@@ -456,14 +456,14 @@ let $ = Object.assign(function(e) {
     trackUserProfileAction: t
   } = (0, w.KZ)(), {
     user: n,
-    widget: a,
+    widget: l,
     cta: s,
     subtle: d = false
   } = e, p = (0, o.e7)([_.default], () => _.default.getId()) === n.id, {
     application: m,
     game: b,
     config: h
-  } = X(a), y = null == m ? true : m.getIconURL(16), O = (0, j.O)(n.id).data, P = null == O ? true : O.find(e => e.application_id === a.applicationId), S = (0, g.Z)({
+  } = X(l), y = null == m ? true : m.getIconURL(16), O = (0, j.O)(n.id).data, P = null == O ? true : O.find(e => e.application_id === l.applicationId), S = (0, g.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == b ? true : b.id,
     source: f.m1.UserProfile,
@@ -477,9 +477,9 @@ let $ = Object.assign(function(e) {
   } = (0, u.F)(m), M = i.useCallback(() => {
     R && (t({
       action: "PRESS_APPLICATION_WIDGET_UNLINKED_CONNECT",
-      applicationId: a.applicationId
+      applicationId: l.applicationId
     }), L())
-  }, [R, L, t, a.applicationId]), B = null == s && T && !A && R, F = (0, r.jsxs)(r.Fragment, {
+  }, [R, L, t, l.applicationId]), B = null == s && T && !A && R, F = (0, r.jsxs)(r.Fragment, {
     children: [null != y ? (0, r.jsx)("img", {
       className: D.appIcon,
       src: y,
@@ -498,13 +498,13 @@ let $ = Object.assign(function(e) {
     className: D.headerTitle,
     children: F
   }) : (0, r.jsx)(c.P3F, {
-    className: l()(D.headerTitle, D.clickable),
+    className: a()(D.headerTitle, D.clickable),
     onClick: S,
     children: F
   }), W = (0, o.e7)([x.default], () => x.default.locale), H = i.useMemo(() => {
     let e = function(e, t, n) {
-      var r, i, a;
-      let l = new Intl.NumberFormat(n, {
+      var r, i, l;
+      let a = new Intl.NumberFormat(n, {
         notation: "compact",
         compactDisplay: "short",
         roundingMode: "floor"
@@ -512,12 +512,12 @@ let $ = Object.assign(function(e) {
       return null == e ? {
         mode: "skeleton",
         config: t,
-        numberFormat: l
+        numberFormat: a
       } : {
         mode: "from_data",
         variables: Object.fromEntries(Object.entries(k({
           username: null == (r = e.profile) ? true : r.username
-        }, null == (a = e.profile) || null == (i = a.data) ? true : i.primary)).filter(I.V5).map(e => {
+        }, null == (l = e.profile) || null == (i = l.data) ? true : i.primary)).filter(I.V5).map(e => {
           let [t, n] = e;
           if ("object" == typeof n) {
             if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
@@ -535,7 +535,7 @@ let $ = Object.assign(function(e) {
           return null
         }).filter(I.lm)),
         config: t,
-        numberFormat: l
+        numberFormat: a
       }
     }(null != P ? P : null, null != h ? h : null, W);
     return Z.map(function t(n) {
@@ -569,8 +569,8 @@ let $ = Object.assign(function(e) {
   }, [h, P, W]);
   return (0, r.jsxs)(E.Z, N(k({}, e), {
     userId: n.id,
-    widget: a,
-    className: l()(D.widgetContainer, d && D.subtle),
+    widget: l,
+    className: a()(D.widgetContainer, d && D.subtle),
     headerTitle: U,
     headerClassName: D.header,
     additionalManageWidgetMenuItems: null != b ? (0, r.jsx)(c.sNh, {
@@ -582,7 +582,7 @@ let $ = Object.assign(function(e) {
     children: [(0, r.jsx)(Y.Provider, {
       value: e,
       children: (0, r.jsx)(Q, {
-        widget: a,
+        widget: l,
         children: (0, r.jsx)(G, {
           component: H
         })
@@ -595,7 +595,7 @@ let $ = Object.assign(function(e) {
           size: "xxs"
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: C.intl.string(C.t.z5K4Uv)
         })]
       }), B ? (0, r.jsx)(J, {

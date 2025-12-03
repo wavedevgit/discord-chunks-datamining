@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
 function d(e) {
   let {
     application: t
-  } = e, n = a.useMemo(() => {
+  } = e, n = i.useMemo(() => {
     var e;
     let n = null == (e = t.directory_entry) ? true : e.popular_application_commands;
     return null != n ? n.map(e => (0, l.Z8)({
@@ -25,7 +25,7 @@ function d(e) {
   }, [t]);
   return 0 === n.length ? null : (0, r.jsxs)("div", {
     className: c.sectionContainer,
-    children: [(0, r.jsx)(i.Heading, {
+    children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: o.intl.string(o.t.swIgTL)
@@ -33,12 +33,12 @@ function d(e) {
       className: c.contentContainer,
       children: n.map(e => (0, r.jsxs)("div", {
         className: c.commandContainer,
-        children: [(0, r.jsxs)(i.Text, {
+        children: [(0, r.jsxs)(a.Text, {
           className: c.commandName,
           variant: "code",
           color: "header-primary",
           children: [s.GI, e.displayName]
-        }), (0, r.jsx)(i.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "text-default",
           children: e.displayDescription

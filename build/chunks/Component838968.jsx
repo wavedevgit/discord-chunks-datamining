@@ -93,7 +93,7 @@ function v(e) {
         className: m.price,
         tag: "div",
         variant: "heading-md/semibold",
-        color: "text-secondary",
+        color: "text-subtle",
         children: u.intl.formatToPlainString(u.t.t2Wbo1, {
           required: n,
           decorator: null != t ? t : ""

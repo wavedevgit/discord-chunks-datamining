@@ -47,7 +47,7 @@ function I(e) {
     m.Z.updateGuild({
       discoverySplash: e
     })
-  }, []), d = i.useCallback(() => {
+  }, []), u = i.useCallback(() => {
     m.Z.updateGuild({
       discoverySplash: null
     })
@@ -74,7 +74,7 @@ function I(e) {
           children: y.intl.string(y.t.LYju5J)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: y.intl.string(y.t["53LhI6"])
         })]
       }), (0, r.jsxs)("div", {
@@ -85,13 +85,13 @@ function I(e) {
           children: y.intl.string(y.t.JaecVH)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: y.intl.string(y.t.VJMq8R)
         }), (0, r.jsxs)("div", {
           className: N.buttonList,
           children: [(0, r.jsx)("div", {
             className: N.editableSection,
-            children: (0, r.jsx)(u.Z, {
+            children: (0, r.jsx)(d.Z, {
               onChange: c,
               text: y.intl.string(y.t["3UB9ad"]),
               size: "sm",
@@ -104,7 +104,7 @@ function I(e) {
               variant: "critical-secondary",
               size: "sm",
               text: y.intl.string(y.t.N86XcP),
-              onClick: d
+              onClick: u
             })
           }) : null]
         })]
@@ -116,7 +116,7 @@ function I(e) {
           children: [y.intl.string(y.t["1Ts7QP"]), o ? (0, r.jsx)(E, {}) : null]
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: y.intl.string(y.t["6Y9q8d"])
         }), (0, r.jsx)("div", {
           className: N.editableSection,
@@ -154,7 +154,7 @@ function S(e) {
         children: y.intl.string(y.t["5b4VCV"])
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: y.intl.string(y.t.MMEJFB)
       })]
     }), (0, r.jsxs)("div", {
@@ -165,7 +165,7 @@ function S(e) {
         children: [y.intl.string(y.t.Rv9Anz), i ? (0, r.jsx)(E, {}) : null]
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: y.intl.string(y.t.CE5Gya)
       }), (0, r.jsx)("div", {
         className: N.editableSection,
@@ -182,7 +182,7 @@ function S(e) {
         children: y.intl.string(y.t.oOPlPA)
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: y.intl.string(y.t["4jnzla"])
       }), (0, r.jsx)("div", {
         className: N.editableSection,
@@ -206,7 +206,7 @@ function T(e) {
     guildMetadata: n,
     requireTag: l,
     error: a
-  } = e, [u, g] = i.useState(null), m = i.useCallback(e => {
+  } = e, [d, g] = i.useState(null), m = i.useCallback(e => {
     let r = Array.from(e),
       i = [...n.keywords].filter(e => !r.includes(e));
     g(null), (0, c.zH)(t, i)
@@ -223,7 +223,7 @@ function T(e) {
       disabled: t,
       tooltipText: t ? y.intl.string(y.t.Xx7XeB) : true
     }
-  }), [n.keywords, n.primaryCategoryId, p]), b = null != a ? a : u, x = i.useMemo(() => n.keywords.map(e => ({
+  }), [n.keywords, n.primaryCategoryId, p]), b = null != a ? a : d, x = i.useMemo(() => n.keywords.map(e => ({
     id: e,
     label: e
   })), [n.keywords]);
@@ -256,7 +256,7 @@ function T(e) {
         children: y.intl.string(y.t.sF28Ou)
       }), (0, r.jsx)("div", {
         className: N.editableSection,
-        children: (0, r.jsx)(d.j, {
+        children: (0, r.jsx)(u.j, {
           pills: h
         })
       })]
@@ -283,7 +283,7 @@ function P(e) {
         children: y.intl.string(y.t.DhJ8ur)
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: y.intl.string(y.t["/RSSlV"])
       }), (0, r.jsx)("div", {
         className: N.editableSection,
@@ -321,7 +321,7 @@ function w(e) {
         children: y.intl.string(y.t.pO60fy)
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: y.intl.string(y.t["SF/GRh"])
       })]
     }), (0, r.jsx)("div", {

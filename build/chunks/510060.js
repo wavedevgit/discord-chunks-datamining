@@ -11,9 +11,9 @@ require.d(exports, {
   rI: () => u
 });
 var r, Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722);
+  l = require.n(Chunk512722);
 
-function l(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,7 +45,7 @@ class c {
     maxWidth: t,
     gap: n
   }) {
-    l(this, "minWidth", true), l(this, "maxWidth", true), l(this, "gap", true), a()(e < t, "minWidth needs to be smaller than maxWidth"), this.minWidth = e, this.maxWidth = t, this.gap = n
+    a(this, "minWidth", true), a(this, "maxWidth", true), a(this, "gap", true), l()(e < t, "minWidth needs to be smaller than maxWidth"), this.minWidth = e, this.maxWidth = t, this.gap = n
   }
 }
 let d = {

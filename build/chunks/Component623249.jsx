@@ -82,7 +82,7 @@ function S(e) {
         className: O.contentHeader,
         children: [(0, r.jsx)(u.Text, {
           variant: "eyebrow",
-          color: "header-secondary",
+          color: "text-default",
           children: E.intl.string(E.t["+/hZM/"])
         }), (0, r.jsxs)(u.P3F, {
           className: a()(O.refreshWrapper, {

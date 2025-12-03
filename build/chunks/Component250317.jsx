@@ -79,7 +79,7 @@ function Z(e) {
         children: i.name
       }), (0, l.jsx)(u.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: i.description
       })]
     }), (0, l.jsx)(u.Heading, {
@@ -176,7 +176,7 @@ function D(e) {
       alt: t.label
     }, a), (0, l.jsx)(u.Text, {
       variant: "text-xs/medium",
-      color: "text-primary",
+      color: "text-strong",
       children: t.label
     })]
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 51343 **/
-/** chunk id: 859097, original params: e,a,t (module,exports,require) **/
+/** chunk id: 859097, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  C: () => x
+  C: () => u
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,48 +13,48 @@ var Chunk755721 = require("./755721.js"),
   Chunk771831 = require("./771831.js"),
   Chunk387852 = require("./387852.js");
 
-function x(e) {
+function u(e) {
   let {
-    onContinue: a,
-    onClose: t,
-    title: x,
-    body: u
+    onContinue: t,
+    onClose: a,
+    title: u,
+    body: x
   } = e;
-  return (0, n.jsxs)(i.Z, {
-    children: [(0, n.jsxs)(s.xBx, {
-      direction: l.Z.Direction.VERTICAL,
+  return (0, l.jsxs)(i.Z, {
+    children: [(0, l.jsxs)(s.xBx, {
+      direction: r.Z.Direction.VERTICAL,
       className: c.header,
       separator: false,
-      children: [(0, n.jsx)("img", {
+      children: [(0, l.jsx)("img", {
         src: d,
         className: c.illustration,
         width: "254",
         height: "127",
         alt: ""
-      }), (0, n.jsx)(s.Heading, {
+      }), (0, l.jsx)(s.Heading, {
         className: c.title,
         variant: "heading-xl/extrabold",
-        children: x
-      }), null != t && (0, n.jsx)(s.olH, {
+        children: u
+      }), null != a && (0, l.jsx)(s.olH, {
         className: c.closeButton,
-        onClick: t
+        onClick: a
       })]
-    }), (0, n.jsx)(s.hzk, {
+    }), (0, l.jsx)(s.hzk, {
       className: c.body,
       paddingFix: false,
-      children: (0, n.jsx)(s.Text, {
+      children: (0, l.jsx)(s.Text, {
         tag: "p",
         variant: "text-md/normal",
-        color: "header-secondary",
-        children: u
+        color: "text-default",
+        children: x
       })
-    }), (0, n.jsx)(s.mzw, {
+    }), (0, l.jsx)(s.mzw, {
       className: c.footer,
-      children: (0, n.jsxs)(r.zx, {
+      children: (0, l.jsxs)(n.zx, {
         className: c.footerButton,
-        color: r.zx.Colors.BRAND,
-        onClick: a,
-        children: [o.intl.string(o.t["7NqTJn"]), (0, n.jsx)(s.rgF, {
+        color: n.zx.Colors.BRAND,
+        onClick: t,
+        children: [o.intl.string(o.t["7NqTJn"]), (0, l.jsx)(s.rgF, {
           color: "currentColor",
           className: c.launchIcon,
           size: "xs"

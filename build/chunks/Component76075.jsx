@@ -1,7 +1,7 @@
 /** Chunk was on 3378 **/
-/** chunk id: 76075, original params: n,e,t (module,exports,require) **/
+/** chunk id: 76075, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  default: () => v
+  default: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,49 +17,49 @@ var Chunk54381 = require("./54381.js"),
   Chunk702286 = require("./702286.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk394121 = require("./394121.js");
-let v = function(n) {
+let _ = function(n) {
   let {
-    guildId: e,
-    transitionState: t,
-    onClose: v
-  } = n, _ = (0, a.e7)([p.Z], () => p.Z.getRequest(e), [e]), C = (0, a.e7)([u.Z], () => u.Z.getGuild(e), [e]), R = (0, a.e7)([c.default], () => {
+    guildId: t,
+    transitionState: e,
+    onClose: _
+  } = n, h = (0, a.e7)([p.Z], () => p.Z.getRequest(t), [t]), x = (0, a.e7)([u.Z], () => u.Z.getGuild(t), [t]), C = (0, a.e7)([c.default], () => {
     var n;
     return null == (n = c.default.getCurrentUser()) ? true : n.id
-  }), k = (0, a.e7)([s.ZP], () => null != R ? s.ZP.getMember(e, R) : null, [R, e]), x = o.useCallback(() => {
-    v(), null == k && (0, g.Z)()
-  }, [k, v]), Z = o.useCallback(async () => {
-    if (null == k ? true : k.isPending) {
+  }), R = (0, a.e7)([s.ZP], () => null != C ? s.ZP.getMember(t, C) : null, [C, t]), k = o.useCallback(() => {
+    _(), null == R && (0, f.Z)()
+  }, [R, _]), Z = o.useCallback(async () => {
+    if (null == R ? true : R.isPending) {
       try {
-        await d.Z.removeGuildJoinRequest(e)
+        await d.Z.removeGuildJoinRequest(t)
       } catch (n) {
         throw n
       }
-      v(), (0, m.hk)(e)
-    } else d.Z.resetGuildJoinRequest(e)
-  }, [e, null == k ? true : k.isPending, v]), j = o.useMemo(() => [{
-    text: f.intl.string(f.t.I1LYVk),
+      _(), (0, m.hk)(t)
+    } else d.Z.resetGuildJoinRequest(t)
+  }, [t, null == R ? true : R.isPending, _]), j = o.useMemo(() => [{
+    text: g.intl.string(g.t.I1LYVk),
     variant: "secondary",
     onClick: Z
   }, {
-    text: f.intl.string(f.t.BddRzS),
+    text: g.intl.string(g.t.BddRzS),
     variant: "critical-primary",
-    onClick: x
-  }], [Z, x]);
+    onClick: k
+  }], [Z, k]);
   return (0, i.jsx)(l.Modal, {
-    transitionState: t,
-    onClose: v,
-    title: (null == C ? true : C.name) != null ? f.intl.formatToPlainString(f.t["P+/gzA"], {
-      guildName: C.name
-    }) : f.intl.string(f.t.gBPcuP),
+    transitionState: e,
+    onClose: _,
+    title: (null == x ? true : x.name) != null ? g.intl.formatToPlainString(g.t["P+/gzA"], {
+      guildName: x.name
+    }) : g.intl.string(g.t.gBPcuP),
     actions: j,
-    children: (null == _ ? true : _.rejectionReason) != null && (null == _ ? true : _.rejectionReason) !== "" ? (0, i.jsxs)(r.Text, {
+    children: (null == h ? true : h.rejectionReason) != null && (null == h ? true : h.rejectionReason) !== "" ? (0, i.jsxs)(r.Text, {
       variant: "text-md/medium",
-      color: "header-secondary",
+      color: "text-default",
       children: [(0, i.jsx)("span", {
-        className: h.rejectionReasonLabel,
-        children: f.intl.string(f.t.cf1psW)
+        className: v.rejectionReasonLabel,
+        children: g.intl.string(g.t.cf1psW)
       }), (0, i.jsx)("span", {
-        children: null == _ ? true : _.rejectionReason
+        children: null == h ? true : h.rejectionReason
       })]
     }) : null
   })

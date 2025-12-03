@@ -28,8 +28,8 @@ let j = e => {
     disableActivityProfileLinks: _,
     customCTA: I,
     popoutClassname: b,
-    popoutPosition: y = "right"
-  } = e, O = i.useRef(null), E = (0, s.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getChannelId())), w = (0, s.e7)([u.default], () => u.default.getUser(t.author_id)), {
+    popoutPosition: O = "right"
+  } = e, y = i.useRef(null), E = (0, s.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getChannelId())), w = (0, s.e7)([u.default], () => u.default.getUser(t.author_id)), {
     nick: N,
     avatar: P
   } = i.useMemo(() => {
@@ -40,8 +40,8 @@ let j = e => {
     }
   }, [w, E]);
   return null == w ? null : (0, a.jsx)(o.yRy, {
-    targetElementRef: O,
-    position: y,
+    targetElementRef: y,
+    position: O,
     renderPopout: e => {
       let {
         closePopout: i,
@@ -86,7 +86,7 @@ let j = e => {
         }
         return e
       }({
-        innerRef: O
+        innerRef: y
       }, e), i = i = {
         className: h.profileEntryCard,
         children: (0, a.jsx)(o.tEY, {
@@ -109,7 +109,7 @@ let j = e => {
                 className: l()(v.column, v.gapXs),
                 children: [(0, a.jsx)(o.Text, {
                   variant: "text-md/medium",
-                  color: "text-primary",
+                  color: "text-strong",
                   lineClamp: 1,
                   children: N
                 }), (0, a.jsx)(p.Gk, {

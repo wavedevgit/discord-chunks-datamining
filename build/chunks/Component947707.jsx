@@ -63,7 +63,7 @@ function f(e) {
     className: s.selectItemRow,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-md/medium",
-      color: c ? "text-muted" : "text-primary",
+      color: c ? "text-muted" : "text-strong",
       className: s.title,
       children: t
     }), (0, r.jsx)(a.q4e, {

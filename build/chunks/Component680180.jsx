@@ -15,15 +15,15 @@ function d(e) {
   let {
     state: t,
     query: n,
-    placeholder: i,
+    placeholder: a,
     onTextChange: d,
     onCollapsedClick: u,
     onClear: p,
     onBlur: m,
     onSubmit: h
-  } = e, g = a.useRef(null), _ = a.useCallback(e => {
+  } = e, g = i.useRef(null), f = i.useCallback(e => {
     "Enter" === e.key && h()
-  }, [h]), f = a.useCallback(() => {
+  }, [h]), _ = i.useCallback(() => {
     u(), setTimeout(() => {
       var e;
       return null == (e = g.current) ? true : e.focus()
@@ -31,7 +31,7 @@ function d(e) {
   }, [u]);
   return t === o.GlobalDiscoverySearchBarState.COLLAPSED ? (0, r.jsx)(s.P3F, {
     className: c.searchIcon,
-    onClick: f,
+    onClick: _,
     children: (0, r.jsx)(s._Ve, {
       size: "sm",
       color: s.TVs.colors.ICON_PRIMARY
@@ -44,10 +44,10 @@ function d(e) {
       size: "sm",
       ref: g,
       query: n,
-      placeholder: i,
+      placeholder: a,
       onChange: d,
       onClear: p,
-      onKeyDown: _,
+      onKeyDown: f,
       onBlur: m
     })
   })

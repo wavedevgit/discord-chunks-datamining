@@ -36,10 +36,10 @@ function j(e) {
     currentUser: a,
     hidePrivateData: r,
     isAuthenticated: E
-  } = (0, c.cj)([_.default, f.Z, h.default], () => ({
+  } = (0, c.cj)([_.default, h.Z, f.default], () => ({
     currentUser: _.default.getCurrentUser(),
-    hidePrivateData: f.Z.hidePersonalInformation,
-    isAuthenticated: h.default.isAuthenticated()
+    hidePrivateData: h.Z.hidePersonalInformation,
+    isAuthenticated: f.default.isAuthenticated()
   })), v = new x.Z(n), j = E && (null == a ? true : a.id) === v.id, U = n.tokenStatus === b.q.INVALID, I = r || v.hasUniqueUsername() ? null : "#".concat(v.discriminator), M = null;
   return m.Z.useConfig({
     location: "Account card load"
@@ -76,7 +76,7 @@ function j(e) {
               identifiable: r ? "never" : "always"
             })
           }), (0, i.jsx)(o.Text, {
-            color: "header-secondary",
+            color: "text-default",
             variant: "text-sm/normal",
             children: I
           })]

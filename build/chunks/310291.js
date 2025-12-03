@@ -12,21 +12,21 @@ let s = (e, t) => {
   let {
     groupType: n,
     teamId: i
-  } = t, [s, o] = r.useState(true), [c, d] = r.useState([]), u = r.useCallback(async () => {
-    if (d([]), null == e) return void o(false);
+  } = t, [s, o] = r.useState(true), [c, u] = r.useState([]), d = r.useCallback(async () => {
+    if (u([]), null == e) return void o(false);
     try {
       o(true);
       let t = await a.C(e, {
         grouping_type: n
       });
-      d(t)
+      u(t)
     } catch (e) {} finally {
       o(false)
     }
   }, [e, n]);
   return r.useEffect(() => {
-    u()
-  }, [u]), {
+    d()
+  }, [d]), {
     payoutsByPeriod: r.useMemo(() => (e => {
       let t = {};
       for (let n of e) {

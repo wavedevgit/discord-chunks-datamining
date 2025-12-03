@@ -1,7 +1,7 @@
 /** Chunk was on 89650 **/
 /** chunk id: 858597, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => R
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -55,7 +55,7 @@ function C(t) {
         children: e
       }), (0, i.jsx)(c.Text, {
         variant: "text-xs/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: n
       })]
     }), (0, i.jsx)(c.Button, {
@@ -85,7 +85,7 @@ function L(t) {
         children: e
       }), null != n ? (0, i.jsx)(c.Text, {
         variant: "text-xs/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: n
       }) : null]
     }), (0, i.jsx)(c.Fbu, {
@@ -94,23 +94,23 @@ function L(t) {
     })]
   })
 }
-let y = function(t) {
+let R = function(t) {
   let {
     otherUserId: e,
     channelId: r,
     warningId: l,
     warningType: o,
     transitionToSlide: N
-  } = t, y = (0, S.o)(), R = (0, S.Q)(), v = (0, E.q)(r), f = null != (0, g.M)(r), F = (0, a.e7)([_.Z], () => _.Z.isIgnored(e), [e]), M = (0, a.e7)([_.Z], () => _.Z.isBlocked(e), [e]), I = s.useCallback(t => {
+  } = t, R = (0, S.o)(), f = (0, S.Q)(), y = (0, E.q)(r), v = null != (0, g.M)(r), F = (0, a.e7)([_.Z], () => _.Z.isIgnored(e), [e]), M = (0, a.e7)([_.Z], () => _.Z.isBlocked(e), [e]), I = s.useCallback(t => {
     (0, O.qc)({
       channelId: r,
       warningId: l,
       senderId: e,
       warningType: o,
       cta: t,
-      isNudgeWarning: f
+      isNudgeWarning: v
     })
-  }, [r, l, e, o, f]), Z = s.useCallback(() => {
+  }, [r, l, e, o, v]), Z = s.useCallback(() => {
     (0, c.Mr3)(p.X_), I(O.NM.USER_SAFETY_TOOLS_BLOCK_CONFIRM)
   }, [I]), U = s.useCallback(() => {
     d.Z.unblockUser(e, {
@@ -163,9 +163,9 @@ let y = function(t) {
     subTitle: b.intl.string(b.t["0tydOa"]),
     buttonText: b.intl.string(b.t.X27yhD),
     onPress: () => {
-      (0, c.Mr3)(p.X_), (0, u.wk)(v), I(O.NM.USER_SAFETY_TOOLS_REPORT)
+      (0, c.Mr3)(p.X_), (0, u.wk)(y), I(O.NM.USER_SAFETY_TOOLS_REPORT)
     }
-  }], [F, M, I, U, Z, k, e, r, v]), P = s.useMemo(() => {
+  }], [F, M, I, U, Z, k, e, r, y]), P = s.useMemo(() => {
     let t = {
         title: b.intl.string(b.t.ZSbbMJ),
         subTitle: b.intl.string(b.t.iNcsrW),
@@ -224,8 +224,8 @@ let y = function(t) {
       return t
     }({
       type: 0
-    }, y ? t : R ? n : e)]
-  }, [y, R, N, I]), B = s.useMemo(() => [{
+    }, R ? t : f ? n : e)]
+  }, [R, f, N, I]), B = s.useMemo(() => [{
     type: 1,
     title: b.intl.string(b.t.otdt24),
     onPress: () => {

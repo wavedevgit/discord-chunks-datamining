@@ -39,7 +39,7 @@ let m = e => {
           children: t
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
-          color: "header-secondary",
+          color: "text-default",
           children: n
         })]
       })]
@@ -53,7 +53,7 @@ let m = e => {
       children: [!n && (0, r.jsx)(s.Text, {
         className: p.groupHeader,
         variant: "text-xxs/bold",
-        color: "header-secondary",
+        color: "text-default",
         children: _
       }), (0, r.jsx)(m, {
         header: b,
@@ -62,7 +62,7 @@ let m = e => {
           size: "custom",
           width: 20,
           height: 20,
-          color: s.TVs.colors.TEXT_PRIMARY.css
+          color: s.TVs.colors.TEXT_STRONG.css
         }),
         inModal: t
       }), (0, r.jsx)(m, {
@@ -72,7 +72,7 @@ let m = e => {
           size: "custom",
           width: 20,
           height: 20,
-          color: s.TVs.colors.TEXT_PRIMARY.css
+          color: s.TVs.colors.TEXT_STRONG.css
         }),
         inModal: t
       }), (0, r.jsx)(m, {
@@ -115,7 +115,7 @@ let m = e => {
       }), (0, r.jsx)(s.Text, {
         className: p.groupHeader,
         variant: "text-xxs/bold",
-        color: "header-secondary",
+        color: "text-default",
         children: h
       }), (0, r.jsx)(m, {
         header: g,
@@ -124,7 +124,7 @@ let m = e => {
           size: "custom",
           width: 20,
           height: 20,
-          color: s.TVs.colors.TEXT_PRIMARY.css
+          color: s.TVs.colors.TEXT_STRONG.css
         }),
         inModal: t
       })]

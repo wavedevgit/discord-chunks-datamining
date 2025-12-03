@@ -51,9 +51,9 @@ let h = [],
   b = function(e) {
     let {
       guildId: t
-    } = e, b = (0, l.Wu)([d.Z], () => {
+    } = e, b = (0, l.Wu)([u.Z], () => {
       var e;
-      return null != (e = d.Z.getSettings().resourceChannels) ? e : h
+      return null != (e = u.Z.getSettings().resourceChannels) ? e : h
     }), x = i.useMemo(() => b.map(e => f(p({}, e), {
       id: e.channelId
     })), [b]), {
@@ -61,7 +61,7 @@ let h = [],
       handleDragReset: _,
       handleDragComplete: v
     } = (0, s.Z)(x, c.lq), O = i.useCallback((e, n) => {
-      let r = d.Z.getSettings();
+      let r = u.Z.getSettings();
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
         (0, c.mM)(t, e.channelId, n)
       }))
@@ -79,7 +79,7 @@ let h = [],
     }, [t, O]);
     return (0, r.jsxs)("div", {
       className: m.editResources,
-      children: [b.map((e, n) => (0, r.jsx)(u.Z, {
+      children: [b.map((e, n) => (0, r.jsx)(d.Z, {
         guildId: t,
         resourceChannel: e,
         index: n,

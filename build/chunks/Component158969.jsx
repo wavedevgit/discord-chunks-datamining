@@ -64,7 +64,7 @@ let E = Chunk473749.memo(function(e) {
             tag: "span",
             className: _.learnMore,
             children: v.intl.format(v.t["Nd3Gh+"], {
-              helpUrl: f.Z.getArticleURL(C.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+              helpUrl: f.Z.getArticleURL(y.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
           })
         })
@@ -79,13 +79,13 @@ let E = Chunk473749.memo(function(e) {
       message: u,
       children: f,
       content: m,
-      onUpdate: C
+      onUpdate: y
     } = e, j = null == (t = u.editedTimestamp) ? true : t.toString(), S = r.useRef(false), P = (0, c.e7)([h.Z], () => h.Z.getMessage(u.id), [u.id]), I = r.useCallback(() => {
       (null == P ? true : P.isBlockedEdit) ? (0, p.I)(u.id) : d.Z.deleteMessage(u.channel_id, u.id, true)
     }, [u, P]);
     return r.useLayoutEffect(() => {
-      S.current ? null != C && C() : S.current = true
-    }, [C, u.content, m, j, f]), (0, i.jsxs)("div", {
+      S.current ? null != y && y() : S.current = true
+    }, [y, u.content, m, j, f]), (0, i.jsxs)("div", {
       id: (0, g.ut)(u),
       className: a()(l, x.markup, {
         [O.messageContent]: true,
@@ -94,7 +94,7 @@ let E = Chunk473749.memo(function(e) {
         [_.blockedSend]: !(null == P ? true : P.isBlockedEdit)
       }),
       children: [null != f ? f : (0, b.L5)(u, m), (null == P ? true : P.isBlockedEdit) && null != u.timestamp && (0, i.jsxs)(i.Fragment, {
-        children: [" ", (0, i.jsx)(y.Z, {
+        children: [" ", (0, i.jsx)(C.Z, {
           timestamp: u.timestamp,
           isEdited: true,
           isInline: false,

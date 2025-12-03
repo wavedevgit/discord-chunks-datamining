@@ -34,7 +34,7 @@ function l() {
       children: Chunk388032.intl.string(Chunk388032.t.yJHJei)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk521868.text,
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-md/normal",
       children: Chunk388032.intl.string(Chunk388032.t.p2dIh6)
     })]

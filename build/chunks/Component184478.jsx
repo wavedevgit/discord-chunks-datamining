@@ -25,7 +25,7 @@ var Chunk793030 = require("./793030.js"),
 function h(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([u.Z], () => u.Z.getGuild(t)), {
+  } = e, n = (0, o.e7)([c.Z], () => c.Z.getGuild(t)), {
     available: h,
     spent: j,
     total: C
@@ -36,7 +36,7 @@ function h(e) {
       className: b.headerContainer,
       children: [(0, r.jsx)(i.xvT, {
         variant: "eyebrow",
-        color: "text-secondary",
+        color: "text-subtle",
         children: _.intl.string(x.default.hjvcLO)
       }), (0, r.jsx)(i.xvT, {
         className: b.learnMore,
@@ -66,7 +66,7 @@ function h(e) {
       },
       color: l.Tt.CUSTOM,
       size: l.Ph.LARGE,
-      intent: c.P.NONE,
+      intent: u.P.NONE,
       icon: (0, r.jsx)(a.Ucv, {
         className: b.boostButtonIcon,
         size: "sm",

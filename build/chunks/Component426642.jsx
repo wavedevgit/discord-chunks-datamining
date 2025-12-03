@@ -77,7 +77,7 @@ let d = e => {
         children: u
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: f
       })]
     }), (0, r.jsx)(a.u, {

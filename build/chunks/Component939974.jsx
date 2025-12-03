@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk85707 = require("./85707.js"),
   Chunk442837 = require("./442837.js"),
   Chunk681715 = require("./681715.js"),
@@ -59,16 +59,16 @@ function x(e) {
     widget: t,
     className: n,
     buttonRef: i,
-    additionalMenuItems: l
+    additionalMenuItems: a
   } = e, o = (0, m.mR)(t), c = (0, f.Dt)();
   return (0, r.jsx)(P, {
     targetRef: i,
     widget: t,
-    additionalMenuItems: l,
+    additionalMenuItems: a,
     children: e => (0, r.jsx)(_, {
       children: (0, r.jsxs)(s.P3F, j(O({
         innerRef: i,
-        className: a()(v.button, n),
+        className: l()(v.button, n),
         "data-dnd-name": o,
         "aria-label": y.intl.formatToPlainString(y.t.HWNJJN, {
           widgetTitle: o
@@ -91,7 +91,7 @@ let _ = e => {
       children: t
     } = e, n = (0, o.e7)([d.Z], () => d.Z.keyboardModeEnabled), {
       isDragging: i
-    } = (0, l.f)(e => ({
+    } = (0, a.f)(e => ({
       isDragging: e.isDragging()
     }));
     return (0, r.jsx)(c.u, {
@@ -125,8 +125,8 @@ let _ = e => {
     let {
       children: t,
       widget: i,
-      targetRef: a,
-      additionalMenuItems: l
+      targetRef: l,
+      additionalMenuItems: a
     } = e, {
       trackUserProfileEditAction: o
     } = (0, p.KZ)(), c = e => {
@@ -149,7 +149,7 @@ let _ = e => {
       })
     };
     return (0, r.jsx)(s.yRy, {
-      targetElementRef: a,
+      targetElementRef: l,
       align: "top",
       position: "right",
       disablePointerEvents: false,
@@ -166,7 +166,7 @@ let _ = e => {
           "aria-label": y.intl.string(y.t.xpSHSk),
           className: v.menu,
           children: (0, r.jsxs)(s.kSQ, {
-            children: [l, (0, r.jsx)(s.sNh, {
+            children: [a, (0, r.jsx)(s.sNh, {
               id: "remove-widget",
               label: y.intl.string(y.t.Mm07Yc),
               action: c,

@@ -16,7 +16,7 @@ function c(e) {
     isInventoryFeedEnabled: t,
     canManageGuild: n,
     features: c
-  } = e, d = i.useCallback(e => {
+  } = e, u = i.useCallback(e => {
     let t = new Set(c);
     e ? (t.add(s.GuildFeatures.ACTIVITY_FEED_ENABLED_BY_USER), t.delete(s.GuildFeatures.ACTIVITY_FEED_DISABLED_BY_USER)) : (t.add(s.GuildFeatures.ACTIVITY_FEED_DISABLED_BY_USER), t.delete(s.GuildFeatures.ACTIVITY_FEED_ENABLED_BY_USER)), a.Z.updateGuild({
       features: t
@@ -28,7 +28,7 @@ function c(e) {
     children: (0, r.jsx)(l.rsf, {
       label: o.intl.string(o.t.WompT5),
       checked: t,
-      onChange: d,
+      onChange: u,
       disabled: !n
     })
   })

@@ -43,7 +43,7 @@ function C(e) {
   } = e, O = (0, o.e7)([m.default], () => m.default.locale), E = new Intl.ListFormat(O), N = null != (n = null == (t = l.directory_entry) ? true : t.guild_count) ? n : 0, T = null != (r = null == d ? true : d.length) ? r : 0, A = Math.max(0, N - T), {
     shownMutualGuilds: L,
     hiddenMutualGuilds: R
-  } = i.useMemo(() => {
+  } = a.useMemo(() => {
     let e = [],
       t = [];
     return null == d || d.forEach(n => {
@@ -52,28 +52,28 @@ function C(e) {
       shownMutualGuilds: e,
       hiddenMutualGuilds: t
     }
-  }, [d, g]), Z = R.length, w = function(e, t, n, r, a) {
+  }, [d, g]), Z = R.length, w = function(e, t, n, r, i) {
     if (0 === t && 0 === e) return null;
-    if (t > 0 && 0 === n) return _.intl.formatToPlainString(_.t.pnzE1t, {
+    if (t > 0 && 0 === n) return f.intl.formatToPlainString(f.t.pnzE1t, {
       mutualGuildCount: t
     });
-    let i = t > 0 ? _.t.YR8PSL : _.t.GQjq6c,
+    let a = t > 0 ? f.t.YR8PSL : f.t.GQjq6c,
       l = new Intl.NumberFormat(r, {
-        notation: a ? "compact" : "standard",
+        notation: i ? "compact" : "standard",
         compactDisplay: "short"
       });
-    return _.intl.formatToPlainString(i, {
+    return f.intl.formatToPlainString(a, {
       guildCount: l.format(e),
       mutualGuildCount: t,
       nonMutualGuildCount: l.format(n)
     })
   }(N, T, A, O, y);
-  return 0 === L.length && null == w ? null : (0, a.jsxs)(a.Fragment, {
-    children: [P, (0, a.jsxs)("div", {
-      className: s()(C, f.wrapper),
-      children: [(0, a.jsx)("div", {
-        className: s()(f.icons, S),
-        children: L.length > 0 ? (0, a.jsxs)(a.Fragment, {
+  return 0 === L.length && null == w ? null : (0, i.jsxs)(i.Fragment, {
+    children: [P, (0, i.jsxs)("div", {
+      className: s()(C, _.wrapper),
+      children: [(0, i.jsx)("div", {
+        className: s()(_.icons, S),
+        children: L.length > 0 ? (0, i.jsxs)(i.Fragment, {
           children: [L.map((e, t) => {
             let n = t === L.length - 1 && 0 === Z,
               r = h.ZP.getGuildIconURL({
@@ -82,44 +82,44 @@ function C(e) {
                 size: I,
                 canAnimate: false
               }),
-              l = (0, a.jsx)(c.u, {
+              l = (0, i.jsx)(c.u, {
                 text: e.name,
                 position: "top",
-                children: (0, a.jsx)("img", {
-                  className: s()(f.icon, v[I]),
+                children: (0, i.jsx)("img", {
+                  className: s()(_.icon, v[I]),
                   src: r,
                   alt: ""
                 })
               });
-            return n ? (0, a.jsx)(i.Fragment, {
+            return n ? (0, i.jsx)(a.Fragment, {
               children: l
-            }, e.id) : (0, a.jsx)(p.ZP, {
-              className: f.iconMask,
+            }, e.id) : (0, i.jsx)(p.ZP, {
+              className: _.iconMask,
               height: I,
               width: I,
               mask: p.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
               children: l
             }, e.id)
-          }), Z > 0 ? (0, a.jsx)(c.u, {
-            text: _.intl.formatToPlainString(_.t.m6oRrA, {
+          }), Z > 0 ? (0, i.jsx)(c.u, {
+            text: f.intl.formatToPlainString(f.t.m6oRrA, {
               appNames: E.format(R.map(e => e.name))
             }),
             position: "top",
-            children: (0, a.jsxs)("div", {
-              className: s()(f.moreGuilds, x[I]),
+            children: (0, i.jsxs)("div", {
+              className: s()(_.moreGuilds, x[I]),
               children: ["+", Z]
             })
           }) : null]
-        }) : (0, a.jsx)(u.QTo, {
+        }) : (0, i.jsx)(u.QTo, {
           size: "custom",
           color: "currentColor",
           width: I,
           height: I,
-          className: f.defaultIcon
+          className: _.defaultIcon
         })
-      }), null != w ? (0, a.jsx)(u.Text, {
+      }), null != w ? (0, i.jsx)(u.Text, {
         variant: j,
-        color: "header-secondary",
+        color: "text-default",
         children: w
       }) : null]
     })]

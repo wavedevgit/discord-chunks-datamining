@@ -160,7 +160,7 @@ function U(e) {
       className: D.bodyColumnLeft,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
-        color: "header-secondary",
+        color: "text-default",
         className: D.selectGiftTitle,
         children: J.toLocaleUpperCase()
       }), j.map(e => et(e)), (0, r.jsx)(G, {
@@ -282,7 +282,7 @@ function G(e) {
             variant: "text-md/semibold",
             children: w.intl.string(w.t["1+Co8G"])
           }), (0, r.jsx)(a.Heading, {
-            color: "header-secondary",
+            color: "text-default",
             variant: "heading-sm/medium",
             children: w.intl.string(w.t.nYn52B)
           })]

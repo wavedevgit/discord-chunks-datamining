@@ -208,7 +208,7 @@ class U extends Chunk473749.Component {
           variantOverride: "expressive"
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: this.renderExpirationDate()
         })]
       }),
@@ -243,7 +243,7 @@ class U extends Chunk473749.Component {
       compact: this.compact,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        color: "text-primary",
+        color: "text-strong",
         children: this.getSystemMessageHeader()
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk269143.containerDMEmbedXP,
@@ -257,7 +257,7 @@ class U extends Chunk473749.Component {
               children: o
             }), (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-md/medium",
-              color: "text-secondary",
+              color: "text-subtle",
               children: Chunk873546
             })]
           }), (0, Chunk54381.jsx)("div", {

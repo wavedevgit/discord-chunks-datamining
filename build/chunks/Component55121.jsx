@@ -16,7 +16,7 @@ function u(t) {
   let {
     sku: e,
     application: n,
-    primaryCTAButtonProps: o,
+    primaryCTAButtonProps: l,
     transitionState: u,
     onClose: x,
     hasAlreadyLinked: f,
@@ -27,7 +27,7 @@ function u(t) {
   return (0, i.jsxs)(a.IX, {
     transitionState: u,
     onClose: x,
-    children: [(0, i.jsx)(l.y, {
+    children: [(0, i.jsx)(o.y, {
       sku: e,
       title: g
     }), (0, i.jsxs)(a.fef, {
@@ -35,7 +35,7 @@ function u(t) {
         className: c.modalBody,
         children: [(0, i.jsx)(s.Text, {
           variant: "text-md/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           className: c.modalBodyText,
           children: m
         }), (0, i.jsx)(d, {
@@ -51,14 +51,14 @@ function u(t) {
         className: c.expirationWarningContainer,
         children: (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: r.intl.formatToPlainString(r.t.TTj7ME, {
             numDays: 14
           })
         })
       })]
     }), (0, i.jsx)(a.Go$, {
-      actions: [o],
+      actions: [l],
       actionsFullWidth: true
     })]
   })
@@ -84,12 +84,12 @@ function d(t) {
         }), (0, i.jsx)(s.Text, {
           variant: "text-md/normal",
           className: c.statusText,
-          color: "text-secondary",
+          color: "text-subtle",
           children: r.intl.string(r.t["LV+CXH"])
         })]
       }), (0, i.jsx)("div", {
         className: c.statusRight,
-        children: (0, i.jsx)(o.h, {
+        children: (0, i.jsx)(l.h, {
           application: n,
           iconSize: 20
         })

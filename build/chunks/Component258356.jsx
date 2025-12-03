@@ -95,7 +95,7 @@ function p(e) {
     }), o.length > 0 && (0, r.jsx)("details", {
       className: h.guildDescriptionContainer,
       children: (0, r.jsx)(i.Text, {
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-sm/normal",
         children: o
       })

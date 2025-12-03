@@ -69,7 +69,7 @@ function P(e) {
         })
       }), (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: d ? T.intl.formatToPlainString(T.t.APddvF, {
           expirationDate: l
         }) : T.intl.formatToPlainString(T.t["pX+fmn"], {

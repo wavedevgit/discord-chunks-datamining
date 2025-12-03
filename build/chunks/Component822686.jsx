@@ -16,11 +16,11 @@ let m = e => {
   let {
     message: t,
     reportId: n
-  } = e, [m, p] = i.useState(false), g = i.useCallback(() => {
+  } = e, [m, p] = l.useState(false), g = l.useCallback(() => {
     p(true), a.ZP.trackWithMetadata(c.rMx.IAR_DELETE_MESSAGE_BUTTON_CLICKED, {
       report_id: n
-    }), l.Z.deleteMessage(t.getChannelId(), t.id)
-  }, [t, n]), _ = i.useMemo(() => {
+    }), i.Z.deleteMessage(t.getChannelId(), t.id)
+  }, [t, n]), _ = l.useMemo(() => {
     let e = o.Z.getChannel(t.getChannelId());
     return null != e && e.type !== c.d4z.DM && e.type !== c.d4z.GROUP_DM && d.Z.canWithPartialContext(c.Plq.MANAGE_MESSAGES, {
       channelId: e.id

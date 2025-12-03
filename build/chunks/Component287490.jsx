@@ -147,7 +147,7 @@ function T(e) {
       className: O.description,
       children: null == A ? (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
       }) : null
     }), b ? (0, r.jsxs)("div", {
@@ -245,7 +245,7 @@ function A(e) {
       className: O.description,
       children: null == h ? (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
       }) : null
     }), p ? (0, r.jsxs)("div", {

@@ -27,8 +27,8 @@ function h(e) {
     g()
   }, [t, g]);
   let b = [];
-  if (n === u.d4z.GUILD_ANNOUNCEMENT && (b.push(d.intl.format(d.t.tI7KNX, {
-      documentationLink: c.Z.getArticleURL(u.BhN.ANNOUNCEMENT_CHANNELS)
+  if (n === c.d4z.GUILD_ANNOUNCEMENT && (b.push(d.intl.format(d.t.tI7KNX, {
+      documentationLink: u.Z.getArticleURL(c.BhN.ANNOUNCEMENT_CHANNELS)
     })), !C && !f)) {
     let e = d.intl.string(d.t["2Ab4Id"]);
     b.push(e)

@@ -6,9 +6,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  i = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk198993 = require("./198993.jsx"),
@@ -26,15 +26,15 @@ let O = e => {
   let {
     transitionState: r,
     onClose: t
-  } = e, s = (0, m.Z)(), [a, O] = o.useState(false), {
+  } = e, l = (0, m.Z)(), [i, O] = o.useState(false), {
     getLinkCode: _,
     isGetLinkCodeLoading: j
   } = (0, C.G)({}), q = (0, p.rW)(), N = (0, p.gU)(), z = o.useRef(N);
-  i()(!s, "FamilyCenterQRCodeModal should only be rendered for teens.");
+  a()(!l, "FamilyCenterQRCodeModal should only be rendered for teens.");
   let S = () => {
-    O(e => (f.default.track(y.rMx.FAMILY_CENTER_ACTION, {
-      action: a ? x.YC.HideQRCode : x.YC.RevealQRCode
-    }), !e)), a || setTimeout(() => {
+    O(e => (f.default.track(v.rMx.FAMILY_CENTER_ACTION, {
+      action: i ? x.YC.HideQRCode : x.YC.RevealQRCode
+    }), !e)), i || setTimeout(() => {
       t()
     }, x.f2)
   };
@@ -43,61 +43,61 @@ let O = e => {
   }), o.useEffect(() => {
     N > z.current && t()
   }, [z, N, t]);
-  let E = a && !j && null != q;
+  let E = i && !j && null != q;
   return (0, n.jsxs)(c.IX, {
     transitionState: r,
     onClose: t,
     children: [(0, n.jsxs)(c.qXd, {
-      className: h.notice,
+      className: g.notice,
       color: c.DM8.WARNING,
       children: [(0, n.jsx)(c.d3s, {
         size: "sm",
         color: "currentColor"
-      }), b.intl.string(v.default.iHYMAz)]
+      }), y.intl.string(b.default.iHYMAz)]
     }), (0, n.jsxs)(c.fef, {
       children: [(0, n.jsx)(c.Text, {
-        className: g.marginBottom8,
+        className: h.marginBottom8,
         variant: "text-lg/bold",
         color: "header-primary",
-        children: b.intl.string(v.default.AVTZaN)
+        children: y.intl.string(b.default.AVTZaN)
       }), (0, n.jsx)(c.Text, {
-        className: g.marginBottom20,
+        className: h.marginBottom20,
         variant: "text-sm/normal",
-        color: "header-secondary",
-        children: b.intl.format(v.default.LyyCsE, {
+        color: "text-default",
+        children: y.intl.format(b.default.LyyCsE, {
           link: "https://support.discord.com/hc/articles/14155060633623"
         })
       }), (0, n.jsx)("div", {
-        className: h.qrCodeContainer,
+        className: g.qrCodeContainer,
         children: (0, n.jsx)(c.P3F, {
-          className: l()(h.qrCodeObscure, {
-            [h.visible]: E
+          className: s()(g.qrCodeObscure, {
+            [g.visible]: E
           }),
           onClick: S,
           children: (0, n.jsx)(u.c2, {
             size: 272,
             text: E ? q : x.vH,
             overlaySize: u.cK.SIZE_60,
-            className: h.qrCodeOverlay
+            className: g.qrCodeOverlay
           })
         })
       }), (0, n.jsx)(c.Text, {
-        className: h.reminder,
+        className: g.reminder,
         variant: "text-xs/semibold",
-        color: "header-secondary",
-        children: b.intl.string(v.default.goDyoe)
+        color: "text-default",
+        children: y.intl.string(b.default.goDyoe)
       })]
     }), (0, n.jsx)(c.Go$, {
       actionsFullWidth: true,
       actions: [{
         variant: "secondary",
-        text: b.intl.string(b.t.cpT0Cq),
+        text: y.intl.string(y.t.cpT0Cq),
         onClick: t
       }, {
         variant: "primary",
-        text: a ? b.intl.string(v.default.wg2xwQ) : b.intl.string(v.default["10dX6U"]),
+        text: i ? y.intl.string(b.default.wg2xwQ) : y.intl.string(b.default["10dX6U"]),
         onClick: S,
-        loading: a && j
+        loading: i && j
       }]
     })]
   })

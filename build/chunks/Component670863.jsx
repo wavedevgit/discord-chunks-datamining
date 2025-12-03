@@ -179,13 +179,13 @@ function P(e) {
       }), (0, r.jsx)(c.Text, {
         lineClamp: 2,
         variant: "text-md/medium",
-        color: u ? "text-secondary" : "text-default",
+        color: u ? "text-subtle" : "text-default",
         className: v.deviceLabel,
         children: p
       }), null != t && (0, r.jsx)(c.Text, {
         lineClamp: 2,
         variant: u ? "text-xs/medium" : "text-md/medium",
-        color: "text-tertiary",
+        color: "text-muted",
         className: v.deviceSubLabel,
         children: t
       }), null != i && (0, r.jsx)("div", {

@@ -30,24 +30,24 @@ function g(t) {
     application: j,
     analyticsLocations: L
   } = t, A = (0, p.a)(j), {
-    fetched: y,
+    fetched: b,
     hasAlreadyLinked: v,
     canStartAuthorization: N,
     startAuthorization: S
-  } = (0, d.F)(j), b = (0, _.I)(j), {
+  } = (0, u.F)(j), y = (0, _.I)(j), {
     analyticsLocations: E
-  } = (0, o.ZP)(null != L ? L : [], l.Z.SOCIAL_LAYER_CLAIM_PURCHASED_ITEM_MODAL), I = !y || null == A, R = e.useRef({
+  } = (0, o.ZP)(null != L ? L : [], c.Z.SOCIAL_LAYER_CLAIM_PURCHASED_ITEM_MODAL), I = !b || null == A, R = e.useRef({
     analyticsLocations: E,
     skuId: g.id,
     applicationId: j.id,
     isLaunchable: A,
-    isApplicationConnected: b,
+    isApplicationConnected: y,
     canStartAuthorization: N
   });
   e.useEffect(() => {
-    R.current.isLaunchable = A, R.current.isApplicationConnected = b, R.current.canStartAuthorization = N
-  }, [A, b, N]), (0, c.ZP)(() => {
-    u.default.track(h.rMx.OPEN_MODAL, {
+    R.current.isLaunchable = A, R.current.isApplicationConnected = y, R.current.canStartAuthorization = N
+  }, [A, y, N]), (0, r.ZP)(() => {
+    d.default.track(h.rMx.OPEN_MODAL, {
       location_stack: E,
       type: C.ng,
       sku_id: g.id,
@@ -61,7 +61,7 @@ function g(t) {
       applicationId: n,
       canStartAuthorization: i
     } = R.current;
-    u.default.track(h.rMx.SLAYER_STOREFRONT_LINK_ACCOUNT_STEP_VIEWED, {
+    d.default.track(h.rMx.SLAYER_STOREFRONT_LINK_ACCOUNT_STEP_VIEWED, {
       location_stack: t,
       sku_id: a,
       application_id: n,
@@ -76,7 +76,7 @@ function g(t) {
         skuId: a,
         applicationId: n
       } = R.current;
-      u.default.track(h.rMx.SLAYER_STOREFRONT_ACCOUNT_LINK_CLICKED, {
+      d.default.track(h.rMx.SLAYER_STOREFRONT_ACCOUNT_LINK_CLICKED, {
         location_stack: t,
         sku_id: a,
         application_id: n,
@@ -88,7 +88,7 @@ function g(t) {
         analyticsLocations: t,
         skuId: a
       } = R.current;
-      u.default.track(h.rMx.SLAYER_STOREFRONT_GAME_LAUNCH_CLICKED, {
+      d.default.track(h.rMx.SLAYER_STOREFRONT_GAME_LAUNCH_CLICKED, {
         location_stack: t,
         sku_id: a,
         application_id: j.id,
@@ -103,7 +103,7 @@ function g(t) {
         isLaunchable: e,
         isApplicationConnected: s
       } = R.current;
-      u.default.track(h.rMx.SLAYER_STOREFRONT_CLAIM_MODAL_CLOSE_BUTTON_CLICKED, {
+      d.default.track(h.rMx.SLAYER_STOREFRONT_CLAIM_MODAL_CLOSE_BUTTON_CLICKED, {
         location_stack: t,
         sku_id: a,
         application_id: i,
@@ -116,11 +116,11 @@ function g(t) {
     transitionState: a,
     onClose: n,
     children: (0, i.jsx)(s.fef, {
-      children: (0, i.jsx)(r.$jN, {})
+      children: (0, i.jsx)(l.$jN, {})
     })
   });
   if (v) {
-    let t = A && !b ? {
+    let t = A && !y ? {
       variant: "primary",
       text: k.intl.string(k.t["s+J8Dl"]),
       onClick: O,
@@ -137,7 +137,7 @@ function g(t) {
         sku: g,
         title: k.intl.string(k.t["5glWta"])
       }), (0, i.jsx)(s.fef, {
-        children: (0, i.jsx)(r.Text, {
+        children: (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
           className: T.modalBodyText,
           children: k.intl.formatToPlainString(k.t.W2znvX, {

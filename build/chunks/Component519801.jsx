@@ -37,7 +37,7 @@ function j(e) {
     k = (0, l.Z)(g.i),
     {
       createMultipleConfettiAt: _
-    } = i.useContext(o.h),
+    } = r.useContext(o.h),
     w = null != (t = null == N ? true : N.name) ? t : "",
     Z = () => {
       O(), null == C || C()
@@ -47,7 +47,7 @@ function j(e) {
     I = null != E && E.benefits.length > 0 ? x.intl.formatToPlainString(x.t["+IQQVM"], {
       benefitCount: E.benefits.length
     }) : null;
-  return y ? k ? j = (0, r.jsx)(u.h, {
+  return y ? k ? j = (0, i.jsx)(u.h, {
     title: x.intl.format(x.t.ea6tZr, {
       tierName: w
     }),
@@ -56,7 +56,7 @@ function j(e) {
     }) : null,
     onConfirm: Z,
     confirmCta: x.intl.string(x.t.nlkywz)
-  }) : (j = null != E && null != T ? (0, r.jsx)(c.Oc, {
+  }) : (j = null != E && null != T ? (0, i.jsx)(c.Oc, {
     icon: E.thumbnail,
     storeListingBenefits: E.benefits,
     application: T,
@@ -69,24 +69,24 @@ function j(e) {
     }) : x.intl.format(x.t.vHkMF4, {
       tier: w
     })
-  }) : (0, r.jsx)(f.Z, {}), v = (0, r.jsx)(p.Z, {
+  }) : (0, i.jsx)(f.Z, {}), v = (0, i.jsx)(p.Z, {
     onPrimary: Z,
     primaryCTA: p.g.CONTINUE,
     primaryText: x.intl.string(x.t["JtWl+a"])
-  })) : j = k ? (0, r.jsx)(u.m, {
+  })) : j = k ? (0, i.jsx)(u.m, {
     tierName: w,
     onConfirm: Z,
     subscription: S
-  }) : (0, r.jsx)(c.xe, {
+  }) : (0, i.jsx)(c.xe, {
     tierName: w,
     onConfirm: Z,
     subscription: S
-  }), i.useEffect(() => {
+  }), r.useEffect(() => {
     a.Z.useReducedMotion && A && _(window.innerWidth / 2, window.innerHeight / 2)
-  }, [_, A]), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(b.C3, {
-      children: [(0, r.jsx)(h.Z, {}), j]
-    }), null != v && (0, r.jsx)(b.O3, {
+  }, [_, A]), (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)(b.C3, {
+      children: [(0, i.jsx)(h.Z, {}), j]
+    }), null != v && (0, i.jsx)(b.O3, {
       children: v
     })]
   })

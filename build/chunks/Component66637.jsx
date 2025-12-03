@@ -13,20 +13,20 @@ let c = Chunk473749.memo(function(e) {
   let {
     onClick: t,
     onContextMenu: n,
-    className: a,
-    disabled: i,
+    className: i,
+    disabled: a,
     children: c,
     "aria-label": d,
     ref: u
   } = e;
   return (0, r.jsx)(s.kL8, {
     ref: u,
-    className: l()(o.card, a, {
+    className: l()(o.card, i, {
       [o.clickable]: null != t,
-      [o.disabled]: i
+      [o.disabled]: a
     }),
     onContextMenu: n,
-    onClick: i ? true : t,
+    onClick: a ? true : t,
     "aria-label": d,
     children: c
   })

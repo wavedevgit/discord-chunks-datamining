@@ -51,7 +51,7 @@ function g(e) {
           label: b.intl.string(b.t["13/7kX"])
         }), (0, r.jsx)(s.Heading, {
           variant: "heading-md/medium",
-          color: "header-secondary",
+          color: "text-default",
           children: t
         }), null != n && n]
       }), (0, r.jsx)(p, {

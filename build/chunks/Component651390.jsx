@@ -2,7 +2,7 @@
 /** chunk id: 651390, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  c: () => d
+  c: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk498082 = require("./498082.js");
 
-function d(e) {
+function u(e) {
   let {
     guildId: t
   } = e, n = i.useCallback(() => {

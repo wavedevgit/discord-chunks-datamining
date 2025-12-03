@@ -91,7 +91,7 @@ function H(e) {
     c = null != o ? (0, b.DK)(o) : null,
     d = null != o;
   if ((null == r ? true : r.type) === M.fO.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(C.ZP.Divider, {
+    children: [(0, i.jsx)(y.ZP.Divider, {
       className: D.divider
     }), (0, i.jsx)(m.Z, {
       game: n,
@@ -110,7 +110,7 @@ function H(e) {
     let e = r.user,
       n = r.stream;
     t = (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(C.ZP.Divider, {
+      children: [(0, i.jsx)(y.ZP.Divider, {
         className: D.divider
       }), (0, i.jsx)(F, {
         user: e,
@@ -122,7 +122,7 @@ function H(e) {
         focusedParticipant: r
       })]
     })
-  } else d && (t = (0, i.jsx)(y.Z, {
+  } else d && (t = (0, i.jsx)(C.Z, {
     guildEvent: o,
     recurrenceId: c
   }));
@@ -145,7 +145,7 @@ function B(e) {
   } = (0, a.cj)([I.Z], () => ({
     focusedParticipant: I.Z.getSelectedParticipant(t.id),
     participantsOpen: I.Z.getParticipantsOpen(t.id)
-  }), [t.id]), y = (0, h.ZP)(t), O = (0, f.KS)(t), [S] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = k.intl.string(k.t.BVZqJl);
+  }), [t.id]), C = (0, h.ZP)(t), O = (0, f.KS)(t), [S] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = k.intl.string(k.t.BVZqJl);
   t.isDM() ? P = k.intl.string(k.t.jN2DfZ) : t.isGroupDM() && (P = k.intl.string(k.t["e5y+gm"]));
   let T = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     A = t.isGuildVoice() && u && null != T && T.length > 0,
@@ -213,7 +213,7 @@ function B(e) {
     className: D.subtitleContainer,
     children: [(0, i.jsx)(s.f6W, {
       theme: L.BR.DARK,
-      children: e => (0, i.jsxs)(C.ZP, {
+      children: e => (0, i.jsxs)(y.ZP, {
         onDoubleClick: v.O,
         transparent: true,
         className: l()(e, D.headerBar),
@@ -227,13 +227,13 @@ function B(e) {
           isChatOpen: m,
           exitFullScreen: g
         }),
-        children: [(0, i.jsx)(C.ZP.Title, {
+        children: [(0, i.jsx)(y.ZP.Title, {
           wrapperClassName: D.title,
           children: (0, i.jsxs)(i.Fragment, {
-            children: [null != O ? (0, i.jsx)(C.ZP.ChannelIcon, {
+            children: [null != O ? (0, i.jsx)(y.ZP.ChannelIcon, {
               icon: O,
               "aria-label": P
-            }) : null, y, F && (0, i.jsx)(o.u, {
+            }) : null, C, F && (0, i.jsx)(o.u, {
               text: k.intl.string(k.t.QyZ4Td),
               children: (0, i.jsx)(s.tQf, {
                 size: "xs",

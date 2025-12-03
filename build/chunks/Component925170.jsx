@@ -82,7 +82,7 @@ function O(e) {
       }, e))
     }) : (0, n.jsx)(l.Text, {
       variant: "text-md/medium",
-      color: "text-secondary",
+      color: "text-subtle",
       children: f.intl.string(f.t["1nkDOs"])
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

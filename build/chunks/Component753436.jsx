@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk85707 = require("./85707.js"),
   Chunk594174 = require("./594174.js"),
   Chunk86419 = require("./86419.js"),
@@ -25,8 +25,8 @@ function O(e) {
   let {
     index: t,
     widgetType: n,
-    game: a,
-    coverImageUrl: l,
+    game: l,
+    coverImageUrl: a,
     gameName: o,
     children: c
   } = e, {
@@ -35,18 +35,18 @@ function O(e) {
   } = (0, d.C)(), p = i.useRef(null);
   return (0, r.jsx)(u.yW, {
     index: t,
-    itemId: a.applicationId,
+    itemId: l.applicationId,
     listType: n,
     itemType: "GAME_COVER",
     itemPreviewProps: {
-      imageSrc: l,
+      imageSrc: a,
       gameName: o
     },
     "aria-label": h.intl.formatToPlainString(h.t["0dR3gw"], {
       positionNumber: t + 1
     }),
     onReorder: (e, t) => (0, s.Eq)(n, e, t),
-    onEnd: () => g(a.applicationId),
+    onEnd: () => g(l.applicationId),
     className: v.container,
     dropBeforeClassName: v.dropIndicatorBefore,
     dropAfterClassName: v.dropIndicatorAfter,
@@ -55,7 +55,7 @@ function O(e) {
       ref: p,
       className: v.dragHandleContainer,
       children: [c, (0, r.jsx)(u.e_, {
-        buttonRef: f(a.applicationId),
+        buttonRef: f(l.applicationId),
         className: v.dragHandle
       })]
     })
@@ -67,7 +67,7 @@ function j(e) {
     game: t,
     userId: n,
     widgetType: i,
-    guildId: a,
+    guildId: l,
     channelId: s,
     disableInteraction: u = false,
     index: d,
@@ -88,7 +88,7 @@ function j(e) {
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: u,
-      className: l()(I ? v.socialProofBackdrop : true, null == x || u ? true : y.hoverActiveEffect),
+      className: a()(I ? v.socialProofBackdrop : true, null == x || u ? true : y.hoverActiveEffect),
       hideTooltip: T,
       coverRef: j
     }), E && (0, r.jsx)(g.Z, {
@@ -100,7 +100,7 @@ function j(e) {
     }), !u && (0, r.jsx)(p.Z, {
       className: v.socialProof,
       applicationId: t.applicationId,
-      guildId: a,
+      guildId: l,
       channelId: s,
       visuallyHideLabel: true
     })]

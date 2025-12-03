@@ -1,5 +1,5 @@
 /** Chunk was on 22173 **/
-/** chunk id: 196255, original params: e,n,t (module,exports,require) **/
+/** chunk id: 196255, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -13,7 +13,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk423046 = require("./423046.js");
 let d = e => {
-  var n, t;
+  var t, n;
   let {
     message: l,
     channel: d,
@@ -22,7 +22,7 @@ let d = e => {
   } = e, {
     user: g,
     author: f
-  } = (0, o.AJ)(d), x = null != (t = null != (n = null == f ? true : f.nick) ? n : null == g ? true : g.username) ? t : "", j = (0, i.l)({
+  } = (0, o.AJ)(d), x = null != (n = null != (t = null == f ? true : f.nick) ? t : null == g ? true : g.username) ? n : "", j = (0, i.l)({
     user: null == l ? true : l.author,
     channelId: d.id,
     guildId: d.guild_id,

@@ -17,8 +17,8 @@ function c(e) {
     action: t,
     triggerType: n,
     toggled: c,
-    onToggleAction: d
-  } = e, u = e => () => d(e), g = (0, a.c)(t.type, t, n);
+    onToggleAction: u
+  } = e, d = e => () => u(e), g = (0, a.c)(t.type, t, n);
   if (null == g) return null;
   let {
     headerText: m,
@@ -47,7 +47,7 @@ function c(e) {
         color: "text-muted",
         variant: "text-xs/medium",
         children: [s.intl.string(s.t.Oa9oWJ), (0, r.jsx)(l.P3F, {
-          onClick: u(true),
+          onClick: d(true),
           className: o.editChannel,
           tag: "span",
           role: "link",
@@ -57,7 +57,7 @@ function c(e) {
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(i.$q, {
         value: c,
-        onChange: u(false),
+        onChange: d(false),
         className: o.__invalid_actionCheckbox
       })
     })]

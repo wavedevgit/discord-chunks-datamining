@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 446535, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,14 +15,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk496675 = require("./496675.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk797966 = require("./797966.js");
-let p = e => {
+let f = e => {
   let {
     guild: t,
     transitionState: n,
     onClose: i
-  } = e, [p, f] = l.useState(7), [h, g] = l.useState(null), [j, x] = l.useState([]), v = l.useCallback(async () => {
-    g(null), g(await c.Z.updateEstimate(t.id, p, j))
-  }, [p, t.id, j]);
+  } = e, [f, p] = l.useState(7), [h, g] = l.useState(null), [j, x] = l.useState([]), v = l.useCallback(async () => {
+    g(null), g(await c.Z.updateEstimate(t.id, f, j))
+  }, [f, t.id, j]);
   l.useEffect(() => {
     v()
   }, [v]);
@@ -52,7 +52,7 @@ let p = e => {
       className: b.content,
       children: [(0, r.jsx)(s.FXm, {
         label: m.intl.string(m.t.YccTvK),
-        value: String(p),
+        value: String(f),
         options: [{
           name: m.intl.formatToPlainString(m.t.FM1dHS, {
             days: 7
@@ -65,7 +65,7 @@ let p = e => {
           value: "30"
         }],
         onChange: e => {
-          f(Number(e))
+          p(Number(e))
         }
       }), (0, r.jsx)(s.zJl, {
         className: b.scroller,
@@ -82,10 +82,10 @@ let p = e => {
         className: b.spacing,
         children: j.length > 0 ? m.intl.format(m.t["5WxHHp"], {
           members: h,
-          days: p
+          days: f
         }) : m.intl.format(m.t.f13az9, {
           members: h,
-          days: p
+          days: f
         })
       })]
     }), (0, r.jsx)(s.mzw, {
@@ -95,7 +95,7 @@ let p = e => {
           variant: "primary",
           text: m.intl.string(m.t["2mIlKQ"]),
           onClick: () => {
-            c.Z.prune(t.id, p, j), i()
+            c.Z.prune(t.id, f, j), i()
           }
         }), (0, r.jsx)(s.Button, {
           variant: "secondary",

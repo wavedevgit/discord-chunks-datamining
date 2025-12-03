@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 852479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,11 +17,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk490225 = require("./490225.js"),
   Chunk51237 = require("./51237.js");
 
-function f(e) {
+function p(e) {
   let {
     guild: t,
     onSubmit: i
-  } = e, f = (0, a.e7)([d.Z], () => d.Z.getMembersCountByGuildId(t.id, c.R_.NEW_GUILD_MEMBER), [t.id]), h = (0, a.e7)([d.Z], () => {
+  } = e, p = (0, a.e7)([d.Z], () => d.Z.getMembersCountByGuildId(t.id, c.R_.NEW_GUILD_MEMBER), [t.id]), h = (0, a.e7)([d.Z], () => {
     let e = d.Z.getNewMemberTimestamp(t.id);
     return o()(e).format("h:mm A")
   }, [t.id]), g = (0, a.e7)([d.Z], () => d.Z.hasDefaultSearchStateByGuildId(t.id), [t.id]), j = l.useCallback(() => {
@@ -64,9 +64,9 @@ function f(e) {
         }), n))
       }
     })
-  }, [j, g]), v = new Intl.NumberFormat(m.intl.currentLocale).format(f), y = (0, u.nX)(t.id), O = (0, u.xC)(t.id), H = l.useMemo(() => 1 + +!!y + +!!O, [y, O]);
-  return 0 === f ? null : (0, r.jsxs)("tr", {
-    className: p.newMembersNotice,
+  }, [j, g]), v = new Intl.NumberFormat(m.intl.currentLocale).format(p), y = (0, u.nX)(t.id), O = (0, u.xC)(t.id), H = l.useMemo(() => 1 + +!!y + +!!O, [y, O]);
+  return 0 === p ? null : (0, r.jsxs)("tr", {
+    className: f.newMembersNotice,
     onClick: x,
     children: [(0, r.jsx)("td", {
       colSpan: 3,
@@ -86,11 +86,11 @@ function f(e) {
         className: b.actionCell,
         children: (0, r.jsx)(s.P3F, {
           onClick: x,
-          className: p.memberNoticeActionButton,
+          className: f.memberNoticeActionButton,
           children: (0, r.jsxs)(s.Text, {
             variant: "text-sm/normal",
             color: "always-white",
-            className: p.memberNoticeAction,
+            className: f.memberNoticeAction,
             children: [(0, r.jsx)("div", {
               children: m.intl.string(m.t.rkyOzK)
             }), (0, r.jsx)(s.tBG, {
@@ -98,7 +98,7 @@ function f(e) {
               color: "currentColor",
               width: 16,
               height: 16,
-              className: p.memberNoticeActionIcon
+              className: f.memberNoticeActionIcon
             })]
           })
         })

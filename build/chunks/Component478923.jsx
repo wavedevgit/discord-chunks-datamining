@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk230784 = require("./230784.js");
 
-function h(t) {
+function E(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function h(t) {
   return t
 }
 
-function E(t, e) {
+function h(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ function y(t) {
     disallowIgnore: s,
     guildId: d,
     channelId: y
-  } = t, N = (0, l.e7)([O.Z], () => O.Z.isIgnored(e.id));
+  } = t, N = (0, l.e7)([f.Z], () => f.Z.isIgnored(e.id));
   return (0, r.jsxs)("div", {
     className: I.container,
     children: [(0, r.jsxs)("div", {
@@ -87,7 +87,7 @@ function y(t) {
           })
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
-          color: "header-secondary",
+          color: "text-default",
           children: b.intl.string(b.t.S70jou)
         })]
       })]
@@ -102,10 +102,10 @@ function y(t) {
           descriptionVariant: "text-xs/medium",
           buttonText: b.intl.string(b.t.mxJOd9),
           onButtonPress: () => {
-            f.default.track(x.rMx.USER_REMEDIATION_ACTION, {
-              action: p.l.GOTO_IGNORE,
+            O.default.track(p.rMx.USER_REMEDIATION_ACTION, {
+              action: g.l.GOTO_IGNORE,
               location: o
-            }), (0, c.pTH)(), (0, c.h7j)(t => (0, r.jsx)(g.default, E(h({}, t), {
+            }), (0, c.pTH)(), (0, c.h7j)(t => (0, r.jsx)(x.default, h(E({}, t), {
               user: e,
               guildId: d,
               channelId: y,
@@ -119,7 +119,7 @@ function y(t) {
         variant: "text-sm/medium",
         className: I.featureGuide,
         children: b.intl.format(b.t.DJN6eZ, {
-          articleLink: m.Z.getArticleURL(x.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
+          articleLink: m.Z.getArticleURL(p.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
         })
       })]
     })]
@@ -133,10 +133,10 @@ function N(t) {
     onCancel: l,
     onIgnore: a,
     location: u = "ContextMenu",
-    disallowIgnore: O,
+    disallowIgnore: f,
     guildId: m,
     channelId: j
-  } = t, g = function(t, e) {
+  } = t, x = function(t, e) {
     if (null == t) return {};
     var n, r, i = function(t, e) {
       if (null == t) return {};
@@ -152,16 +152,16 @@ function N(t) {
     return i
   }(t, ["user", "onBlock", "onCancel", "onIgnore", "location", "disallowIgnore", "guildId", "channelId"]);
   return i.useLayoutEffect(() => () => {
-    f.default.track(x.rMx.USER_REMEDIATION_ACTION, {
-      action: p.l.DISMISS_BLOCK,
+    O.default.track(p.rMx.USER_REMEDIATION_ACTION, {
+      action: g.l.DISMISS_BLOCK,
       location: u
     })
-  }, [u]), (0, r.jsx)(c.ConfirmModal, E(h({
+  }, [u]), (0, r.jsx)(c.ConfirmModal, h(E({
     confirmText: b.intl.string(b.t.l4Emac),
     cancelText: b.intl.string(b.t["ETE/oC"]),
     onCancel: () => {
-      f.default.track(x.rMx.USER_REMEDIATION_ACTION, {
-        action: p.l.CANCEL_BLOCK,
+      O.default.track(p.rMx.USER_REMEDIATION_ACTION, {
+        action: g.l.CANCEL_BLOCK,
         location: u
       }), null == l || l()
     },
@@ -169,20 +169,20 @@ function N(t) {
       null == n || n(), s.Z.blockUser(e.id, {
         location: u
       }).then(() => {
-        f.default.track(x.rMx.BLOCK_USER_CONFIRMED), d.Z.showBlockSuccessToast(e.id, null != j ? j : true)
+        O.default.track(p.rMx.BLOCK_USER_CONFIRMED), d.Z.showBlockSuccessToast(e.id, null != j ? j : true)
       })
     },
     impression: {
       impressionName: o.ImpressionNames.BLOCK_USER_CONFIRMATION
     }
-  }, g), {
+  }, x), {
     children: (0, r.jsx)(y, {
       user: e,
       guildId: m,
       channelId: j,
       onBlock: n,
       onIgnore: a,
-      disallowIgnore: O
+      disallowIgnore: f
     })
   }))
 }

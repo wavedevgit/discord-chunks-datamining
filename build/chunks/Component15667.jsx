@@ -11,26 +11,26 @@ var Chunk392711 = require("./392711.js"),
   Chunk342153 = require("./342153.js"),
   Chunk158168 = require("./158168.js");
 let d = e => {
-  let t = (0, i.flatMap)(e.history, e => {
+  let t = (0, l.flatMap)(e.history, e => {
     var t;
     let {
       destination: [n],
       multiSelect: r
-    } = e, i = [null, null], l = Object.values(null != (t = null == r ? true : r.state) ? t : {});
-    return l.length > 0 && (i[0] = l.join(", ")), "" !== n && (i[1] = n), i
+    } = e, l = [null, null], i = Object.values(null != (t = null == r ? true : r.state) ? t : {});
+    return i.length > 0 && (l[0] = i.join(", ")), "" !== n && (l[1] = n), l
   }).filter(e => null != e);
   return 0 === t.length ? null : (0, r.jsxs)("div", {
     className: o.container,
-    children: [(0, r.jsx)(l.Heading, {
+    children: [(0, r.jsx)(i.Heading, {
       className: o.breadcrumbsHeader,
-      color: "header-secondary",
+      color: "text-default",
       variant: "heading-sm/semibold",
       children: e.isModeratorReport ? a.intl.string(s.default["6mx/DP"]) : a.intl.string(a.t["+3V9Tp"])
     }), t.map((e, t) => (0, r.jsxs)("div", {
       className: o.breadcrumbContainer,
       children: [(0, r.jsx)("div", {
         className: o.breadcrumbDot
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         className: o.breadcrumbText,
         children: e

@@ -24,24 +24,24 @@ function g(e) {
   } = e, c = (0, a.c)(t.type, t, n);
   if (null == c) return null;
   let {
-    headerText: d,
+    headerText: u,
     descriptionText: g,
     icon: m
   } = c;
   return (0, r.jsxs)("div", {
-    className: u.actionContainer,
+    className: d.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: u.actionIconContainer,
+      className: d.actionIconContainer,
       children: (0, r.jsx)(m, {
         size: "md",
         color: "currentColor",
-        className: u.actionIcon
+        className: d.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: u.actionTextContainer,
+      className: d.actionTextContainer,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-sm/semibold",
-        children: d
+        children: u
       }), (0, r.jsx)(l.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
@@ -53,7 +53,7 @@ function g(e) {
         type: i.M0.INVERTED,
         value: s,
         onChange: () => o(false),
-        className: u.__invalid_actionCheckbox
+        className: d.__invalid_actionCheckbox
       })
     })]
   })
@@ -68,14 +68,14 @@ function m(e) {
     onToggleAction: a
   } = e;
   switch (t.type) {
-    case d.jj.FLAG_TO_CHANNEL:
+    case u.jj.FLAG_TO_CHANNEL:
       return (0, r.jsx)(c.Z, {
         action: t,
         triggerType: i,
         toggled: l,
         onToggleAction: a
       });
-    case d.jj.USER_COMMUNICATION_DISABLED:
+    case u.jj.USER_COMMUNICATION_DISABLED:
       return (0, r.jsx)(o.Z, {
         action: t,
         guildId: n,
@@ -83,7 +83,7 @@ function m(e) {
         toggled: l,
         onToggleAction: a
       });
-    case d.jj.BLOCK_MESSAGE:
+    case u.jj.BLOCK_MESSAGE:
       return (0, r.jsx)(s.Z, {
         action: t,
         triggerType: i,

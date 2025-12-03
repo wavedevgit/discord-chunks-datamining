@@ -29,7 +29,7 @@ function g(e) {
       children: d.intl.string(d.t.ak8OHk)
     }), 0 === t.length ? (0, a.jsx)(s.xvT, {
       variant: "text-xs/semibold",
-      color: "text-primary",
+      color: "text-strong",
       className: m.emptyState,
       children: d.intl.string(d.t.R5fYVO)
     }) : (0, a.jsxs)(a.Fragment, {

@@ -173,7 +173,7 @@ let O = e => {
         isCollapsed: n
       }), l && (0, r.jsx)(d.xvT, {
         variant: "text-xs/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: u.variants[f].variantLabel
       })]
     })

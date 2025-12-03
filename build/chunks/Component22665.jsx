@@ -48,12 +48,12 @@ let O = e => {
       "aria-label": ""
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
-      color: "text-secondary",
+      color: "text-subtle",
       className: E.username,
       children: C
     }), (0, r.jsxs)(c.Text, {
       variant: "text-sm/medium",
-      color: "text-secondary",
+      color: "text-subtle",
       children: [(0, r.jsx)("span", {
         className: E.timestampSeparator,
         children: "•"

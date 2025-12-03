@@ -73,7 +73,7 @@ let j = Chunk473749.memo(function(e) {
               className: E.footerInfo,
               children: [(0, r.jsx)(d.Heading, {
                 variant: "heading-md/medium",
-                color: "text-primary",
+                color: "text-strong",
                 lineClamp: 1,
                 className: x.productName,
                 children: v.intl.string(v.t["0mDmg/"])

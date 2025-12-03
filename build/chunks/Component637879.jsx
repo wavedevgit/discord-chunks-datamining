@@ -118,7 +118,7 @@ function R(e) {
   } = e;
   return (0, r.jsx)(l.Text, {
     variant: "text-sm/medium",
-    color: "text-primary",
+    color: "text-strong",
     className: n,
     children: t
   })
@@ -134,11 +134,11 @@ function w(e) {
     className: I.filterSublabelTextContainer,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
-      color: "text-secondary",
+      color: "text-subtle",
       children: o
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
-      color: "text-tertiary",
+      color: "text-muted",
       children: s
     })]
   })
@@ -153,7 +153,7 @@ function D(e) {
       className: I.channelNameIcon
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
-      color: "text-primary",
+      color: "text-strong",
       className: I.channelName,
       children: t
     })]
@@ -211,7 +211,7 @@ function j(e) {
     className: I.groupHeader,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-xs/semibold",
-      color: "text-secondary",
+      color: "text-subtle",
       children: n
     }), i]
   })
@@ -337,7 +337,7 @@ function Z(e) {
   } = e;
   return (0, r.jsx)(l.Text, {
     variant: "text-sm/semibold",
-    color: "text-primary",
+    color: "text-strong",
     className: n,
     children: t
   })
@@ -357,7 +357,7 @@ function B(e) {
       user: a
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
-      color: "text-primary",
+      color: "text-strong",
       children: a.username
     })]
   })
@@ -380,7 +380,7 @@ function F(e) {
       className: I.channelPillIcon
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
-      color: "text-primary",
+      color: "text-strong",
       children: d
     })]
   })
@@ -428,7 +428,7 @@ function H(e) {
         className: I.labelWithElements,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
-          color: "text-primary",
+          color: "text-strong",
           children: null != (a = h.ZP[O.dCx.FILTER_IN].key) ? a : ""
         }), D(t)]
       }),
@@ -592,7 +592,7 @@ function z(e) {
     return {
       label: (0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
-        color: "text-primary",
+        color: "text-strong",
         children: e
       }),
       ariaLabel: t.name
@@ -605,7 +605,7 @@ function z(e) {
         user: n
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: n.username
       })]
     }),

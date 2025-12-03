@@ -71,7 +71,7 @@ let g = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
               size: "xxs"
             }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
-              color: "text-secondary",
+              color: "text-subtle",
               children: _.intl.string(_.t["5HiF2i"])
             })]
           }), T === a.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {

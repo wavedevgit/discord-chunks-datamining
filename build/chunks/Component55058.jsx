@@ -98,7 +98,7 @@ let b = function(e) {
         className: p.descriptionContainer,
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-md/semibold",
-          color: "text-primary",
+          color: "text-strong",
           children: f.intl.format(f.t["3yZP0G"], {
             percent: m.discount.amount
           })

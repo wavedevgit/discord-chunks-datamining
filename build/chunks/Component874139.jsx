@@ -28,7 +28,7 @@ function b(e) {
     analyticsLocations: y
   } = (0, a.ZP)(), {
     trackUserProfileWishlistAction: O
-  } = (0, u.KZ)(), j = (0, i.useCallback)(e => {
+  } = (0, u.KZ)(), x = (0, i.useCallback)(e => {
     let {
       wishlistId: t,
       action: n,
@@ -40,7 +40,7 @@ function b(e) {
       productLines: r
     })
   }, [O]), {
-    cards: x,
+    cards: j,
     singleItem: v,
     productLines: C
   } = (0, i.useMemo)(() => {
@@ -83,11 +83,11 @@ function b(e) {
     }
   }, [t, n, y, b, _]), I = (0, p.Z)({
     wishlistId: null != _ ? _ : null,
-    onAction: j,
+    onAction: x,
     productLines: C
   });
-  if (0 === x.length) return null;
-  let S = x;
+  if (0 === j.length) return null;
+  let S = j;
   return null != v && ((0, c.Q)(v) ? S = (0, f.g)(v, {
     profileOwner: n,
     analyticsLocations: y,

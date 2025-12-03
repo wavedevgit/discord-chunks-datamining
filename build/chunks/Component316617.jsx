@@ -22,18 +22,18 @@ var Chunk54381 = require("./54381.js"),
 let f = e => {
   let {
     message: t
-  } = e, n = (0, o.ZP)(t), f = (0, l.e7)([_.Z], () => _.Z.getChannel(t.channel_id)), v = i.useMemo(() => (0, s.Z)(t), [t]), {
+  } = e, n = (0, o.ZP)(t), f = (0, i.e7)([_.Z], () => _.Z.getChannel(t.channel_id)), v = l.useMemo(() => (0, s.Z)(t), [t]), {
     content: j
   } = (0, p.Z)(v, {
     hideSimpleEmbedContent: false
-  }), y = g.jU.useSetting(), Z = i.useCallback(() => {
+  }), y = g.jU.useSetting(), Z = l.useCallback(() => {
     let {
       leadingIcon: e,
       trailingIcon: n
     } = (0, m.f)(t, j, false, false, "", {
       leadingIconClass: b.attachmentIcon,
       trailingIconClass: b.attachmentIcon,
-      iconSize: h.WW
+      iconSize: x.WW
     });
     return (0, r.jsxs)("div", {
       className: b.contentContainer,
@@ -49,7 +49,7 @@ let f = e => {
     children: [(0, r.jsx)(a.Heading, {
       className: b.header,
       variant: "heading-sm/semibold",
-      children: x.intl.string(x.t.iouM3a)
+      children: h.intl.string(h.t.iouM3a)
     }), (0, r.jsx)(a.Ttm, {
       className: b.messagePreviewContainer,
       children: (0, r.jsx)(d.Z, {

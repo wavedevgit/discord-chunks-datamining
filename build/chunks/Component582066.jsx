@@ -29,7 +29,7 @@ function j(e) {
   } = e, j = (0, a.e7)([g.Z], () => g.Z.getGuild(i)), _ = (0, a.e7)([m.default], () => m.default.getCurrentUser()), {
     onAdoptTag: v,
     isAdopting: O
-  } = (0, u.Z)(i), C = (null == _ || null == (t = _.primaryGuild) ? true : t.identityGuildId) === i && (null == _ || null == (n = _.primaryGuild) ? true : n.identityEnabled) === true;
+  } = (0, d.Z)(i), C = (null == _ || null == (t = _.primaryGuild) ? true : t.identityGuildId) === i && (null == _ || null == (n = _.primaryGuild) ? true : n.identityEnabled) === true;
   if (null != _ && null != j && (0, c.jq)(j)) return (0, r.jsxs)("div", {
     className: x.container,
     children: [(0, r.jsx)(s.Text, {
@@ -48,7 +48,7 @@ function j(e) {
           avatarSize: s.EFr.SIZE_40,
           "aria-hidden": true
         }),
-        decorations: (0, r.jsx)(d.m0, {
+        decorations: (0, r.jsx)(u.m0, {
           guildId: j.id,
           guildBadge: j.profile.badge,
           guildTag: j.profile.tag,

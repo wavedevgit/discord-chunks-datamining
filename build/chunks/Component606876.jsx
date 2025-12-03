@@ -40,7 +40,7 @@ function u() {
             className: Chunk421405.previewCardUrl,
             children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-sm/medium",
-              color: "text-tertiary",
+              color: "text-muted",
               className: Chunk421405.baseUrl,
               children: "".concat(Chunk203377.mf, "/")
             }), (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -77,7 +77,7 @@ function u() {
       })]
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
-      color: "text-tertiary",
+      color: "text-muted",
       className: Chunk421405.disclaimer,
       children: Chunk388032.intl.string(Chunk130231.default.u5iNbz)
     })]

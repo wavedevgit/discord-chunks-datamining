@@ -57,7 +57,7 @@ function v(e) {
     children: [(0, r.jsx)(g.Z, {
       text: null != C ? C : y.intl.string(y.t.Mgpxiw),
       variant: "text-xs/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       className: O.text
     }), (0, r.jsx)(l.vdY, {
       color: "currentColor",
@@ -68,7 +68,7 @@ function v(e) {
   }) : null != C ? (0, r.jsx)(g.Z, {
     text: C,
     variant: "text-xs/normal",
-    color: "text-secondary",
+    color: "text-subtle",
     className: O.text
   }) : null
 }

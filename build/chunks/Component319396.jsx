@@ -37,7 +37,7 @@ function g(e) {
           isOwner: g
         });
       return s.shouldShow ? null != s.title && null == s.body && null == s.renderIcon ? (0, r.jsx)("li", {
-        children: (0, r.jsx)(l.u, {
+        children: (0, r.jsx)(a.u, {
           text: s.title,
           position: "top",
           asContainer: true,
@@ -45,7 +45,7 @@ function g(e) {
           children: u
         })
       }, e.skuId) : (0, r.jsx)("li", {
-        children: (0, r.jsx)(a.i, {
+        children: (0, r.jsx)(l.i, {
           title: s.title,
           body: null != (c = s.body) ? c : "",
           asset: null == (i = s.renderIcon) ? true : i.call(s, e),

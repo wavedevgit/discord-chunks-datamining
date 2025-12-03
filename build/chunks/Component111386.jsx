@@ -26,7 +26,7 @@ let f = () => (0, Chunk54381.jsxs)("div", {
         children: Chunk388032.intl.string(Chunk388032.t.V5y3qZ)
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: Chunk388032.intl.string(Chunk388032.t.eSDHDk)
       })]
     })]

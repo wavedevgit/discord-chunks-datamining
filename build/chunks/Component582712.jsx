@@ -1,5 +1,5 @@
 /** Chunk was on 35489 **/
-/** chunk id: 582712, original params: e,t,r (module,exports,require) **/
+/** chunk id: 582712, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => y
 });
@@ -26,117 +26,117 @@ function y(e) {
     transitionState: t,
     guildId: y,
     onClose: O
-  } = e, D = (0, i.e7)([m.Z], () => m.Z.getGuild(y));
+  } = e, D = (0, s.e7)([m.Z], () => m.Z.getGuild(y));
   return (a.useEffect(() => {
-    (0, h.Y)(y), (0, p.L)(p.Q.MODAL_VIEWED, y), d.Z.increment({
-      name: s.V.DM_SETTINGS_UPSELL_VIEW
+    (0, x.Y)(y), (0, g.L)(g.Q.MODAL_VIEWED, y), d.Z.increment({
+      name: i.V.DM_SETTINGS_UPSELL_VIEW
     })
-  }, [y]), null == D) ? null : (0, n.jsx)(l.Y0X, {
+  }, [y]), null == D) ? null : (0, r.jsx)(o.Y0X, {
     transitionState: t,
-    className: x.modal,
+    className: h.modal,
     parentComponent: "DmSettingsUpsellModal",
-    children: (0, n.jsxs)("form", {
+    children: (0, r.jsxs)("form", {
       onSubmit: e => {
         e.preventDefault();
-        let t = (0, g.YK)();
-        t.add(y), b.h2.updateSetting(Array.from(t)).then(() => (0, l.showToast)((0, l.createToast)(f.intl.string(f.t.rlYD1W), l.ToastType.SUCCESS))), O(), (0, p.L)(p.Q.MODAL_DISABLED_DMS, y)
+        let t = (0, f.YK)();
+        t.add(y), b.h2.updateSetting(Array.from(t)).then(() => (0, o.showToast)((0, o.createToast)(p.intl.string(p.t.rlYD1W), o.ToastType.SUCCESS))), O(), (0, g.L)(g.Q.MODAL_DISABLED_DMS, y)
       },
-      children: [(0, n.jsx)("img", {
+      children: [(0, r.jsx)("img", {
         alt: "",
-        className: x.headerImage,
+        className: h.headerImage,
         src: j
-      }), (0, n.jsxs)(l.xBx, {
+      }), (0, r.jsxs)(o.xBx, {
         separator: false,
-        className: x.header,
-        children: [(0, n.jsx)(l.Heading, {
+        className: h.header,
+        children: [(0, r.jsx)(o.Heading, {
           variant: "heading-lg/bold",
-          className: x.title,
-          children: f.intl.string(f.t.w2BvnL)
-        }), (0, n.jsx)(l.Text, {
+          className: h.title,
+          children: p.intl.string(p.t.w2BvnL)
+        }), (0, r.jsx)(o.Text, {
           variant: "text-md/normal",
-          color: "header-secondary",
-          className: x.body,
-          children: f.intl.format(f.t.Depjkv, {
+          color: "text-default",
+          className: h.body,
+          children: p.intl.format(p.t.Depjkv, {
             guild_name: D.name
           })
         })]
-      }), (0, n.jsxs)(l.hzk, {
-        children: [(0, n.jsx)(l.Text, {
+      }), (0, r.jsxs)(o.hzk, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "eyebrow",
-          color: "header-secondary",
-          className: x.subtitle,
-          children: f.intl.string(f.t.KPB2iw)
-        }), (0, n.jsx)("div", {
-          className: x.guildContainer,
-          children: (0, n.jsxs)("div", {
-            className: x.guildInfo,
-            children: [(0, n.jsx)(c.Z, {
+          color: "text-default",
+          className: h.subtitle,
+          children: p.intl.string(p.t.KPB2iw)
+        }), (0, r.jsx)("div", {
+          className: h.guildContainer,
+          children: (0, r.jsxs)("div", {
+            className: h.guildInfo,
+            children: [(0, r.jsx)(c.Z, {
               guild: D,
               size: c.Z.Sizes.SMALL
-            }), (0, n.jsx)(l.Text, {
-              className: x.guildName,
+            }), (0, r.jsx)(o.Text, {
+              className: h.guildName,
               variant: "text-md/semibold",
               children: D.name
             })]
           })
-        }), (0, n.jsxs)("div", {
-          className: x.content,
-          children: [(0, n.jsx)(o.zx, {
-            className: x.button,
+        }), (0, r.jsxs)("div", {
+          className: h.content,
+          children: [(0, r.jsx)(l.zx, {
+            className: h.button,
             type: "submit",
-            color: o.zx.Colors.BRAND,
-            size: o.zx.Sizes.MEDIUM,
-            children: f.intl.string(f.t.TD7iUx)
-          }), (0, n.jsx)(o.zx, {
-            className: x.button,
-            color: o.zx.Colors.PRIMARY,
+            color: l.zx.Colors.BRAND,
+            size: l.zx.Sizes.MEDIUM,
+            children: p.intl.string(p.t.TD7iUx)
+          }), (0, r.jsx)(l.zx, {
+            className: h.button,
+            color: l.zx.Colors.PRIMARY,
             onClick: () => {
-              O(), (0, p.L)(p.Q.MODAL_DISMISSED, y)
+              O(), (0, g.L)(g.Q.MODAL_DISMISSED, y)
             },
-            children: f.intl.string(f.t.PsWbcp)
-          }), (0, n.jsx)(l.Text, {
+            children: p.intl.string(p.t.PsWbcp)
+          }), (0, r.jsx)(o.Text, {
             variant: "text-xs/normal",
-            color: "header-secondary",
-            className: x.footer,
-            children: f.intl.format(f.t.IzZxXW, {
+            color: "text-default",
+            className: h.footer,
+            children: p.intl.format(p.t.IzZxXW, {
               onClick: () => {
-                O(), (0, u.X)(y), (0, l.ZDy)(async () => {
+                O(), (0, u.X)(y), (0, o.ZDy)(async () => {
                   let {
                     default: e
-                  } = await r.e("86722").then(r.bind(r, 264333));
+                  } = await n.e("86722").then(n.bind(n, 264333));
                   return t => {
-                    var r, a;
-                    return (0, n.jsx)(e, (r = function(e) {
+                    var n, a;
+                    return (0, r.jsx)(e, (n = function(e) {
                       for (var t = 1; t < arguments.length; t++) {
-                        var r = null != arguments[t] ? arguments[t] : {},
-                          n = Object.keys(r);
-                        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                          return Object.getOwnPropertyDescriptor(r, e).enumerable
-                        }))), n.forEach(function(t) {
-                          var n;
-                          n = r[t], t in e ? Object.defineProperty(e, t, {
-                            value: n,
+                        var n = null != arguments[t] ? arguments[t] : {},
+                          r = Object.keys(n);
+                        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                          return Object.getOwnPropertyDescriptor(n, e).enumerable
+                        }))), r.forEach(function(t) {
+                          var r;
+                          r = n[t], t in e ? Object.defineProperty(e, t, {
+                            value: r,
                             enumerable: true,
                             configurable: true,
                             writable: true
-                          }) : e[t] = n
+                          }) : e[t] = r
                         })
                       }
                       return e
                     }({}, t), a = a = {
                       guild: D
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-                      var r = Object.keys(e);
+                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+                      var n = Object.keys(e);
                       if (Object.getOwnPropertySymbols) {
-                        var n = Object.getOwnPropertySymbols(e);
-                        r.push.apply(r, n)
+                        var r = Object.getOwnPropertySymbols(e);
+                        n.push.apply(n, r)
                       }
-                      return r
+                      return n
                     })(Object(a)).forEach(function(e) {
-                      Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
-                    }), r))
+                      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
+                    }), n))
                   }
-                }), (0, p.L)(p.Q.MODAL_GUILD_SETTINGS_CLICKED, y)
+                }), (0, g.L)(g.Q.MODAL_GUILD_SETTINGS_CLICKED, y)
               }
             })
           })]

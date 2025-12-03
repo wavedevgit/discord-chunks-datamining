@@ -82,26 +82,26 @@ function Z(e) {
     location: "Social Layer Storefront"
   }), A = (0, r.e7)([I.default], () => I.default.getSessionId(), []), M = (0, r.e7)([x.Z], () => x.Z.get(Z), [Z]);
   (0, _.p2)();
-  let y = (0, c.Z)((0, s.Z)()),
-    O = (0, r.e7)([f.ZP, I.default], () => f.ZP.isMember(S, I.default.getId())),
-    P = i.useMemo(() => {
+  let O = (0, c.Z)((0, s.Z)()),
+    P = (0, r.e7)([f.ZP, I.default], () => f.ZP.isMember(S, I.default.getId())),
+    y = i.useMemo(() => {
       if (null == L) return 0;
       let e = parseInt(L, 10);
       return isNaN(e) || null != T && null != T.storefront && e >= T.storefront.pages.length ? 0 : e
     }, [L, T]),
-    w = null != (j = null == T || null == (t = T.storefront) || null == (n = t.pages[P]) ? true : n.title) ? j : null,
-    G = (null == T || null == (p = T.storefront) || null == (a = p.pages[P]) ? true : a.leaderboard) != null,
+    w = null != (j = null == T || null == (t = T.storefront) || null == (n = t.pages[y]) ? true : n.title) ? j : null,
+    G = (null == T || null == (p = T.storefront) || null == (a = p.pages[y]) ? true : a.leaderboard) != null,
     B = i.useMemo(() => ({
-      sessionId: y,
+      sessionId: O,
       guildId: S,
-      pageIndex: P,
+      pageIndex: y,
       pageTitle: w,
-      isUserGuildMember: O,
+      isUserGuildMember: P,
       pageHasLeaderboard: G
-    }), [y, S, P, w, O, G]);
+    }), [O, S, y, w, P, G]);
   return (i.useEffect(() => {
-    null != S && (0, C.m0)(S, P, null != Z ? Z : null)
-  }, [S, P, Z]), i.useEffect(() => {
+    null != S && (0, C.m0)(S, y, null != Z ? Z : null)
+  }, [S, y, Z]), i.useEffect(() => {
     null != S && null != A && null == h.Z.getGuild(S) && (0, m.Ub)(S, {}, {
       shouldNavigate: false
     })
@@ -115,7 +115,7 @@ function Z(e) {
       children: (0, l.jsx)(E, {
         storefront: T.storefront,
         guildId: S,
-        selectedPageIndex: P,
+        selectedPageIndex: y,
         selectedSku: M
       })
     })

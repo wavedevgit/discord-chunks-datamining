@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk794295 = require("./794295.jsx"),
@@ -19,28 +19,28 @@ var Chunk120356 = require("./120356.js"),
 function h(e) {
   var t, n;
   let {
-    application: a,
+    application: i,
     className: l,
     innerClassName: o
-  } = e, c = null != (n = null == (t = a.directory_entry) ? true : t.external_urls) ? n : [];
-  return null != a.terms_of_service_url || null != a.privacy_policy_url || c.length > 0 ? (0, r.jsxs)("div", {
-    className: i()(m.container, l),
+  } = e, c = null != (n = null == (t = i.directory_entry) ? true : t.external_urls) ? n : [];
+  return null != i.terms_of_service_url || null != i.privacy_policy_url || c.length > 0 ? (0, r.jsxs)("div", {
+    className: a()(m.container, l),
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-sm/semibold",
       color: "header-primary",
       children: p.intl.string(p.t.l6DP2n)
     }), (0, r.jsxs)("div", {
-      className: i()(m.list, o),
+      className: a()(m.list, o),
       children: [c.map((e, t) => (0, r.jsx)(g, {
         url: e.url,
         children: e.name
-      }, t)), null != a.terms_of_service_url ? (0, r.jsx)(_, {
+      }, t)), null != i.terms_of_service_url ? (0, r.jsx)(f, {
         icon: s.aAW,
-        url: a.terms_of_service_url,
+        url: i.terms_of_service_url,
         children: p.intl.string(p.t.s7STcY)
-      }) : null, null != a.privacy_policy_url ? (0, r.jsx)(_, {
+      }) : null, null != i.privacy_policy_url ? (0, r.jsx)(f, {
         icon: s.mBM,
-        url: a.privacy_policy_url,
+        url: i.privacy_policy_url,
         children: p.intl.string(p.t.kH3JR5)
       }) : null]
     })]
@@ -50,28 +50,28 @@ function h(e) {
 function g(e) {
   var t, n;
   let {
-    url: a,
-    children: i
-  } = e, o = (0, c.ZP)(), u = d.Z.getByUrl(a), p = (0, l.wj)(o) ? null == u || null == (t = u.icon) ? true : t.darkSVG : null == u || null == (n = u.icon) ? true : n.lightSVG;
-  return (0, r.jsx)(_, {
+    url: i,
+    children: a
+  } = e, o = (0, c.ZP)(), u = d.Z.getByUrl(i), p = (0, l.wj)(o) ? null == u || null == (t = u.icon) ? true : t.darkSVG : null == u || null == (n = u.icon) ? true : n.lightSVG;
+  return (0, r.jsx)(f, {
     icon: true === p ? s.xPt : true,
     imageSrc: p,
-    url: a,
-    children: i
+    url: i,
+    children: a
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     icon: t,
     imageSrc: n,
-    iconColor: a,
+    iconColor: i,
     url: l,
     children: c
   } = e, d = (0, u.nu)(), p = null;
   null != t ? p = (0, r.jsx)(t, {
     className: m.listIcon,
-    color: null != a ? a : "currentColor",
+    color: null != i ? i : "currentColor",
     width: 20,
     height: 20,
     size: "custom"
@@ -90,7 +90,7 @@ function _(e) {
   });
   return (0, r.jsx)(o.Z, {
     href: l,
-    className: i()(m.listItem, m.linkItem),
+    className: a()(m.listItem, m.linkItem),
     trusted: !d,
     useDefaultUnderlineStyles: false,
     children: h

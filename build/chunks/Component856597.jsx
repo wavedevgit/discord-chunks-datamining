@@ -45,14 +45,14 @@ let p = {
               title: null != (l = p[e.task_type]) ? l : "",
               listType: "numbered",
               index: n,
-              color: n === t ? "text-primary" : n < t ? "feedback-positive" : "text-muted",
+              color: n === t ? "text-strong" : n < t ? "feedback-positive" : "text-muted",
               completed: n < t
             }, e.task_type)
           })
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: Chunk388032.intl.format(Chunk211231.default["0DHxym"], {
           handleLogOut: () => (0, Chunk210825.R)("safety_flows_sidebar")
         })

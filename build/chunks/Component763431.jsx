@@ -15,7 +15,7 @@ let o = e => {
   } = e;
   return (0, r.jsxs)("div", {
     className: s.container,
-    children: [(0, r.jsx)(i.Heading, {
+    children: [(0, r.jsx)(l.Heading, {
       className: s.header,
       variant: "heading-sm/semibold",
       children: a.intl.string(a.t["0ox7Hq"])
@@ -25,12 +25,12 @@ let o = e => {
         className: s.guildInfo,
         children: [(0, r.jsx)("div", {
           className: s.guildIcon,
-          children: (0, r.jsx)(l.Z, {
+          children: (0, r.jsx)(i.Z, {
             guild: t,
-            size: l.Z.Sizes.LARGE
+            size: i.Z.Sizes.LARGE
           })
         }), (0, r.jsx)("div", {
-          children: (0, r.jsx)(i.Text, {
+          children: (0, r.jsx)(l.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
             children: t.name

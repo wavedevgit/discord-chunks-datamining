@@ -1,7 +1,7 @@
 /** Chunk was on 64767 **/
 /** chunk id: 507155, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => m
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,23 +18,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk397321 = require("./397321.js");
 
-function x(e) {
+function m(e) {
   let {
     canUseBoosts: t,
     guildId: r,
     powerup: a
-  } = e, [x, b] = o.useState(false), g = (0, c.ZP)(r, a), O = (0, d.P)(a, g, false), y = (0, c.UP)(g), {
-    disabled: C
-  } = (0, l.Z)(r, a, y), {
-    onActivate: h
-  } = (0, v.ZP)(r, a), P = !t || C, k = y && !P, w = (0, n.jsxs)(n.Fragment, {
+  } = e, [m, x] = o.useState(false), g = (0, c.ZP)(r, a), O = (0, d.P)(a, g, false), C = (0, c.UP)(g), {
+    disabled: h
+  } = (0, l.Z)(r, a, C), {
+    onActivate: y
+  } = (0, v.ZP)(r, a), P = !t || h, k = C && !P, w = (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
       className: i()(j.perkCardImage, {
-        [j.active]: y
+        [j.active]: C
       }),
       children: (0, n.jsx)(p.m, {
         powerup: a,
-        isHovering: !P && x
+        isHovering: !P && m
       })
     }), (0, n.jsxs)("div", {
       className: j.footerContainer,
@@ -43,7 +43,7 @@ function x(e) {
         children: [(0, n.jsx)("div", {
           children: (0, n.jsx)(s.Text, {
             variant: "text-sm/medium",
-            color: (y || x) && !P ? "text-primary" : "text-secondary",
+            color: (C || m) && !P ? "text-strong" : "text-subtle",
             children: a.description
           })
         }), (0, n.jsxs)("div", {
@@ -60,8 +60,8 @@ function x(e) {
               color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
             }), (0, n.jsx)(s.Text, {
               variant: "text-sm/medium",
-              color: "text-secondary",
-              children: m.intl.formatToPlainString(m.t.t2Wbo1, {
+              color: "text-subtle",
+              children: b.intl.formatToPlainString(b.t.t2Wbo1, {
                 required: a.cost,
                 decorator: ""
               })
@@ -77,22 +77,22 @@ function x(e) {
       })]
     })]
   });
-  return y ? (0, n.jsx)("div", {
+  return C ? (0, n.jsx)("div", {
     className: i()(j.perkCard, j.activeCard, {
       [j.disabled]: P
     }),
-    onMouseEnter: () => b(true),
-    onMouseLeave: () => b(false),
+    onMouseEnter: () => x(true),
+    onMouseLeave: () => x(false),
     children: w
   }) : (0, n.jsx)(s.P3F, {
     className: i()(j.perkCard, {
       [j.disabled]: P
     }),
-    onMouseEnter: () => b(true),
-    onMouseLeave: () => b(false),
+    onMouseEnter: () => x(true),
+    onMouseLeave: () => x(false),
     "aria-disabled": P,
     onClick: e => {
-      e.stopPropagation(), P || null == h || h(e, {
+      e.stopPropagation(), P || null == y || y(e, {
         shouldCloseAllModals: false
       })
     },

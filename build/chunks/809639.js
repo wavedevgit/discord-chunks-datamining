@@ -17,8 +17,8 @@ function c(e, t) {
     mediaAttachments: d,
     hasThumbnail: u
   } = function(e) {
-    let [t, n] = r.useState(null), o = (0, i.Wu)([l.Z], () => {
-      let t = l.Z.getUploads(e.id, a.Ie.CREATE_FORUM_POST.drafts.type),
+    let [t, n] = r.useState(null), o = (0, i.Wu)([a.Z], () => {
+      let t = a.Z.getUploads(e.id, l.Ie.CREATE_FORUM_POST.drafts.type),
         n = t.find(e => e.isThumbnail);
       return null != n ? [n] : t.filter(e => e.isVideo || e.isImage)
     }), c = r.useMemo(() => o.some(e => e.isThumbnail), [o]);

@@ -589,11 +589,11 @@ function eh() {
             onValueRender: e => "x".concat(e.toFixed(2)),
             onMarkerRender: e => 0 === e ? (0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
-              color: "text-secondary",
+              color: "text-subtle",
               children: V.intl.string(V.t["493lwX"])
             }) : 10 === e ? (0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
-              color: "text-secondary",
+              color: "text-subtle",
               children: V.intl.string(V.t.ZSZEdS)
             }) : 1 === e ? (0, r.jsx)(c.Text, {
               variant: "text-xs/medium",

@@ -19,16 +19,16 @@ let b = e => {
     otherUser: r,
     transitionState: c,
     onClose: b
-  } = e, [p, h] = o.useState(false), y = o.useCallback(() => {
+  } = e, [p, h] = o.useState(false), j = o.useCallback(() => {
     h(true)
-  }, []), j = o.useCallback(() => {
+  }, []), y = o.useCallback(() => {
     b()
   }, [b]), g = t.nsfwAllowed, {
     cancelLinkRequest: O,
     isCancelLoading: m
   } = (0, a.G)({
-    onError: y,
-    onSuccess: j
+    onError: j,
+    onSuccess: y
   });
   return i()(g, "FamilyCenterDeclineLinkModal should only be rendered for parents."), (0, n.jsxs)(l.IX, {
     transitionState: c,

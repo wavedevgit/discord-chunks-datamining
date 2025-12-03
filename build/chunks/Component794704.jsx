@@ -197,7 +197,7 @@ function eL(e) {
             children: i
           }), null != a && (0, r.jsx)(m.Text, {
             variant: "text-sm/normal",
-            color: "text-secondary",
+            color: "text-subtle",
             children: a
           }), null != l && (0, r.jsx)(m.Text, {
             variant: "text-xxs/medium",
@@ -411,7 +411,7 @@ function eU(e) {
             return (0, r.jsx)(m.Text, {
               tag: "span",
               variant: "text-sm/medium",
-              color: "text-primary",
+              color: "text-strong",
               children: e
             }, t)
           }
@@ -448,7 +448,7 @@ function eU(e) {
   (0, v.ZP)(() => {
     h.Z.getDetectableGames()
   });
-  let [er, ei] = i.useMemo(() => W ? ["text-muted", m.TVs.colors.TEXT_MUTED.css] : Y && z ? ["text-feedback-warning", m.TVs.colors.TEXT_FEEDBACK_WARNING.css] : Y && K ? ["text-feedback-positive", m.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : Y && X ? ["text-primary", m.TVs.colors.TEXT_PRIMARY.css] : ["interactive-normal", m.TVs.colors.INTERACTIVE_NORMAL.css], [W, Y, z, K, X]);
+  let [er, ei] = i.useMemo(() => W ? ["text-muted", m.TVs.colors.TEXT_MUTED.css] : Y && z ? ["text-feedback-warning", m.TVs.colors.TEXT_FEEDBACK_WARNING.css] : Y && K ? ["text-feedback-positive", m.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : Y && X ? ["text-strong", m.TVs.colors.TEXT_STRONG.css] : ["interactive-normal", m.TVs.colors.INTERACTIVE_NORMAL.css], [W, Y, z, K, X]);
   return null == o ? null : (0, r.jsxs)(ej, {
     onExpand: T,
     className: I ? eg.expandedContainer : true,

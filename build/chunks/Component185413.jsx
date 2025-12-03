@@ -64,7 +64,7 @@ function x(e) {
   let l = (0, a.e7)([d.Z], () => d.Z.getChannel(t), [t]),
     o = (0, a.e7)([p.Z], () => p.Z.getGuild(null == l ? true : l.getGuildId()));
   return (r.useEffect(() => {
-    h.default.track(y.rMx.OPEN_MODAL, {
+    h.default.track(C.rMx.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
   }, []), null == l || null == o) ? null : (0, i.jsx)(E, _({
@@ -79,7 +79,7 @@ function E(e) {
       channel: d,
       onClose: p,
       newChannel: h,
-      inSettings: y
+      inSettings: C
     } = e,
     x = O(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
   let [E, j] = r.useState(""), [S, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
@@ -103,7 +103,7 @@ function E(e) {
           } = t;
           null != n.id && "" !== n.id && (n.rowType === b.aC.ROLE ? i.push((0, f.rX)(n.id, e.type)) : n.rowType === b.aC.MEMBER && i.push((0, f.jZ)(n.id, e.type)))
         }), (0, s.hw)(e.id, i, n)
-      }(d, S, y), p(), Z(false)
+      }(d, S, C), p(), Z(false)
     } catch (t) {
       let e = new c.Hx(t);
       Z(false), N(e)
@@ -120,29 +120,29 @@ function E(e) {
     members: M,
     getRichTag: R,
     children: (0, i.jsx)(l.Modal, (t = _({}, x), n = n = {
-      title: C.intl.string(C.t.dMJ3Y6),
+      title: y.intl.string(y.t.dMJ3Y6),
       onClose: p,
       input: (0, i.jsxs)("div", {
         children: [(0, i.jsxs)(o.Text, {
           className: v.channelName,
           variant: "text-lg/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: [(0, i.jsx)(U, {
             className: v.channelIcon,
             size: "sm",
             color: "currentColor"
           }), d.name]
         }), d.isGuildStageVoice() && (0, i.jsx)(o.Text, {
-          color: "header-secondary",
+          color: "text-default",
           className: v.description,
           variant: "text-sm/normal",
-          children: C.intl.string(C.t.f7VbhF)
+          children: y.intl.string(y.t.f7VbhF)
         }), (0, i.jsx)(m.Z.SearchBox, {
-          placeholderText: C.intl.string(C.t.iezLLn)
+          placeholderText: y.intl.string(y.t.iezLLn)
         }), (0, i.jsx)(o.Text, {
           className: v.subtext,
           variant: "text-xs/normal",
-          children: C.intl.string(C.t.rwFx85)
+          children: y.intl.string(y.t.rwFx85)
         }), null != T ? (0, i.jsx)(o.Text, {
           className: v.subtext,
           variant: "text-xs/normal",
@@ -160,15 +160,15 @@ function E(e) {
       },
       actions: k ? [{
         variant: "secondary",
-        text: C.intl.string(C.t.u46sxe),
+        text: y.intl.string(y.t.u46sxe),
         onClick: p
       }] : [{
         variant: "secondary",
-        text: C.intl.string(C.t["ETE/oC"]),
+        text: y.intl.string(y.t["ETE/oC"]),
         onClick: p
       }, {
         variant: "primary",
-        text: C.intl.string(C.t.i4jeWR),
+        text: y.intl.string(y.t.i4jeWR),
         onClick: D,
         loading: I
       }]

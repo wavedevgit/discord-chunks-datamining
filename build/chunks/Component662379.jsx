@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk217684 = require("./217684.js"),
   Chunk174618 = require("./174618.js");
 
-function u(e) {
+function d(e) {
   let {
     imageSrc: t,
     description: n
@@ -59,7 +59,7 @@ function g() {
       size: 24
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk964269.howItWorksContainer,
-      children: module.map(e => (0, r.jsx)(u, {
+      children: module.map(e => (0, r.jsx)(d, {
         imageSrc: e.imageSrc,
         description: e.description
       }, e.imageSrc))
@@ -67,7 +67,7 @@ function g() {
       size: 24
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: Chunk388032.intl.format(Chunk388032.t.oxW30N, {
         creatorPortalUrl: Chunk293810.C5
       })

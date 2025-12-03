@@ -62,7 +62,7 @@ function g(e) {
       children: f.intl.string(m ? f.t.PBfFnx : f.t.NqFP6z)
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       children: m ? f.intl.format(f.t.LdYS1H, {
         onClick: _
       }) : f.intl.string(f.t.LhD4yH)

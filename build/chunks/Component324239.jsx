@@ -23,9 +23,9 @@ function g(t) {
     setEmail: n,
     claimRequired: u,
     onSuccess: m,
-    onClose: d
+    onClose: f
   } = t, [g, S] = l.useState(), [y, v] = l.useState(""), [N, b] = l.useState(""), [j, C] = l.useState(false);
-  l.useEffect(() => c.Z.flowStep(f.MK.ANY, f.mx.CLAIM_ACCOUNT), []);
+  l.useEffect(() => c.Z.flowStep(d.MK.ANY, d.mx.CLAIM_ACCOUNT), []);
   let O = async t => {
     t.preventDefault(), C(true), S(""), b("");
     try {
@@ -52,11 +52,11 @@ function g(t) {
       }), (0, r.jsx)(o.Text, {
         className: _.formBody,
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: u ? p.intl.string(p.t.sW28gZ) : p.intl.string(p.t["gP/vPe"])
       }), (0, r.jsx)(o.olH, {
         className: _.closeButton,
-        onClick: d
+        onClick: f
       })]
     }), (0, r.jsx)(o.hzk, {
       children: (0, r.jsx)("form", {
@@ -88,7 +88,7 @@ function g(t) {
             children: (0, r.jsx)(o.Avr, {
               text: p.intl.string(p.t["2jxGer"]),
               onClick: () => {
-                i.Z.logout("claim_account_modal"), d()
+                i.Z.logout("claim_account_modal"), f()
               }
             })
           })]
@@ -104,7 +104,7 @@ function S(t) {
     claimRequired: n,
     onClose: i
   } = t, s = n ? p.t.D7trIB : p.t.JNWX7G;
-  return l.useEffect(() => c.Z.flowStep(f.MK.ANY, f.mx.CLAIM_ACCOUNT_SUCCESS), []), (0, r.jsxs)("div", {
+  return l.useEffect(() => c.Z.flowStep(d.MK.ANY, d.mx.CLAIM_ACCOUNT_SUCCESS), []), (0, r.jsxs)("div", {
     children: [(0, r.jsxs)(o.hzk, {
       className: _.successContent,
       children: [!n && (0, r.jsx)(o.olH, {
@@ -138,7 +138,7 @@ function S(t) {
         variant: "primary",
         fullWidth: true,
         onClick: function() {
-          window.open((0, m.t3)(), "_blank"), u.default.track(d.rMx.DOWNLOAD_APP, {
+          window.open((0, m.t3)(), "_blank"), u.default.track(f.rMx.DOWNLOAD_APP, {
             platform: (0, m.DW)(),
             ptb: false,
             released: true,

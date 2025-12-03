@@ -1,5 +1,5 @@
 /** Chunk was on 65631 **/
-/** chunk id: 10722, original params: e,i,t (module,exports,require) **/
+/** chunk id: 10722, original params: i,e,t (module,exports,require) **/
 require.d(exports, {
   default: () => h
 });
@@ -16,44 +16,44 @@ var Chunk54381 = require("./54381.js"),
   Chunk648468 = require("./648468.js"),
   Chunk430864 = require("./430864.js");
 
-function h(e) {
-  var i, t;
+function h(i) {
+  var e, t;
   let {
     channel: h,
-    guild: L,
-    onClose: N,
-    transitionState: m
-  } = e, x = null != (t = (0, d.KS)(h, L)) ? t : true, y = (0, c.ZP)(h, false), v = (0, l.q)(null == (i = h.linkedLobby) ? true : i.application_id);
+    guild: x,
+    onClose: L,
+    transitionState: N
+  } = i, m = null != (t = (0, d.KS)(h, x)) ? t : true, y = (0, c.ZP)(h, false), v = (0, o.q)(null == (e = h.linkedLobby) ? true : e.application_id);
   return (0, n.jsxs)(a.Modal, {
     title: b.intl.string(b.t.X8jMDh),
     subtitle: null != y ? {
       text: y,
-      leadingIcon: x
+      leadingIcon: m
     } : true,
     actions: true,
-    transitionState: m,
-    onClose: N,
-    children: [(0, n.jsx)(o.Text, {
+    transitionState: N,
+    onClose: L,
+    children: [(0, n.jsx)(l.Text, {
       selectable: true,
       variant: "text-md/normal",
-      className: u.markup,
-      children: r.Z.parseTopic(h.topic, true, {
+      className: k.markup,
+      children: s.Z.parseTopic(h.topic, true, {
         channelId: h.id
       })
     }), null != v ? (0, n.jsxs)("div", {
-      className: k.linkedLobbyNotice,
-      children: [(0, n.jsx)(o.DuK, {
-        className: k.linkedLobbyApplicationIcon
-      }), (0, n.jsx)(o.Text, {
+      className: u.linkedLobbyNotice,
+      children: [(0, n.jsx)(l.DuK, {
+        className: u.linkedLobbyApplicationIcon
+      }), (0, n.jsx)(l.Text, {
         variant: "text-sm/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: b.intl.format(b.t.Ud5ryv, {
           applicationName: v.name,
-          helpdeskArticle: s.Z.getArticleURL(p.BhN.LINKED_LOBBIES),
-          separatorHook: (e, i) => (0, n.jsx)("span", {
-            className: k.linkedLobbyNoticeSeparator,
-            children: e
-          }, i)
+          helpdeskArticle: r.Z.getArticleURL(p.BhN.LINKED_LOBBIES),
+          separatorHook: (i, e) => (0, n.jsx)("span", {
+            className: u.linkedLobbyNoticeSeparator,
+            children: i
+          }, e)
         })
       })]
     }) : null]

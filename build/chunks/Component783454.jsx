@@ -24,7 +24,7 @@ function m(e) {
   } = e, [p, f] = i.useState(t), h = () => f(e => !e), b = (0, o.Dt)();
   return (0, r.jsxs)("div", {
     className: g.container,
-    children: [(0, r.jsx)(d.Z, {
+    children: [(0, r.jsx)(u.Z, {
       className: a()(g.header, {
         [g.headerWithDescription]: p && null != l
       }),
@@ -40,7 +40,7 @@ function m(e) {
             children: n
           }), (0, r.jsx)(s.P3F, {
             onClick: i(h),
-            "aria-label": u.intl.string(u.t.e5eQOy),
+            "aria-label": d.intl.string(d.t.e5eQOy),
             "aria-controls": b,
             "aria-expanded": p,
             focusProps: {

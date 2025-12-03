@@ -51,7 +51,7 @@ function D(e) {
   return e
 }
 
-function y(e, t) {
+function G(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,10 +64,10 @@ function y(e, t) {
   }), e
 }
 
-function G(e) {
+function y(e) {
   let t = (0, c.e7)([m.Z], () => m.Z.useReducedMotion),
-    n = r.useRef(null);
-  return r.useEffect(() => {
+    n = i.useRef(null);
+  return i.useEffect(() => {
     let l;
     return null != n.current && (l = o().loadAnimation({
       container: n.current,
@@ -82,7 +82,7 @@ function G(e) {
 }
 
 function C() {
-  let e = G(Chunk180504);
+  let e = y(Chunk180504);
   return (0, Chunk54381.jsx)("div", {
     className: a()(Chunk577436.leftArt, Chunk577436.altFloat),
     children: (0, Chunk54381.jsx)("div", {
@@ -93,7 +93,7 @@ function C() {
 }
 
 function P() {
-  let e = G(Chunk535170);
+  let e = y(Chunk535170);
   return (0, Chunk54381.jsx)("div", {
     className: a()(Chunk577436.rightArt, Chunk577436.altFloat),
     children: (0, Chunk54381.jsx)("div", {
@@ -107,13 +107,13 @@ function A(e) {
   let {
     guild: t,
     mainIslandClassName: n,
-    balloonDogClassName: i
-  } = e, s = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), d = r.useRef(null), u = G(S), g = N.ZP.getGuildIconURL({
+    balloonDogClassName: r
+  } = e, s = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), d = i.useRef(null), u = y(S), g = N.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 96
   });
-  return r.useEffect(() => {
+  return i.useEffect(() => {
     let e;
     return null != d.current && null != g ? (0, I.OF)(g).then(t => {
       let n = (0, E.Z)(JSON.parse(JSON.stringify(T)), g, t[0]);
@@ -136,7 +136,7 @@ function A(e) {
   }, [g, d, s]), (0, l.jsxs)("div", {
     className: a()(b.centerArt, b.float),
     children: [(0, l.jsx)("div", {
-      className: a()(b.balloonDog, i),
+      className: a()(b.balloonDog, r),
       ref: u
     }), (0, l.jsx)("div", {
       className: a()(b.mainIsland, n),
@@ -149,16 +149,16 @@ function L(e) {
   let {
     guild: t,
     onStart: n,
-    onboardingStatus: i,
+    onboardingStatus: r,
     headerId: a,
     disableTracking: s
-  } = e, o = (0, c.e7)([p.Z], () => p.Z.isLoading()), m = r.useRef(false);
-  r.useEffect(() => {
-    if (!s) return f.default.track(j.rMx.GUILD_ONBOARDING_STEP_VIEWED, y(D({}, (0, g.hH)(t.id)), {
+  } = e, o = (0, c.e7)([p.Z], () => p.Z.isLoading()), m = i.useRef(false);
+  i.useEffect(() => {
+    if (!s) return f.default.track(j.rMx.GUILD_ONBOARDING_STEP_VIEWED, G(D({}, (0, g.hH)(t.id)), {
       step: false,
       required: true
     })), () => {
-      f.default.track(j.rMx.GUILD_ONBOARDING_STEP_COMPLETED, y(D({}, (0, g.hH)(t.id)), {
+      f.default.track(j.rMx.GUILD_ONBOARDING_STEP_COMPLETED, G(D({}, (0, g.hH)(t.id)), {
         step: false,
         skipped: !m.current,
         is_final_step: false,
@@ -166,7 +166,7 @@ function L(e) {
       }))
     }
   }, [t.id, m, s]);
-  let N = r.useMemo(() => (0, h.EB)(t, 135, false, true), [t]);
+  let N = i.useMemo(() => (0, h.EB)(t, 135, false, true), [t]);
   return (0, u.ZP)(() => {
     setTimeout(() => {
       m.current = true, n()
@@ -193,7 +193,7 @@ function L(e) {
           })
         }), o ? (0, l.jsx)(d.$jN, {
           className: b.__invalid_subtitle
-        }) : i === O.uX.NOT_APPLICABLE ? (0, l.jsx)(d.Heading, {
+        }) : r === O.uX.NOT_APPLICABLE ? (0, l.jsx)(d.Heading, {
           className: b.__invalid_subtitle,
           variant: "heading-xxl/normal",
           color: "always-white",

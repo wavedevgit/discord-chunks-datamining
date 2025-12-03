@@ -2,7 +2,7 @@
 /** chunk id: 803305, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,14 +14,14 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk693536 = require("./693536.js");
 
-function u(e) {
+function d(e) {
   let {
     guild: t,
     numSounds: n,
-    isOutOfSlots: u
+    isOutOfSlots: d
   } = e, g = t.premiumTier, m = (0, a.FZ)(g), p = o._k[g] - 2;
   if (null == m || g === s.Eu4.TIER_3 || n < p) return null;
-  let f = u ? {
+  let f = d ? {
     color: i.Tt.GREEN,
     look: i.iL.FILLED,
     text: c.intl.string(c.t.cYzxGn)
@@ -43,6 +43,6 @@ function u(e) {
       object: s.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL,
       objectType: (0, a.ge)(m)
     },
-    className: d.container
+    className: u.container
   })
 }

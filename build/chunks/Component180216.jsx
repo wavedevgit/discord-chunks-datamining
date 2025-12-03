@@ -25,7 +25,7 @@ function b(e) {
   } = e, b = (0, d.C)({
     guildId: t,
     channelId: n
-  }), _ = (0, c.GG)(t), y = (0, c.YB)(t), O = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), j = null == O ? true : O.name, x = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), v = i.useMemo(() => {
+  }), _ = (0, c.GG)(t), y = (0, c.YB)(t), O = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), x = null == O ? true : O.name, j = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), v = i.useMemo(() => {
     let e = {};
     for (let t of _)
       for (let n of t.subscription_listings_ids) e[n] = t.id;
@@ -46,13 +46,13 @@ function b(e) {
       variant: "heading-xl/semibold",
       className: m.joinCtaTitle,
       children: g.intl.format(g.t.xHMpym, {
-        serverName: j,
-        channelName: null == x ? true : x.name
+        serverName: x,
+        channelName: null == j ? true : j.name
       })
     }), (0, r.jsx)(a.Text, {
       className: m.joinCtaSubtitle,
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: null == y ? true : y.description
     }), (0, r.jsx)(p.Z, {
       guildId: t,

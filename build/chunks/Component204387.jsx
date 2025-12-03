@@ -17,15 +17,15 @@ let p = e => {
   let t, {
       transitionState: r,
       onClose: p,
-      sourceAnalyticsLocations: h
+      sourceAnalyticsLocations: f
     } = e,
-    [f, u] = i.useState(1),
+    [h, u] = i.useState(1),
     [m, j] = i.useState(new Set),
     [_, g] = i.useState(new Map),
     {
       analyticsLocations: L
-    } = (0, l.ZP)([...h, n.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]);
-  switch (f) {
+    } = (0, l.ZP)([...f, n.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]);
+  switch (h) {
     case 1:
       t = (0, a.jsx)(d.ZP, {
         onShare: async e => {

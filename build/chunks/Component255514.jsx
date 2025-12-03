@@ -102,11 +102,11 @@ let ee = e => {
     history: et,
     onSelectChild: en,
     onModalClose: er,
-    onSubmit: ei,
-    multiSelect: el,
+    onSubmit: el,
+    multiSelect: ei,
     reportId: ea,
     textInput: es
-  } = e, eo = X(t, "checkbox"), ed = X(t, "text_line_resource"), ec = $(t, "external_link"), eu = $(t, "free_text"), em = $(t, "dropdown"), ep = X(t, "text"), eg = l.s.REPORT_TO_MOD.has(n.name), [e_, eh] = i.useState(false), [ex, eb] = i.useState(false), [ef, ev] = i.useState(""), [ej, ey] = i.useState(() => ({})), [eZ, eO] = i.useState(() => ({})), eI = i.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), eC = i.useCallback(e => ({
+  } = e, eo = X(t, "checkbox"), ed = X(t, "text_line_resource"), ec = $(t, "external_link"), eu = $(t, "free_text"), em = $(t, "dropdown"), ep = X(t, "text"), eg = i.s.REPORT_TO_MOD.has(n.name), [e_, ex] = l.useState(false), [eh, eb] = l.useState(false), [ef, ev] = l.useState(""), [ej, ey] = l.useState(() => ({})), [eZ, eO] = l.useState(() => ({})), eI = l.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), eC = l.useCallback(e => ({
     nodeRef: t.id,
     destination: e,
     textInput: null != eu || null != em ? eZ : true,
@@ -114,7 +114,7 @@ let ee = e => {
       name: eo.name,
       state: ej
     } : true
-  }), [t, eu, em, eo, ej, eZ]), eS = i.useMemo(() => (0, m.VP)(eu, em, eo, eZ, ej), [eu, em, eo, eZ, ej]), eN = function(e, t) {
+  }), [t, eu, em, eo, ej, eZ]), eS = l.useMemo(() => (0, m.VP)(eu, em, eo, eZ, ej), [eu, em, eo, eZ, ej]), eN = function(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
       r = Y({}, eZ);
     r[e] = {
@@ -124,13 +124,13 @@ let ee = e => {
   }, eT = e => {
     en(eC(e))
   };
-  i.useEffect(() => {
-    null != el && ey(el), null != es && eO(es)
-  }, [el, es]), i.useEffect(() => {
+  l.useEffect(() => {
+    null != ei && ey(ei), null != es && eO(es)
+  }, [ei, es]), l.useEffect(() => {
     if (null != eo) {
       let e = eo.data;
       if (null != e)
-        for (let [t, n, r, i] of e) i && ey(e => (function(e, t) {
+        for (let [t, n, r, l] of e) l && ey(e => (function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -145,9 +145,9 @@ let ee = e => {
           [t]: n
         }))
     }
-  }, [eo]), i.useEffect(() => {
-    t.is_auto_submit && !ex && (eb(true), ei(eC(["", t.id])))
-  }, [t.is_auto_submit, ex, ei, eC, t.id]);
+  }, [eo]), l.useEffect(() => {
+    t.is_auto_submit && !eh && (eb(true), el(eC(["", t.id])))
+  }, [t.is_auto_submit, eh, el, eC, t.id]);
   let eP = (0, u.fW)(ee),
     eE = null != X(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name),
     ek = (0, c.U)(),
@@ -185,7 +185,7 @@ let ee = e => {
         userId: n.user_id
       }) : null, null != X(t, "guild_preview") && "guild" === n.name ? (0, r.jsx)(C.Z, {
         guild: n.record
-      }) : null, null != X(t, "breadcrumbs") && (0, r.jsx)(h.Z, {
+      }) : null, null != X(t, "breadcrumbs") && (0, r.jsx)(x.Z, {
         isModeratorReport: eg,
         history: et
       }), function(e) {
@@ -261,7 +261,7 @@ let ee = e => {
         state: eZ
       }), (0, r.jsxs)("div", {
         className: K.listContainer,
-        children: [(0, r.jsx)(x.Z, {
+        children: [(0, r.jsx)(h.Z, {
           node: t,
           onSelectChild: eT,
           nodeMap: e.nodeMap
@@ -289,15 +289,15 @@ let ee = e => {
             eT(["", t.target]);
             break;
           case "submit":
-            eh(true);
+            ex(true);
             let n = ["", e.successNodeId];
-            ei(eC(n)).then(() => {
+            el(eC(n)).then(() => {
               ev(""), eT(n)
             }).catch(e => {
               var t;
               (null == (t = e.body) ? true : t.code) === V.evJ.INVALID_FORM_BODY ? ev(Q.intl.string(Q.t.VjAAuP)) : eg ? ev(Q.intl.string(J.default.psKFdJ)) : ev(Q.intl.string(Q.t.h6D8Vy))
             }).finally(() => {
-              eh(false)
+              ex(false)
             })
         }
       },

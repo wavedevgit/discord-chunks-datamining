@@ -10,11 +10,11 @@ var Chunk473749 = require("./473749.js"),
   Chunk86419 = require("./86419.js");
 
 function c(e) {
-  let [t, n] = r.useState(false), c = e.type, s = (0, i.e7)([a.default, l.Z], () => {
+  let [t, n] = r.useState(false), c = e.type, s = (0, i.e7)([l.default, a.Z], () => {
     var e;
-    let t = a.default.getId();
+    let t = l.default.getId();
     if (null == t) returnfalse;
-    let n = l.Z.getUserProfile(t);
+    let n = a.Z.getUserProfile(t);
     return (null != (e = null == n ? true : n.widgets) ? e : []).some(e => e.type === c)
   }), u = (0, o.kQ)(e);
   return {

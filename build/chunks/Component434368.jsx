@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk936765 = require("./936765.js");
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,19 +54,19 @@ function g(e) {
     guildId: t,
     onClose: n
   } = e, i = (0, a.e7)([d.Z], () => d.Z.getSearchStateByGuildId(t), [t], o()), g = (0, u.dW)(t), j = l.useCallback(() => {
-    i.requireUnusualDmActivity || g(u.aY.UNUSUAL_DM_ACTIVITY), (0, C.Dr)(t, h(f({}, i), {
+    i.requireUnusualDmActivity || g(u.aY.UNUSUAL_DM_ACTIVITY), (0, C.Dr)(t, h(p({}, i), {
       requireUnusualDmActivity: !i.requireUnusualDmActivity
     }))
   }, [t, i, g]), x = l.useCallback(() => {
-    i.requireCommunicationDisabled || g(u.aY.COMMUNICATION_DISABLED), (0, C.Dr)(t, h(f({}, i), {
+    i.requireCommunicationDisabled || g(u.aY.COMMUNICATION_DISABLED), (0, C.Dr)(t, h(p({}, i), {
       requireCommunicationDisabled: !i.requireCommunicationDisabled
     }))
   }, [t, i, g]), v = l.useCallback(() => {
-    i.requireUnusualAccountActivity || g(u.aY.UNUSUAL_ACCOUNT_ACTIVITY), (0, C.Dr)(t, h(f({}, i), {
+    i.requireUnusualAccountActivity || g(u.aY.UNUSUAL_ACCOUNT_ACTIVITY), (0, C.Dr)(t, h(p({}, i), {
       requireUnusualAccountActivity: !i.requireUnusualAccountActivity
     }))
   }, [t, i, g]), y = l.useCallback(() => {
-    i.requireUsernameQuarantined || g(u.aY.USERNAME_QUARANTINED), (0, C.Dr)(t, h(f({}, i), {
+    i.requireUsernameQuarantined || g(u.aY.USERNAME_QUARANTINED), (0, C.Dr)(t, h(p({}, i), {
       requireUsernameQuarantined: !i.requireUsernameQuarantined
     }))
   }, [t, i, g]);
@@ -79,13 +79,13 @@ function g(e) {
       children: [(0, r.jsx)(s.S89, {
         id: "toggle-require-unusual-dm-activity",
         label: (0, r.jsxs)("div", {
-          className: p.checkboxLabel,
+          className: f.checkboxLabel,
           children: [(0, r.jsx)(s.b6m, {
             size: "custom",
             color: "currentColor",
             width: 16,
             height: 16,
-            className: p.unusualDMLabelIcon
+            className: f.unusualDMLabelIcon
           }), b.intl.string(b.t.ZRnON3)]
         }),
         action: j,
@@ -93,13 +93,13 @@ function g(e) {
       }), (0, r.jsx)(s.S89, {
         id: "toggle-require-communication-disabled",
         label: (0, r.jsxs)("div", {
-          className: p.checkboxLabel,
+          className: f.checkboxLabel,
           children: [(0, r.jsx)(s.YlB, {
             size: "custom",
             color: "currentColor",
             width: 16,
             height: 16,
-            className: p.timeoutLabelIcon
+            className: f.timeoutLabelIcon
           }), b.intl.string(b.t.z3wbj8)]
         }),
         action: x,
@@ -108,11 +108,11 @@ function g(e) {
         children: [(0, r.jsx)(s.S89, {
           id: "toggle-require-unusual-account-activity",
           label: (0, r.jsxs)("div", {
-            className: p.checkboxLabel,
+            className: f.checkboxLabel,
             children: [(0, r.jsx)(c.Z, {
               width: 16,
               height: 16,
-              className: p.unusualAccountActivityLabelIcon
+              className: f.unusualAccountActivityLabelIcon
             }), b.intl.string(b.t.DIQsD9)]
           }),
           action: v,
@@ -120,13 +120,13 @@ function g(e) {
         }), (0, r.jsx)(s.S89, {
           id: "toggle-require-username-quarantined",
           label: (0, r.jsxs)("div", {
-            className: p.checkboxLabel,
+            className: f.checkboxLabel,
             children: [(0, r.jsx)(s.ics, {
               size: "custom",
               color: "currentColor",
               width: 16,
               height: 16,
-              className: p.quarantinedLabelIcon
+              className: f.quarantinedLabelIcon
             }), b.intl.string(b.t.Jloklk)]
           }),
           action: y,

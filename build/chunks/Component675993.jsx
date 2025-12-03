@@ -131,7 +131,7 @@ function L(e) {
         color: l.TVs.colors.INTERACTIVE_MUTED
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: A.intl.string(A.t["8z5B2U"])
       })]
     }) : null, i ? (0, r.jsxs)("div", {
@@ -141,7 +141,7 @@ function L(e) {
         color: l.TVs.colors.INTERACTIVE_MUTED
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: A.intl.string(A.t["5khEk8"])
       })]
     }) : null]

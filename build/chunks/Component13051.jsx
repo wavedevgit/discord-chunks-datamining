@@ -263,7 +263,7 @@ function D(e) {
                 variant: "text-sm/normal",
                 children: r
               }), (0, i.jsx)(g.Text, {
-                color: "header-secondary",
+                color: "text-default",
                 variant: "text-xs/normal",
                 children: l
               })]

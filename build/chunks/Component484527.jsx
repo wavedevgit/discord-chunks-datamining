@@ -27,10 +27,10 @@ function _(e) {
     trackClick: n,
     onInviteResolved: r,
     closeModal: _
-  } = e, [I, b] = i.useState(), y = (0, o.e7)([g.Z], () => {
+  } = e, [I, b] = i.useState(), O = (0, o.e7)([g.Z], () => {
     var e, t;
     return (null == I || null == (e = I.guild) ? true : e.id) != null && g.Z.isMember(null == I || null == (t = I.guild) ? true : t.id)
-  }), O = i.useMemo(() => {
+  }), y = i.useMemo(() => {
     var e;
     return null == (e = t.websites) ? true : e.find(e => {
       let {
@@ -48,8 +48,8 @@ function _(e) {
           true !== e.banned && (b(e.invite), null != e.invite && (null == r || r(e.invite)))
         }
       };
-      null != O && e(O.url)
-    }, [O, r, I]), null == I || null == I.guild || !I.guild.features.includes(x.GuildFeatures.VERIFIED)) return null;
+      null != y && e(y.url)
+    }, [y, r, I]), null == I || null == I.guild || !I.guild.features.includes(x.GuildFeatures.VERIFIED)) return null;
   let E = f.ZP.getGuildIconURL({
     id: I.guild.id,
     icon: I.guild.icon,
@@ -60,7 +60,7 @@ function _(e) {
     children: [(0, a.jsx)(c.Heading, {
       className: v.sectionHeader,
       variant: "text-xs/semibold",
-      color: "header-secondary",
+      color: "text-default",
       children: h.intl.string(h.t.kBDZSL)
     }), (0, a.jsxs)("div", {
       className: l()(v.row, v.gapMd),
@@ -83,7 +83,7 @@ function _(e) {
           })]
         }), null != I.approximate_member_count && (0, a.jsx)(c.Text, {
           variant: "text-xxs/normal",
-          color: "text-tertiary",
+          color: "text-muted",
           children: h.intl.format(h.t.zRl6XR, {
             count: I.approximate_member_count
           })
@@ -91,7 +91,7 @@ function _(e) {
       })]
     }), (0, a.jsx)(c.Button, {
       variant: "secondary",
-      text: y ? h.intl.string(h.t.cEnaWx) : h.intl.string(h.t.XpeFYr),
+      text: O ? h.intl.string(h.t.cEnaWx) : h.intl.string(h.t.XpeFYr),
       onClick: () => {
         _(), n(p.as.JoinOfficialServer), d.Z.dispatch({
           type: "INVITE_MODAL_OPEN",

@@ -170,7 +170,7 @@ function T() {
       children: Chunk388032.intl.string(Chunk718629.default["/z3YaZ"])
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
-      color: "text-secondary",
+      color: "text-subtle",
       className: Chunk602804.emptyBody,
       children: Chunk388032.intl.string(Chunk718629.default.agwSGA)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {

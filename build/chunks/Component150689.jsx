@@ -16,9 +16,9 @@ function c(e) {
     setEditRoleId: t,
     guild: n,
     everyoneRole: c,
-    otherRoles: d,
-    setSelectedSection: u
-  } = e, [g, m] = i.useState(""), [p, f] = i.useState(o.Cl), h = g.trim(), b = i.useMemo(() => d.filter(e => (0, l.uo)(e, h)), [d, h]), x = i.useCallback(() => (0, r.jsx)(s.Z, {
+    otherRoles: u,
+    setSelectedSection: d
+  } = e, [g, m] = i.useState(""), [p, f] = i.useState(o.Cl), h = g.trim(), b = i.useMemo(() => u.filter(e => (0, l.uo)(e, h)), [u, h]), x = i.useCallback(() => (0, r.jsx)(s.Z, {
     guild: n,
     everyoneRole: c,
     filteredRoles: b,
@@ -31,8 +31,8 @@ function c(e) {
     setEditRoleId: t,
     guild: n,
     everyoneRole: c,
-    otherRoles: d,
-    setSelectedSection: u,
+    otherRoles: u,
+    setSelectedSection: d,
     renderHeader: x,
     headerHeight: p,
     query: g

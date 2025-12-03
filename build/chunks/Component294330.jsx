@@ -173,7 +173,7 @@ function N(e) {
           }), (0, r.jsx)(c.Text, {
             className: I.description,
             variant: "text-sm/normal",
-            color: "header-secondary",
+            color: "text-default",
             children: t.description
           }), (0, r.jsxs)("div", {
             className: I.memberDetails,
@@ -184,7 +184,7 @@ function N(e) {
               }), (0, r.jsx)(c.Text, {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
-                color: "header-secondary",
+                color: "text-default",
                 children: y.intl.format(y.t["LC+S+m"], {
                   membersOnline: t.presenceCount
                 })
@@ -196,7 +196,7 @@ function N(e) {
               }), (0, r.jsx)(c.Text, {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
-                color: "header-secondary",
+                color: "text-default",
                 children: y.intl.format(y.t.zRl6XR, {
                   count: t.memberCount
                 })

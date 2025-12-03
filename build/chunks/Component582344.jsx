@@ -42,7 +42,7 @@ function h() {
             onClick: () => (0, Chunk883904.EG)()
           }), (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
-            color: "text-secondary",
+            color: "text-subtle",
             children: "Daily Cap Reached: ".concat(module ? "Yes" : "No")
           })]
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {

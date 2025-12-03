@@ -24,14 +24,14 @@ function m(e) {
     hasIntents: m
   } = (0, l.w)({
     flags: null == t ? true : t.flags
-  }), g = a.useCallback(() => {
+  }), g = i.useCallback(() => {
     null != t.privacy_policy_url && (0, o.q)({
       href: t.privacy_policy_url
     })
   }, [t.privacy_policy_url]);
   return (0, r.jsxs)("div", {
     className: u.sectionContainer,
-    children: [(0, r.jsx)(i.Heading, {
+    children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
       children: d.intl.string(d.t.QzDgMq)
@@ -39,32 +39,32 @@ function m(e) {
       className: u.contentContainer,
       children: [m && (0, r.jsxs)("ul", {
         className: u.intentsList,
-        children: [(0, r.jsx)(i.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
-          color: "header-secondary",
+          color: "text-default",
           children: d.intl.string(d.t.U6KH5S)
         }), n && (0, r.jsx)(h, {
-          icon: i.kBi,
+          icon: a.kBi,
           heading: d.intl.string(d.t.gJpBO2),
           body: d.intl.string(d.t["L+QVbh"])
         }), s && (0, r.jsx)(h, {
-          icon: i.z65,
+          icon: a.z65,
           heading: d.intl.string(d.t["jo0oj/"]),
           body: d.intl.string(d.t.Dm0jqx)
         }), c && (0, r.jsx)(h, {
-          icon: i.BFJ,
+          icon: a.BFJ,
           heading: d.intl.string(d.t.QZql7O),
           body: d.intl.string(d.t["ez/N/R"])
         })]
-      }), (0, r.jsx)(i.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: d.intl.format(d.t.b6nqk0, {
           helpCenterUrl: p
         })
-      }), null != t.privacy_policy_url && (0, r.jsx)(i.Text, {
+      }), null != t.privacy_policy_url && (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         className: u.privacyPolicy,
         children: d.intl.format(d.t.agYVY5, {
           onClick: g
@@ -78,7 +78,7 @@ function h(e) {
   let {
     icon: t,
     heading: n,
-    body: a
+    body: i
   } = e;
   return (0, r.jsxs)("li", {
     className: u.intentContainer,
@@ -87,14 +87,14 @@ function h(e) {
       size: "md"
     }), (0, r.jsxs)("div", {
       className: u.intentTextContainer,
-      children: [(0, r.jsx)(i.Heading, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-md/semibold",
-        color: "header-secondary",
+        color: "text-default",
         children: n
-      }), (0, r.jsx)(i.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        color: "header-secondary",
-        children: a
+        color: "text-default",
+        children: i
       })]
     })]
   })

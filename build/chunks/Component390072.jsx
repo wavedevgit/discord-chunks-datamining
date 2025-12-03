@@ -31,7 +31,7 @@ function d(e) {
       height: 20,
       className: u.channelIcon
     }), (0, r.jsx)(s.Text, {
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-sm/normal",
       className: u.locationText,
       children: (0, l.m)(m, true)

@@ -2,7 +2,7 @@
 /** chunk id: 983200, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  $x: () => l,
+  $x: () => a,
   GV: () => s,
   S$: () => h,
   Vn: () => o,
@@ -10,12 +10,12 @@ require.d(exports, {
 });
 var Chunk473749 = require("./473749.js"),
   Chunk31775 = require("./31775.js"),
-  a = require.n(Chunk31775);
-let l = 0,
+  l = require.n(Chunk31775);
+let a = 0,
   s = 4,
   o = 4,
   c = "absolute",
-  d = new(a())({
+  d = new(l())({
     max: 100
   });
 
@@ -30,8 +30,8 @@ function u(e) {
       numAttachments: t,
       containerWidth: n,
       containerHeight: r
-    } = e, i = "".concat(t, "-").concat(n, "-").concat(r), a = d.get(i);
-    if (null != a) return a;
+    } = e, i = "".concat(t, "-").concat(n, "-").concat(r), l = d.get(i);
+    if (null != l) return l;
     {
       let e = ((e, t, n, r) => {
         if (0 === n) return [];
@@ -133,6 +133,6 @@ function h(e) {
     imageContainerStyles: t,
     containerWidth: n,
     containerHeight: i
-  } = e, a = r.useRef(m(t)), l = r.useRef(n), s = r.useRef(i), o = n > l.current + 100, c = i > s.current + 100;
-  return (o || c) && (a.current = m(t)), a.current
+  } = e, l = r.useRef(m(t)), a = r.useRef(n), s = r.useRef(i), o = n > a.current + 100, c = i > s.current + 100;
+  return (o || c) && (l.current = m(t)), l.current
 }

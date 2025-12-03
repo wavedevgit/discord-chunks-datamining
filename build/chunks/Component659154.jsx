@@ -28,7 +28,7 @@ let l = e => {
         children: i.intl.string(i.t["3dgwPD"])
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: i.intl.string(i.t["/GAO1P"])
       })]
     }), (0, r.jsx)("div", {

@@ -12,16 +12,16 @@ var Chunk473749 = require("./473749.js"),
 let s = {
     guildTagsBadgePacks: [Chunk494497.MB, Chunk494497.Vk]
   },
-  c = Object.entries(s).reduce((e, t) => {
+  u = Object.entries(s).reduce((e, t) => {
     let [n, r] = t;
     for (let t of r) e[t] = n;
     return e
   }, {}),
-  u = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
+  c = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
 
 function d(e, t) {
   let n = (0, o.e7)([l.Z], () => l.Z.getStateForGuild(e));
-  return r.useMemo(() => u.reduce((e, r) => {
+  return r.useMemo(() => c.reduce((e, r) => {
     let o = null == n ? true : n.powerupCatalog[r];
     if (null == o) return e;
     let l = function(e, t, n) {
@@ -31,7 +31,7 @@ function d(e, t) {
       });
       let o = t.reduce((e, t) => {
         if (t.type !== a.Us.PERK) return e;
-        let n = c[t.skuId];
+        let n = u[t.skuId];
         return null == n || (null != e[n] || (e[n] = []), e[n].push(t)), e
       }, {});
       for (let e of t) {
@@ -42,7 +42,7 @@ function d(e, t) {
           });
           continue
         }
-        let t = c[e.skuId];
+        let t = u[e.skuId];
         if (null != t) {
           let e = o[t];
           true !== e && (r.push({

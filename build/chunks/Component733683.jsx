@@ -139,13 +139,13 @@ class N extends(r = Chunk473749.Component) {
       } = this.props,
       s = a[n],
       c = l >= e.numRequired,
-      d = null != s && e.key === s.key,
+      u = null != s && e.key === s.key,
       g = e.key === a[0].key,
       p = this.getTierDisabled(e);
-    r = g ? x.tierFirst : p ? x.tierInProgress : d ? x.tierCurrent : c ? x.tierAccomplished : x.tierInProgress;
+    r = g ? x.tierFirst : p ? x.tierInProgress : u ? x.tierCurrent : c ? x.tierAccomplished : x.tierInProgress;
     let f = e.y - (g ? 0 : O / 2),
       h = this.state.tierMarkerActive >= t,
-      b = !g && d && h,
+      b = !g && u && h,
       j = this.getTierMarkerTooltipText(e);
     return (0, i.jsx)(m.AMe, {
       from: {
@@ -157,7 +157,7 @@ class N extends(r = Chunk473749.Component) {
       config: y,
       children: t => {
         var n, l, a;
-        return (0, i.jsx)(u.i_, {
+        return (0, i.jsx)(d.i_, {
           body: null != (n = null == j ? true : j.body) ? n : "",
           title: null != (l = null == j ? true : j.title) ? l : true,
           shouldShow: null != j,
@@ -268,7 +268,7 @@ class N extends(r = Chunk473749.Component) {
         showForegroundTooltip: true
       }), this.handleForegroundMouseMove(e)
     }), j(this, "handleForegroundMouseMove", e => {
-      if (!(0, d.kK)(e.target)) return;
+      if (!(0, u.kK)(e.target)) return;
       let t = e.target.getBoundingClientRect(),
         n = e.clientY - t.top;
       n !== this.state.foregroundTooltipY && this.setState({

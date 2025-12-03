@@ -180,7 +180,7 @@ function T(e) {
         }) : null]
       })
     }), (0, r.jsx)(c.Text, {
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-xs/normal",
       className: S.subtextContainer,
       children: b

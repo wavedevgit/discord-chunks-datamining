@@ -176,8 +176,8 @@ function x(e) {
     guild: t,
     everyoneRole: n,
     setEditRoleId: l
-  } = e, [a, d] = i.useState(false), g = async () => {
-    d(true), await o.Z.createRole(t.id), d(false)
+  } = e, [a, u] = i.useState(false), g = async () => {
+    u(true), await o.Z.createRole(t.id), u(false)
   }, f = i.useCallback(() => {
     l(n.id)
   }, [l, n.id]);
@@ -193,7 +193,7 @@ function x(e) {
           variant: "heading-xl/semibold",
           children: m.intl.string(m.t.ALlnbi)
         }), (0, r.jsx)(s.Text, {
-          color: "header-secondary",
+          color: "text-default",
           variant: "text-md/normal",
           className: p.introBody,
           children: m.intl.string(m.t["1ydhVp"])
@@ -209,7 +209,7 @@ function x(e) {
         })]
       }), (0, r.jsx)(s.izJ, {
         className: p.divider
-      }), (0, r.jsx)(u.Z, {
+      }), (0, r.jsx)(d.Z, {
         role: n,
         onClick: f
       })]

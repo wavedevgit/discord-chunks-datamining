@@ -1,5 +1,5 @@
 /** Chunk was on 74673 **/
-/** chunk id: 394045, original params: t,n,e (module,exports,require) **/
+/** chunk id: 394045, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
   default: () => h
 });
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
 let h = function(t) {
   let {
     guildId: n,
-    submittedGuildJoinRequestsCount: e,
+    submittedGuildJoinRequestsCount: i,
     onClose: h,
     transitionState: p,
     onConfirm: C
@@ -29,13 +29,13 @@ let h = function(t) {
     onSubmit: C,
     onClose: h
   }), b = a.useCallback(() => {
-    h(), l.Z.close(), (0, o.uL)(u.Z5c.CHANNEL(n, x.oC.MEMBER_APPLICATIONS))
+    h(), r.Z.close(), (0, o.uL)(u.Z5c.CHANNEL(n, x.oC.MEMBER_APPLICATIONS))
   }, [n, h]);
-  return (0, i.jsxs)(c.Modal, {
+  return (0, e.jsxs)(c.Modal, {
     transitionState: p,
     onClose: h,
     title: d.intl.formatToPlainString(d.t.chV4Jb, {
-      count: e
+      count: i
     }),
     actions: [{
       text: d.intl.string(d.t["ETE/oC"]),
@@ -47,20 +47,20 @@ let h = function(t) {
       variant: "primary",
       loading: T
     }],
-    children: [(0, i.jsx)(r.Text, {
+    children: [(0, e.jsx)(l.Text, {
       className: f.descriptionText,
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-sm/normal",
       children: d.intl.string(d.t.uNQItz)
-    }), (0, i.jsx)(r.P3F, {
+    }), (0, e.jsx)(l.P3F, {
       className: f.actionText,
       onClick: b,
-      children: (0, i.jsx)(r.Text, {
+      children: (0, e.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-link",
         children: d.intl.string(d.t.szESVF)
       })
-    }), null != k && (0, i.jsx)(r.Text, {
+    }), null != k && (0, e.jsx)(l.Text, {
       variant: "text-xs/normal",
       color: "text-feedback-critical",
       children: k

@@ -31,34 +31,34 @@ function v(e) {
     analyticsLocation: Z,
     guildId: N,
     onClose: O
-  } = e, y = (0, o.e7)([h.Z], () => h.Z.getGuildProduct(v));
-  i()(null != y, "guildProductListing cannot be null"), (0, u.Z)({
-    type: s.ImpressionTypes.MODAL,
-    name: s.ImpressionNames.GUILD_PRODUCT_LISTING_INFO_MODAL,
+  } = e, C = (0, o.e7)([h.Z], () => h.Z.getGuildProduct(v));
+  i()(null != C, "guildProductListing cannot be null"), (0, u.Z)({
+    type: l.ImpressionTypes.MODAL,
+    name: l.ImpressionNames.GUILD_PRODUCT_LISTING_INFO_MODAL,
     properties: {
       guild_product_listing_id: v,
-      has_entitlement: true === y.has_entitlement,
+      has_entitlement: true === C.has_entitlement,
       location: Z
     }
   });
-  let C = null != (t = (0, p.C)(y)) ? t : "",
-    I = (0, p.k)(y),
+  let y = null != (t = (0, p.C)(C)) ? t : "",
+    I = (0, p.k)(C),
     L = (0, o.e7)([f.Z], () => f.Z.getGuild(N)),
     D = (0, _.Z)({
       guildId: N,
       guildProductListingId: v,
       sourceAnalyticsLocations: d.Z.GUILD_PRODUCT_INFO_MODAL
     });
-  return (0, r.jsxs)(l.Modal, {
-    title: y.name,
+  return (0, r.jsxs)(s.Modal, {
+    title: C.name,
     subtitle: g.intl.format(g.t.xImSei, {
-      productType: C,
+      productType: y,
       personName: null != (n = null == L ? true : L.name) ? n : ""
     }),
     size: "md",
     transitionState: a,
     onClose: O,
-    "aria-label": y.name,
+    "aria-label": C.name,
     actions: [D],
     actionBarInput: (0, r.jsx)(c.Text, {
       tag: "div",
@@ -68,13 +68,13 @@ function v(e) {
     }),
     children: [(0, r.jsx)(x.e, {
       height: 267,
-      listing: y,
+      listing: C,
       className: b.headerImage,
       alt: ""
     }), (0, r.jsxs)("div", {
       className: b.body,
       children: [(0, r.jsx)(j.Z, {
-        listing: y
+        listing: C
       }), (0, r.jsx)(c.LZC, {
         size: 16
       }), (0, r.jsx)("div", {
@@ -91,7 +91,7 @@ function v(e) {
         className: b.description,
         variant: "text-md/normal",
         color: "text-muted",
-        text: y.description
+        text: C.description
       })]
     })]
   })

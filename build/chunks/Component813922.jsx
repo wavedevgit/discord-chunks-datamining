@@ -69,7 +69,7 @@ function b(e) {
   }, [O, v]);
   return (0, r.jsxs)("div", {
     className: p.cardContentsContainer,
-    children: [(0, r.jsxs)(d.Z, {
+    children: [(0, r.jsxs)(u.Z, {
       step: 1,
       header: m.intl.string(m.t["ue+tnb"]),
       children: [(0, r.jsx)(o.Z, {
@@ -86,18 +86,18 @@ function b(e) {
         maxWordCount: g.n4,
         collapsed: (null == (j = v.triggerMetadata) ? true : j.allowList) == null || (null == (_ = v.triggerMetadata) ? true : _.allowList.length) === 0
       })]
-    }), (0, r.jsx)(u.Z, {
-      type: u.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(d.Z, {
+      type: d.Z.Type.ARROW_DOWN
+    }), (0, r.jsx)(u.Z, {
       step: 2,
       header: m.intl.string(m.t["18TOiQ"]),
       children: (0, r.jsx)(a.Z, {
         rule: v,
         onChangeRule: O
       })
-    }), (0, r.jsx)(u.Z, {
-      type: u.Z.Type.CROSS
     }), (0, r.jsx)(d.Z, {
+      type: d.Z.Type.CROSS
+    }), (0, r.jsx)(u.Z, {
       step: 3,
       header: m.intl.string(m.t.u5xPPW),
       children: (0, r.jsx)(c.Z, {

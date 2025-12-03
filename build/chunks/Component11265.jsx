@@ -75,22 +75,22 @@ let g = Chunk473749.memo(function(e) {
     }, 100);
     return () => clearTimeout(e)
   }, []), (0, r.jsx)(o.P3F, {
-    className: a()(u.editCard, {
-      [u.toggled]: m,
-      [u.noBackground]: b
+    className: a()(d.editCard, {
+      [d.toggled]: m,
+      [d.noBackground]: b
     }),
     children: (0, r.jsxs)(s.animated.div, {
-      className: a()(u.contentExpandContainer, {
-        [u.showOverflow]: m && _
+      className: a()(d.contentExpandContainer, {
+        [d.showOverflow]: m && _
       }),
       style: S,
       children: [(0, r.jsx)(o.P3F, {
         innerRef: O,
         onClick: p ? true : f,
-        className: a()(u.innerHeader, {
-          [u.toggled]: m && p
+        className: a()(d.innerHeader, {
+          [d.toggled]: m && p
         }),
-        "aria-label": d.intl.string(d.t.dcl9MQ),
+        "aria-label": u.intl.string(u.t.dcl9MQ),
         children: l
       }), (0, r.jsx)("div", {
         ref: y,

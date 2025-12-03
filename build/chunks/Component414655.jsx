@@ -56,8 +56,8 @@ function D(e) {
     isSocialLayerStorefrontEnabled: t,
     isWishlistPublic: n,
     handleOpenShop: i,
-    handleOpenGameShop: a,
-    handleToggleWishlistVisibility: l,
+    handleOpenGameShop: l,
+    handleToggleWishlistVisibility: a,
     socialLayerStorefrontApplicationId: o
   } = e;
   return (0, r.jsxs)("div", {
@@ -65,7 +65,7 @@ function D(e) {
     children: [t ? (0, r.jsx)(P.Z, {
       title: E.intl.string(E.t.SDUwM0),
       handleOpenCollectiblesShop: i,
-      handleOpenGameShop: a,
+      handleOpenGameShop: l,
       socialLayerStorefrontApplicationId: o
     }) : (0, r.jsx)(s.Button, {
       variant: "secondary",
@@ -76,7 +76,7 @@ function D(e) {
     }), (0, r.jsx)(I.Z, {
       isOwner: true,
       isWishlistPublic: n,
-      onToggleVisibility: l
+      onToggleVisibility: a
     })]
   })
 }
@@ -89,7 +89,7 @@ function k(e) {
     wishlistId: P,
     currentUser: I,
     wishlistSettings: k
-  } = (0, l.cj)([O.Z, y.default], () => {
+  } = (0, a.cj)([O.Z, y.default], () => {
     let e = O.Z.getFirstWishlistId(n.id);
     return {
       wishlistId: e,
@@ -102,7 +102,7 @@ function k(e) {
     trackUserProfileWishlistAction: A
   } = (0, v.KZ)(), Z = (null == I ? true : I.id) === n.id, R = false === n.nsfwAllowed, G = S.t9, [L, M] = i.useState(true);
   i.useEffect(() => {
-    (null == k ? true : k.visibility) != null && M(k.visibility === a.f.PUBLIC)
+    (null == k ? true : k.visibility) != null && M(k.visibility === l.f.PUBLIC)
   }, [null == k ? true : k.visibility]);
   let {
     wishlist: B,
@@ -127,7 +127,7 @@ function k(e) {
     productLines: null != (t = null == B ? true : B.getProductLines()) ? t : null
   }), z = i.useCallback(() => {
     if (null == P) return;
-    let e = L ? a.f.PRIVATE : a.f.PUBLIC;
+    let e = L ? l.f.PRIVATE : l.f.PUBLIC;
     M(!L), b.Z.updateWishlistVisibility(P, e), A({
       wishlistId: P,
       action: L ? w.NW.WISHLIST_TOGGLE_PRIVATE : w.NW.WISHLIST_TOGGLE_PUBLIC,
@@ -159,7 +159,7 @@ function k(e) {
           children: E.intl.string(E.t.HGnLLT)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: E.intl.string(E.t["/X1ny6"])
         })]
       }), (0, r.jsxs)(s.ButtonGroup, {
@@ -190,7 +190,7 @@ function k(e) {
         className: T.teenDisclaimer,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
-          color: "text-secondary",
+          color: "text-subtle",
           children: E.intl.format(E.t.r6Y1Lg, {
             count: B.items.length
           })

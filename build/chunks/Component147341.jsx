@@ -24,7 +24,7 @@ function o() {
         children: Chunk388032.intl.string(Chunk66793.default["VAK+h9"])
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-lg/normal",
-        color: "text-tertiary",
+        color: "text-muted",
         className: Chunk46693.text,
         children: Chunk388032.intl.string(Chunk66793.default.dcpdhC)
       })]

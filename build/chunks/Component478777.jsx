@@ -43,7 +43,7 @@ function x(e) {
 function j(e) {
   let {
     saveOnClose: t
-  } = e, a = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([g.Z], () => g.Z.getEditedConnections()), _ = (0, l.e7)([g.Z], () => g.Z.isSubmitting()), v = i.useRef(a);
+  } = e, a = (0, l.e7)([u.Z], () => u.Z.getGuildId()), j = (0, l.e7)([g.Z], () => g.Z.getEditedConnections()), _ = (0, l.e7)([g.Z], () => g.Z.isSubmitting()), v = i.useRef(a);
   i.useEffect(() => {
     v.current = a
   }, [a]), i.useEffect(() => {
@@ -51,7 +51,7 @@ function j(e) {
       current: e
     } = v;
     return () => {
-      t && null != e && (0, u.ss)(e)
+      t && null != e && (0, d.ss)(e)
     }
   }, [t, a]);
   let O = i.useCallback(() => {
@@ -98,7 +98,7 @@ function j(e) {
           return i
         }(e, ["id"])
       });
-      (0, u.l_)(t)
+      (0, d.l_)(t)
     }, []),
     {
       handleDragStart: N,
@@ -119,7 +119,7 @@ function j(e) {
           children: h.intl.string(h.t.Cl8F8H)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          color: "text-primary",
+          color: "text-strong",
           children: h.intl.format(h.t.vqgyJR, {
             linkedRolesUrl: c.Z.getArticleURL(p.BhN.CONNECTION_DETAILS_ADMIN)
           })

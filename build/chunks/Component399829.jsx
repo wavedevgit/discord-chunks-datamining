@@ -96,7 +96,7 @@ class w extends Chunk473749.Component {
         children: Chunk388032.intl.string(Chunk388032.t["76OoX8"])
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: "header-secondary",
+        color: "text-default",
         className: Chunk744834.tierDefaultUnlockedDescription,
         children: Chunk388032.intl.string(Chunk388032.t.DaYNQQ)
       })]
@@ -183,7 +183,7 @@ class w extends Chunk473749.Component {
       })
     }), T(this, "renderSubscriber", (e, t, n) => {
       var i;
-      return null == e ? null : (0, r.jsx)(d.u, {
+      return null == e ? null : (0, r.jsx)(u.u, {
         __unsupportedReactNodeAsText: (0, r.jsx)(p.Z, {
           user: e.user,
           nick: e.nick

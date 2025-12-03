@@ -116,7 +116,7 @@ function _(e) {
         palette: e.palette
       }, e.skuId)
     }),
-    J = (0, r.jsx)(x.O3, {
+    J = (0, r.jsx)(y.O3, {
       children: (0, r.jsx)(s.mzw, {
         "data-migration-pending": true,
         className: j.modalFooter,
@@ -127,7 +127,7 @@ function _(e) {
               reward_sku_id: M.skuId
             }), C(e)
           },
-          onBackClick: () => C(y.h8.PLAN_SELECT),
+          onBackClick: () => C(x.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
           planOptions: [k.id],
@@ -149,12 +149,12 @@ function _(e) {
         children: null == L || null == (n = L.rewardSelection) ? true : n.heading()
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         className: j.headerSubtitle,
         children: null == L || null == (a = L.rewardSelection) ? true : a.primarySubtitle()
       }), (null == L || null == (O = L.rewardSelection) || null == (_ = O.secondarySubtitle) ? true : _.call(O)) != null && (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: null == L || null == (w = L.rewardSelection) ? true : w.secondarySubtitle()
       }), (0, r.jsx)(s.olH, {
         "data-migration-pending": true,

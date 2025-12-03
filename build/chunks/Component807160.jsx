@@ -237,7 +237,7 @@ function eS(e) {
     children: [d && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(m.Text, {
         variant: "text-xs/semibold",
-        color: "header-secondary",
+        color: "text-default",
         className: ei.guildProductBenefitLabel,
         children: er.intl.string(er.t.hxawoy)
       }), (0, i.jsx)(_.zxk, eo({}, u))]
@@ -246,7 +246,7 @@ function eS(e) {
         className: ei.divider
       }), (0, i.jsx)(m.Text, {
         variant: "text-xs/semibold",
-        color: "header-secondary",
+        color: "text-default",
         className: ei.guildProductBenefitLabel,
         children: er.intl.string(er.t.gWBNet)
       }), (0, i.jsx)(C.Z, {

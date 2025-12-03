@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
-  u = require.n(Chunk392711),
+  c = require.n(Chunk392711),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -110,8 +110,8 @@ function en(e) {
       channelType: s,
       iconComponent: a,
       error: o,
-      name: c,
-      guildId: u,
+      name: u,
+      guildId: c,
       onBack: p,
       canSubmit: m,
       onMembersChange: C,
@@ -120,43 +120,43 @@ function en(e) {
     [b, O] = r.useState(""),
     [E, I] = r.useState({}),
     v = r.useRef(null),
-    S = (0, h.e7)([R.Z], () => R.Z.getGuild(u)),
-    j = s === Y.d4z.GUILD_STAGE_VOICE,
+    S = (0, h.e7)([R.Z], () => R.Z.getGuild(c)),
+    x = s === Y.d4z.GUILD_STAGE_VOICE,
     {
-      roles: x,
+      roles: j,
       members: P,
       getRichTag: T
-    } = (0, N.Q)(S, null, j ? G.yP : (0, L.CG)(s), b, j),
-    A = y.Z.useSections({
-      roles: x,
+    } = (0, y.Q)(S, null, x ? G.yP : (0, L.CG)(s), b, x),
+    A = N.Z.useSections({
+      roles: j,
       members: P
     });
   return (r.useEffect(() => {
     C(E)
-  }, [E, C]), null == S) ? null : (t = 0 === Object.keys(f).length ? Q.intl.string(Q.t["5Wxrcd"]) : s === Y.d4z.GUILD_CATEGORY ? Q.intl.string(Q.t["ISN+NM"]) : Q.intl.string(Q.t["fUYU+j"]), (0, i.jsx)(y.Z.Provider, {
+  }, [E, C]), null == S) ? null : (t = 0 === Object.keys(f).length ? Q.intl.string(Q.t["5Wxrcd"]) : s === Y.d4z.GUILD_CATEGORY ? Q.intl.string(Q.t["ISN+NM"]) : Q.intl.string(Q.t["fUYU+j"]), (0, i.jsx)(N.Z.Provider, {
     listRef: v,
     query: b,
     setQuery: O,
     pendingAdditions: E,
     setPendingAdditions: I,
-    roles: x,
+    roles: j,
     members: P,
     getRichTag: T,
     children: (0, i.jsx)(d.Modal, {
       transitionState: n,
       onClose: l,
-      title: j ? Q.intl.string(Q.t["S/6zHM"]) : Q.intl.string(Q.t.dMJ3Y6),
+      title: x ? Q.intl.string(Q.t["S/6zHM"]) : Q.intl.string(Q.t.dMJ3Y6),
       subtitle: {
-        text: c,
+        text: u,
         leadingIcon: a
       },
       input: (0, i.jsxs)(i.Fragment, {
-        children: [j ? (0, i.jsx)(g.Text, {
-          color: "header-secondary",
+        children: [x ? (0, i.jsx)(g.Text, {
+          color: "text-default",
           className: K.description,
           variant: "text-sm/normal",
           children: Q.intl.string(Q.t.f7VbhF)
-        }) : true, (0, i.jsx)(y.Z.SearchBox, {
+        }) : true, (0, i.jsx)(N.Z.SearchBox, {
           placeholderText: Q.intl.string(Q.t.iezLLn)
         }), (0, i.jsx)(g.Text, {
           className: K.searchHelpText,
@@ -166,10 +166,10 @@ function en(e) {
       }),
       preview: o,
       listProps: {
-        sectionHeight: y.Z.SECTION_HEIGHT,
-        renderSection: y.Z.renderSection,
-        rowHeight: y.Z.ROW_HEIGHT,
-        renderRow: y.Z.renderRow,
+        sectionHeight: N.Z.SECTION_HEIGHT,
+        renderSection: N.Z.renderSection,
+        rowHeight: N.Z.ROW_HEIGHT,
+        renderRow: N.Z.renderRow,
         sections: A,
         innerAriaOrientation: "vertical",
         innerRole: "listbox"
@@ -202,7 +202,7 @@ function ei(e) {
     let {
       closePopout: r
     } = e;
-    return (0, i.jsx)(x.Z, {
+    return (0, i.jsx)(j.Z, {
       channel: null,
       guildId: n,
       pickerIntention: X.Hz.CHANNEL_NAME,
@@ -229,7 +229,7 @@ function ei(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.jsx)(j.Z, ee($({}, e), {
+      return (0, i.jsx)(x.Z, ee($({}, e), {
         ref: l,
         active: n,
         className: K.emojiButton,
@@ -392,7 +392,7 @@ class er extends Chunk473749.PureComponent {
       isPrivate: o
     } = this.state;
     if (null != module || Chunk512722 === Chunk981631.d4z.GUILD_CATEGORY) return;
-    let c = null != exports && exports.length > 0;
+    let u = null != exports && exports.length > 0;
     return (0, Chunk54381.jsx)(Chunk793030.Eep, {
       label: Chunk388032.intl.string(Chunk388032.t["7ZcXG2"]),
       options: function(e) {
@@ -558,8 +558,8 @@ class er extends Chunk473749.PureComponent {
         guildId: s,
         transitionState: a,
         cloneChannel: o,
-        categoryId: c,
-        onClose: u,
+        categoryId: u,
+        onClose: c,
         channelType: h
       } = this.props,
       p = null != o ? Chunk388032.intl.string(Chunk388032.t.dEaPc4) : Chunk473749 === Chunk981631.d4z.GUILD_CATEGORY ? Chunk388032.intl.string(Chunk388032.t["ISN+NM"]) : Chunk388032.intl.string(Chunk388032.t["fUYU+j"]);
@@ -575,14 +575,14 @@ class er extends Chunk473749.PureComponent {
       onSubmit: this.handleSubmit,
       children: (0, Chunk54381.jsx)(Chunk793030.Modal, {
         transitionState: Chunk512722,
-        onClose: u,
+        onClose: c,
         title: Chunk692547,
         subtitle: exports,
         preview: this.renderError(),
         actions: [{
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
-          onClick: u
+          onClick: c
         }, Chunk481060 ? {
           variant: "primary",
           text: Chunk388032.intl.string(Chunk388032.t.PDTjLN),
@@ -720,7 +720,7 @@ class er extends Chunk473749.PureComponent {
         user: s,
         memberRoleIds: a,
         isAdmin: o,
-        onClose: c,
+        onClose: u,
         owner: d
       } = this.props, {
         name: h,
@@ -731,7 +731,7 @@ class er extends Chunk473749.PureComponent {
         isPrivate: b
       } = this.state, E = this.getGuildId();
       if (null != E) {
-        if (null != r) t = u().values(r.permissionOverwrites), n = r.bitrate, i = r.userLimit;
+        if (null != r) t = c().values(r.permissionOverwrites), n = r.bitrate, i = r.userLimit;
         else if (g === Y.d4z.GUILD_ANNOUNCEMENT) t = (0, H.rt)(E);
         else {
           if (b) {
@@ -770,7 +770,7 @@ class er extends Chunk473749.PureComponent {
           let r = e.body;
           L.xL.has(g) && (0, _.XU)(r.guild_id, r.id), this.setState({
             submitting: false
-          }), c()
+          }), u()
         } catch (e) {
           null != e.body && "object" == typeof e.body ? this.setState({
             errors: e.body,
@@ -816,30 +816,30 @@ let el = Chunk473749.forwardRef(function(e, t) {
     let s = R.Z.getGuild(r),
       a = B.default.getCurrentUser();
     o()(null != a, "CreateChannel: user cannot be undefined");
-    let c = null != s && null != s.ownerId ? B.default.getUser(s.ownerId) : null,
-      u = M.Z.can(Y.Plq.ADMINISTRATOR, s),
+    let u = null != s && null != s.ownerId ? B.default.getUser(s.ownerId) : null,
+      c = M.Z.can(Y.Plq.ADMINISTRATOR, s),
       d = D.Z.getChannel(l);
     return {
       guild: s,
       canCreateStoreChannel: null != s && s.features.has(Y.GuildFeatures.COMMERCE),
       canCreateAnnouncementChannel: null != s && s.features.has(Y.GuildFeatures.NEWS),
       user: a,
-      owner: c,
+      owner: u,
       memberRoles: null != (t = null == (e = Z.ZP.getMember(r, a.id)) ? true : e.roles) ? t : [],
       canViewChannels: M.Z.can(Y.Plq.VIEW_CHANNEL, s),
       canConnect: M.Z.can(Y.Plq.CONNECT, s),
-      isAdmin: u,
+      isAdmin: c,
       cloneChannel: d,
       channelType: null != (i = null == d ? true : d.type) ? i : n,
       canManageRoles: M.Z.can(Y.Plq.MANAGE_ROLES, s),
       canManageChannels: M.Z.can(Y.Plq.MANAGE_CHANNELS, s)
     }
-  }), a = (0, h.Wu)([I.Z], () => I.Z.getGuildApplicationIds(r).map(e => I.Z.getApplication(e)).filter(k.lm)), c = new Set(s.memberRoles), {
-    canManageRoles: u,
+  }), a = (0, h.Wu)([I.Z], () => I.Z.getGuildApplicationIds(r).map(e => I.Z.getApplication(e)).filter(k.lm)), u = new Set(s.memberRoles), {
+    canManageRoles: c,
     canManageChannels: d
-  } = s, p = (0, U.m)(r) && u && d, g = (0, A.Ui)(null == s ? true : s.guild);
+  } = s, p = (0, U.m)(r) && c && d, g = (0, A.Ui)(null == s ? true : s.guild);
   return (0, i.jsx)(er, ee($({}, e, s), {
-    memberRoleIds: c,
+    memberRoleIds: u,
     applications: a,
     canCreateStageChannel: p,
     canCreateMediaChannel: g,

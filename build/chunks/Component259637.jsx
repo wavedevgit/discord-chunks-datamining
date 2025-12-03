@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk658722 = require("./658722.js"),
-  a = require.n(Chunk658722),
+  l = require.n(Chunk658722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -21,9 +21,9 @@ let h = e => {
   } = e, {
     id: n,
     name: i,
-    emojiId: a,
+    emojiId: l,
     emojiName: d
-  } = t, u = (0, l.e7)([c.ZP], () => null != a ? c.ZP.getUsableCustomEmojiById(a) : null), h = null != a || null != d;
+  } = t, u = (0, a.e7)([c.ZP], () => null != l ? c.ZP.getUsableCustomEmojiById(l) : null), h = null != l || null != d;
   return (0, r.jsx)(s.lo1, {
     value: n,
     children: (0, r.jsx)(s.lo1.Label, {
@@ -31,7 +31,7 @@ let h = e => {
         className: m.row,
         children: [h ? (0, r.jsx)(o.Z, {
           className: m.__invalid_emoji,
-          emojiId: a,
+          emojiId: l,
           emojiName: d,
           animated: !!(null == u ? true : u.animated)
         }) : (0, r.jsx)(s.lO_, {
@@ -40,7 +40,7 @@ let h = e => {
           className: m.__invalid_emoji
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
-          color: "header-secondary",
+          color: "text-default",
           children: i
         })]
       })
@@ -53,17 +53,17 @@ function g(e) {
     parentChannel: t,
     appliedTags: n,
     maxTagsApplied: i,
-    onSelectTag: l,
+    onSelectTag: a,
     onClose: o
   } = e, c = (0, d.Vm)(t);
   return (0, r.jsx)(s.DBG, {
     value: n,
     onChange: e => {
-      (!i || n.has(e)) && (l(e), o())
+      (!i || n.has(e)) && (a(e), o())
     },
     placeholder: u.intl.string(u.t.MbhGm7),
     "aria-label": u.intl.string(u.t.MbhGm7),
-    children: e => c.filter(t => a()(e.toLowerCase(), t.name.toLowerCase())).map(e => (0, r.jsx)(h, {
+    children: e => c.filter(t => l()(e.toLowerCase(), t.name.toLowerCase())).map(e => (0, r.jsx)(h, {
       tag: e
     }, e.id))
   })

@@ -39,7 +39,7 @@ function f(e) {
       gap: 8,
       children: [null != S && (0, r.jsx)(a.Heading, {
         variant: "heading-md/semibold",
-        color: "header-secondary",
+        color: "text-default",
         className: u.listTitle,
         children: S
       }), y.map((e, t) => (0, r.jsxs)(i.Fragment, {

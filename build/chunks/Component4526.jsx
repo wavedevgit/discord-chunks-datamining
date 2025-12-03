@@ -23,14 +23,14 @@ let b = e => {
     h(true)
   }, []), y = o.useCallback(() => {
     b()
-  }, [b]), g = t.nsfwAllowed, {
-    declineLinkRequest: x,
+  }, [b]), x = t.nsfwAllowed, {
+    declineLinkRequest: g,
     isDeclineLoading: O
   } = (0, s.G)({
     onError: j,
     onSuccess: y
   });
-  return c()(!g, "FamilyCenterDeclineLinkModal should only be rendered for teens."), (0, n.jsxs)(l.IX, {
+  return c()(!x, "FamilyCenterDeclineLinkModal should only be rendered for teens."), (0, n.jsxs)(l.IX, {
     transitionState: i,
     onClose: b,
     children: [p && (0, n.jsx)(l.M14, {
@@ -62,7 +62,7 @@ let b = e => {
         variant: "critical-primary",
         text: u.intl.string(d.default.dKxFcn),
         onClick: () => {
-          h(false), x(r.id)
+          h(false), g(r.id)
         },
         disabled: O,
         loading: O

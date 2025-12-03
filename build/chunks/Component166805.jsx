@@ -30,7 +30,7 @@ function v(e) {
     guildProfile: c,
     fetchGuildProfile: m,
     fetchStatus: v
-  } = (0, g.u)(t), O = v !== u.a.FETCHED, {
+  } = (0, g.u)(t), O = v !== d.a.FETCHED, {
     fetchedEmbed: C,
     embedEnabled: y,
     embedChannelId: N
@@ -62,7 +62,7 @@ function v(e) {
       disabled: S
     }), w ? (0, r.jsx)(a.xvT, {
       variant: "text-sm/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       className: _.subtext,
       children: j.intl.string(j.t["zCGuJ+"])
     }) : null, y ? (0, r.jsxs)(r.Fragment, {
@@ -79,7 +79,7 @@ function v(e) {
           className: _.column,
           children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.TRyLUh),
-            children: (0, r.jsx)(d.Z, {
+            children: (0, r.jsx)(u.Z, {
               value: t
             })
           })
@@ -87,7 +87,7 @@ function v(e) {
           className: _.column,
           children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.VECJcK),
-            children: (0, r.jsx)(d.Z, {
+            children: (0, r.jsx)(u.Z, {
               value: E
             })
           })
@@ -101,7 +101,7 @@ function v(e) {
           children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.XVGbn1),
             description: j.intl.string(j.t["+baN11"]),
-            children: (0, r.jsx)(d.Z, {
+            children: (0, r.jsx)(u.Z, {
               value: I
             })
           })

@@ -9,7 +9,7 @@ var r, i, Chunk54381 = require("./54381.js"),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk913527 = require("./913527.js"),
-  d = require.n(Chunk913527),
+  u = require.n(Chunk913527),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk264451 = require("./264451.js"),
@@ -48,7 +48,7 @@ let y = e => {
   return (0, l.jsx)(g.Text, {
     variant: "text-md/medium",
     color: "interactive-active",
-    children: d()(t).utc().format("MMMM YYYY")
+    children: u()(t).utc().format("MMMM YYYY")
   })
 };
 
@@ -60,7 +60,7 @@ function N(e) {
     payoutStatus: r,
     ppgDeferralReasons: i,
     periodEndDate: a
-  } = (0, b.j0)(t), s = null != a ? d()(a).add(15, "days").toISOString() : true, o = (0, m.Zo)(s, "MMM D");
+  } = (0, b.j0)(t), s = null != a ? u()(a).add(15, "days").toISOString() : true, o = (0, m.Zo)(s, "MMM D");
   switch (n) {
     case _.x_.OPEN:
       return (0, l.jsxs)(l.Fragment, {

@@ -31,7 +31,7 @@ function p(e) {
     } = i,
     g = m && !o,
     E = o ? "header-primary" : "text-muted",
-    b = o ? "header-secondary" : "text-muted",
+    b = o ? "text-default" : "text-muted",
     y = s()(n),
     O = null != h && o,
     v = () => {

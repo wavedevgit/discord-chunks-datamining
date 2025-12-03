@@ -1,7 +1,7 @@
 /** Chunk was on 78712 **/
 /** chunk id: 223164, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,27 +16,27 @@ var Chunk54381 = require("./54381.js"),
   Chunk314311 = require("./314311.js"),
   Chunk430864 = require("./430864.js");
 
-function x(t) {
+function f(t) {
   let {
     channel: n,
     isFromComposer: e,
     transitionState: a,
-    onClose: x
+    onClose: f
   } = t;
   return s.useEffect(() => () => {
     e && d.S.dispatch(u.CkL.FOCUS_COMPOSER_TITLE)
   }, [e]), (0, i.jsx)(c.Modal, {
     transitionState: a,
-    onClose: x,
+    onClose: f,
     title: p.intl.string(p.t["4d4T4l"]),
     actions: [{
       text: p.intl.string(p.t["NX+WJN"]),
-      onClick: x
+      onClick: f
     }],
     children: (0, i.jsx)(l.Text, {
-      className: o()(h.content, k.markup),
+      className: o()(h.content, x.markup),
       variant: "text-sm/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: (0, i.jsx)("div", {
         children: r.Z.parseForumPostGuidelines(n.topic, true, {
           channelId: n.id,

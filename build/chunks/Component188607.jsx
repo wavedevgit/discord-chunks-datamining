@@ -16,7 +16,7 @@ let p = function(e) {
   let {
     selectedCategoryId: t,
     searchAllCategories: n
-  } = e, p = (0, i.e7)([s.Z], () => s.Z.getCategories()), m = a.useMemo(() => {
+  } = e, p = (0, a.e7)([s.Z], () => s.Z.getCategories()), m = i.useMemo(() => {
     var e;
     return null == (e = p.find(e => e.id === t)) ? true : e.name
   }, [p, t]), h = t === o.MU || null == m ? c.intl.string(c.t["FVJt+8"]) : c.intl.formatToPlainString(c.t.FjCaNB, {
@@ -36,7 +36,7 @@ let p = function(e) {
       children: h
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: g
     })]
   })

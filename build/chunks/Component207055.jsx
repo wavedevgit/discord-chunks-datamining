@@ -44,28 +44,28 @@ let U = Chunk473749.memo(e => {
   let {
     mute: a,
     deaf: s,
-    user: y,
-    channel: C,
+    user: C,
+    channel: y,
     sessionId: E,
     nick: Z
-  } = e, T = y.id, D = (0, o.e7)([S.default], () => S.default.getId() === T, [T]), [U, V, F] = (0, o.Wu)([I.Z], () => D ? [!I.Z.isSupported() || I.Z.isSelfMute() || I.Z.isSelfMutedTemporarily(), I.Z.isSelfDeaf(), false] : [!I.Z.isSupported() || I.Z.isLocalMute(T), false, I.Z.isLocalVideoDisabled(T)], [D, T]), H = (0, o.e7)([A.Z], () => A.Z.isPrioritySpeaker(T)), B = (0, c.Z)({
+  } = e, T = C.id, D = (0, o.e7)([S.default], () => S.default.getId() === T, [T]), [U, V, F] = (0, o.Wu)([I.Z], () => D ? [!I.Z.isSupported() || I.Z.isSelfMute() || I.Z.isSelfMutedTemporarily(), I.Z.isSelfDeaf(), false] : [!I.Z.isSupported() || I.Z.isLocalMute(T), false, I.Z.isLocalVideoDisabled(T)], [D, T]), H = (0, o.e7)([A.Z], () => A.Z.isPrioritySpeaker(T)), B = (0, c.Z)({
     userId: T,
     checkSoundSharing: true
-  }), G = (0, o.e7)([A.Z], () => A.Z.isCurrentUserPTTLatched()), z = D && G, W = (0, o.e7)([P.ZP], () => P.ZP.isGuestOrLurker(C.guild_id, T)), q = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(C.id).has(T)), K = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(C.id).find(e => {
+  }), G = (0, o.e7)([A.Z], () => A.Z.isCurrentUserPTTLatched()), z = D && G, W = (0, o.e7)([P.ZP], () => P.ZP.isGuestOrLurker(y.guild_id, T)), q = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(y.id).has(T)), K = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(y.id).find(e => {
     let {
       userIds: t
     } = e;
     return t.has(T)
-  }), [T, C.id]), Y = (0, p.Z)(null != K ? [K.applicationId] : []), X = (0, O.Z)(T, C.guild_id)[0], J = null != (n = (0, d.IX)(null == X ? true : X.application_id).data) ? n : true, [Q, $] = (0, o.Wu)([j.Z], () => [j.Z.getStreamForUser(T, C.getGuildId()), j.Z.getActiveStreamForUser(T, C.getGuildId())], [C, T]), ee = (0, o.e7)([N.Z], () => N.Z.getSessionById(E)), et = M.ZP.useName(y), en = (0, o.e7)([w.Z], () => w.Z.getVoicePlatformForChannel(C.id, T), [C.id, T]), {
+  }), [T, y.id]), Y = (0, p.Z)(null != K ? [K.applicationId] : []), X = (0, O.Z)(T, y.guild_id)[0], J = null != (n = (0, d.IX)(null == X ? true : X.application_id).data) ? n : true, [Q, $] = (0, o.Wu)([j.Z], () => [j.Z.getStreamForUser(T, y.getGuildId()), j.Z.getActiveStreamForUser(T, y.getGuildId())], [y, T]), ee = (0, o.e7)([N.Z], () => N.Z.getSessionById(E)), et = M.ZP.useName(C), en = (0, o.e7)([w.Z], () => w.Z.getVoicePlatformForChannel(y.id, T), [y.id, T]), {
     enableHangStatus: ei
   } = (0, m.bN)({
-    guildId: C.guild_id,
+    guildId: y.guild_id,
     location: "VoiceUsers"
-  }), er = (0, f.ZP)(C, true, y), el = (0, o.e7)([g.Z], () => D ? g.Z.getHangStatusActivity() : null, [D]), ea = (0, b.j)(T), eo = (0, x.Eu)(C.id, T), {
+  }), er = (0, f.ZP)(y, true, C), el = (0, o.e7)([g.Z], () => D ? g.Z.getHangStatusActivity() : null, [D]), ea = (0, b.j)(T), eo = (0, x.Eu)(y.id, T), {
     enableVCStatusIcons: es,
     enableRequestToStream: ec
   } = _.A.useExperiment({
-    guildId: C.guild_id,
+    guildId: y.guild_id,
     location: "VoiceUsers"
   }, {
     autoTrackExposure: (null == X ? true : X.session_id) != null
@@ -105,7 +105,7 @@ let U = Chunk473749.memo(e => {
       ringing: q,
       priority: H,
       embeddedApplication: Y[0],
-      isStreaming: null != Q && Q.channelId === C.id,
+      isStreaming: null != Q && Q.channelId === y.id,
       isWatching: null != $ && $.state !== L.jm8.ENDED,
       isGuest: W,
       isSelf: D,
@@ -145,7 +145,7 @@ let V = [],
     } = e, [j, P] = r.useState(null), [I, N] = r.useState(false), A = r.useRef(null), w = (0, x.Es)(l.id, null != c ? c : V), {
       shouldShow: M,
       dismiss: k
-    } = (0, C.UM)(l), F = r.useRef(new s.sW(50, () => {
+    } = (0, y.UM)(l), F = r.useRef(new s.sW(50, () => {
       P(A.current), A.current = null
     })), H = r.useRef(new s.sW(175, () => {
       P(null)
@@ -198,7 +198,7 @@ let V = [],
             location: m
           }, "voice-user-".concat(a.id, "-").concat(c))
         });
-      return M && r.unshift((0, i.jsx)(y.S, {
+      return M && r.unshift((0, i.jsx)(C.S, {
         channel: l,
         onClose: k
       }, "voice-invite-suggestions-button")), null != g && g > 0 ? r.push((0, i.jsx)(R.ul, {

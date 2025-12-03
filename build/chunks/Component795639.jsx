@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk55160 = require("./55160.js"),
@@ -39,7 +39,7 @@ function P(e) {
     mediaAttachments: t,
     containerWidth: n,
     containerHeight: i
-  } = e, a = (0, C.tu)({
+  } = e, l = (0, C.tu)({
     numAttachments: t.length,
     containerWidth: n,
     containerHeight: i
@@ -48,7 +48,7 @@ function P(e) {
     children: t.map((e, t) => {
       var n;
       return (0, r.jsx)("div", {
-        style: a[t],
+        style: l[t],
         children: true === e.isVideo ? (0, r.jsx)(j.Z, {
           src: e.src,
           className: S.thumbnail,
@@ -66,7 +66,7 @@ function P(e) {
 let I = e => {
   var t;
   let {
-    parentChannel: a
+    parentChannel: l
   } = e, {
     textAreaState: s
   } = (0, _.xH)(e => {
@@ -76,19 +76,19 @@ let I = e => {
     return {
       textAreaState: t
     }
-  }, c.X), b = (0, d.e7)([g.Z], () => g.Z.keyboardModeEnabled), j = (0, T.Z)(a, null == (t = s.textValue) ? true : t.trim()), C = i.useMemo(() => j.find(e => e.isThumbnail), [j]), I = null != j && j.length > 0, E = i.useMemo(() => {
+  }, c.X), b = (0, d.e7)([g.Z], () => g.Z.keyboardModeEnabled), j = (0, T.Z)(l, null == (t = s.textValue) ? true : t.trim()), C = i.useMemo(() => j.find(e => e.isThumbnail), [j]), I = null != j && j.length > 0, E = i.useMemo(() => {
     let e = (null == j ? true : j.length) > 1 ? 1.15 : 1;
     return {
       width: 153 * e,
       height: 86 * e
     }
   }, [j]), R = i.useCallback(e => {
-    null != C && h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type), (0, y.d)(e.currentTarget.files, a, f.Ie.CREATE_FORUM_POST.drafts.type, {
+    null != C && h.Z.remove(l.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type), (0, y.d)(e.currentTarget.files, l, f.Ie.CREATE_FORUM_POST.drafts.type, {
       requireConfirm: true,
       isThumbnail: true,
       origin: "file_picker"
     }), e.currentTarget.value = null
-  }, [a, C]), M = e => {
+  }, [l, C]), M = e => {
     e.stopPropagation(), (null == C ? true : C.upload) != null && (0, m.ZDy)(async () => {
       let e = C.upload;
       o()(null != e, "upload should not be null");
@@ -96,7 +96,7 @@ let I = e => {
         default: t
       } = await Promise.resolve().then(n.bind(n, 403592));
       return n => {
-        var i, l;
+        var i, a;
         return (0, r.jsx)(t, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -114,9 +114,9 @@ let I = e => {
             })
           }
           return e
-        }({}, n), l = l = {
+        }({}, n), a = a = {
           upload: e,
-          channelId: a.id,
+          channelId: l.id,
           draftType: f.Ie.CREATE_FORUM_POST.drafts.type,
           onSubmit: t => {
             let {
@@ -124,22 +124,22 @@ let I = e => {
               description: r,
               spoiler: i
             } = t;
-            h.Z.update(a.id, e.id, f.Ie.CREATE_FORUM_POST.drafts.type, {
+            h.Z.update(l.id, e.id, f.Ie.CREATE_FORUM_POST.drafts.type, {
               filename: n,
               description: r,
               spoiler: i
             })
           },
           disableSpoiler: true
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
         }), i))
       }
     })
@@ -159,12 +159,12 @@ let I = e => {
         containerWidth: E.width,
         containerHeight: E.height
       }), (0, r.jsxs)("div", {
-        className: l()(S.changeThumbnailLabelContainer, {
+        className: a()(S.changeThumbnailLabelContainer, {
           [S.changeThumbnailLabelOverflow]: (null == j ? true : j.length) > 2
         }),
         children: [(0, r.jsx)(m.Text, {
           variant: "text-xs/medium",
-          color: "header-secondary",
+          color: "text-default",
           children: w.intl.string(w.t.MxJI3f)
         }), null == C && (0, r.jsx)(m.vdY, {
           size: "xs",
@@ -202,7 +202,7 @@ let I = e => {
         }), (0, r.jsx)(x.Z, {
           className: S.action,
           tooltip: w.intl.string(w.t.vN7REz),
-          onClick: () => h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type),
+          onClick: () => h.Z.remove(l.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type),
           dangerous: true,
           children: (0, r.jsx)(m.XHJ, {
             size: "md",
@@ -212,7 +212,7 @@ let I = e => {
       }),
       draftType: f.Ie.CREATE_FORUM_POST.drafts.type,
       id: C.id,
-      channelId: a.id,
+      channelId: l.id,
       handleEditModal: M,
       keyboardModeEnabled: b,
       size: p.q.SMALL,

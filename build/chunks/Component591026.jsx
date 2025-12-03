@@ -57,7 +57,7 @@ function b(e) {
   } = e, [j, _] = i.useState(null == (t = b.triggerMetadata) ? true : t.mentionTotalLimit), v = (0, s.a)(b.guildId, false);
   return (0, r.jsxs)("div", {
     className: p.cardContentsContainer,
-    children: [(0, r.jsxs)(d.Z, {
+    children: [(0, r.jsxs)(u.Z, {
       step: 1,
       header: m.intl.string(m.t.IGfuTa),
       children: [(0, r.jsxs)("div", {
@@ -129,18 +129,18 @@ function b(e) {
           })
         })]
       }) : null]
-    }), (0, r.jsx)(u.Z, {
-      type: u.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(d.Z, {
+      type: d.Z.Type.ARROW_DOWN
+    }), (0, r.jsx)(u.Z, {
       step: 2,
       header: m.intl.string(m.t["18TOiQ"]),
       children: (0, r.jsx)(o.Z, {
         rule: b,
         onChangeRule: x
       })
-    }), (0, r.jsx)(u.Z, {
-      type: u.Z.Type.CROSS
     }), (0, r.jsx)(d.Z, {
+      type: d.Z.Type.CROSS
+    }), (0, r.jsx)(u.Z, {
       step: 3,
       header: m.intl.string(m.t.eq3gjh),
       children: (0, r.jsx)(c.Z, {

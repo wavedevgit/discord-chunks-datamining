@@ -16,7 +16,7 @@ function c(e) {
     channel: t,
     header: n,
     startThread: c
-  } = e, d = (0, s.NE)(t), u = (0, s.Xu)(t);
+  } = e, u = (0, s.NE)(t), d = (0, s.Xu)(t);
   return (0, r.jsxs)("div", {
     className: i.container,
     children: [(0, r.jsxs)("div", {
@@ -37,10 +37,10 @@ function c(e) {
       variant: "heading-xl/semibold",
       children: n
     }), (0, r.jsx)(l.Text, {
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-md/normal",
       children: o.intl.string(o.t.jmq9GC)
-    }), d || u ? (0, r.jsx)("div", {
+    }), u || d ? (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: i.cta,
       children: (0, r.jsx)(l.Button, {

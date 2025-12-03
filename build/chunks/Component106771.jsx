@@ -95,14 +95,14 @@ function g(e) {
           children: null != (t = null == n ? true : n.displayName) ? t : v
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           lineClamp: 1,
           children: I
         })]
       }), null != n ? (0, r.jsx)(a.Text, {
         className: p.cmdAppName,
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         children: v
       }) : null, (0, r.jsx)("div", {
         className: p.underline

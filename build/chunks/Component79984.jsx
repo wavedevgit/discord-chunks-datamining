@@ -50,7 +50,7 @@ function d() {
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           className: Chunk75243.hidden,
           variant: "text-sm/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           lineClamp: 1,
           children: "_"
         })

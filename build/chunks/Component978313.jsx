@@ -23,22 +23,22 @@ function h(e) {
     detectedGame: t,
     trackAction: n
   } = e, [r, h] = i.useState((null == t ? true : t.summaryLocalized) != null), [v, j] = i.useState(true), [_, I] = i.useState(false), b = i.useRef(null), {
-    width: y,
-    height: O
+    width: O,
+    height: y
   } = (0, u.Z)();
   return (i.useEffect(() => {
     let e = b.current;
     null != e && I(e.scrollHeight - e.clientHeight > 1 || !v)
-  }, [b, y, O, v]), null == t.summary) ? null : (0, a.jsxs)("div", {
+  }, [b, O, y, v]), null == t.summary) ? null : (0, a.jsxs)("div", {
     className: l()(p.column, p.gapMd),
     children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
       className: l()(p.row, p.gapSm),
       children: [(0, a.jsx)(s.SxY, {
-        color: c.Z.colors.HEADER_SECONDARY,
+        color: c.Z.colors.TEXT_DEFAULT,
         size: "xs"
       }), (0, a.jsx)(o.xvT, {
         variant: "text-xs/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: r ? f.intl.format(f.t.aZ2iIp, {
           onShowOriginal: () => h(false)
         }) : f.intl.format(f.t["/2ylF4"], {

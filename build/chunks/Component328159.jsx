@@ -19,7 +19,7 @@ let p = e => {
     var t;
     let {
       reason: n = "",
-      emoji_name: d,
+      emoji_name: u,
       onSetReason: m,
       onSelectEmoji: p,
       onClearPressed: f,
@@ -27,7 +27,7 @@ let p = e => {
       reasonMaxLength: b,
       placeholder: x,
       position: j
-    } = e, _ = i.useRef(null), [v, O] = i.useState(false), C = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), y = (0, r.jsx)(a.yRy, {
+    } = e, _ = i.useRef(null), [v, O] = i.useState(false), C = (0, l.e7)([d.Z], () => d.Z.isGuildMetadataLoaded()), y = (0, r.jsx)(a.yRy, {
       targetElementRef: _,
       onRequestClose: () => {
         O(false)
@@ -58,8 +58,8 @@ let p = e => {
           O(true)
         },
         tabIndex: 0,
-        renderButtonContents: null != d ? () => (0, r.jsx)(s.Z, {
-          emojiName: d,
+        renderButtonContents: null != u ? () => (0, r.jsx)(s.Z, {
+          emojiName: u,
           animated: false
         }) : null,
         ref: _
@@ -79,7 +79,7 @@ let p = e => {
         m(e)
       },
       clearable: {
-        show: (null != (t = null == n ? true : n.length) ? t : 0) > 0 || null != d
+        show: (null != (t = null == n ? true : n.length) ? t : 0) > 0 || null != u
       },
       onClear: f
     }, "text-input-".concat(j, "-").concat(C))
@@ -128,14 +128,14 @@ let p = e => {
           r = Object.assign({}, l[e], {
             reason: t
           });
-        n[e] = r, (0, d.P$)(i, n)
+        n[e] = r, (0, u.P$)(i, n)
       },
       onSelectEmoji: t => {
         let n = [...l],
           r = Object.assign({}, l[e], {
             emoji_name: t.optionallyDiverseSequence
           });
-        n[e] = r, (0, d.P$)(i, n)
+        n[e] = r, (0, u.P$)(i, n)
       },
       onClearPressed: () => {
         let t = [...l],
@@ -143,7 +143,7 @@ let p = e => {
             reason: "",
             emoji_name: null
           };
-        t[e] = n, (0, d.P$)(i, t)
+        t[e] = n, (0, u.P$)(i, t)
       },
       reasonMinLength: t,
       reasonMaxLength: n

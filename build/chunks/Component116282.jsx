@@ -75,7 +75,7 @@ let d = () => {
   }, [module, exports, d]);
   return (0, Chunk54381.jsx)(Chunk159691.xvT, {
     variant: "text-sm/normal",
-    color: "text-secondary",
+    color: "text-subtle",
     children: E
   })
 }

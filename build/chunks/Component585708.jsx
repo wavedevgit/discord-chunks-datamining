@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 585708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,17 +24,17 @@ var Chunk13245 = require("./13245.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e, t, n, b) {
+function S(e, t, n, S) {
   var x;
-  if (p.Z.isNotificationDisabled(E.n0.TextChat)) return (0, c.GN)(u.Ay, u.yk), null;
+  if (p.Z.isNotificationDisabled(E.n0.TextChat)) return (0, u.GN)(c.Ay, c.yk), null;
   let {
     icon: j,
     title: I,
     body: C
-  } = (0, o.Xi)(e, t, n), {
+  } = (0, a.Xi)(e, t, n), {
     trackView: Z,
     trackClick: N
-  } = (0, O.Rg)(E.n0.TextChat, {
+  } = (0, y.Rg)(E.n0.TextChat, {
     notif_type: E.n0.TextChat,
     notif_user_id: null == (x = t.author) ? true : x.id,
     message_id: t.id,
@@ -46,12 +46,12 @@ function b(e, t, n, b) {
   return {
     icon: j,
     title: I,
-    body: t.content.length > 0 ? (0, a.ZP)(t, {
+    body: t.content.length > 0 ? (0, o.ZP)(t, {
       noStyleAndInteraction: true,
       formatInline: true,
       hideSimpleEmbedContent: false
     }).content : C,
-    hint: (e, t) => e && !t ? null : (0, y.QR)((0, O.Pb)(), S.t.ykjOAJ, S.intl.string(S.t.jZkzVJ)),
+    hint: (e, t) => e && !t ? null : (0, O.QR)((0, y.Pb)(), b.t.ykjOAJ, b.intl.string(b.t.jZkzVJ)),
     maxBodyLines: 2,
     renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(g.Z, {
       id: r,
@@ -60,7 +60,7 @@ function b(e, t, n, b) {
       onSend: () => N("send")
     }) : null,
     onNotificationShow: () => {
-      b && (0, c.GN)(u.Ay, u.yk), Z()
+      S && (0, u.GN)(c.Ay, c.yk), Z()
     },
     onNotificationClick: () => {
       let n = f.Z.getTargetPID();

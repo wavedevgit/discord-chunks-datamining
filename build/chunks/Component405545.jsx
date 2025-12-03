@@ -16,8 +16,8 @@ let a = function(e) {
     isDropHovered: s,
     onDrop: o,
     onEdit: c,
-    onRemove: d,
-    canRemove: u,
+    onRemove: u,
+    canRemove: d,
     actionsLocation: g,
     fieldStyle: m
   } = e, {
@@ -30,9 +30,9 @@ let a = function(e) {
     isDropHovered: s,
     onDrop: o,
     onEdit: c,
-    onRemove: d,
+    onRemove: u,
     title: p,
-    canRemove: u,
+    canRemove: d,
     actionsLocation: g,
     fieldStyle: m,
     children: (0, r.jsx)(i.BO, {

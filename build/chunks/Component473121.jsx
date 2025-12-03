@@ -19,7 +19,7 @@ let c = e => {
       button: m
     },
     isModeratorReport: p
-  } = e, g = (null == m ? true : m.type) === "submit", _ = i.useRef(a.Z.reactParserFor((t = function(e) {
+  } = e, g = (null == m ? true : m.type) === "submit", _ = l.useRef(a.Z.reactParserFor((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -50,15 +50,15 @@ let c = e => {
   }), t)));
   return (0, r.jsxs)("div", {
     className: d.headerContainer,
-    children: [null != c && "" !== c ? (0, r.jsx)(l.Heading, {
+    children: [null != c && "" !== c ? (0, r.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
       color: "header-primary",
       children: c
-    }) : null, null != u && "" !== c ? (0, r.jsx)(l.Text, {
+    }) : null, null != u && "" !== c ? (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: _.current(u)
-    }) : null, g && !p && (0, r.jsx)(l.Text, {
+    }) : null, g && !p && (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: o.intl.format(o.t.Q0tSKT, {})
     })]

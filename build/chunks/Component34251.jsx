@@ -45,7 +45,7 @@ function p(e) {
         children: x.intl.string(x.t["0/Yz+Y"])
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: x.intl.format(x.t["v1u/zq"], {
           rewardName: n
         })
@@ -75,7 +75,7 @@ function C(e) {
       (0, o.QB)(h.id, e, f).then(() => N("claimed")).catch(() => N("error"))
     }
   }, [h, f, j]);
-  let y = "error" === v || null == g;
+  let b = "error" === v || null == g;
   return (0, r.jsx)(d.Z, {
     onClose: c,
     transitionState: x,
@@ -83,8 +83,8 @@ function C(e) {
     sourceQuestContent: C,
     location: m.dr.INGAME_REWARD_MODAL,
     isRewardContentLoading: "loading" === v,
-    rewardContentHasError: y,
-    rewardContent: y ? null : (0, r.jsx)(u.Z, {
+    rewardContentHasError: b,
+    rewardContent: b ? null : (0, r.jsx)(u.Z, {
       rewardName: g.messages.name,
       children: (0, r.jsx)(p, {
         quest: h,

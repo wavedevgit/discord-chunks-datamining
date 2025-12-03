@@ -1,5 +1,5 @@
 /** Chunk was on 25046 **/
-/** chunk id: 464766, original params: e,n,t (module,exports,require) **/
+/** chunk id: 464766, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -12,21 +12,21 @@ var Chunk54381 = require("./54381.js"),
 
 function a(e) {
   let {
-    selectedTab: n,
-    onTabSelected: t,
+    selectedTab: t,
+    onTabSelected: n,
     userCount: a
-  } = e, d = r.useRef(null);
+  } = e, u = r.useRef(null);
   return r.useEffect(() => {
-    var e, n, t;
-    return null == (t = d.current) || null == (n = t.ref) || null == (e = n.blur) ? true : e.call(n)
+    var e, t, n;
+    return null == (n = u.current) || null == (t = n.ref) || null == (e = t.blur) ? true : e.call(t)
   }, []), (0, l.jsx)("div", {
     className: o.container,
     children: (0, l.jsxs)(i.njP, {
       className: o.tabBar,
       "aria-label": c.intl.string(c.t["+1H47t"]),
-      selectedItem: n,
+      selectedItem: t,
       type: "top",
-      onItemSelect: t,
+      onItemSelect: n,
       children: [(0, l.jsx)(i.njP.Item, {
         className: o.tabBarItem,
         id: s.fL.EVENT_INFO,

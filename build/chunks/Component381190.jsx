@@ -130,7 +130,7 @@ let p = e => {
           children: null != m ? "".concat(_, " • ").concat(m) : _
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: b
         })]
       })]

@@ -25,7 +25,7 @@ function d(e) {
   } = (0, o.Z)({
     userId: null == r ? true : r.id,
     size: l.EFr.SIZE_32
-  }), h = null != (t = r.globalName) ? t : r.username;
+  }), f = null != (t = r.globalName) ? t : r.username;
   return (0, a.jsxs)("div", {
     className: C.container,
     children: [(0, a.jsxs)("div", {
@@ -52,12 +52,12 @@ function d(e) {
           [C.muted]: c
         }),
         src: x,
-        "aria-label": h,
+        "aria-label": f,
         size: l.EFr.SIZE_32
       }, p)), (0, a.jsx)(l.Text, {
         color: c ? "text-muted" : "text-default",
         variant: "text-md/semibold",
-        children: h
+        children: f
       })]
     }), (0, a.jsx)("div", {
       className: C.checkbox,

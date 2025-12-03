@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk765250 = require("./765250.js"),
   Chunk13245 = require("./13245.js"),
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk377409 = require("./377409.js");
 
-function b(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -63,21 +63,21 @@ let j = Chunk473749.memo(function(e) {
     resizeValidation: I,
     className: C,
     dragContainerClassName: Z
-  } = e, N = (0, o.e7)([u.Z], () => u.Z.getWidgetConfig(t.type), [t.type]), w = (0, y.xZ)(t.id, y.bc), T = (0, O.Z)(), _ = (0, E.Z)(), P = (0, o.e7)([d.Z], () => d.Z.windowSize((0, p.ZY)(_))), A = r.useCallback((e, t, n, i, r) => {
+  } = e, N = (0, a.e7)([c.Z], () => c.Z.getWidgetConfig(t.type), [t.type]), w = (0, O.xZ)(t.id, O.bc), T = (0, y.Z)(), _ = (0, E.Z)(), P = (0, a.e7)([d.Z], () => d.Z.windowSize((0, p.ZY)(_))), A = r.useCallback((e, t, n, i, r) => {
     let l = d.Z.windowSize((0, p.ZY)((0, E.i)())),
-      a = (0, h.jL)(n, l),
-      o = (0, h.Ox)(i, l);
+      o = (0, h.jL)(n, l),
+      a = (0, h.Ox)(i, l);
     (0, s.Os)(t), (0, s.nv)({
       widgetId: t,
-      anchor: a,
-      size: o
+      anchor: o,
+      size: a
     });
     let f = e === m.B.MOVE,
       g = (0, h.PY)(n, l.width, l.height, r.width, r.height);
-    c.Z.track(v.rMx.OVERLAY_LAYOUT_UPDATED, {
+    u.Z.track(v.rMx.OVERLAY_LAYOUT_UPDATED, {
       was_resized: !f,
       was_dragged: f,
-      widget_type: u.Z.getWidgetType(t),
+      widget_type: c.Z.getWidgetType(t),
       window_width: l.width,
       window_height: l.height,
       widget_width: r.width,
@@ -103,23 +103,23 @@ let j = Chunk473749.memo(function(e) {
     minY: 0,
     maxX: P.width,
     maxY: P.height
-  }), [P]), Q = r.useCallback(e => n(x(b({}, e), {
+  }), [P]), Q = r.useCallback(e => n(x(S({}, e), {
     widget: t,
     dragging: null != e.dragOperation,
     className: C
   })), [t, n, C]), K = r.useCallback(e => null != l || null != j ? (0, i.jsxs)("div", {
-    className: a()(S.extrasContainer, w && S.fullFlex),
+    className: o()(b.extrasContainer, w && b.fullFlex),
     children: [null == l ? true : l(t), null == j ? true : j(t, e)]
-  }) : null, [t, l, w, j]), X = (0, o.e7)([g.Z], () => g.Z.hasRenderDebugMode(f.GO.WidgetAreas)), J = r.useMemo(() => {
-    if (null != I) return e => I(x(b({}, e), {
+  }) : null, [t, l, w, j]), X = (0, a.e7)([g.Z], () => g.Z.hasRenderDebugMode(f.GO.WidgetAreas)), J = r.useMemo(() => {
+    if (null != I) return e => I(x(S({}, e), {
       widget: t
     }))
   }, [I, t]);
   return (0, i.jsx)(m.Z, {
-    className: a()({
-      [S.debug]: X,
-      [S.debugUnpinned]: X && !k,
-      [S.debugPinned]: X && k
+    className: o()({
+      [b.debug]: X,
+      [b.debugUnpinned]: X && !k,
+      [b.debugPinned]: X && k
     }, Z),
     id: R,
     size: U,

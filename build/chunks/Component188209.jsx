@@ -83,7 +83,7 @@ function R(e) {
     if ((0, j.Ew)(t)) return null;
     let r = null == u ? true : u.code;
     return (0, j.Ew)(r) ? t : t.replace(T.Dp, encodeURIComponent(r))
-  }, [n, null == u ? true : u.code]), y = (0, _.In)({
+  }, [n, null == u ? true : u.code]), g = (0, _.In)({
     quest: n,
     questContent: o,
     questContentPosition: s,
@@ -98,7 +98,7 @@ function R(e) {
       actions: [null != x ? {
         variant: "primary",
         text: A.intl.string(A.t["+zx47d"]),
-        onClick: y
+        onClick: g
       } : {
         variant: "primary",
         text: A.intl.string(A.t["/g10LC"]),
@@ -159,7 +159,7 @@ function q(e) {
         children: A.intl.string(A.t["5j/Zym"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: A.intl.format(A.t["ESmp2+"], {
           onClaimInstructions: o
         })
@@ -184,14 +184,14 @@ function Z(e) {
     preview: c,
     sourceQuestContent: C,
     questContentPosition: f
-  } = e, h = null != (t = (0, b.B4)(n.id)) ? t : n, j = (0, w.zG)(h.config), x = g.jn.REWARD_MODAL, {
+  } = e, h = null != (t = (0, b.B4)(n.id)) ? t : n, j = (0, w.zG)(h.config), x = y.jn.REWARD_MODAL, {
     questStoreRewardCode: v,
     isFetchingRewardCode: N,
     isClaimingReward: A
-  } = (0, o.cj)([y.Z], () => ({
-    questStoreRewardCode: y.Z.getRewardCode(h.id),
-    isFetchingRewardCode: y.Z.isFetchingRewardCode(h.id),
-    isClaimingReward: y.Z.isClaimingReward(h.id)
+  } = (0, o.cj)([g.Z], () => ({
+    questStoreRewardCode: g.Z.getRewardCode(h.id),
+    isFetchingRewardCode: g.Z.isFetchingRewardCode(h.id),
+    isClaimingReward: g.Z.isClaimingReward(h.id)
   })), I = true === c ? (0, p.b)(h) : v, {
     hasError: D,
     setHasError: Z

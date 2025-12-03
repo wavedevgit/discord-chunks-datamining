@@ -37,7 +37,7 @@ function d(e) {
       className: u.BadgeClockIcon
     }), (0, r.jsx)(o.Text, {
       variant: "eyebrow",
-      color: "text-secondary",
+      color: "text-subtle",
       children: i
     })]
   }) : (0, r.jsx)("div", {

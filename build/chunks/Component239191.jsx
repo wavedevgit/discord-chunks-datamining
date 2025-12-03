@@ -49,11 +49,11 @@ function N(e) {
             style: e.style,
             children: [a && (0, s.jsx)(c.Text, {
               variant: "text-sm/medium",
-              color: "text-primary",
+              color: "text-strong",
               children: e.label
             }), e.new && (0, s.jsx)(c.IGR, {
               color: c.TVs.colors.BG_BRAND.css,
-              text: b.intl.string(b.t.y2b7CA),
+              text: _.intl.string(_.t.y2b7CA),
               className: O.new
             })]
           })
@@ -97,10 +97,10 @@ function C(e) {
   let {
     transitionState: t,
     onClose: i
-  } = e, [a] = n.useState(() => g.Z.gradientPreset), o = (0, r.e7)([x.Z], () => x.Z.theme), [_] = n.useState(() => u.ZP.useSystemTheme === j.KW.ON), [C, K] = n.useState(() => _ ? "system" : null != a ? "gradient" : o), {
+  } = e, [a] = n.useState(() => g.Z.gradientPreset), o = (0, r.e7)([x.Z], () => x.Z.theme), [b] = n.useState(() => u.ZP.useSystemTheme === j.KW.ON), [C, K] = n.useState(() => b ? "system" : null != a ? "gradient" : o), {
     density: f
   } = (0, c.TCT)(), w = n.useMemo(() => {
-    if (null == a && !_) return v;
+    if (null == a && !b) return v;
     let e = [...v];
     if (null != a) {
       let {
@@ -121,12 +121,12 @@ function C(e) {
         }
       })
     }
-    return _ && e.push({
+    return b && e.push({
       id: "system",
-      label: b.intl.string(b.t["7rOU6j"]),
+      label: _.intl.string(_.t["7rOU6j"]),
       className: O.themeOption
     }), e
-  }, [a, _]), I = (0, h.Z)("(max-height: 800px)");
+  }, [a, b]), I = (0, h.Z)("(max-height: 800px)");
   return (0, s.jsxs)(c.Y0X, {
     transitionState: t,
     size: c.CgR.DYNAMIC,
@@ -146,12 +146,12 @@ function C(e) {
           }), (0, s.jsx)(c.Heading, {
             variant: I ? "heading-lg/semibold" : "heading-xl/semibold",
             color: "header-primary",
-            children: b.intl.string(b.t["7+iCG4"])
+            children: _.intl.string(_.t["7+iCG4"])
           })]
         }), (0, s.jsx)(c.Heading, {
           variant: I ? "heading-sm/medium" : "heading-md/medium",
-          color: "text-secondary",
-          children: b.intl.string(b.t.fZMMqN)
+          color: "text-subtle",
+          children: _.intl.string(_.t.fZMMqN)
         })]
       })
     }), (0, s.jsx)(c.hzk, {
@@ -162,7 +162,7 @@ function C(e) {
           gap: I ? 8 : 12,
           children: [(0, s.jsx)(c.Heading, {
             variant: "heading-md/medium",
-            children: b.intl.string(b.t.Ksh3ik)
+            children: _.intl.string(_.t.Ksh3ik)
           }), (0, s.jsx)(N, {
             showLabels: false,
             options: w,
@@ -200,15 +200,15 @@ function C(e) {
               align: "center",
               children: [(0, s.jsx)(c.Heading, {
                 variant: "heading-md/medium",
-                children: b.intl.string(b.t["C/5V0A"])
+                children: _.intl.string(_.t["C/5V0A"])
               }), (0, s.jsx)(c.IGR, {
                 color: c.TVs.colors.BG_BRAND.css,
-                text: b.intl.string(b.t.y2b7CA)
+                text: _.intl.string(_.t.y2b7CA)
               })]
             }), (0, s.jsx)(c.Text, {
               variant: "text-sm/medium",
-              color: "text-secondary",
-              children: b.intl.string(b.t["2w1sEO"])
+              color: "text-subtle",
+              children: _.intl.string(_.t["2w1sEO"])
             })]
           }), (0, s.jsx)(N, {
             showLabels: true,
@@ -233,7 +233,7 @@ function C(e) {
       className: O.footer,
       children: (0, s.jsx)(c.Button, {
         variant: "primary",
-        text: b.intl.string(b.t["1Qm822"]),
+        text: _.intl.string(_.t["1Qm822"]),
         onClick: i
       })
     })]

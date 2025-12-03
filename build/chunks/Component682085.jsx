@@ -42,7 +42,7 @@ function O() {
         default: e
       } = await require.e("38576").then(require.bind(require, 925170));
       return n => {
-        var i, a;
+        var i, l;
         return (0, r.jsx)(e, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -60,17 +60,17 @@ function O() {
             })
           }
           return e
-        }({}, n), a = a = {
+        }({}, n), l = l = {
           trackUserProfileEditAction: t
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
         }), i))
       }
     }, {
@@ -96,7 +96,7 @@ function O() {
       children: Chunk388032.intl.string(Chunk388032.t["oqalC+"])
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       children: Chunk388032.intl.format(Chunk388032.t.YnNFWa, {
         applicationName: x.name
       })

@@ -23,14 +23,14 @@ let h = e => {
     isDisabled: l,
     sticker: h,
     canManageSticker: b
-  } = e, [x, j] = i.useState(false), [_, v] = (0, d.Z)(null, 4e3), O = async () => {
+  } = e, [x, j] = i.useState(false), [_, v] = (0, u.Z)(null, 4e3), O = async () => {
     v(null), j(true);
     try {
       await (0, g.Um)(h)
     } catch (e) {
       v(e.body.message), j(false)
     }
-  }, C = u.ZP.useUserTag(h.user);
+  }, C = d.ZP.useUserTag(h.user);
   return (0, r.jsx)(s.u, {
     forceOpen: null != _,
     text: _,
@@ -60,7 +60,7 @@ let h = e => {
               size: o.EFr.SIZE_16,
               user: h.user
             }), (0, r.jsx)(o.Text, {
-              color: "header-secondary",
+              color: "text-default",
               variant: "text-xs/normal",
               children: C
             })]

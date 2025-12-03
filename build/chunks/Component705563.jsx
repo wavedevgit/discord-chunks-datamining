@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 705563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -21,11 +21,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk482722 = require("./482722.js");
 
-function C(e) {
+function y(e) {
   let {
     channelId: t,
     showProfile: n = false,
-    showTrailingDivider: C = false
+    showTrailingDivider: y = false
   } = e, v = p.default.cast(t), {
     joinRequest: _,
     isModmin: O,
@@ -46,7 +46,7 @@ function C(e) {
     submitting: Z
   } = (0, m.s)(null == _ ? true : _.guildId, null == _ ? true : _.userId, null == _ ? true : _.joinRequestId);
   return null != _ && _.applicationStatus === f.wB.SUBMITTED && O ? (0, i.jsxs)("div", {
-    className: y.buttons,
+    className: C.buttons,
     children: [(0, i.jsx)(l.u, {
       text: b.intl.string(b.t.cdPGbE),
       shouldShow: S,
@@ -74,6 +74,6 @@ function C(e) {
       variant: "secondary",
       size: "sm",
       text: b.intl.string(b.t.iXAna6)
-    }), C && (0, i.jsx)(o.ZP.Divider, {})]
+    }), y && (0, i.jsx)(o.ZP.Divider, {})]
   }) : null
 }

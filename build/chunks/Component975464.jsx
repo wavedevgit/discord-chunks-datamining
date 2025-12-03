@@ -63,7 +63,7 @@ function j(e) {
 function _(e) {
   let {
     guild: t
-  } = e, n = (0, u.Z)(t), {
+  } = e, n = (0, d.Z)(t), {
     eligibilityLoading: m,
     eligibilityError: p,
     eligibility: f
@@ -71,7 +71,7 @@ function _(e) {
     isLoading: _,
     error: v,
     creatorMonetizationOnboardingMarketing: O
-  } = (0, d.Z)(t.id);
+  } = (0, u.Z)(t.id);
   return (i.useEffect(() => {
     (0, o.k)(t.id)
   }, [t.id]), (0, s.Z)({

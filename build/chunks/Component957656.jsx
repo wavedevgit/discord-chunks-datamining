@@ -116,7 +116,7 @@ d.ButtonFooter = e => {
       children: a.intl.string(l.default.cXgKMD)
     }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: t
     })]
   })

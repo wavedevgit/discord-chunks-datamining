@@ -56,7 +56,7 @@ class c {
     a(this, "animations", true), this.animations = e
   }
 }
-class d {
+class u {
   async start() {
     for (let e of (this.stopped = false, this.animations)) {
       if (this.stopped) return;
@@ -71,21 +71,21 @@ class d {
   }
 }
 
-function u(e, t, n) {
+function d(e, t, n) {
   return new o(n(e, s({}, t)))
 }
 let g = (r = s({}, Chunk748780.Z), i = i = {
   timing: function(e, t) {
-    return u(e, t, l.Z.timing)
+    return d(e, t, l.Z.timing)
   },
   spring: function(e, t) {
-    return u(e, t, l.Z.spring)
+    return d(e, t, l.Z.spring)
   },
   parallel: function(e) {
     return new c(e)
   },
   sequence: function(e) {
-    return new d(e)
+    return new u(e)
   }
 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
   var n = Object.keys(e);

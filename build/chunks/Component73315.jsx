@@ -1,5 +1,5 @@
 /** Chunk was on 22173 **/
-/** chunk id: 73315, original params: e,n,t (module,exports,require) **/
+/** chunk id: 73315, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -12,22 +12,22 @@ var Chunk120356 = require("./120356.js"),
   Chunk836956 = require("./836956.js");
 let c = e => {
   let {
-    obscureReason: n,
-    iconClassname: t
+    obscureReason: t,
+    iconClassname: n
   } = e;
-  switch (n) {
+  switch (t) {
     case i.wk.EXPLICIT_CONTENT:
     case i.wk.GORE_CONTENT:
     case i.wk.SELF_HARM_CONTENT:
       return (0, s.jsx)(r.fFY, {
-        className: a()(t, o.obscuredIcon),
+        className: a()(n, o.obscuredIcon),
         color: "white"
       });
     case i.wk.SPOILER:
       return (0, s.jsx)(r.tEF, {
         size: "md",
         color: "currentColor",
-        className: t
+        className: n
       });
     default:
       return null

@@ -66,7 +66,7 @@ function A(e, t) {
 let C = {
     tag: "span",
     variant: "text-md/normal",
-    color: "header-secondary"
+    color: "text-default"
   },
   N = {
     className: o()("mention", Chunk466002.mention)

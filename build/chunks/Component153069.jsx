@@ -211,7 +211,7 @@ class M extends(n = Chunk473749.PureComponent) {
       }), (0, Chunk54381.jsx)(Chunk793030.Go$, {
         leading: (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           children: Chunk388032.intl.format(Chunk388032.t.js2rr5, {
             onClick: this.handleCancelAccountDeletion
           })
@@ -319,7 +319,7 @@ class M extends(n = Chunk473749.PureComponent) {
         E.S.dispatch(k.CkL.WAVE_EMPHASIZE);
         let t = await p.Z.forgotPassword(r);
         if (false === t) return;
-        t === l.B.ONE_TIME_LOGIN ? (0, h.h7j)(t => {
+        t === l.B.ONE_TIME_LOGIN ? (0, c.h7j)(t => {
           let e = [{
             variant: "primary",
             text: T.intl.string(T.t.BddRzS),
@@ -330,17 +330,17 @@ class M extends(n = Chunk473749.PureComponent) {
             title: T.intl.string(T.t["6Ecyts"]),
             actions: e
           }, t), {
-            children: (0, s.jsx)(h.Text, {
+            children: (0, s.jsx)(c.Text, {
               variant: "text-md/normal",
               children: T.intl.string(T.t.iAcrqV)
             })
           }))
-        }) : (0, h.h7j)(t => (0, s.jsx)(h.ConfirmModal, N(D({
+        }) : (0, c.h7j)(t => (0, s.jsx)(c.ConfirmModal, N(D({
           header: T.intl.string(T.t.f5Pi7A),
           confirmText: T.intl.string(T.t.BddRzS),
-          confirmButtonColor: c.zx.Colors.BRAND
+          confirmButtonColor: h.zx.Colors.BRAND
         }, t), {
-          children: (0, s.jsx)(h.Text, {
+          children: (0, s.jsx)(c.Text, {
             variant: "text-md/normal",
             children: T.intl.format(T.t["6u5hQ9"], {
               email: r
@@ -472,7 +472,7 @@ let Z = function(t) {
     type: a.ImpressionTypes.MODAL,
     name: a.ImpressionNames.USER_LOGIN
   });
-  let c = o.useCallback(() => {
+  let h = o.useCallback(() => {
     e(), n()
   }, [e, n]);
   return (0, s.jsx)(d.IX, {
@@ -482,7 +482,7 @@ let Z = function(t) {
     children: (0, s.jsx)(M, N(D({}, i, l), {
       transitionTo: x.uL,
       replaceWith: x.dL,
-      onBackPressed: c,
+      onBackPressed: h,
       authBoxClassName: I.card
     }))
   })

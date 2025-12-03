@@ -110,7 +110,7 @@ function Z(e) {
           width: t
         });
       case j.gq.MANUAL_MEMBER_VERIFICATION:
-        return (0, r.jsx)(p.Z, {
+        return (0, r.jsx)(f.Z, {
           className: O.icon,
           height: t,
           width: t
@@ -147,7 +147,7 @@ function D(e) {
     onClose: i
   } = e, a = (0, d.e7)([h.Z], () => h.Z.getSearchStateByGuildId(n), [n], u()), {
     inviteCodes: c
-  } = (0, x.s)(n), p = (0, d.e7)([m.Z], () => m.Z.getGuild(n)), D = null != (t = null == p ? true : p.vanityURLCode) ? t : null, [N, R] = l.useState(false), {
+  } = (0, x.s)(n), f = (0, d.e7)([m.Z], () => m.Z.getGuild(n)), D = null != (t = null == f ? true : f.vanityURLCode) ? t : null, [N, R] = l.useState(false), {
     selectedSourceInviteCode: L,
     selectedJoinSourceType: I
   } = a, P = null != I && I !== j.gq.UNSPECIFIED, V = (0, d.e7)([b.Z], () => b.Z.hideInstantInvites, []);
@@ -270,7 +270,7 @@ function D(e) {
                 vanityUrl: D
               }))
             }) : null]
-          }), P ? (0, r.jsx)(f.Z, {
+          }), P ? (0, r.jsx)(p.Z, {
             background: O.__invalid_radio,
             foreground: O.radioSelection,
             width: 16,

@@ -51,7 +51,7 @@ function h(e) {
     className: p.container,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
-      color: "text-secondary",
+      color: "text-subtle",
       children: d.intl.string(d.t.f09BQJ)
     }), (0, r.jsx)(a.ZP, {
       items: _,

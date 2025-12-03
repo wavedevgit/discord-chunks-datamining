@@ -1,5 +1,5 @@
 /** Chunk was on 4419 **/
-/** chunk id: 686494, original params: n,e,t (module,exports,require) **/
+/** chunk id: 686494, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -14,13 +14,13 @@ var Chunk212598 = require("./212598.jsx"),
 
 function d(n) {
   let {
-    isWaitingForConnection: e,
-    onWaitingForConnection: t,
+    isWaitingForConnection: t,
+    onWaitingForConnection: e,
     expectedCallbackState: d,
     onAuthToken: u,
     onError: C,
-    onClose: h
-  } = n, _ = e ? (0, o.jsx)("img", {
+    onClose: _
+  } = n, h = t ? (0, o.jsx)("img", {
     src: c,
     width: "168",
     height: "124",
@@ -30,16 +30,16 @@ function d(n) {
     width: "152",
     height: "123",
     alt: ""
-  }), p = e ? l.intl.string(l.t.tZ6ze7) : l.intl.string(l.t.siPkNp), x = e ? l.intl.string(l.t.VgWnwP) : l.intl.string(l.t.oS4NEH);
+  }), p = t ? l.intl.string(l.t.tZ6ze7) : l.intl.string(l.t.siPkNp), x = t ? l.intl.string(l.t.VgWnwP) : l.intl.string(l.t.oS4NEH);
   return (0, o.jsx)(i.t, {
     platformType: s.ABu.CRUNCHYROLL,
-    isWaitingForConnection: e,
-    onWaitingForConnection: t,
+    isWaitingForConnection: t,
+    onWaitingForConnection: e,
     expectedCallbackState: d,
     onAuthToken: u,
     onError: C,
-    onClose: h,
-    img: _,
+    onClose: _,
+    img: h,
     title: p,
     body: x,
     redirectDestination: r.pY

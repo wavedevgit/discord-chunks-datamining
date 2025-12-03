@@ -180,7 +180,7 @@ function I(e) {
         variant: "heading-md/semibold",
         children: C.intl.string(C.t.vZPktJ)
       }), (0, r.jsx)(d.Text, {
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-sm/normal",
         children: C.intl.string(C.t.vWkIII)
       }), (0, r.jsx)("div", {

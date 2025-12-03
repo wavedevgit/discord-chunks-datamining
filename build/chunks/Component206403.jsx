@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
 
 function c(e) {
   let {
-    headingColor: t = "text-primary",
+    headingColor: t = "text-strong",
     leadingElement: n,
     primaryTrailingElement: i,
     secondaryTrailingElement: c,
@@ -45,7 +45,7 @@ function c(e) {
         })
       }), null != d && (0, r.jsx)(o.xvT, {
         variant: "text-sm/normal",
-        color: "text-secondary",
+        color: "text-subtle",
         className: l.baseControlItemDescription,
         children: d
       })]

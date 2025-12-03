@@ -2,17 +2,17 @@
 /** chunk id: 260503, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => l
 });
 var Chunk473749 = require("./473749.js"),
   Chunk924826 = require("./924826.js");
 
-function a(e) {
+function l(e) {
   let {
     listRef: t,
     padding: n,
-    channel: a,
-    isEnabled: l
+    channel: l,
+    isEnabled: a
   } = e, s = r.useCallback(e => {
     let r = t.current,
       i = document.querySelector(e);
@@ -38,8 +38,8 @@ function a(e) {
     })
   }), [t]);
   return (0, i.ZP)({
-    id: "forum-channel-list-".concat(a.id),
-    isEnabled: l,
+    id: "forum-channel-list-".concat(l.id),
+    isEnabled: a,
     scrollToStart: o,
     scrollToEnd: c,
     setFocus: s

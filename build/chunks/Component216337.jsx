@@ -38,7 +38,7 @@ let f = () => require.e("43841").then(require.t.bind(require, 737848, 19)).then(
           children: p.intl.string(p.t.OmBThA)
         }), (0, i.jsx)(a.Text, {
           variant: "text-sm/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: p.intl.string(p.t.zcs5ko)
         })]
       })]

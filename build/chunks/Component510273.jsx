@@ -110,7 +110,7 @@ function _(e) {
         children: a()
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: h && !n ? "?????" : _()
       })]
     }), (0, r.jsx)("div", {

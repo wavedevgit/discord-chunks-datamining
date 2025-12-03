@@ -136,9 +136,9 @@ function C(e) {
     }, e))
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(y.C3, {
+    children: [(0, r.jsxs)(x.C3, {
       children: [(0, r.jsx)(j.Z, {}), t]
-    }), null != Q && Q, er && null != et && (0, r.jsx)(x.Z, {
+    }), null != Q && Q, er && null != et && (0, r.jsx)(y.Z, {
       onClose: el,
       selectedPromotionalDecoPurchaseRecord: et,
       selectedGiftingPromotionReward: J

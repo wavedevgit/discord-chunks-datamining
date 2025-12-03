@@ -24,18 +24,18 @@ function u() {
   return (0, Chunk54381.jsxs)(Chunk198358.Z, {
     children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
-      color: "text-primary",
+      color: "text-strong",
       children: Chunk388032.intl.format(Chunk140939.default.nPTMHj, {
         numMessages: module
       })
     }), null != exports ? (0, Chunk54381.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
-      color: "text-primary",
+      color: "text-strong",
       children: Chunk388032.intl.format(Chunk140939.default.ixvOza, {
         percent: 100 - exports,
-        percentHook: (e, t) => (0, i.jsx)(r.xvT, {
+        percentHook: (e, t) => (0, i.jsx)(s.xvT, {
           variant: "display-sm",
-          color: "text-primary",
+          color: "text-strong",
           children: e
         }, t)
       })

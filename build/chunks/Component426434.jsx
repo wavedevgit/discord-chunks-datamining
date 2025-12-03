@@ -26,9 +26,9 @@ function x(e) {
       guild: n
     } = e,
     x = n.mfaLevel,
-    j = (0, l.e7)([u.Z], () => null != n && u.Z.can(f.Plq.MANAGE_GUILD, n), [n]),
+    j = (0, l.e7)([d.Z], () => null != n && d.Z.can(f.Plq.MANAGE_GUILD, n), [n]),
     _ = (0, l.e7)([g.default], () => g.default.getCurrentUser()),
-    v = (0, d.eM)(n, _),
+    v = (0, u.eM)(n, _),
     O = null == _ ? true : _.mfaEnabled,
     C = x === f.BpS.ELEVATED,
     y = v && O,
@@ -55,7 +55,7 @@ function x(e) {
         children: h.intl.string(h.t.lbBfEQ)
       }), (0, r.jsxs)(s.Text, {
         variant: "text-sm/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: [h.intl.string(h.t["a/93J6"]), " ", t]
       })]
     }), !y || C && E ? (0, r.jsx)(a.u, {

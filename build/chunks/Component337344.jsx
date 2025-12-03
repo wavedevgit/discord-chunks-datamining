@@ -2,7 +2,7 @@
 /** chunk id: 337344, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  L: () => u
+  L: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -13,13 +13,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk666921 = require("./666921.js");
 
-function u(e) {
+function d(e) {
   let {
     guildId: t,
     role: n
   } = e;
   return (0, r.jsx)("div", {
-    className: d.container,
+    className: u.container,
     children: (0, r.jsx)(i.gNt, {
       label: c.intl.string(c.t.arFPfJ),
       description: c.intl.string(c.t["IT/0AI"]),

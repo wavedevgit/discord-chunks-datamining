@@ -2,7 +2,7 @@
 /** chunk id: 715796, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  P: () => d
+  P: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,11 +12,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
 
-function d(e) {
+function u(e) {
   let t = (null == e ? true : e.features.has(c.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING)) === true,
-    d = (null == e ? true : e.features.has(c.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) === true,
-    u = (0, l.e7)([o.default], () => o.default.getCurrentUser()),
-    g = null != e && (0, s.eM)(e, u);
+    u = (null == e ? true : e.features.has(c.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) === true,
+    d = (0, l.e7)([o.default], () => o.default.getCurrentUser()),
+    g = null != e && (0, s.eM)(e, d);
   i.useEffect(() => {
     null != e && t && g && (0, a.ZDy)(async () => {
       let {
@@ -43,7 +43,7 @@ function d(e) {
           return e
         }({}, n), l = l = {
           guildId: e.id,
-          requireTeamSetup: d
+          requireTeamSetup: u
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -56,5 +56,5 @@ function d(e) {
         }), i))
       }
     })
-  }, [t, d, e, g])
+  }, [t, u, e, g])
 }

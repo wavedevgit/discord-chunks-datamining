@@ -118,7 +118,7 @@ function A(e) {
     }), null != z && (0, l.jsx)(C.Z, {
       user: t,
       displayProfile: H,
-      themeType: y.l.MODAL_V2,
+      themeType: O.l.MODAL_V2,
       className: E.backgroundThemeContainer,
       forceUserTheme: true,
       children: (0, l.jsx)("div", {
@@ -150,7 +150,7 @@ function A(e) {
           author: J,
           message: (0, u.e5)(R(D({}, (0, p.ZP)({
             channelId: "1337",
-            content: T.intl.string(O.default.h5Cuej)
+            content: T.intl.string(y.default.h5Cuej)
           })), {
             state: k.yb.SENT,
             id: "0"
@@ -176,7 +176,7 @@ function A(e) {
       children: [(0, l.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: T.intl.format(O.default.prQba8, {
+        children: T.intl.format(y.default.prQba8, {
           helpArticleLink: N.Z.getArticleURL(k.BhN.DISPLAY_NAME_STYLES)
         })
       }), (0, l.jsx)(I, {

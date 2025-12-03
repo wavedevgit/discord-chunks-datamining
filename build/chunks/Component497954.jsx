@@ -21,16 +21,16 @@ let g = e => {
     reportId: g
   } = e, {
     isIgnored: _,
-    isBlocked: h
-  } = (0, l.cj)([c.Z], () => ({
+    isBlocked: x
+  } = (0, i.cj)([c.Z], () => ({
     isIgnored: c.Z.isIgnored(t.id),
     isBlocked: c.Z.isBlocked(t.id)
-  }), [t]), x = (0, l.e7)([d.Z], () => d.Z.getChannel(n), [n]), b = i.useMemo(() => u.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), f = i.useCallback(() => {
+  }), [t]), h = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), b = l.useMemo(() => u.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), f = l.useCallback(() => {
     s.ZP.trackWithMetadata(m.rMx.IAR_IGNORE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: g
     }), a.Z.ignoreUser(t.id, "web_iar_ignore_user_element", n)
-  }, [t, g, n]), v = i.useMemo(() => _ || h, [_, h]);
+  }, [t, g, n]), v = l.useMemo(() => _ || x, [_, x]);
   return (0, r.jsx)(o.JZ, {
     title: p.intl.formatToPlainString(p.t.U3yyFs, {
       username: b

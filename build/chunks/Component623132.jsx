@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk624238 = require("./624238.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
@@ -65,9 +65,9 @@ function T(e) {
     index: t,
     widgetType: n,
     game: i,
-    children: a
+    children: l
   } = e, {
-    manageFocusOnReorder: l
+    manageFocusOnReorder: a
   } = (0, h.C)();
   return (0, r.jsx)(b.yW, {
     index: t,
@@ -82,12 +82,12 @@ function T(e) {
       positionNumber: t + 1
     }),
     onReorder: (e, t) => (0, m.Eq)(n, e, t),
-    onEnd: () => l(i.applicationId),
+    onEnd: () => a(i.applicationId),
     className: w.dropTarget,
     dropBeforeClassName: w.dropIndicatorBefore,
     dropAfterClassName: w.dropIndicatorAfter,
     draggingClassName: w.isDragging,
-    children: a
+    children: l
   })
 }
 
@@ -96,33 +96,33 @@ function C(e) {
     applicationId: t,
     userId: n,
     gameName: i
-  } = e, a = function(e, t) {
+  } = e, l = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["applicationId", "userId", "gameName"]);
-  let l = (0, d.Z)({
+  let a = (0, d.Z)({
     location: "UserProfileWidgetGameDetailsCard",
     applicationId: t,
     source: u.m1.UserProfile,
     sourceUserId: n,
     trackEntryPointImpression: true
   });
-  return null == l ? (0, r.jsx)(c.Heading, E(S({}, a), {
+  return null == a ? (0, r.jsx)(c.Heading, E(S({}, l), {
     children: i
-  })) : (0, r.jsx)(c.Heading, E(S({}, a), {
+  })) : (0, r.jsx)(c.Heading, E(S({}, l), {
     children: (0, r.jsx)(c.P3F, {
-      onClick: l,
+      onClick: a,
       className: w.clickableText,
       children: i
     })
@@ -134,10 +134,10 @@ function D(e) {
     user: t,
     guildId: n,
     channelId: i,
-    id: a
+    id: l
   } = e;
   return (0, r.jsx)(c.nn4, {
-    id: a,
+    id: l,
     children: P.intl.format(P.t.TM0XDY, {
       name: g.ZP.getName(n, i, t)
     })
@@ -151,7 +151,7 @@ function k(e) {
   } = e;
   return (0, r.jsx)(c.Text, {
     variant: "text-sm/normal",
-    color: "text-tertiary",
+    color: "text-muted",
     className: n,
     children: t
   })
@@ -162,11 +162,11 @@ function N(e) {
     text: t,
     user: n,
     guildId: i,
-    channelId: a
-  } = e, l = (0, s.Dt)();
+    channelId: l
+  } = e, a = (0, s.Dt)();
   return null == t || "" === t.trim() ? null : (0, r.jsxs)("div", {
     role: "group",
-    "aria-labelledby": l,
+    "aria-labelledby": a,
     children: [(0, r.jsx)(c.PEf, {
       size: "xxs",
       color: c.TVs.colors.ICON_TERTIARY,
@@ -174,8 +174,8 @@ function N(e) {
     }), (0, r.jsx)(D, {
       user: n,
       guildId: i,
-      channelId: a,
-      id: l
+      channelId: l,
+      id: a
     }), (0, r.jsx)(k, {
       text: t
     })]
@@ -186,7 +186,7 @@ function A(e) {
   let {
     text: t,
     user: n,
-    guildId: a,
+    guildId: l,
     channelId: u,
     widgetType: d,
     applicationId: f
@@ -246,12 +246,12 @@ function A(e) {
       className: w.commentIcon
     }), (0, r.jsx)(D, {
       user: n,
-      guildId: a,
+      guildId: l,
       channelId: u,
       id: b
     }), (0, r.jsx)(k, {
       text: null != t ? t : I,
-      className: l()(w.editableCommentText, !S && w.placeholder)
+      className: a()(w.editableCommentText, !S && w.placeholder)
     }), (0, r.jsx)(c.P3F, {
       innerRef: x,
       "aria-label": P.intl.string(P.t.ppb9MJ),
@@ -269,7 +269,7 @@ function Z(e) {
   let {
     user: t,
     guildId: n,
-    channelId: a,
+    channelId: l,
     game: o,
     widgetType: s,
     disableInteraction: u = false,
@@ -303,7 +303,7 @@ function Z(e) {
       hideTooltip: true
     }),
     Y = () => (0, r.jsxs)("div", {
-      className: l()(w.card, P),
+      className: a()(w.card, P),
       children: [z ? (0, r.jsxs)("div", {
         ref: V,
         className: w.dragHandleContainer,
@@ -323,14 +323,14 @@ function Z(e) {
           text: k,
           user: t,
           guildId: n,
-          channelId: a,
+          channelId: l,
           widgetType: s,
           applicationId: D
         }) : (0, r.jsx)(N, {
           text: k,
           user: t,
           guildId: n,
-          channelId: a
+          channelId: l
         }), (0, r.jsx)(O.Z, {
           tags: Z,
           isCurrentUser: F,
@@ -342,7 +342,7 @@ function Z(e) {
           className: w.socialProof,
           applicationId: D,
           guildId: n,
-          channelId: a
+          channelId: l
         })]
       }), !u && F && (0, r.jsx)(j.Z, {
         game: o,

@@ -102,7 +102,7 @@ function C(e) {
     className: v.applicationSublabel,
     children: [!o && (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
-      color: "text-secondary",
+      color: "text-subtle",
       children: p
     }), null != f && (0, r.jsxs)(r.Fragment, {
       children: [!o && (0, r.jsx)(d.Z, {
@@ -113,7 +113,7 @@ function C(e) {
         size: u.A.XXSMALL
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: f.name
       })]
     })]

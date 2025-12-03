@@ -52,7 +52,7 @@ let S = function(e) {
         }), (0, r.jsx)(s.Text, {
           className: g.bannerText,
           variant: "text-sm/medium",
-          color: "text-secondary",
+          color: "text-subtle",
           children: h.intl.format(h.t["lVOH/p"], {
             helpCenterLink: d.Z.getArticleURL(m.BhN.SUMMER_BOGO_2025)
           })
@@ -85,7 +85,7 @@ let S = function(e) {
           }), (0, r.jsx)(s.Text, {
             className: g.bannerText,
             variant: "text-sm/medium",
-            color: "text-secondary",
+            color: "text-subtle",
             children: h.intl.format(h.t["lVOH/p"], {
               helpCenterLink: d.Z.getArticleURL(m.BhN.SUMMER_BOGO_2025)
             })
@@ -135,7 +135,7 @@ let S = function(e) {
           }), (0, r.jsx)(s.Text, {
             className: g.bannerText,
             variant: "text-md/medium",
-            color: "text-secondary",
+            color: "text-subtle",
             children: h.intl.format(h.t["lVOH/p"], {
               helpCenterLink: d.Z.getArticleURL(m.BhN.SUMMER_BOGO_2025)
             })

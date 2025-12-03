@@ -52,16 +52,16 @@ function T(e) {
     eligibleTeams: n,
     isGuildOwner: l
   } = e, [o, c] = i.useState(), {
-    enableGuildMonetizationForTeam: u,
+    enableGuildMonetizationForTeam: d,
     submitting: g,
     error: m
-  } = (0, d.Z)(), {
+  } = (0, u.Z)(), {
     fetchSubscriptionsSettings: p
   } = (0, j.JH)(), f = (0, _.mY)(), h = i.useMemo(() => n.map(e => ({
     label: e.name,
     value: e.id
   })), [n]), b = async () => {
-    await u(t, o, y.wW.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, v.B)({
+    await d(t, o, y.wW.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, v.B)({
       title: E.intl.string(E.t["AP/2qe"]),
       body: E.intl.string(E.t.kHMgaK)
     }))
@@ -93,7 +93,7 @@ function T(e) {
 let P = e => {
   let {
     guild: t
-  } = e, n = (0, l.e7)([h.default], () => h.default.getCurrentUser()), a = (0, f.eM)(t, n), d = (0, c.Ob)(t), j = (0, l.e7)([b.Z], () => b.Z.isFocused()), {
+  } = e, n = (0, l.e7)([h.default], () => h.default.getCurrentUser()), a = (0, f.eM)(t, n), u = (0, c.Ob)(t), j = (0, l.e7)([b.Z], () => b.Z.isFocused()), {
     teams: _,
     loading: v
   } = (0, p.Z)({
@@ -103,14 +103,14 @@ let P = e => {
     return e.payout_account_status !== N.C.BLOCKED && (0, m.Z)(null != (t = null == n ? true : n.id) ? t : C.lds, e)
   }), [_, n]), P = y.length > 0, w = i.useCallback(async () => {
     x.default.track(C.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
-      is_onboarding_v2: d,
+      is_onboarding_v2: u,
       has_eligible_team: P,
       guild_id: t.id,
       is_owner: a
     });
-    let e = await (0, u.$)(C.E07.DEVELOPER_PORTAL_TEAMS);
+    let e = await (0, d.$)(C.E07.DEVELOPER_PORTAL_TEAMS);
     (0, o.Z)(e)
-  }, [t, a, d, P]), Z = i.useCallback(e => a ? (0, r.jsx)(g.Z, {
+  }, [t, a, u, P]), Z = i.useCallback(e => a ? (0, r.jsx)(g.Z, {
     onClick: w,
     children: e
   }) : e, [w, a]);

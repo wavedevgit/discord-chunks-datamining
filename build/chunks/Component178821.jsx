@@ -24,8 +24,8 @@ var Chunk54381 = require("./54381.js"),
 let x = 1e3 / 60,
   h = 1e3 / 30,
   p = 5e3,
-  g = 1e3 / 60 * 3,
-  b = Math.ceil(3e3 / (1e3 / 60));
+  b = 1e3 / 60 * 3,
+  g = Math.ceil(3e3 / (1e3 / 60));
 
 function v(e, t) {
   let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : window,
@@ -52,7 +52,7 @@ function v(e, t) {
 }
 
 function j(e) {
-  let t = a.useRef(Array(b).fill(0)),
+  let t = a.useRef(Array(g).fill(0)),
     r = a.useRef(performance.now()),
     n = a.useRef(0),
     c = a.useRef(0),
@@ -66,7 +66,7 @@ function j(e) {
   }), [a.useCallback(function() {
     let e = performance.now(),
       a = e - r.current;
-    r.current = e, s.current || (n.current -= t.current[l.current], t.current[l.current] = a, n.current += a, c.current < b && (c.current += 1), l.current = (l.current + 1) % b)
+    r.current = e, s.current || (n.current -= t.current[l.current], t.current[l.current] = a, n.current += a, c.current < g && (c.current += 1), l.current = (l.current + 1) % g)
   }, []), (e, t) => {
     var r;
     let a = null != (r = c.current) ? r : 1;
@@ -78,7 +78,7 @@ function j(e) {
 
 function k(e, t) {
   let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    n = a.useRef(Array(b).fill(0)),
+    n = a.useRef(Array(g).fill(0)),
     c = a.useRef(performance.now()),
     l = a.useRef(0),
     u = a.useRef(0),
@@ -93,7 +93,7 @@ function k(e, t) {
       let a = performance.now(),
         f = a - c.current;
       if (c.current = a, t.current && !r) return;
-      if (u.current -= n.current[o.current], n.current[o.current] = f, u.current += f, i.current < b && (i.current += 1), o.current = (o.current + 1) % b, f > g) {
+      if (u.current -= n.current[o.current], n.current[o.current] = f, u.current += f, i.current < g && (i.current += 1), o.current = (o.current + 1) % g, f > b) {
         let t = 0 === i.current ? x : u.current / i.current,
           r = Math.min(2 * x, t),
           n = Math.floor(f / (e ? r : x));
@@ -134,8 +134,8 @@ function y(e) {
     averageFrameTime: d,
     timeSinceLastDrop: m,
     onResetFrameData: h,
-    droppedFramesRef: g,
-    renderedFrameCount: b,
+    droppedFramesRef: b,
+    renderedFrameCount: g,
     bufferFramecountRef: y,
     frameCheckerEffect: T
   } = k(r, c), [R, C, S] = j(t), [O, E] = v(R, T), F = performance.now() - l.current < p, P = C(d, y.current);
@@ -153,7 +153,7 @@ function y(e) {
       children: ["FPS (~3sec):", " ", (0, n.jsx)(i.Text, {
         tag: "span",
         variant: "text-md/bold",
-        color: u < 30 ? "text-feedback-critical" : u < 45 ? "text-feedback-warning" : "text-primary",
+        color: u < 30 ? "text-feedback-critical" : u < 45 ? "text-feedback-warning" : "text-strong",
         children: u.toFixed(2)
       })]
     }), (0, n.jsxs)(i.Text, {
@@ -162,14 +162,14 @@ function y(e) {
       children: ["Dropped Frames:", " ", (0, n.jsx)(i.Text, {
         tag: "span",
         variant: "text-md/bold",
-        color: m < 2 ? "text-feedback-critical" : m < 5 ? "text-feedback-warning" : "text-primary",
-        children: g.current
+        color: m < 2 ? "text-feedback-critical" : m < 5 ? "text-feedback-warning" : "text-strong",
+        children: b.current
       }), (0, n.jsxs)(i.Text, {
         tag: "span",
         variant: "text-sm/normal",
         color: "text-muted",
         className: f.secondaryInfoText,
-        children: ["(Dropped: ", (g.current / b.current * 100).toFixed(4), "%)"]
+        children: ["(Dropped: ", (b.current / g.current * 100).toFixed(4), "%)"]
       }), F && (0, n.jsx)(s.u, {
         position: "left",
         text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
@@ -188,8 +188,8 @@ function y(e) {
       children: ["Rendered Frames:", " ", (0, n.jsx)(i.Text, {
         tag: "span",
         variant: "text-md/semibold",
-        color: "text-secondary",
-        children: b.current.toFixed(0)
+        color: "text-subtle",
+        children: g.current.toFixed(0)
       })]
     }), (0, n.jsxs)(i.Text, {
       variant: "text-md/normal",
@@ -197,7 +197,7 @@ function y(e) {
       children: ["Frame Times (~3sec):", " ", (0, n.jsxs)(i.Text, {
         tag: "span",
         variant: "text-md/semibold",
-        color: d > 1.1 * x ? "text-feedback-warning" : "text-secondary",
+        color: d > 1.1 * x ? "text-feedback-warning" : "text-subtle",
         children: [d.toFixed(2), "ms"]
       })]
     }), (0, n.jsx)(s.u, {
@@ -210,7 +210,7 @@ function y(e) {
         children: ["Idle Frame Delta (~3sec):", " ", (0, n.jsxs)(i.Text, {
           tag: "span",
           variant: "text-md/semibold",
-          color: P > 1 ? "text-feedback-critical" : "text-secondary",
+          color: P > 1 ? "text-feedback-critical" : "text-subtle",
           children: [P.toFixed(2), "ms"]
         }), F && (0, n.jsx)(s.u, {
           position: "left",

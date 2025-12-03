@@ -2,17 +2,17 @@
 /** chunk id: 595433, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  H: () => a
+  H: () => l
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js");
 
-function a() {
+function l() {
   let [e, t] = Chunk473749.useState(true);
   return {
     transitions: (0, Chunk481060.Yzy)(module, {
       keys: e => e ? "shown" : "hidden",
-      config: l,
+      config: a,
       from: {
         opacity: 0
       },
@@ -27,7 +27,7 @@ function a() {
     setVisible: exports
   }
 }
-let l = {
+let a = {
   mass: 1,
   tension: 250,
   friction: 18,

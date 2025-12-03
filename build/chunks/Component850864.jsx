@@ -31,7 +31,7 @@ function N(e) {
   let {
     guild: t,
     saveOnClose: n
-  } = e, [c, d] = i.useState("new"), N = i.useMemo(() => [{
+  } = e, [c, u] = i.useState("new"), N = i.useMemo(() => [{
     value: "new",
     name: j.intl.string(j.t["4e5u3l"])
   }, {
@@ -40,7 +40,7 @@ function N(e) {
   }], []), E = (0, l.e7)([o.Z], () => o.Z.theme);
   i.useEffect(() => () => {
     let e = g.Z.getSettings();
-    (0, u.oo)(t.id, e)
+    (0, d.oo)(t.id, e)
   }, [n, t.id]);
   let I = i.useMemo(() => (0, a.ap)(E) ? "existing" === c ? O : y : "existing" === c ? v : C, [c, E]);
   return (0, r.jsxs)("div", {
@@ -55,7 +55,7 @@ function N(e) {
         className: _.descriptionSection,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          color: "header-secondary",
+          color: "text-default",
           children: j.intl.string(j.t.DvHCq5)
         })
       }), (0, r.jsx)("div", {
@@ -73,7 +73,7 @@ function N(e) {
         className: _.descriptionSection,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          color: "header-secondary",
+          color: "text-default",
           children: j.intl.format(j.t["/lWYYS"], {})
         })
       }), (0, r.jsx)("div", {
@@ -91,7 +91,7 @@ function N(e) {
         className: _.descriptionSection,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          color: "header-secondary",
+          color: "text-default",
           children: j.intl.string(j.t.YnvKVE)
         }), (0, r.jsxs)("ul", {
           className: _.bulletList,
@@ -99,21 +99,21 @@ function N(e) {
             children: (0, r.jsx)(s.Text, {
               tag: "span",
               variant: "text-sm/medium",
-              color: "header-secondary",
+              color: "text-default",
               children: j.intl.string(j.t["6jEvRU"])
             })
           }), (0, r.jsx)("li", {
             children: (0, r.jsx)(s.Text, {
               tag: "span",
               variant: "text-sm/medium",
-              color: "header-secondary",
+              color: "text-default",
               children: j.intl.string(j.t["Fq+UsH"])
             })
           }), (0, r.jsx)("li", {
             children: (0, r.jsx)(s.Text, {
               tag: "span",
               variant: "text-sm/medium",
-              color: "header-secondary",
+              color: "text-default",
               children: j.intl.string(j.t.LeEPoH)
             })
           })]
@@ -136,7 +136,7 @@ function N(e) {
         className: _.centeredSection,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          color: "header-secondary",
+          color: "text-default",
           children: j.intl.string(j.t.EVV6uZ)
         })
       }), (0, r.jsx)("img", {
@@ -146,7 +146,7 @@ function N(e) {
       }), (0, r.jsx)(s.sY7, {
         options: N,
         value: c,
-        onChange: e => d(e.value),
+        onChange: e => u(e.value),
         look: "pill"
       })]
     })]
@@ -156,8 +156,8 @@ function N(e) {
 function E(e) {
   let {
     saveOnClose: t
-  } = e, n = (0, l.e7)([d.Z, c.Z], () => {
-    let e = d.Z.getGuildId();
+  } = e, n = (0, l.e7)([u.Z, c.Z], () => {
+    let e = u.Z.getGuildId();
     return c.Z.getGuild(e)
   });
   return null == n ? null : (0, r.jsx)(N, {

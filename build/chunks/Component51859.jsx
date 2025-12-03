@@ -36,7 +36,7 @@ function x(e) {
       className: v.image,
       powerup: n,
       isHovering: b
-    }), (0, r.jsx)(c.Q9, {
+    }), (0, r.jsx)(u.Q9, {
       title: n.title,
       textColor: C,
       footer: (0, r.jsx)(p.g, {
@@ -49,8 +49,8 @@ function x(e) {
         variant: "text-sm/medium",
         children: n.description
       })
-    }), (0, r.jsx)(c.N4, {
-      children: (0, r.jsx)(u.ZP, {
+    }), (0, r.jsx)(u.N4, {
+      children: (0, r.jsx)(c.ZP, {
         guildId: t,
         powerup: n,
         onError: _

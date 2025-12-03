@@ -37,13 +37,13 @@ function j(e) {
     className: b.empty,
     children: [(0, r.jsxs)("div", {
       className: b.textContainer,
-      children: [(0, r.jsx)(l.Heading, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-md/medium",
         color: "header-primary",
         children: t
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: n
       })]
     }), i]
@@ -84,7 +84,7 @@ function P(e) {
     name: u
   }), [p] = i.useState(() => {
     var e;
-    return (null != (e = (0, a.sample)(v)) ? e : v[0])(u)
+    return (null != (e = (0, l.sample)(v)) ? e : v[0])(u)
   }), h = i.useCallback(() => {
     o.Z.openPrivateChannel({
       recipientIds: t.id
@@ -96,7 +96,7 @@ function P(e) {
     children: (0, r.jsx)("div", {
       className: b.buttonRow,
       children: (0, r.jsx)(g.O1, {
-        icon: l.kBi,
+        icon: a.kBi,
         text: m.intl.string(m.t["g33r/P"]),
         onClick: h
       })
@@ -111,9 +111,9 @@ function I() {
     children: O.map((t, n) => {
       let i = s.Z.get(t);
       if (null == i) return null;
-      let a = (0, l.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
+      let l = (0, a.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
       return (0, r.jsx)("img", {
-        src: a,
+        src: l,
         alt: i.name,
         className: b.connectionIcon
       }, n)
@@ -128,7 +128,7 @@ function w(e) {
     null == t || t(), (0, d.openUserSettings)(u.n.CONNECTIONS_PANEL, {
       section: p.oAB.CONNECTIONS
     })
-  }, [t]), a = i.useCallback(() => {
+  }, [t]), l = i.useCallback(() => {
     null == t || t(), (0, d.openUserSettings)(u.n.CONTENT_AND_SOCIAL_PANEL, {
       section: p.oAB.CONTENT_AND_SOCIAL,
       subsection: "CONNECTED_GAMES"
@@ -144,7 +144,7 @@ function w(e) {
         onClick: n
       }), (0, r.jsx)(g.O1, {
         text: m.intl.string(m.t.GTCx0p),
-        onClick: a
+        onClick: l
       })]
     })]
   })

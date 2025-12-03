@@ -20,21 +20,21 @@ function h(e) {
   let {
     parentChannel: t
   } = e, n = (0, i.Wu)([d.Z], () => {
-    let e = d.Z.getUploads(t.id, l.Ie.CREATE_FORUM_POST.drafts.type);
+    let e = d.Z.getUploads(t.id, a.Ie.CREATE_FORUM_POST.drafts.type);
     return null == e ? true : e.filter(e => true !== e.isThumbnail)
   });
   return (0, r.jsxs)("div", {
     className: m.container,
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(l.Text, {
       variant: "text-md/semibold",
       color: "text-muted",
       children: u.intl.string(u.t.omKGKu)
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
       children: u.intl.string(u.t["zUjLl+"])
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(a.zJl, {
+      children: (0, r.jsx)(l.zJl, {
         className: m.uploadsContainer,
         orientation: "horizontal",
         paddingFix: false,
@@ -43,7 +43,7 @@ function h(e) {
           className: m.uploads,
           children: [n.map(e => (0, r.jsx)(o.Z, {
             channelId: t.id,
-            draftType: l.Ie.CREATE_FORUM_POST.drafts.type,
+            draftType: a.Ie.CREATE_FORUM_POST.drafts.type,
             upload: e,
             keyboardModeEnabled: true,
             hideFileName: true,

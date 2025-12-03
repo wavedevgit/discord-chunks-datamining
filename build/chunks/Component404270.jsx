@@ -24,7 +24,7 @@ let x = e => {
   var t;
   let {
     className: n
-  } = e, i = (0, a.e7)([c.default], () => c.default.getCurrentUser()), x = (0, a.e7)([o.default], () => o.default.locale), j = (0, a.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), _ = (0, a.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : true), v = null != (t = (0, a.e7)([d.Z], () => null != _ ? d.Z.getForSkuAndInterval((0, m.Wz)(f.Si.GUILD), _.interval, _.intervalCount) : true)) ? t : f.GP[f.Xh.PREMIUM_MONTH_GUILD];
+  } = e, i = (0, a.e7)([c.default], () => c.default.getCurrentUser()), x = (0, a.e7)([o.default], () => o.default.locale), j = (0, a.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), _ = (0, a.e7)([u.Z], () => null != j ? u.Z.get(j.planId) : true), v = null != (t = (0, a.e7)([u.Z], () => null != _ ? u.Z.getForSkuAndInterval((0, m.Wz)(f.Si.GUILD), _.interval, _.intervalCount) : true)) ? t : f.GP[f.Xh.PREMIUM_MONTH_GUILD];
   return (0, r.jsxs)("div", {
     className: l()(b.wrapper, n),
     children: [(0, r.jsx)(s.Heading, {
@@ -40,10 +40,10 @@ let x = e => {
           guildBoostingPlanId: i,
           interval: l,
           intervalCount: a
-        } = e, s = m.ZP.getDefaultPrice(i, m.ZP.isPremium(t)), o = m.ZP.getDefaultPrice(i, false), c = (0, p.og)((0, p.T4)(s.amount, s.currency), l, a), d = (0, p.og)((0, p.T4)(o.amount, o.currency), l, a);
+        } = e, s = m.ZP.getDefaultPrice(i, m.ZP.isPremium(t)), o = m.ZP.getDefaultPrice(i, false), c = (0, p.og)((0, p.T4)(s.amount, s.currency), l, a), u = (0, p.og)((0, p.T4)(o.amount, o.currency), l, a);
         return m.ZP.isPremium(t, f.PremiumTypes.TIER_2) ? h.intl.format(h.t.N3Icb2, {
           price: c,
-          originalPrice: d,
+          originalPrice: u,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
             className: b.originalPrice,
             children: e
@@ -52,7 +52,7 @@ let x = e => {
           discountPercent: (0, g.T3)(n, f.Rr / 100)
         }) : m.ZP.isPremium(t, f.PremiumTypes.TIER_1) ? h.intl.format(h.t.nQLVBF, {
           price: c,
-          originalPrice: d,
+          originalPrice: u,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
             className: b.originalPrice,
             children: e

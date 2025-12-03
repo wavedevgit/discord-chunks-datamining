@@ -102,7 +102,7 @@ function b() {
         children: Chunk388032.intl.string(Chunk388032.t.Cl8F8H)
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
-        color: "text-primary",
+        color: "text-strong",
         children: Chunk388032.intl.format(Chunk388032.t.vqgyJR, {
           linkedRolesUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.CONNECTION_DETAILS_ADMIN)
         })
@@ -115,7 +115,7 @@ function b() {
       })]
     }), module.length > 0 && (0, Chunk54381.jsx)("div", {
       className: Chunk407810.connectionsList,
-      children: x.map((e, t) => (0, r.jsx)(u.Z, {
+      children: x.map((e, t) => (0, r.jsx)(d.Z, {
         connection: e,
         index: t,
         onDragStart: _,

@@ -65,9 +65,9 @@ let Z = function(e) {
     guildId: t,
     transitionState: l,
     onClose: Z
-  } = e, S = (0, c.e7)([y.Z], () => y.Z.getSortedRoles(t)), D = (0, c.e7)([j.default], () => j.default.getId()), E = (0, c.e7)([h.ZP], () => h.ZP.getMember(t, D)), [I, A] = i.useState([]), T = (0, p.ZP)();
+  } = e, S = (0, c.e7)([h.Z], () => h.Z.getSortedRoles(t)), D = (0, c.e7)([j.default], () => j.default.getId()), E = (0, c.e7)([O.ZP], () => O.ZP.getMember(t, D)), [I, A] = i.useState([]), T = (0, p.ZP)();
   if (i.useEffect(() => {
-      0 !== I.length && O.default.track(P.rMx.PASSPORT_ENTRY_VIEWED, k({
+      0 !== I.length && y.default.track(P.rMx.PASSPORT_ENTRY_VIEWED, k({
         role_ids: I.map(e => {
           let {
             role_id: t
@@ -167,7 +167,7 @@ let Z = function(e) {
               children: e.name
             }), true !== e.description ? (0, n.jsx)(u.Text, {
               variant: "text-xs/normal",
-              color: "header-secondary",
+              color: "text-default",
               className: _.verifiedRoleDescription,
               children: e.description
             }) : null]

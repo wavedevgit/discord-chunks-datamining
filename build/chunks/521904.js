@@ -9384,25 +9384,6 @@ let {
         opacity: 1
       }
     },
-    HEADER_SECONDARY: {
-      category: "text",
-      [r.DARK]: {
-        raw: "NEUTRAL_9",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "NEUTRAL_69",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "NEUTRAL_10",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "NEUTRAL_5",
-        opacity: 1
-      }
-    },
     HOME_BACKGROUND: {
       category: "generic",
       [r.DARK]: {
@@ -13550,7 +13531,7 @@ let {
         opacity: 1
       }
     },
-    TEXT_PRIMARY: {
+    TEXT_STRONG: {
       category: "text",
       [r.DARK]: {
         raw: "NEUTRAL_1",
@@ -13569,7 +13550,7 @@ let {
         opacity: 1
       }
     },
-    TEXT_SECONDARY: {
+    TEXT_SUBTLE: {
       category: "text",
       [r.DARK]: {
         raw: "NEUTRAL_16",
@@ -13585,25 +13566,6 @@ let {
       },
       [r.DARKER]: {
         raw: "NEUTRAL_23",
-        opacity: 1
-      }
-    },
-    TEXT_TERTIARY: {
-      category: "text",
-      [r.DARK]: {
-        raw: "NEUTRAL_22",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "NEUTRAL_40",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "NEUTRAL_33",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "NEUTRAL_29",
         opacity: 1
       }
     },

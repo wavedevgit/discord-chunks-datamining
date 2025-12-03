@@ -80,7 +80,7 @@ function q(e) {
     selectedStyle: i,
     disabled: l,
     shouldShowUpsell: s
-  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9Kbe)), d = (0, f.ZP)(), h = (0, _.oC)(n, t), x = {
+  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9Kbe)), u = (0, f.ZP)(), h = (0, _.oC)(n, t), x = {
     dark: {
       src: W,
       name: t.name
@@ -95,29 +95,29 @@ function q(e) {
     (0, y.Z)(n, b.Z.GUILD_POWERUPS_GUILD_SETTINGS_ROLE_EDIT), (0, p.xf)()
   }
   return (0, r.jsx)(j.ZP, {
-    contentTypes: [u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
+    contentTypes: [d.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE],
     children: e => {
       let {
         visibleContent: p
       } = e;
       return (0, r.jsxs)(m.gNt, {
         label: U.intl.string(U.t["9wVJRB"]),
-        badge: p === u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE ? "new" : true,
+        badge: p === d.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE ? "new" : true,
         children: [(0, r.jsx)("div", {
           className: F.roleStyleContainer,
           children: k.pM.map(e => {
             let {
-              id: u,
+              id: d,
               colors: p,
               labelString: f
             } = e;
             return (0, r.jsxs)("button", {
               className: a()(F.roleStylePreviewContainer, {
-                [F.selected]: i === u,
-                [F.disabled]: l || s && [T.g.HOLOGRAPHIC, T.g.GRADIENT].includes(u)
+                [F.selected]: i === d,
+                [F.disabled]: l || s && [T.g.HOLOGRAPHIC, T.g.GRADIENT].includes(d)
               }),
               onClick: () => {
-                (0, S.Jf)(t.id, u)
+                (0, S.Jf)(t.id, d)
               },
               children: [(0, r.jsx)(m.Rny, {
                 children: (0, r.jsx)("div", {
@@ -133,7 +133,7 @@ function q(e) {
                     },
                     message: o,
                     preview: true,
-                    roleIcon: null != h ? h : (0, g.ap)(d) ? x.light : x.dark,
+                    roleIcon: null != h ? h : (0, g.ap)(u) ? x.light : x.dark,
                     isGroupStart: true,
                     disableInteraction: true,
                     previewGuildId: n
@@ -143,7 +143,7 @@ function q(e) {
                 className: F.roleStyleLabel,
                 children: U.intl.string(f)
               })]
-            }, u)
+            }, d)
           })
         }), s && (0, r.jsxs)("div", {
           className: F.roleStyleUpsell,
@@ -263,10 +263,10 @@ function Q(e) {
   }, c = {
     src: W,
     name: t.name
-  }, d = {
+  }, u = {
     src: z,
     name: t.name
-  }, u = (0, _.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
+  }, d = (0, _.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
   return (0, r.jsx)(m.Rny, {
     children: (0, r.jsx)("div", {
       className: a()(F.previewContainer, {
@@ -283,13 +283,13 @@ function Q(e) {
             children: (0, r.jsx)(v.Z, {
               author: o,
               message: s,
-              roleIcon: null != u ? u : (0, g.ap)(e) ? d : c,
+              roleIcon: null != d ? d : (0, g.ap)(e) ? u : c,
               previewGuildId: n,
               isGroupStart: true
             })
           }), e === G.BRd.LIGHT && i !== T.g.SOLID && (0, r.jsx)(m.Text, {
             variant: "text-xs/medium",
-            color: "text-secondary",
+            color: "text-subtle",
             className: F.lightThemeNotice,
             children: U.intl.string(U.t.nxwm3I)
           })]
@@ -328,7 +328,7 @@ function ee(e) {
     role: n,
     locked: i,
     setSelectedSection: l
-  } = e, s = (0, C.yH)(t.id, n), o = (0, d.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !s, u = null != o && s ? o.currentStyle : T.g.SOLID, g = (0, E.fI)(n), p = i || g, f = (0, d.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
+  } = e, s = (0, C.yH)(t.id, n), o = (0, u.e7)([T.Z], () => T.Z.getRoleStyleData(n.id)), c = !s, d = null != o && s ? o.currentStyle : T.g.SOLID, g = (0, E.fI)(n), p = i || g, f = (0, u.e7)([I.Z], () => I.Z.canImpersonateRole(t, n)), {
     headerHeight: h,
     headerRef: b
   } = (0, w.Z)(0), {
@@ -364,18 +364,18 @@ function ee(e) {
         })
       }), (0, r.jsx)(m.izJ, {
         className: F.divider
-      }), (s || c) && null != u && (0, r.jsx)(q, {
+      }), (s || c) && null != d && (0, r.jsx)(q, {
         role: n,
         guildId: t.id,
-        selectedStyle: u,
+        selectedStyle: d,
         disabled: p,
         shouldShowUpsell: c
-      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(J, {
+      }), d !== T.g.HOLOGRAPHIC && null != d && (0, r.jsx)(J, {
         role: n,
         disabled: p,
-        currentStyle: u,
+        currentStyle: d,
         hasEnhancedRoleColors: s
-      }), u === T.g.HOLOGRAPHIC && (0, r.jsx)(N.Z, {
+      }), d === T.g.HOLOGRAPHIC && (0, r.jsx)(N.Z, {
         className: F.holographicInfoBox,
         children: (0, r.jsx)(m.Text, {
           variant: "text-xs/medium",
@@ -388,7 +388,7 @@ function ee(e) {
       }), (0, r.jsx)(Q, {
         role: n,
         guildId: t.id,
-        selectedStyle: u,
+        selectedStyle: d,
         disableInteraction: !s
       }), (0, r.jsx)(m.izJ, {
         className: F.divider

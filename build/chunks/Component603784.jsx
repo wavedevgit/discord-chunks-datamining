@@ -108,11 +108,11 @@ let w = Chunk473749.forwardRef((e, t) => {
   f ? U = I.headerExpanded : M && (U = I.headerClickable);
   let B = l.timestampStart.calendar(),
     F = l.timestampEnd.calendar();
-  n = B === F ? (0, r.jsx)(d.Text, {
+  n = B === F ? (0, r.jsx)(u.Text, {
     className: I.timestamp,
     variant: "text-sm/normal",
     children: B
-  }) : (0, r.jsxs)(d.Text, {
+  }) : (0, r.jsxs)(u.Text, {
     className: I.timestamp,
     variant: "text-sm/normal",
     children: [B, "—", F]
@@ -123,7 +123,7 @@ let w = Chunk473749.forwardRef((e, t) => {
     children: e => (0, r.jsxs)("div", {
       ref: t,
       className: a()(I.auditLog, o),
-      children: [(0, r.jsxs)(d.P3F, T(S({
+      children: [(0, r.jsxs)(u.P3F, T(S({
         className: U,
         "aria-expanded": f,
         onClick: H
@@ -147,7 +147,7 @@ let w = Chunk473749.forwardRef((e, t) => {
             newAnalyticsLocations: [g.Z.AVATAR],
             children: e => {
               var t;
-              return (0, r.jsx)(d.qEK, T(S({}, e), {
+              return (0, r.jsx)(u.qEK, T(S({}, e), {
                 ref: G,
                 onClick: t => {
                   t.stopPropagation(), e.onClick(t)
@@ -155,19 +155,19 @@ let w = Chunk473749.forwardRef((e, t) => {
                 className: I.avatar,
                 src: l.action === N.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === N.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === N.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === N.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, O.j)() : null == (t = l.user) ? true : t.getAvatarURL(v, 40),
                 "aria-hidden": true,
-                size: d.EFr.SIZE_40
+                size: u.EFr.SIZE_40
               }))
             }
           });
           if (null != n) {
-            let e = u.Z.get(n);
+            let e = d.Z.get(n);
             if (null != e) {
               let t = (0, c.wj)(k) ? e.icon.darkSVG : e.icon.lightSVG;
-              return (0, r.jsx)(d.qEK, {
+              return (0, r.jsx)(u.qEK, {
                 className: I.avatar,
                 src: t,
                 "aria-hidden": true,
-                size: d.EFr.SIZE_40
+                size: u.EFr.SIZE_40
               })
             }
           }
@@ -197,7 +197,7 @@ let w = Chunk473749.forwardRef((e, t) => {
                     }, t);
                     if (null != l.options.integration_type) {
                       var n;
-                      let e = u.Z.get(l.options.integration_type);
+                      let e = d.Z.get(l.options.integration_type);
                       return null != (n = null == e ? true : e.name) ? n : E.intl.string(E.t["n+olu7"])
                     }
                     return E.intl.string(E.t["30mdIx"])

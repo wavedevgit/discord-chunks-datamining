@@ -1,12 +1,12 @@
 /** Chunk was on 51343 **/
-/** chunk id: 585183, original params: e,a,t (module,exports,require) **/
+/** chunk id: 585183, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   h: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  r = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk457330 = require("./457330.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -19,36 +19,36 @@ let N = new Chunk710845.Z("TwoWayLinkDiscordConsentWeb");
 
 function C(e) {
   let {
-    platformType: a,
-    clientId: t,
+    platformType: t,
+    clientId: a,
     scopes: s,
     authToken: d,
     onContinue: C,
     onError: j,
     onClose: p,
     redirectUri: v
-  } = e, [b, f] = r.useState(false), k = r.useCallback(async e => {
-    let t, n, {
-        location: r
+  } = e, [f, b] = n.useState(false), k = n.useCallback(async e => {
+    let a, l, {
+        location: n
       } = e,
       {
         callbackCode: s,
-        callbackState: l
+        callbackState: r
       } = d;
     try {
-      t = await o.Z.completeTwoWayLink(a, r, s, l)
+      a = await o.Z.completeTwoWayLink(t, n, s, r)
     } catch (e) {
       var i;
-      N.error("".concat(a, " link error:"), e), n = null == (i = e.body) ? true : i.code
+      N.error("".concat(t, " link error:"), e), l = null == (i = e.body) ? true : i.code
     }
-    null != t ? C() : j(n)
-  }, [a, d, C, j]), {
+    null != a ? C() : j(l)
+  }, [t, d, C, j]), {
     header: g,
     body: E,
     appDetails: T,
     sendAuthorize: O
-  } = (0, x.useOAuth2AuthorizeForm)({
-    clientId: t,
+  } = (0, u.useOAuth2AuthorizeForm)({
+    clientId: a,
     scopes: s,
     responseType: "code",
     callback: k,
@@ -56,42 +56,42 @@ function C(e) {
     isEmbeddedFlow: true,
     redirectUri: v,
     isTwoWayLinkDiscordConsent: true
-  }), R = r.useCallback(() => {
-    l()(null != O, "sendAuthorize not available"), f(true), O(true)
+  }), R = n.useCallback(() => {
+    r()(null != O, "sendAuthorize not available"), b(true), O(true)
   }, [O]);
-  return (0, n.jsxs)(u.Z, {
-    children: [(0, n.jsxs)(i.xBx, {
+  return (0, l.jsxs)(x.Z, {
+    children: [(0, l.jsxs)(i.xBx, {
       direction: c.Z.Direction.VERTICAL,
-      className: m.header,
+      className: h.header,
       separator: false,
-      children: [(0, n.jsx)(i.Text, {
-        className: m.stepHeader,
+      children: [(0, l.jsx)(i.Text, {
+        className: h.stepHeader,
         variant: "text-xs/bold",
-        color: "header-secondary",
-        children: h.intl.format(h.t.fHz6eR, {
+        color: "text-default",
+        children: m.intl.format(m.t.fHz6eR, {
           number: 2,
           total: 2
         })
-      }), null != p && (0, n.jsx)(i.olH, {
-        className: m.closeButton,
+      }), null != p && (0, l.jsx)(i.olH, {
+        className: h.closeButton,
         onClick: p
       })]
-    }), (0, n.jsxs)(i.hzk, {
-      className: m.consentContent,
+    }), (0, l.jsxs)(i.hzk, {
+      className: h.consentContent,
       paddingFix: false,
-      children: [(0, n.jsx)("div", {
-        className: m.consentHeader,
+      children: [(0, l.jsx)("div", {
+        className: h.consentHeader,
         children: g
       }), E, T]
-    }), (0, n.jsx)(i.mzw, {
-      className: m.footer,
-      children: (0, n.jsx)("div", {
+    }), (0, l.jsx)(i.mzw, {
+      className: h.footer,
+      children: (0, l.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: m.footerButton,
-        children: (0, n.jsx)(i.Button, {
+        className: h.footerButton,
+        children: (0, l.jsx)(i.Button, {
           variant: "primary",
-          text: h.intl.string(h.t.ZN4hkc),
-          loading: b,
+          text: m.intl.string(m.t.ZN4hkc),
+          loading: f,
           onClick: R
         })
       })

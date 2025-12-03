@@ -30,16 +30,16 @@ let P = e => {
     let {
       guildId: t,
       channelType: n,
-      channel: l,
+      channel: r,
       onSelectChannel: i,
       disabled: a,
       entityType: s
-    } = e, d = n === E.d4z.GUILD_STAGE_VOICE, g = (0, j.Q)(l, s), h = (0, p.sR)(t, n);
-    return (0, r.jsx)(o.VcW, {
+    } = e, d = n === E.d4z.GUILD_STAGE_VOICE, g = (0, j.Q)(r, s), h = (0, p.sR)(t, n);
+    return (0, l.jsx)(o.VcW, {
       label: d ? N.intl.string(N.t.S7GjDz) : N.intl.string(N.t["7RYWCP"]),
       required: true,
       helperText: g ? true : N.intl.string(N.t.F3bDaX),
-      value: null == l ? true : l.id,
+      value: null == r ? true : r.id,
       options: h.map(e => ({
         value: e.id,
         label: (0, c.F6)(e, x.default, m.Z, true)
@@ -51,11 +51,11 @@ let P = e => {
       renderOptionPrefix: e => ((e, t) => {
         let n = u.Z.getChannel(e);
         if (null == n) return null;
-        let l = n.type === E.d4z.GUILD_STAGE_VOICE,
+        let r = n.type === E.d4z.GUILD_STAGE_VOICE,
           i = (0, j.Q)(n, t),
           a = i ? o.gj8 : o.gjC,
           s = i ? o.ewx : o.pki;
-        return (0, r.jsx)(l ? s : a, {
+        return (0, l.jsx)(r ? s : a, {
           color: "currentColor",
           size: "md",
           className: C.channelOptionIcon
@@ -65,15 +65,15 @@ let P = e => {
     })
   },
   S = (e, t) => n => {
-    let r = {
+    let l = {
       entityType: n,
       scheduledEndTime: true
     };
     if (n === O.WX.EXTERNAL) {
-      var l;
-      r.scheduledEndTime = (null != (l = a()(t.scheduledStartTime)) ? l : a()()).add(2, "hour").toISOString()
+      var r;
+      l.scheduledEndTime = (null != (r = a()(t.scheduledStartTime)) ? r : a()()).add(2, "hour").toISOString()
     }
-    e(r)
+    e(l)
   };
 
 function I(e) {
@@ -85,8 +85,8 @@ function I(e) {
   } = e, {
     entityType: c,
     channelId: d
-  } = n, g = (0, s.e7)([u.Z], () => u.Z.getChannel(d), [d]), m = l.useRef(null);
-  l.useEffect(() => {
+  } = n, g = (0, s.e7)([u.Z], () => u.Z.getChannel(d), [d]), m = r.useRef(null);
+  r.useEffect(() => {
     if (a && c === O.WX.EXTERNAL) {
       var e;
       null == (e = m.current) || e.focus()
@@ -101,7 +101,7 @@ function I(e) {
     v = (0, b.xV)(n),
     p = (0, b.xC)(c),
     f = (0, h.xt)(n);
-  return null == c || c === O.WX.NONE ? null : c === O.WX.EXTERNAL ? (0, r.jsx)(o.oil, {
+  return null == c || c === O.WX.NONE ? null : c === O.WX.EXTERNAL ? (0, l.jsx)(o.oil, {
     label: N.intl.string(N.t.yx785A),
     required: true,
     onChange: e => {
@@ -115,7 +115,7 @@ function I(e) {
     maxLength: O.gG,
     value: null != v ? v : "",
     inputRef: m
-  }) : null == p ? null : (0, r.jsx)(P, {
+  }) : null == p ? null : (0, l.jsx)(P, {
     guildId: t,
     channelType: p,
     onSelectChannel: x,
@@ -130,7 +130,7 @@ function Z(e) {
     guildId: t,
     guildEvent: n,
     onChange: i
-  } = e, a = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), c = (0, v.Z)(t, true), u = (0, v.Z)(t, E.d4z.GUILD_VOICE), g = (0, v.Z)(t, E.d4z.GUILD_STAGE_VOICE), m = (0, p.sR)(t, E.d4z.GUILD_VOICE), x = (0, f.q)(a), j = null == a ? true : a.features.has(E.GuildFeatures.COMMUNITY), b = (0, h.xt)(n), y = S(i, n), C = l.useMemo(() => {
+  } = e, a = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), c = (0, v.Z)(t, true), u = (0, v.Z)(t, E.d4z.GUILD_VOICE), g = (0, v.Z)(t, E.d4z.GUILD_STAGE_VOICE), m = (0, p.sR)(t, E.d4z.GUILD_VOICE), x = (0, f.q)(a), j = null == a ? true : a.features.has(E.GuildFeatures.COMMUNITY), b = (0, h.xt)(n), y = S(i, n), C = r.useMemo(() => {
     let e = !u || 0 === m.length,
       t = u ? N.intl.string(N.t["DkY+cO"]) : N.intl.string(N.t.HeF1kV),
       n = [{
@@ -159,7 +159,7 @@ function Z(e) {
     }
     return n
   }, [c, u, g, j, m.length, x.length]);
-  return (0, r.jsx)(o.FXm, {
+  return (0, l.jsx)(o.FXm, {
     value: n.entityType,
     options: C,
     onChange: y,
@@ -171,72 +171,72 @@ function Z(e) {
 function T(e) {
   let {
     guildId: t,
-    guildEvent: l,
+    guildEvent: r,
     validationErrorMessage: i,
     onChange: a,
     isSlideReady: c = false
   } = e, {
     entityType: u
-  } = l, m = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), x = (0, f.q)(m), h = (0, s.e7)([g.Z], () => g.Z.can(E.Plq.MANAGE_CHANNELS, m)), v = null == m ? true : m.features.has(E.GuildFeatures.COMMUNITY), p = S(a, l), j = v && u !== O.WX.EXTERNAL && 0 === x.length && h && null != u;
-  return (0, r.jsxs)("div", {
+  } = r, m = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), x = (0, f.q)(m), h = (0, s.e7)([g.Z], () => g.Z.can(E.Plq.MANAGE_CHANNELS, m)), v = null == m ? true : m.features.has(E.GuildFeatures.COMMUNITY), p = S(a, r), j = v && u !== O.WX.EXTERNAL && 0 === x.length && h && null != u;
+  return (0, l.jsxs)("div", {
     className: C.container,
-    children: [(0, r.jsxs)(o.Kqy, {
+    children: [(0, l.jsxs)(o.Kqy, {
       gap: 4,
-      children: [(0, r.jsx)(o.Heading, {
+      children: [(0, l.jsx)(o.Heading, {
         variant: "heading-xl/semibold",
         children: N.intl.string(N.t["DC+Qm8"])
-      }), (0, r.jsx)(o.Text, {
-        color: "text-secondary",
+      }), (0, l.jsx)(o.Text, {
+        color: "text-subtle",
         variant: "text-sm/normal",
         children: N.intl.string(N.t.IwmXLP)
       })]
-    }), (0, r.jsx)(Z, {
+    }), (0, l.jsx)(Z, {
       guildId: t,
-      guildEvent: l,
+      guildEvent: r,
       onChange: a
-    }), (0, r.jsx)(I, {
+    }), (0, l.jsx)(I, {
       guildId: t,
-      guildEvent: l,
+      guildEvent: r,
       isFocusReady: c,
       onChange: a
-    }), j ? (0, r.jsx)(y.Z, {
+    }), j ? (0, l.jsx)(y.Z, {
       onClick: () => {
         p(O.WX.STAGE_INSTANCE), (0, o.ZDy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("33285"), n.e("29497"), n.e("60565")]).then(n.bind(n, 241865));
           return n => {
-            var l, i;
-            return (0, r.jsx)(e, (l = function(e) {
+            var r, i;
+            return (0, l.jsx)(e, (r = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
-                  r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                  l = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                   return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                  var r;
-                  r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
+                }))), l.forEach(function(t) {
+                  var l;
+                  l = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: l,
                     enumerable: true,
                     configurable: true,
                     writable: true
-                  }) : e[t] = r
+                  }) : e[t] = l
                 })
               }
               return e
             }({}, n), i = i = {
               channelType: E.d4z.GUILD_STAGE_VOICE,
               guildId: t
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
+                var l = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, l)
               }
               return n
             })(Object(i)).forEach(function(e) {
-              Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-            }), l))
+              Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+            }), r))
           }
         })
       }

@@ -16,10 +16,10 @@ function c(e) {
     onChange: t,
     initialValue: n,
     maxWordCount: c,
-    collapsed: d = false
-  } = e, [u, g] = i.useState(!d);
+    collapsed: u = false
+  } = e, [d, g] = i.useState(!u);
   return (0, r.jsx)(l.zF9, {
-    isExpanded: u,
+    isExpanded: d,
     collapsibleContent: (0, r.jsx)(a.Z, {
       onChangeText: t,
       maxWordCount: c,
@@ -35,14 +35,14 @@ function c(e) {
       } = e;
       return (0, r.jsx)(l.P3F, {
         onClick: e => {
-          g(!u), t(e)
+          g(!d), t(e)
         },
         children: (0, r.jsxs)("div", {
           className: o.header,
           children: [(0, r.jsx)(l.Heading, {
             variant: "text-sm/medium",
             children: s.intl.string(s.t.lbE2Nm)
-          }), u ? (0, r.jsx)(l.u04, {
+          }), d ? (0, r.jsx)(l.u04, {
             size: "md",
             color: "currentColor",
             className: o.arrow

@@ -57,17 +57,17 @@ function g(e) {
     }, {})
   }, [l]);
   return (0, r.jsxs)("div", {
-    className: u.buttons,
+    className: d.buttons,
     children: [(0, r.jsx)(a.tEY, {
       within: true,
       children: (0, r.jsxs)("div", {
-        className: u.iconInput,
+        className: d.iconInput,
         children: [(0, r.jsx)(a.Button, {
           tabIndex: false,
           size: "sm",
           variant: "primary",
           disabled: !o,
-          text: d.intl.string(d.t.r3JdsT)
+          text: u.intl.string(u.t.r3JdsT)
         }), (0, r.jsx)(s.ZP, {
           tabIndex: 0,
           onChange: m,
@@ -77,7 +77,7 @@ function g(e) {
     }), null != t.icon ? (0, r.jsx)(a.Button, {
       variant: "critical-secondary",
       size: "sm",
-      text: d.intl.string(d.t.x8AlTm),
+      text: u.intl.string(u.t.x8AlTm),
       onClick: g,
       disabled: !o
     }) : null]
@@ -91,10 +91,10 @@ function m(e) {
     onIconChange: i
   } = e, s = (0, l.e7)([o.Z], () => o.Z.getError("icon"));
   return (0, r.jsx)("section", {
-    className: u.container,
+    className: d.container,
     children: (0, r.jsx)(a.gNt, {
-      label: d.intl.string(d.t.FkQnxJ),
-      description: d.intl.string(d.t.KjkA0W),
+      label: u.intl.string(u.t.FkQnxJ),
+      description: u.intl.string(u.t.KjkA0W),
       errorMessage: s,
       children: (0, r.jsx)(g, {
         profile: t,

@@ -45,7 +45,7 @@ function d(e) {
       value: n
     }), (0, r.jsx)(a.x, {
       variant: "text-xs/medium",
-      color: "header-secondary",
+      color: "text-default",
       className: c.label,
       children: l.intl.format(l.t.t9Jm9o, {})
     })]

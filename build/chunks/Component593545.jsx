@@ -290,7 +290,7 @@ function R(e) {
         language: d
       })
     }), (0, r.jsxs)(u.Text, {
-      color: "header-secondary",
+      color: "text-default",
       className: g.footer,
       variant: "text-sm/normal",
       children: [w ? (0, r.jsxs)(r.Fragment, {
@@ -351,7 +351,7 @@ function w(e) {
           language: f
         })
       }), (0, r.jsxs)(u.Text, {
-        color: "header-secondary",
+        color: "text-default",
         className: g.modalFooter,
         variant: "text-sm/normal",
         children: [(0, r.jsx)("div", {

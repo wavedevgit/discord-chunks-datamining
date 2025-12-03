@@ -64,7 +64,7 @@ let x = function(e) {
       }), i))
     }
   }), [t, l]), j = (0, s.e7)([g.default], () => g.default.getId());
-  return (0, d.pw)(l) ? (0, r.jsx)(c.Button, {
+  return (0, u.pw)(l) ? (0, r.jsx)(c.Button, {
     variant: "primary",
     size: "sm",
     text: h.intl.string(h.t["9Z+aEP"]),
@@ -72,7 +72,7 @@ let x = function(e) {
   }) : (0, r.jsxs)(c.P3F, {
     className: b.editWelcomeSection,
     onClick: x,
-    children: [(0, r.jsx)(u.Z, {
+    children: [(0, r.jsx)(d.Z, {
       guildId: t,
       welcomeMessage: {
         authorIds: l.authorIds.length > 0 ? l.authorIds : [j],

@@ -43,17 +43,17 @@ function g(e) {
     } catch (t) {
       null != e && x(e)
     }
-  }, C = d.intl.string(d.t["ETE/oC"]), y = !p && j ? d.intl.formatToPlainString(d.t.nula34, {
+  }, C = u.intl.string(u.t["ETE/oC"]), y = !p && j ? u.intl.formatToPlainString(u.t.nula34, {
     ruleName: null == f ? true : f.name
   }) : true;
   return null != h && (y = (0, r.jsx)(a.Text, {
     variant: "text-md/normal",
     color: "text-feedback-critical",
-    className: u.message,
+    className: d.message,
     children: h
   })), (0, r.jsx)(i.W, {
     component: "div",
-    className: u.saveNoticeContainer,
+    className: d.saveNoticeContainer,
     children: v && (0, r.jsx)(a.oXn, {
       children: (0, r.jsx)(l.Z, {
         submitting: m,

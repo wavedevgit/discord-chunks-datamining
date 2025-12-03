@@ -15,11 +15,11 @@ function f(t) {
   var e, r, {
       avatarId: f,
       storageHash: u,
-      avatarDescription: p,
-      onConfirmDelete: b,
+      avatarDescription: b,
+      onConfirmDelete: p,
       onClose: y
     } = t,
-    d = function(t, e) {
+    O = function(t, e) {
       if (null == t) return {};
       var r, n, o = function(t, e) {
         if (null == t) return {};
@@ -34,7 +34,7 @@ function f(t) {
       }
       return o
     }(t, ["avatarId", "storageHash", "avatarDescription", "onConfirmDelete", "onClose"]);
-  let [O, m] = o.useState(false), {
+  let [d, m] = o.useState(false), {
     avatarSrc: v,
     eventHandlers: j
   } = (0, c.Z)({
@@ -63,44 +63,44 @@ function f(t) {
     }
     return t
   }({
-    bodyClassName: l.modalContent,
-    header: s.intl.string(s.t.rfaLTH),
-    confirmText: s.intl.string(s.t.Lh0uyy),
-    cancelText: s.intl.string(s.t["ETE/oC"]),
+    bodyClassName: s.modalContent,
+    header: l.intl.string(l.t.rfaLTH),
+    confirmText: l.intl.string(l.t.Lh0uyy),
+    cancelText: l.intl.string(l.t["ETE/oC"]),
     confirmButtonColor: a.zx.Colors.RED,
-    loading: O,
+    loading: d,
     onConfirm: async () => {
       m(true);
       try {
-        await b()
+        await p()
       } catch (t) {} finally {
         m(false)
       }
       y()
     },
     onClose: y
-  }, d), r = r = {
+  }, O), r = r = {
     children: [(0, n.jsx)(i.Text, {
       variant: "text-sm/normal",
-      color: "text-secondary",
-      children: s.intl.string(s.t.EKmxKc)
+      color: "text-subtle",
+      children: l.intl.string(l.t.EKmxKc)
     }), (0, n.jsx)("div", {
       onMouseEnter: g,
       onMouseLeave: x,
-      className: l.avatarContainer,
+      className: s.avatarContainer,
       children: (0, n.jsx)("img", {
         src: v,
-        alt: p,
-        className: l.avatar
+        alt: b,
+        className: s.avatar
       })
     }), (0, n.jsx)(i.Text, {
       variant: "eyebrow",
       color: "text-feedback-positive",
-      children: s.intl.string(s.t["2Ld8DM"])
+      children: l.intl.string(l.t["2Ld8DM"])
     }), (0, n.jsx)(i.Text, {
       variant: "text-xs/normal",
-      color: "text-secondary",
-      children: s.intl.string(s.t.Oe0xqt)
+      color: "text-subtle",
+      children: l.intl.string(l.t.Oe0xqt)
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
     var r = Object.keys(t);

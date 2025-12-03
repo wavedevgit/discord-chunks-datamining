@@ -42,7 +42,7 @@ function x(e) {
     children: [(0, r.jsx)(s.Text, {
       className: j.title,
       variant: "text-xs/bold",
-      color: "header-secondary",
+      color: "text-default",
       children: t.isForumLikeChannel() ? v.intl.string(v.t.ioVdO2) : v.intl.string(v.t.VNYs2v)
     }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(C, {
       thread: e

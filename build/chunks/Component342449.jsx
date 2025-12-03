@@ -1,7 +1,7 @@
 /** Chunk was on 91315 **/
 /** chunk id: 342449, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,11 +15,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk836227 = require("./836227.js");
 let g = new Set;
 
-function m(e) {
+function f(e) {
   let {
     channel: t,
     startThread: n,
-    goToThread: m
+    goToThread: f
   } = e, {
     joinedThreadIds: j,
     unjoinedThreadIds: v
@@ -30,23 +30,23 @@ function m(e) {
     loadMore: Z
   } = (0, i.qQ)(t, s.z.LATEST_ACTIVITY, g, a.z.MATCH_SOME), w = l.useRef(null);
   (0, i.r7)();
-  let y = l.useCallback(e => {
+  let O = l.useCallback(e => {
       let t = 0 === e.section ? j : 1 === e.section ? v : x;
-      return (0, r.jsx)(d.Z, {
+      return (0, r.jsx)(u.Z, {
         threadId: t[e.row],
-        goToThread: m
+        goToThread: f
       }, "".concat(e.section, "-").concat(e.row))
-    }, [x, j, v, m]),
-    O = l.useCallback(e => 0 === e.section ? (0, r.jsx)(f, {
-      text: u.intl.formatToPlainString(u.t["4E27fz"], {
+    }, [x, j, v, f]),
+    y = l.useCallback(e => 0 === e.section ? (0, r.jsx)(m, {
+      text: d.intl.formatToPlainString(d.t["4E27fz"], {
         count: j.length
       })
-    }, e.section) : 1 === e.section ? (0, r.jsx)(f, {
-      text: u.intl.formatToPlainString(u.t.csPc4D, {
+    }, e.section) : 1 === e.section ? (0, r.jsx)(m, {
+      text: d.intl.formatToPlainString(d.t.csPc4D, {
         count: v.length
       })
-    }, e.section) : (0, r.jsx)(f, {
-      text: u.intl.string(u.t["wUNQ+w"])
+    }, e.section) : (0, r.jsx)(m, {
+      text: d.intl.string(d.t["wUNQ+w"])
     }, e.section), [j.length, v.length]),
     S = l.useCallback(e => 1 === e && j.length > 0 || 2 === e && (j.length > 0 || v.length > 0) ? 64 : 32, [j.length, v.length]),
     N = l.useCallback(() => {
@@ -67,7 +67,7 @@ function m(e) {
       className: h.list,
       children: (0, r.jsx)(c.Z, {
         channel: t,
-        header: u.intl.string(u.t.HgTQ8p),
+        header: d.intl.string(d.t.HgTQ8p),
         startThread: n
       })
     });
@@ -78,19 +78,19 @@ function m(e) {
     sections: [j.length, v.length, x.length],
     sectionHeight: S,
     rowHeight: 80,
-    renderRow: y,
-    renderSection: O,
+    renderRow: O,
+    renderSection: y,
     chunkSize: 20,
     onScroll: p ? N : true
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     text: t
   } = e;
   return (0, r.jsx)(o.Text, {
-    color: "header-secondary",
+    color: "text-default",
     variant: "text-xs/bold",
     className: h.sectionHeader,
     children: t

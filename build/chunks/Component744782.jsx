@@ -31,13 +31,13 @@ function O(e) {
   let {
     onClose: E,
     event: N
-  } = e, C = null == N ? true : N.guild_id, P = (0, l.e7)([u.ZP], () => {
+  } = e, C = null == N ? true : N.guild_id, P = (0, r.e7)([u.ZP], () => {
     var e;
     return null != C ? null == (e = u.ZP.getDefaultChannel(C)) ? true : e.id : null
-  }, [C]), S = (0, l.e7)([d.Z], () => d.Z.getGuild(C), [C]), {
+  }, [C]), S = (0, r.e7)([d.Z], () => d.Z.getGuild(C), [C]), {
     channel_id: I,
     id: Z
-  } = null != N ? N : {}, T = (0, l.e7)([g.Z], () => {
+  } = null != N ? N : {}, T = (0, r.e7)([g.Z], () => {
     let e = null != I ? I : P;
     return null == e ? null : g.Z.getInvite(e)
   }, [I, P]);
@@ -51,20 +51,20 @@ function O(e) {
     R = (0, s.Z)(null != k ? k : ""),
     _ = null != (n = null == T ? true : T.maxAge) ? n : b.value,
     A = null != (O = null == T ? true : T.maxUses) ? O : y.value;
-  return (0, r.jsxs)("div", {
+  return (0, l.jsxs)("div", {
     className: j.container,
-    children: [(0, r.jsx)(i.P3F, {
+    children: [(0, l.jsx)(i.P3F, {
       onClick: E,
       className: j.close,
       "aria-label": f.intl.string(f.t.cpT0Cq),
-      children: (0, r.jsx)(i.Dio, {
+      children: (0, l.jsx)(i.Dio, {
         size: "md",
         color: "currentColor"
       })
-    }), (0, r.jsx)(c.Z, {
-      children: (0, r.jsx)("div", {
+    }), (0, l.jsx)(c.Z, {
+      children: (0, l.jsx)("div", {
         className: j.iconContainer,
-        children: (0, r.jsx)(i.Que, {
+        children: (0, l.jsx)(i.Que, {
           size: "custom",
           color: "currentColor",
           height: 30,
@@ -72,18 +72,18 @@ function O(e) {
           className: j.icon
         })
       })
-    }), (0, r.jsx)(i.Heading, {
+    }), (0, l.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
       className: j.header,
       children: f.intl.string(f.t.UzNv7u)
-    }), (0, r.jsx)(i.Text, {
+    }), (0, l.jsx)(i.Text, {
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       className: j.body,
       children: f.intl.string(f.t.UetJjH)
-    }), (0, r.jsxs)("div", {
+    }), (0, l.jsxs)("div", {
       className: j.invite,
-      children: [(0, r.jsx)(o.S, {
+      children: [(0, l.jsx)(o.S, {
         value: R,
         autoFocus: false,
         onCopy: e => {
@@ -99,9 +99,9 @@ function O(e) {
             guild_scheduled_event_id: null == N ? true : N.id
           })
         }
-      }), (null == S ? true : S.vanityURLCode) == null && (0, r.jsx)(i.Text, {
+      }), (null == S ? true : S.vanityURLCode) == null && (0, l.jsx)(i.Text, {
         variant: "text-xs/normal",
-        color: "header-secondary",
+        color: "text-default",
         className: j.inviteDetail,
         children: (0, h.Vg)(_, A)
       })]

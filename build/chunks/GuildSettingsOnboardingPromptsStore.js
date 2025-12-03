@@ -3,7 +3,7 @@
 require.d(exports, {
   Z: () => E
 });
-var l, r, Chunk392711 = require("./392711.js"),
+var l, i, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -20,7 +20,7 @@ let g = false,
 function p() {
   g = false, h = null, I = [], N = false, null != (h = Chunk999382.Z.getGuildId()) && Chunk999382.Z.getSection() === Chunk981631.pNK.ONBOARDING && (f = Chunk45966.Z.getOnboardingPrompts(h), N = Chunk45966.Z.isAdvancedMode(h))
 }
-class O extends(r = Chunk442837.ZP.Store) {
+class O extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk999382.Z, Chunk45966.Z)
   }

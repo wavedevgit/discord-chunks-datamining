@@ -99,7 +99,7 @@ let x = function(e) {
       className: f.rolePreviewArea,
       children: [(0, r.jsx)("div", {
         className: f.previewContainer,
-        children: null != _ ? (0, r.jsx)(d.Z, b(h({}, _), {
+        children: null != _ ? (0, r.jsx)(u.Z, b(h({}, _), {
           className: f.roleIconPreview,
           enableTooltip: false
         })) : (0, r.jsx)(i.FmF, {
@@ -116,8 +116,8 @@ let x = function(e) {
           } = await n.e("22942").then(n.bind(n, 660727));
           return n => (0, r.jsx)(e, b(h({}, n), {
             guildId: t.id,
-            onUploadIcon: e => (0, u._l)(j.id, e, null),
-            onSelectUnicodeEmoji: e => (0, u._l)(j.id, null, e)
+            onUploadIcon: e => (0, d._l)(j.id, e, null),
+            onSelectUnicodeEmoji: e => (0, d._l)(j.id, null, e)
           }))
         }) : C({
           object: g.qAy.UPLOAD_IMAGE
@@ -127,7 +127,7 @@ let x = function(e) {
         text: p.intl.string(p.t.mD1oGB)
       }), null != _ ? (0, r.jsx)(i.Button, {
         onClick: () => {
-          (0, u._l)(j.id, null, null)
+          (0, d._l)(j.id, null, null)
         },
         variant: "critical-secondary",
         disabled: x,

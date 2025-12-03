@@ -72,7 +72,7 @@ function U(e) {
           children: O
         }), null != R && (0, r.jsxs)(E.Text, {
           variant: "text-sm/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: ["(", "string" == typeof R ? R : o()(R).fromNow(), ")"]
         })]
       }), (0, r.jsx)("div", {

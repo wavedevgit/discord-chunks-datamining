@@ -20,7 +20,7 @@ function c(e) {
     onClose: h,
     isSlideReady: f,
     headerAlignStart: g
-  } = e, [m, p] = r.useState(false), [b, S] = r.useState(null), [x, j] = r.useState(false), [y, v] = r.useState(null), [C, Z] = r.useState(""), w = r.useRef(null);
+  } = e, [m, p] = r.useState(false), [b, x] = r.useState(null), [S, j] = r.useState(false), [y, v] = r.useState(null), [C, Z] = r.useState(""), w = r.useRef(null);
   r.useEffect(() => {
     p(true), s.tn.post({
       url: d.ANM.LOGIN_SMS_SEND,
@@ -30,7 +30,7 @@ function c(e) {
       oldFormErrors: true,
       rejectWithError: false
     }).then(e => {
-      S(e.body.phone)
+      x(e.body.phone)
     }).catch(e => {
       var t, n;
       v(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
@@ -73,7 +73,7 @@ function c(e) {
           value: C,
           autoComplete: "one-time-code",
           spellCheck: "false",
-          disabled: x
+          disabled: S
         }), (0, l.jsx)(a.Button, {
           variant: "secondary",
           text: u.intl.string(u.t.ZF29L6),
@@ -87,7 +87,7 @@ function c(e) {
               oldFormErrors: true,
               rejectWithError: false
             }).then(e => {
-              S(e.body.phone)
+              x(e.body.phone)
             }).catch(e => {
               var t;
               v(e.message || (null == (t = e.body) ? true : t.message))
@@ -102,7 +102,7 @@ function c(e) {
       setSlide: c,
       showConfirm: true,
       disabled: C.length !== i.Gz,
-      submitting: x
+      submitting: S
     })]
   })
 }

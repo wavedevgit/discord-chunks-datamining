@@ -43,7 +43,7 @@ let b = () => (0, Chunk54381.jsx)(Chunk796027.Z, {
     } = e, j = (0, f.rb)(e => e.shouldShowWarning), {
       verificationForm: C,
       hasFetched: _
-    } = (0, h.ng)(n, p, g), O = (0, d.Dt)();
+    } = (0, x.ng)(n, p, g), O = (0, d.Dt)();
     return (l.useEffect(() => {
       _ && C === m.t && a()
     }, [_, a, C]), C === m.t) ? null : (0, r.jsxs)(r.Fragment, {
@@ -59,7 +59,7 @@ let b = () => (0, Chunk54381.jsx)(Chunk796027.Z, {
           })
         }), (0, r.jsx)("div", {
           className: v.container,
-          children: (0, r.jsx)(x.Z, {
+          children: (0, r.jsx)(h.Z, {
             verificationForm: C,
             headerId: O,
             guildId: n,

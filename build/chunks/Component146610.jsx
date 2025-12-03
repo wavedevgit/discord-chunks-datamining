@@ -29,12 +29,12 @@ let m = [{
           children: [(0, r.jsx)("img", {
             src: e,
             alt: "",
-            className: u.tierImage
+            className: d.tierImage
           }), n.name]
         })
       }
       return (0, r.jsx)(c.bL, {
-        className: u.tierNameCell,
+        className: d.tierNameCell,
         children: t
       })
     }
@@ -69,9 +69,9 @@ let m = [{
       children: (0, r.jsx)(a.Z, {
         columns: m,
         data: s,
-        className: l()(g.table, u.table),
-        rowClassName: u.row,
-        headerClassName: l()(g.header, u.header)
+        className: l()(g.table, d.table),
+        rowClassName: d.row,
+        headerClassName: l()(g.header, d.header)
       })
     })
   }

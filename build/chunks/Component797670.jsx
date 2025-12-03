@@ -33,7 +33,7 @@ function u(e) {
         className: a()({
           [c.smallText]: 20 === n
         }),
-        color: "text-secondary",
+        color: "text-subtle",
         variant: "text-md/semibold",
         children: u
       })

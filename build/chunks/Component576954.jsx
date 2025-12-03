@@ -48,9 +48,9 @@ function v(e) {
     }), s.Z.unignoreUser(t, "web_stranger_danger_more", n)
   }, [n, l, t]);
   return (0, i.jsx)(d.JZ, {
-    title: C.intl.string(C.t.avyV7P),
-    description: C.intl.string(C.t.naWE6W),
-    buttonText: o ? C.intl.string(C.t["3SrzRT"]) : C.intl.string(C.t.avyV7P),
+    title: y.intl.string(y.t.avyV7P),
+    description: y.intl.string(y.t.naWE6W),
+    buttonText: o ? y.intl.string(y.t["3SrzRT"]) : y.intl.string(y.t.avyV7P),
     onButtonPress: o ? u : c
   })
 }
@@ -80,7 +80,7 @@ function _(e) {
     })
   }, [E, t, _, O]);
   r.useEffect(() => {
-    (0, m.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
+    (0, m.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
       warningId: _,
       senderId: O,
@@ -105,7 +105,7 @@ function _(e) {
             channelId: t,
             warningId: _,
             senderId: O,
-            description: C.intl.string(C.t.DJMZX6),
+            description: y.intl.string(y.t.DJMZX6),
             safetyTipRows: j.map((e, t) => (0, i.jsx)(u.q, {
               index: t,
               listType: "numbered",
@@ -117,9 +117,9 @@ function _(e) {
                 channelId: t,
                 warningId: _
               }, "more-tips-button"), (0, i.jsx)(d.JZ, {
-                title: C.intl.string(C.t["5QYPO2"]),
-                description: C.intl.string(C.t.G08MKu),
-                buttonText: C.intl.string(C.t["5QYPO2"]),
+                title: y.intl.string(y.t["5QYPO2"]),
+                description: y.intl.string(y.t.G08MKu),
+                buttonText: y.intl.string(y.t["5QYPO2"]),
                 buttonVariant: "critical-primary",
                 onButtonPress: () => {
                   l(), I(m.NM.USER_MODAL_BLOCK_CONFIRM, m.NM.USER_MODAL_BLOCK_CANCEL, P)
@@ -184,11 +184,11 @@ function _(e) {
     warningId: _,
     senderId: O,
     warningType: f.pj.STRANGER_DANGER,
-    header: C.intl.string(C.t.iOkDpM),
-    description: C.intl.string(C.t.ISUbcM),
+    header: y.intl.string(y.t.iOkDpM),
+    description: y.intl.string(y.t.ISUbcM),
     onDismiss: E,
     buttons: [{
-      text: C.intl.string(C.t["Qk/c48"]),
+      text: y.intl.string(y.t["Qk/c48"]),
       variant: "primary",
       onClick: () => {
         P(), (0, m.qc)({
@@ -200,7 +200,7 @@ function _(e) {
         })
       }
     }, ...x ? [] : [{
-      text: C.intl.string(C.t.ie0QdN),
+      text: y.intl.string(y.t.ie0QdN),
       variant: "critical-primary",
       onClick: () => I(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)
     }]]

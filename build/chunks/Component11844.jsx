@@ -100,7 +100,7 @@ let b = function() {
       className: Chunk569029.boostIcon
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk569029.copy,
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-sm/medium",
       children: Chunk388032.intl.format(Chunk388032.t.kqC5vq, {
         boostAnyGuildHook: (e, t) => {

@@ -9,12 +9,12 @@ var Chunk830121 = require("./830121.js"),
 let s = [Chunk830121.el];
 
 function i(e, t, n) {
-  let r = false,
-    i = e.replaceAll(l.Z.URL_REGEX, e => {
+  let l = false,
+    i = e.replaceAll(r.Z.URL_REGEX, e => {
       let t = s.some(t => null != t(e));
-      return t && (r = true), t ? e : "`".concat(e, "`")
+      return t && (l = true), t ? e : "`".concat(e, "`")
     });
-  if (r) return i;
+  if (l) return i;
   let u = a.intl.formatToMarkdownString(a.t.dZJpdG, {
     applicationName: t.name,
     link: n

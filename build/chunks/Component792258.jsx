@@ -54,7 +54,7 @@ let E = Chunk473749.memo(e => {
         })]
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
-        color: "text-secondary",
+        color: "text-subtle",
         children: null != i ? i : true !== a.approximateMemberCount ? _.intl.format(p.default["5JmNgg"], {
           members: a.approximateMemberCount
         }) : null

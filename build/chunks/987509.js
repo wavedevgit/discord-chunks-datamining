@@ -43,7 +43,7 @@ async function g(e) {
   let t = m(e);
   if (null != t) return t;
   if ("user" === e.type) try {
-    return await l.Z.getOrEnsurePrivateChannel(e.id)
+    return await r.Z.getOrEnsurePrivateChannel(e.id)
   } catch (e) {
     return
   }
@@ -62,10 +62,10 @@ function y(e) {
 }
 
 function x(e, t) {
-  let n, r = new Set;
+  let n, l = new Set;
   if (null != t)
-    for (let e of t) r.add(e);
-  let l = [];
+    for (let e of t) l.add(e);
+  let r = [];
   for (let t of e)
     if (null == t) continue;
     else if (t.type === a.h8.HEADER) n = t;
@@ -73,9 +73,9 @@ function x(e, t) {
     let {
       id: e
     } = t.record;
-    r.has(e) || (r.add(e), null != n && (l.push(n), n = true), l.push(t))
+    l.has(e) || (l.add(e), null != n && (r.push(n), n = true), r.push(t))
   }
-  return l
+  return r
 }
 
 function v(e, t) {
@@ -86,7 +86,7 @@ function S(e) {
   let {
     results: t,
     hasQuery: n,
-    queryMode: l,
+    queryMode: r,
     frequentChannels: a,
     targetDestination: u,
     selectedDestinations: o,
@@ -100,8 +100,8 @@ function S(e) {
     p = h.length > 0 ? h.map(e => (0, s.Z)(e)) : [],
     m = a.length > 0 ? a.map(e => (0, s.Z)(e.id)) : [],
     g = v([...b, null != u ? y(u) : null, ...p, ...m], f),
-    S = (null == o ? true : o.find(e => (0, r.isEqual)(e, d))) != null,
+    S = (null == o ? true : o.find(e => (0, l.isEqual)(e, d))) != null,
     E = null == d || S ? [] : [d.id];
-  return null != l ? x(g.filter(e => e.type === l)) : x(g, E).slice(0, 15)
+  return null != r ? x(g.filter(e => e.type === r)) : x(g, E).slice(0, 15)
 }
 require("./388032.jsx")

@@ -15,10 +15,10 @@ let c = e => {
   let {
     widget: t,
     userId: n
-  } = e, c = (0, i.e7)([s.default], () => s.default.getUser(n));
+  } = e, c = (0, l.e7)([s.default], () => s.default.getUser(n));
   return null == c ? null : (0, r.jsxs)("div", {
     className: d.container,
-    children: [(0, r.jsx)(l.Heading, {
+    children: [(0, r.jsx)(i.Heading, {
       className: d.header,
       variant: "heading-sm/semibold",
       children: o.intl.string(o.t.SpsnDY)

@@ -26,40 +26,40 @@ function m() {
     let {
       guild: t
     } = e;
-    return a.Z.getGuild(t.id)
+    return o.Z.getGuild(t.id)
   }).filter(e => null != e);
   return (0, Chunk54381.jsxs)(Chunk198358.Z, {
     children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
-      color: "text-primary",
+      color: "text-strong",
       children: Chunk388032.intl.format(Chunk140939.default.mAroeJ, {
         joinedCount: exports,
         guildCount: require.length
       })
     }), require.map((t, n) => (0, i.jsxs)("div", {
-      children: [(0, i.jsx)(s.Z, {
+      children: [(0, i.jsx)(l.Z, {
         guild: t,
-        size: s.Z.Sizes.XLARGE
-      }), (0, i.jsx)(r.xvT, {
+        size: l.Z.Sizes.XLARGE
+      }), (0, i.jsx)(s.xvT, {
         variant: "display-md",
-        color: "text-primary",
+        color: "text-strong",
         children: t.name
       }), 0 === n && (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(r.xvT, {
+        children: [(0, i.jsx)(s.xvT, {
           variant: "display-md",
-          color: "text-primary",
+          color: "text-strong",
           children: e[0].numMessagesSent
-        }), (0, i.jsx)(r.xvT, {
+        }), (0, i.jsx)(s.xvT, {
           variant: "display-sm",
-          color: "text-primary",
+          color: "text-strong",
           children: d.intl.string(u.default.wWKySP)
-        }), (0, i.jsx)(r.xvT, {
+        }), (0, i.jsx)(s.xvT, {
           variant: "display-md",
-          color: "text-primary",
+          color: "text-strong",
           children: e[0].numVoiceMinutes
-        }), (0, i.jsx)(r.xvT, {
+        }), (0, i.jsx)(s.xvT, {
           variant: "display-sm",
-          color: "text-primary",
+          color: "text-strong",
           children: d.intl.string(u.default.lXT6ns)
         })]
       })]

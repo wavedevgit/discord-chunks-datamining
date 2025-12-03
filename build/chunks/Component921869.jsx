@@ -1,7 +1,7 @@
 /** Chunk was on 51343 **/
-/** chunk id: 921869, original params: e,a,t (module,exports,require) **/
+/** chunk id: 921869, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  m: () => h
+  m: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,79 +14,79 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk771831 = require("./771831.js");
 
-function h(e) {
+function m(e) {
   let {
-    platformType: a,
-    onContinue: t,
-    onClose: h,
-    img: m,
+    platformType: t,
+    onContinue: a,
+    onClose: m,
+    img: h,
     headerConnect: N,
     headerReconnect: C,
     body: j,
     learnMoreLink: p,
     valueProps: v
-  } = e, b = (0, s.e7)([o.Z], () => {
-    let e = o.Z.getAccount(null, a);
+  } = e, f = (0, s.e7)([o.Z], () => {
+    let e = o.Z.getAccount(null, t);
     return (null == e ? true : e.twoWayLink) === false
   });
-  return (0, n.jsxs)(c.Z, {
-    children: [(0, n.jsxs)(l.xBx, {
+  return (0, l.jsxs)(c.Z, {
+    children: [(0, l.jsxs)(r.xBx, {
       direction: i.Z.Direction.VERTICAL,
-      className: u.header,
+      className: x.header,
       separator: false,
-      children: [(0, n.jsxs)("div", {
-        className: u.illustration,
-        children: [m, " "]
-      }), (0, n.jsx)(l.Heading, {
-        className: u.title,
+      children: [(0, l.jsxs)("div", {
+        className: x.illustration,
+        children: [h, " "]
+      }), (0, l.jsx)(r.Heading, {
+        className: x.title,
         variant: "heading-xl/extrabold",
-        children: b && null != C ? C : N
-      }), (0, n.jsx)(l.olH, {
-        className: u.closeButton,
-        onClick: h
+        children: f && null != C ? C : N
+      }), (0, l.jsx)(r.olH, {
+        className: x.closeButton,
+        onClick: m
       })]
-    }), (0, n.jsxs)(l.hzk, {
-      className: u.body,
-      children: [(0, n.jsx)(l.Text, {
+    }), (0, l.jsxs)(r.hzk, {
+      className: x.body,
+      children: [(0, l.jsx)(r.Text, {
         tag: "p",
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: j
-      }), (0, n.jsx)("div", {
-        className: u.valueProps,
-        children: v.map((e, a) => {
+      }), (0, l.jsx)("div", {
+        className: x.valueProps,
+        children: v.map((e, t) => {
           let {
-            label: t,
+            label: a,
             subLabel: s,
-            icon: l
+            icon: r
           } = e;
-          return (0, n.jsxs)(r.Fragment, {
-            children: [(0, n.jsx)(d.Z, {
-              label: t,
+          return (0, l.jsxs)(n.Fragment, {
+            children: [(0, l.jsx)(d.Z, {
+              label: a,
               subLabel: s,
-              icon: l
-            }, t), a !== v.length - 1 && (0, n.jsx)("div", {
-              className: u.valuePropDivider
+              icon: r
+            }, a), t !== v.length - 1 && (0, l.jsx)("div", {
+              className: x.valuePropDivider
             })]
-          }, t)
+          }, a)
         })
-      }), null != p ? (0, n.jsx)(l.Text, {
+      }), null != p ? (0, l.jsx)(r.Text, {
         tag: "p",
         variant: "text-sm/normal",
-        color: "header-secondary",
-        children: x.intl.format(x.t["/l3n+1"], {
+        color: "text-default",
+        children: u.intl.format(u.t["/l3n+1"], {
           helpCenterLink: p
         })
       }) : null]
-    }), (0, n.jsx)(l.mzw, {
-      className: u.footer,
-      children: (0, n.jsx)("div", {
+    }), (0, l.jsx)(r.mzw, {
+      className: x.footer,
+      children: (0, l.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: u.footerButton,
-        children: (0, n.jsx)(l.Button, {
+        className: x.footerButton,
+        children: (0, l.jsx)(r.Button, {
           variant: "primary",
-          text: x.intl.string(x.t["3PatSz"]),
-          onClick: t
+          text: u.intl.string(u.t["3PatSz"]),
+          onClick: a
         })
       })
     })]

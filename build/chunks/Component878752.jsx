@@ -25,8 +25,8 @@ function g(e) {
     showRightDivider: g = false
   } = e, {
     analyticsLocations: b
-  } = (0, l.ZP)(r.Z.VOICE_CONTROL_TRAY), y = (0, o.Z)(), {
-    isSharedCanvasEnabled: C
+  } = (0, l.ZP)(r.Z.VOICE_CONTROL_TRAY), C = (0, o.Z)(), {
+    isSharedCanvasEnabled: y
   } = c.Z.useExperiment({
     guildId: null == t ? true : t.guild_id,
     location: "b7309a_1"
@@ -37,9 +37,9 @@ function g(e) {
   }, {
     autoTrackExposure: false
   }), _ = (0, a.Z)(u.Z);
-  if (null == t || null != y) return null;
+  if (null == t || null != C) return null;
   let O = v && _,
-    x = C && n;
+    x = y && n;
   return O || x ? (0, i.jsxs)(l.Gt, {
     value: b,
     children: [(0, i.jsxs)("div", {

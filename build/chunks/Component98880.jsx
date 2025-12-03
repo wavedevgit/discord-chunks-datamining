@@ -323,7 +323,7 @@ function ee(e) {
           })]
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
-          color: "text-secondary",
+          color: "text-subtle",
           lineClamp: 1,
           children: b
         })]

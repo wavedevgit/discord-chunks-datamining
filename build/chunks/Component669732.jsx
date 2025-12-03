@@ -43,7 +43,7 @@ let u = t => {
           children: m.intl.string(m.t.sDvH0T)
         }), (0, r.jsx)(o.Text, {
           className: d.description,
-          color: "header-secondary",
+          color: "text-default",
           variant: "text-sm/normal",
           children: m.intl.string(m.t["CLpr/y"])
         })]

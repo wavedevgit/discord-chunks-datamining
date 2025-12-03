@@ -15,12 +15,12 @@ function c(e, t) {
   let n = null == t ? true : t.team,
     {
       payoutsByPeriod: c,
-      loading: d
+      loading: u
     } = (0, l.Z)(null == t ? true : t.id, {
       groupType: o.uw.SERVER_ROLE_SUBSCRIPTION,
       teamId: null == n ? true : n.id
     }),
-    u = (0, a.f)("useEarningMetrics"),
+    d = (0, a.f)("useEarningMetrics"),
     g = (0, s.Z)(e),
     {
       currentPeriod: m,
@@ -68,7 +68,7 @@ function c(e, t) {
       }
     }, [c, g]);
   return {
-    loading: d || !u,
+    loading: u || !d,
     team: n,
     currentPeriod: m,
     previousPeriods: p,

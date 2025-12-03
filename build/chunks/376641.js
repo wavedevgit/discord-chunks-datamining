@@ -1,12 +1,12 @@
 /** Chunk was on 69844 **/
 /** chunk id: 376641, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => i,
+  P: () => a,
   v: () => l
 });
 var Chunk817718 = require("./817718.js"),
   Chunk981631 = require("./981631.js");
-let i = {
+let a = {
     [Chunk981631.EkH.MODAL_CAROUSEL_NEXT]: Chunk817718.XM,
     [Chunk981631.EkH.MODAL_CAROUSEL_PREV]: Chunk817718.py,
     [Chunk981631.EkH.CLOSE_MODAL]: Chunk817718.U3

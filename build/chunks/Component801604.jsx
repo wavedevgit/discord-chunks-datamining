@@ -83,7 +83,7 @@ function H(e) {
     quest: z,
     previewQuest: G,
     isParticipatingOverride: F
-  } = e, K = (0, v.O5)(), [X, Y] = l.useState(false), $ = l.useCallback(() => Y(true), []), J = l.useCallback(() => Y(false), []), ee = (0, a.e7)([E.default], () => E.default.getCurrentUser()), et = (0, a.e7)([f.Z], () => f.Z.getState().theme), en = (0, o.wj)(et) ? M.BRd.DARK : M.BRd.LIGHT, er = (0, a.e7)([c.Z], () => c.Z.getParticipants(e.channelId), [e.channelId]), el = (0, a.e7)([T.Z], () => (0, x.PM)(T.Z.quests, T.Z.questToDeliverForPlacement, g.Ok.DESKTOP_ACCOUNT_PANEL_AREA), []), {
+  } = e, K = (0, v.O5)(), [X, Y] = l.useState(false), $ = l.useCallback(() => Y(true), []), J = l.useCallback(() => Y(false), []), ee = (0, a.e7)([E.default], () => E.default.getCurrentUser()), et = (0, a.e7)([f.Z], () => f.Z.getState().theme), en = (0, o.wj)(et) ? M.BRd.DARK : M.BRd.LIGHT, er = (0, a.e7)([c.Z], () => c.Z.getParticipants(e.channelId), [e.channelId]), el = (0, a.e7)([T.Z], () => (0, O.PM)(T.Z.quests, T.Z.questToDeliverForPlacement, g.Ok.DESKTOP_ACCOUNT_PANEL_AREA), []), {
     isCurrentUserStreamingQuestApplication: es,
     isQuestInQuestBar: ei
   } = (0, a.cj)([b.Z], () => {
@@ -138,15 +138,15 @@ function H(e) {
     location: q.dr.QUEST_CHANNEL_CALL_HEADER
   }), [z]), eg = (0, h.CR)({
     quest: z
-  }), eS = (0, w.Rt)(z), eh = (0, y.tP)(z), ey = (null == (n = z.userStatus) ? true : n.enrolledAt) != null, eA = (null == (s = z.userStatus) ? true : s.completedAt) != null, eO = null != z.userStatus && (0, x.zE)(z.userStatus, g.jn.QUEST_LIVE_STREAM), ex = null != z.userStatus && (0, x.zE)(z.userStatus, g.jn.QUEST_BAR), eC = ei && !ex;
+  }), eS = (0, w.Rt)(z), eh = (0, y.tP)(z), ey = (null == (n = z.userStatus) ? true : n.enrolledAt) != null, ex = (null == (s = z.userStatus) ? true : s.completedAt) != null, eA = null != z.userStatus && (0, O.zE)(z.userStatus, g.jn.QUEST_LIVE_STREAM), eO = null != z.userStatus && (0, O.zE)(z.userStatus, g.jn.QUEST_BAR), eC = ei && !eO;
   eT.info({
-    isQuestCallHeaderDismissed: eO,
+    isQuestCallHeaderDismissed: eA,
     isQuestExpired: eh,
     isQuestBarShowing: eC,
     isCurrentUserCallParticipant: ed
   });
   let e_ = null != G && (null == (m = z.userStatus) ? true : m.claimedAt) == null;
-  if (!e_ && (eO || eh || eC) || !e_ && !ed) return null;
+  if (!e_ && (eA || eh || eC) || !e_ && !ed) return null;
   let ew = (0, _.il)(z),
     eZ = (0, r.jsx)(N.Z, {
       className: k.rewardTile,
@@ -177,7 +177,7 @@ function H(e) {
         children: [ey && eu ? eZ : (0, r.jsx)("img", {
           className: k.gameTile,
           alt: z.config.messages.gameTitle,
-          src: (0, A.fh)(z, A.eC.GAME_TILE, en).url
+          src: (0, x.fh)(z, x.eC.GAME_TILE, en).url
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsxs)("div", {
             className: k.headingWithSubmenu,
@@ -185,7 +185,7 @@ function H(e) {
               className: k.questTitle,
               variant: "heading-md/semibold",
               color: "header-primary",
-              children: eu ? (0, O.AV)({
+              children: eu ? (0, A.AV)({
                 quest: z,
                 taskDetails: ew
               }) : V.intl.formatToPlainString(V.t.EQa7os, {
@@ -208,16 +208,16 @@ function H(e) {
               }))
             })]
           }), (0, r.jsx)(u.Text, {
-            color: "header-secondary",
+            color: "text-default",
             variant: "text-xs/medium",
-            children: eA ? V.intl.formatToPlainString(V.t.APddvF, {
+            children: ex ? V.intl.formatToPlainString(V.t.APddvF, {
               expirationDate: em
             }) : V.intl.formatToPlainString(V.t["pX+fmn"], {
               expirationDate: ef
             })
           })]
         })]
-      }), ey && !eA && !eu && (0, r.jsx)(R.Z, {
+      }), ey && !ex && !eu && (0, r.jsx)(R.Z, {
         autoplay: X,
         quest: z,
         questContent: g.jn.QUEST_LIVE_STREAM,
@@ -242,16 +242,16 @@ function H(e) {
             onClick: eb,
             loading: ec
           })]
-        }), ey && !eA && eu && (0, r.jsx)(Q.Z, {
+        }), ey && !ex && eu && (0, r.jsx)(Q.Z, {
           color: u.TVs.colors.BG_BRAND,
           quest: z
-        }), ey && !eA && !eu && (0, r.jsx)(u.Button, {
+        }), ey && !ex && !eu && (0, r.jsx)(u.Button, {
           variant: "primary",
           size: "sm",
           fullWidth: true,
           text: V.intl.string(V.t.VN1Ajl),
           onClick: eE
-        }), eA && (0, r.jsx)(u.Button, {
+        }), ex && (0, r.jsx)(u.Button, {
           variant: "primary",
           size: "sm",
           fullWidth: true,

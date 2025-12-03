@@ -43,21 +43,21 @@ function c(e, t) {
   }), e
 }
 
-function d(e) {
+function u(e) {
   var t = function(e, t) {
-    if ("object" !== u(e) || null === e) return e;
+    if ("object" !== d(e) || null === e) return e;
     var n = e[Symbol.toPrimitive];
     if (true !== n) {
       var r = n.call(e, t || "default");
-      if ("object" !== u(r)) return r;
+      if ("object" !== d(r)) return r;
       throw TypeError("@@toPrimitive must return a primitive value.")
     }
     return ("string" === t ? String : Number)(e)
   }(e, "string");
-  return "symbol" === u(t) ? t : String(t)
+  return "symbol" === d(t) ? t : String(t)
 }
 
-function u(e) {
+function d(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
 let g = "_errors",
@@ -90,7 +90,7 @@ async function p(e, t) {
             for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
           }
           return i
-        }(e, [g].map(d))).map(e => {
+        }(e, [g].map(u))).map(e => {
           var t;
           let [n, r] = e, i = r[g], {
             code: l,
@@ -129,27 +129,27 @@ let f = (0, Chunk392711.throttle)(p, 1e3, {
 
 function h(e, t) {
   var n, l;
-  let [a, s] = r.useState([]), [d, u] = r.useState(null), [g, m] = r.useState(null != (l = null == e || null == (n = e.triggerMetadata) ? true : n.regexPatterns) ? l : []), h = r.useCallback(t => {
+  let [a, s] = r.useState([]), [u, d] = r.useState(null), [g, m] = r.useState(null != (l = null == e || null == (n = e.triggerMetadata) ? true : n.regexPatterns) ? l : []), h = r.useCallback(t => {
     t.length < 3 || f(c(o({}, e), {
       triggerMetadata: c(o({}, e.triggerMetadata), {
         regexPatterns: [t]
       })
     }), e => {
       var t;
-      return u(null != (t = e[0]) ? t : null)
+      return d(null != (t = e[0]) ? t : null)
     })
   }, [e]);
   return {
     patterns: g,
     errors: a,
-    valueError: d,
+    valueError: u,
     validatePatternsChanged: r.useCallback((n, r) => {
       (0, i.isEqual)(n, r) || (f.cancel(), p(c(o({}, e), {
         triggerMetadata: c(o({}, e.triggerMetadata), {
           regexPatterns: n
         })
       }), e => {
-        s(e), 0 === e.length && u(null)
+        s(e), 0 === e.length && d(null)
       }), m(n), null == t || t(n))
     }, [e, t]),
     validateEditingValueChanged: h

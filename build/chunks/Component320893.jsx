@@ -37,7 +37,7 @@ function _() {
     children: [(0, Chunk54381.jsxs)("div", {
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: Chunk388032.intl.string(Chunk388032.t.TXPK7B)
       }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
         size: 8
@@ -154,7 +154,7 @@ function O() {
     className: Chunk570734.earningBenefitCard,
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: Chunk388032.intl.string(Chunk388032.t["9CdmS8"])
     }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
       size: 32
@@ -170,7 +170,7 @@ function C() {
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk570734.followerBenefitText,
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: Chunk388032.intl.string(Chunk388032.t.qsKRUQ)
     }), (0, Chunk54381.jsx)("img", {
       className: Chunk570734.roleSubscriptionSocial,
@@ -199,7 +199,7 @@ function y() {
         children: [Chunk293810.NT, "%"]
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: Chunk388032.intl.string(Chunk388032.t.AewsXD)
       })]
     }), (0, Chunk54381.jsx)("img", {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk28664 = require("./28664.jsx"),
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
 let h = e => {
   let t, n, {
     rateLimitPerUser: i,
-    slowmodeCooldownGuess: l,
+    slowmodeCooldownGuess: a,
     isBypassSlowmode: h,
     leadingIcon: g = false
   } = e;
@@ -40,9 +40,9 @@ let h = e => {
   } else n = u.intl.formatToPlainString(u.t["9yE8Ga"], {
     seconds: i
   });
-  if (!h && l > 0) {
-    let e = s().duration(l);
-    if (l > d.Z.Millis.HOUR) {
+  if (!h && a > 0) {
+    let e = s().duration(a);
+    if (a > d.Z.Millis.HOUR) {
       let n = "".concat(e.minutes()).padStart(2, "0"),
         r = "".concat(e.seconds()).padStart(2, "0");
       t = "".concat(e.hours(), ":").concat(n, ":").concat(r)
@@ -59,7 +59,7 @@ let h = e => {
     x = (0, r.jsx)(c.ANZ, {
       size: "xs",
       color: "currentColor",
-      className: a()(m.slowModeIcon, {
+      className: l()(m.slowModeIcon, {
         [m.leadingIcon]: g
       })
     });

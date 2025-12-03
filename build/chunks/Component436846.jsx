@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk86419 = require("./86419.js"),
   Chunk881410 = require("./881410.jsx"),
@@ -20,13 +20,13 @@ function d(e) {
     maxGames: n
   });
   return (0, r.jsxs)("div", {
-    className: a()(u.container, i && u.singleGameWidget),
+    className: l()(u.container, i && u.singleGameWidget),
     children: [i && (0, r.jsx)(c.wl, {
       widget: t,
       widgetType: t.type
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
-      color: "text-secondary",
+      color: "text-subtle",
       children: d
     })]
   })

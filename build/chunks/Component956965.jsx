@@ -16,36 +16,36 @@ var Chunk54381 = require("./54381.js"),
   Chunk768581 = require("./768581.js"),
   Chunk829409 = require("./829409.js"),
   Chunk987060 = require("./987060.js");
-let _ = 16 / 9,
-  f = 325 / 72;
+let f = 16 / 9,
+  _ = 325 / 72;
 
 function b(e) {
   let {
     application: t,
     isHovered: n,
-    botBannerUrl: i,
+    botBannerUrl: a,
     botBannerUrlAnimated: s,
     iconURL: o
   } = e, m = (0, d.Z)({
     applicationId: t.id,
     size: 600,
     names: ["embedded_cover"]
-  }), h = a.useMemo(() => {
+  }), h = i.useMemo(() => {
     let e = (0, u.yJ)(t);
     return null != e && null != e.activity_preview_video_asset_id ? (0, c.Z)(t.id, e.activity_preview_video_asset_id) : null
   }, [t]), {
-    imageUrl: _,
-    imageUrlAnimated: f
-  } = a.useMemo(() => "fetched" === m.state && null != m.url ? {
+    imageUrl: f,
+    imageUrlAnimated: _
+  } = i.useMemo(() => "fetched" === m.state && null != m.url ? {
     imageUrl: m.url
   } : {
-    imageUrl: i,
+    imageUrl: a,
     imageUrlAnimated: s
-  }, [m.state, m.url, i, s]), b = null != _, j = null != h;
+  }, [m.state, m.url, a, s]), b = null != f, j = null != h;
   return "loading" === m.state ? null : j ? (0, r.jsxs)(r.Fragment, {
     children: [b ? (0, r.jsx)(x, {
       isHovered: n,
-      url: _,
+      url: f,
       animatedUrl: true
     }) : (0, r.jsx)(p.Z, {
       src: h,
@@ -58,8 +58,8 @@ function b(e) {
     })]
   }) : b ? (0, r.jsx)(x, {
     isHovered: n,
-    url: _,
-    animatedUrl: f
+    url: f,
+    animatedUrl: _
   }) : (0, r.jsx)(C, {
     iconURL: o
   })
@@ -69,8 +69,8 @@ function x(e) {
   let {
     isHovered: t,
     url: n,
-    animatedUrl: i
-  } = e, [s, o] = a.useState(false);
+    animatedUrl: a
+  } = e, [s, o] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       src: n,
@@ -79,9 +79,9 @@ function x(e) {
         [g.loaded]: s
       }),
       onLoad: () => o(true)
-    }), null != i ? (0, r.jsx)(v, {
+    }), null != a ? (0, r.jsx)(v, {
       isHovered: t,
-      url: i,
+      url: a,
       isVideo: false
     }) : null]
   })
@@ -91,9 +91,9 @@ function v(e) {
   let {
     isHovered: t,
     url: n,
-    isVideo: i
-  } = e, [s, o] = a.useState(false), [c, d] = a.useState(t);
-  return (a.useEffect(() => {
+    isVideo: a
+  } = e, [s, o] = i.useState(false), [c, d] = i.useState(t);
+  return (i.useEffect(() => {
     t && d(true)
   }, [t]), c) ? (0, r.jsx)("div", {
     className: l()(g.bannerAnimatedContainer, {
@@ -101,7 +101,7 @@ function v(e) {
       [g.videoFadeIn]: t && s
     }),
     onAnimationEnd: () => t ? null : d(false),
-    children: i ? (0, r.jsx)(p.Z, {
+    children: a ? (0, r.jsx)(p.Z, {
       src: n,
       loop: true,
       autoPlay: true,
@@ -122,11 +122,11 @@ function C(e) {
     iconURL: t
   } = e, {
     backgroundGradient: n,
-    hasFetchedColors: a
+    hasFetchedColors: i
   } = (0, h.u)(t);
   return (0, r.jsx)("div", {
     className: l()(g.bannerContent, g.bannerGradient, {
-      [g.loaded]: a
+      [g.loaded]: i
     }),
     style: {
       backgroundImage: n
@@ -137,13 +137,13 @@ let j = function(e) {
   let {
     application: t,
     bannerType: n,
-    iconURL: i
-  } = e, l = (0, s.e7)([o.Z], () => o.Z.useReducedMotion), [c, d] = a.useState(false), p = a.useCallback(() => {
+    iconURL: a
+  } = e, l = (0, s.e7)([o.Z], () => o.Z.useReducedMotion), [c, d] = i.useState(false), p = i.useCallback(() => {
     d(true)
-  }, []), h = a.useCallback(() => d(false), []), v = (0, u.ye)(t), j = t.bot, {
+  }, []), h = i.useCallback(() => d(false), []), v = (0, u.ye)(t), j = t.bot, {
     botBannerUrl: y,
     botBannerUrlAnimated: I
-  } = a.useMemo(() => (null == j ? true : j.id) == null || (null == j ? true : j.banner) == null ? {} : {
+  } = i.useMemo(() => (null == j ? true : j.id) == null || (null == j ? true : j.banner) == null ? {} : {
     botBannerUrl: (0, m.aN)({
       id: j.id,
       banner: j.banner,
@@ -160,7 +160,7 @@ let j = function(e) {
   return (0, r.jsx)("div", {
     className: g.bannerContainer,
     style: {
-      aspectRatio: "card" === n ? _ : f
+      aspectRatio: "card" === n ? f : _
     },
     onMouseEnter: p,
     onFocus: p,
@@ -176,7 +176,7 @@ let j = function(e) {
       url: y,
       animatedUrl: I
     }) : (0, r.jsx)(C, {
-      iconURL: i
+      iconURL: a
     })
   })
 }

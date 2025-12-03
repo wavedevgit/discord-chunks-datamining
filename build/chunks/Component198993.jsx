@@ -1,11 +1,11 @@
 /** Chunk was on 90688 **/
 /** chunk id: 198993, original params: e,r,t (module,exports,require) **/
 require.d(exports, {
-  ZP: () => b,
-  c2: () => v,
+  ZP: () => y,
+  c2: () => b,
   cK: () => m
 });
-var n, o, s, Chunk54381 = require("./54381.js"),
+var n, o, l, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   c = require.n(Chunk120356),
@@ -39,7 +39,7 @@ let p = Object.freeze({
     SIZE_60: "size-60"
   }),
   Chunk515695 = require("./515695.js");
-class y extends(o = Chunk473749.PureComponent) {
+class v extends(o = Chunk473749.PureComponent) {
   render() {
     let e = this.props,
       {
@@ -51,13 +51,13 @@ class y extends(o = Chunk473749.PureComponent) {
         var t, n, o = function(e, r) {
           if (null == e) return {};
           var t, n, o = {},
-            s = Object.keys(e);
-          for (n = 0; n < s.length; n++) t = s[n], r.indexOf(t) >= 0 || (o[t] = e[t]);
+            l = Object.keys(e);
+          for (n = 0; n < l.length; n++) t = l[n], r.indexOf(t) >= 0 || (o[t] = e[t]);
           return o
         }(e, r);
         if (Object.getOwnPropertySymbols) {
-          var s = Object.getOwnPropertySymbols(e);
-          for (n = 0; n < s.length; n++) t = s[n], !(r.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
+          var l = Object.getOwnPropertySymbols(e);
+          for (n = 0; n < l.length; n++) t = l[n], !(r.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (o[t] = e[t])
         }
         return o
       }(module, ["className", "text"]);
@@ -75,19 +75,19 @@ class y extends(o = Chunk473749.PureComponent) {
     })
   }
 }
-f(y, "defaultProps", {
+f(v, "defaultProps", {
   size: 128,
   bgColor: "#ffffff",
   fgColor: "#000000"
 });
-class v extends(s = Chunk473749.PureComponent) {
+class b extends(l = Chunk473749.PureComponent) {
   render() {
     let {
       overlaySize: e
     } = this.props, r = p[null != module ? module : "SIZE_40"];
     return (0, Chunk54381.jsxs)("div", {
       className: Chunk678249.qrCodeOverlayContainer,
-      children: [(0, Chunk54381.jsx)(y, C({}, this.props)), (0, Chunk54381.jsx)("div", {
+      children: [(0, Chunk54381.jsx)(v, C({}, this.props)), (0, Chunk54381.jsx)("div", {
         className: Chunk678249.qrCodeOverlay,
         children: (0, Chunk54381.jsx)("img", {
           className: Chunk678249[exports],
@@ -98,9 +98,9 @@ class v extends(s = Chunk473749.PureComponent) {
     })
   }
 }
-f(v, "defaultProps", {
+f(b, "defaultProps", {
   size: 144,
   bgColor: "#ffffff",
   fgColor: "#000000"
 });
-let b = y
+let y = v

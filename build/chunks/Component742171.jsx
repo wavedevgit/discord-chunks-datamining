@@ -29,7 +29,7 @@ function d(e) {
         className: u.gameInfo,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
-          color: "text-primary",
+          color: "text-strong",
           children: g.name
         }), _ && (0, r.jsx)("div", {
           className: u.badge,

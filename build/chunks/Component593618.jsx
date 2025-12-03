@@ -235,7 +235,7 @@ function F(e) {
       })]
     }), d ? (0, r.jsx)(u.Text, {
       className: L.invitesDisabledTooltip,
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-sm/medium",
       children: D.intl.string(D.t["2n0/Fk"])
     }) : null, s ? (0, r.jsx)(u.Text, {

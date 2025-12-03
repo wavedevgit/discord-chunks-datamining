@@ -43,7 +43,7 @@ function E(e) {
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: M
-  } = (0, y.Z)(t), R = (0, l.e7)([C.Z], () => C.Z.isDeaf()), L = w || M || R, k = (0, m.sR)({
+  } = (0, C.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), L = w || M || R, k = (0, m.sR)({
     isSoundboardButtonDisabled: L
   }), [D, U] = (0, h.cv)(k), {
     analyticsLocations: V

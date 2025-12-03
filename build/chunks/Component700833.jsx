@@ -95,7 +95,7 @@ function p(e) {
     case a.QJ.TERMS:
       return (0, r.jsx)(c.Z, g({
         channelId: f.rulesChannelId,
-        title: N === a.it.COMPACT ? u.intl.string(u.t["55+gic"]) : u.intl.string(u.t["53vNcB"]),
+        title: N === a.it.COMPACT ? d.intl.string(d.t["55+gic"]) : d.intl.string(d.t["53vNcB"]),
         formField: p
       }, w));
     case a.QJ.PARAGRAPH:
@@ -103,7 +103,7 @@ function p(e) {
         formField: p
       }, w));
     case a.QJ.TEXT_INPUT:
-      return (0, r.jsx)(d.Z, g({
+      return (0, r.jsx)(u.Z, g({
         formField: p
       }, w));
     case a.QJ.MULTIPLE_CHOICE:

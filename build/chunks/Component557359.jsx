@@ -22,7 +22,7 @@ function h(e) {
   let {
     requireTerms: t,
     rules: n
-  } = e, l = (0, o.e7)([u.Z], () => u.Z.getProps().guild), h = null == l ? true : l.id, b = i.useCallback(e => {
+  } = e, l = (0, o.e7)([d.Z], () => d.Z.getProps().guild), h = null == l ? true : l.id, b = i.useCallback(e => {
     if (null == h || null == n) return null;
     g.Z.setPendingInviteRules(h, e, [...n])
   }, [h, n]), x = i.useCallback(e => {
@@ -48,7 +48,7 @@ function h(e) {
           color: "text-muted",
           className: f.rulesHeader,
           children: p.intl.string(p.t.XcAzbo)
-        }), (0, r.jsx)(d.k, {
+        }), (0, r.jsx)(u.k, {
           guild: l,
           rules: n,
           setRules: x,

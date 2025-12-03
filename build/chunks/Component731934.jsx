@@ -195,7 +195,7 @@ function M(e) {
     children: (0, r.jsx)(c.Text, {
       className: C.marginBottom8,
       variant: "eyebrow",
-      color: "header-secondary",
+      color: "text-default",
       children: n
     })
   }, "title"), [n]);
@@ -247,7 +247,7 @@ let k = () => {
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         className: Chunk197571.marginBottom8,
         variant: "eyebrow",
-        color: "header-secondary",
+        color: "text-default",
         children: Chunk120356
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk790680.box,

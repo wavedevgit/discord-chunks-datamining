@@ -76,12 +76,12 @@ let T = (e, t) => {
         children: [(0, r.jsx)(u.Text, {
           className: O.errorDisplayName,
           variant: "text-md/medium",
-          color: "text-primary",
+          color: "text-strong",
           children: l
         }), (0, r.jsx)(u.Text, {
           variant: "text-md/medium",
           className: O.userName,
-          color: "text-primary",
+          color: "text-strong",
           children: y.intl.format(y.t.RO3T4B, {
             userName: l
           })
@@ -89,7 +89,7 @@ let T = (e, t) => {
       }) : (0, r.jsx)(u.Text, {
         variant: "text-md/medium",
         className: O.trialRecipientRowDisplayName,
-        color: "text-primary",
+        color: "text-strong",
         children: l
       }), (0, r.jsx)(u.Button, {
         variant: "secondary",

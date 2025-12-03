@@ -34,7 +34,7 @@ function p(e) {
       guildEventId: null == t ? true : t.id,
       recurrenceId: n
     }), (0, i.jsx)(r.Text, {
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-md/normal",
       className: d.eventName,
       children: t.name

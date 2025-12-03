@@ -29,11 +29,11 @@ function d(e) {
         className: r.textContainer,
         children: [(0, l.jsx)(a.Heading, {
           variant: "display-lg",
-          color: "text-primary",
+          color: "text-strong",
           children: n.title
         }), (0, l.jsx)(a.Text, {
           variant: "text-lg/semibold",
-          color: "text-secondary",
+          color: "text-subtle",
           children: n.description
         })]
       }), null != t && (0, l.jsx)("div", {

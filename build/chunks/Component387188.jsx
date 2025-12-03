@@ -74,7 +74,7 @@ function v(e) {
       },
       children: (0, r.jsx)(c.Text, {
         variant: "text-sm/semibold",
-        color: "text-secondary",
+        color: "text-subtle",
         className: y.ctaText,
         children: b.intl.format(b.t.z5Rnl8, {
           renderedEmoji: (0, r.jsx)(u.Z, {
@@ -143,7 +143,7 @@ function S(e) {
           children: (0, r.jsx)(c.Text, {
             tag: "span",
             variant: "text-md/medium",
-            color: "text-primary",
+            color: "text-strong",
             children: ":".concat(v.name, ":")
           })
         })

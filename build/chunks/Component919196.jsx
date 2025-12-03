@@ -198,7 +198,7 @@ function I(e) {
       justify: d.Z.Justify.BETWEEN,
       align: d.Z.Align.CENTER,
       children: [(0, i.jsx)(s.Text, {
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-sm/normal",
         children: Z ? _.intl.string(_.t.hdneL4) : _.intl.string(_.t.xRCMqx)
       }), (0, i.jsx)(d.Z.Child, {

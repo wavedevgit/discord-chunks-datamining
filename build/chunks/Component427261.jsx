@@ -34,7 +34,7 @@ let c = e => {
         })
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
-        color: "text-primary",
+        color: "text-strong",
         children: n.body
       })]
     })

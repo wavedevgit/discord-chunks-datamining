@@ -13,8 +13,8 @@ let s = {
     let {
       guildId: t,
       channelId: n
-    } = e, s = r.useRef(null), o = (0, a.UU)(), c = !i.Z.isFocused(o);
-    return r.useLayoutEffect(() => (null == s.current && (s.current = new l.ZP({
+    } = e, s = r.useRef(null), o = (0, l.UU)(), c = !i.Z.isFocused(o);
+    return r.useLayoutEffect(() => (null == s.current && (s.current = new a.ZP({
       guildId: t,
       channelId: n,
       isPaused: c,

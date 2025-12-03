@@ -35,12 +35,12 @@ function f(e) {
       })
     }), (0, r.jsx)(o.Text, {
       className: m.subtitleInfo,
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-md/medium",
       children: d.intl.format(d.t["5fwX56"], {})
     }), (0, r.jsx)(o.Text, {
       className: m.prompt,
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-sm/medium",
       children: d.intl.format(d.t.i2vB8z, {
         helpdeskArticle: s.Z.getArticleURL(u.BhN.POMELO_FAQ)
@@ -56,7 +56,7 @@ function f(e) {
           height: 20
         })
       }), (0, r.jsx)(o.Text, {
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-sm/medium",
         children: d.intl.format(d.t.SzUaZ1, {})
       })]
@@ -69,7 +69,7 @@ function f(e) {
           height: 20
         })
       }), (0, r.jsx)(o.Text, {
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-sm/medium",
         children: d.intl.format(d.t["UwPc+G"], {})
       })]
@@ -82,7 +82,7 @@ function f(e) {
           height: 20
         })
       }), (0, r.jsx)(o.Text, {
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-sm/medium",
         children: d.intl.format(d.t.okLjju, {
           username: t.tag

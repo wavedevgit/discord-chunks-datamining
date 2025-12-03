@@ -1,5 +1,5 @@
 /** Chunk was on 51343 **/
-/** chunk id: 864762, original params: e,a,t (module,exports,require) **/
+/** chunk id: 864762, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   k: () => o
 }), require("./388685.js");
@@ -9,40 +9,40 @@ var Chunk473749 = require("./473749.js"),
   Chunk798930 = require("./798930.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e, a) {
-  let [t, o] = n.useState(l.O.LANDING), c = (0, r.Z)(t), [d, x] = n.useState(null), [u, h] = n.useState(null), [m, N] = n.useState(true), C = n.useCallback(() => {
-    switch (t) {
-      case l.O.LANDING:
-        o(l.O.PRE_CONNECT);
+function o(e, t) {
+  let [a, o] = l.useState(r.O.LANDING), c = (0, n.Z)(a), [d, u] = l.useState(null), [x, m] = l.useState(null), [h, N] = l.useState(true), C = l.useCallback(() => {
+    switch (a) {
+      case r.O.LANDING:
+        o(r.O.PRE_CONNECT);
         break;
-      case l.O.DISCORD_CONSENT:
-        o(l.O.SUCCESS);
+      case r.O.DISCORD_CONSENT:
+        o(r.O.SUCCESS);
         break;
-      case l.O.ERROR:
-        o(l.O.PRE_CONNECT)
+      case r.O.ERROR:
+        o(r.O.PRE_CONNECT)
     }
-  }, [t]), j = n.useCallback(e => {
-    x(null), N(e), o(l.O.ERROR)
-  }, []), p = n.useCallback(e => {
-    x(e), o(l.O.PRE_CONNECT_WAITING)
-  }, []), v = n.useCallback(e => {
-    x(null), h(e), o(l.O.DISCORD_CONSENT)
+  }, [a]), j = l.useCallback(e => {
+    u(null), N(e), o(r.O.ERROR)
+  }, []), p = l.useCallback(e => {
+    u(e), o(r.O.PRE_CONNECT_WAITING)
+  }, []), v = l.useCallback(e => {
+    u(null), m(e), o(r.O.DISCORD_CONSENT)
   }, []);
-  return n.useEffect(() => {
-    t !== c && s.default.track(i.rMx.ACCOUNT_LINK_STEP, {
+  return l.useEffect(() => {
+    a !== c && s.default.track(i.rMx.ACCOUNT_LINK_STEP, {
       location_stack: e,
       previous_step: c,
-      current_step: t,
-      platform_type: a
+      current_step: a,
+      platform_type: t
     })
-  }, [t, c, e, a]), {
-    slide: t,
+  }, [a, c, e, t]), {
+    slide: a,
     gotoNext: C,
     gotoError: j,
     handleWaitingForConnection: p,
     handleAuthToken: v,
     expectedCallbackState: d,
-    callbackData: u,
-    errorCode: m
+    callbackData: x,
+    errorCode: h
   }
 }

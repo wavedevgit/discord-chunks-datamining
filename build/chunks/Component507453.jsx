@@ -75,7 +75,7 @@ let o = {
         color: "header-primary",
         children: s.intl.string(s.t.saHocI)
       }), null != t && (0, l.jsx)(r.Text, {
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-md/normal",
         className: a.subtitle,
         children: t

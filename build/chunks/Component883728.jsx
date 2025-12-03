@@ -1,5 +1,5 @@
 /** Chunk was on 22173 **/
-/** chunk id: 883728, original params: e,n,t (module,exports,require) **/
+/** chunk id: 883728, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => r
 });
@@ -9,50 +9,50 @@ var Chunk374470 = require("./374470.js"),
   Chunk239091 = require("./239091.js");
 let r = e => {
   let {
-    facepileRef: n,
+    facepileRef: t,
     goToThread: r,
     channel: i
   } = e;
   return {
     handleLeftClick: e => {
-      var t;
-      (0, l.kK)(e.target) && (null == (t = n.current) ? true : t.contains(e.target)) || r(i, e.shiftKey)
+      var n;
+      (0, l.kK)(e.target) && (null == (n = t.current) ? true : n.contains(e.target)) || r(i, e.shiftKey)
     },
     handleRightClick: e => (0, a.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([t.e("89250"), t.e("18808")]).then(t.bind(t, 422200));
-      return n => {
-        var t, l;
-        return (0, s.jsx)(e, (t = function(e) {
-          for (var n = 1; n < arguments.length; n++) {
-            var t = null != arguments[n] ? arguments[n] : {},
-              s = Object.keys(t);
-            "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(t, e).enumerable
-            }))), s.forEach(function(n) {
+      } = await Promise.all([n.e("89250"), n.e("18808")]).then(n.bind(n, 422200));
+      return t => {
+        var n, l;
+        return (0, s.jsx)(e, (n = function(e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              s = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), s.forEach(function(t) {
               var s;
-              s = t[n], n in e ? Object.defineProperty(e, n, {
+              s = n[t], t in e ? Object.defineProperty(e, t, {
                 value: s,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[n] = s
+              }) : e[t] = s
             })
           }
           return e
-        }({}, n), l = l = {
+        }({}, t), l = l = {
           channel: i
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, n) {
-          var t = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var s = Object.getOwnPropertySymbols(e);
-            t.push.apply(t, s)
+            n.push.apply(n, s)
           }
-          return t
+          return n
         })(Object(l)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
-        }), t))
+          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+        }), n))
       }
     })
   }

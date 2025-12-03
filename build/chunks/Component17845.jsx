@@ -17,12 +17,12 @@ function p(e) {
   let {
     title: t,
     betaTag: n,
-    color: a = "header-primary"
+    color: i = "header-primary"
   } = e;
   return (0, r.jsxs)(o.Heading, {
     className: l()(u.title, u.uppercase),
     variant: "display-lg",
-    color: a,
+    color: i,
     children: [t, n && (0, r.jsx)(d.Z, {
       className: u.betaTag
     })]
@@ -33,12 +33,12 @@ function m(e) {
   let {
     title: t,
     titleColor: n,
-    description: i,
+    description: a,
     button: d,
     className: m,
     children: h,
     betaTag: g = false
-  } = e, _ = (0, c.ZP)(), f = (0, s.wj)(_), b = a.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(p, {
+  } = e, f = (0, c.ZP)(), _ = (0, s.wj)(f), b = i.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(p, {
     title: e,
     betaTag: g,
     color: n
@@ -53,11 +53,11 @@ function m(e) {
       className: u.content,
       children: (0, r.jsxs)("div", {
         className: u.textContainer,
-        children: [b, null != i && (0, r.jsx)(o.Text, {
+        children: [b, null != a && (0, r.jsx)(o.Text, {
           className: u.description,
           variant: "text-md/medium",
-          color: f ? "text-muted" : "header-primary",
-          children: i
+          color: _ ? "text-muted" : "header-primary",
+          children: a
         }), null != d && (0, r.jsx)("div", {
           className: u.buttonContainer,
           children: d

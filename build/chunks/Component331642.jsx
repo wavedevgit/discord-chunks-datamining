@@ -131,7 +131,7 @@ function I(e) {
     onSelect: i
   } = e, a = null != t, c = null == t ? true : t.emojiId, u = null == t ? true : t.emojiName, d = a && (null != u || null != c), f = e => (0, r.jsx)(s.Text, {
     variant: "text-xs/medium",
-    color: "header-secondary",
+    color: "text-default",
     tag: "span",
     children: e
   });

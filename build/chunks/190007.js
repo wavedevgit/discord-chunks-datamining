@@ -2,7 +2,7 @@
 /** chunk id: 190007, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  HE: () => u,
+  HE: () => d,
   HZ: () => m,
   Pk: () => f,
   e$: () => h,
@@ -19,7 +19,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function d(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_ADD",
     connection: e
@@ -54,14 +54,14 @@ function f() {
   })
 }
 async function h(e) {
-  var t, n, u;
+  var t, n, d;
   let g = s.Z.getEditedConnections(),
     m = [];
   if (g.forEach(e => {
       let t = (0, c.t9)(e);
       m.push(...t)
     }), m.length > 0) throw b(m), i.Z.show({
-    title: d.intl.string(d.t.ISppXw),
+    title: u.intl.string(u.t.ISppXw),
     body: m.join("\n")
   }), Error("failed to validate connections");
   r.Z.dispatch({
@@ -79,9 +79,9 @@ async function h(e) {
     let {
       fieldName: e,
       error: t
-    } = null != (u = new l.Hx(r).getAnyErrorMessageAndField()) ? u : {}, n = [e, t].filter(a.lm).join(": ");
+    } = null != (d = new l.Hx(r).getAnyErrorMessageAndField()) ? d : {}, n = [e, t].filter(a.lm).join(": ");
     throw b([n]), i.Z.show({
-      title: d.intl.string(d.t.iLdiqY),
+      title: u.intl.string(u.t.iLdiqY),
       body: n
     }), r
   }

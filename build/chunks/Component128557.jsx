@@ -106,7 +106,7 @@ function w(e) {
 function M(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([C.Z], () => null != t ? C.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && j.default.extractTimestamp(l.id) < Date.now() - P._8R, _ = (0, s.e7)([y.default], () => (null == l ? true : l.ownerId) === y.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && j.default.extractTimestamp(l.id) < Date.now() - P._8R, _ = (0, s.e7)([C.default], () => (null == l ? true : l.ownerId) === C.default.getId(), [l]), {
     canInvite: M,
     canManageGuild: R,
     canMessage: L
@@ -318,7 +318,7 @@ function M(e) {
               guildName: l.name
             })
           }), (0, i.jsxs)(u.Text, {
-            color: "header-secondary",
+            color: "text-default",
             className: a()({
               [T.subtitle]: true,
               [T.noChildren]: 0 === Q.length

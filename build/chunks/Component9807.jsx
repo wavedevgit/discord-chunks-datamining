@@ -57,24 +57,24 @@ function j(e, t) {
 
 function y(e, t) {
   if (null == e) return {};
-  var n, r, a = function(e, t) {
+  var n, r, i = function(e, t) {
     if (null == e) return {};
-    var n, r, a = {},
-      i = Object.keys(e);
-    for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
-    return a
+    var n, r, i = {},
+      a = Object.keys(e);
+    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var i = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
-  return a
+  return i
 }
 let I = e => {
     var {
       className: t
     } = e, n = y(e, ["className"]);
-    return (0, a.jsx)(h.Z, j(C({}, n), {
+    return (0, i.jsx)(h.Z, j(C({}, n), {
       className: s()(x.sizedToParent, t),
       mediaPlayerClassName: x.sizedToParent,
       renderLinkComponent: g.iT
@@ -85,7 +85,7 @@ let I = e => {
       containerClassName: t,
       className: n
     } = e, r = y(e, ["containerClassName", "className"]);
-    return (0, a.jsx)(m.ZP, j(C({}, r), {
+    return (0, i.jsx)(m.ZP, j(C({}, r), {
       className: s()(n, t)
     }))
   },
@@ -99,7 +99,7 @@ let I = e => {
   },
   E = e => {
     let t, n, r, {
-      item: i,
+      item: a,
       onPlay: l,
       volume: s,
       onVolumeChange: o,
@@ -107,28 +107,28 @@ let I = e => {
       isMuted: m,
       autoPlay: h
     } = e;
-    if (i.type === f.s9s.YOUTUBE_VIDEO) t = C({
-      url: (0, f.n8r)(i.youtubeVideoId)
+    if (a.type === _.s9s.YOUTUBE_VIDEO) t = C({
+      url: (0, _.n8r)(a.youtubeVideoId)
     }, P), n = C({
-      url: "".concat((0, f.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
+      url: "".concat((0, _.ivE)(a.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
     }, O), r = u.pn.YOUTUBE;
     else {
-      let e = null != i.width ? i.width : 0,
-        r = null != i.height ? i.height : 0;
+      let e = null != a.width ? a.width : 0,
+        r = null != a.height ? a.height : 0;
       t = {
-        url: i.thumbnailSrc,
+        url: a.thumbnailSrc,
         width: e,
         height: r
       }, n = {
-        url: i.src,
-        proxyURL: i.src,
+        url: a.src,
+        proxyURL: a.src,
         width: e,
         height: r
       }
     }
-    return (0, a.jsx)("div", {
+    return (0, i.jsx)("div", {
       className: x.embedContainer,
-      children: (0, a.jsx)(d.BC, {
+      children: (0, i.jsx)(d.BC, {
         className: x.sizedToParent,
         iframeWrapperClassName: x.sizedToParent,
         href: null,
@@ -136,7 +136,7 @@ let I = e => {
         video: n,
         provider: r,
         maxHeight: c.r.SMALL.height,
-        maxWidth: _.b.SMALL,
+        maxWidth: f.b.SMALL,
         onPlay: l,
         playable: true,
         volume: s,
@@ -173,7 +173,7 @@ class N extends(r = Chunk473749.PureComponent) {
       autoplayInterval: t,
       className: n,
       paused: r,
-      themedPagination: i
+      themedPagination: a
     } = this.props, {
       hasInteracted: l
     } = this.state;
@@ -214,7 +214,7 @@ class N extends(r = Chunk473749.PureComponent) {
     }), v(this, "handleChangeItem", e => {
       this.setState({
         isVideoPlaying: false
-      }), e.type === f.s9s.IMG && this.setState({
+      }), e.type === _.s9s.IMG && this.setState({
         imageLoadingStartTime: new Map(this.state.imageLoadingStartTime).set(e.src, Date.now())
       })
     }), v(this, "handleIntentionalChange", (e, t, n, r) => {
@@ -222,9 +222,9 @@ class N extends(r = Chunk473749.PureComponent) {
         hasInteracted: true
       });
       let {
-        onIntentionalChange: a
+        onIntentionalChange: i
       } = this.props;
-      null != a && a(e, t, n, r)
+      null != i && i(e, t, n, r)
     }), v(this, "handleOnErrorImg", e => {
       this.setState({
         status: new Map(this.state.status).set(e.target.src, "errored")
@@ -245,44 +245,44 @@ class N extends(r = Chunk473749.PureComponent) {
     }), v(this, "renderItem", (e, t) => {
       let n, {
           isMuted: r,
-          volume: i
+          volume: a
         } = this.state,
         {
           videoAutoPlay: l
         } = this.props;
       switch (e.type) {
-        case f.s9s.YOUTUBE_VIDEO:
-        case f.s9s.VIDEO:
-          n = (0, a.jsx)(E, {
+        case _.s9s.YOUTUBE_VIDEO:
+        case _.s9s.VIDEO:
+          n = (0, i.jsx)(E, {
             item: e,
             onPlay: this.handlePlay,
             isMuted: r,
-            volume: i,
+            volume: a,
             onVolumeChange: this.handleVolumeChange,
             onMute: this.handleMute,
             autoPlay: l
           });
           break;
-        case f.s9s.IMG:
+        case _.s9s.IMG:
           if ("errored" === this.state.status.get(e.src)) {
-            let e = (0, a.jsx)(o.Heading, {
+            let e = (0, i.jsx)(o.Heading, {
               variant: "heading-xl/semibold",
               children: b.intl.string(b.t.UvDfMz)
             });
-            return (0, a.jsx)("div", {
+            return (0, i.jsx)("div", {
               className: x.errorContainer,
               children: true !== this.props.errorComponent ? this.props.errorComponent : e
             })
           } {
             var c;
             let t = null != (c = e.alt) ? c : b.intl.string(b.t.X4IxWL);
-            n = (0, a.jsxs)(a.Fragment, {
-              children: [(0, a.jsx)(o.$jN, {
+            n = (0, i.jsxs)(i.Fragment, {
+              children: [(0, i.jsx)(o.$jN, {
                 className: s()(x.spinner, {
                   [x.hidden]: true !== this.state.status.get(e.src)
                 }),
                 type: o.$jN.Type.SPINNING_CIRCLE
-              }), (0, a.jsx)("img", {
+              }), (0, i.jsx)("img", {
                 onError: this.handleOnErrorImg,
                 onLoad: this.handleOnLoadImg,
                 className: s()(x.smallCarouselImage, {
@@ -297,7 +297,7 @@ class N extends(r = Chunk473749.PureComponent) {
         default:
           throw Error("Unexpected MediaType")
       }
-      return (0, a.jsx)(o.P3F, {
+      return (0, i.jsx)(o.P3F, {
         className: x.smallCarouselItem,
         onClick: () => this.handleCurrentItemClick(e, t),
         children: n

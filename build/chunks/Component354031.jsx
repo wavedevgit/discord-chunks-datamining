@@ -2,7 +2,7 @@
 /** chunk id: 354031, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  P: () => d
+  P: () => u
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,11 +12,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e) {
+function u(e) {
   let {
     features: t,
     canManageGuild: n
-  } = e, d = i.useCallback(e => {
+  } = e, u = i.useCallback(e => {
     let n = new Set(t);
     e ? n.add(o.GuildFeatures.SUMMARIES_ENABLED_BY_USER) : n.delete(o.GuildFeatures.SUMMARIES_ENABLED_BY_USER), s.Z.updateGuild({
       features: n
@@ -31,7 +31,7 @@ function d(e) {
       label: c.intl.string(c.t.vmEDQs),
       badge: "beta",
       checked: t.has(o.GuildFeatures.SUMMARIES_ENABLED_BY_USER),
-      onChange: d,
+      onChange: u,
       disabled: !n
     })
   })

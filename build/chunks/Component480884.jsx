@@ -1,7 +1,7 @@
 /** Chunk was on 59385 **/
-/** chunk id: 480884, original params: n,t,e (module,exports,require) **/
+/** chunk id: 480884, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => p
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,33 +19,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk98201 = require("./98201.js");
 
-function k(n) {
+function p(t) {
   let {
-    transitionState: t,
+    transitionState: n,
     onClose: e,
-    channelId: k,
-    warningId: p,
+    channelId: p,
+    warningId: h,
     senderId: m,
     description: y,
     safetyTipRows: T,
-    actionRows: j,
-    learnMore: N
-  } = n, f = (0, o.e7)([_.ZP], () => _.ZP.getChannelSafetyWarning(k, p));
+    actionRows: f,
+    learnMore: j
+  } = t, N = (0, o.e7)([_.ZP], () => _.ZP.getChannelSafetyWarning(p, h));
   return s.useEffect(() => {
     (0, b.MC)(x.rMx.SAFETY_WARNING_MODAL_VIEWED, {
-      channelId: k,
-      warningId: p,
+      channelId: p,
+      warningId: h,
       senderId: m,
-      warningType: null == f ? true : f.type
+      warningType: null == N ? true : N.type
     }), l.Z.increment({
       name: i.V.SAFETY_WARNING_MODAL_VIEW
     })
-  }, [k, p, m, f]), (0, a.jsx)(c.ExpressiveModal, {
+  }, [p, h, m, N]), (0, a.jsx)(c.ExpressiveModal, {
     onClose: e,
-    transitionState: t,
+    transitionState: n,
     graphic: {
       type: "image",
-      src: h.Z
+      src: k.Z
     },
     gradientColor: "blue",
     title: v.intl.string(v.t.lyt43P),
@@ -57,21 +57,21 @@ function k(n) {
         gap: 8,
         children: [(0, a.jsx)(d.z, {
           children: T
-        }), null != N ? N : null]
+        }), null != j ? j : null]
       }), (0, a.jsxs)(r.Kqy, {
         gap: 4,
         children: [(0, a.jsx)(r.Text, {
           variant: "eyebrow",
-          color: "header-secondary",
+          color: "text-default",
           children: v.intl.string(v.t.K5FKtc)
         }), (0, a.jsx)(u.rT, {
-          children: j
+          children: f
         })]
       }), (0, a.jsx)(g.Z, {
-        channelId: k,
-        warningId: p,
+        channelId: p,
+        warningId: h,
         senderId: m,
-        safetyWarning: f
+        safetyWarning: N
       })]
     })
   })

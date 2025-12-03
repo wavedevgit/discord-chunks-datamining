@@ -573,7 +573,7 @@ class e$ extends Chunk473749.PureComponent {
             className: Chunk890332.channel,
             children: (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-xs/medium",
-              color: "text-secondary",
+              color: "text-subtle",
               lineClamp: 1,
               children: o
             })

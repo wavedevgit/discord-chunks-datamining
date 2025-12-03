@@ -26,14 +26,14 @@ function j(e, t) {
   return {
     id: e,
     type: t,
-    deny: y.Hn,
-    allow: O.yP
+    deny: x.Hn,
+    allow: y.yP
   }
 }
 
 function m(e) {
   var t, n, {
-      channelId: y,
+      channelId: x,
       onClose: m
     } = e,
     w = function(e, t) {
@@ -51,8 +51,8 @@ function m(e) {
       }
       return i
     }(e, ["channelId", "onClose"]);
-  let v = (0, o.e7)([b.Z], () => b.Z.getChannel(y)),
-    P = (0, o.e7)([f.Z], () => f.Z.getGuild(null == v ? true : v.getGuildId())),
+  let v = (0, o.e7)([f.Z], () => f.Z.getChannel(x)),
+    P = (0, o.e7)([b.Z], () => b.Z.getGuild(null == v ? true : v.getGuildId())),
     [S, E] = i.useState(""),
     [k, _] = i.useState({}),
     [C, N] = i.useState(false),
@@ -62,7 +62,7 @@ function m(e) {
       roles: R,
       members: H,
       getRichTag: G
-    } = (0, p.Q)(P, v, O.yP, S),
+    } = (0, p.Q)(P, v, y.yP, S),
     M = d.Z.useSections({
       roles: R,
       members: H
@@ -82,7 +82,7 @@ function m(e) {
           let {
             row: t
           } = e;
-          return t.rowType === g.aC.ROLE ? j(t.id, u.BN.ROLE) : j(t.id, u.BN.MEMBER)
+          return t.rowType === O.aC.ROLE ? j(t.id, u.BN.ROLE) : j(t.id, u.BN.MEMBER)
         });
         return (0, s.hw)(e.id, n, true)
       }(v, k), m()
@@ -118,31 +118,31 @@ function m(e) {
       }
       return e
     }({}, w), n = n = {
-      title: h.intl.string(h.t.dMJ3Y6),
+      title: g.intl.string(g.t.dMJ3Y6),
       onClose: m,
       input: (0, r.jsxs)("div", {
         children: [(0, r.jsxs)(c.Text, {
-          className: x.channelName,
+          className: h.channelName,
           variant: "text-lg/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: [(0, r.jsx)(c.ewx, {
-            className: x.channelIcon,
+            className: h.channelIcon,
             size: "sm",
             color: "currentColor"
           }), v.name]
         }), v.isGuildStageVoice() && (0, r.jsx)(c.Text, {
-          color: "header-secondary",
-          className: x.description,
+          color: "text-default",
+          className: h.description,
           variant: "text-sm/normal",
-          children: h.intl.string(h.t.f7VbhF)
+          children: g.intl.string(g.t.f7VbhF)
         }), (0, r.jsx)(d.Z.SearchBox, {
-          placeholderText: h.intl.string(h.t.iezLLn)
+          placeholderText: g.intl.string(g.t.iezLLn)
         }), (0, r.jsx)(c.Text, {
-          className: x.subtext,
+          className: h.subtext,
           variant: "text-xs/normal",
-          children: h.intl.string(h.t.rwFx85)
+          children: g.intl.string(g.t.rwFx85)
         }), null != T ? (0, r.jsx)(c.Text, {
-          className: x.subtext,
+          className: h.subtext,
           variant: "text-xs/normal",
           color: "text-feedback-critical",
           children: T.getAnyErrorMessage()
@@ -158,11 +158,11 @@ function m(e) {
       },
       actions: [{
         variant: "secondary",
-        text: h.intl.string(h.t["ETE/oC"]),
+        text: g.intl.string(g.t["ETE/oC"]),
         onClick: m
       }, {
         variant: "primary",
-        text: h.intl.string(h.t.OYkgVk),
+        text: g.intl.string(g.t.OYkgVk),
         onClick: A,
         loading: C
       }]

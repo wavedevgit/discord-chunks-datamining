@@ -21,14 +21,14 @@ function f(e) {
     scheduledMessage: t,
     transitionState: n,
     onClose: l
-  } = e, f = a()(t.sendAtTimestamp.substring(0, 200)), [m, g] = r.useState(f), [b, y] = r.useState(false), C = async () => {
-    y(true);
+  } = e, f = a()(t.sendAtTimestamp.substring(0, 200)), [m, g] = r.useState(f), [b, C] = r.useState(false), y = async () => {
+    C(true);
     try {
       await (0, c.P4)(t.scheduledMessageId, m.toISOString()), (0, d.eD)(), (0, s.Mr3)(h)
     } catch (e) {
       (0, d.$X)(e.message)
     } finally {
-      y(false)
+      C(false)
     }
   };
   return (0, i.jsx)(o.Modal, {
@@ -43,7 +43,7 @@ function f(e) {
     }, {
       variant: "primary",
       text: p.intl.string(p.t.VZANAD),
-      onClick: C,
+      onClick: y,
       loading: b
     }],
     children: (0, i.jsx)(u.Z, {

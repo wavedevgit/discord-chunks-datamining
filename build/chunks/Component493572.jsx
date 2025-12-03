@@ -25,7 +25,7 @@ function c(e) {
     }),
     children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
-      color: n ? "text-primary" : "text-muted",
+      color: n ? "text-strong" : "text-muted",
       children: t.label
     }), i ? null : (0, r.jsx)(s.Z, {
       className: a()(l.breadcrumbArrow, c),

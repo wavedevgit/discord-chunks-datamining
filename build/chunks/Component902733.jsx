@@ -83,7 +83,7 @@ let p = function(e) {
     className: d.container,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
-      color: "text-primary",
+      color: "text-strong",
       children: c.intl.string(c.t["I+4OJC"])
     }), (0, r.jsxs)("div", {
       className: d.icons,

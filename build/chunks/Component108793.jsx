@@ -21,9 +21,9 @@ function p(e) {
   var t, n, {
       userRef: p,
       usernameSuggestionLoading: h = false,
-      oneClickFlow: y = false
+      oneClickFlow: O = false
     } = e,
-    O = function(e, t) {
+    y = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -42,7 +42,7 @@ function p(e) {
     user: S,
     editState: b,
     onClose: _
-  } = O, N = (0, s.ZP)(S.id), v = function(e, t, n) {
+  } = y, x = (0, s.ZP)(S.id), N = function(e, t, n) {
     switch (e) {
       case m.Wq.EDIT_USERNAME:
         return {
@@ -73,7 +73,7 @@ function p(e) {
           header: f.intl.string(f.t["a/zCWh"]), subtitle: f.intl.string(f.t.gGz0se)
         }
     }
-  }(b, u.ZP.getName(S), _), [x, T] = (0, o.q_F)(() => ({
+  }(b, u.ZP.getName(S), _), [v, T] = (0, o.q_F)(() => ({
     opacity: 0,
     y: 10
   }));
@@ -90,25 +90,25 @@ function p(e) {
     className: E.displayNameContainer,
     children: [(0, r.jsxs)(a.animated.div, {
       style: {
-        opacity: x.opacity,
-        y: x.y
+        opacity: v.opacity,
+        y: v.y
       },
       children: [(0, r.jsx)(o.Heading, {
         className: E.title,
         color: "header-primary",
         variant: "heading-xl/extrabold",
-        children: v.header
+        children: N.header
       }), (0, r.jsxs)("div", {
         className: E.subtitle,
         children: [(0, r.jsx)(o.Heading, {
-          color: "header-secondary",
+          color: "text-default",
           variant: "heading-sm/medium",
-          children: v.subtitle
-        }), null != v.link && (0, r.jsx)(o.Text, {
+          children: N.subtitle
+        }), null != N.link && (0, r.jsx)(o.Text, {
           className: E.link,
-          color: "header-secondary",
+          color: "text-default",
           variant: "text-sm/medium",
-          children: v.link
+          children: N.link
         })]
       })]
     }), (0, r.jsx)(d.Z, (t = function(e) {
@@ -128,11 +128,11 @@ function p(e) {
         })
       }
       return e
-    }({}, O), n = n = {
-      displayProfile: N,
+    }({}, y), n = n = {
+      displayProfile: x,
       ref: p,
       usernameSuggestionLoading: h,
-      oneClickFlow: y
+      oneClickFlow: O
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

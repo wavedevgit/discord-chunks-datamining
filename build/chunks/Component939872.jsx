@@ -35,7 +35,7 @@ let f = e => {
     }), !_.isEmpty() && (0, r.jsx)(o.Text, {
       className: d.confirmationSubtitle,
       variant: "text-sm/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: u.intl.format(u.t.TnhFHv, {
         benefits: _.asString()
       })

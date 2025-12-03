@@ -35,7 +35,7 @@ function f() {
         children: Chunk388032.intl.string(Chunk388032.t["oqalC+"])
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: Chunk388032.intl.string(Chunk388032.t.O9SQ1c)
       })]
     }), (0, Chunk54381.jsx)("ul", {

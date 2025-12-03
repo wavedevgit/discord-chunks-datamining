@@ -9,7 +9,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk981631 = require("./981631.js");
 
 function i(e, t) {
-  s.default.track(r.rMx.AGE_GATE_SUBMITTED, {
+  s.default.track(l.rMx.AGE_GATE_SUBMITTED, {
     dob: 18 > o()().diff(e, "years") ? e.format("YYYY-MM-DD") : null,
     dob_day: e.date(),
     dob_month: e.month() + 1,

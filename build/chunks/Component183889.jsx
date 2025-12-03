@@ -17,7 +17,7 @@ let s = e => {
     className: o.bar,
     children: [(0, r.jsx)(i.Text, {
       variant: "text-xs/bold",
-      color: "text-primary",
+      color: "text-strong",
       children: a.intl.string(a.t["4VDCG0"])
     }), t ? (0, r.jsx)(i.Text, {
       variant: "text-xs/medium",
@@ -25,7 +25,7 @@ let s = e => {
       children: a.intl.string(a.t.qNorwt)
     }) : (0, r.jsx)(i.Text, {
       variant: "text-xs/medium",
-      color: "text-tertiary",
+      color: "text-muted",
       children: a.intl.string(a.t["260qZS"])
     })]
   })

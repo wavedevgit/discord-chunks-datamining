@@ -61,7 +61,7 @@ function O(e) {
     T = b.intl.string(b.t.wzzjk9);
   return (null == v || 0 === v.length) && null == S && (I = (0, r.jsx)(s.Text, {
     variant: "text-xs/normal",
-    color: "header-secondary",
+    color: "text-default",
     children: b.intl.format(b.t.Up2ni7, {
       helpdeskUrl: h.Z.getArticleURL(g.BhN.CONNECTION_DETAILS)
     })
@@ -75,7 +75,7 @@ function O(e) {
       className: y.dot
     }) : null, null != S ? (0, r.jsx)(s.Text, {
       variant: "text-xs/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: b.intl.format(b.t["9rfonh"], {
         date: S
       })

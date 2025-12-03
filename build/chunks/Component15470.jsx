@@ -26,7 +26,7 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +39,7 @@ function _(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,12 +52,12 @@ function f(e, t) {
   }), e
 }
 let b = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
-  x = f(_({}, Chunk241209.Z.rules), {
-    heading: f(_({}, Chunk241209.Z.rules.heading), {
+  x = _(f({}, Chunk241209.Z.rules), {
+    heading: _(f({}, Chunk241209.Z.rules.heading), {
       react(e, t, n) {
-        let a = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
+        let i = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
         return (0, r.jsx)(d.Z, {
-          tag: a,
+          tag: i,
           children: t(e.content, n)
         }, n.key)
       }
@@ -106,8 +106,8 @@ class j extends Chunk473749.PureComponent {
       applicationId: e,
       description: t,
       blurb: n,
-      className: a,
-      assets: i
+      className: i,
+      assets: a
     } = this.props, {
       collapsed: s,
       collapsable: o

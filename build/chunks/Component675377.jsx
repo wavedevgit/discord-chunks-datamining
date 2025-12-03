@@ -101,7 +101,7 @@ function W(e) {
   return (0, r.jsx)(m.Heading, {
     className: M.tableHeader,
     variant: "heading-sm/semibold",
-    color: "header-secondary",
+    color: "text-default",
     children: t
   })
 }
@@ -163,19 +163,19 @@ let V = e => {
       }
       return i
     }(e, ["renderPopoutBody", "renderPopoutChildren", "popoutTargetRef"]);
-    let [s, o] = i.useState(false), c = i.useMemo(() => new d.V7, []), u = i.useCallback(() => {
+    let [s, o] = i.useState(false), c = i.useMemo(() => new u.V7, []), d = i.useCallback(() => {
       c.stop(), o(true)
     }, [c]), g = i.useCallback(() => {
       c.start(200, () => o(false))
     }, [c]), p = {
-      onMouseEnter: u,
+      onMouseEnter: d,
       onMouseLeave: g
     };
     return (0, r.jsx)(m.yRy, B(U({
       shouldShow: s,
       renderPopout: e => (0, r.jsx)(m.VqE, {
         className: M.browserUnsupportedDialog,
-        onMouseEnter: u,
+        onMouseEnter: d,
         onMouseLeave: g,
         children: t(e)
       })
@@ -189,7 +189,7 @@ let V = e => {
     return (0, Chunk54381.jsx)(V, {
       renderPopoutBody: () => (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: Chunk388032.intl.format(Chunk388032.t.bGXPVt, {})
       }),
       renderPopoutChildren: (t, n) => (0, r.jsx)("div", B(U({
@@ -213,7 +213,7 @@ function Y(e) {
     return [null != (e = O.Z.getSoundsForGuild(t.id)) ? e : k.Hy, O.Z.isFetchingSounds() || O.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: s
-  } = (0, _.XJ)(t), o = i.useRef(null), d = (0, h.ZP)(), u = t.premiumTier, g = (0, w.yw)(t, l, u);
+  } = (0, _.XJ)(t), o = i.useRef(null), u = (0, h.ZP)(), d = t.premiumTier, g = (0, w.yw)(t, l, d);
   i.useEffect(() => {
     (0, v.w)()
   }, []);
@@ -250,14 +250,14 @@ function Y(e) {
       children: [(0, r.jsx)(m.Text, {
         className: M.helpText,
         variant: "text-sm/normal",
-        color: "header-secondary",
+        color: "text-default",
         children: G.intl.string(G.t.BohnsE)
       }), (0, r.jsx)("div", {
         className: M.buttons,
         children: !f && x
       })]
     }), f ? (0, r.jsxs)(m.ubH, {
-      theme: d,
+      theme: u,
       className: M.empty,
       children: [(0, r.jsx)(m.oxh, {
         darkSrc: n(458601),
@@ -278,7 +278,7 @@ function Y(e) {
         color: "header-primary",
         children: (0, r.jsx)(z, {
           guildId: t.id,
-          currentTier: u,
+          currentTier: d,
           availableSounds: g
         })
       }), (0, r.jsx)(A.Z, {
@@ -314,7 +314,7 @@ function q(e) {
     onPlaySound: s,
     guild: o
   } = e, {
-    soundId: d,
+    soundId: u,
     name: g,
     user: h,
     userId: b,
@@ -329,7 +329,7 @@ function q(e) {
     if (!Z) {
       D(true);
       try {
-        await (0, v.AA)(o.id, d)
+        await (0, v.AA)(o.id, u)
       } catch (e) {
         D(false)
       }
@@ -413,7 +413,7 @@ function q(e) {
       }), (0, r.jsx)(m.P3F, {
         className: M.soundRemove,
         onClick: function(e) {
-          e.stopPropagation(), (0, u.Z)({
+          e.stopPropagation(), (0, d.Z)({
             title: G.intl.formatToPlainString(G.t["PR/VbI"], {
               soundName: g
             }),

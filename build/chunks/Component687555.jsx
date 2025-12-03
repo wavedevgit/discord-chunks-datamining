@@ -51,7 +51,7 @@ function O(e) {
     }), (0, a.jsx)(p.Text, {
       className: b.description,
       variant: "text-md/medium",
-      color: "header-secondary",
+      color: "text-default",
       children: i
     })]
   })
@@ -68,7 +68,7 @@ function U() {
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk107785.description,
       variant: "text-md/medium",
-      color: "header-secondary",
+      color: "text-default",
       children: Chunk388032.intl.string(Chunk388032.t.eBIGB4)
     })]
   })
@@ -102,7 +102,7 @@ function R(e) {
       }), (0, a.jsx)(p.Text, {
         className: b.description,
         variant: "text-md/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: S.intl.string(S.t.JjjeZb)
       })]
     }), (0, a.jsx)("div", {
@@ -127,13 +127,13 @@ function R(e) {
 function B(e) {
   let {
     onShare: t
-  } = e, r = (0, c.e7)([g.Z], () => g.Z.getRecipientStatus()), [s, l] = i.useState([]), [o, C] = i.useState(new Set), [d, f] = i.useState(false);
+  } = e, r = (0, c.e7)([g.Z], () => g.Z.getRecipientStatus()), [s, l] = i.useState([]), [o, C] = i.useState(new Set), [d, h] = i.useState(false);
   return i.useEffect(() => {
     (async () => {
       let e = [];
       for (let [t, a] of r)
         if (a === _.Fe.PENDING) {
-          let r = await (0, h.PR)(t);
+          let r = await (0, f.PR)(t);
           e.push(r)
         } l(e)
     })()
@@ -152,7 +152,7 @@ function B(e) {
       }), (0, a.jsx)(p.Text, {
         className: b.description,
         variant: "text-md/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: S.intl.string(S.t.mPmPri)
       })]
     }), (0, a.jsx)("div", {
@@ -174,7 +174,7 @@ function B(e) {
         className: b.submit,
         disabled: d,
         onClick: async () => {
-          f(true), await t([...o.values()]), f(false)
+          h(true), await t([...o.values()]), h(false)
         },
         children: S.intl.string(S.t.ItpQxk)
       })
@@ -202,7 +202,7 @@ let k = function(e) {
   let {
     onClose: t,
     onShare: r
-  } = e, s = (0, c.e7)([g.Z], () => g.Z.getReferralsRemaining()), [l, h] = i.useState(""), m = (0, u.Z)(l, 400), [_, y] = i.useState(new Map), [w, N] = i.useState(false), {
+  } = e, s = (0, c.e7)([g.Z], () => g.Z.getReferralsRemaining()), [l, f] = i.useState(""), m = (0, u.Z)(l, 400), [_, y] = i.useState(new Map), [w, N] = i.useState(false), {
     eligibleUsers: Z,
     fetchUsers: F,
     hasError: M,
@@ -229,9 +229,9 @@ let k = function(e) {
       children: [G ? (0, a.jsx)(U, {}) : (0, a.jsx)(O, {
         numOfSelectedUsers: P.length,
         anySelected: _.size > 0
-      }), (0, a.jsx)(f.Z, {
+      }), (0, a.jsx)(h.Z, {
         className: b.searchbar,
-        size: f.Z.Sizes.MEDIUM,
+        size: h.Z.Sizes.MEDIUM,
         tags: [..._.values()].map(e => j.ZP.getName(e)),
         placeholder: S.intl.string(S.t.Kd5RaI),
         query: l,
@@ -242,7 +242,7 @@ let k = function(e) {
             return a.delete(r.id), a
           })
         },
-        onQueryChange: h
+        onQueryChange: f
       })]
     }), G ? (0, a.jsx)(E, {}) : (0, a.jsxs)(d.w0Z, {
       className: b.list,

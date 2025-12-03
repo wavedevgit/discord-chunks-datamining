@@ -38,7 +38,7 @@ function o(t) {
       separator: false,
       className: c.header,
       children: [(0, a.jsx)(l.Text, {
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-lg/bold",
         className: c.subtitle,
         children: r.intl.string(r.t.YjuMsf)

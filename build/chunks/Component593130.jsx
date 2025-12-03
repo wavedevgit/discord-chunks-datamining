@@ -27,17 +27,17 @@ function Z(e) {
     channel: t,
     className: n,
     onClose: a
-  } = e, Z = (0, o.e7)([d.Z], () => d.Z.can(x.Plq.READ_MESSAGE_HISTORY, t)), y = (0, h.cD)(t), O = () => {
+  } = e, Z = (0, o.e7)([u.Z], () => u.Z.can(x.Plq.READ_MESSAGE_HISTORY, t)), O = (0, h.cD)(t), y = () => {
     a(), (0, j.R6)(t, true, "Thread Browser Empty State")
   }, S = l.useCallback((e, t) => {
     a(), (0, j.ok)(e, !t, v.on.BROWSER)
   }, [a]), N = function(e, t) {
-    let [n, r] = l.useState(""), [a, s] = l.useState(false), [o, i] = l.useState(false), [c, d] = l.useState([]), h = async () => {
+    let [n, r] = l.useState(""), [a, s] = l.useState(false), [o, i] = l.useState(false), [c, u] = l.useState([]), h = async () => {
       if (null != n && "" !== n && !a) {
         s(true);
         try {
-          let r = await u.Z.searchThreads(e, t, n);
-          i(true), d(r)
+          let r = await d.Z.searchThreads(e, t, n);
+          i(true), u(r)
         } finally {
           s(false)
         }
@@ -92,7 +92,7 @@ function Z(e) {
           }({}, N))]
         }) : null, (0, r.jsx)("div", {
           className: b.spacer
-        }), y ? (0, r.jsx)("div", {
+        }), O ? (0, r.jsx)("div", {
           className: b.createButton,
           children: (0, r.jsx)(i.zxk, {
             size: "sm",
@@ -111,14 +111,14 @@ function Z(e) {
           })
         })]
       }),
-      children: N.hasResults ? (0, r.jsx)(m.Z, {
+      children: N.hasResults ? (0, r.jsx)(f.Z, {
         channel: t,
-        startThread: O,
+        startThread: y,
         goToThread: S,
         threadIds: N.results
-      }) : (0, r.jsx)(f.Z, {
+      }) : (0, r.jsx)(m.Z, {
         channel: t,
-        startThread: O,
+        startThread: y,
         goToThread: S
       })
     })

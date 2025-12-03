@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -45,7 +45,7 @@ function j(e) {
   let {
     directoryChannelId: t,
     guild: n
-  } = e, r = (0, o.e7)([u.Z], () => u.Z.getDirectoryEntry(t, n.id)), s = l.useRef(null);
+  } = e, s = (0, o.e7)([u.Z], () => u.Z.getDirectoryEntry(t, n.id)), r = l.useRef(null);
   return (0, i.jsxs)("div", {
     className: C.guildRow,
     children: [(0, i.jsx)(d.Z, {
@@ -57,8 +57,8 @@ function j(e) {
       variant: "text-md/normal",
       children: n.name
     }), (0, i.jsx)(m.Z, {
-      entry: r,
-      targetElementRef: s,
+      entry: s,
+      targetElementRef: r,
       children: e => {
         var t, n;
         return (0, i.jsx)(c.xhG, (t = function(e) {
@@ -79,7 +79,7 @@ function j(e) {
           }
           return e
         }({
-          ref: s,
+          ref: r,
           size: "md",
           color: "currentColor"
         }, e), n = n = {
@@ -102,7 +102,7 @@ function j(e) {
 function h(e) {
   let t, {
       directoryChannelId: n,
-      onGuildChosen: r,
+      onGuildChosen: s,
       handleChooseCreate: o,
       directoryGuildName: d,
       availableGuilds: u,
@@ -121,13 +121,13 @@ function h(e) {
       className: C.emptyImage
     }), (0, i.jsx)(c.Text, {
       className: C.emptyText,
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-md/normal",
       children: x.intl.string(x.t.liuEhd)
     })]
   }) : u.map(e => (0, i.jsx)(f, {
     guild: e,
-    onClick: () => r(e)
+    onClick: () => s(e)
   }, e.id)) : 0 === m.length ? (0, i.jsxs)("div", {
     className: C.emptyContainer,
     children: [(0, i.jsx)("img", {
@@ -136,7 +136,7 @@ function h(e) {
       className: C.emptyImage
     }), (0, i.jsx)(c.Text, {
       className: C.emptyText,
-      color: "header-secondary",
+      color: "text-default",
       variant: "text-md/normal",
       children: x.intl.string(x.t.WJLuKK)
     })]
@@ -157,13 +157,13 @@ function h(e) {
         type: "top",
         look: "brand",
         children: [(0, i.jsx)(c.njP.Item, {
-          className: s()(C.tabBarItem, {
+          className: r()(C.tabBarItem, {
             [C.selectedTab]: 0 === h
           }),
           id: 0,
           children: x.intl.string(x.t.FTe8HS)
         }), (0, i.jsx)(c.njP.Item, {
-          className: s()(C.tabBarItem, {
+          className: r()(C.tabBarItem, {
             [C.selectedTab]: 1 === h
           }),
           id: 1,

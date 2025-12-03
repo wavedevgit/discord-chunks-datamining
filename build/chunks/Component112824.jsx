@@ -47,9 +47,9 @@ function x(e) {
 function j(e) {
   let {
     guild: t
-  } = e, i = (0, s.e7)([d.Z], () => d.Z.getEveryoneRole(t)), g = x(t), m = g.length > 0, j = p.$X.some(e => {
+  } = e, i = (0, s.e7)([u.Z], () => u.Z.getEveryoneRole(t)), g = x(t), m = g.length > 0, j = p.$X.some(e => {
     var n, r;
-    return !u.Z.can(e, t, null, {
+    return !d.Z.can(e, t, null, {
       [i.id]: (n = b({}, i), r = r = {
         permissions: a.Od(i.permissions, e)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -72,7 +72,7 @@ function j(e) {
         children: f.intl.string(f.t["+vaUlM"])
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
-        color: "header-secondary",
+        color: "text-default",
         children: f.intl.format(f.t.RXAtdO, {
           numPerms: g.length
         })

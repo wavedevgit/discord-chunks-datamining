@@ -107,7 +107,7 @@ function m(e) {
         secondaryColor: s.Z.colors.WHITE.css
       }) : u]
     }), null != l && (0, r.jsx)(a.Text, {
-      color: "header-secondary",
+      color: "text-default",
       className: o.footnote,
       variant: "text-xs/normal",
       children: l

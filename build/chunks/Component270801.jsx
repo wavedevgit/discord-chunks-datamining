@@ -56,7 +56,7 @@ let c = () => require.e("49812").then(require.t.bind(require, 48603, 19)).then(e
             })
           }), (0, i.jsx)(l.Text, {
             variant: "text-sm/medium",
-            color: "header-secondary",
+            color: "text-default",
             children: o.intl.string(o.t.nwpqyc)
           })]
         })

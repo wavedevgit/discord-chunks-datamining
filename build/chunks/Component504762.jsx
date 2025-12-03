@@ -27,7 +27,7 @@ function o() {
       }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
         size: 8
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        color: "header-secondary",
+        color: "text-default",
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk388032.t.TvGJgk)
       })]

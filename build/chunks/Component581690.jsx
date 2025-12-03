@@ -78,7 +78,7 @@ let m = e => {
             children: c.intl.string(c.t.llDCid)
           }), (0, r.jsx)(i.Heading, {
             variant: "heading-xxl/normal",
-            color: "header-secondary",
+            color: "text-default",
             children: c.intl.string(c.t.JfHzXG)
           })]
         })]
@@ -105,7 +105,7 @@ let m = e => {
             children: c.intl.string(c.t["Eu8rJ/"])
           }), (0, r.jsx)(i.Heading, {
             variant: "heading-xxl/normal",
-            color: "header-secondary",
+            color: "text-default",
             children: c.intl.string(c.t.BkEMJ1)
           })]
         }), (0, r.jsxs)("div", {
@@ -119,7 +119,7 @@ let m = e => {
             className: d.fallbackContentTextGroup,
             children: [(0, r.jsx)(i.Heading, {
               variant: "heading-xxl/normal",
-              color: "header-secondary",
+              color: "text-default",
               children: c.intl.string(c.t.RyDxBX)
             }), (0, r.jsx)(i.Heading, {
               variant: "heading-xxl/bold",

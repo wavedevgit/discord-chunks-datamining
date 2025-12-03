@@ -15,12 +15,12 @@ function o(e) {
   } = e;
   return (0, r.jsx)(i.P3F, {
     onClick: t,
-    className: l.button,
+    className: a.button,
     "aria-expanded": n,
     children: (0, r.jsx)(i.Text, {
       variant: "text-sm/medium",
       color: "none",
-      children: n ? a.intl.string(a.t["6MwJo/"]) : a.intl.string(a.t.lBeKY2)
+      children: n ? l.intl.string(l.t["6MwJo/"]) : l.intl.string(l.t.lBeKY2)
     })
   })
 }

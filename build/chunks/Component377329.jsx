@@ -26,15 +26,15 @@ function f(e) {
     guildEvent: j,
     guildEventId: b,
     error: y
-  } = e, O = l.useMemo(() => (0, g.Gb)(j, f), [j, f]), {
+  } = e, O = r.useMemo(() => (0, g.Gb)(j, f), [j, f]), {
     channel_id: E,
     name: N,
     image: C,
     description: P
   } = O, S = (0, i.e7)([c.Z], () => c.Z.getChannel(E), [E]), I = (0, i.e7)([u.Z], () => u.Z.getGuild(f), [f]), Z = (0, m.cS)(O), T = (0, i.e7)([d.default], () => null != j.creatorId ? d.default.getUser(j.creatorId) : d.default.getCurrentUser(), [j.creatorId]), w = (0, i.e7)([o.Z], () => o.Z.isLurking(f), [f]), k = (0, s.KS)(S, I);
-  return (0, r.jsxs)("div", {
+  return (0, l.jsxs)("div", {
     className: p.content,
-    children: [(0, r.jsx)(h.Z, {
+    children: [(0, l.jsx)(h.Z, {
       className: p.previewCard,
       guild: I,
       channel: S,
@@ -50,28 +50,28 @@ function f(e) {
       rsvped: true,
       guildEvent: O,
       eventPreview: O
-    }), (0, r.jsxs)("div", {
+    }), (0, l.jsxs)("div", {
       className: p.textContainer,
-      children: [(0, r.jsx)(a.Heading, {
+      children: [(0, l.jsx)(a.Heading, {
         variant: "heading-xl/semibold",
         children: v.intl.string(v.t.yBsFE3)
-      }), (0, r.jsx)(a.Text, {
-        color: "text-secondary",
+      }), (0, l.jsx)(a.Text, {
+        color: "text-subtle",
         variant: "text-md/normal",
         className: p.subheader,
         children: null != location ? v.intl.string(v.t.KDPFi9) : v.intl.format(v.t.f55NX0, {
           channelName: null != (t = null == S ? true : S.name) ? t : "",
           channelHook: () => {
             var e;
-            return (0, r.jsxs)("div", {
+            return (0, l.jsxs)("div", {
               className: p.channelName,
-              children: [null != k ? (0, r.jsx)(k, {
+              children: [null != k ? (0, l.jsx)(k, {
                 size: "custom",
                 color: "currentColor",
                 width: 20,
                 height: 20,
                 className: p.icon
-              }) : (0, r.jsx)(a._tJ, {
+              }) : (0, l.jsx)(a._tJ, {
                 size: "custom",
                 color: "currentColor",
                 height: 18,
@@ -81,7 +81,7 @@ function f(e) {
             })
           }
         })
-      }), null != y && (0, r.jsx)(a.Text, {
+      }), null != y && (0, l.jsx)(a.Text, {
         color: "text-feedback-critical",
         variant: "text-xs/normal",
         className: p.subheader,

@@ -21,33 +21,33 @@ function h(e) {
     selectedTabId: t,
     handleTransition: n,
     tabs: r,
-    state: i = "DEFAULT",
+    state: a = "DEFAULT",
     onAvailableWidthChange: m,
     icon: h,
     children: g
-  } = e, _ = (0, o.ZP)(), {
-    enabled: f
+  } = e, f = (0, o.ZP)(), {
+    enabled: _
   } = (0, d.WX)({
     location: "global_discovery_header_bar"
   });
-  return (0, a.jsx)(s.f6W, {
-    theme: _,
-    children: e => (0, a.jsxs)(c.Z, {
+  return (0, i.jsx)(s.f6W, {
+    theme: f,
+    children: e => (0, i.jsxs)(c.Z, {
       className: l()(e, p.headerBar),
-      innerClassname: f ? p.headerBarInner : true,
-      children: ["DEFAULT" === i && (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(h, {
+      innerClassname: _ ? p.headerBarInner : true,
+      children: ["DEFAULT" === a && (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(h, {
           color: "currentColor",
           size: "md"
-        }), (0, a.jsx)(u.Z, {
+        }), (0, i.jsx)(u.Z, {
           tabs: r,
           selectedTab: t,
           onTabSelect: n,
           onAvailableWidthChange: m
         })]
-      }), (0, a.jsx)("div", {
+      }), (0, i.jsx)("div", {
         className: l()(p.headerBarContent, {
-          [p.headerBarSearchContent]: "SEARCH" === i
+          [p.headerBarSearchContent]: "SEARCH" === a
         }),
         children: g
       })]

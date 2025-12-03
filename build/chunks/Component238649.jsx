@@ -81,7 +81,7 @@ let P = (e, t) => {
               }), G && (0, r.jsx)("div", {
                 className: N.affinitiesContainer,
                 children: (0, r.jsx)(O.Z, {
-                  textColor: "text-primary",
+                  textColor: "text-strong",
                   smallerText: false,
                   isApplicationHome: true,
                   enablePremiumBrandRefresh: true
@@ -100,7 +100,7 @@ let P = (e, t) => {
               }), (0, r.jsx)("div", {
                 className: N.descriptionContainer,
                 children: (0, r.jsx)(c.Text, {
-                  color: "text-tertiary",
+                  color: "text-muted",
                   variant: "text-xs/medium",
                   children: C.intl.format(C.t.kt9wxs, {
                     cheapestMonthlyPrice: D

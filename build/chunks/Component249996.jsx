@@ -34,7 +34,7 @@ function c(e) {
       color: "currentColor"
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
-      color: "header-secondary",
+      color: "text-default",
       children: n
     })]
   })

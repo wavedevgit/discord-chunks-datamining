@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk228392 = require("./228392.js"),
   Chunk404616 = require("./404616.jsx"),
@@ -23,46 +23,46 @@ function x(e) {
   let {
     onDismiss: t
   } = e;
-  return (0, r.jsxs)(l.P3F, {
+  return (0, r.jsxs)(a.P3F, {
     onClick: () => {
       open(c.V8), (0, s.GX)({
         readGuideCta: true
       })
     },
-    className: a()(g.container, h.container, m.mainCard),
+    className: l()(g.container, h.container, m.mainCard),
     children: [(0, r.jsxs)("div", {
       className: h.inline,
       children: [(0, r.jsxs)("div", {
         className: h.author,
-        children: [(0, r.jsx)(l.gw7, {
+        children: [(0, r.jsx)(a.gw7, {
           size: "custom",
           width: 28,
           height: 28,
           color: "currentColor",
           className: h.discordIcon
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "header-primary",
           children: u.intl.string(u.t.uvGmCx)
         }), (0, r.jsxs)("div", {
           className: h.notice,
-          children: [(0, r.jsx)(l.d3s, {
+          children: [(0, r.jsx)(a.d3s, {
             size: "md",
             color: "currentColor",
             className: h.infoIcon
-          }), (0, r.jsx)(l.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
-            color: "header-secondary",
+            color: "text-default",
             children: u.intl.string(u.t.t2GkVR)
           })]
         })]
-      }), (0, r.jsx)(l.P3F, {
+      }), (0, r.jsx)(a.P3F, {
         onClick: e => {
           e.stopPropagation(), t(d.L.DISMISS), (0, s.GX)({
             readGuideCta: false
           })
         },
-        children: (0, r.jsx)(l.Dio, {
+        children: (0, r.jsx)(a.Dio, {
           size: "xs",
           color: "currentColor",
           className: h.closeIcon
@@ -73,14 +73,14 @@ function x(e) {
     }), (0, r.jsxs)("div", {
       className: h.inline,
       children: [(0, r.jsxs)("div", {
-        children: [(0, r.jsx)(l.Heading, {
-          className: a()(g.__invalid_channelName, h.title),
+        children: [(0, r.jsx)(a.Heading, {
+          className: l()(g.__invalid_channelName, h.title),
           variant: "heading-lg/semibold",
           color: "header-primary",
           children: u.intl.string(u.t.JtSpD0)
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          color: "header-secondary",
+          color: "text-default",
           children: u.intl.string(u.t.Ajhp03)
         })]
       }), (0, r.jsx)("img", {

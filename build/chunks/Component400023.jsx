@@ -102,7 +102,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
       channel: m,
       messages: g,
       unreadCount: b,
-      showNewMessagesBar: y,
+      showNewMessagesBar: C,
       messageDisplayCompact: v,
       channelStream: _,
       uploads: O,
@@ -145,7 +145,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
       isEditing: null != S,
       keyboardModeEnabled: I,
       hasMoreAfter: g.hasMoreAfter
-    }), Q = (0, c.e7)([C.Z], () => Z.Z.can(F.Plq.READ_MESSAGE_HISTORY, m) ? null : C.Z.getViewingRolesTimestamp(m.getGuildId())), {
+    }), Q = (0, c.e7)([y.Z], () => Z.Z.can(F.Plq.READ_MESSAGE_HISTORY, m) ? null : y.Z.getViewingRolesTimestamp(m.getGuildId())), {
       channelStreamMarkup: $,
       newMessagesBar: ee,
       jumpToPresentBar: et,
@@ -155,7 +155,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
       channel: m,
       messages: g,
       unreadCount: b,
-      showNewMessagesBar: y,
+      showNewMessagesBar: C,
       messageDisplayCompact: v,
       channelStream: _,
       uploads: O,
@@ -275,7 +275,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
     let {
       canManageMessages: d,
       permissionVersion: h,
-      canChat: C
+      canChat: y
     } = function(e) {
       let t = e.getGuildId(),
         n = (0, c.e7)([P.Z], () => null == t || P.Z.canChatInGuild(t), [t]),
@@ -337,7 +337,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
         }, [e.id]),
         {
           enabled: a
-        } = y.Z.useExperiment({
+        } = C.Z.useExperiment({
           location: "41de6d_1"
         }, {
           autoTrackExposure: false
@@ -360,7 +360,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
           return (0, g.Z)(t)
         }(i);
       (0, m.Z)(i, e);
-      let C = r.useMemo(() => (0, R.Z)({
+      let y = r.useMemo(() => (0, R.Z)({
         channel: e,
         messages: i,
         oldestUnreadMessageId: l,
@@ -370,7 +370,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
       }), [i, e, l, a, d, h, f, o]);
       return {
         messages: i,
-        channelStream: C,
+        channelStream: y,
         oldestUnreadMessageId: l,
         editingMessageId: (0, c.e7)([S.Z], () => {
           var t;
@@ -392,7 +392,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
           uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([T.ZP], () => T.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != H,
-          canChat: C,
+          canChat: y,
           editingMessageId: B,
           fontSize: j,
           keyboardModeEnabled: D,

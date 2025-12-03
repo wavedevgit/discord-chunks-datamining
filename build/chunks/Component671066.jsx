@@ -24,9 +24,9 @@ function p(e) {
     triggerType: p,
     toggled: f,
     onToggleAction: h
-  } = e, b = e => () => h(e), x = (0, u.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, _ = (0, i.e7)([d.default, c.Z, o.Z], () => {
+  } = e, b = e => () => h(e), x = (0, d.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, _ = (0, i.e7)([u.default, c.Z, o.Z], () => {
     let e = o.Z.getChannel(j);
-    return null == e ? null : (0, s.F6)(e, d.default, c.Z)
+    return null == e ? null : (0, s.F6)(e, u.default, c.Z)
   }, [j]);
   if (null == x) return null;
   let {

@@ -91,7 +91,7 @@ let P = function() {
           className: Chunk764009.descriptionContainer,
           children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",
-            color: "text-secondary",
+            color: "text-subtle",
             children: Chunk388032.intl.format(Chunk541673.default["655Uny"], {
               onClickServerProfile: () => {
                 Chunk434404.Z.setSection(Chunk981631.pNK.PROFILE)

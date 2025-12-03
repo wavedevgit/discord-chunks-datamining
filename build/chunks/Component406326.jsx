@@ -73,7 +73,7 @@ function E(e) {
   }), S = (0, y.I)(t), {
     totalFilters: E
   } = (0, b.p4)(S, t), P = i.useMemo(() => {
-    if (t.type === j.aib.DMS) {
+    if (t.type === x.aib.DMS) {
       var e, n;
       let t = null != (n = null == (e = (0, f.$G)(S).channel_id) ? true : e.length) ? n : 0;
       return t > 0 ? v.intl.format(v.t.A2dqWG, {
@@ -82,16 +82,16 @@ function E(e) {
     }
     return null
   }, [t.type, S]), [T, N] = i.useState(null), R = i.useMemo(() => p ? [] : [s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [p]), [D, L] = (0, u.US)(R), M = D === s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, k = i.useCallback(e => {
-    null != e && M && L(x.L.USER_DISMISS), N(e)
+    null != e && M && L(j.L.USER_DISMISS), N(e)
   }, [L, M]), U = i.useCallback(e => {
-    L("user:explicit" === e ? x.L.USER_DISMISS : x.L.AUTO_DISMISS)
+    L("user:explicit" === e ? j.L.USER_DISMISS : j.L.AUTO_DISMISS)
   }, [L]), G = i.useCallback(() => {
     k(null), _.Z.openSearchFiltersModal(t)
   }, [t, k]), H = i.useMemo(() => E > 0 ? v.intl.format(v.t.uaR4sI, {
     filterCount: E
   }) : v.intl.string(v.t.UdhTtk), [E]), F = (0, g.UX)({
     location: "SearchHeader"
-  }), B = t.type === j.aib.DMS || t.type === j.aib.CHANNEL, V = i.useMemo(() => I && F ? (0, r.jsxs)("div", {
+  }), B = t.type === x.aib.DMS || t.type === x.aib.CHANNEL, V = i.useMemo(() => I && F ? (0, r.jsxs)("div", {
     className: C.searchModeAndFiltersContainer,
     children: [(0, r.jsx)(d.Button, {
       variant: "secondary",
@@ -148,15 +148,15 @@ function E(e) {
     onItemSelect: l,
     children: [(0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
-      id: j.QIO.NEWEST,
+      id: x.QIO.NEWEST,
       children: v.intl.string(v.t.rLjqbS)
     }), (0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
-      id: j.QIO.OLDEST,
+      id: x.QIO.OLDEST,
       children: v.intl.string(v.t.a1BaUr)
     }), (0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
-      id: j.QIO.MOST_RELEVANT,
+      id: x.QIO.MOST_RELEVANT,
       children: v.intl.string(v.t.FtR97k)
     })]
   }), [H, G, I, T, F, B, l, t, n, O, M, k, U]);
@@ -221,7 +221,7 @@ function T(e) {
         color: "text-muted",
         children: (0, r.jsx)(d.Anchor, {
           className: C.helpdeskLink,
-          href: h.Z.getArticleURL(j.BhN.SEARCH_INDEXING),
+          href: h.Z.getArticleURL(x.BhN.SEARCH_INDEXING),
           children: v.intl.string(v.t["G3EA+4"])
         })
       }), (0, r.jsx)(P, {})]
@@ -233,7 +233,7 @@ function N() {
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
-      color: "header-secondary",
+      color: "text-default",
       children: Chunk388032.intl.string(Chunk388032.t.uixzLf)
     }), (0, Chunk54381.jsx)(P, {})]
   })
@@ -254,7 +254,7 @@ function R(e) {
     className: C.totalResultsWithSubtitle,
     children: [i, (0, r.jsx)(d.Text, {
       variant: "text-xs/medium",
-      color: "text-secondary",
+      color: "text-subtle",
       children: n
     })]
   }) : i
@@ -280,19 +280,19 @@ function w(e) {
           location: O.Ix.SEARCH_HEADER
         }), e) {
         let e = {
-          type: j.aib.DMS
+          type: x.aib.DMS
         };
         _.Z.transitionStateToSearchContext(n, e, _.Z.cleanUpPrivateChannelSearchState)
       } else {
         let e = {
-          type: j.aib.CHANNEL,
+          type: x.aib.CHANNEL,
           channelId: l
         };
         _.Z.transitionStateToSearchContext(n, e)
       }
       s(null), p.rR.updateSetting(e)
     }
-  }, [m, s, n, l]), [y, x] = i.useMemo(() => [m ? v.intl.string(v.t["8lklch"]) : v.intl.string(v.t.ji3jTF), m ? v.intl.string(v.t.RMQZCa) : v.intl.string(v.t["v/PagC"])], [m]), C = i.useMemo(() => ({
+  }, [m, s, n, l]), [y, j] = i.useMemo(() => [m ? v.intl.string(v.t["8lklch"]) : v.intl.string(v.t.ji3jTF), m ? v.intl.string(v.t.RMQZCa) : v.intl.string(v.t["v/PagC"])], [m]), C = i.useMemo(() => ({
     align: "end"
   }), []);
   return (0, r.jsxs)(r.Fragment, {
@@ -345,7 +345,7 @@ function w(e) {
       shouldShow: u,
       onRequestClose: c,
       title: y,
-      body: x,
+      body: j,
       caretConfig: C,
       badge: "new"
     })]
@@ -360,13 +360,13 @@ function A(e) {
     setOpenPopout: a
   } = e, s = i.useRef(null), o = i.useMemo(() => [{
     label: v.intl.string(v.t.CbaapP),
-    value: j.QIO.NEWEST
+    value: x.QIO.NEWEST
   }, {
     label: v.intl.string(v.t.OukXZj),
-    value: j.QIO.OLDEST
+    value: x.QIO.OLDEST
   }, {
     label: v.intl.string(v.t.q8gB52),
-    value: j.QIO.MOST_RELEVANT
+    value: x.QIO.MOST_RELEVANT
   }], []), c = i.useCallback(e => {
     a(null), n(e)
   }, [a, n]);

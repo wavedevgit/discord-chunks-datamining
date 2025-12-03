@@ -17,7 +17,7 @@ function s(e) {
     children: [(0, a.jsx)(i.X6q, {
       className: l.sectionHeader,
       variant: "text-xs/semibold",
-      color: "header-secondary",
+      color: "text-default",
       children: r.intl.string(r.t["4Byy/G"])
     }), (0, a.jsx)(i.xvT, {
       variant: "text-sm/normal",

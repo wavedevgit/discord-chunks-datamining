@@ -79,7 +79,7 @@ function O(e) {
           color: "currentColor",
           className: y.rsvpIcon
         }), (0, r.jsx)(l.Text, {
-          color: "header-secondary",
+          color: "text-default",
           variant: "text-sm/normal",
           children: S
         })]

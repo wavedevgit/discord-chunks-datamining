@@ -27,7 +27,7 @@ function v(e, t, n) {
   l.useEffect(() => {
     t || d.ZP.fetchVerificationForm(e, n).finally(() => s(true))
   }, [e, n, t]);
-  let h = l.useMemo(() => {
+  let x = l.useMemo(() => {
     var e, n;
     let r;
     if (!t || null == u) return null;
@@ -50,7 +50,7 @@ function v(e, t, n) {
   }, [t, u, c]);
   return {
     hasFetched: r,
-    verificationForm: null != h ? h : c
+    verificationForm: null != x ? x : c
   }
 }
 
@@ -75,11 +75,11 @@ function j(e) {
 }
 
 function C(e) {
-  let t = (0, x.rb)(e => e.hasUnsubmittedChanges);
-  l.useEffect(() => ((0, x.a5)(false), () => {
-    (0, x.a5)(false)
+  let t = (0, h.rb)(e => e.hasUnsubmittedChanges);
+  l.useEffect(() => ((0, h.a5)(false), () => {
+    (0, h.a5)(false)
   }), []), l.useEffect(() => {
-    let n = e.some(e => e.field_type !== f.QJ.TERMS && (0, h.OA)(e));
-    n && !t ? (0, x.a5)(true) : !n && t && (0, x.a5)(false)
+    let n = e.some(e => e.field_type !== f.QJ.TERMS && (0, x.OA)(e));
+    n && !t ? (0, h.a5)(true) : !n && t && (0, h.a5)(false)
   }, [e, t])
 }

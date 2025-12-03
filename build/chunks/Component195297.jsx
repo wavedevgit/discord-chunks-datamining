@@ -110,7 +110,7 @@ function P(e) {
             [A.loadingOverlay]: j
           }),
           onSelectGIF: Z,
-          headingColor: "text-secondary",
+          headingColor: "text-subtle",
           hideFavorites: true
         }), j && (0, i.jsx)(c.$jN, {
           className: A.spinner

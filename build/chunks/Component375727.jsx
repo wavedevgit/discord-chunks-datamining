@@ -58,7 +58,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
         k(e), q(e.data), W(h.name), Z(false);
         return
       }
-      Z(true), (0, C.Q)(h).then(e => {
+      Z(true), (0, y.Q)(h).then(e => {
         k(e), q(e.data), W(h.name), Z(false)
       }).catch(e => {
         A.error("Failed to fetch emoji image", e), F(E.ze.MISSING_IMAGE_DATA), Z(false)
@@ -143,7 +143,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
         F(null), null != D && q(D.data), Q.current = 0, (0, _.g)(false), null == (e = ee.current) || e.reset()
       }, [ee, D]),
       eo = r.useCallback(() => {
-        (0, C.E)({
+        (0, y.E)({
           onClose: ea
         })
       }, [ea]),
@@ -269,7 +269,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
             })
           })
         }), (0, l.jsx)("div", {
-          children: (0, l.jsx)(y.y, {
+          children: (0, l.jsx)(C.y, {
             label: M.intl.string(M.t.m0YV7M),
             name: V,
             onNameChange: W

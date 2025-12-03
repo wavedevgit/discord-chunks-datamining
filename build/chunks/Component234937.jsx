@@ -14,10 +14,10 @@ var Chunk442837 = require("./442837.js"),
 let c = e => {
   let {
     event: t
-  } = e, n = (0, i.e7)([s.Z], () => s.Z.getGuild(t.guild_id));
+  } = e, n = (0, l.e7)([s.Z], () => s.Z.getGuild(t.guild_id));
   return null == n ? null : (0, r.jsxs)("div", {
     className: d.container,
-    children: [(0, r.jsx)(l.Heading, {
+    children: [(0, r.jsx)(i.Heading, {
       className: d.header,
       variant: "heading-sm/semibold",
       children: o.intl.string(o.t.SDTOL7)
@@ -29,12 +29,12 @@ let c = e => {
           guild: n,
           size: a.Z.Sizes.MINI,
           className: d.guildIcon
-        }), (0, r.jsx)(l.Text, {
-          color: "header-secondary",
+        }), (0, r.jsx)(i.Text, {
+          color: "text-default",
           variant: "text-sm/normal",
           children: n.name
         })]
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(i.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: t.name

@@ -29,16 +29,16 @@ function I(e) {
   let {
     collection: t,
     index: n,
-    onSelectApplication: i
+    onSelectApplication: a
   } = e, o = function(e) {
     let {
       collectionId: t,
       index: n
-    } = e, [r, i] = a.useState(false), l = (0, s.O)(e => {
-      e && i(true)
+    } = e, [r, a] = i.useState(false), l = (0, s.O)(e => {
+      e && a(true)
     });
-    return a.useEffect(() => {
-      r && (0, f.zZ)(C.rMx.APP_DIRECTORY_COLLECTION_VIEWED, {
+    return i.useEffect(() => {
+      r && (0, _.zZ)(C.rMx.APP_DIRECTORY_COLLECTION_VIEWED, {
         collection_id: t,
         collection_position: n
       })
@@ -46,14 +46,14 @@ function I(e) {
   }({
     collectionId: t.id,
     index: n
-  }), c = a.useCallback((e, r) => {
-    (0, f.zZ)(C.rMx.APP_DIRECTORY_COLLECTION_ITEM_CLICKED, {
+  }), c = i.useCallback((e, r) => {
+    (0, _.zZ)(C.rMx.APP_DIRECTORY_COLLECTION_ITEM_CLICKED, {
       collection_id: t.id,
       item_position: r,
       collection_position: n,
       application_id: e
-    }), i(e)
-  }, [t.id, n, i]);
+    }), a(e)
+  }, [t.id, n, a]);
   return (0, r.jsxs)("div", {
     ref: o,
     children: [(0, r.jsx)(m.Heading, {
@@ -76,27 +76,27 @@ function I(e) {
 let S = function(e) {
   let {
     onSelectApplication: t
-  } = e, n = (0, p.e7)([h.default], () => h.default.onlyShowPreviewAppCollections) ? o.E.PREVIEW : o.E.ACTIVE, i = (0, p.e7)([_.Z], () => _.Z.getFetchState({
+  } = e, n = (0, p.e7)([h.default], () => h.default.onlyShowPreviewAppCollections) ? o.E.PREVIEW : o.E.ACTIVE, a = (0, p.e7)([f.Z], () => f.Z.getFetchState({
     surface: y,
     activeState: n
-  })), l = (0, p.e7)([_.Z], () => _.Z.getCollections({
+  })), l = (0, p.e7)([f.Z], () => f.Z.getCollections({
     surface: y,
     activeState: n
   }));
-  a.useEffect(() => {
+  i.useEffect(() => {
     g.XK({
       surface: y,
       activeState: n
     })
   }, [n]);
-  let s = a.useMemo(() => null == l ? true : l.filter(e => e.type !== u.o.GALLERY), [l]);
-  return i === _.M.ERROR ? (0, r.jsx)("div", {
+  let s = i.useMemo(() => null == l ? true : l.filter(e => e.type !== u.o.GALLERY), [l]);
+  return a === f.M.ERROR ? (0, r.jsx)("div", {
     className: j.errorContainer,
     children: (0, r.jsx)(v.Z, {
       className: j.error
     })
   }) : (0, r.jsx)(b.Z, {
-    loading: i === _.M.FETCHING,
+    loading: a === f.M.FETCHING,
     children: null == s ? true : s.map((e, n) => (0, r.jsx)(I, {
       collection: e,
       index: n,
