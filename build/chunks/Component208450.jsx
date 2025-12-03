@@ -491,18 +491,19 @@ function q(e) {
       let e = y.Z.getCurrentlySelectedChannelId(),
         t = E.Z.getChannel(e);
       return g.ZP.getSection(e, null == t ? true : t.isDM()) === B.ULH.SEARCH
-    });
+    }),
+    M = j || I;
   i.useEffect(() => {
     O === (0, A.Tm)(t) && C(j)
   }, [O, j, t]);
-  let M = (0, d.VXO)(Z.L),
-    G = I || M;
+  let G = (0, d.VXO)(Z.L),
+    V = M || G;
   i.useEffect(() => {
     D.current && !I && (D.current = false, (0, U.IZ)({
       searchContext: t
     })), !D.current && I && (D.current = true)
-  }, [G, t, I, M]);
-  let V = i.useCallback(e => {
+  }, [t, I]);
+  let H = i.useCallback(e => {
       let {
         queryString: n,
         query: r,
@@ -521,7 +522,7 @@ function q(e) {
         offset: 0
       })
     }, [t]),
-    H = (0, u.e7)([b.Z, E.Z], () => {
+    Y = (0, u.e7)([b.Z, E.Z], () => {
       let e = (0, A.b7)(t) ? t.guildId : null;
       if (null != e) {
         let t = b.Z.getGuild(e);
@@ -534,15 +535,15 @@ function q(e) {
       }
       return null
     }),
-    Y = (0, P.kU)({
+    W = (0, P.kU)({
       location: "Search"
     }),
-    W = (0, N.UX)({
+    q = (0, N.UX)({
       location: "Search"
     }),
-    q = i.useMemo(() => t.type === B.aib.DMS ? F.intl.string(F.t.m7OrlR) : t.type === B.aib.CHANNEL && W || Y ? F.intl.formatToPlainString(F.t.LDZtFO, {
-      name: H
-    }) : F.intl.string(F.t["5h0QOP"]), [t.type, W, Y, H]);
+    X = i.useMemo(() => t.type === B.aib.DMS ? F.intl.string(F.t.m7OrlR) : t.type === B.aib.CHANNEL && q || W ? F.intl.formatToPlainString(F.t.LDZtFO, {
+      name: Y
+    }) : F.intl.string(F.t["5h0QOP"]), [t.type, q, W, Y]);
   return (0, r.jsx)(z, {
     className: n,
     searchContext: t,
@@ -550,10 +551,10 @@ function q(e) {
     editorState: f,
     hasResults: m,
     keyboardModeEnabled: o,
-    onSearch: V,
-    isSearchSidebarOrModalOpen: G,
-    placeholder: q,
-    isSearchFiltersRedesignEnabled: Y
+    onSearch: H,
+    isSearchSidebarOrModalOpen: V,
+    placeholder: X,
+    isSearchFiltersRedesignEnabled: W
   })
 }
 

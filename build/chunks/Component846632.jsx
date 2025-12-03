@@ -69,28 +69,29 @@ function h(e) {
     return e
   }({
     "data-migration-pending": true,
-    className: m.modal,
+    className: C.modal,
     size: d.CgR.DYNAMIC
   }, v), n = n = {
     parentComponent: "GuildTagAdoptModal",
     children: [(0, a.jsxs)(d.hzk, {
-      className: m.modalContent,
+      "data-migration-pending": true,
+      className: C.modalContent,
       scrollbarType: "none",
       children: [(0, a.jsx)("div", {
-        className: m.modalContentChild,
+        className: C.modalContentChild,
         children: (0, a.jsxs)("div", {
-          className: m.left,
+          className: C.left,
           children: [(0, a.jsxs)("div", {
-            className: m.headerContainer,
+            className: C.headerContainer,
             children: [(0, a.jsx)(d.Heading, {
               variant: "heading-lg/bold",
-              children: p.intl.string(C.default.OvKPi0)
+              children: p.intl.string(m.default.OvKPi0)
             }), (0, a.jsx)(d.Text, {
               variant: "text-md/normal",
-              children: p.intl.string(C.default.kHxfDw)
+              children: p.intl.string(m.default.kHxfDw)
             })]
           }), (0, a.jsx)(c.Z, {
-            className: m.guildRow,
+            className: C.guildRow,
             guildId: _.id,
             guildName: _.name,
             guildIcon: _.icon,
@@ -98,9 +99,9 @@ function h(e) {
             guildTag: _.profile.tag,
             guildBadge: null != (r = _.profile.badge) ? r : ""
           }), (0, a.jsxs)("div", {
-            className: m.buttonContainer,
+            className: C.buttonContainer,
             children: [(0, a.jsx)(l.u, {
-              text: p.intl.string(C.default.WlENZt),
+              text: p.intl.string(m.default.WlENZt),
               shouldShow: y,
               children: (0, a.jsx)(d.Button, {
                 variant: "primary",
@@ -119,16 +120,17 @@ function h(e) {
           })]
         })
       }), (0, a.jsx)("div", {
-        className: i()(m.modalContentChild, m.right),
+        className: i()(C.modalContentChild, C.right),
         children: (0, a.jsx)(s.Z, {
-          className: m.rightContent,
+          className: C.rightContent,
           guildId: _.id,
           tag: _.profile.tag,
           badge: null != (h = _.profile.badge) ? h : ""
         })
       })]
     }), (0, a.jsx)(d.olH, {
-      className: m.close,
+      "data-migration-pending": true,
+      className: C.close,
       onClick: v.onClose
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

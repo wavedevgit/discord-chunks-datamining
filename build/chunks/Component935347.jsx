@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 935347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => x
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,6 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk197344 = require("./197344.js"),
   Chunk460181 = require("./460181.js"),
   Chunk474873 = require("./474873.js"),
+  Chunk108427 = require("./108427.js"),
   Chunk706454 = require("./706454.js"),
   Chunk215427 = require("./215427.js"),
   Chunk820254 = require("./820254.jsx"),
@@ -28,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk744749 = require("./744749.js");
 
-function N(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +37,7 @@ function N(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class j extends Chunk473749.PureComponent {
+class P extends Chunk473749.PureComponent {
   createSound() {
     let {
       soundpack: e
@@ -55,7 +56,7 @@ class j extends Chunk473749.PureComponent {
       connected: l,
       soundpack: a
     } = this.props, s = l && n && !r && !i;
-    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && null != this.videoRef && u.K.get(C.wli) && this._connectedSound.play(), this.setState({
+    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && (0, b.t)(), l && null != this.videoRef && u.K.get(S.wli) && this._connectedSound.play(), this.setState({
       problems: false,
       hide: l
     })) : t.hide !== r ? (r ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
@@ -137,83 +138,83 @@ class j extends Chunk473749.PureComponent {
     }
   }
   constructor(e) {
-    super(e), N(this, "videoRef", null), N(this, "_noProblemsTimeout", null), N(this, "_problemsTimeout", null), N(this, "_connectedSound", this.createSound()), N(this, "_loadingText", function() {
-      let e = [S.intl.string(S.t.Ex79K6), S.intl.string(S.t["+v5zsT"]), S.intl.string(S.t["RLx6+Y"]), S.intl.string(S.t.Q1PZkN), S.intl.string(S.t.x7sfVg), S.intl.format(S.t.PHuQsQ, {
+    super(e), j(this, "videoRef", null), j(this, "_noProblemsTimeout", null), j(this, "_problemsTimeout", null), j(this, "_connectedSound", this.createSound()), j(this, "_loadingText", function() {
+      let e = [T.intl.string(T.t.Ex79K6), T.intl.string(T.t["+v5zsT"]), T.intl.string(T.t["RLx6+Y"]), T.intl.string(T.t.Q1PZkN), T.intl.string(T.t.x7sfVg), T.intl.format(T.t.PHuQsQ, {
         tabHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "tab",
-          className: T.keybind
+          className: N.keybind
         }, t)
-      }), S.intl.string(S.t.UorX4T), S.intl.string(S.t["il/GZt"]), S.intl.string(S.t.HKBJvw), S.intl.format(S.t.FVVp79, {
+      }), T.intl.string(T.t.UorX4T), T.intl.string(T.t["il/GZt"]), T.intl.string(T.t.HKBJvw), T.intl.format(T.t.FVVp79, {
         F6Hook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "f6",
-          className: T.keybind
+          className: N.keybind
         }, t),
         tabHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "tab",
-          className: T.keybind
+          className: N.keybind
         }, t)
-      }), S.intl.string(S.t["7Y1hFH"]), S.intl.string(S.t.UcCW71), S.intl.string(S.t.E5Ghfc), S.intl.string(S.t.bANqo8), S.intl.string(S.t.yOEVDr), S.intl.string(S.t["u0Ra/G"]), S.intl.string(S.t.un4cQ7), S.intl.string(S.t["2cyYx1"]), S.intl.string(S.t.KCmze1), S.intl.string(S.t.I98MEE), S.intl.format(S.t.c0YCIx, {}), S.intl.string(S.t.z8AvIN), S.intl.string(S.t.IjX3P1), S.intl.string(S.t.lg3Ckc), S.intl.string(S.t["4GaLhY"]), S.intl.string(S.t.qHKbUw), S.intl.string(S.t.mJxKDw), S.intl.string(S.t.iiQBXF), S.intl.string(S.t.YPD46Q), S.intl.string(S.t.O8Bpga), S.intl.string(S.t.xzFwfi), S.intl.string(S.t["4G3fsX"]), S.intl.string(S.t["/jPyKC"]), S.intl.string(S.t["8x7D5c"]), S.intl.string(S.t.G6Q8H3), S.intl.string(S.t["9Cx+xL"]), S.intl.string(S.t.WsZ8dW), S.intl.string(S.t.btoe7M), S.intl.string(S.t.E6Y0j7), S.intl.string(S.t["7KZ81/"]), S.intl.string(S.t.hm7OKu), S.intl.string(S.t["H535i+"]), S.intl.string(S.t["08WJUR"]), S.intl.string(S.t.hhtfyi), S.intl.string(S.t.on980U), S.intl.string(S.t.AL6c01), S.intl.string(S.t.iLTeF6), S.intl.string(S.t.b3vSu7), S.intl.string(S.t.f8ao58), S.intl.format(S.t["1v1h8o"], {
+      }), T.intl.string(T.t["7Y1hFH"]), T.intl.string(T.t.UcCW71), T.intl.string(T.t.E5Ghfc), T.intl.string(T.t.bANqo8), T.intl.string(T.t.yOEVDr), T.intl.string(T.t["u0Ra/G"]), T.intl.string(T.t.un4cQ7), T.intl.string(T.t["2cyYx1"]), T.intl.string(T.t.KCmze1), T.intl.string(T.t.I98MEE), T.intl.format(T.t.c0YCIx, {}), T.intl.string(T.t.z8AvIN), T.intl.string(T.t.IjX3P1), T.intl.string(T.t.lg3Ckc), T.intl.string(T.t["4GaLhY"]), T.intl.string(T.t.qHKbUw), T.intl.string(T.t.mJxKDw), T.intl.string(T.t.iiQBXF), T.intl.string(T.t.YPD46Q), T.intl.string(T.t.O8Bpga), T.intl.string(T.t.xzFwfi), T.intl.string(T.t["4G3fsX"]), T.intl.string(T.t["/jPyKC"]), T.intl.string(T.t["8x7D5c"]), T.intl.string(T.t.G6Q8H3), T.intl.string(T.t["9Cx+xL"]), T.intl.string(T.t.WsZ8dW), T.intl.string(T.t.btoe7M), T.intl.string(T.t.E6Y0j7), T.intl.string(T.t["7KZ81/"]), T.intl.string(T.t.hm7OKu), T.intl.string(T.t["H535i+"]), T.intl.string(T.t["08WJUR"]), T.intl.string(T.t.hhtfyi), T.intl.string(T.t.on980U), T.intl.string(T.t.AL6c01), T.intl.string(T.t.iLTeF6), T.intl.string(T.t.b3vSu7), T.intl.string(T.t.f8ao58), T.intl.format(T.t["1v1h8o"], {
         asterisks: "**"
-      }), S.intl.format(S.t.MUlAVW, {
+      }), T.intl.format(T.t.MUlAVW, {
         quickSwitcherHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "mod+k",
-          className: T.keybind
+          className: N.keybind
         }, t)
-      }), S.intl.format(S.t.aes5VI, {
+      }), T.intl.format(T.t.aes5VI, {
         markUnreadHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "alt+click",
-          className: T.keybind
+          className: N.keybind
         }, t)
-      }), S.intl.format(S.t.md9Svv, {
+      }), T.intl.format(T.t.md9Svv, {
         markServerUnreadHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift+esc",
-          className: T.keybind
+          className: N.keybind
         }, t)
-      }), S.intl.format(S.t["X0Tu+u"], {
+      }), T.intl.format(T.t["X0Tu+u"], {
         navigateUnreadHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift+alt+up",
-          className: T.keybind
+          className: N.keybind
         }, t),
         downHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "down",
-          className: T.keybind
+          className: N.keybind
         }, t)
-      }), S.intl.format(S.t.AkoeIY, {
+      }), T.intl.format(T.t.AkoeIY, {
         keyboardShortcutsHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "mod+/",
-          className: T.keybind
+          className: N.keybind
         }, t)
-      }), S.intl.format(S.t.P9sfAH, {
+      }), T.intl.format(T.t.P9sfAH, {
         messageNewlineHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift+return",
-          className: T.keybind
+          className: N.keybind
         }, t)
-      }), S.intl.format(S.t["3Ox33f"], {
+      }), T.intl.format(T.t["3Ox33f"], {
         shiftHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift",
-          className: T.keybind
+          className: N.keybind
         }, t)
-      }), S.intl.format(S.t.enCV6b, {
+      }), T.intl.format(T.t.enCV6b, {
         upHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "up",
-          className: T.keybind
+          className: N.keybind
         }, t)
       })];
-      return b.default.locale.startsWith("en-") && e.push(S.intl.string(S.t.dQ9Wqk)), e[o().random(e.length - 1)]
-    }()), N(this, "_eventLoadingText", function() {
+      return E.default.locale.startsWith("en-") && e.push(T.intl.string(T.t.dQ9Wqk)), e[o().random(e.length - 1)]
+    }()), j(this, "_eventLoadingText", function() {
       let e = g.Z.getLoadingTips();
       if (null != e && e.length > 0) return e[o().random(e.length - 1)]
-    }()), N(this, "handleReady", () => {
+    }()), j(this, "handleReady", () => {
       this.setState({
         ready: true
-      }), (0, v.isDesktop)() && (y.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), y.ZP.send("UPDATE_OPEN_ON_STARTUP"))
-    }), N(this, "setVideoRef", e => {
+      }), (0, y.isDesktop)() && (I.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), I.ZP.send("UPDATE_OPEN_ON_STARTUP"))
+    }), j(this, "setVideoRef", e => {
       this.videoRef = e
-    }), N(this, "setProblemsTimeout", () => {
+    }), j(this, "setProblemsTimeout", () => {
       null == this._problemsTimeout && (this._problemsTimeout = setTimeout(() => this.setState({
         problems: true
       }), 1e4))
-    }), N(this, "clearProblemsTimeout", () => {
+    }), j(this, "clearProblemsTimeout", () => {
       clearTimeout(this._problemsTimeout), this._problemsTimeout = null
     });
     let {
@@ -227,7 +228,7 @@ class j extends Chunk473749.PureComponent {
     }, this._connectedSound.volume = 1
   }
 }
-let P = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk215427.Z, Chunk474873.Z, Chunk607070.Z], () => ({
+let x = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk215427.Z, Chunk474873.Z, Chunk607070.Z], () => ({
   isTryingToConnect: Chunk38618.Z.isTryingToConnect(),
   connected: Chunk38618.Z.isConnected(),
   incident: Chunk215427.Z.getIncident(),
@@ -241,7 +242,7 @@ let P = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk215427.Z, Chunk474873.Z
     soundpack: l,
     reducedMotion: a
   } = e;
-  return t ? (0, r.jsx)(j, {
+  return t ? (0, r.jsx)(P, {
     reducedMotion: a,
     soundpack: l,
     connected: n,
