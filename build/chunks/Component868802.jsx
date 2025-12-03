@@ -130,6 +130,8 @@ let j = () => {
         });
       case Chunk5900._n.INSTALLING:
       case Chunk5900._n.READY_FOR_LICENSE:
+      case Chunk5900._n.WAITING_FOR_TERMS:
+      case Chunk5900._n.INSTALLING_TIMEOUT:
         return (0, Chunk54381.jsx)("div", {
           className: Chunk498374.spinner,
           children: (0, Chunk54381.jsx)(Chunk793030.$jN, {

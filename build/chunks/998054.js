@@ -31,7 +31,7 @@ let l = async () => {
         }
       })
     }
-    if (module instanceof Object && "code" in module && "MissingRegistration" === module.code) return Chunk5900._n.INSTALLING;
+    if (module instanceof Object && "code" in module && "MissingRegistration" === module.code) return Chunk5900._n.WAITING_FOR_TERMS;
     return Chunk5900._n.ERROR
   }
 }, c = () => new Promise(async (e, t) => {

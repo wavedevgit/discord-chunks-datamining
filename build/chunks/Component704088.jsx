@@ -134,7 +134,7 @@ let y = e => {
     })
   },
   C = () => {
-    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [C, S] = Chunk473749.useState(false), [E, N] = Chunk473749.useState(5e3), [T, O] = Chunk473749.useState(false), P = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), w = (0, Chunk848984.u)(), [k] = Chunk473749.useState(() => (0, Chunk773275.o8)({
+    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [C, S] = Chunk473749.useState(false), [E, T] = Chunk473749.useState(5e3), [N, O] = Chunk473749.useState(false), P = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), w = (0, Chunk848984.u)(), [k] = Chunk473749.useState(() => (0, Chunk773275.o8)({
       finishSetup: async () => true,
       perkAvailableToUser: w
     })), {
@@ -262,11 +262,17 @@ let y = e => {
                 label: "Installing",
                 value: Chunk5900._n.INSTALLING
               }, {
+                label: "Accept Terms",
+                value: Chunk5900._n.WAITING_FOR_TERMS
+              }, {
                 label: "Existing Installation",
                 value: Chunk5900._n.EXISTING_INSTALLATION
               }, {
                 label: "Unsupported (ZeroTrust)",
                 value: Chunk5900._n.ZERO_TRUST
+              }, {
+                label: "Installing Timeout",
+                value: Chunk5900._n.INSTALLING_TIMEOUT
               }, {
                 label: "Error",
                 value: Chunk5900._n.ERROR
@@ -316,7 +322,7 @@ let y = e => {
               variant: "text-md/semibold",
               children: "Install time"
             }), (0, Chunk54381.jsx)(Chunk481060.PhF, {
-              select: e => N(e),
+              select: e => T(e),
               isSelected: e => e === E,
               serialize: e => "".concat(e),
               options: [{
@@ -358,7 +364,7 @@ let y = e => {
             onClick: () => {
               O(true)
             }
-          }), T && (0, Chunk54381.jsx)(Chunk720553.default, {
+          }), N && (0, Chunk54381.jsx)(Chunk720553.default, {
             url: "https://www.discord.com",
             trustUrl: () => false,
             onCancel: () => O(false),

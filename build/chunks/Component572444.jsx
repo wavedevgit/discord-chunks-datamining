@@ -102,7 +102,7 @@ function _(e) {
 function y() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [i, r] = Chunk473749.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [y, C] = Chunk473749.useState(null), S = Chunk473749.useRef(null), E = Chunk473749.useRef(null), [N, T] = Chunk473749.useState(.5), {
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [i, r] = Chunk473749.useState([]), j = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [y, C] = Chunk473749.useState(null), S = Chunk473749.useRef(null), E = Chunk473749.useRef(null), [T, N] = Chunk473749.useState(.5), {
     krispModels: O,
     krispModelOverride: P,
     inputMode: I,
@@ -142,7 +142,7 @@ function y() {
   function V(e) {
     if (t && H(), z(), null == G) return;
     let n = G.createBufferSource();
-    n.buffer = e.audioBuffer, E.current = G.createGain(), E.current.gain.value = N, n.connect(E.current), E.current.connect(G.destination), n.loop = true, n.start(), S.current = n, C(e)
+    n.buffer = e.audioBuffer, E.current = G.createGain(), E.current.gain.value = T, n.connect(E.current), E.current.connect(G.destination), n.loop = true, n.start(), S.current = n, C(e)
   }
   Chunk473749.useEffect(() => {
     z()
@@ -277,9 +277,9 @@ function y() {
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.iRW, {
         label: "Volume",
-        initialValue: N,
+        initialValue: T,
         asValueChanges: function(e) {
-          null != E.current && (E.current.gain.value = e, T(e))
+          null != E.current && (E.current.gain.value = e, N(e))
         },
         minValue: 0,
         maxValue: 1

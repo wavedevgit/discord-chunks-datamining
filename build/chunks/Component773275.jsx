@@ -60,7 +60,8 @@ let h = {
     installationStatus: Chunk5900._n.UNKNOWN,
     connectionStatus: Chunk5900.Ij.INITIALIZING,
     isWeb: (0, Chunk818710.$L)(),
-    isSupportedPrivateBrowsingPerkPlatform: (0, Chunk818710.ED)() || (0, Chunk818710.V5)()
+    isSupportedPrivateBrowsingPerkPlatform: (0, Chunk818710.ED)() || (0, Chunk818710.V5)(),
+    installTimeout: 6e5
   },
   g = e => (0, a.M)()(t => p(m(p({}, h), {
     setRegistration: e => t(t => m(p({}, t), {

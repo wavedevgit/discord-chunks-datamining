@@ -45,7 +45,7 @@ let S = async () => {
   } catch (e) {} finally {
     await (0, u.Tf)()
   }
-}, N = async (e, t) => {
+}, T = async (e, t) => {
   try {
     await s.tn.del({
       url: j.ANM.UPDATE_USER_OFFER(e, t),
@@ -54,7 +54,7 @@ let S = async () => {
   } catch (e) {} finally {
     await (0, u.Tf)()
   }
-}, T = async () => {
+}, N = async () => {
   try {
     let {
       body: e
@@ -94,16 +94,16 @@ function I(e) {
     offer: p,
     offerOptions: g,
     forceRefetch: b
-  } = e, [v, C] = l.useState(false), [S, E] = l.useState(false), [T, O] = l.useState(false), [P, I] = l.useState(false);
+  } = e, [v, C] = l.useState(false), [S, E] = l.useState(false), [N, O] = l.useState(false), [P, I] = l.useState(false);
   l.useEffect(() => {
-    T && I(true);
+    N && I(true);
     let e = setTimeout(() => {
       I(false)
     }, 500);
     return () => {
       clearTimeout(e)
     }
-  }, [T]);
+  }, [N]);
   let {
     id: w,
     expires_at: k,
@@ -284,7 +284,7 @@ function I(e) {
       })]
     }), (0, a.jsx)(c.P3F, {
       onClick: async () => {
-        O(true), await N(w, "trial"), b(), O(false)
+        O(true), await T(w, "trial"), b(), O(false)
       },
       children: (0, a.jsx)(c.XHJ, {
         size: "md",
@@ -293,7 +293,7 @@ function I(e) {
       })
     }), (0, a.jsx)("div", {
       className: r()(y.loadingContainer, {
-        [y.isLoading]: T || P
+        [y.isLoading]: N || P
       }),
       children: (0, a.jsx)(c.$jN, {})
     })]
@@ -318,7 +318,7 @@ function w(e) {
   }, [v]);
   let {
     id: E,
-    expires_at: T,
+    expires_at: N,
     applied_at: O,
     discount_id: P,
     discount: I
@@ -327,7 +327,7 @@ function w(e) {
       value: t
     } = e;
     return t === P
-  })) ? true : t.label) ? n : "Unknown", k = null != T, R = null != T && new Date(T).getTime() < Date.now(), A = async () => {
+  })) ? true : t.label) ? n : "Unknown", k = null != N, R = null != N && new Date(N).getTime() < Date.now(), A = async () => {
     _(true), k ? await Z({
       expiresAt: null
     }) : await (0, u.ab)(true, i), m(), _(false)
@@ -377,7 +377,7 @@ function w(e) {
         children: w
       }), (0, a.jsx)(c.P3F, {
         onClick: async () => {
-          _(true), await N(E, "discount"), m(), _(false)
+          _(true), await T(E, "discount"), m(), _(false)
         },
         children: (0, a.jsx)(c.XHJ, {
           size: "md",
@@ -435,7 +435,7 @@ function w(e) {
         children: ["Expires (", (0, d.Z)(), "):"]
       }), (0, a.jsx)("input", {
         type: "datetime-local",
-        value: (0, x.mm)(T),
+        value: (0, x.mm)(N),
         onChange: e => Z({
           expiresAt: "" !== e.target.value ? new Date(e.target.value).toISOString() : null
         })
@@ -471,7 +471,7 @@ function w(e) {
 }
 
 function k() {
-  let [e, t] = Chunk473749.useState([]), [n, i] = Chunk473749.useState([]), [r, s] = Chunk473749.useState(), [d, h] = Chunk473749.useState(), [x, f] = Chunk473749.useState([]), [_, N] = Chunk473749.useState([]), [k, R] = Chunk473749.useState(true), [A, Z] = Chunk473749.useState(10080), [D, L] = Chunk473749.useState([]), {
+  let [e, t] = Chunk473749.useState([]), [n, i] = Chunk473749.useState([]), [r, s] = Chunk473749.useState(), [d, h] = Chunk473749.useState(), [x, f] = Chunk473749.useState([]), [_, T] = Chunk473749.useState([]), [k, R] = Chunk473749.useState(true), [A, Z] = Chunk473749.useState(10080), [D, L] = Chunk473749.useState([]), {
     entitlements: M,
     deleteFractionalPremium: U,
     refreshEntitlementList: F
@@ -493,8 +493,8 @@ function k() {
       t(n), i(a), null == r && s(n[0].value), null == d && h(a[0].value)
     })
   }, [module, require, r, Chunk105713, k]), Chunk473749.useEffect(() => {
-    k && (R(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), T().then(e => {
-      f(e.trial.sort((e, t) => e.id.localeCompare(t.id))), N(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
+    k && (R(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), N().then(e => {
+      f(e.trial.sort((e, t) => e.id.localeCompare(t.id))), T(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
   }, [k]);
   let B = async () => {

@@ -61,7 +61,7 @@ let S = {
     [Chunk362786.Id.DEFERRED_START]: "Deferred Start",
     [Chunk362786.Id.USER_TEMPORARY_BAN]: "User Temp Ban"
   },
-  N = [{
+  T = [{
     label: "Unpaid",
     value: Chunk981631.O0b.UNPAID
   }, {
@@ -90,7 +90,7 @@ let S = {
     value: Chunk981631.O0b.PAUSE_PENDING
   }];
 
-function T(e) {
+function N(e) {
   let {
     subscription: t,
     onClose: n,
@@ -371,7 +371,7 @@ function O(e) {
             label: "Status",
             serialize: e => B(e),
             isSelected: e => e === P.status,
-            options: N,
+            options: T,
             select: e => z({
               status: e
             }),
@@ -389,7 +389,7 @@ function O(e) {
                 size: "sm",
                 text: "Time Travel",
                 onClick: () => {
-                  (0, u.ZDy)(() => Promise.resolve(e => (0, a.jsx)(T, C({
+                  (0, u.ZDy)(() => Promise.resolve(e => (0, a.jsx)(N, C({
                     subscription: P,
                     onUpdated: I
                   }, e))))

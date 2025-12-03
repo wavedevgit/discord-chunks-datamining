@@ -20,12 +20,16 @@ let d = () => {
       switch (exports) {
         case Chunk5900._n.ERROR:
           return Chunk388032.intl.string(Chunk163646.default.cjqyz7);
+        case Chunk5900._n.INSTALLING_TIMEOUT:
+          return Chunk388032.intl.string(Chunk163646.default.an5PuY);
         case Chunk5900._n.NOT_INSTALLED:
         case Chunk5900._n.UNKNOWN:
           return Chunk388032.intl.string(Chunk163646.default.KN6HOb);
         case Chunk5900._n.INSTALLING:
-        case Chunk5900._n.READY_FOR_LICENSE:
           return Chunk388032.intl.string(Chunk163646.default.lYWqUK);
+        case Chunk5900._n.WAITING_FOR_TERMS:
+        case Chunk5900._n.READY_FOR_LICENSE:
+          return Chunk388032.intl.string(Chunk163646.default.NSVz3Y);
         case Chunk5900._n.EXISTING_INSTALLATION:
           return Chunk388032.intl.string(Chunk163646.default.FgL0HB);
         case Chunk5900._n.ZERO_TRUST:

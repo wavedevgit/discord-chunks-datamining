@@ -22,25 +22,27 @@ let m = () => {
       setInstallationStatus: t,
       setConnectionStatus: n,
       finishSetup: r,
-      getWarpInstallationStatus: a
+      getWarpInstallationStatus: a,
+      connect: o,
+      installTimeout: m
     } = (0, Chunk773275.xf)(), {
-      status: o
-    } = (0, Chunk442837.e7)([Chunk646834.Z], () => Chunk646834.Z.state, []), [m, h] = (0, Chunk473749.useState)(0), {
-      installedDiscordPrivateBrowsingPerk: g
-    } = (0, Chunk442837.e7)([Chunk607726.Z], () => Chunk607726.Z.getState(), []), [E, b] = (0, Chunk473749.useState)(false);
+      status: h
+    } = (0, Chunk442837.e7)([Chunk646834.Z], () => Chunk646834.Z.state, []), [g, E] = (0, Chunk473749.useState)(0), {
+      installedDiscordPrivateBrowsingPerk: b
+    } = (0, Chunk442837.e7)([Chunk607726.Z], () => Chunk607726.Z.getState(), []), [y, O] = (0, Chunk473749.useState)(false), [v, S] = (0, Chunk473749.useState)(null);
     return (0, Chunk473749.useEffect)(() => {
-      E || (b(true), module !== Chunk5900._n.INSTALLING && (0, Chunk998054.Y)().then(e => e === d._n.NOT_INSTALLED ? void t(d._n.NOT_INSTALLED) : e === d._n.EXISTING_INSTALLATION && g ? void t(d._n.INSTALLING) : void t(e)))
-    }, [exports, g, E, module]), (0, Chunk473749.useEffect)(() => {
-      g && module === Chunk5900._n.NOT_INSTALLED && (0, Chunk60995._)(false), g && module === Chunk5900._n.EXISTING_INSTALLATION && exports(Chunk5900._n.INSTALLED)
-    }, [g, module, exports]), (0, Chunk473749.useEffect)(() => {
-      if (module !== Chunk5900._n.INSTALLED) return;
+      y || (O(true), module !== Chunk5900._n.INSTALLING && (0, Chunk998054.Y)().then(e => e === d._n.NOT_INSTALLED ? void t(d._n.NOT_INSTALLED) : e === d._n.EXISTING_INSTALLATION && b ? void t(d._n.INSTALLING) : void t(e)))
+    }, [exports, b, y, module]), (0, Chunk473749.useEffect)(() => {
+      b && module === Chunk5900._n.NOT_INSTALLED && (0, Chunk60995._)(false), b && module === Chunk5900._n.EXISTING_INSTALLATION && exports(Chunk5900._n.INSTALLED)
+    }, [b, module, exports]), (0, Chunk473749.useEffect)(() => {
+      if (![Chunk5900._n.INSTALLED, Chunk5900._n.WAITING_FOR_TERMS].includes(module)) return;
       let n = setInterval(async () => {
         await Chunk734610() === Chunk5900._n.NOT_INSTALLED && exports(Chunk5900._n.NOT_INSTALLED)
       }, 1e3);
       return () => clearInterval(require)
     }, [module, exports, Chunk734610]), (0, Chunk473749.useEffect)(() => {
       if (![Chunk5900._n.INSTALLED, Chunk5900._n.EXISTING_INSTALLATION].includes(module)) return void require(Chunk5900.Ij.DISCONNECTED);
-      switch (Chunk818710) {
+      switch (h) {
         case Chunk5900.zb.CONNECTED:
           require(Chunk5900.Ij.CONNECTED);
           break;
@@ -48,13 +50,16 @@ let m = () => {
           require(Chunk5900.Ij.INITIALIZING);
           break;
         case Chunk5900.zb.DISCONNECTED:
-          require(Chunk5900.Ij.DISCONNECTED)
+          require(Chunk5900.Ij.DISCONNECTED);
+          break;
+        case Chunk5900.zb.UNABLE:
+          O(false)
       }
-    }, [Chunk818710, module, require]), (0, Chunk473749.useEffect)(() => {
-      m > 10 && (exports(Chunk5900._n.ERROR), h(0))
-    }, [m, exports]), (0, Chunk473749.useEffect)(() => {
+    }, [h, module, require]), (0, Chunk473749.useEffect)(() => {
+      g > 10 && (exports(Chunk5900._n.ERROR), E(0))
+    }, [g, exports]), (0, Chunk473749.useEffect)(() => {
       module === Chunk5900._n.READY_FOR_LICENSE && Chunk54381().then(e => {
-        e && t(d._n.INSTALLED)
+        e && t(d._n.INSTALLED), o()
       }).catch(e => {
         c.Z.captureException(e, {
           tags: {
@@ -62,21 +67,37 @@ let m = () => {
           }
         }), t(d._n.ERROR)
       })
-    }, [module, exports, Chunk54381]), (0, Chunk473749.useEffect)(() => {
-      if (module !== Chunk5900._n.INSTALLING) return;
+    }, [module, exports, Chunk54381, Chunk818710]), (0, Chunk473749.useEffect)(() => {
+      if (![Chunk5900._n.INSTALLING, Chunk5900._n.WAITING_FOR_TERMS].includes(module)) return void S(null);
+      if (null == v && S(Date.now()), null != v) {
+        let e = v + m - Date.now();
+        if (module <= 0) return void exports(Chunk5900._n.INSTALLING_TIMEOUT);
+        let n = setTimeout(() => {
+          exports(Chunk5900._n.INSTALLING_TIMEOUT)
+        }, module);
+        return () => clearTimeout(require)
+      }
+    }, [module, v, S, exports, m]), (0, Chunk473749.useEffect)(() => {
+      if (![Chunk5900._n.INSTALLING, Chunk5900._n.WAITING_FOR_TERMS, Chunk5900._n.INSTALLING_TIMEOUT].includes(module)) return;
       let n = setInterval(async () => {
-        let e = await Chunk734610();
-        switch (module) {
+        let n = await Chunk734610();
+        switch (require) {
           case Chunk5900._n.ERROR:
-            h(e => e + 1);
+            E(e => e + 1);
             return;
           case Chunk5900._n.NOT_INSTALLED:
+            [Chunk5900._n.NOT_INSTALLED, Chunk5900._n.INSTALLING].includes(module) || exports(Chunk5900._n.NOT_INSTALLED);
             return;
           case Chunk5900._n.EXISTING_INSTALLATION:
             exports(Chunk5900._n.READY_FOR_LICENSE);
             return;
+          case Chunk5900._n.WAITING_FOR_TERMS:
+          case Chunk5900._n.INSTALLING:
+            if (module === Chunk5900._n.INSTALLING_TIMEOUT) return;
+            exports(require);
+            break;
           default:
-            exports(module)
+            exports(require)
         }
       }, 1e3);
       return () => {

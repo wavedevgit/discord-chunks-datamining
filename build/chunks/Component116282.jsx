@@ -44,9 +44,17 @@ let d = () => {
         return Chunk388032.intl.format(Chunk163646.default.vjIpaK, {
           helpdeskArticle: Chunk323183.w
         });
+      case Chunk5900._n.INSTALLING_TIMEOUT:
+        return Chunk388032.intl.format(Chunk163646.default.QWyvkt, {
+          helpdeskArticle: Chunk323183.w
+        });
       case Chunk5900._n.INSTALLING:
-      case Chunk5900._n.READY_FOR_LICENSE:
         return Chunk388032.intl.format(Chunk163646.default.ZLrDvb, {
+          helpdeskArticle: Chunk323183.w
+        });
+      case Chunk5900._n.WAITING_FOR_TERMS:
+      case Chunk5900._n.READY_FOR_LICENSE:
+        return Chunk388032.intl.format(Chunk163646.default.rX9Z5g, {
           helpdeskArticle: Chunk323183.w
         });
       case Chunk5900._n.EXISTING_INSTALLATION:
