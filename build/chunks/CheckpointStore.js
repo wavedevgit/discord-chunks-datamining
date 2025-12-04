@@ -98,7 +98,6 @@ class v extends(r = Chunk442837.ZP.PersistedStore) {
 }
 s(v, "displayName", "CheckpointStore"), s(v, "persistKey", "CheckpointStore");
 let S = new v(Chunk570140.Z, {
-  CONNECTION_OPEN: _,
   CHECKPOINT_FETCH_START: h,
   CHECKPOINT_FETCH_SUCCESS: g,
   CHECKPOINT_FETCH_FAILED: E,

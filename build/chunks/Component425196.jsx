@@ -2,10 +2,12 @@
 /** chunk id: 425196, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => K
+  Z: () => Q
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk392711 = require("./392711.js"),
+  o = require.n(Chunk392711),
   Chunk205120 = require("./205120.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -39,7 +41,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk417788 = require("./417788.js"),
   Chunk278607 = require("./278607.js");
 
-function k(e, t, n) {
+function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -48,19 +50,19 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function U(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      G(e, t, n[t])
     })
   }
   return e
 }
-let G = {
+let B = {
     [Chunk612776._n.ZERO]: "Bonsai",
     [Chunk612776._n.ONE]: "Donut",
     [Chunk612776._n.TWO]: "Capybara",
@@ -72,7 +74,7 @@ let G = {
     [Chunk612776._n.EIGHT]: "Cat",
     [Chunk612776._n.NINE]: "Cassette"
   },
-  Z = {
+  F = {
     [Chunk612776._n.ZERO]: "Bonsai Icon",
     [Chunk612776._n.ONE]: "Donut Icon",
     [Chunk612776._n.TWO]: "Capybara Icon",
@@ -84,103 +86,105 @@ let G = {
     [Chunk612776._n.EIGHT]: "Cat Icon",
     [Chunk612776._n.NINE]: "Cassette Icon"
   },
-  B = 429 / 462;
+  V = 429 / 462,
+  H = 200;
 
-function F(e) {
+function Y(e) {
   var t;
   let {
     step: n,
-    onNext: l
+    onNext: a
   } = e, {
     powerLevel: u = 0,
     powerLevelPercentile: f = 0,
-    cardId: p = 0
-  } = (0, s.e7)([I.Z], () => I.Z.getCheckpointData()), _ = (0, s.e7)([E.default], () => E.default.getCurrentUser()), m = (0, i.useContext)(S.Q), h = (0, A.Z)((0, c.dQu)(m.primaryColor).hex()), g = (0, O.a7)(h), b = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), y = (0, i.useRef)(null), v = (0, i.useMemo)(() => n <= D.ij.END_REWARD ? 1 : n === D.ij.END_CLAIM ? 2 : 3, [n]), N = (0, i.useCallback)(() => n <= D.ij.END_REWARD ? "100%" : n === D.ij.END_CLAIM ? "50%" : "30%", [n]), P = (0, o.q_F)({
+    cardId: _ = 0
+  } = (0, c.e7)([A.Z], () => A.Z.getCheckpointData()), m = (0, c.e7)([y.default], () => y.default.getCurrentUser()), h = (0, i.useContext)(T.Q), g = (0, N.Z)((0, d.dQu)(h.primaryColor).hex()), E = (0, S.a7)(g), b = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), O = (0, i.useRef)(null), [v, I] = (0, i.useState)(true), R = (0, i.useMemo)(() => n <= L.ij.END_REWARD ? 1 : n === L.ij.END_CLAIM ? 2 : 3, [n]), w = (0, i.useMemo)(() => o().throttle(() => {
+    null != O.current && I(O.current.clientWidth)
+  }, H), []), x = (0, i.useCallback)(() => n <= L.ij.END_REWARD ? "100%" : n === L.ij.END_CLAIM ? "50%" : "30%", [n]), G = (0, l.q_F)({
+    onChange: w,
     to: {
-      width: N()
+      width: x()
     }
-  }), w = (0, o.q_F)({
+  }), Z = (0, l.q_F)({
     to: {
-      width: n === D.ij.END_SUMMARY ? "140%" : "100%",
-      left: n === D.ij.END_SUMMARY ? "40px" : "0px"
+      width: n === L.ij.END_SUMMARY ? "140%" : "100%",
+      height: null != v ? v * V : true,
+      left: n === L.ij.END_SUMMARY ? "40px" : "0px"
     }
-  }), k = (0, o.q_F)({
+  }), Y = (0, l.q_F)({
     to: {
-      opacity: +(n !== D.ij.END_SUMMARY),
-      transform: n === D.ij.END_SUMMARY ? "translate3d(0, -200px, 0)" : "translate3d(0, 0px, 0)"
+      opacity: +(n !== L.ij.END_SUMMARY),
+      transform: n === L.ij.END_SUMMARY ? "translate3d(0, -200px, 0)" : "translate3d(0, 0px, 0)"
     }
   });
-  return (0, i.useEffect)(() => {
-    let e = () => {
-      null != y.current && (y.current.style.height = "".concat(y.current.clientWidth * B, "px"))
-    };
-    return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, []), (0, r.jsxs)(a.animated.div, {
-    className: M.cardSection,
-    style: P,
-    children: [(0, r.jsx)(a.animated.div, {
-      style: k,
+  return (0, i.useEffect)(() => (w(), window.addEventListener("resize", w), () => {
+    window.removeEventListener("resize", w), w.cancel()
+  }), [w]), (0, r.jsxs)(s.animated.div, {
+    className: U.cardSection,
+    style: G,
+    children: [(0, r.jsx)(s.animated.div, {
+      style: Y,
       children: (0, r.jsxs)("div", {
-        className: M.content,
+        className: U.content,
         children: [(0, r.jsxs)("div", {
-          className: j.title,
-          children: [(0, r.jsx)(o.d5i, {
+          className: k.title,
+          children: [(0, r.jsx)(l.d5i, {
             size: "refresh_sm",
-            color: h,
-            colorClass: j.iconColor,
-            className: j.titleIcon
-          }), (0, r.jsx)(R.Z, {
+            color: g,
+            colorClass: k.iconColor,
+            className: k.titleIcon
+          }), (0, r.jsx)(D.Z, {
             variant: "eyebrow",
-            className: j.eyebrow,
-            children: L.intl.string(x.default.ir6nEQ)
+            className: k.eyebrow,
+            children: M.intl.string(j.default.ir6nEQ)
           })]
-        }), (0, r.jsx)(R.Z, {
+        }), (0, r.jsx)(D.Z, {
           variant: "display-lg",
-          className: M.display,
+          className: U.display,
           children: "DECO"
         })]
       })
-    }), (0, r.jsx)(a.animated.div, {
-      ref: y,
-      className: M.cardAnimation,
-      style: w,
-      children: (0, r.jsx)(o.cAm, {
+    }), (0, r.jsx)(s.animated.div, {
+      ref: O,
+      className: U.cardAnimation,
+      style: Z,
+      children: (0, r.jsx)(l.cAm, {
         fit: "contain",
         dataBinding: {
-          "id#": null != (t = null == _ ? true : _.id.substring(0, 4)) ? t : "0000",
+          "id#": null != (t = null == m ? true : m.id.substring(0, 4)) ? t : "0000",
           LVL: "".concat(Math.round(u)),
-          Outof: "".concat(p, "/10"),
-          PersonaName: D.IL[p],
-          AnimationState: v,
+          Outof: "".concat(_, "/10"),
+          PersonaName: L.IL[_],
+          AnimationState: R,
           FillColor: {
-            r: g.r,
-            g: g.g,
-            b: g.b,
-            a: 255 * g.a
+            r: E.r,
+            g: E.g,
+            b: E.b,
+            a: 255 * E.a
           },
-          PowerMeter: (0, T.QB)(f),
-          Icon: Z[p],
-          Illustration: G[p],
+          PowerMeter: (0, C.QB)(f),
+          Icon: F[_],
+          Illustration: B[_],
           reducedMotion: b
         },
         withReducedMotion: "play"
-      })
-    }), n <= D.ij.END_REWARD && (0, r.jsx)("div", {
-      className: M.content,
-      children: (0, r.jsx)(C.Z, {
-        onClick: l,
+      }, "rive")
+    }), n <= L.ij.END_REWARD && (0, r.jsx)("div", {
+      className: U.content,
+      children: (0, r.jsx)(P.Z, {
+        onClick: a,
         muteSound: true,
-        children: (0, r.jsx)(R.Z, {
+        children: (0, r.jsx)(D.Z, {
           variant: "eyebrow",
-          className: M.buttonCTA,
-          children: L.intl.string(L.t.dcztdU)
+          className: U.buttonCTA,
+          children: M.intl.string(M.t.dcztdU)
         })
       })
     })]
   })
 }
 
-function V() {
+function W() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     {
       avatarDecoration: t
@@ -193,13 +197,13 @@ function V() {
     a = null != require,
     o = (0, Chunk473749.useRef)(false);
   (0, Chunk473749.useEffect)(() => {
-    null != require && null != module && Chunk793030.current && (0, Chunk1585.ps)({
+    null != require && null != module && o.current && (0, Chunk1585.ps)({
       analyticsLocations: [Chunk100527.Z.CHECKPOINT],
       initialSelectedDecoration: exports
     })
   }, [require, module, exports]);
-  let l = () => {
-    Chunk205120 || (Chunk793030.current = true, (0, Chunk515970._Z)())
+  let s = () => {
+    Chunk392711 || (o.current = true, (0, Chunk515970._Z)())
   };
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk278607.contentSectionInnerClaim,
@@ -215,13 +219,13 @@ function V() {
       guildId: null,
       avatarDecorationOverride: exports
     }), (0, Chunk54381.jsx)(Chunk639949.Z, {
-      disabled: Chunk205120,
-      onClick: Chunk379649,
+      disabled: Chunk392711,
+      onClick: Chunk205120,
       className: Chunk278607.claimButton,
       children: (0, Chunk54381.jsx)(Chunk391876.Z, {
         variant: "eyebrow",
         className: Chunk278607.buttonCTA,
-        children: Chunk205120 ? Chunk388032.intl.string(Chunk388032.t.lIsIFo) : Chunk388032.intl.string(Chunk140939.default.mDxM7m)
+        children: Chunk392711 ? Chunk388032.intl.string(Chunk388032.t.lIsIFo) : Chunk388032.intl.string(Chunk140939.default.mDxM7m)
       })
     }), (0, Chunk54381.jsx)(Chunk391876.Z, {
       variant: "heading-sm/medium",
@@ -237,7 +241,7 @@ function V() {
   })
 }
 
-function H(e) {
+function K(e) {
   let {
     primaryColor: t
   } = e, {
@@ -252,14 +256,14 @@ function H(e) {
       totalVoiceMinutes: 0
     },
     emojis: {
-      numEmojisSent: c,
-      emojis: f
+      numEmojisSent: o,
+      emojis: s
     } = {
       numEmojisSent: 0,
       emojis: []
     },
     guilds: {
-      guilds: p
+      guilds: d
     } = {
       guilds: []
     },
@@ -268,147 +272,147 @@ function H(e) {
     } = {
       applications: []
     }
-  } = (0, s.e7)([I.Z], () => I.Z.getCheckpointData()), E = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), b = f.length > 0 ? f[0] : null, O = p.length > 0 ? p[0].guild : null, v = _.length > 0 ? _[0].game : null, {
+  } = (0, c.e7)([A.Z], () => A.Z.getCheckpointData()), m = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), h = s.length > 0 ? s[0] : null, y = d.length > 0 ? d[0].guild : null, O = _.length > 0 ? _[0].game : null, {
     unit: S,
-    duration: A
-  } = (0, T.Bi)(a), C = (0, s.e7)([g.Z], () => g.Z.getGuild(null == O ? true : O.id)), N = null != v && null != v.icon ? y.ZP.getApplicationIconURL({
-    id: v.id,
-    icon: v.icon
-  }) : null, P = (0, w.Sg)(), D = (0, i.useMemo)(() => [{
-    icon: o.kBi,
-    title: L.intl.string(x.default.wWKySP),
-    content: (0, r.jsx)(R.Z, {
+    duration: I
+  } = (0, C.Bi)(a), T = (0, c.e7)([b.Z], () => b.Z.getGuild(null == y ? true : y.id)), N = null != O && null != O.icon ? v.ZP.getApplicationIconURL({
+    id: O.id,
+    icon: O.icon
+  }) : null, P = (0, x.Sg)(), R = (0, i.useMemo)(() => [{
+    icon: l.kBi,
+    title: M.intl.string(j.default.wWKySP),
+    content: (0, r.jsx)(D.Z, {
       variant: "heading-xxl/medium",
-      className: j.numeric,
+      className: k.numeric,
       children: n
     })
   }, {
-    icon: o.S6n,
-    title: S === l.J6.HOURS ? L.intl.formatToPlainString(x.default.Xu0QsX, {
-      numHours: A
-    }) : L.intl.string(x.default.RmVTph),
-    content: (0, r.jsx)(R.Z, {
+    icon: l.S6n,
+    title: S === u.J6.HOURS ? M.intl.formatToPlainString(j.default.Xu0QsX, {
+      numHours: I
+    }) : M.intl.string(j.default.RmVTph),
+    content: (0, r.jsx)(D.Z, {
       variant: "heading-xxl/medium",
-      className: j.numeric,
-      children: A
+      className: k.numeric,
+      children: I
     })
   }, {
-    icon: o.EO4,
-    title: L.intl.string(x.default.zcbFu1),
-    content: (0, r.jsx)(R.Z, {
+    icon: l.EO4,
+    title: M.intl.string(j.default.zcbFu1),
+    content: (0, r.jsx)(D.Z, {
       variant: "heading-xxl/medium",
-      className: j.numeric,
-      children: c
+      className: k.numeric,
+      children: o
     })
   }, {
-    icon: o.r7p,
-    title: L.intl.string(x.default["3sARW7"]),
+    icon: l.r7p,
+    title: M.intl.string(j.default["3sARW7"]),
     content: (0, r.jsxs)("div", {
-      className: j.title,
-      children: [null != b ? (0, r.jsxs)("div", {
-        className: j.title,
-        children: [(0, r.jsx)(u.Z, {
-          emojiName: null == b.id ? b.name : "",
-          emojiId: b.id,
-          animated: !E && b.animated,
-          className: M.statIcon
-        }), (0, r.jsx)(R.Z, {
+      className: k.title,
+      children: [null != h ? (0, r.jsxs)("div", {
+        className: k.title,
+        children: [(0, r.jsx)(f.Z, {
+          emojiName: null == h.id ? h.name : "",
+          emojiId: h.id,
+          animated: !m && h.animated,
+          className: U.statIcon
+        }), (0, r.jsx)(D.Z, {
           variant: "text-md/medium",
-          children: null == b.id ? m.ZP.convertSurrogateToName(b.name) : ":".concat(b.name, ":")
+          children: null == h.id ? g.ZP.convertSurrogateToName(h.name) : ":".concat(h.name, ":")
         })]
-      }) : (0, r.jsx)(o.IMN, {
+      }) : (0, r.jsx)(l.IMN, {
         color: t,
         size: "md",
-        className: M.statIcon
-      }), null == b && (0, r.jsx)(R.Z, {
+        className: U.statIcon
+      }), null == h && (0, r.jsx)(D.Z, {
         variant: "text-md/medium",
-        children: L.intl.string(L.t.PoWNfe)
+        children: M.intl.string(M.t.PoWNfe)
       })]
     })
   }, {
-    icon: o.iWm,
-    title: L.intl.string(x.default.RbT4Zq),
+    icon: l.iWm,
+    title: M.intl.string(j.default.RbT4Zq),
     content: (0, r.jsxs)("div", {
-      className: j.title,
+      className: k.title,
       children: [null != N ? (0, r.jsx)("img", {
         src: N,
         alt: "",
-        className: M.statIcon
-      }) : (0, r.jsx)(o.IMN, {
+        className: U.statIcon
+      }) : (0, r.jsx)(l.IMN, {
         color: t,
         size: "md",
-        className: M.statIcon
-      }), (0, r.jsx)(R.Z, {
+        className: U.statIcon
+      }), (0, r.jsx)(D.Z, {
         variant: "text-md/medium",
-        children: null != v ? v.name : L.intl.string(L.t.PoWNfe)
+        children: null != O ? O.name : M.intl.string(M.t.PoWNfe)
       })]
     })
   }, {
-    icon: o.QTo,
-    title: L.intl.string(x.default["8XPMJj"]),
+    icon: l.QTo,
+    title: M.intl.string(j.default["8XPMJj"]),
     content: (0, r.jsxs)("div", {
-      className: j.title,
-      children: [null != C ? (0, r.jsx)(h.Z, {
-        guild: C,
-        className: M.statIcon
-      }) : (0, r.jsx)(o.IMN, {
+      className: k.title,
+      children: [null != T ? (0, r.jsx)(E.Z, {
+        guild: T,
+        className: U.statIcon
+      }) : (0, r.jsx)(l.IMN, {
         color: t,
         size: "md",
-        className: M.statIcon
-      }), (0, r.jsx)(R.Z, {
+        className: U.statIcon
+      }), (0, r.jsx)(D.Z, {
         variant: "text-md/medium",
-        children: null != C ? C.name : L.intl.string(L.t.PoWNfe)
+        children: null != T ? T.name : M.intl.string(M.t.PoWNfe)
       })]
     })
-  }], [n, A, S, c, b, E, t, N, v, C]);
-  return (0, r.jsx)(w.Qr.Provider, {
+  }], [n, I, S, o, h, m, t, N, O, T]);
+  return (0, r.jsx)(x.Qr.Provider, {
     value: P,
     children: (0, r.jsx)("div", {
-      className: M.centerContent,
+      className: U.centerContent,
       children: (0, r.jsxs)("div", {
-        className: M.contentSectionInner,
+        className: U.contentSectionInner,
         children: [(0, r.jsxs)("div", {
-          className: j.title,
-          children: [(0, r.jsx)(o.d5i, {
+          className: k.title,
+          children: [(0, r.jsx)(l.d5i, {
             size: "refresh_sm",
             color: t,
-            colorClass: j.iconColor,
-            className: j.titleIcon
-          }), (0, r.jsx)(R.Z, {
+            colorClass: k.iconColor,
+            className: k.titleIcon
+          }), (0, r.jsx)(D.Z, {
             variant: "eyebrow",
-            className: j.eyebrow,
-            children: L.intl.string(x.default.ir6nEQ)
+            className: k.eyebrow,
+            children: M.intl.string(j.default.ir6nEQ)
           })]
-        }), (0, r.jsx)(R.Z, {
+        }), (0, r.jsx)(D.Z, {
           variant: "display-lg",
-          className: M.display,
-          children: L.intl.string(x.default.y4M1na)
+          className: U.display,
+          children: M.intl.string(j.default.y4M1na)
         }), (0, r.jsx)("div", {
-          className: M.stats,
-          children: D.map((e, t) => (0, r.jsx)(W, U({}, e), t))
+          className: U.stats,
+          children: R.map((e, t) => (0, r.jsx)(q, Z({}, e), t))
         })]
       })
     })
   })
 }
 
-function Y(e) {
+function z(e) {
   let {
     step: t
-  } = e, n = (0, i.useContext)(S.Q), a = (0, c.dQu)(n.primaryColor).hex(), o = (0, c.dQu)(n.backgroundOverlayColor).hex();
+  } = e, n = (0, i.useContext)(T.Q), a = (0, d.dQu)(n.primaryColor).hex(), o = (0, d.dQu)(n.backgroundOverlayColor).hex();
   return (0, r.jsx)("div", {
-    className: t === D.ij.END_CLAIM ? M.contentSectionClaim : M.contentSectionSummary,
+    className: t === L.ij.END_CLAIM ? U.contentSectionClaim : U.contentSectionSummary,
     style: {
       backgroundColor: o
     },
-    children: (0, r.jsxs)(P.ZP, {
+    children: (0, r.jsxs)(w.ZP, {
       activeSlide: t,
-      children: [(0, r.jsx)(c.Mi4, {
-        id: D.ij.END_CLAIM,
-        children: (0, r.jsx)(V, {})
-      }), (0, r.jsx)(c.Mi4, {
-        id: D.ij.END_SUMMARY,
-        children: (0, r.jsx)(H, {
+      children: [(0, r.jsx)(d.Mi4, {
+        id: L.ij.END_CLAIM,
+        children: (0, r.jsx)(W, {})
+      }), (0, r.jsx)(d.Mi4, {
+        id: L.ij.END_SUMMARY,
+        children: (0, r.jsx)(K, {
           primaryColor: a
         })
       })]
@@ -416,49 +420,49 @@ function Y(e) {
   })
 }
 
-function W(e) {
+function q(e) {
   let {
     icon: t,
     title: n,
     content: a
-  } = e, o = (0, i.useContext)(S.Q), s = (0, c.dQu)(o.primaryColor).hex(), l = (0, w.gl)(), u = (0, w.gl)();
+  } = e, o = (0, i.useContext)(T.Q), s = (0, d.dQu)(o.primaryColor).hex(), l = (0, x.gl)(), c = (0, x.gl)();
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(w.QR, {
+    children: [(0, r.jsx)(x.QR, {
       spring: l,
-      className: M.statTitle,
+      className: U.statTitle,
       children: (0, r.jsxs)("div", {
-        className: j.title,
+        className: k.title,
         children: [(0, r.jsx)(t, {
           size: "refresh_sm",
           color: s,
-          colorClass: j.iconColor,
-          className: j.titleIcon
-        }), (0, r.jsx)(R.Z, {
+          colorClass: k.iconColor,
+          className: k.titleIcon
+        }), (0, r.jsx)(D.Z, {
           variant: "eyebrow",
-          className: j.eyebrow,
+          className: k.eyebrow,
           children: n
         })]
       })
-    }), (0, r.jsx)(w.QR, {
-      spring: u,
+    }), (0, r.jsx)(x.QR, {
+      spring: c,
       children: a
     })]
   })
 }
 
-function K(e) {
+function Q(e) {
   let {
     step: t,
     onNext: n
   } = e;
-  return (0, r.jsxs)(N.Z, {
+  return (0, r.jsxs)(R.Z, {
     noPadding: true,
     centered: false,
-    className: M.container,
-    children: [(0, r.jsx)(F, {
+    className: U.container,
+    children: [(0, r.jsx)(Y, {
       step: t,
       onNext: n
-    }), (0, r.jsx)(Y, {
+    }), (0, r.jsx)(z, {
       step: t
     })]
   })
