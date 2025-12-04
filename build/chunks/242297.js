@@ -196,6 +196,10 @@ class I {
     var t, n;
     null == (n = this.module) || null == (t = n.setDetailedLogging) || t.call(n, e)
   }
+  version() {
+    var e, t;
+    return null != (t = null == (e = this.module) ? true : module.version) ? exports : 0
+  }
   onNativePopoutShowInactiveSuccess() {
     var e, t;
     null == (t = this.module) || null == (e = exports.onPopoutShowInactive) || module.call(exports)

@@ -312,14 +312,12 @@ function eg(e) {
 }
 
 function eE(e) {
+  var t, n;
   let {
-    pid: t,
-    windowHandle: n
+    pid: r,
+    windowHandle: i
   } = e;
-  if (M = t, J(), null != n && null != t && V(t, (0, O.rd)(n)), null != n && null != D) {
-    var r;
-    null == (r = D.setRenderingWindowHandle) || r.call(D, (0, O.rd)(n), t)
-  }
+  M = r, J(), null != i && null != r && V(r, (0, O.rd)(i)), null != D && (null != i || (null == (t = D.version) ? true : t.call(D)) > 0) && (null == (n = D.setRenderingWindowHandle) || n.call(D, (0, O.rd)(null != i ? i : "0"), r))
 }
 
 function eb(e) {
