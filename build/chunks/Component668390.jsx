@@ -2,12 +2,12 @@
 /** chunk id: 668390, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -17,11 +17,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk884902 = require("./884902.js"),
   Chunk332448 = require("./332448.js");
 
-function m(e) {
+function f(e) {
   let {
     role: t,
     guild: r
-  } = e, [a, o] = l.useState(false);
+  } = e, [s, o] = l.useState(false);
   return (0, u.e)(r, t) ? (0, i.jsx)(c.P3F, {
     onClick: e => {
       o(true), (0, d.jW)(e, async () => {
@@ -29,7 +29,7 @@ function m(e) {
           default: e
         } = await Promise.resolve().then(n.bind(n, 741247));
         return n => {
-          var l, s;
+          var l, a;
           return (0, i.jsx)(e, (l = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -47,26 +47,26 @@ function m(e) {
               })
             }
             return e
-          }({}, n), s = s = {
+          }({}, n), a = a = {
             role: t,
             guild: r
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var i = Object.getOwnPropertySymbols(e);
               n.push.apply(n, i)
             }
             return n
-          })(Object(s)).forEach(function(e) {
-            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
+          })(Object(a)).forEach(function(e) {
+            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
           }), l))
         }
       }, {
         onClose: () => o(false)
       })
     },
-    className: s()(p.roleOverflow, {
-      [p.open]: a
+    className: a()(m.roleOverflow, {
+      [m.open]: s
     }),
     children: (0, i.jsx)(c.xhG, {
       size: "custom",
@@ -77,62 +77,62 @@ function m(e) {
   }) : null
 }
 
-function f(e) {
+function p(e) {
   let {
     color: t,
     id: l,
     role: r,
-    guild: s,
+    guild: a,
     children: d,
     isDragging: u,
-    selectedItem: f,
+    selectedItem: p,
     onItemSelect: b,
     itemType: x,
     locked: j,
     lockTooltip: v,
     showContextMenu: y,
     theme: C,
-    roleStyle: S,
-    onContextMenu: N,
-    "aria-label": O
-  } = e, Z = (0, g._f)(s.id, r, null == r ? true : r.colorStrings);
+    roleStyle: O,
+    onContextMenu: Z,
+    "aria-label": S
+  } = e, N = (0, g._f)(a.id, r, null == r ? true : r.colorStrings);
   return u ? (0, i.jsx)("div", {
-    className: p.dragged
+    className: m.dragged
   }) : (0, i.jsx)(c.njP.Item, {
-    className: p.role,
+    className: m.role,
     id: l,
-    selectedItem: f,
+    selectedItem: p,
     onItemSelect: b,
     itemType: x,
-    "aria-label": null != v ? "".concat(O, ", ").concat(v) : O,
-    onContextMenu: N,
+    "aria-label": null != v ? "".concat(S, ", ").concat(v) : S,
+    onContextMenu: Z,
     children: (0, i.jsxs)("div", {
-      className: p.roleContent,
-      children: ["dot" === S ? (0, i.jsx)(c.FhE, {
+      className: m.roleContent,
+      children: ["dot" === O ? (0, i.jsx)(c.FhE, {
         color: null != t ? t : true,
-        colors: Z,
-        className: p.roleDot,
+        colors: N,
+        className: m.roleDot,
         background: false,
         tooltip: false
       }) : (0, i.jsx)(c.xko, {
         color: null != t ? t : null,
-        colors: Z,
-        className: p.roleCircle
+        colors: N,
+        className: m.roleCircle
       }), function() {
         if (!j) return null;
         let e = (0, o.wj)(C) ? n(27377) : n(514811);
-        return (0, i.jsx)(a.u, {
+        return (0, i.jsx)(s.u, {
           text: v,
           children: (0, i.jsx)(h.Z, {
-            className: p.lock,
+            className: m.lock,
             src: e
           })
         })
       }(), (0, i.jsx)("div", {
-        className: p.roleInner,
+        className: m.roleInner,
         children: d
-      }), y && null != r ? (0, i.jsx)(m, {
-        guild: s,
+      }), y && null != r ? (0, i.jsx)(f, {
+        guild: a,
         role: r
       }) : null]
     })

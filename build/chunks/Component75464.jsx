@@ -7,7 +7,7 @@ require.d(exports, {
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk153066 = require("./153066.js"),
   Chunk800967 = require("./800967.js");
 
@@ -34,7 +34,7 @@ class h extends(i = Chunk473749.PureComponent) {
         srcHover: i,
         className: r
       } = module,
-      s = function(e, t) {
+      a = function(e, t) {
         if (null == e) return {};
         var n, i, l = function(e, t) {
           if (null == e) return {};
@@ -65,7 +65,7 @@ class h extends(i = Chunk473749.PureComponent) {
       }
       return e
     }({
-      className: a()((0, Chunk153066.l)(Chunk800967, "iconButton", h), Chunk473749, exports),
+      className: s()((0, Chunk153066.l)(Chunk800967, "iconButton", h), Chunk473749, exports),
       style: {
         backgroundImage: "url('".concat(u && null != i ? i : require, "')")
       },

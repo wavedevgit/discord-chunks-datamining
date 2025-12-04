@@ -19,23 +19,23 @@ function u(e) {
   let {
     refToScroller: t
   } = e, n = (0, l.e7)([c.Z], () => c.Z.getChannel(), []), r = (0, l.e7)([d.Z], () => null != n ? d.Z.getGuild(n.getGuildId()) : null, [n]), {
-    section: s,
+    section: a,
     sectionId: u,
     webhooks: h,
     editedWebhook: g,
-    isFetching: p,
-    errors: m
+    isFetching: m,
+    errors: f
   } = (0, l.cj)([o.Z], () => o.Z.getProps(), []);
-  return null == r || null == n ? null : (0, i.jsx)(a.Z, {
+  return null == r || null == n ? null : (0, i.jsx)(s.Z, {
     guild: r,
     channel: n,
-    section: s,
+    section: a,
     sectionId: u,
     webhooks: h,
     editedWebhook: g,
-    isFetchingWebhooks: p,
+    isFetchingWebhooks: m,
     hasChanges: o.Z.hasChanges,
-    errors: m,
+    errors: f,
     refToScroller: t
   })
 }
@@ -44,7 +44,7 @@ function h() {
   let {
     channel: e,
     submitting: t
-  } = (0, Chunk442837.cj)([Chunk388610.Z], () => Chunk388610.Z.getProps()), n = (0, Chunk442837.e7)([Chunk533947.Z], () => Chunk533947.Z.editedWebhook), a = (0, Chunk442837.e7)([Chunk430824.Z], () => null != module ? Chunk430824.Z.getGuild(module.getGuildId()) : null, [module]);
+  } = (0, Chunk442837.cj)([Chunk388610.Z], () => Chunk388610.Z.getProps()), n = (0, Chunk442837.e7)([Chunk533947.Z], () => Chunk533947.Z.editedWebhook), s = (0, Chunk442837.e7)([Chunk430824.Z], () => null != module ? Chunk430824.Z.getGuild(module.getGuildId()) : null, [module]);
   return (0, Chunk54381.jsx)(Chunk796027.Z, {
     submitting: exports,
     onReset: () => {

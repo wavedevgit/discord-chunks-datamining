@@ -1,8 +1,8 @@
 /** Chunk was on 83615 **/
 /** chunk id: 210724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => Z,
-  Z: () => W
+  P: () => W,
+  Z: () => Z
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -61,25 +61,25 @@ function M() {
   }, []), null
 }
 
-function Z(e) {
+function W(e) {
   var t, n;
   let {
     quest: o
   } = e, m = (0, C.T)({
     quest: o,
     location: D.dr.QUESTS_BAR
-  }), Z = (0, v.Z)({
+  }), W = (0, v.Z)({
     location: D.dr.QUESTS_BAR
-  }), W = (0, c.e7)([_.Z], () => null != _.Z.questEnrollmentBlockedUntil), {
-    isQuestBarVisible: H,
-    reason: U
+  }), Z = (0, c.e7)([_.Z], () => null != _.Z.questEnrollmentBlockedUntil), {
+    isQuestBarVisible: U,
+    reason: H
   } = (0, T.qN)({
     quest: o,
     location: D.dr.QUESTS_BAR
   }), z = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), F = (0, c.e7)([f.Z], () => f.Z.hasLayers()), G = s.useRef(null), K = s.useMemo(() => (0, E.q8)(o), [o]), X = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, Y = (0, u.Z)(X), J = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
     hasError: $,
     isLoading: ee
-  } = (0, O.kC)(), et = s.useContext(k.T) || Z && H && !ee && !W, en = s.useRef(et), er = s.useRef(false), es = s.useRef(false), [eo, ea] = s.useState(false), [ei, el] = s.useState(false), [ec, ed] = s.useState(false), [eu, ep] = s.useState(true), [em, eg] = s.useState(true), ef = s.useRef(null), eh = s.useRef(null), ex = s.useRef(null), e_ = (0, y.Rf)(o), eb = s.useCallback(e => {
+  } = (0, O.kC)(), et = s.useContext(k.T) || W && U && !ee && !Z, en = s.useRef(et), er = s.useRef(false), es = s.useRef(false), [eo, ea] = s.useState(false), [ei, el] = s.useState(false), [ec, ed] = s.useState(false), [eu, ep] = s.useState(true), [em, eg] = s.useState(true), ef = s.useRef(null), eh = s.useRef(null), ex = s.useRef(null), e_ = (0, y.Rf)(o), eb = s.useCallback(e => {
     J || (ep(false), ed(e))
   }, [J]), ej = s.useCallback(() => {
     eb(true)
@@ -204,7 +204,7 @@ function Z(e) {
       })
     }
   }, [$, o.id]), s.useEffect(() => {
-    if (!Z) {
+    if (!W) {
       var e;
       (0, h.dA)({
         questId: o.id,
@@ -218,7 +218,7 @@ function Z(e) {
         sourceQuestContent: b.jn.QUEST_BAR_V2
       })
     }
-  }, [Z, o.id]), s.useEffect(() => {
+  }, [W, o.id]), s.useEffect(() => {
     if (!et && em && !ee) {
       var e;
       (0, h.dA)({
@@ -227,15 +227,15 @@ function Z(e) {
         properties: {
           content_id: b.jn.QUEST_BAR,
           content_name: (0, h._b)(b.jn.QUEST_BAR),
-          reason: U,
+          reason: H,
           impression_id: null == (e = G.current) ? true : e.getId()
         },
         sourceQuestContent: b.jn.QUEST_BAR_V2
       })
     }
-  }, [et, em, ee, o.id, U]), s.useEffect(() => {
-    (!H || W) && x.Z.clearTracking(), et && em && !ee && !$ && Z && x.Z.stopTracking(o.id)
-  }, [H, W, et, em, ee, $, Z, o.id]);
+  }, [et, em, ee, o.id, H]), s.useEffect(() => {
+    (!U || Z) && x.Z.clearTracking(), et && em && !ee && !$ && W && x.Z.stopTracking(o.id)
+  }, [U, Z, et, em, ee, $, W, o.id]);
   let {
     enabled: eI,
     status: eD
@@ -243,7 +243,7 @@ function Z(e) {
     location: D.dr.QUESTS_BAR,
     questConfig: o.config
   }), eq = (null == eD ? true : eD.progressBlur) && !X ? 88 : 70;
-  if (!Z || !et && em && !ee || $) return $ ? m.log("Not rendered due to asset error") : Z || m.log("Not rendered due to ineligibility"), null;
+  if (!W || !et && em && !ee || $) return $ ? m.log("Not rendered due to asset error") : W || m.log("Not rendered due to ineligibility"), null;
   let eL = eq + 78 * !!J;
   return (0, r.jsx)(S.A, {
     questOrQuests: o,
@@ -346,12 +346,12 @@ function Z(e) {
     }))
   })
 }
-let W = 12633 == require.j ? function() {
+let Z = 12633 == require.j ? function() {
   let e = (0, Chunk659302.DH)();
   return null == module ? null : (0, Chunk54381.jsx)(Chunk455357.x8, {
     source: Chunk324805.dr.QUESTS_BAR,
     questId: module.id,
-    children: (0, Chunk54381.jsx)(Z, {
+    children: (0, Chunk54381.jsx)(W, {
       quest: module
     })
   }, module.id)

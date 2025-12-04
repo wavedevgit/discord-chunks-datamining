@@ -413,6 +413,12 @@ let i = {
     actions: ["QUESTS_FETCH_CURRENT_QUESTS_BEGIN", "POST_CONNECTION_OPEN", "RUNNING_GAMES_CHANGE", "USER_SETTINGS_PROTO_UPDATE", "LOGOUT"],
     inlineRequire: () => require("./877519.js").Z
   },
+  QuestCompletionSurveyManager: {
+    actions: ["LOGOUT"],
+    inlineRequire: () => require("./979219.js").Z,
+    hasStoreChangeListeners: true,
+    loadAfterConnectionOpen: true
+  },
   VoiceChannelGameActivityManager: {
     actions: ["RUNNING_GAMES_CHANGE", "VOICE_CHANNEL_SELECT"],
     inlineRequire: () => require("./981668.js").Z,

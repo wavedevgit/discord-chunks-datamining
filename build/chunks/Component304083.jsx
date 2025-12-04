@@ -46,7 +46,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk355488 = require("./355488.js");
 
-function U(e) {
+function H(e) {
   var t, n;
   let {
     quest: o,
@@ -61,7 +61,7 @@ function U(e) {
     j = (null == (t = o.userStatus) ? true : t.completedAt) != null && b === v.iw.COMPLETED,
     C = !j && (!l || u);
   return (0, r.jsxs)(p.P3F, {
-    className: H.videoQuestPreviewCont,
+    className: U.videoQuestPreviewCont,
     onClick: i,
     onMouseEnter: () => {
       l && !u && m(true)
@@ -72,7 +72,7 @@ function U(e) {
     children: [null != x && (0, r.jsx)("img", {
       alt: "",
       src: x.url,
-      className: H.assetBodyVideoPreviewMedia
+      className: U.assetBodyVideoPreviewMedia
     }), null != h ? (0, r.jsx)(f.Z, {
       ref: g,
       autoPlay: false,
@@ -80,8 +80,8 @@ function U(e) {
       loop: true,
       muted: true,
       playsInline: true,
-      className: a()(H.assetBodyVideoPreviewVideo, {
-        [H.assetBodyVideoPreviewVisible]: C
+      className: a()(U.assetBodyVideoPreviewVideo, {
+        [U.assetBodyVideoPreviewVisible]: C
       }),
       controls: false,
       children: (0, r.jsx)("source", {
@@ -89,13 +89,13 @@ function U(e) {
         type: null != (n = h.mimetype) ? n : true
       })
     }) : null, (0, r.jsx)("div", {
-      className: H.previewPlayButtonCont,
+      className: U.previewPlayButtonCont,
       children: j ? (0, r.jsx)(p.Oe7, {
         color: d.Z.colors.WHITE,
-        className: H.previewPlayButton
+        className: U.previewPlayButton
       }) : (0, r.jsx)(p.o1U, {
         color: d.Z.colors.WHITE,
-        className: H.previewPlayButton
+        className: U.previewPlayButton
       })
     })]
   })
@@ -106,7 +106,7 @@ function z(e) {
     quest: t
   } = e;
   return (0, r.jsx)(R.Z, {
-    className: a()(H.rewardTile, H.hiddenRewardTile),
+    className: a()(U.rewardTile, U.hiddenRewardTile),
     learnMoreStyle: "text",
     quest: t,
     questContent: j.jn.QUEST_BAR_V2,
@@ -117,7 +117,7 @@ function z(e) {
 
 function F(e) {
   return (0, r.jsx)(p.Text, {
-    className: H.description,
+    className: U.description,
     variant: "text-xs/normal",
     children: (0, E.DD)({
       quest: e.quest,
@@ -159,17 +159,17 @@ function G(e) {
     children: [(0, r.jsx)("div", {
       ref: y,
       children: (0, r.jsxs)("div", {
-        className: H.questPromoContent,
+        className: U.questPromoContent,
         ref: f,
         children: [(0, r.jsxs)("div", {
-          className: H.details,
+          className: U.details,
           children: [(0, r.jsx)(z, {
             quest: t
           }), (0, r.jsx)(p.Heading, {
-            className: H.title,
+            className: U.title,
             color: "header-primary",
             variant: "heading-md/medium",
-            children: W.intl.format(W.t.EQa7os, {
+            children: Z.intl.format(Z.t.EQa7os, {
               questName: t.config.messages.questName
             })
           }), (0, r.jsx)(F, {
@@ -180,7 +180,7 @@ function G(e) {
             onGameSheetClosed: v
           })]
         }), (0, r.jsx)("div", {
-          className: H.cta,
+          className: U.cta,
           children: (0, r.jsx)(p.Button, {
             variant: "primary",
             onClick: l ? _ : true,
@@ -193,47 +193,47 @@ function G(e) {
         })]
       })
     }), P && null != B && (0, r.jsxs)(i.animated.div, {
-      className: H.contentCollapsedBackgroundWrapper,
+      className: U.contentCollapsedBackgroundWrapper,
       style: {
         opacity: o.to([0, 1], [1, 0])
       },
       children: [(null == R ? true : R.progressBlur) ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: H.contentCollapsedBackground,
+          className: U.contentCollapsedBackground,
           style: k
         }), (0, r.jsx)("div", {
-          className: a()(H.contentCollapsedBackground, H.blur30),
+          className: a()(U.contentCollapsedBackground, U.blur30),
           style: k
         }), (0, r.jsx)("div", {
-          className: a()(H.contentCollapsedBackground, H.blur60),
+          className: a()(U.contentCollapsedBackground, U.blur60),
           style: k
         }), (0, r.jsx)("div", {
-          className: a()(H.contentCollapsedBackground, H.blur100),
+          className: a()(U.contentCollapsedBackground, U.blur100),
           style: k
         })]
       }) : (0, r.jsx)("div", {
-        className: a()(H.contentCollapsedBackground, H.blur),
+        className: a()(U.contentCollapsedBackground, U.blur),
         style: k
       }), (null == R ? true : R.shineWipe) && (0, r.jsx)(p.ZX5, {
-        className: H.shine,
+        className: U.shine,
         "data-migration-pending": true,
         shineSize: p.rHe.DEFAULT,
         shinePaused: !q || L
       })]
     }), (0, r.jsxs)(i.animated.div, {
-      className: H.heroAssetWrapper,
+      className: U.heroAssetWrapper,
       style: {
         backdropFilter: o.to([0, 1], [5, 0]).to(e => "blur(".concat(e, "px)")),
         filter: o.to([0, 1], [.8, 1]).to(e => "brightness(".concat(e, ")"))
       },
       children: [!P && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(i.animated.div, {
-          className: H.heroAssetDarken,
+          className: U.heroAssetDarken,
           style: {
             opacity: o.to([0, 1], [1, 0])
           }
         }), (0, r.jsx)(i.animated.div, {
-          className: H.heroAssetTint,
+          className: U.heroAssetTint,
           style: {
             backgroundColor: t.config.colors.primary,
             opacity: o.to([0, 1], [1, 0])
@@ -252,12 +252,12 @@ function G(e) {
         children: e => (0, r.jsx)("img", {
           ref: e,
           alt: "",
-          className: H.heroAsset,
+          className: U.heroAsset,
           src: T.url
         })
       }), (0, r.jsx)("div", {
-        className: a()(H.legibilityGradient, {
-          [H.legibilityGradientDark]: D
+        className: a()(U.legibilityGradient, {
+          [U.legibilityGradientDark]: D
         })
       })]
     })]
@@ -282,7 +282,7 @@ let K = Chunk473749.forwardRef(function(e, t) {
     loop: true,
     muted: true,
     playsInline: true,
-    className: H.heroAsset,
+    className: U.heroAsset,
     controls: false,
     children: (0, r.jsx)("source", {
       src: o.url,
@@ -306,7 +306,7 @@ function X(e) {
     onCtxMenuSelect: h,
     onGameSheetOpened: x,
     onGameSheetClosed: b
-  } = e, v = (null == (t = n.userStatus) ? true : t.completedAt) != null, C = o.percentComplete > 0, y = (0, O.z)(n), [E, S, P] = (0, O.me)(n, o), N = s.useRef(null), R = s.useRef(null), W = (0, O._s)({
+  } = e, v = (null == (t = n.userStatus) ? true : t.completedAt) != null, C = o.percentComplete > 0, y = (0, O.z)(n), [E, S, P] = (0, O.me)(n, o), N = s.useRef(null), R = s.useRef(null), Z = (0, O._s)({
     quest: n
   }), z = (0, w.q8)(n), F = (0, O.Jf)(n), G = s.useCallback(() => {
     (0, A.openVideoQuestModal)({
@@ -318,16 +318,16 @@ function X(e) {
   }, [n]), K = null != F ? F.percentComplete : o.percentComplete;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.animated.div, {
-      className: a()(H.postEnrollmentBackground, H.postEnrollmentBackgroundCollapsed),
+      className: a()(U.postEnrollmentBackground, U.postEnrollmentBackgroundCollapsed),
       style: {
-        backgroundImage: "linear-gradient(90deg, ".concat(Z.cd, ", ").concat(Z.v$, ")"),
+        backgroundImage: "linear-gradient(90deg, ".concat(W.cd, ", ").concat(W.v$, ")"),
         opacity: c.to({
           range: [0, 1],
           output: [1, 0]
         })
       }
     }), (0, r.jsxs)("div", {
-      className: H.questAcceptedContent,
+      className: U.questAcceptedContent,
       ref: e => {
         "function" == typeof m ? m(e) : null != m && (m.current = e), null != e && (R.current = e)
       },
@@ -337,7 +337,7 @@ function X(e) {
         onCtxMenuClose: f,
         onCtxMenuSelect: h
       }), (0, r.jsx)("div", {
-        className: H.divider
+        className: U.divider
       }), (0, r.jsx)(k.Z, {
         expansionSpring: c,
         overlayRef: d,
@@ -366,7 +366,7 @@ function X(e) {
           taskDetails: o
         })).exhaustive()
       }), (0, r.jsxs)(D.n, {
-        children: [z && (0, r.jsx)(U, {
+        children: [z && (0, r.jsx)(H, {
           isExpanded: u,
           quest: n,
           onClick: G,
@@ -375,7 +375,7 @@ function X(e) {
           quest: n,
           useReducedMotion: p,
           isExpanded: u,
-          awaitingConsoleConnections: W,
+          awaitingConsoleConnections: Z,
           hasMadeProgress: C,
           isProgressing: y,
           activeScreen: E,
@@ -388,9 +388,9 @@ function X(e) {
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: a()(H.postEnrollmentBackground, H.postEnrollmentBackgroundExpanded),
+      className: a()(U.postEnrollmentBackground, U.postEnrollmentBackgroundExpanded),
       style: {
-        backgroundImage: "linear-gradient(90deg, ".concat(Z.cd, ", ").concat(Z.v$, ")")
+        backgroundImage: "linear-gradient(90deg, ".concat(W.cd, ", ").concat(W.v$, ")")
       }
     })]
   })
@@ -443,9 +443,9 @@ let J = Chunk473749.forwardRef(function(e, t) {
   }, [v, E, S]), w = (null == (n = v.userStatus) ? true : n.enrolledAt) != null, N = d && u;
   return (0, r.jsxs)(i.animated.div, {
     "aria-hidden": !N,
-    className: a()(l, H.contentExpanded, {
-      [H.contentInteractable]: N,
-      [H.contentExpandedAccepted]: w
+    className: a()(l, U.contentExpanded, {
+      [U.contentInteractable]: N,
+      [U.contentExpandedAccepted]: w
     }),
     style: {
       transform: (0, i.to)([p.to({

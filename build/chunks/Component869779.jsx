@@ -64,11 +64,11 @@ class k extends Chunk473749.PureComponent {
       formState: i,
       section: l,
       canManageRoles: r,
-      canManageChannels: s,
-      canManageWebhooks: a,
+      canManageChannels: a,
+      canManageWebhooks: s,
       canUnlinkChannel: o
     } = this.props;
-    (s || r || a || o) && (i !== L.QZA.CLOSED || i === t) && (r || l !== L.CoT.PERMISSIONS) && (a || o || l !== L.CoT.INTEGRATIONS) ? l !== n && D(l, n): (0, c.xf)()
+    (a || r || s || o) && (i !== L.QZA.CLOSED || i === t) && (r || l !== L.CoT.PERMISSIONS) && (s || o || l !== L.CoT.INTEGRATIONS) ? l !== n && D(l, n): (0, c.xf)()
   }
   render() {
     let {
@@ -77,9 +77,9 @@ class k extends Chunk473749.PureComponent {
       section: n,
       channel: l,
       category: r,
-      canManageRoles: a,
+      canManageRoles: s,
       canManageChannels: h,
-      canDeleteChannels: f,
+      canDeleteChannels: p,
       canManageWebhooks: b,
       canUnlinkChannel: x
     } = this.props;
@@ -95,51 +95,51 @@ class k extends Chunk473749.PureComponent {
           category: n,
           canManageRoles: l,
           canManageChannels: r,
-          canDeleteChannels: a,
+          canDeleteChannels: s,
           canManageWebhooks: d,
           canUnlinkChannel: h
-        } = e, f = (0, p.KS)(t), {
+        } = e, p = (0, m.KS)(t), {
           GUILD_CATEGORY: b
         } = L.d4z, x = v.Ec.has(t.type), j = t.type === b ? M.intl.string(M.t.ifbXnL) : x ? t.isForumPost() ? M.intl.string(M.t.nEOg1N) : M.intl.string(M.t.H7vTe2) : M.intl.string(M.t["8D8Rsb"]);
         return [{
           section: u.ID.HEADER,
           label: null != t ? (0, i.jsxs)(i.Fragment, {
-            children: [null != f ? (0, i.jsx)(f, {
+            children: [null != p ? (0, i.jsx)(p, {
               size: "xxs",
               color: "currentColor",
               className: A.channelIcon
-            }) : null, (0, g.F6)(t, E.default, Z.Z), null != n ? (0, i.jsx)(s.Text, {
+            }) : null, (0, g.F6)(t, E.default, N.Z), null != n ? (0, i.jsx)(a.Text, {
               tag: "span",
               variant: "text-xs/semibold",
               color: "text-default",
               lineClamp: 1,
               className: A.category,
-              children: (0, g.F6)(n, E.default, Z.Z)
+              children: (0, g.F6)(n, E.default, N.Z)
             }) : null]
           }) : M.intl.string(M.t.XPDhcc)
         }, {
           section: L.CoT.OVERVIEW,
           label: M.intl.string(M.t["/dp6yY"]),
           ariaLabel: M.intl.string(M.t["/dp6yY"]),
-          element: P.Z,
+          element: I.Z,
           notice: {
-            element: P.G,
-            stores: [S.Z]
+            element: I.G,
+            stores: [O.Z]
           },
           predicate: () => !t.isModeratorReportChannel()
         }, {
           section: L.CoT.PERMISSIONS,
           label: M.intl.string(M.t.xrmhRX),
-          element: m.Z,
+          element: f.Z,
           notice: {
-            element: I.n,
+            element: R.n,
             stores: [C.Z]
           },
           predicate: () => l && !x
         }, {
           section: L.CoT.INSTANT_INVITES,
           label: M.intl.string(M.t["9F90ic"]),
-          element: R.Z,
+          element: P.Z,
           type: u.bT.CUSTOM,
           predicate: () => t.type !== b && r && !x && !t.isModeratorReportChannel()
         }, {
@@ -165,12 +165,12 @@ class k extends Chunk473749.PureComponent {
           },
           label: j,
           ariaLabel: j,
-          icon: (0, i.jsx)(s.XHJ, {
+          icon: (0, i.jsx)(a.XHJ, {
             size: "xs",
             color: "currentColor"
           }),
           variant: "destructive",
-          predicate: () => a && !t.isModeratorReportChannel()
+          predicate: () => s && !t.isModeratorReportChannel()
         }]
       }({
         channel: Chunk473749,
@@ -189,7 +189,7 @@ function B() {
   let {
     channel: e,
     analyticsLocation: t
-  } = (0, Chunk442837.cj)([Chunk388610.Z], () => Chunk388610.Z.getProps()), n = (0, Chunk442837.e7)([Chunk388610.Z], () => Chunk388610.Z.getFormState()), l = (0, Chunk442837.e7)([Chunk388610.Z], () => Chunk388610.Z.getSection()), s = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), a = (0, Chunk984802.Ll)(), o = (0, Chunk665906.C7)(module), c = (0, Chunk665906.Xb)(module), {
+  } = (0, Chunk442837.cj)([Chunk388610.Z], () => Chunk388610.Z.getProps()), n = (0, Chunk442837.e7)([Chunk388610.Z], () => Chunk388610.Z.getFormState()), l = (0, Chunk442837.e7)([Chunk388610.Z], () => Chunk388610.Z.getSection()), a = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), s = (0, Chunk984802.Ll)(), o = (0, Chunk665906.C7)(module), c = (0, Chunk665906.Xb)(module), {
     canManageChannels: d,
     canManageRoles: u,
     canManageWebhooks: h,
@@ -199,7 +199,7 @@ function B() {
     canManageRoles: null != module && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_ROLES, module),
     canManageWebhooks: null != module && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_WEBHOOKS, module),
     canUnlinkChannel: (0, Chunk685929.C)(module, Chunk496675.Z)
-  })), p = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(null == module ? true : module.parent_id));
+  })), m = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(null == module ? true : module.parent_id));
   return (0, Chunk54381.jsx)(k, {
     channel: module,
     category: Chunk471445,

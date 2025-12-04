@@ -91,8 +91,8 @@ let f = Chunk473749.memo(function(e) {
       })
     }), e
   }, [i, E, o, R, f]);
-  return null == i ? null : (0, r.jsx)(u.xJW, {
-    title: (0, r.jsxs)("div", {
+  return null == i ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsxs)("div", {
       className: h.headerContainer,
       children: [(0, r.jsx)(u.Text, {
         variant: "eyebrow",
@@ -113,14 +113,13 @@ let f = Chunk473749.memo(function(e) {
           height: 16
         })]
       })]
-    }),
-    children: (0, r.jsx)(T.WM, {
+    }), (0, r.jsx)(T.WM, {
       children: (0, r.jsx)(T._2, {
         description: (0, r.jsx)("div", {
           className: h.permissionsContainer,
           children: S
         })
       })
-    })
+    })]
   })
 })

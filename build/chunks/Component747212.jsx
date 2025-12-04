@@ -18,15 +18,15 @@ let o = e => {
     helperText: c
   } = e, d = (0, r.nt)();
   return (0, i.jsx)("div", {
-    className: a.formSection,
+    className: s.formSection,
     children: (0, i.jsx)(l.d, {
-      label: s.intl.string(s.t.FGjMZS),
+      label: a.intl.string(a.t.FGjMZS),
       helperText: c,
       isDisabled: o,
       options: d,
       value: t,
       onChange: n,
-      optionClassName: a.dropdownOption
+      optionClassName: s.dropdownOption
     })
   })
 }

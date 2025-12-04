@@ -2,13 +2,13 @@
 /** chunk id: 129724, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => s
+  A: () => a
 });
 var Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function a(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : r.intl.string(r.t.Yl1D84),
     i = l().duration(e, "seconds");

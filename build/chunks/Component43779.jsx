@@ -40,10 +40,10 @@ function T(e) {
     onReceiveErrorHints: D,
     sourceQuestContent: q
   } = e, L = s.useRef(null), Q = (0, h.w8)(N.config), V = (0, h.B3)(N.config), M = (null == (t = N.userStatus) ? true : t.enrolledAt) != null, {
-    ref: Z,
-    scrollHeight: W
-  } = (0, d.kE)(), H = 104 !== W, {
-    onAssetLoadComplete: U
+    ref: W,
+    scrollHeight: Z
+  } = (0, d.kE)(), U = 104 !== Z, {
+    onAssetLoadComplete: H
   } = s.useContext(b.k), {
     expansionSpring: z
   } = (0, c.q_F)({
@@ -119,7 +119,7 @@ function T(e) {
     ref: L,
     children: [(0, r.jsxs)(i.animated.div, {
       style: {
-        maxHeight: z.to([0, 1], [104, (null != W ? W : 0) + 12])
+        maxHeight: z.to([0, 1], [104, (null != Z ? Z : 0) + 12])
       },
       className: O.rewardDescriptionContainer,
       children: [(0, r.jsx)(j.E, {
@@ -151,7 +151,7 @@ function T(e) {
                   className: O.circularQuestRewardTileAsset,
                   location: C.dr.QUEST_HOME_DESKTOP,
                   autoplay: A,
-                  onLoadComplete: U,
+                  onLoadComplete: H,
                   lazyLoad: true,
                   sourceQuestContent: q
                 })
@@ -163,15 +163,15 @@ function T(e) {
             questContent: R,
             className: O.questRewardTileAsset,
             location: C.dr.QUEST_HOME_DESKTOP,
-            onLoadComplete: U,
+            onLoadComplete: H,
             lazyLoad: true,
             sourceQuestContent: q
           })]
         })
       }), (0, r.jsxs)("div", {
-        ref: Z,
+        ref: W,
         className: a()(O.textContainer, {
-          [O.justifyCenter]: !H
+          [O.justifyCenter]: !U
         }),
         children: [(0, r.jsx)(c.Heading, {
           variant: "eyebrow",
@@ -186,7 +186,7 @@ function T(e) {
           className: O.header,
           children: ee
         }), et]
-      }), H && (0, r.jsx)(i.animated.div, {
+      }), U && (0, r.jsx)(i.animated.div, {
         style: {
           opacity: z.to([0, 1], [1, 0])
         },

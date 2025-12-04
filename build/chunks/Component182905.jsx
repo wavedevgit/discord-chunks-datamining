@@ -31,16 +31,16 @@ let u = e => {
         width: 20,
         height: 20,
         size: "custom",
-        color: s.Z.unsafe_rawColors.YELLOW_300.css
+        color: a.Z.unsafe_rawColors.YELLOW_300.css
       }), (0, i.jsx)("div", {
         className: d.label,
         children: (0, i.jsx)(o.Text, {
           variant: "text-md/normal",
           children: l
         })
-      }), g && (0, i.jsx)(a.zx, {
-        size: a.zx.Sizes.SMALL,
-        color: a.zx.Colors.PRIMARY,
+      }), g && (0, i.jsx)(s.zx, {
+        size: s.zx.Sizes.SMALL,
+        color: s.zx.Colors.PRIMARY,
         onClick: h,
         children: u
       })]

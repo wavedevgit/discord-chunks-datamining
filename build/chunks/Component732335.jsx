@@ -20,33 +20,33 @@ function u(e) {
     hideLabel: u,
     channel: h,
     onChange: g
-  } = e, [p, m] = l.useState(null), f = h.rateLimitPerUser, b = l.useMemo(() => {
-    let e = [...null != p ? p : o.BiE];
-    return e.includes(f) || e.unshift(f), e.map(e => ({
-      label: (0, a.A)(e, false),
+  } = e, [m, f] = l.useState(null), p = h.rateLimitPerUser, b = l.useMemo(() => {
+    let e = [...null != m ? m : o.BiE];
+    return e.includes(p) || e.unshift(p), e.map(e => ({
+      label: (0, s.A)(e, false),
       value: e
     }))
-  }, [p, f]), x = l.useCallback(e => {
-    g(e), m(null)
+  }, [m, p]), x = l.useCallback(e => {
+    g(e), f(null)
   }, [g]), j = l.useCallback(e => {
-    if ("" === e) return void m(null);
+    if ("" === e) return void f(null);
     let t = [],
       n = parseInt(e, 10);
-    if (Number.isNaN(n)) return void m(null);
+    if (Number.isNaN(n)) return void f(null);
     n <= o.GI0 && t.push(n);
-    let i = n * s.Z.Seconds.MINUTE;
+    let i = n * a.Z.Seconds.MINUTE;
     i <= o.GI0 && t.push(i);
-    let l = n * s.Z.Seconds.HOUR;
-    l <= o.GI0 && t.push(l), m(t)
+    let l = n * a.Z.Seconds.HOUR;
+    l <= o.GI0 && t.push(l), f(t)
   }, []), v = l.useCallback(() => {
-    m(null)
+    f(null)
   }, []);
   return (0, i.jsx)(r.d, {
     label: t,
     hideLabel: u,
     helperText: n,
     className: d.marginBottom8,
-    value: f,
+    value: p,
     onChange: x,
     onSearchChange: j,
     options: b,

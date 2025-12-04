@@ -2,7 +2,8 @@
 /** chunk id: 588529, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => f
+  Ox: () => f,
+  ZP: () => p
 }), require("./388685.js"), require("./35282.js"), require("./49124.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -38,7 +39,25 @@ function d(e, t, n) {
     }
   }), i
 }
-let f = {
+async function f(e) {
+  if (o.E.getConfig({
+      location: "action creator"
+    }).enableNitroUnsubSurvey) try {
+    var t;
+    let n = await r.tn.post({
+      url: u.ANM.EMBEDDED_SURVEY_ACTION,
+      body: {
+        action_type: e
+      },
+      rejectWithError: true
+    });
+    i.Z.dispatch({
+      type: "SURVEY_FETCHED",
+      survey: null == n || null == (t = n.body) ? true : t.survey
+    })
+  } catch (e) {}
+}
+let p = {
   fetchSurveyDetails: async function(e) {
     try {
       let t = (await r.tn.get({
@@ -76,22 +95,5 @@ let f = {
       }
     }
   },
-  fireSurveyAction: async function(e) {
-    if (o.E.getConfig({
-        location: "action creator"
-      }).enableNitroUnsubSurvey) try {
-      var t;
-      let n = await r.tn.post({
-        url: u.ANM.EMBEDDED_SURVEY_ACTION,
-        body: {
-          action_type: e
-        },
-        rejectWithError: true
-      });
-      i.Z.dispatch({
-        type: "SURVEY_FETCHED",
-        survey: null == n || null == (t = n.body) ? true : t.survey
-      })
-    } catch (e) {}
-  }
+  fireSurveyAction: f
 }

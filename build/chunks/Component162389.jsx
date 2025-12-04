@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
@@ -56,8 +56,8 @@ function v(e, t) {
 function y(e) {
   let {
     channel: t
-  } = e, r = (0, a.e7)([g.Z], () => g.Z.can(f.Plq.MANAGE_CHANNELS, t), [t]), u = t.availableTags.length >= m.pC, p = t.availableTags.length > 0, y = l.useCallback(() => {
-    let e = t.availableTags.length >= m.pC;
+  } = e, r = (0, s.e7)([g.Z], () => g.Z.can(p.Plq.MANAGE_CHANNELS, t), [t]), u = t.availableTags.length >= f.pC, m = t.availableTags.length > 0, y = l.useCallback(() => {
+    let e = t.availableTags.length >= f.pC;
     r && !e && (0, c.ZDy)(async () => {
       let {
         default: e
@@ -67,7 +67,7 @@ function y(e) {
         guildId: t.guild_id
       }))
     })
-  }, [t, r]), S = l.useCallback(e => {
+  }, [t, r]), O = l.useCallback(e => {
     r && (0, c.ZDy)(async () => {
       let {
         default: l
@@ -79,9 +79,9 @@ function y(e) {
       }))
     })
   }, [r, t]), {
-    handleDragStart: N,
-    handleDragReset: O,
-    handleDragComplete: Z
+    handleDragStart: Z,
+    handleDragReset: S,
+    handleDragComplete: N
   } = (0, h.Z)(t.availableTags, e => {
     (0, d.pW)({
       availableTags: e
@@ -89,17 +89,17 @@ function y(e) {
   });
   return (0, i.jsxs)("div", {
     className: x.tags,
-    children: [p ? t.availableTags.map(e => (0, i.jsx)(C, {
+    children: [m ? t.availableTags.map(e => (0, i.jsx)(C, {
       tag: e,
       availableTags: t.availableTags,
       canManageChannels: r,
-      onTagClick: S,
-      onDragComplete: Z,
-      onDragReset: O,
-      onDragStart: N
-    }, e.id)) : null, p ? (0, i.jsx)(c.P3F, {
+      onTagClick: O,
+      onDragComplete: N,
+      onDragReset: S,
+      onDragStart: Z
+    }, e.id)) : null, m ? (0, i.jsx)(c.P3F, {
       onClick: y,
-      className: s()(x.addTags, {
+      className: a()(x.addTags, {
         [x.disabled]: !r || u
       }),
       children: (0, i.jsx)(c.qJs, {
@@ -124,33 +124,33 @@ function C(e) {
     availableTags: n,
     canManageChannels: l,
     onTagClick: r,
-    onDragComplete: a,
+    onDragComplete: s,
     onDragStart: o,
     onDragReset: c
   } = e, d = n.findIndex(e => e.id === t.id), {
     drag: h,
     dragSourcePosition: g,
-    drop: m,
-    setIsDraggable: f
+    drop: f,
+    setIsDraggable: p
   } = (0, u.Z)({
     type: "CHANNEL_SETTINGS_FORUM_TAGS",
     index: d,
     optionId: t.id,
     onDragStart: o,
-    onDragComplete: a,
+    onDragComplete: s,
     onDragReset: c
   });
   return (0, i.jsx)("div", {
-    className: s()(x.container, {
+    className: a()(x.container, {
       [x.dropIndicatorBefore]: null != g && d < g,
       [x.dropIndicatorAfter]: null != g && d > g
     }),
     ref: e => {
-      h(m(e))
+      h(f(e))
     },
-    onMouseEnter: () => f(l),
-    onMouseLeave: () => f(false),
-    children: (0, i.jsx)(p.Z, {
+    onMouseEnter: () => p(l),
+    onMouseLeave: () => p(false),
+    children: (0, i.jsx)(m.Z, {
       tag: t,
       disabled: !l,
       ariaLabel: b.intl.formatToPlainString(b.t.jhSvB9, {

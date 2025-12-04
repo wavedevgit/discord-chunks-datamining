@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
 function c(e) {
   let {
     reactionEmoji: t
-  } = e, n = (0, l.e7)([a.ZP], () => (null == t ? true : t.emojiId) != null ? a.ZP.getUsableCustomEmojiById(t.emojiId) : null);
+  } = e, n = (0, l.e7)([s.ZP], () => (null == t ? true : t.emojiId) != null ? s.ZP.getUsableCustomEmojiById(t.emojiId) : null);
   return (0, i.jsxs)("div", {
     className: o.container,
     children: [(0, i.jsxs)("div", {
@@ -42,7 +42,7 @@ function c(e) {
       className: o.footer,
       children: [(0, i.jsxs)("div", {
         className: o.reaction,
-        children: [null != t ? (0, i.jsx)(s.Z, {
+        children: [null != t ? (0, i.jsx)(a.Z, {
           className: o.reactionEmote,
           emojiId: t.emojiId,
           emojiName: t.emojiName,

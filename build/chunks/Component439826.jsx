@@ -106,7 +106,7 @@ function k(e) {
     onCtxMenuOpen: L,
     onCtxMenuSelect: Q,
     sourceQuestContent: V
-  } = e, M = (0, j.PB)(v), Z = (0, p.ZP)(), W = ((0, c.wj)(Z) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, H = (0, _.tP)(v), U = (null == (t = v.userStatus) ? true : t.claimedAt) != null, z = (0, _.B6)(v.config.expiresAt, {
+  } = e, M = (0, j.PB)(v), W = (0, p.ZP)(), Z = ((0, c.wj)(W) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, U = (0, _.tP)(v), H = (null == (t = v.userStatus) ? true : t.claimedAt) != null, z = (0, _.B6)(v.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), F = (null == (n = v.userStatus) ? true : n.enrolledAt) != null, G = (null == (o = v.userStatus) ? true : o.completedAt) != null, {
@@ -149,10 +149,10 @@ function k(e) {
       })
     }), (0, r.jsx)("div", {
       className: a()(A.overlay, {
-        [A.lightThemeGradient]: Z === N.BRd.LIGHT,
-        [A.darkThemeGradient]: Z === N.BRd.DARK,
-        [A.darkerThemeGradient]: Z === N.BRd.DARKER,
-        [A.midnightThemeGradient]: Z === N.BRd.MIDNIGHT
+        [A.lightThemeGradient]: W === N.BRd.LIGHT,
+        [A.darkThemeGradient]: W === N.BRd.DARK,
+        [A.darkerThemeGradient]: W === N.BRd.DARKER,
+        [A.midnightThemeGradient]: W === N.BRd.MIDNIGHT
       })
     }), (0, r.jsxs)("div", {
       className: A.positionContentOverBackground,
@@ -249,7 +249,7 @@ function k(e) {
             className: A.promotedByRow,
             children: [(0, r.jsx)(d.Text, {
               variant: "text-sm/medium",
-              color: W ? "text-muted" : "always-white",
+              color: Z ? "text-muted" : "always-white",
               children: R.intl.string(R.t.VAbKhK)
             }), (0, r.jsx)(m.Z, {
               className: A.verifiedIcon,
@@ -267,9 +267,9 @@ function k(e) {
               color: "text-default",
               children: null != (u = null == (i = v.config.cosponsorMetadata) ? true : i.name) ? u : v.config.messages.gamePublisher
             })]
-          }), H || U ? null : (0, r.jsx)(d.Text, {
+          }), U || H ? null : (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
-            color: W ? "text-muted" : "always-white",
+            color: Z ? "text-muted" : "always-white",
             children: R.intl.format(R.t["7D8r4F"], {
               expiryDate: z
             })
@@ -279,7 +279,7 @@ function k(e) {
         quest: v,
         errorHints: k,
         warningHints: I,
-        isDarkTheme: W,
+        isDarkTheme: Z,
         sourceQuestContent: V
       })]
     })]
