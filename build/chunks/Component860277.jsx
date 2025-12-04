@@ -175,7 +175,28 @@ function G(e) {
     }, [B, Z]),
     Y = (0, i.useMemo)(() => o < N.ij.FRIENDS_INTRO ? N.ij.FRIENDS_INTRO : o >= N.ij.FRIENDS_BEST ? N.ij.FRIENDS_BEST : o, [o]);
   return (0, r.jsxs)(T.Z, {
-    children: [(0, r.jsx)("div", {
+    children: [(0, r.jsx)(c.jxI, {
+      ref: R,
+      className: D.rive,
+      fit: "contain",
+      autoplay: false,
+      onLoad: H,
+      dataBinding: {
+        AnimationState: F,
+        "Avatar01/img": V(null == _ ? true : _.user),
+        "Avatar02/img": V(v),
+        "Avatar03/img": V(S),
+        "Avatar04/img": V(null == _ ? true : _.user),
+        "Avatar05/img": V(I),
+        "Avatar01/Username": w,
+        "Avatar02/Username": j,
+        "Avatar03/Username": G,
+        "Avatar04/Username": w,
+        twoFriends: Z,
+        reducedMotion: B
+      },
+      withReducedMotion: "play"
+    }), (0, r.jsx)("div", {
       className: D.container,
       children: (0, r.jsxs)(A.ZP, {
         activeSlide: Y,
@@ -197,27 +218,6 @@ function G(e) {
           })
         })]
       })
-    }), (0, r.jsx)(c.jxI, {
-      ref: R,
-      className: D.rive,
-      fit: "contain",
-      autoplay: false,
-      onLoad: H,
-      dataBinding: {
-        AnimationState: F,
-        "Avatar01/img": V(null == _ ? true : _.user),
-        "Avatar02/img": V(v),
-        "Avatar03/img": V(S),
-        "Avatar04/img": V(null == _ ? true : _.user),
-        "Avatar05/img": V(I),
-        "Avatar01/Username": w,
-        "Avatar02/Username": j,
-        "Avatar03/Username": G,
-        "Avatar04/Username": w,
-        twoFriends: Z,
-        reducedMotion: B
-      },
-      withReducedMotion: "play"
     })]
   })
 }
