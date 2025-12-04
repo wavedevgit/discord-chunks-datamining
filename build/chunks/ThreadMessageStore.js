@@ -2,7 +2,7 @@
 /** chunk id: 144140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Q
+  Z: () => X
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -302,7 +302,7 @@ function q() {
     }
   }
 }
-class X extends(r = Chunk442837.ZP.Store) {
+class Q extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk375954.Z)
   }
@@ -322,8 +322,8 @@ class X extends(r = Chunk442837.ZP.Store) {
     return v
   }
 }
-g(X, "displayName", "ThreadMessageStore");
-let Q = new X(Chunk570140.Z, {
+g(Q, "displayName", "ThreadMessageStore");
+let X = new Q(Chunk570140.Z, {
   CONNECTION_OPEN: x,
   OVERLAY_INITIALIZE: L,
   GUILD_CREATE: j,

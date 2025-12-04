@@ -1,11 +1,12 @@
-/** Chunk was on 83098 **/
-/** chunk id: 987509, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 987509, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  ZP: () => S,
-  dL: () => h,
-  hC: () => p,
-  hl: () => m,
-  qx: () => g
+  ZP: () => I,
+  dL: () => m,
+  hC: () => h,
+  hl: () => g,
+  qx: () => E
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   Chunk493683 = require("./493683.js"),
@@ -18,10 +19,12 @@ var Chunk392711 = require("./392711.js"),
   Chunk823379 = require("./823379.js"),
   Chunk41837 = require("./41837.js"),
   Chunk981631 = require("./981631.js");
+require("./388032.jsx");
+let _ = 15;
 
-function h(e) {
-  let t = u.Z.getChannel(e);
-  return (null == t ? true : t.type) === b.d4z.DM ? {
+function m(e) {
+  let t = l.Z.getChannel(e);
+  return (null == t ? true : t.type) === p.d4z.DM ? {
     type: "user",
     id: t.recipients[0]
   } : {
@@ -30,29 +33,29 @@ function h(e) {
   }
 }
 
-function p(e) {
+function h(e) {
   return "".concat(e.type, "-").concat(e.id)
 }
 
-function m(e) {
+function g(e) {
   if ("channel" === e.type) return e.id;
-  let t = u.Z.getDMFromUserId(e.id);
+  let t = l.Z.getDMFromUserId(e.id);
   if (null != t) return t
 }
-async function g(e) {
-  let t = m(e);
+async function E(e) {
+  let t = g(e);
   if (null != t) return t;
   if ("user" === e.type) try {
-    return await r.Z.getOrEnsurePrivateChannel(e.id)
+    return await i.Z.getOrEnsurePrivateChannel(e.id)
   } catch (e) {
     return
   }
 }
 
-function y(e) {
-  if ("user" !== e.type) return (0, s.Z)(e.id);
+function b(e) {
+  if ("user" !== e.type) return (0, o.Z)(e.id);
   {
-    let t = c.default.getUser(e.id);
+    let t = u.default.getUser(e.id);
     return null != t ? {
       type: a.h8.USER,
       record: t,
@@ -61,11 +64,19 @@ function y(e) {
   }
 }
 
-function x(e, t) {
-  let n, l = new Set;
+function y(e) {
+  return e.type === AutocompleterResultTypes.USER || PermissionStore.can(Permissions.VIEW_CHANNEL, e.record)
+}
+
+function O(e, t) {
+  return e.type === a.h8.USER ? t || null != l.Z.getDMChannelFromUserId(e.record.id) : e.type === a.h8.GROUP_DM || e.record.type !== p.d4z.GUILD_FORUM && e.record.type !== p.d4z.GUILD_MEDIA && c.Z.can(p.Plq.VIEW_CHANNEL, e.record) && c.Z.can(p.Plq.SEND_MESSAGES, e.record)
+}
+
+function v(e, t) {
+  let n, r = new Set;
   if (null != t)
-    for (let e of t) l.add(e);
-  let r = [];
+    for (let e of t) r.add(e);
+  let i = [];
   for (let t of e)
     if (null == t) continue;
     else if (t.type === a.h8.HEADER) n = t;
@@ -73,35 +84,34 @@ function x(e, t) {
     let {
       id: e
     } = t.record;
-    l.has(e) || (l.add(e), null != n && (r.push(n), n = true), r.push(t))
+    r.has(e) || (r.add(e), null != n && (i.push(n), n = true), i.push(t))
   }
-  return r
+  return i
 }
 
-function v(e, t) {
-  return e.filter(e => (0, d.lm)(e) && (e.type === a.h8.HEADER || (0, f.o)(e) && (e.type === a.h8.USER ? t || null != u.Z.getDMChannelFromUserId(e.record.id) : e.type === a.h8.GROUP_DM || e.record.type !== b.d4z.GUILD_FORUM && e.record.type !== b.d4z.GUILD_MEDIA && o.Z.can(b.Plq.VIEW_CHANNEL, e.record) && o.Z.can(b.Plq.SEND_MESSAGES, e.record))))
+function S(e, t) {
+  return e.filter(e => (0, d.lm)(e) && (e.type === a.h8.HEADER || (0, f.o)(e) && O(e, t)))
 }
 
-function S(e) {
+function I(e) {
   let {
     results: t,
     hasQuery: n,
-    queryMode: r,
+    queryMode: i,
     frequentChannels: a,
-    targetDestination: u,
-    selectedDestinations: o,
-    pinnedDestinations: c,
+    targetDestination: l,
+    selectedDestinations: c,
+    pinnedDestinations: u,
     originDestination: d,
     includeMissingDMs: f
   } = e;
-  if (n) return x(v(t, f));
-  let b = null != c && c.length > 0 ? c.map(e => y(e)) : [],
-    h = i.Z.getChannelHistory(),
-    p = h.length > 0 ? h.map(e => (0, s.Z)(e)) : [],
-    m = a.length > 0 ? a.map(e => (0, s.Z)(e.id)) : [],
-    g = v([...b, null != u ? y(u) : null, ...p, ...m], f),
-    S = (null == o ? true : o.find(e => (0, l.isEqual)(e, d))) != null,
-    E = null == d || S ? [] : [d.id];
-  return null != r ? x(g.filter(e => e.type === r)) : x(g, E).slice(0, 15)
+  if (n) return v(S(t, f));
+  let p = null != u && u.length > 0 ? u.map(e => b(e)) : [],
+    m = s.Z.getChannelHistory(),
+    h = m.length > 0 ? m.map(e => (0, o.Z)(e)) : [],
+    g = a.length > 0 ? a.map(e => (0, o.Z)(e.id)) : [],
+    E = S([...p, null != l ? b(l) : null, ...h, ...g], f),
+    y = (null == c ? true : c.find(e => (0, r.isEqual)(e, d))) != null,
+    O = null == d || y ? [] : [d.id];
+  return null != i ? v(E.filter(e => e.type === i)) : v(E, O).slice(0, _)
 }
-require("./388032.jsx")

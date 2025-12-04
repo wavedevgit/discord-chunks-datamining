@@ -6,16 +6,16 @@ require.d(exports, {
 var Chunk830121 = require("./830121.js"),
   Chunk591759 = require("./591759.js"),
   Chunk388032 = require("./388032.jsx");
-let s = [Chunk830121.el];
+let a = [Chunk830121.el];
 
 function i(e, t, n) {
   let l = false,
     i = e.replaceAll(r.Z.URL_REGEX, e => {
-      let t = s.some(t => null != t(e));
+      let t = a.some(t => null != t(e));
       return t && (l = true), t ? e : "`".concat(e, "`")
     });
   if (l) return i;
-  let u = a.intl.formatToMarkdownString(a.t.dZJpdG, {
+  let u = s.intl.formatToMarkdownString(s.t.dZJpdG, {
     applicationName: t.name,
     link: n
   });

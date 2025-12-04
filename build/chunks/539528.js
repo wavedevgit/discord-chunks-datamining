@@ -171,7 +171,7 @@ function A(e) {
   var R = h();
 
   function w(e) {
-    (0, r.Z)(X, e), X.length = t.length, R.notifyListeners(X.location, X.action)
+    (0, r.Z)(Q, e), Q.length = t.length, R.notifyListeners(Q.location, Q.action)
   }
 
   function D(e) {
@@ -197,7 +197,7 @@ function A(e) {
   }
 
   function M(e) {
-    var t = X.location,
+    var t = Q.location,
       n = U.indexOf(t.key);
     false === n && (n = 0);
     var r = U.indexOf(e.key);
@@ -214,7 +214,7 @@ function A(e) {
 
   function Z(e, r) {
     var i = "PUSH",
-      a = _(e, r, P(), X.location);
+      a = _(e, r, P(), Q.location);
     R.confirmTransitionTo(a, i, m, function(e) {
       if (e) {
         var r = G(a),
@@ -226,7 +226,7 @@ function A(e) {
               state: s
             }, null, r), c) window.location.href = r;
           else {
-            var l = U.indexOf(X.location.key),
+            var l = U.indexOf(Q.location.key),
               u = U.slice(0, l + 1);
             u.push(a.key), U = u, w({
               action: i,
@@ -240,7 +240,7 @@ function A(e) {
 
   function B(e, r) {
     var i = "REPLACE",
-      a = _(e, r, P(), X.location);
+      a = _(e, r, P(), Q.location);
     R.confirmTransitionTo(a, i, m, function(e) {
       if (e) {
         var r = G(a),
@@ -252,7 +252,7 @@ function A(e) {
               state: s
             }, null, r), c) window.location.replace(r);
           else {
-            var l = U.indexOf(X.location.key);
+            var l = U.indexOf(Q.location.key);
             false !== l && (U[l] = a.key), w({
               action: i,
               location: a
@@ -297,7 +297,7 @@ function A(e) {
         W(false), t()
       }
   }
-  var X = {
+  var Q = {
     length: t.length,
     action: "POP",
     location: k,
@@ -310,7 +310,7 @@ function A(e) {
     block: z,
     listen: q
   };
-  return X
+  return Q
 }
 var C = "hashchange",
   N = {
@@ -484,7 +484,7 @@ function x(e) {
   }
   var q = false;
 
-  function X(e) {
+  function Q(e) {
     true === e && (e = false);
     var t = S.setPrompt(e);
     return q || (z(1), q = true),
@@ -493,7 +493,7 @@ function x(e) {
       }
   }
 
-  function Q(e) {
+  function X(e) {
     var t = S.appendListener(e);
     return z(1),
       function() {
@@ -510,8 +510,8 @@ function x(e) {
     go: H,
     goBack: Y,
     goForward: W,
-    block: X,
-    listen: Q
+    block: Q,
+    listen: X
   };
   return J
 }

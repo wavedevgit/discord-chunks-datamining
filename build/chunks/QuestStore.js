@@ -60,15 +60,15 @@ function W(e, t) {
 let K = 6 * Chunk70956.Z.Millis.HOUR,
   z = new Map,
   q = null,
-  X = null,
-  Q = false,
+  Q = null,
+  X = false,
   J = null,
   $ = new Map,
   ee = 5e3,
   et = 864e6;
 
 function en() {
-  r = false, i = false, a = new Map, o = false, s = new Map, l = new Map, c = new Map, u = new Map, d = 0, f = 0, p = new Set, _ = new Set, m = new Set, h = new Set, g = new Set, z = new Map, b = new Map, y = new Map, O = new Map, v = null, S = new Map, E = new Set, I = new Map, T = new Map, eQ(), A = null, N = new Map, $ = new Map, C = new Map
+  r = false, i = false, a = new Map, o = false, s = new Map, l = new Map, c = new Map, u = new Map, d = 0, f = 0, p = new Set, _ = new Set, m = new Set, h = new Set, g = new Set, z = new Map, b = new Map, y = new Map, O = new Map, v = null, S = new Map, E = new Set, I = new Map, T = new Map, eX(), A = null, N = new Map, $ = new Map, C = new Map
 }
 
 function er(e, t) {
@@ -136,7 +136,7 @@ function ec(e) {
 }
 
 function eu() {
-  eQ(), en()
+  eX(), en()
 }
 
 function ed() {
@@ -156,7 +156,7 @@ function ef(e) {
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (c = new Map, n)) c.set(e.id, e);
   for (let e of null == N ? true : N.values()) l.has(e.id) || (l.set(e.id, e), s.set(e.id, e.config), a.set(e.id, (0, Z.zi)(e)));
-  T = a, eX(), A = null != i ? new Date(i) : null
+  T = a, eQ(), A = null != i ? new Date(i) : null
 }
 
 function ep() {
@@ -477,11 +477,11 @@ function eq() {
   }, exports))
 }
 
-function eX() {
-  eQ(), eq()
+function eQ() {
+  eX(), eq()
 }
 
-function eQ() {
+function eX() {
   null != q && (clearTimeout(q), q = null)
 }
 
@@ -493,15 +493,15 @@ function eJ(e) {
 }
 
 function e$() {
-  Q = true
+  X = true
 }
 
 function e0(e) {
-  Q = false, X = Date.now(), J = e.takeover
+  X = false, Q = Date.now(), J = e.takeover
 }
 
 function e1() {
-  Q = false
+  X = false
 }
 en();
 class e3 extends(P = Chunk442837.ZP.Store) {
@@ -603,13 +603,13 @@ class e3 extends(P = Chunk442837.ZP.Store) {
     return N.get(e)
   }
   isFetchingQuestHomeTakeover() {
-    return Q
+    return X
   }
   getQuestHomeTakeoverConfig() {
     return J
   }
   getLastFetchedQuestHomeTakeover() {
-    return X
+    return Q
   }
 }
 V(e3, "displayName", "QuestStore");

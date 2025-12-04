@@ -174,8 +174,8 @@
     K = W,
     z = f,
     q = /^rgb\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*\)$/,
-    X = /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/,
-    Q = /^rgb\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*\)$/,
+    Q = /^rgba\(\s*(-?\d+),\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*([01]|[01]?\.\d+)\)$/,
+    X = /^rgb\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*\)$/,
     J = /^rgba\(\s*(-?\d+(?:\.\d+)?)%,\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*,\s*([01]|[01]?\.\d+)\)$/,
     $ = /^hsl\(\s*(-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*\)$/,
     ee = /^hsla\(\s*(-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)%\s*,\s*(-?\d+(?:\.\d+)?)%\s*,\s*([01]|[01]?\.\d+)\)$/,
@@ -188,11 +188,11 @@
         for (var t, n = t.slice(1, 4), r = 0; r < 3; r++) n[r] = +n[r];
         return n[3] = 1, n
       }
-      if (t = e.match(X)) {
+      if (t = e.match(Q)) {
         for (var i = t.slice(1, 5), a = 0; a < 4; a++) i[a] = +i[a];
         return i
       }
-      if (t = e.match(Q)) {
+      if (t = e.match(X)) {
         for (var o = t.slice(1, 4), s = 0; s < 3; s++) o[s] = et(2.55 * o[s]);
         return o[3] = 1, o
       }
@@ -214,7 +214,7 @@
       }
     };
   en.test = function(e) {
-    return q.test(e) || X.test(e) || Q.test(e) || J.test(e) || $.test(e) || ee.test(e)
+    return q.test(e) || Q.test(e) || X.test(e) || J.test(e) || $.test(e) || ee.test(e)
   };
   var er = en,
     ei = y,
@@ -407,21 +407,21 @@
       return isNaN(a) && (a = 0), isNaN(o) && (o = 0), a > 360 && (a -= 360), a < 0 && (a += 360), (a /= 360) < 1 / 3 ? t = 1 - ((n = (1 - o) / 3) + (e = (1 + o * eK(eY * a) / eK(eW - eY * a)) / 3)) : a < 2 / 3 ? (a -= 1 / 3, n = 1 - ((e = (1 - o) / 3) + (t = (1 + o * eK(eY * a) / eK(eW - eY * a)) / 3))) : (a -= 2 / 3, e = 1 - ((t = (1 - o) / 3) + (n = (1 + o * eK(eY * a) / eK(eW - eY * a)) / 3))), e = eH(s * module * 3), [255 * module, 255 * (t = eH(s * t * 3)), 255 * (n = eH(s * n * 3)), r.length > 3 ? r[3] : 1]
     },
     eq = d.unpack,
-    eX = d.type,
-    eQ = y,
+    eQ = d.type,
+    eX = y,
     eJ = E,
     e$ = f,
     e0 = eF;
   eJ.prototype.hsi = function() {
     return e0(this._rgb)
-  }, eQ.hsi = function() {
+  }, eX.hsi = function() {
     for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
     return new(Function.prototype.bind.apply(eJ, [null].concat(module, ["hsi"])))
   }, e$.format.hsi = ez, e$.autodetect.push({
     p: 2,
     test: function() {
       for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
-      if ("array" === eX(e = eq(module, "hsi")) && 3 === module.length) return "hsi"
+      if ("array" === eQ(e = eq(module, "hsi")) && 3 === module.length) return "hsi"
     }
   });
   var e1 = d.unpack,
@@ -622,11 +622,11 @@
       return [r[0], r[1], r[2], module.length > 3 ? module[3] : 1]
     },
     tq = d.unpack,
-    tX = tz,
-    tQ = function() {
+    tQ = tz,
+    tX = function() {
       for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
       var n = tq(module, "hcl").reverse();
-      return tX.apply(true, n)
+      return tQ.apply(true, n)
     },
     tJ = d.unpack,
     t$ = d.type,
@@ -644,7 +644,7 @@
   }, t0.hcl = function() {
     for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
     return new(Function.prototype.bind.apply(t1, [null].concat(module, ["hcl"])))
-  }, t3.format.lch = tz, t3.format.hcl = tQ, ["lch", "hcl"].forEach(function(e) {
+  }, t3.format.lch = tz, t3.format.hcl = tX, ["lch", "hcl"].forEach(function(e) {
     return t3.autodetect.push({
       p: 2,
       test: function() {
@@ -989,8 +989,8 @@
         r = nz(n[0], n[1], n[2]);
       return [r[0], r[1], r[2], module.length > 3 ? module[3] : 1]
     },
-    nX = d.unpack,
-    nQ = d.type,
+    nQ = d.unpack,
+    nX = d.type,
     nJ = y,
     n$ = E,
     n0 = f,
@@ -1004,7 +1004,7 @@
     p: 3,
     test: function() {
       for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
-      if ("array" === nQ(e = nX(module, "oklch")) && 3 === module.length) return "oklch"
+      if ("array" === nX(e = nQ(module, "oklch")) && 3 === module.length) return "oklch"
     }
   });
   var n3 = E,
@@ -1466,22 +1466,22 @@
       else throw RangeError("No point in running bezier with only one color.");
       return i
     },
-    rX = function(e) {
+    rQ = function(e) {
       var t = rq(e);
       return t.scale = function() {
         return rK(t)
       }, t
     },
-    rQ = y,
+    rX = y,
     rJ = function(e, t, n) {
       if (!rJ[n]) throw Error("unknown blend mode " + n);
       return rJ[n](e, t)
     },
     r$ = function(e) {
       return function(t, n) {
-        var r = rQ(n).rgb(),
-          i = rQ(t).rgb();
-        return rQ.rgb(e(r, i))
+        var r = rX(n).rgb(),
+          i = rX(t).rgb();
+        return rX.rgb(e(r, i))
       }
     },
     r0 = function(e) {
@@ -1739,5 +1739,5 @@
   }
   var iz = iH,
     iq = y;
-  return iq.average = rG, iq.bezier = rX, iq.blend = r7, iq.cubehelix = is, iq.mix = iq.interpolate = rs, iq.random = ip, iq.scale = rH, iq.analyze = iO, iq.contrast = iI, iq.deltaE = iM, iq.distance = iU, iq.limits = iv, iq.valid = iZ, iq.scales = iV, iq.colors = t4, iq.brewer = iz, iq
+  return iq.average = rG, iq.bezier = rQ, iq.blend = r7, iq.cubehelix = is, iq.mix = iq.interpolate = rs, iq.random = ip, iq.scale = rH, iq.analyze = iO, iq.contrast = iI, iq.deltaE = iM, iq.distance = iU, iq.limits = iv, iq.valid = iZ, iq.scales = iV, iq.colors = t4, iq.brewer = iz, iq
 })

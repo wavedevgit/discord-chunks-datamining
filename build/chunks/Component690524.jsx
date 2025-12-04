@@ -99,8 +99,8 @@ let j = {
         analyticsLocations: H
       } = (0, Chunk906732.ZP)(Chunk100527.Z.PAYMENT_FLOW_TEST_PAGE), [Y, W] = Chunk473749.useState(""), [K, z] = Chunk473749.useState(Chunk981631.lds), {
         balance: q,
-        isFetching: X,
-        error: Q
+        isFetching: Q,
+        error: X
       } = (0, Chunk43747.A)(), {
         isSubmitting: J,
         responseMessage: $,
@@ -267,16 +267,16 @@ let j = {
                 children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
                   variant: "text-sm/normal",
                   children: "Virtual Currency Balance:"
-                }), X ? (0, Chunk54381.jsx)("div", {
+                }), Q ? (0, Chunk54381.jsx)("div", {
                   className: Chunk616926.loader,
                   children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
                     type: Chunk481060.RAz.SPINNING_CIRCLE
                   })
                 }) : (0, Chunk54381.jsxs)("div", {
                   className: Chunk616926.balanceWidgetPillContainer,
-                  children: [null !== Q && (0, Chunk54381.jsxs)(Chunk481060.Text, {
+                  children: [null !== X && (0, Chunk54381.jsxs)(Chunk481060.Text, {
                     variant: "text-sm/normal",
-                    children: ["Error fetching Virtual Currency Balance: ", Q.message]
+                    children: ["Error fetching Virtual Currency Balance: ", X.message]
                   }), (0, Chunk54381.jsx)(Chunk970815.A4, {
                     balance: null != q ? q : 0,
                     balanceWidgetMode: Chunk970815.b6.SELECTED

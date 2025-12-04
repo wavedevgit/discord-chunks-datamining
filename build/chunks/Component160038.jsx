@@ -1,7 +1,7 @@
 /** Chunk was on 60831 **/
 /** chunk id: 160038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => _
 }), require("./388685.js"), require("./49124.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk827297 = require("./827297.js");
-let _ = () => {
+let T = () => {
     Chunk131951.Z.getMediaEngine().once(Chunk46973.aB.ConnectionStats, e => {
       let t = JSON.stringify(Object.values(O.Yn).map(t => {
         let n = e.filter(e => {
@@ -42,7 +42,7 @@ let _ = () => {
       (0, h.JG)(t, () => (0, s.showToast)((0, s.createToast)(y.intl.string(y.t.t5VZ88), s.ToastType.SUCCESS)))
     })
   },
-  T = function(e) {
+  _ = function(e) {
     (0, i.useEffect)(() => {
       g.default.track(N.rMx.OPEN_POPOUT, {
         type: "RTC Connection"
@@ -107,7 +107,7 @@ let _ = () => {
         connectionTypeText: o
       } = e,
       h = d.Sb.getSetting(),
-      T = {
+      _ = {
         [N.hes.AWAITING_ENDPOINT]: y.intl.format(y.t.Eu2vUR, {
           url: N.yXt.STATUS
         }),
@@ -128,9 +128,9 @@ let _ = () => {
         [N.hes.RTC_DISCONNECTED]: y.intl.string(y.t.fOX25I)
       } [r];
     return (0, l.jsxs)(l.Fragment, {
-      children: ["function" == typeof T ? T() : (0, l.jsx)("p", {
+      children: ["function" == typeof _ ? _() : (0, l.jsx)("p", {
         className: a()(C.popoutText, C.popoutTextDetails),
-        children: T
+        children: _
       }), (0, l.jsx)("hr", {
         className: C.separator
       }), (0, l.jsxs)("div", {
@@ -153,7 +153,7 @@ let _ = () => {
             })]
           }), (0, l.jsxs)(s.Anchor, {
             className: a()(C.copyStatsButton, C.textWithIcon),
-            onClick: _,
+            onClick: T,
             title: "Copy to clipboard",
             children: [y.intl.string(y.t["XEb+Sj"]), (0, l.jsx)(s.TIy, {
               size: "xxs",

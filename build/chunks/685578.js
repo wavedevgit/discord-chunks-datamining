@@ -91,8 +91,8 @@ var y = new WeakMap,
     return !!t && e instanceof t.Selection
   },
   q = e => K(e) && 3 === e.nodeType,
-  X = e => e.clipboardData && "" !== e.clipboardData.getData("text/plain") && 1 === e.clipboardData.types.length,
-  Q = e => {
+  Q = e => e.clipboardData && "" !== e.clipboardData.getData("text/plain") && 1 === e.clipboardData.types.length,
+  X = e => {
     var [t, n] = e;
     if (W(t) && t.childNodes.length) {
       var r = n === t.childNodes.length,
@@ -342,7 +342,7 @@ var y = new WeakMap,
       var {
         exactMatch: r,
         suppressThrow: i
-      } = n, [a, o] = r ? t : Q(t), s = a.parentNode, l = null, c = 0;
+      } = n, [a, o] = r ? t : X(t), s = a.parentNode, l = null, c = 0;
       if (s) {
         var u, f, p = ey.toDOMNode(e, e),
           _ = s.closest('[data-slate-void="true"]'),
@@ -755,7 +755,7 @@ var y = new WeakMap,
   eK = (0, Chunk473749.createContext)(false),
   ez = () => (0, Chunk473749.useContext)(eK),
   eq = (0, Chunk473749.createContext)(null),
-  eX = () => {
+  eQ = () => {
     var e = (0, Chunk473749.useContext)(eq);
     if (!module) throw Error("The `useSlate` hook must be used inside the <Slate> component's context.");
     var {
@@ -763,7 +763,7 @@ var y = new WeakMap,
     } = module;
     return exports
   },
-  eQ = 3,
+  eX = 3,
   eJ = {
     bold: "mod+b",
     compose: ["down", "left", "right", "up", "backspace", "enter"],
@@ -1639,7 +1639,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
         disableDefaultStyles: O = false
       } = e,
       C = g(e, tI),
-      N = eX(),
+      N = eQ(),
       [x, L] = (0, c.useState)(false),
       k = (0, c.useRef)(null),
       U = (0, c.useRef)([]),
@@ -1682,11 +1682,11 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
           }!p || o && s || d.YR.deselect(N)
         }
       }, 100), [p]),
-      Q = (0, c.useMemo)(() => o()(q, 0), [q]),
+      X = (0, c.useMemo)(() => o()(q, 0), [q]),
       J = tv({
         node: k,
         onDOMSelectionChange: q,
-        scheduleOnDOMSelectionChange: Q
+        scheduleOnDOMSelectionChange: X
       });
     eC(() => {
       k.current && (e = H(k.current)) ? (v.set(N, e), S.set(N, k.current), A.set(N, k.current), T.set(k.current, N)) : A.delete(N);
@@ -1751,7 +1751,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
     var $ = (0, c.useCallback)(e => {
         if (G(), !p && ey.hasEditableTarget(N, e.target) && !tL(e, u)) {
           if (J) return J.handleDOMBeforeInput(e);
-          Q.flush(), q.flush();
+          X.flush(), q.flush();
           var {
             selection: t
           } = N, {
@@ -1869,14 +1869,14 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
         }
       }, [p, u]),
       ee = (0, c.useCallback)(e => {
-        null == e ? (q.cancel(), Q.cancel(), S.delete(N), A.delete(N), k.current && eb && k.current.removeEventListener("beforeinput", $)) : eb && e.addEventListener("beforeinput", $), k.current = e
-      }, [k, $, q, Q]);
+        null == e ? (q.cancel(), X.cancel(), S.delete(N), A.delete(N), k.current && eb && k.current.removeEventListener("beforeinput", $)) : eb && e.addEventListener("beforeinput", $), k.current = e
+      }, [k, $, q, X]);
     eC(() => {
       var e = ey.getWindow(N);
-      return e.document.addEventListener("selectionchange", Q), () => {
-        e.document.removeEventListener("selectionchange", Q)
+      return e.document.addEventListener("selectionchange", X), () => {
+        e.document.removeEventListener("selectionchange", X)
       }
-    }, [Q]);
+    }, [X]);
     var et = s([N, []]);
     if (f && 1 === N.children.length && 1 === Array.from(d.NB.texts(N)).length && "" === d.NB.string(N) && !x) {
       var en = d.ML.start(N, []);
@@ -1989,7 +1989,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
           var t = ey.toSlateNode(N, e.target),
             n = ey.findPath(N, t);
           if (d.ML.hasPath(N, n) && d.NB.get(N, n) === t) {
-            if (e.detail === eQ && n.length >= 1) {
+            if (e.detail === eX && n.length >= 1) {
               var r = n;
               if (!(d.W_.isElement(t) && d.ML.isBlock(N, t))) {
                 var i, a = d.ML.above(N, {
@@ -2270,7 +2270,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
         }
       }, [p, C.onKeyDown]),
       onPaste: (0, c.useCallback)(e => {
-        !p && ey.hasEditableTarget(N, e.target) && !tx(e, C.onPaste) && (!eb || X(e.nativeEvent) || eu) && (e.preventDefault(), ey.insertData(N, e.clipboardData))
+        !p && ey.hasEditableTarget(N, e.target) && !tx(e, C.onPaste) && (!eb || Q(e.nativeEvent) || eu) && (e.preventDefault(), ey.insertData(N, e.clipboardData))
       }, [p, C.onPaste])
     }), c.createElement(tN, {
       decorations: et,

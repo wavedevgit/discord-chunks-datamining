@@ -48,8 +48,8 @@ var r, Chunk98405 = require("./98405.js"),
   K = "Invalid host",
   z = "Invalid port",
   q = /[a-z]/i,
-  X = /[\d+-.a-z]/i,
-  Q = /\d/,
+  Q = /[\d+-.a-z]/i,
+  X = /\d/,
   J = /^0x/i,
   $ = /^[0-7]+$/,
   ee = /^\d+$/,
@@ -104,8 +104,8 @@ var r, Chunk98405 = require("./98405.js"),
           if (i = null, r > 0)
             if ("." !== f() || !(r < 4)) return;
             else d++;
-          if (!L(Q, f())) return;
-          for (; L(Q, f());) {
+          if (!L(X, f())) return;
+          for (; L(X, f());) {
             if (a = R(f(), 10), null === i) i = a;
             else {
               if (0 === i) return;
@@ -249,7 +249,7 @@ eF.prototype = {
           }
           break;
         case ev:
-          if (a && (L(X, a) || "+" === a || "-" === a || "." === a)) d += V(a);
+          if (a && (L(Q, a) || "+" === a || "-" === a || "." === a)) d += V(a);
           else if (":" === a) {
             if (t && (l.isSpecial() !== p(eh, d) || "file" === d && (l.includesCredentials() || null !== l.port) || "file" === l.scheme && !l.host)) return;
             if (l.scheme = d, t) {
@@ -352,7 +352,7 @@ eF.prototype = {
           }
           break;
         case ex:
-          if (L(Q, a)) d += a;
+          if (L(X, a)) d += a;
           else {
             if (!(a === r || "/" === a || "?" === a || "#" === a || "\\" === a && l.isSpecial()) && !t) return z;
             if ("" !== d) {

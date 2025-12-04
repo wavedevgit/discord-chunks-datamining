@@ -14,12 +14,12 @@ var Chunk473749 = require("./473749.js"),
   Chunk601565 = require("./601565.js"),
   Chunk41837 = require("./41837.js");
 
-function b(e) {
+function f(e) {
   let {
     query: t,
     queryMode: n
-  } = (0, s.F_)(e), l = f.M, r = null;
-  return null != n && f.M.includes(n) && (l = [n], r = n), {
+  } = (0, a.F_)(e), l = b.M, r = null;
+  return null != n && b.M.includes(n) && (l = [n], r = n), {
     query: t,
     queryMode: r,
     resultTypes: l
@@ -30,49 +30,49 @@ function h(e) {
   let {
     targetDestination: t,
     selectedDestinations: n,
-    originDestination: s,
-    includeMissingDMs: f = false
-  } = e, h = (0, r.e7)([u.default], () => u.default.getId()), p = l.useMemo(() => ({
+    originDestination: a,
+    includeMissingDMs: b = false
+  } = e, h = (0, r.e7)([u.default], () => u.default.getId()), m = l.useMemo(() => ({
     searchOptions: {
       blacklist: new Set(["user:".concat(h)]),
       frecencyBoosters: true,
       userFilters: null
     }
   }), [h]), {
-    search: m,
+    search: p,
     query: g,
-    results: y
-  } = (0, d.Z)(p), [x, v] = l.useState(b("")), S = l.useCallback(e => v(b(e)), [v]), {
-    queryMode: E
-  } = x, j = l.useRef(null), Z = l.useRef(n), P = g !== j.current ? n : Z.current;
+    results: x
+  } = (0, d.Z)(m), [y, j] = l.useState(f("")), v = l.useCallback(e => j(f(e)), [j]), {
+    queryMode: S
+  } = y, P = l.useRef(null), O = l.useRef(n), _ = g !== P.current ? n : O.current;
   l.useEffect(() => {
-    g !== j.current && (Z.current = n), j.current = g
+    g !== P.current && (O.current = n), P.current = g
   }, [g, n]), l.useLayoutEffect(() => {
     let {
       query: e,
       resultTypes: t
-    } = x;
-    m({
+    } = y;
+    p({
       query: e,
       resultTypes: t
     })
-  }, [m, x]), (0, i.D)();
-  let _ = (0, r.e7)([o.Z], () => o.Z.getFrequentlyWithoutFetchingLatest()),
-    O = (0, r.e7)([a.Z], () => a.Z.isConnected()),
-    C = "" !== g;
+  }, [p, y]), (0, i.D)();
+  let Z = (0, r.e7)([o.Z], () => o.Z.getFrequentlyWithoutFetchingLatest()),
+    E = (0, r.e7)([s.Z], () => s.Z.isConnected()),
+    L = "" !== g;
   return {
     results: l.useMemo(() => (0, c.ZP)({
-      results: y,
-      hasQuery: C,
-      queryMode: E,
+      results: x,
+      hasQuery: L,
+      queryMode: S,
       targetDestination: t,
-      frequentChannels: _,
+      frequentChannels: Z,
       selectedDestinations: n,
-      pinnedDestinations: P,
-      originDestination: s,
-      includeMissingDMs: f,
-      isConnected: O
-    }), [y, C, E, t, _, n, P, s, f, O]),
-    updateSearchText: S
+      pinnedDestinations: _,
+      originDestination: a,
+      includeMissingDMs: b,
+      isConnected: E
+    }), [x, L, S, t, Z, n, _, a, b, E]),
+    updateSearchText: v
   }
 }

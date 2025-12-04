@@ -109,7 +109,7 @@ function ed(e) {
     style: {
       marginBottom: "18px"
     }
-  }) : (0, r.jsx)(X.Z, {
+  }) : (0, r.jsx)(Q.Z, {
     variant: true,
     subscriptionTier: $.Si.TIER_2,
     interval: d.interval

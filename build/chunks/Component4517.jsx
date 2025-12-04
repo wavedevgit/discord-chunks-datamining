@@ -189,7 +189,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
     i.useEffect(() => () => q.stop(), [q]), i.useEffect(() => {
       null == I || I.onInteractionPopoutTargetRefChange(L)
     }, [I]);
-    let [X, Q] = (0, u.q_F)(() => ({
+    let [Q, X] = (0, u.q_F)(() => ({
       maxHeight: "".concat(U.current, "px"),
       config: {
         clamp: true,
@@ -200,19 +200,19 @@ let M = Chunk473749.forwardRef(function(e, t) {
       if (F(true), null == M.current || null == k.current || !K) return;
       let e = M.current.getBoundingClientRect().height,
         t = k.current.getBoundingClientRect().height;
-      W(t > e), U.current = e, G.current = t, Q({
+      W(t > e), U.current = e, G.current = t, X({
         maxHeight: "".concat(Math.min(V ? U.current : G.current, V ? D : x), "px")
       })
-    }, [K, _, p, Q, V, D, x]);
+    }, [K, _, p, X, V, D, x]);
     let J = e => {
-        Y && (e ? Q({
+        Y && (e ? X({
           maxHeight: "".concat(Math.min(G.current, x), "px"),
           delay: z ? 0 : A.zS,
           config: {
             clamp: true,
             duration: z ? 0 : A.R1
           }
-        }) : Q({
+        }) : X({
           maxHeight: "".concat(Math.min(U.current, D), "px"),
           delay: 0
         }), z ? H(!e) : q.start(e ? A.zS : A.Sq, () => H(!e)))
@@ -253,7 +253,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
         children: (0, r.jsx)("span", {
           className: N.inner,
           children: (0, r.jsxs)(s.animated.div, {
-            style: X,
+            style: Q,
             className: o()(N.content, {
               [N.unclamped]: !V
             }),

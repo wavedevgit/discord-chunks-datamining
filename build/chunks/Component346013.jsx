@@ -84,7 +84,7 @@ function G(e) {
     channel: Z
   } = e, B = i.useRef(null), F = i.useRef(null), V = (0, P.J)(k, G), {
     setPopout: H
-  } = (0, b.Z)(G.id, w.d$), Y = (0, E.qo)(G, Z, H, true), W = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [X, Q] = i.useState((null == V ? true : V.coverImage) == null), J = (0, l.e7)([S.ZP, I.default], () => {
+  } = (0, b.Z)(G.id, w.d$), Y = (0, E.qo)(G, Z, H, true), W = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [Q, X] = i.useState((null == V ? true : V.coverImage) == null), J = (0, l.e7)([S.ZP, I.default], () => {
     var e;
     return S.ZP.isMember(null == V ? true : V.guildId, null == (e = I.default.getCurrentUser()) ? true : e.id)
   }, [V]), $ = (0, l.e7)([S.ZP], () => (null == V ? true : V.authorId) != null ? S.ZP.getMember(V.guildId, V.authorId) : null), ee = (0, p.Z)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (t = V.user) ? true : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
@@ -147,14 +147,14 @@ function G(e) {
       className: x.thumbnailContainer,
       onMouseEnter: el,
       onMouseLeave: ec,
-      children: [!X && (true === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
+      children: [!Q && (true === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
         src: L,
         alt: D.intl.string(D.t.rIbh8H),
         className: o()(x.thumbnail, {
           [x.spoiler]: V.shouldSpoiler
         }),
         onContextMenu: Y,
-        onError: () => Q(true)
+        onError: () => X(true)
       }) : (0, r.jsx)(m.Z, {
         src: !eg && eh ? "".concat(em, "?format=png") : em,
         backgroundSrc: "".concat(em, "?format=png"),
@@ -165,7 +165,7 @@ function G(e) {
         }),
         imageChildClassName: x.thumbnailImage,
         onContextMenu: Y,
-        onError: () => Q(true)
+        onError: () => X(true)
       })), null != V.coverImageOverlayText && (0, r.jsx)(u.P3F, {
         onClick: eu,
         children: (0, r.jsx)("div", {

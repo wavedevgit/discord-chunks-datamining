@@ -52,7 +52,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk729755 = require("./729755.js");
-let Q = [],
+let X = [],
   J = 4,
   $ = 4,
   ee = 6,
@@ -91,14 +91,14 @@ function ea(e) {
   }, [n]);
   let P = a.length > 0;
   return (0, r.jsxs)("div", {
-    className: X.container,
+    className: Q.container,
     children: [N ? (0, r.jsx)(eo, {}) : null, (0, r.jsx)(es, {
       searchQuery: a,
       setSearchQuery: o,
       placeholder: p ? q.intl.string(q.t.ziyFv2) : q.intl.string(q.t["pw+r5b"])
     }), (0, r.jsx)(m.Ttm, {
       ref: s,
-      className: X.scrollableContent,
+      className: Q.scrollableContent,
       fade: true,
       children: P ? (0, r.jsx)(Y.Z, {
         context: t,
@@ -176,7 +176,7 @@ function es(e) {
       e.removeEventListener("click", t)
     }
   }, [l, f]), (0, r.jsx)("div", {
-    className: X.searchBarContainer,
+    className: Q.searchBarContainer,
     children: (0, r.jsx)(m.E1j, {
       ref: s,
       placeholder: a,
@@ -253,9 +253,9 @@ function ec(e) {
       buttonType: V.Z.buttonTypes.VIEW_MORE,
       onClickViewButton: p
     }), (0, r.jsx)("div", {
-      className: X.sectionContentContainer,
+      className: Q.sectionContentContainer,
       children: (0, r.jsx)("div", {
-        className: X.frecentList,
+        className: Q.frecentList,
         children: f.map((e, n) => {
           let {
             application: i
@@ -314,7 +314,7 @@ function eu(e) {
         title: q.intl.string(q.t.shUONg)
       })
     }), (0, r.jsx)("div", {
-      className: X.sectionTwoColumnContentContainer,
+      className: Q.sectionTwoColumnContentContainer,
       children: o.map((e, t) => {
         let {
           application: i
@@ -373,7 +373,7 @@ function ed(e) {
         onClickViewButton: c
       })
     }), (0, r.jsx)("div", {
-      className: X.sectionRowsContentContainer,
+      className: Q.sectionRowsContentContainer,
       children: s ? en.map(e => (0, r.jsx)(Z.Z, {
         look: G.U4.ROW
       }, e)) : l.map((e, n) => {
@@ -418,7 +418,7 @@ function ef(e) {
     } = e;
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(V.Z.Loading, {}), (0, r.jsx)("div", {
-        className: i === G.U4.ROW ? X.sectionRowsContentContainer : X.sectionTwoColumnContentContainer,
+        className: i === G.U4.ROW ? Q.sectionRowsContentContainer : Q.sectionTwoColumnContentContainer,
         children: n.map(e => (0, r.jsx)(Z.Z, {
           look: i
         }, e))
@@ -513,7 +513,7 @@ function ep(e) {
         onClickViewButton: b
       })
     }), (0, r.jsx)("div", {
-      className: t === G.U4.ROW ? X.sectionRowsContentContainer : X.sectionTwoColumnContentContainer,
+      className: t === G.U4.ROW ? Q.sectionRowsContentContainer : Q.sectionTwoColumnContentContainer,
       children: E.map((e, n) => {
         let i, {
           collectionItemId: a,
@@ -611,7 +611,7 @@ function eg(e) {
     guildId: "channel" === n.type ? null == (t = n.channel) ? true : t.getGuildId() : true
   });
   return i.useMemo(() => {
-    if (!r.some(e => (0, p.yE)(e.flags, l.b.APPENDS_REMAINING_ACTIVITIES))) return Q;
+    if (!r.some(e => (0, p.yE)(e.flags, l.b.APPENDS_REMAINING_ACTIVITIES))) return X;
     let e = new Set;
     return r.forEach(t => {
       t.application_directory_collection_items.forEach(t => {

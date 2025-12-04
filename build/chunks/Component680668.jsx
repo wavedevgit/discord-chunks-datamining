@@ -75,8 +75,8 @@ function I(e) {
       analyticsLocations: K
     } = (0, d.ZP)(u.Z.INVITE_EMBED),
     [z, q] = i.useState(false),
-    X = i.useCallback(() => q(false), []),
-    Q = i.useRef(null),
+    Q = i.useCallback(() => q(false), []),
+    X = i.useRef(null),
     J = i.useCallback(() => {
       q(true), (0, c.CB)(W, "show profile", K)
     }, [W, K]),
@@ -107,11 +107,11 @@ function I(e) {
       guildId: R.id,
       name: R.name,
       shouldShow: z,
-      onRequestClose: X,
-      targetElementRef: Q,
+      onRequestClose: Q,
+      targetElementRef: X,
       children: () => (0, r.jsx)(_.Z.GuildName, {
         guild: R,
-        ref: Q
+        ref: X
       })
     }), (0, r.jsx)("span", {
       className: O.infoBadge,

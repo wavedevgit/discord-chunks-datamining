@@ -148,8 +148,8 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
       paymentsBlocked: eK,
       isEligibleForQuests: ez,
       isStricterMessageRequestsEnabled: eq,
-      hasLibraryApplication: eX,
-      hasTOTPEnabled: eQ,
+      hasLibraryApplication: eQ,
+      hasTOTPEnabled: eX,
       developerMode: eJ,
       isAdultUser: e$,
       hasSecureFramesVerifiedUserIds: e0,
@@ -178,7 +178,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [eR.intl.string(eR.t["JAIM/m"])],
         label: eR.intl.string(eR.t["JAIM/m"]),
         ariaLabel: eR.intl.string(eR.t["JAIM/m"]),
-        element: X.Z,
+        element: Q.Z,
         url: eN.Z5c.SETTINGS("account")
       },
       [eA.s6.ACCOUNT_PROFILE]: {
@@ -236,13 +236,13 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [eR.intl.string(eR.t.cDgKte)],
         section: eN.oAB.ACCOUNT,
         parent: eA.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => !eQ
+        predicate: () => !eX
       },
       [eA.s6.ACCOUNT_REMOVE_2FA]: {
         searchableTitles: [eR.intl.string(eR.t["D+aE7g"])],
         section: eN.oAB.ACCOUNT,
         parent: eA.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-        predicate: () => eQ
+        predicate: () => eX
       },
       [eA.s6.ACCOUNT_VIEW_BACKUP_CODES]: {
         searchableTitles: [eR.intl.string(eR.t.fZSi1D)],
@@ -1526,7 +1526,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eN.oAB.ADVANCED,
         searchableTitles: [eR.intl.string(eR.t.fi3UQN)],
         parent: eA.s6.SETTINGS_ADVANCED,
-        predicate: () => eX
+        predicate: () => eQ
       },
       [eA.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE]: {
         section: eN.oAB.ADVANCED,
@@ -1554,7 +1554,7 @@ let ej = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [eR.intl.string(eR.t.Cq98yL)],
         label: eR.intl.string(eR.t.Cq98yL),
         ariaLabel: eR.intl.string(eR.t.Cq98yL),
-        element: Q.Z,
+        element: X.Z,
         predicate: () => !eV,
         url: eN.Z5c.SETTINGS("activity-privacy")
       },

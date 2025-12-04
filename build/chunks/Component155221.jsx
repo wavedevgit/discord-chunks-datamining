@@ -154,12 +154,12 @@ let L = (0, Chunk663993.Un)({
     webpackId: 430075,
     name: "SuspendedUserSafetyHubPage"
   }),
-  X = (0, Chunk663993.Un)({
+  Q = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("72868"), require.e("10125")]).then(require.bind(require, 630107)),
     webpackId: 630107,
     name: "QuestsLandingPage"
   }),
-  Q = (0, Chunk663993.Un)({
+  X = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("72868"), require.e("41734")]).then(require.bind(require, 792459)),
     webpackId: 792459,
     name: "QuestPreviewLandingPage"
@@ -252,7 +252,7 @@ class ei extends Chunk473749.Component {
         to: Chunk981631.Z5c.LOGIN
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.QUESTS(":questId"),
-        component: X,
+        component: Q,
         impressionName: Chunk990547.ImpressionNames.QUESTS_LANDING_PAGE,
         impressionProperties: e => {
           let {
@@ -264,7 +264,7 @@ class ei extends Chunk473749.Component {
         }
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.QUEST_PREVIEW(":questId"),
-        component: Q
+        component: X
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.HANDOFF,
         component: W

@@ -146,7 +146,7 @@ function q(e, t) {
   }
 }
 
-function X(e) {
+function Q(e) {
   var t, n;
   let {
     userId: r,
@@ -206,7 +206,7 @@ function X(e) {
   return L
 }
 
-function Q(e) {
+function X(e) {
   M ? M = false : (w = {}, D = {}), j = {}, $(e)
 }
 
@@ -293,7 +293,7 @@ function ea(e) {
   if (null == g) returnfalse;
   let E = I.Z.getGuild(n);
   if (null == E) return R.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), false;
-  g[r.id] = X({
+  g[r.id] = Q({
     userId: r.id,
     nick: i,
     guildId: n,
@@ -353,7 +353,7 @@ function el(e) {
   if (null == r) returnfalse;
   let i = I.Z.getGuild(n);
   if (null == i) return R.warn("Guild ".concat(n, " not found during GUILD_MEMBER_UPDATE.")), false;
-  r[t.user.id] = X({
+  r[t.user.id] = Q({
     userId: t.user.id,
     nick: t.nick,
     guildId: n,
@@ -429,7 +429,7 @@ function em(e, t) {
   return null == r ? (R.warn("Guild ".concat(e, " not found during batchUpdateGuildMembers.")), false) : (t.forEach(t => {
     var i;
     let a = n[t.user.id];
-    n[t.user.id] = X({
+    n[t.user.id] = Q({
       userId: t.user.id,
       nick: t.nick,
       guildId: e,
@@ -513,7 +513,7 @@ function eS(e) {
     var i;
     let o = a.user.id,
       s = r[o],
-      l = X({
+      l = Q({
         userId: o,
         nick: a.nick,
         guildId: e.id,
@@ -553,7 +553,7 @@ function eT(e) {
     let a = t[i];
     if (null != a.roles && a.roles.length > 0 || null != a.colorString || null != a.hoistRoleId) {
       let o = i === r && "GUILD_ROLE_DELETE" === e.type ? a.roles.filter(t => t !== e.roleId) : a.roles;
-      t[i] = X({
+      t[i] = Q({
         userId: i,
         nick: a.nick,
         guildId: e.guildId,
@@ -589,7 +589,7 @@ function eA(e) {
   Z[i] = {
     added: a().difference(a().union(null != (n = _.added) ? n : [], s), null != l ? l : []),
     removed: a().difference(a().union(null != (r = _.removed) ? r : [], l), null != s ? s : [])
-  }, d[u] = X({
+  }, d[u] = Q({
     userId: u,
     guildId: i,
     nick: f.nick,
@@ -624,7 +624,7 @@ function eN(e) {
   if (null == r) return R.warn("Guild ".concat(t, " not found during IMPERSONATE_UPDATE.")), false;
   let i = O.default.getId(),
     a = n[i];
-  n[i] = X({
+  n[i] = Q({
     userId: i,
     nick: a.nick,
     guildId: t,
@@ -839,7 +839,7 @@ class eU extends(r = Chunk442837.ZP.Store) {
 }
 A(eU, "displayName", "GuildMemberStore");
 let eG = new eU(Chunk570140.Z, {
-  CONNECTION_OPEN: Q,
+  CONNECTION_OPEN: X,
   CONNECTION_OPEN_SUPPLEMENTAL: J,
   OVERLAY_INITIALIZE: ee,
   CACHE_LOADED: et,

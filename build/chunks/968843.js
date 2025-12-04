@@ -7,7 +7,7 @@ require.d(exports, {
   B6: () => eA,
   Fy: () => eM,
   GI: () => eZ,
-  Gd: () => eQ,
+  Gd: () => eX,
   I: () => eY,
   J2: () => en,
   Jf: () => ex,
@@ -31,7 +31,7 @@ require.d(exports, {
   kJ: () => eU,
   m4: () => e6,
   me: () => eK,
-  qI: () => eX,
+  qI: () => eQ,
   qb: () => ez,
   tP: () => eI,
   tR: () => ey,
@@ -515,8 +515,8 @@ function eG() {
     xboxAndPlaystationAccounts: a
   } = Chunk473749.useMemo(() => {
     let e = exports.filter(e => false === e.revoked),
-      n = module.filter(e => e.type === X.ABu.XBOX),
-      r = module.filter(e => e.type === X.ABu.PLAYSTATION),
+      n = module.filter(e => e.type === Q.ABu.XBOX),
+      r = module.filter(e => e.type === Q.ABu.PLAYSTATION),
       i = require.concat(Chunk473749);
     return {
       xboxAccounts: require,
@@ -691,7 +691,7 @@ function eq(e) {
   return null != (t = (0, c.e7)([L.Z], () => L.Z.quests).get(e)) ? t : null
 }
 
-function eX(e) {
+function eQ(e) {
   let {
     mode: t,
     questContent: n,
@@ -719,12 +719,12 @@ function eX(e) {
   }, [a, n, i])
 }
 
-function eQ(e, t) {
+function eX(e, t) {
   let n = (0, c.e7)([L.Z], () => L.Z.getQuest(e), [e]),
     i = (0, u.ZP)();
   return r.useMemo(() => {
     if (null == n) return null;
-    let e = null != t ? t : (0, l.wj)(i) ? X.BRd.DARK : X.BRd.LIGHT;
+    let e = null != t ? t : (0, l.wj)(i) ? Q.BRd.DARK : Q.BRd.LIGHT;
     return (0, Z.fh)(n, Z.eC.COSPONSOR_LOGO_TYPE, e)
   }, [i, t, n])
 }
@@ -776,10 +776,10 @@ function e$(e) {
     launchInGameActivity: r.useCallback(() => {
       null != i && (null != t && t.applicationId === i || null != n && n.applicationId === i ? null != n ? h.Z.updateFrameLayoutMode({
         applicationId: n.applicationId,
-        layoutMode: Q.U.FOCUSED
+        layoutMode: X.U.FOCUSED
       }) : null != t && (0, f.Z)("guild_id" in t.location ? t.location.guild_id : null, t.location) : o ? h.Z.launchFrame({
         applicationId: i
-      }) : (0, b.uL)(X.Z5c.ACTIVITY_DETAILS(i)))
+      }) : (0, b.uL)(Q.Z5c.ACTIVITY_DETAILS(i)))
     }, [i, t, n, o])
   }
 }
@@ -828,14 +828,14 @@ function e8(e) {
     numQuestsVisible: i
   } = e, a = r.useRef(null), o = r.useRef(null);
   r.useEffect(() => {
-    I.default.track(X.rMx.QUEST_HOME_SORT_METHOD_CHANGED, {
+    I.default.track(Q.rMx.QUEST_HOME_SORT_METHOD_CHANGED, {
       sort_method: t,
       previous_sort_method: a.current
     }), a.current = t
   }, [t]), r.useEffect(() => {
     var e;
     let t = n.map(e => e.filter);
-    I.default.track(X.rMx.QUEST_HOME_FILTERS_CHANGED, {
+    I.default.track(Q.rMx.QUEST_HOME_FILTERS_CHANGED, {
       filters: t,
       previous_filters: null != (e = o.current) ? e : [],
       num_quests_visible: i

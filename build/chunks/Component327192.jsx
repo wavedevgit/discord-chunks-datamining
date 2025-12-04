@@ -146,15 +146,15 @@ function q(e) {
     account: n,
     theme: a,
     locale: l
-  } = e, [c, _] = i.useState(n.friendSync), [h, g] = i.useState(n.visibility), [E, I] = i.useState(n.metadataVisibility), [T, C] = i.useState(n.showActivity), [N, P] = i.useState(null), [R, D] = i.useState(null), [M, B] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), X = b.Z.get(q);
+  } = e, [c, _] = i.useState(n.friendSync), [h, g] = i.useState(n.visibility), [E, I] = i.useState(n.metadataVisibility), [T, C] = i.useState(n.showActivity), [N, P] = i.useState(null), [R, D] = i.useState(null), [M, B] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), Q = b.Z.get(q);
   i.useEffect(() => {
     _(n.friendSync), g(n.visibility), I(n.metadataVisibility), C(n.showActivity)
   }, [n]);
-  let Q = {
+  let X = {
       inProgressVisibility: N,
       inProgressMetadataVisibility: R
     },
-    J = i.useRef(Q);
+    J = i.useRef(X);
 
   function $(e) {
     var t;
@@ -407,7 +407,7 @@ function q(e) {
     C(e), m.Z.setShowActivity(n.type, n.id, e)
   }
   i.useEffect(() => {
-    J.current = Q
+    J.current = X
   }), i.useEffect(() => {
     if (false === n.verified) return;
     let {
@@ -421,11 +421,11 @@ function q(e) {
     className: o()(V.connection, {
       [V.connectionUserSettingsRedesign]: ed
     }),
-    children: [$(n), ee(n), et(n), en(X), ei(), er()]
+    children: [$(n), ee(n), et(n), en(Q), ei(), er()]
   })
 }
 
-function X() {
+function Q() {
   return Chunk473749.useEffect(() => () => {
     (0, Chunk266454.Q3)(Chunk704215.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: Chunk921944.L.AUTO
@@ -439,7 +439,7 @@ function X() {
   })
 }
 
-function Q(e) {
+function X(e) {
   let t = b.Z.get(e);
   (0, v.Z)({
     platformType: t.type
@@ -454,7 +454,7 @@ function J() {
   function e() {
     Chunk570140.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
-      onComplete: Q
+      onComplete: X
     })
   }
   let t = (0, Chunk122021.fq)();
@@ -529,7 +529,7 @@ let ee = () => {
     Chunk457330.Z.fetch()
   }, []), module) ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsxs)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
-    children: [(0, Chunk54381.jsx)(X, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {
+    children: [(0, Chunk54381.jsx)(Q, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {
       gap: 24
     }), (0, Chunk54381.jsx)($, {
       fetching: exports,

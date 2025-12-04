@@ -78,7 +78,7 @@ function U(e) {
     quest: Z,
     questContent: b.jn.MEMBERS_LIST,
     sourceQuestContent: b.jn.MEMBERS_LIST
-  }), X = (null == Z || null == (t = Z.userStatus) ? true : t.claimedAt) != null, Q = (null == Z || null == (I = Z.userStatus) ? true : I.enrolledAt) != null, J = (null == Z || null == (x = Z.userStatus) ? true : x.completedAt) != null, $ = (0, s.e7)([h.Z], () => h.Z.getState().theme), ee = (0, c.wj)($) ? R.BR.DARK : R.BR.LIGHT, et = (0, s.e7)([_.Z], () => _.Z.useReducedMotion), {
+  }), Q = (null == Z || null == (t = Z.userStatus) ? true : t.claimedAt) != null, X = (null == Z || null == (I = Z.userStatus) ? true : I.enrolledAt) != null, J = (null == Z || null == (x = Z.userStatus) ? true : x.completedAt) != null, $ = (0, s.e7)([h.Z], () => h.Z.getState().theme), ee = (0, c.wj)($) ? R.BR.DARK : R.BR.LIGHT, et = (0, s.e7)([_.Z], () => _.Z.useReducedMotion), {
     ref: en,
     height: er
   } = (0, p.ZP)(), [ei, ea] = i.useState(et), eo = (0, m.Aq)(), es = (0, o.eg)();
@@ -179,13 +179,13 @@ function U(e) {
       quest: Z
     }),
     eg = (() => {
-      if (J && !X) return {
+      if (J && !Q) return {
         headerText: w.intl.string(w.t.gHerLS),
         ctaText: w.intl.string(w.t.cfY4PE),
         handleClickCta: q,
         tileAssetType: "reward"
       };
-      if (Q && !X) return {
+      if (X && !Q) return {
         headerText: w.intl.string(w.t.uH2sf2),
         ctaText: w.intl.string(w.t.VN1Ajl),
         handleClickCta: ep,

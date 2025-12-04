@@ -121,7 +121,7 @@
     this.next = e
   }
 
-  function X(e, t, n, r) {
+  function Q(e, t, n, r) {
     var i = 0 === e ? t : 1 === e ? n : [t, n];
     return r ? r.value = i : r = {
       value: i,
@@ -129,7 +129,7 @@
     }, r
   }
 
-  function Q() {
+  function X() {
     return {
       value: true,
       done: true
@@ -276,7 +276,7 @@
         o = 0;
       return new q(function() {
         var e = i[n ? a - o : o];
-        return o++ > a ? Q() : X(t, r ? e[0] : o - 1, e[1])
+        return o++ > a ? X() : Q(t, r ? e[0] : o - 1, e[1])
       })
     }
     return e.__iteratorUncached(t, n)
@@ -380,7 +380,7 @@
       r = n.length - 1,
       i = 0;
     return new q(function() {
-      return i > r ? Q() : X(e, i, n[t ? r - i++ : i++])
+      return i > r ? X() : Q(e, i, n[t ? r - i++ : i++])
     })
   }, d(ec, ei), ec.prototype.get = function(e, t) {
     return true === t || this.has(e) ? this._object[e] : t
@@ -399,7 +399,7 @@
       a = 0;
     return new q(function() {
       var o = r[t ? i - a : a];
-      return a++ > i ? Q() : X(e, o, n[o])
+      return a++ > i ? X() : Q(e, o, n[o])
     })
   }, ec.prototype[I] = true, d(eu, ea), eu.prototype.__iterateUncached = function(e, t) {
     if (t) return this.cacheResult().__iterate(e, t);
@@ -411,11 +411,11 @@
   }, eu.prototype.__iteratorUncached = function(e, t) {
     if (t) return this.cacheResult().__iterator(e, t);
     var n = ee(this._iterable);
-    if (!$(n)) return new q(Q);
+    if (!$(n)) return new q(X);
     var r = 0;
     return new q(function() {
       var t = n.next();
-      return t.done ? t : X(e, r++, t.value)
+      return t.done ? t : Q(e, r++, t.value)
     })
   }, d(ed, ea), ed.prototype.__iterateUncached = function(e, t) {
     if (t) return this.cacheResult().__iterate(e, t);
@@ -437,7 +437,7 @@
         if (t.done) return t;
         r[i] = t.value
       }
-      return X(e, i, r[i++])
+      return Q(e, i, r[i++])
     })
   }, d(eA, ea), eA.prototype.toString = function() {
     return 0 === this.size ? "Repeat []" : "Repeat [ " + this._value + " " + this.size + " times ]"
@@ -462,7 +462,7 @@
     var n = this,
       r = 0;
     return new q(function() {
-      return r < n.size ? X(e, r++, n._value) : Q()
+      return r < n.size ? Q(e, r++, n._value) : X()
     })
   }, eA.prototype.equals = function(e) {
     return e instanceof eA ? eI(this._value, e._value) : eT(e)
@@ -497,7 +497,7 @@
       a = 0;
     return new q(function() {
       var o = i;
-      return i += t ? -r : r, a > n ? Q() : X(e, a++, o)
+      return i += t ? -r : r, a > n ? X() : Q(e, a++, o)
     })
   }, eN.prototype.equals = function(e) {
     return e instanceof eN ? this._start === e._start && this._end === e._end && this._step === e._step : eT(this, e)
@@ -587,8 +587,8 @@
     eC(e !== 1 / 0, "Cannot perform this action with an infinite size.")
   }
 
-  function eX(e) {
-    return null == e ? e9() : eQ(e) && !y(e) ? e : e9().withMutations(function(t) {
+  function eQ(e) {
+    return null == e ? e9() : eX(e) && !y(e) ? e : e9().withMutations(function(t) {
       var n = p(e);
       eq(n.size), n.forEach(function(e, n) {
         return t.set(n, e)
@@ -596,79 +596,79 @@
     })
   }
 
-  function eQ(e) {
+  function eX(e) {
     return !!(e && e[eJ])
   }
-  d(eX, eR), eX.prototype.toString = function() {
+  d(eQ, eR), eQ.prototype.toString = function() {
     return this.__toString("Map {", "}")
-  }, eX.prototype.get = function(e, t) {
+  }, eQ.prototype.get = function(e, t) {
     return this._root ? this._root.get(0, true, e, t) : t
-  }, eX.prototype.set = function(e, t) {
+  }, eQ.prototype.set = function(e, t) {
     return te(this, e, t)
-  }, eX.prototype.setIn = function(e, t) {
+  }, eQ.prototype.setIn = function(e, t) {
     return this.updateIn(e, P, function() {
       return t
     })
-  }, eX.prototype.remove = function(e) {
+  }, eQ.prototype.remove = function(e) {
     return te(this, e, P)
-  }, eX.prototype.deleteIn = function(e) {
+  }, eQ.prototype.deleteIn = function(e) {
     return this.updateIn(e, function() {
       return P
     })
-  }, eX.prototype.update = function(e, t, n) {
+  }, eQ.prototype.update = function(e, t, n) {
     return 1 == arguments.length ? e(this) : this.updateIn([e], t, n)
-  }, eX.prototype.updateIn = function(e, t, n) {
+  }, eQ.prototype.updateIn = function(e, t, n) {
     n || (n = t, t = true);
     var r = td(this, ni(e), t, n);
     return r === P ? true : r
-  }, eX.prototype.clear = function() {
+  }, eQ.prototype.clear = function() {
     return 0 === this.size ? this : this.__ownerID ? (this.size = 0, this._root = null, this.__hash = true, this.__altered = true, this) : e9()
-  }, eX.prototype.merge = function() {
+  }, eQ.prototype.merge = function() {
     return ts(this, true, arguments)
-  }, eX.prototype.mergeWith = function(e) {
+  }, eQ.prototype.mergeWith = function(e) {
     var t = u.call(arguments, 1);
     return ts(this, e, t)
-  }, eX.prototype.mergeIn = function(e) {
+  }, eQ.prototype.mergeIn = function(e) {
     var t = u.call(arguments, 1);
     return this.updateIn(e, e9(), function(e) {
       return "function" == typeof e.merge ? e.merge.apply(e, t) : t[t.length - 1]
     })
-  }, eX.prototype.mergeDeep = function() {
+  }, eQ.prototype.mergeDeep = function() {
     return ts(this, tl, arguments)
-  }, eX.prototype.mergeDeepWith = function(e) {
+  }, eQ.prototype.mergeDeepWith = function(e) {
     var t = u.call(arguments, 1);
     return ts(this, tc(e), t)
-  }, eX.prototype.mergeDeepIn = function(e) {
+  }, eQ.prototype.mergeDeepIn = function(e) {
     var t = u.call(arguments, 1);
     return this.updateIn(e, e9(), function(e) {
       return "function" == typeof e.mergeDeep ? e.mergeDeep.apply(e, t) : t[t.length - 1]
     })
-  }, eX.prototype.sort = function(e) {
+  }, eQ.prototype.sort = function(e) {
     return tj(t2(this, e))
-  }, eX.prototype.sortBy = function(e, t) {
+  }, eQ.prototype.sortBy = function(e, t) {
     return tj(t2(this, t, e))
-  }, eX.prototype.withMutations = function(e) {
+  }, eQ.prototype.withMutations = function(e) {
     var t = this.asMutable();
     return e(t), t.wasAltered() ? t.__ensureOwner(this.__ownerID) : this
-  }, eX.prototype.asMutable = function() {
+  }, eQ.prototype.asMutable = function() {
     return this.__ownerID ? this : this.__ensureOwner(new L)
-  }, eX.prototype.asImmutable = function() {
+  }, eQ.prototype.asImmutable = function() {
     return this.__ensureOwner()
-  }, eX.prototype.wasAltered = function() {
+  }, eQ.prototype.wasAltered = function() {
     return this.__altered
-  }, eX.prototype.__iterator = function(e, t) {
+  }, eQ.prototype.__iterator = function(e, t) {
     return new e5(this, e, t)
-  }, eX.prototype.__iterate = function(e, t) {
+  }, eQ.prototype.__iterate = function(e, t) {
     var n = this,
       r = 0;
     return this._root && this._root.iterate(function(t) {
       return r++, e(t[1], t[0], n)
     }, t), r
-  }, eX.prototype.__ensureOwner = function(e) {
+  }, eQ.prototype.__ensureOwner = function(e) {
     return e === this.__ownerID ? this : e ? e7(this.size, this._root, e, this.__hash) : (this.__ownerID = e, this.__altered = false, this)
-  }, eX.isMap = eQ;
+  }, eQ.isMap = eX;
   var eJ = "@@__IMMUTABLE_MAP__@@",
-    e$ = eX.prototype;
+    e$ = eQ.prototype;
 
   function e0(e, t) {
     this.ownerID = e, this.entries = t
@@ -695,7 +695,7 @@
   }
 
   function e8(e, t) {
-    return X(e, t[0], t[1])
+    return Q(e, t[0], t[1])
   }
 
   function e6(e, t) {
@@ -950,7 +950,7 @@
       }
       t = this._stack = this._stack.__prev
     }
-    return Q()
+    return X()
   };
   var th = C / 4,
     tg = C / 2,
@@ -1027,7 +1027,7 @@
       r = tT(this, t);
     return new q(function() {
       var t = r();
-      return t === tI ? Q() : X(e, n++, t)
+      return t === tI ? X() : Q(e, n++, t)
     })
   }, tb.prototype.__iterate = function(e, t) {
     for (var n, r = 0, i = tT(this, t);
@@ -1215,7 +1215,7 @@
   }
 
   function tM(e) {
-    return eQ(e) && y(e)
+    return eX(e) && y(e)
   }
 
   function tk(e, t, n, r) {
@@ -1315,7 +1315,7 @@
         if (i.done) return i;
         var o = i.value,
           s = o[0];
-        return X(r, s, t.call(n, o[1], s, e), i)
+        return Q(r, s, t.call(n, o[1], s, e), i)
       })
     }, r
   }
@@ -1369,14 +1369,14 @@
           var l = a.value,
             c = l[0],
             u = l[1];
-          if (t.call(n, u, c, e)) return X(i, r ? c : s++, u, a)
+          if (t.call(n, u, c, e)) return Q(i, r ? c : s++, u, a)
         }
       })
     }, i
   }
 
   function tz(e, t, n) {
-    var r = eX().asMutable();
+    var r = eQ().asMutable();
     return e.__iterate(function(i, a) {
       r.update(t.call(n, i, a, e), 0, function(e) {
         return e + 1
@@ -1386,7 +1386,7 @@
 
   function tq(e, t, n) {
     var r = g(e),
-      i = (y(e) ? tj() : eX()).asMutable();
+      i = (y(e) ? tj() : eQ()).asMutable();
     e.__iterate(function(a, o) {
       i.update(t.call(n, a, o, e), function(e) {
         return (e = e || []).push(r ? [o, a] : a), e
@@ -1398,12 +1398,12 @@
     })
   }
 
-  function tX(e, t, n, r) {
+  function tQ(e, t, n, r) {
     var i, a = e.size;
     if (true !== t && (t |= 0), true !== n && (n |= 0), G(t, n, a)) return e;
     var o = Z(t, a),
       s = B(n, a);
-    if (o != o || s != s) return tX(e.toSeq().cacheResult(), t, n, r);
+    if (o != o || s != s) return tQ(e.toSeq().cacheResult(), t, n, r);
     var l = s - o;
     l == l && (i = l < 0 ? 0 : l);
     var c = nt(e);
@@ -1426,14 +1426,14 @@
         l = 0;
       return new q(function() {
         for (; s++ < o;) a.next();
-        if (++l > i) return Q();
+        if (++l > i) return X();
         var e = a.next();
-        return r || t === H ? e : t === V ? X(t, l - 1, true, e) : X(t, l - 1, e.value[1], e)
+        return r || t === H ? e : t === V ? Q(t, l - 1, true, e) : Q(t, l - 1, e.value[1], e)
       })
     }, c
   }
 
-  function tQ(e, t, n) {
+  function tX(e, t, n) {
     var r = nt(e);
     return r.__iterateUncached = function(r, i) {
       var a = this;
@@ -1448,13 +1448,13 @@
       var o = e.__iterator(Y, i),
         s = true;
       return new q(function() {
-        if (!s) return Q();
+        if (!s) return X();
         var e = o.next();
         if (e.done) return e;
         var i = e.value,
           l = i[0],
           c = i[1];
-        return t.call(n, c, l, a) ? r === Y ? e : X(r, l, c, e) : (s = false, Q())
+        return t.call(n, c, l, a) ? r === Y ? e : Q(r, l, c, e) : (s = false, X())
       })
     }, r
   }
@@ -1480,12 +1480,12 @@
         do {
           if ((e = s.next()).done)
             if (r || i === H) return e;
-            else if (i === V) return X(i, c++, true, e);
-          else return X(i, c++, e.value[1], e);
+            else if (i === V) return Q(i, c++, true, e);
+          else return Q(i, c++, e.value[1], e);
           var d = e.value;
           a = d[0], u = d[1], l && (l = t.call(n, u, a, o))
         } while (l);
-        return i === Y ? e : X(i, a, u, e)
+        return i === Y ? e : Q(i, a, u, e)
       })
     }, i
   }
@@ -1536,10 +1536,10 @@
             continue
           }
           var l = e.value;
-          if (r === Y && (l = l[1]), !((!t || o.length < t) && h(l))) return n ? e : X(r, s++, l, e);
+          if (r === Y && (l = l[1]), !((!t || o.length < t) && h(l))) return n ? e : Q(r, s++, l, e);
           o.push(a), a = l.__iterator(r, i)
         }
-        return Q()
+        return X()
       })
     }, r
   }
@@ -1563,7 +1563,7 @@
       var i, a = e.__iterator(H, r),
         o = 0;
       return new q(function() {
-        return (!i || o % 2) && (i = a.next()).done ? i : o % 2 ? X(n, o++, t) : X(n, o++, i.value, i)
+        return (!i || o % 2) && (i = a.next()).done ? i : o % 2 ? Q(n, o++, t) : Q(n, o++, i.value, i)
       })
     }, n
   }
@@ -1620,7 +1620,7 @@
           return e.next()
         })).some(function(e) {
           return e.done
-        })), o) ? Q() : X(e, a++, t.apply(null, n.map(function(e) {
+        })), o) ? X() : Q(e, a++, t.apply(null, n.map(function(e) {
           return e.value
         })))
       })
@@ -1673,12 +1673,12 @@
           var o = Object.keys(e);
           nc(i, o), i.size = o.length, i._name = t, i._keys = o, i._defaultValues = e
         }
-        this._map = eX(a)
+        this._map = eQ(a)
       },
       i = r.prototype = Object.create(no);
     return i.constructor = r, r
   }
-  d(tj, eX), tj.of = function() {
+  d(tj, eQ), tj.of = function() {
     return this(arguments)
   }, tj.prototype.toString = function() {
     return this.__toString("OrderedMap {", "}")
@@ -1736,7 +1736,7 @@
       r = t ? t9(this) : 0;
     return new q(function() {
       var i = n.next();
-      return i.done ? i : X(e, t ? --r : r++, i.value, i)
+      return i.done ? i : Q(e, t ? --r : r++, i.value, i)
     })
   }, tZ.prototype[I] = true, d(tB, ea), tB.prototype.includes = function(e) {
     return this._iter.includes(e)
@@ -1751,7 +1751,7 @@
       r = 0;
     return new q(function() {
       var t = n.next();
-      return t.done ? t : X(e, r++, t.value, t)
+      return t.done ? t : Q(e, r++, t.value, t)
     })
   }, d(tF, eo), tF.prototype.has = function(e) {
     return this._iter.includes(e)
@@ -1764,7 +1764,7 @@
     var n = this._iter.__iterator(H, t);
     return new q(function() {
       var t = n.next();
-      return t.done ? t : X(e, t.value, t.value, t)
+      return t.done ? t : Q(e, t.value, t.value, t)
     })
   }, d(tV, ei), tV.prototype.entrySeq = function() {
     return this._iter.toSeq()
@@ -1787,7 +1787,7 @@
         if (r) {
           t7(r);
           var i = h(r);
-          return X(e, i ? r.get(0) : r[0], i ? r.get(1) : r[1], t)
+          return Q(e, i ? r.get(0) : r[0], i ? r.get(1) : r[1], t)
         }
       }
     })
@@ -2054,9 +2054,9 @@
     return new q(function() {
       if (r) {
         var t = r.value;
-        return r = r.next, X(e, n++, t)
+        return r = r.next, Q(e, n++, t)
       }
-      return Q()
+      return X()
     })
   }, nS.isStack = nI;
   var nT = "@@__IMMUTABLE_STACK__@@",
@@ -2102,7 +2102,7 @@
       return new tZ(this, true)
     },
     toMap: function() {
-      return eX(this.toKeyedSeq())
+      return eQ(this.toKeyedSeq())
     },
     toObject: function() {
       eq(this.size);
@@ -2204,7 +2204,7 @@
       return t6(this, tW(this, true))
     },
     slice: function(e, t) {
-      return t6(this, tX(this, e, t, true))
+      return t6(this, tQ(this, e, t, true))
     },
     some: function(e, t) {
       return !this.every(nL(e), t)
@@ -2330,7 +2330,7 @@
       return t6(this, this.toSeq().reverse().take(e).reverse())
     },
     takeWhile: function(e, t) {
-      return t6(this, tQ(this, e, t))
+      return t6(this, tX(this, e, t))
     },
     takeUntil: function(e, t) {
       return this.takeWhile(nL(e), t)
@@ -2479,7 +2479,7 @@
       return t6(this, tW(this, false))
     },
     slice: function(e, t) {
-      return t6(this, tX(this, e, t, false))
+      return t6(this, tQ(this, e, t, false))
     },
     splice: function(e, t) {
       var n = arguments.length;
@@ -2543,7 +2543,7 @@
     Iterable: f,
     Seq: er,
     Collection: eP,
-    Map: eX,
+    Map: eQ,
     OrderedMap: tj,
     List: tb,
     Stack: nS,

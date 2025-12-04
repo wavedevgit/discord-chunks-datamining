@@ -97,13 +97,13 @@ let J = (0, Chunk663993.Un)({
             children: (0, r.jsxs)(f.JcV, {
               containerRef: G,
               children: [(0, r.jsx)(z.Co, {}), (0, r.jsx)(K.ZP, {}), (0, r.jsx)(c.OUJ, {}), (0, r.jsx)(L.Wu, {
-                appContext: X.IlC.APP,
+                appContext: Q.IlC.APP,
                 renderWindow: window,
                 children: (0, r.jsxs)(w.yP, {
                   children: [null != a ? (0, r.jsx)(ee, {}) : null, (0, r.jsxs)("div", {
-                    className: o()(Q.appAsidePanelWrapper, d && Q.mobileAppAsidePanelWrapper),
+                    className: o()(X.appAsidePanelWrapper, d && X.mobileAppAsidePanelWrapper),
                     children: [(0, r.jsx)(A.K, {}), (0, r.jsx)("div", {
-                      className: Q.notAppAsidePanel,
+                      className: X.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
                       children: (0, r.jsx)(T.m, {
                         children: (0, r.jsx)(x.OR, {
@@ -112,10 +112,10 @@ let J = (0, Chunk663993.Un)({
                             children: (0, r.jsx)(I.p, {
                               children: (0, r.jsxs)(M.ov, {
                                 children: [(0, r.jsx)("div", {
-                                  className: o()(d ? Q.mobileApp : Q.app),
+                                  className: o()(d ? X.mobileApp : X.app),
                                   children: t
                                 }), (0, r.jsx)(p.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(f.nKe, {}), (0, r.jsx)(Z.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(f.Ixi, {
-                                  appContext: X.IlC.APP
+                                  appContext: Q.IlC.APP
                                 }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(j.Z, {}), (0, r.jsx)(J, {}), (0, r.jsx)($, {}), (0, r.jsx)(k.Z, {})]
                               })
                             })

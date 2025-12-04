@@ -10,7 +10,7 @@ require.d(exports, {
   $Y6: () => th,
   $pe: () => to,
   A2N: () => rm,
-  ABu: () => tX,
+  ABu: () => tQ,
   ADE: () => np,
   AEg: () => nO,
   ANM: () => eI,
@@ -38,7 +38,7 @@ require.d(exports, {
   DZw: () => eN,
   E07: () => tv,
   EKQ: () => Chunk231338.EK,
-  EOG: () => nX,
+  EOG: () => nQ,
   ETv: () => Chunk231338.ET,
   EYA: () => tO,
   EkH: () => b,
@@ -85,14 +85,14 @@ require.d(exports, {
   LPv: () => tz,
   LYt: () => t_,
   Lg6: () => rh,
-  M7m: () => tQ,
+  M7m: () => tX,
   MAM: () => Chunk231338.MA,
   ME: () => ep,
   MUe: () => Chunk334431.MU,
   McO: () => rZ,
   NYc: () => Chunk231338.NY,
   NYg: () => nU,
-  N_j: () => nQ,
+  N_j: () => nX,
   NgX: () => O,
   O0b: () => nl,
   O0n: () => ei,
@@ -103,13 +103,13 @@ require.d(exports, {
   OL7: () => Chunk231338.OL,
   OMz: () => Chunk231338.OM,
   OSm: () => eW,
-  OYC: () => X,
+  OYC: () => Q,
   OcF: () => e8,
-  Odu: () => Q,
+  Odu: () => X,
   PEY: () => e0,
   PNu: () => ex,
   POd: () => rs,
-  PRK: () => eQ,
+  PRK: () => eX,
   PUi: () => nx,
   Pbq: () => t4,
   Plq: () => Chunk231338.Pl,
@@ -256,7 +256,7 @@ require.d(exports, {
   ldS: () => Chunk231338.ld,
   lds: () => eg,
   lxg: () => el,
-  mBz: () => eX,
+  mBz: () => eQ,
   mFx: () => ed,
   n8r: () => nH,
   nkL: () => nZ,
@@ -456,10 +456,10 @@ var Y = function(e) {
   q = function(e) {
     return e.ALWAYS = "ALWAYS", e.NEVER = "NEVER", e.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING", e
   }({}),
-  X = function(e) {
+  Q = function(e) {
     return e.ALWAYS = "ALWAYS", e.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING", e
   }({}),
-  Q = function(e) {
+  X = function(e) {
     return e.GUILDS = "GUILDS", e.VOICE = "VOICE", e.VIDEO = "VIDEO", e.VOICE_V3 = "VOICE_V3", e.TEXT = "TEXT", e.GUILDS_TEXT = "GUILDS_TEXT", e.GO_LIVE = "GO_LIVE", e.QUICK_ACTIONS = "QUICK_ACTIONS", e.NOTIFICATIONS = "NOTIFICATIONS", e.ACTIVITY = "ACTIVITY", e.FRIENDS = "FRIENDS", e.CLICK_ZONE_DEBUG = "CLICK_ZONE_DEBUG", e.PERFORMANCE_DEBUG = "PERFORMANCE_DEBUG", e
   }({}),
   J = function(e) {
@@ -1522,8 +1522,8 @@ let eN = 100,
   eK = 6 * Chunk70956.Z.Seconds.HOUR,
   ez = [0, 5, 10, 15, 30, Chunk70956.Z.Seconds.MINUTE, 2 * Chunk70956.Z.Seconds.MINUTE, 5 * Chunk70956.Z.Seconds.MINUTE, 10 * Chunk70956.Z.Seconds.MINUTE, 15 * Chunk70956.Z.Seconds.MINUTE, 30 * Chunk70956.Z.Seconds.MINUTE, +Chunk70956.Z.Seconds.HOUR, 2 * Chunk70956.Z.Seconds.HOUR, eK],
   eq = 10,
-  eX = 0xa00000,
-  eQ = 524288e3,
+  eQ = 0xa00000,
+  eX = 524288e3,
   eJ = e => "||".concat(e, "||"),
   e$ = /^\|\|([\s\S]+?)\|\|/,
   e0 = /^<id:(home|browse|customize|guide|linked-roles)(?::(\d+))?>/,
@@ -1791,10 +1791,10 @@ var tZ = function(e) {
     return e.TOGGLE_REACTION_POPOUT = "TOGGLE_REACTION_POPOUT", e.ANIMATE_CHAT_AVATAR = "ANIMATE_CHAT_AVATAR", e.VOICE_MESSAGE_SEND = "VOICE_MESSAGE_SEND", e
   }({});
 let tq = 50;
-var tX = function(e) {
+var tQ = function(e) {
     return e.TWITCH = "twitch", e.YOUTUBE = "youtube", e.SKYPE = "skype", e.STEAM = "steam", e.LEAGUE_OF_LEGENDS = "leagueoflegends", e.BATTLENET = "battlenet", e.BLUESKY = "bluesky", e.BUNGIE = "bungie", e.REDDIT = "reddit", e.TWITTER = "twitter", e.TWITTER_LEGACY = "twitter_legacy", e.SPOTIFY = "spotify", e.FACEBOOK = "facebook", e.XBOX = "xbox", e.SAMSUNG = "samsung", e.CONTACTS = "contacts", e.INSTAGRAM = "instagram", e.MASTODON = "mastodon", e.SOUNDCLOUD = "soundcloud", e.GITHUB = "github", e.PLAYSTATION = "playstation", e.PLAYSTATION_STAGING = "playstation-stg", e.EPIC_GAMES = "epicgames", e.RIOT_GAMES = "riotgames", e.ROBLOX = "roblox", e.PAYPAL = "paypal", e.EBAY = "ebay", e.TIKTOK = "tiktok", e.CRUNCHYROLL = "crunchyroll", e.DOMAIN = "domain", e.AMAZON_MUSIC = "amazon-music", e.META_QUEST_OR_HORIZON = "meta_quest_or_horizon", e
   }({}),
-  tQ = function(e) {
+  tX = function(e) {
     return e.DESKTOP = "desktop", e.XBOX = "xbox", e.SAMSUNG = "samsung", e.IOS = "ios", e.ANDROID = "android", e.EMBEDDED = "embedded", e.PS4 = "ps4", e.PS5 = "ps5", e.META_QUEST = "meta_quest", e
   }({}),
   tJ = function(e) {
@@ -1910,7 +1910,7 @@ var nO = function(e) {
     return e.THEATRE = "theatre", e.FULL_SCREEN = "full-screen", e.PIP = "pip", e.POPOUT = "popout", e.PORTRAIT = "portrait", e.LANDSCAPE = "landscape", e.MINIMIZED = "minimized", e
   }({}),
   nS = function(e) {
-    return e.USER_SETTINGS = "USER_SETTINGS", e.CHANNEL_SETTINGS = "CHANNEL_SETTINGS", e.GUILD_SETTINGS = "GUILD_SETTINGS", e.RTC_DEBUG = "RTC_DEBUG", e.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP", e.COMPONENT_PLAYGROUND = "COMPONENT_PLAYGROUND", e.CHECKPOINT = "CHECKPOINT", e
+    return e.USER_SETTINGS = "USER_SETTINGS", e.CHANNEL_SETTINGS = "CHANNEL_SETTINGS", e.GUILD_SETTINGS = "GUILD_SETTINGS", e.RTC_DEBUG = "RTC_DEBUG", e.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP", e.COMPONENT_PLAYGROUND = "COMPONENT_PLAYGROUND", e
   }({});
 let nI = Object.freeze({
   ALL: null,
@@ -2070,7 +2070,7 @@ var nW = function(e) {
   nq = function(e) {
     return e.DISCORD = "discord", e.STEAM = "steam", e.TWITCH = "twitch", e.UPLAY = "uplay", e.BATTLENET = "battlenet", e.ORIGIN = "origin", e.GOG = "gog", e.EPIC = "epic", e.NVIDIA_GDN_APP = "nvidia_gdn_app", e.ROBLOX = "roblox", e
   }({});
-let nX = Object.freeze({
+let nQ = Object.freeze({
     discord: "Discord",
     steam: "Steam",
     uplay: "Uplay",
@@ -2082,7 +2082,7 @@ let nX = Object.freeze({
     nvidia_gdn_app: "NVIDIA Cloud Gaming Application",
     roblox: "Roblox"
   }),
-  nQ = 6016,
+  nX = 6016,
   nJ = 3384;
 var n$ = function(e) {
     return e.USAGE_STATISTICS = "usage_statistics", e.PERSONALIZATION = "personalization", e

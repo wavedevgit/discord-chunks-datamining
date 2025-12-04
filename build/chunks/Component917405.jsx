@@ -1,7 +1,7 @@
 /** Chunk was on 60831 **/
 /** chunk id: 917405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -80,21 +80,21 @@ function C(e) {
   }, i))
 }
 
-function _(e) {
+function T(e) {
   let {
     quality: t,
     lastPing: n,
     state: r,
     className: y,
-    children: _,
-    channelId: T,
+    children: T,
+    channelId: _,
     childrenAsSubtitle: m,
     connectionStatusTextVariant: I,
     hasVideo: S
   } = e, b = i.useRef(null), v = r === h.hes.RTC_CONNECTED, x = i.useCallback(e => {
     var t, n;
     return (0, l.jsx)(f.Z, (t = E({}, e), n = n = {
-      channelId: T
+      channelId: _
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -105,7 +105,7 @@ function _(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
-  }, [T]), {
+  }, [_]), {
     connectionStatus: P,
     connectionStatusText: Z
   } = d.Z.getStatus(r, S);
@@ -146,13 +146,13 @@ function _(e) {
                   textVariant: I,
                   hasVideo: S,
                   className: N[P],
-                  hasConnectedChannel: null != T
+                  hasConnectedChannel: null != _
                 })
-              }), m ? _ : null]
+              }), m ? T : null]
             })]
           })
         }
       })
-    }), m ? null : _]
+    }), m ? null : T]
   })
 }

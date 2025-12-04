@@ -132,9 +132,9 @@ let V = Chunk473749.memo(function() {
             focusSectionProps: "TITLEBAR_FAST_TRAVEL" === K ? e : true
           }),
           trailing: (0, r.jsxs)(r.Fragment, {
-            children: [B && (0, r.jsx)(g.Z, {
+            children: [(0, r.jsx)(v.Z, {
               className: Q
-            }), (0, r.jsx)(v.Z, {
+            }), B && (0, r.jsx)(g.Z, {
               className: Q
             }), (0, r.jsx)(m.Z, {
               canShowReminder: true,

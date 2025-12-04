@@ -86,9 +86,9 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
   K = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_MARGIN_SMALL),
   z = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_DIMENSIONS),
   q = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_DIMENSIONS_SMALL),
-  X = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_PADDING),
-  Q = z + 2 * X,
-  J = q + 2 * X,
+  Q = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_PADDING),
+  X = z + 2 * Q,
+  J = q + 2 * Q,
   $ = 8,
   ee = 200,
   et = o()(Chunk217590.Iw, ee),
@@ -104,14 +104,14 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       location: B
     } = (0, d.O)(), {
       analyticsLocations: z
-    } = (0, p.ZP)(f.Z.STICKER_PICKER), q = (null == (a = (0, E.N)()) ? true : a.subscription_trial) != null, X = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, S.Q)(e => e.showPremiumUpsell), [ea, eo] = (0, m.Iu)(e => [e.searchQuery, e.isSearchSuggestion], s.X), es = i.useRef("");
+    } = (0, p.ZP)(f.Z.STICKER_PICKER), q = (null == (a = (0, E.N)()) ? true : a.subscription_trial) != null, Q = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, S.Q)(e => e.showPremiumUpsell), [ea, eo] = (0, m.Iu)(e => [e.searchQuery, e.isSearchSuggestion], s.X), es = i.useRef("");
     i.useImperativeHandle(t, () => ({
       onPickerOpen: eL
     }));
     let el = (0, A.Sd)(c),
       ec = 0 === el.filter(e => e.type !== N.Ih.EMPTY_GUILD_UPSELL).length,
       eu = (0, h.ep)({
-        gridWrapperRef: X,
+        gridWrapperRef: Q,
         containerWidth: o,
         showingEmptyState: ec,
         listPaddingLeft: H,
@@ -146,7 +146,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         listWidth: eu,
         listPaddingRight: Y,
         stickerNodeMargin: ev ? W : K,
-        stickerNodeWidth: ev ? Q : J
+        stickerNodeWidth: ev ? X : J
       }),
       eN = i.useCallback((e, t) => {
         let {
@@ -232,7 +232,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         onClose: G
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", F(Z({
-          ref: X,
+          ref: Q,
           className: U.listWrapper,
           id: M.Vr
         }, ew), {

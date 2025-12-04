@@ -57,8 +57,8 @@ function L(e) {
       setUpdatedSubscription: K,
       contextMetadata: z,
       currencies: q,
-      paymentSourceId: X,
-      paymentSources: Q,
+      paymentSourceId: Q,
+      paymentSources: X,
       priceOptions: J,
       purchaseError: $,
       purchasePreviewError: ee,
@@ -113,7 +113,7 @@ function L(e) {
         }
       })
     }, [L, K, e_, em]),
-    ej = (0, T.m)(Q, X),
+    ej = (0, T.m)(X, Q),
     eM = null != en && P.o4.has(en.id) && null != ej && !(0, c.aQ)(ej) ? Error(w.intl.string(w.t["2ik8ih"])) : null,
     ek = i.useRef(null),
     [eU, eG] = i.useState(null),
@@ -132,19 +132,19 @@ function L(e) {
     eK = eW || (eY ? eH && ed : ed),
     ez = (0, u.id)(en, ev, eT),
     eq = i.useCallback(() => eY ? void L(E.h8.SKU_SELECT) : eO ? void L(E.h8.ADD_PAYMENT_STEPS) : ez ? void L(E.h8.SELECT_FREE_SKU) : eW ? L(E.h8.GIFT_CUSTOMIZATION) : L(E.h8.PLAN_SELECT), [L, eY, eW, ez, eO]),
-    eX = false,
-    eQ = () => {
+    eQ = false,
+    eX = () => {
       L(E.h8.ADD_PAYMENT_STEPS)
     };
-  return ep === R.GZ.ONE_TIME ? (eX = null == ei && null != X || null != ee, a = (0, r.jsx)(I.Z, {
+  return ep === R.GZ.ONE_TIME ? (eQ = null == ei && null != Q || null != ee, a = (0, r.jsx)(I.Z, {
     hasLegalTermsFlash: eC,
     legalTermsNodeRef: ek,
     onPaymentSourceChange: e => eo(null != e ? e.id : null),
     handlePaymentSourceAdd: () => L(E.h8.ADD_PAYMENT_STEPS)
-  })) : (eX = null == eg || !ev && null != ej && ep === R.GZ.SUBSCRIPTION && eZ && !ej.canRedeemTrial(), null == W || eE || ev ? (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(p.Z, {
+  })) : (eQ = null == eg || !ev && null != ej && ep === R.GZ.SUBSCRIPTION && eZ && !ej.canRedeemTrial(), null == W || eE || ev ? (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(p.Z, {
     selectedPlanId: en.id,
     planGroup: U,
-    paymentSources: Q,
+    paymentSources: X,
     onPaymentSourceChange: e => eo(null != e ? e.id : null),
     priceOptions: J,
     currencies: q,
@@ -163,12 +163,12 @@ function L(e) {
     handleClose: Y
   })) : (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
     premiumSubscription: W,
-    paymentSources: Q,
+    paymentSources: X,
     priceOptions: J,
     onPaymentSourceChange: e => {
       eo(null != e ? e.id : null)
     },
-    onPaymentSourceAdd: eQ,
+    onPaymentSourceAdd: eX,
     planId: en.id,
     setHasAcceptedTerms: ef,
     legalTermsNodeRef: ek,
@@ -180,7 +180,7 @@ function L(e) {
     hasOpenInvoice: null != G,
     purchaseState: eu,
     handleClose: Y
-  }))), ey && (eX = true), (0, r.jsxs)(r.Fragment, {
+  }))), ey && (eQ = true), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(b.P, {
       giftMessage: eS
     }), !eV && (0, r.jsx)(A.Z, {
@@ -214,8 +214,8 @@ function L(e) {
         backButtonEligible: eK,
         metadata: ex,
         isTrial: eZ,
-        disablePurchase: eX,
-        onPaymentSourceAdd: eQ
+        disablePurchase: eQ,
+        onPaymentSourceAdd: eX
       })
     })]
   })

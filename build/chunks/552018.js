@@ -1240,16 +1240,16 @@ class K extends Chunk495852.C {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          a.iosVersion = X.internalBinaryRead(e, e.uint32(), n, a.iosVersion);
+          a.iosVersion = Q.internalBinaryRead(e, e.uint32(), n, a.iosVersion);
           break;
         case 2:
-          a.androidVersion = X.internalBinaryRead(e, e.uint32(), n, a.androidVersion);
+          a.androidVersion = Q.internalBinaryRead(e, e.uint32(), n, a.androidVersion);
           break;
         case 3:
-          a.webVersion = X.internalBinaryRead(e, e.uint32(), n, a.webVersion);
+          a.webVersion = Q.internalBinaryRead(e, e.uint32(), n, a.webVersion);
           break;
         case 4:
-          a.nativeVersion = X.internalBinaryRead(e, e.uint32(), n, a.nativeVersion);
+          a.nativeVersion = Q.internalBinaryRead(e, e.uint32(), n, a.nativeVersion);
           break;
         case 6:
           a.allowNonNativeWeb = e.bool();
@@ -1267,7 +1267,7 @@ class K extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.iosVersion && X.internalBinaryWrite(e.iosVersion, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.androidVersion && X.internalBinaryWrite(e.androidVersion, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.webVersion && X.internalBinaryWrite(e.webVersion, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.nativeVersion && X.internalBinaryWrite(e.nativeVersion, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), false !== e.allowNonNativeWeb && t.tag(6, r.TD.Varint).bool(e.allowNonNativeWeb), e.clientRequiredChanges && ei.internalBinaryWrite(e.clientRequiredChanges, t.tag(5, r.TD.LengthDelimited).fork(), n).join();
+    e.iosVersion && Q.internalBinaryWrite(e.iosVersion, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.androidVersion && Q.internalBinaryWrite(e.androidVersion, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.webVersion && Q.internalBinaryWrite(e.webVersion, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.nativeVersion && Q.internalBinaryWrite(e.nativeVersion, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), false !== e.allowNonNativeWeb && t.tag(6, r.TD.Varint).bool(e.allowNonNativeWeb), e.clientRequiredChanges && ei.internalBinaryWrite(e.clientRequiredChanges, t.tag(5, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -1276,22 +1276,22 @@ class K extends Chunk495852.C {
       no: 1,
       name: "ios_version",
       kind: "message",
-      T: () => X
+      T: () => Q
     }, {
       no: 2,
       name: "android_version",
       kind: "message",
-      T: () => X
+      T: () => Q
     }, {
       no: 3,
       name: "web_version",
       kind: "message",
-      T: () => X
+      T: () => Q
     }, {
       no: 4,
       name: "native_version",
       kind: "message",
-      T: () => X
+      T: () => Q
     }, {
       no: 6,
       name: "allow_non_native_web",
@@ -1359,8 +1359,8 @@ class q extends Chunk495852.C {
     }])
   }
 }
-let X = new q;
-class Q extends Chunk495852.C {
+let Q = new q;
+class X extends Chunk495852.C {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.C, {
@@ -1408,7 +1408,7 @@ class Q extends Chunk495852.C {
     }])
   }
 }
-let J = new Q;
+let J = new X;
 class $ extends Chunk495852.C {
   create(e) {
     let t = {

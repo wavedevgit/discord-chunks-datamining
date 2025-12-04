@@ -54,9 +54,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk903163 = require("./903163.js");
-let X = "app";
+let Q = "app";
 
-function Q(e) {
+function X(e) {
   let t, {
       subscription: n,
       renewalInvoicePreview: i,
@@ -117,7 +117,7 @@ function Q(e) {
       className: q.boostingDesktopAppBlurb,
       variant: "text-sm/normal",
       children: z.intl.format(d.tq ? z.t.uxYBEa : z.t.k6haR9, {
-        openAppHook: () => (0, b.Z)(X)
+        openAppHook: () => (0, b.Z)(Q)
       })
     })]
   })
@@ -306,7 +306,7 @@ function er(e) {
         paymentSource: i,
         busy: a,
         analyticsLocation: n
-      }), (0, r.jsx)(Q, {
+      }), (0, r.jsx)(X, {
         subscription: t,
         renewalInvoicePreview: h,
         fromStandaloneBillingPage: s,
@@ -412,9 +412,9 @@ function eo(e) {
   }), w = (0, V.x)(), D = null == s ? true : s.invalid, L = (0, f.e7)([N.default], () => {
     var e;
     return null == (e = N.default.getCurrentUser()) ? true : e.hasFreePremium()
-  }), k = u()(a.currentPeriodEnd), U = null != a.paymentSourceId, G = null != (t = null == P ? true : P.total) ? t : 0, Z = !U && G > 0 && (7 >= k.diff(u()(), "days") || a.status === Y.O0b.PAST_DUE) && !L && !a.isPurchasedExternally, B = D && a.status === Y.O0b.PAST_DUE && !L && !a.isPurchasedExternally, H = (0, j.U)(), W = !L && H, X = (null == a ? true : a.status) === Y.O0b.PAST_DUE, Q = X ? u()().diff(u()(a.currentPeriodStart), "days") : 0, [et] = (0, x.Ox)({
+  }), k = u()(a.currentPeriodEnd), U = null != a.paymentSourceId, G = null != (t = null == P ? true : P.total) ? t : 0, Z = !U && G > 0 && (7 >= k.diff(u()(), "days") || a.status === Y.O0b.PAST_DUE) && !L && !a.isPurchasedExternally, B = D && a.status === Y.O0b.PAST_DUE && !L && !a.isPurchasedExternally, H = (0, j.U)(), W = !L && H, Q = (null == a ? true : a.status) === Y.O0b.PAST_DUE, X = Q ? u()().diff(u()(a.currentPeriodStart), "days") : 0, [et] = (0, x.Ox)({
     subscriptionId: a.id,
-    preventFetch: !(W || X)
+    preventFetch: !(W || Q)
   });
   return null == A || null == P ? (0, r.jsx)(m.$jN, {}) : (null != a.renewalMutations && (a.renewalMutations.planId !== a.planId && !(0, C.Q0)(a.renewalMutations.planId) || a.hasExternalPlanChange) && (n = (0, r.jsx)(F.Z, {
     subscription: a,
@@ -425,7 +425,7 @@ function eo(e) {
     label: z.intl.string(z.t["/gs+Pz"]),
     description: z.intl.string(z.t.D8UpUo),
     children: [Z ? (0, r.jsx)(J, {}) : null, B ? (0, r.jsx)($, {}) : null, W && null != et ? (0, r.jsx)(ee, {
-      daysPastDue: Q,
+      daysPastDue: X,
       subscription: a,
       openInvoiceId: et.id
     }) : null, n, w && (0, r.jsx)(m.Wn, {

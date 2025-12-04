@@ -264,7 +264,7 @@ function q(e) {
   }
 }
 
-function X(e) {
+function Q(e) {
   let {
     streamKey: t
   } = e;
@@ -274,7 +274,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   L.hasClips = e.clips.length > 0, v = e.clips
 }
 
@@ -540,10 +540,10 @@ let ec = new el(Chunk570140.Z, {
     CLIPS_SAVE_CLIP_ERROR: B,
     CLIPS_SAVE_ANIMATION_END: Z,
     STREAM_START: q,
-    STREAM_STOP: X,
+    STREAM_STOP: Q,
     CLIPS_CLEAR_CLIPS_SESSION: $,
     CLIPS_CLEAR_NEW_CLIP_IDS: ee,
-    CLIPS_LOAD_DIRECTORY_SUCCESS: Q,
+    CLIPS_LOAD_DIRECTORY_SUCCESS: X,
     CLIPS_DELETE_CLIP: J,
     CLIPS_UPDATE_METADATA: k,
     RTC_CONNECTION_FLAGS: et,

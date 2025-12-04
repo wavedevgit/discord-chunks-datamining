@@ -93,7 +93,7 @@ function q(e) {
   } = e;
   return t && k.isPlatformEmbedded && !n
 }
-class X extends(r = Chunk473749.Component) {
+class Q extends(r = Chunk473749.Component) {
   componentDidMount() {
     let {
       guestWindow: e
@@ -173,7 +173,7 @@ class X extends(r = Chunk473749.Component) {
         children: (0, Chunk54381.jsx)(Chunk899663.Z, {
           children: (0, Chunk54381.jsxs)(Chunk481060.JcV, {
             containerRef: this.rootRef,
-            children: [(0, Chunk54381.jsx)(Q, {
+            children: [(0, Chunk54381.jsx)(X, {
               guestWindow: Chunk120356,
               className: Chunk512722,
               children: (0, Chunk54381.jsxs)(Chunk317381, {
@@ -222,10 +222,10 @@ class X extends(r = Chunk473749.Component) {
     })
   }
 }
-Y(X, "defaultProps", {
+Y(Q, "defaultProps", {
   withTitleBar: true
 });
-let Q = Chunk473749.forwardRef(function(e, t) {
+let X = Chunk473749.forwardRef(function(e, t) {
     let {
       guestWindow: n,
       className: r,
@@ -275,7 +275,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
     return null == r ? null : (0, i.jsx)(m.Sle, {
       children: (0, i.jsx)(S.Gt, {
         value: l,
-        children: (0, i.jsx)(X, z(W({
+        children: (0, i.jsx)(Q, z(W({
           ref: t
         }, e), {
           titleBarTheme: p,

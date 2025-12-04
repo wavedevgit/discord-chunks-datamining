@@ -145,7 +145,7 @@ function q(e) {
     planName: ef.name
   });
   let ey = null;
-  null != n && (ey = z ? (0, r.jsx)(X, {
+  null != n && (ey = z ? (0, r.jsx)(Q, {
     premiumSubscription: n,
     onInvoiceError: V,
     priceOptions: s,
@@ -155,7 +155,7 @@ function q(e) {
     onInvoiceError: V,
     priceOptions: s,
     preventFetch: eh
-  }) : (0, R.R4)(n, w, Y) ? (0, r.jsx)(Q, {
+  }) : (0, R.R4)(n, w, Y) ? (0, r.jsx)(X, {
     premiumSubscription: n,
     newPlan: ef,
     onInvoiceError: V,
@@ -262,7 +262,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   let {
     premiumSubscription: t,
     onInvoiceError: n,
@@ -294,7 +294,7 @@ function X(e) {
   }) : (0, r.jsx)(d.$jN, {})
 }
 
-function Q(e) {
+function X(e) {
   let t, {
       premiumSubscription: n,
       newPlan: a,

@@ -1,59 +1,149 @@
-/** Chunk was on 80448 **/
-/** chunk id: 515970, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 515970, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  pg: () => j
+  $t: () => M,
+  Jm: () => D,
+  _Z: () => L,
+  f7: () => k,
+  gq: () => x,
+  jA: () => j,
+  pg: () => w
 }), require("./388685.js"), require("./415506.js"), require("./781311.js");
 var Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  i = require.n(Chunk512722),
   Chunk544891 = require("./544891.js"),
-  Chunk570140 = require("./570140.js");
-require("./493683.js"), require("./904245.js");
-var Chunk812206 = require("./812206.js"),
-  Chunk339085 = require("./339085.js");
-require("./957730.js"), require("./987509.js");
-var Chunk752048 = require("./752048.js"),
-  Chunk598077 = require("./598077.js");
-require("./592125.js");
-var Chunk77498 = require("./77498.js"),
+  Chunk570140 = require("./570140.js"),
+  Chunk493683 = require("./493683.js"),
+  Chunk904245 = require("./904245.js"),
+  Chunk812206 = require("./812206.js"),
+  Chunk339085 = require("./339085.js"),
+  Chunk957730 = require("./957730.js"),
+  Chunk987509 = require("./987509.js"),
+  Chunk752048 = require("./752048.js"),
+  Chunk598077 = require("./598077.js"),
+  Chunk592125 = require("./592125.js"),
+  Chunk77498 = require("./77498.js"),
   Chunk165630 = require("./165630.js"),
   Chunk430824 = require("./430824.js"),
-  Chunk594174 = require("./594174.js");
-require("./626135.js"), require("./823379.js");
-var Chunk411198 = require("./411198.js"),
-  Chunk709054 = require("./709054.js");
+  Chunk594174 = require("./594174.js"),
+  Chunk626135 = require("./626135.js"),
+  Chunk823379 = require("./823379.js"),
+  Chunk411198 = require("./411198.js"),
+  Chunk709054 = require("./709054.js"),
+  Chunk612776 = require("./612776.js"),
+  Chunk981631 = require("./981631.js");
 
-function f(e) {
+function A(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = i
+    }))), r.forEach(function(t) {
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+function N(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function j() {
+
+function R() {
+  let e = Chunk752048.Z.getUserAffinities().slice(0, 4).map(e => b.default.getUser(e.otherUserId)).filter(e => null != e),
+    t = Chunk165630.Z.affinities.slice(0, 3).map(e => {
+      let t = E.Z.getGuild(e.guildId);
+      return i()(null != t, "Guild must exist"), {
+        guild: (0, v.yS)(P(C({}, t), {
+          features: [...t.features]
+        })),
+        numMessagesSent: 0x9e6ca8,
+        numVoiceMinutes: 409516.21576666617
+      }
+    }),
+    n = Chunk339085.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(0, 5).map(e => ({
+      id: e.id,
+      name: "surrogates" in e ? e.surrogates : e.name,
+      animated: e.animated
+    })),
+    r = Chunk812206.Z._getAllApplications().slice(0, 5).map(e => ({
+      game: {
+        id: e.id,
+        name: e.name,
+        icon: e.icon,
+        coverImageHash: e.coverImage
+      },
+      numDaysPlayed: 289
+    }));
+  return {
+    cardId: 1,
+    powerLevel: 0x9eb1f6,
+    powerLevelPercentile: 5,
+    messages: {
+      numMessagesSent: 0x9eb1f6,
+      numMessagesSentPercentile: 99.99,
+      topMonth: {
+        month: 8,
+        numMessagesSent: 0x9eb1f6
+      }
+    },
+    voice: {
+      totalVoiceMinutes: 2741198.975133333,
+      totalVoiceMinutesPercentile: 99.99,
+      topMonth: {
+        numMinutesInVoice: 2741198.975133333,
+        month: 8
+      }
+    },
+    quests: {
+      numCompleted: 164,
+      numOrbs: 122690
+    },
+    users: module.slice(1, 4),
+    sidekick: {
+      user: module[0],
+      numMessagesSent: 0x9eb1f6,
+      numVoiceMinutes: 2741198.975133333
+    },
+    guilds: {
+      guilds: exports,
+      numGuildsJoined: 203
+    },
+    emojis: {
+      emojis: require,
+      numEmojisSent: 0x21414c9c
+    },
+    applications: {
+      applications: Chunk512722,
+      totalGamesPlayed: 4278
+    }
+  }
+}
+async function w() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   if (Chunk570140.Z.dispatch({
       type: "CHECKPOINT_FETCH_START"
@@ -62,98 +152,29 @@ async function j() {
       users: e,
       guilds: t,
       emojis: n,
-      applications: i,
-      cardId: r,
-      powerLevel: u,
-      powerLevelPercentile: d,
-      messages: h,
-      voice: j,
-      sidekick: y,
-      quests: _
-    } = function() {
-      let e = Chunk752048.Z.getUserAffinities().slice(0, 4).map(e => x.default.getUser(e.otherUserId)).filter(e => null != e),
-        t = Chunk165630.Z.affinities.slice(0, 3).map(e => {
-          let t = p.Z.getGuild(e.guildId);
-          return s()(null != t, "Guild must exist"), {
-            guild: (0, g.yS)(v(f({}, t), {
-              features: [...t.features]
-            })),
-            numMessagesSent: 0x9e6ca8,
-            numVoiceMinutes: 409516.21576666617
-          }
-        }),
-        n = Chunk339085.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(0, 5).map(e => ({
-          id: e.id,
-          name: "surrogates" in e ? e.surrogates : e.name,
-          animated: e.animated
-        })),
-        i = Chunk812206.Z._getAllApplications().slice(0, 5).map(e => ({
-          game: {
-            id: e.id,
-            name: e.name,
-            icon: e.icon,
-            coverImageHash: e.coverImage
-          },
-          numDaysPlayed: 289
-        }));
-      return {
-        cardId: 1,
-        powerLevel: 0x9eb1f6,
-        powerLevelPercentile: 5,
-        messages: {
-          numMessagesSent: 0x9eb1f6,
-          numMessagesSentPercentile: 99.99,
-          topMonth: {
-            month: 8,
-            numMessagesSent: 0x9eb1f6
-          }
-        },
-        voice: {
-          totalVoiceMinutes: 2741198.975133333,
-          totalVoiceMinutesPercentile: 99.99,
-          topMonth: {
-            numMinutesInVoice: 2741198.975133333,
-            month: 8
-          }
-        },
-        quests: {
-          numCompleted: 164,
-          numOrbs: 122690
-        },
-        users: module.slice(1, 4),
-        sidekick: {
-          user: module[0],
-          numMessagesSent: 0x9eb1f6,
-          numVoiceMinutes: 2741198.975133333
-        },
-        guilds: {
-          guilds: exports,
-          numGuildsJoined: 203
-        },
-        emojis: {
-          emojis: require,
-          numEmojisSent: 0x21414c9c
-        },
-        applications: {
-          applications: Chunk512722,
-          totalGamesPlayed: 4278
-        }
-      }
-    }();
+      applications: r,
+      cardId: i,
+      powerLevel: a,
+      powerLevelPercentile: s,
+      messages: l,
+      voice: c,
+      sidekick: u,
+      quests: d
+    } = R();
     Chunk570140.Z.dispatch({
       type: "CHECKPOINT_FETCH_SUCCESS",
       data: {
-        cardId: Chunk544891,
-        powerLevel: Chunk598077,
-        powerLevelPercentile: Chunk77498,
-        messages: Chunk709054,
+        cardId: i,
+        powerLevel: Chunk544891,
+        powerLevelPercentile: Chunk493683,
+        messages: Chunk904245,
         emojis: require,
-        voice: j,
+        voice: Chunk812206,
         guilds: exports,
         users: module,
         applications: Chunk512722,
-        quests: _,
-        sidekick: y
+        quests: Chunk957730,
+        sidekick: Chunk339085
       }
     });
     return
@@ -167,16 +188,16 @@ async function j() {
     }), {
       card_id: t,
       power_level: n,
-      power_level_percentile: i,
-      messages: s,
-      emojis: o,
-      voice: a,
+      power_level_percentile: r,
+      messages: i,
+      emojis: s,
+      voice: l,
       guilds: c,
-      users: m,
-      sidekick: x,
-      applications: j,
-      quests: y,
-      avatar_decoration: _
+      users: u,
+      sidekick: d,
+      applications: f,
+      quests: p,
+      avatar_decoration: m
     } = module;
     Chunk570140.Z.dispatch({
       type: "CHECKPOINT_FETCH_SUCCESS",
@@ -184,65 +205,65 @@ async function j() {
         cardId: exports,
         powerLevel: require,
         powerLevelPercentile: Chunk512722,
-        messages: null != s ? {
-          numMessagesSent: s.num_messages_sent,
-          numMessagesSentPercentile: s.num_messages_sent_percentile,
+        messages: null != i ? {
+          numMessagesSent: i.num_messages_sent,
+          numMessagesSentPercentile: i.num_messages_sent_percentile,
           topMonth: {
-            month: s.top_month.month,
-            numMessagesSent: s.top_month.num_messages_sent
+            month: i.top_month.month,
+            numMessagesSent: i.top_month.num_messages_sent
           }
         } : true,
-        emojis: null != Chunk812206 ? {
-          emojis: Chunk812206.emojis.map(e => v(f({}, e), {
-            id: h.default.isProbablyAValidSnowflake(e.id) ? e.id : true
+        emojis: null != Chunk493683 ? {
+          emojis: Chunk493683.emojis.map(e => P(C({}, e), {
+            id: S.default.isProbablyAValidSnowflake(e.id) ? e.id : true
           })),
-          numEmojisSent: Chunk812206.num_emojis_sent
+          numEmojisSent: Chunk493683.num_emojis_sent
         } : true,
-        voice: null != Chunk339085 ? {
-          totalVoiceMinutes: Chunk339085.total_voice_minutes,
-          totalVoiceMinutesPercentile: Chunk339085.total_voice_minutes_percentile,
+        voice: null != Chunk904245 ? {
+          totalVoiceMinutes: Chunk904245.total_voice_minutes,
+          totalVoiceMinutesPercentile: Chunk904245.total_voice_minutes_percentile,
           topMonth: {
-            month: Chunk339085.top_month.month,
-            numMinutesInVoice: Chunk339085.top_month.num_minutes_in_voice
+            month: Chunk904245.top_month.month,
+            numMinutesInVoice: Chunk904245.top_month.num_minutes_in_voice
           }
         } : true,
-        guilds: null != Chunk752048 ? {
-          guilds: Chunk752048.guilds.map(e => ({
+        guilds: null != Chunk812206 ? {
+          guilds: Chunk812206.guilds.map(e => ({
             numMessagesSent: e.num_messages_sent,
             numVoiceMinutes: e.num_voice_minutes,
-            guild: (0, g.wD)(e.guild, p.Z.getGuild(e.guild.id))
+            guild: (0, v.wD)(e.guild, E.Z.getGuild(e.guild.id))
           })),
-          numGuildsJoined: Chunk752048.num_guilds_joined
+          numGuildsJoined: Chunk812206.num_guilds_joined
         } : true,
-        users: null != Chunk165630 ? Chunk165630.map(e => {
+        users: null != Chunk339085 ? Chunk339085.map(e => {
           let {
             user: t
           } = e;
-          return new u.Z(t)
+          return new _.Z(t)
         }) : true,
-        applications: null != j ? {
-          applications: j.applications.map(e => ({
-            game: v(f({}, (0, d.m)(e.game)), {
+        applications: null != Chunk987509 ? {
+          applications: Chunk987509.applications.map(e => ({
+            game: P(C({}, (0, h.m)(e.game)), {
               coverImageHash: e.game.cover_image_hash
             }),
             numDaysPlayed: e.num_sessions
           })),
-          totalGamesPlayed: j.total_games_played
+          totalGamesPlayed: Chunk987509.total_games_played
         } : true,
-        quests: null != y ? {
-          numCompleted: y.num_completed,
-          numOrbs: y.num_orbs
+        quests: null != Chunk752048 ? {
+          numCompleted: Chunk752048.num_completed,
+          numOrbs: Chunk752048.num_orbs
         } : true,
-        sidekick: null != Chunk594174 ? {
-          numMessagesSent: Chunk594174.num_messages_sent,
-          numVoiceMinutes: Chunk594174.num_voice_minutes,
-          user: new Chunk598077.Z(Chunk594174.user)
+        sidekick: null != Chunk957730 ? {
+          numMessagesSent: Chunk957730.num_messages_sent,
+          numVoiceMinutes: Chunk957730.num_voice_minutes,
+          user: new Chunk598077.Z(Chunk957730.user)
         } : true,
-        avatarDecoration: null != _ ? {
-          type: _.type,
-          asset: _.asset,
-          label: _.label,
-          skuId: _.sku_id
+        avatarDecoration: null != Chunk592125 ? {
+          type: Chunk592125.type,
+          asset: Chunk592125.asset,
+          label: Chunk592125.label,
+          skuId: Chunk592125.sku_id
         } : true
       }
     })
@@ -252,4 +273,63 @@ async function j() {
     })
   }
 }
-require("./612776.js"), require("./981631.js")
+let D = async (e, t, n) => {
+  let {
+    withMessage: r
+  } = t;
+  (await Promise.all(e.map(f.qx))).filter(O.lm).forEach(e => {
+    let t = m.Z.getChannel(e);
+    if (null == t) return;
+    let n = d.ZP.parse(t, null != r ? r : "");
+    n.components = [], l.Z.sendMessage(e, n, false, {
+      location: "checkpoint",
+      withCheckpoint: true
+    })
+  })
+};
+async function x(e, t) {
+  let n = await s.Z.openPrivateChannel({
+      recipientIds: t,
+      location: "checkpoint-sidekick",
+      navigateToChannel: false
+    }),
+    r = m.Z.getChannel(n);
+  if (null == r) throw Error("Failed to open private channel");
+  let i = (0, I._3)().findIndex(t => t.trim() === e);
+  y.default.track(T.rMx.CHECKPOINT_SIDEKICK_MESSAGE_SENT, {
+    other_user_id: t,
+    message_variant: i.toString()
+  });
+  let a = d.ZP.parse(r, e);
+  return l.Z.sendMessage(r.id, a, false, {
+    location: "checkpoint-sidekick"
+  })
+}
+async function L() {
+  try {
+    return await Chunk544891.tn.post({
+      url: "/checkpoint/loot",
+      rejectWithError: true
+    })
+  } catch (e) {}
+}
+
+function j(e) {
+  return o.Z.dispatch({
+    type: "CHECKPOINT_SET_VOLUME",
+    volume: e
+  })
+}
+
+function M() {
+  return Chunk570140.Z.dispatch({
+    type: "CHECKPOINT_TOGGLE_MUTE"
+  })
+}
+
+function k(e) {
+  return o.Z.dispatch({
+    type: "CHECKPOINT_SET_HIGHEST_SLIDE_SEEN",
+    slide: e
+  })
+}

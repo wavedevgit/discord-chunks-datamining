@@ -179,11 +179,11 @@ function q(e) {
   }
 }
 
-function X(e) {
+function Q(e) {
   return null == e ? null : e.version !== b.EI ? (P.warn("Throwing away client session with invalid version: ".concat(e.version, ", expected ").concat(b.EI)), null) : e
 }
 
-function Q() {
+function X() {
   Chunk433517.K.remove(C), L = {
     state: "loaded",
     session: null
@@ -204,7 +204,7 @@ async function $() {
 
 function ee() {
   let e = Chunk314897.default.getToken();
-  k !== module && (k = module, Q()), K()
+  k !== module && (k = module, X()), K()
 }
 
 function et() {
@@ -241,7 +241,7 @@ async function eo() {
     n = null,
     a = "loaded" === L.state ? null == (e = L.session) ? true : module.uuid : null;
   try {
-    n = "uninitialized" === L.state ? X(await Chunk433517.K.getAfterRefresh(C)) : L.session
+    n = "uninitialized" === L.state ? Q(await Chunk433517.K.getAfterRefresh(C)) : L.session
   } catch (e) {
     Chunk960048.Z.captureException(module)
   }
@@ -264,6 +264,6 @@ async function eo() {
 }
 
 function es() {
-  let e = "uninitialized" === L.state ? X(Chunk433517.K.get(C)) : L.session;
+  let e = "uninitialized" === L.state ? Q(Chunk433517.K.get(C)) : L.session;
   return null == module || (0, Chunk686325.qK)(module) ? null : module
 }

@@ -168,7 +168,7 @@ function q(e) {
   return null != n && !!N.has(n) && U(r, [t])
 }
 
-function X(e) {
+function Q(e) {
   let {
     streamKey: t
   } = e, {
@@ -179,7 +179,7 @@ function X(e) {
   return null != r && !!N.has(r) && U(i, [n])
 }
 
-function Q(e) {
+function X(e) {
   let {
     channel: {
       id: t
@@ -246,7 +246,7 @@ let en = new et(Chunk570140.Z, {
   CONNECTION_OPEN: B,
   OVERLAY_INITIALIZE: B,
   VOICE_STATE_UPDATES: V,
-  CHANNEL_DELETE: Q,
+  CHANNEL_DELETE: X,
   GUILD_MEMBERS_CHUNK_BATCH: H,
   USER_UPDATE: W,
   GUILD_MEMBER_REMOVE: W,
@@ -254,8 +254,8 @@ let en = new et(Chunk570140.Z, {
   CHANNEL_UPDATES: J,
   GUILD_ROLE_UPDATE: $,
   RTC_CONNECTION_VIDEO: q,
-  STREAM_CLOSE: X,
-  STREAM_DELETE: X,
+  STREAM_CLOSE: Q,
+  STREAM_DELETE: Q,
   RELATIONSHIP_ADD: K,
   RELATIONSHIP_REMOVE: K,
   RELATIONSHIP_UPDATE: K,

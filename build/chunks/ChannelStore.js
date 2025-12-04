@@ -90,7 +90,7 @@ class K {
   }
   static loadGuildFromChannelId(e) {
     var t;
-    return null == e ? null : K.loadGuildIds([null == (t = Q(e)) ? true : t.guild_id])
+    return null == e ? null : K.loadGuildIds([null == (t = X(e)) ? true : t.guild_id])
   }
   static loadGuildIds(e) {
     let t = e.filter(E.lm);
@@ -151,7 +151,7 @@ function q(e, t, n) {
   }
 }
 
-function X(e) {
+function Q(e) {
   if (N.fileOnly("Deleting guild channels for ".concat(e)), null != w[e]) {
     for (let t of b.default.keys(w[e])) delete R[t];
     delete w[e]
@@ -159,7 +159,7 @@ function X(e) {
   null != j[e] && delete j[e]
 }
 
-function Q(e) {
+function X(e) {
   var t, n, r, i;
   return q(e, 0, "getBasicChannel"), null != (i = null != (r = null != (n = null != (t = R[e]) ? t : D[e]) ? n : L[e]) ? r : G[e]) ? i : f.Z.getBasicChannel(e)
 }
@@ -224,7 +224,7 @@ function eo(e) {
   } = e;
   switch (n.op) {
     case "full_sync":
-      for (let e of (N.fileOnly("ConnectionOpen contained full channels for ".concat(t, " #:").concat(n.items.length)), X(t), Z.add(t), f.Z.restored(t), n.items)) en(e);
+      for (let e of (N.fileOnly("ConnectionOpen contained full channels for ".concat(t, " #:").concat(n.items.length)), Q(t), Z.add(t), f.Z.restored(t), n.items)) en(e);
       break;
     case "update":
       for (let e of ((n.writes.length > 0 || n.deletes.length > 0) && f.Z.invalidate(t), n.deletes)) ev(R[e]);
@@ -252,7 +252,7 @@ function el(e) {
       N.fileOnly("Restoring guild channels b/c partial in bg sync, for ".concat(e.id, " #:").concat(eL(e.id))), a().forEach(n[e.id], en);
       let i = null != (r = e.partial_updates.deleted_channel_ids) ? r : [];
       i.length > 0 && (z(e.id, 1, "handleBackgroundSync"), i.forEach(e => ev(R[e]))), null == (t = e.partial_updates.channels) || t.forEach(t => en((0, g.q_)(t, e.id)))
-    } else N.fileOnly("BG sync contained full channels for ".concat(e.id, " #:").concat(e.channels.length)), X(e.id), Z.add(e.id), f.Z.restored(e.id), e.channels.forEach(t => en((0, g.q_)(t, e.id)))
+    } else N.fileOnly("BG sync contained full channels for ".concat(e.id, " #:").concat(e.channels.length)), Q(e.id), Z.add(e.id), f.Z.restored(e.id), e.channels.forEach(t => en((0, g.q_)(t, e.id)))
   })
 }
 
@@ -384,7 +384,7 @@ function eI(e) {
 }
 
 function eT(e) {
-  N.fileOnly("GuildDelete of ".concat(e.guild.id)), X(e.guild.id), Z.delete(e.guild.id), f.Z.invalidate(e.guild.id)
+  N.fileOnly("GuildDelete of ".concat(e.guild.id)), Q(e.guild.id), Z.delete(e.guild.id), f.Z.invalidate(e.guild.id)
 }
 
 function eA(e) {
@@ -447,10 +447,10 @@ class ex extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk458772.Z, Chunk853856.Z, Chunk430824.Z, Chunk594174.default), this.syncWith([Chunk853856.Z], ew)
   }
   hasChannel(e) {
-    return null != Q(e)
+    return null != X(e)
   }
   getBasicChannel(e) {
-    if (null != e) return Q(e)
+    if (null != e) return X(e)
   }
   getChannel(e) {
     if (null != e) return J(e)

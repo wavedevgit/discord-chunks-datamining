@@ -115,8 +115,8 @@ function R(e) {
     } = H,
     {
       isOpen: q,
-      setIsOpen: X,
-      refs: Q,
+      setIsOpen: Q,
+      refs: X,
       floatingStyles: J,
       getReferenceProps: $,
       getFloatingProps: ee,
@@ -141,12 +141,12 @@ function R(e) {
       itemsForMeasurement: ed
     } = w(er, t),
     ef = i.useCallback(() => {
-      ec || X(!q)
-    }, [ec, X, q]),
+      ec || Q(!q)
+    }, [ec, Q, q]),
     ep = i.useCallback(() => {
       var e;
-      X(false), null == (e = ea.current) || e.focus()
-    }, [X]),
+      Q(false), null == (e = ea.current) || e.focus()
+    }, [Q]),
     e_ = i.useCallback(() => {
       var e;
       "multiple" === t ? G([]) : G(null), null == (e = ea.current) || e.focus()
@@ -161,7 +161,7 @@ function R(e) {
       var t, n, r, i, a, o;
       if (!ec) switch (e.key) {
         case "ArrowDown":
-          e.preventDefault(), X(true);
+          e.preventDefault(), Q(true);
           break;
         case "ArrowLeft":
           e.preventDefault(), null == (n = V.current) || null == (t = n.firstChild) || t.focus();
@@ -175,7 +175,7 @@ function R(e) {
         case "Escape":
           el && f && (e.preventDefault(), e.stopPropagation(), e_())
       }
-    }, [e_, el, f, X, ec]),
+    }, [e_, el, f, Q, ec]),
     eh = i.useMemo(() => {
       let e = Array.isArray(Z) ? Z : [Z];
       return er.filter(t => (0, E._s)(t.value, e))
@@ -206,7 +206,7 @@ function R(e) {
       })
     }, 10))
   }, [eh, eb, B]);
-  let eO = (0, s.Z)(eo, Q.setReference),
+  let eO = (0, s.Z)(eo, X.setReference),
     ev = i.useCallback(e => {
       if (ec) return;
       let t = Array.from(e)[0],
@@ -291,7 +291,7 @@ function R(e) {
         onSelectionChange: eE,
         listItems: er
       }), !v && ed, !ec && q && (0, r.jsx)("div", T(S({
-        ref: Q.setFloating,
+        ref: X.setFloating,
         className: O.selectDropdown
       }, ee()), {
         style: S({}, J, et),

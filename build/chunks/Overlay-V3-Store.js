@@ -138,7 +138,7 @@ function q() {
     })
   }
 }
-async function X() {
+async function Q() {
   if (!Chunk509140.Z.isOverlayEnabled) return void q();
   await ei();
   let e = new Set(Chunk594190.ZP.getRunningGames().filter(e => l.ZP.getOverlayEnabledForGame(e)).map(e => e.pid));
@@ -146,7 +146,7 @@ async function X() {
   for (let e of R) K(module)
 }
 
-function Q(e) {
+function X(e) {
   let t = l.ZP.getGameOrTransformedSubgameForPID(e);
   o.Z.setAssociatedGame(null != U ? U : d.UNSET_PID, e, t)
 }
@@ -223,7 +223,7 @@ function es(e) {
   } = e;
   Y = N(A({}, Y), {
     popoutOpened: true
-  }), Q(t), U = t, j = t, (0, d.setPID)(t)
+  }), X(t), U = t, j = t, (0, d.setPID)(t)
 }
 
 function el(e) {
@@ -256,7 +256,7 @@ function ed(e) {
   let {
     refreshingPID: t
   } = e;
-  return P.verbose("Refreshing OOP host window for pid ".concat(t)), k = t, U = t, j = t, (0, d.setPID)(t), Q(t), J(), true
+  return P.verbose("Refreshing OOP host window for pid ".concat(t)), k = t, U = t, j = t, (0, d.setPID)(t), X(t), J(), true
 }
 
 function ef(e) {
@@ -331,7 +331,7 @@ function ey(e) {
 }
 
 function eO() {
-  D = Chunk509140.Z.getNativeModule(), X()
+  D = Chunk509140.Z.getNativeModule(), Q()
 }
 
 function ev() {

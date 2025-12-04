@@ -100,12 +100,12 @@ let N = Chunk473749.memo(function(e) {
     [V, H] = i.useState(false),
     [Y, W] = i.useState(false),
     [K, z] = i.useState(false),
-    [q, X] = i.useState(false),
-    [Q, J] = i.useState("none"),
+    [q, Q] = i.useState(false),
+    [X, J] = i.useState("none"),
     [$, ee] = i.useState(() => "function" == typeof a ? a() : a),
     et = i.useRef(true),
     en = i.useCallback(() => {
-      W(e => !e), X(true)
+      W(e => !e), Q(true)
     }, []),
     er = i.useCallback(() => {
       J("metadata")
@@ -119,7 +119,7 @@ let N = Chunk473749.memo(function(e) {
     }, [x, y]),
     eo = i.useCallback(() => {
       W(false), null == et.current && (et.current = setTimeout(() => {
-        U(false), X(false), et.current = true
+        U(false), Q(false), et.current = true
       }, 500))
     }, []),
     es = i.useCallback(() => {
@@ -204,7 +204,7 @@ let N = Chunk473749.memo(function(e) {
       ref: L,
       className: v.audioElement,
       src: n,
-      preload: Q,
+      preload: X,
       playing: Y && !K,
       onEnded: es,
       onLoadedMetadata: ei,
@@ -217,7 +217,7 @@ let N = Chunk473749.memo(function(e) {
     ref: L,
     className: v.audioElement,
     controls: false,
-    preload: Q,
+    preload: X,
     onEnded: es,
     onLoadedMetadata: ei,
     onError: ec,

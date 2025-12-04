@@ -256,7 +256,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   let {
     contrastMode: t
   } = e;
@@ -265,7 +265,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   v = g(m({}, v), {
     switchIconsEnabled: e.switchIconsEnabled
   })
@@ -484,6 +484,6 @@ let $ = new J(Chunk570140.Z, {
   ACCESSIBILITY_SUBMIT_BUTTON_TOGGLE: k,
   ACCESSIBILITY_SYNC_PROFILE_THEME_WITH_USER_THEME_TOGGLE: U,
   ACCESSIBILITY_SET_CONTRAST: q,
-  ACCESSIBILITY_SET_CONTRAST_MODE: X,
-  ACCESSIBILITY_SET_SWITCH_ICONS_ENABLED: Q
+  ACCESSIBILITY_SET_CONTRAST_MODE: Q,
+  ACCESSIBILITY_SET_SWITCH_ICONS_ENABLED: X
 })

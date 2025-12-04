@@ -248,7 +248,7 @@ function z(e) {
       trackAnnouncementViews: true
     }, t.message.id), (0, r.jsx)(b.ZP, {
       className: M.hoverBar,
-      children: (0, r.jsx)(X, {
+      children: (0, r.jsx)(Q, {
         savedMessage: t,
         jumpToMessage: l
       })
@@ -290,7 +290,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   let {
     savedMessage: t,
     jumpToMessage: i

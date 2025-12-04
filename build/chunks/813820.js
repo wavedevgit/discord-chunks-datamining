@@ -1233,7 +1233,7 @@ class z extends Chunk495852.C {
   }
 }
 let q = new z;
-class X extends Chunk495852.C {
+class Q extends Chunk495852.C {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.C, {
@@ -1270,7 +1270,7 @@ class X extends Chunk495852.C {
     }])
   }
 }
-let Q = new X;
+let X = new Q;
 class J extends Chunk495852.C {
   create(e) {
     let t = {};
@@ -1332,7 +1332,7 @@ class ee extends Chunk495852.C {
         case 104:
           a.state = {
             oneofKind: "tempBanned",
-            tempBanned: Q.internalBinaryRead(e, e.uint32(), n, a.state.tempBanned)
+            tempBanned: X.internalBinaryRead(e, e.uint32(), n, a.state.tempBanned)
           };
           break;
         case 105:
@@ -1362,7 +1362,7 @@ class ee extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    if ("normal" === e.state.oneofKind && Y.internalBinaryWrite(e.state.normal, t.tag(101, r.TD.LengthDelimited).fork(), n).join(), "restricted" === e.state.oneofKind && K.internalBinaryWrite(e.state.restricted, t.tag(102, r.TD.LengthDelimited).fork(), n).join(), "deferredAction" === e.state.oneofKind && q.internalBinaryWrite(e.state.deferredAction, t.tag(103, r.TD.LengthDelimited).fork(), n).join(), "tempBanned" === e.state.oneofKind && Q.internalBinaryWrite(e.state.tempBanned, t.tag(104, r.TD.LengthDelimited).fork(), n).join(), "banned" === e.state.oneofKind && $.internalBinaryWrite(e.state.banned, t.tag(105, r.TD.LengthDelimited).fork(), n).join(), 0 !== e.reason && t.tag(1, r.TD.Varint).int32(e.reason), e.annotations.length) {
+    if ("normal" === e.state.oneofKind && Y.internalBinaryWrite(e.state.normal, t.tag(101, r.TD.LengthDelimited).fork(), n).join(), "restricted" === e.state.oneofKind && K.internalBinaryWrite(e.state.restricted, t.tag(102, r.TD.LengthDelimited).fork(), n).join(), "deferredAction" === e.state.oneofKind && q.internalBinaryWrite(e.state.deferredAction, t.tag(103, r.TD.LengthDelimited).fork(), n).join(), "tempBanned" === e.state.oneofKind && X.internalBinaryWrite(e.state.tempBanned, t.tag(104, r.TD.LengthDelimited).fork(), n).join(), "banned" === e.state.oneofKind && $.internalBinaryWrite(e.state.banned, t.tag(105, r.TD.LengthDelimited).fork(), n).join(), 0 !== e.reason && t.tag(1, r.TD.Varint).int32(e.reason), e.annotations.length) {
       t.tag(2, r.TD.LengthDelimited).fork();
       for (let n = 0; n < e.annotations.length; n++) t.int32(e.annotations[n]);
       t.join()
@@ -1395,7 +1395,7 @@ class ee extends Chunk495852.C {
       name: "temp_banned",
       kind: "message",
       oneof: "state",
-      T: () => Q
+      T: () => X
     }, {
       no: 105,
       name: "banned",

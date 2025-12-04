@@ -83,8 +83,8 @@ let M = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
   K = +Chunk70956.Z.Millis.MINUTE,
   z = 3 * Chunk70956.Z.Millis.SECOND,
   q = 128,
-  X = "message",
-  Q = "ping",
+  Q = "message",
+  X = "ping",
   J = "single",
   $ = new Chunk710845.Z("Spotify"),
   ee = new Chunk846519.V7,
@@ -155,7 +155,7 @@ class em {
   ping() {
     var e;
     this.connected && (null == (e = this.socket) || module.send(JSON.stringify({
-      type: Q
+      type: X
     })))
   }
   handleOpen() {
@@ -171,7 +171,7 @@ class em {
       uri: r,
       payloads: i
     } = JSON.parse(t);
-    if (n === X) {
+    if (n === Q) {
       if ("string" == typeof r && r.startsWith(U)) this.connectionId = decodeURIComponent(r.split(U)[1]), (0, P.am)(this.accountId, this.accessToken, this.connectionId);
       else if (Array.isArray(i)) {
         for (let {

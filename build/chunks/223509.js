@@ -46,8 +46,8 @@ var r, i, Chunk754793 = require("./754793.js"),
   K = 24,
   z = 25,
   q = 26,
-  X = 27,
-  Q = 28,
+  Q = 27,
+  X = 28,
   J = 29,
   $ = 30,
   ee = 31,
@@ -226,7 +226,7 @@ function e_(e, t) {
       if (t === _ || t === m) break i;
     case M:
       if (n.last) {
-        eo >>>= 7 & es, es -= 7 & es, n.mode = X;
+        eo >>>= 7 & es, es -= 7 & es, n.mode = Q;
         break
       }
       for (; es < 3;) {
@@ -440,7 +440,7 @@ function e_(e, t) {
       if (0 === ea) break i;
       i[en++] = n.length, ea--, n.mode = H;
       break;
-    case X:
+    case Q:
       if (n.wrap) {
         for (; es < 32;) {
           if (0 === er) break i;
@@ -452,8 +452,8 @@ function e_(e, t) {
         }
         eo = 0, es = 0
       }
-      n.mode = Q;
-    case Q:
+      n.mode = X;
+    case X:
       if (n.wrap && n.flags) {
         for (; es < 32;) {
           if (0 === er) break i;
@@ -477,7 +477,7 @@ function e_(e, t) {
     default:
       return b
   }
-  return (e.next_out = en, e.avail_out = ea, e.next_in = et, e.avail_in = er, n.hold = eo, n.bits = es, (n.wsize || ec !== e.avail_out && n.mode < $ && (n.mode < X || t !== p)) && ep(e, e.output, e.next_out, ec - e.avail_out)) ? (n.mode = ee, O) : (el -= e.avail_in, ec -= e.avail_out, e.total_in += el, e.total_out += ec, n.total += ec, n.wrap && ec && (e.adler = n.check = n.flags ? s(n.check, i, ec, e.next_out - ec) : o(n.check, i, ec, e.next_out - ec)), e.data_type = n.bits + 64 * !!n.last + 128 * (n.mode === j) + 256 * (n.mode === V || n.mode === U), (0 === el && 0 === ec || t === p) && ev === h && (ev = v), ev)
+  return (e.next_out = en, e.avail_out = ea, e.next_in = et, e.avail_in = er, n.hold = eo, n.bits = es, (n.wsize || ec !== e.avail_out && n.mode < $ && (n.mode < Q || t !== p)) && ep(e, e.output, e.next_out, ec - e.avail_out)) ? (n.mode = ee, O) : (el -= e.avail_in, ec -= e.avail_out, e.total_in += el, e.total_out += ec, n.total += ec, n.wrap && ec && (e.adler = n.check = n.flags ? s(n.check, i, ec, e.next_out - ec) : o(n.check, i, ec, e.next_out - ec)), e.data_type = n.bits + 64 * !!n.last + 128 * (n.mode === j) + 256 * (n.mode === V || n.mode === U), (0 === el && 0 === ec || t === p) && ev === h && (ev = v), ev)
 }
 
 function em(e) {

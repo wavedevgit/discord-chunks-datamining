@@ -245,7 +245,7 @@ function j(e) {
   let z = (0, c.wj)(j) ? V : H,
     q = (0, c.wj)(j) ? B : F;
   t = null != t ? t : z, n = null != n ? n : q;
-  let X = Math.floor(.75 * w) - (null != K ? K : 0);
+  let Q = Math.floor(.75 * w) - (null != K ? K : 0);
   return (0, r.jsx)(u.aML, {
     color: l,
     position: d,
@@ -267,8 +267,8 @@ function j(e) {
         size: w,
         children: (0, r.jsx)(Z, {
           size: "custom",
-          width: X,
-          height: X,
+          width: Q,
+          height: Q,
           className: b,
           color: null != t ? t : "currentColor"
         })

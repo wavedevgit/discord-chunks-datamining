@@ -249,7 +249,7 @@ function q() {
   }
 }
 
-function X(e) {
+function Q(e) {
   let {
     key: t,
     alwaysOnTop: n
@@ -257,7 +257,7 @@ function X(e) {
   m.isPlatformEmbedded && (h.ZP.setAlwaysOnTop(t, n), N[t] = n, h.ZP.isAlwaysOnTop(t).then(e => N[t] = e))
 }
 
-function Q(e) {
+function X(e) {
   let {
     url: t,
     integrity: n
@@ -312,9 +312,9 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
 y(J, "displayName", "PopoutWindowStore"), y(J, "persistKey", "PopoutWindowStore");
 let $ = new J(Chunk570140.Z, {
     POPOUT_WINDOW_OPEN: V,
-    POPOUT_WINDOW_ADD_STYLESHEET: Q,
+    POPOUT_WINDOW_ADD_STYLESHEET: X,
     POPOUT_WINDOW_CLOSE: z,
-    POPOUT_WINDOW_SET_ALWAYS_ON_TOP: X,
+    POPOUT_WINDOW_SET_ALWAYS_ON_TOP: Q,
     LOGOUT: q
   }),
   ee = $

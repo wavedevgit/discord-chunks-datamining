@@ -15,13 +15,13 @@ var Chunk54381 = require("./54381.js"),
 function d(e) {
   let {
     previewMessage: t
-  } = e, n = o.jU.useSetting(), {
+  } = e, n = u.jU.useSetting(), {
     content: d
   } = (0, a.ZP)(t, {
     allowHeading: true,
     allowLinks: true
-  }), f = t.attachments.map((e, t) => {
-    let n = (0, u.Yi)({
+  }), b = t.attachments.map((e, t) => {
+    let n = (0, o.Yi)({
       src: e.url,
       containerClassName: c.previewImage,
       imageContainerClassName: c.previewImage,
@@ -45,7 +45,7 @@ function d(e) {
         message: t,
         content: d,
         compact: n
-      }), f, t.components.length > 0 ? (0, l.jsx)(i.ZP, {
+      }), b, t.components.length > 0 ? (0, l.jsx)(i.ZP, {
         message: t,
         shouldDisableInteractiveComponents: true
       }) : null]

@@ -265,7 +265,7 @@ class tn extends(r = Chunk473749.Component) {
     })
   }
   renderSocialProofingFileSizeNitroUpsell(e) {
-    let t = e.attachments.some(e => e.size > eX.Lw);
+    let t = e.attachments.some(e => e.size > eQ.Lw);
     return (0, eC.M)("attachment") && t ? (0, i.jsx)(e8, {}) : null
   }
   renderCodedLinks(e) {
@@ -416,7 +416,7 @@ class tn extends(r = Chunk473749.Component) {
       {
         srcToOnClickOverride: _,
         srcToHandlePreloadImage: m
-      } = (0, Q.G)(p, {
+      } = (0, X.G)(p, {
         enabledContentHarmTypeFlags: s,
         shouldHideMediaOptions: l
       }, "Media Mosaic"),
@@ -561,7 +561,7 @@ class tn extends(r = Chunk473749.Component) {
   renderThreadRoleMentionWarning(e) {
     if (e.hasFlag(eq.iLy.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD) && this.props.isCurrentUser && !(Date.now() - ev.default.extractTimestamp(e.id) >= e7)) return (0, i.jsx)("div", {
       className: eJ.threadRoleMentionFailure,
-      children: eQ.intl.string(eQ.t.ma8Rs0)
+      children: eX.intl.string(eX.t.ma8Rs0)
     })
   }
   renderSuppressConfirmModal() {
@@ -647,7 +647,7 @@ class tn extends(r = Chunk473749.Component) {
     })
   }
   renderMediaPostEmbeds(e) {
-    return e.embeds.flatMap(t => t.type !== eq.hBH.POST_PREVIEW || null == t.url ? [] : (0, i.jsx)(X.Z, {
+    return e.embeds.flatMap(t => t.type !== eq.hBH.POST_PREVIEW || null == t.url ? [] : (0, i.jsx)(Q.Z, {
       embedUrl: t.url,
       message: e,
       channel: this.props.channel

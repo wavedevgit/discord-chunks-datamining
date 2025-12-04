@@ -72,7 +72,7 @@ function M(e) {
     },
     applicationId: n.id,
     botUserId: null == O ? true : O.id
-  }), W = null != v && S && Y, K = V && S, z = (0, D.G)(n), q = (0, D.z)(n), X = i.useMemo(() => {
+  }), W = null != v && S && Y, K = V && S, z = (0, D.G)(n), q = (0, D.z)(n), Q = i.useMemo(() => {
     let e = [];
     return S ? (K && e.push({
       label: null == B ? L.intl.string(L.t.RscU7I) : F ? L.intl.string(L.t.DPfdsq) : L.intl.string(L.t.sqe0hj),
@@ -102,7 +102,7 @@ function M(e) {
         })
       }
     })) : null != q && e.push(q), e
-  }, [K, W, B, F, Z, n.id, H, o, M, G, S, q, v]), Q = S ? (0, r.jsx)(U, {
+  }, [K, W, B, F, Z, n.id, H, o, M, G, S, q, v]), X = S ? (0, r.jsx)(U, {
     app: n
   }) : (0, r.jsx)(k, {
     app: n
@@ -114,8 +114,8 @@ function M(e) {
     onClickBanner: z,
     bannerAspectRatio: j,
     iconSrc: T,
-    info: Q,
-    actions: X,
+    info: X,
+    actions: Q,
     onClickContent: z,
     trackingConfig: {
       id: n.id,

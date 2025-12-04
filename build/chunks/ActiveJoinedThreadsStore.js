@@ -95,8 +95,8 @@ function x(e) {
             isUnread: r,
             isRelevant: i,
             isTimedRelevant: a
-          } = X(e);
-        ee(S, e, n, false), ee(C, e, i ? n : null, false), ee(I, e, r ? n : null, false), a && Q(e, true)
+          } = Q(e);
+        ee(S, e, n, false), ee(C, e, i ? n : null, false), ee(I, e, r ? n : null, false), a && X(e, true)
       } else {
         ee(T, e, e, false);
         let t = f.ZP.isForumPostUnread(e.id);
@@ -142,8 +142,8 @@ function k(e, t, n) {
           isUnread: t,
           isRelevant: n,
           isTimedRelevant: a
-        } = X(r);
-      ee(S, r, e, true), ee(C, r, n ? e : null, true), ee(I, r, t ? e : null, true), ee(T, r, null, true), ee(A, r, null, true), Q(r, a)
+        } = Q(r);
+      ee(S, r, e, true), ee(C, r, n ? e : null, true), ee(I, r, t ? e : null, true), ee(T, r, null, true), ee(A, r, null, true), X(r, a)
     } else {
       let e = f.ZP.isForumPostUnread(r.id);
       ee(S, r, null, true), ee(I, r, null, true), ee(C, r, null, true), ee(T, r, r, true), ee(A, r, e ? r : null, true), $(r.id)
@@ -212,8 +212,8 @@ function V(e) {
         isUnread: n,
         isRelevant: i,
         isTimedRelevant: a
-      } = X(t);
-      Q(t, a);
+      } = Q(t);
+      X(t, a);
       let o = en(I, t),
         s = en(C, t);
       if (n === o && i === s) returnfalse;
@@ -239,8 +239,8 @@ function H() {
             isUnread: i,
             isRelevant: a,
             isTimedRelevant: o
-          } = X(r.channel);
-        Chunk392711 && ee(I, r.channel, r, false), a && ee(C, r.channel, r, false), Q(r.channel, Chunk442837)
+          } = Q(r.channel);
+        Chunk392711 && ee(I, r.channel, r, false), a && ee(C, r.channel, r, false), X(r.channel, Chunk442837)
       }
   for (let e in A = {}, T)
     for (let t in T[module])
@@ -279,7 +279,7 @@ function q() {
   j(module), j(P)
 }
 
-function X(e) {
+function Q(e) {
   let t = f.ZP.getMentionCount(e.id) > 0,
     n = f.ZP.hasUnread(e.id) && !h.Z.isMuted(e.id),
     r = e.hasFlag(E.zZ.PINNED),
@@ -292,7 +292,7 @@ function X(e) {
   }
 }
 
-function Q(e, t) {
+function X(e, t) {
   $(e.id), t && J(e)
 }
 

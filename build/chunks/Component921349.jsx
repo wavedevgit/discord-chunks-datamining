@@ -176,8 +176,8 @@ let k = Chunk473749.forwardRef(function(e, t) {
     debounceTime: K,
     renderOptionLabel: z = L,
     onSearchChange: q,
-    renderOptionPrefix: X = () => null,
-    renderOptionSuffix: Q = () => null,
+    renderOptionPrefix: Q = () => null,
+    renderOptionSuffix: X = () => null,
     "aria-describedby": J,
     "aria-invalid": $,
     "aria-labelledby": ee,
@@ -310,10 +310,10 @@ let k = Chunk473749.forwardRef(function(e, t) {
       null == (e = ey.current) || e.focus()
     }
   }, [U]);
-  let eX = i.useCallback(() => {
+  let eQ = i.useCallback(() => {
       eA(""), eq(null), eZ(true)
     }, [eq, eZ]),
-    eQ = i.useCallback(e => {
+    eX = i.useCallback(e => {
       switch (e.key) {
         case "Escape":
           eS && (e.stopPropagation(), eZ(false));
@@ -367,8 +367,8 @@ let k = Chunk473749.forwardRef(function(e, t) {
           renderOptionLabel: z,
           updatePosition: i,
           popoutPosition: n,
-          renderOptionPrefix: X,
-          renderOptionSuffix: Q
+          renderOptionPrefix: Q,
+          renderOptionSuffix: X
         })
       },
       position: Z,
@@ -383,7 +383,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
           onKeyDown: c
         } = eW.containerProps, u = e => {
           var t;
-          null == (t = ef.onKeyDown) || t.call(ef, e), c(e), eQ(e)
+          null == (t = ef.onKeyDown) || t.call(ef, e), c(e), eX(e)
         };
         return (0, r.jsx)(_.gNt, P(C({}, ed), {
           children: e => {
@@ -427,8 +427,8 @@ let k = Chunk473749.forwardRef(function(e, t) {
                       query: eT,
                       selectedOptions: eL,
                       loading: eD,
-                      renderOptionPrefix: X,
-                      renderOptionSuffix: Q,
+                      renderOptionPrefix: Q,
+                      renderOptionSuffix: X,
                       isDisabled: w,
                       isEditing: eC,
                       isProcessing: D,
@@ -476,7 +476,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
                   children: [d && (null != eT && "" !== eT || eL.length > 0) ? (0, r.jsx)(_.P3F, {
                     "aria-label": I.intl.string(I.t.VkKicb),
                     "aria-controls": i,
-                    onClick: eX,
+                    onClick: eQ,
                     children: (0, r.jsx)(y.Dio, {
                       size: "xs",
                       color: "currentColor",

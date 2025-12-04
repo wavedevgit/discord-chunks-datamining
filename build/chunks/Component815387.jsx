@@ -485,7 +485,7 @@ function eq(e) {
   }) : null
 }
 
-function eX(e) {
+function eQ(e) {
   let {
     message: t,
     compact: n,
@@ -503,7 +503,7 @@ function eX(e) {
   })
 }
 
-function eQ(e) {
+function eX(e) {
   let {
     message: t,
     compact: n,
@@ -714,7 +714,7 @@ function e9(e) {
     message: t,
     channel: n
   } = e, i = t.giftingPrompt, o = (0, a.e7)([H.default], () => H.default.getUser(null == i ? true : i.recipientUserId));
-  return null == i || null == o ? null : (0, r.jsx)(Q.Z, {
+  return null == i || null == o ? null : (0, r.jsx)(X.Z, {
     giftIntentType: i.giftIntentType,
     recipientUser: o,
     channel: n
@@ -828,9 +828,9 @@ let to = Object.freeze({
   [Chunk981631.uaV.THREAD_STARTER_MESSAGE]: Chunk328749.Z,
   [Chunk981631.uaV.GUILD_INVITE_REMINDER]: true,
   [Chunk981631.uaV.AUTO_MODERATION_ACTION]: eq,
-  [Chunk981631.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED]: eX,
-  [Chunk981631.uaV.GUILD_INCIDENT_ALERT_MODE_DISABLED]: eX,
-  [Chunk981631.uaV.GUILD_INCIDENT_REPORT_RAID]: eQ,
+  [Chunk981631.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED]: eQ,
+  [Chunk981631.uaV.GUILD_INCIDENT_ALERT_MODE_DISABLED]: eQ,
+  [Chunk981631.uaV.GUILD_INCIDENT_REPORT_RAID]: eX,
   [Chunk981631.uaV.GUILD_INCIDENT_REPORT_FALSE_ALARM]: eJ,
   [Chunk981631.uaV.ROLE_SUBSCRIPTION_PURCHASE]: Chunk345114.Z,
   [Chunk981631.uaV.PURCHASE_NOTIFICATION]: e8,
@@ -881,7 +881,7 @@ function ts(e) {
   } = t, s = to[o];
   return null == s ? (eM(Error("unknown message type ".concat(t.type))), null) : (0, r.jsx)($.ZP, {
     message: t,
-    content: (0, X.ZP)(t).content,
+    content: (0, Q.ZP)(t).content,
     compact: null != i && i,
     children: (0, r.jsx)(s, {
       message: t,

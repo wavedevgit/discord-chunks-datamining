@@ -220,7 +220,7 @@ let V = e => {
         w: a,
         h: o
       }, true, v.LL.ConfettiPreview)
-    }, [c]), l) ? (0, r.jsx)(X, {}) : null == o ? (0, r.jsx)(q, {}) : (0, r.jsxs)(r.Fragment, {
+    }, [c]), l) ? (0, r.jsx)(Q, {}) : null == o ? (0, r.jsx)(q, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: w.modal,
         ref: d,
@@ -443,7 +443,7 @@ let V = e => {
       })]
     })
   }),
-  X = () => (0, Chunk54381.jsx)("div", {
+  Q = () => (0, Chunk54381.jsx)("div", {
     className: Chunk393919.anomaly,
     children: (0, Chunk54381.jsx)("div", {
       className: Chunk393919.spinner,

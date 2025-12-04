@@ -709,7 +709,7 @@ function W(e) {
     avatarTooltipAsset: K,
     avatarTooltipText: z,
     avatarTooltipTitle: q
-  } = e, X = (0, u.vj)(T, P), Q = i.useId(), J = i.useId(), [$] = i.useState(() => O({
+  } = e, Q = (0, u.vj)(T, P), X = i.useId(), J = i.useId(), [$] = i.useState(() => O({
     fill: a
   }, Z({
     size: y,
@@ -717,13 +717,13 @@ function W(e) {
     isMobile: t,
     isTyping: false
   }))), ee = i.useMemo(() => O({
-    fill: X
+    fill: Q
   }, Z({
     size: y,
     status: T,
     isMobile: f,
     isTyping: p
-  })), [X, y, T, f, p]), et = (0, l.q_F)({
+  })), [Q, y, T, f, p]), et = (0, l.q_F)({
     config: A,
     from: $,
     to: ee
@@ -763,7 +763,7 @@ function W(e) {
       className: o()(b.mask, b.svg),
       "aria-hidden": true,
       children: [(0, r.jsxs)("mask", {
-        id: Q,
+        id: X,
         width: ec,
         height: ec,
         children: [(0, r.jsx)("circle", {
@@ -786,7 +786,7 @@ function W(e) {
         y: 0,
         width: ec,
         height: ec,
-        mask: "url(#".concat(Q, ")"),
+        mask: "url(#".concat(X, ")"),
         children: (0, r.jsx)(F, {
           src: v,
           isSpeaking: h,

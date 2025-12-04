@@ -107,7 +107,7 @@ function V(e) {
   } = (0, u.ZP)(c.Z.BADGE), {
     context: W,
     trackUserProfileAction: K
-  } = (0, C.KZ)(), z = S.default.getCurrentUser(), q = (0, T.yd)(null == z ? true : z.premiumType, L.PremiumTypes.TIER_2), X = (0, R.Of)(null != (t = null == z ? true : z.id) ? t : null), Q = (0, P.Z)(X).some(e => e.id === O.l.ORB_PROFILE_BADGE), J = (0, _.c)(z, "UserProfileBadgeList"), $ = (0, p.T)("UserProfileBadgeList");
+  } = (0, C.KZ)(), z = S.default.getCurrentUser(), q = (0, T.yd)(null == z ? true : z.premiumType, L.PremiumTypes.TIER_2), Q = (0, R.Of)(null != (t = null == z ? true : z.id) ? t : null), X = (0, P.Z)(Q).some(e => e.id === O.l.ORB_PROFILE_BADGE), J = (0, _.c)(z, "UserProfileBadgeList"), $ = (0, p.T)("UserProfileBadgeList");
   return (0, r.jsx)("div", {
     className: o()(k.container, a),
     "aria-label": M.intl.string(M.t.VWV0y5),
@@ -170,7 +170,7 @@ function V(e) {
         },
         C = true !== a && e.id !== j.a,
         R = p && J && C,
-        X = (0, r.jsx)("img", {
+        Q = (0, r.jsx)("img", {
           alt: " ",
           "aria-hidden": true,
           src: null != (n = e.iconSrc) ? n : (0, w.Ej)(e.icon),
@@ -187,7 +187,7 @@ function V(e) {
       if (R) {
         let n = (0, r.jsx)(s.Anchor, B(G({}, ee), {
           ref: H,
-          children: X
+          children: Q
         }));
         return (0, r.jsx)(_.Z, {
           targetElementRef: H,
@@ -199,7 +199,7 @@ function V(e) {
       if (C) {
         let n = (0, r.jsx)(s.Anchor, B(G({}, ee), {
             ref: H,
-            children: X
+            children: Q
           })),
           i = () => {
             (0, f.Z)({
@@ -234,12 +234,12 @@ function V(e) {
         }, "".concat(e.id, "-").concat(t))
       }
       let et = (0, r.jsx)(s.Anchor, B(G({}, ee), {
-          children: X
+          children: Q
         })),
         en = F({
           badge: e,
           tieredTenureBadge: u && e.id !== j.a ? a : true,
-          currentUserOwnsOrbBadge: Q
+          currentUserOwnsOrbBadge: X
         });
       return (0, r.jsx)(s.jSM, {
         text: en,

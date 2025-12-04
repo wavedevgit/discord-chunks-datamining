@@ -232,7 +232,7 @@ let M = "sprigReplayIframeLoaded",
   }, Y = e => e && e.trim().substring(0, 500).replace(/\s\s+/g, " ").replace(/\r?\n|\r/g, " ").substring(0, 250), W = {
     capture: true,
     passive: true
-  }, K = ["a", "button", "input", "option", "li", "link"], z = ["Escape", "Enter", "Backspace", "F5", "Tab"], q = false, X = null, Q = null, J = e => {
+  }, K = ["a", "button", "input", "option", "li", "link"], z = ["Escape", "Enter", "Backspace", "F5", "Tab"], q = false, Q = null, X = null, J = e => {
     var t;
     if ((null == (t = e.tagName) ? true : t.toLowerCase()) === "html") return {
       element: "html"
@@ -265,25 +265,25 @@ let M = "sprigReplayIframeLoaded",
         rect: null == a ? true : a.getBoundingClientRect(),
         xPath: H(a)
       } : {}
-    }).elementAttributes) && r.text && (i.elementAttributes.text = Y(i.elementAttributes.text)), null == X || X("Sprig_Click", i)
+    }).elementAttributes) && r.text && (i.elementAttributes.text = Y(i.elementAttributes.text)), null == Q || Q("Sprig_Click", i)
   }, et = e => {
     var t;
     z.includes(e.key) && (t = {
       key: e.key
-    }, null == X || X("Sprig_Keystroke", t))
+    }, null == Q || Q("Sprig_Keystroke", t))
   }, en = () => {
     var e;
     window.performance.getEntriesByType("navigation").map(e => e.type).includes("reload") && (e = {
       url: window.location.href,
       currentPageTitle: document.title
-    }, null == X || X("Sprig_Refresh", module))
+    }, null == Q || Q("Sprig_Refresh", module))
   }, er = () => {
     var e;
     window.performance.getEntriesByType("navigation").map(e => e.type).includes("back_forward") && ((e = {
       curUrl: window.location.href,
       fromUrl: document.referrer,
       currentPageTitle: document.title
-    }).currentPageTitle && (module.currentPageTitle = Y(module.currentPageTitle)), null == X || X("Sprig_BackForward", module))
+    }).currentPageTitle && (module.currentPageTitle = Y(module.currentPageTitle)), null == Q || Q("Sprig_BackForward", module))
   }, ei = ((e, t) => {
     let n;
     return r => {
@@ -292,7 +292,7 @@ let M = "sprigReplayIframeLoaded",
   })(e => {
     if (!(e.target instanceof HTMLElement || e.target instanceof Document)) return;
     let t = e.target;
-    "scrollTop" in t || (t = t.documentElement), null == Q || Q({
+    "scrollTop" in t || (t = t.documentElement), null == X || X({
       xPath: H(t),
       x: t.scrollLeft,
       y: t.scrollTop,
@@ -600,7 +600,7 @@ let ev = new class {
     let t = Date.now(),
       n = (await ev.getEventsBetween(e, t)).map(e => JSON.parse(e.event));
     if (!eB(n)) return;
-    eX(n);
+    eQ(n);
     let r = await eq();
     r && await eK(r, n)
   }, eW = async (e, t) => {
@@ -652,7 +652,7 @@ let ev = new class {
       ej.push(e)
     });
     return eV(), module
-  }, eX = e => {
+  }, eQ = e => {
     var t, n, r;
     let i = e.length ? e[e.length - 1].timestamp : Date.now(),
       a = eD,
@@ -671,11 +671,11 @@ let ev = new class {
         }
       }
     })
-  }, eQ = (e, t) => {
+  }, eX = (e, t) => {
     ek() && !eL && (e || eS.length) && (e && eS.length && (async () => {
       let e = eS.splice(0);
       if (!eB(e)) return;
-      l.b.info("Capturing always-on event array to upload"), eX(e);
+      l.b.info("Capturing always-on event array to upload"), eQ(e);
       let t = await eq();
       t && await eK(t, e)
     })(), eS.push(t))
@@ -1111,7 +1111,7 @@ let eJ = async (e, t) => {
             (0, l.d)("sdk_replay_snapshot_seconds", e / 1e3)
           }
           let n = c || !!t && e.type === f.Meta;
-          c = false, eQ(n, e), e8({
+          c = false, eX(n, e), e8({
             uuid: (0, l.v)(),
             event: JSON.stringify(e),
             isValidStart: n,
@@ -1138,7 +1138,7 @@ let eJ = async (e, t) => {
           id: e,
           userAgent: window.navigator.userAgent
         })
-      }), r = e_, i = em, q || (X = r, Q = i, window.addEventListener("click", ea, W), window.addEventListener("pointerdown", es, W), window.addEventListener("mousedown", eo, W), window.addEventListener("keydown", et, W), window.addEventListener("scroll", ei, W), q = true, en(), er()))
+      }), r = e_, i = em, q || (Q = r, X = i, window.addEventListener("click", ea, W), window.addEventListener("pointerdown", es, W), window.addEventListener("mousedown", eo, W), window.addEventListener("keydown", et, W), window.addEventListener("scroll", ei, W), q = true, en(), er()))
     }, "Error initializing replay")
   },
   isReplayPaused: ep,

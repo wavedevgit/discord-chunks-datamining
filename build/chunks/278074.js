@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   EQ: () => $,
-  P: () => Q
+  P: () => X
 });
 let r = Symbol.for("@ts-pattern/matcher"),
   i = Symbol.for("@ts-pattern/isVariadic"),
@@ -275,10 +275,10 @@ let I = f(b(function(e) {
   q = f(b(function(e) {
     return "symbol" == typeof e
   })),
-  X = f(b(function(e) {
+  Q = f(b(function(e) {
     return null == e
   }));
-var Q = {
+var X = {
   __proto__: null,
   matcher: r,
   optional: _,
@@ -412,7 +412,7 @@ var Q = {
   bigint: K,
   boolean: z,
   symbol: q,
-  nullish: X,
+  nullish: Q,
   instanceOf: function(e) {
     return f(b(function(e) {
       return t => t instanceof e

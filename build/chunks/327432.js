@@ -483,7 +483,7 @@ var F = /(?:[\xA9\xAE\u203C\u2049\u2122\u2139\u2194-\u2199\u21A9\u21AA\u231A\u23
   z = ["text"],
   q = ["text"];
 
-function X(e, t) {
+function Q(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -494,12 +494,12 @@ function X(e, t) {
   return n
 }
 
-function Q(e) {
+function X(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? X(Object(n), true).forEach(function(t) {
+    t % 2 ? Q(Object(n), true).forEach(function(t) {
       o(e, t, n[t])
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : X(Object(n)).forEach(function(t) {
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : Q(Object(n)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
     })
   }
@@ -546,7 +546,7 @@ var J = new WeakMap,
           distance: a = 1
         } = r,
         o = 0;
-      for (var s of $.positions(e, Q(Q({}, r), {}, {
+      for (var s of $.positions(e, X(X({}, r), {}, {
           at: i
         }))) {
         if (o > a) break;
@@ -566,7 +566,7 @@ var J = new WeakMap,
           distance: a = 1
         } = r,
         o = 0;
-      for (var s of $.positions(e, Q(Q({}, r), {}, {
+      for (var s of $.positions(e, X(X({}, r), {}, {
           at: i,
           reverse: true
         }))) {
@@ -1148,7 +1148,7 @@ var J = new WeakMap,
     },
     void(e) {
       var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-      return $.above(e, Q(Q({}, t), {}, {
+      return $.above(e, X(X({}, t), {}, {
         match: t => K.isElement(t) && $.isVoid(e, t)
       }))
     },
@@ -2049,9 +2049,9 @@ var eP = (e, t, n) => {
         if (0 === K.length) break;
         var z = ei.leaf(e, Y),
           q = z.text.slice(0, W),
-          X = z.text.slice(W + K.length);
-        if (z.text = q + X, t)
-          for (var [Q, J] of eg.points(t)) t[J] = ef.transform(Q, n);
+          Q = z.text.slice(W + K.length);
+        if (z.text = q + Q, t)
+          for (var [X, J] of eg.points(t)) t[J] = ef.transform(X, n);
         break;
       case "set_node":
         var {

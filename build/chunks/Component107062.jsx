@@ -110,16 +110,16 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       analyticsLocations: [d.Z.MEMBER_LIST_ACTIVITY_CONTENT_POPOUT]
     });
     if (null == j) return null;
-    let X = (0, r.jsx)(I.PZ, {
+    let Q = (0, r.jsx)(I.PZ, {
         location: I.Gt.POPOUT,
         entry: n
       }),
-      Q = (0, r.jsx)(T.wG, {
+      X = (0, r.jsx)(T.wG, {
         channel: t,
         userDescription: (0, O.kr)(n) ? N.t.vPg1JT : N.t.rPqqts,
         title: n.extra.activity_name,
         subtitle: M,
-        badges: X,
+        badges: Q,
         entry: n,
         showCoverImage: false,
         onClickTitle: x ? true : W,
@@ -153,7 +153,7 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       }),
       en = [ee, J && !x ? $ : et].filter(g.lm);
     return (0, r.jsxs)(T.yR, {
-      children: [Q, (0, r.jsx)(T.St, {
+      children: [X, (0, r.jsx)(T.St, {
         children: (0, r.jsx)(T.WT, {
           onReaction: E,
           onVoiceChannelPreview: D,

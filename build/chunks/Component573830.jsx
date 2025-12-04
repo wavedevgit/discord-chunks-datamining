@@ -128,7 +128,7 @@ function w(e) {
     isHovered: G
   } = (0, o.X)({
     isDisabled: n
-  }), Z = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), B = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), F = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT_SELECTED).spring(), V = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), H = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT).spring(), Y = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT_SELECTED).spring(), W = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), K = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER_SELECTED).spring(), z = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER).spring(), q = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER_SELECTED).spring(), X = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_DEFAULT).spring(), Q = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_ACTIVE).spring(), J = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), $ = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT_SELECTED).spring(), {
+  }), Z = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), B = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), F = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT_SELECTED).spring(), V = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), H = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT).spring(), Y = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT_SELECTED).spring(), W = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), K = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER_SELECTED).spring(), z = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER).spring(), q = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER_SELECTED).spring(), Q = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_DEFAULT).spring(), X = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_ACTIVE).spring(), J = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), $ = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT_SELECTED).spring(), {
     state: ee,
     opacity: et
   } = (0, u.q)({
@@ -197,7 +197,7 @@ function w(e) {
             width: T.enabled ? 16 : en([16, 16, 19, 22, 19, 16]),
             height: T.enabled ? 16 : en([16, 10, 19, 10, 19, 16]),
             rx: T.enabled ? 8 : en([8, 5, 9.5, 5, 9.5, 8])
-          }), O && R(ee, X, Q)]
+          }), O && R(ee, Q, X)]
         })
       })), (0, r.jsx)(_.n, {
         children: (0, r.jsx)("input", b(g({}, j), {

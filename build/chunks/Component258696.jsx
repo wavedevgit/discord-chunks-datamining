@@ -76,10 +76,10 @@ function M(e) {
   }), {
     iconOrder: z,
     expressionsCombinedIntoEmojiButton: q,
-    reducedGap: X
+    reducedGap: Q
   } = S.n.useConfig({
     location: "ChannelTextAreaButtons"
-  }), Q = (0, h.Iu)(e => e.lastActiveView), J = (null == (t = M.gifs) ? true : t.button) != null && (null == (n = M.stickers) ? true : n.button) != null && null != Q ? Q : x.X1.EMOJI, $ = [], ee = !G.isDM() || true === G.recipients || G.recipients.length > 1, et = (0, c.e7)([O.default], () => ee ? null : O.default.getUser(G.recipients[0])), en = (0, f.R)({
+  }), X = (0, h.Iu)(e => e.lastActiveView), J = (null == (t = M.gifs) ? true : t.button) != null && (null == (n = M.stickers) ? true : n.button) != null && null != X ? X : x.X1.EMOJI, $ = [], ee = !G.isDM() || true === G.recipients || G.recipients.length > 1, et = (0, c.e7)([O.default], () => ee ? null : O.default.getUser(G.recipients[0])), en = (0, f.R)({
     channel: G,
     chatInputType: M
   }), er = (0, g.Nt)() && (null == (i = M.confetti) ? true : i.button) != null, ei = (null == (a = M.submit) ? true : a.button) != null && ((null == (E = M.submit) ? true : E.ignorePreference) || V);
@@ -149,7 +149,7 @@ function M(e) {
   let ea = (0, s.chain)($).filter(e => null != z[e.key]).sortBy(e => z[e.key]).map(e => e.node).value();
   return 0 === ea.length ? null : (0, r.jsx)("div", {
     className: o()(L.buttons, {
-      [L.reducedGap]: X
+      [L.reducedGap]: Q
     }),
     children: ea
   })

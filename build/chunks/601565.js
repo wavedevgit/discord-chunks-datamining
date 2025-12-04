@@ -1,21 +1,21 @@
 /** Chunk was on 83098 **/
 /** chunk id: 601565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 }), require("./388685.js"), require("./35282.js"), require("./781311.js");
 var Chunk473749 = require("./473749.js"),
   Chunk211266 = require("./211266.js"),
   Chunk212819 = require("./212819.js");
 
-function s(e) {
+function a(e) {
   let {
     searchOptions: t
-  } = e, [n, s] = l.useState({
+  } = e, [n, a] = l.useState({
     results: [],
     query: ""
   }), i = (0, r.Z)(() => {
-    let e = new a.ZP((e, t) => {
-      s({
+    let e = new s.ZP((e, t) => {
+      a({
         results: e,
         query: t
       })

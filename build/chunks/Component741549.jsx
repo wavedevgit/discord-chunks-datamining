@@ -1,18 +1,101 @@
-/** Chunk was on 80448 **/
-/** chunk id: 741549, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 741549, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => N
 });
 var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
-  Chunk198358 = require("./198358.jsx");
+  Chunk442837 = require("./442837.js"),
+  Chunk481060 = require("./481060.js"),
+  Chunk782568 = require("./782568.js"),
+  Chunk63063 = require("./63063.js"),
+  Chunk324060 = require("./324060.js"),
+  Chunk5888 = require("./5888.js"),
+  Chunk275189 = require("./275189.jsx"),
+  Chunk489658 = require("./489658.jsx"),
+  Chunk909397 = require("./909397.jsx"),
+  Chunk198358 = require("./198358.jsx"),
+  Chunk391876 = require("./391876.jsx"),
+  Chunk947189 = require("./947189.jsx"),
+  Chunk612776 = require("./612776.js"),
+  Chunk981631 = require("./981631.js"),
+  Chunk140939 = require("./140939.js"),
+  Chunk388032 = require("./388032.jsx"),
+  Chunk417788 = require("./417788.js"),
+  Chunk763645 = require("./763645.js"),
+  Chunk868981 = require("./868981.js"),
+  Chunk918746 = require("./918746.js");
 
-function l() {
-  return (0, Chunk54381.jsx)(Chunk198358.Z, {
-    children: (0, Chunk54381.jsx)(Chunk793030.xvT, {
-      variant: "display-lg",
-      color: "text-strong",
-      children: "TBD"
-    })
+function N() {
+  let e = (0, Chunk473749.useContext)(Chunk324060.Q),
+    t = (0, Chunk481060.dQu)(module.primaryColor).hex(),
+    {
+      quests: {
+        numOrbs: n,
+        numCompleted: a
+      } = {
+        numOrbs: 0,
+        numCompleted: 0
+      }
+    } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()),
+    N = 0 === Chunk120356,
+    P = require > 0 || 0 === Chunk120356,
+    R = () => {
+      (0, Chunk782568.Z)(Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_LEARN_MORE))
+    };
+  return (0, Chunk54381.jsxs)(Chunk198358.Z, {
+    className: Chunk763645.container,
+    children: [(0, Chunk54381.jsx)(Chunk275189.Z, {
+      className: Chunk763645.video,
+      slide: Chunk612776.yD.QUESTS,
+      videoEntrySrc: Chunk868981.Z,
+      videoLoopSrc: Chunk918746.Z
+    }), (0, Chunk54381.jsxs)("div", {
+      children: [(0, Chunk54381.jsxs)("div", {
+        className: o()(Chunk417788.title, {
+          [Chunk763645.emptyState]: N
+        }),
+        children: [(0, Chunk54381.jsx)(Chunk793030.qDn, {
+          size: "refresh_sm",
+          color: exports,
+          colorClass: Chunk417788.iconColor,
+          className: Chunk417788.titleIcon
+        }), (0, Chunk54381.jsx)(Chunk391876.Z, {
+          variant: "eyebrow",
+          className: Chunk417788.eyebrow,
+          children: N ? Chunk388032.intl.string(Chunk140939.default.QkdNzt) : Chunk388032.intl.string(Chunk140939.default.qsFkSO)
+        })]
+      }), !N && (0, Chunk54381.jsx)(Chunk947189.Z, {
+        end: Chunk120356
+      }), P && (0, Chunk54381.jsx)(Chunk391876.Z, {
+        variant: "heading-xxl/medium",
+        className: Chunk763645.subtitle,
+        children: 0 === Chunk120356 ? Chunk388032.intl.format(Chunk140939.default.UYTBoT, {
+          learnMoreHook: (e, t) => (0, r.jsx)(s.P3F, {
+            onClick: R,
+            className: T.learnMore,
+            children: (0, r.jsx)(E.Z, {
+              variant: "heading-xxl/medium",
+              className: T.link,
+              children: e
+            })
+          }, t)
+        }) : Chunk388032.intl.format(Chunk140939.default["gd+Olh"], {
+          numOrbs: require,
+          orbsHook: (e, t) => (0, r.jsxs)(m.Z, {
+            children: [(0, r.jsx)(s.aQr, {
+              className: T.orbsIcon,
+              color: c.TVs.colors.BLACK
+            }), e]
+          }, t)
+        })
+      }), (0, Chunk54381.jsx)(Chunk909397.o, {
+        slide: Chunk612776.yD.QUESTS
+      })]
+    })]
   })
 }

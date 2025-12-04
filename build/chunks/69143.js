@@ -18,11 +18,7 @@ let r = (0, require("./427164.js").le)({
     },
     1: {
       affineGiftingEnabled: true,
-      affinityThreshold: .3
-    },
-    2: {
-      affineGiftingEnabled: true,
-      affinityThreshold: .5
+      affinityThreshold: .1
     }
   }
 })

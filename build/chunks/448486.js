@@ -11,7 +11,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk388032 = require("./388032.jsx");
 
 function o(e) {
-  let t = (0, r.Wu)([a.default], () => e.recipients.map(e => a.default.getUser(e)).filter(s.lm).map(e => i.ZP.getName(e)));
+  let t = (0, r.Wu)([s.default], () => e.recipients.map(e => s.default.getUser(e)).filter(a.lm).map(e => i.ZP.getName(e)));
   return l.useMemo(() => {
     if ("" === e.name) return null;
     if (0 === t.length) return null;

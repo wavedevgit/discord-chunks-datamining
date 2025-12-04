@@ -1,14 +1,15 @@
-/** Chunk was on 1272 **/
-/** chunk id: 5888, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 5888, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => _,
-  p: () => u
+  Z: () => S,
+  p: () => c
 });
-var r, i, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk612776 = require("./612776.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,76 +18,92 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
 }
-var u = ((r = {})[r.INIT = 0] = "INIT", r[r.FETCHING = 1] = "FETCHING", r[r.SUCCESS = 2] = "SUCCESS", r[r.ERROR = 3] = "ERROR", r);
-let d = {},
-  p = 0,
+var c = function(e) {
+  return e[e.INIT = 0] = "INIT", e[e.FETCHING = 1] = "FETCHING", e[e.SUCCESS = 2] = "SUCCESS", e[e.ERROR = 3] = "ERROR", e
+}({});
+let u = {},
+  d = 0,
   f = {
     volume: 1,
     isMuted: false,
     highestSlideSeen: Chunk612776.yD.WELCOME
   },
-  h = c({}, f);
+  p = l({}, f);
 
-function g() {
-  d = {}, p = 0
+function _() {
+  u = {}, d = 0
 }
-class m extends(i = Chunk442837.ZP.PersistedStore) {
+
+function m() {
+  _(), p = l({}, f)
+}
+
+function h() {
+  d = 1
+}
+
+function g(e) {
+  u = e.data, d = 2
+}
+
+function E() {
+  d = 3
+}
+
+function b(e) {
+  p.volume = e.volume
+}
+
+function y() {
+  p.isMuted = !p.isMuted
+}
+
+function O(e) {
+  p.highestSlideSeen = e.slide
+}
+class v extends(r = Chunk442837.ZP.PersistedStore) {
   getState() {
-    return h
-  }
-  initialize(e) {
-    g(), null != e && (h = c({}, h, e))
-  }
-  getCheckpointData() {
-    return d
-  }
-  getFetchState() {
     return p
   }
+  initialize(e) {
+    _(), null != e && (p = l({}, p, e))
+  }
+  getCheckpointData() {
+    return u
+  }
+  getFetchState() {
+    return d
+  }
   get volume() {
-    return h.volume
+    return p.volume
   }
   get isMuted() {
-    return h.isMuted
+    return p.isMuted
   }
   get highestSlideSeen() {
-    return h.highestSlideSeen
+    return p.highestSlideSeen
   }
 }
-o(m, "displayName", "CheckpointStore"), o(m, "persistKey", "CheckpointStore");
-let _ = new m(Chunk570140.Z, {
-  CONNECTION_OPEN: g,
-  CHECKPOINT_FETCH_START: function() {
-    p = 1
-  },
-  CHECKPOINT_FETCH_SUCCESS: function(e) {
-    d = e.data, p = 2
-  },
-  CHECKPOINT_FETCH_FAILED: function() {
-    p = 3
-  },
-  CHECKPOINT_SET_VOLUME: function(e) {
-    h.volume = e.volume
-  },
-  CHECKPOINT_TOGGLE_MUTE: function() {
-    h.isMuted = !h.isMuted
-  },
-  CHECKPOINT_SET_HIGHEST_SLIDE_SEEN: function(e) {
-    h.highestSlideSeen = e.slide
-  },
-  LOGOUT: function() {
-    g(), h = c({}, f)
-  }
+s(v, "displayName", "CheckpointStore"), s(v, "persistKey", "CheckpointStore");
+let S = new v(Chunk570140.Z, {
+  CONNECTION_OPEN: _,
+  CHECKPOINT_FETCH_START: h,
+  CHECKPOINT_FETCH_SUCCESS: g,
+  CHECKPOINT_FETCH_FAILED: E,
+  CHECKPOINT_SET_VOLUME: b,
+  CHECKPOINT_TOGGLE_MUTE: y,
+  CHECKPOINT_SET_HIGHEST_SLIDE_SEEN: O,
+  LOGOUT: m
 })

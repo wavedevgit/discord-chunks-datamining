@@ -120,7 +120,7 @@ function q(e, t, n, r, i) {
   } : null
 }
 
-function X(e, t, n, r) {
+function Q(e, t, n, r) {
   let i = null != e ? f.Z.getApplication(e) : null;
   if (null == i || null == e || t.has(e)) return null;
   let a = K(i, n);
@@ -147,7 +147,7 @@ function X(e, t, n, r) {
   }
 }
 
-function Q() {
+function X() {
   let e = new Set(Chunk594190.ZP.getRunningVerifiedApplicationIds()),
     t = {},
     n = new Set,
@@ -156,12 +156,12 @@ function Q() {
       return null != n ? (t[n.id] = e.lastFocused * I.Z.Millis.SECOND, n.id) : null
     }),
     i = Object.values(Chunk283595.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, true)).filter(Chunk823379.lm),
-    a = [...r.map(r => X(r, n, t, e)).filter(Chunk823379.lm), ...Chunk658722].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
+    a = [...r.map(r => Q(r, n, t, e)).filter(Chunk823379.lm), ...Chunk658722].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
   return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, M) && (M = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(V(M).map(e => e.application).slice(0, L)), true)
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk812206.Z, Chunk77498.Z, Chunk592745.Z, Chunk594190.ZP, Chunk417363.Z, Chunk941128.Z, Chunk283595.Z, Chunk230307.Z, Chunk246946.Z, Chunk757266.Z], Q, 200), this.syncWith([Chunk799777.Z, Chunk706454.default], () => true)
+    this.syncWith([Chunk812206.Z, Chunk77498.Z, Chunk592745.Z, Chunk594190.ZP, Chunk417363.Z, Chunk941128.Z, Chunk283595.Z, Chunk230307.Z, Chunk246946.Z, Chunk757266.Z], X, 200), this.syncWith([Chunk799777.Z, Chunk706454.default], () => true)
   }
   get applicationFilterQuery() {
     return k

@@ -94,8 +94,8 @@ function K(e) {
     voiceChannel: K,
     className: z,
     onClose: q,
-    appContext: X
-  } = e, Q = (0, E.Dt)(), J = (0, E.Dt)(), {
+    appContext: Q
+  } = e, X = (0, E.Dt)(), J = (0, E.Dt)(), {
     analyticsLocations: $
   } = (0, p.ZP)(f.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     themeType: ee
@@ -158,7 +158,7 @@ function K(e) {
   }, ed = () => i.type === U.IIU.HANG_STATUS ? (0, r.jsx)(x.f, {
     variant: "heading-sm/semibold",
     text: (0, b.O8)(t.id, i),
-    id: Q
+    id: X
   }) : (0, d.Z)(i) && null != K ? (0, r.jsxs)("div", {
     className: F.voiceChannelText,
     children: [(0, r.jsx)(s.gj8, {
@@ -168,23 +168,23 @@ function K(e) {
     }), (0, r.jsx)(x.f, {
       variant: "heading-sm/semibold",
       text: K.name,
-      id: Q
+      id: X
     })]
   }) : (0, u.Z)(i) || (0, v.dS)(i) ? (0, r.jsx)(x.f, {
     variant: "heading-sm/semibold",
     text: i.name,
-    id: Q
+    id: X
   }) : null != i.details ? (0, r.jsx)(m._, {
     href: i.details_url,
     children: (0, r.jsx)(x.f, {
       variant: "heading-sm/semibold",
       text: i.details,
-      id: Q
+      id: X
     })
   }) : (0, r.jsx)(x.f, {
     variant: "heading-sm/semibold",
     text: i.name,
-    id: Q
+    id: X
   }), ef = () => {
     if (i.type === U.IIU.HANG_STATUS) return null;
     if ((0, d.Z)(i) && null != Y) return (0, r.jsx)(x.Z, {
@@ -324,7 +324,7 @@ function K(e) {
       className: a()(F.card, z),
       onAction: en,
       onClose: q,
-      "aria-labelledby": ea ? "".concat(J, " ").concat(Q) : Q,
+      "aria-labelledby": ea ? "".concat(J, " ").concat(X) : X,
       children: [(0, r.jsx)(D.Z, W(H({
         textId: J,
         tags: ec()
@@ -335,7 +335,7 @@ function K(e) {
           activity: i,
           entry: et,
           onClose: q,
-          appContext: X
+          appContext: Q
         })
       })), (0, r.jsxs)("div", {
         className: F.body,

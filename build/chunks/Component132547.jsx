@@ -62,7 +62,7 @@ let L = e => {
     } = (0, f.ZP)(d.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [K, z] = i.useState(false),
     q = (0, s.e7)([m.Z], () => null != t ? m.Z.getUserProfile(t) : null),
-    X = (0, b.Z)({
+    Q = (0, b.Z)({
       location: "SubscriberNitroHome"
     });
   return null == q ? (0, r.jsx)("div", {
@@ -75,7 +75,7 @@ let L = e => {
       children: [(0, r.jsx)(c.$1m, {
         color: "nitro-pink",
         className: o()(D.container, D.responsiveContainer, {
-          [D.hiddenGradient]: !X
+          [D.hiddenGradient]: !Q
         }),
         children: (0, r.jsxs)(f.Gt, {
           value: W,
@@ -87,7 +87,7 @@ let L = e => {
             children: (0, r.jsx)(T.Z, {
               buttonVisibilityRef: U,
               className: D.heroHeading,
-              enablePremiumBrandRefresh: X,
+              enablePremiumBrandRefresh: Q,
               userDiscountOffer: k,
               discountedPrice: H
             })
@@ -143,7 +143,7 @@ let L = e => {
       isAllPerksVisible: G,
       setIsAllPerksVisible: Z,
       previousComponent: A.MQ.HOME,
-      enablePremiumBrandRefresh: X
+      enablePremiumBrandRefresh: Q
     })]
   })
 }

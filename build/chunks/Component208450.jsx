@@ -2,7 +2,7 @@
 /** chunk id: 208450, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => X,
+  ZP: () => Q,
   uh: () => Y
 }), require("./35282.js"), require("./704826.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -541,7 +541,7 @@ function q(e) {
     q = (0, N.UX)({
       location: "Search"
     }),
-    X = i.useMemo(() => t.type === B.aib.DMS ? F.intl.string(F.t.m7OrlR) : t.type === B.aib.CHANNEL && q || W ? F.intl.formatToPlainString(F.t.LDZtFO, {
+    Q = i.useMemo(() => t.type === B.aib.DMS ? F.intl.string(F.t.m7OrlR) : t.type === B.aib.CHANNEL && q || W ? F.intl.formatToPlainString(F.t.LDZtFO, {
       name: Y
     }) : F.intl.string(F.t["5h0QOP"]), [t.type, q, W, Y]);
   return (0, r.jsx)(z, {
@@ -553,12 +553,12 @@ function q(e) {
     keyboardModeEnabled: o,
     onSearch: H,
     isSearchSidebarOrModalOpen: V,
-    placeholder: X,
+    placeholder: Q,
     isSearchFiltersRedesignEnabled: W
   })
 }
 
-function X(e) {
+function Q(e) {
   let {
     className: t,
     guildId: n,

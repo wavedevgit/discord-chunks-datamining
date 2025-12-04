@@ -2,7 +2,7 @@
 /** chunk id: 82142, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => X
+  Z: () => Q
 }), require("./388685.js");
 var r, Chunk913527 = require("./913527.js"),
   a = require.n(Chunk913527),
@@ -315,4 +315,4 @@ let q = new z(Chunk570140.Z, {
     LOAD_ARCHIVED_THREADS_SUCCESS: W,
     LOAD_FORUM_POSTS: K
   }),
-  X = q
+  Q = q

@@ -91,8 +91,8 @@ function _(e) {
     expressionsGrid: K,
     rowCount: z,
     rowCountBySection: q,
-    columnCounts: X,
-    gutterWidth: Q
+    columnCounts: Q,
+    gutterWidth: X
   } = (0, o.yi)({
     categories: t,
     collapsedCategories: n,
@@ -107,7 +107,7 @@ function _(e) {
     handleGridContainerKeyDown: et,
     isUsingKeyboardNavigation: en
   } = (0, o.t$)({
-    columnCounts: X,
+    columnCounts: Q,
     expressionsListRef: B,
     expressionsGrid: K,
     onSelectItem: _,
@@ -115,11 +115,11 @@ function _(e) {
     gridNavigatorId: M
   }), er = i.useCallback((e, t) => O(K[e], $(e), {
     isUsingKeyboardNavigation: en.current,
-    gutterWidth: Q,
+    gutterWidth: X,
     rowIndex: e,
     totalRowCount: z,
     sectionIndex: t.sectionIndex
-  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, Q, en, O, f, z]), ei = i.useCallback(e => null == S ? true : S(t[e], e), [t, S]), ea = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), eo = i.useCallback(() => {
+  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, X, en, O, f, z]), ei = i.useCallback(e => null == S ? true : S(t[e], e), [t, S]), ea = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), eo = i.useCallback(() => {
     var e;
     return null == T ? true : T(null == K || null == (e = K[Y.rowIndex]) ? true : e[Y.columnIndex])
   }, [K, Y.columnIndex, Y.rowIndex, T]);

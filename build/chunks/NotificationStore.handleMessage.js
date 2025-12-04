@@ -175,8 +175,8 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       f = F.default.getUser(null == (t = a.author) ? true : t.id),
       g = F.default.getCurrentUser();
     if (null == c || null == f || null == g) returnfalse;
-    let p = (0, T.eF)(a, r, !er),
-      E = w.Z.getNotifyMessagesInSelectedChannel() && (0, T.N_)(a, r);
+    let p = (0, _.eF)(a, r, !er),
+      E = w.Z.getNotifyMessagesInSelectedChannel() && (0, _.N_)(a, r);
     if (!p && !E || a.type === z.uaV.CHANGELOG && (null == a.changelog_id || h.Z.latestChangelogId() !== a.changelog_id)) returnfalse;
     let N = !w.Z.isSoundDisabled(et);
     if (E && (N && Y.Z.playNotificationSound("message3", .4), !er) || !p) returnfalse;
@@ -188,7 +188,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       title: S,
       body: v,
       emoji: x
-    } = (0, T.Xi)(c, a, f), P = !(0, m._x)("NotificationStore.handleMessage", null == g ? true : g.id);
+    } = (0, _.Xi)(c, a, f), P = !(0, m._x)("NotificationStore.handleMessage", null == g ? true : g.id);
     if (o.Z.dispatch({
         type: "RPC_NOTIFICATION_CREATE",
         channelId: c.id,
@@ -196,7 +196,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
         icon: I,
         title: S,
         body: v
-      }), (0, _.R)(a, c.guild_id), w.Z.getDesktopType() === z.qrD.NEVER) return N && Y.Z.playNotificationSound(et, en), false;
+      }), (0, T.R)(a, c.guild_id), w.Z.getDesktopType() === z.qrD.NEVER) return N && Y.Z.playNotificationSound(et, en), false;
     let Z = null != (i = D.Z.getMessage(r, a.id)) ? i : (0, C.e5)(a);
     Y.Z.showNotification(I, S, v, {
       notif_type: "MESSAGE_CREATE",
@@ -206,7 +206,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       channel_id: c.id,
       channel_type: c.type,
       guild_id: c.guild_id,
-      badge: (0, U.Ex)(Z, g)
+      badge: (0, M.Ex)(Z, g)
     }, {
       omitViewTracking: P,
       tag: a.id,
@@ -290,7 +290,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       u = j.Z.getChannel(i),
       c = x.Z.getStageInstanceByChannel(i);
     null != s && null != u && null != c && Y.Z.showNotification((0, A.EB)(s, 128), u.name, J.intl.formatToPlainString(J.t.sqnsSP, {
-      channelName: (0, p.F6)(u, F.default, M.Z),
+      channelName: (0, p.F6)(u, F.default, U.Z),
       channelTopic: null == c ? true : c.topic
     }), {
       notif_type: "Stage Speak Invite"
@@ -307,7 +307,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       l = R.Z.getGuild(t.guild_id),
       r = j.Z.getChannel(t.channel_id),
       a = F.default.getUser(t.host_id);
-    if (null == n || null == r || null == l || null == a || !(0, T.LL)(n, a, r) || !k.Z.can(i.$e(z.Plq.CONNECT, z.Plq.VIEW_CHANNEL), r) || eo.has(t.id)) returnfalse;
+    if (null == n || null == r || null == l || null == a || !(0, _.LL)(n, a, r) || !k.Z.can(i.$e(z.Plq.CONNECT, z.Plq.VIEW_CHANNEL), r) || eo.has(t.id)) returnfalse;
     eo.add(t.id), Y.Z.showNotification((0, A.EB)(l, 128), J.intl.formatToPlainString(J.t.bZ4Okd, {
       guildName: l.name
     }), J.intl.formatToPlainString(J.t.qTelnO, {
@@ -387,7 +387,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
     } = e;
     if (ec()) returnfalse;
     let i = j.Z.getChannel(n.parent_id);
-    if (null == i || !z.TPd.GUILD_THREADS_ONLY.has(i.type) || !l || !(0, T.FI)(n, i, !er)) returnfalse;
+    if (null == i || !z.TPd.GUILD_THREADS_ONLY.has(i.type) || !l || !(0, _.FI)(n, i, !er)) returnfalse;
     let {
       author: r,
       user: a
@@ -507,7 +507,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
     let {
       icon: i,
       body: r
-    } = (0, T.Xi)(l, n, n.author);
+    } = (0, _.Xi)(l, n, n.author);
     Y.Z.showNotification(i, J.intl.string(J.t.IjZJB5), r, {
       notif_type: "MESSAGE_REMINDER_DUE"
     }, {

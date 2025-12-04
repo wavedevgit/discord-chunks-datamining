@@ -83,7 +83,7 @@ function q(e) {
   return null == t || null != Z && Z !== t.type ? null : t
 }
 
-function X() {
+function Q() {
   var e, t;
   let n = null != (e = Chunk914010.Z.getGuildId()) ? module : true,
     r = null != (t = Chunk944486.Z.getChannelId()) ? exports : true;
@@ -157,7 +157,7 @@ function X() {
   return Chunk570140.length > 0 && (i = [(0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["80lOZ1"])), ...Chunk570140, ...i]), i
 }
 
-function Q(e, t) {
+function X(e, t) {
   switch (Z) {
     case u.h8.USER: {
       let t = y.Z.getGuild(I.Z.getGuildId());
@@ -221,7 +221,7 @@ function ee(e, t) {
 }
 
 function et(e, t) {
-  ee(e = "" === (t = t.trim()).trim() ? X() : e, H) || (H = e, Q(e, t))
+  ee(e = "" === (t = t.trim()).trim() ? Q() : e, H) || (H = e, X(e, t))
 }
 
 function en() {

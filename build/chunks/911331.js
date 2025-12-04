@@ -72,13 +72,13 @@ var s = function(e, t) {
       K = "offsetWidth" in D ? D.offsetWidth - D.clientWidth - B - V : 0,
       z = "offsetHeight" in D ? D.offsetHeight - D.clientHeight - F - H : 0,
       q = "offsetWidth" in D ? 0 === D.offsetWidth ? 0 : j / D.offsetWidth : 0,
-      X = "offsetHeight" in D ? 0 === D.offsetHeight ? 0 : L / D.offsetHeight : 0;
+      Q = "offsetHeight" in D ? 0 === D.offsetHeight ? 0 : L / D.offsetHeight : 0;
     if (_ === D) Y = "start" === s ? N : "end" === s ? N - E : "nearest" === s ? o(y, y + E, E, F, H, y + N, y + N + v, v) : N - E / 2, W = "start" === l ? P : "center" === l ? P - g / 2 : "end" === l ? P - g : o(b, b + g, g, B, V, b + P, b + P + S, S), Y = Math.max(0, Y + y), W = Math.max(0, W + b);
     else {
       Y = "start" === s ? N - M - F : "end" === s ? N - U + H + z : "nearest" === s ? o(M, U, L, F, H + z, N, N + v, v) : N - (M + L / 2) + z / 2, W = "start" === l ? P - G - B : "center" === l ? P - (G + j / 2) + K / 2 : "end" === l ? P - k + V + K : o(G, k, j, B, V + K, P, P + S, S);
-      var Q = D.scrollLeft,
+      var X = D.scrollLeft,
         J = D.scrollTop;
-      N += J - (Y = Math.max(0, Math.min(J + Y / X, D.scrollHeight - L / X + z))), P += Q - (W = Math.max(0, Math.min(Q + W / q, D.scrollWidth - j / q + K)))
+      N += J - (Y = Math.max(0, Math.min(J + Y / Q, D.scrollHeight - L / Q + z))), P += X - (W = Math.max(0, Math.min(X + W / q, D.scrollWidth - j / q + K)))
     }
     R.push({
       el: D,

@@ -102,7 +102,7 @@ function z(e, t) {
   return i
 }
 let q = Chunk957825.Om + Chunk149203.Su.MEDIUM,
-  X = Chunk473749.memo(function(e) {
+  Q = Chunk473749.memo(function(e) {
     var {
       isActive: t,
       className: n,
@@ -127,7 +127,7 @@ let q = Chunk957825.Om + Chunk149203.Su.MEDIUM,
       })
     }))
   }),
-  Q = e => {
+  X = e => {
     let {
       positionContainerRef: t,
       drawerRef: n,
@@ -191,7 +191,7 @@ function J(e) {
   } = e, er = i.useRef(null), ei = i.useRef(false), ea = i.useRef(null), eo = i.useRef(null), {
     drawerWidth: es,
     handleDrawerResizeHandleMouseDown: el
-  } = Q({
+  } = X({
     positionContainerRef: er,
     drawerRef: eo,
     orientation: "left" === $ ? g.y.HORIZONTAL_RIGHT : g.y.HORIZONTAL_LEFT
@@ -257,7 +257,7 @@ function J(e) {
     ew = (null == (s = z.soundmoji) ? true : s.allowSending) === true && null != W,
     eD = "left" === $ ? "right" : "left",
     ex = null != ee ? ee : "left" === $ ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight,
-    eL = eb ? (0, r.jsx)(X, {
+    eL = eb ? (0, r.jsx)(Q, {
       id: U._3,
       "aria-controls": U.vO,
       "aria-selected": ec === j.X1.GIF,
@@ -265,7 +265,7 @@ function J(e) {
       viewType: j.X1.GIF,
       children: B.intl.string(B.t["6gUTsS"])
     }) : null,
-    ej = ey ? (0, r.jsx)(X, {
+    ej = ey ? (0, r.jsx)(Q, {
       id: Z.ED,
       "aria-controls": Z.nZ,
       "aria-selected": ec === j.X1.STICKER,
@@ -277,7 +277,7 @@ function J(e) {
         children: B.intl.string(B.t.nf1s3u)
       })
     }) : null,
-    eM = (0, r.jsx)(X, {
+    eM = (0, r.jsx)(Q, {
       id: U.td,
       "aria-controls": U.cZ,
       "aria-selected": ec === j.X1.EMOJI,
@@ -332,7 +332,7 @@ function J(e) {
                     children: [eM, eL, ej]
                   }) : (0, r.jsxs)(r.Fragment, {
                     children: [eL, ej, eM]
-                  }), e_ && ew && (0, r.jsx)(X, {
+                  }), e_ && ew && (0, r.jsx)(Q, {
                     id: U.Hr,
                     "aria-controls": U.gV,
                     "aria-selected": ec === j.X1.SOUNDBOARD,

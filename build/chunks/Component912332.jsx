@@ -70,7 +70,8 @@ function d(e) {
       initialSelectedDestinations: l,
       forwardOptions: d,
       onRequestSent: f,
-      customSendHandler: p
+      customSendHandler: p,
+      source: o
     }))
   }, {
     modalKey: u

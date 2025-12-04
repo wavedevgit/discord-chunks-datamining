@@ -389,14 +389,14 @@ function q(e) {
   T.set(e, c)
 }
 
-function X(e) {
+function Q(e) {
   let {
     autocompleteStateId: t
   } = e;
   q(t)
 }
 
-function Q() {
+function X() {
   for (let e of T.keys()) q(module)
 }
 
@@ -449,7 +449,7 @@ let en = new et(Chunk570140.Z, {
     CHANNEL_DELETE: z,
     STREAMER_MODE_UPDATE: $,
     CHANNEL_SELECT: ee,
-    LOGOUT: Q,
-    SEARCH_HISTORY_WEB_CLEAR_ITEMS: X
+    LOGOUT: X,
+    SEARCH_HISTORY_WEB_CLEAR_ITEMS: Q
   }),
   er = en

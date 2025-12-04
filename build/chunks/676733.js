@@ -2,7 +2,7 @@
 /** chunk id: 676733, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  RM: () => Q,
+  RM: () => X,
   X2: () => $,
   bL: () => et,
   iA: () => Z,
@@ -116,7 +116,7 @@ class j extends Chunk557635.Mi {
     return r.join(" ")
   }
   constructor(...e) {
-    super(...e), this.headerRows = [], this.columns = [], this.rows = [], this.rowHeaderColumnKeys = new Set, this.head = new H(false), this.body = new X(false), this.columnsDirty = true
+    super(...e), this.headerRows = [], this.columns = [], this.rows = [], this.rowHeaderColumnKeys = new Set, this.head = new H(false), this.body = new Q(false), this.columnsDirty = true
   }
 }
 let M = (0, Chunk473749.createContext)(null),
@@ -244,11 +244,11 @@ function B({
       isFocusVisible: z,
       state: T
     }
-  }), X = !!(Z && !(null == u ? true : u.isDisabled)), Q = q.style, J = null;
+  }), Q = !!(Z && !(null == u ? true : u.isDisabled)), X = q.style, J = null;
   S && (J = S.useTableColumnResizeState({
     tableWidth: S.tableWidth
-  }, T), A || (Q = {
-    ...Q,
+  }, T), A || (X = {
+    ...X,
     tableLayout: "fixed",
     width: "fit-content"
   }));
@@ -273,11 +273,11 @@ function B({
     ]
   }, L.createElement(b.MT, null, L.createElement($, {
     ...(0, y.d)(ee, q, j, W, null == f ? true : f.collectionProps),
-    style: Q,
+    style: X,
     ref: t,
     slot: e.slot || true,
     onScroll: e.onScroll,
-    "data-allows-dragging": X || true,
+    "data-allows-dragging": Q || true,
     "data-drop-target": V || true,
     "data-focused": K || true,
     "data-focus-visible": z || true
@@ -455,9 +455,9 @@ let z = (0, Chunk406581.G5)(K, (e, t, n) => {
     }, b.children))
   }),
   q = (0, Chunk473749.createContext)(null);
-class X extends Chunk557635.$x {}
-X.type = "tablebody";
-let Q = (0, Chunk406581.IW)(X, (e, t) => {
+class Q extends Chunk557635.$x {}
+Q.type = "tablebody";
+let X = (0, Chunk406581.IW)(Q, (e, t) => {
   var n;
   let r, i = (0, L.useContext)(U),
     {

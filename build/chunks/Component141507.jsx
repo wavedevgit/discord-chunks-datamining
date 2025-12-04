@@ -111,9 +111,9 @@ let w = e => {
           }))
         }
       }), null == t) return null;
-    let X = m.Z.theme;
+    let Q = m.Z.theme;
     if (R(t)) {
-      var Q;
+      var X;
       let e = null != t.id ? b.ZP.getEmojiURL({
         id: t.id,
         animated: Y && t.animated,
@@ -124,7 +124,7 @@ let w = e => {
         className: N.glyphEmoji,
         children: "surrogates" in t ? t.surrogates : null
       }) : (0, r.jsx)("img", {
-        alt: null != (Q = (0, y.nY)(t)) ? Q : "",
+        alt: null != (X = (0, y.nY)(t)) ? X : "",
         src: e,
         className: N.emoji
       })
@@ -141,11 +141,11 @@ let w = e => {
         s = n(63149);
       D = K.has(t.guildId) ? (0, r.jsx)("img", {
         className: N.icon,
-        src: (0, o.wj)(X) ? a : s,
+        src: (0, o.wj)(Q) ? a : s,
         alt: ""
       }) : (0, r.jsx)("img", {
         className: N.icon,
-        src: (0, o.wj)(X) ? e : i,
+        src: (0, o.wj)(Q) ? e : i,
         alt: ""
       })
     }

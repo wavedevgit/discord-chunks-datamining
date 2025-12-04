@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk963614 = require("./963614.js"),
   Chunk917107 = require("./917107.js"),
   Chunk208156 = require("./208156.jsx"),
-  Chunk748492 = require("./748492.jsx"),
+  Chunk676526 = require("./676526.jsx"),
   Chunk701488 = require("./701488.js"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js"),
@@ -98,8 +98,8 @@ function V(e) {
   }), q = (0, A.sU)({
     channelId: null == p ? true : p.id
   }), {
-    activityParticipant: X,
-    selectedParticipant: Q,
+    activityParticipant: Q,
+    selectedParticipant: X,
     participantsOpen: J
   } = (0, s.cj)([g.Z], () => ({
     activityParticipant: null != Z && null != p ? g.Z.getParticipant(p.id, (0, h.gN)({
@@ -108,7 +108,7 @@ function V(e) {
     })) : null,
     selectedParticipant: null != p ? g.Z.getSelectedParticipant(p.id) : null,
     participantsOpen: null != p && g.Z.getParticipantsOpen(p.id)
-  })), $ = W || null != q, ee = (0, P.Z)(null == p ? true : p.id), et = ee && (null == Q ? true : Q.type) !== j.fO.ACTIVITY, en = !ee && V === x.Ez.PIP, er = $ && (et || en) && null == K, ei = (!$ || er) && !z, ea = ei && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
+  })), $ = W || null != q, ee = (0, P.Z)(null == p ? true : p.id), et = ee && (null == X ? true : X.type) !== j.fO.ACTIVITY, en = !ee && V === x.Ez.PIP, er = $ && (et || en) && null == K, ei = (!$ || er) && !z, ea = ei && null != O.Z.pipVideoWindow && null != O.Z.pipActivityWindow;
 
   function eo() {
     if (null != p) {
@@ -136,7 +136,7 @@ function V(e) {
       isActivityInTextChannel: o,
       users: s
     } = e;
-    return ei && null != Z && ((null == X ? true : X.type) === j.fO.ACTIVITY || o) ? (null == (t = Z.config) ? true : t.useInteractivePIP) ? (0, r.jsx)(w.of, {
+    return ei && null != Z && ((null == Q ? true : Q.type) === j.fO.ACTIVITY || o) ? (null == (t = Z.config) ? true : t.useInteractivePIP) ? (0, r.jsx)(w.of, {
       onJumpToChannel: eo,
       applicationId: Z.applicationId,
       channel: p,
@@ -160,7 +160,7 @@ function V(e) {
       applicationId: Z.applicationId,
       users: s,
       embeddedActivity: Z
-    }) : null == X ? null : (0, r.jsxs)(r.Fragment, {
+    }) : null == Q ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         onMouseMove: n,
         onMouseDown: n,
@@ -175,7 +175,7 @@ function V(e) {
         onJumpToChannel: eo,
         channel: p,
         applicationId: Z.applicationId,
-        selectedParticipant: X,
+        selectedParticipant: Q,
         embeddedActivity: Z
       })]
     }) : null
@@ -189,7 +189,7 @@ function V(e) {
           applicationId: B
         })
       }
-    }, [B, ei]), null == Z || null == Y || (0, P.Z)(null == p ? true : p.id) && null == X || null == H) return null;
+    }, [B, ei]), null == Z || null == Y || (0, P.Z)(null == p ? true : p.id) && null == Q || null == H) return null;
   let ec = Array.from(Z.userIds).map(e => S.default.getUser(e)).filter(e => null != e),
     eu = {
       instance_id: null != (a = null != (n = Z.compositeInstanceId) ? n : Z.launchId) ? a : "",

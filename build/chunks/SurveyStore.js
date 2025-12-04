@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   J: () => P,
-  Z: () => Q
+  Z: () => X
 }), require("./388685.js");
 var r, Chunk913527 = require("./913527.js"),
   a = require.n(Chunk913527),
@@ -211,7 +211,7 @@ function q(e) {
     }).enableNitroUnsubSurvey) returnfalse;
   (0, u.wk)("1439042286574112799", true)
 }
-class X extends(r = Chunk442837.ZP.PersistedStore) {
+class Q extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(f.Z, p.Z, _.Z, m.Z, h.default), S = null != e ? e : v, this.syncWith([m.Z], K)
   }
@@ -228,7 +228,7 @@ class X extends(r = Chunk442837.ZP.PersistedStore) {
     return S.lastSeen
   }
 }
-E(X, "displayName", "SurveyStore"), E(X, "persistKey", "SurveyStore"), E(X, "migrations", [e => {
+E(Q, "displayName", "SurveyStore"), E(Q, "persistKey", "SurveyStore"), E(Q, "migrations", [e => {
   let t = b({}, e);
   return delete t.validSurveys, delete t.currentSurvey, delete t.iosIsPushNotificationClicked, delete t.iosIsInviteShown, delete t.iosFirstRunDate, t
 }, e => {
@@ -242,7 +242,7 @@ E(X, "displayName", "SurveyStore"), E(X, "persistKey", "SurveyStore"), E(X, "mig
     hiddenSurveys: null != (t = e.hiddenSurveys) ? t : {}
   })
 }]);
-let Q = new X(Chunk570140.Z, {
+let X = new Q(Chunk570140.Z, {
   CONNECTION_OPEN: L,
   CONNECTION_RESUMED: L,
   SURVEY_FETCHED: G,

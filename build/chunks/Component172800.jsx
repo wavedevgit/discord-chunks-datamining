@@ -110,13 +110,13 @@ let L = e => {
     inNitroLockedSection: z,
     handleScrollUpOnSectionCollapse: q
   } = e, {
-    enabled: X
+    enabled: Q
   } = O.Z.useExperiment({
     location: "EmojiPicker"
   }, {
     autoTrackExposure: false
   }), {
-    enabled: Q
+    enabled: X
   } = (0, d.qt)({
     location: "emoji_picker_list_row",
     autoTrackExposure: false
@@ -196,7 +196,7 @@ let L = e => {
           })
         }
         case v.ld.CREATE_EMOJI: {
-          if (Q) return null;
+          if (X) return null;
           let t = t => {
             t.stopPropagation(), k.current || U.current || (N(e, {
               isFinalSelection: true,
@@ -268,7 +268,7 @@ let L = e => {
   });
   if (V !== I.En.TOP_GUILD_EMOJI) return eh(t);
   let eg = t.filter(e => {
-      if (X && e.type === v.ld.CREATE_EMOJI) returntrue;
+      if (Q && e.type === v.ld.CREATE_EMOJI) returntrue;
       let t = e;
       return t.subCategory === I.t0.TOP_GUILD_EMOJI || t.subCategory === I.t0.NEWLY_ADDED_EMOJI && t.emoji.type === p.B.GUILD && !_.Z.isNewerThanLastSeen(t.emoji.guildId, t.emoji.id)
     }),

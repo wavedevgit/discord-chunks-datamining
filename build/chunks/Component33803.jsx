@@ -103,7 +103,7 @@ function q(e, t) {
   return i
 }
 
-function X(e, t) {
+function Q(e, t) {
   let {
     popouts: n,
     selected: r,
@@ -129,7 +129,7 @@ function X(e, t) {
   }
 }
 
-function Q(e, t, n) {
+function X(e, t, n) {
   return i.useMemo(() => {
     if (null != t && null != n) return i => (0, r.jsx)(S.Z, K(Y({}, i), {
       user: t,
@@ -259,8 +259,8 @@ let ei = Chunk473749.memo(function(e) {
       compact: o,
       interactionUserId: s
     } = e,
-    l = X(n, i),
-    c = Q(i, n.author),
+    l = Q(n, i),
+    c = X(i, n.author),
     u = (0, P.ZP)(n),
     d = (0, D.CF)(Y({
       message: n,
@@ -271,8 +271,8 @@ let ei = Chunk473749.memo(function(e) {
     }, l), c),
     f = () => d,
     _ = T.default.getUser(s),
-    m = X(n, i),
-    h = Q(i, _, T.default.getCurrentUser());
+    m = Q(n, i),
+    h = X(i, _, T.default.getCurrentUser());
   if (null != _) {
     let e = (0, P.ij)(_, i),
       r = (0, D.CF)(Y({
@@ -323,7 +323,7 @@ function ea(e) {
   } = (0, L.bb)(C), U = (0, u.e7)([m.Z], () => m.Z.keyboardModeEnabled), H = (0, u.e7)([I.Z], () => I.Z.can(G.Plq.MANAGE_MESSAGES, l), [l]), {
     ruleName: W,
     embedChannel: q,
-    decisionId: Q,
+    decisionId: X,
     keywordMatchedContent: ee,
     keyword: et,
     content: en,
@@ -333,14 +333,14 @@ function ea(e) {
     alertActionsExecution: el,
     quarantineType: ec,
     interactionUserId: eu
-  } = (0, E.ZP)(s), ed = i.useMemo(() => (0, N.k$)(en, ee, l.id), [en, ee, l]), ef = X(s, l), {
+  } = (0, E.ZP)(s), ed = i.useMemo(() => (0, N.k$)(en, ee, l.id), [en, ee, l]), ef = Q(s, l), {
     selected: ep
   } = ef, e_ = z(ef, ["selected"]), em = ep || U && R, eh = e => {
     var t;
     null == (t = e_.onContextMenuModerateUser) || t.call(e_, e)
   }, eg = i.useCallback(() => {
-    (0, b._s)(s.id, en, Q, l)
-  }, [s.id, en, Q, l]), eE = i.useCallback(e => {
+    (0, b._s)(s.id, en, X, l)
+  }, [s.id, en, X, l]), eE = i.useCallback(e => {
     null != ea && null != q && (e.stopPropagation(), e.preventDefault(), (0, O.Z)(G.Z5c.CHANNEL(null == q ? true : q.guild_id, null == q ? true : q.id, ea)))
   }, [q, ea]), eb = i.useCallback(e => {
     null != q && (_.default.selectChannel({

@@ -53,7 +53,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk450943 = require("./450943.js"),
   Chunk315091 = require("./315091.js");
 
-function Q(e, t, n) {
+function X(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -69,7 +69,7 @@ function J(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Q(e, t, n[t])
+      X(e, t, n[t])
     })
   }
   return e
@@ -248,7 +248,7 @@ function el(e) {
       guildId: null == m ? true : m.guild_id,
       location: "IncomingCallModal"
     }),
-    Q = M === H.WtW.VOICE || V && m.type === H.d4z.GUILD_VOICE ? K.intl.string(K.t.Js8cK3) : K.intl.string(K.t.KcnWCO),
+    X = M === H.WtW.VOICE || V && m.type === H.d4z.GUILD_VOICE ? K.intl.string(K.t.Js8cK3) : K.intl.string(K.t.KcnWCO),
     $ = (0, r.jsxs)(r.Fragment, {
       children: [null != S && null == I ? (0, r.jsx)("div", {
         className: o()(q.icon, z.wrapper, z.ringingIncoming),
@@ -282,7 +282,7 @@ function el(e) {
           color: "text-default",
           className: q.subtitle,
           variant: O ? "text-sm/normal" : "text-md/normal",
-          children: Q
+          children: X
         })]
       })]
     }),
@@ -304,7 +304,7 @@ function el(e) {
       children: (0, r.jsx)(c.f6W, {
         theme: O ? H.BRd.DARK : true,
         children: e => (0, r.jsxs)(s.animated.div, {
-          className: o()(q.root, X.elevationHigh, {
+          className: o()(q.root, Q.elevationHigh, {
             [q.previewCamera]: O
           }, e),
           style: ee(J({}, n), {

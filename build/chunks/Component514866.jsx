@@ -1,7 +1,7 @@
 /** Chunk was on 88282 **/
 /** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -10,7 +10,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk668757 = require("./668757.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110478 = require("./110478.jsx"),
-  Chunk677106 = require("./677106.js"),
+  Chunk515970 = require("./515970.js"),
+  Chunk840767 = require("./840767.jsx"),
   Chunk906605 = require("./906605.js"),
   Chunk359119 = require("./359119.js"),
   Chunk423932 = require("./423932.jsx"),
@@ -21,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk134612 = require("./134612.js"),
   Chunk517269 = require("./517269.js"),
   Chunk197571 = require("./197571.js");
-let j = () => {
+let _ = () => {
   Promise.all([require.e("52030"), require.e("1286")]).then(require.bind(require, 24031)).then(e => {
     let {
       openMFAModal: t
@@ -42,7 +43,7 @@ let j = () => {
   })
 };
 
-function _() {
+function y() {
   let e = Chunk594174.default.getCurrentUser(),
     t = null == module ? true : module.isStaff(),
     l = Chunk695346.Rt.useSetting();
@@ -58,7 +59,7 @@ function _() {
         variant: "primary",
         size: "sm",
         text: "Launch MFA",
-        onClick: j
+        onClick: _
       })
     }), (0, Chunk54381.jsx)("div", {
       className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
@@ -102,7 +103,7 @@ function _() {
               otherUserId: "9876543210",
               channelId: t,
               warningId: "test-warning-id",
-              warningType: u.pj.INAPPROPRIATE_CONVERSATION_TIER_2
+              warningType: m.pj.INAPPROPRIATE_CONVERSATION_TIER_2
             }, n))
           }, {
             modalKey: Chunk134612.X_
@@ -116,7 +117,7 @@ function _() {
           variant: "primary",
           size: "sm",
           text: "Launch Clicker Game",
-          onClick: () => (0, Chunk677106.Z)()
+          onClick: () => (0, Chunk840767.Z)("devtools")
         })
       }), (0, Chunk54381.jsx)("div", {
         className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
@@ -143,11 +144,19 @@ function _() {
           onClick: Chunk668757.$R
         })
       }), (0, Chunk54381.jsx)("div", {
+        className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
+        children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+          variant: "primary",
+          size: "sm",
+          text: "Reset to fake checkpoint",
+          onClick: () => (0, Chunk515970.pg)(true)
+        })
+      }), (0, Chunk54381.jsx)("div", {
         className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Ignore profile speedbump disabled",
           checked: Chunk120356,
-          onChange: e => p.Rt.updateSetting(e)
+          onChange: e => h.Rt.updateSetting(e)
         })
       })]
     })]

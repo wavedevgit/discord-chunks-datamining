@@ -4,9 +4,9 @@
 require.d(exports, {
   Gj: () => W,
   Pt: () => Y,
-  VO: () => X,
+  VO: () => Q,
   ji: () => $,
-  q8: () => Q
+  q8: () => X
 }), require("./836215.js"), require("./472816.js"), require("./794429.js"), require("./388685.js"), require("./467055.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -172,8 +172,8 @@ function Y() {
     K = (0, Chunk442837.e7)([Chunk283595.Z], () => Chunk283595.Z.hasLibraryApplication()),
     z = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.hasTOTPEnabled()),
     q = Chunk695346.Sb.useSetting(),
-    X = (0, Chunk610697.Z)(),
-    Q = null == (o = (0, Chunk880257.Z)()) || Chunk493544,
+    Q = (0, Chunk610697.Z)(),
+    X = null == (o = (0, Chunk880257.Z)()) || Chunk493544,
     J = (null == (t = (0, Chunk921157.s)()) ? true : exports.length) > 0,
     {
       hasBlockedUsers: $,
@@ -214,11 +214,11 @@ function Y() {
     isInapproprateConversationsDefaultOn: H,
     paymentsBlocked: Y,
     isEligibleForQuests: W,
-    isStricterMessageRequestsEnabled: X,
+    isStricterMessageRequestsEnabled: Q,
     hasLibraryApplication: K,
     hasTOTPEnabled: z,
     developerMode: q,
-    isAdultUser: Q,
+    isAdultUser: X,
     hasSecureFramesVerifiedUserIds: J,
     hasIgnoredUsers: ee,
     hasBlockedUsers: $,
@@ -229,7 +229,7 @@ function Y() {
     isChatMentionSuggestionsSettingEnabled: ea,
     isCrossDMSearchEnabledSettingVisible: eo,
     isRedesignedNotificationsEnabled: es
-  }), [q, Z, $, ee, K, J, z, Chunk839469, Q, W, H, V, Chunk388032, F, X, Chunk726985, Y, B, Chunk413182, Chunk906467, et, en, er, ei, ea, eo, es])
+  }), [q, Z, $, ee, K, J, z, Chunk839469, X, W, H, V, Chunk388032, F, Q, Chunk726985, Y, B, Chunk413182, Chunk906467, et, en, er, ei, ea, eo, es])
 }
 
 function W(e) {
@@ -314,7 +314,7 @@ function q(e, t) {
   }), n
 }
 
-function X() {
+function Q() {
   let e = Y(),
     {
       shouldMergeGameSettings: t
@@ -333,7 +333,7 @@ function X() {
   return Chunk473749.useMemo(() => z(Chunk442837, module), [Chunk442837, module])
 }
 
-function Q(e) {
+function X(e) {
   let t = Y(),
     n = H();
   return r.useMemo(() => z(n, t, new Set(e)), [n, t, e])

@@ -203,7 +203,7 @@ function q(e) {
   r = r.remove(t), u.Z.commit(r), L.delete(t)
 }
 
-function X(e) {
+function Q(e) {
   let {
     ids: t,
     channelId: n
@@ -224,7 +224,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   let t = e.message.id,
     n = e.message.channel_id,
     r = u.Z.getOrCreate(n);
@@ -456,10 +456,10 @@ let eh = new em(Chunk570140.Z, {
   MESSAGE_SEND_FAILED: z,
   MESSAGE_SEND_FAILED_AUTOMOD: el,
   MESSAGE_EDIT_FAILED_AUTOMOD: el,
-  MESSAGE_UPDATE: Q,
+  MESSAGE_UPDATE: X,
   MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: J,
   MESSAGE_DELETE: q,
-  MESSAGE_DELETE_BULK: X,
+  MESSAGE_DELETE_BULK: Q,
   MESSAGE_REVEAL: er,
   THREAD_CREATE_LOCAL: ee,
   CHANNEL_DELETE: et,

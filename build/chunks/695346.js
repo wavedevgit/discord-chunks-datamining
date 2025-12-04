@@ -64,11 +64,11 @@ require.d(exports, {
   gR: () => J,
   h2: () => $,
   hg: () => eJ,
-  iG: () => Q,
+  iG: () => X,
   iH: () => eG,
-  j7: () => eQ,
+  j7: () => eX,
   jU: () => er,
-  kJ: () => X,
+  kJ: () => Q,
   kU: () => ei,
   l4: () => e$,
   lk: () => eW,
@@ -81,7 +81,7 @@ require.d(exports, {
   rR: () => e4,
   tU: () => ev,
   uL: () => B,
-  uh: () => eX,
+  uh: () => eQ,
   vF: () => I,
   vc: () => N,
   x4: () => eS,
@@ -240,7 +240,7 @@ let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
   q = (0, Chunk560997.Zc)("privacy", "defaultMessageRequestRestricted", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
-  X = (0, Chunk560997.Zc)("privacy", "nonSpamRetrainingOptIn", e => null == e ? true : e.value, e => null == e ? true : o.D5.create({
+  Q = (0, Chunk560997.Zc)("privacy", "nonSpamRetrainingOptIn", e => null == e ? true : e.value, e => null == e ? true : o.D5.create({
     value: e
   }));
 (0, Chunk560997.Zc)("privacy", "contactSyncEnabled", e => {
@@ -249,7 +249,7 @@ let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
 }, e => o.D5.create({
   value: e
 }));
-let Q = (0, Chunk560997.Zc)("privacy", "defaultGuildsRestricted", e => null != e && e, e => e),
+let X = (0, Chunk560997.Zc)("privacy", "defaultGuildsRestricted", e => null != e && e, e => e),
   J = (0, Chunk560997.Zc)("privacy", "defaultGuildsRestrictedV2", e => null == e ? true : e.value, e => o.D5.create({
     value: e
   })),
@@ -618,7 +618,7 @@ let eZ = (0, Chunk560997.TG)({
       goreContentNonFriendDm: null != r ? r : a.Q4.UNSET_EXPLICIT_CONTENT_REDACTION
     }
   },
-  eX = e => {
+  eQ = e => {
     let {
       goreContentGuilds: t,
       goreContentFriendDm: n,
@@ -630,7 +630,7 @@ let eZ = (0, Chunk560997.TG)({
       goreContentNonFriendDm: null != r ? r : true
     }
   },
-  eQ = (0, Chunk560997.Zc)("textAndImages", "goreContentSettings", eq, eX);
+  eX = (0, Chunk560997.Zc)("textAndImages", "goreContentSettings", eq, eQ);
 (0, Chunk560997.Zc)("appearance", "searchResultExactCountEnabled", e => {
   var t;
   return null != (t = null == e ? true : e.value) && t

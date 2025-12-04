@@ -86,8 +86,8 @@ function q(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let X = "cozy",
-  Q = "compact",
+let Q = "cozy",
+  X = "compact",
   J = (0, Chunk313201.hQ)(),
   $ = (0, Chunk313201.hQ)(),
   ee = "1337",
@@ -305,15 +305,15 @@ class ei extends Chunk473749.Component {
           description: Chunk388032.intl.string(Chunk388032.t.QntEEG),
           options: [{
             name: Chunk388032.intl.string(Chunk388032.t.Jqj4cZ),
-            value: X
+            value: Q
           }, {
             name: Chunk388032.intl.string(Chunk388032.t["1JNcPS"]),
-            value: Q
+            value: X
           }],
           onChange: e => this.handleMessageDisplayModeChange({
             value: e
           }),
-          value: this.props.messageDisplayCompact ? Q : X
+          value: this.props.messageDisplayCompact ? X : Q
         }), this.props.messageDisplayCompact && (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t["//vhWi"]),
           checked: !this.props.displayCompactAvatars,
@@ -353,7 +353,7 @@ class ei extends Chunk473749.Component {
       let {
         value: t
       } = e;
-      x.jU.updateSetting(t === Q), (0, m.ZZ)()
+      x.jU.updateSetting(t === X), (0, m.ZZ)()
     }), W(this, "handleUIDensityChange", e => {
       let {
         value: t

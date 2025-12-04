@@ -2,12 +2,12 @@
 /** chunk id: 622822, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $5: () => Q,
+  $5: () => X,
   I8: () => W,
   Kt: () => U,
   Lj: () => N,
   RW: () => Y,
-  Y3: () => X,
+  Y3: () => Q,
   Yt: () => R,
   _I: () => L,
   _t: () => z,
@@ -245,7 +245,7 @@ let B = () => {
     let t = p.Z.getGuild(e);
     return null != t && (0, u.Y2)(t)
   },
-  V = e => !!B() && null != e && X(d.Z.getChannel(e)),
+  V = e => !!B() && null != e && Q(d.Z.getChannel(e)),
   H = e => k() && V(e),
   Y = e => !!H(e) && ((0, g.mN)(E.L0.NSFW_VOICE_CHANNEL), true);
 
@@ -271,7 +271,7 @@ let K = e => null != e && (e.isNSFW() || (0, u.Y2)(p.Z.getGuild(e.guild_id))),
     return K(e) && !n
   };
 
-function X(e) {
+function Q(e) {
   var t;
   if (null == e) returnfalse;
   let n = f.Z.didAgree(e.guild_id),
@@ -287,7 +287,7 @@ function X(e) {
   return null != g && ((0, u.Y2)(g) && m || j(g) && d)
 }
 
-function Q(e) {
+function X(e) {
   let t = (0, s.L5)(),
     n = (0, r.e7)([f.Z], () => f.Z.didAgree(null == e ? true : e.guild_id)),
     i = (0, r.e7)([_.default], () => {

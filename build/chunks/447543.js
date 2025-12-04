@@ -174,7 +174,7 @@ function em(e) {
         if (b) {
           (0, j.Cq)(r instanceof M.Sf ? r : (0, M.createChannelRecord)(r)), (0, L.uL)(O);
           return
-        }(null == i ? true : i.muteOnJoinVoiceChannel) && X.Z.setSelfMute(f.Yn.DEFAULT, true), n.selectVoiceChannel(E), c === er.Iq.STREAM && null != l && J.iV({
+        }(null == i ? true : i.muteOnJoinVoiceChannel) && Q.Z.setSelfMute(f.Yn.DEFAULT, true), n.selectVoiceChannel(E), c === er.Iq.STREAM && null != l && J.iV({
           streamType: en.lo.GUILD,
           ownerId: l,
           guildId: t,
@@ -256,7 +256,7 @@ let eE = function(e, t) {
       guild_id: t,
       channel_id: n
     } = e;
-    (0, C.xt)(e) && null != n ? eE(n) : await Q.Z.transitionToGuildSync(t)
+    (0, C.xt)(e) && null != n ? eE(n) : await X.Z.transitionToGuildSync(t)
   };
 
 function ey(e, t) {

@@ -89,8 +89,8 @@ var W = function(e) {
 let K = {},
   z = false,
   q = new Map,
-  X = () => Array.from(q.values()).some(e => "READY" === e),
-  Q = false,
+  Q = () => Array.from(q.values()).some(e => "READY" === e),
+  X = false,
   J = false,
   $ = null,
   ee = new Set,
@@ -106,7 +106,7 @@ class er {
   }
   constructor() {
     F(this, "isDispatching", false), F(this, "timeout", true), F(this, "requestIdleCallback", true), F(this, "actionsToFlush", new Set), F(this, "waitingActionsToFlush", new Set), F(this, "flush", () => {
-      if (null != this.timeout && (clearTimeout(this.timeout), this.timeout = null), null != this.requestIdleCallback && (cancelIdleCallback(this.requestIdleCallback), this.requestIdleCallback = null), !X()) return void this.actionsToFlush.clear();
+      if (null != this.timeout && (clearTimeout(this.timeout), this.timeout = null), null != this.requestIdleCallback && (cancelIdleCallback(this.requestIdleCallback), this.requestIdleCallback = null), !Q()) return void this.actionsToFlush.clear();
       this.actionsToFlush.size > 0 && (Chunk490029.lW({
         type: Chunk981631.BmY.DISPATCH,
         pid: null,
@@ -115,7 +115,7 @@ class er {
       }), this.actionsToFlush.clear()), this.waitingActionsToFlush.size > 0 && this.enqueueWaitingActions()
     }), F(this, "dispatchPayloads", e => {
       this.isDispatching = true, e.forEach(e => l.Z.dispatch(e)), this.isDispatching = false
-    }), F(this, "queueDispatch", e => !(!X() || ea.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = Y(V({}, e), {
+    }), F(this, "queueDispatch", e => !(!Q() || ea.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = Y(V({}, e), {
       settings: {
         type: e.settings.type,
         proto: (0, R.cv)(e.settings.type, e.settings.proto)
@@ -231,7 +231,7 @@ async function eE(e) {
         let t = await eI();
         ep = "reconcile.createHostProcess", e.createHostProcess(t, eC, eA)
       } else ep = "reconcile.destroyHostProcess", e.destroyHostProcess(), eS((0, U.getPID)());
-    else if (Q) {
+    else if (X) {
       let t = await eI();
       e.createHostProcess(t, eC, eA)
     } else e.destroyHostProcess(), eS((0, U.getPID)())
@@ -289,7 +289,7 @@ async function eO(e) {
     }
   }
   let i = false;
-  if (null == e || !Q) {
+  if (null == e || !X) {
     for (let t of (el.verbose("updateIntendedOverlayPIDs: Removing all.", K, e), Object.keys(K))) await r(Number(t)), i = true;
     return
   }
@@ -348,13 +348,13 @@ function eI() {
 }
 let eT = em("setOverlayEnabled", async e => {
   if (!(0, U.supportsLegacy)()) return;
-  if (Q === e) return void el.verbose("setOverlayEnabled: no change", {
+  if (X === e) return void el.verbose("setOverlayEnabled: no change", {
     newOverlayEnabled: e
   });
-  Q = e, e0.emitChange();
+  X = e, e0.emitChange();
   let t = await (0, G.K)();
   if (null == t) return void el.error("setOverlayEnabled: overlay module failed loaded");
-  Q || await eO(true), q.size > 0 && await eE(t)
+  X || await eO(true), q.size > 0 && await eE(t)
 });
 
 function eA(e) {
@@ -482,7 +482,7 @@ function ek(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "effffb26b09166370fe2d6b92b01e1968f1f991b"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "c02e61a794c42eb371951d3e53b08c53612ccf22"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {
@@ -518,7 +518,7 @@ function eZ(e) {
 }
 
 function eB() {
-  J = true, z = false, eX()
+  J = true, z = false, eQ()
 }
 
 function eF() {
@@ -596,11 +596,11 @@ function eq(e) {
   })
 }
 
-function eX() {
+function eQ() {
   Chunk353926.Z.hasLoadedExperiments && !z && (z = true, eT(Chunk454991.v.legacyEnabled))
 }
 
-function eQ() {
+function eX() {
   z = false
 }
 
@@ -609,7 +609,7 @@ function eJ() {
 }
 class e$ extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    !(0, Chunk145597.supportsLegacy)() || __OVERLAY__ || (this.waitFor(Chunk314897.default, Chunk353926.Z, Chunk77498.Z, Chunk355863.Z, Chunk371651.default, Chunk322155.Z, Chunk509140.Z, Chunk610394.Z, Chunk594190.ZP), this.syncWith([Chunk353926.Z], eX), Chunk490029.sr(eR, eP), Chunk314897.default.addChangeListener(eN), Chunk570140.Z.addInterceptor(ei.queueDispatch))
+    !(0, Chunk145597.supportsLegacy)() || __OVERLAY__ || (this.waitFor(Chunk314897.default, Chunk353926.Z, Chunk77498.Z, Chunk355863.Z, Chunk371651.default, Chunk322155.Z, Chunk509140.Z, Chunk610394.Z, Chunk594190.ZP), this.syncWith([Chunk353926.Z], eQ), Chunk490029.sr(eR, eP), Chunk314897.default.addChangeListener(eN), Chunk570140.Z.addInterceptor(ei.queueDispatch))
   }
   isFocusedPidInputLocked() {
     let e = this.getFocusedPID();
@@ -629,7 +629,7 @@ class e$ extends(i = Chunk442837.ZP.Store) {
   }
   get enabled() {
     let e = Chunk610394.Z.getFocusedPID();
-    return null != module ? Chunk610394.Z.isOverlayV3EnabledForPID(module) ? Chunk509140.Z.isOverlayEnabled : Q : Chunk509140.Z.isOverlayEnabled || Q
+    return null != module ? Chunk610394.Z.isOverlayV3EnabledForPID(module) ? Chunk509140.Z.isOverlayEnabled : X : Chunk509140.Z.isOverlayEnabled || X
   }
   getAnyGlobalEnabledOverlay() {
     return Chunk371651.default.getAnyGlobalEnabledOverlay()
@@ -659,7 +659,7 @@ F(e$, "displayName", "OverlayBridgeStore");
 let e0 = new e$(Chunk570140.Z, __OVERLAY__ ? {
     OVERLAY_RELAY_CLICK_ZONE_CLICKED: eW
   } : {
-    LOGIN: eQ,
+    LOGIN: eX,
     LOGOUT: eJ,
     CONNECTION_OPEN: eB,
     CONNECTION_CLOSED: eF,

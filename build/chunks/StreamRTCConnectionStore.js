@@ -141,7 +141,7 @@ function G(e) {
     let e = new p.A({
       streamRegion: i,
       streamApplication: A[t],
-      streamSourceType: Q(N[t]),
+      streamSourceType: X(N[t]),
       actionContext: null == (l = T[t]) ? true : l.appContext,
       numViewers: null != a ? a.length : 0,
       goLiveModalDurationMs: P[t],
@@ -248,7 +248,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   let {
     streamId: t,
     zoom: n
@@ -258,7 +258,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   var t, n, r;
   if (null == e) return "unknown";
   if (g.isPlatformEmbedded || (null == (t = platform) ? true : t.name) === "Chrome") {
@@ -362,5 +362,5 @@ let $ = new J(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : 
   STREAM_LAYOUT_UPDATE: H,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: z,
   VIDEO_SIZE_UPDATE: q,
-  VIDEO_ZOOM_UPDATE: X
+  VIDEO_ZOOM_UPDATE: Q
 })

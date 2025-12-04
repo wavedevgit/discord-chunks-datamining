@@ -245,7 +245,7 @@ function eO(e) {
       analyticsData: Z,
       analyticsLocation: Y,
       hideBreadcrumbs: z = false,
-      usePaymentModalStep: Q = false,
+      usePaymentModalStep: X = false,
       isEligibleForTrial: en = false,
       allowDesktopRedirectPurchase: ei = false,
       toastContent: eo,
@@ -289,7 +289,7 @@ function eO(e) {
         }
     }
   }
-  let [eM, ek] = i.useState(eS), [eU, eG] = i.useState(null), [eZ, eB] = i.useState(ej(eS)), eF = (0, l.e7)([k.Z], () => k.Z.redirectedPaymentSourceId), eV = (0, l.e7)([X.Z], () => X.Z.cashAppPayComponent), eH = {
+  let [eM, ek] = i.useState(eS), [eU, eG] = i.useState(null), [eZ, eB] = i.useState(ej(eS)), eF = (0, l.e7)([k.Z], () => k.Z.redirectedPaymentSourceId), eV = (0, l.e7)([Q.Z], () => Q.Z.cashAppPayComponent), eH = {
     completeSteps: tu,
     setIsSubmittingCurrentStep: m.setIsSubmittingCurrentStep
   }, eY = i.useRef(eH);
@@ -321,8 +321,8 @@ function eO(e) {
     })), y(eM, e), eW(eS, false)
   }
   let [ez, eq] = i.useState(null), {
-    setPaymentSourceId: eX,
-    creditCardState: eQ,
+    setPaymentSourceId: eQ,
+    creditCardState: eX,
     setCreditCardState: eJ,
     tokenState: e$,
     setTokenState: e0,
@@ -345,7 +345,7 @@ function eO(e) {
   } = m, ts = null != to ? to : "", tl = (0, l.e7)([B.Z], () => B.Z.get(ts), [ts]), tc = null == tl || null == (t = tl.eligiblePaymentGateways) ? true : t.map(e => e.valueOf());
 
   function tu(e) {
-    eX(e.id), eK(e)
+    eQ(e.id), eK(e)
   }
   let td = !(0, F.isDesktop)() || ei ? ["googlePay", "applePay"] : [],
     [tf, tp] = i.useState(false),
@@ -562,7 +562,7 @@ function eO(e) {
           }))
         }
       });
-      let tL = !eQ.isValid,
+      let tL = !eX.isValid,
         tj = () => {
           eW(P.h8.PAYMENT_TYPE)
         };
@@ -912,8 +912,8 @@ function eO(e) {
         }
       }), n]
     }),
-    tX = eM === P.h8.PAYMENT_TYPE && 0 === g.length ? null : o;
-  return Q ? (0, r.jsxs)(r.Fragment, {
+    tQ = eM === P.h8.PAYMENT_TYPE && 0 === g.length ? null : o;
+  return X ? (0, r.jsxs)(r.Fragment, {
     children: [en && (0, r.jsx)(R.Z, {
       className: ee.paymentModalBreadcrumbs,
       isEligibleForTrial: en
@@ -922,7 +922,7 @@ function eO(e) {
         className: ee.paymentModalError
       }), tq]
     }), (0, r.jsx)(D.O3, {
-      children: tX
+      children: tQ
     })]
   }) : (0, r.jsx)(K.Z, {
     steps: null != C ? C : eZ.steps,
@@ -932,7 +932,7 @@ function eO(e) {
     header: U,
     hideBreadcrumbs: z,
     body: tq,
-    footer: tX
+    footer: tQ
   })
 }
 
@@ -947,7 +947,7 @@ function ev(e) {
     hasFetchedPaymentSources: G.Z.hasFetchedPaymentSources
   }));
   (0, O.ZP)(() => {
-    null == X.Z.cashAppPayComponent && (0, q.eI)(), (0, f.eI)(), r || (0, d.tZ)()
+    null == Q.Z.cashAppPayComponent && (0, q.eI)(), (0, f.eI)(), r || (0, d.tZ)()
   });
   let [a, o] = i.useState(t);
   null != t && null == a && o(t);

@@ -128,7 +128,7 @@ function C() {
       } = e;
       return (0, r.jsx)(l.Z, {
         nodeRef: a,
-        classNames: t,
+        classNames: i.options.disableAnimation ? true : t,
         timeout: v,
         onEntered: () => {
           (0, u.j)(() => {
@@ -153,19 +153,25 @@ function N(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Object.freeze({}),
     {
       layerKey: n,
-      Layer: r
+      Layer: r,
+      disableAnimation: i = false,
+      showAppUnderLayer: a = false
     } = t,
-    i = null != n ? n : o()();
+    s = null != n ? n : o()();
   return (0, u.j)(() => {
     S.setState(t => ({
       fullScreenLayers: [...t.fullScreenLayers, {
-        key: i,
+        key: s,
         transitionState: 1,
         LayerComponent: null != r ? r : m.ZP,
-        render: e
+        render: e,
+        options: {
+          disableAnimation: i,
+          showAppUnderLayer: a
+        }
       }]
     }))
-  }), i
+  }), s
 }
 
 function P(e) {

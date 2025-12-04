@@ -146,11 +146,11 @@ let ef = (e, t) => ec({
     },
     emojis: {
       thumbnail: v,
-      assetUrl: e ? q.ZP : X.ZP
+      assetUrl: e ? q.ZP : Q.ZP
     },
     noLimits: {
       thumbnail: S,
-      assetUrl: e ? Q.ZP : J.ZP
+      assetUrl: e ? X.ZP : J.ZP
     }
   }),
   ep = () => {

@@ -59,10 +59,10 @@
     q = function(e) {
       return e.toLowerCase()
     },
-    X = function(e) {
+    Q = function(e) {
       return typeof e === c ? e.replace(/[^\d\.]/g, i).split(".")[0] : true
     },
-    Q = function(e, t) {
+    X = function(e, t) {
       if (typeof e === c) return e = e.replace(/^\s\s*/, i), typeof t === s ? e : e.substring(0, S)
     },
     J = function(e, t) {
@@ -603,8 +603,8 @@
         [_, d, [p, y]],
         [/\b(roku)[\dx]*[\)\/]((?:dvp-)?[\d\.]*)/i, /hbbtv\/\d+\.\d+\.\d+ +\([\w\+ ]*; *([\w\d][^;]*);([^;]*)/i],
         [
-          [_, Q],
-          [d, Q],
+          [_, X],
+          [d, X],
           [p, y]
         ],
         [/\b(android tv|smart[- ]?tv|opera tv|tv; rv:)\b/i],
@@ -745,7 +745,7 @@
         v = a && a.userAgent == g;
       return this.getBrowser = function() {
         var e = {};
-        return e[f] = r, e[m] = r, J.call(e, g, O.browser), e[u] = X(e[m]), v && a && a.brave && typeof a.brave.isBrave == o && (e[f] = "Brave"), e
+        return e[f] = r, e[m] = r, J.call(e, g, O.browser), e[u] = Q(e[m]), v && a && a.brave && typeof a.brave.isBrave == o && (e[f] = "Brave"), e
       }, this.getCPU = function() {
         var e = {};
         return e[h] = r, J.call(e, g, O.cpu), e
@@ -770,7 +770,7 @@
       }, this.getUA = function() {
         return g
       }, this.setUA = function(e) {
-        return g = typeof e === c && e.length > S ? Q(e, S) : e, this
+        return g = typeof e === c && e.length > S ? X(e, S) : e, this
       }, this.setUA(g), this
     };
   en.VERSION = "0.7.40", en.BROWSER = K([f, m, u]), en.CPU = K([h]), en.DEVICE = K([d, _, p, g, E, y, b, O, v]), en.ENGINE = en.OS = K([f, m]), typeof t !== s ? ("object" !== s && e.exports && (t = e.exports = en), t.UAParser = en) : typeof define === o && define.amd ? define(function() {

@@ -111,9 +111,9 @@ function L(e) {
     allowHeading: V || H,
     allowLinks: true,
     previewLinkTarget: true
-  }), K = i.type === A.uaV.REPLY ? i.messageReference : true, z = (0, l.e7)([d.Z], () => d.Z.getMessageByReference(K)), q = (0, s.JA)(i.id), X = (0, m.ZP)(i), Q = (0, l.e7)([f.Z], () => i.hasFlag(A.iLy.HAS_THREAD) && f.Z.getChannel(p.default.castMessageIdAsChannelId(i.id))), J = (0, c.p9)({
+  }), K = i.type === A.uaV.REPLY ? i.messageReference : true, z = (0, l.e7)([d.Z], () => d.Z.getMessageByReference(K)), q = (0, s.JA)(i.id), Q = (0, m.ZP)(i), X = (0, l.e7)([f.Z], () => i.hasFlag(A.iLy.HAS_THREAD) && f.Z.getChannel(p.default.castMessageIdAsChannelId(i.id))), J = (0, c.p9)({
     guildId: j.guild_id,
-    roleId: X.iconRoleId
+    roleId: Q.iconRoleId
   }), $ = (0, b.Z)({
     message: i,
     channel: j,
@@ -130,7 +130,7 @@ function L(e) {
     childrenExecutedCommand: (0, I.Z)(i, j, a),
     childrenHeader: (0, v.Z)(w(P({}, e), {
       guildId: j.guild_id,
-      author: X,
+      author: Q,
       roleIcon: J
     })),
     childrenAccessories: e.hideAccessories ? true : (0, y.Q)(e, W),
@@ -140,12 +140,12 @@ function L(e) {
     })),
     onContextMenu: R,
     onClick: x,
-    hasThread: G && null != Q && i.hasFlag(A.iLy.HAS_THREAD),
+    hasThread: G && null != X && i.hasFlag(A.iLy.HAS_THREAD),
     hasReply: i.type === A.uaV.REPLY,
     "aria-labelledby": ee,
     "aria-describedby": et,
     messageRef: $,
-    author: X
+    author: Q
   }, q, B))
 }
 let j = Chunk473749.memo(L)

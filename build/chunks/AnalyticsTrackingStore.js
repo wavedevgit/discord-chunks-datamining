@@ -112,14 +112,14 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       getLaunchSignature: q = () => null
     } = e;
 
-    function X(e) {
+    function Q(e) {
       var t;
       if (null != i) return i;
       let n = null != (t = e.fingerprint) ? t : u();
       return null != n ? (0, s.s)(n) : null
     }
 
-    function Q() {
+    function X() {
       return 0 !== Y.length && (null != i ? null != r : null != u())
     }
 
@@ -127,13 +127,13 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       let {
         shouldFlushOnNextTick: t = false
       } = e;
-      null == W && Q() && (W = t ? setTimeout($, 0) : z($, {
+      null == W && X() && (W = t ? setTimeout($, 0) : z($, {
         timeout: T
       }))
     }
 
     function $() {
-      if (W = null, !Q()) return Promise.resolve();
+      if (W = null, !X()) return Promise.resolve();
       let e = Y.slice();
       Y = [], D = B(D);
       let t = e.length;
@@ -273,7 +273,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
             event_sequence_number: ++A
           }, n),
           resolve: a
-        }, l = X(s);
+        }, l = Q(s);
         if (null != l && (s.properties.client_uuid = V.generate(l)), Y.push(s), Y.length > E) {
           let e = Y.length - E;
           C = B(C, e), Y = Y.slice(-E)

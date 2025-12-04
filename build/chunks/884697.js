@@ -8,7 +8,7 @@ require.d(exports, {
   Cs: () => D,
   G1: () => O,
   IC: () => q,
-  OT: () => Q,
+  OT: () => X,
   QG: () => M,
   Qf: () => el,
   Vw: () => S,
@@ -206,11 +206,11 @@ let O = e => (null == e ? true : e.premiumType) != null,
   K = e => e.applicationId === m.XAJ,
   z = 3.8,
   q = e => z * e,
-  X = 864e5,
-  Q = e => {
+  Q = 864e5,
+  X = e => {
     let t = new Date,
       n = Date.UTC(t.getFullYear(), t.getMonth(), t.getDate());
-    return Math.floor((Date.UTC(e.getFullYear(), e.getMonth(), e.getDate()) - n) / X)
+    return Math.floor((Date.UTC(e.getFullYear(), e.getMonth(), e.getDate()) - n) / Q)
   },
   J = e => {
     let t = _.yf[e];

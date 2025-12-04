@@ -224,13 +224,13 @@ function I(e) {
     accessory: P,
     inputSize: D
   }));
-  let X = j ? (0, r.jsx)(d.H, {
+  let Q = j ? (0, r.jsx)(d.H, {
     value: y,
     maxLength: g
   }) : null;
   return (0, r.jsx)(s.gNt, E(h({}, k), {
     errorMessage: U.hasError && null != (t = U.errorMessage) ? t : true,
-    trailingAuxiliaryContent: X,
+    trailingAuxiliaryContent: Q,
     children: (0, r.jsxs)(s.UPk, {
       ref: W,
       disabled: n,

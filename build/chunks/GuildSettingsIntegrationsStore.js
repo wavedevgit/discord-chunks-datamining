@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.r(exports), require.d(exports, {
-  default: () => Q
+  default: () => X
 }), require("./539854.js"), require("./388685.js");
 var a, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
@@ -87,7 +87,7 @@ function w() {
   r = null, g = [], E = [], b = null, y = null, O = null, I = Chunk981631.QZA.CLOSED, A = false
 }
 let D = s().debounce(() => {
-  A && (null != y ? s().isEqual(y, K(y.id)) && (A = false) : null != O && s().isEqual(O, z(O.id)) && (A = false), A || X.emitChange())
+  A && (null != y ? s().isEqual(y, K(y.id)) && (A = false) : null != O && s().isEqual(O, z(O.id)) && (A = false), A || Q.emitChange())
 }, 500);
 
 function x(e) {
@@ -300,7 +300,7 @@ class q extends(a = Chunk442837.ZP.Store) {
   }
 }
 m(q, "displayName", "GuildSettingsIntegrationsStore");
-let X = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
+let Q = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_INIT: Y,
     INTEGRATION_SETTINGS_SAVE_SUCCESS: W,
     GUILD_SETTINGS_INIT: N,
@@ -320,4 +320,4 @@ let X = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_SUBMITTING: j,
     INTEGRATION_SETTINGS_SAVE_FAILURE: M
   }),
-  Q = X
+  X = Q

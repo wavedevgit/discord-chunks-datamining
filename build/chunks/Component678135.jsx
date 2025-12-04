@@ -57,10 +57,10 @@ function I(e) {
     shouldOpenBadgeTooltip: K,
     hideExampleButton: z = false,
     interactive: q = true
-  } = e, X = (0, c.ZP)(i.id, null == I ? true : I.id), Q = (0, o.e7)([_.ZP], () => null != I ? _.ZP.getMember(I.id, i.id) : null), J = (0, m.Ys)({
+  } = e, Q = (0, c.ZP)(i.id, null == I ? true : I.id), X = (0, o.e7)([_.ZP], () => null != I ? _.ZP.getMember(I.id, i.id) : null), J = (0, m.Ys)({
     pendingValue: D,
     userValue: null == i ? true : i.avatarDecoration,
-    guildValue: null == Q ? true : Q.avatarDecoration,
+    guildValue: null == X ? true : X.avatarDecoration,
     guildId: null == I ? true : I.id
   }), {
     avatarSrc: $,
@@ -74,20 +74,20 @@ function I(e) {
     showPending: true
   }), et = (0, m.Ys)({
     pendingValue: M,
-    userValue: null == X || null == (t = X._userProfile) ? true : t.profileEffect,
-    guildValue: null == X || null == (n = X._guildMemberProfile) ? true : n.profileEffect,
+    userValue: null == Q || null == (t = Q._userProfile) ? true : t.profileEffect,
+    guildValue: null == Q || null == (n = Q._guildMemberProfile) ? true : n.profileEffect,
     guildId: null == I ? true : I.id
   }), {
     theme: en,
     primaryColor: er
   } = (0, u.Z)({
     user: i,
-    displayProfile: X,
+    displayProfile: Q,
     pendingThemeColors: j,
     isPreview: T
   }), ei = (0, r.jsxs)(f.Z, {
     user: i,
-    displayProfile: X,
+    displayProfile: Q,
     themeType: O.l.POPOUT,
     pendingThemeColors: j,
     className: a()(S.container, Z),
@@ -96,7 +96,7 @@ function I(e) {
       className: S.header,
       children: [(0, r.jsx)(g.Z, {
         user: i,
-        displayProfile: X,
+        displayProfile: Q,
         guildId: null == I ? true : I.id,
         canUsePremiumCustomization: T,
         pendingBanner: C,
@@ -109,7 +109,7 @@ function I(e) {
       }), (0, r.jsx)(h.Z, {
         user: i,
         guild: I,
-        displayProfile: X,
+        displayProfile: Q,
         canUsePremiumCustomization: T,
         previewAvatar: $,
         previewAvatarDecorationSrc: ee,
@@ -128,7 +128,7 @@ function I(e) {
       })]
     }), (0, r.jsx)(E.Z, {
       user: i,
-      displayProfile: X,
+      displayProfile: Q,
       guild: I,
       pendingAvatar: w,
       pendingNickname: x,

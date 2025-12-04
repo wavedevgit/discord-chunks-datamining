@@ -76,8 +76,8 @@ let F = true,
   K = Chunk981631.QZA.CLOSED,
   z = {},
   q = null,
-  X = false,
   Q = false,
+  X = false,
   J = false,
   $ = null,
   ee = null,
@@ -126,14 +126,14 @@ function eh(e) {
   } = e, p = N.Z.getGuild(n);
   if (null == p) return eg();
   let _ = S.Z.getProfile(n);
-  o = s = p, l = c = _, J = Q, ee = $, K = j.QZA.OPEN, z = {}, q = null, u = w.default.castGuildIdAsEveryoneGuildRoleId(n), er = s.mfaLevel, el = es, f = null, ei = d, eb({
+  o = s = p, l = c = _, J = X, ee = $, K = j.QZA.OPEN, z = {}, q = null, u = w.default.castGuildIdAsEveryoneGuildRoleId(n), er = s.mfaLevel, el = es, f = null, ei = d, eb({
     section: null != (t = null != i ? i : r) ? t : (0, L.r)(),
     subsection: null != a ? a : null
   })
 }
 
 function eg() {
-  W = false, K = Chunk981631.QZA.CLOSED, o = s = null, X = false, J = false, ee = null, et = null, en = 0, ec = null, ef = null, ep = null, r = null, i = null, a = null, er = Chunk981631.BpS.NONE, d = true
+  W = false, K = Chunk981631.QZA.CLOSED, o = s = null, Q = false, J = false, ee = null, et = null, en = 0, ec = null, ef = null, ep = null, r = null, i = null, a = null, er = Chunk981631.BpS.NONE, d = true
 }
 
 function eE(e) {
@@ -344,7 +344,7 @@ function eB(e) {
 }
 
 function eF(e) {
-  X = true, Q = J = e.enabled, $ = ee = e.channelId
+  Q = true, X = J = e.enabled, $ = ee = e.channelId
 }
 
 function eV(e) {
@@ -394,7 +394,7 @@ function eq(e) {
   s = (0, v.t8)(s, "features", new Set([...s.features, j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE]))
 }
 
-function eX(e) {
+function eQ(e) {
   var t, n, r, i, a, o, l, c, u, d;
   let {
     guildId: f,
@@ -414,7 +414,7 @@ function eX(e) {
   }, z = {})
 }
 
-function eQ() {
+function eX() {
   es = el = ea
 }
 
@@ -541,7 +541,7 @@ class te extends(p = Chunk442837.ZP.Store) {
     return el
   }
   widgetHasChanges() {
-    returnfalse !== X && (J !== Q || ee !== $)
+    returnfalse !== Q && (J !== X || ee !== $)
   }
   hasChanges() {
     return !m().isEqual(s, o) || !m().isEqual(el, es) || !m().isEqual(c, l) || this.widgetHasChanges()
@@ -613,7 +613,7 @@ class te extends(p = Chunk442837.ZP.Store) {
       bansVersion: eu,
       invites: ef,
       selectedRoleId: u,
-      fetchedEmbed: X,
+      fetchedEmbed: Q,
       embedEnabled: J,
       embedChannelId: ee,
       mfaLevel: er,
@@ -672,8 +672,8 @@ let tt = new te(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_INTEGRATIONS_UPDATE: eK,
   INSTANT_INVITE_REVOKE_SUCCESS: eR,
   INSTANT_INVITE_CREATE_SUCCESS: ew,
-  GUILD_UPDATE_DISCOVERY_METADATA_FROM_SERVER: eX,
-  GUILD_DISCOVERY_METADATA_FETCH_FAIL: eQ,
+  GUILD_UPDATE_DISCOVERY_METADATA_FROM_SERVER: eQ,
+  GUILD_DISCOVERY_METADATA_FETCH_FAIL: eX,
   GUILD_DISCOVERY_CATEGORY_ADD: e0,
   GUILD_DISCOVERY_CATEGORY_DELETE: e1,
   GUILD_DISCOVERY_CATEGORY_UPDATE_FAIL: e3,

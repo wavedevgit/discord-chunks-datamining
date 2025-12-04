@@ -282,9 +282,9 @@ let k = function(e) {
     null == h || h(e, Y)
   }, q = e => {
     null == b || b(e, Y)
-  }, X = e => {
-    null == y || y(e, Y)
   }, Q = e => {
+    null == y || y(e, Y)
+  }, X = e => {
     null == S || S(e, Y)
   }, J = e => {
     null == I || I(e, Y)
@@ -360,8 +360,8 @@ let k = function(e) {
     }),
     onClick: z,
     onDoubleClick: q,
-    onContextMenu: X,
-    onMouseLeave: Q,
+    onContextMenu: Q,
+    onMouseLeave: X,
     onMouseDown: J,
     onKeyDown: E,
     "aria-label": null != (t = null != V ? V : U) ? t : Y.username,

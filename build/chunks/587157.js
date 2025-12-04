@@ -242,17 +242,17 @@ function v(e) {
       }
     },
     {
-      typeSelectProps: X
+      typeSelectProps: Q
     } = (0, i.i)({
       keyboardDelegate: v,
       selectionManager: n
     });
-  R || (q = (0, _.d)(X, q)), w || (t = null == n.focusedKey ? 0 : false);
-  let Q = (0, r.Mm)(n.collection);
+  R || (q = (0, _.d)(Q, q)), w || (t = null == n.focusedKey ? 0 : false);
+  let X = (0, r.Mm)(n.collection);
   return {
     collectionProps: (0, _.d)(q, {
       tabIndex: t,
-      "data-collection": Q
+      "data-collection": X
     })
   }
 }

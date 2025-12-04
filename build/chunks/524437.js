@@ -20,7 +20,7 @@ require.d(exports, {
   X: () => u,
   Xr: () => p,
   aV: () => eF,
-  az: () => X,
+  az: () => Q,
   bE: () => eh,
   c$: () => ti,
   dp: () => tn,
@@ -131,7 +131,7 @@ class w extends Chunk495852.C {
           a.guilds = M.internalBinaryRead(e, e.uint32(), n, a.guilds);
           break;
         case 4:
-          a.userContent = X.internalBinaryRead(e, e.uint32(), n, a.userContent);
+          a.userContent = Q.internalBinaryRead(e, e.uint32(), n, a.userContent);
           break;
         case 5:
           a.voiceAndVideo = en.internalBinaryRead(e, e.uint32(), n, a.voiceAndVideo);
@@ -206,7 +206,7 @@ class w extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.versions && c.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.inbox && L.internalBinaryWrite(e.inbox, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.guilds && M.internalBinaryWrite(e.guilds, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.userContent && X.internalBinaryWrite(e.userContent, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.voiceAndVideo && en.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.textAndImages && ef.internalBinaryWrite(e.textAndImages, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.notifications && e_.internalBinaryWrite(e.notifications, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.privacy && eh.internalBinaryWrite(e.privacy, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.debug && eE.internalBinaryWrite(e.debug, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.gameLibrary && ey.internalBinaryWrite(e.gameLibrary, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.status && ev.internalBinaryWrite(e.status, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.localization && eA.internalBinaryWrite(e.localization, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.appearance && eR.internalBinaryWrite(e.appearance, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), e.guildFolders && eM.internalBinaryWrite(e.guildFolders, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), e.favorites && eZ.internalBinaryWrite(e.favorites, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), e.audioContextSettings && eW.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), e.communities && ez.internalBinaryWrite(e.communities, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), e.broadcast && e0.internalBinaryWrite(e.broadcast, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), e.clips && e3.internalBinaryWrite(e.clips, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), e.forLater && e8.internalBinaryWrite(e.forLater, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), e.safetySettings && e4.internalBinaryWrite(e.safetySettings, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), e.icymiSettings && e7.internalBinaryWrite(e.icymiSettings, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), e.applications && te.internalBinaryWrite(e.applications, t.tag(23, r.TD.LengthDelimited).fork(), n).join(), e.ads && tl.internalBinaryWrite(e.ads, t.tag(24, r.TD.LengthDelimited).fork(), n).join(), e.inAppFeedbackSettings && t_.internalBinaryWrite(e.inAppFeedbackSettings, t.tag(25, r.TD.LengthDelimited).fork(), n).join();
+    e.versions && c.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.inbox && L.internalBinaryWrite(e.inbox, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.guilds && M.internalBinaryWrite(e.guilds, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.userContent && Q.internalBinaryWrite(e.userContent, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.voiceAndVideo && en.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.textAndImages && ef.internalBinaryWrite(e.textAndImages, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.notifications && e_.internalBinaryWrite(e.notifications, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.privacy && eh.internalBinaryWrite(e.privacy, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.debug && eE.internalBinaryWrite(e.debug, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.gameLibrary && ey.internalBinaryWrite(e.gameLibrary, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.status && ev.internalBinaryWrite(e.status, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.localization && eA.internalBinaryWrite(e.localization, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.appearance && eR.internalBinaryWrite(e.appearance, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), e.guildFolders && eM.internalBinaryWrite(e.guildFolders, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), e.favorites && eZ.internalBinaryWrite(e.favorites, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), e.audioContextSettings && eW.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), e.communities && ez.internalBinaryWrite(e.communities, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), e.broadcast && e0.internalBinaryWrite(e.broadcast, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), e.clips && e3.internalBinaryWrite(e.clips, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), e.forLater && e8.internalBinaryWrite(e.forLater, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), e.safetySettings && e4.internalBinaryWrite(e.safetySettings, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), e.icymiSettings && e7.internalBinaryWrite(e.icymiSettings, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), e.applications && te.internalBinaryWrite(e.applications, t.tag(23, r.TD.LengthDelimited).fork(), n).join(), e.ads && tl.internalBinaryWrite(e.ads, t.tag(24, r.TD.LengthDelimited).fork(), n).join(), e.inAppFeedbackSettings && t_.internalBinaryWrite(e.inAppFeedbackSettings, t.tag(25, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -230,7 +230,7 @@ class w extends Chunk495852.C {
       no: 4,
       name: "user_content",
       kind: "message",
-      T: () => X
+      T: () => Q
     }, {
       no: 5,
       name: "voice_and_video",
@@ -1058,8 +1058,8 @@ class q extends Chunk495852.C {
     }])
   }
 }
-let X = new q;
-class Q extends Chunk495852.C {
+let Q = new q;
+class X extends Chunk495852.C {
   create(e) {
     let t = {
       id: "0",
@@ -1110,7 +1110,7 @@ class Q extends Chunk495852.C {
     }])
   }
 }
-let J = new Q;
+let J = new X;
 class $ extends Chunk495852.C {
   create(e) {
     let t = {
@@ -1200,7 +1200,7 @@ class et extends Chunk495852.C {
           a.nativePhoneIntegrationEnabled = s.D5.internalBinaryRead(e, e.uint32(), n, a.nativePhoneIntegrationEnabled);
           break;
         case 9:
-          a.soundboardSettings = eX.internalBinaryRead(e, e.uint32(), n, a.soundboardSettings);
+          a.soundboardSettings = eQ.internalBinaryRead(e, e.uint32(), n, a.soundboardSettings);
           break;
         case 10:
           a.disableStreamPreviews = s.D5.internalBinaryRead(e, e.uint32(), n, a.disableStreamPreviews);
@@ -1218,7 +1218,7 @@ class et extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "blur" === e.videoBackgroundFilterDesktop.oneofKind && ee.internalBinaryWrite(e.videoBackgroundFilterDesktop.blur, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), "presetOption" === e.videoBackgroundFilterDesktop.oneofKind && t.tag(2, r.TD.Varint).uint32(e.videoBackgroundFilterDesktop.presetOption), "customAsset" === e.videoBackgroundFilterDesktop.oneofKind && J.internalBinaryWrite(e.videoBackgroundFilterDesktop.customAsset, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.alwaysPreviewVideo && s.D5.internalBinaryWrite(e.alwaysPreviewVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.afkTimeout && s.yC.internalBinaryWrite(e.afkTimeout, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.streamNotificationsEnabled && s.D5.internalBinaryWrite(e.streamNotificationsEnabled, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.nativePhoneIntegrationEnabled && s.D5.internalBinaryWrite(e.nativePhoneIntegrationEnabled, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.soundboardSettings && eX.internalBinaryWrite(e.soundboardSettings, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.disableStreamPreviews && s.D5.internalBinaryWrite(e.disableStreamPreviews, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.soundmojiVolume && s.A8.internalBinaryWrite(e.soundmojiVolume, t.tag(11, r.TD.LengthDelimited).fork(), n).join();
+    "blur" === e.videoBackgroundFilterDesktop.oneofKind && ee.internalBinaryWrite(e.videoBackgroundFilterDesktop.blur, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), "presetOption" === e.videoBackgroundFilterDesktop.oneofKind && t.tag(2, r.TD.Varint).uint32(e.videoBackgroundFilterDesktop.presetOption), "customAsset" === e.videoBackgroundFilterDesktop.oneofKind && J.internalBinaryWrite(e.videoBackgroundFilterDesktop.customAsset, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.alwaysPreviewVideo && s.D5.internalBinaryWrite(e.alwaysPreviewVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.afkTimeout && s.yC.internalBinaryWrite(e.afkTimeout, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.streamNotificationsEnabled && s.D5.internalBinaryWrite(e.streamNotificationsEnabled, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.nativePhoneIntegrationEnabled && s.D5.internalBinaryWrite(e.nativePhoneIntegrationEnabled, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.soundboardSettings && eQ.internalBinaryWrite(e.soundboardSettings, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.disableStreamPreviews && s.D5.internalBinaryWrite(e.disableStreamPreviews, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.soundmojiVolume && s.A8.internalBinaryWrite(e.soundmojiVolume, t.tag(11, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -1265,7 +1265,7 @@ class et extends Chunk495852.C {
       no: 9,
       name: "soundboard_settings",
       kind: "message",
-      T: () => eX
+      T: () => eQ
     }, {
       no: 10,
       name: "disable_stream_previews",
@@ -3463,8 +3463,8 @@ class eq extends Chunk495852.C {
     }])
   }
 }
-let eX = new eq;
-class eQ extends Chunk495852.C {
+let eQ = new eq;
+class eX extends Chunk495852.C {
   create(e) {
     let t = {
       soundId: "0",
@@ -3515,7 +3515,7 @@ class eQ extends Chunk495852.C {
     }])
   }
 }
-let eJ = new eQ;
+let eJ = new eX;
 class e$ extends Chunk495852.C {
   create(e) {
     let t = {

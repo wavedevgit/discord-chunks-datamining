@@ -440,7 +440,7 @@ let Y = e => {
   K = false,
   z = () => K = true,
   q = ["sdk_event_queue_latency_seconds", "sdk_replay_add_event_batch_seconds", "sdk_replay_cleanup_seconds", "sdk_replay_compression_seconds", "sdk_replay_get_events_between_seconds", "sdk_replay_snapshot_seconds", "sdk_mutations_nodes_added", "sdk_mutations_nodes_removed", "sdk_mutations_attributes_changed", "sdk_mutations_character_data", "sdk_dom_nodes_count", "sdk_page_html_characters"],
-  X, Q = {};
+  Q, X = {};
 class J {
   constructor(e) {
     l(this, "_values", []), l(this, "_isWebMetric"), this.name = e, this._isWebMetric = q.includes(this.name)
@@ -451,14 +451,14 @@ class J {
         value: e
       }), K || !this._isWebMetric) return;
     let t = this.findExceededThreshold(e);
-    t && X && X(e, t)
+    t && Q && Q(e, t)
   }
   collect() {
     let e = this._values;
     return this._values = [], module
   }
   findExceededThreshold(e) {
-    let t = Q[this.name];
+    let t = X[this.name];
     if (t) return t.find(t => this.valueExceedsThreshold(e, t))
   }
   valueExceedsThreshold(e, t) {
@@ -466,10 +466,10 @@ class J {
   }
 }
 let $ = (e, t) => {
-    Q = {}, K = false, null == e || e.forEach(e => {
+    X = {}, K = false, null == e || e.forEach(e => {
       var t;
-      e.metric in Q || (Q[e.metric] = []), null == (t = Q[e.metric]) || t.push(e)
-    }), X = t
+      e.metric in X || (X[e.metric] = []), null == (t = X[e.metric]) || t.push(e)
+    }), Q = t
   },
   ee = {},
   et = e => {

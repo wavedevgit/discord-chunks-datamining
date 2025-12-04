@@ -108,7 +108,7 @@ function M(e) {
     }), (0, r.jsx)("div", {
       className: L.divider
     }), z()]
-  }), X = () => (0, r.jsxs)(r.Fragment, {
+  }), Q = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: L.giftRecipientContainer,
       children: [(0, r.jsx)(m.Z, {
@@ -155,7 +155,7 @@ function M(e) {
         [L.headerCustomGifting]: null != l && !U
       }),
       children: W()
-    }), p && null != _ && null == g || M ? X() : q()]
+    }), p && null != _ && null == g || M ? Q() : q()]
   })
 }
 let k = e => {

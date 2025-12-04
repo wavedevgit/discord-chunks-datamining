@@ -242,7 +242,7 @@ function q(e) {
   })
 }
 
-function X() {
+function Q() {
   let e = (0, Chunk442837.e7)([Chunk487419.Z], () => Chunk487419.Z.getGuildAlertSettings()),
     [t, n] = Chunk473749.useState(null),
     a = Chunk709054.default.keys(module).map(t => {
@@ -294,7 +294,7 @@ function X() {
     })
   })
 }
-class Q extends Chunk473749.PureComponent {
+class X extends Chunk473749.PureComponent {
   handleDesktopChange(e) {
     let t = e ? G.qrD.ALL : G.qrD.NEVER;
     t !== G.qrD.NEVER ? K("UserSettingsModal") : d.default.setDesktopType(t)
@@ -361,7 +361,7 @@ class Q extends Chunk473749.PureComponent {
           }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
             gap: 16
           })]
-        }), this.renderTTS(), (0, Chunk54381.jsx)(X, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {
+        }), this.renderTTS(), (0, Chunk54381.jsx)(Q, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {
           gap: 24
         }), (0, Chunk54381.jsx)(q, {
           disabledSounds: Chunk392711,
@@ -466,7 +466,7 @@ async function en(e) {
 
 function er(e) {
   let t = (0, b.p)();
-  return (0, r.jsx)(Q, W(H({}, e), {
+  return (0, r.jsx)(X, W(H({}, e), {
     focusMode: t
   }))
 }

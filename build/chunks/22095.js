@@ -19,11 +19,11 @@ require.d(exports, {
   is: () => x,
   it: () => L,
   lL: () => ee,
-  lx: () => Q,
+  lx: () => X,
   m0: () => M,
   nE: () => V,
   pf: () => B,
-  qm: () => X,
+  qm: () => Q,
   w: () => J,
   wF: () => U,
   xw: () => j
@@ -470,7 +470,7 @@ async function q() {
   }
 }
 
-function X(e, t, n) {
+function Q(e, t, n) {
   a.Z.dispatch({
     type: "QUESTS_UPDATE_OPTIMISTIC_PROGRESS",
     questId: e,
@@ -479,7 +479,7 @@ function X(e, t, n) {
   })
 }
 
-function Q(e) {
+function X(e) {
   a.Z.dispatch({
     type: "QUESTS_RESET_OPTIMISTIC_PROGRESS",
     questId: e

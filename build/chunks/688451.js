@@ -68,7 +68,7 @@ function _(e) {
 
 function m(e) {
   if (Array.isArray(e)) return Array.prototype.slice.call(e);
-  var t = X(e);
+  var t = Q(e);
   delete t[W];
   for (var n = q(t), r = 0; r < n.length; r++) {
     var i = n[r],
@@ -98,12 +98,12 @@ function E(e) {
 }
 
 function b(e) {
-  var t = Q[e];
+  var t = X[e];
   return t || r(18, e), t
 }
 
 function y(e, t) {
-  Q[e] || (Q[e] = t)
+  X[e] || (X[e] = t)
 }
 
 function O() {
@@ -272,13 +272,13 @@ var U, G, Z = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
   q = "undefined" != typeof Reflect && Reflect.ownKeys ? Reflect.ownKeys : true !== Object.getOwnPropertySymbols ? function(e) {
     return Object.getOwnPropertyNames(e).concat(Object.getOwnPropertySymbols(e))
   } : Object.getOwnPropertyNames,
-  X = Object.getOwnPropertyDescriptors || function(e) {
+  Q = Object.getOwnPropertyDescriptors || function(e) {
     var t = {};
     return q(e).forEach(function(n) {
       t[n] = Object.getOwnPropertyDescriptor(e, n)
     }), t
   },
-  Q = {},
+  X = {},
   J = {
     get: function(e, t) {
       if (t === W) return e;

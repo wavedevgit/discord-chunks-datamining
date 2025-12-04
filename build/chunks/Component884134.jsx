@@ -136,7 +136,7 @@ function q(e) {
   return e
 }
 
-function X(e) {
+function Q(e) {
   let {
     gradientAngle: t,
     setGradientAngle: n
@@ -201,7 +201,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   let {
     chassisMixAmount: t,
     setChassisMixAmount: n
@@ -483,10 +483,10 @@ function en(e) {
             variant: "text-sm/semibold",
             color: "text-subtle",
             children: Z.intl.string(G.default.F1t0c8)
-          }), T.length > 1 && (0, r.jsx)(X, {
+          }), T.length > 1 && (0, r.jsx)(Q, {
             gradientAngle: L,
             setGradientAngle: F
-          }), (0, r.jsx)(Q, {
+          }), (0, r.jsx)(X, {
             chassisMixAmount: C,
             setChassisMixAmount: e => {
               U(e), 0 === T.length && (0, N.lT)(T, V, M)

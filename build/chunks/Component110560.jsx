@@ -16,7 +16,7 @@ require.r(exports), require.d(exports, {
   openQuestMinorEnrollmentBlockModal: () => H,
   openQuestOrbsRewardModal: () => F,
   openQuestsRewardCodeModal: () => Z,
-  openVideoQuestModal: () => X
+  openVideoQuestModal: () => Q
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -237,7 +237,7 @@ function q() {
   return Promise.all([require.e("13193"), require.e("75909"), require.e("90499")]).then(require.bind(require, 215113))
 }
 
-function X(e) {
+function Q(e) {
   var t;
   let {
     quest: n,
@@ -284,7 +284,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   var t;
   let n = null == (t = platform.os) ? true : t.family,
     r = "quest";
@@ -302,7 +302,7 @@ function Q(e) {
 }
 
 function J(e) {
-  let t = Q(e),
+  let t = X(e),
     n = (0, a.zS)(t);
   null != n && p.default.track(w.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, o.K)(n.fingerprint),
@@ -371,7 +371,7 @@ async function en(e, t) {
   });
   switch (n) {
     case m.wF.SUCCESS:
-      X({
+      Q({
         quest: e,
         questContent: t.questContent,
         sourceQuestContent: t.sourceQuestContent,

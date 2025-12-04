@@ -221,8 +221,8 @@ let K = function(e) {
     location: U
   });
   w.pj.has(i.planId) && D.JwP.ALL_PAUSEABLE.has(i.status) && !z || (q = false);
-  let X = (0, C.N)(),
-    Q = null == X || null == (t = X.discount) ? true : t.amount,
+  let Q = (0, C.N)(),
+    X = null == Q || null == (t = Q.discount) ? true : t.amount,
     J = (0, I.t7)(),
     $ = (0, I.lr)(),
     ee = (0, T.W)(),
@@ -485,6 +485,6 @@ let K = function(e) {
     buttons: eu(),
     statusClasses: e_,
     shouldUseDiscountMarketing: J,
-    discountAmount: Q
+    discountAmount: X
   })
 }

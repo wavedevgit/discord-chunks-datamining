@@ -82,12 +82,12 @@ function q(e, t) {
   return n
 }
 
-function X(e, t) {
+function Q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : q(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Q = 44,
+let X = 44,
   J = 440,
   $ = 24,
   ee = .025;
@@ -353,15 +353,15 @@ class eo extends Chunk473749.PureComponent {
       } = this.scrollerRef;
       if (null == e) return;
       let t = e.getScrollerState();
-      t.scrollTop + t.offsetHeight >= t.scrollHeight - Q && this.props.hasMore && !this.state.loadingMore && this.loadMore()
+      t.scrollTop + t.offsetHeight >= t.scrollHeight - X && this.props.hasMore && !this.state.loadingMore && this.loadMore()
     }), K(this, "getRowHeight", (e, t) => {
       let {
         reactors: n
       } = this.props;
-      if (1 === e) return 0 === t ? Q : 0;
+      if (1 === e) return 0 === t ? X : 0;
       if (0 === e) {
         if (0 === t && 0 === n.length) return J;
-        if (null != this.props.reactors[t]) return Q
+        if (null != this.props.reactors[t]) return X
       }
       return 0
     }), K(this, "renderRow", e => {
@@ -416,9 +416,9 @@ function el(e) {
   return i.useMemo(() => {
     let t = [];
     return e.forEach(e => {
-      e.burst_count > 0 && t.push(X(z({}, e), {
+      e.burst_count > 0 && t.push(Q(z({}, e), {
         count: 0
-      })), e.count > 0 && t.push(X(z({}, e), {
+      })), e.count > 0 && t.push(Q(z({}, e), {
         burst_count: 0
       }))
     }), t.sort((e, t) => {

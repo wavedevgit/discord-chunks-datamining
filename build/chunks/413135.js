@@ -25,7 +25,7 @@ function u(e, t, n) {
   if ("string" == typeof e) return _(e, t);
   if (ArrayBuffer.isView(e)) return m(e);
   if (null == e) throw TypeError("The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type " + typeof e);
-  if (Q(e, ArrayBuffer) || e && Q(e.buffer, ArrayBuffer) || "undefined" != typeof SharedArrayBuffer && (Q(e, SharedArrayBuffer) || e && Q(e.buffer, SharedArrayBuffer))) return h(e, t, n);
+  if (X(e, ArrayBuffer) || e && X(e.buffer, ArrayBuffer) || "undefined" != typeof SharedArrayBuffer && (X(e, SharedArrayBuffer) || e && X(e.buffer, SharedArrayBuffer))) return h(e, t, n);
   if ("number" == typeof e) throw TypeError('The "value" argument must not be of type number. Received type number');
   var r = e.valueOf && e.valueOf();
   if (null != r && r !== e) return c.from(r, t, n);
@@ -88,7 +88,7 @@ function b(e) {
 
 function y(e, t) {
   if (c.isBuffer(e)) return e.length;
-  if (ArrayBuffer.isView(e) || Q(e, ArrayBuffer)) return e.byteLength;
+  if (ArrayBuffer.isView(e) || X(e, ArrayBuffer)) return e.byteLength;
   if ("string" != typeof e) throw TypeError('The "string" argument must be one of type string, Buffer, or ArrayBuffer. Received type ' + typeof e);
   var n = e.length,
     r = arguments.length > 2 && true === arguments[2];
@@ -210,11 +210,11 @@ function T(e, t, n, r) {
 }
 
 function A(e, t, n, r) {
-  return X(W(t, e.length - n), e, n, r)
+  return Q(W(t, e.length - n), e, n, r)
 }
 
 function C(e, t, n, r) {
-  return X(K(t), e, n, r)
+  return Q(K(t), e, n, r)
 }
 
 function N(e, t, n, r) {
@@ -222,11 +222,11 @@ function N(e, t, n, r) {
 }
 
 function P(e, t, n, r) {
-  return X(q(t), e, n, r)
+  return Q(q(t), e, n, r)
 }
 
 function R(e, t, n, r) {
-  return X(z(t, e.length - n), e, n, r)
+  return Q(z(t, e.length - n), e, n, r)
 }
 
 function w(e, t, n) {
@@ -289,7 +289,7 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
 }, c.isBuffer = function(e) {
   return null != e && true === e._isBuffer && e !== c.prototype
 }, c.compare = function(e, t) {
-  if (Q(e, Uint8Array) && (e = c.from(e, e.offset, e.byteLength)), Q(t, Uint8Array) && (t = c.from(t, t.offset, t.byteLength)), !c.isBuffer(e) || !c.isBuffer(t)) throw TypeError('The "buf1", "buf2" arguments must be one of type Buffer or Uint8Array');
+  if (X(e, Uint8Array) && (e = c.from(e, e.offset, e.byteLength)), X(t, Uint8Array) && (t = c.from(t, t.offset, t.byteLength)), !c.isBuffer(e) || !c.isBuffer(t)) throw TypeError('The "buf1", "buf2" arguments must be one of type Buffer or Uint8Array');
   if (e === t) return 0;
   for (var n = e.length, r = t.length, i = 0, a = Math.min(n, r); i < a; ++i)
     if (e[i] !== t[i]) {
@@ -322,7 +322,7 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
     i = 0;
   for (n = 0; n < e.length; ++n) {
     var a = e[n];
-    if (Q(a, Uint8Array) && (a = c.from(a)), !c.isBuffer(a)) throw TypeError('"list" argument must be an Array of Buffers');
+    if (X(a, Uint8Array) && (a = c.from(a)), !c.isBuffer(a)) throw TypeError('"list" argument must be an Array of Buffers');
     a.copy(r, i), i += a.length
   }
   return r
@@ -352,7 +352,7 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
     n = exports.INSPECT_MAX_BYTES;
   return e = this.toString("hex", 0, require).replace(/(.{2})/g, "$1 ").trim(), this.length > require && (e += " ... "), "<Buffer " + module + ">"
 }, o && (c.prototype[o] = c.prototype.inspect), c.prototype.compare = function(e, t, n, r, i) {
-  if (Q(e, Uint8Array) && (e = c.from(e, e.offset, e.byteLength)), !c.isBuffer(e)) throw TypeError('The "target" argument must be one of type Buffer or Uint8Array. Received type ' + typeof e);
+  if (X(e, Uint8Array) && (e = c.from(e, e.offset, e.byteLength)), !c.isBuffer(e)) throw TypeError('The "target" argument must be one of type Buffer or Uint8Array. Received type ' + typeof e);
   if (true === t && (t = 0), true === n && (n = e ? e.length : 0), true === r && (r = 0), true === i && (i = this.length), t < 0 || n > e.length || r < 0 || i > this.length) throw RangeError("out of range index");
   if (r >= i && t >= n) return 0;
   if (r >= i) return false;
@@ -672,12 +672,12 @@ function q(e) {
   return i.toByteArray(Y(e))
 }
 
-function X(e, t, n, r) {
+function Q(e, t, n, r) {
   for (var i = 0; i < r && !(i + n >= t.length) && !(i >= e.length); ++i) t[i + n] = e[i];
   return i
 }
 
-function Q(e, t) {
+function X(e, t) {
   return e instanceof t || null != e && null != e.constructor && null != e.constructor.name && e.constructor.name === t.name
 }
 

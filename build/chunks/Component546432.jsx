@@ -204,7 +204,7 @@ function U(e) {
     spoiler: W,
     type: K,
     contentType: z
-  } = n, [q, X] = i.useState(false), Q = t.getChannelId(), J = E.Z.getChannel(Q), $ = (0, h.Z)(Q), ee = i.useMemo(() => null != z && false !== z.indexOf("/") ? z.split("/") : ["unknown", "unknown"], [z]), et = false;
+  } = n, [q, Q] = i.useState(false), X = t.getChannelId(), J = E.Z.getChannel(X), $ = (0, h.Z)(X), ee = i.useMemo(() => null != z && false !== z.indexOf("/") ? z.split("/") : ["unknown", "unknown"], [z]), et = false;
   if (Z) {
     (null == H || null == Y) && (et = true);
     let e = (0, y.Dc)({
@@ -338,8 +338,8 @@ function U(e) {
         playable: D,
         mimeType: ee,
         renderAdjacentContent: ei,
-        onVolumeShow: () => X(true),
-        onVolumeHide: () => X(false),
+        onVolumeShow: () => Q(true),
+        onVolumeHide: () => Q(false),
         onPlay: p
       });
     case "PLAINTEXT_PREVIEW":

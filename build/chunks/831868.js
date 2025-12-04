@@ -100,7 +100,7 @@ function q(e, t) {
   }
 }
 
-function X(e, t, n) {
+function Q(e, t, n) {
   var r, i, a = Array(S + 1),
     o = 0;
   for (r = 1; r <= S; r++) a[r] = o = o + n[r - 1] << 1;
@@ -110,7 +110,7 @@ function X(e, t, n) {
   }
 }
 
-function Q() {
+function X() {
   var e, t, n, o, s, l = Array(S + 1);
   for (o = 0, n = 0; Chunk754793 < g - 1; Chunk754793++)
     for (e = 0, G[Chunk754793] = require; module < 1 << R[Chunk754793]; module++) U[require++] = Chunk754793;
@@ -123,7 +123,7 @@ function Q() {
   for (; module <= 255;) j[2 * module + 1] = 9, module++, l[9]++;
   for (; module <= 279;) j[2 * module + 1] = 7, module++, l[7]++;
   for (; module <= 287;) j[2 * module + 1] = 8, module++, l[8]++;
-  for (X(j, b + 1, l), e = 0; module < y; module++) M[2 * module + 1] = 5, M[2 * module] = K(module, 5);
+  for (Q(j, b + 1, l), e = 0; module < y; module++) M[2 * module + 1] = 5, M[2 * module] = K(module, 5);
   r = new B(j, R, E + 1, b, S), i = new B(M, w, 0, y, S), a = new B([], D, 0, O, T)
 }
 
@@ -172,7 +172,7 @@ function ei(e, t) {
   for (t.max_code = c, n = e.heap_len >> 1; n >= 1; n--) en(e, a, n);
   i = l;
   do n = e.heap[1], e.heap[1] = e.heap[e.heap_len--], en(e, a, 1), r = e.heap[1], e.heap[--e.heap_max] = n, e.heap[--e.heap_max] = r, a[2 * i] = a[2 * n] + a[2 * r], e.depth[i] = (e.depth[n] >= e.depth[r] ? e.depth[n] : e.depth[r]) + 1, a[2 * n + 1] = a[2 * r + 1] = i, e.heap[1] = i++, en(e, a, 1); while (e.heap_len >= 2);
-  e.heap[--e.heap_max] = e.heap[1], q(e, t), X(a, c, e.bl_count)
+  e.heap[--e.heap_max] = e.heap[1], q(e, t), Q(a, c, e.bl_count)
 }
 
 function ea(e, t, n) {
@@ -240,5 +240,5 @@ function e_(e, t, n) {
   return e.pending_buf[e.d_buf + 2 * e.last_lit] = t >>> 8 & 255, e.pending_buf[e.d_buf + 2 * e.last_lit + 1] = 255 & t, e.pending_buf[e.l_buf + e.last_lit] = 255 & n, e.last_lit++, 0 === t ? e.dyn_ltree[2 * n]++ : (e.matches++, t--, e.dyn_ltree[(U[n] + E + 1) * 2]++, e.dyn_dtree[2 * V(t)]++), e.last_lit === e.lit_bufsize - 1
 }
 exports._tr_init = function(e) {
-  eu || (Q(), eu = true), e.l_desc = new F(e.dyn_ltree, r), e.d_desc = new F(e.dyn_dtree, i), e.bl_desc = new F(e.bl_tree, a), e.bi_buf = 0, e.bi_valid = 0, J(e)
+  eu || (X(), eu = true), e.l_desc = new F(e.dyn_ltree, r), e.d_desc = new F(e.dyn_dtree, i), e.bl_desc = new F(e.bl_tree, a), e.bi_buf = 0, e.bi_valid = 0, J(e)
 }, exports._tr_stored_block = ed, exports._tr_flush_block = ep, exports._tr_tally = e_, exports._tr_align = ef

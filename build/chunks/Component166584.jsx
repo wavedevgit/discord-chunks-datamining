@@ -166,7 +166,7 @@ function j(e) {
         action: "EXPAND_ROLES"
       })
     }, [z]),
-    X = i.useCallback(() => {
+    Q = i.useCallback(() => {
       G(false), z({
         action: "COLLAPSE_ROLES"
       })
@@ -187,7 +187,7 @@ function j(e) {
             asContainer: true,
             text: S.intl.string(S.t.XnXtCt),
             children: (0, r.jsx)(u.P3F, {
-              onClick: X,
+              onClick: Q,
               className: I.collapseButton,
               children: (0, r.jsx)(h.Z, {
                 direction: h.Z.Directions.LEFT,

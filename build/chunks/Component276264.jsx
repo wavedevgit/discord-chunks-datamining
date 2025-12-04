@@ -2,7 +2,7 @@
 /** chunk id: 276264, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => Q,
+  Z: () => X,
   x: () => F
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -238,7 +238,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       })]
     })
   }),
-  X = Chunk473749.memo(function(e) {
+  Q = Chunk473749.memo(function(e) {
     let {
       hideSubtext: t,
       hideTooltip: n = false,
@@ -277,7 +277,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       hideTooltip: n
     })
   }),
-  Q = Chunk473749.memo(function(e) {
+  X = Chunk473749.memo(function(e) {
     let {
       selected: t = false,
       colorString: n,
@@ -305,7 +305,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       hideTooltip: H = false,
       onMouseDown: Y,
       onKeyDown: W,
-      onClick: Q,
+      onClick: X,
       onContextMenu: J,
       onClickPremiumGuildIcon: $,
       "aria-controls": ee,
@@ -385,7 +385,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           [j.flatBottom]: ew
         }),
         innerClassName: j.memberInner,
-        onClick: Q,
+        onClick: X,
         onKeyDown: W,
         onMouseDown: Y,
         onContextMenu: J,
@@ -436,7 +436,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           currentUser: y
         }),
         nameplate: U,
-        subText: (0, r.jsx)(X, {
+        subText: (0, r.jsx)(Q, {
           hideSubtext: F,
           activities: O,
           status: S,

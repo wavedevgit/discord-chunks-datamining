@@ -95,9 +95,9 @@ let U = new Map,
   K = new Map,
   z = Chunk918559.Ez.DISCONNECTED,
   q = Chunk918559.MI.RESIZABLE,
-  X = Chunk701488.GM.NORMAL;
+  Q = Chunk701488.GM.NORMAL;
 
-function Q(e) {
+function X(e) {
   return null != e ? e : w
 }
 
@@ -160,7 +160,7 @@ function J(e) {
   let H = S.filter(e => e.applicationId !== d);
   if (A.length > 0 && H.push(F), M.set(u.id, H), null != y) {
     let e = (null != (s = L.get(y)) ? s : []).filter(e => e.applicationId !== d),
-      t = Q((0, E.j)(u)),
+      t = X((0, E.j)(u)),
       n = (null != (l = x.get(t)) ? l : []).filter(e => e.applicationId !== d || e.location.id !== u.id);
     A.length > 0 && (e.push(F), n.push(F)), L.set(y, e), x.set(t, n)
   }
@@ -216,7 +216,7 @@ function er(e) {
     channel: r
   } = e, i = null != (t = L.get(r.id)) ? t : [];
   L.set(r.id, []);
-  let a = Q(r.guild_id),
+  let a = X(r.guild_id),
     o = (null != (n = x.get(a)) ? n : []).filter(e => (0, E.p)(e.location) !== r.id);
   x.set(a, o), i.forEach(e => {
     M.delete(e.location.id)
@@ -305,7 +305,7 @@ function es(e) {
   let {
     layout: t
   } = e;
-  X = t
+  Q = t
 }
 
 function el(e) {
@@ -332,7 +332,7 @@ function ec(e) {
 function eu(e) {
   let {
     guildId: t
-  } = e, n = Q(t), r = B.get(n);
+  } = e, n = X(t), r = B.get(n);
   B.set(n, {
     isFetching: true,
     lastFetchTimestampMs: null == r ? true : r.lastFetchTimestampMs
@@ -342,7 +342,7 @@ function eu(e) {
 function ed(e) {
   let {
     guildId: t
-  } = e, n = Q(t), r = B.get(n);
+  } = e, n = X(t), r = B.get(n);
   B.set(n, {
     isFetching: false,
     lastFetchTimestampMs: null == r ? true : r.lastFetchTimestampMs
@@ -374,7 +374,7 @@ function ep(e) {
   let {
     guildId: t,
     activities: n
-  } = e, r = Q(t);
+  } = e, r = X(t);
   Z.set(r, n);
   let i = Date.now();
   ef({
@@ -572,16 +572,16 @@ class eP extends(i = Chunk442837.ZP.PersistedStore) {
   }
   getShelfActivities(e) {
     var t;
-    let n = Q(e);
+    let n = X(e);
     return null != (t = Z.get(n)) ? t : R
   }
   getShelfFetchStatus(e) {
-    let t = Q(e);
+    let t = X(e);
     return B.get(t)
   }
   shouldFetchShelf(e) {
     var t, n;
-    let r = Q(e),
+    let r = X(e),
       i = null != (t = B.get(r)) ? t : {
         isFetching: false
       },
@@ -643,7 +643,7 @@ class eP extends(i = Chunk442837.ZP.PersistedStore) {
     return U
   }
   getActivityPopoutWindowLayout() {
-    return X
+    return Q
   }
 }
 I(eP, "displayName", "EmbeddedActivitiesStore"), I(eP, "persistKey", "EmbeddedActivities"), I(eP, "migrations", [e => C(T({}, e), {

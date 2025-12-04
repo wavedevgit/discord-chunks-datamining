@@ -471,8 +471,8 @@ let H = e => {
   K = (0, Chunk364458.Z)([W, Chunk97734.Z]),
   z = i().omit(K, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext", "soundboard"]),
   q = i().omit(K, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard", "gameMention"]),
-  X = i().omit(K, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard", "gameMention"]),
-  Q = i().omit((0, Chunk364458.Z)([K, {
+  Q = i().omit(K, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard", "gameMention"]),
+  X = i().omit((0, Chunk364458.Z)([K, {
     inlineCode: {
       match(e, t, n) {
         let r = K.codeBlock.match(e, t, n);
@@ -525,8 +525,8 @@ let er = 10,
     RULES: K,
     CHANNEL_TOPIC_RULES: z,
     VOICE_CHANNEL_STATUS_RULES: q,
-    EMBED_TITLE_RULES: X,
-    INLINE_REPLY_RULES: Q,
+    EMBED_TITLE_RULES: Q,
+    INLINE_REPLY_RULES: X,
     GUILD_VERIFICATION_FORM_RULES: J,
     GUILD_EVENT_RULES: ee,
     PROFILE_BIO_RULES: $,

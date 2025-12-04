@@ -92,7 +92,7 @@ let q = {
     VoiceChannel: [108, 60],
     ActivityFeed: [900, 500]
   },
-  X = (0, Chunk438139.Z)(class extends Chunk473749.PureComponent {
+  Q = (0, Chunk438139.Z)(class extends Chunk473749.PureComponent {
     render() {
       return (0, Chunk54381.jsx)("div", {
         className: Chunk206733.timestamp,
@@ -101,7 +101,7 @@ let q = {
     }
   });
 
-function Q(e) {
+function X(e) {
   let {
     activity: t
   } = e, n = null;
@@ -111,7 +111,7 @@ function Q(e) {
 function J(e) {
   let {
     activity: t
-  } = e, n = (0, m.ZP)(), r = Q({
+  } = e, n = (0, m.ZP)(), r = X({
     activity: t
   });
   if (null == r) return null;
@@ -438,7 +438,7 @@ class $ extends(r = Chunk473749.PureComponent) {
     let {
       timestamps: n
     } = e;
-    return null == n ? null : (0, x.Z)(e) ? (0, i.jsx)(X, {
+    return null == n ? null : (0, x.Z)(e) ? (0, i.jsx)(Q, {
       timestamps: n
     }) : (0, i.jsx)(T.ZP, {
       start: n.start,

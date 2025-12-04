@@ -124,8 +124,8 @@ function C(e) {
     } = e,
     z = v(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "fullWidth", "focusProps", "loading", "loadingStartedLabel", "loadingFinishedLabel", "rounded", "type", "rel", "onClick", "onDoubleClick", "onMouseEnter", "onMouseLeave", "onMouseUp", "onMouseDown", "onKeyDown", "disabled", "minWidth", "className", "style", "buttonRef"]);
   let q = (0, u.M)(),
-    X = null != (t = null == q ? true : q.size) ? t : _,
-    Q = null != (n = null == q ? true : q.fullWidth) ? n : T,
+    Q = null != (t = null == q ? true : q.size) ? t : _,
+    X = null != (n = null == q ? true : q.fullWidth) ? n : T,
     J = null != m,
     $ = i.useRef(null),
     ee = null != K ? K : $,
@@ -133,7 +133,7 @@ function C(e) {
       icon: E,
       iconOpticalOffsetMargin: S,
       iconPosition: y,
-      size: X,
+      size: Q,
       ref: ee,
       disabled: V
     }),
@@ -154,7 +154,7 @@ function C(e) {
       }),
       children: [null != et && "start" === y && et, J && (0, r.jsx)(h.x, {
         tag: "span",
-        variant: I[X],
+        variant: I[Q],
         color: "none",
         lineClamp: 1,
         children: m
@@ -168,9 +168,9 @@ function C(e) {
       "data-mana-component": "button",
       role: a,
       "aria-busy": C,
-      className: o()(g.button, g[X], g[f], {
+      className: o()(g.button, g[Q], g[f], {
         [g.hasText]: J,
-        [g.fullWidth]: Q,
+        [g.fullWidth]: X,
         [g.rounded]: x
       }),
       ref: ee,
@@ -198,14 +198,14 @@ function C(e) {
         children: el
       }) : (0, r.jsx)(N, {
         loading: C,
-        size: X,
+        size: Q,
         children: el
       })]
     }))
   }));
   return en ? (0, r.jsx)("div", {
     className: o()(g.expressiveWrapper, {
-      [g.fullWidth]: Q,
+      [g.fullWidth]: X,
       [g.hasText]: J
     }),
     children: ed

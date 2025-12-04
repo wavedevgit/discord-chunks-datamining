@@ -52,7 +52,7 @@ function C(e, t) {
   }), e
 }
 
-function _(e) {
+function T(e) {
   let {
     lobbyId: t,
     connectionTypeText: n,
@@ -71,7 +71,7 @@ function _(e) {
   }))
 }
 
-function T(e) {
+function _(e) {
   let {
     closePopout: t,
     connectionTypeText: n
@@ -98,11 +98,11 @@ function m(e) {
   } = e, a = (0, g.J)({
     channelId: t
   }) ? N.intl.string(N.t["3BogKe"]) : N.intl.string(N.t.ETIVvg);
-  return n ? (0, l.jsx)(_, {
+  return n ? (0, l.jsx)(T, {
     lobbyId: i,
     closePopout: r,
     connectionTypeText: a
-  }) : (0, l.jsx)(T, {
+  }) : (0, l.jsx)(_, {
     closePopout: r,
     connectionTypeText: a
   })

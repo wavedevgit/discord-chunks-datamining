@@ -347,19 +347,19 @@ let eW = Chunk473749.memo(function() {
       return (0, Chunk54381.jsx)(Chunk852923.Z, {});
     case Chunk981631.kVF.GUILD_RAID_NOTIFICATION:
       let {
-        dismissUntil: eX
+        dismissUntil: eQ
       } = c.metadata;
       return (0, Chunk54381.jsx)(Chunk506357.Z, {
-        onDismiss: () => eY(eX)
+        onDismiss: () => eY(eQ)
       });
     case Chunk981631.kVF.WIN32_DEPRECATED_MESSAGE:
       let {
-        dismissUntil: eQ
+        dismissUntil: eX
       } = c.metadata;
       return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
         color: Chunk481060.DM8.WARNING,
         children: [(0, Chunk54381.jsx)(Chunk481060.RyX, {
-          onClick: () => eY(eQ),
+          onClick: () => eY(eX),
           noticeType: c.type
         }), Chunk388032.intl.format(Chunk388032.t["08KQ1P"], {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.WIN32_DEPRECATE)

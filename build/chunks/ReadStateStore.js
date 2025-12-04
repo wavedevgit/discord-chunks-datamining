@@ -157,13 +157,13 @@ function eP(e, t) {
   return !(null == n || q.Z.isBlockedOrIgnoredForMessage(e)) && !!((0, T.ZP)({
     message: e,
     userId: t.id,
-    suppressEveryone: Q.ZP.isSuppressEveryoneEnabled(n.guild_id),
-    suppressRoles: Q.ZP.isSuppressRolesEnabled(n.guild_id)
+    suppressEveryone: X.ZP.isSuppressEveryoneEnabled(n.guild_id),
+    suppressRoles: X.ZP.isSuppressRolesEnabled(n.guild_id)
   }) || eR(n))
 }
 
 function eR(e) {
-  return null != e && e.isPrivate() && !Q.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)
+  return null != e && e.isPrivate() && !X.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)
 }
 async function ew(e) {
   if (0 === eh.length) {
@@ -482,7 +482,7 @@ class eM {
     return !(0 === this.mentionCount || this._isThread && !this._isJoinedThread || (0, Chunk869404.h3)(this.channelId, [Chunk355298.Z, Chunk333984.Z]) || (0, Chunk398758.r1)(this._guildId) && this._lastMessageTimestamp < eS) && this.canTrackUnreads()
   }
   getGuildChannelUnreadState(e, t, n, r, i) {
-    if (t && (this._lastMessageTimestamp < eS || !Q.ZP.isChannelRecordOrParentOptedIn(e) && !this.hasRecentlyVisitedAndRead() && this.mentionCount <= 0)) return {
+    if (t && (this._lastMessageTimestamp < eS || !X.ZP.isChannelRecordOrParentOptedIn(e) && !this.hasRecentlyVisitedAndRead() && this.mentionCount <= 0)) return {
       mentionCount: 0,
       unread: false,
       isMentionLowImportance: false
@@ -664,7 +664,7 @@ class eM {
   }
   shouldDeleteReadState(e) {
     if (0 !== H.Z.totalUnavailableGuilds) returnfalse;
-    if (null != this.type && this.type !== ei.W.CHANNEL) return !eX(this);
+    if (null != this.type && this.type !== ei.W.CHANNEL) return !eQ(this);
     let t = F.Z.getBasicChannel(this.channelId);
     if (null == t)
       if (eq(this, e)) returntrue;
@@ -820,7 +820,7 @@ function eq(e, t) {
   return e.mentionCount > 0 || !(G.default.compare(e.channelId, t) > 0 || null != e._ackMessageId && G.default.compare(e._ackMessageId, t) > 0 || null != e._lastMessageId && G.default.compare(e._lastMessageId, t) > 0)
 }
 
-function eX(e) {
+function eQ(e) {
   switch (e.type) {
     case ei.W.GUILD_HOME:
     case ei.W.GUILD_EVENT:
@@ -834,7 +834,7 @@ function eX(e) {
   }
 }
 
-function eQ(e, t) {
+function eX(e, t) {
   if (null == t) returnfalse;
   let n = eM.get(t);
   return !!ej(n) && n.ack({
@@ -979,7 +979,7 @@ function e9(e) {
       var p;
       t = null == (p = e.params) ? true : p.channelId
     }
-  } else null == f && (t = X.Z.getChannelId(), n = B.ZP.getCurrentSidebarChannelId(t));
+  } else null == f && (t = Q.Z.getChannelId(), n = B.ZP.getCurrentSidebarChannelId(t));
   let _ = t === i || n === i;
   if (_ && ej(s) && !o) return s.ack({
     messageId: a.id,
@@ -1012,8 +1012,8 @@ function te(e, t, n) {
   if (null != t && (0, T.Hl)({
       rawMessage: e,
       userId: t.id,
-      suppressEveryone: Q.ZP.isSuppressEveryoneEnabled(n.guildId),
-      suppressRoles: Q.ZP.isSuppressRolesEnabled(n.guildId)
+      suppressEveryone: X.ZP.isSuppressEveryoneEnabled(n.guildId),
+      suppressRoles: X.ZP.isSuppressRolesEnabled(n.guildId)
     })) return {
     shouldMention: true,
     isMentionLowImportance: false
@@ -1023,13 +1023,13 @@ function te(e, t, n) {
     shouldMention: true,
     isMentionLowImportance: false
   };
-  if (Q.ZP.mentionOnAllMessages && null != r) {
+  if (X.ZP.mentionOnAllMessages && null != r) {
     if (r.isThread()) {
       if ((0, D.J)(r) === ea.iN.ALL_MESSAGES) return {
         shouldMention: true,
         isMentionLowImportance: true
       }
-    } else if (!r.isVocal() && !Q.ZP.isChannelMuted(r.guild_id, r.id) && Q.ZP.resolvedMessageNotifications(r) === ee.bL.ALL_MESSAGES) return {
+    } else if (!r.isVocal() && !X.ZP.isChannelMuted(r.guild_id, r.id) && X.ZP.resolvedMessageNotifications(r) === ee.bL.ALL_MESSAGES) return {
       shouldMention: true,
       isMentionLowImportance: true
     }
@@ -1116,7 +1116,7 @@ function tu(e) {
   let {
     channelId: t
   } = e;
-  return eQ({
+  return eX({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ACK_RESORT_THREADS,
     objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -1159,7 +1159,7 @@ function tp(e) {
     ackedId: t.id,
     local: false
   });
-  !Q.ZP.isMuteScheduledEventsEnabled(n) && r.mentionCount++
+  !X.ZP.isMuteScheduledEventsEnabled(n) && r.mentionCount++
 }
 
 function t_(e) {
@@ -1255,11 +1255,11 @@ function tS(e) {
   }
   tA(ef), tA(ep);
   let a = false;
-  return ef !== t && (a = tC(ef) || a, a = tC(ep) || a), (ef === t || (null == r ? true : r.type) != null && ee.TPd.GUILD_THREADS_ONLY.has(r.type)) && (a = eQ({
+  return ef !== t && (a = tC(ef) || a, a = tC(ep) || a), (ef === t || (null == r ? true : r.type) != null && ee.TPd.GUILD_THREADS_ONLY.has(r.type)) && (a = eX({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ACK_CHANNEL_SELECT_SAME_CHANNEL,
     objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
-  }, t) || a), ef === t && (a = eQ({
+  }, t) || a), ef === t && (a = eX({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ACK_CHANNEL_SELECT_SAME_CHANNEL_SIDEBAR,
     objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -1269,7 +1269,7 @@ function tS(e) {
 function tI() {
   let e = Chunk433355.ZP.getCurrentSidebarChannelId(ef),
     t = false;
-  return ep !== module ? (t = tC(ep), ep = module) : t = eQ({
+  return ep !== module ? (t = tC(ep), ep = module) : t = eX({
     section: Chunk981631.jXE.CHANNEL,
     object: Chunk981631.qAy.ACK_CHANNEL_SECTION_STORE_UPDATE,
     objectType: Chunk981631.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -1313,7 +1313,7 @@ function tN(e) {
 function tP(e, t) {
   if (null == e) returnfalse;
   let n = eM.get(e);
-  return t || n.hasUnread() || (n.oldestUnreadMessageIdStale = true), eQ({
+  return t || n.hasUnread() || (n.oldestUnreadMessageIdStale = true), eX({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ACK_WINDOW_FOCUS,
     objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -1324,7 +1324,7 @@ function tR(e) {
   let {
     channelId: t
   } = e;
-  return eQ({
+  return eX({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ACK_CHANNEL_SCROLL,
     objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -1495,7 +1495,7 @@ function tY(e) {
     channelId: t,
     windowId: n
   } = e;
-  return !ey.hasWindowId(t, n) && (ey.addWindowId(t, n), eQ({
+  return !ey.hasWindowId(t, n) && (ey.addWindowId(t, n), eX({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ENABLE_AUTOMATIC_ACK,
     objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -1522,7 +1522,7 @@ function tz(e) {
     channelId: t,
     location: n
   } = e;
-  return eQ(n, t)
+  return eX(n, t)
 }
 
 function tq(e) {
@@ -1538,7 +1538,7 @@ function tq(e) {
   }
 }
 
-function tX(e) {
+function tQ(e) {
   var t;
   let {
     ackedId: n
@@ -1553,7 +1553,7 @@ function tX(e) {
   })
 }
 
-function tQ(e) {
+function tX(e) {
   var t;
   let n = null == (t = J.default.getCurrentUser()) ? true : t.id;
   if (null == n) returnfalse;
@@ -1566,11 +1566,11 @@ function tJ(e) {
   let {
     state: t
   } = e;
-  return t === ee.$7l.ACTIVE && eQ({
+  return t === ee.$7l.ACTIVE && eX({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ACK_APP_FOREGROUND,
     objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
-  }, X.Z.getChannelId())
+  }, Q.Z.getChannelId())
 }
 class t$ extends(i = Chunk442837.ZP.Store) {
   initialize() {
@@ -1765,8 +1765,8 @@ let t0 = new t$(Chunk570140.Z, {
     PASSIVE_UPDATE_V2: tG,
     CLEAR_OLDEST_UNREAD_MESSAGE: tK,
     TRY_ACK: tz,
-    MESSAGE_REQUEST_ACK: tX,
-    MESSAGE_REQUEST_CLEAR_ACK: tQ,
+    MESSAGE_REQUEST_ACK: tQ,
+    MESSAGE_REQUEST_CLEAR_ACK: tX,
     APP_STATE_UPDATE: tJ
   }),
   t1 = t0

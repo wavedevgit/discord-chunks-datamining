@@ -89,7 +89,7 @@ function z(e, t) {
 
 function q(e, t) {
   if (null == e) return {};
-  var n, r, i = X(e, t);
+  var n, r, i = Q(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -97,7 +97,7 @@ function q(e, t) {
   return i
 }
 
-function X(e, t) {
+function Q(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -105,7 +105,7 @@ function X(e, t) {
   return i
 }
 
-function Q(e, t) {
+function X(e, t) {
   let n = V.intl.string(V.t.BYa62u),
     r = V.intl.string(V.t.CDa6Dq),
     i = (() => {
@@ -162,7 +162,7 @@ function J(e) {
     selectedPlanId: k,
     setSelectedPlanId: Y,
     planGroup: K,
-    priceOptions: X,
+    priceOptions: Q,
     planOptions: J,
     eligibleForMultiMonthPlans: $,
     referralTrialOfferId: ee,
@@ -194,7 +194,7 @@ function J(e) {
   M = null != M ? M : el, b = null != b ? b : eo, o()(true !== b, "should not be undefined");
   let [eO, ev] = (0, s.Wu)([E.Z], () => [null != b ? E.Z.get(b.planId) : null, null != k ? E.Z.get(k) : null]), eS = (0, R.N)(ee), eI = null == eS ? true : eS.subscription_trial, eT = (0, P.N)(), eA = (0, A.Vi)(), eC = null == eT || null == (t = eT.discount) ? true : t.plan_ids, eN = null != ev ? ev : ec, eP = i.useCallback(e => {
     null != Y ? Y(e) : es(e)
-  }, [Y, es]), eR = null != X ? X : eu;
+  }, [Y, es]), eR = null != Q ? Q : eu;
   o()(null != eR, "Price option has to be set");
   let ew = (0, f.Z)({
       forceFetch: false,
@@ -309,8 +309,8 @@ function J(e) {
         kunaPriceWithCurrency: (0, S.T4)(7.5345 * eG.amount, F.pK.HRK)
       })
     }) : null,
-    eX = null != b && null != k && (0, I.R4)(b, k, K),
-    eQ = ew.isFractionalPremiumActive && (null == b || eX) && !ef && null != k && Z.dJ.has(k);
+    eQ = null != b && null != k && (0, I.R4)(b, k, K),
+    eX = ew.isFractionalPremiumActive && (null == b || eQ) && !ef && null != k && Z.dJ.has(k);
   if (ef) {
     let e = () => {
         if ((0, y.MY)(ep) === y.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null != eh) return (0, r.jsx)(L.Z, {
@@ -355,12 +355,12 @@ function J(e) {
   let eJ = !eD && !ex && ej && en;
   return (0, r.jsxs)("div", {
     className: H.stepBody,
-    children: [eQ && (0, r.jsx)(x.n, {
+    children: [eX && (0, r.jsx)(x.n, {
       fractionalPremiumInfo: ew,
       enablePremiumBrandRefresh: ed
-    }), null != eO && !eQ && !eA && (0, r.jsx)("div", {
+    }), null != eO && !eX && !eA && (0, r.jsx)("div", {
       className: H.bodyText,
-      children: Q(eO, M)
+      children: X(eO, M)
     }), eW(eS, eD, ex), ez(), eJ && null != eN && null != eG && eK(eN, eG, eN.interval), eq(), !eH && en && (0, r.jsx)(u.Z, {
       message: V.intl.format(V.t.Om31w8, {
         documentationLink: O.Z.getArticleURL(B.BhN.LOCALIZED_PRICING)

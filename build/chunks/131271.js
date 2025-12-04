@@ -444,7 +444,7 @@ var W = function(e, t) {
     }), t && t(), s(e, p, _)
   },
   q = null,
-  X = function(e) {
+  Q = function(e) {
     function t() {
       for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
       return (t = e.call.apply(e, [this].concat(r)) || this).rendered = false, t
@@ -491,10 +491,10 @@ var W = function(e, t) {
       return this.init(), null
     }, t
   }(Chunk473749.Component);
-X.propTypes = {
+Q.propTypes = {
   context: V.isRequired
-}, X.displayName = "HelmetDispatcher";
-var Q = ["children"],
+}, Q.displayName = "HelmetDispatcher";
+var X = ["children"],
   J = ["children"],
   $ = function(e) {
     function t() {
@@ -561,7 +561,7 @@ var Q = ["children"],
         if (e && e.props) {
           var r = e.props,
             a = r.children,
-            o = m(r, Q),
+            o = m(r, X),
             s = Object.keys(o).reduce(function(e, t) {
               return e[v[t] || t] = o[t], e
             }, {}),
@@ -598,11 +598,11 @@ var Q = ["children"],
         n = m(e, J),
         i = f({}, n),
         a = n.helmetData;
-      return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof B || (a = new B(a.context, a.instances)), a ? r.createElement(X, f({}, i, {
+      return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof B || (a = new B(a.context, a.instances)), a ? r.createElement(Q, f({}, i, {
         context: a.value,
         helmetData: true
       })) : r.createElement(F.Consumer, null, function(e) {
-        return r.createElement(X, f({}, i, {
+        return r.createElement(Q, f({}, i, {
           context: e
         }))
       })

@@ -85,7 +85,7 @@ function G(e) {
   let {
     guildId: t
   } = e;
-  w = true, null == t && x.guildFilter === I.NgX.THIS_SERVER && X({
+  w = true, null == t && x.guildFilter === I.NgX.THIS_SERVER && Q({
     guildFilter: I.NgX.ALL_SERVERS
   })
 }
@@ -222,7 +222,7 @@ function q(e) {
   a().forEach(t, K)
 }
 
-function X(e) {
+function Q(e) {
   let t = A({}, x);
   x = a().defaults(a().pick(e, ["guildFilter", "roleFilter", "everyoneFilter"]), x), s.K.set(C, x);
   let n = (e, n) => t[e] !== x[e] && x[e] === n,
@@ -235,7 +235,7 @@ function X(e) {
   }), k(N = i), 0 === N.length && (L = false)
 }
 
-function Q() {
+function X() {
   if (x.guildFilter !== Chunk981631.NgX.THIS_SERVER) returnfalse;
   L = false
 }
@@ -339,10 +339,10 @@ let eo = new ea(Chunk570140.Z, {
   LOAD_RECENT_MENTIONS: G,
   LOAD_RECENT_MENTIONS_SUCCESS: F,
   LOAD_RECENT_MENTIONS_FAILURE: V,
-  SET_RECENT_MENTIONS_FILTER: X,
+  SET_RECENT_MENTIONS_FILTER: Q,
   CLEAR_MENTIONS: en,
   TRUNCATE_MENTIONS: er,
-  CHANNEL_SELECT: Q,
+  CHANNEL_SELECT: X,
   CONNECTION_OPEN: J,
   GUILD_DELETE: $,
   MESSAGE_CREATE: Y,

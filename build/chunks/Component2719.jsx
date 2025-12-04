@@ -82,12 +82,12 @@ function q(e, t) {
   return n
 }
 
-function X(e, t) {
+function Q(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : q(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Q = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
+let X = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
 function J() {
   (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
@@ -363,7 +363,7 @@ function er(e) {
   }
 
   function p() {
-    (0, f.h7j)(e => (0, r.jsx)(w.Z, X(z({}, e), {
+    (0, f.h7j)(e => (0, r.jsx)(w.Z, Q(z({}, e), {
       title: Y.intl.string(Y.t["3CTiKi"]),
       children: a.hasFlag(F.xW$.MFA_SMS) ? Y.intl.string(Y.t.jrhJyo) : true,
       actionText: Y.intl.string(Y.t.N86XcP),
@@ -440,7 +440,7 @@ function ei(e) {
         children: n
       })
     },
-    children: e => (0, r.jsx)(f.P3F, X(z({}, e), {
+    children: e => (0, r.jsx)(f.P3F, Q(z({}, e), {
       innerRef: o,
       className: W.overflowMenuButton,
       "aria-label": Y.intl.string(Y.t.DEoVWZ),
@@ -523,7 +523,7 @@ function eo() {
       themePadding: 0
     }), (0, Chunk54381.jsxs)("div", {
       className: Chunk378846.userInfo,
-      children: [(0, Chunk54381.jsx)(Q, {
+      children: [(0, Chunk54381.jsx)(X, {
         className: Chunk378846.avatar,
         src: Chunk692547,
         avatarDecoration: Chunk28664,

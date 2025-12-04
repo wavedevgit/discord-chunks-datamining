@@ -28,12 +28,12 @@ function O(e, t, n) {
 }
 let y = [Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GROUP_DM, Chunk212819.h8.USER],
   C = null,
-  _ = null,
-  T = [],
+  T = null,
+  _ = [],
   m = [];
 
 function I(e) {
-  T = [...T, e], m = m.map(e => {
+  _ = [..._, e], m = m.map(e => {
     var t, n;
     return t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -47,7 +47,7 @@ function I(e) {
       }
       return e
     }({}, e), n = n = {
-      sent: T.includes(e.data.record.id)
+      sent: _.includes(e.data.record.id)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function I(e) {
 }
 
 function S() {
-  C = null, null != l && (l.destroy(), l = null), null != _ && _()
+  C = null, null != l && (l.destroy(), l = null), null != T && T()
 }
 
 function b() {
@@ -87,7 +87,7 @@ class v extends(i = Chunk442837.ZP.Store) {
 O(v, "displayName", "ActivityInviteModalStore");
 let x = new v(Chunk570140.Z, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
-      C = e.activity, _ = e.resolve, T = [], null == l && (l = new s.ZP((e, t) => {
+      C = e.activity, T = e.resolve, _ = [], null == l && (l = new s.ZP((e, t) => {
         m = ("" === t.trim() ? function() {
           let e = [];
           return E.Z.getPrivateChannelIds().forEach(t => {
@@ -115,7 +115,7 @@ let x = new v(Chunk570140.Z, {
               } = e;
               return {
                 type: s.h8.USER,
-                sent: T.includes(t.id),
+                sent: _.includes(t.id),
                 status: g.Z.getStatus(t.id),
                 data: e
               }
@@ -127,7 +127,7 @@ let x = new v(Chunk570140.Z, {
               } = e, l = c.Z.getChannel(n.parent_id), i = d.Z.getGuild(n.guild_id);
               return {
                 type: s.h8.TEXT_CHANNEL,
-                sent: T.includes(n.id),
+                sent: _.includes(n.id),
                 categoryName: null != l ? (0, u.F6)(l, p.default, h.Z) : "",
                 guildName: null != (t = null == i ? true : i.name) ? t : "",
                 data: e
@@ -139,7 +139,7 @@ let x = new v(Chunk570140.Z, {
               } = e;
               return {
                 type: s.h8.GROUP_DM,
-                sent: T.includes(t.id),
+                sent: _.includes(t.id),
                 data: e
               }
             }

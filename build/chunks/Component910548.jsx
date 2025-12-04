@@ -189,9 +189,9 @@ let W = 45,
   K = ["#61D5B2"],
   Chunk303893 = require("./303893.js"),
   Chunk313226 = require("./313226.js"),
-  X = [Chunk303893, Chunk313226];
+  Q = [Chunk303893, Chunk313226];
 
-function Q() {
+function X() {
   return require.e("77843").then(require.t.bind(require, 931152, 19)).then(e => {
     let {
       default: t
@@ -322,7 +322,7 @@ function et(e) {
   }, [v, y, m, p]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Ji, {
       ref: b,
-      sprites: X,
+      sprites: Q,
       colors: K,
       spriteWidth: W,
       spriteHeight: W
@@ -343,7 +343,7 @@ function et(e) {
         sceneSegments: P,
         onScenePlay: T,
         onSceneComplete: A,
-        importData: Q,
+        importData: X,
         pauseWhileUnfocused: false
       })
     })]

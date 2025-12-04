@@ -638,8 +638,8 @@ function z(e, t) {
     u = false;
   if (false === isFinite(t)) isNaN(t) ? n = l.nan : (n = l.infinity, t < 0 && (u = true));
   else {
-    if (t < 0 && (u = true, t = -t), "percent" === i["[[style]]"] && (t *= 100), n = c.call(i, "[[minimumSignificantDigits]]") && c.call(i, "[[maximumSignificantDigits]]") ? q(t, i["[[minimumSignificantDigits]]"], i["[[maximumSignificantDigits]]"]) : X(t, i["[[minimumIntegerDigits]]"], i["[[minimumFractionDigits]]"], i["[[maximumFractionDigits]]"]), Q[o]) {
-      var d = Q[i["[[numberingSystem]]"]];
+    if (t < 0 && (u = true, t = -t), "percent" === i["[[style]]"] && (t *= 100), n = c.call(i, "[[minimumSignificantDigits]]") && c.call(i, "[[maximumSignificantDigits]]") ? q(t, i["[[minimumSignificantDigits]]"], i["[[maximumSignificantDigits]]"]) : Q(t, i["[[minimumIntegerDigits]]"], i["[[minimumFractionDigits]]"], i["[[maximumFractionDigits]]"]), X[o]) {
+      var d = X[i["[[numberingSystem]]"]];
       n = String(n).replace(/\d/g, function(e) {
         return d[e]
       })
@@ -685,7 +685,7 @@ function q(e, t, n) {
   return i
 }
 
-function X(e, t, n, r) {
+function Q(e, t, n, r) {
   var i, a = Number.prototype.toFixed.call(e, r),
     o = a.split(".")[0].length,
     s = r - n,
@@ -712,7 +712,7 @@ u(o, "NumberFormat", {
   configurable: true,
   get: K
 });
-var Q = {
+var X = {
   arab: ["٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"],
   arabext: ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"],
   bali: ["᭐", "᭑", "᭒", "᭓", "᭔", "᭕", "᭖", "᭗", "᭘", "᭙"],

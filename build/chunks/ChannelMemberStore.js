@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   CR: () => P,
-  ZP: () => X,
+  ZP: () => Q,
   oL: () => R,
   so: () => w
 }), require("./539854.js"), require("./642613.js"), require("./388685.js");
@@ -330,7 +330,7 @@ class q extends(r = Chunk442837.ZP.Store) {
   }
 }
 T(q, "displayName", "ChannelMemberStore");
-let X = new q(Chunk570140.Z, {
+let Q = new q(Chunk570140.Z, {
   CONNECTION_OPEN: Z,
   OVERLAY_INITIALIZE: Z,
   GUILD_MEMBER_LIST_UPDATE: G,

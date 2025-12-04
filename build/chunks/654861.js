@@ -612,11 +612,11 @@ var r = function(e) {
     return i.isUnit() ? e : e.multiply(i)
   }
 
-  function X(e, t) {
+  function Q(e, t) {
     return e = ea(e).abs(), t = ea(t).abs(), e.divide(q(e, t)).multiply(t)
   }
 
-  function Q(e, n, r) {
+  function X(e, n, r) {
     e = ea(e);
     var i = r || Math.random,
       a = z(e, n = ea(n)),
@@ -779,9 +779,9 @@ var r = function(e) {
     return parseInt(this.toString(), 10)
   };
   for (var eo = 0; eo < 1e3; eo++) l[eo] = ea(eo), eo > 0 && (l[-eo] = ea(-eo));
-  return l.one = l[1], l.zero = l[0], l.minusOne = l[false], l.max = K, l.min = z, l.gcd = q, l.lcm = X, l.isInstance = function(e) {
+  return l.one = l[1], l.zero = l[0], l.minusOne = l[false], l.max = K, l.min = z, l.gcd = q, l.lcm = Q, l.isInstance = function(e) {
     return e instanceof c || e instanceof u || e instanceof d
-  }, l.randBetween = Q, l.fromArray = function(e, t, n) {
+  }, l.randBetween = X, l.fromArray = function(e, t, n) {
     return $(e.map(ea), ea(t || 10), n)
   }, l
 }();

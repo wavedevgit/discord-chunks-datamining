@@ -138,13 +138,13 @@ module.exports = function(e) {
     for (var K = [], z = 0; z < I.length;) {
       var q = I[z];
       if (q.wrapperTemplate) {
-        var X = [];
-        do X.push(I[z].block), z++; while (z < I.length && I[z].wrapperTemplate === q.wrapperTemplate);
-        var Q = u.cloneElement(q.wrapperTemplate, {
+        var Q = [];
+        do Q.push(I[z].block), z++; while (z < I.length && I[z].wrapperTemplate === q.wrapperTemplate);
+        var X = u.cloneElement(q.wrapperTemplate, {
           key: q.key + "-wrap",
           "data-offset-key": q.offsetKey
-        }, X);
-        K.push(Q)
+        }, Q);
+        K.push(X)
       } else K.push(q.block), z++
     }
     return u.createElement("div", {

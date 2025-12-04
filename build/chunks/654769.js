@@ -156,13 +156,13 @@ if (k) {
     }
   }, D(r, "permission", "granted"), D(r, "_id", 0), q = r
 }
-let X = {};
+let Q = {};
 if (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.features.supports("notifications")) {
   try {
     Chunk998502.ZP.on("NOTIFICATIONS_RECEIVED_RESPONSE", (e, t, n, r, i) => {
-      if ("dismiss" === t) return void delete X[n];
+      if ("dismiss" === t) return void delete Q[n];
       {
-        let e = X[n];
+        let e = Q[n];
         if (P.isPlatformEmbedded ? R.ZP.focus() : window.focus(), null != e) {
           var a, o, s;
           (null == (a = e.options) ? true : a.omitClickTracking) || (A.default.track(w.rMx.NOTIFICATION_ACTION, x({
@@ -183,7 +183,7 @@ if (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.feat
   })
 }
 
-function Q(e) {
+function X(e) {
   if (null === c.Z || true === c.Z ? true : c.Z.features.supports("notifications")) try {
     R.ZP.invoke("NOTIFICATIONS_GET_AUTHORIZATION").then(t => {
       e(t)
@@ -242,7 +242,7 @@ async function et(e, t, n, r, i) {
     return
   }
   t.includes("\0") && (G.warn("Notification title contains null character, setting to empty string"), t = ""), n.includes("\0") && (G.warn("Notification body contains null character, setting to empty string"), n = "");
-  let Q = null != (o = null == i ? true : i.tag) ? o : null,
+  let X = null != (o = null == i ? true : i.tag) ? o : null,
     $ = k && (null == b ? true : b.sound) === true && (null == b ? true : b.authorizationStatus) === "authorized",
     et = (e, t) => {
       var n;
@@ -296,7 +296,7 @@ async function et(e, t, n, r, i) {
     }
     try {
       let e = await R.ZP.invoke("NOTIFICATIONS_SEND_NOTIFICATION", a);
-      X[e] = {
+      Q[e] = {
         options: i,
         trackingProps: r,
         clickTrackingProps: K
@@ -322,7 +322,7 @@ async function et(e, t, n, r, i) {
   let en = {
     icon: e,
     body: n,
-    tag: Q,
+    tag: X,
     silent: true
   };
   try {
@@ -352,7 +352,7 @@ async function et(e, t, n, r, i) {
 }
 let en = {
   hasPermission: J,
-  requestPermission: Q,
+  requestPermission: X,
   showNotification: et,
   playNotificationSound: W
 }
