@@ -106,7 +106,7 @@ function k(e) {
     onCtxMenuOpen: L,
     onCtxMenuSelect: Q,
     sourceQuestContent: V
-  } = e, M = (0, j.PB)(v), W = (0, p.ZP)(), Z = ((0, c.wj)(W) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, U = (0, _.tP)(v), H = (null == (t = v.userStatus) ? true : t.claimedAt) != null, z = (0, _.B6)(v.config.expiresAt, {
+  } = e, M = (0, j.PB)(v), W = (0, p.ZP)(), Z = ((0, c.wj)(W) ? N.BRd.DARK : N.BRd.LIGHT) === N.BRd.DARK, H = (0, _.tP)(v), U = (null == (t = v.userStatus) ? true : t.claimedAt) != null, z = (0, _.B6)(v.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), F = (null == (n = v.userStatus) ? true : n.enrolledAt) != null, G = (null == (o = v.userStatus) ? true : o.completedAt) != null, {
@@ -267,7 +267,7 @@ function k(e) {
               color: "text-default",
               children: null != (u = null == (i = v.config.cosponsorMetadata) ? true : i.name) ? u : v.config.messages.gamePublisher
             })]
-          }), U || H ? null : (0, r.jsx)(d.Text, {
+          }), H || U ? null : (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: Z ? "text-muted" : "always-white",
             children: R.intl.format(R.t["7D8r4F"], {

@@ -4,6 +4,8 @@
 require.d(exports, {
   $t: () => M,
   Jm: () => D,
+  OL: () => G,
+  R5: () => U,
   _Z: () => L,
   f7: () => k,
   gq: () => x,
@@ -332,5 +334,17 @@ function k(e) {
   return o.Z.dispatch({
     type: "CHECKPOINT_SET_HIGHEST_SLIDE_SEEN",
     slide: e
+  })
+}
+
+function U() {
+  return Chunk570140.Z.dispatch({
+    type: "CHECKPOINT_AFTER_CLOSED"
+  })
+}
+
+function G() {
+  return Chunk570140.Z.dispatch({
+    type: "CHECKPOINT_SET_HAS_SEEN_REWATCH_POPOVER"
   })
 }

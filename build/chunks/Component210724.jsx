@@ -71,15 +71,15 @@ function W(e) {
   }), W = (0, v.Z)({
     location: D.dr.QUESTS_BAR
   }), Z = (0, c.e7)([_.Z], () => null != _.Z.questEnrollmentBlockedUntil), {
-    isQuestBarVisible: U,
-    reason: H
+    isQuestBarVisible: H,
+    reason: U
   } = (0, T.qN)({
     quest: o,
     location: D.dr.QUESTS_BAR
   }), z = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), F = (0, c.e7)([f.Z], () => f.Z.hasLayers()), G = s.useRef(null), K = s.useMemo(() => (0, E.q8)(o), [o]), X = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, Y = (0, u.Z)(X), J = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
     hasError: $,
     isLoading: ee
-  } = (0, O.kC)(), et = s.useContext(k.T) || W && U && !ee && !Z, en = s.useRef(et), er = s.useRef(false), es = s.useRef(false), [eo, ea] = s.useState(false), [ei, el] = s.useState(false), [ec, ed] = s.useState(false), [eu, ep] = s.useState(true), [em, eg] = s.useState(true), ef = s.useRef(null), eh = s.useRef(null), ex = s.useRef(null), e_ = (0, y.Rf)(o), eb = s.useCallback(e => {
+  } = (0, O.kC)(), et = s.useContext(k.T) || W && H && !ee && !Z, en = s.useRef(et), er = s.useRef(false), es = s.useRef(false), [eo, ea] = s.useState(false), [ei, el] = s.useState(false), [ec, ed] = s.useState(false), [eu, ep] = s.useState(true), [em, eg] = s.useState(true), ef = s.useRef(null), eh = s.useRef(null), ex = s.useRef(null), e_ = (0, y.Rf)(o), eb = s.useCallback(e => {
     J || (ep(false), ed(e))
   }, [J]), ej = s.useCallback(() => {
     eb(true)
@@ -227,15 +227,15 @@ function W(e) {
         properties: {
           content_id: b.jn.QUEST_BAR,
           content_name: (0, h._b)(b.jn.QUEST_BAR),
-          reason: H,
+          reason: U,
           impression_id: null == (e = G.current) ? true : e.getId()
         },
         sourceQuestContent: b.jn.QUEST_BAR_V2
       })
     }
-  }, [et, em, ee, o.id, H]), s.useEffect(() => {
-    (!U || Z) && x.Z.clearTracking(), et && em && !ee && !$ && W && x.Z.stopTracking(o.id)
-  }, [U, Z, et, em, ee, $, W, o.id]);
+  }, [et, em, ee, o.id, U]), s.useEffect(() => {
+    (!H || Z) && x.Z.clearTracking(), et && em && !ee && !$ && W && x.Z.stopTracking(o.id)
+  }, [H, Z, et, em, ee, $, W, o.id]);
   let {
     enabled: eI,
     status: eD

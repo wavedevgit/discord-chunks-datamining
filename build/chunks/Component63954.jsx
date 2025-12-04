@@ -179,20 +179,20 @@ let W = "1193992107035983872",
     targetedContent: []
   };
 
-function U() {
+function H() {
   var e, t, o, d, u, k;
-  let [V, W] = Chunk473749.useState(Z), U = Chunk473749.useCallback(e => {
+  let [V, W] = Chunk473749.useState(Z), H = Chunk473749.useCallback(e => {
     W(D(I({}, e), {
       preview: true
     }))
-  }, []), [H, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [F, G] = Chunk473749.useState(false), [K, X] = Chunk473749.useState(false), [Y, J] = Chunk473749.useState(null), $ = (k = V.config, (0, Chunk278074.EQ)(k).with({
+  }, []), [U, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [F, G] = Chunk473749.useState(false), [K, X] = Chunk473749.useState(false), [Y, J] = Chunk473749.useState(null), $ = (k = V.config, (0, Chunk278074.EQ)(k).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
   function ee(e, t) {
     if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
       var n, r;
-      U(D(I({}, V), {
+      H(D(I({}, V), {
         config: (n = V.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
@@ -228,7 +228,7 @@ function U() {
       default:
         return
     }
-    U(D(I({}, V), {
+    H(D(I({}, V), {
       config: D(I({}, V.config), {
         taskConfigV2: D(I({}, V.config.taskConfigV2), {
           tasks: D(I({}, n), {
@@ -244,7 +244,7 @@ function U() {
   function en(e, t) {
     if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
       var n, r;
-      U(D(I({}, V), {
+      H(D(I({}, V), {
         config: (n = V.config, r = {
           [e]: t
         }, (0, i.EQ)(n).with({
@@ -259,7 +259,7 @@ function U() {
   function er(e, t, n) {
     if ("name" === e || "nameWithArticle" === e) {
       var r, s;
-      U(D(I({}, V), {
+      H(D(I({}, V), {
         config: (r = V.config, s = {
           [e]: t
         }, (0, i.EQ)(r).with({
@@ -276,7 +276,7 @@ function U() {
   }
 
   function es(e, t) {
-    U(D(I({}, V), {
+    H(D(I({}, V), {
       config: D(I({}, V.config), {
         colors: D(I({}, V.config.colors), {
           [e]: t
@@ -320,7 +320,7 @@ function U() {
               n = t.progressSeconds,
               r = t.targetSeconds;
             return n / r >= 1 ? N.a.COMPLETED_100 : n / r >= .75 ? N.a.COMPLETED_75 : n / r >= .5 ? N.a.COMPLETED_50 : n / r >= .25 ? N.a.COMPLETED_25 : N.a.ENROLLED
-          }(e)), U(e))
+          }(e)), H(e))
         },
         quest: Y
       })
@@ -334,7 +334,7 @@ function U() {
         taskDuration: ea,
         taskConfigV2: V.config.taskConfigV2,
         onSelect: function(e) {
-          U(D(I({}, V), {
+          H(D(I({}, V), {
             config: D(I({}, V.config), {
               taskConfigV2: e
             })
@@ -372,7 +372,7 @@ function U() {
           let s = D(I({}, r.messages), {
             [e]: t
           });
-          U(D(I({}, V), {
+          H(D(I({}, V), {
             config: D(I({}, V.config), {
               taskConfigV2: D(I({}, V.config.taskConfigV2), {
                 tasks: D(I({}, n), {
@@ -472,7 +472,7 @@ function U() {
           onFileChange: (e, n) => (function(e, t, n) {
             if ("asset" === e) {
               var r;
-              U(D(I({}, V), {
+              H(D(I({}, V), {
                 config: (r = V.config, (0, i.EQ)(r).with({
                   configVersion: 2
                 }, e => D(I({}, e), {
@@ -530,19 +530,19 @@ function U() {
         onChange: function(e) {
           switch (z(e), e) {
             case N.a.UNENROLLED:
-              U(D(I({}, V), {
+              H(D(I({}, V), {
                 userStatus: null
               }));
               break;
             case N.a.ENROLLED:
-              U(D(I({}, V), {
+              H(D(I({}, V), {
                 userStatus: M({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
             case N.a.COMPLETED_25:
-              U(D(I({}, V), {
+              H(D(I({}, V), {
                 userStatus: M({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .25 * ea
@@ -550,7 +550,7 @@ function U() {
               }));
               break;
             case N.a.COMPLETED_50:
-              U(D(I({}, V), {
+              H(D(I({}, V), {
                 userStatus: M({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .5 * ea
@@ -558,7 +558,7 @@ function U() {
               }));
               break;
             case N.a.COMPLETED_75:
-              U(D(I({}, V), {
+              H(D(I({}, V), {
                 userStatus: M({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .75 * ea
@@ -566,7 +566,7 @@ function U() {
               }));
               break;
             case N.a.COMPLETED_100:
-              U(D(I({}, V), {
+              H(D(I({}, V), {
                 userStatus: M({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
@@ -575,7 +575,7 @@ function U() {
               }));
               break;
             case N.a.CLAIMED:
-              U(D(I({}, V), {
+              H(D(I({}, V), {
                 userStatus: M({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
@@ -585,7 +585,7 @@ function U() {
               }))
           }
         },
-        value: H
+        value: U
       })]
     }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/bold",
@@ -721,7 +721,7 @@ function U() {
     })]
   })
 }
-class H extends Chunk473749.Component {
+class U extends Chunk473749.Component {
   componentDidCatch(e) {
     this.setState({
       error: e
@@ -750,7 +750,7 @@ class H extends Chunk473749.Component {
           children: module.message
         })
       })]
-    }) : (0, Chunk54381.jsx)(U, {}, exports)
+    }) : (0, Chunk54381.jsx)(H, {}, exports)
   }
   constructor(...e) {
     super(...e), k(this, "state", {
@@ -764,4 +764,4 @@ class H extends Chunk473749.Component {
     })
   }
 }
-let z = H
+let z = U

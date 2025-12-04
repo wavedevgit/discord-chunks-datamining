@@ -94,12 +94,12 @@ function w(e) {
   }), {
     isClaiming: W,
     isEnrolling: Z,
-    isQuestEnrollmentBlocked: U
+    isQuestEnrollmentBlocked: H
   } = (0, o.cj)([m.Z], () => ({
     isClaiming: m.Z.isClaimingReward(N.id) || m.Z.isFetchingRewardCode(N.id),
     isEnrolling: m.Z.isEnrolling(N.id),
     isQuestEnrollmentBlocked: null != m.Z.questEnrollmentBlockedUntil
-  })), H = (null == (t = N.userStatus) ? true : t.enrolledAt) != null, z = (null == (n = N.userStatus) ? true : n.completedAt) != null, F = z && (null == (w = N.userStatus) ? true : w.claimedAt) == null, G = (0, x.iQ)(N), K = !(0, x.zi)(N), X = (0, h._Q)(N), Y = (0, _.PB)(N), J = (0, _.HJ)(N), $ = (0, _.Vl)(N), ee = (0, h.Rf)(N), [et, en, er] = (0, h.me)(N, ee), es = K && X === h.OH.ACCEPTED, eo = es && et === g.LI.SELECT, ea = es && !eo && en.length > 1, ei = s.useCallback(e => {
+  })), U = (null == (t = N.userStatus) ? true : t.enrolledAt) != null, z = (null == (n = N.userStatus) ? true : n.completedAt) != null, F = z && (null == (w = N.userStatus) ? true : w.claimedAt) == null, G = (0, x.iQ)(N), K = !(0, x.zi)(N), X = (0, h._Q)(N), Y = (0, _.PB)(N), J = (0, _.HJ)(N), $ = (0, _.Vl)(N), ee = (0, h.Rf)(N), [et, en, er] = (0, h.me)(N, ee), es = K && X === h.OH.ACCEPTED, eo = es && et === g.LI.SELECT, ea = es && !eo && en.length > 1, ei = s.useCallback(e => {
     er(e), e === C.cd.DESKTOP && A([])
   }, [er, A]), {
     text: el,
@@ -132,13 +132,13 @@ function w(e) {
     afterRequest: e => {
       q.stopAnimation(), A(e)
     }
-  }), ep = s.useMemo(() => N.config.features.includes(C.S7.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE), [N.config.features]), em = (null == (P = N.userStatus) ? true : P.claimedAt) != null, {
-    launchInGameActivity: eg
-  } = (0, h.zB)(N), ef = (0, f.CR)({
+  }), ep = (null == (P = N.userStatus) ? true : P.claimedAt) != null, {
+    launchInGameActivity: em
+  } = (0, h.zB)(N), eg = (0, f.CR)({
     quest: N,
     shortText: true
-  }), eh = null;
-  return (G && F ? eh = (0, r.jsx)("div", {
+  }), ef = null;
+  return (G && F ? ef = (0, r.jsx)("div", {
     className: E.button,
     children: (0, r.jsx)(i.zxk, {
       variant: "primary",
@@ -147,7 +147,7 @@ function w(e) {
       text: el,
       fullWidth: true
     })
-  }) : z ? eh = Y ? (0, r.jsxs)(i.hE2, {
+  }) : z ? ef = Y ? (0, r.jsxs)(i.hE2, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, r.jsx)(i.zxk, {
@@ -174,9 +174,9 @@ function w(e) {
     children: [(0, r.jsx)(i.zxk, {
       variant: "secondary",
       icon: N.config.features.includes(C.S7.CLOUD_GAMING_ACTIVITY) ? c.v3n : c.iWm,
-      text: ef,
+      text: eg,
       onClick: () => {
-        eg()
+        em()
       }
     }), (0, r.jsx)(i.zxk, {
       variant: "primary",
@@ -191,7 +191,7 @@ function w(e) {
       text: el,
       fullWidth: true
     })
-  }) : K ? K && F ? eh = (0, r.jsx)("div", {
+  }) : K ? K && F ? ef = (0, r.jsx)("div", {
     className: E.button,
     children: (0, r.jsx)(i.zxk, {
       variant: "primary",
@@ -200,7 +200,7 @@ function w(e) {
       text: el,
       fullWidth: true
     })
-  }) : J ? eh = ep ? (0, r.jsx)("div", {
+  }) : J ? ef = (0, r.jsx)("div", {
     className: E.button,
     children: (0, r.jsx)(i.zxk, {
       variant: "primary",
@@ -209,15 +209,7 @@ function w(e) {
       text: el,
       fullWidth: true
     })
-  }) : (0, r.jsx)("div", {
-    className: E.button,
-    children: (0, r.jsx)(i.zxk, {
-      variant: "secondary",
-      disabled: true,
-      text: y.intl.string(y.t.BkZhUI),
-      fullWidth: true
-    })
-  }) : K && H && !em ? eh = eo ? (0, r.jsx)(a.B6, {
+  }) : K && U && !ep ? ef = eo ? (0, r.jsx)(a.B6, {
     className: E.platformSelectorPrimary,
     isSelected: () => false,
     options: O,
@@ -279,7 +271,7 @@ function w(e) {
       text: y.intl.string(y.t["9KoPyB"]),
       fullWidth: true
     })
-  }) : K && !H && (eh = U ? (0, r.jsxs)(i.hE2, {
+  }) : K && !U && (ef = H ? (0, r.jsxs)(i.hE2, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, r.jsx)(i.zxk, {
@@ -301,7 +293,7 @@ function w(e) {
       icon: (0, v.getPrimaryCtaIcon)(N),
       fullWidth: true
     })
-  })) : eh = (0, r.jsx)("div", {
+  })) : ef = (0, r.jsx)("div", {
     className: E.button,
     children: (0, r.jsx)(i.zxk, {
       variant: "secondary",
@@ -311,11 +303,11 @@ function w(e) {
       }),
       fullWidth: true
     })
-  }), null == eh) ? null : (0, r.jsxs)("div", {
+  }), null == ef) ? null : (0, r.jsxs)("div", {
     className: E.container,
     children: [(0, r.jsx)("div", {
       className: E.ctaItem,
-      children: eh
+      children: ef
     }), ea && (0, r.jsx)("div", {
       className: E.ctaItem,
       children: (0, r.jsx)(a.B6, {

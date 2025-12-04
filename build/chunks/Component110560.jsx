@@ -247,7 +247,7 @@ function Q(e) {
     autoplay: c = true,
     skipEnrollmentCheck: u = false
   } = e;
-  if ((0, T.HJ)(n) && n.config.features.includes(R.S7.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE)) return void et(n);
+  if ((0, T.HJ)(n)) return void et(n);
   let d = (0, i.Z)();
   if ((0, v.D)(R.dr.VIDEO_MODAL) && !u && (null == (t = n.userStatus) ? true : t.enrolledAt) == null && !(0, I.zi)(n)) {
     g.Z.isEnrolling(n.id) || (0, m.AH)(n.id, {

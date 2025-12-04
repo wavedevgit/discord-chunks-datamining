@@ -2,7 +2,7 @@
 /** chunk id: 5888, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S,
+  Z: () => A,
   p: () => c
 });
 var r, Chunk442837 = require("./442837.js"),
@@ -35,50 +35,60 @@ var c = function(e) {
 }({});
 let u = {},
   d = 0,
-  f = {
+  f = false,
+  p = {
     volume: 1,
     isMuted: false,
-    highestSlideSeen: Chunk612776.yD.WELCOME
+    highestSlideSeen: Chunk612776.yD.WELCOME,
+    hasSeenRewatchPopover: false
   },
-  p = l({}, f);
-
-function _() {
-  u = {}, d = 0
-}
+  _ = l({}, p);
 
 function m() {
-  _(), p = l({}, f)
+  u = {}, d = 0, f = false
 }
 
 function h() {
+  m(), _ = l({}, p)
+}
+
+function g() {
   d = 1
 }
 
-function g(e) {
+function E(e) {
   u = e.data, d = 2
 }
 
-function E() {
+function b() {
   d = 3
 }
 
-function b(e) {
-  p.volume = e.volume
+function y(e) {
+  _.volume = e.volume
 }
 
-function y() {
-  p.isMuted = !p.isMuted
+function O() {
+  _.isMuted = !_.isMuted
 }
 
-function O(e) {
-  p.highestSlideSeen = e.slide
+function v(e) {
+  _.highestSlideSeen = e.slide
 }
-class v extends(r = Chunk442837.ZP.PersistedStore) {
+
+function S() {
+  f = true
+}
+
+function I() {
+  _.hasSeenRewatchPopover = true
+}
+class T extends(r = Chunk442837.ZP.PersistedStore) {
   getState() {
-    return p
+    return _
   }
   initialize(e) {
-    _(), null != e && (p = l({}, p, e))
+    m(), null != e && (_ = l({}, _, e))
   }
   getCheckpointData() {
     return u
@@ -87,22 +97,30 @@ class v extends(r = Chunk442837.ZP.PersistedStore) {
     return d
   }
   get volume() {
-    return p.volume
+    return _.volume
   }
   get isMuted() {
-    return p.isMuted
+    return _.isMuted
   }
   get highestSlideSeen() {
-    return p.highestSlideSeen
+    return _.highestSlideSeen
+  }
+  get hasSeenRewatchPopover() {
+    return _.hasSeenRewatchPopover
+  }
+  get hasOpenedCheckpointThisSession() {
+    return f
   }
 }
-s(v, "displayName", "CheckpointStore"), s(v, "persistKey", "CheckpointStore");
-let S = new v(Chunk570140.Z, {
-  CHECKPOINT_FETCH_START: h,
-  CHECKPOINT_FETCH_SUCCESS: g,
-  CHECKPOINT_FETCH_FAILED: E,
-  CHECKPOINT_SET_VOLUME: b,
-  CHECKPOINT_TOGGLE_MUTE: y,
-  CHECKPOINT_SET_HIGHEST_SLIDE_SEEN: O,
-  LOGOUT: m
+s(T, "displayName", "CheckpointStore"), s(T, "persistKey", "CheckpointStore");
+let A = new T(Chunk570140.Z, {
+  CHECKPOINT_FETCH_START: g,
+  CHECKPOINT_FETCH_SUCCESS: E,
+  CHECKPOINT_FETCH_FAILED: b,
+  CHECKPOINT_SET_VOLUME: y,
+  CHECKPOINT_TOGGLE_MUTE: O,
+  CHECKPOINT_SET_HIGHEST_SLIDE_SEEN: v,
+  CHECKPOINT_AFTER_CLOSED: S,
+  CHECKPOINT_SET_HAS_SEEN_REWATCH_POPOVER: I,
+  LOGOUT: h
 })

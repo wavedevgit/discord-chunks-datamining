@@ -42,8 +42,8 @@ function T(e) {
   } = e, L = s.useRef(null), Q = (0, h.w8)(N.config), V = (0, h.B3)(N.config), M = (null == (t = N.userStatus) ? true : t.enrolledAt) != null, {
     ref: W,
     scrollHeight: Z
-  } = (0, d.kE)(), U = 104 !== Z, {
-    onAssetLoadComplete: H
+  } = (0, d.kE)(), H = 104 !== Z, {
+    onAssetLoadComplete: U
   } = s.useContext(b.k), {
     expansionSpring: z
   } = (0, c.q_F)({
@@ -151,7 +151,7 @@ function T(e) {
                   className: O.circularQuestRewardTileAsset,
                   location: C.dr.QUEST_HOME_DESKTOP,
                   autoplay: A,
-                  onLoadComplete: H,
+                  onLoadComplete: U,
                   lazyLoad: true,
                   sourceQuestContent: q
                 })
@@ -163,7 +163,7 @@ function T(e) {
             questContent: R,
             className: O.questRewardTileAsset,
             location: C.dr.QUEST_HOME_DESKTOP,
-            onLoadComplete: H,
+            onLoadComplete: U,
             lazyLoad: true,
             sourceQuestContent: q
           })]
@@ -171,7 +171,7 @@ function T(e) {
       }), (0, r.jsxs)("div", {
         ref: W,
         className: a()(O.textContainer, {
-          [O.justifyCenter]: !U
+          [O.justifyCenter]: !H
         }),
         children: [(0, r.jsx)(c.Heading, {
           variant: "eyebrow",
@@ -186,7 +186,7 @@ function T(e) {
           className: O.header,
           children: ee
         }), et]
-      }), U && (0, r.jsx)(i.animated.div, {
+      }), H && (0, r.jsx)(i.animated.div, {
         style: {
           opacity: z.to([0, 1], [1, 0])
         },

@@ -115,64 +115,64 @@ function en(e) {
 function er(e) {
   let {
     onClose: t
-  } = e, n = (0, T.Z)(), a = (0, I.Z)(), [h, E] = i.useState(0), y = a[h], v = V.bq[y], x = et(v, (0, _.e7)([S.Z], () => S.Z.getCheckpointData()).cardId), q = (0, m.dQu)(x.primaryColor).hex(), [Q] = i.useState(new C.EP), [X, J] = i.useState(false), $ = (0, A.T)(d.Z), ee = (0, A.T)(u.Z), er = (0, A.T)(s.Z), ea = (0, A.T)(l.Z), eo = (0, A.T)(c.Z), es = i.useRef(V.ij.WELCOME), el = i.useCallback(() => {
-    J(true), ee()
-  }, [ee]), ec = i.useCallback(() => {
-    y === V.ij.END_CLAIM ? er() : y === V.ij.END_REWARD ? eo() : V.Kz.has(y) || ea()
-  }, [y, er, ea, eo]), eu = i.useCallback(() => {
-    if (h >= a.length - 1) return void el();
-    ec(), E(h + 1)
-  }, [el, ec, h, a.length]);
+  } = e, n = (0, T.Z)(), a = (0, I.Z)(), [h, E] = i.useState(0), v = a[h], x = V.bq[v], q = et(x, (0, _.e7)([S.Z], () => S.Z.getCheckpointData()).cardId), Q = (0, m.dQu)(q.primaryColor).hex(), [X] = i.useState(new C.EP), [J, $] = i.useState(false), ee = (0, A.T)(d.Z), er = (0, A.T)(u.Z), ea = (0, A.T)(s.Z), eo = (0, A.T)(l.Z), es = (0, A.T)(c.Z), el = i.useRef(V.ij.WELCOME), ec = i.useCallback(() => {
+    $(true), er()
+  }, [er]), eu = i.useCallback(() => {
+    v === V.ij.END_CLAIM ? ea() : v === V.ij.END_REWARD ? es() : V.Kz.has(v) || eo()
+  }, [v, ea, eo, es]), ed = i.useCallback(() => {
+    if (h >= a.length - 1) return void ec();
+    eu(), E(h + 1)
+  }, [ec, eu, h, a.length]);
   i.useEffect(() => {
     b.default.track(H.rMx.CHECKPOINT_STEP_VIEWED, {
-      step_name: en(y)
-    }), es.current = y, y === V.ij.END_SUMMARY && g.ZP.fireSurveyAction("checkpoint_completed")
-  }, [y]);
-  let ed = i.useCallback(() => {
-    y !== V.ij.WELCOME && (ec(), E(h - 1))
-  }, [y, ec, h]);
+      step_name: en(v)
+    }), el.current = v, v === V.ij.END_SUMMARY && g.ZP.fireSurveyAction("checkpoint_completed")
+  }, [v]);
+  let ef = i.useCallback(() => {
+    v !== V.ij.WELCOME && (eu(), E(h - 1))
+  }, [v, eu, h]);
   i.useEffect(() => {
     let e = e => {
-      (0, f.kK)(e.target, HTMLTextAreaElement) || (0, f.kK)(e.target, HTMLInputElement) || ("ArrowRight" === e.key ? eu() : "ArrowLeft" === e.key && ed())
+      (0, f.kK)(e.target, HTMLTextAreaElement) || (0, f.kK)(e.target, HTMLInputElement) || ("ArrowRight" === e.key ? ed() : "ArrowLeft" === e.key && ef())
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-  }, [ed, eu]), i.useEffect(() => ($(), () => {
+  }, [ef, ed]), i.useEffect(() => (ee(), () => {
     b.default.track(H.rMx.CHECKPOINT_CLOSED, {
-      step_name: en(es.current)
+      step_name: en(el.current)
     })
   }), []);
-  let ef = i.useCallback(e => {
+  let ep = i.useCallback(e => {
       var t;
       let [n] = null != (t = Object.entries(V.bq).find(t => {
         let [n, r] = t;
         return r === e
       })) ? t : [], r = Number.parseInt(null != n ? n : "0");
-      ec(), E(r)
-    }, [ec]),
-    ep = i.useCallback(() => {
-      X && t()
-    }, [X, t]);
+      eu(), E(r)
+    }, [eu]),
+    e_ = i.useCallback(() => {
+      J && ((0, y.R5)(), t())
+    }, [J, t]);
   return (0, r.jsx)(C.$r.Provider, {
-    value: Q,
+    value: X,
     children: (0, r.jsx)(O.Q.Provider, {
-      value: x,
+      value: q,
       children: (0, r.jsx)(m.f6W, {
         theme: Y.BR.DARKER,
         children: e => (0, r.jsxs)(P.Z, {
           playEntryAnimation: n,
-          isLeaving: X,
-          onRest: ep,
+          isLeaving: J,
+          onRest: e_,
           children: [(0, r.jsx)(p.OUJ, {}), (0, r.jsxs)("div", {
             className: o()(z.container, e),
             "aria-label": K.intl.string(W.default["CdU/PF"]),
             children: [(0, r.jsx)(C.ZP, {
-              slide: v
+              slide: x
             }), (0, r.jsxs)(D.ZP, {
-              activeSlide: v,
+              activeSlide: x,
               children: [(0, r.jsx)(m.Mi4, {
                 id: V.yD.WELCOME,
                 children: (0, r.jsx)(F.Z, {
-                  onNextStep: eu
+                  onNextStep: ed
                 })
               }), (0, r.jsx)(m.Mi4, {
                 id: V.yD.MESSAGES,
@@ -189,9 +189,9 @@ function er(e) {
               }), (0, r.jsx)(m.Mi4, {
                 id: V.yD.FRIENDS,
                 children: (0, r.jsx)(M.Z, {
-                  step: y,
-                  onNextStep: eu,
-                  onPreviousStep: ed
+                  step: v,
+                  onNextStep: ed,
+                  onPreviousStep: ef
                 })
               }), (0, r.jsx)(m.Mi4, {
                 id: V.yD.GAMING,
@@ -202,67 +202,67 @@ function er(e) {
               }), (0, r.jsx)(m.Mi4, {
                 id: V.yD.END,
                 children: (0, r.jsx)(j.Z, {
-                  step: y,
-                  onNext: eu
+                  step: v,
+                  onNext: ed
                 })
               })]
             }), (0, r.jsxs)("div", {
               className: o()(z.header, e),
-              children: [v !== V.yD.WELCOME && (0, r.jsxs)("div", {
+              children: [x !== V.yD.WELCOME && (0, r.jsxs)("div", {
                 className: z.logo,
                 children: [(0, r.jsx)(m.gw7, {
                   colorClass: z.iconColor,
-                  color: q
+                  color: Q
                 }), (0, r.jsx)(m.Text, {
                   variant: "display-sm",
                   className: z.logoText,
                   style: {
-                    color: q
+                    color: Q
                   },
                   children: K.intl.string(W.default["CdU/PF"])
                 })]
               }), (0, r.jsx)(w.Z, {
-                activeSlide: v,
-                setActiveSlide: ef,
+                activeSlide: x,
+                setActiveSlide: ep,
                 className: z.stepIndicator,
-                color: q
+                color: Q
               }), (0, r.jsxs)("div", {
                 className: z.actions,
                 children: [(0, r.jsx)(R.Z, {}), (0, r.jsx)(m.P3F, {
-                  onClick: () => el(),
+                  onClick: () => ec(),
                   className: z.closeButton,
                   style: {
-                    color: q
+                    color: Q
                   },
                   children: (0, r.jsx)(m.Uz9, {
                     colorClass: z.iconColor,
-                    color: q,
+                    color: Q,
                     size: "sm"
                   })
                 })]
               })]
-            }), v !== V.yD.WELCOME && (0, r.jsxs)(r.Fragment, {
+            }), x !== V.yD.WELCOME && (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(m.P3F, {
-                onClick: ed,
+                onClick: ef,
                 className: z.backButton,
                 style: {
-                  borderColor: q
+                  borderColor: Q
                 },
                 children: (0, r.jsx)(m.j9r, {
                   colorClass: z.iconColor,
-                  color: q
+                  color: Q
                 })
-              }), y !== V.ij.END_REWARD && y !== V.ij.END_SUMMARY && (0, r.jsx)(N.Z, {
-                onClick: eu,
+              }), v !== V.ij.END_REWARD && v !== V.ij.END_SUMMARY && (0, r.jsx)(N.Z, {
+                onClick: ed,
                 contentClassName: z.nextButtonContent,
                 className: z.nextButton,
                 muteSound: true,
                 children: (0, r.jsx)(m.d4D, {
                   colorClass: z.iconColor,
-                  color: q
+                  color: Q
                 })
-              }), y === V.ij.END_SUMMARY && (0, r.jsx)(ei, {
-                primaryColor: q
+              }), v === V.ij.END_SUMMARY && (0, r.jsx)(ei, {
+                primaryColor: Q
               })]
             })]
           }), (0, r.jsx)(p.OUJ, {})]

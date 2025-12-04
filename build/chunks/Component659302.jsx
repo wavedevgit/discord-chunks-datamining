@@ -160,16 +160,8 @@ function U(e) {
     quest: n
   }), g = (0, O.Rf)(n), E = null == (t = (0, _.WD)()) ? true : t.getId(), {
     launchInGameActivity: b
-  } = (0, O.zB)(n), v = (0, N.Rt)(n), S = i.useMemo(() => n.config.features.includes(D.S7.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE), [n.config.features]);
+  } = (0, O.zB)(n), v = (0, N.Rt)(n);
   return i.useMemo(() => {
-    if (!S && (0, C.HJ)(n) && r !== O.OH.COMPLETED && r !== O.OH.CLAIMED) {
-      let e = x.intl.string(x.t.BkZhUI);
-      return {
-        text: e,
-        tooltipText: e,
-        onClick: null
-      }
-    }
     switch (r) {
       case O.OH.UNACCEPTED:
         let e = x.intl.string(x.t.kUQLMJ),
@@ -246,7 +238,7 @@ function U(e) {
             sourceQuestContent: d
           })
         };
-        if (S && (0, C.HJ)(n)) return {
+        if ((0, C.HJ)(n)) return {
           text: x.intl.string(x.t.IsH2Sp),
           tooltipText: null,
           onClick: () => {
@@ -287,7 +279,7 @@ function U(e) {
           tooltipText: null, onClick: m, text: (0, A.wj)(n.config) ? x.intl.string(x.t.bAGFz3) : x.intl.string(x.t.vTgCWx)
         }
     }
-  }, [r, c, h, l, m, n, a, o, s, E, g, u, b, d, S, v])
+  }, [r, c, h, l, m, n, a, o, s, E, g, u, b, d, v])
 }
 
 function G() {
