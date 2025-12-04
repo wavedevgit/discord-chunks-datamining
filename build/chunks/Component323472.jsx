@@ -58,8 +58,8 @@ function I(t, e) {
   } = null != e ? e : {};
   r()(s > 0, "[useSettingCollapsibleSubtitle] Limit must be greater than 0");
   let {
-    directory: I,
-    fallbackDirectory: T
+    visibleDirectory: I,
+    accessibleDirectory: T
   } = (0, u.t)(), g = null != (n = I.get(t)) ? n : T.get(t);
   r()(null != g && (g.type === a.Jq.ACCORDION || S(g)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
   let _ = S(g) && null != (i = g.collapseAfter) ? i : 0,

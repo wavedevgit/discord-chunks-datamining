@@ -19,8 +19,8 @@ function u(e) {
   } = e, {
     destinationKey: p
   } = f, _ = null == (t = f.useSubtitle) ? true : t.call(f), {
-    fallbackDirectory: m
-  } = (0, a.t)(), h = null == m ? true : m.entry(p), g = (null == h ? true : h.parentPanelKey) != null ? null == m ? true : m.get(h.parentPanelKey) : true, E = null == (n = f.useTitle) ? true : n.call(f), b = null == g || null == (u = g.useTitle) ? true : u.call(g);
+    accessibleDirectory: m
+  } = (0, a.t)(), h = m.entry(p), g = (null == h ? true : h.parentPanelKey) != null ? m.get(h.parentPanelKey) : true, E = null == (n = f.useTitle) ? true : n.call(f), b = null == g || null == (u = g.useTitle) ? true : u.call(g);
   if (null == g) return null;
   let y = (null == (d = g.parent) ? true : d.type) === o.Jq.SIDEBAR_ITEM ? g.parent.icon : true;
   return (0, r.jsx)(l.x, {
@@ -28,7 +28,9 @@ function u(e) {
     description: _,
     leadingElement: null != y && (0, r.jsx)("div", {
       className: c.navigatorIcon,
-      children: (0, r.jsx)(y, {})
+      children: (0, r.jsx)(y, {
+        color: "currentColor"
+      })
     }),
     primaryTrailingElement: (0, r.jsx)(i.LJT, {}),
     onClick: () => s.Z.setState({

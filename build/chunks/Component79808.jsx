@@ -81,10 +81,10 @@ function y(e) {
     }) : i()
   }, {
     equalityFn: i.X
-  }), [y, w, m]);
+  }), [w, m, y]);
   let k = o.useMemo(() => ({
-      directory: y,
-      fallbackDirectory: P
+      visibleDirectory: y,
+      accessibleDirectory: P
     }), [y, P]),
     N = () => w(O),
     E = null != S ? y.get(S) : true;

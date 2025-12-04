@@ -8,7 +8,7 @@ require.d(exports, {
   y1: () => a
 }), require("./473749.js");
 var r = function(e) {
-    return e[e.ROOT = 0] = "ROOT", e[e.SECTION = 1] = "SECTION", e[e.SIDEBAR_ITEM = 2] = "SIDEBAR_ITEM", e[e.PANEL = 3] = "PANEL", e[e.PANE = 4] = "PANE", e[e.SPLIT = 5] = "SPLIT", e[e.CATEGORY = 6] = "CATEGORY", e[e.ACCORDION = 7] = "ACCORDION", e[e.LIST = 8] = "LIST", e[e.FIELD_SET = 9] = "FIELD_SET", e[e.STATIC = 10] = "STATIC", e[e.BUTTON = 11] = "BUTTON", e[e.TOGGLE = 12] = "TOGGLE", e[e.SLIDER = 13] = "SLIDER", e[e.SELECT = 14] = "SELECT", e[e.RADIO = 15] = "RADIO", e[e.CHECKBOX = 16] = "CHECKBOX", e[e.NAVIGATOR = 17] = "NAVIGATOR", e[e.CUSTOM = 18] = "CUSTOM", e
+    return e[e.ROOT = 0] = "ROOT", e[e.SECTION = 1] = "SECTION", e[e.SIDEBAR_ITEM = 2] = "SIDEBAR_ITEM", e[e.PANEL = 3] = "PANEL", e[e.PANE = 4] = "PANE", e[e.SPLIT = 5] = "SPLIT", e[e.CATEGORY = 6] = "CATEGORY", e[e.ACCORDION = 7] = "ACCORDION", e[e.LIST = 8] = "LIST", e[e.RELATED = 9] = "RELATED", e[e.FIELD_SET = 10] = "FIELD_SET", e[e.STATIC = 11] = "STATIC", e[e.BUTTON = 12] = "BUTTON", e[e.TOGGLE = 13] = "TOGGLE", e[e.SLIDER = 14] = "SLIDER", e[e.SELECT = 15] = "SELECT", e[e.RADIO = 16] = "RADIO", e[e.CHECKBOX = 17] = "CHECKBOX", e[e.NAVIGATOR = 18] = "NAVIGATOR", e[e.CUSTOM = 19] = "CUSTOM", e
   }({}),
   i = function(e) {
     return e[e.POPOVER = 0] = "POPOVER", e[e.BADGE_NEW = 1] = "BADGE_NEW", e[e.BADGE_COUNT = 2] = "BADGE_COUNT", e[e.STRONGLY_DISCOURAGED_CUSTOM = 3] = "STRONGLY_DISCOURAGED_CUSTOM", e
