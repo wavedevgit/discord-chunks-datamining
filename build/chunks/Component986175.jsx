@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   I: () => S
-}), require("./415506.js");
+}), require("./35282.js"), require("./539854.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk164617 = require("./164617.js"),
@@ -12,12 +12,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk333200 = require("./333200.jsx"),
   Chunk352065 = require("./352065.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk668781 = require("./668781.js"),
   Chunk248514 = require("./248514.jsx"),
   Chunk177475 = require("./177475.js"),
   Chunk691739 = require("./691739.js");
 
-function m(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,8 +25,8 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h() {
-  return (h = Object.assign || function(e) {
+function m() {
+  return (m = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -36,25 +35,25 @@ function h() {
   }).apply(this, arguments)
 }
 
-function g(e) {
+function h(e) {
   if (null == e) throw TypeError("Cannot destructure " + e);
   return e
 }
 
-function E(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function E(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,15 +64,15 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function O(e, t) {
+function y(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -81,12 +80,23 @@ function O(e, t) {
   return i
 }
 
-function v(e, t) {
+function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
+}
+
+function v(e) {
+  let t, n = [],
+    i = 0,
+    a = /\*\*(.+?)\*\*/g,
+    o = 0;
+  for (; null !== (t = a.exec(e));) t.index > i && n.push(e.substring(i, t.index)), n.push((0, r.jsx)("strong", {
+    children: t[1]
+  }, o++)), i = a.lastIndex;
+  return i < e.length && n.push(e.substring(i)), n.length > 0 ? n : e
 }
 let S = {
   title: "Modal",
@@ -100,7 +110,7 @@ let S = {
           showInput: i,
           subtitleIcon: a
         } = e,
-        s = O(e, ["showPreview", "showInput", "subtitleIcon"]);
+        s = y(e, ["showPreview", "showInput", "subtitleIcon"]);
       let c = a ? {
         text: null != (t = s.subtitle) ? t : "Default subtitle",
         leadingIcon: o.VL1
@@ -114,7 +124,7 @@ let S = {
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           text: "Open Modal",
-          onClick: () => (0, u.h7j)(e => (0, r.jsx)(o.Modal, y(E({}, e, s), {
+          onClick: () => (0, u.h7j)(e => (0, r.jsx)(o.Modal, b(g({}, e, s), {
             title: s.title,
             subtitle: c,
             input: i ? (0, r.jsx)(u.E1j, {
@@ -241,14 +251,17 @@ let S = {
       }
     }
   }, {
-    name: "ConfirmModal",
+    name: "ConfirmModal [Alpha]",
     id: "confirm-modal",
     component: function(e) {
       var {
         cancelText: t,
         confirmDelay: n,
-        confirmError: i
-      } = e, a = O(e, ["cancelText", "confirmDelay", "confirmError"]);
+        confirmError: a,
+        subtitle: o,
+        formatSubtitle: s
+      } = e, l = y(e, ["cancelText", "confirmDelay", "confirmError", "subtitle", "formatSubtitle"]);
+      let c = i.useMemo(() => s ? v(o) : o, [o, s]);
       return (0, r.jsxs)(u.Kqy, {
         gap: 16,
         align: "center",
@@ -258,16 +271,14 @@ let S = {
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           text: "Open Confirm Modal",
-          onClick: () => (0, f.Z)(y(E({}, a), {
+          onClick: () => (0, d.Z)(b(g({}, l), {
+            subtitle: c,
             cancelText: "" === t ? true : t,
-            onConfirm: async () => {
+            onConfirm: async e => {
               try {
-                if (await new Promise(e => setTimeout(e, 1e3 * n)), i) throw Error("Confirm error")
-              } catch (e) {
-                throw d.Z.show({
-                  title: "Confirm Error",
-                  body: "There was an error confirming the action"
-                }), e
+                if (await new Promise(e => setTimeout(e, 1e3 * n)), a) throw Error("Confirm error")
+              } catch (t) {
+                throw e("Something went wrong reticulating splines. Please try again later."), t
               }
             }
           }))
@@ -278,17 +289,22 @@ let S = {
       title: {
         label: "Title",
         type: "text",
-        defaultValue: "Confirm Action"
+        defaultValue: "Reticulate splines"
       },
       subtitle: {
         label: "Subtitle",
         type: "text",
-        defaultValue: "Are you sure you want to do the thing?"
+        defaultValue: "Are you sure you want to permanently reticulate **Spliney McSplineface**?"
+      },
+      formatSubtitle: {
+        label: "Format Subtitle (**bold**)",
+        type: "boolean",
+        defaultValue: true
       },
       confirmText: {
         label: "Confirm Text",
         type: "text",
-        defaultValue: "I sure do"
+        defaultValue: "Reticulate"
       },
       cancelText: {
         label: "Cancel Text",
@@ -298,7 +314,7 @@ let S = {
       variant: {
         label: "Variant",
         type: "select",
-        defaultValue: "primary",
+        defaultValue: "critical",
         options: [{
           label: "Primary",
           value: "primary"
@@ -327,14 +343,14 @@ let S = {
           graphic: l,
           subtitleIcon: c
         } = e,
-        d = O(e, ["graphic", "subtitleIcon"]);
-      let f = c ? {
+        d = y(e, ["graphic", "subtitleIcon"]);
+      let _ = c ? {
           text: null != (t = d.subtitle) ? t : "Default subtitle",
           leadingIcon: o.VL1
         } : d.subtitle,
         m = i.useMemo(() => 0 === l ? {
           type: "image",
-          src: p
+          src: f
         } : 1 === l ? {
           type: "lottie",
           lottie: () => n.e("94792").then(n.t.bind(n, 972951, 19)),
@@ -344,8 +360,8 @@ let S = {
           rive: a.PerfTestRive
         } : 3 === l ? {
           type: "video",
-          src: _.Z,
-          fallbackImageSrc: p,
+          src: p.Z,
+          fallbackImageSrc: f,
           loop: true,
           loopAt: 2.5
         } : 4 === l ? {
@@ -365,9 +381,9 @@ let S = {
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           text: "Open ExpressiveModal",
-          onClick: () => (0, u.h7j)(e => (0, r.jsx)(o.ExpressiveModal, y(E({}, e, d), {
+          onClick: () => (0, u.h7j)(e => (0, r.jsx)(o.ExpressiveModal, b(g({}, e, d), {
             title: d.title,
-            subtitle: f,
+            subtitle: _,
             graphic: m,
             actions: [{
               variant: "secondary",
@@ -473,7 +489,7 @@ let S = {
     component: function(e) {
       var {
         dynamicText: t
-      } = e, i = O(e, ["dynamicText"]);
+      } = e, i = y(e, ["dynamicText"]);
       let a = {
         type: "dynamic",
         component: s.DynamicGraphicComponent.DEMO,
@@ -495,7 +511,7 @@ let S = {
             let {
               ExpressiveModal: e
             } = await Promise.resolve().then(n.bind(n, 793030));
-            return t => (0, r.jsx)(e, y(E({}, t, i), {
+            return t => (0, r.jsx)(e, b(g({}, t, i), {
               title: i.title,
               subtitle: i.subtitle,
               graphic: a,
@@ -581,7 +597,7 @@ let S = {
     name: "LayerModal",
     id: "layer-modal",
     component: function(e) {
-      var t = h({}, g(e));
+      var t = m({}, h(e));
       return (0, r.jsxs)(u.Kqy, {
         gap: 16,
         align: "center",
@@ -591,7 +607,7 @@ let S = {
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           text: "Open Layer Modal",
-          onClick: () => (0, u.h7j)(e => (0, r.jsx)(c.A, y(E({}, e, t), {
+          onClick: () => (0, u.h7j)(e => (0, r.jsx)(c.A, b(g({}, e, t), {
             children: (0, r.jsx)(u.Kqy, {
               gap: 16,
               children: (0, r.jsx)(u.Text, {

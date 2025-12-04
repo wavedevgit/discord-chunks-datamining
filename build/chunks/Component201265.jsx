@@ -60,13 +60,17 @@ function d(e) {
   } = e, p = c(e, ["confirmText", "cancelText", "onConfirm", "onCancel", "onCloseCallback", "variant"]);
   let {
     i18n: _
-  } = (0, a.ZF)(), m = _.CANCEL, [h, g] = i.useState(false), E = i.useRef(d);
-  return i.useLayoutEffect(() => {
-    E.current = d
+  } = (0, a.ZF)(), m = _.CANCEL, h = _.INLINE_NOTICE_GENERIC_ERROR, [g, E] = i.useState(false), b = i.useRef(d);
+  i.useLayoutEffect(() => {
+    b.current = d
   }), i.useLayoutEffect(() => () => {
     var e;
-    null == (e = E.current) || e.call(E)
-  }, []), (0, r.jsx)(o.Modal, l({
+    null == (e = b.current) || e.call(b)
+  }, []);
+  let [y, O] = i.useState(true), v = e => {
+    O(e)
+  };
+  return (0, r.jsx)(o.Modal, l({
     actions: [{
       text: null != n ? n : m,
       variant: "secondary",
@@ -77,16 +81,20 @@ function d(e) {
       text: t,
       variant: "primary" === f ? "primary" : "critical-primary",
       onClick: async () => {
-        g(true);
+        O(true), E(true);
         try {
-          await (null == s ? true : s()), p.onClose()
+          await (null == s ? true : s(v)), p.onClose()
         } catch (e) {
-          throw g(false), e
+          throw E(false), O(e => null != e ? e : h), e
         }
       },
-      disabled: h,
-      loading: h
+      disabled: g,
+      loading: g
     }],
-    role: "alertdialog"
+    role: "alertdialog",
+    notice: null != y ? {
+      message: y,
+      type: "critical"
+    } : true
   }, p))
 }

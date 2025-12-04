@@ -3,9 +3,9 @@
 "use strict";
 module.exports = {
   container: "container_b7f4b4",
+  spacer: "spacer_b7f4b4",
   scroller: "scroller_b7f4b4",
   reactorsContainer: "reactorsContainer_b7f4b4",
-  reactors: "reactors_b7f4b4",
   reactionDefault: "reactionDefault_b7f4b4",
   reactionSelected: "reactionSelected_b7f4b4",
   emoji: "emoji_b7f4b4",
@@ -14,13 +14,13 @@ module.exports = {
   hideEmoji: "hideEmoji_b7f4b4",
   burstEmoji: "burstEmoji_b7f4b4",
   spinner: "spinner_b7f4b4",
-  spinnerMore: "spinnerMore_b7f4b4",
   reactor: "reactor_b7f4b4",
-  reactorDefault: "reactorDefault_b7f4b4 reactor_b7f4b4",
   name: "name_b7f4b4",
+  ellipsized: "ellipsized_b7f4b4",
   nickname: "nickname_b7f4b4",
   username: "username_b7f4b4",
   tagFaded: "tagFaded_b7f4b4",
   discriminator: "discriminator_b7f4b4",
-  remove: "remove_b7f4b4"
+  remove: "remove_b7f4b4",
+  reactors: "reactors_b7f4b4"
 }

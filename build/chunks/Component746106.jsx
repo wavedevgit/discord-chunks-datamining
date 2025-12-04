@@ -75,7 +75,8 @@ function R(e, t, n, r, o) {
         KEY_DELETE_A11Y_LABEL: P.intl.string(P.t.BTFDmq),
         DATE_INPUT_OPEN_CALENDAR_LABEL: P.intl.string(N.default.I8kUqR),
         CALENDAR_PREVIOUS_MONTH_LABEL: P.intl.string(N.default.raS6yf),
-        CALENDAR_NEXT_MONTH_LABEL: P.intl.string(N.default["/cp93l"])
+        CALENDAR_NEXT_MONTH_LABEL: P.intl.string(N.default["/cp93l"]),
+        INLINE_NOTICE_GENERIC_ERROR: P.intl.string(P.t["rTU7/z"])
       },
       locale: o,
       theme: e,

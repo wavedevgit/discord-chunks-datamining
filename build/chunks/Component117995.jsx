@@ -24,10 +24,12 @@ function a(e) {
 function o(e) {
   let {
     type: t,
-    children: n
+    hidden: n,
+    children: o
   } = e;
   return (0, r.jsx)(i.W, {
     messageType: a(t),
-    children: n
+    hidden: n,
+    children: o
   })
 }
