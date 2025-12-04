@@ -149,7 +149,7 @@ function w(e) {
 function V(e) {
   let {
     transitionState: n
-  } = e, t = (0, x.Dt)(), {
+  } = e, t = (0, v.Dt)(), {
     analyticsLocations: r
   } = (0, I.ZP)(f.Z.INVITE_MODAL);
   return (0, i.jsx)(I.Gt, {
@@ -184,7 +184,7 @@ function V(e) {
 
 function W(e) {
   var n, t, l, a;
-  let d, v, N, {
+  let d, x, N, {
     transitionState: L
   } = e;
   (0, c.e7)([S.default], () => {
@@ -210,14 +210,14 @@ function W(e) {
   let F = (0, b.yr)(),
     {
       showInviter: H
-    } = (0, P.v9)({
+    } = (0, k.v9)({
       location: "accept_invite_modal",
       autoTrackExposure: true
     });
   r.useEffect(() => {
-    !__OVERLAY__ && O.isPlatformEmbedded && ((0, O.isWindows)() ? k.ZP.minimize() : k.ZP.restore(), k.ZP.focus())
+    !__OVERLAY__ && O.isPlatformEmbedded && ((0, O.isWindows)() ? P.ZP.minimize() : P.ZP.restore(), P.ZP.focus())
   }, []);
-  let X = (0, x.Dt)(),
+  let X = (0, v.Dt)(),
     {
       analyticsLocations: Y
     } = (0, I.ZP)(f.Z.INVITE_MODAL);
@@ -244,8 +244,8 @@ function W(e) {
     inviter: $,
     target_application: ee
   } = y, en = null == y.guild && null == y.channel && null != y.inviter, et = H && (null != (t = null == W ? true : W.length) ? t : 0) > 0 && null != $, ei = null != q || et;
-  if (null != ee) d = null == q ? true : q.name, v = h.ZP.createFromServer(ee).getCoverImageURL(1024);
-  else if (null != q) d = q.name, v = A.ZP.getGuildSplashURL({
+  if (null != ee) d = null == q ? true : q.name, x = h.ZP.createFromServer(ee).getCoverImageURL(1024);
+  else if (null != q) d = q.name, x = A.ZP.getGuildSplashURL({
     id: q.id,
     splash: q.splash
   });
@@ -258,7 +258,7 @@ function W(e) {
   }), (0, i.jsx)(I.Gt, {
     value: Y,
     children: (0, i.jsx)(s.IX, {
-      size: null != v ? "xl" : "sm",
+      size: null != x ? "xl" : "sm",
       "aria-labelledby": X,
       "aria-label": null != (a = null != (l = null == q ? true : q.name) ? l : null == J ? true : J.name) ? a : "",
       transitionState: L,
@@ -355,10 +355,10 @@ function W(e) {
               })]
             })]
           })]
-        }), null != v && (0, i.jsx)("div", {
+        }), null != x && (0, i.jsx)("div", {
           className: U.inviteSplash,
           style: {
-            backgroundImage: "url(".concat(v, ")")
+            backgroundImage: "url(".concat(x, ")")
           }
         })]
       })

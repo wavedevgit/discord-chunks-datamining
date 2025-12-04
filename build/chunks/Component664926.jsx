@@ -1,5 +1,5 @@
 /** Chunk was on 34061 **/
-/** chunk id: 664926, original params: e,l,n (module,exports,require) **/
+/** chunk id: 664926, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -15,30 +15,30 @@ var Chunk399606 = require("./399606.js"),
 function d(e) {
   let {
     friendMemberIds: l
-  } = e, n = (0, i.Wu)([s.default], () => l.slice(0, 3).map(e => s.default.getUser(e)).filter(e => null != e));
-  if (0 === n.length) return null;
-  let d = n[0],
+  } = e, t = (0, i.Wu)([s.default], () => l.slice(0, 3).map(e => s.default.getUser(e)).filter(e => null != e));
+  if (0 === t.length) return null;
+  let d = t[0],
     o = {
       count: l.length - 1,
       username: d.username,
-      username2: 2 === l.length && n.length >= 2 ? n[1].username : ""
+      username2: 2 === l.length && t.length >= 2 ? t[1].username : ""
     },
     m = u.intl.format(u.t["5NHEPu"], o);
-  return (0, t.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     className: c.container,
-    children: [(0, t.jsx)("div", {
+    children: [(0, n.jsx)("div", {
       className: c.avatarStack,
-      children: n.map((e, l) => (0, t.jsx)("div", {
+      children: t.map((e, l) => (0, n.jsx)("div", {
         className: c.avatarWrapper,
         style: {
-          zIndex: n.length - l
+          zIndex: t.length - l
         },
-        children: (0, t.jsx)(r.Z, {
+        children: (0, n.jsx)(r.Z, {
           user: e,
           size: a.EFr.SIZE_16
         })
       }, e.id))
-    }), (0, t.jsx)(a.Text, {
+    }), (0, n.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
       children: m

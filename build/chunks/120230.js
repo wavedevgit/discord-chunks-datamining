@@ -10,5 +10,6 @@ module.exports = {
   size20: "size20__9ac28",
   size24: "size24__9ac28",
   isLast: "isLast__9ac28",
-  overflow: "overflow__9ac28"
+  overflow: "overflow__9ac28",
+  button: "button__9ac28"
 }

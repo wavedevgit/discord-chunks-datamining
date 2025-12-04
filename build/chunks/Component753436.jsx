@@ -1,12 +1,12 @@
 /** Chunk was on 44097 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => j
+  S: () => O
 });
-var Chunk54381 = require("./54381.js"),
-  Chunk473749 = require("./473749.js"),
-  Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
+var Chunk120356 = require("./120356.js"),
+  l = require.n(Chunk120356),
   Chunk85707 = require("./85707.js"),
   Chunk594174 = require("./594174.js"),
   Chunk86419 = require("./86419.js"),
@@ -21,101 +21,101 @@ var Chunk54381 = require("./54381.js"),
   Chunk932366 = require("./932366.js"),
   Chunk133458 = require("./133458.js");
 
-function O(e) {
+function v(e) {
   let {
     index: t,
     widgetType: n,
-    game: l,
-    coverImageUrl: a,
-    gameName: o,
-    children: c
+    game: i,
+    coverImageUrl: l,
+    gameName: a,
+    children: o
   } = e, {
-    registerDragHandleRef: f,
-    manageFocusOnReorder: g
-  } = (0, d.C)(), p = i.useRef(null);
-  return (0, r.jsx)(u.yW, {
+    manageFocusOnReorder: d
+  } = (0, u.C)();
+  return (0, r.jsx)(s.yW, {
     index: t,
-    itemId: l.applicationId,
+    itemId: i.applicationId,
     listType: n,
     itemType: "GAME_COVER",
     itemPreviewProps: {
-      imageSrc: a,
-      gameName: o
+      imageSrc: l,
+      gameName: a
     },
-    "aria-label": h.intl.formatToPlainString(h.t["0dR3gw"], {
+    "aria-label": b.intl.formatToPlainString(b.t["0dR3gw"], {
       positionNumber: t + 1
     }),
-    onReorder: (e, t) => (0, s.Eq)(n, e, t),
-    onEnd: () => g(l.applicationId),
-    className: v.container,
-    dropBeforeClassName: v.dropIndicatorBefore,
-    dropAfterClassName: v.dropIndicatorAfter,
-    draggingClassName: v.isDragging,
-    children: (0, r.jsxs)("div", {
-      ref: p,
-      className: v.dragHandleContainer,
-      children: [c, (0, r.jsx)(u.e_, {
-        buttonRef: f(l.applicationId),
-        className: v.dragHandle
-      })]
+    onReorder: (e, t) => (0, c.Eq)(n, e, t),
+    onEnd: () => d(i.applicationId),
+    className: y.container,
+    dropBeforeClassName: y.dropIndicatorBefore,
+    dropAfterClassName: y.dropIndicatorAfter,
+    draggingClassName: y.isDragging,
+    children: (0, r.jsx)("div", {
+      className: y.dragHandleContainer,
+      children: o
     })
   })
 }
 
-function j(e) {
+function O(e) {
   let {
     game: t,
     userId: n,
     widgetType: i,
-    guildId: l,
-    channelId: s,
-    disableInteraction: u = false,
-    index: d,
-    onRemoveGame: h,
-    coverRef: j
+    guildId: c,
+    channelId: b,
+    disableInteraction: O = false,
+    index: j,
+    onRemoveGame: x,
+    coverRef: _
   } = e, {
-    coverImageUrl: x,
-    gameName: _,
-    isLoading: P
-  } = (0, m.Z)(t.applicationId), I = (0, b.Z)(t.applicationId).length > 0, w = c.default.getCurrentUser(), S = (null == w ? true : w.id) === n, E = !u && S, {
-    isDragging: T
-  } = (0, o.f)(e => ({
+    coverImageUrl: P,
+    gameName: I,
+    isLoading: w
+  } = (0, p.Z)(t.applicationId), {
+    registerDragHandleRef: S
+  } = (0, u.C)(), E = (0, m.Z)(t.applicationId).length > 0, T = o.default.getCurrentUser(), C = (null == T ? true : T.id) === n, D = !O && C, {
+    isDragging: k
+  } = (0, a.f)(e => ({
     isDragging: e.isDragging()
-  })), C = () => (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(f.Z, {
-      imageSrc: x,
-      gameName: _,
+  })), N = () => (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(d.Z, {
+      imageSrc: P,
+      gameName: I,
       applicationId: t.applicationId,
       userId: n,
-      disableInteraction: u,
-      className: a()(I ? v.socialProofBackdrop : true, null == x || u ? true : y.hoverActiveEffect),
-      hideTooltip: T,
-      coverRef: j
-    }), E && (0, r.jsx)(g.Z, {
+      disableInteraction: O,
+      className: l()(E ? y.socialProofBackdrop : true, null == P || O ? true : h.hoverActiveEffect),
+      hideTooltip: k,
+      coverRef: _
+    }), D && (0, r.jsx)(s.e_, {
+      buttonRef: S(t.applicationId),
+      className: y.dragHandle
+    }), !O && (0, r.jsx)(g.L, {
+      userId: n,
+      applicationId: t.applicationId,
+      guildId: c,
+      channelId: b,
+      className: y.socialProof
+    }), D && (0, r.jsx)(f.Z, {
       game: t,
       widgetType: i,
-      className: v.removeGameButton,
+      className: y.removeGameButton,
       iconSize: "xs",
-      onRemove: () => null == h ? true : h(t.applicationId)
-    }), !u && (0, r.jsx)(p.Z, {
-      className: v.socialProof,
-      applicationId: t.applicationId,
-      guildId: l,
-      channelId: s,
-      visuallyHideLabel: true
+      onRemove: () => null == x ? true : x(t.applicationId)
     })]
   });
-  return P ? (0, r.jsx)("div", {
-    className: y.loadingCover
-  }) : E ? (0, r.jsx)(O, {
+  return w ? (0, r.jsx)("div", {
+    className: h.loadingCover
+  }) : D ? (0, r.jsx)(v, {
     widgetType: i,
-    index: null != d ? d : 0,
+    index: null != j ? j : 0,
     game: t,
-    coverImageUrl: x,
-    gameName: _,
-    children: C()
+    coverImageUrl: P,
+    gameName: I,
+    children: N()
   }) : (0, r.jsx)("div", {
-    className: v.container,
-    children: C()
+    className: y.container,
+    children: N()
   })
 }

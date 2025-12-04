@@ -351,7 +351,7 @@ function K() {
     {
       game: t
     } = X(module.widget);
-  return null == exports ? null : (0, Chunk54381.jsx)(Chunk919498.Z, {
+  return null == exports ? null : (0, Chunk54381.jsx)(Chunk919498.F, {
     className: Chunk18827.socialProof,
     applicationId: exports.id,
     guildId: module.guildId,

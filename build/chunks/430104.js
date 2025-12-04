@@ -7,19 +7,19 @@ require.d(exports, {
   u1: () => s
 });
 var Chunk81643 = require("./81643.js"),
-  Chunk312870 = require("./312870.js");
+  Chunk318370 = require("./318370.js");
 
 function a() {
   let e = (0, Chunk81643.Jm)();
-  return (0, Chunk312870.s)("useIsStageSpeakingDisabledForCurrentUser") && module
+  return (0, Chunk318370.n)("useIsStageSpeakingDisabledForCurrentUser") && module
 }
 
 function o() {
   let e = (0, Chunk81643.yo)();
-  return (0, Chunk312870.U)("isStageSpeakingDisabledForCurrentUser") && module
+  return (0, Chunk318370.y)("isStageSpeakingDisabledForCurrentUser") && module
 }
 
 function s() {
   let e = (0, Chunk81643.M$)();
-  return (0, Chunk312870.U)("shouldAgeVerifyToSpeakForCurrentUser") && !module
+  return (0, Chunk318370.y)("shouldAgeVerifyToSpeakForCurrentUser") && !module
 }

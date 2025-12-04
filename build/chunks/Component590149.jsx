@@ -54,12 +54,12 @@ function d(e) {
       }), (0, a.jsxs)("div", {
         className: c.title,
         children: [(0, a.jsx)(s.Text, {
-          variant: "eyebrow",
+          variant: "text-sm/medium",
           color: "text-default",
           children: n
         }), null != r && "" !== r && (0, a.jsx)(s.Text, {
-          variant: "text-sm/medium",
-          color: "interactive-normal",
+          variant: "text-xs/normal",
+          color: "text-subtle",
           children: r
         })]
       }), (0, a.jsx)("div", {
@@ -69,7 +69,7 @@ function d(e) {
         children: (0, a.jsx)(o.Z, {
           width: 18,
           height: 18,
-          direction: o.Z.Directions.DOWN
+          direction: o.Z.Directions.RIGHT
         })
       })]
     }), (0, a.jsx)("div", {
