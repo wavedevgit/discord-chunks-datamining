@@ -20,7 +20,7 @@ function b(e) {
     recurrenceId: n,
     transitionState: b,
     onClose: p
-  } = e, x = (0, d.Z)(n, t.id), h = (0, c.iA)(n, t), f = (0, c.x6)(h, x), [j, v] = r.useState(f), [m, {
+  } = e, x = (0, d.Z)(n, t.id), f = (0, c.iA)(n, t), h = (0, c.x6)(f, x), [j, v] = r.useState(h), [m, {
     loading: D,
     error: O
   }] = (0, u.Z)(() => {
@@ -39,7 +39,7 @@ function b(e) {
       text: g.intl.string(g.t.e5VEcE),
       onClick: m,
       loading: D,
-      disabled: (0, c.Y4)(j, f)
+      disabled: (0, c.Y4)(j, h)
     }],
     onClose: p,
     children: [(0, l.jsx)(o.Z, {

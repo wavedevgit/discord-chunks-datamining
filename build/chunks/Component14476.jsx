@@ -23,8 +23,8 @@ let g = e => {
       assetId: g,
       user: v,
       claimed: S,
-      onSelect: x,
-      productName: y,
+      onSelect: y,
+      productName: x,
       a11yLabel: P,
       selectedSkuId: j,
       category: _,
@@ -78,9 +78,9 @@ let g = e => {
   })), (0, r.jsx)(u.tEY, {
     children: (0, r.jsxs)(u.kL8, {
       ref: C,
-      "aria-label": null != y ? y : "",
+      "aria-label": null != x ? x : "",
       onClick: () => {
-        null == a || null == x || S || x(a)
+        null == a || null == y || S || y(a)
       },
       className: i()(T ? b.shopCardDark : b.shopCard, {
         [b.shopCardAnimation]: !S,
@@ -100,7 +100,7 @@ let g = e => {
         className: b.productName,
         children: [(0, r.jsx)(u.Heading, {
           variant: "heading-md/extrabold",
-          children: y
+          children: x
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           children: S ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)

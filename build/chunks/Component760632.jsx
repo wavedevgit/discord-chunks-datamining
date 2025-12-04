@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk434404 = require("./434404.js"),
   Chunk388032 = require("./388032.jsx");
 let o = "".concat(60),
@@ -51,7 +51,7 @@ function m(e) {
       afkTimeout: parseInt(e, 10)
     })
   }, []);
-  return (0, r.jsx)(l.q4e, {
+  return (0, r.jsx)(l.y6, {
     label: p,
     value: null == n ? null : "".concat(n),
     options: f,

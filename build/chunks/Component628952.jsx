@@ -110,7 +110,7 @@ let C = e => {
           preload: () => (0, _.Z)(R.id, R.getAvatarURL(null, 80)),
           renderPopout: e => (0, r.jsx)(p.Z, A(I({}, e), {
             user: R,
-            pendingAvatar: R.getAvatarURL(null, (0, d.pxk)(d.EFr.SIZE_80)),
+            pendingAvatar: R.getAvatarURL(null, (0, d.dcp)(d.EFr.SIZE_80)),
             pendingAvatarDecoration: (0, g.M)(j) ? j : null,
             pendingProfileEffect: (0, E.H)(j) ? j : null,
             canUsePremiumCustomization: true,

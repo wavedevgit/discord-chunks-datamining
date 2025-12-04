@@ -1,11 +1,12 @@
 /** Chunk was on 43889 **/
 /** chunk id: 279875, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  GuildSubscriptionSelectionModal: () => x
+  GuildSubscriptionSelectionModal: () => p
 }), require("./388685.js"), require("./290780.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
+  Chunk668339 = require("./668339.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk430824 = require("./430824.js"),
@@ -13,69 +14,69 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk250117 = require("./250117.js");
 
-function x(t) {
+function p(t) {
   let {
     transitionState: n,
     onClose: e,
-    sku: x,
-    onSelect: p,
-    currentGuildId: h
-  } = t, [g, f] = l.useState(), {
-    guilds: j,
-    isFetching: v
-  } = (0, o.CR)(x.applicationId, x.id, true), I = l.useMemo(() => {
-    if (!v && null != h) return j.findIndex(t => {
+    sku: p,
+    onSelect: h,
+    currentGuildId: g
+  } = t, [f, j] = l.useState(), {
+    guilds: v,
+    isFetching: I
+  } = (0, d.CR)(p.applicationId, p.id, true), b = l.useMemo(() => {
+    if (!I && null != g) return v.findIndex(t => {
       let {
         id: n
       } = t;
-      return n === h
+      return n === g
     }) >= 0
-  }, [h, j, v]);
+  }, [g, v, I]);
   l.useLayoutEffect(() => {
-    I && f(h)
-  }, [h, I]);
-  let b = l.useMemo(() => {
+    b && j(g)
+  }, [g, b]);
+  let m = l.useMemo(() => {
     let t = [];
-    for (let n of j) {
+    for (let n of v) {
       let e = {
         value: n.id,
         label: n.name
       };
-      I && n.id === h ? t.unshift(e) : t.push(e)
+      b && n.id === g ? t.unshift(e) : t.push(e)
     }
     return t
-  }, [h, j, I]);
+  }, [g, v, b]);
   return (0, i.jsx)(r.Modal, {
-    title: d.intl.string(d.t["xgtI/K"]),
-    subtitle: d.intl.string(d.t.rAXXxN),
+    title: c.intl.string(c.t["xgtI/K"]),
+    subtitle: c.intl.string(c.t.rAXXxN),
     transitionState: n,
     onClose: e,
     actions: [{
       variant: "secondary",
-      text: d.intl.string(d.t.cpT0Cq),
+      text: c.intl.string(c.t.cpT0Cq),
       onClick: e
     }, {
       variant: "primary",
-      text: d.intl.string(d.t["cY+Oob"]),
-      disabled: null == g,
+      text: c.intl.string(c.t["cY+Oob"]),
+      disabled: null == f,
       onClick: function() {
-        null != g && (p(g), e())
+        null != f && (h(f), e())
       }
     }],
-    children: v ? (0, i.jsx)(s.$jN, {
-      type: s.$jN.Type.PULSING_ELLIPSIS,
-      className: c.spinner
-    }) : b.length > 0 ? (0, i.jsx)(s.VcW, {
-      "aria-label": d.intl.string(d.t["5qyruI"]),
-      options: b,
-      value: g,
-      onChange: f,
+    children: I ? (0, i.jsx)(a.$jN, {
+      type: a.$jN.Type.PULSING_ELLIPSIS,
+      className: x.spinner
+    }) : m.length > 0 ? (0, i.jsx)(s.d, {
+      "aria-label": c.intl.string(c.t["5qyruI"]),
+      options: m,
+      value: f,
+      onChange: j,
       renderOptionPrefix: t => {
         let n = null == t ? true : t.value,
-          e = null != n ? u.Z.getGuild(n) : null;
-        return null == e ? null : (0, i.jsx)(a.Z, {
+          e = null != n ? o.Z.getGuild(n) : null;
+        return null == e ? null : (0, i.jsx)(u.Z, {
           guild: e,
-          size: a.Z.Sizes.MINI
+          size: u.Z.Sizes.MINI
         })
       },
       renderOptionLabel: t => {
@@ -84,21 +85,21 @@ function x(t) {
           value: e
         } = t;
         return (0, i.jsxs)("div", {
-          children: [(0, i.jsx)(s.Text, {
+          children: [(0, i.jsx)(a.Text, {
             variant: "text-md/normal",
             children: n
-          }), e === h && (0, i.jsx)(s.Text, {
+          }), e === g && (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-default",
-            children: d.intl.string(d.t.RjtuAI)
+            children: c.intl.string(c.t.RjtuAI)
           })]
         })
       }
-    }) : (0, i.jsx)(s.Wn, {
-      messageType: s.QYI.WARNING,
-      children: (0, i.jsx)(s.Text, {
+    }) : (0, i.jsx)(a.Wn, {
+      messageType: a.QYI.WARNING,
+      children: (0, i.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: d.intl.string(d.t.M2TbbK)
+        children: c.intl.string(c.t.M2TbbK)
       })
     })
   })

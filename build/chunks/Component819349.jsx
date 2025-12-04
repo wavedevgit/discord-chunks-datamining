@@ -64,8 +64,8 @@ function I(e) {
     }
   });
   let R = (0, c.e7)([C.Z], () => C.Z.can(O.Plq.CREATE_INSTANT_INVITE, t), [t]),
-    [L, k] = r.useState(null),
-    [D, U] = r.useState(false),
+    [L, D] = r.useState(null),
+    [k, U] = r.useState(false),
     [V, F] = r.useState("unknown"),
     H = r.useRef(null),
     {
@@ -89,14 +89,14 @@ function I(e) {
       to: {
         height: "".concat(32, "px")
       },
-      reverse: D,
+      reverse: k,
       config: {
         duration: 200,
         easing: P,
         clamp: true
       },
       onRest: () => {
-        D && q(V)
+        k && q(V)
       }
     }),
     Y = r.useCallback(function() {
@@ -130,7 +130,7 @@ function I(e) {
         }
         r = null != (n = b.Z.getInvite(t.id, {})) ? n : null
       }
-      k(null != (i = null == r ? true : r.code) ? i : null)
+      D(null != (i = null == r ? true : r.code) ? i : null)
     }()
   }, [R, t.id]);
   let Q = r.useCallback(() => {
@@ -161,9 +161,9 @@ function I(e) {
         children: (0, i.jsx)(d.P3F, (t = S({
           innerRef: l,
           className: a()({
-            [E.clickable]: !D
+            [E.clickable]: !k
           }, j.voiceUser, j.userSmall, j.clickable),
-          "aria-disabled": D,
+          "aria-disabled": k,
           "aria-label": x.intl.string(x.t.F3qiJr)
         }, e), n = n = {
           children: (0, i.jsxs)("div", {

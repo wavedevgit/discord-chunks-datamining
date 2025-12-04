@@ -76,7 +76,7 @@ function Z(e) {
   } = (0, T.qN)({
     quest: o,
     location: D.dr.QUESTS_BAR
-  }), F = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), G = s.useRef(null), K = s.useMemo(() => (0, E.q8)(o), [o]), X = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, Y = (0, u.Z)(X), J = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
+  }), z = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), F = (0, c.e7)([f.Z], () => f.Z.hasLayers()), G = s.useRef(null), K = s.useMemo(() => (0, E.q8)(o), [o]), X = (null == (t = o.userStatus) ? true : t.enrolledAt) != null, Y = (0, u.Z)(X), J = (null == (n = o.userStatus) ? true : n.completedAt) != null, {
     hasError: $,
     isLoading: ee
   } = (0, O.kC)(), et = s.useContext(k.T) || Z && H && !ee && !W, en = s.useRef(et), er = s.useRef(false), es = s.useRef(false), [eo, ea] = s.useState(false), [ei, el] = s.useState(false), [ec, ed] = s.useState(false), [eu, ep] = s.useState(true), [em, eg] = s.useState(true), ef = s.useRef(null), eh = s.useRef(null), ex = s.useRef(null), e_ = (0, y.Rf)(o), eb = s.useCallback(e => {
@@ -159,9 +159,9 @@ function Z(e) {
   s.useEffect(() => {
     eB({
       expansionSpring: +!!ec,
-      immediate: F
+      immediate: z
     })
-  }, [ec, eB, F]);
+  }, [ec, eB, z]);
   let {
     visibilitySpring: ek
   } = (0, d.q_F)({
@@ -248,7 +248,7 @@ function Z(e) {
   return (0, r.jsx)(S.A, {
     questOrQuests: o,
     questContent: b.jn.QUEST_BAR_V2,
-    overrideVisibility: !z && et,
+    overrideVisibility: !F && et,
     sourceQuestContent: b.jn.QUEST_BAR_V2,
     children: (e, t) => (G.current = t.current, (0, r.jsxs)("div", {
       className: Q.mask,
@@ -298,7 +298,7 @@ function Z(e) {
                 isExpanded: ec,
                 isExpansionAnimationComplete: eu,
                 quest: o,
-                useReducedMotion: F,
+                useReducedMotion: z,
                 taskDetails: e_,
                 onCtxMenuOpen: ev,
                 onCtxMenuClose: eC,
@@ -317,7 +317,7 @@ function Z(e) {
                 isExpanded: ec,
                 isExpansionAnimationComplete: eu,
                 quest: o,
-                useReducedMotion: F,
+                useReducedMotion: z,
                 ref: ef,
                 taskDetails: e_,
                 children: (0, r.jsxs)(r.Fragment, {
@@ -327,7 +327,7 @@ function Z(e) {
                   }), !X && (0, r.jsx)(P.Z, {
                     quest: o,
                     expansionSpring: eA,
-                    useReducedMotion: F,
+                    useReducedMotion: z,
                     isExpanded: ec,
                     isExpansionAnimationComplete: eu,
                     onCtxMenuOpen: ev,

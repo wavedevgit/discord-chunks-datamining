@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk716364 = require("./716364.js"),
   Chunk474873 = require("./474873.js"),
   Chunk197344 = require("./197344.js"),
@@ -27,7 +27,7 @@ function p() {
     value: exports.soundpack,
     label: Chunk388032.intl.string(exports.soundpackLabel)
   }];
-  return (0, Chunk54381.jsx)(Chunk481060.q4e, {
+  return (0, Chunk54381.jsx)(Chunk199849.y6, {
     label: Chunk388032.intl.string(Chunk388032.t.fgSHf8),
     onChange: Chunk716364.c,
     value: module,

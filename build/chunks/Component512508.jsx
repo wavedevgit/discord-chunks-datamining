@@ -248,7 +248,7 @@ function k(e) {
   let Y = (e, t, n) => {
       n.stopPropagation(), n.preventDefault(), 2 === t ? M(e) : (1 === t || M(e), k(e))
     },
-    W = l.useCallback(e => {
+    Q = l.useCallback(e => {
       let t = _({}, g);
       I(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = P(e.record)), G(t), Z(""), z(), setTimeout(() => {
         var e;
@@ -260,7 +260,7 @@ function k(e) {
         })
       }, 16)
     }, [G, g]),
-    Q = l.useCallback(e => {
+    W = l.useCallback(e => {
       let {
         section: n,
         row: l
@@ -268,14 +268,14 @@ function k(e) {
       return (0, r.jsx)(u.P3F, {
         className: o()(H.selectableSearchRow, H.rowHeight),
         onClick: e => {
-          e.stopPropagation(), W(i)
+          e.stopPropagation(), Q(i)
         },
         children: (0, r.jsx)("div", {
           className: H.rowContainer,
           children: T(i, t, H.searchRowLabel)
         })
       }, i.id)
-    }, [t, W, B]),
+    }, [t, Q, B]),
     K = l.useMemo(() => v.map(e => {
       var n;
       return n = g[e], w(_({}, n.tag), {
@@ -334,7 +334,7 @@ function k(e) {
           className: H.resultsListContainer,
           innerClassName: H.resultsList,
           sections: q,
-          renderRow: Q,
+          renderRow: W,
           rowHeight: 34,
           renderSection: e => {
             let {

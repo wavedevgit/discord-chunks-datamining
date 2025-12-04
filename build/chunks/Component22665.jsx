@@ -35,7 +35,7 @@ let O = e => {
     channelId: s.id,
     guildId: n,
     messageId: O
-  })((0, u.JZ)(S, s)), A = null != S ? S.getAvatarURL(n, (0, c.pxk)(c.EFr.SIZE_16)) : y, C = null != S ? g.intl.format(h.default["+zqXZs"], {
+  })((0, u.JZ)(S, s)), A = null != S ? S.getAvatarURL(n, (0, c.dcp)(c.EFr.SIZE_16)) : y, C = null != S ? g.intl.format(h.default["+zqXZs"], {
     username: S.username,
     onUserClick: T
   }) : g.intl.string(h.default.xpRjfS);

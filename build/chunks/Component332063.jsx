@@ -6,7 +6,7 @@ require.d(exports, {
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk274616 = require("./274616.js"),
   Chunk560587 = require("./560587.js"),
   Chunk388032 = require("./388032.jsx");
@@ -47,7 +47,7 @@ class h extends(i = Chunk473749.Component) {
     } = this.props;
     if (0 === module.length || Chunk473749) return null;
     let u = i ? module : module.filter(e => e.id !== n);
-    return (0, Chunk54381.jsx)(Chunk481060.q4e, {
+    return (0, Chunk54381.jsx)(Chunk199849.y6, {
       label: Chunk274616,
       options: Chunk560587.map(e => ({
         label: e.getName(n),

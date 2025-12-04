@@ -1,13 +1,15 @@
 /** Chunk was on 83051 **/
 /** chunk id: 115072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => E
+  default: () => T
 }), require("./953529.js"), require("./642613.js"), require("./388685.js"), require("./784620.js"), require("./973216.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
+  Chunk668339 = require("./668339.jsx"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk53281 = require("./53281.jsx"),
@@ -28,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk176059 = require("./176059.js");
 
-function C(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -46,17 +48,17 @@ function C(e) {
   }
   return e
 }
-let k = ["Android", "iOS", "Windows Mobile", "Windows", "Linux", "Mac OS X"].map(e => ({
+let D = ["Android", "iOS", "Windows Mobile", "Windows", "Linux", "Mac OS X"].map(e => ({
   label: e,
   value: e
 }));
 
-function E(e) {
-  var t, E, D, T;
+function T(e) {
+  var t, T, I, L;
   let {
-    transitionState: I,
-    onClose: L
-  } = e, N = r.useRef(null), A = r.useRef(null), [M, R] = r.useState(""), [W, Z] = r.useState(""), [V, B] = r.useState(), [H, q] = r.useState(""), [z, G] = r.useState([]), [U, Y] = r.useState(), [X, F] = r.useState(), [K, J] = r.useState(false), [Q, $] = r.useState(""), [ee, et] = r.useState(function(e) {
+    transitionState: N,
+    onClose: A
+  } = e, M = r.useRef(null), R = r.useRef(null), [Z, W] = r.useState(""), [B, V] = r.useState(""), [H, q] = r.useState(), [z, G] = r.useState(""), [U, Y] = r.useState([]), [X, F] = r.useState(), [K, J] = r.useState(), [Q, $] = r.useState(false), [ee, et] = r.useState(""), [en, ei] = r.useState(function(e) {
     switch (e) {
       case "windows":
         return "Windows";
@@ -66,7 +68,7 @@ function E(e) {
         return "Linux"
     }
     return ""
-  }((0, _.getOS)())), [en, ei] = r.useState(""), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(false), [em, ep] = r.useState(false), [ef, ev] = r.useState(false), [eh, eg] = r.useState(null);
+  }((0, S.getOS)())), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ep] = r.useState(false), [ef, ev] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -76,29 +78,29 @@ function E(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "2be433856bf30f3681dcf74a71730d42e6c25d26" !== e.body.hash) {
-        let e = new Date("1764873772851"),
+      if (null != e.body && "5217a86bd38304fa9d585621f3f642c2272ad13e" !== e.body.hash) {
+        let e = new Date("1764875267246"),
           t = new Date,
-          n = (0, j.TD)(t, e);
-        n.hours > 6 && eg(n.hours)
+          n = (0, O.TD)(t, e);
+        n.hours > 6 && eb(n.hours)
       }
     })
   }, []);
-  let ex = (0, a.e7)([b.default], () => {
-      let e = b.default.getCurrentUser();
+  let ey = (0, a.e7)([j.default], () => {
+      let e = j.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
-    eb = (0, a.e7)([m.C], () => {
+    ej = (0, a.e7)([f.C], () => {
       var e;
-      return null == (e = m.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
+      return null == (e = f.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
     }),
     {
-      overridesInfo: ey
-    } = (0, x.sI)(),
+      overridesInfo: e_
+    } = (0, y.sI)(),
     {
-      overridesInfo: ej
-    } = (0, g.Qb)(),
-    e_ = Object.entries(C({}, ey, ej)).map(e => {
+      overridesInfo: eO
+    } = (0, b.Qb)(),
+    eS = Object.entries(E({}, e_, eO)).map(e => {
       let [t, {
         variantId: n
       }] = e;
@@ -107,43 +109,43 @@ function E(e) {
         variantId: n
       }
     });
-  async function eO() {
+  async function ew() {
     var e, t;
-    if (ev(false), "" === M || "" === W || null == V) return void ed(true);
-    let r = null == U || null == (e = U.features) ? true : e.find(e => (0, O.pD)(e) === X);
-    ep(true), ed(false);
-    let l = (0, S.D)(z.map(e => {
+    if (eg(false), "" === Z || "" === B || null == H) return void ep(true);
+    let r = null == X || null == (e = X.features) ? true : e.find(e => (0, w.pD)(e) === K);
+    ev(true), ep(false);
+    let l = (0, P.D)(U.map(e => {
         let {
           item: t
         } = e;
         return t
       })),
-      a = await (0, O.ZD)({
-        name: M,
-        description: W,
-        priority: V,
+      a = await (0, w.ZD)({
+        name: Z,
+        description: B,
+        priority: H,
         feature: r,
-        url: H,
-        buildOverride: null != (t = null == eb ? true : eb.id) ? t : null,
-        experimentOverrides: e_
-      }, true === K ? {
-        overridePlatformInformation: K,
-        device: Q,
-        operatingSystem: ee,
-        operatingSystemVersion: en,
-        clientVersion: er,
-        clientBuildNumber: ea,
-        locale: es
+        url: z,
+        buildOverride: null != (t = null == ej ? true : ej.id) ? t : null,
+        experimentOverrides: eS
+      }, true === Q ? {
+        overridePlatformInformation: Q,
+        device: ee,
+        operatingSystem: en,
+        operatingSystemVersion: er,
+        clientVersion: ea,
+        clientBuildNumber: es,
+        locale: ec
       } : {
-        overridePlatformInformation: K
-      }, l).catch(() => ev(true));
-    ep(false), null != a && a.ok ? (ex && window.open(a.body.permalink_url, "_blank"), L(), (0, u.ZDy)(async () => {
+        overridePlatformInformation: Q
+      }, l).catch(() => eg(true));
+    ev(false), null != a && a.ok ? (ey && window.open(a.body.permalink_url, "_blank"), A(), (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
       return t => {
         var n, r;
-        return (0, i.jsx)(e, (n = C({}, t), r = r = {
+        return (0, i.jsx)(e, (n = E({}, t), r = r = {
           asanaTask: a.body
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
@@ -156,269 +158,269 @@ function E(e) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
         }), n))
       }
-    })) : ev(true)
+    })) : eg(true)
   }
   r.useEffect(() => {
     async function e() {
-      Y(await (0, O.WG)())
+      F(await (0, w.WG)())
     }
-    ex && e()
-  }, [ex]), r.useEffect(() => {
-    if (z.length > 0) {
+    ey && e()
+  }, [ey]), r.useEffect(() => {
+    if (U.length > 0) {
       var e;
-      null == (e = A.current) || e.scrollIntoView({
+      null == (e = R.current) || e.scrollIntoView({
         behavior: "smooth",
         block: "end"
       })
     }
-  }, [z]);
-  let eS = r.useCallback(e => {
+  }, [U]);
+  let eP = r.useCallback(e => {
     let t = Array.from(e.clipboardData.files).filter(e => e.type.startsWith("image/")).at(0);
-    true === t || z.some(e => {
+    true === t || U.some(e => {
       var n;
       return e.filename === t.name && (null == (n = e.item.file) ? true : n.size) === t.size
-    }) || G([...z, new d.ZP({
+    }) || Y([...U, new p.ZP({
       id: (0, l.Z)(),
       file: t,
-      platform: d.ow.WEB,
+      platform: p.ow.WEB,
       origin: "clipboard"
     })])
-  }, [z]);
-  return (0, i.jsx)(s.u_l, {
+  }, [U]);
+  return (0, i.jsx)(c.u_l, {
     size: "md",
-    transitionState: I,
-    "aria-label": w.intl.string(w.t.mCCdwi),
-    title: w.intl.string(w.t["5LqopY"]),
+    transitionState: N,
+    "aria-label": C.intl.string(C.t.mCCdwi),
+    title: C.intl.string(C.t["5LqopY"]),
     actions: [{
       variant: "secondary",
-      text: w.intl.string(w.t["ETE/oC"]),
-      onClick: L,
+      text: C.intl.string(C.t["ETE/oC"]),
+      onClick: A,
       autoFocus: false
     }, {
       variant: "primary",
-      text: ex ? "Submit and Open Report" : "Submit Report",
-      loading: em,
-      onClick: eO,
+      text: ey ? "Submit and Open Report" : "Submit Report",
+      loading: ef,
+      onClick: ew,
       autoFocus: false
     }],
-    onClose: L,
+    onClose: A,
     children: (0, i.jsxs)("div", {
-      onPaste: eS,
-      children: [(0, i.jsxs)(u.Kqy, {
+      onPaste: eP,
+      children: [(0, i.jsxs)(d.Kqy, {
         gap: 8,
-        children: [null != eb && (0, i.jsxs)(u.M14, {
+        children: [null != ej && (0, i.jsxs)(d.M14, {
           type: "critical",
-          children: [(0, i.jsx)(u.Heading, {
+          children: [(0, i.jsx)(d.Heading, {
             variant: "heading-md/medium",
-            children: w.intl.string(w.t["ZP/hEx"])
-          }), (0, i.jsx)(u.Text, {
+            children: C.intl.string(C.t["ZP/hEx"])
+          }), (0, i.jsx)(d.Text, {
             variant: "text-sm/normal",
-            children: w.intl.format(w.t["yY60+7"], {
+            children: C.intl.format(C.t["yY60+7"], {
               buildOverrideHook: () => (0, i.jsx)("b", {
-                children: null == eb ? true : eb.id
+                children: null == ej ? true : ej.id
               })
             })
           })]
-        }), null == eb && null != eh && (0, i.jsxs)(u.M14, {
+        }), null == ej && null != ex && (0, i.jsxs)(d.M14, {
           type: "critical",
-          children: [(0, i.jsx)(u.Heading, {
+          children: [(0, i.jsx)(d.Heading, {
             variant: "heading-md/medium",
-            children: w.intl.formatToPlainString(w.t["ql2Q/e"], {
-              hours: eh
+            children: C.intl.formatToPlainString(C.t["ql2Q/e"], {
+              hours: ex
             })
-          }), (0, i.jsx)(u.Text, {
+          }), (0, i.jsx)(d.Text, {
             variant: "text-sm/normal",
-            children: w.intl.string(w.t.x18RUs)
+            children: C.intl.string(C.t.x18RUs)
           })]
-        }), ex && Object.keys(e_).length > 0 && (0, i.jsxs)(u.M14, {
+        }), ey && Object.keys(eS).length > 0 && (0, i.jsxs)(d.M14, {
           type: "critical",
-          children: [(0, i.jsx)(u.Heading, {
+          children: [(0, i.jsx)(d.Heading, {
             variant: "heading-md/medium",
             children: "You have the following experiments overridden:"
-          }), (0, i.jsx)(u.Text, {
+          }), (0, i.jsx)(d.Text, {
             variant: "text-sm/normal",
-            children: e_.map(e => (0, i.jsxs)("div", {
+            children: eS.map(e => (0, i.jsxs)("div", {
               children: [e.experimentId, " (variant ", e.variantId, ")"]
             }, e.experimentId))
           })]
         })]
-      }), (0, i.jsxs)(u.Kqy, {
+      }), (0, i.jsxs)(d.Kqy, {
         gap: 24,
         padding: {
           top: 8,
           bottom: 8
         },
-        children: [(0, i.jsx)(u.oil, {
-          label: w.intl.string(w.t.OZRgjw),
-          error: ec && "" === M ? w.intl.string(w.t.EkokLy) : null,
+        children: [(0, i.jsx)(d.oil, {
+          label: C.intl.string(C.t.OZRgjw),
+          error: em && "" === Z ? C.intl.string(C.t.EkokLy) : null,
           placeholder: "Something is broken on this screen.",
           type: "text",
-          value: M,
+          value: Z,
           maxLength: 100,
-          onChange: R,
+          onChange: W,
           autoFocus: true
-        }), (0, i.jsx)(u.Kx8, {
-          label: w.intl.string(w.t["1SplH2"]),
-          error: ec && "" === W ? w.intl.string(w.t.EkokLy) : null,
+        }), (0, i.jsx)(d.Kx8, {
+          label: C.intl.string(C.t["1SplH2"]),
+          error: em && "" === B ? C.intl.string(C.t.EkokLy) : null,
           placeholder: "What did you expect to see?",
-          value: W,
-          onChange: Z,
-          description: ex ? "You can add additional information/media on the ticket after submitting" : true
-        }), (0, i.jsx)(u.q4e, {
-          label: w.intl.string(w.t.xMXLda),
-          errorMessage: ec && true === V ? w.intl.string(w.t.EkokLy) : null,
+          value: B,
+          onChange: V,
+          description: ey ? "You can add additional information/media on the ticket after submitting" : true
+        }), (0, i.jsx)(u.y6, {
+          label: C.intl.string(C.t.xMXLda),
+          errorMessage: em && true === H ? C.intl.string(C.t.EkokLy) : null,
           renderOptionLabel: e => (function(e) {
             let t = e.priority;
             return (0, i.jsxs)("div", {
-              className: P.formPriorityImageContainer,
+              className: k.formPriorityImageContainer,
               children: [(0, i.jsxs)("div", {
-                className: P.formPriorityTitleContainer,
+                className: k.formPriorityTitleContainer,
                 children: [(0, i.jsx)("img", {
                   alt: "",
-                  className: P.formPriorityImage,
-                  src: (0, y.gT)({
+                  className: k.formPriorityImage,
+                  src: (0, _.gT)({
                     id: t.emoji,
                     animated: true,
                     size: 48
                   })
-                }), (0, i.jsx)(u.Text, {
+                }), (0, i.jsx)(d.Text, {
                   color: "header-primary",
                   variant: "text-sm/semibold",
-                  className: P.formPriorityTitle,
+                  className: k.formPriorityTitle,
                   children: t.title
                 })]
-              }), (0, i.jsx)(u.Text, {
+              }), (0, i.jsx)(d.Text, {
                 color: "text-default",
                 variant: "text-xs/normal",
-                className: P.formPriorityDescription,
+                className: k.formPriorityDescription,
                 children: t.description
               })]
             })
           })(e),
-          onChange: B,
-          options: (0, O.Tj)().map(e => ({
+          onChange: q,
+          options: (0, w.Tj)().map(e => ({
             priority: e,
             value: e.value,
             label: e.title
           })),
-          optionClassName: P.formPriorityOption,
-          value: V,
+          optionClassName: k.formPriorityOption,
+          value: H,
           maxVisibleItems: 4,
           closeOnSelect: true
-        }), ex && (0, i.jsx)(u.VcW, {
-          label: w.intl.string(w.t["77VVd8"]),
-          value: X,
-          options: null != (T = null == U || null == (D = U.features) || null == (E = D.filter(e => "" !== (0, O.pD)(e))) || null == (t = E.map(e => {
+        }), ey && (0, i.jsx)(s.d, {
+          label: C.intl.string(C.t["77VVd8"]),
+          value: K,
+          options: null != (L = null == X || null == (I = X.features) || null == (T = I.filter(e => "" !== (0, w.pD)(e))) || null == (t = T.map(e => {
             var t;
             return {
               label: null != (t = e.name) ? t : "",
-              value: (0, O.pD)(e)
+              value: (0, w.pD)(e)
             }
-          })) ? true : t.sort((e, t) => e.label.localeCompare(t.label))) ? T : [],
-          isDisabled: null == U,
-          onChange: e => F(e)
-        }), (0, i.jsx)(u.oil, {
-          label: w.intl.string(w.t["7p5pqh"]),
-          placeholder: w.intl.string(w.t.HewMzo),
+          })) ? true : t.sort((e, t) => e.label.localeCompare(t.label))) ? L : [],
+          isDisabled: null == X,
+          onChange: e => J(e)
+        }), (0, i.jsx)(d.oil, {
+          label: C.intl.string(C.t["7p5pqh"]),
+          placeholder: C.intl.string(C.t.HewMzo),
           type: "text",
-          value: H,
+          value: z,
           maxLength: 5e3,
-          onChange: q
-        }), (0, i.jsx)(u.Checkbox, {
-          checked: K,
-          onChange: e => J(e),
-          label: w.intl.string(w.t.ayhqiH)
-        }), K ? (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(u.oil, {
-            label: w.intl.string(w.t.rrI4Tk),
+          onChange: G
+        }), (0, i.jsx)(d.Checkbox, {
+          checked: Q,
+          onChange: e => $(e),
+          label: C.intl.string(C.t.ayhqiH)
+        }), Q ? (0, i.jsxs)(i.Fragment, {
+          children: [(0, i.jsx)(d.oil, {
+            label: C.intl.string(C.t.rrI4Tk),
             placeholder: "Device",
-            value: Q,
-            onChange: e => $(e)
-          }), (0, i.jsx)(u.q4e, {
-            label: w.intl.string(w.t.kcHxi6),
             value: ee,
-            options: k,
             onChange: e => et(e)
-          }), (0, i.jsx)(u.oil, {
-            label: w.intl.string(w.t.rEtxdg),
-            placeholder: "Operating System Version",
+          }), (0, i.jsx)(u.y6, {
+            label: C.intl.string(C.t.kcHxi6),
             value: en,
+            options: D,
             onChange: e => ei(e)
-          }), (0, i.jsx)(u.oil, {
-            label: w.intl.string(w.t["wy1M/t"]),
-            placeholder: "Client Version",
+          }), (0, i.jsx)(d.oil, {
+            label: C.intl.string(C.t.rEtxdg),
+            placeholder: "Operating System Version",
             value: er,
             onChange: e => el(e)
-          }), (0, i.jsx)(u.oil, {
-            label: w.intl.string(w.t.f7kbVu),
-            placeholder: "Client Build Number",
+          }), (0, i.jsx)(d.oil, {
+            label: C.intl.string(C.t["wy1M/t"]),
+            placeholder: "Client Version",
             value: ea,
             onChange: e => eo(e)
-          }), (0, i.jsx)(u.oil, {
-            label: w.intl.string(w.t["4Z5+zg"]),
-            placeholder: "Locale",
+          }), (0, i.jsx)(d.oil, {
+            label: C.intl.string(C.t.f7kbVu),
+            placeholder: "Client Build Number",
             value: es,
             onChange: e => eu(e)
+          }), (0, i.jsx)(d.oil, {
+            label: C.intl.string(C.t["4Z5+zg"]),
+            placeholder: "Locale",
+            value: ec,
+            onChange: e => ed(e)
           })]
-        }) : null, (0, i.jsx)(u.Button, {
+        }) : null, (0, i.jsx)(d.Button, {
           variant: "secondary",
-          text: w.intl.string(w.t.HVxmOD),
+          text: C.intl.string(C.t.HVxmOD),
           onClick: () => {
             var e;
-            null == (e = N.current) || e.activateUploadDialogue()
+            null == (e = M.current) || e.activateUploadDialogue()
           },
           fullWidth: true
         }), (0, i.jsx)("div", {
-          className: P.fileInput,
-          children: (0, i.jsx)(c.Z, {
-            ref: N,
+          className: k.fileInput,
+          children: (0, i.jsx)(m.Z, {
+            ref: M,
             onChange: e => {
               var t, n;
-              (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && G([...z, ...Array.from(e.currentTarget.files).map(e => new d.ZP({
+              (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && Y([...U, ...Array.from(e.currentTarget.files).map(e => new p.ZP({
                 id: (0, l.Z)(),
                 file: e,
-                platform: d.ow.WEB,
+                platform: p.ow.WEB,
                 origin: "file_picker"
               }))])
             },
             multiple: true
           })
-        }), z.length > 0 ? (0, i.jsx)(u.gNt, {
+        }), U.length > 0 ? (0, i.jsx)(d.gNt, {
           label: "Preview",
           children: (0, i.jsx)("div", {
-            ref: A,
-            className: P.attachments,
-            children: z.length > 0 && z.map(e => (0, i.jsxs)("div", {
-              className: P.attachment,
+            ref: R,
+            className: k.attachments,
+            children: U.length > 0 && U.map(e => (0, i.jsxs)("div", {
+              className: k.attachment,
               children: [(0, i.jsxs)("div", {
-                children: [(0, i.jsx)(v.r, {
-                  size: f.q.SMALL,
+                children: [(0, i.jsx)(g.r, {
+                  size: h.q.SMALL,
                   upload: e
                 }), (0, i.jsx)("div", {
-                  className: P.removeAttachment,
-                  children: (0, i.jsx)(h.ZP, {
-                    children: (0, i.jsx)(p.Z, {
-                      tooltip: w.intl.string(w.t.vN7REz),
+                  className: k.removeAttachment,
+                  children: (0, i.jsx)(x.ZP, {
+                    children: (0, i.jsx)(v.Z, {
+                      tooltip: C.intl.string(C.t.vN7REz),
                       onClick: () => {
                         var t;
-                        return t = e.id, void G(z.filter(e => e.id !== t))
+                        return t = e.id, void Y(U.filter(e => e.id !== t))
                       },
                       dangerous: true,
-                      children: (0, i.jsx)(u.XHJ, {
+                      children: (0, i.jsx)(d.XHJ, {
                         size: "md",
                         color: "currentColor"
                       })
                     })
                   })
                 })]
-              }), (0, i.jsx)(u.Text, {
+              }), (0, i.jsx)(d.Text, {
                 variant: "text-xxs/medium",
                 color: "text-subtle",
                 children: e.filename
               })]
             }, e.id))
           })
-        }) : null, ef ? (0, i.jsx)(u.Text, {
+        }) : null, eh ? (0, i.jsx)(d.Text, {
           color: "text-feedback-critical",
           variant: "text-sm/normal",
           children: "Something went wrong, try again!"

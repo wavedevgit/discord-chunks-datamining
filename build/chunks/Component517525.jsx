@@ -47,7 +47,7 @@ function P(e) {
   return e
 }
 
-function x(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
+let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
   Z = {
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
@@ -75,10 +75,10 @@ let j = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     opacity: 1
   },
   N = {
-    borderRadius: "".concat(j, "px ").concat(j, "px ").concat(j, "px ").concat(j, "px")
+    borderRadius: "".concat(x, "px ").concat(x, "px ").concat(x, "px ").concat(x, "px")
   },
   D = {
-    borderRadius: "0px ".concat(j, "px ").concat(j, "px 0px")
+    borderRadius: "0px ".concat(x, "px ").concat(x, "px 0px")
   },
   M = {
     mass: 1,
@@ -92,7 +92,7 @@ let j = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         isUpsellEnabled: c,
         shape: f,
         size: v,
-        didTrackUpsellViewed: j,
+        didTrackUpsellViewed: x,
         setDidTrackUpsellViewed: Z,
         className: R,
         premiumIndicator: T,
@@ -123,19 +123,19 @@ let j = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, x(P({}, t), {
+          return t => (0, r.jsx)(e, j(P({}, t), {
             analyticsSource: k
           }))
         })
       }, [F, M, k]);
     if (i.useEffect(() => {
-        !j && M && (h.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+        !x && M && (h.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: C.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
           location_stack: N
         }), Z(true))
-      }, [t, l, M, j, Z, N]), null == A) return null;
+      }, [t, l, M, x, Z, N]), null == A) return null;
     let U = (0, r.jsx)(d.u, {
       text: D ? w.intl.string(w.t.q8TiVt) : M ? w.intl.string(w.t.IHgpEn) : w.intl.string(w.t.vLb0VW),
       position: "bottom",
@@ -198,7 +198,7 @@ let j = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         className: n,
         popoutProps: i
       } = e;
-      return (0, r.jsxs)("div", x(P({
+      return (0, r.jsxs)("div", j(P({
         className: a()(I.streamQualityIndicator, n)
       }, i), {
         children: [h((e, n) => n ? (0, r.jsx)(o.animated.div, {

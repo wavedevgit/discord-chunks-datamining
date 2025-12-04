@@ -24,8 +24,8 @@ function N(e) {
   let {
     onComplete: t,
     onClose: n
-  } = e, [s, N] = o.useState(null), [x, A] = o.useState(null), [T, C] = o.useState(false), j = (0, i.e7)([p.default], () => p.default.getCurrentUser()), O = o.useRef(null);
-  async function v(e) {
+  } = e, [s, N] = o.useState(null), [x, A] = o.useState(null), [T, C] = o.useState(false), j = (0, i.e7)([p.default], () => p.default.getCurrentUser()), y = o.useRef(null);
+  async function O(e) {
     e.preventDefault(), l()(null != s, "Cannot submit null birthday."), C(true);
     try {
       await d.Av(s, h.L0.NEW_USER_FLOW), t()
@@ -41,16 +41,16 @@ function N(e) {
   o.useEffect(() => {
     null != j && null != j.nsfwAllowed && t()
   }, [j, t]);
-  let y = o.useCallback(e => {
+  let v = o.useCallback(e => {
       N(e)
     }, [N]),
     I = o.useCallback(() => {
       var e;
-      null == (e = O.current) || e.focus()
-    }, [O]);
+      null == (e = y.current) || e.focus()
+    }, [y]);
   return null == j ? null : (0, a.jsxs)("form", {
     className: E.content,
-    onSubmit: v,
+    onSubmit: O,
     children: [(0, a.jsx)(u.gw7, {
       size: "custom",
       width: 56,
@@ -76,7 +76,7 @@ function N(e) {
         wrapperClassName: E.formItem,
         label: b.intl.string(b.t.rhBeKe),
         name: "birthday",
-        onChange: y,
+        onChange: v,
         onPopulated: I,
         error: x,
         value: s
@@ -86,7 +86,7 @@ function N(e) {
       children: (0, a.jsx)("div", {
         className: E.buttonWrapper,
         children: (0, a.jsx)(c.zx, {
-          buttonRef: O,
+          buttonRef: y,
           type: "submit",
           size: c.zx.Sizes.LARGE,
           submitting: T,

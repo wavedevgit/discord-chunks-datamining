@@ -82,11 +82,11 @@ function q(e) {
     shouldShowUpsell: s
   } = e, o = (0, P.F)(U.intl.string(U.t.Mi9Kbe)), d = (0, f.ZP)(), h = (0, _.oC)(n, t), x = {
     dark: {
-      src: W,
+      src: z,
       name: t.name
     },
     light: {
-      src: z,
+      src: W,
       name: t.name
     }
   };
@@ -261,10 +261,10 @@ function Q(e) {
     colorStrings: t.colorStrings,
     colorString: t.colorString
   }, c = {
-    src: W,
+    src: z,
     name: t.name
   }, d = {
-    src: z,
+    src: W,
     name: t.name
   }, u = (0, _.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
   return (0, r.jsx)(m.Rny, {

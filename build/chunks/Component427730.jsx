@@ -2,16 +2,17 @@
 /** chunk id: 427730, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk527685 = require("./527685.jsx"),
   Chunk261538 = require("./261538.jsx");
-let c = () => {
-  let [e, t] = Chunk473749.useState(0), [n, c] = Chunk473749.useState(4), [u, d] = Chunk473749.useState(2), [f, p] = Chunk473749.useState(Chunk527685.y.BLUE), [_, m] = Chunk473749.useState("darkslategray"), [h, g] = Chunk473749.useState("blanchedalmond"), [E, b] = Chunk473749.useState("pink"), y = Chunk473749.useMemo(() => Object.entries(Chunk527685.y).map(e => {
+let u = () => {
+  let [e, t] = Chunk473749.useState(0), [n, u] = Chunk473749.useState(4), [d, f] = Chunk473749.useState(2), [p, _] = Chunk473749.useState(Chunk527685.y.BLUE), [m, h] = Chunk473749.useState("darkslategray"), [g, E] = Chunk473749.useState("blanchedalmond"), [b, y] = Chunk473749.useState("pink"), O = Chunk473749.useMemo(() => Object.entries(Chunk527685.y).map(e => {
     let [t, n] = e;
     return {
       label: t,
@@ -20,23 +21,23 @@ let c = () => {
   }), []);
   return (0, Chunk54381.jsxs)(Chunk261538.pg, {
     children: [(0, Chunk54381.jsx)(Chunk527685.Z, {
-      progress: u,
+      progress: d,
       minimum: module,
       maximum: require,
-      variant: f,
+      variant: p,
       override: {
         default: {
-          background: _,
-          gradientStart: h,
-          gradientEnd: E
+          background: m,
+          gradientStart: g,
+          gradientEnd: b
         }
       }
     }), (0, Chunk54381.jsx)(Chunk261538.dv, {}), (0, Chunk54381.jsx)(Chunk261538.BZ, {
       children: (0, Chunk54381.jsx)(Chunk481060.oil, {
         type: "number",
-        value: u.toString(),
+        value: d.toString(),
         onChange: t => {
-          d((0, a.clamp)(+t, e, n))
+          f((0, a.clamp)(+t, e, n))
         },
         label: "Progress ( ".concat(module, " - ").concat(require, " ) ")
       })
@@ -45,7 +46,7 @@ let c = () => {
         type: "number",
         value: module.toString(),
         onChange: e => {
-          !(0 > +e) && (+e >= n || (u < +e && d(+e), t(+e)))
+          !(0 > +e) && (+e >= n || (d < +e && f(+e), t(+e)))
         },
         label: "Minimum Value"
       })
@@ -54,19 +55,19 @@ let c = () => {
         type: "number",
         value: require.toString(),
         onChange: t => {
-          !(+t <= e) && (1 > +t || (u > +t && d(+t), c(+t)))
+          !(+t <= e) && (1 > +t || (d > +t && f(+t), u(+t)))
         },
         label: "Maximum Value"
       })
     }), (0, Chunk54381.jsx)(Chunk261538.BZ, {
-      children: (0, Chunk54381.jsx)(Chunk481060.PhF, {
+      children: (0, Chunk54381.jsx)(Chunk199849.B6, {
         placeholder: "Variant",
         select: e => {
-          p(e)
+          _(e)
         },
-        isSelected: e => f === e,
+        isSelected: e => p === e,
         serialize: e => e,
-        options: y,
+        options: O,
         label: "Variant"
       })
     }), (0, Chunk54381.jsx)(Chunk261538.dv, {}), (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -78,25 +79,25 @@ let c = () => {
       children: 'Note: this component allows setting overrides per theme. For simplicity in this story, we only set the "default" override which applies to all themes'
     }), (0, Chunk54381.jsx)(Chunk261538.BZ, {
       children: (0, Chunk54381.jsx)(Chunk481060.oil, {
-        value: _,
+        value: m,
         onChange: e => {
-          m(e)
+          h(e)
         },
         label: "Background"
       })
     }), (0, Chunk54381.jsx)(Chunk261538.BZ, {
       children: (0, Chunk54381.jsx)(Chunk481060.oil, {
-        value: h,
+        value: g,
         onChange: e => {
-          g(e)
+          E(e)
         },
         label: "Gradient Start"
       })
     }), (0, Chunk54381.jsx)(Chunk261538.BZ, {
       children: (0, Chunk54381.jsx)(Chunk481060.oil, {
-        value: E,
+        value: b,
         onChange: e => {
-          b(e)
+          y(e)
         },
         label: "Gradient End"
       })

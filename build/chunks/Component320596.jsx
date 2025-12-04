@@ -1,7 +1,7 @@
 /** Chunk was on 24753 **/
 /** chunk id: 320596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Ie: () => h,
+  Ie: () => j,
   mv: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
@@ -33,7 +33,7 @@ let b = e => {
     let c = e => {
       (0, s.vq)(e, e => {
         var n, r;
-        return (0, l.jsx)(j, (n = function(e) {
+        return (0, l.jsx)(h, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               l = Object.keys(n);
@@ -114,7 +114,7 @@ let b = e => {
       })]
     })
   },
-  h = e => {
+  j = e => {
     let {
       user: t,
       showStatus: n,
@@ -162,7 +162,7 @@ let b = e => {
       })]
     })
   },
-  j = e => {
+  h = e => {
     let {
       channelId: t
     } = e, n = (0, g.z)(t), r = (0, g.bA)(t);
@@ -172,7 +172,7 @@ let b = e => {
         let {
           user: n
         } = e;
-        return (0, l.jsx)(h, {
+        return (0, l.jsx)(j, {
           user: n,
           channelId: t
         }, n.id)

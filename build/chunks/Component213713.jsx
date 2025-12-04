@@ -1,7 +1,7 @@
 /** Chunk was on 88282 **/
 /** chunk id: 213713, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => Z
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,6 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk126313 = require("./126313.js"),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk812206 = require("./812206.js"),
@@ -32,14 +33,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk206583 = require("./206583.js"),
   Chunk680027 = require("./680027.js"),
   Chunk451429 = require("./451429.js");
-let k = [{
+let R = [{
   key: "type",
   cellClassName: i()(Chunk680027.cell, Chunk680027.cellType),
   render(e) {
     let {
       type: t
     } = e;
-    return (0, a.jsx)(p.Text, {
+    return (0, a.jsx)(h.Text, {
       variant: "text-md/semibold",
       children: c.s[t]
     })
@@ -52,7 +53,7 @@ let k = [{
       entries: t
     } = e;
     return (0, a.jsx)("div", {
-      children: (0, a.jsx)(p.Text, {
+      children: (0, a.jsx)(h.Text, {
         variant: "text-md/normal",
         children: t.length
       })
@@ -65,24 +66,24 @@ let k = [{
     let {
       type: t
     } = e;
-    return (0, a.jsx)(R, {
+    return (0, a.jsx)(A, {
       type: t
     })
   }
 }];
 
-function R(e) {
+function A(e) {
   var t, n;
   let {
     type: l
-  } = e, r = (0, u.e7)([E.Z], () => E.Z.getFilters()), i = null != (n = null == r || null == (t = r.types) ? true : t.has(l)) && n;
-  return (0, a.jsx)(p.rsf, {
+  } = e, r = (0, u.e7)([N.Z], () => N.Z.getFilters()), i = null != (n = null == r || null == (t = r.types) ? true : t.has(l)) && n;
+  return (0, a.jsx)(h.rsf, {
     checked: i,
     onChange: function() {
-      i ? h.Z.dispatch({
+      i ? x.Z.dispatch({
         type: "CONTENT_INVENTORY_SET_FILTERS",
         filters: true
-      }) : h.Z.dispatch({
+      }) : x.Z.dispatch({
         type: "CONTENT_INVENTORY_SET_FILTERS",
         filters: {
           types: new Set([l])
@@ -92,7 +93,7 @@ function R(e) {
   })
 }
 
-function A() {
+function Z() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
     r = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getDebugImpressionCappingDisabled()),
@@ -112,24 +113,24 @@ function A() {
       var e;
       return (null == (e = Chunk146282.Z.getFeedState(Chunk206583.YN.GLOBAL_FEED)) ? true : module.loading) === true
     }),
-    [R, A] = Chunk473749.useState(""),
-    D = (0, Chunk442837.e7)([Chunk77498.Z, Chunk812206.Z], () => {
+    [A, Z] = Chunk473749.useState(""),
+    L = (0, Chunk442837.e7)([Chunk77498.Z, Chunk812206.Z], () => {
       var e, t, n;
-      return parseInt(R) > 0 ? R : null != (n = null == (e = Chunk77498.Z.getGameByName(R)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(R)) ? true : exports.id
-    }, [R]),
-    L = (0, Chunk168524.Z)({
-      applicationId: D,
+      return parseInt(A) > 0 ? A : null != (n = null == (e = Chunk77498.Z.getGameByName(A)) ? true : module.id) ? require : null == (t = Chunk812206.Z.getApplicationByName(A)) ? true : exports.id
+    }, [A]),
+    M = (0, Chunk168524.Z)({
+      applicationId: L,
       location: "DevToolsContentInventory",
       source: Chunk810568.m1.DevTools
     }),
-    M = Object.entries(null != (t = Chunk433517.K.get("GameProfileModal")) ? exports : {}).filter(e => {
+    U = Object.entries(null != (t = Chunk433517.K.get("GameProfileModal")) ? exports : {}).filter(e => {
       let [t, n] = e;
       return n
     }).map(e => {
       let [t] = e;
       return t
     }),
-    U = (0, Chunk835473.Z)(M).filter(Chunk823379.lm),
+    B = (0, Chunk835473.Z)(U).filter(Chunk823379.lm),
     F = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
   return (0, Chunk54381.jsx)("div", {
     className: Chunk451429.panel,
@@ -141,7 +142,7 @@ function A() {
           variant: "text-md/semibold",
           children: "Inventory"
         }), Chunk392711.length > 0 && (0, Chunk54381.jsx)(Chunk681619.Z, {
-          columns: k,
+          columns: R,
           data: Chunk392711
         }), (0, Chunk54381.jsx)(Chunk789086.Z, {}), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
@@ -205,15 +206,15 @@ function A() {
           children: "Game Profile"
         }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           placeholder: "App ID or full name",
-          onChange: e => (0 === e.length || e.length >= 18) && A(e),
+          onChange: e => (0 === e.length || e.length >= 18) && Z(e),
           onKeyDown: e => {
-            "Enter" === e.key && (R === e.currentTarget.value ? null == L || L(e) : A(e.currentTarget.value))
+            "Enter" === e.key && (A === e.currentTarget.value ? null == M || M(e) : Z(e.currentTarget.value))
           },
-          error: R.length > 0 && null == L ? "No game profile for ".concat(null != D ? D : R + " - try by id", ".") : true,
-          helperText: null != L ? "Game profile found" : true
+          error: A.length > 0 && null == M ? "No game profile for ".concat(null != L ? L : A + " - try by id", ".") : true,
+          helperText: null != M ? "Game profile found" : true
         }), (0, Chunk54381.jsx)("ul", {
-          children: U.map(e => (0, a.jsx)("li", {
-            children: (0, a.jsx)(Z, {
+          children: B.map(e => (0, a.jsx)("li", {
+            children: (0, a.jsx)(D, {
               application: e
             })
           }, "follow-game-".concat(e.id)))
@@ -226,14 +227,14 @@ function A() {
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Force show game:"
-        }), (0, Chunk54381.jsx)(Chunk481060.PhF, {
+        }), (0, Chunk54381.jsx)(Chunk199849.B6, {
           options: Chunk780106.h.map(e => ({
             label: e,
             value: e
           })),
           isSelected: e => e === F,
           select: function(e) {
-            h.Z.dispatch({
+            x.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",
               gameToShow: e
             })
@@ -245,17 +246,17 @@ function A() {
     })
   })
 }
-let Z = e => {
+let D = e => {
   let {
     application: t
-  } = e, n = (0, j.Z)({
+  } = e, n = (0, _.Z)({
     applicationId: t.id,
     location: "DevToolsContentInventory",
-    source: v.m1.DevTools
+    source: j.m1.DevTools
   });
-  return (0, a.jsx)(p.P3F, {
+  return (0, a.jsx)(h.P3F, {
     onClick: n,
-    children: (0, a.jsx)(p.Text, {
+    children: (0, a.jsx)(h.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       children: t.name

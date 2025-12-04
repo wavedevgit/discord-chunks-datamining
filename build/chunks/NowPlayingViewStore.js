@@ -93,7 +93,7 @@ let V = "party-",
 
 function et() {
   let e = Chunk699516.Z.getFriendIDs();
-  return new Set(Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION) ? [...Chunk752048.Z.getUserAffinities().map(e => e.otherUserId), ...module] : module)
+  return new Set(Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION) ? [...Chunk752048.Z.getUserAffinities().filter(e => e.communicationRank <= 15).map(e => e.otherUserId), ...module] : module)
 }
 
 function en(e) {

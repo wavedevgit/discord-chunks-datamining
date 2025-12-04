@@ -1,7 +1,7 @@
 /** Chunk was on 86736 **/
 /** chunk id: 270394, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => V
+  Z: () => q
 }), require("./997841.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -192,7 +192,7 @@ function z(e) {
   })
 }
 
-function q(e) {
+function V(e) {
   let {
     applicationId: t,
     channel: r,
@@ -238,7 +238,7 @@ function q(e) {
   })
 }
 
-function V(e) {
+function q(e) {
   let {
     invites: t,
     guild: l,
@@ -407,7 +407,7 @@ function V(e) {
             }, e.data.code);
           case "channel":
             var r;
-            return (0, i.jsx)(q, {
+            return (0, i.jsx)(V, {
               applicationId: null == (r = e.data.linkedLobby) ? true : r.application_id,
               channel: e.data,
               showChannel: p,

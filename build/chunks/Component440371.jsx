@@ -53,8 +53,8 @@ function b(e) {
     onTimeChange: b,
     timeSelected: p = true,
     schedule: x,
-    recurrenceRule: h,
-    showEndDate: f = false,
+    recurrenceRule: f,
+    showEndDate: h = false,
     requireEndDate: j = false,
     disableStartDateTime: v = false
   } = e;
@@ -64,13 +64,13 @@ function b(e) {
     O = i()(),
     y = i()().add(u.G3, "days"),
     _ = i()().add(u.Ib, "days");
-  null != h && (y.add(u.hn, "years"), _.add(u.hn, "years"));
+  null != f && (y.add(u.hn, "years"), _.add(u.hn, "years"));
   let S = e => {
     n(g(o({}, x), {
       endDate: e
     }))
   };
-  return f && (m = null != x.endDate || j ? (0, l.jsxs)(l.Fragment, {
+  return h && (m = null != x.endDate || j ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsxs)("div", {
       className: c.doubleInput,
       children: [(0, l.jsx)(a.Wrb, {
@@ -138,7 +138,7 @@ function b(e) {
     }), m, null != D && null != r && (0, l.jsx)(s.Z, {
       onRecurrenceChange: r,
       startDate: D,
-      recurrenceRule: h
+      recurrenceRule: f
     })]
   })
 }

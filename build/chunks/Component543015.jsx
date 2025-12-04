@@ -311,7 +311,7 @@ let ed = Chunk473749.memo(function(e) {
     value: (0, F.Z)(u, d),
     children: [null != o ? (0, r.jsx)(f.qEK, {
       size: f.EFr.SIZE_40,
-      src: o.getAvatarURL(m, (0, f.pxk)(f.EFr.SIZE_40)),
+      src: o.getAvatarURL(m, (0, f.dcp)(f.EFr.SIZE_40)),
       "aria-label": "",
       className: el.originalMessageAuthorAvatar
     }) : null, (0, r.jsxs)("div", {

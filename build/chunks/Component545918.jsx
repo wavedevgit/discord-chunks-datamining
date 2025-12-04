@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 545918, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => F
+  default: () => U
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -69,7 +69,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function U(e) {
   var t;
   let {
     guildId: n
@@ -89,8 +89,8 @@ function F(e) {
   r.useEffect(() => {
     (null == v ? true : v.features.has(Z.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) || b(E.e.ALL_MEMBERS)
   }, [v]);
-  let F = (0, N.n2)(n),
-    U = (0, m.m)(n),
+  let U = (0, N.n2)(n),
+    F = (0, m.m)(n),
     q = r.useRef(null);
   (0, O.n)(n);
   let {
@@ -107,14 +107,14 @@ function F(e) {
     u !== e && (b(e), x.Z.setSelectedGuildJoinRequest(n, null), "ALL_MEMBERS" !== e && await z(D, e))
   }, [u, n, z, D]);
   r.useEffect(() => {
-    if (!F && null != v) {
+    if (!U && null != v) {
       var e;
       let t = null == (e = S.ZP.getDefaultChannel(v.id)) ? true : e.id;
       (0, C.XU)(v.id, t)
     }
-  }, [v, F]);
+  }, [v, U]);
   let K = (0, s.e7)([_.ZP], () => null != _.ZP.getGuildSidebarState(n), [n]);
-  return null != v && F ? (0, l.jsxs)(d.Gt, {
+  return null != v && U ? (0, l.jsxs)(d.Gt, {
     value: R,
     children: [(0, l.jsxs)("div", {
       className: a()(G.chat, L.page, {
@@ -144,7 +144,7 @@ function F(e) {
       }), (0, l.jsx)(A.Z, {
         guildId: v.id
       })]
-    }), U && (u === E.e.ALL_MEMBERS ? (0, l.jsx)(w.Z, {
+    }), F && (u === E.e.ALL_MEMBERS ? (0, l.jsx)(w.Z, {
       guildId: v.id
     }) : (0, l.jsx)(P.Z, {
       guildId: v.id

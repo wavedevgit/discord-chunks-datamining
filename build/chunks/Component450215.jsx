@@ -36,7 +36,7 @@ function C(e) {
     groupListingId: E,
     onBeforeDispatchNewListing: I,
     onAfterDispatchNewListing: S
-  } = e, [T, P] = i.useState(s), w = (0, c.e7)([f.Z], () => f.Z.getSubscriptionListing(T)), Z = null == w, [R, D] = i.useState(Z), A = null == w ? true : w.subscription_plans[0], L = null != (t = null == w ? true : w.published) && t, k = null != (n = null == w ? true : w.archived) && n, G = !k && !L && true !== w, M = true === w, U = (0, h.mY)(), [B] = x._T(T), [F] = x.mR(T), [H] = x.PK(T), [W] = x.d9(T, 1024), z = "" !== B ? B : v.intl.string(v.t.QWhe9G), V = "" !== B && null != W && "" !== H && null != F && !U, K = x.rU(T), {
+  } = e, [T, P] = i.useState(s), w = (0, c.e7)([f.Z], () => f.Z.getSubscriptionListing(T)), Z = null == w, [R, D] = i.useState(Z), A = null == w ? true : w.subscription_plans[0], L = null != (t = null == w ? true : w.published) && t, k = null != (n = null == w ? true : w.archived) && n, G = !k && !L && true !== w, M = true === w, U = (0, h.mY)(), [B] = x._T(T), [F] = x.mR(T), [H] = x.PK(T), [z] = x.d9(T, 1024), W = "" !== B ? B : v.intl.string(v.t.QWhe9G), V = "" !== B && null != z && "" !== H && null != F && !U, K = x.rU(T), {
     loading: Y,
     error: q,
     handleCreateOrUpdateFromEditState: X
@@ -53,20 +53,20 @@ function C(e) {
       }),
       children: [(0, r.jsx)("div", {
         className: O.headerImageContainer,
-        children: null == W ? (0, r.jsx)(j.Z, {
+        children: null == z ? (0, r.jsx)(j.Z, {
           className: O.starIcon,
           "aria-hidden": true
         }) : (0, r.jsx)("img", {
           className: O.headerImage,
-          src: W,
-          alt: z
+          src: z,
+          alt: W
         })
       }), (0, r.jsxs)("div", {
         className: O.headerListingInfo,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-md/medium",
           color: "interactive-active",
-          children: z
+          children: W
         }), (0, r.jsx)(u.LZC, {
           size: 2
         }), (0, r.jsxs)("div", {

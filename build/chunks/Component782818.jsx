@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk916340 = require("./916340.js");
 
-function x(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function x(e) {
   return e
 }
 
-function C(e) {
+function x(e) {
   let {
     avatar: t,
     index: n,
@@ -64,7 +64,7 @@ function C(e) {
   } = p, b = null != d ? d : u.substring(0, 6).toUpperCase(), A = j.intl.formatToPlainString(j.t.tmJ75y, {
     orderNumber: n + 1,
     description: b
-  }), x = j.intl.formatToPlainString(j.t.pBzwhc, {
+  }), C = j.intl.formatToPlainString(j.t.pBzwhc, {
     orderNumber: n + 1,
     description: b
   });
@@ -85,8 +85,8 @@ function C(e) {
     }), (0, r.jsx)(o.u, {
       text: j.intl.string(j.t.N86XcP),
       children: (0, r.jsx)(c.P3F, {
-        "aria-label": x,
-        onClick: e => l(e, n, s, u, x),
+        "aria-label": C,
+        onClick: e => l(e, n, s, u, C),
         className: y.deleteButton,
         children: (0, r.jsx)(c.XHJ, {
           size: "xs",
@@ -105,7 +105,7 @@ function v(e) {
     avatars: i,
     loading: o,
     error: m
-  } = (0, p.S)(), v = a.useRef([]), E = a.useRef(null), O = a.useRef(i.length), N = a.useRef(null), [S, T] = a.useState(false), [w, P] = a.useState(false), [R, F] = a.useState(null), _ = null != R ? R : null == m ? true : m.message, Z = i.length, I = Math.max(A.iZ - Z, 0), k = (0, c.vRw)(), D = a.useCallback(async e => {
+  } = (0, p.S)(), v = a.useRef([]), E = a.useRef(null), O = a.useRef(i.length), N = a.useRef(null), [S, T] = a.useState(false), [w, P] = a.useState(false), [R, F] = a.useState(null), _ = null != R ? R : null == m ? true : m.message, Z = i.length, I = Math.max(A.iZ - Z, 0), D = (0, c.vRw)(), k = a.useCallback(async e => {
     if (null == l || S) return;
     T(true), F(null);
     let {
@@ -131,7 +131,7 @@ function v(e) {
         let {
           default: a
         } = await Promise.all([n.e("59732"), n.e("11866")]).then(n.bind(n, 712451));
-        return n => (0, r.jsx)(a, x({
+        return n => (0, r.jsx)(a, C({
           imageUri: o,
           file: new File([l], u, {
             type: f
@@ -142,14 +142,14 @@ function v(e) {
           showUpsellHeader: true
         }, n))
       }, {
-        contextKey: k
+        contextKey: D
       })
     } catch (e) {
       F(j.intl.string(j.t.fZRH9P))
     } finally {
       T(false)
     }
-  }, [k, S, t, l]), M = a.useCallback((e, t, a, l, s) => {
+  }, [D, S, t, l]), M = a.useCallback((e, t, a, l, s) => {
     let o = t + 1 < i.length ? t + 1 : t - 1;
     N.current = o >= 0 ? v.current[o] : E.current, e.shiftKey ? (0, f.B)(a) : (P(true), (0, c.ZDy)(async () => {
       let {
@@ -173,7 +173,7 @@ function v(e) {
           }
           return a
         }(t, ["onClose"]);
-        return (0, r.jsx)(e, x({
+        return (0, r.jsx)(e, C({
           avatarId: a,
           storageHash: l,
           avatarDescription: s,
@@ -208,10 +208,10 @@ function v(e) {
         "aria-label": j.intl.string(j.t.lsU63N),
         className: y.recentAvatarList,
         children: i.map((e, t) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(C, {
+          children: (0, r.jsx)(x, {
             avatar: e,
             index: t,
-            onSelectRecentAvatar: D,
+            onSelectRecentAvatar: k,
             onDeleteRecentAvatar: M,
             avatarButtonRef: e => {
               v.current[t] = e

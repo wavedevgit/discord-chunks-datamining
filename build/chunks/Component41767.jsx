@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk668339 = require("./668339.jsx"),
   Chunk556012 = require("./556012.js"),
   Chunk590433 = require("./590433.js"),
   Chunk388032 = require("./388032.jsx");
@@ -16,7 +16,7 @@ let o = t => {
     duration: e,
     onSelectDuration: r
   } = t, i = (0, s.tr)(), u = i.find(t => t.value === e);
-  return (0, l.jsx)(a.VcW, {
+  return (0, l.jsx)(a.d, {
     required: true,
     value: null != (n = null == u ? true : u.value) ? n : s.DisableCommunicationDuration.DURATION_60_SEC,
     options: i,
@@ -35,15 +35,15 @@ function A(t) {
     isEdit: a,
     onUpdateDuration: A,
     onClose: j,
-    transitionState: E
-  } = t, [d, S] = r.useState(() => null != n.metadata.durationSeconds && n.metadata.durationSeconds > 0 ? n.metadata.durationSeconds : s.DisableCommunicationDuration.DURATION_60_SEC), _ = (0, u.c)(n.type, n, e);
+    transitionState: d
+  } = t, [E, S] = r.useState(() => null != n.metadata.durationSeconds && n.metadata.durationSeconds > 0 ? n.metadata.durationSeconds : s.DisableCommunicationDuration.DURATION_60_SEC), _ = (0, u.c)(n.type, n, e);
   if (null == _) return null;
   let {
     headerText: N
   } = _;
   return (0, l.jsx)(i.Modal, {
     onClose: j,
-    transitionState: E,
+    transitionState: d,
     title: N,
     subtitle: c.intl.string(c.t.DWGBAh),
     actions: [{
@@ -55,11 +55,11 @@ function A(t) {
     }, {
       text: a ? c.intl.string(c.t.bt75uw) : c.intl.string(c.t["R3BPH+"]),
       onClick: () => {
-        A(d)
+        A(E)
       }
     }],
     children: (0, l.jsx)(o, {
-      duration: d,
+      duration: E,
       onSelectDuration: t => {
         S(t)
       }

@@ -108,10 +108,10 @@ function B(e) {
   } = e, V = (0, b.PB)(j), M = (0, p.ZP)(), Z = ((0, c.wj)(M) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, W = (0, x.tP)(j), H = (null == (t = j.userStatus) ? true : t.claimedAt) != null, U = (0, x.B6)(j.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), F = (null == (n = j.userStatus) ? true : n.enrolledAt) != null, z = (null == (o = j.userStatus) ? true : o.completedAt) != null, {
+  }), z = (null == (n = j.userStatus) ? true : n.enrolledAt) != null, F = (null == (o = j.userStatus) ? true : o.completedAt) != null, {
     onAssetLoadComplete: G
   } = s.useContext(O.k), K = s.useCallback(async () => {
-    V && ((0, _.zi)(j) || F ? (0, E.openVideoQuestModal)({
+    V && ((0, _.zi)(j) || z ? (0, E.openVideoQuestModal)({
       quest: j,
       questContent: f.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: Q,
@@ -131,7 +131,7 @@ function B(e) {
       sourceQuestContent: Q,
       sourceQuestContentCTA: g.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })))
-  }, [V, j, F, Q]);
+  }, [V, j, z, Q]);
   return (0, r.jsxs)("div", {
     className: R.container,
     children: [(0, r.jsx)("div", {
@@ -168,7 +168,7 @@ function B(e) {
               children: N.intl.string(N.t.SKNnqq)
             })
           }), V && (0, r.jsx)(l.u, {
-            text: z ? N.intl.string(N.t.YsCuyF) : F ? N.intl.string(N.t["74KqrR"]) : (0, _.zi)(j) ? N.intl.string(N.t.I6JG46) : N.intl.string(N.t.umdNin),
+            text: F ? N.intl.string(N.t.YsCuyF) : z ? N.intl.string(N.t["74KqrR"]) : (0, _.zi)(j) ? N.intl.string(N.t.I6JG46) : N.intl.string(N.t.umdNin),
             asContainer: true,
             tag: "span",
             children: (0, r.jsx)(d.P3F, {

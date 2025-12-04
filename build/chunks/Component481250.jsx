@@ -1,8 +1,8 @@
 /** Chunk was on 80960 **/
 /** chunk id: 481250, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  VE: () => C,
-  lV: () => R
+  VE: () => Z,
+  lV: () => S
 }), require("./539854.js"), require("./642613.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,6 +10,7 @@ var Chunk54381 = require("./54381.js"),
   l = require.n(Chunk120356),
   Chunk468194 = require("./468194.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk304680 = require("./304680.js"),
   Chunk763520 = require("./763520.js"),
@@ -25,47 +26,47 @@ var Chunk54381 = require("./54381.js"),
   Chunk65154 = require("./65154.js"),
   Chunk966117 = require("./966117.js"),
   Chunk197571 = require("./197571.js");
-let x = {
+let C = {
   [Chunk65154.Z.NO_OVERRIDE]: "None",
   [Chunk65154.Z.LOW]: "Low Quality Stream",
   [Chunk65154.Z.HIGH]: "High Quality Stream"
 };
 
-function C(e) {
+function Z(e) {
   let t = [],
     n = 0;
-  for (e.length % 2 != 0 && e.push((0, r.jsx)(m.Z, {
+  for (e.length % 2 != 0 && e.push((0, r.jsx)(p.Z, {
       basis: "50%",
       grow: 0
-    }, n++)); e.length > 0;) t.push((0, r.jsx)(m.Z, {
+    }, n++)); e.length > 0;) t.push((0, r.jsx)(p.Z, {
     basis: "50%",
     grow: 0,
     children: e.splice(0, 2)
   }, n++));
   return t
 }
-let Z = {
+let R = {
   ssrc: 1,
   codec: 2
 };
 
-function R(e) {
+function S(e) {
   let {
     streams: t,
     context: n,
     mediaEngineConnectionId: i,
-    userId: R,
-    videoStreams: S,
-    title: F,
-    showUserInfo: N = false,
-    showSimulcastOverride: I = false
-  } = e, [k, w] = a.useState("0"), B = (0, s.e7)([y.Z], () => N ? y.Z.getGuildId() : null), A = (0, s.e7)([v.default], () => N && null != R ? v.default.getUser(R) : null), T = (0, s.e7)([h.ZP], () => N && null != B && null != R ? h.ZP.getNick(B, R) : null);
-  if (null == t || N && null == R || 0 === t.length) return (0, r.jsx)(c.$jN, {
-    type: c.$jN.Type.SPINNING_CIRCLE
+    userId: S,
+    videoStreams: F,
+    title: N,
+    showUserInfo: I = false,
+    showSimulcastOverride: k = false
+  } = e, [w, B] = a.useState("0"), A = (0, s.e7)([g.Z], () => I ? g.Z.getGuildId() : null), T = (0, s.e7)([E.default], () => I && null != S ? E.default.getUser(S) : null), L = (0, s.e7)([f.ZP], () => I && null != A && null != S ? f.ZP.getNick(A, S) : null);
+  if (null == t || I && null == S || 0 === t.length) return (0, r.jsx)(d.$jN, {
+    type: d.$jN.Type.SPINNING_CIRCLE
   });
-  let L = F;
-  N && null != A && (L = "".concat(F, " — ").concat(null != T ? T : E.ZP.getName(A)));
-  let O = t.map((e, t) => (0, r.jsx)(c.njP.Item, {
+  let O = N;
+  I && null != T && (O = "".concat(N, " — ").concat(null != L ? L : b.ZP.getName(T)));
+  let M = t.map((e, t) => (0, r.jsx)(d.njP.Item, {
       id: t.toString(),
       children: function(e) {
         let t = (0, o.De)(e.type),
@@ -73,68 +74,68 @@ function R(e) {
         return "resolution" in e && null != e.resolution && 0 !== e.resolution.width && 0 !== e.resolution.height && (n = " (".concat(e.resolution.width, "x").concat(e.resolution.height, ")")), t + n
       }(e)
     }, t.toString())),
-    M = Math.min(parseInt(k, 10), t.length - 1),
-    V = t[M],
-    G = function(e, t, n, a, i) {
+    V = Math.min(parseInt(w, 10), t.length - 1),
+    G = t[V],
+    H = function(e, t, n, a, i) {
       let o = [];
       for (let t of Object.keys(e).sort((e, t) => {
-          let n = Z[e],
-            r = Z[t];
-          return n !== r ? true === n ? 1 : true === r ? false : n - r : g.Pz[e] !== g.Pz[t] ? g.Pz[e] ? 1 : false : e > t ? 1 : false
+          let n = R[e],
+            r = R[t];
+          return n !== r ? true === n ? 1 : true === r ? false : n - r : v.Pz[e] !== v.Pz[t] ? v.Pz[e] ? 1 : false : e > t ? 1 : false
         })) {
         let n = e[t];
-        b.al[t] || true === n || o.push((0, r.jsx)(b.ck, {
+        D.al[t] || true === n || o.push((0, r.jsx)(D.ck, {
           section: a,
           label: t,
           value: n
         }, t))
       }
       return (0, r.jsxs)("div", {
-        className: j.marginBottom40,
+        className: x.marginBottom40,
         children: ["video" === e.type && null != n && null != a && null != i && function(e, t, n, a) {
           let i = a.get(t, n, e.ssrc);
           return null != i ? (0, r.jsx)("div", {
-            className: l()(P.videoWrapper, j.marginBottom40),
-            children: (0, r.jsx)(p.Z, {
+            className: l()(j.videoWrapper, x.marginBottom40),
+            children: (0, r.jsx)(h.Z, {
               streamId: i,
-              videoComponent: f.Z.getMediaEngine().Video,
+              videoComponent: y.Z.getMediaEngine().Video,
               paused: false,
-              videoSpinnerContext: u.m.REPLAY_VIDEO_STREAM,
+              videoSpinnerContext: m.m.REPLAY_VIDEO_STREAM,
               userId: n
             })
           }) : null
-        }(e, n, a, i), C(o)]
+        }(e, n, a, i), Z(o)]
       }, "".concat(e.type, " + ").concat(e.ssrc))
-    }(V, 0, i, R, S),
-    H = I && "video" === V.type && null != i && null != R && null != S && (0, r.jsx)(m.Z, {
-      className: j.marginBottom20,
-      children: (0, r.jsx)(m.Z.Child, {
+    }(G, 0, i, S, F),
+    _ = k && "video" === G.type && null != i && null != S && null != F && (0, r.jsx)(p.Z, {
+      className: x.marginBottom20,
+      children: (0, r.jsx)(p.Z.Child, {
         basis: "100%",
-        children: (0, r.jsx)(c.q4e, {
+        children: (0, r.jsx)(c.y6, {
           label: "Simulcast Override",
-          value: g.ZP.getSimulcastDebugOverride(R, n),
+          value: v.ZP.getSimulcastDebugOverride(S, n),
           onChange: e => {
-            d.MS(R, n, e)
+            u.MS(S, n, e)
           },
-          options: Object.values(D.Z).map(e => ({
+          options: Object.values(P.Z).map(e => ({
             value: e,
-            label: x[e]
+            label: C[e]
           }))
         })
       })
     });
-  return (0, r.jsxs)(c.Kqy, {
+  return (0, r.jsxs)(d.Kqy, {
     gap: 16,
-    children: [(0, r.jsx)(c.Heading, {
+    children: [(0, r.jsx)(d.Heading, {
       variant: "heading-md/medium",
-      children: L
-    }), (0, r.jsx)(c.njP, {
+      children: O
+    }), (0, r.jsx)(d.njP, {
       type: "top",
       look: "brand",
-      selectedItem: k,
-      onItemSelect: w,
-      className: P.tabBar,
-      children: O
-    }), G, H]
+      selectedItem: w,
+      onItemSelect: B,
+      className: j.tabBar,
+      children: M
+    }), H, _]
   })
 }

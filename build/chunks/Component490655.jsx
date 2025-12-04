@@ -67,8 +67,8 @@ let w = Chunk473749.memo(function(e) {
   } = e, M = (0, o.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), U = (0, o.cj)([g.ZP], () => g.ZP.getChannels(null == l ? true : l.id)), B = (0, o.cj)([f.Z], () => a().keyBy(U.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, o.cj)([f.Z], () => a().keyBy(U.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != w ? w : M, G = t === N.b4C.APPLICATION ? n : null, [F, K] = r.useState(d.$x), z = r.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
     duration: 300,
     intensity: F
-  }), K(Math.min(F + d.d7, d.w6)), h.S.dispatch(N.CkL.EMPHASIZE_NOTICE), false) : (K(d.$x), true), [L, F]), q = r.useCallback(e => !!z() && (c.Z.setSection(e), true), [z]), {
-    applicationIntegrations: V,
+  }), K(Math.min(F + d.d7, d.w6)), h.S.dispatch(N.CkL.EMPHASIZE_NOTICE), false) : (K(d.$x), true), [L, F]), V = r.useCallback(e => !!z() && (c.Z.setSection(e), true), [z]), {
+    applicationIntegrations: q,
     applicationBotIds: Y,
     builtInIntegrations: J,
     customWebhooks: Q,
@@ -109,9 +109,9 @@ let w = Chunk473749.memo(function(e) {
         null == J[N.ABu.YOUTUBE] && c.Z.setSection(N.b4C.OVERVIEW);
         break;
       case N.b4C.APPLICATION:
-        null != G && (G in Y || G in V) || c.Z.setSection(N.b4C.OVERVIEW)
+        null != G && (G in Y || G in q) || c.Z.setSection(N.b4C.OVERVIEW)
     }
-  }, [V, Y, J, G, t, A]), r.useEffect(() => {
+  }, [q, Y, J, G, t, A]), r.useEffect(() => {
     (null == l ? true : l.id) != null && b.Z.getEntitlementsForGuildFetchState(l.id) === b.M.NOT_FETCHED && m.i1(l.id)
   }, [null == l ? true : l.id]), r.useEffect(() => () => {
     c.Z.setSection(N.b4C.OVERVIEW, null)
@@ -157,7 +157,7 @@ let w = Chunk473749.memo(function(e) {
       break;
     case N.b4C.APPLICATION:
       var ee;
-      let et = null != G ? null != (ee = V[Y[G]]) ? ee : V[G] : null;
+      let et = null != G ? null != (ee = q[Y[G]]) ? ee : q[G] : null;
       null != et && ($ = (0, i.jsx)(j.Z, {
         guild: l,
         applicationIntegration: et,
@@ -214,7 +214,7 @@ let w = Chunk473749.memo(function(e) {
       $ = (0, i.jsx)(_.Z, {
         guild: l,
         channel: w,
-        applicationIntegrations: V,
+        applicationIntegrations: q,
         builtInIntegrations: J,
         customWebhooks: Q,
         followedChannelWebhooks: X,
@@ -254,10 +254,10 @@ let w = Chunk473749.memo(function(e) {
         activeId: t.toString(),
         breadcrumbs: [N.b4C.OVERVIEW, t].map(e => ({
           id: e.toString(),
-          label: E(e, V[G])
+          label: E(e, q[G])
         })),
         onBreadcrumbClick: e => {
-          t !== parseInt(e.id) && q(parseInt(e.id))
+          t !== parseInt(e.id) && V(parseInt(e.id))
         },
         renderCustomBreadcrumb: (e, t) => (0, i.jsx)(s.Heading, {
           variant: "heading-lg/semibold",

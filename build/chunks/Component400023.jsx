@@ -115,7 +115,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [k, K] = r.useState(null != (n = j.Z.isAtBottom(m.id)) && n), Y = r.useMemo(() => v ? (0, L.aJ)({
+    } = e, [D, K] = r.useState(null != (n = j.Z.isAtBottom(m.id)) && n), Y = r.useMemo(() => v ? (0, L.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -140,7 +140,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
       handleScrollToBottom: r.useCallback(() => K(true), [K]),
       handleScrollFromBottom: r.useCallback(() => K(false), [K]),
       additionalMessagePadding: 48
-    }), J = (0, D.Z)({
+    }), J = (0, k.Z)({
       scrollerRef: X.ref,
       isEditing: null != S,
       keyboardModeEnabled: I,
@@ -218,8 +218,8 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
         let t = null == (e = x.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
-      eu = r.useMemo(() => R ? k ? B.chatTypingGradientAtBottom : B.chatTypingGradientNotAtBottom : B.chatGradient, [R, k]),
-      ed = r.useMemo(() => R ? k ? B.typingGradientAtBottom : B.typingGradientNotAtBottom : B.gradientDefault, [R, k]);
+      eu = r.useMemo(() => R ? D ? B.chatTypingGradientAtBottom : B.chatTypingGradientNotAtBottom : B.chatGradient, [R, D]),
+      ed = r.useMemo(() => R ? D ? B.typingGradientAtBottom : B.typingGradientNotAtBottom : B.gradientDefault, [R, D]);
     return (0, i.jsxs)(s.bG, {
       navigator: J,
       children: [null != ei && ei, (0, i.jsxs)("div", {
@@ -296,7 +296,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
       fontSize: j,
       messageDisplayCompact: w,
       renderSpoilers: L,
-      keyboardModeEnabled: D
+      keyboardModeEnabled: k
     } = function() {
       let e = O.jU.useSetting(),
         t = O.cC.useSetting(),
@@ -380,7 +380,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
     }(t);
     return (0, i.jsx)(v.aQ.Provider, {
       value: (0, M.Z)(L, d),
-      children: (0, i.jsx)(k.v, {
+      children: (0, i.jsx)(D.v, {
         children: (0, i.jsx)(K, z(G({}, u), {
           messageGroupSpacing: x,
           showNewMessagesBar: true,
@@ -395,7 +395,7 @@ let q = (0, Chunk205120.animated)(Chunk481060.eTT),
           canChat: y,
           editingMessageId: B,
           fontSize: j,
-          keyboardModeEnabled: D,
+          keyboardModeEnabled: k,
           showingQuarantineBanner: n,
           hideSummaries: l,
           typingGradient: s

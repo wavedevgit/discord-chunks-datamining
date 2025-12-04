@@ -94,7 +94,7 @@ function ee(e) {
     onlyAnimateOnHoverOrFocus: !p
   }), _ = (0, o.e7)([y.ZP], () => y.ZP.getSelfMember(i.id)), b = (0, o.Wu)([y.ZP], () => y.ZP.getMemberRoleWithPendingUpdates(i.id, s.id)), w = (0, o.e7)([N.Z], () => N.Z.getSortedRoles(i.id)), Z = (0, C.ZP)(i.id, s.id), I = w.filter(e => b.includes(e.id)), P = (0, j.ZP)(s.id, i.id);
   (0, h.ZP)(() => {
-    (0, O.Z)(s.id, s.getAvatarURL(i.id, (0, d.pxk)(J)), {
+    (0, O.Z)(s.id, s.getAvatarURL(i.id, (0, d.dcp)(J)), {
       guildId: i.id
     })
   });

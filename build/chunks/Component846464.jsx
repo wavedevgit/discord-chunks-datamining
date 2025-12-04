@@ -34,10 +34,10 @@ function S(e) {
     defaultPlanId: v,
     hasPaymentSources: S
   } = (0, p.JL)(), {
-    isGift: y,
+    isGift: x,
     claimableRewards: P
-  } = (0, d.wD)(), j = y && null != P && P.length > 0, _ = (0, s.N)(l);
-  return (0, r.jsx)(x, {
+  } = (0, d.wD)(), j = x && null != P && P.length > 0, _ = (0, s.N)(l);
+  return (0, r.jsx)(y, {
     selectSku: e => (function(e) {
       let {
         activeSubscription: t,
@@ -75,7 +75,7 @@ function S(e) {
       newSkuId: e,
       setSelectedSkuId: a,
       handleStepChange: t,
-      isGift: y,
+      isGift: x,
       userTrialOffer: _,
       startedPaymentFlowWithPaymentSources: o.current,
       setSelectedPlanId: u,
@@ -100,13 +100,13 @@ function S(e) {
       setSelectedSkuId: a
     }),
     onClose: n,
-    isGift: y,
+    isGift: x,
     priceOptions: g,
     showPromotionalGiftBanner: j
   })
 }
 
-function x(e) {
+function y(e) {
   let {
     selectSku: t,
     onClose: n,

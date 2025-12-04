@@ -81,7 +81,7 @@ function I(e) {
   })
 }
 
-function k(e) {
+function D(e) {
   let {
     guildFeature: t,
     guild: n
@@ -98,7 +98,7 @@ function k(e) {
   })
 }
 
-function D(e) {
+function k(e) {
   let {
     guildFeature: t,
     guild: n
@@ -143,7 +143,7 @@ function M(e) {
           })
         }), n]
       })]
-    }), u && (0, r.jsx)(D, {
+    }), u && (0, r.jsx)(k, {
       guild: l,
       guildFeature: a
     })]
@@ -161,7 +161,7 @@ function L(e) {
     handleFileSizeError: u
   } = e, d = (0, N.GY)(n), f = (0, N.C6)(n, {
     isGIF: false
-  }), g = k({
+  }), g = D({
     guildFeature: f,
     guild: a
   });
@@ -206,7 +206,7 @@ function U(e) {
     onMouseLeave: s
   } = (0, j.Z)(), o = (0, N.Kq)(t), u = (0, N.C6)(t, {
     isGIF: true
-  }), d = k({
+  }), d = D({
     guildFeature: u,
     guild: n
   });
@@ -248,11 +248,11 @@ function B(e) {
     analyticsLocations: N = [],
     imageSpecifications: Z,
     modalTitle: I = R.intl.string(R.t.DToW4e),
-    uploadOptionTitle: k = R.intl.string(R.t["MsUY/S"]),
-    allowRecentAvatarsSelection: D = true
-  } = e, M = (0, s.e7)([C.default], () => C.default.getCurrentUser()), B = (0, s.e7)([x.Z], () => x.Z.getGuildId()), H = (0, s.e7)([y.Z], () => y.Z.getGuild(B)), V = (0, c.vRw)(), G = o === w.pC.AVATAR || o === w.pC.BANNER, z = !O.ZP.canUseAnimatedAvatar(M) && o === w.pC.AVATAR, q = (0, g.M)(!G), W = (0, h.T)({
+    uploadOptionTitle: D = R.intl.string(R.t["MsUY/S"]),
+    allowRecentAvatarsSelection: k = true
+  } = e, M = (0, s.e7)([x.default], () => x.default.getCurrentUser()), B = (0, s.e7)([C.Z], () => C.Z.getGuildId()), H = (0, s.e7)([y.Z], () => y.Z.getGuild(B)), V = (0, c.vRw)(), G = o === w.pC.AVATAR || o === w.pC.BANNER, z = !O.ZP.canUseAnimatedAvatar(M) && o === w.pC.AVATAR, q = (0, g.M)(!G), W = (0, h.T)({
     location: "NewSelectImageModal"
-  }) && D, {
+  }) && k, {
     analyticsLocations: X,
     newestAnalyticsLocation: Y
   } = (0, d.ZP)(N, u.Z.SELECT_IMAGE_MODAL), J = a.useCallback(e => {
@@ -354,7 +354,7 @@ function B(e) {
           "aria-label": R.intl.string(R.t.iBnqtQ),
           children: [(0, r.jsx)("li", {
             children: (0, r.jsx)(L, {
-              label: k,
+              label: D,
               uploadType: o,
               guild: H,
               handleOpenImageEditingModal: K,

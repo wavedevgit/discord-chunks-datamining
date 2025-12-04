@@ -333,15 +333,15 @@ function k() {
     F = Chunk473749.useMemo(() => a().chunk(R, M.pageSize), [M.pageSize, R]),
     H = Chunk473749.useCallback(e => {
       var t, n, r;
-      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > R.length && k && !p && (W.current = null != (r = null == (n = R[R.length - 1]) ? true : n.id) ? r : null, B(W.current)), (null != F[e - 1] || k) && U(t => Z(w({}, t), {
+      null == (t = N.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > R.length && k && !p && (z.current = null != (r = null == (n = R[R.length - 1]) ? true : n.id) ? r : null, B(z.current)), (null != F[e - 1] || k) && U(t => Z(w({}, t), {
         currentPage: e
       }))
     }, [M.pageSize, R, k, F, B, Chunk367907]),
-    W = Chunk473749.useRef(null);
+    z = Chunk473749.useRef(null);
   Chunk473749.useEffect(() => {
-    B(W.current)
+    B(z.current)
   }, [B]);
-  let z = Chunk473749.useMemo(() => {
+  let W = Chunk473749.useMemo(() => {
     var e;
     return null != (e = F[M.currentPage - 1]) ? module : []
   }, [F, M.currentPage]);
@@ -355,7 +355,7 @@ function k() {
       children: [!G && (0, Chunk54381.jsx)(A, {
         guild: Chunk239091,
         bans: Chunk246946,
-        sortedBans: z,
+        sortedBans: W,
         ref: Chunk84613
       }), !k && G && (0, Chunk54381.jsxs)(Chunk481060.ubH, {
         theme: Chunk51144,

@@ -115,7 +115,7 @@ function O(e) {
     }),
     K = (0, p.LD)(k, true),
     z = (null == E ? true : E.application) != null && Object.keys(null != (l = null == (n = K.result) || null == (t = n.sections[E.application.id]) ? true : t.commands) ? l : {}).length > 0,
-    q = (0, i.jsxs)(d.Kqy, {
+    V = (0, i.jsxs)(d.Kqy, {
       direction: "horizontal",
       align: "center",
       children: [(0, i.jsx)(f.Z, {
@@ -169,11 +169,11 @@ function O(e) {
     children: (0, i.jsx)(d.Zbd, {
       editable: true,
       className: a()(v.card, v.clickable),
-      children: q
+      children: V
     })
   }) : (0, i.jsx)(d.Zbd, {
     editable: true,
     className: v.card,
-    children: q
+    children: V
   })
 }

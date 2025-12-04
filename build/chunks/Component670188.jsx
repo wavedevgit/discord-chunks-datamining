@@ -71,7 +71,7 @@ function g(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let E = (0, Chunk481060.pxk)(Chunk481060.EFr.SIZE_80),
+let E = (0, Chunk481060.dcp)(Chunk481060.EFr.SIZE_80),
   b = {
     onMouseDown: Chunk231338.dG,
     onClick: Chunk231338.dG,

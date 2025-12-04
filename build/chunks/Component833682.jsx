@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk846027 = require("./846027.js"),
   Chunk509613 = require("./509613.js"),
   Chunk131951 = require("./131951.js"),
@@ -66,7 +66,7 @@ function A() {
   return (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
     direction: "vertical",
     gap: 0,
-    children: [(0, Chunk54381.jsx)(Chunk481060.q4e, {
+    children: [(0, Chunk54381.jsx)(Chunk199849.y6, {
       label: Chunk388032.intl.string(Chunk388032.t.t8Qhib),
       description: A,
       layout: "horizontal",

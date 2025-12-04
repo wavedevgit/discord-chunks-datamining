@@ -62,7 +62,7 @@ let f = Chunk473749.memo(function(e) {
   } = e, p = c(e, ["user", "guildId", "size", "animate", "aria-hidden"]);
   let _ = i.useContext(o.Z);
   return (0, r.jsx)(a.qEK, l({
-    src: d(t, (0, a.pxk)(s), u, null != n ? n : _),
+    src: d(t, (0, a.dcp)(s), u, null != n ? n : _),
     size: s,
     "aria-label": f ? true : t.username,
     "aria-hidden": f

@@ -48,7 +48,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk490225 = require("./490225.js");
-let W = Chunk473749.memo(function(e) {
+let Q = Chunk473749.memo(function(e) {
     let {
       member: t
     } = e, n = l.useMemo(() => (0, j.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), i = l.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
@@ -98,7 +98,7 @@ let W = Chunk473749.memo(function(e) {
       })]
     })
   }),
-  Q = Chunk473749.memo(function(e) {
+  W = Chunk473749.memo(function(e) {
     let {
       member: t,
       highestRole: n
@@ -323,7 +323,7 @@ let $ = Chunk473749.memo(function(e) {
         className: o()(Y.mediumCol, {
           [Y.compact]: b
         }),
-        children: (0, r.jsx)(Q, {
+        children: (0, r.jsx)(W, {
           member: t,
           highestRole: i
         })
@@ -331,7 +331,7 @@ let $ = Chunk473749.memo(function(e) {
         className: o()(Y.smallCol, {
           [Y.compact]: b
         }),
-        children: (0, r.jsx)(W, {
+        children: (0, r.jsx)(Q, {
           member: t
         })
       }), (0, r.jsx)("td", {

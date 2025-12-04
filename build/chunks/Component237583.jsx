@@ -80,7 +80,7 @@ class _ extends(r = Chunk473749.PureComponent) {
         className: s()(u.emptyUser, t)
       }, n) : (0, i.jsx)(l.qEK, {
         tabIndex: 0,
-        src: p.getAvatarURL(f, (0, l.pxk)(o)),
+        src: p.getAvatarURL(f, (0, l.dcp)(o)),
         size: o,
         "aria-label": p.username,
         className: s()(t, d.cursorPointer, u.avatarSize),

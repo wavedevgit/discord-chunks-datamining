@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk993365 = require("./993365.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk668339 = require("./668339.jsx"),
   Chunk489863 = require("./489863.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk990199 = require("./990199.js");
@@ -48,7 +48,7 @@ function f(e) {
       variant: "text-xs/normal",
       color: "text-feedback-critical",
       children: _
-    }) : null, (0, r.jsx)(s.VcW, {
+    }) : null, (0, r.jsx)(s.d, {
       wrapperClassName: u.select,
       maxVisibleItems: d,
       onChange: p,

@@ -84,11 +84,11 @@ function Y(e) {
     paused: q = false,
     idle: Y = false,
     controlsBottom: G
-  } = e, K = Z.Z.getVideoComponent(), Q = (0, o.e7)([x.default], () => x.default.getId()), X = (0, b.Z)(), {
+  } = e, K = Z.Z.getVideoComponent(), Q = (0, o.e7)([j.default], () => j.default.getId()), X = (0, b.Z)(), {
     stream: J,
     user: $,
     streamId: ee
-  } = t, et = (0, o.e7)([j.Z], () => j.Z.getChannel(J.channelId)), en = (0, o.e7)([P.Z], () => P.Z.getActiveStreamForUser($.id, J.guildId), [$.id, J.guildId]), {
+  } = t, et = (0, o.e7)([x.Z], () => x.Z.getChannel(J.channelId)), en = (0, o.e7)([P.Z], () => P.Z.getActiveStreamForUser($.id, J.guildId), [$.id, J.guildId]), {
     defaultWatchMultipleStreams: er
   } = (0, h.P)({
     location: "StreamTile"

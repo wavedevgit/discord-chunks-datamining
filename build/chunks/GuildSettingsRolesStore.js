@@ -123,7 +123,7 @@ let H = c().debounce(() => {
   let e = false;
   w && ((w = M().length > 0) || (e = true)), [...S].forEach(t => {
     var n;
-    c().isEqual(z(t), (n = t, R.find(e => {
+    c().isEqual(W(t), (n = t, R.find(e => {
       let {
         id: t
       } = e;
@@ -132,7 +132,7 @@ let H = c().debounce(() => {
   }), 0 === S.size && (P = false), D && c().isEqual(L, k) && (e = true, D = false), module && Y.emitChange()
 }, 500);
 
-function W(e, t) {
+function z(e, t) {
   let n = Z.indexOf(e);
   if (n < 0) returnfalse;
   let r = E({}, e, t),
@@ -140,7 +140,7 @@ function W(e, t) {
   i[n] = r, Z = i, P = true, S.add(r.id), H()
 }
 
-function z(e) {
+function W(e) {
   return Z.find(t => {
     let {
       id: n
@@ -156,7 +156,7 @@ function V(e) {
   if (null == (r = O.Z.getProps().guild) || t !== r.id || T === C.QZA.SUBMITTING) returnfalse;
   let n = [...x.Z.getSortedRoles(r.id)];
   S.forEach(e => {
-    let t = z(e),
+    let t = W(e),
       r = false;
     null == n.find((t, n) => {
       let {
@@ -214,7 +214,7 @@ class K extends(a = Chunk442837.ZP.Store) {
     return this.hasChanges()
   }
   getRole(e) {
-    return z(e)
+    return W(e)
   }
   getPermissionSearchQuery() {
     return i
@@ -233,19 +233,19 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         roles: t
       } = e;
       if (null != Z && t.length !== Z.length) returnfalse;
-      Z = t.map(e => z(e)).filter(_.lm), w = true, H()
+      Z = t.map(e => W(e)).filter(_.lm), w = true, H()
     },
     GUILD_SETTINGS_ROLES_UPDATE_PERMISSIONS: function(e) {
       let {
         id: t,
         flag: n,
         allow: r
-      } = e, i = z(t);
+      } = e, i = W(t);
       if (null == i) returnfalse;
       let {
         permissions: l
       } = i;
-      return W(i, {
+      return z(i, {
         permissions: l = r ? d.IH(l, n) : d.Od(l, n)
       })
     },
@@ -253,16 +253,16 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         permissions: n
-      } = e, r = z(t);
-      return null != r && W(r, {
+      } = e, r = W(t);
+      return null != r && z(r, {
         permissions: n
       })
     },
     GUILD_SETTINGS_ROLES_CLEAR_PERMISSIONS: function(e) {
       let {
         id: t
-      } = e, n = z(t);
-      return null != n && W(n, {
+      } = e, n = W(t);
+      return null != n && z(n, {
         permissions: v.Hn
       })
     },
@@ -270,8 +270,8 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         name: n
-      } = e, r = z(t);
-      return null != r && W(r, {
+      } = e, r = W(t);
+      return null != r && z(r, {
         name: n
       })
     },
@@ -279,8 +279,8 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         description: n
-      } = e, r = z(t);
-      return null != r && W(r, {
+      } = e, r = W(t);
+      return null != r && z(r, {
         description: n
       })
     },
@@ -288,14 +288,14 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         color: n
-      } = e, r = 0 === n ? null : (0, u.Rf)(n), i = z(t);
+      } = e, r = 0 === n ? null : (0, u.Rf)(n), i = W(t);
       if (null == i) returnfalse;
       let l = G.get(t);
       return null != l && (l.currentStyle = "solid", l.styleColors.solid = {
         primary_color: n,
         secondary_color: null,
         tertiary_color: null
-      }, G.set(t, E({}, l)), W(i, {
+      }, G.set(t, E({}, l)), z(i, {
         color: n,
         colorString: r,
         colors: {
@@ -315,11 +315,11 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         id: t,
         colors: n,
         currentStyle: r
-      } = e, i = z(t);
+      } = e, i = W(t);
       if (null == i) returnfalse;
       let l = (0, h.DX)(n),
         a = G.get(t);
-      return null != a && (a.styleColors[r] = n, a.currentStyle = r, G.set(t, E({}, a)), W(i, {
+      return null != a && (a.styleColors[r] = n, a.currentStyle = r, G.set(t, E({}, a)), z(i, {
         color: n.primary_color,
         colors: n,
         colorString: l.primaryColor,
@@ -331,8 +331,8 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         id: t,
         hoist: n,
         mentionable: r
-      } = e, i = z(t);
-      return null != i && W(i, {
+      } = e, i = W(t);
+      return null != i && z(i, {
         hoist: n,
         mentionable: r
       })
@@ -342,8 +342,8 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         id: t,
         icon: n,
         unicodeEmoji: r
-      } = e, i = z(t);
-      return null != i && W(i, {
+      } = e, i = W(t);
+      return null != i && z(i, {
         icon: n,
         unicodeEmoji: r
       })
@@ -354,7 +354,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         searchQuery: n
       } = e;
       if (i = n, null != t) {
-        if (null != z(t.id)) return void W(t, t);
+        if (null != W(t.id)) return void z(t, t);
         Z = [...Z, t], H()
       }
     },
@@ -363,7 +363,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         id: n,
         currentStyle: r
-      } = e, i = z(n);
+      } = e, i = W(n);
       if (null == i) returnfalse;
       let l = G.get(n);
       if (null == l) returnfalse;
@@ -373,7 +373,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       });
       let a = l.styleColors[r],
         s = (0, h.DX)(a);
-      return W(i, {
+      return z(i, {
         color: null != (t = a.primary_color) ? t : true,
         colors: a,
         colorString: s.primaryColor,
@@ -384,7 +384,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         roleId: t,
         roleConnectionConfigurations: n
-      } = e, r = z(t);
+      } = e, r = W(t);
       if (null == r) returnfalse;
       let i = L.get(r.id);
       if (c().isEqual(i, n)) returnfalse;
@@ -394,7 +394,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         roleId: t,
         roleConnectionConfigurations: n
-      } = e, r = z(t);
+      } = e, r = W(t);
       if (null == r) returnfalse;
       D = true, A.add(r.id), k.set(r.id, n), H()
     },

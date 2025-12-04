@@ -1,13 +1,14 @@
 /** Chunk was on 96964 **/
 /** chunk id: 807007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => w
+  default: () => F
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk668339 = require("./668339.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk528963 = require("./528963.js"),
@@ -28,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk394330 = require("./394330.js");
 
-function S(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +37,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class O extends Chunk473749.PureComponent {
+class w extends Chunk473749.PureComponent {
   componentDidMount() {
     Chunk626135.default.track(Chunk981631.rMx.OPEN_MODAL, {
       type: "Follow Channel Modal",
@@ -49,7 +50,7 @@ class O extends Chunk473749.PureComponent {
         let {
           channel: t
         } = e;
-        return "general" === (0, h.F6)(t, j.default, f.Z)
+        return "general" === (0, u.F6)(t, y.default, C.Z)
       }),
       n = null != t ? t : e[0];
     return null != n ? n.channel.id : null
@@ -101,14 +102,14 @@ class O extends Chunk473749.PureComponent {
       } = e;
       return {
         value: t.id,
-        label: (0, h.F6)(t, j.default, f.Z),
+        label: (0, u.F6)(t, y.default, C.Z),
         channel: t,
         category: n
       }
-    }), c = 0 === i.length, d = Chunk570140 ? Chunk388032.intl.string(Chunk388032.t["6b6QoF"]) : Chunk388032.intl.string(Chunk388032.t.Z0quyN);
+    }), d = 0 === i.length, h = Chunk570140 ? Chunk388032.intl.string(Chunk388032.t["6b6QoF"]) : Chunk388032.intl.string(Chunk388032.t.Z0quyN);
     return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       gap: 16,
-      children: [(0, Chunk54381.jsx)(Chunk481060.VcW, {
+      children: [(0, Chunk54381.jsx)(Chunk668339.d, {
         label: Chunk388032.intl.string(Chunk388032.t.xFn72s),
         value: require,
         options: i,
@@ -119,12 +120,12 @@ class O extends Chunk473749.PureComponent {
           let {
             guild: t
           } = e;
-          return (0, l.jsx)(m.Z, {
+          return (0, l.jsx)(p.Z, {
             guild: t,
-            size: m.Z.Sizes.MINI
+            size: p.Z.Sizes.MINI
           })
         })(e)
-      }), (0, Chunk54381.jsx)(Chunk481060.VcW, {
+      }), (0, Chunk54381.jsx)(Chunk668339.d, {
         label: Chunk388032.intl.string(Chunk388032.t.PDn2fR),
         value: Chunk473749,
         options: Chunk442837,
@@ -134,11 +135,11 @@ class O extends Chunk473749.PureComponent {
           if (null == e) return null;
           let {
             channel: t
-          } = e, n = (0, u.KS)(t);
+          } = e, n = (0, g.KS)(t);
           return null != n && (0, l.jsx)(n, {
             size: "xs",
             color: "currentColor",
-            className: M.icon
+            className: S.icon
           })
         })(e)
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -224,7 +225,7 @@ class O extends Chunk473749.PureComponent {
     })
   }
   constructor(e) {
-    super(e), S(this, "handleGuildSelect", e => {
+    super(e), O(this, "handleGuildSelect", e => {
       let {
         guilds: t
       } = this.props, {
@@ -235,11 +236,11 @@ class O extends Chunk473749.PureComponent {
         selectedChannelId: r,
         channels: l
       })
-    }), S(this, "handleChannelSelect", e => {
+    }), O(this, "handleChannelSelect", e => {
       this.setState({
         selectedChannelId: e
       })
-    }), S(this, "handleFollow", () => {
+    }), O(this, "handleFollow", () => {
       let {
         channel: e,
         onClose: t
@@ -249,12 +250,12 @@ class O extends Chunk473749.PureComponent {
       } = this.state;
       null != r && (this.setState({
         submitting: true
-      }), d.Z.createChannelFollower(r, e.id).then(() => {
-        c.Z.dispatch({
+      }), h.Z.createChannelFollower(r, e.id).then(() => {
+        d.Z.dispatch({
           type: "CHANNEL_FOLLOWER_CREATED",
           channelId: r,
           guildId: a
-        }), t(), (0, o.ZDy)(async () => {
+        }), t(), (0, c.ZDy)(async () => {
           let {
             default: e
           } = await n.e("21859").then(n.bind(n, 910338));
@@ -265,18 +266,18 @@ class O extends Chunk473749.PureComponent {
               "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), l.forEach(function(t) {
-                S(e, t, n[t])
+                O(e, t, n[t])
               })
             }
             return e
           }({}, t))
         })
       }).catch(e => {
-        e.body.code === Z.evJ.TOO_MANY_WEBHOOKS ? this.setState({
-          errorMessage: v.intl.string(v.t["1eZ4aB"]),
+        e.body.code === v.evJ.TOO_MANY_WEBHOOKS ? this.setState({
+          errorMessage: M.intl.string(M.t["1eZ4aB"]),
           submitting: false
         }) : this.setState({
-          errorMessage: v.intl.string(v.t.LgwhuN),
+          errorMessage: M.intl.string(M.t.LgwhuN),
           submitting: false
         })
       }))
@@ -294,16 +295,16 @@ class O extends Chunk473749.PureComponent {
       channels: null != a && null != t[a] ? t[a].channels : [],
       errorMessage: null,
       submitting: false,
-      headerId: (0, g.hQ)("modal")
+      headerId: (0, m.hQ)("modal")
     }
   }
 }
-let w = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk592125.Z, Chunk984933.ZP, Chunk496675.Z, Chunk944486.Z], e => {
+let F = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk592125.Z, Chunk984933.ZP, Chunk496675.Z, Chunk944486.Z], e => {
   let {
     channel: t
-  } = e, n = b.Z.getGuild(t.guild_id), l = b.Z.getGuildsArray().reduce((e, t) => {
-    let n = x.ZP.getChannels(t.id).SELECTABLE.map(e => e.channel).filter(e => e.type === Z.d4z.GUILD_TEXT && _.Z.can(Z.Plq.MANAGE_WEBHOOKS, e)).map(e => {
-      let t = p.Z.getChannel(e.parent_id);
+  } = e, n = _.Z.getGuild(t.guild_id), l = _.Z.getGuildsArray().reduce((e, t) => {
+    let n = b.ZP.getChannels(t.id).SELECTABLE.map(e => e.channel).filter(e => e.type === v.d4z.GUILD_TEXT && f.Z.can(v.Plq.MANAGE_WEBHOOKS, e)).map(e => {
+      let t = x.Z.getChannel(e.parent_id);
       return {
         channel: e,
         category: null != t ? t.name : null
@@ -313,7 +314,7 @@ let w = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk592125.Z, Chunk984933.
       guild: t,
       channels: n
     }), e
-  }, {}), r = C.Z.getLastChannelFollowingDestination();
+  }, {}), r = j.Z.getLastChannelFollowingDestination();
   return {
     guildToFollow: n,
     channelNameToFollow: t.name,
@@ -322,4 +323,4 @@ let w = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk592125.Z, Chunk984933.
   }
 }, {
   forwardRef: true
-})(O)
+})(w)

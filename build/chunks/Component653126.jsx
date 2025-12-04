@@ -45,8 +45,8 @@ let O = Chunk473749.memo(function(e) {
       onMouseLeave: L,
       onFocus: M,
       onBlur: U,
-      primaryCTAText: F,
-      secondaryCTAIcon: B,
+      primaryCTAText: B,
+      secondaryCTAIcon: F,
       productNameClassName: G,
       badgeClassName: z,
       cardClassName: V,
@@ -135,14 +135,14 @@ let O = Chunk473749.memo(function(e) {
                     skuId: t.skuId,
                     cardRef: ee,
                     onClick: A,
-                    text: F,
+                    text: B,
                     prioritizedCurrency: H,
                     onClickAnalytics: W
                   }), !I && (0, a.jsx)(b.Z, {
                     skuId: t.skuId,
                     cardRef: ee,
                     onClick: Z,
-                    icon: B,
+                    icon: F,
                     prioritizedCurrency: H,
                     onClickAnalytics: W
                   })]

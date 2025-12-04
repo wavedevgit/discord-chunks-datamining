@@ -5,14 +5,14 @@ require.d(exports, {
   a: () => a
 });
 var r, Chunk54381 = require("./54381.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk199849 = require("./199849.jsx"),
   a = ((r = {})[r.UNENROLLED = 0] = "UNENROLLED", r[r.ENROLLED = 1] = "ENROLLED", r[r.COMPLETED_25 = 2] = "COMPLETED_25", r[r.COMPLETED_50 = 3] = "COMPLETED_50", r[r.COMPLETED_75 = 4] = "COMPLETED_75", r[r.COMPLETED_100 = 5] = "COMPLETED_100", r[r.CLAIMED = 6] = "CLAIMED", r);
 let i = function(e) {
   let {
     onChange: t,
     value: n
   } = e;
-  return (0, s.jsx)(o.PhF, {
+  return (0, s.jsx)(o.B6, {
     label: "User State",
     options: [{
       label: "Unenrolled",

@@ -154,7 +154,7 @@ function O(e) {
     onClick: o,
     width: u,
     guildId: b
-  } = e, C = (0, p.ZP)(), y = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), v = (0, s.e7)([h.Z], () => h.Z.isFocused()), O = n.map(e => {
+  } = e, C = (0, p.ZP)(), y = (t = n.length, ((0, d.dcp)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), v = (0, s.e7)([h.Z], () => h.Z.isFocused()), O = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -166,7 +166,7 @@ function O(e) {
     } = e;
     return (0, i.jsx)(_, {
       className: g.participant,
-      width: (0, d.pxk)(y),
+      width: (0, d.dcp)(y),
       theme: C,
       children: (0, i.jsx)(d.kL8, {
         "aria-label": l.username,
@@ -174,7 +174,7 @@ function O(e) {
         onContextMenu: t => null == r ? true : r(e, t),
         children: (0, i.jsx)(f.Z, {
           userId: l.id,
-          src: l.getAvatarURL(b, (0, d.pxk)(y), s && v),
+          src: l.getAvatarURL(b, (0, d.dcp)(y), s && v),
           size: y,
           muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
           deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,

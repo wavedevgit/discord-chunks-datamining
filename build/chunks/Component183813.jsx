@@ -116,7 +116,7 @@ function _(e) {
         palette: e.palette
       }, e.skuId)
     }),
-    J = (0, r.jsx)(y.O3, {
+    J = (0, r.jsx)(x.O3, {
       children: (0, r.jsx)(s.mzw, {
         "data-migration-pending": true,
         className: j.modalFooter,
@@ -127,7 +127,7 @@ function _(e) {
               reward_sku_id: M.skuId
             }), C(e)
           },
-          onBackClick: () => C(x.h8.PLAN_SELECT),
+          onBackClick: () => C(y.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: true,
           showBackButton: true,
           planOptions: [k.id],

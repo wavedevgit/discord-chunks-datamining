@@ -48,7 +48,7 @@ function S(e) {
   return e
 }
 
-function k(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function k(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class Z extends Chunk473749.PureComponent {
+class k extends Chunk473749.PureComponent {
   render() {
     let e, t, {
         report: n,
@@ -117,7 +117,7 @@ class Z extends Chunk473749.PureComponent {
       } = Chunk933557;
       return (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {
         value: o.guild_id,
-        children: (0, Chunk54381.jsx)(Chunk793030.Modal, k(S({
+        children: (0, Chunk54381.jsx)(Chunk793030.Modal, Z(S({
           title: Chunk388032.intl.string(Chunk388032.t.MWMcg7),
           subtitle: Chunk699516,
           actions: [{
@@ -204,7 +204,7 @@ let w = {
         channelName: a
       }), (0, r.jsx)(b.Z.Provider, {
         value: e.guild_id,
-        children: (0, r.jsx)(s.Modal, k(S({
+        children: (0, r.jsx)(s.Modal, Z(S({
           title: x.intl.string(x.t.bKMaZX),
           subtitle: i,
           actions: [{
@@ -235,7 +235,7 @@ let w = {
   confirmUnpin: function(e, t) {
     (0, c.h7j)(n => (0, r.jsx)(b.Z.Provider, {
       value: e.guild_id,
-      children: (0, r.jsxs)(s.Modal, k(S({
+      children: (0, r.jsxs)(s.Modal, Z(S({
         title: x.intl.string(x.t.CFF2vL),
         subtitle: x.intl.string(x.t.NjEPp7),
         actions: [{
@@ -266,7 +266,7 @@ let w = {
   confirmDelete: function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : true;
-    (0, c.h7j)(a => (0, r.jsx)(Z, S({
+    (0, c.h7j)(a => (0, r.jsx)(k, S({
       channel: e,
       message: t,
       showContextMenuHint: n,
@@ -274,7 +274,7 @@ let w = {
     }, a)))
   },
   confirmEdit: function(e, t, n) {
-    (0, c.h7j)(i => (0, r.jsx)(s.Modal, k(S({
+    (0, c.h7j)(i => (0, r.jsx)(s.Modal, Z(S({
       title: x.intl.string(x.t.aIz1oV),
       actions: [{
         variant: "secondary",

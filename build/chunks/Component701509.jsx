@@ -52,7 +52,7 @@ function C(t) {
   let {
     transitionState: e,
     source: n
-  } = t, a = (0, d.e7)([y.default], () => y.default.getCurrentUser()), o = (0, d.e7)([_.Z, A.Z], () => A.Z.getChannel(_.Z.getChannelId())), [C, S] = r.useState(null), [k, j] = r.useState(null), [w, I] = r.useState(false), [M, D] = r.useState(0), P = r.useRef(null), L = r.useRef(null), U = n === v.L0.FAMILY_CENTER, V = (0, T.Kt)() && !U, {
+  } = t, a = (0, d.e7)([_.default], () => _.default.getCurrentUser()), o = (0, d.e7)([y.Z, A.Z], () => A.Z.getChannel(y.Z.getChannelId())), [C, S] = r.useState(null), [k, j] = r.useState(null), [w, I] = r.useState(false), [M, D] = r.useState(0), P = r.useRef(null), L = r.useRef(null), U = n === v.L0.FAMILY_CENTER, V = (0, T.Kt)() && !U, {
     verifyAgreementButtonText: Z,
     verifyGateDescription: F,
     verifyTitle: W

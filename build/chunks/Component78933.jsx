@@ -110,12 +110,12 @@ function eo(e) {
   }), () => W.Z.setState({
     isOpen: false
   })), []);
-  let e_ = (0, s.e7)([B.Z], () => B.Z.getStatus(t.id)),
-    ey = F.Cr.useSetting(),
+  let e_ = (0, s.e7)([F.Z], () => F.Z.getStatus(t.id)),
+    ey = B.Cr.useSetting(),
     eC = (0, $.F)(ey),
     eS = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
     eE = (0, g.p)(),
-    eN = F.Sb.useSetting(),
+    eN = B.Sb.useSetting(),
     eO = (0, $.I)(e_),
     eT = (0, q.g)(n),
     eP = (0, v.Z)({
@@ -144,11 +144,11 @@ function eo(e) {
         sourceAnalyticsLocations: ex
       }, ef, e))
     },
-    eF = (0, E.Z)({
+    eB = (0, E.Z)({
       location: "UserProfileAccountPopout"
     }),
-    eB = (null == eh ? true : eh.widgets) != null && eh.widgets.length > 0,
-    eG = eB ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+    eF = (null == eh ? true : eh.widgets) != null && eh.widgets.length > 0,
+    eG = eF ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
     [ez, eV] = (0, f.US)(eG),
     eH = ez === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     eW = l.useCallback(() => {
@@ -233,7 +233,7 @@ function eo(e) {
               bio: null == eh ? true : eh.bio,
               hidePersonalInformation: eS,
               onClose: n
-            }), eF && eB && (0, a.jsx)(A.Z, {
+            }), eB && eF && (0, a.jsx)(A.Z, {
               user: t,
               widgets: null == eh ? true : eh.widgets,
               onOpenUserProfileModal: eU

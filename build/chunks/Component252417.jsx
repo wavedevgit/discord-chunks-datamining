@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk671955 = require("./671955.js"),
   Chunk777267 = require("./777267.js");
 let g = Chunk481060.EFr.SIZE_40,
-  O = (0, Chunk481060.pxk)(g);
+  O = (0, Chunk481060.dcp)(g);
 
 function x(e) {
   let {
@@ -39,13 +39,13 @@ function x(e) {
     activities: p.Z.getActivities(t.id),
     isMobileOnline: p.Z.isMobileOnline(t.id)
   })), I = (0, v.Z)(t.id), {
-    voiceActivityStatusEnabled: k
+    voiceActivityStatusEnabled: N
   } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
-    voiceChannel: N
+    voiceChannel: M
   } = (0, u.Z)({
-    userId: k ? t.id : true,
+    userId: N ? t.id : true,
     guildId: y
   });
   return (0, i.jsxs)(o.P3F, {
@@ -119,7 +119,7 @@ function x(e) {
         user: t,
         activities: E,
         applicationStream: I,
-        voiceChannel: N
+        voiceChannel: M
       })]
     })]
   })

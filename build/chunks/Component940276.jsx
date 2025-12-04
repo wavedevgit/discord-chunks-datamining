@@ -2,11 +2,12 @@
 /** chunk id: 940276, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk650774 = require("./650774.js"),
   Chunk626135 = require("./626135.js"),
@@ -17,24 +18,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk378976 = require("./378976.js");
 
-function m(e) {
+function h(e) {
   let {
     guild: t,
     isActivityRestricted: n,
     onToggleActivityRestrictedGuild: i
-  } = e, l = (0, a.e7)([s.Z], () => s.Z.getMemberCount(t.id));
-  return (0, r.jsxs)(o.Kqy, {
+  } = e, o = (0, a.e7)([l.Z], () => l.Z.getMemberCount(t.id));
+  return (0, r.jsxs)(s.Kqy, {
     as: "li",
     direction: "horizontal",
     align: "center",
     gap: 20,
-    children: [(0, r.jsx)(c.V, {
+    children: [(0, r.jsx)(u.V, {
       guild: t,
       size: 48
-    }), (0, r.jsx)(o.rsf, {
+    }), (0, r.jsx)(s.rsf, {
       label: t.name,
-      description: p.intl.format(p.t.zRl6XR, {
-        count: null != l ? l : 0
+      description: _.intl.format(_.t.zRl6XR, {
+        count: null != o ? o : 0
       }),
       checked: !n,
       onChange: e => i({
@@ -44,27 +45,27 @@ function m(e) {
     })]
   })
 }
-let h = function() {
+let g = function() {
   let {
     guilds: e,
     searchQuery: t,
     setSearchQuery: n,
     sortOrder: a,
-    setSortOrder: s,
-    hasActivityRestrictedGuilds: c,
-    onToggleAllActivityRestrictedGuilds: h,
-    onToggleActivityRestrictedGuild: g,
-    isActivityRestricted: E,
-    numActivityRestrictedGuilds: b,
-    numTotalGuilds: y
-  } = (0, Chunk304432.F)(), O = () => {
+    setSortOrder: l,
+    hasActivityRestrictedGuilds: u,
+    onToggleAllActivityRestrictedGuilds: g,
+    onToggleActivityRestrictedGuild: E,
+    isActivityRestricted: b,
+    numActivityRestrictedGuilds: y,
+    numTotalGuilds: O
+  } = (0, Chunk304432.F)(), v = () => {
     Chunk626135.default.track(Chunk981631.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
       interaction: "search_cleared",
       sort_order: Chunk442837,
-      activity_restricted_guild_count: b,
-      total_guild_count: y
+      activity_restricted_guild_count: y,
+      total_guild_count: O
     }), require("")
-  }, v = (0, Chunk473749.useId)();
+  }, S = (0, Chunk473749.useId)();
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk378976.wrapper,
     children: [(0, Chunk54381.jsxs)("div", {
@@ -72,28 +73,28 @@ let h = function() {
       children: [(0, Chunk54381.jsx)(Chunk481060.E1j, {
         query: exports,
         onChange: require,
-        onClear: O,
+        onClear: v,
         onFocus: () => Chunk626135.default.track(Chunk981631.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
           interaction: "search_focused",
           sort_order: Chunk442837,
-          activity_restricted_guild_count: b,
-          total_guild_count: y
+          activity_restricted_guild_count: y,
+          total_guild_count: O
         }),
         onBlur: () => Chunk626135.default.track(Chunk981631.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
           interaction: "search_blurred",
           sort_order: Chunk442837,
-          activity_restricted_guild_count: b,
-          total_guild_count: y
+          activity_restricted_guild_count: y,
+          total_guild_count: O
         }),
         placeholder: Chunk388032.intl.string(Chunk388032.t["H+nRYw"]),
         "aria-label": Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
         inputProps: {
-          "aria-controls": v,
+          "aria-controls": S,
           "aria-expanded": true
         }
       }), module.length > 0 && (0, Chunk54381.jsxs)("div", {
         className: Chunk378976.controlsContainer,
-        children: [(0, Chunk54381.jsx)(Chunk481060.PhF, {
+        children: [(0, Chunk54381.jsx)(Chunk199849.B6, {
           className: Chunk378976.select,
           variant: "text-only",
           options: [{
@@ -110,18 +111,18 @@ let h = function() {
             value: Chunk304432.W.ACTIVITY_SHARING_OFF
           }],
           select: e => {
-            l.default.track(d.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
+            c.default.track(f.rMx.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
               interaction: "sort_order_changed",
               sort_order: e,
-              activity_restricted_guild_count: b,
-              total_guild_count: y
-            }), s(e)
+              activity_restricted_guild_count: y,
+              total_guild_count: O
+            }), l(e)
           },
           isSelected: e => a === e,
           serialize: String
         }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
           variant: "primary",
-          onClick: h,
+          onClick: g,
           text: Chunk797670 ? Chunk388032.intl.string(Chunk388032.t["7lxcLO"]) : Chunk388032.intl.string(Chunk388032.t.zh6UEs)
         })]
       })]
@@ -133,7 +134,7 @@ let h = function() {
       })
     }), (0, Chunk54381.jsxs)("ul", {
       className: Chunk378976.guildsList,
-      id: v,
+      id: S,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["7hB4kg"]),
       children: [0 === module.length && (0, Chunk54381.jsx)("div", {
         className: Chunk378976.noResultsContainer,
@@ -142,10 +143,10 @@ let h = function() {
           variant: "text-lg/medium",
           children: Chunk388032.intl.string(Chunk388032.t["Xe+fJM"])
         })
-      }), module.map(e => (0, r.jsx)(m, {
+      }), module.map(e => (0, r.jsx)(h, {
         guild: e,
-        isActivityRestricted: E(e.id),
-        onToggleActivityRestrictedGuild: g
+        isActivityRestricted: b(e.id),
+        onToggleActivityRestrictedGuild: E
       }, e.id))]
     })]
   })

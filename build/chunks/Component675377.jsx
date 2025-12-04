@@ -94,7 +94,7 @@ function H() {
   })
 }
 
-function W(e) {
+function z(e) {
   let {
     children: t
   } = e;
@@ -106,7 +106,7 @@ function W(e) {
   })
 }
 
-function z(e) {
+function W(e) {
   let {
     currentTier: t,
     availableSounds: n,
@@ -276,7 +276,7 @@ function Y(e) {
         className: M.tableTitle,
         variant: "heading-md/bold",
         color: "header-primary",
-        children: (0, r.jsx)(z, {
+        children: (0, r.jsx)(W, {
           guildId: t.id,
           currentTier: u,
           availableSounds: g
@@ -289,11 +289,11 @@ function Y(e) {
         className: M.soundTable,
         children: [(0, r.jsxs)("div", {
           className: M.tableHeaders,
-          children: [(0, r.jsx)(W, {
+          children: [(0, r.jsx)(z, {
             children: G.intl.string(G.t.sMOuuS)
-          }), (0, r.jsx)(W, {
+          }), (0, r.jsx)(z, {
             children: G.intl.string(G.t.lLFvlT)
-          }), (0, r.jsx)(W, {
+          }), (0, r.jsx)(z, {
             children: G.intl.string(G.t["85qMS/"])
           })]
         }), l.map(e => (0, r.jsx)(q, {

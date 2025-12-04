@@ -115,23 +115,23 @@ function N(e) {
     selectedUserIds: V,
     addUsers: M,
     clearSelection: E
-  } = (0, h.Z)(t), T = I.requireUnusualDmActivity || I.requireCommunicationDisabled || I.requireUnusualAccountActivity || I.requireUsernameQuarantined, k = I.selectedRoleIds.size > 0, A = null != I.selectedJoinDateOption.afterDate, U = I.selectedSort === b.d$.ORDER_BY_GUILD_JOINED_AT_ASC, F = null != I.selectedAccountAgeOption.afterDate, B = I.selectedSort === b.d$.ORDER_BY_USER_ID_ASC || I.selectedSort === b.d$.ORDER_BY_USER_ID_DESC, q = null != I.selectedSourceInviteCode && "" !== I.selectedSourceInviteCode, G = null != I.selectedJoinSourceType, z = q || G, Y = (0, f.xC)(t), W = l.useMemo(() => n.filter(e => (0, f.rX)(t, Y, e)), [Y, n, t]), Q = W.length > 0, K = 0 === W.filter(e => !V.has(e)).length, J = l.useCallback(() => {
-    Q && (K ? E() : M(W))
-  }, [Q, K, E, M, W]);
+  } = (0, h.Z)(t), T = I.requireUnusualDmActivity || I.requireCommunicationDisabled || I.requireUnusualAccountActivity || I.requireUsernameQuarantined, k = I.selectedRoleIds.size > 0, A = null != I.selectedJoinDateOption.afterDate, U = I.selectedSort === b.d$.ORDER_BY_GUILD_JOINED_AT_ASC, F = null != I.selectedAccountAgeOption.afterDate, B = I.selectedSort === b.d$.ORDER_BY_USER_ID_ASC || I.selectedSort === b.d$.ORDER_BY_USER_ID_DESC, q = null != I.selectedSourceInviteCode && "" !== I.selectedSourceInviteCode, G = null != I.selectedJoinSourceType, z = q || G, Y = (0, f.xC)(t), Q = l.useMemo(() => n.filter(e => (0, f.rX)(t, Y, e)), [Y, n, t]), W = Q.length > 0, K = 0 === Q.filter(e => !V.has(e)).length, J = l.useCallback(() => {
+    W && (K ? E() : M(Q))
+  }, [W, K, E, M, Q]);
   return (0, r.jsx)("thead", {
     children: (0, r.jsxs)("tr", {
       className: _.tableHeaderRow,
       children: [Y && (0, r.jsx)("th", {
         className: o()(_.tableHeaderCellContainer, w.xsmallCol),
         children: (0, r.jsx)(u.u, {
-          shouldShow: !Q,
+          shouldShow: !W,
           text: H.intl.string(H.t.tJEY0G),
           children: (0, r.jsx)(d.P3F, {
             onClick: J,
             className: _.tableHeaderCell,
             children: (0, r.jsx)(d.FZ5, {
               checked: K,
-              disabled: !Q
+              disabled: !W
             })
           })
         })

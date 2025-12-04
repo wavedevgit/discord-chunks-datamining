@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   s = require.n(Chunk120356),
   Chunk497598 = require("./497598.js"),
   Chunk792091 = require("./792091.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk626135 = require("./626135.js"),
   Chunk381585 = require("./381585.jsx"),
   Chunk501431 = require("./501431.js"),
@@ -83,7 +83,7 @@ let b = () => {
     className: s()(Chunk182668.container, {
       [Chunk219588.customCursors]: b
     }),
-    children: (0, Chunk54381.jsx)(Chunk481060.PhF, {
+    children: (0, Chunk54381.jsx)(Chunk199849.B6, {
       options: v.map(S),
       select: x,
       isSelected: e => e === y.value,

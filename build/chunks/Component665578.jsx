@@ -167,14 +167,14 @@ function P(e) {
         selectedPermissionCount: D
       }, n))
     })
-  }, [F, j, W, D]), q = r.useCallback(() => (0, c.ZDy)(async () => {
+  }, [F, j, W, D]), V = r.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = R.defaultMemberPermissions;
     return o.fS(t, u.BO) && (t = C.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, w(E({}, n), {
       defaultMemberPermissions: t
     }))
-  }), [R]), V = D - N._n, Y = V >= 0, J = [{
+  }), [R]), q = D - N._n, Y = q >= 0, J = [{
     buttonClick: z,
     buttonText: S.intl.string(S.t["56jRn8"]),
     noneSelectedText: S.intl.string(S.t.C0rYfq),
@@ -188,10 +188,10 @@ function P(e) {
     title: null == l ? S.intl.string(S.t.OGiMXJ) : S.intl.string(S.t.Ujbaqm)
   }];
   return (0, i.jsxs)(r.Fragment, {
-    children: [V > 0 ? (0, i.jsx)(c.Wn, {
+    children: [q > 0 ? (0, i.jsx)(c.Wn, {
       messageType: c.QYI.WARNING,
       children: S.intl.format(S.t["B/dFBH"], {
-        removeCount: V
+        removeCount: q
       })
     }) : null, L ? (0, i.jsxs)("div", {
       className: I.requiredPermissionsBanner,
@@ -205,7 +205,7 @@ function P(e) {
       }), (0, i.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
-        onClick: q,
+        onClick: V,
         text: S.intl.string(S.t["HO/oXl"])
       })]
     }) : null, J.map((e, t) => {

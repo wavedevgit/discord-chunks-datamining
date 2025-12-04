@@ -2,45 +2,46 @@
 /** chunk id: 225657, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk668339 = require("./668339.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk700582 = require("./700582.jsx"),
   Chunk987209 = require("./987209.jsx"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx");
-let c = e => {
+let u = e => {
   let {
     selectedSkuId: t,
     validateSelectedGift: n,
-    className: c,
-    searchableSelectWrapperClassName: u,
-    recipients: d
+    className: u,
+    searchableSelectWrapperClassName: d,
+    recipients: f
   } = e, {
-    giftRecipient: f,
-    setGiftRecipient: p
-  } = (0, o.wD)();
+    giftRecipient: p,
+    setGiftRecipient: _
+  } = (0, s.wD)();
   if (null == t) return null;
-  let _ = e => {
-    n(e, t), p(e)
+  let m = e => {
+    n(e, t), _(e)
   };
   return (0, r.jsx)("div", {
-    className: c,
-    children: (0, r.jsx)(i.VcW, {
-      wrapperClassName: u,
-      label: l.intl.string(l.t.xFn72s),
-      placeholder: l.intl.string(l.t.R0vK0N),
-      renderOptionPrefix: e => (null == e ? true : e.value) == null ? null : (0, r.jsx)(a.Z, {
+    className: u,
+    children: (0, r.jsx)(i.d, {
+      wrapperClassName: d,
+      label: c.intl.string(c.t.xFn72s),
+      placeholder: c.intl.string(c.t.R0vK0N),
+      renderOptionPrefix: e => (null == e ? true : e.value) == null ? null : (0, r.jsx)(o.Z, {
         user: e.value,
-        size: i.EFr.SIZE_20
+        size: a.EFr.SIZE_20
       }),
-      value: f,
-      onChange: _,
-      options: d.map(e => ({
+      value: p,
+      onChange: m,
+      options: f.map(e => ({
         value: e,
-        label: "".concat(s.ZP.getUserTag(e))
+        label: "".concat(l.ZP.getUserTag(e))
       }))
     })
   })

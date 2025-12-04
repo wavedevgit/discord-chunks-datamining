@@ -2,7 +2,7 @@
 /** chunk id: 389650, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => W
+  Z: () => K
 }), require("./953529.js"), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,6 +12,7 @@ var Chunk54381 = require("./54381.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk660216 = require("./660216.js"),
   Chunk225433 = require("./225433.jsx"),
@@ -40,7 +41,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk620842 = require("./620842.js"),
   Chunk197571 = require("./197571.js");
 
-function U(e, t, n) {
+function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,20 +50,20 @@ function U(e, t, n) {
   }) : e[t] = n, e
 }
 
-function G(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      U(e, t, n[t])
+      G(e, t, n[t])
     })
   }
   return e
 }
 
-function Z(e, t) {
+function B(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,23 +74,23 @@ function Z(e, t) {
   return n
 }
 
-function B(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
+function F(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function F(e) {
+function V(e) {
   let {
     children: t
   } = e;
-  return t([h.Q2.MESSAGE, h.Q2.NAVIGATION, h.Q2.DND, h.Q2.CHAT, h.Q2.VOICE_AND_VIDEO, h.Q2.MISCELLANEOUS])
+  return t([g.Q2.MESSAGE, g.Q2.NAVIGATION, g.Q2.DND, g.Q2.CHAT, g.Q2.VOICE_AND_VIDEO, g.Q2.MISCELLANEOUS])
 }
 
-function V() {
-  return l()((0, Chunk612226.Rv)()).filter(e => e.description !== L.intl.string(L.t.HnNtEI)).groupBy(e => e.group).value()
+function H() {
+  return l()((0, Chunk612226.Rv)()).filter(e => e.description !== j.intl.string(j.t.HnNtEI)).groupBy(e => e.group).value()
 }
-class H extends Chunk473749.PureComponent {
+class Y extends Chunk473749.PureComponent {
   renderMessage() {
     let {
       keybind: e
@@ -125,7 +126,7 @@ class H extends Chunk473749.PureComponent {
         className: Chunk894462.keybindGroupContent,
         children: [(0, Chunk54381.jsx)("div", {
           className: Chunk894462.item,
-          children: (0, Chunk54381.jsx)(Chunk481060.q4e, {
+          children: (0, Chunk54381.jsx)(Chunk199849.y6, {
             label: Chunk388032.intl.string(Chunk388032.t.UUpAD6),
             value: this.props.keybind.action,
             options: this.props.keybindActionTypes,
@@ -154,8 +155,8 @@ class H extends Chunk473749.PureComponent {
           children: (0, Chunk54381.jsx)(Chunk481060.aML, {
             "data-migration-pending": true,
             text: Chunk388032.intl.string(Chunk388032.t.uCD7qK),
-            children: e => (0, r.jsx)("div", B(G({}, e), {
-              children: (0, r.jsx)(d.rsf, {
+            children: e => (0, r.jsx)("div", F(Z({}, e), {
+              children: (0, r.jsx)(f.rsf, {
                 checked: t,
                 onChange: this.handleEnableDisable
               })
@@ -174,27 +175,27 @@ class H extends Chunk473749.PureComponent {
     }) : true
   }
   constructor(...e) {
-    super(...e), U(this, "handleActionChanged", e => {
-      f.Z.setKeybind(B(G({}, this.props.keybind), {
+    super(...e), G(this, "handleActionChanged", e => {
+      p.Z.setKeybind(F(Z({}, this.props.keybind), {
         action: e
       }))
-    }), U(this, "handleShortcutChange", e => {
-      f.Z.setKeybind(B(G({}, this.props.keybind), {
+    }), G(this, "handleShortcutChange", e => {
+      p.Z.setKeybind(F(Z({}, this.props.keybind), {
         shortcut: e
       }))
-    }), U(this, "handleDeleteKeybind", () => {
-      f.Z.deleteKeybind(this.props.keybind.id)
-    }), U(this, "handleEnableDisable", () => {
+    }), G(this, "handleDeleteKeybind", () => {
+      p.Z.deleteKeybind(this.props.keybind.id)
+    }), G(this, "handleEnableDisable", () => {
       let {
         keybind: e
       } = this.props;
-      f.Z.setKeybind(B(G({}, this.props.keybind), {
+      p.Z.setKeybind(F(Z({}, this.props.keybind), {
         enabled: !e.enabled
       }))
     })
   }
 }
-class Y extends Chunk473749.PureComponent {
+class W extends Chunk473749.PureComponent {
   componentDidMount() {
     Chunk660216.Z.enableAll(false)
   }
@@ -302,12 +303,12 @@ class Y extends Chunk473749.PureComponent {
   }
   renderKeybinds(e) {
     return e.map((t, n) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(H, {
+      children: [(0, r.jsx)(Y, {
         keybind: t,
         keybindDescriptions: this.keybindDescriptions,
         keybindActionTypes: this.keybindActionTypes,
         isUserSettingsRedesignEnabled: this.props.isUserSettingsRedesignEnabled
-      }, t.id), n !== e.length - 1 ? (0, r.jsx)(d.izJ, {}) : null]
+      }, t.id), n !== e.length - 1 ? (0, r.jsx)(f.izJ, {}) : null]
     }, t.id))
   }
   renderEmpty(e) {
@@ -330,7 +331,7 @@ class Y extends Chunk473749.PureComponent {
     let {
       enableClips: e,
       enableScreenshotKeybind: t
-    } = this.props, n = l()(this.props.keybinds).reject(e => e.managed && ![D.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, D.kg4.SAVE_CLIP, D.kg4.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === D.kg4.SAVE_CLIP || t.action === D.kg4.SAVE_SCREENSHOT)).reject(e => !t && e.action === D.kg4.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === D.kg4.SOUNDBOARD || e.action === D.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => true === e.managed ? false : 0).value(), a = V();
+    } = this.props, n = l()(this.props.keybinds).reject(e => e.managed && ![x.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, x.kg4.SAVE_CLIP, x.kg4.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === x.kg4.SAVE_CLIP || t.action === x.kg4.SAVE_SCREENSHOT)).reject(e => !t && e.action === x.kg4.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === x.kg4.SOUNDBOARD || e.action === x.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => true === e.managed ? false : 0).value(), a = H();
     return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)(Chunk273313.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.T9DA2K),
@@ -378,26 +379,26 @@ class Y extends Chunk473749.PureComponent {
               })]
             })
           })
-        }), (0, Chunk54381.jsx)(F, {
+        }), (0, Chunk54381.jsx)(V, {
           children: e => (0, r.jsx)(r.Fragment, {
             children: e.map((e, t) => {
-              let n = (0, h.UD)(e),
-                o = (0, h.U6)(e),
+              let n = (0, g.UD)(e),
+                o = (0, g.U6)(e),
                 s = a[e];
-              return (0, r.jsx)(d.C3N, {
+              return (0, r.jsx)(f.C3N, {
                 label: n,
                 description: o,
                 children: (0, r.jsx)("div", {
-                  className: j.defaultKeybindGroup,
+                  className: M.defaultKeybindGroup,
                   children: s.map((e, t) => (0, r.jsxs)(i.Fragment, {
-                    children: [0 !== t && (0, r.jsx)(d.izJ, {}), (0, r.jsxs)("div", {
-                      className: j.defaultKeybind,
-                      children: [(0, r.jsx)(d.Text, {
+                    children: [0 !== t && (0, r.jsx)(f.izJ, {}), (0, r.jsxs)("div", {
+                      className: M.defaultKeybind,
+                      children: [(0, r.jsx)(f.Text, {
                         variant: "text-md/normal",
                         children: e.description
                       }), (0, r.jsx)("div", {
-                        className: j.defaultKeybindShortcutGroup,
-                        children: e.binds.map(e => (0, r.jsx)(d.M2$, {
+                        className: M.defaultKeybindShortcutGroup,
+                        children: e.binds.map(e => (0, r.jsx)(f.M2$, {
                           shortcut: e
                         }, e))
                       })]
@@ -412,20 +413,20 @@ class Y extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), U(this, "handleAddKeybind", () => {
-      f.Z.addKeybind()
+    super(...e), G(this, "handleAddKeybind", () => {
+      p.Z.addKeybind()
     })
   }
 }
 
-function W() {
+function K() {
   let e = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getState()),
     t = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk74299.Z)(Chunk131951.Z)),
     n = (0, Chunk442837.e7)([Chunk509140.Z], () => Chunk509140.Z.isSupported),
     i = (0, Chunk924557.w9)(),
     a = (0, Chunk924557.PP)(),
     o = (0, Chunk526665.wy)("UserSettingsKeybindsConnected");
-  return (0, Chunk54381.jsx)(Y, {
+  return (0, Chunk54381.jsx)(W, {
     keybinds: module,
     canGoLive: exports,
     overlaySupported: require,

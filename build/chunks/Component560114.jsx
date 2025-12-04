@@ -610,11 +610,11 @@ let ec = Chunk473749.forwardRef(function(e, t) {
     analyticsLocation: S
   } = e, {
     analyticsLocations: b
-  } = (0, _.ZP)(E.Z.INSTANT_INVITE_MODAL), N = (0, v.e7)([k.Z, j.Z, V.ZP], () => {
+  } = (0, _.ZP)(E.Z.INSTANT_INVITE_MODAL), N = (0, v.e7)([k.Z, j.Z, O.ZP], () => {
     if (null != r) return r;
     let e = k.Z.getChannelId(),
       t = null == e || (0, X.AB)(e) ? true : j.Z.getChannel(e);
-    return (null == t ? true : t.isThread()) && (t = j.Z.getChannel(t.parent_id)), null != t ? t : V.ZP.getDefaultChannel(a.id, true, $.Plq.CREATE_INSTANT_INVITE)
+    return (null == t ? true : t.isThread()) && (t = j.Z.getChannel(t.parent_id)), null != t ? t : O.ZP.getDefaultChannel(a.id, true, $.Plq.CREATE_INSTANT_INVITE)
   }, [r, a.id]), M = null;
   null != d ? M = J.Iq.STREAM : null != c && (M = J.Iq.EMBEDDED_APPLICATION);
   let Z = null != r ? r.getGuildId() : null != a ? a.id : null,
@@ -626,15 +626,15 @@ let ec = Chunk473749.forwardRef(function(e, t) {
       guildId: Z,
       location: "InstantInviteModalConnected"
     }),
-    F = (0, v.e7)([O.Z], () => {
+    F = (0, v.e7)([V.Z], () => {
       let e = null != N ? N.id : null;
-      return null == e ? null : O.Z.getInvite(e, {
+      return null == e ? null : V.Z.getInvite(e, {
         targetType: M,
         targetUserId: d,
         targetApplicationId: c
       })
     }, [N, M, d, c]),
-    [q, z, K, Y] = (0, v.Wu)([R.Z, L.ZP], () => [R.Z.getInviteSuggestionRows(), R.Z.getTotalSuggestionsCount() >= 1, R.Z.getInitialCounts(), null != r && null != N ? L.ZP.getVoiceStatesForChannel(N) : null], [N, r]),
+    [q, z, W, Y] = (0, v.Wu)([R.Z, L.ZP], () => [R.Z.getInviteSuggestionRows(), R.Z.getTotalSuggestionsCount() >= 1, R.Z.getInitialCounts(), null != r && null != N ? L.ZP.getVoiceStatesForChannel(N) : null], [N, r]),
     Q = s.useMemo(() => {
       let e = null != N ? N.id : null;
       return null != Z ? w.ZP.getProps(Z, e) : true
@@ -715,7 +715,7 @@ let ec = Chunk473749.forwardRef(function(e, t) {
       } = eE;
       e === J.RV.SETTINGS && null != t ? eT(t) : I()
     }, [eT, eE, I]),
-    eV = s.useCallback(() => {
+    eO = s.useCallback(() => {
       let e = null == N ? true : N.id;
       0 === eP && 0 === eA && !eM && ex ? eC({
         networkError: true,
@@ -738,17 +738,17 @@ let ec = Chunk473749.forwardRef(function(e, t) {
         savedMaxAge: er.value
       })
     }, [ex, ee, N, o, null == eg ? true : eg.id, M, d, eA, eP, eM, eC, eZ, ew]),
-    eO = (0, y.Z)(N),
+    eV = (0, y.Z)(N),
     eR = (0, y.Z)((0, h.yE)(ew, g.$.IS_APPLICATION_BYPASS)),
-    eU = null != eO && eO !== N,
+    eU = null != eV && eV !== N,
     eG = null != eR && eR !== (0, h.yE)(ew, g.$.IS_APPLICATION_BYPASS);
   s.useEffect(() => {
-    !ex && (eU || eG) && eV()
-  }, [eV, eU, eG, ex]);
+    !ex && (eU || eG) && eO()
+  }, [eO, eU, eG, ex]);
   let {
     canCreateApplicationBypassInvites: ek,
     isManualApprovalGuild: eD
-  } = (0, W.R)(a);
+  } = (0, K.R)(a);
   return (0, l.jsx)(_.Gt, {
     value: b,
     children: (0, l.jsx)(eu, {
@@ -766,7 +766,7 @@ let ec = Chunk473749.forwardRef(function(e, t) {
       rows: q,
       sections: ey,
       showFriends: z,
-      initialCounts: K,
+      initialCounts: W,
       code: eh,
       source: o,
       analyticsLocations: b,
@@ -779,7 +779,7 @@ let ec = Chunk473749.forwardRef(function(e, t) {
       modalState: eE,
       setModalState: eC,
       changePage: eT,
-      onGenerateNewLink: eV,
+      onGenerateNewLink: eO,
       handleDone: ej,
       isApplicationBypassToggleEnabled: ek && !et
     })

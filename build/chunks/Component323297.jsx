@@ -38,7 +38,7 @@ function v(e) {
   return e
 }
 
-function h(e, n) {
+function j(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,13 +51,13 @@ function h(e, n) {
   }), e
 }
 
-function j(e) {
+function h(e) {
   let {
     step: n,
     setFooterNode: t
   } = (0, g.JL)(), a = (0, d.V)("GameServerSetupModal"), {
     title: s,
-    subtitle: j
+    subtitle: h
   } = function(e) {
     switch (e) {
       case m.EK.SELECT_GAME:
@@ -70,11 +70,11 @@ function j(e) {
         }
     }
   }(n);
-  return (0, r.jsxs)(i.IX, h(v({}, e), {
+  return (0, r.jsxs)(i.IX, j(v({}, e), {
     size: "lg",
     children: [(0, r.jsx)(i.xBx, {
       title: s,
-      subtitle: j
+      subtitle: h
     }), a && (0, r.jsx)("div", {
       className: p.degradedWarningContainer,
       children: (0, r.jsx)(o.Z, {
@@ -114,8 +114,8 @@ function b(e) {
   } = (0, a.ZP)();
   return (0, s.lY)(e.guildId, n, e.analyticsLocation), (0, r.jsx)(a.Gt, {
     value: n,
-    children: (0, r.jsx)(g.BT, h(v({}, e), {
-      children: (0, r.jsx)(j, v({}, e))
+    children: (0, r.jsx)(g.BT, j(v({}, e), {
+      children: (0, r.jsx)(h, v({}, e))
     }))
   })
 }

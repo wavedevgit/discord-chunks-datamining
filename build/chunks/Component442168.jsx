@@ -62,7 +62,7 @@ function y(e) {
   i.useEffect(() => () => {
     (0, d.Gh)(C)
   }, [C]);
-  let x = e => {
+  let j = e => {
       if (n !== s.P.NO_POPOUT) return v;
       let t = null == O ? true : O.getBoundingClientRect();
       if (P.current = t, e.timestamp !== w || null == t) return v;
@@ -77,10 +77,10 @@ function y(e) {
         width: 268
       }
     },
-    j = (0, i.useRef)(null),
+    x = (0, i.useRef)(null),
     Z = (0, c.Yzy)(I, {
       keys: e => e.timestamp,
-      ref: j,
+      ref: x,
       from: {
         opacity: .2
       },
@@ -97,7 +97,7 @@ function y(e) {
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, y.enabled ? x(e) : (() => {
+      }, y.enabled ? j(e) : (() => {
         var e;
         if (n !== s.P.NO_POPOUT) return v;
         let t = null == (e = S.current) ? true : e.getBoundingClientRect();
@@ -111,7 +111,7 @@ function y(e) {
       enter: e => [g({
         opacity: 1,
         visibility: "visible"
-      }, x(e))],
+      }, j(e))],
       leave: g({
         opacity: 0
       }, !y.enabled && g({
@@ -128,7 +128,7 @@ function y(e) {
         null != t.item && null != I.find(e => e.timestamp === t.item.timestamp) && (0, d.Gh)(C, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, l.useChain)([j, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
+  return (0, l.useChain)([x, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: _.hidden,
       ref: S

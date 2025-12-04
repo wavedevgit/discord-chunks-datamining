@@ -61,7 +61,7 @@ let P = {
     x: 0,
     y: 0
   },
-  x = (0, Chunk392711.debounce)((e, t, n) => {
+  j = (0, Chunk392711.debounce)((e, t, n) => {
     let r = null,
       i = null;
     if (null != n && (0, m.DB)(n)) {
@@ -78,7 +78,7 @@ let P = {
     })
   }, 2e3);
 
-function j(e, t, n) {
+function x(e, t, n) {
   return Math.min(Math.max(t, e), n)
 }
 let Z = Chunk473749.memo(function(e) {
@@ -137,18 +137,18 @@ let Z = Chunk473749.memo(function(e) {
       l = r * (n - 1) / 2,
       a = i * (n - 1) / 2;
     return {
-      x: j(e.x, -l, l),
-      y: j(e.y, -a, a)
+      x: x(e.x, -l, l),
+      y: x(e.y, -a, a)
     }
   }, [$]), eO = i.useCallback((e, t, r) => {
-    let i = j(e, n, l);
+    let i = x(e, n, l);
     if (null == e_.current || null == t || i === $) return;
     eu(true);
     let a = i / $;
     q(e => eS({
       x: (e.x - t.x) * a + t.x,
       y: (e.y - t.y) * a + t.y
-    }, i)), ee(i), x(i, r, b), em.current.start(2e3, () => {
+    }, i)), ee(i), j(i, r, b), em.current.start(2e3, () => {
       eu(false)
     })
   }, [eS, l, n, b, $]), eC = i.useCallback(e => {
@@ -179,9 +179,9 @@ let Z = Chunk473749.memo(function(e) {
       } = F;
       (Math.sqrt((r - t) ** 2 + (i - n) ** 2) > .01 || Date.now() - W >= 500) && (e.preventDefault(), e.stopPropagation())
     }
-  }, [eh, U, W, F]), ex = i.useCallback(() => {
+  }, [eh, U, W, F]), ej = i.useCallback(() => {
     L(false), Q(null), G(null)
-  }, []), ej = i.useCallback(e => {
+  }, []), ex = i.useCallback(e => {
     t && (en(true), eO($ - e.deltaY / 100, ey(e), "wheel"), N(), ed.current.start(100, () => {
       en(false)
     }))
@@ -289,8 +289,8 @@ let Z = Chunk473749.memo(function(e) {
         i = .5 - B.x / (e * $),
         l = .5 - B.y / (t * $);
       return {
-        "--custom-zoom-indicator-left": "".concat(100 * j(i - n / 2, 0, 1 - n), "%"),
-        "--custom-zoom-indicator-top": "".concat(100 * j(l - r / 2, 0, 1 - r), "%"),
+        "--custom-zoom-indicator-left": "".concat(100 * x(i - n / 2, 0, 1 - n), "%"),
+        "--custom-zoom-indicator-top": "".concat(100 * x(l - r / 2, 0, 1 - r), "%"),
         "--custom-zoom-indicator-width": "".concat(100 * n, "%"),
         "--custom-zoom-indicator-height": "".concat(100 * r, "%"),
         "--custom-zoom-indicator-transition": k || X || et || er ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
@@ -305,8 +305,8 @@ let Z = Chunk473749.memo(function(e) {
     onMouseDown: eC,
     onMouseMove: ew,
     onMouseUp: eI,
-    onMouseLeave: ex,
-    onWheel: ej,
+    onMouseLeave: ej,
+    onWheel: ex,
     children: [(0, r.jsx)(d.P3F, {
       onClick: eP,
       children: null != v && (0, r.jsx)("div", {

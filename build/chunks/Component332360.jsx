@@ -2,12 +2,13 @@
 /** chunk id: 332360, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  k: () => E
+  k: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk985002 = require("./985002.js"),
   Chunk841409 = require("./841409.js"),
@@ -18,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk744038 = require("./744038.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk84989 = require("./84989.js");
-let g = () => {
+let E = () => {
     let e = (0, Chunk631885.ZM)(),
       t = (0, Chunk780985.cz)(),
       {
@@ -27,24 +28,24 @@ let g = () => {
       a = e => {
         n(e)
       },
-      c = module.map(e => ({
+      u = module.map(e => ({
         label: e,
         value: e
       })),
-      p = Chunk473749.useCallback(e => (0, r.jsx)(f.I, {
+      _ = Chunk473749.useCallback(e => (0, r.jsx)(p.I, {
         userId: e.value,
-        avatarSize: s.EFr.SIZE_24,
+        avatarSize: l.EFr.SIZE_24,
         hideUserTag: true
       }), []);
     return 0 === module.length ? null : (0, Chunk54381.jsx)("div", {
       className: o()(Chunk84989.teenSelector, {
         [Chunk84989.grow]: module.length > 1
       }),
-      children: module.length > 1 ? (0, Chunk54381.jsx)(Chunk481060.PhF, {
+      children: module.length > 1 ? (0, Chunk54381.jsx)(Chunk199849.B6, {
         renderOptionLabel: Chunk292352,
         renderOptionValue: e => {
           let [t] = e;
-          return p(t)
+          return _(t)
         },
         serialize: e => e,
         select: Chunk120356,
@@ -57,7 +58,7 @@ let g = () => {
       })
     })
   },
-  E = () => {
+  b = () => {
     let {
       selectedTab: e,
       handleTabChange: t
@@ -94,7 +95,7 @@ let g = () => {
             color: "header-primary",
             children: Chunk388032.intl.string(module === Chunk292352.dG.CONTENT_AND_SOCIAL ? Chunk388032.t["+o1pDZ"] : Chunk388032.t.OAuOHD)
           })]
-        }), (0, Chunk54381.jsx)(g, {})]
+        }), (0, Chunk54381.jsx)(E, {})]
       })]
     })
   }

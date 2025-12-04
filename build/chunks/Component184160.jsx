@@ -27,14 +27,14 @@ function h(e) {
     startedPaymentFlowWithPaymentSourcesRef: b
   } = (0, c.JL)(), {
     isGift: g
-  } = (0, u.wD)(), v = null != l ? (0, s.Af)(l) : null, S = null != v ? (0, s.MF)(v.planId) : null, x = null != v ? (0, s.Rd)(v.planId) : null, y = (0, p.Kp)({
+  } = (0, u.wD)(), v = null != l ? (0, s.Af)(l) : null, S = null != v ? (0, s.MF)(v.planId) : null, y = null != v ? (0, s.Rd)(v.planId) : null, x = (0, p.Kp)({
     isTrial: false,
     isGift: g,
     selectedSkuId: h,
     startedPaymentFlowWithPaymentSources: b.current
   });
-  return a()(null != x, "Expected premium type"), (0, r.jsx)(o.Z, {
-    premiumType: x,
+  return a()(null != y, "Expected premium type"), (0, r.jsx)(o.Z, {
+    premiumType: y,
     titleText: m.intl.string(m.t["7VcWW0"]),
     subtitleText: m.intl.format(m.t.Qk34Ik, {
       subscriptionName: S
@@ -46,7 +46,7 @@ function h(e) {
         variant: "primary",
         text: m.intl.string(m.t["3PatSz"]),
         onClick: () => {
-          y ? (f((0, p.nA)(h, l)), t(d.h8.REVIEW)) : t(d.h8.PLAN_SELECT)
+          x ? (f((0, p.nA)(h, l)), t(d.h8.REVIEW)) : t(d.h8.PLAN_SELECT)
         }
       }), (0, r.jsx)(i.Button, {
         variant: "secondary",

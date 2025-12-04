@@ -36,7 +36,6 @@ let h = () => {
       })
     }, [f, E]);
   return (0, Chunk54381.jsxs)(Chunk590149.Z, {
-    className: Chunk181174.accordion,
     icon: (0, Chunk54381.jsx)(Chunk481060.ewm, {
       size: "md"
     }),

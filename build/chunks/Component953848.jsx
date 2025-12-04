@@ -1,14 +1,15 @@
 /** Chunk was on 82077 **/
 /** chunk id: 953848, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => S,
-  g: () => k
+  default: () => C,
+  g: () => S
 }), require("./388685.js"), require("./539854.js"), require("./953529.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk990547 = require("./990547.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk668339 = require("./668339.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
   Chunk835473 = require("./835473.js"),
@@ -24,33 +25,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk90149 = require("./90149.js");
-let y = Chunk473749.memo(function(e) {
+let w = Chunk473749.memo(function(e) {
     let {
       game: t
-    } = e, n = (0, s.e7)([u.Z], () => {
+    } = e, n = (0, s.e7)([c.Z], () => {
       var e;
-      return null != (e = u.Z.getApplicationByName(t.name)) ? e : u.Z.getApplication(t.id)
-    }, [t.id, t.name]), a = (0, s.e7)([d.ZP], () => {
+      return null != (e = c.Z.getApplicationByName(t.name)) ? e : c.Z.getApplication(t.id)
+    }, [t.id, t.name]), a = (0, s.e7)([m.ZP], () => {
       var e;
-      let n = d.ZP.getVisibleGame(),
-        l = null != n ? d.ZP.getGameOrTransformedSubgameForPID(n.pid) : null;
-      return (null == l || null == (e = l.name) ? true : e.toLowerCase()) === t.name.toLowerCase() ? l : d.ZP.getGameForName(t.name)
-    }, [t]), [i] = (0, c.Z)([function() {
+      let n = m.ZP.getVisibleGame(),
+        l = null != n ? m.ZP.getGameOrTransformedSubgameForPID(n.pid) : null;
+      return (null == l || null == (e = l.name) ? true : e.toLowerCase()) === t.name.toLowerCase() ? l : m.ZP.getGameForName(t.name)
+    }, [t]), [i] = (0, d.Z)([function() {
       if (null != t.id) return t.id;
       if (null != t.name) {
-        let e = u.Z.getApplicationByName(t.name);
+        let e = c.Z.getApplicationByName(t.name);
         if (null != e) return e.id
       }
       if (null != a) return a.id
     }()]), r = null != i ? i : n;
-    return (0, l.jsx)(m.Z, {
+    return (0, l.jsx)(p.Z, {
       pid: null == a ? true : a.pid,
       game: null != r ? r : t,
-      size: m.A.XSMALL,
-      className: O.gameIcon
+      size: p.A.XSMALL,
+      className: y.gameIcon
     })
   }),
-  w = {
+  k = {
     searchType: Chunk886118.S.FUZZY,
     sortType: Chunk886118.E.JARO_WINKLER,
     searchStringGenerator: e => {
@@ -60,7 +61,7 @@ let y = Chunk473749.memo(function(e) {
       } = e, l = [t.name, n, t.id.toString()];
       if (t.aliases.length > 0 && l.push(...t.aliases), null != t.description && l.push(t.description), null != t.linkedApplications)
         for (let e of t.linkedApplications) {
-          let t = u.Z.getApplication(e.application_id);
+          let t = c.Z.getApplication(e.application_id);
           null != t && l.push(t.name)
         }
       return l
@@ -68,17 +69,17 @@ let y = Chunk473749.memo(function(e) {
     throttleMs: 100,
     maxSearchResults: 20
   },
-  k = Chunk473749.memo(function(e) {
+  S = Chunk473749.memo(function(e) {
     var t;
     let {
       games: n,
       selectedGame: i,
       onGameSelected: r,
       onGameSearchQueryChange: s,
-      placeholder: u
-    } = e, [c, d] = a.useState(""), m = a.useCallback(e => {
-      d(e), null == s || s(e)
-    }, [s]), p = a.useMemo(() => {
+      placeholder: c
+    } = e, [d, m] = a.useState(""), p = a.useCallback(e => {
+      m(e), null == s || s(e)
+    }, [s]), g = a.useMemo(() => {
       let e = [];
       for (let t of (null != i && e.push({
           value: i.id,
@@ -90,75 +91,75 @@ let y = Chunk473749.memo(function(e) {
         game: t
       });
       return e
-    }, [n, i]), g = a.useMemo(() => p.reduce((e, t) => (null != e[t.value] || (e[t.value] = t), e), {}), [p]), [v, b] = a.useState(p), f = a.useCallback(e => {
-      b(e)
-    }, []), x = a.useCallback(e => {
+    }, [n, i]), h = a.useMemo(() => g.reduce((e, t) => (null != e[t.value] || (e[t.value] = t), e), {}), [g]), [b, f] = a.useState(g), x = a.useCallback(e => {
+      f(e)
+    }, []), j = a.useCallback(e => {
       if (null == e) return null;
-      let t = g[e.value];
+      let t = h[e.value];
       if (null == t) return null;
       let n = t.game;
-      return n.name !== (null == i ? true : i.name) && n.id === (null == i || i.id), (0, l.jsx)(y, {
+      return n.name !== (null == i ? true : i.name) && n.id === (null == i || i.id), (0, l.jsx)(w, {
         game: t.game
       })
-    }, [g, i]), j = a.useCallback(e => (0, l.jsx)(o.Text, {
+    }, [h, i]), _ = a.useCallback(e => (0, l.jsx)(u.Text, {
       variant: "text-sm/normal",
       children: e.label
-    }), []), _ = a.useCallback(e => {
+    }), []), O = a.useCallback(e => {
       var t;
-      let n = g[e];
+      let n = h[e];
       if (null == n) return;
       let l = n.game;
-      r(null != l ? l : null), m(null != (t = null == l ? true : l.name) ? t : "")
-    }, [g, r, m]), k = a.useCallback(e => {
-      m(e), null != i && e !== i.name && r(null)
-    }, [i, r, m]), S = a.useCallback(e => {
-      0 === v.length && ("ArrowDown" === e.key || "ArrowUp" === e.key) && e.preventDefault()
-    }, [v]);
-    return (0, h.BO)(c, p, f, w), (0, l.jsx)(o.VcW, {
-      className: O.searchNoToggle,
-      options: v,
+      r(null != l ? l : null), p(null != (t = null == l ? true : l.name) ? t : "")
+    }, [h, r, p]), S = a.useCallback(e => {
+      p(e), null != i && e !== i.name && r(null)
+    }, [i, r, p]), C = a.useCallback(e => {
+      0 === b.length && ("ArrowDown" === e.key || "ArrowUp" === e.key) && e.preventDefault()
+    }, [b]);
+    return (0, v.BO)(d, g, x, k), (0, l.jsx)(o.d, {
+      className: y.searchNoToggle,
+      options: b,
       value: null != (t = null == i ? true : i.id) ? t : null,
-      onChange: _,
-      onSearchChange: k,
-      placeholder: u,
+      onChange: O,
+      onSearchChange: S,
+      placeholder: c,
       clearable: true,
       filter: false,
       maxVisibleItems: 5,
       clearQueryOnSelect: false,
-      onKeyDown: S,
-      renderOptionPrefix: x,
-      renderOptionLabel: j
+      onKeyDown: C,
+      renderOptionPrefix: j,
+      renderOptionLabel: _
     })
   });
 
-function S(e) {
+function C(e) {
   var t, n;
   let {
-    onClose: c,
+    onClose: o,
     transitionState: d,
     onSubmitted: m,
-    detectedActivity: g,
+    detectedActivity: p,
     defaultStep: h = "issue_selection"
-  } = e, [y, w] = a.useState(h), [S, C] = a.useState(null), [P, Z] = a.useState(""), [A, N] = a.useState(null), [D, G] = a.useState(""), T = a.useMemo(() => (0, p.fP)(), []), I = (0, s.e7)([v.Z], () => v.Z.games), E = null != g, L = (0, s.e7)([u.Z], () => (null == g ? true : g.application_id) != null ? u.Z.getApplication(g.application_id) : null), M = () => {
+  } = e, [v, w] = a.useState(h), [k, C] = a.useState(null), [P, Z] = a.useState(""), [A, N] = a.useState(null), [D, G] = a.useState(""), T = a.useMemo(() => (0, g.fP)(), []), I = (0, s.e7)([b.Z], () => b.Z.games), E = null != p, L = (0, s.e7)([c.Z], () => (null == p ? true : p.application_id) != null ? c.Z.getApplication(p.application_id) : null), M = () => {
     var e, t;
-    (0, p.MH)({
+    (0, g.MH)({
       viewId: T,
-      applicationId: null != (e = null == g ? true : g.application_id) ? e : "",
+      applicationId: null != (e = null == p ? true : p.application_id) ? e : "",
       suggestedGameName: "" !== P.trim() ? P.trim() : true,
       suggestedGameApplicationId: null != (t = null == A ? true : A.id) ? t : null,
       feedback: "" !== D.trim() ? D.trim() : true,
       submitted: true
-    }), null == m || m(null != A ? A : null), c()
+    }), null == m || m(null != A ? A : null), o()
   }, F = (() => {
-    switch (y) {
+    switch (v) {
       case "issue_selection":
         return {
-          title: _.intl.string(_.t["6tnjbD"]), actions: []
+          title: O.intl.string(O.t["6tnjbD"]), actions: []
         };
       case "game_search":
         return {
-          title: E ? _.intl.string(_.t.TZgkxY) : _.intl.string(_.t["+ie+wX"]), actions: [{
-            text: _.intl.string(_.t.geKm7t),
+          title: E ? O.intl.string(O.t.TZgkxY) : O.intl.string(O.t["+ie+wX"]), actions: [{
+            text: O.intl.string(O.t.geKm7t),
             onClick: M,
             variant: "primary",
             disabled: "" === P.trim()
@@ -166,8 +167,8 @@ function S(e) {
         };
       case "other_feedback":
         return {
-          title: _.intl.string(_.t.tdDpJj), actions: [{
-            text: _.intl.string(_.t.geKm7t),
+          title: O.intl.string(O.t.tdDpJj), actions: [{
+            text: O.intl.string(O.t.geKm7t),
             onClick: M,
             variant: "primary",
             disabled: "" === D.trim()
@@ -198,45 +199,45 @@ function S(e) {
     return e
   }({}, F), n = n = {
     transitionState: d,
-    onClose: c,
+    onClose: o,
     trackingProps: {
       impression: {
         impressionName: i.ImpressionNames.GAME_DETECTION_REPORT_MODAL
       }
     },
     children: (() => {
-      switch (y) {
+      switch (v) {
         case "issue_selection":
           return (0, l.jsxs)("div", {
-            className: O.content,
-            children: [(0, l.jsx)(o.Text, {
+            className: y.content,
+            children: [(0, l.jsx)(u.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
-              children: _.intl.string(_.t.IQHicr)
+              children: O.intl.string(O.t.IQHicr)
             }), (0, l.jsx)("div", {
-              className: O.radioGroup,
-              children: (0, l.jsx)(o.FXm, {
-                value: null != S ? S : true,
+              className: y.radioGroup,
+              children: (0, l.jsx)(u.FXm, {
+                value: null != k ? k : true,
                 onChange: e => {
                   var t;
-                  C(e), b.default.track(j.rMx.GAME_DETECTION_FEEDBACK_MODAL, {
+                  C(e), f.default.track(_.rMx.GAME_DETECTION_FEEDBACK_MODAL, {
                     selected_option: e,
-                    application_id: null != (t = null == g ? true : g.application_id) ? t : null
+                    application_id: null != (t = null == p ? true : p.application_id) ? t : null
                   }), setTimeout(() => {
                     "game_not_detected" === e || "wrong_game_shown" === e ? w("game_search") : w("other_feedback")
                   }, 100)
                 },
                 options: E ? [{
-                  name: _.intl.string(_.t.TZgkxY),
+                  name: O.intl.string(O.t.TZgkxY),
                   value: "wrong_game_shown"
                 }, {
-                  name: _.intl.string(_.t.tdDpJj),
+                  name: O.intl.string(O.t.tdDpJj),
                   value: "other_feedback"
                 }] : [{
-                  name: _.intl.string(_.t["+ie+wX"]),
+                  name: O.intl.string(O.t["+ie+wX"]),
                   value: "game_not_detected"
                 }, {
-                  name: _.intl.string(_.t.tdDpJj),
+                  name: O.intl.string(O.t.tdDpJj),
                   value: "other_feedback"
                 }]
               })
@@ -244,26 +245,26 @@ function S(e) {
           });
         case "game_search":
           return (0, l.jsxs)("div", {
-            className: O.content,
-            children: [(0, l.jsx)(o.Text, {
+            className: y.content,
+            children: [(0, l.jsx)(u.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
-              children: E ? _.intl.string(_.t["79o/iq"]) : _.intl.string(_.t["r/2pZy"])
+              children: E ? O.intl.string(O.t["79o/iq"]) : O.intl.string(O.t["r/2pZy"])
             }), E && (0, l.jsxs)(l.Fragment, {
               children: [(0, l.jsxs)("div", {
-                className: O.detectedGameFrame,
+                className: y.detectedGameFrame,
                 children: [(() => {
                   var e, t, n;
-                  let a = f.ZP.getApplicationIconURL({
-                    id: null != (e = g.application_id) ? e : "",
+                  let a = x.ZP.getApplicationIconURL({
+                    id: null != (e = p.application_id) ? e : "",
                     icon: null != (t = null == L ? true : L.icon) ? t : null
                   });
                   return null != a ? (0, l.jsx)("img", {
                     src: a,
-                    alt: null != g.name && "" !== g.name ? g.name : null != (n = null == L ? true : L.name) ? n : "",
-                    className: O.detectedGameIcon
+                    alt: null != p.name && "" !== p.name ? p.name : null != (n = null == L ? true : L.name) ? n : "",
+                    className: y.detectedGameIcon
                   }) : (0, l.jsx)("div", {
-                    className: "".concat(O.detectedGameIcon, " ").concat(O.detectedGameIconPlaceholder),
+                    className: "".concat(y.detectedGameIcon, " ").concat(y.detectedGameIconPlaceholder),
                     children: (0, l.jsx)("div", {
                       style: {
                         fontSize: "28px",
@@ -274,31 +275,31 @@ function S(e) {
                       children: "?"
                     })
                   })
-                })(), (0, l.jsx)(o.Text, {
+                })(), (0, l.jsx)(u.Text, {
                   variant: "text-md/semibold",
                   color: "header-primary",
-                  children: null != g.name && "" !== g.name ? g.name : null == L ? true : L.name
+                  children: null != p.name && "" !== p.name ? p.name : null == L ? true : L.name
                 })]
-              }), (0, l.jsx)(x.Z, {})]
-            }), (0, l.jsx)(k, {
+              }), (0, l.jsx)(j.Z, {})]
+            }), (0, l.jsx)(S, {
               games: I,
               selectedGame: A,
               onGameSelected: N,
               onGameSearchQueryChange: Z,
-              placeholder: E ? _.intl.string(_.t["/SGi7v"]) : _.intl.string(_.t.ss9Zwa)
+              placeholder: E ? O.intl.string(O.t["/SGi7v"]) : O.intl.string(O.t.ss9Zwa)
             })]
           });
         case "other_feedback":
           return (0, l.jsxs)("div", {
-            className: O.content,
-            children: [(0, l.jsx)(o.Text, {
+            className: y.content,
+            children: [(0, l.jsx)(u.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
-              children: _.intl.string(_.t.IblYEw)
-            }), (0, l.jsx)(o.Kx8, {
+              children: O.intl.string(O.t.IblYEw)
+            }), (0, l.jsx)(u.Kx8, {
               value: D,
               onChange: G,
-              placeholder: _.intl.string(_.t.aiPKV4),
+              placeholder: O.intl.string(O.t.aiPKV4),
               maxLength: 300,
               rows: 4
             })]

@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk846027 = require("./846027.js"),
   Chunk921801 = require("./921801.js"),
   Chunk131951 = require("./131951.js"),
@@ -48,7 +48,7 @@ function m() {
   }));
   return (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM,
-    children: (0, Chunk54381.jsx)(Chunk481060.q4e, {
+    children: (0, Chunk54381.jsx)(Chunk199849.y6, {
       label: Chunk388032.intl.string(Chunk388032.t.wVBHr0),
       className: Chunk197571.marginBottom20,
       value: module,

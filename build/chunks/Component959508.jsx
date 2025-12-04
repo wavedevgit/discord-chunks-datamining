@@ -55,14 +55,14 @@ function C(e) {
   }), L = (0, s.cj)([b.Z], () => {
     var e;
     return null != (e = b.Z.errors[x]) ? e : O
-  }), [k, G] = i.useState(false), [M, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, W = (0, g.kl)(n.id, Array.from(w), [l]).length - w.size, z = i.useRef(null), V = i.useRef(x);
+  }), [k, G] = i.useState(false), [M, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, z = (0, g.kl)(n.id, Array.from(w), [l]).length - w.size, W = i.useRef(null), V = i.useRef(x);
   return (i.useEffect(() => {
     V.current = x
   }), i.useLayoutEffect(() => {
     setTimeout(() => {
       if (0 === V.current && !u) {
         var e;
-        null == (e = z.current) || e.focus()
+        null == (e = W.current) || e.focus()
       }
     }, 0)
   }, [u]), k) ? (0, r.jsx)(c.tEY, {
@@ -149,7 +149,7 @@ function C(e) {
           label: _.intl.formatToPlainString(_.t.yjS3zs, {
             index: x + 1
           }),
-          inputRef: z,
+          inputRef: W,
           value: l.title,
           onChange: e => (0, h.Kk)(n, l.id, {
             title: e
@@ -194,7 +194,7 @@ function C(e) {
             }),
             disabled: !l.inOnboarding,
             label: E ? _.intl.formatToPlainString(_.t["0re8T6"], {
-              count: W
+              count: z
             }) : _.intl.string(_.t.Ur8Vrt)
           }) : null]
         }), (0, r.jsx)(c.P3F, {

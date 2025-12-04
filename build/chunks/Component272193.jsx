@@ -1,11 +1,12 @@
 /** Chunk was on 88282 **/
 /** chunk id: 272193, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk442837 = require("./442837.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk441623 = require("./441623.js"),
@@ -13,10 +14,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk636503 = require("./636503.js"),
   Chunk451429 = require("./451429.js");
 
-function u() {
+function m() {
   let e = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getDevToolTotalFriendAnniversaries()),
     t = e => {
-      i.Z.dispatch({
+      s.Z.dispatch({
         type: "DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT",
         total: e
       })
@@ -79,7 +80,7 @@ function u() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Select number of friend anniversaries to generate"
-        }), (0, Chunk54381.jsx)(Chunk481060.q4e, {
+        }), (0, Chunk54381.jsx)(Chunk199849.y6, {
           size: "sm",
           options: [{
             label: "None",

@@ -1,5 +1,5 @@
-/** Chunk was on 38203 **/
-/** chunk id: 385888, original params: e,n,a (module,exports,require) **/
+/** Chunk was on 21784 **/
+/** chunk id: 385888, original params: e,n,i (module,exports,require) **/
 module.exports = {
   spacing: "spacing__856b5",
   largeSpacing: "largeSpacing__856b5",

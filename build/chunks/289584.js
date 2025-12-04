@@ -18,7 +18,7 @@ function g(e, t) {
     [g, m] = l.useState(false),
     [x, b] = l.useState(null),
     f = l.useMemo(() => u.Z.getStageInstanceByChannel(null == e ? true : e.id), [null == e ? true : e.id]),
-    h = (0, c.J)(e);
+    j = (0, c.J)(e);
   return {
     loading: g,
     error: x,
@@ -32,7 +32,7 @@ function g(e, t) {
         m(true), b(null), null != n && (r.Z.selectGuild(n), i.default.selectVoiceChannel(e.id));
         try {
           let n;
-          null != f ? n = await o.Ef(e, c, u) : (n = await o.HO(e, c, u, null != g && g), h && s.Kw(d.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
+          null != f ? n = await o.Ef(e, c, u) : (n = await o.HO(e, c, u, null != g && g), j && s.Kw(d.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
         } catch (e) {
           b(new a.Hx(e)), m(false)
         }

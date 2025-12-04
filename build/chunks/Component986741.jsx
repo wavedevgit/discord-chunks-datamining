@@ -1,44 +1,45 @@
 /** Chunk was on 33811 **/
 /** chunk id: 986741, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => f
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk168107 = require("./168107.jsx"),
   Chunk480916 = require("./480916.js"),
   Chunk277021 = require("./277021.js"),
   Chunk469775 = require("./469775.js");
-let d = Object.values(Chunk469775.Rp).filter(e => "number" != typeof e).map(e => ({
-  value: u.Rp[e],
-  label: u.Rp[u.Rp[e]]
+let p = Object.values(Chunk469775.Rp).filter(e => "number" != typeof e).map(e => ({
+  value: d.Rp[e],
+  label: d.Rp[d.Rp[e]]
 }));
-d.push({
+p.push({
   value: true,
   label: "undefined"
 });
-let p = function(e) {
+let f = function(e) {
   let {
     onClose: t,
     transitionState: i
-  } = e, [u, p] = n.useState(""), [f, h] = n.useState(false), [S, b] = n.useState(true), v = n.useCallback(() => {
+  } = e, [d, f] = n.useState(""), [S, b] = n.useState(false), [h, v] = n.useState(true), w = n.useCallback(() => {
     console.log("Scan complete")
-  }, []), w = async () => {
-    h(true), p("");
+  }, []), _ = async () => {
+    b(true), f("");
     try {
-      let e = await (0, c.Q)(S);
-      s.Z.showAgeVerification({
+      let e = await (0, u.Q)(h);
+      l.Z.showAgeVerification({
         webviewUrl: e.verification_webview_url,
-        onComplete: v,
+        onComplete: w,
         onClose: t,
-        entryPoint: l.cU.DEV_TOOLS_QUICK_ACTIONS
+        entryPoint: c.cU.DEV_TOOLS_QUICK_ACTIONS
       })
     } catch (e) {
-      p(e.message)
+      f(e.message)
     } finally {
-      h(false)
+      b(false)
     }
   };
   return (0, a.jsxs)(o.Modal, {
@@ -47,17 +48,17 @@ let p = function(e) {
     title: "Age Verification Test Tool",
     actions: [{
       text: "Trigger Age Verification Test",
-      onClick: w,
-      loading: f
+      onClick: _,
+      loading: S
     }],
-    children: [(0, a.jsx)(r.PhF, {
-      select: b,
-      isSelected: e => e === S,
+    children: [(0, a.jsx)(r.B6, {
+      select: v,
+      isSelected: e => e === h,
       serialize: String,
-      options: d
+      options: p
     }), (0, a.jsx)("div", {
-      children: "" !== u && (0, a.jsx)(r.pdY, {
-        error: u
+      children: "" !== d && (0, a.jsx)(s.pdY, {
+        error: d
       })
     })]
   })

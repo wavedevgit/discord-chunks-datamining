@@ -1,7 +1,7 @@
 /** Chunk was on 88282 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,6 +9,7 @@ var Chunk54381 = require("./54381.js"),
   i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
+  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk384275 = require("./384275.js"),
   Chunk407089 = require("./407089.js"),
@@ -23,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk246992 = require("./246992.js"),
   Chunk451429 = require("./451429.js"),
   Chunk441900 = require("./441900.js");
-let C = [{
+let S = [{
   label: "Unset",
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET
 }, {
@@ -37,36 +38,36 @@ let C = [{
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
 }];
 
-function S() {
+function E() {
   let e = Chunk473749.useRef(null),
     t = Chunk695346.JG.useSetting(),
     [n, r] = Chunk473749.useState(""),
     o = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
-    S = (0, Chunk835473.q)(require),
-    E = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
+    E = (0, Chunk835473.q)(require),
+    N = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
       var e, t;
-      return null != (t = null == S || null == (e = S.linkedGames) ? true : module.map(e => p.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
+      return null != (t = null == E || null == (e = E.linkedGames) ? true : module.map(e => h.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
     }),
-    N = (0, Chunk524995.F)(S, {
+    O = (0, Chunk524995.F)(E, {
       allowedFlows: [Chunk524995.r.RPC]
     }),
-    O = (0, Chunk524995.F)(S, {
+    T = (0, Chunk524995.F)(E, {
       allowedFlows: [Chunk524995.r.WEB]
     }),
-    T = (0, Chunk524995.F)(S),
+    P = (0, Chunk524995.F)(E),
     {
-      canDeauthorize: P,
-      deauthorize: I
+      canDeauthorize: I,
+      deauthorize: w
     } = function(e) {
-      let t = (0, s.e7)([b.default], () => b.default.getNewestTokenForApplication(e)),
+      let t = (0, s.e7)([v.default], () => v.default.getNewestTokenForApplication(e)),
         n = l.useCallback(() => {
-          null != t && d.Z.delete(t.id)
+          null != t && u.Z.delete(t.id)
         }, [t]);
       return {
         canDeauthorize: null != t,
         deauthorize: n
       }
-    }(null == S ? true : S.id);
+    }(null == E ? true : E.id);
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
     className: i()(Chunk451429.panel, Chunk441900.panel),
@@ -75,9 +76,9 @@ function S() {
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/normal",
         children: "Settings"
-      }), (0, Chunk54381.jsx)(Chunk481060.PhF, {
+      }), (0, Chunk54381.jsx)(Chunk199849.B6, {
         label: "Receive DMs In Game",
-        options: C,
+        options: S,
         isSelected: e => e === t,
         select: Chunk695346.JG.updateSetting,
         popoutLayerContext: Chunk246992.O$,
@@ -98,12 +99,12 @@ function S() {
         text: "Use detected game: ".concat(Chunk524437.name, " (").concat(Chunk524437.id, ")")
       }) : null, (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Application Name: ", null != S ? S.name : "N/A"]
+        children: ["Application Name: ", null != E ? E.name : "N/A"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Linked Games:", " ", E.length > 0 ? E.map(e => {
+        children: ["Linked Games:", " ", N.length > 0 ? N.map(e => {
           var t;
-          return (null == (t = (0, u.r)(S)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
+          return (null == (t = (0, m.r)(E)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
         }).join(", ") : "N/A"]
       })]
     }), (0, Chunk54381.jsxs)("div", {
@@ -112,8 +113,8 @@ function S() {
         variant: "heading-lg/normal",
         children: "Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !T.canStartAuthorization,
-        onClick: () => T.startAuthorization(),
+        disabled: !P.canStartAuthorization,
+        onClick: () => P.startAuthorization(),
         variant: "primary",
         text: "Start Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -121,18 +122,18 @@ function S() {
         color: "text-subtle",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !N.canStartAuthorization,
-        onClick: () => N.startAuthorization(),
-        variant: "secondary",
-        text: "Start In-App Authorization"
-      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         disabled: !O.canStartAuthorization,
         onClick: () => O.startAuthorization(),
         variant: "secondary",
+        text: "Start In-App Authorization"
+      }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+        disabled: !T.canStartAuthorization,
+        onClick: () => T.startAuthorization(),
+        variant: "secondary",
         text: "Start Web Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !P,
-        onClick: I,
+        disabled: !I,
+        onClick: w,
         variant: "critical-primary",
         text: "Deauthorize"
       })]

@@ -55,7 +55,7 @@ function v(e) {
     I = (0, d.np)(a.x, b),
     P = (0, d.np)(a.y, h),
     {
-      outlineColor: x
+      outlineColor: j
     } = (0, d.bg)(a.userId, y, S, E);
   g(a, e => {
       e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, o.j)(() => {
@@ -87,7 +87,7 @@ function v(e) {
           return r.particles[e.id] = o, r.lastSpawned[e.id] = Date.now(), r
         })
       })
-    }(a, I, P), (0, f.I)(v, I, P, x, p.q2), (0, f.T)(v, I, P, a.userId), g(a, e => (function(e, t, n) {
+    }(a, I, P), (0, f.I)(v, I, P, j, p.q2), (0, f.T)(v, I, P, a.userId), g(a, e => (function(e, t, n) {
       if (null == t) return;
       let r = n.size * window.devicePixelRatio,
         i = n.x - r / 2 * window.devicePixelRatio,

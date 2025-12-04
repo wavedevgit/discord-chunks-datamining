@@ -2,11 +2,12 @@
 /** chunk id: 540204, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./290780.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk668339 = require("./668339.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk430824 = require("./430824.js"),
@@ -17,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk790604 = require("./790604.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,20 +27,20 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function E(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -50,64 +51,64 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = {
+let y = {
   label: () => Chunk388032.intl.string(Chunk388032.t["32u1Dx"]),
   value: Chunk997950.Th
 };
 
-function y() {
+function O() {
   let {
     selectedGuildId: e,
     setSelectedGuildId: t
-  } = (0, Chunk997950.xu)(), n = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), p = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), {
-    hideGuildOptions: m,
-    hideGlobalOption: g
-  } = (0, Chunk816108.b)(), y = require[0];
+  } = (0, Chunk997950.xu)(), n = (0, Chunk442837.e7)([Chunk771845.ZP], () => Chunk771845.ZP.getFlattenedGuildIds()), _ = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuilds()), {
+    hideGuildOptions: h,
+    hideGlobalOption: E
+  } = (0, Chunk816108.b)(), O = require[0];
   Chunk473749.useEffect(() => {
-    g && m || (module === Chunk997950.Th && module !== y && g && exports(y), module !== Chunk997950.Th && m && exports(Chunk997950.Th))
-  }, [module, exports, g, m, y]);
-  let O = e => {
+    E && h || (module === Chunk997950.Th && module !== O && E && exports(O), module !== Chunk997950.Th && h && exports(Chunk997950.Th))
+  }, [module, exports, E, h, O]);
+  let v = e => {
       t(e)
     },
-    v = Chunk473749.useMemo(() => {
-      let e = m ? [] : require.map(e => {
-        let t = p[e];
+    S = Chunk473749.useMemo(() => {
+      let e = h ? [] : require.map(e => {
+        let t = _[e];
         return null == t ? null : {
           label: t.name,
           value: t.id
         }
       }).filter(Chunk823379.lm);
-      return g || module.unshift(E(h({}, b), {
-        label: b.label()
+      return E || module.unshift(b(g({}, y), {
+        label: y.label()
       })), module
-    }, [m, require, g, Chunk388032]),
-    S = Chunk473749.useCallback(e => {
-      let t = (null == e ? true : e.label) === b.label() && (null == e ? true : e.value) === b.value;
+    }, [h, require, E, Chunk388032]),
+    I = Chunk473749.useCallback(e => {
+      let t = (null == e ? true : e.label) === y.label() && (null == e ? true : e.value) === y.value;
       return null == e || "" === e.value || t ? (0, r.jsx)("div", {
-        className: _.clydeIconContainer,
-        children: (0, r.jsx)(o.gw7, {
+        className: m.clydeIconContainer,
+        children: (0, r.jsx)(s.gw7, {
           size: "sm",
           color: "white",
           "aria-hidden": true,
-          className: _.guildSelectOptionIcon
+          className: m.guildSelectOptionIcon
         })
-      }) : (0, r.jsx)(s.Z, {
-        className: _.guildSelectOptionIcon,
-        guild: p[e.value],
-        size: s.Z.Sizes.SMALLER,
+      }) : (0, r.jsx)(l.Z, {
+        className: m.guildSelectOptionIcon,
+        guild: _[e.value],
+        size: l.Z.Sizes.SMALLER,
         active: true
       })
     }, [Chunk388032]);
-  return (0, Chunk54381.jsx)(Chunk481060.VcW, {
+  return (0, Chunk54381.jsx)(Chunk668339.d, {
     wrapperClassName: Chunk790604.searchableSelect,
-    onChange: O,
+    onChange: v,
     value: module,
-    options: v,
-    renderOptionPrefix: S
+    options: S,
+    renderOptionPrefix: I
   })
 }

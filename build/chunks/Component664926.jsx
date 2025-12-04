@@ -15,7 +15,7 @@ var Chunk399606 = require("./399606.js"),
 function d(e) {
   let {
     friendMemberIds: l
-  } = e, n = (0, a.Wu)([s.default], () => l.slice(0, 3).map(e => s.default.getUser(e)).filter(e => null != e));
+  } = e, n = (0, i.Wu)([s.default], () => l.slice(0, 3).map(e => s.default.getUser(e)).filter(e => null != e));
   if (0 === n.length) return null;
   let d = n[0],
     o = {
@@ -35,12 +35,12 @@ function d(e) {
         },
         children: (0, t.jsx)(r.Z, {
           user: e,
-          size: i.EFr.SIZE_16
+          size: a.EFr.SIZE_16
         })
       }, e.id))
-    }), (0, t.jsx)(i.Text, {
-      variant: "text-sm/normal",
-      color: "text-default",
+    }), (0, t.jsx)(a.Text, {
+      variant: "text-sm/medium",
+      color: "text-subtle",
       children: m
     })]
   })

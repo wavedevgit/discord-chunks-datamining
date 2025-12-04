@@ -218,7 +218,7 @@ function ey(e) {
       themePadding: 4
     }), (0, r.jsx)(e_, {
       className: Q.profileAvatar,
-      src: n.getAvatarURL(true, (0, p.pxk)(p.EFr.SIZE_56), !s),
+      src: n.getAvatarURL(true, (0, p.dcp)(p.EFr.SIZE_56), !s),
       size: p.EFr.SIZE_56,
       "aria-label": n.username
     }), (0, r.jsxs)("div", {
@@ -235,7 +235,7 @@ function ey(e) {
     className: Q.profileCardTier1,
     children: [(0, r.jsx)(e_, {
       className: Q.profileAvatarTier1,
-      src: n.getAvatarURL(true, (0, p.pxk)(p.EFr.SIZE_56), !s),
+      src: n.getAvatarURL(true, (0, p.dcp)(p.EFr.SIZE_56), !s),
       size: p.EFr.SIZE_56,
       "aria-label": n.username
     }), (0, r.jsxs)("div", {

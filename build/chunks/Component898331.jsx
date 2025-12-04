@@ -15,7 +15,7 @@ function c(e) {
   let {
     className: t,
     size: n = s.m
-  } = e, a = (0, i.pxk)(n);
+  } = e, a = (0, i.dcp)(n);
   return (0, r.jsx)("svg", {
     width: a,
     height: a,

@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk451478 = require("./451478.js"),
   Chunk5192 = require("./5192.js"),
   Chunk44136 = require("./44136.js"),
-  x = (require("./351483.jsx"), require("./249212.jsx")),
+  j = (require("./351483.jsx"), require("./249212.jsx")),
   Chunk853476 = require("./853476.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
@@ -52,7 +52,7 @@ function M(e) {
         color: s.TVs.colors.STATUS_WARNING_BACKGROUND
       })
     })
-  }) : (0, r.jsx)(j.Z, {
+  }) : (0, r.jsx)(x.Z, {
     userId: n.user.id
   })
 }
@@ -65,7 +65,7 @@ function k(e) {
     width: c,
     selected: s,
     popoutType: y,
-    fit: j,
+    fit: x,
     onVideoResize: M,
     blocked: k,
     ignored: L,
@@ -98,7 +98,7 @@ function k(e) {
       user: n
     } = ec.current;
     e.isGuildStageVoice() && !G && (null == t ? true : t.id) === n.id && u.Z.selectParticipant(e.id, null)
-  }, [G]), l && !X && !F && G && !s && null != z && C.Z.supports(R.AN.VIDEO)) ? null != el && null == ea ? (0, r.jsx)(x.Z, {
+  }, [G]), l && !X && !F && G && !s && null != z && C.Z.supports(R.AN.VIDEO)) ? null != el && null == ea ? (0, r.jsx)(j.Z, {
     avError: el,
     userId: t.id,
     width: c,
@@ -110,7 +110,7 @@ function k(e) {
     mirror: Y,
     streamId: B,
     videoComponent: z,
-    fit: j,
+    fit: x,
     videoSpinnerContext: H.id === W ? d.m.SELF_VIDEO : d.m.REMOTE_VIDEO,
     paused: U,
     userId: H.id

@@ -1,14 +1,15 @@
 /** Chunk was on 88282 **/
 /** chunk id: 546895, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./388685.js"), require("./49124.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk108514 = require("./108514.js"),
   Chunk793030 = require("./793030.js"),
+  Chunk668339 = require("./668339.jsx"),
   Chunk481060 = require("./481060.js");
-let o = {
+let c = {
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Messages_Opt.lottie": () => require.e("49190").then(require.t.bind(require, 871413, 17)),
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Notifications_Opt.lottie": () => require.e("30611").then(require.t.bind(require, 34195, 17)),
   "discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Navigation_Servers_CombinedEE.lottie": () => require.e("35981").then(require.t.bind(require, 590990, 17)),
@@ -153,7 +154,7 @@ let o = {
   "discord_common/js/shared/animations/app/xbox/xbox_connecting.lottiejson": () => require.e("4882").then(require.t.bind(require, 107192, 19))
 };
 
-function c(e) {
+function d(e) {
   let {
     default: t
   } = e;
@@ -199,16 +200,16 @@ function c(e) {
   }))
 }
 
-function d() {
-  let [e, t] = Chunk473749.useState(true), [n, r] = Chunk473749.useState(400), [d, u] = Chunk473749.useState(400);
+function u() {
+  let [e, t] = Chunk473749.useState(true), [n, r] = Chunk473749.useState(400), [u, m] = Chunk473749.useState(400);
   return (0, Chunk54381.jsx)("div", {
     style: {
       margin: 24
     },
     children: (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
       gap: 24,
-      children: [(0, Chunk54381.jsx)(Chunk481060.VcW, {
-        options: Object.keys(o).map(e => ({
+      children: [(0, Chunk54381.jsx)(Chunk668339.d, {
+        options: Object.keys(c).map(e => ({
           label: e,
           value: e
         })),
@@ -222,8 +223,8 @@ function d() {
           onChange: e => r(Number(e)),
           label: "Width"
         }), (0, Chunk54381.jsx)(Chunk481060.oil, {
-          value: d.toString(),
-          onChange: e => u(Number(e)),
+          value: u.toString(),
+          onChange: e => m(Number(e)),
           label: "Height"
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
@@ -231,8 +232,8 @@ function d() {
         disabled: null == module,
         onClick: async () => {
           if (null == module) return;
-          let t = o[module],
-            n = new Blob([JSON.stringify(module.endsWith(".lottie") ? await exports().then(c) : await exports())], {
+          let t = c[module],
+            n = new Blob([JSON.stringify(module.endsWith(".lottie") ? await exports().then(d) : await exports())], {
               type: "application/json"
             }),
             a = URL.createObjectURL(require),
@@ -243,12 +244,12 @@ function d() {
       }), null != module && (0, Chunk54381.jsx)("div", {
         style: {
           width: require,
-          height: d
+          height: u
         },
         children: (0, Chunk54381.jsx)(Chunk481060.Fmz, {
           importData: () => {
-            let t = o[module];
-            return module.endsWith(".lottie") ? exports().then(c) : exports()
+            let t = c[module];
+            return module.endsWith(".lottie") ? exports().then(d) : exports()
           }
         }, module)
       })]

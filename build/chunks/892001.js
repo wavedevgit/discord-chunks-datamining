@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
   Chunk9161 = require("./9161.js"),
   Chunk484459 = require("./484459.js");
-let f = (0, Chunk481060.pxk)(Chunk481060.EFr.SIZE_120),
+let f = (0, Chunk481060.dcp)(Chunk481060.EFr.SIZE_120),
   p = new Chunk710845.Z("UserProfileModalActionCreators"),
   _ = async e => {
     let t = l.default.getId() === e,

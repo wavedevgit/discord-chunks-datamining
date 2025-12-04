@@ -101,7 +101,7 @@ function U(e) {
   })
 }
 
-function F(e) {
+function z(e) {
   let {
     quest: t
   } = e;
@@ -115,7 +115,7 @@ function F(e) {
   })
 }
 
-function z(e) {
+function F(e) {
   return (0, r.jsx)(p.Text, {
     className: H.description,
     variant: "text-xs/normal",
@@ -163,7 +163,7 @@ function G(e) {
         ref: f,
         children: [(0, r.jsxs)("div", {
           className: H.details,
-          children: [(0, r.jsx)(F, {
+          children: [(0, r.jsx)(z, {
             quest: t
           }), (0, r.jsx)(p.Heading, {
             className: H.title,
@@ -172,7 +172,7 @@ function G(e) {
             children: W.intl.format(W.t.EQa7os, {
               questName: t.config.messages.questName
             })
-          }), (0, r.jsx)(z, {
+          }), (0, r.jsx)(F, {
             quest: t,
             taskDetails: n,
             popoutTargetElementRef: y,
@@ -308,14 +308,14 @@ function X(e) {
     onGameSheetClosed: b
   } = e, v = (null == (t = n.userStatus) ? true : t.completedAt) != null, C = o.percentComplete > 0, y = (0, O.z)(n), [E, S, P] = (0, O.me)(n, o), N = s.useRef(null), R = s.useRef(null), W = (0, O._s)({
     quest: n
-  }), F = (0, w.q8)(n), z = (0, O.Jf)(n), G = s.useCallback(() => {
+  }), z = (0, w.q8)(n), F = (0, O.Jf)(n), G = s.useCallback(() => {
     (0, A.openVideoQuestModal)({
       quest: n,
       questContent: j.jn.QUEST_BAR_V2,
       sourceQuestContent: j.jn.QUEST_BAR_V2,
       sourceQuestContentCTA: _.jZ.QUEST_BAR_VIDEO_QUEST_PREVIEW
     })
-  }, [n]), K = null != z ? z.percentComplete : o.percentComplete;
+  }, [n]), K = null != F ? F.percentComplete : o.percentComplete;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.animated.div, {
       className: a()(H.postEnrollmentBackground, H.postEnrollmentBackgroundCollapsed),
@@ -366,7 +366,7 @@ function X(e) {
           taskDetails: o
         })).exhaustive()
       }), (0, r.jsxs)(D.n, {
-        children: [F && (0, r.jsx)(U, {
+        children: [z && (0, r.jsx)(U, {
           isExpanded: u,
           quest: n,
           onClick: G,
