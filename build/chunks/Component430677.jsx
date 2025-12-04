@@ -45,7 +45,7 @@ let _ = function(e) {
     dragSourcePosition: M,
     drop: U,
     setIsDraggable: B
-  } = (0, d.Z)({
+  } = (0, u.Z)({
     type: "NEW_MEMBER_ACTION",
     index: N,
     optionId: y.channelId,
@@ -95,7 +95,7 @@ let _ = function(e) {
     })
   }, [C, y, N, E, I]);
   if (null == w || null == Z) return null;
-  let H = null != (O = (0, u.KS)(w)) ? O : c.VL1;
+  let H = null != (O = (0, d.KS)(w)) ? O : c.VL1;
   return (0, r.jsxs)("div", {
     className: j.actionItemContainer,
     children: [(0, r.jsxs)("div", {

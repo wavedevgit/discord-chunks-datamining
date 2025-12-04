@@ -22,14 +22,14 @@ let m = e => {
     className: i,
     buttonProps: l = {
       color: a.Tt.BRAND_INVERTED,
-      text: d.intl.string(d.t.oqweNx)
+      text: u.intl.string(u.t.oqweNx)
     },
     useExpressiveButton: s
   } = e, {
     color: o,
     text: c
   } = l, g = t.premiumTier + 1;
-  return (0, r.jsx)(u.Z, {
+  return (0, r.jsx)(d.Z, {
     color: o,
     analyticsLocation: n,
     guild: t,
@@ -45,8 +45,8 @@ function p(e) {
     header: t,
     text: i,
     analyticsLocation: a,
-    guild: u,
-    className: d,
+    guild: d,
+    className: u,
     textColor: p,
     headerColor: f,
     buttonProps: h,
@@ -57,7 +57,7 @@ function p(e) {
   return (0, r.jsx)(c.Gt, {
     value: x,
     children: (0, r.jsxs)("div", {
-      className: l()(g.banner, d),
+      className: l()(g.banner, u),
       children: [(0, r.jsx)("img", {
         className: g.__invalid_headerGraphic,
         alt: "",
@@ -77,7 +77,7 @@ function p(e) {
       }), (0, r.jsx)("div", {
         className: g.ctaContainer,
         children: (0, r.jsx)(m, {
-          guild: u,
+          guild: d,
           analyticsLocation: a,
           className: g.button,
           buttonProps: h,

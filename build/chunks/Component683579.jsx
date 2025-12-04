@@ -2,12 +2,11 @@
 /** chunk id: 683579, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk556012 = require("./556012.js"),
   Chunk862085 = require("./862085.jsx"),
   Chunk769998 = require("./769998.jsx"),
@@ -15,88 +14,88 @@ var Chunk755721 = require("./755721.js"),
   Chunk273504 = require("./273504.js"),
   Chunk464992 = require("./464992.js");
 
-function g(e) {
+function u(e) {
   let {
     action: t,
     triggerType: n,
-    toggled: s,
-    onToggleAction: o
-  } = e, c = (0, a.c)(t.type, t, n);
-  if (null == c) return null;
+    toggled: a,
+    onToggleAction: s
+  } = e, o = (0, l.c)(t.type, t, n);
+  if (null == o) return null;
   let {
-    headerText: u,
-    descriptionText: g,
-    icon: m
-  } = c;
+    headerText: c,
+    descriptionText: u,
+    icon: g
+  } = o;
   return (0, r.jsxs)("div", {
     className: d.actionContainer,
     children: [(0, r.jsx)("div", {
       className: d.actionIconContainer,
-      children: (0, r.jsx)(m, {
+      children: (0, r.jsx)(g, {
         size: "md",
         color: "currentColor",
         className: d.actionIcon
       })
     }), (0, r.jsxs)("div", {
       className: d.actionTextContainer,
-      children: [(0, r.jsx)(l.Heading, {
+      children: [(0, r.jsx)(i.Heading, {
         variant: "heading-sm/semibold",
-        children: u
-      }), (0, r.jsx)(l.Text, {
+        children: c
+      }), (0, r.jsx)(i.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: g
+        children: u
       })]
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(i.$q, {
-        disabled: !c.isEditable,
-        type: i.M0.INVERTED,
-        value: s,
-        onChange: () => o(false),
-        className: d.__invalid_actionCheckbox
+      children: (0, r.jsx)(i.P3F, {
+        onClick: o.isEditable ? () => s(false) : true,
+        children: (0, r.jsx)(i.FZ5, {
+          checked: a,
+          disabled: !o.isEditable
+        })
       })
     })]
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     action: t,
     guildId: n,
     triggerType: i,
     toggled: l,
-    onToggleAction: a
+    onToggleAction: d
   } = e;
   switch (t.type) {
-    case u.jj.FLAG_TO_CHANNEL:
-      return (0, r.jsx)(c.Z, {
-        action: t,
-        triggerType: i,
-        toggled: l,
-        onToggleAction: a
-      });
-    case u.jj.USER_COMMUNICATION_DISABLED:
+    case c.jj.FLAG_TO_CHANNEL:
       return (0, r.jsx)(o.Z, {
         action: t,
-        guildId: n,
         triggerType: i,
         toggled: l,
-        onToggleAction: a
+        onToggleAction: d
       });
-    case u.jj.BLOCK_MESSAGE:
+    case c.jj.USER_COMMUNICATION_DISABLED:
       return (0, r.jsx)(s.Z, {
         action: t,
+        guildId: n,
         triggerType: i,
         toggled: l,
-        onToggleAction: a
+        onToggleAction: d
+      });
+    case c.jj.BLOCK_MESSAGE:
+      return (0, r.jsx)(a.Z, {
+        action: t,
+        triggerType: i,
+        toggled: l,
+        onToggleAction: d
       });
     default:
-      return (0, r.jsx)(g, {
+      return (0, r.jsx)(u, {
         action: t,
         guildId: n,
         toggled: l,
         triggerType: i,
-        onToggleAction: a
+        onToggleAction: d
       })
   }
 }

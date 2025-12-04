@@ -2,7 +2,7 @@
 /** chunk id: 157018, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk201895 = require("./201895.js"),
   Chunk933557 = require("./933557.js"),
@@ -13,7 +13,7 @@ var Chunk201895 = require("./201895.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e) {
+function u(e) {
   switch (e.ref_type) {
     case o.Qs.CHANNEL: {
       let t = l.Z.getChannel(e.ref_id);
@@ -21,11 +21,11 @@ function d(e) {
         let t = (0, i.F6)(e, s.default, a.Z);
         switch (e.type) {
           case c.d4z.GUILD_VOICE:
-            return u.intl.formatToPlainString(u.t.bkpadO, {
+            return d.intl.formatToPlainString(d.t.bkpadO, {
               channelName: t
             });
           case c.d4z.GUILD_STAGE_VOICE:
-            return u.intl.formatToPlainString(u.t.TPPk2T, {
+            return d.intl.formatToPlainString(d.t.TPPk2T, {
               channelName: t
             });
           default:

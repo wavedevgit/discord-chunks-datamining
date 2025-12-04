@@ -23,7 +23,7 @@ function h(e) {
     activeType: t,
     onTypePicked: n,
     guild: l
-  } = e, h = l.features.has(m.GuildFeatures.COMMUNITY), b = (0, s.e7)([u.Z], () => u.Z.can(m.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
+  } = e, h = l.features.has(m.GuildFeatures.COMMUNITY), b = (0, s.e7)([d.Z], () => d.Z.can(m.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
     let e = t === g.A.DISCOVERABLE && !b,
       n = h && (t === g.A.DISCOVERABLE || b);
     return [{
@@ -59,7 +59,7 @@ function h(e) {
       variant: "text-sm/medium",
       className: f.bodyText,
       children: p.intl.format(p.t["Y/jYwu"], {
-        helpdeskArticle: d.Z.getArticleURL(m.BhN.MEMBER_APPLICATIONS)
+        helpdeskArticle: u.Z.getArticleURL(m.BhN.MEMBER_APPLICATIONS)
       })
     }), (0, r.jsx)(c.njP, {
       selectedItem: t,

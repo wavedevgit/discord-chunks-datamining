@@ -47,7 +47,7 @@ function I(e) {
     m.Z.updateGuild({
       discoverySplash: e
     })
-  }, []), u = i.useCallback(() => {
+  }, []), d = i.useCallback(() => {
     m.Z.updateGuild({
       discoverySplash: null
     })
@@ -91,7 +91,7 @@ function I(e) {
           className: N.buttonList,
           children: [(0, r.jsx)("div", {
             className: N.editableSection,
-            children: (0, r.jsx)(d.Z, {
+            children: (0, r.jsx)(u.Z, {
               onChange: c,
               text: y.intl.string(y.t["3UB9ad"]),
               size: "sm",
@@ -104,7 +104,7 @@ function I(e) {
               variant: "critical-secondary",
               size: "sm",
               text: y.intl.string(y.t.N86XcP),
-              onClick: u
+              onClick: d
             })
           }) : null]
         })]
@@ -206,7 +206,7 @@ function T(e) {
     guildMetadata: n,
     requireTag: l,
     error: a
-  } = e, [d, g] = i.useState(null), m = i.useCallback(e => {
+  } = e, [u, g] = i.useState(null), m = i.useCallback(e => {
     let r = Array.from(e),
       i = [...n.keywords].filter(e => !r.includes(e));
     g(null), (0, c.zH)(t, i)
@@ -223,7 +223,7 @@ function T(e) {
       disabled: t,
       tooltipText: t ? y.intl.string(y.t.Xx7XeB) : true
     }
-  }), [n.keywords, n.primaryCategoryId, p]), b = null != a ? a : d, x = i.useMemo(() => n.keywords.map(e => ({
+  }), [n.keywords, n.primaryCategoryId, p]), b = null != a ? a : u, x = i.useMemo(() => n.keywords.map(e => ({
     id: e,
     label: e
   })), [n.keywords]);
@@ -256,7 +256,7 @@ function T(e) {
         children: y.intl.string(y.t.sF28Ou)
       }), (0, r.jsx)("div", {
         className: N.editableSection,
-        children: (0, r.jsx)(u.j, {
+        children: (0, r.jsx)(d.j, {
           pills: h
         })
       })]

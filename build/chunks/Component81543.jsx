@@ -13,7 +13,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk215569 = require("./215569.js"),
   Chunk248881 = require("./248881.js");
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,7 +29,7 @@ function g(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
@@ -76,7 +76,7 @@ class f extends Chunk473749.PureComponent {
     })
   }
   constructor(e) {
-    super(e), d(this, "_animated", true), this._animated = new o.Z.Value(false * e.direction)
+    super(e), u(this, "_animated", true), this._animated = new o.Z.Value(false * e.direction)
   }
 }
 let h = e => {
@@ -90,7 +90,7 @@ let h = e => {
   } = e;
   return (0, i.jsx)(c.W, {
     component: "div",
-    className: s()(u.animator, l),
+    className: s()(d.animator, l),
     children: (0, i.jsx)(f, {
       direction: r,
       onAnimationStart: a,

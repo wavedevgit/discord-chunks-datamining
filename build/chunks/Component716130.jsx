@@ -58,12 +58,12 @@ function v(e) {
     guild: t,
     prejoinOnly: n,
     postjoinOnly: l
-  } = e, c = (0, s.e7)([p.Z], () => p.Z.editedOnboardingPrompts), d = c.filter(e => e.inOnboarding), g = d.length, {
+  } = e, c = (0, s.e7)([p.Z], () => p.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), g = u.length, {
     drag: f,
     drop: j,
     dragSourcePosition: _,
     setIsDraggable: v
-  } = (0, u.Z)({
+  } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_CARD",
     index: g,
     optionId: "separator",
@@ -81,7 +81,7 @@ function v(e) {
       [x.dropIndicatorBefore]: null != _ && g < _,
       [x.dropIndicatorAfter]: null != _ && g > _
     }),
-    children: [!l && d.length < h.b3 ? (0, r.jsxs)(o.P3F, {
+    children: [!l && u.length < h.b3 ? (0, r.jsxs)(o.P3F, {
       className: x.addPrompt,
       onClick: () => (0, m.tS)(t, [...c, (0, h.yZ)(true)], false),
       children: [(0, r.jsx)(o.oFk, {
@@ -118,7 +118,7 @@ function O(e) {
     postjoinOnly: i,
     includeCount: l,
     singleColumn: a
-  } = e, u = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), O = (0, s.e7)([p.Z], () => p.Z.editedOnboardingPrompts), C = O.filter(e => e.inOnboarding), y = O.filter(e => true !== e.inOnboarding), N = [...C.map(e => ({
+  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), O = (0, s.e7)([p.Z], () => p.Z.editedOnboardingPrompts), C = O.filter(e => e.inOnboarding), y = O.filter(e => true !== e.inOnboarding), N = [...C.map(e => ({
     id: e.id,
     data: e
   })), {
@@ -131,7 +131,7 @@ function O(e) {
     handleDragStart: E,
     handleDragReset: I,
     handleDragComplete: S
-  } = (0, d.Z)(N, e => {
+  } = (0, u.Z)(N, e => {
     let t = e.findIndex(e => "separator" === e.id),
       n = e.slice(0, t).map(e => _(j({}, e.data), {
         inOnboarding: true
@@ -146,9 +146,9 @@ function O(e) {
         numQuestions: h.b3
       })
     });
-    (0, m.tS)(u, [...n, ...r])
+    (0, m.tS)(d, [...n, ...r])
   });
-  return null == u ? null : (0, r.jsxs)(r.Fragment, {
+  return null == d ? null : (0, r.jsxs)(r.Fragment, {
     children: [i ? null : (0, r.jsxs)(r.Fragment, {
       children: [n ? null : (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.Heading, {
@@ -161,7 +161,7 @@ function O(e) {
           children: b.intl.string(b.t.QvCcYe)
         })]
       }), C.map((e, t) => (0, r.jsx)(f.Z, {
-        guild: u,
+        guild: d,
         prompt: e,
         disableAutofocus: n,
         includeCount: l,
@@ -173,12 +173,12 @@ function O(e) {
         onPromptDragComplete: S
       }, e.id))]
     }), (0, r.jsx)(v, {
-      guild: u,
+      guild: d,
       prejoinOnly: n,
       postjoinOnly: i
     }), n ? null : (0, r.jsxs)(r.Fragment, {
       children: [y.map((e, t) => (0, r.jsx)(f.Z, {
-        guild: u,
+        guild: d,
         prompt: e,
         promptIndex: t + C.length,
         dragIndex: t + C.length + 1,
@@ -187,7 +187,7 @@ function O(e) {
         onPromptDragComplete: S
       }, e.id)), O.length < h.YW ? (0, r.jsxs)(o.P3F, {
         className: x.addPrompt,
-        onClick: () => (0, m.tS)(u, [...O, (0, h.yZ)(false)], false),
+        onClick: () => (0, m.tS)(d, [...O, (0, h.yZ)(false)], false),
         children: [(0, r.jsx)(o.oFk, {
           size: "custom",
           color: "currentColor",

@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk97247 = require("./97247.js");
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -31,7 +31,7 @@ function u(e) {
   return e
 }
 
-function d(e, t) {
+function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,8 +53,8 @@ function g(e) {
   } = e, [p, f] = i.useState(!m), h = i.useCallback(() => {
     f(!p)
   }, [p, f]), b = i.useCallback(e => {
-    g(d(u({}, n), {
-      triggerMetadata: d(u({}, n.triggerMetadata), {
+    g(u(d({}, n), {
+      triggerMetadata: u(d({}, n.triggerMetadata), {
         regexPatterns: e
       })
     }))

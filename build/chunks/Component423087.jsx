@@ -60,7 +60,7 @@ function _(e) {
     onClick: l
   } = e, s = (0, o.jm)({
     isSelected: i,
-    label: (0, u.Z)(t.primary, t.secondary)
+    label: (0, d.Z)(t.primary, t.secondary)
   });
   return (0, r.jsx)(c.P3F, j(x({}, s), {
     className: a()(b.pickerItem, {
@@ -83,7 +83,7 @@ function v(e) {
     primary: n,
     secondary: i,
     isSelected: l,
-    showColorPopout: u,
+    showColorPopout: d,
     setShowColorPopout: g,
     palettePopoutTargetRef: m,
     handleChange: f
@@ -94,7 +94,7 @@ function v(e) {
       secondaryColor: i
     })
   });
-  return (0, r.jsx)(d.Z, {
+  return (0, r.jsx)(u.Z, {
     popoutTargetRef: m,
     showSecondaryColor: p.ER[t] >= 2,
     palette: {
@@ -111,7 +111,7 @@ function v(e) {
         secondary: (0, s.Rf)(e)
       })
     },
-    shouldShow: u,
+    shouldShow: d,
     onRequestClose: () => g(false),
     children: e => (0, r.jsx)(c.P3F, j(x({}, e, _), {
       innerRef: m,
@@ -136,7 +136,7 @@ let O = function(e) {
     badge: l,
     primaryColor: a,
     secondaryColor: s
-  } = e, [u, d] = i.useState(false), g = i.useRef(null), O = i.useId(), C = i.useId(), y = i.useMemo(() => p.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), N = (0, o.Jb)({
+  } = e, [d, u] = i.useState(false), g = i.useRef(null), O = i.useId(), C = i.useId(), y = i.useMemo(() => p.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), N = (0, o.Jb)({
     orientation: "horizontal",
     isDisabled: false,
     labelledBy: O
@@ -165,8 +165,8 @@ let O = function(e) {
           primary: a,
           secondary: s,
           isSelected: y,
-          showColorPopout: u,
-          setShowColorPopout: d,
+          showColorPopout: d,
+          setShowColorPopout: u,
           palettePopoutTargetRef: g,
           handleChange: E
         })]

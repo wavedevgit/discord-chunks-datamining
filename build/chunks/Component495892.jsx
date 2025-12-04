@@ -157,7 +157,7 @@ function E(e) {
 function I(e) {
   return (0, m.r5)(e, m.vT.ALPHA) ? (0, r.jsx)(c.Z, {
     className: _.alphaBetaTag
-  }) : (0, m.r5)(e, m.vT.BETA) ? (0, r.jsx)(u.Z, {
+  }) : (0, m.r5)(e, m.vT.BETA) ? (0, r.jsx)(d.Z, {
     className: _.alphaBetaTag
   }) : null
 }
@@ -168,12 +168,12 @@ function S(e) {
     isDefaultRule: n,
     onContextMenu: o
   } = e, c = (0, f.w)(t.triggerType, t), {
-    isLoading: u,
+    isLoading: d,
     saveRule: m
   } = (0, p.w)(), {
     updateRule: h
   } = (0, g.pH)(t.guildId), [b, x] = i.useState(t.enabled), E = (0, l.throttle)(async () => {
-    if (!u) {
+    if (!d) {
       let e = O(v({}, t), {
         enabled: !b
       });
@@ -188,7 +188,7 @@ function S(e) {
     headerSubtext: T,
     descriptionText: P,
     icon: w
-  } = c, Z = !(0, d.Vb)(t);
+  } = c, Z = !(0, u.Vb)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: _.ruleIconContainer,
@@ -299,8 +299,8 @@ function P(e) {
     isEditMode: l,
     isDefaultRule: a,
     forceSetup: c,
-    onSetupRule: u,
-    onChangeRule: d
+    onSetupRule: d,
+    onChangeRule: u
   } = e, g = e => {
     null != t && (e.preventDefault(), e.stopPropagation(), (0, o.jW)(e, async () => {
       let {
@@ -312,11 +312,11 @@ function P(e) {
     }))
   }, m = (0, r.jsx)(T, {
     triggerType: i,
-    onSetupRule: u
+    onSetupRule: d
   });
   return null == t || c || (m = l ? (0, r.jsx)(E, {
     rule: t,
-    onChangeRule: d,
+    onChangeRule: u,
     onContextMenu: g
   }) : (0, r.jsx)(S, {
     rule: t,

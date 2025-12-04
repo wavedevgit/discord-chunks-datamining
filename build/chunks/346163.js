@@ -31,13 +31,13 @@ function h(e) {
       loading: _,
       createEnableRequest: v,
       submittedRequest: O
-    } = (0, u.Z)(null == e ? true : e.id),
+    } = (0, d.Z)(null == e ? true : e.id),
     {
       loading: C,
       error: y,
       refresh: N,
       eligibility: E
-    } = (0, d.Z)(null == e ? true : e.id),
+    } = (0, u.Z)(null == e ? true : e.id),
     {
       isApplicationRejected: I,
       requestCooldownDuration: S

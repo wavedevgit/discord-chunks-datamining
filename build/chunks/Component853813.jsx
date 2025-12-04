@@ -84,7 +84,7 @@ function I(e) {
         return e
       }({
         tab_opened: i,
-        is_everyone: (0, u.pM)(T.id, r),
+        is_everyone: (0, d.pM)(T.id, r),
         role_id: r,
         role_mentionable: null == n ? true : n.mentionable,
         role_hoist: null == n ? true : n.hoist,
@@ -92,7 +92,7 @@ function I(e) {
         role_num_members: l
       }, (0, c.hH)(T.id)))
     }, [I, T.id, null == P ? true : P.id]), i.useEffect(() => {
-      (null == P ? true : P.id) != null && (0, d.sE)(T.id, P.id)
+      (null == P ? true : P.id) != null && (0, u.sE)(T.id, P.id)
     }, [T.id, null == P ? true : P.id]), null == P) return null;
   switch (I) {
     case y.ZI.DISPLAY:

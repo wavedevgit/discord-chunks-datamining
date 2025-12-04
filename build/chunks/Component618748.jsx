@@ -42,11 +42,11 @@ function L(e) {
   let {
     application: t,
     guild: n
-  } = e, l = (0, _.YB)(n.id), a = (0, _.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([h.Z], () => a.map(e => h.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), u = null != t && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), d = [{
+  } = e, l = (0, _.YB)(n.id), a = (0, _.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([h.Z], () => a.map(e => h.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
     title: D.intl.string(D.t.p2Rsdl),
     items: [{
       description: D.intl.string(D.t.zbO7fU),
-      completed: u
+      completed: d
     }]
   }, {
     title: D.intl.string(D.t["/CfKoD"]),
@@ -74,7 +74,7 @@ function L(e) {
     }]
   }];
   return (0, r.jsx)(I.Z, {
-    children: d
+    children: u
   })
 }
 
@@ -108,7 +108,7 @@ function G(e) {
       guild: n,
       application: l
     } = e,
-    a = (0, i.e7)([u.Z], () => u.Z.getProps().subsection),
+    a = (0, i.e7)([d.Z], () => d.Z.getProps().subsection),
     s = null != l && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
   return (0, o.P)(n), t = s ? a === w.KsC.ROLE_SUBSCRIPTION_EMOJI ? T.ue.EMOJIS : T.ue.TIERS : T.ue.PAYMENT, (0, r.jsx)(j.l, {
     guildId: n.id,
@@ -131,7 +131,7 @@ function M(e) {
       guild: n,
       application: o
     } = e,
-    u = null != o && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED),
+    d = null != o && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED),
     {
       currentTab: p,
       setCurrentTab: _
@@ -180,7 +180,7 @@ function M(e) {
         })]
       }), (0, r.jsx)(y.Z, {
         guild: n
-      }), u && (0, r.jsx)(k, {
+      }), d && (0, r.jsx)(k, {
         application: o
       }), (0, r.jsxs)("div", {
         className: A.tabBarContainer,
@@ -194,24 +194,24 @@ function M(e) {
           children: [(0, r.jsx)(s.Z, {
             id: T.ue.BASIC_INFO,
             disabledTooltip: D.intl.string(D.t.NVDuUX),
-            disabled: !u,
+            disabled: !d,
             children: D.intl.string(D.t["/CfKoD"])
           }), (0, r.jsx)(s.Z, {
             id: T.ue.TIERS,
             disabledTooltip: D.intl.string(D.t.NVDuUX),
-            disabled: !u,
+            disabled: !d,
             children: D.intl.string(D.t.pXbGYc)
           }), (0, r.jsx)(s.Z, {
             id: T.ue.EMOJIS,
             disabledTooltip: D.intl.string(D.t.NVDuUX),
-            disabled: !u,
+            disabled: !d,
             children: D.intl.string(D.t.XBkDoA)
           }), G ? (0, r.jsx)(a.njP.Item, {
             className: A.__invalid_tabBarItem,
             id: T.ue.PAYMENT,
             children: D.intl.string(D.t.p2Rsdl)
           }) : null]
-        }), u && (0, r.jsx)("div", {
+        }), d && (0, r.jsx)("div", {
           className: A.previewButton,
           children: (0, r.jsx)(l.u, {
             text: D.intl.string(D.t["1wCH4M"]),
@@ -223,7 +223,7 @@ function M(e) {
                 let t = {
                   [e.id]: e
                 };
-                (0, d.iD)(n.id, {
+                (0, u.iD)(n.id, {
                   type: g.z.SERVER_SHOP,
                   roles: t,
                   initialTab: "role_subscriptions",

@@ -89,13 +89,13 @@ function E(e) {
     }
   }, [T]), M = i.useCallback(async (e, t, n) => {
     try {
-      await u.ZP.updateVerificationForm(T, e, t, n)
+      await d.ZP.updateVerificationForm(T, e, t, n)
     } catch (e) {
       throw R(new o.Hx(e).getAnyErrorMessage()), e
     }
   }, [T]), U = i.useCallback(async (e, t, n) => {
     let r = t.length > 0 ? [{
-      field_type: d.QJ.TERMS,
+      field_type: u.QJ.TERMS,
       label: C.intl.string(C.t["9suSIA"]),
       values: t,
       required: true

@@ -9,7 +9,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk53365 = require("./53365.js");
 
 function a(e) {
-  let [t, n] = r.useState(true), [a, s] = r.useState(), [o, c] = r.useState(), u = r.useCallback(async e => {
+  let [t, n] = r.useState(true), [a, s] = r.useState(), [o, c] = r.useState(), d = r.useCallback(async e => {
     n(true), s(true);
     try {
       let t = await l.wZ(e);
@@ -21,8 +21,8 @@ function a(e) {
     }
   }, []);
   return r.useEffect(() => {
-    u(e)
-  }, [e, u]), {
+    d(e)
+  }, [e, d]), {
     isLoading: t,
     error: a,
     creatorMonetizationOnboardingMarketing: o

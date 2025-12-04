@@ -60,18 +60,18 @@ function S(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: y.headerNoConfigContainer,
-    children: [(0, r.jsx)(u.Heading, {
+    children: [(0, r.jsx)(d.Heading, {
       className: y.headerHeading,
       variant: "eyebrow",
       children: C.intl.string(C.t.nMir27)
-    }), (0, r.jsx)(u.Text, {
+    }), (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       color: "text-default",
       className: y.headerNoConfigSubtitle,
       children: C.intl.format(C.t.q5f7tK, {
         helpdeskArticleUrl: m.Z.getArticleURL(v.BhN.CONNECTION_DETAILS_ADMIN)
       })
-    }), (0, r.jsx)(u.Button, {
+    }), (0, r.jsx)(d.Button, {
       disabled: n,
       onClick: t,
       text: C.intl.string(C.t["OSvW5+"]),
@@ -115,7 +115,7 @@ function T(e) {
   }
 
   function M() {
-    d.Z.dispatch({
+    u.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
       onComplete: e => G(e),
       excludedPlatformTypes: k,
@@ -131,11 +131,11 @@ function T(e) {
   else if (L.length > 0) {
     var B;
     let e = null;
-    L.length < 10 && (e = (0, r.jsx)(u.Button, {
+    L.length < 10 && (e = (0, r.jsx)(d.Button, {
       disabled: l,
       onClick: M,
       text: C.intl.string(C.t["OSvW5+"]),
-      icon: u.oFk,
+      icon: d.oFk,
       fullWidth: true,
       variant: "secondary"
     })), U = (0, r.jsxs)(r.Fragment, {
@@ -144,18 +144,18 @@ function T(e) {
           className: y.headerTitleContainer,
           children: [(0, r.jsx)("div", {
             className: y.headerTitleTextContainer,
-            children: (0, r.jsx)(u.Heading, {
+            children: (0, r.jsx)(d.Heading, {
               variant: "eyebrow",
               children: C.intl.string(C.t.nMir27)
             })
-          }), (0, r.jsx)(u.Avr, {
+          }), (0, r.jsx)(d.Avr, {
             variant: "critical",
             onClick: B,
             disabled: l,
             text: C.intl.string(C.t.ntW1cc),
             textVariant: "text-sm/semibold"
           })]
-        }), (0, r.jsx)(u.Text, {
+        }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           children: C.intl.format(C.t.q5f7tK, {
             helpdeskArticleUrl: m.Z.getArticleURL(v.BhN.CONNECTION_DETAILS_ADMIN)
@@ -163,7 +163,7 @@ function T(e) {
         })]
       })), function(e, t, n, i, l) {
         let a = I(i, g.O1.OR);
-        return (0, r.jsx)(u.FXm, {
+        return (0, r.jsx)(d.FXm, {
           label: C.intl.string(C.t.Xs7PHX),
           options: [{
             name: C.intl.string(C.t.W3iY58),
@@ -240,7 +240,7 @@ function T(e) {
       }(L, e => (0, f.d_)(n.id, I(e, A)), l, n.id, o), e]
     })
   }
-  return (0, r.jsx)(u.yWw, {
+  return (0, r.jsx)(d.yWw, {
     className: y.scroller,
     style: {
       scrollPaddingTop: T
@@ -261,13 +261,13 @@ function T(e) {
         })
       }), (null != R ? R : 0) > 0 ? (0, r.jsxs)("div", {
         className: y.warningContainer,
-        children: [(0, r.jsx)(u.Mgn, {
+        children: [(0, r.jsx)(d.Mgn, {
           size: "custom",
           width: 20,
           height: 20,
           color: "currentColor",
           className: y.warningIcon
-        }), (0, r.jsx)(u.Text, {
+        }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
           children: C.intl.string(C.t["2aFeef"])

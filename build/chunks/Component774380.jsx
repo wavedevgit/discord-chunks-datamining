@@ -25,7 +25,7 @@ let m = e => {
         variant: "overlay-primary",
         size: "md",
         fullWidth: true,
-        text: d.intl.string(d.t.hvVgAZ),
+        text: u.intl.string(u.t.hvVgAZ),
         onClick: () => {
           (0, a.z)(), null != t && t()
         }
@@ -36,7 +36,7 @@ let m = e => {
       children: [(0, r.jsx)(l.Heading, {
         className: g.tier0Heading,
         variant: "heading-xxl/extrabold",
-        children: d.intl.string(d.t["qUl+K4"])
+        children: u.intl.string(u.t["qUl+K4"])
       }), (0, r.jsx)(s.wp, {
         className: g.tier0Card,
         ctaButton: n,
@@ -50,7 +50,7 @@ let m = e => {
     let {
       onOpenPremiumClick: t
     } = e, n = (0, i.e7)([o.default], () => o.default.getCurrentUser());
-    return c.ZP.isPremium(n, u.PremiumTypes.TIER_2) ? null : (0, r.jsx)(m, {
+    return c.ZP.isPremium(n, d.PremiumTypes.TIER_2) ? null : (0, r.jsx)(m, {
       onOpenPremiumClick: t
     })
   }

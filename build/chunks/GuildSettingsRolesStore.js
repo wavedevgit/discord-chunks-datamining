@@ -246,7 +246,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         permissions: l
       } = i;
       return W(i, {
-        permissions: l = r ? u.IH(l, n) : u.Od(l, n)
+        permissions: l = r ? d.IH(l, n) : d.Od(l, n)
       })
     },
     GUILD_SETTINGS_ROLES_UPDATE_PERMISSION_SET: function(e) {
@@ -288,7 +288,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         id: t,
         color: n
-      } = e, r = 0 === n ? null : (0, d.Rf)(n), i = z(t);
+      } = e, r = 0 === n ? null : (0, u.Rf)(n), i = z(t);
       if (null == i) returnfalse;
       let l = G.get(t);
       return null != l && (l.currentStyle = "solid", l.styleColors.solid = {

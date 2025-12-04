@@ -68,7 +68,7 @@ function x(e) {
     children: [(0, r.jsx)(n.icon, {
       size: "xs",
       color: "currentColor"
-    }), (0, r.jsx)(u.xvT, {
+    }), (0, r.jsx)(d.xvT, {
       variant: "text-sm/medium",
       tag: "span",
       children: n.text
@@ -87,14 +87,14 @@ function j(e) {
     className: h.backgroundContainer,
     children: i === p.it.REGULAR ? (0, r.jsxs)("div", {
       className: h.containerPadding,
-      children: [(0, r.jsx)(u.xvT, {
+      children: [(0, r.jsx)(d.xvT, {
         variant: "text-md/medium",
         className: h.containerTitle,
         children: t
       }), n]
     }) : (0, r.jsxs)("div", {
       className: h.compactContainer,
-      children: [(0, r.jsx)(u.xvT, {
+      children: [(0, r.jsx)(d.xvT, {
         variant: "text-md/medium",
         className: h.compactTitle,
         children: t
@@ -111,10 +111,10 @@ function v(e) {
     index: t,
     field: n,
     isDropHovered: l,
-    onDrop: u,
+    onDrop: d,
     fieldStyle: m
   } = e, f = (0, s.debounce)(async (e, t, n) => {
-    await u(e, t, n)
+    await d(e, t, n)
   }), x = i.useRef(null), [, v] = (0, o.c)({
     type: _,
     item: {
@@ -155,7 +155,7 @@ function v(e) {
       children: (0, r.jsx)(g.Vni, {
         size: "xs",
         className: h.dragIcon,
-        color: d.Z.unsafe_rawColors.PRIMARY_400.css
+        color: u.Z.unsafe_rawColors.PRIMARY_400.css
       })
     }), (0, r.jsx)(j, b({}, e))]
   })

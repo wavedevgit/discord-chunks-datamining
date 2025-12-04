@@ -183,8 +183,8 @@ function M(e) {
     expandedId: a,
     lastExpandedId: o,
     scroller: c,
-    setExpandedRef: u,
-    setLastExpandedRef: d,
+    setExpandedRef: d,
+    setLastExpandedRef: u,
     onHeaderClick: g,
     onContentClick: m
   } = e, p = i.useRef(c);
@@ -206,7 +206,7 @@ function M(e) {
           children: t.map(e => {
             let t = a === e.id,
               i = o === e.id,
-              s = t ? u : i ? d : null;
+              s = t ? d : i ? u : null;
             return (0, r.jsx)(G, {
               guildId: n,
               guild: l,
@@ -296,7 +296,7 @@ class U extends Chunk473749.PureComponent {
       isInitialLoading: s,
       isLoading: o,
       hasError: c,
-      guildId: u,
+      guildId: d,
       guild: g
     } = this.props;
     if (a) return (0, Chunk54381.jsx)(Chunk497321.Z, {});
@@ -384,7 +384,7 @@ class U extends Chunk473749.PureComponent {
         id: e.value,
         value: e.value,
         label: e.label,
-        leading: (0, r.jsx)(d.BFJ, {
+        leading: (0, r.jsx)(u.BFJ, {
           size: "custom",
           color: "currentColor",
           width: 30,
@@ -399,13 +399,13 @@ class U extends Chunk473749.PureComponent {
           label: y.ZP.getUserTag(t, {
             mode: "username"
           }),
-          leading: (0, r.jsx)(d.qEK, {
-            size: d.EFr.SIZE_24,
+          leading: (0, r.jsx)(u.qEK, {
+            size: u.EFr.SIZE_24,
             src: t.getAvatarURL(this.props.guildId, 32),
             "aria-label": t.username,
             className: Z.avatar
           }),
-          trailing: t.hasUniqueUsername() ? true : (0, r.jsxs)(d.Text, {
+          trailing: t.hasUniqueUsername() ? true : (0, r.jsxs)(u.Text, {
             variant: "text-xs/normal",
             className: Z.discriminator,
             children: ["#", t.discriminator]
@@ -433,14 +433,14 @@ class U extends Chunk473749.PureComponent {
           valueLabel: w.intl.string(w.t.an9Ry3),
           value: null
         },
-        d = [c, ...a].map(e => e instanceof x.Z ? function(e) {
+        u = [c, ...a].map(e => e instanceof x.Z ? function(e) {
           return {
             label: e.username,
             value: e.id,
             user: e
           }
         }(e) : e),
-        g = null != (t = d.find(e => {
+        g = null != (t = u.find(e => {
           let {
             value: t
           } = e;
@@ -448,15 +448,15 @@ class U extends Chunk473749.PureComponent {
         })) ? t : c;
       return (0, r.jsxs)("div", {
         className: Z.quickSelect,
-        children: [(0, r.jsx)(u.V, {
-          options: d,
+        children: [(0, r.jsx)(d.V, {
+          options: u,
           formatOption: this.formatUserOption,
           value: g.value,
           onSelectionChange: this.handleFilterUserChange,
           label: w.intl.string(w.t["hxnY/q"]),
           placeholder: w.intl.string(w.t.pYHobK),
           selectionMode: "single"
-        }), (0, r.jsx)(u.V, {
+        }), (0, r.jsx)(d.V, {
           placeholder: w.intl.string(w.t.I288Zx),
           label: w.intl.string(w.t.rautds),
           options: s,
@@ -475,7 +475,7 @@ class U extends Chunk473749.PureComponent {
       if (e && t && !n) return (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: Z.loadMore,
-        children: (0, r.jsx)(d.Button, {
+        children: (0, r.jsx)(u.Button, {
           variant: "secondary",
           text: w.intl.string(w.t["Q/LSXp"]),
           onClick: this.handleFetchNextPage

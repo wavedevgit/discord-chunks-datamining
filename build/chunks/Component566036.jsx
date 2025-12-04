@@ -50,7 +50,7 @@ function h(e) {
   } = e;
   return 0 === t.length ? null : (0, r.jsx)("div", {
     className: m.selectedGames,
-    children: t.map(e => (0, r.jsx)(u.Z, {
+    children: t.map(e => (0, r.jsx)(d.Z, {
       applicationId: e,
       selected: true,
       onClick: n,
@@ -65,30 +65,30 @@ function x(e) {
   let {
     profile: n,
     canManageGuild: l
-  } = e, o = n.id, u = null != (t = null == n ? true : n.gameApplicationIds) ? t : b, m = i.useCallback(e => {
+  } = e, o = n.id, d = null != (t = null == n ? true : n.gameApplicationIds) ? t : b, m = i.useCallback(e => {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
   }, [o]), p = i.useCallback(e => {
-    let t = u.filter(t => t !== e);
+    let t = d.filter(t => t !== e);
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: t
     })
-  }, [o, u]), x = i.useRef(u), j = i.useMemo(() => (a().isEqual(new Set(u), new Set(x.current)) || (x.current = [...u]), x.current), [u]);
+  }, [o, d]), x = i.useRef(d), j = i.useMemo(() => (a().isEqual(new Set(d), new Set(x.current)) || (x.current = [...d]), x.current), [d]);
   return (0, r.jsxs)(s.C3N, {
     label: g.intl.string(g.t.BR68vK),
     description: g.intl.string(g.t.MobxiB),
     children: [(0, r.jsx)(f, {
-      gameApplicationIds: u,
+      gameApplicationIds: d,
       handleChange: m,
       disabled: !l
     }), (0, r.jsx)(h, {
       gameApplicationIds: j,
       onRemoveGame: p,
       disabled: !l
-    }), (0, r.jsx)(d.Z, {
+    }), (0, r.jsx)(u.Z, {
       guildId: o,
-      selectedGameApplicationIds: u,
+      selectedGameApplicationIds: d,
       onUpdateGames: m,
       disabled: !l
     })]

@@ -2,12 +2,11 @@
 /** chunk id: 671066, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
   Chunk592125 = require("./592125.js"),
@@ -17,59 +16,61 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk464992 = require("./464992.js");
 
-function p(e) {
+function m(e) {
   var t;
   let {
     action: n,
-    triggerType: p,
-    toggled: f,
-    onToggleAction: h
-  } = e, b = e => () => h(e), x = (0, d.c)(n.type, n, p), j = null == (t = n.metadata) ? true : t.channelId, _ = (0, i.e7)([u.default, c.Z, o.Z], () => {
-    let e = o.Z.getChannel(j);
-    return null == e ? null : (0, s.F6)(e, u.default, c.Z)
-  }, [j]);
-  if (null == x) return null;
+    triggerType: m,
+    toggled: p,
+    onToggleAction: f
+  } = e, h = e => () => f(e), b = (0, d.c)(n.type, n, m), x = null == (t = n.metadata) ? true : t.channelId, j = (0, i.e7)([c.default, o.Z, s.Z], () => {
+    let e = s.Z.getChannel(x);
+    return null == e ? null : (0, a.F6)(e, c.default, o.Z)
+  }, [x]);
+  if (null == b) return null;
   let {
-    headerText: v,
-    descriptionText: O,
-    icon: C
-  } = x;
+    headerText: _,
+    descriptionText: v,
+    icon: O
+  } = b;
   return (0, r.jsxs)("div", {
-    className: m.actionContainer,
+    className: g.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: m.actionIconContainer,
-      children: (0, r.jsx)(C, {
+      className: g.actionIconContainer,
+      children: (0, r.jsx)(O, {
         size: "md",
         color: "currentColor",
-        className: m.actionIcon
+        className: g.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: m.actionTextContainer,
-      children: [(0, r.jsx)(a.Heading, {
+      className: g.actionTextContainer,
+      children: [(0, r.jsx)(l.Heading, {
         variant: "heading-sm/semibold",
-        children: v
-      }), (0, r.jsx)(a.Text, {
+        children: _
+      }), (0, r.jsx)(l.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: O
-      }), f && (0, r.jsxs)(a.Text, {
+        children: v
+      }), p && (0, r.jsxs)(l.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [null != _ && g.intl.format(g.t["8Sr/ar"], {
-          channelName: _
-        }), (0, r.jsx)(a.P3F, {
-          onClick: b(true),
-          className: m.editChannel,
+        children: [null != j && u.intl.format(u.t["8Sr/ar"], {
+          channelName: j
+        }), (0, r.jsx)(l.P3F, {
+          onClick: h(true),
+          className: g.editChannel,
           tag: "span",
           role: "link",
-          children: g.intl.string(g.t["3gUsJb"])
+          children: u.intl.string(u.t["3gUsJb"])
         })]
       })]
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(l.$q, {
-        value: !!f,
-        onChange: b(false),
-        className: m.__invalid_actionCheckbox
+      children: (0, r.jsx)(l.P3F, {
+        onClick: b.isEditable ? h(false) : true,
+        children: (0, r.jsx)(l.FZ5, {
+          checked: p,
+          disabled: !b.isEditable
+        })
       })
     })]
   })

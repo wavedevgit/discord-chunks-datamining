@@ -23,7 +23,7 @@ function b(e) {
   let {
     guildId: t,
     handleCreateOrEditProduct: i
-  } = e, g = (0, u.ue)(t, {
+  } = e, g = (0, d.ue)(t, {
     publishedOnly: false
   }), {
     shouldRestrictUpdatingCreatorMonetizationSettings: b
@@ -78,7 +78,7 @@ function b(e) {
             },
             onCopyProductLink: () => {
               var n;
-              return n = e.id, void(0, o.JG)((0, d.ar)(t, n))
+              return n = e.id, void(0, o.JG)((0, u.ar)(t, n))
             },
             onTestDownload: () => m.Z.open({
               guildId: t,

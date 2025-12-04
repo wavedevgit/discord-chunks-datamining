@@ -66,7 +66,7 @@ function I(e) {
     index: l,
     onChange: s,
     onKeyDown: o,
-    onClear: d,
+    onClear: u,
     onRuleReorder: h,
     isDropHovered: b,
     focused: x,
@@ -86,7 +86,7 @@ function I(e) {
     end: (e, t) => {
       null == e || t.didDrop() || h(e.rule, null, true)
     }
-  }), [, D] = (0, u.L)({
+  }), [, D] = (0, d.L)({
     accept: E,
     hover: (e, t) => {
       var n;
@@ -149,7 +149,7 @@ function I(e) {
           variant: "icon-only",
           icon: g.k$p,
           "aria-label": O.intl.string(O.t.VkKicb),
-          onClick: d
+          onClick: u
         })
       }), (0, r.jsx)("div", {
         ref: S,
@@ -171,7 +171,7 @@ function S(e) {
     setRules: n,
     guild: l,
     disabled: a
-  } = e, s = l.rulesChannelId, c = l.features.has(v.GuildFeatures.PREVIEW_ENABLED), u = (0, d.e7)([h.Z], () => null != s ? h.Z.getChannel(s) : null), m = (0, d.e7)([b.ZP], () => b.ZP.getDefaultChannel(l.id)), [p, f] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
+  } = e, s = l.rulesChannelId, c = l.features.has(v.GuildFeatures.PREVIEW_ENABLED), d = (0, u.e7)([h.Z], () => null != s ? h.Z.getChannel(s) : null), m = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(l.id)), [p, f] = i.useState(null), [E, S] = i.useState(null), T = i.useCallback(e => {
     if (!a && t.length !== _.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
@@ -228,7 +228,7 @@ function S(e) {
     children: [(0, r.jsx)("div", {
       className: C.rulesContainer,
       children: t.map((e, i) => (0, r.jsx)(I, {
-        rulesChannel: null != u ? u : m,
+        rulesChannel: null != d ? d : m,
         rule: e,
         index: i,
         onChange: e => w(e, i),

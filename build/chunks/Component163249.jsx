@@ -176,8 +176,8 @@ function x(e) {
     guild: t,
     everyoneRole: n,
     setEditRoleId: l
-  } = e, [a, u] = i.useState(false), g = async () => {
-    u(true), await o.Z.createRole(t.id), u(false)
+  } = e, [a, d] = i.useState(false), g = async () => {
+    d(true), await o.Z.createRole(t.id), d(false)
   }, f = i.useCallback(() => {
     l(n.id)
   }, [l, n.id]);
@@ -209,7 +209,7 @@ function x(e) {
         })]
       }), (0, r.jsx)(s.izJ, {
         className: p.divider
-      }), (0, r.jsx)(d.Z, {
+      }), (0, r.jsx)(u.Z, {
         role: n,
         onClick: f
       })]

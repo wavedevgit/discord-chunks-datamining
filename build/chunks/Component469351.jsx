@@ -78,12 +78,12 @@ function w(e) {
       "aria-label": T.intl.string(T.t.X6h2gz),
       selectedItem: L,
       onItemSelect: k,
-      children: [(0, r.jsx)(d.Z, {
+      children: [(0, r.jsx)(u.Z, {
         id: "basic_info",
         disabledTooltip: T.intl.string(T.t.NVDuUX),
         disabled: !n,
         children: T.intl.string(T.t.w27QAR)
-      }), (0, r.jsx)(d.Z, {
+      }), (0, r.jsx)(u.Z, {
         id: "manage_listings",
         disabledTooltip: T.intl.string(T.t.NVDuUX),
         disabled: !n,
@@ -113,7 +113,7 @@ function w(e) {
       id: L,
       children: B
     }) : (0, r.jsx)(o.$jN, {});
-  return (0, r.jsxs)(u.AL, {
+  return (0, r.jsxs)(d.AL, {
     guildId: t,
     children: [M, (0, r.jsx)(m.Z, {
       guild: Z

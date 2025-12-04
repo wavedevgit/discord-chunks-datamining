@@ -2,7 +2,7 @@
 /** chunk id: 428760, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,12 +13,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk554867 = require("./554867.js");
 
-function d(e) {
+function u(e) {
   let {
     onChangeText: t,
     maxWordCount: n,
     className: l,
-    textAreaClassName: d,
+    textAreaClassName: u,
     subtitleText: g,
     initialValue: m
   } = e, p = i.useMemo(() => null != m ? m : [], [m]), {
@@ -28,25 +28,25 @@ function d(e) {
   } = (0, o.Z)(t, m, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(u.keywordsContainer, l),
+      className: a()(d.keywordsContainer, l),
       children: [(0, r.jsx)(s.lcI, {
-        className: a()(u.keywordsTextArea, d),
+        className: a()(d.keywordsTextArea, u),
         value: f,
         onChange: h,
         placeholder: c.intl.string(c.t.UyaxJy)
       }), (0, r.jsx)(s.Text, {
-        className: u.keywordsCounter,
+        className: d.keywordsCounter,
         variant: "text-xs/normal",
         color: "text-muted",
         children: "".concat(p.length, " / ").concat(n)
       })]
     }), null != b ? (0, r.jsx)(s.Text, {
-      className: a()(u.paddingTop, u.errorText),
+      className: a()(d.paddingTop, d.errorText),
       variant: "text-xs/medium",
       color: "text-feedback-critical",
       children: b
     }) : (0, r.jsx)(s.Text, {
-      className: u.paddingTop,
+      className: d.paddingTop,
       variant: "text-xs/normal",
       color: "text-default",
       children: null != g ? g : c.intl.string(c.t.Gm6G5x)

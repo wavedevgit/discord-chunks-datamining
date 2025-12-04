@@ -28,8 +28,8 @@ function x(e) {
     emojiName: l,
     title: s,
     description: c,
-    targetType: u,
-    index: d,
+    targetType: d,
+    index: u,
     dndName: m,
     onEdit: p,
     onMove: x,
@@ -39,7 +39,7 @@ function x(e) {
     dragPreview: C,
     drop: y,
     isDragging: N
-  } = (0, f.Z)(_, u, d, x);
+  } = (0, f.Z)(_, d, u, x);
   return O(v), C(y(_)), (0, r.jsxs)("div", {
     ref: _,
     className: a()(b.card, {
@@ -101,7 +101,7 @@ function j(e) {
     isDragging: f
   } = (0, s.f)(e => ({
     isDragging: e.getItemType() === g
-  })), h = (0, d.mY)();
+  })), h = (0, u.mY)();
   return 0 === t.length ? null : (0, r.jsx)("div", {
     className: a()(b.container, {
       [b.isDragging]: f
@@ -122,7 +122,7 @@ function j(e) {
         onMove: l,
         disabled: h
       })]
-    }, (0, u.ab)(e)))
+    }, (0, d.ab)(e)))
   })
 }
 

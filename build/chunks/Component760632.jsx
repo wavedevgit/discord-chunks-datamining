@@ -11,8 +11,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 let o = "".concat(60),
   c = "".concat(300),
-  u = "".concat(900),
-  d = "".concat(1800),
+  d = "".concat(900),
+  u = "".concat(1800),
   g = "".concat(3600);
 
 function m(e) {
@@ -32,12 +32,12 @@ function m(e) {
       minutes: 5
     })
   }, {
-    value: u,
+    value: d,
     label: s.intl.formatToPlainString(s.t.iXLF9W, {
       minutes: 15
     })
   }, {
-    value: d,
+    value: u,
     label: s.intl.formatToPlainString(s.t.iXLF9W, {
       minutes: 30
     })

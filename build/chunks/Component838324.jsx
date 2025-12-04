@@ -21,7 +21,7 @@ function p(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), f = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [h, b] = (0, o.VF)(t, f), [x, j] = (0, u.OA)(t, [...f]), _ = p ? j.length : b.length, v = p ? x.length : h.length, O = _ < d.md, C = v >= d.X, y = j.length - b.length, N = (0, r.jsx)(a.owK, {
+  } = e, p = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), f = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [h, b] = (0, o.VF)(t, f), [x, j] = (0, d.OA)(t, [...f]), _ = p ? j.length : b.length, v = p ? x.length : h.length, O = _ < u.md, C = v >= u.X, y = j.length - b.length, N = (0, r.jsx)(a.owK, {
     size: "sm",
     color: l.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css,
@@ -31,7 +31,7 @@ function p(e) {
     className: m.icon,
     color: l.Z.colors.WHITE.css,
     secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css
-  }), I = [Math.min(d.X, v) / d.md * 100, Math.min(d.md, _) / d.md * 100], S = !O && C ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css, l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css, l.Z.colors.TEXT_MUTED.css];
+  }), I = [Math.min(u.X, v) / u.md * 100, Math.min(u.md, _) / u.md * 100], S = !O && C ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css, l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css, l.Z.colors.TEXT_MUTED.css];
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsxs)("div", {
@@ -59,7 +59,7 @@ function p(e) {
         variant: "text-xs/normal",
         color: "text-muted",
         children: g.intl.format(g.t.k0COZY, {
-          count: d.md
+          count: u.md
         })
       })]
     }), (0, r.jsxs)("div", {
@@ -68,7 +68,7 @@ function p(e) {
         variant: "text-xs/normal",
         color: "text-muted",
         children: g.intl.format(g.t.PwXgSy, {
-          count: d.X
+          count: u.X
         })
       })]
     }), p && (0, r.jsxs)(r.Fragment, {

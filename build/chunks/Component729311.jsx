@@ -37,7 +37,7 @@ var Chunk54381 = require("./54381.js"),
 function w(e) {
   let {
     guild: t
-  } = e, a = (0, l.e7)([u.Z], () => u.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, C.Z)(t), b = (0, l.e7)([_.Z], () => _.Z.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [v, O] = i.useState(false);
+  } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, C.Z)(t), b = (0, l.e7)([_.Z], () => _.Z.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [v, O] = i.useState(false);
   return (i.useEffect(() => {
     f || a || (0, m.S)(t.id)
   }, [t.id, f, a]), v || 0 === x.length) ? null : (0, r.jsxs)("div", {
@@ -75,7 +75,7 @@ function w(e) {
             className: T.channelInfo,
             children: [(0, r.jsxs)("div", {
               className: T.channelName,
-              children: [(0, r.jsx)(d._W, {
+              children: [(0, r.jsx)(u._W, {
                 channel: e,
                 guild: t
               }), (0, r.jsx)(s.Z, {
@@ -164,7 +164,7 @@ function w(e) {
 function Z(e) {
   let {
     saveOnClose: t = false
-  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([u.Z], () => u.Z.isLoading()), s = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), d = (0, l.e7)([O.Z], () => O.Z.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), _ = i.useRef(n);
+  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), s = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([O.Z], () => O.Z.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), _ = i.useRef(n);
   return (i.useEffect(() => {
     _.current = n
   }), i.useEffect(() => {
@@ -174,13 +174,13 @@ function Z(e) {
       } = _;
       return () => {
         null != e && (0, j.DO)(e).then(() => {
-          d && (0, v.rS)(e, {
+          u && (0, v.rS)(e, {
             ignoreDefaultPrompt: true
           }).catch(() => {})
         }).catch(() => {})
       }
     }
-  }, [t, d]), null == n) ? null : a ? (0, r.jsx)(o.$jN, {}) : (0, r.jsxs)("div", {
+  }, [t, u]), null == n) ? null : a ? (0, r.jsx)(o.$jN, {}) : (0, r.jsxs)("div", {
     className: T.columns,
     children: [(0, r.jsxs)("div", {
       className: T.channelBrowser,
@@ -213,7 +213,7 @@ function Z(e) {
           channels: s,
           hasSidebar: false
         })]
-      }), d && (0, r.jsxs)(r.Fragment, {
+      }), u && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: T.largeSeparator
         }), (0, r.jsx)(o.Heading, {

@@ -43,17 +43,17 @@ function C(e) {
     defaultExpanded: n,
     children: [(0, r.jsx)(o.X, {
       level: 2,
-      children: (0, r.jsx)(u.tEY, {
+      children: (0, r.jsx)(d.tEY, {
         children: (0, r.jsxs)(c.z, {
           slot: "trigger",
           className: O.header,
-          children: [(0, r.jsx)(u.Mgn, {
+          children: [(0, r.jsx)(d.Mgn, {
             color: "currentColor"
-          }), (0, r.jsx)(u.xvT, {
+          }), (0, r.jsx)(d.xvT, {
             variant: "heading-lg/semibold",
             tag: "span",
             children: v.intl.string(v.t["F+YaVP"])
-          }), (0, r.jsx)(u.hic, {
+          }), (0, r.jsx)(d.hic, {
             className: O.expandButton
           })]
         })
@@ -71,9 +71,9 @@ function C(e) {
               children: v.intl.format(v.t.r807RN, {})
             })]
           })]
-        }), (0, r.jsx)(u.y5t, {
+        }), (0, r.jsx)(d.y5t, {
           forceLevel: 3,
-          children: (0, r.jsx)(u.X6q, {
+          children: (0, r.jsx)(d.X6q, {
             variant: "text-md/bold",
             children: v.intl.string(v.t.bLwbyU)
           })
@@ -98,7 +98,7 @@ function C(e) {
 function y(e) {
   let {
     guild: t
-  } = e, n = (0, d.e7)([h.Z], () => h.Z.can(j.Plq.ADMINISTRATOR, t)), l = t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), a = t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [s, o] = i.useState(true), [c, g] = i.useState(true);
+  } = e, n = (0, u.e7)([h.Z], () => h.Z.can(j.Plq.ADMINISTRATOR, t)), l = t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), a = t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [s, o] = i.useState(true), [c, g] = i.useState(true);
   return n ? (0, r.jsxs)("form", {
     className: O.form,
     children: [(0, r.jsxs)("fieldset", {
@@ -117,7 +117,7 @@ function y(e) {
         enabled: c,
         onChange: g
       })]
-    }), (0, r.jsx)(u.zxk, {
+    }), (0, r.jsx)(d.zxk, {
       text: v.intl.string(v.t["1Qm822"]),
       disabled: (!s || l) && (!c || a),
       onClick: () => {
@@ -151,7 +151,7 @@ function N(e) {
     enabled: l,
     onChange: a
   } = e;
-  return (0, r.jsx)(u.XZJ, {
+  return (0, r.jsx)(d.XZJ, {
     label: i ? n : t,
     labelType: "primary",
     disabled: i,

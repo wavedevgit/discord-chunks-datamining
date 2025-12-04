@@ -64,7 +64,7 @@ let T = e => {
       guild: t
     } = e, {
       location: i
-    } = (0, d.O)(), {
+    } = (0, u.O)(), {
       canCreateExpressions: l
     } = (0, f.XJ)(t);
     return (0, r.jsx)(c.Button, {
@@ -115,7 +115,7 @@ let T = e => {
     let {
       guild: t
     } = e, l = (0, v.Z)(t.id), {
-      analyticsLocations: d
+      analyticsLocations: u
     } = (0, g.ZP)(), j = (0, b.Z)(t.id), Z = t.features.has(N.GuildFeatures.MORE_STICKERS) ? N.Eu4.TIER_3 : t.premiumTier, R = t.features.has(N.GuildFeatures.MORE_STICKERS) ? N.oCV[N.Eu4.TIER_3] : j, D = (0, x.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
@@ -176,7 +176,7 @@ let T = e => {
           F = A.slice(M, U),
           H = F.length > 0,
           W = Z < v.tier,
-          z = (i = A.length, i < (0, _.A3)(N.Eu4.NONE) ? N.Eu4.NONE : i < (0, _.A3)(N.Eu4.TIER_1) ? N.Eu4.TIER_1 : i < (0, _.A3)(N.Eu4.TIER_2) ? N.Eu4.TIER_2 : i < (0, _.A3)(N.Eu4.TIER_3) || null != t && t.features.has(N.GuildFeatures.MORE_STICKERS) && i < u.D.MAX_STICKER_SLOTS ? N.Eu4.TIER_3 : N.Eu4.NONE),
+          z = (i = A.length, i < (0, _.A3)(N.Eu4.NONE) ? N.Eu4.NONE : i < (0, _.A3)(N.Eu4.TIER_1) ? N.Eu4.TIER_1 : i < (0, _.A3)(N.Eu4.TIER_2) ? N.Eu4.TIER_2 : i < (0, _.A3)(N.Eu4.TIER_3) || null != t && t.features.has(N.GuildFeatures.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? N.Eu4.TIER_3 : N.Eu4.NONE),
           V = L && !W && z === v.tier && U !== F.length,
           K = V || F.length > 0,
           Y = U - M,
@@ -191,7 +191,7 @@ let T = e => {
             var e, n;
             let r;
             return e = Math.max(1, N.oCV[v.tier] - j), n = v.tier, r = null, void(n === N.Eu4.TIER_1 ? r = N.AnalyticsObjectTypes.TIER_1 : n === N.Eu4.TIER_2 ? r = N.AnalyticsObjectTypes.TIER_2 : n === N.Eu4.TIER_3 && (r = N.AnalyticsObjectTypes.TIER_3), (0, p.Z)({
-              analyticsLocations: d,
+              analyticsLocations: u,
               analyticsLocation: {
                 page: N.ZY5.GUILD_SETTINGS,
                 section: N.jXE.GUILD_SETTINGS_STICKERS,

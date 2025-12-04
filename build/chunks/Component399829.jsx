@@ -183,7 +183,7 @@ class w extends Chunk473749.Component {
       })
     }), T(this, "renderSubscriber", (e, t, n) => {
       var i;
-      return null == e ? null : (0, r.jsx)(u.u, {
+      return null == e ? null : (0, r.jsx)(d.u, {
         __unsupportedReactNodeAsText: (0, r.jsx)(p.Z, {
           user: e.user,
           nick: e.nick

@@ -24,7 +24,7 @@ function b(e) {
   let {
     guild: t,
     scrollToQuestions: n
-  } = e, i = (0, a.e7)([m.Z], () => m.Z.editedDefaultChannelIds), l = (0, d.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
+  } = e, i = (0, a.e7)([m.Z], () => m.Z.editedDefaultChannelIds), l = (0, u.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
   return (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)("div", {
@@ -103,7 +103,7 @@ function O(e) {
   var t;
   let {
     channel: n
-  } = e, i = (0, u.iF)(n), a = null != (t = (0, o.KS)(n)) ? t : s.VL1;
+  } = e, i = (0, d.iF)(n), a = null != (t = (0, o.KS)(n)) ? t : s.VL1;
   return (0, r.jsxs)("div", {
     className: h.channel,
     children: [(0, r.jsx)(a, {

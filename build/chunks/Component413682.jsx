@@ -25,9 +25,9 @@ function m(e) {
     })
   }, []);
   return (0, r.jsxs)("div", {
-    className: u.container,
+    className: d.container,
     children: [(0, r.jsx)("div", {
-      className: u.column,
+      className: d.column,
       children: (0, r.jsx)(a.rsf, {
         label: c.intl.string(c.t.Dl4mJS),
         description: c.intl.string(c.t.xzHcod),
@@ -36,11 +36,11 @@ function m(e) {
         disabled: !t
       })
     }), (0, r.jsx)("div", {
-      className: u.column,
+      className: d.column,
       children: (0, r.jsx)("img", {
         alt: c.intl.string(c.t.UOJp5a),
-        src: (0, l.ap)(m) ? g : d,
-        className: u.progressBarImage
+        src: (0, l.ap)(m) ? g : u,
+        className: d.progressBarImage
       })
     })]
   })

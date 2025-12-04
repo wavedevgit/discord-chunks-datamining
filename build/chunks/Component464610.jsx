@@ -47,7 +47,7 @@ function h(e) {
     }), (0, r.jsx)(l.Button, {
       size: "sm",
       variant: "secondary",
-      onClick: () => (0, u.K)(a),
+      onClick: () => (0, d.K)(a),
       text: p.intl.string(p.t.bt75uw)
     })]
   })
@@ -58,7 +58,7 @@ function b(e) {
     guild: t
   } = e;
   (0, a.RD)(t.id);
-  let u = (0, s.Z6)(t.id),
+  let d = (0, s.Z6)(t.id),
     {
       rulesByTriggerType: b
     } = (0, a.pH)(t.id),
@@ -68,7 +68,7 @@ function b(e) {
     } = i.useMemo(() => {
       let e = 0,
         t = 0;
-      return null == b || Object.values(u).flat().forEach(n => {
+      return null == b || Object.values(d).flat().forEach(n => {
         var r;
         let i = null == (r = b[n]) ? true : r.filter(c.lm);
         if (null == i || 0 === i.length) return void t++;
@@ -79,11 +79,11 @@ function b(e) {
         numEnabledRules: e,
         numRules: t
       }
-    }, [u, b]),
+    }, [d, b]),
     _ = (0, m.Q)(t),
-    v = _[d.u.CAPTCHA_AND_RAID_PROTECTION],
-    O = _[d.u.DM_AND_SPAM_PROTECTION],
-    C = _[d.u.PERMISSIONS],
+    v = _[u.u.CAPTCHA_AND_RAID_PROTECTION],
+    O = _[u.u.DM_AND_SPAM_PROTECTION],
+    C = _[u.u.PERMISSIONS],
     y = (0, o.pr)(t.id);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Heading, {
@@ -102,7 +102,7 @@ function b(e) {
           enabled: v.filter(e => e.enabled).length,
           total: v.length
         }),
-        page: d.u.CAPTCHA_AND_RAID_PROTECTION
+        page: u.u.CAPTCHA_AND_RAID_PROTECTION
       }), (0, r.jsx)("div", {
         className: f.divider
       }), (0, r.jsx)(h, {
@@ -112,7 +112,7 @@ function b(e) {
           enabled: O.filter(e => e.enabled).length,
           total: O.length
         }),
-        page: d.u.DM_AND_SPAM_PROTECTION
+        page: u.u.DM_AND_SPAM_PROTECTION
       }), (0, r.jsx)("div", {
         className: f.divider
       }), y && (0, r.jsxs)(r.Fragment, {
@@ -123,7 +123,7 @@ function b(e) {
             enabled: x,
             total: j
           }),
-          page: d.u.AUTOMOD
+          page: u.u.AUTOMOD
         }), (0, r.jsx)("div", {
           className: f.divider
         })]
@@ -134,7 +134,7 @@ function b(e) {
           enabled: C.filter(e => e.enabled).length,
           total: C.length
         }),
-        page: d.u.PERMISSIONS
+        page: u.u.PERMISSIONS
       })]
     })]
   })

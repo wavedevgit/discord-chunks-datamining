@@ -66,7 +66,7 @@ function N(e) {
     location: c
   } = (0, a.O)();
   c.object = n ? _.qAy.ONBOARDING_EDIT : _.qAy.ONBOARDING_REVIEW;
-  let d = async function() {
+  let u = async function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     l ? (await (0, h.$y)(t, false), g.default.track(_.rMx.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, y(C({}, (0, s.hH)(t)), {
       action_taken: b.W$[b.W$.TOGGLE_DISABLED],
@@ -95,7 +95,7 @@ function N(e) {
         })), (0, m.$K)(b.PG.DEFAULT_CHANNELS)
       },
       disableGoodStatus: n
-    }), (0, r.jsx)(u.Z, {
+    }), (0, r.jsx)(d.Z, {
       className: O.divider
     }), (0, r.jsx)(j.ih, {
       guildId: t,
@@ -106,7 +106,7 @@ function N(e) {
         })), (0, m.$K)(b.PG.CONNECTIONS)
       },
       disableGoodStatus: n
-    }), (0, r.jsx)(u.Z, {
+    }), (0, r.jsx)(d.Z, {
       className: O.divider
     }), (0, r.jsx)(j.ap, {
       guildId: t,
@@ -117,7 +117,7 @@ function N(e) {
         })), (0, m.$K)(b.PG.CUSTOMIZATION_QUESTIONS)
       },
       disableGoodStatus: n
-    }), (0, r.jsx)(u.Z, {
+    }), (0, r.jsx)(d.Z, {
       className: O.divider
     }), (0, r.jsx)(j.P_, {
       guildId: t,
@@ -138,7 +138,7 @@ function N(e) {
       className: O.content,
       children: [(0, r.jsx)(S, {
         guildId: t,
-        handleOnboardingToggle: d
+        handleOnboardingToggle: u
       }), x]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -146,7 +146,7 @@ function N(e) {
       className: O.content,
       children: [(0, r.jsx)(T, {
         guildId: t,
-        handleOnboardingToggle: d,
+        handleOnboardingToggle: u,
         handlePreview: f
       }), x]
     }), (0, r.jsx)(P, {
@@ -248,7 +248,7 @@ function T(e) {
     guildId: t,
     handleOnboardingToggle: n,
     handlePreview: a
-  } = e, s = (0, j.$$)(t), o = (0, i.e7)([f.Z], () => f.Z.getSettings()), u = (0, c.uo)(o);
+  } = e, s = (0, j.$$)(t), o = (0, i.e7)([f.Z], () => f.Z.getSettings()), d = (0, c.uo)(o);
   return (0, r.jsxs)("div", {
     className: O.reviewHeader,
     children: [(0, r.jsxs)("div", {
@@ -271,7 +271,7 @@ function T(e) {
         variant: "primary",
         size: "sm",
         text: v.intl.string(v.t.Yz7hsB),
-        onClick: () => n(u),
+        onClick: () => n(d),
         disabled: !s
       })]
     })]
@@ -281,7 +281,7 @@ function T(e) {
 function P(e) {
   let {
     guildId: t
-  } = e, n = (0, i.e7)([d.Z], () => d.Z.getGuild(t));
+  } = e, n = (0, i.e7)([u.Z], () => u.Z.getGuild(t));
   return null == n || n.verificationLevel < _.sFg.VERY_HIGH ? null : (0, r.jsxs)("div", {
     className: O.rolesWarning,
     children: [(0, r.jsx)(l.Mgn, {

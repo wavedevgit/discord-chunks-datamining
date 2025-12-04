@@ -17,12 +17,12 @@ function s(e) {
     selectedRoleIds: s,
     onChange: o,
     placeholder: c,
-    disableEveryoneRole: u,
-    includeRoleRestrictedPrivateChannels: d = false,
+    disableEveryoneRole: d,
+    includeRoleRestrictedPrivateChannels: u = false,
     includeStageVoiceChannels: g = false,
     helperText: m,
     className: p
-  } = e, f = (0, l.r)(t, n, d, g), h = (0, a.h)(t, s, u);
+  } = e, f = (0, l.r)(t, n, u, g), h = (0, a.h)(t, s, d);
   return (0, r.jsx)(i.ZP, {
     channelRows: f,
     roleRows: h,

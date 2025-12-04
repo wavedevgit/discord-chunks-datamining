@@ -16,8 +16,8 @@ let c = e => {
     title: t,
     subtext: n = s.intl.string(s.t.jHpxwo),
     localizedNumber: c,
-    isTrendingUp: u,
-    isTrendingDown: d,
+    isTrendingUp: d,
+    isTrendingDown: u,
     tooltipText: g
   } = e, m = null != g ? (0, r.jsx)(l.aML, {
     "data-migration-pending": true,
@@ -75,13 +75,13 @@ let c = e => {
       })
     }), (0, r.jsxs)("div", {
       className: o.analyticsCardArrowSubText,
-      children: [u ? (0, r.jsx)(a.Z, {
+      children: [d ? (0, r.jsx)(a.Z, {
         className: o.trendingArrow,
         color: i.Z.unsafe_rawColors.GREEN_360.css,
         "aria-label": s.intl.string(s.t["8mcccd"]),
         width: 14,
         height: 12
-      }) : null, d ? (0, r.jsx)(a.Z, {
+      }) : null, u ? (0, r.jsx)(a.Z, {
         className: o.trendingArrowIconDown,
         color: i.Z.unsafe_rawColors.RED_400.css,
         "aria-label": s.intl.string(s.t.NLl6Q3),

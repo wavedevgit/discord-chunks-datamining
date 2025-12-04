@@ -28,19 +28,19 @@ function g(e) {
   } = (0, a.gX)(t), b = g.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
-    return (null == n ? true : n.status) === u.x_.OPEN || (null == n ? true : n.status) === u.x_.PAYOUT_DEFERRED
+    return (null == n ? true : n.status) === d.x_.OPEN || (null == n ? true : n.status) === d.x_.PAYOUT_DEFERRED
   }), x = p.length > 0, j = f.length > 0, _ = b.length > 0;
   return null == m ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: d.intl.format(d.t.fvOn6J, {
+      children: u.intl.format(u.t.fvOn6J, {
         guildName: m.name
       })
     }), (0, r.jsx)(l.LZC, {
       size: 16
     }), (0, r.jsx)(l.Button, {
       variant: "critical-primary",
-      text: d.intl.string(d.t.FrOFSo),
+      text: u.intl.string(u.t.FrOFSo),
       disabled: !h || x || j || _,
       onClick: () => {
         (0, l.ZDy)(async () => {

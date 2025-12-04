@@ -131,7 +131,7 @@ function Z() {
         }()
       }, [e]), {
         loading: t,
-        guildTemplate: (0, u.e7)([j.Z], () => j.Z.getForGuild(e), [e])
+        guildTemplate: (0, d.e7)([j.Z], () => j.Z.getForGuild(e), [e])
       }
     }(module.id);
   if (Chunk473749.useEffect(() => {
@@ -336,7 +336,7 @@ function L(e) {
 function k(e) {
   let {
     guild: t
-  } = e, n = (0, u.e7)([S], () => S.name), [r, a] = l.useState(false), s = async () => {
+  } = e, n = (0, d.e7)([S], () => S.name), [r, a] = l.useState(false), s = async () => {
     S.setError(null), a(true);
     try {
       await x.Z.createGuildTemplate(t.id, S.name, S.description)

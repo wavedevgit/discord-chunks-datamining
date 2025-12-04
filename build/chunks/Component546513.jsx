@@ -18,10 +18,10 @@ function o(e) {
     triggerType: o,
     initWithEdit: c
   } = e, {
-    perGuildMaxCount: u
-  } = i.I6[o], d = 0 === n.length, g = u > n.length && !d;
+    perGuildMaxCount: d
+  } = i.I6[o], u = 0 === n.length, g = d > n.length && !u;
   return (0, r.jsxs)(r.Fragment, {
-    children: [d && (0, r.jsx)(a.Z, {
+    children: [u && (0, r.jsx)(a.Z, {
       guildId: t,
       triggerType: o
     }), n.map(e => (0, r.jsx)(s.Z, {

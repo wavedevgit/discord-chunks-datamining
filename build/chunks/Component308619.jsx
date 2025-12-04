@@ -2,7 +2,7 @@
 /** chunk id: 308619, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,27 +13,27 @@ var Chunk54381 = require("./54381.js"),
   Chunk434404 = require("./434404.js"),
   Chunk999382 = require("./999382.js");
 
-function d() {
+function u() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
     t = null == module ? true : module.id,
     n = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProfileError()),
-    d = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
+    u = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
     g = (0, Chunk442837.e7)([Chunk314852.Z], () => Chunk314852.Z.getIsUpdating(exports)),
     m = Chunk473749.useMemo(() => null == require ? true : require.getAnyErrorMessage(), [require]),
     p = Chunk473749.useCallback(() => {
-      if (null == module || null == d) return;
+      if (null == module || null == u) return;
       let t = {
-        name: d.name,
-        description: d.description,
-        icon: d.icon,
-        brandColorPrimary: d.brandColorPrimary,
-        traits: d.traits,
-        visibility: d.visibility,
-        gameApplicationIds: d.gameApplicationIds,
-        customBanner: d.customBanner
+        name: u.name,
+        description: u.description,
+        icon: u.icon,
+        brandColorPrimary: u.brandColorPrimary,
+        traits: u.traits,
+        visibility: u.visibility,
+        gameApplicationIds: u.gameApplicationIds,
+        customBanner: u.customBanner
       };
       (0, Chunk699553.pV)(module.id, exports)
-    }, [module, d]),
+    }, [module, u]),
     f = Chunk473749.useCallback(() => {
       null != exports && Chunk434404.Z.init(exports)
     }, [exports]);

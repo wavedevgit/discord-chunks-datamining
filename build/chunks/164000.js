@@ -2,7 +2,7 @@
 /** chunk id: 164000, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -12,15 +12,15 @@ var Chunk473749 = require("./473749.js"),
   Chunk293810 = require("./293810.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e) {
+function d(e) {
   let t = (0, i.e7)([s.Z, a.Z], () => {
       let t = s.Z.getGuild(e);
       return null != t ? a.Z.getEveryoneRole(t) : true
     }),
     n = r.useMemo(() => null == t || (0, l.Fs)(t, c.Plq.VIEW_CHANNEL) ? o.e3.SOME_CHANNELS : o.e3.ALL_CHANNELS, [t]),
-    u = n === o.e3.ALL_CHANNELS;
+    d = n === o.e3.ALL_CHANNELS;
   return {
     format: n,
-    isFullServerGating: u
+    isFullServerGating: d
   }
 }

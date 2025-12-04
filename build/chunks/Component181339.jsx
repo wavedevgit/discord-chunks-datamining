@@ -36,7 +36,7 @@ function I(e) {
     isExpanded: n,
     selectedChannelId: l,
     className: s
-  } = e, h = (0, m.BT)(t), x = (0, p.Z)(t), [j, _] = i.useState(x), v = (0, o.e7)([b.Z], () => b.Z.getChannel(l), [l]), O = (0, d.ZP)(v), I = async () => {
+  } = e, h = (0, m.BT)(t), x = (0, p.Z)(t), [j, _] = i.useState(x), v = (0, o.e7)([b.Z], () => b.Z.getChannel(l), [l]), O = (0, u.ZP)(v), I = async () => {
     _(!j);
     try {
       var e;
@@ -50,7 +50,7 @@ function I(e) {
           guild_id: t.id,
           channel_id: n
         };
-        (0, u.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, e)
+        (0, d.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, e)
       }
     } catch (e) {
       (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE)), _(!x)
@@ -104,7 +104,7 @@ function S(e) {
       } = e;
       return {
         value: t.id,
-        label: (0, d.F6)(t, v.default, _.Z, true)
+        label: (0, u.F6)(t, v.default, _.Z, true)
       }
     });
     return null != m ? e : [...e]
@@ -125,7 +125,7 @@ function S(e) {
           guild_id: n.id,
           channel_id: e
         };
-        (0, u.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, t)
+        (0, d.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, t)
       }
     } catch (e) {
       (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE)), l(m)
@@ -152,7 +152,7 @@ function T(e) {
   var t, n;
   let {
     guild: l
-  } = e, [a, s] = i.useState(false), o = null != (t = l.safetyAlertsChannelId) ? t : null, [c, u] = i.useState(null != o ? o : null != (n = null == l ? true : l.publicUpdatesChannelId) ? n : null);
+  } = e, [a, s] = i.useState(false), o = null != (t = l.safetyAlertsChannelId) ? t : null, [c, d] = i.useState(null != o ? o : null != (n = null == l ? true : l.publicUpdatesChannelId) ? n : null);
   return (0, r.jsx)(h.Z, {
     renderHeader: (0, r.jsx)(I, {
       isExpanded: a,
@@ -164,7 +164,7 @@ function T(e) {
     children: (0, r.jsx)(S, {
       guild: l,
       selectedChannelId: c,
-      setSelectedChannelId: u
+      setSelectedChannelId: d
     })
   })
 }

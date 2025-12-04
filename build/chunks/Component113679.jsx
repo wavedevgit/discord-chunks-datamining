@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
 function m(e) {
   let {
     guild: t
-  } = e, n = i.useId(), m = (0, l.e7)([o.Z], () => null != t && o.Z.can(u.Plq.MANAGE_GUILD, t), [t]), p = t.features.has(u.GuildFeatures.COMMUNITY), [f, h] = i.useState(t.features.has(u.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), b = i.useCallback(async e => {
+  } = e, n = i.useId(), m = (0, l.e7)([o.Z], () => null != t && o.Z.can(d.Plq.MANAGE_GUILD, t), [t]), p = t.features.has(d.GuildFeatures.COMMUNITY), [f, h] = i.useState(t.features.has(d.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), b = i.useCallback(async e => {
     h(e), await (0, s.fp)(t, e)
   }, [t]);
   return p ? null : (0, r.jsxs)("div", {
@@ -31,11 +31,11 @@ function m(e) {
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         color: "always-white",
-        children: d.intl.string(d.t.jDarmy)
+        children: u.intl.string(u.t.jDarmy)
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: d.intl.string(d.t["/ee7yK"])
+        children: u.intl.string(u.t["/ee7yK"])
       })]
     }), (0, r.jsx)("div", {
       className: g.buttonContainer,

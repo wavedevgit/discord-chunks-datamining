@@ -82,7 +82,7 @@ let j = function(e) {
     })
   }, [t]), O = (0, r.jsx)(c.Z, {
     image: t.homeHeader,
-    makeURL: e => null != e ? d.ZP.getGuildHomeHeaderURL({
+    makeURL: e => null != e ? u.ZP.getGuildHomeHeaderURL({
       id: t.id,
       homeHeader: e
     }) : null,
@@ -115,7 +115,7 @@ let j = function(e) {
           children: b.intl.string(b.t.Vwintv)
         }), (0, r.jsx)("div", {
           className: x.uploadButton,
-          children: (0, r.jsx)(u.Z, {
+          children: (0, r.jsx)(d.Z, {
             onChange: _,
             maxFileSizeBytes: h.B,
             text: b.intl.string(b.t.yG2pUi),

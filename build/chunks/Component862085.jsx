@@ -2,63 +2,64 @@
 /** chunk id: 862085, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk755721 = require("./755721.js"),
-  Chunk481060 = require("./481060.js"),
+var Chunk481060 = require("./481060.js"),
   Chunk556012 = require("./556012.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk464992 = require("./464992.js");
 
-function c(e) {
+function o(e) {
   let {
     action: t,
     triggerType: n,
-    toggled: c,
-    onToggleAction: u
-  } = e, d = e => () => u(e), g = (0, a.c)(t.type, t, n);
-  if (null == g) return null;
+    toggled: o,
+    onToggleAction: c
+  } = e, d = e => () => c(e), u = (0, l.c)(t.type, t, n);
+  if (null == u) return null;
   let {
-    headerText: m,
-    descriptionText: p,
-    icon: f
-  } = g;
+    headerText: g,
+    descriptionText: m,
+    icon: p
+  } = u;
   return (0, r.jsxs)("div", {
-    className: o.actionContainer,
+    className: s.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: o.actionIconContainer,
-      children: (0, r.jsx)(f, {
+      className: s.actionIconContainer,
+      children: (0, r.jsx)(p, {
         size: "custom",
         color: "currentColor",
-        className: o.actionIcon
+        className: s.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: o.actionTextContainer,
-      children: [(0, r.jsx)(l.Heading, {
+      className: s.actionTextContainer,
+      children: [(0, r.jsx)(i.Heading, {
         variant: "heading-sm/semibold",
-        children: m
-      }), (0, r.jsx)(l.Text, {
+        children: g
+      }), (0, r.jsx)(i.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: p
-      }), c ? (0, r.jsxs)(l.Text, {
+        children: m
+      }), o ? (0, r.jsxs)(i.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [s.intl.string(s.t.Oa9oWJ), (0, r.jsx)(l.P3F, {
+        children: [a.intl.string(a.t.Oa9oWJ), (0, r.jsx)(i.P3F, {
           onClick: d(true),
-          className: o.editChannel,
+          className: s.editChannel,
           tag: "span",
           role: "link",
-          children: s.intl.string(s.t.QupmYY)
+          children: a.intl.string(a.t.QupmYY)
         })]
       }) : null]
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(i.$q, {
-        value: c,
-        onChange: d(false),
-        className: o.__invalid_actionCheckbox
+      children: (0, r.jsx)(i.P3F, {
+        onClick: u.isEditable ? d(false) : true,
+        children: (0, r.jsx)(i.FZ5, {
+          checked: o,
+          disabled: !u.isEditable
+        })
       })
     })]
   })

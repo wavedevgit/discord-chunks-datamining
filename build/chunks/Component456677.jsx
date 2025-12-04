@@ -15,7 +15,7 @@ function c(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, c = i.useMemo(() => (0, a.V9)(t.triggerType), [t.triggerType]), u = s.km(t.guildId), d = i.useMemo(() => (0, l.U5)(), []), g = (e, r) => {
+  } = e, c = i.useMemo(() => (0, a.V9)(t.triggerType), [t.triggerType]), d = s.km(t.guildId), u = i.useMemo(() => (0, l.U5)(), []), g = (e, r) => {
     var i, l;
     if (null == r) return;
     let a = t.actions.some(e => e.type === r.type),
@@ -60,15 +60,15 @@ function c(e) {
       return (0, r.jsx)(o.Z, {
         guildId: t.guildId,
         triggerType: t.triggerType,
-        action: null != n ? n : d[e],
+        action: null != n ? n : u[e],
         toggled: null != n,
         onToggleAction: async n => {
           let r = t.actions.find(t => t.type === e),
             i = null != r,
-            l = d[e],
+            l = u[e],
             a = n ? r : l;
           if (null != a && (!i || n)) {
-            let n = u[e];
+            let n = d[e];
             null != n ? g(true, await n(t, a)) : g(true, a)
           } else g(false, i ? r : l)
         }

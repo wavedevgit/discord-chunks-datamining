@@ -21,11 +21,11 @@ function g(e) {
   } = e, g = null == t ? true : t.id, {
     memberCount: m,
     onlineCount: p
-  } = (0, a.cj)([u.Z], () => {
+  } = (0, a.cj)([d.Z], () => {
     var e, t;
     return {
-      memberCount: null != (e = u.Z.getMemberCount(g)) ? e : 1234,
-      onlineCount: null != (t = u.Z.getOnlineCount(g)) ? t : 1234
+      memberCount: null != (e = d.Z.getMemberCount(g)) ? e : 1234,
+      onlineCount: null != (t = d.Z.getOnlineCount(g)) ? t : 1234
     }
   }, [g]), f = i.useRef((0, l.Z)()), h = i.useMemo(() => {
     var e, r;
@@ -80,7 +80,7 @@ function g(e) {
     expressionSourceApplication: null,
     expressionSourceGuild: h,
     node: b,
-    closePopout: d.dG,
+    closePopout: u.dG,
     nonce: f.current,
     demoMode: true
   }) : null

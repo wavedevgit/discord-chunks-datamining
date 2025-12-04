@@ -18,15 +18,15 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 let c = ["pct_retained", "new_members", "visitors", "communicators"],
-  u = {},
-  d = null;
+  d = {},
+  u = null;
 
 function g(e) {
   let {
     guildId: t,
     stats: n
   } = e;
-  d = null;
+  u = null;
   let r = {},
     i = {},
     a = n[0],
@@ -36,7 +36,7 @@ function g(e) {
       let t = l()(e);
       null != s && 0 !== s[e] && (r["".concat(t, "Change")] = (a[e] - s[e]) * 100 / s[e]), i[t] = a[e]
     }
-  }), u[t] = function(e) {
+  }), d[t] = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -47,21 +47,21 @@ function g(e) {
       })
     }
     return e
-  }({}, i, r, u[t])
+  }({}, i, r, d[t])
 }
 
 function m(e) {
   let {
     error: t
   } = e;
-  d = t.code
+  u = t.code
 }
 class p extends(r = Chunk442837.ZP.Store) {
   getOverviewAnalytics(e) {
-    return u[e]
+    return d[e]
   }
   getError() {
-    return d
+    return u
   }
 }
 o(p, "displayName", "GuildSettingsAnalyticsStore");

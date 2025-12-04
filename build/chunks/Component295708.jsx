@@ -15,12 +15,12 @@ function c(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, [c, u] = i.useState(t.name);
+  } = e, [c, d] = i.useState(t.name);
   return (0, r.jsx)(l.oil, {
     label: o.intl.string(o.t.WVAHxF),
     onChange: e => {
       var r, i;
-      u(e), n((r = function(e) {
+      d(e), n((r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

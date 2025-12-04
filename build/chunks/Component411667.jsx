@@ -17,19 +17,19 @@ function c(e) {
     } = e,
     {
       resubmittingEnableRequest: c,
-      resubmissionError: u,
-      createEnableRequest: d,
+      resubmissionError: d,
+      createEnableRequest: u,
       resubmittedRequest: g,
       requestRejectedNoticeText: m,
       reapplyNoticeText: p
     } = (0, l.Z)(n),
     f = n.features.has(a.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED),
     h = n.features.has(a.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
-  if (null != u) return (0, r.jsx)("div", {
+  if (null != d) return (0, r.jsx)("div", {
     className: o.noticeContainer,
     children: (0, r.jsx)(i.M14, {
       type: "critical",
-      children: u.getAnyErrorMessage()
+      children: d.getAnyErrorMessage()
     })
   });
   let b = null;
@@ -40,7 +40,7 @@ function c(e) {
       action: (0, r.jsx)(i.zxk, {
         variant: "overlay-secondary",
         text: t,
-        onClick: d,
+        onClick: u,
         loading: c
       }),
       children: b

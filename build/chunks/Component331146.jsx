@@ -26,25 +26,25 @@ function g(e) {
     size: 32
   });
   return (0, r.jsxs)("div", {
-    className: l()(d.emojiRow, {
-      [d.disabled]: i
+    className: l()(u.emojiRow, {
+      [u.disabled]: i
     }),
     children: [(0, r.jsx)("img", {
-      className: d.emojiImage,
+      className: u.emojiImage,
       src: o,
       alt: t.name
     }), (0, r.jsx)(a.Text, {
       color: "header-primary",
       variant: "text-md/medium",
-      className: d.emojiAlias,
+      className: u.emojiAlias,
       children: t.name
     }), (0, r.jsx)("div", {
-      className: d.deleteButton,
+      className: u.deleteButton,
       children: (0, r.jsx)(a.hU, {
         variant: "secondary",
         icon: a.XHJ,
         onClick: () => n(t),
-        "aria-label": u.intl.string(u.t.dVS92c),
+        "aria-label": d.intl.string(d.t.dVS92c),
         disabled: i
       })
     })]
@@ -58,7 +58,7 @@ function m(e) {
     onRemoveEmoji: i
   } = e, l = (0, c.Z)(n), a = null != t ? l.filter(e => t.has(e.id)) : [], s = (0, o.mY)();
   return (0, r.jsx)("div", {
-    className: d.container,
+    className: u.container,
     children: a.map(e => (0, r.jsx)(g, {
       emoji: e,
       onRemoveEmoji: () => i(e),

@@ -55,7 +55,7 @@ function h(e) {
   } = e, h = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [b] = i.useState(h), [x, j] = i.useState(false), {
     editingRule: _,
     createNewEditingRule: v
-  } = (0, u.V)(), {
+  } = (0, d.V)(), {
     getDefaultRuleName: O
   } = c.I6[n], C = !(0, o.Vb)(_) && (null == _ ? true : _.triggerType) === n, [y, N] = i.useState(C ? _ : b), E = (0, s.q_F)({
     opacity: +!C,
@@ -84,7 +84,7 @@ function h(e) {
     children: [(0, r.jsx)(l.animated.div, {
       className: m.animatedRuleCardContainer,
       style: I,
-      children: (0, r.jsx)(d.Z, {
+      children: (0, r.jsx)(u.Z, {
         rule: y,
         persistEdit: x
       })

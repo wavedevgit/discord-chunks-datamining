@@ -163,19 +163,19 @@ let V = e => {
       }
       return i
     }(e, ["renderPopoutBody", "renderPopoutChildren", "popoutTargetRef"]);
-    let [s, o] = i.useState(false), c = i.useMemo(() => new u.V7, []), d = i.useCallback(() => {
+    let [s, o] = i.useState(false), c = i.useMemo(() => new d.V7, []), u = i.useCallback(() => {
       c.stop(), o(true)
     }, [c]), g = i.useCallback(() => {
       c.start(200, () => o(false))
     }, [c]), p = {
-      onMouseEnter: d,
+      onMouseEnter: u,
       onMouseLeave: g
     };
     return (0, r.jsx)(m.yRy, B(U({
       shouldShow: s,
       renderPopout: e => (0, r.jsx)(m.VqE, {
         className: M.browserUnsupportedDialog,
-        onMouseEnter: d,
+        onMouseEnter: u,
         onMouseLeave: g,
         children: t(e)
       })
@@ -213,7 +213,7 @@ function Y(e) {
     return [null != (e = O.Z.getSoundsForGuild(t.id)) ? e : k.Hy, O.Z.isFetchingSounds() || O.Z.isFetchingDefaultSounds()]
   }), {
     canCreateExpressions: s
-  } = (0, _.XJ)(t), o = i.useRef(null), u = (0, h.ZP)(), d = t.premiumTier, g = (0, w.yw)(t, l, d);
+  } = (0, _.XJ)(t), o = i.useRef(null), d = (0, h.ZP)(), u = t.premiumTier, g = (0, w.yw)(t, l, u);
   i.useEffect(() => {
     (0, v.w)()
   }, []);
@@ -257,7 +257,7 @@ function Y(e) {
         children: !f && x
       })]
     }), f ? (0, r.jsxs)(m.ubH, {
-      theme: u,
+      theme: d,
       className: M.empty,
       children: [(0, r.jsx)(m.oxh, {
         darkSrc: n(458601),
@@ -278,7 +278,7 @@ function Y(e) {
         color: "header-primary",
         children: (0, r.jsx)(z, {
           guildId: t.id,
-          currentTier: d,
+          currentTier: u,
           availableSounds: g
         })
       }), (0, r.jsx)(A.Z, {
@@ -314,7 +314,7 @@ function q(e) {
     onPlaySound: s,
     guild: o
   } = e, {
-    soundId: u,
+    soundId: d,
     name: g,
     user: h,
     userId: b,
@@ -329,7 +329,7 @@ function q(e) {
     if (!Z) {
       D(true);
       try {
-        await (0, v.AA)(o.id, u)
+        await (0, v.AA)(o.id, d)
       } catch (e) {
         D(false)
       }
@@ -413,7 +413,7 @@ function q(e) {
       }), (0, r.jsx)(m.P3F, {
         className: M.soundRemove,
         onClick: function(e) {
-          e.stopPropagation(), (0, d.Z)({
+          e.stopPropagation(), (0, u.Z)({
             title: G.intl.formatToPlainString(G.t["PR/VbI"], {
               soundName: g
             }),

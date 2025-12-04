@@ -24,30 +24,30 @@ function g(e) {
   } = e;
   return (0, r.jsx)(i.v2r, {
     navId: "add-questions",
-    className: d.menu,
+    className: u.menu,
     onClose: l.Zy,
-    "aria-label": u.intl.string(u.t.liqwPJ),
+    "aria-label": d.intl.string(d.t.liqwPJ),
     onSelect: n,
     children: (0, r.jsxs)(i.kSQ, {
       children: [(0, r.jsx)(i.sNh, {
         id: "text-input",
         icon: (0, i.GSL)(a.Z),
-        label: u.intl.string(u.t.w6Q9wz),
+        label: d.intl.string(d.t.w6Q9wz),
         action: () => (0, c.Md)(s.QJ.TEXT_INPUT, t, o)
       }), (0, r.jsx)(i.sNh, {
         id: "paragraph",
         icon: i.OvV,
-        label: u.intl.string(u.t.gG0JBN),
+        label: d.intl.string(d.t.gG0JBN),
         action: () => (0, c.Md)(s.QJ.PARAGRAPH, t, o)
       }), (0, r.jsx)(i.sNh, {
         id: "multiple-choice",
         icon: i.jE$,
-        label: u.intl.string(u.t.ooKh3m),
+        label: d.intl.string(d.t.ooKh3m),
         action: () => (0, c.Md)(s.QJ.MULTIPLE_CHOICE, t, o)
       }), g && (0, r.jsx)(i.sNh, {
         id: "terms",
         icon: i.snC,
-        label: u.intl.string(u.t["3pz9t3"]),
+        label: d.intl.string(d.t["3pz9t3"]),
         action: () => (0, c.Md)(s.QJ.TERMS, t, o)
       })]
     })
@@ -60,8 +60,8 @@ let m = function(e) {
     allowTerms: i
   } = e;
   return (0, r.jsx)(o.A, {
-    text: u.intl.string(u.t.CoHdoG),
-    tooltipText: u.intl.string(u.t.nsI4dU),
+    text: d.intl.string(d.t.CoHdoG),
+    tooltipText: d.intl.string(d.t.nsI4dU),
     onClick: e => {
       (0, l.vq)(e, e => {
         var l, a;

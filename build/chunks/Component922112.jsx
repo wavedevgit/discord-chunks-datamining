@@ -30,8 +30,8 @@ let b = function(e) {
     title: v,
     channelId: O,
     description: C
-  } = l, y = d.Z.getChannel(O), N = null;
-  null != y && (0, u.k3)(y) || (N = f.intl.string(f.t.kTdL8X));
+  } = l, y = u.Z.getChannel(O), N = null;
+  null != y && (0, d.k3)(y) || (N = f.intl.string(f.t.kTdL8X));
   let E = null == C || 0 === C.length,
     I = g.ZP.getResourceChannelIconURL({
       channelId: l.channelId,

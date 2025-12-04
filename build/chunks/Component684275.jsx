@@ -2,7 +2,7 @@
 /** chunk id: 684275, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -42,7 +42,7 @@ function c(e, t) {
   }), e
 }
 
-function u(e) {
+function d(e) {
   let t = "",
     n = "";
   switch (e) {
@@ -64,12 +64,12 @@ function u(e) {
   }
 }
 
-function d(e) {
+function u(e) {
   var t;
   let {
     rule: n,
     onChangeRule: s
-  } = e, [d, g] = i.useState(new Set(null == n || null == (t = n.triggerMetadata) ? true : t.presets)), m = i.useMemo(() => e => {
+  } = e, [u, g] = i.useState(new Set(null == n || null == (t = n.triggerMetadata) ? true : t.presets)), m = i.useMemo(() => e => {
     s(c(o({}, n), {
       triggerMetadata: c(o({}, n.triggerMetadata), {
         presets: e
@@ -79,21 +79,21 @@ function d(e) {
     let t = e.map(e => e);
     g(new Set(t)), m(t)
   }, [m]), f = i.useMemo(() => [{
-    label: u(a.Ux.PROFANITY).headerText,
-    description: u(a.Ux.PROFANITY).subtitleText,
+    label: d(a.Ux.PROFANITY).headerText,
+    description: d(a.Ux.PROFANITY).subtitleText,
     value: String(a.Ux.PROFANITY)
   }, {
-    label: u(a.Ux.SLURS).headerText,
-    description: u(a.Ux.SLURS).subtitleText,
+    label: d(a.Ux.SLURS).headerText,
+    description: d(a.Ux.SLURS).subtitleText,
     value: String(a.Ux.SLURS)
   }, {
-    label: u(a.Ux.SEXUAL_CONTENT).headerText,
-    description: u(a.Ux.SEXUAL_CONTENT).subtitleText,
+    label: d(a.Ux.SEXUAL_CONTENT).headerText,
+    description: d(a.Ux.SEXUAL_CONTENT).subtitleText,
     value: String(a.Ux.SEXUAL_CONTENT)
   }], []);
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(l.cOn, {
-      selectedValues: Array.from(d).map(String),
+      selectedValues: Array.from(u).map(String),
       onChange: p,
       options: f
     })

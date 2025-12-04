@@ -141,11 +141,11 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
           onChange: e => A(e),
           disabled: B
         })
-      }), (0, r.jsx)(u.W, {
+      }), (0, r.jsx)(d.W, {
         component: "div",
         className: C.contentRegion,
         children: k && (0, r.jsx)(g.oXn, {
-          children: (0, r.jsx)(d.Z, {
+          children: (0, r.jsx)(u.Z, {
             submitting: b,
             onReset: () => {
               var e, t;

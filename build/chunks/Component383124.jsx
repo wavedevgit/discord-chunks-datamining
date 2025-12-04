@@ -26,42 +26,42 @@ function g(e) {
   } = (0, c.$)(t, {
     coverImageHeight: 336,
     coverImageWidth: 252
-  }), f = (0, o.e7)([u.Z], () => {
+  }), f = (0, o.e7)([d.Z], () => {
     var e, n;
-    return null != (n = null == (e = u.Z.getDetectableGame(t)) ? true : e.name) ? n : ""
+    return null != (n = null == (e = d.Z.getDetectableGame(t)) ? true : e.name) ? n : ""
   }), h = i.useCallback(() => {
     null == l || l(t)
   }, [t, l]), b = i.useMemo(() => m ? null : null == p ? (0, r.jsx)("div", {
-    className: d.gameUnknownImage,
+    className: u.gameUnknownImage,
     children: (0, r.jsx)(s.IMN, {
       size: "lg"
     })
   }) : (0, r.jsx)("img", {
-    className: d.gameImage,
+    className: u.gameImage,
     alt: f,
     src: p
   }), [p, m, f]);
   return (0, r.jsxs)("div", {
-    className: a()(d.selectedGame, {
-      [d.dimmed]: !n,
-      [d.disabled]: g
+    className: a()(u.selectedGame, {
+      [u.dimmed]: !n,
+      [u.disabled]: g
     }),
     children: [(0, r.jsxs)(s.P3F, {
       "aria-disabled": g,
       tabIndex: g ? false : 0,
       onClick: g ? true : h,
-      className: a()(d.gameImageBackground, {
-        [d.gameImageLoading]: m,
-        [d.disabled]: g
+      className: a()(u.gameImageBackground, {
+        [u.gameImageLoading]: m,
+        [u.disabled]: g
       }),
       children: [n && (0, r.jsx)("div", {
-        className: d.checkBackground,
+        className: u.checkBackground,
         children: (0, r.jsx)(s.FZ5, {
           checked: n
         })
       }), b]
     }), (0, r.jsx)(s.Text, {
-      className: d.gameName,
+      className: u.gameName,
       variant: "text-xs/medium",
       color: "header-primary",
       children: f

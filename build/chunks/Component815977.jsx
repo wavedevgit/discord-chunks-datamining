@@ -110,7 +110,7 @@ function L(e) {
           if (C.Z.hasChanges() && !C.Z.canCloseEarly()) {
             p.S.dispatch(Z.CkL.SHAKE_APP, {
               duration: 300,
-              intensity: d.$x
+              intensity: u.$x
             }), p.S.dispatch(Z.CkL.EMPHASIZE_NOTICE);
             return
           }(0, v.NB)(), (0, b.BG)(), (0, _.bj)(), (0, j.Pk)(), (0, x.$K)(y.PG.LANDING)
@@ -118,7 +118,7 @@ function L(e) {
         children: [(0, r.jsx)(m.Z, {
           className: D.arrow,
           direction: m.Z.Directions.LEFT
-        }), (0, r.jsx)(u.Text, {
+        }), (0, r.jsx)(d.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
           children: R.intl.string(R.t["13/7kX"])
@@ -140,28 +140,28 @@ function k(e) {
   }, c = (0, s.e7)([O.Z], () => O.Z.advancedMode);
   return (0, r.jsxs)("div", {
     className: D.progressContainer,
-    children: [(0, r.jsxs)(u.P3F, {
+    children: [(0, r.jsxs)(d.P3F, {
       className: a()(D.progressBarContainer, D.clickableProgressBar),
       onClick: o(y.PG.SAFETY_CHECK),
       children: [(0, r.jsx)("div", {
         className: a()(D.progressBar, {
           [D.progressBarCurrent]: t === y.PG.SAFETY_CHECK
         })
-      }), (0, r.jsx)(u.Text, {
+      }), (0, r.jsx)(d.Text, {
         color: t === y.PG.SAFETY_CHECK ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
         children: R.intl.format(R.t.Me5Mma, {
           stepNumber: 1
         })
       })]
-    }), (0, r.jsxs)(u.P3F, {
+    }), (0, r.jsxs)(d.P3F, {
       className: a()(D.progressBarContainer, D.clickableProgressBar),
       onClick: o(y.PG.DEFAULT_CHANNELS),
       children: [(0, r.jsx)("div", {
         className: a()(D.progressBar, {
           [D.progressBarCurrent]: t === y.PG.DEFAULT_CHANNELS
         })
-      }), (0, r.jsx)(u.Text, {
+      }), (0, r.jsx)(d.Text, {
         color: t === y.PG.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
         children: c ? R.intl.formatToPlainString(R.t["8mGhOy"], {
@@ -170,14 +170,14 @@ function k(e) {
           stepNumber: 2
         })
       })]
-    }), (0, r.jsxs)(u.P3F, {
+    }), (0, r.jsxs)(d.P3F, {
       className: a()(D.progressBarContainer, D.clickableProgressBar),
       onClick: o(y.PG.CUSTOMIZATION_QUESTIONS),
       children: [(0, r.jsx)("div", {
         className: a()(D.progressBar, {
           [D.progressBarCurrent]: t === y.PG.CUSTOMIZATION_QUESTIONS
         })
-      }), (0, r.jsx)(u.Text, {
+      }), (0, r.jsx)(d.Text, {
         color: t === y.PG.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
         children: c ? R.intl.formatToPlainString(R.t.vb6J5g, {
@@ -186,14 +186,14 @@ function k(e) {
           stepNumber: 3
         })
       })]
-    }), i && (0, r.jsxs)(u.P3F, {
+    }), i && (0, r.jsxs)(d.P3F, {
       className: a()(D.progressBarContainer, D.clickableProgressBar),
       onClick: o(y.PG.HOME_SETTINGS),
       children: [(0, r.jsx)("div", {
         className: a()(D.progressBar, {
           [D.progressBarCurrent]: t === y.PG.HOME_SETTINGS
         })
-      }), (0, r.jsx)(u.Text, {
+      }), (0, r.jsx)(d.Text, {
         color: t === y.PG.HOME_SETTINGS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
         children: R.intl.format(R.t.KVOukh, {
@@ -206,7 +206,7 @@ function k(e) {
         className: a()(D.progressBar, {
           [D.progressBarCurrent]: t === y.PG.REVIEW
         })
-      }), (0, r.jsx)(u.Text, {
+      }), (0, r.jsx)(d.Text, {
         color: t === y.PG.REVIEW ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
         children: R.intl.format(R.t.oVzkiA, {

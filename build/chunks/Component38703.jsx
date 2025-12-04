@@ -115,7 +115,7 @@ function b() {
       })]
     }), module.length > 0 && (0, Chunk54381.jsx)("div", {
       className: Chunk407810.connectionsList,
-      children: x.map((e, t) => (0, r.jsx)(d.Z, {
+      children: x.map((e, t) => (0, r.jsx)(u.Z, {
         connection: e,
         index: t,
         onDragStart: _,

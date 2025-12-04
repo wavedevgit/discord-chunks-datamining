@@ -26,7 +26,7 @@ function x(e) {
     value: e.id,
     label: (0, c.F6)(e, p.default, m.Z),
     channel: e,
-    category: d.Z.getChannel(e.parent_id)
+    category: u.Z.getChannel(e.parent_id)
   }
 }
 
@@ -37,11 +37,11 @@ function j(e) {
     label: n,
     channel: l,
     category: a
-  } = t, o = i.useMemo(() => (0, u.KS)(l), [l]), d = (0, c.ZP)(l);
+  } = t, o = i.useMemo(() => (0, d.KS)(l), [l]), u = (0, c.ZP)(l);
   return (0, r.jsx)(s.ZZ$, {
     title: n,
     icon: o,
-    subtitle: null != a ? d : null
+    subtitle: null != a ? u : null
   })
 }
 
@@ -51,8 +51,8 @@ function _(e) {
     guildId: n,
     afkChannelId: s,
     label: c
-  } = e, u = (0, a.e7)([g.Z], () => g.Z.getCategories(n)), d = i.useMemo(() => {
-    let e = (0, o.Z)(u._categories, u).filter(e => {
+  } = e, d = (0, a.e7)([g.Z], () => g.Z.getCategories(n)), u = i.useMemo(() => {
+    let e = (0, o.Z)(d._categories, d).filter(e => {
       let {
         channel: t
       } = e;
@@ -67,7 +67,7 @@ function _(e) {
       value: b,
       label: h.intl.string(h.t.wGiHkK)
     }), e
-  }, [u]), m = i.useCallback(e => {
+  }, [d]), m = i.useCallback(e => {
     let t = e === b ? null : e;
     f.Z.updateGuild({
       afkChannelId: t
@@ -76,7 +76,7 @@ function _(e) {
   return (0, r.jsx)(O, {
     label: c,
     value: null != s ? s : b,
-    options: d,
+    options: u,
     canManageGuild: t,
     onChange: m
   })
@@ -88,8 +88,8 @@ function v(e) {
     guildId: n,
     systemChannelId: s,
     label: c,
-    description: u,
-    layout: d
+    description: d,
+    layout: u
   } = e, m = (0, a.e7)([g.Z], () => g.Z.getCategories(n)), p = i.useMemo(() => {
     let e = (0, o.Z)(m._categories, m).filter(e => {
       let {
@@ -114,8 +114,8 @@ function v(e) {
   }, []);
   return (0, r.jsx)(O, {
     label: c,
-    description: u,
-    layout: d,
+    description: d,
+    layout: u,
     value: null != s ? s : b,
     options: p,
     canManageGuild: t,
@@ -131,12 +131,12 @@ function O(e) {
     onChange: a,
     label: o,
     description: c,
-    layout: u
-  } = e, d = i.useCallback(e => {
+    layout: d
+  } = e, u = i.useCallback(e => {
     if (null != e) return (0, r.jsx)(j, {
       option: e
     })
-  }, []), g = i.useCallback(e => d(e[0]), [d]);
+  }, []), g = i.useCallback(e => u(e[0]), [u]);
   return (0, r.jsx)(s.q4e, {
     label: o,
     description: c,
@@ -144,8 +144,8 @@ function O(e) {
     options: n,
     isDisabled: !l,
     onChange: a,
-    renderOptionLabel: d,
+    renderOptionLabel: u,
     renderOptionValue: g,
-    layout: u
+    layout: d
   })
 }

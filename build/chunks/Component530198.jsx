@@ -61,8 +61,8 @@ function _(e) {
     onRemove: m,
     locked: p
   } = e;
-  if ((null == g ? true : g.application) != null) o()(null != g.application.bot, "bot is null"), i = (0, r.jsx)(d.Z, {
-    size: u.EFr.SIZE_24,
+  if ((null == g ? true : g.application) != null) o()(null != g.application.bot, "bot is null"), i = (0, r.jsx)(u.Z, {
+    size: d.EFr.SIZE_24,
     user: g.application.bot,
     className: b.verifiedIcon
   });
@@ -78,22 +78,22 @@ function _(e) {
   }
   return (0, r.jsxs)("div", {
     className: a()(b.verifiedRow, (null == s ? true : s.hasMetadata) === true || (null == g ? true : g.role_connections_metadata) != null && (null == g ? true : g.role_connections_metadata.length) > 0 ? b.verifiedRowWithMetadata : null),
-    children: [i, (0, r.jsx)(u.Text, {
+    children: [i, (0, r.jsx)(d.Text, {
       variant: "text-md/medium",
       className: b.verifiedText,
       children: h.intl.format(h.t.Nj0a3j, {
         platformName: null != (n = null == s ? true : s.name) ? n : null == g || null == (t = g.application) ? true : t.name
       })
-    }), (0, r.jsx)(u.aML, {
+    }), (0, r.jsx)(d.aML, {
       "data-migration-pending": true,
       text: h.intl.string(h.t.N86XcP),
       children: e => (0, r.jsx)("div", j(x({}, e), {
-        children: (0, r.jsx)(u.hU, {
+        children: (0, r.jsx)(d.hU, {
           "aria-label": h.intl.string(h.t.N86XcP),
           variant: "icon-only",
           onClick: m,
           disabled: p,
-          icon: u.Dio,
+          icon: d.Dio,
           size: "sm"
         })
       }))
@@ -110,13 +110,13 @@ function v(e) {
     platform: s,
     applicationId: o,
     onConfigurationChange: c,
-    locked: d
+    locked: u
   } = e, g = i.useId();
   return (0, r.jsxs)("tr", {
     className: b.ruleContainer,
     children: [(0, r.jsx)("th", {
       scope: "row",
-      children: (0, r.jsx)(u.nn4, {
+      children: (0, r.jsx)(d.nn4, {
         children: (0, r.jsx)("label", {
           htmlFor: g,
           children: t
@@ -124,19 +124,19 @@ function v(e) {
       })
     }), (0, r.jsxs)("td", {
       className: b.ruleContainerLabel,
-      children: [(0, r.jsx)(u.Text, {
+      children: [(0, r.jsx)(d.Text, {
         variant: "text-md/bold",
         "aria-hidden": "true",
         children: t
       }), (0, r.jsx)("div", {
         className: b.numericalRuleSubItemContainer,
-        children: (0, r.jsx)(u.Text, {
+        children: (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           children: n
         })
       })]
     }), (0, r.jsx)("td", {}), (0, r.jsx)("td", {
-      children: (0, r.jsx)(u.rsf, {
+      children: (0, r.jsx)(d.rsf, {
         id: g,
         checked: (null == a ? true : a.configuration.value) === "1",
         onChange: e => {
@@ -150,7 +150,7 @@ function v(e) {
             value: "1"
           }), c(r, null != (n = null == a ? true : a.index) ? n : false)
         },
-        disabled: d
+        disabled: u
       })
     })]
   }, l)
@@ -164,7 +164,7 @@ function O(e) {
     fieldTextHook: s,
     metadataField: o,
     existingPendingConfiguration: c,
-    platform: d,
+    platform: u,
     applicationId: g,
     onConfigurationChange: m,
     locked: p,
@@ -184,7 +184,7 @@ function O(e) {
     className: b.ruleContainer,
     children: [(0, r.jsx)("th", {
       scope: "row",
-      children: (0, r.jsx)(u.nn4, {
+      children: (0, r.jsx)(d.nn4, {
         children: (0, r.jsx)("label", {
           htmlFor: E,
           children: l
@@ -192,13 +192,13 @@ function O(e) {
       })
     }), (0, r.jsxs)("td", {
       className: b.ruleContainerLabel,
-      children: [(0, r.jsx)(u.Text, {
+      children: [(0, r.jsx)(d.Text, {
         variant: "text-md/bold",
         "aria-hidden": "true",
         children: l
       }), (0, r.jsx)("div", {
         className: b.numericalRuleSubItemContainer,
-        children: (0, r.jsx)(u.Text, {
+        children: (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           children: N
         })
@@ -206,7 +206,7 @@ function O(e) {
     }), (0, r.jsx)("td", {
       children: (0, r.jsx)("div", {
         className: b.numericalRuleInput,
-        children: (0, r.jsx)(u.oil, {
+        children: (0, r.jsx)(d.oil, {
           "aria-label": h.intl.string(h.t.FTmi9y),
           type: "number",
           value: C,
@@ -220,7 +220,7 @@ function O(e) {
             if ("" !== e) {
               var r;
               m({
-                connectionType: null != (r = null == d ? true : d.type) ? r : f.Kt,
+                connectionType: null != (r = null == u ? true : u.type) ? r : f.Kt,
                 applicationId: g,
                 connectionMetadataField: o,
                 operator: n,
@@ -232,14 +232,14 @@ function O(e) {
         })
       })
     }), (0, r.jsx)("td", {
-      children: (0, r.jsx)(u.rsf, {
+      children: (0, r.jsx)(d.rsf, {
         id: E,
         checked: j,
         onChange: e => {
           var t, n;
           let r = null;
           e && (r = {
-            connectionType: null != (t = null == d ? true : d.type) ? t : f.Kt,
+            connectionType: null != (t = null == u ? true : u.type) ? t : f.Kt,
             applicationId: g,
             connectionMetadataField: o,
             operator: O,
@@ -264,17 +264,17 @@ function C(e) {
           scope: "col"
         }), (0, r.jsx)("th", {
           scope: "col",
-          children: (0, r.jsx)(u.nn4, {
+          children: (0, r.jsx)(d.nn4, {
             children: h.intl.string(h.t.TwDLVr)
           })
         }), (0, r.jsx)("th", {
           scope: "col",
-          children: (0, r.jsx)(u.nn4, {
+          children: (0, r.jsx)(d.nn4, {
             children: h.intl.string(h.t.qDWJwX)
           })
         }), (0, r.jsx)("th", {
           scope: "col",
-          children: (0, r.jsx)(u.nn4, {
+          children: (0, r.jsx)(d.nn4, {
             children: h.intl.string(h.t["5IF76e"])
           })
         })]
@@ -655,21 +655,21 @@ function Z(e) {
       return (null == (t = e.application) ? true : t.id) === o
     }) : true;
   if (null != o && null == c) return null;
-  let u = null;
+  let d = null;
   try {
-    u = m.Z.get(n[0].configuration.connectionType)
+    d = m.Z.get(n[0].configuration.connectionType)
   } catch (e) {}
-  let d = new Map;
+  let u = new Map;
   n.forEach(e => {
-    null != e.configuration.connectionMetadataField ? d.set(e.configuration.connectionMetadataField, e) : null == e.configuration.value && null == e.configuration.operator && null == e.configuration.connectionMetadataField && (t = e)
+    null != e.configuration.connectionMetadataField ? u.set(e.configuration.connectionMetadataField, e) : null == e.configuration.value && null == e.configuration.operator && null == e.configuration.connectionMetadataField && (t = e)
   });
   let f = {
-      configMetadataMap: d,
+      configMetadataMap: u,
       onConfigurationChange: i,
       locked: l
     },
     h = null;
-  switch (null == u ? true : u.type) {
+  switch (null == d ? true : d.type) {
     case p.ABu.STEAM:
       h = (0, r.jsx)(N, x({}, f));
       break;
@@ -700,7 +700,7 @@ function Z(e) {
     className: b.container,
     children: [(0, r.jsx)(_, {
       theme: s,
-      platform: u,
+      platform: d,
       integration: c,
       onRemove: () => i(null, t.index),
       locked: l

@@ -36,10 +36,10 @@ function h(e) {
     setSelectedSection: b
   } = e, x = i.useCallback(e => {
     b(e)
-  }, [b]), j = (0, l.e7)([u.Z], () => {
+  }, [b]), j = (0, l.e7)([d.Z], () => {
     var e;
-    return null == (e = u.Z.getRoleMemberCount(t.id)) ? true : e[f.id]
-  }, [f.id, t.id]), _ = (0, c.fI)(f), v = (0, d.Z)(t.id, f);
+    return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[f.id]
+  }, [f.id, t.id]), _ = (0, c.fI)(f), v = (0, u.Z)(t.id, f);
   i.useEffect(() => {
     _ && b(g.ZI.PERMISSIONS)
   }, [_, b]);

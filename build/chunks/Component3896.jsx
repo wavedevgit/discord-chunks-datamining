@@ -64,18 +64,18 @@ function m(e) {
       children: [(0, r.jsx)(s.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: d.intl.string(d.t.DpRdYK)
+        children: u.intl.string(u.t.DpRdYK)
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: d.intl.string(d.t.mA17eD)
+        children: u.intl.string(u.t.mA17eD)
       }), (0, r.jsx)("div", {
         className: g.__invalid_pillRow,
         children: (0, r.jsxs)(s.Text, {
           variant: "text-xs/medium",
           color: "interactive-normal",
           className: g.valuePill,
-          children: [l === u.sFg.VERY_HIGH ? (0, r.jsx)(s.AtH, {
+          children: [l === d.sFg.VERY_HIGH ? (0, r.jsx)(s.AtH, {
             size: "custom",
             color: "currentColor",
             width: 16,

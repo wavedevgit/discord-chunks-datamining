@@ -50,9 +50,9 @@ function C(e) {
     vanityURLUses: l,
     originalVanityURLCode: s,
     errorDetails: o
-  } = e, c = (null == t ? true : t.features.has(x.GuildFeatures.VANITY_URL)) === true, u = i.useCallback(() => {
+  } = e, c = (null == t ? true : t.features.has(x.GuildFeatures.VANITY_URL)) === true, d = i.useCallback(() => {
     (0, m.Gy)("")
-  }, []), d = i.useCallback(e => {
+  }, []), u = i.useCallback(e => {
     (0, m.Gy)(e)
   }, []);
   if (null == n) return (0, r.jsx)(a.$jN, {});
@@ -75,14 +75,14 @@ function C(e) {
       }) : null]
     }), (0, r.jsx)(b.Z, {
       value: n,
-      onChange: d,
+      onChange: u,
       error: g,
       disabled: !c
     }), null != s && s.length > 0 ? (0, r.jsx)("div", {
       className: v.removeVanityUrlButton,
       children: (0, r.jsx)(a.Button, {
         variant: "critical-secondary",
-        onClick: u,
+        onClick: d,
         text: _.intl.string(_.t["3ggb6K"])
       })
     }) : null]
@@ -98,8 +98,8 @@ function y(e) {
     errorDetails: m
   } = e, {
     analyticsLocations: b
-  } = (0, o.ZP)(), _ = (0, u.g1)(t.id, "GuildSettingsBoostPerks"), y = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), _ ? (g.Z.close(), (0, d.Z)(t.id, s.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, h.E6)({
+  } = (0, o.ZP)(), _ = (0, d.g1)(t.id, "GuildSettingsBoostPerks"), y = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), _ ? (g.Z.close(), (0, u.Z)(t.id, s.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, h.E6)({
       guild: t,
       analyticsLocations: b,
       analyticsSection: x.jXE.GUILD_SETTINGS_VANITY_URL,

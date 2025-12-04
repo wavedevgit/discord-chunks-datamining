@@ -35,11 +35,11 @@ function p(e) {
       analyticsLocations: f,
       analyticsSection: c.jXE.GUILD_BANNER,
       analyticsObject: c.qAy.BUTTON_CTA,
-      perks: (0, u.XO)()
+      perks: (0, d.XO)()
     })
   }, [f, t]), j = i.useCallback(() => {
     (0, o.mw)({
-      uploadType: d.pC.GUILD_BANNER,
+      uploadType: u.pC.GUILD_BANNER,
       maxFileSizeBytes: g.B,
       onComplete: b,
       analyticsLocation: {

@@ -69,7 +69,7 @@ function O(e) {
     channelId: n
   } = e, i = (0, f.m7)(n), l = (0, f.m7)(null != (t = null == i ? true : i.parent_id) ? t : h.lds);
   if (null == i) return null;
-  let a = (0, u.KS)(i),
+  let a = (0, d.KS)(i),
     s = (0, c.F6)(i, p.default, m.Z),
     o = null != l ? (0, c.F6)(l, p.default, m.Z) : true;
   return (0, r.jsx)(_, {
@@ -95,7 +95,7 @@ function y(e) {
     label: t,
     guildId: l,
     value: a,
-    initialChannelId: u,
+    initialChannelId: d,
     omitChannelIds: x,
     "aria-labelledby": _,
     onChange: v
@@ -109,7 +109,7 @@ function y(e) {
       for (let {
           channel: r
         }
-        of y[n.channel.id])((0, d.r8)(r.type) || (0, d.bw)(r.type)) && (r.id !== a && (null == x ? true : x.has(r.id)) && (r.id !== u || a === u) || (a === r.id && (t = true), e.push({
+        of y[n.channel.id])((0, u.r8)(r.type) || (0, u.bw)(r.type)) && (r.id !== a && (null == x ? true : x.has(r.id)) && (r.id !== d || a === d) || (a === r.id && (t = true), e.push({
         value: r.id,
         label: (0, c.F6)(r, p.default, m.Z)
       })));
@@ -117,7 +117,7 @@ function y(e) {
       value: a,
       label: N.name
     }), e
-  }, [O, a, N, y, x, u]);
+  }, [O, a, N, y, x, d]);
   return (0, r.jsx)(o.PhF, {
     label: t,
     placeholder: b.intl.string(b.t.r2ptsz),

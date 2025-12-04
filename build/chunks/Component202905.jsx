@@ -51,7 +51,7 @@ function _(e) {
     guildProfile: m.Z.getGuildProfile()
   })), v = null == n ? true : n.id, O = (0, s.e7)([c.Z], () => c.Z.get(v)), {
     fetchGuildProfile: C
-  } = (0, u.u)(v), y = (null == _ ? true : _.visibility) == null || !l.Y.VISIBLE.has(null == _ ? true : _.visibility), N = (null == _ ? true : _.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
+  } = (0, d.u)(v), y = (null == _ ? true : _.visibility) == null || !l.Y.VISIBLE.has(null == _ ? true : _.visibility), N = (null == _ ? true : _.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
   i.useEffect(() => {
     null != v && C()
   }, [v, C]);
@@ -118,7 +118,7 @@ function _(e) {
           className: x.previewWrapper,
           children: [(0, r.jsx)("div", {
             className: x.gradient
-          }), (0, r.jsx)(d.ZP, {
+          }), (0, r.jsx)(u.ZP, {
             className: x.preview,
             profile: E,
             CTAOverride: (0, r.jsx)(a.zxk, {

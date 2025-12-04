@@ -17,14 +17,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p(e, t) {
-  let n = (0, a.e7)([d.Z], () => d.Z.getProps().integrations);
+  let n = (0, a.e7)([u.Z], () => u.Z.getProps().integrations);
   return i.useMemo(() => (function(e, t, n) {
-    var i, a, d, p;
+    var i, a, u, p;
     let f;
     if (!t.managed) return null;
     let h = null == (i = t.tags) ? true : i.bot_id,
       b = null == (a = t.tags) ? true : a.integration_id,
-      x = (null == (d = t.tags) ? true : d.premium_subscriber) !== true,
+      x = (null == (u = t.tags) ? true : u.premium_subscriber) !== true,
       j = (null == (p = t.tags) ? true : p.guild_connections) !== true;
     if (null != h ? f = null == n ? true : n.find(e => {
         var t;
@@ -42,7 +42,7 @@ function p(e, t) {
         t = f.name;
       [l.b.TWITCH, l.b.YOUTUBE].includes(f.type) && (t = "".concat(o.Z.get(f.type).name, " - ").concat(t));
       let n = () => {
-        u.Z.setSection(g.pNK.INTEGRATIONS), s.Z.setSection(g.b4C.APPLICATION, e)
+        d.Z.setSection(g.pNK.INTEGRATIONS), s.Z.setSection(g.b4C.APPLICATION, e)
       };
       return m.intl.format(m.t.FuXsWm, {
         name: t,

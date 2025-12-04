@@ -18,8 +18,8 @@ function c(e) {
     description: n,
     action: i,
     highlightColor: c = s.q.NONE,
-    selected: u = false,
-    subsection: d = null,
+    selected: d = false,
+    subsection: u = null,
     onClick: g,
     className: m,
     disabled: p
@@ -34,7 +34,7 @@ function c(e) {
       onClick: p ? true : g,
       children: (0, r.jsxs)("div", {
         className: l()(o.backgroundModifierContainer, o[c], {
-          [o.selected]: u,
+          [o.selected]: d,
           [o.disabled]: p,
           [o.noAction]: null == g
         }),
@@ -55,9 +55,9 @@ function c(e) {
           children: i
         })]
       })
-    }), null != d && (0, r.jsx)("div", {
+    }), null != u && (0, r.jsx)("div", {
       className: o.subsectionContainer,
-      children: d
+      children: u
     })]
   })
 }

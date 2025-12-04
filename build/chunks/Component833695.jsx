@@ -35,9 +35,9 @@ function _(e) {
   let {
     guildId: f
   } = e, _ = (0, h.Z)(f), v = (0, a.f3)(), O = (0, i.e7)([p.Z], () => p.Z.getGuild());
-  return _.loading || null == O ? (0, r.jsx)(l.$jN, {}) : null == _.application ? (0, r.jsx)(d.Z, {
+  return _.loading || null == O ? (0, r.jsx)(l.$jN, {}) : null == _.application ? (0, r.jsx)(u.Z, {
     guild: O
-  }) : (0, r.jsxs)(u.Z, {
+  }) : (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(c.Z, {
       revenue: _.metrics.revenue,
       revenueTrend: _.metrics.revenuePctChange,

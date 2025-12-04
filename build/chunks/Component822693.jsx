@@ -40,14 +40,14 @@ function j(e) {
       let {
         channel: t
       } = e;
-      return t.id === j || u.Z.can(x, t)
+      return t.id === j || d.Z.can(x, t)
     }).map(e => {
       let {
         channel: t
       } = e;
       return {
         value: t.id,
-        label: (0, o.F6)(t, g.default, d.Z, true)
+        label: (0, o.F6)(t, g.default, u.Z, true)
       }
     });
     return e.unshift({

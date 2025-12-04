@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   S: () => c,
-  w: () => u
+  w: () => d
 });
 var Chunk481060 = require("./481060.js"),
   Chunk925221 = require("./925221.jsx"),
@@ -21,8 +21,8 @@ let c = e => {
   }
 };
 
-function u(e, t) {
-  var n, c, u, d, g, m;
+function d(e, t) {
+  var n, c, d, u, g, m;
   return null != e && (e => {
     switch (e) {
       case s.fX.KEYWORD:
@@ -45,7 +45,7 @@ function u(e, t) {
         keywordCount: t.triggerMetadata.keywordFilter.length
       })
     })(0, t)) ? c : "",
-    descriptionText: null != (u = (e => {
+    descriptionText: null != (d = (e => {
       switch (e) {
         case s.fX.KEYWORD:
           return o.intl.string(o.t.TzvaeK);
@@ -60,10 +60,10 @@ function u(e, t) {
         default:
           return null
       }
-    })(e)) ? u : "",
-    descriptionSubtext: null != (d = (e => {
-      if (e === s.fX.KEYWORD) return o.intl.formatToPlainString(o.t.yNec2m, {})
     })(e)) ? d : "",
+    descriptionSubtext: null != (u = (e => {
+      if (e === s.fX.KEYWORD) return o.intl.formatToPlainString(o.t.yNec2m, {})
+    })(e)) ? u : "",
     icon: null != (g = (e => {
       switch (e) {
         case s.fX.MENTION_SPAM:

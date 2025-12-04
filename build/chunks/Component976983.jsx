@@ -70,7 +70,7 @@ function j(e) {
     dragSourcePosition: w,
     drop: Z,
     setIsDraggable: R
-  } = (0, u.Z)({
+  } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(_.id),
     index: T,
     optionId: C.id,
@@ -80,7 +80,7 @@ function j(e) {
   }), {
     customEmoji: D,
     unicodeEmoji: A
-  } = (0, d.Z)(null == (t = C.emoji) ? true : t.id, null == (i = C.emoji) ? true : i.name);
+  } = (0, u.Z)(null == (t = C.emoji) ? true : t.id, null == (i = C.emoji) ? true : i.name);
   return (0, p.Oq)(C.emoji) || null != D || null != A || (S = f.intl.string(f.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
     className: l()(h.optionCard, {
       [h.hasError]: y || null != S,
@@ -158,7 +158,7 @@ function _(e) {
     prompt: i,
     promptIndex: a,
     singleColumn: s
-  } = e, u = () => {
+  } = e, d = () => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -187,8 +187,8 @@ function _(e) {
         }),
         confirmText: f.intl.string(f.t.BddRzS),
         cancelText: f.intl.string(f.t["ETE/oC"]),
-        onConfirm: u
-      }) : u()
+        onConfirm: d
+      }) : d()
     },
     children: (0, r.jsxs)("div", {
       className: h.optionCardRow,

@@ -111,7 +111,7 @@ function eO(e, t) {
 let eC = {
   getSectionDefinition: function(e, t) {
     let eC = (0, b.p)(t.guild.id, "guild_settings"),
-      ey = (0, d.Vm)(t.guild.id),
+      ey = (0, u.Vm)(t.guild.id),
       eN = false === t.guild.features.has(eb.GuildFeatures.CREATOR_MONETIZABLE) && false === t.guild.features.has(eb.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
       eE = eC && eN ? {
         label: (0, r.jsx)("div", {
@@ -146,7 +146,7 @@ let eC = {
         return {
           section: eb.pNK.ENGAGEMENT, impressionName: i.ImpressionNames.GUILD_SETTINGS_ENGAGEMENT, label: ej.intl.string(ej.t["6TAHbx"]), ariaLabel: ej.intl.string(ej.t["6TAHbx"]), element: ec.Z, notice: {
             stores: [P.Z],
-            element: eu.R
+            element: ed.R
           }
         };
       case eb.pNK.BOOST_PERKS:
@@ -158,7 +158,7 @@ let eC = {
         };
       case eb.pNK.INVITES:
         return {
-          section: eb.pNK.INVITES, impressionName: i.ImpressionNames.GUILD_SETTINGS_INVITES_V2, label: ej.intl.string(ej.t.YOt3Om), ariaLabel: ej.intl.string(ej.t.YOt3Om), element: ed.Z, type: c.bT.CUSTOM, predicate: () => t.canManageGuild
+          section: eb.pNK.INVITES, impressionName: i.ImpressionNames.GUILD_SETTINGS_INVITES_V2, label: ej.intl.string(ej.t.YOt3Om), ariaLabel: ej.intl.string(ej.t.YOt3Om), element: eu.Z, type: c.bT.CUSTOM, predicate: () => t.canManageGuild
         };
       case eb.pNK.ROLES:
         return {
@@ -295,7 +295,7 @@ let eC = {
           section: eb.pNK.ROLE_SUBSCRIPTIONS,
           element: v.Z,
           type: c.bT.CUSTOM,
-          predicate: () => ey ? t.monetizationPredicate() && ((0, j.sy)(t.guild) || u.Z.hasSeenCreatorOnboardingForGuild(t.guild.id)) : t.monetizationPredicate(),
+          predicate: () => ey ? t.monetizationPredicate() && ((0, j.sy)(t.guild) || d.Z.hasSeenCreatorOnboardingForGuild(t.guild.id)) : t.monetizationPredicate(),
           newIndicatorDismissibleContentTypes: (0, _.sO)(t.guild) ? [l.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE] : null
         });
       case eb.pNK.GUILD_PRODUCTS:

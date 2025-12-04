@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk52726 = require("./52726.js"),
   Chunk270395 = require("./270395.js");
 
-function d(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -51,7 +51,7 @@ function m(e) {
         } = await n.e("21863").then(n.bind(n, 466501));
         return n => {
           var l, o;
-          return (0, r.jsx)(e, (l = d({}, n), o = o = {
+          return (0, r.jsx)(e, (l = u({}, n), o = o = {
             eligibility: i,
             eligibilityLoading: a,
             eligibilityError: s,
@@ -85,8 +85,8 @@ function p(e) {
   } = e, {
     canSubmitAcceptance: s,
     error: c,
-    loading: u,
-    submitAcceptTermsRequest: d
+    loading: d,
+    submitAcceptTermsRequest: u
   } = (0, a.Z)(t.id), [g, m] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.Checkbox, {
@@ -99,8 +99,8 @@ function p(e) {
       size: 24
     }), (0, r.jsx)(l.Button, {
       disabled: !g || !s,
-      onClick: d,
-      loading: u,
+      onClick: u,
+      loading: d,
       variant: "expressive",
       text: o.intl.string(o.t.NL5ZNS)
     }), null != c && (0, r.jsxs)(r.Fragment, {
@@ -124,12 +124,12 @@ function f(e) {
     refreshEligibility: a,
     eligibility: o,
     eligibleForMonetization: c,
-    acceptTermsCheckboxText: u,
+    acceptTermsCheckboxText: d,
     wasRejectedInV1: g
   } = n;
-  return c ? g ? (0, r.jsx)(s.Z, d({}, n)) : (0, r.jsx)(p, {
+  return c ? g ? (0, r.jsx)(s.Z, u({}, n)) : (0, r.jsx)(p, {
     guild: t,
-    checkboxText: u
+    checkboxText: d
   }) : (0, r.jsx)(m, {
     guild: t,
     eligibility: o,
@@ -148,7 +148,7 @@ function h(e) {
     className: c.ctaContainer,
     children: [(0, r.jsx)("img", {
       className: c.heroBanner,
-      src: u,
+      src: d,
       alt: o.intl.string(o.t.Af4klP)
     }), (0, r.jsxs)("div", {
       className: c.ctaContent,

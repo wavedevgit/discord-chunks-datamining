@@ -13,9 +13,9 @@ function s(e, t, n) {
   var s, o;
   let {
     isLoading: c,
-    error: u,
-    highlightedCreatorDetails: d
-  } = (0, l.Z)(e), g = null == d ? true : d.store_page, m = r.useMemo(() => {
+    error: d,
+    highlightedCreatorDetails: u
+  } = (0, l.Z)(e), g = null == u ? true : u.store_page, m = r.useMemo(() => {
     var e, t;
     let n = function(e) {
         let t = new Set;
@@ -32,7 +32,7 @@ function s(e, t, n) {
     id: e,
     icon: p,
     size: n
-  }), h = r.useMemo(() => null != m && m.length > t ? m.slice(0, t) : m, [m, t]), b = null != m && m.length > t ? m.length - t : null, x = null == d ? true : d.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, _ = null == g || null == (s = g.guild) ? true : s.name, v = null == g || null == (o = g.role_subscription) ? true : o.subscriber_count, O = !c && null != _ && null != p && null != f;
+  }), h = r.useMemo(() => null != m && m.length > t ? m.slice(0, t) : m, [m, t]), b = null != m && m.length > t ? m.length - t : null, x = null == u ? true : u.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, _ = null == g || null == (s = g.guild) ? true : s.name, v = null == g || null == (o = g.role_subscription) ? true : o.subscriber_count, O = !c && null != _ && null != p && null != f;
   return O ? {
     hasAllImperativeDetails: O,
     isLoading: c,
@@ -48,6 +48,6 @@ function s(e, t, n) {
   } : {
     hasAllImperativeDetails: O,
     isLoading: c,
-    error: u
+    error: d
   }
 }

@@ -22,7 +22,7 @@ function h(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, h = t.features.has(u.GuildFeatures.BANNER), b = t.features.has(u.GuildFeatures.ANIMATED_BANNER), x = h && n, {
+  } = e, h = t.features.has(d.GuildFeatures.BANNER), b = t.features.has(d.GuildFeatures.ANIMATED_BANNER), x = h && n, {
     analyticsLocations: j
   } = (0, a.ZP)(), _ = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)
@@ -30,9 +30,9 @@ function h(e) {
     e.preventDefault(), e.stopPropagation(), (0, c.E6)({
       guild: t,
       analyticsLocations: j,
-      analyticsSection: u.jXE.GUILD_BANNER,
-      analyticsObject: u.qAy.UPLOAD_IMAGE,
-      perks: (0, d.XO)()
+      analyticsSection: d.jXE.GUILD_BANNER,
+      analyticsObject: d.qAy.UPLOAD_IMAGE,
+      perks: (0, u.XO)()
     })
   }, [j, t]), O = (0, r.jsx)(s.Z, {
     image: t.banner,
@@ -54,8 +54,8 @@ function h(e) {
         return _(t, n)
       },
       analyticsLocation: {
-        page: u.ZY5.GUILD_SETTINGS,
-        section: u.jXE.GUILD_BANNER
+        page: d.ZY5.GUILD_SETTINGS,
+        section: d.jXE.GUILD_BANNER
       },
       analyticsLocations: j
     }),

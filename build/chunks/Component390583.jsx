@@ -65,7 +65,7 @@ function f() {
       description: i,
       emoji_id: l,
       emoji_name: a,
-      ref_type: d.Qs.CHANNEL,
+      ref_type: u.Qs.CHANNEL,
       ref_id: r
     };
     null != t ? s[t] = o : s.push(o), f(s)

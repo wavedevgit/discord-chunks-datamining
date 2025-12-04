@@ -26,15 +26,15 @@ let g = e => {
       isPositive: a
     } = (0, o.m5)(t, n);
     return (0, r.jsxs)("div", {
-      className: d.trendContainer,
+      className: u.trendContainer,
       children: [(0, r.jsx)(c.Z, {
-        className: l()(d.chartLineIcon, {
-          [d.chartLineIconNegative]: !a
+        className: l()(u.chartLineIcon, {
+          [u.chartLineIconNegative]: !a
         })
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
-        className: d.trendDescription,
-        children: u.intl.format(u.t.OTHOvZ, {
+        className: u.trendDescription,
+        children: d.intl.format(d.t.OTHOvZ, {
           value: i
         })
       })]
@@ -49,28 +49,28 @@ let g = e => {
       tooltip: o
     } = e;
     return (0, r.jsxs)("div", {
-      className: d.container,
+      className: u.container,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsxs)("div", {
-          className: d.labelContainer,
+          className: u.labelContainer,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
-            className: d.label,
+            className: u.label,
             children: t
           }), null != o && (0, r.jsx)(a.u, {
             text: o,
             children: (0, r.jsx)(s.d3s, {
               size: "xs",
               color: "currentColor",
-              className: d.labelTooltipIcon
+              className: u.labelTooltipIcon
             })
           }), null != n ? (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
-            className: d.sublabel,
+            className: u.sublabel,
             children: n
           }) : null]
         }), (0, r.jsx)(s.Text, {
-          className: d.value,
+          className: u.value,
           variant: "text-sm/normal",
           children: i
         })]

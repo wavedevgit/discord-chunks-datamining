@@ -38,8 +38,8 @@ let g = Chunk473749.memo(function(e) {
       h(t)
     }) : h(t)
   }, [j, m, O, t, h]);
-  return (0, r.jsx)(u.Z, {
-    renderHeader: (0, r.jsx)(d.Z, {
+  return (0, r.jsx)(d.Z, {
+    renderHeader: (0, r.jsx)(u.Z, {
       rule: v,
       forceSetup: x && !j && !_,
       triggerType: t.triggerType,

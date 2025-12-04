@@ -31,7 +31,7 @@ function b(e) {
       splash: e
     })
   }, []), C = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, d.E6)({
+    e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
       analyticsLocations: x,
       analyticsSection: g.jXE.GUILD_INVITE_BACKGROUND,
@@ -63,7 +63,7 @@ function b(e) {
     })]
   }) : (0, r.jsx)("div", {
     className: b,
-    children: (0, r.jsx)(u.v, {
+    children: (0, r.jsx)(d.v, {
       onClick: C
     })
   })

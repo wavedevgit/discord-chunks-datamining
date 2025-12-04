@@ -47,7 +47,7 @@ let f = (e, t, n, r) => (o.default.track(g.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
             is_animated: false,
             file_type: n.type.split("/").pop(),
             original_file_size_bytes: n.size,
-            resized_file_size_bytes: (0, u.QB)(C),
+            resized_file_size_bytes: (0, d.QB)(C),
             resized_file_too_big: y
           }), e) return f(n.name, n.size, h, b)
       }
@@ -74,7 +74,7 @@ let f = (e, t, n, r) => (o.default.track(g.rMx.EMOJI_UPLOAD_FILE_SIZE_LIMIT_EXCE
         file_size: p.byteLength(t),
         upload_id: b
       }), e = m.intl.formatToPlainString(m.t.kIO9jy, {
-        maxSize: d.xG
+        maxSize: u.xG
       }), n = s.d.TOO_BIG) : (null != r.image || r.code === g.evJ.INVALID_FILE_ASSET_SIZE_RESIZE_GIF) && (n = s.d.RESIZE_GIF)), 429 === i && (e = m.intl.string(m.t.Whhv4w), n = s.d.RATE_LIMIT), null == e || _ || l.Z.show({
         title: m.intl.string(m.t.iufib1),
         body: e

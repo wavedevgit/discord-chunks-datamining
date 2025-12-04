@@ -69,7 +69,7 @@ let w = "dismissedCommunityFeaturesUpsell",
       discoveryEnabled: t,
       onboardingEnabled: n,
       guild: l
-    } = e, [c, u] = i.useState(true === o.K.get(w)), d = (0, a.e7)([x.Z], () => {
+    } = e, [c, d] = i.useState(true === o.K.get(w)), u = (0, a.e7)([x.Z], () => {
       var e;
       return null != (e = x.Z.getMemberCount(l.id)) ? e : 0
     }), [f, b] = i.useState(false);
@@ -82,7 +82,7 @@ let w = "dismissedCommunityFeaturesUpsell",
       }).catch(() => b(false))
     });
     let _ = (0, a.e7)([j.Z], () => j.Z.getGuild("942897714956472401")),
-      v = l.features.has(I.GuildFeatures.COMMUNITY) && d >= 1e3 && f && null == _;
+      v = l.features.has(I.GuildFeatures.COMMUNITY) && u >= 1e3 && f && null == _;
     if (t && n && !v) return null;
     let O = async () => {
       try {
@@ -119,7 +119,7 @@ let w = "dismissedCommunityFeaturesUpsell",
         size: g.zx.Sizes.NONE,
         className: T.upsellClose,
         onClick: () => {
-          o.K.set(w, true), u(true)
+          o.K.set(w, true), d(true)
         },
         children: (0, r.jsx)(m.Dio, {
           size: "md",

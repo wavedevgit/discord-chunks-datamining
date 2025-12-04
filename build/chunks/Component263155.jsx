@@ -81,8 +81,8 @@ let G = "WELCOME_CHANNEL",
         index: v
       } = e,
       O = i.useRef(null),
-      C = (0, d.e7)([N.Z], () => N.Z.getChannel(o.channel_id)),
-      y = (0, d.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
+      C = (0, u.e7)([N.Z], () => N.Z.getChannel(o.channel_id)),
+      y = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
       I = null != C && S.Uu(w.Plq.VIEW_CHANNEL, C),
       T = null != (t = (0, x.KS)(C)) ? t : g.VL1,
       P = (0, b.ZP)(C, false),
@@ -111,7 +111,7 @@ let G = "WELCOME_CHANNEL",
           null == e || t.didDrop() || h(e.channel, null, true)
         }
       }),
-      [, U] = (0, u.L)({
+      [, U] = (0, d.L)({
         accept: G,
         hover: e => {
           h(e.channel, v, false)
@@ -186,7 +186,7 @@ let G = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: l,
       originalWelcomeSettings: a
-    } = (0, d.e7)([y.Z], () => y.Z.getSettingsProps()), s = (0, d.e7)([h.Z], () => h.Z.useReducedMotion), [c, u] = i.useState(null), [m, p] = i.useState(false), [b, x] = i.useState(false), {
+    } = (0, u.e7)([y.Z], () => y.Z.getSettingsProps()), s = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), [c, d] = i.useState(null), [m, p] = i.useState(false), [b, x] = i.useState(false), {
       description: j,
       channels: N,
       enabled: S
@@ -204,7 +204,7 @@ let G = "WELCOME_CHANNEL",
         i = [...N];
       null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, C.VP)({
         channels: i
-      })), n ? (Z(i), u(null)) : u(t)
+      })), n ? (Z(i), d(null)) : d(t)
     }, B = i.useRef(false);
     (0, f.ZP)(() => () => {
       B.current = true

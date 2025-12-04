@@ -24,13 +24,13 @@ function g(e) {
     onCtaClicked: s
   } = t;
   return (0, r.jsxs)("div", {
-    className: u.__invalid_ctaContainer,
+    className: d.__invalid_ctaContainer,
     children: [(0, r.jsx)("img", {
-      className: u.__invalid_heroBanner,
-      src: d,
+      className: d.__invalid_heroBanner,
+      src: u,
       alt: c.intl.string(c.t.Af4klP)
     }), (0, r.jsxs)("div", {
-      className: u.__invalid_ctaContent,
+      className: d.__invalid_ctaContent,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
@@ -63,7 +63,7 @@ function m(e) {
     config: n
   } = e, {
     isLoading: c,
-    error: d,
+    error: u,
     creatorMonetizationOnboardingMarketing: m
   } = (0, s.Z)(t.id);
   return ((0, a.Z)({
@@ -73,12 +73,12 @@ function m(e) {
       guild_id: t.id
     }
   }), c) ? (0, r.jsx)(l.$jN, {}) : (0, r.jsxs)("div", {
-    className: u.__invalid_container,
+    className: d.__invalid_container,
     children: [(0, r.jsx)(g, {
       config: n
     }), (0, r.jsx)(o.C, {
       onboardingMarketing: m,
-      onboardingMarketingError: d
+      onboardingMarketingError: u
     })]
   })
 }

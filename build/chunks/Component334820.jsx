@@ -51,7 +51,7 @@ function m(e, t) {
 function p(e, t) {
   let {
     expandableToggleColumnKey: n
-  } = t, i = (0, u.Yn)(e.map(e => m(g({}, e), {
+  } = t, i = (0, d.Yn)(e.map(e => m(g({}, e), {
     sort: false,
     renderHeader() {
       var t;
@@ -71,7 +71,7 @@ function p(e, t) {
     } = e;
     return {
       key: t,
-      cellClassName: d.toggleExpandColumn,
+      cellClassName: u.toggleExpandColumn,
       renderHeader: () => null,
       render(e, t) {
         if (o()(null != t, "Cell props missing; did you use the hook?"), e.isExpandedItem) return null;
@@ -80,14 +80,14 @@ function p(e, t) {
           onToggleExpandRow: i
         } = t, l = n.has(e.key);
         return (0, r.jsx)(c.P3F, {
-          className: d.toggleExpandCell,
+          className: u.toggleExpandCell,
           onClick: () => i(e.key),
-          children: (0, r.jsx)(u.bL, {
+          children: (0, r.jsx)(d.bL, {
             children: (0, r.jsx)(c.Fbu, {
               size: "md",
               color: "currentColor",
-              className: a()(d.caretIcon, {
-                [d.caretDownIcon]: l
+              className: a()(u.caretIcon, {
+                [u.caretDownIcon]: l
               })
             })
           })
@@ -117,7 +117,7 @@ function f(e) {
     }
     return i
   }(e, ["renderExpandedContent"]);
-  return m(g({}, (0, u.wy)(n)), {
+  return m(g({}, (0, d.wy)(n)), {
     renderExpandedContent: t
   })
 }

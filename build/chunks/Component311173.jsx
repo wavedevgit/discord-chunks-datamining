@@ -54,7 +54,7 @@ function b(e) {
     errors: x,
     validatePatternsChanged: j,
     validateEditingValueChanged: _
-  } = (0, u.Z)(l, s), [v] = i.useState(() => ({
+  } = (0, d.Z)(l, s), [v] = i.useState(() => ({
     tags: g,
     value: "",
     selections: [],
@@ -86,7 +86,7 @@ function b(e) {
       onChangeTags: C,
       onChangeNewTagValue: y,
       tagErrors: O,
-      maxTags: d.VW
+      maxTags: u.VW
     }), (0, r.jsx)(h, {
       text: m.intl.format(m.t["PGC/AJ"], {
         helpArticle: f
@@ -96,7 +96,7 @@ function b(e) {
         let {
           pattern: t
         } = e;
-        return t === u.r
+        return t === d.r
       })) ? true : t.message) ? n : null == b ? true : b.message
     })]
   })

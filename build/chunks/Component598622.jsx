@@ -22,24 +22,24 @@ let g = e => {
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: d.intl.string(d.t.QiONL5),
-      details: d.intl.string(d.t.dSRTMB)
+      title: u.intl.string(u.t.QiONL5),
+      details: u.intl.string(u.t.dSRTMB)
     }, "hide-suspicious-dms"),
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: d.intl.string(d.t["f+8F8F"]),
-      details: d.intl.string(d.t.qChrI2)
+      title: u.intl.string(u.t["f+8F8F"]),
+      details: u.intl.string(u.t.qChrI2)
     }, "filter-unknown-dms"),
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: d.intl.string(d.t.EkSAHZ)
+      title: u.intl.string(u.t.EkSAHZ)
     }, "outbound-links-warn"),
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: d.intl.string(d.t["7cAQmj"])
+      title: u.intl.string(u.t["7cAQmj"])
     }, "delete-spam"),
     enabled: true
   }].filter(e => null != e);
@@ -48,15 +48,15 @@ let g = e => {
       renderComponent: () => (0, r.jsx)(s.Z, {
         guild: e
       }, "raid-alerts"),
-      enabled: !e.features.has(u.GuildFeatures.RAID_ALERTS_DISABLED)
+      enabled: !e.features.has(d.GuildFeatures.RAID_ALERTS_DISABLED)
     }, {
       renderComponent: () => (0, r.jsx)(o.Z, {
-        title: d.intl.string(d.t.gOkFfI)
+        title: u.intl.string(u.t.gOkFfI)
       }, "captcha-suspicious-joins"),
       enabled: true
     }, {
       renderComponent: () => (0, r.jsx)(o.Z, {
-        title: d.intl.string(d.t.r3esyC)
+        title: u.intl.string(u.t.r3esyC)
       }, "captcha-raid-joins"),
       enabled: true
     }],
@@ -65,7 +65,7 @@ let g = e => {
       renderComponent: () => (0, r.jsx)(l.Z, {
         guild: e
       }, "guild-mfa"),
-      enabled: e.mfaLevel === u.BpS.ELEVATED
+      enabled: e.mfaLevel === d.BpS.ELEVATED
     }, {
       renderComponent: () => (0, r.jsx)(a.Z, {
         guild: e

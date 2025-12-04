@@ -2,13 +2,12 @@
 /** chunk id: 769998, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk430824 = require("./430824.js"),
   Chunk496675 = require("./496675.js"),
@@ -19,65 +18,65 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk464992 = require("./464992.js");
 
-function h(e) {
+function f(e) {
   var t;
   let {
     action: n,
-    triggerType: h,
-    guildId: b,
-    toggled: x,
-    onToggleAction: j
-  } = e, _ = e => () => j(e), v = (0, u.c)(n.type, n, h), O = null == (t = n.metadata) ? true : t.durationSeconds, C = null != O ? (0, m.getFriendlyDurationString)(O) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(b)), [b]);
-  if (null == v) return null;
+    triggerType: f,
+    guildId: h,
+    toggled: b,
+    onToggleAction: x
+  } = e, j = e => () => x(e), _ = (0, c.c)(n.type, n, f), v = null == (t = n.metadata) ? true : t.durationSeconds, O = null != v ? (0, g.getFriendlyDurationString)(v) : null, C = (0, i.e7)([o.Z, s.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, s.Z.getGuild(h)), [h]);
+  if (null == _) return null;
   let {
-    headerText: N,
-    descriptionText: E,
-    icon: I
-  } = v;
+    headerText: y,
+    descriptionText: N,
+    icon: E
+  } = _;
   return (0, r.jsxs)("div", {
-    className: f.actionContainer,
+    className: p.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: f.actionIconContainer,
-      children: (0, r.jsx)(I, {
+      className: p.actionIconContainer,
+      children: (0, r.jsx)(E, {
         size: "md",
         color: "currentColor",
-        className: f.actionIcon
+        className: p.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: f.actionTextContainer,
-      children: [(0, r.jsx)(s.Heading, {
+      className: p.actionTextContainer,
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-sm/semibold",
+        children: y
+      }), (0, r.jsx)(a.Text, {
+        color: "interactive-normal",
+        variant: "text-xs/medium",
         children: N
-      }), (0, r.jsx)(s.Text, {
+      }), b && (0, r.jsxs)(a.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: E
-      }), x && (0, r.jsxs)(s.Text, {
-        color: "interactive-normal",
-        variant: "text-xs/medium",
-        children: [null === C ? null : h === d.fX.MENTION_SPAM ? p.intl.format(p.t.i3lsKD, {
-          friendlyDurationString: C
-        }) : p.intl.format(p.t.mvHxze, {
-          friendlyDurationString: C
-        }), y && (0, r.jsx)(s.P3F, {
-          onClick: _(true),
-          className: f.editChannel,
+        children: [null === O ? null : f === d.fX.MENTION_SPAM ? m.intl.format(m.t.i3lsKD, {
+          friendlyDurationString: O
+        }) : m.intl.format(m.t.mvHxze, {
+          friendlyDurationString: O
+        }), C && (0, r.jsx)(a.P3F, {
+          onClick: j(true),
+          className: p.editChannel,
           tag: "span",
           role: "link",
-          children: p.intl.string(p.t["0B95RJ"])
+          children: m.intl.string(m.t["0B95RJ"])
         })]
       })]
     }), (0, r.jsx)(l.u, {
-      text: p.intl.format(p.t.wx6Vb9, {}),
-      "aria-label": p.intl.formatToMarkdownString(p.t.wx6Vb9, {}),
-      shouldShow: !y,
+      text: m.intl.format(m.t.wx6Vb9, {}),
+      "aria-label": m.intl.formatToMarkdownString(m.t.wx6Vb9, {}),
+      shouldShow: !C,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(a.$q, {
-          type: a.M0.INVERTED,
-          value: x,
-          onChange: _(false),
-          disabled: !y,
-          className: f.__invalid_actionCheckbox
+        children: (0, r.jsx)(a.P3F, {
+          onClick: C ? j(false) : true,
+          children: (0, r.jsx)(a.FZ5, {
+            checked: b,
+            disabled: !C
+          })
         })
       })
     })]

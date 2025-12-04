@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk205120 = require("./205120.js"),
   Chunk481060 = require("./481060.js"),
   Chunk152406 = require("./152406.js");
-class u extends Chunk473749.Component {
+class d extends Chunk473749.Component {
   render() {
     var e, t;
     let n = this.props,
@@ -66,7 +66,7 @@ class u extends Chunk473749.Component {
     }), module))
   }
 }
-let d = (0, Chunk205120.animated)(u),
+let u = (0, Chunk205120.animated)(d),
   g = function(e) {
     let {
       className: t,
@@ -97,7 +97,7 @@ let d = (0, Chunk205120.animated)(u),
           icon: n,
           iconClassName: i
         } = t;
-        return (0, r.jsx)(d, {
+        return (0, r.jsx)(u, {
           icon: n,
           className: a()(c.icon, i),
           style: e

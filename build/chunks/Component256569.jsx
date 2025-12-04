@@ -22,7 +22,7 @@ function p(e) {
     onResize: n,
     onResizeEnd: i
   } = e, l = (0, c.Z)({
-    minDimension: d.tq,
+    minDimension: u.tq,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: i,
@@ -40,7 +40,7 @@ let f = Chunk473749.forwardRef(function(e, t) {
     onFocus: l,
     onBlur: a,
     onClick: o
-  } = e, c = i.useRef(null), [u, g] = i.useState(d.tq);
+  } = e, c = i.useRef(null), [d, g] = i.useState(u.tq);
   return (0, r.jsxs)(s.P3F, {
     className: m.textArea,
     onFocus: l,
@@ -49,12 +49,12 @@ let f = Chunk473749.forwardRef(function(e, t) {
     innerRef: c,
     ignoreKeyPress: true,
     style: {
-      minHeight: u
+      minHeight: d
     },
     children: [(0, r.jsx)(s.Den, {
       className: m.innerScroller,
       style: {
-        minHeight: u - 2
+        minHeight: d - 2
       },
       ref: t,
       children: n
@@ -74,7 +74,7 @@ function h(e) {
     initialValue: n,
     onChangeTags: l,
     onChangeNewTagValue: c,
-    tagErrors: d = {},
+    tagErrors: u = {},
     placeholder: p,
     className: h,
     maxTags: b
@@ -136,7 +136,7 @@ function h(e) {
     children: [(0, r.jsxs)(f, {
       ref: _,
       onClick: M,
-      children: [R.map((e, t) => (0, r.jsx)(u.Z, {
+      children: [R.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,
         onChange: I(t),
         onBlur: U,
@@ -144,7 +144,7 @@ function h(e) {
         onRemove: () => E(t),
         isSelected: D.includes(e),
         isSelecting: A,
-        error: d[e],
+        error: u[e],
         forceShowErrorTooltip: !k && t === R.length - 1
       }, t)), (0, r.jsx)("input", {
         className: a()(m.mainTextInput, {
