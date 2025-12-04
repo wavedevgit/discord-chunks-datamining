@@ -901,32 +901,33 @@ let eV = {
           attachmentsToUpload: ee,
           onAttachmentUploadError: et,
           announcementSendOptions: en,
-          withCheckpoint: ea
+          withCheckpoint: ea,
+          messageIdFromNotificationExperiment: eo
         } = n,
-        eo = null != (i = n.flags) ? i : 0,
-        [es, ec] = (0, ei.Z)(E);
-      es && (E = ec, eo = (0, a.pj)(eo, eI.iLy.SUPPRESS_NOTIFICATIONS));
-      let eu = false,
-        ed = (null == (r = n.messageReference) ? true : r.type) === eI.Uvt.FORWARD;
-      if ("" === E && null == I && null == N && null == j && null == k && null == U && !ed && (null == z || 0 === z.length) && !ea && (null == t.components || 0 === t.components.length))
+        es = null != (i = n.flags) ? i : 0,
+        [ec, eu] = (0, ei.Z)(E);
+      ec && (E = eu, es = (0, a.pj)(es, eI.iLy.SUPPRESS_NOTIFICATIONS));
+      let ed = false,
+        ef = (null == (r = n.messageReference) ? true : r.type) === eI.Uvt.FORWARD;
+      if ("" === E && null == I && null == N && null == j && null == k && null == U && !ef && (null == z || 0 === z.length) && !ea && (null == t.components || 0 === t.components.length))
         if (null == ee || !(ee.length > 0)) return Promise.resolve();
-        else eu = true;
-      let ef = null != x ? eI.uaV.REPLY : eI.uaV.DEFAULT,
-        ep = null != (o = n.nonce) ? o : (0, F.r)(),
-        e_ = ep,
-        eE = (0, B.ZP)({
+        else ed = true;
+      let ep = null != x ? eI.uaV.REPLY : eI.uaV.DEFAULT,
+        e_ = null != (o = n.nonce) ? o : (0, F.r)(),
+        eE = e_,
+        eb = (0, B.ZP)({
           channelId: e,
           content: E,
           tts: S,
-          type: ef,
+          type: ep,
           messageReference: x,
           allowedMentions: L,
-          flags: 0 !== eo ? eo : true,
-          nonce: ep,
+          flags: 0 !== es ? es : true,
+          nonce: e_,
           poll: (0, W.x9)(j),
           sharedCustomTheme: k
         });
-      if (false !== n.eagerDispatch && ((0, H.EL)(e, eE.id), null != N && (eE.sticker_items = N.map(e => er.Z.getStickerById(e)).filter(e => null != e)), eH.receiveMessage(e, eE, true, n)), !eM && null != b && b.length > 0) {
+      if (false !== n.eagerDispatch && ((0, H.EL)(e, eb.id), null != N && (eb.sticker_items = N.map(e => er.Z.getStickerById(e)).filter(e => null != e)), eH.receiveMessage(e, eb, true, n)), !eM && null != b && b.length > 0) {
         eM = true;
         let t = eh.default.getCurrentUser(),
           {
@@ -935,20 +936,20 @@ let eV = {
           } = eH.validateMessage(b, t, e);
         eH.sendBotMessage(e, n, r)
       }
-      let eb = {
+      let ey = {
         type: null != en ? d.$V.SEND_ANNOUNCEMENT : d.$V.SEND,
         message: {
           channelId: e,
           content: E,
-          nonce: ep,
+          nonce: e_,
           tts: S,
           message_reference: x,
           allowed_mentions: L,
-          flags: eo,
+          flags: es,
           analyticsLocation: A
         }
       };
-      if (null != t.components && (eb.message.components = t.components), null != en && (eb.message.create_thread = en.createThread, eb.message.title = en.threadName, eb.message.publish = null != (s = en.publish) && s), null != I) {
+      if (null != t.components && (ey.message.components = t.components), null != en && (ey.message.create_thread = en.createThread, ey.message.title = en.threadName, ey.message.publish = null != (s = en.publish) && s), null != I) {
         let e, t = null == I ? true : I.activity.session_id;
         if (null != (e = I.type === eI.mFx.JOIN_REQUEST || I.type === eI.mFx.STREAM_REQUEST || null != t ? t : el.default.getSessionId())) {
           let t = {
@@ -959,21 +960,21 @@ let eV = {
             {
               activity: n
             } = I;
-          null != n.party && null != n.party.id && (t.party_id = n.party.id), eb.message.application_id = n.application_id, eb.message.activity = t
+          null != n.party && null != n.party.id && (t.party_id = n.party.id), ey.message.application_id = n.application_id, ey.message.activity = t
         }
       }
-      if (null != j && (eb.message.poll = j), null != k && (eb.message.shared_client_theme = k), null != N && (eb.message.sticker_ids = N), Y.Z.isEnabled() && (eb.message.has_poggermode_enabled = true), ea && (eb.message.with_checkpoint = true), null != U && (eb.message.content_inventory_entry = U), null != D && (eb.message.confetti_potion = (0, Q.vY)(D), D.callback()), null != z && z.length > 0 && (eb.message.attachments = z), null != ee && ee.length > 0) try {
+      if (null != j && (ey.message.poll = j), null != k && (ey.message.shared_client_theme = k), null != N && (ey.message.sticker_ids = N), Y.Z.isEnabled() && (ey.message.has_poggermode_enabled = true), ea && (ey.message.with_checkpoint = true), null != U && (ey.message.content_inventory_entry = U), null != D && (ey.message.confetti_potion = (0, Q.vY)(D), D.callback()), null != z && z.length > 0 && (ey.message.attachments = z), null != eo && (ey.message.message_id_from_notification_experiment = eo), null != ee && ee.length > 0) try {
         let t = await (0, M.c)({
           channelId: e,
-          nonce: ep,
+          nonce: e_,
           items: ee,
-          message: eE,
+          message: eb,
           shouldUploadFailureSendNotification: !n.doNotNotifyOnError && true
         });
         if (null == t) return;
         let r = t.attachments;
-        if (h = t.uploader, eu && (null == r || 0 === r.length)) return;
-        if (null != r && (eb.message.attachments = r.map((e, t) => (0, ev.B)(e, t)), (0, y.NS)())) {
+        if (h = t.uploader, ed && (null == r || 0 === r.length)) return;
+        if (null != r && (ey.message.attachments = r.map((e, t) => (0, ev.B)(e, t)), (0, y.NS)())) {
           for (let e of r)
             if ((null == (p = e.item) || null == (f = p.clip) || null == (u = f.decision) || null == (c = u.signal) ? true : c.type) === O.Bs.DISTRIBUTED) {
               let t = {
@@ -982,7 +983,7 @@ let eV = {
                 },
                 n = "__CLIP_METADATA__",
                 r = "".concat(n).concat(JSON.stringify(t));
-              eb.message.content = "".concat(eb.message.content).concat(r);
+              ey.message.content = "".concat(ey.message.content).concat(r);
               break
             }
         }
@@ -1004,7 +1005,7 @@ let eV = {
         let i = Date.now(),
           a = d.ZP.length,
           o = Math.floor(1e4 * Math.random());
-        ej.info("Queueing message to be sent LogId:".concat(o)), d.ZP.enqueue(eb, o => {
+        ej.info("Queueing message to be sent LogId:".concat(o)), d.ZP.enqueue(ey, o => {
           let s = Date.now() - i;
           if (o.ok) {
             Z.Z.donateSentMessage(E, e), eH.receiveMessage(e, o.body, true, {
@@ -1035,7 +1036,7 @@ let eV = {
                 joinRequestUserId: n
               })
             }
-            G.Z.recordMessageSendApiResponse(ep), l.Z.dispatch({
+            G.Z.recordMessageSendApiResponse(e_), l.Z.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: em.S.SendMessage,
               channelId: e
@@ -1085,24 +1086,24 @@ let eV = {
                 })
               } else P.U8.has(o.body.code) ? l.Z.dispatch({
                 type: "MESSAGE_SEND_FAILED_AUTOMOD",
-                messageData: eb,
+                messageData: ey,
                 errorResponseBody: {
                   code: o.body.code,
                   message: o.body.message
                 }
               }) : o.body.code === eI.evJ.POGGERMODE_TEMPORARILY_DISABLED ? l.Z.dispatch({
                 type: "POGGERMODE_TEMPORARILY_DISABLED"
-              }) : o.body.code === eI.evJ.EXPLICIT_CONTENT ? t = eC.xi.EXPLICIT_CONTENT : null != j || ed || null != U || eH.sendClydeError(e, o.body.code);
-            i ? eH.deleteMessage(e, e_, true) : (null != h && l.Z.dispatch({
+              }) : o.body.code === eI.evJ.EXPLICIT_CONTENT ? t = eC.xi.EXPLICIT_CONTENT : null != j || ef || null != U || eH.sendClydeError(e, o.body.code);
+            i ? eH.deleteMessage(e, eE, true) : (null != h && l.Z.dispatch({
               type: "UPLOAD_FAIL",
               channelId: e,
               file: h._file,
-              messageId: e_,
+              messageId: eE,
               reason: t,
               noSendFailed: true
             }), o.hasErr || t !== eC.xi.EXPLICIT_CONTENT || eH.sendExplicitMediaClydeError(e, null == (u = o.body) ? true : u.attachments, T.UU.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED), l.Z.dispatch({
               type: "MESSAGE_SEND_FAILED",
-              messageId: e_,
+              messageId: eE,
               channelId: e,
               shouldNotify: !n.doNotNotifyOnError,
               reason: t
