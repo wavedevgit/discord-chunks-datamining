@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
 let y = Chunk473749.memo(function(e) {
   let {
     channel: t
-  } = e, y = (0, d.h)(t.id), O = (0, u.o)(t.id), x = (0, p.M)(t.id), j = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => O ? b.intl.string(b.t["16QyDv"]) : null != x ? b.intl.string(b.t.kCN9i0) : null, [O, x]), I = i.useMemo(() => (O || null != x) && !j && !v, [O, x, j, v]), [S, E] = i.useState(C());
+  } = e, y = (0, d.h)(t.id), O = (0, u.o)(t.id), x = (0, p.M)(t.id), j = (0, a.useHasAnyModalOpen)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => O ? b.intl.string(b.t["16QyDv"]) : null != x ? b.intl.string(b.t.kCN9i0) : null, [O, x]), I = i.useMemo(() => (O || null != x) && !j && !v, [O, x, j, v]), [S, E] = i.useState(C());
   i.useEffect(() => {
     null != x && null != y && (s.uvj.announce(b.intl.string(b.t.acsXuG)), setTimeout(() => {
       (0, c.T)(t.id, [x.id])

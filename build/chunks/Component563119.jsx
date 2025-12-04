@@ -78,7 +78,7 @@ let b = "game_console_alert_modal",
               onClick: n
             }]
           }));
-        (0, o.nf)(y) ? (0, o.o)(y, e => s(e)) : (0, o.ZD)(async () => e => s(e), {
+        (0, o.hasModalOpen)(y) ? (0, o.updateModal)(y, e => s(e)) : (0, o.openModalLazy)(async () => e => s(e), {
           modalKey: y
         })
       })
@@ -92,7 +92,7 @@ let b = "game_console_alert_modal",
       } = e, c = (0, r.jsx)(d.t, {
         body: n,
         errorCodeMessage: a,
-        dismissCallback: () => (0, o.Mr)(b)
+        dismissCallback: () => (0, o.closeModal)(b)
       });
 
       function m() {
@@ -112,7 +112,7 @@ let b = "game_console_alert_modal",
         }],
         children: c
       }));
-      (0, o.nf)(b) ? (0, o.o)(b, e => g(e)) : (0, o.ZD)(async () => e => g(e), {
+      (0, o.hasModalOpen)(b) ? (0, o.updateModal)(b, e => g(e)) : (0, o.openModalLazy)(async () => e => g(e), {
         modalKey: b
       })
     }

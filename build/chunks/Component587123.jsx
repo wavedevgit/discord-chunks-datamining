@@ -1,16 +1,16 @@
 /** Chunk was on 73628 **/
 /** chunk id: 587123, original params: e,t,A (module,exports,require) **/
 require.d(exports, {
-  P: () => l,
+  P: () => i,
   W: () => o
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk828762 = require("./828762.js");
-let i = Chunk473749.createContext(true);
+let l = Chunk473749.createContext(true);
 
-function l() {
-  let e = Chunk473749.useContext(i);
+function i() {
+  let e = Chunk473749.useContext(l);
   if (null == module) throw Error("No GuildProductAttachmentManagerContextProvider found");
   return module
 }
@@ -34,9 +34,9 @@ function o(e) {
     }
     return r
   }(e, ["children", "guildId"]);
-  let l = (0, a.Z)(A, r);
-  return (0, n.jsx)(i.Provider, {
-    value: l,
+  let i = (0, a.Z)(A, r);
+  return (0, n.jsx)(l.Provider, {
+    value: i,
     children: t
   })
 }

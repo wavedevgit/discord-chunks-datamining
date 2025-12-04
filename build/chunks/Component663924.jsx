@@ -111,9 +111,9 @@ function P(e) {
   } = e, p = i.useRef(null), {
     renderWindow: y,
     windowDispatch: O
-  } = i.useContext(u.ZP), v = null != c, S = (0, o.Jw)(null != c ? c : ""), I = i.useCallback(e => {
+  } = i.useContext(u.ZP), v = null != c, S = (0, o.useIsModalAtTop)(null != c ? c : ""), I = i.useCallback(e => {
     var t;
-    if (!v && (0, o.$s)() || v && !(S && n) || d.Z.isOpen() || e.defaultPrevented) return;
+    if (!v && (0, o.hasAnyModalOpen)() || v && !(S && n) || d.Z.isOpen() || e.defaultPrevented) return;
     let {
       target: r
     } = e;
@@ -134,7 +134,7 @@ function P(e) {
   i.useLayoutEffect(() => (y.addEventListener("mousedown", I), y.addEventListener("contextmenu", I), O.subscribe(E.CkL.POPOUT_CLOSE, N), () => {
     y.removeEventListener("mousedown", I), y.removeEventListener("contextmenu", I), O.unsubscribe(E.CkL.POPOUT_CLOSE, N)
   }), [I, y, O]), (0, s.Tbt)(p), i.useEffect(() => {
-    (!v && (0, o.$s)() || v && !S) && N()
+    (!v && (0, o.hasAnyModalOpen)() || v && !S) && N()
   }, [S, v]);
   let T = (0, h.Z)();
   return (0, r.jsx)(m.Z, {

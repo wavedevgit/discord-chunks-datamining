@@ -37,7 +37,7 @@ function p(e) {
   return e
 }
 let _ = () => {
-    (0, Chunk952265.ZD)(async () => {
+    (0, Chunk952265.openModalLazy)(async () => {
       let {
         CustomThemesShareModalWrapper: e
       } = await Promise.all([require.e("36653"), require.e("26196")]).then(require.bind(require, 433359));

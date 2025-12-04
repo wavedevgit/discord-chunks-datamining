@@ -106,7 +106,7 @@ let j = () => {
         text: Chunk388032.intl.string(Chunk388032.t.ZnqyZ2),
         size: "sm",
         onClick: () => {
-          (0, Chunk952265.Mr)(Chunk518596.USER_SETTINGS_MODAL_KEY), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
+          (0, Chunk952265.closeModal)(Chunk518596.USER_SETTINGS_MODAL_KEY), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
         }
       })]
     });

@@ -27,7 +27,7 @@ let d = new Chunk710845.Z("BackForwardNavStore"),
     optional: true
   }), ":messageId?"), Chunk981631.Z5c.VOICE_CHAT_CHANNEL_PARTIAL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
     optional: true
-  }), ":messageId?"), Chunk981631.Z5c.NOTIFICATIONS, Chunk981631.Z5c.FRIENDS, Chunk981631.Z5c.ME, Chunk981631.Z5c.MESSAGE_REQUESTS, Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.USERS(":userId"), Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.GLOBAL_DISCOVERY, Chunk981631.Z5c.QUEST_HOME, Chunk981631.Z5c.GLOBAL_DISCOVERY_SERVERS, Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS],
+  }), ":messageId?"), Chunk981631.Z5c.CHANNELS_GAME_SHOP(Chunk893607.Hw.guildId(), ":pageIndex", ":skuId?", ":slug?"), Chunk981631.Z5c.NOTIFICATIONS, Chunk981631.Z5c.FRIENDS, Chunk981631.Z5c.ME, Chunk981631.Z5c.MESSAGE_REQUESTS, Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.USERS(":userId"), Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.GLOBAL_DISCOVERY, Chunk981631.Z5c.QUEST_HOME, Chunk981631.Z5c.GLOBAL_DISCOVERY_SERVERS, Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS],
   _ = [],
   m = 0;
 
@@ -41,19 +41,24 @@ function h(e, t) {
 
 function g(e) {
   let {
-    path: t
-  } = e, n = (0, i.LX)(t, p);
-  if (null == n) returnfalse;
-  if (n.params.guildId === c.STv && true === n.params.messageId) return d.verbose("Ignoring weird notification sidebar route lacking messageId"), false;
+    path: t,
+    isReplace: n
+  } = e, r = (0, i.LX)(t, p);
+  if (null == r) returnfalse;
+  if (r.params.guildId === c.STv && true === r.params.messageId) return d.verbose("Ignoring weird notification sidebar route lacking messageId"), false;
+  if (n && _.length > 0) return _[m] = {
+    path: t,
+    params: r.params
+  }, true;
   if (_.length > 0) {
     if (t === _[m].path) returnfalse;
     let e = _.findIndex(e => e.path === t);
     false !== e && (m >= e && (m -= 1), _.splice(e, 1))
   }
-  for (n.params.guildId !== c.STv && (m > 0 && h(_, m), m = 0); _.length > f;) _.pop();
+  for (r.params.guildId !== c.STv && (m > 0 && h(_, m), m = 0); _.length > f;) _.pop();
   _.unshift({
     path: t,
-    params: n.params
+    params: r.params
   })
 }
 

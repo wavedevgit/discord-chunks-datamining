@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -51,18 +51,18 @@ let p = "custom-image",
       selectedImageName: A,
       onChange: r,
       disabled: a = false,
-      name: l,
+      name: i,
       alt: d,
       data: u
-    } = e, p = l === A, m = (0, o.jm)({
+    } = e, p = i === A, m = (0, o.jm)({
       isSelected: p,
       label: d
     }), v = a ? true : () => {
-      r(u, l)
+      r(u, i)
     };
     return (0, n.jsx)(s.P3F, f(g({
       ref: t,
-      className: i()(c.radioOption, {
+      className: l()(c.radioOption, {
         [c.selected]: p,
         [c.disabled]: a
       }),
@@ -126,7 +126,7 @@ function v(e) {
     children: [(0, n.jsx)(s.tEY, {
       within: true,
       children: (0, n.jsxs)("div", {
-        className: i()(c.uploadButton, {
+        className: l()(c.uploadButton, {
           [c.disabled]: C,
           [c.hidden]: null != j
         }),
@@ -151,7 +151,7 @@ function v(e) {
       })
     }), null != j && (0, n.jsxs)("div", {
       className: c.customImageActionContainer,
-      children: [(0, n.jsx)(l.u, {
+      children: [(0, n.jsx)(i.u, {
         asContainer: true,
         text: u.intl.string(u.t.AQYXMO),
         children: (0, n.jsx)(s.P3F, {
@@ -169,7 +169,7 @@ function v(e) {
             className: c.editIcon
           })
         })
-      }), (0, n.jsx)(l.u, {
+      }), (0, n.jsx)(i.u, {
         asContainer: true,
         text: u.intl.string(u.t.WxqWU0),
         children: (0, n.jsx)(s.P3F, {

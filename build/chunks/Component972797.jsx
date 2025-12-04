@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
@@ -24,7 +24,7 @@ function c(e) {
   return r.useEffect(() => {
     m(e => e || a)
   }, [a]), (0, n.jsxs)("div", {
-    className: i()({
+    className: l()({
       [u.publishable]: !t && !a,
       [u.wasEverPublished]: p
     }, u.outerContainer),
@@ -42,7 +42,7 @@ function c(e) {
           color: "text-default",
           children: a ? d.intl.string(d.t["0r6pbG"]) : d.intl.string(d.t["8MMHYG"])
         })]
-      }), (0, n.jsx)(l.zxk, {
+      }), (0, n.jsx)(i.zxk, {
         text: a ? d.intl.string(d.t.DlJOvl) : d.intl.string(d.t.X7YGXE),
         icon: a ? o.kZF : o.T$Z,
         iconPosition: "end",

@@ -134,7 +134,7 @@ function k(e) {
       productLines: null == B ? true : B.getProductLines()
     })
   }, [P, L, A, B]), K = i.useCallback(() => {
-    (0, o.pT)(), (0, f.mK)({
+    (0, o.closeAllModals)(), (0, f.mK)({
       analyticsLocations: N,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })
@@ -143,7 +143,7 @@ function k(e) {
       guildId: (0, g.ac)()
     })
   }, []), q = i.useCallback(() => {
-    (0, o.pT)(), (0, m.default)({
+    (0, o.closeAllModals)(), (0, m.default)({
       guildId: (0, g.ac)()
     })
   }, []);

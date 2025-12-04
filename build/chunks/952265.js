@@ -1,24 +1,25 @@
 /** Chunk was on web.js **/
 /** chunk id: 952265, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require.d(exports, {
-  $s: () => C,
-  Ay: () => w,
-  DE: () => D,
-  Fv: () => I,
-  Gw: () => E,
-  JQ: () => A,
-  Jw: () => P,
-  Mr: () => S,
-  VX: () => L,
-  Vn: () => b,
-  ZD: () => O,
-  f9: () => N,
-  h7: () => v,
-  nf: () => x,
-  o: () => T,
-  pT: () => R,
-  s9: () => y
+require.r(exports), require.d(exports, {
+  closeAllModals: () => R,
+  closeAllModalsInContext: () => w,
+  closeModal: () => S,
+  closeModalInAllContexts: () => I,
+  doesTopModalAllowNavigation: () => j,
+  getInteractingModalContext: () => E,
+  hasAnyModalOpen: () => C,
+  hasAnyModalOpenSelector: () => A,
+  hasModalOpen: () => x,
+  hasModalOpenSelector: () => D,
+  modalContextFromAppContext: () => b,
+  openModal: () => v,
+  openModalLazy: () => O,
+  updateModal: () => T,
+  useHasAnyModalOpen: () => N,
+  useHasModalOpen: () => L,
+  useIsModalAtTop: () => P,
+  useModalsStore: () => y
 }), require("./415506.js"), require("./784620.js"), require("./973216.js"), require("./388685.js");
 var Chunk97613 = require("./97613.js"),
   i = require.n(Chunk97613),
@@ -138,9 +139,10 @@ function v(e) {
       onCloseCallback: u,
       backdropStyle: f,
       stackingBehavior: _,
-      stackNextByDefault: m
+      stackNextByDefault: m,
+      allowsNavigation: h
     } = t,
-    h = null != r ? r : i()();
+    g = null != r ? r : i()();
   return (0, o.j)(() => {
     y.setState(t => {
       let r = t[n];
@@ -148,7 +150,7 @@ function v(e) {
           let {
             key: t
           } = e;
-          return t === h
+          return t === g
         })) return t;
       let i = _;
       if (null == i) {
@@ -157,20 +159,21 @@ function v(e) {
       }
       return p(d({}, t), {
         [n]: [...r, {
-          key: h,
+          key: g,
           dismissable: a,
           Layer: l,
           render: e,
-          onCloseRequest: null != c ? c : () => S(h, n),
+          onCloseRequest: null != c ? c : () => S(g, n),
           onCloseCallback: u,
           instant: s,
           backdropStyle: f,
           stackingBehavior: i,
-          stackNextByDefault: m
+          stackNextByDefault: m,
+          allowsNavigation: h
         }]
       })
     })
-  }), h
+  }), g
 }
 
 function S(e) {
@@ -290,4 +293,16 @@ function x(e, t) {
 
 function L(e, t) {
   return D(y(), e, t)
+}
+
+function j() {
+  let e = y.getState(),
+    t = E();
+  if (exports !== Chunk602091.z1 && null != module[exports] && module[exports].length > 0) returnfalse;
+  let n = module[Chunk602091.z1];
+  if (null != require && require.length > 0) {
+    var r, i;
+    return null != (i = null == (r = require.at(false)) ? true : Chunk97613.allowsNavigation) && i
+  }
+  returntrue
 }

@@ -71,6 +71,7 @@ let c = "social-layer-storefront-product-details-modal",
       }))
     }, {
       modalKey: c,
+      allowsNavigation: u,
       onCloseCallback: () => {
         null == p || p()
       }

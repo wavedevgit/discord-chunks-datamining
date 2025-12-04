@@ -884,7 +884,7 @@ let ta = (0, Chunk112724.Z)(tl),
         dismissAction: e7.L.AUTO
       })
     }, [null == c ? true : c.id, ex, ey, eO]);
-    let ev = (0, f.f9)();
+    let ev = (0, f.useHasAnyModalOpen)();
     return (0, r.jsx)(ta, tr(tn({
       guildId: null == c ? true : c.guild_id,
       channelId: s,

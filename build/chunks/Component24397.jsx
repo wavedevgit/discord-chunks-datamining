@@ -57,7 +57,7 @@ let C = {
 };
 
 function N() {
-  (0, Chunk952265.ZD)(async () => {
+  (0, Chunk952265.openModalLazy)(async () => {
     let {
       default: e
     } = await require.e("87549").then(require.bind(require, 913962));

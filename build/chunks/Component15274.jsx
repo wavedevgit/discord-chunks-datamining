@@ -57,7 +57,7 @@ function f(e) {
     eventId: t,
     recurrenceId: a
   } = e;
-  (0, i.ZD)(async () => {
+  (0, i.openModalLazy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("4096"), n.e("25046")]).then(n.bind(n, 697849));
@@ -78,7 +78,7 @@ async function p(e, t) {
 }
 
 function _(e, t) {
-  (0, i.ZD)(async () => {
+  (0, i.openModalLazy)(async () => {
     let {
       default: t
     } = await n.e("21395").then(n.bind(n, 312757));

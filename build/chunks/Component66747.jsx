@@ -195,7 +195,7 @@ function X(e) {
   } = e, [o, a] = l.useState(null);
   l.useEffect(() => {
     a(J(t.joinedAtTimestamp))
-  }, [t.joinedAtTimestamp]), (0, f.Z)(() => {
+  }, [t.joinedAtTimestamp]), (0, p.Z)(() => {
     a(J(t.joinedAtTimestamp))
   }, 1e4);
   let s = i ? "text-brand" : "text-default";
@@ -257,8 +257,8 @@ let $ = Chunk473749.memo(function(e) {
       onOpenModerationMenu: s,
       onOpenMemberView: d,
       compact: b,
-      hasModViewPanelAccess: f
-    } = e, p = (0, u.e7)([S.Z, w.Z], () => S.Z.can(B.Plq.MANAGE_GUILD, w.Z.getGuild(t.guildId)), [t.guildId]), {
+      hasModViewPanelAccess: p
+    } = e, f = (0, u.e7)([S.Z, w.Z], () => S.Z.can(B.Plq.MANAGE_GUILD, w.Z.getGuild(t.guildId)), [t.guildId]), {
       selectedUserIds: h,
       addUsers: g,
       removeUser: j
@@ -311,7 +311,7 @@ let $ = Chunk473749.memo(function(e) {
           member: t,
           isSortedBy: _
         })
-      }), p && (0, r.jsx)("td", {
+      }), f && (0, r.jsx)("td", {
         className: o()(Y.smallCol, {
           [Y.compact]: b
         }),
@@ -342,11 +342,11 @@ let $ = Chunk473749.memo(function(e) {
           className: Y.actionCell,
           children: [(0, r.jsx)(C.u, {
             asContainer: true,
-            text: f ? z.intl.string(z.t.nHfkf4) : z.intl.string(z.t.uTre2y),
+            text: p ? z.intl.string(z.t.nHfkf4) : z.intl.string(z.t.uTre2y),
             children: (0, r.jsx)(m.P3F, {
               onClick: d,
               className: Y.button,
-              children: f ? (0, r.jsx)(N.Z, {
+              children: p ? (0, r.jsx)(N.Z, {
                 width: et,
                 height: et
               }) : (0, r.jsx)(m.tBG, {
@@ -387,7 +387,7 @@ let $ = Chunk473749.memo(function(e) {
       compact: m = false
     } = e, {
       analyticsLocations: b
-    } = (0, p.ZP)(), f = (0, u.e7)([_.ZP], () => _.ZP.getGuildSidebarState(n), [n]), h = (null == f ? true : f.details.userId) === t, g = (0, u.e7)([E.Z], () => E.Z.getEnhancedMember(n, t), [n, t]), j = (0, U.zq)(g), y = (0, u.e7)([Z.default], () => Z.default.getUser(t), [t]), O = (0, v.m)(n), H = (0, U.RN)(null != g ? g : true), w = l.useCallback(e => {
+    } = (0, f.ZP)(), p = (0, u.e7)([_.ZP], () => _.ZP.getGuildSidebarState(n), [n]), h = (null == p ? true : p.details.userId) === t, g = (0, u.e7)([E.Z], () => E.Z.getEnhancedMember(n, t), [n, t]), j = (0, U.zq)(g), y = (0, u.e7)([Z.default], () => Z.default.getUser(t), [t]), O = (0, v.m)(n), H = (0, U.RN)(null != g ? g : true), w = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), H(e)
     }, [H]), S = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != g && (0, U.RE)(g, b)

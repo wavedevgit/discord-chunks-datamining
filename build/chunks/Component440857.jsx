@@ -56,10 +56,10 @@ function v(e, t) {
 function y(e) {
   let {
     guildId: t
-  } = e, y = (0, f.xC)(t), {
+  } = e, y = (0, p.xC)(t), {
     selectedUserIds: O,
     clearSelection: H
-  } = (0, p.Z)(t), _ = O.size > 0, w = async (e, t, n, r) => {
+  } = (0, f.Z)(t), _ = O.size > 0, w = async (e, t, n, r) => {
     try {
       let l = await u.Z.banMultipleUsers(e, t, n, r);
       (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.AsCe5I), c.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, v(x({}, (0, d.hH)(e)), {

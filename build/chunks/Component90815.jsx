@@ -12,7 +12,7 @@ function l(e) {
   let {
     demonetized: t = false
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-  (0, i.ZD)(async () => {
+  (0, i.openModalLazy)(async () => {
     let {
       default: i
     } = await n.e("90220").then(n.bind(n, 418225));

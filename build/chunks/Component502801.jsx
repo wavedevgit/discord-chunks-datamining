@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk952265 = require("./952265.js"),
   Chunk481060 = require("./481060.js"),
   Chunk904245 = require("./904245.js"),
@@ -37,22 +37,22 @@ function k(e) {
   var t;
   let {
     clips: n
-  } = e, r = n[0], i = r.thumbnail, l = null;
-  return "" !== i && (l = (0, a.jsx)("div", {
-    className: o()(R.attachmentPreview, R.attachmentPreviewVideo),
-    children: (0, a.jsx)(d.ZP, {
+  } = e, r = n[0], i = r.thumbnail, o = null;
+  return "" !== i && (o = (0, a.jsx)("div", {
+    className: l()(R.attachmentPreview, R.attachmentPreviewVideo),
+    children: (0, a.jsx)(p.ZP, {
       className: R.thumbnail,
       src: i,
       width: 56,
       height: 56
     })
-  }), n.length > 1 && (l = (0, a.jsxs)("div", {
+  }), n.length > 1 && (o = (0, a.jsxs)("div", {
     className: R.attachmentPreviewOverflow,
     children: [(0, a.jsx)(u.ZP, {
       mask: u.ZP.Masks.FORWARD_ATTACHMENT_PILE_OVERFLOW,
       width: 56,
       height: 56,
-      children: l
+      children: o
     }), (0, a.jsxs)(c.Text, {
       className: R.overflowCount,
       variant: "text-xs/semibold",
@@ -77,17 +77,17 @@ function k(e) {
           })
         })]
       })
-    }), l]
+    }), o]
   })
 }
 
 function W(e) {
   var t, n, {
       clips: i,
-      analyticsLocations: o,
+      analyticsLocations: l,
       onClose: u
     } = e,
-    d = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var n, a, r = function(e, t) {
         if (null == e) return {};
@@ -106,16 +106,16 @@ function W(e) {
       let {
         withMessage: a,
         transitionToDestination: r,
-        closeAfterSend: p
+        closeAfterSend: d
       } = t;
       n(true);
       try {
         let t = [],
           b = [];
         for (let e of i) {
-          var d;
+          var p;
           let n = await (0, x.rO)(e),
-            a = null != (d = e.name) ? d : (0, I.yl)(O.default.extractTimestamp(e.id)),
+            a = null != (p = e.name) ? p : (0, I.yl)(O.default.extractTimestamp(e.id)),
             r = (0, j.Z)(a);
           if (e.type === P.NJ.CLIP || e.type === P.NJ.VOICE_CLIP) {
             let a = "".concat("" !== r ? r : "clip", ".mp4");
@@ -136,7 +136,7 @@ function W(e) {
           (0, c.showToast)((0, c.createToast)(L.intl.string(L.t.iufib1), c.ToastType.FAILURE)), n(false);
           return
         }
-        for (let e of (p && u(), R)) {
+        for (let e of (d && u(), R)) {
           let n = m.Z.getChannel(e);
           if (null != n) {
             for (let e of ((0, v.d)(t, n, w.d.ChannelMessage, {
@@ -144,7 +144,7 @@ function W(e) {
                 origin: "unknown:clip_share",
                 requireConfirm: false
               }), i)) y.default.track(C.rMx.CLIP_SHARED, {
-              location_stack: o,
+              location_stack: l,
               guild_id: n.guild_id,
               channel_id: n.id,
               channel_type: n.type,
@@ -158,19 +158,19 @@ function W(e) {
         }
         r && 1 === R.length && ((0, _.Kh)(R[0], {
           openTextInVoiceIfVoiceChannel: true
-        }), l.pT())
+        }), o.closeAllModals())
       } catch (e) {
         (0, c.showToast)((0, c.createToast)(L.intl.string(L.t.iufib1), c.ToastType.FAILURE))
       } finally {
         n(false)
       }
-    }, [i, o, u]),
+    }, [i, l, u]),
     W = r.useCallback(e => {
       if (e instanceof b.Sf && !(0, T.W)(e.id)) return {
         label: L.intl.string(L.t.iufib1)
       }
     }, []);
-  return (0, a.jsx)(p.ForwardModal, (t = function(e) {
+  return (0, a.jsx)(d.ForwardModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         a = Object.keys(n);
@@ -187,7 +187,7 @@ function W(e) {
       })
     }
     return e
-  }({}, d), n = n = {
+  }({}, p), n = n = {
     onClose: u,
     customTitle: L.intl.string(L.t.I8lglT),
     customSubtitle: L.intl.string(L.t.Ey7mOU),

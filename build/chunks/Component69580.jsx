@@ -636,10 +636,10 @@ function eu(e, t) {
     pathname: o,
     searchParams: s
   } = null != (n = j.Z.toURLSafe(t.location)) ? n : {}, l = j.Z.isDiscordHostname(null != a ? a : null) || window.location.host === a;
-  l && o === J.Z5c.OAUTH2_AUTHORIZED ? (0, h.h7)(e => (0, r.jsx)(Q.jO, er({
+  l && o === J.Z5c.OAUTH2_AUTHORIZED ? (0, h.openModal)(e => (0, r.jsx)(Q.jO, er({
     guild: t.guild,
     application: t.application
-  }, e))) : l && (null == o ? true : o.startsWith(J.Z5c.OAUTH2_ERROR)) ? (0, h.h7)(e => {
+  }, e))) : l && (null == o ? true : o.startsWith(J.Z5c.OAUTH2_ERROR)) ? (0, h.openModal)(e => {
     var t, n;
     let i = null != (n = null != (t = null == s ? true : s.get("error_description")) ? t : null == s ? true : s.get("error")) ? n : ee.intl.string(ee.t.mqn873);
     return Array.isArray(i) && (i = i[0]), (0, r.jsx)(q.j, ea(er({}, e), {
@@ -661,7 +661,7 @@ function ed(e, t) {
 }
 
 function ef(e, t) {
-  (0, h.h7)(t => (0, r.jsx)(es, ea(er({}, t, e), {
+  (0, h.openModal)(t => (0, r.jsx)(es, ea(er({}, t, e), {
     cancelCompletesFlow: false,
     callback: eu.bind(null, e)
   })), {

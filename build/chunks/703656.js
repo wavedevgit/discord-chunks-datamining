@@ -53,7 +53,11 @@ let m = false,
   });
 
 function g() {
-  return !Chunk585483.S.hasSubscribers(Chunk981631.CkL.MODAL_CLOSE) && (require("./574254.js").Z.close(), true)
+  if (Chunk585483.S.hasSubscribers(Chunk981631.CkL.MODAL_CLOSE)) {
+    letChunk952265 = require("./952265.js");
+    if (!module()) returnfalse
+  }
+  return require("./574254.js").Z.close(), true
 }
 
 function E(e, t) {

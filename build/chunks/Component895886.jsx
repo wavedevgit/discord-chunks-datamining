@@ -31,7 +31,7 @@ function o(e) {
 }
 
 function s() {
-  (0, Chunk952265.ZD)(async () => {
+  (0, Chunk952265.openModalLazy)(async () => {
     let {
       default: e
     } = await require.e("98137").then(require.bind(require, 397013));

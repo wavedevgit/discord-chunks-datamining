@@ -69,7 +69,7 @@ let _ = () => {
       let c = async t => {
         await o.ZP.submitVerificationForm(e, t)
       };
-      (0, i.ZD)(async () => {
+      (0, i.openModalLazy)(async () => {
         let {
           default: t
         } = await Promise.all([n.e("44686"), n.e("74240")]).then(n.bind(n, 645264));
@@ -88,17 +88,17 @@ let _ = () => {
       }, {
         modalKey: l.Pn,
         onCloseRequest: () => {
-          _(), s.rb.getState().hasUnsubmittedChanges ? (0, s.PE)(true) : (0, i.Mr)(l.Pn)
+          _(), s.rb.getState().hasUnsubmittedChanges ? (0, s.PE)(true) : (0, i.closeModal)(l.Pn)
         },
         onCloseCallback: t
       })
     },
     closeMemberVerificationModal() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      module || _(), (0, Chunk952265.Mr)(Chunk592286.Pn)
+      module || _(), (0, Chunk952265.closeModal)(Chunk592286.Pn)
     },
     openMemberVerificationPreviewModal(e) {
-      (0, i.ZD)(async () => {
+      (0, i.openModalLazy)(async () => {
         let {
           default: t
         } = await Promise.all([n.e("44686"), n.e("74240")]).then(n.bind(n, 645264));

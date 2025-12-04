@@ -37,7 +37,7 @@ function m(e) {
       label: r.name,
       icon: {
         type: "role",
-        color: (0, i.Rf)(r.color)
+        color: (0, l.Rf)(r.color)
       }
     }],
     onRemove: A
@@ -112,11 +112,11 @@ function q(e) {
   let {
     newRoleParams: t,
     setNewRoleParams: r,
-    guildId: i,
+    guildId: l,
     productId: c,
     listingRoleId: f,
     error: p
-  } = e, v = (0, l.e7)([d.Z], () => null != f ? d.Z.getRole(i, f) : true);
+  } = e, v = (0, i.e7)([d.Z], () => null != f ? d.Z.getRole(l, f) : true);
   return null === t ? (0, n.jsx)(s.gNt, {
     label: g.intl.string(g.t.ovXIrP),
     description: g.intl.string(g.t["H7coX+"]),

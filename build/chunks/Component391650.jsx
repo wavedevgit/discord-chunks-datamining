@@ -34,7 +34,7 @@ function l(e) {
 }
 
 function c(e) {
-  (0, i.ZD)(async () => {
+  (0, i.openModalLazy)(async () => {
     let {
       default: e
     } = await n.e("76323").then(n.bind(n, 298237));
@@ -49,7 +49,7 @@ function c(e) {
 function u() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     t = arguments.length > 1 ? arguments[1] : true;
-  (0, Chunk952265.ZD)(async () => {
+  (0, Chunk952265.openModalLazy)(async () => {
     let {
       default: t
     } = await require.e("60827").then(require.bind(require, 324239));

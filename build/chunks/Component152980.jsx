@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -35,13 +35,13 @@ function C(e) {
     asContainer: true,
     text: v,
     children: (0, n.jsxs)("div", {
-      className: i()(q.attachedFileCard, {
+      className: l()(q.attachedFileCard, {
         [q.attachedFileCardError]: g,
         [q.attachedFileCardUploading]: !f
       }),
       children: [(0, n.jsx)(s.ZKT, {
         size: "xs",
-        color: l.Z.colors.INTERACTIVE_MUTED.css
+        color: i.Z.colors.INTERACTIVE_MUTED.css
       }), (0, n.jsx)(s.LZC, {
         size: 10,
         horizontal: true
@@ -74,15 +74,15 @@ function U(e) {
   } = e, {
     uploads: A,
     canAttachFiles: a,
-    canAttachArchives: i,
-    addAttachment: l,
+    canAttachArchives: l,
+    addAttachment: i,
     deleteAttachment: o,
     fileUploadProgresses: c
   } = (0, f.P)(), p = r.useRef(false);
 
   function U(e) {
     try {
-      for (let t of e) l({
+      for (let t of e) i({
         platform: u.ow.WEB,
         file: t,
         origin: "unknown:guild_product_attachment"
@@ -126,7 +126,7 @@ function U(e) {
       id: b,
       color: "text-muted",
       variant: "text-xs/normal",
-      children: i ? h.intl.formatToPlainString(h.t.lvU6sr, {
+      children: l ? h.intl.formatToPlainString(h.t.lvU6sr, {
         fileUploadLimit: v.TR
       }) : h.intl.formatToPlainString(h.t.DOXzIU, {
         fileUploadLimit: v.TR

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  i = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk866442 = require("./866442.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
@@ -55,7 +55,7 @@ function v(e) {
   } = e, a = r.useRef(null), {
     name: s,
     color: v
-  } = t, h = e => A(t => (i()(null != t, "newRoleParams should be defined"), p(f({}, t), {
+  } = t, h = e => A(t => (l()(null != t, "newRoleParams should be defined"), p(f({}, t), {
     color: e
   })));
   return (0, n.jsxs)("div", {
@@ -63,7 +63,7 @@ function v(e) {
     children: [(0, n.jsx)(o.oil, {
       autoFocus: true,
       value: s,
-      onChange: e => A(t => (i()(null != t, "newRoleParams should be defined"), p(f({}, t), {
+      onChange: e => A(t => (l()(null != t, "newRoleParams should be defined"), p(f({}, t), {
         name: e
       }))),
       id: m,
@@ -73,7 +73,7 @@ function v(e) {
       className: g.roleColorContainer,
       children: [(0, n.jsx)(o.nn4, {
         children: c.intl.format(c.t["Vlq/pH"], {
-          color: (0, l.Rf)(v)
+          color: (0, i.Rf)(v)
         })
       }), (0, n.jsx)(o.yRy, {
         targetElementRef: a,

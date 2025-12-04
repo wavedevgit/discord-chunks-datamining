@@ -1,7 +1,7 @@
 /** Chunk was on 77033 **/
 /** chunk id: 720983, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk260999 = require("./260999.js");
 
-function L(e) {
+function N(e) {
   let {
     content: n,
     onClick: t,
@@ -42,12 +42,12 @@ function L(e) {
   })
 }
 
-function N(e) {
+function E(e) {
   let {
     guildId: n,
     storefront: t,
     selectedPageIndex: a
-  } = e, N = (0, s.wjy)((0, d.ZP)()), E = (0, p.Y)({
+  } = e, E = (0, s.wjy)((0, d.ZP)()), L = (0, p.Y)({
     location: "SocialLayerStorefrontHeader"
   }), Z = (0, r.e7)([I.default], () => I.default.getCurrentUser()), R = (0, m.oR)(), {
     analyticsLocations: T
@@ -69,7 +69,7 @@ function N(e) {
   let O = null != t.logoAssetId ? (0, x._W)(t.applicationId, t.logoAssetId, 75) : null,
     P = null != t.lightThemeLogoAssetId ? (0, x._W)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
     y = null;
-  return y = N ? null != O ? O : P : null != P ? P : O, (0, l.jsxs)(g.Z, {
+  return y = E ? null != O ? O : P : null != P ? P : O, (0, l.jsxs)(g.Z, {
     disableDoubleClick: true,
     className: S.headerContainer,
     children: [(0, l.jsxs)(s.P3F, {
@@ -105,9 +105,9 @@ function N(e) {
           children: e.title
         })
       }, "".concat(e.title, "-").concat(t)))
-    }), E && (0, l.jsxs)("div", {
+    }), L && (0, l.jsxs)("div", {
       className: S.alignedRightContent,
-      children: [(0, l.jsx)(L, {
+      children: [(0, l.jsx)(N, {
         content: (0, l.jsx)(s.h_8, {
           size: "xs",
           color: "currentColor"
@@ -115,7 +115,7 @@ function N(e) {
         onClick: A,
         ariaLabel: b.intl.string(b.t["7lZ31J"]),
         className: S.wishlistButton
-      }), (0, l.jsx)(L, {
+      }), (0, l.jsx)(N, {
         onClick: M,
         ariaLabel: b.intl.string(b.t.hvVgAZ),
         content: (0, l.jsx)(s.xvT, {

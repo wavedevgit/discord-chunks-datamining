@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 446535, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,14 +16,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk496675 = require("./496675.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk797966 = require("./797966.js");
-let p = e => {
+let f = e => {
   let {
     guild: t,
     transitionState: n,
     onClose: i
-  } = e, [p, h] = l.useState(7), [g, j] = l.useState(null), [x, v] = l.useState([]), y = l.useCallback(async () => {
-    j(null), j(await u.Z.updateEstimate(t.id, p, x))
-  }, [p, t.id, x]);
+  } = e, [f, h] = l.useState(7), [g, j] = l.useState(null), [x, v] = l.useState([]), y = l.useCallback(async () => {
+    j(null), j(await u.Z.updateEstimate(t.id, f, x))
+  }, [f, t.id, x]);
   l.useEffect(() => {
     y()
   }, [y]);
@@ -50,10 +50,10 @@ let p = e => {
         children: [b.intl.string(b.t.zbyz7p), "—", null != t ? t.name : ""]
       })
     }), (0, r.jsxs)("div", {
-      className: f.content,
+      className: p.content,
       children: [(0, r.jsx)(c.FXm, {
         label: b.intl.string(b.t.YccTvK),
-        value: String(p),
+        value: String(f),
         options: [{
           name: b.intl.formatToPlainString(b.t.FM1dHS, {
             days: 7
@@ -69,7 +69,7 @@ let p = e => {
           h(Number(e))
         }
       }), (0, r.jsx)(c.zJl, {
-        className: f.scroller,
+        className: p.scroller,
         children: (0, r.jsx)(s.d, {
           label: b.intl.string(b.t.buoe17),
           maxVisibleItems: 10,
@@ -80,13 +80,13 @@ let p = e => {
         })
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
-        className: f.spacing,
+        className: p.spacing,
         children: x.length > 0 ? b.intl.format(b.t["5WxHHp"], {
           members: g,
-          days: p
+          days: f
         }) : b.intl.format(b.t.f13az9, {
           members: g,
-          days: p
+          days: f
         })
       })]
     }), (0, r.jsx)(c.mzw, {
@@ -96,7 +96,7 @@ let p = e => {
           variant: "primary",
           text: b.intl.string(b.t["2mIlKQ"]),
           onClick: () => {
-            u.Z.prune(t.id, p, x), i()
+            u.Z.prune(t.id, f, x), i()
           }
         }), (0, r.jsx)(c.Button, {
           variant: "secondary",

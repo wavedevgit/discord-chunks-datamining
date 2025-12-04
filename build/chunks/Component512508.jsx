@@ -129,11 +129,11 @@ let M = Chunk473749.memo(function(e) {
   } = e, {
     id: a,
     name: s
-  } = n.record, d = (0, f.p9)({
+  } = n.record, d = (0, p.p9)({
     guildId: l,
     roleId: a,
     size: 16
-  }), C = (0, c.e7)([x.Z], () => x.Z.getRole(l, a)), m = s.includes(g.CR) ? "" : "@", b = (0, u.dQu)(u.TVs.unsafe_rawColors.PRIMARY_300).hsl(), j = null != (t = null == C ? true : C.colorString) ? t : b, v = (0, p._f)(l, C, null == C ? true : C.colorStrings);
+  }), C = (0, c.e7)([x.Z], () => x.Z.getRole(l, a)), m = s.includes(g.CR) ? "" : "@", b = (0, u.dQu)(u.TVs.unsafe_rawColors.PRIMARY_300).hsl(), j = null != (t = null == C ? true : C.colorString) ? t : b, v = (0, f._f)(l, C, null == C ? true : C.colorStrings);
   return (0, r.jsxs)("div", {
     className: o()(H.rowLabel, H.roleTagContainer, i),
     children: [(0, r.jsx)(u.FhE, {
@@ -196,8 +196,8 @@ function k(e) {
     selectedRoleIds: C = new Set,
     onChange: m,
     placeholder: b,
-    helperText: f,
-    className: p
+    helperText: p,
+    className: f
   } = e, h = (0, c.e7)([x.Z], () => x.Z.getRolesSnapshot(t)), g = l.useMemo(() => (function(e, t, n) {
     if (null == e) return {};
     let r = {};
@@ -283,7 +283,7 @@ function k(e) {
       })
     }), [g, v, t]);
   return (0, r.jsxs)("div", {
-    className: o()(H.searchContainer, p),
+    className: o()(H.searchContainer, f),
     children: [(0, r.jsxs)("div", {
       className: H.searchBox,
       children: [(0, r.jsx)(d.Z, {
@@ -367,11 +367,11 @@ function k(e) {
           innerAriaOrientation: "vertical"
         })
       })]
-    }), null != f && (0, r.jsx)(u.Text, {
+    }), null != p && (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: H.helperText,
-      children: f
+      children: p
     })]
   })
 }

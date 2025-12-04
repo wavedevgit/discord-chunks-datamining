@@ -200,7 +200,7 @@ function J(e) {
     windowDispatch: ef
   } = i.useContext(T.ZP), ep = (0, d.e7)([P.Z], () => !P.Z.hasLoadedStickerPacks), e_ = (0, A.V2)({
     location: "expression_picker"
-  }), em = (0, d.e7)([D.Z], () => D.Z.isOpen()), eh = null != en, eg = (0, p.Jw)(null != en ? en : ""), {
+  }), em = (0, d.e7)([D.Z], () => D.Z.isOpen()), eh = null != en, eg = (0, p.useIsModalAtTop)(null != en ? en : ""), {
     reorderExpressionPickerTabs: eE
   } = b.n.useConfig({
     location: "expression_picker"
@@ -210,7 +210,7 @@ function J(e) {
     disable: !eO || ec !== j.X1.EMOJI
   }), eS = i.useCallback(e => {
     var t;
-    if (!eh && (0, p.$s)() || eh && !(eg && et) || em || e.defaultPrevented) return;
+    if (!eh && (0, p.hasAnyModalOpen)() || eh && !(eg && et) || em || e.defaultPrevented) return;
     let {
       target: n
     } = e;
@@ -241,7 +241,7 @@ function J(e) {
   }, [eC, eA]), i.useEffect(() => {
     (0, L.ql)("")
   }, []), i.useEffect(() => {
-    (!eh && (0, p.$s)() || eh && !eg) && (0, L._Q)()
+    (!eh && (0, p.hasAnyModalOpen)() || eh && !eg) && (0, L._Q)()
   }, [eg, eh]), i.useEffect(() => {
     if (null != eo.current && !ei.current) {
       var e, t, n, r;

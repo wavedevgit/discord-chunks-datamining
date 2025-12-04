@@ -125,7 +125,7 @@ class T extends Chunk473749.PureComponent {
 }
 
 function A() {
-  return (0, Chunk952265.Vn)((0, Chunk728285.bp)())
+  return (0, Chunk952265.modalContextFromAppContext)((0, Chunk728285.bp)())
 }
 
 function C(e) {
@@ -146,7 +146,7 @@ let N = [];
 
 function P() {
   let e = A(),
-    t = (0, Chunk952265.s9)(t => true !== t[e] ? t[e] : N),
+    t = (0, Chunk952265.useModalsStore)(t => true !== t[e] ? t[e] : N),
     n = Chunk473749.useMemo(() => C(exports), [exports]),
     a = Chunk473749.useRef(true);
   Chunk473749.useLayoutEffect(() => {
@@ -168,7 +168,7 @@ function P() {
       (null == module ? true : module.dismissable) !== false && Chunk585483.S.dispatch(Chunk981631.CkL.MODAL_CLOSE)
     }, []),
     p = Chunk473749.useCallback(t => {
-      (0, h.Mr)(t, e)
+      (0, h.closeModal)(t, e)
     }, [module]),
     _ = I.map(e => t.some(t => t.Layer === e || null == t.Layer && e === f.ZP));
   return (0, Chunk54381.jsxs)(Chunk215569.W, {

@@ -119,7 +119,7 @@ function A(e, t) {
       } : e => {
         p("go-live-modal");
         let t = v.Z.getTargetPID();
-        c.Z.setInputLocked(false, t), (0, s.ZD)(async () => {
+        c.Z.setInputLocked(false, t), (0, s.openModalLazy)(async () => {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("4093"), n.e("47863"), n.e("59416")]).then(n.bind(n, 60594));

@@ -60,7 +60,7 @@ let V = new Chunk710845.Z("ProductAttachmentManager");
 class x {
   addAttachment(e, t) {
     let A = this.target.getMaxAttachmentsCount();
-    if (this.uploads.length >= A) throw i.uv.announce(b.intl.formatToPlainString(b.t["0QDZ4J"], {
+    if (this.uploads.length >= A) throw l.uv.announce(b.intl.formatToPlainString(b.t["0QDZ4J"], {
       maxAttachmentsCount: A
     })), Error("Too many attachments");
     e.target = u.e.GUILD_PRODUCT_ATTACHMENT;
@@ -69,13 +69,13 @@ class x {
       var r;
       A === q.evJ.ENTITY_TOO_LARGE && this.onFileSizeError();
       let a = "number" == typeof A && A > 0 ? -A : false,
-        l = (0, h.kg)(a),
+        i = (0, h.kg)(a),
         o = null == (r = e.file) ? true : r.name;
-      null != o ? i.uv.announce(b.intl.formatToPlainString(b.t["+YVkfX"], {
+      null != o ? l.uv.announce(b.intl.formatToPlainString(b.t["+YVkfX"], {
         filename: o,
-        reason: l
-      })) : i.uv.announce(b.intl.formatToPlainString(b.t.mBkf6Z, {
-        reason: l
+        reason: i
+      })) : l.uv.announce(b.intl.formatToPlainString(b.t.mBkf6Z, {
+        reason: i
       })), t(e => j(U({}, e), {
         [n.id]: a
       }))
@@ -99,7 +99,7 @@ class x {
       priceTier: A,
       createNewRole: n,
       imageName: r
-    } = e, i = function(e, t) {
+    } = e, l = function(e, t) {
       if (null == e) return {};
       var A, n, r = function(e, t) {
         if (null == e) return {};
@@ -115,7 +115,7 @@ class x {
       return r
     }(e, ["priceTier", "createNewRole", "imageName"]);
     if (this.uploads.some(e => e.status === s.mw.ERROR)) throw Error("Cannot create product with failed attachments");
-    "unlinkRole" in i && (t = i.unlinkRole);
+    "unlinkRole" in l && (t = l.unlinkRole);
     let o = this.uploads.filter(e => !this.existingAttachmentIds.has(e.id)),
       d = this.uploads.filter(e => this.existingAttachmentIds.has(e.id)).map(e => {
         var t;
@@ -131,7 +131,7 @@ class x {
       v = (await f({
         url: m,
         rejectWithError: false,
-        body: j(U({}, i), {
+        body: j(U({}, l), {
           price_tier: A,
           create_new_role: n,
           image_name: r,
@@ -139,10 +139,10 @@ class x {
           attachments: d.length > 0 ? [...d, ...g] : g
         })
       })).body;
-    return V.log("Created/updated product:", v), null != v && (null != this.editSkuId ? await l.Z.dispatch({
+    return V.log("Created/updated product:", v), null != v && (null != this.editSkuId ? await i.Z.dispatch({
       type: "GUILD_PRODUCT_UPDATE",
       product: v
-    }) : await l.Z.dispatch({
+    }) : await i.Z.dispatch({
       type: "GUILD_PRODUCT_CREATE",
       product: v
     })), v
@@ -181,10 +181,10 @@ function O(e, t) {
   var A;
   let {
     editSkuId: a,
-    onFileSizeError: i
-  } = t, l = (0, r.e7)([f.Z], () => f.Z.getGuild(e)), [s, d] = n.useState({
+    onFileSizeError: l
+  } = t, i = (0, r.e7)([f.Z], () => f.Z.getGuild(e)), [s, d] = n.useState({
     editSkuId: a,
-    onFileSizeError: i
+    onFileSizeError: l
   }), u = n.useMemo(() => new x(U({
     guildId: e
   }, s)), [e, s]), [c, g] = n.useState(u.generateInitialProgresses), [, p] = n.useState(null);
@@ -201,14 +201,14 @@ function O(e, t) {
       let t = await u.saveProductWithAttachments(e);
       return null != t && d({
         editSkuId: t.id,
-        onFileSizeError: i
+        onFileSizeError: l
       }), p({}), t
     } catch (e) {
       b(e instanceof o.Hx ? e : new o.Hx(e))
     } finally {
       v(true)
     }
-  }, [u, i]), O = n.useCallback(() => {
+  }, [u, l]), O = n.useCallback(() => {
     u.cancelUnusedUploads(), p({})
   }, [u]);
   n.useEffect(() => () => {
@@ -229,6 +229,6 @@ function O(e, t) {
     saveError: h,
     hasUnsavedAttachmentChanges: F,
     canAttachFiles: P.length < u.target.getMaxAttachmentsCount(),
-    canAttachArchives: null != (A = null == l ? true : l.features.has(q.GuildFeatures.GUILD_PRODUCTS_ALLOW_ARCHIVED_FILE)) && A
+    canAttachArchives: null != (A = null == i ? true : i.features.has(q.GuildFeatures.GUILD_PRODUCTS_ALLOW_ARCHIVED_FILE)) && A
   }
 }

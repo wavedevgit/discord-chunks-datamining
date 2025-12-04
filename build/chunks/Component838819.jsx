@@ -44,7 +44,7 @@ let D = e => {
       children: t,
       shouldAddEventListener: n,
       onClose: r
-    } = e, i = (0, c.f9)();
+    } = e, i = (0, c.useHasAnyModalOpen)();
     return l.useEffect(() => {
       if (!n || i) return;
       let e = e => {

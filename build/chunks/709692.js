@@ -22,12 +22,12 @@ function u(e) {
     onCloseRequest: n,
     onCloseCallback: i
   } = e, [c] = r.useState(() => a()()), u = (0, l.v)();
-  (0, o.Ng)(() => ((0, s.h7)(t, {
+  (0, o.Ng)(() => ((0, s.openModal)(t, {
     modalKey: c,
     onCloseRequest: n,
     onCloseCallback: i
   }, u), () => {
-    (0, s.Mr)(c, u)
+    (0, s.closeModal)(c, u)
   }));
   let d = r.useRef(true),
     f = {
@@ -44,6 +44,6 @@ function u(e) {
       modalKey: r,
       onCloseCallback: i
     } = p.current;
-    d.current || (0, s.o)(r, t, n, i, e), d.current = false
+    d.current || (0, s.updateModal)(r, t, n, i, e), d.current = false
   }, [t, n]), null
 }

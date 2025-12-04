@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk671408 = require("./671408.js");
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function h(e) {
           isSelected: e => e === x.pageSize,
           select: e => {
             g(() => {
-              (0, C._o)(t, p(f({}, x), {
+              (0, C._o)(t, f(p({}, x), {
                 pageSize: e
               }))
             })
@@ -111,7 +111,7 @@ function h(e) {
         onPageChange: e => {
           null == n || n(e), requestIdleCallback(() => {
             g(() => {
-              (0, C._o)(t, p(f({}, x), {
+              (0, C._o)(t, f(p({}, x), {
                 currentPage: e
               }))
             })

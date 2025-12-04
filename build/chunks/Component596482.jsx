@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk337640 = require("./337640.js");
 
-function p(e) {
+function f(e) {
   var t;
   if (null == (null != (t = e.dmsDisabledUntil) ? t : e.invitesDisabledUntil)) return "";
   let n = null != e.dmsDisabledUntil,
@@ -42,22 +42,22 @@ function h(e) {
     incidentData: o
   } = e, s = null != (t = o.raidDetectedAt) ? t : o.dmSpamDetectedAt;
   return (0, r.jsxs)("div", {
-    className: f.subheaderContainer,
+    className: p.subheaderContainer,
     children: [(0, r.jsxs)("div", {
-      className: f.subHeaderTextContainer,
+      className: p.subHeaderTextContainer,
       children: [(0, r.jsx)(a.b7C, {
         size: "md",
-        className: f.shieldIcon,
+        className: p.shieldIcon,
         color: i.Z.unsafe_rawColors.RED_345.css
       }), (0, r.jsxs)("div", {
-        className: f.subHeaderText,
+        className: p.subHeaderText,
         children: [(0, r.jsx)(a.Heading, {
-          className: f.heading,
+          className: p.heading,
           variant: "heading-lg/semibold",
           color: "text-feedback-critical",
           children: (0, u.kk)(o) ? b.intl.string(b.t.raRxxT) : b.intl.string(b.t["4nbAta"])
         }), (0, r.jsx)(a.Text, {
-          className: f.tagLine,
+          className: p.tagLine,
           variant: "text-sm/medium",
           children: b.intl.format(b.t["4QIIZl"], {
             dateTime: new Date(null != s ? s : "").toLocaleString(b.intl.currentLocale, u.pQ)
@@ -65,7 +65,7 @@ function h(e) {
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: f.buttonContainer,
+      className: p.buttonContainer,
       children: [(0, r.jsx)(a.Button, {
         variant: "secondary",
         onClick: l,
@@ -88,22 +88,22 @@ function g(e) {
     guildName: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: f.subheaderContainer,
+    className: p.subheaderContainer,
     children: [(0, r.jsxs)("div", {
-      className: f.subHeaderTextContainer,
+      className: p.subHeaderTextContainer,
       children: [(0, r.jsx)(a.b7C, {
         size: "md",
-        className: f.shieldIcon,
+        className: p.shieldIcon,
         color: i.Z.unsafe_rawColors.BRAND_360.css
       }), (0, r.jsxs)("div", {
-        className: f.subHeaderText,
+        className: p.subHeaderText,
         children: [(0, r.jsx)(a.Heading, {
-          className: f.heading,
+          className: p.heading,
           variant: "heading-lg/semibold",
           color: "text-brand",
-          children: p(n)
+          children: f(n)
         }), (0, r.jsx)(a.Text, {
-          className: f.tagLine,
+          className: p.tagLine,
           variant: "text-sm/medium",
           children: (0, u.OY)(n, l)
         })]
@@ -125,28 +125,28 @@ function j(e) {
     guildName: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: f.subheaderContainer,
+    className: p.subheaderContainer,
     children: [(0, r.jsxs)("div", {
-      className: f.subHeaderTextContainer,
+      className: p.subHeaderTextContainer,
       children: [(0, r.jsx)(a.b7C, {
         size: "md",
-        className: f.shieldIcon,
+        className: p.shieldIcon,
         color: i.Z.unsafe_rawColors.BRAND_360.css
       }), (0, r.jsxs)("div", {
-        className: f.subHeaderText,
+        className: p.subHeaderText,
         children: [(0, r.jsx)(a.Heading, {
-          className: f.heading,
+          className: p.heading,
           variant: "heading-lg/semibold",
           color: "text-brand",
-          children: p(l)
+          children: f(l)
         }), (0, r.jsx)(a.Text, {
-          className: f.tagLine,
+          className: p.tagLine,
           variant: "text-sm/medium",
           children: (0, u.OY)(l, o)
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: f.buttonContainer,
+      className: p.buttonContainer,
       children: [(0, r.jsx)(a.Button, {
         onClick: n,
         text: b.intl.string(b.t.ISiXba),
@@ -208,10 +208,10 @@ function x(e) {
         }), l))
       }
     })
-  }, [t.id, n]), f = l.useCallback(() => {
+  }, [t.id, n]), p = l.useCallback(() => {
     let e = m.Z.getLastIncidentAlertMessage(t.id);
     (0, C.kW)(e, t.id)
-  }, [t.id]), p = (() => {
+  }, [t.id]), f = (() => {
     switch (true) {
       case o && i:
         return 3;
@@ -224,11 +224,11 @@ function x(e) {
     }
   })();
   if (null == t || null == n) return null;
-  switch (p) {
+  switch (f) {
     case 1:
       return (0, r.jsx)(h, {
         onHandleEnableLockdown: b,
-        onHandleReportFalseAlarm: f,
+        onHandleReportFalseAlarm: p,
         incidentData: n
       });
     case 2:
@@ -240,7 +240,7 @@ function x(e) {
     case 3:
       return (0, r.jsx)(j, {
         onHandleEnableLockdown: b,
-        onHandleReportFalseAlarm: f,
+        onHandleReportFalseAlarm: p,
         incidentData: n,
         guildName: t.name
       });

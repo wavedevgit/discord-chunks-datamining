@@ -10,7 +10,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk812206 = require("./812206.js");
 
 function o(e, t) {
-  let A = (0, r.e7)([l.Z], () => l.Z.getGuildApplication(e, t)),
+  let A = (0, r.e7)([i.Z], () => i.Z.getGuildApplication(e, t)),
     [o, s] = n.useState(null == A),
     [d, u] = n.useState(),
     [c, g] = n.useState(false),
@@ -18,7 +18,7 @@ function o(e, t) {
       if (null == A && null != e) {
         g(true), s(true);
         try {
-          await i.ZP.getApplicationsForGuild(e, {
+          await l.ZP.getApplicationsForGuild(e, {
             type: t,
             includeTeam: true
           })

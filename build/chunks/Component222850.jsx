@@ -34,7 +34,7 @@ let I = Math.ceil(Math.sqrt(115200)),
       shouldShowGradientAndBadge: j,
       dismissContent: P
     } = function() {
-      let e = (0, u.f9)(),
+      let e = (0, u.useHasAnyModalOpen)(),
         [t, n] = (0, g.US)(e ? [] : [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING], O.R.PRIVATE_CHANNELS_LIST, true),
         r = i.useCallback(() => {
           n(O.L.TAKE_ACTION)

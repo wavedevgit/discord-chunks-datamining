@@ -2,7 +2,7 @@
 /** chunk id: 4794, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,9 +13,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk36361 = require("./36361.jsx"),
   Chunk530171 = require("./530171.jsx"),
   Chunk175993 = require("./175993.jsx"),
+  Chunk774642 = require("./774642.js"),
   Chunk445642 = require("./445642.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +25,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,21 +49,21 @@ function m(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function g(e) {
+function E(e) {
   let {
     node: t
   } = e, {
     useTitle: n,
     layout: a,
-    useCollapsedSubtitle: p,
-    useNotice: m
-  } = t, [g, E] = i.useState(false), [b, y] = i.useState(true);
+    useCollapsedSubtitle: _,
+    useNotice: h
+  } = t, [E, b] = i.useState(false), [y, O] = i.useState(true);
   i.useEffect(() => l.Z.subscribe(e => {
     let {
       navTransition: t
@@ -71,19 +72,19 @@ function g(e) {
   }, e => {
     if (null == e) return;
     let n = (null == e ? true : e.targetAccordionKey) === t.key;
-    n && !g && (E(true), y(false)), n && g && (l.Z.setState({
-      navTransition: h(_({}, e), {
+    n && !E && (b(true), O(false)), n && E && (l.Z.setState({
+      navTransition: g(m({}, e), {
         targetAccordionKey: true
       })
-    }), y(true))
+    }), O(true))
   }, {
     equalityFn: s.X,
     fireImmediately: true
-  }), [g, t.key]);
-  let O = null == n ? true : n(g),
-    v = null == p ? true : p(),
-    S = null == m ? true : m(),
-    I = i.useCallback(e => {
+  }), [E, t.key]);
+  let v = null == n ? true : n(E),
+    S = null == _ ? true : _(),
+    I = null == h ? true : h(),
+    T = i.useCallback(e => {
       e && l.Z.setState({
         navTransition: {
           targetKey: t.key,
@@ -94,22 +95,26 @@ function g(e) {
       })
     }, [t.key]);
   return (0, r.jsx)("div", {
+    style: {
+      "--custom-base-setting-wrapper-horizontal-padding": "".concat(f.q, "px"),
+      "--custom-base-setting-wrapper-vertical-padding": "".concat(f.G, "px")
+    },
     className: o()({
-      [f.open]: g
+      [p.open]: E
     }),
     children: (0, r.jsxs)(u.I, {
-      title: O,
-      collapsedSubtitle: v,
-      isExpanded: g,
-      onExpandedChange: E,
-      onExpandedChangeComplete: I,
-      animate: b,
-      children: [null != S && (0, r.jsx)(d.Z, {
-        notice: S
+      title: v,
+      collapsedSubtitle: S,
+      isExpanded: E,
+      onExpandedChange: b,
+      onExpandedChangeComplete: T,
+      animate: y,
+      children: [null != I && (0, r.jsx)(d.Z, {
+        notice: I
       }), a.map(e => (0, r.jsx)(c.Z, {
         node: e
       }, e.key))]
     })
   })
 }
-let E = Chunk473749.memo(g)
+let b = Chunk473749.memo(E)

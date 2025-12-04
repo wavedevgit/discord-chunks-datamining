@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 685244, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -49,19 +49,19 @@ let b = {
     easing: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.back()),
     clamp: true
   },
-  f = {
+  p = {
     duration: 2e3,
     easing: Chunk748780.Z.Easing.quad,
     clamp: true
   };
 
-function p(e) {
+function f(e) {
   var {
     value: t,
     children: n,
     equalityFn: i = o(),
     style: s
-  } = e, p = function(e, t) {
+  } = e, f = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -90,7 +90,7 @@ function p(e) {
         config: b
       }), j({
         spring: 0,
-        config: f,
+        config: p,
         delay: 300
       })
     }, [j]);
@@ -106,7 +106,7 @@ function p(e) {
     }) : {
       backgroundColor: O
     };
-  return (0, r.jsx)(a.animated.tr, m(C({}, p), {
+  return (0, r.jsx)(a.animated.tr, m(C({}, f), {
     style: H,
     children: n
   }))

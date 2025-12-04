@@ -248,7 +248,7 @@ function er(e) {
   }), r.useEffect(() => {
     if (I.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: true
-      }), c) return (0, s.Ay)(u.u1M), n.addEventListener("contextmenu", J, false), () => {
+      }), c) return (0, s.closeAllModalsInContext)(u.u1M), n.addEventListener("contextmenu", J, false), () => {
       n.removeEventListener("contextmenu", J, false)
     };
     n.removeEventListener("contextmenu", J, false)

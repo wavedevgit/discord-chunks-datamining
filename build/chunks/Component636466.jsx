@@ -81,7 +81,7 @@ function E(e) {
       return i
     }(e, ["showPopover", "onViewWishlist", "onCardClick"]);
   let p = i.useRef(null),
-    b = (0, s.f9)(),
+    b = (0, s.useHasAnyModalOpen)(),
     _ = (0, l.e7)([g.Z], () => g.Z.hasLayers()),
     y = (0, m.NN)({
       location: "wishlist-card"

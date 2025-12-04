@@ -283,7 +283,7 @@ function eA(e) {
     code: t
   } = e;
   ee("handleConnectionClosed called with code ".concat(t, "."));
-  let r = n(952265).nf;
+  let r = n(952265).hasModalOpen;
   if (4004 === t) {
     if (F || r(C.$$) || r(C.dG)) return void eP();
     O.default.track(A.rMx.APP_USER_DEAUTHENTICATED, {

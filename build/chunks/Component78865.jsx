@@ -62,7 +62,7 @@ function y(e) {
   });
 
   function m() {
-    (0, a.Z)(), (0, o.pT)(), u.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
+    (0, a.Z)(), (0, o.closeAllModals)(), u.default.track(b.rMx.PREMIUM_PROMOTION_OPENED, {
       location_section: b.jXE.STREAM_UPSELL_MODAL,
       location_object: b.qAy.NAVIGATION_LINK
     }), (0, s.uL)(b.Z5c.APPLICATION_STORE)

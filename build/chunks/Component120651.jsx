@@ -8,7 +8,7 @@ require("./473749.js");
 var Chunk952265 = require("./952265.js");
 
 function a(e) {
-  (0, r.ZD)(async () => {
+  (0, r.openModalLazy)(async () => {
     let {
       default: t
     } = await A.e("73322").then(A.bind(A, 776045));

@@ -54,7 +54,7 @@ let O = function(e, t) {
   if (!(null != t && (0, s.n)(t)) && (null == T || T.canChat || (0, l.jU)(S))) {
     if (null != S && !I) {
       let e = (0, E.rY)(S, g.Z, p.Z);
-      if (e && S.isGuildStageVoice() && (0, c.xJ)(S.id)) return void(0, i.ZD)(async () => {
+      if (e && S.isGuildStageVoice() && (0, c.xJ)(S.id)) return void(0, i.openModalLazy)(async () => {
         let {
           default: e
         } = await n.e("46398").then(n.bind(n, 523794));
@@ -62,7 +62,7 @@ let O = function(e, t) {
           channel: S
         }, t))
       });
-      if (e) return void(0, i.ZD)(async () => {
+      if (e) return void(0, i.openModalLazy)(async () => {
         let {
           default: e
         } = await n.e("86465").then(n.bind(n, 997308));

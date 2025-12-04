@@ -108,7 +108,7 @@ async function S(e, t) {
       }(0, p.d)(t, I, c.d.ChannelMessage, {
         filesMetadata: n,
         origin: "unknown:clip_share"
-      }), i.pT()
+      }), i.closeAllModals()
     } catch (e) {
       throw g.jF.error(e), e
     }
