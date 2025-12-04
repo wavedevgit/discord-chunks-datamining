@@ -2,7 +2,7 @@
 /** chunk id: 190210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => en
-}), require("./539854.js"), require("./388685.js"), require("./781311.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
+}), require("./539854.js"), require("./953529.js"), require("./388685.js"), require("./781311.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
@@ -86,22 +86,22 @@ function ee(e, t) {
   }), e
 }
 
-function et(e, t) {
-  let n = e.startsWith("attachment://"),
-    i = e;
-  if (n) {
-    let n = e.slice(13);
-    i = t ? "attachment://SPOILER_".concat(n) : e
+function et(e, t, n) {
+  let i = e.startsWith("attachment://"),
+    r = e;
+  if (i) {
+    let t = e.slice(13);
+    r = n ? "attachment://SPOILER_".concat(t) : e
   }
   return {
     media: {
-      url: i,
-      proxyUrl: i,
+      url: r,
+      proxyUrl: r,
       loadingState: g.f.UNKNOWN,
       flags: 0
     },
-    description: e,
-    spoiler: t
+    description: null != t ? t : true,
+    spoiler: n
   }
 }
 let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
@@ -187,7 +187,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     })).then(t);
     n.push({
       type: g.re.MEDIA_GALLERY,
-      items: [et("attachment://".concat(ej.name), false)],
+      items: [et("attachment://".concat(ej.name), null, false)],
       id: "".concat(K.Vm)
     }), e.value.length > 0 && n.push({
       type: g.re.TEXT_DISPLAY,
@@ -197,7 +197,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     let r = R.Z.getUploads(L.id, w.d.ChannelMessage),
       l = r.filter(e => (e.isImage || e.isVideo) && e.filename !== (null == ej ? true : ej.name)),
       a = r.filter(e => !e.isImage && !e.isVideo && e.filename !== (null == ej ? true : ej.name)),
-      o = l.map(e => et("attachment://".concat(e.filename), false));
+      o = l.map(e => et("attachment://".concat(e.filename), e.description, e.spoiler));
     return o.length > 0 && n.push({
       type: g.re.MEDIA_GALLERY,
       items: o,
@@ -205,8 +205,9 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     }), a.forEach((e, t) => {
       n.push({
         type: g.re.FILE,
-        file: et("attachment://".concat(e.filename), false).media,
+        file: et("attachment://".concat(e.filename), e.description, e.spoiler).media,
         id: "".concat(K.kn + t),
+        spoiler: e.spoiler,
         name: null,
         size: null
       })
