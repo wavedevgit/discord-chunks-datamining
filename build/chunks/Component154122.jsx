@@ -26,9 +26,9 @@ let b = e => {
   } = (0, l.Z)({
     userId: null == t ? true : t.id,
     size: a.EFr.SIZE_56
-  }), y = u.ZP.getName(t), h = !r;
+  }), g = u.ZP.getName(t), y = !r;
   return (0, n.jsxs)("div", {
-    className: f.row,
+    className: p.row,
     children: [(0, n.jsx)(a.qEK, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
@@ -48,34 +48,34 @@ let b = e => {
       return e
     }({
       imageClassName: s()({
-        [f.erroredAvatar]: h
+        [p.erroredAvatar]: y
       }),
       src: b,
-      "aria-label": y,
+      "aria-label": g,
       size: a.EFr.SIZE_32
-    }, m)), h ? (0, n.jsxs)(n.Fragment, {
+    }, m)), y ? (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(a.Text, {
-        className: f.error,
+        className: p.error,
         variant: "text-md/medium",
         color: "text-strong",
-        children: y
+        children: g
       }), (0, n.jsx)(a.Text, {
         variant: "text-md/medium",
-        className: f.error,
+        className: p.error,
         color: "text-strong",
-        children: p.intl.format(d.default["Y/oMwY"], {
-          userName: y
+        children: f.intl.format(d.default["Y/oMwY"], {
+          userName: g
         })
       })]
     }) : (0, n.jsx)(a.Text, {
       variant: "text-md/medium",
-      className: f.displayName,
+      className: p.displayName,
       color: "text-strong",
-      children: y
+      children: g
     }), (0, n.jsx)(a.Button, {
       variant: "secondary",
       size: "sm",
-      text: p.intl.string(p.t["g33r/P"]),
+      text: f.intl.string(f.t["g33r/P"]),
       icon: a.kBi,
       onClick: () => {
         var e;

@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk445161 = require("./445161.js"),
   Chunk255870 = require("./255870.js");
 
-function I(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -48,7 +48,7 @@ function I(e) {
   return e
 }
 
-function N(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,7 +61,7 @@ function N(e, t) {
   }), e
 }
 
-function E(e, t) {
+function _(e, t) {
   if (null == e) return {};
   var r, n, a = function(e, t) {
     if (null == e) return {};
@@ -77,37 +77,37 @@ function E(e, t) {
   return a
 }
 
-function k(e) {
+function T(e) {
   var {
     onClose: t,
     isExistingSub: r,
     premiumGroupPrimaryName: a,
     currentUser: i
-  } = e, o = E(e, ["onClose", "isExistingSub", "premiumGroupPrimaryName", "currentUser"]);
-  let u = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
-    p = (0, h.rO)() ? w.Z : O.Z;
-  return (0, n.jsx)(s.IX, N(I({}, o), {
+  } = e, o = _(e, ["onClose", "isExistingSub", "premiumGroupPrimaryName", "currentUser"]);
+  let u = (0, s.e7)([f.Z], () => f.Z.useReducedMotion),
+    p = (0, y.rO)() ? w.Z : v.Z;
+  return (0, n.jsx)(l.IX, E(N({}, o), {
     onClose: t,
-    children: (0, n.jsxs)(s.fef, {
+    children: (0, n.jsxs)(l.fef, {
       children: [(0, n.jsx)("div", {
-        className: x.wumpusContainer
-      }), (0, n.jsx)(s.X6q, {
-        className: x.header,
+        className: S.wumpusContainer
+      }), (0, n.jsx)(l.X6q, {
+        className: S.header,
         variant: "display-md",
         color: "header-primary",
-        children: v.intl.string(v.t.QWljxE)
+        children: O.intl.string(O.t.QWljxE)
       }), (0, n.jsxs)("div", {
-        className: x.nameplatePreviewContainer,
+        className: S.nameplatePreviewContainer,
         children: [u ? (0, n.jsx)("img", {
-          src: _.Z,
+          src: C.Z,
           alt: "",
-          className: x.nameplateGlow
-        }) : (0, n.jsx)(f.Z, {
+          className: S.nameplateGlow
+        }) : (0, n.jsx)(d.Z, {
           playsInline: true,
           muted: true,
           autoPlay: true,
           loop: true,
-          className: x.nameplateGlow,
+          className: S.nameplateGlow,
           children: (0, n.jsx)("source", {
             src: p
           })
@@ -116,23 +116,23 @@ function k(e) {
           isHighlighted: true,
           nameplate: null,
           nameplateData: i.nameplate,
-          className: x.nameplatePreview,
+          className: S.nameplatePreview,
           nameplatePreviewSize: "large"
         })]
       }), (0, n.jsx)("div", {
-        className: x.textContainer,
-        children: v.intl.format(r ? j.default.axh0pl : j.default["+KAArL"], {
-          premiumGroupProductName: (0, P.sO)(),
+        className: S.textContainer,
+        children: O.intl.format(r ? x.default.axh0pl : x.default["+KAArL"], {
+          premiumGroupProductName: (0, h.sO)(),
           primaryName: a
         })
       }), (0, n.jsx)("div", {
-        className: x.footer,
+        className: S.footer,
         children: (0, n.jsx)(c.zxk, {
           variant: "primary",
           fullWidth: true,
-          text: v.intl.string(j.default.EL9m2H),
+          text: O.intl.string(x.default.EL9m2H),
           onClick: () => {
-            t(), (0, b.uL)(S.Z5c.APPLICATION_STORE)
+            t(), (0, b.uL)(j.Z5c.APPLICATION_STORE)
           }
         })
       })]
@@ -140,57 +140,57 @@ function k(e) {
   }))
 }
 
-function T(e) {
+function Z(e) {
   var {
     setModalState: t,
     onClose: r,
     premiumGroupSubscriptionId: i,
     isExistingSub: o,
-    premiumGroupPrimaryName: l,
+    premiumGroupPrimaryName: s,
     currentUser: c,
-    setError: d
-  } = e, f = E(e, ["setModalState", "onClose", "premiumGroupSubscriptionId", "isExistingSub", "premiumGroupPrimaryName", "currentUser", "setError"]);
-  let m = (0, P.sO)(),
+    setError: f
+  } = e, d = _(e, ["setModalState", "onClose", "premiumGroupSubscriptionId", "isExistingSub", "premiumGroupPrimaryName", "currentUser", "setError"]);
+  let m = (0, h.sO)(),
     [p, b] = (0, a.useState)(false),
-    y = async () => {
+    g = async () => {
       b(true);
       try {
-        await (0, g.r7)(i, c.id), t(1)
+        await (0, P.r7)(i, c.id), t(1)
       } catch (e) {
-        d(0), t(2)
+        f(0), t(2)
       } finally {
         b(false)
       }
     };
-  return (0, n.jsx)(s.ExpressiveModal, N(I({}, f), {
+  return (0, n.jsx)(l.ExpressiveModal, E(N({}, d), {
     onClose: r,
     gradientColor: "nitro-pink",
     badge: {
       type: "beta"
     },
     graphic: {
-      src: C.Z,
+      src: k.Z,
       type: "image"
     },
-    title: v.intl.formatToPlainString(o ? j.default["0Yxz12"] : j.default.UjA5k8, {
+    title: O.intl.formatToPlainString(o ? x.default["0Yxz12"] : x.default.UjA5k8, {
       premiumGroupProductName: m
     }),
-    subtitle: v.intl.format(o ? j.default.YjSsdH : j.default.qkFeBP, {
+    subtitle: O.intl.format(o ? x.default.YjSsdH : x.default.qkFeBP, {
       premiumGroupProductName: m,
-      cooldownMonths: P.T9,
-      primaryName: l
+      cooldownMonths: h.T9,
+      primaryName: s
     }),
     actions: [{
-      text: v.intl.string(j.default["IO+nlU"]),
+      text: O.intl.string(x.default["IO+nlU"]),
       onClick: () => {
-        (0, u.Z)(P.j3)
+        (0, u.Z)(h.j3)
       },
       variant: "secondary"
     }, {
-      text: v.intl.string(j.default.odQeh3),
-      onClick: y,
+      text: O.intl.string(x.default.odQeh3),
+      onClick: g,
       variant: "expressive",
-      icon: s.SrA,
+      icon: l.SrA,
       loading: p
     }]
   }))
@@ -201,59 +201,59 @@ function G(e) {
   var {
     error: a,
     onClose: i
-  } = e, o = E(e, ["error", "onClose"]);
-  let l = (0, P.sO)();
+  } = e, o = _(e, ["error", "onClose"]);
+  let s = (0, h.sO)();
   switch (a) {
     case 1:
-      t = v.intl.formatToPlainString(j.default["wMo6/n"], {
-        premiumGroupProductName: l
-      }), r = v.intl.formatToPlainString(j.default.C08r8L, {
-        premiumGroupProductName: l,
-        cooldownMonths: P.T9
+      t = O.intl.formatToPlainString(x.default["wMo6/n"], {
+        premiumGroupProductName: s
+      }), r = O.intl.formatToPlainString(x.default.C08r8L, {
+        premiumGroupProductName: s,
+        cooldownMonths: h.T9
       });
       break;
     case 2:
-      t = v.intl.formatToPlainString(j.default["Um4ml+"], {
-        premiumGroupProductName: l
-      }), r = v.intl.string(j.default.Fm8iss);
+      t = O.intl.formatToPlainString(x.default["Um4ml+"], {
+        premiumGroupProductName: s
+      }), r = O.intl.string(x.default.Fm8iss);
       break;
     case 3:
-      t = v.intl.string(j.default.yGTLxP), r = v.intl.formatToPlainString(j.default["7/qtoL"], {
-        premiumGroupProductName: l
+      t = O.intl.string(x.default.yGTLxP), r = O.intl.formatToPlainString(x.default["7/qtoL"], {
+        premiumGroupProductName: s
       });
       break;
     case 4:
-      t = v.intl.formatToPlainString(j.default["S+UfpQ"], {
-        premiumGroupProductName: l
-      }), r = v.intl.formatToPlainString(j.default.AKYhx6, {
-        premiumGroupProductName: l,
-        countryName: (0, P.sf)()
+      t = O.intl.formatToPlainString(x.default["S+UfpQ"], {
+        premiumGroupProductName: s
+      }), r = O.intl.formatToPlainString(x.default.AKYhx6, {
+        premiumGroupProductName: s,
+        countryName: (0, h.sf)()
       });
       break;
     case 5:
-      t = v.intl.formatToPlainString(j.default.anKEqI, {
-        premiumGroupProductName: l
-      }), r = v.intl.formatToPlainString(j.default["67BbUf"], {
-        premiumGroupProductName: l
+      t = O.intl.formatToPlainString(x.default.anKEqI, {
+        premiumGroupProductName: s
+      }), r = O.intl.formatToPlainString(x.default["67BbUf"], {
+        premiumGroupProductName: s
       });
       break;
     default:
-      t = v.intl.formatToPlainString(j.default["Kpg/uU"], {
-        premiumGroupProductName: l
-      }), r = v.intl.formatToPlainString(j.default.GrEzlX, {
-        premiumGroupProductName: l
+      t = O.intl.formatToPlainString(x.default["Kpg/uU"], {
+        premiumGroupProductName: s
+      }), r = O.intl.formatToPlainString(x.default.GrEzlX, {
+        premiumGroupProductName: s
       })
   }
-  return (0, n.jsx)(s.Modal, I({
+  return (0, n.jsx)(l.Modal, N({
     size: "md",
     title: t,
     subtitle: r,
     onClose: i,
     actions: [{
-      text: v.intl.string(j.default["IO+nlU"]),
+      text: O.intl.string(x.default["IO+nlU"]),
       variant: "secondary",
       onClick: () => {
-        (0, u.Z)(P.j3)
+        (0, u.Z)(h.j3)
       }
     }]
   }, o))
@@ -264,32 +264,32 @@ function U(e) {
     premiumGroupSubscriptionId: t,
     isExistingSub: r,
     premiumGroupPrimaryName: i
-  } = e, s = E(e, ["premiumGroupSubscriptionId", "isExistingSub", "premiumGroupPrimaryName"]);
-  let [c, u] = (0, a.useState)(0), [d, f] = (0, a.useState)(null), m = (0, l.e7)([y.default], () => y.default.getCurrentUser());
+  } = e, l = _(e, ["premiumGroupSubscriptionId", "isExistingSub", "premiumGroupPrimaryName"]);
+  let [c, u] = (0, a.useState)(0), [f, d] = (0, a.useState)(null), m = (0, s.e7)([g.default], () => g.default.getCurrentUser());
   o()(null != m, "UserSettingsProfileCustomization: user cannot be undefined");
   let b = null;
   switch (c) {
     case 0:
-      b = (0, n.jsx)(T, I({
+      b = (0, n.jsx)(Z, N({
         setModalState: u,
         premiumGroupSubscriptionId: t,
         isExistingSub: r,
         premiumGroupPrimaryName: i,
         currentUser: m,
-        setError: f
-      }, s));
+        setError: d
+      }, l));
       break;
     case 1:
-      b = (0, n.jsx)(k, N(I({}, s), {
+      b = (0, n.jsx)(T, E(N({}, l), {
         isExistingSub: r,
         premiumGroupPrimaryName: i,
         currentUser: m
       }));
       break;
     case 2:
-      b = (0, n.jsx)(G, I({
-        error: d
-      }, s))
+      b = (0, n.jsx)(G, N({
+        error: f
+      }, l))
   }
   return (0, n.jsx)(p.Z, {
     isConfirmationStep: 1 === c,
