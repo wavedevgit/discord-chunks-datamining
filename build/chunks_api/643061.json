@@ -1,1 +1,0 @@
-{"id":"643061","type":"experiment","data":{"id":"2025-05_summer_2025_gifting","label":"Summer 2025 Gifting","kind":"user","defaultConfig":{"enableGiftingFlow":false},"commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Show Summer 2025 Gifting Flow","config":{"enableGiftingFlow":true}}]},"fromModule":{"id":"1272"}}

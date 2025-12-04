@@ -107,10 +107,9 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
       handleUseNow: l,
       isApplying: s,
       openProfileSettings: A,
-      itemConsumed: g,
-      isRental: I = false
-    } = t, m = [];
-    if (R.Vt.ORB_PROFILE_BADGE === e.skuId) m.push({
+      itemConsumed: g
+    } = t, I = [];
+    if (R.Vt.ORB_PROFILE_BADGE === e.skuId) I.push({
       text: _.intl.string(T.default.yfwZuy),
       variant: "primary",
       onClick: () => {
@@ -127,7 +126,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
         }), (0, f.navigateToQuestHome)()
       }
     });
-    else if (R.Vt.FRACTIONAL_PREMIUM === e.skuId) g ? m.push({
+    else if (R.Vt.FRACTIONAL_PREMIUM === e.skuId) g ? I.push({
       text: _.intl.string(_.t.cpT0Cq),
       variant: "secondary",
       onClick: n
@@ -137,7 +136,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
       onClick: () => {
         (0, p.$)(n)
       }
-    }) : m.push({
+    }) : I.push({
       text: _.intl.string(_.t.cpT0Cq),
       variant: "secondary",
       onClick: n
@@ -152,7 +151,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
     });
     else {
       let [t] = e.items;
-      m.push({
+      I.push({
         text: _.intl.string(_.t["2p2aYz"]),
         variant: r ? "secondary" : "primary",
         onClick: () => {
@@ -180,12 +179,12 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AB"], {
         }
       })
     }
-    return r && !I && m.push({
+    return r && I.push({
       text: _.intl.string(_.t.MAS7uK),
       variant: "primary",
       onClick: l,
       loading: s
-    }), m
+    }), I
   },
   N = (t, e) => {
     let n = i.useMemo(() => (0, I.jm)(t.type, t.skuId), [t.type, t.skuId]);

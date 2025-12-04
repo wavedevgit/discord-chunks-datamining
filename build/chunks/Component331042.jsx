@@ -36,7 +36,7 @@ let I = t => {
     overrideTitle: j,
     overrideDescription: k,
     shouldShowPromotionalExperience: y,
-    purchaseType: w = _.o8.FIAT,
+    purchaseType: w = R.o8.FIAT,
     overrideGraphic: P,
     rentalDuration: S,
     rentalExpiresAt: b
@@ -49,13 +49,13 @@ let I = t => {
       firstProfileEffect: e,
       firstAvatarDecoration: n,
       firstNameplate: s
-    } = (0, f.Rj)(t), l = (0, C.x6)(t);
+    } = (0, f.Rj)(t), a = (0, C.x6)(t);
     return {
       firstAvatarDecoration: n,
       firstProfileEffect: e,
       firstNameplate: s,
-      isBundle: l,
-      hasRequiredProductItems: l ? (0, x.N)(t) : null != n || null != e || null != s
+      isBundle: a,
+      hasRequiredProductItems: a ? (0, x.N)(t) : null != n || null != e || null != s
     }
   })(N), {
     promotionalRewardCollectedText: M,
@@ -77,8 +77,8 @@ let I = t => {
     confettiCanvas: G,
     setConfettiCanvas: X,
     customConfettiDisplayOptions: $
-  } = (0, Z.$0)(N, w), q = (0, R.kd)(N);
-  (0, Z.f1)(N, D);
+  } = (0, _.$0)(N, w), q = (0, Z.kd)(N);
+  (0, _.f1)(N, D);
   let {
     handleUseNow: H,
     isApplying: K
@@ -86,14 +86,14 @@ let I = t => {
     product: N,
     onSuccess: I,
     onError: I
-  }), U = (0, Z.Xw)({
+  }), U = (0, _.Xw)({
     product: N,
     overrideTitle: j,
     isVariantsGroupEnabled: true,
     shouldShowPromotionalExperience: y,
     productName: q,
     rentalDuration: S
-  }), z = (0, Z.ys)({
+  }), z = (0, _.ys)({
     product: N,
     overrideDescription: k,
     productName: q,
@@ -101,23 +101,22 @@ let I = t => {
     promotionalRewardCollectedText: M,
     isRental: null != S,
     expiresAt: b
-  }), J = (0, Z.cf)({
+  }), J = (0, _.cf)({
     product: N,
     onClose: I,
     analyticsLocations: D,
     hasRequiredProductItems: F,
     handleUseNow: H,
     isApplying: K,
-    openProfileSettings: B,
-    isRental: null != S
+    openProfileSettings: B
   }), Q = "6/4";
   switch (N.type) {
-    case a.Z.NAMEPLATE:
-    case a.Z.AVATAR_DECORATION:
+    case o.Z.NAMEPLATE:
+    case o.Z.AVATAR_DECORATION:
       Q = "16/9";
       break;
-    case a.Z.BUNDLE:
-    case a.Z.PROFILE_EFFECT:
+    case o.Z.BUNDLE:
+    case o.Z.PROFILE_EFFECT:
     default:
       Q = "6/4"
   }
@@ -136,11 +135,11 @@ let I = t => {
     value: D,
     children: (0, s.jsxs)("div", {
       ref: W,
-      children: [(0, s.jsx)(l.O_, {
+      children: [(0, s.jsx)(a.O_, {
         ref: X,
         className: m.confettiCanvas,
         environment: V
-      }), (0, s.jsx)(o.ExpressiveModal, {
+      }), (0, s.jsx)(l.ExpressiveModal, {
         graphic: tt,
         title: U,
         subtitle: null != z ? z : true,
