@@ -2,19 +2,21 @@
 /** chunk id: 646834, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
-}), require("./388685.js"), require("./415506.js");
+  Z: () => O
+}), require("./388685.js"), require("./415506.js"), require("./49124.js");
 var r, Chunk990547 = require("./990547.js"),
   Chunk818710 = require("./818710.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
+  Chunk323183 = require("./323183.js"),
   Chunk299886 = require("./299886.js"),
+  Chunk626135 = require("./626135.js"),
   Chunk960048 = require("./960048.js"),
   Chunk573261 = require("./573261.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,18 +24,18 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = 10,
-  m = {
+let h = 10,
+  g = {
     status: ""
   },
-  h = [],
-  g = ["discord.com", "discordapp.com", "discordapp.net", "dl.discordapp.net", "discordcdn.com", "discord.gg", "discord.media"];
-class E extends(r = Chunk442837.ZP.Store) {
+  E = [],
+  b = ["discord.com", "discordapp.com", "discordapp.net", "dl.discordapp.net", "discordcdn.com", "discord.gg", "discord.media"];
+class y extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.updateState(), this.addListener()
   }
   logEvent(e) {
-    "status" in e && "string" == typeof e.status && (m = e), h = [...h.slice(h.length < _ ? 0 : 1, _), e], this.emitChange()
+    "status" in e && "string" == typeof e.status && (g = e), E = [...E.slice(E.length < h ? 0 : 1, h), e], this.emitChange()
   }
   async updateState() {
     try {
@@ -50,7 +52,7 @@ class E extends(r = Chunk442837.ZP.Store) {
   async runCommand(e) {
     for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
     try {
-      return await d.ZP.getDiscordUtils().runWarpCommand(e, ...n)
+      return await p.ZP.getDiscordUtils().runWarpCommand(e, ...n)
     } catch (e) {
       throw this.logEvent({
         commandError: e.message
@@ -63,11 +65,11 @@ class E extends(r = Chunk442837.ZP.Store) {
     } = e, n = await this.runCommand("registration", "show");
     if ((null == n ? true : n.code) === "MissingRegistration") throw Error("MissingRegistration when configuring license");
     try {
-      if (l.H.getConfig({
+      if (c.H.getConfig({
           location: "configureLicense"
         }).enabled) {
-        let e = (await u.Z.post({
-          url: f.ANM.USER_WARP_LICENSE,
+        let e = (await f.Z.post({
+          url: _.ANM.USER_WARP_LICENSE,
           retries: 3,
           oldFormErrors: true,
           rejectWithError: true,
@@ -82,10 +84,13 @@ class E extends(r = Chunk442837.ZP.Store) {
         else throw Error("No license key returned from API when configuring license")
       }
     } catch (e) {
-      if (c.Z.captureException(e, {
+      if (d.Z.captureException(e, {
           tags: {
             source: "PRIVATE_BROWSING_PERK_CONFIGURE_LICENSE"
           }
+        }), u.default.track(_.rMx.PREMIUM_FEATURE_ERROR, {
+          error_message: e instanceof Error ? e.message : JSON.stringify(e),
+          error_source: l.D.PRIVATE_BROWSING_PERK_CONFIGURE_LICENSE
         }), !t) throw e
     }
   }
@@ -93,7 +98,7 @@ class E extends(r = Chunk442837.ZP.Store) {
     try {
       let t = await this.runCommand("tunnel", "host", "list");
       if ((null == exports ? true : exports.mode) === "exclude")
-        for (let n of g) {
+        for (let n of b) {
           var e;
           (null == exports || null == (e = exports.hosts) ? true : module.indexOf(require)) === false && await this.runCommand("tunnel", "host", "add", require)
         }
@@ -105,10 +110,10 @@ class E extends(r = Chunk442837.ZP.Store) {
     } catch (e) {}
   }
   get state() {
-    return m
+    return g
   }
   get log() {
-    return h
+    return E
   }
   get clientEnabled() {
     return (0, Chunk818710.nI)() && Chunk299886.H.getConfig({
@@ -116,10 +121,10 @@ class E extends(r = Chunk442837.ZP.Store) {
     }).enabled
   }
   get enabled() {
-    return "Connected" === m.status || this.connecting
+    return "Connected" === g.status || this.connecting
   }
   get connecting() {
-    return "Configuring" === m.status || "Connecting" === m.status || "ConnectCommandSent" === m.status || "Installing" === m.status || "Installed" === m.status
+    return "Configuring" === g.status || "Connecting" === g.status || "ConnectCommandSent" === g.status || "Installing" === g.status || "Installed" === g.status
   }
   async connect() {
     return this.clientEnabled && (this.logEvent({
@@ -133,7 +138,7 @@ class E extends(r = Chunk442837.ZP.Store) {
   async disconnect() {
     if (this.clientEnabled) {
       let e = this.runCommand("disconnect");
-      return m = {
+      return g = {
         status: "DisconnectCommandSent"
       }, await module
     }
@@ -145,5 +150,5 @@ class E extends(r = Chunk442837.ZP.Store) {
     }), await this.updateState(), true
   }
 }
-p(E, "displayName", "WarpClientStore");
-let b = new E(Chunk570140.Z, {})
+m(y, "displayName", "WarpClientStore");
+let O = new y(Chunk570140.Z, {})

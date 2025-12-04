@@ -58,11 +58,14 @@ function h(e) {
             })]
           })
         })]
-      }), (0, r.jsx)(a.zxk, {
-        fullWidth: true,
-        onClick: b,
-        variant: "active",
-        text: n.isGuildStageVoice() ? _.intl.string(_.t["7vb2cc"]) : _.intl.string(_.t["96ANUN"])
+      }), (0, r.jsx)("div", {
+        className: m.buttonContainer,
+        children: (0, r.jsx)(a.zxk, {
+          fullWidth: true,
+          onClick: b,
+          variant: "active",
+          text: n.isGuildStageVoice() ? _.intl.string(_.t["7vb2cc"]) : _.intl.string(_.t["96ANUN"])
+        })
       })]
     })
   })
