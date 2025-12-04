@@ -180,90 +180,91 @@ async function w() {
     return
   }
   try {
+    var t, n, r, i, s, l, c, u;
     let {
       body: e
     } = await Chunk544891.tn.get({
       url: "/checkpoint",
       rejectWithError: true
     }), {
-      card_id: t,
-      power_level: n,
-      power_level_percentile: r,
-      messages: i,
-      emojis: s,
-      voice: l,
-      guilds: c,
-      users: u,
-      sidekick: d,
-      applications: f,
-      quests: p,
-      avatar_decoration: m
+      card_id: d,
+      power_level: f,
+      power_level_percentile: p,
+      messages: m,
+      emojis: g,
+      voice: b,
+      guilds: y,
+      users: O,
+      sidekick: I,
+      applications: T,
+      quests: A,
+      avatar_decoration: N
     } = module;
     Chunk570140.Z.dispatch({
       type: "CHECKPOINT_FETCH_SUCCESS",
       data: {
-        cardId: exports,
-        powerLevel: require,
-        powerLevelPercentile: Chunk512722,
-        messages: null != i ? {
-          numMessagesSent: i.num_messages_sent,
-          numMessagesSentPercentile: i.num_messages_sent_percentile,
+        cardId: Chunk957730,
+        powerLevel: Chunk987509,
+        powerLevelPercentile: Chunk752048,
+        messages: null != Chunk592125 ? {
+          numMessagesSent: Chunk592125.num_messages_sent,
+          numMessagesSentPercentile: Chunk592125.num_messages_sent_percentile,
           topMonth: {
-            month: i.top_month.month,
-            numMessagesSent: i.top_month.num_messages_sent
+            month: null != (s = null == (t = Chunk592125.top_month) ? true : exports.month) ? Chunk493683 : 1,
+            numMessagesSent: null != (l = null == (n = Chunk592125.top_month) ? true : require.num_messages_sent) ? Chunk904245 : 0
           }
         } : true,
-        emojis: null != Chunk493683 ? {
-          emojis: Chunk493683.emojis.map(e => P(C({}, e), {
+        emojis: null != Chunk165630 ? {
+          emojis: Chunk165630.emojis.map(e => P(C({}, e), {
             id: S.default.isProbablyAValidSnowflake(e.id) ? e.id : true
           })),
-          numEmojisSent: Chunk493683.num_emojis_sent
+          numEmojisSent: Chunk165630.num_emojis_sent
         } : true,
-        voice: null != Chunk904245 ? {
-          totalVoiceMinutes: Chunk904245.total_voice_minutes,
-          totalVoiceMinutesPercentile: Chunk904245.total_voice_minutes_percentile,
+        voice: null != Chunk594174 ? {
+          totalVoiceMinutes: Chunk594174.total_voice_minutes,
+          totalVoiceMinutesPercentile: Chunk594174.total_voice_minutes_percentile,
           topMonth: {
-            month: Chunk904245.top_month.month,
-            numMinutesInVoice: Chunk904245.top_month.num_minutes_in_voice
+            month: null != (c = null == (r = Chunk594174.top_month) ? true : Chunk512722.month) ? Chunk812206 : 1,
+            numMinutesInVoice: null != (u = null == (i = Chunk594174.top_month) ? true : i.num_minutes_in_voice) ? Chunk339085 : 0
           }
         } : true,
-        guilds: null != Chunk812206 ? {
-          guilds: Chunk812206.guilds.map(e => ({
+        guilds: null != Chunk626135 ? {
+          guilds: Chunk626135.guilds.map(e => ({
             numMessagesSent: e.num_messages_sent,
             numVoiceMinutes: e.num_voice_minutes,
             guild: (0, v.wD)(e.guild, E.Z.getGuild(e.guild.id))
           })),
-          numGuildsJoined: Chunk812206.num_guilds_joined
+          numGuildsJoined: Chunk626135.num_guilds_joined
         } : true,
-        users: null != Chunk339085 ? Chunk339085.map(e => {
+        users: null != Chunk823379 ? Chunk823379.map(e => {
           let {
             user: t
           } = e;
           return new _.Z(t)
         }) : true,
-        applications: null != Chunk987509 ? {
-          applications: Chunk987509.applications.map(e => ({
+        applications: null != Chunk981631 ? {
+          applications: Chunk981631.applications.map(e => ({
             game: P(C({}, (0, h.m)(e.game)), {
               coverImageHash: e.game.cover_image_hash
             }),
             numDaysPlayed: e.num_sessions
           })),
-          totalGamesPlayed: Chunk987509.total_games_played
+          totalGamesPlayed: Chunk981631.total_games_played
         } : true,
-        quests: null != Chunk752048 ? {
-          numCompleted: Chunk752048.num_completed,
-          numOrbs: Chunk752048.num_orbs
+        quests: null != A ? {
+          numCompleted: A.num_completed,
+          numOrbs: A.num_orbs
         } : true,
-        sidekick: null != Chunk957730 ? {
-          numMessagesSent: Chunk957730.num_messages_sent,
-          numVoiceMinutes: Chunk957730.num_voice_minutes,
-          user: new Chunk598077.Z(Chunk957730.user)
+        sidekick: null != Chunk612776 ? {
+          numMessagesSent: Chunk612776.num_messages_sent,
+          numVoiceMinutes: Chunk612776.num_voice_minutes,
+          user: new Chunk598077.Z(Chunk612776.user)
         } : true,
-        avatarDecoration: null != Chunk592125 ? {
-          type: Chunk592125.type,
-          asset: Chunk592125.asset,
-          label: Chunk592125.label,
-          skuId: Chunk592125.sku_id
+        avatarDecoration: null != N ? {
+          type: N.type,
+          asset: N.asset,
+          label: N.label,
+          skuId: N.sku_id
         } : true
       }
     })
