@@ -44,20 +44,20 @@ let b = "mweb_handoff_nonce",
         fingerprint: Chunk70956
       })
     }, [Chunk70956, module]);
-    let [C, T] = Chunk473749.useState(null), A = Chunk473749.useCallback(e => {
-      T(e), f.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
+    let [C, A] = Chunk473749.useState(null), T = Chunk473749.useCallback(e => {
+      A(e), f.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
         fingerprint: (0, l.K)(N)
       }, {
         fingerprint: N
       })
-    }, [T, N]), Z = Chunk433517.K.get(b);
-    if ("null" === require && null === C && A("deep_link_failed"), null != require && "null" !== require && null == Z && null === C && A("nonce_missing"), Chunk473749.useEffect(() => {
+    }, [A, N]), Z = Chunk433517.K.get(b);
+    if ("null" === require && null === C && T("deep_link_failed"), null != require && "null" !== require && null == Z && null === C && T("nonce_missing"), Chunk473749.useEffect(() => {
         if (null != Z) {
           let e = Chunk433517.K.get(j);
-          (null == module || Date.now() >= module) && (A("nonce_expired"), O())
+          (null == module || Date.now() >= module) && (T("nonce_expired"), O())
         }
-      }, [Z, A]), Chunk473749.useEffect(() => {
+      }, [Z, T]), Chunk473749.useEffect(() => {
         null != require && "null" !== require && null != Z && null == C && Chunk544891.tn.post({
           url: Chunk981631.ANM.HANDOFF_EXCHANGE,
           body: {
@@ -75,11 +75,11 @@ let b = "mweb_handoff_nonce",
             t = new URLSearchParams(module.search);
           exports.delete("handoff_token"), exports.delete("fingerprint"), module.search = exports.toString(), window.history.pushState(null, "", module)
         }).catch(() => {
-          A("handoff_exchange")
+          T("handoff_exchange")
         }).finally(() => {
           O()
         })
-      }, [require, Z, C, N, A]), null == N) return null;
+      }, [require, Z, C, N, T]), null == N) return null;
     let P = null == C ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [Chunk388032.intl.string(Chunk388032.t.uJ1JsY), (0, Chunk54381.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAs)]
     }) : S.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : y.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;

@@ -135,7 +135,7 @@ let w = new Z(Chunk570140.Z, {
       };
       return null != c && (f.channel = C({}, c)), null != u && (f.guild = (0, _.Qs)(u)), null != e.inviter && (f.inviter = C({}, e.inviter)), f
     }(t);
-    P.push([n, e.resolve]), null != t.guild && d.default.isAuthenticated() && m.Z.getFriendCount() > 0 && (0, O.Jv)({
+    P.push([n, e.resolve]), null != t.guild && d.default.isAuthenticated() && m.Z.getFriendCount() > 0 && (0, O.xY)(t.guild) && (0, O.Jv)({
       location: "accept_invite_modal",
       autoTrackExposure: true
     }).showFriendsInServer && a.ZP.fetchFriendMembers(t.code)
