@@ -30,8 +30,8 @@ let x = e => {
     } = (0, u.Z)(_);
     return (0, l.jsxs)(a.P3F, {
       innerRef: _,
-      "aria-label": null != (t = i.label) ? t : h.intl.string(h.t.x5CoXR),
-      className: g.nameplateItem,
+      "aria-label": null != (t = i.label) ? t : g.intl.string(g.t.x5CoXR),
+      className: h.nameplateItem,
       onClick: v,
       children: [(0, l.jsx)(m.Z, {
         nameplate: i,
@@ -39,8 +39,8 @@ let x = e => {
         showPlaceholderUser: true,
         isHighlighted: j
       }), (0, l.jsx)("div", {
-        className: s()(g.nameplateItemOverlay, {
-          [g.selected]: x
+        className: s()(h.nameplateItemOverlay, {
+          [h.selected]: x
         })
       }), (0, l.jsx)(c.Z, {
         isPurchaseSection: o === p.$0.PURCHASE,
@@ -59,17 +59,17 @@ let x = e => {
       onOpenShop: c
     } = e, u = d.ZP.canUseCollectibles(t), m = (0, p.ZP)();
     return (0, l.jsx)(a.u2D, {
-      className: g.inventory,
+      className: h.inventory,
       children: m.map(e => (0, l.jsxs)(a.Kqy, {
         gap: 4,
         children: [(0, l.jsx)(a.Text, {
           variant: "text-md/medium",
           children: e.header
         }), e.section === p.$0.PURCHASE && (0, l.jsxs)("div", {
-          className: g.inventoryControls,
+          className: h.inventoryControls,
           children: [(0, l.jsxs)(a.P3F, {
-            className: s()(g.inventoryControlsButton, {
-              [g.selected]: null == n
+            className: s()(h.inventoryControlsButton, {
+              [h.selected]: null == n
             }),
             onClick: () => i(null),
             children: [(0, l.jsx)(a.t6m, {
@@ -77,21 +77,21 @@ let x = e => {
               color: "currentColor"
             }), (0, l.jsx)(a.Text, {
               variant: "text-xs/normal",
-              children: null != r ? h.intl.string(h.t.CHf9iJ) : h.intl.string(h.t.PoWNfe)
+              children: null != r ? g.intl.string(g.t.CHf9iJ) : g.intl.string(g.t.PoWNfe)
             })]
           }), (0, l.jsxs)(a.P3F, {
-            className: g.inventoryControlsButton,
+            className: h.inventoryControlsButton,
             onClick: c,
             children: [(0, l.jsx)(a.EOn, {
               size: "md",
               color: "currentColor"
             }), (0, l.jsx)(a.Text, {
               variant: "text-xs/normal",
-              children: h.intl.string(h.t.pWG4ze)
+              children: g.intl.string(g.t.pWG4ze)
             })]
           })]
         }), (0, l.jsx)("div", {
-          className: g.list,
+          className: h.list,
           children: e.items.filter(o.k).map(r => (0, l.jsx)(x, {
             currentUser: t,
             nameplate: r,

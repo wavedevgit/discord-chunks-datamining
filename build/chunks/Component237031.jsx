@@ -2,17 +2,16 @@
 /** chunk id: 237031, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => p,
-  v: () => _
+  T: () => f,
+  v: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk1870 = require("./1870.js"),
-  Chunk724994 = require("./724994.js"),
-  Chunk215023 = require("./215023.js");
+  Chunk724994 = require("./724994.js");
 
-function l(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,20 +20,20 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      l(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
 }
 
-function u(e, t) {
+function c(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,29 +44,24 @@ function u(e, t) {
   return n
 }
 
-function d(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
+function u(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = "collectibles shop product details modal",
-  p = e => {
+let d = "collectibles shop product details modal",
+  f = e => {
     let {
       product: t,
-      category: l,
-      shouldCheckoutWithOrbs: u,
-      analyticsSource: p,
-      analyticsLocations: _,
-      returnRef: m,
-      tab: h,
-      rentalDuration: g
+      category: s,
+      shouldCheckoutWithOrbs: c,
+      analyticsSource: f,
+      analyticsLocations: p,
+      returnRef: _,
+      tab: m,
+      rentalDuration: h
     } = e;
-    if (s.y8.some(e => {
-        let {
-          rewardSkuId: n
-        } = e;
-        return n === t.skuId
-      })) {
+    if (t.isCategoryReward) {
       let {
         isPurchased: e
       } = (0, o.U)(a.Z, t);
@@ -76,20 +70,20 @@ let f = "collectibles shop product details modal",
       let {
         default: e
       } = await n.e("2026").then(n.bind(n, 702370));
-      return n => (0, r.jsx)(e, d(c({}, n), {
+      return n => (0, r.jsx)(e, u(l({}, n), {
         product: t,
-        category: l,
-        shouldCheckoutWithOrbs: u,
-        analyticsSource: p,
-        analyticsLocations: _,
-        returnRef: m,
-        tab: h,
-        rentalDuration: g
+        category: s,
+        shouldCheckoutWithOrbs: c,
+        analyticsSource: f,
+        analyticsLocations: p,
+        returnRef: _,
+        tab: m,
+        rentalDuration: h
       }))
     }, {
-      modalKey: f
+      modalKey: d
     })
   },
-  _ = () => {
-    (0, Chunk481060.Mr3)(f)
+  p = () => {
+    (0, Chunk481060.Mr3)(d)
   }

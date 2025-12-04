@@ -39,13 +39,13 @@ let _ = e => {
       children: (0, l.jsxs)("div", {
         className: v.previewContents,
         "aria-hidden": true,
-        children: [(0, l.jsx)(h.G, {
+        children: [(0, l.jsx)(g.G, {
           width: 124,
           opacity: .9
-        }), (0, l.jsx)(h.G, {
+        }), (0, l.jsx)(g.G, {
           width: 124,
           opacity: .9
-        }), (0, l.jsx)(g.Z, (t = function(e) {
+        }), (0, l.jsx)(h.Z, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               l = Object.keys(n);
@@ -76,10 +76,10 @@ let _ = e => {
           return n
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t)), (0, l.jsx)(h.G, {
+        }), t)), (0, l.jsx)(g.G, {
           width: 124,
           opacity: .9
-        }), (0, l.jsx)(h.G, {
+        }), (0, l.jsx)(g.G, {
           width: 124,
           opacity: .9
         })]

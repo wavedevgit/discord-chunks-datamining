@@ -36,26 +36,26 @@ function O(e) {
     analyticsLocations: O,
     onClose: w,
     guildId: N,
-    initialSelectedNameplate: I
-  } = e, Z = (0, i.e7)([x.ZP], () => null != N && null != v ? x.ZP.getMember(N, v.id) : null), k = null != Z ? null == (t = Z.collectibles) ? true : t.nameplate : null == (n = v.collectibles) ? true : n.nameplate, {
-    pendingNameplate: A
-  } = (0, g.Zx)(v, N), [S, T] = (0, r.useState)(() => {
+    initialSelectedNameplate: Z
+  } = e, I = (0, i.e7)([x.ZP], () => null != N && null != v ? x.ZP.getMember(N, v.id) : null), A = null != I ? null == (t = I.collectibles) ? true : t.nameplate : null == (n = v.collectibles) ? true : n.nameplate, {
+    pendingNameplate: k
+  } = (0, h.Zx)(v, N), [S, T] = (0, r.useState)(() => {
     var e;
-    return null != I ? I : true !== A ? A : null == k ? null : null != (e = (0, u.Y)(b, _).find(e => {
+    return null != Z ? Z : true !== k ? k : null == A ? null : null != (e = (0, u.Y)(b, _).find(e => {
       let {
         skuId: t
       } = e;
-      return t === k.skuId
+      return t === A.skuId
     })) ? e : null
-  }), U = (0, g.Ys)({
+  }), U = (0, h.Ys)({
     pendingValue: S,
     userValue: null == v || null == (o = v.collectibles) ? true : o.nameplate,
-    guildValue: null == Z || null == (p = Z.collectibles) ? true : p.nameplate,
+    guildValue: null == I || null == (p = I.collectibles) ? true : p.nameplate,
     guildId: N
   }), {
     product: B,
     purchase: L
-  } = (0, d.Z)(null == S ? true : S.skuId), R = j.ZP.canUseCollectibles(v), M = true === A ? (null == S ? true : S.skuId) === (null == k ? true : k.skuId) : (null == S ? true : S.skuId) === (null == A ? true : A.skuId), D = (0, r.useCallback)(e => {
+  } = (0, d.Z)(null == S ? true : S.skuId), R = j.ZP.canUseCollectibles(v), M = true === k ? (null == S ? true : S.skuId) === (null == A ? true : A.skuId) : (null == S ? true : S.skuId) === (null == k ? true : k.skuId), D = (0, r.useCallback)(e => {
     w(), (0, c.mK)({
       analyticsLocations: O,
       analyticsSource: a.Z.EDIT_NAMEPLATE_MODAL,
@@ -97,14 +97,14 @@ function O(e) {
         variant: "primary",
         text: C.intl.string(C.t.Jh8fJz),
         onClick: () => {
-          (0, g.Wh)(S, N), w()
+          (0, h.Wh)(S, N), w()
         },
         disabled: M
       }) : null == L && (R || !(0, u.G1)(B)) ? (0, l.jsx)(s.Button, {
         variant: "primary",
         onClick: () => D(null == B ? true : B.skuId),
         text: C.intl.string(C.t.fYfGgK)
-      }) : (0, l.jsx)(h.Z, {
+      }) : (0, l.jsx)(g.Z, {
         subscriptionTier: f.Si.TIER_2,
         showGradient: !R,
         textOptions: {
@@ -130,9 +130,9 @@ function w(e) {
     guildId: u,
     initialSelectedNameplate: d
   } = e, m = (0, i.e7)([v.default], () => v.default.getCurrentUser()), {
-    analyticsLocations: h
+    analyticsLocations: g
   } = (0, o.ZP)(n, a.Z.EDIT_NAMEPLATE_MODAL), {
-    categories: g,
+    categories: h,
     purchases: x,
     isFetchingCategories: j,
     isFetchingPurchases: y
@@ -140,10 +140,10 @@ function w(e) {
   return ((0, r.useEffect)(() => {
     _.default.track(b.rMx.OPEN_MODAL, {
       type: b.jXE.NAMEPLATE_CUSTOMIZATION,
-      location_stack: h
+      location_stack: g
     })
-  }, [h]), null == m) ? null : (0, l.jsx)(o.Gt, {
-    value: h,
+  }, [g]), null == m) ? null : (0, l.jsx)(o.Gt, {
+    value: g,
     children: (0, l.jsx)(s.Y0X, {
       transitionState: t,
       size: P ? s.CgR.DYNAMIC : s.CgR.MEDIUM,
@@ -154,9 +154,9 @@ function w(e) {
         type: s.$jN.Type.SPINNING_CIRCLE
       }) : (0, l.jsx)(O, {
         currentUser: m,
-        categories: g,
+        categories: h,
         purchases: x,
-        analyticsLocations: h,
+        analyticsLocations: g,
         guildId: u,
         initialSelectedNameplate: d,
         onClose: c

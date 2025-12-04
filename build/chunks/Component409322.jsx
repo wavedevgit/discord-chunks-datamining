@@ -30,29 +30,26 @@ function f(e) {
     ContextProvider: h,
     useCollapsibleTitle: g,
     useCollapsedSubtitle: E
-  } = n, b = _.filter(e => {
-    var t, n;
-    return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
-  }), y = null != m ? b.slice(0, m) : b, O = null != m ? b.slice(m) : [], v = null != h ? h : i.Fragment, S = null == c ? true : c(), I = null != (t = null == g ? true : g(f, O.length)) ? t : d(f, O.length), T = null == E ? true : E();
-  return (0, r.jsx)(v, {
+  } = n, b = null != m ? _.slice(0, m) : _, y = null != m ? _.slice(m) : [], O = null != h ? h : i.Fragment, v = null == c ? true : c(), S = null != (t = null == g ? true : g(f, y.length)) ? t : d(f, y.length), I = null == E ? true : E();
+  return (0, r.jsx)(O, {
     children: (0, r.jsxs)(a.Kqy, {
       gap: 8,
-      children: [null != S && (0, r.jsx)(a.Heading, {
+      children: [null != v && (0, r.jsx)(a.Heading, {
         variant: "heading-md/semibold",
         color: "text-default",
         className: u.listTitle,
-        children: S
-      }), y.map((e, t) => (0, r.jsxs)(i.Fragment, {
+        children: v
+      }), b.map((e, t) => (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(o.Z, {
           node: e
-        }), O.length > 0 && t !== y.length - 1 && (0, r.jsx)(s.Z, {})]
-      }, e.key)), O.length > 0 && (0, r.jsxs)("div", {
+        }), y.length > 0 && t !== b.length - 1 && (0, r.jsx)(s.Z, {})]
+      }, e.key)), y.length > 0 && (0, r.jsxs)("div", {
         className: u.collapsibleContainer,
         children: [(0, r.jsx)(s.Z, {
           className: u.hoverDivider
         }), (0, r.jsx)(l.I, {
-          title: I,
-          collapsedSubtitle: T,
+          title: S,
+          collapsedSubtitle: I,
           isExpanded: f,
           onExpandedChange: p,
           children: (0, r.jsx)(a.Kqy, {
@@ -60,10 +57,10 @@ function f(e) {
             padding: {
               top: 8
             },
-            children: O.map((e, t) => (0, r.jsxs)(i.Fragment, {
+            children: y.map((e, t) => (0, r.jsxs)(i.Fragment, {
               children: [(0, r.jsx)(o.Z, {
                 node: e
-              }), t !== O.length - 1 && (0, r.jsx)(s.Z, {})]
+              }), t !== y.length - 1 && (0, r.jsx)(s.Z, {})]
             }, e.key))
           })
         })]

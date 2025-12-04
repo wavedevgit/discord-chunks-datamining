@@ -30,6 +30,7 @@ require.d(exports, {
   rN: () => R,
   uV: () => j,
   v5: () => et,
+  wO: () => ec,
   x0: () => er,
   x6: () => $,
   yn: () => F
@@ -309,4 +310,5 @@ let O = e => (null == e ? true : e.premiumType) != null,
       let s = null != (a = null == (r = e.eligibleOffers) ? true : r.some(e => n.includes(e))) && a;
       return (null != (o = null == (i = t.eligibleOffers) ? true : i.some(e => n.includes(e))) && o) - s
     })
-  }
+  },
+  ec = e => e.filter(e => !e.isCategoryReward)

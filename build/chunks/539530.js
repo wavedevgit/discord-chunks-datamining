@@ -1,7 +1,7 @@
 /** Chunk was on 8895 **/
 /** chunk id: 539530, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $0: () => p,
+  $0: () => d,
   ZP: () => g
 }), require("./388685.js"), require("./539854.js");
 var l, Chunk473749 = require("./473749.js"),
@@ -10,13 +10,12 @@ var l, Chunk473749 = require("./473749.js"),
   Chunk1870 = require("./1870.js"),
   Chunk884697 = require("./884697.js"),
   Chunk235897 = require("./235897.js"),
-  Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  p = ((l = {}).PURCHASE = "purchase", l.PREMIUM_PURCHASE = "premium_purchase", l.PREVIEW = "preview", l);
-let m = {
+  d = ((l = {}).PURCHASE = "purchase", l.PREMIUM_PURCHASE = "premium_purchase", l.PREVIEW = "preview", l);
+let p = {
     skuId: "None"
   },
-  h = {
+  m = {
     skuId: "Shop"
   },
   g = () => {
@@ -26,23 +25,20 @@ let m = {
       location: "use nameplate sections"
     }), (0, Chunk473749.useMemo)(() => {
       let l = (0, Chunk884697.Y)(module, exports).reduce((t, l) => {
-          let r = e.get(l.skuId),
-            i = (0, o.G1)(null != r ? r : n.get(l.skuId));
-          return i ? t.premium_purchase.push(l) : null != r ? t.purchase.push(l) : i || t.preview.push(l), t
-        }, {
-          purchase: [],
-          premium_purchase: [],
-          preview: []
-        }),
-        r = l.preview.filter(e => !u.y8.some(t => {
-          let {
-            rewardSkuId: n
-          } = t;
-          return n === e.skuId
-        }));
+        var r;
+        let i = e.get(l.skuId),
+          s = n.get(l.skuId),
+          a = (0, o.G1)(null != i ? i : s),
+          c = null != (r = null == s ? true : s.isCategoryReward) && r;
+        return a ? t.premium_purchase.push(l) : null != i ? t.purchase.push(l) : a || c || t.preview.push(l), t
+      }, {
+        purchase: [],
+        premium_purchase: [],
+        preview: []
+      });
       return [{
         section: "purchase",
-        items: [m, h, ...l.purchase],
+        items: [p, m, ...l.purchase],
         height: 12,
         header: Chunk388032.intl.string(Chunk388032.t.WfGV52)
       }, {
@@ -52,7 +48,7 @@ let m = {
         header: Chunk388032.intl.string(Chunk388032.t.TiLCgw)
       }, {
         section: "preview",
-        items: Chunk473749,
+        items: l.preview,
         height: 12,
         header: Chunk388032.intl.string(Chunk388032.t["1vbbee"])
       }].filter(e => {

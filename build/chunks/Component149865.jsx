@@ -18,11 +18,9 @@ function c(e) {
     useTitle: n,
     useSubtitle: c,
     variant: u = "default",
-    ContextProvider: d
-  } = t, f = t.layout.filter(e => {
-    var t, n;
-    return null == (n = null == (t = e.usePredicate) ? true : t.call(e)) || n
-  }), p = n(), _ = null == c ? true : c(), m = i.useId(), h = null != _ && "" !== _, g = null != d ? d : i.Fragment;
+    ContextProvider: d,
+    layout: f
+  } = t, p = n(), _ = null == c ? true : c(), m = i.useId(), h = null != _ && "" !== _, g = null != d ? d : i.Fragment;
   return (0, r.jsx)(g, {
     children: (0, r.jsxs)("fieldset", {
       "aria-describedby": h ? m : true,
