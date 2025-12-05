@@ -130,7 +130,7 @@ function T(e) {
           className: O.assetWrapper,
           children: [!G && F && (0, r.jsx)("div", {
             className: O.completionAnimation
-          }), M && !G ? (0, r.jsxs)("div", {
+          }), M ? (0, r.jsxs)("div", {
             className: O.progressWrapper,
             children: [F && (0, r.jsx)(c.Fmz, {
               importData: S,
