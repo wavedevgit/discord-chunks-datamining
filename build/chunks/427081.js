@@ -89,32 +89,34 @@ class L extends Chunk147913.Z {
   getActivelyProgressingPlayOnDesktopQuests() {
     let e = new Map,
       t = Chunk594190.ZP.getRunningGames(),
-      n = Chunk616022.Z.quests;
-    P.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", exports);
-    let r = {};
+      n = Chunk594190.ZP.getRunningNonGames(),
+      r = Chunk616022.Z.quests;
+    P.log("~ getActivelyProgressingPlayOnDesktopQuestIds -> Running games: ", exports, "Running non-games: ", require);
+    let i = {};
     for (let e of exports) {
       if (module.isLauncher) continue;
       if (null != module.id) {
-        Chunk754700[module.id] = module;
+        Chunk670081[module.id] = module;
         continue
       }
       let t = Chunk594190.ZP.getOverrideForGame(module);
       if (null == module.distributor && null != exports) continue;
       let n = Chunk77498.Z.getGameByName(module.name);
       if ((null == require ? true : require.id) != null) {
-        Chunk754700[require.id] = module;
+        Chunk670081[require.id] = module;
         continue
       }
     }
-    for (let t of Object.keys(Chunk754700)) {
-      let i = Chunk754700[exports];
-      for (let r of require.values()) {
-        let n = (0, Chunk254579.vj)(Chunk754700);
-        if (!R(Chunk754700) || null == require) continue;
-        let a = require.find(e => e === t);
-        null != Chunk147913 ? module.set(Chunk754700.id, {
+    for (let e of require) null != module.id && (Chunk670081[module.id] = module);
+    for (let t of Object.keys(Chunk670081)) {
+      let n = Chunk670081[exports];
+      for (let i of Chunk754700.values()) {
+        let r = (0, Chunk254579.vj)(Chunk670081);
+        if (!R(Chunk670081) || null == Chunk754700) continue;
+        let a = Chunk754700.find(e => e === t);
+        null != Chunk147913 ? module.set(Chunk670081.id, {
           applicationId: Chunk147913
-        }) : D(require, Chunk670081) && module.set(Chunk754700.id, {
+        }) : D(Chunk754700, require) && module.set(Chunk670081.id, {
           applicationId: Chunk817788.eB
         })
       }
@@ -231,6 +233,7 @@ class L extends Chunk147913.Z {
       QUESTS_SEND_HEARTBEAT_FAILURE: this.handleSendHeartbeatFailure,
       QUESTS_PREVIEW_UPDATE_SUCCESS: () => this.syncHeartbeats([r.X.PLAY_ON_DESKTOP, r.X.STREAM_ON_DESKTOP, r.X.PLAY_ACTIVITY], "QUESTS_PREVIEW_UPDATE_SUCCESS"),
       RUNNING_GAMES_CHANGE: () => this.syncHeartbeats([r.X.PLAY_ON_DESKTOP], "RUNNING_GAMES_CHANGE"),
+      RUNNING_NON_GAMES_CHANGE: () => this.syncHeartbeats([r.X.PLAY_ON_DESKTOP], "RUNNING_NON_GAMES_CHANGE"),
       STREAM_START: () => this.syncHeartbeats([r.X.STREAM_ON_DESKTOP], "STREAM_START"),
       STREAM_CREATE: () => this.syncHeartbeats([r.X.STREAM_ON_DESKTOP], "STREAM_CREATE"),
       STREAM_CLOSE: () => this.syncHeartbeats([r.X.STREAM_ON_DESKTOP], "STREAM_CLOSE"),
