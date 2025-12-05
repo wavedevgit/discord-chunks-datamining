@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 948053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -10,7 +10,26 @@ var Chunk544891 = require("./544891.js"),
   Chunk518929 = require("./518929.js"),
   Chunk613928 = require("./613928.js"),
   Chunk981631 = require("./981631.js");
-let u = {
+
+function u(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+let d = {
   async fetchPopularGuildsFromCategories(e, t) {
     try {
       let {
@@ -300,5 +319,20 @@ let u = {
       itemType: t,
       actionType: n
     })
+  },
+  feedItemActioned(e) {
+    i.Z.dispatch(u({
+      type: "ICYMI_FEED_ITEM_ACTIONED"
+    }, e))
+  },
+  feedFilterActioned(e) {
+    i.Z.dispatch(u({
+      type: "ICYMI_FEED_FILTER_ACTIONED"
+    }, e))
+  },
+  feedPageActioned(e) {
+    i.Z.dispatch(u({
+      type: "ICYMI_FEED_PAGE_ACTIONED"
+    }, e))
   }
 }
