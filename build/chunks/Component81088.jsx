@@ -2,18 +2,19 @@
 /** chunk id: 81088, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ds: () => g,
-  Ko: () => h,
-  vw: () => m
+  Ds: () => E,
+  Ko: () => g,
+  vw: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk612853 = require("./612853.jsx"),
+  Chunk311821 = require("./311821.jsx"),
   Chunk482151 = require("./482151.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,20 +23,20 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -46,15 +47,15 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function p(e, t) {
+function _(e, t) {
   if (null == e) return {};
-  var n, r, i = _(e, t);
+  var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -62,14 +63,14 @@ function p(e, t) {
   return i
 }
 
-function _(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = e => {
+let h = e => {
     let {
       message: t
     } = e;
@@ -78,7 +79,7 @@ let m = e => {
       children: t
     })
   },
-  h = e => {
+  g = e => {
     var {
       onClick: t,
       loading: n,
@@ -86,13 +87,13 @@ let m = e => {
       text: s,
       tooltipText: l
     } = e;
-    let c = u({
+    let c = d({
         variant: "active",
         type: "submit",
         "data-testid": "submitButton",
         text: s
-      }, p(e, ["onClick", "loading", "disabled", "text", "tooltipText"])),
-      d = (0, r.jsx)(a.zxk, f(u({}, c), {
+      }, _(e, ["onClick", "loading", "disabled", "text", "tooltipText"])),
+      u = (0, r.jsx)(a.zxk, p(d({}, c), {
         onClick: t,
         loading: n,
         disabled: o,
@@ -101,16 +102,20 @@ let m = e => {
     return null != l ? (0, r.jsx)(i.u, {
       text: l,
       asContainer: true,
-      children: d
-    }) : d
+      children: u
+    }) : u
   },
-  g = e => {
+  E = e => {
     let {
-      primaryCTAButtonProps: t
+      primaryCTAButtonProps: t,
+      showLockIcon: n,
+      onBackClick: i
     } = e;
     return (0, r.jsxs)(o.mzw, {
-      className: l.checkoutModalFooter,
+      className: c.checkoutModalFooter,
       "data-migration-pending": true,
-      children: [(0, r.jsx)(h, u({}, t)), (0, r.jsx)(s.Z, {})]
+      children: [null != i ? (0, r.jsx)(l.Z, {
+        onClick: i
+      }) : null, (0, r.jsx)(g, d({}, t)), n && (0, r.jsx)(s.Z, {})]
     })
   }

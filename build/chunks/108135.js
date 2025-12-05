@@ -2,28 +2,25 @@
 /** chunk id: 108135, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => a,
   d: () => o
 });
 var Chunk964268 = require("./964268.jsx"),
-  Chunk981631 = require("./981631.js"),
-  a = function(e) {
-    return e.ORB_CHECKOUT = "orb_checkout", e.PREMIUM_CHECKOUT = "premium_checkout", e.COLLECTIBLES_CHECKOUT = "collectibles_checkout", e
-  }({});
+  Chunk733579 = require("./733579.js"),
+  Chunk981631 = require("./981631.js");
 let o = {
-  orb_checkout: {
+  [Chunk733579.GE.ORB_CHECKOUT]: {
     implemented: true,
-    flowType: "orb_checkout",
+    flowType: Chunk733579.GE.ORB_CHECKOUT,
     UnifiedCheckoutContextProvider: Chunk964268.XF,
     UnifiedCheckoutCustomHeader: Chunk964268.Pv,
     purchaseType: Chunk981631.GZQ.ONE_TIME
   },
-  premium_checkout: {
+  [Chunk733579.GE.PREMIUM_CHECKOUT]: {
     implemented: false,
-    flowType: "premium_checkout"
+    flowType: Chunk733579.GE.PREMIUM_CHECKOUT
   },
-  collectibles_checkout: {
+  [Chunk733579.GE.COLLECTIBLES_CHECKOUT]: {
     implemented: false,
-    flowType: "collectibles_checkout"
+    flowType: Chunk733579.GE.COLLECTIBLES_CHECKOUT
   }
 }

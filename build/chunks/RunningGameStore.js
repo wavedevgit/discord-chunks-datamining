@@ -702,7 +702,7 @@ function e7(e) {
     let n = [],
       i = {},
       a = [];
-    e = e.filter(e => null != e.id && null != M.Z.getById(e.id) ? (a.push(e), false) : (e.isLauncher = e.isLauncher || t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = eH(e.pid, e.windowHandle), null == eT(e) || (n.push(e), false)));
+    e = e.filter(e => null != e.id && null != M.Z.getById(e.id) ? (a.push(e), false) : (e.isLauncher = e.isLauncher || t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = eH(e.pid, e.windowHandle), null != eT(e)) ? (n.push(e), false) : !I.Z.shouldBlock(e));
     let o = n.filter(eA).length;
     o !== eu && (eu = o, d.Z.dispatch({
       type: "RUNNING_STREAMER_TOOLS_CHANGE",

@@ -94,7 +94,7 @@ let _ = "orb-checkout-payment-modal-key",
       flowSpecificOptions: {
         rentalDuration: o
       },
-      modalOptions: {
+      openModalOptions: {
         onCloseCallback: a,
         modalKey: _,
         onCloseRequest: (e, n) => {

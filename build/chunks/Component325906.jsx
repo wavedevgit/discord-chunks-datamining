@@ -1,94 +1,127 @@
 /** Chunk was on 9172 **/
-/** chunk id: 325906, original params: e,n,t (module,exports,require) **/
+/** chunk id: 325906, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  WrappedUnifiedPaymentModal: () => s
+  WrappedUnifiedPaymentModal: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk987209 = require("./987209.jsx"),
   Chunk563132 = require("./563132.jsx"),
   Chunk791785 = require("./791785.jsx"),
   Chunk467368 = require("./467368.js");
-let l = e => {
+
+function s(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+
+function l(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let u = e => {
     let {
-      skuId: n,
-      applicationId: t,
-      transitionState: i,
-      analyticsLocations: o,
-      renderHeader: l,
-      paymentModalVersion: s = "v2"
-    } = e, {
-      paymentModalProps: d
-    } = (0, c.Li)(), u = null != d && null != d.onClose ? d.onClose : () => {};
-    return (0, a.jsx)(r.PaymentModal, function(e) {
-      for (var n = 1; n < arguments.length; n++) {
-        var t = null != arguments[n] ? arguments[n] : {},
-          a = Object.keys(t);
-        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(t, e).enumerable
-        }))), a.forEach(function(n) {
-          var a;
-          a = t[n], n in e ? Object.defineProperty(e, n, {
-            value: a,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[n] = a
-        })
-      }
-      return e
-    }({
-      applicationId: t,
-      transitionState: i,
-      onClose: u,
-      hideShadow: true,
-      skuId: n,
-      renderHeader: l,
-      initialPlanId: null,
-      analyticsLocations: o,
-      paymentModalVersion: s
-    }, d))
-  },
-  s = e => {
-    let {
-      loadId: n,
       skuId: t,
-      applicationId: r,
-      analyticsLocations: c,
-      analyticsSourceLocation: s,
-      onCheckoutSuccess: d,
-      renderModalProps: u,
+      applicationId: n,
+      transitionState: o,
+      returnRef: i,
+      onClose: l,
+      analyticsLocations: u,
       renderHeader: p,
-      UnifiedCheckoutContextProvider: y,
-      purchaseType: b,
-      stepConfigs: f,
-      flowSpecificOptions: h
+      paymentModalVersion: d = "v2"
+    } = e, {
+      paymentModalProps: y
+    } = (0, a.Li)(), b = null != y && null != y.onClose ? y.onClose : l;
+    return (0, r.jsx)(c.PaymentModal, s({
+      transitionState: o,
+      returnRef: i,
+      applicationId: n,
+      onClose: b,
+      hideShadow: true,
+      skuId: t,
+      renderHeader: p,
+      initialPlanId: null,
+      analyticsLocations: u,
+      paymentModalVersion: d
+    }, y))
+  },
+  p = e => {
+    let {
+      skuId: t
     } = e;
-    return (0, a.jsx)(o.PaymentContextProvider, {
-      applicationId: r,
-      activeSubscription: null,
-      loadId: n,
-      stepConfigs: f,
-      purchaseType: b,
+    return (0, r.jsx)(i.PaymentContextProvider, l(s({}, e), {
       skuIDs: [t],
+      children: e.children
+    }))
+  },
+  d = e => {
+    let {
+      loadId: t,
+      skuId: n,
+      applicationId: i,
+      analyticsLocations: c,
+      analyticsSourceLocation: a,
+      onCheckoutSuccess: d,
+      giftContextProps: y,
+      flowSpecificOptions: b,
+      renderModalProps: f,
+      checkoutFlowConfiguration: O,
+      renderHeader: j,
+      stepConfigs: P
+    } = e, {
+      purchaseType: h,
+      CustomPaymentContextProvider: S = p,
+      UnifiedCheckoutContextProvider: w
+    } = O, k = null != y ? o.KB : o.b6;
+    return (0, r.jsx)(S, {
+      skuId: n,
+      applicationId: i,
+      activeSubscription: null,
+      loadId: t,
+      stepConfigs: P,
+      purchaseType: h,
       excludeSubscriptionPlansBySKU: true,
       excludeSKUPurchasePreviews: true,
-      children: (0, a.jsx)(i.b6, {
-        children: (0, a.jsx)(y, {
-          skuId: t,
-          loadId: n,
+      children: (0, r.jsx)(k, l(s({}, y), {
+        children: (0, r.jsx)(w, {
+          skuId: n,
+          loadId: t,
           analyticsLocations: c,
-          analyticsSourceLocation: s,
+          analyticsSourceLocation: a,
           onCheckoutSuccess: d,
-          renderModalProps: u,
-          flowSpecificOptions: h,
-          children: (0, a.jsx)(l, {
-            transitionState: u.transitionState,
-            applicationId: r,
-            skuId: t,
-            renderHeader: p,
+          renderModalProps: f,
+          flowSpecificOptions: b,
+          children: (0, r.jsx)(u, {
+            transitionState: f.transitionState,
+            returnRef: f.returnRef,
+            onClose: f.onClose,
+            applicationId: i,
+            skuId: n,
+            renderHeader: j,
             analyticsLocations: c
           })
         })
-      })
+      }))
     })
   }

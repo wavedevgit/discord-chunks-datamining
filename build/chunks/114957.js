@@ -23,7 +23,9 @@ function d(e, t, n) {
 }
 class f extends Chunk147913.Z {
   handlePostConnectionOpen() {
-    (0, Chunk358085.isDesktop)() && !Chunk283595.Z.fetched && (0, Chunk978085.b8)(), Chunk224706.Z.getDetectableGames(), this.intervalId = setInterval(Chunk224706.Z.getDetectableGames, Chunk77498.Z.detectableGamesTtl + Math.random() * Chunk70956.Z.Millis.HOUR), Chunk224706.Z.getDetectableNonGames(), this.nonGameIntervalId = setInterval(Chunk224706.Z.getDetectableNonGames, Chunk569675.Z.ttl + Math.random() * Chunk70956.Z.Millis.HOUR)
+    (0, Chunk358085.isDesktop)() && !Chunk283595.Z.fetched && (0, Chunk978085.b8)(), Chunk224706.Z.getDetectableGames(), Chunk224706.Z.getDetectableBlocklist(), this.intervalId = setInterval(() => {
+      Chunk224706.Z.getDetectableGames(), Chunk224706.Z.getDetectableBlocklist()
+    }, Chunk77498.Z.detectableGamesTtl + Math.random() * Chunk70956.Z.Millis.HOUR), Chunk224706.Z.getDetectableNonGames(), this.nonGameIntervalId = setInterval(Chunk224706.Z.getDetectableNonGames, Chunk569675.Z.ttl + Math.random() * Chunk70956.Z.Millis.HOUR)
   }
   _terminate() {
     null != this.intervalId && (clearInterval(this.intervalId), this.intervalId = true), null != this.nonGameIntervalId && (clearInterval(this.nonGameIntervalId), this.nonGameIntervalId = true)

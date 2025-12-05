@@ -310,6 +310,25 @@ let Z = {
       })
     })
   },
+  getDetectableBlocklist() {
+    Chunk77498.Z.canFetchExecutableBlocklist() && Chunk544891.tn.get({
+      url: Chunk981631.ANM.GAMES_BLOCKLIST,
+      oldFormErrors: true,
+      rejectWithError: false
+    }).then(e => {
+      var t, n;
+      let {
+        body: r
+      } = e;
+      c.Z.dispatch({
+        type: "GAMES_BLOCKLIST_UPDATE",
+        executables: null != (t = r.executables) ? t : [],
+        patterns: null != (n = r.patterns) ? n : []
+      })
+    }, e => {
+      j.error("Failed to fetch games blocklist", e)
+    })
+  },
   getDetectableNonGames() {
     if (!Chunk569675.Z.canFetch()) return;
     let e = Chunk569675.Z.etag;
