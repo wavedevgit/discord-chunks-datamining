@@ -100,7 +100,7 @@ function s(e) {
         }
       }
     }(), () => {
-      e.abort(), E.current = p
+      e.abort("New data binding applied - aborting previous image fetches."), E.current = p
     }
   }, [y, p, t, n, s, m, null == t ? true : t.viewModelInstance, h, g, b])
 }
@@ -112,9 +112,13 @@ function l() {
     {
       if (null != e.current[t]) return Promise.resolve(e.current[t]);
       let r = await fetch(t, {
-          signal: n
-        }),
-        a = await r.arrayBuffer(),
+        signal: n
+      }).catch(e => {
+        if (null == n ? true : n.aborted) return Promise.resolve(null);
+        throw e
+      });
+      if (null == r || (null == n ? true : n.aborted)) return Promise.resolve(null);
+      let a = await r.arrayBuffer(),
         o = await (0, i.decodeImage)(new Uint8Array(a));
       return e.current[t] = o, o
     }
