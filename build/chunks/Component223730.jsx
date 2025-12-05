@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 223730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S$: () => m,
@@ -44,16 +44,16 @@ function b(e) {
 function _(e) {
   let {
     onClosePopout: t
-  } = e, n = o.G6.useSetting(), a = (0, i.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), s = (0, u._o)(), f = a.filter(e => !s.has(e));
+  } = e, n = o.G6.useSetting(), a = (0, i.e7)([c.ZP], () => c.ZP.getFlattenedGuildIds()), s = (0, u._o)(), h = a.filter(e => !s.has(e));
   return 0 === a.length ? null : (0, r.jsxs)(b, {
     onClick: () => {
       t(), m()
     },
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
-      children: p.intl.string(n ? h.default["3GrhnF"] : h.default["54ycKJ"])
+      children: p.intl.string(n ? f.default["3GrhnF"] : f.default["54ycKJ"])
     }), (0, r.jsx)(d.c, {
-      guildIds: f
+      guildIds: h
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 880419, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -34,14 +34,14 @@ function b(e) {
     isLoading: E,
     error: S,
     onShowDeactivate: I
-  } = (0, f.ZP)(l, b), P = (0, d.ZP)(l, b), N = P.type !== h.A3.INACTIVE, {
+  } = (0, h.ZP)(l, b), P = (0, d.ZP)(l, b), N = P.type !== f.A3.INACTIVE, {
     disabled: Z,
     reason: w
   } = (0, u.Z)(l, b, N), T = null != w ? {
     title: null,
     body: w
   } : function(e, t) {
-    if (e.type === h.A3.LEVEL_ACTIVATED) {
+    if (e.type === f.A3.LEVEL_ACTIVATED) {
       var n, r;
       return {
         title: g.intl.string(p.default["9oYuvb"]),
@@ -50,7 +50,7 @@ function b(e) {
         })
       }
     }
-    return e.type === h.A3.POWERUP_ACTIVATED ? {
+    return e.type === f.A3.POWERUP_ACTIVATED ? {
       title: g.intl.string(p.default.TZsu1U),
       body: g.intl.formatToPlainString(p.default["5HQUzD"], {
         boostCount: t.cost

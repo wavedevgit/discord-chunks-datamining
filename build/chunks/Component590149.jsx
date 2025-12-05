@@ -23,15 +23,15 @@ function d(e) {
     defaultExpanded: h = false,
     onOpen: x,
     maxHeight: f
-  } = e, [g, b] = l.useState(h), v = l.useRef(null), [j, _] = l.useState(null), y = true !== m, C = y ? m : g;
+  } = e, [b, g] = l.useState(h), v = l.useRef(null), [j, _] = l.useState(null), y = true !== m, C = y ? m : b;
   l.useEffect(() => {
     C && null != v.current && _(v.current.scrollHeight)
   }, [C, d]);
   let S = l.useCallback(() => {
       let e = !C;
-      y || b(e), null == p || p(e), e && null != x && x()
+      y || g(e), null == p || p(e), e && null != x && x()
     }, [C, y, p, x]),
-    E = l.useMemo(() => {
+    N = l.useMemo(() => {
       if (C) {
         if (null != f) return {
           maxHeight: "number" == typeof f ? "".concat(f, "px") : f
@@ -77,7 +77,7 @@ function d(e) {
       className: i()(c.content, {
         [c.opened]: C
       }),
-      style: E,
+      style: N,
       children: d
     })]
   })

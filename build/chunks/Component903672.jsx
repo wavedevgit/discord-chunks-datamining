@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 903672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -55,7 +55,7 @@ function Z(e) {
   } = e, n = (0, a.e7)([_.Z, O.Z], () => _.Z.getChannel(O.Z.getChannelId())), {
     messages: l,
     hasMore: s,
-    loading: f,
+    loading: h,
     guildFilter: p,
     roleFilter: b,
     everyoneFilter: y
@@ -73,7 +73,7 @@ function Z(e) {
     if (!v.ZP.hasLoadedEver) return void N(n, true);
     (null != x && p !== x || null != C && b !== C || null != P && y !== P) && N(n, true)
   }, [x, p, C, b, P, y, n, true]), (0, u.ZP)(() => {
-    (null == l ? true : l.some(h.k5)) && (c.Z.clearMentions(), N(n, true))
+    (null == l ? true : l.some(f.k5)) && (c.Z.clearMentions(), N(n, true))
   }), i.useEffect(() => () => {
     c.Z.truncateMentions(E.DJj)
   }, []);
@@ -90,7 +90,7 @@ function Z(e) {
     },
     channel: n,
     messages: l,
-    loading: f,
+    loading: h,
     hasMore: s,
     analyticsName: "Recent Mentions",
     loadMore: function() {
@@ -121,9 +121,9 @@ function T(e) {
   } = e;
   if (null == t) return null;
   let l = _.Z.getChannel(t.channel_id);
-  if (null == l || (0, f._t)(l) || (0, f.ft)(l)) return null;
+  if (null == l || (0, h._t)(l) || (0, h.ft)(l)) return null;
   let o = y.Z.didAgree(l.getGuildId()),
-    a = !!(0, f.qF)(l) && !o;
+    a = !!(0, h.qF)(l) && !o;
   return (0, r.jsxs)("div", {
     className: I.container,
     children: [(0, r.jsx)(x.Z, {

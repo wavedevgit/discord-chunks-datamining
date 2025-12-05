@@ -55,7 +55,7 @@ function j(e, t) {
 function _() {
   var e, t;
   let [n, r] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [h, f] = (0, Chunk473749.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
-    setToolsCache: N,
+    setToolsCache: E,
     removeToolsCache: O
   } = (0, Chunk396821.L3)(), {
     setImgCache: T
@@ -106,7 +106,7 @@ function _() {
         children: [require && (0, Chunk54381.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk54381.jsx)(Chunk711325.Z, {
           selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
-            (null == h ? true : h.src) != null && N(h.src, h.src, e), I(e)
+            (null == h ? true : h.src) != null && E(h.src, h.src, e), I(e)
           }
         })]
       })]
@@ -127,7 +127,7 @@ function _() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               a = await n.arrayBuffer();
-            T(t, t, (0, p.xh)(a)), N(t, t, m.jD)
+            T(t, t, (0, p.xh)(a)), E(t, t, m.jD)
           }
         }), (0, Chunk54381.jsx)("div", {
           className: Chunk30827.uploadedArea,
@@ -141,7 +141,7 @@ function _() {
               removeAsset: w
             }, t)
           })
-        }), (0, Chunk54381.jsx)(E, {
+        }), (0, Chunk54381.jsx)(N, {
           label: "gradient override",
           onChange: e => I({
             name: m._j,
@@ -180,18 +180,18 @@ function y(e) {
   return (0, l.useEffect)(() => () => {
     null != o.current && (d.current.removeEventListener("mousemove", o.current), o.current = null), null != c.current && (d.current.removeEventListener("mouseup", c.current), c.current = null)
   }, []), (0, a.jsx)(i.zJl, {
-    className: b.previewsContainer,
+    className: g.previewsContainer,
     orientation: "horizontal",
     children: (0, a.jsxs)("div", {
       ref: s,
-      className: b.previews,
+      className: g.previews,
       style: {
         width: "".concat(n, "px")
       },
       children: [(0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
         children: "Memberlist"
-      }), (0, a.jsx)(N, {
+      }), (0, a.jsx)(E, {
         nameplate: t
       }), (0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
@@ -204,7 +204,7 @@ function y(e) {
       }), (0, a.jsx)(T, {
         nameplate: t
       }), (0, a.jsx)("div", {
-        className: b.resizeHandle,
+        className: g.resizeHandle,
         onMouseDown: m
       })]
     })
@@ -218,10 +218,10 @@ function C(e) {
     removeAsset: l
   } = e;
   return (0, a.jsxs)("div", {
-    className: b.uploaded,
+    className: g.uploaded,
     children: [(0, a.jsx)(i.P3F, {
       onClick: () => l(t),
-      className: b.xicon,
+      className: g.xicon,
       children: (0, a.jsx)(i.Dio, {
         size: "custom",
         width: 16,
@@ -229,11 +229,11 @@ function C(e) {
         name: "x"
       })
     }), (0, a.jsx)("img", {
-      className: b.uploadedImg,
+      className: g.uploadedImg,
       src: t,
       alt: ""
     }), (0, a.jsx)("div", {
-      className: b.uploadedControls,
+      className: g.uploadedControls,
       children: (0, a.jsx)(i.Button, {
         onClick: () => n(t),
         size: "sm",
@@ -250,7 +250,7 @@ function S(e) {
     onClick: n
   } = e;
   return (0, a.jsxs)("div", {
-    className: b.flex,
+    className: g.flex,
     children: [(0, a.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: "coming soon"
@@ -264,13 +264,13 @@ function S(e) {
   })
 }
 
-function E(e) {
+function N(e) {
   let {
     label: t,
     onChange: n
   } = e;
   return (0, a.jsxs)("div", {
-    className: b.hexInput,
+    className: g.hexInput,
     children: [(0, a.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: t
@@ -278,22 +278,22 @@ function E(e) {
       onChange: e => {
         n(e.target.value)
       },
-      className: b.inputs,
+      className: g.inputs,
       placeholder: "#000000"
     })]
   })
 }
 
-function N(e) {
+function E(e) {
   let {
     nameplate: t
   } = e, n = (0, r.e7)([d.default], () => d.default.getCurrentUser());
   return (0, a.jsx)("div", {
-    className: b.preview,
+    className: g.preview,
     children: (0, a.jsxs)("div", {
-      className: b.simArea,
+      className: g.simArea,
       children: [(0, a.jsx)(i.Text, {
-        className: b.label,
+        className: g.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
       }), (0, a.jsx)(s.Z, {
@@ -301,7 +301,7 @@ function N(e) {
         user: n,
         currentUser: n
       }), (0, a.jsx)(i.Text, {
-        className: b.label,
+        className: g.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, a.jsxs)("div", {
@@ -325,17 +325,17 @@ function O(e) {
     nameplate: t
   } = e;
   return (0, a.jsx)("div", {
-    className: b.preview,
+    className: g.preview,
     children: (0, a.jsxs)("div", {
-      className: b.simArea,
+      className: g.simArea,
       children: [(0, a.jsx)(i.Text, {
-        className: b.label,
+        className: g.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
       }), (0, a.jsx)(f.Z, {
         nameplate: t
       }), (0, a.jsx)(i.Text, {
-        className: b.label,
+        className: g.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, a.jsxs)("div", {
@@ -355,9 +355,9 @@ function T(e) {
     nameplate: t
   } = e;
   return (0, a.jsx)("div", {
-    className: b.preview,
+    className: g.preview,
     children: (0, a.jsx)("div", {
-      className: b.rtcSim,
+      className: g.rtcSim,
       children: (0, a.jsx)(h.Z, {
         nameplate: t
       })

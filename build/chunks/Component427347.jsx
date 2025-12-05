@@ -39,39 +39,39 @@ function v(e) {
   };
   return n && !m ? (0, a.jsx)(o.ZP, {
     children: (0, a.jsxs)("div", {
-      className: b.wrapper,
+      className: g.wrapper,
       children: [(0, a.jsxs)("div", {
-        className: b.backgroundWrapper,
+        className: g.backgroundWrapper,
         children: [(0, a.jsx)(h.Z, {
-          className: b.backgroundImage,
+          className: g.backgroundImage,
           pageMultiplier: 5
         }), (0, a.jsx)("div", {
-          className: b.backgroundOverlay
+          className: g.backgroundOverlay
         })]
       }), (0, a.jsx)("div", {
-        className: b.heroImage
+        className: g.heroImage
       }), (0, a.jsxs)("div", {
-        className: b.content,
+        className: g.content,
         children: [(0, a.jsxs)("div", {
           children: [(0, a.jsx)(l.Heading, {
             variant: "heading-md/bold",
             color: true,
-            className: b.specialText,
-            children: g.intl.string(g.t.zUhr3D)
+            className: g.specialText,
+            children: b.intl.string(b.t.zUhr3D)
           }), (0, a.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: g.intl.format(g.t.Xw2XUT, {
+            children: b.intl.format(b.t.Xw2XUT, {
               settingsHook: (e, t) => (0, a.jsx)(l.P3F, {
                 tag: "span",
-                className: b.specialTextLink,
+                className: g.specialTextLink,
                 onClick: _,
                 children: e
               }, t)
             })
           })]
         }), (0, a.jsx)(l.P3F, {
-          className: b.closeClickable,
+          className: g.closeClickable,
           onClick: () => j(f.L.USER_DISMISS),
           children: (0, a.jsx)(l.Dio, {
             color: "currentColor",

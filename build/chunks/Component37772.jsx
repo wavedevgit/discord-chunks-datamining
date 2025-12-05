@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -85,8 +85,8 @@ let B = Chunk473749.memo(function e(t) {
       treatSpam: W
     } = t,
     K = D.OBS.has(s.type) ? s.messageReference : true,
-    Y = (0, a.e7)([h.Z], () => h.Z.getMessageByReference(K)),
-    q = (0, a.e7)([g.Z], () => s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED ? g.Z.getChannel(Y.message.channel_id) : null),
+    Y = (0, a.e7)([f.Z], () => f.Z.getMessageByReference(K)),
+    q = (0, a.e7)([g.Z], () => s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === f.Y.LOADED ? g.Z.getChannel(Y.message.channel_id) : null),
     Q = p.x4.useSetting(),
     X = p.RS.useSetting(),
     J = p.NA.useSetting(),
@@ -108,7 +108,7 @@ let B = Chunk473749.memo(function e(t) {
     }),
     el = (0, j.ZP)(s),
     eo = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
-    ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED && null != q,
+    ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === f.Y.LOADED && null != q,
     es = !ea && true === i,
     ec = (0, P.Z)({
       message: s,
@@ -117,8 +117,8 @@ let B = Chunk473749.memo(function e(t) {
     }),
     eu = (0, c.v)(s),
     ed = (0, _.ro)(s.id, s.channel_id),
-    ef = (0, f.Z)(s),
-    eh = (0, E.iG)(s);
+    eh = (0, h.Z)(s),
+    ef = (0, E.iG)(s);
   return ea ? (0, r.jsx)(e, U(G({}, t), {
     message: Y.message,
     channel: q,
@@ -156,7 +156,7 @@ let B = Chunk473749.memo(function e(t) {
       inlineEmbedMedia: X,
       renderEmbeds: J,
       gifAutoPlay: $,
-      poll: ef,
+      poll: eh,
       showListsAndHeaders: ee,
       showMaskedLinks: ee,
       shouldHideMediaOptions: et,
@@ -173,7 +173,7 @@ let B = Chunk473749.memo(function e(t) {
     isSystemMessage: (0, v.Z)(s),
     messageRef: ec,
     author: el,
-    "aria-labelledby": eh,
+    "aria-labelledby": ef,
     "aria-roledescription": L.intl.string(L.t.BAB0yK)
   })
 });

@@ -1,5 +1,5 @@
-/** Chunk was on 76334 **/
-/** chunk id: 232644, original params: e,i,t (module,exports,require) **/
+/** Chunk was on 77443 **/
+/** chunk id: 232644, original params: e,t,n (module,exports,require) **/
 module.exports = {
   card: "card__39b32",
   container: "container__39b32",
@@ -11,6 +11,7 @@ module.exports = {
   cardStateIcon: "cardStateIcon__39b32",
   checkmark: "checkmark__39b32",
   profileEffectPreview: "profileEffectPreview__39b32",
+  bundlePreview: "bundlePreview__39b32",
   avatarDecorationPreview: "avatarDecorationPreview__39b32",
   nameplatePreview: "nameplatePreview__39b32",
   nameplateTopLeft: "nameplateTopLeft__39b32",

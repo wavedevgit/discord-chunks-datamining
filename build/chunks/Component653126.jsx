@@ -60,7 +60,7 @@ let O = Chunk473749.memo(function(e) {
       isHoveringOrFocusing: et
     } = (0, u.Z)(ee), {
       handleCardVisibilityChange: en
-    } = (0, p.E)(t.skuId, Q === E.AW.CATALOG ? "full" : Q), ea = (0, v.J7)(t, d.Z.COLLECTIBLES_SHOP_CARD, W, J), el = t.type === s.Z.VARIANTS_GROUP && !O, er = !P || !I, ei = !(T && r) || el, es = ei || er, eo = er || el;
+    } = (0, p.E)(t.skuId, Q === N.AW.CATALOG ? "full" : Q), ea = (0, v.J7)(t, d.Z.COLLECTIBLES_SHOP_CARD, W, J), el = t.type === s.Z.VARIANTS_GROUP && !O, er = !P || !I, ei = !(T && r) || el, es = ei || er, eo = er || el;
     return (0, a.jsx)(o.$, {
       innerRef: ee,
       onChange: en,
@@ -69,18 +69,18 @@ let O = Chunk473749.memo(function(e) {
         ref: ee,
         onClick: null != R ? R : ea,
         "aria-label": $,
-        className: i()(V, N.productCardContainer, {
-          [N.hovered]: et
+        className: i()(V, E.productCardContainer, {
+          [E.hovered]: et
         }),
         onFocus: () => null == M ? true : M(t.skuId),
         onBlur: () => null == U ? true : U(t.skuId),
         onMouseEnter: () => null == D ? true : D(t.skuId),
         onMouseLeave: () => null == L ? true : L(t.skuId),
         children: (0, a.jsxs)("div", {
-          className: N.productCardContentContainer,
+          className: E.productCardContentContainer,
           children: [(0, a.jsx)("div", {
-            className: i()(N.productPreviewContainer, {
-              [N.hasBottomContent]: !r || ei || eo
+            className: i()(E.productPreviewContainer, {
+              [E.hasBottomContent]: !r || ei || eo
             }),
             children: (0, a.jsx)(j.Z, {
               skuId: t.skuId,
@@ -88,7 +88,7 @@ let O = Chunk473749.memo(function(e) {
               overrideVariantIndex: K
             })
           }), (0, a.jsxs)("div", {
-            className: N.headerContainer,
+            className: E.headerContainer,
             children: [(0, a.jsx)(h.Z, {
               skuId: t.skuId,
               badgeOverride: w,
@@ -101,18 +101,18 @@ let O = Chunk473749.memo(function(e) {
             })]
           }), es && (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("div", {
-              className: N.footerGradient
+              className: E.footerGradient
             }), (0, a.jsxs)("div", {
-              className: N.footerContainer,
+              className: E.footerContainer,
               children: [ei && (0, a.jsxs)("div", {
-                className: N.footerInfoContainer,
+                className: E.footerInfoContainer,
                 children: [!(r && T) && (0, a.jsxs)("div", {
-                  className: N.footerInfoLeft,
+                  className: E.footerInfoLeft,
                   children: [!r && (0, a.jsx)(x.Z, {
                     skuId: t.skuId,
-                    className: i()(G, N.productName)
+                    className: i()(G, E.productName)
                   }), !T && (0, a.jsx)("div", {
-                    className: N.footerInfoShrinkOnHover,
+                    className: E.footerInfoShrinkOnHover,
                     "aria-hidden": true,
                     children: (0, a.jsx)(f.Z, {
                       skuId: t.skuId,
@@ -126,19 +126,19 @@ let O = Chunk473749.memo(function(e) {
                   onVariantExit: Y
                 })]
               }), er && (0, a.jsx)("div", {
-                className: N.footerButtonContainer,
+                className: E.footerButtonContainer,
                 children: (0, a.jsxs)(c.ButtonGroup, {
                   wrap: false,
-                  className: N.footerButtonGroup,
+                  className: E.footerButtonGroup,
                   fullWidth: true,
-                  children: [!P && (0, a.jsx)(g.Z, {
+                  children: [!P && (0, a.jsx)(b.Z, {
                     skuId: t.skuId,
                     cardRef: ee,
                     onClick: A,
                     text: B,
                     prioritizedCurrency: H,
                     onClickAnalytics: W
-                  }), !I && (0, a.jsx)(b.Z, {
+                  }), !I && (0, a.jsx)(g.Z, {
                     skuId: t.skuId,
                     cardRef: ee,
                     onClick: Z,

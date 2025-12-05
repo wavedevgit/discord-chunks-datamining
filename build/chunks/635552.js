@@ -19,8 +19,8 @@ let u = e => {
   } = e, [p, h] = a.useState(false), {
     firstAvatarDecoration: x,
     firstProfileEffect: f,
-    firstNameplate: g
-  } = (0, c.Rj)(t), b = (0, o.x6)(t) ? d.intl.string(d.t.tf1ZZ4) : t.type === l.Z.AVATAR_DECORATION ? d.intl.string(d.t.zOA4ax) : t.type === l.Z.NAMEPLATE ? d.intl.string(d.t.gOzMvx) : d.intl.string(d.t.SWm2ai);
+    firstNameplate: b
+  } = (0, c.Rj)(t), g = (0, o.x6)(t) ? d.intl.string(d.t.tf1ZZ4) : t.type === l.Z.AVATAR_DECORATION ? d.intl.string(d.t.zOA4ax) : t.type === l.Z.NAMEPLATE ? d.intl.string(d.t.gOzMvx) : d.intl.string(d.t.SWm2ai);
   return {
     handleUseNow: a.useCallback(async () => {
       h(true);
@@ -32,7 +32,7 @@ let u = e => {
           });
           await (0, s.Z)(e)
         }
-        null != g && (e.nameplate = g), Object.keys(e).length > 0 && await (0, r.Mn)(e);
+        null != b && (e.nameplate = b), Object.keys(e).length > 0 && await (0, r.Mn)(e);
         {
           let {
             ToastPosition: e,
@@ -41,7 +41,7 @@ let u = e => {
             popToast: l,
             showToast: r
           } = await Promise.resolve().then(n.bind(n, 481060));
-          l(), r(a(b, t.MESSAGE, {
+          l(), r(a(g, t.MESSAGE, {
             duration: 6e3,
             position: e.TOP
           }))
@@ -52,7 +52,7 @@ let u = e => {
       } finally {
         h(false)
       }
-    }, [x, f, g, u, b, m]),
+    }, [x, f, b, u, g, m]),
     isApplying: p
   }
 }

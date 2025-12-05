@@ -59,7 +59,7 @@ function p() {
     emotion: window.__CLIPS_DEBUG__.emotion,
     yell: window.__CLIPS_DEBUG__.yell,
     whisper: window.__CLIPS_DEBUG__.whisper
-  })), [p, h] = Chunk473749.useState(Chunk894694.x0.KILL), [x, f] = Chunk473749.useState(1), [g, b] = Chunk473749.useState(""), [v, j] = Chunk473749.useState(""), _ = Chunk473749.useCallback(e => {
+  })), [p, h] = Chunk473749.useState(Chunk894694.x0.KILL), [x, f] = Chunk473749.useState(1), [b, g] = Chunk473749.useState(""), [v, j] = Chunk473749.useState(""), _ = Chunk473749.useCallback(e => {
     let a = !t[e];
     true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
       emotion: false,
@@ -156,8 +156,8 @@ function p() {
           })]
         }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           label: "Title (optional)",
-          value: g,
-          onChange: b,
+          value: b,
+          onChange: g,
           placeholder: "e.g., First Blood"
         }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           label: "Description (optional)",
@@ -171,7 +171,7 @@ function p() {
               type: Chunk894694.Bs.GAME_EVENT,
               eventType: p,
               importance: x,
-              title: g,
+              title: b,
               description: v
             })
           }

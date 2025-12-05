@@ -1,12 +1,12 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 93886 **/
 /** chunk id: 684263, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => b
+  U: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -18,50 +18,50 @@ var Chunk54381 = require("./54381.js"),
   Chunk689157 = require("./689157.js"),
   Chunk63243 = require("./63243.js"),
   Chunk244488 = require("./244488.js");
-let b = Chunk473749.memo(function(e) {
+let m = Chunk473749.memo(function(e) {
   let {
     product: t,
     isPurchased: n,
-    isHighlighted: l,
-    user: r
+    isHighlighted: i,
+    user: a
   } = e, {
-    firstProfileEffect: b,
-    firstAvatarDecoration: v,
-    firstNameplate: j
-  } = (0, m.Rj)(t), _ = (0, p.O1)(v), y = (0, c.ZP)(), C = (0, s.ap)(y), S = null != j && null != v && null != b, E = S ? o.EFr.SIZE_72 : o.EFr.SIZE_80;
-  return (0, a.jsxs)("div", {
-    className: i()(x.container, {
-      [x.twoItemBundle]: !S,
-      [x.threeItemBundle]: S
+    firstProfileEffect: m,
+    firstAvatarDecoration: b,
+    firstNameplate: x
+  } = (0, p.Rj)(t), D = (0, f.O1)(b), O = (0, c.ZP)(), y = (0, o.ap)(O), C = null != x && null != b && null != m, w = C ? s.EFr.SIZE_72 : s.EFr.SIZE_80;
+  return (0, r.jsxs)("div", {
+    className: l()(_.container, {
+      [_.twoItemBundle]: !C,
+      [_.threeItemBundle]: C
     }),
-    children: [null != b && (0, a.jsx)("div", {
-      className: x.profileEffectShopPreview,
-      children: (0, a.jsx)(u.Z, {
-        isHighlighted: l,
-        skuId: b.skuId,
+    children: [null != m && (0, r.jsx)("div", {
+      className: _.profileEffectShopPreview,
+      children: (0, r.jsx)(u.Z, {
+        isHighlighted: i,
+        skuId: m.skuId,
         isPurchased: n,
         removeSetHeight: true
       })
-    }), S && (0, a.jsx)("div", {
-      className: x.nameplatePreview,
-      children: (0, a.jsx)(d.Z, {
-        user: r,
-        nameplate: j,
-        isHighlighted: l,
+    }), C && (0, r.jsx)("div", {
+      className: _.nameplatePreview,
+      children: (0, r.jsx)(d.Z, {
+        user: a,
+        nameplate: x,
+        isHighlighted: i,
         isPurchased: n,
-        showPlaceholderUser: !l,
-        pendingAvatarDecoration: _
+        showPlaceholderUser: !i,
+        pendingAvatarDecoration: D
       })
-    }), null != _ && (0, a.jsx)("div", {
-      className: x.avatarDecorationPreview,
-      children: (0, a.jsx)(h.R, {
-        item: _,
-        user: r,
-        avatarSize: E,
+    }), null != D && (0, r.jsx)("div", {
+      className: _.avatarDecorationPreview,
+      children: (0, r.jsx)(v.R, {
+        item: D,
+        user: a,
+        avatarSize: w,
         isPurchased: n,
-        isHighlighted: l,
-        avatarPlaceholderSrc: C ? g : f,
-        className: x.avatar
+        isHighlighted: i,
+        avatarPlaceholderSrc: y ? g : h,
+        className: _.avatar
       })
     })]
   })

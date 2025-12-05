@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 736409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   j: () => _
@@ -32,10 +32,10 @@ let _ = e => {
       hasLoadedQuestBar: r
     } = (0, c.Ws)({
       location: b.dr.CONFLICT_CHECKS
-    }), i = u.G6.useSetting(), o = (0, l.e7)([d.Z], () => d.Z.getLayers().includes(g.S9g.USER_SETTINGS)), a = (0, l.e7)([f.Z], () => f.Z.getStatus()), {
-      isOpen: h
+    }), i = u.G6.useSetting(), o = (0, l.e7)([d.Z], () => d.Z.getLayers().includes(g.S9g.USER_SETTINGS)), a = (0, l.e7)([h.Z], () => h.Z.getStatus()), {
+      isOpen: f
     } = (0, s.Z)();
-    if ((n && r || t) && !o && !h && !__OVERLAY__) {
+    if ((n && r || t) && !o && !f && !__OVERLAY__) {
       if (!i && a === g.Skl.INVISIBLE) return t ? p.NK.ActivityAndStatus : p.NK.ActivityAndStatusNux;
       if (!i) return t ? p.NK.Activity : p.NK.ActivityNux;
       if (a === g.Skl.INVISIBLE) return t ? p.NK.Status : p.NK.StatusNux
@@ -45,7 +45,7 @@ let _ = e => {
     isForceShowSharingPopout: n
   });
   (0, i.useEffect)(() => {
-    n && h.default.track(g.rMx.OPEN_POPOUT, {
+    n && f.default.track(g.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
   }, [n]);

@@ -21,11 +21,11 @@ function p(e) {
     onCtxMenuSelect: p
   } = e, m = (0, l.B6)(t.config.expiresAt);
   return (0, r.jsxs)("div", {
-    className: u.questAcceptedHeader,
+    className: d.questAcceptedHeader,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-xxs/medium",
-      className: o()(u.flex, u.headerText),
-      children: d.intl.format(d.t["pX+fmn"], {
+      className: o()(d.flex, d.headerText),
+      children: u.intl.format(u.t["pX+fmn"], {
         expirationDate: m
       })
     }), (0, r.jsx)(c.i, {
@@ -57,12 +57,12 @@ function p(e) {
           }
           return e
         }({}, e), n = n = {
-          className: u.submenuWrapper,
-          "aria-label": d.intl.string(d.t.DEoVWZ),
+          className: d.submenuWrapper,
+          "aria-label": u.intl.string(u.t.DEoVWZ),
           children: (0, r.jsx)(a.xhG, {
             size: "md",
             color: "currentColor",
-            className: o()(u.submenuIcon, u.interactiveNormal)
+            className: o()(d.submenuIcon, d.interactiveNormal)
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

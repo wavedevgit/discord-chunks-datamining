@@ -1,5 +1,5 @@
 /** Chunk was on 90499 **/
-/** chunk id: 836831, original params: e,o,t (module,exports,require) **/
+/** chunk id: 836831, original params: e,t,o (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
@@ -12,44 +12,44 @@ var Chunk54381 = require("./54381.js"),
   Chunk617889 = require("./617889.js"),
   Chunk642145 = require("./642145.js"),
   Chunk316464 = require("./316464.js");
-let p = Chunk473749.forwardRef((e, o) => {
+let p = Chunk473749.forwardRef((e, t) => {
   let {
-    quest: t,
+    quest: o,
     percentComplete: n,
     size: a = 42,
     strokeWidth: p = 3,
     glowBlur: u = .4,
     percentCompleteText: C,
     percentCompleteTextVariant: v = "text-lg/medium",
-    children: g
-  } = e, m = (0, d.E)(t, n > 0), x = a / 2, f = a / 2 - p / 2, B = 2 * Math.PI * f, P = B - n * B, y = {
+    children: m
+  } = e, g = (0, _.EK)(o, n > 0), x = a / 2, f = a / 2 - p / 2, B = 2 * Math.PI * f, y = B - n * B, P = {
     strokeDasharray: "".concat(B, " ").concat(B),
-    strokeDashoffset: P
+    strokeDashoffset: y
   }, b = {
     strokeDasharray: "".concat(B, " ").concat(B),
     strokeDashoffset: -n * B
   }, T = {
-    boxShadow: "0 0 20px 0px ".concat(m.glow)
+    boxShadow: "0 0 20px 0px ".concat(g.glow)
   }, {
     progressTextAnimation: S
-  } = (0, _.q_F)({
+  } = (0, d.q_F)({
     progressTextAnimation: +(null != C && 1 !== n),
     config: l.Y
   });
   return (0, r.jsxs)("div", {
     className: c.outer,
-    ref: o,
+    ref: t,
     children: [(0, r.jsxs)("div", {
       className: c.inner,
       style: T,
-      children: [g, (0, r.jsxs)(s.animated.div, {
+      children: [m, (0, r.jsxs)(s.animated.div, {
         style: {
           opacity: S
         },
         className: i()(c.coverContent, c.progressTextWrapper),
         children: [(0, r.jsx)("div", {
           className: i()(c.coverContent, c.progressTextOverlay)
-        }), (0, r.jsx)(_.Text, {
+        }), (0, r.jsx)(d.Text, {
           variant: v,
           color: "text-strong",
           className: c.progressText,
@@ -85,10 +85,10 @@ let p = Chunk473749.forwardRef((e, o) => {
           y2: "0%",
           children: [(0, r.jsx)("stop", {
             offset: "0%",
-            stopColor: m.backgroundTop
+            stopColor: g.backgroundTop
           }), (0, r.jsx)("stop", {
             offset: "100%",
-            stopColor: m.backgroundBottom
+            stopColor: g.backgroundBottom
           })]
         })]
       }), (0, r.jsx)("circle", {
@@ -107,8 +107,8 @@ let p = Chunk473749.forwardRef((e, o) => {
         r: f,
         cx: x,
         cy: x,
-        stroke: m.foreground,
-        style: y
+        stroke: g.foreground,
+        style: P
       })]
     })]
   })

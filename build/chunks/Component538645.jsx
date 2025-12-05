@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk373071 = require("./373071.js"),
   Chunk782691 = require("./782691.jsx"),
   Chunk558270 = require("./558270.js");
-let b = "Make sure you're only uploading text files!",
+let g = "Make sure you're only uploading text files!",
   v = e => {
     var t, n, l;
     let {
@@ -28,17 +28,17 @@ let b = "Make sure you're only uploading text files!",
       deleteConfig: s
     } = (0, x.n6)();
     return (0, a.jsxs)(c.P3F, {
-      className: g.previewCard,
+      className: b.previewCard,
       onClick: () => {
         i(r)
       },
       children: [(0, a.jsx)("div", {
-        className: g.previewCardImage,
+        className: b.previewCardImage,
         style: {
           backgroundImage: "url(".concat(null == (l = r.config) || null == (n = l.effects) || null == (t = n[0]) ? true : t.base64, ")")
         }
       }), (0, a.jsxs)("div", {
-        className: g.previewCardFooter,
+        className: b.previewCardFooter,
         children: [(0, a.jsx)(c.Text, {
           variant: "text-md/bold",
           children: r.name
@@ -60,23 +60,23 @@ function j() {
     clearAll: n
   } = (0, Chunk373071.n6)(), [r, j] = Chunk473749.useState(), _ = Chunk473749.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects());
   (0, Chunk267097.Z)();
-  let [C, S] = Chunk473749.useState(""), E = Chunk473749.useMemo(() => "" === C ? y : y.filter(e => {
+  let [C, S] = Chunk473749.useState(""), N = Chunk473749.useMemo(() => "" === C ? y : y.filter(e => {
     var t, n, a, l;
     let r = C.toLowerCase(),
       i = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
       s = null != (l = null == (n = e.config.description) ? true : n.toLowerCase()) ? l : "";
     return i.includes(r) || s.includes(r)
-  }), [C, y]), N = Chunk473749.useCallback((e, n) => {
-    if (null == n || !e.type.startsWith("text/")) return (0, p.Eo)(b);
+  }), [C, y]), E = Chunk473749.useCallback((e, n) => {
+    if (null == n || !e.type.startsWith("text/")) return (0, p.Eo)(g);
     let [a, l] = n.split(",");
-    if (!a.includes("text/plain")) return (0, p.Eo)(b);
+    if (!a.includes("text/plain")) return (0, p.Eo)(g);
     let r = JSON.parse(atob(l));
     r.skuId = (0, s.Z)(), t(r), (0, p.XA)("Profile Effect (maybe??) imported!")
   }, [exports]), O = Chunk473749.useCallback(e => {
     var t;
     if ((null == (t = e.currentTarget) ? true : t.files) == null) return void(0, p.Eo)("Error uploading file. Try again!");
-    (0, p.Kr)(e.currentTarget.files, N, p.Eo)
-  }, [N]);
+    (0, p.Kr)(e.currentTarget.files, E, p.Eo)
+  }, [E]);
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk558270.root,
     children: [null == Chunk120356 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -146,8 +146,8 @@ function j() {
           }
         }), (0, Chunk54381.jsx)("div", {
           className: Chunk558270.pfxGrid,
-          children: E.map(e => (0, a.jsx)(c.P3F, {
-            className: g.pfxListItem,
+          children: N.map(e => (0, a.jsx)(c.P3F, {
+            className: b.pfxListItem,
             style: {
               backgroundImage: "url(".concat(e.config.thumbnailPreviewSrc, ")")
             },
@@ -162,7 +162,7 @@ function j() {
               })
             },
             children: (0, a.jsx)("div", {
-              className: g.pfxListItemFooter,
+              className: b.pfxListItemFooter,
               children: (0, a.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "always-white",

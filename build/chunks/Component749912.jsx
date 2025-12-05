@@ -29,7 +29,7 @@ function c(e) {
   return e
 }
 
-function d(e, t) {
+function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -41,7 +41,7 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = [{
+let d = [{
     value: 1,
     label: "Stream Desktop"
   }, {
@@ -72,7 +72,7 @@ let u = [{
         label: "Task Type(s)",
         className: l.taskPresetSelect,
         placeholder: "Select Task Preset",
-        options: u,
+        options: d,
         renderOptionValue: e => e.map(e => (0, r.jsx)("div", {
           children: e.label
         }, e.value)),
@@ -88,7 +88,7 @@ let u = [{
           return t && n ? 4 : t ? 3 : n ? 0 : r ? 1 : o ? 2 : a ? 5 : true
         }(p.tasks),
         select: e => {
-          t(d(c({}, p), {
+          t(u(c({}, p), {
             tasks: function(e, t) {
               let n = {};
               switch (e) {
@@ -163,11 +163,11 @@ let u = [{
           n *= i.Z.Seconds.MINUTE;
           let r = Object.fromEntries(Object.entries(p.tasks).map(e => {
             let [t, r] = e;
-            return [t, d(c({}, r), {
+            return [t, u(c({}, r), {
               target: n
             })]
           }));
-          t(d(c({}, p), {
+          t(u(c({}, p), {
             tasks: r
           }))
         }

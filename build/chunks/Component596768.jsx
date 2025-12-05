@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk599832 = require("./599832.js"),
   Chunk451429 = require("./451429.js");
-let N = [{
+let E = [{
     key: "id",
     cellClassName: Chunk599832.eventColumn,
     render(e) {
@@ -72,7 +72,7 @@ let N = [{
       } = e, u = d()(s);
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)(x.ZP, {
-          className: i()(E.headerBar, S.subPanelHeaderBar),
+          className: i()(N.headerBar, S.subPanelHeaderBar),
           children: [(0, a.jsx)(x.ZP.Icon, {
             icon: p.IeX,
             tooltip: t
@@ -174,7 +174,7 @@ function T() {
         onClick: Chunk31336.Zw
       })]
     }), (0, Chunk54381.jsx)(Chunk681619.Z, {
-      columns: N,
+      columns: E,
       data: Chunk658722,
       selectedRowKey: Chunk913527,
       onClickRow: e => d(e.key)

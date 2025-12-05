@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 865112, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   RB: () => O,
@@ -89,7 +89,7 @@ let _ = {
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS:
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: f, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: h, color: r.Z.colors.BACKGROUND_ACCENT
         };
       default:
         return null

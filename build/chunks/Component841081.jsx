@@ -1,5 +1,5 @@
-/** Chunk was on 76334 **/
-/** chunk id: 841081, original params: e,i,t (module,exports,require) **/
+/** Chunk was on 29356 **/
+/** chunk id: 841081, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   default: () => p
 });
@@ -17,8 +17,8 @@ var Chunk54381 = require("./54381.js"),
 
 function h(e) {
   let {
-    giftRecipient: i,
-    onClose: t,
+    giftRecipient: t,
+    onClose: i,
     transitionState: l,
     analyticsLocations: h,
     analyticsObject: p
@@ -27,7 +27,7 @@ function h(e) {
   } = (0, s.JL)(), g = r.useCallback(e => {
     (0, o.Z)({
       isGift: true,
-      giftRecipient: i,
+      giftRecipient: t,
       subscriptionTier: e,
       giftingOrigin: d.Wt.DM_CHANNEL,
       analyticsLocations: null != h ? h : [],
@@ -37,8 +37,8 @@ function h(e) {
         object: u.qAy.BUTTON_ICON,
         objectType: u.AnalyticsObjectTypes.GIFT
       }
-    }), t()
-  }, [i, h, p, t]);
+    }), i()
+  }, [t, h, p, i]);
   return (0, n.jsxs)(a.Y0X, {
     transitionState: l,
     size: a.CgR.DYNAMIC,
@@ -55,7 +55,7 @@ function h(e) {
           variant: "heading-md/semibold",
           children: m.intl.string(m.t["wg/30i"])
         }), (0, n.jsx)(a.olH, {
-          onClick: t,
+          onClick: i,
           "data-migration-pending": true
         })]
       })
@@ -64,9 +64,9 @@ function h(e) {
       "data-migration-pending": true,
       children: (0, n.jsx)(c.Z, {
         onSelectSku: g,
-        giftRecipient: i,
+        giftRecipient: t,
         priceOptions: f,
-        onWishlistItemClick: t
+        onWishlistItemClick: i
       })
     })]
   })
@@ -74,8 +74,8 @@ function h(e) {
 
 function p(e) {
   let {
-    giftRecipient: i,
-    onClose: t,
+    giftRecipient: t,
+    onClose: i,
     transitionState: r,
     analyticsLocations: a,
     analyticsObject: o
@@ -87,11 +87,11 @@ function p(e) {
     isGift: true,
     children: (0, n.jsx)(l.KB, {
       isGift: true,
-      giftRecipient: i,
+      giftRecipient: t,
       giftingOrigin: d.Wt.DM_CHANNEL,
       children: (0, n.jsx)(h, {
-        giftRecipient: i,
-        onClose: t,
+        giftRecipient: t,
+        onClose: i,
         transitionState: r,
         analyticsLocations: a,
         analyticsObject: o

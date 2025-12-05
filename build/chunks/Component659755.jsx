@@ -1,7 +1,7 @@
 /** Chunk was on 75393 **/
 /** chunk id: 659755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => N
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -67,14 +67,14 @@ let y = e => {
           avatarSize: c.EFr.SIZE_120
         });
       case i.Z.NAMEPLATE:
-        return (0, a.jsx)(b.Z, {
+        return (0, a.jsx)(g.Z, {
           nameplate: s,
           user: l,
           isHighlighted: n,
           isPurchased: false
         });
       case i.Z.BUNDLE:
-        return (0, a.jsx)(g.U, {
+        return (0, a.jsx)(b.U, {
           product: t,
           user: l,
           isHighlighted: n,
@@ -103,7 +103,7 @@ let y = e => {
       })
     })
   },
-  E = e => {
+  N = e => {
     let {
       skuId: t,
       isCardHovered: n,

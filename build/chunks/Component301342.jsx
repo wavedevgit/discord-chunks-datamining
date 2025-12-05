@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 301342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => w,
@@ -82,7 +82,7 @@ let N = Chunk473749.memo(function(e) {
       R = (0, s.e7)([y.Z], () => y.Z.can(x.Plq.MANAGE_CHANNELS, l));
     t = null != N ? j > N ? E.containerDragAfter : E.containerDragBefore : E.containerDefault;
     let D = i.useCallback(() => {
-        A ? (0, h.mJ)(l.id) : (0, h.c4)(l.id)
+        A ? (0, f.mJ)(l.id) : (0, f.c4)(l.id)
       }, [l.id, A]),
       L = i.useCallback(e => {
         if ("null" !== l.id) {
@@ -101,7 +101,7 @@ let N = Chunk473749.memo(function(e) {
       M = i.useCallback(() => {
         let e = l.type === x.d4z.GUILD_CATEGORY ? null : l.type,
           t = l.getGuildId();
-        null != t && (0, f.ZDy)(async () => {
+        null != t && (0, h.ZDy)(async () => {
           let {
             default: i
           } = await Promise.all([n.e("29497"), n.e("53781")]).then(n.bind(n, 241865));
@@ -137,7 +137,7 @@ let N = Chunk473749.memo(function(e) {
       H = (0, r.jsxs)("li", {
         className: t,
         "data-dnd-name": l.name,
-        children: [(0, r.jsx)(f.tEY, {
+        children: [(0, r.jsx)(h.tEY, {
           focusTarget: F,
           ringTarget: V,
           offset: {
@@ -152,7 +152,7 @@ let N = Chunk473749.memo(function(e) {
               [E.clickable]: true
             }),
             onContextMenu: L,
-            children: [(0, r.jsxs)(f.P3F, I(S({
+            children: [(0, r.jsxs)(h.P3F, I(S({
               innerRef: F,
               className: E.mainContent,
               tabIndex: U
@@ -170,7 +170,7 @@ let N = Chunk473749.memo(function(e) {
                 children: (0, r.jsx)(c.Z, {
                   children: l.name
                 })
-              }), Z ? null : (0, r.jsx)(f.CJ0, {
+              }), Z ? null : (0, r.jsx)(h.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: E.icon
@@ -180,13 +180,13 @@ let N = Chunk473749.memo(function(e) {
               className: E.children,
               children: R && !v ? (0, r.jsx)(u.u, {
                 text: C.intl.string(C.t["fUYU+j"]),
-                children: (0, r.jsx)(f.P3F, {
+                children: (0, r.jsx)(h.P3F, {
                   className: o()(E.addButton, E.forceVisible),
                   onClick: M,
                   tabIndex: U,
                   role: "button",
                   "aria-label": C.intl.string(C.t["fUYU+j"]),
-                  children: (0, r.jsx)(f.BRu, {
+                  children: (0, r.jsx)(h.BRu, {
                     size: "xs",
                     color: "currentColor",
                     className: E.addButtonIcon
@@ -221,10 +221,10 @@ let N = Chunk473749.memo(function(e) {
         }), null != n ? (0, r.jsx)(u.u, {
           asContainer: true,
           text: C.intl.string(C.t["5qNmsU"]),
-          children: (0, r.jsx)(f.P3F, {
+          children: (0, r.jsx)(h.P3F, {
             className: E.dismissButton,
             onClick: n,
-            children: (0, r.jsx)(f.k$p, {
+            children: (0, r.jsx)(h.k$p, {
               size: "md",
               color: "currentColor",
               className: E.dismiss
@@ -246,7 +246,7 @@ let N = Chunk473749.memo(function(e) {
         variant: "secondary",
         fullWidth: true,
         onClick: l,
-        icon: f.gj8,
+        icon: h.gj8,
         text: n ? C.intl.string(C.t["/eB9Bg"]) : C.intl.string(C.t.Q2gPWl)
       })
     })

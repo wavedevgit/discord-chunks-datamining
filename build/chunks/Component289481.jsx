@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -59,8 +59,8 @@ let S = Chunk473749.memo(function(e) {
       c([e, e - r])
     }
     let {
-      opacity: f,
-      size: h
+      opacity: h,
+      size: f
     } = (0, d.q_F)({
       config: {
         clamp: true,
@@ -73,8 +73,8 @@ let S = Chunk473749.memo(function(e) {
         n(t.channelId)
       }
     }, "animate-always"), p = {
-      opacity: f,
-      height: h.to(e => {
+      opacity: h,
+      height: f.to(e => {
         var t, n;
         return u ? (t = o, (n = s) + (t - n) * e) : "auto"
       })
@@ -93,8 +93,8 @@ let S = Chunk473749.memo(function(e) {
       toggle: o
     } = e, a = (0, c.e7)([m.Z], () => m.Z.getChannel(t.channelId));
     if (i.useEffect(() => {
-        null == a || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || f.Z.wait(() => {
-          (0, h.ack)(t.channelId, {
+        null == a || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || h.Z.wait(() => {
+          (0, f.ack)(t.channelId, {
             section: j.jXE.INBOX,
             object: j.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
             objectType: j.AnalyticsObjectTypes.ACK_AUTOMATIC

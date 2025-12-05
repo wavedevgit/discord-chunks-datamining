@@ -50,15 +50,15 @@ let p = e => {
       discountOfferAmount: h,
       discount: x = c.f_,
       variant: f = "heading-md/semibold"
-    } = e, g = null != h, b = (0, o.qr)(t, n), v = x !== c.f_ && x.discountPercentage >= 5 && !g ? (0, a.jsxs)(a.Fragment, {
+    } = e, b = null != h, g = (0, o.qr)(t, n), v = x !== c.f_ && x.discountPercentage >= 5 && !b ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(s.nn4, {
         children: u.intl.format(u.t.niC6DK, {
-          price: b,
+          price: g,
           discountPercentage: x.discountPercentage
         })
       }), (0, a.jsx)("span", {
         "aria-hidden": true,
-        children: b
+        children: g
       }), (0, a.jsx)("span", {
         className: m.discount,
         "aria-hidden": true,
@@ -67,19 +67,19 @@ let p = e => {
     }) : (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(s.nn4, {
         children: u.intl.format(u.t["6C36MF"], {
-          price: b
+          price: g
         })
       }), (0, a.jsx)("span", {
         "aria-hidden": true,
         className: r()({
-          [m.priceStrikethrough]: g
+          [m.priceStrikethrough]: b
         }, p),
-        children: b
+        children: g
       })]
     });
     return (0, a.jsxs)("div", {
       className: r()({
-        [m.discountBackgroundColor]: g
+        [m.discountBackgroundColor]: b
       }, m.container, p),
       children: ["tooltip" === l ? (0, a.jsx)(i.u, {
         text: u.intl.string(u.t.MPFyJ5),
@@ -98,7 +98,7 @@ let p = e => {
         color: "currentColor",
         lineClamp: 1,
         children: v
-      }), g && (0, a.jsxs)(s.Text, {
+      }), b && (0, a.jsxs)(s.Text, {
         variant: f,
         className: m.discountPill,
         lineClamp: 1,

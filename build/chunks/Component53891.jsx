@@ -18,9 +18,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk446094 = require("./446094.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
-let g = new Chunk710845.Z("GuildTagCoachmark");
+let b = new Chunk710845.Z("GuildTagCoachmark");
 
-function b(e) {
+function g(e) {
   function t(t) {
     var n;
     o.Z.dispatch({
@@ -121,7 +121,7 @@ function v(e) {
 function j(e) {
   let t = (0, l.e7)([u.Z], () => u.Z.getGuild(e.guildId)),
     n = (0, m.S3)(e.guildId);
-  return null != t && (0, p.jq)(t) && null !== n ? "changed" === n ? (0, a.jsx)(b, {
+  return null != t && (0, p.jq)(t) && null !== n ? "changed" === n ? (0, a.jsx)(g, {
     guild: t,
     onDismiss: e.onDismiss,
     targetElementRef: e.targetElementRef,
@@ -131,5 +131,5 @@ function j(e) {
     onDismiss: e.onDismiss,
     targetElementRef: e.targetElementRef,
     children: e.children
-  }) : (g.error("GuildTagCoachmark rendered without guildId or coachmark type."), e.children)
+  }) : (b.error("GuildTagCoachmark rendered without guildId or coachmark type."), e.children)
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 933104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $h: () => T,
@@ -101,14 +101,14 @@ function A(e) {
     powerups: n,
     channelRowRef: i,
     markAsDismissed: o
-  } = e, s = (0, a.e7)([f.Z], () => {
+  } = e, s = (0, a.e7)([h.Z], () => {
     var e;
-    return null == (e = f.Z.getGuild(t)) ? true : e.name
+    return null == (e = h.Z.getGuild(t)) ? true : e.name
   }), {
     onActivate: c
   } = (0, _.ZP)(t, n[0]), d = (0, p.Z)(n[0], true);
   if (0 === n.length) return;
-  let h = n.length >= 3 ? E.intl.formatToPlainString(C.default["6Sv+3M"], {
+  let f = n.length >= 3 ? E.intl.formatToPlainString(C.default["6Sv+3M"], {
       perk: n[0].title,
       perk2: n[1].title,
       perk3: n[2].title
@@ -130,7 +130,7 @@ function A(e) {
     title: E.intl.formatToPlainString(C.default.LmpChE, {
       guildName: s
     }),
-    body: h,
+    body: f,
     actions: [{
       text: g ? E.intl.string(C.default.gSxlHf) : E.intl.string(E.t.RzWDqY),
       variant: "primary",
@@ -200,8 +200,8 @@ function D(e) {
       src: I.Z,
       className: l()(S.image, S.gameServerHostingImage)
     }),
-    title: E.intl.string(n === h.J.GAME_SERVER_HOSTING_AVAILABLE ? x.default.wXLChx : x.default["8z8RpY"]),
-    body: n === h.J.GAME_SERVER_HOSTING_AVAILABLE ? E.intl.string(x.default.lZ6m7Q) : E.intl.format(x.default["IQ1E+d"], {
+    title: E.intl.string(n === f.J.GAME_SERVER_HOSTING_AVAILABLE ? x.default.wXLChx : x.default["8z8RpY"]),
+    body: n === f.J.GAME_SERVER_HOSTING_AVAILABLE ? E.intl.string(x.default.lZ6m7Q) : E.intl.format(x.default["IQ1E+d"], {
       boostCount: a
     }),
     actions: [{
@@ -248,9 +248,9 @@ function M(e) {
       alignmentStrategy: a = "edge",
       markAsDismissed: u,
       size: d = "lg",
-      asset: f
+      asset: h
     } = e,
-    h = function(e, t) {
+    f = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -282,12 +282,12 @@ function M(e) {
       })
     }
     return e
-  }({}, h), n = n = {
+  }({}, f), n = n = {
     graphic: {
       type: "dynamic",
       component: s.DynamicGraphicComponent.GUILD_POWERUPS_COACHMARK_ASSET,
       props: {
-        asset: f
+        asset: h
       }
     },
     size: d,

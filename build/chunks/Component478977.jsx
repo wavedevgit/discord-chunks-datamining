@@ -1,7 +1,7 @@
 /** Chunk was on 83615 **/
 /** chunk id: 478977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -40,20 +40,20 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let d = function(e) {
+let u = function(e) {
   let {
     colorKey: t,
     value: n,
-    onChange: d,
-    title: u
+    onChange: u,
+    title: d
   } = e, p = s.useRef(null);
   return (0, r.jsx)(a.gNt, {
-    label: u,
+    label: d,
     children: (0, r.jsx)(a.yRy, {
       targetElementRef: p,
       renderPopout: e => (0, r.jsx)(a.Z$W, c(l({}, e), {
         value: n,
-        onChange: e => d(t, (0, o.Rf)(e))
+        onChange: e => u(t, (0, o.Rf)(e))
       })),
       children: e => (0, r.jsx)(a.P3F, c(l({}, e), {
         innerRef: p,

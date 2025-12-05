@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 906817, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EM: () => m,
@@ -20,18 +20,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk776677 = require("./776677.js");
 
 function m(e, t, n, r) {
-  let i = "compact" === r ? 8 : f.$k;
+  let i = "compact" === r ? 8 : h.$k;
   if (e === u.wZ) return i;
-  if (e === u.wd) return t.features.has(h.GuildFeatures.HUB) ? 0 : i;
+  if (e === u.wd) return t.features.has(f.GuildFeatures.HUB) ? 0 : i;
   if (e === n.voiceChannelsSectionNumber) {
     var l;
     let t = n.getCategoryFromSection(e);
     if (null == t || t.isEmpty()) return 0;
-    if (t.isCollapsed) return f.Pw + 9;
+    if (t.isCollapsed) return h.Pw + 9;
     let r = null == (l = n.getChannelFromSectionRow(e, 0)) ? true : l.channel;
-    return null == r || r.record.type === h.d4z.GUILD_CATEGORY ? 9 : 25
+    return null == r || r.record.type === f.d4z.GUILD_CATEGORY ? 9 : 25
   }
-  return "compact" === r ? 32 : f.Pw
+  return "compact" === r ? 32 : h.Pw
 }
 
 function b(e, t) {
@@ -71,7 +71,7 @@ let _ = Chunk473749.memo(function(e) {
     null != _ && r.includes(_) && (t = (0, a.KY)(m)), (0, a.Uo)(n.id, r, t)
   }, [n.id, _, m, b]), {
     density: j
-  } = (0, l.TCT)(), x = "compact" === j ? 8 : f.$k;
+  } = (0, l.TCT)(), x = "compact" === j ? 8 : h.$k;
   switch (t) {
     case u.wZ:
       return (0, r.jsx)("div", {
@@ -80,7 +80,7 @@ let _ = Chunk473749.memo(function(e) {
         }
       });
     case u.wd:
-      if (n.features.has(h.GuildFeatures.HUB)) return null;
+      if (n.features.has(f.GuildFeatures.HUB)) return null;
       return (0, r.jsx)("div", {
         style: {
           height: x
@@ -117,7 +117,7 @@ let _ = Chunk473749.memo(function(e) {
         position: e.position,
         disableManageChannels: y,
         children: (0, r.jsx)(s.Z, {
-          inlineSpecs: f.MF,
+          inlineSpecs: h.MF,
           arrowAlignment: c.cy.TOP,
           tutorialId: "organize-by-topic",
           position: "right"

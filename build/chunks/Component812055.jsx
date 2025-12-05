@@ -25,8 +25,8 @@ let v = Chunk70956.Z.Millis.HOUR,
   _ = 4 * Chunk70956.Z.Millis.DAY;
 
 function y() {
-  let [e, t] = Chunk473749.useState(Date.now()), n = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()), a = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getStatus()), s = Chunk695346.P4.useSetting(), c = (null == Chunk907862 ? true : Chunk907862.value) != null ? Number(Chunk907862.value) : null, p = Chunk695346.Cr.useSetting(), g = Chunk54381 === Chunk231338.Sk.DND && null != Chunk246133 && module - Chunk246133 > j && "0" === Chunk70956, {
-    enabled: b
+  let [e, t] = Chunk473749.useState(Date.now()), n = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()), a = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getStatus()), s = Chunk695346.P4.useSetting(), c = (null == Chunk907862 ? true : Chunk907862.value) != null ? Number(Chunk907862.value) : null, p = Chunk695346.Cr.useSetting(), b = Chunk54381 === Chunk231338.Sk.DND && null != Chunk246133 && module - Chunk246133 > j && "0" === Chunk70956, {
+    enabled: g
   } = (0, Chunk809930.a)({
     location: "useDoNotDisturbReminderPopoverDismissibleContent",
     autoTrackExposure: Chunk388032,
@@ -60,14 +60,14 @@ function C(e) {
   return null != t.current && r ? (0, a.jsxs)(a.Fragment, {
     children: [l, (0, a.jsx)(s.J2, {
       targetElementRef: t,
-      title: g.intl.string(i),
-      body: g.intl.string(o),
+      title: b.intl.string(i),
+      body: b.intl.string(o),
       caretConfig: {
         align: "start"
       },
       gradientColor: "purple",
       actions: [{
-        text: g.intl.string(g.t.fwPurU),
+        text: b.intl.string(b.t.fwPurU),
         onClick: () => {
           (0, c.Z)({
             nextStatus: f.Sk.ONLINE
@@ -76,7 +76,7 @@ function C(e) {
       }],
       graphic: {
         type: "image",
-        src: b
+        src: g
       },
       onRequestClose: () => null == n ? true : n(x.L.DISMISS)
     })]

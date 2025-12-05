@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 317632, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -31,8 +31,8 @@ function c(e) {
 }
 let u = [],
   d = {},
-  f = null,
-  h = 0;
+  h = null,
+  f = 0;
 
 function p(e) {
   let t = null;
@@ -79,10 +79,10 @@ class g extends(r = Chunk442837.ZP.Store) {
     return null == (t = d[e.invite_id]) ? true : t.joinable
   }
   getLastUnseenInvite() {
-    return f
+    return h
   }
   getUnseenInviteCount() {
-    return h
+    return f
   }
 }
 s(g, "displayName", "GameInviteStore");
@@ -97,7 +97,7 @@ let m = new g(Chunk570140.Z, {
     let {
       gameInvite: t
     } = e, n = p(t);
-    null != n && (u = [n, ...u], f = t, h += 1)
+    null != n && (u = [n, ...u], h = t, f += 1)
   },
   GAME_INVITE_DELETE: function(e) {
     let {
@@ -118,6 +118,6 @@ let m = new g(Chunk570140.Z, {
     }
   },
   GAME_INVITE_CLEAR_UNSEEN: function(e) {
-    f = null, h = 0
+    h = null, f = 0
   }
 })

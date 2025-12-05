@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 593618, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -45,7 +45,7 @@ function k(e, t, n) {
     children: [(0, r.jsx)(e, {
       className: L.activityIcon,
       color: "currentColor"
-    }), (0, r.jsx)(f.ZP, {
+    }), (0, r.jsx)(h.ZP, {
       guildId: n,
       users: t,
       max: 6
@@ -104,9 +104,9 @@ function U(e) {
           } = e;
           return t
         });
-        return (0, h.dq)(r, a)
+        return (0, f.dq)(r, a)
       }),
-      f = (0, c.Wu)([j.Z], () => s().flatMap(l, t => {
+      h = (0, c.Wu)([j.Z], () => s().flatMap(l, t => {
         if (t === e.afkChannelId) return [];
         let n = j.Z.getMutableParticipants(t, x.pV.SPEAKER).filter(e => e.type === x.Ui.VOICE).map(e => {
           let {
@@ -114,7 +114,7 @@ function U(e) {
           } = e;
           return t
         });
-        return (0, h.dq)(n, a)
+        return (0, f.dq)(n, a)
       })),
       p = (0, c.e7)([j.Z], () => {
         let e = 0;
@@ -123,23 +123,23 @@ function U(e) {
       }),
       g = (0, c.Wu)([P.Z], () => {
         let e = P.Z.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
-        return (0, h._j)(e, a)
+        return (0, f._j)(e, a)
       }, [a, t]),
       m = (0, c.Wu)([d.ZP], () => {
         let e = d.ZP.getEmbeddedActivitiesForGuild(t).flatMap(e => Array.from(e.userIds));
-        return (0, h._j)(e, a)
+        return (0, f._j)(e, a)
       }, [t, a]),
       b = (0, c.Wu)([T.default], () => {
         let e = m.map(e => T.default.getUser(e));
-        return (0, h.dq)(e)
+        return (0, f.dq)(e)
       }, [m]),
       _ = (0, c.Wu)([T.default], () => g.map(e => T.default.getUser(e)), [g]),
       y = u.filter(e => !g.includes(e.id) && !m.includes(e.id)),
-      O = (0, h.dq)(y),
+      O = (0, f.dq)(y),
       v = _.filter(e => null != e && !m.includes(e.id)),
       w = (0, c.e7)([S.Z], () => S.Z.getUserAffinitiesMap(), []),
       D = i.useMemo(() => (0, I.C)(O, w, "GuildTooltip - nonBlockedUsers"), [O, w]),
-      L = i.useMemo(() => (0, I.C)(f, w, "GuildTooltip - stageSpeakers"), [f, w]),
+      L = i.useMemo(() => (0, I.C)(h, w, "GuildTooltip - stageSpeakers"), [h, w]),
       M = i.useMemo(() => (0, I.C)(v, w, "GuildTooltip - streamUsers"), [v, w]);
     return {
       voiceUsersToShow: D,
@@ -147,7 +147,7 @@ function U(e) {
       numStageListeners: p,
       streamUsersToShow: M,
       embeddedActivitiesUsers: i.useMemo(() => (0, I.C)(b, w, "GuildTooltip - embeddedActivitiesUsers"), [b, w]),
-      hasActivity: f.length > 0 || y.length > 0 || v.length > 0 || b.length > 0
+      hasActivity: h.length > 0 || y.length > 0 || v.length > 0 || b.length > 0
     }
   }(t), b = k(u.gj8, l, n), _ = 0 === a.length ? null : (0, r.jsxs)("div", {
     className: L.row,
@@ -155,7 +155,7 @@ function U(e) {
       size: "lg",
       color: "currentColor",
       className: L.activityIcon
-    }), (0, r.jsx)(f.ZP, {
+    }), (0, r.jsx)(h.ZP, {
       guildId: n,
       users: a,
       max: 3

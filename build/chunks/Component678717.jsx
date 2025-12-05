@@ -2,7 +2,7 @@
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => I,
-  openDevToolsPopout: () => N
+  openDevToolsPopout: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,13 +27,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk552883 = require("./552883.js"),
   Chunk451429 = require("./451429.js");
 
-function E(e) {
+function N(e) {
   let {
     resizableNode: t,
     onResize: n,
     onResizeEnd: l
   } = e, r = (0, d.Z)({
-    minDimension: g.h,
+    minDimension: b.h,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: l,
@@ -45,7 +45,7 @@ function E(e) {
   })
 }
 
-function N() {
+function E() {
   (0, Chunk788983.open)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk54381.jsx)(Chunk238246.Z, {
     windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
@@ -70,7 +70,7 @@ function O(e) {
     selectedTabId: o
   } = (0, j.ZP)({
     tabs: l,
-    initialSelectedTabId: null != (t = g.Z.lastOpenTabId) ? t : true,
+    initialSelectedTabId: null != (t = b.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
       (0, f.Qh)({
         lastOpenTabId: e
@@ -83,14 +83,14 @@ function O(e) {
     properties: {
       panel: o
     }
-  }), (0, a.jsxs)(b.Gk, {
+  }), (0, a.jsxs)(g.Gk, {
     children: [(0, a.jsxs)(m.ZP, {
       className: S.headerBar,
       toolbar: n ? null : (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(m.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
-          onClick: N
+          onClick: E
         }), (0, a.jsx)(m.ZP.Icon, {
           icon: c.Dio,
           tooltip: y.intl.string(y.t.cpT0Cq),
@@ -103,7 +103,7 @@ function O(e) {
       }), (0, a.jsx)(m.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(r, {}), i(), (0, a.jsx)(b.Br, {
+    }), (0, a.jsx)(r, {}), i(), (0, a.jsx)(g.Br, {
       className: C.layerContainer
     })]
   })
@@ -126,7 +126,7 @@ function T() {
       width: require
     },
     "data-app-right-panel": true,
-    children: [(0, Chunk54381.jsx)(E, {
+    children: [(0, Chunk54381.jsx)(N, {
       resizableNode: module,
       onResize: Chunk120356,
       onResizeEnd: i

@@ -1,7 +1,7 @@
 /** Chunk was on 83615 **/
 /** chunk id: 551097, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,75 +12,68 @@ var Chunk54381 = require("./54381.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
   Chunk49436 = require("./49436.js"),
-  Chunk685138 = require("./685138.js"),
   Chunk387745 = require("./387745.js"),
   Chunk698716 = require("./698716.jsx"),
   Chunk685613 = require("./685613.jsx"),
   Chunk110560 = require("./110560.jsx"),
   Chunk73826 = require("./73826.jsx"),
-  Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk765486 = require("./765486.js");
-let v = (0, Chunk205120.animated)(Chunk685613.ZP),
-  C = e => {
+let b = (0, Chunk205120.animated)(Chunk685613.ZP),
+  j = e => {
     let {
       quest: t,
       expansionSpring: n,
       onCtxMenuSelect: o,
       onCtxMenuOpen: f,
-      onCtxMenuClose: C,
-      useReducedMotion: y,
-      isExpanded: E,
-      isExpansionAnimationComplete: O
-    } = e, S = (0, d.aM)(), {
-      status: T
-    } = (0, p.n)({
-      location: _.dr.QUESTS_BAR,
-      questConfig: t.config
-    }), w = null == T ? true : T.progressBlur, P = s.useCallback(() => {
-      (0, h.openDisclosureModal)(t, {
-        content: u.jn.QUEST_BAR_V2,
+      onCtxMenuClose: j,
+      useReducedMotion: v,
+      isExpanded: C,
+      isExpansionAnimationComplete: y
+    } = e, E = (0, u.aM)(), O = s.useCallback(() => {
+      (0, g.openDisclosureModal)(t, {
+        content: d.jn.QUEST_BAR_V2,
         ctaContent: c.jZ.OPEN_DISCLOSURE,
-        sourceQuestContent: u.jn.QUEST_BAR_V2
+        sourceQuestContent: d.jn.QUEST_BAR_V2
       })
-    }, [t]), N = s.useCallback(() => {
-      (0, m.nc)(t, {
-        content: u.jn.QUEST_BAR_V2,
+    }, [t]), S = s.useCallback(() => {
+      (0, p.nc)(t, {
+        content: d.jn.QUEST_BAR_V2,
         ctaContent: c.jZ.OPEN_GAME_LINK,
-        impressionId: S,
-        sourceQuestContent: u.jn.QUEST_BAR_V2
+        impressionId: E,
+        sourceQuestContent: d.jn.QUEST_BAR_V2
       })
-    }, [S, t]), R = E && O, A = (0, r.jsx)(l.P3F, {
-      onClick: N,
-      className: a()(j.clickable, {
-        [j.logo]: R
+    }, [E, t]), T = C && y, w = (0, r.jsx)(l.P3F, {
+      onClick: S,
+      className: a()(_.clickable, {
+        [_.logo]: T
       }),
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(b, {
         quest: t,
         withGameTile: false,
-        logotypeClassName: j.partnerBranding,
+        logotypeClassName: _.partnerBranding,
         logotypeStyle: {
-          height: w ? 32 : 24,
-          maxWidth: w ? 130 : 92,
+          height: 24,
+          maxWidth: 92,
           transform: (0, i.to)([n.to({
             range: [0, 1],
-            output: [1, w ? .72 : 1]
+            output: [1, 1]
           })], e => "scale(".concat(e, ")"))
         }
       })
     });
     return (0, r.jsxs)(i.animated.div, {
-      className: a()(j.wrapper, j.rewardHighlightWrapper, {
-        [j.interactable]: R
+      className: a()(_.wrapper, _.rewardHighlightWrapper, {
+        [_.interactable]: T
       }),
       style: {
         transform: (0, i.to)([n.to({
           range: [0, 1],
-          output: [w ? 5 : 6, 0]
-        })], e => "translateY(".concat(e, "px"))
+          output: [6, 0]
+        })], e => "translateY(".concat(e, "px)"))
       },
       children: [(0, r.jsx)(i.animated.div, {
-        className: j.opaqueExpandedBackground,
+        className: _.opaqueExpandedBackground,
         style: {
           opacity: n.to({
             range: [0, 1],
@@ -90,11 +83,11 @@ let v = (0, Chunk205120.animated)(Chunk685613.ZP),
       }), (0, r.jsx)(x.Z, {
         quest: t,
         expansionSpring: n,
-        isFullyExpanded: R,
-        partnerBranding: A,
-        useReducedMotion: y
+        isFullyExpanded: T,
+        partnerBranding: w,
+        useReducedMotion: v
       }), (0, r.jsxs)(i.animated.div, {
-        className: j.promotedBadgeWrapper,
+        className: _.promotedBadgeWrapper,
         style: {
           opacity: n.to({
             range: [0, 1],
@@ -102,25 +95,25 @@ let v = (0, Chunk205120.animated)(Chunk685613.ZP),
           })
         },
         children: [(0, r.jsxs)(l.P3F, {
-          className: j.promotedBadge,
-          onClick: P,
+          className: _.promotedBadge,
+          onClick: O,
           children: [(0, r.jsx)(l.Text, {
             color: "always-white",
             variant: "text-xs/normal",
-            children: b.intl.string(b.t.o6FLcF)
+            children: h.intl.string(h.t.o6FLcF)
           }), (0, r.jsx)(l.idN, {
             color: l.TVs.colors.WHITE,
-            className: j.promotedBadgeIcon
+            className: _.promotedBadgeIcon
           })]
-        }), (0, r.jsx)(g.i, {
+        }), (0, r.jsx)(m.i, {
           onOpen: f,
-          onClose: C,
+          onClose: j,
           onSelect: o,
-          questContent: u.jn.QUEST_BAR_V2,
+          questContent: d.jn.QUEST_BAR_V2,
           quest: t,
           shouldShowDisclosure: true,
           showShareLink: true,
-          sourceQuestContent: u.jn.QUEST_BAR_V2,
+          sourceQuestContent: d.jn.QUEST_BAR_V2,
           children: e => {
             var t, n;
             return (0, r.jsx)(l.P3F, (t = function(e) {
@@ -141,12 +134,12 @@ let v = (0, Chunk205120.animated)(Chunk685613.ZP),
               }
               return e
             }({}, e), n = n = {
-              className: j.submenuWrapper,
-              "aria-label": b.intl.string(b.t.DEoVWZ),
+              className: _.submenuWrapper,
+              "aria-label": h.intl.string(h.t.DEoVWZ),
               children: (0, r.jsx)(l.xhG, {
                 size: "md",
                 color: "currentColor",
-                className: a()(j.submenuIcon, j.white)
+                className: a()(_.submenuIcon, _.white)
               })
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);

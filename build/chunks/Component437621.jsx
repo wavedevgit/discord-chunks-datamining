@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 437621, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -96,8 +96,8 @@ class M extends Chunk98597.ZP {
       hasMoreActiveThreads: c,
       mentionCount: u,
       connectChannelDropTarget: d,
-      connectChannelDragSource: f,
-      connectDragPreview: h,
+      connectChannelDragSource: h,
+      connectDragPreview: f,
       canReorderChannel: p,
       isSubscriptionGated: b,
       isFavoriteSuggestion: _,
@@ -281,7 +281,7 @@ function G(e) {
   }), v = (0, a.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: E,
     isSubscriptionGated: S
-  } = (0, b.Z)(t.id), I = (0, a.e7)([C.ZP], () => C.ZP.isFavorite(n.id, t.id)), N = (0, p.$5)(t), Z = (0, f.NX)(t.id), A = (0, P.Z)({
+  } = (0, b.Z)(t.id), I = (0, a.e7)([C.ZP], () => C.ZP.isFavorite(n.id, t.id)), N = (0, p.$5)(t), Z = (0, h.NX)(t.id), A = (0, P.Z)({
     channel: t,
     isChannelCollapsed: false,
     isChannelSelected: s,
@@ -291,7 +291,7 @@ function G(e) {
     muted: o,
     enableActivities: Z,
     resolvedUnreadSetting: g
-  }), R = (0, h.ZP)(t);
+  }), R = (0, f.ZP)(t);
   return (0, r.jsx)(k, L(D({}, d, m, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,

@@ -33,8 +33,8 @@ function p() {
     h = m.useField("includeUserSearchWorkerState"),
     x = m.useField("isUploading"),
     f = m.useField("isSuccess"),
-    g = m.useField("errorMessage"),
-    b = Chunk473749.useCallback(async () => {
+    b = m.useField("errorMessage"),
+    g = Chunk473749.useCallback(async () => {
       let {
         includeFrecency: e,
         includeFriends: t,
@@ -112,8 +112,8 @@ function p() {
     }), (0, Chunk54381.jsx)(Chunk608934.a, {
       isUploading: x,
       isSuccess: f,
-      errorMessage: g,
-      onClick: b,
+      errorMessage: b,
+      onClick: g,
       title: "Upload Snapshot Logs"
     })]
   })

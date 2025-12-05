@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 82409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -117,7 +117,7 @@ function U(e) {
             r = null == (t = n.last()) ? true : t.id,
             i = O.ZP.ackMessageId(e),
             l = n.hasPresent() && n.ready && !n.cached;
-          null != r && null != i && l && v.default.compare(i, r) >= 0 && f.ack(e, {
+          null != r && null != i && l && v.default.compare(i, r) >= 0 && h.ack(e, {
             section: R.jXE.NOTIFICATIONS_INBOX,
             object: R.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
             objectType: R.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -141,7 +141,7 @@ function U(e) {
     }), [K]),
     q = F(Z, c, P),
     Q = F(D, c, null);
-  (0, h.ZP)(() => {
+  (0, f.ZP)(() => {
     var e;
     d.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_OPEN"
@@ -191,7 +191,7 @@ function U(e) {
       track: false,
       viewId: a
     })
-  }), (0, h.zq)(() => {
+  }), (0, f.zq)(() => {
     d.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_CLOSE"
     })

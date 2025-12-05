@@ -18,7 +18,7 @@ var Chunk473749 = require("./473749.js"),
 
 function v(e) {
   let t = function(e) {
-    let t = (0, o.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds);
+    let t = (0, o.FT)(a.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds);
     return (0, i.e7)([c.Z, d.default, s.ZP], () => {
       var t, n;
       if (null === e) returnfalse;
@@ -26,12 +26,12 @@ function v(e) {
       if (true === r || !(0, u.up)(r) || null == r.profile || null === r.profile.tag) returnfalse;
       let i = d.default.getCurrentUser();
       if (true === i || (null == (t = i.primaryGuild) ? true : t.identityGuildId) === r.id && (null == (n = i.primaryGuild) ? true : n.tag) === r.profile.tag) returnfalse;
-      let l = s.ZP.getMember(e, i.id);
-      return null != l && !l.isPending
+      let a = s.ZP.getMember(e, i.id);
+      return null != a && !a.isPending
     }, [e]) && !t
   }(e);
   return ! function(e) {
-    let t = (0, o.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds),
+    let t = (0, o.FT)(a.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds),
       n = (0, i.e7)([p.Z], () => null === e ? null : p.Z.getGuildLastSeenInfo(e)),
       s = (0, i.e7)([d.default], () => {
         var e;
@@ -42,7 +42,7 @@ function v(e) {
         return null == (n = c.Z.getGuild(e)) || null == (t = n.profile) ? true : t.tag
       });
     if (r.useEffect(() => {
-        t && null === n && null != e && null != u && a.Z.dispatch({
+        t && null === n && null != e && null != u && l.Z.dispatch({
           type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
           guildId: e,
           lastSeenInfo: {

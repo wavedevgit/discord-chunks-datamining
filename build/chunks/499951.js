@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 499951, original params: e,t,n (module,exports,require) **/
 module.exports = {
   pill: "pill_c9fddf",

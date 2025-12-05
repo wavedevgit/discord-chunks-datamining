@@ -43,18 +43,18 @@ function f(e, t) {
         }
       }(r);
     return i || o ? r.map(e => !i && o ? {
-      title: e.source === a.lr.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
+      title: e.source === u.lr.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
         username: n
       }) : d.intl.string(d.t.Ig6VDH),
-      renderIcon: e.productLine !== u.POd.COLLECTIBLES ? e.renderIcon : true,
+      renderIcon: e.productLine !== a.POd.COLLECTIBLES ? e.renderIcon : true,
       shouldShow: true
     } : i && !o ? {
-      title: e.productLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
+      title: e.productLine === a.POd.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
       renderIcon: e.renderIcon,
       shouldShow: true
     } : {
-      title: e.productLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
-      body: e.source === a.lr.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
+      title: e.productLine === a.POd.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
+      body: e.source === u.lr.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
         username: n
       }) : d.intl.string(d.t.Ig6VDH),
       renderIcon: e.renderIcon,
@@ -71,8 +71,8 @@ function m(e, t) {
   return n.useMemo(() => new Set(e.map(e => e.skuProductLine)).size > 1 ? e.map(e => {
     let r = t && e.isOwned && null != e.gifterUserId && null != c[e.gifterUserId];
     return {
-      title: e.skuProductLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
-      renderIcon: e.skuProductLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? l.Q : true,
+      title: e.skuProductLine === a.POd.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
+      renderIcon: e.skuProductLine === a.POd.SOCIAL_LAYER_GAME_ITEM ? l.Q : true,
       shouldShow: !r
     }
   }) : e.map(() => ({

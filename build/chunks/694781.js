@@ -1,10 +1,11 @@
-/** Chunk was on 76334 **/
-/** chunk id: 694781, original params: e,i,t (module,exports,require) **/
+/** Chunk was on 29356 **/
+/** chunk id: 694781, original params: e,t,i (module,exports,require) **/
 module.exports = {
   wishlistBanner: "wishlistBanner_b05cb4",
   wishlistBannerHeader: "wishlistBannerHeader_b05cb4",
   wishlistBannerGrid: "wishlistBannerGrid_b05cb4",
   wishlistBannerTitleContainer: "wishlistBannerTitleContainer_b05cb4",
   backgroundImage: "backgroundImage_b05cb4",
-  wishlistBannerListItem: "wishlistBannerListItem_b05cb4"
+  wishlistBannerListItem: "wishlistBannerListItem_b05cb4",
+  bundlePreviewBanner: "bundlePreviewBanner_b05cb4"
 }

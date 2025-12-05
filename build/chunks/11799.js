@@ -1,7 +1,7 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 11799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y6: () => f
+  y6: () => h
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -12,19 +12,19 @@ var Chunk473749 = require("./473749.js"),
   Chunk140155 = require("./140155.js"),
   Chunk774807 = require("./774807.js"),
   Chunk490897 = require("./490897.js");
-let f = () => {
+let h = () => {
   let {
     initialized: e,
     loading: t,
     items: n,
-    hasMore: f,
-    loadMore: h
+    hasMore: h,
+    loadMore: f
   } = (e => {
     let {
       isFocused: t,
       navigatedAway: n,
-      isDesktop: f,
-      withMentions: h = false,
+      isDesktop: h,
+      withMentions: f = false,
       initialPageSize: p
     } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, _] = r.useState(false), {
       initialized: y,
@@ -52,27 +52,27 @@ let f = () => {
     }, [t, y]);
     let I = (0, o.Z)();
     r.useEffect(() => () => {
-      f ? !I() && (C || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
-    }, [n, v, f, I, C]), r.useEffect(() => {
+      h ? !I() && (C || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
+    }, [n, v, h, I, C]), r.useEffect(() => {
       let e = g && t;
       (!y || e) && (0, s.jk)({
-        limit: null != p ? p : h ? 8 : 20,
-        with_mentions: h,
+        limit: null != p ? p : f ? 8 : 20,
+        with_mentions: f,
         roles_filter: E,
         everyone_filter: S
       })
-    }, [y, g, t, h, E, S, p]);
+    }, [y, g, t, f, E, S, p]);
     let P = r.useCallback(async e => {
       !m.current && y && j && null != x && (e || !C) && (m.current = true, _(true), await (0, s.jk)({
         after: x,
-        with_mentions: h,
+        with_mentions: f,
         roles_filter: E,
         everyone_filter: S,
-        limit: h ? 8 : 20
+        limit: f ? 8 : 20
       }, () => {
         m.current = false
       }), _(false))
-    }, [y, j, x, C, h, E, S]);
+    }, [y, j, x, C, f, E, S]);
     return {
       initialized: y,
       loading: O,
@@ -93,7 +93,7 @@ let f = () => {
     initialized: module,
     loading: exports,
     items: require.filter(e => "notification-center-item" === e.kind),
-    hasMore: f,
-    loadMore: h
+    hasMore: h,
+    loadMore: f
   }
 }

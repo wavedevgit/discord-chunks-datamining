@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   u: () => M
@@ -53,10 +53,10 @@ function L(e) {
   let {
     selected: o,
     user: d,
-    badge: h,
+    badge: f,
     link: g,
     showProgressBadge: _
-  } = e, [y, O] = i.useState(false), [v, j] = i.useState(false), [x, C] = i.useState(null), [E, w] = i.useState(0), L = (0, l.Ie)("home"), M = (0, f.oq)().activePanel === f.wh.APP_ICON, k = () => {
+  } = e, [y, O] = i.useState(false), [v, j] = i.useState(false), [x, C] = i.useState(null), [E, w] = i.useState(0), L = (0, l.Ie)("home"), M = (0, h.oq)().activePanel === h.wh.APP_ICON, k = () => {
     C(null), w(0), clearTimeout(x)
   }, G = p.o.useConfig({
     location: "home button"
@@ -72,10 +72,10 @@ function L(e) {
   let F = o || y || M,
     V = (0, r.jsx)(s.aRk, {
       selected: true,
-      lowerBadge: h > 0 ? (0, N.Ne)(h) : null,
+      lowerBadge: f > 0 ? (0, N.Ne)(f) : null,
       upperBadge: B,
       lowerBadgeSize: {
-        width: (0, s.OVM)(h)
+        width: (0, s.OVM)(f)
       },
       children: (0, r.jsx)(s.LYs, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -177,7 +177,7 @@ function M() {
       unviewedDiscountCount: Chunk431.Z.getUnacknowledgedDiscountOffers().length
     })),
     u = Chunk91192.fractionalState === Chunk474936.a$.NONE ? Chunk433517 + Chunk481060 : 0,
-    f = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
+    h = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     p = (0, Chunk899740.q)(),
     m = require + Chunk864682 + Chunk365113,
     b = Chunk460181 === Chunk864682 && Chunk864682 > 0 && require + Chunk365113 === 0,

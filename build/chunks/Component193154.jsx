@@ -1,7 +1,7 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 193154, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk662146 = require("./662146.jsx"),
   Chunk961699 = require("./961699.js");
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,8 +32,8 @@ function f(e) {
   return e
 }
 
-function h(e) {
-  let [t, h] = i.useState(false), p = (0, l.Ie)("guild-".concat(e.id));
+function f(e) {
+  let [t, f] = i.useState(false), p = (0, l.Ie)("guild-".concat(e.id));
   return (0, r.jsx)(c.H, {
     children: (0, r.jsx)(u.Z, {
       text: e.name,
@@ -45,20 +45,20 @@ function h(e) {
           disableColor: true,
           className: d.geoRestrictedBadge
         }),
-        children: (0, r.jsx)(o.LYs, f({
+        children: (0, r.jsx)(o.LYs, h({
           name: e.name,
           onMouseEnter: () => {
-            h(true)
+            f(true)
           },
           onMouseLeave: () => {
-            h(false)
+            f(false)
           },
           onClick: () => {
             (0, o.ZDy)(async () => {
               let {
                 default: t
               } = await n.e("42358").then(n.bind(n, 210995));
-              return n => (0, r.jsx)(t, f({
+              return n => (0, r.jsx)(t, h({
                 name: e.name,
                 guildId: e.id
               }, n))

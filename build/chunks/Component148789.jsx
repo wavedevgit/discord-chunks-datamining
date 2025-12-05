@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 148789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -14,8 +14,8 @@ function c(e) {
   let {
     userId: t,
     applicationId: n
-  } = e, [c, u] = i.useState(false), [d, f] = i.useState(false), h = i.useCallback(async e => {
-    e.stopPropagation(), f(true);
+  } = e, [c, u] = i.useState(false), [d, h] = i.useState(false), f = i.useCallback(async e => {
+    e.stopPropagation(), h(true);
     try {
       await o.Z.cancelFriendRequest({
         userId: t,
@@ -23,7 +23,7 @@ function c(e) {
         location: "ActionButtonFriendRequest"
       })
     } finally {
-      f(false)
+      h(false)
     }
   }, [n, t]), p = i.useCallback(async e => {
     e.stopPropagation(), u(true);
@@ -49,7 +49,7 @@ function c(e) {
         disabled: d
       }), (0, r.jsx)(l.zxk, {
         variant: "secondary",
-        onClick: h,
+        onClick: f,
         text: a.intl.string(a.t.xuio0C),
         loading: d,
         disabled: c

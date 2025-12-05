@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -276,8 +276,8 @@ class U extends(r = Chunk473749.Component) {
           }
           return i
         }(r, ["ref", "role"]);
-        return (0, i.jsx)(f.Wdt, {
-          children: r => (0, i.jsx)(f.aVo, M({
+        return (0, i.jsx)(h.Wdt, {
+          children: r => (0, i.jsx)(h.aVo, M({
             fade: true,
             innerRole: o,
             innerAriaLabel: R.intl.string(R.t.YUU0RF),
@@ -338,7 +338,7 @@ class U extends(r = Chunk473749.Component) {
     }), L(this, "handleScroll", a()(() => {
       if (null != this._list) {
         let e = this._list.getScrollerNode();
-        null != e && h.Z.updateChannelListScroll(A.ME, e.scrollTop)
+        null != e && f.Z.updateChannelListScroll(A.ME, e.scrollTop)
       }
       true !== this.props.onHandleScroll && this.props.onHandleScroll()
     }, 100)), L(this, "renderDM", (e, t) => {
@@ -392,7 +392,7 @@ class U extends(r = Chunk473749.Component) {
           popoutAlign: "left",
           className: D.privateChannelRecipientsInviteButtonIconContainer,
           iconClassName: D.privateChannelRecipientsInviteButtonIcon,
-          icon: f.BRu,
+          icon: h.BRu,
           subscribeToGlobalHotkey: true
         })]
       }, t) : null
@@ -420,18 +420,18 @@ L(U, "defaultProps", {
 let B = e => {
   let {
     density: t
-  } = (0, f.TCT)(), {
+  } = (0, h.TCT)(), {
     version: n,
     theme: r,
     children: o,
     showDMHeader: a,
     listScrollerRef: d,
-    hideAllDMs: h
-  } = e, m = l.Children.count(o), _ = N.Z.getMutablePrivateChannels(), y = h ? {} : (0, S.k1)(_), O = (0, u.Wu)([w.Z, E.Z, I.Z], () => {
+    hideAllDMs: f
+  } = e, m = l.Children.count(o), _ = N.Z.getMutablePrivateChannels(), y = f ? {} : (0, S.k1)(_), O = (0, u.Wu)([w.Z, E.Z, I.Z], () => {
     let e = w.Z.getPrivateChannelIds(),
       t = (0, S.tU)(e, [E.Z, I.Z]);
-    return h ? [] : t
-  }, [h]);
+    return f ? [] : t
+  }, [f]);
   (0, x.z)(j.R);
   let {
     analyticsLocations: C

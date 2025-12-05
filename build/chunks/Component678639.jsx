@@ -21,7 +21,7 @@ function f(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
 }
 
-function g(e) {
+function b(e) {
   let {
     store: t,
     dataGetter: n
@@ -38,7 +38,7 @@ function g(e) {
     })
   })
 }
-let b = [{
+let g = [{
     key: "name",
     cellClassName: Chunk104444.__invalid_eventColumn,
     render(e) {
@@ -61,7 +61,7 @@ let b = [{
         children: ["Store is missing ", (0, a.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
-      }) : (0, a.jsx)(g, {
+      }) : (0, a.jsx)(b, {
         store: t,
         dataGetter: e => e.__getLocalVars()
       })
@@ -74,7 +74,7 @@ let b = [{
       let {
         store: t
       } = e;
-      return (0, a.jsx)(g, {
+      return (0, a.jsx)(b, {
         store: t,
         dataGetter: e => e
       })
@@ -138,7 +138,7 @@ function _() {
         "aria-label": "Search stores"
       })
     }), (0, Chunk54381.jsx)(Chunk681619.Z, {
-      columns: b,
+      columns: g,
       data: Chunk665149,
       selectedRowKey: Chunk428530,
       onClickRow: e => u(e.key)

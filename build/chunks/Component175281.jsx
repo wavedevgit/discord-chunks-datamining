@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 175281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -288,7 +288,7 @@ function A(e) {
   } = e, [l, a] = i.useState(false), [s, c] = i.useState(false), u = i.useMemo(() => __OVERLAY__ ? (0, m.Zg)() : (0, g.Rv)(), []), {
     keyboardModeEnabled: d,
     useReducedMotion: y
-  } = (0, f.cj)([_.Z], () => ({
+  } = (0, h.cj)([_.Z], () => ({
     keyboardModeEnabled: _.Z.keyboardModeEnabled,
     useReducedMotion: _.Z.useReducedMotion
   }));
@@ -303,7 +303,7 @@ function A(e) {
       "aria-label": x.intl.string(x.t.T9DA2K),
       transitionState: t,
       parentComponent: "KeyboardShortcutsModal",
-      children: (0, r.jsx)(h.W, {
+      children: (0, r.jsx)(f.W, {
         component: "div",
         children: l ? (0, r.jsx)(v.Z, {
           handleDemonClose: function() {

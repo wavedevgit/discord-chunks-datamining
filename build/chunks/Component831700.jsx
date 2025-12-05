@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => el
@@ -175,8 +175,8 @@ class er extends Chunk98597.ZP {
       mentionCount: a,
       locked: s,
       sorting: d,
-      isUserOver: f,
-      connectChannelDropTarget: h,
+      isUserOver: h,
+      connectChannelDropTarget: f,
       connectChannelDragSource: p,
       connectUserDropTarget: g,
       connectDragPreview: m,
@@ -306,7 +306,7 @@ class er extends Chunk98597.ZP {
       let {
         channel: t
       } = this.props, i = M.Z.getGuild(t.getGuildId());
-      null != i && (0, f.jW)(e, async () => {
+      null != i && (0, h.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("18320"), n.e("83331"), n.e("81070")]).then(n.bind(n, 213202));
@@ -415,7 +415,7 @@ function el(e) {
   } = e, u = (0, a.cj)([U.ZP], () => ({
     unread: U.ZP.hasUnread(n.id),
     mentionCount: U.ZP.getMentionCount(n.id)
-  })), d = (0, a.e7)([B.ZP], () => B.ZP.resolveUnreadSetting(n)), f = (0, a.cj)([L.Z, k.Z, G.Z], () => {
+  })), d = (0, a.e7)([B.ZP], () => B.ZP.resolveUnreadSetting(n)), h = (0, a.cj)([L.Z, k.Z, G.Z], () => {
     let e = L.Z.getChannel(n.parent_id),
       r = k.Z.getCheck(n.guild_id);
     return {
@@ -426,7 +426,7 @@ function el(e) {
       bypassLimit: G.Z.can(Q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([F.Z], () => F.Z.hasVideo(n.id)), p = (0, g.ZP)(n), m = (0, j.ZP)(n), O = (0, N.qY)(n.id), {
+  }), f = (0, a.e7)([F.Z], () => F.Z.hasVideo(n.id)), p = (0, g.ZP)(n), m = (0, j.ZP)(n), O = (0, N.qY)(n.id), {
     enabled: v
   } = b.W.useExperiment({
     guildId: t.id,
@@ -467,11 +467,11 @@ function el(e) {
     channelName: m,
     embeddedApps: p,
     embeddedActivityType: Q.IIU.PLAYING,
-    video: h,
+    video: f,
     hasActiveEvent: null != O,
     isSubscriptionGated: C,
     needSubscriptionToAccess: S
-  }, u, f, e), {
+  }, u, h, e), {
     connected: A,
     isFavoriteSuggestion: l && !Z,
     forceShowButtons: J,

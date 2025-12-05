@@ -37,7 +37,7 @@ function h() {
   Chunk473749.useEffect(() => {
     if (module) return Chunk823385.Z.addChangeListener(f), () => Chunk823385.Z.removeChangeListener(f)
   }, [f, module]);
-  let g = Chunk473749.useCallback(async () => {
+  let b = Chunk473749.useCallback(async () => {
     let {
       isUploading: e
     } = p.getState();
@@ -79,7 +79,7 @@ function h() {
         isUploading: exports,
         isSuccess: require,
         errorMessage: Chunk972959,
-        onClick: g,
+        onClick: b,
         title: "Upload Session Logs"
       })]
     })]

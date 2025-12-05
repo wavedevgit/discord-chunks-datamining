@@ -4,7 +4,7 @@
 require.d(exports, {
   Q: () => d,
   Z: () => f
-}), require("./415506.js");
+}), require("./539854.js"), require("./388685.js"), require("./415506.js");
 var Chunk979554 = require("./979554.js"),
   Chunk922347 = require("./922347.js"),
   Chunk135483 = require("./135483.js"),
@@ -38,9 +38,18 @@ class f extends Chunk523080.Z {
     return new f(e)
   }
   constructor(e) {
-    super(e), c(this, "collectiblesItem", true), this.skuProductLine = l.POd.COLLECTIBLES;
-    let t = u(e.collectibles_item);
-    if (null == t) throw Error("Collectibles item not found");
-    this.collectiblesItem = t
+    if (super(e), c(this, "collectiblesItem", true), c(this, "bundleItems", true), this.skuProductLine = l.POd.COLLECTIBLES, null != e.bundle_items) {
+      let t = [];
+      for (let n of e.bundle_items) {
+        let e = u(n);
+        null != e && t.push(e)
+      }
+      if (0 === t.length) throw Error("Bundle has no valid items");
+      this.bundleItems = t
+    } else if (null != e.collectibles_item) {
+      let t = u(e.collectibles_item);
+      if (null == t) throw Error("Collectibles item not found");
+      this.collectiblesItem = t
+    } else throw Error("Collectibles wishlist item missing both collectibles_item and bundle_items")
   }
 }

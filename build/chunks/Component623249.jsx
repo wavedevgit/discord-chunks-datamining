@@ -36,19 +36,19 @@ function S(e) {
     transitionState: v,
     onClose: S,
     sourceQuestContent: w
-  } = e, [P, N] = (0, s.useState)(o), R = (0, x.KX)(), A = (0, g.O5)(), B = null == (t = (0, f.WD)()) ? true : t.getId(), k = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), I = (0, C.g2)({
+  } = e, [P, N] = (0, s.useState)(o), R = (0, h.KX)(), A = (0, f.O5)(), B = null == (t = (0, g.WD)()) ? true : t.getId(), k = (0, l.e7)([p.Z], () => p.Z.useReducedMotion), I = (0, C.g2)({
     useReducedMotion: k,
     className: O.colorTransition
-  }), D = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), q = (0, j.Bz)(n), L = (0, l.e7)([m.Z], () => m.Z.getState().theme), Q = (0, d.wj)(L) ? y.BR.DARK : y.BR.LIGHT, {
+  }), D = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), q = (0, j.Bz)(n), Q = (0, l.e7)([m.Z], () => m.Z.getState().theme), L = (0, u.wj)(Q) ? y.BR.DARK : y.BR.LIGHT, {
     startConsoleQuest: V,
     startingConsoleQuest: M
-  } = (0, x.GI)({
+  } = (0, h.GI)({
     questId: n.id,
     beforeRequest: () => {
       I.startAnimation(), A({
         questId: n.id,
-        questContent: h.jn.CONNECTIONS_MODAL,
-        questContentCTA: g.jZ.DEFIBRILLATOR,
+        questContent: x.jn.CONNECTIONS_MODAL,
+        questContentCTA: f.jZ.DEFIBRILLATOR,
         sourceQuestContent: w
       })
     },
@@ -66,8 +66,8 @@ function S(e) {
       onClick: () => void(S(), (0, b.V$)({
         quest: n
       }, {
-        content: h.jn.CONNECTIONS_MODAL,
-        ctaContent: g.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
+        content: x.jn.CONNECTIONS_MODAL,
+        ctaContent: f.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
         impressionId: B,
         sourceQuestContent: w
       })),
@@ -80,16 +80,16 @@ function S(e) {
     children: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: O.contentHeader,
-        children: [(0, r.jsx)(u.Text, {
+        children: [(0, r.jsx)(d.Text, {
           variant: "eyebrow",
           color: "text-default",
           children: E.intl.string(E.t["+/hZM/"])
-        }), (0, r.jsxs)(u.P3F, {
+        }), (0, r.jsxs)(d.P3F, {
           className: a()(O.refreshWrapper, {
             [O.disabled]: M
           }),
           onClick: V,
-          children: [I.render(), (0, r.jsx)(u.Text, {
+          children: [I.render(), (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
             className: O.colorTransition,
@@ -99,12 +99,12 @@ function S(e) {
       }), (0, r.jsxs)("div", {
         className: O.accountsWrapper,
         children: [(0, r.jsx)(T, {
-          icon: (0, r.jsx)(u.pzj, {
+          icon: (0, r.jsx)(d.pzj, {
             size: "sm"
           }),
           text: E.intl.string(E.t.br3uIi)
         }), (0, r.jsx)(T, {
-          icon: (0, r.jsx)(u.iWm, {
+          icon: (0, r.jsx)(d.iWm, {
             size: "sm"
           }),
           text: E.intl.string(E.t.XF4wuA),
@@ -113,10 +113,10 @@ function S(e) {
             "aria-label": n.config.messages.gameTitle,
             __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
               className: O.tooltip,
-              children: [(0, r.jsx)(u.Text, {
+              children: [(0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",
                 children: n.config.messages.gameTitle
-              }), (0, r.jsx)(u.Text, {
+              }), (0, r.jsx)(d.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 children: E.intl.string(E.t.STpNEC)
@@ -125,7 +125,7 @@ function S(e) {
             children: (0, r.jsx)("img", {
               className: O.gameTile,
               alt: n.config.messages.gameTitle,
-              src: (0, _.fh)(n, _.eC.GAME_TILE, Q).url
+              src: (0, _.fh)(n, _.eC.GAME_TILE, L).url
             })
           }) : null
         })]
@@ -140,7 +140,7 @@ function T(e) {
     text: n,
     errors: s = [],
     gameTile: o
-  } = e, i = s.length > 0, l = i ? u._3e : u.B_b;
+  } = e, i = s.length > 0, l = i ? d._3e : d.B_b;
   return (0, r.jsxs)("div", {
     className: O.connectionRow,
     children: [(0, r.jsxs)("div", {
@@ -149,7 +149,7 @@ function T(e) {
       }),
       children: [(0, r.jsxs)("div", {
         className: O.connectionRowHeaderContent,
-        children: [t, (0, r.jsx)(u.Text, {
+        children: [t, (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: "text-default",
           children: n
@@ -169,11 +169,11 @@ function T(e) {
       className: O.errorsContainer,
       children: s.map(e => (0, r.jsxs)("div", {
         className: O.errorRow,
-        children: [(0, r.jsx)(u.aNP, {
+        children: [(0, r.jsx)(d.aNP, {
           size: "sm",
           color: "currentColor",
           className: O.error
-        }), (0, r.jsx)(u.Text, {
+        }), (0, r.jsx)(d.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
           children: e
@@ -184,7 +184,7 @@ function T(e) {
 }
 
 function w(e) {
-  (0, u.ZDy)(async () => {
+  (0, d.ZDy)(async () => {
     let {
       default: t
     } = await Promise.resolve().then(n.bind(n, 623249));
@@ -192,7 +192,7 @@ function w(e) {
       return (0, r.jsx)(v.A, {
         overrideVisibility: true,
         questOrQuests: e.quest,
-        questContent: h.jn.CONNECTIONS_MODAL,
+        questContent: x.jn.CONNECTIONS_MODAL,
         sourceQuestContent: e.sourceQuestContent,
         children: () => (0, r.jsx)(t, function(e) {
           for (var t = 1; t < arguments.length; t++) {

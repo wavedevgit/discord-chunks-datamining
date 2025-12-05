@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 588275, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk674552 = require("./674552.jsx"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t) {
+function f(e, t) {
   (0, l.jW)(e, async () => {
     let {
       default: e
@@ -66,10 +66,10 @@ function p(e) {
     draggable: false,
     selected: n === m,
     preloadOnClick: false,
-    contextMenu: h,
+    contextMenu: f,
     lowerBadge: (null == l ? true : l.applicationStatus) === o.wB.REJECTED ? (0, d.jt)({
       guildJoinRequestStatus: l.applicationStatus
     }) : true,
-    route: f.Z5c.GUILD_MEMBER_VERIFICATION(n)
+    route: h.Z5c.GUILD_MEMBER_VERIFICATION(n)
   })
 }

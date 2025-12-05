@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 474109, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -32,7 +32,7 @@ let O = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, p.x8Z.E3_SERVER
   v = Chunk473749.forwardRef(function(e, t) {
     var n, i;
     let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => O(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
-      h = (0, l.e7)([f.Z], () => f.Z.isFocused()),
+      f = (0, l.e7)([h.Z], () => h.Z.isFocused()),
       p = (0, l.e7)([a.Z], () => a.Z.getExpandedFolders());
     return (0, r.jsx)(o.Z, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -58,7 +58,7 @@ let O = (0, Chunk251625.oH)((e, t, n) => ["null", ...t, ...e, b, p.x8Z.E3_SERVER
       textUnread: g.intl.string(g.t.y2b7CA),
       textMention: g.intl.string(g.t.y2b7CA),
       isMentioned: y,
-      animate: h,
+      animate: f,
       expandedFolders: p
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);

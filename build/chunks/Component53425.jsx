@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 53425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -34,7 +34,7 @@ let g = Chunk473749.memo(function(e) {
     className: p.container,
     children: (0, r.jsxs)("ul", {
       role: "group",
-      "aria-label": h.intl.formatToPlainString(h.t.EiyIi6, {
+      "aria-label": f.intl.formatToPlainString(f.t.EiyIi6, {
         channelName: t.name
       }),
       children: [(0, r.jsx)("div", {
@@ -44,7 +44,7 @@ let g = Chunk473749.memo(function(e) {
         style: {
           bottom: ("cozy" === m ? 28 : 24) + _
         }
-      }), b.map((e, t) => (0, r.jsx)(f.Z, {
+      }), b.map((e, t) => (0, r.jsx)(h.Z, {
         thread: e,
         isSelectedChannel: (null == n ? true : n.id) === e.id,
         isSelectedVoice: i === e.id,

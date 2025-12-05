@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 264233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => _,
@@ -39,14 +39,14 @@ function g() {
       children: [require.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(m, {
           title: Chunk388032.intl.string(Chunk388032.t.yflAJV)
-        }), require.map(e => (0, r.jsx)(f.Z, {
+        }), require.map(e => (0, r.jsx)(h.Z, {
           invite: e,
           expired: false
         }, e.invite_id))]
       }), Chunk392711.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(m, {
           title: Chunk388032.intl.string(Chunk388032.t.f0Ia4V)
-        }), Chunk392711.map(e => (0, r.jsx)(f.Z, {
+        }), Chunk392711.map(e => (0, r.jsx)(h.Z, {
           invite: e,
           expired: true
         }, e.invite_id))]

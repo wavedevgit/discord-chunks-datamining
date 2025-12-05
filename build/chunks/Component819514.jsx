@@ -1,7 +1,7 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 81500 **/
 /** chunk id: 819514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => w
 }), require("./997841.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk864309 = require("./864309.js"),
   Chunk625221 = require("./625221.js");
 
-function E(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,13 +42,13 @@ function S(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,31 +60,31 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class P extends Chunk473749.PureComponent {
+class k extends Chunk473749.PureComponent {
   render() {
     let e, t, {
         report: n,
         resolveFlag: i
       } = this.state,
-      l = this.props,
+      a = this.props,
       {
         channel: o,
-        message: u,
-        showContextMenuHint: d,
-        moderatorReportData: f
+        message: d,
+        showContextMenuHint: u,
+        moderatorReportData: p
       } = Chunk120356,
-      g = function(e, t) {
+      f = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
           var n, r, i = {},
-            l = Object.keys(e);
-          for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            a = Object.keys(e);
+          for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
           return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          var a = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
       }(Chunk120356, ["channel", "message", "showContextMenuHint", "moderatorReportData"]),
@@ -100,8 +100,8 @@ class P extends Chunk473749.PureComponent {
         onChange: this.handleToggleReport
       })
     }));
-    let b = Chunk501517 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
-      _ = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    let g = Chunk501517 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
+      j = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)("div", {
           className: Chunk625221.message,
           children: (0, Chunk54381.jsx)(Chunk294218.Z, {
@@ -117,7 +117,7 @@ class P extends Chunk473749.PureComponent {
       } = Chunk933557;
       return (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {
         value: o.guild_id,
-        children: (0, Chunk54381.jsx)(Chunk793030.Modal, I(S({
+        children: (0, Chunk54381.jsx)(Chunk793030.Modal, Z(S({
           title: Chunk388032.intl.string(Chunk388032.t.MWMcg7),
           subtitle: Chunk699516,
           actions: [{
@@ -156,10 +156,10 @@ class P extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), E(this, "state", {
+    super(...e), P(this, "state", {
       report: false,
       resolveFlag: false
-    }), E(this, "handleDelete", () => {
+    }), P(this, "handleDelete", () => {
       let {
         report: e,
         resolveFlag: t
@@ -168,60 +168,60 @@ class P extends Chunk473749.PureComponent {
         message: r,
         moderatorReportData: i
       } = this.props, {
-        moderatorReportChannelId: l,
+        moderatorReportChannelId: a,
         isFlagResolved: o
       } = null != i ? i : {};
-      e ? (0, g.ak)(r, "message_delete_alert", () => d.Z.deleteMessage(n.id, r.id).then(() => {
-        if (null != l) {
+      e ? (0, f.ak)(r, "message_delete_alert", () => u.Z.deleteMessage(n.id, r.id).then(() => {
+        if (null != a) {
           var e, n;
-          t && !o && m.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !o && m.Z.resolveFlag(a), null == (e = (n = this.props).onClose) || e.call(n)
         }
-      })) : d.Z.deleteMessage(n.id, r.id).then(() => {
-        if (null != l) {
+      })) : u.Z.deleteMessage(n.id, r.id).then(() => {
+        if (null != a) {
           var e, n;
-          t && !o && m.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !o && m.Z.resolveFlag(a), null == (e = (n = this.props).onClose) || e.call(n)
         }
       })
-    }), E(this, "handleDeleteMana", () => {
+    }), P(this, "handleDeleteMana", () => {
       var e, t;
       this.handleDelete(), null == (e = (t = this.props).onClose) || e.call(t)
-    }), E(this, "handleToggleReport", e => {
+    }), P(this, "handleToggleReport", e => {
       this.setState({
         report: e
       })
-    }), E(this, "handleToggleResolveFlag", e => {
+    }), P(this, "handleToggleResolveFlag", e => {
       this.setState({
         resolveFlag: e
       })
     })
   }
 }
-let N = {
+let w = {
   confirmPin: function(e, t) {
     (0, c.h7j)(n => {
-      let i, l = (0, f.F6)(e, _.default, b.Z);
-      return i = e.isPrivate() ? j.intl.string(j.t.hMRngA) : j.intl.formatToPlainString(j.t["3IRluI"], {
-        channelName: l
-      }), (0, r.jsx)(p.Z.Provider, {
+      let i, a = (0, p.F6)(e, j.default, g.Z);
+      return i = e.isPrivate() ? x.intl.string(x.t.hMRngA) : x.intl.formatToPlainString(x.t["3IRluI"], {
+        channelName: a
+      }), (0, r.jsx)(b.Z.Provider, {
         value: e.guild_id,
-        children: (0, r.jsx)(s.Modal, I(S({
-          title: j.intl.string(j.t.bKMaZX),
+        children: (0, r.jsx)(s.Modal, Z(S({
+          title: x.intl.string(x.t.bKMaZX),
           subtitle: i,
           actions: [{
             variant: "secondary",
-            text: j.intl.string(j.t["ETE/oC"]),
+            text: x.intl.string(x.t["ETE/oC"]),
             onClick: n.onClose
           }, {
             variant: "primary",
-            text: j.intl.string(j.t.rOQ5BX),
+            text: x.intl.string(x.t.rOQ5BX),
             onClick: () => {
-              u.Z.pinMessage(e, t.id), n.onClose()
+              d.Z.pinMessage(e, t.id), n.onClose()
             }
           }]
         }, n), {
           children: (0, r.jsx)("div", {
             className: C.message,
-            children: (0, r.jsx)(O.Z, {
+            children: (0, r.jsx)(_.Z, {
               channel: e,
               message: t,
               animateAvatar: false,
@@ -233,32 +233,32 @@ let N = {
     })
   },
   confirmUnpin: function(e, t) {
-    (0, c.h7j)(n => (0, r.jsx)(p.Z.Provider, {
+    (0, c.h7j)(n => (0, r.jsx)(b.Z.Provider, {
       value: e.guild_id,
-      children: (0, r.jsxs)(s.Modal, I(S({
-        title: j.intl.string(j.t.CFF2vL),
-        subtitle: j.intl.string(j.t.NjEPp7),
+      children: (0, r.jsxs)(s.Modal, Z(S({
+        title: x.intl.string(x.t.CFF2vL),
+        subtitle: x.intl.string(x.t.NjEPp7),
         actions: [{
           variant: "secondary",
-          text: j.intl.string(j.t["ETE/oC"]),
+          text: x.intl.string(x.t["ETE/oC"]),
           onClick: n.onClose
         }, {
           variant: "critical-primary",
-          text: j.intl.string(j.t.lAU5jB),
+          text: x.intl.string(x.t.lAU5jB),
           onClick: () => {
-            u.Z.unpinMessage(e, t.id), n.onClose()
+            d.Z.unpinMessage(e, t.id), n.onClose()
           }
         }]
       }, n), {
         children: [(0, r.jsx)("div", {
           className: o()(C.message, C.spacing),
-          children: (0, r.jsx)(O.Z, {
+          children: (0, r.jsx)(_.Z, {
             channel: e,
             message: t,
             disableInteraction: true
           })
         }), (0, r.jsx)(h.Z, {
-          children: j.intl.format(j.t.oCVB3Y, {})
+          children: x.intl.format(x.t.oCVB3Y, {})
         })]
       }))
     }))
@@ -266,32 +266,32 @@ let N = {
   confirmDelete: function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : true;
-    (0, c.h7j)(l => (0, r.jsx)(P, S({
+    (0, c.h7j)(a => (0, r.jsx)(k, S({
       channel: e,
       message: t,
       showContextMenuHint: n,
       moderatorReportData: i
-    }, l)))
+    }, a)))
   },
   confirmEdit: function(e, t, n) {
-    (0, c.h7j)(i => (0, r.jsx)(s.Modal, I(S({
-      title: j.intl.string(j.t.aIz1oV),
+    (0, c.h7j)(i => (0, r.jsx)(s.Modal, Z(S({
+      title: x.intl.string(x.t.aIz1oV),
       actions: [{
         variant: "secondary",
-        text: j.intl.string(j.t["ETE/oC"]),
+        text: x.intl.string(x.t["ETE/oC"]),
         onClick: i.onClose
       }, {
         variant: "primary",
-        text: j.intl.string(j.t["cY+Oob"]),
+        text: x.intl.string(x.t["cY+Oob"]),
         onClick: () => {
-          d.Z.editMessage(e, t, n), i.onClose()
+          u.Z.editMessage(e, t, n), i.onClose()
         }
       }]
     }, i), {
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         className: C.spacing,
-        children: j.intl.string(j.t.grBcM8)
+        children: x.intl.string(x.t.grBcM8)
       })
     })))
   }

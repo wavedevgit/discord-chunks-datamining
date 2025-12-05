@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 830993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -33,7 +33,7 @@ function P(e) {
   var t, l;
   let {
     channel: o,
-    guild: h,
+    guild: f,
     onAction: p,
     voiceStates: g,
     isChannelSelected: b,
@@ -57,7 +57,7 @@ function P(e) {
       let e = {};
       return I.forEach(t => {
         let n = m.Z.findActivity(t.user.id, e => [C.IIU.PLAYING, C.IIU.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) && (null == e.session_id || e.session_id === t.voiceState.sessionId) || e.type === C.IIU.LISTENING);
-        if (null != n && !(0, f.Z)(n)) {
+        if (null != n && !(0, h.Z)(n)) {
           var r, i, l, o;
           let a = "".concat(null != (i = n.application_id) ? i : "", ":").concat(null != (l = null == (r = n.party) ? true : r.id) ? l : t.user.id),
             s = null != (o = e[a]) ? o : {
@@ -129,7 +129,7 @@ function P(e) {
                     }
                     return e
                   }({}, t), i = i = {
-                    guild: h
+                    guild: f
                   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
@@ -161,7 +161,7 @@ function N(e) {
     video: s,
     selected: n
   }), u = (0, a.e7)([p.Z], () => p.Z.getGuild(t.guild_id));
-  return null == (0, h.KS)(t, u) ? null : (0, r.jsxs)("div", {
+  return null == (0, f.KS)(t, u) ? null : (0, r.jsxs)("div", {
     className: o()(S.popoutHeaderContainer, I.popoutHeaderContainer),
     children: [(0, r.jsx)(v.Z, {
       channel: t

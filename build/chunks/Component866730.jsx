@@ -62,7 +62,7 @@ function x() {
         dismissibleContent: n
       }
     }),
-    g = Array.from(exports.keys()).map(e => ({
+    b = Array.from(exports.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
@@ -79,7 +79,7 @@ function x() {
       children: (0, Chunk54381.jsx)(Chunk681619.Z, {
         className: Chunk607669.candidatesTable,
         columns: h,
-        data: g
+        data: b
       })
     }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)(Chunk681619.Z, {
       columns: p,

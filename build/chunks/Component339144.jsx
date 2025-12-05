@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => D,
@@ -41,13 +41,13 @@ function R(e, t, n) {
   if (null != n) return n.applicationId === e.id;
   if (null != t) {
     var r;
-    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === Z.IIU.PLAYING && (0, h.Z)(t, Z.xjy.JOIN)
+    return (t.application_id === e.id || (null == (r = e.linkedGames) ? true : r.some(e => e.id === t.application_id))) && t.type === Z.IIU.PLAYING && (0, f.Z)(t, Z.xjy.JOIN)
   }
   returnfalse
 }
 let D = Chunk473749.memo(function(e) {
     var t, l;
-    let a, s, h, y, {
+    let a, s, f, y, {
         stream: C,
         canGoLive: E,
         guildId: w,
@@ -160,28 +160,28 @@ let D = Chunk473749.memo(function(e) {
         guildId: ee,
         applicationId: H.id
       }),
-      ed = (null != U || null == B || (0, f.R)()) && (D || E) ? (D ? (a = false, s = () => {
+      ed = (null != U || null == B || (0, h.R)()) && (D || E) ? (D ? (a = false, s = () => {
         el(), (0, b.v)($, b.d.STREAM, false)
-      }, h = u.g5r, y = T.intl.string(T.t.S5anIc)) : G ? (a = false, s = () => {
+      }, f = u.g5r, y = T.intl.string(T.t.S5anIc)) : G ? (a = false, s = () => {
         eo(), (0, b.v)($, b.d.STREAM, true)
-      }, h = u.hGI, y = null != U ? T.intl.formatToPlainString(T.t.AB5gTy, {
+      }, f = u.hGI, y = null != U ? T.intl.formatToPlainString(T.t.AB5gTy, {
         game: U.name
-      }) : T.intl.string(T.t.FeUKeA)) : (a = true, s = null, h = u.hGI, y = null != k && (0, S.vd)(k.type) ? T.intl.string(T.t.uQn9B8) : null != w ? T.intl.string(T.t.fBXEoJ) : T.intl.string(T.t.n3feNG)), (0, r.jsx)("div", {
+      }) : T.intl.string(T.t.FeUKeA)) : (a = true, s = null, f = u.hGI, y = null != k && (0, S.vd)(k.type) ? T.intl.string(T.t.uQn9B8) : null != w ? T.intl.string(T.t.fBXEoJ) : T.intl.string(T.t.n3feNG)), (0, r.jsx)("div", {
         className: A.panelButtonContainer,
         children: (0, r.jsx)(N.Z, {
           tooltipText: y,
           disabled: a,
           onClick: s,
-          icon: h
+          icon: f
         })
       })) : null,
-      ef = et && null == B ? (0, r.jsx)(N.Z, {
+      eh = et && null == B ? (0, r.jsx)(N.Z, {
         ref: W,
         tooltipText: T.intl.string(T.t["hC/Zey"]),
         onClick: en,
         icon: u.ejJ
       }) : null,
-      eh = null == B ? null : (0, r.jsx)(N.Z, {
+      ef = null == B ? null : (0, r.jsx)(N.Z, {
         tooltipText: T.intl.string(T.t["R/FK4A"]),
         onClick: er(B.applicationId, B.location),
         icon: u.PBZ
@@ -216,9 +216,9 @@ let D = Chunk473749.memo(function(e) {
           ec(false), null != ea.current && (clearTimeout(ea.current), ea.current = null)
         }
       });
-    return null == ed && null == ef && null == eh && null == ep && null == em && null == eu ? null : (0, r.jsxs)("div", {
+    return null == ed && null == eh && null == ef && null == ep && null == em && null == eu ? null : (0, r.jsxs)("div", {
       className: A.actions,
-      children: [null != (t = null != eu ? eu : em) ? t : ef, ed, null != (l = null != eh ? eh : ep) ? l : eg, eb]
+      children: [null != (t = null != eu ? eu : em) ? t : eh, ed, null != (l = null != ef ? ef : ep) ? l : eg, eb]
     })
   }),
   L = Chunk473749.forwardRef(function(e, t) {
@@ -260,23 +260,23 @@ function M(e) {
     (0, C.default)({
       guildId: n
     }), a(w.L.USER_DISMISS)
-  }, [n, a]), f = i.useCallback(() => {
+  }, [n, a]), h = i.useCallback(() => {
     P.default.track(Z.rMx.RTC_GAME_SHOP_BUTTON_CLICKED, {
       application_id: t
     }), d()
-  }, [t, d]), h = i.useCallback(() => {
+  }, [t, d]), f = i.useCallback(() => {
     a(w.L.USER_DISMISS)
   }, [a]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(N.Z, {
       tooltipText: T.intl.string(T.t.vyaWs7),
-      onClick: f,
+      onClick: h,
       onMouseDown: c,
       icon: u.EOn,
       ref: l
     }), o === s.z.GAME_SHOP_RTC_POPOVER ? (0, r.jsx)(E.Z, {
       onActionClick: d,
-      onRequestClose: h,
+      onRequestClose: f,
       targetElementRef: l,
       position: "top",
       align: "center",

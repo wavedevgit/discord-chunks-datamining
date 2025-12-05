@@ -25,34 +25,34 @@ function b(e) {
   let {
     quest: o,
     className: l,
-    questContent: u,
+    questContent: d,
     contentPosition: b,
     rowIndex: j,
     impressionRef: v,
     sourceQuestContent: C
-  } = e, [y, E] = s.useState(false), [O, S] = s.useState([]), T = (0, c.qb)(o), w = s.useMemo(() => (0, d.q8)(o), [o]), P = (0, i._F)(), N = s.useCallback(() => {
+  } = e, [y, E] = s.useState(false), [O, S] = s.useState([]), T = (0, c.qb)(o), w = s.useMemo(() => (0, u.q8)(o), [o]), P = (0, i._F)(), N = s.useCallback(() => {
     E(true), P({
       questId: o.id,
-      event: x.rMx.QUEST_HOVER,
+      event: h.rMx.QUEST_HOVER,
       properties: {
-        content_id: u,
-        content_name: (0, i._b)(u),
+        content_id: d,
+        content_name: (0, i._b)(d),
         content_position: b
       },
       sourceQuestContent: C
     }), w && (0, p.loadVideoQuestModal)()
-  }, [P, o.id, u, w, C, b]), R = s.useCallback(() => {
+  }, [P, o.id, d, w, C, b]), R = s.useCallback(() => {
     E(false), P({
       questId: o.id,
-      event: x.rMx.QUEST_HOVER_OFF,
+      event: h.rMx.QUEST_HOVER_OFF,
       properties: {
-        content_id: u,
-        content_name: (0, i._b)(u),
+        content_id: d,
+        content_name: (0, i._b)(d),
         content_position: b
       },
       sourceQuestContent: C
     })
-  }, [P, o.id, u, C, b]), A = s.useContext(g.t), {
+  }, [P, o.id, d, C, b]), A = s.useContext(f.t), {
     visibilityElementRef: B,
     almostVisibleInViewport: k
   } = function(e) {
@@ -78,16 +78,16 @@ function b(e) {
     onMouseLeave: R,
     onFocus: N,
     onBlur: R,
-    children: [(0, r.jsx)(f.Z, {
+    children: [(0, r.jsx)(g.Z, {
       quest: o,
       isHovering: y,
       errorHints: O,
       warningHints: T,
       isVisibleInViewport: k,
       sourceQuestContent: C
-    }), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)(x.Z, {
       quest: o,
-      questContent: u,
+      questContent: d,
       isHovering: y,
       contentPosition: b,
       rowIndex: j,
@@ -99,7 +99,7 @@ function b(e) {
 }
 
 function j(e) {
-  return (0, r.jsx)(u.A, {
+  return (0, r.jsx)(d.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,
     questContentPosition: e.contentPosition,

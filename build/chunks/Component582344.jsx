@@ -24,10 +24,10 @@ function h() {
     dailyCapReached: Chunk68985.Z.hasUserHitDCCap(),
     dailyCapOverridden: Chunk68985.Z.dailyCapOverridden,
     newUserMinAgeRequiredOverridden: Chunk68985.Z.newUserMinAgeRequiredOverridden
-  })), [h, x] = Chunk473749.useState(""), [f, g] = Chunk473749.useState(20), b = Chunk473749.useMemo(() => Object.keys(Chunk704215.z).filter(e => e.toLowerCase().includes(h.toLowerCase())).reverse(), [h]), v = Chunk473749.useCallback(e => {
+  })), [h, x] = Chunk473749.useState(""), [f, b] = Chunk473749.useState(20), g = Chunk473749.useMemo(() => Object.keys(Chunk704215.z).filter(e => e.toLowerCase().includes(h.toLowerCase())).reverse(), [h]), v = Chunk473749.useCallback(e => {
     let t = e.currentTarget;
-    t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && f < b.length && g(e => e + 100)
-  }, [f, b.length]);
+    t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && f < g.length && b(e => e + 100)
+  }, [f, g.length]);
   return (0, Chunk54381.jsx)(Chunk481060.h21, {
     onScroll: v,
     children: (0, Chunk54381.jsxs)("div", {
@@ -63,7 +63,7 @@ function h() {
           onChange: x,
           onClear: () => x("")
         }), (0, Chunk54381.jsx)(Chunk699867.Z, {
-          items: b.slice(0, f)
+          items: g.slice(0, f)
         })]
       })]
     })

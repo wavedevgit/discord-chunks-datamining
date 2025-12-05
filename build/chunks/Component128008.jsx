@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 128008, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h6: () => _,
@@ -34,11 +34,11 @@ function _(e) {
   } = e, {
     unreadRecentMentionsCount: n,
     unreadChannelIds: l
-  } = (0, f.O4)(), d = function() {
+  } = (0, h.O4)(), d = function() {
     let e = function() {
         let {
           unreadRecentMentionsCount: e
-        } = (0, f.O4)(), {
+        } = (0, h.O4)(), {
           hasMoreMentions: t,
           mentionsLoading: n
         } = (0, a.cj)([c.ZP], () => ({
@@ -75,7 +75,7 @@ function _(e) {
       }
     }), [n, e.width])
   }(), {
-    entrypoint: h
+    entrypoint: f
   } = (0, u.pN)({
     location: "useInboxBadgeInfo"
   });
@@ -86,7 +86,7 @@ function _(e) {
       badge: null,
       badgeType: null
     };
-    if (h === u.u3.SERVER_RAIL_TOP) {
+    if (f === u.u3.SERVER_RAIL_TOP) {
       let n = (0, s.OVM)(e) - 3;
       return {
         badge: function(e, t) {
@@ -112,7 +112,7 @@ function _(e) {
         }
       }
     }
-    return h === u.u3.TITLE_BAR_LEFT ? {
+    return f === u.u3.TITLE_BAR_LEFT ? {
       badge: (0, r.jsx)(s.Text, {
         variant: "eyebrow",
         children: (0, s.NGo)(e)
@@ -122,5 +122,5 @@ function _(e) {
       badge: null,
       badgeType: null
     }
-  }, [n, d, l.length, h, t])
+  }, [n, d, l.length, f, t])
 }

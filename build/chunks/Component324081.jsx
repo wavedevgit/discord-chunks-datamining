@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -44,7 +44,7 @@ function P(e) {
     mentionCount: s,
     channelState: u,
     toggleCollapsed: d
-  } = e, f = (0, o.JA)("recents-header-".concat(i.id, "-").concat((0, b.Dt)()));
+  } = e, h = (0, o.JA)("recents-header-".concat(i.id, "-").concat((0, b.Dt)()));
   return (0, r.jsx)(c.tEY, {
     offset: I,
     children: (0, r.jsxs)("div", (t = function(e) {
@@ -66,7 +66,7 @@ function P(e) {
       return e
     }({
       className: S.channelHeader
-    }, f), n = n = {
+    }, h), n = n = {
       tabIndex: 0,
       "data-recents-channel": i.id,
       onKeyDown: function(e) {
@@ -145,7 +145,7 @@ function T(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), u = (0, a.e7)([O.Z], () => O.Z.getChannel(t.parent_id)), d = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), f = (0, m.KS)(t, o), h = (0, g.ZP)(t, false), p = null == u ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(u.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
+  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), u = (0, a.e7)([O.Z], () => O.Z.getChannel(t.parent_id)), d = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), h = (0, m.KS)(t, o), f = (0, g.ZP)(t, false), p = null == u ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(u.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(A, {
     channel: t
@@ -162,7 +162,7 @@ function T(e) {
       children: (0, r.jsxs)(c.P3F, {
         className: S.channelName,
         onClick: n,
-        children: [t.isThread() || t.isGroupDM() || null == f ? null : (0, r.jsx)(f, {
+        children: [t.isThread() || t.isGroupDM() || null == h ? null : (0, r.jsx)(h, {
           className: t.isForumLikeChannel() ? S.forumIcon : true,
           width: 18,
           height: 18,
@@ -170,7 +170,7 @@ function T(e) {
           color: "currentColor"
         }), (0, r.jsx)("span", {
           className: S.channelNameSpan,
-          children: h
+          children: f
         }), null != i && i > 0 ? (0, r.jsx)("div", {
           className: S.badge,
           children: (0, r.jsx)(c.mAB, {
@@ -210,7 +210,7 @@ function A(e) {
     location: "RecentsChannelHeader"
   }), {
     voiceChannel: c
-  } = (0, f.Z)({
+  } = (0, h.Z)({
     userId: null == n ? true : n.id
   }), p = s ? c : true;
   return (0, d.Z)({
@@ -218,7 +218,7 @@ function A(e) {
     status: i,
     applicationStream: o,
     voiceChannel: p
-  }) ? (0, r.jsx)(h.Z, {
+  }) ? (0, r.jsx)(f.Z, {
     location: "RecentsChannelHeader",
     user: n,
     activities: l,

@@ -1,7 +1,7 @@
 /** Chunk was on 83615 **/
 /** chunk id: 800926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,11 +16,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk26275 = require("./26275.jsx"),
   Chunk945165 = require("./945165.js"),
   Chunk504350 = require("./504350.js");
-let h = Chunk473749.forwardRef(function(e, t) {
+let x = Chunk473749.forwardRef(function(e, t) {
   var n, o;
   let {
-    className: h,
-    expansionSpring: x,
+    className: x,
+    expansionSpring: h,
     isExpanded: _,
     isExpansionAnimationComplete: b,
     quest: j,
@@ -32,8 +32,8 @@ let h = Chunk473749.forwardRef(function(e, t) {
     overlayRef: S
   } = e, T = (null == (n = j.userStatus) ? true : n.completedAt) != null, w = (0, c.Jf)(j), P = s.useRef(null), N = (null == (o = j.userStatus) ? true : o.enrolledAt) != null, R = null != w ? w.percentComplete : v.percentComplete, [A, B] = s.useState(false);
   return (0, r.jsxs)(r.Fragment, {
-    children: [T && (0, r.jsx)(u.Z, {
-      expansionSpring: x,
+    children: [T && (0, r.jsx)(d.Z, {
+      expansionSpring: h,
       overlayRef: S,
       progressBarRef: P,
       quest: j,
@@ -42,21 +42,21 @@ let h = Chunk473749.forwardRef(function(e, t) {
     }), (0, r.jsx)(i.animated.div, {
       ref: t,
       "aria-hidden": _ && b,
-      className: a()(h, f.contentCollapsed, {
-        [f.contentCollapsedExpanded]: _,
-        [f.contentCollapsedAccepted]: N
+      className: a()(x, g.contentCollapsed, {
+        [g.contentCollapsedExpanded]: _,
+        [g.contentCollapsedAccepted]: N
       }),
       style: {
-        opacity: x.to({
+        opacity: h.to({
           range: [0, 1],
           output: [1, 0]
         }),
-        backgroundImage: T ? "linear-gradient(90deg, ".concat(g.cd, ", ").concat(g.v$, ")") : true
+        backgroundImage: T ? "linear-gradient(90deg, ".concat(f.cd, ", ").concat(f.v$, ")") : true
       },
       onMouseEnter: () => B(true),
       onMouseLeave: () => B(false),
       children: (0, r.jsxs)("div", {
-        className: f.contentCollapsedWrapper,
+        className: g.contentCollapsedWrapper,
         children: [T && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(m.Z, {
             quest: j,
@@ -64,7 +64,7 @@ let h = Chunk473749.forwardRef(function(e, t) {
             onCtxMenuClose: E,
             onCtxMenuSelect: O
           }), (0, r.jsx)("div", {
-            className: f.divider
+            className: g.divider
           })]
         }), N ? (0, r.jsx)(p.Z, {
           contentLocation: "collapsed",
@@ -72,7 +72,7 @@ let h = Chunk473749.forwardRef(function(e, t) {
           progressBarRef: P,
           isExpanded: false,
           percentComplete: R
-        }) : null, T && (0, r.jsx)(d.r, {
+        }) : null, T && (0, r.jsx)(u.r, {
           quest: j,
           useReducedMotion: C,
           isExpanded: false,

@@ -1,5 +1,5 @@
-/** Chunk was on 83037 **/
-/** chunk id: 525302, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 84608 **/
+/** chunk id: 525302, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Q: () => c
 });
@@ -12,7 +12,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk701488 = require("./701488.js");
 
 function c(e) {
-  return (0, r.jsx)(d, {
+  return (0, i.jsx)(d, {
     wishlistItem: e
   })
 }
@@ -20,11 +20,11 @@ function c(e) {
 function u(e) {
   let {
     application: t
-  } = e, n = null != t ? t.getIconURL(s.Si.SMALL) : true;
-  return null != n ? (0, r.jsx)("img", {
-    src: n,
+  } = e, r = null != t ? t.getIconURL(o.Si.SMALL) : true;
+  return null != r ? (0, i.jsx)("img", {
+    src: r,
     alt: null == t ? true : t.name
-  }) : (0, r.jsx)(i.EOn, {
+  }) : (0, i.jsx)(n.EOn, {
     color: "currentColor",
     size: "xs"
   })
@@ -33,8 +33,8 @@ function u(e) {
 function d(e) {
   let {
     wishlistItem: t
-  } = e, n = (0, l.e7)([o.Z], () => (0, a.F)(t) ? o.Z.getApplication(t.sku.applicationId) : true);
-  return (0, r.jsx)(u, {
-    application: n
+  } = e, r = (0, a.e7)([s.Z], () => (0, l.F)(t) ? s.Z.getApplication(t.sku.applicationId) : true);
+  return (0, i.jsx)(u, {
+    application: r
   })
 }

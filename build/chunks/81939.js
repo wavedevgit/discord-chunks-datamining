@@ -1,8 +1,8 @@
-/** Chunk was on 76334 **/
-/** chunk id: 81939, original params: e,i,t (module,exports,require) **/
+/** Chunk was on 34740 **/
+/** chunk id: 81939, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => c,
-  Z: () => d
+  Z: () => u
 }), require("./361932.js"), require("./187205.js"), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -12,33 +12,33 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 let c = 6;
 
-function d(e) {
+function u(e) {
   let {
-    guildId: i,
-    numWishlistItems: t = c
-  } = e, d = (0, s.Z)({
-    guildId: i,
+    guildId: t,
+    numWishlistItems: n = c
+  } = e, u = (0, o.Z)({
+    guildId: t,
     location: "Wishlist Items for Social Layer Storefront"
-  }), u = n.useMemo(() => {
-    if (null == d || null == d.storefront || "loading" === d.state || "partially-fetched" === d.state) return [];
-    let e = d.storefront.pages.flatMap(e => {
-        var i, t;
-        return [...e.skuIds, ...null != (t = null == (i = e.sections) ? true : i.flatMap(e => e.skuIds)) ? t : []]
+  }), d = i.useMemo(() => {
+    if (null == u || null == u.storefront || "loading" === u.state || "partially-fetched" === u.state) return [];
+    let e = u.storefront.pages.flatMap(e => {
+        var t, n;
+        return [...e.skuIds, ...null != (n = null == (t = e.sections) ? true : t.flatMap(e => e.skuIds)) ? n : []]
       }),
-      i = [],
-      n = new Set;
+      t = [],
+      i = new Set;
     for (let r of e)
-      if (!n.has(r) && (i.push(r), n.add(r), i.length >= t)) break;
-    return i
-  }, [d, t]), m = (0, r.Wu)([l.Z], () => u.map(e => l.Z.get(e)).filter(e => null != e), [u]), _ = n.useMemo(() => m.map(e => new a.Z({
+      if (!i.has(r) && (t.push(r), i.add(r), t.length >= n)) break;
+    return t
+  }, [u, n]), p = (0, r.Wu)([a.Z], () => d.map(e => a.Z.get(e)).filter(e => null != e), [d]), h = i.useMemo(() => p.map(e => new l.Z({
     sku_id: e.id,
-    sku_product_line: o.POd.SOCIAL_LAYER_GAME_ITEM,
+    sku_product_line: s.POd.SOCIAL_LAYER_GAME_ITEM,
     sku_name: e.name,
     sku: e
-  })), [m]);
+  })), [p]);
   return {
-    loading: (null == d ? true : d.state) === "loading",
-    wishlistItems: _,
-    wishlistItemSkuIds: u
+    loading: (null == u ? true : u.state) === "loading",
+    wishlistItems: h,
+    wishlistItemSkuIds: d
   }
 }

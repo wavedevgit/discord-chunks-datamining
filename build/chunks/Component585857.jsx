@@ -1,7 +1,7 @@
 /** Chunk was on 83615 **/
 /** chunk id: 585857, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => g
+  Q: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,16 +18,16 @@ function p(e) {
   let {
     text: t,
     quest: n,
-    sourceQuestContent: d
+    sourceQuestContent: u
   } = e, p = (0, i.O5)();
   return (0, r.jsx)(s.P3F, {
-    className: u.showConnectionsButton,
+    className: d.showConnectionsButton,
     onClick: () => {
       p({
         questId: n.id,
         questContent: l.jn.QUEST_BAR_V2,
         questContentCTA: i.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-        sourceQuestContent: d
+        sourceQuestContent: u
       }), (0, a.openUserSettings)(o.n.CONNECTIONS_PANEL, {
         section: c.oAB.CONNECTIONS
       })
@@ -48,18 +48,18 @@ function m(e) {
     sourceQuestContent: s
   } = e;
   return t.length > 0 ? (0, r.jsx)(p, {
-    text: d.intl.string(d.t["qiS+xj"]),
+    text: u.intl.string(u.t["qiS+xj"]),
     quest: n,
     sourceQuestContent: s
   }) : null
 }
 
-function g(e) {
+function f(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Text, {
       color: "text-muted",
       variant: "text-xs/medium",
-      children: d.intl.string(d.t.EJFSvD)
+      children: u.intl.string(u.t.EJFSvD)
     }), (0, r.jsx)(m, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

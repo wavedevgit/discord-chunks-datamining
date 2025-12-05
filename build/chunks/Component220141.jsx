@@ -36,7 +36,7 @@ function p(e) {
     }(e, ["handleOpenUserProfileModal", "markAsDismissed"]);
   let {
     trackUserProfileEditAction: f
-  } = (0, i.KZ)(), g = c.rR.filter(e => s.Ki.includes(e)), b = l.useCallback(() => {
+  } = (0, i.KZ)(), b = c.rR.filter(e => s.Ki.includes(e)), g = l.useCallback(() => {
     h(d.L.TAKE_ACTION), f({
       action: "PRESS_ADD_WIDGET"
     }), p()
@@ -66,10 +66,10 @@ function p(e) {
     children: (0, a.jsx)("ul", {
       "aria-label": u.intl.string(u.t["+EIBSA"]),
       className: m.options,
-      children: g.map(e => (0, a.jsx)(o.Z, {
+      children: b.map(e => (0, a.jsx)(o.Z, {
         widgetType: e,
         size: "medium",
-        onAddWidget: b,
+        onAddWidget: g,
         trackUserProfileEditAction: f
       }, e))
     })

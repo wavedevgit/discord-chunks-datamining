@@ -50,9 +50,9 @@ let m = () => {
       className: t,
       onDrop: n,
       children: r
-    } = e, [h, x] = l.useState(false), f = l.useRef(null), g = l.useCallback(e => {
+    } = e, [h, x] = l.useState(false), f = l.useRef(null), b = l.useCallback(e => {
       p(e), x(true), (0, s.Mr3)(c.A)
-    }, []), b = l.useCallback(e => {
+    }, []), g = l.useCallback(e => {
       p(e);
       let t = f.current,
         n = e.relatedTarget;
@@ -70,9 +70,9 @@ let m = () => {
     return (0, a.jsxs)("div", {
       ref: f,
       className: i()(t, u.wrapper),
-      onDragEnter: g,
+      onDragEnter: b,
       onDragOver: p,
-      onDragLeave: b,
+      onDragLeave: g,
       onDrop: v,
       children: [r, h && (0, a.jsx)("div", {
         className: u.uploadModal,

@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 915885, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -28,7 +28,7 @@ function _(e) {
     _ && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
       status: d.wB.SUBMITTED,
-      limit: f.p
+      limit: h.p
     })
   }, [_, t]);
   let v = i.useCallback(() => {
@@ -37,7 +37,7 @@ function _(e) {
     j = (0, s.XL)(t.id, o.z.MEMBERS_LAUNCH_UPSELL);
   return (0, r.jsx)("div", {
     ref: j,
-    children: (0, r.jsx)(h.m, {
+    children: (0, r.jsx)(f.m, {
       id: "members-".concat(t.id),
       renderIcon: e => (0, r.jsx)(a.BFJ, {
         size: "md",

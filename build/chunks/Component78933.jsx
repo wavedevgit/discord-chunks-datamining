@@ -97,15 +97,15 @@ function eo(e) {
     userId: t.id,
     guildId: eu
   }), {
-    ref: eg,
-    height: eb
+    ref: eb,
+    height: eg
   } = (0, d.ZP)(), {
     isHoveringOrFocusing: ev,
     isHovering: ej
-  } = (0, p.Z)(eg);
+  } = (0, p.Z)(eb);
   l.useEffect(() => {
-    null == eo || eo(eg.current)
-  }, [eg, eo]), l.useEffect(() => (W.Z.setState({
+    null == eo || eo(eb.current)
+  }, [eb, eo]), l.useEffect(() => (W.Z.setState({
     isOpen: true
   }), () => W.Z.setState({
     isOpen: false
@@ -114,8 +114,8 @@ function eo(e) {
     ey = B.Cr.useSetting(),
     eC = (0, $.F)(ey),
     eS = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
-    eE = (0, g.p)(),
-    eN = B.Sb.useSetting(),
+    eN = (0, b.p)(),
+    eE = B.Sb.useSetting(),
     eO = (0, $.I)(e_),
     eT = (0, q.g)(n),
     eP = (0, v.Z)({
@@ -139,12 +139,12 @@ function eo(e) {
     }, 500)
   }, []);
   let eU = e => {
-      null == n || n(), (0, N.openUserProfileModal)(es({
+      null == n || n(), (0, E.openUserProfileModal)(es({
         customStatusPrompt: eD,
         sourceAnalyticsLocations: ex
       }, ef, e))
     },
-    eB = (0, E.Z)({
+    eB = (0, N.Z)({
       location: "UserProfileAccountPopout"
     }),
     eF = (null == eh ? true : eh.widgets) != null && eh.widgets.length > 0,
@@ -171,14 +171,14 @@ function eo(e) {
       fetchEndedAt: null == eh ? true : eh.fetchEndedAt,
       isLoaded: null == eh ? true : eh.isLoaded,
       children: (0, a.jsxs)(c.VqE, {
-        ref: eg,
+        ref: eb,
         "aria-label": t.username,
         className: er.popoutContainer,
         "data-layer": "base",
         children: [(0, a.jsx)(Q.Z, {
           displayProfile: eh,
           handleOpenUserProfileModal: eU,
-          height: eb
+          height: eg
         }), (0, a.jsxs)(Z.Z, {
           className: er.themeContainer,
           user: t,
@@ -282,7 +282,7 @@ function eo(e) {
                       status: e_,
                       size: 12
                     }),
-                    trailing: (eE || e_ === et.Skl.DND) && (0, a.jsx)(c.owu, {
+                    trailing: (eN || e_ === et.Skl.DND) && (0, a.jsx)(c.owu, {
                       size: "xxs"
                     }),
                     renderSubmenu: r.tq ? true : e => {
@@ -367,7 +367,7 @@ function eo(e) {
                         children: eT
                       })
                     }
-                  }), !__OVERLAY__ && z.wS && eN && (0, a.jsx)(J.V4, {
+                  }), !__OVERLAY__ && z.wS && eE && (0, a.jsx)(J.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
                     label: el.intl.string(el.t["/AXYnE"]),
@@ -385,7 +385,7 @@ function eo(e) {
         }), !eq && eJ ? (0, a.jsx)(Y.Z, {
           targetElementRef: eA,
           onClose: n
-        }) : null, (0, a.jsx)(b.Z, {})]
+        }) : null, (0, a.jsx)(g.Z, {})]
       })
     })
   })

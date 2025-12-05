@@ -325,7 +325,9 @@ let Z = Chunk473749.memo(function(e) {
         bottom: eb.value
       },
       children: (0, r.jsxs)("div", {
-        className: C.zoomControls,
+        className: a()(C.zoomControls, {
+          [C.zoomControlsWithChildren]: es || eh
+        }),
         onMouseEnter: eA,
         onMouseLeave: eN,
         onClick: eD,
@@ -362,7 +364,7 @@ let Z = Chunk473749.memo(function(e) {
                 icon: d.BlJ,
                 onClick: eR,
                 disabled: $ <= n,
-                variant: "secondary",
+                variant: "overlay-secondary",
                 size: "sm",
                 "aria-label": S.intl.string(S.t.M6Cmwy)
               })
@@ -382,7 +384,7 @@ let Z = Chunk473749.memo(function(e) {
               icon: d.OyE,
               onClick: eZ,
               disabled: $ >= l,
-              variant: "secondary",
+              variant: "overlay-secondary",
               size: "sm",
               "aria-label": S.intl.string(S.t["9hMafy"])
             })

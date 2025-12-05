@@ -1,5 +1,5 @@
-/** Chunk was on 76334 **/
-/** chunk id: 701464, original params: e,i,t (module,exports,require) **/
+/** Chunk was on 29356 **/
+/** chunk id: 701464, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -12,8 +12,8 @@ var Chunk987209 = require("./987209.jsx"),
   Chunk391763 = require("./391763.js");
 let c = function(e) {
   let {
-    onSelectSku: i,
-    priceOptions: t,
+    onSelectSku: t,
+    priceOptions: i,
     giftRecipient: c,
     onWishlistItemClick: d
   } = e, {
@@ -24,14 +24,14 @@ let c = function(e) {
     children: [(0, n.jsxs)("div", {
       className: o.cardsRow,
       children: [(0, n.jsx)(a.jB, {
-        onClick: () => i(s.Si.TIER_2),
+        onClick: () => t(s.Si.TIER_2),
         isGift: true,
-        priceOptions: t,
+        priceOptions: i,
         showPromotionalGiftBanner: m
       }), (0, n.jsx)(a.j8, {
-        onClick: () => i(s.Si.TIER_0),
+        onClick: () => t(s.Si.TIER_0),
         isGift: true,
-        priceOptions: t,
+        priceOptions: i,
         removeTopMargin: true
       })]
     }), (0, n.jsx)(l.Z, {

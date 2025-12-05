@@ -1,11 +1,11 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 174767, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Br: () => s,
   MH: () => c,
   Ol: () => u,
-  TG: () => h,
-  UF: () => f,
+  TG: () => f,
+  UF: () => h,
   sJ: () => d
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
@@ -48,13 +48,13 @@ function d() {
     type: "GAME_INVITE_CLEAR_UNSEEN"
   })
 }
-async function f(e) {
+async function h(e) {
   await r.tn.del({
     url: a.ANM.GAME_INVITE(e.invite_id),
     rejectWithError: false
   })
 }
-async function h() {
+async function f() {
   await Chunk544891.tn.del({
     url: Chunk981631.ANM.GAME_INVITES,
     rejectWithError: false

@@ -103,7 +103,7 @@ function y(e) {
 function C() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [r, i] = Chunk473749.useState([]), _ = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [C, S] = Chunk473749.useState(null), E = Chunk473749.useRef(null), N = Chunk473749.useRef(null), [O, T] = Chunk473749.useState(.5), {
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [r, i] = Chunk473749.useState([]), _ = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [C, S] = Chunk473749.useState(null), N = Chunk473749.useRef(null), E = Chunk473749.useRef(null), [O, T] = Chunk473749.useState(.5), {
     krispModels: P,
     krispModelOverride: I,
     inputMode: w,
@@ -133,7 +133,7 @@ function C() {
     vadDuringPreProcess: Chunk131951.Z.getModeOptions().vadDuringPreProcess
   })), G = D ? "KRISP" : L ? "STANDARD" : "NONE", z = (0, Chunk304809.N)(), V = Chunk473749.useCallback(() => {
     var e;
-    null == (e = E.current) || module.stop(), E.current = null, S(null)
+    null == (e = N.current) || module.stop(), N.current = null, S(null)
   }, []);
 
   function H() {
@@ -143,7 +143,7 @@ function C() {
   function W(e) {
     if (t && H(), V(), null == z) return;
     let n = z.createBufferSource();
-    n.buffer = e.audioBuffer, N.current = z.createGain(), N.current.gain.value = O, n.connect(N.current), N.current.connect(z.destination), n.loop = true, n.start(), E.current = n, S(e)
+    n.buffer = e.audioBuffer, E.current = z.createGain(), E.current.gain.value = O, n.connect(E.current), E.current.connect(z.destination), n.loop = true, n.start(), N.current = n, S(e)
   }
   Chunk473749.useEffect(() => {
     V()
@@ -214,20 +214,20 @@ function C() {
         children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Auto Threshold",
           checked: R,
-          onChange: e => u.Z.setMode(b.pM.VOICE_ACTIVITY, {
+          onChange: e => u.Z.setMode(g.pM.VOICE_ACTIVITY, {
             autoThreshold: e
           })
         }), R && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
           children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: "Use Krisp VAD",
             checked: A,
-            onChange: e => u.Z.setMode(b.pM.VOICE_ACTIVITY, {
+            onChange: e => u.Z.setMode(g.pM.VOICE_ACTIVITY, {
               vadUseKrisp: e
             })
           }), A && (0, Chunk54381.jsx)(Chunk481060.iRW, {
             label: "Krisp VAD Activation Threshold",
             initialValue: Z,
-            onValueChange: e => u.Z.setMode(b.pM.VOICE_ACTIVITY, {
+            onValueChange: e => u.Z.setMode(g.pM.VOICE_ACTIVITY, {
               vadKrispActivationThreshold: e
             }),
             minValue: 0,
@@ -236,7 +236,7 @@ function C() {
         }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Run Before Processing",
           checked: null != F && F,
-          onChange: e => u.Z.setMode(b.pM.VOICE_ACTIVITY, {
+          onChange: e => u.Z.setMode(g.pM.VOICE_ACTIVITY, {
             vadDuringPreProcess: e
           })
         })]
@@ -280,7 +280,7 @@ function C() {
         label: "Volume",
         initialValue: O,
         asValueChanges: function(e) {
-          null != N.current && (N.current.gain.value = e, T(e))
+          null != E.current && (E.current.gain.value = e, T(e))
         },
         minValue: 0,
         maxValue: 1

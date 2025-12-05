@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 449932, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -47,7 +47,7 @@ function j(e) {
     members: t,
     guildId: n
   } = e;
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(f.Z, {
     className: O.partyMembers,
     guildId: n,
     users: t,
@@ -70,8 +70,8 @@ let x = e => {
     members: i,
     embeddedApp: l,
     onAction: a
-  } = e, s = null != l, h = s ? Array.from(l.embeddedActivity.userIds) : [], b = (0, o.e7)([m.default, g.default], () => {
-    if (s) return m.default.getUser(h[0]);
+  } = e, s = null != l, f = s ? Array.from(l.embeddedActivity.userIds) : [], b = (0, o.e7)([m.default, g.default], () => {
+    if (s) return m.default.getUser(f[0]);
     if (null != i) {
       var e, t;
       return i.length <= 0 ? null : null != (t = null == (e = i.find(e => e.user.id !== g.default.getId())) ? true : e.user) ? t : i[0].user
@@ -90,9 +90,9 @@ let x = e => {
         user: b,
         channel: t,
         sortedVoiceStates: i,
-        onOpenSpotifyTrack: v ? f.aG : true,
-        onOpenSpotifyArtist: v ? f.d$ : true,
-        onOpenSpotifyAlbum: v ? f.Z5 : true
+        onOpenSpotifyTrack: v ? h.aG : true,
+        onOpenSpotifyArtist: v ? h.d$ : true,
+        onOpenSpotifyAlbum: v ? h.Z5 : true
       }) : (0, r.jsx)(c.Z, {
         type: c.P.VOICE_CHANNEL,
         activity: n,

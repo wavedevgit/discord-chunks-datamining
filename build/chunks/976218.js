@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 89522 **/
 /** chunk id: 976218, original params: e,t,n (module,exports,require) **/
 module.exports = {
   singleItemContainer: "singleItemContainer__4af00",

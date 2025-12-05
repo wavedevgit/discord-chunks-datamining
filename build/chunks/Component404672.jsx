@@ -37,16 +37,16 @@ function i(e) {
         expandedLeft: a,
         collapsedTop: i,
         expandedTop: l,
-        width: d
-      } = e, u = c.get(n);
+        width: u
+      } = e, d = c.get(n);
       return (0, r.jsx)(o.animated.div, {
-        ref: u,
+        ref: d,
         style: {
           zIndex: 2,
           position: "absolute",
           top: 0,
           left: 0,
-          width: d,
+          width: u,
           transform: (0, o.to)([t.to({
             range: [0, 1],
             output: [s, a]

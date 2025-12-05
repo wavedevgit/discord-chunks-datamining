@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 429122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => _,
@@ -22,7 +22,7 @@ let g = Chunk473749.memo(function(e) {
     guildChannels: t,
     guildChannelsVersion: n
   } = e, l = i.useMemo(() => t.getCategoryFromSection(t.voiceChannelsSectionNumber), [t, n]);
-  return null == l ? null : (0, r.jsx)(f.Qo, {
+  return null == l ? null : (0, r.jsx)(h.Qo, {
     category: l
   })
 });
@@ -41,16 +41,16 @@ function m(e) {
   if (t === n.voiceChannelsSectionNumber) return 44;
   let {
     hasDivider: c,
-    canHaveVoiceSummary: f
-  } = (0, d.ie)(n, o, t), p = c ? a ? 9 : h.QP : 0;
-  if (!f || t === u.wZ) return p;
+    canHaveVoiceSummary: h
+  } = (0, d.ie)(n, o, t), p = c ? a ? 9 : f.QP : 0;
+  if (!h || t === u.wZ) return p;
   let g = n.getNamedCategoryFromSection(t);
   return null == g ? p : (0, d.V5)({
     category: g,
     selectedChannelId: i,
     selectedVoiceChannelId: l,
     voiceStates: r
-  }) ? (a ? "cozy" === s ? 42 : 34 : h.Vf) + p : p
+  }) ? (a ? "cozy" === s ? 42 : 34 : f.Vf) + p : p
 }
 
 function b(e, t, n) {
@@ -65,8 +65,8 @@ let _ = Chunk473749.memo(function(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
-    guildChannelsVersion: f,
-    voiceStates: h,
+    guildChannelsVersion: h,
+    voiceStates: f,
     guildId: m,
     selectedChannelId: b,
     selectedVoiceChannelId: _,
@@ -74,7 +74,7 @@ let _ = Chunk473749.memo(function(e) {
   } = e, {
     hasDivider: O,
     canHaveVoiceSummary: v
-  } = i.useMemo(() => (0, d.ie)(n, y, t), [n, y, t, f]), j = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, f]), x = (0, a.DM)(m), C = (0, l.Wu)([s.ZP], () => {
+  } = i.useMemo(() => (0, d.ie)(n, y, t), [n, y, t, h]), j = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, h]), x = (0, a.DM)(m), C = (0, l.Wu)([s.ZP], () => {
     if (null == j || !j.isCollapsed || !v) return [];
     let e = j.getChannelRecords(),
       t = [];
@@ -88,11 +88,11 @@ let _ = Chunk473749.memo(function(e) {
     channels: C,
     selectedChannelId: b,
     selectedVoiceChannelId: _,
-    voiceStates: h
-  }), [C, b, _, h]);
+    voiceStates: f
+  }), [C, b, _, f]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(g, {
     guildChannels: n,
-    guildChannelsVersion: f
+    guildChannelsVersion: h
   });
   let S = O ? (0, r.jsx)("div", {
     className: p.sectionDivider

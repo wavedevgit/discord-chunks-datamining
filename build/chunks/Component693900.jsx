@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk393238 = require("./393238.js"),
   Chunk110924 = require("./110924.js"),
   Chunk607070 = require("./607070.js");
-let u = Chunk473749.createContext({
+let d = Chunk473749.createContext({
   springConfig: {},
   isExpanded: false
 });
@@ -22,7 +22,7 @@ function p(e) {
     springConfig: e.springConfig,
     isExpanded: e.isExpanded
   }), [e.springConfig, e.isExpanded]);
-  return (0, r.jsx)(u.Provider, {
+  return (0, r.jsx)(d.Provider, {
     value: t,
     children: e.children
   })
@@ -35,10 +35,10 @@ function m(e) {
   } = e, {
     springConfig: p,
     isExpanded: m
-  } = s.useContext(u), g = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), {
-    ref: f,
-    height: h = null
-  } = (0, l.ZP)(), x = null != (t = (0, c.Z)(h)) ? t : null, [{
+  } = s.useContext(d), f = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), {
+    ref: g,
+    height: x = null
+  } = (0, l.ZP)(), h = null != (t = (0, c.Z)(x)) ? t : null, [{
     height: _
   }, b] = (0, i.q_F)(() => ({
     from: {
@@ -47,20 +47,20 @@ function m(e) {
     config: p
   }));
   return s.useLayoutEffect(() => {
-    null !== h && b({
-      height: h,
-      immediate: !m || g || null === x
+    null !== x && b({
+      height: x,
+      immediate: !m || f || null === h
     })
-  }, [h, b, m, g, x]), (0, r.jsx)(o.animated.div, {
+  }, [x, b, m, f, h]), (0, r.jsx)(o.animated.div, {
     style: {
-      height: null === x ? "auto" : _,
+      height: null === h ? "auto" : _,
       overflow: "hidden"
     },
     children: (0, r.jsx)("div", {
       style: {
         overflow: "hidden"
       },
-      ref: f,
+      ref: g,
       children: n
     })
   })

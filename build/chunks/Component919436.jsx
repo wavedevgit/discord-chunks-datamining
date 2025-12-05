@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 73895 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -157,9 +157,9 @@ class A extends(r = Chunk473749.PureComponent) {
       stream: s,
       isCurrentUserInThisDMCall: u,
       unread: d,
-      treeItemProps: f
+      treeItemProps: h
     } = this.props, {
-      hovered: h,
+      hovered: f,
       animating: g
     } = this.state, m = module.isMultiUserDM() && null == module.icon, b = () => (0, Chunk54381.jsx)(Chunk481060.LYs, N({
       to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
@@ -256,11 +256,11 @@ P(A, "defaultProps", {
 });
 let R = Chunk473749.forwardRef(function(e, t) {
   let n = e.channel.id,
-    r = (0, h.ZP)(e.channel),
+    r = (0, f.ZP)(e.channel),
     l = (0, a.Ie)(n, 2),
     o = (0, s.e7)([m.Z], () => m.Z.getChannelId(), []),
     u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : E.WtW.VOICE, [o]),
-    f = (0, s.e7)([g.Z], () => g.Z.getAllApplicationStreamsForChannel(n).length > 0),
+    h = (0, s.e7)([g.Z], () => g.Z.getAllApplicationStreamsForChannel(n).length > 0),
     p = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
     y = (0, s.e7)([b.ZP], () => b.ZP.getMentionCount(n), [n]),
     O = o === n,
@@ -276,7 +276,7 @@ let R = Chunk473749.forwardRef(function(e, t) {
     badge: y,
     audio: v,
     video: j,
-    stream: f,
+    stream: h,
     isCurrentUserInThisDMCall: O,
     size: x,
     treeItemProps: l

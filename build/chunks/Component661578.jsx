@@ -39,23 +39,23 @@ function S(e) {
   let {
     quest: t,
     useReducedMotion: n
-  } = e, o = (0, g.n)(), l = (0, j.k3)(t.id, f.jn.QUEST_BAR_V2, f.jn.QUEST_BAR_V2), d = (0, j.g2)({
+  } = e, o = (0, f.n)(), l = (0, j.k3)(t.id, g.jn.QUEST_BAR_V2, g.jn.QUEST_BAR_V2), u = (0, j.g2)({
     useReducedMotion: n
   }), _ = (0, p.O5)(), v = (0, m.aM)(), {
     errorHints: C,
     startingConsoleQuest: S,
     startConsoleQuest: T
-  } = (0, h.GI)({
+  } = (0, x.GI)({
     questId: t.id,
     beforeRequest: () => {
       _({
         questId: t.id,
-        questContent: f.jn.QUEST_BAR_V2,
+        questContent: g.jn.QUEST_BAR_V2,
         questContentCTA: p.jZ.DEFIBRILLATOR,
-        sourceQuestContent: f.jn.QUEST_BAR_V2
-      }), d.startAnimation()
+        sourceQuestContent: g.jn.QUEST_BAR_V2
+      }), u.startAnimation()
     },
-    afterRequest: d.stopAnimation
+    afterRequest: u.stopAnimation
   }), {
     header: w,
     renderBody: P
@@ -71,21 +71,21 @@ function S(e) {
       renderBody: e ? () => (0, r.jsx)(r.Fragment, {
         children: C.map((e, n) => {
           if (e.type === i.K.EXPIRED_CREDENTIAL && o) {
-            let s = u.Z.getAccount(e.connected_account_id, e.connected_account_type),
-              o = (0, x.C9)(e),
-              a = (0, x._j)(e);
+            let s = d.Z.getAccount(e.connected_account_id, e.connected_account_type),
+              o = (0, h.C9)(e),
+              a = (0, h._j)(e);
             return (0, r.jsx)(O, {
               children: y.intl.format(o, {
                 account_name: null == s ? true : s.name,
                 onClick: () => {
-                  (0, x.fY)({
+                  (0, h.fY)({
                     quest: t,
                     platformType: a
                   }, {
-                    content: f.jn.QUEST_BAR,
+                    content: g.jn.QUEST_BAR,
                     ctaContent: p.jZ.DEFIBRILLATOR_RECONNECT_CONSOLE,
                     impressionId: v,
-                    sourceQuestContent: f.jn.QUEST_BAR_V2
+                    sourceQuestContent: g.jn.QUEST_BAR_V2
                   })
                 }
               })
@@ -123,7 +123,7 @@ function S(e) {
           [E.disabled]: S
         }),
         onClick: () => T(),
-        children: d.render()
+        children: u.render()
       })]
     }), (0, r.jsxs)("div", {
       className: a()({
@@ -139,9 +139,9 @@ let T = function(e) {
   let {
     quest: t,
     taskDetails: n
-  } = e, o = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), a = (0, h.z6)(), i = s.useMemo(() => (0, x.B3)(t).filter(e => a.xboxAndPlaystationAccounts.find(t => t.type === e)), [a.xboxAndPlaystationAccounts, t]), {
+  } = e, o = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), a = (0, x.z6)(), i = s.useMemo(() => (0, h.B3)(t).filter(e => a.xboxAndPlaystationAccounts.find(t => t.type === e)), [a.xboxAndPlaystationAccounts, t]), {
     steps: c,
-    hasConnectedAccounts: u,
+    hasConnectedAccounts: d,
     isProgressingQuestForLaunchedGame: p,
     isQuestComplete: m
   } = s.useMemo(() => {
@@ -173,7 +173,7 @@ let T = function(e) {
             return e
           }({}, a), n = n = {
             quest: t,
-            sourceQuestContent: f.jn.QUEST_BAR_V2
+            sourceQuestContent: g.jn.QUEST_BAR_V2
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -209,7 +209,7 @@ let T = function(e) {
   return (0, r.jsx)(C.ZP, {
     heading: y.intl.string(y.t.UPWlJu),
     steps: c,
-    children: u && !p && !m && (0, r.jsx)(S, {
+    children: d && !p && !m && (0, r.jsx)(S, {
       useReducedMotion: o,
       quest: t
     })

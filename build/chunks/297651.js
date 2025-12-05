@@ -20,7 +20,7 @@ function m(e, t) {
     h = (0, d.x)(),
     x = i.ZP.canUseCollectibles(h),
     f = a.useRef(null),
-    g = a.useCallback(() => {
+    b = a.useCallback(() => {
       let a = null != p ? (0, c.Vw)(p, x, false) : null,
         l = null != p ? (0, c.eu)(p, x, false) : true;
       r.default.track(u.rMx.COLLECTIBLES_TILE_IMPRESSION, {
@@ -37,14 +37,14 @@ function m(e, t) {
         category_position: null == m ? true : m.categoryPosition
       })
     }, [null == m ? true : m.sessionId, null == m ? true : m.categoryPosition, null == m ? true : m.pageCategory, null == m ? true : m.pageSection, null == m ? true : m.tilePosition, x, t, p, e, n]),
-    b = a.useCallback(e => {
+    g = a.useCallback(e => {
       e ? null === f.current && (f.current = setTimeout(() => {
-        g(), f.current = null
+        b(), f.current = null
       }, 1e3)) : null !== f.current && (clearTimeout(f.current), f.current = null)
-    }, [g]);
+    }, [b]);
   return a.useEffect(() => () => {
     null !== f.current && (clearTimeout(f.current), f.current = null)
   }, []), {
-    handleCardVisibilityChange: b
+    handleCardVisibilityChange: g
   }
 }

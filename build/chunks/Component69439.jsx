@@ -71,7 +71,7 @@ function T(e) {
         children: [(0, r.jsx)(c.iWm, {}), y.intl.string(y.t.iyNbj5)]
       });
     default:
-      return (0, u.vE)(e[0].value)
+      return (0, d.vE)(e[0].value)
   }
 }
 
@@ -84,22 +84,22 @@ function w(e) {
     contentPosition: B,
     rowIndex: k,
     sourceQuestContent: I
-  } = e, D = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), q = (0, j.g2)({
+  } = e, D = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, j.g2)({
     useReducedMotion: D
-  }), L = (0, p.O5)(), Q = (0, h._s)({
+  }), Q = (0, p.O5)(), L = (0, x._s)({
     quest: N
-  }), V = (0, h.z)(N), M = (0, h.B6)(N.config.expiresAt, {
+  }), V = (0, x.z)(N), M = (0, x.B6)(N.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), {
     isClaiming: W,
     isEnrolling: Z,
-    isQuestEnrollmentBlocked: H
+    isQuestEnrollmentBlocked: U
   } = (0, o.cj)([m.Z], () => ({
     isClaiming: m.Z.isClaimingReward(N.id) || m.Z.isFetchingRewardCode(N.id),
     isEnrolling: m.Z.isEnrolling(N.id),
     isQuestEnrollmentBlocked: null != m.Z.questEnrollmentBlockedUntil
-  })), U = (null == (t = N.userStatus) ? true : t.enrolledAt) != null, z = (null == (n = N.userStatus) ? true : n.completedAt) != null, F = z && (null == (w = N.userStatus) ? true : w.claimedAt) == null, G = (0, x.iQ)(N), K = !(0, x.zi)(N), X = (0, h._Q)(N), Y = (0, _.PB)(N), J = (0, _.HJ)(N), $ = (0, _.Vl)(N), ee = (0, h.Rf)(N), [et, en, er] = (0, h.me)(N, ee), es = K && X === h.OH.ACCEPTED, eo = es && et === g.LI.SELECT, ea = es && !eo && en.length > 1, ei = s.useCallback(e => {
+  })), H = (null == (t = N.userStatus) ? true : t.enrolledAt) != null, z = (null == (n = N.userStatus) ? true : n.completedAt) != null, G = z && (null == (w = N.userStatus) ? true : w.claimedAt) == null, F = (0, h.iQ)(N), K = !(0, h.zi)(N), X = (0, x._Q)(N), Y = (0, _.PB)(N), J = (0, _.HJ)(N), $ = (0, _.Vl)(N), ee = (0, x.Rf)(N), [et, en, er] = (0, x.me)(N, ee), es = K && X === x.OH.ACCEPTED, eo = es && et === f.LI.SELECT, ea = es && !eo && en.length > 1, ei = s.useCallback(e => {
     er(e), e === C.cd.DESKTOP && A([])
   }, [er, A]), {
     text: el,
@@ -115,12 +115,12 @@ function w(e) {
     inGameQuest: $,
     sourceQuestContent: I
   }), {
-    startingConsoleQuest: ed,
-    startConsoleQuest: eu
-  } = (0, h.GI)({
+    startingConsoleQuest: eu,
+    startConsoleQuest: ed
+  } = (0, x.GI)({
     questId: N.id,
     beforeRequest: () => {
-      q.startAnimation(), L({
+      q.startAnimation(), Q({
         questId: N.id,
         questContent: R,
         questContentCTA: p.jZ.DEFIBRILLATOR,
@@ -134,11 +134,11 @@ function w(e) {
     }
   }), ep = (null == (P = N.userStatus) ? true : P.claimedAt) != null, {
     launchInGameActivity: em
-  } = (0, h.zB)(N), eg = (0, f.CR)({
+  } = (0, x.zB)(N), ef = (0, g.CR)({
     quest: N,
     shortText: true
-  }), ef = null;
-  return (G && F ? ef = (0, r.jsx)("div", {
+  }), eg = null;
+  return (F && G ? eg = (0, r.jsx)("div", {
     className: E.button,
     children: (0, r.jsx)(i.zxk, {
       variant: "primary",
@@ -147,7 +147,7 @@ function w(e) {
       text: el,
       fullWidth: true
     })
-  }) : z ? ef = Y ? (0, r.jsxs)(i.hE2, {
+  }) : z ? eg = Y ? (0, r.jsxs)(i.hE2, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, r.jsx)(i.zxk, {
@@ -174,7 +174,7 @@ function w(e) {
     children: [(0, r.jsx)(i.zxk, {
       variant: "secondary",
       icon: N.config.features.includes(C.S7.CLOUD_GAMING_ACTIVITY) ? c.v3n : c.iWm,
-      text: eg,
+      text: ef,
       onClick: () => {
         em()
       }
@@ -191,7 +191,7 @@ function w(e) {
       text: el,
       fullWidth: true
     })
-  }) : K ? K && F ? ef = (0, r.jsx)("div", {
+  }) : K ? K && G ? eg = (0, r.jsx)("div", {
     className: E.button,
     children: (0, r.jsx)(i.zxk, {
       variant: "primary",
@@ -200,7 +200,7 @@ function w(e) {
       text: el,
       fullWidth: true
     })
-  }) : J ? ef = (0, r.jsx)("div", {
+  }) : J ? eg = (0, r.jsx)("div", {
     className: E.button,
     children: (0, r.jsx)(i.zxk, {
       variant: "primary",
@@ -209,7 +209,7 @@ function w(e) {
       text: el,
       fullWidth: true
     })
-  }) : K && U && !ep ? ef = eo ? (0, r.jsx)(a.B6, {
+  }) : K && H && !ep ? eg = eo ? (0, r.jsx)(a.B6, {
     className: E.platformSelectorPrimary,
     isSelected: () => false,
     options: O,
@@ -224,11 +224,11 @@ function w(e) {
         case C.cd.CONSOLE:
           return y.intl.string(y.t["8lAfuB"]);
         default:
-          return (0, u.vE)(e)
+          return (0, d.vE)(e)
       }
     },
     size: "sm"
-  }) : (0, _.$J)(N) && !V && et !== g.LI.DESKTOP ? Q ? (0, r.jsx)("div", {
+  }) : (0, _.$J)(N) && !V && et !== f.LI.DESKTOP ? L ? (0, r.jsx)("div", {
     className: E.button,
     children: (0, r.jsx)(i.zxk, {
       variant: "secondary",
@@ -239,8 +239,8 @@ function w(e) {
   }) : (0, r.jsx)(l.zx, {
     "data-migration-pending": true,
     color: l.Tt.PRIMARY,
-    onClick: eu,
-    disabled: ed,
+    onClick: ed,
+    disabled: eu,
     className: E.button,
     children: (0, r.jsxs)("div", {
       className: E.ctaInner,
@@ -271,7 +271,7 @@ function w(e) {
       text: y.intl.string(y.t["9KoPyB"]),
       fullWidth: true
     })
-  }) : K && !U && (ef = H ? (0, r.jsxs)(i.hE2, {
+  }) : K && !H && (eg = U ? (0, r.jsxs)(i.hE2, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, r.jsx)(i.zxk, {
@@ -293,7 +293,7 @@ function w(e) {
       icon: (0, v.getPrimaryCtaIcon)(N),
       fullWidth: true
     })
-  })) : ef = (0, r.jsx)("div", {
+  })) : eg = (0, r.jsx)("div", {
     className: E.button,
     children: (0, r.jsx)(i.zxk, {
       variant: "secondary",
@@ -303,20 +303,20 @@ function w(e) {
       }),
       fullWidth: true
     })
-  }), null == ef) ? null : (0, r.jsxs)("div", {
+  }), null == eg) ? null : (0, r.jsxs)("div", {
     className: E.container,
     children: [(0, r.jsx)("div", {
       className: E.ctaItem,
-      children: ef
+      children: eg
     }), ea && (0, r.jsx)("div", {
       className: E.ctaItem,
       children: (0, r.jsx)(a.B6, {
         className: E.platformSelectorSecondary,
         isSelected: e => {
           switch (et) {
-            case g.LI.DESKTOP:
+            case f.LI.DESKTOP:
               return e === C.cd.DESKTOP;
-            case g.LI.CONSOLE:
+            case f.LI.CONSOLE:
               return e === C.cd.CONSOLE;
             default:
               returnfalse

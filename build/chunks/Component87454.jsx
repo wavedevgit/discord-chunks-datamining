@@ -20,7 +20,7 @@ let d = Chunk473749.memo(function(e) {
     handleToggleDismissState: p
   } = (0, c.Z)(u), [h, x] = l.useState(false), f = l.useCallback(() => {
     null == d || d(n), p()
-  }, [d, p, n]), g = l.useCallback(e => {
+  }, [d, p, n]), b = l.useCallback(e => {
     e.preventDefault(), x(true), navigator.clipboard.writeText(n.toLowerCase())
   }, [n]);
   return (0, a.jsxs)(a.Fragment, {
@@ -32,7 +32,7 @@ let d = Chunk473749.memo(function(e) {
         size: "sm",
         variant: "icon-only",
         icon: h ? i.C2q : i.zTD,
-        onClick: g,
+        onClick: b,
         "aria-label": h ? "Copied" : "Copy"
       }), (0, a.jsx)(i.rsf, {
         label: "".concat(n.toLowerCase(), " (").concat(r.z[n], ")"),
