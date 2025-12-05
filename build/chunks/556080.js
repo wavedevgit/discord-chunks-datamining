@@ -23,7 +23,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk595373 = require("./595373.js"),
   Chunk345655 = require("./345655.js"),
   Chunk388032 = require("./388032.jsx");
-let L = (0, Chunk509613.J9)(Chunk313789.n.VOICE_INPUT_PROFILE_SETTING, {
+let C = (0, Chunk509613.J9)(Chunk313789.n.VOICE_INPUT_PROFILE_SETTING, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.LM3U3k),
     usePredicate: function() {
       let {
@@ -86,5 +86,5 @@ let L = (0, Chunk509613.J9)(Chunk313789.n.VOICE_INPUT_PROFILE_SETTING, {
         }
       }, [module])
     },
-    buildLayout: () => [L, Chunk782134.q, Chunk833682.L, Chunk383713.A, Chunk595373.Y, Chunk815194.h, Chunk387076.q, Chunk16009.X, Chunk375258.h]
+    buildLayout: () => [C, Chunk782134.q, Chunk833682.L, Chunk383713.A, Chunk595373.Y, Chunk815194.h, Chunk387076.q, Chunk16009.X, Chunk375258.h]
   })
