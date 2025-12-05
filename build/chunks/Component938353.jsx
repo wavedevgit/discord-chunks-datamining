@@ -758,9 +758,9 @@ class tn extends(r = Chunk473749.Component) {
           shouldAgeVerify: null != p && p
         }, n))
       }, e.id)
-    }), e0(this, "renderEmbedTitle", (e, t) => e.type === eq.hBH.RICH ? W.Z.parseEmbedTitle(t, true, {
+    }), e0(this, "renderEmbedTitle", (e, t) => e.type !== eq.hBH.RICH ? t : (null != e.url && "" !== e.url ? W.Z.parseEmbedTitleWithoutLinks : W.Z.parseEmbedTitle)(t, true, {
       channelId: this.props.channel.id
-    }) : t), e0(this, "renderEmbedDescription", (e, t, n) => e.type === eq.hBH.RICH ? W.Z.parse(t, true, {
+    })), e0(this, "renderEmbedDescription", (e, t, n) => e.type === eq.hBH.RICH ? W.Z.parse(t, true, {
       channelId: this.props.channel.id,
       allowLinks: true,
       allowEmojiLinks: true,
