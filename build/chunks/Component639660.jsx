@@ -35,26 +35,26 @@ function j() {
 function C(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([u.Z], () => {
+  } = e, n = (0, o.e7)([u.Z], () => {
     var e;
     return (null == (e = u.Z.getGuild(t)) ? true : e.features.has(v.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true
-  }), C = (0, d.Z)(t), w = (0, c.Z)(t), Z = C.length > 0 || w.length > 0, {
+  }), C = (0, d.Z)(t), Z = (0, c.Z)(t), w = C.length > 0 || Z.length > 0, {
     shouldShow: I,
     notificationConfig: E
   } = (0, g._)(t, "GuildPowerupNotificationContainer"), P = [];
   I && P.push(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
   let [T, y] = (0, s.ZT)(P, t), N = null != T && null != E, O = [];
-  N || Z || O.push(a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
+  N || w || O.push(a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
   let [S, A] = (0, s.US)(O), k = (e => {
     let n = [];
-    if (Z) {
+    if (w) {
       let e = C.some(e => e.skuId === i.A$),
-        o = w.length > 0 ? b.intl.string(x.default["B3OfL/"]) : true,
-        l = [];
-      e && l.push(b.intl.string(_.default.Sfr0Jw)), w.length > 0 && l.push(b.intl.string(x.default.wiungr)), n.push((0, r.jsx)(m.Z, {
+        l = Z.length > 0 ? b.intl.string(x.default["B3OfL/"]) : true,
+        o = [];
+      e && o.push(b.intl.string(_.default.Sfr0Jw)), Z.length > 0 && o.push(b.intl.string(x.default.wiungr)), n.push((0, r.jsx)(m.Z, {
         guildId: t,
-        powerupNames: [...C.map(e => e.title), ...null != o ? [o] : []],
-        warnings: l
+        powerupNames: [...C.map(e => e.title), ...null != l ? [l] : []],
+        warnings: o
       }, "expiring-powerups"))
     }
     return N && n.push((0, r.jsx)(f.Z, {
@@ -68,7 +68,7 @@ function C(e) {
   })(S);
   return 0 !== k.length || n ? (0, r.jsxs)("div", {
     className: h.container,
-    children: [(0, r.jsx)(o.xvT, {
+    children: [(0, r.jsx)(l.xvT, {
       variant: "eyebrow",
       color: "text-subtle",
       children: b.intl.string(_.default["3FRirU"])

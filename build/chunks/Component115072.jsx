@@ -68,7 +68,7 @@ function T(e) {
         return "Linux"
     }
     return ""
-  }((0, S.getOS)())), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ep] = r.useState(false), [ev, ef] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
+  }((0, S.getOS)())), [er, ea] = r.useState(""), [el, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ep] = r.useState(false), [ef, ev] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -78,21 +78,21 @@ function T(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "b14028293d19a80a0c59d9ce10e067b74cfbc1f2" !== e.body.hash) {
-        let e = new Date("1764967200976"),
+      if (null != e.body && "464a907af44ae6da741f3af40651ec773501ddca" !== e.body.hash) {
+        let e = new Date("1764967715268"),
           t = new Date,
           n = (0, O.TD)(t, e);
         n.hours > 6 && eb(n.hours)
       }
     })
   }, []);
-  let ey = (0, a.e7)([j.default], () => {
+  let ey = (0, l.e7)([j.default], () => {
       let e = j.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
-    ej = (0, a.e7)([v.C], () => {
+    ej = (0, l.e7)([f.C], () => {
       var e;
-      return null == (e = v.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
+      return null == (e = f.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
     }),
     {
       overridesInfo: e_
@@ -113,14 +113,14 @@ function T(e) {
     var e, t;
     if (eg(false), "" === Z || "" === B || null == H) return void ep(true);
     let r = null == X || null == (e = X.features) ? true : e.find(e => (0, w.pD)(e) === K);
-    ef(true), ep(false);
-    let l = (0, P.D)(U.map(e => {
+    ev(true), ep(false);
+    let a = (0, P.D)(U.map(e => {
         let {
           item: t
         } = e;
         return t
       })),
-      a = await (0, w.ZD)({
+      l = await (0, w.ZD)({
         name: Z,
         description: B,
         priority: H,
@@ -133,20 +133,20 @@ function T(e) {
         device: ee,
         operatingSystem: en,
         operatingSystemVersion: er,
-        clientVersion: ea,
+        clientVersion: el,
         clientBuildNumber: es,
         locale: ec
       } : {
         overridePlatformInformation: Q
-      }, l).catch(() => eg(true));
-    ef(false), null != a && a.ok ? (ey && window.open(a.body.permalink_url, "_blank"), A(), (0, d.ZDy)(async () => {
+      }, a).catch(() => eg(true));
+    ev(false), null != l && l.ok ? (ey && window.open(l.body.permalink_url, "_blank"), A(), (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
       return t => {
         var n, r;
         return (0, i.jsx)(e, (n = E({}, t), r = r = {
-          asanaTask: a.body
+          asanaTask: l.body
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -180,7 +180,7 @@ function T(e) {
       var n;
       return e.filename === t.name && (null == (n = e.item.file) ? true : n.size) === t.size
     }) || Y([...U, new p.ZP({
-      id: (0, l.Z)(),
+      id: (0, a.Z)(),
       file: t,
       platform: p.ow.WEB,
       origin: "clipboard"
@@ -199,7 +199,7 @@ function T(e) {
     }, {
       variant: "primary",
       text: ey ? "Submit and Open Report" : "Submit Report",
-      loading: ev,
+      loading: ef,
       onClick: ew,
       autoFocus: false
     }],
@@ -345,11 +345,11 @@ function T(e) {
             label: C.intl.string(C.t.rEtxdg),
             placeholder: "Operating System Version",
             value: er,
-            onChange: e => el(e)
+            onChange: e => ea(e)
           }), (0, i.jsx)(d.oil, {
             label: C.intl.string(C.t["wy1M/t"]),
             placeholder: "Client Version",
-            value: ea,
+            value: el,
             onChange: e => eo(e)
           }), (0, i.jsx)(d.oil, {
             label: C.intl.string(C.t.f7kbVu),
@@ -377,7 +377,7 @@ function T(e) {
             onChange: e => {
               var t, n;
               (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && Y([...U, ...Array.from(e.currentTarget.files).map(e => new p.ZP({
-                id: (0, l.Z)(),
+                id: (0, a.Z)(),
                 file: e,
                 platform: p.ow.WEB,
                 origin: "file_picker"
@@ -399,7 +399,7 @@ function T(e) {
                 }), (0, i.jsx)("div", {
                   className: k.removeAttachment,
                   children: (0, i.jsx)(x.ZP, {
-                    children: (0, i.jsx)(f.Z, {
+                    children: (0, i.jsx)(v.Z, {
                       tooltip: C.intl.string(C.t.vN7REz),
                       onClick: () => {
                         var t;

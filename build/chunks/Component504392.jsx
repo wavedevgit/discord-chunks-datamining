@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
 function R(e) {
   let {
     guildId: t,
-    powerupListingId: o
+    powerupListingId: l
   } = e, R = (0, m.BU)(t, "GuildPowerupsOverview");
   i.useEffect(() => {
     R && (0, f.ce)(t)
@@ -51,21 +51,21 @@ function R(e) {
     M = i.useRef(false),
     {
       shouldShow: D,
-      modalConfig: G
+      modalConfig: V
     } = (0, P.K)(t, "GuildPowerupsOverview"),
-    V = null == o && null != G,
+    G = null == l && null != V,
     B = [];
-  D && V && B.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
-  let [W, z] = (0, c.US)(B), F = (0, b._P)(t, R), K = F.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), X = (0, y.f)(K, t);
+  D && G && B.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
+  let [W, F] = (0, c.US)(B), z = (0, b._P)(t, R), K = z.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), X = (0, y.f)(K, t);
   return (i.useEffect(() => {
-    if (null != o && !M.current)
-      for (let e of F)
+    if (null != l && !M.current)
+      for (let e of z)
         for (let n of e.listings) {
-          if (("singleLevel" === n.type || "singlePerk" === n.type) && n.powerup.skuId === o) {
+          if (("singleLevel" === n.type || "singlePerk" === n.type) && n.powerup.skuId === l) {
             (0, E.KE)(t, n.powerup), M.current = true;
             return
           }
-          if ("multiPerk" === n.type && (n.group === o || n.powerups.some(e => e.skuId === o))) {
+          if ("multiPerk" === n.type && (n.group === l || n.powerups.some(e => e.skuId === l))) {
             M.current = true;
             let e = X[n.group];
             if (null == e) return;
@@ -80,8 +80,8 @@ function R(e) {
             return
           }
         }
-  }, [t, o, F, X]), i.useEffect(() => {
-    null != W && null != G && (0, u.ZDy)(async () => {
+  }, [t, l, z, X]), i.useEffect(() => {
+    null != W && null != V && (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("61879").then(n.bind(n, 802426));
@@ -103,16 +103,16 @@ function R(e) {
         }
         return e
       }({
-        modalConfig: G,
-        markAsDismissed: z
+        modalConfig: V,
+        markAsDismissed: F
       }, t))
     }, {
       onCloseCallback: () => {
-        z(O.L.USER_DISMISS)
+        F(O.L.USER_DISMISS)
       },
       modalKey: "dismissible_content_".concat(W)
     })
-  }, [t, W, z, G]), (null == L ? true : L.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
+  }, [t, W, F, V]), (null == L ? true : L.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
     className: k.container,
     children: [(0, r.jsxs)(d.Z, {
       className: k.toolbar,
@@ -128,12 +128,12 @@ function R(e) {
       className: k.contentContainer,
       children: [(0, r.jsx)(u.zJl, {
         className: k.powerupsContainer,
-        children: F.map(e => {
+        children: z.map(e => {
           let {
             type: n,
             listings: i
           } = e, {
-            title: o,
+            title: l,
             description: a
           } = function(e) {
             switch (e) {
@@ -154,7 +154,7 @@ function R(e) {
               children: [(0, r.jsx)(u.Heading, {
                 color: "header-primary",
                 variant: "heading-lg/semibold",
-                children: o
+                children: l
               }), (0, r.jsx)(u.Text, {
                 color: "text-muted",
                 variant: "text-sm/medium",
@@ -162,19 +162,19 @@ function R(e) {
               })]
             }), (0, r.jsx)(s, {
               orientation: "horizontal",
-              className: l()(k.powerupContainer, k.powerupHorizontalPadding, {
+              className: o()(k.powerupContainer, k.powerupHorizontalPadding, {
                 [k.powerupsLevelContainer]: n === N.Us.LEVEL
               }),
               fade: true,
               children: i.map((e, n) => {
                 switch (e.type) {
                   case "singleLevel":
-                    var o;
+                    var l;
                     return (0, r.jsx)(h.ZP, {
                       guildId: t,
                       index: n,
                       powerup: e.powerup,
-                      nextPowerup: null == (o = i[n + 1]) ? true : o.powerup
+                      nextPowerup: null == (l = i[n + 1]) ? true : l.powerup
                     }, "powerup-".concat(e.powerup.skuId));
                   case "singlePerk":
                     return (0, r.jsx)(C.Z, {
@@ -198,9 +198,9 @@ function R(e) {
         })
       }), (0, r.jsxs)("div", {
         className: k.sidebarContainer,
-        children: [U ? (0, r.jsx)(w.Z, {
+        children: [U ? (0, r.jsx)(Z.Z, {
           guildId: t
-        }) : (0, r.jsx)(Z.Z, {
+        }) : (0, r.jsx)(w.Z, {
           guildId: t
         }), (0, r.jsx)(I.Z, {
           guildId: t

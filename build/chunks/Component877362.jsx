@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -55,18 +55,18 @@ function y(e) {
       src: P
     }), (0, r.jsxs)("div", {
       className: E.textContainer,
-      children: [(0, r.jsx)(l.xvT, {
+      children: [(0, r.jsx)(o.xvT, {
         variant: "text-md/semibold",
-        children: I.intl.string(S ? Z.default.KSWK1U : Z.default.XXXX5l)
-      }), (0, r.jsx)(l.xvT, {
+        children: I.intl.string(S ? w.default.KSWK1U : w.default.XXXX5l)
+      }), (0, r.jsx)(o.xvT, {
         variant: "text-sm/medium",
-        children: I.intl.format(S ? Z.default["7fWTg4"] : Z.default["7PXeeQ"], {
+        children: I.intl.format(S ? w.default["7fWTg4"] : w.default["7PXeeQ"], {
           onClick: () => {
             (0, p.f)({
               guildId: i,
               location: {
-                section: w.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
-                object: w.qAy.LEARN_MORE
+                section: Z.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
+                object: Z.qAy.LEARN_MORE
               }
             })
           }
@@ -113,7 +113,7 @@ function y(e) {
         colorString: C.colorString,
         colorStrings: C.colorStrings
       }),
-      className: o()(E.content, E.exampleMessage),
+      className: l()(E.content, E.exampleMessage),
       message: I.intl.string(I.t["6OSasb"]),
       decorations: (0, r.jsx)(u.Ucv, {
         color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
@@ -123,8 +123,8 @@ function y(e) {
       guild: c,
       className: E.content,
       analyticsLocation: {
-        page: w.ZY5.GUILD_POWERUPS_OVERVIEW,
-        section: w.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
+        page: Z.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: Z.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
       color: s.Tt.BRAND,
       size: s.Ph.MEDIUM,

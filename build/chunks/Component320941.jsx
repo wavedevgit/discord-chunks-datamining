@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk724683 = require("./724683.js");
 
-function C(e) {
+function f(e) {
   let {
     onClose: t
   } = e, r = (0, a.jsx)(o.Text, {
@@ -35,12 +35,12 @@ function C(e) {
   })
 }
 
-function f(e) {
+function C(e) {
   let {
     onClose: t
   } = e;
-  return (0, a.jsx)(b.ZP, {
-    planId: m.Xh.PREMIUM_MONTH_TIER_0,
+  return (0, a.jsx)(u.ZP, {
+    planId: b.Xh.PREMIUM_MONTH_TIER_0,
     onClose: t
   })
 }
@@ -49,8 +49,8 @@ let S = e => {
     transitionState: t,
     onClose: r,
     premiumType: d
-  } = e, p = d === m.PremiumTypes.TIER_0, b = n.useCallback(() => {
-    l.S.dispatch(u.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), c.Z.isDisplayingWowMomentConfirmation && c.Z.isAnimated ? setTimeout(() => {
+  } = e, p = d === b.PremiumTypes.TIER_0, u = n.useCallback(() => {
+    l.S.dispatch(m.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), c.Z.isDisplayingWowMomentConfirmation && c.Z.isAnimated ? setTimeout(() => {
       r()
     }, i.P) : r()
   }, [r]);
@@ -59,11 +59,11 @@ let S = e => {
     transitionState: t,
     parentComponent: "ResubscribeSuccessStep",
     children: [(0, a.jsx)(s.Z, {
-      onClose: b,
+      onClose: u,
       upgradeToPremiumType: d
     }), (0, a.jsx)(o.hzk, {
-      children: (0, a.jsx)(p ? f : C, {
-        onClose: b
+      children: (0, a.jsx)(p ? C : f, {
+        onClose: u
       })
     })]
   })

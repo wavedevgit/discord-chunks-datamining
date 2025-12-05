@@ -23,13 +23,13 @@ function c(e) {
       className: u.headerContainer,
       children: [(0, r.jsx)(i.Ucv, {
         size: "sm",
-        color: n !== s.br.AVAILABLE ? l.Z.colors.HEADER_MUTED : l.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
-      }), (0, r.jsx)(o.X6q, {
+        color: n !== s.br.AVAILABLE ? o.Z.colors.HEADER_MUTED : o.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
+      }), (0, r.jsx)(l.X6q, {
         color: n !== s.br.AVAILABLE ? "header-muted" : "header-primary",
         variant: "heading-lg/semibold",
         children: t
       })]
-    }), (0, r.jsx)(o.xvT, {
+    }), (0, r.jsx)(l.xvT, {
       color: "header-muted",
       variant: "text-sm/medium",
       children: (0, a.t)(t, n)

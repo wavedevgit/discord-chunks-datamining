@@ -25,7 +25,7 @@ var Chunk793030 = require("./793030.js"),
 function h(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([c.Z], () => c.Z.getGuild(t)), {
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuild(t)), {
     available: h,
     spent: j,
     total: C
@@ -64,8 +64,8 @@ function h(e) {
         page: v.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: v.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
-      color: l.Tt.CUSTOM,
-      size: l.Ph.LARGE,
+      color: o.Tt.CUSTOM,
+      size: o.Ph.LARGE,
       intent: u.P.NONE,
       icon: (0, r.jsx)(a.Ucv, {
         className: b.boostButtonIcon,

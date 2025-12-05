@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk320941 = require("./320941.jsx"),
   Chunk474936 = require("./474936.js");
 
-function f(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(r);
@@ -55,39 +55,39 @@ let v = e => {
   let {
     analyticsLocations: r,
     premiumSubscription: o
-  } = e, v = null == (t = (0, m.Af)(o)) ? true : t.planId, x = null != v ? (0, m.Rd)(v) : null;
-  i()(null != x, "Should not be resubscribing Nitro without premiumType");
-  let w = x === C.PremiumTypes.TIER_0,
-    [P, y] = n.useState(_.R.CONFIRM),
-    g = n.useCallback(() => {
+  } = e, v = null == (t = (0, b.Af)(o)) ? true : t.planId, w = null != v ? (0, b.Rd)(v) : null;
+  i()(null != w, "Should not be resubscribing Nitro without premiumType");
+  let y = w === f.PremiumTypes.TIER_0,
+    [P, x] = n.useState(_.R.CONFIRM),
+    O = n.useCallback(() => {
       switch (P) {
         case _.R.CONFIRM:
-          return (0, a.jsx)(u.G, S(f({}, e), {
-            setStep: y
+          return (0, a.jsx)(m.G, S(C({}, e), {
+            setStep: x
           }));
         case _.R.SUCCESS:
-          return (0, a.jsx)(h.n, S(f({}, e), {
-            premiumType: x
+          return (0, a.jsx)(h.n, S(C({}, e), {
+            premiumType: w
           }));
         default:
-          return (0, a.jsx)(u.G, S(f({}, e), {
-            setStep: y
+          return (0, a.jsx)(m.G, S(C({}, e), {
+            setStep: x
           }))
       }
-    }, [P, e, x]);
+    }, [P, e, w]);
   return (0, a.jsx)(l.Gt, {
     value: r,
     children: (0, a.jsx)(s.PaymentContextProvider, {
       activeSubscription: o,
-      stepConfigs: (0, b.O)(),
+      stepConfigs: (0, u.O)(),
       skuIDs: [],
       breadcrumbs: [d.h8.CONFIRM],
       children: (0, a.jsx)(c.b6, {
         children: (0, a.jsx)(p.Z, {
           isConfirmationStep: P === _.R.SUCCESS,
-          isEligibleForWowMoment: !w,
-          shouldPrefetchWowMoment: !w,
-          children: g()
+          isEligibleForWowMoment: !y,
+          shouldPrefetchWowMoment: !y,
+          children: O()
         })
       })
     })

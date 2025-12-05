@@ -1,12 +1,12 @@
 /** Chunk was on 44799 **/
 /** chunk id: 773149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => Z
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,32 +24,32 @@ var Chunk54381 = require("./54381.js"),
   Chunk436370 = require("./436370.js"),
   Chunk611087 = require("./611087.js");
 
-function w(e) {
+function Z(e) {
   let {
     guildId: t
   } = e, {
     state: n,
-    lowestGameServerCost: o
+    lowestGameServerCost: l
   } = (0, s.cj)([f.Z], () => ({
     state: f.Z.getStateForGuild(t),
     lowestGameServerCost: f.Z.getLowestGameCostForGuild(t)
-  })), w = (0, m.Z)(t), Z = i.useMemo(() => {
+  })), Z = (0, m.Z)(t), w = i.useMemo(() => {
     var e;
-    if (0 !== Object.values(null != (e = null == n ? true : n.entitlements) ? e : {}).length) return w.length > 0 ? {
+    if (0 !== Object.values(null != (e = null == n ? true : n.entitlements) ? e : {}).length) return Z.length > 0 ? {
       type: "expiring",
-      expiringAt: w[0].ends_at
+      expiringAt: Z[0].ends_at
     } : {
       type: "active",
       statusText: _.intl.string(v.default.FFLkmx)
     }
-  }, [w, null == n ? true : n.entitlements]), {
+  }, [Z, null == n ? true : n.entitlements]), {
     textColor: I
-  } = (0, p.Z)((null == Z ? true : Z.type) === "active");
+  } = (0, p.Z)((null == w ? true : w.type) === "active");
   return null == n ? null : (0, r.jsxs)(d.aB, {
     label: _.intl.string(x.default["B3OfL/"]),
     badge: "beta",
-    isActive: (null == Z ? true : Z.type) === "active",
-    isWarning: (null == Z ? true : Z.type) === "expiring",
+    isActive: (null == w ? true : w.type) === "active",
+    isWarning: (null == w ? true : w.type) === "expiring",
     onClick: () => (0, g.Z)({
       guildId: t,
       analyticsLocation: c.Z.GUILD_POWERUPS_OVERVIEW
@@ -57,19 +57,19 @@ function w(e) {
     children: [(0, r.jsxs)("div", {
       className: j.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: l()(h.background, b.image, j.image),
+        className: o()(h.background, b.image, j.image),
         src: C.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: l()(b.image, j.gradient)
+        className: o()(b.image, j.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
       title: _.intl.string(x.default["B3OfL/"]),
       textColor: I,
       footer: (0, r.jsx)(d.uf, {
-        cost: null != o ? o : 0,
+        cost: null != l ? l : 0,
         costDecorator: "+",
-        status: Z
+        status: w
       }),
       children: (0, r.jsx)(a.xvT, {
         className: b.description,

@@ -14,7 +14,7 @@ var Chunk793030 = require("./793030.js"),
 function u(e) {
   let {
     guildId: t
-  } = e, n = (0, o.Z)(t);
+  } = e, n = (0, l.Z)(t);
   return 0 === n.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.X6q, {
       className: s.header,
@@ -24,7 +24,7 @@ function u(e) {
     }), (0, r.jsx)(i.zJl, {
       className: s.container,
       fade: true,
-      children: n.map((e, t) => (0, r.jsx)(l.Z, {
+      children: n.map((e, t) => (0, r.jsx)(o.Z, {
         boost: e
       }, "boost-activity-".concat(t)))
     })]
