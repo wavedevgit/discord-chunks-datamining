@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 346486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,14 +36,14 @@ class u extends(r = Chunk473749.PureComponent) {
       showDays: t,
       showUnits: n,
       className: r
-    } = this.props, a = [e.days, e.hours, e.minutes, e.seconds], l = [c.intl.string(c.t["6m/6nM"]), c.intl.string(c.t.n7dksO), c.intl.string(c.t["1LyF1h"]), c.intl.string(c.t.QJyuxY)];
-    if (0 === e.days) a.shift();
+    } = this.props, l = [e.days, e.hours, e.minutes, e.seconds], a = [c.intl.string(c.t["6m/6nM"]), c.intl.string(c.t.n7dksO), c.intl.string(c.t["1LyF1h"]), c.intl.string(c.t.QJyuxY)];
+    if (0 === e.days) l.shift();
     else if (!t) {
-      let e = a.shift();
-      a[0] += 24 * e
+      let e = l.shift();
+      l[0] += 24 * e
     }
-    let s = o()(a).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, i.jsxs)("span", {
-      children: [e, n ? l[a.length - t - 1] : null]
+    let s = o()(l).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, i.jsxs)("span", {
+      children: [e, n ? a[l.length - t - 1] : null]
     }, t)]).flatten().value();
     return (0, i.jsx)("span", {
       className: r,
@@ -62,7 +62,7 @@ class u extends(r = Chunk473749.PureComponent) {
       "aria-label": Chunk388032.intl.string(Chunk388032.t.PqEzn8),
       children: "∞"
     });
-    let a = (0, Chunk55935.TD)(Date.now(), module, r);
+    let l = (0, Chunk55935.TD)(Date.now(), module, r);
     return null != exports ? exports(Chunk473749, this.defaultRender.bind(this, Chunk473749)) : this.defaultRender(Chunk473749)
   }
   constructor(...e) {
@@ -75,4 +75,4 @@ d(u, "defaultProps", {
   stopAtOneSec: false,
   intervalDuration: 1e3
 });
-let _ = u
+let p = u

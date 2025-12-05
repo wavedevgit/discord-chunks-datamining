@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
-  Chunk693789 = require("./693789.jsx"),
+  Chunk885387 = require("./885387.jsx"),
   Chunk248514 = require("./248514.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
@@ -147,7 +147,7 @@ class q extends Chunk473749.PureComponent {
           Chunk657352.message = Chunk388032.intl.string(Chunk388032.t.rEBKvg), Chunk657352.buttonText = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), Chunk657352.buttonVariant = "primary", Chunk657352.onButtonClick = this.handleShowMemberVerification
       } else if (Chunk937111 || null == Chunk270801) Chunk473749 && !Chunk305325 ? (Chunk657352.message = Chunk388032.intl.string(Chunk388032.t["2dThMM"]), Chunk657352.buttonText = Chunk388032.intl.string(Chunk388032.t["50gfOv"]), Chunk657352.onButtonClick = this.handleVerifyPhone) : Chunk512722 ? (Chunk657352.message = Chunk388032.intl.string(Chunk388032.t.FkGPS5), Chunk657352.buttonText = Chunk388032.intl.string(Chunk388032.t.lm1UKt), Chunk657352.onButtonClick = this.handleResendVerification) : a ? (Chunk657352.message = Chunk388032.intl.formatToPlainString(Chunk388032.t.IH7RMF, {
         min: Chunk981631.YeM.MEMBER_AGE
-      }), Chunk657352.countdown = Chunk442837) : Chunk693789 && (Chunk657352.message = Chunk388032.intl.formatToPlainString(Chunk388032.t["2JA2GH"], {
+      }), Chunk657352.countdown = Chunk442837) : Chunk885387 && (Chunk657352.message = Chunk388032.intl.formatToPlainString(Chunk388032.t["2JA2GH"], {
         min: Chunk981631.YeM.ACCOUNT_AGE
       }), Chunk657352.countdown = Chunk248514);
       else {
@@ -166,7 +166,7 @@ class q extends Chunk473749.PureComponent {
         shouldShowLurkerModeSuccessPopout: false
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, i.jsx)(k.Z, W(z({}, j), {
+      children: e => (0, i.jsx)(D.Z, W(z({}, j), {
         children: (0, i.jsxs)("div", {
           ref: this.textAreaContainerRef,
           children: [this.renderMemberVerificationSuccessModal(), m ? (0, i.jsx)(u.yRy, {
@@ -246,17 +246,12 @@ class q extends Chunk473749.PureComponent {
       var e;
       d.Z.verifyResend();
       let t = null == (e = R.default.getCurrentUser()) ? true : e.email;
-      null != t && (0, u.h7j)(e => (0, i.jsx)(u.ConfirmModal, W(z({}, e), {
-        header: H.intl.string(H.t.LykQYk),
-        confirmText: H.intl.string(H.t.BddRzS),
-        confirmButtonColor: s.Tt.BRAND,
-        children: (0, i.jsx)(u.Text, {
-          variant: "text-md/normal",
-          children: H.intl.format(H.t.azKEPy, {
-            email: t
-          })
+      null != t && (0, s.Z)({
+        title: H.intl.string(H.t.LykQYk),
+        subtitle: H.intl.format(H.t.azKEPy, {
+          email: t
         })
-      })))
+      })
     }), G(this, "handleTextAreaClick", () => {
       let {
         showLurkerModeUpsellPopout: e
@@ -338,7 +333,7 @@ function K(e) {
   }), b = !!(0, v.Dc)(s), C = (0, o.e7)([x.Z], () => x.Z.shouldShowPopout(a)), O = (0, o.e7)([M.Z], () => M.Z.can(U.Plq.SEND_MESSAGES, r)), j = (0, o.e7)([_.Z], () => _.Z.getRequest(a)), {
     showLinkedLobbyApplicationLoadingIndicator: S,
     requiredLinkedLobbyApplication: P
-  } = (0, D.Z)(r.linkedLobby), I = W(z({}, c), {
+  } = (0, k.Z)(r.linkedLobby), I = W(z({}, c), {
     guild: s,
     isLurking: p,
     isFollowable: u,

@@ -20,7 +20,7 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk585816 = require("./585816.js");
 
-function _(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -65,7 +65,7 @@ class O extends(i = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "onDragStart", e => {
+    super(...e), b(this, "onDragStart", e => {
       let {
         dragStart: t
       } = this.props;
@@ -73,7 +73,7 @@ class O extends(i = Chunk473749.PureComponent) {
     })
   }
 }
-_(O, "defaultProps", {
+b(O, "defaultProps", {
   contained: false
 });
 let E = Chunk442837.ZP.connectStores([Chunk914010.Z], () => ({

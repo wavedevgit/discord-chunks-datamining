@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk755721 = require("./755721.js"),
+var Chunk885387 = require("./885387.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
@@ -68,20 +68,10 @@ function _(e) {
 }
 
 function m() {
-  (0, Chunk481060.ZDy)(async () => {
-    let {
-      ConfirmModal: e
-    } = await Promise.resolve().then(require.bind(require, 878678));
-    return t => (0, r.jsx)(e, p(d({}, t), {
-      header: l.intl.string(c.default.odgSTk),
-      confirmText: l.intl.string(l.t.BddRzS),
-      confirmButtonColor: i.zx.Colors.BRAND,
-      children: (0, r.jsx)(a.Text, {
-        variant: "text-md/normal",
-        children: l.intl.format(c.default.EZfHRq, {
-          helpURL: o.Z.getArticleURL(s.BhN.NSFW_AGE_GATING)
-        })
-      })
-    }))
+  (0, Chunk885387.Z)({
+    title: Chunk388032.intl.string(Chunk342153.default.odgSTk),
+    subtitle: Chunk388032.intl.format(Chunk342153.default.EZfHRq, {
+      helpURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NSFW_AGE_GATING)
+    })
   })
 }

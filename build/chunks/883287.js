@@ -1,5 +1,5 @@
 /** Chunk was on 95055 **/
-/** chunk id: 883287, original params: e,r,t (module,exports,require) **/
+/** chunk id: 883287, original params: e,t,r (module,exports,require) **/
 module.exports = {
   akaBadge: "akaBadge__5149c",
   header: "header__5149c",

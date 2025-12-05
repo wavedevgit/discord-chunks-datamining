@@ -5,6 +5,7 @@ require.d(exports, {
   MT: () => f,
   WH: () => d,
   cD: () => p,
+  hH: () => h,
   i1: () => _,
   r7: () => m
 });
@@ -104,4 +105,28 @@ async function m(e, t) {
     url: c.ANM.BILLING_SUBSCRIPTION_INVITE(e, t),
     rejectWithError: true
   })
+}
+async function h(e) {
+  o.Z.dispatch({
+    type: "PREMIUM_GROUP_INVITE_FETCH_START",
+    inviteId: e
+  });
+  try {
+    let t = (await a.tn.get({
+      url: c.ANM.PREMIUM_GROUP_INVITE(e),
+      rejectWithError: true
+    })).body;
+    o.Z.dispatch({
+      type: "PREMIUM_GROUP_INVITE_FETCH_SUCCESS",
+      inviteId: e,
+      invite: t
+    })
+  } catch (n) {
+    var t;
+    o.Z.dispatch({
+      type: "PREMIUM_GROUP_INVITE_FETCH_FAIL",
+      inviteId: e,
+      status: null != (t = null == n ? true : n.status) ? t : 0
+    })
+  }
 }

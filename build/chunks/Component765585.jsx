@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 765585, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -49,7 +49,7 @@ let b = Chunk473749.forwardRef(function(e, t) {
     width: H
   } = (0, c.ZP)();
 
-  function W(e) {
+  function z(e) {
     if ((0, u.lg)(N)) return void(0, f.bj)(N, {
       dismissAction: e
     });
@@ -104,7 +104,7 @@ let b = Chunk473749.forwardRef(function(e, t) {
             className: m.button,
             size: U,
             onClick: e => {
-              null == x || x(e), j(e), W(p.L.PRIMARY)
+              null == x || x(e), j(e), z(p.L.PRIMARY)
             },
             color: null != G ? G : S ? a.zx.Colors.BRAND_INVERTED : a.zx.Colors.WHITE,
             children: null != O ? O : g.intl.string(g.t.IHf1RN)
@@ -112,7 +112,7 @@ let b = Chunk473749.forwardRef(function(e, t) {
             className: m.button,
             size: U,
             onClick: e => {
-              null == x || x(e), W(p.L.DISMISS)
+              null == x || x(e), z(p.L.DISMISS)
             },
             color: S ? a.zx.Colors.WHITE : a.zx.Colors.BRAND,
             look: S ? a.zx.Looks.LINK : a.zx.Looks.FILLED,
@@ -122,7 +122,7 @@ let b = Chunk473749.forwardRef(function(e, t) {
           className: m.button,
           size: a.zx.Sizes.MAX,
           onClick: e => {
-            null == x || x(e), W(p.L.PRIMARY)
+            null == x || x(e), z(p.L.PRIMARY)
           },
           color: a.zx.Colors.WHITE,
           children: g.intl.string(g.t.HU2IR5)

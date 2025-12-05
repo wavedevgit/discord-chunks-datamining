@@ -1,53 +1,53 @@
-/** Chunk was on 88282 **/
-/** chunk id: 988158, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 85668 **/
+/** chunk id: 988158, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  X: () => i,
-  h: () => r
+  X: () => s,
+  h: () => i
 }), require("./704826.js"), require("./35282.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk902676 = require("./902676.js");
 
-function r(e) {
+function i(t) {
   let {
-    protocol: t,
+    protocol: e,
     hostname: n
   } = a.useMemo(() => ({
-    protocol: (0, l.E)(e),
-    hostname: (0, l.F)(e)
-  }), [e]), r = "//" === e.substr(t.length, 2) ? "//" : "", i = "".concat(t).concat(r).concat(n);
+    protocol: (0, r.E)(t),
+    hostname: (0, r.F)(t)
+  }), [t]), i = "//" === t.substr(e.length, 2) ? "//" : "", s = "".concat(e).concat(i).concat(n);
   return {
-    protocol: t,
-    authorityPrefix: r,
+    protocol: e,
+    authorityPrefix: i,
     hostname: n,
-    theRestOfTheUrl: e.replace(i, "")
+    theRestOfTheUrl: t.replace(s, "")
   }
 }
 
-function i(e) {
+function s(t) {
   let {
-    url: t,
+    url: e,
     trustUrl: n,
-    onConfirm: l,
-    onCancel: i,
-    onClose: s
-  } = e, [o, c] = a.useState(false), {
+    onConfirm: r,
+    onCancel: s,
+    onClose: l
+  } = t, [c, o] = a.useState(false), {
     protocol: d,
     authorityPrefix: u,
-    hostname: m,
-    theRestOfTheUrl: p
-  } = r(t), h = a.useCallback(() => {
-    o && n(t), null == s || s(), l()
-  }, [t, o, n, l, s]);
+    hostname: _,
+    theRestOfTheUrl: x
+  } = i(e), m = a.useCallback(() => {
+    c && n(e), null == l || l(), r()
+  }, [e, c, n, r, l]);
   return {
     protocol: d,
     authorityPrefix: u,
-    hostname: m,
-    theRestOfTheUrl: p,
-    shouldTrustUrl: o,
-    setShouldTrustUrl: c,
-    handleConfirm: h,
+    hostname: _,
+    theRestOfTheUrl: x,
+    shouldTrustUrl: c,
+    setShouldTrustUrl: o,
+    handleConfirm: m,
     handleCancel: a.useCallback(() => {
-      null == s || s(), i()
-    }, [i, s])
+      null == l || l(), s()
+    }, [s, l])
   }
 }

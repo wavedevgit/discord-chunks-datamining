@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => Z
@@ -76,17 +76,17 @@ function Z(e) {
   }, [n, t, M]);
   i.useEffect(() => (O.S.subscribe(I.CkL.TOGGLE_INBOX, H), () => void O.S.unsubscribe(I.CkL.TOGGLE_INBOX, H)), [H]);
   let {
-    enabled: W,
-    inInbox: z
+    enabled: z,
+    inInbox: W
   } = p.Z.useExperiment({
     location: "RecentsPopout"
-  }), K = (0, s.e7)([g.Z], () => g.Z.hasOverdueReminder(), []) && W && z, {
+  }), K = (0, s.e7)([g.Z], () => g.Z.hasOverdueReminder(), []) && z && W, {
     enabled: Y
   } = h.Z.useExperiment({
     location: "RecentsPopout"
   });
   i.useEffect(() => {
-    G !== c.X.BOOKMARKS || W || z || U(c.X.MENTIONS)
+    G !== c.X.BOOKMARKS || z || W || U(c.X.MENTIONS)
   });
   let q = i.useCallback(e => {
       e.shiftKey || V()
@@ -121,7 +121,7 @@ function Z(e) {
               }),
               children: G === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : G === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
                 onJump: q
-              }) : Y && G === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : W && z && G === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
+              }) : Y && G === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && G === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
                 closePopout: V
               }) : G === c.X.SCHEDULED ? (0, r.jsx)(C._, {}) : (0, r.jsx)(a.SV, {
                 fallback: (0, r.jsx)(E.h6, {}),

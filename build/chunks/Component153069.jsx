@@ -10,7 +10,7 @@ var n, Chunk54381 = require("./54381.js"),
   Chunk265489 = require("./265489.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk885387 = require("./885387.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
   Chunk479495 = require("./479495.jsx"),
@@ -326,7 +326,7 @@ class M extends(n = Chunk473749.PureComponent) {
             onClick: t.onClose,
             fullWidth: true
           }];
-          return (0, s.jsx)(d.Modal, N(D({
+          return (0, s.jsx)(u.Modal, N(D({
             title: T.intl.string(T.t["6Ecyts"]),
             actions: e
           }, t), {
@@ -335,18 +335,12 @@ class M extends(n = Chunk473749.PureComponent) {
               children: T.intl.string(T.t.iAcrqV)
             })
           }))
-        }) : (0, c.h7j)(t => (0, s.jsx)(c.ConfirmModal, N(D({
-          header: T.intl.string(T.t.f5Pi7A),
-          confirmText: T.intl.string(T.t.BddRzS),
-          confirmButtonColor: h.zx.Colors.BRAND
-        }, t), {
-          children: (0, s.jsx)(c.Text, {
-            variant: "text-md/normal",
-            children: T.intl.format(T.t["6u5hQ9"], {
-              email: r
-            })
+        }) : (0, h.Z)({
+          title: T.intl.string(T.t.f5Pi7A),
+          subtitle: T.intl.format(T.t["6u5hQ9"], {
+            email: r
           })
-        })))
+        })
       } catch (e) {
         let t = (0, m.p)(e);
         this.setState({
@@ -458,13 +452,13 @@ let Z = function(t) {
     }
     return s
   }(t, ["onClose", "transitionState", "onBackPressed"]);
-  let l = (0, u.cj)([S.Z, j.default, w.Z, O.Z], () => ({
-    authenticated: j.default.isAuthenticated(),
-    isPasswordlessActive: j.default.getIsPasswordlessActive(),
-    loginStatus: j.default.getLoginStatus(),
-    mfaTicket: j.default.getMFATicket(),
-    mfaMethods: j.default.getMFAMethods(),
-    defaultRoute: S.Z.defaultRoute,
+  let l = (0, d.cj)([j.Z, S.default, w.Z, O.Z], () => ({
+    authenticated: S.default.isAuthenticated(),
+    isPasswordlessActive: S.default.getIsPasswordlessActive(),
+    loginStatus: S.default.getLoginStatus(),
+    mfaTicket: S.default.getMFATicket(),
+    mfaMethods: S.default.getMFAMethods(),
+    defaultRoute: j.Z.defaultRoute,
     country: w.Z.getCountryCode(),
     theme: O.Z.theme
   }));
@@ -475,7 +469,7 @@ let Z = function(t) {
   let h = o.useCallback(() => {
     e(), n()
   }, [e, n]);
-  return (0, s.jsx)(d.IX, {
+  return (0, s.jsx)(u.IX, {
     size: "md",
     onClose: e,
     transitionState: r,

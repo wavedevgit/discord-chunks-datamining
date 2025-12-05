@@ -94,65 +94,66 @@ function N(e) {
 
 function P(e) {
   var t, n, r, i, a, o, l, d;
-  let _, {
-      reactions: m,
-      interactionData: b
+  let _, m, {
+      reactions: b,
+      interactionData: O
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
-    O = N(e),
-    S = null != (i = null == (t = e.mentions) ? true : t.map(e => e.id)) ? i : [],
-    T = null != (a = e.mention_roles) ? a : [],
-    P = null != (o = e.mention_channels) ? o : [],
-    R = null != (l = e.mention_games) ? l : [],
-    w = e.message_reference,
-    D = A(e),
-    L = null,
-    k = null == e ? true : e.gift_info,
-    U = e.gifting_prompt,
-    G = null != e.interaction ? c.Z.createFromServer(e.interaction) : null,
-    Z = e.type === y.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
-    B = e.content;
-  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (_ = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, B = ""), C(e)) ? I(v({}, L), {
+    S = N(e),
+    T = null != (i = null == (t = e.mentions) ? true : t.map(e => e.id)) ? i : [],
+    P = null != (a = e.mention_roles) ? a : [],
+    R = null != (o = e.mention_channels) ? o : [],
+    w = null != (l = e.mention_games) ? l : [],
+    D = e.message_reference,
+    L = A(e),
+    k = null,
+    U = null == e ? true : e.gift_info,
+    G = e.gifting_prompt,
+    Z = null != e.interaction ? c.Z.createFromServer(e.interaction) : null,
+    B = e.type === y.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
+    F = e.content;
+  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (_ = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, F = ""), e.type === y.uaV.PREMIUM_GROUP_INVITE && (m = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, F = ""), C(e)) ? I(v({}, k), {
     id: e.id,
     channel_id: e.channel_id,
     type: y.uaV.DEFAULT,
-    author: D,
-    timestamp: O.timestamp,
+    author: L,
+    timestamp: S.timestamp,
     isUnsupported: true
-  }) : I(v({}, e, L, O.toJS()), {
-    author: D,
+  }) : I(v({}, e, k, S.toJS()), {
+    author: L,
     webhookId: e.webhook_id,
-    blocked: p.Z.isBlockedForMessage(e) || null != Z && p.Z.isBlocked(Z),
-    ignored: p.Z.isIgnoredForMessage(e) || null != Z && p.Z.isIgnored(Z),
+    blocked: p.Z.isBlockedForMessage(e) || null != B && p.Z.isBlocked(B),
+    ignored: p.Z.isIgnoredForMessage(e) || null != B && p.Z.isIgnored(B),
     mentionEveryone: e.mention_everyone,
-    mentions: S,
-    mentionRoles: T,
-    mentionChannels: P,
-    mentionGames: R,
-    messageReference: w,
+    mentions: T,
+    mentionRoles: P,
+    mentionChannels: R,
+    mentionGames: w,
+    messageReference: D,
     mentioned: (0, E.Sz)({
       userId: f.default.getId(),
       channelId: e.channel_id,
       mentionEveryone: null != (d = e.mention_everyone) && d,
-      mentionUsers: S,
-      mentionRoles: T,
-      mentionGames: R.map(e => e.id)
+      mentionUsers: T,
+      mentionRoles: P,
+      mentionGames: w.map(e => e.id)
     }),
     giftCodes: (0, h.Fp)(e) ? (0, h.Q_)(null == e ? true : e.embeds[0].url) : (0, h.Q_)(e.content),
-    content: B,
+    content: F,
     referralTrialOfferId: _,
-    call: x(e.call, O.timestamp),
+    premiumGroupInviteId: m,
+    call: x(e.call, S.timestamp),
     messageSnapshots: M(e),
-    reactions: j(null != m ? m : e.reactions, e.poll),
-    interaction: G,
-    interactionData: null != b ? b : e.interaction_data,
+    reactions: j(null != b ? b : e.reactions, e.poll),
+    interaction: Z,
+    interactionData: null != O ? O : e.interaction_data,
     interactionMetadata: e.interaction_metadata,
     roleSubscriptionData: e.role_subscription_data,
     purchaseNotification: e.purchase_notification,
     poll: null == e.poll ? true : (0, s.Z)(e.poll),
     sharedClientTheme: e.shared_client_theme,
     potions: e.potions,
-    giftInfo: null == k ? true : k,
-    giftingPrompt: U
+    giftInfo: null == U ? true : U,
+    giftingPrompt: G
   }))
 }
 

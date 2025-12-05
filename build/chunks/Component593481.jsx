@@ -2,8 +2,8 @@
 /** chunk id: 593481, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  QR: () => y,
-  Yj: () => b,
+  QR: () => m,
+  Yj: () => y,
   ZP: () => v
 });
 var i, Chunk54381 = require("./54381.js"),
@@ -16,7 +16,7 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk866497 = require("./866497.js"),
   Chunk197571 = require("./197571.js");
 
-function p(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,10 +31,10 @@ let f = e => e.stopPropagation(),
     onMouseEnter: f,
     onMouseOver: f
   }),
-  m = () => (0, Chunk54381.jsx)("div", {
+  _ = () => (0, Chunk54381.jsx)("div", {
     className: Chunk866497.divider
   }),
-  y = (e, t, n) => (0, r.jsx)("div", {
+  m = (e, t, n) => (0, r.jsx)("div", {
     className: u.keybindMessage,
     children: d.intl.format(n, {
       keybind: t,
@@ -44,11 +44,11 @@ let f = e => e.stopPropagation(),
       }, n)
     })
   }),
-  b = (e, t) => (0, r.jsx)("div", {
+  y = (e, t) => (0, r.jsx)("div", {
     className: u.hintSubtleText,
     children: t
   });
-class _ extends(i = Chunk473749.PureComponent) {
+class b extends(i = Chunk473749.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       expand: n
@@ -97,11 +97,11 @@ class _ extends(i = Chunk473749.PureComponent) {
     if ("function" == typeof module) {
       let i = module(require, exports);
       return null != i ? (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-        children: [(0, Chunk54381.jsx)(m, {}), i]
+        children: [(0, Chunk54381.jsx)(_, {}), i]
       }, "hint-custom") : null
     }
     return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [(0, Chunk54381.jsx)(m, {}), (0, Chunk54381.jsx)("div", {
+      children: [(0, Chunk54381.jsx)(_, {}), (0, Chunk54381.jsx)("div", {
         className: "string" == typeof module ? Chunk866497.hintText : true,
         children: module
       }, "hint-text")]
@@ -124,11 +124,11 @@ class _ extends(i = Chunk473749.PureComponent) {
     if (null != this.props.renderFooter) {
       let e = this.props.renderFooter(l);
       return null != module ? (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-        children: [(0, Chunk54381.jsx)(m, {}), module]
+        children: [(0, Chunk54381.jsx)(_, {}), module]
       }, "footer-custom-content") : null
     }
     return null != require || null != i ? (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-      children: [(0, Chunk54381.jsx)(m, {}), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
+      children: [(0, Chunk54381.jsx)(_, {}), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
         fullWidth: true,
         children: [null != require ? (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "active",
@@ -204,25 +204,25 @@ class _ extends(i = Chunk473749.PureComponent) {
     })
   }
   constructor(e) {
-    super(e), p(this, "handleDismiss", e => {
+    super(e), h(this, "handleDismiss", e => {
       e.stopPropagation();
       let {
         onDismissClick: t
       } = this.props;
       null == t || t(e)
-    }), p(this, "handleConfirmClick", e => {
+    }), h(this, "handleConfirmClick", e => {
       e.stopPropagation();
       let {
         onConfirmClick: t
       } = this.props;
       null == t || t(e)
-    }), p(this, "handleCancelClick", e => {
+    }), h(this, "handleCancelClick", e => {
       e.stopPropagation();
       let {
         onCancelClick: t
       } = this.props;
       null == t || t(e)
-    }), p(this, "handleMouseEnter", () => {
+    }), h(this, "handleMouseEnter", () => {
       this.props.disabled || this.setState({
         expanded: true
       })
@@ -235,9 +235,9 @@ class _ extends(i = Chunk473749.PureComponent) {
     }
   }
 }
-p(_, "defaultProps", {
+h(b, "defaultProps", {
   maxBodyLines: true,
   expand: false,
   disabled: false
 });
-let v = _
+let v = b

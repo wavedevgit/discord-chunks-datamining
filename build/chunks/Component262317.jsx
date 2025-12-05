@@ -40,7 +40,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk92024 = require("./92024.js");
 
-function D(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -59,7 +59,7 @@ function D(e) {
   return e
 }
 
-function k(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -157,13 +157,13 @@ let F = (0, Chunk888651.$)(function(e) {
     null != t && n.has(t) && (eP && eI(false), ej && eS(false)), eL()
   }, eL = () => {
     (et || eC || ew) && (null == ea || ea(h.id))
-  }, eD = e => {
+  }, ek = e => {
     e ? eO.current = setTimeout(() => {
       eE(true)
     }, 150 * !!es) : clearTimeout(eO.current)
   };
   r.useEffect(() => () => clearTimeout(eO.current), []);
-  let ek = e => {
+  let eD = e => {
       e && eE(false)
     },
     eU = () => {
@@ -181,7 +181,7 @@ let F = (0, Chunk888651.$)(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("96306")]).then(n.bind(n, 757387));
-        return t => (0, i.jsx)(e, k(D({}, t), {
+        return t => (0, i.jsx)(e, D(k({}, t), {
           user: h,
           guildId: U.guild_id,
           channel: U,
@@ -193,11 +193,11 @@ let F = (0, Chunk888651.$)(function(e) {
         }))
       })
     },
-    eF = e => ef ? (0, i.jsx)(x.$, k(D({}, e), {
+    eF = e => ef ? (0, i.jsx)(x.$, D(k({}, e), {
       channel: U,
       setIsHangStatusInputFocused: eS,
       setIsEmojiPickerOpen: eT
-    })) : null != eg ? (0, i.jsx)(E.I, k(D({}, e), {
+    })) : null != eg ? (0, i.jsx)(E.I, D(k({}, e), {
       hangStatusActivity: eg,
       channel: U,
       userId: h.id
@@ -273,7 +273,7 @@ let F = (0, Chunk888651.$)(function(e) {
             var r;
             return (0, i.jsx)(o.u, {
               text: null != (r = (0, C.Z)(ec)) ? r : R.intl.string(R.t.IyYqqY),
-              children: (0, i.jsx)(P.ZP, D({
+              children: (0, i.jsx)(P.ZP, k({
                 ref: ey
               }, n))
             })
@@ -287,12 +287,12 @@ let F = (0, Chunk888651.$)(function(e) {
             onRequestClose: eR,
             align: eC && eA && !ef ? "center" : true,
             spacing: eC && eA ? 8 : 0,
-            children: () => (0, i.jsx)(P.ZP, k(D({}, n), {
+            children: () => (0, i.jsx)(P.ZP, D(k({}, n), {
               ref: ey,
               onMouseDown: e.onMouseDown,
               onKeyDown: e.onKeyDown,
-              handleHoverHangStatus: eD,
-              handleHoverIcons: ek,
+              handleHoverHangStatus: ek,
+              handleHoverIcons: eD,
               onAddHangStatusClicked: () => eI(true)
             }))
           })

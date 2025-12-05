@@ -2,8 +2,8 @@
 /** chunk id: 418632, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b,
-  s: () => E
+  Z: () => g,
+  s: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   o = require.n(Chunk512722),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk885387 = require("./885387.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
   Chunk594174 = require("./594174.js"),
@@ -39,37 +39,14 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function E(e) {
+function h(e) {
   return d.Z.verifyResend().then(() => {
-    (0, u.h7j)(t => (0, r.jsx)(u.ConfirmModal, g(m({
-      header: p.intl.string(p.t.LykQYk),
-      confirmText: p.intl.string(p.t.BddRzS),
-      confirmButtonColor: c.zx.Colors.BRAND
-    }, t), {
-      children: (0, r.jsx)(u.Text, {
-        variant: "text-md/normal",
-        children: p.intl.format(p.t.azKEPy, {
-          email: e.email
-        })
+    (0, c.Z)({
+      title: p.intl.string(p.t.LykQYk),
+      subtitle: p.intl.format(p.t.azKEPy, {
+        email: e.email
       })
-    })))
+    })
   }).catch(e => {
     let {
       body: t
@@ -86,14 +63,14 @@ function E(e) {
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     size: t,
     variant: n
   } = e, a = (0, l.e7)([f.default], () => f.default.getCurrentUser());
   o()(null != a, "ResendEmailVerificationButton: currentUser cannot be undefined");
   let [s, c] = i.useState(false), d = i.useCallback(() => {
-    c(true), E(a).then(() => c(false))
+    c(true), h(a).then(() => c(false))
   }, [a]);
   return (0, r.jsx)(u.Button, {
     size: t,

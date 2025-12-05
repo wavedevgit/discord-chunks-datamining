@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 416568, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ed
@@ -207,7 +207,7 @@ function ec(e) {
   } = e, [a] = (0, f.Wu)([D.ZP], () => {
     let e = D.ZP.getGuildsTree();
     return [e, e.version]
-  }), s = a.getRoots(), c = (0, f.Wu)([T.Z], () => T.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(W.Z, {
+  }), s = a.getRoots(), c = (0, f.Wu)([T.Z], () => T.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(z.Z, {
     id: e.id,
     name: e.name,
     icon: e.icon
@@ -254,7 +254,7 @@ function eu(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(B, ["ref"]), H = (0, m.mFp)(), [W, K] = i.useState(false), q = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), J = (0, m.dQu)(g.Z.space.SPACE_XS), $ = (0, x.Z)(), {
+  }(B, ["ref"]), H = (0, m.mFp)(), [z, K] = i.useState(false), q = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), J = (0, m.dQu)(g.Z.space.SPACE_XS), $ = (0, x.Z)(), {
     pathname: er
   } = (0, c.TH)(), {
     entrypoint: eu
@@ -345,7 +345,7 @@ function eu(e) {
           return null
       }
     }, [C, E, y, ef.setNodeRef]),
-    eb = (0, r.jsx)(z.Z, {
+    eb = (0, r.jsx)(W.Z, {
       selected: ep,
       className: en.discoveryIcon
     }),
@@ -377,7 +377,7 @@ function eu(e) {
               children: [(0, r.jsxs)(m.xVE, {
                 className: o()({
                   [en.scroller]: true,
-                  [en.scrolling]: W
+                  [en.scrolling]: z
                 }),
                 experimental_useStack: true,
                 gap: "xs",

@@ -13,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk215569 = require("./215569.js"),
   Chunk796027 = require("./796027.jsx"),
   Chunk199849 = require("./199849.jsx"),
+  Chunk885387 = require("./885387.jsx"),
   Chunk477690 = require("./477690.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk345861 = require("./345861.jsx"),
@@ -38,10 +38,10 @@ function T(e) {
     isGuildProducts: l = false
   } = e, {
     format: s
-  } = (0, C.Z)(n.id), g = (0, _.YB)(n.id), j = i.useCallback(() => {
+  } = (0, C.Z)(n.id), m = (0, _.YB)(n.id), j = i.useCallback(() => {
     var e;
-    return (null == g || null == (e = g.cover_image_asset) ? true : e.application_id) == null ? null : (0, x._W)(g.cover_image_asset.application_id, g.cover_image_asset, S)
-  }, [g]), [T, P] = i.useState(s), [w, Z] = i.useState(null != (t = null == g ? true : g.description) ? t : ""), [R, D] = i.useState(j), [A, L] = i.useState(null == g ? true : g.store_page_guild_products_default_sort), [k, G] = i.useState(null == g ? true : g.server_shop_tab_order), {
+    return (null == m || null == (e = m.cover_image_asset) ? true : e.application_id) == null ? null : (0, x._W)(m.cover_image_asset.application_id, m.cover_image_asset, S)
+  }, [m]), [T, P] = i.useState(s), [w, Z] = i.useState(null != (t = null == m ? true : m.description) ? t : ""), [R, D] = i.useState(j), [A, L] = i.useState(null == m ? true : m.store_page_guild_products_default_sort), [k, G] = i.useState(null == m ? true : m.server_shop_tab_order), {
     loading: M,
     error: U,
     updateSubscriptionsSettings: B
@@ -49,20 +49,20 @@ function T(e) {
     imageCTA: F,
     imageAriaLabel: H,
     setFilename: z
-  } = (0, O.Z)(null == g ? true : g.cover_image_asset), W = (0, f.Dt)();
+  } = (0, O.Z)(null == m ? true : m.cover_image_asset), W = (0, f.Dt)();
 
   function V(e, t) {
     a()(null != e, "Null value not allowed"), null != t && z(t.name), D(e)
   }
   let K = i.useMemo(() => {
       var e;
-      return null != w && w !== (null != (e = null == g ? true : g.description) ? e : "") || (null == R ? true : R.startsWith("data:")) === true || T !== s || (null == g ? true : g.store_page_guild_products_default_sort) !== A || (null == g ? true : g.server_shop_tab_order) !== k
-    }, [R, s, w, g, T, A, k]),
+      return null != w && w !== (null != (e = null == m ? true : m.description) ? e : "") || (null == R ? true : R.startsWith("data:")) === true || T !== s || (null == m ? true : m.store_page_guild_products_default_sort) !== A || (null == m ? true : m.server_shop_tab_order) !== k
+    }, [R, s, w, m, T, A, k]),
     Y = null != w && "" !== w && null != R;
   i.useEffect(() => {
     var e;
-    (null == g || null == (e = g.cover_image_asset) ? true : e.application_id) != null && D((0, x._W)(g.cover_image_asset.application_id, g.cover_image_asset, S))
-  }, [null == g ? true : g.cover_image_asset]);
+    (null == m || null == (e = m.cover_image_asset) ? true : e.application_id) != null && D((0, x._W)(m.cover_image_asset.application_id, m.cover_image_asset, S))
+  }, [null == m ? true : m.cover_image_asset]);
   let q = (0, v.mY)(),
     X = i.useMemo(() => N.kL.map(e => ({
       label: (0, N.eJ)(e),
@@ -90,43 +90,10 @@ function T(e) {
         description: E.intl.string(E.t.x87YqH),
         value: T,
         onChange: e => {
-          s !== e && e === y.e3.ALL_CHANNELS && (0, p.h7j)(e => {
-            var t, n;
-            return (0, r.jsx)(p.ConfirmModal, (t = function(e) {
-              for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                  r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                  return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                  var r;
-                  r = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: true,
-                    configurable: true,
-                    writable: true
-                  }) : e[t] = r
-                })
-              }
-              return e
-            }({}, e), n = n = {
-              header: E.intl.string(E.t.dmVoOz),
-              confirmText: E.intl.string(E.t["NX+WJN"]),
-              confirmButtonColor: m.zx.Colors.BRAND,
-              children: (0, r.jsx)(p.Text, {
-                variant: "text-md/normal",
-                children: E.intl.string(E.t.mtwzdD)
-              })
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-              var n = Object.keys(e);
-              if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
-              }
-              return n
-            })(Object(n)).forEach(function(e) {
-              Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-            }), t))
+          s !== e && e === y.e3.ALL_CHANNELS && (0, g.Z)({
+            title: E.intl.string(E.t.dmVoOz),
+            subtitle: E.intl.string(E.t.mtwzdD),
+            confirmText: E.intl.string(E.t["NX+WJN"])
           }), P(e)
         },
         disabled: q,
@@ -210,12 +177,12 @@ function T(e) {
           disabled: !Y,
           onReset: () => {
             var e;
-            P(s), Z(null != (e = null == g ? true : g.description) ? e : ""), D(j), L(null == g ? true : g.store_page_guild_products_default_sort), G(null == g ? true : g.server_shop_tab_order)
+            P(s), Z(null != (e = null == m ? true : m.description) ? e : ""), D(j), L(null == m ? true : m.store_page_guild_products_default_sort), G(null == m ? true : m.server_shop_tab_order)
           },
           onSave: () => {
-            a()(null != g, "Settings must be defined");
+            a()(null != m, "Settings must be defined");
             let e = {};
-            w !== g.description && (e.description = w), null != R && R.startsWith("data:") && (e.cover_image = R), T !== s && (e.full_server_gate = T === y.e3.ALL_CHANNELS), A !== g.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = A), k !== g.server_shop_tab_order && (e.server_shop_tab_order = k), o().isEmpty(e) || B(n.id, e)
+            w !== m.description && (e.description = w), null != R && R.startsWith("data:") && (e.cover_image = R), T !== s && (e.full_server_gate = T === y.e3.ALL_CHANNELS), A !== m.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = A), k !== m.server_shop_tab_order && (e.server_shop_tab_order = k), o().isEmpty(e) || B(n.id, e)
           },
           saveButtonTooltip: Y ? true : E.intl.string(E.t["6HRvit"])
         })

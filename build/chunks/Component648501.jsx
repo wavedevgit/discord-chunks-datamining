@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 648501, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -45,10 +45,10 @@ function N(e) {
     isNewChannel: L,
     muted: M,
     resolvedUnreadSetting: k
-  } = e, G = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), U = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), W = (0, f.PK)(n.id) && n.isGuildStageVoice(), z = (0, v.ZP)({
+  } = e, G = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), U = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), z = (0, f.PK)(n.id) && n.isGuildStageVoice(), W = (0, v.ZP)({
     channel: n,
     locked: F,
-    video: (H || W) && null == V,
+    video: (H || z) && null == V,
     selected: N
   }), K = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([p.Z], () => {
     var e, t;
@@ -79,9 +79,9 @@ function N(e) {
     children: (0, o.NGo)(Y)
   });
   let Q = null != (t = null == w ? true : w.length) ? t : 0;
-  return null != T && T && z ? (0, r.jsx)(x.Z, {
+  return null != T && T && W ? (0, r.jsx)(x.Z, {
     userCount: Q,
-    video: H || W,
+    video: H || z,
     channel: n
   }) : Z && (0, _.a)(w) && q ? (0, r.jsx)(o.IGR, {
     text: I.intl.string(I.t.dI3q4h),

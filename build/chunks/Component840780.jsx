@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 840780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ew
@@ -476,7 +476,7 @@ let ew = (0, Chunk730749.Z)(function(e) {
       return i
     }(e, ["guildId"]);
   let o = (0, u.e7)([ee.default], () => ee.default.getId()),
-    a = (0, u.e7)([U.ZP, eu.Z], () => (0, z.Z)(U.ZP, eu.Z)),
+    a = (0, u.e7)([U.ZP, eu.Z], () => (0, W.Z)(U.ZP, eu.Z)),
     s = (0, u.e7)([es.Z, et.Z], () => et.Z.getChannel(es.Z.getVoiceChannelId())),
     d = (0, u.e7)([E.ZP], () => E.ZP.getConnectedActivityChannelId()),
     f = (0, u.e7)([et.Z], () => et.Z.getChannel(d)),
@@ -496,7 +496,7 @@ let ew = (0, Chunk730749.Z)(function(e) {
     M = (0, u.e7)([ec.default, ea.Z], () => null != f ? (0, A.F6)(f, ec.default, ea.Z) : true),
     k = (0, q.Z)(),
     [B, H] = i.useState(false),
-    W = (0, u.e7)([Y.Z], () => Y.Z.getWindowOpen(ey.KJ3.ACTIVITY_POPOUT)),
+    z = (0, u.e7)([Y.Z], () => Y.Z.getWindowOpen(ey.KJ3.ACTIVITY_POPOUT)),
     {
       hasAlreadyLinked: K,
       canStartAuthorization: Q,
@@ -548,7 +548,7 @@ let ew = (0, Chunk730749.Z)(function(e) {
     streamQualityIndicator: k,
     isForceShowSharingPopout: B,
     setIsForceShowSharingPopout: H,
-    isActivityPopoutOpen: W,
+    isActivityPopoutOpen: z,
     hasAlreadyLinked: K,
     blockAccountLinkDismissibleContent: !eO || !e_,
     accountLinkCopyConfig: ej,

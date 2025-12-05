@@ -81,8 +81,8 @@ function R(e) {
   } = (0, T.Z)({
     location: "ChannelCallHeaderToolbar"
   }), L = !P && R && (t.isGuildVoiceOrThread() || t.isGroupDM()), {
-    enabled: D,
-    inInbox: k
+    enabled: k,
+    inInbox: D
   } = C.Z.useExperiment({
     location: "ChannelCallHeaderToolbar"
   }), U = [];
@@ -151,7 +151,7 @@ function R(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n))
     }
-  }, "call-members-popout")), D && !k && U.push((0, i.jsx)(y.Z, {
+  }, "call-members-popout")), k && !D && U.push((0, i.jsx)(y.Z, {
     className: w.button
   }, "for-later")), L && U.push((0, i.jsx)(j.Z, {
     className: a()(w.button, {

@@ -274,10 +274,10 @@ class j extends Chunk473749.PureComponent {
         selectedSection: e
       })
     }), S(this, "handleToggleTextChatNotifications", () => {
-      a.Z.setNotificationDisabledSetting(m.i.TEXT_CHAT, !this.props.textChatDisabled), Z()
+      a.Z.setNotificationDisabledSetting(_.i.TEXT_CHAT, !this.props.textChatDisabled), Z()
     }), S(this, "handleToggleInviteNotification", () => {
       let e = this.props.shouldShowInviteNotification;
-      a.Z.setNotificationDisabledSetting(m.i.GAME_ACTIVITY, !e)
+      a.Z.setNotificationDisabledSetting(_.i.GAME_ACTIVITY, !e)
     })
   }
 }
@@ -293,15 +293,15 @@ function C(e) {
     textChatDisabled: a,
     shouldShowKeybindIndicators: c,
     shouldShowInviteNotification: d
-  } = (0, s.cj)([p.default, b.Z], () => ({
-    avatarSizeMode: p.default.getAvatarSizeMode(),
-    displayNameMode: p.default.getDisplayNameMode(),
-    displayUserMode: p.default.getDisplayUserMode(),
-    notificationPositionMode: p.default.getNotificationPositionMode(),
-    textChatDisabled: b.Z.isNotificationDisabled(_.n0.TextChat),
-    shouldShowKeybindIndicators: p.default.showKeybindIndicators,
-    shouldShowInviteNotification: !b.Z.isNotificationDisabled(_.n0.ActivityInvite)
-  })), u = (0, y.Z)({
+  } = (0, s.cj)([h.default, y.Z], () => ({
+    avatarSizeMode: h.default.getAvatarSizeMode(),
+    displayNameMode: h.default.getDisplayNameMode(),
+    displayUserMode: h.default.getDisplayUserMode(),
+    notificationPositionMode: h.default.getNotificationPositionMode(),
+    textChatDisabled: y.Z.isNotificationDisabled(b.n0.TextChat),
+    shouldShowKeybindIndicators: h.default.showKeybindIndicators,
+    shouldShowInviteNotification: !y.Z.isNotificationDisabled(b.n0.ActivityInvite)
+  })), u = (0, m.Z)({
     location: "Overlay Settings"
   });
   return (0, i.jsx)(j, {
