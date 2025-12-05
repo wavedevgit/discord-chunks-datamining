@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   X: () => p,
-  Z: () => f
+  Z: () => m
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -103,7 +103,7 @@ function p(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     invite: t,
     channel: n,

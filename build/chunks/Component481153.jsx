@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
 let y = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z, Chunk594174.default], e => {
   let {
     giftCode: t
-  } = e, n = m.Z.get(t.skuId), {
+  } = e, n = f.Z.get(t.skuId), {
     subscriptionPlanId: r
   } = t;
   return {
@@ -45,17 +45,17 @@ let y = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
     sku: a,
     application: c,
     subscriptionPlan: p
-  } = e, f = null == s ? v.intl.string(v.t.lTGZAl) : v.intl.formatToPlainString(v.t.TjWdPc, {
+  } = e, m = null == s ? v.intl.string(v.t.lTGZAl) : v.intl.formatToPlainString(v.t.TjWdPc, {
     username: s.username
-  }), m = a.name;
-  return null != p && (m = v.intl.formatToPlainString(p.interval === E.rV.MONTH ? v.t.CTpcCZ : v.t["rgPWG/"], {
+  }), f = a.name;
+  return null != p && (f = v.intl.formatToPlainString(p.interval === E.rV.MONTH ? v.t.CTpcCZ : v.t["rgPWG/"], {
     skuName: a.name,
     intervalCount: p.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
     children: [null != n.giftStyle ? (0, r.jsx)(g.Z, {
       defaultAnimationState: h.SR.LOOP,
       giftStyle: n.giftStyle,
-      className: b.seasonalIcon
+      className: j.seasonalIcon
     }) : (0, r.jsx)(u.qE, {
       src: null != s ? s.getAvatarURL(true, 100) : null,
       size: o.EFr.DEPRECATED_SIZE_100,
@@ -68,15 +68,15 @@ let y = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
       })]
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: f
+        children: m
       }), (0, r.jsxs)(u.Dx, {
-        className: l()(I.marginTop8, j.flexCenter),
+        className: l()(I.marginTop8, b.flexCenter),
         children: [a.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
           size: d.A.MEDIUM,
-          className: b.applicationIcon,
+          className: j.applicationIcon,
           game: c,
           skuId: a.id
-        }), m]
+        }), f]
       })]
     })]
   })

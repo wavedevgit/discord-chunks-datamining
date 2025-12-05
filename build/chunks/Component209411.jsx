@@ -26,7 +26,7 @@ function x(e) {
       if (function(e) {
           var t;
           let n = (0, l.LX)(e, {
-            path: m.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
+            path: f.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
           });
           return (null == n || null == (t = n.params) ? true : t.channelId) === _.oC.ROLE_SUBSCRIPTIONS
         }(t)) g.dL(t);
@@ -43,8 +43,8 @@ function x(e) {
       loginStatus: p.default.getLoginStatus()
     })),
     {
-      location: b,
-      redirectTo: j
+      location: j,
+      redirectTo: b
     } = e,
     [I, y] = i.useState(E);
 
@@ -61,13 +61,13 @@ function x(e) {
     }), y(false)
   }
   return ((0, u.ZP)(() => {
-    if (null != b) {
+    if (null != j) {
       let {
         handoff_key: e,
         handoff_token: t
-      } = (0, s.parse)(b.search);
+      } = (0, s.parse)(j.search);
       if (null != e && null != t) {
-        let n = null != j ? (0, d.L)(j) : true;
+        let n = null != b ? (0, d.L)(b) : true;
         I ? o.Z.logout("handoff", null).finally(() => {
           S({
             handoffKey: e,
@@ -81,7 +81,7 @@ function x(e) {
         })
       }
     }
-  }), I || v === m.u34.LOGGING_IN) ? (0, r.jsx)(f.q, {}) : (0, r.jsx)(f.Z, (t = function(e) {
+  }), I || v === f.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

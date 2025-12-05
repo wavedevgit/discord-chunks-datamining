@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -81,8 +81,8 @@ let B = Chunk473749.memo(function e(t) {
       onContextMenu: B,
       onClick: V,
       disableInteraction: H = false,
-      hasThread: W,
-      treatSpam: z
+      hasThread: z,
+      treatSpam: W
     } = t,
     K = D.OBS.has(s.type) ? s.messageReference : true,
     Y = (0, a.e7)([h.Z], () => h.Z.getMessageByReference(K)),
@@ -123,7 +123,7 @@ let B = Chunk473749.memo(function e(t) {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYM/"] : m.Z.isIgnoredForMessage(s) ? i = L.t["VFWjc+"] : (0, O.DQ)(s) && z && (i = L.t.xfkfTK), true !== i) ? (0, r.jsx)(F, {
+  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYM/"] : m.Z.isIgnoredForMessage(s) ? i = L.t["VFWjc+"] : (0, O.DQ)(s) && W && (i = L.t.xfkfTK), true !== i) ? (0, r.jsx)(F, {
     className: M,
     compact: R,
     count: 1,
@@ -151,7 +151,7 @@ let B = Chunk473749.memo(function e(t) {
       disableReactionCreates: en,
       disableComponentInteractivity: true,
       disableReactionUpdates: false,
-      renderThreadAccessory: W,
+      renderThreadAccessory: z,
       inlineAttachmentMedia: Q,
       inlineEmbedMedia: X,
       renderEmbeds: J,
@@ -168,7 +168,7 @@ let B = Chunk473749.memo(function e(t) {
     childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: B,
     onClick: V,
-    hasThread: false !== W && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
+    hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
     hasReply: s.type === D.uaV.REPLY,
     isSystemMessage: (0, v.Z)(s),
     messageRef: ec,

@@ -1,42 +1,105 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 13873 **/
 /** chunk id: 756679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Jv: () => s,
-  v9: () => a,
-  xY: () => c
+  Lz: () => b,
+  cJ: () => O
 }), require("./388685.js");
-var Chunk818083 = require("./818083.js"),
+var Chunk442837 = require("./442837.js"),
+  Chunk818083 = require("./818083.js"),
   Chunk141537 = require("./141537.js"),
+  Chunk314897 = require("./314897.js"),
+  Chunk699516 = require("./699516.js"),
   Chunk981631 = require("./981631.js");
-let o = (0, Chunk818083.B)({
-    kind: "user",
-    id: "2025-11_invite_friend_members",
-    label: "Show Friends in Server on Invite Modal",
-    defaultConfig: {
-      showFriendsInServer: false,
-      showInviter: false
-    },
-    treatments: [{
-      id: 1,
-      label: "Show Friends in Server",
-      config: {
-        showFriendsInServer: true,
-        showInviter: false
-      }
-    }, {
-      id: 2,
-      label: "Show Friends in Server and Inviter",
-      config: {
-        showFriendsInServer: true,
-        showInviter: true
-      }
-    }]
-  }),
-  a = e => (0, i.sD)(o, e),
-  s = e => (0, i.Z6)(o, e);
 
-function c(e) {
+function d(e, t) {
+  if (null == e) return {};
+  var n, r, i = function(e, t) {
+    if (null == e) return {};
+    var n, r, i = {},
+      l = Object.keys(e);
+    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    return i
+  }(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var l = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+let s = (0, Chunk818083.B)({
+  kind: "user",
+  id: "2025-11_invite_friend_members",
+  label: "Show Friends in Server on Invite Modal",
+  defaultConfig: {
+    showFriendsInServer: false,
+    showInviter: false
+  },
+  treatments: [{
+    id: 1,
+    label: "Show Friends in Server",
+    config: {
+      showFriendsInServer: true,
+      showInviter: false
+    }
+  }, {
+    id: 2,
+    label: "Show Friends in Server and Inviter",
+    config: {
+      showFriendsInServer: true,
+      showInviter: true
+    }
+  }]
+});
+
+function a(e) {
   if (null == e) returnfalse;
   let t = e.features;
-  return Array.isArray(t) ? !t.includes(l.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) : !(t instanceof Set) || !t.has(l.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
+  return Array.isArray(t) ? !t.includes(c.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) : !(t instanceof Set) || !t.has(c.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
+}
+let f = {
+  showFriendsInServer: false,
+  showInviter: false
+};
+
+function O(e) {
+  var t, n;
+  let {
+    guild: i
+  } = e, c = d(e, ["guild"]), O = (0, r.e7)([o.default], () => o.default.isAuthenticated()), b = (0, r.e7)([u.Z], () => u.Z.getFriendCount() > 0), g = a(i), p = O && b && g, v = (0, l.sD)(s, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
+      })
+    }
+    return e
+  }({}, c), n = n = {
+    disable: !p
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+  }), t));
+  return p ? v : f
+}
+
+function b(e) {
+  let {
+    guild: t
+  } = e, n = d(e, ["guild"]), r = o.default.isAuthenticated(), i = u.Z.getFriendCount() > 0;
+  return r && i && a(t) ? (0, l.Z6)(s, n) : f
 }

@@ -110,16 +110,16 @@ function M(e) {
     canInvite: M,
     canManageGuild: R,
     canMessage: L
-  } = (0, f.TE)(t, l), k = (0, s.e7)([v.default], () => {
+  } = (0, f.TE)(t, l), D = (0, s.e7)([v.default], () => {
     var e, t;
     return (null == (e = v.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = v.default.getCurrentUser()) ? true : t.mobile) === true
   }), {
-    guildPopulated: D,
+    guildPopulated: k,
     guildMessaged: U,
     guildPersonalized: V
   } = (0, f.h_)(l), {
-    handleInvite: F,
-    handleMessage: H,
+    handleInvite: H,
+    handleMessage: F,
     handlePersonalize: B,
     handleDownload: G,
     handleAddApplication: z
@@ -194,7 +194,7 @@ function M(e) {
         }))
       }, [e])
     }
-  }(l), W = !(k || D || U || V), {
+  }(l), W = !(D || k || U || V), {
     titleAnimatedStyle: q,
     opacities: K
   } = function(e) {
@@ -252,8 +252,8 @@ function M(e) {
     children: (0, i.jsx)(w, {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0Ta),
-      completed: D,
-      onClick: F
+      completed: k,
+      onClick: H
     })
   }, "invite")), R && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -275,7 +275,7 @@ function M(e) {
       iconUrl: u.qMX,
       header: Z.intl.string(Z.t["SoP7+l"]),
       completed: U,
-      onClick: H
+      onClick: F
     })
   }, "message")), (0, E.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -285,7 +285,7 @@ function M(e) {
     children: (0, i.jsx)(w, {
       iconUrl: u.yIb,
       header: Z.intl.string(Z.t.pGVNI9),
-      completed: k,
+      completed: D,
       onClick: G
     })
   }, "download")), Q.push((0, i.jsx)(o.Z.div, {

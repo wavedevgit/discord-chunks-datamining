@@ -51,7 +51,7 @@ class k extends Chunk473749.PureComponent {
     (0, Chunk108427.e)("guildTemplate"), Chunk436620.KO || Chunk954824.Z.launch("discord://" + Chunk981631.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && f.Z.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && m.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
     return Z.KO ? (0, r.jsx)("div", {
@@ -165,8 +165,8 @@ function D(e) {
   let t = {
     guildTemplate: (0, c.e7)([g.Z], () => g.Z.getGuildTemplate(e.code)),
     nativeAppState: (0, c.e7)([h.Z], () => h.Z.getState(e.code)),
-    authenticated: (0, c.e7)([b.default], () => b.default.isAuthenticated()),
-    defaultRoute: (0, c.e7)([j.Z], () => j.Z.defaultRoute)
+    authenticated: (0, c.e7)([j.default], () => j.default.isAuthenticated()),
+    defaultRoute: (0, c.e7)([b.Z], () => b.Z.defaultRoute)
   };
   return (0, r.jsx)(k, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -205,7 +205,7 @@ function M(e) {
   });
   return (0, r.jsx)(S.Z, {
     className: R.authBox,
-    children: () => [(0, r.jsx)(m.Z, {
+    children: () => [(0, r.jsx)(f.Z, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
       className: R.formContainer,

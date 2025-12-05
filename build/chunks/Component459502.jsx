@@ -1,47 +1,49 @@
 /** Chunk was on 34740 **/
 /** chunk id: 459502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
-}), require("./388685.js");
-var Chunk54381 = require("./54381.js"),
-  Chunk473749 = require("./473749.js"),
-  Chunk442837 = require("./442837.js"),
+  Z: () => C
+});
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
+var Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk357156 = require("./357156.js"),
   Chunk592125 = require("./592125.js"),
+  Chunk115648 = require("./115648.js"),
   Chunk15274 = require("./15274.jsx"),
   Chunk924301 = require("./924301.js"),
+  Chunk504160 = require("./504160.js"),
   Chunk554747 = require("./554747.js"),
   Chunk854698 = require("./854698.js"),
   Chunk688641 = require("./688641.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk837815 = require("./837815.js");
 
-function b(e) {
+function C(e) {
   let {
     channelId: t,
-    showDismiss: b = true
-  } = e, C = (0, l.e7)([c.Z], () => c.Z.getChannel(t), [t]), y = (0, p.sz)(t), v = null != (0, p.qY)(t), {
-    canManageGuildEvent: _
-  } = (0, s.XJ)(C), [O, x] = r.useState(() => new Set), E = r.useMemo(() => y.filter(e => !O.has(e.id)), [y, O]), j = (0, l.cj)([d.ZP], () => E.reduce((e, t) => (e[t.id] = d.ZP.getUserCount(t.id, (0, h.DK)(t)), e), {}), [E]);
-  return E.length < 1 || v ? null : (0, i.jsx)(i.Fragment, {
-    children: E.map(e => (0, i.jsx)(f.Z, {
-      icon: (0, i.jsx)(o.Que, {
+    showDismiss: C = true
+  } = e, y = (0, r.e7)([s.Z], () => s.Z.getChannel(t), [t]), v = (0, h.sz)(t), _ = null != (0, h.qY)(t), {
+    canManageGuildEvent: O
+  } = (0, o.XJ)(y), x = (0, r.e7)([c.Z], () => v.filter(e => !c.Z.isEventDismissed(e.id)), [v]), E = (0, r.cj)([d.ZP], () => x.reduce((e, t) => (e[t.id] = d.ZP.getUserCount(t.id, (0, f.DK)(t)), e), {}), [x]);
+  return x.length < 1 || _ ? null : (0, i.jsx)(i.Fragment, {
+    children: x.map(e => (0, i.jsx)(m.Z, {
+      icon: (0, i.jsx)(a.Que, {
         size: "custom",
         color: "currentColor",
         height: 20,
         width: 20
       }),
-      color: a.Z.unsafe_rawColors.GREEN_360.css,
-      title: m.intl.formatToPlainString(_(e) ? m.t["1vGXqM"] : m.t.xMJyla, {
+      color: l.Z.unsafe_rawColors.GREEN_360.css,
+      title: g.intl.formatToPlainString(O(e) ? g.t["1vGXqM"] : g.t.xMJyla, {
         eventName: e.name
       }),
-      description: m.intl.formatToPlainString(m.t.PTebCR, {
-        startTime: (0, h.ub)(e.scheduled_start_time).startDateTimeString
+      description: g.intl.formatToPlainString(g.t.PTebCR, {
+        startTime: (0, f.ub)(e.scheduled_start_time).startDateTimeString
       }),
       onClick: () => {
-        _(e) ? (0, o.ZDy)(async () => {
+        O(e) ? (0, a.ZDy)(async () => {
           let {
             default: t
           } = await Promise.all([n.e("84722"), n.e("51885")]).then(n.bind(n, 296864));
@@ -81,12 +83,12 @@ function b(e) {
           eventId: e.id
         })
       },
-      onDismiss: b ? () => {
+      onDismiss: C ? () => {
         var t;
-        return t = e.id, void x(e => new Set(e).add(t))
+        return t = e.id, void(0, p.Xy)(t)
       } : true,
-      userCount: j[e.id],
-      className: g.eventPrompt
+      userCount: E[e.id],
+      className: b.eventPrompt
     }, e.id))
   })
 }

@@ -66,7 +66,7 @@ class c extends Chunk473749.Component {
           }
         }
       }
-    } = this, h = function(e, t) {
+    } = this, p = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -92,7 +92,7 @@ class c extends Chunk473749.Component {
         })
       }
       return e
-    }({}, h), t = t = {
+    }({}, p), t = t = {
       locked: require,
       onNotificationShow: this.handleNotificationShow,
       onDismissClick: null != Chunk981631 ? this.handleDismissClick : true,

@@ -24,31 +24,31 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = {
+let _ = {
     x: 0,
     y: 0
   },
-  y = false;
+  m = false;
 
-function b(e) {
+function y(e) {
   let {
     clientX: t,
     clientY: n
   } = e;
-  y = true, m.x = t, m.y = n
+  m = true, _.x = t, _.y = n
 }
-let _ = new Map;
+let b = new Map;
 
 function v(e, t) {
-  if (null == t) _.delete(e), 0 === _.size && (window.removeEventListener("mousemove", b), y = false);
+  if (null == t) b.delete(e), 0 === b.size && (window.removeEventListener("mousemove", y), m = false);
   else {
-    let n = _.get(e);
+    let n = b.get(e);
     if (null != n && (0, a.Z)(n.zone, t.zone)) return;
-    0 === _.size && window.addEventListener("mousemove", b), _.set(e, t)
+    0 === b.size && window.addEventListener("mousemove", y), b.set(e, t)
   }
   if (f.isPlatformEmbedded)
     if (u.default.isCurrentPidOutOfProcess()) {
-      let e = Array.from(_.values()).map(e => {
+      let e = Array.from(b.values()).map(e => {
         let {
           zone: t
         } = e;
@@ -63,19 +63,19 @@ function v(e, t) {
       d.Z.setClickZones(e)
     } else {
       var n;
-      let e = (0, h.M)();
+      let e = (0, p.M)();
       if (null == e) return;
       e.broadcastCommand({
         message: "set_click_zones",
-        zones: Array.from(_.values()).map(e => {
+        zones: Array.from(b.values()).map(e => {
           let {
             zone: t
           } = e;
           return t
         })
       }), n = e, O || (n.setClickZoneCallback((e, t, n) => {
-        let i = _.get(e);
-        null != i && (y || (m.x = t, m.y = n), i.instance.click())
+        let i = b.get(e);
+        null != i && (m || (_.x = t, _.y = n), i.instance.click())
       }), O = true)
     }
 }
@@ -100,8 +100,8 @@ class E extends(i = Chunk473749.PureComponent) {
     this.updateZone(), this.interval.start(this.props.observeInterval, this.updateZone)
   }
   click() {
-    let e = (0, Chunk671999.B)("click", m.x, m.y);
-    (0, Chunk671999.J)(module, m.x, m.y)
+    let e = (0, Chunk671999.B)("click", _.x, _.y);
+    (0, Chunk671999.J)(module, _.x, _.y)
   }
   constructor(...e) {
     super(...e), g(this, "zone", o().uniqueId("ClickArea")), g(this, "interval", new c.Xp), g(this, "updateZone", () => {

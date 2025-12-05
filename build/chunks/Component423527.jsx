@@ -182,7 +182,7 @@ class eu extends(r = Chunk473749.PureComponent) {
       giftCode: o,
       onRegister: c,
       usernameSuggestion: u
-    } = this.props, d = null != Chunk120356 ? Chunk120356.code : null, h = null != Chunk593473 ? Chunk593473.skuId : null, g = Chunk882037.MD.getState(), p = (0, Chunk624138.Ew)(Chunk990547) ? null : exports === Chunk990547, f = Chunk188785.a ? await (0, Chunk692483.K)(exports) : exports, _ = Chunk188785.a ? await (0, Chunk692483.K)(require) : require;
+    } = this.props, d = null != Chunk120356 ? Chunk120356.code : null, h = null != Chunk593473 ? Chunk593473.skuId : null, g = Chunk882037.MD.getState(), p = (0, Chunk624138.Ew)(Chunk990547) ? null : exports === Chunk990547, m = Chunk188785.a ? await (0, Chunk692483.K)(exports) : exports, _ = Chunk188785.a ? await (0, Chunk692483.K)(require) : require;
     Chunk585483.S.dispatch(Chunk981631.CkL.WAVE_EMPHASIZE), this.setState({
       registering: true,
       apiErrors: {}
@@ -429,23 +429,23 @@ class eu extends(r = Chunk473749.PureComponent) {
       parsedDateOfBirth: u,
       globalNameFocused: d,
       emailClientError: h,
-      usernameClientError: f,
-      passwordClientError: m,
+      usernameClientError: m,
+      passwordClientError: f,
       dateOfBirthClientError: _,
       registering: x,
       apiErrors: {
         email: v,
-        username: b,
-        global_name: j,
+        username: j,
+        global_name: b,
         password: I,
         date_of_birth: S
       } = {}
     } = this.state, {
-      consentRequired: O,
-      authBoxClassName: C,
+      consentRequired: N,
+      authBoxClassName: O,
       hasLoggedInAccounts: T
     } = this.props, A = this.renderErrorMessage(), Z = (0, i.jsx)(g.u, {
-      text: !c && O ? er.intl.string(er.t.AY4IVA) : null,
+      text: !c && N ? er.intl.string(er.t.AY4IVA) : null,
       children: (0, i.jsx)("div", {
         className: es.marginTop20,
         children: (0, i.jsx)(p.Button, {
@@ -499,7 +499,7 @@ class eu extends(r = Chunk473749.PureComponent) {
         onChange: e => this.setState({
           globalName: e
         }),
-        error: ec(j),
+        error: ec(b),
         maxLength: en.hy,
         autoComplete: "off",
         setRef: e => {
@@ -536,7 +536,7 @@ class eu extends(r = Chunk473749.PureComponent) {
           name: "username",
           value: r,
           onChange: R,
-          error: null != f ? f : ec(b),
+          error: null != m ? m : ec(j),
           autoComplete: "off",
           setRef: e => {
             this.usernameRef = e
@@ -553,7 +553,7 @@ class eu extends(r = Chunk473749.PureComponent) {
           password: e,
           passwordClientError: 0 === e.length ? er.intl.string(er.t.EkokLy) : null
         }),
-        error: null != m ? m : ec(I),
+        error: null != f ? f : ec(I),
         type: "password",
         autoComplete: "new-password",
         setRef: e => {
@@ -573,7 +573,7 @@ class eu extends(r = Chunk473749.PureComponent) {
         required: true,
         onFocus: this.trackInputFocus,
         onBlur: this.trackInputBlur
-      }), (0, i.jsx)(N.Z, {}), this.renderConsentComponent(), Z, A, ee.a ? null : (0, i.jsx)("div", {
+      }), (0, i.jsx)(C.Z, {}), this.renderConsentComponent(), Z, A, ee.a ? null : (0, i.jsx)("div", {
         className: es.marginTop20,
         children: (0, i.jsx)(p.Avr, {
           text: er.intl.string(er.t["1lWxux"]),
@@ -585,7 +585,7 @@ class eu extends(r = Chunk473749.PureComponent) {
     return t ? (0, i.jsx)(Q.Z, {
       onSubmit: this.handleSubmit,
       tag: "form",
-      className: a()(C, ei.horizontalAuthBox),
+      className: a()(O, ei.horizontalAuthBox),
       children: () => [L, (0, i.jsxs)("div", {
         className: ei.flex,
         children: [(0, i.jsx)(y.Dx, {
@@ -596,7 +596,7 @@ class eu extends(r = Chunk473749.PureComponent) {
     }) : (0, i.jsxs)(y.ZP, {
       onSubmit: this.handleSubmit,
       tag: "form",
-      className: C,
+      className: O,
       children: [T ? (0, i.jsx)("div", {
         className: ei.goBackButton,
         children: (0, i.jsx)(p.Button, {
@@ -646,7 +646,7 @@ class eu extends(r = Chunk473749.PureComponent) {
         d = null != l ? (0, o.parse)(l.search) : {};
       null != s ? t = X.Z5c.INVITE_LOGIN(s.code) : null != r ? t = X.Z5c.GIFT_CODE_LOGIN(r.code) : null != i ? t = X.Z5c.GUILD_TEMPLATE_LOGIN(i.code) : null != c ? (t = X.Z5c.LOGIN, d.redirect_to = c) : (t = X.Z5c.LOGIN, "" !== n && (d = {
         email: n
-      })), f.Z.loginReset(), u(t, {
+      })), m.Z.loginReset(), u(t, {
         search: (0, o.stringify)(d),
         source: "register"
       }), null == a || a(e), K.S.dispatch(X.CkL.WAVE_EMPHASIZE)

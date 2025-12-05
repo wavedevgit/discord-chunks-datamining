@@ -166,7 +166,7 @@ class q extends Chunk473749.PureComponent {
         shouldShowLurkerModeSuccessPopout: false
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, i.jsx)(D.Z, W(z({}, j), {
+      children: e => (0, i.jsx)(k.Z, W(z({}, j), {
         children: (0, i.jsxs)("div", {
           ref: this.textAreaContainerRef,
           children: [this.renderMemberVerificationSuccessModal(), m ? (0, i.jsx)(u.yRy, {
@@ -206,10 +206,10 @@ class q extends Chunk473749.PureComponent {
         guild: e
       } = this.props;
       null != e && (0, c.Z)({
-        title: H.intl.string(H.t.aIz1oV),
-        subtitle: H.intl.string(H.t["13tjTU"]),
+        title: F.intl.string(F.t.aIz1oV),
+        subtitle: F.intl.string(F.t["13tjTU"]),
         variant: "primary",
-        confirmText: H.intl.string(H.t["cY+Oob"]),
+        confirmText: F.intl.string(F.t["cY+Oob"]),
         onConfirm: () => g.Z.removeGuildJoinRequest(e.id)
       })
     }), G(this, "handleViewApplicationRejection", () => {
@@ -240,15 +240,15 @@ class q extends Chunk473749.PureComponent {
           reason: P.L.GUILD_PHONE_REQUIRED
         }, t))
       }, {
-        modalKey: F.M
+        modalKey: H.M
       })
     }), G(this, "handleResendVerification", () => {
       var e;
       d.Z.verifyResend();
       let t = null == (e = R.default.getCurrentUser()) ? true : e.email;
       null != t && (0, s.Z)({
-        title: H.intl.string(H.t.LykQYk),
-        subtitle: H.intl.format(H.t.azKEPy, {
+        title: F.intl.string(F.t.LykQYk),
+        subtitle: F.intl.format(F.t.azKEPy, {
           email: t
         })
       })
@@ -333,7 +333,7 @@ function K(e) {
   }), b = !!(0, v.Dc)(s), C = (0, o.e7)([x.Z], () => x.Z.shouldShowPopout(a)), O = (0, o.e7)([M.Z], () => M.Z.can(U.Plq.SEND_MESSAGES, r)), j = (0, o.e7)([_.Z], () => _.Z.getRequest(a)), {
     showLinkedLobbyApplicationLoadingIndicator: S,
     requiredLinkedLobbyApplication: P
-  } = (0, k.Z)(r.linkedLobby), I = W(z({}, c), {
+  } = (0, D.Z)(r.linkedLobby), I = W(z({}, c), {
     guild: s,
     isLurking: p,
     isFollowable: u,

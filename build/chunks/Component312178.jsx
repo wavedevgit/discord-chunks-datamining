@@ -40,7 +40,7 @@ let E = {
       dragStart: s,
       className: o
     } = e;
-    return (0, i.jsx)(b.Z, {
+    return (0, i.jsx)(y.Z, {
       dragStart: s,
       locked: n,
       pinned: r,
@@ -68,7 +68,7 @@ let E = {
       locked: s,
       pinned: o
     } = e;
-    return (0, i.jsx)(_.Z, {
+    return (0, i.jsx)(b.Z, {
       anchor: n,
       id: t,
       locked: s,
@@ -84,7 +84,7 @@ let E = {
       dragStart: r,
       className: s
     } = e;
-    return (0, i.jsx)(m.Z, {
+    return (0, i.jsx)(_.Z, {
       dragStart: r,
       dragging: t,
       locked: n,
@@ -135,11 +135,11 @@ class x extends Chunk473749.PureComponent {
       pinned: a,
       zIndex: d,
       size: u,
-      anchor: h,
+      anchor: p,
       minSize: f
-    } = module, g = (0, Chunk434529.w_)(Chunk237997, require), m = (0, Chunk434529.KR)(Chunk451478, require), {
-      resizeX: b,
-      resizeY: _,
+    } = module, g = (0, Chunk434529.w_)(Chunk237997, require), _ = (0, Chunk434529.KR)(Chunk451478, require), {
+      resizeX: y,
+      resizeY: b,
       dragAnywhere: v
     } = exports, O = (0, Chunk906037.eM)({
       locked: Chunk473749,
@@ -186,19 +186,19 @@ class x extends Chunk473749.PureComponent {
         }
       } = this;
       if (!(0, f.validResolution)(s)) return;
-      let a = (0, p.jL)(n, s),
-        u = (0, p.Ox)(i, s);
+      let a = (0, h.jL)(n, s),
+        u = (0, h.Ox)(i, s);
       (0, o.Os)(t), (0, o.nv)({
         widgetId: t,
         anchor: a,
         size: u
       });
-      let h = e === c.B.MOVE,
-        g = (0, p.PY)(n, s.width, s.height, r.width, r.height);
+      let p = e === c.B.MOVE,
+        g = (0, h.PY)(n, s.width, s.height, r.width, r.height);
       this.setState({
         lastLayoutUpdate: {
-          was_resized: null != l && l.was_resized || !h,
-          was_dragged: null != l && l.was_dragged || h,
+          was_resized: null != l && l.was_resized || !p,
+          was_dragged: null != l && l.was_dragged || p,
           widget_type: d.Z.getWidgetType(t),
           window_width: s.width,
           window_height: s.height,

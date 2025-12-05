@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => el
@@ -453,7 +453,7 @@ function el(e) {
   } = _.Z.useConfig({
     location: "VoiceChannel",
     guildId: t.id
-  }), z = null != c && c.length > 0, K = V && z, Y = H && z, q = (0, W.Z)({
+  }), W = null != c && c.length > 0, K = V && W, Y = H && W, q = (0, z.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: s,

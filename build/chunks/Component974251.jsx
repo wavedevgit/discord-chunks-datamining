@@ -141,7 +141,7 @@ let W = Chunk473749.memo(function(e) {
     }),
     eI = (0, h.o)(),
     eZ = null != (l = null == el ? true : el.length) ? l : 0,
-    eT = (0, D.Z)({
+    eT = (0, k.Z)({
       canAttachFiles: eb,
       canStartThreads: e_ || eO,
       useSlate: ex,
@@ -172,12 +172,12 @@ let W = Chunk473749.memo(function(e) {
       positionKey: null != eh ? eh : "null",
       onRequestOpen: () => {
         ey && (0, v.Q3)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
-          dismissAction: F.L.TAKE_ACTION
+          dismissAction: H.L.TAKE_ACTION
         }), ef("attachMenu")
       },
       onRequestClose: () => {
         (0, c.$sL)() || (ey && (0, v.Q3)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-          dismissAction: F.L.TAKE_ACTION
+          dismissAction: H.L.TAKE_ACTION
         }), ef(null))
       },
       renderPopout: e => {
@@ -188,7 +188,7 @@ let W = Chunk473749.memo(function(e) {
               lastClipsSession: er
             }));
           case "attachMenu":
-            return (0, i.jsx)(k.Z, z(G({}, e), {
+            return (0, i.jsx)(D.Z, z(G({}, e), {
               onClose: () => ef(null),
               options: eT,
               channel: q,
@@ -211,7 +211,7 @@ let W = Chunk473749.memo(function(e) {
         className: a()(B.attachButton, W),
         childClassName: B.attachButtonInner,
         isActive: false,
-        "aria-label": H.intl.string(H.t.d56gCa),
+        "aria-label": F.intl.string(F.t.d56gCa),
         onDoubleClick: eb ? () => {
           var e;
           return null == (e = ee.current) ? true : e.activateUploadDialogue()

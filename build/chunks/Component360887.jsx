@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx");
-let b = e => {
+let j = e => {
   let {
     title: t,
     subtitle: n,
@@ -48,15 +48,15 @@ let b = e => {
   })
 };
 
-function j(e) {
+function b(e) {
   let {
     match: t,
     location: l
-  } = e, o = (0, s.parse)(l.search).token, [d, j] = i.useState("loading"), I = i.useRef(false), y = i.useCallback(async e => {
+  } = e, o = (0, s.parse)(l.search).token, [d, b] = i.useState("loading"), I = i.useRef(false), y = i.useCallback(async e => {
     try {
       p.default.track(x.rMx.ONE_TIME_LOGIN_ATTEMPTED, {
         source: "web_page"
-      }), await c.Z.oneTimeLogin(e), j("login_success"), p.default.track(x.rMx.LOGIN_SUCCESSFUL, {
+      }), await c.Z.oneTimeLogin(e), b("login_success"), p.default.track(x.rMx.LOGIN_SUCCESSFUL, {
         source: "web_page",
         login_method: "one_time_login"
       }), n.g.location.assign(x.Z5c.APP)
@@ -66,21 +66,21 @@ function j(e) {
         source: "web_page",
         error_reason: "api_error",
         error_message: e
-      }), j("error")
+      }), b("error")
     }
   }, []), S = i.useCallback(e => {
     var t;
     let n = null != (t = g.default.getFingerprint()) ? t : g.default.getId(),
       r = "discord://login/one-time?token=".concat(encodeURIComponent(e));
-    m.Z.launch(r, e => {
+    f.Z.launch(r, e => {
       e ? (p.default.track(x.rMx.DEEP_LINK_CLICKED, {
         source: "web_page",
         destination: "discord://login/one-time",
         deep_link_provider: "protocol",
         fingerprint: n
-      }), j("app_launched")) : j("app_launch_not_supported")
+      }), b("app_launched")) : b("app_launch_not_supported")
     })
-  }, []), O = i.useCallback(e => {
+  }, []), N = i.useCallback(e => {
     var t;
     let r = null != (t = g.default.getFingerprint()) ? t : g.default.getId();
     Promise.resolve().then(n.bind(n, 536285)).then(t => {
@@ -99,7 +99,7 @@ function j(e) {
           destination: "one_time_login_modal",
           deep_link_provider: "rpc",
           fingerprint: r
-        }), j("app_launched")) : S(e)
+        }), b("app_launched")) : S(e)
       }).catch(() => {
         S(e)
       }).then(() => n.disconnect())
@@ -107,11 +107,11 @@ function j(e) {
   }, [S]);
   if (i.useEffect(() => {
       let e = null != o && "string" == typeof o,
-        t = a.tq ? "mobile" : a.Em ? "tablet" : (0, f.isDesktop)() ? "desktop_app" : "web";
+        t = a.tq ? "mobile" : a.Em ? "tablet" : (0, m.isDesktop)() ? "desktop_app" : "web";
       if (p.default.track(x.rMx.ONE_TIME_LOGIN_PAGE_VIEWED, {
           has_token: e,
           device_type: t
-        }), !e) return void j("error");
+        }), !e) return void b("error");
       if (a.tq || a.Em) {
         var n;
         let e = null == (n = p.default.getSuperProperties()) ? true : n.os;
@@ -122,9 +122,9 @@ function j(e) {
         });
         return
       }
-      if ((0, f.isDesktop)()) return void y(o);
-      I.current || (I.current = true, j("rpc_attempting"), O(o))
-    }, [o, l, y, O]), a.tq || a.Em) {
+      if ((0, m.isDesktop)()) return void y(o);
+      I.current || (I.current = true, b("rpc_attempting"), N(o))
+    }, [o, l, y, N]), a.tq || a.Em) {
     let e = null == o || "string" != typeof o ? "missing_token" : "invalid_token";
     return (0, r.jsx)(_.e, {
       token: o,
@@ -133,7 +133,7 @@ function j(e) {
     })
   }
   if ((0, h.DB)()) return null;
-  if ("app_launched" === d) return (0, r.jsx)(b, {
+  if ("app_launched" === d) return (0, r.jsx)(j, {
     title: v.intl.string(v.t.RvUUOy),
     subtitle: v.intl.string(v.t["5/lR0g"]),
     buttonText: v.intl.string(v.t["2ixEBi"]),
@@ -143,7 +143,7 @@ function j(e) {
       }), y(o)
     }
   });
-  if ("app_launch_not_supported" === d) return (0, r.jsx)(b, {
+  if ("app_launch_not_supported" === d) return (0, r.jsx)(j, {
     title: v.intl.string(v.t.qq4tjT),
     subtitle: v.intl.string(v.t.CVxYRo),
     buttonText: v.intl.string(v.t["2ixEBi"]),
@@ -151,7 +151,7 @@ function j(e) {
   });
   if ("error" === d) {
     let e = null == o || "string" != typeof o ? "missing_token" : "invalid_token";
-    return (0, r.jsx)(b, {
+    return (0, r.jsx)(j, {
       title: v.intl.string(v.t.RtCSr1),
       subtitle: v.intl.string(v.t["S+YjYJ"]),
       buttonText: v.intl.string(v.t.j3cG2p),
@@ -170,7 +170,7 @@ let I = function(e) {
   let {
     enabled: t
   } = (0, d.WW)("OneTimeLoginCardWrapper");
-  return t ? (0, r.jsx)(j, function(e) {
+  return t ? (0, r.jsx)(b, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

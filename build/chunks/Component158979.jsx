@@ -2,7 +2,7 @@
 /** chunk id: 158979, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -49,7 +49,7 @@ function g(e, t) {
   }), e
 }
 
-function m() {
+function _() {
   return (0, Chunk54381.jsx)("div", {
     className: Chunk653773.footer,
     children: (0, Chunk54381.jsx)(Chunk481060.Button, {
@@ -61,37 +61,37 @@ function m() {
   })
 }
 
-function y(e) {
+function m(e) {
   switch (e.type) {
     case u.nc.GO_LIVE_VOICE: {
       let {
         game: t,
-        voiceGuild: p
+        voiceGuild: h
       } = e, {
-        trackView: y,
-        trackClick: b
+        trackView: m,
+        trackClick: y
       } = (0, c.R)(u.n0.GoLiveNudge, {
         notif_type: u.n0.GoLiveNudge
       });
       return {
         icon: n(847881),
         title: null,
-        body: h.intl.formatToPlainString(h.t.z9znpa, {
+        body: p.intl.formatToPlainString(p.t.z9znpa, {
           game: t.name,
-          server: p.name
+          server: h.name
         }),
-        hint: () => (0, i.jsx)(m, {}),
-        renderFooter: () => (0, i.jsx)(m, {}),
+        hint: () => (0, i.jsx)(_, {}),
+        renderFooter: () => (0, i.jsx)(_, {}),
         onNotificationShow: () => {
-          y()
+          m()
         },
         onNotificationClick: (e, t) => {
-          b("unlock");
+          y("unlock");
           let c = (0, a.getPID)();
           s.Z.updateNotificationStatus(t);
           let u = o.default.isOverlayOOPEnabledForPid(c);
           if (u ? s.Z.setInputLocked(false, c) : s.Z.setInstanceLocked(false), null == l.default.getCurrentUser()) return;
-          let h = u ? {
+          let p = u ? {
             contextKey: r.u1M
           } : true;
           (0, r.ZDy)(async () => {
@@ -101,13 +101,13 @@ function y(e) {
             return t => (0, i.jsx)(e, g(f({}, t), {
               sourcePID: c,
               selectSource: false,
-              guildId: p.id,
+              guildId: h.id,
               analyticsLocation: d.Sbl.OVERLAY_NUDGE
             }))
-          }, h)
+          }, p)
         },
         onDismissClick: () => {
-          b("dismiss")
+          y("dismiss")
         }
       }
     }
@@ -116,23 +116,23 @@ function y(e) {
         game: t
       } = e, {
         trackView: l,
-        trackClick: p
+        trackClick: h
       } = (0, c.R)(u.n0.GoLiveNonVoiceNudge, {
         notif_type: u.n0.GoLiveNonVoiceNudge
       });
       return {
         icon: n(847881),
         title: null,
-        body: h.intl.formatToPlainString(h.t["0SVWgF"], {
+        body: p.intl.formatToPlainString(p.t["0SVWgF"], {
           game: t.name
         }),
-        hint: () => (0, i.jsx)(m, {}),
-        renderFooter: () => (0, i.jsx)(m, {}),
+        hint: () => (0, i.jsx)(_, {}),
+        renderFooter: () => (0, i.jsx)(_, {}),
         onNotificationShow: () => {
           l()
         },
         onNotificationClick: (e, t) => {
-          p("unlock");
+          h("unlock");
           let l = (0, a.getPID)();
           s.Z.updateNotificationStatus(t);
           let c = o.default.isOverlayOOPEnabledForPid(l);
@@ -153,7 +153,7 @@ function y(e) {
           }, u)
         },
         onDismissClick: () => {
-          p("dismiss")
+          h("dismiss")
         }
       }
     }

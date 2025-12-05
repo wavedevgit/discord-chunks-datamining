@@ -2,7 +2,7 @@
 /** chunk id: 617730, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,19 +49,19 @@ function f(e, t) {
   }), e
 }
 
-function m(e) {
+function f(e) {
   let {
     invite: t,
     onAcceptInvite: n,
-    disableUser: m = false
+    disableUser: f = false
   } = e;
   if (null == t) return null;
   let _ = null != t.guild ? (0, o.Qs)(t.guild) : null,
     x = null != t.channel ? (0, l.jD)(t.channel) : null,
     E = null != t.target_application ? new s.ZP(t.target_application) : null,
-    v = m || null == t.inviter ? null : new a.Z(t.inviter),
-    b = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.GuildFeatures.COMMUNITY)) && null != v && (0, c.WT)(t),
-    j = (e => {
+    v = f || null == t.inviter ? null : new a.Z(t.inviter),
+    j = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.GuildFeatures.COMMUNITY)) && null != v && (0, c.WT)(t),
+    b = (e => {
       let {
         state: t
       } = e;
@@ -83,18 +83,18 @@ function m(e) {
   return (0, c.JI)(t) ? (0, r.jsx)(u.Z, {
     invite: t,
     channel: x,
-    isSubmitting: j,
+    isSubmitting: b,
     onAcceptInvite: n
   }) : (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(c.GB, {
       application: E,
       guild: _,
-      user: b || (0, c.X7)(t) ? v : null
-    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, f(p({}, I), {
-      showBigUserIcon: b
-    })), (0, r.jsx)(c.UM, f(p({}, I), {
-      showBigUserIcon: b
+      user: j || (0, c.X7)(t) ? v : null
+    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, m(p({}, I), {
+      showBigUserIcon: j
+    })), (0, r.jsx)(c.UM, m(p({}, I), {
+      showBigUserIcon: j
     })), (0, r.jsx)(c.V6, p({}, I)), (0, r.jsx)("div", {
       className: g.acceptButton,
       children: (0, r.jsx)(i.Button, {
@@ -102,7 +102,7 @@ function m(e) {
         size: "md",
         text: h.intl.string(h.t.ohMvm1),
         onClick: n,
-        loading: j,
+        loading: b,
         fullWidth: true
       })
     })]

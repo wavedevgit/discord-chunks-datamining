@@ -43,13 +43,13 @@ function E(e) {
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: M
-  } = (0, C.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), L = w || M || R, k = (0, m.sR)({
+  } = (0, C.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), L = w || M || R, D = (0, m.sR)({
     isSoundboardButtonDisabled: L
-  }), [D, U] = (0, h.cv)(k), {
+  }), [k, U] = (0, h.cv)(D), {
     analyticsLocations: V
   } = (0, u.ZP)(), {
-    isHovered: F,
-    setIsHovered: H,
+    isHovered: H,
+    setIsHovered: F,
     onMouseEnter: B,
     onMouseLeave: G
   } = (0, f.Z)(200, 300);
@@ -103,14 +103,14 @@ function E(e) {
   let q = r.useRef(null);
   return (0, i.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: F && (j === O.D.SOUNDBOARD || null == j) || j === O.D.SOUNDBOARD,
+    shouldShow: H && (j === O.D.SOUNDBOARD || null == j) || j === O.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      H(false), null == S || S(true)
+      F(false), null == S || S(true)
     },
     renderPopout: e => {
       let {
@@ -124,7 +124,7 @@ function E(e) {
             guildId: A,
             channel: t,
             onClose: n,
-            gridNotice: D === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(g.o, {
+            gridNotice: k === a.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(g.o, {
               onClose: n,
               markAsDismissed: U
             }),
@@ -148,8 +148,8 @@ function E(e) {
       onMouseLeave: () => {
         null == j && (G(), N())
       },
-      isActive: F || j === O.D.SOUNDBOARD,
-      color: F || j === O.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: H || j === O.D.SOUNDBOARD,
+      color: H || j === O.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

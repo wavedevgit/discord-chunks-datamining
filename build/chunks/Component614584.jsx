@@ -69,7 +69,7 @@ let j = Chunk473749.memo(function(e) {
     showReplySpine: A
   } = e, w = j.state === h.Y.LOADED ? j.message : true, M = (0, b.Uj)(w), R = s.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, L = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), k = r.useMemo(() => {
+  }).enabled, L = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), D = r.useMemo(() => {
     if (null == w) return null;
     let e = (0, o.Z)(w);
     if (e.type === _.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id), {
@@ -114,12 +114,12 @@ let j = Chunk473749.memo(function(e) {
     }
     return null
   }, [w, M, S, L, R]), {
-    isReplyAuthorBlocked: D,
+    isReplyAuthorBlocked: k,
     isReplyAuthorIgnored: U
   } = (0, l.cj)([f.Z], () => ({
     isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
     isReplyAuthorIgnored: null != w && f.Z.isIgnoredForMessage(w)
-  }), [w]), V = (0, v.wq)(null == w ? true : w.author.id, S.id), F = (0, v.$3)(n, w), H = (0, v.Wl)(w, S, I, T), B = (0, v.rY)(Z, T), G = r.useCallback(() => {
+  }), [w]), V = (0, v.wq)(null == w ? true : w.author.id, S.id), H = (0, v.$3)(n, w), F = (0, v.Wl)(w, S, I, T), B = (0, v.rY)(Z, T), G = r.useCallback(() => {
     T({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
@@ -131,16 +131,16 @@ let j = Chunk473749.memo(function(e) {
     channel: S,
     baseAuthor: z,
     referencedMessage: j,
-    content: k,
+    content: D,
     compact: P,
-    isReplyAuthorBlocked: D,
+    isReplyAuthorBlocked: k,
     isReplyAuthorIgnored: U,
     showAvatarPopout: Z,
     showUsernamePopout: I,
     renderPopout: y.Z,
     onClickAvatar: B,
-    onClickUsername: H,
-    onClickReply: F,
+    onClickUsername: F,
+    onClickReply: H,
     onContextMenu: V,
     onPopoutRequestClose: G,
     isReplySpineClickable: N,

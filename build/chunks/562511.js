@@ -1,8 +1,8 @@
 /** Chunk was on 93886 **/
 /** chunk id: 562511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A2: () => v,
-  S3: () => f
+  A2: () => _,
+  S3: () => v
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,9 +16,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk864133 = require("./864133.js"),
   Chunk981631 = require("./981631.js");
 
-function f(e) {
+function v(e) {
   let t = function(e) {
-    let t = (0, o.FT)(a.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds);
+    let t = (0, o.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds);
     return (0, i.e7)([c.Z, d.default, s.ZP], () => {
       var t, n;
       if (null === e) returnfalse;
@@ -26,13 +26,13 @@ function f(e) {
       if (true === r || !(0, u.up)(r) || null == r.profile || null === r.profile.tag) returnfalse;
       let i = d.default.getCurrentUser();
       if (true === i || (null == (t = i.primaryGuild) ? true : t.identityGuildId) === r.id && (null == (n = i.primaryGuild) ? true : n.tag) === r.profile.tag) returnfalse;
-      let a = s.ZP.getMember(e, i.id);
-      return null != a && !a.isPending
+      let l = s.ZP.getMember(e, i.id);
+      return null != l && !l.isPending
     }, [e]) && !t
   }(e);
   return ! function(e) {
-    let t = (0, o.FT)(a.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds),
-      n = (0, i.e7)([_.Z], () => null === e ? null : _.Z.getGuildLastSeenInfo(e)),
+    let t = (0, o.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds),
+      n = (0, i.e7)([p.Z], () => null === e ? null : p.Z.getGuildLastSeenInfo(e)),
       s = (0, i.e7)([d.default], () => {
         var e;
         return null == (e = d.default.getCurrentUser()) ? true : e.primaryGuild
@@ -42,7 +42,7 @@ function f(e) {
         return null == (n = c.Z.getGuild(e)) || null == (t = n.profile) ? true : t.tag
       });
     if (r.useEffect(() => {
-        t && null === n && null != e && null != u && l.Z.dispatch({
+        t && null === n && null != e && null != u && a.Z.dispatch({
           type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
           guildId: e,
           lastSeenInfo: {
@@ -50,12 +50,12 @@ function f(e) {
           }
         })
       }, [e, u, t, n]), null == u || (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === u) returnfalse;
-    let f = (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === null,
-      v = null === n || (null == n ? true : n.tag) === u;
-    return f && !v && t
+    let v = (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === null,
+      _ = null === n || (null == n ? true : n.tag) === u;
+    return v && !_ && t
   }(e) ? t ? "available" : null : "changed"
 }
 
-function v(e) {
-  return null !== f(e)
+function _(e) {
+  return null !== v(e)
 }

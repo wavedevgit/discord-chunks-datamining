@@ -123,14 +123,14 @@ function et(e) {
     } = e,
     eh = N.default.getCurrentUser(),
     ef = () => eo.isInitialized() || et.ready,
-    em = (0, D.$)(U),
+    em = (0, k.$)(U),
     eg = et.length > 0 && (null == (t = et.first()) ? true : t.isFirstMessageInForumPost(U)),
     eb = (0, s.ts)(U),
     eC = (0, l.e7)([j.Z], () => j.Z.shouldShowTopicsBar() && !ed),
     ey = (0, x.P)(U.id),
     ev = (0, _.z)(U.id, X.zr),
     e_ = (0, d.k)(U.id),
-    eO = (0, k.Z)(),
+    eO = (0, D.Z)(),
     ex = function(e, t) {
       if (e.isDM() && null != t)
         if (t.type === v.pj.STRANGER_DANGER) return (0, i.jsx)(E.M, {
@@ -167,7 +167,7 @@ function et(e) {
           item: e,
           channel: U,
           isBeforeGroup: null == e.content && $(el[t + 1])
-        }) : (0, i.jsx)(H.Z, {
+        }) : (0, i.jsx)(F.Z, {
           isUnread: l,
           isBeforeGroup: null == e.content && $(el[t + 1]),
           id: l ? K.j1 : true,
@@ -182,7 +182,7 @@ function et(e) {
       }, "forum-post-action-bar-".concat(U.id));
       if (e.type === Y.ys_.MESSAGE_GROUP_BLOCKED || e.type === Y.ys_.MESSAGE_GROUP_IGNORED || e.type === Y.ys_.MESSAGE_GROUP_SPAMMER) {
         let t;
-        return t = e.type === Y.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYM/"] : e.type === Y.ys_.MESSAGE_GROUP_IGNORED ? J.t["VFWjc+"] : J.t.xfkfTK, (0, i.jsx)(F.Z, {
+        return t = e.type === Y.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYM/"] : e.type === Y.ys_.MESSAGE_GROUP_IGNORED ? J.t["VFWjc+"] : J.t.xfkfTK, (0, i.jsx)(H.Z, {
           unreadId: K.j1,
           messages: e,
           channel: U,

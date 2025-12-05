@@ -102,7 +102,7 @@ async function Y(e) {
   let {
     invite: t
   } = await g.ZP.resolveInvite(e, H);
-  null != t && (0, m.A)(t)
+  null != t && (0, f.A)(t)
 }
 q.Looks = Chunk755721.zx.Looks, q.Colors = Chunk755721.zx.Colors, q.Sizes = Chunk755721.zx.Sizes;
 class J extends Chunk473749.PureComponent {
@@ -138,7 +138,7 @@ class J extends Chunk473749.PureComponent {
     if (s !== this.getInviteKey(e)) Y(s);
     else if (t.state === k.r2o.APP_NOT_OPENED) this.handleContinue();
     else if (this.getMode() === z && r !== e.authenticated && r) {
-      let e = O.default.getFingerprint();
+      let e = N.default.getFingerprint();
       if (null != e) {
         let t = (0, c.s)(e);
         this.track(k.rMx.INVITE_LOGIN_SUCCESSFUL, true, {
@@ -176,7 +176,7 @@ class J extends Chunk473749.PureComponent {
   track(e, t, n) {
     let {
       invite: r
-    } = this.props, i = this.getInviteKey(), s = (0, j.jX)(i), l = t ? {
+    } = this.props, i = this.getInviteKey(), s = (0, b.jX)(i), l = t ? {
       guild_id: null != r.guild ? r.guild.id : null,
       channel_id: null != r.channel ? r.channel.id : null,
       inviter_id: null != r.inviter ? r.inviter.id : null,
@@ -345,7 +345,7 @@ class J extends Chunk473749.PureComponent {
         context: this.getAcceptInviteContext(H),
         skipOnboarding: true,
         callback: t => {
-          (0, m.A)(t), null != t.channel && g.ZP.openApp(e, t.channel.id)
+          (0, f.A)(t), null != t.channel && g.ZP.openApp(e, t.channel.id)
         }
       }).catch(e => {
         if (e instanceof p.yZ || e instanceof p.Hx) {
@@ -392,10 +392,10 @@ let Q = Chunk442837.ZP.connectStores([Chunk701190.Z, Chunk896797.Z, Chunk314897.
     inviteKey: n
   } = e;
   return {
-    invite: null != (t = C.Z.getInvite(n)) ? t : {},
+    invite: null != (t = O.Z.getInvite(n)) ? t : {},
     nativeAppState: v.Z.getState(n),
-    authenticated: O.default.isAuthenticated(),
-    defaultRoute: N.Z.defaultRoute,
-    isUnderage: f.Z.isUnderageAnonymous()
+    authenticated: N.default.isAuthenticated(),
+    defaultRoute: C.Z.defaultRoute,
+    isUnderage: m.Z.isUnderageAnonymous()
   }
 })(J)

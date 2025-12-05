@@ -1,5 +1,5 @@
-/** Chunk was on 82082 **/
-/** chunk id: 323759, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 83037 **/
+/** chunk id: 323759, original params: e,t,n (module,exports,require) **/
 module.exports = {
   row: "row__0a95c",
   icon: "icon__0a95c",

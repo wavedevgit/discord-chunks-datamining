@@ -2,7 +2,7 @@
 /** chunk id: 806701, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -31,7 +31,7 @@ function p(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     setSlide: t,
     transitionTo: i

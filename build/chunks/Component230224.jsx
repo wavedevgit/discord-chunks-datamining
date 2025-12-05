@@ -2,13 +2,13 @@
 /** chunk id: 230224, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  GB: () => O,
+  GB: () => N,
   JI: () => y,
   UM: () => T,
-  V6: () => N,
-  WT: () => b,
-  X7: () => j,
-  jq: () => C,
+  V6: () => C,
+  WT: () => j,
+  X7: () => b,
+  jq: () => O,
   mx: () => x
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
@@ -36,11 +36,11 @@ let x = 100,
     return 0 === r.memberCount && 0 === r.memberCount ? null : r
   },
   v = e => e.target_type === g.Iq.STREAM && null != e.target_user,
-  b = e => {
+  j = e => {
     var t;
     return (null == (t = e.channel) ? true : t.type) === p.d4z.GROUP_DM
   },
-  j = e => null == e.channel && null == e.guild && null != e.inviter,
+  b = e => null == e.channel && null == e.guild && null != e.inviter,
   I = e => e.state === p.r2o.ACCEPTED,
   y = e => {
     let {
@@ -48,12 +48,12 @@ let x = 100,
     } = e;
     return null != t
   },
-  S = e => !y(e) && (!!j(e) || null != e.inviter && !I(e) && !(e => {
+  S = e => !y(e) && (!!b(e) || null != e.inviter && !I(e) && !(e => {
     var t;
     let n = E(e);
     return (null != (t = null == n ? true : n.memberCount) ? t : 0) > x
   })(e)),
-  O = e => {
+  N = e => {
     let {
       guild: t,
       user: n,
@@ -75,14 +75,14 @@ let x = 100,
     }) : null
   };
 
-function N(e) {
+function C(e) {
   var t;
   let {
     invite: n,
     textClassName: i,
     className: s
   } = e, a = E(n);
-  return null == a || S(n) || (null == n || null == (t = n.guild) ? true : t.id) === f.fQ ? null : (0, r.jsx)(o.EJ, {
+  return null == a || S(n) || (null == n || null == (t = n.guild) ? true : t.id) === m.fQ ? null : (0, r.jsx)(o.EJ, {
     className: l()(_.activityCount, s),
     online: a.onlineCount,
     total: a.memberCount,
@@ -91,19 +91,19 @@ function N(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     invite: t,
     showBigUserIcon: n
-  } = e, s = i.useMemo(() => n ? null : v(t) && null != t.target_user ? d.ZP.getUserAvatarURL(t.target_user) : S(t) && null != t.inviter ? d.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), l = m.intl.string(m.t["3rE1P8"]);
-  if (b(t)) {
+  } = e, s = i.useMemo(() => n ? null : v(t) && null != t.target_user ? d.ZP.getUserAvatarURL(t.target_user) : S(t) && null != t.inviter ? d.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), l = f.intl.string(f.t["3rE1P8"]);
+  if (j(t)) {
     var c, u;
-    l = (null == (c = t.channel) ? true : c.name) != null && (null == (u = t.inviter) ? true : u.username) != null ? m.intl.format(m.t.Lu4h18, {
+    l = (null == (c = t.channel) ? true : c.name) != null && (null == (u = t.inviter) ? true : u.username) != null ? f.intl.format(f.t.Lu4h18, {
       username: t.inviter.username
-    }) : m.intl.string(m.t.OsdY8B)
-  } else v(t) && null != t.target_user ? l = m.intl.formatToPlainString(m.t.x2L32Q, {
+    }) : f.intl.string(f.t.OsdY8B)
+  } else v(t) && null != t.target_user ? l = f.intl.formatToPlainString(f.t.x2L32Q, {
     username: t.target_user.username
-  }) : I(t) ? l = m.intl.string(m.t["FDsl+J"]) : S(t) && null != t.inviter && (l = m.intl.format(m.t.spU2mI, {
+  }) : I(t) ? l = f.intl.string(f.t["FDsl+J"]) : S(t) && null != t.inviter && (l = f.intl.format(f.t.spU2mI, {
     username: h.ZP.getFormattedName(t.inviter)
   }));
   return (0, r.jsxs)("div", {
@@ -136,7 +136,7 @@ function T(e) {
     className: _.inviteJoinContainer,
     children: [(0, r.jsx)(o.DK, {
       className: _.appIn,
-      children: m.intl.string(m.t["3gg9fF"])
+      children: f.intl.string(f.t["3gg9fF"])
     }), (0, r.jsxs)("div", {
       className: _.guildContainer,
       children: [(0, r.jsx)(o.Vj, {
@@ -158,11 +158,11 @@ function T(e) {
     }))) : n = e
   } else if (null != s) {
     let e = h.ZP.getFormattedName(s);
-    n = m.intl.formatToPlainString(m.t["4aF92R"], {
+    n = f.intl.formatToPlainString(f.t["4aF92R"], {
       username: e
     }), i = (0, r.jsx)(o.DK, {
       className: _.directInviteSubTitle,
-      children: m.intl.format(m.t.Quj7HX, {
+      children: f.intl.format(f.t.Quj7HX, {
         username: e
       })
     })

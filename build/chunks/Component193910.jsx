@@ -66,13 +66,13 @@ function L(e) {
     options: b,
     onFileUpload: O,
     onClose: L,
-    onSelect: k,
-    draftType: D,
+    onSelect: D,
+    draftType: k,
     editorTextContent: U,
     setValue: V,
-    openClips: F
+    openClips: H
   } = e, {
-    analyticsLocations: H,
+    analyticsLocations: F,
     newestAnalyticsLocation: B
   } = (0, d.ZP)(), G = (0, C.Dt)({
     channel: t
@@ -87,7 +87,7 @@ function L(e) {
   }
 
   function K() {
-    F()
+    H()
   }
 
   function Y() {
@@ -160,7 +160,7 @@ function L(e) {
       r = U.match(M);
     null != r && (i = r[1], n = r[2], e = r[3], i += r[4]), (0, S.d)([(0, j.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, D), E.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== i && E.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, k), E.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== i && E.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
       plainText: i
     })
   }
@@ -171,7 +171,7 @@ function L(e) {
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id]), (0, i.jsx)(s.v2r, {
-    onSelect: k,
+    onSelect: D,
     navId: "channel-attach",
     onClose: L,
     "aria-label": A.intl.string(A.t.Xm41aV),
@@ -228,7 +228,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.JOIN,
                 activity: n,
-                location: H[H.length - 1]
+                location: F[F.length - 1]
               })
             }
           }, "play");
@@ -242,7 +242,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.LISTEN,
                 activity: n,
-                location: H[H.length - 1]
+                location: F[F.length - 1]
               })
             }
           }, "listen");
@@ -256,7 +256,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.WATCH,
                 activity: n,
-                location: H[H.length - 1]
+                location: F[F.length - 1]
               })
             }
           }, "watch");

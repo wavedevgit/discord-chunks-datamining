@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 373274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => eb,
@@ -573,7 +573,7 @@ class ep extends(r = Chunk473749.PureComponent) {
               withMargin: l.length > 1
             }, ei.z.GUILD_PREMIUM_PROGRESS_BAR);
           case ei.z.GUILD_HOME:
-            return (0, i.jsx)(z.Z, {
+            return (0, i.jsx)(W.Z, {
               guild: r,
               selected: a === ea.oC.GUILD_HOME
             }, ei.z.GUILD_HOME);
@@ -602,7 +602,7 @@ class ep extends(r = Chunk473749.PureComponent) {
               guild: r
             });
           case ei.z.CHANNELS_AND_ROLES:
-            return (0, i.jsx)(W.m, {
+            return (0, i.jsx)(z.m, {
               guild: r,
               selected: a === ea.oC.CHANNEL_BROWSER || a === ea.oC.CUSTOMIZE_COMMUNITY
             }, ei.z.CHANNELS_AND_ROLES);

@@ -2,7 +2,7 @@
 /** chunk id: 711553, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,12 +13,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk71264 = require("./71264.js");
-let h = function(e) {
+let p = function(e) {
   let t, {
       title: n,
       header: s,
-      children: h,
-      renderSettings: p,
+      children: p,
+      renderSettings: h,
       onDragStart: f
     } = e,
     g = r.useRef(null);
@@ -33,7 +33,7 @@ let h = function(e) {
       children: (0, i.jsx)(l.yRy, {
         targetElementRef: g,
         position: "right",
-        renderPopout: null != p ? p : c.dG4,
+        renderPopout: null != h ? h : c.dG4,
         autoInvert: false,
         children: e => {
           var t, n;
@@ -75,7 +75,7 @@ let h = function(e) {
     className: u.sidebar,
     children: [t, (0, i.jsx)("div", {
       className: u.children,
-      children: h
+      children: p
     })]
   })
 }

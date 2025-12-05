@@ -2,7 +2,7 @@
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => U,
-  ZP: () => F,
+  ZP: () => H,
   ul: () => V
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -40,7 +40,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk92024 = require("./92024.js");
 
-function k(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -59,7 +59,7 @@ function k(e) {
   return e
 }
 
-function D(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -111,15 +111,15 @@ function V(e) {
     })]
   })
 }
-let F = (0, Chunk888651.$)(function(e) {
+let H = (0, Chunk888651.$)(function(e) {
   var t;
   let {
     collapsed: l,
     user: h,
     channel: U,
     mute: V,
-    localMute: F,
-    localVideoDisabled: H,
+    localMute: H,
+    localVideoDisabled: F,
     deaf: B,
     video: G,
     embeddedApplication: z,
@@ -157,13 +157,13 @@ let F = (0, Chunk888651.$)(function(e) {
     null != t && n.has(t) && (eP && eI(false), ej && eS(false)), eL()
   }, eL = () => {
     (et || eC || ew) && (null == ea || ea(h.id))
-  }, ek = e => {
+  }, eD = e => {
     e ? eO.current = setTimeout(() => {
       eE(true)
     }, 150 * !!es) : clearTimeout(eO.current)
   };
   r.useEffect(() => () => clearTimeout(eO.current), []);
-  let eD = e => {
+  let ek = e => {
       e && eE(false)
     },
     eU = () => {
@@ -181,7 +181,7 @@ let F = (0, Chunk888651.$)(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("96306")]).then(n.bind(n, 757387));
-        return t => (0, i.jsx)(e, D(k({}, t), {
+        return t => (0, i.jsx)(e, k(D({}, t), {
           user: h,
           guildId: U.guild_id,
           channel: U,
@@ -193,16 +193,16 @@ let F = (0, Chunk888651.$)(function(e) {
         }))
       })
     },
-    eF = e => ef ? (0, i.jsx)(x.$, D(k({}, e), {
+    eH = e => ef ? (0, i.jsx)(x.$, k(D({}, e), {
       channel: U,
       setIsHangStatusInputFocused: eS,
       setIsEmojiPickerOpen: eT
-    })) : null != eg ? (0, i.jsx)(E.I, D(k({}, e), {
+    })) : null != eg ? (0, i.jsx)(E.I, k(D({}, e), {
       hangStatusActivity: eg,
       channel: U,
       userId: h.id
     })) : null,
-    eH = () => (0, i.jsx)(j.Z, {
+    eF = () => (0, i.jsx)(j.Z, {
       userId: h.id,
       channel: U
     }),
@@ -237,8 +237,8 @@ let F = (0, Chunk888651.$)(function(e) {
               latched: J,
               disconnected: Q,
               mute: V,
-              localMute: F,
-              localVideoDisabled: H,
+              localMute: H,
+              localVideoDisabled: F,
               isStreaming: et,
               isGuest: ei,
               video: G,
@@ -273,13 +273,13 @@ let F = (0, Chunk888651.$)(function(e) {
             var r;
             return (0, i.jsx)(o.u, {
               text: null != (r = (0, C.Z)(ec)) ? r : R.intl.string(R.t.IyYqqY),
-              children: (0, i.jsx)(P.ZP, k({
+              children: (0, i.jsx)(P.ZP, D({
                 ref: ey
               }, n))
             })
           }
           let c = () => null;
-          return eC && eA ? c = eF : et ? c = eB : ew && h.id !== I.default.getId() ? c = eH : eC && (c = eF), (0, i.jsx)(s.yRy, {
+          return eC && eA ? c = eH : et ? c = eB : ew && h.id !== I.default.getId() ? c = eF : eC && (c = eH), (0, i.jsx)(s.yRy, {
             targetElementRef: ey,
             position: "right",
             renderPopout: c,
@@ -287,12 +287,12 @@ let F = (0, Chunk888651.$)(function(e) {
             onRequestClose: eR,
             align: eC && eA && !ef ? "center" : true,
             spacing: eC && eA ? 8 : 0,
-            children: () => (0, i.jsx)(P.ZP, D(k({}, n), {
+            children: () => (0, i.jsx)(P.ZP, k(D({}, n), {
               ref: ey,
               onMouseDown: e.onMouseDown,
               onKeyDown: e.onKeyDown,
-              handleHoverHangStatus: ek,
-              handleHoverIcons: eD,
+              handleHoverHangStatus: eD,
+              handleHoverIcons: ek,
               onAddHangStatusClicked: () => eI(true)
             }))
           })

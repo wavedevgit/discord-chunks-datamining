@@ -170,7 +170,7 @@ class et extends(r = Chunk473749.PureComponent) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
     e && null != t && (this.setState({
       redirecting: true
-    }), n ? f.Z.verifySSOToken("login").then(() => this.transitionSSO(t)) : this.transitionSSO(t))
+    }), n ? m.Z.verifySSOToken("login").then(() => this.transitionSSO(t)) : this.transitionSSO(t))
   }
   transitionSSO(e) {
     let {
@@ -322,9 +322,9 @@ class et extends(r = Chunk473749.PureComponent) {
       }, "title"), false === (0, G.isAndroidWeb)() ? (0, i.jsx)(v.DK, {
         children: q.intl.string(q.t.euS7r4)
       }, "subtitle") : null]
-    }), (0, i.jsxs)(j.Z, {
-      direction: j.Z.Direction.HORIZONTAL,
-      align: j.Z.Align.CENTER,
+    }), (0, i.jsxs)(b.Z, {
+      direction: b.Z.Direction.HORIZONTAL,
+      align: b.Z.Align.CENTER,
       children: [(0, i.jsxs)("div", {
         className: Y.mainLoginContainer,
         children: [this.canShowChooseAccount && this.state.dismissedChooseAccount && (0, i.jsx)("div", {
@@ -551,7 +551,7 @@ class et extends(r = Chunk473749.PureComponent) {
     super(e), Q(this, "loginRef", true), Q(this, "passwordRef", true), Q(this, "codeRef", true), Q(this, "handleAuthToken", async (e, t) => {
       this.setState({
         errors: {}
-      }), await f.Z.loginToken(e, false), B.default.track(K.rMx.LOGIN_SUCCESSFUL, {
+      }), await m.Z.loginToken(e, false), B.default.track(K.rMx.LOGIN_SUCCESSFUL, {
         source: K.uRl.QR_CODE,
         login_source: this.loginSource,
         gift_code_sku_id: this.giftCodeSKUId,
@@ -562,7 +562,7 @@ class et extends(r = Chunk473749.PureComponent) {
     }), Q(this, "loginReset", () => {
       this.state.conditionalMediationAbortController.abort("Login state reset"), this.setState({
         errors: {}
-      }), f.Z.loginReset()
+      }), m.Z.loginReset()
     }), Q(this, "setLoginRef", e => {
       this.loginRef = e
     }), Q(this, "setPasswordRef", e => {
@@ -594,7 +594,7 @@ class et extends(r = Chunk473749.PureComponent) {
         errors: {}
       });
       try {
-        await f.Z.login({
+        await m.Z.login({
           login: this.getFullLogin(),
           password: t,
           undelete: n,
@@ -617,7 +617,7 @@ class et extends(r = Chunk473749.PureComponent) {
         let {
           token: n
         } = await T.Z.verifyPhone(t, e, false);
-        await f.Z.authorizeIPAddress(n), this.handleLogin()
+        await m.Z.authorizeIPAddress(n), this.handleLogin()
       } catch (e) {
         null != e.body && null != e.body.message && this.setState({
           phoneVerifyError: e.body.message
@@ -651,7 +651,7 @@ class et extends(r = Chunk473749.PureComponent) {
         data: n,
         ticket: r
       } = e;
-      return U.S.dispatch(K.CkL.WAVE_EMPHASIZE), f.Z.loginMFAv2({
+      return U.S.dispatch(K.CkL.WAVE_EMPHASIZE), m.Z.loginMFAv2({
         code: n,
         ticket: r,
         mfaType: t,
@@ -666,7 +666,7 @@ class et extends(r = Chunk473749.PureComponent) {
       });
       try {
         U.S.dispatch(K.CkL.WAVE_EMPHASIZE);
-        let e = await f.Z.forgotPassword(t);
+        let e = await m.Z.forgotPassword(t);
         if (false === e) return;
         e === u.B.ONE_TIME_LOGIN ? (0, g.h7j)(e => {
           let t = [{
@@ -705,7 +705,7 @@ class et extends(r = Chunk473749.PureComponent) {
     }), Q(this, "handleResendCode", () => {
       T.Z.resendCode(this.getFullLogin())
     }), Q(this, "handleReset", e => {
-      null != e && e.preventDefault(), f.Z.loginReset(), this.setState({
+      null != e && e.preventDefault(), m.Z.loginReset(), this.setState({
         password: "",
         loginPrefix: "",
         login: "",
@@ -759,7 +759,7 @@ Q(et, "defaultProps", {
 });
 let en = function(e) {
   (0, R.M)();
-  let t = (0, h.cj)([D.Z, M.Z, k.default, N.Z, A.Z], () => ({
+  let t = (0, h.cj)([D.Z, M.Z, k.default, C.Z, A.Z], () => ({
     authenticated: k.default.isAuthenticated(),
     handoffAvailable: D.Z.isHandoffAvailable(),
     user: D.Z.user,
@@ -768,7 +768,7 @@ let en = function(e) {
     mfaMethods: k.default.getMFAMethods(),
     defaultRoute: M.Z.defaultRoute,
     country: A.Z.getCountryCode(),
-    hasLoggedInAccounts: N.Z.getHasLoggedInAccounts()
+    hasLoggedInAccounts: C.Z.getHasLoggedInAccounts()
   }));
   return (0, i.jsx)(et, X({}, e, t))
 }

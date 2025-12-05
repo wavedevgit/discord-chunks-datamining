@@ -40,7 +40,7 @@ function S(e) {
     popoutType: A
   } = e, w = (0, m.bp)() === E.IlC.POPOUT, M = (0, o.e7)([C.Z], () => C.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
-  } = (0, O.d)(), L = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), k = (0, b.bt)(I.id, t), D = r.useCallback(() => {
+  } = (0, O.d)(), L = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), D = (0, b.bt)(I.id, t), k = r.useCallback(() => {
     (0, a.j)(() => {
       O.d.setState({
         dismissedActivityEntryPointTileChannel: I.id
@@ -56,12 +56,12 @@ function S(e) {
   }, [I.id, R]);
   let U = (0, o.e7)([y.Z], () => I.isPrivate() || (0, f.b)(y.Z, M, I), [M, I]),
     V = (null == M ? true : M.afkChannelId) === I.id,
-    F = I.userLimit <= 0 || I.userLimit > 1,
-    H = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
+    H = I.userLimit <= 0 || I.userLimit > 1,
+    F = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
     B = (0, h.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     G = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
     z = null != R && R === I.id,
-    W = k.map(e => t => (0, i.jsx)(_.ZP, {
+    W = D.map(e => t => (0, i.jsx)(_.ZP, {
       participant: e,
       channel: I,
       className: j.tile,
@@ -83,12 +83,12 @@ function S(e) {
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != M && !V && (!(L >= 2) || !H || G || B || z ? F && 1 === L && U && (H && !G ? W.push(e => (0, i.jsx)(v.h, {
+  }, []), null != M && !V && (!(L >= 2) || !F || G || B || z ? H && 1 === L && U && (F && !G ? W.push(e => (0, i.jsx)(v.h, {
     channel: I,
     guild: M,
     width: e,
     inPopout: w,
-    handleClose: D,
+    handleClose: k,
     userParticipantCount: L
   })) : W.push(e => (0, i.jsx)(x.Z, {
     width: e,
@@ -100,13 +100,13 @@ function S(e) {
     guild: M,
     width: e,
     inPopout: w,
-    handleClose: D,
+    handleClose: k,
     userParticipantCount: L
   })));
   let q = r.useCallback(e => {
     var t, n;
-    return null != (n = null == (t = k[e]) ? true : t.id) ? n : "empty-tile"
-  }, [k]);
+    return null != (n = null == (t = D[e]) ? true : t.id) ? n : "empty-tile"
+  }, [D]);
   return (0, i.jsx)(g.Z, {
     className: Z,
     keyExtractor: q,

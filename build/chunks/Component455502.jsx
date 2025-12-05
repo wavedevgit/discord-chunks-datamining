@@ -18,14 +18,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function f(e) {
   n.g.location.assign(e)
 }
 
 function _(e) {
   let {
     location: t,
-    transitionTo: n = m
+    transitionTo: n = f
   } = e, [s, _] = i.useState("submitting"), x = i.useRef(true);
   (0, o.ZP)(() => {
     (0, h.e)("verify_email");
@@ -51,20 +51,20 @@ function _(e) {
       }), (0, d.Z)("verify_email")
     }, []);
   return "failed" === s ? (0, r.jsx)(u.Z, {
-    title: f.intl.string(f.t["PCgG3+"]),
-    subtitle: f.intl.string(f.t.tQpeA3),
-    buttonText: f.intl.string(f.t.dKhVQN),
+    title: m.intl.string(m.t["PCgG3+"]),
+    subtitle: m.intl.string(m.t.tQpeA3),
+    buttonText: m.intl.string(m.t.dKhVQN),
     onButtonClick: E
   }) : "succeeded" === s ? (0, r.jsx)(u.Z, {
-    title: f.intl.string(f.t["dAfGb+"]),
-    buttonText: f.intl.string(f.t["uJWIj/"]),
+    title: m.intl.string(m.t["dAfGb+"]),
+    buttonText: m.intl.string(m.t["uJWIj/"]),
     onButtonClick: v,
     image: (0, r.jsx)(l.dQ, {
-      alt: f.intl.string(f.t["dAfGb+"])
+      alt: m.intl.string(m.t["dAfGb+"])
     })
   }) : (0, r.jsx)(u.Z, {
-    title: f.intl.string(f.t["0c8+5n"]),
-    subtitle: f.intl.string(f.t.ULTCBE),
+    title: m.intl.string(m.t["0c8+5n"]),
+    subtitle: m.intl.string(m.t.ULTCBE),
     loading: true
   })
 }

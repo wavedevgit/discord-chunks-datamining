@@ -38,29 +38,29 @@ function A(e) {
   } = e, [n, s] = i.useState(false);
   return i.useEffect(() => {
     let e = new Image;
-    e.src = C, e.onload = () => s(true), e.onerror = () => s(true)
-  }, [C]), i.useEffect(() => {
+    e.src = O, e.onload = () => s(true), e.onerror = () => s(true)
+  }, [O]), i.useEffect(() => {
     n && c.uvj.announce(S.intl.string(S.t.j2p125))
   }, [n]), (0, r.jsx)("div", {
-    className: O.qrCodeContainer,
+    className: N.qrCodeContainer,
     children: "" !== t && n ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(f.ZP, {
-        className: O.qrCode,
+      children: [(0, r.jsx)(m.ZP, {
+        className: N.qrCode,
         size: 160,
         text: t
       }), (0, r.jsx)("div", {
-        className: O.qrCodeOverlay,
+        className: N.qrCodeOverlay,
         children: (0, r.jsx)("img", {
-          src: C,
+          src: O,
           alt: ""
         })
       })]
     }) : (0, r.jsx)("div", {
-      className: O.qrCodeOverlay,
+      className: N.qrCodeOverlay,
       "aria-label": S.intl.string(S.t.BUGkVF),
       "aria-busy": true,
       children: (0, r.jsx)(c.$jN, {
-        className: O.qrCode,
+        className: N.qrCode,
         type: c.$jN.Type.WANDERING_CUBES,
         "aria-hidden": true
       })
@@ -95,7 +95,7 @@ function P(e) {
         children: [(0, r.jsx)(A, {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
         }), (0, r.jsx)(p.Dx, {
-          className: N.marginBottom8,
+          className: C.marginBottom8,
           children: S.intl.string(S.t.UPiHaL)
         }), null != i ? (0, r.jsx)(Z, {
           children: i
@@ -108,7 +108,7 @@ function P(e) {
             text: S.intl.string(S.t["/kpMDt"]),
             textVariant: "text-sm/normal",
             onClick: () => (function(e) {
-              let t = E.isPlatformEmbedded && j.ZP.supportsFeature(I.eRX.WEBAUTHN) ? j.ZP.webAuthnAuthenticate : e => {
+              let t = E.isPlatformEmbedded && b.ZP.supportsFeature(I.eRX.WEBAUTHN) ? b.ZP.webAuthnAuthenticate : e => {
                 let t = (0, s.wz)(JSON.parse(e));
                 return (0, s.U2)(t).then(e => JSON.stringify(e))
               };
@@ -128,20 +128,20 @@ function P(e) {
       } = t;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Z, {
-          className: O.qrAvatar,
+          className: N.qrAvatar,
           user: e,
           size: c.EFr.SIZE_120,
           isMobile: true,
           status: y.Sk.ONLINE
         }), (0, r.jsx)(p.Dx, {
-          className: N.marginBottom8,
+          className: C.marginBottom8,
           children: S.intl.string(S.t.apGCUT)
         }), (0, r.jsx)(p.DK, {
           children: S.intl.format(S.t.Cbl5JK, {
-            username: "".concat(b.ZP.getUserTag(e))
+            username: "".concat(j.ZP.getUserTag(e))
           })
         }), (0, r.jsx)("div", {
-          className: O.startOverButton,
+          className: N.startOverButton,
           children: (0, r.jsx)(c.Avr, {
             text: S.intl.string(S.t.nOOhwo),
             textVariant: "text-sm/normal",
@@ -166,19 +166,19 @@ function R(e) {
     state: u,
     rsaKeyPair: d,
     cancel: p,
-    handleFailure: f
+    handleFailure: m
   } = function(e) {
     let [t, n] = i.useState(0), [r, s] = i.useState(false), [a, o] = i.useState({
       step: 0
-    }), [c, u] = i.useState(null), d = (0, h.Z)(), p = i.useMemo(() => new l.Z(1500, 3e4), []), f = (0, g.Z)(() => {
+    }), [c, u] = i.useState(null), d = (0, h.Z)(), p = i.useMemo(() => new l.Z(1500, 3e4), []), m = (0, g.Z)(() => {
       o({
         step: 0
       }), d ? n(e => e + 1) : (T.info("document is not visible, will defer reconnection when document becomes visible."), s(true))
-    }), m = i.useCallback(() => {
+    }), f = i.useCallback(() => {
       T.error("Could not complete QR code login, trying to restart with a new QR code."), o({
         step: 0
-      }), p.pending || p.fail(f)
-    }, [f, p]);
+      }), p.pending || p.fail(m)
+    }, [m, p]);
     return i.useEffect(() => {
       d && r && 0 === a.step && (T.info("reconnecting, now that document is visible"), s(false), n(e => e + 1))
     }, [a, d, r, s]), i.useEffect(() => {
@@ -201,7 +201,7 @@ function R(e) {
       let g = () => {
         d ? (d = false, r.send(JSON.stringify({
           op: "heartbeat"
-        }))) : (i("heartbeat timeout, reconnecting."), r.close(), m())
+        }))) : (i("heartbeat timeout, reconnecting."), r.close(), f())
       };
       return r.onmessage = async t => {
         let {
@@ -229,7 +229,7 @@ function R(e) {
           }
           case "pending_login": {
             let e = s.ticket;
-            null == e && m(), o({
+            null == e && f(), o({
               step: 4,
               ticket: e
             });
@@ -262,7 +262,7 @@ function R(e) {
             return
           }
           case "cancel":
-            i("remote auth handshake cancelled."), f();
+            i("remote auth handshake cancelled."), m();
             return;
           case "hello": {
             i("got hello, auth timeout=".concat(s.timeout_ms, "ms"));
@@ -283,19 +283,19 @@ function R(e) {
           encoded_public_key: l
         })), u(s)
       }, r.onclose = e => {
-        i("disconnected, code: ".concat(e.code, " ").concat(e.reason)), m()
+        i("disconnected, code: ".concat(e.code, " ").concat(e.reason)), f()
       }, r.onerror = e => {
-        i("disconnected, error: ".concat(JSON.stringify(e))), m()
+        i("disconnected, error: ".concat(JSON.stringify(e))), f()
       }, () => {
         i("cleaning up"), r.onopen = () => null, r.onmessage = () => null, r.onclose = () => null, r.onerror = () => null, r.close(1e3), p.cancel(), null != c && clearTimeout(c), null != a && clearInterval(a)
       }
-    }, [f, e, t, p, m]), {
+    }, [m, e, t, p, f]), {
       state: a,
       rsaKeyPair: c,
-      cancel: f,
-      handleFailure: m
+      cancel: m,
+      handleFailure: f
     }
-  }(t), m = function(e) {
+  }(t), f = function(e) {
     switch (e) {
       case 0:
       case 1:
@@ -321,21 +321,21 @@ function R(e) {
           r = await (0, v.Pk)(d);
         t(n, r)
       } catch (e) {
-        f()
-      } else f()
+        m()
+      } else m()
     }).catch(() => {
-      f()
+      m()
     })
-  }, [u, t, d, f]), (0, r.jsxs)(r.Fragment, {
+  }, [u, t, d, m]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: O.verticalSeparator
+      className: N.verticalSeparator
     }), (0, r.jsx)(c.qBt, {
       fillParent: true,
-      className: O.qrLogin,
-      step: m,
+      className: N.qrLogin,
+      step: f,
       steps: [0, 1],
       children: (0, r.jsx)("div", {
-        className: O.qrLoginInner,
+        className: N.qrLoginInner,
         children: (0, r.jsx)(P, {
           state: u,
           cancel: p,

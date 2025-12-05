@@ -2,7 +2,7 @@
 /** chunk id: 181364, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,17 +14,17 @@ var Chunk13245 = require("./13245.js"),
   Chunk312839 = require("./312839.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
-let h = e => (0, s.QR)(e, (0, c.P)(), u.t["z8/sgJ"]);
+let p = e => (0, s.QR)(e, (0, c.P)(), u.t["z8/sgJ"]);
 
-function p(e) {
+function h(e) {
   let {
     type: t
   } = e, {
     icon: s,
-    title: p,
+    title: h,
     body: f,
     hint: g,
-    notifType: m
+    notifType: _
   } = function(e, t) {
     if (t.type === d.nc.NEWS) {
       var n, i, r, s, o, l, a, c;
@@ -41,17 +41,17 @@ function p(e) {
     icon: n(328756),
     title: u.intl.string(u.t.pkXAeG),
     body: null,
-    hint: h,
+    hint: p,
     notifType: d.n0.WelcomeNudge
   }, e), {
-    trackView: y,
-    trackClick: b
-  } = (0, c.R)(m, {
-    notif_type: m
+    trackView: m,
+    trackClick: y
+  } = (0, c.R)(_, {
+    notif_type: _
   });
   return {
     icon: s,
-    title: p,
+    title: h,
     body: f,
     hint: g,
     renderFooter: () => (0, i.jsx)("div", {
@@ -62,13 +62,13 @@ function p(e) {
       children: u.intl.string(u.t["9MyuT0"])
     }),
     onNotificationShow: () => {
-      y()
+      m()
     },
     onNotificationClick: (e, n) => {
-      b("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), o.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.Z.setInputLocked(false, (0, a.getPID)()) : l.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
+      y("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), o.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.Z.setInputLocked(false, (0, a.getPID)()) : l.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      b("dismiss")
+      y("dismiss")
     }
   }
 }

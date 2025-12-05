@@ -18,7 +18,7 @@ function d(e) {
     transitionTo: t,
     token: n,
     width: d
-  } = e, [h, g] = i.useState(u.n.START), [p, f] = i.useState(null), [m, _] = i.useState(""), x = {
+  } = e, [h, g] = i.useState(u.n.START), [p, m] = i.useState(null), [f, _] = i.useState(""), x = {
     impression_group: s.ImpressionGroups.ACCOUNT_REVERT_FLOW
   };
   return (0, r.jsx)("div", {
@@ -28,7 +28,7 @@ function d(e) {
     children: (0, r.jsxs)(l.MyZ, {
       activeSlide: h,
       width: d,
-      onSlideReady: f,
+      onSlideReady: m,
       children: [(0, r.jsx)(l.Mi4, {
         id: u.n.START,
         impressionProperties: x,
@@ -53,7 +53,7 @@ function d(e) {
         impressionProperties: x,
         impressionName: s.ImpressionNames.ACCOUNT_REVERT_SUCCESS,
         children: (0, r.jsx)(c.Z, {
-          email: m
+          email: f
         })
       })]
     })
