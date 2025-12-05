@@ -82,6 +82,7 @@ let p = {
       onExited: t
     })
   },
+  popAboveKey: e => (0, s.om)(e),
   popAll() {
     (0, Chunk272423.lE)(), Chunk570140.Z.dispatch({
       type: "MODAL_POP_ALL"
