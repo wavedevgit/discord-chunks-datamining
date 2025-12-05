@@ -2,7 +2,7 @@
 /** chunk id: 373183, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => k
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,27 +27,27 @@ var Chunk54381 = require("./54381.js"),
   Chunk250967 = require("./250967.js"),
   Chunk182975 = require("./182975.js"),
   Chunk655603 = require("./655603.js");
-let T = Chunk473749.memo(function(e) {
+let k = Chunk473749.memo(function(e) {
   let {
     category: t,
     rewardSkuId: n
   } = e, {
     handleCardVisibilityChange: i
-  } = (0, h.E)(n), T = l.useRef(null), {
-    isHoveringOrFocusing: j
-  } = (0, g.Z)(T), {
-    readyToClaim: k,
+  } = (0, h.E)(n), k = l.useRef(null), {
+    isHoveringOrFocusing: T
+  } = (0, g.Z)(k), {
+    readyToClaim: j,
     collectibleProductSkuIds: I,
     collectedSkuIds: L
   } = (0, b.q)(t, n), B = (0, a.e7)([C.Z], () => C.Z.isClaiming === n);
   return (0, r.jsx)(c.$, {
     onChange: i,
     threshold: 0,
-    innerRef: T,
+    innerRef: k,
     children: (0, r.jsx)("div", {
-      ref: T,
+      ref: k,
       className: s()(v.productCardContainer, S.defaultCursor, {
-        [v.hovered]: j
+        [v.hovered]: T
       }),
       "aria-label": E.intl.formatToPlainString(E.t.Ez6aHE, {
         category: t.name
@@ -78,7 +78,7 @@ let T = Chunk473749.memo(function(e) {
                 className: v.productName,
                 children: E.intl.string(E.t["0mDmg/"])
               }), (0, r.jsx)(u.u, {
-                text: k ? E.intl.string(E.t.cKH3tk) : E.intl.formatToPlainString(E.t["8aMDPc"], {
+                text: j ? E.intl.string(E.t.cKH3tk) : E.intl.formatToPlainString(E.t["8aMDPc"], {
                   totalCount: I.length
                 }),
                 align: "right",
@@ -105,9 +105,9 @@ let T = Chunk473749.memo(function(e) {
                   maximum: I.length
                 }), (0, r.jsxs)("div", {
                   className: s()(S.progressTextContainer, {
-                    [S.readyToClaimText]: k
+                    [S.readyToClaimText]: j
                   }),
-                  children: [k ? (0, r.jsx)(o.kmB, {
+                  children: [j ? (0, r.jsx)(o.kmB, {
                     size: "xs",
                     color: "currentColor"
                   }) : null, (0, r.jsx)(o.xvT, {
@@ -130,7 +130,7 @@ let T = Chunk473749.memo(function(e) {
               children: (0, r.jsx)(o.zxk, {
                 variant: "primary",
                 onClick: e => {
-                  e.stopPropagation(), k && (0, p.wW)(t.skuId, n).then(() => {
+                  e.stopPropagation(), j && (0, p.wW)(t.skuId, n).then(() => {
                     let e = m.Z.getProduct(n);
                     null != e && (0, _.Z)({
                       product: e,
@@ -163,7 +163,7 @@ let T = Chunk473749.memo(function(e) {
                 },
                 text: E.intl.string(E.t.VnVTNc),
                 fullWidth: true,
-                disabled: !k,
+                disabled: !j,
                 loading: B
               })
             })

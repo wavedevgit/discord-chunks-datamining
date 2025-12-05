@@ -35,7 +35,7 @@ let d = e => {
       })
     }) : (0, r.jsx)(a.Gt, {
       value: s,
-      children: (0, r.jsx)(o.Z, {
+      children: (0, r.jsx)(o.ZP, {
         onClose: d,
         onComplete: f,
         transitionState: i.Dvm.ENTERED,

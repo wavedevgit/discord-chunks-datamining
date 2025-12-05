@@ -32,7 +32,7 @@ let m = e => {
     O = (0, d.YG)(h, _),
     x = l.useRef(null),
     y = null == _ ? true : _.bodyText,
-    T = (0, a.sp)();
+    k = (0, a.sp)();
   return (0, r.jsx)(i.$, {
     innerRef: x,
     onChange: S,
@@ -67,13 +67,13 @@ let m = e => {
           isInternalShopDeeplink: true,
           isOrbsExclusive: null == h ? true : h.isOrbsExclusive
         }), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == T ? true : T.sessionId,
+          collectibles_shop_session_id: null == k ? true : k.sessionId,
           sku_id: v,
           page_type: "home",
-          page_section: null == T ? true : T.pageSection,
-          page_category: null == T ? true : T.pageCategory,
+          page_section: null == k ? true : k.pageSection,
+          page_category: null == k ? true : k.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == T ? true : T.tilePosition),
+          tile_position: String(null == k ? true : k.tilePosition),
           cta_name: null
         })
       },
@@ -104,13 +104,13 @@ let m = e => {
               isInternalShopDeeplink: true,
               isOrbsExclusive: null == h ? true : h.isOrbsExclusive
             }), e.stopPropagation(), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == T ? true : T.sessionId,
+              collectibles_shop_session_id: null == k ? true : k.sessionId,
               sku_id: v,
               page_type: "home",
-              page_section: null == T ? true : T.pageSection,
-              page_category: null == T ? true : T.pageCategory,
+              page_section: null == k ? true : k.pageSection,
+              page_category: null == k ? true : k.pageCategory,
               tile_type: "FEATURED_BLOCK",
-              tile_position: String(null == T ? true : T.tilePosition),
+              tile_position: String(null == k ? true : k.tilePosition),
               cta_name: "Take me there button"
             })
           }

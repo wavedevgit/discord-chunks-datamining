@@ -1,7 +1,7 @@
-/** Chunk was on 54400 **/
+/** Chunk was on 23242 **/
 /** chunk id: 400981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,53 +22,53 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk473936 = require("./473936.js");
 
-function x(e) {
+function S(e) {
   let {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
-    selectedGiftingPromotionReward: x
-  } = e, P = (0, i.e7)([g.default], () => g.default.getCurrentUser()), j = (0, i.e7)([u.Z], () => u.Z.useReducedMotion), {
-    analyticsLocations: _
-  } = (0, c.ZP)(), O = s.EFr.SIZE_32, w = (0, d.Z)(null == x ? true : x.assetId, O, !j), C = (0, b.Z)(), E = null == C ? true : C.giftPurchaseConfirmation, k = (null == x ? true : x.type) === a.Z.NAMEPLATE, [I, T] = l.useState(false), N = l.useMemo(() => {
+    selectedGiftingPromotionReward: S
+  } = e, x = (0, a.e7)([v.default], () => v.default.getCurrentUser()), P = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), {
+    analyticsLocations: O
+  } = (0, c.ZP)(), E = o.EFr.SIZE_32, I = (0, d.Z)(null == S ? true : S.assetId, E, !P), w = (0, g.Z)(), T = null == w ? true : w.giftPurchaseConfirmation, k = (null == S ? true : S.type) === i.Z.NAMEPLATE, [C, N] = r.useState(false), M = r.useMemo(() => {
     var e, t;
-    return k && (null == x ? true : x.assetId) != null ? {
-      src: x.assetId,
-      palette: (0, h.t1)(null != (t = x.palette) ? t : "sky"),
-      imgAlt: null == (e = x.a11yLabel) ? true : e.call(x)
+    return k && (null == S ? true : S.assetId) != null ? {
+      src: S.assetId,
+      palette: (0, h.t1)(null != (t = S.palette) ? t : "sky"),
+      imgAlt: null == (e = S.a11yLabel) ? true : e.call(S)
     } : null
-  }, [k, x]);
-  return null == n || null == E ? null : (0, r.jsx)(v.O3, {
-    children: (0, r.jsx)(s.mzw, {
-      align: m.Z.Align.CENTER,
+  }, [k, S]);
+  return null == n || null == T ? null : (0, l.jsx)(j.O3, {
+    children: (0, l.jsx)(o.mzw, {
+      align: p.Z.Align.CENTER,
       "data-migration-pending": true,
-      children: (0, r.jsxs)("div", {
-        className: y.promotionalFooter,
-        children: [k && null != N ? (0, r.jsx)("div", {
-          className: y.nameplatePreviewContainer,
-          onMouseEnter: () => T(true),
-          onMouseLeave: () => T(false),
-          children: (0, r.jsx)(f.R, {
-            user: P,
+      children: (0, l.jsxs)("div", {
+        className: b.promotionalFooter,
+        children: [k && null != M ? (0, l.jsx)("div", {
+          className: b.nameplatePreviewContainer,
+          onMouseEnter: () => N(true),
+          onMouseLeave: () => N(false),
+          children: (0, l.jsx)(f.R, {
+            user: x,
             nameplate: null,
-            nameplateData: N,
+            nameplateData: M,
             showPlaceholderUser: true,
             nameplatePreviewSize: "xsmall",
-            isHighlighted: I
+            isHighlighted: C
           })
-        }) : (0, r.jsx)(s.Xo$, {
-          "aria-label": null == P ? true : P.username,
-          size: O,
-          src: null == P ? true : P.getAvatarURL(true, (0, s.dcp)(O), !j),
-          avatarDecoration: w
-        }), (0, r.jsx)(o.zxk, {
+        }) : (0, l.jsx)(o.Xo$, {
+          "aria-label": null == x ? true : x.username,
+          size: E,
+          src: null == x ? true : x.getAvatarURL(true, (0, o.dcp)(E), !P),
+          avatarDecoration: I
+        }), (0, l.jsx)(s.zxk, {
           variant: "primary",
-          text: E.collectRewardButtonText(),
+          text: T.collectRewardButtonText(),
           onClick: () => {
-            t(), (0, p.Z)({
+            t(), (0, m.Z)({
               product: n,
               shouldShowPromotionalExperience: true,
-              analyticsLocations: _,
-              purchaseType: S.o8.PROMOTIONAL
+              analyticsLocations: O,
+              purchaseType: y.o8.PROMOTIONAL
             })
           }
         })]

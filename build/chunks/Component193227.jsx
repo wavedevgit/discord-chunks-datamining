@@ -2,7 +2,7 @@
 /** chunk id: 193227, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -46,7 +46,7 @@ function y(e) {
   })
 }
 
-function T(e) {
+function k(e) {
   let {
     category: t
   } = e, [n, i] = l.useState(false), s = (0, o.O)(e => {
@@ -63,7 +63,7 @@ function T(e) {
   })
 }
 
-function j(e) {
+function T(e) {
   var t;
   let {
     sortedCategories: n,
@@ -91,7 +91,7 @@ function j(e) {
     let t = Math.floor(e / O.kN) + 1;
     t !== o && a(t), y.current = u
   }, [u, S, a, o]);
-  let j = l.useMemo(() => {
+  let T = l.useMemo(() => {
     let e = (o - 1) * O.kN;
     return S.slice(e, e + O.kN)
   }, [S, o]);
@@ -104,26 +104,26 @@ function j(e) {
       cacheDisabled: _
     })
   }, []), l.useEffect(() => {
-    p || 0 === j.length || (0, m.n)({
+    p || 0 === T.length || (0, m.n)({
       sessionId: C,
       checkpoint: m.a.SHOP_RENDERED,
       tab: O.AW.CATALOG,
       unpublishedCategoriesShown: b,
       cacheDisabled: _
     })
-  }, [C, b, _, p, j.length]);
-  let k = (0, g.FF)("CollectiblesBrowse");
+  }, [C, b, _, p, T.length]);
+  let j = (0, g.FF)("CollectiblesBrowse");
   return p ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)("div", {
     className: s()(x.categories, {
-      [x.categoriesNoFilter]: !k
+      [x.categoriesNoFilter]: !j
     }),
-    children: [j.map((e, t) => (0, r.jsx)("div", {
+    children: [T.map((e, t) => (0, r.jsx)("div", {
       ref: t => i(e.skuId, t),
       children: (0, r.jsx)(d.k0, {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(k, {
           category: e
         })
       })

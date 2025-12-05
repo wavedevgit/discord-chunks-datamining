@@ -34,14 +34,14 @@ function E(e) {
   S(m);
   let E = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
     [O, x] = l.useState(true),
-    [y, T] = l.useState(true),
-    j = l.useMemo(() => n.filter(e => !_.y8.some(t => {
+    [y, k] = l.useState(true),
+    T = l.useMemo(() => n.filter(e => !_.y8.some(t => {
       let {
         categorySkuId: n
       } = t;
       return n === e.skuId
     })), [n]),
-    k = l.useCallback(e => {
+    j = l.useCallback(e => {
       let {
         sourceButton: t,
         categorySkuId: n,
@@ -52,7 +52,7 @@ function E(e) {
       c(t, n);
       let s = r && !E,
         a = i ? _.AW.ORBS : _.AW.CATALOG;
-      x(n), T(!l), o(a, s)
+      x(n), k(!l), o(a, s)
     }, [E, o, c]),
     I = (0, d.FF)("CollectiblesContent"),
     {
@@ -63,16 +63,16 @@ function E(e) {
     errorMessage: m,
     errorOrigin: p.i.SHOP_PAGE
   }) : b.includes(t) ? (0, r.jsx)(C.Z, {
-    handleTransition: k,
+    handleTransition: j,
     tab: t,
     transitionState: a
   }) : (0, r.jsx)(f.Z, {
     tab: t,
-    sortedCategories: j,
+    sortedCategories: T,
     initialCategoryId: O,
     showFilterInitially: y,
     onUnmount: () => {
-      x(true), T(true)
+      x(true), k(true)
     }
   })
 }

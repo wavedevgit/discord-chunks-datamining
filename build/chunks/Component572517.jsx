@@ -1,4 +1,4 @@
-/** Chunk was on 54400 **/
+/** Chunk was on 23242 **/
 /** chunk id: 572517, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => h
@@ -20,33 +20,33 @@ function h() {
   let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     h = (0, Chunk410030.ZP)(),
     f = (0, Chunk780384.wj)(h),
-    b = (0, Chunk347896.Z)(),
-    g = null == b ? true : b.planSelectionBanner,
+    g = (0, Chunk347896.Z)(),
+    v = null == g ? true : g.planSelectionBanner,
     {
-      claimableRewards: v
+      claimableRewards: j
     } = (0, Chunk987209.wD)();
-  if (null == g || null == v) return null;
-  let S = null == (e = g.getBackgroundImageUrl) ? true : module.call(g, f),
-    y = (0, Chunk717401.Yr)(S),
-    x = null == (t = g.gradientConfig) ? true : exports.call(g, {
+  if (null == v || null == j) return null;
+  let y = null == (e = v.getBackgroundImageUrl) ? true : module.call(v, f),
+    b = (0, Chunk717401.Yr)(y),
+    S = null == (t = v.gradientConfig) ? true : exports.call(v, {
       isDarkMode: f,
       isAndroid: false
     }),
-    P = (0, Chunk717401.Tl)(x, {
+    x = (0, Chunk717401.Tl)(S, {
       colorStops: [0, 12, 100]
     }),
-    j = (0, Chunk717401.$q)(y, P, {
+    P = (0, Chunk717401.$q)(b, x, {
       backgroundSize: "cover, auto",
       backgroundPosition: "right center, 0% 0%"
     });
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk432483.promotionalFooterBanner,
-    style: j,
+    style: P,
     children: [(0, Chunk54381.jsx)("div", {
       className: Chunk432483.avatar,
       children: (0, Chunk54381.jsx)(Chunk897942.Z, {
-        claimableRewards: v,
-        maxRewardImageSrc: g.getImageUrl(f, require),
+        claimableRewards: j,
+        maxRewardImageSrc: v.getImageUrl(f, require),
         size: Chunk481060.EFr.SIZE_40,
         imageScaling: 1.25
       })
@@ -54,7 +54,7 @@ function h() {
       variant: "text-md/medium",
       className: Chunk432483.bannerText,
       color: "always-white",
-      children: g.desktopBannerText(v.length)
+      children: v.desktopBannerText(j.length)
     })]
   })
 }

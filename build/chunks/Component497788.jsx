@@ -32,7 +32,7 @@ let v = e => {
   } = u.Z.useConfig({
     location: "RewardHeroBlockCards"
   }), x = l.useMemo(() => a.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), y = (0, i.e7)([c.Z], () => c.Z.getPurchase(n.rewardSkuId)), {
-    products: T
+    products: k
   } = ((e, t, n) => {
     let r = (0, h.Z)(),
       s = (0, i.e7)([a.Z], () => a.Z.products),
@@ -42,15 +42,15 @@ let v = e => {
     return {
       products: (0, _.St)(u)
     }
-  })(t, n, y), j = l.useMemo(() => !t && 0 !== n.rankedSkuIds.length && !(T.length > 0) && n.rankedSkuIds.every(e => {
+  })(t, n, y), T = l.useMemo(() => !t && 0 !== n.rankedSkuIds.length && !(k.length > 0) && n.rankedSkuIds.every(e => {
     var t;
     return (null == (t = a.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-  }), [t, n.rankedSkuIds, T.length]), k = t || j, {
+  }), [t, n.rankedSkuIds, k.length]), j = t || T, {
     readyToClaim: I
   } = (0, b.q)(x, n.rewardSkuId), L = null == y && null != n.rewardSkuId && null != x;
   return (0, r.jsx)(s.Z, {
     gap: "xl",
-    children: k ? (0, r.jsx)(r.Fragment, {
+    children: j ? (0, r.jsx)(r.Fragment, {
       children: [true, true, true, true, true].map((e, t) => (0, r.jsx)(m.Z, {}, t))
     }) : (0, r.jsxs)(r.Fragment, {
       children: [L && !!(O || I) && (0, r.jsx)(o.k0, {
@@ -63,7 +63,7 @@ let v = e => {
           category: x,
           rewardSkuId: n.rewardSkuId
         })
-      }, n.rewardSkuId), T.map((e, t) => {
+      }, n.rewardSkuId), k.map((e, t) => {
         let n = a.Z.getCategoryForProduct(e.skuId);
         return null == e || null == n ? null : (0, r.jsx)(o.k0, {
           newValue: {

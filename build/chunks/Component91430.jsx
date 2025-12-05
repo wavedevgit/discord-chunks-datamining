@@ -304,7 +304,8 @@ function ei(e) {
       analyticsLocation: n
     }) : (0, r.jsx)(B.Z, {
       subscription: t,
-      renewalInvoicePreview: b,
+      currentInvoicePreview: b,
+      renewalInvoicePreview: v,
       paymentSource: i,
       busy: a,
       analyticsLocation: n

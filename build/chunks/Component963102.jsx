@@ -2,7 +2,7 @@
 /** chunk id: 963102, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  I: () => A
+  I: () => N
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -140,7 +140,7 @@ function B(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     selectedTab: t,
     handleTransition: n
@@ -150,32 +150,32 @@ function A(e) {
     location: "collectibles_shop_header_bar"
   }), O = (0, m.Y)({
     location: "CollectiblesShopHeaderBar"
-  }), A = [{
+  }), N = [{
     tab: y.AW.HOME,
-    displayText: k.intl.string(k.t.ijDDwz)
+    displayText: j.intl.string(j.t.ijDDwz)
   }, {
     tab: y.AW.CATALOG,
-    displayText: k.intl.string(k.t.Ah5sJo)
+    displayText: j.intl.string(j.t.Ah5sJo)
   }];
-  g && A.push({
+  g && N.push({
     tab: y.AW.ORBS,
-    displayText: k.intl.string(k.t.EBYkzk)
+    displayText: j.intl.string(j.t.EBYkzk)
   });
-  let N = t === y.AW.ORBS ? T.ZY5.SHOP_ORBS_TAB : T.ZY5.COLLECTIBLES_SHOP,
+  let A = t === y.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
     P = l.useCallback(() => {
       (0, h.Y)({
-        pageType: N,
-        sectionType: T.jXE.ORBS_BALANCE_MENU,
-        ctaObject: T.qAy.CTA_TO_QUEST_HOME
+        pageType: A,
+        sectionType: k.jXE.ORBS_BALANCE_MENU,
+        ctaObject: k.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
         fromContent: o.j.ORBS_BALANCE_MENU
       })
-    }, [N]),
+    }, [A]),
     R = (0, S.eN)("collectibles_shop_header_bar"),
     Z = l.useCallback(() => {
       (null == d ? true : d.id) != null && (0, C.openUserProfileModal)({
         userId: d.id,
-        section: j.oh.WISHLIST,
+        section: T.oh.WISHLIST,
         showGuildProfile: false
       })
     }, [null == d ? true : d.id]);
@@ -188,15 +188,15 @@ function A(e) {
       children: [(0, r.jsxs)(c.P3F, {
         className: I.shopHomeLink,
         onClick: () => n(y.AW.HOME),
-        "aria-label": k.intl.string(k.t.pWG4ze) + " home",
+        "aria-label": j.intl.string(j.t.pWG4ze) + " home",
         children: [(0, r.jsx)(v.Z, {
           className: I.discordLogo
         }), (0, r.jsx)(f.Z.Title, {
-          children: k.intl.string(k.t.pWG4ze)
+          children: j.intl.string(j.t.pWG4ze)
         })]
       }), (0, r.jsx)("div", {
         className: I.tabs,
-        children: A.map(e => {
+        children: N.map(e => {
           let {
             tab: l,
             displayText: i
@@ -221,15 +221,15 @@ function A(e) {
         }), O && (0, r.jsx)(c.P3F, {
           className: I.wishlistButton,
           onClick: Z,
-          "aria-label": k.intl.string(k.t["7lZ31J"]),
+          "aria-label": j.intl.string(j.t["7lZ31J"]),
           children: (0, r.jsx)(c.h_8, {
             size: "xs",
             color: "currentColor"
           })
         }), g && (0, r.jsx)(b.V9, {
-          analyticsPage: N,
+          analyticsPage: A,
           cardAlignment: b.V9.CardAlignment.END,
-          ctaText: k.intl.string(k.t.VC4Mq0),
+          ctaText: j.intl.string(j.t.VC4Mq0),
           ctaOnClick: P,
           className: I.balanceWidgetMenu
         })]

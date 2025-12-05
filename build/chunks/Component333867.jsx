@@ -122,7 +122,7 @@ function I(e) {
       onClose: t,
       returnRef: n
     } = e, i = b(e, ["onClose", "returnRef"]);
-    return (0, r.jsx)(p.Z, E(h({}, i), {
+    return (0, r.jsx)(p.ZP, E(h({}, i), {
       loadId: w,
       skuId: f,
       isGift: m,

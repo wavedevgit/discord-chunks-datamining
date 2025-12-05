@@ -35,13 +35,13 @@ function y(e) {
     isFetchingCategories: n,
     scrollerRef: i,
     tab: y
-  } = e, T = (0, d.sp)(), j = null != (t = null == T ? true : T.sessionId) ? t : "", {
-    noCache: k,
+  } = e, k = (0, d.sp)(), T = null != (t = null == k ? true : k.sessionId) ? t : "", {
+    noCache: j,
     includeUnpublished: I
   } = (0, E.Z)(), L = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: B,
-    currentPage: A,
-    totalCount: N,
+    currentPage: N,
+    totalCount: A,
     isFetchingResults: P
   } = (0, m.a)(), R = (0, o.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), Z = l.useCallback(() => {
     var e;
@@ -56,24 +56,24 @@ function y(e) {
     H = l.useMemo(() => D(R), [D, R]);
   l.useEffect(() => {
     n || (0, C.n)({
-      sessionId: j,
+      sessionId: T,
       checkpoint: C.a.SHOP_RENDERED,
       tab: y,
       unpublishedCategoriesShown: I,
-      cacheDisabled: k
+      cacheDisabled: j
     })
-  }, [j, I, k, n, y]);
+  }, [T, I, j, n, y]);
   let M = l.useRef(null),
     {
       setQueryPageSize: F,
       setQueryPageOffset: W,
       queryPageSize: U
     } = (0, p.S)(),
-    [z, V] = l.useState(false),
+    [V, z] = l.useState(false),
     G = n || P || null == L;
   l.useEffect(() => {
-    if (G) return void V(false);
-    H.length > 0 && V(true)
+    if (G) return void z(false);
+    H.length > 0 && z(true)
   }, [G, H.length]);
   let K = U > 0 && !G && 0 === H.length;
   l.useEffect(() => {
@@ -84,15 +84,15 @@ function y(e) {
   }, [F]);
   let Y = l.useCallback(e => {
     u.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-      collectibles_shop_session_id: null == T ? true : T.sessionId,
-      page_section: null == T ? true : T.pageSection,
-      page_category: null == T ? true : T.pageCategory,
+      collectibles_shop_session_id: null == k ? true : k.sessionId,
+      page_section: null == k ? true : k.pageSection,
+      page_category: null == k ? true : k.pageCategory,
       page_index: e,
       page_size: U,
       cta_name: "filter results page ".concat(e),
       page_type: "catalog"
     }), W((e - 1) * U)
-  }, [T, U, W]);
+  }, [k, U, W]);
   return (0, r.jsxs)(_.zp.Provider, {
     value: x,
     children: [(0, r.jsxs)("div", {
@@ -101,7 +101,7 @@ function y(e) {
       }),
       children: [K && (0, r.jsx)(v.Z, {}), (0, r.jsxs)("div", {
         className: s()(O.products, {
-          [O.loadIn]: z
+          [O.loadIn]: V
         }),
         ref: M,
         children: [G && [...Array(U)].map((e, t) => (0, r.jsx)(b.Z, {}, t)), !G && H.map((e, t) => null == g.Z.getCategory(e.categorySkuId) ? null : (0, r.jsx)(d.k0, {
@@ -110,16 +110,16 @@ function y(e) {
           },
           children: (0, r.jsx)(h.Z, {
             skuId: e.skuId,
-            onClickAnalytics: (0, _.wO)(e, y, T)
+            onClickAnalytics: (0, _.wO)(e, y, k)
           }, e.skuId)
         }, e.skuId))]
       })]
-    }), N > U && (0, r.jsx)("div", {
+    }), A > U && (0, r.jsx)("div", {
       className: O.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.DsT, {
-          currentPage: A,
-          totalCount: N,
+          currentPage: N,
+          totalCount: A,
           pageSize: U,
           onPageChange: Y,
           disablePaginationGap: true

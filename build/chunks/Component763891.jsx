@@ -2,7 +2,7 @@
 /** chunk id: 763891, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => A
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -35,27 +35,27 @@ var Chunk54381 = require("./54381.js"),
   Chunk266058 = require("./266058.js"),
   Chunk719138 = require("./719138.js");
 
-function N(e) {
+function A(e) {
   var t;
   let {
     isFetchingCategories: n,
-    scrollerRef: N,
+    scrollerRef: A,
     tab: P
   } = e, R = (0, g.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: D
-  } = (0, E.Z)(), H = (0, s.e7)([u.default], () => u.default.getCurrentUser()), M = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), U = (0, c.Fg)(), z = (0, o.ap)(U), [V, G, K] = l.useMemo(() => {
+  } = (0, E.Z)(), H = (0, s.e7)([u.default], () => u.default.getCurrentUser()), M = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), U = (0, c.Fg)(), V = (0, o.ap)(U), [z, G, K] = l.useMemo(() => {
     switch (P) {
       case v.AW.AVATAR_DECORATIONS:
-        return [O.intl.string(O.t.dRZYNE), z ? k.Z : j.Z, i.Z.AVATAR_DECORATION];
+        return [O.intl.string(O.t.dRZYNE), V ? j.Z : T.Z, i.Z.AVATAR_DECORATION];
       case v.AW.PROFILE_EFFECTS:
-        return [O.intl.string(O.t["1cNjtx"]), z ? A.Z : B.Z, i.Z.PROFILE_EFFECT];
+        return [O.intl.string(O.t["1cNjtx"]), V ? N.Z : B.Z, i.Z.PROFILE_EFFECT];
       case v.AW.NAMEPLATES:
-        return [O.intl.string(O.t.V68Fqz), z ? L.Z : I.Z, i.Z.NAMEPLATE];
+        return [O.intl.string(O.t.V68Fqz), V ? L.Z : I.Z, i.Z.NAMEPLATE];
       case v.AW.BUNDLES:
-        return [O.intl.string(O.t.FYFpps), z ? T.Z : y.Z, i.Z.BUNDLE]
+        return [O.intl.string(O.t.FYFpps), V ? k.Z : y.Z, i.Z.BUNDLE]
     }
-  }, [P, z]), Y = (0, p.a)(), q = l.useMemo(() => Y(M.filter(e => {
+  }, [P, V]), Y = (0, p.a)(), q = l.useMemo(() => Y(M.filter(e => {
     var t;
     return (e.type === K || e.type === i.Z.VARIANTS_GROUP && (null == (t = e.variants) ? true : t.some(e => e.type === K)) === true) && !v.y8.some(t => {
       let {
@@ -88,7 +88,7 @@ function N(e) {
       className: x.bannerContainer,
       children: (0, r.jsx)(a.Heading, {
         variant: "heading-xxl/extrabold",
-        children: V
+        children: z
       })
     }), (0, r.jsx)("div", {
       className: x.products,
@@ -118,7 +118,7 @@ function N(e) {
               page_size: 40,
               cta_name: "".concat(P, " page ").concat(e),
               page_type: P
-            }), W(e), null == N || null == (t = N.current) || t.scrollToTop({
+            }), W(e), null == A || null == (t = A.current) || t.scrollToTop({
               animate: true
             })
           },

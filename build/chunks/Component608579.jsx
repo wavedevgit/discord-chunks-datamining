@@ -2,7 +2,7 @@
 /** chunk id: 608579, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  ZP: () => k
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -71,92 +71,146 @@ function L(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-
-function j(e) {
-  var t;
-  let {
-    onClose: n,
-    onComplete: a,
-    onStepChange: w,
-    transitionState: x,
-    loadId: j,
-    skuId: M,
-    isGift: k = false,
-    giftRecipient: U,
-    giftMessage: G,
-    giftingOrigin: Z,
-    analyticsLocations: B,
-    returnRef: F
-  } = e, {
-    analyticsLocations: V
-  } = (0, d.ZP)([...B, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [Y, W] = i.useState(null), [K, z] = i.useState(false), q = i.useMemo(() => (0, C.UY)({
-    purchaseType: N.o8.FIAT,
-    skuId: M
-  }), [M]), Q = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), X = null != M ? [M] : Q, J = null != (t = X[0]) ? t : null, $ = null != M && _.Rm.has(M), ee = i.useCallback(() => {
-    z(true), null == a || a()
-  }, [a]), et = i.useCallback(e => {
-    z(false), n(e), c.Z.dispatch({
-      type: "SKU_PURCHASE_MODAL_CLOSE",
-      error: null
+let j = e => {
+    var t;
+    let {
+      onClose: n,
+      onComplete: r,
+      skuId: a,
+      analyticsLocations: o
+    } = e, {
+      analyticsLocations: p
+    } = (0, d.ZP)([...o, u.Z.COLLECTIBLES_PAYMENT_MODAL]), m = i.useRef(new s.qA), [h, g] = i.useState(null), [E, b] = i.useState(false), y = i.useMemo(() => (0, C.UY)({
+      purchaseType: N.o8.FIAT,
+      skuId: a
+    }), [a]), O = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), v = null != a ? [a] : O, S = null != (t = v[0]) ? t : null, I = null != a && _.Rm.has(a), T = i.useCallback(() => {
+      b(true), null == r || r()
+    }, [r]);
+    return {
+      analyticsLocations: p,
+      environment: m,
+      confettiCanvas: h,
+      setConfettiCanvas: g,
+      customConfettiVisible: E,
+      customConfettiDisplayOptions: y,
+      skuIDs: v,
+      paymentModalSkuId: S,
+      paymentModalOnClose: i.useCallback(e => {
+        b(false), n(e), c.Z.dispatch({
+          type: "SKU_PURCHASE_MODAL_CLOSE",
+          error: null
+        })
+      }, [n]),
+      paymentModalOnComplete: T,
+      skipConfirm: I
+    }
+  },
+  M = e => {
+    let {
+      environment: t,
+      setConfettiCanvas: n,
+      customConfettiDisplayOptions: i,
+      customConfettiVisible: a
+    } = e;
+    return (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(s.O_, {
+        ref: n,
+        className: R.confettiCanvas,
+        environment: t.current
+      }), (0, r.jsx)(p.i, {
+        options: i,
+        className: o()(R.customConfetti, {
+          [R.hidden]: !a
+        })
+      })]
     })
-  }, [n]), en = (e, t, n) => k ? (0, r.jsx)(O.Z, {
+  };
+
+function k(e) {
+  let {
+    onClose: t,
+    onComplete: n,
+    onStepChange: a,
+    transitionState: o,
+    loadId: s,
+    skuId: l,
+    isGift: c = false,
+    giftRecipient: u,
+    giftMessage: f,
+    giftingOrigin: p,
+    analyticsLocations: _,
+    returnRef: C
+  } = e, {
+    analyticsLocations: N,
+    environment: w,
+    confettiCanvas: x,
+    setConfettiCanvas: k,
+    customConfettiVisible: U,
+    customConfettiDisplayOptions: G,
+    skuIDs: Z,
+    paymentModalSkuId: B,
+    paymentModalOnClose: F,
+    paymentModalOnComplete: V,
+    skipConfirm: H
+  } = j({
+    onClose: t,
+    onComplete: n,
+    skuId: l,
+    analyticsLocations: _
+  }), Y = (e, t, n) => c ? (0, r.jsx)(O.Z, {
     step: n,
     onClose: () => t(false),
-    giftingOrigin: Z
+    giftingOrigin: p
   }) : (0, r.jsx)(T.Z, {
     step: n,
     onClose: () => t(false)
-  }), er = i.useMemo(() => [y.WA, ...k ? [I.Dd] : [], v.n, ...y.yp, y.wo, {
+  }), W = i.useMemo(() => [y.WA, ...c ? [I.Dd] : [], v.n, ...y.yp, y.wo, {
     key: g.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(S.x, L(D({}, e), {
-      confettiCanvas: Y,
-      analyticsLocations: V,
-      hideConfetti: null != q
+      confettiCanvas: x,
+      analyticsLocations: N,
+      hideConfetti: null != G
     })),
     options: {
       bodyClassName: R.modalOverrideBody,
       sliderBodyClassName: R.modalOverrideSliderBody
     }
-  }], [V, Y, q, k]);
+  }], [N, x, G, c]);
   return (0, r.jsxs)(d.Gt, {
-    value: V,
-    children: [(0, r.jsx)(s.O_, {
-      ref: W,
-      className: R.confettiCanvas,
-      environment: H.current
-    }), (0, r.jsx)(p.i, {
-      options: q,
-      className: o()(R.customConfetti, {
-        [R.hidden]: !K
-      })
+    value: N,
+    children: [(0, r.jsx)(M, {
+      environment: w,
+      setConfettiCanvas: k,
+      customConfettiDisplayOptions: G,
+      customConfettiVisible: U
     }), (0, r.jsx)(h.PaymentContextProvider, {
-      loadId: j,
-      stepConfigs: er,
+      loadId: s,
+      stepConfigs: W,
       applicationId: A.XAJ,
-      skuIDs: X,
-      isGift: k,
+      skuIDs: Z,
+      isGift: c,
       activeSubscription: null,
       purchaseType: P.GZ.ONE_TIME,
       excludeSubscriptionPlansBySKU: true,
       children: (0, r.jsx)(E.c1, {
         children: (0, r.jsx)(m.KB, {
-          isGift: k,
-          giftRecipient: U,
-          giftMessage: G,
-          giftingOrigin: Z,
+          isGift: c,
+          giftRecipient: u,
+          giftMessage: f,
+          giftingOrigin: p,
           children: (0, r.jsx)(b.PaymentModal, {
-            onClose: et,
-            onComplete: ee,
+            skuId: B,
+            onClose: F,
+            onComplete: V,
             applicationId: A.XAJ,
-            skuId: J,
             initialPlanId: null,
-            analyticsLocations: V,
-            transitionState: x,
-            renderHeader: en,
-            returnRef: F,
-            onStepChange: w,
-            skipConfirm: $,
-            hideShadow: true
+            analyticsLocations: N,
+            renderHeader: Y,
+            onStepChange: a,
+            skipConfirm: H,
+            hideShadow: true,
+            transitionState: o,
+            returnRef: C
           })
         })
       })

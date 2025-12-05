@@ -25,24 +25,24 @@ function h(e) {
     guildId: x,
     page: m
   } = e, {
-    ref: C,
-    width: v
+    ref: v,
+    width: C
   } = (0, o.ZP)(), k = (0, d.oR)(), {
     analyticsLocations: j
   } = (0, s.ZP)(), b = i.useRef(null), {
     handleScroll: S
-  } = (0, _.I)(b, k, j), [N, E] = i.useMemo(() => {
+  } = (0, _.I)(b, k, j), [Z, N] = i.useMemo(() => {
     if ((null == m ? true : m.skuIds) == null || 0 === m.skuIds.length) return [
       [],
       []
     ];
-    let e = Math.round(null != v ? v : 0);
+    let e = Math.round(null != C ? C : 0);
     return (null == m ? true : m.leaderboard) == null || null == e || e < 564 ? [
       [], m.skuIds
     ] : e < 1104 ? m.skuIds.length >= 2 ? [
       [], m.skuIds
     ] : [m.skuIds.slice(0, 1), m.skuIds.slice(1)] : [m.skuIds.slice(0, 2), m.skuIds.slice(2)]
-  }, [m, v]), L = 1 === N.length && null != v && v >= 834;
+  }, [m, C]), E = 1 === Z.length && null != C && C >= 834;
   return (i.useEffect(() => {
     let {
       sessionId: e,
@@ -65,7 +65,7 @@ function h(e) {
     ref: b,
     onScroll: S,
     children: (0, l.jsxs)("section", {
-      ref: C,
+      ref: v,
       className: f.container,
       children: [(0, l.jsx)(g.n, {
         applicationId: h,
@@ -73,7 +73,7 @@ function h(e) {
       }), (0, l.jsx)(u.t, {
         analyticsSectionId: "leaderboard",
         leaderboard: m.leaderboard,
-        skuId: L ? N[0] : true,
+        skuId: E ? Z[0] : true,
         applicationId: h,
         guildId: x,
         analyticsLocations: j
@@ -81,13 +81,13 @@ function h(e) {
         analyticsSectionId: "featured-top-section",
         applicationId: h,
         guildId: x,
-        skuIds: L ? true : N,
-        variant: c.Z.MEDIUM
+        skuIds: E ? true : Z,
+        variant: c.Zp.MEDIUM
       }), (0, l.jsx)(p.Z, {
         analyticsSectionId: "non-featured-top-section",
         applicationId: h,
         guildId: x,
-        skuIds: E
+        skuIds: N
       }), null == (t = m.sections) ? true : t.map((e, n) => {
         var t;
         return (0, l.jsx)(p.Z, {

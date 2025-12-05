@@ -50,26 +50,27 @@ function d(e, t) {
   }), e
 }
 let f = {
-  key: Chunk409813.h8.ADD_PAYMENT_STEPS,
-  renderStep: e => (0, r.jsx)(p, c({}, e)),
-  options: {
-    renderHeader: true
-  }
-};
+    key: Chunk409813.h8.ADD_PAYMENT_STEPS,
+    renderStep: e => (0, r.jsx)(_, c({}, e)),
+    options: {
+      renderHeader: true
+    }
+  },
+  p = (e, t) => {
+    if (0 === Object.keys(i.Z.paymentSources).length) {
+      if (t) return void e.handleStepChange(o.h8.GIFT_CUSTOMIZATION);
+      e.handleClose()
+    } else e.handleStepChange(o.h8.REVIEW, {
+      trackedFromStep: o.h8.ADD_PAYMENT_STEPS
+    })
+  };
 
-function p(e) {
+function _(e) {
   let {
     isGift: t
   } = (0, a.wD)();
   return (0, r.jsx)(s.J, d(c({}, e), {
     breadcrumbSteps: [o.h8.ADD_PAYMENT_STEPS, o.h8.REVIEW, o.h8.CONFIRM],
-    onReturn: () => {
-      if (0 === Object.keys(i.Z.paymentSources).length) {
-        if (t) return void e.handleStepChange(o.h8.GIFT_CUSTOMIZATION);
-        e.handleClose()
-      } else e.handleStepChange(o.h8.REVIEW, {
-        trackedFromStep: o.h8.ADD_PAYMENT_STEPS
-      })
-    }
+    onReturn: () => p(e, t)
   }))
 }

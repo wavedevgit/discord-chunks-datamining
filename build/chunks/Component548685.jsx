@@ -2,7 +2,7 @@
 /** chunk id: 548685, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,26 +33,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk219588 = require("./219588.js"),
   Chunk310582 = require("./310582.js");
-let A = e => {
+let N = e => {
   var t;
   let {
     isLoading: n,
     title: i,
-    sortedSkuIds: A,
-    numVisibleItems: N,
+    sortedSkuIds: N,
+    numVisibleItems: A,
     prioritizeUserDiscounts: P,
     tab: R,
     buttonContainerClassName: Z,
     orbsSupportedOnly: w
-  } = e, D = (0, o.e7)([f.default], () => f.default.getCurrentUser()), H = h.ZP.canUseCollectibles(D), M = (0, T.B)("FeedBlock"), {
+  } = e, D = (0, o.e7)([f.default], () => f.default.getCurrentUser()), H = h.ZP.canUseCollectibles(D), M = (0, k.B)("FeedBlock"), {
     sortType: F,
     setSortType: W,
     sortedItems: U,
-    sortOptions: z,
-    shuffleProducts: V,
+    sortOptions: V,
+    shuffleProducts: z,
     showRecommendationOption: G
   } = (0, x.Z)({
-    sortedSkuIds: A,
+    sortedSkuIds: N,
     isPremiumUser: H,
     prioritizeUserDiscounts: P,
     orbsSupportedOnly: w
@@ -63,7 +63,7 @@ let A = e => {
     X({
       isShuffling: false,
       onOutroComplete: () => W(e)
-    }), m.default.track(k.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+    }), m.default.track(j.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: ee,
       sort_type: e
     })
@@ -82,7 +82,7 @@ let A = e => {
           position: "top",
           "aria-label": I.intl.string(I.t["3taPdj"]),
           children: (0, r.jsx)(u.P3F, {
-            onClick: () => (0, d.Z)(C.Z.getArticleURL(k.BhN.DATA_USED_FOR_RECOMMENDED)),
+            onClick: () => (0, d.Z)(C.Z.getArticleURL(j.BhN.DATA_USED_FOR_RECOMMENDED)),
             className: B.informationIcon,
             children: (0, r.jsx)(u.d3s, {
               size: "sm"
@@ -99,7 +99,7 @@ let A = e => {
         }), (0, r.jsx)("div", {
           className: Z,
           children: (0, r.jsx)(a.B6, {
-            options: z,
+            options: V,
             select: en,
             className: B.sortSelect,
             popoutClassName: s()({
@@ -117,9 +117,9 @@ let A = e => {
             onClick: () => {
               X({
                 isShuffling: true,
-                onOutroComplete: V,
+                onOutroComplete: z,
                 returnRef: et
-              }), m.default.track(k.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+              }), m.default.track(j.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
                 page_session_id: ee
               })
             },
@@ -131,7 +131,7 @@ let A = e => {
       className: B.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(S.Z, {}, t + 1))
-      }) : K.slice(0, N).map((e, t) => {
+      }) : K.slice(0, A).map((e, t) => {
         let n, l = b.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (Q)
@@ -152,7 +152,7 @@ let A = e => {
             className: n,
             children: (0, r.jsx)(E.Z, {
               skuId: e.skuId,
-              prioritizedCurrency: R === j.AW.ORBS ? v.tA.ORBS : true,
+              prioritizedCurrency: R === T.AW.ORBS ? v.tA.ORBS : true,
               onClickAnalytics: (0, v.wO)(e, R, $)
             })
           })

@@ -70,7 +70,7 @@ function y(e) {
         className: x.shopScroll,
         ref: p,
         onScroll: C,
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(k, {
           isSmallScreen: S,
           filterBarOpen: E,
           setFilterBarOpen: v,
@@ -89,7 +89,7 @@ function y(e) {
     })
   })
 }
-let T = e => {
+let k = e => {
   let {
     isSmallScreen: t,
     filterBarOpen: n,
@@ -97,11 +97,11 @@ let T = e => {
     tab: a,
     scrollerRef: m,
     sortedCategories: y,
-    setCategoryRef: T,
-    initialCategoryId: j
-  } = e, k = (0, d.FF)("CollectiblesBrowse"), I = l.useRef(null), L = (0, g.S)(e => e.hasDefaultFilters()), B = (0, u.sp)(), {
-    handlePageChange: A,
-    currentPage: N
+    setCategoryRef: k,
+    initialCategoryId: T
+  } = e, j = (0, d.FF)("CollectiblesBrowse"), I = l.useRef(null), L = (0, g.S)(e => e.hasDefaultFilters()), B = (0, u.sp)(), {
+    handlePageChange: N,
+    currentPage: A
   } = (0, _.h)(m), P = l.useCallback(e => {
     c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == B ? true : B.sessionId,
@@ -111,8 +111,8 @@ let T = e => {
       page_size: null == B ? true : B.pageSize,
       cta_name: "catalog page ".concat(e),
       page_type: "catalog"
-    }), A(e)
-  }, [B, A]), R = l.useRef(null);
+    }), N(e)
+  }, [B, N]), R = l.useRef(null);
   return l.useEffect(() => {
     if (!t || !n) return;
     let e = e => {
@@ -132,9 +132,9 @@ let T = e => {
     className: x.inventoryWrapper,
     children: (0, r.jsxs)("div", {
       className: s()(x.inventory, {
-        [x.inventoryFilter]: k
+        [x.inventoryFilter]: j
       }),
-      children: [k && (0, r.jsxs)("div", {
+      children: [j && (0, r.jsxs)("div", {
         className: x.controls,
         children: [(0, r.jsx)("div", {
           className: x.controlsLeftSide,
@@ -178,7 +178,7 @@ let T = e => {
             children: (0, r.jsx)(h.Z, {})
           })
         })]
-      }), k && !L ? (0, r.jsx)(b.Z, {
+      }), j && !L ? (0, r.jsx)(b.Z, {
         scrollerRef: m,
         tab: a
       }, a) : (0, v.RE)(a) ? (0, r.jsx)(E.Z, {
@@ -186,14 +186,14 @@ let T = e => {
         tab: a
       }, a) : (0, r.jsx)(u.k0, {
         newValue: {
-          pageIndex: N
+          pageIndex: A
         },
         children: (0, r.jsx)(p.Z, {
           sortedCategories: y,
-          setCategoryRef: T,
-          currentPage: N,
+          setCategoryRef: k,
+          currentPage: A,
           handlePageChange: P,
-          initialCategoryId: j
+          initialCategoryId: T
         })
       })]
     })
