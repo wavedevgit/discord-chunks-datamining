@@ -40,12 +40,12 @@ let o = {
       showConfirm: a = false,
       disabled: o,
       submitting: c
-    } = e, d = t.methods.length > 1;
-    return null != i || d || a ? (0, r.jsx)(l.mzw, {
+    } = e, u = t.methods.length > 1;
+    return null != i || u || a ? (0, r.jsx)(l.mzw, {
       children: (0, r.jsxs)(l.ButtonGroup, {
         fullWidth: true,
         direction: "vertical",
-        children: [d && (0, r.jsx)(l.Button, {
+        children: [u && (0, r.jsx)(l.Button, {
           variant: "secondary",
           text: s.intl.string(s.t.Tot4EC),
           onClick: () => n("select")

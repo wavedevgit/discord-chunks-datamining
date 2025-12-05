@@ -1,7 +1,7 @@
 /** Chunk was on 52030 **/
 /** chunk id: 949399, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -41,16 +41,16 @@ function c(e, t) {
   }), e
 }
 
-function d(e) {
+function u(e) {
   let {
     setSlide: t
-  } = e, [n, d] = l.useState(10);
+  } = e, [n, u] = l.useState(10);
   return l.useEffect(() => {
     if (n > 0) {
-      let e = setInterval(() => {
-        d(e => e - 1)
+      let e = setTimeout(() => {
+        u(e => e - 1)
       }, 1e3);
-      return () => clearInterval(e)
+      return () => clearTimeout(e)
     }
   }, [n]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z.SlideHeader, c(o({}, e), {

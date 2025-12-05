@@ -15,18 +15,18 @@ function c(e) {
     mfaChallenge: t,
     finish: n,
     setSlide: c,
-    onClose: d,
-    isSlideReady: u,
+    onClose: u,
+    isSlideReady: d,
     headerAlignStart: f
   } = e, [h, g] = l.useState(false), [m, b] = l.useState(null), [p, j] = l.useState(""), y = l.useRef(null), x = o.intl.string(o.t["C/ZAw/"]), S = o.intl.string(o.t.fZSi1D), v = l.useCallback(e => {
     j(e), b(null)
   }, [j, b]);
   return l.useEffect(() => {
-    if (u) {
+    if (d) {
       var e;
       null == (e = y.current) || e.focus()
     }
-  }, [u]), (0, r.jsxs)("form", {
+  }, [d]), (0, r.jsxs)("form", {
     onSubmit: e => {
       e.preventDefault(), g(true), n({
         mfaType: "backup",
@@ -39,7 +39,7 @@ function c(e) {
       })
     },
     children: [(0, r.jsx)(a.Z.SlideHeader, {
-      onClose: d,
+      onClose: u,
       headerAlignStart: f
     }), (0, r.jsxs)(a.Z.SlideContent, {
       children: [(0, r.jsx)(s.oil, {

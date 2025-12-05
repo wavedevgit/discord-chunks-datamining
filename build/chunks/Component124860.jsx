@@ -87,12 +87,12 @@ function b(e) {
       children: (0, r.jsx)(f.Z, g({}, w))
     }), (0, r.jsx)(i.Mi4, {
       id: "totp",
-      children: (0, r.jsx)(u.Z, m(g({}, w), {
+      children: (0, r.jsx)(d.Z, m(g({}, w), {
         isSlideReady: "totp" === C
       }))
     }), (0, r.jsx)(i.Mi4, {
       id: "sms",
-      children: (0, r.jsx)(d.Z, m(g({}, w), {
+      children: (0, r.jsx)(u.Z, m(g({}, w), {
         isSlideReady: "sms" === C
       }))
     }), (0, r.jsx)(i.Mi4, {

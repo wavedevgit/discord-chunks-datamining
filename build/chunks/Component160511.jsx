@@ -1,7 +1,7 @@
 /** Chunk was on 52030 **/
 /** chunk id: 160511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js"), require("./457542.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,11 +12,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function d(e) {
   let {
     mfaChallenge: t,
     finish: n,
-    setSlide: u,
+    setSlide: d,
     onClose: f,
     isSlideReady: h,
     headerAlignStart: g
@@ -43,7 +43,7 @@ function u(e) {
       null == (e = O.current) || e.focus()
     }
   }, [h]);
-  let w = null == p ? d.intl.string(d.t.LQdCQE) : d.intl.formatToPlainString(d.t["8r6h7+"], {
+  let w = null == p ? u.intl.string(u.t.LQdCQE) : u.intl.formatToPlainString(u.t["8r6h7+"], {
     phoneNumber: p
   });
   return (0, r.jsxs)("form", {
@@ -65,10 +65,10 @@ function u(e) {
     }), (0, r.jsxs)(o.Z.SlideContent, {
       children: [(0, r.jsxs)(a.NIo, {
         children: [(0, r.jsx)(a.oil, {
-          label: d.intl.string(d.t.HZPBOd),
+          label: u.intl.string(u.t.HZPBOd),
           inputRef: O,
           onChange: Z,
-          placeholder: d.intl.string(d.t.tARzgo),
+          placeholder: u.intl.string(u.t.tARzgo),
           maxLength: 10,
           value: C,
           autoComplete: "one-time-code",
@@ -76,7 +76,7 @@ function u(e) {
           disabled: y
         }), (0, r.jsx)(a.Button, {
           variant: "secondary",
-          text: d.intl.string(d.t.ZF29L6),
+          text: u.intl.string(u.t.ZF29L6),
           loading: m,
           onClick: () => {
             s.tn.post({
@@ -99,7 +99,7 @@ function u(e) {
       })]
     }), (0, r.jsx)(o.Z.SlideFooter, {
       mfaChallenge: t,
-      setSlide: u,
+      setSlide: d,
       showConfirm: true,
       disabled: C.length !== i.Gz,
       submitting: y
