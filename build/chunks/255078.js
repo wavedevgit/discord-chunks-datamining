@@ -107,6 +107,9 @@ class b extends Chunk81825.Z {
   get isPremium() {
     return this.type === Chunk981631.NYc.PREMIUM
   }
+  get isACOM() {
+    return this.paymentGateway === Chunk981631.gg$.APPLE_ADVANCED_COMMERCE
+  }
   get planIdForCurrencies() {
     let e;
     return this.isPremium ? (i()(this.planIdFromItems, "Premium subscription has no planId for currencies"), e = this.planIdFromItems) : e = this.planId, module
