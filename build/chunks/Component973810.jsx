@@ -21,12 +21,12 @@ function g(e) {
     finish: n,
     setSlide: g,
     onClose: m,
-    headerAlignStart: p
-  } = e, [b, x] = r.useState(false), [S, j] = r.useState(null), {
-    challenge: y
+    headerAlignStart: b
+  } = e, [p, j] = l.useState(false), [y, x] = l.useState(null), {
+    challenge: S
   } = t.methods.find(e => "webauthn" === e.type), v = async () => {
-    x(true), j(null);
-    let e = o.isPlatformEmbedded && u.ZP.supportsFeature(h.eRX.WEBAUTHN) ? u.ZP.webAuthnAuthenticate(y) : i.U2(JSON.parse(y)).then(e => JSON.stringify(e)),
+    j(true), x(null);
+    let e = o.isPlatformEmbedded && d.ZP.supportsFeature(f.eRX.WEBAUTHN) ? d.ZP.webAuthnAuthenticate(S) : i.U2(JSON.parse(S)).then(e => JSON.stringify(e)),
       t = async e => {
         try {
           await n({
@@ -34,33 +34,33 @@ function g(e) {
             data: e
           })
         } catch (e) {
-          e instanceof s.Pd ? j(f.intl.string(f.t.xSCvBf)) : j(e.message)
+          e instanceof s.Pd ? x(h.intl.string(h.t.xSCvBf)) : x(e.message)
         }
       };
     try {
       let n = await e;
       await t(n)
     } catch (e) {
-      d.Z.captureException(e), j(f.intl.string(f.t.xSCvBf))
+      c.Z.captureException(e), x(h.intl.string(h.t.xSCvBf))
     } finally {
-      x(false)
+      j(false)
     }
   };
-  return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(c.Z.SlideHeader, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(u.Z.SlideHeader, {
       onClose: m,
-      headerAlignStart: p
-    }), null != S && (0, l.jsx)(c.Z.SlideContent, {
-      children: (0, l.jsx)(c.Z.SlideError, {
-        error: S
+      headerAlignStart: b
+    }), null != y && (0, r.jsx)(u.Z.SlideContent, {
+      children: (0, r.jsx)(u.Z.SlideError, {
+        error: y
       })
-    }), (0, l.jsx)(c.Z.SlideFooter, {
+    }), (0, r.jsx)(u.Z.SlideFooter, {
       mfaChallenge: t,
       setSlide: g,
-      leadingButton: (0, l.jsx)(a.Button, {
+      trailingButton: (0, r.jsx)(a.Button, {
         variant: "primary",
-        text: f.intl.string(f.t.Xr3Eks),
-        loading: b,
+        text: h.intl.string(h.t.Xr3Eks),
+        loading: p,
         onClick: v,
         fullWidth: true
       })

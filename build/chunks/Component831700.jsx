@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 64271 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ei
@@ -346,7 +346,7 @@ class en extends Chunk98597.ZP {
       } = this.state;
       if (a && !n && !i && !s) {
         let n = R.SE.getSetting().includes(o.id);
-        return (0, r.jsx)(W.Z, {
+        return (0, r.jsx)(z.Z, {
           onAction: this.closePopout,
           guild: o,
           channel: e,

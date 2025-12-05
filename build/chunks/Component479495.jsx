@@ -111,7 +111,7 @@ class E extends(n = Chunk473749.PureComponent) {
       },
       theme: require,
       className: n,
-      children: (0, Chunk54381.jsx)(Chunk124860.Cd, {
+      children: (0, Chunk54381.jsx)(Chunk124860.C, {
         mfaFinish: Chunk120356,
         mfaChallenge: {
           ticket: module,

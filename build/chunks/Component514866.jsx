@@ -1,7 +1,7 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -22,28 +22,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk134612 = require("./134612.js"),
   Chunk517269 = require("./517269.js"),
   Chunk197571 = require("./197571.js");
-let _ = () => {
-  Promise.all([require.e("52030"), require.e("1286")]).then(require.bind(require, 24031)).then(e => {
-    let {
-      openMFAModal: t
-    } = e;
-    t({
-      ticket: "ticket",
-      methods: [{
-        type: "webauthn",
-        challenge: "{}"
-      }, {
-        type: "totp"
-      }, {
-        type: "sms"
-      }, {
-        type: "password"
-      }]
-    }, console.log, console.error)
-  })
-};
 
-function y() {
+function _() {
   let e = Chunk594174.default.getCurrentUser(),
     t = null == module ? true : module.isStaff(),
     l = Chunk695346.Rt.useSetting();
@@ -52,14 +32,6 @@ function y() {
       className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom20),
       children: (0, Chunk54381.jsx)(Chunk306052.g, {
         isDevTools: true
-      })
-    }), (0, Chunk54381.jsx)("div", {
-      className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),
-      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
-        variant: "primary",
-        size: "sm",
-        text: "Launch MFA",
-        onClick: _
       })
     }), (0, Chunk54381.jsx)("div", {
       className: r()(Chunk517269.buttonsContainer, Chunk197571.marginBottom8),

@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 64271 **/
 /** chunk id: 900085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => J
@@ -101,7 +101,7 @@ class H extends(r = Chunk473749.Component) {
 U(H, "defaultProps", {
   unread: false
 });
-let z = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
+let W = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
     let {
       channel: t
     } = e;
@@ -112,7 +112,7 @@ let z = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       category: v.Z.getChannel(t.parent_id)
     }
   })(H),
-  W = Chunk442837.ZP.connectStores([Chunk938475.ZP], e => {
+  z = Chunk442837.ZP.connectStores([Chunk938475.ZP], e => {
     let {
       channel: t
     } = e;
@@ -491,7 +491,7 @@ class X extends Chunk473749.PureComponent {
             children: n.record.text
           }, "".concat(n.type, "-").concat(n.record.id));
         case g.h8.TEXT_CHANNEL:
-          return (0, i.jsx)(z, {
+          return (0, i.jsx)(W, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -502,7 +502,7 @@ class X extends Chunk473749.PureComponent {
             score: l ? n.score : true
           }, "".concat(n.type, "-").concat(n.record.id));
         case g.h8.VOICE_CHANNEL:
-          return (0, i.jsx)(W, {
+          return (0, i.jsx)(z, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),

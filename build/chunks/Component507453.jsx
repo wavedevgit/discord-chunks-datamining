@@ -15,7 +15,7 @@ let o = {
       children: t,
       scrollbarType: n
     } = e;
-    return (0, l.jsx)(r.hzk, {
+    return (0, r.jsx)(l.hzk, {
       className: a.content,
       scrollbarType: n,
       children: t
@@ -25,7 +25,7 @@ let o = {
     let {
       error: t
     } = e;
-    return null == t ? null : (0, l.jsx)(r.Text, {
+    return null == t ? null : (0, r.jsx)(l.Text, {
       className: a.error,
       variant: "text-sm/normal",
       color: "text-feedback-critical",
@@ -36,26 +36,26 @@ let o = {
     let {
       mfaChallenge: t,
       setSlide: n,
-      leadingButton: i,
+      trailingButton: i,
       showConfirm: a = false,
       disabled: o,
-      submitting: d
-    } = e, u = t.methods.length > 1;
-    return null != i || u || a ? (0, l.jsx)(r.mzw, {
-      children: (0, l.jsxs)(r.ButtonGroup, {
+      submitting: c
+    } = e, d = t.methods.length > 1;
+    return null != i || d || a ? (0, r.jsx)(l.mzw, {
+      children: (0, r.jsxs)(l.ButtonGroup, {
         fullWidth: true,
         direction: "vertical",
-        children: [i, u && (0, l.jsx)(r.Button, {
+        children: [d && (0, r.jsx)(l.Button, {
           variant: "secondary",
           text: s.intl.string(s.t.Tot4EC),
           onClick: () => n("select")
-        }), a && (0, l.jsx)(r.Button, {
+        }), a && (0, r.jsx)(l.Button, {
           type: "submit",
           variant: "primary",
           text: s.intl.string(s.t["cY+Oob"]),
           disabled: o,
-          loading: d
-        })]
+          loading: c
+        }), i]
       })
     }) : null
   },
@@ -65,21 +65,20 @@ let o = {
       onClose: n,
       headerAlignStart: o
     } = e;
-    return (0, l.jsxs)(r.xBx, {
+    return (0, r.jsxs)(l.xBx, {
       direction: i.Z.Direction.VERTICAL,
       className: a.header,
       separator: false,
       align: o ? i.Z.Align.START : true,
-      children: [(0, l.jsx)(r.Heading, {
+      children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
         children: s.intl.string(s.t.saHocI)
-      }), null != t && (0, l.jsx)(r.Text, {
-        color: "text-default",
-        variant: "text-md/normal",
+      }), null != t && (0, r.jsx)(l.Heading, {
+        variant: "heading-lg/semibold",
         className: a.subtitle,
         children: t
-      }), (0, l.jsx)(r.olH, {
+      }), (0, r.jsx)(l.olH, {
         className: a.closeButton,
         onClick: n
       })]

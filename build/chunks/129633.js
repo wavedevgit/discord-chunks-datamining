@@ -16,5 +16,6 @@ module.exports = {
   image: "image_e8b59c",
   loadingPlaceholder: "loadingPlaceholder_e8b59c",
   body: "body_e8b59c",
-  actionButtons: "actionButtons_e8b59c"
+  actionButtons: "actionButtons_e8b59c",
+  buttonContainer: "buttonContainer_e8b59c"
 }

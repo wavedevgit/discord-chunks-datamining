@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 64271 **/
 /** chunk id: 207913, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -187,7 +187,7 @@ function V(e) {
             }), t.mentioned && s ? (0, r.jsx)(d.mAB, {
               className: U.mentionBadge,
               count: 1
-            }) : (0, r.jsx)(z, {
+            }) : (0, r.jsx)(W, {
               message: t
             })]
           })]
@@ -212,7 +212,7 @@ function V(e) {
             }),
             children: [m, !S && " \xb7 ".concat(y)]
           })]
-        }), (0, r.jsx)(W, {
+        }), (0, r.jsx)(z, {
           message: t,
           isUnread: s,
           isSelected: a,
@@ -255,7 +255,7 @@ function H(e) {
   })
 }
 
-function z(e) {
+function W(e) {
   let {
     message: t
   } = e, n = (0, C.a3)(t.timestamp.getTime());
@@ -268,7 +268,7 @@ function z(e) {
   })
 }
 
-function W(e) {
+function z(e) {
   let {
     message: t,
     channel: n,

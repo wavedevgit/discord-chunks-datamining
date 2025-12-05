@@ -14,49 +14,49 @@ function o(e) {
     mfaChallenge: t,
     finish: n,
     setSlide: o,
-    onClose: d,
-    isSlideReady: u,
-    headerAlignStart: c
-  } = e, [h, f] = r.useState(false), [g, m] = r.useState(null), [p, b] = r.useState(""), x = r.useRef(null);
-  return r.useEffect(() => {
-    if (u) {
+    onClose: c,
+    isSlideReady: d,
+    headerAlignStart: u
+  } = e, [f, h] = l.useState(false), [g, m] = l.useState(null), [b, p] = l.useState(""), j = l.useRef(null);
+  return l.useEffect(() => {
+    if (d) {
       var e;
-      null == (e = x.current) || e.focus()
+      null == (e = j.current) || e.focus()
     }
-  }, [u]), (0, l.jsxs)("form", {
+  }, [d]), (0, r.jsxs)("form", {
     onSubmit: e => {
-      e.preventDefault(), f(true), n({
+      e.preventDefault(), h(true), n({
         mfaType: "password",
-        data: p
+        data: b
       }).catch(e => {
         var t, n;
         m(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
       }).finally(() => {
-        f(false)
+        h(false)
       })
     },
-    children: [(0, l.jsx)(s.Z.SlideHeader, {
-      onClose: d,
-      headerAlignStart: c
-    }), (0, l.jsxs)(s.Z.SlideContent, {
-      children: [(0, l.jsx)(i.oil, {
+    children: [(0, r.jsx)(s.Z.SlideHeader, {
+      onClose: c,
+      headerAlignStart: u
+    }), (0, r.jsxs)(s.Z.SlideContent, {
+      children: [(0, r.jsx)(i.oil, {
         label: a.intl.string(a.t["CIGa+7"]),
-        inputRef: x,
-        onChange: b,
-        value: p,
+        inputRef: j,
+        onChange: p,
+        value: b,
         type: "password",
         autoComplete: "password",
         spellCheck: "false",
-        disabled: h
-      }), (0, l.jsx)(s.Z.SlideError, {
+        disabled: f
+      }), (0, r.jsx)(s.Z.SlideError, {
         error: g
       })]
-    }), (0, l.jsx)(s.Z.SlideFooter, {
+    }), (0, r.jsx)(s.Z.SlideFooter, {
       mfaChallenge: t,
       setSlide: o,
       showConfirm: true,
-      disabled: 0 === p.length,
-      submitting: h
+      disabled: 0 === b.length,
+      submitting: f
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 64271 **/
 /** chunk id: 940777, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -81,7 +81,7 @@ function R() {
       badge: V,
       unread: H
     } = (0, Chunk919755.Z)(G),
-    z = function(e) {
+    W = function(e) {
       let t = (0, s.e7)([v.Z], () => v.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
         r = (0, s.e7)([y.Z], () => {
@@ -112,7 +112,7 @@ function R() {
         activity: g
       })
     }(G),
-    W = V > 0 ? (0, Chunk593364.N)(V) : null,
+    z = V > 0 ? (0, Chunk593364.N)(V) : null,
     K = Chunk473749.useCallback(() => {
       D()
     }, [D]);
@@ -127,8 +127,8 @@ function R() {
       children: (0, Chunk54381.jsx)(Chunk110977.S, {
         children: (0, Chunk54381.jsx)(Chunk481060.aRk, {
           selected: true,
-          upperBadge: z,
-          lowerBadge: W,
+          upperBadge: W,
+          lowerBadge: z,
           children: (0, Chunk54381.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
             ariaLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["/uzRss"], {
               guildName: Chunk388032.intl.string(Chunk388032.t.wMWyci),

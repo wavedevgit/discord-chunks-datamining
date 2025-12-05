@@ -190,7 +190,7 @@ class M extends(n = Chunk473749.PureComponent) {
       ticket: this.props.mfaTicket,
       methods: this.props.mfaMethods
     };
-    return (0, Chunk54381.jsx)(Chunk124860.Cd, {
+    return (0, Chunk54381.jsx)(Chunk124860.C, {
       mfaFinish: this.handleTokenSubmitMFA,
       mfaChallenge: module,
       onEarlyClose: () => {

@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 64271 **/
 /** chunk id: 325257, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -93,8 +93,8 @@ let M = Chunk473749.memo(function(e) {
     route: F,
     guild: V,
     animatable: H,
-    selected: z = false,
-    unread: W = false,
+    selected: W = false,
+    unread: z = false,
     mediaState: K,
     unavailable: Y = false,
     badge: q = 0,
@@ -176,7 +176,7 @@ let M = Chunk473749.memo(function(e) {
   let eN = e_ || em ? (0, r.jsx)(C.Z, {
       guild: V,
       show: e_,
-      active: z,
+      active: W,
       onAnimationStart: function() {
         eb(e_)
       },
@@ -200,11 +200,11 @@ let M = Chunk473749.memo(function(e) {
       onContextMenu: eC,
       onKeyDown: eE,
       icon: (0, y.EB)(V, 2 * eP, eg && H, true),
-      selected: z || eg
+      selected: W || eg
     }, ef), {
       "aria-setsize": er,
       "aria-posinset": ei,
-      "aria-selected": z
+      "aria-selected": W
     })),
     eZ = eu ? (0, r.jsx)(E.OG, {
       children: (0, r.jsx)(I.Z, {})
@@ -220,7 +220,7 @@ let M = Chunk473749.memo(function(e) {
       className: o()(T.blobContainer, {
         [T.sorting]: $,
         [T.wobble]: e_,
-        [T.selected]: e_ || z
+        [T.selected]: e_ || W
       }),
       children: (0, r.jsx)(f.aRk, {
         selected: true,
@@ -234,8 +234,8 @@ let M = Chunk473749.memo(function(e) {
     ref: eI,
     children: [(0, r.jsx)(x.Z, {
       hovered: !eu && eg,
-      selected: !eu && z,
-      unread: !eu && W,
+      selected: !eu && W,
+      unread: !eu && z,
       className: T.pill
     }), (0, r.jsx)(S.Z, {
       guild: V,

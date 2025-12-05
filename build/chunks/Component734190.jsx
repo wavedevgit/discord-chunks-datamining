@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 64271 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -170,7 +170,7 @@ let k = Chunk473749.memo(function(e) {
     isMentionLowImportance: y.ZP.getIsMentionLowImportance(t.id)
   })), V = (0, s.e7)([m.Z], () => m.Z.isMuted(t.id)), H = (0, x.p)({
     location: "GuildSidebarThreadListEntry"
-  }), z = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), W = i.useCallback(e => {
+  }), W = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), z = i.useCallback(e => {
     (0, b.ok)(t, !e.shiftKey, N.on.CHANNEL_LIST)
   }, [t]), K = i.useCallback(() => {
     f.Z.preload(t.guild_id, t.id)
@@ -246,7 +246,7 @@ let k = Chunk473749.memo(function(e) {
         }), (0, r.jsx)(d.P3F, D(R({}, J), {
           innerRef: $,
           className: T.link,
-          onClick: W,
+          onClick: z,
           "aria-label": ee,
           focusProps: {
             enabled: false
@@ -257,8 +257,8 @@ let k = Chunk473749.memo(function(e) {
               className: T.threadIconWithAvatar,
               children: [(0, r.jsx)(M, {
                 thread: t
-              }), null == z ? null : (0, r.jsx)(p.Z, {
-                user: z,
+              }), null == W ? null : (0, r.jsx)(p.Z, {
+                user: W,
                 size: d.EFr.SIZE_16
               })]
             }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(M, {

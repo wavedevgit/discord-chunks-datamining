@@ -140,12 +140,15 @@ class B extends Chunk473749.PureComponent {
     let {
       jumping: e
     } = this.props;
-    return (0, Chunk54381.jsx)(Chunk481060.Button, {
-      variant: "overlay-primary",
-      size: "sm",
-      text: Chunk388032.intl.string(Chunk388032.t.k5WiPf),
-      onClick: this.handleClickJump,
-      loading: module
+    return (0, Chunk54381.jsx)("div", {
+      className: Chunk129633.buttonContainer,
+      children: (0, Chunk54381.jsx)(Chunk481060.Button, {
+        variant: "secondary",
+        size: "sm",
+        text: Chunk388032.intl.string(Chunk388032.t.k5WiPf),
+        onClick: this.handleClickJump,
+        loading: module
+      })
     })
   }
   renderCloseButton() {
@@ -156,12 +159,15 @@ class B extends Chunk473749.PureComponent {
       channel: i,
       closeAriaLabel: a
     } = this.props;
-    return null != module && (exports || require || null != Chunk473749 && Chunk473749.isPrivate()) ? (0, Chunk54381.jsx)(Chunk481060.hU, {
-      icon: Chunk481060.Dio,
-      size: "sm",
-      variant: "overlay-primary",
-      "aria-label": null != Chunk120356 ? Chunk120356 : Chunk388032.intl.string(Chunk388032.t.cpT0Cq),
-      onClick: this.handleClickClose
+    return null != module && (exports || require || null != Chunk473749 && Chunk473749.isPrivate()) ? (0, Chunk54381.jsx)("div", {
+      className: Chunk129633.buttonContainer,
+      children: (0, Chunk54381.jsx)(Chunk481060.hU, {
+        icon: Chunk481060.Dio,
+        size: "sm",
+        variant: "secondary",
+        "aria-label": null != Chunk120356 ? Chunk120356 : Chunk388032.intl.string(Chunk388032.t.cpT0Cq),
+        onClick: this.handleClickClose
+      })
     }) : null
   }
   render() {

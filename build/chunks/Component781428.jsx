@@ -448,7 +448,7 @@ class et extends(r = Chunk473749.PureComponent) {
       style: {
         padding: 0
       },
-      children: (0, Chunk54381.jsx)(Chunk124860.Cd, {
+      children: (0, Chunk54381.jsx)(Chunk124860.C, {
         mfaFinish: this.handleTokenSubmitMFA,
         mfaChallenge: module,
         onEarlyClose: () => {

@@ -1,7 +1,7 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 81500 **/
 /** chunk id: 372564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,10 +39,10 @@ function b(e) {
   return e
 }
 
-function _(e) {
+function j(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class y extends Chunk473749.Component {
+class v extends Chunk473749.Component {
   render() {
     let {
       channel: e
@@ -70,22 +70,22 @@ class y extends Chunk473749.Component {
   constructor(...e) {
     super(...e), m(this, "_mouseDown", false), m(this, "_mouseUp", false), m(this, "handleOpenTopic", e => {
       let t = e.target;
-      if ((0, a.kK)(t)) {
-        if (_(t)) return;
+      if ((0, l.kK)(t)) {
+        if (j(t)) return;
         let e = t.parentNode;
-        if ((0, a.kK)(e) && _(e)) return
+        if ((0, l.kK)(e) && j(e)) return
       }(0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("65631").then(n.bind(n, 10722));
-        return t => (0, r.jsx)(e, b({}, t, this.props))
+        return t => (0, r.jsx)(e, g({}, t, this.props))
       })
     }), m(this, "onMouseDown", () => {
       this._mouseDown = true
     }), m(this, "onMouseMove", () => {
       this._mouseDown && (this._mouseDown = false)
     }), m(this, "onMouseUp", e => {
-      this._mouseDown && e.button !== f.AeJ.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
+      this._mouseDown && e.button !== p.AeJ.SECONDARY && this.handleOpenTopic(e), this._mouseUp = true, this._mouseDown = false
     }), m(this, "handleContextMenu", e => {
       let {
         channel: t,
@@ -106,7 +106,7 @@ class y extends Chunk473749.Component {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        }(b({}, n), {
+        }(g({}, n), {
           channel: t,
           guild: i,
           includeTopic: true
@@ -121,4 +121,4 @@ class y extends Chunk473749.Component {
     })
   }
 }
-let O = y
+let _ = v
