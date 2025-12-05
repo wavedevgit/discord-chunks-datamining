@@ -62,7 +62,7 @@ let _ = "orb-checkout-payment-modal-key",
       analyticsLocations: r = [],
       analyticsSourceLocation: i,
       onCloseCallback: a,
-      isRental: s
+      rentalDuration: s
     } = e, {
       enabled: l
     } = (0, o.VL)({
@@ -73,7 +73,7 @@ let _ = "orb-checkout-payment-modal-key",
       analyticsLocations: r,
       analyticsSourceLocation: i,
       onCloseCallback: a,
-      isRental: s
+      rentalDuration: s
     };
     return l ? g(c) : E(c)
   },
@@ -84,7 +84,7 @@ let _ = "orb-checkout-payment-modal-key",
       analyticsLocations: r = [],
       analyticsSourceLocation: i,
       onCloseCallback: a,
-      isRental: o
+      rentalDuration: o
     } = e;
     return s.F4.openCheckoutModal({
       skuId: t,
@@ -92,7 +92,7 @@ let _ = "orb-checkout-payment-modal-key",
       analyticsSourceLocation: i,
       onCheckoutSuccess: n,
       flowSpecificOptions: {
-        isRental: o
+        rentalDuration: o
       },
       modalOptions: {
         onCloseCallback: a,
@@ -115,7 +115,7 @@ let _ = "orb-checkout-payment-modal-key",
       analyticsLocations: s = [],
       analyticsSourceLocation: u,
       onCloseCallback: f,
-      isRental: m
+      rentalDuration: m
     } = e, h = false, g = (0, i.Z)();
     return (0, a.ZDy)(async () => {
       let {
@@ -128,7 +128,7 @@ let _ = "orb-checkout-payment-modal-key",
         onCheckoutSuccess: e => {
           h || o(e), h = true
         },
-        isRental: m
+        rentalDuration: m
       }, n), {
         loadId: g
       }))

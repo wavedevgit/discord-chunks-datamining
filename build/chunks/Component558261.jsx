@@ -198,7 +198,7 @@ let R = e => {
               rentalExpiresAt: s
             })
           },
-          isRental: true
+          rentalDuration: o
         })
       },
       "aria-label": w.intl.formatToPlainString(w.t.DlNs2T, {

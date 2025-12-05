@@ -34,7 +34,7 @@ var Chunk230367 = require("./230367.js"),
     return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.ACTIVE = 1] = "ACTIVE", e[e.UNUSED = 2] = "UNUSED", e[e.BURNED = 3] = "BURNED", e
   }({}),
   g = function(e) {
-    return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DRAFT = 1] = "DRAFT", e[e.MEASUREMENT = 2] = "MEASUREMENT", e[e.MEASUREMENT_ENDED = 3] = "MEASUREMENT_ENDED", e[e.ROLLING_OUT = 4] = "ROLLING_OUT", e[e.ROLLED_OUT = 5] = "ROLLED_OUT", e[e.ARCHIVED = 6] = "ARCHIVED", e[e.AA_MODE = 7] = "AA_MODE", e
+    return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DRAFT = 1] = "DRAFT", e[e.MEASUREMENT = 2] = "MEASUREMENT", e[e.ROLLING_OUT = 4] = "ROLLING_OUT", e[e.ARCHIVED = 6] = "ARCHIVED", e[e.AA_MODE = 7] = "AA_MODE", e
   }({});
 class E extends Chunk495852.C {
   create(e) {

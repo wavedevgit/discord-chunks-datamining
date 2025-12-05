@@ -150,9 +150,9 @@ let R = e => {
       isRedeeming: o,
       orbRedemptionError: s,
       orbProductContext: l,
-      isRental: c,
-      analyticsLocations: u,
-      analyticsSourceLocation: d
+      analyticsLocations: c,
+      analyticsSourceLocation: u,
+      rentalDuration: d
     } = (0, O.CH)();
     w({
       handleClose: t
@@ -169,8 +169,8 @@ let R = e => {
       onRedeemVirtualCurrency: i,
       orbRedemptionError: s,
       orbProductContext: l,
-      analyticsLocations: u,
-      analyticsSourceLocation: d
+      analyticsLocations: c,
+      analyticsSourceLocation: u
     });
     return m ? (0, r.jsx)(a.$jN, {
       type: a.$jN.Type.WANDERING_CUBES
@@ -186,7 +186,8 @@ let R = e => {
         }), (0, r.jsx)(S.A3, {
           skuId: n,
           orbPriceAmount: f,
-          orbBalance: p
+          orbBalance: p,
+          rentalDuration: d
         })]
       }), (0, r.jsx)(E.O3, {
         children: (0, r.jsx)(S.f9, {
@@ -194,7 +195,7 @@ let R = e => {
           orbBalance: p,
           isSubmitting: o,
           onClickCheckout: _,
-          isRental: c
+          rentalDuration: d
         })
       })]
     })
@@ -280,8 +281,8 @@ let R = e => {
       onCheckoutSuccess: i,
       analyticsSourceLocation: a,
       analyticsLocations: o = [],
-      isRental: s
-    } = e, l = N(e, ["skuId", "loadId", "onCheckoutSuccess", "analyticsSourceLocation", "analyticsLocations", "isRental"]);
+      rentalDuration: s
+    } = e, l = N(e, ["skuId", "loadId", "onCheckoutSuccess", "analyticsSourceLocation", "analyticsLocations", "rentalDuration"]);
     return (0, r.jsx)(f.PaymentContextProvider, {
       applicationId: (0, b.Nb)(t),
       activeSubscription: null,
@@ -297,7 +298,7 @@ let R = e => {
         onCheckoutSuccess: i,
         analyticsLocations: o,
         analyticsSourceLocation: a,
-        isRental: s,
+        rentalDuration: s,
         children: (0, r.jsx)(d.b6, {
           children: (0, r.jsx)(k, C({
             skuId: t,

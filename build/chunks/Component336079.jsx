@@ -24,7 +24,7 @@ let f = (0, Chunk473749.createContext)({
     orbRedemptionError: null,
     orbProductContext: null,
     onRedeemVirtualCurrency: () => {},
-    isRental: false
+    rentalDuration: true
   }),
   p = e => {
     let {
@@ -32,7 +32,7 @@ let f = (0, Chunk473749.createContext)({
       loadId: n,
       analyticsLocations: r,
       onCheckoutSuccess: a,
-      isRental: f = false
+      rentalDuration: f
     } = e, p = (0, o.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
       product: _
     } = (0, s.T)(t), m = (0, i.useMemo)(() => {
@@ -40,7 +40,7 @@ let f = (0, Chunk473749.createContext)({
       let e = (0, l.T4)({
           product: _,
           isPremiumUser: p,
-          isRental: f
+          isRental: null != f
         }),
         t = null !== e ? e.amount : null;
       return {
@@ -58,7 +58,7 @@ let f = (0, Chunk473749.createContext)({
           entitlements: n,
           skuId: t
         }), e()
-      }, f)
+      }, null != f)
     }, [t, n, h, a, f]);
     return {
       skuId: t,
@@ -69,7 +69,7 @@ let f = (0, Chunk473749.createContext)({
       onRedeemVirtualCurrency: b,
       isRedeeming: g,
       orbRedemptionError: E,
-      isRental: f
+      rentalDuration: f
     }
   },
   _ = e => {
@@ -79,7 +79,7 @@ let f = (0, Chunk473749.createContext)({
       analyticsSourceLocation: i,
       analyticsLocations: a,
       onCheckoutSuccess: o,
-      isRental: s = false,
+      rentalDuration: s,
       children: l
     } = e, {
       orbProductContext: c,
@@ -91,7 +91,7 @@ let f = (0, Chunk473749.createContext)({
       loadId: n,
       analyticsLocations: a,
       onCheckoutSuccess: o,
-      isRental: s
+      rentalDuration: s
     });
     return (0, r.jsx)(f.Provider, {
       value: {
@@ -103,7 +103,7 @@ let f = (0, Chunk473749.createContext)({
         onRedeemVirtualCurrency: u,
         isRedeeming: d,
         orbRedemptionError: _,
-        isRental: s
+        rentalDuration: s
       },
       children: l
     })

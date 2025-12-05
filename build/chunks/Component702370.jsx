@@ -455,7 +455,7 @@ let eL = e => {
                               })
                             },
                             analyticsLocations: _,
-                            isRental: true
+                            rentalDuration: O
                           })
                         },
                         disabled: t,
