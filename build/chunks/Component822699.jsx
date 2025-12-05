@@ -117,8 +117,8 @@ let eo = (0, Chunk320830.Z)(Chunk781428.Z),
   eO = (0, Chunk320830.Z)(Chunk909223.Z),
   eN = (0, Chunk320830.Z)(Chunk424044.Z),
   eC = (0, Chunk320830.Z)(Chunk521379.Z),
-  eA = (0, Chunk320830.Z)(Chunk360887.Z);
-class eT extends Chunk473749.PureComponent {
+  eT = (0, Chunk320830.Z)(Chunk360887.Z);
+class eA extends Chunk473749.PureComponent {
   static getDerivedStateFromProps(e, t) {
     var n;
     let {
@@ -226,7 +226,7 @@ class eT extends Chunk473749.PureComponent {
         }))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.LOGIN_ONE_TIME,
-        render: e => (0, r.jsx)(eA, el({}, e))
+        render: e => (0, r.jsx)(eT, el({}, e))
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         impressionName: Chunk990547.ImpressionNames.USER_LOGIN,
         path: Chunk981631.Z5c.LOGIN,
@@ -370,12 +370,12 @@ let eZ = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk
   } = e, l = null == i || null == (t = i.params) ? true : t.inviteCode, a = er.a ? er.Y : true, o = null != l ? (0, S.mb)(l, s.search) : a, c = null == i || null == (n = i.params) ? true : n.giftCode, u = null == i || null == (r = i.params) ? true : r.guildTemplateCode;
   return {
     inviteKey: o,
-    isAuthenticated: A.default.isAuthenticated(),
+    isAuthenticated: T.default.isAuthenticated(),
     giftCode: c,
     guildTemplateCode: u,
-    gift: null != c ? T.Z.get(c) : null,
+    gift: null != c ? A.Z.get(c) : null,
     invite: null != o ? Z.Z.getInvite(o) : null,
     guildTemplate: null != u ? j.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: b.Z.hasLoadedExperiments
   }
-})(eT)
+})(eA)

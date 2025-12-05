@@ -89,9 +89,9 @@ class R extends Chunk473749.PureComponent {
     } = this.props, {
       error: r
     } = this.state, i = null != r ? r.code : null;
-    return i === A.evJ.INVALID_GIFT_SELF_REDEMPTION ? T.intl.string(T.t.wa9h7F) : i === A.evJ.INVALID_GIFT_REDEMPTION_OWNED && (null == n ? true : n.productLine) === A.POd.COLLECTIBLES ? T.intl.string(T.t.mdLtb5) : null != t || i === A.evJ.INVALID_GIFT_REDEMPTION_OWNED ? T.intl.format(T.t.PIdmg3, {
-      libraryLink: A.Z5c.APPLICATION_LIBRARY
-    }) : e.isClaimed || i === A.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? T.intl.string(T.t.ilcBeX) : i === A.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? T.intl.string(T.t.ypuSd8) : true
+    return i === T.evJ.INVALID_GIFT_SELF_REDEMPTION ? A.intl.string(A.t.wa9h7F) : i === T.evJ.INVALID_GIFT_REDEMPTION_OWNED && (null == n ? true : n.productLine) === T.POd.COLLECTIBLES ? A.intl.string(A.t.mdLtb5) : null != t || i === T.evJ.INVALID_GIFT_REDEMPTION_OWNED ? A.intl.format(A.t.PIdmg3, {
+      libraryLink: T.Z5c.APPLICATION_LIBRARY
+    }) : e.isClaimed || i === T.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? A.intl.string(A.t.ilcBeX) : i === T.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? A.intl.string(A.t.ypuSd8) : true
   }
   renderSpinner(e) {
     return (0, r.jsxs)(p.ZP, {
@@ -156,16 +156,16 @@ class R extends Chunk473749.PureComponent {
         src: n(892235),
         className: Z.marginBottom8
       }), (0, r.jsx)(p.Dx, {
-        children: T.intl.format(T.t["ivLUf/"], {
+        children: A.intl.format(A.t["ivLUf/"], {
           username: e.username
         })
       }), (0, r.jsx)(p.DK, {
         className: Z.marginTop20,
-        children: T.intl.string(T.t["8Su18+"])
+        children: A.intl.string(A.t["8Su18+"])
       }), (0, r.jsx)("div", {
         className: Z.marginTop40,
         children: (0, r.jsx)(o.Button, {
-          text: t ? T.intl.string(T.t.CMa9Rv) : T.intl.string(T.t.lm1UKt),
+          text: t ? A.intl.string(A.t.CMa9Rv) : A.intl.string(A.t.lm1UKt),
           fullWidth: true,
           disabled: t,
           onClick: this.handleResendVerification
@@ -173,7 +173,7 @@ class R extends Chunk473749.PureComponent {
       }), (0, r.jsx)("div", {
         className: Z.marginTop8,
         children: (0, r.jsx)(o.Avr, {
-          text: T.intl.string(T.t.Po9eBQ),
+          text: A.intl.string(A.t.Po9eBQ),
           textVariant: "text-sm/normal",
           onClick: this.refreshUser
         })
@@ -194,7 +194,7 @@ class R extends Chunk473749.PureComponent {
         }), (0, r.jsx)("div", {
           className: Z.marginTop40,
           children: (0, r.jsx)(o.Button, {
-            text: T.intl.string(T.t.n6I6k4),
+            text: A.intl.string(A.t.n6I6k4),
             fullWidth: true,
             disabled: null != s,
             onClick: this.handleAccept
@@ -204,7 +204,7 @@ class R extends Chunk473749.PureComponent {
           children: s
         }) : (0, r.jsx)(p.i_, {
           className: Z.marginTop20,
-          children: T.intl.format(T.t.NYM08s, {
+          children: A.intl.format(A.t.NYM08s, {
             userTag: S.ZP.getUserTag(t),
             onLogoutClick: this.handleLogout
           })
@@ -269,7 +269,7 @@ class R extends Chunk473749.PureComponent {
       }))
     }), P(this, "handleLogout", () => {
       let e = this.props.match.params.giftCode;
-      u.Z.logout("gift_code", A.Z5c.GIFT_CODE_LOGIN(e))
+      u.Z.logout("gift_code", T.Z5c.GIFT_CODE_LOGIN(e))
     }), P(this, "handleResendVerification", () => {
       u.Z.verifyResend(), this.setState({
         sentVerification: true
@@ -286,7 +286,7 @@ class R extends Chunk473749.PureComponent {
           error: null
         }), await d.Z.redeemGiftCode({
           code: n
-        }), e(A.Z5c.APP)
+        }), e(T.Z5c.APP)
       } catch (e) {
         this.setState({
           error: e
@@ -297,7 +297,7 @@ class R extends Chunk473749.PureComponent {
         transitionTo: e
       } = this.props, t = this.getCode();
       d.Z.resolveGiftCode(t, true, true).then(n => {
-        null != n && null != n.giftCode.promotion && e(A.Z5c.BILLING_PROMOTION_REDEMPTION(t))
+        null != n && null != n.giftCode.promotion && e(T.Z5c.BILLING_PROMOTION_REDEMPTION(t))
       })
     })
   }
@@ -326,10 +326,10 @@ let L = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
       transitionTo: l
     } = e, a = (0, m.K$)(t);
     return (i.useEffect(() => {
-      null != s && a && l(A.Z5c.APP_WITH_GIFT_CODE(s))
+      null != s && a && l(T.Z5c.APP_WITH_GIFT_CODE(s))
     }, [a, s, l]), a) ? (0, r.jsxs)(p.ZP, {
       children: [(0, r.jsx)(p.Dx, {
-        children: T.intl.string(T.t.b3lf1c)
+        children: A.intl.string(A.t.b3lf1c)
       }), (0, r.jsx)(p.Hh, {})]
     }) : n
   }

@@ -443,8 +443,8 @@ class eu extends(r = Chunk473749.PureComponent) {
     } = this.state, {
       consentRequired: O,
       authBoxClassName: C,
-      hasLoggedInAccounts: A
-    } = this.props, T = this.renderErrorMessage(), Z = (0, i.jsx)(g.u, {
+      hasLoggedInAccounts: T
+    } = this.props, A = this.renderErrorMessage(), Z = (0, i.jsx)(g.u, {
       text: !c && O ? er.intl.string(er.t.AY4IVA) : null,
       children: (0, i.jsx)("div", {
         className: es.marginTop20,
@@ -573,7 +573,7 @@ class eu extends(r = Chunk473749.PureComponent) {
         required: true,
         onFocus: this.trackInputFocus,
         onBlur: this.trackInputBlur
-      }), (0, i.jsx)(N.Z, {}), this.renderConsentComponent(), Z, T, ee.a ? null : (0, i.jsx)("div", {
+      }), (0, i.jsx)(N.Z, {}), this.renderConsentComponent(), Z, A, ee.a ? null : (0, i.jsx)("div", {
         className: es.marginTop20,
         children: (0, i.jsx)(p.Avr, {
           text: er.intl.string(er.t["1lWxux"]),
@@ -597,7 +597,7 @@ class eu extends(r = Chunk473749.PureComponent) {
       onSubmit: this.handleSubmit,
       tag: "form",
       className: C,
-      children: [A ? (0, i.jsx)("div", {
+      children: [T ? (0, i.jsx)("div", {
         className: ei.goBackButton,
         children: (0, i.jsx)(p.Button, {
           onClick: this.handleGotoLogin,

@@ -189,7 +189,7 @@ function M(e) {
     form: n,
     handleSubmit: i
   } = (0, p.Z)(t, false);
-  v.Z.flowStep(T.MK.ORGANIC_GUILD_TEMPLATES, T.X2.GUILD_CREATE);
+  v.Z.flowStep(A.MK.ORGANIC_GUILD_TEMPLATES, A.X2.GUILD_CREATE);
   let s = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Dx, {
       className: R.header,

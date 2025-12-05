@@ -4,7 +4,7 @@
 require.d(exports, {
   GB: () => O,
   JI: () => y,
-  UM: () => A,
+  UM: () => T,
   V6: () => N,
   WT: () => b,
   X7: () => j,
@@ -121,7 +121,7 @@ function C(e) {
   })
 }
 
-function A(e) {
+function T(e) {
   let t, n, i, {
     user: s,
     guild: l,

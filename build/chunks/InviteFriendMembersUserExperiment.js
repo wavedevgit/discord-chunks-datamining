@@ -38,5 +38,5 @@ let o = (0, Chunk818083.B)({
 function c(e) {
   if (null == e) returnfalse;
   let t = e.features;
-  return Array.isArray(t) ? !t.includes(l.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) : !(t instanceof Set) || !t.has(l.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)
+  return Array.isArray(t) ? !t.includes(l.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) : !(t instanceof Set) || !t.has(l.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
 }

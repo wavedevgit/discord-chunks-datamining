@@ -20,13 +20,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 let x = () => {
-  let [e, t] = Chunk473749.useState(""), [s, x] = Chunk473749.useState(""), [E, v] = Chunk473749.useState(false), [b, j] = Chunk473749.useState(false), [I, y] = Chunk473749.useState(null), [S, O] = Chunk473749.useState(null), N = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), C = N.code.split(" ")[0], A = async () => {
+  let [e, t] = Chunk473749.useState(""), [s, x] = Chunk473749.useState(""), [E, v] = Chunk473749.useState(false), [b, j] = Chunk473749.useState(false), [I, y] = Chunk473749.useState(null), [S, O] = Chunk473749.useState(null), N = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), C = N.code.split(" ")[0], T = async () => {
     try {
       await Chunk144114.Z.resendCode(module)
     } catch (e) {
       O(module.body.message)
     }
-  }, T = async () => {
+  }, A = async () => {
     v(true);
     try {
       let {
@@ -77,13 +77,13 @@ let x = () => {
         error: S
       }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
         text: Chunk388032.intl.string(Chunk388032.t["5b60gi"]),
-        onClick: A
+        onClick: T
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk197571.marginTop20,
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           text: Chunk388032.intl.string(Chunk388032.t.i4jeWR),
           fullWidth: true,
-          onClick: T,
+          onClick: A,
           loading: E
         })
       })]

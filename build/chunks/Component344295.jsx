@@ -184,7 +184,7 @@ class J extends Chunk473749.PureComponent {
     } : {
       invite_code: s
     };
-    A.default.track(e, W({}, l, n))
+    T.default.track(e, W({}, l, n))
   }
   renderSpinner(e) {
     return (0, r.jsxs)(_.ZP, {
