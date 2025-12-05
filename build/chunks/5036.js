@@ -1,12 +1,12 @@
-/** Chunk was on 92795 **/
+/** Chunk was on 87154 **/
 /** chunk id: 5036, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk570140 = require("./570140.js"),
   Chunk149071 = require("./149071.js"),
   Chunk9156 = require("./9156.js");
-let a = {
+let o = {
   update(e) {
     r.Z.dispatch({
       type: "CHANNEL_COLLAPSE",

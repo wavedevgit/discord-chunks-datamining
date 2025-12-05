@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk391876 = require("./391876.jsx"),
   Chunk883166 = require("./883166.jsx"),
   Chunk612776 = require("./612776.js"),
-  Chunk140939 = require("./140939.js"),
+  Chunk860076 = require("./860076.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk417788 = require("./417788.js"),
   Chunk278607 = require("./278607.js");
@@ -190,11 +190,11 @@ function V() {
     className: Chunk278607.contentSectionInnerClaim,
     children: [(0, Chunk54381.jsx)(Chunk391876.Z, {
       variant: "eyebrow",
-      children: Chunk388032.intl.string(Chunk140939.default["4R3VzK"])
+      children: Chunk388032.intl.string(Chunk860076.default["4R3VzK"])
     }), (0, Chunk54381.jsx)(Chunk391876.Z, {
       variant: "heading-lg/medium",
       className: Chunk278607.claimSubtitle,
-      children: Chunk388032.intl.string(Chunk140939.default["94azAy"])
+      children: Chunk388032.intl.string(Chunk860076.default["94azAy"])
     }), null != module && (0, Chunk54381.jsx)(Chunk204418.Z, {
       user: module,
       guildId: null,

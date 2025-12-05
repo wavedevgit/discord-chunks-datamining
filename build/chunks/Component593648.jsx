@@ -47,7 +47,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk468788 = require("./468788.js"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk966470 = require("./966470.js");
+  Chunk224359 = require("./224359.js");
 
 function K(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -592,8 +592,8 @@ function e_() {
   return (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_GAME_UPDATE,
     children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk966470.default["3TO4/r"]),
-      description: Chunk388032.intl.string(Chunk966470.default.diGDe0),
+      label: Chunk388032.intl.string(Chunk224359.default["3TO4/r"]),
+      description: Chunk388032.intl.string(Chunk224359.default.diGDe0),
       checked: module,
       onChange: Chunk820942.c
     })

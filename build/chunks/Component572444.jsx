@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
   Chunk493773 = require("./493773.js"),
-  Chunk839514 = require("./839514.js"),
+  Chunk304809 = require("./304809.js"),
   Chunk670863 = require("./670863.jsx"),
   Chunk72897 = require("./72897.js"),
   Chunk131951 = require("./131951.js"),
@@ -131,7 +131,7 @@ function C() {
     noiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported(),
     noiseCancellationEnableStats: Chunk131951.Z.getKrispEnableStats(),
     vadDuringPreProcess: Chunk131951.Z.getModeOptions().vadDuringPreProcess
-  })), G = D ? "KRISP" : L ? "STANDARD" : "NONE", z = (0, Chunk839514.N)(), V = Chunk473749.useCallback(() => {
+  })), G = D ? "KRISP" : L ? "STANDARD" : "NONE", z = (0, Chunk304809.N)(), V = Chunk473749.useCallback(() => {
     var e;
     null == (e = E.current) || module.stop(), E.current = null, S(null)
   }, []);

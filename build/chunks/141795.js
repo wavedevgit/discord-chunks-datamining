@@ -12,7 +12,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk544891 = require("./544891.js"),
   Chunk710845 = require("./710845.js"),
   Chunk432877 = require("./432877.js"),
-  Chunk630755 = require("./630755.js"),
+  Chunk101880 = require("./101880.js"),
   Chunk171638 = require("./171638.js"),
   Chunk928405 = require("./928405.js"),
   Chunk719755 = require("./719755.js"),
@@ -296,7 +296,7 @@ class k extends Chunk476326.ZP {
       return
     }
     if (Chunk710845.useDetectedFileSize && 0 === this.currentSize && null != this.item.file) try {
-      let e = await (0, Chunk630755.M)(this.item.file);
+      let e = await (0, Chunk101880.M)(this.item.file);
       module > 0 && (this.currentSize = module)
     } catch (e) {
       D.warn("Failed to detect file size, proceeding with original", {

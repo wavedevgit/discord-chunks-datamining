@@ -1,3 +1,0 @@
-/** Chunk was on 77157 **/
-/** chunk id: 711542, original params: p (module,exports,require) **/
-module.exports = JSON.parse('{"klSpfs":["सेटिंग्स एडिट करें"],"NzUuLD":["+",[1,"count"]," मैसेज"],"O+racd":["कोई नोटिफ़िकेशन नहीं हैं."],"5H2Jd6":["सारे दिखाएं"],"Ko8NGn":["बुकमार्क दिखाएं"],"dcpdhC":["एक मैसेज चुनकर वहां जंप करें."],"VAK+h9":["आपके नोटिफ़िकेशन सेंटर में स्वागत है!"]}')

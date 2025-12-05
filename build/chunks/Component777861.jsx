@@ -1,8 +1,8 @@
-/** Chunk was on 97418 **/
-/** chunk id: 777861, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 89183 **/
+/** chunk id: 777861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => r,
-  Z: () => u
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -20,15 +20,15 @@ function r(e) {
   })
 }
 
-function u(e) {
+function d(e) {
   let {
-    muteConfig: n,
-    className: t
-  } = e, l = r(n);
+    muteConfig: t,
+    className: n
+  } = e, l = r(t);
   return null != l ? (0, i.jsx)(a.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
-    className: t,
+    className: n,
     children: l
   }) : null
 }

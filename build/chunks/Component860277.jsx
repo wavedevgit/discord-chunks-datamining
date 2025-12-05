@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk225055 = require("./225055.jsx"),
   Chunk391876 = require("./391876.jsx"),
   Chunk612776 = require("./612776.js"),
-  Chunk140939 = require("./140939.js"),
+  Chunk860076 = require("./860076.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk417788 = require("./417788.js"),
   Chunk300494 = require("./300494.js");
@@ -75,7 +75,7 @@ function k() {
     className: Chunk300494.content,
     children: (0, Chunk54381.jsx)(Chunk391876.Z, {
       variant: "heading-xxl/medium",
-      children: Chunk388032.intl.string(Chunk140939.default.d5HUsD)
+      children: Chunk388032.intl.string(Chunk860076.default.d5HUsD)
     })
   })
 }
@@ -264,7 +264,7 @@ function Z() {
       style: {
         backgroundColor: Chunk120356
       },
-      children: Chunk388032.intl.string(Chunk140939.default["//ZYM/"])
+      children: Chunk388032.intl.string(Chunk860076.default["//ZYM/"])
     }), (0, Chunk54381.jsx)("textarea", {
       ref: Chunk379649,
       onChange: U,

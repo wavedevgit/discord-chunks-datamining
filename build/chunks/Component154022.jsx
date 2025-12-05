@@ -45,7 +45,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk611480 = require("./611480.js"),
   Chunk653477 = require("./653477.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk677065 = require("./677065.js"),
+  Chunk905170 = require("./905170.js"),
   Chunk953752 = require("./953752.js"),
   Chunk328756 = require("./328756.js");
 
@@ -356,8 +356,8 @@ function eu() {
     })
   }
   return (0, Chunk54381.jsx)(Chunk481060.rsf, {
-    label: Chunk388032.intl.string(Chunk677065.default["2gFUEw"]),
-    description: Chunk388032.intl.format(Chunk677065.default.L8U56h, {
+    label: Chunk388032.intl.string(Chunk905170.default["2gFUEw"]),
+    description: Chunk388032.intl.format(Chunk905170.default.L8U56h, {
       onClickOpenModal() {
         (0, Chunk829716.I)({
           analyticsLocations: exports

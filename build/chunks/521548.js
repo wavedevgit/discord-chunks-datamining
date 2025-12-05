@@ -7,11 +7,11 @@ function r(e, n, t, r) {
   if (true !== i) return !!i;
   if (e === n) returntrue;
   if ("object" != typeof e || !e || "object" != typeof n || !n) returnfalse;
-  var a = Object.keys(e),
-    o = Object.keys(n);
-  if (a.length !== o.length) returnfalse;
-  for (var c = Object.prototype.hasOwnProperty.bind(n), s = 0; s < a.length; s++) {
-    var l = a[s];
+  var o = Object.keys(e),
+    a = Object.keys(n);
+  if (o.length !== a.length) returnfalse;
+  for (var c = Object.prototype.hasOwnProperty.bind(n), s = 0; s < o.length; s++) {
+    var l = o[s];
     if (!c(l)) returnfalse;
     var u = e[l],
       d = n[l];

@@ -26,7 +26,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk914788 = require("./914788.js"),
   Chunk277537 = require("./277537.js"),
   Chunk292352 = require("./292352.js"),
-  Chunk744038 = require("./744038.js"),
+  Chunk225753 = require("./225753.js"),
   Chunk388032 = require("./388032.jsx");
 let f = 60,
   p = 3600,
@@ -34,9 +34,9 @@ let f = 60,
   m = 172800,
   h = 604800,
   g = () => ({
-    today: Chunk388032.intl.string(Chunk744038.default.VjIAQQ),
-    yesterday: Chunk388032.intl.string(Chunk744038.default["2a8xHY"]),
-    days: Chunk744038.default.Xt6oND
+    today: Chunk388032.intl.string(Chunk225753.default.VjIAQQ),
+    yesterday: Chunk388032.intl.string(Chunk225753.default["2a8xHY"]),
+    days: Chunk225753.default.Xt6oND
   }),
   E = e => e ? {
     today: d.intl.string(u.default["2AtcIs"]),

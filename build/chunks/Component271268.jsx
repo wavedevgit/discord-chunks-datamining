@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk391876 = require("./391876.jsx"),
   Chunk947189 = require("./947189.jsx"),
   Chunk612776 = require("./612776.js"),
-  Chunk140939 = require("./140939.js"),
+  Chunk860076 = require("./860076.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk417788 = require("./417788.js"),
   Chunk284788 = require("./284788.js"),
@@ -97,13 +97,13 @@ function R() {
         }), D ? (0, Chunk54381.jsx)(Chunk391876.Z, {
           variant: "eyebrow",
           className: Chunk417788.eyebrow,
-          children: Chunk388032.intl.format(Chunk140939.default.Xu0QsX, {
+          children: Chunk388032.intl.format(Chunk860076.default.Xu0QsX, {
             numHours: R
           })
         }) : (0, Chunk54381.jsx)(Chunk391876.Z, {
           variant: "eyebrow",
           className: Chunk417788.eyebrow,
-          children: Chunk388032.intl.format(Chunk140939.default.UZbUtl, {
+          children: Chunk388032.intl.format(Chunk860076.default.UZbUtl, {
             numMinutes: R
           })
         })]
@@ -113,12 +113,12 @@ function R() {
       }), (0, Chunk54381.jsx)(Chunk391876.Z, {
         variant: "heading-xxl/medium",
         className: Chunk284788.subtitle,
-        children: B ? Chunk388032.intl.format(Chunk140939.default["36PZwu"], {
+        children: B ? Chunk388032.intl.format(Chunk860076.default["36PZwu"], {
           percent: 100 - exports,
           percentHook: (e, t) => (0, r.jsx)(h.Z, {
             children: e
           }, t)
-        }) : Chunk388032.intl.format(Chunk140939.default.VaydtR, {
+        }) : Chunk388032.intl.format(Chunk860076.default.VaydtR, {
           month: Z,
           monthHook: (e, t) => (0, r.jsx)(h.Z, {
             children: e

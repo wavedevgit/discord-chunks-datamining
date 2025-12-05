@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk744038 = require("./744038.js");
+  Chunk225753 = require("./225753.js");
 
 function m() {
   let e = Chunk695346.xq.useSetting(),
@@ -29,7 +29,7 @@ function m() {
         value: exports.all,
         onChange: e => l.xq.updateSetting(e ? f.HGf : f.HGf & ~f.SOq.NO_RELATION),
         disabled: require,
-        tooltipText: require ? Chunk388032.intl.string(Chunk744038.default["6Af/cw"]) : true
+        tooltipText: require ? Chunk388032.intl.string(Chunk225753.default["6Af/cw"]) : true
       })
     }), (0, Chunk54381.jsx)(Chunk838436.U, {
       setting: Chunk726985.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
@@ -38,7 +38,7 @@ function m() {
         value: exports.all || exports.mutualFriends,
         onChange: t => l.xq.updateSetting(t ? a.pj(e, f.SOq.MUTUAL_FRIENDS) : a.M1(e, f.SOq.MUTUAL_FRIENDS, f.SOq.NO_RELATION)),
         disabled: require,
-        tooltipText: require ? Chunk388032.intl.string(Chunk744038.default["6Af/cw"]) : true
+        tooltipText: require ? Chunk388032.intl.string(Chunk225753.default["6Af/cw"]) : true
       })
     }), (0, Chunk54381.jsx)(Chunk838436.U, {
       setting: Chunk726985.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
@@ -47,7 +47,7 @@ function m() {
         value: exports.all || exports.mutualGuilds,
         onChange: t => l.xq.updateSetting(t ? a.pj(e, f.SOq.MUTUAL_GUILDS) : a.M1(e, f.SOq.MUTUAL_GUILDS, f.SOq.NO_RELATION)),
         disabled: require,
-        tooltipText: require ? Chunk388032.intl.string(Chunk744038.default["6Af/cw"]) : true
+        tooltipText: require ? Chunk388032.intl.string(Chunk225753.default["6Af/cw"]) : true
       })
     })]
   })

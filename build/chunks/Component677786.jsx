@@ -11,7 +11,7 @@ var Chunk838436 = require("./838436.jsx"),
   Chunk63063 = require("./63063.js"),
   Chunk915009 = require("./915009.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk744038 = require("./744038.js"),
+  Chunk225753 = require("./225753.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d() {
@@ -21,8 +21,8 @@ function d() {
   } = (0, Chunk915009.aR)(Chunk981631.pjP.USAGE_STATISTICS);
   return (0, Chunk54381.jsx)(Chunk838436.U, {
     children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk744038.default.HjstRR),
-      note: Chunk388032.intl.format(Chunk744038.default.Z5yJZy, {
+      title: Chunk388032.intl.string(Chunk225753.default.HjstRR),
+      note: Chunk388032.intl.format(Chunk225753.default.Z5yJZy, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_PRIVACY_CONTROLS)
       }),
       value: module,

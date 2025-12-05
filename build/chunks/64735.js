@@ -1,3 +1,0 @@
-/** Chunk was on 1174 **/
-/** chunk id: 64735, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"/cp93l":["N\xe4chster Monat"],"raS6yf":["Vorheriger Monat"],"JA5C7L":["L\xf6schen"],"I8kUqR":["Kalender \xf6ffnen"],"db85vU":["Keine Artikel zum Anzeigen"],"bPKiId":["Keine Ergebnisse f\xfcr „",[1,"query"],"“"],"WfH9in":["Schlie\xdfen"],"m3Vfcs":["Nicht erneut anzeigen?"],"cgdAs2":["(Wird in einem neuen Tab ge\xf6ffnet)"],"/Y7vRd":["Klicke zum Entfernen auf „L\xf6schen“."],"VMNfsY":["Ausgew\xe4hlt"],"A+pfVR":["Ausw\xe4hlen\xa0…"],"YpT3kk":["Video vergr\xf6\xdfern und abspielen"]}')

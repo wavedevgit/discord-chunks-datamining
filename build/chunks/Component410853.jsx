@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk693018 = require("./693018.jsx"),
   Chunk343438 = require("./343438.jsx"),
   Chunk612776 = require("./612776.js"),
-  Chunk140939 = require("./140939.js"),
+  Chunk860076 = require("./860076.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk417788 = require("./417788.js"),
   Chunk559153 = require("./559153.js");
@@ -90,21 +90,21 @@ function A() {
           }), (0, Chunk54381.jsx)(Chunk391876.Z, {
             variant: "eyebrow",
             className: Chunk417788.eyebrow,
-            children: Chunk883166 ? Chunk388032.intl.string(Chunk140939.default.vnG9Sx) : Chunk388032.intl.format(Chunk140939.default.JwFMdL, {
+            children: Chunk883166 ? Chunk388032.intl.string(Chunk860076.default.vnG9Sx) : Chunk388032.intl.format(Chunk860076.default.JwFMdL, {
               numEmojis: Chunk596454
             })
           })]
         }), Chunk883166 ? (0, Chunk54381.jsx)(Chunk391876.Z, {
           variant: "heading-xxl/medium",
           className: Chunk559153.emptySubtitle,
-          children: Chunk388032.intl.string(Chunk140939.default.BHbwK1)
+          children: Chunk388032.intl.string(Chunk860076.default.BHbwK1)
         }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
           children: [(0, Chunk54381.jsx)(Chunk947189.Z, {
             end: Chunk596454
           }), (0, Chunk54381.jsx)(Chunk391876.Z, {
             variant: "heading-xxl/medium",
             className: Chunk559153.subtitle,
-            children: Chunk388032.intl.string(Chunk140939.default.ZuvPfg)
+            children: Chunk388032.intl.string(Chunk860076.default.ZuvPfg)
           }), (0, Chunk54381.jsx)("div", {
             className: Chunk559153.emojis,
             children: Chunk639949.map((t, n) => (0, r.jsx)(T, {

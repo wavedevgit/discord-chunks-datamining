@@ -302,7 +302,7 @@ function ep(e) {
     }) : (0, g.jW)(e, async () => {
       let {
         default: e
-      } = o ? await Promise.all([n.e("90508"), n.e("56167")]).then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("90508"), n.e("66165"), n.e("6915"), n.e("56826"), n.e("97418")]).then(n.bind(n, 131404));
+      } = o ? await Promise.all([n.e("90508"), n.e("56167")]).then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("90508"), n.e("66165"), n.e("6915"), n.e("56826"), n.e("653")]).then(n.bind(n, 131404));
       return n => (0, r.jsx)(e, er(en({}, n), {
         user: a,
         channel: t,

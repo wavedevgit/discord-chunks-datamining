@@ -12,7 +12,7 @@ var Chunk952265 = require("./952265.js"),
   Chunk481060 = require("./481060.js"),
   Chunk479661 = require("./479661.js"),
   Chunk135102 = require("./135102.js"),
-  Chunk896591 = require("./896591.js"),
+  Chunk202283 = require("./202283.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f(e, t, n) {
@@ -49,7 +49,7 @@ let _ = () => {
   m = () => (0, Chunk479661.e)("client_themes_editor") ? (0, Chunk54381.jsx)(Chunk28664.u, {
     text: Chunk388032.intl.string(Chunk388032.t.RDE0Sc),
     children: (0, Chunk54381.jsx)(Chunk159691.hU, {
-      "aria-label": Chunk388032.intl.string(Chunk896591.default.zgFs8C),
+      "aria-label": Chunk388032.intl.string(Chunk202283.default.zgFs8C),
       icon: Chunk481060.aAc,
       variant: "icon-only",
       onClick: () => {

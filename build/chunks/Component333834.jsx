@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk862149 = require("./862149.jsx"),
   Chunk982183 = require("./982183.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk66793 = require("./66793.js"),
+  Chunk512575 = require("./512575.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk809946 = require("./809946.js");
 
@@ -88,12 +88,12 @@ function A() {
           style: {
             textAlign: "center"
           },
-          children: Chunk388032.intl.string(Chunk66793.default["O+racd"])
+          children: Chunk388032.intl.string(Chunk512575.default["O+racd"])
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "secondary",
         onClick: () => (0, Chunk370774.j4)(module),
-        text: Chunk388032.intl.string(Chunk66793.default.klSpfs)
+        text: Chunk388032.intl.string(Chunk512575.default.klSpfs)
       })]
     })
   })

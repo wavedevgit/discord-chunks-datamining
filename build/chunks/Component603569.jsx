@@ -14,18 +14,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk54942 = require("./54942.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk744038 = require("./744038.js");
+  Chunk225753 = require("./225753.js");
 let T = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
-    useTitle: () => Chunk388032.intl.string(Chunk744038.default.RZqaJn),
+    useTitle: () => Chunk388032.intl.string(Chunk225753.default.RZqaJn),
     render: () => (0, Chunk54381.jsx)(Chunk54942.Z, {}),
     buildLayout: () => []
   }),
   g = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk744038.default.RZqaJn),
+    useTitle: () => Chunk388032.intl.string(Chunk225753.default.RZqaJn),
     buildLayout: () => [T]
   }),
   _ = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk744038.default.RZqaJn),
+    useTitle: () => Chunk388032.intl.string(Chunk225753.default.RZqaJn),
     getLegacySearchKey: () => Chunk726985.s6.PRIVACY_FAMILY_CENTER,
     icon: Chunk657707.BFJ,
     trailing: {
