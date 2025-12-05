@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 676332, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  z: () => c
 });
 var Chunk54381 = require("./54381.js"),
   Chunk670863 = require("./670863.jsx"),
@@ -19,6 +19,6 @@ function o() {
   })
 }
 let c = (0, Chunk509613.ON)(Chunk313789.n.VOICE_MICROPHONE_INPUT_SELECT, {
-  render: () => (0, Chunk54381.jsx)(o, {}),
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.hHMYbb), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]
+  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.hHMYbb), Chunk388032.intl.string(Chunk388032.t.nuFtHH)],
+  render: () => (0, Chunk54381.jsx)(o, {})
 })

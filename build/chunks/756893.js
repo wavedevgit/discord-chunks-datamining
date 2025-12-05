@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 756893, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  g: () => S
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -27,5 +27,5 @@ let S = (0, Chunk509613.k4)(Chunk313789.n.SOUNDS_CATEGORY, {
       }
     }, [module])
   },
-  buildLayout: () => [Chunk320851.Z, Chunk103644.X]
+  buildLayout: () => [Chunk320851.J, Chunk103644.X]
 })

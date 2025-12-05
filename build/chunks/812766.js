@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 812766, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  s: () => o
 });
 var Chunk442837 = require("./442837.js"),
   Chunk846027 = require("./846027.js"),
@@ -13,11 +13,11 @@ let o = (0, Chunk509613.qs)(Chunk313789.n.STREAMING_ADVANCED_SCREENSHARE, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.GmWk2E),
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["Fj/xn1"])],
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["Fj/xn1"]),
-  usePredicate: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.supportsVideoHook())
-  },
   useValue: function() {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getVideoHook())
   },
-  setValue: Chunk846027.Z.setVideoHook
+  setValue: Chunk846027.Z.setVideoHook,
+  usePredicate: function() {
+    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.supportsVideoHook())
+  }
 })

@@ -17,18 +17,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk744038 = require("./744038.js");
 let T = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk744038.default.RZqaJn),
-    buildLayout: () => [],
-    render: () => (0, Chunk54381.jsx)(Chunk54942.Z, {})
+    render: () => (0, Chunk54381.jsx)(Chunk54942.Z, {}),
+    buildLayout: () => []
   }),
   g = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk744038.default.RZqaJn),
     buildLayout: () => [T]
   }),
   _ = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
-    icon: Chunk657707.BFJ,
     useTitle: () => Chunk388032.intl.string(Chunk744038.default.RZqaJn),
     getLegacySearchKey: () => Chunk726985.s6.PRIVACY_FAMILY_CENTER,
-    buildLayout: () => [g],
+    icon: Chunk657707.BFJ,
     trailing: {
       type: Chunk28682.PU.STRONGLY_DISCOURAGED_CUSTOM,
       getDismissibleContentTypes: () => [Chunk704215.z.FAMILY_CENTER_NEW_BADGE],
@@ -40,5 +39,6 @@ let T = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
           count: e
         }) : null
       }
-    }
+    },
+    buildLayout: () => [g]
   })

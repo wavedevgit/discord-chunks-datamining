@@ -11,8 +11,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.ON)(Chunk313789.n.SOUNDS_HOLIDAY_NOTICE, {
-  usePredicate: () => null != Chunk197344.Z.useHolidaySoundpack(),
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.fgSHf8)],
+  usePredicate: () => null != Chunk197344.Z.useHolidaySoundpack(),
   render: () => (0, Chunk54381.jsx)(Chunk793030.xvT, {
     variant: "text-md/normal",
     color: "text-subtle",

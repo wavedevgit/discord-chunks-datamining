@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 956853, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  G: () => c
 });
 var Chunk442837 = require("./442837.js"),
   Chunk846027 = require("./846027.js"),
@@ -16,10 +16,10 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.VOICE_SILENCE_WARNING_SETTING, {
   useValue: function() {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getEnableSilenceWarning())
   },
-  usePredicate: function() {
-    return Chunk358085.isPlatformEmbedded
-  },
   setValue: function(t) {
     l.Z.setSilenceWarning(t)
+  },
+  usePredicate: function() {
+    return Chunk358085.isPlatformEmbedded
   }
 })

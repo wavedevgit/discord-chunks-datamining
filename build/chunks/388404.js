@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 388404, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  $: () => E
 });
 var Chunk100527 = require("./100527.js"),
   Chunk509613 = require("./509613.js"),
@@ -17,16 +17,16 @@ let E = (0, Chunk509613.UO)(Chunk313789.n.SOUNDBOARD_VOLUME_SETTING, {
   useSubtitle: () => Chunk388032.intl.format(Chunk388032.t.BPbGq7, {
     helpCenterArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOUNDBOARD)
   }),
+  setValue: function(t) {
+    let e = [i.Z.USER_SETTINGS_VOICE_AND_VIDEO],
+      n = (0, a.A)(t);
+    (0, s.xz)(n, e)
+  },
   minValue: 0,
   maxValue: 100,
   getInitialValue: function() {
     let t = (0, Chunk242291.pI)();
     return (0, Chunk36703.P)(module)
-  },
-  setValue: function(t) {
-    let e = [i.Z.USER_SETTINGS_VOICE_AND_VIDEO],
-      n = (0, a.A)(t);
-    (0, s.xz)(n, e)
   },
   onValueRender: function(t) {
     return "".concat(t.toFixed(0), "%")

@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 292591, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  f: () => d
 });
 var Chunk442837 = require("./442837.js"),
   Chunk846027 = require("./846027.js"),
@@ -14,15 +14,6 @@ var Chunk442837 = require("./442837.js"),
 let d = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AUTOMATIC_GAIN_CONTROL_SETTING, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.cUMdH0),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["6EjbvA"]),
-  usePredicate: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isAutomaticGainControlSupported() && Chunk131951.Z.isInputProfileCustom())
-  },
-  useDisabled: function() {
-    return (0, Chunk442837.e7)([Chunk131951.Z, Chunk463395.Z], () => {
-      let t = Chunk131951.Z.getInputDeviceId();
-      return Chunk463395.Z.hasAutomaticGainControl(module)
-    })
-  },
   useValue: function() {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getAutomaticGainControl())
   },
@@ -31,5 +22,14 @@ let d = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AUTOMATIC_GAIN_CONTROL_SETTING, 
       page: o.ZY5.USER_SETTINGS,
       section: o.jXE.SETTINGS_VOICE_AND_VIDEO
     })
+  },
+  useDisabled: function() {
+    return (0, Chunk442837.e7)([Chunk131951.Z, Chunk463395.Z], () => {
+      let t = Chunk131951.Z.getInputDeviceId();
+      return Chunk463395.Z.hasAutomaticGainControl(module)
+    })
+  },
+  usePredicate: function() {
+    return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isAutomaticGainControlSupported() && Chunk131951.Z.isInputProfileCustom())
   }
 })

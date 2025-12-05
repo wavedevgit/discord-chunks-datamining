@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 51397, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  b: () => S
 });
 var Chunk442837 = require("./442837.js"),
   Chunk846027 = require("./846027.js"),
@@ -12,10 +12,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.UO)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_SLIDER, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AlybXj),
+    setValue: t => l.Z.setAttenuation(t, r.Z.getAttenuateWhileSpeakingSelf(), r.Z.getAttenuateWhileSpeakingOthers()),
     minValue: 0,
     maxValue: 100,
-    getInitialValue: () => Chunk131951.Z.getAttenuation(),
-    setValue: t => l.Z.setAttenuation(t, r.Z.getAttenuateWhileSpeakingSelf(), r.Z.getAttenuateWhileSpeakingOthers())
+    getInitialValue: () => Chunk131951.Z.getAttenuation()
   }),
   d = (0, Chunk509613.qs)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_FOR_SELF_SETTING, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["9dHxRY"]),

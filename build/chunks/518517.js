@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 518517, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  b: () => c
 });
 var Chunk442837 = require("./442837.js"),
   Chunk924557 = require("./924557.js"),
@@ -14,6 +14,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.CLIPS_ENABLE_REMINDERS, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["3zwNf6"]),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.m4Cjj9),
   useValue: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().remindersEnabled),
+  setValue: t => r.N0(t),
   usePredicate: () => {
     let {
       showClipsHeaderEntrypoint: t
@@ -23,6 +24,5 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.CLIPS_ENABLE_REMINDERS, {
       autoTrackExposure: false
     });
     return module
-  },
-  setValue: t => r.N0(t)
+  }
 })

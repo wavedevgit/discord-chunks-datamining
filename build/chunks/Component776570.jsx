@@ -24,5 +24,5 @@ let S = (0, Chunk509613.k4)(Chunk313789.n.VOICE_CATEGORY, {
       })
     } : null, [module.canPrompt])
   },
-  buildLayout: () => [Chunk665388.Z, Chunk589741.Z, Chunk97951.Z]
+  buildLayout: () => [Chunk665388.J, Chunk589741.d, Chunk97951.F]
 })

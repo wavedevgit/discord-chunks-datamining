@@ -13,21 +13,21 @@ var Chunk657707 = require("./657707.js"),
   Chunk388032 = require("./388032.jsx");
 let d = (0, Chunk509613.x1)(Chunk313789.n.APPEARANCE_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
-    buildLayout: () => [],
-    render: Chunk501348.Z
+    render: Chunk501348.Z,
+    buildLayout: () => []
   }),
   E = (0, Chunk509613.wf)(Chunk313789.n.APPEARANCE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
     buildLayout: () => [d]
   }),
   S = (0, Chunk509613.m7)(Chunk313789.n.APPEARANCE_SIDEBAR_ITEM, {
-    icon: Chunk657707.V3v,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
     getLegacySearchKey: () => Chunk726985.s6.APPEARANCE,
-    buildLayout: () => [E],
+    icon: Chunk657707.V3v,
     trailing: {
       type: Chunk28682.PU.BADGE_NEW,
       getDismissibleContentTypes: Chunk620163.$Z,
       badgeComponent: Chunk620163.c$
-    }
+    },
+    buildLayout: () => [E]
   })

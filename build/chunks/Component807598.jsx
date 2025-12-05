@@ -19,6 +19,6 @@ function o() {
   })
 }
 let c = (0, Chunk509613.ON)(Chunk313789.n.VOICE_SPEAKER_OUTPUT_SELECT, {
-  render: () => (0, Chunk54381.jsx)(o, {}),
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.dl18zb), Chunk388032.intl.string(Chunk388032.t["3182VD"]), Chunk388032.intl.string(Chunk388032.t["DGq/PR"])]
+  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.dl18zb), Chunk388032.intl.string(Chunk388032.t["3182VD"]), Chunk388032.intl.string(Chunk388032.t["DGq/PR"])],
+  render: () => (0, Chunk54381.jsx)(o, {})
 })

@@ -11,7 +11,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk590814 = require("./590814.js"),
   Chunk388032 = require("./388032.jsx");
 let l = (0, Chunk509613.x1)(Chunk313789.n.LANGUAGE_AND_TIME_PANE, {
-    buildLayout: () => [Chunk590814.Z]
+    buildLayout: () => [Chunk590814.L]
   }),
   c = (0, Chunk509613.wf)(Chunk313789.n.LANGUAGE_AND_TIME_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.KyFVyi),

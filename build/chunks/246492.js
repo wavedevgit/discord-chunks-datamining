@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 246492, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  i: () => a
 });
 var Chunk304680 = require("./304680.js"),
   Chunk509613 = require("./509613.js"),
@@ -11,6 +11,6 @@ var Chunk304680 = require("./304680.js"),
 let a = (0, Chunk509613.ax)(Chunk313789.n.VOICE_AND_VIDEO_OPEN_CONNECTION_REPLAY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.nJnOHO),
   useLabel: () => Chunk388032.intl.string(Chunk388032.t["3xjX0U"]),
-  usePredicate: Chunk413410.B,
-  onClick: Chunk304680.z4
+  onClick: Chunk304680.z4,
+  usePredicate: Chunk413410.B
 })

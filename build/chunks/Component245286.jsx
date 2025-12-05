@@ -60,7 +60,7 @@ function P(e) {
     {
       node: a,
       directory: s
-    } = (0, f.ZP)(v.Z, l),
+    } = (0, f.ZP)(v.E, l),
     u = null != t && null != s.entry(t) ? t : true,
     p = o.useRef(null);
   return ((0, c.ZP)(() => {

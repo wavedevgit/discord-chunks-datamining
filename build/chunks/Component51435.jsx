@@ -12,16 +12,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.x1)(Chunk313789.n.CONNECTIONS_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
-    buildLayout: () => [],
-    render: () => (0, Chunk54381.jsx)(Chunk327192.Z, {})
+    render: () => (0, Chunk54381.jsx)(Chunk327192.Z, {}),
+    buildLayout: () => []
   }),
   d = (0, Chunk509613.wf)(Chunk313789.n.CONNECTIONS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
     buildLayout: () => [c]
   }),
   E = (0, Chunk509613.m7)(Chunk313789.n.CONNECTIONS_SIDEBAR_ITEM, {
-    icon: Chunk657707.xPt,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
     getLegacySearchKey: () => Chunk726985.s6.CONNECTIONS,
+    icon: Chunk657707.xPt,
     buildLayout: () => [d]
   })

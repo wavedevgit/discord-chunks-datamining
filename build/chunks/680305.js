@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 680305, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  g: () => d
 });
 var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
@@ -14,5 +14,5 @@ var Chunk509613 = require("./509613.js"),
 let d = (0, Chunk509613.CB)(Chunk313789.n.VOICE_AND_VIDEO_DIAGNOSTICS_ACCORDION, {
   useTitle: t => t ? c.intl.string(c.t["/B4I8H"]) : c.intl.string(c.t.BTlsWH),
   useCollapsedSubtitle: () => Chunk388032.intl.string(Chunk388032.t.la1Ys4),
-  buildLayout: () => [Chunk962610.Z, Chunk49658.Z, Chunk413410.Z, Chunk246492.Z, Chunk253595.Z]
+  buildLayout: () => [Chunk962610.Q, Chunk49658.P, Chunk413410.I, Chunk246492.i, Chunk253595.f]
 })

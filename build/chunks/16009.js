@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 16009, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  X: () => E
 });
 var Chunk442837 = require("./442837.js"),
   Chunk846027 = require("./846027.js"),
@@ -15,15 +15,7 @@ var Chunk442837 = require("./442837.js"),
 let E = (0, Chunk509613.qs)(Chunk313789.n.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.EGn1eN),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.iT257i),
-  usePredicate: function() {
-    let t = (0, Chunk595373.J)(),
-      {
-        enableLatching: e
-      } = (0, Chunk383451.H)({
-        location: "PushToTalkLatchingSetting"
-      });
-    return module && exports
-  },
+  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)],
   useValue: function() {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => {
       let {
@@ -37,5 +29,13 @@ let E = (0, Chunk509613.qs)(Chunk313789.n.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
       pttLatchingEnabled: t
     })
   },
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]
+  usePredicate: function() {
+    let t = (0, Chunk595373.J)(),
+      {
+        enableLatching: e
+      } = (0, Chunk383451.H)({
+        location: "PushToTalkLatchingSetting"
+      });
+    return module && exports
+  }
 })

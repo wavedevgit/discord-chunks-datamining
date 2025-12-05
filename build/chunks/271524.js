@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 271524, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  l: () => d
 });
 var Chunk442837 = require("./442837.js"),
   Chunk292556 = require("./292556.js"),
@@ -16,7 +16,6 @@ let d = (0, Chunk509613.J9)(Chunk313789.n.TEXT_TO_SPEECH_NOTIFICATIONS, {
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.HDLtJl),
   useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getTTSType()),
   setValue: t => l.default.setTTSType(t),
-  usePredicate: () => Chunk419363.Zh,
   useOptions: () => [{
     name: Chunk388032.intl.string(Chunk388032.t.B1AGeJ),
     value: Chunk981631.PrB.ALL_CHANNELS
@@ -26,5 +25,6 @@ let d = (0, Chunk509613.J9)(Chunk313789.n.TEXT_TO_SPEECH_NOTIFICATIONS, {
   }, {
     name: Chunk388032.intl.string(Chunk388032.t.DYO5Oi),
     value: Chunk981631.PrB.NEVER
-  }]
+  }],
+  usePredicate: () => Chunk419363.Zh
 })

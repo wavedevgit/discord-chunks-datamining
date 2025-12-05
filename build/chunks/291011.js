@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 291011, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  i: () => a
 });
 var Chunk392711 = require("./392711.js"),
   Chunk509613 = require("./509613.js"),
@@ -11,13 +11,13 @@ var Chunk392711 = require("./392711.js"),
 let a = (0, Chunk509613.Em)(Chunk313789.n.MOBILE_NOTIFICATION_DELAY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["8rHeOr"]),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["eJE6+J"]),
+  fieldLayout: "horizontal-responsive",
+  useValue: Chunk695346.CM.useSetting,
+  setValue: Chunk695346.CM.updateSetting,
   useOptions: () => Chunk392711.range(1, 11).map(t => ({
     value: 60 * t,
     label: u.intl.formatToPlainString(u.t.iXLF9W, {
       minutes: t
     })
-  })),
-  useValue: Chunk695346.CM.useSetting,
-  setValue: Chunk695346.CM.updateSetting,
-  fieldLayout: "horizontal-responsive"
+  }))
 })

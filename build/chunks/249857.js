@@ -11,17 +11,17 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.x1)(Chunk313789.n.WINDOWS_PANE, {
-    buildLayout: () => [],
-    render: Chunk200645.Z
+    render: Chunk200645.Z,
+    buildLayout: () => []
   }),
   d = (0, Chunk509613.wf)(Chunk313789.n.WINDOWS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.ZkDZov),
     buildLayout: () => [c]
   }),
   E = (0, Chunk509613.m7)(Chunk313789.n.WINDOWS_SIDEBAR_ITEM, {
-    icon: Chunk657707.pzj,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.ZkDZov),
     getLegacySearchKey: () => Chunk726985.s6.WINDOW_SETTINGS,
+    icon: Chunk657707.pzj,
     usePredicate: () => Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)(),
     buildLayout: () => [d]
   })

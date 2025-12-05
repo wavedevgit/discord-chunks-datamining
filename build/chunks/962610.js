@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 962610, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Q: () => d
 });
 var Chunk442837 = require("./442837.js"),
   Chunk179658 = require("./179658.js"),
@@ -14,9 +14,6 @@ var Chunk442837 = require("./442837.js"),
 let d = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AND_VIDEO_STREAM_INFO_OVERLAY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["0CEP6e"]),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["kBXuW+"]),
-  usePredicate: function() {
-    return Chunk695346.Sb.useSetting()
-  },
   useValue: function() {
     return (0, Chunk442837.e7)([Chunk857192.default], () => Chunk857192.default.isStreamInfoOverlayEnabled)
   },
@@ -25,5 +22,8 @@ let d = (0, Chunk509613.qs)(Chunk313789.n.VOICE_AND_VIDEO_STREAM_INFO_OVERLAY, {
     (0, o.Z)("stream_info_overlay_enabled", t, e), (0, l.y)({
       isStreamInfoOverlayEnabled: t
     })
+  },
+  usePredicate: function() {
+    return Chunk695346.Sb.useSetting()
   }
 })

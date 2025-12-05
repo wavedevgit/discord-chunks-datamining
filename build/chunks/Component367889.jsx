@@ -15,23 +15,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let I = (0, Chunk509613.x1)(Chunk313789.n.SUBSCRIPTIONS_PANE, {
-    buildLayout: () => [],
-    render: Chunk813732.Z
+    render: Chunk813732.Z,
+    buildLayout: () => []
   }),
   T = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHX),
     buildLayout: () => [I]
   }),
   g = (0, Chunk509613.m7)(Chunk313789.n.SUBSCRIPTIONS_SIDEBAR_ITEM, {
-    icon: Chunk657707.XOf,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHX),
     getLegacySearchKey: () => Chunk726985.s6.SUBSCRIPTIONS,
-    buildLayout: () => [T],
+    icon: Chunk657707.XOf,
     trailing: {
       type: Chunk28682.PU.STRONGLY_DISCOURAGED_CUSTOM,
       useDecoration: () => (0, Chunk160913.U)() ? (0, Chunk54381.jsx)(Chunk793030.Mgn, {
         size: "xs",
         color: Chunk692547.Z.unsafe_rawColors.YELLOW_300
       }) : null
-    }
+    },
+    buildLayout: () => [T]
   })

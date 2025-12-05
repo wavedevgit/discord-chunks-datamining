@@ -12,17 +12,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let d = (0, Chunk509613.x1)(Chunk313789.n.REGISTERED_GAMES_PANE, {
-    buildLayout: () => [],
-    render: () => (0, Chunk54381.jsx)(Chunk293389.Z, {})
+    render: () => (0, Chunk54381.jsx)(Chunk293389.Z, {}),
+    buildLayout: () => []
   }),
   E = (0, Chunk509613.wf)(Chunk313789.n.REGISTERED_GAMES_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AVDyEj),
     buildLayout: () => [d]
   }),
   S = (0, Chunk509613.m7)(Chunk313789.n.REGISTERED_GAMES_SIDEBAR_ITEM, {
-    icon: Chunk657707.iWm,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AVDyEj),
     getLegacySearchKey: () => Chunk726985.s6.REGISTERED_GAMES,
+    icon: Chunk657707.iWm,
     usePredicate: Chunk168308.Jw,
     buildLayout: () => [E]
   })

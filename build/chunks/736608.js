@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 736608, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  r: () => c
 }), require("./388685.js");
 var Chunk509613 = require("./509613.js"),
   Chunk960412 = require("./960412.js"),
@@ -18,5 +18,5 @@ let c = (0, Chunk509613.k4)(Chunk313789.n.NOTIFICATIONS_EMAIL_CATEGORY, {
     } = Chunk151662.Z.getEmailSettings();
     module || (0, Chunk960412.Y7)()
   },
-  buildLayout: () => [...Chunk996231.Z, Chunk663623.Z]
+  buildLayout: () => [...Chunk996231.s, Chunk663623.r]
 })

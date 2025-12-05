@@ -11,16 +11,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.x1)(Chunk313789.n.ACCESSIBILITY_PANE, {
-    buildLayout: () => [],
-    render: () => (0, Chunk54381.jsx)(Chunk154022.Z, {})
+    render: () => (0, Chunk54381.jsx)(Chunk154022.Z, {}),
+    buildLayout: () => []
   }),
   d = (0, Chunk509613.wf)(Chunk313789.n.ACCESSIBILITY_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.G0neg7),
     buildLayout: () => [c]
   }),
   E = (0, Chunk509613.m7)(Chunk313789.n.ACCESSIBILITY_SIDEBAR_ITEM, {
-    icon: Chunk657707.O0f,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.G0neg7),
     getLegacySearchKey: () => Chunk726985.s6.ACCESSIBILITY,
+    icon: Chunk657707.O0f,
     buildLayout: () => [d]
   })

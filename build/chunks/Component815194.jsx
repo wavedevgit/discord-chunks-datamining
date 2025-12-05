@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 815194, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  h: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
@@ -45,7 +45,7 @@ function g() {
   })
 }
 let _ = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
+  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)],
   usePredicate: Chunk595373.J,
-  render: () => (0, Chunk54381.jsx)(g, {}),
-  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]
+  render: () => (0, Chunk54381.jsx)(g, {})
 })
