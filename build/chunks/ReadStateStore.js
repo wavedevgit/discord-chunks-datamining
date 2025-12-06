@@ -212,12 +212,11 @@ function ej(e) {
   if (!e.hasUnreadOrMentions()) return eL(e, "No unread or mentions"), false;
   if ((null == t ? true : t.isForumLikeChannel()) === true) return eL(e, "Forum-like channel"), false;
   if (!(n && !e._isJoinedThread) && !V.Z.isAtBottom(e.channelId)) return eL(e, "Not at bottom"), false;
-  let i = m.Z.getLayout(e.channelId),
-    a = m.Z.getChatOpen(e.channelId);
-  if (!a && (i === ee.AEg.NO_CHAT || i === ee.AEg.FULL_SCREEN)) return eL(e, "Fullscreen video"), false;
+  let i = m.Z.getLayout(e.channelId);
+  if (!m.Z.getChatOpen(e.channelId) && (i === ee.AEg.NO_CHAT || i === ee.AEg.FULL_SCREEN)) return eL(e, "Fullscreen video"), false;
   if (!ey.isChannelAckable(e.channelId)) return eL(e, "Not ackable"), false;
-  let o = K.Z.getMessages(e.channelId);
-  return null == o || !o.ready || o.loadingMore ? (eL(e, "Still loading messages"), false) : (0, N._E)() || a ? (eL(e, "Acked"), true) : (eL(e, "Chat not focused"), false)
+  let a = K.Z.getMessages(e.channelId);
+  return null == a || !a.ready || a.loadingMore ? (eL(e, "Still loading messages"), false) : (0, N.MH)(e.channelId) ? (eL(e, "Acked"), true) : (eL(e, "Chat not focused"), false)
 }
 class eM {
   static forEach(e) {
