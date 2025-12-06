@@ -81,11 +81,10 @@ function v(e) {
     var s;
     let e = O(o),
       t = e[n];
-    if (null == t && (t = e[n] = {}), (r = y(r)) === (null == (s = t[i]) ? true : s.draft)) returnfalse;
-    t[i] = {
+    null == t && (t = e[n] = {}), (r = y(r)) !== (null == (s = t[i]) ? true : s.draft) && (t[i] = {
       timestamp: Date.now(),
       draft: r
-    }
+    })
   } else T(n, i);
   return "DRAFT_SAVE" === t
 }
