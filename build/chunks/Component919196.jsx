@@ -103,31 +103,31 @@ function I(e) {
     errors: u,
     canNavigate: I
   } = e, {
-    application: E,
-    integration: w,
+    application: w,
+    integration: E,
     webhooks: P
-  } = n, [T, Z] = (0, o.Wu)([b.Z], () => [b.Z.can(y.Plq.MANAGE_ROLES, t), null == E.bot || b.Z.canManageUser(y.Plq.MANAGE_GUILD, E.bot.id, t)], [E.bot, t]), k = (0, o.e7)([b.Z], () => b.Z.can(y.Plq.MANAGE_WEBHOOKS, t), [t]), A = r.useCallback(() => {
+  } = n, [T, Z] = (0, o.Wu)([b.Z], () => [b.Z.can(y.Plq.MANAGE_ROLES, t), null == w.bot || b.Z.canManageUser(y.Plq.MANAGE_GUILD, w.bot.id, t)], [w.bot, t]), k = (0, o.e7)([b.Z], () => b.Z.can(y.Plq.MANAGE_WEBHOOKS, t), [t]), A = r.useCallback(() => {
     I() && (0, s.h7j)(e => (0, i.jsx)(S, N({
       guild: t,
-      application: E,
-      integration: w
+      application: w,
+      integration: E
     }, e)))
-  }, [E, I, t, w]), D = r.useMemo(() => {
+  }, [w, I, t, E]), D = r.useMemo(() => {
     let e = [{
       icon: s.T39,
       text: _.intl.formatToPlainString(_.t.gcdJ8J, {
-        timestamp: f.default.extractTimestamp(w.id)
+        timestamp: f.default.extractTimestamp(E.id)
       })
     }];
-    return null != w.user && e.push({
+    return null != E.user && e.push({
       icon: s.tBG,
       text: _.intl.formatToPlainString(_.t.qE7oqs, {
-        user: h.ZP.getUserTag(w.user)
+        user: h.ZP.getUserTag(E.user)
       })
     }), e
-  }, [w.id, w.user]), R = r.useMemo(() => {
+  }, [E.id, E.user]), R = r.useMemo(() => {
     var e;
-    return null != E.bot && (null == (e = w.scopes) ? true : e.includes(l.x.BOT)) ? (0, i.jsx)(v.Z, {
+    return null != w.bot && (null == (e = E.scopes) ? true : e.includes(l.x.BOT)) ? (0, i.jsx)(v.Z, {
       guild: t,
       applicationIntegration: n
     }) : (0, i.jsx)(s.Zbd, {
@@ -139,27 +139,27 @@ function I(e) {
         children: _.intl.string(_.t.pfLnza)
       })
     })
-  }, [E.bot, n, t, w.scopes]);
+  }, [w.bot, n, t, E.scopes]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(x.Z, {
-      name: E.name,
+      name: w.name,
       imageSrc: g.ZP.getApplicationIconURL({
-        id: E.id,
-        icon: E.icon,
+        id: w.id,
+        icon: w.icon,
         size: 32
       }),
       details: D,
       isHeader: true
-    }), (null == E ? true : E.description) != null ? (0, i.jsx)(m.Z, {
-      userBio: E.description,
+    }), (null == w ? true : w.description) != null ? (0, i.jsx)(m.Z, {
+      userBio: w.description,
       className: C.headerDescription
     }) : null, T ? (0, i.jsx)(p.Z, {
-      application: E,
+      application: w,
       canNavigate: I,
       guildId: t.id
     }) : null, (0, i.jsx)(s.izJ, {
       className: C.headerDivider
-    }), null != E.bot ? (0, i.jsxs)("div", {
+    }), null != w.bot ? (0, i.jsxs)("div", {
       className: C.section,
       children: [(0, i.jsx)(j.Z, {
         icon: (0, i.jsx)(s.wGt, {

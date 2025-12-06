@@ -1,7 +1,7 @@
 /** Chunk was on 86736 **/
 /** chunk id: 335049, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function E(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function E(e, t) {
   }), e
 }
 
-function w(e) {
+function E(e) {
   let {
     guild: t,
     id: l,
@@ -74,7 +74,7 @@ function w(e) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, i.jsx)(e, E(I({}, t), {
+      return t => (0, i.jsx)(e, w(I({}, t), {
         id: l,
         label: N.intl.string(N.t.oJ1Muw)
       }))
@@ -174,7 +174,7 @@ function T(e) {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, i.jsx)(e, E(I({}, t), {
+      return t => (0, i.jsx)(e, w(I({}, t), {
         guild: l,
         role: m
       }))

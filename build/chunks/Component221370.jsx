@@ -52,20 +52,20 @@ function f(e) {
     return i
   }(e, ["platform"]);
   switch (t) {
-    case s.z.DESKTOP:
-      return (0, a.jsx)(o.pzj, m({
+    case o.z.DESKTOP:
+      return (0, a.jsx)(s.pzj, m({
         size: "xs"
       }, n));
-    case s.z.XBOX:
-      return (0, a.jsx)(o.Mko, m({
+    case o.z.XBOX:
+      return (0, a.jsx)(s.Mko, m({
         size: "xs"
       }, n));
-    case s.z.PLAYSTATION:
-      return (0, a.jsx)(o.Tsp, m({
+    case o.z.PLAYSTATION:
+      return (0, a.jsx)(s.Tsp, m({
         size: "xs"
       }, n));
-    case s.z.NINTENDO:
-      return (0, a.jsx)(o.aPH, m({
+    case o.z.NINTENDO:
+      return (0, a.jsx)(s.aPH, m({
         size: "xs"
       }, n));
     default:
@@ -85,13 +85,13 @@ function p(e) {
     children: t.map(e => (0, a.jsx)(c.u, {
       text: function(e) {
         switch (e) {
-          case s.z.DESKTOP:
+          case o.z.DESKTOP:
             return d.intl.string(d.t.KT6uCJ);
-          case s.z.XBOX:
+          case o.z.XBOX:
             return d.intl.string(d.t.DDWUJp);
-          case s.z.PLAYSTATION:
+          case o.z.PLAYSTATION:
             return d.intl.string(d.t.fzMz2s);
-          case s.z.NINTENDO:
+          case o.z.NINTENDO:
             return d.intl.string(d.t.AMW8je);
           default:
             return null
@@ -111,7 +111,7 @@ function x(e) {
   } = e, r = i.useMemo(() => {
     let e = new Set(t.platforms),
       n = [...e];
-    return !e.has(s.z.DESKTOP) && (e.has(s.z.MACOS) || e.has(s.z.LINUX)) && n.push(s.z.DESKTOP), n.filter(e => g.includes(e))
+    return !e.has(o.z.DESKTOP) && (e.has(o.z.MACOS) || e.has(o.z.LINUX)) && n.push(o.z.DESKTOP), n.filter(e => g.includes(e))
   }, [t.platforms]);
   return 0 === r.length ? null : (0, a.jsx)("div", {
     className: l()(u.column, u.gapLg, n),

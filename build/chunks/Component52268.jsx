@@ -37,7 +37,7 @@ function x(e) {
   return e
 }
 
-function y(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function y(e, t) {
   }), e
 }
 
-function b(e, t) {
+function j(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -65,14 +65,14 @@ function b(e, t) {
   }
   return i
 }
-let j = () => 80,
-  O = e => {
+let y = () => 80,
+  P = e => {
     var {
       children: t,
       className: n,
       isSelected: i = false
-    } = e, l = b(e, ["children", "className", "isSelected"]);
-    return (0, r.jsx)(c.P3F, y(x({
+    } = e, l = j(e, ["children", "className", "isSelected"]);
+    return (0, r.jsx)(c.P3F, b(x({
       className: o()(g.effectGridItem, n, {
         [g.selected]: i
       })
@@ -81,40 +81,38 @@ let j = () => 80,
       children: t
     }))
   },
-  P = e => {
+  O = e => {
     var t, {
         profileEffect: n,
         innerRef: l,
         section: o,
         isSelected: s,
-        canUsePremiumCollectibles: c,
-        isTryItOut: d
+        canUsePremiumCollectibles: c
       } = e,
-      m = b(e, ["profileEffect", "innerRef", "section", "isSelected", "canUsePremiumCollectibles", "isTryItOut"]);
-    let j = (0, f.V)(n.skuId),
-      P = i.useRef(null),
+      d = j(e, ["profileEffect", "innerRef", "section", "isSelected", "canUsePremiumCollectibles"]);
+    let m = (0, f.V)(n.skuId),
+      y = i.useRef(null),
       {
-        accessibilityLabel: _,
-        thumbnailPreviewSrc: v,
-        title: E
-      } = null != (t = null == j ? true : j.config) ? t : {},
-      C = i.useMemo(() => (0, a.JE)(v), [v]);
-    return (0, r.jsxs)(O, y(x({
-      innerRef: null != l ? l : P,
+        accessibilityLabel: O,
+        thumbnailPreviewSrc: _,
+        title: v
+      } = null != (t = null == m ? true : m.config) ? t : {},
+      E = i.useMemo(() => (0, a.JE)(_), [_]);
+    return (0, r.jsxs)(P, b(x({
+      innerRef: null != l ? l : y,
       isSelected: s
-    }, m), {
+    }, d), {
       children: [(0, r.jsx)("img", {
         src: h,
-        alt: _,
+        alt: O,
         className: g.presetEffectBackground
       }), (0, r.jsx)("img", {
         className: g.presetEffectImg,
-        src: C,
-        alt: E
+        src: E,
+        alt: v
       }), (0, r.jsx)(u.Z, {
         skuId: n.skuId,
         canUsePremiumCollectibles: c,
-        isTryItOut: d,
         isPurchaseSection: o === p.$0.PURCHASE,
         isPremiumSection: o === p.$0.PREMIUM_PURCHASE
       })]
@@ -126,10 +124,9 @@ let j = () => 80,
       guild: n,
       pendingProfileEffect: i,
       selectedProfileEffectRef: l,
-      isTryItOut: o = false,
-      onSelect: a,
-      onOpenShop: u
-    } = e, f = (0, p.ZP)(), h = null != i, b = d.ZP.canUseCollectibles(t);
+      onSelect: o,
+      onOpenShop: a
+    } = e, u = (0, p.ZP)(), f = null != i, h = d.ZP.canUseCollectibles(t);
     return (0, r.jsx)("section", {
       className: g.section,
       children: (0, r.jsx)(c.GMG, {
@@ -140,21 +137,21 @@ let j = () => 80,
         paddingHorizontal: 12,
         className: g.list,
         columns: 3,
-        sections: f.map(e => {
+        sections: u.map(e => {
           let {
             items: t
           } = e;
           return t.length
         }),
-        renderItem: (e, t, d, y) => {
+        renderItem: (e, t, d, b) => {
           let {
             section: j,
-            items: _
-          } = f[e];
-          return (0, s.EQ)(_[t]).with(p.Tm, () => (0, r.jsxs)(O, {
+            items: y
+          } = u[e];
+          return (0, s.EQ)(y[t]).with(p.Tm, () => (0, r.jsxs)(P, {
             style: x({}, d),
-            isSelected: !h,
-            onSelect: () => a(null),
+            isSelected: !f,
+            onSelect: () => o(null),
             children: [(0, r.jsx)(c.t6m, {
               size: "md",
               color: "currentColor",
@@ -164,9 +161,9 @@ let j = () => 80,
               color: "header-primary",
               children: null != n ? m.intl.string(m.t.CHf9iJ) : m.intl.string(m.t.PoWNfe)
             })]
-          }, y)).with(p.oT, () => (0, r.jsxs)(O, {
+          }, b)).with(p.oT, () => (0, r.jsxs)(P, {
             style: d,
-            onSelect: u,
+            onSelect: a,
             children: [(0, r.jsx)(c.EOn, {
               size: "custom",
               width: 23,
@@ -178,26 +175,25 @@ let j = () => 80,
               color: "header-primary",
               children: m.intl.string(m.t.pWG4ze)
             })]
-          }, y)).otherwise(e => {
+          }, b)).otherwise(e => {
             let t = (null == i ? true : i.skuId) === e.skuId;
-            return (0, r.jsx)(P, {
+            return (0, r.jsx)(O, {
               style: x({}, d),
               section: j,
               profileEffect: e,
               innerRef: t ? l : true,
               isSelected: t,
-              onSelect: () => a(e),
-              canUsePremiumCollectibles: b,
-              isTryItOut: o
-            }, y)
+              onSelect: () => o(e),
+              canUsePremiumCollectibles: h
+            }, b)
           })
         },
         renderSection: (e, t) => {
           let {
             header: n
-          } = f[e];
+          } = u[e];
           return (0, r.jsx)("div", {
-            style: y(x({}, t), {
+            style: b(x({}, t), {
               height: "".concat(16, "px"),
               position: "absolute"
             }),
@@ -208,8 +204,8 @@ let j = () => 80,
           })
         },
         getSectionHeight: () => 16,
-        getItemKey: (e, t) => f[e].items[t].skuId,
-        getItemHeight: j,
+        getItemKey: (e, t) => u[e].items[t].skuId,
+        getItemHeight: y,
         removeEdgeItemGutters: true
       })
     })

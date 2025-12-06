@@ -19,13 +19,13 @@ function u(e) {
     trackClick: m,
     closeModal: g
   } = e, f = i.useCallback(() => {
-    (null == u ? true : u.guild) != null && (0, s.eagerNavigateToSocialLayerStorefront)({
+    (null == u ? true : u.guild) != null && (0, o.eagerNavigateToSocialLayerStorefront)({
       guildId: u.guild.id
     })
   }, [u]), p = i.useCallback(() => {
-    (null == u ? true : u.guild) != null && ((0, s.default)({
+    (null == u ? true : u.guild) != null && ((0, o.default)({
       invite: u
-    }), g(), m(o.as.GameShop))
+    }), g(), m(s.as.GameShop))
   }, [g, u, m]);
   return new Set(null == u || null == (t = u.guild) ? true : t.features).has(c.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, a.jsx)(r.zxk, {
     variant: "primary",

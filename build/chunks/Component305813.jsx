@@ -73,10 +73,10 @@ function A(e) {
     selectedEffectId: L,
     selectedColors: w,
     onClose: B
-  } = e, Z = (0, c.ZP)(), M = (0, s.wjy)(Z), [G, Y] = (0, o.useState)(M), H = (0, S.ZP)(t.id, null), {
+  } = e, Z = (0, c.ZP)(), M = (0, s.wjy)(Z), [G, H] = (0, o.useState)(M), Y = (0, S.ZP)(t.id, null), {
     bannerSrc: z
   } = (0, j.Z)({
-    displayProfile: H,
+    displayProfile: Y,
     size: 413,
     canAnimate: false
   }), F = (0, a.cj)([v.Z, d.Z], () => null == n ? v.Z.getAllPending() : d.Z.getAllPending()), U = (0, _.SD)({
@@ -92,7 +92,7 @@ function A(e) {
       P.default.track(k.rMx.DISPLAY_NAME_STYLES_CLOSED), B()
     }, [B]),
     $ = (0, o.useCallback)(e => {
-      Y(e === k.BRd.DARK), P.default.track(k.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
+      H(e === k.BRd.DARK), P.default.track(k.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
         dark: e === k.BRd.DARK
       })
     }, []),
@@ -117,7 +117,7 @@ function A(e) {
       })
     }), null != z && (0, l.jsx)(C.Z, {
       user: t,
-      displayProfile: H,
+      displayProfile: Y,
       themeType: O.l.MODAL_V2,
       className: E.backgroundThemeContainer,
       forceUserTheme: true,

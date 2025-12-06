@@ -1,7 +1,7 @@
 /** Chunk was on 86736 **/
 /** chunk id: 936726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => w
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,14 +36,14 @@ function I(e, t) {
   })
 }
 
-function E(e) {
+function w(e) {
   let {
     id: t,
     webhook: n,
     editedWebhook: l,
     channelOptions: j,
-    isExpanded: E,
-    isNew: w,
+    isExpanded: w,
+    isNew: E,
     errors: P,
     onToggleExpand: T
   } = e, [Z, k] = r.useState(false), [A] = r.useState(new s.V7);
@@ -97,7 +97,7 @@ function E(e) {
     })
   });
   let U = null;
-  return E && null != l && (U = (0, i.jsxs)("div", {
+  return w && null != l && (U = (0, i.jsxs)("div", {
     className: S.body,
     children: [(0, i.jsx)(u.izJ, {
       className: S.topDivider
@@ -243,12 +243,12 @@ function E(e) {
   })), (0, i.jsx)(u.Zbd, {
     editable: true,
     id: t,
-    className: a()(S.card, w ? S.pulse : null),
+    className: a()(S.card, E ? S.pulse : null),
     children: (0, i.jsxs)(g.Z, {
       direction: g.Z.Direction.VERTICAL,
       children: [(0, i.jsx)(u.P3F, {
         className: S.header,
-        "aria-expanded": E,
+        "aria-expanded": w,
         onClick: T,
         children: (0, i.jsxs)(g.Z, {
           align: g.Z.Align.CENTER,
@@ -258,7 +258,7 @@ function E(e) {
             details: M
           }), (0, i.jsx)(x.Z, {
             className: S.expandIcon,
-            expanded: E,
+            expanded: w,
             "aria-hidden": true
           })]
         })

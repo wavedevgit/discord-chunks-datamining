@@ -55,10 +55,9 @@ function p(e) {
     tryItOutThemeColors: I,
     tryItOutAvatar: T,
     tryItOutBanner: A,
-    tryItOutProfileEffect: C,
-    tryItOutAvatarDecoration: N,
-    tryItOutDisplayNameStyles: P
-  } = (0, a.cj)([l.Z], () => f({}, l.Z.getAllPending(), l.Z.getAllTryItOut())), R = (0, s.SD)({
+    tryItOutAvatarDecoration: C,
+    tryItOutDisplayNameStyles: N
+  } = (0, a.cj)([l.Z], () => f({}, l.Z.getAllPending(), l.Z.getAllTryItOut())), P = (0, s.SD)({
     userId: d.id,
     image: null != T ? T : h
   });
@@ -68,11 +67,11 @@ function p(e) {
     pendingPronouns: v,
     pendingBio: S,
     pendingBanner: null != (t = null != A ? A : g) ? t : n(466045),
-    pendingDisplayNameStyles: null != P ? P : y,
-    pendingAvatar: R,
+    pendingDisplayNameStyles: null != N ? N : y,
+    pendingAvatar: P,
     pendingThemeColors: null != I ? I : O,
-    pendingAvatarDecoration: true !== N ? N : E,
-    pendingProfileEffect: true !== C ? C : b,
+    pendingAvatarDecoration: true !== C ? C : E,
+    pendingProfileEffect: b,
     avatarClassName: null != T || null != h || m.enabled ? true : u.spinningAvatar,
     canUsePremiumCustomization: true,
     isTryItOut: true,

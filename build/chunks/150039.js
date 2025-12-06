@@ -4,6 +4,7 @@
 require.d(exports, {
   Jw: () => I,
   PO: () => T,
+  Tb: () => O,
   UK: () => A,
   Wh: () => C,
   Ys: () => N,
@@ -14,9 +15,8 @@ require.d(exports, {
   i3: () => b,
   mD: () => E,
   nh: () => y,
-  sY: () => v,
-  wE: () => O,
-  xQ: () => S
+  xQ: () => S,
+  xZ: () => v
 }), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
@@ -86,11 +86,13 @@ function E(e, t) {
     } = (0, s.cj)([u.Z], () => ({
       pendingGuildDisplayNameStyles: u.Z.getPendingDisplayNameStyles(),
       guildErrors: u.Z.getErrors().displayNameStyles
-    }));
+    })),
+    l = (0, s.e7)([_.Z], () => _.Z.getTryItOutDisplayNameStyles());
   return {
     userDisplayNameStyles: null == e ? true : e.displayNameStyles,
     guildDisplayNameStyles: null == n ? true : n.displayNameStyles,
     pendingDisplayNameStyles: null != t ? a : r,
+    tryItOutDisplayNameStyles: l,
     pendingErrors: null != t ? o : i
   }
 }
@@ -115,35 +117,27 @@ function y(e) {
 }
 
 function O(e) {
-  let {
-    guildId: t,
-    isTryItOut: n
-  } = e;
-  return (0, s.cj)([u.Z, _.Z], () => n ? {
-    pendingAvatarDecoration: _.Z.getTryItOutAvatarDecoration()
-  } : null == t ? {
-    pendingAvatarDecoration: _.Z.getPendingAvatarDecoration(),
-    errors: _.Z.getErrors().avatarDecoration
-  } : {
-    pendingAvatarDecoration: u.Z.getPendingAvatarDecoration(),
-    errors: u.Z.getErrors().avatarDecoration
-  })
+  let t = (0, s.cj)([_.Z], () => ({
+      pendingAvatarDecoration: _.Z.getPendingAvatarDecoration(),
+      errors: _.Z.getErrors().avatarDecoration
+    })),
+    n = (0, s.cj)([u.Z], () => ({
+      pendingAvatarDecoration: u.Z.getPendingAvatarDecoration(),
+      errors: u.Z.getErrors().avatarDecoration
+    }));
+  return null != e ? n : t
 }
 
 function v(e) {
-  let {
-    guildId: t,
-    isTryItOut: n
-  } = e;
-  return (0, s.cj)([_.Z, u.Z], () => n ? {
-    pendingProfileEffect: _.Z.getTryItOutProfileEffect()
-  } : null == t ? {
-    pendingProfileEffect: _.Z.getPendingProfileEffect(),
-    errors: u.Z.getErrors().profileEffect
-  } : {
-    pendingProfileEffect: u.Z.getPendingProfileEffect(),
-    errors: _.Z.getErrors().profileEffect
-  })
+  let t = (0, s.cj)([_.Z], () => ({
+      pendingProfileEffect: _.Z.getPendingProfileEffect(),
+      errors: _.Z.getErrors().profileEffect
+    })),
+    n = (0, s.cj)([u.Z], () => ({
+      pendingProfileEffect: u.Z.getPendingProfileEffect(),
+      errors: u.Z.getErrors().profileEffect
+    }));
+  return null != e ? n : t
 }
 
 function S(e, t) {

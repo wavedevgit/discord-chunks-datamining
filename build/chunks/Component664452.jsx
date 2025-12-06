@@ -28,7 +28,7 @@ function O(e) {
     transitionState: n,
     onClose: O,
     analyticsData: y
-  } = e, _ = (0, a.e7)([d.Z], () => d.Z.getGuild(t), [t]), C = !!(null == _ ? true : _.features.has(x.GuildFeatures.INVITES_DISABLED)), [N] = r.useState(false), [S, I] = r.useState(h.Fl), E = (0, a.e7)([g.Z], () => g.Z.getGuildIncident(t)), w = (0, m.BT)(_), P = (0, b.SG)(E) || C, T = (0, b.sN)(E), [Z, k] = r.useState(P), [A, D] = r.useState(T), [R, L] = r.useState(false), M = Z !== P || A !== T || R, U = C && !w;
+  } = e, _ = (0, a.e7)([d.Z], () => d.Z.getGuild(t), [t]), C = !!(null == _ ? true : _.features.has(x.GuildFeatures.INVITES_DISABLED)), [N] = r.useState(false), [S, I] = r.useState(h.Fl), w = (0, a.e7)([g.Z], () => g.Z.getGuildIncident(t)), E = (0, m.BT)(_), P = (0, b.SG)(w) || C, T = (0, b.sN)(w), [Z, k] = r.useState(P), [A, D] = r.useState(T), [R, L] = r.useState(false), M = Z !== P || A !== T || R, U = C && !E;
   return null == _ ? (O(), null) : (0, i.jsx)(l.Modal, {
     transitionState: n,
     title: j.intl.string(j.t.oCYAc7),

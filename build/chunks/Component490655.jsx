@@ -1,7 +1,7 @@
 /** Chunk was on 86736 **/
 /** chunk id: 490655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => E
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk134850 = require("./134850.js");
 
-function E(e, t) {
+function w(e, t) {
   switch (e) {
     case N.b4C.APPLICATION:
       var n;
@@ -50,12 +50,12 @@ function E(e, t) {
       return ""
   }
 }
-let w = Chunk473749.memo(function(e) {
+let E = Chunk473749.memo(function(e) {
   let {
     section: t,
     sectionId: n,
     guild: l,
-    channel: w,
+    channel: E,
     integrations: P,
     editedIntegration: T,
     webhooks: Z,
@@ -64,7 +64,7 @@ let w = Chunk473749.memo(function(e) {
     refToScroller: D,
     errors: R,
     hasChanges: L
-  } = e, M = (0, o.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), U = (0, o.cj)([g.ZP], () => g.ZP.getChannels(null == l ? true : l.id)), B = (0, o.cj)([f.Z], () => a().keyBy(U.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, o.cj)([f.Z], () => a().keyBy(U.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != w ? w : M, G = t === N.b4C.APPLICATION ? n : null, [F, K] = r.useState(d.$x), z = r.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
+  } = e, M = (0, o.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l.id) : null), U = (0, o.cj)([g.ZP], () => g.ZP.getChannels(null == l ? true : l.id)), B = (0, o.cj)([f.Z], () => a().keyBy(U.SELECTABLE.map(e => e.channel).filter(e => f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), W = (0, o.cj)([f.Z], () => a().keyBy(U.VOCAL.map(e => e.channel).filter(e => e.isGuildVocal() && f.Z.can(N.Plq.MANAGE_WEBHOOKS, e)), "id")), H = null != E ? E : M, G = t === N.b4C.APPLICATION ? n : null, [F, K] = r.useState(d.$x), z = r.useCallback(() => L() ? (h.S.dispatch(N.CkL.SHAKE_APP, {
     duration: 300,
     intensity: F
   }), K(Math.min(F + d.d7, d.w6)), h.S.dispatch(N.CkL.EMPHASIZE_NOTICE), false) : (K(d.$x), true), [L, F]), V = r.useCallback(e => !!z() && (c.Z.setSection(e), true), [z]), {
@@ -179,7 +179,7 @@ let w = Chunk473749.memo(function(e) {
     case N.b4C.WEBHOOKS:
       $ = (0, i.jsx)(C.Z, {
         guild: l,
-        channel: w,
+        channel: E,
         customWebhooks: Q,
         editedWebhook: k,
         selectableWebhookChannels: function(e) {
@@ -213,7 +213,7 @@ let w = Chunk473749.memo(function(e) {
     default:
       $ = (0, i.jsx)(_.Z, {
         guild: l,
-        channel: w,
+        channel: E,
         applicationIntegrations: q,
         builtInIntegrations: J,
         customWebhooks: Q,
@@ -249,12 +249,12 @@ let w = Chunk473749.memo(function(e) {
       className: I.breadcrumbs,
       children: t === N.b4C.OVERVIEW ? (0, i.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
-        children: E(N.b4C.OVERVIEW)
+        children: w(N.b4C.OVERVIEW)
       }) : (0, i.jsx)(s.OoM, {
         activeId: t.toString(),
         breadcrumbs: [N.b4C.OVERVIEW, t].map(e => ({
           id: e.toString(),
-          label: E(e, q[G])
+          label: w(e, q[G])
         })),
         onBreadcrumbClick: e => {
           t !== parseInt(e.id) && V(parseInt(e.id))

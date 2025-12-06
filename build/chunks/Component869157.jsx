@@ -45,7 +45,7 @@ function Z(e) {
   a()(null != g, "");
   let h = (0, o.e7)([x.Z], () => x.Z.getSortedRoles(l)),
     [O, I] = r.useState(new Set),
-    E = r.useMemo(() => {
+    w = r.useMemo(() => {
       let e = (0, b.bD)(l),
         t = h.toReversed().reduce((e, t, n) => (e[t.id] = n, e), {});
       return Object.values(c).filter(e => e.canRead).sort((n, i) => {
@@ -77,7 +77,7 @@ function Z(e) {
         }
       })
     }, [l, c, h]),
-    w = r.useCallback((e, t) => {
+    E = r.useCallback((e, t) => {
       n({}, [(0, S.rE)(e, t)])
     }, [n]),
     P = r.useCallback((e, t, i) => {
@@ -100,11 +100,11 @@ function Z(e) {
       return (null == (t = e.application) ? true : t.id) === Z
     })),
     D = (0, o.e7)([f.Z], () => true !== A && f.Z.canShowToggleTooltip(A.id));
-  return E.length > 0 ? E.map(e => (0, i.jsx)(k, {
+  return w.length > 0 ? w.map(e => (0, i.jsx)(k, {
     guild: g,
     commandId: t,
     onChange: t => P(e.id, e.type, t),
-    onRemove: () => w(e.id, e.type),
+    onRemove: () => E(e.id, e.type),
     overwrite: e,
     integration: A,
     canShowMigrationTooltip: D,
@@ -140,7 +140,7 @@ function k(e) {
   r.useEffect(() => {
     if (Z) {
       var e, t, n;
-      O.default.track(w.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (t = function(e) {
+      O.default.track(E.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -179,7 +179,7 @@ function k(e) {
       position: "left",
       children: (0, i.jsx)("div", {
         ref: k,
-        children: (0, i.jsx)(E.Z, {
+        children: (0, i.jsx)(w.Z, {
           isDisabled: N,
           currentValue: x.permission,
           onChange: Z ? e => {

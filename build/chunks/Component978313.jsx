@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 978313, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,46 +18,46 @@ var Chunk54381 = require("./54381.js"),
   Chunk226788 = require("./226788.js"),
   Chunk802318 = require("./802318.js");
 
-function h(e) {
+function v(e) {
   let {
     detectedGame: t,
     trackAction: n
-  } = e, [r, h] = i.useState((null == t ? true : t.summaryLocalized) != null), [v, j] = i.useState(true), [_, I] = i.useState(false), b = i.useRef(null), {
-    width: O,
-    height: y
+  } = e, [r, v] = i.useState((null == t ? true : t.summaryLocalized) != null), [h, j] = i.useState(true), [b, _] = i.useState(false), y = i.useRef(null), {
+    width: I,
+    height: O
   } = (0, u.Z)();
   return (i.useEffect(() => {
-    let e = b.current;
-    null != e && I(e.scrollHeight - e.clientHeight > 1 || !v)
-  }, [b, O, y, v]), null == t.summary) ? null : (0, a.jsxs)("div", {
+    let e = y.current;
+    null != e && _(e.scrollHeight - e.clientHeight > 1 || !h)
+  }, [y, I, O, h]), null == t.summary) ? null : (0, a.jsxs)("div", {
     className: l()(p.column, p.gapMd),
     children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
       className: l()(p.row, p.gapSm),
-      children: [(0, a.jsx)(s.SxY, {
+      children: [(0, a.jsx)(o.SxY, {
         color: c.Z.colors.TEXT_DEFAULT,
         size: "xs"
-      }), (0, a.jsx)(o.xvT, {
+      }), (0, a.jsx)(s.xvT, {
         variant: "text-xs/medium",
         color: "text-default",
         children: r ? f.intl.format(f.t.aZ2iIp, {
-          onShowOriginal: () => h(false)
+          onShowOriginal: () => v(false)
         }) : f.intl.format(f.t["/2ylF4"], {
-          onShowTranslated: () => h(true)
+          onShowTranslated: () => v(true)
         })
       })]
-    }), (0, a.jsx)(o.xvT, {
-      ref: b,
-      lineClamp: v ? 8 : true,
+    }), (0, a.jsx)(s.xvT, {
+      ref: y,
+      lineClamp: h ? 8 : true,
       variant: "text-sm/normal",
       children: r ? t.summaryLocalized : t.summary
-    }), _ && (0, a.jsx)(d.P3F, {
+    }), b && (0, a.jsx)(d.P3F, {
       className: p.clickable,
       onClick: () => {
-        n(v ? m.as.ShowMore : m.as.ShowLess), j(!v)
+        n(h ? m.as.ShowMore : m.as.ShowLess), j(!h)
       },
-      children: (0, a.jsx)(o.xvT, {
+      children: (0, a.jsx)(s.xvT, {
         variant: "text-sm/semibold",
-        children: v ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo/"])
+        children: h ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo/"])
       })
     }), (0, a.jsx)(g.Z, {
       className: x.platforms,

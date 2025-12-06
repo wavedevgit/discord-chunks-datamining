@@ -173,10 +173,10 @@ function R(e) {
     }, [o, l.id]), l.enabled && null != l.user) t = [{
     icon: f.T39,
     text: H ? T.intl.formatToPlainString(T.t.gcdJ8J, {
-      timestamp: E.default.extractTimestamp(l.id)
+      timestamp: w.default.extractTimestamp(l.id)
     }) : T.intl.formatToPlainString(T.t.Nu9sat, {
       user: null != l.user ? new y.Z(l.user).tag : null,
-      timestamp: E.default.extractTimestamp(l.id)
+      timestamp: w.default.extractTimestamp(l.id)
     })
   }];
   else {
@@ -192,7 +192,7 @@ function R(e) {
   let er = (0, i.jsxs)(j.Z, {
       className: Z.header,
       align: j.Z.Align.CENTER,
-      children: [(0, i.jsx)(w.Z, {
+      children: [(0, i.jsx)(E.Z, {
         name: "".concat(l.name),
         detailsClassName: Z.description,
         details: t

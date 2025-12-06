@@ -109,8 +109,7 @@ function v(e) {
         onChangeAvatarDecoration: () => {
           (0, u.ps)({
             guild: null == n ? true : n,
-            analyticsLocations: P,
-            isTryItOut: A
+            analyticsLocations: P
           })
         }
       })

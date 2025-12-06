@@ -1,14 +1,14 @@
 /** Chunk was on 89311 **/
 /** chunk id: 296768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk226788 = require("./226788.js"),
   Chunk414642 = require("./414642.js");
-let O = e => {
+let I = e => {
   let {
     game: t,
     onClose: n,
@@ -33,7 +33,7 @@ let O = e => {
     asContainer: true,
     text: t.name,
     children: (0, a.jsx)(u.P3F, {
-      className: b.similarGameImageClickable,
+      className: y.similarGameImageClickable,
       onClick: async () => {
         i(p.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, a.jsx)(j.default, function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -57,49 +57,49 @@ let O = e => {
           source: p.m1.SimilarGames
         }, e)))), await new Promise(e => setTimeout(e, 10)), n()
       },
-      children: (0, a.jsx)(v.C, {
+      children: (0, a.jsx)(h.C, {
         game: t,
         application: r,
-        className: b.similarGameImage,
-        size: v.Z.SMALL
+        className: y.similarGameImage,
+        size: h.Z.SMALL
       })
     })
   })
 };
 
-function y(e) {
+function O(e) {
   let {
     applicationId: t,
     onClose: n,
     trackAction: r,
-    similarGames: s,
+    similarGames: o,
     similarGamesError: d
   } = e, g = (0, c.e7)([x.Z, f.Z], () => {
     let e = true === x.Z.getSimilarGames(t) && null == x.Z.getSimilarGamesError(t),
-      n = s.some(e => f.Z.isFetching(e));
+      n = o.some(e => f.Z.isFetching(e));
     return e || n
-  }), p = (0, c.Wu)([f.Z], () => s.map(e => f.Z.getGame(e)).filter(e => null != e).filter(e => (0, h.z6)(e.applicationId)).slice(0, 5));
+  }), p = (0, c.Wu)([f.Z], () => o.map(e => f.Z.getGame(e)).filter(e => null != e).filter(e => (0, v.z6)(e.applicationId)).slice(0, 5));
   return (i.useEffect(() => {
-    s.length > 0 && m.Z.getDetectableGamesSupplemental([t, ...s])
-  }, [t, s]), g && null == d) ? (0, a.jsxs)("div", {
+    o.length > 0 && m.Z.getDetectableGamesSupplemental([t, ...o])
+  }, [t, o]), g && null == d) ? (0, a.jsxs)("div", {
     children: [(0, a.jsx)("div", {
-      className: l()(b.loadingHeading, I.sectionHeader)
+      className: l()(y.loadingHeading, _.sectionHeader)
     }), (0, a.jsx)("div", {
-      className: l()(I.row, I.gapLg),
-      children: o().range(0, 5).map(e => (0, a.jsx)("div", {
-        className: b.loadingArtwork
+      className: l()(_.row, _.gapLg),
+      children: s().range(0, 5).map(e => (0, a.jsx)("div", {
+        className: y.loadingArtwork
       }, e))
     })]
   }) : (g || 0 !== p.length) && null == d ? (0, a.jsxs)("div", {
     children: [(0, a.jsx)(u.Heading, {
-      className: I.sectionHeader,
+      className: _.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: _.intl.string(_.t["6rLyQB"])
+      children: b.intl.string(b.t["6rLyQB"])
     }), (0, a.jsx)("div", {
-      className: b.similarGames,
+      className: y.similarGames,
       style: {},
-      children: p.map(e => (0, a.jsx)(O, {
+      children: p.map(e => (0, a.jsx)(I, {
         game: e,
         onClose: n,
         trackClick: r

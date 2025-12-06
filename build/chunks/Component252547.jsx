@@ -20,14 +20,14 @@ function g(e) {
     viewId: n,
     officialGuildId: r,
     onClose: g
-  } = e, f = t.length > 7, [p, x] = i.useState(false), h = i.useMemo(() => t.slice(0, f && !p ? 6 : true), [t, f, p]);
+  } = e, f = t.length > 7, [p, x] = i.useState(false), v = i.useMemo(() => t.slice(0, f && !p ? 6 : true), [t, f, p]);
   return (0, a.jsxs)("div", {
-    children: [(0, a.jsx)(s.X6q, {
+    children: [(0, a.jsx)(o.X6q, {
       className: u.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
       children: d.intl.string(d.t.ak8OHk)
-    }), 0 === t.length ? (0, a.jsx)(s.xvT, {
+    }), 0 === t.length ? (0, a.jsx)(o.xvT, {
       variant: "text-xs/semibold",
       color: "text-strong",
       className: m.emptyState,
@@ -39,21 +39,21 @@ function g(e) {
         }),
         children: (0, a.jsx)("div", {
           className: u.column,
-          children: h.map(e => (0, a.jsx)(c.Z, {
+          children: v.map(e => (0, a.jsx)(c.Z, {
             entry: e,
             viewId: n,
             onClose: g,
             officialGuildId: r
           }, e.id))
         })
-      }), f && !p && (0, a.jsxs)(o.P3F, {
+      }), f && !p && (0, a.jsxs)(s.P3F, {
         className: m.expandEntriesButton,
         onClick: () => x(true),
-        children: [(0, a.jsx)(s.xvT, {
+        children: [(0, a.jsx)(o.xvT, {
           variant: "text-xs/semibold",
           color: "interactive-normal",
           children: d.intl.string(d.t.yohc6E)
-        }), (0, a.jsx)(o.CJ0, {
+        }), (0, a.jsx)(s.CJ0, {
           size: "xs"
         })]
       })]

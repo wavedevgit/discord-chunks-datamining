@@ -57,9 +57,8 @@ let d = e => {
   let {
     analyticsLocations: t,
     initialSelectedDecoration: a,
-    isTryItOut: o,
-    guild: l,
-    onClose: u
+    guild: o,
+    onClose: l
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -67,11 +66,10 @@ let d = e => {
     } = await n.e("79589").then(n.bind(n, 235400));
     return n => (0, r.jsx)(e, c(s({}, n), {
       onCloseModal: n.onClose,
-      onClose: u,
+      onClose: l,
       analyticsLocations: t,
       initialSelectedDecoration: a,
-      isTryItOut: o,
-      guild: l
+      guild: o
     }))
   }, {})
 }

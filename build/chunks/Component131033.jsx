@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 131033, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -9,7 +9,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk226788 = require("./226788.js");
 
-function s(e) {
+function o(e) {
   let {
     detectedGame: t
   } = e;

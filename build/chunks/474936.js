@@ -518,7 +518,7 @@ let eC = Object.freeze({
   }),
   eU = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904", "1432523012455792640"];
 var eG = function(e) {
-    return e.SOUNDBOARD_PLAY = "soundboard play", e.PROFILE_THEME_COLOR = "profile_theme_color", e.PROFILE_BANNER = "profile_banner", e.ANIMATED_AVATAR = "animated_avatar", e.AVATAR_DECORATION = "avatar_decoration", e.CLIENT_THEME = "client_theme", e.SHARED_CANVAS = "shared_canvas", e.PROFILE_EFFECT = "profile_effect", e.PRESET = "preset", e
+    return e.SOUNDBOARD_PLAY = "soundboard play", e.PROFILE_THEME_COLOR = "profile_theme_color", e.PROFILE_BANNER = "profile_banner", e.ANIMATED_AVATAR = "animated_avatar", e.AVATAR_DECORATION = "avatar_decoration", e.CLIENT_THEME = "client_theme", e.SHARED_CANVAS = "shared_canvas", e.PROFILE_EFFECT = "profile_effect", e.DISPLAY_NAME_STYLES = "display_name_styles", e.PRESET = "preset", e
   }({}),
   eZ = function(e) {
     return e.FREE = "free", e.PREMIUM_STANDARD = "premium-standard", e

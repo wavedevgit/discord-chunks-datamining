@@ -42,9 +42,9 @@ function R(e) {
     onClose: w
   } = e, B = (0, s.e7)([h.default], () => h.default.getCurrentUser()), Z = (0, C.t)(B, L), M = (0, s.e7)([g.Z], () => g.Z.getGuild(L)), {
     userDisplayNameStyles: G,
-    guildDisplayNameStyles: Y,
-    pendingDisplayNameStyles: H
-  } = (0, f.mD)(B, L), z = true !== H ? H : null != Y ? Y : G, [F, U] = o.useState(null != (t = null == z ? true : z.fontId) ? t : a.C.DEFAULT), [q, K] = o.useState(null != (n = null == z ? true : z.effectId) ? n : i.m.SOLID), X = (0, S.R)(q), V = (0, S.R)(i.m.GRADIENT), W = null != (R = null == z ? true : z.colors) ? R : [], [$, J] = o.useState(W.length > 0 && q !== i.m.GRADIENT ? W[0] : X.defaultColors[0]), [Q, ee] = o.useState(W.length > 0 && q === i.m.GRADIENT ? W : V.defaultColors);
+    guildDisplayNameStyles: H,
+    pendingDisplayNameStyles: Y
+  } = (0, f.mD)(B, L), z = true !== Y ? Y : null != H ? H : G, [F, U] = o.useState(null != (t = null == z ? true : z.fontId) ? t : a.C.DEFAULT), [q, K] = o.useState(null != (n = null == z ? true : z.effectId) ? n : i.m.SOLID), X = (0, S.R)(q), V = (0, S.R)(i.m.GRADIENT), W = null != (R = null == z ? true : z.colors) ? R : [], [$, J] = o.useState(W.length > 0 && q !== i.m.GRADIENT ? W[0] : X.defaultColors[0]), [Q, ee] = o.useState(W.length > 0 && q === i.m.GRADIENT ? W : V.defaultColors);
   (0, m.Z)({
     type: r.ImpressionTypes.POPOUT,
     name: r.ImpressionNames.DISPLAY_NAME_STYLES_MODAL

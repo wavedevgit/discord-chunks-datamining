@@ -37,7 +37,7 @@ function v(e) {
   }, [n.id, S]);
   let I = r.useMemo(() => l.$e(C.permissions, ...N.map(e => e.permissions)), [N, C]);
   if (null == y) return null;
-  let E = h.ZP.getApplicationIconURL({
+  let w = h.ZP.getApplicationIconURL({
     id: O.id,
     guildMember: _,
     bot: O.bot,
@@ -53,7 +53,7 @@ function v(e) {
         align: p.Z.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
-          src: E,
+          src: w,
           className: j.iconWrapper
         }), (0, i.jsx)(o.Text, {
           color: "header-primary",

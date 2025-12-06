@@ -5,16 +5,16 @@ require.d(exports, {
   CM: () => A,
   Cf: () => I,
   ID: () => T,
-  Ju: () => R,
   Ls: () => y,
   Xz: () => P,
   Z: () => b,
   c_: () => N,
-  f4: () => w,
+  f4: () => R,
   g_: () => S,
   ho: () => v,
   pG: () => O,
-  rf: () => D,
+  rH: () => D,
+  rf: () => w,
   uV: () => j,
   x3: () => x,
   z5: () => C
@@ -172,23 +172,23 @@ function P(e) {
 
 function R(e) {
   a.Z.dispatch({
-    type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PROFILE_EFFECT",
-    profileEffect: e
-  }), E(m.QP.PROFILE_EFFECT)
-}
-
-function w(e) {
-  a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_BANNER",
     banner: e
   }), E(m.QP.PROFILE_BANNER)
 }
 
-function D(e) {
+function w(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS",
     themeColors: e
   }), E(m.QP.PROFILE_THEME_COLOR)
+}
+
+function D(e) {
+  a.Z.dispatch({
+    type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_DISPLAY_NAME_STYLES",
+    displayNameStyles: e
+  }), E(m.QP.DISPLAY_NAME_STYLES)
 }
 
 function x(e) {

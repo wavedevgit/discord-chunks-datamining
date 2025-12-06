@@ -234,7 +234,8 @@ function eN(e) {
     maxUses: e.max_uses,
     maxAge: e.max_age,
     createdAt: g()(null != (t = e.created_at) ? t : true),
-    flags: e.flags
+    flags: e.flags,
+    roles: e.roles
   })
 }
 

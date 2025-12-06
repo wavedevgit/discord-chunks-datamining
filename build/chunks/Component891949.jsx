@@ -40,7 +40,7 @@ function u(e) {
       className: c.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: o.intl.string(o.t.bNdK5x)
+      children: s.intl.string(s.t.bNdK5x)
     }), (0, a.jsxs)("div", {
       className: g ? d.gameProfileMediaSmall : d.gameProfileMediaLarge,
       children: [(0, a.jsx)(r.xVE, {
@@ -54,7 +54,7 @@ function u(e) {
             ringClassName: d.gameArtworkFocusRing
           },
           onClick: () => {
-            n(s.as.ClickImage), (0, l.K)({
+            n(o.as.ClickImage), (0, l.K)({
               items: m,
               startingIndex: t,
               shouldHideMediaOptions: true,
@@ -64,7 +64,7 @@ function u(e) {
           children: (0, a.jsx)("img", {
             src: e.url,
             className: d.gameArtwork,
-            alt: o.intl.formatToPlainString(o.t.COYYrn, {
+            alt: s.intl.formatToPlainString(s.t.COYYrn, {
               game: name
             })
           })

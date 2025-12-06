@@ -28,19 +28,19 @@ function f(e) {
     switch (e.category) {
       case l.p.OFFICIAL:
         return {
-          icon: (0, a.jsx)(o.enf, {
+          icon: (0, a.jsx)(s.enf, {
             colorClass: m.linkIcon
           }), action: c.as.WebsiteLink, title: d.intl.string(d.t.fOUKvg)
         };
       case l.p.TWITTER:
         return {
-          icon: (0, a.jsx)(o.TAi, {
+          icon: (0, a.jsx)(s.TAi, {
             colorClass: m.linkIcon
           }), action: c.as.XLink, title: d.intl.string(d.t.INic4y)
         };
       case l.p.YOUTUBE:
         return {
-          action: c.as.YouTubeLink, icon: (0, a.jsx)(o.$5w, {
+          action: c.as.YouTubeLink, icon: (0, a.jsx)(s.$5w, {
             colorClass: m.linkIcon
           }), title: d.intl.string(d.t.lNmxbE)
         };
@@ -48,9 +48,9 @@ function f(e) {
         throw Error("Unknown IGDB website category")
     }
   }(t);
-  return (0, a.jsx)(s.u, {
+  return (0, a.jsx)(o.u, {
     __unsupportedReactNodeAsText: t.url,
-    children: (0, a.jsx)(o.Anchor, {
+    children: (0, a.jsx)(s.Anchor, {
       onClick: () => {
         n(i)
       },
@@ -75,7 +75,7 @@ let p = function(e) {
     return g.includes(t)
   }).sort((e, t) => e.category - t.category);
   return 0 === i.length ? null : (0, a.jsxs)("div", {
-    children: [(0, a.jsx)(o.Heading, {
+    children: [(0, a.jsx)(s.Heading, {
       className: u.sectionHeader,
       variant: "text-xs/semibold",
       color: "text-default",

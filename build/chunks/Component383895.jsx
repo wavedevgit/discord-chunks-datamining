@@ -11,8 +11,8 @@ function l(e) {
   var t, n;
   let {
     entry: l,
-    viewId: s,
-    officialGuildId: o
+    viewId: o,
+    officialGuildId: s
   } = e;
   return (0, a.jsx)(i.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -38,8 +38,8 @@ function l(e) {
         applicationId: l.extra.application_id,
         gameName: l.extra.game_name,
         recipientUserId: l.author_id,
-        viewId: s,
-        officialGuildId: o
+        viewId: o,
+        officialGuildId: s
       })
     },
     onRequestOpen: () => {
@@ -48,8 +48,8 @@ function l(e) {
         applicationId: l.extra.application_id,
         gameName: l.extra.game_name,
         recipientUserId: l.author_id,
-        viewId: s,
-        officialGuildId: o
+        viewId: o,
+        officialGuildId: s
       })
     }
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

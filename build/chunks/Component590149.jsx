@@ -58,7 +58,7 @@ function d(e) {
           color: "text-default",
           children: n
         }), null != r && "" !== r && (0, a.jsx)(s.Text, {
-          variant: "text-xs/normal",
+          variant: "text-xs/medium",
           color: "text-subtle",
           children: r
         })]
@@ -67,8 +67,8 @@ function d(e) {
           [c.opened]: C
         }),
         children: (0, a.jsx)(o.Z, {
-          width: 18,
-          height: 18,
+          width: 20,
+          height: 20,
           direction: o.Z.Directions.RIGHT
         })
       })]
