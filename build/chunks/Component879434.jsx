@@ -1,7 +1,7 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 879434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -84,7 +84,7 @@ let f = e => {
       })]
     })
   },
-  b = () => {
+  g = () => {
     let [e, t] = Chunk473749.useState(0);
     return (0, Chunk54381.jsxs)(Chunk793030.zJl, {
       className: Chunk511130.wrapper,

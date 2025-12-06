@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 287647, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   e: () => v
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk905170 = require("./905170.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk374104 = require("./374104.js");
-let g = new Chunk710845.Z("DisplayNameStylesCoachmark");
+let b = new Chunk710845.Z("DisplayNameStylesCoachmark");
 
 function v(e) {
   let {
@@ -41,7 +41,7 @@ function v(e) {
   }, [t]);
   return (0, l.useEffect)(() => {
     var e, t, n;
-    _ && (null == (e = j.current) ? true : e.paused) ? null == (t = j.current) || t.play().catch(g.error) : _ || null == (n = j.current) || n.pause()
+    _ && (null == (e = j.current) ? true : e.paused) ? null == (t = j.current) || t.play().catch(b.error) : _ || null == (n = j.current) || n.pause()
   }, [_]), (0, a.jsxs)(a.Fragment, {
     children: [o, (0, a.jsx)(i.J, {
       targetElementRef: n,
@@ -56,7 +56,7 @@ function v(e) {
       graphic: {
         type: "video",
         ref: j,
-        src: b.Z,
+        src: g.Z,
         aspectRatio: "21/9",
         loop: true
       },

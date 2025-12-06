@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 427347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -39,39 +39,39 @@ function v(e) {
   };
   return n && !m ? (0, a.jsx)(o.ZP, {
     children: (0, a.jsxs)("div", {
-      className: g.wrapper,
+      className: b.wrapper,
       children: [(0, a.jsxs)("div", {
-        className: g.backgroundWrapper,
+        className: b.backgroundWrapper,
         children: [(0, a.jsx)(h.Z, {
-          className: g.backgroundImage,
+          className: b.backgroundImage,
           pageMultiplier: 5
         }), (0, a.jsx)("div", {
-          className: g.backgroundOverlay
+          className: b.backgroundOverlay
         })]
       }), (0, a.jsx)("div", {
-        className: g.heroImage
+        className: b.heroImage
       }), (0, a.jsxs)("div", {
-        className: g.content,
+        className: b.content,
         children: [(0, a.jsxs)("div", {
           children: [(0, a.jsx)(l.Heading, {
             variant: "heading-md/bold",
             color: true,
-            className: g.specialText,
-            children: b.intl.string(b.t.zUhr3D)
+            className: b.specialText,
+            children: g.intl.string(g.t.zUhr3D)
           }), (0, a.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: b.intl.format(b.t.Xw2XUT, {
+            children: g.intl.format(g.t.Xw2XUT, {
               settingsHook: (e, t) => (0, a.jsx)(l.P3F, {
                 tag: "span",
-                className: g.specialTextLink,
+                className: b.specialTextLink,
                 onClick: _,
                 children: e
               }, t)
             })
           })]
         }), (0, a.jsx)(l.P3F, {
-          className: g.closeClickable,
+          className: b.closeClickable,
           onClick: () => j(f.L.USER_DISMISS),
           children: (0, a.jsx)(l.Dio, {
             color: "currentColor",

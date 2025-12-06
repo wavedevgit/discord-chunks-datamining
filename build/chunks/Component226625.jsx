@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 226625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -34,19 +34,19 @@ function x(e) {
     })
   }, 20), [n, r]);
   l.useEffect(() => (window.addEventListener("mousemove", f), () => window.removeEventListener("mousemove", f)), [f]);
-  let [b, g] = (0, u.q_F)(() => ({
+  let [g, b] = (0, u.q_F)(() => ({
     x: 0,
     y: 0,
     config: h
   }));
   return l.useEffect(() => {
-    g({
+    b({
       x: s.x,
       y: s.y
     })
-  }, [s.x, s.y, g]), (0, a.jsx)(c.animated.div, {
+  }, [s.x, s.y, b]), (0, a.jsx)(c.animated.div, {
     style: {
-      transform: (0, c.to)([b.x, b.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
+      transform: (0, c.to)([g.x, g.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },
     className: i()(p.background, t)
   })

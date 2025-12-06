@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 474376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => _
@@ -76,12 +76,12 @@ function _(e) {
           })
         },
         action: () => {
-          if (null == e || e(), d)(0, b.Z)();
+          if (null == e || e(), d)(0, g.Z)();
           else {
             var n;
-            (n = i.id) !== (null == t ? true : t.id) && (m.default.track(g.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+            (n = i.id) !== (null == t ? true : t.id) && (m.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
               location: {
-                section: g.jXE.USER_PROFILE
+                section: b.jXE.USER_PROFILE
               }
             }), h.yD(n))
           }
@@ -93,7 +93,7 @@ function _(e) {
       id: "manage-accounts",
       label: v.intl.string(v.t.WbFpq4),
       action: () => {
-        null == e || e(), (0, b.Z)()
+        null == e || e(), (0, g.Z)()
       }
     })]
   })), C

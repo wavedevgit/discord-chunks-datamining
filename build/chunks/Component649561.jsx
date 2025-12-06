@@ -83,13 +83,13 @@ class k extends Chunk473749.PureComponent {
       observe: false,
       children: (0, Chunk54381.jsx)(Chunk481060.f6W, {
         theme: Chunk981631.BRd.DARK,
-        children: r => (0, i.jsxs)(h.P3F, {
+        children: r => (0, i.jsxs)(p.P3F, {
           innerRef: this.contentDomRef,
           className: o()(r, P.container),
           onClick: e => e.stopPropagation(),
-          children: [(0, i.jsx)(m.ZP, {
+          children: [(0, i.jsx)(y.ZP, {
             expand: true,
-            icon: (0, i.jsx)(b.Z, {
+            icon: (0, i.jsx)(_.Z, {
               width: 40,
               height: 40,
               className: P.notificationIcon
@@ -156,7 +156,7 @@ let R = a().throttle(() => {
 });
 class A extends Chunk473749.PureComponent {
   componentDidCatch(e, t) {
-    let n = (0, y.s1)().location;
+    let n = (0, b.s1)().location;
     this.setState({
       error: e,
       info: t

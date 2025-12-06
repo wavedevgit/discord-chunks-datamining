@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 179809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -44,8 +44,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       draggable: A = false,
       sorting: R = false,
       onDragStart: D,
-      onDragEnd: L,
-      onExpandCollapse: M,
+      onDragEnd: M,
+      onExpandCollapse: L,
       onContextMenu: k,
       renderChildNode: G,
       folderButtonSize: U,
@@ -54,8 +54,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       "aria-posinset": V
     } = e, {
       id: H,
-      name: z,
-      children: W
+      name: W,
+      children: z
     } = t, [K, Y] = i.useState(false), [q, Q] = i.useState(false), X = K || q, J = (0, p.Ml)("FolderItem");
     i.useEffect(() => {
       R && Y(false)
@@ -69,7 +69,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         nodeId: t.id
       }),
       end() {
-        null == L || L(), (0, f.V1)(g.ZP.getCompatibleGuildFolders())
+        null == M || M(), (0, f.V1)(g.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -77,13 +77,13 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }), et = i.useCallback(e => {
       Q(e)
     }, []), en = i.useCallback(e => {
-      ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
-    }, [M, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
+      ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && L()
+    }, [L, s]), er = null != W && "" !== W ? W : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
       let t = (0, h.dQu)(h.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, h.dQu)(h.TVs.space.SPACE_XS);
       return e * (n + r) - r + (r - (t - n) / 2) + (0, h.dQu)(h.TVs.space.SPACE_4)
-    }(W.length), ea = (0, h.Yzy)(!$ && s, {
+    }(z.length), ea = (0, h.Yzy)(!$ && s, {
       from: {
         height: 0
       },
@@ -128,7 +128,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             isMentionLowImportance: Z,
             tooltipName: er,
             folderGroupId: el,
-            onClick: M,
+            onClick: L,
             onContextMenu: k,
             onHoverChange: Y,
             onKeyDown: en,
@@ -170,7 +170,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             height: e.height.to(e => e * eo)
           },
           "aria-label": t.name,
-          children: W.map((t, n) => G(t, n, W.length, e.height))
+          children: z.map((t, n) => G(t, n, z.length, e.height))
         }, l)
       }), A && s ? (0, r.jsx)(O.Zu, {
         name: er,

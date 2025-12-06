@@ -1,9 +1,9 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 176038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _Y: () => O,
-  aB: () => N,
-  th: () => E,
+  aB: () => E,
+  th: () => N,
   ub: () => T
 }), require("./388685.js"), require("./457542.js");
 var Chunk473749 = require("./473749.js"),
@@ -31,7 +31,7 @@ let y = [Chunk981631.BRd.DARK, Chunk981631.BRd.LIGHT, Chunk981631.BRd.DARKER, Ch
 function S(e) {
   return e[Math.floor(Math.random() * e.length)]
 }
-async function N() {
+async function E() {
   let e = function() {
       let e = Chunk594174.default.getCurrentUser();
       return Chunk74538.ZP.canUseClientThemes(module) ? Object.keys(Chunk469115.qt).map(e => Number(e)) : []
@@ -61,7 +61,7 @@ async function N() {
     }
   } catch (e) {}
 }
-async function E() {
+async function N() {
   let e = Chunk1870.Z.purchases,
     t = (0, Chunk884697.Ad)(module),
     n = (0, Chunk884697.jT)(module),
@@ -96,17 +96,17 @@ function O() {
 function T() {
   Chunk473749.useEffect(() => {
     var e, t, n, a, l;
-    let g = Chunk594174.default.getCurrentUser(),
+    let b = Chunk594174.default.getCurrentUser(),
       v = Chunk695346.L1.getSetting(),
       j = Chunk1870.Z.purchases,
       _ = (0, Chunk884697.Ad)(Chunk469115),
       y = (0, Chunk884697.jT)(Chunk469115),
       C = Chunk210887.Z.theme,
       S = Chunk981631.backgroundGradientPresetId,
-      N = null == Chunk74538 || null == (e = Chunk74538.avatarDecoration) ? true : module.skuId,
-      E = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-      O = null != N && null != (a = Chunk959517.find(e => e.skuId === N)) ? Chunk473749 : null,
-      T = null != E && null != (l = y.find(e => e.skuId === E)) ? Chunk524437 : null,
+      E = null == Chunk74538 || null == (e = Chunk74538.avatarDecoration) ? true : module.skuId,
+      N = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
+      O = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk473749 : null,
+      T = null != N && null != (l = y.find(e => e.skuId === N)) ? Chunk524437 : null,
       P = Chunk607070.Z.fontSize,
       I = Chunk607070.Z.messageGroupSpacing,
       w = Chunk695346.YC.getSetting();

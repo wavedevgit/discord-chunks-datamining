@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 207913, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -82,7 +82,7 @@ function V(e) {
     isSelected: a,
     isUnread: s,
     groupedMessages: h
-  } = e, f = n.type === M.d4z.UNKNOWN ? d.VL1 : (0, g.KS)(n, null), m = (0, p.ZP)(n, false), b = (0, c.e7)([Z.Z], () => Z.Z.getGuild(n.getGuildId())), {
+  } = e, f = n.type === L.d4z.UNKNOWN ? d.VL1 : (0, g.KS)(n, null), m = (0, p.ZP)(n, false), b = (0, c.e7)([Z.Z], () => Z.Z.getGuild(n.getGuildId())), {
     nick: y,
     colorString: O
   } = (0, _.ZP)(t), {
@@ -93,7 +93,7 @@ function V(e) {
     size: d.EFr.SIZE_32,
     guildId: null == b ? true : b.id,
     animateOnHover: true
-  }), S = n.type !== M.d4z.GUILD_ANNOUNCEMENT || null == b, P = (0, v.x)({
+  }), S = n.type !== L.d4z.GUILD_ANNOUNCEMENT || null == b, P = (0, v.x)({
     channel: n,
     message: t,
     user: t.author,
@@ -125,14 +125,14 @@ function V(e) {
           width: "fit-content",
           marginTop: "4px"
         },
-        children: S ? (0, r.jsx)(L.q, {
+        children: S ? (0, r.jsx)(M.q, {
           "aria-label": "User Avatar",
           src: x,
           size: d.EFr.SIZE_32,
           cornerIconUrl: null != b ? (0, I.EB)(b, 24) : true,
           cornerIconOffsetX: 4,
           cornerIconOffsetY: 3
-        }) : (0, r.jsx)(L.E, {
+        }) : (0, r.jsx)(M.E, {
           "aria-label": "Guild Icon",
           src: (0, I.EB)(b, 32),
           size: d.EFr.SIZE_32,
@@ -187,7 +187,7 @@ function V(e) {
             }), t.mentioned && s ? (0, r.jsx)(d.mAB, {
               className: U.mentionBadge,
               count: 1
-            }) : (0, r.jsx)(z, {
+            }) : (0, r.jsx)(W, {
               message: t
             })]
           })]
@@ -212,7 +212,7 @@ function V(e) {
             }),
             children: [m, !S && " \xb7 ".concat(y)]
           })]
-        }), (0, r.jsx)(W, {
+        }), (0, r.jsx)(z, {
           message: t,
           isUnread: s,
           isSelected: a,
@@ -255,7 +255,7 @@ function H(e) {
   })
 }
 
-function z(e) {
+function W(e) {
   let {
     message: t
   } = e, n = (0, C.a3)(t.timestamp.getTime());
@@ -268,7 +268,7 @@ function z(e) {
   })
 }
 
-function W(e) {
+function z(e) {
   let {
     message: t,
     channel: n,
@@ -295,17 +295,17 @@ function W(e) {
     });
     return (0, i.useMemo)(() => {
       let e = "" === t.content,
-        i = t.embeds.some(e => e.type === M.hBH.GIFV),
+        i = t.embeds.some(e => e.type === L.hBH.GIFV),
         s = function(e) {
-          let t = e.embeds.some(e => e.type === M.hBH.GIFV);
+          let t = e.embeds.some(e => e.type === L.hBH.GIFV);
           return e.attachments.length + +!!t
         }(t),
         c = (0, m.Z)(t),
         u = t.stickerItems.length > 0,
         h = t.isPoll(),
-        f = t.type === M.uaV.POLL_RESULT,
-        p = t.hasFlag(M.iLy.IS_VOICE_MESSAGE),
-        g = t.type === M.uaV.USER_JOIN,
+        f = t.type === L.uaV.POLL_RESULT,
+        p = t.hasFlag(L.iLy.IS_VOICE_MESSAGE),
+        g = t.type === L.uaV.USER_JOIN,
         _ = null;
       1 === s ? _ = d.XBm : s > 1 ? _ = d.Ka2 : c ? _ = b.Z : h || f ? _ = d.QDj : u ? _ = d.SlE : p && (_ = d.gj8);
       let O = true,
@@ -377,7 +377,7 @@ let K = (0, Chunk473749.memo)(function(e) {
     return null != e ? e : new S.nl({
       id: l.channelId,
       guild_id: l.guildId,
-      type: M.d4z.UNKNOWN,
+      type: L.d4z.UNKNOWN,
       name: G.intl.string(G.t.J90oLW)
     })
   }), b = (0, R.z)(e => {

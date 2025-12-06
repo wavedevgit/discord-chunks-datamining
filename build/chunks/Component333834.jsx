@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -110,7 +110,7 @@ function R(e) {
     className: I,
     listName: P,
     ignoreGrouping: R = false
-  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, h.Z)(P, L), {
+  } = e, D = (0, y.fJ)(), M = i.useRef(null), L = (0, h.Z)(P, M), {
     entrypoint: k,
     notificationCenterVariant: G
   } = (0, _.pN)({
@@ -125,8 +125,8 @@ function R(e) {
     hasLoadedEver: v.Z.hasLoadedEver
   })), V = !F && U, {
     messageCategoryOpenStates: H,
-    toggleOpenState: z
-  } = (0, O.Z)(), W = function() {
+    toggleOpenState: W
+  } = (0, O.Z)(), z = function() {
     let e = (0, u.Wu)([v.Z], () => {
       var e;
       return null != (e = v.Z.getNotifyingChannelIds()) ? e : []
@@ -144,14 +144,14 @@ function R(e) {
   i.useEffect(() => {
     function e() {
       var e;
-      null == (e = L.current) || e.scrollPageUp({
+      null == (e = M.current) || e.scrollPageUp({
         animate: true
       })
     }
 
     function t() {
       var e;
-      null == (e = L.current) || e.scrollPageDown({
+      null == (e = M.current) || e.scrollPageDown({
         animate: true
       })
     }
@@ -161,7 +161,7 @@ function R(e) {
   }, []);
   let K = i.useCallback(() => {
       var e;
-      let t = null == (e = L.current) ? true : e.getScrollerState();
+      let t = null == (e = M.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = .5 * t.offsetHeight;
       t.scrollHeight - (t.scrollTop + t.offsetHeight) <= n && (null == l || l(E.X.USER_SCROLL))
@@ -206,7 +206,7 @@ function R(e) {
           isOpen: H[t],
           toggleOpenedState: () => {
             let e = H[t];
-            z(t), (0, y.RZ)({
+            W(t), (0, y.RZ)({
               section: t,
               enabled: !e,
               viewId: D
@@ -214,7 +214,7 @@ function R(e) {
           }
         }, t)), H[t] && e.push(...Y[t].map(e => f(e, t === E.KZ.UNREAD))))
       }), e
-    }, [t, n, a, H, z, Y, R, f, q, Q, D]),
+    }, [t, n, a, H, W, Y, R, f, q, Q, D]),
     J = X[X.length - 1],
     $ = i.isValidElement(J) && J.type === w,
     ee = (0, x.d)(e => e.setInboxReadState);
@@ -239,12 +239,12 @@ function R(e) {
   let en = i.useCallback(() => {
     var e;
     let t = T.filter(e => H[e]).reduce((e, t) => e + Y[t].length, 0),
-      n = null == (e = L.current) ? true : e.getScrollerState();
+      n = null == (e = M.current) ? true : e.getScrollerState();
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
   }, [H, Y]);
   i.useEffect(() => {
-    Q || U || 0 >= en() || (!$ || W) && (null == l || l(E.X.FILL_SCROLLER))
-  }, [en, l, Q, U, $, W]);
+    Q || U || 0 >= en() || (!$ || z) && (null == l || l(E.X.FILL_SCROLLER))
+  }, [en, l, Q, U, $, z]);
   let er = i.useMemo(() => {
     let e = Math.min(Math.max(2, en()), 20);
     return (0, r.jsx)(C.Z, {
@@ -265,7 +265,7 @@ function R(e) {
     onDoubleClick: Z,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
-      navigator: M,
+      navigator: L,
       children: (0, r.jsx)(c.SJ, {
         children: e => {
           var t, n, {
@@ -306,7 +306,7 @@ function R(e) {
           }({
             ref: e => {
               var t;
-              L.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+              M.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
             className: o()(N.messagesPopout, p),
             onScroll: K,

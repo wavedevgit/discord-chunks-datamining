@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 590149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -23,15 +23,15 @@ function d(e) {
     defaultExpanded: h = false,
     onOpen: x,
     maxHeight: f
-  } = e, [b, g] = l.useState(h), v = l.useRef(null), [j, _] = l.useState(null), y = true !== m, C = y ? m : b;
+  } = e, [g, b] = l.useState(h), v = l.useRef(null), [j, _] = l.useState(null), y = true !== m, C = y ? m : g;
   l.useEffect(() => {
     C && null != v.current && _(v.current.scrollHeight)
   }, [C, d]);
   let S = l.useCallback(() => {
       let e = !C;
-      y || g(e), null == p || p(e), e && null != x && x()
+      y || b(e), null == p || p(e), e && null != x && x()
     }, [C, y, p, x]),
-    N = l.useMemo(() => {
+    E = l.useMemo(() => {
       if (C) {
         if (null != f) return {
           maxHeight: "number" == typeof f ? "".concat(f, "px") : f
@@ -77,7 +77,7 @@ function d(e) {
       className: i()(c.content, {
         [c.opened]: C
       }),
-      style: N,
+      style: E,
       children: d
     })]
   })

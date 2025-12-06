@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -77,12 +77,12 @@ let B = Chunk473749.memo(function e(t) {
       channel: l,
       message: s,
       compact: R = false,
-      className: M,
+      className: L,
       onContextMenu: B,
       onClick: V,
       disableInteraction: H = false,
-      hasThread: z,
-      treatSpam: W
+      hasThread: W,
+      treatSpam: z
     } = t,
     K = D.OBS.has(s.type) ? s.messageReference : true,
     Y = (0, a.e7)([f.Z], () => f.Z.getMessageByReference(K)),
@@ -123,14 +123,14 @@ let B = Chunk473749.memo(function e(t) {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYM/"] : m.Z.isIgnoredForMessage(s) ? i = L.t["VFWjc+"] : (0, O.DQ)(s) && W && (i = L.t.xfkfTK), true !== i) ? (0, r.jsx)(F, {
-    className: M,
+  })) : (m.Z.isBlockedForMessage(s) ? i = M.t["+FcYM/"] : m.Z.isIgnoredForMessage(s) ? i = M.t["VFWjc+"] : (0, O.DQ)(s) && z && (i = M.t.xfkfTK), true !== i) ? (0, r.jsx)(F, {
+    className: L,
     compact: R,
     count: 1,
     collapsedReason: i
   }) : (0, r.jsx)(C.Z, {
     compact: R,
-    className: o()(M, {
+    className: o()(L, {
       [k.ephemeral]: (0, y.Pv)(s),
       [k.disableInteraction]: H,
       [k.groupStart]: t.isGroupStart
@@ -151,7 +151,7 @@ let B = Chunk473749.memo(function e(t) {
       disableReactionCreates: en,
       disableComponentInteractivity: true,
       disableReactionUpdates: false,
-      renderThreadAccessory: z,
+      renderThreadAccessory: W,
       inlineAttachmentMedia: Q,
       inlineEmbedMedia: X,
       renderEmbeds: J,
@@ -168,13 +168,13 @@ let B = Chunk473749.memo(function e(t) {
     childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: B,
     onClick: V,
-    hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
+    hasThread: false !== W && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
     hasReply: s.type === D.uaV.REPLY,
     isSystemMessage: (0, v.Z)(s),
     messageRef: ec,
     author: el,
     "aria-labelledby": ef,
-    "aria-roledescription": L.intl.string(L.t.BAB0yK)
+    "aria-roledescription": M.intl.string(M.t.BAB0yK)
   })
 });
 
@@ -191,15 +191,15 @@ function F(e) {
     role: "group",
     childrenMessageContent: (0, r.jsx)(R.Z, {
       compact: i,
-      className: M.blockedSystemMessage,
+      className: L.blockedSystemMessage,
       iconNode: (0, r.jsx)(s.Dio, {
         size: "md",
         color: "currentColor",
-        className: M.blockedIcon
+        className: L.blockedIcon
       }),
       children: (0, r.jsx)("div", {
-        className: M.blockedMessageText,
-        children: L.intl.format(l, {
+        className: L.blockedMessageText,
+        children: M.intl.format(l, {
           count: n
         })
       })

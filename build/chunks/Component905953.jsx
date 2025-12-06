@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 905953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -29,8 +29,8 @@ function y(e) {
     targetElementRef: n,
     onClose: y
   } = e, [C, S] = l.useState(false), {
-    trackUserProfileEditAction: N
-  } = (0, u.KZ)(), E = (0, i.e7)([g.default], () => g.default.getId()), {
+    trackUserProfileEditAction: E
+  } = (0, u.KZ)(), N = (0, i.e7)([b.default], () => b.default.getId()), {
     config: O,
     application: T
   } = (0, h.G)(), {
@@ -38,7 +38,7 @@ function y(e) {
     hasAlreadyLinked: I,
     canStartAuthorization: w,
     startAuthorization: k
-  } = (0, c.F)(T), R = (0, x.ZP)(E), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == T ? true : T.id));
+  } = (0, c.F)(T), R = (0, x.ZP)(N), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == T ? true : T.id));
   return null != O && null != O.edit_profile_upsell_image && null != T && P ? (0, a.jsx)(d.ZP, {
     contentTypes: I ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : w ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
@@ -67,7 +67,7 @@ function y(e) {
           text: _.intl.string(_.t.VSLDly),
           onClick: () => {
             S(true), (0, f.openUserProfileModal)({
-              userId: E,
+              userId: N,
               section: j.oh.WIDGETS
             }).then(() => {
               l(v.L.TAKE_ACTION), y();
@@ -75,7 +75,7 @@ function y(e) {
                 applicationId: T.id,
                 type: r.l.APPLICATION
               });
-              (0, p.qH)(e.type, e), N(function(e) {
+              (0, p.qH)(e.type, e), E(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     a = Object.keys(n);
@@ -94,7 +94,7 @@ function y(e) {
                 return e
               }({
                 action: "WIDGET_ADDED"
-              }, e.getProfileEditAnalyticsOptions())), (0, b.L$)(j.qb.WIDGET_ADDED)
+              }, e.getProfileEditAnalyticsOptions())), (0, g.L$)(j.qb.WIDGET_ADDED)
             }).finally(() => S(false))
           },
           loading: C
@@ -104,7 +104,7 @@ function y(e) {
             k({
               onConfirm: () => {
                 S(true), (0, f.openUserProfileModal)({
-                  userId: E,
+                  userId: N,
                   section: j.oh.WIDGETS
                 }).then(() => {
                   l(v.L.TAKE_ACTION), y()

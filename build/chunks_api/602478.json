@@ -1,1 +1,1 @@
-{"id":"602478","type":"experiment","data":{"kind":"user","id":"2023-11_xbox_game_invites","label":"Xbox Game Invites Experiment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Xbox Game Invites UI Enabled","config":{"enabled":true}}]},"fromModule":{"id":"73895"}}
+{"id":"602478","type":"experiment","data":{"kind":"user","id":"2023-11_xbox_game_invites","label":"Xbox Game Invites Experiment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Xbox Game Invites UI Enabled","config":{"enabled":true}}]},"fromModule":{"id":"46467"}}

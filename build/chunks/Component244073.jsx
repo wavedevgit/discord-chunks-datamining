@@ -73,13 +73,13 @@ class D extends Chunk473749.PureComponent {
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, h.F6)(e, E.default, O.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : j.ME;
+    } = this.props, n = (0, p.F6)(e, E.default, O.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : j.ME;
     return (0, i.jsx)(l.rU, {
       to: j.Z5c.CHANNEL(s),
       onClick: t => {
         t.stopPropagation(), u.Z.channelListScrollTo(s, e.id)
       },
-      children: (0, i.jsx)(_.Z, {
+      children: (0, i.jsx)(m.Z, {
         className: P.channel,
         children: r
       })
@@ -96,8 +96,8 @@ class D extends Chunk473749.PureComponent {
       lastPing: a,
       hasVideo: d,
       connectionState: u,
-      deaf: p,
-      mute: h
+      deaf: h,
+      mute: p
     } = this.props;
     return null == Chunk120356 ? null : (0, Chunk54381.jsx)(Chunk518084.ZP.Bar, {
       className: o()(module, Chunk361979.controls, {
@@ -114,7 +114,7 @@ class D extends Chunk473749.PureComponent {
             position: "top",
             children: e => (0, i.jsx)(c.P3F, N(T({}, e), {
               innerRef: this.rtcConnectionStatusRef,
-              children: (0, i.jsx)(y.Z, {
+              children: (0, i.jsx)(b.Z, {
                 channelId: s.id,
                 quality: l,
                 lastPing: a,
@@ -166,7 +166,7 @@ class D extends Chunk473749.PureComponent {
       let {
         lobbyId: t
       } = this.props;
-      return (0, i.jsx)(m.Z, {
+      return (0, i.jsx)(y.Z, {
         channelId: e,
         lobbyId: t,
         isOverlay: true
@@ -195,10 +195,10 @@ function k(e) {
     }
     return r
   }(e, ["context", "lobbyId", "channel"]);
-  let o = (0, a.e7)([b.Z], () => b.Z.getGuild(null == r ? true : r.getGuildId())),
+  let o = (0, a.e7)([_.Z], () => _.Z.getGuild(null == r ? true : r.getGuildId())),
     l = (0, a.e7)([x.Z], () => null != r && x.Z.hasVideo(r.id)),
     [c, d] = (0, a.Wu)([v.Z], () => [v.Z.isSelfMute(t) || v.Z.isSelfMutedTemporarily(t), v.Z.isSelfDeaf(t)]),
-    [u, p, h] = (0, a.Wu)([S.Z], () => [S.Z.getConnectionState(n), S.Z.getLastPing(n), S.Z.getQuality(n)]);
+    [u, h, p] = (0, a.Wu)([S.Z], () => [S.Z.getConnectionState(n), S.Z.getLastPing(n), S.Z.getQuality(n)]);
   return (0, i.jsx)(D, N(T({}, s), {
     context: t,
     lobbyId: n,
@@ -208,7 +208,7 @@ function k(e) {
     mute: c,
     deaf: d,
     connectionState: u,
-    lastPing: p,
-    quality: h
+    lastPing: h,
+    quality: p
   }))
 }

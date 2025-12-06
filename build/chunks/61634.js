@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 61634, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -98,7 +98,7 @@ function S(e) {
       P = !!l && null != f.Z.getActiveStreamForUser(A, e),
       R = (0, s.aK)(f.Z.getAllApplicationStreams()).some(t => t.guildId === e),
       D = l && T,
-      L = (() => {
+      M = (() => {
         if (N) return I.length > 0;
         for (let e of I) {
           let t = g.Z.getChannel((0, a.p)(e.location));
@@ -106,8 +106,8 @@ function S(e) {
         }
         returnfalse
       })(),
-      M = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return l ? (c = true, p = (null == S ? true : S.channel_id) === i, m = E, _ = D, O = P, v = M) : (c = Z, p = null != S, m = x, _ = w, O = R, v = L), {
+      L = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
+    return l ? (c = true, p = (null == S ? true : S.channel_id) === i, m = E, _ = D, O = P, v = L) : (c = Z, p = null != S, m = x, _ = w, O = R, v = M), {
       audio: c,
       video: _,
       screenshare: O,

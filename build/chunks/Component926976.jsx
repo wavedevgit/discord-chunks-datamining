@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -53,7 +53,7 @@ function P(e) {
     children: t
   } = e;
   return (0, a.jsx)(u.zJl, {
-    className: E.customPropertiesContainer,
+    className: N.customPropertiesContainer,
     children: (0, a.jsx)("dl", {
       children: t
     })
@@ -72,16 +72,16 @@ function I(e) {
       return () => clearTimeout(e)
     }
   }, [i]), (0, a.jsxs)("div", {
-    className: E.customProperty,
+    className: N.customProperty,
     children: [(0, a.jsx)("dt", {
-      className: E.customPropertiesName,
+      className: N.customPropertiesName,
       children: t
     }), (0, a.jsx)("dd", {
       children: n
     }), (0, a.jsx)(u.P3F, {
       tag: "span",
-      className: E.copyPropertyButton,
-      onClick: () => (0, b.JG)(JSON.stringify(r), () => s(true)),
+      className: N.copyPropertyButton,
+      onClick: () => (0, g.JG)(JSON.stringify(r), () => s(true)),
       children: i ? (0, a.jsx)(u.kmB, {
         color: "currentColor",
         size: "sm"
@@ -111,16 +111,16 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.ZP, {
-          className: i()(O.headerBar, E.subPanelHeaderBar),
+          className: i()(O.headerBar, N.subPanelHeaderBar),
           children: [(0, a.jsx)(p.ZP.Icon, {
             icon: u.IeX,
             tooltip: t
           }), (0, a.jsxs)(p.ZP.Title, {
-            wrapperClassName: E.headerTitle,
+            wrapperClassName: N.headerTitle,
             children: [t, (0, a.jsx)(u.P3F, {
               tag: "span",
-              className: E.copyEventButton,
-              onClick: () => (0, b.JG)(t),
+              className: N.copyEventButton,
+              onClick: () => (0, g.JG)(t),
               children: (0, a.jsx)(u.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -130,7 +130,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             icon: u.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, b.JG)(JSON.stringify(function(e) {
+              (0, g.JG)(JSON.stringify(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     a = Object.keys(n);
@@ -160,14 +160,14 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             onClick: s
           })]
         }), (0, a.jsxs)(_.E, {
-          className: E.commonProperties,
+          className: N.commonProperties,
           children: [(0, a.jsx)(_.Z9, {
             name: "Timestamp (local)",
             copyValue: l.toISOString(),
             children: (0, a.jsxs)("time", {
               dateTime: l.toISOString(),
-              title: (0, g.vc)(h, "LLLL"),
-              children: ["(", o().locale(), ") ", (0, g.Y4)(h)]
+              title: (0, b.vc)(h, "LLLL"),
+              children: ["(", o().locale(), ") ", (0, b.Y4)(h)]
             })
           }), null != d && (0, a.jsx)(_.Z9, {
             name: "User",
@@ -210,7 +210,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
                 children: null != l ? (0, a.jsx)("code", {
                   children: JSON.stringify(l)
                 }) : (0, a.jsx)("code", {
-                  className: E.emptyProperty,
+                  className: N.emptyProperty,
                   children: "null"
                 })
               }, n), null !== r && null !== r.average && (0, a.jsx)(I, {
@@ -281,8 +281,8 @@ function Z() {
         if (R[t].filter(e)) returntrue;
       returnfalse
     }),
-    [b, g] = Chunk473749.useState(true),
-    _ = Chunk594174.find(e => e.key === b),
+    [g, b] = Chunk473749.useState(true),
+    _ = Chunk594174.find(e => e.key === g),
     {
       TabBar: P,
       renderSelectedTab: I
@@ -314,7 +314,7 @@ function Z() {
         children: Object.entries(R).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(u.P3F, {
-            className: i()(E.filter, s.includes(t) && E.activeFilter),
+            className: i()(N.filter, s.includes(t) && N.activeFilter),
             onClick: () => {
               o(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },
@@ -335,7 +335,7 @@ function Z() {
       columns: T,
       data: Chunk594174,
       selectedRowKey: Chunk572004,
-      onClickRow: e => g(e.key)
+      onClickRow: e => b(e.key)
     }), null != Chunk257785 && (0, Chunk54381.jsxs)(Chunk484036.Z, {
       className: Chunk599832.subPanel,
       minHeight: 100,

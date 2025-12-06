@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 373274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => eb,
@@ -573,7 +573,7 @@ class ep extends(r = Chunk473749.PureComponent) {
               withMargin: l.length > 1
             }, ei.z.GUILD_PREMIUM_PROGRESS_BAR);
           case ei.z.GUILD_HOME:
-            return (0, i.jsx)(W.Z, {
+            return (0, i.jsx)(z.Z, {
               guild: r,
               selected: a === ea.oC.GUILD_HOME
             }, ei.z.GUILD_HOME);
@@ -602,7 +602,7 @@ class ep extends(r = Chunk473749.PureComponent) {
               guild: r
             });
           case ei.z.CHANNELS_AND_ROLES:
-            return (0, i.jsx)(z.m, {
+            return (0, i.jsx)(W.m, {
               guild: r,
               selected: a === ea.oC.CHANNEL_BROWSER || a === ea.oC.CUSTOMIZE_COMMUNITY
             }, ei.z.CHANNELS_AND_ROLES);
@@ -835,7 +835,7 @@ let eg = e => {
 };
 
 function em(e) {
-  let t = (0, M.o)(),
+  let t = (0, L.o)(),
     {
       isFavoritesPerk: n
     } = (0, y.z)("favorites-channel-list"),
@@ -852,7 +852,7 @@ function em(e) {
 
 function eb(e) {
   let t = (0, G.Z)(e.guild),
-    n = (0, u.cj)([L.Z], () => L.Z.getGuild(e.guildId, {
+    n = (0, u.cj)([M.Z], () => M.Z.getGuild(e.guildId, {
       guildActionRows: t
     })),
     {

@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 895182, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -58,7 +58,7 @@ function f() {
       return null == (t = Chunk60482.Z.getStateForGuild(module)) ? true : exports.instances
     }),
     f = Chunk473749.useMemo(() => Object.values(null != require ? require : {})[0], [require]),
-    b = Chunk473749.useCallback(t => {
+    g = Chunk473749.useCallback(t => {
       null != f && null != e && o.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: e,
@@ -67,13 +67,13 @@ function f() {
         })
       })
     }, [f, module]),
-    g = Chunk473749.useMemo(() => Object.values(Chunk660815.V).map(e => (0, a.jsx)(s.Button, {
+    b = Chunk473749.useMemo(() => Object.values(Chunk660815.V).map(e => (0, a.jsx)(s.Button, {
       variant: "primary",
       text: e,
       onClick: () => {
-        b(e)
+        g(e)
       }
-    }, e)), [b]),
+    }, e)), [g]),
     v = Chunk473749.useCallback(() => {
       null != f && null != module && Chunk570140.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
@@ -100,7 +100,7 @@ function f() {
         children: "Set server state for first server: ".concat(null == f ? true : f.name)
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk238642.buttonContainer,
-        children: g
+        children: b
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         children: "Remove Server Info"

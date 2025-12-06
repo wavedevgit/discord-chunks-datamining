@@ -1,7 +1,7 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 817466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => N
 });
 var Chunk780384 = require("./780384.js"),
   Chunk410030 = require("./410030.js"),
@@ -58,7 +58,7 @@ let S = {
       light: " #6881D4, #956CB8, #5491A0"
     }
   },
-  N = {
+  E = {
     [Chunk474936.VU.PREMIUM_TENURE_1_MONTH]: {
       dark: Chunk538092.Z,
       light: Chunk131664.Z
@@ -93,12 +93,12 @@ let S = {
     }
   };
 
-function E() {
+function N() {
   let e = (0, Chunk804413.Z)(),
     t = (0, Chunk780384.wj)((0, Chunk410030.ZP)());
   if (!module) return null;
   let n = S[module],
-    o = N[module],
+    o = E[module],
     c = {
       currentBadge: (0, Chunk291175.fv)(module),
       currentBadgeTextGradient: exports ? null == require ? true : require.dark : null == require ? true : require.light,

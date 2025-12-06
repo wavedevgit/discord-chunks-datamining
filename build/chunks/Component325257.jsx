@@ -1,7 +1,7 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 325257, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => L
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -73,7 +73,7 @@ let D = {
   }
 };
 
-function L(e, t) {
+function M(e, t) {
   (0, p.jW)(e, async () => {
     let {
       default: e
@@ -83,8 +83,8 @@ function L(e, t) {
     }))
   })
 }
-let M = Chunk473749.memo(function(e) {
-  var t, n, l, p, M;
+let L = Chunk473749.memo(function(e) {
+  var t, n, l, p, L;
   let {
     guildNode: k,
     setRef: G,
@@ -93,13 +93,13 @@ let M = Chunk473749.memo(function(e) {
     route: F,
     guild: V,
     animatable: H,
-    selected: z = false,
-    unread: W = false,
+    selected: W = false,
+    unread: z = false,
     mediaState: K,
     unavailable: Y = false,
     badge: q = 0,
     isMentionLowImportance: Q,
-    contextMenu: X = L,
+    contextMenu: X = M,
     draggable: J = false,
     sorting: $ = false,
     preloadOnClick: ee = true,
@@ -114,7 +114,7 @@ let M = Chunk473749.memo(function(e) {
   null == es && q > 0 ? es = null != (l = (0, N.Ne)(q, Q ? h.TVs.colors.BACKGROUND_ACCENT.css : h.TVs.colors.STATUS_DANGER.css)) ? l : true : null == es && null != et && (es = null != (p = (0, N.jt)({
     guildJoinRequestStatus: et
   })) ? p : true);
-  let ec = null != (M = e.lowerBadgeSize) ? M : {
+  let ec = null != (L = e.lowerBadgeSize) ? L : {
       width: (0, h.OVM)(q)
     },
     [{
@@ -176,7 +176,7 @@ let M = Chunk473749.memo(function(e) {
   let eN = e_ || em ? (0, r.jsx)(C.Z, {
       guild: V,
       show: e_,
-      active: z,
+      active: W,
       onAnimationStart: function() {
         eb(e_)
       },
@@ -200,11 +200,11 @@ let M = Chunk473749.memo(function(e) {
       onContextMenu: eC,
       onKeyDown: eE,
       icon: (0, y.EB)(V, 2 * eP, eg && H, true),
-      selected: z || eg
+      selected: W || eg
     }, eh), {
       "aria-setsize": er,
       "aria-posinset": ei,
-      "aria-selected": z
+      "aria-selected": W
     })),
     eZ = eu ? (0, r.jsx)(E.OG, {
       children: (0, r.jsx)(I.Z, {})
@@ -220,7 +220,7 @@ let M = Chunk473749.memo(function(e) {
       className: o()(T.blobContainer, {
         [T.sorting]: $,
         [T.wobble]: e_,
-        [T.selected]: e_ || z
+        [T.selected]: e_ || W
       }),
       children: (0, r.jsx)(h.aRk, {
         selected: true,
@@ -234,8 +234,8 @@ let M = Chunk473749.memo(function(e) {
     ref: eI,
     children: [(0, r.jsx)(x.Z, {
       hovered: !eu && eg,
-      selected: !eu && z,
-      unread: !eu && W,
+      selected: !eu && W,
+      unread: !eu && z,
       className: T.pill
     }), (0, r.jsx)(S.Z, {
       guild: V,

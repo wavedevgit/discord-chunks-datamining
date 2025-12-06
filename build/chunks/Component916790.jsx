@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 916790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -119,11 +119,11 @@ function R(e) {
   } = e, r = l.useMemo(() => t.error ? [...k, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(g.Z, {
+      children: [(0, a.jsx)(b.Z, {
         className: O.errorIcon
       }), "Error"]
     }),
-    group: N.v0.NONE,
+    group: E.v0.NONE,
     render(e) {
       let {
         actionLog: t
@@ -151,7 +151,7 @@ function R(e) {
   }] : k, [t]), {
     TabBar: s,
     renderSelectedTab: o
-  } = (0, N.ZP)({
+  } = (0, E.ZP)({
     tabs: r
   }, [r]);
   return (0, a.jsxs)(C.Z, {
@@ -174,7 +174,7 @@ function R(e) {
           var e;
           let n = JSON.stringify(Object.keys(e = t.action).reduce((t, n) => {
             var a;
-            return t[n] = (a = e[n], E.Jn9.test(a) ? "REDACTED" : a), t
+            return t[n] = (a = e[n], N.Jn9.test(a) ? "REDACTED" : a), t
           }, {}), null, 2);
           (0, v.JG)(n, () => (0, p.showToast)({
             id: "copy-action-log-name",
@@ -196,7 +196,7 @@ let A = [{
         actionLog: t
       } = e;
       return (0, a.jsxs)(a.Fragment, {
-        children: [t.error && (0, a.jsx)(g.Z, {
+        children: [t.error && (0, a.jsx)(b.Z, {
           className: O.errorIcon
         }), t.name]
       })
@@ -251,18 +251,18 @@ function D() {
     })).toReversed(), [Chunk120356]),
     [c, d] = Chunk473749.useState(Chunk299608),
     [m, x] = Chunk473749.useState(Chunk299608),
-    [f, g] = Chunk473749.useState(false),
+    [f, b] = Chunk473749.useState(false),
     [v, j] = Chunk473749.useState(),
     _ = Chunk473749.useCallback(e => {
       x(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk886118 ? Chunk913527 : Chunk299608, Chunk428530, Z);
   let y = Chunk473749.useCallback(e => {
-      d(s), g(e)
+      d(s), b(e)
     }, [Chunk299608]),
     C = exports.trim().length > 0,
-    N = Chunk473749.useMemo(() => Chunk484036 ? Chunk755721 : Chunk886118 ? Chunk913527 : Chunk299608, [Chunk299608, Chunk755721, Chunk484036, Chunk886118, Chunk913527]),
-    E = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
+    E = Chunk473749.useMemo(() => Chunk484036 ? Chunk755721 : Chunk886118 ? Chunk913527 : Chunk299608, [Chunk299608, Chunk755721, Chunk484036, Chunk886118, Chunk913527]),
+    N = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
     className: i()(Chunk451429.panel, Chunk687278.panel),

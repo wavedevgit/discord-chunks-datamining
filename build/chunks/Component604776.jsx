@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 604776, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   D: () => j,
@@ -37,7 +37,7 @@ let v = {
       onDelete: r
     } = e, s = e => null != e ? (0, m.vc)(e, "LLL") : "---";
     return (0, a.jsxs)("div", {
-      className: i()(f.card, l ? b.gradientWrapperTier2 : ""),
+      className: i()(f.card, l ? g.gradientWrapperTier2 : ""),
       children: [(0, a.jsxs)(d.Text, {
         variant: "text-md/normal",
         children: ["ID: ", n.id, " "]
@@ -82,8 +82,8 @@ let v = {
 function y() {
   let [e, t] = Chunk473749.useState(false), [n, r] = Chunk473749.useState(Chunk314794.a.PREMIUM_TIER_2_1_HOUR), [m, v] = Chunk473749.useState([]), [y, C] = Chunk473749.useState([]), {
     refreshEntitlementList: S,
-    grantFractionalPremium: N,
-    deleteFractionalPremium: E,
+    grantFractionalPremium: E,
+    deleteFractionalPremium: N,
     triggerNextEntitlementFulfillment: O,
     entitlements: T,
     loading: P
@@ -152,7 +152,7 @@ function y() {
         }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Grant Fractional Nitro",
-          onClick: () => N(require)
+          onClick: () => E(require)
         })]
       }), (0, Chunk54381.jsxs)("section", {
         className: Chunk696450.section,
@@ -181,7 +181,7 @@ function y() {
               size: Chunk755721.zx.Sizes.TINY,
               color: Chunk755721.zx.Colors.RED,
               look: Chunk755721.zx.Looks.OUTLINED,
-              onClick: () => E(),
+              onClick: () => N(),
               children: "Delete all"
             }), (0, Chunk54381.jsx)(Chunk755721.zx, {
               disabled: P,
@@ -208,7 +208,7 @@ function y() {
             children: Chunk55935.map(e => (0, a.jsx)(j, {
               entitlement: e,
               active: true,
-              onDelete: () => E(e.id)
+              onDelete: () => N(e.id)
             }, e.id))
           })]
         }), y.length > 0 && (0, Chunk54381.jsxs)("div", {

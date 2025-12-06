@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 958328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -26,15 +26,15 @@ function v(e) {
     title: t,
     can: n
   } = e, l = n ? o.dz2 : o.Dio, i = (0, a.jsx)("div", {
-    className: r()(b.iconOuter, n ? b.iconCheck : b.iconCross),
+    className: r()(g.iconOuter, n ? g.iconCheck : g.iconCross),
     children: (0, a.jsx)(l, {
-      className: b.icon
+      className: g.icon
     })
   });
   return (0, a.jsxs)("div", {
-    className: b.scope,
+    className: g.scope,
     children: [i, (0, a.jsx)("div", {
-      className: b.scopeInner,
+      className: g.scopeInner,
       children: (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         children: t
@@ -53,7 +53,7 @@ function j() {
     y = (0, Chunk933557.ZP)(require, true),
     C = null != require ? (0, Chunk71080.IG)(require, false) : null,
     S = null != Chunk120356 ? Chunk233608.Z.getGuildPermissionSpecMap(Chunk120356) : null,
-    N = Object.values(null != C ? C : {}).map(e => {
+    E = Object.values(null != C ? C : {}).map(e => {
       let {
         title: t,
         flag: n
@@ -63,7 +63,7 @@ function j() {
         can: l
       }, t)
     }),
-    E = Object.values(null != S ? S : {}).map(e => {
+    N = Object.values(null != S ? S : {}).map(e => {
       let {
         title: t,
         flag: n
@@ -82,13 +82,13 @@ function j() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: null != y ? "Permissions in ".concat(y) : "No channel selected"
-        }), N]
+        }), E]
       }), (0, Chunk54381.jsxs)("section", {
         className: Chunk989295.section,
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: null != Chunk120356 ? "Permissions in ".concat(Chunk120356.name) : "No guild selected"
-        }), E]
+        }), N]
       })]
     })
   })

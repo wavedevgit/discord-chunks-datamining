@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 311583, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -24,8 +24,8 @@ let x = e => {
       onClick: u,
       icon: x,
       prioritizedCurrency: f,
-      onClickAnalytics: b
-    } = e, g = (0, s.Nd)(), v = null == g ? true : g.tab, j = (0, i.sp)(), _ = (0, m.J)(t, f), y = (0, d.J7)(t, r.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, b);
+      onClickAnalytics: g
+    } = e, b = (0, s.Nd)(), v = null == b ? true : b.tab, j = (0, i.sp)(), _ = (0, m.J)(t, f), y = (0, d.J7)(t, r.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, g);
     return null != u || null != x ? (0, a.jsx)(l.hU, {
       variant: "primary",
       "aria-label": h.intl.string(h.t.SKNnqq),

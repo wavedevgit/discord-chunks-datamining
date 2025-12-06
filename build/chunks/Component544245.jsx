@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 544245, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -33,8 +33,8 @@ function p() {
     h = m.useField("includeUserSearchWorkerState"),
     x = m.useField("isUploading"),
     f = m.useField("isSuccess"),
-    b = m.useField("errorMessage"),
-    g = Chunk473749.useCallback(async () => {
+    g = m.useField("errorMessage"),
+    b = Chunk473749.useCallback(async () => {
       let {
         includeFrecency: e,
         includeFriends: t,
@@ -112,8 +112,8 @@ function p() {
     }), (0, Chunk54381.jsx)(Chunk608934.a, {
       isUploading: x,
       isSuccess: f,
-      errorMessage: b,
-      onClick: g,
+      errorMessage: g,
+      onClick: b,
       title: "Upload Snapshot Logs"
     })]
   })

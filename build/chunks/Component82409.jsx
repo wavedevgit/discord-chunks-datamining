@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 82409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -40,7 +40,7 @@ var Chunk315174 = require("./315174.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk567133 = require("./567133.js");
 
-function M(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -98,14 +98,14 @@ function U(e) {
     })
   }, [c, a]), {
     hasLoadedEver: B,
-    canLoadMore: W
+    canLoadMore: z
   } = (0, s.cj)([S.Z], () => ({
     hasLoadedEver: S.Z.hasLoadedEver,
     canLoadMore: S.Z.canLoadMore({})
   }));
   i.useEffect(() => {
-      W && !B && U(A.X.ON_OPEN)
-    }, [W, B, U]),
+      z && !B && U(A.X.ON_OPEN)
+    }, [z, B, U]),
     function(e) {
       let {
         unreadChannelIds: t
@@ -204,12 +204,12 @@ function U(e) {
     location: "NotificationsInboxSidebar"
   }), $ = X === j.v8.DROPDOWN && c !== A.V5.ALL, ee = (0, A.H_)(c);
   return (0, r.jsx)("nav", {
-    className: o()(L.container, {
-      [L.panelSpacing]: l
+    className: o()(M.container, {
+      [M.panelSpacing]: l
     }),
     children: (0, r.jsxs)(u.y5t, {
       forceLevel: 1,
-      component: (0, r.jsx)(p.ZP, (t = M({
+      component: (0, r.jsx)(p.ZP, (t = L({
         hasSubheader: true,
         guild: ee
       }, G), n = n = {
@@ -231,12 +231,12 @@ function U(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      children: [c === A.V5.ALL && (0, r.jsx)(z, {
+      children: [c === A.V5.ALL && (0, r.jsx)(W, {
         hideBanner: !B || c !== A.V5.ALL
       }), $ && (0, r.jsx)(u.LZC, {
         size: 8
       }), (0, r.jsx)(T.Z, {
-        className: L.messageList,
+        className: M.messageList,
         renderMessageGroup: H,
         messages: c === A.V5.BOOKMARKS ? Y : q,
         unreadMessages: c === A.V5.BOOKMARKS ? [] : Q,
@@ -251,7 +251,7 @@ function U(e) {
 
 function B(e) {
   return (0, r.jsx)(C.HP, {
-    children: (0, r.jsx)(U, M({}, e))
+    children: (0, r.jsx)(U, L({}, e))
   })
 }
 
@@ -276,20 +276,20 @@ function H(e, t) {
   }, e[0].id)
 }
 
-function z(e) {
+function W(e) {
   let {
     hideBanner: t
   } = e, n = (0, P.d)(e => e.shouldHide());
   return (0, r.jsx)("div", {
-    className: o()(L.caughtUpContainer, {
-      [L.hide]: n || t
+    className: o()(M.caughtUpContainer, {
+      [M.hide]: n || t
     }),
     children: (0, r.jsxs)("div", {
-      className: L.caughtUpContent,
+      className: M.caughtUpContent,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-sm/medium",
         color: "text-feedback-positive",
-        className: L.caughtUpText,
+        className: M.caughtUpText,
         children: D.intl.string(D.t["6XMM+D"])
       }), (0, r.jsx)(u.W6s, {
         size: "sm",

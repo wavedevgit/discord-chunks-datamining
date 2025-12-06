@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 301342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => w,
@@ -84,7 +84,7 @@ let N = Chunk473749.memo(function(e) {
     let D = i.useCallback(() => {
         A ? (0, f.mJ)(l.id) : (0, f.c4)(l.id)
       }, [l.id, A]),
-      L = i.useCallback(e => {
+      M = i.useCallback(e => {
         if ("null" !== l.id) {
           let t = _.Z.getGuild(l.getGuildId());
           null != t && (0, p.jW)(e, async () => {
@@ -98,7 +98,7 @@ let N = Chunk473749.memo(function(e) {
           })
         }
       }, [l]),
-      M = i.useCallback(() => {
+      L = i.useCallback(() => {
         let e = l.type === x.d4z.GUILD_CATEGORY ? null : l.type,
           t = l.getGuildId();
         null != t && (0, h.ZDy)(async () => {
@@ -151,7 +151,7 @@ let N = Chunk473749.memo(function(e) {
               [E.muted]: T,
               [E.clickable]: true
             }),
-            onContextMenu: L,
+            onContextMenu: M,
             children: [(0, r.jsxs)(h.P3F, I(S({
               innerRef: F,
               className: E.mainContent,
@@ -182,7 +182,7 @@ let N = Chunk473749.memo(function(e) {
                 text: C.intl.string(C.t["fUYU+j"]),
                 children: (0, r.jsx)(h.P3F, {
                   className: o()(E.addButton, E.forceVisible),
-                  onClick: M,
+                  onClick: L,
                   tabIndex: U,
                   role: "button",
                   "aria-label": C.intl.string(C.t["fUYU+j"]),

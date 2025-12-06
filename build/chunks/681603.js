@@ -52,21 +52,21 @@ class E extends Chunk473749.Component {
       postableChannelCount: s
     } = this.props;
     if (null != t && (t !== e.selectedGuild || i && !e.isMemberPending)) {
-      var u, p;
+      var u, h;
       (0, c.Q)(v.rMx.GUILD_VIEWED, (u = O({}, i ? {
         is_pending: i,
         preview_enabled: r
-      } : {}), p = p = {
+      } : {}), h = h = {
         postable_channels: s
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var i = Object.getOwnPropertySymbols(e);
           n.push.apply(n, i)
         }
         return n
-      })(Object(p)).forEach(function(e) {
-        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(p, e))
+      })(Object(h)).forEach(function(e) {
+        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(h, e))
       }), u)), (0, a.a)(v.rMx.GUILD_VIEWED_CLICKSTREAM, {
         guildId: t
       })

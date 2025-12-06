@@ -1,7 +1,7 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => R
+  Z: () => L
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,8 +19,11 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk306680 = require("./306680.js"),
   Chunk944486 = require("./944486.js"),
   Chunk594174 = require("./594174.js"),
+  Chunk938475 = require("./938475.js"),
   Chunk451478 = require("./451478.js"),
+  Chunk37411 = require("./37411.js"),
   Chunk276952 = require("./276952.jsx"),
+  Chunk455172 = require("./455172.jsx"),
   Chunk682662 = require("./682662.jsx"),
   Chunk662146 = require("./662146.jsx"),
   Chunk674552 = require("./674552.jsx"),
@@ -28,7 +31,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk514483 = require("./514483.js");
 
-function P(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,20 +40,20 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
 }
 
-function Z(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,35 +65,35 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = {
+let R = {
   friction: 28,
   tension: 600
 };
 
-function T(e) {
+function D(e) {
   switch (e) {
     case "height":
     case "opacity":
-      return N({
+      return T({
         duration: 150
-      }, w);
+      }, R);
     case "scale":
-      return N({}, w);
+      return T({}, R);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
 }
-class A extends(r = Chunk473749.PureComponent) {
+class M extends(r = Chunk473749.PureComponent) {
   componentWillEnter(e) {
     let {
       controller: t
     } = this.state;
     e(), t.update({
-      immediate: !O.Z.isFocused(),
+      immediate: !v.Z.isFocused(),
       height: 1,
       opacity: 1,
       scale: 1,
-      config: T
+      config: D
     }).start().then(() => this.setState({
       animating: false
     }))
@@ -104,7 +107,7 @@ class A extends(r = Chunk473749.PureComponent) {
       scale: 1,
       opacity: 1,
       height: 1,
-      config: T
+      config: D
     }).start().then(e)
   }
   componentWillLeave(e) {
@@ -114,11 +117,11 @@ class A extends(r = Chunk473749.PureComponent) {
     this.setState({
       animating: true
     }, () => t.update({
-      immediate: !O.Z.isFocused(),
+      immediate: !v.Z.isFocused(),
       height: 0,
       opacity: 0,
       scale: 0,
-      config: T
+      config: D
     }).start().then(e))
   }
   componentWillUnmount() {
@@ -157,11 +160,12 @@ class A extends(r = Chunk473749.PureComponent) {
       stream: s,
       isCurrentUserInThisDMCall: u,
       unread: d,
-      treeItemProps: h
+      treeItemProps: h,
+      statusIndicatorsEnabled: f
     } = this.props, {
-      hovered: f,
-      animating: g
-    } = this.state, m = module.isMultiUserDM() && null == module.icon, b = () => (0, Chunk54381.jsx)(Chunk481060.LYs, N({
+      hovered: g,
+      animating: m
+    } = this.state, b = module.isMultiUserDM() && null == module.icon, _ = () => (0, Chunk54381.jsx)(Chunk481060.LYs, T({
       to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
       onMouseEnter: () => this.setState({
         hovered: true
@@ -169,70 +173,73 @@ class A extends(r = Chunk473749.PureComponent) {
       onMouseLeave: () => this.setState({
         hovered: false
       }),
-      selected: require || Chunk933557,
+      selected: require || Chunk199902,
       ariaLabel: null != exports ? Chunk388032.intl.formatToPlainString(Chunk388032.t.hKarnZ, {
         mentions: r,
         name: exports
       }) : "",
       onContextMenu: this.handleContextMenu,
-      icon: Chunk19780 ? true : this.getChannelIcon(),
-      backgroundStyle: Chunk19780 ? "on-hover" : "always",
-      children: Chunk19780 ? (0, Chunk54381.jsx)(Chunk266076.Z, {
+      icon: Chunk306680 ? true : this.getChannelIcon(),
+      backgroundStyle: Chunk306680 ? "on-hover" : "always",
+      children: Chunk306680 ? (0, Chunk54381.jsx)(Chunk266076.Z, {
         channel: module,
         size: Chunk481060.EFr.SIZE_40,
         facepileSizeOverride: Chunk481060.EFr.SIZE_32,
         "aria-hidden": true
       }) : true
-    }, Chunk43267));
+    }, Chunk43267)), y = (0, Chunk54381.jsx)(Chunk481060.aRk, {
+      rounded: true,
+      selected: false,
+      lowerBadge: r > 0 ? (0, Chunk674552.Ne)(r, true, true) : null,
+      upperBadge: (0, Chunk674552.Or)({
+        audio: Chunk473749,
+        video: Chunk91192,
+        screenshare: Chunk442837,
+        isCurrentUserConnected: Chunk239091
+      }),
+      lowerBadgeSize: {
+        width: (0, Chunk481060.OVM)(r)
+      },
+      children: Chunk944486()
+    }), O = Chunk933557 ? (0, Chunk54381.jsx)(Chunk455172.Z, {
+      channel: module,
+      children: Chunk594174
+    }) : (0, Chunk54381.jsx)(Chunk662146.Z, {
+      text: null != exports ? exports : "",
+      selected: require,
+      children: Chunk594174
+    });
     return (0, Chunk54381.jsx)(Chunk205120.animated.div, {
       style: this.getAnimatedStyle(),
       children: (0, Chunk54381.jsxs)(Chunk682662.H, {
         children: [(0, Chunk54381.jsx)(Chunk276952.Z, {
-          hovered: !Chunk199902 && Chunk933557,
-          selected: !Chunk199902 && require,
-          unread: !Chunk199902 && Chunk358221,
+          hovered: !Chunk19780 && Chunk199902,
+          selected: !Chunk19780 && require,
+          unread: !Chunk19780 && Chunk358221,
           className: Chunk514483.pill
-        }), (0, Chunk54381.jsx)(Chunk662146.Z, {
-          text: null != exports ? exports : "",
-          selected: require,
-          children: (0, Chunk54381.jsx)(Chunk481060.aRk, {
-            rounded: true,
-            selected: false,
-            lowerBadge: r > 0 ? (0, Chunk674552.Ne)(r, true, true) : null,
-            upperBadge: (0, Chunk674552.Or)({
-              audio: Chunk473749,
-              video: Chunk91192,
-              screenshare: Chunk442837,
-              isCurrentUserConnected: Chunk239091
-            }),
-            lowerBadgeSize: {
-              width: (0, Chunk481060.OVM)(r)
-            },
-            children: Chunk306680()
-          })
-        })]
+        }), Chunk938475]
       })
     })
   }
   constructor(...e) {
-    super(...e), P(this, "state", {
+    super(...e), w(this, "state", {
       hovered: false,
       animating: true,
       controller: new o.Controller({
         scale: 0,
         height: 0,
         opacity: 0,
-        config: T
+        config: D
       })
-    }), P(this, "handleContextMenu", e => {
+    }), w(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === E.d4z.DM ? y.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === P.d4z.DM ? y.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, Z(N({}, n), {
+        return n => (0, i.jsx)(e, A(T({}, n), {
           channel: t,
           user: r
         }))
@@ -240,7 +247,7 @@ class A extends(r = Chunk473749.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("25421")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, Z(N({}, n), {
+        return n => (0, i.jsx)(e, A(T({}, n), {
           channel: t,
           selected: false
         }))
@@ -248,37 +255,44 @@ class A extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-P(A, "defaultProps", {
+w(M, "defaultProps", {
   badge: 0,
   audio: false,
   video: false,
   isCurrentUserInThisDMCall: false
 });
-let R = Chunk473749.forwardRef(function(e, t) {
+let L = Chunk473749.forwardRef(function(e, t) {
   let n = e.channel.id,
     r = (0, f.ZP)(e.channel),
     l = (0, a.Ie)(n, 2),
     o = (0, s.e7)([m.Z], () => m.Z.getChannelId(), []),
-    u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : E.WtW.VOICE, [o]),
+    u = (0, s.e7)([d.Z], () => d.Z.getMode(n), [n]),
     h = (0, s.e7)([g.Z], () => g.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    p = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
-    y = (0, s.e7)([b.ZP], () => b.ZP.getMentionCount(n), [n]),
-    O = o === n,
-    v = false,
-    j = false;
-  O && (v = u === E.WtW.VOICE, j = u === E.WtW.VIDEO);
-  let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(A, Z(N({}, e), {
+    p = (0, s.e7)([O.ZP], () => O.ZP.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
+    y = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
+    v = (0, s.e7)([b.ZP], () => b.ZP.getMentionCount(n), [n]),
+    {
+      enabled: x
+    } = (0, j.p)({
+      location: "DirectMessage"
+    }),
+    C = o === n,
+    E = false,
+    S = false;
+  (C || x && p) && (E = u === P.WtW.VOICE, S = u === P.WtW.VIDEO);
+  let I = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
+  return (0, i.jsx)(M, A(T({}, e), {
     ref: t,
     channelName: r,
-    unread: y > 0,
-    selected: p === n,
-    badge: y,
-    audio: v,
-    video: j,
+    unread: v > 0,
+    selected: y === n,
+    badge: v,
+    audio: E,
+    video: S,
     stream: h,
-    isCurrentUserInThisDMCall: O,
-    size: x,
-    treeItemProps: l
+    isCurrentUserInThisDMCall: C,
+    size: I,
+    treeItemProps: l,
+    statusIndicatorsEnabled: x
   }))
 })

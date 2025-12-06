@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => x,
-  wB: () => _
+  wB: () => m
 }), require("./415506.js");
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,13 +25,13 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 let g = Chunk981631.t_t.DEFAULT,
-  _ = 1,
-  m = Chunk473749.createContext({
+  m = 1,
+  y = Chunk473749.createContext({
     type: g,
-    opacity: _
+    opacity: m
   }),
-  y = Chunk473749.createContext(true),
-  b = e => {
+  b = Chunk473749.createContext(true),
+  _ = e => {
     var {
       children: t,
       className: n
@@ -50,12 +50,12 @@ let g = Chunk981631.t_t.DEFAULT,
       }
       return r
     }(e, ["children", "className"]);
-    return (0, r.jsx)(m.Consumer, {
+    return (0, r.jsx)(y.Consumer, {
       children: e => {
         let {
           type: s
         } = e;
-        return (0, r.jsx)(y.Consumer, {
+        return (0, r.jsx)(b.Consumer, {
           children: e => {
             var o, a;
             return (0, r.jsx)("div", (o = function(e) {
@@ -70,7 +70,7 @@ let g = Chunk981631.t_t.DEFAULT,
               }
               return e
             }({
-              className: l()(h.bar, h[c()(s)], n),
+              className: l()(p.bar, p[c()(s)], n),
               style: e
             }, i), a = a = {
               children: t
@@ -96,10 +96,10 @@ class v extends(i = Chunk473749.PureComponent) {
       children: t,
       className: n
     } = this.props;
-    return (0, Chunk54381.jsx)(y.Consumer, {
-      children: i => (0, r.jsx)(m.Consumer, {
+    return (0, Chunk54381.jsx)(b.Consumer, {
+      children: i => (0, r.jsx)(y.Consumer, {
         children: s => {
-          let o = l()(h.body, h[c()(s.type)], n);
+          let o = l()(p.body, p[c()(s.type)], n);
           return e ? (0, r.jsx)("div", {
             className: o,
             style: i,
@@ -124,16 +124,16 @@ let O = e => {
       height: i,
       children: s,
       className: o,
-      opacity: a = _,
+      opacity: a = m,
       onClick: d
     } = e;
-    return (0, r.jsx)(m.Provider, {
+    return (0, r.jsx)(y.Provider, {
       value: {
         type: t,
         opacity: a
       },
       children: (0, r.jsx)("div", {
-        className: l()(h.widget, h[c()(t)], o),
+        className: l()(p.widget, p[c()(t)], o),
         style: {
           width: n,
           height: i
@@ -149,10 +149,10 @@ let O = e => {
       className: n,
       dynamicSize: i = false
     } = e;
-    return (0, r.jsx)(y.Consumer, {
+    return (0, r.jsx)(b.Consumer, {
       children: e => (0, r.jsx)("div", {
-        className: l()(h.content, {
-          [h.staticSize]: !i
+        className: l()(p.content, {
+          [p.staticSize]: !i
         }, n),
         style: e,
         children: t
@@ -165,8 +165,8 @@ O.Background = e => {
     opacityOverride: n
   } = e;
   if (null == t) return null;
-  let i = [b, v, E];
-  return (0, r.jsx)(m.Consumer, {
+  let i = [_, v, E];
+  return (0, r.jsx)(y.Consumer, {
     children: e => {
       let {
         opacity: o
@@ -177,7 +177,7 @@ O.Background = e => {
         style: l
       });
       {
-        if (i.includes(t.type)) return (0, r.jsx)(y.Provider, {
+        if (i.includes(t.type)) return (0, r.jsx)(b.Provider, {
           value: l,
           children: t
         });
@@ -195,11 +195,11 @@ O.Background = e => {
     tooltipPosition: o = "top",
     isTutorial: a = false,
     isActive: c,
-    size: p = 20
+    size: h = 20
   } = e;
   return (0, r.jsx)(d.u, {
     __unsupportedReactNodeAsText: a ? (0, r.jsx)("div", {
-      className: h.tutorialTip,
+      className: p.tutorialTip,
       children: i
     }) : i,
     "aria-label": i,
@@ -207,19 +207,19 @@ O.Background = e => {
     forceOpen: a,
     children: (0, r.jsx)(u.P3F, {
       onClick: s,
-      className: l()(h.icon, {
-        [h.toggledIconOn]: c
+      className: l()(p.icon, {
+        [p.toggledIconOn]: c
       }),
       innerRef: t,
       "aria-label": i,
       children: (0, r.jsx)(n, {
         color: "currentColor",
         size: "custom",
-        width: p,
-        height: p,
+        width: h,
+        height: h,
         role: "img"
       })
     })
   })
-}, O.Bar = b;
+}, O.Bar = _;
 let x = O

@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 315174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => D,
@@ -294,7 +294,7 @@ let D = Chunk473749.memo(function(e) {
     headerClassName: w,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, M = j.features.has(v.GuildFeatures.ANIMATED_BANNER), k = (0, h.Z)(j), G = !k && (0, y.Z)(j), U = !k && A, B = (0, _.xR)(x) && M && !g, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
+  } = e, L = j.features.has(v.GuildFeatures.ANIMATED_BANNER), k = (0, h.Z)(j), G = !k && (0, y.Z)(j), U = !k && A, B = (0, _.xR)(x) && L && !g, [F, V] = i.useState(false), H = i.useRef(false), W = i.useRef(null), z = null != t ? t : W, K = i.useRef(true), Y = m.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !H.current && Y) return V(true), K.current = setTimeout(() => {
       V(false)
@@ -321,7 +321,7 @@ let D = Chunk473749.memo(function(e) {
       onContextMenu: u,
       ariaControls: O,
       ariaExpanded: b,
-      guildHeaderRef: W
+      guildHeaderRef: z
     };
   return (0, r.jsx)(d.f6W, {
     theme: n ? v.BRd.DARK : true,
@@ -329,7 +329,7 @@ let D = Chunk473749.memo(function(e) {
       children: [(0, r.jsxs)("div", {
         "data-has-banner": q(),
         "data-banner-visible": n,
-        ref: W,
+        ref: z,
         className: o()(a, {
           [C.container]: true,
           [C.clickable]: !Q.isGuildEntrypointEnabled && null != c,
@@ -365,7 +365,7 @@ let D = Chunk473749.memo(function(e) {
           controller: l,
           guildBanner: x,
           animate: F
-        }) : null, (0, r.jsx)(L, {
+        }) : null, (0, r.jsx)(M, {
           controller: l
         })]
       }), B && q() ? (0, r.jsx)("div", {
@@ -382,7 +382,7 @@ let D = Chunk473749.memo(function(e) {
   })
 });
 
-function L(e) {
+function M(e) {
   let {
     controller: t
   } = e, {

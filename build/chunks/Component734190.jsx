@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -67,7 +67,7 @@ function D(e, t) {
   }), e
 }
 
-function L(e) {
+function M(e) {
   let {
     style: t,
     withGuildIcon: n,
@@ -131,7 +131,7 @@ function L(e) {
   }
 }
 
-function M(e) {
+function L(e) {
   let {
     thread: t
   } = e, n = i.useMemo(() => {
@@ -170,7 +170,7 @@ let k = Chunk473749.memo(function(e) {
     isMentionLowImportance: y.ZP.getIsMentionLowImportance(t.id)
   })), V = (0, s.e7)([m.Z], () => m.Z.isMuted(t.id)), H = (0, x.p)({
     location: "GuildSidebarThreadListEntry"
-  }), z = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), W = i.useCallback(e => {
+  }), W = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), z = i.useCallback(e => {
     (0, b.ok)(t, !e.shiftKey, N.on.CHANNEL_LIST)
   }, [t]), K = i.useCallback(() => {
     h.Z.preload(t.guild_id, t.id)
@@ -213,9 +213,9 @@ let k = Chunk473749.memo(function(e) {
     className: o()(w.containerDefault, {
       [w.selected]: l
     }),
-    children: [(0, r.jsx)(L, {
+    children: [(0, r.jsx)(M, {
       withGuildIcon: A
-    }), g ? null : (0, r.jsx)(L, {
+    }), g ? null : (0, r.jsx)(M, {
       withGuildIcon: A,
       inverted: true,
       style: {
@@ -246,7 +246,7 @@ let k = Chunk473749.memo(function(e) {
         }), (0, r.jsx)(d.P3F, D(R({}, J), {
           innerRef: $,
           className: T.link,
-          onClick: W,
+          onClick: z,
           "aria-label": ee,
           focusProps: {
             enabled: false
@@ -255,13 +255,13 @@ let k = Chunk473749.memo(function(e) {
             className: o()(T.linkTop, T.__invalid_threadMainContent),
             children: ["icon-with-avatar" === H.variant ? (0, r.jsxs)("div", {
               className: T.threadIconWithAvatar,
-              children: [(0, r.jsx)(M, {
+              children: [(0, r.jsx)(L, {
                 thread: t
-              }), null == z ? null : (0, r.jsx)(p.Z, {
-                user: z,
+              }), null == W ? null : (0, r.jsx)(p.Z, {
+                user: W,
                 size: d.EFr.SIZE_16
               })]
-            }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(M, {
+            }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(L, {
               thread: t
             }) : null, (0, r.jsx)(c.Z, {
               className: T.name,

@@ -68,7 +68,7 @@ function T(e) {
         return "Linux"
     }
     return ""
-  }((0, S.getOS)())), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ep] = r.useState(false), [ev, ef] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
+  }((0, S.getOS)())), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ep] = r.useState(false), [ef, ev] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -78,8 +78,8 @@ function T(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "94f1619714c2c0737e1511bf97948cdc8caed281" !== e.body.hash) {
-        let e = new Date("1765012018804"),
+      if (null != e.body && "429f839f1ea33e7d3f24bf52413a7622f08310cf" !== e.body.hash) {
+        let e = new Date("1765012106330"),
           t = new Date,
           n = (0, O.TD)(t, e);
         n.hours > 6 && eb(n.hours)
@@ -90,9 +90,9 @@ function T(e) {
       let e = j.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
-    ej = (0, a.e7)([v.C], () => {
+    ej = (0, a.e7)([f.C], () => {
       var e;
-      return null == (e = v.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
+      return null == (e = f.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
     }),
     {
       overridesInfo: e_
@@ -113,7 +113,7 @@ function T(e) {
     var e, t;
     if (eg(false), "" === Z || "" === B || null == H) return void ep(true);
     let r = null == X || null == (e = X.features) ? true : e.find(e => (0, w.pD)(e) === K);
-    ef(true), ep(false);
+    ev(true), ep(false);
     let l = (0, P.D)(U.map(e => {
         let {
           item: t
@@ -139,7 +139,7 @@ function T(e) {
       } : {
         overridePlatformInformation: Q
       }, l).catch(() => eg(true));
-    ef(false), null != a && a.ok ? (ey && window.open(a.body.permalink_url, "_blank"), A(), (0, d.ZDy)(async () => {
+    ev(false), null != a && a.ok ? (ey && window.open(a.body.permalink_url, "_blank"), A(), (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
@@ -199,7 +199,7 @@ function T(e) {
     }, {
       variant: "primary",
       text: ey ? "Submit and Open Report" : "Submit Report",
-      loading: ev,
+      loading: ef,
       onClick: ew,
       autoFocus: false
     }],
@@ -399,7 +399,7 @@ function T(e) {
                 }), (0, i.jsx)("div", {
                   className: k.removeAttachment,
                   children: (0, i.jsx)(x.ZP, {
-                    children: (0, i.jsx)(f.Z, {
+                    children: (0, i.jsx)(v.Z, {
                       tooltip: C.intl.string(C.t.vN7REz),
                       onClick: () => {
                         var t;

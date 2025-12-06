@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 940777, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -66,7 +66,7 @@ function R() {
       favoriteAdded: R,
       clearFavoriteAdded: D
     } = (0, Chunk593214.up)(),
-    [L, M] = Chunk473749.useState(false),
+    [M, L] = Chunk473749.useState(false),
     {
       favoriteServerMuted: k,
       favoriteChannels: G
@@ -81,7 +81,7 @@ function R() {
       badge: V,
       unread: H
     } = (0, Chunk919755.Z)(G),
-    z = function(e) {
+    W = function(e) {
       let t = (0, s.e7)([v.Z], () => v.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
         r = (0, s.e7)([y.Z], () => {
@@ -112,14 +112,14 @@ function R() {
         activity: g
       })
     }(G),
-    W = V > 0 ? (0, Chunk593364.N)(V) : null,
+    z = V > 0 ? (0, Chunk593364.N)(V) : null,
     K = Chunk473749.useCallback(() => {
       D()
     }, [D]);
   return (0, Chunk54381.jsxs)(Chunk682662.H, {
     children: [(0, Chunk54381.jsx)(Chunk276952.Z, {
       selected: F,
-      hovered: L,
+      hovered: M,
       unread: H && !k,
       className: Chunk499951.pill
     }), (0, Chunk54381.jsx)(Chunk603274.Z, {
@@ -127,8 +127,8 @@ function R() {
       children: (0, Chunk54381.jsx)(Chunk110977.S, {
         children: (0, Chunk54381.jsx)(Chunk481060.aRk, {
           selected: true,
-          upperBadge: z,
-          lowerBadge: W,
+          upperBadge: W,
+          lowerBadge: z,
           children: (0, Chunk54381.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
             ariaLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["/uzRss"], {
               guildName: Chunk388032.intl.string(Chunk388032.t.wMWyci),
@@ -139,9 +139,9 @@ function R() {
               pathname: Chunk981631.Z5c.CHANNEL(Chunk981631.I_8, U),
               state: A
             },
-            selected: F || L,
-            onMouseEnter: () => M(true),
-            onMouseLeave: () => M(false),
+            selected: F || M,
+            onMouseEnter: () => L(true),
+            onMouseLeave: () => L(false),
             onMouseDown: function() {
               null != B && Chunk493683.Z.preload(B.guild_id, B.id)
             },

@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 58755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => _
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk500949 = require("./500949.js"),
   Chunk416825 = require("./416825.js");
 
-function b(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function g(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -86,7 +86,7 @@ function _(e) {
           easing: x.iw.LINEAR,
           easingStrength: 1,
           steps: 26
-        }, n(g(b({}, t), {
+        }, n(b(g({}, t), {
           scales: [...t.scales, a]
         })))
       },
@@ -101,7 +101,7 @@ function _(e) {
           },
           children: (0, a.jsx)(C, {
             scale: e,
-            onRemove: () => n(g(b({}, t), {
+            onRemove: () => n(b(g({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
             }))
           })
@@ -126,13 +126,13 @@ function y(e) {
   } = e, {
     name: c,
     base: d,
-    lightness: b,
-    showColumnarPalettePreview: g,
+    lightness: g,
+    showColumnarPalettePreview: b,
     colorSpace: j,
     easingStrength: _ = 1,
     useP3ColorSpace: y,
     steps: C = 26
-  } = t, N = (0, x.XM)(t), E = (0, x.W6)(N, c);
+  } = t, E = (0, x.XM)(t), N = (0, x.W6)(E, c);
   return (0, a.jsxs)(m.Kqy, {
     gap: 20,
     children: [(0, a.jsxs)("div", {
@@ -150,7 +150,7 @@ function y(e) {
         children: c
       }), (0, a.jsx)(m.P3F, {
         onClick: function() {
-          let e = Object.entries(N).reduce((e, t) => {
+          let e = Object.entries(E).reduce((e, t) => {
             let [n, a] = t;
             return e[n] = {
               value: (0, r.Z)((0, i.Z)(a, x.HW.sRGB), {
@@ -185,7 +185,7 @@ function y(e) {
       label: "Lighten",
       description: "Decrease the darkness of the darkest color in the palette. Increasing this makes the darker colors in the palette lighter.",
       onValueRender: () => null,
-      initialValue: b,
+      initialValue: g,
       stickToMarkers: true,
       markers: Array.from({
         length: 21
@@ -219,7 +219,7 @@ function y(e) {
     }), (0, a.jsx)(m.rsf, {
       label: "Show columnar palette preview",
       description: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-      checked: g,
+      checked: b,
       onChange: e => (0, x.KB)(c, e, n)
     }), (0, a.jsx)(m.rsf, {
       label: "Use P3 Color Space",
@@ -243,22 +243,22 @@ function y(e) {
         children: "Palette Preview"
       }), (0, a.jsx)("div", {
         className: f.paletteOverrides,
-        "data-columnar": g,
-        children: Object.entries(N).map((e, n) => {
-          let [l, c] = e, d = (0, x.HI)(c), u = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", p = E[l];
+        "data-columnar": b,
+        children: Object.entries(E).map((e, n) => {
+          let [l, c] = e, d = (0, x.HI)(c), u = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", p = N[l];
           return (0, a.jsxs)("div", {
             style: {
               backgroundColor: d
             },
             children: [(0, a.jsxs)(m.Text, {
-              variant: g ? "text-sm/medium" : "text-xs/medium",
+              variant: b ? "text-sm/medium" : "text-xs/medium",
               style: {
                 color: u
               },
-              children: [t.name, ".", n + 1, g && null != p ? (0, a.jsx)("strong", {
+              children: [t.name, ".", n + 1, b && null != p ? (0, a.jsx)("strong", {
                 children: " - ".concat(p)
               }) : ""]
-            }), g && (0, a.jsxs)(m.Text, {
+            }), b && (0, a.jsxs)(m.Text, {
               variant: "text-xxs/medium",
               style: {
                 opacity: .75,

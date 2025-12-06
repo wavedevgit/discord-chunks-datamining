@@ -2,7 +2,7 @@
 /** chunk id: 348733, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,26 +19,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk991168 = require("./991168.js");
 
-function m(e) {
+function y(e) {
   let {
     locked: t,
     keybind: n
-  } = e, s = r.useRef(null), p = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), m = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
-  if ((0, a.e7)([h.Z], () => h.Z.isNotificationDisabled(f.n0.TextChat)) || m === g._vf.DISABLED) return null;
-  let b = p.filter(e => !t || e.status !== g._1z.TIMED_OUT),
-    v = (0, l.groupBy)(b, e => e.type);
+  } = e, s = r.useRef(null), h = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), y = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
+  if ((0, a.e7)([p.Z], () => p.Z.isNotificationDisabled(f.n0.TextChat)) || y === g._vf.DISABLED) return null;
+  let _ = h.filter(e => !t || e.status !== g._1z.TIMED_OUT),
+    v = (0, l.groupBy)(_, e => e.type);
   return (0, i.jsx)(u.Z, {
     contentDomRef: s,
     observeInterval: 200,
     children: (0, i.jsx)("div", {
       ref: s,
-      className: o()(_.container, _[m]),
+      className: o()(m.container, m[y]),
       children: Object.entries(v).map(e => {
         let [r, s] = e;
-        return 0 === s.length ? null : (0, i.jsx)(y, {
+        return 0 === s.length ? null : (0, i.jsx)(b, {
           locked: t,
           keybind: n,
-          position: m,
+          position: y,
           notification: s[0]
         }, r)
       })
@@ -46,7 +46,7 @@ function m(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     notification: t,
     position: n,
@@ -54,8 +54,8 @@ function y(e) {
     locked: s
   } = e;
   return (0, i.jsx)("div", {
-    className: _.notificationGroup,
-    children: (0, i.jsx)(p.Z, {
+    className: m.notificationGroup,
+    children: (0, i.jsx)(h.Z, {
       zIndex: 100,
       position: n,
       notification: t,

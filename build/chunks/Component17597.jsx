@@ -1,7 +1,7 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 17597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => E
+  default: () => N
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk70402 = require("./70402.js"),
   Chunk736056 = require("./736056.js");
 
-function N(e) {
+function E(e) {
   let {
     modalSessionId: t,
     entryPoint: n
@@ -47,13 +47,13 @@ function N(e) {
     }
   }) : null
 }
-let E = function(e) {
+let N = function(e) {
   let {
     transitionState: t,
     entryPoint: n,
     onClose: u,
     onComplete: j,
-    dismissable: E,
+    dismissable: N,
     classificationId: O
   } = e, [T, P] = l.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = l.useRef(T), [w, k] = (0, c.US)([T], true, true), R = l.useMemo(() => (0, r.Z)(), []), A = l.useRef(false), Z = (0, m.GE)();
   l.useEffect(() => {
@@ -62,7 +62,7 @@ let E = function(e) {
   let {
     loading: D,
     ageVerificationMethods: L
-  } = (0, g.Z)({
+  } = (0, b.Z)({
     onClose: () => {
       null == j || j(), u()
     },
@@ -84,7 +84,7 @@ let E = function(e) {
     transitionState: t,
     onClose: u,
     gradientColor: "blue",
-    dismissable: E,
+    dismissable: N,
     graphic: {
       type: "image",
       src: S.Z
@@ -95,7 +95,7 @@ let E = function(e) {
         x.Z.openUrl(h.Z.getArticleURL(v.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, f.x3)(R, f.d_.EXPRESSIVE_PRIMARY, f.sU.LEARN_MORE)
       }
     }),
-    actionBarInput: (0, a.jsx)(N, {
+    actionBarInput: (0, a.jsx)(E, {
       modalSessionId: R,
       entryPoint: n
     }),
@@ -135,7 +135,7 @@ let E = function(e) {
           size: "sm",
           text: y.intl.string(_.default.hDvmYP),
           onClick: () => {
-            (0, b.Jh)()
+            (0, g.Jh)()
           }
         })]
       }) : (0, a.jsx)(o.Kqy, {

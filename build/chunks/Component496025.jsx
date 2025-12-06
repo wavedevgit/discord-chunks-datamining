@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk165432 = require("./165432.js"),
   Chunk451429 = require("./451429.js");
 
-function E() {
+function N() {
   var e;
   let t = (0, Chunk442837.Wu)([Chunk55589.Z], () => Chunk55589.Z.getSortedChannels()[1]),
     [n, r] = Chunk473749.useState(exports.length > 0 ? exports[0].channelId : true),
@@ -40,7 +40,7 @@ function E() {
         let t = f.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, h.F6)(t, g.default, b.Z) : e.channelId
+          label: null != t ? (0, h.F6)(t, b.default, g.Z) : e.channelId
         }
       })
     })),
@@ -114,7 +114,7 @@ function T() {
     className: i()(Chunk451429.panel, Chunk165432.panel),
     children: [module, (0, Chunk54381.jsx)("div", {
       className: Chunk165432.divider
-    }), (0, Chunk54381.jsx)(E, {}), (0, Chunk54381.jsx)("div", {
+    }), (0, Chunk54381.jsx)(N, {}), (0, Chunk54381.jsx)("div", {
       className: Chunk165432.divider
     }), (0, Chunk54381.jsx)(O, {})]
   })

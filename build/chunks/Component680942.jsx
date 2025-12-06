@@ -1,7 +1,7 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 680942, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,22 +18,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let g = e => {
+let b = e => {
   let {
     product: t,
     primary: n,
-    selectedVariantIndex: g,
+    selectedVariantIndex: b,
     returnRef: v,
     onSuccess: j,
     tooltipDelay: _
   } = e, {
     analyticsLocations: y
-  } = (0, c.ZP)(), C = l.useRef(null), S = (0, m.sp)(), N = (0, p.Z)();
+  } = (0, c.ZP)(), C = l.useRef(null), S = (0, m.sp)(), E = (0, p.Z)();
   return (0, a.jsx)(s.u, {
-    text: b.intl.string(b.t["JCFN/y"]),
+    text: g.intl.string(g.t["JCFN/y"]),
     delay: _,
     children: (0, a.jsx)(o.hU, {
-      "aria-label": b.intl.string(b.t["JCFN/y"]),
+      "aria-label": g.intl.string(g.t["JCFN/y"]),
       buttonRef: C,
       variant: n ? "primary" : "secondary",
       icon: o.OgN,
@@ -47,11 +47,11 @@ let g = e => {
           tile_type: r.Z[t.type],
           tile_position: String(null == S ? true : S.tilePosition),
           cta_name: "gift button",
-          page_type: N || "home"
+          page_type: E || "home"
         }), (0, d.Z)({
           skuId: (0, h.S)({
             product: t,
-            selectedVariantIndex: g
+            selectedVariantIndex: b
           }),
           isGift: true,
           giftingOrigin: f.Wt.SHOP_PAGE,

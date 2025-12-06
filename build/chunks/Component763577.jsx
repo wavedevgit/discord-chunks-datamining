@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 763577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -44,7 +44,7 @@ function u() {
 }
 
 function m() {
-  let [e, t] = Chunk473749.useState(null), [n, r] = Chunk473749.useState(null), [s, o] = Chunk473749.useState(null), [c, u] = Chunk473749.useState([]), m = Chunk473749.useRef(null), [x, f] = Chunk473749.useState(400), [b, g] = Chunk473749.useState(400), v = Chunk473749.useCallback(() => {
+  let [e, t] = Chunk473749.useState(null), [n, r] = Chunk473749.useState(null), [s, o] = Chunk473749.useState(null), [c, u] = Chunk473749.useState([]), m = Chunk473749.useRef(null), [x, f] = Chunk473749.useState(400), [g, b] = Chunk473749.useState(400), v = Chunk473749.useCallback(() => {
     setTimeout(() => {
       var e, t, n, a;
       Chunk333200(null != (n = null == (e = m.current) ? true : module.getProperties()) ? require : {}), u(null != (a = null == (t = m.current) ? true : exports.getArtboards()) ? Chunk54381 : []), Chunk164617({})
@@ -96,7 +96,7 @@ function m() {
     }), null != module && (0, Chunk54381.jsx)("div", {
       style: {
         width: x,
-        height: b
+        height: g
       },
       children: (0, Chunk54381.jsx)(Chunk481060.BmE, {
         src: module,
@@ -118,8 +118,8 @@ function m() {
         }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           type: "number",
           label: "height",
-          value: b.toString(),
-          onChange: e => g(parseInt(e))
+          value: g.toString(),
+          onChange: e => b(parseInt(e))
         })]
       }), (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
         gap: 8,

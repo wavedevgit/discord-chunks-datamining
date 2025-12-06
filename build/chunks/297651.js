@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 297651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => m
@@ -20,7 +20,7 @@ function m(e, t) {
     h = (0, d.x)(),
     x = i.ZP.canUseCollectibles(h),
     f = a.useRef(null),
-    b = a.useCallback(() => {
+    g = a.useCallback(() => {
       let a = null != p ? (0, c.Vw)(p, x, false) : null,
         l = null != p ? (0, c.eu)(p, x, false) : true;
       r.default.track(u.rMx.COLLECTIBLES_TILE_IMPRESSION, {
@@ -37,14 +37,14 @@ function m(e, t) {
         category_position: null == m ? true : m.categoryPosition
       })
     }, [null == m ? true : m.sessionId, null == m ? true : m.categoryPosition, null == m ? true : m.pageCategory, null == m ? true : m.pageSection, null == m ? true : m.tilePosition, x, t, p, e, n]),
-    g = a.useCallback(e => {
+    b = a.useCallback(e => {
       e ? null === f.current && (f.current = setTimeout(() => {
-        b(), f.current = null
+        g(), f.current = null
       }, 1e3)) : null !== f.current && (clearTimeout(f.current), f.current = null)
-    }, [b]);
+    }, [g]);
   return a.useEffect(() => () => {
     null !== f.current && (clearTimeout(f.current), f.current = null)
   }, []), {
-    handleCardVisibilityChange: g
+    handleCardVisibilityChange: b
   }
 }

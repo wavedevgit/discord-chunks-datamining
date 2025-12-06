@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => D,
@@ -59,8 +59,8 @@ let D = Chunk473749.memo(function(e) {
         frame: F,
         activity: V,
         application: H,
-        analyticsContext: z,
-        inviteButtonRef: W,
+        analyticsContext: W,
+        inviteButtonRef: z,
         accountLinkButtonRef: K,
         startAuthorization: Y,
         canStartAuthorization: q,
@@ -87,9 +87,9 @@ let D = Chunk473749.memo(function(e) {
         }), (0, b.v)($, b.d.INVITE), P.default.track(Z.rMx.OPEN_MODAL, {
           type: "Send Join Invite",
           application_id: V.application_id,
-          location: z.location
+          location: W.location
         }), (0, d.h7)(V, false)
-      }, [V, z, $, U]),
+      }, [V, W, $, U]),
       er = i.useCallback((e, t) => () => {
         (0, b.v)($, b.d.LEAVE_ACTIVITY), p.Z.leaveActivity({
           location: t,
@@ -156,7 +156,7 @@ let D = Chunk473749.memo(function(e) {
     }, []), i.useEffect(() => {
       Q && (ec(false), null != ea.current && (clearTimeout(ea.current), ea.current = null))
     }, [Q]);
-    let eu = null == ee || null == H ? null : (0, r.jsx)(M, {
+    let eu = null == ee || null == H ? null : (0, r.jsx)(L, {
         guildId: ee,
         applicationId: H.id
       }),
@@ -176,7 +176,7 @@ let D = Chunk473749.memo(function(e) {
         })
       })) : null,
       eh = et && null == B ? (0, r.jsx)(N.Z, {
-        ref: W,
+        ref: z,
         tooltipText: T.intl.string(T.t["hC/Zey"]),
         onClick: en,
         icon: u.ejJ
@@ -192,7 +192,7 @@ let D = Chunk473749.memo(function(e) {
         icon: u.PBZ
       }),
       eg = null == C ? null : (0, r.jsx)(_.Z, {}),
-      em = !q || Q ? null : (0, r.jsx)(L, {
+      em = !q || Q ? null : (0, r.jsx)(M, {
         runningGame: U,
         startAuthorization: () => {
           Y() === m.r.RPC && (ec(true), null != ea.current && clearTimeout(ea.current), ea.current = setTimeout(() => {
@@ -221,7 +221,7 @@ let D = Chunk473749.memo(function(e) {
       children: [null != (t = null != eu ? eu : em) ? t : eh, ed, null != (l = null != ef ? ef : ep) ? l : eg, eb]
     })
   }),
-  L = Chunk473749.forwardRef(function(e, t) {
+  M = Chunk473749.forwardRef(function(e, t) {
     let {
       runningGame: n,
       startAuthorization: i,
@@ -242,7 +242,7 @@ let D = Chunk473749.memo(function(e) {
     })
   });
 
-function M(e) {
+function L(e) {
   let {
     applicationId: t,
     guildId: n

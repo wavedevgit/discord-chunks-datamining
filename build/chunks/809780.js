@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 809780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   As: () => F,
@@ -78,7 +78,7 @@ function B(e, t) {
 var F = ((r = {})[r.Favorite = 0] = "Favorite", r[r.PrivateChannel = 1] = "PrivateChannel", r[r.HighImportanceMentioned = 2] = "HighImportanceMentioned", r[r.LowImportanceMentioned = 3] = "LowImportanceMentioned", r[r.AllMessagesNotifications = 4] = "AllMessagesNotifications", r[r.GuildChannel = 5] = "GuildChannel", r[r.OldChannel = 6] = "OldChannel", r[r.NoNotifications = 7] = "NoNotifications", r[r.ReallyOldChannel = 8] = "ReallyOldChannel", r),
   V = ((i = {}).Loading = "loading", i.Loaded = "loaded", i.Done = "done", i);
 let H = 25;
-class z extends Chunk836560.EventEmitter {
+class W extends Chunk836560.EventEmitter {
   loadMore() {
     let {
       loadState: e,
@@ -101,7 +101,7 @@ class z extends Chunk836560.EventEmitter {
     })
   }
   populateInitialStateFromStore(e) {
-    if ("messages" === e.type) return W(e, false);
+    if ("messages" === e.type) return z(e, false);
     if ("nsfw" === e.type) return B(U({}, e), {
       isFullyLoaded: true,
       hasLoadedAnything: true
@@ -123,7 +123,7 @@ class z extends Chunk836560.EventEmitter {
     h.Z.clearChannel(e.channelId);
     let t = h.Z.fetchMessages({
       channelId: e.channelId,
-      limit: M.AQB,
+      limit: L.AQB,
       jump: {
         messageId: e.oldestReadMessageId,
         flash: true
@@ -136,7 +136,7 @@ class z extends Chunk836560.EventEmitter {
         loadState: "loaded",
         channels: this.updateChannel(e.channelId, e => {
           s()("messages" === e.type, "channel cannot change type");
-          let n = W(e, true);
+          let n = z(e, true);
           return (0 === n.messages.length || n.messages.length === e.messages.length) && (n = B(U({}, n), {
             hasLoadedAnything: true,
             isFullyLoaded: true,
@@ -149,7 +149,7 @@ class z extends Chunk836560.EventEmitter {
         loadState: "loaded",
         channels: this.updateChannel(e.channelId, e => {
           var t;
-          return s()("messages" === e.type, "channel cannot change type"), B(U({}, W(e, true)), {
+          return s()("messages" === e.type, "channel cannot change type"), B(U({}, z(e, true)), {
             isFullyLoaded: true,
             hasError: true,
             hasLoadedAnything: true,
@@ -176,7 +176,7 @@ class z extends Chunk836560.EventEmitter {
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 2e3 && this.loadMore()
     }, this.reloadMessages = () => {
       this.setState({
-        channels: this.state.channels.map(e => "messages" === e.type && e.hasLoadedAnything ? W(e, false, true) : e)
+        channels: this.state.channels.map(e => "messages" === e.type && e.hasLoadedAnything ? z(e, false, true) : e)
       })
     }, this.getNumUnreadChannels = () => this.state.channels.length, this.markChannelRead = e => {
       let {
@@ -184,9 +184,9 @@ class z extends Chunk836560.EventEmitter {
         newestUnreadMessageId: n
       } = e;
       d.Z.wait(() => f.ack(t, {
-        section: M.jXE.INBOX,
-        object: M.qAy.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
-        objectType: M.AnalyticsObjectTypes.ACK_AUTOMATIC
+        section: L.jXE.INBOX,
+        object: L.qAy.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
+        objectType: L.AnalyticsObjectTypes.ACK_AUTOMATIC
       }, true, true, n));
       let r = this.state.channels.find(e => e.channelId === t);
       if (null != r && this.undoStack.push(r), 1 === this.state.channels.length) return void this.deleteChannel(t);
@@ -200,9 +200,9 @@ class z extends Chunk836560.EventEmitter {
       let e = this.undoStack.pop();
       if (null == e) return;
       f.ack(e.channelId, {
-        section: M.jXE.INBOX,
-        object: M.qAy.UNDO_MARK_AS_READ,
-        objectType: M.AnalyticsObjectTypes.ACK_MANUAL
+        section: L.jXE.INBOX,
+        object: L.qAy.UNDO_MARK_AS_READ,
+        objectType: L.AnalyticsObjectTypes.ACK_MANUAL
       }, true, true, e.oldestReadMessageId);
       let t = this.state.channels.findIndex(t => t.order > e.order),
         n = [...this.state.channels];
@@ -211,7 +211,7 @@ class z extends Chunk836560.EventEmitter {
         channels: n
       })
     }, this.markGuildRead = e => {
-      d.Z.wait(() => (0, b.Z)([e], M.jXE.INBOX)), this.setState({
+      d.Z.wait(() => (0, b.Z)([e], L.jXE.INBOX)), this.setState({
         channels: this.state.channels.filter(t => t.guildId !== e)
       }), this.maybeLoadMore()
     }, this.deleteChannel = e => {
@@ -275,15 +275,15 @@ class z extends Chunk836560.EventEmitter {
   }
 }
 
-function W(e, t) {
+function z(e, t) {
   var n;
   let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
     i = N.Z.getMessages(e.channelId),
-    l = i.toArray().filter(t => L.default.compare(t.id, e.oldestReadMessageId) > 0 && 0 >= L.default.compare(t.id, e.newestUnreadMessageId));
+    l = i.toArray().filter(t => M.default.compare(t.id, e.oldestReadMessageId) > 0 && 0 >= M.default.compare(t.id, e.newestUnreadMessageId));
   if (l.length === e.messages.length && l.every((t, n) => e.messages[n] === t) && r) return e;
   let o = null != i.getAfter(e.oldestReadMessageId) || (null == (n = l[0]) ? true : n.id) === e.oldestUnreadMessageId,
     a = l[l.length - 1],
-    s = L.default.compare(null == a ? true : a.id, e.newestUnreadMessageId) >= 0 || l.length >= H;
+    s = M.default.compare(null == a ? true : a.id, e.newestUnreadMessageId) >= 0 || l.length >= H;
   return B(U({}, e), {
     messages: l,
     hasLoadedAnything: e.hasLoadedAnything || o || t,
@@ -337,18 +337,18 @@ function Y(e, t, n, r) {
   if (i.isPrivate()) {
     if (0 === w.ZP.getMentionCount(r)) return
   } else if (!(0, _.d)(i) && 0 === w.ZP.getMentionCount(r)) return;
-  if (!i.isPrivate() && !Z.Z.can(M.Plq.READ_MESSAGE_HISTORY, i) || (0, g.Y3)(i)) return;
+  if (!i.isPrivate() && !Z.Z.can(L.Plq.READ_MESSAGE_HISTORY, i) || (0, g.Y3)(i)) return;
   let l = w.ZP.ackMessageId(r);
   if (null == l) {
     let e = P.Z.getGuild(i.guild_id);
     if (null == e || null == e.joinedAt) return;
-    l = L.default.fromTimestamp(e.joinedAt.getTime())
+    l = M.default.fromTimestamp(e.joinedAt.getTime())
   }
   let o = w.ZP.getOldestUnreadMessageId(r),
     a = w.ZP.lastMessageId(r),
     s = w.ZP.getMentionCount(r),
     c = s > 0 || i.isPrivate();
-  if (null == a || L.default.compare(l, a) >= 0) return;
+  if (null == a || M.default.compare(l, a) >= 0) return;
   let u = {
     guildId: n,
     channelId: r,
@@ -368,7 +368,7 @@ function Y(e, t, n, r) {
       if (r.isPrivate()) return 1;
       if (w.ZP.getMentionCount(t) > 0) return w.ZP.getIsMentionLowImportance(t) ? 3 : 2;
       if (null != n) {
-        let e = L.default.extractTimestamp(n);
+        let e = M.default.extractTimestamp(n);
         if (Date.now() - e > Q) return 8;
         if (Date.now() - e > q) return 6
       }
@@ -377,8 +377,8 @@ function Y(e, t, n, r) {
         return e === k.iN.ALL_MESSAGES ? 4 : e === k.iN.NO_MESSAGES ? 7 : 5
       } {
         let n = A.ZP.getChannelMessageNotifications(e, t),
-          r = n === M.bL.NULL ? A.ZP.getMessageNotifications(e) : n;
-        return r === M.bL.ALL_MESSAGES ? 4 : r === M.bL.NO_MESSAGES ? 7 : 5
+          r = n === L.bL.NULL ? A.ZP.getMessageNotifications(e) : n;
+        return r === L.bL.ALL_MESSAGES ? 4 : r === L.bL.NO_MESSAGES ? 7 : 5
       }
     }(n, r, a),
     order: 0
@@ -396,7 +396,7 @@ let q = 2 * Chunk70956.Z.Millis.DAY,
   Q = 10 * Chunk70956.Z.Millis.DAY;
 
 function X(e) {
-  let [t, n] = l.useState(() => new z(K(), e)), [r, i] = l.useState(false), o = l.useRef(Date.now()), [a, s] = l.useState(() => K());
+  let [t, n] = l.useState(() => new W(K(), e)), [r, i] = l.useState(false), o = l.useRef(Date.now()), [a, s] = l.useState(() => K());
   l.useEffect(() => {
     let e = e => s(e);
     return t.on("change", e), s(t.state), () => {
@@ -406,7 +406,7 @@ function X(e) {
     if (null == a || a.channels.length > 0 || r) return;
     let t = Date.now(),
       l = K();
-    0 === l.channels.length || t - o.current < 10 * R.Z.Millis.SECOND ? i(true) : (o.current = Date.now(), n(new z(l, e)))
+    0 === l.channels.length || t - o.current < 10 * R.Z.Millis.SECOND ? i(true) : (o.current = Date.now(), n(new W(l, e)))
   }, [a, r, e]);
   let c = l.useRef(t);
   return l.useLayoutEffect(() => {

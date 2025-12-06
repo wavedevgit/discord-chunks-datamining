@@ -1,4 +1,4 @@
-/** Chunk was on 73895 **/
+/** Chunk was on 46467 **/
 /** chunk id: 416568, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ed
@@ -207,7 +207,7 @@ function ec(e) {
   } = e, [a] = (0, h.Wu)([D.ZP], () => {
     let e = D.ZP.getGuildsTree();
     return [e, e.version]
-  }), s = a.getRoots(), c = (0, h.Wu)([T.Z], () => T.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(z.Z, {
+  }), s = a.getRoots(), c = (0, h.Wu)([T.Z], () => T.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(W.Z, {
     id: e.id,
     name: e.name,
     icon: e.icon
@@ -227,7 +227,7 @@ function ec(e) {
 
 function eu(e) {
   let {
-    disableAppDownload: t = L.isPlatformEmbedded,
+    disableAppDownload: t = M.isPlatformEmbedded,
     isOverlay: n = false,
     className: l,
     themeOverride: a
@@ -238,7 +238,7 @@ function eu(e) {
     isSorting: y,
     startSorting: C,
     stopSorting: E
-  } = (0, M.Z)(), N = i.useRef(false), [T] = i.useState(() => new p.V7), A = i.useRef(null), R = i.useRef(null), B = (0, u.OP)(), {
+  } = (0, L.Z)(), N = i.useRef(false), [T] = i.useState(() => new p.V7), A = i.useRef(null), R = i.useRef(null), B = (0, u.OP)(), {
     ref: F
   } = B, V = function(e, t) {
     if (null == e) return {};
@@ -254,7 +254,7 @@ function eu(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(B, ["ref"]), H = (0, m.mFp)(), [z, K] = i.useState(false), q = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), J = (0, m.dQu)(g.Z.space.SPACE_XS), $ = (0, x.Z)(), {
+  }(B, ["ref"]), H = (0, m.mFp)(), [W, K] = i.useState(false), q = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), J = (0, m.dQu)(g.Z.space.SPACE_XS), $ = (0, x.Z)(), {
     pathname: er
   } = (0, c.TH)(), {
     entrypoint: eu
@@ -345,7 +345,7 @@ function eu(e) {
           return null
       }
     }, [C, E, y, eh.setNodeRef]),
-    eb = (0, r.jsx)(W.Z, {
+    eb = (0, r.jsx)(z.Z, {
       selected: ep,
       className: en.discoveryIcon
     }),
@@ -377,7 +377,7 @@ function eu(e) {
               children: [(0, r.jsxs)(m.xVE, {
                 className: o()({
                   [en.scroller]: true,
-                  [en.scrolling]: z
+                  [en.scrolling]: W
                 }),
                 experimental_useStack: true,
                 gap: "xs",

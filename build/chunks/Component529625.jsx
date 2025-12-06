@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 529625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -37,7 +37,7 @@ function h() {
   Chunk473749.useEffect(() => {
     if (module) return Chunk823385.Z.addChangeListener(f), () => Chunk823385.Z.removeChangeListener(f)
   }, [f, module]);
-  let b = Chunk473749.useCallback(async () => {
+  let g = Chunk473749.useCallback(async () => {
     let {
       isUploading: e
     } = p.getState();
@@ -79,7 +79,7 @@ function h() {
         isUploading: exports,
         isSuccess: require,
         errorMessage: Chunk972959,
-        onClick: b,
+        onClick: g,
         title: "Upload Session Logs"
       })]
     })]

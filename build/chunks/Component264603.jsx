@@ -1,7 +1,7 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -38,23 +38,23 @@ let S = [{
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
 }];
 
-function N() {
+function E() {
   let e = Chunk473749.useRef(null),
     t = Chunk695346.JG.useSetting(),
     [n, r] = Chunk473749.useState(""),
     o = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
-    N = (0, Chunk835473.q)(require),
-    E = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
+    E = (0, Chunk835473.q)(require),
+    N = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
       var e, t;
-      return null != (t = null == N || null == (e = N.linkedGames) ? true : module.map(e => h.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
+      return null != (t = null == E || null == (e = E.linkedGames) ? true : module.map(e => h.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
     }),
-    O = (0, Chunk524995.F)(N, {
+    O = (0, Chunk524995.F)(E, {
       allowedFlows: [Chunk524995.r.RPC]
     }),
-    T = (0, Chunk524995.F)(N, {
+    T = (0, Chunk524995.F)(E, {
       allowedFlows: [Chunk524995.r.WEB]
     }),
-    P = (0, Chunk524995.F)(N),
+    P = (0, Chunk524995.F)(E),
     {
       canDeauthorize: I,
       deauthorize: w
@@ -67,7 +67,7 @@ function N() {
         canDeauthorize: null != t,
         deauthorize: n
       }
-    }(null == N ? true : N.id);
+    }(null == E ? true : E.id);
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
     className: i()(Chunk451429.panel, Chunk441900.panel),
@@ -99,12 +99,12 @@ function N() {
         text: "Use detected game: ".concat(Chunk524437.name, " (").concat(Chunk524437.id, ")")
       }) : null, (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Application Name: ", null != N ? N.name : "N/A"]
+        children: ["Application Name: ", null != E ? E.name : "N/A"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Linked Games:", " ", E.length > 0 ? E.map(e => {
+        children: ["Linked Games:", " ", N.length > 0 ? N.map(e => {
           var t;
-          return (null == (t = (0, m.r)(N)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
+          return (null == (t = (0, m.r)(E)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
         }).join(", ") : "N/A"]
       })]
     }), (0, Chunk54381.jsxs)("div", {

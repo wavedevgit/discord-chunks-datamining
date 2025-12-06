@@ -22,46 +22,46 @@ let m = Chunk473749.memo(function(e) {
   let {
     product: t,
     isPurchased: n,
-    isHighlighted: i,
-    user: a
+    isHighlighted: a,
+    user: i
   } = e, {
     firstProfileEffect: m,
     firstAvatarDecoration: b,
     firstNameplate: x
-  } = (0, p.Rj)(t), D = (0, f.O1)(b), O = (0, c.ZP)(), y = (0, o.ap)(O), C = null != x && null != b && null != m, w = C ? s.EFr.SIZE_72 : s.EFr.SIZE_80;
+  } = (0, _.Rj)(t), y = (0, p.O1)(b), D = (0, c.ZP)(), w = (0, o.ap)(D), C = null != x && null != b && null != m, O = C ? s.EFr.SIZE_72 : s.EFr.SIZE_80;
   return (0, r.jsxs)("div", {
-    className: l()(_.container, {
-      [_.twoItemBundle]: !C,
-      [_.threeItemBundle]: C
+    className: l()(v.container, {
+      [v.twoItemBundle]: !C,
+      [v.threeItemBundle]: C
     }),
     children: [null != m && (0, r.jsx)("div", {
-      className: _.profileEffectShopPreview,
+      className: v.profileEffectShopPreview,
       children: (0, r.jsx)(u.Z, {
-        isHighlighted: i,
+        isHighlighted: a,
         skuId: m.skuId,
         isPurchased: n,
         removeSetHeight: true
       })
     }), C && (0, r.jsx)("div", {
-      className: _.nameplatePreview,
+      className: v.nameplatePreview,
       children: (0, r.jsx)(d.Z, {
-        user: a,
+        user: i,
         nameplate: x,
-        isHighlighted: i,
+        isHighlighted: a,
         isPurchased: n,
-        showPlaceholderUser: !i,
-        pendingAvatarDecoration: D
+        showPlaceholderUser: !a,
+        pendingAvatarDecoration: y
       })
-    }), null != D && (0, r.jsx)("div", {
-      className: _.avatarDecorationPreview,
-      children: (0, r.jsx)(v.R, {
-        item: D,
-        user: a,
-        avatarSize: w,
+    }), null != y && (0, r.jsx)("div", {
+      className: v.avatarDecorationPreview,
+      children: (0, r.jsx)(f.R, {
+        item: y,
+        user: i,
+        avatarSize: O,
         isPurchased: n,
-        isHighlighted: i,
-        avatarPlaceholderSrc: y ? g : h,
-        className: _.avatar
+        isHighlighted: a,
+        avatarPlaceholderSrc: w ? g : h,
+        className: v.avatar
       })
     })]
   })

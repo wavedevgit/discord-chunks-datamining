@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 431282, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   V4: () => p,
@@ -65,11 +65,11 @@ function p(e) {
     sublabel: h,
     trailing: x,
     renderSubmenu: f,
-    ref: b
-  } = e, g = null != n, v = (0, s.Q1)({
+    ref: g
+  } = e, b = null != n, v = (0, s.Q1)({
     action: t,
     onClick: n
-  }), [j, _] = l.useState(false), y = l.useRef(null), C = null != b ? b : y, S = null != f, N = S && g, E = {
+  }), [j, _] = l.useState(false), y = l.useRef(null), C = null != g ? g : y, S = null != f, E = S && b, N = {
     offset: {
       top: false,
       left: false,
@@ -104,12 +104,12 @@ function p(e) {
     })]
   }), I = e => {
     let t;
-    return t = N ? (0, a.jsxs)(a.Fragment, {
+    return t = E ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(i.P3F, {
         className: c.menuItemContent,
         onClick: v,
         focusProps: {
-          offset: u(d({}, E.offset), {
+          offset: u(d({}, N.offset), {
             right: 0
           })
         },
@@ -119,7 +119,7 @@ function p(e) {
         "aria-label": o.intl.string(o.t.PdRCRg)
       }, e), {
         onClick: O,
-        focusProps: E,
+        focusProps: N,
         children: (0, a.jsx)(r.Fbu, {
           size: "xs",
           color: "currentColor"
@@ -129,7 +129,7 @@ function p(e) {
       className: c.menuItemContent
     }, e), {
       onClick: O,
-      focusProps: E,
+      focusProps: N,
       children: [P(), (0, a.jsx)("div", {
         className: c.submenuIconWrapper,
         children: (0, a.jsx)(r.Fbu, {
@@ -140,7 +140,7 @@ function p(e) {
     })) : (0, a.jsx)(i.P3F, {
       className: c.menuItemContent,
       onClick: v,
-      focusProps: E,
+      focusProps: N,
       children: P()
     }), (0, a.jsx)("div", {
       ref: C,

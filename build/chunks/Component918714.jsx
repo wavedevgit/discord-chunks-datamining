@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -44,7 +44,7 @@ function _(e) {
 let y = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = l.useState(null), [h, x] = l.useState(true), [y, C] = l.useState(null), [S, N] = l.useState(false), E = l.useCallback(async () => {
+  } = e, [n, u] = l.useState(null), [h, x] = l.useState(true), [y, C] = l.useState(null), [S, E] = l.useState(false), N = l.useCallback(async () => {
     x(true), C(null);
     try {
       var e;
@@ -66,29 +66,29 @@ let y = function(e) {
         }
       })
     } catch (e) {
-      C(g.intl.string(b.default["/f++3g"]))
+      C(b.intl.string(g.default["/f++3g"]))
     } finally {
       x(false)
     }
   }, [t]), O = l.useCallback(async e => {
     if (null !== n) {
-      N(true);
+      E(true);
       try {
         let t = {
           task_id: n.task_id,
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, d.Wl)(t), E()
+        await (0, d.Wl)(t), N()
       } catch (e) {
-        C(g.intl.string(b.default["+QRSxc"]))
+        C(b.intl.string(g.default["+QRSxc"]))
       } finally {
-        N(false)
+        E(false)
       }
     }
-  }, [n, E]);
+  }, [n, N]);
   (0, i.ZP)(() => {
-    E()
+    N()
   });
   let T = l.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
@@ -128,11 +128,11 @@ let y = function(e) {
               gap: 4,
               children: [(0, a.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
-                children: g.intl.string(g.t.c6kn6F)
+                children: b.intl.string(b.t.c6kn6F)
               }), (0, a.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
-                children: g.intl.string(g.t.ZUEGFn)
+                children: b.intl.string(b.t.ZUEGFn)
               })]
             }), (0, a.jsxs)(r.Kqy, {
               direction: "horizontal",
@@ -141,15 +141,15 @@ let y = function(e) {
               children: [(0, a.jsx)(r.Button, {
                 fullWidth: true,
                 variant: "secondary",
-                text: g.intl.string(g.t["2jxGer"]),
+                text: b.intl.string(b.t["2jxGer"]),
                 onClick: () => {
                   (0, p.R)("safety_flows_modal")
                 }
               }), (0, a.jsx)(r.Button, {
                 fullWidth: true,
-                text: g.intl.string(g.t["7NqTJn"]),
+                text: b.intl.string(b.t["7NqTJn"]),
                 onClick: () => {
-                  E()
+                  N()
                 }
               })]
             })]

@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 789654, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T,
@@ -59,11 +59,11 @@ let {
   SemanticColors: S
 } = Chunk521904.V;
 
-function N(e) {
+function E(e) {
   return e.replaceAll(/_|\./g, "-").toLowerCase()
 }
 
-function E(e) {
+function N(e) {
   return e.replaceAll(/_|-/g, ".").toLowerCase()
 }
 
@@ -87,7 +87,7 @@ function T() {
       semanticColorOverrides: m,
       rawColorOverrides: v,
       tab: S,
-      scales: E
+      scales: N
     } = exports,
     T = Chunk473749.useMemo(() => {
       let t = Object.entries(Chunk668339).map(t => {
@@ -96,9 +96,9 @@ function T() {
             highlight: r
           } = a, i = l[e];
           if (null == i) return "";
-          let s = N(n);
+          let s = E(n);
           if (r) return "--".concat(s, ": magenta !important;");
-          let o = N(i.color),
+          let o = E(i.color),
             c = i.opacity,
             d = c < 1 ? "hsl(var(--".concat(o, "-hsl) / ").concat(c, ")") : "var(--".concat(o, ")");
           return "--".concat(s, ": color-mix(\n        in oklab,\n        ").concat(d, " 100%,\n        var(--theme-base-color, black) var(--theme-base-color-amount, 0%)\n      );")
@@ -120,7 +120,7 @@ function T() {
             r = o().kebabCase(e);
           return ["--".concat(r, "-hsl: ").concat(n, " calc(var(--saturation-factor, 1) * ").concat(a, "%) ").concat(l, "% !important;"), "--".concat(r, ": hsl(var(--").concat(r, "-hsl)) !important;")]
         }),
-        a = E.reduce((e, t) => {
+        a = N.reduce((e, t) => {
           let {
             name: n
           } = t, a = (0, j.XM)(t), l = (0, j.W6)(a, n);
@@ -132,7 +132,7 @@ function T() {
           }, "")
         }, "");
       return "\n      :root {\n        ".concat(Chunk54381, "\n      }\n\n      .theme-").concat(module, " {\n        ").concat(exports.join("\n"), "\n      }\n\n      html {\n        ").concat(require.join("\n"), "\n      }\n    ")
-    }, [Chunk246992, E, Chunk668339, module]);
+    }, [Chunk246992, N, Chunk668339, module]);
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk416825.panel,
     children: [(0, Chunk54381.jsxs)("div", {
@@ -293,10 +293,10 @@ function P(e) {
         semanticColorOverrides: l
       })
     })
-  }, [n]), b = Object.keys(S).map(e => ({
+  }, [n]), g = Object.keys(S).map(e => ({
     value: e,
-    label: N(e)
-  })), g = Object.keys(u.b).map(e => ({
+    label: E(e)
+  })), b = Object.keys(u.b).map(e => ({
     value: e,
     label: e
   }));
@@ -305,7 +305,7 @@ function P(e) {
       variant: "text-lg/semibold",
       children: "Semantic Tokens"
     }), (0, a.jsx)(m.d, {
-      options: b,
+      options: g,
       placeholder: "Search for a semantic token...",
       value: true,
       onChange: c,
@@ -322,12 +322,12 @@ function P(e) {
       children: Object.entries(i).map(e => {
         let [t, l] = e, i = l.colors[r];
         if (null == i) return null;
-        let s = E(i.color),
+        let s = N(i.color),
           c = i.opacity,
           d = j.jC[t][r];
         return (0, a.jsx)(I, {
-          title: N(t),
-          subtitle: 1 === d.opacity ? E(d.raw) : "".concat(E(d.raw), " @ ").concat(100 * d.opacity, "%"),
+          title: E(t),
+          subtitle: 1 === d.opacity ? N(d.raw) : "".concat(N(d.raw), " @ ").concat(100 * d.opacity, "%"),
           highlight: l.highlight,
           onReset: () => {
             n(e => {
@@ -412,7 +412,7 @@ function P(e) {
       variant: "text-lg/semibold",
       children: "Raw Tokens"
     }), (0, a.jsx)(m.d, {
-      options: g,
+      options: b,
       placeholder: "Search for a raw color...",
       value: true,
       onChange: d,

@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 442954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -488,7 +488,7 @@ let _ = {
     } = await Promise.resolve().then(require.bind(require, 590433)), c = await Promise.resolve().then(require.t.bind(require, 473749, 19)), d = "TestUser";
 
     function u(n) {
-      let [u, m] = c.useState(s.DURATION_60_SEC), [p, h] = c.useState(""), [x, f] = c.useState(false), [b, g] = c.useState(false), v = [{
+      let [u, m] = c.useState(s.DURATION_60_SEC), [p, h] = c.useState(""), [x, f] = c.useState(false), [g, b] = c.useState(false), v = [{
         value: s.DURATION_60_SEC,
         label: o(s.DURATION_60_SEC)
       }, {
@@ -511,9 +511,9 @@ let _ = {
           user: d,
           duration: o(u),
           reason: null != p ? p : "No reason provided",
-          resolveFlag: b
+          resolveFlag: g
         }), await new Promise(e => setTimeout(e, 1e3)), f(false), n.onClose()
-      }, [u, p, b, n]);
+      }, [u, p, g, n]);
       return (0, a.jsxs)("div", {
         style: {
           padding: "20px",
@@ -566,8 +566,8 @@ let _ = {
         }), (0, a.jsx)("div", {
           className: "mb-4",
           children: (0, a.jsx)(r, {
-            checked: b,
-            onChange: g,
+            checked: g,
+            onChange: b,
             label: "Resolve associated mod report"
           })
         }), (0, a.jsxs)("div", {

@@ -1,7 +1,7 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 611565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -78,7 +78,7 @@ let x = [{
     }
   }];
 
-function b() {
+function g() {
   let {
     unreadRecentMentionsCount: e,
     unreadChannelIds: t
@@ -86,8 +86,8 @@ function b() {
     isLoading: n,
     hasLoadedEver: l,
     hasPreloaded: r,
-    hasMoreToLoad: b,
-    isLoadingComplete: g
+    hasMoreToLoad: g,
+    isLoadingComplete: b
   } = (0, Chunk399606.cj)([Chunk787879.Z], () => ({
     isLoading: Chunk787879.Z.isLoading,
     hasLoadedEver: Chunk787879.Z.hasLoadedEver,
@@ -169,9 +169,9 @@ function b() {
         }), (0, Chunk54381.jsxs)("div", {
           children: ["Has Loaded Ever: ", Chunk120356 ? "✅" : "❌"]
         }), (0, Chunk54381.jsxs)("div", {
-          children: ["Has More To Load: ", b ? "✅" : "❌"]
+          children: ["Has More To Load: ", g ? "✅" : "❌"]
         }), (0, Chunk54381.jsxs)("div", {
-          children: ["Is Loading Complete: ", g ? "✅" : "❌"]
+          children: ["Is Loading Complete: ", b ? "✅" : "❌"]
         }), (0, Chunk54381.jsxs)("div", {
           children: ["Last Loading Trigger: ", null == v ? true : v.loadingTrigger]
         })]

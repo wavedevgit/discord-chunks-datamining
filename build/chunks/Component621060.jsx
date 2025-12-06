@@ -1,8 +1,8 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 621060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j,
-  Zj: () => b,
+  Zj: () => g,
   v0: () => f
 }), require("./388685.js");
 var a, Chunk54381 = require("./54381.js"),
@@ -18,8 +18,8 @@ var a, Chunk54381 = require("./54381.js"),
   Chunk252899 = require("./252899.jsx"),
   Chunk451429 = require("./451429.js"),
   f = ((a = {}).NONE = "", a.DISMISSIBLE_CONTENT = "Dismissible Content", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.QUESTS = "Quests", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a.BOOSTING = "Boosting", a);
-let b = ["Experiments", "Dismissible Content", "Events", "Premium", "Quests", "Billing", "Users", "Guilds", "UI", "Games", "Boosting", "Audio / Video", "Development"],
-  g = Chunk473749.forwardRef(function(e, t) {
+let g = ["Experiments", "Dismissible Content", "Events", "Premium", "Quests", "Billing", "Users", "Guilds", "UI", "Games", "Boosting", "Audio / Video", "Development"],
+  b = Chunk473749.forwardRef(function(e, t) {
     let {
       id: n,
       selected: a,
@@ -43,7 +43,7 @@ function v(e) {
     selectedTabId: n,
     onSelectTab: a
   } = e, i = r.useRef(new Map), [s, f] = r.useState(() => new Set), {
-    ref: b,
+    ref: g,
     width: v
   } = (0, d.ZP)(), j = r.useRef(null), _ = (0, h.F)(t, a);
   r.useEffect(() => {
@@ -53,7 +53,7 @@ function v(e) {
       o = null != v ? v : 0;
     for (let c of (o -= null != (a = null == (e = i.current.get(n)) ? true : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (r = null == (l = i.current.get(c.id)) ? true : l.getBoundingClientRect().width) ? r : 0) < 0 && s.add(c.id);
     f(s)
-  }, [t, v, b, n]);
+  }, [t, v, g, n]);
   let y = r.useCallback(e => {
     let {
       closePopout: t
@@ -71,13 +71,13 @@ function v(e) {
     className: x.tabBarContainer,
     children: [(0, l.jsxs)("div", {
       className: x.tabBar,
-      ref: b,
+      ref: g,
       children: [t.map(e => {
         let {
           id: t,
           name: r
         } = e;
-        if (!s.has(t)) return (0, l.jsx)(g, {
+        if (!s.has(t)) return (0, l.jsx)(b, {
           id: t,
           selected: n === t,
           onClick: n !== t ? () => a(t) : true,
@@ -90,7 +90,7 @@ function v(e) {
             id: t,
             name: r
           } = e;
-          return (0, l.jsx)(g, {
+          return (0, l.jsx)(b, {
             id: t,
             selected: n === t,
             ref: e => {

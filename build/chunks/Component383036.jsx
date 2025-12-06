@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 88282 **/
 /** chunk id: 383036, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -51,27 +51,27 @@ let x = e => {
       m = (0, Chunk399606.e7)([Chunk597688.Z], () => Chunk597688.Z.lastSuccessfulFetch),
       f = exports.size > 0 && require.size > 0 && null != Chunk653126,
       {
-        isFetching: b,
-        categories: g
+        isFetching: g,
+        categories: b
       } = (0, Chunk223143.ZP)({
         logPerf: false,
         stalePurchasesOK: true,
         noOp: f
       }),
-      v = f ? exports : g,
-      j = f || !b && v.size > 0,
+      v = f ? exports : b,
+      j = f || !g && v.size > 0,
       [_, y] = Chunk473749.useState(""),
       [C, S] = Chunk473749.useState(null),
-      [N, E] = Chunk473749.useState(null);
+      [E, N] = Chunk473749.useState(null);
     return (Chunk473749.useEffect(() => {
       if ("" === _.trim() || !j) {
-        S(null), E(null);
+        S(null), N(null);
         return
       }
       let e = Chunk597688.Z.getProduct(_),
         t = Chunk597688.Z.getCategoryForProduct(_);
-      null != module && null != exports ? (S(module), E(exports)) : (S(null), E(null))
-    }, [_, j]), b) ? (0, Chunk54381.jsx)(Chunk481060.Text, {
+      null != module && null != exports ? (S(module), N(exports)) : (S(null), N(null))
+    }, [_, j]), g) ? (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "Loading categories and collectibles..."
     }) : null == module ? (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -113,7 +113,7 @@ let x = e => {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Product Preview"
-        }), null != C && null != N ? (0, Chunk54381.jsxs)("div", {
+        }), null != C && null != E ? (0, Chunk54381.jsxs)("div", {
           className: Chunk277790.previewContainer,
           children: [(0, Chunk54381.jsx)(x, {
             skuId: C.skuId
