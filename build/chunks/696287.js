@@ -2,9 +2,10 @@
 /** chunk id: 696287, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => y
 }), require("./388685.js");
-var Chunk846519 = require("./846519.js"),
+var Chunk772848 = require("./772848.js"),
+  Chunk846519 = require("./846519.js"),
   Chunk147913 = require("./147913.js"),
   Chunk509003 = require("./509003.js"),
   Chunk77498 = require("./77498.js"),
@@ -15,7 +16,7 @@ var Chunk846519 = require("./846519.js"),
   Chunk594190 = require("./594190.js"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,23 +24,10 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-
-function _(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      p(e, t, n[t])
-    })
-  }
-  return e
-}
 let m = 5 * Chunk70956.Z.Millis.MINUTE;
 
 function h(e) {
-  return e.distributor === f.GQo.ROBLOX ? (0, a.x3)(e) : null
+  return e.distributor === p.GQo.ROBLOX ? (0, o.x3)(e) : null
 }
 
 function g(e) {
@@ -48,55 +36,73 @@ function g(e) {
     r = h(e);
   return null != r && (n += ":".concat(r)), n
 }
-class E extends Chunk147913.Z {
+
+function E(e) {
+  return "".concat(g(e), ":").concat(e.pid)
+}
+class b extends Chunk147913.Z {
   _terminate() {
-    this.stopHeartbeat()
+    this.heartbeatInterval.stop()
   }
-  maybeStartHeartbeat() {
-    this.heartbeatInterval.isStarted() || (this.logRunningGameHeartbeats(), this.heartbeatInterval.start(m, this.logRunningGameHeartbeats))
+  handleLogout() {
+    this.gameSessions.clear(), this.heartbeatInterval.stop()
   }
-  stopHeartbeat() {
-    this.heartbeatInterval.stop(), this.runningGameKeys.clear()
+  scheduleHeartbeatTracking() {
+    if (this.processSessionChanges(), 0 === Chunk594190.ZP.getRunningGames().length) return void this.heartbeatInterval.stop();
+    this.heartbeatInterval.isStarted() || this.heartbeatInterval.start(m, this.logRunningGameHeartbeats)
   }
-  handlePostConnectionOpen() {
-    Chunk594190.ZP.getRunningGames().length > 0 && this.maybeStartHeartbeat()
+  logHeartbeat(e, t, n, r) {
+    var i, a;
+    let u = performance.now(),
+      _ = n ? 0 : Math.round(u - t.lastHeartbeatTime),
+      m = null != (a = e.id) ? a : null == (i = s.Z.getGameByName(e.name)) ? true : i.id;
+    c.default.track(p.rMx.RUNNING_GAME_HEARTBEAT, {
+      game_id: m,
+      game_name: e.name,
+      game_distributor: e.distributor,
+      game_distributor_game_id: e.sku,
+      game_metadata: (0, o.sD)(e),
+      game_executable: (0, d.N6)(e.exePath),
+      game_detection_enabled: (0, f.ik)(e),
+      initial_heartbeat: n,
+      final_heartbeat: r,
+      game_session_id: t.sessionId,
+      duration_tracked_ms: _,
+      rtc_connection_id: l.Z.getRTCConnectionId(),
+      media_session_id: l.Z.getMediaSessionId()
+    }), t.lastHeartbeatTime = u
+  }
+  processSessionChanges() {
+    let e = Chunk594190.ZP.getRunningGames(),
+      t = performance.now(),
+      n = new Set;
+    for (let i of module) {
+      let e = E(Chunk846519);
+      if (require.add(module), !this.gameSessions.has(module)) {
+        let n = {
+          sessionId: (0, Chunk772848.Z)(),
+          lastHeartbeatTime: exports,
+          runningGame: Chunk846519
+        };
+        this.gameSessions.set(module, require), this.logHeartbeat(Chunk846519, require, true, false)
+      }
+    }
+    for (let [e, t] of this.gameSessions) require.has(module) || (this.logHeartbeat(exports.runningGame, exports, false, true), this.gameSessions.delete(module))
   }
   constructor(...e) {
-    super(...e), p(this, "heartbeatInterval", new r.Xp), p(this, "runningGameKeys", new Set), p(this, "actions", {
+    super(...e), _(this, "heartbeatInterval", new i.Xp), _(this, "gameSessions", new Map), _(this, "actions", {
       RUNNING_GAMES_CHANGE: e => this.handleRunningGamesChanged(e),
-      LOGOUT: () => this.stopHeartbeat(),
-      CONNECTION_CLOSED: () => this.stopHeartbeat(),
-      POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
-    }), p(this, "handleRunningGamesChanged", e => {
-      let {
-        games: t
-      } = e;
-      if (0 === t.length) return void this.stopHeartbeat();
-      this.maybeStartHeartbeat()
-    }), p(this, "logRunningGameHeartbeats", () => {
-      let e = d.ZP.getRunningGames(),
-        t = {
-          rtc_connection_id: s.Z.getRTCConnectionId(),
-          media_session_id: s.Z.getMediaSessionId()
-        },
-        n = new Set;
-      e.forEach(e => {
-        var r, i;
-        let s = g(e),
-          c = !this.runningGameKeys.has(s),
-          p = null != (i = e.id) ? i : null == (r = o.Z.getGameByName(e.name)) ? true : r.id;
-        l.default.track(f.rMx.RUNNING_GAME_HEARTBEAT, _({
-          game_id: p,
-          game_name: e.name,
-          game_distributor: e.distributor,
-          game_distributor_game_id: e.sku,
-          game_metadata: (0, a.sD)(e),
-          game_executable: (0, u.N6)(e.exePath),
-          game_detection_enabled: (0, d.ik)(e),
-          initial_heartbeat: c
-        }, t)), n.add(g(e))
-      }), this.runningGameKeys = n
+      POST_CONNECTION_OPEN: () => this.scheduleHeartbeatTracking(),
+      LOGOUT: () => this.handleLogout()
+    }), _(this, "handleRunningGamesChanged", e => {
+      this.scheduleHeartbeatTracking()
+    }), _(this, "logRunningGameHeartbeats", () => {
+      for (let e of f.ZP.getRunningGames()) {
+        let t = E(e),
+          n = this.gameSessions.get(t);
+        null != n && this.logHeartbeat(e, n, false, false)
+      }
     })
   }
 }
-let b = new E
+let y = new b
