@@ -46,28 +46,28 @@ function y(e) {
       handleScrollToCategory: b
     } = (0, m.xV)(p.current),
     [E, v] = l.useState(f && c),
-    [S, x] = l.useState(false);
+    [S, O] = l.useState(false);
   return l.useEffect(() => {
     null != i && b(i)
   }, [i, b]), l.useEffect(() => () => {
     null != u && u()
   }, []), l.useEffect(() => {
     let e = () => {
-      x(window.innerWidth < 1400)
+      O(window.innerWidth < 1400)
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
     f || v(false)
   }, [f, v]), (0, r.jsx)("div", {
-    className: s()(O.pageWrapper, {
-      [O.pageWrapperFilter]: f
+    className: s()(x.pageWrapper, {
+      [x.pageWrapperFilter]: f
     }),
     children: (0, r.jsxs)("main", {
-      className: s()(O.page, {
-        [O.pageFilter]: f
+      className: s()(x.page, {
+        [x.pageFilter]: f
       }),
       children: [(0, r.jsx)(o.yWw, {
-        className: O.shopScroll,
+        className: x.shopScroll,
         ref: p,
         onScroll: C,
         children: (0, r.jsx)(k, {
@@ -81,9 +81,9 @@ function y(e) {
           initialCategoryId: i
         })
       }), E && !S && (0, r.jsx)("div", {
-        className: O.divider
+        className: x.divider
       }), E && !S && (0, r.jsx)(o.Ttm, {
-        className: O.filterBar,
+        className: x.filterBar,
         children: (0, r.jsx)(h.Z, {})
       })]
     })
@@ -129,25 +129,25 @@ let k = e => {
     };
     return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
   }, [t, n, i, B]), (0, r.jsx)("div", {
-    className: O.inventoryWrapper,
+    className: x.inventoryWrapper,
     children: (0, r.jsxs)("div", {
-      className: s()(O.inventory, {
-        [O.inventoryFilter]: j
+      className: s()(x.inventory, {
+        [x.inventoryFilter]: j
       }),
       children: [j && (0, r.jsxs)("div", {
-        className: O.controls,
+        className: x.controls,
         children: [(0, r.jsx)("div", {
-          className: O.controlsLeftSide,
+          className: x.controlsLeftSide,
           children: (0, r.jsx)(f.Z, {})
         }), (0, r.jsxs)("div", {
-          className: s()(O.controlsRightSide, {
-            [O.controlsRightSideResponsive]: t
+          className: s()(x.controlsRightSide, {
+            [x.controlsRightSideResponsive]: t
           }),
           children: [(0, r.jsxs)("div", {
-            className: O.sortBy,
+            className: x.sortBy,
             children: [(0, r.jsx)(o.Text, {
               variant: "text-md/semibold",
-              children: x.intl.string(x.t.uaX705)
+              children: O.intl.string(O.t.uaX705)
             }), (0, r.jsx)(C.Z, {})]
           }), (0, r.jsx)("div", {
             ref: R,
@@ -165,16 +165,16 @@ let k = e => {
                 }), i(e)
               },
               variant: "secondary",
-              text: x.intl.string(n ? x.t.fYtm6f : x.t["TeTYE+"]),
+              text: O.intl.string(n ? O.t.fYtm6f : O.t["TeTYE+"]),
               icon: o.gXV,
               iconPosition: "end"
             })
           })]
         }), n && t && (0, r.jsx)("div", {
-          className: O.filterOverlay,
+          className: x.filterOverlay,
           ref: I,
           children: (0, r.jsx)(o.Den, {
-            className: O.filterOverlayContent,
+            className: x.filterOverlayContent,
             children: (0, r.jsx)(h.Z, {})
           })
         })]

@@ -19,7 +19,7 @@ function f(t) {
       onConfirmDelete: p,
       onClose: y
     } = t,
-    O = function(t, e) {
+    d = function(t, e) {
       if (null == t) return {};
       var r, n, o = function(t, e) {
         if (null == t) return {};
@@ -34,7 +34,7 @@ function f(t) {
       }
       return o
     }(t, ["avatarId", "storageHash", "avatarDescription", "onConfirmDelete", "onClose"]);
-  let [d, m] = o.useState(false), {
+  let [O, m] = o.useState(false), {
     avatarSrc: v,
     eventHandlers: j
   } = (0, c.Z)({
@@ -45,7 +45,7 @@ function f(t) {
     onMouseEnter: g,
     onMouseLeave: x
   } = j;
-  return (0, n.jsxs)(i.ConfirmModal, (e = function(t) {
+  return (0, n.jsxs)(i.VoidConfirmModal, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var r = null != arguments[e] ? arguments[e] : {},
         n = Object.keys(r);
@@ -68,7 +68,7 @@ function f(t) {
     confirmText: l.intl.string(l.t.Lh0uyy),
     cancelText: l.intl.string(l.t["ETE/oC"]),
     confirmButtonColor: a.zx.Colors.RED,
-    loading: d,
+    loading: O,
     onConfirm: async () => {
       m(true);
       try {
@@ -79,7 +79,7 @@ function f(t) {
       y()
     },
     onClose: y
-  }, O), r = r = {
+  }, d), r = r = {
     children: [(0, n.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",

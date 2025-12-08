@@ -190,7 +190,7 @@ class K extends Chunk473749.PureComponent {
       let e = () => this.setState({
         shouldRenderOwnedTeamsModal: false
       });
-      return (0, Chunk54381.jsx)(Chunk481060.sYh, {
+      return (0, Chunk54381.jsx)(Chunk481060.SR, {
         dismissable: true,
         header: Chunk388032.intl.string(Chunk388032.t.UNGZDI),
         confirmText: Chunk388032.intl.string(Chunk388032.t.BddRzS),
@@ -207,7 +207,7 @@ class K extends Chunk473749.PureComponent {
       let e = () => this.setState({
         shouldRenderOwnedGuildsModal: false
       });
-      return (0, Chunk54381.jsx)(Chunk481060.sYh, {
+      return (0, Chunk54381.jsx)(Chunk481060.SR, {
         dismissable: true,
         header: Chunk388032.intl.string(Chunk388032.t.I5UrbV),
         confirmText: Chunk388032.intl.string(Chunk388032.t.BddRzS),
@@ -224,7 +224,7 @@ class K extends Chunk473749.PureComponent {
       let e = () => this.setState({
         shouldRenderDeleteAccountConfirmModal: false
       });
-      return (0, Chunk54381.jsx)(Chunk481060.sYh, {
+      return (0, Chunk54381.jsx)(Chunk481060.SR, {
         dismissable: true,
         header: Chunk388032.intl.string(Chunk388032.t["8lQ2rR"]),
         confirmText: Chunk388032.intl.string(Chunk388032.t["8lQ2rR"]),
@@ -242,7 +242,7 @@ class K extends Chunk473749.PureComponent {
         shouldRenderDisableAccountErrorModal: false,
         disableAccountErrorMessage: null
       });
-      return (0, Chunk54381.jsx)(Chunk481060.sYh, {
+      return (0, Chunk54381.jsx)(Chunk481060.SR, {
         dismissable: true,
         header: Chunk388032.intl.string(Chunk388032.t.LX0nT8),
         confirmText: Chunk388032.intl.string(Chunk388032.t.BddRzS),

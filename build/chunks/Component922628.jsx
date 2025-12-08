@@ -72,7 +72,7 @@ function f(e) {
   } = e, a = u(e, ["body"]);
   (0, i.ZDy)(async () => {
     let {
-      ConfirmModal: e
+      VoidConfirmModal: e
     } = await Promise.resolve().then(n.bind(n, 481060));
     return n => (0, r.jsx)(e, c(s({}, n, a), {
       children: (0, r.jsx)(i.Text, {

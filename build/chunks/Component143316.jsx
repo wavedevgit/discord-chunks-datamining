@@ -45,7 +45,7 @@ function f(e) {
     cancel: t,
     confirm: n
   } = e;
-  return (0, r.jsx)(a.sYh, {
+  return (0, r.jsx)(a.SR, {
     dismissable: true,
     header: u.intl.string(u.t.h4bVZ2),
     confirmText: u.intl.string(u.t.e6RscS),

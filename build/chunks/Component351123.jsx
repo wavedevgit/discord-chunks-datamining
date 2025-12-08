@@ -281,8 +281,8 @@ function z(e) {
       a = _.default.getCurrentUser();
     if (!r && null != await (0, v.T)(t.id, l.id)) return void(0, d.ZDy)(async () => {
       let {
-        ConfirmModal: e
-      } = await Promise.resolve().then(n.bind(n, 878678));
+        VoidConfirmModal: e
+      } = await Promise.resolve().then(n.bind(n, 288022));
       return n => (0, i.jsx)(e, H(V({}, n), {
         confirmButtonColor: c.Tt.BRAND,
         header: U.intl.string(U.t.ZzdgUm),

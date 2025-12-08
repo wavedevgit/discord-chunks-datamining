@@ -41,7 +41,7 @@ let p = function(t) {
       })
     }
   };
-  return (0, n.jsx)(c.ConfirmModal, (e = function(t) {
+  return (0, n.jsx)(c.VoidConfirmModal, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var r = null != arguments[e] ? arguments[e] : {},
         n = Object.keys(r);

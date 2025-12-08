@@ -36,7 +36,7 @@ function b(e) {
   }, [i, p]), j = e => {
     e.isValid() && f(e)
   };
-  return (0, n.jsx)(u.ConfirmModal, (t = function(e) {
+  return (0, n.jsx)(u.VoidConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);

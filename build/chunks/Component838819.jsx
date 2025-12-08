@@ -57,7 +57,7 @@ let H = e => {
     let {
       tab: t = A.AW.HOME
     } = e;
-    (0, m.z)(p.f), (0, O.f)();
+    (0, m.z)(p.f), (0, x.f)();
     let n = (0, g.Z)((0, o.Z)()),
       i = (0, a.e7)([h.default], () => h.default.getCurrentUser());
     (0, C.p2)();
@@ -79,7 +79,7 @@ let H = e => {
         sessionId: n,
         tab: F
       }),
-      V = (0, x.O)(W),
+      V = (0, O.O)(W),
       [z, G] = l.useState(),
       K = (0, a.e7)([b.Z], () => {
         var e;

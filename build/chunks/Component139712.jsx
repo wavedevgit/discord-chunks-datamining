@@ -81,7 +81,7 @@ function E(e) {
   let [E, b] = i.useState(l.KX.SERIES), y = (0, l.X2)(t.id, null), O = (null == y ? true : y.response) === c.gv.INTERESTED ? c.gv.UNINTERESTED : c.gv.INTERESTED, v = O === c.gv.INTERESTED ? u.intl.string(u.t.WtORed) : u.intl.string(u.t["8MPCVr"]), S = () => {
     E === l.KX.SERIES ? s.Z.updateRsvp(t.id, null, f, O) : s.Z.updateRsvp(t.id, n, f, O), null == _ || _(), g.onClose()
   };
-  return (0, r.jsx)(o.ConfirmModal, m(p({}, g), {
+  return (0, r.jsx)(o.VoidConfirmModal, m(p({}, g), {
     header: v,
     confirmText: u.intl.string(u.t.TyCVIq),
     cancelText: u.intl.string(u.t["ETE/oC"]),

@@ -61,15 +61,15 @@ let L = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   } = e, H = (0, W.Z)({
     userId: r.id,
     guildId: null
-  }), J = (0, T.Z)(r, null, a), K = (0, i.e7)([_.Z, j.Z], () => {
+  }), J = (0, T.Z)(r, null, a), V = (0, i.e7)([_.Z, j.Z], () => {
     let e = _.Z.getVoiceChannelId();
     return j.Z.getChannel(e)
   }), {
-    enabled: V
+    enabled: K
   } = x.Z.useExperiment({
-    guildId: null == K ? true : K.guild_id,
+    guildId: null == V ? true : V.guild_id,
     location: "GroupDMUserContextMenu"
-  }), $ = V ? null == K ? true : K.id : l.id, ee = (0, Q.Z)(r, $), en = (0, M.Z)(r.id, a), er = (0, P.Z)({
+  }), $ = K ? null == V ? true : V.id : l.id, ee = (0, Q.Z)(r, $), en = (0, M.Z)(r.id, a), er = (0, P.Z)({
     user: r,
     context: a
   }), et = (0, C.Z)({
@@ -78,7 +78,7 @@ let L = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     context: a
   }), ei = (0, O.Z)({
     user: r
-  }), es = (0, A.Z)(r.id), eo = (0, D.Z)(r.id, l.id), el = (0, R.Z)(r.id), ea = (0, g.B)({
+  }), eo = (0, A.Z)(r.id), es = (0, D.Z)(r.id, l.id), el = (0, R.Z)(r.id), ea = (0, g.B)({
     userId: r.id,
     channelId: l.id,
     guildId: l.getGuildId()
@@ -106,29 +106,29 @@ let L = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     guildId: true,
     onHeightUpdate: X
   }), eC = (0, k.Z)(r, l), ew = r.isNonUserBot(), ey = l.isManaged(), eP = null == (n = l.recipients) ? true : n.includes(r.id);
-  return (0, t.jsxs)(s.v2r, {
+  return (0, t.jsxs)(o.v2r, {
     navId: "user-context",
-    onClose: o.Zy,
+    onClose: s.Zy,
     "aria-label": G.intl.string(G.t.liqwPJ),
     onSelect: B,
     onInteraction: Y,
     children: [!ew && (0, t.jsxs)(t.Fragment, {
-      children: [(0, t.jsx)(s.kSQ, {
+      children: [(0, t.jsx)(o.kSQ, {
         children: e_
-      }), (0, t.jsxs)(s.kSQ, {
+      }), (0, t.jsxs)(o.kSQ, {
         children: [q && H, u && J, en, er, !ey && ee, q && et, q && ei, eZ]
-      }), F && (0, t.jsx)(s.kSQ, {
-        children: es
-      }), eP && (0, t.jsxs)(s.kSQ, {
-        children: [!ey && eo, eC]
-      }), (0, t.jsx)(s.kSQ, {
+      }), F && (0, t.jsx)(o.kSQ, {
+        children: eo
+      }), eP && (0, t.jsxs)(o.kSQ, {
+        children: [!ey && es, eC]
+      }), (0, t.jsx)(o.kSQ, {
         children: q && eu
-      }), (0, t.jsxs)(s.kSQ, {
+      }), (0, t.jsxs)(o.kSQ, {
         children: [F && el, F && ea, F && ed, eI, q && ec, em, ep, eh, q && eg, q && eb, F && ev]
-      }), L && (0, t.jsxs)(s.kSQ, {
+      }), L && (0, t.jsxs)(o.kSQ, {
         children: [eO, ej, ex]
       })]
-    }), (0, t.jsx)(s.kSQ, {
+    }), (0, t.jsx)(o.kSQ, {
       children: ef
     })]
   })

@@ -1,18 +1,18 @@
 /** Chunk was on web.js **/
-/** chunk id: 878678, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 288022, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ConfirmModal: () => p,
-  s: () => _
+  S: () => _,
+  VoidConfirmModal: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk693789 = require("./693789.jsx"),
-  Chunk481060 = require("./481060.js"),
   Chunk709692 = require("./709692.js"),
-  Chunk476100 = require("./476100.js");
+  Chunk481060 = require("./481060.js"),
+  Chunk933434 = require("./933434.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,23 +89,23 @@ function p(e) {
     },
     autoFocus: !S,
     children: f
-  })), (0, r.jsxs)(c.Y0, {
+  })), (0, r.jsxs)(l.Y0, {
     className: _,
     transitionState: y,
     impression: I,
     parentComponent: "ConfirmModal",
-    children: [null != a ? (0, r.jsx)(c.xB, {
+    children: [null != a ? (0, r.jsx)(l.xB, {
       "data-migration-pending": true,
       separator: false,
-      children: (0, r.jsx)(l.Heading, {
+      children: (0, r.jsx)(c.Heading, {
         variant: "heading-lg/semibold",
         children: a
       })
-    }) : null, (0, r.jsx)(c.hz, {
+    }) : null, (0, r.jsx)(l.hz, {
       "data-migration-pending": true,
       className: o()(u.content, b),
       children: d
-    }), (0, r.jsxs)(c.mz, {
+    }), (0, r.jsxs)(l.mz, {
       "data-migration-pending": true,
       children: [n, t]
     })]
@@ -113,7 +113,7 @@ function p(e) {
 }
 
 function _(e) {
-  return (0, r.jsx)(c.u_, {
+  return (0, r.jsx)(l.u_, {
     onCloseRequest: e.dismissable ? e.onCancel : null,
     renderModal: t => (0, r.jsx)(p, f({}, t, e))
   })

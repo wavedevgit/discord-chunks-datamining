@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk440617 = require("./440617.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
-let O = {
+let x = {
   flattenProductVariants: true
 };
 
@@ -94,14 +94,14 @@ function y(e) {
     }), W((e - 1) * U)
   }, [k, U, W]);
   return (0, r.jsxs)(_.zp.Provider, {
-    value: O,
+    value: x,
     children: [(0, r.jsxs)("div", {
       className: s()({
-        [x.productsEmpty]: K
+        [O.productsEmpty]: K
       }),
       children: [K && (0, r.jsx)(v.Z, {}), (0, r.jsxs)("div", {
-        className: s()(x.products, {
-          [x.loadIn]: V
+        className: s()(O.products, {
+          [O.loadIn]: V
         }),
         ref: M,
         children: [G && [...Array(U)].map((e, t) => (0, r.jsx)(b.Z, {}, t)), !G && D.map((e, t) => null == g.Z.getCategory(e.categorySkuId) ? null : (0, r.jsx)(d.k0, {
@@ -115,7 +115,7 @@ function y(e) {
         }, e.skuId))]
       })]
     }), A > U && (0, r.jsx)("div", {
-      className: x.paginationContainer,
+      className: O.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.DsT, {
           currentPage: N,

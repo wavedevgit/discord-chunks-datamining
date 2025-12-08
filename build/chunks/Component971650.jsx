@@ -152,7 +152,7 @@ class P extends Chunk473749.PureComponent {
     let {
       onClose: t
     } = this.props;
-    return (0, r.jsx)(l.sYh, {
+    return (0, r.jsx)(l.SR, {
       dismissable: true,
       header: g.intl.string(g.t.mwVXnI),
       confirmText: g.intl.string(g.t.MwSEoz),

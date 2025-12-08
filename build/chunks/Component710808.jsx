@@ -93,7 +93,7 @@ function L(e) {
     o = A.intl.formatToPlainString(A.t.ejOT95, {
       errorCode: a
     });
-  (0, c.h7j)(e => (0, r.jsx)(c.ConfirmModal, w(P({
+  (0, c.h7j)(e => (0, r.jsx)(c.VoidConfirmModal, w(P({
     header: n,
     confirmButtonColor: l.zx.Colors.BRAND,
     confirmText: A.intl.string(A.t.BddRzS)

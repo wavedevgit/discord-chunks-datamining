@@ -77,7 +77,7 @@ function I() {
 }
 
 function T() {
-  return !Chunk131951.Z.isSupported() && ((0, Chunk481060.h7j)(e => (0, r.jsx)(a.ConfirmModal, v(y({
+  return !Chunk131951.Z.isSupported() && ((0, Chunk481060.h7j)(e => (0, r.jsx)(a.VoidConfirmModal, v(y({
     header: E.intl.string(E.t.ilMTy0),
     confirmText: E.intl.string(E.t["BK8LK+"]),
     cancelText: E.intl.string(E.t["ETE/oC"]),

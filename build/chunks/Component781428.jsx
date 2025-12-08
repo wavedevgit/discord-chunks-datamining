@@ -684,7 +684,7 @@ class et extends(r = Chunk473749.PureComponent) {
               children: q.intl.string(q.t.iAcrqV)
             })
           }))
-        }) : (0, g.h7j)(e => (0, i.jsx)(g.ConfirmModal, $(X({
+        }) : (0, g.h7j)(e => (0, i.jsx)(g.VoidConfirmModal, $(X({
           header: q.intl.string(q.t.f5Pi7A),
           confirmText: q.intl.string(q.t.BddRzS),
           className: c.tq ? Y.mobile : ""

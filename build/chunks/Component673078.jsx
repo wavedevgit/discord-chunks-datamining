@@ -80,7 +80,7 @@ function O(t) {
       y(false)
     }
   };
-  return (0, n.jsxs)(a.ConfirmModal, (e = function(t) {
+  return (0, n.jsxs)(a.VoidConfirmModal, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var r = null != arguments[e] ? arguments[e] : {},
         n = Object.keys(r);

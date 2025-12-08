@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
 function f(e) {
   var t, r;
   let [f, b] = o.useState(false);
-  return (0, n.jsxs)(i.ConfirmModal, (t = function(e) {
+  return (0, n.jsxs)(i.VoidConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);

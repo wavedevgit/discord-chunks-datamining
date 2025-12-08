@@ -129,7 +129,7 @@ function S(e) {
       forwardOptions: s
     })
   }, [a, i, s]);
-  return (0, l.jsxs)(o.ConfirmModal, (n = function(e) {
+  return (0, l.jsxs)(o.VoidConfirmModal, (n = function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         l = Object.keys(t);

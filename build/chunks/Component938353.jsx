@@ -569,7 +569,7 @@ class tn extends(r = Chunk473749.Component) {
       channel: e,
       message: t
     } = this.props;
-    return (0, Chunk54381.jsxs)(Chunk481060.sYh, {
+    return (0, Chunk54381.jsxs)(Chunk481060.SR, {
       dismissable: true,
       header: Chunk388032.intl.string(Chunk388032.t.VL1KOk),
       confirmText: Chunk388032.intl.string(Chunk388032.t.YEHppG),
@@ -603,7 +603,7 @@ class tn extends(r = Chunk473749.Component) {
     } = this.state;
     return null == require ? void this.setState({
       showRemoveAttachmentModal: false
-    }) : (0, Chunk54381.jsx)(Chunk481060.sYh, {
+    }) : (0, Chunk54381.jsx)(Chunk481060.SR, {
       dismissable: true,
       header: Chunk388032.intl.string(Chunk388032.t.CbTIEo),
       confirmText: Chunk388032.intl.string(Chunk388032.t.kFwAsa),

@@ -313,8 +313,8 @@ function F(e) {
     onSave: () => {
       null != v.recurrenceRule && P && (0, N.BP)(d, v) ? (0, o.ZDy)(async () => {
         let {
-          ConfirmModal: e
-        } = await Promise.resolve().then(n.bind(n, 481060));
+          VoidConfirmModal: e
+        } = await Promise.resolve().then(n.bind(n, 288022));
         return t => {
           var n, l;
           return (0, r.jsxs)(e, (n = _({}, t), l = l = {

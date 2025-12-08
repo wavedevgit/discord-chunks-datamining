@@ -836,8 +836,8 @@ let _ = {
     let {
       default: e
     } = await require.e("63490").then(require.bind(require, 853268)), {
-      ConfirmModal: t
-    } = await Promise.resolve().then(require.bind(require, 878678)), {
+      VoidConfirmModal: t
+    } = await Promise.resolve().then(require.bind(require, 288022)), {
       Text: l,
       Heading: r,
       Anchor: i

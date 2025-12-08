@@ -238,7 +238,7 @@ function D(e) {
     cancel: t,
     confirm: n
   } = e;
-  return (0, i.jsx)(p.sYh, {
+  return (0, i.jsx)(p.SR, {
     dismissable: true,
     header: C.intl.string(C.t["cN/RFD"]),
     confirmText: C.intl.string(C.t["cN/RFD"]),

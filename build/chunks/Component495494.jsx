@@ -120,7 +120,7 @@ function h(e) {
       value: x,
       rows: 2
     })
-  })) : (0, n.jsxs)(a.ConfirmModal, O(y({
+  })) : (0, n.jsxs)(a.VoidConfirmModal, O(y({
     header: b.intl.formatToPlainString(b.t["1Ie87p"], {
       user: r.username
     }),

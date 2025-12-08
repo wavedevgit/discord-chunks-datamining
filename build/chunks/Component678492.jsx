@@ -20,7 +20,7 @@ class c extends Chunk317770.Z {
   handlePoggermodeTemporarilyDisabled() {
     (0, Chunk481060.h7j)(e => {
       var t, n;
-      return (0, r.jsx)(l.ConfirmModal, (t = function(e) {
+      return (0, r.jsx)(l.VoidConfirmModal, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

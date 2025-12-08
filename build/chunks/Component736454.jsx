@@ -32,7 +32,7 @@ function b(e) {
       return o
     }(e, ["onSubmit", "onClose"]);
   let [f, O] = o.useState(false);
-  return (0, n.jsxs)(i.ConfirmModal, (t = function(e) {
+  return (0, n.jsxs)(i.VoidConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);

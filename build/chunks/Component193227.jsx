@@ -32,7 +32,7 @@ function y(e) {
     category: t
   } = e, n = (0, a.e7)([u.default], () => u.default.getCurrentUser()), l = (0, p.l)(t.products), i = (0, f.a)()(l), s = (0, S.St)(i), o = (0, d.sp)();
   return null == n || 0 === s.length ? null : (0, r.jsx)("div", {
-    className: O.cardsContainer,
+    className: x.cardsContainer,
     children: s.map((e, t) => (0, r.jsx)(d.k0, {
       newValue: {
         tilePosition: t
@@ -40,7 +40,7 @@ function y(e) {
       children: (0, r.jsx)(_.Z, {
         skuId: e.skuId,
         skipLimitedTimeCheck: true,
-        onClickAnalytics: (0, b.wO)(e, x.AW.CATALOG, o)
+        onClickAnalytics: (0, b.wO)(e, O.AW.CATALOG, o)
       }, e.skuId)
     }, e.skuId))
   })
@@ -53,7 +53,7 @@ function k(e) {
     i(e)
   }, .15);
   return (0, r.jsxs)("div", {
-    className: O.categoryWrapper,
+    className: x.categoryWrapper,
     ref: s,
     children: [(0, r.jsx)(C.Z, {
       category: t
@@ -88,18 +88,18 @@ function T(e) {
     if (u === y.current) return;
     let e = S.findIndex(e => e.skuId === u);
     if (false === e) return;
-    let t = Math.floor(e / x.kN) + 1;
+    let t = Math.floor(e / O.kN) + 1;
     t !== o && a(t), y.current = u
   }, [u, S, a, o]);
   let T = l.useMemo(() => {
-    let e = (o - 1) * x.kN;
-    return S.slice(e, e + x.kN)
+    let e = (o - 1) * O.kN;
+    return S.slice(e, e + O.kN)
   }, [S, o]);
   l.useEffect(() => {
     (0, m.n)({
       sessionId: C,
       checkpoint: m.a.SHOP_MOUNTED,
-      tab: x.AW.CATALOG,
+      tab: O.AW.CATALOG,
       unpublishedCategoriesShown: b,
       cacheDisabled: _
     })
@@ -107,15 +107,15 @@ function T(e) {
     p || 0 === T.length || (0, m.n)({
       sessionId: C,
       checkpoint: m.a.SHOP_RENDERED,
-      tab: x.AW.CATALOG,
+      tab: O.AW.CATALOG,
       unpublishedCategoriesShown: b,
       cacheDisabled: _
     })
   }, [C, b, _, p, T.length]);
   let j = (0, g.FF)("CollectiblesBrowse");
   return p ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)("div", {
-    className: s()(O.categories, {
-      [O.categoriesNoFilter]: !j
+    className: s()(x.categories, {
+      [x.categoriesNoFilter]: !j
     }),
     children: [T.map((e, t) => (0, r.jsx)("div", {
       ref: t => i(e.skuId, t),
@@ -128,11 +128,11 @@ function T(e) {
         })
       })
     }, e.skuId)), (0, r.jsx)("div", {
-      className: O.paginationContainer,
+      className: x.paginationContainer,
       children: (0, r.jsx)(c.DsT, {
         currentPage: o,
         totalCount: S.length,
-        pageSize: x.kN,
+        pageSize: O.kN,
         onPageChange: a,
         disablePaginationGap: true
       })

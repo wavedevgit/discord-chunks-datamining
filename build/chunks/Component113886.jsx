@@ -18,14 +18,14 @@ let l = e => {
     onConfirm: b,
     onError: O,
     modalProps: f
-  } = e, [y, j] = c.useState(), g = async () => {
+  } = e, [y, j] = o.useState(), d = async () => {
     try {
       await i.Z.updateGuildJoinRequest(l, u, p, a.wB.REJECTED, y), null == b || b()
     } catch (e) {
       null == O || O()
     }
   };
-  return (0, n.jsx)(o.ConfirmModal, (t = function(e) {
+  return (0, n.jsx)(c.VoidConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -46,9 +46,9 @@ let l = e => {
     header: s.intl.string(s.t["mFP/qw"]),
     cancelText: s.intl.string(s.t["ETE/oC"]),
     confirmText: s.intl.string(s.t.hDtbsz),
-    onConfirm: g
+    onConfirm: d
   }, f), r = r = {
-    children: (0, n.jsx)(o.Kx8, {
+    children: (0, n.jsx)(c.Kx8, {
       value: y,
       onChange: j,
       maxLength: 160

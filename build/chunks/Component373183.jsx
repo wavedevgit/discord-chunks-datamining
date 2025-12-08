@@ -137,8 +137,8 @@ let k = Chunk473749.memo(function(e) {
                       analyticsLocations: [],
                       overrideGraphic: {
                         type: "video",
-                        src: O.Z,
-                        fallbackImageSrc: x.Z,
+                        src: x.Z,
+                        fallbackImageSrc: O.Z,
                         loop: true,
                         loopAt: 6,
                         aspectRatio: "16/9"

@@ -85,7 +85,7 @@ function R(e) {
     }, [l, U]),
     K = r.useCallback(() => {
       l.syncing || (0, f.h7j)(e => {
-        if (!G && l.expire_behavior === c.l.KICK) return (0, i.jsx)(f.ConfirmModal, D(A({}, e), {
+        if (!G && l.expire_behavior === c.l.KICK) return (0, i.jsx)(f.VoidConfirmModal, D(A({}, e), {
           header: T.intl.string(T.t.emx3lN),
           confirmText: T.intl.string(T.t.BddRzS),
           confirmButtonColor: m.Tt.BRAND,
@@ -95,7 +95,7 @@ function R(e) {
           })
         }));
         let t = l.expire_behavior === c.l.REMOVE_ROLE ? T.intl.string(T.t["6kpw4i"]) : T.intl.string(T.t.fQUQIJ);
-        return (0, i.jsx)(f.ConfirmModal, D(A({}, e), {
+        return (0, i.jsx)(f.VoidConfirmModal, D(A({}, e), {
           header: T.intl.string(T.t.emx3lN),
           confirmText: t,
           cancelText: T.intl.string(T.t["ETE/oC"]),

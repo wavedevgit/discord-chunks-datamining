@@ -156,7 +156,7 @@ function N(t) {
       action: g.l.DISMISS_BLOCK,
       location: u
     })
-  }, [u]), (0, r.jsx)(c.ConfirmModal, h(E({
+  }, [u]), (0, r.jsx)(c.VoidConfirmModal, h(E({
     confirmText: b.intl.string(b.t.l4Emac),
     cancelText: b.intl.string(b.t["ETE/oC"]),
     onCancel: () => {

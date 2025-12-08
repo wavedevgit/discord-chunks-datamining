@@ -41,7 +41,7 @@ function f(e) {
       return o
     }(e, ["header", "children", "sku_id", "sku_name", "guild_id", "cancelLabel", "confirmLabel", "transitionState", "onClose"]);
   let P = (0, o.e7)([c.default], () => c.default.getCurrentUser());
-  return (0, n.jsx)(i.ConfirmModal, (t = function(e) {
+  return (0, n.jsx)(i.VoidConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);

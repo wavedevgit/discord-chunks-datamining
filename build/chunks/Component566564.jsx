@@ -64,7 +64,8 @@ let P = e => {
       return e
     }({}, L.fH), i = i = {
       name: N.intl.string(N.t.bfXHLB),
-      summary: N.intl.string(N.t.MWDrou)
+      summary: N.intl.string(N.t.MWDrou),
+      title: N.intl.string(N.t.hhOtGl)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -114,7 +115,7 @@ let P = e => {
       errorMessage: F.message
     }) : M || 0 === W.length ? (0, r.jsxs)("div", {
       className: s()(A.loadingContainer, A.feedContent),
-      children: [(0, r.jsx)(O.Z, {
+      children: [(0, r.jsx)(x.Z, {
         isLoading: M,
         handleTransition: c,
         tab: b
@@ -122,7 +123,7 @@ let P = e => {
         isLoading: M,
         handleTransition: c,
         categories: []
-      }), (0, r.jsx)(x.Z, {
+      }), (0, r.jsx)(O.Z, {
         isLoading: M,
         title: b === L.AW.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
         numVisibleItems: u,
@@ -135,7 +136,7 @@ let P = e => {
           i = false;
         switch (e.type) {
           case o.z.HERO:
-            l = (0, r.jsx)(O.Z, {
+            l = (0, r.jsx)(x.Z, {
               isLoading: M,
               handleTransition: c,
               heroBlock: P ? R : e,
@@ -151,7 +152,7 @@ let P = e => {
             break;
           case o.z.FEED:
             let f = e.sortedSkuIds;
-            l = (0, r.jsx)(x.Z, {
+            l = (0, r.jsx)(O.Z, {
               title: b === L.AW.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
               isLoading: M || g,
               numVisibleItems: u,

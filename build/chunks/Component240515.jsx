@@ -98,7 +98,7 @@ function h(t) {
       action: j.l.DISMISS_IGNORE,
       location: N
     })
-  }, [N]), (0, r.jsx)(c.ConfirmModal, I(b({
+  }, [N]), (0, r.jsx)(c.VoidConfirmModal, I(b({
     confirmText: g.intl.string(g.t.ytCpKs),
     cancelText: g.intl.string(g.t["ETE/oC"]),
     onConfirm: () => {
