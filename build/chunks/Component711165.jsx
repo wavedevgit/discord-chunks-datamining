@@ -77,7 +77,7 @@ function T() {
             }
             return i
           }(e, ["ref"]);
-        return (0, r.jsx)(h.Den, (n = function(e) {
+        return (0, r.jsx)(f.Den, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -196,7 +196,7 @@ let R = Chunk473749.memo(function(e) {
       default:
         (0, C.vE)(e)
     }
-  }(t.state), f = i.useCallback(() => {
+  }(t.state), h = i.useCallback(() => {
     (0, m.gD)(t.scheduledMessageId).then(() => {
       (0, y.C$)()
     }).catch(e => {
@@ -212,10 +212,10 @@ let R = Chunk473749.memo(function(e) {
       [N.messageSendError]: c,
       [N.messageSendScheduled]: !c
     }),
-    children: l ? (0, r.jsx)(h.$jN, {
+    children: l ? (0, r.jsx)(f.$jN, {
       className: N.messageSpinner
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(h.Text, {
+      children: [(0, r.jsx)(f.Text, {
         variant: "text-xs/semibold",
         color: c ? "text-feedback-critical" : "text-feedback-positive",
         className: N.messageState,
@@ -232,13 +232,13 @@ let R = Chunk473749.memo(function(e) {
         }, a.id), (0, r.jsxs)(u.hE2, {
           size: "sm",
           children: [(0, r.jsx)(u.hU, {
-            icon: h.T39,
+            icon: f.T39,
             onClick: g,
             variant: "icon-only",
             "aria-label": P.intl.string(P.t.SBcdAN)
           }), (0, r.jsx)(u.hU, {
-            icon: h.k$p,
-            onClick: f,
+            icon: f.k$p,
+            onClick: h,
             "aria-label": P.intl.string(P.t.O3sL8F),
             variant: "icon-only"
           })]

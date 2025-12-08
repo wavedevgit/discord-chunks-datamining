@@ -22,10 +22,10 @@ function p(e) {
   } = e, n = (0, c.If)();
   return (0, r.jsx)(l.u, {
     asContainer: true,
-    text: h.intl.string(h.t["lMR96+"]),
+    text: f.intl.string(f.t["lMR96+"]),
     children: (0, r.jsxs)(o.P3F, {
-      "aria-label": "".concat(h.intl.string(h.t["lMR96+"]), ", ").concat(n),
-      className: f.friendRequestsButton,
+      "aria-label": "".concat(f.intl.string(f.t["lMR96+"]), ", ").concat(n),
+      className: h.friendRequestsButton,
       onClick: () => {
         u.default.track(d.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: s.ud.FRIEND_REQUESTS_BUTTON_CLICK

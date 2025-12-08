@@ -19,21 +19,21 @@ function d(e) {
     show: n,
     active: i,
     onAnimationStart: d,
-    onAnimationRest: h
-  } = e, f = {}, p = {};
-  f.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", p.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
+    onAnimationRest: f
+  } = e, h = {}, p = {};
+  h.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", p.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
   let g = (0, s.dQu)(a.Z.unsafe_rawColors.BRAND_500).hex(),
     m = (0, s.dQu)(a.Z.unsafe_rawColors.PRIMARY_630).hex();
-  i && null == t.icon && (f.backgroundColor = g, p.backgroundColor = m);
+  i && null == t.icon && (h.backgroundColor = g, p.backgroundColor = m);
   let b = (0, s.Yzy)(n, {
-    from: f,
+    from: h,
     enter: p,
-    leave: f,
+    leave: h,
     config: {
       duration: 100
     },
     onStart: d,
-    onRest: h
+    onRest: f
   });
   return (0, r.jsx)(r.Fragment, {
     children: b((e, n, i) => n && (0, r.jsx)("div", {

@@ -29,7 +29,7 @@ function y(e) {
     return null != (n = null == (e = g.default.getUser(t.inviter_id)) ? true : e.username) ? n : ""
   }), s = (0, m.vc)(o()(t.created_at), "LT"), c = i.useRef(null), {
     isHoveringOrFocusing: d
-  } = (0, h.Z)(c);
+  } = (0, f.Z)(c);
   return i.useEffect(() => {
     n || (0, p.Br)(t)
   }, [t, n]), (0, r.jsxs)("div", {
@@ -93,7 +93,7 @@ function O(e) {
     expired: t,
     invite: n,
     isHoveringInvite: l
-  } = e, o = (0, a.e7)([f.Z], () => f.Z.isInviteGameInstalled(n)), h = (0, a.e7)([f.Z], () => f.Z.isInviteJoinable(n)), [g, m] = i.useState(false), y = i.useCallback(async () => {
+  } = e, o = (0, a.e7)([h.Z], () => h.Z.isInviteGameInstalled(n)), f = (0, a.e7)([h.Z], () => h.Z.isInviteJoinable(n)), [g, m] = i.useState(false), y = i.useCallback(async () => {
     m(true);
     try {
       await (0, p.MH)(n)
@@ -116,7 +116,7 @@ function O(e) {
       children: b.intl.string(b.t["s+J8Dl"])
     });
     else return null;
-  return o && h ? (0, r.jsx)(c.zx, {
+  return o && f ? (0, r.jsx)(c.zx, {
     className: _.primaryButton,
     color: c.Tt.GREEN,
     disabled: g,

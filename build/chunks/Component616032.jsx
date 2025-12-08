@@ -1,7 +1,7 @@
 /** Chunk was on 46467 **/
 /** chunk id: 616032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,11 +14,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk426521 = require("./426521.jsx"),
   Chunk837284 = require("./837284.js");
 
-function f(e) {
+function h(e) {
   let {
     initialized: t,
     items: n,
-    loading: f,
+    loading: h,
     loadMore: p
   } = e, g = i.useRef(null), m = (0, s.Z)("for-you", g);
   (0, c.Z)({
@@ -75,7 +75,7 @@ function f(e) {
           }
           return e
         }({
-          className: h.container,
+          className: f.container,
           ref: e => {
             var t;
             g.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
@@ -84,8 +84,8 @@ function f(e) {
           onScroll: b,
           children: [(0, r.jsx)(d.U, {
             items: n
-          }), f ? (0, r.jsx)(a.$jN, {
-            className: h.spinner
+          }), h ? (0, r.jsx)(a.$jN, {
+            className: f.spinner
           }) : null]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
@@ -100,6 +100,6 @@ function f(e) {
       }
     })
   }) : (0, r.jsx)(a.$jN, {
-    className: h.loadingPlaceholder
+    className: f.loadingPlaceholder
   })
 }

@@ -173,10 +173,10 @@ let k = Chunk473749.memo(function(e) {
   }), W = (0, s.e7)([O.default], () => O.default.getUser(t.ownerId)), z = i.useCallback(e => {
     (0, b.ok)(t, !e.shiftKey, N.on.CHANNEL_LIST)
   }, [t]), K = i.useCallback(() => {
-    h.Z.preload(t.guild_id, t.id)
+    f.Z.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), Y = i.useCallback(e => {
     let i = _.Z.getChannel(t.id);
-    null != i && (0, f.jW)(e, async () => {
+    null != i && (0, h.jW)(e, async () => {
       let {
         default: e
       } = await n.e("40157").then(n.bind(n, 422200));

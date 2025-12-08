@@ -173,7 +173,7 @@ class eZ extends Chunk473749.PureComponent {
           visibleContent: n,
           markAsDismissed: o
         } = e;
-        return n === d.z.ACCOUNT_LINK_INVITE_FRIENDS ? (0, r.jsx)(f.J2, {
+        return n === d.z.ACCOUNT_LINK_INVITE_FRIENDS ? (0, r.jsx)(h.J2, {
           title: eC.intl.string(eC.t["0l2pEt"]),
           body: eC.intl.string(eC.t["DSZUK/"]),
           targetElementRef: this.inviteButtonRef,
@@ -198,7 +198,7 @@ class eZ extends Chunk473749.PureComponent {
               }), (0, m.h7)(l, false)
             }
           }]
-        }) : n === d.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER ? (0, r.jsx)(f.J2, {
+        }) : n === d.z.POST_ACCOUNT_CONNECTION_RTC_POPOVER ? (0, r.jsx)(h.J2, {
           title: eC.intl.string(eC.t.MxAlrB),
           body: eC.intl.string(eC.t["/UTTEg"]),
           targetElementRef: this.accountLinkUpsellTargetRef,
@@ -210,15 +210,15 @@ class eZ extends Chunk473749.PureComponent {
           actions: [{
             text: eC.intl.string(eC.t.aRIFWD),
             onClick: () => {
-              o(ev.L.TAKE_ACTION), window.open(eh.Z.getArticleURL(ey.BhN.IN_GAME_FEATURES), "_blank")
+              o(ev.L.TAKE_ACTION), window.open(ef.Z.getArticleURL(ey.BhN.IN_GAME_FEATURES), "_blank")
             }
           }],
           shouldShow: true,
           onRequestClose: () => o(ev.L.USER_DISMISS)
-        }) : n === d.z.ACCOUNT_LINK_PROMPT ? (0, r.jsx)(f.J2, {
+        }) : n === d.z.ACCOUNT_LINK_PROMPT ? (0, r.jsx)(h.J2, {
           graphic: {
             type: "dynamic",
-            component: h.DynamicGraphicComponent.ACCOUNT_LINK_DISPLAY,
+            component: f.DynamicGraphicComponent.ACCOUNT_LINK_DISPLAY,
             props: {
               application: i
             }
@@ -325,7 +325,7 @@ class eZ extends Chunk473749.PureComponent {
           children: Chunk442837
         })
       }),
-      h = (0, Chunk54381.jsx)(Chunk690221.Z, {
+      f = (0, Chunk54381.jsx)(Chunk690221.Z, {
         href: module,
         onClick: this.handleApplicationLinkClick,
         children: (0, Chunk54381.jsx)(Chunk115530.Z, {
@@ -333,7 +333,7 @@ class eZ extends Chunk473749.PureComponent {
           children: exports.name
         })
       }),
-      f = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      h = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk925329.Z, {
           className: Chunk800339.gameIcon,
           game: exports,
@@ -479,8 +479,8 @@ let ew = (0, Chunk730749.Z)(function(e) {
     a = (0, u.e7)([U.ZP, eu.Z], () => (0, z.Z)(U.ZP, eu.Z)),
     s = (0, u.e7)([es.Z, et.Z], () => et.Z.getChannel(es.Z.getVoiceChannelId())),
     d = (0, u.e7)([E.ZP], () => E.ZP.getConnectedActivityChannelId()),
-    h = (0, u.e7)([et.Z], () => et.Z.getChannel(d)),
-    f = (0, u.e7)([er.Z], () => er.Z.getGuild(null == h ? true : h.guild_id)),
+    f = (0, u.e7)([et.Z], () => et.Z.getChannel(d)),
+    h = (0, u.e7)([er.Z], () => er.Z.getGuild(null == f ? true : f.guild_id)),
     [p, g] = (0, u.Wu)([$.Z], () => [$.Z.getCurrentUserActiveStream(), $.Z.getStreamerActiveStreamMetadata()]),
     m = (0, u.e7)([j.Z], () => j.Z.useReducedMotion),
     b = (0, u.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()),
@@ -490,10 +490,10 @@ let ew = (0, Chunk730749.Z)(function(e) {
     C = (0, u.e7)([D.Z], () => D.Z.getFakeGameData()),
     I = (0, u.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()),
     w = (0, S.Z)() && null != I && (0, x.R)(),
-    T = (0, u.e7)([ei.Z], () => (0, V.Z)(ei.Z) && (0, ef.isWindows)()),
+    T = (0, u.e7)([ei.Z], () => (0, V.Z)(ei.Z) && (0, eh.isWindows)()),
     R = (0, u.e7)([eo.Z], () => null != o ? eo.Z.findActivity(o, e => e.type === ey.IIU.PLAYING) : null),
     M = null != p && p.ownerId === o && p.state !== ey.jm8.ENDED,
-    L = (0, u.e7)([ec.default, ea.Z], () => null != h ? (0, A.F6)(h, ec.default, ea.Z) : true),
+    L = (0, u.e7)([ec.default, ea.Z], () => null != f ? (0, A.F6)(f, ec.default, ea.Z) : true),
     k = (0, q.Z)(),
     [B, H] = i.useState(false),
     W = (0, u.e7)([Y.Z], () => Y.Z.getWindowOpen(ey.KJ3.ACTIVITY_POPOUT)),
@@ -501,7 +501,7 @@ let ew = (0, Chunk730749.Z)(function(e) {
       hasAlreadyLinked: K,
       canStartAuthorization: Q,
       connectionApp: J,
-      startAuthorization: eh
+      startAuthorization: ef
     } = (0, N.F)(O, {
       allowedFlows: [N.r.RPC, N.r.WEB]
     }),
@@ -539,12 +539,12 @@ let ew = (0, Chunk730749.Z)(function(e) {
     application: O,
     useReducedMotion: m,
     isStreaming: M,
-    channel: h,
+    channel: f,
     canStream: y,
     stream: p,
     streamMetadata: g,
     channelName: L,
-    guildForConnectedChannel: f,
+    guildForConnectedChannel: h,
     streamQualityIndicator: k,
     isForceShowSharingPopout: B,
     setIsForceShowSharingPopout: H,
@@ -557,7 +557,7 @@ let ew = (0, Chunk730749.Z)(function(e) {
     accountLinkButtonRef: eC,
     startAuthorization: function() {
       for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-      return em(true), eh(...t)
+      return em(true), ef(...t)
     },
     didStartAuthorization: eg,
     connectionApp: J

@@ -90,13 +90,13 @@ function Z(e) {
         text: S.intl.string(S.t.y2b7CA),
         className: I.newBadge
       }) : (0, r.jsx)("img", {
-        src: (0, f.b)("server_products/storefront/money.gif"),
+        src: (0, h.b)("server_products/storefront/money.gif"),
         className: I.money,
         alt: ""
       }), n && (0, r.jsx)(c.P3F, {
         className: I.closeButton,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(x.rMx.GUILD_SHOP_PREVIEW_CLICK, N(P({}, (0, h.hH)(t)), {
+          if (e.stopPropagation(), (0, b.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(x.rMx.GUILD_SHOP_PREVIEW_CLICK, N(P({}, (0, f.hH)(t)), {
               action_taken: E.mz.DISMISS_CHANNEL_ROW
             })), !u || !C) {
             var n;

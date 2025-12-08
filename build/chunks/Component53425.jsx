@@ -34,7 +34,7 @@ let g = Chunk473749.memo(function(e) {
     className: p.container,
     children: (0, r.jsxs)("ul", {
       role: "group",
-      "aria-label": f.intl.formatToPlainString(f.t.EiyIi6, {
+      "aria-label": h.intl.formatToPlainString(h.t.EiyIi6, {
         channelName: t.name
       }),
       children: [(0, r.jsx)("div", {
@@ -44,7 +44,7 @@ let g = Chunk473749.memo(function(e) {
         style: {
           bottom: ("cozy" === m ? 28 : 24) + _
         }
-      }), b.map((e, t) => (0, r.jsx)(h.Z, {
+      }), b.map((e, t) => (0, r.jsx)(f.Z, {
         thread: e,
         isSelectedChannel: (null == n ? true : n.id) === e.id,
         isSelectedVoice: i === e.id,

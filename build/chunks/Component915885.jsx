@@ -28,7 +28,7 @@ function _(e) {
     _ && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
       status: d.wB.SUBMITTED,
-      limit: h.p
+      limit: f.p
     })
   }, [_, t]);
   let v = i.useCallback(() => {
@@ -37,7 +37,7 @@ function _(e) {
     j = (0, s.XL)(t.id, o.z.MEMBERS_LAUNCH_UPSELL);
   return (0, r.jsx)("div", {
     ref: j,
-    children: (0, r.jsx)(f.m, {
+    children: (0, r.jsx)(h.m, {
       id: "members-".concat(t.id),
       renderIcon: e => (0, r.jsx)(a.BFJ, {
         size: "md",

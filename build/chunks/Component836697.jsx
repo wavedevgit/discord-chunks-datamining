@@ -24,15 +24,15 @@ function y(e) {
   let {
     onActivate: t,
     children: n
-  } = e, s = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), h = i.useCallback(() => {
+  } = e, s = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), f = i.useCallback(() => {
     c.ZP.clearCoachmark()
-  }, []), f = (0, a.Z)(d), p = i.useRef(null);
+  }, []), h = (0, a.Z)(d), p = i.useRef(null);
   return i.useEffect(() => {
-    if (d && d !== f) {
+    if (d && d !== h) {
       var e, n, r, i, l;
       t(), null == (l = p.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
-  }, [p, d, f, t]), (0, r.jsxs)("div", {
+  }, [p, d, h, t]), (0, r.jsxs)("div", {
     className: _.container,
     children: [(0, r.jsx)(o.yRy, {
       ref: p,
@@ -57,7 +57,7 @@ function y(e) {
             size: "sm",
             text: b.intl.string(b.t["4r+amb"]),
             fullWidth: true,
-            onClick: h
+            onClick: f
           })]
         }), (0, r.jsx)("div", {
           className: _.popoutCaretLeft
@@ -108,13 +108,13 @@ function O(e) {
   let {
     onActivate: t
   } = e, [n, O] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, p.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
-    let e = (0, f.qQ)({
-      folderId: h.S.PENDING_JOIN_REQUESTS_FOLDER,
+    let e = (0, h.qQ)({
+      folderId: f.S.PENDING_JOIN_REQUESTS_FOLDER,
       folderName: b.intl.string(b.t["scsU+l"]),
       expanded: n,
       guildIds: []
     });
-    for (let t of x) e.children.push((0, f.Mg)(t, e.id));
+    for (let t of x) e.children.push((0, h.Mg)(t, e.id));
     return e
   }, [x, n]);
   i.useEffect(() => {
@@ -143,7 +143,7 @@ function O(e) {
         })
       }),
       renderChildNode: function(e, t, n) {
-        return e.type !== f.eD.GUILD ? null : (0, r.jsx)(m.Z, {
+        return e.type !== h.eD.GUILD ? null : (0, r.jsx)(m.Z, {
           guildNode: e,
           "aria-setsize": n,
           "aria-posinset": t

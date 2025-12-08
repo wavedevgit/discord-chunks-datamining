@@ -82,9 +82,9 @@ function S(e) {
     m.default.track(x.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
-  }, []), i.useEffect(() => (h.Z.subscribe("CONNECTION_OPEN", T), () => {
-    h.Z.unsubscribe("CONNECTION_OPEN", T)
-  }), [T]), (0, f.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+  }, []), i.useEffect(() => (f.Z.subscribe("CONNECTION_OPEN", T), () => {
+    f.Z.unsubscribe("CONNECTION_OPEN", T)
+  }), [T]), (0, h.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
     b.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let U = (0, g.Z)("unreads", A);

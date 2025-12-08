@@ -45,12 +45,12 @@ function N(e) {
     isNewChannel: M,
     muted: L,
     resolvedUnreadSetting: k
-  } = e, G = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), U = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), W = (0, h.PK)(n.id) && n.isGuildStageVoice(), z = (0, v.ZP)({
+  } = e, G = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), U = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), W = (0, f.PK)(n.id) && n.isGuildStageVoice(), z = (0, v.ZP)({
     channel: n,
     locked: F,
     video: (H || W) && null == V,
     selected: N
-  }), K = (0, i.e7)([f.Z], () => f.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([p.Z], () => {
+  }), K = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([p.Z], () => {
     var e, t;
     return null != (t = null == (e = p.Z.getGuild(n.guild_id)) ? true : e.features.has(E.GuildFeatures.COMMUNITY)) && t
   });

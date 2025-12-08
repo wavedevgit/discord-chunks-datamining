@@ -28,17 +28,17 @@ function _(e, t) {
     }),
     a = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     u = null == a ? true : a.allPowerups[i.A$],
-    f = (0, d.ZP)(e, u),
+    h = (0, d.ZP)(e, u),
     _ = (0, c.q8)(e, t),
     y = null == u ? true : u.storeRemovalDate,
     O = null != (n = null == r ? true : r.has(g.GuildFeatures.PARTNERED)) && n,
-    v = _ && null != y && !O && f.type === p.A3.POWERUP_ACTIVATED,
+    v = _ && null != y && !O && h.type === p.A3.POWERUP_ACTIVATED,
     j = v ? {
       title: b.intl.formatToPlainString(m.default.mgoPkU, {
         perkName: null == u ? true : u.title
       }),
       description: b.intl.formatToPlainString(m.default.UT9pkI, {
-        dateString: (0, h.Z)(y)
+        dateString: (0, f.Z)(y)
       })
     } : null;
   return {
@@ -65,14 +65,14 @@ function y(e, t) {
     w = null != (O = null == Z ? true : Z.has(g.GuildFeatures.PARTNERED)) && O,
     {
       onActivate: T
-    } = (0, f._C)(e, N),
+    } = (0, h._C)(e, N),
     A = !j && x && C && null != S && !w && I.type === p.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
     R = r.useCallback(e => {
       T(e)
     }, [T]),
     D = r.useMemo(() => {
       if (!A) return null;
-      let e = (0, h.Z)(P),
+      let e = (0, f.Z)(P),
         t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LD"]) : true;
       return {
         firstHeader: S.title,

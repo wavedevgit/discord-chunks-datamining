@@ -1,7 +1,7 @@
 /** Chunk was on 46467 **/
 /** chunk id: 400565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => h
+  U: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,24 +27,24 @@ let d = e => {
       })
     })
   },
-  h = Chunk473749.memo(function(e) {
+  f = Chunk473749.memo(function(e) {
     var t, n;
     let {
       item: i
-    } = e, h = null, f = false, p = (0, l.e7)([s.Z], () => s.Z.getGuild(i.guild_id));
-    if (null != i.icon_name) h = (0, r.jsx)("img", {
+    } = e, f = null, h = false, p = (0, l.e7)([s.Z], () => s.Z.getGuild(i.guild_id));
+    if (null != i.icon_name) f = (0, r.jsx)("img", {
       alt: "",
       src: c.VH[(0, c.RB)(i.icon_name)]
     });
     else if (null != i.other_user) {
       let e = i.other_user instanceof a.Z ? i.other_user : new a.Z(i.other_user),
         n = null != (t = e.globalName) ? t : e.username;
-      h = (0, r.jsx)("img", {
+      f = (0, r.jsx)("img", {
         alt: n,
         className: u.image,
         src: e.getAvatarURL(true, 40)
-      }), f = true
-    } else h = null != i.icon_url ? (0, r.jsx)("img", {
+      }), h = true
+    } else f = null != i.icon_url ? (0, r.jsx)("img", {
       alt: null != (n = null == p ? true : p.name) ? n : "",
       className: u.image,
       src: i.icon_url
@@ -64,10 +64,10 @@ let d = e => {
         className: u.mask,
         children: (0, r.jsx)("div", {
           className: u.imageContainer,
-          style: f ? true : {
+          style: h ? true : {
             backgroundColor: (0, c.Vu)(i)
           },
-          children: h
+          children: f
         })
       }), (0, r.jsx)(d, {
         mask: g

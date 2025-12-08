@@ -63,7 +63,7 @@ let _ = Chunk473749.memo(function(e) {
       },
       className: m.progressBarContainer,
       onClick: function() {
-        (0, d.uL)(f.Z5c.CHANNEL(_.id, p.oC.GUILD_HOME))
+        (0, d.uL)(h.Z5c.CHANNEL(_.id, p.oC.GUILD_HOME))
       },
       children: [(0, r.jsxs)("div", {
         className: m.progressBarText,
@@ -81,11 +81,11 @@ let _ = Chunk473749.memo(function(e) {
               total: j.toString(),
               completed: v.toString()
             })
-          }), (0, r.jsx)(h.Z, {
+          }), (0, r.jsx)(f.Z, {
             className: m.arrow,
             width: 16,
             height: 16,
-            direction: h.Z.Directions.RIGHT
+            direction: f.Z.Directions.RIGHT
           })]
         })]
       }), (0, r.jsx)(s.Exd, {

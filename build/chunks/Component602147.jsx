@@ -24,25 +24,25 @@ let m = Chunk473749.forwardRef(function(e, t) {
     className: _
   } = e, y = i.useCallback(() => {
     (0, a.k5)({
-      source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
+      source: f.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
     });
-    let e = true !== b ? h.GlobalDiscoveryTab.QUESTS : s.Z.getField("selectedTab");
+    let e = true !== b ? f.GlobalDiscoveryTab.QUESTS : s.Z.getField("selectedTab");
     switch (e) {
-      case h.GlobalDiscoveryTab.QUESTS:
+      case f.GlobalDiscoveryTab.QUESTS:
         return (0, c.transitionToGlobalDiscovery)({
-          tab: h.GlobalDiscoveryTab.QUESTS,
+          tab: f.GlobalDiscoveryTab.QUESTS,
           location: p.dr.DISCOVERY_COMPASS,
           questContent: l.j.DISCOVERY_COMPASS,
           questId: b
         });
-      case h.GlobalDiscoveryTab.SERVERS:
+      case f.GlobalDiscoveryTab.SERVERS:
         return (0, c.transitionToGlobalDiscovery)({
-          tab: h.GlobalDiscoveryTab.SERVERS,
-          entrypoint: f.Qq.GUILDS_BAR
+          tab: f.GlobalDiscoveryTab.SERVERS,
+          entrypoint: h.Qq.GUILDS_BAR
         });
-      case h.GlobalDiscoveryTab.APPS:
+      case f.GlobalDiscoveryTab.APPS:
         return (0, c.transitionToGlobalDiscovery)({
-          tab: h.GlobalDiscoveryTab.APPS,
+          tab: f.GlobalDiscoveryTab.APPS,
           newSessionState: {
             entrypoint: {
               name: u.xF.GLOBAL_DISCOVERY_BUTTON

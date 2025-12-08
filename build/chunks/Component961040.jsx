@@ -23,12 +23,12 @@ function b(e) {
     children: t,
     popoutPosition: n,
     popoutAlign: l,
-    targetElementRef: f,
+    targetElementRef: h,
     spacing: b = 0
   } = e, {
     isOpen: y,
     setIsOpen: O
-  } = (0, h.Z)(), v = i.useCallback(() => {
+  } = (0, f.Z)(), v = i.useCallback(() => {
     O(false)
   }, [O]), j = i.useCallback(() => {
     O(!y)
@@ -45,7 +45,7 @@ function b(e) {
     location: "NotificationsInboxPopout"
   });
   return (0, r.jsx)(a.yRy, {
-    targetElementRef: f,
+    targetElementRef: h,
     shouldShow: y,
     align: l,
     animation: x === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,

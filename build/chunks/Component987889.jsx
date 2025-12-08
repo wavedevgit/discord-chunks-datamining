@@ -69,7 +69,7 @@ function E(e) {
     message: l,
     Icon: s,
     interactionType: c
-  } = e, [u, d] = (0, i.useState)(false), h = (0, g.fJ)();
+  } = e, [u, d] = (0, i.useState)(false), f = (0, g.fJ)();
   return (0, r.jsx)(o.u, {
     text: t,
     position: "top",
@@ -83,7 +83,7 @@ function E(e) {
         (0, g.Qz)({
           message: l,
           interactionType: c,
-          viewId: h
+          viewId: f
         }), e.stopPropagation(), n(l)
       },
       children: (0, r.jsx)(s, {
@@ -103,7 +103,7 @@ function S(e) {
     Menu: c,
     interactionType: u,
     actionType: d
-  } = e, h = (0, g.fJ)(), [f, p] = (0, i.useState)(false), [m, _] = (0, i.useState)(false), y = (0, i.useRef)(null), {
+  } = e, f = (0, g.fJ)(), [h, p] = (0, i.useState)(false), [m, _] = (0, i.useState)(false), y = (0, i.useRef)(null), {
     openMenu: O,
     closeMenu: C
   } = (0, b.z)();
@@ -140,7 +140,7 @@ function S(e) {
           (0, g.Qz)({
             message: n,
             interactionType: u,
-            viewId: h
+            viewId: f
           }), e.stopPropagation();
           let t = !m;
           _(t), t ? O(n.id, d) : C(n.id, d)
@@ -149,7 +149,7 @@ function S(e) {
           message: n,
           "aria-label": l,
           className: v.actionIcon,
-          size: f ? "sm" : "xs"
+          size: h ? "sm" : "xs"
         }))
       })
     })
@@ -175,13 +175,13 @@ let I = {
   [Chunk982183.r0.BOOKMARK]: {
     type: "menu",
     label: Chunk388032.intl.string(Chunk388032.t["9p3D9p"]),
-    Icon: e => null != f.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.plf, j({}, e)) : (0, r.jsx)(a.gt9, j({}, e)),
+    Icon: e => null != h.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.plf, j({}, e)) : (0, r.jsx)(a.gt9, j({}, e)),
     interactionType: Chunk804932.s_.BOOKMARK,
     Menu: e => {
       let {
         message: t,
         renderPopoutProps: n
-      } = e, i = (0, l.e7)([f.Z], () => f.Z.getSavedMessage(t.channel_id, t.id)), o = (0, d.x)({
+      } = e, i = (0, l.e7)([h.Z], () => h.Z.getSavedMessage(t.channel_id, t.id)), o = (0, d.x)({
         message: t,
         savedMessage: i
       });
@@ -194,7 +194,7 @@ let I = {
           id: "remove-from-for-later",
           label: O.intl.string(O.t.SvXS1Z),
           icon: a.plf,
-          action: () => (0, h.x)({
+          action: () => (0, f.x)({
             channelId: t.channel_id,
             messageId: t.id,
             dueAt: i.saveData.dueAt,
@@ -204,7 +204,7 @@ let I = {
           id: "create-bookmark",
           label: O.intl.string(O.t["9p3D9p"]),
           icon: a.gt9,
-          action: () => (0, h.z)({
+          action: () => (0, f.z)({
             channelId: t.channel_id,
             messageId: t.id,
             displayToast: true

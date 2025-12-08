@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk815523 = require("./815523.js");
 
-function h(e) {
+function f(e) {
   let {
     windowKey: t,
     channel: n
@@ -37,7 +37,7 @@ function h(e) {
 function b(e, t) {
   let n = (0, c.P)(t),
     o = i.useCallback(() => {
-      s.open("".concat(u.KJ3.CHANNEL_POPOUT, "-").concat(e.id), t => (0, r.jsx)(h, {
+      s.open("".concat(u.KJ3.CHANNEL_POPOUT, "-").concat(e.id), t => (0, r.jsx)(f, {
         windowKey: t,
         channel: e
       }), {

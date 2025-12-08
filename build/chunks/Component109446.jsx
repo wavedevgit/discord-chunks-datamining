@@ -36,7 +36,7 @@ function x(e) {
     }).reverse().value()
   }), c = t.isForumLikeChannel() ? 5 : 3;
   return i.useEffect(() => {
-    (0, h.q)()
+    (0, f.q)()
   }, []), (0, r.jsxs)("div", {
     className: j.popout,
     children: [(0, r.jsx)(s.Text, {
@@ -87,11 +87,11 @@ function x(e) {
 function C(e) {
   let {
     thread: t
-  } = e, n = (0, a.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, h.Ok)(t);
+  } = e, n = (0, a.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, f.Ok)(t);
   return (0, r.jsxs)(s.P3F, {
     className: j.row,
     onClick: e => {
-      (0, f.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, O.on.POPOUT)
+      (0, h.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, O.on.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
       className: j.avatar,
@@ -113,7 +113,7 @@ function C(e) {
       children: [(0, r.jsx)("span", {
         className: j.bullet,
         children: "•"
-      }), (0, h.Ye)(i)]
+      }), (0, f.Ye)(i)]
     })]
   })
 }

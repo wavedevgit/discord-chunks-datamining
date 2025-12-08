@@ -105,7 +105,7 @@ function P(e) {
     hasSubheader: l
   } = e, {
     value: s
-  } = n.springs, c = t.features.has(v.GuildFeatures.DISCOVERABLE), h = (0, r.jsx)("div", {
+  } = n.springs, c = t.features.has(v.GuildFeatures.DISCOVERABLE), f = (0, r.jsx)("div", {
     className: C.communityInfo,
     children: c && (0, r.jsx)(u.u, {
       text: x.intl.string(x.t.O8lDI2),
@@ -128,7 +128,7 @@ function P(e) {
   });
   return l ? (0, r.jsx)("div", {
     className: o()(C.communityInfoContainer, C.hasSubheader),
-    children: h
+    children: f
   }) : (0, r.jsx)(a.animated.div, {
     className: C.communityInfoContainer,
     style: i ? {
@@ -136,7 +136,7 @@ function P(e) {
     } : {
       height: s.to(e => "".concat(20 * e, "px"))
     },
-    children: h
+    children: f
   })
 }
 
@@ -217,8 +217,8 @@ function R(e) {
     guild: o,
     onClick: a,
     onContextMenu: s,
-    ariaControls: h,
-    ariaExpanded: f,
+    ariaControls: f,
+    ariaExpanded: h,
     children: m
   } = e, _ = (0, c.e7)([b.Z], () => (0, p.b)(b.Z, o)), y = i.useCallback(() => {
     _ ? (0, d.ZDy)(async () => {
@@ -242,8 +242,8 @@ function R(e) {
       "aria-label": x.intl.formatToPlainString(x.t.xMXpl3, {
         guildName: null != (t = null == o ? true : o.name) ? t : ""
       }),
-      "aria-controls": h,
-      "aria-expanded": f,
+      "aria-controls": f,
+      "aria-expanded": h,
       onContextMenu: s,
       onClick: a,
       children: [(0, r.jsxs)("div", {
@@ -294,7 +294,7 @@ let D = Chunk473749.memo(function(e) {
     headerClassName: w,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, L = j.features.has(v.GuildFeatures.ANIMATED_BANNER), k = (0, h.Z)(j), G = !k && (0, y.Z)(j), U = !k && A, B = (0, _.xR)(x) && L && !g, [F, V] = i.useState(false), H = i.useRef(false), W = i.useRef(null), z = null != t ? t : W, K = i.useRef(true), Y = m.QK.getSetting();
+  } = e, L = j.features.has(v.GuildFeatures.ANIMATED_BANNER), k = (0, f.Z)(j), G = !k && (0, y.Z)(j), U = !k && A, B = (0, _.xR)(x) && L && !g, [F, V] = i.useState(false), H = i.useRef(false), W = i.useRef(null), z = null != t ? t : W, K = i.useRef(true), Y = m.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !H.current && Y) return V(true), K.current = setTimeout(() => {
       V(false)
@@ -311,7 +311,7 @@ let D = Chunk473749.memo(function(e) {
       } = e;
       return null != n && !t
     },
-    Q = (0, f._k)({
+    Q = (0, h._k)({
       location: "guild_header"
     }),
     X = {

@@ -21,7 +21,7 @@ function p(e) {
     animate: n
   } = e, i = (0, a.e7)([u.Z], () => u.Z.getGuild(t), [t]), l = (0, s.dQu)(s.TVs.modules.guildbar.AVATAR_SIZE);
   return null == i ? (0, r.jsx)("div", {
-    className: o()(f.folderPreviewGuildIcon, f.folderPreviewGuildIconError),
+    className: o()(h.folderPreviewGuildIcon, h.folderPreviewGuildIconError),
     children: (0, r.jsx)(s.Mgn, {
       color: "currentColor"
     })
@@ -31,7 +31,7 @@ function p(e) {
     size: c.Z.Sizes.MINI,
     iconSize: l,
     lossless: true,
-    className: f.folderPreviewGuildIcon,
+    className: h.folderPreviewGuildIcon,
     tabIndex: false
   })
 }
@@ -44,18 +44,18 @@ function g(e) {
   } = e, {
     children: l
   } = t, a = n && i, c = (0, r.jsx)("div", {
-    className: f.folderIconWrapper,
+    className: h.folderIconWrapper,
     children: (0, r.jsx)("div", {
-      className: f.folderIcon,
+      className: h.folderIcon,
       children: (0, r.jsx)(s.ROc, {
         size: "sm",
         color: "currentColor"
       })
     })
   }), u = (0, r.jsx)("div", {
-    className: f.folderPreviewWrapper,
+    className: h.folderPreviewWrapper,
     children: (0, r.jsx)("div", {
-      className: f.folderPreview,
+      className: h.folderPreview,
       children: l.slice(0, 4).map(e => (0, r.jsx)(p, {
         guildId: e.id,
         animate: n
@@ -65,8 +65,8 @@ function g(e) {
   return (0, r.jsxs)("div", {
     "aria-hidden": true,
     className: o()({
-      [f.folderDragPreview]: a,
-      [f.folderButtonContent]: !a
+      [h.folderDragPreview]: a,
+      [h.folderButtonContent]: !a
     }),
     children: [!a && c, u]
   })
@@ -131,7 +131,7 @@ function m(e) {
       }
       return e
     }({
-      className: f.folderButton,
+      className: h.folderButton,
       onClick: y,
       onContextMenu: O,
       onMouseEnter: N,
@@ -148,7 +148,7 @@ function m(e) {
       "aria-expanded": o,
       "aria-owns": b,
       children: [(0, r.jsx)(s.nn4, {
-        children: h.intl.formatToPlainString(h.t["90/DwM"], {
+        children: f.intl.formatToPlainString(f.t["90/DwM"], {
           folderName: m,
           mentions: u
         })
@@ -161,9 +161,9 @@ function m(e) {
           width: (0, s.OVM)(u)
         },
         children: (0, r.jsx)("div", {
-          className: f.folderButtonInner,
+          className: h.folderButtonInner,
           children: null != _ ? (0, r.jsx)("div", {
-            className: f.folderIconWrapper,
+            className: h.folderIconWrapper,
             children: _
           }) : (0, r.jsx)(g, {
             folderNode: l,

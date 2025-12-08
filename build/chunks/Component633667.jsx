@@ -14,9 +14,9 @@ let c = Math.ceil(Math.sqrt(115200)),
   d = Chunk473749.forwardRef(function(e, t) {
     let {
       children: n
-    } = e, [d, h] = i.useState(false), f = i.useCallback(e => {
-      h(e.contentRect.width)
-    }, []), p = (0, a.y)(f, [], {
+    } = e, [d, f] = i.useState(false), h = i.useCallback(e => {
+      f(e.contentRect.width)
+    }, []), p = (0, a.y)(h, [], {
       fireOnMount: true
     }), [{
       shineSpring: g

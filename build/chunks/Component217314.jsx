@@ -23,9 +23,9 @@ function m(e) {
     n = e.channel.isSystemDM(),
     m = (0, i.e7)([u.default], () => u.default.getUser(t)),
     g = (0, i.e7)([c.Z], () => c.Z.getStatus(t)),
-    j = (0, i.e7)([c.Z], () => c.Z.isMobileOnline(t)),
-    v = (0, i.e7)([d.Z], () => d.Z.getNickname(t)),
-    _ = p.ZP.useUserTag(m),
+    _ = (0, i.e7)([c.Z], () => c.Z.isMobileOnline(t)),
+    j = (0, i.e7)([d.Z], () => d.Z.getNickname(t)),
+    v = p.ZP.useUserTag(m),
     y = (0, l.j)({
       displayNameStyles: null == m ? true : m.displayNameStyles
     }),
@@ -38,24 +38,24 @@ function m(e) {
     }), null != m && !n && (0, r.jsx)("div", {
       children: (0, r.jsx)(o.qEK, {
         status: g,
-        isMobile: j,
-        className: f.avatar,
+        isMobile: _,
+        className: h.avatar,
         size: o.EFr.SIZE_20,
         "aria-label": p.ZP.getName(m),
         src: m.getAvatarURL(true, 20)
       })
-    }), (0, r.jsx)(h.Z.Title, {
+    }), (0, r.jsx)(f.Z.Title, {
       level: e.level,
       onClick: e.handleClick,
       onContextMenu: e.handleContextMenu,
-      className: null != e.handleClick ? f.cursorPointer : null,
+      className: null != e.handleClick ? h.cursorPointer : null,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.u, {
-          text: _,
+          text: v,
           position: "bottom",
           children: (0, r.jsx)("span", {
             className: y,
-            children: null != v ? v : p.ZP.getName(m)
+            children: null != j ? j : p.ZP.getName(m)
           })
         }), x && (0, r.jsx)(a.u, {
           text: b.intl.string(b.t.QyZ4Td),
@@ -63,7 +63,7 @@ function m(e) {
             size: "xs",
             "aria-label": b.intl.string(b.t.VHXh8a),
             color: o.TVs.colors.INTERACTIVE_NORMAL,
-            className: f.secureFramesIcon
+            className: h.secureFramesIcon
           })
         })]
       })

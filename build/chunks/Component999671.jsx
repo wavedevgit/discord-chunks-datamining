@@ -37,12 +37,12 @@ function p(e) {
   });
   return (0, r.jsxs)(a.v2r, {
     navId: "mentions-filter",
-    "aria-label": f.intl.string(f.t.pEasFX),
+    "aria-label": h.intl.string(h.t.pEasFX),
     onClose: t,
     onSelect: n,
     children: [(0, r.jsx)(a.S89, {
       id: "Everyone",
-      label: f.intl.string(f.t.cdyUsV),
+      label: h.intl.string(h.t.cdyUsV),
       action: function() {
         s.Z.setGuildFilter({
           everyoneFilter: !o
@@ -51,7 +51,7 @@ function p(e) {
       checked: o
     }), (0, r.jsx)(a.S89, {
       id: "Roles",
-      label: f.intl.string(f.t.lZejCq),
+      label: h.intl.string(h.t.lZejCq),
       action: function() {
         s.Z.setGuildFilter({
           roleFilter: !p
@@ -60,13 +60,13 @@ function p(e) {
       checked: p
     }), null == i || i.isPrivate() ? null : (0, r.jsx)(a.S89, {
       id: "All Servers",
-      label: f.intl.string(f.t.GWMA6s),
+      label: h.intl.string(h.t.GWMA6s),
       action: function() {
         s.Z.setGuildFilter({
-          guildFilter: g === h.NgX.THIS_SERVER ? h.NgX.ALL_SERVERS : h.NgX.THIS_SERVER
+          guildFilter: g === f.NgX.THIS_SERVER ? f.NgX.ALL_SERVERS : f.NgX.THIS_SERVER
         })
       },
-      checked: g === h.NgX.ALL_SERVERS
+      checked: g === f.NgX.ALL_SERVERS
     })]
   })
 }
@@ -91,12 +91,12 @@ function g() {
         onClick: n
       } = t;
       return (0, r.jsx)(o.u, {
-        text: f.intl.string(f.t.pEasFX),
+        text: h.intl.string(h.t.pEasFX),
+        targetElementRef: e,
         children: (0, r.jsx)(a.hU, {
-          buttonRef: e,
           size: "sm",
           variant: "secondary",
-          "aria-label": f.intl.string(f.t.pEasFX),
+          "aria-label": h.intl.string(h.t.pEasFX),
           color: a.YX$.TERTIARY,
           icon: a.gXV,
           onClick: n

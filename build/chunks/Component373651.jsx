@@ -56,7 +56,7 @@ function N(e) {
   let {
     channel: t,
     onSelect: n
-  } = e, o = (0, O.Z)(t), l = (0, j.Z)(t), c = (0, p.l)(t), u = (0, p.P)(t), g = (0, h.Z)(t), v = (0, b.Z)(t), _ = (0, f.Z)(t), x = (0, C.ZP)(t), k = (0, P.Z)(t), w = (0, y.Z)(t), E = (0, d.Z)({
+  } = e, o = (0, O.Z)(t), l = (0, _.Z)(t), c = (0, p.l)(t), u = (0, p.P)(t), g = (0, f.Z)(t), j = (0, b.Z)(t), v = (0, h.Z)(t), x = (0, P.ZP)(t), w = (0, C.Z)(t), k = (0, y.Z)(t), E = (0, d.Z)({
     id: t.id,
     label: I.intl.string(I.t.gFHI3k)
   }), N = (0, s.Z)(t), T = (0, S.ZP)(t), M = (0, m.Mn)("ChannelContextFavoritesMenu"), A = (0, Z.Z)(t, "list_favorites_text_channel_context_menu");
@@ -68,11 +68,11 @@ function N(e) {
     children: [(0, r.jsx)(i.kSQ, {
       children: o
     }), (0, r.jsxs)(i.kSQ, {
-      children: [v, _, g, c]
+      children: [j, v, g, c]
     }), (0, r.jsxs)(i.kSQ, {
-      children: [x, M ? T : k]
+      children: [x, M ? T : w]
     }), (0, r.jsx)(i.kSQ, {
-      children: w
+      children: k
     }), (0, r.jsx)(i.kSQ, {
       children: N
     }), (0, r.jsx)(i.kSQ, {
@@ -90,10 +90,10 @@ function T(e) {
     channel: t,
     guild: n,
     onSelect: o
-  } = e, l = (0, O.Z)(t), c = (0, j.Z)(t), u = (0, p.l)(t), h = (0, p.P)(t), b = (0, k.Z)(t), f = (0, C.ZP)(t), w = (0, y.Z)(t), E = (0, x.Z)(t, n), N = (0, g.Z)(t, n), T = (0, v.Z)(t, n), M = (0, _.Z)(t), A = (0, d.Z)({
+  } = e, l = (0, O.Z)(t), c = (0, _.Z)(t), u = (0, p.l)(t), f = (0, p.P)(t), b = (0, w.Z)(t), h = (0, P.ZP)(t), k = (0, y.Z)(t), E = (0, x.Z)(t, n), N = (0, g.Z)(t, n), T = (0, j.Z)(t, n), M = (0, v.Z)(t), A = (0, d.Z)({
     id: t.id,
     label: I.intl.string(I.t.gFHI3k)
-  }), D = (0, s.Z)(t), L = (0, Z.Z)(t, "list_text_channel_context_menu"), F = (0, P.Z)(t), U = (0, S.ZP)(t), B = (0, m.Mn)("ChannelContextMenuNormal");
+  }), D = (0, s.Z)(t), L = (0, Z.Z)(t, "list_text_channel_context_menu"), F = (0, C.Z)(t), U = (0, S.ZP)(t), B = (0, m.Mn)("ChannelContextMenuNormal");
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: a.Zy,
@@ -104,13 +104,13 @@ function T(e) {
     }, "mark-as-read-or-favorite"), (0, r.jsxs)(i.kSQ, {
       children: [E, b, c, L]
     }, "channel-actions"), (0, r.jsxs)(i.kSQ, {
-      children: [f, B ? U : F]
+      children: [h, B ? U : F]
     }, "notifications"), (0, r.jsxs)(i.kSQ, {
-      children: [w, N, T, M]
+      children: [k, N, T, M]
     }, "admin-actions"), (0, r.jsx)(i.kSQ, {
       children: D
     }), (0, r.jsx)(i.kSQ, {
-      children: h
+      children: f
     }), (0, r.jsx)(i.kSQ, {
       children: A
     }, "developer-actions")]

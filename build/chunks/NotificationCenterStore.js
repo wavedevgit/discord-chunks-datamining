@@ -32,7 +32,7 @@ function d(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,7 +44,7 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = 90 * Chunk70956.Z.Millis.DAY,
+let h = 90 * Chunk70956.Z.Millis.DAY,
   p = {
     tab: null,
     localItemAcks: {},
@@ -58,7 +58,7 @@ class g extends(r = Chunk442837.ZP.PersistedStore) {
       var t;
       (p = e).localItemAcks = function(e) {
         let t = {};
-        for (let [n, r] of Object.entries(e)) Date.now() - r < f && (t[n] = r);
+        for (let [n, r] of Object.entries(e)) Date.now() - r < h && (t[n] = r);
         return t
       }(null != (t = p.localItemAcks) ? t : {}), p.isDataStale = true
     }
@@ -71,7 +71,7 @@ class g extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (e = p.tab) ? module : Chunk497089.b1.ForYou
   }
   isLocalItemAcked(e) {
-    return null != e.local_id && (null != p.localItemAcks[e.local_id] || s.default.age(e.id) > f)
+    return null != e.local_id && (null != p.localItemAcks[e.local_id] || s.default.age(e.id) > h)
   }
   hasNewMentions() {
     return p.hasNewMentions
@@ -98,7 +98,7 @@ let b = new g(Chunk570140.Z, {
     } = e
   },
   NOTIFICATION_CENTER_SET_TAB: function(e) {
-    p = h(d({}, p), {
+    p = f(d({}, p), {
       tab: e.tab
     })
   },
@@ -107,8 +107,8 @@ let b = new g(Chunk570140.Z, {
       localIds: t
     } = e;
     t.forEach(e => {
-      p = h(d({}, p), {
-        localItemAcks: h(d({}, p.localItemAcks), {
+      p = f(d({}, p), {
+        localItemAcks: f(d({}, p.localItemAcks), {
           [e]: Date.now()
         })
       })

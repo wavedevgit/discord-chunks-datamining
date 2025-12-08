@@ -39,14 +39,14 @@ function g() {
       children: [require.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(m, {
           title: Chunk388032.intl.string(Chunk388032.t.yflAJV)
-        }), require.map(e => (0, r.jsx)(h.Z, {
+        }), require.map(e => (0, r.jsx)(f.Z, {
           invite: e,
           expired: false
         }, e.invite_id))]
       }), Chunk392711.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(m, {
           title: Chunk388032.intl.string(Chunk388032.t.f0Ia4V)
-        }), Chunk392711.map(e => (0, r.jsx)(h.Z, {
+        }), Chunk392711.map(e => (0, r.jsx)(f.Z, {
           invite: e,
           expired: true
         }, e.invite_id))]

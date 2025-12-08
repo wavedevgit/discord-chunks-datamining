@@ -21,49 +21,49 @@ var Chunk374470 = require("./374470.js"),
 function m(t) {
   var e;
   let n, m, v, {
-      channel: j,
-      message: x,
+      channel: b,
+      message: j,
       target: y,
-      attachment: b,
-      onSelect: C
+      attachment: x,
+      onSelect: E
     } = t,
-    E = y;
-  if (null != b) m = n = b.url;
+    S = y;
+  if (null != x) m = n = x.url;
   else
     for (;
-      (0, r.kK)(E);)(0, r.kK)(E, HTMLImageElement) && null != E.src && (m = E.src), (0, r.kK)(E, HTMLAnchorElement) && null != E.href && (n = E.href, v = E.textContent), E = E.parentNode;
-  let S = null == (e = document.getSelection()) ? true : e.toString(),
-    O = (0, o.Z)(S),
-    M = (0, d.Z)(S),
-    P = (0, p.Z)(x, j),
-    Z = (0, u.Z)(x, j),
-    N = (0, h.Z)(x, j),
-    I = (0, g.Z)(x, j),
-    k = (0, c.Z)(null != n ? n : m, v),
-    T = (0, a.Z)({
-      id: x.id,
-      label: f.intl.string(f.t.zBoHlf),
-      shiftId: "".concat(x.channel_id, "-").concat(x.id)
-    }),
+      (0, r.kK)(S);)(0, r.kK)(S, HTMLImageElement) && null != S.src && (m = S.src), (0, r.kK)(S, HTMLAnchorElement) && null != S.href && (n = S.href, v = S.textContent), S = S.parentNode;
+  let O = null == (e = document.getSelection()) ? true : e.toString(),
+    Z = (0, o.Z)(O),
+    C = (0, d.Z)(O),
+    M = (0, p.Z)(j, b),
+    P = (0, u.Z)(j, b),
+    N = (0, g.Z)(j, b),
+    I = (0, h.Z)(j, b),
+    T = (0, c.Z)(null != n ? n : m, v),
     D = (0, a.Z)({
-      id: x.author.id,
+      id: j.id,
+      label: f.intl.string(f.t.zBoHlf),
+      shiftId: "".concat(j.channel_id, "-").concat(j.id)
+    }),
+    k = (0, a.Z)({
+      id: j.author.id,
       label: f.intl.string(f.t.Muw4wm)
     });
   return (0, i.jsxs)(l.v2r, {
     navId: "message",
     onClose: s.Zy,
     "aria-label": f.intl.string(f.t.ChPNkN),
-    onSelect: C,
+    onSelect: E,
     children: [(0, i.jsx)(l.kSQ, {
-      children: O
+      children: Z
     }), (0, i.jsx)(l.kSQ, {
-      children: M
+      children: C
     }), (0, i.jsxs)(l.kSQ, {
-      children: [P, Z, N, I]
+      children: [M, P, N, I]
     }), (0, i.jsx)(l.kSQ, {
-      children: k
+      children: T
     }), (0, i.jsxs)(l.kSQ, {
-      children: [T, D]
+      children: [D, k]
     })]
   })
 }

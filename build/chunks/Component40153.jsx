@@ -36,14 +36,14 @@ function b(e) {
 function _(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3];
-  return s()(t.type !== h.eD.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
+  return s()(t.type !== f.eD.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
     accept: e,
-    canDrop: e => e.nodeId !== t.id && (!r || e.type !== h.eD.FOLDER || t.type !== h.eD.FOLDER) && (e.type !== h.eD.FOLDER || null == t.parentId),
+    canDrop: e => e.nodeId !== t.id && (!r || e.type !== f.eD.FOLDER || t.type !== f.eD.FOLDER) && (e.type !== f.eD.FOLDER || null == t.parentId),
     drop(e) {
       let {
         nodeId: i
       } = e;
-      r && t.type !== h.eD.FOLDER && d.default.track(p.rMx.GUILD_FOLDER_CREATED), u.Z.moveById(i, t.id, n, r)
+      r && t.type !== f.eD.FOLDER && d.default.track(p.rMx.GUILD_FOLDER_CREATED), u.Z.moveById(i, t.id, n, r)
     },
     collect: e => ({
       canDrop: e.canDrop(),
@@ -58,16 +58,16 @@ function y(e) {
     targetNode: n,
     combine: l,
     below: o
-  } = e, a = i.useMemo(() => _([h.eD.GUILD, h.eD.FOLDER], n, o, l), [n, o, l]), [{
+  } = e, a = i.useMemo(() => _([f.eD.GUILD, f.eD.FOLDER], n, o, l), [n, o, l]), [{
     canDrop: s,
     isOver: u
-  }, d] = (0, c.L)(a), f = b([
+  }, d] = (0, c.L)(a), h = b([
     [s, m.autoPointerEvents],
     [u, m.dragOver]
   ]);
   return (0, r.jsx)("div", {
     ref: e => {
-      f.current = e, d(e)
+      h.current = e, d(e)
     },
     "data-dnd-name": g.intl.formatToPlainString(g.t["A5aDw+"], {
       itemName: t
@@ -84,7 +84,7 @@ function O(e) {
   } = e, [{
     canDrop: a,
     isOver: s
-  }, u] = (0, c.L)(() => _([h.eD.GUILD], n, true, true));
+  }, u] = (0, c.L)(() => _([f.eD.GUILD], n, true, true));
   i.useEffect(() => {
     null == l || l(s)
   }, [l, s]);
@@ -92,7 +92,7 @@ function O(e) {
     [a, m.autoPointerEvents],
     [s, m.dragOver]
   ]);
-  return (0, r.jsx)(f.Z, {
+  return (0, r.jsx)(h.Z, {
     text: t,
     shouldShow: s,
     forceOpen: s,
@@ -138,7 +138,7 @@ function j(e) {
   } = e, [{
     canDrop: i,
     isOver: l
-  }, o] = (0, c.L)(() => _([h.eD.GUILD], n, true, true)), a = b([
+  }, o] = (0, c.L)(() => _([f.eD.GUILD], n, true, true)), a = b([
     [l, m.wrapperOver]
   ]), s = b([
     [l, m.dragOver],

@@ -31,8 +31,8 @@ function c(e) {
 }
 let u = [],
   d = {},
-  h = null,
-  f = 0;
+  f = null,
+  h = 0;
 
 function p(e) {
   let t = null;
@@ -79,10 +79,10 @@ class g extends(r = Chunk442837.ZP.Store) {
     return null == (t = d[e.invite_id]) ? true : t.joinable
   }
   getLastUnseenInvite() {
-    return h
+    return f
   }
   getUnseenInviteCount() {
-    return f
+    return h
   }
 }
 s(g, "displayName", "GameInviteStore");
@@ -97,7 +97,7 @@ let m = new g(Chunk570140.Z, {
     let {
       gameInvite: t
     } = e, n = p(t);
-    null != n && (u = [n, ...u], h = t, f += 1)
+    null != n && (u = [n, ...u], f = t, h += 1)
   },
   GAME_INVITE_DELETE: function(e) {
     let {
@@ -118,6 +118,6 @@ let m = new g(Chunk570140.Z, {
     }
   },
   GAME_INVITE_CLEAR_UNSEEN: function(e) {
-    h = null, f = 0
+    f = null, h = 0
   }
 })

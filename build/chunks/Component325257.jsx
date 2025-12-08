@@ -111,11 +111,11 @@ let L = Chunk473749.memo(function(e) {
     id: el,
     parentId: eo
   } = k, ea = null != (t = e.upperBadge) ? t : Y ? (0, N.Ny)() : null != K ? (0, N.Or)(K) : true, es = null != (n = e.lowerBadge) ? n : true;
-  null == es && q > 0 ? es = null != (l = (0, N.Ne)(q, Q ? h.TVs.colors.BACKGROUND_ACCENT.css : h.TVs.colors.STATUS_DANGER.css)) ? l : true : null == es && null != et && (es = null != (p = (0, N.jt)({
+  null == es && q > 0 ? es = null != (l = (0, N.Ne)(q, Q ? f.TVs.colors.BACKGROUND_ACCENT.css : f.TVs.colors.STATUS_DANGER.css)) ? l : true : null == es && null != et && (es = null != (p = (0, N.jt)({
     guildJoinRequestStatus: et
   })) ? p : true);
   let ec = null != (L = e.lowerBadgeSize) ? L : {
-      width: (0, h.OVM)(q)
+      width: (0, f.OVM)(q)
     },
     [{
       dragging: eu
@@ -134,9 +134,9 @@ let L = Chunk473749.memo(function(e) {
         dragging: e.isDragging()
       })
     }),
-    eh = (0, c.Ie)(null != el ? el : Z.lds, null != eo ? 2 : 1),
-    [ef, ep] = i.useState(false),
-    eg = !$ && ef,
+    ef = (0, c.Ie)(null != el ? el : Z.lds, null != eo ? 2 : 1),
+    [eh, ep] = i.useState(false),
+    eg = !$ && eh,
     [em, eb] = i.useState(false),
     [e_, ey] = i.useState(false),
     [eO] = i.useState(() => new d.sW(70, () => ey(true)));
@@ -152,7 +152,7 @@ let L = Chunk473749.memo(function(e) {
     ej = i.useCallback(() => {
       if (null != F || null == V || Y || !ee) return;
       let e = (0, m.V)(V.id);
-      null != e && f.Z.preload(V.id, e)
+      null != e && h.Z.preload(V.id, e)
     }, [F, V, Y, ee]),
     ex = (0, u.e7)([O.ZP], () => O.ZP.isCurrentUserGuest(el)),
     eC = i.useCallback(e => {
@@ -171,7 +171,7 @@ let L = Chunk473749.memo(function(e) {
     eI = i.useCallback(e => {
       null == G || G(el, e)
     }, [el, G]),
-    eP = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE);
+    eP = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE);
   if (null == V) return null;
   let eN = e_ || em ? (0, r.jsx)(C.Z, {
       guild: V,
@@ -183,7 +183,7 @@ let L = Chunk473749.memo(function(e) {
       onAnimationRest: function() {
         e_ || eb(false)
       }
-    }) : (0, r.jsx)(h.LYs, R(A({
+    }) : (0, r.jsx)(f.LYs, R(A({
       ariaLabel: w.intl.formatToPlainString(w.t["/uzRss"], {
         guildName: V.name,
         mentions: q
@@ -201,7 +201,7 @@ let L = Chunk473749.memo(function(e) {
       onKeyDown: eE,
       icon: (0, y.EB)(V, 2 * eP, eg && H, true),
       selected: W || eg
-    }, eh), {
+    }, ef), {
       "aria-setsize": er,
       "aria-posinset": ei,
       "aria-selected": W
@@ -222,7 +222,7 @@ let L = Chunk473749.memo(function(e) {
         [T.wobble]: e_,
         [T.selected]: e_ || W
       }),
-      children: (0, r.jsx)(h.aRk, {
+      children: (0, r.jsx)(f.aRk, {
         selected: true,
         upperBadge: ea,
         lowerBadge: es,

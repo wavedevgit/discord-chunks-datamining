@@ -58,8 +58,8 @@ function _(e) {
     hasUnread: y,
     mentionCount: O
   } = (0, i.cj)([u.ZP], () => ({
-    hasUnread: u.ZP.hasUnread(t.id, f.W.GUILD_EVENT),
-    mentionCount: u.ZP.getMentionCount(t.id, f.W.GUILD_EVENT)
+    hasUnread: u.ZP.hasUnread(t.id, h.W.GUILD_EVENT),
+    mentionCount: u.ZP.getMentionCount(t.id, h.W.GUILD_EVENT)
   }), [t.id]), v = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
   async function j() {
     await (0, o.ZDy)(async () => {
@@ -75,7 +75,7 @@ function _(e) {
     C = x.length > 0 ? p.intl.formatToPlainString(p.t.IBdqSu, {
       number: x.length
     }) : p.intl.string(p.t.tlopTM);
-  return (0, r.jsx)(h.m, {
+  return (0, r.jsx)(f.m, {
     id: "upcoming-events-".concat(t.id),
     renderIcon: e => (0, r.jsx)(o.Que, {
       size: "md",

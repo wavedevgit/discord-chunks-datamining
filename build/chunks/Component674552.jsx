@@ -2,8 +2,8 @@
 /** chunk id: 674552, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ne: () => d,
-  Ny: () => h,
-  Or: () => f,
+  Ny: () => f,
+  Or: () => h,
   jt: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
@@ -24,7 +24,7 @@ function d(e, t, n) {
   })
 }
 
-function h() {
+function f() {
   return (0, Chunk54381.jsx)(Chunk481060.G2e, {
     icon: (0, Chunk481060.GSL)(Chunk460562.Z),
     disableColor: true,
@@ -32,7 +32,7 @@ function h() {
   })
 }
 
-function f(e) {
+function h(e) {
   let t, {
     audio: n,
     video: r,

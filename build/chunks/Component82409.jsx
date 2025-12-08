@@ -117,7 +117,7 @@ function U(e) {
             r = null == (t = n.last()) ? true : t.id,
             i = O.ZP.ackMessageId(e),
             l = n.hasPresent() && n.ready && !n.cached;
-          null != r && null != i && l && v.default.compare(i, r) >= 0 && h.ack(e, {
+          null != r && null != i && l && v.default.compare(i, r) >= 0 && f.ack(e, {
             section: R.jXE.NOTIFICATIONS_INBOX,
             object: R.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
             objectType: R.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -141,7 +141,7 @@ function U(e) {
     }), [K]),
     q = F(Z, c, P),
     Q = F(D, c, null);
-  (0, f.ZP)(() => {
+  (0, h.ZP)(() => {
     var e;
     d.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_OPEN"
@@ -191,7 +191,7 @@ function U(e) {
       track: false,
       viewId: a
     })
-  }), (0, f.zq)(() => {
+  }), (0, h.zq)(() => {
     d.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_CLOSE"
     })

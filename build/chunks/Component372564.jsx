@@ -1,7 +1,7 @@
 /** Chunk was on 81500 **/
 /** chunk id: 372564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -39,10 +39,10 @@ function g(e) {
   return e
 }
 
-function j(e) {
+function _(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class v extends Chunk473749.Component {
+class j extends Chunk473749.Component {
   render() {
     let {
       channel: e
@@ -71,9 +71,9 @@ class v extends Chunk473749.Component {
     super(...e), m(this, "_mouseDown", false), m(this, "_mouseUp", false), m(this, "handleOpenTopic", e => {
       let t = e.target;
       if ((0, l.kK)(t)) {
-        if (j(t)) return;
+        if (_(t)) return;
         let e = t.parentNode;
-        if ((0, l.kK)(e) && j(e)) return
+        if ((0, l.kK)(e) && _(e)) return
       }(0, s.ZDy)(async () => {
         let {
           default: e
@@ -121,4 +121,4 @@ class v extends Chunk473749.Component {
     })
   }
 }
-let _ = v
+let v = j

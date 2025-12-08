@@ -36,7 +36,7 @@ let C = {
 
 function P(e) {
   let t = p.Z.getChannel(e);
-  return !(null == t || null == t.getGuildId() || t.isGuildVocal()) && !(t.isThread() ? f.Z.isMuted(t.id) : _.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, u.d)(t)
+  return !(null == t || null == t.getGuildId() || t.isGuildVocal()) && !(t.isThread() ? h.Z.isMuted(t.id) : _.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, u.d)(t)
 }
 
 function N(e) {
@@ -50,7 +50,7 @@ function N(e) {
 }
 
 function Z(e) {
-  return !_.ZP.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? d.Z.getMutableParticipants(e.id, h.pV.SPEAKER).length > 0 : y.ZP.getVoiceStatesForChannel(e).length > 0)
+  return !_.ZP.isChannelMuted(e.guild_id, e.id) && (e.isGuildStageVoice() ? d.Z.getMutableParticipants(e.id, f.pV.SPEAKER).length > 0 : y.ZP.getVoiceStatesForChannel(e).length > 0)
 }
 
 function w(e) {
@@ -64,28 +64,28 @@ function w(e) {
     c = null,
     u = null,
     d = true,
-    h = true,
-    f = false,
+    f = true,
+    h = false,
     p = i.getCategoryFromSection(i.voiceChannelsSectionNumber),
     g = null != (n = null == p ? true : p.getShownChannelIds()) ? n : [],
     [b, _, y] = i.getSlicedChannels(l);
   for (let e = 0; e < _.length; e++) {
     let t = _[e];
-    if ((P(t.id) || a().some(t.threadIds, P)) && (h = false), (N(t.id) || a().some(t.threadIds, N)) && (d = false), g.includes(t.id) && (f = true), !h && !d && f) break
+    if ((P(t.id) || a().some(t.threadIds, P)) && (f = false), (N(t.id) || a().some(t.threadIds, N)) && (d = false), g.includes(t.id) && (h = true), !f && !d && h) break
   }
   let O = 0,
     j = false,
     x = 0,
     E = false;
-  if (h || d)
+  if (f || d)
     for (let e = b.length - 1; e >= 0; e--) {
       let t = b[e];
       (P(t.id) || a().some(t.threadIds, P)) && (null == s && (s = t.id), j = true), (N(t.id) || a().some(t.threadIds, N)) && (null == o && (o = t.id), O += m.ZP.getMentionCount(t.id), O += a().sumBy(t.threadIds, m.ZP.getMentionCount))
     }
-  if (h || d)
+  if (f || d)
     for (let e = 0; e < y.length; e++) {
       let t = y[e];
-      if (!h && !d) break;
+      if (!f && !d) break;
       (P(t.id) || a().some(t.threadIds, P)) && (null == u && (u = t.id), E = true), (N(t.id) || a().some(t.threadIds, N)) && (null == c && (c = t.id), x += m.ZP.getMentionCount(t.id), x += a().sumBy(t.threadIds, m.ZP.getMentionCount))
     }
   let w = null,
@@ -95,11 +95,11 @@ function w(e) {
     mode: "mentions",
     mentionCount: x,
     targetChannelId: c
-  } : !f && a().some(A, Z) ? w = {
+  } : !h && a().some(A, Z) ? w = {
     mode: "voice-channels",
     mentionCount: 0,
     targetChannelId: null
-  } : h && E && (w = {
+  } : f && E && (w = {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: u
@@ -107,7 +107,7 @@ function w(e) {
     mode: "mentions",
     mentionCount: O,
     targetChannelId: o
-  } : h && j && (T = {
+  } : f && j && (T = {
     mode: "unread",
     mentionCount: 0,
     targetChannelId: s

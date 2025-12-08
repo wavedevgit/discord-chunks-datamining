@@ -276,8 +276,8 @@ class U extends(r = Chunk473749.Component) {
           }
           return i
         }(r, ["ref", "role"]);
-        return (0, i.jsx)(h.Wdt, {
-          children: r => (0, i.jsx)(h.aVo, L({
+        return (0, i.jsx)(f.Wdt, {
+          children: r => (0, i.jsx)(f.aVo, L({
             fade: true,
             innerRole: o,
             innerAriaLabel: R.intl.string(R.t.YUU0RF),
@@ -338,7 +338,7 @@ class U extends(r = Chunk473749.Component) {
     }), M(this, "handleScroll", a()(() => {
       if (null != this._list) {
         let e = this._list.getScrollerNode();
-        null != e && f.Z.updateChannelListScroll(A.ME, e.scrollTop)
+        null != e && h.Z.updateChannelListScroll(A.ME, e.scrollTop)
       }
       true !== this.props.onHandleScroll && this.props.onHandleScroll()
     }, 100)), M(this, "renderDM", (e, t) => {
@@ -392,7 +392,7 @@ class U extends(r = Chunk473749.Component) {
           popoutAlign: "left",
           className: D.privateChannelRecipientsInviteButtonIconContainer,
           iconClassName: D.privateChannelRecipientsInviteButtonIcon,
-          icon: h.BRu,
+          icon: f.BRu,
           subscribeToGlobalHotkey: true
         })]
       }, t) : null
@@ -420,18 +420,18 @@ M(U, "defaultProps", {
 let B = e => {
   let {
     density: t
-  } = (0, h.TCT)(), {
+  } = (0, f.TCT)(), {
     version: n,
     theme: r,
     children: o,
     showDMHeader: a,
     listScrollerRef: d,
-    hideAllDMs: f
-  } = e, m = l.Children.count(o), _ = N.Z.getMutablePrivateChannels(), y = f ? {} : (0, S.k1)(_), O = (0, u.Wu)([w.Z, E.Z, I.Z], () => {
+    hideAllDMs: h
+  } = e, m = l.Children.count(o), _ = N.Z.getMutablePrivateChannels(), y = h ? {} : (0, S.k1)(_), O = (0, u.Wu)([w.Z, E.Z, I.Z], () => {
     let e = w.Z.getPrivateChannelIds(),
       t = (0, S.tU)(e, [E.Z, I.Z]);
-    return f ? [] : t
-  }, [f]);
+    return h ? [] : t
+  }, [h]);
   (0, x.z)(j.R);
   let {
     analyticsLocations: C

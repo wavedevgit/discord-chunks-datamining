@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
 
 function p(e) {
   let t = u.Z.getChannel(e);
-  return null != t && null != t.getGuildId() && !(t.isThread() ? c.Z.isMuted(t.id) : h.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, s.d)(t)
+  return null != t && null != t.getGuildId() && !(t.isThread() ? c.Z.isMuted(t.id) : f.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, s.d)(t)
 }
 
 function g(e) {
@@ -25,8 +25,8 @@ function g(e) {
   if (null == t) returnfalse;
   let n = t.getGuildId();
   if (null == n) returnfalse;
-  let r = h.ZP.isGuildCollapsed(n),
-    i = h.ZP.isChannelMuted(n, t.id);
+  let r = f.ZP.isGuildCollapsed(n),
+    i = f.ZP.isChannelMuted(n, t.id);
   return (!r || !i) && d.ZP.getMentionCount(e) > 0
 }
 let m = Chunk473749.forwardRef(function(e, t) {
@@ -50,12 +50,12 @@ let m = Chunk473749.forwardRef(function(e, t) {
       }
       return i
     }(e, ["guildId", "guildChannels", "guildChannelsVersion"]);
-  let h = (0, o.T)(s, c, u, {
+  let f = (0, o.T)(s, c, u, {
       withVoiceChannels: false
     }, {
       ignoreRecents: true
     }),
-    m = (0, l.e7)([f.Z], () => f.Z.isFocused());
+    m = (0, l.e7)([h.Z], () => h.Z.isFocused());
   return (0, r.jsx)(a.Z, (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -78,7 +78,7 @@ let m = Chunk473749.forwardRef(function(e, t) {
   }, d), i = i = {
     isUnread: p,
     isMentioned: g,
-    items: h,
+    items: f,
     animate: m
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var n = Object.keys(e);

@@ -71,7 +71,7 @@ function S(e) {
       }
     }, [e, C]),
     A = p.default.getId();
-  return (0, i.cj)([y.Z, g.Z, o.ZP, d.Z, f.Z, b.Z], () => {
+  return (0, i.cj)([y.Z, g.Z, o.ZP, d.Z, h.Z, b.Z], () => {
     var t, n, r;
     let i = y.Z.getVoiceChannelId(),
       l = (null == (t = g.Z.getChannel(i)) ? true : t.guild_id) === e,
@@ -95,14 +95,14 @@ function S(e) {
         return null != t && b.Z.can(u.gl, t)
       }),
       E = l && null != (r = null == (n = g.Z.getChannel(i)) ? true : n.isGuildStageVoice()) && r,
-      P = !!l && null != f.Z.getActiveStreamForUser(A, e),
-      R = (0, s.aK)(f.Z.getAllApplicationStreams()).some(t => t.guildId === e),
+      P = !!l && null != h.Z.getActiveStreamForUser(A, e),
+      R = (0, s.aK)(h.Z.getAllApplicationStreams()).some(t => t.guildId === e),
       D = l && T,
       M = (() => {
         if (N) return I.length > 0;
         for (let e of I) {
           let t = g.Z.getChannel((0, a.p)(e.location));
-          if (null != t && (0, h.vd)(t.type)) returntrue
+          if (null != t && (0, f.vd)(t.type)) returntrue
         }
         returnfalse
       })(),

@@ -180,14 +180,14 @@ class _ extends(r = Chunk473749.PureComponent) {
           null == a && i(e, l, c) && (a = e), null == s && r(e, l, c) && (s = e)
         },
         d = l ? c.length - 1 : 0,
-        h = c[d];
-      for (; null != h;) {
-        if ("string" == typeof h) {
-          if (n(h, l, c)) break;
-          u(h)
+        f = c[d];
+      for (; null != f;) {
+        if ("string" == typeof f) {
+          if (n(f, l, c)) break;
+          u(f)
         } else {
           let e = false;
-          for (let t of h) {
+          for (let t of f) {
             if (n(t, l, c)) {
               e = true;
               break
@@ -196,7 +196,7 @@ class _ extends(r = Chunk473749.PureComponent) {
           }
           if (e) break
         }
-        d += l ? false : 1, h = c[d]
+        d += l ? false : 1, f = c[d]
       }
       null != o && o(a, s, l), this.setState({
         mention: a,

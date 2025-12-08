@@ -30,7 +30,7 @@ function _(e) {
     showEmptyChannelTopic: v
   } = e, j = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, u.ZP)(t, true), E = (!O || !!v) && C, S = null != _ && _.length > 0;
   if (i.useEffect(() => {
-      x && f.default.track(p.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+      x && h.default.track(p.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
@@ -43,7 +43,7 @@ function _(e) {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
       children: (0, r.jsx)(s.Z, {
-        children: h.Z.parseVoiceChannelStatus(j, true, {
+        children: f.Z.parseVoiceChannelStatus(j, true, {
           channelId: t.id
         })
       })

@@ -17,7 +17,7 @@ function s(e) {
     onActionClick: c,
     position: u = "right",
     align: d = "top",
-    caretConfig: h = {
+    caretConfig: f = {
       align: "start"
     }
   } = e;
@@ -27,7 +27,7 @@ function s(e) {
     size: "lg",
     shouldShow: true,
     position: u,
-    caretConfig: h,
+    caretConfig: f,
     gradientColor: "purple",
     alignmentStrategy: "edge",
     align: d,

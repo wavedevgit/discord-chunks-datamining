@@ -1,7 +1,7 @@
 /** Chunk was on 46467 **/
 /** chunk id: 617379, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,7 +31,7 @@ function d(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,7 +44,7 @@ function h(e, t) {
   }), e
 }
 
-function f(e) {
+function h(e) {
   let {
     channel: t
   } = e, n = i.useRef(null);
@@ -53,11 +53,11 @@ function f(e) {
     align: "right",
     animation: o.yRy.Animation.NONE,
     position: "bottom",
-    renderPopout: e => t.isThread() ? (0, r.jsx)(s.Z, h(d({}, e), {
+    renderPopout: e => t.isThread() ? (0, r.jsx)(s.Z, f(d({}, e), {
       channel: t,
       navId: "recents-thread-notifications",
       label: u.intl.string(u.t.ljs3Oe)
-    })) : (0, r.jsx)(a.Z, h(d({}, e), {
+    })) : (0, r.jsx)(a.Z, f(d({}, e), {
       channel: t,
       navId: "recents-notifications",
       label: u.intl.string(u.t.ljs3Oe),

@@ -160,8 +160,8 @@ class M extends(r = Chunk473749.PureComponent) {
       stream: s,
       isCurrentUserInThisDMCall: u,
       unread: d,
-      treeItemProps: h,
-      statusIndicatorsEnabled: f
+      treeItemProps: f,
+      statusIndicatorsEnabled: h
     } = this.props, {
       hovered: g,
       animating: m
@@ -263,11 +263,11 @@ w(M, "defaultProps", {
 });
 let L = Chunk473749.forwardRef(function(e, t) {
   let n = e.channel.id,
-    r = (0, f.ZP)(e.channel),
+    r = (0, h.ZP)(e.channel),
     l = (0, a.Ie)(n, 2),
     o = (0, s.e7)([m.Z], () => m.Z.getChannelId(), []),
     u = (0, s.e7)([d.Z], () => d.Z.getMode(n), [n]),
-    h = (0, s.e7)([g.Z], () => g.Z.getAllApplicationStreamsForChannel(n).length > 0),
+    f = (0, s.e7)([g.Z], () => g.Z.getAllApplicationStreamsForChannel(n).length > 0),
     p = (0, s.e7)([O.ZP], () => O.ZP.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
     y = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
     v = (0, s.e7)([b.ZP], () => b.ZP.getMentionCount(n), [n]),
@@ -289,7 +289,7 @@ let L = Chunk473749.forwardRef(function(e, t) {
     badge: v,
     audio: E,
     video: S,
-    stream: h,
+    stream: f,
     isCurrentUserInThisDMCall: C,
     size: I,
     treeItemProps: l,

@@ -11,12 +11,12 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk306680 = require("./306680.js"),
   Chunk944486 = require("./944486.js"),
   Chunk55589 = require("./55589.js");
-let f = [],
+let h = [],
   p = new Set;
 
 function g() {
   let e = Chunk55589.Z.getPrivateChannelIds().filter(e => u.ZP.getMentionCount(e) > 0);
-  return module.length > 20 && (module.length = 20), !(0, Chunk251625.EF)(module, f) && (f = module, p = new Set(module), true)
+  return module.length > 20 && (module.length = 20), !(0, Chunk251625.EF)(module, h) && (h = module, p = new Set(module), true)
 }
 
 function m() {
@@ -34,7 +34,7 @@ class _ extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk55589.Z, Chunk592125.Z, Chunk944486.Z, Chunk306680.ZP)
   }
   getUnreadPrivateChannelIds() {
-    return f
+    return h
   }
 }(i = "displayName") in _ ? Object.defineProperty(_, i, {
   value: "PrivateChannelReadStateStore",

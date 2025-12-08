@@ -30,7 +30,7 @@ let S = Chunk473749.memo(function(e) {
   let {
     guild: t,
     selected: l
-  } = e, S = i.useRef(null), I = i.useRef(null), P = (0, u.useHasAnyModalOpen)(), N = (0, a.e7)([O.Z], () => O.Z.hasLayers()), [Z, w] = (0, f.ZT)([s.z.GAME_SHOP_NEW_BADGE], t.id);
+  } = e, S = i.useRef(null), I = i.useRef(null), P = (0, u.useHasAnyModalOpen)(), N = (0, a.e7)([O.Z], () => O.Z.hasLayers()), [Z, w] = (0, h.ZT)([s.z.GAME_SHOP_NEW_BADGE], t.id);
   i.useEffect(() => {
     l && Z === s.z.GAME_SHOP_NEW_BADGE && w(x.L.INDIRECT_ACTION)
   }, [w, l, Z]);
@@ -49,7 +49,7 @@ let S = Chunk473749.memo(function(e) {
       w(x.L.USER_DISMISS)
     }, [w]),
     D = i.useCallback(e => {
-      null != t && (0, h.jW)(e, async () => {
+      null != t && (0, f.jW)(e, async () => {
         let {
           default: e
         } = await n.e("73848").then(n.bind(n, 98409));

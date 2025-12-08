@@ -32,7 +32,7 @@ function u(e) {
       })
     }), Array.from({
       length: n
-    }).map((e, t) => (0, r.jsx)(h, {}, t))]
+    }).map((e, t) => (0, r.jsx)(f, {}, t))]
   })
 }
 
@@ -45,7 +45,7 @@ function d(e) {
   })
 }
 
-function h() {
+function f() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
   return (0, Chunk54381.jsxs)("div", {
     style: {

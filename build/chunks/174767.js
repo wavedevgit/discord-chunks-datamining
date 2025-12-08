@@ -4,8 +4,8 @@ require.d(exports, {
   Br: () => s,
   MH: () => c,
   Ol: () => u,
-  TG: () => f,
-  UF: () => h,
+  TG: () => h,
+  UF: () => f,
   sJ: () => d
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
@@ -48,13 +48,13 @@ function d() {
     type: "GAME_INVITE_CLEAR_UNSEEN"
   })
 }
-async function h(e) {
+async function f(e) {
   await r.tn.del({
     url: a.ANM.GAME_INVITE(e.invite_id),
     rejectWithError: false
   })
 }
-async function f() {
+async function h() {
   await Chunk544891.tn.del({
     url: Chunk981631.ANM.GAME_INVITES,
     rejectWithError: false

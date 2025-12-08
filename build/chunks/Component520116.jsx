@@ -36,7 +36,7 @@ function E(e) {
     message: c,
     compact: u,
     isGroupStart: d,
-    treatSpam: h,
+    treatSpam: f,
     gotoChannel: p
   } = e, g = (0, a.JA)(null != (t = c.id) ? t : ""), m = i.useCallback(e => {
     if ("ArrowLeft" === e.key) {
@@ -70,7 +70,7 @@ function E(e) {
       children: [!b && (0, r.jsx)(_.Z, {
         className: j.jumpButton,
         onJump: e => p(e, c.id)
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(h.Z, {
         id: c.id,
         message: c,
         channel: o,
@@ -79,7 +79,7 @@ function E(e) {
         animateAvatar: false,
         isGroupStart: d,
         onKeyDown: m,
-        treatSpam: h
+        treatSpam: f
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
@@ -101,7 +101,7 @@ function S(e) {
     channelRecord: l,
     gotoChannel: a
   } = e, {
-    enabled: f
+    enabled: h
   } = c.Z.useExperiment({
     location: "20e3b0_1"
   }, {
@@ -114,7 +114,7 @@ function S(e) {
     n.forEach(n => {
       if (!S && (null == e || !e.isSame(n.timestamp, "day"))) {
         let t = (0, b.vc)(n.timestamp, "LL");
-        P.push((0, r.jsx)(h.Z, {
+        P.push((0, r.jsx)(f.Z, {
           className: j.divider,
           children: t
         }, t)), e = o()(n.timestamp)
@@ -125,7 +125,7 @@ function S(e) {
         message: n,
         compact: _,
         isGroupStart: i,
-        treatSpam: !I && f && (0, d.DQ)(n) && x,
+        treatSpam: !I && h && (0, d.DQ)(n) && x,
         gotoChannel: a
       }, n.id))
     }), i.messages.length >= y.hC && P.push((0, r.jsx)("div", {

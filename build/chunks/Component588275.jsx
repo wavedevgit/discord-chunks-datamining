@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk674552 = require("./674552.jsx"),
   Chunk981631 = require("./981631.js");
 
-function f(e, t) {
+function h(e, t) {
   (0, l.jW)(e, async () => {
     let {
       default: e
@@ -66,10 +66,10 @@ function p(e) {
     draggable: false,
     selected: n === m,
     preloadOnClick: false,
-    contextMenu: f,
+    contextMenu: h,
     lowerBadge: (null == l ? true : l.applicationStatus) === o.wB.REJECTED ? (0, d.jt)({
       guildJoinRequestStatus: l.applicationStatus
     }) : true,
-    route: h.Z5c.GUILD_MEMBER_VERIFICATION(n)
+    route: f.Z5c.GUILD_MEMBER_VERIFICATION(n)
   })
 }

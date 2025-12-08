@@ -109,7 +109,7 @@ class C extends Chunk98597.ZP {
       ! function(e) {
         let t = e.getGuildId();
         if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
-        (0, h.uL)(_.Z5c.CHANNEL(t, e.id), {
+        (0, f.uL)(_.Z5c.CHANNEL(t, e.id), {
           state: {
             analyticsSource: {
               page: _.ZY5.GUILD_CHANNEL,
@@ -128,8 +128,8 @@ let E = (0, Chunk146773.B)(C),
       channel: t,
       guild: n,
       disableSorting: i
-    } = e, l = (0, a.cj)([f.Z, g.Z], () => {
-      let e = f.Z.getChannel(t.parent_id);
+    } = e, l = (0, a.cj)([h.Z, g.Z], () => {
+      let e = h.Z.getChannel(t.parent_id);
       return {
         canManageChannel: g.Z.can(_.Plq.MANAGE_CHANNELS, t),
         canReorderChannel: true !== i && null != e ? g.Z.can(_.Plq.MANAGE_CHANNELS, e) : g.Z.can(_.Plq.MANAGE_CHANNELS, n)

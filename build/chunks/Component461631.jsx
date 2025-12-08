@@ -32,14 +32,14 @@ function p(e) {
     }
   };
   return (0, r.jsx)(o.u, {
-    text: h.intl.string(h.t.jTW016),
+    text: f.intl.string(f.t.jTW016),
     children: (0, r.jsx)(a.P3F, {
       onClick: m,
-      "aria-label": h.intl.string(h.t.jTW016),
-      className: l()(p, f.clickable),
+      "aria-label": f.intl.string(f.t.jTW016),
+      className: l()(p, h.clickable),
       children: (0, r.jsx)(a.XHJ, {
         size: i,
-        className: f.icon,
+        className: h.icon,
         color: a.TVs.colors.ICON_FEEDBACK_CRITICAL
       })
     })

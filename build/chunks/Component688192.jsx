@@ -42,7 +42,7 @@ function j(e) {
     source: w
   } = e, T = l.useRef(null), A = l.useRef(null), R = null != j ? j : A, {
     trackUserProfileWishlistAction: D
-  } = (0, p.KZ)(), M = r && true === t.isOwned && null != t.gifterUserId, L = null != t.gifterUserId ? d.default.getUser(t.gifterUserId) : null, k = null != L ? f.ZP.getName(L) : null, G = M && null != L && null != k && "" !== k, U = G ? (0, i.jsx)(c.qEK, {
+  } = (0, p.KZ)(), M = r && true === t.isOwned && null != t.gifterUserId, L = null != t.gifterUserId ? d.default.getUser(t.gifterUserId) : null, k = null != L ? h.ZP.getName(L) : null, G = M && null != L && null != k && "" !== k, U = G ? (0, i.jsx)(c.qEK, {
     src: L.getAvatarURL(true, 48),
     size: c.EFr.SIZE_48,
     "aria-label": k
@@ -74,7 +74,7 @@ function j(e) {
   }), V = () => {
     if (Z === _.Wt.DM_CHANNEL_WISHLIST) {
       let e = w === u.lr.WISHLIST ? "wishlist" : "shop";
-      h.default.track(b.rMx.GIFTING_ITEM_CLICKED, {
+      f.default.track(b.rMx.GIFTING_ITEM_CLICKED, {
         sku_id: t.skuId,
         item_source: e,
         wishlist_id: w === u.lr.WISHLIST ? n : null,

@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk24445 = require("./24445.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -79,32 +79,32 @@ class g extends Chunk473749.PureComponent {
   }
   renderSecondary(e, t) {
     return (0, r.jsxs)("div", {
-      className: h.secondaryExplosion,
+      className: f.secondaryExplosion,
       style: {
         top: t,
         left: e
       },
       children: [(0, r.jsx)("img", {
         alt: "",
-        className: h.circleInner,
+        className: f.circleInner,
         src: n(272162),
         width: 61,
         height: 58
       }, "circle-inner"), (0, r.jsx)("img", {
         alt: "",
-        className: h.circleOuter,
+        className: f.circleOuter,
         src: n(632989),
         width: 85,
         height: 85
       }, "circle-outer"), (0, r.jsx)("img", {
         alt: "",
-        className: h.linesSecondary,
+        className: f.linesSecondary,
         src: n(376252),
         width: 162,
         height: 173
       }, "lines-secondary"), (0, r.jsx)("img", {
         alt: "",
-        className: h.linesMain,
+        className: f.linesMain,
         src: n(720617),
         width: 156,
         height: 306
@@ -132,13 +132,13 @@ class g extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_renderSecondaryTimeout", null), f(this, "_doneTimeout", null), f(this, "state", {
+    super(...e), h(this, "_renderSecondaryTimeout", null), h(this, "_doneTimeout", null), h(this, "state", {
       animating: false,
       renderSecondary: false,
       scale: s().random(.6, 1, true),
       offsetX: s().random(0, 140, false) - 70,
       offsetY: s().random(0, 140, false) - 70
-    }), f(this, "done", () => {
+    }), h(this, "done", () => {
       this.props.onAnimationComplete(this.props.componentId)
     })
   }
@@ -165,13 +165,13 @@ class m extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_timeouts", []), f(this, "children", []), f(this, "state", {
+    super(...e), h(this, "_timeouts", []), h(this, "children", []), h(this, "state", {
       explosions: 0,
       visible: false
-    }), f(this, "setTimeout", (e, t) => {
+    }), h(this, "setTimeout", (e, t) => {
       let n = setTimeout(e, t);
       return this._timeouts.push(n), n
-    }), f(this, "removeExplosion", e => {
+    }), h(this, "removeExplosion", e => {
       let t = this.children,
         n = t.findIndex(t => {
           if (t.type !== g) returnfalse;
@@ -179,7 +179,7 @@ class m extends Chunk473749.PureComponent {
           return null != n.componentId && n.componentId === e
         });
       n >= 0 && t.splice(n, 1), this.forceUpdate()
-    }), f(this, "createExplosion", () => {
+    }), h(this, "createExplosion", () => {
       let e = this.children,
         t = window.innerWidth / 2 | 0,
         n = window.innerHeight / 2 | 0;
@@ -194,9 +194,9 @@ class m extends Chunk473749.PureComponent {
           explosions: this.state.explosions + 1
         })
       } else this.setTimeout(this.addSymbol, 750)
-    }), f(this, "addSymbol", () => {
+    }), h(this, "addSymbol", () => {
       this.children = [(0, r.jsx)(p, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
-    }), f(this, "delayedClose", () => {
+    }), h(this, "delayedClose", () => {
       this.props.handleDemonClose()
     })
   }

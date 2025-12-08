@@ -136,8 +136,8 @@ class Y extends Chunk98597.ZP {
       connectChannelDragSource: a,
       connectUserDropTarget: s,
       connectDragPreview: d,
-      canReorderChannel: h,
-      canMoveMembers: f,
+      canReorderChannel: f,
+      canMoveMembers: h,
       stageInstance: p,
       isSubscriptionGated: m,
       needSubscriptionToAccess: b,
@@ -224,7 +224,7 @@ class Y extends Chunk98597.ZP {
       let {
         channel: t
       } = this.props, i = N.Z.getGuild(t.getGuildId());
-      null != i && (0, h.jW)(e, async () => {
+      null != i && (0, f.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("18320"), n.e("83331"), n.e("81070")]).then(n.bind(n, 213202));
@@ -305,7 +305,7 @@ function Q(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), f = (0, S.ZP)(n.id), p = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, x.pV.AUDIENCE), {
+  }), f = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), h = (0, S.ZP)(n.id), p = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, x.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
   } = (0, _.Z)(n.id), y = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), O = (0, E.xJ)(n.id), v = (0, L.Z)({
@@ -318,8 +318,8 @@ function Q(e) {
     enableConnectedUserLimit: O || n.userLimit > 0 && n.userLimit < U.xGv
   }), N = e.connected && null == v;
   return (0, r.jsx)(q, K(z({
-    categoryCollapsed: h,
-    connectAction: f,
+    categoryCollapsed: f,
+    connectAction: h,
     numAudience: g,
     stageInstance: p,
     isSubscriptionGated: m,

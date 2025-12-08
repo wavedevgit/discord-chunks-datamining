@@ -120,8 +120,8 @@ class W extends Chunk836560.EventEmitter {
     })
   }
   loadChannelMessages(e) {
-    h.Z.clearChannel(e.channelId);
-    let t = h.Z.fetchMessages({
+    f.Z.clearChannel(e.channelId);
+    let t = f.Z.fetchMessages({
       channelId: e.channelId,
       limit: L.AQB,
       jump: {
@@ -183,7 +183,7 @@ class W extends Chunk836560.EventEmitter {
         channelId: t,
         newestUnreadMessageId: n
       } = e;
-      d.Z.wait(() => f.ack(t, {
+      d.Z.wait(() => h.ack(t, {
         section: L.jXE.INBOX,
         object: L.qAy.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
         objectType: L.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -199,7 +199,7 @@ class W extends Chunk836560.EventEmitter {
       if (0 === this.undoStack.length) return;
       let e = this.undoStack.pop();
       if (null == e) return;
-      f.ack(e.channelId, {
+      h.ack(e.channelId, {
         section: L.jXE.INBOX,
         object: L.qAy.UNDO_MARK_AS_READ,
         objectType: L.AnalyticsObjectTypes.ACK_MANUAL
@@ -220,7 +220,7 @@ class W extends Chunk836560.EventEmitter {
         channels: this.state.channels.filter(t => t.channelId !== e)
       }), this.maybeLoadMore()
     }, this.markAllRead = () => {
-      f.y5(this.state.channels.map(e => ({
+      h.y5(this.state.channels.map(e => ({
         channelId: e.channelId,
         messageId: e.newestUnreadMessageId
       }))), this.setState({

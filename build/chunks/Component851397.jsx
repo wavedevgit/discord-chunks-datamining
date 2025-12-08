@@ -30,7 +30,7 @@ function x(e) {
       hideButtonIcon: C = false,
       showPrice: E = false,
       showIcons: S = false,
-      source: I = f.lr.WISHLIST
+      source: I = h.lr.WISHLIST
     } = e,
     P = function(e, t) {
       if (null == e) return {};
@@ -53,7 +53,7 @@ function x(e) {
     giftingOrigin: w = y.Wt.USER_PROFILE_WISHLIST
   } = P, T = N.sku, A = T.applicationId, R = (0, c.q)(A), D = i.useRef(null), {
     analyticsLocations: M
-  } = (0, s.ZP)(a.Z.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD), L = (0, l.e7)([h.Z], () => null != x && h.Z.hasSentGift(N.skuId, x.id), [N.skuId, x]), k = L || true === N.isOwned, G = N.skuName, {
+  } = (0, s.ZP)(a.Z.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD), L = (0, l.e7)([f.Z], () => null != x && f.Z.hasSentGift(N.skuId, x.id), [N.skuId, x]), k = L || true === N.isOwned, G = N.skuName, {
     buttonCTALabel: U,
     buttonIcon: B,
     handleCardClick: F
@@ -88,7 +88,7 @@ function x(e) {
         })
       }
     }
-  }, [Z, k, E, T, C, R, L, x, w, M]), V = i.useCallback(() => S ? I === f.lr.WISHLIST ? (0, r.jsx)("div", {
+  }, [Z, k, E, T, C, R, L, x, w, M]), V = i.useCallback(() => S ? I === h.lr.WISHLIST ? (0, r.jsx)("div", {
     className: j.itemIcon,
     children: (0, r.jsx)(o.h_8, {
       size: "custom",
@@ -97,7 +97,7 @@ function x(e) {
       color: "currentColor",
       colorClass: j.itemIconHeart
     })
-  }) : I === f.lr.POPULAR ? (0, r.jsx)("div", {
+  }) : I === h.lr.POPULAR ? (0, r.jsx)("div", {
     className: j.itemIcon,
     children: (0, r.jsx)(o.YqE, {
       size: "custom",

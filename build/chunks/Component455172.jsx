@@ -52,7 +52,7 @@ function E(e) {
     color: "text-muted",
     className: n,
     children: v.intl.string(v.t.fpKdS1)
-  }) : (0, r.jsx)(f.Z, {
+  }) : (0, r.jsx)(h.Z, {
     muteConfig: t,
     className: n
   })
@@ -64,7 +64,7 @@ function S(e) {
   } = e, n = t.id, {
     activityUsers: l,
     streamUsers: u,
-    voiceUsers: h
+    voiceUsers: f
   } = function(e) {
     let t = e.id,
       n = (0, a.Wu)([b.Z], () => b.Z.getBlockedOrIgnoredIDs()),
@@ -76,9 +76,9 @@ function S(e) {
         let e = m.Z.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => y.default.getUser(e));
         return (0, d.dq)(e, n)
       }, [t, n]),
-      h = i.useMemo(() => (0, d.dq)(u, n), [u, n]),
-      f = i.useMemo(() => (0, g.C)(h, r, "DirectMessageTooltip - activityUsers"), [h, r]),
-      _ = i.useMemo(() => f.filter(e => !s.some(t => t.id === e.id)), [f, s]),
+      f = i.useMemo(() => (0, d.dq)(u, n), [u, n]),
+      h = i.useMemo(() => (0, g.C)(f, r, "DirectMessageTooltip - activityUsers"), [f, r]),
+      _ = i.useMemo(() => h.filter(e => !s.some(t => t.id === e.id)), [h, s]),
       v = (0, a.Wu)([O.ZP], () => {
         let t = O.ZP.getVoiceStatesForChannel(e).map(e => {
           let {
@@ -91,13 +91,13 @@ function S(e) {
       j = i.useMemo(() => (0, d.dq)(v, n), [v, n]),
       x = i.useMemo(() => (0, g.C)(j, r, "DirectMessageTooltip - voiceUsers"), [j, r]);
     return {
-      voiceUsers: i.useMemo(() => x.filter(e => !s.some(t => t.id === e.id) && !f.some(t => t.id === e.id)), [x, s, f]),
+      voiceUsers: i.useMemo(() => x.filter(e => !s.some(t => t.id === e.id) && !h.some(t => t.id === e.id)), [x, s, h]),
       streamUsers: _,
       activityUsers: s
     }
-  }(t), f = (0, r.jsx)(C, {
+  }(t), h = (0, r.jsx)(C, {
     icon: s.gj8,
-    users: h
+    users: f
   }), v = (0, r.jsx)(C, {
     icon: s.hGI,
     users: u
@@ -112,10 +112,10 @@ function S(e) {
     muteConfig: _.ZP.getChannelMuteConfig(null, n)
   }), [n]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [f, v, x, S ? (0, r.jsx)(E, {
+    children: [h, v, x, S ? (0, r.jsx)(E, {
       muteConfig: I,
       className: o()(j.muteText, {
-        [j.muteTextWithActivity]: null != f || null != v
+        [j.muteTextWithActivity]: null != h || null != v
       })
     }) : null]
   })
@@ -124,7 +124,7 @@ function S(e) {
 function I(e) {
   let {
     channel: t
-  } = e, n = (0, h.ZP)(t);
+  } = e, n = (0, f.ZP)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: o()(j.row, j.rowGuildName),

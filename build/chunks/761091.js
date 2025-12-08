@@ -24,7 +24,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk981631 = require("./981631.js");
 
 function j(e) {
-  let t = (0, h.Z)(e.id),
+  let t = (0, f.Z)(e.id),
     n = (0, l.W)(e.id),
     j = (0, d.j0)(e.id),
     x = (0, i.u)(e),
@@ -40,7 +40,7 @@ function j(e) {
     w = [],
     T = e.features.has(v.GuildFeatures.HUB),
     A = e.features.has(v.GuildFeatures.COMMUNITY),
-    R = (0, y.l)(!(0, f.r1)(e.id)),
+    R = (0, y.l)(!(0, h.r1)(e.id)),
     D = e.features.has(v.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY),
     M = (0, m.Z)(e.id);
   (0, g.e)(e.id, "useGuildActionRows", true);

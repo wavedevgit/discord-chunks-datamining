@@ -36,14 +36,14 @@ function u(e) {
     disableWrapper: l = false,
     disabled: u = false,
     hideOnClick: d = true,
-    shouldShow: h,
-    forceOpen: f,
+    shouldShow: f,
+    forceOpen: h,
     selected: p = false
   } = e;
   return (0, r.jsx)(a.aML, {
     "data-migration-pending": true,
-    shouldShow: h,
-    forceOpen: f,
+    shouldShow: f,
+    forceOpen: h,
     spacing: 12,
     hideOnClick: d,
     text: u ? null : n,

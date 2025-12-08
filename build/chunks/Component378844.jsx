@@ -31,7 +31,7 @@ let y = e => {
     notPhoneVerified: j,
     newAccount: x,
     newMember: C
-  } = (0, l.e7)([h.Z], () => h.Z.getCheck(r), [r]), E = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, S = null, I = null;
+  } = (0, l.e7)([f.Z], () => f.Z.getCheck(r), [r]), E = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, S = null, I = null;
   return (0 === t && (O ? (S = m.intl.string(m.t.IRxUlG), I = m.intl.string(m.t.fiNVin)) : j ? (S = m.intl.string(m.t.vW8iUF), I = m.intl.string(m.t["50gfOv"])) : v ? (S = m.intl.string(m.t.vdSOpz), I = m.intl.string(m.t.lm1UKt)) : C ? (S = m.intl.formatToPlainString(m.t.v1ktYb, {
     min: p.YeM.MEMBER_AGE
   }), I = m.intl.string(m.t.BddRzS)) : x && (S = m.intl.formatToPlainString(m.t.sncw41, {
@@ -95,7 +95,7 @@ let y = e => {
                 s.Z.verifyResend(), (0, o.Z)({
                   title: m.intl.string(m.t.LykQYk),
                   subtitle: m.intl.format(m.t.azKEPy, {
-                    email: null == (e = f.default.getCurrentUser()) ? true : e.email
+                    email: null == (e = h.default.getCurrentUser()) ? true : e.email
                   })
                 })
               }

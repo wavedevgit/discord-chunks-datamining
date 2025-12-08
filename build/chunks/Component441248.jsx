@@ -22,7 +22,7 @@ function m(e) {
   let {
     name: t,
     applicationId: n
-  } = e, i = (0, h.Z)({
+  } = e, i = (0, f.Z)({
     location: "ActivityPanelGameCard",
     applicationId: n,
     source: d.m1.RtcPanel,
@@ -31,7 +31,7 @@ function m(e) {
   return (0, r.jsx)(o.P3F, {
     onClick: i,
     className: l()(null != i && g.clickableGameName),
-    children: (0, r.jsx)(f.Z, {
+    children: (0, r.jsx)(h.Z, {
       className: g.gameName,
       children: t
     })
@@ -45,8 +45,8 @@ function b(e) {
     game: i,
     onClickNotSharing: l,
     isForceShowSharingPopout: d,
-    setIsForceShowSharingPopout: h,
-    ref: f,
+    setIsForceShowSharingPopout: f,
+    ref: h,
     popoutTargetRef: b
   } = e, _ = null != n ? n.name : null != i ? i.name : p.intl.string(p.t["UQMV/E"]);
   return (0, c.V)(), (0, r.jsxs)("div", {
@@ -57,7 +57,7 @@ function b(e) {
         className: g.gameIcon,
         game: n,
         pid: null == i ? true : i.pid,
-        ref: f
+        ref: h
       }), t ? (0, r.jsx)(o.Odl, {
         size: "md",
         color: "currentColor",
@@ -66,7 +66,7 @@ function b(e) {
     }), (0, r.jsx)(s.j, {
       popoutTargetRef: b,
       isForceShowSharingPopout: d,
-      setIsForceShowSharingPopout: h,
+      setIsForceShowSharingPopout: f,
       children: (0, r.jsxs)("div", {
         className: g.info,
         children: [null != _ ? (0, r.jsx)(m, {

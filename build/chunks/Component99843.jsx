@@ -1,7 +1,7 @@
 /** Chunk was on 81500 **/
 /** chunk id: 99843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => j
+  j: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,22 +24,22 @@ let g = e => {
     return (0, p.m$)({
       channelId: t.id
     }) ? (0, r.jsx)(a.u, {
-      text: f.intl.string(f.t.QyZ4Td),
+      text: h.intl.string(h.t.QyZ4Td),
       children: (0, r.jsx)(o.tQf, {
         size: "xs",
-        "aria-label": f.intl.string(f.t.VHXh8a),
+        "aria-label": h.intl.string(h.t.VHXh8a),
         color: o.TVs.colors.INTERACTIVE_NORMAL
       })
     }) : null
   },
-  j = Chunk473749.memo(function(e) {
+  _ = Chunk473749.memo(function(e) {
     let {
       channel: t
     } = e, i = t.id, p = (0, c.ZP)(t);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.u, {
         asContainer: true,
-        text: f.intl.string(f.t["5Q9+/L"]),
+        text: h.intl.string(h.t["5Q9+/L"]),
         position: "bottom",
         children: (0, r.jsxs)(o.P3F, {
           className: m.hoverableContainer,
@@ -88,13 +88,13 @@ let g = e => {
           }),
           onDoubleClick: e => e.stopPropagation(),
           onMouseEnter: () => {
-            h.default.track(b.rMx.GDM_EDIT_INTERACTED, {
+            f.default.track(b.rMx.GDM_EDIT_INTERACTED, {
               channel_id: t.id,
               action: "entry_point_hovered",
               location: s.Z.HEADER_BAR
             })
           },
-          "aria-label": f.intl.string(f.t["5Q9+/L"]),
+          "aria-label": h.intl.string(h.t["5Q9+/L"]),
           children: [(0, r.jsx)(d.Z, {
             className: m.gdmIcon,
             "aria-hidden": true,

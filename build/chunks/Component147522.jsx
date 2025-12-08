@@ -17,8 +17,8 @@ function d(e, t, n) {
   let {
     markChannelRead: i,
     markGuildRead: d,
-    deleteChannel: h,
-    toggle: f,
+    deleteChannel: f,
+    toggle: h,
     getNumUnreadChannels: p
   } = t, g = null;
   return l().flatMap(e, e => {
@@ -37,8 +37,8 @@ function d(e, t, n) {
       channel: e,
       markChannelRead: i,
       markGuildRead: d,
-      toggle: f,
-      deleteChannel: h,
+      toggle: h,
+      deleteChannel: f,
       onJump: n,
       getNumUnreadChannels: p
     }, e.channelId)), l

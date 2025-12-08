@@ -69,7 +69,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         nodeId: t.id
       }),
       end() {
-        null == M || M(), (0, f.V1)(g.ZP.getCompatibleGuildFolders())
+        null == M || M(), (0, h.V1)(g.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -79,11 +79,11 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && L()
     }, [L, s]), er = null != W && "" !== W ? W : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
-      let t = (0, h.dQu)(h.TVs.modules.guildbar.FOLDER_SIZE),
-        n = (0, h.dQu)(h.TVs.modules.guildbar.AVATAR_SIZE),
-        r = (0, h.dQu)(h.TVs.space.SPACE_XS);
-      return e * (n + r) - r + (r - (t - n) / 2) + (0, h.dQu)(h.TVs.space.SPACE_4)
-    }(z.length), ea = (0, h.Yzy)(!$ && s, {
+      let t = (0, f.dQu)(f.TVs.modules.guildbar.FOLDER_SIZE),
+        n = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE),
+        r = (0, f.dQu)(f.TVs.space.SPACE_XS);
+      return e * (n + r) - r + (r - (t - n) / 2) + (0, f.dQu)(f.TVs.space.SPACE_4)
+    }(z.length), ea = (0, f.Yzy)(!$ && s, {
       from: {
         height: 0
       },

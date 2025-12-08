@@ -29,7 +29,7 @@ function v(e) {
     user: l,
     embeddedApp: o,
     onOpenSpotifyAlbum: a
-  } = e, d = null == i ? true : i.assets, h = null == i ? true : i.application_id;
+  } = e, d = null == i ? true : i.assets, f = null == i ? true : i.application_id;
   if (null == i || null == d || null == d.large_image && null == d.small_image)
     if (null == o) return null;
     else {
@@ -48,12 +48,12 @@ function v(e) {
           className: y.applicationLargeImage
         })
       })
-    } let f = null != (t = d.large_image) ? t : d.small_image,
+    } let h = null != (t = d.large_image) ? t : d.small_image,
     p = (0, u.Z)(i),
     b = p ? y.spotifyLargeImage : y.applicationLargeImage,
-    _ = null != f ? (0, r.jsx)("img", {
+    _ = null != h ? (0, r.jsx)("img", {
       alt: null != (n = d.large_text) ? n : "",
-      src: (0, g.xF)(h, f, [128, 128]),
+      src: (0, g.xF)(f, h, [128, 128]),
       className: b
     }) : null;
   return p && null != a ? (_ = (0, r.jsx)(c.P3F, {
@@ -100,7 +100,7 @@ function x(e) {
     user: n,
     onOpenSpotifyArtist: i
   } = e, l = null == t ? true : t.details, a = null == t ? true : t.state, s = l;
-  return (null != t && (0, u.Z)(t) && null != a && (s = [(0, r.jsx)(f.Z, {
+  return (null != t && (0, u.Z)(t) && null != a && (s = [(0, r.jsx)(h.Z, {
     artists: a,
     linkClassName: y.bodyLink,
     canOpen: null != t.sync_id,
@@ -153,7 +153,7 @@ function S(e) {
     channel: o,
     sortedVoiceStates: c,
     onOpenSpotifyTrack: d,
-    onOpenSpotifyArtist: f,
+    onOpenSpotifyArtist: h,
     onOpenSpotifyAlbum: g
   } = e, m = [];
   null != n ? m = Array.from(n.embeddedActivity.userIds) : (0, u.Z)(t) && null != c && (m = c.map(e => e.user.id));
@@ -184,10 +184,10 @@ function S(e) {
         }), (0, r.jsx)(x, {
           activity: t,
           user: l,
-          onOpenSpotifyArtist: f
+          onOpenSpotifyArtist: h
         }), (0, r.jsx)(C, {
           activity: t
-        }), m.length > 0 && (0, r.jsx)(h.ZP, {
+        }), m.length > 0 && (0, r.jsx)(f.ZP, {
           className: y.usersSummary,
           guildId: o.guild_id,
           users: S,
@@ -195,7 +195,7 @@ function S(e) {
           max: 7,
           renderUser: e => {
             var t;
-            if (null == e || e === h.ag) return null;
+            if (null == e || e === f.ag) return null;
             let n = P.get(e.id),
               i = null != (t = null == n ? true : n.nick) ? t : _.ZP.getName(e);
             return (0, r.jsx)(s.u, {

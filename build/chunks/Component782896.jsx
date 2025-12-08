@@ -20,7 +20,7 @@ function p(e) {
     children: t
   } = e;
   return (0, r.jsx)(a.ZP, {
-    className: f.facepileItemContainer,
+    className: h.facepileItemContainer,
     mask: a.ZP.Masks.SQUIRCLE,
     width: 25,
     height: 25,
@@ -34,23 +34,23 @@ function g(e) {
     numTruncated: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: f.guildIconList,
+    className: h.guildIconList,
     children: [t.map(e => (0, r.jsxs)("div", {
-      className: f.guildIconItem,
+      className: h.guildIconItem,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(u.V, {
           guild: e,
           size: 20
         })
       }), (0, r.jsx)(o.Text, {
-        className: f.guildIconItemText,
+        className: h.guildIconItemText,
         variant: "text-xs/medium",
         children: e.name
       })]
     }, e.id)), n > 0 && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-subtle",
-      children: h.intl.format(d.default.bAzBIf, {
+      children: f.intl.format(d.default.bAzBIf, {
         numServers: n
       })
     })]
@@ -84,14 +84,14 @@ function m(e) {
     }
   }, [m, n]);
   return (0, r.jsx)(o.jSM, {
-    "aria-label": h.intl.string(d.default.TG0QsS),
+    "aria-label": f.intl.string(d.default.TG0QsS),
     text: (0, r.jsx)(g, {
       guilds: y,
       numTruncated: O
     }),
     position: "top",
     children: (0, r.jsxs)("div", {
-      className: f.facepile,
+      className: h.facepile,
       children: [b.map(e => (0, r.jsx)(p, {
         children: (0, r.jsx)(u.V, {
           guild: e,
@@ -99,7 +99,7 @@ function m(e) {
         })
       }, e.id)), _ > 0 && (0, r.jsx)(p, {
         children: (0, r.jsxs)(o.Text, {
-          className: f.textItem,
+          className: h.textItem,
           color: "text-subtle",
           variant: "text-xxs/semibold",
           children: ["+", _]
