@@ -9,7 +9,7 @@ require.d(exports, {
   ak: () => s,
   sg: () => u,
   up: () => l
-});
+}), require("./539854.js");
 var Chunk243814 = require("./243814.js"),
   Chunk388032 = require("./388032.jsx");
 let a = [() => Chunk388032.intl.string(Chunk388032.t["6xfSCq"]), () => Chunk388032.intl.string(Chunk388032.t.ymSk0r), () => Chunk388032.intl.string(Chunk388032.t.EnN7c5), () => Chunk388032.intl.string(Chunk388032.t["4wMpBs"]), () => Chunk388032.intl.string(Chunk388032.t.CncpnK), () => Chunk388032.intl.string(Chunk388032.t.X9pGvJ), () => Chunk388032.intl.string(Chunk388032.t.sGOSG4), () => Chunk388032.intl.string(Chunk388032.t.JfibUq)],
@@ -104,10 +104,14 @@ function c(e, t) {
       return [i.intl.string(i.t.IM4Cje)];
     case r.x.APPLICATION_IDENTITIES_WRITE:
       return [i.intl.string(i.t["1zioRF"])];
-    case r.x.SDK_SOCIAL_LAYER_PRESENCE:
-      return [i.intl.string(i.t.Pl1dTW), i.intl.string(i.t.mPRcyT), i.intl.string(i.t.F7J4NE), i.intl.string(i.t.syJLx9)];
-    case r.x.SDK_SOCIAL_LAYER:
-      return [i.intl.string(i.t.Pl1dTW), i.intl.string(i.t["hc/+yg"]), i.intl.string(i.t.mPRcyT), i.intl.string(i.t.F7J4NE), i.intl.string(i.t["2wxXX9"])];
+    case r.x.SDK_SOCIAL_LAYER_PRESENCE: {
+      let e = [i.intl.string(i.t.Pl1dTW), i.intl.string(i.t.mPRcyT), i.intl.string(i.t.F7J4NE), i.intl.string(i.t.syJLx9)];
+      return t.includes(r.x.APPLICATION_IDENTITIES_WRITE) || e.push(i.intl.string(i.t["1zioRF"])), e
+    }
+    case r.x.SDK_SOCIAL_LAYER: {
+      let e = [i.intl.string(i.t.Pl1dTW), i.intl.string(i.t["hc/+yg"]), i.intl.string(i.t.mPRcyT), i.intl.string(i.t.F7J4NE), i.intl.string(i.t["2wxXX9"])];
+      return t.includes(r.x.APPLICATION_IDENTITIES_WRITE) || e.push(i.intl.string(i.t["1zioRF"])), e
+    }
     default:
       return [e]
   }
