@@ -12,12 +12,15 @@ var Chunk524437 = require("./524437.js"),
 let o = (0, Chunk509613.Em)(Chunk313789.n.REACTION_NOTIFICATIONS, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.Wxj9Hp),
   useOptions: () => [{
+    id: "enabled",
     label: Chunk388032.intl.string(Chunk388032.t["9x/RtT"]),
     value: Chunk524437.Ns.NOTIFICATIONS_ENABLED
   }, {
+    id: "only_dms",
     label: Chunk388032.intl.string(Chunk388032.t.fJAbQd),
     value: Chunk524437.Ns.ONLY_DMS
   }, {
+    id: "disabled",
     label: Chunk388032.intl.string(Chunk388032.t["xu+UDU"]),
     value: Chunk524437.Ns.NOTIFICATIONS_DISABLED
   }],

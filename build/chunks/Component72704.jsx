@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => o
 });
 var Chunk54381 = require("./54381.js"),
-  Chunk199849 = require("./199849.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk550964 = require("./550964.jsx");
 
 function o(e) {
@@ -20,12 +20,15 @@ function o(e) {
     fieldLayout: u
   } = t, d = s(), f = null == l ? true : l(), p = n(), _ = c();
   return (0, r.jsx)(a.X, {
-    children: (0, r.jsx)(i.y6, {
+    children: (0, r.jsx)(i.PhF, {
+      selectionMode: "single",
       label: d,
       description: f,
-      value: p,
-      onChange: e => o(e),
       options: _,
+      value: p,
+      onSelectionChange: e => {
+        null != e && o(e)
+      },
       layout: u
     })
   })

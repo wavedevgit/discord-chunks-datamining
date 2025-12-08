@@ -16,16 +16,19 @@ let c = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_LENGTH, {
   useValue: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().clipsLength),
   setValue: t => s.eU(t),
   useOptions: () => [{
+    id: "30s",
     value: Chunk356659.OT.SECONDS_30,
     label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv/3"], {
       count: 30
     })
   }, {
+    id: "1m",
     value: Chunk356659.OT.MINUTES_1,
     label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nk, {
       count: 1
     })
   }, {
+    id: "2m",
     value: Chunk356659.OT.MINUTES_2,
     label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nk, {
       count: 2

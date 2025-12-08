@@ -15,6 +15,7 @@ let a = (0, Chunk509613.Em)(Chunk313789.n.MOBILE_NOTIFICATION_DELAY, {
   useValue: Chunk695346.CM.useSetting,
   setValue: Chunk695346.CM.updateSetting,
   useOptions: () => Chunk392711.range(1, 11).map(t => ({
+    id: "".concat(t),
     value: 60 * t,
     label: u.intl.formatToPlainString(u.t.iXLF9W, {
       minutes: t

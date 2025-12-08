@@ -19,16 +19,20 @@ var Chunk54381 = require("./54381.js"),
 
 function _(e, t, n) {
   let r = [{
+    id: d.iA.STANDARD,
     value: d.iA.STANDARD,
     label: f.intl.string(f.t.dqb2JZ)
   }];
   return e && r.push({
+    id: d.iA.LEGACY,
     value: d.iA.LEGACY,
     label: f.intl.string(f.t["TYfH+5"])
   }), t && r.push({
+    id: d.iA.EXPERIMENTAL,
     value: d.iA.EXPERIMENTAL,
     label: f.intl.string(f.t.liQmtr)
   }), n && r.push({
+    id: d.iA.AUTOMATIC,
     value: d.iA.AUTOMATIC,
     label: f.intl.string(f.t.qNgtO1)
   }), r
