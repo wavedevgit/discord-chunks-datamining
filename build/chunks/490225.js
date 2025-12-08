@@ -15,6 +15,7 @@ module.exports = {
   xsmallCol: "xsmallCol__71c22",
   smallCol: "smallCol__71c22",
   mediumCol: "mediumCol__71c22",
+  fillCol: "fillCol__71c22",
   memberNameContainer: "memberNameContainer__71c22",
   memberGlobalName: "memberGlobalName__71c22",
   memberNameText: "memberNameText__71c22",

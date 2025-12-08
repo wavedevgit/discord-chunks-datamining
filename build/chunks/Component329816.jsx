@@ -2,7 +2,7 @@
 /** chunk id: 329816, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => et
+  Z: () => er
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,6 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk966044 = require("./966044.jsx"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk433517 = require("./433517.js"),
   Chunk335854 = require("./335854.js"),
   Chunk481060 = require("./481060.js"),
   Chunk721037 = require("./721037.jsx"),
@@ -31,6 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk366841 = require("./366841.jsx"),
   Chunk947519 = require("./947519.jsx"),
   Chunk248687 = require("./248687.jsx"),
+  Chunk690833 = require("./690833.js"),
   Chunk859678 = require("./859678.js"),
   Chunk314910 = require("./314910.jsx"),
   Chunk84615 = require("./84615.jsx"),
@@ -54,7 +56,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk302821 = require("./302821.js");
 require("./29973.jsx"), Promise.resolve().then(require.bind(require, 62883)).then(e => {
-  V.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, false) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, false)
+  Y.isPlatformEmbedded ? window.addEventListener("contextmenu", e.contextMenuCallbackNative, false) : window.addEventListener("contextmenu", e.contextMenuCallbackWeb, false)
 }), (0, Chunk335854.E)({
   getDefaultLinkInterceptor: Chunk315263.default
 }), (0, Chunk663993.Un)({
@@ -64,15 +66,15 @@ require("./29973.jsx"), Promise.resolve().then(require.bind(require, 62883)).the
   createPromise: () => Promise.all([require.e("50448"), require.e("82821"), require.e("30634"), require.e("58493")]).then(require.bind(require, 80753)),
   webpackId: 80753
 });
-let J = (0, Chunk663993.Un)({
+let ee = (0, Chunk663993.Un)({
     createPromise: () => require.e("67110").then(require.bind(require, 177741)),
     webpackId: 177741
   }),
-  $ = (0, Chunk663993.Un)({
+  et = (0, Chunk663993.Un)({
     createPromise: () => require.e("13474").then(require.bind(require, 420541)),
     webpackId: 420541
   }),
-  ee = Chunk473749.memo(function() {
+  en = Chunk473749.memo(function() {
     let e = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
       t = (0, Chunk526665.wy)("AppSkeleton"),
       n = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.getLayers().includes(Chunk981631.S9g.USER_SETTINGS)),
@@ -83,49 +85,53 @@ let J = (0, Chunk663993.Un)({
       show: module || Chunk473749 || !Chunk120356
     })
   }),
-  et = function(e) {
+  er = function(e) {
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, V.getPlatform)(), d = s.tq || s.Em, h = (0, u.e7)([g.Z], () => g.Z.useForcedColors ? "yes" : "no"), G = i.useRef(document.body), B = "".concat(h);
-    return (0, C.G)(), (0, R.G)("AppSkeleton"), (0, r.jsx)(U.w, {
-      children: (0, r.jsxs)(E.Z, {
-        children: [(0, r.jsx)(Y.Z, {
+    } = e, a = (0, Y.getPlatform)(), f = s.tq || s.Em, g = (0, u.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), B = i.useRef(document.body), V = "".concat(g);
+    (0, N.G)(), (0, D.G)("AppSkeleton");
+    let H = (0, w.Co)("AppSkeleton");
+    return i.useEffect(() => {
+      Y.isPlatformEmbedded && (H ? d.K.set(w.j4, "json") : d.K.remove(w.j4))
+    }, [H]), (0, r.jsx)(Z.w, {
+      children: (0, r.jsxs)(b.Z, {
+        children: [(0, r.jsx)(K.Z, {
           skipsSettingDefaultPageTitle: n
-        }), (0, r.jsx)(m.T, {
-          children: (0, r.jsx)(P.Z, {
-            children: (0, r.jsxs)(f.JcV, {
-              containerRef: G,
-              children: [(0, r.jsx)(z.Co, {}), (0, r.jsx)(K.ZP, {}), (0, r.jsx)(c.OUJ, {}), (0, r.jsx)(L.Wu, {
-                appContext: Q.IlC.APP,
+        }), (0, r.jsx)(h.T, {
+          children: (0, r.jsx)(R.Z, {
+            children: (0, r.jsxs)(p.JcV, {
+              containerRef: B,
+              children: [(0, r.jsx)(Q.Co, {}), (0, r.jsx)(q.ZP, {}), (0, r.jsx)(c.OUJ, {}), (0, r.jsx)(M.Wu, {
+                appContext: J.IlC.APP,
                 renderWindow: window,
-                children: (0, r.jsxs)(w.yP, {
-                  children: [null != a ? (0, r.jsx)(ee, {}) : null, (0, r.jsxs)("div", {
-                    className: o()(X.appAsidePanelWrapper, d && X.mobileAppAsidePanelWrapper),
-                    children: [(0, r.jsx)(A.K, {}), (0, r.jsx)("div", {
-                      className: X.notAppAsidePanel,
+                children: (0, r.jsxs)(x.yP, {
+                  children: [null != a ? (0, r.jsx)(en, {}) : null, (0, r.jsxs)("div", {
+                    className: o()($.appAsidePanelWrapper, f && $.mobileAppAsidePanelWrapper),
+                    children: [(0, r.jsx)(C.K, {}), (0, r.jsx)("div", {
+                      className: $.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
-                      children: (0, r.jsx)(T.m, {
-                        children: (0, r.jsx)(x.OR, {
-                          children: (0, r.jsx)(b.Z.Provider, {
-                            value: y.Z,
-                            children: (0, r.jsx)(I.p, {
-                              children: (0, r.jsxs)(M.ov, {
+                      children: (0, r.jsx)(A.m, {
+                        children: (0, r.jsx)(j.OR, {
+                          children: (0, r.jsx)(y.Z.Provider, {
+                            value: O.Z,
+                            children: (0, r.jsx)(T.p, {
+                              children: (0, r.jsxs)(U.ov, {
                                 children: [(0, r.jsx)("div", {
-                                  className: o()(d ? X.mobileApp : X.app),
+                                  className: o()(f ? $.mobileApp : $.app),
                                   children: t
-                                }), (0, r.jsx)(p.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(f.nKe, {}), (0, r.jsx)(Z.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(w.Un, {}), (0, r.jsx)(x.ot, {}), (0, r.jsx)(f.Ixi, {
-                                  appContext: Q.IlC.APP
-                                }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(j.Z, {}), (0, r.jsx)(J, {}), (0, r.jsx)($, {}), (0, r.jsx)(k.Z, {})]
+                                }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(F.Z, {}), (0, r.jsx)(L.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(x.Un, {}), (0, r.jsx)(j.ot, {}), (0, r.jsx)(p.Ixi, {
+                                  appContext: J.IlC.APP
+                                }), (0, r.jsx)(v.Z, {}), (0, r.jsx)(k.Z, {}), (0, r.jsx)(ee, {}), (0, r.jsx)(et, {}), (0, r.jsx)(G.Z, {})]
                               })
                             })
                           })
                         })
                       })
-                    }), (0, r.jsx)(S.Z, {}), (0, r.jsx)(W.Z, {
-                      mobile: d
-                    }), (0, r.jsx)(N.Z, {
-                      mobile: d
+                    }), (0, r.jsx)(I.Z, {}), (0, r.jsx)(z.Z, {
+                      mobile: f
+                    }), (0, r.jsx)(P.Z, {
+                      mobile: f
                     })]
                   }), false]
                 })
@@ -134,5 +140,5 @@ let J = (0, Chunk663993.Un)({
           })
         })]
       })
-    }, B)
+    }, V)
   }

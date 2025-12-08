@@ -440,7 +440,7 @@ let i = {
     neverLoadBeforeConnectionOpen: true
   },
   RunningGameHeartbeatManager: {
-    actions: ["RUNNING_GAMES_CHANGE", "LOGOUT", "CONNECTION_CLOSED", "POST_CONNECTION_OPEN"],
+    actions: ["RUNNING_GAMES_CHANGE", "LOGOUT", "POST_CONNECTION_OPEN"],
     inlineRequire: () => require("./696287.js").Z,
     neverLoadBeforeConnectionOpen: true
   },

@@ -113,17 +113,18 @@ class E extends Chunk839548.Z {
     }]);
     let i = e.encodingVideoWidth,
       a = e.encodingVideoHeight;
-    for (let e of r.getTracks()) {
-      var o, s;
-      let t = e.getConstraints(),
-        n = null == (o = t.width) ? true : o.max,
-        r = null == (s = t.height) ? true : s.max;
-      (n !== i || r !== a) && (this.logger.info("BaseWebRTCConnection.updateVideoQuality: old: ".concat(n, " x ").concat(r, ", new: ").concat(i, " x ").concat(a)), t.width = {
-        max: i
-      }, t.height = {
-        max: a
-      }, e.applyConstraints(t))
-    }
+    if (null != i && null != a)
+      for (let e of r.getTracks()) {
+        var o, s;
+        let t = e.getConstraints(),
+          n = null == (o = t.width) ? true : o.max,
+          r = null == (s = t.height) ? true : s.max;
+        (n !== i || r !== a) && (this.logger.info("BaseWebRTCConnection.updateVideoQuality: old: ".concat(n, " x ").concat(r, ", new: ").concat(i, " x ").concat(a)), t.width = {
+          max: i
+        }, t.height = {
+          max: a
+        }, e.applyConstraints(t))
+      }
   }
   setCanHavePriority(e, t) {
     let n = this.canHavePriority.size;
@@ -231,7 +232,23 @@ class E extends Chunk839548.Z {
   setVoiceFilterId(e) {}
   constructor(e) {
     var t;
-    super(e.context, e.userId), t = this, m(this, "input", true), m(this, "silenced", false), m(this, "interacted", false), m(this, "outputVolume", p.Qx), m(this, "sinkId", p.w5), m(this, "lastPingTime", 0), m(this, "outputs", {}), m(this, "webrtcStats", new d.r), m(this, "silenceThreshold", false), m(this, "canHavePriority", new Set), m(this, "prioritySpeakers", new Set), m(this, "audioContext", true), m(this, "setEchoCancellation", e => this.input.setEchoCancellation(e)), m(this, "setNoiseSuppression", e => this.input.setNoiseSuppression(e)), m(this, "setNoiseCancellation", e => this.input.setNoiseCancellation(e)), m(this, "getNoiseCancellation", () => this.input.getNoiseCancellation()), m(this, "setAutomaticGainControl", e => this.input.setAutomaticGainControl(e)), m(this, "setAudioSource", e => this.input.setAudioSource(e)), m(this, "setVideoSource", e => this.input.setVideoSource(e)), m(this, "setDesktopInput", e => this.input.setDesktop(e)), m(this, "setForceAudioInput", function(e) {
+    super(e.context, e.userId), t = this, m(this, "input", true), m(this, "silenced", false), m(this, "interacted", false), m(this, "outputVolume", p.Qx), m(this, "sinkId", p.w5), m(this, "lastPingTime", 0), m(this, "outputs", {}), m(this, "webrtcStats", new d.r), m(this, "silenceThreshold", false), m(this, "canHavePriority", new Set), m(this, "prioritySpeakers", new Set), m(this, "audioContext", true), m(this, "setEchoCancellation", e => this.input.setEchoCancellation(e)), m(this, "setNoiseSuppression", e => this.input.setNoiseSuppression(e)), m(this, "setNoiseCancellation", e => this.input.setNoiseCancellation(e)), m(this, "getNoiseCancellation", () => this.input.getNoiseCancellation()), m(this, "setAutomaticGainControl", e => this.input.setAutomaticGainControl(e)), m(this, "setAudioSource", e => this.input.setAudioSource(e)), m(this, "setVideoSource", e => this.input.setVideoSource(e)), m(this, "setDesktopInput", e => {
+      if (null != e) {
+        var t, n, r, i, a, o, s;
+        let l = e.stream.getVideoTracks()[0].getConstraints(),
+          c = {
+            width: "number" == typeof l.width ? l.width : null != (a = null == (t = l.width) ? true : t.ideal) ? a : null == (n = l.width) ? true : n.max,
+            height: "number" == typeof l.height ? l.height : null != (o = null == (r = l.height) ? true : r.ideal) ? o : null == (i = l.height) ? true : i.max
+          },
+          u = (null != (s = null == c ? true : c.height) ? s : 0) > 720 ? p.yf : p.YE;
+        this.videoQualityManager.setGoliveQuality({
+          encode: c,
+          capture: c,
+          bitrateMax: u
+        })
+      }
+      this.input.setDesktop(e)
+    }), m(this, "setForceAudioInput", function(e) {
       return arguments.length > 1 && true !== arguments[1] && arguments[1], arguments.length > 2 && true !== arguments[2] && arguments[2], t.input.setPTTActive(e)
     }), m(this, "setSelfMute", e => {
       this.selfMute = e, this.input.setMute(e), this.emit(l.Sh.Mute, e)

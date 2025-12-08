@@ -79,7 +79,12 @@ function g(e, t, p) {
         width: 1280,
         height: 720
       };
-    c.Z.getMediaEngine().getDesktopSource(r, true).then(n => {
+    (0, a.Rc)({
+      preset: f.ApplicationStreamPresets.PRESET_CUSTOM,
+      resolution: r.height,
+      frameRate: f.ApplicationStreamFPS.FPS_30,
+      soundshareEnabled: true
+    }), c.Z.getMediaEngine().getDesktopSource(r, true).then(n => {
       (0, a.WH)(e, t, {
         pid: null,
         sourceId: n,
