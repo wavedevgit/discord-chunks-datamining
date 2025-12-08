@@ -314,6 +314,9 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
             variant: "text-sm/semibold",
             children: H.intl.string(H.t.edavpq)
           })
+        }), !a && (0, r.jsx)("div", {
+          role: "none",
+          className: z.toolsLabel
         })]
       }), (0, r.jsx)("div", {
         role: "rowgroup",

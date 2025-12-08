@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
@@ -21,7 +21,7 @@ function m(e) {
     isExistingGuildFlow: l,
     onClose: m
   } = e;
-  return s()(null != n, "Missing guild in Hub add guild confirmation"), (0, i.jsxs)(i.Fragment, {
+  return a()(null != n, "Missing guild in Hub add guild confirmation"), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(r.fef, {
       children: (0, i.jsxs)("div", {
         className: u.content,
@@ -29,11 +29,11 @@ function m(e) {
           guild: n,
           size: o.Z.Sizes.XLARGE,
           active: true
-        }), (0, i.jsx)(a.Heading, {
+        }), (0, i.jsx)(s.Heading, {
           className: u.title,
           variant: "heading-xl/semibold",
           children: d.intl.string(d.t.CueiPY)
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(s.Text, {
           color: "text-default",
           variant: "text-md/normal",
           children: l ? d.intl.formatToPlainString(d.t.R7Pqn5, {

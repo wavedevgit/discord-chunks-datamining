@@ -1,16 +1,16 @@
 /** Chunk was on 79764 **/
 /** chunk id: 458879, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk990547 = require("./990547.js"),
   Chunk881052 = require("./881052.js"),
   Chunk573261 = require("./573261.js"),
   Chunk981631 = require("./981631.js");
-let a = {
-  createGuildFromTemplate: async function(e, t, n, a, o) {
+let s = {
+  createGuildFromTemplate: async function(e, t, n, s, o) {
     try {
-      return (await s.Z.post({
+      return (await a.Z.post({
         url: r.ANM.GUILDS,
         body: {
           name: e,
@@ -25,7 +25,7 @@ let a = {
           event: i.NetworkActionNames.GUILD_CREATE,
           properties: {
             template_name: n.id,
-            is_community_intent: a
+            is_community_intent: s
           }
         },
         rejectWithError: false

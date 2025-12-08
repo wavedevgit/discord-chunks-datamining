@@ -9,6 +9,7 @@ module.exports = {
   empty: "empty_e7d73e",
   emojiColumn: "emojiColumn_e7d73e",
   columnLabel: "columnLabel_e7d73e",
+  toolsLabel: "toolsLabel_e7d73e",
   emojiRow: "emojiRow_e7d73e",
   column: "column_e7d73e",
   emojiImage: "emojiImage_e7d73e",
