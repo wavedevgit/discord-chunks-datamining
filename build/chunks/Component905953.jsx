@@ -30,16 +30,16 @@ function y(e) {
     onClose: y
   } = e, [C, S] = l.useState(false), {
     trackUserProfileEditAction: E
-  } = (0, u.KZ)(), N = (0, i.e7)([b.default], () => b.default.getId()), {
-    config: O,
+  } = (0, u.KZ)(), O = (0, i.e7)([b.default], () => b.default.getId()), {
+    config: N,
     application: T
   } = (0, h.G)(), {
     fetched: P,
     hasAlreadyLinked: I,
     canStartAuthorization: w,
     startAuthorization: k
-  } = (0, c.F)(T), R = (0, x.ZP)(N), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == T ? true : T.id));
-  return null != O && null != O.edit_profile_upsell_image && null != T && P ? (0, a.jsx)(d.ZP, {
+  } = (0, c.F)(T), R = (0, x.ZP)(O), A = null == R || null == (t = R.widgets) ? true : t.some(e => e instanceof m.q && e.applicationId === (null == T ? true : T.id));
+  return null != N && null != N.edit_profile_upsell_image && null != T && P ? (0, a.jsx)(d.ZP, {
     contentTypes: I ? A ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : w ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
@@ -54,7 +54,7 @@ function y(e) {
         gradientColor: "blue",
         graphic: {
           type: "image",
-          src: O.edit_profile_upsell_image
+          src: N.edit_profile_upsell_image
         },
         title: _.intl.format(_.t.TXDztH, {
           applicationName: T.name
@@ -67,7 +67,7 @@ function y(e) {
           text: _.intl.string(_.t.VSLDly),
           onClick: () => {
             S(true), (0, f.openUserProfileModal)({
-              userId: N,
+              userId: O,
               section: j.oh.WIDGETS
             }).then(() => {
               l(v.L.TAKE_ACTION), y();
@@ -104,7 +104,7 @@ function y(e) {
             k({
               onConfirm: () => {
                 S(true), (0, f.openUserProfileModal)({
-                  userId: N,
+                  userId: O,
                   section: j.oh.WIDGETS
                 }).then(() => {
                   l(v.L.TAKE_ACTION), y()

@@ -110,13 +110,13 @@ function eo(e) {
   }), () => W.Z.setState({
     isOpen: false
   })), []);
-  let e_ = (0, s.e7)([F.Z], () => F.Z.getStatus(t.id)),
-    ey = B.Cr.useSetting(),
+  let e_ = (0, s.e7)([B.Z], () => B.Z.getStatus(t.id)),
+    ey = F.Cr.useSetting(),
     eC = (0, $.F)(ey),
     eS = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
     eE = (0, g.p)(),
-    eN = B.Sb.useSetting(),
-    eO = (0, $.I)(e_),
+    eO = F.Sb.useSetting(),
+    eN = (0, $.I)(e_),
     eT = (0, q.g)(n),
     eP = (0, v.Z)({
       analyticsLocations: ex
@@ -139,16 +139,16 @@ function eo(e) {
     }, 500)
   }, []);
   let eU = e => {
-      null == n || n(), (0, N.openUserProfileModal)(es({
+      null == n || n(), (0, O.openUserProfileModal)(es({
         customStatusPrompt: eD,
         sourceAnalyticsLocations: ex
       }, ef, e))
     },
-    eB = (0, E.Z)({
+    eF = (0, E.Z)({
       location: "UserProfileAccountPopout"
     }),
-    eF = (null == eh ? true : eh.widgets) != null && eh.widgets.length > 0,
-    eG = eF ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+    eB = (null == eh ? true : eh.widgets) != null && eh.widgets.length > 0,
+    eG = eB ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
     [ez, eV] = (0, f.US)(eG),
     eH = ez === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     eW = l.useCallback(() => {
@@ -190,7 +190,7 @@ function eo(e) {
               user: t,
               displayProfile: eh,
               themeType: ea.l.POPOUT
-            }), (0, a.jsx)(O.Z, {
+            }), (0, a.jsx)(N.Z, {
               user: t,
               displayProfile: eh,
               themeType: ea.l.POPOUT,
@@ -233,7 +233,7 @@ function eo(e) {
               bio: null == eh ? true : eh.bio,
               hidePersonalInformation: eS,
               onClose: n
-            }), eB && eF && (0, a.jsx)(A.Z, {
+            }), eF && eB && (0, a.jsx)(A.Z, {
               user: t,
               widgets: null == eh ? true : eh.widgets,
               onOpenUserProfileModal: eU
@@ -294,7 +294,7 @@ function eo(e) {
                         className: er.statusPickerModalMenu,
                         "aria-label": el.intl.string(el.t.E13trI),
                         onClose: t,
-                        children: eO
+                        children: eN
                       })
                     },
                     onClick: r.tq ? () => {
@@ -330,7 +330,7 @@ function eo(e) {
                             hideScroller: true,
                             onClose: l,
                             onSelect: true,
-                            children: eO
+                            children: eN
                           })
                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                           var n = Object.keys(e);
@@ -367,7 +367,7 @@ function eo(e) {
                         children: eT
                       })
                     }
-                  }), !__OVERLAY__ && z.wS && eN && (0, a.jsx)(J.V4, {
+                  }), !__OVERLAY__ && z.wS && eO && (0, a.jsx)(J.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
                     label: el.intl.string(el.t["/AXYnE"]),

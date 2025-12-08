@@ -63,7 +63,7 @@ let y = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), r = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = l.useState(true), N = l.useRef({}), [O, T] = l.useState(false), [P, I] = l.useState(false), [w, k] = l.useState([]), [R, A] = l.useState(y), Z = l.useRef([]), [D, L] = l.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = l.useMemo(() => ({
+    } = (0, h.n6)(), r = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = l.useState(true), O = l.useRef({}), [N, T] = l.useState(false), [P, I] = l.useState(false), [w, k] = l.useState([]), [R, A] = l.useState(y), Z = l.useRef([]), [D, L] = l.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = l.useMemo(() => ({
       id: C,
       skuId: C,
       title: C,
@@ -73,11 +73,11 @@ let y = {
       thumbnailPreviewSrc: "",
       effects: w,
       animationType: s.y.ANIMATION_TYPE_UNSPECIFIED
-    }), [w]), B = e => {
+    }), [w]), F = e => {
       let t = e.currentTarget.files;
       return null == t ? null : t[0]
-    }, F = (e, t) => {
-      let n = B(t);
+    }, B = (e, t) => {
+      let n = F(t);
       null != n && (0, x.i0)(n, t => {
         A(a => _(j({}, a), {
           [e]: (0, x.z)(t, n)
@@ -137,10 +137,10 @@ let y = {
         },
         children: [(0, a.jsx)(u.Z, {
           ref: e => {
-            N.current.animated = e
+            O.current.animated = e
           },
           onChange: e => {
-            let t = B(e);
+            let t = F(e);
             null != t && (0, x.i0)(t, async e => {
               let n = await (0, x.Xv)(e, t, w.length);
               k(e => [...e, n])
@@ -149,21 +149,21 @@ let y = {
           multiple: false
         }), (0, a.jsx)(u.Z, {
           ref: e => {
-            N.current.thumbnail = e
+            O.current.thumbnail = e
           },
-          onChange: e => F(x.cq.THUMBNAIL, e),
+          onChange: e => B(x.cq.THUMBNAIL, e),
           multiple: false
         }), (0, a.jsx)(u.Z, {
           ref: e => {
-            N.current.static = e
+            O.current.static = e
           },
-          onChange: e => F(x.cq.STATIC, e),
+          onChange: e => B(x.cq.STATIC, e),
           multiple: false
         }), (0, a.jsx)(u.Z, {
           ref: e => {
-            N.current.reducedMotion = e
+            O.current.reducedMotion = e
           },
-          onChange: e => F(x.cq.REDUCED_MOTION, e),
+          onChange: e => B(x.cq.REDUCED_MOTION, e),
           multiple: false
         })]
       }), (0, a.jsxs)("div", {
@@ -171,7 +171,7 @@ let y = {
         children: [(0, a.jsxs)("div", {
           className: i()(g.col, g.preview),
           children: [(0, a.jsx)("img", {
-            src: O ? b : v,
+            src: N ? b : v,
             alt: "",
             width: 450
           }), S && (0, a.jsx)(f.Z, {
@@ -201,10 +201,10 @@ let y = {
                 children: "Dark Theme"
               }), (0, a.jsx)("input", {
                 type: "checkbox",
-                checked: O,
+                checked: N,
                 className: g.checkBox,
                 onChange: () => {
-                  T(!O)
+                  T(!N)
                 }
               })]
             }), (0, a.jsxs)("div", {
@@ -228,7 +228,7 @@ let y = {
               text: "Upload Animated Layer",
               onClick: () => {
                 var e;
-                return null == (e = N.current.animated) ? true : e.activateUploadDialogue()
+                return null == (e = O.current.animated) ? true : e.activateUploadDialogue()
               }
             }), (0, a.jsx)(c.Text, {
               variant: "text-sm/semibold",
@@ -241,21 +241,21 @@ let y = {
               text: "Upload thumbnail.png",
               onClick: () => {
                 var e;
-                return null == (e = N.current.thumbnail) ? true : e.activateUploadDialogue()
+                return null == (e = O.current.thumbnail) ? true : e.activateUploadDialogue()
               }
             }), (0, a.jsx)(c.Button, {
               variant: "active",
               text: "Upload static.png",
               onClick: () => {
                 var e;
-                return null == (e = N.current.static) ? true : e.activateUploadDialogue()
+                return null == (e = O.current.static) ? true : e.activateUploadDialogue()
               }
             }), (0, a.jsx)(c.Button, {
               variant: "active",
               text: "Upload reduced_motion.png",
               onClick: () => {
                 var e;
-                return null == (e = N.current.reducedMotion) ? true : e.activateUploadDialogue()
+                return null == (e = O.current.reducedMotion) ? true : e.activateUploadDialogue()
               }
             })]
           }), (0, a.jsx)("div", {
@@ -496,10 +496,10 @@ let y = {
               },
               children: (0, a.jsx)(u.Z, {
                 ref: e => {
-                  N.current["randomized-".concat(t)] = e
+                  O.current["randomized-".concat(t)] = e
                 },
                 onChange: e => ((e, t) => {
-                  let n = B(e);
+                  let n = F(e);
                   null != n && (0, x.i0)(n, e => {
                     k(a => {
                       let l = [...a],
@@ -522,7 +522,7 @@ let y = {
                 text: "Add Alternative",
                 onClick: () => {
                   var e;
-                  return null == (e = N.current["randomized-".concat(t)]) ? true : e.activateUploadDialogue()
+                  return null == (e = O.current["randomized-".concat(t)]) ? true : e.activateUploadDialogue()
                 }
               }), (0, a.jsx)(c.Button, {
                 variant: "critical-secondary",

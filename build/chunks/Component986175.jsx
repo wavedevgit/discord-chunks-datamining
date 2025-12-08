@@ -2,8 +2,8 @@
 /** chunk id: 986175, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => S
-}), require("./35282.js"), require("./539854.js"), require("./415506.js");
+  I: () => C
+}), require("./35282.js"), require("./539854.js"), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk164617 = require("./164617.js"),
@@ -98,7 +98,90 @@ function v(e) {
   }, o++)), i = a.lastIndex;
   return i < e.length && n.push(e.substring(i)), n.length > 0 ? n : e
 }
-let S = {
+
+function S() {
+  let {
+    setNextEnabled: e
+  } = (0, Chunk793030.vqz)();
+  return Chunk473749.useEffect(() => {
+    module(true)
+  }, [module]), (0, Chunk54381.jsx)(Chunk481060.Text, {
+    variant: "text-sm/normal",
+    color: "text-subtle",
+    children: "Lost access to your radness? Talk to your radness provider to refresh your aura."
+  })
+}
+
+function I() {
+  let {
+    setNextEnabled: e
+  } = (0, Chunk793030.vqz)(), [t, n] = Chunk473749.useState([]), a = [{
+    label: "I am wearing a helmet",
+    value: "helmet"
+  }, {
+    label: "I know where to find my personal flotation device",
+    value: "pfd"
+  }, {
+    label: "I completed the safety training",
+    value: "training"
+  }];
+  return Chunk473749.useEffect(() => {
+    module(exports.length === Chunk164617.length)
+  }, [exports, module, Chunk164617.length]), (0, Chunk54381.jsx)(Chunk793030.cOn, {
+    label: "Safety checklist",
+    options: Chunk164617,
+    selectedValues: exports,
+    onChange: require
+  })
+}
+
+function T() {
+  let {
+    setNextEnabled: e
+  } = (0, Chunk793030.vqz)(), [t, n] = Chunk473749.useState("");
+  return Chunk473749.useEffect(() => {
+    module(exports.length > 0)
+  }, [exports, module]), (0, Chunk54381.jsx)(Chunk481060.oil, {
+    placeholder: "Enter your passcode...",
+    value: exports,
+    onChange: e => n(e)
+  })
+}
+
+function A(e) {
+  var t = m({}, h(e));
+  let [n, a] = i.useState("intro"), s = [{
+    stepKey: "intro",
+    title: "Verify radness",
+    subtitle: "To verify your radness, we need to ask you a few deep and personal questions.",
+    body: (0, r.jsx)(S, {}),
+    nextButtonProps: {
+      text: "Verify"
+    }
+  }, {
+    stepKey: "safety",
+    stepNumber: 1,
+    title: "Safety first",
+    subtitle: "Before we get started verifying your radness, we need to make sure you're safe and sound.",
+    body: (0, r.jsx)(I, {})
+  }, {
+    stepKey: "passcode",
+    stepNumber: 2,
+    title: "Enter passcode",
+    subtitle: "Enter your passcode to complete the radness verification process.",
+    body: (0, r.jsx)(T, {}),
+    nextButtonProps: {
+      text: "Verify passcode"
+    }
+  }];
+  return (0, r.jsx)(o.dGG, g({
+    steps: s,
+    stepCount: 2,
+    currentStepKey: n,
+    onStepChange: a
+  }, t))
+}
+let C = {
   title: "Modal",
   stories: [{
     name: "Modal",
@@ -616,6 +699,26 @@ let S = {
               })
             })
           })))
+        })]
+      })
+    }
+  }, {
+    name: "MultiStepModal [Alpha]",
+    id: "multi-step-modal",
+    component: function(e) {
+      var t = m({}, h(e));
+      return (0, r.jsxs)(u.Kqy, {
+        gap: 16,
+        align: "center",
+        children: [(0, r.jsx)(u.Text, {
+          variant: "text-md/normal",
+          children: "Click the button below to open the multi-step modal"
+        }), (0, r.jsx)(u.Button, {
+          variant: "primary",
+          text: "Open MultiStepModal",
+          onClick: () => (0, u.h7j)(e => (0, r.jsx)(A, g({}, e)), {
+            dismissable: t.dismissable
+          })
         })]
       })
     }

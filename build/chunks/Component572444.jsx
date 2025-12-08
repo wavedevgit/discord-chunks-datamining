@@ -103,7 +103,7 @@ function y(e) {
 function C() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [r, i] = Chunk473749.useState([]), _ = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [C, S] = Chunk473749.useState(null), E = Chunk473749.useRef(null), N = Chunk473749.useRef(null), [O, T] = Chunk473749.useState(.5), {
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [r, i] = Chunk473749.useState([]), _ = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [C, S] = Chunk473749.useState(null), E = Chunk473749.useRef(null), O = Chunk473749.useRef(null), [N, T] = Chunk473749.useState(.5), {
     krispModels: P,
     krispModelOverride: I,
     inputMode: w,
@@ -115,8 +115,8 @@ function C() {
     noiseSuppression: L,
     noiseSuppressionSupported: M,
     noiseCancellationSupported: U,
-    noiseCancellationEnableStats: B,
-    vadDuringPreProcess: F
+    noiseCancellationEnableStats: F,
+    vadDuringPreProcess: B
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
     krispModels: Chunk131951.Z.getKrispModels(),
     krispModelOverride: Chunk131951.Z.getKrispModelOverride(),
@@ -143,7 +143,7 @@ function C() {
   function W(e) {
     if (t && H(), V(), null == z) return;
     let n = z.createBufferSource();
-    n.buffer = e.audioBuffer, N.current = z.createGain(), N.current.gain.value = O, n.connect(N.current), N.current.connect(z.destination), n.loop = true, n.start(), E.current = n, S(e)
+    n.buffer = e.audioBuffer, O.current = z.createGain(), O.current.gain.value = N, n.connect(O.current), O.current.connect(z.destination), n.loop = true, n.start(), E.current = n, S(e)
   }
   Chunk473749.useEffect(() => {
     V()
@@ -207,7 +207,7 @@ function C() {
           serialize: e => e
         }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Enable Stats",
-          checked: B,
+          checked: F,
           onChange: e => u.Z.setNoiseCancellationEnableStats(e)
         })]
       }), w === Chunk65154.pM.VOICE_ACTIVITY && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -235,7 +235,7 @@ function C() {
           })]
         }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Run Before Processing",
-          checked: null != F && F,
+          checked: null != B && B,
           onChange: e => u.Z.setMode(b.pM.VOICE_ACTIVITY, {
             vadDuringPreProcess: e
           })
@@ -278,9 +278,9 @@ function C() {
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.iRW, {
         label: "Volume",
-        initialValue: O,
+        initialValue: N,
         asValueChanges: function(e) {
-          null != N.current && (N.current.gain.value = e, T(e))
+          null != O.current && (O.current.gain.value = e, T(e))
         },
         minValue: 0,
         maxValue: 1

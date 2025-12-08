@@ -207,7 +207,7 @@ let R = e => {
       fullWidth: true
     })
   },
-  B = e => {
+  F = e => {
     let {
       product: t,
       checkoutEligiblePrices: n,
@@ -253,7 +253,7 @@ let R = e => {
       fullWidth: true
     })
   },
-  F = e => {
+  B = e => {
     let {
       handlePreviewButtonClick: t,
       text: n
@@ -285,11 +285,11 @@ let R = e => {
       product: t,
       isPartiallyOwnedBundle: S,
       isPurchased: b
-    }), w = (0, N.Iw)(t), k = null != w, {
+    }), w = (0, O.Iw)(t), k = null != w, {
       shouldCheckoutWithOrbs: G,
       hasSufficientOrbs: z,
       checkoutEligiblePrices: V
-    } = (0, O.Ip)({
+    } = (0, N.Ip)({
       product: t,
       isPremiumUser: p,
       prioritizedCurrency: d,
@@ -333,7 +333,7 @@ let R = e => {
       product: t,
       analyticsLocations: H,
       onClickAnalytics: u
-    }) : (0, a.jsx)(B, {
+    }) : (0, a.jsx)(F, {
       product: t,
       checkoutEligiblePrices: V,
       analyticsLocations: H,
@@ -342,7 +342,7 @@ let R = e => {
       onClickAnalytics: u
     });
     if (G && !z)
-      if (V.length > 1) return (0, a.jsx)(F, {
+      if (V.length > 1) return (0, a.jsx)(B, {
         handlePreviewButtonClick: W,
         text: c
       });

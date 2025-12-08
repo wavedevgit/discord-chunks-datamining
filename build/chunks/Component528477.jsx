@@ -1,7 +1,7 @@
 /** Chunk was on 88282 **/
 /** chunk id: 528477, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  n: () => N
+  n: () => O
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,12 +26,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk742098 = require("./742098.js"),
   Chunk932889 = require("./932889.js");
-let N = e => {
+let O = e => {
   let {
     onClose: t
   } = e, n = (0, u.m)(), {
-    installationStatus: N,
-    perkAvailableToUser: O,
+    installationStatus: O,
+    perkAvailableToUser: N,
     isSupportedPrivateBrowsingPerkPlatform: T,
     isWeb: P,
     connectionStatus: I
@@ -45,7 +45,7 @@ let N = e => {
     (0, p.openUserSettings)(m.n.PRIVATE_BROWSING_PANEL, {
       section: j.oAB.CF_WARP
     })
-  }, []), A = [f.Ij.CONNECTED].includes(I), Z = T && w && ![f._n.ZERO_TRUST, f._n.ERROR].includes(N) && !P && (!n || O), D = (0, l.useMemo)(() => {
+  }, []), A = [f.Ij.CONNECTED].includes(I), Z = T && w && ![f._n.ZERO_TRUST, f._n.ERROR].includes(O) && !P && (!n || N), D = (0, l.useMemo)(() => {
     switch (I) {
       case f.Ij.CONNECTED:
         return C.intl.string(y.default.FBu3XJ);
@@ -55,23 +55,23 @@ let N = e => {
         return C.intl.string(y.default["A70/wR"])
     }
   }, [I]), L = (0, l.useMemo)(() => {
-    if (!O) return C.intl.string(y.default.KN6HOb);
-    switch (N) {
+    if (!N) return C.intl.string(y.default.KN6HOb);
+    switch (O) {
       case f._n.INSTALLED:
       case f._n.EXISTING_INSTALLATION:
         return D;
       default:
         return C.intl.string(y.default.KN6HOb)
     }
-  }, [N, O, D]), M = (0, l.useMemo)(() => {
-    if (!O) return (0, a.jsx)(r.xvT, {
+  }, [O, N, D]), M = (0, l.useMemo)(() => {
+    if (!N) return (0, a.jsx)(r.xvT, {
       variant: "text-sm/normal",
       color: "text-subtle",
       children: C.intl.format(y.default["0UfKTY"], {
         helpdeskArticle: x.w
       })
     });
-    switch (N) {
+    switch (O) {
       case f._n.INSTALLED:
       case f._n.EXISTING_INSTALLATION:
         return (0, a.jsx)(r.xvT, {
@@ -98,7 +98,7 @@ let N = e => {
           })
         })
     }
-  }, [N, O, A, R, k]), {
+  }, [O, N, A, R, k]), {
     analyticsLocations: U
   } = (0, o.ZP)(s.Z.MASKED_LINK);
   return ((0, l.useEffect)(() => {
@@ -112,7 +112,7 @@ let N = e => {
       className: S.betaBadge
     }), (0, a.jsxs)("div", {
       className: S.contentContainer,
-      children: [O && (0, a.jsx)(r.$1m, {
+      children: [N && (0, a.jsx)(r.$1m, {
         className: S.imageWrapper,
         offsetBottom: false,
         color: "nitro-pink",
@@ -130,7 +130,7 @@ let N = e => {
           variant: "heading-md/semibold",
           children: L
         }), M]
-      }), !O && (0, a.jsx)("div", {
+      }), !N && (0, a.jsx)("div", {
         className: S.ctaContainer,
         children: (0, a.jsx)(d.Z, {
           buttonTextOverride: C.intl.string(C.t["8x0jKT"]),

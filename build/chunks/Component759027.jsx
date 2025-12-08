@@ -54,7 +54,7 @@ let E = {
     [Chunk981631.O0b.PAUSED]: "Paused",
     [Chunk981631.O0b.PAUSE_PENDING]: "Pause Pending"
   },
-  N = {
+  O = {
     [Chunk362786.Id.UNKNOWN]: "Unknown",
     [Chunk362786.Id.ADMIN]: "Admin",
     [Chunk362786.Id.USER]: "User",
@@ -62,7 +62,7 @@ let E = {
     [Chunk362786.Id.DEFERRED_START]: "Deferred Start",
     [Chunk362786.Id.USER_TEMPORARY_BAN]: "User Temp Ban"
   },
-  O = [{
+  N = [{
     label: "Unpaid",
     value: Chunk981631.O0b.UNPAID
   }, {
@@ -180,7 +180,7 @@ function P(e) {
   let {
     subscription: I,
     onUpdated: w
-  } = e, [k, R] = l.useState(false), [A, Z] = l.useState(false), [D, L] = l.useState(false), [M, U] = l.useState(false), [B, F] = l.useState(null), G = e => (null == e && (e = I.status), e in E) ? E[e] : "Unknown status ".concat(e), z = e => {
+  } = e, [k, R] = l.useState(false), [A, Z] = l.useState(false), [D, L] = l.useState(false), [M, U] = l.useState(false), [F, B] = l.useState(null), G = e => (null == e && (e = I.status), e in E) ? E[e] : "Unknown status ".concat(e), z = e => {
     let t = new Date(e);
     return x.default.fromTimestamp(t.getTime())
   }, V = async e => {
@@ -209,7 +209,7 @@ function P(e) {
       })
     } catch (t) {
       var e;
-      F((null == (e = t.body) ? true : e.message) || t.message || "Failed to renew subscription")
+      B((null == (e = t.body) ? true : e.message) || t.message || "Failed to renew subscription")
     }
     w()
   }, W = (null == (t = _.GP[I.planIdFromItems]) ? true : t.premiumType) === _.PremiumTypes.TIER_0, K = null == (n = I.metadata) ? true : n.ended_at, q = null != K ? new Date(K).toISOString().substring(0, 10) : "", Y = [{
@@ -235,7 +235,7 @@ function P(e) {
     isDisabled: false
   }), I.status === v.O0b.PAUSED && Y.push({
     id: "pause-reason",
-    label: "Pause Reason: ".concat(I.pauseReason in N ? N[I.pauseReason] : "Unknown pause reason ".concat(I.pauseReason)),
+    label: "Pause Reason: ".concat(I.pauseReason in O ? O[I.pauseReason] : "Unknown pause reason ".concat(I.pauseReason)),
     isDisabled: false
   }), (0, a.jsx)("div", {
     className: i()(y.card, W ? y.gradientWrapperTier0 : y.gradientWrapperTier2),
@@ -372,7 +372,7 @@ function P(e) {
             label: "Status",
             serialize: e => G(e),
             isSelected: e => e === I.status,
-            options: O,
+            options: N,
             select: e => V({
               status: e
             }),
@@ -396,11 +396,11 @@ function P(e) {
                   }, e))))
                 }
               })]
-            }), null !== B && (0, a.jsx)("div", {
+            }), null !== F && (0, a.jsx)("div", {
               className: C.error,
               children: (0, a.jsx)(m.M14, {
                 type: "critical",
-                children: B
+                children: F
               })
             })]
           }), (0, a.jsxs)(m.Kqy, {

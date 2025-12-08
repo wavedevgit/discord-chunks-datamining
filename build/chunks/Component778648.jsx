@@ -83,7 +83,7 @@ let L = function() {
   let [e, t] = Chunk473749.useState(Chunk474936.Si.TIER_2), [n, j] = Chunk473749.useState(null), _ = (0, Chunk442837.Wu)([Chunk430824.Z], () => Chunk430824.Z.getGuildsArray()), [L] = (0, Chunk442837.Wu)([Chunk78839.Z], () => [Chunk78839.Z.getPremiumSubscription()]), M = Chunk305342.map(e => ({
     value: e,
     label: e.name
-  })), [U, B] = Chunk473749.useState(M.length > 0 ? M[0].value : null), [F, G] = Chunk473749.useState(""), [z, V] = Chunk473749.useState({
+  })), [U, F] = Chunk473749.useState(M.length > 0 ? M[0].value : null), [B, G] = Chunk473749.useState(""), [z, V] = Chunk473749.useState({
     plan_id: Chunk474936.Xh.PREMIUM_MONTH_TIER_2,
     gift: "true"
   }), H = "true" !== z.gift && null != L, [W, K] = Chunk473749.useState(M.length > 0 ? M[0].value : null), {
@@ -169,7 +169,7 @@ let L = function() {
             label: "Boost",
             value: U,
             options: M,
-            onChange: e => B(e),
+            onChange: e => F(e),
             popoutLayerContext: Chunk246992.O$
           }), null != U ? (0, Chunk54381.jsx)(Chunk678558.Z, {
             guild: U,
@@ -190,19 +190,19 @@ let L = function() {
             children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
               label: "Standalone: Trial Promotion Redemption",
               placeholder: "Promotion Code",
-              value: F,
+              value: B,
               onChange: e => G(e)
             }), (0, Chunk54381.jsx)(Chunk481060.aML, {
               "data-migration-pending": true,
               text: "Need Promotion Code",
-              shouldShow: F.length < 1,
+              shouldShow: B.length < 1,
               children: e => (0, a.jsx)(u.Button, Z(A({
                 variant: "primary",
                 text: "Open Link",
-                disabled: F.length < 1
+                disabled: B.length < 1
               }, e), {
                 onClick: () => {
-                  window.open(w.Z5c.BILLING_PROMOTION_REDEMPTION(F))
+                  window.open(w.Z5c.BILLING_PROMOTION_REDEMPTION(B))
                 }
               }))
             })]

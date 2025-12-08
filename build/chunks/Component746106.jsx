@@ -37,6 +37,8 @@ function R(e, t, n, r, o) {
     l = i.useCallback(() => ({
       i18n: {
         CANCEL: P.intl.string(P.t["ETE/oC"]),
+        BACK: P.intl.string(P.t["13/7kX"]),
+        NEXT: P.intl.string(P.t.PDTjLN),
         SPINNER_LOADING_LABEL: P.intl.string(P.t.ZTNur7),
         BUTTON_LOADING_STARTED_LABEL: P.intl.string(P.t.pfChQr),
         BUTTON_LOADING_FINISHED_LABEL: P.intl.string(P.t.SVParY),
@@ -76,7 +78,11 @@ function R(e, t, n, r, o) {
         DATE_INPUT_OPEN_CALENDAR_LABEL: P.intl.string(N.default.I8kUqR),
         CALENDAR_PREVIOUS_MONTH_LABEL: P.intl.string(N.default.raS6yf),
         CALENDAR_NEXT_MONTH_LABEL: P.intl.string(N.default["/cp93l"]),
-        INLINE_NOTICE_GENERIC_ERROR: P.intl.string(P.t["rTU7/z"])
+        INLINE_NOTICE_GENERIC_ERROR: P.intl.string(P.t["rTU7/z"]),
+        STEP_INDICATOR: (e, t) => P.intl.formatToPlainString(N.default["v2YSk/"], {
+          stepNumber: e,
+          stepCount: t
+        })
       },
       locale: o,
       theme: e,

@@ -66,17 +66,17 @@ function j() {
       i = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
       s = null != (l = null == (n = e.config.description) ? true : n.toLowerCase()) ? l : "";
     return i.includes(r) || s.includes(r)
-  }), [C, y]), N = Chunk473749.useCallback((e, n) => {
+  }), [C, y]), O = Chunk473749.useCallback((e, n) => {
     if (null == n || !e.type.startsWith("text/")) return (0, p.Eo)(b);
     let [a, l] = n.split(",");
     if (!a.includes("text/plain")) return (0, p.Eo)(b);
     let r = JSON.parse(atob(l));
     r.skuId = (0, s.Z)(), t(r), (0, p.XA)("Profile Effect (maybe??) imported!")
-  }, [exports]), O = Chunk473749.useCallback(e => {
+  }, [exports]), N = Chunk473749.useCallback(e => {
     var t;
     if ((null == (t = e.currentTarget) ? true : t.files) == null) return void(0, p.Eo)("Error uploading file. Try again!");
-    (0, p.Kr)(e.currentTarget.files, N, p.Eo)
-  }, [N]);
+    (0, p.Kr)(e.currentTarget.files, O, p.Eo)
+  }, [O]);
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk558270.root,
     children: [null == Chunk120356 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -118,7 +118,7 @@ function j() {
             children: "Import Shared Config"
           }), (0, Chunk54381.jsx)(Chunk53281.Z, {
             ref: _,
-            onChange: O,
+            onChange: N,
             multiple: false
           })]
         }), (0, Chunk54381.jsx)(Chunk481060.Button, {

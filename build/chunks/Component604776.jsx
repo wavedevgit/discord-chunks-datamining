@@ -83,8 +83,8 @@ function y() {
   let [e, t] = Chunk473749.useState(false), [n, r] = Chunk473749.useState(Chunk314794.a.PREMIUM_TIER_2_1_HOUR), [m, v] = Chunk473749.useState([]), [y, C] = Chunk473749.useState([]), {
     refreshEntitlementList: S,
     grantFractionalPremium: E,
-    deleteFractionalPremium: N,
-    triggerNextEntitlementFulfillment: O,
+    deleteFractionalPremium: O,
+    triggerNextEntitlementFulfillment: N,
     entitlements: T,
     loading: P
   } = (0, Chunk232867.m)();
@@ -174,14 +174,14 @@ function y() {
               size: Chunk755721.zx.Sizes.TINY,
               color: Chunk755721.zx.Colors.PRIMARY,
               look: Chunk755721.zx.Looks.OUTLINED,
-              onClick: () => O(),
+              onClick: () => N(),
               children: "Run fulfillment"
             }), (0, Chunk54381.jsx)(Chunk755721.zx, {
               disabled: P,
               size: Chunk755721.zx.Sizes.TINY,
               color: Chunk755721.zx.Colors.RED,
               look: Chunk755721.zx.Looks.OUTLINED,
-              onClick: () => N(),
+              onClick: () => O(),
               children: "Delete all"
             }), (0, Chunk54381.jsx)(Chunk755721.zx, {
               disabled: P,
@@ -208,7 +208,7 @@ function y() {
             children: Chunk55935.map(e => (0, a.jsx)(j, {
               entitlement: e,
               active: true,
-              onDelete: () => N(e.id)
+              onDelete: () => O(e.id)
             }, e.id))
           })]
         }), y.length > 0 && (0, Chunk54381.jsxs)("div", {

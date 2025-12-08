@@ -76,7 +76,7 @@ function A(e) {
   var t, n;
   let {
     type: l
-  } = e, r = (0, u.e7)([N.Z], () => N.Z.getFilters()), i = null != (n = null == r || null == (t = r.types) ? true : t.has(l)) && n;
+  } = e, r = (0, u.e7)([O.Z], () => O.Z.getFilters()), i = null != (n = null == r || null == (t = r.types) ? true : t.has(l)) && n;
   return (0, a.jsx)(h.rsf, {
     checked: i,
     onChange: function() {
@@ -130,8 +130,8 @@ function Z() {
       let [t] = e;
       return t
     }),
-    B = (0, Chunk835473.Z)(U).filter(Chunk823379.lm),
-    F = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
+    F = (0, Chunk835473.Z)(U).filter(Chunk823379.lm),
+    B = (0, Chunk442837.e7)([Chunk550532.Z], () => Chunk550532.Z.getFakeGameToShow());
   return (0, Chunk54381.jsx)("div", {
     className: Chunk451429.panel,
     children: (0, Chunk54381.jsxs)(Chunk481060.zJl, {
@@ -213,7 +213,7 @@ function Z() {
           error: A.length > 0 && null == M ? "No game profile for ".concat(null != L ? L : A + " - try by id", ".") : true,
           helperText: null != M ? "Game profile found" : true
         }), (0, Chunk54381.jsx)("ul", {
-          children: B.map(e => (0, a.jsx)("li", {
+          children: F.map(e => (0, a.jsx)("li", {
             children: (0, a.jsx)(D, {
               application: e
             })
@@ -232,7 +232,7 @@ function Z() {
             label: e,
             value: e
           })),
-          isSelected: e => e === F,
+          isSelected: e => e === B,
           select: function(e) {
             x.Z.dispatch({
               type: "CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING",

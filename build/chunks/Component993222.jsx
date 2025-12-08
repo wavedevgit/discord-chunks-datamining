@@ -31,11 +31,11 @@ let j = e => {
     } = e, j = (0, h.jB)(), {
       isPurchased: _,
       isPartiallyOwnedBundle: y
-    } = (0, p.L)(t), C = (0, m.G1)(t), S = (0, i.e7)([d.Z], () => d.Z.getCategoryForProduct(t.skuId)), E = (null == S ? true : S.unpublishedAt) != null ? (0, m.OT)(S.unpublishedAt) : null, N = (0, i.e7)([o.default], () => o.default.getCurrentUser()), O = c.ZP.canUseCollectibles(N), T = (0, f.Iw)(t), {
+    } = (0, p.L)(t), C = (0, m.G1)(t), S = (0, i.e7)([d.Z], () => d.Z.getCategoryForProduct(t.skuId)), E = (null == S ? true : S.unpublishedAt) != null ? (0, m.OT)(S.unpublishedAt) : null, O = (0, i.e7)([o.default], () => o.default.getCurrentUser()), N = c.ZP.canUseCollectibles(O), T = (0, f.Iw)(t), {
       isOrbExclusive: P
     } = (0, g.Ip)({
       product: t,
-      isPremiumUser: O,
+      isPremiumUser: N,
       prioritizedCurrency: x,
       hasDiscountOffer: null != T
     }), I = n;

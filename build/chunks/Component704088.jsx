@@ -135,7 +135,7 @@ let C = e => {
     })
   },
   S = () => {
-    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [N, O] = Chunk473749.useState(5e3), [T, P] = Chunk473749.useState(false), I = Chunk473749.useRef(null), w = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
+    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [O, N] = Chunk473749.useState(5e3), [T, P] = Chunk473749.useState(false), I = Chunk473749.useRef(null), w = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
       finishSetup: async () => true,
       perkAvailableToUser: k
     })), {
@@ -145,8 +145,8 @@ let C = e => {
       setConnectionStatus: L,
       setConnect: M,
       setDisconnect: U,
-      setInstall: B,
-      setIsWeb: F,
+      setInstall: F,
+      setIsWeb: B,
       setIsSupportedPrivateBrowsingPerkPlatform: G,
       isWeb: z,
       isSupportedPrivateBrowsingPerkPlatform: V,
@@ -170,15 +170,15 @@ let C = e => {
         Z(p._n.INSTALLING), s(setTimeout(() => {
           if (S) return void t(Error("Installation failed"));
           e()
-        }, N))
-      }), [S, N, Z, Chunk544891]);
+        }, O))
+      }), [S, O, Z, Chunk544891]);
     Chunk473749.useEffect(() => {
       z && A !== Chunk5900._n.UNKNOWN && Z(Chunk5900._n.UNKNOWN)
     }, [z, Z, A]), Chunk473749.useEffect(() => {
       U(J)
     }, [J, U]), Chunk473749.useEffect(() => {
-      B(X)
-    }, [X, B]), Chunk473749.useEffect(() => {
+      F(X)
+    }, [X, F]), Chunk473749.useEffect(() => {
       A !== Chunk5900._n.INSTALLING && clearTimeout(require)
     }, [require, A]), Chunk473749.useEffect(() => {
       if (A !== Chunk5900._n.INSTALLED && D !== Chunk5900.Ij.INITIALIZING) return void L(Chunk5900.Ij.INITIALIZING)
@@ -224,7 +224,7 @@ let C = e => {
                 width: "45px"
               },
               children: (0, Chunk54381.jsx)(Chunk159691.rsf, {
-                onChange: () => F(!z),
+                onChange: () => B(!z),
                 checked: z
               })
             })]
@@ -323,8 +323,8 @@ let C = e => {
               variant: "text-md/semibold",
               children: "Install time"
             }), (0, Chunk54381.jsx)(Chunk199849.B6, {
-              select: e => O(e),
-              isSelected: e => e === N,
+              select: e => N(e),
+              isSelected: e => e === O,
               serialize: e => "".concat(e),
               options: [{
                 label: "1 second",
