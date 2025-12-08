@@ -2,19 +2,16 @@
 /** chunk id: 871604, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => A
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk989573 = require("./989573.js"),
-  Chunk499254 = require("./499254.js"),
-  Chunk827498 = require("./827498.js"),
+  Chunk176412 = require("./176412.js"),
   Chunk311819 = require("./311819.js"),
   Chunk433534 = require("./433534.js"),
-  Chunk541716 = require("./541716.js"),
-  Chunk433355 = require("./433355.js"),
   Chunk592125 = require("./592125.js"),
   Chunk944486 = require("./944486.js"),
   Chunk626135 = require("./626135.js"),
@@ -27,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,22 +33,22 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      T(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function C(e, t) {
+function I(e, t) {
   if (null == e) return {};
-  var n, r, i = N(e, t);
+  var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -59,7 +56,7 @@ function C(e, t) {
   return i
 }
 
-function N(e, t) {
+function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -67,41 +64,33 @@ function N(e, t) {
   return i
 }
 
-function P(e) {
+function A(e) {
   var {
     user: t,
     closePopout: n
-  } = e, T = C(e, ["user", "closePopout"]);
-  let N = i.useRef(null),
-    P = (0, a.e7)([y.Z], () => {
+  } = e, v = I(e, ["user", "closePopout"]);
+  let T = i.useRef(null),
+    A = (0, a.e7)([g.Z], () => {
       var e;
-      return null == (e = y.Z.getUserProfile(t.id)) ? true : e.application
+      return null == (e = g.Z.getUserProfile(t.id)) ? true : e.application
     }),
-    R = (0, a.e7)([m.Z, _.Z], () => _.Z.getChannel(m.Z.getChannelId())),
-    w = (0, s.Z)(R),
-    D = t.id,
-    x = i.useCallback(() => {
-      if (null != P)
-        if (w) {
-          let e = m.Z.getCurrentlySelectedChannelId(),
-            t = _.Z.getChannel(e),
-            r = null != p.ZP.getSidebarState(e) || (null == t ? true : t.isGuildVocal()) ? f.Ie.SIDEBAR : f.Ie.NORMAL;
-          l._(c._b.TEXT, r, {
-            applicationId: P.id
-          }), (0, o.Mr3)((0, O.z)(D, null == R ? true : R.guild_id)), null == n || n(), h.default.track(S.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
-            application_id: P.id
-          })
-        } else(0, b.L)(A({
-          applicationId: P.id
-        }, P))
-    }, [P, w, D, null == R ? true : R.guild_id, n]),
-    L = w ? I.intl.string(I.t["Cia+A8"]) : I.intl.string(I.t.NgXl3C);
-  if (null == P || !(0, d.Eb)(P)) return null;
+    C = (0, a.e7)([f.Z, d.Z], () => d.Z.getChannel(f.Z.getChannelId())),
+    N = (0, s.Z)(C),
+    P = t.id,
+    R = i.useCallback(() => {
+      null != A && (N ? ((0, l.X)(A.id), (0, o.Mr3)((0, E.z)(P, null == C ? true : C.guild_id)), null == n || n(), p.default.track(y.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+        application_id: A.id
+      })) : (0, h.L)(S({
+        applicationId: A.id
+      }, A)))
+    }, [A, N, P, null == C ? true : C.guild_id, n]),
+    w = N ? O.intl.string(O.t["Cia+A8"]) : O.intl.string(O.t.NgXl3C);
+  if (null == A || !(0, u.Eb)(A)) return null;
   let {
-    customInstallUrl: j
-  } = P, M = null == j || E.Z.isDiscordUrl(j) ? o.qJs : o.Gr1, k = w ? true : M;
-  return g.wS ? (0, r.jsx)(o.yRy, {
-    targetElementRef: N,
+    customInstallUrl: D
+  } = A, x = null == D || m.Z.isDiscordUrl(D) ? o.qJs : o.Gr1, L = N ? true : x;
+  return _.wS ? (0, r.jsx)(o.yRy, {
+    targetElementRef: T,
     renderPopout: e => {
       let {
         closePopout: t
@@ -109,13 +98,13 @@ function P(e) {
       return (0, r.jsx)(o.v2r, {
         navId: "user-bot-profile-add-app",
         onClose: t,
-        "aria-label": I.intl.string(I.t.dbkxVm),
+        "aria-label": O.intl.string(O.t.dbkxVm),
         onSelect: true,
         children: (0, r.jsx)(o.kSQ, {
           children: (0, r.jsx)(o.sNh, {
             id: "copy",
-            label: I.intl.string(I.t.XWDihq),
-            action: () => (0, g.JG)((0, u.J)(P))
+            label: O.intl.string(O.t.XWDihq),
+            action: () => (0, _.JG)((0, c.J)(A))
           })
         })
       })
@@ -123,21 +112,21 @@ function P(e) {
     children: e => {
       var {
         onClick: t
-      } = e, n = C(e, ["onClick"]);
-      return (0, r.jsx)(v.O1, A({
-        buttonRef: N,
+      } = e, n = I(e, ["onClick"]);
+      return (0, r.jsx)(b.O1, S({
+        buttonRef: T,
         action: "PRESS_ADD_APP",
-        text: L,
-        icon: k,
+        text: w,
+        icon: L,
         onContextMenu: t,
-        onClick: x
-      }, n, T))
+        onClick: R
+      }, n, v))
     }
-  }) : (0, r.jsx)(v.O1, A({
+  }) : (0, r.jsx)(b.O1, S({
     action: "PRESS_ADD_APP",
-    text: L,
-    icon: k,
-    onClick: x,
+    text: w,
+    icon: L,
+    onClick: R,
     variant: "primary"
-  }, T))
+  }, v))
 }

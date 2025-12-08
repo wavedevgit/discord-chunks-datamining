@@ -99,8 +99,8 @@ function L() {
   N.sort((e, t) => {
     let n = d.Z.getUserAffinity(e),
       r = d.Z.getUserAffinity(t),
-      i = null != n ? n.communicationProbability : 0;
-    return (null != r ? r.communicationProbability : 0) - i
+      i = null != n ? n.dmProbability : 0;
+    return (null != r ? r.dmProbability : 0) - i
   });
   let t = 0;
   for (let e of N) null != Chunk752048.Z.getUserAffinity(module) && Chunk752048.Z.getUserAffinity(module).dmProbability > T && exports < E && (P.add(module), exports++)
@@ -206,7 +206,7 @@ function X(e) {
     }
   });
   let r = 0;
-  for (let e of n)
+  for (let e of N)
     if (null == C.messageGiftIntentLastShownMap[e] && (P.add(e), ++r >= E)) break
 }
 class J extends(r = Chunk442837.ZP.PersistedStore) {
@@ -223,17 +223,13 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
   getFriendAnniversaries() {
     return N
   }
-  isTopAffinityFriendAnniversary(e) {
+  isFreshTopAffinityFriendAnniversary(e) {
     let {
       userId: t
-    } = e, {
-      enabled: n
-    } = _.w.getConfig({
-      location: "PremiumGiftingIntentStore isTopAffinityFriendAnniversary"
-    });
-    return !!n && P.has(t) && null == C.messageGiftIntentLastShownMap[t]
+    } = e;
+    return P.has(t) && null == C.messageGiftIntentLastShownMap[t]
   }
-  canShowGiftUnreadNotification() {
+  canShowGiftNotification() {
     V();
     let e = C.giftUnreadNotificationLastDismissedTimes;
     return !!M() && (0 === module.length || !(module.length >= I) && !(module.filter(e => Date.now() - e <= y).length >= S))
