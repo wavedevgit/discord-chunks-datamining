@@ -12,10 +12,9 @@ function o(e) {
   let {
     title: t,
     subtitle: n,
-    badge: o,
-    type: s = "primary"
+    type: o = "primary"
   } = e;
-  return "secondary" === s ? (0, r.jsx)(i.Kqy, {
+  return "secondary" === o ? (0, r.jsx)(i.Kqy, {
     gap: 8,
     padding: {
       left: 12,
@@ -33,13 +32,13 @@ function o(e) {
       right: 12,
       bottom: 24
     },
-    children: [(0, r.jsxs)("div", {
+    children: [(0, r.jsx)("div", {
       className: a.headerTitle,
-      children: [(0, r.jsx)(i.X6q, {
+      children: (0, r.jsx)(i.X6q, {
         variant: "heading-xl/normal",
         color: "header-primary",
         children: t
-      }), null != o && o]
+      })
     }), null != n && (0, r.jsx)(i.xvT, {
       variant: "text-md/normal",
       color: "text-subtle",

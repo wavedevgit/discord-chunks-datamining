@@ -1,11 +1,11 @@
 /** Chunk was on 77069 **/
 /** chunk id: 650271, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  z: () => S
+  z: () => E
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
-  Chunk28682 = require("./28682.js"),
+  Chunk970013 = require("./970013.js"),
   Chunk313789 = require("./313789.js"),
   Chunk620163 = require("./620163.jsx"),
   Chunk501348 = require("./501348.jsx"),
@@ -16,18 +16,18 @@ let d = (0, Chunk509613.x1)(Chunk313789.n.APPEARANCE_PANE, {
     render: Chunk501348.Z,
     buildLayout: () => []
   }),
-  E = (0, Chunk509613.wf)(Chunk313789.n.APPEARANCE_PANEL, {
+  T = (0, Chunk509613.wf)(Chunk313789.n.APPEARANCE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
     buildLayout: () => [d]
   }),
-  S = (0, Chunk509613.m7)(Chunk313789.n.APPEARANCE_SIDEBAR_ITEM, {
+  E = (0, Chunk509613.m7)(Chunk313789.n.APPEARANCE_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
     getLegacySearchKey: () => Chunk726985.s6.APPEARANCE,
     icon: Chunk657707.V3v,
     trailing: {
-      type: Chunk28682.PU.BADGE_NEW,
+      type: Chunk970013.W.BADGE_NEW,
       getDismissibleContentTypes: Chunk620163.$Z,
-      badgeComponent: Chunk620163.c$
+      stronglyDiscouragedBadgeComponent: Chunk620163.c$
     },
-    buildLayout: () => [E]
+    buildLayout: () => [T]
   })

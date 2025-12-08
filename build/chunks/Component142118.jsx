@@ -16,29 +16,26 @@ function c(e) {
     node: t
   } = e, {
     useTitle: n,
-    useNavigationTitle: c,
-    layout: u,
-    init: d,
-    useBadge: f,
-    useNotice: p
-  } = t, _ = null == n ? true : n(), m = null == f ? true : f(), h = null == p ? true : p(), g = null != n || null != c;
+    layout: c,
+    init: u,
+    useNotice: d
+  } = t, f = null == n ? true : n(), p = null == d ? true : d(), _ = null != n;
   return i.useEffect(() => {
-    null == d || d()
-  }, [d]), (0, r.jsxs)(r.Fragment, {
-    children: [null != _ && (0, r.jsx)(s.Y, {
-      title: _,
-      badge: m
+    null == u || u()
+  }, [u]), (0, r.jsxs)(r.Fragment, {
+    children: [null != f && (0, r.jsx)(s.Y, {
+      title: f
     }), (0, r.jsx)("div", {
-      "data-settings-category-key": g ? t.key : true,
+      "data-settings-category-key": _ ? t.key : true,
       "aria-hidden": true,
       style: {
         height: 1
       }
     }), (0, r.jsxs)(a.Kqy, {
       gap: 16,
-      children: [null != h && (0, r.jsx)(l.Z, {
-        notice: h
-      }), u.map(e => (0, r.jsx)(o.Z, {
+      children: [null != p && (0, r.jsx)(l.Z, {
+        notice: p
+      }), c.map(e => (0, r.jsx)(o.Z, {
         node: e
       }, e.key))]
     })]

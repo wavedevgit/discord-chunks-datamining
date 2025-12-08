@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
 
 function c(t) {
   return (0, s.qs)("".concat(u.n.SOUNDS_LIST_ITEM_PREFIX).concat(t.sound), {
-    useTitle: t.useLabel,
+    useTitle: t.useTitle,
     useSubtitle: () => {
       let {
         handlePreviewSound: e

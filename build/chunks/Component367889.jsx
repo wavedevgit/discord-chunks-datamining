@@ -10,28 +10,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk160913 = require("./160913.js"),
   Chunk813732 = require("./813732.jsx"),
   Chunk509613 = require("./509613.js"),
-  Chunk28682 = require("./28682.js"),
+  Chunk970013 = require("./970013.js"),
   Chunk313789 = require("./313789.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let I = (0, Chunk509613.x1)(Chunk313789.n.SUBSCRIPTIONS_PANE, {
+let S = (0, Chunk509613.x1)(Chunk313789.n.SUBSCRIPTIONS_PANE, {
     render: Chunk813732.Z,
     buildLayout: () => []
   }),
-  T = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
+  I = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHX),
-    buildLayout: () => [I]
+    buildLayout: () => [S]
   }),
   g = (0, Chunk509613.m7)(Chunk313789.n.SUBSCRIPTIONS_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHX),
     getLegacySearchKey: () => Chunk726985.s6.SUBSCRIPTIONS,
     icon: Chunk657707.XOf,
     trailing: {
-      type: Chunk28682.PU.STRONGLY_DISCOURAGED_CUSTOM,
-      useDecoration: () => (0, Chunk160913.U)() ? (0, Chunk54381.jsx)(Chunk793030.Mgn, {
+      type: Chunk970013.W.STRONGLY_DISCOURAGED_CUSTOM,
+      useCustomDecoration: () => (0, Chunk160913.U)() ? (0, Chunk54381.jsx)(Chunk793030.Mgn, {
         size: "xs",
         color: Chunk692547.Z.unsafe_rawColors.YELLOW_300
       }) : null
     },
-    buildLayout: () => [T]
+    buildLayout: () => [I]
   })

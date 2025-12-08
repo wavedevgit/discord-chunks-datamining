@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 860171, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  g: () => T
+  g: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk657707 = require("./657707.js"),
@@ -12,22 +12,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk290434 = require("./290434.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let E = (0, Chunk509613.x1)(Chunk313789.n.STREAMER_MODE_PANE, {
+let T = (0, Chunk509613.x1)(Chunk313789.n.STREAMER_MODE_PANE, {
     usePredicate: () => (0, Chunk526665.BK)("StreamerModePane"),
     buildLayout: () => [Chunk290434.R]
   }),
-  S = (0, Chunk509613.x1)(Chunk313789.n.STREAMER_MODE_PANE, {
+  E = (0, Chunk509613.x1)(Chunk313789.n.STREAMER_MODE_PANE, {
     usePredicate: () => !(0, Chunk526665.BK)("StreamerModePane"),
     render: () => (0, Chunk54381.jsx)(Chunk889029.Z, {}),
     buildLayout: () => []
   }),
-  I = (0, Chunk509613.wf)(Chunk313789.n.STREAMER_MODE_PANEL, {
+  S = (0, Chunk509613.wf)(Chunk313789.n.STREAMER_MODE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.S5GfOW),
-    buildLayout: () => (0, Chunk526665.Ml)("StreamerModePanel") ? [E] : [S]
+    buildLayout: () => (0, Chunk526665.Ml)("StreamerModePanel") ? [T] : [E]
   }),
-  T = (0, Chunk509613.m7)(Chunk313789.n.STREAMER_MODE_SIDEBAR_ITEM, {
+  I = (0, Chunk509613.m7)(Chunk313789.n.STREAMER_MODE_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.S5GfOW),
     getLegacySearchKey: () => (0, Chunk526665.Ml)("StreamerModePanel") ? true : Chunk726985.s6.STREAMER_MODE,
     icon: Chunk657707.m3e,
-    buildLayout: () => [I]
+    buildLayout: () => [S]
   })

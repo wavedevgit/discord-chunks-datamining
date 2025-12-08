@@ -18,20 +18,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk910557 = require("./910557.js");
 
 function g(e) {
-  var t;
   let {
-    category: n,
-    onClick: o,
-    active: i
+    category: t,
+    onClick: n,
+    active: o
   } = e, {
-    useTitle: a,
-    useNavigationTitle: s,
-    key: f
-  } = n, b = null == a ? true : a(), y = null != (t = null == s ? true : s()) ? t : b;
-  return c()(null != y, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.mh, {
-    id: f,
+    useTitle: i,
+    key: a
+  } = t, s = null == i ? true : i();
+  return c()(null != s, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.mh, {
+    id: a,
     children: e => {
-      var t, n;
+      var t, i;
       return (0, r.jsx)(d.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -50,23 +48,23 @@ function g(e) {
         }
         return e
       }({
-        onClick: o,
+        onClick: n,
         tag: "li",
         className: l()({
-          [p.active]: i
+          [p.active]: o
         })
-      }, e), n = n = {
-        children: y
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      }, e), i = i = {
+        children: s
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), t), f)
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+      }), t), a)
     }
   })
 }

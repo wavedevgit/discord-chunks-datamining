@@ -49,19 +49,19 @@ function l(e, t, n) {
   var i, o, c, u, d, f;
   let p = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   if (!t.has(e.key)) return null;
-  if (!(0, r.Lk)(e)) return n.register(e, null == (u = p.panel) ? true : u.key, null == (d = p.category) ? true : d.key, null == (f = p.accordion) ? true : f.key), e;
+  if (!(0, r.L)(e)) return n.register(e, null == (u = p.panel) ? true : u.key, null == (d = p.category) ? true : d.key, null == (f = p.accordion) ? true : f.key), e;
   let _ = p;
-  e.type === r.Jq.SIDEBAR_ITEM && (_ = s(a({}, p), {
+  e.type === r.J.SIDEBAR_ITEM && (_ = s(a({}, p), {
     panel: e.layout[0]
-  })), e.type === r.Jq.PANEL && (_ = s(a({}, p), {
+  })), e.type === r.J.PANEL && (_ = s(a({}, p), {
     panel: e
-  })), e.type === r.Jq.CATEGORY && (_ = s(a({}, p), {
+  })), e.type === r.J.CATEGORY && (_ = s(a({}, p), {
     category: e
-  })), e.type === r.Jq.ACCORDION && (_ = s(a({}, p), {
+  })), e.type === r.J.ACCORDION && (_ = s(a({}, p), {
     accordion: e
   }));
   let m = e.layout.map(e => l(e, t, n, _)).filter(e => null != e);
-  if (0 === m.length && !("render" in e || e.type === r.Jq.SIDEBAR_ITEM && "onClick" in e)) return null;
+  if (0 === m.length && !("render" in e || e.type === r.J.SIDEBAR_ITEM && "onClick" in e)) return null;
   let h = s(a({}, e), {
     layout: m
   });

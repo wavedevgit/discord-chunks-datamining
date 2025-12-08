@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk670302 = require("./670302.js");
 
-function T() {
+function I() {
   let t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getModeOptions().autoThreshold),
     e = Chunk473749.useCallback(t => {
       let e = o.Z.getMode(),
@@ -33,8 +33,8 @@ function T() {
       volume: a,
       isSpeaking: c
     } = (0, Chunk269876.Kq)(),
-    T = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isEnabled()),
-    g = Chunk473749.useMemo(() => !T && (0, Chunk54381.jsx)("div", {
+    I = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isEnabled()),
+    g = Chunk473749.useMemo(() => !I && (0, Chunk54381.jsx)("div", {
       className: Chunk670302.noInputDevicesDetectedWarning,
       children: (0, Chunk54381.jsx)(Chunk793030.M14, {
         type: "warning",
@@ -42,7 +42,7 @@ function T() {
           onEnableClick: () => Chunk846027.Z.enable(true)
         })
       })
-    }), [T]),
+    }), [I]),
     _ = Chunk473749.useMemo(() => module ? Chunk388032.intl.string(Chunk388032.t.JsbzjA) : Chunk388032.intl.string(Chunk388032.t.MLmyMY), [module]),
     O = Chunk473749.useId(),
     N = Chunk473749.useId();
@@ -83,7 +83,7 @@ function T() {
       layout: "vertical",
       children: e => t ? (0, i.jsx)(d.NP, {
         isSpeaking: c,
-        className: I.autoThresholdSlider,
+        className: S.autoThresholdSlider,
         id: e.controlId,
         ariaDescribedBy: e.describedById,
         ariaLabelledBy: e.labelId
@@ -103,5 +103,5 @@ let g = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
       e = Chunk131951.Z.isInputProfileCustom();
     return module === Chunk65154.pM.VOICE_ACTIVITY && exports
   }),
-  render: () => (0, Chunk54381.jsx)(T, {})
+  render: () => (0, Chunk54381.jsx)(I, {})
 })

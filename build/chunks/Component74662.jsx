@@ -11,7 +11,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk299886 = require("./299886.js"),
   Chunk773275 = require("./773275.jsx"),
   Chunk509613 = require("./509613.js"),
-  Chunk28682 = require("./28682.js"),
+  Chunk970013 = require("./970013.js"),
   Chunk313789 = require("./313789.js"),
   Chunk620163 = require("./620163.jsx"),
   Chunk55467 = require("./55467.jsx"),
@@ -31,11 +31,6 @@ let _ = (0, Chunk509613.x1)(Chunk313789.n.PRIVATE_BROWSING_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk237396.default.bU5ANm),
     getLegacySearchKey: () => Chunk726985.s6.PRIVATE_BROWSING_PERK,
     icon: Chunk657707.enf,
-    trailing: {
-      type: Chunk28682.PU.BADGE_NEW,
-      getDismissibleContentTypes: Chunk620163._x,
-      badgeComponent: Chunk620163.ec
-    },
     usePredicate: () => {
       let t = (0, Chunk612659.m)(),
         {
@@ -50,5 +45,10 @@ let _ = (0, Chunk509613.x1)(Chunk313789.n.PRIVATE_BROWSING_PANE, {
         });
       return Chunk657707 && (exports || require) && (!module || Chunk54381)
     },
-    buildLayout: () => [O]
+    buildLayout: () => [O],
+    trailing: {
+      type: Chunk970013.W.BADGE_NEW,
+      getDismissibleContentTypes: Chunk620163._x,
+      stronglyDiscouragedBadgeComponent: Chunk620163.ec
+    }
   })

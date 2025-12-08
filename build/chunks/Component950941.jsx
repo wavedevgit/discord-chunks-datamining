@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk28682 = require("./28682.js"),
+  Chunk970013 = require("./970013.js"),
   Chunk388032 = require("./388032.jsx");
 
 function a(e) {
@@ -52,7 +52,7 @@ function s(e) {
 function u(e) {
   let {
     getDismissibleContentTypes: t,
-    badgeComponent: n,
+    stronglyDiscouragedBadgeComponent: n,
     visibleContent: i,
     isSelected: a
   } = e, c = null == t ? true : t(), s = null != i && c.includes(i) && !a, u = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(o.IGR, {
@@ -63,7 +63,7 @@ function u(e) {
 
 function d(e) {
   let {
-    useDecoration: t,
+    useCustomDecoration: t,
     visibleContent: n,
     isSelected: r
   } = e;
@@ -78,14 +78,14 @@ function f(e) {
   } = e;
   if (null == t) return null;
   switch (t.type) {
-    case i.PU.BADGE_COUNT:
+    case i.W.BADGE_COUNT:
       return (0, r.jsx)(s, a({}, t));
-    case i.PU.BADGE_NEW:
+    case i.W.BADGE_NEW:
       return (0, r.jsx)(u, c(a({}, t), {
         visibleContent: n,
         isSelected: o
       }));
-    case i.PU.STRONGLY_DISCOURAGED_CUSTOM:
+    case i.W.STRONGLY_DISCOURAGED_CUSTOM:
       return (0, r.jsx)(d, c(a({}, t), {
         visibleContent: n,
         isSelected: o

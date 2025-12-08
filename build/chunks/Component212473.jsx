@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk183353 = require("./183353.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let T = (0, Chunk509613.x1)(Chunk313789.n.CLIPS_PANE, {
+let I = (0, Chunk509613.x1)(Chunk313789.n.CLIPS_PANE, {
     usePredicate: () => !(0, Chunk526665.BK)("LegacyClipsPane"),
     render: () => (0, Chunk54381.jsx)(Chunk574755.Z, {}),
     buildLayout: () => []
@@ -31,7 +31,7 @@ let T = (0, Chunk509613.x1)(Chunk313789.n.CLIPS_PANE, {
   _ = (0, Chunk509613.wf)(Chunk313789.n.CLIPS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6X),
     useBadge: () => (0, Chunk54381.jsx)(Chunk703288.Z, {}),
-    buildLayout: () => (0, Chunk526665.Ml)("ClipsPanel") ? [g] : [T]
+    buildLayout: () => (0, Chunk526665.Ml)("ClipsPanel") ? [g] : [I]
   }),
   O = (0, Chunk509613.m7)(Chunk313789.n.CLIPS_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.z2jK6X),

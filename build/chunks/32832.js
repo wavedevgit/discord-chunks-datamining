@@ -14,23 +14,23 @@ var Chunk292556 = require("./292556.js"),
   Chunk407458 = require("./407458.js"),
   Chunk388032 = require("./388032.jsx");
 require("./732213.js");
-let E = {
-    useLabel: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
+let T = {
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
     useDisabledMessage: () => (0, Chunk734934.p)() ? Chunk388032.intl.string(Chunk388032.t.cIRG0s) : true
   },
-  S = {
-    useLabel: () => Chunk388032.intl.string(Chunk388032.t.XBrJT6),
+  E = {
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.XBrJT6),
     sound: "call_ringing"
   },
-  I = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
+  S = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV9),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel() && !Chunk292959.Z.getDisableAllSounds()),
     setValue: t => l.default.setNotifyMessagesInSelectedChannel(t),
     useDisabled: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds())
   }),
-  T = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+  I = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOd"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.EAKdPr),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
@@ -40,5 +40,5 @@ let E = {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.ONU22R),
     variant: "separators",
     ContextProvider: Chunk299426.u,
-    buildLayout: () => [(0, Chunk407458.j)(E), I, (0, Chunk407458.j)(S), T]
+    buildLayout: () => [(0, Chunk407458.j)(T), S, (0, Chunk407458.j)(E), I]
   })

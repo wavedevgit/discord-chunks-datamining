@@ -20,7 +20,7 @@ function s(e, t, n) {
         d = (null == (r = e.usePredicate) ? true : r.call(e)) === false && !i || c,
         f = l(e, t, d, null == n ? true : n.legacyMatches) || u,
         p = false;
-      if ((0, o.Lk)(e))
+      if ((0, o.L)(e))
         for (let t of e.layout) p = s(t, d, f) || p;
       return !d && (f || p) && a.add(e.key), f || p
     };
@@ -28,26 +28,21 @@ function s(e, t, n) {
 }
 
 function l(e, t, n, r) {
-  var s, l, c, u, d, f;
-  let p = null == (s = e.getLegacySearchKey) ? true : s.call(e);
-  if (null != p && null != r) return t.length < 2 || r.has(p);
-  if (e.type === o.Jq.SECTION && e.hoisted) returntrue;
-  let _ = "useTitle" in e ? null == (l = e.useTitle) ? true : l.call(e, false) : true,
-    m = "useNavigationTitle" in e ? null == (c = e.useNavigationTitle) ? true : c.call(e) : true,
-    h = "useSearchTerms" in e ? null == (u = e.useSearchTerms) ? true : u.call(e) : true;
-  if (n || null == _ && null == m && null == h) returnfalse;
+  var s, l, c, u;
+  let d = null == (s = e.getLegacySearchKey) ? true : s.call(e);
+  if (null != d && null != r) return t.length < 2 || r.has(d);
+  if (e.type === o.J.SECTION && e.hoisted) returntrue;
+  let f = "useTitle" in e ? null == (l = e.useTitle) ? true : l.call(e, false) : true,
+    p = "useSearchTerms" in e ? null == (c = e.useSearchTerms) ? true : c.call(e) : true;
+  if (n || null == f && null == p) returnfalse;
   if ("" === t) returntrue;
-  let g = t.toLowerCase();
-  for (let e of null != h ? h : [])
-    if (i()(g, e.toLowerCase())) returntrue;
-  let E = false;
-  if (null != _) {
-    let e = null == (d = (0, a.qgQ)(_)) ? true : d.toLowerCase();
-    null != e && (E = i()(g, e))
+  let _ = t.toLowerCase();
+  for (let e of null != p ? p : [])
+    if (i()(_, e.toLowerCase())) returntrue;
+  let m = false;
+  if (null != f) {
+    let e = null == (u = (0, a.qgQ)(f)) ? true : u.toLowerCase();
+    null != e && (m = i()(_, e))
   }
-  if (null != m && !E) {
-    let e = null == (f = (0, a.qgQ)(m)) ? true : f.toLowerCase();
-    null != e && (E = i()(g, e))
-  }
-  return E
+  return m
 }

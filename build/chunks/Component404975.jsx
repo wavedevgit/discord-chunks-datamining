@@ -1,7 +1,7 @@
 /** Chunk was on 88569 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => v
+  P: () => m
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,19 +14,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk724757 = require("./724757.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk984802 = require("./984802.js"),
-  Chunk28682 = require("./28682.js"),
+  Chunk970013 = require("./970013.js"),
   Chunk996435 = require("./996435.js"),
   Chunk854014 = require("./854014.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk845435 = require("./845435.js");
 
-function v(e) {
+function m(e) {
   let {
     root: t,
     header: n,
     footer: i,
     onClose: g,
-    emptyState: v
+    emptyState: m
   } = e, h = p.Z.useField("showNavigationMobile"), x = o.useRef(null), S = o.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
@@ -35,8 +35,8 @@ function v(e) {
       } = t;
       n.forEach(t => {
         if (null != t.trailing) switch (t.trailing.type) {
-          case y.PU.BADGE_NEW:
-          case y.PU.STRONGLY_DISCOURAGED_CUSTOM:
+          case y.W.BADGE_NEW:
+          case y.W.STRONGLY_DISCOURAGED_CUSTOM:
             var n, r, o;
             null == (r = (o = t.trailing).getDismissibleContentTypes) || null == (n = r.call(o)) || n.forEach(t => {
               e.push(t)
@@ -87,12 +87,12 @@ function v(e) {
                 "aria-label": O.intl.string(O.t.cpT0Cq)
               })
             }), (0, r.jsx)("div", {
-              children: P.map(e => (0, r.jsx)(m, {
+              children: P.map(e => (0, r.jsx)(v, {
                 section: e,
                 visibleContent: o,
                 hoisted: true
               }, e.key))
-            }), null != n && (0, r.jsx)(n, {}), null != v && 0 === C.length && (0, r.jsx)(v, {})]
+            }), null != n && (0, r.jsx)(n, {}), null != m && 0 === C.length && (0, r.jsx)(m, {})]
           }), (0, r.jsx)(a.bG, {
             navigator: w,
             children: (0, r.jsx)(a.SJ, {
@@ -142,7 +142,7 @@ function v(e) {
                 }, a), n = n = {
                   children: [(0, r.jsx)("nav", {
                     className: j.nav,
-                    children: C.map(e => (0, r.jsx)(m, {
+                    children: C.map(e => (0, r.jsx)(v, {
                       section: e,
                       visibleContent: o
                     }, e.key))
@@ -166,13 +166,13 @@ function v(e) {
   })
 }
 
-function m(e) {
+function v(e) {
   var t;
   let {
     section: n,
     visibleContent: o,
     hoisted: i = false
-  } = e, l = null == (t = n.useLabel) ? true : t.call(n);
+  } = e, l = null == (t = n.useTitle) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
     className: j.section,
     "aria-label": l,

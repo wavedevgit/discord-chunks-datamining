@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk28682 = require("./28682.js"),
+  Chunk970013 = require("./970013.js"),
   Chunk465061 = require("./465061.js");
 
 function s(e) {
@@ -26,9 +26,9 @@ function l(e) {
   let {
     notice: t
   } = e, {
-    render: n
+    notice: n
   } = t;
-  return n()
+  return (0, r.jsx)(n, {})
 }
 
 function c(e) {
@@ -36,11 +36,11 @@ function c(e) {
     notice: t
   } = e;
   switch (t.type) {
-    case a.y1.INLINE_NOTICE:
+    case a.v.INLINE_NOTICE:
       return (0, r.jsx)(s, {
         notice: t
       });
-    case a.y1.STRONGLY_DISCOURAGED_CUSTOM:
+    case a.v.STRONGLY_DISCOURAGED_CUSTOM:
       return (0, r.jsx)(l, {
         notice: t
       })

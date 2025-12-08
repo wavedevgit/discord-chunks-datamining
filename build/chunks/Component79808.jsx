@@ -24,8 +24,8 @@ function y(e) {
     defaultTarget: g,
     onClose: O,
     sidebarHeader: j,
-    sidebarFooter: v,
-    onPanelChange: m,
+    sidebarFooter: m,
+    onPanelChange: v,
     emptyState: h
   } = e, x = null != p && (null == (t = y.entry(p)) ? true : t.parentPanelKey) != null ? p : g, S = f.Z.useField("currentPanelKey"), [P, C] = o.useState(y), _ = o.useMemo(() => P.get(null != S ? S : x), [P, S, x]), {
     navigateWithValidation: w
@@ -77,11 +77,11 @@ function y(e) {
       })
     };
     r.parentPanelKey !== n ? w(() => {
-      i(), null == m || m(o)
+      i(), null == v || v(o)
     }) : i()
   }, {
     equalityFn: i.X
-  }), [w, m, y]);
+  }), [w, v, y]);
   let k = o.useMemo(() => ({
       visibleDirectory: y,
       accessibleDirectory: P
@@ -95,7 +95,7 @@ function y(e) {
       children: [(0, r.jsx)(s.P, {
         root: n,
         header: j,
-        footer: v,
+        footer: m,
         onClose: N,
         emptyState: h
       }), (0, r.jsx)(c.Z, {

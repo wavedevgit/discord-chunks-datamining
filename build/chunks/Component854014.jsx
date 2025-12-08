@@ -29,8 +29,8 @@ function b(e) {
     icon: g,
     stronglyDiscouragedCustomComponent: O,
     trailing: j,
-    useTitle: v
-  } = s, m = null == v ? true : v();
+    useTitle: m
+  } = s, v = null == m ? true : m();
   return (0, r.jsxs)(o, {
     "data-settings-sidebar-item": b,
     className: f.itemContainer,
@@ -65,7 +65,7 @@ function b(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "currentColor",
-          children: m
+          children: v
         })]
       }), null != j && (0, r.jsx)("div", {
         className: f.itemContent,
@@ -99,7 +99,7 @@ function y(e) {
   }) : t.onClick, y = o.useMemo(() => {
     var e;
     if (!u) return null;
-    let t = (null != (e = null == l ? true : l.layout.flatMap(e => e.layout)) ? e : []).filter(e => null != e.useTitle || null != e.useNavigationTitle);
+    let t = (null != (e = null == l ? true : l.layout.flatMap(e => e.layout)) ? e : []).filter(e => null != e.useTitle);
     return t.length > 1 ? (0, r.jsx)(d.Z, {
       categories: t
     }) : null

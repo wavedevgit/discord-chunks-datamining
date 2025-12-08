@@ -22,7 +22,7 @@ function u(e) {
     accessibleDirectory: m
   } = (0, a.t)(), h = m.entry(p), g = (null == h ? true : h.parentPanelKey) != null ? m.get(h.parentPanelKey) : true, E = null == (n = f.useTitle) ? true : n.call(f), b = null == g || null == (u = g.useTitle) ? true : u.call(g);
   if (null == g) return null;
-  let y = (null == (d = g.parent) ? true : d.type) === o.Jq.SIDEBAR_ITEM ? g.parent.icon : true;
+  let y = (null == (d = g.parent) ? true : d.type) === o.J.SIDEBAR_ITEM ? g.parent.icon : true;
   return (0, r.jsx)(l.x, {
     title: null != E ? E : b,
     description: _,
