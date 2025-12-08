@@ -470,9 +470,10 @@ class tn extends(r = Chunk473749.Component) {
   }
   renderEmbeds(e) {
     let {
-      renderEmbeds: t
+      renderEmbeds: t,
+      hasBailedAst: n
     } = this.props;
-    return 0 !== e.embeds.length && t ? e.embeds.map((t, n) => {
+    return 0 === e.embeds.length || !t || n ? null : e.embeds.map((t, n) => {
       if (ez.b.has(t.type) || (0, eO.l3)(t) || (0, B.b)(t) && !(0, F.M)(e) || (0, eO.jz)(t) || (0, eO.HK)(t)) return null;
       let r = {
         renderImageComponent: eB.Yi,
@@ -490,7 +491,7 @@ class tn extends(r = Chunk473749.Component) {
         }
       }
       return this.renderEmbed(t, n, r, e)
-    }) : null
+    })
   }
   renderComponentAccessories(e) {
     if (0 === e.components.length) return null;
@@ -820,6 +821,7 @@ function tr(e) {
     disableReactionReads: !!C || P.disableReactionReads
   }), e), {
     hasSpoilerEmbeds: e.hasSpoilerEmbeds && j,
+    hasBailedAst: e.hasBailedAst,
     isLurking: h && m,
     isGuest: g && m,
     isPendingMember: E && m,

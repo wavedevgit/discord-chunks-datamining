@@ -18,53 +18,56 @@ function o(e) {
       compact: o = false
     },
     hasSpoilerEmbeds: s,
-    handleContextMenu: l,
-    isInteracting: c,
-    isAutomodBlockedMessage: u,
-    isMessageSnapshot: d,
-    renderThreadAccessory: f,
-    renderSuppressEmbeds: p,
-    renderReactions: _,
-    forceAddReactions: m,
-    disableComponentInteractivity: h,
-    className: g
+    hasBailedAst: l,
+    handleContextMenu: c,
+    isInteracting: u,
+    isAutomodBlockedMessage: d,
+    isMessageSnapshot: f,
+    renderThreadAccessory: p,
+    renderSuppressEmbeds: _,
+    renderReactions: m,
+    forceAddReactions: h,
+    disableComponentInteractivity: g,
+    className: E
   } = e;
-  return u ? null : (0, r.jsx)(i.Z, {
+  return d ? null : (0, r.jsx)(i.Z, {
     message: t,
     children: (0, r.jsx)(a.ZP, {
-      className: g,
-      isInteracting: c,
+      className: E,
+      isInteracting: u,
       message: t,
       channel: n,
       compact: o,
       hasSpoilerEmbeds: s,
-      isMessageSnapshot: d,
-      onMediaItemContextMenu: l,
-      renderThreadAccessory: f,
-      disableComponentInteractivity: h,
-      renderSuppressEmbeds: p,
-      forceAddReactions: m,
-      renderReactions: _
+      hasBailedAst: l,
+      isMessageSnapshot: f,
+      onMediaItemContextMenu: c,
+      renderThreadAccessory: p,
+      disableComponentInteractivity: g,
+      renderSuppressEmbeds: _,
+      forceAddReactions: h,
+      renderReactions: m
     })
   })
 }
 
-function s(e, t) {
+function s(e, t, n) {
   let {
-    message: n,
-    channel: i,
-    compact: o = false,
-    renderThreadAccessory: s,
-    disableReactionCreates: l,
-    disableReactionUpdates: c
+    message: i,
+    channel: o,
+    compact: s = false,
+    renderThreadAccessory: l,
+    disableReactionCreates: c,
+    disableReactionUpdates: u
   } = e;
   return (0, r.jsx)(a.$p, {
-    message: n,
-    channel: i,
-    compact: o,
+    message: i,
+    channel: o,
+    compact: s,
     hasSpoilerEmbeds: t,
-    renderThreadAccessory: s,
-    disableReactionCreates: l,
-    disableReactionUpdates: c
+    hasBailedAst: n,
+    renderThreadAccessory: l,
+    disableReactionCreates: c,
+    disableReactionUpdates: u
   })
 }

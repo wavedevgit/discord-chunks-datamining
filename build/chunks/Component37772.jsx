@@ -98,7 +98,8 @@ let B = Chunk473749.memo(function e(t) {
     } = (0, x.Z)(l),
     {
       content: er,
-      hasSpoilerEmbeds: ei
+      hasSpoilerEmbeds: ei,
+      hasBailedAst: el
     } = (0, I.Z)(s, {
       hideSimpleEmbedContent: X && J,
       allowList: ee,
@@ -106,20 +107,20 @@ let B = Chunk473749.memo(function e(t) {
       allowLinks: true,
       previewLinkTarget: true
     }),
-    el = (0, j.ZP)(s),
-    eo = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
-    ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED && null != q,
-    es = !ea && true === i,
-    ec = (0, P.Z)({
+    eo = (0, j.ZP)(s),
+    ea = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
+    es = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED && null != q,
+    ec = !es && true === i,
+    eu = (0, P.Z)({
       message: s,
       channel: l,
-      enabled: es
+      enabled: ec
     }),
-    eu = (0, c.v)(s),
-    ed = (0, _.ro)(s.id, s.channel_id),
-    ef = (0, f.Z)(s),
-    eh = (0, E.iG)(s);
-  return ea ? (0, r.jsx)(e, U(G({}, t), {
+    ed = (0, c.v)(s),
+    ef = (0, _.ro)(s.id, s.channel_id),
+    eh = (0, f.Z)(s),
+    ep = (0, E.iG)(s);
+  return es ? (0, r.jsx)(e, U(G({}, t), {
     message: Y.message,
     channel: q,
     hasThread: false
@@ -137,13 +138,14 @@ let B = Chunk473749.memo(function e(t) {
     }),
     childrenRepliedMessage: (0, A.Z)(s, l, K, Y, R),
     childrenHeader: (0, Z.Z)(U(G({}, t), {
-      author: el,
+      author: eo,
       guildId: l.guild_id
     })),
     childrenAccessories: (0, r.jsx)(S.BB, {
       channel: l,
       message: s,
       hasSpoilerEmbeds: ei,
+      hasBailedAst: el,
       compact: R,
       canSuppressEmbeds: false,
       canDeleteAttachments: false,
@@ -156,24 +158,24 @@ let B = Chunk473749.memo(function e(t) {
       inlineEmbedMedia: X,
       renderEmbeds: J,
       gifAutoPlay: $,
-      poll: ef,
+      poll: eh,
       showListsAndHeaders: ee,
       showMaskedLinks: ee,
       shouldHideMediaOptions: et,
-      enabledContentHarmTypeFlags: eu,
-      ctaButtonType: ed
+      enabledContentHarmTypeFlags: ed,
+      ctaButtonType: ef
     }),
     childrenExecutedCommand: (0, T.Z)(s, l, R),
     childrenMessageContent: (0, N.Z)(t, er),
     childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: B,
     onClick: V,
-    hasThread: false !== W && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
+    hasThread: false !== W && null != ea && s.hasFlag(D.iLy.HAS_THREAD),
     hasReply: s.type === D.uaV.REPLY,
     isSystemMessage: (0, v.Z)(s),
-    messageRef: ec,
-    author: el,
-    "aria-labelledby": eh,
+    messageRef: eu,
+    author: eo,
+    "aria-labelledby": ep,
     "aria-roledescription": M.intl.string(M.t.BAB0yK)
   })
 });

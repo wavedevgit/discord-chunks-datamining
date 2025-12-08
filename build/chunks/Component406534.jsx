@@ -95,6 +95,7 @@ let ee = Chunk473749.memo(function(e) {
       channel_id: n.id,
       customRenderedContent: {
         hasSpoilerEmbeds: false,
+        hasBailedAst: false,
         content: (0, i.jsx)(h.p, {
           channelId: n.id,
           file: t

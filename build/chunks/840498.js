@@ -50,20 +50,22 @@ function s(e, t) {
   return (null != t.content && (t.content = s(e, t.content, t)), "inlineCode" === t.type && delete t.validationChildContent, "list" === t.type && (t.items = t.items.map(t => Array.isArray(t) ? s(e, t, null) : t)), null != n && t.type === n.type) ? t.content : t
 }
 require.d(exports, {
-  RA: () => c,
-  Rp: () => u,
+  RA: () => u,
+  Rp: () => d,
+  dc: () => c,
   ge: () => s
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
-let l = {};
+let l = {},
+  c = 200;
 
-function c(e) {
+function u(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
-    limit: 200
+    limit: c
   };
   if (Array.isArray(e)) {
     let n = e.length;
     for (let r = 0; r < n; r++) {
-      let n = c(e[r], t);
+      let n = u(e[r], t);
       if (n === l) {
         e.length = r;
         break
@@ -72,16 +74,16 @@ function c(e) {
     }
   } else if ("text" !== e.type) {
     if (t.limit -= 1, t.limit <= 0) return l;
-    Array.isArray(e.content) && (e.content = c(e.content, t)), "list" === e.type && (e.items = e.items.map(e => c(e, t)))
+    Array.isArray(e.content) && (e.content = u(e.content, t)), "list" === e.type && (e.items = e.items.map(e => u(e, t)))
   }
   return e
 }
 
-function u(e) {
+function d(e) {
   return i(e).join("")
 }
 
-function d(e) {
+function f(e) {
   let t = new Set,
     n = [e];
   for (; n.length > 0;) {
@@ -90,12 +92,12 @@ function d(e) {
   }
   return Array.from(t)
 }
-class f extends Error {
+class p extends Error {
   static getMessage(e) {
     return 'MarkupParserNodeTypeError: Unknown AST node type in "'.concat(e.join(", "), '" caused rendering failure')
   }
   constructor(e) {
-    let t = d(e);
-    super(f.getMessage(t)), r(this, "nodeTypes", true), this.nodeTypes = t
+    let t = f(e);
+    super(p.getMessage(t)), r(this, "nodeTypes", true), this.nodeTypes = t
   }
 }

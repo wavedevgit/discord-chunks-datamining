@@ -82,7 +82,8 @@ function R(e) {
     index: s
   } = e, l = i.useMemo(() => (0, I.Z)(n, a), [n, a]), c = m.RS.useSetting(), u = m.NA.useSetting(), E = c && u, b = (0, o.e7)([g.Z], () => g.Z.isDeveloper), y = (0, d.A)((null != (t = l.editedTimestamp) ? t : l.timestamp).valueOf()), {
     content: O,
-    hasSpoilerEmbeds: v
+    hasSpoilerEmbeds: v,
+    hasBailedAst: S
   } = (0, p.Z)(l, {
     hideSimpleEmbedContent: E,
     isInteracting: false,
@@ -92,8 +93,8 @@ function R(e) {
     allowLinks: true,
     allowDevLinks: b,
     previewLinkTarget: true
-  }), S = (0, o.e7)([h.Z], () => h.Z.getChannel(n.channel_id)), T = m.jU.useSetting();
-  return null == S ? null : (0, r.jsxs)("div", {
+  }), T = (0, o.e7)([h.Z], () => h.Z.getChannel(n.channel_id)), A = m.jU.useSetting();
+  return null == T ? null : (0, r.jsxs)("div", {
     className: C.container,
     children: [(0, r.jsx)("div", {
       className: C.quote
@@ -102,14 +103,15 @@ function R(e) {
       children: [(0, r.jsx)(N, {}), (0, r.jsx)(f.ZP, {
         message: l,
         content: O,
-        compact: T
+        compact: A
       }), (0, _.Z)({
         channelMessageProps: {
           message: l,
-          channel: S,
-          compact: T
+          channel: T,
+          compact: A
         },
         hasSpoilerEmbeds: v,
+        hasBailedAst: S,
         isInteracting: false,
         isMessageSnapshot: true,
         renderThreadAccessory: false

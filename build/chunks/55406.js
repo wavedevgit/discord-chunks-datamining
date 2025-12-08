@@ -129,6 +129,7 @@ let N = {
 function P(e, t, n) {
   return {
     hasSpoilerEmbeds: false,
+    hasBailedAst: false,
     content: c.Z.reactParserFor(C(t))(e.content, false, null != n ? {
       changeLog: n
     } : {})

@@ -181,7 +181,8 @@ function V(e) {
     y = (0, _.A)((null != (a = m.editedTimestamp) ? a : m.timestamp).valueOf()),
     {
       content: O,
-      hasSpoilerEmbeds: I
+      hasSpoilerEmbeds: I,
+      hasBailedAst: T
     } = (0, v.Z)(m, {
       hideSimpleEmbedContent: E,
       isInteracting: false,
@@ -192,24 +193,25 @@ function V(e) {
       allowDevLinks: b,
       previewLinkTarget: true
     }),
-    T = (0, o.e7)([N.Z], () => N.Z.getChannel(s.channel_id));
-  return null == T ? null : (0, r.jsx)("div", {
+    C = (0, o.e7)([N.Z], () => N.Z.getChannel(s.channel_id));
+  return null == C ? null : (0, r.jsx)("div", {
     className: G.container,
     children: (0, r.jsxs)("div", {
       className: G.content,
       children: [(0, r.jsx)(F, {
         mergedMessageRecord: m,
         content: O,
-        channel: T,
+        channel: C,
         reportingUserId: null == l || null == (n = l.moderatorReport) ? true : n.reporting_user_id,
         reportedTimestamp: s.timestamp
       }), (0, S.Z)({
         channelMessageProps: {
           message: m,
-          channel: T,
+          channel: C,
           compact: false
         },
         hasSpoilerEmbeds: I,
+        hasBailedAst: T,
         isInteracting: false,
         isMessageSnapshot: true,
         renderThreadAccessory: false,

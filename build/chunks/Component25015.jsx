@@ -43,7 +43,8 @@ function h(e, t) {
     if (null != e.customRenderedContent) return e.customRenderedContent;
     if (e.isUnsupported) return {
       content: p.intl.string(p.t.sWi5EU),
-      hasSpoilerEmbeds: false
+      hasSpoilerEmbeds: false,
+      hasBailedAst: false
     };
     if (e.isCommandType() && 0 === e.content.length || e.hasFlag(f.iLy.LOADING)) return (0, c.Z)(e);
     if (e.type === f.uaV.CHANGELOG) {
@@ -71,7 +72,8 @@ function h(e, t) {
           })
         })
       }),
-      hasSpoilerEmbeds: N
+      hasSpoilerEmbeds: N,
+      hasBailedAst: false
     } : (0, l.ZP)(e, {
       hideSimpleEmbedContent: h,
       formatInline: g,

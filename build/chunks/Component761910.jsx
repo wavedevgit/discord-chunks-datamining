@@ -13,6 +13,7 @@ function a(e) {
     content: (0, r.jsx)(i.ZP, {
       message: e
     }),
-    hasSpoilerEmbeds: false
+    hasSpoilerEmbeds: false,
+    hasBailedAst: false
   }
 }
