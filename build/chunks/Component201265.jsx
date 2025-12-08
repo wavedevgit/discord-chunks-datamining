@@ -53,48 +53,50 @@ function d(e) {
   var {
     confirmText: t,
     cancelText: n,
-    onConfirm: s,
-    onCancel: u,
-    onCloseCallback: d,
-    variant: f = "critical"
-  } = e, p = c(e, ["confirmText", "cancelText", "onConfirm", "onCancel", "onCloseCallback", "variant"]);
+    checkbox: s,
+    onConfirm: u,
+    onCancel: d,
+    onCloseCallback: f,
+    variant: p = "critical"
+  } = e, _ = c(e, ["confirmText", "cancelText", "checkbox", "onConfirm", "onCancel", "onCloseCallback", "variant"]);
   let {
-    i18n: _
-  } = (0, a.ZF)(), m = _.CANCEL, h = _.INLINE_NOTICE_GENERIC_ERROR, [g, E] = i.useState(false), b = i.useRef(d);
+    i18n: m
+  } = (0, a.ZF)(), h = m.CANCEL, g = m.INLINE_NOTICE_GENERIC_ERROR, [E, b] = i.useState(false), y = i.useRef(f);
   i.useLayoutEffect(() => {
-    b.current = d
+    y.current = f
   }), i.useLayoutEffect(() => () => {
     var e;
-    null == (e = b.current) || e.call(b)
+    null == (e = y.current) || e.call(y)
   }, []);
-  let [y, O] = i.useState(true), v = e => {
-    O(e)
+  let [O, v] = i.useState(true), S = e => {
+    v(e)
   };
   return (0, r.jsx)(o.Modal, l({
     actions: [{
-      text: null != n ? n : m,
+      text: null != n ? n : h,
       variant: "secondary",
       onClick: () => {
-        null == u || u(), p.onClose()
+        null == d || d(), _.onClose()
       }
     }, {
       text: t,
-      variant: "primary" === f ? "primary" : "critical-primary",
+      variant: "primary" === p ? "primary" : "critical-primary",
       onClick: async () => {
-        O(true), E(true);
+        v(true), b(true);
         try {
-          await (null == s ? true : s(v)), p.onClose()
+          await (null == u ? true : u(S)), _.onClose()
         } catch (e) {
-          throw E(false), O(e => null != e ? e : h), e
+          throw b(false), v(e => null != e ? e : g), e
         }
       },
-      disabled: g,
-      loading: g
+      disabled: E,
+      loading: E
     }],
+    actionBarInput: s,
     role: "alertdialog",
-    notice: null != y ? {
-      message: y,
+    notice: null != O ? {
+      message: O,
       type: "critical"
     } : true
-  }, p))
+  }, _))
 }

@@ -3,6 +3,7 @@
 "use strict";
 module.exports = {
   emojiSection: "emojiSection_d5cd2d",
+  customEmojiLabel: "customEmojiLabel_d5cd2d",
   primaryEmoji: "primaryEmoji_d5cd2d",
   ctaButton: "ctaButton_d5cd2d",
   guildSection: "guildSection_d5cd2d",

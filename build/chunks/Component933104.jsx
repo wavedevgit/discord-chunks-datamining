@@ -232,7 +232,9 @@ function M(e) {
     actions: [{
       text: E.intl.string(E.t.RzWDqY),
       variant: "primary",
-      onClick: () => (0, d.uL)(O.Z5c.CHANNEL(t, v.oC.GAME_SERVERS))
+      onClick: () => {
+        n(j.L.TAKE_ACTION), (0, d.uL)(O.Z5c.CHANNEL(t, v.oC.GAME_SERVERS))
+      }
     }],
     markAsDismissed: n
   })

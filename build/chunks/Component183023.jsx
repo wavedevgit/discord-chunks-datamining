@@ -35,7 +35,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk889564 = require("./889564.js"),
   Chunk687476 = require("./687476.js"),
   Chunk761966 = require("./761966.jsx"),
-  Chunk563927 = require("./563927.js"),
   Chunk98278 = require("./98278.js"),
   Chunk767714 = require("./767714.jsx"),
   Chunk703656 = require("./703656.js"),
@@ -47,6 +46,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk900849 = require("./900849.js"),
   Chunk74538 = require("./74538.js"),
   Chunk886132 = require("./886132.js"),
+  Chunk323810 = require("./323810.js"),
   Chunk524444 = require("./524444.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
@@ -104,9 +104,10 @@ let J = 32,
     } = e;
     (0, I.u)({
       emojiId: t.emojiId,
-      currentGuildId: j.Z.getGuildId()
+      currentGuildId: L.Z.getGuildId()
     });
-    let n = (0, R.Z)(t.name);
+    let n = (0, B.Z)(t.name),
+      i = n !== t.name;
     return (0, r.jsx)(c.V, {
       children: (0, r.jsx)(F.W_, {
         children: (0, r.jsxs)(b.Z, {
@@ -124,7 +125,10 @@ let J = 32,
             children: [(0, r.jsx)(p.Text, {
               className: K.__invalid_emojiName,
               variant: "text-md/semibold",
-              children: (0, r.jsx)(u.Z, {
+              children: i ? (0, r.jsx)("div", {
+                className: K.customEmojiLabel,
+                children: n
+              }) : (0, r.jsx)(u.Z, {
                 children: n
               })
             }), (0, r.jsx)(p.Text, {
@@ -145,13 +149,13 @@ let J = 32,
       id: a,
       icon: s,
       name: l
-    } = t, c = J, d = U.ZP.getGuildIconURL({
+    } = t, c = J, d = k.ZP.getGuildIconURL({
       id: a,
       icon: s,
       size: c,
       canAnimate: true
     }), f = (n = null == n || n) || t.isDiscoverable(), _ = () => {
-      t.isDiscoverable() ? (0, G.Ub)(a, {}) : n && (0, x.uL)(V.Z5c.CHANNEL(a, L.Z.getChannelId(a)))
+      t.isDiscoverable() ? (0, U.Ub)(a, {}) : n && (0, D.uL)(V.Z5c.CHANNEL(a, x.Z.getChannelId(a)))
     }, m = () => null != d && f ? (0, r.jsxs)(p.P3F, {
       "aria-label": l,
       onClick: _,
@@ -275,12 +279,12 @@ let J = 32,
       expressionSourceGuild: v,
       joinedEmojiSourceGuildRecord: T,
       closePopout: A,
-      onToggleShowMoreEmojis: R,
+      onToggleShowMoreEmojis: D,
       guildEmoji: x,
-      demoMode: L = false,
+      demoMode: k = false,
       nonce: U
-    } = e, G = (0, l.e7)([M.default], () => M.default.getCurrentUser()), z = (0, l.e7)([j.Z], () => j.Z.getGuildId()), q = Z.ZP.isPremium(G), Q = null != z && (z === (null == v ? true : v.id) || z === (null == T ? true : T.id)), X = null != T, J = null != (t = null == v ? true : v.isDiscoverable()) && t;
-    L && (q = true, J = true, X = false, Q = false);
+    } = e, B = (0, l.e7)([j.default], () => j.default.getCurrentUser()), z = (0, l.e7)([L.Z], () => L.Z.getGuildId()), q = G.ZP.isPremium(B), Q = null != z && (z === (null == v ? true : v.id) || z === (null == T ? true : T.id)), X = null != T, J = null != (t = null == v ? true : v.isDiscoverable()) && t;
+    k && (q = true, J = true, X = false, Q = false);
     let $ = ee(),
       {
         isRoleSubscriptionEmoji: et,
@@ -310,8 +314,8 @@ let J = 32,
     }, {
       disableTrack: !et
     });
-    let el = j.Z.getGuildId(),
-      ec = (0, B.a)({
+    let el = L.Z.getGuildId(),
+      ec = (0, Z.a)({
         sourceType: d,
         expressionSourceApplication: y,
         isPremium: q,
@@ -323,10 +327,10 @@ let J = 32,
         isDiscoverable: J,
         shouldHideRoleSubscriptionCTA: eo,
         onOpenPremiumSettings: () => {
-          A(), k.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
+          A(), M.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
             location_page: $.page,
             location_section: $.section
-          }), (0, w.z)()
+          }), (0, R.z)()
         }
       }),
       eu = X && er && !eo && (q && et || !q),
@@ -337,13 +341,13 @@ let J = 32,
         popoutData: ec,
         emojiSourceGuildId: null == v ? true : v.id,
         nonce: U,
-        demoMode: L
+        demoMode: k
       }),
-      ep = ec.type === B.$.JOIN_GUILD,
-      e_ = ec.type === B.$.GET_PREMIUM,
+      ep = ec.type === Z.$.JOIN_GUILD,
+      e_ = ec.type === Z.$.GET_PREMIUM,
       em = () => {
         let e = async () => {
-          if (L || null == v || X) return;
+          if (k || null == v || X) return;
           A();
           let e = v.id;
           try {
@@ -353,7 +357,7 @@ let J = 32,
           A(), (null == T ? true : T.id) != null && _.Z.transitionToGuildSync(T.id, {
             sourceLocationStack: [h.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL]
           }, H.oC.ROLE_SUBSCRIPTIONS)
-        }, n = !X && J, i = () => e_ ? (0, r.jsx)(D.Z, {
+        }, n = !X && J, i = () => e_ ? (0, r.jsx)(w.Z, {
           className: K.ctaButton,
           subscriptionTier: Y.Si.TIER_2,
           size: f.zx.Sizes.SMALL,
@@ -411,7 +415,7 @@ let J = 32,
         var e, t;
         let n = null != v && !X && J && (null != (t = null == v || null == (e = v.emojis) ? true : e.length) ? t : 0) > 1,
           i = () => {
-            n && (null == R || R(), eh || L || k.default.track(V.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!eh))
+            n && (null == D || D(), eh || k || M.default.track(V.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!eh))
           },
           a = () => {
             let e = W.intl.string(W.t.pnsAS2);
@@ -484,8 +488,8 @@ let J = 32,
     }), e.id)), {
       type: f,
       description: _
-    } = o, h = () => f === B.$.GET_PREMIUM ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(D.Z, {
+    } = o, h = () => f === Z.$.GET_PREMIUM ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(w.Z, {
         subscriptionTier: Y.Si.TIER_2,
         textOptions: {
           textOverride: o.text
@@ -501,7 +505,7 @@ let J = 32,
           children: _
         })
       })]
-    }) : f === B.$.JOIN_GUILD ? (0, r.jsx)("div", {
+    }) : f === Z.$.JOIN_GUILD ? (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: K.ctaButton,
       children: (0, r.jsx)(p.Button, {
@@ -510,7 +514,7 @@ let J = 32,
         text: o.text,
         fullWidth: true,
         onClick: () => {
-          (0, G.Ub)(i.id, {})
+          (0, U.Ub)(i.id, {})
         }
       })
     }) : null;
