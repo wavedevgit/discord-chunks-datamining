@@ -12,7 +12,7 @@ var Chunk327432 = require("./327432.js"),
 
 function l(e) {
   return e.setFragmentData = t => {
-    if (null != e.selection) {
+    if (null != e.selection && !s.Jz.equals(e.selection.anchor, e.selection.focus)) {
       let n = (0, a.sk)(s.bN.richValue(e), {
         mode: "plain",
         range: e.selection,
