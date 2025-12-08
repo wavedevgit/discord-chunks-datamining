@@ -4,7 +4,7 @@
 require.d(exports, {
   e: () => h,
   t: () => g
-}), require("./388685.js"), require("./35282.js");
+}), require("./35282.js"), require("./388685.js");
 var Chunk772848 = require("./772848.js"),
   Chunk579806 = require("./579806.js"),
   Chunk626135 = require("./626135.js"),
@@ -67,14 +67,19 @@ class _ {
     })
   }
   trackTTI() {
-    window.__TTI_COMPLETED || (window.__TTI_COMPLETED = true, requestIdleCallback(() => {
+    var e, t, n;
+    if (window.__TTI_COMPLETED) return;
+    window.__TTI_COMPLETED = true;
+    let r = null == (n = window.location) || null == (t = require.pathname) || null == (e = exports.split("/")) ? true : module[1];
+    requestIdleCallback(() => {
       let e = p();
       Chunk218543.Z.firstRenderAfterReadyPayload.record();
       let t = Chunk218543.Z.serializeWebPerfStartupMetrics(module);
       Chunk626135.default.track(Chunk981631.rMx.APP_WEB_PERF_STARTUP_METRICS, u({
-        load_id: this.loadId
+        load_id: this.loadId,
+        url_root_path: Chunk772848
       }, exports))
-    }))
+    })
   }
   trackAppUIViewed(e) {
     if (!this.appUIViewed) {

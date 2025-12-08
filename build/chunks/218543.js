@@ -292,6 +292,7 @@ class h extends m {
   }
   serializeWebPerfStartupMetrics(e) {
     return l(o({}, this.serializeAppStartupMetrics()), {
+      was_authenticated: this.wasAuthenticated,
       time_first_render_after_ready_end: this.firstRenderAfterReadyPayload.serialize(e)
     })
   }
