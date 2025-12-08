@@ -189,11 +189,14 @@ function V(e) {
           ref: H,
           children: Q
         }));
-        return (0, r.jsx)(_.Z, {
-          targetElementRef: H,
-          mode: "tooltip",
-          tooltipDelay: w.vB,
-          children: n
+        return (0, r.jsx)("div", {
+          "aria-label": e.description,
+          children: (0, r.jsx)(_.Z, {
+            targetElementRef: H,
+            mode: "tooltip",
+            tooltipDelay: w.vB,
+            children: n
+          })
         }, "".concat(e.id, "-").concat(t))
       }
       if (C) {
@@ -217,20 +220,23 @@ function V(e) {
             onClick: i
           }] : true,
           l = a ? 262 : 220;
-        return (0, r.jsx)(m.Z, {
-          badgeId: e.id,
-          targetElementRef: H,
-          mode: "tooltip",
-          tooltipDelay: w.vB,
-          body: e.description,
-          actions: o,
-          onShow: () => {
-            I.default.track(D.rMx.TOOLTIP_VIEWED, {
-              type: "tiered_tenure_badge_profile_" + (p ? "self" : "other")
-            })
-          },
-          estimatedTooltipHeight: l,
-          children: n
+        return (0, r.jsx)("div", {
+          "aria-label": e.description,
+          children: (0, r.jsx)(m.Z, {
+            badgeId: e.id,
+            targetElementRef: H,
+            mode: "tooltip",
+            tooltipDelay: w.vB,
+            body: e.description,
+            actions: o,
+            onShow: () => {
+              I.default.track(D.rMx.TOOLTIP_VIEWED, {
+                type: "tiered_tenure_badge_profile_" + (p ? "self" : "other")
+              })
+            },
+            estimatedTooltipHeight: l,
+            children: n
+          })
         }, "".concat(e.id, "-").concat(t))
       }
       let et = (0, r.jsx)(s.Anchor, B(G({}, ee), {

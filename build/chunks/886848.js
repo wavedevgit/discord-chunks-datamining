@@ -22,11 +22,13 @@ var s = function(e) {
 }({});
 class l extends Chunk47770.Z {
   destroy() {
-    this.removeAllListeners(), this.destroyStreams()
+    let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+    this.removeAllListeners(), this.destroyStreams(module)
   }
   destroyStreams() {
-    var e;
-    this.audio.destroy(), this.video.destroy(), null == (e = this.desktop) || module.destroy()
+    var e, t;
+    let n = arguments.length > 0 && true !== arguments[0] && arguments[0];
+    this.audio.destroy(), this.video.destroy(), require ? null == (e = this.desktop) || module.reuse() : null == (t = this.desktop) || exports.destroy()
   }
   setDesktop(e) {
     this.destroyStreams(), null == e || e.addListener("desktopsourceend", this.handleDesktopSourceEnd), null == e || e.addListener("speaking", this.handleSpeaking), this.desktop = e, this.mergeStreams()

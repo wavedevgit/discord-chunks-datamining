@@ -45,28 +45,28 @@ let C = {
       logoStyleOverrides: E,
       heroLogo: v,
       heroBannerStatic: S,
-      heroBannerAnimated: O
-    } = (0, g.hr)(l), x = null != (t = null == b ? true : b.responsive) && t, y = null == b ? true : b.backgroundStyle;
+      heroBannerAnimated: x
+    } = (0, g.hr)(l), O = null != (t = null == b ? true : b.responsive) && t, y = null == b ? true : b.backgroundStyle;
     return null != _ && (n || l !== C) ? (0, r.jsxs)("div", {
       ref: h,
       className: m.heroBlock,
       children: [(0, r.jsx)("div", {
         className: i()(m.banner, {
-          [m.responsive]: x
+          [m.responsive]: O
         }),
         style: null != y ? {
           background: y
         } : true,
         children: null != S && (0, r.jsx)(f.Z, {
           bannerStatic: S,
-          bannerAnimated: O,
-          isResponsive: x
+          bannerAnimated: x,
+          isResponsive: O
         })
       }), (0, r.jsxs)("div", {
         className: m.heroBlockContent,
         children: [(0, r.jsx)("div", {
           className: i()(m.heroHeaderContainer, {
-            [m.responsive]: x
+            [m.responsive]: O
           }),
           children: n ? (0, r.jsx)("div", {
             className: m.heroHeaderBadgeLogoSummaryContainer

@@ -46,9 +46,9 @@ function l(e, t) {
   }), e
 }
 class c extends Chunk836560.EventEmitter {
-  static async get(e, t) {
-    var n;
-    let r = {
+  static async get(e, t, n) {
+    var r;
+    let i = {
       audio: t && {
         echoCancellation: false,
         noiseSuppression: false,
@@ -58,8 +58,11 @@ class c extends Chunk836560.EventEmitter {
         frameRate: 30
       })
     };
-    if ((null == (n = navigator.mediaDevices) ? true : n.getDisplayMedia) != null) return new c(await navigator.mediaDevices.getDisplayMedia(r));
+    if ((null == (r = navigator.mediaDevices) ? true : r.getDisplayMedia) != null) return new c(await navigator.mediaDevices.getDisplayMedia(i), n);
     throw Error("UNKNOWN")
+  }
+  reuse() {
+    this.removeAllListeners(), this.pool.release(this)
   }
   destroy() {
     this.removeAllListeners(), (0, Chunk376398.jC)(this.streamId), this.stream.getTracks().forEach(e => e.stop())
@@ -73,11 +76,11 @@ class c extends Chunk836560.EventEmitter {
   refreshSpeaking() {
     this.emit("speaking", this.stream.getAudioTracks().some(e => e.enabled))
   }
-  constructor(e) {
-    super(), a(this, "id", true), a(this, "stream", true), a(this, "streamId", true), e.getVideoTracks().forEach(e => {
+  constructor(e, t) {
+    super(), a(this, "id", true), a(this, "stream", true), a(this, "pool", true), a(this, "streamId", true), e.getVideoTracks().forEach(e => {
       e.onended = () => {
         this.emit("desktopsourceend")
       }
-    }), this.id = e.getVideoTracks()[0].label, this.stream = e, this.streamId = (0, i.N7)(e)
+    }), this.id = e.getVideoTracks()[0].label, this.stream = e, this.streamId = (0, i.N7)(e), this.pool = t
   }
 }

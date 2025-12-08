@@ -1,1 +1,0 @@
-{"id":"587792","type":"experiment","data":{"kind":"user","id":"2025-02_shop_paired_deco_upsell","label":"Shop Paired Deco Upsell Experiment","defaultConfig":{"showPairedDecoUpsell":false},"treatments":[{"id":1,"label":"Show paired deco upsell","config":{"showPairedDecoUpsell":true}}],"commonTriggerPoint":"Chunk987338.$P.COLLECTIBLES_SHOP_OPEN"},"fromModule":{"id":"45620"}}

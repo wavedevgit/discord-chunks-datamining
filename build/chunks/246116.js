@@ -54,7 +54,7 @@ function u(e) {
     o = r.useContext(a.S),
     l = null != (t = n.keyboardModeEnabled) ? t : o.keyboardModeEnabled,
     u = r.useRef(false);
-  u.current = !l;
+  u.current = !l || true === n.disable;
   let d = r.useMemo(() => {
       var t, r, i;
       return null != (i = null != (r = n.attachTo) ? r : null == (t = e.current) ? true : t.ownerDocument) ? i : document

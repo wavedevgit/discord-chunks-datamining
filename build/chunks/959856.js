@@ -18,11 +18,11 @@ var Chunk512722 = require("./512722.js"),
   Chunk970838 = require("./970838.js"),
   Chunk68721 = require("./68721.js"),
   Chunk997653 = require("./997653.js"),
-  Chunk384136 = require("./384136.js"),
   Chunk740197 = require("./740197.js"),
   Chunk548820 = require("./548820.js"),
   Chunk586021 = require("./586021.js"),
   Chunk579237 = require("./579237.js"),
+  Chunk867985 = require("./867985.js"),
   Chunk582168 = require("./582168.jsx"),
   Chunk825040 = require("./825040.jsx"),
   Chunk65154 = require("./65154.js"),
@@ -39,7 +39,8 @@ function A(e, t, n) {
 let C = new Chunk579092.Yd("MediaEngineWebRTC");
 class N extends Chunk47770.Z {
   destroy() {
-    null != this.voiceActivityInput && (this.voiceActivityInput.destroy(), this.voiceActivityInput = null), this.eachConnection(e => e.destroy()), this.emit(Chunk46973.aB.Destroy), this.removeAllListeners()
+    let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+    null != this.voiceActivityInput && (this.voiceActivityInput.destroy(), this.voiceActivityInput = null), this.eachConnection(t => t.destroy(e)), this.emit(Chunk46973.aB.Destroy), this.removeAllListeners()
   }
   interact() {
     this.interacted || (document.createElement("audio").play(), this.interacted = true), this.eachConnection(e => e.interact())
@@ -53,9 +54,9 @@ class N extends Chunk47770.Z {
   supports(e) {
     switch (e) {
       case I.AN.AUDIO_INPUT_DEVICE:
-        return E.S5;
+        return g.S5;
       case I.AN.AUDIO_OUTPUT_DEVICE:
-        return E.ZA;
+        return g.ZA;
       case I.AN.VIDEO:
         return T.U8;
       case I.AN.DESKTOP_CAPTURE:
@@ -185,9 +186,8 @@ class N extends Chunk47770.Z {
     e("")
   }
   async getDesktopSource(e) {
-    let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = await g.Z.get(e, t);
-    return this.pendingDesktopInputs[n.id] = n, n.id
+    let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
+    return (await this.desktopInputPool.acquire(e, t)).id
   }
   getScreenPreviews(e, t) {
     return Promise.reject(Error("UNSUPPORTED"))
@@ -218,10 +218,11 @@ class N extends Chunk47770.Z {
     else if (null != e.desktopDescription && null != this.findConnection(t)) {
       i()(t === I.Yn.STREAM, "Go live context is not STREAM");
       let n = false,
-        r = this.pendingDesktopInputs[e.desktopDescription.id];
-      null != r && this.eachConnection(e => {
+        r = this.desktopInputPool.get(e.desktopDescription.id);
+      if (null == r) return;
+      this.eachConnection(e => {
         e.streamUserId === e.userId && (n = true, e.setDesktopInput(r))
-      }, t), n && delete this.pendingDesktopInputs[e.desktopDescription.id]
+      }, t), n || this.desktopInputPool.release(r)
     }
   }
   setClipsSource(e) {}
@@ -247,7 +248,7 @@ class N extends Chunk47770.Z {
   }
   setAudioInputBypassSystemProcessing(e) {}
   setLoopback(e, t) {
-    e && null == this.loopback ? (this.enable(), this.loopback = new O.Z(this.getAudioContext(), this.sourceId, this.sinkId), this.loopback.setNoiseCancellation(t.noiseCancellation)) : e || null == this.loopback || (this.loopback.stop(), this.loopback = null)
+    e && null == this.loopback ? (this.enable(), this.loopback = new y.Z(this.getAudioContext(), this.sourceId, this.sinkId), this.loopback.setNoiseCancellation(t.noiseCancellation)) : e || null == this.loopback || (this.loopback.stop(), this.loopback = null)
   }
   getLoopback() {
     return null != this.loopback
@@ -304,16 +305,16 @@ class N extends Chunk47770.Z {
   }
   showSystemCaptureConfigurationUI(e) {}
   fetchAsyncResources(e) {
-    return e.fetchDave ? (0, y.IT)() ? (0, y.Ft)() ? new Promise((e, t) => {
-      (0, y.D5)().then(t => {
-        this.dave = t, this.transientKeys = (0, y.Yk)(), this.maxSupportedProtocolVersion = t.MaxSupportedProtocolVersion(), C.info("Successfully initialized DAVE, version:", this.maxSupportedProtocolVersion), e()
+    return e.fetchDave ? (0, b.IT)() ? (0, b.Ft)() ? new Promise((e, t) => {
+      (0, b.D5)().then(t => {
+        this.dave = t, this.transientKeys = (0, b.Yk)(), this.maxSupportedProtocolVersion = t.MaxSupportedProtocolVersion(), C.info("Successfully initialized DAVE, version:", this.maxSupportedProtocolVersion), e()
       }).catch(e => {
         this.maxSupportedProtocolVersion = 0, C.error("Failed to initialize DAVE", e), t(e)
       })
     }) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("WebAssembly is not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("Encoded transforms are not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.resolve())
   }
   constructor() {
-    super(), A(this, "Video", Chunk825040.Z), A(this, "Camera", Chunk582168.Z), A(this, "_audioContext", null), A(this, "outputVolume", Chunk65154.Qx), A(this, "sourceId", Chunk65154.w5), A(this, "sinkId", Chunk65154.w5), A(this, "videoInputDeviceId", Chunk65154.Av), A(this, "enabled", false), A(this, "connections", new Set), A(this, "interacted", false), A(this, "loopback", null), A(this, "voiceActivityInput", null), A(this, "pendingDesktopInputs", {}), A(this, "enablePromise", null), A(this, "dave", null), A(this, "transientKeys", null), A(this, "maxSupportedProtocolVersion", null), A(this, "handleActiveSinksChange", (e, t) => {
+    super(), A(this, "Video", Chunk825040.Z), A(this, "Camera", Chunk582168.Z), A(this, "_audioContext", null), A(this, "outputVolume", Chunk65154.Qx), A(this, "sourceId", Chunk65154.w5), A(this, "sinkId", Chunk65154.w5), A(this, "videoInputDeviceId", Chunk65154.Av), A(this, "enabled", false), A(this, "connections", new Set), A(this, "interacted", false), A(this, "loopback", null), A(this, "voiceActivityInput", null), A(this, "desktopInputPool", new Chunk867985.Z), A(this, "enablePromise", null), A(this, "dave", null), A(this, "transientKeys", null), A(this, "maxSupportedProtocolVersion", null), A(this, "handleActiveSinksChange", (e, t) => {
       this.connections.forEach(n => n.setHasActiveVideoOutputSink(e, t, "MediaEngineWebRTC.handleActiveSinksChange"))
     }), A(this, "handleNewListener", e => {
       switch (e) {

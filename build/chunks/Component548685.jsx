@@ -44,22 +44,22 @@ let N = e => {
     tab: R,
     buttonContainerClassName: Z,
     orbsSupportedOnly: w
-  } = e, D = (0, o.e7)([f.default], () => f.default.getCurrentUser()), H = h.ZP.canUseCollectibles(D), M = (0, k.B)("FeedBlock"), {
+  } = e, H = (0, o.e7)([f.default], () => f.default.getCurrentUser()), D = h.ZP.canUseCollectibles(H), M = (0, k.B)("FeedBlock"), {
     sortType: F,
     setSortType: W,
     sortedItems: U,
     sortOptions: V,
     shuffleProducts: z,
     showRecommendationOption: G
-  } = (0, x.Z)({
+  } = (0, O.Z)({
     sortedSkuIds: N,
-    isPremiumUser: H,
+    isPremiumUser: D,
     prioritizeUserDiscounts: P,
     orbsSupportedOnly: w
   }), K = (0, y.St)(U), Y = (0, o.e7)([g.Z], () => g.Z.useReducedMotion), q = (0, o.e7)([p.Z], () => p.Z.isFocused()), Q = !Y && q, {
     animationPhase: J,
     startAnimation: X
-  } = (0, O.y)(), $ = (0, _.sp)(), ee = null != (t = null == $ ? true : $.sessionId) ? t : "", et = l.useRef(null), en = l.useCallback(e => {
+  } = (0, x.y)(), $ = (0, _.sp)(), ee = null != (t = null == $ ? true : $.sessionId) ? t : "", et = l.useRef(null), en = l.useCallback(e => {
     X({
       isShuffling: false,
       onOutroComplete: () => W(e)
@@ -68,7 +68,7 @@ let N = e => {
       sort_type: e
     })
   }, [X, W, ee]);
-  return null == D ? null : (0, r.jsxs)("div", {
+  return null == H ? null : (0, r.jsxs)("div", {
     className: s()(B.popularPicksSection, B.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: B.blockHeader,
@@ -123,7 +123,7 @@ let N = e => {
                 page_session_id: ee
               })
             },
-            disabled: J !== O.g.MOUNTED && J !== O.g.FINISHED
+            disabled: J !== x.g.MOUNTED && J !== x.g.FINISHED
           })
         })]
       })]
@@ -135,13 +135,13 @@ let N = e => {
         let n, l = b.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (Q)
-          if (J === O.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
+          if (J === x.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
             className: B.shuffleOutro,
             children: (0, r.jsx)(S.Z, {
               skipPulseAnimation: true
             })
           }, "".concat(e.skuId, "-").concat(t));
-          else J === O.g.SORT_OUT ? n = B.sortChangedOutro : J === O.g.SHUFFLE_IN ? n = B.shuffleIntro : J === O.g.SORT_IN && (n = B.sortChangedIntro);
+          else J === x.g.SORT_OUT ? n = B.sortChangedOutro : J === x.g.SHUFFLE_IN ? n = B.shuffleIntro : J === x.g.SORT_IN && (n = B.sortChangedIntro);
         return (0, r.jsx)(_.k0, {
           newValue: {
             tilePosition: t,

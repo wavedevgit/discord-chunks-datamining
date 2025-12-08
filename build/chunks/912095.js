@@ -48,8 +48,9 @@ class E extends Chunk839548.Z {
     this.input.resumeAudio()
   }
   destroy() {
+    let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     for (let e of (super.destroy(), Object.keys(this.outputs))) this.destroyOutput(module);
-    this.input.destroy()
+    this.input.destroy(module)
   }
   async getStats() {
     if (!Chunk436620.Fo) return null;

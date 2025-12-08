@@ -50,9 +50,9 @@ let y = e => {
     {
       bannerURL: w
     } = (0, _.UI)(y),
-    D = k === b.AW.ORBS,
-    H = null != y.ctaRoute && "" !== y.ctaRoute,
-    M = true !== y.disableCta && (null != y.ctaText && "" !== y.ctaText || H),
+    H = k === b.AW.ORBS,
+    D = null != y.ctaRoute && "" !== y.ctaRoute,
+    M = true !== y.disableCta && (null != y.ctaText && "" !== y.ctaText || D),
     F = null != y.logoURL && "" !== y.logoURL,
     W = l.useCallback(() => {
       if (A(true), y.isDismissible) {
@@ -93,23 +93,23 @@ let y = e => {
       }
     }, [y.ctaRoute, U]);
   if (null == w || N) return null;
-  let z = s()(x.row, x.between, x.bannerBlockContainer, x.centeredSection, {
-      [x.extraRounded]: D,
-      [x.bannerBlockContainerClickable]: H
+  let z = s()(O.row, O.between, O.bannerBlockContainer, O.centeredSection, {
+      [O.extraRounded]: H,
+      [O.bannerBlockContainerClickable]: D
     }),
     G = (0, r.jsxs)(r.Fragment, {
       children: [y.isDismissible && (0, r.jsx)("div", {
-        className: x.wideBannerCloseButton,
+        className: O.wideBannerCloseButton,
         children: (0, r.jsx)(c.PZ7, {
           size: "sm",
           onClick: e => {
             e.stopPropagation(), W()
           },
-          "aria-label": O.intl.string(O.t.WAI6xu)
+          "aria-label": x.intl.string(x.t.WAI6xu)
         })
       }), (0, r.jsx)("div", {
-        className: s()(x.wideBannerBackgroundImg, {
-          [x.extraRounded]: D
+        className: s()(O.wideBannerBackgroundImg, {
+          [O.extraRounded]: H
         }),
         style: null != L ? {
           height: "".concat(L, "px")
@@ -118,24 +118,24 @@ let y = e => {
           ref: I,
           src: w,
           alt: y.title,
-          className: s()(x.wideBannerArt, {
-            [x.wideBannerArtOrbs]: D
+          className: s()(O.wideBannerArt, {
+            [O.wideBannerArtOrbs]: H
           })
         })
       }), (0, r.jsx)("div", {
-        className: s()(x.wideBannerContentContainer, {
-          [x.wideBannerWithCTAContentContainer]: M
+        className: s()(O.wideBannerContentContainer, {
+          [O.wideBannerWithCTAContentContainer]: M
         }),
         style: {
           maxHeight: null != L ? "".concat(L, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
-          className: x.wideBannerTextContainer,
+          className: O.wideBannerTextContainer,
           children: [(0, r.jsx)(c.Heading, {
             style: {
               color: null != (n = y.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: D ? x.wideBannerOrbsHeading : true,
+            className: H ? O.wideBannerOrbsHeading : true,
             variant: "heading-xl/bold",
             children: y.title
           }), (0, r.jsx)(c.Text, {
@@ -143,35 +143,35 @@ let y = e => {
               color: "var(--text-muted)"
             },
             lineClamp: 2,
-            variant: D ? "text-md/medium" : "text-sm/medium",
-            children: D ? O.intl.format(O.t.SFFP7K, {
+            variant: H ? "text-md/medium" : "text-sm/medium",
+            children: H ? x.intl.format(x.t.SFFP7K, {
               helpdeskArticle: p.Z.getArticleURL(E.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : y.body
           }), M && (0, r.jsxs)("div", {
-            className: x.wideBannerCtaContainer,
+            className: O.wideBannerCtaContainer,
             children: [(0, r.jsx)(c.Button, {
               variant: "overlay-primary",
               onClick: e => {
                 var t;
-                e.stopPropagation(), V(null != (t = y.ctaText) ? t : O.intl.string(O.t.jVcuVY))
+                e.stopPropagation(), V(null != (t = y.ctaText) ? t : x.intl.string(x.t.jVcuVY))
               },
-              text: null != (i = y.ctaText) ? i : O.intl.string(O.t.jVcuVY)
+              text: null != (i = y.ctaText) ? i : x.intl.string(x.t.jVcuVY)
             }), F && (0, r.jsx)("img", {
               src: y.logoURL,
               alt: "",
-              className: x.wideBannerLogo
+              className: O.wideBannerLogo
             })]
           })]
         })
       })]
     });
   return (0, r.jsx)(c.f6W, {
-    theme: D ? true : S.BR.DARK,
+    theme: H ? true : S.BR.DARK,
     children: e => (0, r.jsx)(a.$, {
       innerRef: j,
       onChange: R,
       threshold: 0,
-      children: H ? (0, r.jsx)(c.P3F, {
+      children: D ? (0, r.jsx)(c.P3F, {
         innerRef: j,
         onClick: () => V(null),
         className: s()(e, z),

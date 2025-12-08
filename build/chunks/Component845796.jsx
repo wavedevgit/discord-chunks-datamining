@@ -46,7 +46,7 @@ let b = () => {
       label: C.intl.string(C.t.Y68e5p),
       value: "popularity"
     }
-  }, []), O = Chunk473749.useCallback(e => ({
+  }, []), x = Chunk473749.useCallback(e => ({
     recent: {
       sortType: a.E.RECENCY,
       sortDirection: o.F.DESC
@@ -67,8 +67,8 @@ let b = () => {
       sortType: a.E.RELEVANCE,
       sortDirection: o.F.DESC
     }
-  })[e], []), x = Chunk473749.useCallback(e => {
-    let n = S(O(e));
+  })[e], []), O = Chunk473749.useCallback(e => {
+    let n = S(x(e));
     u.default.track(m.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == i ? true : i.sessionId,
       page_section: null == i ? true : i.pageSection,
@@ -77,15 +77,15 @@ let b = () => {
       page_size: null == i ? true : i.pageSize,
       cta_name: "sort by ".concat(n.label.toLowerCase()),
       page_type: "catalog"
-    }), t(O(e))
-  }, [Chunk120356, S, O, exports]), y = S(module);
+    }), t(x(e))
+  }, [Chunk120356, S, x, exports]), y = S(module);
   return (0, Chunk54381.jsx)("div", {
     className: s()(Chunk182668.container, {
       [Chunk219588.customCursors]: b
     }),
     children: (0, Chunk54381.jsx)(Chunk199849.B6, {
       options: v.map(S),
-      select: x,
+      select: O,
       isSelected: e => e === y.value,
       serialize: e => e,
       popoutWidth: 224,

@@ -33,7 +33,7 @@ function E(e) {
   } = e, m = v();
   S(m);
   let E = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
-    [O, x] = l.useState(true),
+    [x, O] = l.useState(true),
     [y, k] = l.useState(true),
     T = l.useMemo(() => n.filter(e => !_.y8.some(t => {
       let {
@@ -52,7 +52,7 @@ function E(e) {
       c(t, n);
       let s = r && !E,
         a = i ? _.AW.ORBS : _.AW.CATALOG;
-      x(n), k(!l), o(a, s)
+      O(n), k(!l), o(a, s)
     }, [E, o, c]),
     I = (0, d.FF)("CollectiblesContent"),
     {
@@ -69,10 +69,10 @@ function E(e) {
   }) : (0, r.jsx)(f.Z, {
     tab: t,
     sortedCategories: T,
-    initialCategoryId: O,
+    initialCategoryId: x,
     showFilterInitially: y,
     onUnmount: () => {
-      x(true), k(true)
+      O(true), k(true)
     }
   })
 }
