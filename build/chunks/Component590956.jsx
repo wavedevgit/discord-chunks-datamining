@@ -70,7 +70,7 @@ let T = e => {
       enableClick: s = true,
       channelId: d,
       messageId: f
-    } = e, p = i.useRef(null), h = null == (t = n.originalMatch) ? true : t[0], g = null != h ? h : n.name, [E, O] = i.useState(false), S = e => (0, r.jsx)(u.Z, {
+    } = e, p = i.useRef(null), h = null == (t = n.originalMatch) ? true : t[0], [g, E] = i.useState(false), O = e => (0, r.jsx)(u.Z, {
       emojiName: n.name,
       size: null != e ? e : n.jumboable ? "jumbo" : "default",
       src: n.src,
@@ -78,16 +78,16 @@ let T = e => {
       animated: false,
       channelId: d,
       messageId: f
-    }), T = e => {
+    }), S = e => {
       var t;
       return (0, r.jsx)(l.i_, I(v({
-        asset: S("jumbo"),
+        asset: O("jumbo"),
         title: null != (t = n.name) ? t : "",
         body: s ? b.intl.string(b.t["515vjG"]) : "",
-        "aria-label": g
+        ariaHidden: true
       }, m.b_), {
         position: a,
-        shouldShow: !E,
+        shouldShow: !g,
         onTooltipShow: () => {
           s && C({
             emojiNode: n,
@@ -99,18 +99,18 @@ let T = e => {
           tag: "span",
           onClick: t => {
             var n;
-            O(true), null == e || null == (n = e.onClick) || n.call(e, t)
+            E(true), null == e || null == (n = e.onClick) || n.call(e, t)
           },
           className: o()(y.emojiContainer, {
             [y.emojiContainerClickable]: s,
             [y.emojiJumbo]: n.jumboable
           }),
-          children: S()
+          children: O()
         }))
       }))
     };
-    if (!s) return T();
-    let A = e => (0, r.jsx)(_.Az, I(v({}, e), {
+    if (!s) return S();
+    let T = e => (0, r.jsx)(_.Az, I(v({}, e), {
       node: n
     }));
     return (0, r.jsx)(c.yRy, {
@@ -120,11 +120,11 @@ let T = e => {
       nudgeAlignIntoViewport: true,
       position: "right",
       onRequestClose: () => {
-        O(false)
+        E(false)
       },
-      renderPopout: A,
+      renderPopout: T,
       targetElementRef: p,
-      children: T
+      children: S
     })
   },
   A = e => {
@@ -147,7 +147,7 @@ let T = e => {
       asset: D("jumbo"),
       title: t.name,
       body: d ? b.intl.string(b.t["515vjG"]) : "",
-      "aria-label": t.name
+      ariaHidden: true
     }, m.b_), {
       position: a,
       shouldShow: !P,
