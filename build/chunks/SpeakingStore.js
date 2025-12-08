@@ -2,10 +2,11 @@
 /** chunk id: 606304, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./388685.js"), require("./997841.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
+  Chunk504313 = require("./504313.js"),
   Chunk700785 = require("./700785.js"),
   Chunk592125 = require("./592125.js"),
   Chunk131951 = require("./131951.js"),
@@ -14,7 +15,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,87 +23,90 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = new Map,
-  m = null,
+let m = new Map,
   h = null,
   g = null,
-  E = false,
-  b = false;
+  E = null,
+  b = false,
+  y = false;
 
-function y() {
+function O() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT,
-    t = _.get(module);
-  return null == exports && (t = new Map, _.set(module, exports)), exports
+    t = m.get(module);
+  return null == exports && (t = new Map, m.set(module, exports)), exports
 }
 
-function O(e, t) {
-  let n = _.get(e);
+function v(e, t) {
+  let n = m.get(e);
   if (null == n) returnfalse;
   let r = n.delete(t);
-  return 0 === n.size && _.delete(e), r
+  return 0 === n.size && m.delete(e), r
 }
 
-function v(e, t, n) {
+function S(e, t, n) {
   var r, i, a;
-  return ((null != (a = null == (i = _.get(e)) || null == (r = i.get(t)) ? true : r.flags) ? a : f.Dg.NONE) & n) === n
+  return ((null != (a = null == (i = m.get(e)) || null == (r = i.get(t)) ? true : r.flags) ? a : p.Dg.NONE) & n) === n
 }
 
-function S(e, t) {
+function I(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    r = _.get(e);
+    r = m.get(e);
   if (null == r) returnfalse;
   for (let [e, {
       flags: i
     }] of r)
-    if ((!n || e !== m) && (i & t) === t) returntrue;
+    if ((!n || e !== h) && (i & t) === t) returntrue;
   returnfalse
 }
 
-function I(e, t, n) {
+function T(e, t, n) {
   var r, i;
-  let a = y(e),
-    o = a.get(t),
-    s = null != (r = null == o ? true : o.flags) ? r : 0;
-  if (0 === s && 0 === n) returnfalse;
-  if (0 === n) a.delete(t), 0 === a.size && _.delete(e);
+  let a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : false / 0,
+    o = O(e),
+    s = o.get(t),
+    l = null != (r = null == s ? true : s.flags) ? r : 0;
+  if (0 === l && 0 === n) returnfalse;
+  if (0 === n) o.delete(t), 0 === o.size && m.delete(e);
   else {
-    let e = null != (i = null == o ? true : o.since) ? i : null,
-      r = (s & f.Dg.VOICE) === f.Dg.VOICE,
-      l = (n & f.Dg.VOICE) === f.Dg.VOICE;
-    r !== l && (e = l ? Date.now() : null), a.set(t, {
+    let e = null != (i = null == s ? true : s.since) ? i : null,
+      r = (l & p.Dg.VOICE) === p.Dg.VOICE,
+      c = (n & p.Dg.VOICE) === p.Dg.VOICE;
+    r !== c && (e = c ? Date.now() : null), o.set(t, {
       flags: n,
-      since: e
+      since: e,
+      voiceDb: a
     })
   }
   returntrue
 }
 
-function T(e) {
+function A(e) {
   let {
     user: t,
     sessionId: n
   } = e;
-  m = t.id, h = n, g = null
-}
-
-function A(e) {
-  let {
-    context: t,
-    userId: n,
-    speakingFlags: r
-  } = e;
-  if ((r & f.Dg.PRIORITY) === f.Dg.PRIORITY) {
-    let e = s.Z.getChannel(u.Z.getVoiceChannelId());
-    null != e && o.BT({
-      permission: d.Plq.PRIORITY_SPEAKER,
-      user: n,
-      context: e
-    }) ? l.Z.setCanHavePriority(n, true) : (l.Z.setCanHavePriority(n, false), r &= ~f.Dg.PRIORITY)
-  }
-  return (r & f.Dg.HIDDEN) === f.Dg.HIDDEN && (r = 0), I(t, n, r)
+  h = t.id, g = n, E = null
 }
 
 function C(e) {
+  let {
+    context: t,
+    userId: n,
+    speakingFlags: r,
+    voiceDb: i
+  } = e;
+  if ((r & p.Dg.PRIORITY) === p.Dg.PRIORITY) {
+    let e = l.Z.getChannel(d.Z.getVoiceChannelId());
+    null != e && s.BT({
+      permission: f.Plq.PRIORITY_SPEAKER,
+      user: n,
+      context: e
+    }) ? c.Z.setCanHavePriority(n, true) : (c.Z.setCanHavePriority(n, false), r &= ~p.Dg.PRIORITY)
+  }
+  return (r & p.Dg.HIDDEN) === p.Dg.HIDDEN && (r = 0), T(t, n, r, i)
+}
+
+function N(e) {
   let {
     voiceStates: t
   } = e;
@@ -111,77 +115,84 @@ function C(e) {
       userId: n,
       channelId: r,
       sessionId: i
-    } = t, a = false, o = g;
-    return n === m && i === h && (g = null != r ? r : null), o !== g && (a = _.delete(f.Yn.DEFAULT) || a), null == r ? a = n === m && i === h ? _.delete(f.Yn.DEFAULT) || a : O(f.Yn.DEFAULT, n) || a : n === m && i !== h ? a = _.delete(f.Yn.DEFAULT) || a : n !== m && r !== c.Z.getChannelId() && (a = O(f.Yn.DEFAULT, n) || a), a || e
+    } = t, a = false, o = E;
+    return n === h && i === g && (E = null != r ? r : null), o !== E && (a = m.delete(p.Yn.DEFAULT) || a), null == r ? a = n === h && i === g ? m.delete(p.Yn.DEFAULT) || a : v(p.Yn.DEFAULT, n) || a : n === h && i !== g ? a = m.delete(p.Yn.DEFAULT) || a : n !== h && r !== u.Z.getChannelId() && (a = v(p.Yn.DEFAULT, n) || a), a || e
   }, false)
 }
 
-function N(e) {
+function P(e) {
   let {
     isActive: t,
     isLatched: n
   } = e;
-  E = n, b = t
+  b = n, y = t
 }
-class P extends(r = Chunk442837.ZP.Store) {
+class R extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(Chunk592125.Z, Chunk131951.Z, Chunk19780.Z, Chunk944486.Z)
   }
   getSpeakingDuration(e, t) {
     var n, r;
-    let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : f.Yn.DEFAULT,
-      a = null == (r = _.get(i)) || null == (n = r.get(e)) ? true : n.since;
+    let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : p.Yn.DEFAULT,
+      a = null == (r = m.get(i)) || null == (n = r.get(e)) ? true : n.since;
     return null != a ? t - a : 0
   }
   getSpeakers() {
     var e, t;
     let n = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return Array.from(null != (t = null == (e = _.get(require)) ? true : module.keys()) ? exports : []).filter(e => v(n, e, f.Dg.VOICE))
+    return Array.from(null != (t = null == (e = m.get(require)) ? true : module.keys()) ? exports : []).filter(e => S(n, e, p.Dg.VOICE))
   }
   isSpeaking(e) {
-    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : f.Yn.DEFAULT;
-    return v(t, e, f.Dg.VOICE)
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p.Yn.DEFAULT;
+    return S(t, e, p.Dg.VOICE)
   }
   isPrioritySpeaker(e) {
-    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : f.Yn.DEFAULT;
-    return v(t, e, f.Dg.PRIORITY)
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p.Yn.DEFAULT;
+    return S(t, e, p.Dg.PRIORITY)
   }
   isSoundSharing(e) {
-    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : f.Yn.DEFAULT;
-    return v(t, e, f.Dg.SOUNDSHARE)
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p.Yn.DEFAULT;
+    return S(t, e, p.Dg.SOUNDSHARE)
   }
   isAnyoneElseSpeaking() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return S(module, Chunk65154.Dg.VOICE, true)
+    return I(module, Chunk65154.Dg.VOICE, true)
   }
   isCurrentUserSpeaking() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return null != m && this.isSpeaking(m, module)
+    return null != h && this.isSpeaking(h, module)
   }
   isCurrentUserPTTActive() {
-    return b
+    return y
   }
   isCurrentUserPTTLatched() {
-    return E
+    return b
   }
   isAnyonePrioritySpeaking() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return S(module, Chunk65154.Dg.VOICE | Chunk65154.Dg.PRIORITY)
+    return I(module, Chunk65154.Dg.VOICE | Chunk65154.Dg.PRIORITY)
   }
   isCurrentUserPrioritySpeaker() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return null != m && this.isPrioritySpeaker(m, module)
+    return null != h && this.isPrioritySpeaker(h, module)
   }
   isCurrentUserPrioritySpeaking() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk65154.Yn.DEFAULT;
-    return null != m && this.isPrioritySpeaker(m, module) && this.isSpeaking(m, module)
+    return null != h && this.isPrioritySpeaker(h, module) && this.isSpeaking(h, module)
+  }
+  getVoiceVolume(e) {
+    var t, n, r;
+    let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p.Yn.DEFAULT;
+    return (0, o.h)({
+      location: "SpeakingStore"
+    }).enabled && null != (r = null == (n = m.get(i)) || null == (t = n.get(e)) ? true : t.voiceDb) ? r : false / 0
   }
 }
-p(P, "displayName", "SpeakingStore");
-let R = new P(Chunk570140.Z, {
-  CONNECTION_OPEN: T,
-  OVERLAY_INITIALIZE: T,
-  SPEAKING: A,
-  VOICE_STATE_UPDATES: C,
-  PUSH_TO_TALK_STATE_CHANGE: N
+_(R, "displayName", "SpeakingStore");
+let w = new R(Chunk570140.Z, {
+  CONNECTION_OPEN: A,
+  OVERLAY_INITIALIZE: A,
+  SPEAKING: C,
+  VOICE_STATE_UPDATES: N,
+  PUSH_TO_TALK_STATE_CHANGE: P
 })

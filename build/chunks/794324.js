@@ -4,10 +4,10 @@ require.d(exports, {
   Oi: () => m,
   UI: () => g,
   YG: () => d,
-  _M: () => f,
+  _M: () => v,
   hr: () => u,
   kc: () => p,
-  mB: () => v
+  mB: () => f
 });
 var Chunk473749 = require("./473749.js"),
   Chunk264181 = require("./264181.js"),
@@ -79,7 +79,7 @@ let u = e => {
       format: "jpg"
     })
   },
-  v = e => {
+  f = e => {
     let t = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER),
       n = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER_DARK),
       l = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER_LIGHT),
@@ -89,15 +89,15 @@ let u = e => {
       d = (0, o.zL)(s.jE.COACHTIP_AVATAR);
     return r.useMemo(() => {
       var r, o, s, m, p;
-      let v = [t, n, l, a, c, u, d].some(e => null != e);
+      let f = [t, n, l, a, c, u, d].some(e => null != e);
       if ((null == e ? true : e.type) === i.Z.COACHMARK) return {
         hasPreviewAssets: false
       };
-      let f = null == e || null == (r = e.refTargetBackground) ? true : r.asset,
-        g = null == f ? true : f.resting,
-        h = null == f ? true : f.hovered;
+      let v = null == e || null == (r = e.refTargetBackground) ? true : r.asset,
+        g = null == v ? true : v.resting,
+        h = null == v ? true : v.hovered;
       return {
-        hasPreviewAssets: v,
+        hasPreviewAssets: f,
         buttonBGHoverDark: null != (o = null != n ? n : t) ? o : null == h ? true : h.dark,
         buttonBGHoverLight: null != (s = null != l ? l : t) ? s : null == h ? true : h.light,
         buttonBGRestingDark: null != (m = null != c ? c : a) ? m : null == g ? true : g.dark,
@@ -106,7 +106,7 @@ let u = e => {
       }
     }, [t, n, l, a, c, u, d, e])
   },
-  f = e => {
+  v = e => {
     var t, n;
     return (0, a.Y)("ImmersiveBanner") ? {
       bannerUrl: e.bannerUrl,

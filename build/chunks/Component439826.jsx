@@ -111,7 +111,7 @@ function k(e) {
     day: "numeric"
   }), G = (null == (n = v.userStatus) ? true : n.enrolledAt) != null, F = (null == (o = v.userStatus) ? true : o.completedAt) != null, {
     onAssetLoadComplete: K
-  } = s.useContext(S.k), X = s.useCallback(async () => {
+  } = s.useContext(S.k), X = Z ? "text-muted" : "always-white", Y = s.useCallback(async () => {
     M && ((0, b.zi)(v) || G ? (0, O.openVideoQuestModal)({
       quest: v,
       questContent: x.jn.QUEST_HOME_DESKTOP,
@@ -175,7 +175,7 @@ function k(e) {
             children: (0, r.jsx)(u.P3F, {
               className: A.utilButtonWrapper,
               "aria-label": R.intl.string(R.t.RscU7I),
-              onClick: X,
+              onClick: Y,
               children: (0, r.jsx)(u.o1U, {
                 color: "currentColor",
                 className: A.utilButtonIcon
@@ -249,7 +249,7 @@ function k(e) {
             className: A.promotedByRow,
             children: [(0, r.jsx)(u.Text, {
               variant: "text-sm/medium",
-              color: Z ? "text-muted" : "always-white",
+              color: X,
               children: R.intl.string(R.t.VAbKhK)
             }), (0, r.jsx)(m.Z, {
               className: A.verifiedIcon,
@@ -264,12 +264,12 @@ function k(e) {
               })
             }), (0, r.jsx)(u.Text, {
               variant: "text-sm/medium",
-              color: "text-default",
+              color: "always-white",
               children: null != (d = null == (i = v.config.cosponsorMetadata) ? true : i.name) ? d : v.config.messages.gamePublisher
             })]
           }), U || H ? null : (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
-            color: Z ? "text-muted" : "always-white",
+            color: X,
             children: R.intl.format(R.t["7D8r4F"], {
               expiryDate: z
             })

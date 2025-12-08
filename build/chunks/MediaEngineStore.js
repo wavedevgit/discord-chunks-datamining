@@ -540,12 +540,13 @@ function t4() {
       e.setLocalPan(n, r.left, r.right)
     }
     for (let n of Object.keys(t.disabledLocalVideos)) e.setLocalVideoDisabled(n, t.disabledLocalVideos[n]);
-    e.on(b.Sh.Speaking, (t, n) => {
+    e.on(b.Sh.Speaking, (t, n, r, i) => {
       v.Z.dispatch({
         type: "SPEAKING",
         context: e.context,
         userId: t,
-        speakingFlags: n
+        speakingFlags: n,
+        voiceDb: i
       })
     }), e.context === ew.Yn.DEFAULT && (tl = false, tc = false, e.on(b.Sh.SpeakingWhileMuted, () => {
       tl = true, tc = true, r.emitChange(), tu.stop(), tu.start(eq, () => {

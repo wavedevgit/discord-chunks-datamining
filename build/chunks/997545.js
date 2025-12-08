@@ -840,17 +840,17 @@ class x extends Chunk839548.Z {
   constructor(e, t, n) {
     super(e, t), S(this, "mediaEngineConnectionId", "Native-".concat(R++)), S(this, "goLiveSourceIdentifier", true), S(this, "selfVideo", false), S(this, "codecs", []), S(this, "videoEncoderFallbackPending", false), S(this, "desktopDegradationPreference", (0, b.zS)().DegradationPreference.MAINTAIN_FRAMERATE), S(this, "sourceDesktopDegradationPreference", (0, b.zS)().DegradationPreference.DISABLED), S(this, "videoDegradationPreference", (0, b.zS)().DegradationPreference.BALANCED), S(this, "localPans", {}), S(this, "remoteAudioSSRCs", {}), S(this, "remoteVideoSSRCs", {}), S(this, "inputMode", v.pM.VOICE_ACTIVITY), S(this, "vadThreshold", false), S(this, "vadAutoThreshold", true), S(this, "vadKrispActivationThreshold", .5), S(this, "vadUseKrisp", true), S(this, "vadLeading", 5), S(this, "vadTrailing", 25), S(this, "vadDuringPreProcess", false), S(this, "pttReleaseDelay", 20), S(this, "soundshareActive", false), S(this, "soundshareId", null), S(this, "soundshareSentSpeakingEvent", false), S(this, "echoCancellation", true), S(this, "noiseSuppression", true), S(this, "automaticGainControl", {
       enabled: true
-    }), S(this, "noiseCancellation", false), S(this, "noiseCancellationDuringProcessing", false), S(this, "noiseCancellationAfterProcessing", false), S(this, "vadAfterWebrtc", false), S(this, "voiceFilterId", null), S(this, "attenuationFactor", .5), S(this, "attenuateWhileSpeakingSelf", false), S(this, "attenuateWhileSpeakingOthers", true), S(this, "qos", true), S(this, "conn", true), S(this, "minimumJitterBufferLevel", 0), S(this, "postponeDecodeLevel", 100), S(this, "reconnectInterval", 6e4), S(this, "keyframeInterval", 0), S(this, "clipsKeyFrameInterval", 0), S(this, "videoQualityMeasurement", ""), S(this, "videoEncoderExperiments", ""), S(this, "numFastUdpReconnects", 0), S(this, "simulcastLQDisabledSsrc", true), S(this, "lastPreparedTransitionId", false), S(this, "lastExecutedTransitionId", false), S(this, "logger", true), S(this, "transportInfo", true), S(this, "beginInitializeAt", true), S(this, "onConnectCallbackAt", true), S(this, "onVideoCodecsCallbackAt", true), S(this, "onEncryptionModesCallbackAt", true), S(this, "handleSpeakingNative", (e, t) => {
-      let n = v.Dg.NONE;
-      n = "boolean" == typeof t ? t ? v.Dg.VOICE : v.Dg.NONE : t, this.handleSpeakingFlags(e, n)
+    }), S(this, "noiseCancellation", false), S(this, "noiseCancellationDuringProcessing", false), S(this, "noiseCancellationAfterProcessing", false), S(this, "vadAfterWebrtc", false), S(this, "voiceFilterId", null), S(this, "attenuationFactor", .5), S(this, "attenuateWhileSpeakingSelf", false), S(this, "attenuateWhileSpeakingOthers", true), S(this, "qos", true), S(this, "conn", true), S(this, "minimumJitterBufferLevel", 0), S(this, "postponeDecodeLevel", 100), S(this, "reconnectInterval", 6e4), S(this, "keyframeInterval", 0), S(this, "clipsKeyFrameInterval", 0), S(this, "videoQualityMeasurement", ""), S(this, "videoEncoderExperiments", ""), S(this, "numFastUdpReconnects", 0), S(this, "simulcastLQDisabledSsrc", true), S(this, "lastPreparedTransitionId", false), S(this, "lastExecutedTransitionId", false), S(this, "logger", true), S(this, "transportInfo", true), S(this, "beginInitializeAt", true), S(this, "onConnectCallbackAt", true), S(this, "onVideoCodecsCallbackAt", true), S(this, "onEncryptionModesCallbackAt", true), S(this, "handleSpeakingNative", (e, t, n) => {
+      let r = v.Dg.NONE;
+      r = "boolean" == typeof t ? t ? v.Dg.VOICE : v.Dg.NONE : t, this.handleSpeakingFlags(e, r, n)
     }), S(this, "handleNativeMuteToggled", () => {
       this.emit(h.Sh.ToggleMuteFromNative)
     }), S(this, "handleNativeMuteChanged", e => {
       this.emit(h.Sh.NativeMuteChanged, e)
-    }), S(this, "handleSpeakingFlags", (e, t) => {
+    }), S(this, "handleSpeakingFlags", (e, t, n) => {
       this.localSpeakingFlags[e] = t;
-      let n = e === this.userId ? this.audioSSRC : this.remoteAudioSSRCs[e];
-      this.emit(h.Sh.Speaking, e, t, n), (t & v.Dg.SOUNDSHARE) != 0 && false === this.soundshareSentSpeakingEvent && (this.emit(h.Sh.SoundshareSpeaking), this.soundshareSentSpeakingEvent = true)
+      let r = e === this.userId ? this.audioSSRC : this.remoteAudioSSRCs[e];
+      this.emit(h.Sh.Speaking, e, t, r, n), (t & v.Dg.SOUNDSHARE) != 0 && false === this.soundshareSentSpeakingEvent && (this.emit(h.Sh.SoundshareSpeaking), this.soundshareSentSpeakingEvent = true)
     }), S(this, "handleSpeakingWhileMuted", () => {
       this.emit(h.Sh.SpeakingWhileMuted)
     }), S(this, "handlePing", (e, t, n) => {

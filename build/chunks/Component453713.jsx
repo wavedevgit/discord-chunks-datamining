@@ -83,14 +83,14 @@ let O = s()(e => {
       totalVariants: o,
       selectedVariantIndex: s,
       onEnter: d,
-      onLeave: v,
+      onLeave: f,
       minimal: _
     } = e, {
       isPurchased: y
     } = (0, g.L)(n), C = (0, c.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(l)), {
       onFocus: I
     } = C, S = j(C, ["onFocus"]), w = i.useCallback(e => {
-      e.preventDefault(), e.stopPropagation(), (0, f.$)(t, l), I()
+      e.preventDefault(), e.stopPropagation(), (0, v.$)(t, l), I()
     }, [I, t, l]);
     return (0, r.jsx)(m.u, {
       text: h.intl.string(h.t["6cfuDj"]),
@@ -103,13 +103,13 @@ let O = s()(e => {
           d()
         },
         onMouseLeave: () => {
-          v()
+          f()
         },
         onFocus: () => {
           d()
         },
         onBlur: () => {
-          v()
+          f()
         },
         onClick: w,
         onKeyDown: e => {
@@ -142,8 +142,8 @@ let O = s()(e => {
       setIsHoveringOnSwitch: s,
       minimal: d,
       selectedVariantIndex: m,
-      alternativeBackgroundColor: f
-    } = e, g = o.previewingVariantIndex, O = null == (t = i.variants) ? true : t[m], y = null !== g ? null == (n = i.variants) ? true : n[g] : true, C = (0, v.Z)("shop-variants-group-".concat(i.storeListingId), u.hy.HORIZONTAL);
+      alternativeBackgroundColor: v
+    } = e, g = o.previewingVariantIndex, O = null == (t = i.variants) ? true : t[m], y = null !== g ? null == (n = i.variants) ? true : n[g] : true, C = (0, f.Z)("shop-variants-group-".concat(i.storeListingId), u.hy.HORIZONTAL);
     if (null == O) return null;
     let I = null != y ? y.variantLabel : null == O ? true : O.variantLabel;
     return (0, r.jsx)(c.bG, {
@@ -159,7 +159,7 @@ let O = s()(e => {
           }, c), {
             className: a()(b.variantsPanel, l, {
               [b.minimalState]: d,
-              [b.alternativeColor]: f
+              [b.alternativeColor]: v
             }),
             onMouseEnter: () => null == s ? true : s(true),
             onMouseLeave: () => null == s ? true : s(false),
