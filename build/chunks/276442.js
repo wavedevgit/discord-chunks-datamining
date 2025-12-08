@@ -105,7 +105,7 @@ function O(e) {
   }, F = null != E ? E : B;
   i()(S, "Step should be set here");
   let V = (0, a.Z)(() => Date.now(), [S]),
-    H = (0, a.Z)(() => null != O && null == x.current ? j && O === f.h8.CREDIT_CARD_INFORMATION ? f.h8.PAYMENT_ELEMENT : O : j ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE, [O, x.current, j]);
+    H = (0, a.Z)(() => null != O && null == x.current ? j ? f.h8.PAYMENT_ELEMENT : O : j ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE, [O, x.current, j]);
   return (0, s.vP)({
     paymentModalArgs: U,
     initialStep: H,

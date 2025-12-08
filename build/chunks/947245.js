@@ -8,17 +8,14 @@ let r = (0, require("./722733.js").Z)({
   name: "2025-11-use-embedded-survey",
   kind: "user",
   defaultConfig: {
-    enableNitroUnsubSurvey: false,
-    enableEmbeddedSurvey: false
+    enableNitroUnsubSurvey: false
   },
   variations: {
     1: {
-      enableNitroUnsubSurvey: true,
-      enableEmbeddedSurvey: false
+      enableNitroUnsubSurvey: true
     },
     2: {
-      enableNitroUnsubSurvey: true,
-      enableEmbeddedSurvey: true
+      enableNitroUnsubSurvey: true
     }
   }
 })
