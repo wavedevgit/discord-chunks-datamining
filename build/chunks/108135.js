@@ -8,19 +8,18 @@ var Chunk964268 = require("./964268.jsx"),
   Chunk733579 = require("./733579.js"),
   Chunk981631 = require("./981631.js");
 let o = {
-  [Chunk733579.GE.ORB_CHECKOUT]: {
+  [Chunk733579.G.ORB_CHECKOUT]: {
+    flowType: Chunk733579.G.ORB_CHECKOUT,
     implemented: true,
-    flowType: Chunk733579.GE.ORB_CHECKOUT,
-    UnifiedCheckoutContextProvider: Chunk964268.XF,
-    UnifiedCheckoutCustomHeader: Chunk964268.Pv,
-    purchaseType: Chunk981631.GZQ.ONE_TIME
+    purchaseType: Chunk981631.GZQ.ONE_TIME,
+    TENANT_CHECKOUT_FLOW_CONFIG: Chunk964268.n
   },
-  [Chunk733579.GE.PREMIUM_CHECKOUT]: {
+  [Chunk733579.G.PREMIUM_CHECKOUT]: {
     implemented: false,
-    flowType: Chunk733579.GE.PREMIUM_CHECKOUT
+    flowType: Chunk733579.G.PREMIUM_CHECKOUT
   },
-  [Chunk733579.GE.COLLECTIBLES_CHECKOUT]: {
+  [Chunk733579.G.COLLECTIBLES_CHECKOUT]: {
     implemented: false,
-    flowType: Chunk733579.GE.COLLECTIBLES_CHECKOUT
+    flowType: Chunk733579.G.COLLECTIBLES_CHECKOUT
   }
 }

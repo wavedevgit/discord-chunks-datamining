@@ -87,24 +87,26 @@ let u = e => {
       flowSpecificOptions: b,
       renderModalProps: f,
       checkoutFlowConfiguration: O,
-      renderHeader: j,
-      stepConfigs: P
+      tenantCheckoutFlowConfig: j,
+      renderHeader: P,
+      stepConfigs: h
     } = e, {
-      purchaseType: h,
-      CustomPaymentContextProvider: S = p,
-      UnifiedCheckoutContextProvider: w
-    } = O, k = null != y ? o.KB : o.b6;
-    return (0, r.jsx)(S, {
+      purchaseType: S
+    } = O, {
+      CustomPaymentContextProvider: w = p,
+      UnifiedCheckoutContextProvider: k
+    } = j, g = null != y ? o.KB : o.b6;
+    return (0, r.jsx)(w, {
       skuId: n,
       applicationId: i,
       activeSubscription: null,
       loadId: t,
-      stepConfigs: P,
-      purchaseType: h,
+      stepConfigs: h,
+      purchaseType: S,
       excludeSubscriptionPlansBySKU: true,
       excludeSKUPurchasePreviews: true,
-      children: (0, r.jsx)(k, l(s({}, y), {
-        children: (0, r.jsx)(w, {
+      children: (0, r.jsx)(g, l(s({}, y), {
+        children: (0, r.jsx)(k, {
           skuId: n,
           loadId: t,
           analyticsLocations: c,
@@ -118,7 +120,7 @@ let u = e => {
             onClose: f.onClose,
             applicationId: i,
             skuId: n,
-            renderHeader: j,
+            renderHeader: P,
             analyticsLocations: c
           })
         })

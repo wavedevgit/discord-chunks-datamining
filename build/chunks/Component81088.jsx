@@ -2,19 +2,20 @@
 /** chunk id: 81088, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ds: () => E,
-  Ko: () => g,
-  vw: () => h
+  Ds: () => b,
+  Ko: () => E,
+  vw: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk600164 = require("./600164.jsx"),
   Chunk612853 = require("./612853.jsx"),
   Chunk311821 = require("./311821.jsx"),
   Chunk482151 = require("./482151.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,20 +24,20 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -47,15 +48,15 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t) {
+function m(e, t) {
   if (null == e) return {};
-  var n, r, i = m(e, t);
+  var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -63,14 +64,14 @@ function _(e, t) {
   return i
 }
 
-function m(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = e => {
+let g = e => {
     let {
       message: t
     } = e;
@@ -79,7 +80,7 @@ let h = e => {
       children: t
     })
   },
-  g = e => {
+  E = e => {
     var {
       onClick: t,
       loading: n,
@@ -87,13 +88,13 @@ let h = e => {
       text: s,
       tooltipText: l
     } = e;
-    let c = d({
+    let c = f({
         variant: "active",
         type: "submit",
         "data-testid": "submitButton",
         text: s
-      }, _(e, ["onClick", "loading", "disabled", "text", "tooltipText"])),
-      u = (0, r.jsx)(a.zxk, p(d({}, c), {
+      }, m(e, ["onClick", "loading", "disabled", "text", "tooltipText"])),
+      u = (0, r.jsx)(a.zxk, _(f({}, c), {
         onClick: t,
         loading: n,
         disabled: o,
@@ -105,17 +106,20 @@ let h = e => {
       children: u
     }) : u
   },
-  E = e => {
-    let {
+  b = e => {
+    var {
       primaryCTAButtonProps: t,
       showLockIcon: n,
       onBackClick: i
-    } = e;
-    return (0, r.jsxs)(o.mzw, {
-      className: c.checkoutModalFooter,
-      "data-migration-pending": true,
-      children: [null != i ? (0, r.jsx)(l.Z, {
+    } = e, a = m(e, ["primaryCTAButtonProps", "showLockIcon", "onBackClick"]);
+    return (0, r.jsxs)(o.mzw, _(f({
+      className: u.checkoutModalFooter,
+      direction: s.Z.Direction.HORIZONTAL,
+      justify: s.Z.Justify.END,
+      "data-migration-pending": true
+    }, a), {
+      children: [null != i ? (0, r.jsx)(c.Z, {
         onClick: i
-      }) : null, (0, r.jsx)(g, d({}, t)), n && (0, r.jsx)(s.Z, {})]
-    })
+      }) : null, n && (0, r.jsx)(l.Z, {}), (0, r.jsx)(E, f({}, t))]
+    }))
   }

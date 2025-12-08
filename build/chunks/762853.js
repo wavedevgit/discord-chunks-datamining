@@ -8,5 +8,5 @@ var Chunk733579 = require("./733579.js"),
   Chunk86610 = require("./86610.jsx");
 require("./467368.js");
 let a = new Chunk86610.J({
-  checkoutFlow: Chunk733579.GE.ORB_CHECKOUT
+  checkoutFlow: Chunk733579.G.ORB_CHECKOUT
 })
