@@ -61,7 +61,8 @@ let O = {
       return e
     }({}, e)), {
       modalKey: b.f1,
-      onCloseRequest: E.Vq
+      onCloseRequest: E.Vq,
+      dismissable: false
     }) : t === m.c2C.REQUIRE_SAFETY_FLOWS ? (0, a.q4)(e => {
       let {
         closeLayer: t

@@ -1,75 +1,37 @@
 /** Chunk was on 46683 **/
-/** chunk id: 821606, original params: t,a,e (module,exports,require) **/
+/** chunk id: 821606, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => c
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk600164 = require("./600164.jsx"),
-  Chunk313201 = require("./313201.js"),
-  Chunk988158 = require("./988158.js"),
+  Chunk411328 = require("./411328.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk733235 = require("./733235.js");
+  Chunk892744 = require("./892744.js");
 
-function d(t) {
+function c(t) {
   let {
-    url: a,
-    onClose: d,
-    transitionState: u
-  } = t, x = (0, r.Dt)(), {
-    protocol: h,
-    hostname: m,
-    theRestOfTheUrl: b
-  } = (0, s.h)(a);
-  return (0, n.jsxs)(l.Y0X, {
-    transitionState: u,
-    "aria-labelledby": x,
-    parentComponent: "BlockedDomainModal",
-    children: [(0, n.jsx)("img", {
-      className: c.art,
-      src: e(902623),
-      alt: ""
-    }), (0, n.jsx)(l.hzk, {
-      children: (0, n.jsxs)(i.Z, {
-        direction: i.Z.Direction.VERTICAL,
-        justify: i.Z.Justify.CENTER,
-        children: [(0, n.jsx)(l.Heading, {
-          id: x,
-          variant: "heading-lg/semibold",
-          className: c.title,
-          children: o.intl.string(o.t["2B3wj8"])
-        }), (0, n.jsx)(l.Text, {
-          variant: "text-md/normal",
-          className: c.body,
-          children: o.intl.format(o.t.jnHyYU, {})
-        }), (0, n.jsxs)(l.Ttm, {
-          className: c.linkCalloutContainer,
-          children: [(0, n.jsxs)(l.Text, {
-            tag: "span",
-            variant: "text-md/normal",
-            color: "text-muted",
-            children: [h, "//"]
-          }), (0, n.jsx)(l.Text, {
-            tag: "span",
-            variant: "text-md/semibold",
-            color: "text-default",
-            children: m
-          }), (0, n.jsx)(l.Text, {
-            tag: "span",
-            variant: "text-md/normal",
-            color: "text-muted",
-            children: b
-          })]
-        })]
-      })
-    }), (0, n.jsx)(l.mzw, {
-      children: (0, n.jsx)(l.Button, {
-        variant: "primary",
-        text: o.intl.string(o.t["/g10LC"]),
-        type: "button",
-        onClick: d
-      })
-    })]
+    url: n,
+    onClose: e,
+    transitionState: c
+  } = t;
+  return (0, a.jsx)(l.Ioy, {
+    transitionState: c,
+    onClose: e,
+    graphic: {
+      src: i.Z,
+      type: "image"
+    },
+    gradientColor: "blue",
+    title: o.intl.string(o.t["2B3wj8"]),
+    subtitle: o.intl.format(o.t.jnHyYU, {}),
+    actions: [{
+      text: o.intl.string(o.t["/g10LC"]),
+      onClick: e
+    }],
+    children: (0, a.jsx)(r.W, {
+      url: n
+    })
   })
 }
