@@ -28,7 +28,7 @@ function x(e) {
     destinationPanel: t,
     originPanel: n
   } = e;
-  (0, d.QB)({
+  (0, f.QB)({
     destinationPane: t,
     originPane: n,
     subsection: u.Z.getSubsection(),
@@ -55,17 +55,17 @@ function S(e) {
     }
     return o
   }(e, ["target"]);
-  let l = b.Z.useField("query"),
-    d = o.useRef(null);
+  let l = d.Z.useField("query"),
+    f = o.useRef(null);
   (0, c.ZP)(() => {
     let e = u.Z.getSection();
     null != e && (x({
       destinationPanel: e,
       originPanel: null
-    }), d.current = e)
+    }), f.current = e)
   });
   let v = o.useCallback(e => {
-      b.Z.setState({
+      d.Z.setState({
         query: e
       })
     }, []),
@@ -78,8 +78,8 @@ function S(e) {
         a.Z.logout("settings")
       })
     };
-    return f.S.subscribe(j.CkL.SETTINGS_TRIGGER_LOGOUT, e), () => {
-      f.S.unsubscribe(j.CkL.SETTINGS_TRIGGER_LOGOUT, e)
+    return b.S.subscribe(j.CkL.SETTINGS_TRIGGER_LOGOUT, e), () => {
+      b.S.unsubscribe(j.CkL.SETTINGS_TRIGGER_LOGOUT, e)
     }
   }, []), h) ? null : (0, r.jsx)(s.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -106,8 +106,8 @@ function S(e) {
       let t = (0, m.getUserSettingsSectionsByWebUserSettings)().get(e);
       null != t && (x({
         destinationPanel: t,
-        originPanel: d.current
-      }), d.current = t)
+        originPanel: f.current
+      }), f.current = t)
     },
     target: t,
     defaultTarget: y.n.ACCOUNT_PANEL,

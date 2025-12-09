@@ -1,7 +1,7 @@
 /** Chunk was on 88569 **/
 /** chunk id: 950941, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  W: () => d
+  W: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -61,7 +61,7 @@ function u(e) {
   return s ? u : null
 }
 
-function f(e) {
+function b(e) {
   let {
     useCustomDecoration: t,
     visibleContent: n,
@@ -70,7 +70,7 @@ function f(e) {
   return t(n, r)
 }
 
-function d(e) {
+function f(e) {
   let {
     trailing: t,
     visibleContent: n,
@@ -86,7 +86,7 @@ function d(e) {
         isSelected: o
       }));
     case i.W.STRONGLY_DISCOURAGED_CUSTOM:
-      return (0, r.jsx)(f, c(a({}, t), {
+      return (0, r.jsx)(b, c(a({}, t), {
         visibleContent: n,
         isSelected: o
       }))

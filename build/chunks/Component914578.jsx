@@ -28,15 +28,15 @@ function p(e) {
     children: (0, r.jsxs)(a.kSQ, {
       children: [(0, r.jsx)(a.sNh, {
         id: "changelog",
-        label: b.intl.string(b.t.LRmNAl),
+        label: d.intl.string(d.t.LRmNAl),
         action: () => (0, s.Z)(true)
       }), (0, r.jsx)(a.sNh, {
         id: "acknowledgements",
-        label: b.intl.string(b.t["0nUKy3"]),
-        action: () => (0, c.Z)(d.EYA.ACKNOWLEDGEMENTS)
+        label: d.intl.string(d.t["0nUKy3"]),
+        action: () => (0, c.Z)(f.EYA.ACKNOWLEDGEMENTS)
       }), (0, r.jsx)(a.sNh, {
         id: "support",
-        label: b.intl.string(b.t["Yl/Riu"]),
+        label: d.intl.string(d.t["Yl/Riu"]),
         action: () => (0, c.Z)(u.w)
       })]
     })
@@ -117,7 +117,7 @@ function g() {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",
-              children: b.intl.string(b.t["UKOtz+"])
+              children: d.intl.string(d.t["UKOtz+"])
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);

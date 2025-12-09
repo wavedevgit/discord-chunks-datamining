@@ -14,12 +14,20 @@ require.d(exports, {
   Z: () => i
 }), require("./388685.js");
 class i {
-  register(e, t, n, r) {
-    this.map.set(e.key, {
-      node: e,
-      parentPanelKey: t,
-      parentCategoryKey: n,
-      parentAccordionKey: r
+  register(e) {
+    let {
+      node: t,
+      parentPanelKey: n,
+      parentTabKey: r,
+      parentCategoryKey: i,
+      parentAccordionKey: a
+    } = e;
+    this.map.set(t.key, {
+      node: t,
+      parentPanelKey: n,
+      parentTabKey: r,
+      parentCategoryKey: i,
+      parentAccordionKey: a
     })
   }
   entry(e) {

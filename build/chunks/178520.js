@@ -32,6 +32,7 @@ function l(e, t, n, r) {
   let d = null == (s = e.getLegacySearchKey) ? true : s.call(e);
   if (null != d && null != r) return t.length < 2 || r.has(d);
   if (e.type === o.J.SECTION && e.hoisted) returntrue;
+  if (e.type === o.J.TAB_ITEM) returnfalse;
   let f = "useTitle" in e ? null == (l = e.useTitle) ? true : l.call(e, false) : true,
     p = "useSearchTerms" in e ? null == (c = e.useSearchTerms) ? true : c.call(e) : true;
   if (n || null == f && null == p) returnfalse;

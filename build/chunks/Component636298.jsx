@@ -45,10 +45,10 @@ function g(e) {
         className: y.contentHeaderLeft,
         children: [a.tq && (0, r.jsx)(p, {
           icon: s.yFM,
-          onClick: () => f.Z.setState({
+          onClick: () => b.Z.setState({
             showNavigationMobile: true
           }),
-          label: b.intl.string(b.t["13/7kX"])
+          label: d.intl.string(d.t["13/7kX"])
         }), (0, r.jsx)(s.Heading, {
           variant: "heading-md/medium",
           color: "text-default",
@@ -57,7 +57,7 @@ function g(e) {
       }), (0, r.jsx)(p, {
         icon: s.Uz9,
         onClick: o,
-        label: b.intl.string(b.t.cpT0Cq)
+        label: d.intl.string(d.t.cpT0Cq)
       })]
     })
   })
@@ -67,7 +67,7 @@ let O = Chunk473749.memo(function(e) {
   let {
     onClose: o,
     setting: i
-  } = e, c = null != (n = null == i ? true : i.useTitle()) ? n : "", s = null == i || null == (t = i.useBadge) ? true : t.call(i), u = f.Z.useField("showNavigationMobile");
+  } = e, c = null != (n = null == i ? true : i.useTitle()) ? n : "", s = null == i || null == (t = i.useBadge) ? true : t.call(i), u = b.Z.useField("showNavigationMobile");
   return (0, r.jsxs)("div", {
     className: l()(y.content, {
       [y.mobile]: a.tq,
@@ -79,7 +79,7 @@ let O = Chunk473749.memo(function(e) {
       onClose: o
     }), (0, r.jsx)("div", {
       className: y.contentBody,
-      children: null != i && (0, r.jsx)(d.Z, {
+      children: null != i && (0, r.jsx)(f.Z, {
         node: i
       })
     })]

@@ -16,9 +16,9 @@ function c(e) {
     visibleContent: c,
     markAsDismissed: s,
     props: u
-  } = e, [f, d] = o.useState(false), b = o.useRef(null);
-  (0, l.ZP)(() => (b.current = setTimeout(() => d(true), 250), () => {
-    clearTimeout(b.current), s(a.L.AUTO_DISMISS)
+  } = e, [b, f] = o.useState(false), d = o.useRef(null);
+  (0, l.ZP)(() => (d.current = setTimeout(() => f(true), 250), () => {
+    clearTimeout(d.current), s(a.L.AUTO_DISMISS)
   }));
   let y = o.useCallback(e => {
     s("user:explicit" === e ? a.L.USER_DISMISS : a.L.AUTO_DISMISS)
@@ -42,7 +42,7 @@ function c(e) {
     return e
   }({
     targetElementRef: n,
-    shouldShow: f && c === t,
+    shouldShow: b && c === t,
     onRequestClose: y
   }, u))
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 88569 **/
 /** chunk id: 82084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => d
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk79808 = require("./79808.jsx"),
   Chunk981631 = require("./981631.js");
 
-function b(e) {
+function d(e) {
   var t, n, {
-      partialRoot: b,
+      partialRoot: d,
       target: y,
       defaultTarget: p,
       onPanelChange: g,
@@ -40,19 +40,19 @@ function b(e) {
       }
       return o
     }(e, ["partialRoot", "target", "defaultTarget", "onPanelChange", "sidebarFooter", "emptyState", "searchQuery", "onSearchChange"]);
-  let [x, S] = o.useState(false), [P, C] = o.useState(1.4), _ = o.useRef(null), w = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), k = (0, i.e7)([s.Z], () => s.Z.isFocused());
+  let [x, S] = o.useState(false), [P, C] = o.useState(1.4), _ = o.useRef(null), w = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), T = (0, i.e7)([s.Z], () => s.Z.isFocused());
   return o.useEffect(() => {
     let e = e => {
       let {
         intensity: t,
         duration: n
       } = e;
-      !w && k && (S(true), C(null != t ? t : 1.4), clearTimeout(_.current), _.current = setTimeout(() => S(false), null != n ? n : 1e3))
+      !w && T && (S(true), C(null != t ? t : 1.4), clearTimeout(_.current), _.current = setTimeout(() => S(false), null != n ? n : 1e3))
     };
-    return u.S.subscribe(d.CkL.SHAKE_SETTINGS_MODAL, e), () => {
-      u.S.unsubscribe(d.CkL.SHAKE_SETTINGS_MODAL, e), clearTimeout(_.current)
+    return u.S.subscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), () => {
+      u.S.unsubscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), clearTimeout(_.current)
     }
-  }, [w, k]), (0, r.jsx)(a.UkV, {
+  }, [w, T]), (0, r.jsx)(a.UkV, {
     isShaking: x,
     intensity: P,
     children: (0, r.jsx)(l.A, (t = function(e) {
@@ -73,9 +73,9 @@ function b(e) {
       }
       return e
     }({}, h), n = n = {
-      children: (0, r.jsx)(f.Z, {
+      children: (0, r.jsx)(b.Z, {
         onClose: h.onClose,
-        partialRoot: b,
+        partialRoot: d,
         target: y,
         defaultTarget: p,
         onPanelChange: g,
