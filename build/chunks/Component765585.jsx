@@ -40,8 +40,8 @@ let b = Chunk473749.forwardRef(function(e, t) {
     maxWidth: A = 280,
     hideDismissButton: R = false,
     pointerClassName: D,
-    dismissIconClassName: L,
-    dismissIcon: M,
+    dismissIconClassName: M,
+    dismissIcon: L,
     onDismissIconClick: k,
     tryItButtonColor: G
   } = e, U = I ? a.zx.Sizes.LARGE : a.zx.Sizes.MAX, [B, F] = i.useState(false), {
@@ -71,10 +71,10 @@ let b = Chunk473749.forwardRef(function(e, t) {
         [m.contentNoArt]: null == b || E,
         [m.contentPremium]: S
       }),
-      children: [null != M && (0, r.jsx)(s.P3F, {
+      children: [null != L && (0, r.jsx)(s.P3F, {
         onClick: k,
-        className: L,
-        children: M
+        className: M,
+        children: L
       }), (0, r.jsxs)("div", {
         className: o()(b, E ? m.artInline : m.artAbsolute),
         children: [P && (0, r.jsx)(h.Z, {

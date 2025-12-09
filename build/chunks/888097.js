@@ -2,6 +2,9 @@
 /** chunk id: 888097, original params: e,t,n (module,exports,require) **/
 module.exports = {
   channelHeader: "channelHeader__35a7e",
+  showCollapseButton: "showCollapseButton__35a7e",
+  collapseButton: "collapseButton__35a7e",
+  collapsed: "collapsed__35a7e",
   dmIcon: "dmIcon__35a7e",
   guildIcon: "guildIcon__35a7e",
   channelNameSection: "channelNameSection__35a7e",

@@ -27,8 +27,8 @@ function N(e) {
 function E(e, t) {
   return Math.random() * (t - e) + e
 }
-let v = [6, 10, 9, 16, 8],
-  p = {
+let p = [6, 10, 9, 16, 8],
+  v = {
     [Chunk454135.i.GENTLE_AMBIENT]: {
       firstState: "burst",
       springConfig: {
@@ -131,13 +131,13 @@ let v = [6, 10, 9, 16, 8],
       },
       states: {
         burst: {
-          getHeights: () => N(7, v),
+          getHeights: () => N(7, p),
           getAnimationDelay: () => E(8, 16),
           getStateDuration: () => E(3e3, 6e3),
           getNextState: () => "quiet"
         },
         quiet: {
-          getHeights: () => N(4, v),
+          getHeights: () => N(4, p),
           getAnimationDelay: () => E(16, 128),
           getStateDuration: () => E(1e3, 3e3),
           getNextState: () => "burst"
@@ -153,9 +153,9 @@ function T(e) {
     iconSize: f = 20,
     animationStyle: N = d.i.GENTLE_AMBIENT,
     locked: E = false
-  } = e, v = i.useId(), T = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, o.e7)([c.Z], () => c.Z.isAppFocused() || c.Z.isVisible()), [y, b] = i.useState(false), S = i.useCallback(e => {
-    e && b(true)
-  }, []), I = (0, a.O)(S, .15), j = p[N], x = (function(e, t) {
+  } = e, p = i.useId(), T = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, o.e7)([c.Z], () => c.Z.isAppFocused() || c.Z.isVisible()), [y, S] = i.useState(false), b = i.useCallback(e => {
+    e && S(true)
+  }, []), j = (0, a.O)(b, .15), I = v[N], x = (function(e, t) {
     let [n, l] = i.useState(() => t.states[t.firstState].getHeights()), r = i.useRef(t.firstState), a = i.useRef(null), o = !e;
     return i.useEffect(() => {
       let e;
@@ -192,12 +192,12 @@ function T(e) {
         clearTimeout(e)
       }
     }, [o, t]), n
-  })(T || !O || !y, j).map(e => ({
+  })(T || !O || !y, I).map(e => ({
     height: e,
-    config: j.springConfig
+    config: I.springConfig
   })), D = (0, s.bYB)(5, x, "animate-always"), _ = (f - 18) / 2, C = E ? (0, l.jsx)("defs", {
     children: (0, l.jsxs)("mask", {
-      id: v,
+      id: p,
       children: [(0, l.jsx)("rect", {
         width: f,
         height: f,
@@ -211,9 +211,9 @@ function T(e) {
         rx: 1
       })]
     })
-  }) : null, A = E ? "url(#".concat(v, ")") : true;
+  }) : null, A = E ? "url(#".concat(p, ")") : true;
   return T ? (0, l.jsx)("span", {
-    ref: I,
+    ref: j,
     className: n,
     style: {
       display: "inline-flex"
@@ -245,7 +245,7 @@ function T(e) {
       })]
     })
   }) : (0, l.jsx)("span", {
-    ref: I,
+    ref: j,
     className: n,
     style: {
       display: "inline-flex"

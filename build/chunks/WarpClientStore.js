@@ -68,9 +68,12 @@ class b extends(r = Chunk442837.ZP.Store) {
           location: "configureLicense"
         }).enabled) {
         let e = n,
-          r = await (0, f.S)(e.id, t);
-        if (null != r && "" !== r) await this.runCommand("registration", "license", r);
-        else throw Error("No license key returned from API when configuring license")
+          i = await (0, f.S)(null == e ? true : e.id, t);
+        if (null != i && "" !== i) {
+          var r;
+          if (i === (null == e || null == (r = e.account) ? true : r.license)) return;
+          await this.runCommand("registration", "license", i)
+        } else throw Error("No license key returned from API when configuring license")
       }
     } catch (e) {
       if (u.Z.captureException(e, {
@@ -118,9 +121,9 @@ class b extends(r = Chunk442837.ZP.Store) {
   async connect() {
     return this.clientEnabled && (this.logEvent({
       status: "Configuring"
-    }), await this.configureLicense({
+    }), this.configureLicense({
       ignoreAPIError: true
-    }), await this.configureExceptions(), await this.configureMode(), this.logEvent({
+    }).catch(() => {}), await this.configureExceptions(), await this.configureMode(), this.logEvent({
       status: "ConnectCommandSent"
     }), await this.runCommand("connect")), this.clientEnabled
   }

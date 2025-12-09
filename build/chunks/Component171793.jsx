@@ -21,9 +21,9 @@ function h(t) {
     hideFavorites: g = false,
     modalTitle: p = u.intl.string(u.t["0VinIJ"]),
     defaultText: C = u.intl.string(u.t.OrwKgi)
-  } = t, [v, j] = e.useState(null), [k, I] = e.useState(C), S = e.useCallback(t => {
+  } = t, [v, j] = l.useState(null), [k, I] = l.useState(C), S = l.useCallback(t => {
     j(t), null == h || h(t)
-  }, [h]), w = e.useCallback(async () => {
+  }, [h]), w = l.useCallback(async () => {
     if (null != v) {
       let t = c.Z.getChannelId();
       null != t && (await o.Z.sendMessage(t, {
@@ -43,7 +43,7 @@ function h(t) {
       }), await n())
     }
   }, [v, k, n]);
-  return (0, a.jsx)(l.Modal, {
+  return (0, a.jsx)(e.Modal, {
     transitionState: i,
     onClose: n,
     title: p,
@@ -60,7 +60,8 @@ function h(t) {
       variant: "primary",
       text: u.intl.string(u.t.TXNS7S),
       onClick: w,
-      loading: false
+      loading: false,
+      disabled: null == v
     }],
     children: (0, a.jsx)(r.Z, {
       hideFavorites: g,

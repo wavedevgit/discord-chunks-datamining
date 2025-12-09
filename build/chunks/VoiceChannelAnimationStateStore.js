@@ -61,13 +61,13 @@ function E(e) {
   }, 2e3)
 }
 
-function v() {
+function p() {
   for (let e of Object.keys(h)) clearTimeout(h[module]);
   h = {}, f = {}
 }
 
-function p() {
-  return v(), true
+function v() {
+  return p(), true
 }
 class T extends(l = Chunk442837.ZP.Store) {
   initialize() {
@@ -117,7 +117,7 @@ let O = new T(Chunk570140.Z, {
         guildId: t
       } = e;
       if (t === m || null == t) returnfalse;
-      m = t, v();
+      m = t, p();
       let n = s.Z.getVoiceStates(t),
         l = {};
       for (let e of Object.values(n))
@@ -130,7 +130,7 @@ let O = new T(Chunk570140.Z, {
       });
       returntrue
     },
-    CONNECTION_OPEN: p,
-    LOGOUT: p
+    CONNECTION_OPEN: v,
+    LOGOUT: v
   }),
   y = O

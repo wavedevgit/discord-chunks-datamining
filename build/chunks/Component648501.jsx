@@ -42,8 +42,8 @@ function N(e) {
     enableActivities: A,
     isSubscriptionGated: R,
     needSubscriptionToAccess: D,
-    isNewChannel: L,
-    muted: M,
+    isNewChannel: M,
+    muted: L,
     resolvedUnreadSetting: k
   } = e, G = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), U = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), W = (0, f.PK)(n.id) && n.isGuildStageVoice(), z = (0, v.ZP)({
     channel: n,
@@ -61,19 +61,19 @@ function N(e) {
   if ((0, d.O)(R)) return (0, r.jsx)(d.Z, {
     locked: D
   });
-  if (L) return (0, r.jsx)(o.IGR, {
+  if (M) return (0, r.jsx)(o.IGR, {
     text: I.intl.string(I.t.y2b7CA),
     color: l.Z.unsafe_rawColors.BRAND_260.css,
     className: P.newChannel
   });
-  if (!M && k === S.i.ALL_MESSAGES && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(o.Text, {
+  if (!L && k === S.i.ALL_MESSAGES && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
     children: I.intl.format(I.t.GkAbqY, {
       count: (0, o.NGo)(K)
     })
   });
-  if (!M && n.isForumLikeChannel() && null != Y && Y > 0) return (0, r.jsx)(o.Text, {
+  if (!L && n.isForumLikeChannel() && null != Y && Y > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-muted",
     children: (0, o.NGo)(Y)
@@ -93,6 +93,6 @@ function N(e) {
     }
   }) : null != A && A && (0, y.u)(B) ? (0, r.jsx)(j.Z, {
     embeddedApps: B,
-    muted: M
+    muted: L
   }) : null
 }

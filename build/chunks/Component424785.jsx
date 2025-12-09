@@ -308,7 +308,7 @@ function Q(e) {
   }), f = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), h = (0, S.ZP)(n.id), p = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, x.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
-  } = (0, _.Z)(n.id), y = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), O = (0, E.xJ)(n.id), v = (0, M.Z)({
+  } = (0, _.Z)(n.id), y = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), O = (0, E.xJ)(n.id), v = (0, L.Z)({
     channel: n,
     isChannelSelected: false,
     isChannelCollapsed: o,

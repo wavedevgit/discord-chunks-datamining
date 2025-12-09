@@ -5,10 +5,10 @@ require.d(exports, {
 });
 var Chunk657707 = require("./657707.js"),
   Chunk248514 = require("./248514.jsx"),
-  Chunk893776 = require("./893776.js"),
   Chunk509613 = require("./509613.js"),
+  Chunk585483 = require("./585483.js"),
   Chunk313789 = require("./313789.js"),
-  Chunk342386 = require("./342386.js"),
+  Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["2jxGer"]),
@@ -19,7 +19,7 @@ let c = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
       subtitle: Chunk388032.intl.string(Chunk388032.t.SUnWBB),
       confirmText: Chunk388032.intl.string(Chunk388032.t["2jxGer"]),
       onConfirm: () => {
-        (0, Chunk342386.default)(), Chunk893776.Z.logout("settings")
+        Chunk585483.S.dispatch(Chunk981631.CkL.SETTINGS_TRIGGER_LOGOUT)
       }
     })
   },

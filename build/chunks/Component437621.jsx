@@ -57,7 +57,7 @@ function D(e) {
   return e
 }
 
-function L(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -69,7 +69,7 @@ function L(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class M extends Chunk98597.ZP {
+class L extends Chunk98597.ZP {
   componentWillUnmount() {
     this.resetTextChannelPopoutTimers()
   }
@@ -204,7 +204,7 @@ class M extends Chunk98597.ZP {
       return t.isModeratorReportChannel() || l ? null : null != i && i.length > 0 && o && !n ? (0, r.jsx)(Z.Z, {
         onAction: this.handleActivitiesPopoutClose,
         channel: t
-      }) : (0, r.jsx)(S.Z, L(D({}, e), {
+      }) : (0, r.jsx)(S.Z, M(D({}, e), {
         channel: this.props.channel
       }))
     }), R(this, "handleContextMenu", e => {
@@ -215,7 +215,7 @@ class M extends Chunk98597.ZP {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("25421")]).then(n.bind(n, 354741));
-        return n => (0, r.jsx)(e, L(D({}, n), {
+        return n => (0, r.jsx)(e, M(D({}, n), {
           channel: t,
           selected: true
         }))
@@ -226,7 +226,7 @@ class M extends Chunk98597.ZP {
           let {
             default: e
           } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
-          return n => (0, r.jsx)(e, L(D({}, n), {
+          return n => (0, r.jsx)(e, M(D({}, n), {
             user: i,
             channel: t,
             showModalItems: false
@@ -238,7 +238,7 @@ class M extends Chunk98597.ZP {
         let {
           default: e
         } = await n.e("86715").then(n.bind(n, 466676));
-        return n => (0, r.jsx)(e, L(D({}, n), {
+        return n => (0, r.jsx)(e, M(D({}, n), {
           channel: t
         }))
       });
@@ -247,7 +247,7 @@ class M extends Chunk98597.ZP {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("18320"), n.e("44011")]).then(n.bind(n, 373651));
-        return n => (0, r.jsx)(e, L(D({}, n), {
+        return n => (0, r.jsx)(e, M(D({}, n), {
           channel: t,
           guild: i
         }))
@@ -255,7 +255,7 @@ class M extends Chunk98597.ZP {
     })
   }
 }
-let k = (0, Chunk146773.B)(M);
+let k = (0, Chunk146773.B)(L);
 
 function G(e) {
   let {
@@ -292,7 +292,7 @@ function G(e) {
     enableActivities: Z,
     resolvedUnreadSetting: g
   }), R = (0, h.ZP)(t);
-  return (0, r.jsx)(k, L(D({}, d, m, e), {
+  return (0, r.jsx)(k, M(D({}, d, m, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
     isSubscriptionGated: S,

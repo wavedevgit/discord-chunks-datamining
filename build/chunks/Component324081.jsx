@@ -1,7 +1,7 @@
 /** Chunk was on 64271 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => A
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -10,11 +10,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk468363 = require("./468363.js"),
   Chunk326255 = require("./326255.js"),
   Chunk956221 = require("./956221.js"),
   Chunk771173 = require("./771173.jsx"),
+  Chunk367907 = require("./367907.js"),
   Chunk43267 = require("./43267.js"),
   Chunk933557 = require("./933557.js"),
   Chunk471445 = require("./471445.js"),
@@ -26,27 +28,60 @@ var Chunk120356 = require("./120356.js"),
   Chunk158776 = require("./158776.js"),
   Chunk306680 = require("./306680.js"),
   Chunk594174 = require("./594174.js"),
+  Chunk259580 = require("./259580.jsx"),
+  Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk888097 = require("./888097.js");
-let I = {
+let w = {
   top: 8,
   bottom: 8,
   left: false,
   right: false
 };
 
-function P(e) {
+function T(e) {
+  let {
+    channelState: t,
+    toggle: n,
+    getNumUnreadChannels: i
+  } = e;
+  return (0, r.jsx)(c.u, {
+    text: N.intl.string(N.t.iTcuma),
+    children: (0, r.jsx)(u.P3F, {
+      className: l()(Z.collapseButton, {
+        [Z.collapsed]: null == t ? true : t.collapsed
+      }),
+      onClick: function() {
+        var e;
+        null != t && null != n && (n(t), (0, g.yw)(P.rMx.INBOX_CHANNEL_COLLAPSED, {
+          channel_id: t.channelId,
+          guild_id: t.guildId,
+          num_unread_channels_remaining: null != (e = null == i ? true : i()) ? e : 0,
+          is_now_collapsed: !t.collapsed
+        }))
+      },
+      children: (0, r.jsx)(I.Z, {
+        width: 16,
+        height: 16
+      })
+    })
+  })
+}
+
+function A(e) {
   var t, n;
   let {
     channel: i,
-    children: l,
-    gotoChannel: a,
-    mentionCount: s,
-    channelState: u,
-    toggleCollapsed: d
-  } = e, f = (0, o.JA)("recents-header-".concat(i.id, "-").concat((0, b.Dt)()));
-  return (0, r.jsx)(c.tEY, {
-    offset: I,
+    children: a,
+    gotoChannel: s,
+    mentionCount: c,
+    channelState: d,
+    toggleCollapsed: f,
+    showCollapseButton: h = false,
+    getNumUnreadChannels: p
+  } = e, g = (0, o.JA)("recents-header-".concat(i.id, "-").concat((0, y.Dt)())), m = h && !i.isNSFW() && null != d && "nsfw" !== d.type;
+  return (0, r.jsx)(u.tEY, {
+    offset: w,
     children: (0, r.jsxs)("div", (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -65,21 +100,27 @@ function P(e) {
       }
       return e
     }({
-      className: S.channelHeader
-    }, f), n = n = {
+      className: l()(Z.channelHeader, {
+        [Z.showCollapseButton]: m
+      })
+    }, g), n = n = {
       tabIndex: 0,
       "data-recents-channel": i.id,
       onKeyDown: function(e) {
-        null != d && null != u && ("ArrowRight" === e.key && u.collapsed || "ArrowLeft" === e.key && !u.collapsed) && (null == d || d(u))
+        null != f && null != d && ("ArrowRight" === e.key && d.collapsed || "ArrowLeft" === e.key && !d.collapsed) && (null == f || f(d))
       },
-      children: [(0, r.jsx)(N, {
+      children: [m && null != d ? (0, r.jsx)(T, {
+        channelState: d,
+        toggle: f,
+        getNumUnreadChannels: p
+      }) : null, (0, r.jsx)(R, {
         channel: i,
-        gotoChannel: a
-      }), (0, r.jsx)(T, {
+        gotoChannel: s
+      }), (0, r.jsx)(L, {
         channel: i,
-        gotoChannel: a,
-        mentionCount: s
-      }), l]
+        gotoChannel: s,
+        mentionCount: c
+      }), a]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -93,30 +134,30 @@ function P(e) {
   })
 }
 
-function N(e) {
+function R(e) {
   let {
     channel: t,
     gotoChannel: n
   } = e;
-  return t.isPrivate() ? (0, r.jsx)(Z, {
+  return t.isPrivate() ? (0, r.jsx)(D, {
     channel: t,
     gotoChannel: n
-  }) : (0, r.jsx)(w, {
+  }) : (0, r.jsx)(M, {
     channel: t,
     gotoChannel: n
   })
 }
 
-function Z(e) {
+function D(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, a.e7)([C.default], () => t.isDM() ? C.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, p.x)(t) : i.getAvatarURL(true, 40);
-  return (0, r.jsx)(c.P3F, {
+  } = e, i = (0, a.e7)([S.default], () => t.isDM() ? S.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, m.x)(t) : i.getAvatarURL(true, 40);
+  return (0, r.jsx)(u.P3F, {
     onClick: n,
     tabIndex: false,
     children: (0, r.jsx)("img", {
-      className: S.dmIcon,
+      className: Z.dmIcon,
       src: l,
       alt: "",
       "aria-hidden": true
@@ -124,71 +165,71 @@ function Z(e) {
   })
 }
 
-function w(e) {
+function M(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id));
-  return null == i ? null : (0, r.jsx)(_.Z, {
+  } = e, i = (0, a.e7)([x.Z], () => x.Z.getGuild(t.guild_id));
+  return null == i ? null : (0, r.jsx)(O.Z, {
     "aria-hidden": true,
-    className: S.guildIcon,
+    className: Z.guildIcon,
     guild: i,
-    size: _.Z.Sizes.MEDIUM,
+    size: O.Z.Sizes.MEDIUM,
     active: true,
     onClick: n,
     tabIndex: false
   })
 }
 
-function T(e) {
+function L(e) {
   let {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), u = (0, a.e7)([O.Z], () => O.Z.getChannel(t.parent_id)), d = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), f = (0, m.KS)(t, o), h = (0, g.ZP)(t, false), p = null == u ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(u.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
+  } = e, o = (0, a.e7)([x.Z], () => x.Z.getGuild(t.guild_id)), c = (0, a.e7)([j.Z], () => j.Z.getChannel(t.parent_id)), d = (0, a.e7)([E.ZP], () => E.ZP.getIsMentionLowImportance(t.id)), f = (0, _.KS)(t, o), h = (0, b.ZP)(t, false), p = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), g = t.isMultiUserDM() ? N.intl.formatToPlainString(N.t.CxSA5N, {
     members: t.recipients.length + 1
-  }) : t.isPrivate() ? (0, r.jsx)(A, {
+  }) : t.isPrivate() ? (0, r.jsx)(k, {
     channel: t
-  }) : (0, r.jsx)(c.P3F, {
-    className: l()(S.subtext, S.guildName),
+  }) : (0, r.jsx)(u.P3F, {
+    className: l()(Z.subtext, Z.guildName),
     onClick: n,
     children: p
   });
   return (0, r.jsxs)("div", {
-    className: S.channelNameSection,
-    children: [(0, r.jsx)(c.Heading, {
+    className: Z.channelNameSection,
+    children: [(0, r.jsx)(u.Heading, {
       variant: "heading-md/semibold",
-      className: S.channelNameHeader,
-      children: (0, r.jsxs)(c.P3F, {
-        className: S.channelName,
+      className: Z.channelNameHeader,
+      children: (0, r.jsxs)(u.P3F, {
+        className: Z.channelName,
         onClick: n,
         children: [t.isThread() || t.isGroupDM() || null == f ? null : (0, r.jsx)(f, {
-          className: t.isForumLikeChannel() ? S.forumIcon : true,
+          className: t.isForumLikeChannel() ? Z.forumIcon : true,
           width: 18,
           height: 18,
           size: "custom",
           color: "currentColor"
         }), (0, r.jsx)("span", {
-          className: S.channelNameSpan,
+          className: Z.channelNameSpan,
           children: h
         }), null != i && i > 0 ? (0, r.jsx)("div", {
-          className: S.badge,
-          children: (0, r.jsx)(c.mAB, {
+          className: Z.badge,
+          children: (0, r.jsx)(u.mAB, {
             count: i,
             color: d ? s.Z.colors.BACKGROUND_ACCENT.css : s.Z.colors.STATUS_DANGER.css
           })
         }) : null]
       })
-    }), (0, r.jsx)(c.Text, {
+    }), (0, r.jsx)(u.Text, {
       color: "text-default",
       variant: "text-xs/normal",
-      className: S.subtextContainer,
-      children: b
+      className: Z.subtextContainer,
+      children: g
     })]
   })
 }
 
-function A(e) {
+function k(e) {
   let {
     channel: t
   } = e, {
@@ -196,34 +237,34 @@ function A(e) {
     status: i,
     activities: l,
     applicationStream: o
-  } = (0, a.cj)([C.default, j.Z, y.Z], () => {
-    let e = C.default.getUser(t.getRecipientId());
+  } = (0, a.cj)([S.default, C.Z, v.Z], () => {
+    let e = S.default.getUser(t.getRecipientId());
     return {
       user: e,
-      status: null != e ? j.Z.getStatus(e.id) : null,
-      activities: null != e ? j.Z.getActivities(e.id) : null,
-      applicationStream: null != e ? y.Z.getAnyStreamForUser(e.id) : null
+      status: null != e ? C.Z.getStatus(e.id) : null,
+      activities: null != e ? C.Z.getActivities(e.id) : null,
+      applicationStream: null != e ? v.Z.getAnyStreamForUser(e.id) : null
     }
   }), {
     voiceActivityStatusEnabled: s
-  } = (0, u.U)({
+  } = (0, d.U)({
     location: "RecentsChannelHeader"
   }), {
     voiceChannel: c
-  } = (0, f.Z)({
+  } = (0, h.Z)({
     userId: null == n ? true : n.id
-  }), p = s ? c : true;
-  return (0, d.Z)({
+  }), u = s ? c : true;
+  return (0, f.Z)({
     activities: l,
     status: i,
     applicationStream: o,
-    voiceChannel: p
-  }) ? (0, r.jsx)(h.Z, {
+    voiceChannel: u
+  }) ? (0, r.jsx)(p.Z, {
     location: "RecentsChannelHeader",
     user: n,
     activities: l,
     applicationStream: o,
-    voiceChannel: p,
+    voiceChannel: u,
     hideTooltip: true
   }) : null
 }

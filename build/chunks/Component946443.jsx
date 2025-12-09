@@ -37,8 +37,8 @@ function S(e) {
     setSeenTutorial: w,
     closePopout: T
   } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
-    loadState: L,
-    channels: M
+    loadState: M,
+    channels: L
   } = R, {
     maybeLoadMore: k
   } = D, G = (0, u.e7)([p.Z], () => p.Z.messageGroupSpacing);
@@ -88,7 +88,7 @@ function S(e) {
     b.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let U = (0, g.Z)("unreads", A);
-  if (0 === M.length) {
+  if (0 === L.length) {
     return (0, r.jsx)(O.Z, {
       Icon: d.xx7,
       header: C.intl.string(C.t["6XMM+D"]),
@@ -140,11 +140,11 @@ function S(e) {
             A.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, l), n = n = {
-          onScroll: L === j.jd.Done ? true : k,
+          onScroll: M === j.jd.Done ? true : k,
           className: o()(E.scroller, "group-spacing-".concat(G)),
           children: [Z ? (0, r.jsx)(I, {
             setSeenTutorial: w
-          }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
+          }) : null, (0, v.Z)(L, D, N), M === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: E.spinner
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
