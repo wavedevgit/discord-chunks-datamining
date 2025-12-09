@@ -90,7 +90,8 @@ let h = (() => {
     logKeyboardMismatches: false,
     alertStartupMetrics: false,
     personaForceFaeFail: false,
-    personaForceIdVerificationFail: false
+    personaForceIdVerificationFail: false,
+    personaDisableModularPilotTestTemplate: false
   },
   b = m({}, E);
 
@@ -181,6 +182,9 @@ class I extends(r = Chunk442837.ZP.Store) {
   }
   get personaForceIdVerificationFail() {
     return b.personaForceIdVerificationFail
+  }
+  get personaDisableModularPilotTestTemplate() {
+    return b.personaDisableModularPilotTestTemplate
   }
   getDebugOptionsHeaderValue() {
     return Object.keys(b).map(e => b[e]), Object.keys(b).filter(e => b[e]).join(",")

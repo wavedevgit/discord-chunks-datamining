@@ -20,10 +20,12 @@ var Chunk120356 = require("./120356.js"),
 function x() {
   let {
     personaForceFaeFail: e,
-    personaForceIdVerificationFail: t
+    personaForceIdVerificationFail: t,
+    personaDisableModularPilotTestTemplate: n
   } = (0, Chunk442837.cj)([Chunk857192.default], () => ({
     personaForceFaeFail: Chunk857192.default.personaForceFaeFail,
-    personaForceIdVerificationFail: Chunk857192.default.personaForceIdVerificationFail
+    personaForceIdVerificationFail: Chunk857192.default.personaForceIdVerificationFail,
+    personaDisableModularPilotTestTemplate: Chunk857192.default.personaDisableModularPilotTestTemplate
   }));
   return (0, Chunk54381.jsxs)("div", {
     className: r()(Chunk451429.panel, Chunk334078.container),
@@ -62,6 +64,13 @@ function x() {
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk334078.contentContainer,
         children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
+          label: "Disable Modular Pilot Test Template",
+          description: "Use actual pilot template (skips age override screen) for Persona age verification testing",
+          checked: require,
+          onChange: e => (0, o.y)({
+            personaDisableModularPilotTestTemplate: e
+          })
+        }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Force FAE to Fail",
           description: "Force Facial Age Estimation to fail for testing with Persona",
           checked: module,
