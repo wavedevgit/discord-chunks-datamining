@@ -39,9 +39,9 @@ let g = {
       }
     }, [m, e, i, f]);
     let {
-      clearError: E
-    } = (0, c.a)(), v = (0, l.k6)(), S = r.useCallback(async (e, t) => {
-      if (E(), e === u.AW.CATALOG) f();
+      clearError: v
+    } = (0, c.a)(), E = (0, l.k6)(), O = r.useCallback(async (e, t) => {
+      if (v(), e === u.AW.CATALOG) f();
       else if ((0, u.RE)(e) && e !== C) {
         let t = g[e];
         null != t ? i(t) : f()
@@ -51,14 +51,14 @@ let g = {
           let e;
           b(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
         }
-        h(n && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e), t && b(u.f7.IN), v.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(e), {
+        h(n && ![u.AW.HOME, u.AW.ORBS].includes(e) ? u.AW.CATALOG : e), t && b(u.f7.IN), E.push(d.Z5c.COLLECTIBLES_SHOP_WITH_TAB(e), {
           shallow: true
         }), b(u.f7.VISIBLE)
       }
-    }, [v, i, n, f, C, E]);
+    }, [E, i, n, f, C, v]);
     return {
       selectedTab: C,
       transitionState: _,
-      transitionToTab: S
+      transitionToTab: O
     }
   }

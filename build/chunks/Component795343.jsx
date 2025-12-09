@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk440617 = require("./440617.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
-let O = {
+let x = {
   flattenProductVariants: true
 };
 
@@ -35,10 +35,10 @@ function y(e) {
     isFetchingCategories: n,
     scrollerRef: i,
     tab: y
-  } = e, k = (0, d.sp)(), T = null != (t = null == k ? true : k.sessionId) ? t : "", {
-    noCache: j,
+  } = e, j = (0, d.sp)(), k = null != (t = null == j ? true : j.sessionId) ? t : "", {
+    noCache: T,
     includeUnpublished: I
-  } = (0, E.Z)(), L = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, v.Z)(), L = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: B,
     currentPage: N,
     totalCount: A,
@@ -56,13 +56,13 @@ function y(e) {
     H = l.useMemo(() => D(R), [D, R]);
   l.useEffect(() => {
     n || (0, C.n)({
-      sessionId: T,
+      sessionId: k,
       checkpoint: C.a.SHOP_RENDERED,
       tab: y,
       unpublishedCategoriesShown: I,
-      cacheDisabled: j
+      cacheDisabled: T
     })
-  }, [T, I, j, n, y]);
+  }, [k, I, T, n, y]);
   let M = l.useRef(null),
     {
       setQueryPageSize: F,
@@ -83,25 +83,25 @@ function y(e) {
     if (null != M.current) return e.observe(M.current), () => e.disconnect()
   }, [F]);
   let Y = l.useCallback(e => {
-    u.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-      collectibles_shop_session_id: null == k ? true : k.sessionId,
-      page_section: null == k ? true : k.pageSection,
-      page_category: null == k ? true : k.pageCategory,
+    u.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      collectibles_shop_session_id: null == j ? true : j.sessionId,
+      page_section: null == j ? true : j.pageSection,
+      page_category: null == j ? true : j.pageCategory,
       page_index: e,
       page_size: U,
       cta_name: "filter results page ".concat(e),
       page_type: "catalog"
     }), W((e - 1) * U)
-  }, [k, U, W]);
+  }, [j, U, W]);
   return (0, r.jsxs)(_.zp.Provider, {
-    value: O,
+    value: x,
     children: [(0, r.jsxs)("div", {
       className: s()({
-        [x.productsEmpty]: K
+        [S.productsEmpty]: K
       }),
-      children: [K && (0, r.jsx)(v.Z, {}), (0, r.jsxs)("div", {
-        className: s()(x.products, {
-          [x.loadIn]: V
+      children: [K && (0, r.jsx)(E.Z, {}), (0, r.jsxs)("div", {
+        className: s()(S.products, {
+          [S.loadIn]: V
         }),
         ref: M,
         children: [G && [...Array(U)].map((e, t) => (0, r.jsx)(b.Z, {}, t)), !G && H.map((e, t) => null == g.Z.getCategory(e.categorySkuId) ? null : (0, r.jsx)(d.k0, {
@@ -110,12 +110,12 @@ function y(e) {
           },
           children: (0, r.jsx)(h.Z, {
             skuId: e.skuId,
-            onClickAnalytics: (0, _.wO)(e, y, k)
+            onClickAnalytics: (0, _.wO)(e, y, j)
           }, e.skuId)
         }, e.skuId))]
       })]
     }), A > U && (0, r.jsx)("div", {
-      className: x.paginationContainer,
+      className: S.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.DsT, {
           currentPage: N,

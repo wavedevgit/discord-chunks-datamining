@@ -43,9 +43,9 @@ let P = e => {
       isFetchingCategories: g,
       tab: b
     } = e, {
-      noCache: j,
+      noCache: T,
       includeUnpublished: B
-    } = (0, E.Z)(), P = (0, m.Pc)("CollectiblesFeedShop") && b === L.AW.ORBS, R = (n = function(e) {
+    } = (0, v.Z)(), P = (0, m.Pc)("CollectiblesFeedShop") && b === L.AW.ORBS, R = (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -82,7 +82,7 @@ let P = e => {
         checkpoint: h.a.SHOP_MOUNTED,
         tab: b,
         unpublishedCategoriesShown: B,
-        cacheDisabled: j
+        cacheDisabled: T
       })
     }, [b]);
     let {
@@ -91,7 +91,7 @@ let P = e => {
       shopBlocks: W,
       refreshShopHome: U
     } = (0, C.E)(b, {
-      noCache: j,
+      noCache: T,
       includeUnpublished: B,
       includeBundles: true,
       logPerf: true
@@ -107,23 +107,23 @@ let P = e => {
         checkpoint: h.a.SHOP_RENDERED,
         tab: b,
         unpublishedCategoriesShown: B,
-        cacheDisabled: j
+        cacheDisabled: T
       })
-    }, [F, M, W.length, B, j, H, b]), null != F) ? (0, r.jsx)(_.Z, {
+    }, [F, M, W.length, B, T, H, b]), null != F) ? (0, r.jsx)(_.Z, {
       onRetry: V,
       errorOrigin: _.i.SHOP_PAGE,
       errorMessage: F.message
     }) : M || 0 === W.length ? (0, r.jsxs)("div", {
       className: s()(A.loadingContainer, A.feedContent),
-      children: [(0, r.jsx)(O.Z, {
+      children: [(0, r.jsx)(x.Z, {
         isLoading: M,
         handleTransition: c,
         tab: b
-      }), (0, r.jsx)(S.Z, {
+      }), (0, r.jsx)(O.Z, {
         isLoading: M,
         handleTransition: c,
         categories: []
-      }), (0, r.jsx)(x.Z, {
+      }), (0, r.jsx)(S.Z, {
         isLoading: M,
         title: b === L.AW.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
         numVisibleItems: u,
@@ -136,7 +136,7 @@ let P = e => {
           i = false;
         switch (e.type) {
           case o.z.HERO:
-            l = (0, r.jsx)(O.Z, {
+            l = (0, r.jsx)(x.Z, {
               isLoading: M,
               handleTransition: c,
               heroBlock: P ? R : e,
@@ -144,7 +144,7 @@ let P = e => {
             }, n);
             break;
           case o.z.FEATURED:
-            l = (0, r.jsx)(S.Z, {
+            l = (0, r.jsx)(O.Z, {
               isLoading: M,
               handleTransition: c,
               featuredBlockRecord: e
@@ -152,7 +152,7 @@ let P = e => {
             break;
           case o.z.FEED:
             let f = e.sortedSkuIds;
-            l = (0, r.jsx)(x.Z, {
+            l = (0, r.jsx)(S.Z, {
               title: b === L.AW.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
               isLoading: M || g,
               numVisibleItems: u,
@@ -178,14 +178,14 @@ let P = e => {
             }, n);
             break;
           case o.z.SHELF:
-            l = (0, r.jsx)(T.Z, {
+            l = (0, r.jsx)(k.Z, {
               handleTransition: c,
               shelf: e,
               tab: b
             }, n);
             break;
           case o.z.COUNTDOWN_TIMER:
-            l = (0, r.jsx)(v.J, {
+            l = (0, r.jsx)(E.J, {
               countdownTimerBlock: e,
               isVisible: Z
             }, n), i = true;
@@ -197,7 +197,7 @@ let P = e => {
             }, n);
             break;
           case o.z.REWARD_HERO:
-            l = (0, r.jsx)(k.Z, {
+            l = (0, r.jsx)(j.Z, {
               isLoading: M,
               handleTransition: c,
               heroBlock: e,
@@ -274,10 +274,10 @@ let P = e => {
               fullWidth: true
             })]
           })]
-        }), (0, r.jsx)(j.Z, {
+        }), (0, r.jsx)(T.Z, {
           peaking: C,
           transitioning: i === L.f7.OUT
-        }), (0, r.jsx)(j.Z, {
+        }), (0, r.jsx)(T.Z, {
           style: {
             left: 1850
           },

@@ -2,7 +2,7 @@
 /** chunk id: 98535, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js");
 let b = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
 
-function E(e) {
+function v(e) {
   let {
     tab: t,
     sortedCategories: n,
@@ -30,18 +30,18 @@ function E(e) {
     transitionState: a,
     updateAnalyticsState: c,
     refreshCategories: u
-  } = e, m = v();
-  S(m);
-  let E = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
-    [x, O] = l.useState(true),
-    [y, k] = l.useState(true),
-    T = l.useMemo(() => n.filter(e => !_.y8.some(t => {
+  } = e, m = E();
+  O(m);
+  let v = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
+    [S, x] = l.useState(true),
+    [y, j] = l.useState(true),
+    k = l.useMemo(() => n.filter(e => !_.y8.some(t => {
       let {
         categorySkuId: n
       } = t;
       return n === e.skuId
     })), [n]),
-    j = l.useCallback(e => {
+    T = l.useCallback(e => {
       let {
         sourceButton: t,
         categorySkuId: n,
@@ -50,10 +50,10 @@ function E(e) {
         isOrbsExclusive: i
       } = e;
       c(t, n);
-      let s = r && !E,
+      let s = r && !v,
         a = i ? _.AW.ORBS : _.AW.CATALOG;
-      O(n), k(!l), o(a, s)
-    }, [E, o, c]),
+      x(n), j(!l), o(a, s)
+    }, [v, o, c]),
     I = (0, d.FF)("CollectiblesContent"),
     {
       searchError: L
@@ -63,21 +63,21 @@ function E(e) {
     errorMessage: m,
     errorOrigin: p.i.SHOP_PAGE
   }) : b.includes(t) ? (0, r.jsx)(C.Z, {
-    handleTransition: j,
+    handleTransition: T,
     tab: t,
     transitionState: a
   }) : (0, r.jsx)(f.Z, {
     tab: t,
-    sortedCategories: T,
-    initialCategoryId: x,
+    sortedCategories: k,
+    initialCategoryId: S,
     showFilterInitially: y,
     onUnmount: () => {
-      O(true), k(true)
+      x(true), j(true)
     }
   })
 }
-let v = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
-  S = e => {
+let E = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
+  O = e => {
     let t = (0, i.e7)([o.default], () => o.default.getCurrentUser()),
       {
         noCache: n,

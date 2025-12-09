@@ -24,7 +24,7 @@ function m(e) {
   } = e, {
     searchQuery: m,
     onSetSearchQuery: C
-  } = (0, u.S)(), [h, _] = l.useState(""), b = (0, c.sp)(), E = (0, i.e7)([o.default], () => o.default.locale);
+  } = (0, u.S)(), [h, _] = l.useState(""), b = (0, c.sp)(), v = (0, i.e7)([o.default], () => o.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
       C(h)
@@ -64,7 +64,7 @@ function m(e) {
           page_type: n
         })
       },
-      placeholder: "en-US" === E ? f.intl.string(f.t.arz34K) : f.intl.string(f.t["hIt/Nm"])
+      placeholder: "en-US" === v ? f.intl.string(f.t.arz34K) : f.intl.string(f.t["hIt/Nm"])
     })
   })
 }

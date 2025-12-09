@@ -15,10 +15,12 @@ var Chunk442837 = require("./442837.js"),
 function d(e) {
   let {
     location: t,
-    channel: n
+    channelId: n
   } = e, d = (0, s.cZ)({
     location: t
-  }), [p] = (0, i.e7)([l.Z], () => [l.Z.getParticipants(n.id), l.Z.getParticipantsVersion(n.id)], [n.id], r.Lc), h = (0, i.e7)([o.Z], () => {
+  }), [p] = (0, i.e7)([l.Z], () => null != n ? [l.Z.getParticipants(n), l.Z.getParticipantsVersion(n)] : [
+    [], 0
+  ], [n], r.Lc), h = (0, i.e7)([o.Z], () => {
     for (let e of p)
       if ((0, u.Io)(e) || (0, u._5)(e)) {
         for (let t of o.Z.getActivities(e.user.id))

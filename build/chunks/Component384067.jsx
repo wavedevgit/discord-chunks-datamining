@@ -30,8 +30,8 @@ let y = e => {
   var t, n, i;
   let {
     wideBannerBlock: y,
-    tab: k
-  } = e, T = C.Z.getCategoryByStoreListingId(y.categoryStoreListingId), j = l.useRef(null), I = l.useRef(null), [L, B] = l.useState(), [N, A] = l.useState(false);
+    tab: j
+  } = e, k = C.Z.getCategoryByStoreListingId(y.categoryStoreListingId), T = l.useRef(null), I = l.useRef(null), [L, B] = l.useState(), [N, A] = l.useState(false);
   l.useEffect(() => {
     let e = I.current;
     if (null == e) return;
@@ -42,7 +42,7 @@ let y = e => {
       e.onload = null
     }
   }, []);
-  let P = null != (t = null == T ? true : T.skuId) ? t : "",
+  let P = null != (t = null == k ? true : k.skuId) ? t : "",
     {
       handleCardVisibilityChange: R
     } = (0, h.E)(P, "home", "marketing wide banner"),
@@ -50,7 +50,7 @@ let y = e => {
     {
       bannerURL: w
     } = (0, _.UI)(y),
-    D = k === b.AW.ORBS,
+    D = j === b.AW.ORBS,
     H = null != y.ctaRoute && "" !== y.ctaRoute,
     M = true !== y.disableCta && (null != y.ctaText && "" !== y.ctaText || H),
     F = null != y.logoURL && "" !== y.logoURL,
@@ -59,22 +59,22 @@ let y = e => {
         var e;
         let t = null != (e = y.dismissibleContentVersion) ? e : 0;
         (0, u.wH)(o.z.COLLECTIBLES_SHOP_WIDE_BANNER, t, {
-          dismissAction: v.L.USER_DISMISS
+          dismissAction: E.L.USER_DISMISS
         })
       }
     }, [y.isDismissible, y.dismissibleContentVersion]),
     U = l.useCallback(e => {
-      f.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      f.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == Z ? true : Z.sessionId,
         sku_id: P,
-        page_type: k,
+        page_type: j,
         page_section: null == Z ? true : Z.pageSection,
         page_category: null == Z ? true : Z.pageCategory,
         tile_type: "WIDE_BANNER",
         tile_position: String(null == Z ? true : Z.tilePosition),
         cta_name: e
       })
-    }, [Z, P, k]),
+    }, [Z, P, j]),
     V = l.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null;
       if (U(e), null != y.ctaRoute && "" !== y.ctaRoute) {
@@ -93,23 +93,23 @@ let y = e => {
       }
     }, [y.ctaRoute, U]);
   if (null == w || N) return null;
-  let z = s()(O.row, O.between, O.bannerBlockContainer, O.centeredSection, {
-      [O.extraRounded]: D,
-      [O.bannerBlockContainerClickable]: H
+  let z = s()(x.row, x.between, x.bannerBlockContainer, x.centeredSection, {
+      [x.extraRounded]: D,
+      [x.bannerBlockContainerClickable]: H
     }),
     G = (0, r.jsxs)(r.Fragment, {
       children: [y.isDismissible && (0, r.jsx)("div", {
-        className: O.wideBannerCloseButton,
+        className: x.wideBannerCloseButton,
         children: (0, r.jsx)(c.PZ7, {
           size: "sm",
           onClick: e => {
             e.stopPropagation(), W()
           },
-          "aria-label": x.intl.string(x.t.WAI6xu)
+          "aria-label": S.intl.string(S.t.WAI6xu)
         })
       }), (0, r.jsx)("div", {
-        className: s()(O.wideBannerBackgroundImg, {
-          [O.extraRounded]: D
+        className: s()(x.wideBannerBackgroundImg, {
+          [x.extraRounded]: D
         }),
         style: null != L ? {
           height: "".concat(L, "px")
@@ -118,24 +118,24 @@ let y = e => {
           ref: I,
           src: w,
           alt: y.title,
-          className: s()(O.wideBannerArt, {
-            [O.wideBannerArtOrbs]: D
+          className: s()(x.wideBannerArt, {
+            [x.wideBannerArtOrbs]: D
           })
         })
       }), (0, r.jsx)("div", {
-        className: s()(O.wideBannerContentContainer, {
-          [O.wideBannerWithCTAContentContainer]: M
+        className: s()(x.wideBannerContentContainer, {
+          [x.wideBannerWithCTAContentContainer]: M
         }),
         style: {
           maxHeight: null != L ? "".concat(L, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
-          className: O.wideBannerTextContainer,
+          className: x.wideBannerTextContainer,
           children: [(0, r.jsx)(c.Heading, {
             style: {
               color: null != (n = y.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: D ? O.wideBannerOrbsHeading : true,
+            className: D ? x.wideBannerOrbsHeading : true,
             variant: "heading-xl/bold",
             children: y.title
           }), (0, r.jsx)(c.Text, {
@@ -144,40 +144,40 @@ let y = e => {
             },
             lineClamp: 2,
             variant: D ? "text-md/medium" : "text-sm/medium",
-            children: D ? x.intl.format(x.t.SFFP7K, {
-              helpdeskArticle: p.Z.getArticleURL(E.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
+            children: D ? S.intl.format(S.t.SFFP7K, {
+              helpdeskArticle: p.Z.getArticleURL(v.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : y.body
           }), M && (0, r.jsxs)("div", {
-            className: O.wideBannerCtaContainer,
+            className: x.wideBannerCtaContainer,
             children: [(0, r.jsx)(c.Button, {
               variant: "overlay-primary",
               onClick: e => {
                 var t;
-                e.stopPropagation(), V(null != (t = y.ctaText) ? t : x.intl.string(x.t.jVcuVY))
+                e.stopPropagation(), V(null != (t = y.ctaText) ? t : S.intl.string(S.t.jVcuVY))
               },
-              text: null != (i = y.ctaText) ? i : x.intl.string(x.t.jVcuVY)
+              text: null != (i = y.ctaText) ? i : S.intl.string(S.t.jVcuVY)
             }), F && (0, r.jsx)("img", {
               src: y.logoURL,
               alt: "",
-              className: O.wideBannerLogo
+              className: x.wideBannerLogo
             })]
           })]
         })
       })]
     });
   return (0, r.jsx)(c.f6W, {
-    theme: D ? true : S.BR.DARK,
+    theme: D ? true : O.BR.DARK,
     children: e => (0, r.jsx)(a.$, {
-      innerRef: j,
+      innerRef: T,
       onChange: R,
       threshold: 0,
       children: H ? (0, r.jsx)(c.P3F, {
-        innerRef: j,
+        innerRef: T,
         onClick: () => V(null),
         className: s()(e, z),
         children: G
       }) : (0, r.jsx)("div", {
-        ref: j,
+        ref: T,
         className: s()(e, z),
         children: G
       })

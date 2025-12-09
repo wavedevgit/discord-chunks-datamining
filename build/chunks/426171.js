@@ -2,9 +2,9 @@
 /** chunk id: 426171, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Kp: () => v,
-  u9: () => E,
-  xV: () => S
+  Kp: () => E,
+  u9: () => v,
+  xV: () => O
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk828700 = require("./828700.js"),
@@ -23,7 +23,7 @@ var Chunk473749 = require("./473749.js"),
 let h = "".concat("#").concat("itemSkuId", "="),
   _ = new RegExp("^".concat(h, "(\\d+)$")),
   b = [Chunk981631.Z5c.COLLECTIBLES_SHOP],
-  E = e => {
+  v = e => {
     let t = (0, l.TH)();
     r.useEffect(() => {
       if (null != e && b.includes(t.pathname)) return () => {
@@ -31,7 +31,7 @@ let h = "".concat("#").concat("itemSkuId", "="),
       }
     }, [e, t.pathname])
   },
-  v = () => {
+  E = () => {
     let e = (0, Chunk258939.R)(),
       t = Chunk473749.useRef(null),
       n = (0, Chunk828700.TH)(),
@@ -44,11 +44,11 @@ let h = "".concat("#").concat("itemSkuId", "="),
       let e = _.exec(require.hash);
       null != module ? exports.current = module[1] : exports.current = null
     }, [b, require.hash]);
-    let E = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
+    let v = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
     Chunk473749.useEffect(() => {
       if (module) return;
       let n = null;
-      if (null != E ? n = E : null != exports.current && (n = exports.current), null != require) {
+      if (null != v ? n = v : null != exports.current && (n = exports.current), null != require) {
         let e = setTimeout(() => {
           (e => {
             let {
@@ -89,9 +89,9 @@ let h = "".concat("#").concat("itemSkuId", "="),
         }, 250);
         return () => clearTimeout(module)
       }
-    }, [h, Chunk607070, module, E, b])
+    }, [h, Chunk607070, module, v, b])
   },
-  S = e => {
+  O = e => {
     let t = r.useRef({}),
       n = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
       l = (0, i.e7)([c.Z], () => c.Z.isFetchingCategories),

@@ -22,24 +22,24 @@ let m = e => {
     category: h,
     subblock: _,
     badgeText: b,
-    handleTransition: E
+    handleTransition: v
   } = e;
   null != _ && (C = null == (t = c.Z.getCategoryByStoreListingId(null == _ ? true : _.categoryStoreListingId)) ? true : t.skuId);
-  let v = null != (n = null != C ? C : null == h ? true : h.skuId) ? n : "",
+  let E = null != (n = null != C ? C : null == h ? true : h.skuId) ? n : "",
     {
-      handleCardVisibilityChange: S
-    } = (0, u.E)(v, "home", "marketing featured block"),
-    x = (0, d.YG)(h, _),
-    O = l.useRef(null),
+      handleCardVisibilityChange: O
+    } = (0, u.E)(E, "home", "marketing featured block"),
+    S = (0, d.YG)(h, _),
+    x = l.useRef(null),
     y = null == _ ? true : _.bodyText,
-    k = (0, a.sp)();
+    j = (0, a.sp)();
   return (0, r.jsx)(i.$, {
-    innerRef: O,
-    onChange: S,
+    innerRef: x,
+    onChange: O,
     threshold: 0,
     children: (0, r.jsxs)(s.P3F, {
       className: p.featuredBlock,
-      innerRef: O,
+      innerRef: x,
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -57,23 +57,23 @@ let m = e => {
           })
         }
         return e
-      }({}, null != x && {
-        backgroundImage: "url(".concat(x, ")")
+      }({}, null != S && {
+        backgroundImage: "url(".concat(S, ")")
       }),
       onClick: () => {
-        E({
+        v({
           sourceButton: "shop marketing tile",
-          categorySkuId: v,
+          categorySkuId: E,
           isInternalShopDeeplink: true,
           isOrbsExclusive: null == h ? true : h.isOrbsExclusive
         }), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == k ? true : k.sessionId,
-          sku_id: v,
+          collectibles_shop_session_id: null == j ? true : j.sessionId,
+          sku_id: E,
           page_type: "home",
-          page_section: null == k ? true : k.pageSection,
-          page_category: null == k ? true : k.pageCategory,
+          page_section: null == j ? true : j.pageSection,
+          page_category: null == j ? true : j.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == k ? true : k.tilePosition),
+          tile_position: String(null == j ? true : j.tilePosition),
           cta_name: null
         })
       },
@@ -98,19 +98,19 @@ let m = e => {
           variant: "overlay-primary",
           text: f.intl.string(f.t.jVcuVY),
           onClick: e => {
-            E({
+            v({
               sourceButton: "shop marketing take me there button",
-              categorySkuId: v,
+              categorySkuId: E,
               isInternalShopDeeplink: true,
               isOrbsExclusive: null == h ? true : h.isOrbsExclusive
             }), e.stopPropagation(), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == k ? true : k.sessionId,
-              sku_id: v,
+              collectibles_shop_session_id: null == j ? true : j.sessionId,
+              sku_id: E,
               page_type: "home",
-              page_section: null == k ? true : k.pageSection,
-              page_category: null == k ? true : k.pageCategory,
+              page_section: null == j ? true : j.pageSection,
+              page_category: null == j ? true : j.pageCategory,
               tile_type: "FEATURED_BLOCK",
-              tile_position: String(null == k ? true : k.tilePosition),
+              tile_position: String(null == j ? true : j.tilePosition),
               cta_name: "Take me there button"
             })
           }

@@ -297,6 +297,7 @@ let eu = (e, t) => {
       columnCounts: tr
     } = (0, Y.YH)({
       gridWidth: e9,
+      fallbackGuildId: eH,
       channel: c,
       includeCreateEmojiButton: et,
       pickerIntention: l,
@@ -325,6 +326,7 @@ let eu = (e, t) => {
       to = (0, Y.rf)({
         pickerIntention: l,
         selectedChannel: c,
+        fallbackGuildId: eH,
         closePopout: _,
         onSelectEmoji: er,
         setUpsellConfigs: eU,
@@ -519,6 +521,7 @@ let eu = (e, t) => {
           sectionDescriptors: tt,
           intention: l,
           channel: c,
+          fallbackGuildId: eH,
           shouldShowSoundmojiInEmojiPicker: eP,
           showOnlyUnicode: eR
         })]

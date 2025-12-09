@@ -456,7 +456,7 @@ let eA = function(e) {
     var e;
     return (null != (e = null == L ? true : L.channelId) ? e : el.Z.getVoiceChannelId()) === n.id
   }), G = (0, F.Z)({
-    channel: n,
+    channelId: n.id,
     location: "center-control-tray"
   }), z = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()), {
     reachedLimit: q,

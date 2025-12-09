@@ -2,7 +2,7 @@
 /** chunk id: 373183, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,58 +27,58 @@ var Chunk54381 = require("./54381.js"),
   Chunk250967 = require("./250967.js"),
   Chunk182975 = require("./182975.js"),
   Chunk655603 = require("./655603.js");
-let k = Chunk473749.memo(function(e) {
+let j = Chunk473749.memo(function(e) {
   let {
     category: t,
     rewardSkuId: n
   } = e, {
     handleCardVisibilityChange: i
-  } = (0, h.E)(n), k = l.useRef(null), {
-    isHoveringOrFocusing: T
-  } = (0, g.Z)(k), {
-    readyToClaim: j,
+  } = (0, h.E)(n), j = l.useRef(null), {
+    isHoveringOrFocusing: k
+  } = (0, g.Z)(j), {
+    readyToClaim: T,
     collectibleProductSkuIds: I,
     collectedSkuIds: L
   } = (0, b.q)(t, n), B = (0, a.e7)([C.Z], () => C.Z.isClaiming === n);
   return (0, r.jsx)(c.$, {
     onChange: i,
     threshold: 0,
-    innerRef: k,
+    innerRef: j,
     children: (0, r.jsx)("div", {
-      ref: k,
-      className: s()(v.productCardContainer, S.defaultCursor, {
-        [v.hovered]: T
+      ref: j,
+      className: s()(E.productCardContainer, O.defaultCursor, {
+        [E.hovered]: k
       }),
-      "aria-label": E.intl.formatToPlainString(E.t.Ez6aHE, {
+      "aria-label": v.intl.formatToPlainString(v.t.Ez6aHE, {
         category: t.name
       }),
       children: (0, r.jsxs)("div", {
-        className: v.productCardContentContainer,
+        className: E.productCardContentContainer,
         children: [(0, r.jsx)("img", {
           alt: "Reward Bow",
           src: y.Z,
-          className: S.rewardImage
+          className: O.rewardImage
         }), (0, r.jsx)("div", {
-          className: v.headerContainer,
+          className: E.headerContainer,
           children: (0, r.jsx)(d.IGR, {
-            text: E.intl.string(E.t.rykAJ9),
+            text: v.intl.string(v.t.rykAJ9),
             disableColor: true,
-            className: S.unlockRewardBadge
+            className: O.unlockRewardBadge
           })
         }), (0, r.jsxs)("div", {
-          className: v.footerContainer,
+          className: E.footerContainer,
           children: [(0, r.jsxs)("div", {
-            className: S.footerInfoContainer,
+            className: O.footerInfoContainer,
             children: [(0, r.jsxs)("div", {
-              className: S.footerInfo,
+              className: O.footerInfo,
               children: [(0, r.jsx)(d.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
                 lineClamp: 1,
-                className: v.productName,
-                children: E.intl.string(E.t["0mDmg/"])
+                className: E.productName,
+                children: v.intl.string(v.t["0mDmg/"])
               }), (0, r.jsx)(u.u, {
-                text: j ? E.intl.string(E.t.cKH3tk) : E.intl.formatToPlainString(E.t["8aMDPc"], {
+                text: T ? v.intl.string(v.t.cKH3tk) : v.intl.formatToPlainString(v.t["8aMDPc"], {
                   totalCount: I.length
                 }),
                 align: "right",
@@ -88,32 +88,32 @@ let k = Chunk473749.memo(function(e) {
                 },
                 position: "top",
                 children: (0, r.jsx)("span", {
-                  className: S.questionIconContainer,
+                  className: O.questionIconContainer,
                   children: (0, r.jsx)(o.idN, {
                     size: "xs"
                   })
                 })
               })]
             }), (0, r.jsx)("div", {
-              className: v.footerInfoShrinkOnHover,
+              className: E.footerInfoShrinkOnHover,
               "aria-hidden": true,
               children: (0, r.jsxs)("div", {
-                className: S.progressContainer,
+                className: O.progressContainer,
                 children: [(0, r.jsx)(f.Z, {
                   variant: f.y.BLUE,
                   progress: L.length,
                   maximum: I.length
                 }), (0, r.jsxs)("div", {
-                  className: s()(S.progressTextContainer, {
-                    [S.readyToClaimText]: j
+                  className: s()(O.progressTextContainer, {
+                    [O.readyToClaimText]: T
                   }),
-                  children: [j ? (0, r.jsx)(o.kmB, {
+                  children: [T ? (0, r.jsx)(o.kmB, {
                     size: "xs",
                     color: "currentColor"
                   }) : null, (0, r.jsx)(o.xvT, {
                     variant: "text-xs/medium",
                     color: "currentColor",
-                    children: E.intl.formatToPlainString(E.t["5TwASM"], {
+                    children: v.intl.formatToPlainString(v.t["5TwASM"], {
                       collectedCount: L.length,
                       totalCount: I.length
                     })
@@ -122,23 +122,23 @@ let k = Chunk473749.memo(function(e) {
               })
             })]
           }), (0, r.jsx)("div", {
-            className: v.footerButtonContainer,
+            className: E.footerButtonContainer,
             children: (0, r.jsx)(o.hE2, {
               wrap: false,
-              className: v.footerButtonGroup,
+              className: E.footerButtonGroup,
               fullWidth: true,
               children: (0, r.jsx)(o.zxk, {
                 variant: "primary",
                 onClick: e => {
-                  e.stopPropagation(), j && (0, p.wW)(t.skuId, n).then(() => {
+                  e.stopPropagation(), T && (0, p.wW)(t.skuId, n).then(() => {
                     let e = m.Z.getProduct(n);
                     null != e && (0, _.Z)({
                       product: e,
                       analyticsLocations: [],
                       overrideGraphic: {
                         type: "video",
-                        src: O.Z,
-                        fallbackImageSrc: x.Z,
+                        src: x.Z,
+                        fallbackImageSrc: S.Z,
                         loop: true,
                         loopAt: 6,
                         aspectRatio: "16/9"
@@ -149,21 +149,21 @@ let k = Chunk473749.memo(function(e) {
                       transitionState: e.transitionState,
                       onClose: e.onClose,
                       size: "sm",
-                      title: E.intl.string(E.t.SRTlyA),
+                      title: v.intl.string(v.t.SRTlyA),
                       actions: [{
-                        text: E.intl.string(E.t.TyCVIq),
+                        text: v.intl.string(v.t.TyCVIq),
                         onClick: e.onClose,
                         variant: "primary"
                       }],
                       children: (0, r.jsx)("div", {
-                        children: E.intl.string(E.t["0YpIF/"])
+                        children: v.intl.string(v.t["0YpIF/"])
                       })
                     })))
                   })
                 },
-                text: E.intl.string(E.t.VnVTNc),
+                text: v.intl.string(v.t.VnVTNc),
                 fullWidth: true,
-                disabled: !j,
+                disabled: !T,
                 loading: B
               })
             })

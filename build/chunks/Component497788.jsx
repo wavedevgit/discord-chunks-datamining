@@ -2,7 +2,7 @@
 /** chunk id: 497788, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,17 +22,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk619899 = require("./619899.js"),
   Chunk911390 = require("./911390.js"),
   Chunk215023 = require("./215023.js");
-let v = e => {
+let E = e => {
   let {
     isBlockLoading: t = false,
     heroBlock: n,
-    tab: v
-  } = e, S = (0, o.sp)(), {
-    hasPromoUpsell: x
+    tab: E
+  } = e, O = (0, o.sp)(), {
+    hasPromoUpsell: S
   } = u.Z.useConfig({
     location: "RewardHeroBlockCards"
-  }), O = l.useMemo(() => a.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), y = (0, i.e7)([c.Z], () => c.Z.getPurchase(n.rewardSkuId)), {
-    products: k
+  }), x = l.useMemo(() => a.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), y = (0, i.e7)([c.Z], () => c.Z.getPurchase(n.rewardSkuId)), {
+    products: j
   } = ((e, t, n) => {
     let r = (0, h.Z)(),
       s = (0, i.e7)([a.Z], () => a.Z.products),
@@ -42,28 +42,28 @@ let v = e => {
     return {
       products: (0, _.St)(u)
     }
-  })(t, n, y), T = l.useMemo(() => !t && 0 !== n.rankedSkuIds.length && !(k.length > 0) && n.rankedSkuIds.every(e => {
+  })(t, n, y), k = l.useMemo(() => !t && 0 !== n.rankedSkuIds.length && !(j.length > 0) && n.rankedSkuIds.every(e => {
     var t;
     return (null == (t = a.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-  }), [t, n.rankedSkuIds, k.length]), j = t || T, {
+  }), [t, n.rankedSkuIds, j.length]), T = t || k, {
     readyToClaim: I
-  } = (0, b.q)(O, n.rewardSkuId), L = null == y && null != n.rewardSkuId && null != O;
+  } = (0, b.q)(x, n.rewardSkuId), L = null == y && null != n.rewardSkuId && null != x;
   return (0, r.jsx)(s.Z, {
     gap: "xl",
-    children: j ? (0, r.jsx)(r.Fragment, {
+    children: T ? (0, r.jsx)(r.Fragment, {
       children: [true, true, true, true, true].map((e, t) => (0, r.jsx)(m.Z, {}, t))
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [L && !!(x || I) && (0, r.jsx)(o.k0, {
+      children: [L && !!(S || I) && (0, r.jsx)(o.k0, {
         newValue: {
           tilePosition: 0,
           pageSection: "top 4",
           categoryPosition: 0
         },
         children: (0, r.jsx)(C.Z, {
-          category: O,
+          category: x,
           rewardSkuId: n.rewardSkuId
         })
-      }, n.rewardSkuId), k.map((e, t) => {
+      }, n.rewardSkuId), j.map((e, t) => {
         let n = a.Z.getCategoryForProduct(e.skuId);
         return null == e || null == n ? null : (0, r.jsx)(o.k0, {
           newValue: {
@@ -73,8 +73,8 @@ let v = e => {
           },
           children: (0, r.jsx)(f.Z, {
             skuId: null == e ? true : e.skuId,
-            prioritizedCurrency: v === E.AW.ORBS ? p.tA.ORBS : true,
-            onClickAnalytics: (0, p.wO)(e, v, S)
+            prioritizedCurrency: E === v.AW.ORBS ? p.tA.ORBS : true,
+            onClickAnalytics: (0, p.wO)(e, E, O)
           }, e.skuId)
         }, null == e ? true : e.skuId)
       })]

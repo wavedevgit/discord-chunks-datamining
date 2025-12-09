@@ -24,7 +24,7 @@ let _ = e => {
     shelf: t,
     handleTransition: n,
     tab: i
-  } = e, _ = (0, o.e7)([c.default], () => c.default.getCurrentUser()), b = (0, o.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), E = (0, u.sp)(), v = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), S = (0, g.l)(v).slice(0, 4);
+  } = e, _ = (0, o.e7)([c.default], () => c.default.getCurrentUser()), b = (0, o.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), v = (0, u.sp)(), E = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), O = (0, g.l)(E).slice(0, 4);
   return null == _ ? null : (0, r.jsxs)("div", {
     className: s()(h.shelfBlockContainer, h.centeredSection),
     children: [(0, r.jsxs)("div", {
@@ -49,7 +49,7 @@ let _ = e => {
     }), (0, r.jsx)("div", {
       className: h.feed,
       children: (0, r.jsx)(r.Fragment, {
-        children: S.map((e, n) => {
+        children: O.map((e, n) => {
           if (null == d.Z.getCategoryForProduct(e.skuId) || null == e) return null;
           let l = e.skuId;
           return (0, r.jsx)(u.k0, {
@@ -61,7 +61,7 @@ let _ = e => {
             children: (0, r.jsx)(f.Z, {
               skuId: l,
               prioritizedCurrency: i === m.AW.ORBS ? p.tA.ORBS : true,
-              onClickAnalytics: (0, p.wO)(e, i, E)
+              onClickAnalytics: (0, p.wO)(e, i, v)
             }, l)
           }, l)
         })

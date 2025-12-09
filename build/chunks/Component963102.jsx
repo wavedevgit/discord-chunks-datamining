@@ -80,7 +80,7 @@ function B(e) {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(x.Z, {
+        return (0, r.jsx)(S.Z, {
           handleTransition: o,
           onClose: t
         })
@@ -144,38 +144,38 @@ function N(e) {
   let {
     selectedTab: t,
     handleTransition: n
-  } = e, i = (0, u.ZP)(), d = (0, a.e7)([E.default], () => E.default.getCurrentUser()), {
+  } = e, i = (0, u.ZP)(), d = (0, a.e7)([v.default], () => v.default.getCurrentUser()), {
     enabled: g
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
-  }), x = (0, m.Y)({
+  }), S = (0, m.Y)({
     location: "CollectiblesShopHeaderBar"
   }), N = [{
     tab: y.AW.HOME,
-    displayText: j.intl.string(j.t.ijDDwz)
+    displayText: T.intl.string(T.t.ijDDwz)
   }, {
     tab: y.AW.CATALOG,
-    displayText: j.intl.string(j.t.Ah5sJo)
+    displayText: T.intl.string(T.t.Ah5sJo)
   }];
   g && N.push({
     tab: y.AW.ORBS,
-    displayText: j.intl.string(j.t.EBYkzk)
+    displayText: T.intl.string(T.t.EBYkzk)
   });
-  let A = t === y.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
+  let A = t === y.AW.ORBS ? j.ZY5.SHOP_ORBS_TAB : j.ZY5.COLLECTIBLES_SHOP,
     P = l.useCallback(() => {
       (0, h.Y)({
         pageType: A,
-        sectionType: k.jXE.ORBS_BALANCE_MENU,
-        ctaObject: k.qAy.CTA_TO_QUEST_HOME
+        sectionType: j.jXE.ORBS_BALANCE_MENU,
+        ctaObject: j.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
         fromContent: o.j.ORBS_BALANCE_MENU
       })
     }, [A]),
-    R = (0, S.eN)("collectibles_shop_header_bar"),
+    R = (0, O.eN)("collectibles_shop_header_bar"),
     Z = l.useCallback(() => {
       (null == d ? true : d.id) != null && (0, C.openUserProfileModal)({
         userId: d.id,
-        section: T.oh.WISHLIST,
+        section: k.oh.WISHLIST,
         showGuildProfile: false
       })
     }, [null == d ? true : d.id]);
@@ -188,11 +188,11 @@ function N(e) {
       children: [(0, r.jsxs)(c.P3F, {
         className: I.shopHomeLink,
         onClick: () => n(y.AW.HOME),
-        "aria-label": j.intl.string(j.t.pWG4ze) + " home",
-        children: [(0, r.jsx)(v.Z, {
+        "aria-label": T.intl.string(T.t.pWG4ze) + " home",
+        children: [(0, r.jsx)(E.Z, {
           className: I.discordLogo
         }), (0, r.jsx)(f.Z.Title, {
-          children: j.intl.string(j.t.pWG4ze)
+          children: T.intl.string(T.t.pWG4ze)
         })]
       }), (0, r.jsx)("div", {
         className: I.tabs,
@@ -213,15 +213,15 @@ function N(e) {
             handleTransition: n
           }, l)
         })
-      }), (g || R || x) && (0, r.jsxs)("div", {
+      }), (g || R || S) && (0, r.jsxs)("div", {
         className: I.alignedRightContent,
-        children: [R && (0, r.jsx)(O.Z, {
+        children: [R && (0, r.jsx)(x.Z, {
           handleTransition: n,
           selectedTab: t
-        }), x && (0, r.jsx)(c.P3F, {
+        }), S && (0, r.jsx)(c.P3F, {
           className: I.wishlistButton,
           onClick: Z,
-          "aria-label": j.intl.string(j.t["7lZ31J"]),
+          "aria-label": T.intl.string(T.t["7lZ31J"]),
           children: (0, r.jsx)(c.h_8, {
             size: "xs",
             color: "currentColor"
@@ -229,7 +229,7 @@ function N(e) {
         }), g && (0, r.jsx)(b.V9, {
           analyticsPage: A,
           cardAlignment: b.V9.CardAlignment.END,
-          ctaText: j.intl.string(j.t.VC4Mq0),
+          ctaText: T.intl.string(T.t.VC4Mq0),
           ctaOnClick: P,
           className: I.balanceWidgetMenu
         })]

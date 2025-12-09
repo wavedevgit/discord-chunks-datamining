@@ -42,31 +42,31 @@ let C = {
       null == d || d(e)
     }, .1, null != d), _ = (0, a.e7)([u.default], () => u.default.getCurrentUser()), {
       bannerStyleOverrides: b,
-      logoStyleOverrides: E,
-      heroLogo: v,
-      heroBannerStatic: S,
-      heroBannerAnimated: x
-    } = (0, g.hr)(l), O = null != (t = null == b ? true : b.responsive) && t, y = null == b ? true : b.backgroundStyle;
+      logoStyleOverrides: v,
+      heroLogo: E,
+      heroBannerStatic: O,
+      heroBannerAnimated: S
+    } = (0, g.hr)(l), x = null != (t = null == b ? true : b.responsive) && t, y = null == b ? true : b.backgroundStyle;
     return null != _ && (n || l !== C) ? (0, r.jsxs)("div", {
       ref: h,
       className: m.heroBlock,
       children: [(0, r.jsx)("div", {
         className: i()(m.banner, {
-          [m.responsive]: O
+          [m.responsive]: x
         }),
         style: null != y ? {
           background: y
         } : true,
-        children: null != S && (0, r.jsx)(f.Z, {
-          bannerStatic: S,
-          bannerAnimated: x,
-          isResponsive: O
+        children: null != O && (0, r.jsx)(f.Z, {
+          bannerStatic: O,
+          bannerAnimated: S,
+          isResponsive: x
         })
       }), (0, r.jsxs)("div", {
         className: m.heroBlockContent,
         children: [(0, r.jsx)("div", {
           className: i()(m.heroHeaderContainer, {
-            [m.responsive]: O
+            [m.responsive]: x
           }),
           children: n ? (0, r.jsx)("div", {
             className: m.heroHeaderBadgeLogoSummaryContainer
@@ -74,11 +74,11 @@ let C = {
             className: m.heroHeaderBadgeLogoSummaryContainer,
             children: (0, r.jsxs)("div", {
               className: m.heroLogoNameContainer,
-              children: [null != v && (0, r.jsx)("img", {
+              children: [null != E && (0, r.jsx)("img", {
                 className: m.heroHeaderLogo,
-                src: v,
+                src: E,
                 alt: l.name,
-                style: null == E ? true : E.toDesktopStyles()
+                style: null == v ? true : v.toDesktopStyles()
               }), null != l.title && (0, r.jsx)(c.Heading, {
                 variant: "heading-xxl/bold",
                 className: m.title,
