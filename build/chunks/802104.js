@@ -90,7 +90,7 @@ class b extends Chunk147913.Z {
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        if (null == e.body || "4eb538828a9a2f072164f6d7b4edd6c05a2a0393" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "90572f4328651c08b0ef4e6a1e6155890ce7f8a3" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, s.fD)()) return this._handleUpdateDownloaded(false);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? m : h;
         if (Date.now() - g > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(false)
