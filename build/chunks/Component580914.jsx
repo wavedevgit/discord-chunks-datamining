@@ -84,7 +84,7 @@ let M = (0, Chunk884697.IC)(90),
         heroBannerUrl: W.heroBannerUrl,
         heroBannerAnimatedUrl: W.heroBannerAnimatedUrl
       }
-    }, [U, W]), $ = (0, O.Pc)("HeroBlock") && X.categorySkuId === Z.Hi, ee = (0, O.IT)("HeroBlock"), {
+    }, [U, W]), $ = (0, x.Pc)("HeroBlock") && X.categorySkuId === Z.Hi, ee = (0, x.IT)("HeroBlock"), {
       bannerStyleOverrides: et,
       logoStyleOverrides: en,
       heroLogo: er,
@@ -111,13 +111,13 @@ let M = (0, Chunk884697.IC)(90),
         }, [i, s, e]),
         totalCards: e ? t : true
       }
-    })(!ef || $), eh = (0, x.a)()(ed), e_ = (0, y.l)(eh).slice(0, eC), eb = (0, N.St)(e_), eE = ef ? H.intl.string(H.t["1CdL8d"]) : H.intl.string(H.t.xYKa1T);
-    ef && $ && (eE = H.intl.string(H.t.dVz4hi));
+    })(!ef || $), eh = (0, O.a)()(ed), e_ = (0, y.l)(eh).slice(0, eC), eb = (0, N.St)(e_), eE = ef ? D.intl.string(D.t["1CdL8d"]) : D.intl.string(D.t.xYKa1T);
+    ef && $ && (eE = D.intl.string(D.t.dVz4hi));
     let ev = (0, S.FF)("CollectiblesContent"),
       {
         analyticsLocations: eS
       } = (0, p.ZP)(),
-      eO = () => {
+      ex = () => {
         ef ? ((0, C.Y)({
           pageType: w.ZY5.SHOP_ORBS_TAB,
           sectionType: w.jXE.ORBS_SHOP_HERO_BLOCK,
@@ -142,15 +142,15 @@ let M = (0, Chunk884697.IC)(90),
       };
     return null != q && (n || X !== F) ? (0, r.jsxs)("div", {
       ref: G,
-      className: D.heroBlock,
+      className: H.heroBlock,
       children: [ec ? (0, A.gT)({
         isCustomCursorEnabled: Y,
-        className: D.riveEventOverlay,
+        className: H.riveEventOverlay,
         riveEventTargetRef: K
       }) : null, (0, r.jsx)("div", {
-        className: s()(D.banner, {
-          [D.rivBanner]: ec,
-          [D.responsive]: eo
+        className: s()(H.banner, {
+          [H.rivBanner]: ec,
+          [H.responsive]: eo
         }),
         style: null != ea ? {
           background: ea
@@ -163,41 +163,41 @@ let M = (0, Chunk884697.IC)(90),
           eventTargetRef: K
         })
       }), (0, r.jsxs)("div", {
-        className: D.heroBlockContent,
+        className: H.heroBlockContent,
         children: [ec ? (0, r.jsx)("div", {
-          className: D.rivBannerButtonContainer,
+          className: H.rivBannerButtonContainer,
           children: !n && (0, r.jsx)(d.Button, {
             variant: "overlay-primary",
-            onClick: eO,
+            onClick: ex,
             text: eE
           })
         }) : (0, r.jsxs)("div", {
-          className: s()(D.heroHeaderContainer, {
-            [D.responsive]: eo
+          className: s()(H.heroHeaderContainer, {
+            [H.responsive]: eo
           }),
           children: [n ? (0, r.jsx)("div", {
-            className: D.heroHeaderBadgeLogoSummaryContainer
+            className: H.heroHeaderBadgeLogoSummaryContainer
           }) : (0, r.jsxs)("div", {
-            className: D.heroHeaderBadgeLogoSummaryContainer,
+            className: H.heroHeaderBadgeLogoSummaryContainer,
             children: [null != X.unpublishedAt && (0, r.jsx)(d.IGR, {
               disableColor: true,
-              text: H.intl.string(H.t["h/uBCR"]),
-              className: D.limitedTimeBadge
+              text: D.intl.string(D.t["h/uBCR"]),
+              className: H.limitedTimeBadge
             }), (0, r.jsxs)("div", {
-              className: D.heroLogoNameContainer,
+              className: H.heroLogoNameContainer,
               children: [null != er && (0, r.jsx)("img", {
-                className: D.heroHeaderLogo,
+                className: H.heroHeaderLogo,
                 src: er,
                 alt: X.name,
                 style: null == en ? true : en.toDesktopStyles()
               }), null != X.title && (0, r.jsx)(d.Heading, {
                 variant: "heading-xxl/bold",
-                className: D.title,
+                className: H.title,
                 color: "header-primary",
                 children: X.title
               }), "" !== X.summary && (0, r.jsx)(d.Text, {
                 variant: "text-md/normal",
-                className: ef ? D.orbsSubHeaderText : D.subHeaderText,
+                className: ef ? H.orbsSubHeaderText : H.subHeaderText,
                 style: null != X.bannerTextColor ? {
                   color: X.bannerTextColor
                 } : true,
@@ -205,17 +205,17 @@ let M = (0, Chunk884697.IC)(90),
               })]
             })]
           }), !n && (0, r.jsx)("div", {
-            className: D.heroHeaderButtonContainer,
+            className: H.heroHeaderButtonContainer,
             children: (0, r.jsx)(d.Button, {
               variant: "overlay-primary",
-              onClick: eO,
+              onClick: ex,
               text: eE
             })
           })]
         }), (0, r.jsx)("div", {
           className: s()({
-            [D.row]: V === Z.AW.HOME,
-            [D.feed]: V === Z.AW.ORBS
+            [H.row]: V === Z.AW.HOME,
+            [H.feed]: V === Z.AW.ORBS
           }),
           ref: em,
           children: n || eg ? (0, r.jsx)(r.Fragment, {

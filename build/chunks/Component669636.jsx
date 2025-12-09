@@ -1,7 +1,7 @@
 /** Chunk was on 96887 **/
 /** chunk id: 669636, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => k
+  default: () => C
 }), require("./388685.js"), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk508925 = require("./508925.jsx"),
   Chunk616066 = require("./616066.jsx"),
-  Chunk216541 = require("./216541.jsx"),
+  Chunk684263 = require("./684263.jsx"),
   Chunk302800 = require("./302800.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk186175 = require("./186175.js"),
@@ -53,24 +53,24 @@ let S = e => {
     } = e, [a] = t.items, l = (0, d.e7)([m.default], () => {
       let e = m.default.getCurrentUser();
       return s()(null != e, "User cannot be undefined"), e
-    }), y = Object.values(u.a).includes(t.skuId), _ = (0, g.Z)({
+    }), w = Object.values(u.a).includes(t.skuId), _ = (0, g.Z)({
       location: "CollectiblesProductPreview"
     });
     return (0, o.EQ)(t.type).with(c.Z.PROFILE_EFFECT, () => (0, n.jsx)("div", {
-      className: P.profileEffectShopPreview,
+      className: O.profileEffectShopPreview,
       children: (0, n.jsx)(h.Z, {
         skuId: a.skuId,
         delayProfileEffectIntro: i,
         withScaleAnimation: i
       })
-    })).with(c.Z.AVATAR_DECORATION, () => (0, n.jsx)(j.R, {
+    })).with(c.Z.AVATAR_DECORATION, () => (0, n.jsx)(b.R, {
       item: a,
       user: l,
       avatarSize: f.EFr.SIZE_120,
       isPurchased: false,
       isHighlighted: true
     })).with(c.Z.NAMEPLATE, () => (0, n.jsx)("div", {
-      className: P.nameplate,
+      className: O.nameplate,
       children: (0, n.jsx)(p.Z, {
         nameplate: a,
         user: l,
@@ -78,9 +78,8 @@ let S = e => {
         isHighlighted: true
       })
     })).with(c.Z.BUNDLE, () => (0, n.jsx)("div", {
-      className: P.bundlePreview,
-      children: (0, n.jsx)(w.d, {
-        containerClassName: P.bundlePreviewContainer,
+      className: O.bundlePreview,
+      children: (0, n.jsx)(y.U, {
         product: t,
         user: l,
         isPurchased: false,
@@ -88,7 +87,7 @@ let S = e => {
         forCollectedModal: i
       })
     })).with(c.Z.EXTERNAL_SKU, () => {
-      if (y)
+      if (w)
         if (r) return (0, n.jsx)("img", {
           src: _ ? x : E,
           alt: v.intl.string(v.t.t0xkSB),
@@ -97,15 +96,15 @@ let S = e => {
           }
         });
         else return (0, n.jsx)("img", {
-          src: O,
+          src: P,
           alt: v.intl.string(v.t.g5W1g8)
         });
-      return (0, n.jsx)(b.b, {
+      return (0, n.jsx)(j.b, {
         product: t
       })
     }).otherwise(() => null)
   },
-  C = e => {
+  k = e => {
     let {
       reducedMotion: t,
       displayOptions: r
@@ -153,11 +152,11 @@ let S = e => {
     }, "animate-always");
     return (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)(l.animated.div, {
-        className: P.easterEggContainer,
+        className: O.easterEggContainer,
         style: o,
         children: (0, n.jsx)(S, _({}, e))
       }), (0, n.jsx)(l.animated.div, {
-        className: P.easterEggContainer,
+        className: O.easterEggContainer,
         style: t ? u : c,
         children: (0, n.jsx)("img", {
           src: r.getSrc(),
@@ -169,10 +168,10 @@ let S = e => {
     })
   };
 
-function k(e) {
+function C(e) {
   var t, r;
-  let i = (0, y.v)(e.product.categorySkuId);
-  return null != i ? (0, n.jsx)(C, (t = _({}, e), r = r = {
+  let i = (0, w.v)(e.product.categorySkuId);
+  return null != i ? (0, n.jsx)(k, (t = _({}, e), r = r = {
     displayOptions: i
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

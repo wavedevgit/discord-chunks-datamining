@@ -29,17 +29,17 @@ let m = e => {
     {
       handleCardVisibilityChange: S
     } = (0, u.E)(v, "home", "marketing featured block"),
-    O = (0, d.YG)(h, _),
-    x = l.useRef(null),
+    x = (0, d.YG)(h, _),
+    O = l.useRef(null),
     y = null == _ ? true : _.bodyText,
     k = (0, a.sp)();
   return (0, r.jsx)(i.$, {
-    innerRef: x,
+    innerRef: O,
     onChange: S,
     threshold: 0,
     children: (0, r.jsxs)(s.P3F, {
       className: p.featuredBlock,
-      innerRef: x,
+      innerRef: O,
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -57,8 +57,8 @@ let m = e => {
           })
         }
         return e
-      }({}, null != O && {
-        backgroundImage: "url(".concat(O, ")")
+      }({}, null != x && {
+        backgroundImage: "url(".concat(x, ")")
       }),
       onClick: () => {
         E({

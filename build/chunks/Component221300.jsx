@@ -1,4 +1,4 @@
-/** Chunk was on 84608 **/
+/** Chunk was on 82082 **/
 /** chunk id: 221300, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,14 +18,14 @@ function d(e) {
     item: t,
     profileOwner: r,
     isHighlighted: d,
-    cardSize: v = c.U.MEDIUM
-  } = e, f = t.collectiblesItem;
-  switch (f.type) {
+    cardSize: f = c.U.MEDIUM
+  } = e, v = t.collectiblesItem;
+  switch (v.type) {
     case n.Z.PROFILE_EFFECT:
       return (0, i.jsx)("div", {
         className: u.profileEffectPreview,
-        children: (0, i.jsx)(o.Z, {
-          skuId: f.skuId,
+        children: (0, i.jsx)(l.Z, {
+          skuId: v.skuId,
           isHighlighted: d,
           isPurchased: false,
           removeSetHeight: true
@@ -34,8 +34,8 @@ function d(e) {
     case n.Z.AVATAR_DECORATION:
       return (0, i.jsx)("div", {
         className: u.avatarDecorationPreview,
-        children: (0, i.jsx)(s.R, {
-          item: f,
+        children: (0, i.jsx)(o.R, {
+          item: v,
           user: r,
           isHighlighted: d,
           isPurchased: false,
@@ -47,28 +47,28 @@ function d(e) {
         className: u.nameplatePreview,
         children: [(0, i.jsx)("div", {
           className: u.nameplateTopLeft,
-          children: (0, i.jsx)(l.Z, {
+          children: (0, i.jsx)(s.Z, {
             user: r,
-            nameplate: f,
+            nameplate: v,
             isHighlighted: d,
             showPlaceholderUser: true,
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
-            width: v === c.U.SMALL ? 136 : 200
+            width: f === c.U.SMALL ? 136 : 200
           })
         }), (0, i.jsx)("div", {
           className: u.nameplateBottomRight,
           "aria-hidden": true,
-          children: (0, i.jsx)(l.Z, {
+          children: (0, i.jsx)(s.Z, {
             user: r,
-            nameplate: f,
+            nameplate: v,
             isHighlighted: d,
             showPlaceholderUser: true,
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
-            width: v === c.U.SMALL ? 136 : 200
+            width: f === c.U.SMALL ? 136 : 200
           })
         })]
       });

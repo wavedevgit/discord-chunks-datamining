@@ -32,126 +32,126 @@ let I = t => {
     transitionState: e,
     product: n,
     onClose: I,
-    analyticsLocations: O,
-    overrideTitle: j,
-    overrideDescription: k,
-    shouldShowPromotionalExperience: y,
-    purchaseType: w = R.o8.FIAT,
-    overrideGraphic: P,
-    rentalDuration: S,
+    analyticsLocations: N,
+    overrideTitle: O,
+    overrideDescription: P,
+    shouldShowPromotionalExperience: j,
+    purchaseType: k = _.o8.FIAT,
+    overrideGraphic: w,
+    rentalDuration: y,
     rentalExpiresAt: b
-  } = t, g = (0, p.o)(n), N = (0, A.W)(n, g), {
-    analyticsLocations: D
-  } = (0, c.ZP)([...O, i.Z.COLLECTIBLES_COLLECTED_MODAL]), {
-    hasRequiredProductItems: F
+  } = t, D = (0, d.o)(n), S = (0, m.W)(n, D), {
+    analyticsLocations: g
+  } = (0, c.ZP)([...N, s.Z.COLLECTIBLES_COLLECTED_MODAL]), {
+    hasRequiredProductItems: B
   } = (t => {
     let {
       firstProfileEffect: e,
       firstAvatarDecoration: n,
-      firstNameplate: s
-    } = (0, f.Rj)(t), a = (0, C.x6)(t);
+      firstNameplate: l
+    } = (0, C.Rj)(t), r = (0, p.x6)(t);
     return {
       firstAvatarDecoration: n,
       firstProfileEffect: e,
-      firstNameplate: s,
-      isBundle: a,
-      hasRequiredProductItems: a ? (0, x.N)(t) : null != n || null != e || null != s
+      firstNameplate: l,
+      isBundle: r,
+      hasRequiredProductItems: r ? (0, x.N)(t) : null != n || null != e || null != l
     }
-  })(N), {
-    promotionalRewardCollectedText: M,
-    openProfileSettings: B
+  })(S), {
+    promotionalRewardCollectedText: F,
+    openProfileSettings: M
   } = (t => {
     var e;
     let n = (0, u.Z)(),
-      s = (0, d.Z)({
+      l = (0, f.Z)({
         analyticsLocations: t
       });
     return {
       giftingPromotionConfig: n,
       promotionalRewardCollectedText: null == n || null == (e = n.giftPurchaseConfirmation) ? true : e.rewardCollectedText(),
-      openProfileSettings: s
+      openProfileSettings: l
     }
-  })(D), {
+  })(g), {
     environment: V,
     modalRef: W,
     confettiCanvas: G,
     setConfettiCanvas: X,
     customConfettiDisplayOptions: $
-  } = (0, _.$0)(N, w), q = (0, Z.kd)(N);
-  (0, _.f1)(N, D);
+  } = (0, Z.$0)(S, k), q = (0, T.kd)(S);
+  (0, Z.f1)(S, g);
   let {
     handleUseNow: H,
     isApplying: K
   } = (0, E.W)({
-    product: N,
+    product: S,
     onSuccess: I,
     onError: I
-  }), U = (0, _.Xw)({
-    product: N,
-    overrideTitle: j,
+  }), U = (0, Z.Xw)({
+    product: S,
+    overrideTitle: O,
     isVariantsGroupEnabled: true,
-    shouldShowPromotionalExperience: y,
+    shouldShowPromotionalExperience: j,
     productName: q,
-    rentalDuration: S
-  }), z = (0, _.ys)({
-    product: N,
-    overrideDescription: k,
+    rentalDuration: y
+  }), z = (0, Z.ys)({
+    product: S,
+    overrideDescription: P,
     productName: q,
-    shouldShowPromotionalExperience: y,
-    promotionalRewardCollectedText: M,
-    isRental: null != S,
+    shouldShowPromotionalExperience: j,
+    promotionalRewardCollectedText: F,
+    isRental: null != y,
     expiresAt: b
-  }), J = (0, _.cf)({
-    product: N,
+  }), J = (0, Z.cf)({
+    product: S,
     onClose: I,
-    analyticsLocations: D,
-    hasRequiredProductItems: F,
+    analyticsLocations: g,
+    hasRequiredProductItems: B,
     handleUseNow: H,
     isApplying: K,
-    openProfileSettings: B
+    openProfileSettings: M
   }), Q = "6/4";
-  switch (N.type) {
-    case o.Z.NAMEPLATE:
-    case o.Z.AVATAR_DECORATION:
+  switch (S.type) {
+    case a.Z.NAMEPLATE:
+    case a.Z.AVATAR_DECORATION:
       Q = "16/9";
       break;
-    case o.Z.BUNDLE:
-    case o.Z.PROFILE_EFFECT:
+    case a.Z.BUNDLE:
+    case a.Z.PROFILE_EFFECT:
     default:
       Q = "6/4"
   }
   let {
     confettiColors: Y
-  } = (0, v.Z)(N.styles), tt = null != P ? P : {
+  } = (0, v.Z)(S.styles), tt = null != w ? w : {
     type: "dynamic",
-    component: r.AX$.COLLECTIBLES_PREVIEW,
+    component: o.AX$.COLLECTIBLES_PREVIEW,
     aspectRatio: Q,
     props: {
-      product: N,
+      product: S,
       forCollectedModal: true
     }
   };
-  return (0, s.jsx)(c.Gt, {
-    value: D,
-    children: (0, s.jsxs)("div", {
+  return (0, l.jsx)(c.Gt, {
+    value: g,
+    children: (0, l.jsxs)("div", {
       ref: W,
-      children: [(0, s.jsx)(a.O_, {
+      children: [(0, l.jsx)(r.O_, {
         ref: X,
-        className: m.confettiCanvas,
+        className: R.confettiCanvas,
         environment: V
-      }), (0, s.jsx)(l.ExpressiveModal, {
+      }), (0, l.jsx)(i.ExpressiveModal, {
         graphic: tt,
         title: U,
         subtitle: null != z ? z : true,
         onClose: I,
         transitionState: e,
         actions: J
-      }), null != $ ? (0, s.jsx)(T.i, {
+      }), null != $ ? (0, l.jsx)(h.i, {
         options: $
-      }) : (0, s.jsx)(L.Z, {
+      }) : (0, l.jsx)(L.Z, {
         confettiTarget: W.current,
         confettiCanvas: G,
-        sprites: (0, h.vK)(N.categorySkuId),
+        sprites: (0, A.vK)(S.categorySkuId),
         colors: null == Y ? true : Y.map(t => t.toHexString())
       })]
     })

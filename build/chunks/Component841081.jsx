@@ -1,5 +1,5 @@
-/** Chunk was on 29356 **/
-/** chunk id: 841081, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 76334 **/
+/** chunk id: 841081, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
   default: () => p
 });
@@ -15,38 +15,38 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk926845 = require("./926845.js");
 
-function h(e) {
+function _(e) {
   let {
-    giftRecipient: t,
-    onClose: i,
+    giftRecipient: i,
+    onClose: t,
     transitionState: l,
-    analyticsLocations: h,
+    analyticsLocations: _,
     analyticsObject: p
   } = e, {
     priceOptions: f
   } = (0, s.JL)(), g = r.useCallback(e => {
     (0, o.Z)({
       isGift: true,
-      giftRecipient: t,
+      giftRecipient: i,
       subscriptionTier: e,
       giftingOrigin: d.Wt.DM_CHANNEL,
-      analyticsLocations: null != h ? h : [],
+      analyticsLocations: null != _ ? _ : [],
       analyticsObject: null != p ? p : {
         page: u.ZY5.DM_CHANNEL,
         section: u.jXE.CHANNEL_TEXT_AREA,
         object: u.qAy.BUTTON_ICON,
         objectType: u.AnalyticsObjectTypes.GIFT
       }
-    }), i()
-  }, [t, h, p, i]);
+    }), t()
+  }, [i, _, p, t]);
   return (0, n.jsxs)(a.Y0X, {
     transitionState: l,
     size: a.CgR.DYNAMIC,
-    className: _.modalContainer,
+    className: h.modalContainer,
     parentComponent: "GiftOptionSelectModal",
     "data-migration-pending": true,
     children: [(0, n.jsx)(a.xBx, {
-      className: _.modalHeader,
+      className: h.modalHeader,
       "data-migration-pending": true,
       children: (0, n.jsxs)(a.Kqy, {
         direction: "horizontal",
@@ -55,18 +55,18 @@ function h(e) {
           variant: "heading-md/semibold",
           children: m.intl.string(m.t["wg/30i"])
         }), (0, n.jsx)(a.olH, {
-          onClick: i,
+          onClick: t,
           "data-migration-pending": true
         })]
       })
     }), (0, n.jsx)(a.hzk, {
-      className: _.modalBody,
+      className: h.modalBody,
       "data-migration-pending": true,
       children: (0, n.jsx)(c.Z, {
         onSelectSku: g,
-        giftRecipient: t,
+        giftRecipient: i,
         priceOptions: f,
-        onWishlistItemClick: i
+        onWishlistItemClick: t
       })
     })]
   })
@@ -74,8 +74,8 @@ function h(e) {
 
 function p(e) {
   let {
-    giftRecipient: t,
-    onClose: i,
+    giftRecipient: i,
+    onClose: t,
     transitionState: r,
     analyticsLocations: a,
     analyticsObject: o
@@ -87,11 +87,11 @@ function p(e) {
     isGift: true,
     children: (0, n.jsx)(l.KB, {
       isGift: true,
-      giftRecipient: t,
+      giftRecipient: i,
       giftingOrigin: d.Wt.DM_CHANNEL,
-      children: (0, n.jsx)(h, {
-        giftRecipient: t,
-        onClose: i,
+      children: (0, n.jsx)(_, {
+        giftRecipient: i,
+        onClose: t,
         transitionState: r,
         analyticsLocations: a,
         analyticsObject: o

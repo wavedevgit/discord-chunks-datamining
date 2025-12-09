@@ -18,9 +18,9 @@ function d(e) {
   let {
     product: d,
     isDarkText: m = false,
-    isOrbExclusive: p = false,
-    rentalDuration: f
-  } = e, v = (t = d.type, n = p, null != (i = f) ? 3 === i ? c.intl.string(c.t["52UXCo"]) : 7 === i ? c.intl.string(c.t.FRR2s2) : c.intl.string(c.t.VgsFa1) : n ? c.intl.string(c.t["0TmQRG"]) : (0, a.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOo)).otherwise(() => null));
+    isOrbExclusive: f = false,
+    rentalDuration: p
+  } = e, v = (t = d.type, n = f, null != (i = p) ? 3 === i ? c.intl.string(c.t["52UXCo"]) : 7 === i ? c.intl.string(c.t.FRR2s2) : c.intl.string(c.t.VgsFa1) : n ? c.intl.string(c.t["0TmQRG"]) : (0, a.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOo)).otherwise(() => null));
   return null === v ? null : (0, r.jsx)(s.Text, {
     variant: "text-xxs/normal",
     className: l()([u.container, m ? u.darkText : u.lightText]),

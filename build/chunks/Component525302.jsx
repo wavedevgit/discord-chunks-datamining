@@ -1,4 +1,4 @@
-/** Chunk was on 84608 **/
+/** Chunk was on 82082 **/
 /** chunk id: 525302, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Q: () => c
@@ -20,7 +20,7 @@ function c(e) {
 function u(e) {
   let {
     application: t
-  } = e, r = null != t ? t.getIconURL(o.Si.SMALL) : true;
+  } = e, r = null != t ? t.getIconURL(l.Si.SMALL) : true;
   return null != r ? (0, i.jsx)("img", {
     src: r,
     alt: null == t ? true : t.name
@@ -33,7 +33,7 @@ function u(e) {
 function d(e) {
   let {
     wishlistItem: t
-  } = e, r = (0, a.e7)([s.Z], () => (0, l.F)(t) ? s.Z.getApplication(t.sku.applicationId) : true);
+  } = e, r = (0, a.e7)([o.Z], () => (0, s.F)(t) ? o.Z.getApplication(t.sku.applicationId) : true);
   return (0, i.jsx)(u, {
     application: r
   })

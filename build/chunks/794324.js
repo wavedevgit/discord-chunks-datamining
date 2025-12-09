@@ -6,8 +6,8 @@ require.d(exports, {
   YG: () => d,
   _M: () => v,
   hr: () => u,
-  kc: () => p,
-  mB: () => f
+  kc: () => f,
+  mB: () => p
 });
 var Chunk473749 = require("./473749.js"),
   Chunk264181 = require("./264181.js"),
@@ -68,7 +68,7 @@ let u = e => {
       catalogBannerAnimated: null != i ? i : null == (n = e.catalogBannerAsset) ? true : n.animated
     }
   },
-  p = e => {
+  f = e => {
     let t = (0, o.zL)(s.jE.PDP_BACKGROUND),
       n = (0, a.Y)("PDPBackground");
     if (null != t) return t;
@@ -79,7 +79,7 @@ let u = e => {
       format: "jpg"
     })
   },
-  f = e => {
+  p = e => {
     let t = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER),
       n = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER_DARK),
       l = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER_LIGHT),
@@ -88,8 +88,8 @@ let u = e => {
       u = (0, o.zL)(s.jE.SHOP_BUTTON_BG_RESTING_LIGHT),
       d = (0, o.zL)(s.jE.COACHTIP_AVATAR);
     return r.useMemo(() => {
-      var r, o, s, m, p;
-      let f = [t, n, l, a, c, u, d].some(e => null != e);
+      var r, o, s, m, f;
+      let p = [t, n, l, a, c, u, d].some(e => null != e);
       if ((null == e ? true : e.type) === i.Z.COACHMARK) return {
         hasPreviewAssets: false
       };
@@ -97,11 +97,11 @@ let u = e => {
         g = null == v ? true : v.resting,
         h = null == v ? true : v.hovered;
       return {
-        hasPreviewAssets: f,
+        hasPreviewAssets: p,
         buttonBGHoverDark: null != (o = null != n ? n : t) ? o : null == h ? true : h.dark,
         buttonBGHoverLight: null != (s = null != l ? l : t) ? s : null == h ? true : h.light,
         buttonBGRestingDark: null != (m = null != c ? c : a) ? m : null == g ? true : g.dark,
-        buttonBGRestingLight: null != (p = null != u ? u : a) ? p : null == g ? true : g.light,
+        buttonBGRestingLight: null != (f = null != u ? u : a) ? f : null == g ? true : g.light,
         coachtipAvatar: null != d ? d : null == e ? true : e.avatar
       }
     }, [t, n, l, a, c, u, d, e])

@@ -75,10 +75,10 @@ let P = e => {
       return n
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-    }), n), [Z, w] = l.useState(false), H = (0, f.sp)(), D = null != (t = null == H ? true : H.sessionId) ? t : "";
+    }), n), [Z, w] = l.useState(false), D = (0, f.sp)(), H = null != (t = null == D ? true : D.sessionId) ? t : "";
     l.useEffect(() => {
       (0, h.n)({
-        sessionId: D,
+        sessionId: H,
         checkpoint: h.a.SHOP_MOUNTED,
         tab: b,
         unpublishedCategoriesShown: B,
@@ -96,26 +96,26 @@ let P = e => {
       includeBundles: true,
       logPerf: true
     }, {
-      sessionId: D,
+      sessionId: H,
       tab: b
     }), V = l.useCallback(() => {
       U()
     }, [U]);
     return (l.useEffect(() => {
       null != F || M || 0 === W.length || (0, h.n)({
-        sessionId: D,
+        sessionId: H,
         checkpoint: h.a.SHOP_RENDERED,
         tab: b,
         unpublishedCategoriesShown: B,
         cacheDisabled: j
       })
-    }, [F, M, W.length, B, j, D, b]), null != F) ? (0, r.jsx)(_.Z, {
+    }, [F, M, W.length, B, j, H, b]), null != F) ? (0, r.jsx)(_.Z, {
       onRetry: V,
       errorOrigin: _.i.SHOP_PAGE,
       errorMessage: F.message
     }) : M || 0 === W.length ? (0, r.jsxs)("div", {
       className: s()(A.loadingContainer, A.feedContent),
-      children: [(0, r.jsx)(x.Z, {
+      children: [(0, r.jsx)(O.Z, {
         isLoading: M,
         handleTransition: c,
         tab: b
@@ -123,7 +123,7 @@ let P = e => {
         isLoading: M,
         handleTransition: c,
         categories: []
-      }), (0, r.jsx)(O.Z, {
+      }), (0, r.jsx)(x.Z, {
         isLoading: M,
         title: b === L.AW.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
         numVisibleItems: u,
@@ -136,7 +136,7 @@ let P = e => {
           i = false;
         switch (e.type) {
           case o.z.HERO:
-            l = (0, r.jsx)(x.Z, {
+            l = (0, r.jsx)(O.Z, {
               isLoading: M,
               handleTransition: c,
               heroBlock: P ? R : e,
@@ -152,7 +152,7 @@ let P = e => {
             break;
           case o.z.FEED:
             let f = e.sortedSkuIds;
-            l = (0, r.jsx)(O.Z, {
+            l = (0, r.jsx)(x.Z, {
               title: b === L.AW.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
               isLoading: M || g,
               numVisibleItems: u,

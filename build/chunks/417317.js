@@ -1,5 +1,5 @@
-/** Chunk was on 34740 **/
-/** chunk id: 417317, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 76334 **/
+/** chunk id: 417317, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
   Z: () => c
 });
@@ -12,12 +12,12 @@ var Chunk473749 = require("./473749.js"),
 
 function c(e) {
   let {
-    guildId: t,
-    location: n
-  } = e, c = (0, s.cZ)({
-    location: n
-  }), u = (0, r.e7)([l.Z], () => l.Z.getGuild(null != t ? t : null), [t]), d = (0, r.e7)([o.Z], () => null != u ? o.Z.getStorefrontData(u.id) : true);
-  return i.useEffect(() => {
-    (null == u ? true : u.id) != null && c && (0, a.YL)(null == u ? true : u.id, false)
-  }, [null == u ? true : u.id, d, c]), d
+    guildId: i,
+    location: t
+  } = e, c = (0, o.cZ)({
+    location: t
+  }), d = (0, r.e7)([a.Z], () => a.Z.getGuild(null != i ? i : null), [i]), u = (0, r.e7)([s.Z], () => null != d ? s.Z.getStorefrontData(d.id) : true);
+  return n.useEffect(() => {
+    (null == d ? true : d.id) != null && c && (0, l.YL)(null == d ? true : d.id, false)
+  }, [null == d ? true : d.id, u, c]), u
 }

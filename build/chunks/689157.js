@@ -1,5 +1,6 @@
-/** Chunk was on 93886 **/
-/** chunk id: 689157, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 689157, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   container: "container__2451c",
   profileEffectShopPreview: "profileEffectShopPreview__2451c",

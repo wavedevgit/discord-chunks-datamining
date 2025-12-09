@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk440617 = require("./440617.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
-let x = {
+let O = {
   flattenProductVariants: true
 };
 
@@ -52,8 +52,8 @@ function y(e) {
   l.useEffect(() => {
     Z()
   }, [w, Z]);
-  let H = (0, f.a)(),
-    D = l.useMemo(() => H(R), [H, R]);
+  let D = (0, f.a)(),
+    H = l.useMemo(() => D(R), [D, R]);
   l.useEffect(() => {
     n || (0, C.n)({
       sessionId: T,
@@ -73,9 +73,9 @@ function y(e) {
     G = n || P || null == L;
   l.useEffect(() => {
     if (G) return void z(false);
-    D.length > 0 && z(true)
-  }, [G, D.length]);
-  let K = U > 0 && !G && 0 === D.length;
+    H.length > 0 && z(true)
+  }, [G, H.length]);
+  let K = U > 0 && !G && 0 === H.length;
   l.useEffect(() => {
     let e = new ResizeObserver(() => {
       null != M.current && F(Math.floor(5 * getComputedStyle(M.current).gridTemplateColumns.split(/\s+/).length))
@@ -94,17 +94,17 @@ function y(e) {
     }), W((e - 1) * U)
   }, [k, U, W]);
   return (0, r.jsxs)(_.zp.Provider, {
-    value: x,
+    value: O,
     children: [(0, r.jsxs)("div", {
       className: s()({
-        [O.productsEmpty]: K
+        [x.productsEmpty]: K
       }),
       children: [K && (0, r.jsx)(v.Z, {}), (0, r.jsxs)("div", {
-        className: s()(O.products, {
-          [O.loadIn]: V
+        className: s()(x.products, {
+          [x.loadIn]: V
         }),
         ref: M,
-        children: [G && [...Array(U)].map((e, t) => (0, r.jsx)(b.Z, {}, t)), !G && D.map((e, t) => null == g.Z.getCategory(e.categorySkuId) ? null : (0, r.jsx)(d.k0, {
+        children: [G && [...Array(U)].map((e, t) => (0, r.jsx)(b.Z, {}, t)), !G && H.map((e, t) => null == g.Z.getCategory(e.categorySkuId) ? null : (0, r.jsx)(d.k0, {
           newValue: {
             tilePosition: t
           },
@@ -115,7 +115,7 @@ function y(e) {
         }, e.skuId))]
       })]
     }), A > U && (0, r.jsx)("div", {
-      className: O.paginationContainer,
+      className: x.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.DsT, {
           currentPage: N,

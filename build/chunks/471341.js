@@ -1,4 +1,4 @@
-/** Chunk was on 84608 **/
+/** Chunk was on 82082 **/
 /** chunk id: 471341, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -11,12 +11,12 @@ function a(e) {
     wishlistId: t,
     onAction: r,
     productLines: a
-  } = e, [s, l] = (0, i.useState)(false), o = (0, i.useCallback)(e => {
+  } = e, [o, s] = (0, i.useState)(false), l = (0, i.useCallback)(e => {
     e && null != t && (r({
       action: "VIEW_WISHLIST",
       wishlistId: t,
       productLines: null != a ? a : true
-    }), l(true))
+    }), s(true))
   }, [t, r, a]);
-  return (0, n.O)(o, true, null != t && !s)
+  return (0, n.O)(l, true, null != t && !o)
 }
