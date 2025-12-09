@@ -69,7 +69,7 @@ function l(e, t, n) {
     tab: e
   }));
   let g = e.layout.map(e => l(e, t, n, h)).filter(e => null != e);
-  if (0 === g.length && !("render" in e || e.type === r.J.SIDEBAR_ITEM && "onClick" in e)) return null;
+  if (0 === g.length && !("StronglyDiscouragedCustomComponent" in e || e.type === r.J.SIDEBAR_ITEM && "onClick" in e)) return null;
   let E = s(a({}, e), {
     layout: g
   });

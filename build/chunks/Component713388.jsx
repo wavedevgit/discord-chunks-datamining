@@ -36,7 +36,7 @@ function p(e) {
   let {
     setting: t,
     depth: n
-  } = e, r = (0, s.L)(t) && (t.type === s.J.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.render)) || t.type === s.J.PANEL && t.layout.some(e => null != e.render) || t.type === s.J.PANE && null != t.render), i = null;
+  } = e, r = (0, s.L)(t) && (t.type === s.J.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.StronglyDiscouragedCustomComponent)) || t.type === s.J.PANEL && t.layout.some(e => null != e.StronglyDiscouragedCustomComponent) || t.type === s.J.PANE && null != t.StronglyDiscouragedCustomComponent), i = null;
   if ((0, s.L)(t)) {
     var l, o, d;
     let e = null == (d = t.parent) || null == (o = d.parent) || null == (l = o.getLegacySearchKey) ? true : l.call(o);

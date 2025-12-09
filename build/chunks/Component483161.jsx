@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 483161, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  z: () => C
+  z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk657707 = require("./657707.js"),
@@ -21,10 +21,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk88651 = require("./88651.js");
 let A = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
-    render: Chunk564344.Z,
+    StronglyDiscouragedCustomComponent: Chunk564344.Z,
     buildLayout: () => []
   }),
-  f = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
+  C = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
     notice: {
       stores: [Chunk778825.Z, Chunk25990.Z],
@@ -32,7 +32,7 @@ let A = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
     },
     buildLayout: () => [A]
   }),
-  C = (0, Chunk509613.m7)(Chunk313789.n.PROFILE_SIDEBAR_ITEM, {
+  f = (0, Chunk509613.m7)(Chunk313789.n.PROFILE_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
     getLegacySearchKey: () => Chunk726985.s6.PROFILE_CUSTOMIZATION,
     icon: Chunk657707.tBG,
@@ -41,7 +41,7 @@ let A = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
       let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
         {
           avatarSrc: n,
-          avatarDecorationSrc: u
+          avatarDecorationSrc: r
         } = (0, Chunk518950.Z)({
           userId: null == exports ? true : exports.id,
           size: Chunk481060.EFr.SIZE_48
@@ -80,5 +80,5 @@ let A = (0, Chunk509613.x1)(Chunk313789.n.PROFILE_PANE, {
       getDismissibleContentTypes: Chunk620163.OF,
       stronglyDiscouragedBadgeComponent: Chunk620163.W8
     },
-    buildLayout: () => [f]
+    buildLayout: () => [C]
   })

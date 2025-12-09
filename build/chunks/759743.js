@@ -12,5 +12,5 @@ var Chunk442837 = require("./442837.js"),
 let o = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_PHRASES, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.JIze0o)],
   usePredicate: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().clipSignals).enablePhraseSignals,
-  render: Chunk627869.j
+  Component: Chunk627869.j
 })

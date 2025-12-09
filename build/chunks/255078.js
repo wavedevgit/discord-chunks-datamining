@@ -120,6 +120,12 @@ class b extends Chunk81825.Z {
   get premiumPlanIdFromItems() {
     return this.getCurrentSubscriptionPlanIdForGroup([...Chunk474936.dJ])
   }
+  get isPurchasedViaDesktop() {
+    return null == this.paymentGateway
+  }
+  get isPurchasedViaAppleGeneric() {
+    return this.paymentGateway === Chunk981631.gg$.APPLE_PARTNER || this.isACOM
+  }
   get isPurchasedViaApple() {
     return this.paymentGateway === Chunk981631.gg$.APPLE
   }

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  r = require.n(Chunk512722),
+  u = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk660216 = require("./660216.js"),
@@ -21,10 +21,10 @@ var Chunk54381 = require("./54381.js"),
 let O = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_SCREENSHOT_KEYBIND, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["0U/hj7"]), Chunk388032.intl.string(Chunk388032.t["5zxkdo"])],
   usePredicate: Chunk924557.PP,
-  render: () => {
+  Component: () => {
     let t = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
       e = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_SCREENSHOT, true));
-    r()(null != module, "Save clip keybind unset"), r()(null != exports, "Save screenshot keybind unset");
+    u()(null != module, "Save clip keybind unset"), u()(null != exports, "Save screenshot keybind unset");
     let n = Chunk473749.useCallback(t => {
       var n, i;
       o.Z.setKeybind((n = function(t) {

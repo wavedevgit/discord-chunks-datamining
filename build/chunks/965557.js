@@ -9,7 +9,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk313789 = require("./313789.js"),
   Chunk287490 = require("./287490.jsx");
 let a = (0, Chunk509613.x1)(Chunk313789.n.EXPERIMENTS_PANE, {
-    render: Chunk287490.Z,
+    StronglyDiscouragedCustomComponent: Chunk287490.Z,
     buildLayout: () => []
   }),
   o = (0, Chunk509613.wf)(Chunk313789.n.EXPERIMENTS_PANEL, {

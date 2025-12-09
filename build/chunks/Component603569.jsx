@@ -15,14 +15,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk225753 = require("./225753.js");
-let I = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
+let g = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk225753.default.RZqaJn),
-    render: () => (0, Chunk54381.jsx)(Chunk54942.Z, {}),
+    StronglyDiscouragedCustomComponent: Chunk54942.Z,
     buildLayout: () => []
   }),
-  g = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
+  I = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk225753.default.RZqaJn),
-    buildLayout: () => [I]
+    buildLayout: () => [g]
   }),
   _ = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk225753.default.RZqaJn),
@@ -32,13 +32,13 @@ let I = (0, Chunk509613.x1)(Chunk313789.n.FAMILY_CENTER_PANE, {
       type: Chunk970013.W.STRONGLY_DISCOURAGED_CUSTOM,
       getDismissibleContentTypes: () => [Chunk704215.z.FAMILY_CENTER_NEW_BADGE],
       useCustomDecoration: function(t) {
-        let e = (0, u.gU)();
-        return t === s.z.FAMILY_CENTER_NEW_BADGE ? (0, i.jsx)(r.IGR, {
-          text: E.intl.string(E.t.y2b7CA)
-        }) : e > 0 ? (0, i.jsx)(r.mAB, {
+        let e = (0, r.gU)();
+        return t === s.z.FAMILY_CENTER_NEW_BADGE ? (0, i.jsx)(u.IGR, {
+          text: T.intl.string(T.t.y2b7CA)
+        }) : e > 0 ? (0, i.jsx)(u.mAB, {
           count: e
         }) : null
       }
     },
-    buildLayout: () => [g]
+    buildLayout: () => [I]
   })

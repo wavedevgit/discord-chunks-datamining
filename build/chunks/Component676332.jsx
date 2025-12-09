@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 676332, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  z: () => c
+  z: () => o
 });
 var Chunk54381 = require("./54381.js"),
   Chunk670863 = require("./670863.jsx"),
@@ -9,16 +9,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk313789 = require("./313789.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
-
-function o() {
-  return (0, Chunk54381.jsx)(Chunk670863.j, {
-    label: Chunk388032.intl.string(Chunk388032.t.UTM8VP),
-    deviceType: Chunk65154.h7.AUDIO_INPUT,
-    location: "UserSettingsVoiceVideo",
-    hideDeviceTypeIcon: true
-  })
-}
-let c = (0, Chunk509613.ON)(Chunk313789.n.VOICE_MICROPHONE_INPUT_SELECT, {
+let o = (0, Chunk509613.ON)(Chunk313789.n.VOICE_MICROPHONE_INPUT_SELECT, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.hHMYbb), Chunk388032.intl.string(Chunk388032.t.nuFtHH)],
-  render: () => (0, Chunk54381.jsx)(o, {})
+  Component: function() {
+    return (0, Chunk54381.jsx)(Chunk670863.j, {
+      label: Chunk388032.intl.string(Chunk388032.t.UTM8VP),
+      deviceType: Chunk65154.h7.AUDIO_INPUT,
+      location: "UserSettingsVoiceVideo",
+      hideDeviceTypeIcon: true
+    })
+  }
 })

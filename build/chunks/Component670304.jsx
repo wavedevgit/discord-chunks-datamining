@@ -14,7 +14,7 @@ function l(e) {
   let {
     node: t
   } = e;
-  return null != t.render ? (0, r.jsx)(t.render, {}) : (0, r.jsx)("div", {
+  return null != t.StronglyDiscouragedCustomComponent ? (0, r.jsx)(t.StronglyDiscouragedCustomComponent, {}) : (0, r.jsx)("div", {
     className: s.pane,
     children: t.layout.map((e, n) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(a.Z, {

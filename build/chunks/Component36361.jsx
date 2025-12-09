@@ -92,7 +92,7 @@ function v(e) {
       });
     case i.J.CUSTOM:
       return (0, r.jsx)(o.X, {
-        children: (0, r.jsx)(t.render, {})
+        children: (0, r.jsx)(t.Component, {})
       });
     default:
       return (0, r.jsx)(c.W, {

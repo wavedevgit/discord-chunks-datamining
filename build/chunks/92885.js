@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 92885, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  D: () => E
+  D: () => T
 });
 var Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
@@ -13,7 +13,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk313789 = require("./313789.js"),
   Chunk871465 = require("./871465.js"),
   Chunk388032 = require("./388032.jsx");
-let E = (0, Chunk509613.qs)(Chunk313789.n.NOTIFICATION_HOLIDAY_SOUNDPACK, {
+let T = (0, Chunk509613.qs)(Chunk313789.n.NOTIFICATION_HOLIDAY_SOUNDPACK, {
   useTitle: () => {
     let t = Chunk197344.Z.useHolidaySoundpack();
     return null == module ? "" : Chunk388032.intl.format(Chunk388032.t["E/OyBr"], {
@@ -26,7 +26,7 @@ let E = (0, Chunk509613.qs)(Chunk313789.n.NOTIFICATION_HOLIDAY_SOUNDPACK, {
     return module === (null == exports ? true : exports.soundpack)
   },
   setValue: function(t) {
-    let e = r.Z.getHolidaySoundpack();
+    let e = u.Z.getHolidaySoundpack();
     l()(null != e, "predicate should fail if no soundpack is available"), (0, a.c)(t ? e : d.Y.CLASSIC)
   },
   usePredicate: Chunk197344.Z.useIsEligible

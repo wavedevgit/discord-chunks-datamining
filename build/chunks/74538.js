@@ -1350,6 +1350,7 @@ function eW(e) {
 function eK(e, t) {
   switch (e) {
     case C.gg$.APPLE_PARTNER:
+    case C.gg$.APPLE_ADVANCED_COMMERCE:
     case C.gg$.APPLE:
       return U[t];
     case C.gg$.GOOGLE:

@@ -22,7 +22,7 @@ let c = () => {
         tags: {
           source: l.D.WARP_INSTALL_HELPER
         }
-      }), u.default.track(o.rMx.PREMIUM_FEATURE_ERROR, {
+      }), r.default.track(o.rMx.PREMIUM_FEATURE_ERROR, {
         error_message: t instanceof Error ? t.message : JSON.stringify(t),
         error_source: l.D.WARP_INSTALL_HELPER
       })

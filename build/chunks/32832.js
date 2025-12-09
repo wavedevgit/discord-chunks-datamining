@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 32832, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  u: () => I
+  u: () => g
 }), require("./54381.js"), require("./473749.js");
 var Chunk442837 = require("./442837.js");
 require("./481060.js");
@@ -19,23 +19,23 @@ let d = {
     useDisabled: Chunk734934.p,
     useDisabledMessage: () => (0, Chunk734934.p)() ? Chunk388032.intl.string(Chunk388032.t.cIRG0s) : true
   },
-  T = {
+  S = {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.XBrJT6),
     sound: "call_ringing"
   },
-  E = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
+  T = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV9),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel() && !Chunk292959.Z.getDisableAllSounds()),
     setValue: t => l.default.setNotifyMessagesInSelectedChannel(t),
     useDisabled: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds())
   }),
-  S = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+  E = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOd"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.EAKdPr),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
     setValue: t => l.default.toggleDisableAllSounds(t)
   }),
-  I = (0, Chunk509613.Uc)(Chunk313789.n.NOTIFICATION_SOUNDS_FIELD_SET, {
+  g = (0, Chunk509613.Uc)(Chunk313789.n.NOTIFICATION_SOUNDS_FIELD_SET, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.ONU22R),
     variant: "separators",
     initialize: function() {
@@ -43,5 +43,5 @@ let d = {
         (0, Chunk407458.WY)()
       }
     },
-    buildLayout: () => [(0, Chunk407458.j$)(d), E, (0, Chunk407458.j$)(T), S]
+    buildLayout: () => [(0, Chunk407458.j$)(d), T, (0, Chunk407458.j$)(S), E]
   })

@@ -5,9 +5,9 @@ require.d(exports, {
 });
 var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
-  Chunk199548 = require("./199548.jsx"),
+  Chunk199548 = require("./199548.js"),
   Chunk215871 = require("./215871.js"),
-  Chunk191694 = require("./191694.jsx"),
+  Chunk191694 = require("./191694.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.vB)(Chunk313789.n.ACTIVITY_SECTION, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.SmHCFf),

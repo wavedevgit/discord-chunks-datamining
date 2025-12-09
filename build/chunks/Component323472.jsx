@@ -1,12 +1,12 @@
 /** Chunk was on 77069 **/
 /** chunk id: 323472, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  u: () => S
+  u: () => E
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  r = require.n(Chunk512722),
+  u = require.n(Chunk512722),
   Chunk59662 = require("./59662.js"),
   Chunk28682 = require("./28682.js"),
   Chunk388032 = require("./388032.jsx");
@@ -32,7 +32,7 @@ function d(t) {
   }) : s
 }
 
-function T(t) {
+function S(t) {
   let {
     setting: e,
     formatter: n,
@@ -46,24 +46,24 @@ function T(t) {
   }, e.key)
 }
 
-function E(t) {
+function T(t) {
   return t.type === a.J.LIST
 }
 
-function S(t, e) {
+function E(t, e) {
   var n, i;
   let {
     limit: s = 2,
     formatter: d = c
   } = null != e ? e : {};
-  r()(s > 0, "[useSettingCollapsibleSubtitle] Limit must be greater than 0");
+  u()(s > 0, "[useSettingCollapsibleSubtitle] Limit must be greater than 0");
   let {
-    visibleDirectory: S,
-    accessibleDirectory: I
-  } = (0, u.t)(), g = null != (n = S.get(t)) ? n : I.get(t);
-  r()(null != g && (g.type === a.J.ACCORDION || E(g)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
-  let _ = E(g) && null != (i = g.collapseAfter) ? i : 0,
-    O = g.layout;
+    visibleDirectory: E,
+    accessibleDirectory: g
+  } = (0, r.t)(), I = null != (n = E.get(t)) ? n : g.get(t);
+  u()(null != I && (I.type === a.J.ACCORDION || T(I)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
+  let _ = T(I) && null != (i = I.collapseAfter) ? i : 0,
+    O = I.layout;
   return l.useMemo(() => {
     let t = _,
       e = [];
@@ -81,70 +81,70 @@ function S(t, e) {
     let n = Math.min(s, 3);
     if (e.length <= n)
       if (1 === e.length) return o.intl.format(o.t["3H9tCW"], {
-        settingOneHook: T({
+        settingOneHook: S({
           setting: e[0],
           formatter: d,
           index: 0
         })
       });
       else if (2 === e.length) return o.intl.format(o.t.MWryo6, {
-      settingOneHook: T({
+      settingOneHook: S({
         setting: e[0],
         formatter: d,
         index: 0
       }),
-      settingTwoHook: T({
+      settingTwoHook: S({
         setting: e[1],
         formatter: d,
         index: 1
       })
     });
     else return o.intl.format(o.t.a00b5G, {
-      settingOneHook: T({
+      settingOneHook: S({
         setting: e[0],
         formatter: d,
         index: 0
       }),
-      settingTwoHook: T({
+      settingTwoHook: S({
         setting: e[1],
         formatter: d,
         index: 1
       }),
-      settingThreeHook: T({
+      settingThreeHook: S({
         setting: e[2],
         formatter: d,
         index: 2
       })
     });
     return 1 === n ? o.intl.format(o.t.O8vNbS, {
-      settingOneHook: T({
+      settingOneHook: S({
         setting: e[0],
         formatter: d,
         index: 0
       })
     }) : 2 === n ? o.intl.format(o.t["acXG/W"], {
-      settingOneHook: T({
+      settingOneHook: S({
         setting: e[0],
         formatter: d,
         index: 0
       }),
-      settingTwoHook: T({
+      settingTwoHook: S({
         setting: e[1],
         formatter: d,
         index: 1
       })
     }) : o.intl.format(o.t["5+ldWc"], {
-      settingOneHook: T({
+      settingOneHook: S({
         setting: e[0],
         formatter: d,
         index: 0
       }),
-      settingTwoHook: T({
+      settingTwoHook: S({
         setting: e[1],
         formatter: d,
         index: 1
       }),
-      settingThreeHook: T({
+      settingThreeHook: S({
         setting: e[2],
         formatter: d,
         index: 2

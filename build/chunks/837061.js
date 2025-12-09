@@ -11,7 +11,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.x1)(Chunk313789.n.ACCOUNT_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["JAIM/m"]),
-    render: Chunk736752.Z,
+    StronglyDiscouragedCustomComponent: Chunk736752.Z,
     buildLayout: () => []
   }),
   c = (0, Chunk509613.wf)(Chunk313789.n.ACCOUNT_PANEL, {
