@@ -33,7 +33,7 @@ function I(e) {
     transitionState: n,
     sourceAnalyticsLocations: I,
     onClose: T
-  } = e, A = (0, o.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = (0, o.e7)([m.Z], () => m.Z.getMediaSessionId()), [N, P] = i.useState(null != A ? A : ""), [R, w] = i.useState(false), [D, x] = i.useState(null), L = (0, o.e7)([h.default], () => h.default.getCurrentUser()), j = N.length > S;
+  } = e, A = (0, o.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = (0, o.e7)([m.Z], () => m.Z.getMediaSessionId()), [N, P] = i.useState(null != A ? A : ""), [R, D] = i.useState(false), [w, x] = i.useState(null), L = (0, o.e7)([h.default], () => h.default.getCurrentUser()), j = N.length > S;
   i.useEffect(() => {
     g.default.track(E.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -52,7 +52,7 @@ function I(e) {
         let {
           errorMessage: e
         } = c.Z.validateMessage(n, L, t.id);
-        return x(e), w(false), {
+        return x(e), D(false), {
           hasErrors: true
         }
       }
@@ -61,7 +61,7 @@ function I(e) {
       }
     },
     U = async e => {
-      N === A && T(), null == e || e.preventDefault(), x(null), w(true);
+      N === A && T(), null == e || e.preventDefault(), x(null), D(true);
       let n = N.length,
         r = N.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = _.ZP.parse(t, N),
@@ -82,7 +82,7 @@ function I(e) {
         } catch (e) {
           M(e)
         }
-        w(false)
+        D(false)
       }
     }, [G, Z] = i.useState((0, f.JM)(N)), B = (e, t, n) => {
       P(t), Z(n)
@@ -91,7 +91,7 @@ function I(e) {
       shouldRefocus: true
     })), V = (0, r.jsx)(a.gNt, {
       label: b.intl.string(b.t.Fq5lwN),
-      errorMessage: D,
+      errorMessage: w,
       children: (0, r.jsx)(p.ZP, {
         innerClassName: y.textArea,
         textValue: N,

@@ -33,12 +33,12 @@ let f = 20,
       sectionFooterHeight: T,
       renderUpsell: A,
       onScroll: C
-    } = e, N = i.useRef(false), P = i.useRef(null), R = (0, l.Iu)(e => e.searchQuery), w = a.useStore(e => e.activeCategoryIndex), D = i.useMemo(() => n.map(e => (0, s._O)(e.categoryInfo) ? {
+    } = e, N = i.useRef(false), P = i.useRef(null), R = (0, l.Iu)(e => e.searchQuery), D = a.useStore(e => e.activeCategoryIndex), w = i.useMemo(() => n.map(e => (0, s._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: false
     }), [n]), x = (0, u.Qs)({
-      activeCategoryIndex: w,
+      activeCategoryIndex: D,
       isScrolling: N,
       listRef: P,
       onActiveCategoryIndexChange: a.setActiveCategoryIndex,
@@ -48,15 +48,15 @@ let f = 20,
       x(e), _({
         listRef: P,
         searchQuery: R,
-        nitroLockedSectionStates: D,
+        nitroLockedSectionStates: w,
         scrollTop: e
       }), null == C || C(e)
-    }, [x, R, D, C]);
+    }, [x, R, w, C]);
     return i.useEffect(() => {
       null != P.current && L(0)
     }, [L, P]), (0, u.Xs)({
       searchQuery: R,
-      activeCategoryIndex: w,
+      activeCategoryIndex: D,
       listRef: P
     }), i.useImperativeHandle(t, () => ({
       scrollTo: function() {

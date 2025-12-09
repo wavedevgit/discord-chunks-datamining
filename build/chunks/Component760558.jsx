@@ -36,8 +36,8 @@ let S = e => {
   o()(null != t || null != n, "Must either provide slots or an initial selected guild"), o()(!(null == t ? true : t.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
   let C = [null == t ? "UNUSED_QUANTITY_SELECT" : null, null == n ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
     [N, P] = (0, l.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
-    [R, w] = i.useState(C[0]),
-    [D, x] = i.useState(false),
+    [R, D] = i.useState(C[0]),
+    [w, x] = i.useState(false),
     [L, j] = i.useState(n),
     [M, k] = i.useState(null != t ? t : A.slice(0, 1)),
     U = i.useMemo(() => null == M ? [] : M.map(e => {
@@ -67,7 +67,7 @@ let S = e => {
         }, {
           variant: "primary",
           text: O.intl.string(O.t["/uwYda"]),
-          onClick: () => w("CONFIRM")
+          onClick: () => D("CONFIRM")
         }],
         children: (0, r.jsxs)("div", {
           className: v.quantitySelectorBody,
@@ -93,7 +93,7 @@ let S = e => {
       GUILD_SELECT: () => (0, r.jsx)(g.default, {
         onClose: Z,
         onSelectGuild: e => {
-          j(e), w("CONFIRM")
+          j(e), D("CONFIRM")
         },
         transitionState: I,
         isTransfer: G,
@@ -104,7 +104,7 @@ let S = e => {
         let e = M.filter(e => (0, m.tl)(e)).length,
           t = M.length,
           n = U.length,
-          i = "CONFIRM" === C[0] ? Z : () => w(C[C.indexOf(R) - 1]),
+          i = "CONFIRM" === C[0] ? Z : () => D(C[C.indexOf(R) - 1]),
           a = async () => {
             if (x(false), null != L && (null == M ? true : M.length) !== 0) {
               o()(!M.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
@@ -119,7 +119,7 @@ let S = e => {
                     id: t
                   } = e;
                   return t
-                }), S === E.P.PERK), w("SUCCESS")
+                }), S === E.P.PERK), D("SUCCESS")
               } catch (e) {
                 x(true)
               }
@@ -153,7 +153,7 @@ let S = e => {
               guildCount: n
             }),
             imageClass: v.transferConfirmImage,
-            error: D ? P : null,
+            error: w ? P : null,
             slotCount: t,
             canceledCount: e
           }) : (0, r.jsx)(h.Z.ApplyBody, {
@@ -164,7 +164,7 @@ let S = e => {
               slotCount: t
             }),
             imageClass: v.confirmImage,
-            error: D ? P : null,
+            error: w ? P : null,
             slotCount: t,
             canceledCount: e
           })

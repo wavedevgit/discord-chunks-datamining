@@ -106,14 +106,14 @@ function O(e) {
     shouldPreload: N = true
   } = e, P = h(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
   let R = i.useRef(true),
-    w = i.useCallback(() => null != v ? v() : (0, l.Z)(n.id, null != O ? O : n.getAvatarURL(s, E), {
+    D = i.useCallback(() => null != v ? v() : (0, l.Z)(n.id, null != O ? O : n.getAvatarURL(s, E), {
       type: "popout",
       withMutualGuilds: n.id !== a.id,
       withMutualFriends: !n.bot && n.id !== a.id,
       guildId: s,
       channelId: d
     }), [v, a, n, O, s, d]),
-    D = i.useCallback(e => (R.current = Date.now(), null != S) ? S(e, R.current) : (0, r.jsx)(c.Z, m(p({}, e), {
+    w = i.useCallback(e => (R.current = Date.now(), null != S) ? S(e, R.current) : (0, r.jsx)(c.Z, m(p({}, e), {
       user: n,
       currentUser: a,
       guildId: s,
@@ -131,8 +131,8 @@ function O(e) {
   return (0, r.jsx)(o.yRy, m(p({
     popoutKey: u.Tg,
     shouldShow: C,
-    preload: N ? w : true,
-    renderPopout: D,
+    preload: N ? D : true,
+    renderPopout: w,
     onRequestOpen: I,
     onRequestClose: T
   }, P), {

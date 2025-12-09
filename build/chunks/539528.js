@@ -170,11 +170,11 @@ function A(e) {
   }
   var R = h();
 
-  function w(e) {
+  function D(e) {
     (0, r.Z)(Q, e), Q.length = t.length, R.notifyListeners(Q.location, Q.action)
   }
 
-  function D(e) {
+  function w(e) {
     v(e) || j(N(e.state))
   }
 
@@ -184,11 +184,11 @@ function A(e) {
   var L = false;
 
   function j(e) {
-    if (L) L = false, w();
+    if (L) L = false, D();
     else {
       var t = "POP";
       R.confirmTransitionTo(e, t, m, function(n) {
-        n ? w({
+        n ? D({
           action: t,
           location: e
         }) : M(e)
@@ -228,7 +228,7 @@ function A(e) {
           else {
             var l = U.indexOf(Q.location.key),
               u = U.slice(0, l + 1);
-            u.push(a.key), U = u, w({
+            u.push(a.key), U = u, D({
               action: i,
               location: a
             })
@@ -253,7 +253,7 @@ function A(e) {
             }, null, r), c) window.location.replace(r);
           else {
             var l = U.indexOf(Q.location.key);
-            false !== l && (U[l] = a.key), w({
+            false !== l && (U[l] = a.key), D({
               action: i,
               location: a
             })
@@ -277,7 +277,7 @@ function A(e) {
   var Y = 0;
 
   function W(e) {
-    1 === (Y += e) && 1 === e ? (window.addEventListener(S, D), i && window.addEventListener(I, x)) : 0 === Y && (window.removeEventListener(S, D), i && window.removeEventListener(I, x))
+    1 === (Y += e) && 1 === e ? (window.addEventListener(S, w), i && window.addEventListener(I, x)) : 0 === Y && (window.removeEventListener(S, w), i && window.removeEventListener(I, x))
   }
   var K = false;
 
@@ -343,11 +343,11 @@ function R() {
   return false === exports ? "" : module.substring(exports + 1)
 }
 
-function w(e) {
+function D(e) {
   window.location.hash = e
 }
 
-function D(e) {
+function w(e) {
   window.location.replace(P(window.location.href) + "#" + e)
 }
 
@@ -384,7 +384,7 @@ function x(e) {
   function L() {
     var e = R(),
       t = b(e);
-    if (e !== t) D(t);
+    if (e !== t) w(t);
     else {
       var n = v(),
         r = J.location;
@@ -417,7 +417,7 @@ function x(e) {
   }
   var k = R(),
     U = b(k);
-  k !== U && D(U);
+  k !== U && w(U);
   var G = v(),
     Z = [p(G)];
 
@@ -436,7 +436,7 @@ function x(e) {
           i = b(f + t),
           a = R() !== i;
         if (a) {
-          A = t, w(i);
+          A = t, D(i);
           var o = Z.lastIndexOf(p(J.location)),
             s = Z.slice(0, o + 1);
           s.push(t), Z = s, I({
@@ -456,7 +456,7 @@ function x(e) {
         var t = p(r),
           i = b(f + t),
           a = R() !== i;
-        a && (A = t, D(i));
+        a && (A = t, w(i));
         var o = Z.indexOf(p(J.location));
         false !== o && (Z[o] = t), I({
           action: n,

@@ -2,7 +2,7 @@
 /** chunk id: 443702, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -71,7 +71,7 @@ let R = () => (0, Chunk54381.jsx)("div", {
   className: Chunk61365.syncing,
   children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
 });
-class w extends Chunk473749.PureComponent {
+class D extends Chunk473749.PureComponent {
   componentDidMount() {
     Chunk570140.Z.wait(() => {
       Chunk355467.tZ(), Chunk355467.jg()
@@ -129,7 +129,7 @@ class w extends Chunk473749.PureComponent {
   }
 }
 
-function D() {
+function w() {
   let e = (0, Chunk442837.cj)([Chunk706454.default, Chunk351402.Z, Chunk853872.Z, Chunk594174.default, Chunk246946.Z, Chunk78839.Z], () => {
     let e = Chunk78839.Z.getPremiumTypeSubscription(),
       t = Chunk594174.default.getCurrentUser();
@@ -153,5 +153,5 @@ function D() {
   let {
     shouldRenderBillingSettings: t
   } = module, n = N(module, ["shouldRenderBillingSettings"]);
-  return (0, Chunk54381.jsx)(w, C({}, require))
+  return (0, Chunk54381.jsx)(D, C({}, require))
 }

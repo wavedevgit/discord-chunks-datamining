@@ -262,7 +262,7 @@ let ei = Chunk473749.memo(function(e) {
     l = Q(n, i),
     c = X(i, n.author),
     u = (0, P.ZP)(n),
-    d = (0, D.CF)(Y({
+    d = (0, w.CF)(Y({
       message: n,
       channel: i,
       author: u,
@@ -275,7 +275,7 @@ let ei = Chunk473749.memo(function(e) {
     h = X(i, _, T.default.getCurrentUser());
   if (null != _) {
     let e = (0, P.ij)(_, i),
-      r = (0, D.CF)(Y({
+      r = (0, w.CF)(Y({
         message: n,
         channel: i,
         author: e,
@@ -367,7 +367,7 @@ function ea(e) {
         className: o()(V.content, {
           [V.compact]: a
         }),
-        children: [(0, r.jsx)(D.nD, {
+        children: [(0, r.jsx)(w.nD, {
           message: s,
           messageClassname: V.spanCorrection,
           className: o()(V.usernameContainer, V.spanCorrection, {
@@ -398,7 +398,7 @@ function ea(e) {
           className: o()(V.messageContent, {
             [V.compact]: a
           }),
-          children: (0, r.jsx)(w.Z, K(Y({}, P), {
+          children: (0, r.jsx)(D.Z, K(Y({}, P), {
             message: s,
             channel: q,
             content: ed,

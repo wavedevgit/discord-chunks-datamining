@@ -222,14 +222,14 @@ function ei(e) {
                   },
                   children: z.intl.string(K.default["CdU/PF"])
                 })]
-              }), (0, r.jsx)(D.Z, {
+              }), (0, r.jsx)(w.Z, {
                 activeSlide: L,
                 setActiveSlide: e_,
                 className: q.stepIndicator,
                 color: X
               }), (0, r.jsxs)("div", {
                 className: q.actions,
-                children: [(0, r.jsx)(w.Z, {}), (0, r.jsx)(h.P3F, {
+                children: [(0, r.jsx)(D.Z, {}), (0, r.jsx)(h.P3F, {
                   onClick: () => eu(),
                   className: q.closeButton,
                   style: {

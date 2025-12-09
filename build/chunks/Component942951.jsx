@@ -101,7 +101,7 @@ function A(e) {
     guildId: h
   }), R = (0, p.j)({
     displayNameStyles: P
-  }), w = T(t, n), D = i.useContext(o.d);
+  }), D = T(t, n), w = i.useContext(o.d);
   return (0, E.Z)({
     subscribeToGroupId: g,
     authorId: null == t ? true : t.id,
@@ -113,7 +113,7 @@ function A(e) {
         var o, c, p;
         if (!I || null == P || null != h) return (0, r.jsx)(s.rz2, v(y({}, null != t ? t : {}), {
           ref: A,
-          onContextMenu: w,
+          onContextMenu: D,
           name: null != (c = (0, s.qgQ)(i)) ? c : "",
           colorString: null != (p = null == e ? true : e.colorString) ? p : null,
           roleName: null == e ? true : e.colorRoleName,
@@ -122,10 +122,10 @@ function A(e) {
           className: R
         }));
         {
-          let e = (null == D ? true : D.animate) || (null == n ? true : n.isShown) ? d.F.ANIMATED : d.F.PLAIN;
+          let e = (null == w ? true : w.animate) || (null == n ? true : n.isShown) ? d.F.ANIMATED : d.F.PLAIN;
           return (0, r.jsx)(a.Anchor, v(y({}, null != t ? t : {}), {
             ref: A,
-            onContextMenu: w,
+            onContextMenu: D,
             "aria-label": O,
             children: (0, r.jsx)(f.Z, {
               userName: null != (o = (0, s.qgQ)(i)) ? o : "",
@@ -160,5 +160,5 @@ function A(e) {
         }
       }) : p(true, true)
     }, o)
-  }, [C, t, n, h, g, w, b, O, N, R, null == D ? true : D.animate, P, I])
+  }, [C, t, n, h, g, D, b, O, N, R, null == w ? true : w.animate, P, I])
 }

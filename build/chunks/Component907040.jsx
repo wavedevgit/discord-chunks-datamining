@@ -244,10 +244,10 @@ let eu = (e, t) => {
         categoryListClassName: eN,
         shouldShowSoundmojiInEmojiPicker: eP = false,
         showOnlyUnicode: eR = false,
-        showAddEmojiButton: ew = false
+        showAddEmojiButton: eD = false
       } = e,
       {
-        onFocus: eD,
+        onFocus: ew,
         onKeyDown: ex,
         autoFocus: eL = true,
         accessory: ej
@@ -283,8 +283,8 @@ let eu = (e, t) => {
       diversitySurrogate: e2
     } = (0, u.cj)([O.ZP], () => ({
       diversitySurrogate: O.ZP.diversitySurrogate
-    })), e4 = (0, U.DV)(eZ, c, l, eR), e5 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e8 = D.d4.useSetting(), e6 = i.useMemo(() => new Set(e8), [e8]), e7 = i.useCallback(e => {
-      D.d4.updateSetting(Array.from(e))
+    })), e4 = (0, U.DV)(eZ, c, l, eR), e5 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e8 = w.d4.useSetting(), e6 = i.useMemo(() => new Set(e8), [e8]), e7 = i.useCallback(e => {
+      w.d4.updateSetting(Array.from(e))
     }, []), e9 = (0, C.ep)({
       gridWrapperRef: eB,
       containerWidth: eu,
@@ -403,8 +403,8 @@ let eu = (e, t) => {
     let tp = null != eS ? eS : P ? "div" : p.VqE,
       t_ = null != e9;
     if ((null == ek ? true : ek.type) === Y.Bg.PREMIUM) {
-      let e = w.p.NONE;
-      2 === k ? e = w.p.PARENT_CONTAINER : 1 === k && (e = w.p.TAB_PARENT_CONTAINER), s = (0, r.jsx)(q.Z, {
+      let e = D.p.NONE;
+      2 === k ? e = D.p.PARENT_CONTAINER : 1 === k && (e = D.p.TAB_PARENT_CONTAINER), s = (0, r.jsx)(q.Z, {
         onLearnMore: ts,
         emojiDescriptor: ek.emojiDescriptor,
         pickerIntention: l,
@@ -437,7 +437,7 @@ let eu = (e, t) => {
           null == td || td(e), null == ex || ex(e)
         },
         searchBarRef: eV,
-        onFocus: eD,
+        onFocus: ew,
         autoFocus: eL,
         accessory: ej,
         headerClassName: ey,
@@ -445,7 +445,7 @@ let eu = (e, t) => {
         isBurstReaction: eY,
         onBurstReactionToggle: th,
         renderHeader: eA,
-        showAddEmojiButton: ew
+        showAddEmojiButton: eD
       }),
       tE = [];
     l === $.Hz.REACTION && tE.push(d.z.SUPER_REACTIONS_NITRO_MARKETING), O.ZP.hasFavoriteEmojis(eH) || tE.push(d.z.EMOJI_PICKER_FAVORITE_EMOJIS_TIP);

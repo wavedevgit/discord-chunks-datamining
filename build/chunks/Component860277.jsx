@@ -43,26 +43,26 @@ function M(e) {
     primaryColor: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: D.content,
+    className: w.content,
     children: [(0, r.jsxs)("div", {
-      className: w.title,
+      className: D.title,
       children: [(0, r.jsx)(c.iFz, {
         size: "refresh_sm",
         color: t,
-        colorClass: w.iconColor,
-        className: w.titleIcon
+        colorClass: D.iconColor,
+        className: D.titleIcon
       }), (0, r.jsx)(C.Z, {
         variant: "eyebrow",
-        className: w.eyebrow,
+        className: D.eyebrow,
         children: R.intl.string(P.default.ZQakPR)
       })]
     }), (0, r.jsx)(C.Z, {
       variant: "display-lg",
-      className: D.display,
+      className: w.display,
       children: R.intl.string(P.default.OzY5Ns)
     }), (0, r.jsx)(C.Z, {
       variant: "heading-xxl/medium",
-      className: D.subtitle,
+      className: w.subtitle,
       children: R.intl.string(P.default.sEPtGY)
     }), (0, r.jsx)(I.o, {
       slide: N.yD.FRIENDS
@@ -90,32 +90,32 @@ function U(e) {
     duration: s
   } = (0, v.Bi)(null != (t = null == i ? true : i.numVoiceMinutes) ? t : 0);
   return (0, r.jsxs)("div", {
-    className: D.content,
+    className: w.content,
     children: [(0, r.jsxs)("div", {
-      className: w.title,
+      className: D.title,
       children: [(0, r.jsx)(c.iFz, {
         size: "refresh_sm",
         color: n,
-        colorClass: w.iconColor,
-        className: w.titleIcon
+        colorClass: D.iconColor,
+        className: D.titleIcon
       }), (0, r.jsx)(C.Z, {
         variant: "eyebrow",
-        className: w.eyebrow,
+        className: D.eyebrow,
         children: R.intl.string(P.default.ZQakPR)
       })]
     }), (0, r.jsx)(C.Z, {
       variant: "display-lg",
-      className: o()(D.display, D.subtitle),
+      className: o()(w.display, w.subtitle),
       children: R.intl.string(P.default["+uwOHt"])
     }), (0, r.jsxs)("div", {
-      className: D.stats,
+      className: w.stats,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(C.Z, {
           variant: "eyebrow",
           children: R.intl.string(P.default.wWKySP)
         }), (0, r.jsx)(C.Z, {
           variant: "heading-xxl/normal",
-          className: w.numeric,
+          className: D.numeric,
           children: null == i ? true : i.numMessagesSent
         })]
       }), (0, r.jsxs)("div", {
@@ -126,7 +126,7 @@ function U(e) {
           }) : R.intl.string(P.default.RmVTph)
         }), (0, r.jsx)(C.Z, {
           variant: "heading-xxl/normal",
-          className: w.numeric,
+          className: D.numeric,
           children: s
         })]
       })]
@@ -143,7 +143,7 @@ function G(e) {
   } = e, {
     users: d = [],
     sidekick: _
-  } = (0, u.e7)([O.Z], () => O.Z.getCheckpointData()), m = (0, i.useContext)(y.Q), b = (0, f.dQu)(m.primaryColor).hex(), v = d[1], S = d[0], I = (0, u.e7)([h.default], () => h.default.getCurrentUser()), C = (0, i.useRef)(0), P = (0, i.useRef)(true), R = (0, i.useRef)(null), w = null != (t = (0, E._T)(null == _ ? true : _.user)) ? t : "", j = null != (n = (0, E._T)(v)) ? n : "", G = null != (a = (0, E._T)(S)) ? a : "", Z = 1 === d.length, B = (0, u.e7)([p.Z], () => p.Z.useReducedMotion);
+  } = (0, u.e7)([O.Z], () => O.Z.getCheckpointData()), m = (0, i.useContext)(y.Q), b = (0, f.dQu)(m.primaryColor).hex(), v = d[1], S = d[0], I = (0, u.e7)([h.default], () => h.default.getCurrentUser()), C = (0, i.useRef)(0), P = (0, i.useRef)(true), R = (0, i.useRef)(null), D = null != (t = (0, E._T)(null == _ ? true : _.user)) ? t : "", j = null != (n = (0, E._T)(v)) ? n : "", G = null != (a = (0, E._T)(S)) ? a : "", Z = 1 === d.length, B = (0, u.e7)([p.Z], () => p.Z.useReducedMotion);
   (0, i.useEffect)(() => (o === N.ij.FRIENDS_LEAVE && (P.current ? l() : B ? (s(), P.current = true) : C.current = setTimeout(() => {
     s(), P.current = true
   }, x)), () => clearTimeout(C.current)), [s, l, B, o]);
@@ -177,7 +177,7 @@ function G(e) {
   return (0, r.jsxs)(T.Z, {
     children: [(0, r.jsx)(c.jxI, {
       ref: R,
-      className: D.rive,
+      className: w.rive,
       fit: "contain",
       autoplay: false,
       onLoad: H,
@@ -188,20 +188,20 @@ function G(e) {
         "Avatar03/img": V(S),
         "Avatar04/img": V(null == _ ? true : _.user),
         "Avatar05/img": V(I),
-        "Avatar01/Username": w,
+        "Avatar01/Username": D,
         "Avatar02/Username": j,
         "Avatar03/Username": G,
-        "Avatar04/Username": w,
+        "Avatar04/Username": D,
         twoFriends: Z,
         reducedMotion: B
       },
       withReducedMotion: "play"
     }), (0, r.jsx)("div", {
-      className: D.container,
+      className: w.container,
       children: (0, r.jsxs)(A.ZP, {
         activeSlide: Y,
-        className: D.animatedSlides,
-        slideClassName: D.animatedSlide,
+        className: w.animatedSlides,
+        slideClassName: w.animatedSlide,
         children: [(0, r.jsx)(f.Mi4, {
           id: N.ij.FRIENDS_INTRO,
           children: (0, r.jsx)(M, {

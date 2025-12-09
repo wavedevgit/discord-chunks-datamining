@@ -34,11 +34,11 @@ function g(e) {
     N = null != (g = null == I || null == (t = I.description) ? true : t.trim()) ? g : true,
     P = (null == I ? true : I.headerBackground) != null && null != (E = u.Z.toURLSafe((0, c._W)(v, I.headerBackground, 256))) ? E : true,
     R = T.type === m.epS.DURABLE && A,
-    w = T.type === m.epS.DURABLE ? R ? h.intl.string(h.t.bm82mm) : h.intl.string(h.t["6gprwf"]) : true,
+    D = T.type === m.epS.DURABLE ? R ? h.intl.string(h.t.bm82mm) : h.intl.string(h.t["6gprwf"]) : true,
     {
-      price: D
+      price: w
     } = T;
-  return null == D ? null : (0, r.jsx)(f.A, {
+  return null == w ? null : (0, r.jsx)(f.A, {
     appId: v,
     skuId: T.id,
     transitionState: y,
@@ -54,8 +54,8 @@ function g(e) {
       title: C,
       description: N,
       imgSrc: P,
-      tag: null != w ? (0, r.jsx)(i.V, {
-        text: w
+      tag: null != D ? (0, r.jsx)(i.V, {
+        text: D
       }) : true,
       FallbackIcon: o.Prq
     })

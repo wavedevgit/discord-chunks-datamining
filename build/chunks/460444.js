@@ -595,11 +595,11 @@
           var y = a.print || console.log.bind(console),
             O = a.printErr || console.error.bind(console);
           Object.assign(a, g), g = null, a.thisProgram && (E = a.thisProgram), a.wasmBinary && (v = a.wasmBinary);
-          var v, S, I, T, A, C, N, P, R, w, D = false;
+          var v, S, I, T, A, C, N, P, R, D, w = false;
 
           function x() {
             var e = S.buffer;
-            a.HEAP8 = I = new Int8Array(e), a.HEAP16 = A = new Int16Array(e), a.HEAPU8 = T = new Uint8Array(e), a.HEAPU16 = C = new Uint16Array(e), a.HEAP32 = N = new Int32Array(e), a.HEAPU32 = P = new Uint32Array(e), a.HEAPF32 = R = new Float32Array(e), a.HEAPF64 = w = new Float64Array(e)
+            a.HEAP8 = I = new Int8Array(e), a.HEAP16 = A = new Int16Array(e), a.HEAPU8 = T = new Uint8Array(e), a.HEAPU16 = C = new Uint16Array(e), a.HEAP32 = N = new Int32Array(e), a.HEAPU32 = P = new Uint32Array(e), a.HEAPF32 = R = new Float32Array(e), a.HEAPF64 = D = new Float64Array(e)
           }
           var L = [],
             j = [],
@@ -614,7 +614,7 @@
             Z = null;
 
           function B(e) {
-            throw a.onAbort?.(e), O(e = "Aborted(" + e + ")"), D = true, e = new WebAssembly.RuntimeError(e + ". Build with -sASSERTIONS for more info."), i(e), e
+            throw a.onAbort?.(e), O(e = "Aborted(" + e + ")"), w = true, e = new WebAssembly.RuntimeError(e + ". Build with -sASSERTIONS for more info."), i(e), e
           }
           var F, V = e => e.startsWith("data:application/octet-stream;base64,"),
             H = e => e.startsWith("file://");
@@ -1125,7 +1125,7 @@
               }
             };
 
-          function ew(e, t = {}) {
+          function eD(e, t = {}) {
             if (!(e = eo(e))) return {
               path: "",
               node: null
@@ -1140,7 +1140,7 @@
               if (a && t.parent) break;
               if (n = eL(n, e[i]), r = et(r + "/" + e[i]), n.ua && (!a || a && t.gb) && (n = n.ua.root), !a || t.fb) {
                 for (a = 0; 40960 == (61440 & n.mode);)
-                  if (n = eq(r), n = ew(r = eo(en(r), n), {
+                  if (n = eq(r), n = eD(r = eo(en(r), n), {
                       Oa: t.Oa + 1
                     }).node, 40 < a++) throw new eC(32)
               }
@@ -1151,7 +1151,7 @@
             }
           }
 
-          function eD(e) {
+          function ew(e) {
             for (var t;;) {
               if (e === e.parent) return e = e.U.lb, t ? "/" !== e[e.length - 1] ? `${e}/${t}` : e + t : e;
               t = t ? `${e.name}/${t}` : e.name, e = e.parent
@@ -1229,7 +1229,7 @@
             var n = "/" === t;
             if (n && eO) throw new eC(10);
             if (!n && t) {
-              var r = ew(t, {
+              var r = eD(t, {
                 gb: false
               });
               if (t = r.path, (r = r.node).ua) throw new eC(10);
@@ -1244,7 +1244,7 @@
           }
 
           function eY(e, t, n) {
-            var r = ew(e, {
+            var r = eD(e, {
               parent: true
             }).node;
             if (!(e = er(e)) || "." === e || ".." === e) throw new eC(28);
@@ -1264,7 +1264,7 @@
 
           function ez(e, t) {
             if (!eo(e)) throw new eC(44);
-            var n = ew(t, {
+            var n = eD(t, {
               parent: true
             }).node;
             if (!n) throw new eC(44);
@@ -1275,9 +1275,9 @@
           }
 
           function eq(e) {
-            if (!(e = ew(e).node)) throw new eC(44);
+            if (!(e = eD(e).node)) throw new eC(44);
             if (!e.j.la) throw new eC(28);
-            return eo(eD(e.parent), e.j.la(e))
+            return eo(ew(e.parent), e.j.la(e))
           }
 
           function eQ(e, t, n) {
@@ -1298,7 +1298,7 @@
             else {
               e = et(e);
               try {
-                i = ew(e, {
+                i = eD(e, {
                   fb: !(131072 & t)
                 }).node
               } catch (e) {}
@@ -1311,7 +1311,7 @@
             if (8192 == (61440 & i.mode) && (t &= false), 65536 & t && 16384 != (61440 & i.mode)) throw new eC(54);
             if (!r && (n = i ? 40960 == (61440 & i.mode) ? 32 : 16384 == (61440 & i.mode) && ("r" !== eM(t) || 512 & t) ? 31 : ek(i, eM(t)) : 44)) throw new eC(n);
             if (512 & t && !r) {
-              if (!(n = "string" == typeof(n = i) ? ew(n, {
+              if (!(n = "string" == typeof(n = i) ? eD(n, {
                   fb: true
                 }).node : n).j.P) throw new eC(63);
               if (16384 == (61440 & n.mode)) throw new eC(31);
@@ -1324,7 +1324,7 @@
             }
             return t &= false, (i = eZ({
               node: i,
-              path: eD(i),
+              path: ew(i),
               flags: t,
               seekable: true,
               position: 0,
@@ -1522,14 +1522,14 @@
                 }, e[t].A = [], e[t].A[r.da] = r
               }
             },
-            tw = (e, t, n) => {
+            tD = (e, t, n) => {
               if (a.hasOwnProperty(e)) {
                 if (true === n || true !== a[e].A && true !== a[e].A[n]) throw new e3(`Cannot register public name '${e}' twice`);
                 if (tR(a, e, e), a.hasOwnProperty(n)) throw new e3(`Cannot register multiple overloads of a function with the same number of arguments (${n})!`);
                 a[e].A[n] = t
               } else a[e] = t, true !== n && (a[e].Lc = n)
             },
-            tD = e => {
+            tw = e => {
               if (true === e) return "_unknown";
               var t = (e = e.replace(/[^a-zA-Z0-9_]/g, "$")).charCodeAt(0);
               return 48 <= t && 57 >= t ? `_${e}` : e
@@ -1728,7 +1728,7 @@
                   };
                 case 8:
                   return function(e) {
-                    return this.fromWireType(w[e >> 3])
+                    return this.fromWireType(D[e >> 3])
                   };
                 default:
                   throw TypeError(`invalid float width (${t}): ${e}`)
@@ -2298,8 +2298,8 @@
               },
               _embind_register_class: (e, t, n, r, i, a, o, s, l, c, u, d, f) => {
                 u = ta(u), a = tW(i, a), s &&= tW(o, s), c &&= tW(l, c), f = tW(d, f);
-                var p = tD(u);
-                tw(p, function() {
+                var p = tw(u);
+                tD(p, function() {
                   tK(`Cannot construct ${u} due to unbound types`, [r])
                 }), tT([e, t, n], r ? [r] : [], t => {
                   if (t = t[0], r) var n, i = t.i,
@@ -2442,7 +2442,7 @@
                   argPackAdvance: 8,
                   readValueFromPointer: t3(t, n, r),
                   L: null
-                }), tw(t, i)
+                }), tD(t, i)
               },
               _embind_register_enum_value: (e, t, n) => {
                 var r = tf(e, "enum");
@@ -2467,7 +2467,7 @@
               },
               _embind_register_function: (e, t, n, r, i, a) => {
                 var o = tX(t, n);
-                e = tJ(e = ta(e)), i = tW(r, i), tw(e, function() {
+                e = tJ(e = ta(e)), i = tW(r, i), tD(e, function() {
                   tK(`Cannot call ${e} due to unbound types`, o)
                 }, t - 1), tT([], o, n => (tB(e, tq(e, [n[0], null].concat(n.slice(1)), null, i, a), t - 1), []))
               },
@@ -2638,7 +2638,7 @@
                 nu.length = 0;
                 for (var r; r = T[t++];) {
                   var i = 105 != r;
-                  i &= 112 != r, n += i && n % 8 ? 4 : 0, nu.push(112 == r ? P[n >> 2] : 105 == r ? N[n >> 2] : w[n >> 3]), n += i ? 8 : 4
+                  i &= 112 != r, n += i && n % 8 ? 4 : 0, nu.push(112 == r ? P[n >> 2] : 105 == r ? N[n >> 2] : D[n >> 3]), n += i ? 8 : 4
                 }
                 return X[e](...nu)
               },
@@ -2817,7 +2817,7 @@
 
           function nC() {
             function e() {
-              if (!n && (n = true, a.calledRun = true, !D)) {
+              if (!n && (n = true, a.calledRun = true, !w)) {
                 if (a.noFSInit || e$ || (e$ = true, a.stdin = a.stdin, a.stdout = a.stdout, a.stderr = a.stderr, a.stdin ? eJ("stdin", a.stdin) : ez("/dev/tty", "/dev/stdin"), a.stdout ? eJ("stdout", null, a.stdout) : ez("/dev/tty", "/dev/stdout"), a.stderr ? eJ("stderr", null, a.stderr) : ez("/dev/tty1", "/dev/stderr"), eQ("/dev/stdin", 0), eQ("/dev/stdout", 1), eQ("/dev/stderr", 1)), eA = false, J(j), r(a), a.onRuntimeInitialized && a.onRuntimeInitialized(), a.postRun)
                   for ("function" == typeof a.postRun && (a.postRun = [a.postRun]); a.postRun.length;) {
                     var e = a.postRun.shift();
@@ -3041,19 +3041,19 @@
                       p.forEach(function(t) {
                         e.pointerUp(t.transformedX, t.transformedY, t.identifier), e.pointerExit(t.transformedX, t.transformedY, t.identifier)
                       })
-                    }, R = 0, w = o; R < w.length; R++) {
-                    var y = w[R];
+                    }, R = 0, D = o; R < D.length; R++) {
+                    var y = D[R];
                     P(y)
                   }
                   break;
                 case "mouseup":
-                  for (var D = function(e) {
+                  for (var w = function(e) {
                       p.forEach(function(t) {
                         e.pointerUp(t.transformedX, t.transformedY, t.identifier)
                       })
                     }, x = 0, L = o; x < L.length; x++) {
                     var y = L[x];
-                    D(y)
+                    w(y)
                   }
               }
             }).bind(r),
@@ -3953,7 +3953,7 @@
     ! function(e) {
       e[e.AVAILABLE = 0] = "AVAILABLE", e[e.UNAVAILABLE = 1] = "UNAVAILABLE"
     }(l || (l = {}));
-    var w = new(function(e) {
+    var D = new(function(e) {
         function t() {
           var t = null !== e && e.apply(this, arguments) || this;
           return t._started = false, t._enabled = false, t._status = l.UNAVAILABLE, t
@@ -4057,11 +4057,11 @@
           configurable: true
         }), t
       }(P)),
-      D = function() {
+      w = function() {
         function e() {}
         return module.prototype.observe = function() {}, module.prototype.unobserve = function() {}, module.prototype.disconnect = function() {}, module
       }(),
-      x = globalThis.ResizeObserver || D,
+      x = globalThis.ResizeObserver || w,
       L = new(function() {
         function e() {
           var e = this;
@@ -4269,12 +4269,12 @@
           this.eventCleanup && (this.eventCleanup(), this.eventCleanup = null)
         }, t.prototype.initializeAudio = function() {
           var e, t = this;
-          w.status == l.UNAVAILABLE && (null == (e = this.artboard) ? true : module.hasAudio) && null === this._audioEventListener && (this._audioEventListener = {
+          D.status == l.UNAVAILABLE && (null == (e = this.artboard) ? true : module.hasAudio) && null === this._audioEventListener && (this._audioEventListener = {
             type: o.AudioStatusChange,
             callback: function() {
               return t.onSystemAudioChanged()
             }
-          }, w.add(this._audioEventListener), w.establishAudio())
+          }, D.add(this._audioEventListener), D.establishAudio())
         }, t.prototype.initArtboardSize = function() {
           this.artboard && (this._artboardWidth = this.artboard.width = this._artboardWidth || this.artboard.width, this._artboardHeight = this.artboard.height = this._artboardHeight || this.artboard.height)
         }, t.prototype.initData = function(e, t, n, r, i) {
@@ -4319,7 +4319,7 @@
               });
               return
             }
-            if (this.artboard = s, s.volume = this._volume * w.systemVolume, this.animator = new N(this.runtime, this.artboard, this.eventManager), t.length > 0 || n.length > 0 ? (a = t.concat(n), this.animator.initLinearAnimations(t, r), this.animator.initStateMachines(n, r)) : a = [this.animator.atLeastOne(r, false)], this.taskQueue.add({
+            if (this.artboard = s, s.volume = this._volume * D.systemVolume, this.animator = new N(this.runtime, this.artboard, this.eventManager), t.length > 0 || n.length > 0 ? (a = t.concat(n), this.animator.initLinearAnimations(t, r), this.animator.initStateMachines(n, r)) : a = [this.animator.atLeastOne(r, false)], this.taskQueue.add({
                 event: {
                   type: r ? o.Play : o.Pause,
                   data: a
@@ -4414,7 +4414,7 @@
           configurable: true
         }), t.prototype.cleanup = function() {
           var e, t;
-          this.destroyed = true, this.stopRendering(), this.cleanupInstances(), null !== this._observed && L.remove(this._observed), this.removeRiveListeners(), this.file && (null == (e = this.riveFile) || module.cleanup(), this.file = null), this.riveFile = null, this.deleteRiveRenderer(), null !== this._audioEventListener && (w.remove(this._audioEventListener), this._audioEventListener = null), null == (t = this._viewModelInstance) || t.cleanup(), this._viewModelInstance = null, this._dataEnums = null
+          this.destroyed = true, this.stopRendering(), this.cleanupInstances(), null !== this._observed && L.remove(this._observed), this.removeRiveListeners(), this.file && (null == (e = this.riveFile) || module.cleanup(), this.file = null), this.riveFile = null, this.deleteRiveRenderer(), null !== this._audioEventListener && (D.remove(this._audioEventListener), this._audioEventListener = null), null == (t = this._viewModelInstance) || t.cleanup(), this._viewModelInstance = null, this._dataEnums = null
         }, t.prototype.deleteRiveRenderer = function() {
           var e;
           null == (e = this.renderer) || module.delete(), this.renderer = null
@@ -4688,7 +4688,7 @@
             return this.artboard && this.artboard.volume !== this._volume && (this._volume = this.artboard.volume), this._volume
           },
           set: function(e) {
-            this._volume = e, this.artboard && (this.artboard.volume = e * w.systemVolume)
+            this._volume = e, this.artboard && (this.artboard.volume = e * D.systemVolume)
           },
           enumerable: false,
           configurable: true

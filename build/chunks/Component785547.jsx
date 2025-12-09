@@ -62,14 +62,14 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var D = function(e) {
+var w = function(e) {
   return e.PLAY = "play", e.NOW_PLAYING = "now_playing", e.INSTALL = "install", e.UPDATE = "update", e.PAUSED = "paused", e.LOCATE = "locate", e.UNINSTALLING = "uninstalling", e.QUEUED = "queued", e.DOWNLOADING = "downloading", e.UNSUPPORTED_OS = "unsupported_os", e.ADD_TO_LIBRARY = "add_to_library", e.PREORDER_WAIT = "preorder_wait", e
-}(D || {});
+}(w || {});
 let x = Object.freeze({
     [Chunk981631.apO.PLAY]: "play",
     [Chunk981631.apO.INSTALL]: "install",
@@ -88,7 +88,7 @@ function j(e) {
 }
 class M extends(r = Chunk473749.Component) {
   get analyticsLocation() {
-    return w(P({}, this.props.analyticsContext.location), {
+    return D(P({}, this.props.analyticsContext.location), {
       object: Chunk981631.qAy.BUTTON_CTA
     })
   }
@@ -269,7 +269,7 @@ function k(e) {
   let {
     libraryApplication: t
   } = e, n = (0, f.O)(), [r, a] = (0, o.Wu)([E.Z, b.Z], () => [(0, h.i)(t, E.Z, b.Z), E.Z.getState(t.id, t.branchId)], [t]), s = (0, o.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), l = (0, o.e7)([m.Z], () => m.Z.hasNoBuild(t.id, t.branchId), [t]);
-  return (0, i.jsx)(M, w(P({}, e), {
+  return (0, i.jsx)(M, D(P({}, e), {
     analyticsContext: n,
     actionState: r,
     dispatchState: a,
@@ -283,4 +283,4 @@ N(M, "defaultProps", {
   hideProgress: false,
   isPlayShiny: false,
   tooltipPosition: "top"
-}), N(M, "ButtonStates", D)
+}), N(M, "ButtonStates", w)

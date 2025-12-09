@@ -50,7 +50,7 @@ function V(e) {
   if (n.isForumPost()) return (0, i.jsx)(S.Z, {
     channel: n
   });
-  if (C.Ec.has(n.type)) return (0, i.jsx)(w.Z, {
+  if (y.Ec.has(n.type)) return (0, i.jsx)(w.Z, {
     channel: n
   });
   if (a) return (0, i.jsx)(M.Z, {
@@ -70,33 +70,33 @@ function H(e) {
     channel: n,
     showingBanner: p
   } = e, h = (0, d.ZP)(n), {
-    type: C
+    type: y
   } = n, v = (0, l.e7)([O.default], () => n.isPrivate() ? O.default.getUser(n.getRecipientId()) : null), S = x.ZP.useUserTag(v), {
     canManageRoles: N,
     canReadMessageHistory: A
   } = (0, l.cj)([_.Z], () => ({
     canManageRoles: _.Z.can(R.Plq.MANAGE_ROLES, n),
     canReadMessageHistory: _.Z.can(R.Plq.READ_MESSAGE_HISTORY, n)
-  })), w = (0, l.e7)([g.Z], () => C === R.d4z.DM ? g.Z.getMutualGuilds(n.getRecipientId()) : null, [n, C]), M = (0, u.Z)(null != (t = null == v ? true : v.id) ? t : R.lds), {
+  })), w = (0, l.e7)([g.Z], () => y === R.d4z.DM ? g.Z.getMutualGuilds(n.getRecipientId()) : null, [n, y]), M = (0, u.Z)(null != (t = null == v ? true : v.id) ? t : R.lds), {
     authorizedAppToken: H,
     authorizedAppsFetchState: F
-  } = (0, l.cj)([y.default], () => ({
-    authorizedAppToken: y.default.getNewestTokenForApplication(null == M ? true : M.id),
-    authorizedAppsFetchState: y.default.getFetchState()
+  } = (0, l.cj)([C.default], () => ({
+    authorizedAppToken: C.default.getNewestTokenForApplication(null == M ? true : M.id),
+    authorizedAppsFetchState: C.default.getFetchState()
   })), B = c.Z.useExperiment({
     location: "EmptyMessages"
   }).enabledDesktop;
   if (r.useEffect(() => {
-      C === R.d4z.DM && null == w && null != v && o.Z.wait(() => (0, b.Z)(n.getRecipientId(), v.getAvatarURL(null, 80), {
+      y === R.d4z.DM && null == w && null != v && o.Z.wait(() => (0, b.Z)(n.getRecipientId(), v.getAvatarURL(null, 80), {
         withMutualGuilds: true
       }))
-    }, [w, C, n, v]), r.useEffect(() => {
-      (null == v ? true : v.bot) && F === y.FetchState.NOT_FETCHED && s.Z.fetch()
+    }, [w, y, n, v]), r.useEffect(() => {
+      (null == v ? true : v.bot) && F === C.FetchState.NOT_FETCHED && s.Z.fetch()
     }, [null == v ? true : v.bot, F]), n.isSystemDM()) return (0, i.jsx)(T.Z, {
     channel: n,
     children: D.intl.string(D.t.Rzvnig)
   });
-  if (C === R.d4z.DM) {
+  if (y === R.d4z.DM) {
     let e;
     return null != v && null != M ? null != H && (e = (0, i.jsxs)("div", {
       className: k.buttonContainer,

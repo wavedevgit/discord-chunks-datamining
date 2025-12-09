@@ -67,7 +67,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = () => (0, Chunk54381.jsx)("div", {
+let D = () => (0, Chunk54381.jsx)("div", {
     className: Chunk893296.comparisonTablePill,
     children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
       className: Chunk893296.mostPopularText,
@@ -75,7 +75,7 @@ let w = () => (0, Chunk54381.jsx)("div", {
       children: Chunk388032.intl.string(Chunk388032.t.TR2B4T)
     })
   }),
-  D = () => (0, Chunk54381.jsx)("div", {
+  w = () => (0, Chunk54381.jsx)("div", {
     className: Chunk893296.comparisonTablePill,
     children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
       className: Chunk893296.mostPopularText,
@@ -270,7 +270,7 @@ let w = () => (0, Chunk54381.jsx)("div", {
       k = (0, m.CY)(y.Xh.PREMIUM_MONTH_TIER_2),
       Z = (0, b.e)();
     if (!S || !I) return null;
-    n = l ? null : null != T ? (0, r.jsx)(D, {}) : (0, r.jsx)(w, {});
+    n = l ? null : null != T ? (0, r.jsx)(w, {}) : (0, r.jsx)(D, {});
     let B = A === y.Si.TIER_0 || u === y.PremiumTypes.TIER_0;
     return (0, r.jsx)(f.Gt, {
       value: O,

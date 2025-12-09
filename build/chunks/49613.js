@@ -78,7 +78,7 @@ function S(e) {
     if (null !== r(u)) h = true, I || (I = true, o());
     else {
       var t = r(d);
-      null !== t && D(S, t.startTime - e)
+      null !== t && w(S, t.startTime - e)
     }
 }
 var I = false,
@@ -119,7 +119,7 @@ function P() {
             if (null !== p) n = true;
             else {
               var c = r(d);
-              null !== c && D(S, c.startTime - module), n = false
+              null !== c && w(S, c.startTime - module), n = false
             }
           }
           break e
@@ -139,15 +139,15 @@ if ("function" == typeof O) o = function() {
 };
 else if ("undefined" != typeof MessageChannel) {
   var R = new MessageChannel,
-    w = R.port2;
+    D = R.port2;
   R.port1.onmessage = P, o = function() {
-    w.postMessage(null)
+    D.postMessage(null)
   }
 } else o = function() {
   b(P, 0)
 };
 
-function D(e, n) {
+function w(e, n) {
   T = b(function() {
     e(t.unstable_now())
   }, n)
@@ -220,7 +220,7 @@ exports.unstable_IdlePriority = 5, exports.unstable_ImmediatePriority = 1, expor
     startTime: a,
     expirationTime: l,
     sortIndex: false
-  }, a > s ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (y(T), T = false) : g = true, D(S, a - s))) : (e.sortIndex = l, n(u, e), h || m || (h = true, I || (I = true, o()))), e
+  }, a > s ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (y(T), T = false) : g = true, w(S, a - s))) : (e.sortIndex = l, n(u, e), h || m || (h = true, I || (I = true, o()))), e
 }, exports.unstable_shouldYield = N, exports.unstable_wrapCallback = function(e) {
   var t = _;
   return function() {

@@ -30,29 +30,29 @@ function I(e) {
   var t, n, I, T, A, C, N, P;
   let {
     guildId: R,
-    skuId: w,
-    channel: D
-  } = e, x = (0, o.e7)([p.Z], () => p.Z.isFetchingForSKU(w)), L = (0, o.e7)([f.Z], () => f.Z.get(w)), j = null == L ? true : L.applicationId, {
+    skuId: D,
+    channel: w
+  } = e, x = (0, o.e7)([p.Z], () => p.Z.isFetchingForSKU(D)), L = (0, o.e7)([f.Z], () => f.Z.get(D)), j = null == L ? true : L.applicationId, {
     analyticsLocations: M
   } = (0, c.ZP)(l.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
   (0, u.p2)();
-  let k = (0, o.e7)([d.default], () => D.isDM() && null != D.recipients && 0 !== D.recipients.length ? d.default.getUser(D.recipients[0]) : null),
+  let k = (0, o.e7)([d.default], () => w.isDM() && null != w.recipients && 0 !== w.recipients.length ? d.default.getUser(w.recipients[0]) : null),
     {
       primaryIconAsset: U,
       primaryIconLabel: G
     } = i.useMemo(() => (0, m.FE)(L, j), [L, j]);
   i.useEffect(() => {
-    null == R || null == w || p.Z.isFetchingForSKU(w) || (0, h.y)(R, w)
-  }, [R, w]);
+    null == R || null == D || p.Z.isFetchingForSKU(D) || (0, h.y)(R, D)
+  }, [R, D]);
   let Z = i.useCallback(e => {
       e.stopPropagation(), (null == L ? true : L.applicationId) != null && null != R && (0, g.g)({
-        skuId: w,
+        skuId: D,
         applicationId: L.applicationId,
         guildId: R,
         isStorefront: false,
         analyticsLocations: M
       })
-    }, [w, null == L ? true : L.applicationId, R, M]),
+    }, [D, null == L ? true : L.applicationId, R, M]),
     B = i.useCallback(() => {
       null != L && (0, E.P)(L, {
         isGift: false
@@ -78,7 +78,7 @@ function I(e) {
     children: [(0, r.jsx)(y.ZP, {
       className: S.card,
       applicationId: L.applicationId,
-      skuId: w,
+      skuId: D,
       variant: y.Zp.EMBEDDED,
       onClick: Z,
       analyticsLocations: M

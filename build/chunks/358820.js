@@ -5,7 +5,7 @@ require.d(exports, {
   fz: () => R,
   ge: () => j,
   r5: () => M,
-  rk: () => w,
+  rk: () => D,
   wV: () => L
 }), require("./388685.js"), require("./415506.js"), require("./457542.js");
 var Chunk392711 = require("./392711.js"),
@@ -149,7 +149,7 @@ function R(e) {
   });
   return P.set(r, l), l
 }
-async function w(e) {
+async function D(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
   await M();
   let n = performance.now();
@@ -171,7 +171,7 @@ async function w(e) {
     })
   }
 }
-async function D(e) {
+async function w(e) {
   if (null == e.getCatalogNonce || null == e.getModuleVersion || null == e.getRequestedModelIds || null == e.setCatalog) throw Error("Voice filters signed catalog is not supported");
   let t = e.getCatalogNonce(),
     n = await i.tn.get({
@@ -213,7 +213,7 @@ async function L() {
   if (!N) try {
     N = true;
     let e = Chunk998502.ZP.getVoiceFilters(),
-      t = await D(module),
+      t = await w(module),
       n = null == Chunk709706.Z.getCatalogLastFetchTime() ? await x(exports) : true;
     await Chunk570140.Z.dispatch({
       type: "VOICE_FILTER_CATALOG_FETCH_SUCCESS",

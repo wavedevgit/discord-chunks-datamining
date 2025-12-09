@@ -54,7 +54,7 @@ function R(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -65,8 +65,8 @@ function w(e, t) {
   return n
 }
 
-function D(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+function w(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -98,7 +98,7 @@ function M(e) {
     author: n,
     message: a,
     channel: P,
-    userOverride: w,
+    userOverride: D,
     compact: L = false,
     withMentionPrefix: j = false,
     showPopout: M = false,
@@ -140,7 +140,7 @@ function M(e) {
     if (ei) {
       if (ep && null != ee) {
         var e;
-        return D(R({}, em), {
+        return w(R({}, em), {
           textDecorationColor: null != (e = null == ee ? true : ee.primaryColor) ? e : true
         })
       }
@@ -170,7 +170,7 @@ function M(e) {
     contextGuildId: q,
     className: N.clanTagChiplet,
     badgeSize: C.Gg.SIZE_12
-  }) : null, [L, n.primaryGuild, q, a.author.id, k]), eO = null != w ? w : a.author, ev = null != V && null != M ? (0, r.jsx)(v.Z, {
+  }) : null, [L, n.primaryGuild, q, a.author.id, k]), eO = null != D ? D : a.author, ev = null != V && null != M ? (0, r.jsx)(v.Z, {
     targetElementRef: K,
     user: eO,
     renderPopout: V,
@@ -190,7 +190,7 @@ function M(e) {
         onClick: t
       } = e, n = x(e, ["onClick"]);
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(d.P3F, D(R({
+        children: [(0, r.jsx)(d.P3F, w(R({
           tag: "span",
           innerRef: K
         }, n, eb), {
@@ -199,7 +199,7 @@ function M(e) {
       })
     }
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(d.P3F, D(R({}, eb), {
+    children: [(0, r.jsx)(d.P3F, w(R({}, eb), {
       className: o()(eb.className, G)
     })), ey]
   }), eS = null != H ? H[0] : null, eI = null != H ? H[1] : null;

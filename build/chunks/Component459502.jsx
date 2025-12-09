@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 459502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -9,10 +9,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk357156 = require("./357156.js"),
+  Chunk516191 = require("./516191.jsx"),
+  Chunk430104 = require("./430104.js"),
   Chunk592125 = require("./592125.js"),
   Chunk115648 = require("./115648.js"),
   Chunk15274 = require("./15274.jsx"),
   Chunk924301 = require("./924301.js"),
+  Chunk658041 = require("./658041.js"),
   Chunk504160 = require("./504160.js"),
   Chunk554747 = require("./554747.js"),
   Chunk854698 = require("./854698.js"),
@@ -20,15 +23,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk837815 = require("./837815.js");
 
-function C(e) {
+function _(e) {
   let {
     channelId: t,
-    showDismiss: C = true
-  } = e, y = (0, r.e7)([s.Z], () => s.Z.getChannel(t), [t]), v = (0, h.sz)(t), _ = null != (0, h.qY)(t), {
-    canManageGuildEvent: O
-  } = (0, o.XJ)(y), x = (0, r.e7)([c.Z], () => v.filter(e => !c.Z.isEventDismissed(e.id)), [v]), E = (0, r.cj)([d.ZP], () => x.reduce((e, t) => (e[t.id] = d.ZP.getUserCount(t.id, (0, f.DK)(t)), e), {}), [x]);
-  return x.length < 1 || _ ? null : (0, i.jsx)(i.Fragment, {
-    children: x.map(e => (0, i.jsx)(m.Z, {
+    showDismiss: _ = true
+  } = e, O = (0, r.e7)([u.Z], () => u.Z.getChannel(t), [t]), x = (0, g.sz)(t), E = null != (0, g.qY)(t), {
+    canManageGuildEvent: j
+  } = (0, o.XJ)(O), S = (0, r.e7)([d.Z], () => x.filter(e => !d.Z.isEventDismissed(e.id)), [x]), P = (0, r.cj)([h.ZP], () => S.reduce((e, t) => (e[t.id] = h.ZP.getUserCount(t.id, (0, b.DK)(t)), e), {}), [S]);
+  return S.length < 1 || E ? null : (0, i.jsx)(i.Fragment, {
+    children: S.map(e => (0, i.jsx)(y.Z, {
       icon: (0, i.jsx)(a.Que, {
         size: "custom",
         color: "currentColor",
@@ -36,59 +39,63 @@ function C(e) {
         width: 20
       }),
       color: l.Z.unsafe_rawColors.GREEN_360.css,
-      title: g.intl.formatToPlainString(O(e) ? g.t["1vGXqM"] : g.t.xMJyla, {
+      title: C.intl.formatToPlainString(j(e) ? C.t["1vGXqM"] : C.t.xMJyla, {
         eventName: e.name
       }),
-      description: g.intl.formatToPlainString(g.t.PTebCR, {
-        startTime: (0, f.ub)(e.scheduled_start_time).startDateTimeString
+      description: C.intl.formatToPlainString(C.t.PTebCR, {
+        startTime: (0, b.ub)(e.scheduled_start_time).startDateTimeString
       }),
-      onClick: () => {
-        O(e) ? (0, a.ZDy)(async () => {
-          let {
-            default: t
-          } = await Promise.all([n.e("84722"), n.e("51885")]).then(n.bind(n, 296864));
-          return n => {
-            var r, l;
-            return (0, i.jsx)(t, (r = function(e) {
-              for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                  i = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                  return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), i.forEach(function(t) {
-                  var i;
-                  i = n[t], t in e ? Object.defineProperty(e, t, {
-                    value: i,
-                    enumerable: true,
-                    configurable: true,
-                    writable: true
-                  }) : e[t] = i
-                })
+      onClick: () => (function(e) {
+        let t = j(e),
+          r = () => {
+            (0, a.ZDy)(async () => {
+              let {
+                default: t
+              } = await Promise.all([n.e("84722"), n.e("51885")]).then(n.bind(n, 296864));
+              return n => {
+                var r, l;
+                return (0, i.jsx)(t, (r = function(e) {
+                  for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {},
+                      i = Object.keys(n);
+                    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                      return Object.getOwnPropertyDescriptor(n, e).enumerable
+                    }))), i.forEach(function(t) {
+                      var i;
+                      i = n[t], t in e ? Object.defineProperty(e, t, {
+                        value: i,
+                        enumerable: true,
+                        configurable: true,
+                        writable: true
+                      }) : e[t] = i
+                    })
+                  }
+                  return e
+                }({}, n), l = l = {
+                  event: e
+                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+                  var n = Object.keys(e);
+                  if (Object.getOwnPropertySymbols) {
+                    var i = Object.getOwnPropertySymbols(e);
+                    n.push.apply(n, i)
+                  }
+                  return n
+                })(Object(l)).forEach(function(e) {
+                  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+                }), r))
               }
-              return e
-            }({}, n), l = l = {
-              event: e
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-              var n = Object.keys(e);
-              if (Object.getOwnPropertySymbols) {
-                var i = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, i)
-              }
-              return n
-            })(Object(l)).forEach(function(e) {
-              Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-            }), r))
-          }
-        }) : (0, u.bO)({
+            })
+          };
+        t && (0, c.u1)() && (0, f.s)(e) ? (0, s.Z)(r) : t ? r() : (0, p.bO)({
           eventId: e.id
         })
-      },
-      onDismiss: C ? () => {
+      })(e),
+      onDismiss: _ ? () => {
         var t;
-        return t = e.id, void(0, p.Xy)(t)
+        return t = e.id, void(0, m.Xy)(t)
       } : true,
-      userCount: E[e.id],
-      className: b.eventPrompt
+      userCount: P[e.id],
+      className: v.eventPrompt
     }, e.id))
   })
 }

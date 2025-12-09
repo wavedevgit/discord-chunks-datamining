@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk765179 = require("./765179.js"),
   Chunk630564 = require("./630564.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,14 +42,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -86,7 +86,7 @@ function j(e) {
     onClose: v,
     onHover: I
   } = e, {
-    analyticsLocations: w
+    analyticsLocations: D
   } = (0, f.ZP)(), x = n !== T.A3.INACTIVE, j = (0, y.Z)(t), [M, k] = i.useState(false), [U, G] = i.useState(false), Z = U, B = i.useCallback(() => {
     let e = m.Z.getGuild(t);
     null != e && (0, p.u)({
@@ -95,10 +95,10 @@ function j(e) {
         section: A.jXE.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
-      analyticsLocations: w,
+      analyticsLocations: D,
       guild: e
     })
-  }, [t, w]), F = i.useCallback(() => {
+  }, [t, D]), F = i.useCallback(() => {
     v(), (0, S.Z)(t, d.Z.GUILD_POWERUPS_MARKETING, b)
   }, [t, b, v]), V = {
     tension: 400,
@@ -140,7 +140,7 @@ function j(e) {
         style: H
       })
     }), (0, r.jsxs)(s.animated.div, {
-      style: L(D({}, Y), {
+      style: L(w({}, Y), {
         transform: Y.y.to(e => "translateY(".concat(e, "px)"))
       }),
       className: o()(R.contentContainer, P.contentContainer),

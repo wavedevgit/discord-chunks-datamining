@@ -82,7 +82,7 @@ function T(e) {
     onView: N,
     presenceActivity: P,
     analyticsLocations: R
-  } = e, w = (0, s.e7)([h.Z], () => h.Z.getMessages(o.id)), D = i.useMemo(() => {
+  } = e, D = (0, s.e7)([h.Z], () => h.Z.getMessages(o.id)), w = i.useMemo(() => {
     let e = [];
     return (null != _ ? e = [{
       label: O.intl.string(O.t["s+J8Dl"]),
@@ -94,10 +94,10 @@ function T(e) {
           embedded: m
         })
       }
-    }] : null != S && (e = [S]), e.length > 0 && !(0, E.b)(t.id, w, n.id, P)) ? [] : e
-  }, [m, _, S, w, P, n.id, t.id]), x = D.some(e => e.trackingArea === d.j_.CLOUD_PLAY);
+    }] : null != S && (e = [S]), e.length > 0 && !(0, E.b)(t.id, D, n.id, P)) ? [] : e
+  }, [m, _, S, D, P, n.id, t.id]), x = w.some(e => e.trackingArea === d.j_.CLOUD_PLAY);
   (0, b.Z)(x, R);
-  let L = D.length > 0,
+  let L = w.length > 0,
     j = i.useMemo(() => (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
       className: v.description,
@@ -105,7 +105,7 @@ function T(e) {
       lineClamp: 3,
       children: (0, g.wR)(t, a, o, p, L)
     }), [t, a, o, p, L]);
-  return 0 === D.length ? (0, r.jsx)(I, {
+  return 0 === w.length ? (0, r.jsx)(I, {
     message: t,
     applicationName: a,
     iconSrc: C,
@@ -120,7 +120,7 @@ function T(e) {
     bannerAspectRatio: u.u.ACTIVITY,
     iconSrc: null != C ? C : true,
     info: j,
-    actions: D,
+    actions: w,
     onClickContent: A,
     trackingConfig: {
       id: n.id,

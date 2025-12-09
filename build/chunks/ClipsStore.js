@@ -67,8 +67,8 @@ let y = "default",
   N = null,
   P = [],
   R = null,
-  w = {},
-  D = new Map,
+  D = {},
+  w = new Map,
   x = {
     clipsEnabled: false,
     storageLocation: y,
@@ -153,7 +153,7 @@ function G(e) {
   if (I += 1, L.hasTakenDecoupledClip = L.hasTakenDecoupledClip || t === p.X9.DECOUPLED, null != n && null != r) {
     var i;
     let e = Date.now();
-    R = null != R ? R : e, w[n] = [...null != (i = w[n]) ? i : [], {
+    R = null != R ? R : e, D[n] = [...null != (i = D[n]) ? i : [], {
       timestamp: e,
       thumbnail: r
     }]
@@ -165,7 +165,7 @@ function Z(e) {
     streamKey: t,
     timestamp: n
   } = e;
-  R === n && (R = null), null == n ? w[t] = [] : w[t] = w[t].filter(e => e.timestamp !== n)
+  R === n && (R = null), null == n ? D[t] = [] : D[t] = D[t].filter(e => e.timestamp !== n)
 }
 
 function B() {
@@ -268,7 +268,7 @@ function Q(e) {
   let {
     streamKey: t
   } = e;
-  if (R = null, w[t] = [], null == A || (0, c.my)(t).ownerId !== u.default.getId()) returnfalse;
+  if (R = null, D[t] = [], null == A || (0, c.my)(t).ownerId !== u.default.getId()) returnfalse;
   A = 0 === A.newClipIds.length ? null : b(g({}, A), {
     ended: true
   })
@@ -342,8 +342,8 @@ function ea(e, t, n) {
       a = t.substring(n),
       o = JSON.parse(a);
     if (null == o.id) returnfalse;
-    let s = D.get(e);
-    return null == s && (s = new Set, D.set(e, s)), s.add(o.id), true
+    let s = w.get(e);
+    return null == s && (s = new Set, w.set(e, s)), s.add(o.id), true
   } catch (e) {
     returnfalse
   }
@@ -389,10 +389,10 @@ class el extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   getStreamClipAnimations(e) {
     var t;
-    return null != (t = w[e]) ? t : O
+    return null != (t = D[e]) ? t : O
   }
   hasAnyClipAnimations() {
-    return Object.values(w).some(e => e.length > 0)
+    return Object.values(D).some(e => e.length > 0)
   }
   getHardwareClassification() {
     return L.hardwareClassification
@@ -446,7 +446,7 @@ class el extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   wasClipSharedInChannel(e, t) {
     var n;
-    let r = D.get(t);
+    let r = w.get(t);
     return null != (n = null == r ? true : r.has(e)) && n
   }
 }

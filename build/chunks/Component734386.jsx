@@ -81,7 +81,7 @@ function w(e) {
       className: A.markup,
       children: T.intl.format(T.t.QuwqjG, {
         channelName: o,
-        topicHook: () => y.Z.parseTopic(t.topic, true, {
+        topicHook: () => C.Z.parseTopic(t.topic, true, {
           channelId: t.id
         })
       })
@@ -144,7 +144,7 @@ function w(e) {
           disabled: !U,
           verified: s,
           onClick: () => {
-            C.Z.open(t.guild_id, Z.pNK.MEMBERS), C.Z.selectRole(e.id)
+            y.Z.open(t.guild_id, Z.pNK.MEMBERS), y.Z.selectRole(e.id)
           }
         }, e.id) : (0, i.jsx)(b.Z, {
           className: a()(N.role, {

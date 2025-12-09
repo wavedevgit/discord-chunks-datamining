@@ -69,14 +69,14 @@ function O(e, t) {
     Component: N,
     events: P,
     play: R
-  } = (0, l.z)(), w = (0, f.v)(u.U);
+  } = (0, l.z)(), D = (0, f.v)(u.U);
   return n ? null : (0, r.jsx)("div", {
     className: o()(_.CT, h.buttonContainer),
     ref: t,
     children: (0, r.jsx)(c.u, {
-      shouldShow: null != w,
+      shouldShow: null != D,
       text: m.intl.string(m.t.oOJ7KU),
-      keyboardShortcut: w,
+      keyboardShortcut: D,
       children: (0, r.jsx)(p.Z, y(E({
         className: o()(h.button, h.stickerButton)
       }, P), {

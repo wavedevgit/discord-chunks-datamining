@@ -333,12 +333,12 @@ var P = function(e, t, n, r) {
   returntrue
 };
 let R = false,
-  w, D = {};
+  D, w = {};
 
 function x() {
   if (!R) return;
   let e = null == r ? true : r.getStyle();
-  null == module || P(module, D) ? null != w && cancelAnimationFrame(w) : (D = module, null == r || r.invalidate()), w = requestAnimationFrame(x)
+  null == module || P(module, w) ? null != D && cancelAnimationFrame(D) : (w = module, null == r || r.invalidate()), D = requestAnimationFrame(x)
 }
 let L = false,
   j = {
@@ -349,10 +349,10 @@ let L = false,
       L = e, null == r || r.invalidate()
     },
     enableAnimationTracking() {
-      R = true, w = requestAnimationFrame(x)
+      R = true, D = requestAnimationFrame(x)
     },
     disableAnimationTracking() {
-      R = false, null != w && cancelAnimationFrame(w)
+      R = false, null != D && cancelAnimationFrame(D)
     }
   };
 

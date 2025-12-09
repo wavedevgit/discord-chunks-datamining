@@ -328,7 +328,7 @@ function R(e, t) {
   for (; r && (0, a.Ze)(r) && N(r);) r = P(r, t);
   return r && (0, a.Py)(r) && N(r) && !(0, a.hT)(r) ? n : r || (0, a.gQ)(e) || n
 }
-let w = async function(e) {
+let D = async function(e) {
   let t = this.getOffsetParent || R,
     n = this.getDimensions,
     r = await n(e.floating);
@@ -343,7 +343,7 @@ let w = async function(e) {
   }
 };
 
-function D(e) {
+function w(e) {
   return "rtl" === (0, a.Dx)(e).direction
 }
 let x = {
@@ -351,12 +351,12 @@ let x = {
   getDocumentElement: Chunk274676.tF,
   getClippingRect: T,
   getOffsetParent: R,
-  getElementRects: w,
+  getElementRects: D,
   getClientRects: h,
   getDimensions: A,
   getScale: l,
   isElement: Chunk274676.kK,
-  isRTL: D
+  isRTL: w
 };
 
 function L(e, t) {

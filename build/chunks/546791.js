@@ -5,7 +5,7 @@ require.d(exports, {
   E2: () => A,
   Kp: () => x,
   LI: () => b,
-  MH: () => D,
+  MH: () => w,
   Qr: () => E,
   _p: () => T,
   f0: () => v,
@@ -95,10 +95,10 @@ let f = 60,
   },
   P = (e, t) => (0, l.PO)("family_center_activity_card") ? t : e,
   R = (e, t) => (0, l.vE)("family_center_activity_card") ? t : e,
-  w = () => Object.values(Chunk914788.Z.getLinkedUsers()).some(e => e.link_status === c.ne.ACTIVE),
-  D = () => {
+  D = () => Object.values(Chunk914788.Z.getLinkedUsers()).some(e => e.link_status === c.ne.ACTIVE),
+  w = () => {
     let e = Chunk594174.default.getCurrentUser(),
-      t = w(),
+      t = D(),
       n = (0, Chunk277537.vE)("settings-controls");
     return (null == module ? true : module.nsfwAllowed) === false && exports && require
   },

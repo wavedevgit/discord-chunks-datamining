@@ -70,9 +70,9 @@ function R(e, t) {
   }), e
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
-  var n, r, i = D(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -80,7 +80,7 @@ function w(e, t) {
   return i
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -186,8 +186,8 @@ function U(e) {
     renderVisualPlaceholderComponent: N,
     className: P,
     imgContainerClassName: R,
-    imgClassName: w,
-    focusable: D,
+    imgClassName: D,
+    focusable: w,
     hiddenSpoilers: x,
     mediaLayoutType: L,
     maxWidth: j,
@@ -279,8 +279,8 @@ function U(e) {
           renderAdjacentContent: ei,
           containerClassName: P,
           className: R,
-          imageClassName: w,
-          shouldLink: D,
+          imageClassName: D,
+          shouldLink: w,
           hiddenSpoilers: x,
           responsive: true,
           mediaLayoutType: L,
@@ -306,7 +306,7 @@ function U(e) {
         className: o()(P, {
           [T.hasFooter]: U
         }),
-        playable: D,
+        playable: w,
         responsive: true,
         mediaLayoutType: L,
         maxWidth: j,
@@ -324,7 +324,7 @@ function U(e) {
         item: n,
         message: t,
         className: R,
-        imageClassName: w,
+        imageClassName: D,
         maxWidth: j,
         maxHeight: M,
         mediaLayoutType: L,
@@ -335,7 +335,7 @@ function U(e) {
         item: n,
         message: t,
         className: P,
-        playable: D,
+        playable: w,
         mimeType: ee,
         renderAdjacentContent: ei,
         onVolumeShow: () => Q(true),
@@ -398,12 +398,12 @@ let Z = function(e) {
     isSingleMosaicItem: u,
     footer: d,
     displayGridItem: m
-  } = e, h = w(e, ["className", "item", "message", "getObscureReason", "useFullWidth", "mediaLayoutType", "isSingleMosaicItem", "footer", "displayGridItem"]);
+  } = e, h = D(e, ["className", "item", "message", "getObscureReason", "useFullWidth", "mediaLayoutType", "isSingleMosaicItem", "footer", "displayGridItem"]);
   let {
     width: E,
     height: b,
     type: y
-  } = n, S = s(n, (0, _.v)(a)), [I, A] = i.useState(null != S), C = (0, f.JO)(S), P = c === v.hV.MOSAIC, D = !P && (null != E && E < x || null != b && b < L), M = j(y), k = (0, O.R_)(y), Z = u && null != S && (0, f.yf)(E, b), [B, F] = i.useState(false), V = () => {
+  } = n, S = s(n, (0, _.v)(a)), [I, A] = i.useState(null != S), C = (0, f.JO)(S), P = c === v.hV.MOSAIC, w = !P && (null != E && E < x || null != b && b < L), M = j(y), k = (0, O.R_)(y), Z = u && null != S && (0, f.yf)(E, b), [B, F] = i.useState(false), V = () => {
     F(true)
   }, H = () => {
     F(false)
@@ -415,11 +415,11 @@ let Z = function(e) {
       getObscureReason: s,
       hiddenSpoilers: e,
       className: o()(t, T.mosaicItemContent, {
-        [T.obscured]: I && !D,
+        [T.obscured]: I && !w,
         [T.hiddenSpoiler]: I && S === p.wk.SPOILER,
         [T.hiddenExplicit]: I && null != S && p.Xh.has(S),
         [T.hiddenMosaicItem]: I && e,
-        [T.inline]: I && D
+        [T.inline]: I && w
       }),
       focusable: !e,
       mediaLayoutType: c,
@@ -445,7 +445,7 @@ let Z = function(e) {
     }),
     children: [null != S ? (0, r.jsx)(g.ZP, {
       type: g.ZP.Types.ATTACHMENT,
-      inline: D,
+      inline: w,
       reason: S,
       isSingleMosaicItem: u,
       obscured: I,

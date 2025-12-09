@@ -2,7 +2,7 @@
 /** chunk id: 884182, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -127,7 +127,7 @@ function I(e) {
       [m.oneByOneGridMosaic]: !i,
       [m.hasFooter]: null != a
     }),
-    children: (0, r.jsx)(w, {
+    children: (0, r.jsx)(D, {
       props: s,
       useFullWidth: !i,
       isSingleItem: true,
@@ -146,7 +146,7 @@ function T(e) {
     className: m.oneByTwoGrid,
     children: t.map(e => (0, r.jsx)("div", {
       className: m.oneByTwoGridItem,
-      children: (0, r.jsx)(w, {
+      children: (0, r.jsx)(D, {
         props: e,
         maxWidth: i,
         maxHeight: i
@@ -164,7 +164,7 @@ function A(e) {
     className: o()(m.oneByTwoGrid, m.oneByTwoLayoutThreeGrid),
     children: [(0, r.jsx)("div", {
       className: m.oneByTwoSoloItem,
-      children: (0, r.jsx)(w, {
+      children: (0, r.jsx)(D, {
         props: t[0],
         maxWidth: i
       })
@@ -174,7 +174,7 @@ function A(e) {
         className: m.twoByOneGrid,
         children: t.splice(1).map(e => (0, r.jsx)("div", {
           className: m.twoByOneGridItem,
-          children: (0, r.jsx)(w, {
+          children: (0, r.jsx)(D, {
             props: e,
             maxWidth: a,
             maxHeight: O
@@ -192,7 +192,7 @@ function C(e) {
   } = e, i = Math.round((n - y) / 2);
   return (0, r.jsx)("div", {
     className: m.twoByTwoGrid,
-    children: t.map(e => (0, r.jsx)(w, {
+    children: t.map(e => (0, r.jsx)(D, {
       props: e,
       maxWidth: i,
       maxHeight: O,
@@ -208,7 +208,7 @@ function N(e) {
   } = e, i = Math.round((n - 2 * y) / 3);
   return (0, r.jsx)("div", {
     className: m.threeByThreeGrid,
-    children: t.map(e => (0, r.jsx)(w, {
+    children: t.map(e => (0, r.jsx)(D, {
       props: e,
       maxWidth: i,
       maxHeight: i,
@@ -225,7 +225,7 @@ let P = e => ({
     className: o()(e, m.lazyImg)
   });
 
-function w(e) {
+function D(e) {
   let {
     props: t,
     maxWidth: n = _.mT,
@@ -249,7 +249,7 @@ function w(e) {
     }))
   })
 }
-let D = function(e) {
+let w = function(e) {
   let {
     items: t,
     isInAppComponentsV2: n = false
@@ -286,7 +286,7 @@ let D = function(e) {
       className: m.nonVisualMediaItemContainer,
       children: s.map(e => (0, r.jsx)("div", {
         className: m.nonVisualMediaItem,
-        children: (0, r.jsx)(w, {
+        children: (0, r.jsx)(D, {
           props: e
         })
       }, e.item.uniqueId))

@@ -169,8 +169,8 @@ function v(e, t, n, a) {
       rowHeight: N,
       footerHeight: P = 0,
       sidebarHeight: R,
-      listHeaderHeight: w = 0,
-      renderSection: D,
+      listHeaderHeight: D = 0,
+      renderSection: w,
       renderRow: x,
       renderFooter: L,
       renderSidebar: j,
@@ -221,7 +221,7 @@ function v(e, t, n, a) {
       rowHeight: N,
       footerHeight: P,
       sidebarHeight: R,
-      listHeaderHeight: w,
+      listHeaderHeight: D,
       paddingTop: Z,
       paddingBottom: B,
       chunkSize: H,
@@ -271,7 +271,7 @@ function v(e, t, n, a) {
     }, [v, eg]);
     return i.useLayoutEffect(() => {
       2 !== ea.current.dirty && (ea.current.dirty = 2)
-    }, [ec, D, x, L, U, el, es, ea]), (0, u.rS)({
+    }, [ec, w, x, L, U, el, es, ea]), (0, u.rS)({
       scrollerRef: ei,
       anchor: ep,
       getScrollerState: eo,
@@ -306,14 +306,14 @@ function v(e, t, n, a) {
             items: ec,
             renderListHeader: M,
             stickyListHeader: k,
-            renderSection: D,
+            renderSection: w,
             renderRow: x,
             renderFooter: L,
             wrapSection: U,
             spacerTop: es
           })
         })
-      }), [J, W, K, z, q, Q, el, X, ec, M, k, D, x, L, U, es]), i.useMemo(() => O({
+      }), [J, W, K, z, q, Q, el, X, ec, M, k, w, x, L, U, es]), i.useMemo(() => O({
         isSidebarVisible: eu,
         renderSidebar: j,
         sidebarHeight: R,

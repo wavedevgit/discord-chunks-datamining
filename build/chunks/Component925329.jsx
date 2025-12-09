@@ -91,14 +91,14 @@ let O = Chunk473749.forwardRef(function(e, t) {
     } = e,
     [C, N] = i.useState(null),
     [P, R] = i.useState(false),
-    w = i.useCallback(e => {
+    D = i.useCallback(e => {
       R(e)
     }, []),
-    D = i.useRef(null);
+    w = i.useRef(null);
   i.useEffect(() => {
-    null != D.current && P && (cancelIdleCallback(D.current), D.current = null)
+    null != w.current && P && (cancelIdleCallback(w.current), w.current = null)
   }, [P]);
-  let x = (0, s.O)(w);
+  let x = (0, s.O)(D);
   if (null != O && (n = b(O)), null != a && null == n && (a instanceof f.ZP ? n = a.getIconURL(E(T)) : null != a.icon && (n = p.ZP.getApplicationIconURL({
       id: a.id,
       icon: a.icon
@@ -113,10 +113,10 @@ let O = Chunk473749.forwardRef(function(e, t) {
       });
       if (P) return e();
       let t = requestIdleCallback(() => {
-        D.current = null, e()
+        w.current = null, e()
       });
-      return D.current = t, () => {
-        null != D.current && (cancelIdleCallback(D.current), D.current = null)
+      return w.current = t, () => {
+        null != w.current && (cancelIdleCallback(w.current), w.current = null)
       }
     }, [n, P]), true === n && null != _) {
     let e = y(T);

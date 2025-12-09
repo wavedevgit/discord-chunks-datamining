@@ -53,9 +53,9 @@ var Chunk260674 = require("./260674.js"),
   m = {},
   h = function e(t, n, a, o, s, c, d, f, h, g, E, b, y, O, v, S, I, T) {
     for (var A, C = t, N = T, P = 0, R = false; true !== (N = N.get(m)) && !R;) {
-      var w = N.get(t);
-      if (P += 1, true !== w)
-        if (w === P) throw RangeError("Cyclic object value");
+      var D = N.get(t);
+      if (P += 1, true !== D)
+        if (D === P) throw RangeError("Cyclic object value");
         else R = true;
       true === N.get(m) && (P = 0)
     }
@@ -66,8 +66,8 @@ var Chunk260674 = require("./260674.js"),
       C = ""
     }
     if (_(C) || i.isBuffer(C)) return h ? [v(S ? n : h(n, p.encoder, I, "key", O)) + "=" + v(h(C, p.encoder, I, "value", O))] : [v(n) + "=" + v(String(C))];
-    var D = [];
-    if (true === C) return D;
+    var w = [];
+    if (true === C) return w;
     if ("comma" === a && l(C)) S && h && (C = i.maybeMap(C, h)), A = [{
       value: C.length > 0 ? C.join(",") || null : true
     }];
@@ -87,10 +87,10 @@ var Chunk260674 = require("./260674.js"),
           Z = l(C) ? "function" == typeof a ? a(j, G) : j : j + (b ? "." + G : "[" + G + "]");
         T.set(t, P);
         var B = r();
-        B.set(m, T), u(D, e(U, Z, a, o, s, c, d, f, "comma" === a && S && l(C) ? null : h, g, E, b, y, O, v, S, I, B))
+        B.set(m, T), u(w, e(U, Z, a, o, s, c, d, f, "comma" === a && S && l(C) ? null : h, g, E, b, y, O, v, S, I, B))
       }
     }
-    return D
+    return w
   },
   g = function(e) {
     if (!e) return p;

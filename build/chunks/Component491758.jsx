@@ -2,7 +2,7 @@
 /** chunk id: 491758, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -63,13 +63,13 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function D() {
+function w() {
   let e = (0, Chunk341569.nq)(),
     t = (0, Chunk341569.z8)(),
     n = (0, Chunk358085.isWindows)(),
@@ -78,7 +78,7 @@ function D() {
       clipsLength: N,
       clipsQuality: R
     } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
-    D = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
+    w = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()),
     x = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)),
     L = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_SCREENSHOT, true)),
     j = (0, Chunk779618.Z)(Chunk131951.Z),
@@ -149,19 +149,19 @@ function D() {
       })
     }], [U]),
     F = Chunk473749.useCallback(e => {
-      u.Z.setKeybind(w(P({}, x), {
+      u.Z.setKeybind(D(P({}, x), {
         shortcut: e
       }))
     }, [x]),
     V = Chunk473749.useCallback(e => {
-      u.Z.setKeybind(w(P({}, L), {
+      u.Z.setKeybind(D(P({}, L), {
         shortcut: e
       }))
     }, [L]);
   return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
     children: [(0, Chunk54381.jsx)(Chunk494620.Z, {
       children: Chunk388032.intl.string(Chunk388032.t["Z+MfqT"])
-    }), D === Chunk894694.xH.BELOW_MINIMUM ? (0, Chunk54381.jsx)(Chunk494620.Z, {
+    }), w === Chunk894694.xH.BELOW_MINIMUM ? (0, Chunk54381.jsx)(Chunk494620.Z, {
       look: Chunk494620.z.WARNING,
       children: Chunk388032.intl.string(Chunk388032.t.SIxrIF)
     }) : null, (0, Chunk54381.jsx)(Chunk481060.rsf, {

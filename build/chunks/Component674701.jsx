@@ -58,8 +58,8 @@ function C(e) {
     popoutPosition: N,
     analyticsPage: P,
     analyticsSection: R,
-    glow: w,
-    innerRef: D
+    glow: D,
+    innerRef: w
   } = e, x = (0, l.e7)([m.default], () => m.default.getCurrentUser()), {
     analyticsLocations: L
   } = (0, f.ZP)(), j = (0, l.e7)([E.ZP], () => E.ZP.getFriendAnniversaryYears(a.id)), {
@@ -104,15 +104,15 @@ function C(e) {
       })
     };
   return (0, r.jsx)("div", {
-    ref: D,
+    ref: w,
     className: o()(I.content, {
-      [I.outerGlow]: w
+      [I.outerGlow]: D
     }),
     onMouseEnter: T,
     onMouseLeave: C,
     children: (0, r.jsxs)("div", {
       className: o()(I.innerContent, {
-        [I.innerGlow]: w
+        [I.innerGlow]: D
       }),
       children: [(0, r.jsxs)("div", {
         className: I.subContent,

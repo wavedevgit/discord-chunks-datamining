@@ -26,8 +26,8 @@ var r, i, a, Chunk848120 = require("./848120.js"),
   N = C && C.prototype,
   P = T && Chunk961050(T),
   R = A && Chunk961050(A),
-  w = Object.prototype,
-  D = Chunk127849.TypeError,
+  D = Object.prototype,
+  w = Chunk127849.TypeError,
   x = Chunk751736("toStringTag"),
   L = Chunk744569("TYPED_ARRAY_TAG"),
   j = "TypedArrayConstructor",
@@ -67,11 +67,11 @@ var r, i, a, Chunk848120 = require("./848120.js"),
   },
   V = function(e) {
     if (F(e)) return e;
-    throw new D("Target is not a typed array")
+    throw new w("Target is not a typed array")
   },
   H = function(e) {
     if (c(e) && (!b || g(P, e))) return e;
-    throw new D(p(e) + " is not a typed array constructor")
+    throw new w(p(e) + " is not a typed array constructor")
   },
   Y = function(e, t, n, r) {
     if (s) {
@@ -109,10 +109,10 @@ var r, i, a, Chunk848120 = require("./848120.js"),
 for (r in U)(a = (i = Chunk127849[r]) && i.prototype) ? S(a)[j] = i : M = false;
 for (r in G)(a = (i = Chunk127849[r]) && i.prototype) && (S(a)[j] = i);
 if ((!M || !Chunk880181(P) || P === Function.prototype) && (P = function() {
-    throw new D("Incorrect invocation")
+    throw new w("Incorrect invocation")
   }, M))
   for (r in U) Chunk127849[r] && Chunk769827(Chunk127849[r], P);
-if ((!M || !R || R === w) && (R = P.prototype, M))
+if ((!M || !R || R === D) && (R = P.prototype, M))
   for (r in U) Chunk127849[r] && Chunk769827(Chunk127849[r].prototype, R);
 if (M && Chunk961050(N) !== R && Chunk769827(N, R), Chunk507604 && !Chunk77025(R, x))
   for (r in k = true, Chunk573078(R, x, {

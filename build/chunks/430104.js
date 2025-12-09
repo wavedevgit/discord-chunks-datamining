@@ -4,6 +4,7 @@
 require.d(exports, {
   NE: () => o,
   sP: () => a,
+  to: () => l,
   u1: () => s
 });
 var Chunk81643 = require("./81643.js"),
@@ -22,4 +23,9 @@ function o() {
 function s() {
   let e = (0, Chunk81643.M$)();
   return (0, Chunk318370.y)("shouldAgeVerifyToSpeakForCurrentUser") && !module
+}
+
+function l() {
+  let e = (0, Chunk81643.gD)();
+  return (0, Chunk318370.n)("useShouldAgeVerifyToSpeakForCurrentUser") && !module
 }

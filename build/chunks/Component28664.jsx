@@ -91,15 +91,15 @@ function y(e) {
     caretConfig: N,
     positionKey: P,
     ariaHidden: R = false
-  } = e, w = E(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "anchorRef", "caretConfig", "positionKey", "ariaHidden"]);
-  let D = (0, f.c)(A),
+  } = e, D = E(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "anchorRef", "caretConfig", "positionKey", "ariaHidden"]);
+  let w = (0, f.c)(A),
     x = i.useId(),
     {
       isVisible: L,
       triggerProps: j
     } = (0, u.l)(m({
-      targetElementRef: D.targetElementRef
-    }, w)),
+      targetElementRef: w.targetElementRef
+    }, D)),
     M = R ? true : x,
     k = (0, d.Q)({
       shouldShow: L
@@ -143,16 +143,16 @@ function y(e) {
       tag: O,
       children: n,
       triggerHandlers: e,
-      triggerRef: D.triggerRef
+      triggerRef: w.triggerRef
     })
   } else {
     if (!i.isValidElement(n)) return null;
-    t = (0, c.C9)(n, j, M, D.triggerRef)
+    t = (0, c.C9)(n, j, M, w.triggerRef)
   }
   let B = k((e, t) => t ? (0, r.jsx)(l.N, {
     isVisible: L,
     isRendered: true,
-    targetElementRef: D.targetElementRef,
+    targetElementRef: w.targetElementRef,
     anchorRef: C,
     id: x,
     content: G,

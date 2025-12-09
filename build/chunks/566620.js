@@ -125,11 +125,11 @@ async function el(e) {
     onConfirmActivityLaunchChecksAlertOpen: v
   } = e, S = j.Z.getChannel(a), P = null != (t = null == S ? true : S.getGuildId()) ? t : true;
   if (null == P && !(null != (r = null == S ? true : S.isPrivate()) && r)) returnfalse;
-  let D = b.Z.getApplication(o),
-    x = null != D && (0, N.g)(D),
+  let w = b.Z.getApplication(o),
+    x = null != w && (0, N.g)(w),
     L = (0, R.r)();
   try {
-    if (w.Z.getWindowOpen(ee.KJ3.ACTIVITY_POPOUT)) {
+    if (D.Z.getWindowOpen(ee.KJ3.ACTIVITY_POPOUT)) {
       let {
         close: e
       } = n(788983);
@@ -385,7 +385,7 @@ async function ed(e) {
   });
   if (_ !== z.jy.CAN_LAUNCH) {
     let e = 4;
-    return _ === z.jy.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION ? (e = 5, (0, D.w)()) : _ === z.jy.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS && (e = 6, c.Z.show({
+    return _ === z.jy.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION ? (e = 5, (0, w.w)()) : _ === z.jy.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS && (e = 6, c.Z.show({
       title: ei.intl.string(ei.t["IOy+I5"]),
       body: ei.intl.string(ei.t.UXoQTp),
       hideActionSheet: false

@@ -7,7 +7,7 @@ require.d(exports, {
   Ev: () => s,
   Fu: () => h,
   GM: () => L,
-  Gu: () => D,
+  Gu: () => w,
   JT: () => m,
   K8: () => v,
   OF: () => x,
@@ -26,7 +26,7 @@ require.d(exports, {
   sI: () => g,
   u2: () => l,
   um: () => C,
-  wP: () => w,
+  wP: () => D,
   wT: () => R,
   xK: () => T
 }), require("./388685.js");
@@ -93,8 +93,8 @@ let P = {
     blocked_locales: [],
     supported_locales: []
   },
-  w = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
-  D = [...w, Chunk981631.d4z.GUILD_VOICE],
+  D = [Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM],
+  w = [...D, Chunk981631.d4z.GUILD_VOICE],
   x = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety";
 var L = function(e) {
   return e.NORMAL = "normal", e.FULL_SCREEN = "full-screen", e

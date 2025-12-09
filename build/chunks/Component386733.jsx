@@ -113,7 +113,7 @@ let P = e => {
       })]
     })
   },
-  w = e => {
+  D = e => {
     let {
       userRecords: t
     } = e, n = t.length, i = n < 1 ? null : t[0], a = n < 2 ? null : t[1], o = n < 3 ? null : t[2];
@@ -137,7 +137,7 @@ let P = e => {
       })]
     })
   },
-  D = e => {
+  w = e => {
     let {
       analyticsLocations: t
     } = e;
@@ -189,7 +189,7 @@ let P = e => {
             children: (0, y.$s)({
               hasSentAll: T
             })
-          }), (0, r.jsx)(w, {
+          }), (0, r.jsx)(D, {
             userRecords: f
           }), (0, r.jsx)(c.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
@@ -205,7 +205,7 @@ let P = e => {
               "data-migration-pending": true,
               className: S.expandedProgressBarSelectFriendsCTA,
               color: l.Tt.CUSTOM,
-              onClick: () => D({
+              onClick: () => w({
                 analyticsLocations: C
               }),
               onlyShineOnHover: true,

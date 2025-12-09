@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk343396 = require("./343396.js"),
   Chunk197571 = require("./197571.js");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,7 +50,7 @@ function x(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -86,7 +86,7 @@ function M(e) {
     }
   }, [a]);
   return (0, r.jsx)("li", {
-    className: w.marginBottom20,
+    className: D.marginBottom20,
     children: (0, r.jsxs)(l.P3F, {
       innerRef: o,
       className: R.backupCode,
@@ -288,24 +288,24 @@ class k extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), D(this, "state", {
+    super(...e), w(this, "state", {
       revealed: false,
       password: ""
-    }), D(this, "togglePhoneNumberVisibility", e => {
+    }), w(this, "togglePhoneNumberVisibility", e => {
       e.preventDefault(), this.setState({
         revealed: !this.state.revealed
       })
-    }), D(this, "handleDisableMFA", () => {
+    }), w(this, "handleDisableMFA", () => {
       u.Z.show({
         title: P.intl.string(P.t["D+aE7g"]),
         body: P.intl.string(P.t.EA4ZEk),
         cancelText: P.intl.string(P.t["ETE/oC"]),
         onConfirm: () => c.Z.disable()
       })
-    }), D(this, "generateBackupCodes", async () => {
+    }), w(this, "generateBackupCodes", async () => {
       let e = y.Z.getVerificationKey();
       await c.Z.confirmViewBackupCodes(e, true)
-    }), D(this, "sendMFABackupCodesVerificationKeyEmail", () => {
+    }), w(this, "sendMFABackupCodesVerificationKeyEmail", () => {
       (0, l.h7j)(e => (0, r.jsx)(h.Z, j(x({}, e), {
         handleSubmit: e => c.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
           this.viewBackupCodes(e)
@@ -313,7 +313,7 @@ class k extends Chunk473749.PureComponent {
         title: P.intl.string(P.t.PsQmzU),
         actionText: P.intl.string(P.t.ajkYcF)
       })))
-    }), D(this, "viewBackupCodes", e => {
+    }), w(this, "viewBackupCodes", e => {
       (0, l.h7j)(t => (0, r.jsx)(p.Z, j(x({}, t), {
         handleSubmit: e => c.Z.confirmViewBackupCodes(e, false).then(() => t.onClose()),
         maxLength: 8,
@@ -328,7 +328,7 @@ class k extends Chunk473749.PureComponent {
       })), {
         stackingBehavior: "stack"
       })
-    }), D(this, "getDownloadFileContents", () => {
+    }), w(this, "getDownloadFileContents", () => {
       let e = this.props.backupCodes.map(e => {
           let {
             consumed: t,
@@ -340,16 +340,16 @@ class k extends Chunk473749.PureComponent {
           email: this.props.currentUser.email
         });
       return "".concat(t, "\r\n\r\n").concat(e)
-    }), D(this, "handleChangePhoneNumber", () => {
+    }), w(this, "handleChangePhoneNumber", () => {
       this.openPhoneVerificationModal()
-    }), D(this, "handleEnableSMS", () => {
+    }), w(this, "handleEnableSMS", () => {
       let {
         currentUser: e
       } = this.props;
       null == e.phone ? this.openPhoneVerificationModal({
         onAddedPhone: c.Z.enableSMS
       }) : c.Z.enableSMS()
-    }), D(this, "handleDisableSMS", () => {
+    }), w(this, "handleDisableSMS", () => {
       (0, l.h7j)(e => (0, r.jsx)(h.Z, j(x({}, e), {
         handleSubmit: c.Z.disableSMS,
         title: P.intl.string(P.t.KLWnit),

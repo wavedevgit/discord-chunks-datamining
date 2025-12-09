@@ -2,7 +2,7 @@
 /** chunk id: 926243, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -99,12 +99,12 @@ let P = (e, t) => "".concat(e, ":").concat(t),
       selectedItemClassName: N,
       inNitroLockedSection: P
     } = e, R = C(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
-    let w = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : true, [n]),
-      D = () => {
+    let D = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : true, [n]),
+      w = () => {
         let e = (0, E.nY)(n);
-        return ((null == w ? true : w.name) != null && (e = O.intl.formatToPlainString(O.t["nXv4/B"], {
+        return ((null == D ? true : D.name) != null && (e = O.intl.formatToPlainString(O.t["nXv4/B"], {
           names: e,
-          guildName: w.name
+          guildName: D.name
         })), i) ? O.intl.formatToPlainString(O.t["9FI9Z0"], {
           names: e
         }) : e
@@ -126,7 +126,7 @@ let P = (e, t) => "".concat(e, ":").concat(t),
         "data-animated": n.animated ? "true" : null,
         ref: t,
         children: (0, r.jsx)(y.Z, {
-          "aria-label": D(),
+          "aria-label": w(),
           columnIndex: m,
           rowIndex: h,
           emoji: n,
@@ -139,7 +139,7 @@ let P = (e, t) => "".concat(e, ":").concat(t),
     })
   });
 
-function w(e) {
+function D(e) {
   let {
     descriptor: t,
     emojiItemKey: a,
@@ -153,8 +153,8 @@ function w(e) {
     showEmojiFavoriteTooltip: S,
     surrogateCodePoint: T,
     selectedItemClassName: N,
-    getEmojiItemProps: w,
-    isMediumSize: D,
+    getEmojiItemProps: D,
+    isMediumSize: w,
     isLargeSize: x,
     pulseItemKey: L,
     allowAnimatedEmoji: j,
@@ -189,7 +189,7 @@ function w(e) {
     let {
       onMouseEnter: t,
       onMouseLeave: n
-    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, s = null != (e = w(q, f)) ? e : {}, {
+    } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, s = null != (e = D(q, f)) ? e : {}, {
       ref: l,
       tabIndex: c,
       onFocus: u
@@ -202,7 +202,7 @@ function w(e) {
       emoji: W,
       isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(W),
       isLargeSize: x,
-      isMediumSize: D,
+      isMediumSize: w,
       isInspected: o,
       isDisabled: z,
       showPulse: L === a,

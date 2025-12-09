@@ -12,8 +12,8 @@ require.d(exports, {
   hJ: () => eN,
   iV: () => eL,
   jx: () => eR,
-  oR: () => eD,
-  qz: () => ew,
+  oR: () => ew,
+  qz: () => eD,
   vB: () => eU,
   x2: () => eP
 }), require("./388685.js"), require("./415506.js"), require("./781311.js");
@@ -142,7 +142,7 @@ function eS(e, t, a, o, s) {
     let y = null != (E = null == (g = k.Z.getStickerPreview(s, t.drafts.type)) ? true : g.map(e => e.id)) ? E : [],
       O = null != (b = W.Z.getUploads(s, t.drafts.type)) ? b : [],
       v = (0, M.q5)(s);
-    if (null == d && !p && !h && (0, w.CB)(O, s)) {
+    if (null == d && !p && !h && (0, D.CB)(O, s)) {
       c(false), (0, _.ZDy)(async () => {
         let {
           default: e
@@ -296,13 +296,13 @@ function eR() {
   }
 }
 
-function ew(e) {
+function eD(e) {
   let t = i.useRef(null);
   if (null != e && "function" == typeof e) throw Error("Only Ref objects are supported");
   return null == e ? t : e
 }
 
-function eD(e) {
+function ew(e) {
   let [t, n] = i.useState(0);
   return {
     editorHeight: t,
@@ -314,7 +314,7 @@ function eD(e) {
 
 function ex(e, t, n, r) {
   let i = e.getGuildId(),
-    a = (0, p.e7)([D.Z], () => null != i && D.Z.isLurking(i), [i]),
+    a = (0, p.e7)([w.Z], () => null != i && w.Z.isLurking(i), [i]),
     o = (0, p.e7)([F.ZP, K.default], () => {
       var e, t;
       let n = K.default.getCurrentUser();
@@ -428,8 +428,8 @@ function eG(e, t) {
     className: O,
     innerClassName: C,
     editorClassName: P,
-    id: w,
-    required: D,
+    id: D,
+    required: w,
     disabled: x,
     placeholder: M,
     accessibilityLabel: k,
@@ -468,7 +468,7 @@ function eG(e, t) {
   c()(null != G, "chat input type must be set");
   let {
     analyticsLocations: eq
-  } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eQ = ew(t), eX = i.useRef(null), eJ = i.useRef(null), e$ = i.useRef(null), e0 = i.useRef(null), e1 = i.useRef(null);
+  } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eQ = eD(t), eX = i.useRef(null), eJ = i.useRef(null), e$ = i.useRef(null), e0 = i.useRef(null), e1 = i.useRef(null);
   null == eB || eB(e$.current);
   let e3 = (0, y.Z)(U),
     [e2, e4] = i.useState(!e3);
@@ -537,7 +537,7 @@ function eG(e, t) {
     {
       editorHeight: tI,
       handleResize: tT
-    } = eD(z),
+    } = ew(z),
     {
       handleTab: tA,
       handleEnter: tC,
@@ -546,10 +546,10 @@ function eG(e, t) {
     {
       expressionPickerView: tP,
       shouldHideExpressionPicker: tR,
-      handleOuterClick: tw
+      handleOuterClick: tD
     } = eL(G, e$, U.id),
     {
-      selectedAutocompleteInputType: tD,
+      selectedAutocompleteInputType: tw,
       selectedAutocompleteInputError: tx
     } = eM(tc, e$),
     tL = ek(f),
@@ -582,7 +582,7 @@ function eG(e, t) {
       activeCommand: e5,
       pendingReply: W,
       pendingScheduledMessage: eK,
-      selectedAutocompleteInputType: tD,
+      selectedAutocompleteInputType: tw,
       selectedAutocompleteInputError: tx
     }),
     tW = 0 === f.trim().length,
@@ -661,20 +661,20 @@ function eG(e, t) {
               [e_.sansAttachButtonCreatePost]: G === ee.Ie.CREATE_FORUM_POST || G === ee.Ie.FORWARD_MESSAGE_INPUT,
               [e_.sansAttachButtonUserProfileReply]: G === ee.Ie.USER_PROFILE_REPLY
             }),
-            onMouseDown: tw,
+            onMouseDown: tD,
             children: [tQ, tk && tq, tF, (0, r.jsx)(_.tEY, {
               ringTarget: eQ,
               ringClassName: e_.focusRing,
               children: (0, r.jsx)(et.Z, {
                 ref: e$,
-                id: w,
+                id: D,
                 focused: Z,
                 useSlate: ti,
                 textValue: f,
                 richValue: m,
                 disabled: e9,
                 placeholder: M,
-                required: D,
+                required: w,
                 accessibilityLabel: k,
                 isPreviewing: (e6 || e7) && tn,
                 channel: U,

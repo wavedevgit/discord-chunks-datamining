@@ -100,9 +100,9 @@ let z = () => {
     eN = (0, Chunk639119.N)(),
     eP = (0, Chunk622909.N)(),
     eR = Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eN && null != eN.expires_at && eN.trial_id !== Chunk474936.a7,
-    ew = Chunk431.Z.getAlmostExpiringDiscountOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eP && null != eP.expires_at,
-    eD = eR ? eN.expires_at : ew ? eP.expires_at : null,
-    ex = eC === Chunk931118.tE.HERO_COUNTDOWN && (eR || ew) && null != eD,
+    eD = Chunk431.Z.getAlmostExpiringDiscountOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eP && null != eP.expires_at,
+    ew = eR ? eN.expires_at : eD ? eP.expires_at : null,
+    ex = eC === Chunk931118.tE.HERO_COUNTDOWN && (eR || eD) && null != ew,
     eL = (0, Chunk54381.jsxs)("div", {
       className: o()(eA.container, eA.responsiveContainer, {
         [eA.containerBackground]: eh || J,
@@ -140,7 +140,7 @@ let z = () => {
               ref: Chunk120356,
               subscriptionTier: ef,
               isEligibleForBogoPromotion: ep,
-              offerExpiresAt: ex ? eD : null
+              offerExpiresAt: ex ? ew : null
             }) : (0, Chunk54381.jsx)(Chunk903250.Z, {
               ref: Chunk120356,
               subscriptionTier: ef,

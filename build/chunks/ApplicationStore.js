@@ -163,14 +163,14 @@ function R(e) {
   return n
 }
 
-function w(e) {
+function D(e) {
   let {
     libraryApplications: t
   } = e;
   for (let e of t) b(o.ZP.createFromServer(e.application))
 }
 
-function D(e) {
+function w(e) {
   let {
     applications: t
   } = e;
@@ -375,7 +375,7 @@ let q = new z(Chunk570140.Z, {
   APPLICATION_FETCH_SUCCESS: A,
   APPLICATION_FETCH_FAIL: P,
   APPLICATIONS_FETCH: R,
-  APPLICATIONS_FETCH_SUCCESS: D,
+  APPLICATIONS_FETCH_SUCCESS: w,
   APPLICATIONS_FETCH_FAIL: j,
   APPLICATION_UPDATE: T,
   APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: M,
@@ -386,7 +386,7 @@ let q = new z(Chunk570140.Z, {
   PAYMENT_UPDATE: G,
   INVITE_RESOLVE_SUCCESS: B,
   GIFT_CODE_RESOLVE_SUCCESS: Z,
-  LIBRARY_FETCH_SUCCESS: w,
+  LIBRARY_FETCH_SUCCESS: D,
   STORE_LISTING_FETCH_SUCCESS: F,
   LOAD_MESSAGES_SUCCESS: V,
   USER_PROFILE_FETCH_SUCCESS: x,

@@ -9,7 +9,7 @@ require.d(exports, {
   Em: () => K,
   Gz: () => ef,
   Km: () => P,
-  Lr: () => D,
+  Lr: () => w,
   Q5: () => Y,
   Qm: () => U,
   Sf: () => eh,
@@ -20,14 +20,14 @@ require.d(exports, {
   Y0: () => Q,
   _H: () => eG,
   bc: () => M,
-  bw: () => w,
+  bw: () => D,
   createChannelRecord: () => eZ,
   dF: () => q,
   dy: () => eL,
   hv: () => L,
   iR: () => ei,
   jD: () => ek,
-  mn: () => ew,
+  mn: () => eD,
   nl: () => eg,
   oj: () => N,
   ov: () => J,
@@ -117,10 +117,10 @@ function P(e) {
 Chunk981631.d4z.GUILD_TEXT, Chunk981631.d4z.GUILD_ANNOUNCEMENT, Chunk981631.d4z.GUILD_FORUM, Chunk981631.d4z.GUILD_MEDIA;
 let R = new Set([Chunk981631.d4z.GUILD_VOICE, Chunk981631.d4z.GUILD_STAGE_VOICE]);
 
-function w(e) {
+function D(e) {
   return "SELECTABLE" !== e && R.has(e)
 }
-let D = new Set([Chunk981631.d4z.GUILD_STAGE_VOICE]),
+let w = new Set([Chunk981631.d4z.GUILD_STAGE_VOICE]),
   x = new Set([Chunk981631.d4z.DM, Chunk981631.d4z.GROUP_DM]);
 
 function L(e) {
@@ -206,11 +206,11 @@ let ec = Chunk149765.$e(Chunk981631.Plq.CONNECT, Chunk981631.Plq.VIEW_CHANNEL),
   eu = Chunk981631.S7T.CONNECT | Chunk981631.S7T.VIEW_CHANNEL;
 
 function ed(e) {
-  return w(e) ? ec : h.Plq.VIEW_CHANNEL
+  return D(e) ? ec : h.Plq.VIEW_CHANNEL
 }
 
 function ef(e) {
-  return w(e) ? eu : h.S7T.VIEW_CHANNEL
+  return D(e) ? eu : h.S7T.VIEW_CHANNEL
 }
 class ep {
   constructor(e) {
@@ -323,7 +323,7 @@ class eh extends ep {
     return Z(this.type)
   }
   isGuildVocal() {
-    return w(this.type)
+    return D(this.type)
   }
   isGuildVocalOrThread() {
     return this.isGuildVocal() || this.isVocalThread()
@@ -615,14 +615,14 @@ class eN {
 }
 let eP = new eN,
   eR = new eN;
-class ew extends eh {
+class eD extends eh {
   static sortRecipients(e, t) {
     let n = eP.getOrCompute(t);
     return [...null != e ? e : []].sort((e, t) => (eR.getOrCompute(e.id) ^ n) - (eR.getOrCompute(t.id) ^ n))
   }
   static fromServer(e) {
     var t, n;
-    let r = ew.sortRecipients(e.recipients, e.id),
+    let r = eD.sortRecipients(e.recipients, e.id),
       i = {
         application_id: e.application_id,
         flags_: e.flags,
@@ -644,7 +644,7 @@ class ew extends eh {
         blockedUserWarningDismissed: e.blocked_user_warning_dismissed,
         type: null != e.type ? e.type : h.d4z.DM
       };
-    return (0, f.gh)(i, ew)
+    return (0, f.gh)(i, eD)
   }
   isSystemDM() {
     let e = this.rawRecipients[0];
@@ -668,11 +668,11 @@ class ew extends eh {
   }
   constructor(e) {
     var t, n;
-    super(e), this.application_id = e.application_id, this.flags_ = e.flags_, this.icon = e.icon, this.isMessageRequest = e.isMessageRequest, this.isMessageRequestTimestamp = e.isMessageRequestTimestamp, this.isSpam = e.isSpam, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.nicks = e.nicks, this.ownerId = e.ownerId, this.rawRecipients = ew.sortRecipients(e.rawRecipients, this.id), this.recipients = [...null != (t = e.recipients) ? t : []].sort(m.default.compare), this.recipientFlags = e.recipientFlags, this.safetyWarnings = null != (n = e.safetyWarnings) ? n : [], this.blockedUserWarningDismissed = e.blockedUserWarningDismissed
+    super(e), this.application_id = e.application_id, this.flags_ = e.flags_, this.icon = e.icon, this.isMessageRequest = e.isMessageRequest, this.isMessageRequestTimestamp = e.isMessageRequestTimestamp, this.isSpam = e.isSpam, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.nicks = e.nicks, this.ownerId = e.ownerId, this.rawRecipients = eD.sortRecipients(e.rawRecipients, this.id), this.recipients = [...null != (t = e.recipients) ? t : []].sort(m.default.compare), this.recipientFlags = e.recipientFlags, this.safetyWarnings = null != (n = e.safetyWarnings) ? n : [], this.blockedUserWarningDismissed = e.blockedUserWarningDismissed
   }
 }
-class eD extends ew {}
-class ex extends ew {}
+class ew extends eD {}
+class ex extends eD {}
 class eL extends eh {
   static fromServer(e, t) {
     var n, r, i, a, o;
@@ -721,8 +721,8 @@ class eL extends eh {
   }
 }
 let ej = {
-  [Chunk981631.d4z.DM]: ew.fromServer,
-  [Chunk981631.d4z.GROUP_DM]: ew.fromServer,
+  [Chunk981631.d4z.DM]: eD.fromServer,
+  [Chunk981631.d4z.GROUP_DM]: eD.fromServer,
   [Chunk981631.d4z.GUILD_TEXT]: eb.fromServer,
   [Chunk981631.d4z.GUILD_VOICE]: eE.fromServer,
   [Chunk981631.d4z.GUILD_STAGE_VOICE]: eE.fromServer,
@@ -746,7 +746,7 @@ function ek(e) {
   return eZ(e)
 }
 let eU = {
-  [Chunk981631.d4z.DM]: eD,
+  [Chunk981631.d4z.DM]: ew,
   [Chunk981631.d4z.GROUP_DM]: ex,
   [Chunk981631.d4z.GUILD_TEXT]: eT,
   [Chunk981631.d4z.GUILD_VOICE]: eA,

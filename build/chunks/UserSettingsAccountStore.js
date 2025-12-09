@@ -25,11 +25,11 @@ function R() {
   N = Chunk981631.QZA.OPEN, P = {}
 }
 
-function w() {
+function D() {
   N = Chunk981631.QZA.CLOSED, P = {}
 }
 
-function D() {
+function w() {
   N = Chunk981631.QZA.SUBMITTING, P = {}
 }
 
@@ -208,7 +208,7 @@ function eo() {
 }
 
 function es() {
-  et(), ei(), w()
+  et(), ei(), D()
 }
 class el extends(v = Chunk442837.ZP.Store) {
   getFormState() {
@@ -308,9 +308,9 @@ let ec = new el(Chunk570140.Z, {
   USER_SETTINGS_MODAL_INIT: R,
   USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: R,
   USER_SETTINGS_MODAL_SET_SECTION: L,
-  USER_SETTINGS_ACCOUNT_CLOSE: w,
+  USER_SETTINGS_ACCOUNT_CLOSE: D,
   USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: es,
-  USER_SETTINGS_ACCOUNT_SUBMIT: D,
+  USER_SETTINGS_ACCOUNT_SUBMIT: w,
   USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: x,
   USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: j,
   USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME: M,

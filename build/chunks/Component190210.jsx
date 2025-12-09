@@ -130,8 +130,8 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     placeholder: em,
     "aria-describedby": eg,
     "aria-labelledby": eb,
-    setEditorRef: eC,
-    autoCompletePosition: ey,
+    setEditorRef: ey,
+    autoCompletePosition: eC,
     disableThemedBackground: ev = false,
     emojiPickerCloseOnModalOuterClick: e_,
     parentModalKey: eO
@@ -139,8 +139,8 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
   s()(null != k, "chat input type must be set");
   let {
     analyticsLocations: eI
-  } = (0, v.ZP)(y.Z.CHANNEL_TEXT_AREA), eZ = (0, B.qz)(t), eT = r.useRef(null), eN = r.useRef(null), eA = r.useRef(null), ew = r.useRef(null);
-  null == eC || eC(eN.current);
+  } = (0, v.ZP)(C.Z.CHANNEL_TEXT_AREA), eZ = (0, B.qz)(t), eT = r.useRef(null), eN = r.useRef(null), eA = r.useRef(null), ew = r.useRef(null);
+  null == ey || ey(eN.current);
   let {
     activeCommand: eM
   } = (0, d.cj)([_.Z], () => {
@@ -157,9 +157,9 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     canEveryoneSendMessages: eU
   } = (0, B.TE)(L, k, eM, I), eV = !A.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eH = !eV || !(null == (n = k.commands) ? true : n.enabled) || !G || p !== q.GI, eF = (0, T.Z)(), {
     fontSize: eB
-  } = (0, d.cj)([C.Z], () => ({
-    fontSize: C.Z.fontSize,
-    isSubmitButtonEnabled: C.Z.isSubmitButtonEnabled
+  } = (0, d.cj)([y.Z], () => ({
+    fontSize: y.Z.fontSize,
+    isSubmitButtonEnabled: y.Z.isSubmitButtonEnabled
   })), eG = (0, d.e7)([M.Z], () => M.Z.isEnabled()), ez = (0, N.NE)(L);
   (0, B.hJ)(k, eD, L.id);
   let {
@@ -484,7 +484,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
           onVisibilityChange: tt,
           editorHeight: e1,
           setValue: (e, t) => null == Y ? true : Y(null, e, t),
-          position: ey
+          position: eC
         })]
       }), e5 ? null : (0, i.jsx)(S.Z, {
         positionTargetRef: eZ,

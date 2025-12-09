@@ -79,21 +79,21 @@ let y = function(e) {
       [e]: t
     }))
   }
-  let w = i.useCallback(function() {
+  let D = i.useCallback(function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
       t = {};
     return (e || I.name) && "" === v.name && (t.name = p.intl.string(p.t.lIkVsi)), t
   }, [I, v]);
 
-  function D() {
-    C(w())
+  function w() {
+    C(D())
   }
   i.useEffect(() => {
-    let e = y.cardNumber && y.cardExpiry && y.cardCvc && 0 === Object.keys(w(true)).length;
+    let e = y.cardNumber && y.cardExpiry && y.cardCvc && 0 === Object.keys(D(true)).length;
     a.current({
       name: v.name
     }, !!e)
-  }, [y, v, w]);
+  }, [y, v, D]);
   let x = [{
     fields: [{
       id: "card-number",
@@ -201,7 +201,7 @@ let y = function(e) {
       formError: n,
       values: v,
       onFieldChange: L,
-      onFieldBlur: D
+      onFieldBlur: w
     })]
   })
 }

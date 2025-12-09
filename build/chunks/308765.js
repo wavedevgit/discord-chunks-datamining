@@ -295,11 +295,6 @@ let i = {
     actions: ["VOICE_CHANNEL_SELECT", "LOGOUT", "STAGE_MUSIC_MUTE", "STAGE_MUSIC_PLAY", "VOICE_STATE_UPDATES", "AUDIO_SET_OUTPUT_VOLUME", "AUDIO_TOGGLE_SELF_DEAF"],
     inlineRequire: () => require("./485287.js").ZP
   },
-  SprigEventManager: {
-    actions: ["POST_CONNECTION_OPEN"],
-    inlineRequire: () => require("./402804.js").Z,
-    hasStoreChangeListeners: true
-  },
   StaffMemberPreloaderManager: {
     actions: ["POST_CONNECTION_OPEN"],
     inlineRequire: () => require("./239088.js").Z

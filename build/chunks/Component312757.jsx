@@ -1,7 +1,7 @@
 /** Chunk was on 21395 **/
 /** chunk id: 312757, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => o
+  default: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,31 +11,31 @@ var Chunk793030 = require("./793030.js"),
   Chunk554747 = require("./554747.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e) {
+function a(e) {
   let {
     channel: t,
     transitionState: n,
-    onClose: o
+    onClose: a
   } = e, s = (0, c.qY)(t.id);
   if (null == s) return null;
   let d = () => {
-    i.default.selectVoiceChannel(null), o()
+    i.default.selectVoiceChannel(null), a()
   };
   return (0, l.jsx)(r.Modal, {
     transitionState: n,
-    title: a.intl.string(a.t["4Ao8LC"]),
-    subtitle: a.intl.string(a.t["0I0B8f"]),
-    onClose: o,
+    title: o.intl.string(o.t["4Ao8LC"]),
+    subtitle: o.intl.string(o.t["0I0B8f"]),
+    onClose: a,
     actions: [{
       onClick: d,
       variant: "secondary",
-      text: a.intl.string(a.t.P60OAX)
+      text: o.intl.string(o.t.P60OAX)
     }, {
       onClick: () => {
         u.Z.endEvent(s.id, s.guild_id), d()
       },
       variant: "critical-primary",
-      text: a.intl.string(a.t.mjB9pd)
+      text: o.intl.string(o.t.mjB9pd)
     }]
   })
 }

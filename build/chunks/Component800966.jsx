@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 800966, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => C
+  h: () => y
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -101,7 +101,7 @@ function b(e) {
   })
 }
 
-function C(e) {
+function y(e) {
   var t, n, r = m({}, function(e) {
     if (null == e) throw TypeError("Cannot destructure " + e);
     return e

@@ -88,7 +88,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk70722 = require("./70722.js"),
   Chunk388032 = require("./388032.jsx");
 
-function eD(e, t, n) {
+function ew(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -104,7 +104,7 @@ function ex(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      eD(e, t, n[t])
+      ew(e, t, n[t])
     })
   }
   return e
@@ -629,8 +629,8 @@ function e2(e) {
     guildId: s.guild_id,
     messageId: i.id
   }), d = (0, a.e7)([B.Z], () => B.Z.can(eP.Plq.MUTE_MEMBERS, s)), f = () => {
-    (0, w.DT)(s, i.author.id, false), l.Z.deleteMessage(s.id, i.id, true)
-  }, p = (0, a.e7)([D.Z], () => D.Z.getParticipant(s.id, i.author.id)), _ = new Date(q.default.extractTimestamp(i.id)).toISOString() === new Date(null != (n = null == p || null == (t = p.voiceState) ? true : t.requestToSpeakTimestamp) ? n : 0).toISOString(), m = d && (null == p ? true : p.rtsState) === x.xO.REQUESTED_TO_SPEAK && _;
+    (0, D.DT)(s, i.author.id, false), l.Z.deleteMessage(s.id, i.id, true)
+  }, p = (0, a.e7)([w.Z], () => w.Z.getParticipant(s.id, i.author.id)), _ = new Date(q.default.extractTimestamp(i.id)).toISOString() === new Date(null != (n = null == p || null == (t = p.voiceState) ? true : t.requestToSpeakTimestamp) ? n : 0).toISOString(), m = d && (null == p ? true : p.rtsState) === x.xO.REQUESTED_TO_SPEAK && _;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(eE.Z, {
       message: i,
@@ -639,7 +639,7 @@ function e2(e) {
     }), m ? (0, r.jsx)(o.Button, {
       variant: "secondary",
       onClick: f,
-      text: ew.intl.string(ew.t.f0T7hI),
+      text: eD.intl.string(eD.t.f0T7hI),
       icon: o.Lrb
     }) : null]
   })

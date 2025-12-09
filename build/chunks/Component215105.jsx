@@ -85,9 +85,9 @@ function C(e) {
     entry: P
   } = e, {
     resetInteraction: R,
-    setInteractionToast: w
+    setInteractionToast: D
   } = (0, g.Xo)(), {
-    primaryColor: D
+    primaryColor: w
   } = (0, b.z)(), [x, L] = i.useState(""), [j, M] = i.useState((0, u.JM)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useCallback(e => {
     e.key === O.vn.ESCAPE && (e.stopPropagation(), R())
   }, [R]);
@@ -109,7 +109,7 @@ function C(e) {
       sourceType: s,
       sourceDetails: f
     });
-    w(null);
+    D(null);
     try {
       await (0, h.Z)({
         userId: t.id,
@@ -120,7 +120,7 @@ function C(e) {
         entry: P
       })
     } catch (e) {}
-    w(y.P.REPLY)
+    D(y.P.REPLY)
   }, B = {
     [S.status]: s === y.n_.STATUS,
     [S.avatar]: s === y.n_.AVATAR,
@@ -131,7 +131,7 @@ function C(e) {
     onKeyDown: G,
     children: (0, r.jsx)("div", {
       className: o()(S.container, B, {
-        [S.customProfileTheme]: null != D
+        [S.customProfileTheme]: null != w
       }),
       children: (0, r.jsx)(d.ZP, {
         parentModalKey: E,

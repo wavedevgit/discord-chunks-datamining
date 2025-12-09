@@ -17,11 +17,11 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk748788 = require("./748788.js");
 let b = ["embedded_cover"],
-  C = {
+  y = {
     tension: 800,
     friction: 24
   };
-var y = ((i = y || {})[i.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", i[i.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", i);
+var C = ((i = C || {})[i.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", i[i.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", i);
 
 function v(e) {
   var t;
@@ -29,7 +29,7 @@ function v(e) {
     context: n,
     activityItem: i,
     onClick: a,
-    aspectRatio: y = 0,
+    aspectRatio: C = 0,
     animatedDivClass: v,
     commandOrigin: _
   } = e, {
@@ -97,7 +97,7 @@ function v(e) {
     onMouseLeave: Z,
     className: g.activityItemButtonInnerClass,
     children: (0, r.jsx)(c.AMe, {
-      config: C,
+      config: y,
       from: {
         value: 0
       },
@@ -112,8 +112,8 @@ function v(e) {
           theme: f.BRd.DARK,
           children: e => (0, r.jsxs)(s.animated.div, {
             className: o()(e, g.activityItem, v, {
-              [g.activityItem_13_11]: 0 === y,
-              [g.activityItem_16_9]: 1 === y
+              [g.activityItem_13_11]: 0 === C,
+              [g.activityItem_16_9]: 1 === C
             }),
             style: {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
@@ -130,4 +130,4 @@ function v(e) {
     })
   })
 }
-v.AspectRatio = y
+v.AspectRatio = C

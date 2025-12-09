@@ -61,7 +61,7 @@ function m(e, t, n) {
       disallowTypeAhead: h,
       escapeKeyBehavior: S
     }),
-    w = (0, s.Me)(e.id);
+    D = (0, s.Me)(e.id);
   i.B.set(t, {
     keyboardDelegate: P,
     actions: {
@@ -70,7 +70,7 @@ function m(e, t, n) {
     },
     shouldSelectOnPressUp: I
   });
-  let D = (0, o.j)({
+  let w = (0, o.j)({
       selectionManager: T,
       hasItemActions: !!(O || v)
     }),
@@ -93,11 +93,11 @@ function m(e, t, n) {
     }),
     k = (0, c.d)(x, {
       role: "grid",
-      id: w,
+      id: D,
       "aria-multiselectable": "multiple" === T.selectionMode ? "true" : true
     }, t.isKeyboardNavigationDisabled ? j : R, 0 === t.collection.size && {
       tabIndex: M ? false : 0
-    } || true, D);
+    } || true, w);
   return m && (k["aria-rowcount"] = t.collection.size, k["aria-colcount"] = t.collection.columnCount), (0, a.B)({
     getRowText: y
   }, t), {

@@ -37,9 +37,9 @@ module.exports = function(e, t) {
       N = C.start,
       P = C.end,
       R = O.getCurrentContent(),
-      w = R.getBlockForKey(I),
-      D = w.getText().slice(N, P);
-    if (y.endsWith(f) && (y = y.slice(0, false)), y === D) {
+      D = R.getBlockForKey(I),
+      w = D.getText().slice(N, P);
+    if (y.endsWith(f) && (y = y.slice(0, false)), y === w) {
       var x = t.nativeEvent.inputType;
       if (x) {
         var L = p(x, O);
@@ -53,15 +53,15 @@ module.exports = function(e, t) {
         focusOffset: P,
         isBackward: false
       }),
-      k = w.getEntityAt(N),
+      k = D.getEntityAt(N),
       U = s(k) ? R.getEntity(k) : null,
       G = null != U ? U.getMutability() : null,
       Z = "MUTABLE" === G,
       B = Z ? "spellcheck-change" : "apply-entity",
-      F = r.replaceText(R, M, y, w.getInlineStyleAt(N), Z ? w.getEntityAt(N) : null);
+      F = r.replaceText(R, M, y, D.getInlineStyleAt(N), Z ? D.getEntityAt(N) : null);
     if (d) n = m.anchorOffset, _ = (c = N + Math.min(n, o = m.focusOffset)) + Math.abs(n - o), n = c, o = _;
     else {
-      var V = y.length - D.length;
+      var V = y.length - w.length;
       c = j.getStartOffset(), _ = j.getEndOffset(), n = g ? _ + V : c, o = _ + V
     }
     var H = F.merge({

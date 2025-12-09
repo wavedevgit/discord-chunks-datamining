@@ -103,8 +103,8 @@ let O = [Chunk341691.Cm.User],
   N = new Set,
   P = "apexTrackedExposures",
   R = 2,
-  w = 6048e5,
-  D = {},
+  D = 6048e5,
+  w = {},
   x = 2,
   L = {};
 
@@ -124,7 +124,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
         exposureTrackingEnabled: false
       }
     }
-    D = this.loadTrackedExposures()
+    w = this.loadTrackedExposures()
   }
   getState() {
     return {
@@ -229,7 +229,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
       tracked_variation_id: a
     }, {
       flush: true
-    }), D[o] = Date.now(), this.saveTrackedExposures(D))
+    }), w[o] = Date.now(), this.saveTrackedExposures(w))
   }
   trackCommonTriggerPointExposures(e) {
     for (let t of this.evaluationIds("user")) {
@@ -240,7 +240,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
         unit_type: "user"
       }, {
         flush: true
-      }), D[n] = Date.now(), this.saveTrackedExposures(D))
+      }), w[n] = Date.now(), this.saveTrackedExposures(w))
     }
   }
   trackExposureSuppression(e, t) {
@@ -257,8 +257,8 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     return Object.values(v[e]).map(e => e.evaluationId).filter(e => null != e)
   }
   shouldTrackExposure(e) {
-    let t = D[e];
-    return null == t || Date.now() - t > w
+    let t = w[e];
+    return null == t || Date.now() - t > D
   }
   loadTrackedExposures() {
     let e = Chunk433517.K.get(P);
@@ -266,7 +266,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     let t = module.exposures,
       n = Date.now(),
       r = false;
-    for (let e in exports) require - exports[module] > w && (delete exports[module], r = true);
+    for (let e in exports) require - exports[module] > D && (delete exports[module], r = true);
     return r && this.saveTrackedExposures(exports), exports
   }
   saveTrackedExposures(e) {
@@ -297,7 +297,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     I = {}, T = {}
   }
   clearAllTrackedExposures() {
-    D = {}
+    w = {}
   }
   getHash(e) {
     return j(e)

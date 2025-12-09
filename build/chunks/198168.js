@@ -17,7 +17,7 @@ let a = {
     3: () => require.e("72261").then(require.bind(require, 718717)),
     4: () => require.e("99726").then(require.bind(require, 839427)),
     5: () => require.e("11909").then(require.bind(require, 255111)),
-    6: () => require.e("68500").then(require.bind(require, 995348)),
+    6: () => require.e("30474").then(require.bind(require, 995348)),
     7: () => require.e("21844").then(require.bind(require, 492391)),
     8: () => require.e("84735").then(require.bind(require, 558592))
   },

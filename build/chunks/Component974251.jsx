@@ -94,9 +94,9 @@ let W = Chunk473749.memo(function(e) {
     autoTrackExposure: false
   }), {
     onShareClick: es
-  } = (0, y.Z)(q.id), ec = (0, o.e7)([_.qc], () => _.qc.hasHotspot(_.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eu = (0, c.s9z)(e => (0, c.DEQ)(e, V.Qr)), ed = (0, o.e7)([I.Z], () => I.Z.hasLayers()), ep = (0, o.e7)([g.Z], () => g.Z.hasClips()), [eh, ef] = r.useState(null), em = (0, m.w9)() && (ei || ep), eg = q.isPrivate(), eb = (0, o.e7)([T.Z], () => eg || T.Z.can(U.Plq.ATTACH_FILES, q) && T.Z.can(U.Plq.SEND_MESSAGES, q)), eC = (0, d.Z)(er);
-  (null == eC ? true : eC.newClipIds.length) !== (null == er ? true : er.newClipIds.length) && (null != (t = null == er ? true : er.newClipIds.length) ? t : 0) > 0 && null == eh && ec && ea && !eu && !eo && !ed && ef("recentClips");
-  let ey = (0, o.e7)([Z.Z], () => Z.Z.hasCurrentUserSentMessageSinceAppStart());
+  } = (0, C.Z)(q.id), ec = (0, o.e7)([_.qc], () => _.qc.hasHotspot(_.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eu = (0, c.s9z)(e => (0, c.DEQ)(e, V.Qr)), ed = (0, o.e7)([I.Z], () => I.Z.hasLayers()), ep = (0, o.e7)([g.Z], () => g.Z.hasClips()), [eh, ef] = r.useState(null), em = (0, m.w9)() && (ei || ep), eg = q.isPrivate(), eb = (0, o.e7)([T.Z], () => eg || T.Z.can(U.Plq.ATTACH_FILES, q) && T.Z.can(U.Plq.SEND_MESSAGES, q)), ey = (0, d.Z)(er);
+  (null == ey ? true : ey.newClipIds.length) !== (null == er ? true : er.newClipIds.length) && (null != (t = null == er ? true : er.newClipIds.length) ? t : 0) > 0 && null == eh && ec && ea && !eu && !eo && !ed && ef("recentClips");
+  let eC = (0, o.e7)([Z.Z], () => Z.Z.hasCurrentUserSentMessageSinceAppStart());
 
   function ev() {
     (0, c.ZDy)(async () => {
@@ -171,19 +171,19 @@ let W = Chunk473749.memo(function(e) {
       position: "top",
       positionKey: null != eh ? eh : "null",
       onRequestOpen: () => {
-        ey && (0, v.Q3)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
+        eC && (0, v.Q3)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
           dismissAction: H.L.TAKE_ACTION
         }), ef("attachMenu")
       },
       onRequestClose: () => {
-        (0, c.$sL)() || (ey && (0, v.Q3)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
+        (0, c.$sL)() || (eC && (0, v.Q3)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
           dismissAction: H.L.TAKE_ACTION
         }), ef(null))
       },
       renderPopout: e => {
         switch (eh) {
           case "recentClips":
-            return (0, i.jsx)(C.Z, z(G({}, e), {
+            return (0, i.jsx)(y.Z, z(G({}, e), {
               onOpenClips: ev,
               lastClipsSession: er
             }));

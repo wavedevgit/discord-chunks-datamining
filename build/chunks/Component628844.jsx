@@ -2,7 +2,7 @@
 /** chunk id: 628844, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -41,7 +41,7 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,13 +54,13 @@ function w(e) {
   return e
 }
 
-function D(e) {
+function w(e) {
   let {
     checkpointData: t
   } = e, {
     cardId: n,
     numMessagesSent: R = 0,
-    totalVoiceMinutes: D = 0,
+    totalVoiceMinutes: w = 0,
     numEmojisSent: x = 0,
     topEmoji: L,
     topGame: j,
@@ -75,7 +75,7 @@ function D(e) {
     notation: "compact",
     compactDisplay: "short",
     maximumFractionDigits: 2
-  }).format(x), B = (0, _.nJ)(D), F = (0, _.UN)(n), V = f.F[n], H = (0, c.dQu)(V.primaryColor).hex(), Y = (0, c.dQu)(V.secondaryColor).hex({
+  }).format(x), B = (0, _.nJ)(w), F = (0, _.UN)(n), V = f.F[n], H = (0, c.dQu)(V.primaryColor).hex(), Y = (0, c.dQu)(V.secondaryColor).hex({
     opacity: .2
   }), W = (0, o.e7)([b.Z], () => b.Z.getGuild(null == M ? true : M.guildId)), K = (0, v.CJ)(), {
     enabled: z
@@ -92,7 +92,7 @@ function D(e) {
   }, []), J = () => {
     var e, t;
     let n = E.Z.getChannel(null == K || null == (e = K.message) ? true : e.channel_id);
-    y.default.track(S.rMx.CHECKPOINT_CARD_CLICKED, w({
+    y.default.track(S.rMx.CHECKPOINT_CARD_CLICKED, D({
       other_user_id: null == K || null == (t = K.message) ? true : t.author.id
     }, (0, d.v_)(n), (0, d.hH)(null == n ? true : n.guild_id))), (0, m.Z)("message_component")
   };

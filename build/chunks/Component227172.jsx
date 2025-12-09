@@ -101,13 +101,13 @@ let k = {
       })
     }, [null == V ? true : V.src, b, ee, y, X, er, et, en, q, Q, H]);
     if (null == H) return null;
-    let ef = (0, r.jsx)(w.Gk, {
-        location: null == J ? w.Gt.POPOUT : w.Gt.STREAMING_POPOUT,
+    let ef = (0, r.jsx)(D.Gk, {
+        location: null == J ? D.Gt.POPOUT : D.Gt.STREAMING_POPOUT,
         children: R.W.map((e, t) => (0, r.jsx)(e, {
           entry: y
         }, t))
       }),
-      ep = null == $ ? (0, r.jsx)(D.wG, {
+      ep = null == $ ? (0, r.jsx)(w.wG, {
         channel: b,
         headerIcons: null == ea ? null : (0, r.jsx)(x.Z, {
           onClick: es,
@@ -122,7 +122,7 @@ let k = {
         disableGameProfileLinks: U,
         onUserPopoutClosed: B,
         trackRankingItemInteraction: F
-      }) : (0, r.jsx)(D.jL, {
+      }) : (0, r.jsx)(w.jL, {
         channel: b,
         title: y.extra.game_name,
         subtitle: Y,
@@ -149,9 +149,9 @@ let k = {
         variant: "primary",
         icon: s.tEF
       }, "watch") : null, e_].filter(O.lm);
-    return (0, r.jsxs)(D.yR, {
-      children: [ep, (0, r.jsx)(D.St, {
-        children: (0, r.jsx)(D.WT, {
+    return (0, r.jsxs)(w.yR, {
+      children: [ep, (0, r.jsx)(w.St, {
+        children: (0, r.jsx)(w.WT, {
           onReaction: G,
           onVoiceChannelPreview: Z,
           user: H,

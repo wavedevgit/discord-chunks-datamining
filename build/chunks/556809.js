@@ -91,14 +91,14 @@ function R() {
   }), A()
 }
 
-function w(e) {
+function D(e) {
   if (e === v) return;
   let t = !e && v;
   v = e, t && R()
 }
-class D extends Chunk147913.Z {
+class w extends Chunk147913.Z {
   _initialize() {
-    w(P())
+    D(P())
   }
   _terminate() {
     window.requestAnimationFrame = h
@@ -119,7 +119,7 @@ class D extends Chunk147913.Z {
     }
   }
   handleWindowStateChage() {
-    w(P())
+    D(P())
   }
   handleOverlayRenderDebugMode(e) {
     let {
@@ -137,4 +137,4 @@ class D extends Chunk147913.Z {
     })
   }
 }
-let x = new D
+let x = new w

@@ -2,7 +2,7 @@
 /** chunk id: 537006, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,7 +48,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     tiny: t,
     isPremiumUser: n,
@@ -113,7 +113,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     isPremiumUser: t,
     onInteraction: n,
@@ -142,7 +142,7 @@ function D(e) {
         })
       }
     }),
-    S = (0, r.jsx)(w, {
+    S = (0, r.jsx)(D, {
       isPremiumUser: t,
       onInteraction: n,
       tiny: f

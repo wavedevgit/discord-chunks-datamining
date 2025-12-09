@@ -18,7 +18,7 @@ var i, Chunk95015 = require("./95015.js"),
   Chunk490897 = require("./490897.js"),
   Chunk526761 = require("./526761.js");
 
-function C(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function C(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = [{
+let C = [{
     timeSinceJoin: +Chunk70956.Z.Millis.HOUR,
     sends: 1,
     viewTime: +Chunk70956.Z.Millis.MINUTE
@@ -43,7 +43,7 @@ let y = [{
     sends: 10,
     viewTime: 30 * Chunk70956.Z.Millis.MINUTE
   }],
-  v = 5 * y[y.length - 1].viewTime,
+  v = 5 * C[C.length - 1].viewTime,
   _ = Chunk70956.Z.Millis.WEEK,
   O = {
     channels: {}
@@ -109,13 +109,13 @@ class A extends(i = Chunk442837.ZP.PersistedStore) {
         r = Math.min(h.default.age(e.id), Date.now() - i.getTime()),
         l = O.channels[e.id];
       if (null == l || l.lastActionTime < Date.now() - _) returnfalse;
-      for (let e of y)
+      for (let e of C)
         if (r < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) returntrue;
       returnfalse
     }(t) && (delete O.channels[e], x.add(e), (0, f.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), true)
   }
 }
-C(A, "displayName", "UnreadSettingNoticeStore2"), C(A, "persistKey", "UnreadSettingNoticeStore2");
+y(A, "displayName", "UnreadSettingNoticeStore2"), y(A, "persistKey", "UnreadSettingNoticeStore2");
 let w = new A(Chunk570140.Z, {
     CHANNEL_SELECT: function() {
       let e = P();

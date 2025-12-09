@@ -68,11 +68,11 @@ let O = "scientist:triggered",
   N = {},
   P = new Map,
   R = {},
-  w = {
+  D = {
     rawUserExperiments: [],
     rawGuildExperiments: []
   },
-  D = {},
+  w = {},
   x = {},
   L = {},
   j = {},
@@ -179,7 +179,7 @@ function X(e) {
         assignment_fingerprint: n.fingerprint,
         current_session_id: d.default.getSessionId(),
         current_fingerprint: d.default.getFingerprint(),
-        current_source: w.source
+        current_source: D.source
       });
       p.default.track(h.rMx.EXPERIMENT_USER_TRIGGERED_IGNORED, t, {
         flush: false,
@@ -213,7 +213,7 @@ function X(e) {
         assignment_fingerprint: n.fingerprint,
         current_session_id: d.default.getSessionId(),
         current_fingerprint: d.default.getFingerprint(),
-        current_source: w.source
+        current_source: D.source
       });
       p.default.track(h.rMx.EXPERIMENT_GUILD_TRIGGERED_IGNORED, e, {
         flush: false,
@@ -273,12 +273,12 @@ function ee(e) {
 
 function et(e) {
   var t;
-  !U && "CONNECTION_OPEN" === e.type && H(e.user) && (U = true), "EXPERIMENTS_FETCH_SUCCESS" === e.type && C && "ready_payload" === w.source && p.default.track(h.rMx.EXPERIMENT_FETCH_IGNORED, {
+  !U && "CONNECTION_OPEN" === e.type && H(e.user) && (U = true), "EXPERIMENTS_FETCH_SUCCESS" === e.type && C && "ready_payload" === D.source && p.default.track(h.rMx.EXPERIMENT_FETCH_IGNORED, {
     fingerprint: e.fingerprint,
-    current_snapshot_source: w.source,
-    current_snapshot_session_id: w.sessionId,
-    current_snapshot_fingerprint: w.fingerprint
-  }), D = {}, x = {}, L = {};
+    current_snapshot_source: D.source,
+    current_snapshot_session_id: D.sessionId,
+    current_snapshot_fingerprint: D.fingerprint
+  }), w = {}, x = {}, L = {};
   let r = "CONNECTION_OPEN" === e.type || null == e.fingerprint || e.fingerprint === d.default.getFingerprint(),
     {
       experiments: i,
@@ -304,7 +304,7 @@ function en(e) {
     sessionId: i,
     fingerprint: a
   } = e, o = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  w = {
+  D = {
     rawUserExperiments: t,
     rawGuildExperiments: null != n ? n : [],
     source: r,
@@ -312,7 +312,7 @@ function en(e) {
     fingerprint: a
   }, t.forEach(e => {
     let [t, n, s, l, c, u, d, f, p, _, m] = e;
-    D[t] = {
+    w[t] = {
       type: "user",
       revision: n,
       population: c,
@@ -456,7 +456,7 @@ function es(e) {
     serializedExperimentStore: t,
     user: n
   } = e;
-  if (!U && H(n) && (U = true), C = t.hasLoadedExperiments, N = t.trackedExposureExperiments, D = t.loadedUserExperiments, j = t.userExperimentOverrides, M = t.guildExperimentOverrides, w = y(E({}, w), {
+  if (!U && H(n) && (U = true), C = t.hasLoadedExperiments, N = t.trackedExposureExperiments, w = t.loadedUserExperiments, j = t.userExperimentOverrides, M = t.guildExperimentOverrides, D = y(E({}, D), {
       source: t.assignmentSource,
       sessionId: t.assignmentSessionId,
       fingerprint: t.assignmentFingerprint
@@ -474,7 +474,7 @@ function ec(e) {
   let {
     isSwitchingAccount: t
   } = e;
-  s.K.remove(O), t || (s.K.remove(v), s.K.remove(S), s.K.remove(I), j = {}, M = {}), D = {}, w = y(E({}, w), {
+  s.K.remove(O), t || (s.K.remove(v), s.K.remove(S), s.K.remove(I), j = {}, M = {}), w = {}, D = y(E({}, D), {
     rawUserExperiments: []
   }), N = {}, C = false
 }
@@ -623,12 +623,12 @@ class eb extends Chunk750041.Z {
   }
   loadCache() {
     let e = this.readSnapshot(eb.LATEST_SNAPSHOT_VERSION);
-    null != module && ("loadedUserExperiments" in module ? (D = module.loadedUserExperiments, x = eo(module.loadedGuildExperiments), Object.values(D).forEach(e => e.loadedFromCache = true), Object.values(x).forEach(e => e.loadedFromCache = true)) : en(module, true))
+    null != module && ("loadedUserExperiments" in module ? (w = module.loadedUserExperiments, x = eo(module.loadedGuildExperiments), Object.values(w).forEach(e => e.loadedFromCache = true), Object.values(x).forEach(e => e.loadedFromCache = true)) : en(module, true))
   }
   takeSnapshot() {
     return {
       version: eb.LATEST_SNAPSHOT_VERSION,
-      data: E({}, w)
+      data: E({}, D)
     }
   }
   get hasLoadedExperiments() {
@@ -643,7 +643,7 @@ class eb extends Chunk750041.Z {
       if (null != t) return t
     }
     let t = Z(e);
-    return D["".concat(t)]
+    return w["".concat(t)]
   }
   getGuildExperimentDescriptor(e, t) {
     let n = null != t ? t : h.lds,
@@ -663,13 +663,13 @@ class eb extends Chunk750041.Z {
     return null != n ? n.bucket : m.NZ.NOT_ELIGIBLE
   }
   getAllUserExperimentDescriptors() {
-    return D
+    return w
   }
   getGuildExperiments() {
     return x
   }
   getLoadedUserExperiment(e) {
-    return D[Z(e)]
+    return w[Z(e)]
   }
   getLoadedGuildExperiment(e) {
     return x[Z(e)]
@@ -701,9 +701,9 @@ class eb extends Chunk750041.Z {
       t = {};
     for (let n in Object.keys(R).forEach(e => {
         t[Z("".concat(e))] = e
-      }), D) {
+      }), w) {
       let r = exports[require];
-      null != Chunk392711 && (module[Chunk392711] = D[require].bucket)
+      null != Chunk392711 && (module[Chunk392711] = w[require].bucket)
     }
     for (let t in L) {
       let n = L[exports];
@@ -718,14 +718,14 @@ class eb extends Chunk750041.Z {
     return {
       hasLoadedExperiments: C,
       trackedExposureExperiments: N,
-      loadedUserExperiments: D,
+      loadedUserExperiments: w,
       loadedGuildExperiments: module,
       userExperimentOverrides: j,
       guildExperimentOverrides: M,
       cookieOverrides: (0, Chunk865427._S)(),
-      assignmentSource: w.source,
-      assignmentSessionId: w.sessionId,
-      assignmentFingerprint: w.fingerprint
+      assignmentSource: D.source,
+      assignmentSessionId: D.sessionId,
+      assignmentFingerprint: D.fingerprint
     }
   }
   hasExperimentTrackedExposure(e, t, n, r) {

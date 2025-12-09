@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 993397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 }), require("./314940.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk378661 = require("./378661.js"),
   Chunk360514 = require("./360514.js");
 
-function C(e) {
+function y(e) {
   let {
     expanded: t,
     onClick: n,
@@ -66,7 +66,7 @@ function C(e) {
     })
   })
 }
-let y = Chunk473749.memo(function(e) {
+let C = Chunk473749.memo(function(e) {
   var t;
   let {
     messages: n,
@@ -76,9 +76,9 @@ let y = Chunk473749.memo(function(e) {
     collapsedReason: u
   } = e, {
     hasJumpTarget: h = false
-  } = n, [m, y] = r.useState(h), v = r.useCallback(() => y(e => !e), []);
+  } = n, [m, C] = r.useState(h), v = r.useCallback(() => C(e => !e), []);
   r.useEffect(() => {
-    h && y(true)
+    h && C(true)
   }, [h]);
   let _ = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, i.jsxs)("div", {
@@ -89,7 +89,7 @@ let y = Chunk473749.memo(function(e) {
     children: [n.hasUnread && (!m || (null == (t = n.content[0]) ? true : t.type) === f.ys_.DIVIDER) ? (0, i.jsx)(p.Z, {
       isUnread: true,
       id: s
-    }, "divider") : null, (0, i.jsx)(C, {
+    }, "divider") : null, (0, i.jsx)(y, {
       count: _,
       compact: o,
       expanded: m,

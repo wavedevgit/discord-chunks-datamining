@@ -39,7 +39,7 @@ function E(e) {
   }, [l, n]);
   let P = (0, o.e7)([c.Z], () => c.Z.getApplication(b.t9)),
     I = r.useMemo(() => {
-      let e = null != P ? P.getIconURL(y.Si.SMALL) : true;
+      let e = null != P ? P.getIconURL(C.Si.SMALL) : true;
       return null != e && null != P ? (0, i.jsx)("img", {
         src: e,
         alt: P.name
@@ -54,7 +54,7 @@ function E(e) {
       numWishlistItems: m.W
     });
   return r.useEffect(() => {
-    0 !== N.length && h.default.track(C.rMx.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+    0 !== N.length && h.default.track(y.rMx.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
       guild_id: S.guild_id,
       channel_id: S.id,
       sku_ids: N

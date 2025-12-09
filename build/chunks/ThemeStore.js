@@ -105,14 +105,14 @@ function R(e) {
   return I = null, !e.isSwitchingAccount && S !== m.BRd.DARK && (S = m.BRd.DARK, (0, u.Z)(S), A())
 }
 
-function w(e) {
+function D(e) {
   let {
     systemTheme: t
   } = e;
   return v = t, A()
 }
 
-function D(e) {
+function w(e) {
   return O = g({}, O, e.preferences), A()
 }
 
@@ -142,9 +142,9 @@ let M = new C(Chunk570140.Z, {
   UNSYNCED_USER_SETTINGS_UPDATE: A,
   USER_SETTINGS_PROTO_UPDATE: A,
   RESET_PREVIEW_CLIENT_THEME: A,
-  SYSTEM_THEME_CHANGE: w,
+  SYSTEM_THEME_CHANGE: D,
   ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: P,
-  UPDATE_THEME_PREFERENCES: D,
+  UPDATE_THEME_PREFERENCES: w,
   SET_THEME_OVERRIDE: x,
   CLEAR_THEME_OVERRIDE: L,
   REFRESH_THEME: j

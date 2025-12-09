@@ -149,14 +149,14 @@ let H = (0, Chunk888651.$)(function(e) {
     application: em,
     hangStatusActivity: eg,
     requestToStreamActivity: eb,
-    showHangStatus: eC
-  } = e, ey = r.useRef(null), [ev, e_] = r.useState(false), eO = r.useRef(null), [ex, eE] = r.useState(false), [ej, eS] = r.useState(false), [eP, eI] = r.useState(false), [eZ, eT] = r.useState(false), eN = ej || eZ || eP, eA = ex || eN, ew = (null == eb ? true : eb.session_id) != null, eM = () => {
+    showHangStatus: ey
+  } = e, eC = r.useRef(null), [ev, e_] = r.useState(false), eO = r.useRef(null), [ex, eE] = r.useState(false), [ej, eS] = r.useState(false), [eP, eI] = r.useState(false), [eZ, eT] = r.useState(false), eN = ej || eZ || eP, eA = ex || eN, ew = (null == eb ? true : eb.session_id) != null, eM = () => {
     e_(!ev)
   }, eR = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
     null != t && n.has(t) && (eP && eI(false), ej && eS(false)), eL()
   }, eL = () => {
-    (et || eC || ew) && (null == ea || ea(h.id))
+    (et || ey || ew) && (null == ea || ea(h.id))
   }, eD = e => {
     e ? eO.current = setTimeout(() => {
       eE(true)
@@ -174,7 +174,7 @@ let H = (0, Chunk888651.$)(function(e) {
         channelId: U.id,
         guildId: U.guild_id
       };
-      I.default.getId() !== h.id && d.default.selectVoiceChannel(U.id), en ? ((0, _.Z)(e), c.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, p.iV)(e), null == ea || ea(h.id)
+      I.default.getId() !== h.id && d.default.selectVoiceChannel(U.id), en ? ((0, _.Z)(e), c.Z.selectParticipant(e.channelId, (0, C.V9)(e))) : (0, p.iV)(e), null == ea || ea(h.id)
     },
     eV = e => {
       (0, u.jW)(e, async () => {
@@ -217,12 +217,12 @@ let H = (0, Chunk888651.$)(function(e) {
       className: L.draggable,
       "data-dnd-name": U.name,
       onMouseEnter: ed ? true : () => {
-        (et || eC || ew) && !ev && (null == el || el(h.id))
+        (et || ey || ew) && !ev && (null == el || el(h.id))
       },
       onMouseLeave: ed ? true : eL,
       children: (0, i.jsx)(S.Z, {
         clickTrap: (null == h ? true : h.id) === (null == (t = N.default.getCurrentUser()) ? true : t.id) && ev,
-        targetElementRef: ey,
+        targetElementRef: eC,
         user: h,
         guildId: U.guild_id,
         channelId: U.id,
@@ -267,28 +267,28 @@ let H = (0, Chunk888651.$)(function(e) {
               application: em,
               channelId: U.id,
               hangStatusActivity: eg,
-              showHangStatus: eC
+              showHangStatus: ey
             };
           if (ed) {
             var r;
             return (0, i.jsx)(o.u, {
-              text: null != (r = (0, C.Z)(ec)) ? r : R.intl.string(R.t.IyYqqY),
+              text: null != (r = (0, y.Z)(ec)) ? r : R.intl.string(R.t.IyYqqY),
               children: (0, i.jsx)(P.ZP, D({
-                ref: ey
+                ref: eC
               }, n))
             })
           }
           let c = () => null;
-          return eC && eA ? c = eH : et ? c = eB : ew && h.id !== I.default.getId() ? c = eF : eC && (c = eH), (0, i.jsx)(s.yRy, {
-            targetElementRef: ey,
+          return ey && eA ? c = eH : et ? c = eB : ew && h.id !== I.default.getId() ? c = eF : ey && (c = eH), (0, i.jsx)(s.yRy, {
+            targetElementRef: eC,
             position: "right",
             renderPopout: c,
-            shouldShow: (eo || eC && eN) && !ev,
+            shouldShow: (eo || ey && eN) && !ev,
             onRequestClose: eR,
-            align: eC && eA && !ef ? "center" : true,
-            spacing: eC && eA ? 8 : 0,
+            align: ey && eA && !ef ? "center" : true,
+            spacing: ey && eA ? 8 : 0,
             children: () => (0, i.jsx)(P.ZP, k(D({}, n), {
-              ref: ey,
+              ref: eC,
               onMouseDown: e.onMouseDown,
               onKeyDown: e.onKeyDown,
               handleHoverHangStatus: eD,

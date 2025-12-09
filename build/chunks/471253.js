@@ -2,16 +2,16 @@
 /** chunk id: 471253, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DT: () => A,
-  Ef: () => R,
-  HO: () => P,
+  DT: () => C,
+  Ef: () => D,
+  HO: () => R,
   NZ: () => w,
-  Pq: () => N,
-  Q1: () => v,
-  RK: () => I,
-  _0: () => S,
-  hz: () => C,
-  yi: () => T
+  Pq: () => P,
+  Q1: () => S,
+  RK: () => T,
+  _0: () => I,
+  hz: () => N,
+  yi: () => A
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -29,10 +29,11 @@ var Chunk911969 = require("./911969.js"),
   Chunk192079 = require("./192079.js"),
   Chunk706058 = require("./706058.js"),
   Chunk590415 = require("./590415.js"),
+  Chunk430104 = require("./430104.js"),
   Chunk981631 = require("./981631.js"),
   Chunk484710 = require("./484710.js");
 
-function y(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,23 +42,23 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e, t) {
+function S(e, t) {
   let n = e.getGuildId();
-  return i()(null != n, "This channel cannot be guildless."), t && (0, c.yw)(E.rMx.REQUEST_TO_SPEAK_INITIATED, O({}, (0, m.s$)(e))), o.tn.patch({
-    url: E.ANM.UPDATE_VOICE_STATE(n),
+  return i()(null != n, "This channel cannot be guildless."), t && (0, c.yw)(b.rMx.REQUEST_TO_SPEAK_INITIATED, v({}, (0, m.s$)(e))), o.tn.patch({
+    url: b.ANM.UPDATE_VOICE_STATE(n),
     body: {
       request_to_speak_timestamp: t ? new Date().toISOString() : null,
       channel_id: e.id
@@ -66,27 +67,27 @@ function v(e, t) {
   })
 }
 
-function S(e, t) {
+function I(e, t) {
   let n = e.getGuildId();
   return i()(null != n, "This channel cannot be guildless."), o.tn.patch({
-    url: E.ANM.UPDATE_VOICE_STATE(n, t),
+    url: b.ANM.UPDATE_VOICE_STATE(n, t),
     body: {
       suppress: false,
       request_to_speak_timestamp: new Date().toISOString(),
       channel_id: e.id
     },
     rejectWithError: false
-  }).catch(e => (e.code === E.evJ.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK && u.Z.showFailedToast(b.wQ.GENERIC_ERROR), e))
+  }).catch(e => (e.code === b.evJ.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK && u.Z.showFailedToast(y.wQ.GENERIC_ERROR), e))
 }
 
-function I(e, t) {
+function T(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = null == e ? true : e.getGuildId();
-  i()(null != r, "This channel cannot be guildless.");
+  if (i()(null != r, "This channel cannot be guildless."), !t && (0, E.u1)()) return Promise.resolve();
   let a = f.Z.getVoiceStateForChannel(e.id);
-  return (0, g.gf)(a) !== g.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK || t || (0, c.yw)(E.rMx.PROMOTED_TO_SPEAKER, O({}, (0, m.s$)(e))), o.tn.patch({
-    url: E.ANM.UPDATE_VOICE_STATE(r),
-    body: O({
+  return (0, g.gf)(a) !== g.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK || t || (0, c.yw)(b.rMx.PROMOTED_TO_SPEAKER, v({}, (0, m.s$)(e))), o.tn.patch({
+    url: b.ANM.UPDATE_VOICE_STATE(r),
+    body: v({
       suppress: t,
       request_to_speak_timestamp: null,
       channel_id: e.id
@@ -97,10 +98,10 @@ function I(e, t) {
   })
 }
 
-function T(e) {
+function A(e) {
   let t = null == e ? true : e.getGuildId();
   return i()(null != t, "This channel cannot be guildless."), o.tn.patch({
-    url: E.ANM.UPDATE_VOICE_STATE(t),
+    url: b.ANM.UPDATE_VOICE_STATE(t),
     body: {
       suppress: true,
       channel_id: e.id,
@@ -111,23 +112,23 @@ function T(e) {
   })
 }
 
-function A(e, t, n) {
+function C(e, t, n) {
   let r = e.getGuildId();
   return i()(null != r, "This channel cannot be guildless."), o.tn.patch({
-    url: E.ANM.UPDATE_VOICE_STATE(r, t),
+    url: b.ANM.UPDATE_VOICE_STATE(r, t),
     body: {
       suppress: n,
       channel_id: e.id
     },
     rejectWithError: false
-  }).catch(e => (e.code === E.evJ.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK && u.Z.showFailedToast(b.wQ.GENERIC_ERROR), e))
+  }).catch(e => (e.code === b.evJ.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK && u.Z.showFailedToast(y.wQ.GENERIC_ERROR), e))
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == t || null == e) return;
   let n = t.getGuildId();
-  return i()(null != n, "This channel cannot be guildless."), A(t, e.id, true), o.tn.patch({
-    url: E.ANM.UPDATE_VOICE_STATE(n, e.id),
+  return i()(null != n, "This channel cannot be guildless."), C(t, e.id, true), o.tn.patch({
+    url: b.ANM.UPDATE_VOICE_STATE(n, e.id),
     body: {
       suppress: true,
       channel_id: t.id,
@@ -138,11 +139,11 @@ function C(e, t) {
   })
 }
 
-function N(e, t, n) {
+function P(e, t, n) {
   let r = e.getGuildId();
   i()(null != r, "Channel cannot be guildless");
   let o = e.permissionOverwrites[r],
-    c = O({
+    c = v({
       id: r,
       type: l.BN.ROLE,
       allow: p.Hn,
@@ -150,13 +151,13 @@ function N(e, t, n) {
     }, o);
   n ? (c.allow = a.IH(c.allow, t), c.deny = a.Od(c.deny, t)) : (c.allow = a.Od(c.allow, t), c.deny = a.IH(c.deny, t)), s.Z.updatePermissionOverwrite(e.id, c)
 }
-async function P(e, t, n, r) {
+async function R(e, t, n, r) {
   if ("" === t) return;
   d.Z.getVoiceChannelId() !== e.id && (0, _.TM)(e);
   let i = await (0, h.me)(e.id, t, n, r);
-  return I(e, false, true), i
+  return T(e, false, true), i
 }
-async function R(e, t, n) {
+async function D(e, t, n) {
   if ("" !== t) return await (0, h.Dk)(e.id, t, n)
 }
 async function w(e) {

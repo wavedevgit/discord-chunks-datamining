@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Ah: () => O,
-  CB: () => w,
+  CB: () => D,
   aU: () => C,
-  cp: () => D,
+  cp: () => w,
   eL: () => P,
   vg: () => R,
   zy: () => N
@@ -199,7 +199,7 @@ function R(e, t) {
   return null == n[0] && null == i[0] && null != r[0]
 }
 
-function w(e, t) {
+function D(e, t) {
   var n;
   let r = d.Z.getChannel(t);
   if (null == r) returnfalse;
@@ -207,7 +207,7 @@ function w(e, t) {
   return null != i && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && r.isForumPost() && r.ownerId === (null == (n = p.default.getCurrentUser()) ? true : n.id) && 0 === c.Z.getCount(r.id) && (0 === i.attachments.length || null == i.attachments.find(e => E(e) || b(e)))
 }
 
-function D(e) {
+function w(e) {
   return e.reduce((e, t) => ({
     containsVideo: e.containsVideo || t.isVideo,
     containsGif: e.containsGif || (0, l.d$)(t.src)

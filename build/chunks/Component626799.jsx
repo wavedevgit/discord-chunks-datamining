@@ -211,9 +211,9 @@ class R extends(r = Chunk473749.Component) {
 A(R, "defaultProps", {
   renderFallback: Chunk981631.dG4
 });
-let w = [Chunk55563.Z, Chunk558314.Z, Chunk283595.Z, Chunk551428.Z];
+let D = [Chunk55563.Z, Chunk558314.Z, Chunk283595.Z, Chunk551428.Z];
 
-function D(e) {
+function w(e) {
   let {
     skuId: t
   } = e, n = y.Z.get(t), r = null != n ? g.Z.getApplication(n.applicationId) : null;
@@ -227,5 +227,5 @@ function D(e) {
   }
 }
 let x = (0, Chunk112724.Z)((0, Chunk730749.Z)(R)),
-  L = Chunk442837.ZP.connectStores(w, D)(x),
-  j = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores(w, D)(R))
+  L = Chunk442837.ZP.connectStores(D, w)(x),
+  j = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores(D, w)(R))

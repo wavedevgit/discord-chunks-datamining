@@ -161,15 +161,16 @@ class I {
       openModalOptions: t,
       flowSpecificOptions: o,
       giftContextProps: s,
-      onCheckoutSuccess: l,
-      skuId: c,
-      loadId: u,
-      applicationId: d,
-      analyticsSourceLocation: f,
-      analyticsLocations: p
-    } = e, _ = null != u ? u : (0, i.Z)(), {
-      modalKey: m
-    } = t, h = false, g = this.generateRenderHeader(), E = null != d ? d : this.getApplicationId(c);
+      onComplete: l,
+      onClose: c,
+      skuId: u,
+      loadId: d,
+      applicationId: f,
+      analyticsSourceLocation: p,
+      analyticsLocations: _
+    } = e, m = null != d ? d : (0, i.Z)(), {
+      modalKey: h
+    } = t, g = this.generateRenderHeader(), E = null != f ? f : this.getApplicationId(u), y = false;
     return (0, a.ZDy)(async () => {
       let {
         WrappedUnifiedPaymentModal: e
@@ -181,24 +182,25 @@ class I {
         stepConfigs: this.generateCheckoutStepConfigs({
           isGift: !!(null != s && s.isGift)
         }),
+        onComplete: e => {
+          null != l && l(e), y = true
+        },
+        onClose: c,
         renderHeader: g,
-        skuId: c,
-        loadId: _,
+        skuId: u,
+        loadId: m,
         applicationId: E,
-        analyticsLocations: p,
-        analyticsSourceLocation: f,
+        analyticsLocations: _,
+        analyticsSourceLocation: p,
         renderModalProps: t,
         giftContextProps: s,
-        onCheckoutSuccess: e => {
-          h || l(e), h = true
-        },
         flowSpecificOptions: o
       })
     }, O(b({}, t), {
       onCloseRequest() {
-        null != t.onCloseRequest && t.onCloseRequest(h, _), (0, a.Mr3)(m)
+        null != t.onCloseRequest && t.onCloseRequest(y, m), (0, a.Mr3)(h)
       },
-      modalKey: m
+      modalKey: h
     }))
   }
   constructor({

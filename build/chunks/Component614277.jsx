@@ -68,14 +68,14 @@ function E(e) {
       isDisplayingWowMomentConfirmation: P,
       isGift: R
     } = (0, d.JL)(),
-    w = null != N && N in p.y7,
-    D = v.find(e => e.key === O);
+    D = null != N && N in p.y7,
+    w = v.find(e => e.key === O);
   i.useEffect(() => {
     T(null)
-  }, [O, T]), l()(null != D, "Unknown step for current payment flow.");
-  let x = null != (c = null == D || null == (t = D.options) ? true : t.hideSlider) && c,
-    L = null == D || null == (n = D.options) ? true : n.bodyClassName,
-    j = null == D || null == (a = D.options) ? true : a.sliderBodyClassName;
+  }, [O, T]), l()(null != w, "Unknown step for current payment flow.");
+  let x = null != (c = null == w || null == (t = w.options) ? true : t.hideSlider) && c,
+    L = null == w || null == (n = w.options) ? true : n.bodyClassName,
+    j = null == w || null == (a = w.options) ? true : a.sliderBodyClassName;
   switch (true !== b && b && (j = _.sliderBodyLarge), O) {
     case f.h8.ADD_PAYMENT_STEPS:
       h = 408;
@@ -84,15 +84,15 @@ function E(e) {
       h = 392;
       break;
     case f.h8.PLAN_SELECT:
-      w && !R && (h = "100%")
+      D && !R && (h = "100%")
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [null == (m = null == D || null == (s = D.options) ? true : s.renderHeader) || m ? E : null, D.renderStep(y), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
+    children: [null == (m = null == w || null == (s = w.options) ? true : s.renderHeader) || m ? E : null, w.renderStep(y), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         "data-migration-pending": true,
         className: o()(L, _.body, C, {
           [_.reviewStep]: O === f.h8.REVIEW,
-          [_.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && w
+          [_.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && D
         }),
         children: (0, r.jsx)(u.MyZ, {
           activeSlide: O,

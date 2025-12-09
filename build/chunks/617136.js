@@ -7,11 +7,11 @@ require.d(exports, {
   Zk: () => F,
   _3: () => U,
   _F: () => Z,
-  _b: () => w,
+  _b: () => D,
   dA: () => M,
   jZ: () => k,
   mH: () => j,
-  uk: () => D
+  uk: () => w
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk772848 = require("./772848.js"),
@@ -77,12 +77,12 @@ function N(e, t) {
 let P = Object.keys(Chunk49436.jn),
   R = new Set([Chunk981631.rMx.QUEST_CONTENT_VIEWED, Chunk981631.rMx.QUEST_CONTENT_CLICKED]);
 
-function w(e) {
+function D(e) {
   var t;
   return null != (t = P.find(t => h.jn[t] === e)) ? t : ""
 }
 
-function D(e) {
+function w(e) {
   var t, n, r;
   return (null == (t = e.userStatus) ? true : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null == (n = e.userStatus) ? true : n.completedAt) != null ? "COMPLETED" : (null == (r = e.userStatus) ? true : r.enrolledAt) != null ? "ENROLLED" : "NONE"
 }
@@ -115,7 +115,7 @@ function L(e, t, n) {
 function j(e, t, n) {
   return {
     content_id: e,
-    content_name: w(e),
+    content_name: D(e),
     content_position: t,
     row_index: n
   }
@@ -154,13 +154,13 @@ async function U(e) {
     impressionId: l,
     trackGuildAndChannelMetadata: u = false,
     sourceQuestContent: d
-  } = e, f = m.Z.getQuest(t), _ = await (0, a.S)(w(n)), h = (0, y.jY)(n), g = (0, y.R_)(n);
+  } = e, f = m.Z.getQuest(t), _ = await (0, a.S)(D(n)), h = (0, y.jY)(n), g = (0, y.R_)(n);
   M({
     questId: t,
     event: I.rMx.QUEST_CONTENT_CLICKED,
     properties: N(A({}, j(n, o, s), (0, c.Z)()), {
       cta_name: r,
-      quest_status: null != f ? D(f) : null,
+      quest_status: null != f ? w(f) : null,
       impression_id: l,
       apple_advertising_id: null != _ && (0, p.isIOS)() ? _.advertisingId : null,
       android_advertising_id: null != _ && (0, p.isAndroid)() ? _.advertisingId : null,
@@ -218,13 +218,13 @@ function B() {
       trackGuildAndChannelMetadata: u = false,
       sourceQuestContent: d
     } = t, f = m.Z.getQuest(n), _ = (0, y.jY)(r), h = (0, y.R_)(r);
-    (0, a.S)(w(r)).then(t => {
+    (0, a.S)(D(r)).then(t => {
       e({
         questId: n,
         event: I.rMx.QUEST_CONTENT_CLICKED,
         properties: N(A({}, j(r, s, l), (0, c.Z)()), {
           cta_name: o,
-          quest_status: null != f ? D(f) : null,
+          quest_status: null != f ? w(f) : null,
           click_id: (0, i.Z)(),
           apple_advertising_id: null != t && (0, p.isIOS)() ? t.advertisingId : null,
           android_advertising_id: null != t && (0, p.isAndroid)() ? t.advertisingId : null,

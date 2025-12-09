@@ -129,13 +129,15 @@ let f = e => {
       let {
         skuId: t,
         loadId: n,
-        onCheckoutSuccess: i,
-        analyticsLocations: a,
-        analyticsSourceLocation: o,
-        renderModalProps: s,
-        flowSpecificOptions: u,
-        children: d
-      } = e, f = u.rentalDuration, {
+        analyticsLocations: i,
+        analyticsSourceLocation: a,
+        renderModalProps: o,
+        flowSpecificOptions: s,
+        children: u
+      } = e, {
+        onCheckoutSuccess: d,
+        rentalDuration: f
+      } = s, {
         orbProductContext: p,
         isRedeeming: _,
         orbRedemptionError: g,
@@ -143,14 +145,14 @@ let f = e => {
       } = (0, l.Gw)({
         skuId: t,
         loadId: n,
-        onCheckoutSuccess: i,
-        analyticsLocations: a,
+        onCheckoutSuccess: d,
+        analyticsLocations: i,
         rentalDuration: f
       }), b = (0, c.HR)({
-        onClose: s.onClose,
+        onClose: o.onClose,
         skuId: t,
-        analyticsLocations: a,
-        analyticsSourceLocation: o,
+        analyticsLocations: i,
+        analyticsSourceLocation: a,
         orbProductContext: p
       });
       return (0, r.jsx)(m.Provider, {
@@ -158,13 +160,12 @@ let f = e => {
           sharedCheckoutContext: {
             loadId: n,
             skuId: t,
-            onCheckoutSuccess: i,
-            analyticsLocations: a,
-            analyticsSourceLocation: o,
-            flowSpecificOptions: u
+            analyticsLocations: i,
+            analyticsSourceLocation: a,
+            flowSpecificOptions: s
           },
           paymentModalProps: b,
-          renderModalProps: s
+          renderModalProps: o
         },
         children: (0, r.jsx)(h.Provider, {
           value: {
@@ -173,7 +174,7 @@ let f = e => {
             orbRedemptionError: g,
             onRedeemVirtualCurrency: E
           },
-          children: d
+          children: u
         })
       })
     },

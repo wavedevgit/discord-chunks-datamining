@@ -203,7 +203,7 @@ let R = function(e) {
     closeAction: _
   });
 
-  function w() {
+  function D() {
     return null == r ? null : (0, i.jsx)(f.oXn, {
       className: s()(h.noticeRegion, {
         [h.noticeRegionHiddenSidebar]: O
@@ -212,7 +212,7 @@ let R = function(e) {
     }, o)
   }
 
-  function D() {
+  function w() {
     let e = null != y && null != _ && b,
       t = u.tq && (0, i.jsxs)("div", {
         className: s()(h.mobileContentHeader, {
@@ -225,7 +225,7 @@ let R = function(e) {
     if ("custom" === g) return (0, i.jsxs)(d.W, {
       component: "div",
       className: h.contentRegion,
-      children: [t, n, !u.tq && R, w()]
+      children: [t, n, !u.tq && R, D()]
     });
     if ("scrollableCustom" === g) return (0, i.jsxs)(d.W, {
       component: "div",
@@ -244,7 +244,7 @@ let R = function(e) {
             })
           })
         }), !u.tq && R]
-      }), w()]
+      }), D()]
     });
     let r = N[null != g ? g : "default"];
     return (0, i.jsxs)(d.W, {
@@ -275,7 +275,7 @@ let R = function(e) {
             })
           }), !u.tq && R]
         })]
-      }), w()]
+      }), D()]
     })
   }
 
@@ -307,7 +307,7 @@ let R = function(e) {
     children: A((e, t) => (0, i.jsxs)(l.animated.div, {
       style: e,
       className: h.standardSidebarView,
-      children: [!t && x(), D()]
+      children: [!t && x(), w()]
     }))
   })
 }

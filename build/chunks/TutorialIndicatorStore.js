@@ -50,7 +50,7 @@ let h = {},
   g = {},
   b = false;
 
-function C() {
+function y() {
   if (g = {}, !m)
     for (let [e, t] of Object.entries(Chunk268967.Z)) {
       let n = false !== h[module];
@@ -58,9 +58,9 @@ function C() {
         for (let n of exports.prerequisites) false !== h[require] && (g[module] = false)
     }
 }
-class y extends(i = Chunk442837.ZP.Store) {
+class C extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    C(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(Chunk38618.Z)
+    y(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(Chunk38618.Z)
   }
   shouldShow(e) {
     return !(!b || m || c.a || r.tq && ["writing-messages", "organize-by-topic"].includes(e)) && (g[e] || false)
@@ -79,13 +79,13 @@ class y extends(i = Chunk442837.ZP.Store) {
     return null != t ? t[e] : null
   }
 }
-u(y, "displayName", "TutorialIndicatorStore");
-let v = new y(Chunk570140.Z, {
+u(C, "displayName", "TutorialIndicatorStore");
+let v = new C(Chunk570140.Z, {
   CONNECTION_OPEN: function(e) {
     let {
       tutorial: t
     } = e;
-    b = true, m = true, h = {}, null != t && (m = t.indicators_suppressed, t.indicators_confirmed.forEach(e => h[e] = false)), C()
+    b = true, m = true, h = {}, null != t && (m = t.indicators_suppressed, t.indicators_confirmed.forEach(e => h[e] = false)), y()
   },
   CONNECTION_CLOSED: function() {
     b = false
@@ -93,7 +93,7 @@ let v = new y(Chunk570140.Z, {
   TUTORIAL_INDICATOR_DISMISS: function(e) {
     h = p(d({}, h), {
       [e.tutorialId]: false
-    }), f = d({}, f), delete f[e.tutorialId], C()
+    }), f = d({}, f), delete f[e.tutorialId], y()
   },
   TUTORIAL_INDICATOR_SHOW: function(e) {
     f = p(d({}, f), {

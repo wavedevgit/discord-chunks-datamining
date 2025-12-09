@@ -65,8 +65,8 @@ var Chunk329554 = require("./329554.js"),
   Chunk581079 = require("./581079.js"),
   Chunk207303 = require("./207303.js"),
   Chunk467159 = require("./467159.js"),
-  w = Chunk169774.isBrowser("IE"),
-  D = !w,
+  D = Chunk169774.isBrowser("IE"),
+  w = !D,
   x = {
     edit: Chunk529742,
     composite: Chunk590297,
@@ -253,7 +253,7 @@ var Chunk329554 = require("./329554.js"),
         onSelect: this._onSelect,
         ref: this.props.editorRef,
         role: d ? null : g,
-        spellCheck: D && this.props.spellCheck,
+        spellCheck: w && this.props.spellCheck,
         style: h,
         suppressContentEditableWarning: true,
         tabIndex: this.props.tabIndex
@@ -264,7 +264,7 @@ var Chunk329554 = require("./329554.js"),
         key: "contents" + this.state.contentsKey
       })))))
     }, r.componentDidMount = function() {
-      this._blockSelectEvents = false, !L && C("draft_ods_enabled") && (L = true, g.initODS()), this.setMode("edit"), w && (this.editor ? this.editor.ownerDocument.execCommand("AutoUrlDetect", false, false) : n.g.execCommand("AutoUrlDetect", false, false))
+      this._blockSelectEvents = false, !L && C("draft_ods_enabled") && (L = true, g.initODS()), this.setMode("edit"), D && (this.editor ? this.editor.ownerDocument.execCommand("AutoUrlDetect", false, false) : n.g.execCommand("AutoUrlDetect", false, false))
     }, r.componentDidUpdate = function() {
       this._blockSelectEvents = false, this._latestEditorState = this.props.editorState, this._latestCommittedEditorState = this.props.editorState
     }, t

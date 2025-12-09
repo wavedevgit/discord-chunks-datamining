@@ -50,7 +50,7 @@ let R = (0, Chunk442837.Kb)([Chunk55563.Z, Chunk551428.Z, Chunk509545.Z], {
       o()(null != e, "skuId is null"), await (0, u.km)(e)
     }
   }),
-  w = (0, Chunk442837.Kb)([Chunk55563.Z], {
+  D = (0, Chunk442837.Kb)([Chunk55563.Z], {
     getQueryId: Chunk981631.McO.__DO_NOT_USE__STOREFRONT_MESSAGE_EMBED_PARENT_SKU,
     get: e => {
       var t;
@@ -61,13 +61,13 @@ let R = (0, Chunk442837.Kb)([Chunk55563.Z, Chunk551428.Z, Chunk509545.Z], {
     }
   });
 
-function D(e, t) {
+function w(e, t) {
   var n, r;
   let {
     data: i
   } = R(e), a = null == i ? true : i.sku, o = null == i ? true : i.subscriptionPlan, s = null == i ? true : i.storeListing, {
     data: l
-  } = w(e, null != (r = null == a || null == (n = a.application) ? true : n.id) ? r : null == a ? true : a.applicationId);
+  } = D(e, null != (r = null == a || null == (n = a.application) ? true : n.id) ? r : null == a ? true : a.applicationId);
   return {
     parentSku: l,
     sku: (null == a ? true : a.applicationId) === t ? a : null,
@@ -116,13 +116,13 @@ function x(e) {
         })
       })
     },
-    w = () => {
+    D = () => {
       R(), y.default.track(A.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "app_icon"
       })
     },
-    D = () => {
+    w = () => {
       R(), y.default.track(A.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "open_store_button"
@@ -140,11 +140,11 @@ function x(e) {
     link: "".concat(location.protocol, "//").concat(location.host).concat(A.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(u.id, C.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: x,
     iconSrc: E,
-    onIconClick: w,
+    onIconClick: D,
     children: (0, r.jsx)("div", {
       className: P.openStoreButton,
       children: (0, r.jsx)(l.Button, {
-        onClick: D,
+        onClick: w,
         text: N.intl.string(N.t.kRvlKJ)
       })
     })
@@ -162,19 +162,19 @@ function L(e) {
     sku: h,
     subscriptionPlan: g,
     storeListing: E
-  } = D(c, o), {
+  } = w(c, o), {
     data: b
   } = (0, d.IX)(null == h ? true : h.applicationId), O = (0, s.e7)([m.Z], () => {
     var e;
     return null == (e = m.Z.getBasicChannel(u.channel_id)) ? true : e.guild_id
-  }, [u]), R = i.useMemo(() => null != b ? (0, v.y)(b, 45) : true, [b]), w = (0, I.R)(null != (a = null == b ? true : b.id) ? a : ""), {
+  }, [u]), R = i.useMemo(() => null != b ? (0, v.y)(b, 45) : true, [b]), D = (0, I.R)(null != (a = null == b ? true : b.id) ? a : ""), {
     openModal: x,
     subscriptionPurchaseButtonState: L
   } = (0, _.Z)({
     skuId: c,
     initialSubscribeForGuild: O
   });
-  if (!w || null == b || null == h) return null;
+  if (!D || null == b || null == h) return null;
   let M = h.type === A.epS.SUBSCRIPTION,
     k = !!M && (0, p.KW)(h.flags),
     U = () => {

@@ -161,7 +161,7 @@ let N = function(e) {
         initialStep: e
       }))
     })
-  }, w = () => {
+  }, D = () => {
     let e = d.ZP.isSwitchingPlansDisabled(t),
       n = d.ZP.getSwitchingPlansDisabledMessage(t);
     return d.ZP.isBaseSubscriptionCanceled(t) ? (0, r.jsx)(i.Button, {
@@ -197,8 +197,8 @@ let N = function(e) {
         onClick: P
       })]
     })
-  }, D = d.ZP.getPlanIdFromInvoice(t, c), x = (0, _.eQ)(null == S ? true : S.expires_at);
-  return (0, l.Q0)(D) ? null : (0, r.jsx)("div", {
+  }, w = d.ZP.getPlanIdFromInvoice(t, c), x = (0, _.eQ)(null == S ? true : S.expires_at);
+  return (0, l.Q0)(w) ? null : (0, r.jsx)("div", {
     className: b.churnDiscountBannerBackground,
     children: (0, r.jsx)(i.$1m, {
       color: "nitro-pink",
@@ -233,7 +233,7 @@ let N = function(e) {
               isDiscountActive: null != h
             }), (0, r.jsx)("div", {
               className: b.churnDiscountBannerButton,
-              children: w()
+              children: D()
             })]
           }), (0, r.jsx)("img", {
             className: b.churnDiscountBannerImage,

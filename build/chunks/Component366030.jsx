@@ -87,13 +87,13 @@ function B(e) {
     description: s
   } = e;
   if (null != s) switch (a) {
-    case D.iO.LESS_THAN:
+    case w.iO.LESS_THAN:
       t = j.intl.format(j.t["2p7dA3"], {
         description: s,
         count: Math.max(0, Number(o) - 1)
       });
       break;
-    case D.iO.GREATER_THAN:
+    case w.iO.GREATER_THAN:
       t = j.intl.format(j.t["2p7dA3"], {
         description: s,
         count: Math.max(0, Number(o) + 1)
@@ -256,7 +256,7 @@ function H(e) {
         channelId: s.id,
         guildId: a.id,
         onGetRolesClicked: () => {
-          (0, w.Am)(a.id)
+          (0, D.Am)(a.id)
         },
         onOpenProfile: () => {
           (0, v.openUserProfileModal)({

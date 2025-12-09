@@ -115,7 +115,7 @@ function C(e) {
     onboardingPromptsSeen: o,
     onboardingResponsesSeen: s,
     connections: null != u ? u : []
-  }, d || w(t, a), O[t] = Date.now()
+  }, d || D(t, a), O[t] = Date.now()
 }
 
 function N() {
@@ -143,7 +143,7 @@ function R(e) {
   return !!l.Z.isFullServerPreview(t) || null != b[t] && (null != i && i.length > 0 && a().pullAll(b[t].responses, i), r ? b[t].responses.push(n) : a().pull(b[t].responses, n), null == y[t] && (y[t] = {}), y[t][n] = r, null != i && i.forEach(e => y[t][e] = false), y[t] = h({}, y[t]), true)
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == y[e]) return;
   let n = {};
   Object.keys(y[e]).forEach(r => {
@@ -157,14 +157,14 @@ function w(e, t) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     guildId: t,
     options: n,
     prompts_seen: r,
     options_seen: i
   } = e;
-  w(t, n);
+  D(t, n);
   let a = b[t];
   if (null == a) returnfalse;
   let o = A(a.prompts, r, i);
@@ -290,7 +290,7 @@ let B = new Z(Chunk570140.Z, {
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: C,
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: N,
   GUILD_ONBOARDING_SELECT_OPTION: R,
-  GUILD_ONBOARDING_UPDATE_RESPONSES_SUCCESS: D,
+  GUILD_ONBOARDING_UPDATE_RESPONSES_SUCCESS: w,
   GUILD_ONBOARDING_PROMPTS_LOCAL_UPDATE: P,
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS: P,
   GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: x,

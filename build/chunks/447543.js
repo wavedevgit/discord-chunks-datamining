@@ -218,7 +218,7 @@ function eE(e, t, n) {
   return _.Z.isDispatching() ? Promise.resolve().then(() => eE(e, t, n)) : (_.Z.dispatch({
     type: "INVITE_RESOLVE",
     code: e
-  }), (0, D.Z)(e, t, n).then(e => {
+  }), (0, w.Z)(e, t, n).then(e => {
     let {
       invite: t,
       code: n,
@@ -464,7 +464,7 @@ let eS = {
       context: i,
       callback: a,
       skipOnboarding: o
-    } = e, s = (0, w.fU)(r), l = s.baseCode, c = U.default.getSessionId(), u = ep(i, s), f = W.default.getCurrentUser();
+    } = e, s = (0, D.fU)(r), l = s.baseCode, c = U.default.getSessionId(), u = ep(i, s), f = W.default.getCurrentUser();
     return null != (t = null == f ? true : f.hasFlag(ee.xW$.QUARANTINED)) && t ? ((0, x.default)(), new Promise((e, t) => t(Error()))) : (0, y.hO)(i.location_guild_id) ? ((0, b.mN)(et.L0.JOIN_LARGE_GUILD_UNDERAGE), new Promise((e, t) => t(Error()))) : (_.Z.dispatch({
       type: "INVITE_ACCEPT",
       code: l
@@ -562,7 +562,7 @@ let eS = {
   },
   openApp(e, t, n, r, a) {
     var o, s;
-    let d, f = null != e ? (0, w.fU)(e) : null,
+    let d, f = null != e ? (0, D.fU)(e) : null,
       p = null == f ? true : f.baseCode;
     if (_.Z.dispatch({
         type: "INVITE_APP_OPENING",

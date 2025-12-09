@@ -143,20 +143,20 @@ module.exports = function(e) {
     contains: ["self"].concat(P)
   });
   let R = [].concat(N, S.contains),
-    w = R.concat([{
+    D = R.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
       contains: ["self"].concat(R)
     }]),
-    D = {
+    w = {
       className: "params",
       begin: /(\s*)\(/,
       end: /\)/,
       excludeBegin: true,
       excludeEnd: true,
       keywords: E,
-      contains: w
+      contains: D
     },
     x = {
       variants: [{
@@ -200,7 +200,7 @@ module.exports = function(e) {
         3: "title.function"
       },
       label: "func.def",
-      contains: [D],
+      contains: [w],
       illegal: /%/
     },
     k = {
@@ -233,7 +233,7 @@ module.exports = function(e) {
       },
       contains: [{
         begin: /\(\)/
-      }, D]
+      }, w]
     },
     F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
     V = {
@@ -243,14 +243,14 @@ module.exports = function(e) {
         1: "keyword",
         3: "title.function"
       },
-      contains: [D]
+      contains: [w]
     };
   return {
     name: "JavaScript",
     aliases: ["js", "jsx", "mjs", "cjs"],
     keywords: E,
     exports: {
-      PARAMS_CONTAINS: w,
+      PARAMS_CONTAINS: D,
       CLASS_REFERENCE: L
     },
     illegal: /#(?![$_A-z])/,
@@ -288,7 +288,7 @@ module.exports = function(e) {
             excludeBegin: true,
             excludeEnd: true,
             keywords: E,
-            contains: w
+            contains: D
           }]
         }]
       }, {
@@ -322,7 +322,7 @@ module.exports = function(e) {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
       returnBegin: true,
       label: "func.def",
-      contains: [D, e.inherit(e.TITLE_MODE, {
+      contains: [w, e.inherit(e.TITLE_MODE, {
         begin: d,
         className: "title.function"
       })]
@@ -337,7 +337,7 @@ module.exports = function(e) {
       className: {
         1: "title.function"
       },
-      contains: [D]
+      contains: [w]
     }, G, k, x, B, {
       match: /\$[(.]/
     }]

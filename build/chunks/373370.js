@@ -174,7 +174,7 @@ function R(e) {
   }, i)
 }
 
-function w(e) {
+function D(e) {
   let t, {
       quest: n,
       taskDetails: r,
@@ -199,7 +199,7 @@ function w(e) {
   }, i)
 }
 
-function D(e) {
+function w(e) {
   let {
     quest: t,
     taskDetails: n,
@@ -370,7 +370,7 @@ function U(e) {
     hasNitro: f,
     collectibleRewardDuration: h
   });
-  if ((0, _.$H)(t)) return w({
+  if ((0, _.$H)(t)) return D({
     quest: t,
     taskDetails: n,
     withoutMarkdown: o,
@@ -379,7 +379,7 @@ function U(e) {
   });
   if ((0, p.oo)({
       quest: t
-    })) return D({
+    })) return w({
     quest: t,
     taskDetails: n,
     withoutMarkdown: o

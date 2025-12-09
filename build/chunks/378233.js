@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   B0: () => N,
-  Hc: () => w,
-  J8: () => D,
+  Hc: () => D,
+  J8: () => w,
   Q6: () => C,
   V9: () => j,
   WD: () => R,
@@ -101,7 +101,7 @@ let {
   name: e.name,
   stickers: e.stickers,
   previewSticker: S(e)
-}), R = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, w = (e, t, n, r) => {
+}), R = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, D = (e, t, n, r) => {
   if (o.Z.getUploadCount(n, r) > 0) returntrue;
   let i = c.Z.getStickerPreview(n, r);
   if (null != i && i.length > 0) returntrue;
@@ -114,7 +114,7 @@ let {
     default:
       returnfalse
   }
-}, D = e => e.type === d.n0.GUILD, x = e => e.type === d.n0.STANDARD, L = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
+}, w = e => e.type === d.n0.GUILD, x = e => e.type === d.n0.STANDARD, L = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
   if (null === e) returnfalse;
   let t = e.guild_id;
   return true !== a.Z.getGuild(t)

@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   Playground: () => j,
-  PlaygroundStore: () => D
+  PlaygroundStore: () => w
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -64,12 +64,12 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = (0, Chunk972959.H)(() => ({
+let w = (0, Chunk972959.H)(() => ({
   selectedCollection: null,
   selectedStory: null,
   controlsLayout: "right"
@@ -79,14 +79,14 @@ function x() {
   let e = (0, Chunk53432.Z)(),
     t = (0, Chunk606669.Z)(),
     n = (0, Chunk74869.Z)(),
-    a = D.useField("controlsLayout"),
+    a = w.useField("controlsLayout"),
     o = Chunk473749.useMemo(() => (0, Chunk54381.jsxs)(Chunk828214.kS, {
       label: "Controls",
       children: [(0, Chunk54381.jsx)(Chunk828214.k5, {
         id: "controls-right",
         group: "controls-layout",
         label: "Right Side",
-        action: () => D.setState({
+        action: () => w.setState({
           controlsLayout: "right"
         }),
         checked: "right" === Chunk657707
@@ -94,7 +94,7 @@ function x() {
         id: "controls-bottom",
         group: "controls-layout",
         label: "Bottom",
-        action: () => D.setState({
+        action: () => w.setState({
           controlsLayout: "bottom"
         }),
         checked: "bottom" === Chunk657707
@@ -102,7 +102,7 @@ function x() {
         id: "controls-hidden",
         group: "controls-layout",
         label: "Hidden",
-        action: () => D.setState({
+        action: () => w.setState({
           controlsLayout: "hidden"
         }),
         checked: "hidden" === Chunk657707
@@ -138,7 +138,7 @@ function L() {
     align: "center",
     animation: Chunk235874.y.Animation.SCALE,
     onRequestClose: () => {},
-    children: t => (0, r.jsx)(m.hU, w(P({
+    children: t => (0, r.jsx)(m.hU, D(P({
       size: "sm",
       icon: a.ewm,
       "aria-label": "Settings",
@@ -153,7 +153,7 @@ function j(e) {
   var t;
   let {
     configs: n
-  } = e, c = D.useField("selectedCollection"), u = D.useField("selectedStory"), f = D.useField("controlsLayout"), h = i.useMemo(() => n.flatMap(e => e.collections), [n]), {
+  } = e, c = w.useField("selectedCollection"), u = w.useField("selectedStory"), f = w.useField("controlsLayout"), h = i.useMemo(() => n.flatMap(e => e.collections), [n]), {
     collection: E,
     group: b,
     story: y
@@ -173,12 +173,12 @@ function j(e) {
       story: r
     }
   }, [c, u, h]), T = e => {
-    D.setState({
+    w.setState({
       selectedCollection: e,
       selectedStory: null
     })
   }, A = e => {
-    D.setState({
+    w.setState({
       selectedStory: e
     })
   }, N = null != (t = null == E ? true : E.name) ? t : "Design System", P = null == y ? true : y.name, R = () => {

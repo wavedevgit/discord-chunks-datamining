@@ -96,8 +96,8 @@ let O = function(e) {
       }
     },
     hasThread: R,
-    isSystemMessage: w,
-    hasReply: D,
+    isSystemMessage: D,
+    hasReply: w,
     author: x,
     onMouseEnter: L,
     onMouseLeave: j
@@ -131,8 +131,8 @@ let O = function(e) {
             [_.cozy]: !n,
             [_.zalgo]: m,
             [_.hasThread]: R,
-            [_.isSystemMessage]: w,
-            [_.hasReply]: D
+            [_.isSystemMessage]: D,
+            [_.hasReply]: w
           }),
           ref: N
         }, M), {

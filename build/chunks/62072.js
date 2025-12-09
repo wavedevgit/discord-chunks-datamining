@@ -43,10 +43,10 @@ let I = function(e, t, n) {
     let R = p.default.getId();
     switch (n.key.toLowerCase()) {
       case "backspace":
-        i && (C.Z.can(P.Plq.MANAGE_MESSAGES, M) || w.canDeleteOwnMessage(R)) && (n.preventDefault(), (0, S.$Z)(M, w, n));
+        i && (y.Z.can(P.Plq.MANAGE_MESSAGES, M) || w.canDeleteOwnMessage(R)) && (n.preventDefault(), (0, S.$Z)(M, w, n));
         break;
       case "c":
-        ((0, _.isMac)() ? N : T) && y.wS && (n.preventDefault(), (0, y.JG)(w.content));
+        ((0, _.isMac)() ? N : T) && C.wS && (n.preventDefault(), (0, C.JG)(w.content));
         break;
       case "e":
         i && !M.isSystemDM() && (0, x.Z)(w, R) && (n.preventDefault(), (0, S.Hd)(M, w));
@@ -64,7 +64,7 @@ let I = function(e, t, n) {
               channel: e,
               canChat: t,
               renderReactions: n,
-              canAddNewReactions: t && C.Z.can(P.Plq.ADD_REACTIONS, e),
+              canAddNewReactions: t && y.Z.can(P.Plq.ADD_REACTIONS, e),
               isLurking: null != e.guild_id && o.Z.isLurking(e.guild_id),
               isGuest: null != e.guild_id && m.ZP.isCurrentUserGuest(e.guild_id),
               isActiveChannelOrUnarchivableThread: (0, c.RG)(e)

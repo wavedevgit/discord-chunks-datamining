@@ -72,7 +72,7 @@ function C(e) {
     guildId: S,
     unread: T,
     onClick: C
-  } = e, [N, P] = i.useState(false), R = (0, u.Ye)(m.default.extractTimestamp(t.startId)), w = (0, a.e7)([h.Z], () => h.Z.summaryFeedback(t)), D = (e, n) => {
+  } = e, [N, P] = i.useState(false), R = (0, u.Ye)(m.default.extractTimestamp(t.startId)), D = (0, a.e7)([h.Z], () => h.Z.summaryFeedback(t)), w = (e, n) => {
     e.stopPropagation(), (0, g.Z)({
       summary: t,
       channel: f,
@@ -138,17 +138,17 @@ function C(e) {
           })]
         })]
       })
-    }), N && !w && (0, r.jsxs)("div", {
+    }), N && !D && (0, r.jsxs)("div", {
       className: v.feedbackContainer,
       children: [(0, r.jsx)(o.P3F, {
-        onClick: e => D(e, O.aZ.GOOD),
+        onClick: e => w(e, O.aZ.GOOD),
         children: (0, r.jsx)(_.Z, {
           className: v.thumbIcon,
           width: 12,
           height: 12
         })
       }), (0, r.jsx)(o.P3F, {
-        onClick: e => D(e, O.aZ.BAD),
+        onClick: e => w(e, O.aZ.BAD),
         children: (0, r.jsx)(p.Z, {
           className: v.thumbIcon,
           width: 12,

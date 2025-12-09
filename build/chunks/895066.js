@@ -321,8 +321,8 @@ class g extends Chunk47770.Z {
               N = t.bytesReceived,
               P = t.nackCount,
               R = null != (a = t.fecPacketsReceived) ? a : 0,
-              w = null != (o = t.fecPacketsDiscarded) ? o : 0,
-              D = null != (s = t.jitterBuffer) ? s : 0,
+              D = null != (o = t.fecPacketsDiscarded) ? o : 0,
+              w = null != (s = t.jitterBuffer) ? s : 0,
               x = {
                 audioJitterBuffer: t.audioJitterBuffer,
                 audioJitterTarget: t.audioJitterTarget,
@@ -355,13 +355,13 @@ class g extends Chunk47770.Z {
                 o = 0,
                 s = e.mosBuckets,
                 l = null != (h = e.decryptFailureBeforeSuccessCount) ? h : j.decryptSuccessCount > 0 ? j.decryptFailureCount : true;
-              r > 0 && a >= 0 && (o = this.calculateMos(T + D, i().clamp(a / (r + a), 0, 1)), s[Math.floor(o)]++), this.inboundStats[n] = f({
+              r > 0 && a >= 0 && (o = this.calculateMos(T + w, i().clamp(a / (r + a), 0, 1)), s[Math.floor(o)]++), this.inboundStats[n] = f({
                 packetsReceived: A,
                 bytesReceived: N,
                 packetsLost: C,
                 nackCount: null != P ? P : 0,
                 fecPacketsReceived: R,
-                fecPacketsDiscarded: w,
+                fecPacketsDiscarded: D,
                 mos: o,
                 mosSum: e.mosSum + o,
                 mosCount: e.mosCount + +(o > 0),
@@ -386,7 +386,7 @@ class g extends Chunk47770.Z {
               packetsLost: C,
               nackCount: null != P ? P : 0,
               fecPacketsReceived: R,
-              fecPacketsDiscarded: w,
+              fecPacketsDiscarded: D,
               mos: 0,
               mosSum: 0,
               mosCount: 0,

@@ -3,7 +3,7 @@
 "use strict";
 require.r(exports), require.d(exports, {
   closeAllModals: () => R,
-  closeAllModalsInContext: () => w,
+  closeAllModalsInContext: () => D,
   closeModal: () => S,
   closeModalInAllContexts: () => I,
   doesTopModalAllowNavigation: () => j,
@@ -11,7 +11,7 @@ require.r(exports), require.d(exports, {
   hasAnyModalOpen: () => C,
   hasAnyModalOpenSelector: () => A,
   hasModalOpen: () => x,
-  hasModalOpenSelector: () => D,
+  hasModalOpenSelector: () => w,
   modalContextFromAppContext: () => b,
   openModal: () => v,
   openModalLazy: () => O,
@@ -274,25 +274,25 @@ function R() {
     for (let n of module[exports]) S(require.key, exports)
 }
 
-function w() {
+function D() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : E(),
     t = y.getState()[module];
   if (null != exports)
     for (let n of exports) S(require.key, module)
 }
 
-function D(e, t) {
+function w(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : l.z1,
     r = e[n];
   return null != r && r.some(e => e.key === t)
 }
 
 function x(e, t) {
-  return D(y.getState(), e, t)
+  return w(y.getState(), e, t)
 }
 
 function L(e, t) {
-  return D(y(), e, t)
+  return w(y(), e, t)
 }
 
 function j() {

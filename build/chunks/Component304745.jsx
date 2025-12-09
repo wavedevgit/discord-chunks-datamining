@@ -47,7 +47,7 @@ function P(e) {
     parentAnalyticsLocation: F,
     newestAnalyticsLocation: B
   } = (0, g.ZP)(), G = r.useCallback(() => {
-    (0, C.v)(F, C.d.ACTIVITY), (0, b.Z)({
+    (0, y.v)(F, y.d.ACTIVITY), (0, b.Z)({
       context: null != t ? {
         type: "channel",
         channel: t
@@ -61,7 +61,7 @@ function P(e) {
   A || z.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !A && z.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), A || z.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let W = r.useRef(false),
     q = r.useRef(null);
-  return (0, i.jsx)(y.ZP, {
+  return (0, i.jsx)(C.ZP, {
     contentTypes: z,
     children: e => {
       let {
@@ -97,7 +97,7 @@ function P(e) {
             onClick: () => l(j.L.UNKNOWN)
           }) : (0, i.jsx)(i.Fragment, {})
         },
-        children: () => (0, i.jsx)(y.Xf, {
+        children: () => (0, i.jsx)(C.Xf, {
           contentType: a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE,
           latestVersion: D,
           children: e => {

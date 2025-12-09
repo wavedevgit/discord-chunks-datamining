@@ -384,7 +384,7 @@ class eP extends Chunk47770.Z {
     } = (0, y.h)({
       location: "_chooseExperiments"
     });
-    n && t.push("should_analyze_user_voice_volume"), t.push("keyframe_on_join"), w.Z.getCurrentConfig({
+    n && t.push("should_analyze_user_voice_volume"), t.push("keyframe_on_join"), D.Z.getCurrentConfig({
       location: "_chooseExperiments"
     }, {
       autoTrackExposure: true
@@ -598,7 +598,7 @@ class eP extends Chunk47770.Z {
       h = (0, _.zO)() - d;
     f.setUseElectronVideo(l.supports(ec.AN.ELECTRON_VIDEO)), k.Z.supports(ec.AN.IMAGE_QUALITY_MEASUREMENT) && f.setVideoQualityMeasurement("imageQualityWebrtcPsnrDb:5000,imageQualityVmaf_v061:5000,hwdec");
     let E = ["unk"];
-    this.context === ec.Yn.STREAM && (E.push("nvRelaxRc=250"), E.push("nvNewPresets")), k.Z.getUseVaapiEncoder() && E.push("vaapi"), this.context === ec.Yn.STREAM && "streamer" === this.getVoiceParticipantType() && (0, D.t)("handleReady").enabled && E.push("useCaptureDeviceForEncode"), f.setVideoEncoderExperiments(E.join(",")), f.on(p.Sh.Speaking, (e, t, n) => {
+    this.context === ec.Yn.STREAM && (E.push("nvRelaxRc=250"), E.push("nvNewPresets")), k.Z.getUseVaapiEncoder() && E.push("vaapi"), this.context === ec.Yn.STREAM && "streamer" === this.getVoiceParticipantType() && (0, w.t)("handleReady").enabled && E.push("useCaptureDeviceForEncode"), f.setVideoEncoderExperiments(E.join(",")), f.on(p.Sh.Speaking, (e, t, n) => {
       this.userId === e && this.sendSpeaking(t, n), this.emit(Q.z.Speaking, eI(e), t)
     }), f.on(p.Sh.ToggleMuteFromNative, () => {
       this.context === ec.Yn.DEFAULT && g.Z.toggleSelfMute({

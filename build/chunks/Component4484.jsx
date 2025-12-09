@@ -131,20 +131,20 @@ let k = Chunk473749.forwardRef(function(e, t) {
     onChangeStart: eN,
     onChangeEnd: eP,
     updateState: eC
-  }), ew = i.useCallback((e, t) => {
+  }), eD = i.useCallback((e, t) => {
     let n = _.tM(eR, e, k.id),
       r = _.lk(e, k.guild_id, k.id, n, t);
     return {
       values: n,
       results: r
     }
-  }, [k.guild_id, k.id, eR]), eD = i.useCallback(() => {
+  }, [k.guild_id, k.id, eR]), ew = i.useCallback(() => {
     let e, t = b.bN.getNodesOfType(eR, ["gameMentionInput", "timestampMentionInput"]),
       n = null != t ? [...t] : null,
       r = eo ? c.Z.getActiveCommand(k.id) : null,
       i = false;
     if (null != r && null != r.options) {
-      let t = ew(r, false);
+      let t = eD(r, false);
       e = t.values;
       let n = _.cu(eR).filter(e => !t.results[e].success).map(e => {
         var t;
@@ -179,8 +179,8 @@ let k = Chunk473749.forwardRef(function(e, t) {
       mode: "raw",
       ignoreTrailingEmptyNodes: true
     }), r, e)
-  }, [k.id, eR, ee, et, ew, eo]);
-  (0, T.Z)(t, eR, k, eD), (0, N.Z)(eR, ev, K);
+  }, [k.id, eR, ee, et, eD, eo]);
+  (0, T.Z)(t, eR, k, ew), (0, N.Z)(eR, ev, K);
   let {
     handleKeyDown: ex,
     handleKeyUp: eL
@@ -193,7 +193,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
     onTab: J,
     onEnter: $,
     allowNewLines: eu,
-    submit: eD,
+    submit: ew,
     hideAutocomplete: er,
     moveSelection: ei
   }), {
@@ -214,19 +214,19 @@ let k = Chunk473749.forwardRef(function(e, t) {
     let e = () => {
       var e;
       let t = null != (e = c.Z.getActiveCommand(k.id)) ? e : null;
-      null !== t && null != t.options && ew(t, true)
+      null !== t && null != t.options && eD(t, true)
     };
     return u.Z.addChangeListener(e), () => u.Z.removeChangeListener(e)
-  }, [k, eR, ew]);
+  }, [k, eR, eD]);
   let eG = i.useCallback(e => [...(0, v.Z)(eR, e, k.guild_id), ...(0, y.Z)(eR, e), ...(0, O.Z)(eR, e), ...(0, S.Z)(eR, e, k, {
       isIdle: ed,
       currentAutocompleteType: ef
     })], [eR, k, ed, ef]),
     eZ = i.useCallback(e => {
-      let t = (0, w.Z)(eR, e, k.id);
+      let t = (0, D.Z)(eR, e, k.id);
       return null == t && (t = (0, x.Z)(eR, e)), null == t && (t = (0, L.Z)(eR, e)), t
     }, [k.id, eR]),
-    eB = i.useCallback(e => (0, D.Z)(e), []);
+    eB = i.useCallback(e => (0, w.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.d9, {
       event: j.CkL.GLOBAL_CLIPBOARD_PASTE,

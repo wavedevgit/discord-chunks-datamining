@@ -76,12 +76,12 @@ function A(e) {
   } = e, N = (0, s.ye)(l), {
     iconSrc: P,
     name: R
-  } = T(m, l), w = null != (n = (0, y.v)({
+  } = T(m, l), D = null != (n = (0, y.v)({
     messageId: m.id,
     presenceActivity: C,
     application: l
   })) ? n : true, {
-    openGameProfileModal: D,
+    openGameProfileModal: w,
     launchableAppId: x
   } = I(l.id, m.author.id), L = (0, b.Z)({
     application: l,
@@ -93,7 +93,7 @@ function A(e) {
       trackingArea: c.j_.CLOUD_PLAY,
       onClick: L
     }
-  }, [L]), M = (0, u.G)(l), k = i.useMemo(() => null != D ? D : null != M && N ? M : true, [N, D, M]), U = !(0, E.Z)(C, m, l.id), G = (0, g.dQ)(R, null == (t = m.activity) ? true : t.type, U);
+  }, [L]), M = (0, u.G)(l), k = i.useMemo(() => null != w ? w : null != M && N ? M : true, [N, w, M]), U = !(0, E.Z)(C, m, l.id), G = (0, g.dQ)(R, null == (t = m.activity) ? true : t.type, U);
   return U ? (0, r.jsx)(O.Z, {
     message: m,
     application: l,
@@ -104,7 +104,7 @@ function A(e) {
     launchableAppId: x,
     isEmbeddedApplication: N,
     tryWithGdnAction: j,
-    staticBannerSrc: w,
+    staticBannerSrc: D,
     onClickContent: k,
     iconSrc: P,
     onView: h,
@@ -120,7 +120,7 @@ function A(e) {
     launchableAppId: x,
     isEmbeddedApplication: N,
     tryWithGdnAction: j,
-    staticBannerSrc: w,
+    staticBannerSrc: D,
     onClickContent: k,
     iconSrc: P,
     onView: h,

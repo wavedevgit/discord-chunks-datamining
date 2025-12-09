@@ -29,8 +29,8 @@ function E(e) {
     context: O,
     onItemClick: v
   } = e, S = null != (t = null == b ? true : b.id) ? t : null == E ? true : E.id, I = _.Z.getGuild(y), T = (0, a.e7)([m.Z], () => null != I ? m.Z.can(h.Plq.MANAGE_GUILD, I) : null), A = true, C = true, N = (0, l.LD)(y, C), P = (0, l.PL)(A, C), R = (0, a.e7)([p.default], () => null != p.default.getNewestTokenForApplication(S)), {
-    isUserApp: w,
-    isGuildApp: D
+    isUserApp: D,
+    isGuildApp: w
   } = i.useMemo(() => {
     var e, t, n, r;
     if (null == S) return {
@@ -67,11 +67,11 @@ function E(e) {
     }, [b, v, E]);
   if (O === h.IlC.POPOUT) return null;
   let j = [];
-  return D && T && j.push((0, r.jsx)(o.sNh, {
+  return w && T && j.push((0, r.jsx)(o.sNh, {
     id: "manage-server-integration",
     label: g.intl.string(g.t.IuSJT8),
     action: x
-  }, "manage-server-integration")), w && R && j.push((0, r.jsx)(o.sNh, {
+  }, "manage-server-integration")), D && R && j.push((0, r.jsx)(o.sNh, {
     id: "manage-authorized-app",
     label: g.intl.string(g.t.V8ruvz),
     action: L

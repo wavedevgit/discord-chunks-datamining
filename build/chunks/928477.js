@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   JA: () => k,
-  Jw: () => D,
+  Jw: () => w,
   Od: () => M,
   Wj: () => G,
   gK: () => U,
@@ -39,7 +39,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  D = function(e) {
+  w = function(e) {
     return e[e.Disabled = 1] = "Disabled", e[e.Enabled = 2] = "Enabled", e[e.PrivateOnly = 3] = "PrivateOnly", e
   }({});
 
@@ -105,7 +105,7 @@ function k(e) {
       g = null != (_ = i.name) ? _ : "";
     if ("" === g && d) {
       let e = M(t, n);
-      g = "" !== e ? e : w.intl.string(w.t["7Xm5QI"])
+      g = "" !== e ? e : D.intl.string(D.t["7Xm5QI"])
     }
     let y = (0, T.WD)(t),
       O = E.Z.getChannel(S.default.castMessageIdAsChannelId(n)),
@@ -207,8 +207,8 @@ async function B(e, t, n, r) {
   let i, a = e.isForumLikeChannel();
   try {
     i = await r(), null == i.body ? s.Z.show({
-      title: w.intl.string(w.t.j2d6Km),
-      body: w.intl.string(w.t.fEptJP)
+      title: D.intl.string(D.t.j2d6Km),
+      body: D.intl.string(D.t.fEptJP)
     }) : (o.Z.dispatch({
       type: "SLOWMODE_RESET_COOLDOWN",
       slowmodeType: O.S.CreateThread,
@@ -220,12 +220,12 @@ async function B(e, t, n, r) {
   } catch (r) {
     var l, u, p, m, g, b, y, S, I;
     if ((null == (l = r.body) ? true : l.code) === P.evJ.TOO_MANY_THREADS) s.Z.show({
-      title: a ? w.intl.string(w.t.vWNFkx) : w.intl.string(w.t["1KEdvB"]),
-      body: a ? w.intl.string(w.t.KGaiEK) : w.intl.string(w.t.P0wT5S)
+      title: a ? D.intl.string(D.t.vWNFkx) : D.intl.string(D.t["1KEdvB"]),
+      body: a ? D.intl.string(D.t.KGaiEK) : D.intl.string(D.t.P0wT5S)
     });
     else if ((null == (u = r.body) ? true : u.code) === P.evJ.TOO_MANY_ANNOUNCEMENT_THREADS) s.Z.show({
-      title: w.intl.string(w.t["1KEdvB"]),
-      body: w.intl.string(w.t.jDMxz2)
+      title: D.intl.string(D.t["1KEdvB"]),
+      body: D.intl.string(D.t.jDMxz2)
     });
     else if ((null == (p = r.body) ? true : p.code) === P.evJ.SLOWMODE_RATE_LIMITED) {
       let t = null != (b = r.body.retry_after) ? b : 0;
@@ -236,8 +236,8 @@ async function B(e, t, n, r) {
         cooldownMs: t * v.Z.Millis.SECOND
       })
     } else if (429 === r.status) s.Z.show({
-      title: a ? w.intl.string(w.t.vWNFkx) : w.intl.string(w.t["1KEdvB"]),
-      body: w.intl.string(w.t.Whhv4w)
+      title: a ? D.intl.string(D.t.vWNFkx) : D.intl.string(D.t["1KEdvB"]),
+      body: D.intl.string(D.t.Whhv4w)
     });
     else if (N.fZ.has(null == (m = r.body) ? true : m.code)) throw r;
     else if (N.RN.has(null == (g = r.body) ? true : g.code)) {
@@ -269,8 +269,8 @@ async function B(e, t, n, r) {
         })
       })
     } else s.Z.show({
-      title: w.intl.string(w.t.j2d6Km),
-      body: w.intl.string(w.t.fEptJP)
+      title: D.intl.string(D.t.j2d6Km),
+      body: D.intl.string(D.t.fEptJP)
     })
   }
   let T = await new Promise((e, t) => {

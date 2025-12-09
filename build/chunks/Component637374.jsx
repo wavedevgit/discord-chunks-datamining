@@ -409,7 +409,7 @@ class q extends Chunk473749.Component {
         });
       return (0, r.jsxs)("div", {
         className: i,
-        children: [n && (0, r.jsx)(D.Z, {
+        children: [n && (0, r.jsx)(w.Z, {
           className: F.headerIcon
         }), null != e.giftStyle && (0, r.jsx)(O.Z, {
           defaultAnimationState: e.redeemed ? b.SR.LOOP : b.SR.IDLE,
@@ -431,7 +431,7 @@ let Q = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
     } = (0, c.cj)([N.Z], () => ({
       giftCode: N.Z.get(t),
       resolved: N.Z.getIsResolved(t)
-    })), o = (0, c.e7)([R.default], () => null != i && null != i.userId ? R.default.getUser(i.userId) : null), s = (0, c.e7)([w.Z], () => null != i ? w.Z.get(i.skuId) : null), l = (0, c.e7)([P.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? L.z2(i.entitlementBranches, s, P.Z) : null), u = (0, h.q)(null == s ? true : s.applicationId), d = (0, M.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([C.default], () => null != i ? C.default.getId() === i.userId : C.default.getId() === n.id);
+    })), o = (0, c.e7)([R.default], () => null != i && null != i.userId ? R.default.getUser(i.userId) : null), s = (0, c.e7)([D.Z], () => null != i ? D.Z.get(i.skuId) : null), l = (0, c.e7)([P.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? L.z2(i.entitlementBranches, s, P.Z) : null), u = (0, h.q)(null == s ? true : s.applicationId), d = (0, M.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([C.default], () => null != i ? C.default.getId() === i.userId : C.default.getId() === n.id);
     return (0, r.jsx)(Q, W(H({}, e), {
       skuApplication: u,
       giftCode: i,

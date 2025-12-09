@@ -139,7 +139,7 @@ function R(e) {
     {
       measuredWidth: eu,
       itemsForMeasurement: ed
-    } = w(er, t),
+    } = D(er, t),
     ef = i.useCallback(() => {
       ec || Q(!q)
     }, [ec, Q, q]),
@@ -273,7 +273,7 @@ function R(e) {
           "aria-invalid": (null == e ? true : e.errorMessageId) != null,
           children: [(0, r.jsxs)(c.n, {
             children: [K, ", "]
-          }), (0, r.jsx)(D, {
+          }), (0, r.jsx)(w, {
             tagGroupRef: V,
             placeholder: R,
             selectionMode: t,
@@ -315,7 +315,7 @@ function R(e) {
   }))
 }
 
-function w(e, t) {
+function D(e, t) {
   let {
     ref: n,
     width: a
@@ -345,7 +345,7 @@ function w(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     placeholder: t,
     selectionMode: n,

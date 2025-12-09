@@ -4,10 +4,10 @@
 require.d(exports, {
   $z: () => P,
   BH: () => C,
-  BO: () => w,
+  BO: () => D,
   D7: () => L,
   Dd: () => N,
-  Ft: () => D,
+  Ft: () => w,
   TK: () => Z,
   X0: () => M,
   XA: () => k,
@@ -245,9 +245,9 @@ function P(e) {
 function R(e) {
   return i()(e).subtract(1).toString()
 }
-let w = Chunk149765.vB(0);
+let D = Chunk149765.vB(0);
 
-function D(e) {
+function w(e) {
   let {
     PermissionStore: t,
     guild: n,
@@ -263,7 +263,7 @@ function D(e) {
     if ("boolean" == typeof e) return e
   }
   let l = x(r, s, i);
-  return ("boolean" != typeof l || !!l) && (null == o || !c.fS(o, w) && t.can(o, n))
+  return ("boolean" != typeof l || !!l) && (null == o || !c.fS(o, D) && t.can(o, n))
 }
 
 function x(e, t, n) {

@@ -128,10 +128,10 @@ function R(e) {
   return new Set(Object.keys(e.config.taskConfigV2.tasks))
 }
 
-function w(e) {
+function D(e) {
   return (null == e ? true : e.type) === i.X.PLAY_ON_DESKTOP
 }
-let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
+let w = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
   x = e => P(e) || s.Z.isProgressingOnDesktop(e.id),
   L = (e, t) => {
     var n, i, o, s;
@@ -168,13 +168,13 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
     if (null == d) throw Error("No task with type ".concat(s, " found for quest ").concat(o.id, "!"));
     let f = d.target,
       p = k(o, d),
-      _ = Object.values(c.tasks).find(w),
+      _ = Object.values(c.tasks).find(D),
       m = null == _ || null == (n = _.applications) ? true : n.map(e => e.id);
     return {
       progressSeconds: p,
       targetSeconds: f,
       targetMinutes: Math.ceil(f / a.Z.Seconds.MINUTE),
-      percentComplete: D(f, p),
+      percentComplete: w(f, p),
       taskType: u,
       applications: m
     }
@@ -250,7 +250,7 @@ function V(e) {
   let a = F(e.config);
   if (null == a) return null;
   let o = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[a.type]) ? true : t.value) ? i : 0,
-    s = D(a.target, o);
+    s = w(a.target, o);
   return {
     title: a.messages.taskTitle,
     description: a.messages.taskDescription,

@@ -151,7 +151,7 @@ function R() {
           variant: "text-md/medium",
           color: "text-subtle",
           children: Chunk388032.intl.string(Chunk652271.default["no+FQS"])
-        }), (0, Chunk54381.jsx)(w, {
+        }), (0, Chunk54381.jsx)(D, {
           overallStatus: A ? 0 : R ? 3 : 1,
           name: Chunk388032.intl.string(Chunk652271.default.AGLx00),
           steps: [{
@@ -166,7 +166,7 @@ function R() {
             learnMoreLink: A || !R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }],
           isChosen: Chunk692547 === Chunk524995.r.RPC
-        }), (0, Chunk54381.jsx)(w, {
+        }), (0, Chunk54381.jsx)(D, {
           overallStatus: +!N,
           name: Chunk388032.intl.string(Chunk652271.default.K3ObrU),
           steps: [{
@@ -180,7 +180,7 @@ function R() {
         })]
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk428498.footer,
-        children: [(0, Chunk54381.jsx)(D, {
+        children: [(0, Chunk54381.jsx)(w, {
           status: +!Chunk120356,
           text: Chunk388032.intl.string(Chunk388032.t["Vu/zmQ"])
         }), 0 === P.length && (0, Chunk54381.jsx)(Chunk793030.xvT, {
@@ -223,7 +223,7 @@ function R() {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     overallStatus: t,
     name: n,
@@ -232,7 +232,7 @@ function w(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: T.categoryContainer,
-    children: [(0, r.jsx)(D, {
+    children: [(0, r.jsx)(w, {
       status: t,
       text: n
     }), i.map((e, t) => (0, r.jsx)(x, C({}, e), t)), a && (0, r.jsx)("div", {
@@ -246,7 +246,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     text: t,
     status: n

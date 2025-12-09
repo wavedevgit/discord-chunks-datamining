@@ -48,13 +48,13 @@ function T(e) {
   }, [C]);
   let P = (0, f.N)(),
     R = (0, d.N)(),
-    w = null != P || null != R,
-    D = (null == P || null == (t = P.subscription_trial) ? true : t.sku_id) === O.Si.TIER_0;
+    D = null != P || null != R,
+    w = (null == P || null == (t = P.subscription_trial) ? true : t.sku_id) === O.Si.TIER_0;
   return (0, r.jsxs)("div", {
     className: o()(S.emptyState, T, {
-      [S.unifyTrialUpsell]: w
+      [S.unifyTrialUpsell]: D
     }),
-    children: [w ? (0, r.jsx)(p.ZP, {
+    children: [D ? (0, r.jsx)(p.ZP, {
       discountOffer: R,
       trialOffer: P,
       onClose: A,
@@ -79,9 +79,9 @@ function T(e) {
           size: I
         }, null == e ? true : e.id))
       })]
-    }), !w && (0, r.jsx)(E.Z, {
+    }), !D && (0, r.jsx)(E.Z, {
       analyticsSection: y.jXE.EXPRESSION_PICKER,
-      buttonText: w ? D ? v.intl.string(v.t.hz78hE) : v.intl.string(v.t["Gd/XHF"]) : true
+      buttonText: D ? w ? v.intl.string(v.t.hz78hE) : v.intl.string(v.t["Gd/XHF"]) : true
     })]
   })
 }

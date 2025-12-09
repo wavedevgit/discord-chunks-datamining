@@ -6,7 +6,7 @@ require.d(exports, {
   Q5: () => P,
   hn: () => L,
   p7: () => x,
-  wk: () => w
+  wk: () => D
 }), require("./467055.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -164,7 +164,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       children: t
     })
   },
-  w = Chunk473749.memo(function(e) {
+  D = Chunk473749.memo(function(e) {
     var {
       options: t,
       renderAsStandaloneElement: n,
@@ -200,7 +200,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       }), u]
     }) : u
   }),
-  D = e => {
+  w = e => {
     let {
       step: t,
       billingAddressInfo: n,
@@ -232,7 +232,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
         }))
       }), (0, r.jsx)("div", {
         className: s()(O.addressElementContainer, g ? O.visible : [O.hidden, O.rightToLeftEntry]),
-        children: (0, r.jsx)(w, T(S({}, c), {
+        children: (0, r.jsx)(D, T(S({}, c), {
           internalKey: p,
           renderAsStandaloneElement: d === y.He.PAYMENT_REQUEST,
           billingAddressInfo: n
@@ -263,7 +263,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
     return o || null != s || null == c ? (0, r.jsx)(x, {}) : (0, r.jsx)(a.Elements, {
       stripe: c,
       options: S({}, i),
-      children: (0, r.jsx)(D, T(S({}, n), {
+      children: (0, r.jsx)(w, T(S({}, n), {
         customPaymentMethodIdsToSourceTypes: l
       }))
     })

@@ -90,10 +90,10 @@ let ee = (0, Chunk663993.Un)({
       children: t,
       skipsSettingDefaultPageTitle: n
     } = e, a = (0, Y.getPlatform)(), f = s.tq || s.Em, g = (0, u.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), B = i.useRef(document.body), V = "".concat(g);
-    (0, N.G)(), (0, D.G)("AppSkeleton");
-    let H = (0, w.Co)("AppSkeleton");
+    (0, N.G)(), (0, w.G)("AppSkeleton");
+    let H = (0, D.Co)("AppSkeleton");
     return i.useEffect(() => {
-      Y.isPlatformEmbedded && (H ? d.K.set(w.j4, "json") : d.K.remove(w.j4))
+      Y.isPlatformEmbedded && (H ? d.K.set(D.j4, "json") : d.K.remove(D.j4))
     }, [H]), (0, r.jsx)(Z.w, {
       children: (0, r.jsxs)(b.Z, {
         children: [(0, r.jsx)(K.Z, {

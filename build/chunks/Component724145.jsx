@@ -55,7 +55,7 @@ let k = () => (0, Chunk54381.jsx)("div", {
     let {
       markAsDismissed: t
     } = e, n = (0, P.q)(), i = () => {
-      null != t && t(x.L.DISMISS), n(D.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)()
+      null != t && t(x.L.DISMISS), n(w.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)()
     };
     return (0, r.jsxs)("div", {
       className: M.editorHeader,
@@ -84,7 +84,7 @@ let k = () => (0, Chunk54381.jsx)("div", {
       intervalType: null == p || null == (t = p.subscription_trial) ? true : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? true : n.interval_count
     }), g = d ? j.intl.string(j.t.IJI7yk) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === L.Si.TIER_2 ? _ : j.intl.string(j.t.mr4K7D), E = e => {
-      e && (null == a || a(), null != o && o(x.L.PRIMARY), null != u && ((0, w.Yk)({
+      e && (null == a || a(), null != o && o(x.L.PRIMARY), null != u && ((0, D.Yk)({
         isPersisted: true,
         themeName: c.Us[u.id],
         analyticsLocations: s
@@ -97,8 +97,8 @@ let k = () => (0, Chunk54381.jsx)("div", {
       subscriptionTier: L.Si.TIER_2,
       defaultTextOverride: g,
       premiumModalAnalyticsLocation: {
-        object: D.qAy.BUTTON_CTA,
-        objectType: D.AnalyticsObjectTypes.BUY
+        object: w.qAy.BUTTON_CTA,
+        objectType: w.AnalyticsObjectTypes.BUY
       },
       onSubscribeModalClose: E,
       fullWidth: true
@@ -113,8 +113,8 @@ let k = () => (0, Chunk54381.jsx)("div", {
     } = (0, l.cj)([C.Z], () => ({
       isPreview: C.Z.isPreview
     })), [o, c] = i.useState(false), d = (0, P.q)(), f = () => {
-      null != t && t(x.L.DISMISS), d(D.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)(), n || (0, S.openUserSettings)(v.n.APPEARANCE_PANEL, {
-        section: D.oAB.APPEARANCE
+      null != t && t(x.L.DISMISS), d(w.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)(), n || (0, S.openUserSettings)(v.n.APPEARANCE_PANEL, {
+        section: w.oAB.APPEARANCE
       })
     }, p = (0, E.B)({
       no: j.t["3D5yo/"],
@@ -161,14 +161,14 @@ function B(e) {
     isPreview: C.Z.isPreview,
     shouldEditorAnimate: n && !_.Z.useReducedMotion
   })), u = (0, g.oq)().activePanel === g.wh.CLIENT_THEMES, f = (0, P.q)();
-  i.useEffect(() => f(D.rMx.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {
-    s && T.default.track(D.rMx.PREMIUM_UPSELL_VIEWED, {
+  i.useEffect(() => f(w.rMx.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {
+    s && T.default.track(w.rMx.PREMIUM_UPSELL_VIEWED, {
       type: L.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       location_stack: a
     })
   }, [s, a]);
   let E = (0, P.J)(),
-    b = (0, p.Z)(null, s ? E : D.dG4);
+    b = (0, p.Z)(null, s ? E : w.dG4);
   return i.useEffect(() => {
     if (s && !u) return E
   }, [s, u, E]), (0, r.jsx)(h.Gt, {
@@ -182,11 +182,11 @@ function B(e) {
           markAsDismissed: t
         }), (0, r.jsx)(R.Z, {}), (0, r.jsx)(d.Ttm, {
           className: M.editorBody,
-          children: (0, r.jsxs)(w.ZP, {
-            type: w.yH.EDITOR,
-            children: [!s && (0, r.jsx)(w.ZP.Basic, {
+          children: (0, r.jsxs)(D.ZP, {
+            type: D.yH.EDITOR,
+            children: [!s && (0, r.jsx)(D.ZP.Basic, {
               className: M.selectionGroup
-            }), (0, r.jsx)(w.ZP.Gradient, {
+            }), (0, r.jsx)(D.ZP.Gradient, {
               className: M.selectionGroup,
               isCoachmark: n
             })]

@@ -80,7 +80,7 @@ function R(e) {
   }, false)
 }
 
-function w(e) {
+function D(e) {
   let t = false;
   for (let n of e.voiceStates) {
     let [r] = x(e.guildId, n);
@@ -90,7 +90,7 @@ function w(e) {
   return t && m++, t
 }
 
-function D(e) {
+function w(e) {
   let {
     userId: t,
     channelId: n,
@@ -258,6 +258,6 @@ let F = new B(Chunk570140.Z, {
   GUILD_CREATE: U,
   CHANNEL_DELETE: G,
   CALL_DELETE: Z,
-  PASSIVE_UPDATE_V2: w,
-  RTC_CONNECTION_PLATFORM: D
+  PASSIVE_UPDATE_V2: D,
+  RTC_CONNECTION_PLATFORM: w
 })

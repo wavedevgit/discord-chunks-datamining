@@ -177,15 +177,15 @@ function I(e) {
     defaultDirty: N = false,
     leading: P,
     trailing: R,
-    validateOn: w = "change",
-    size: D = "md",
+    validateOn: D = "change",
+    size: w = "md",
     fullWidth: x = false,
     clearable: L = false,
     showCharacterCount: j = false
   } = e, M = b(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "showCharacterCount"]), {
     fieldProps: k
   } = (0, s.XF_)(M), U = (0, f.m)({
-    validateOn: w,
+    validateOn: D,
     error: C,
     value: y,
     minLength: A,
@@ -213,16 +213,16 @@ function I(e) {
   null == K && false === a && (K = true);
   let z = null;
   ("boolean" == typeof L ? L && null != y && "" !== y && !K : L.show) ? z = (0, r.jsx)(S, {
-    inputSize: D,
+    inputSize: w,
     onClick: Y
   }): null != R && (z = (0, r.jsx)(v, {
     accessory: R,
-    inputSize: D
+    inputSize: w
   }));
   let q = null;
   null != P && (q = (0, r.jsx)(v, {
     accessory: P,
-    inputSize: D
+    inputSize: w
   }));
   let Q = j ? (0, r.jsx)(d.H, {
     value: y,
@@ -237,7 +237,7 @@ function I(e) {
       validation: U,
       fullWidth: x,
       readOnly: K,
-      className: o()(_.container, _[D], {
+      className: o()(_.container, _[w], {
         [_.hasLeading]: null != q,
         [_.hasTrailing]: null != z,
         [_.hasTags]: B

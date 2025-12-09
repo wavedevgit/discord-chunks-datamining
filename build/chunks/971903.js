@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ah: () => y,
-  MU: () => D,
+  MU: () => w,
   TK: () => A,
   VX: () => x,
   f: () => I,
@@ -128,7 +128,7 @@ let y = (0, Chunk473749.createContext)(null),
       style: e.style,
       cellPadding: 0,
       className: null != (r = e.className) ? r : "react-aria-CalendarGrid"
-    }, "function" != typeof e.children ? e.children : b.createElement(b.Fragment, null, b.createElement(N, null, e => b.createElement(R, null, e)), b.createElement(D, null, e.children))))
+    }, "function" != typeof e.children ? e.children : b.createElement(b.Fragment, null, b.createElement(N, null, e => b.createElement(R, null, e)), b.createElement(w, null, e.children))))
   });
 
 function C(e, t) {
@@ -170,7 +170,7 @@ function P(e, t) {
 }
 let R = (0, Chunk473749.forwardRef)(P);
 
-function w(e, t) {
+function D(e, t) {
   let {
     children: n,
     style: r,
@@ -194,7 +194,7 @@ function w(e, t) {
     key: t
   })))))
 }
-let D = (0, Chunk473749.forwardRef)(w),
+let w = (0, Chunk473749.forwardRef)(D),
   x = (0, Chunk473749.forwardRef)(function({
     date: e,
     ...t
@@ -234,7 +234,7 @@ let D = (0, Chunk473749.forwardRef)(w),
     let P = false,
       R = false;
     "highlightedRange" in s && s.highlightedRange && (P = (0, h.KC)(e, s.highlightedRange.start), R = (0, h.KC)(e, s.highlightedRange.end));
-    let w = (0, i.aX)({
+    let D = (0, i.aX)({
         ...t,
         defaultChildren: O.formattedDate,
         defaultClassName: "react-aria-CalendarCell",
@@ -249,7 +249,7 @@ let D = (0, Chunk473749.forwardRef)(w),
           ...O
         }
       }),
-      D = {
+      w = {
         "data-focused": O.isFocused || true,
         "data-hovered": A || true,
         "data-pressed": O.isPressed || true,
@@ -271,7 +271,7 @@ let D = (0, Chunk473749.forwardRef)(w),
       ...g,
       ref: n
     }, b.createElement("div", {
-      ...(0, c.d)(x, y, C, I, D, w),
+      ...(0, c.d)(x, y, C, I, w, D),
       ref: m
     }))
   })

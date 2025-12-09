@@ -2,7 +2,7 @@
 /** chunk id: 141507, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  k: () => D
+  k: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -35,7 +35,7 @@ let P = 250;
 function R(e) {
   return null != e && "animated" in e
 }
-let w = e => {
+let D = e => {
     let {
       inspectedEmoji: t,
       guild: n
@@ -44,8 +44,8 @@ let w = e => {
       guildName: n.name
     }) : null
   },
-  D = Chunk473749.memo(function(e) {
-    let t, D, x, {
+  w = Chunk473749.memo(function(e) {
+    let t, w, x, {
         className: L,
         emojiGrid: j,
         guildId: M,
@@ -119,7 +119,7 @@ let w = e => {
         animated: Y && t.animated,
         size: 28
       }) : t.url;
-      D = "" === e ? (0, r.jsx)(s.Text, {
+      w = "" === e ? (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: N.glyphEmoji,
         children: "surrogates" in t ? t.surrogates : null
@@ -128,7 +128,7 @@ let w = e => {
         src: e,
         className: N.emoji
       })
-    } else if ("CREATE_EMOJI" === t.type) D = (0, r.jsx)(s.oFk, {
+    } else if ("CREATE_EMOJI" === t.type) w = (0, r.jsx)(s.oFk, {
       size: "md",
       color: "currentColor",
       className: N.icon,
@@ -139,7 +139,7 @@ let w = e => {
         i = n(39874),
         a = n(853871),
         s = n(63149);
-      D = K.has(t.guildId) ? (0, r.jsx)("img", {
+      w = K.has(t.guildId) ? (0, r.jsx)("img", {
         className: N.icon,
         src: (0, o.wj)(Q) ? a : s,
         alt: ""
@@ -155,7 +155,7 @@ let w = e => {
       shouldAnimate: !H && V
     }) : null;
     x = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t.XCmLfG) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? K.has(t.guildId) ? C.intl.string(C.t["/K2RDH"]) : C.intl.string(C.t.NZI2Zk) : (0, y.nY)(t);
-    let $ = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t["Z/r7IS"]) : w({
+    let $ = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t["Z/r7IS"]) : D({
       inspectedEmoji: t,
       channel: U,
       guildId: M,
@@ -164,7 +164,7 @@ let w = e => {
     });
     return (0, r.jsx)(_.Z, {
       className: L,
-      graphicPrimary: D,
+      graphicPrimary: w,
       graphicSecondary: J,
       titlePrimary: x,
       titleSecondary: $,

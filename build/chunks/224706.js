@@ -43,7 +43,7 @@ function M(e) {
     applicationId: t,
     secret: n,
     channelId: r,
-    intent: i = D.Ws.PLAY,
+    intent: i = w.Ws.PLAY,
     embedded: a = false,
     source: o,
     locationObject: s,
@@ -53,7 +53,7 @@ function M(e) {
   if (u) {
     let e = d.Z.getApplication(t);
     if ((null == e ? true : e.deepLinkUri) != null) {
-      let r = "".concat(e.deepLinkUri).concat(w.UWR.GAME_INVITE_FRAGMENT).concat(n);
+      let r = "".concat(e.deepLinkUri).concat(D.UWR.GAME_INVITE_FRAGMENT).concat(n);
       try {
         if (r.startsWith("http")) {
           let e = window.open(r, "_blank");
@@ -77,7 +77,7 @@ function M(e) {
     source: o,
     locationObject: s,
     analyticsLocations: l
-  }).then(e => 0 === e ? null : T.Z.waitConnected(t).then(() => Promise.race([T.Z.waitSubscribed(t, w.zMe.ACTIVITY_JOIN)]))).then(() => {
+  }).then(e => 0 === e ? null : T.Z.waitConnected(t).then(() => Promise.race([T.Z.waitSubscribed(t, D.zMe.ACTIVITY_JOIN)]))).then(() => {
     c.Z.dispatch({
       type: "ACTIVITY_JOIN",
       applicationId: t,
@@ -100,7 +100,7 @@ function k(e, t) {
 
 function U(e) {
   return s.tn.post({
-    url: w.ANM.OAUTH2_AUTHORIZE,
+    url: D.ANM.OAUTH2_AUTHORIZE,
     query: {
       client_id: e,
       response_type: "token",
@@ -180,7 +180,7 @@ async function G(e) {
       pids: e
     })
   }).catch(e => {
-    R.Z.show(w.kVF.LAUNCH_GAME_FAILURE, x.intl.string(x.t.YZEBdj)), c.Z.dispatch({
+    R.Z.show(D.kVF.LAUNCH_GAME_FAILURE, x.intl.string(x.t.YZEBdj)), c.Z.dispatch({
       type: "GAME_LAUNCH_FAIL",
       applicationId: t,
       error: f
@@ -196,7 +196,7 @@ let Z = {
     c.Z.dispatch({
       type: "RUNNING_GAME_ADD_OVERRIDE",
       pid: e
-    }), I.default.track(w.rMx.RUNNING_GAME_OVERRIDE_ADDED, {
+    }), I.default.track(D.rMx.RUNNING_GAME_OVERRIDE_ADDED, {
       game_name: t
     })
   },
@@ -207,10 +207,10 @@ let Z = {
       let e = v.Z.getActiveLibraryApplication(i.id);
       if (null != e) {
         let r = e.getFlags(),
-          i = o.yE(r, w.eHb.OVERLAY_DISABLED);
-        t && i !== t && (r = o.x9(r, w.eHb.OVERLAY_DISABLED));
-        let a = o.yE(r, w.eHb.OVERLAY_V3_DISABLED);
-        null != n && n !== a && (r = o.x9(r, w.eHb.OVERLAY_V3_DISABLED)), P.h(e.id, e.branchId, r);
+          i = o.yE(r, D.eHb.OVERLAY_DISABLED);
+        t && i !== t && (r = o.x9(r, D.eHb.OVERLAY_DISABLED));
+        let a = o.yE(r, D.eHb.OVERLAY_V3_DISABLED);
+        null != n && n !== a && (r = o.x9(r, D.eHb.OVERLAY_V3_DISABLED)), P.h(e.id, e.branchId, r);
         return
       }
     }
@@ -386,7 +386,7 @@ let Z = {
       sku: a,
       cleanedExecutable: l
     }), null != l && s.tn.post({
-      url: w.ANM.UNVERIFIED_APPLICATIONS,
+      url: D.ANM.UNVERIFIED_APPLICATIONS,
       body: {
         name: t,
         os: (0, A.getPlatformName)(),
@@ -417,7 +417,7 @@ let Z = {
   },
   uploadIcon(e, t, n) {
     s.tn.post({
-      url: w.ANM.UNVERIFIED_APPLICATIONS_ICONS,
+      url: D.ANM.UNVERIFIED_APPLICATIONS_ICONS,
       body: {
         application_name: e,
         application_hash: t,
@@ -442,7 +442,7 @@ let Z = {
       applicationId: r,
       channelId: i,
       messageId: a,
-      intent: o = D.Ws.PLAY,
+      intent: o = w.Ws.PLAY,
       embedded: s = false,
       source: l,
       locationObject: u,

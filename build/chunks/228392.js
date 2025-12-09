@@ -2,9 +2,9 @@
 /** chunk id: 228392, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => D,
+  B: () => w,
   B5: () => P,
-  Do: () => w,
+  Do: () => D,
   GX: () => M,
   HR: () => F,
   Hr: () => N,
@@ -296,7 +296,7 @@ function R(e) {
   }))
 }
 
-function w(e) {
+function D(e) {
   let {
     guildId: t,
     channelId: n,
@@ -311,7 +311,7 @@ function w(e) {
   }))
 }
 
-function D(e) {
+function w(e) {
   let {
     postId: t,
     location: n

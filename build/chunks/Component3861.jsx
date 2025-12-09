@@ -46,7 +46,7 @@ let v = (0, Chunk112724.Z)(e => {
   r.useEffect(() => {
     d.S.dispatch(b.CkL.REMEASURE_TARGET)
   }, [T, N, L.width, L.height]);
-  let D = r.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, v]),
+  let D = r.useMemo(() => n.filter(e => e.type !== y.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, v]),
     k = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(j.id), [j.id]);
   if ((null == R ? true : R.channelId) === j.id) return (0, i.jsx)(h.Z, {
     height: N
@@ -59,7 +59,7 @@ let v = (0, Chunk112724.Z)(e => {
   if (w === b.WtW.VOICE) return (0, i.jsx)(c.Z, {
     guildId: j.guild_id,
     width: T,
-    className: y.voiceCallWrapper,
+    className: C.voiceCallWrapper,
     participants: t,
     onContextMenu: x
   });
@@ -72,12 +72,12 @@ let v = (0, Chunk112724.Z)(e => {
       })
     }
     return (0, i.jsx)(u.Z, {
-      className: y.videoGridWrapper,
+      className: C.videoGridWrapper,
       justify: u.Z.Justify.CENTER,
       align: u.Z.Align.CENTER,
       children: (0, i.jsx)(f.Z, {
         channel: j,
-        className: y.videoGrid,
+        className: C.videoGrid,
         participants: D,
         totalNumberOfParticipants: t.length,
         onClick: O,

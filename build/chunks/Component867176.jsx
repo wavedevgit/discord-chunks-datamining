@@ -103,8 +103,8 @@ function N(e) {
     bannerWidth: N,
     bannerHeight: P,
     themePadding: R,
-    pendingAccentColor: w,
-    animateOnHoverOrFocusOnly: D = false
+    pendingAccentColor: D,
+    animateOnHoverOrFocusOnly: w = false
   } = e, x = (0, p.Dt)(), [L, j] = i.useState(false), M = (0, l.e7)([h.Z], () => h.Z.isFocused()), k = m.QK.getSetting(), {
     bannerSrc: U,
     status: G
@@ -112,8 +112,8 @@ function N(e) {
     displayProfile: a,
     pendingBanner: O,
     size: N,
-    canAnimate: D || !k ? L : M
-  }), Z = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), B = n.getAvatarURL(b, (0, u.dcp)(I)), F = (0, s._i)((0, d.ZP)(B, Z, false)), V = (0, f.Z)(null != (t = null != w ? w : null == a ? true : a.primaryColor) ? t : F).hex, H = C(I), Y = H + T - R, W = P - A - R;
+    canAnimate: w || !k ? L : M
+  }), Z = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), B = n.getAvatarURL(b, (0, u.dcp)(I)), F = (0, s._i)((0, d.ZP)(B, Z, false)), V = (0, f.Z)(null != (t = null != D ? D : null == a ? true : a.primaryColor) ? t : F).hex, H = C(I), Y = H + T - R, W = P - A - R;
   return (0, r.jsxs)("svg", {
     className: y.mask,
     viewBox: "0 0 ".concat(N, " ").concat(P),

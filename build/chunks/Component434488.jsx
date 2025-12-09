@@ -131,7 +131,7 @@ function Z(e) {
   let {
     analyticsLocations: s,
     newestAnalyticsLocation: c
-  } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_INVITE), d = (0, y._k)({
+  } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_INVITE), d = (0, C._k)({
     location: "single_user_tile"
   });
 
@@ -241,14 +241,14 @@ function T(e) {
       guildId: n.id
     }).slice(0, 3),
     {
-      analyticsLocations: y
+      analyticsLocations: C
     } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_SUGGESTION),
     S = r.useMemo(() => ({
       channel: t,
       type: "channel"
     }), [t]);
   return (0, i.jsx)(m.Gt, {
-    value: y,
+    value: C,
     children: (0, i.jsxs)(O.Z, {
       className: j.root,
       children: [s > 300 ? (0, i.jsx)(u.Text, {
@@ -273,7 +273,7 @@ function T(e) {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: c
-          }), (0, C.Q3)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
+          }), (0, y.Q3)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
         children: [(0, i.jsx)(v.Z, {}), (0, i.jsx)(u.Text, {
           variant: "text-sm/medium",

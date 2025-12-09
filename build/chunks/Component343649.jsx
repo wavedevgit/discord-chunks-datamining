@@ -141,8 +141,8 @@ function e_(e) {
     eN = (0, u.e7)([V.Z], () => null == ey || null != V.Z.get(ey.planId)),
     eP = (0, u.e7)([V.Z], () => null == eC ? V.Z.get(ec) : eC),
     eR = (0, u.e7)([U.Z], () => U.Z.theme),
-    ew = i.useRef((0, W.vx)(Z.Z.boostSlots)).current,
-    eD = (0, u.e7)([C.Z], () => null != el ? C.Z.getGuild(el) : true, [el]),
+    eD = i.useRef((0, W.vx)(Z.Z.boostSlots)).current,
+    ew = (0, u.e7)([C.Z], () => null != el ? C.Z.getGuild(el) : true, [el]),
     ex = (0, u.e7)([F.Z], () => F.Z.defaultPaymentSourceId),
     eL = (0, M.fL)(null != eA ? eA : eT ? ex : null),
     {
@@ -158,7 +158,7 @@ function e_(e) {
       purchaseErrorBlockRef: eH
     } = eL,
     eY = Object.keys(ej).length > 0,
-    [eW, eK] = i.useState(em - ew.length),
+    [eW, eK] = i.useState(em - eD.length),
     [ez, eq] = i.useState(false),
     eQ = (0, u.e7)([B.Z], () => B.Z.popupCallbackCalled),
     eX = (0, v.V)(),
@@ -166,7 +166,7 @@ function e_(e) {
       planId: ee.Xh.PREMIUM_MONTH_GUILD,
       quantity: eW
     }], [ey, eN, eW, eX]),
-    e$ = i.useMemo(() => (0, D.b)(), []),
+    e$ = i.useMemo(() => (0, w.b)(), []),
     [e0, e1] = (0, g.Z)(() => [null != e$ ? e$ : (0, c.Z)(), Date.now()]),
     {
       analyticsLocations: e3
@@ -341,7 +341,7 @@ function e_(e) {
         currency: td
       },
       c = G.Z.getGuild(el),
-      u = null == eD && null == c;
+      u = null == ew && null == c;
     switch (e4) {
       case P.h8.PLAN_SELECT:
         l()(null != el, "Missing guildId"), l()(null != eP, "Missing nextPremiumSubscriptionPlan"), e = (0, r.jsx)(X.CP, {
@@ -350,7 +350,7 @@ function e_(e) {
           setNumGuildBoosts: eK,
           setForceDisableSubmitButton: ta,
           premiumSubscription: ey,
-          existingAvailableSlots: ew,
+          existingAvailableSlots: eD,
           onClickPremiumSubscriptionLink: () => {
             if (__BILLING_STANDALONE__) {
               window.location.href = "discord://app/settings/nitro";
@@ -419,7 +419,7 @@ function e_(e) {
           loading: eB,
           onClick: async () => {
             l()(null != eJ, "Missing newAdditionalPlans");
-            let e = (0, w.m)(ej, ek);
+            let e = (0, D.m)(ej, ek);
             eM(null);
             try {
               tr(R.A.PURCHASING), eU(true), l()(null != ek, "Missing paymentSourceId"), l()(null != eS, "Missing invoicePreview");
@@ -481,12 +481,12 @@ function e_(e) {
         break;
       case P.h8.CONFIRM:
         var tb;
-        let m = null != (tb = null == c ? true : c.name) ? tb : null == eD ? true : eD.name,
-          g = (0, w.$)(ej, ek),
+        let m = null != (tb = null == c ? true : c.name) ? tb : null == ew ? true : ew.name,
+          g = (0, D.$)(ej, ek),
           E = (0, q.qH)(ev.current) && null != eC && !ee.F$.has(eC.id);
         e = (0, r.jsx)(X.R7, {
           guild: c,
-          guildBoostQuantity: eW + ew.length,
+          guildBoostQuantity: eW + eD.length,
           onClose: to,
           withAnimation: false,
           paymentSourceType: g,

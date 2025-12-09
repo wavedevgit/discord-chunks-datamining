@@ -58,9 +58,9 @@ function I(e) {
     onHide: N,
     newAnalyticsLocations: P = [],
     disableAutoFocus: R = false
-  } = e, w = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
-    analyticsLocations: D
-  } = (0, l.ZP)([...P, w ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), x = (0, d.ZB)({
+  } = e, D = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
+    analyticsLocations: w
+  } = (0, l.ZP)([...P, D ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), x = (0, d.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
@@ -71,10 +71,10 @@ function I(e) {
   i.useEffect(() => {
     null == v || v(null == L ? true : L.current)
   }, [L, v]);
-  let M = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+  let M = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
     k = R ? "div" : o.VqE;
   return (0, r.jsx)(l.Gt, {
-    value: D,
+    value: w,
     children: (0, r.jsx)(d.Mt, {
       value: x,
       openedAt: C,
@@ -107,18 +107,18 @@ function I(e) {
                   children: b.intl.string(b.t.b33pLD)
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
-                  children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5s"], {
+                  children: b.intl.format(D ? b.t["8F+WNz"] : b.t["/cZp5s"], {
                     username: u.ZP.getName(n, I, t)
                   })
                 })]
               }), (0, r.jsxs)(o.Kqy, {
                 align: "center",
                 children: [(0, r.jsx)(g.Z, {
-                  isBlocked: w,
+                  isBlocked: D,
                   onClick: () => {
                     N(), (0, f.pQ)(S({
                       action: M,
-                      analyticsLocations: D
+                      analyticsLocations: w
                     }, x))
                   }
                 }), (0, r.jsx)(h.Z, {
@@ -126,7 +126,7 @@ function I(e) {
                   onClick: () => {
                     N(), (0, f.pQ)(S({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                      analyticsLocations: D
+                      analyticsLocations: w
                     }, x))
                   }
                 })]

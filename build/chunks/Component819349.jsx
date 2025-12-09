@@ -63,7 +63,7 @@ function I(e) {
       location_stack: M
     }
   });
-  let R = (0, c.e7)([C.Z], () => C.Z.can(O.Plq.CREATE_INSTANT_INVITE, t), [t]),
+  let R = (0, c.e7)([y.Z], () => y.Z.can(O.Plq.CREATE_INSTANT_INVITE, t), [t]),
     [L, D] = r.useState(null),
     [k, U] = r.useState(false),
     [V, H] = r.useState("unknown"),
@@ -75,7 +75,7 @@ function I(e) {
     W = B || G,
     q = r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
-      y.default.track(O.rMx.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
+      C.default.track(O.rMx.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
         reason: e,
         channel_id: t.id,
         guild_id: t.guild_id,

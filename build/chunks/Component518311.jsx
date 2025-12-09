@@ -581,7 +581,7 @@ class eu extends(i = Chunk473749.PureComponent) {
     })
   }
   handleAddFriend(e) {
-    this.props.onClose(), y.Z.sendRequest({
+    this.props.onClose(), C.Z.sendRequest({
       discordTag: Y.ZP.getUserTag(e, {
         identifiable: "always"
       }),
@@ -669,15 +669,15 @@ class eu extends(i = Chunk473749.PureComponent) {
       let e = this.searchBarRef.current;
       null == e || e.focus()
     }), ei(this, "focusResult", e => {
-      C.Z.select(e)
+      y.Z.select(e)
     }), ei(this, "handleSelect", e => {
       let {
         results: t,
         channel: n
       } = this.props;
-      null == e ? C.Z.clear(null == n ? true : n.id) : null != t && this.handleClick(t[e].user.id)
+      null == e ? y.Z.clear(null == n ? true : n.id) : null != t && this.handleClick(t[e].user.id)
     }), ei(this, "handleSelectionChange", e => {
-      C.Z.select(e);
+      y.Z.select(e);
       let t = this.scrollerRef.current;
       null != t && t.scrollToIndex({
         section: 0,
@@ -688,7 +688,7 @@ class eu extends(i = Chunk473749.PureComponent) {
       let {
         channel: t
       } = this.props, n = (0, x.v_)(t);
-      C.Z.search(e, null == t ? true : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
+      y.Z.search(e, null == t ? true : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
         G.default.track($.rMx.SEARCH_USER_LIST_STARTED, el(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
           entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -697,10 +697,10 @@ class eu extends(i = Chunk473749.PureComponent) {
       }, 500)
     }), ei(this, "handleRemoveTag", e => {
       let t = Array.from(this.props.selectedUsers);
-      C.Z.removeUser(t[e])
+      y.Z.removeUser(t[e])
     }), ei(this, "handleRemoveUser", e => {
       e.forEach(e => {
-        C.Z.removeUser(e)
+        y.Z.removeUser(e)
       }), this.forceFocus()
     }), ei(this, "handleClick", e => {
       let {
@@ -708,7 +708,7 @@ class eu extends(i = Chunk473749.PureComponent) {
         query: n,
         channel: i
       } = this.props;
-      t.has(e) ? C.Z.removeUser(e) : this.getRemaining() > 0 && (C.Z.addUser(e), n.length > 0 && C.Z.clear(null == i ? true : i.id)), this.forceFocus()
+      t.has(e) ? y.Z.removeUser(e) : this.getRemaining() > 0 && (y.Z.addUser(e), n.length > 0 && y.Z.clear(null == i ? true : i.id)), this.forceFocus()
     }), ei(this, "handleAddFriendNavigation", () => {
       g.Z.transitionToSection($.pJs.ADD_FRIEND, {
         explicit: true
@@ -925,8 +925,8 @@ function ef(e) {
     popoutAlign: f = "right",
     subscribeToGlobalHotkey: m = false,
     location: g
-  } = e, b = l.useRef(null), C = null != s ? s : null == i ? p.kL_ : p.ejJ, {
-    showModal: y,
+  } = e, b = l.useRef(null), y = null != s ? s : null == i ? p.kL_ : p.ejJ, {
+    showModal: C,
     renderPopout: v,
     toggleVisible: _,
     popoutOpen: O,
@@ -940,8 +940,8 @@ function ef(e) {
   }), j = (0, u.e7)([B.default], () => B.default.getUser(null == i ? true : i.getRecipientId()));
   return null != (t = null == j ? true : j.bot) && t || null != (n = null == j ? true : j.isProvisional) && n ? null : E ? (0, r.jsx)(J.ZP.Icon, {
     ref: b,
-    onClick: y,
-    icon: C,
+    onClick: C,
+    icon: y,
     className: o,
     iconClassName: a,
     tooltip: c,
@@ -961,7 +961,7 @@ function ef(e) {
     children: e => (0, r.jsx)(J.ZP.Icon, el(er({}, e), {
       ref: b,
       onClick: _,
-      icon: C,
+      icon: y,
       className: o,
       iconClassName: a,
       tooltip: c,
@@ -987,14 +987,14 @@ function em(e) {
       toggleVisible: m,
       popoutOpen: g,
       setPopoutOpen: b,
-      inBornThisNamedExperiment: C
+      inBornThisNamedExperiment: y
     } = eh({
       initialPopoutOpen: false,
       channel: t,
       location: "PrivateChannelRecipientsInviteTextButton",
       subscribeToGlobalHotkey: c
     });
-  return C ? (0, r.jsx)(p.Button, el(er({}, u), {
+  return y ? (0, r.jsx)(p.Button, el(er({}, u), {
     onClick: h,
     variant: "primary",
     buttonRef: d,

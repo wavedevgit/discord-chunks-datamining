@@ -107,7 +107,7 @@ let k = (e, t, n) => (0, i.wj)(e) ? t : n,
       longerMessages: {
         title: p.intl.string(p.t.BUScid),
         description: p.intl.string(p.t.vN6XpQ),
-        imageSource: k(i, w, D),
+        imageSource: k(i, D, w),
         imageClassName: t.longerMessagesImage
       },
       moreGuilds: {

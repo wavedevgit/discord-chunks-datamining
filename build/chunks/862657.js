@@ -2,7 +2,7 @@
 /** chunk id: 862657, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $V: () => w,
+  $V: () => D,
   E8: () => v,
   GN: () => h,
   PM: () => S,
@@ -181,6 +181,6 @@ function R(e, t) {
   }))
 }
 
-function w() {
+function D() {
   return window.location.pathname.startsWith(Chunk981631.Z5c.QUEST_HOME)
 }

@@ -44,8 +44,8 @@ function y(e) {
     applicationId: n.id,
     context: t
   }), R = i.useMemo(() => (0, m.XZ)(O.displayName), [O.displayName]), {
-    onActivityItemSelected: w,
-    buttonVariant: D,
+    onActivityItemSelected: D,
+    buttonVariant: w,
     buttonText: x
   } = (0, g.P7)({
     context: t,
@@ -71,11 +71,11 @@ function y(e) {
     children: (0, r.jsx)(o.Button, {
       type: "submit",
       size: "md",
-      variant: D,
+      variant: w,
       disabled: L,
       loading: C,
       onClick: () => {
-        N(true), w(), u.default.track(E.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+        N(true), D(), u.default.track(E.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
           application_id: n.id,
           button_action: p._y.USE_APP_COMMAND
         })

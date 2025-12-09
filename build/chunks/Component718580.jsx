@@ -122,9 +122,9 @@ function N(e) {
   });
   let P = S.activeSlide,
     R = (0, _.Z)(S.activeSlide),
-    w = null != (t = S.directionOverride) ? t : T(null != R ? C[R] : null, C[P]),
+    D = null != (t = S.directionOverride) ? t : T(null != R ? C[R] : null, C[P]),
     {
-      reducedMotion: D
+      reducedMotion: w
     } = i.useContext(d.Sfi),
     x = i.useContext(m.Z),
     L = C[P].impressionName,
@@ -143,7 +143,7 @@ function N(e) {
     ref: M,
     width: k = 0,
     height: U = 0
-  } = (0, p.ZP)(P), G = b({}, I, S.springConfig, D.enabled ? {
+  } = (0, p.ZP)(P), G = b({}, I, S.springConfig, w.enabled ? {
     clamp: true
   } : null), Z = (0, f.q_F)({
     width: null != (n = S.width) ? n : k,
@@ -167,7 +167,7 @@ function N(e) {
       } = t;
       n === P && null != S.onSlideReady && S.onSlideReady(n)
     }
-  }, null == R ? "animate-never" : "respect-motion-settings"), F = (0, c.Z)(w), {
+  }, null == R ? "animate-never" : "respect-motion-settings"), F = (0, c.Z)(D), {
     width: V,
     centered: H = true
   } = S, Y = u.tq && !S.shouldUseMediaQueriesForSizing ? "100%" : Z.width.to(e => "string" == typeof e ? e : Math.round(e)), W = u.tq && !S.shouldUseMediaQueriesForSizing ? "100%" : Z.height.to(e => Math.round(e)), K = u.tq ? {} : H ? {
@@ -202,7 +202,7 @@ function N(e) {
           display: E,
           flexDirection: "column",
           backfaceVisibility: "hidden"
-        }, q, K, D.enabled ? a : b({
+        }, q, K, w.enabled ? a : b({
           left: e.value.to(A("left", F)),
           right: e.value.to(A("right", F))
         }, y && a)),

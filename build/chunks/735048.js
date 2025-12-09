@@ -99,7 +99,7 @@ let v = (0, Chunk473749.createContext)(null),
       isDisabled: N,
       isReadOnly: P,
       isPressed: R,
-      isInvalid: w
+      isInvalid: D
     } = v ? (0, d.a)({
       ...(0, i.vl)(e),
       value: e.value,
@@ -109,7 +109,7 @@ let v = (0, Chunk473749.createContext)(null),
       children: "function" == typeof e.children || e.children,
       validationBehavior: h
     }, (0, g.l)(e), I), {
-      isFocused: D,
+      isFocused: w,
       isFocusVisible: x,
       focusProps: L
     } = (0, p.F)(), j = N || P, {
@@ -126,11 +126,11 @@ let v = (0, Chunk473749.createContext)(null),
         isIndeterminate: e.isIndeterminate || false,
         isPressed: R,
         isHovered: k,
-        isFocused: D,
+        isFocused: w,
         isFocusVisible: x,
         isDisabled: N,
         isReadOnly: P,
-        isInvalid: w,
+        isInvalid: D,
         isRequired: e.isRequired || false
       }
     }), G = (0, E.z)(e, {
@@ -144,11 +144,11 @@ let v = (0, Chunk473749.createContext)(null),
       "data-indeterminate": e.isIndeterminate || true,
       "data-pressed": R || true,
       "data-hovered": k || true,
-      "data-focused": D || true,
+      "data-focused": w || true,
       "data-focus-visible": x || true,
       "data-disabled": N || true,
       "data-readonly": P || true,
-      "data-invalid": w || true,
+      "data-invalid": D || true,
       "data-required": e.isRequired || true
     }, O.createElement(m.T, {
       elementType: "span"

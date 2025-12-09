@@ -634,8 +634,8 @@ class R extends Chunk495852.C {
     }])
   }
 }
-let w = new R;
-class D extends Chunk495852.C {
+let D = new R;
+class w extends Chunk495852.C {
   create(e) {
     let t = {
       linkedUsers: {},
@@ -669,7 +669,7 @@ class D extends Chunk495852.C {
           a.primaryGuild = P.internalBinaryRead(e, e.uint32(), n, a.primaryGuild);
           break;
         case 6:
-          a.crossPlatformRestriction = w.internalBinaryRead(e, e.uint32(), n, a.crossPlatformRestriction);
+          a.crossPlatformRestriction = D.internalBinaryRead(e, e.uint32(), n, a.crossPlatformRestriction);
           break;
         case 7:
           a.collectibles = C.internalBinaryRead(e, e.uint32(), n, a.collectibles);
@@ -753,7 +753,7 @@ class D extends Chunk495852.C {
     for (let i of Object.keys(e.linkedUsers)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), L.internalBinaryWrite(e.linkedUsers[i], t, n), t.join().join();
     for (let i of Object.keys(e.safetyFeatureLimits)) t.tag(2, r.TD.LengthDelimited).fork().tag(1, r.TD.Varint).uint32(parseInt(i)), t.tag(2, r.TD.LengthDelimited).fork(), U.internalBinaryWrite(e.safetyFeatureLimits[i], t, n), t.join().join();
     for (let i of Object.keys(e.safetyFlags)) t.tag(3, r.TD.LengthDelimited).fork().tag(1, r.TD.Varint).uint32(parseInt(i)), t.tag(2, r.TD.LengthDelimited).fork(), Z.internalBinaryWrite(e.safetyFlags[i], t, n), t.join().join();
-    e.quest && V.internalBinaryWrite(e.quest, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.primaryGuild && P.internalBinaryWrite(e.primaryGuild, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.crossPlatformRestriction && w.internalBinaryWrite(e.crossPlatformRestriction, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.collectibles && C.internalBinaryWrite(e.collectibles, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.premiumState && er.internalBinaryWrite(e.premiumState, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.displayNameStyles && T.internalBinaryWrite(e.displayNameStyles, t.tag(10, r.TD.LengthDelimited).fork(), n).join();
+    e.quest && V.internalBinaryWrite(e.quest, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.primaryGuild && P.internalBinaryWrite(e.primaryGuild, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.crossPlatformRestriction && D.internalBinaryWrite(e.crossPlatformRestriction, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.collectibles && C.internalBinaryWrite(e.collectibles, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.safetyState && et.internalBinaryWrite(e.safetyState, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.premiumState && er.internalBinaryWrite(e.premiumState, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.displayNameStyles && T.internalBinaryWrite(e.displayNameStyles, t.tag(10, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -799,7 +799,7 @@ class D extends Chunk495852.C {
       no: 6,
       name: "cross_platform_restriction",
       kind: "message",
-      T: () => w
+      T: () => D
     }, {
       no: 7,
       name: "collectibles",
@@ -823,7 +823,7 @@ class D extends Chunk495852.C {
     }])
   }
 }
-new D;
+new w;
 class x extends Chunk495852.C {
   create(e) {
     let t = {

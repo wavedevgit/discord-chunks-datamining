@@ -146,7 +146,7 @@ function q(e) {
     account: n,
     theme: a,
     locale: l
-  } = e, [c, _] = i.useState(n.friendSync), [h, g] = i.useState(n.visibility), [E, I] = i.useState(n.metadataVisibility), [T, C] = i.useState(n.showActivity), [N, P] = i.useState(null), [R, D] = i.useState(null), [M, B] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), Q = b.Z.get(q);
+  } = e, [c, _] = i.useState(n.friendSync), [h, g] = i.useState(n.visibility), [E, I] = i.useState(n.metadataVisibility), [T, C] = i.useState(n.showActivity), [N, P] = i.useState(null), [R, w] = i.useState(null), [M, B] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), Q = b.Z.get(q);
   i.useEffect(() => {
     _(n.friendSync), g(n.visibility), I(n.metadataVisibility), C(n.showActivity)
   }, [n]);
@@ -263,7 +263,7 @@ function q(e) {
         variant: "text-xs/normal",
         className: V.connectionMetadataUpsellDescription,
         children: F.intl.format(F.t.Up2ni7, {
-          helpdeskUrl: w.Z.getArticleURL(G.BhN.CONNECTION_DETAILS)
+          helpdeskUrl: D.Z.getArticleURL(G.BhN.CONNECTION_DETAILS)
         })
       }, "label")], s = F.intl.string(F.t["LVh3/5"]);
     return o && (s = F.intl.string(F.t.i4jeWR)), i.push((0, r.jsx)("div", {
@@ -390,7 +390,7 @@ function q(e) {
       verified: t
     } = n, r = +!!e;
     if (e && !t) {
-      D(r), (0, v.Z)({
+      w(r), (0, v.Z)({
         platformType: n.type,
         location: "User Settings"
       });
@@ -414,7 +414,7 @@ function q(e) {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
     } = J.current;
-    null != e && (g(e), m.Z.setVisibility(n.type, n.id, e), P(null)), null != t && (I(t), m.Z.setMetadataVisibility(n.type, n.id, t), D(null))
+    null != e && (g(e), m.Z.setVisibility(n.type, n.id, e), P(null)), null != t && (I(t), m.Z.setMetadataVisibility(n.type, n.id, t), w(null))
   }, [n]);
   let ed = (0, x.wy)("ConnectedAccount");
   return (0, r.jsxs)("div", {

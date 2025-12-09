@@ -58,10 +58,10 @@ function d(e, t, n) {
     onFocus: () => t.setLastFocusedValue(d)
   }), n), P = (0, i.d)(I, N), R = (0, a.z)(e, {
     labelable: true
-  }), w = false;
-  null != t.selectedValue ? t.selectedValue === d && (w = 0) : (t.lastFocusedValue === d || null == t.lastFocusedValue) && (w = 0), O && (w = true);
+  }), D = false;
+  null != t.selectedValue ? t.selectedValue === d && (D = 0) : (t.lastFocusedValue === d || null == t.lastFocusedValue) && (D = 0), O && (D = true);
   let {
-    name: D,
+    name: w,
     form: x,
     descriptionId: L,
     errorMessageId: j,
@@ -77,9 +77,9 @@ function d(e, t, n) {
     inputProps: (0, i.d)(R, {
       ...P,
       type: "radio",
-      name: D,
+      name: w,
       form: x,
-      tabIndex: w,
+      tabIndex: D,
       disabled: O,
       required: t.isRequired && "native" === M,
       checked: v,

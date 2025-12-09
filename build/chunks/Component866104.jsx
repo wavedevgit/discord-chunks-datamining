@@ -105,8 +105,8 @@ function P(e) {
     guildId: s
   }), g = (null != (n = null == o || null == (t = o.description) ? true : t.trim().length) ? n : 0) > 0, [E, b] = i.useState(1), P = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: R,
-    isPhantomPreview: w
-  } = (0, O.m)(), D = R === v.y.GUILD_PRODUCTS_PREVIEW ? I.intl.string(I.t["LvXy/H"]) : I.intl.string(I.t.XyqKh8), x = e => {
+    isPhantomPreview: D
+  } = (0, O.m)(), w = R === v.y.GUILD_PRODUCTS_PREVIEW ? I.intl.string(I.t["LvXy/H"]) : I.intl.string(I.t.XyqKh8), x = e => {
     null != e && e.clientHeight > 30 && b(2)
   };
 
@@ -136,7 +136,7 @@ function P(e) {
   }) : (0, r.jsx)(l.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: w ? D : I.intl.string(I.t["NY/FIW"])
+    children: D ? w : I.intl.string(I.t["NY/FIW"])
   });
   return (0, r.jsxs)("div", {
     className: T.container,
@@ -146,7 +146,7 @@ function P(e) {
         children: (0, r.jsx)(f.Z, {
           guild: a,
           size: f.Z.Sizes.LARGER,
-          iconSrc: null == a.icon || w ? (0, u.b)("server_products/storefront/default-guild-icon.jpg") : true
+          iconSrc: null == a.icon || D ? (0, u.b)("server_products/storefront/default-guild-icon.jpg") : true
         })
       }), (0, r.jsx)(l.LZC, {
         size: 16,
@@ -158,7 +158,7 @@ function P(e) {
             variant: "heading-xl/semibold",
             color: "header-primary",
             lineClamp: 2,
-            children: w ? I.intl.string(I.t.rtgp7q) : I.intl.formatToPlainString(I.t.NZeik9, {
+            children: D ? I.intl.string(I.t.rtgp7q) : I.intl.formatToPlainString(I.t.NZeik9, {
               guildName: a.name
             })
           })
@@ -177,7 +177,7 @@ function P(e) {
       })]
     }), (0, r.jsx)(N, {
       coverImageAsset: null == o ? true : o.cover_image_asset,
-      isPreview: w
+      isPreview: D
     })]
   })
 }

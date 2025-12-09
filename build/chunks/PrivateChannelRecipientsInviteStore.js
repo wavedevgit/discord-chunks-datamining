@@ -39,9 +39,9 @@ function Z() {
   let e = Chunk592125.Z.getChannel(S);
   if (0 === _.trim().length) return null != i && i.clearQuery(), x = function(e) {
     let t = b.Z.getFriendIDs(),
-      n = C.default.getCurrentUser();
-    return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...C.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
-      let n = C.default.getUser(t);
+      n = y.default.getCurrentUser();
+    return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...y.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
+      let n = y.default.getUser(t);
       return null == n || n.isProvisional || e.push({
         user: n,
         comparator: h.ZP.getName(n)
@@ -90,7 +90,7 @@ function T() {
 }
 
 function N(e, t) {
-  if (m.Z.hasConsented(y.pjP.PERSONALIZATION)) {
+  if (m.Z.hasConsented(C.pjP.PERSONALIZATION)) {
     var n, i, r, l;
     let a = null != (r = null == (n = u.Z.getUserAffinity(e.user.id)) ? true : n.communicationProbability) ? r : 0,
       o = null != (l = null == (i = u.Z.getUserAffinity(t.user.id)) ? true : i.communicationProbability) ? l : 0;
@@ -110,7 +110,7 @@ function A(e) {
       comparator: i
     }
     of t) {
-    let t = C.default.getUser(e);
+    let t = y.default.getUser(e);
     null != t && n.push({
       user: t,
       comparator: i
@@ -124,12 +124,12 @@ function w() {
 }
 
 function M(e) {
-  if (e.key !== y.vTt) returnfalse;
+  if (e.key !== C.vTt) returnfalse;
   v = true, T(), i = w(), S = null, I("")
 }
 
 function R(e) {
-  if (e.key !== y.vTt) returnfalse;
+  if (e.key !== C.vTt) returnfalse;
   L()
 }
 

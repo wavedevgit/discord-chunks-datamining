@@ -125,7 +125,7 @@ function y(e) {
       }))
     }
   });
-  let w = (0, r.jsx)(d.jRF, {
+  let D = (0, r.jsx)(d.jRF, {
     targetRef: S,
     autoInvert: true,
     nudgeAlignIntoViewport: true,
@@ -139,6 +139,6 @@ function y(e) {
     ref: v,
     children: [(0, r.jsx)("div", {
       ref: S
-    }), n, a && T ? w : null]
+    }), n, a && T ? D : null]
   })
 }

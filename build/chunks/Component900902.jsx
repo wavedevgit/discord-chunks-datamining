@@ -25,7 +25,7 @@ let p = Chunk473749.memo(function(e) {
       author: m,
       repliedMessage: g,
       roleIcon: b
-    } = e, C = (0, u.wq)(t.author.id, n.id), y = (0, u.XO)(t, n, p, f), v = (0, u.R9)(h, f), _ = r.useCallback(() => {
+    } = e, y = (0, u.wq)(t.author.id, n.id), C = (0, u.XO)(t, n, p, f), v = (0, u.R9)(h, f), _ = r.useCallback(() => {
       f({
         usernameProfile: false,
         avatarProfile: false,
@@ -45,8 +45,8 @@ let p = Chunk473749.memo(function(e) {
       showAvatarPopout: h,
       showUsernamePopout: p,
       onClickAvatar: v,
-      onClickUsername: y,
-      onContextMenu: C,
+      onClickUsername: C,
+      onContextMenu: y,
       onPopoutRequestClose: _,
       roleIcon: b
     })
@@ -69,20 +69,20 @@ function f(e) {
     groupId: g
   } = t, {
     usernameProfile: b,
-    avatarProfile: C
+    avatarProfile: y
   } = r;
   if ((0, l.Z)(d)) return null;
-  let y = d.id === g;
-  return y || f || null != o ? (0, i.jsx)(p, {
+  let C = d.id === g;
+  return C || f || null != o ? (0, i.jsx)(p, {
     message: d,
     channel: m,
     compact: f,
     subscribeToGroupId: g,
-    isGroupStart: y,
+    isGroupStart: C,
     groupId: g,
     setPopout: n,
     usernameProfile: b,
-    avatarProfile: C,
+    avatarProfile: y,
     author: s,
     repliedMessage: c,
     roleIcon: u

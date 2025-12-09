@@ -42,8 +42,8 @@ function S(e) {
     purchaseType: N,
     selectedSku: P,
     enablePremiumBrandRefresh: R,
-    isDisplayingWowMomentConfirmation: w,
-    isPremiumGroupPurchase: D
+    isDisplayingWowMomentConfirmation: D,
+    isPremiumGroupPurchase: w
   } = (0, h.JL)(), {
     isGift: x,
     selectedGiftStyle: L,
@@ -77,8 +77,8 @@ function S(e) {
       giftRecipient: j,
       isEligibleForTrial: V,
       enablePremiumBrandRefresh: R,
-      isDisplayingWowMomentConfirmation: w,
-      isPremiumGroupPurchase: D
+      isDisplayingWowMomentConfirmation: D,
+      isPremiumGroupPurchase: w
     })), e
-  }, [L, S, C, n, A, I, T, V, W, U, B, G, N, x, j, R, w, D])
+  }, [L, S, C, n, A, I, T, V, W, U, B, G, N, x, j, R, D, w])
 }

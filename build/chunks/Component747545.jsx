@@ -2,8 +2,8 @@
 /** chunk id: 747545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => w,
-  Z: () => D
+  S: () => D,
+  Z: () => w
 }), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -40,7 +40,7 @@ function R(e) {
   return (0, y.getPlatform)() === y.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != e ? "?cameraId=".concat(encodeURIComponent(e.replace(C, N))) : "") : ""
 }
 
-function w() {
+function D() {
   let [e, t] = Chunk473749.useState(false), n = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isMediaFilterSettingLoading());
   return (Chunk473749.useEffect(() => {
     let e = new Chunk846519.V7;
@@ -53,7 +53,7 @@ function w() {
   }) : null
 }
 
-function D(e) {
+function w(e) {
   let {
     hideDeviceSelector: t = false,
     hideDeviceHeader: n = false,
@@ -68,7 +68,7 @@ function D(e) {
     analyticsLocations: C
   } = (0, f.ZP)(), {
     id: N
-  } = (0, _.p6)(S.h7.VIDEO_INPUT), w = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), D = h.qF.useSetting();
+  } = (0, _.p6)(S.h7.VIDEO_INPUT), D = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), w = h.qF.useSetting();
   return (0, r.jsxs)(c.Kqy, {
     gap: 20,
     children: [d(N), E.Z.isEnabled() ? null : (0, r.jsx)(c.Text, {
@@ -81,7 +81,7 @@ function D(e) {
     }), y ? null : (0, r.jsx)(c.rsf, {
       label: I.intl.string(I.t["3Ppr1h"]),
       description: I.intl.string(I.t.WNbX4O),
-      checked: D,
+      checked: w,
       onChange: e => {
         h.qF.updateSetting(e), b.default.track(O.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
@@ -100,7 +100,7 @@ function D(e) {
         }) : true,
         deviceType: S.h7.VIDEO_INPUT,
         location: "CameraSettings",
-        isDisabled: !w,
+        isDisabled: !D,
         showAllDevices: true
       })
     }), (0, r.jsx)(m.F, {

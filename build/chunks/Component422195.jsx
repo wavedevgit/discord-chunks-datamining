@@ -32,11 +32,11 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
   N = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_SIZE),
   P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_MARGIN),
   R = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_UNICODE_ICON_SIZE),
-  w = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
-  D = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
+  D = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
+  w = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
   x = [C, C, C, C],
   L = (N + P) * 2 + C,
-  j = w + 2 * D,
+  j = D + 2 * w,
   M = 7,
   k = e => {
     let {
@@ -50,16 +50,16 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       let p, E = (null == (u = n[0]) ? true : u.type) === y.Ih.FAVORITE,
         C = +!!E,
         P = (null == (f = n[C]) ? true : f.type) === y.Ih.RECENT,
-        w = n.length > 0,
-        D = n.length;
+        D = n.length > 0,
+        w = n.length;
       if (0 === a && E) return (0, r.jsx)("div", {
         role: "listitem",
-        "aria-setsize": D,
+        "aria-setsize": w,
         "aria-posinset": a,
         children: (0, r.jsx)(c.P3F, {
           "aria-label": T.intl.string(T.t.y3LQCG),
           className: o()(A.stickerCategory, A.stickerCategoryGeneric, {
-            [A.stickerCategoryGenericDisabled]: w && !E,
+            [A.stickerCategoryGenericDisabled]: D && !E,
             [A.stickerCategoryGenericSelected]: !g && E && 0 === t,
             [A.stickerCategoryGenericLast]: !P
           }),
@@ -75,12 +75,12 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       }, "favorites");
       if (a === C && P) return (0, r.jsx)("div", {
         role: "listitem",
-        "aria-setsize": D,
+        "aria-setsize": w,
         "aria-posinset": a,
         children: (0, r.jsx)(c.P3F, {
           "aria-label": T.intl.string(T.t.RxAmVC),
           className: o()(A.stickerCategory, A.stickerCategoryGeneric, A.stickerCategoryGenericLast, {
-            [A.stickerCategoryGenericDisabled]: w && !P,
+            [A.stickerCategoryGenericDisabled]: D && !P,
             [A.stickerCategoryGenericSelected]: !g && P && t === C
           }),
           onClick: l,
@@ -120,7 +120,7 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
           text: U,
           children: (0, r.jsx)("div", {
             role: "listitem",
-            "aria-setsize": D,
+            "aria-setsize": w,
             "aria-posinset": a,
             children: (0, r.jsx)(c.P3F, {
               "aria-label": U,
@@ -155,7 +155,7 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       onScroll: i.useCallback(e => {
         var t;
         let n = null == (t = a.current) ? true : t.getListDimensions();
-        null != n && f(e + n.height - w < l)
+        null != n && f(e + n.height - D < l)
       }, [l, a, f])
     }
   },

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Dz: () => _,
-  SW: () => D,
+  SW: () => w,
   T_: () => M,
   _v: () => k,
   jd: () => j,
@@ -383,31 +383,31 @@ function R() {
   })
 }
 
-function w() {
+function D() {
   return null == N ? (R(), null) : N
 }
-async function D() {
+async function w() {
   var e;
-  await b(), null == (e = w()) || module.reset()
+  await b(), null == (e = D()) || module.reset()
 }
 
 function x() {
   var e, t;
   let n = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  return require ? y() : null != (t = null == (e = w()) ? true : module.getLayoutMap()) ? exports : y()
+  return require ? y() : null != (t = null == (e = D()) ? true : module.getLayoutMap()) ? exports : y()
 }
 
 function L(e) {
   var t, n;
   let r = null != e ? h(e) : true;
-  if (null != r) return null != (n = null == (t = w()) ? true : t.findCodeFromKeyboardLayoutMap(r)) ? n : true
+  if (null != r) return null != (n = null == (t = D()) ? true : t.findCodeFromKeyboardLayoutMap(r)) ? n : true
 }
 
 function j(e) {
   let t = v(e);
   if (null != t.key) {
     var n, r;
-    return null != (r = null == (n = w()) ? true : n.findExactKeyboardEventMatch(t.key, t.code, t.keyCode)) ? r : null
+    return null != (r = null == (n = D()) ? true : n.findExactKeyboardEventMatch(t.key, t.code, t.keyCode)) ? r : null
   }
   return null
 }
@@ -417,10 +417,10 @@ function M(e) {
   let a = null != e ? h(e) : true;
   if (null == a) return null;
   let o = L(a),
-    s = null != (n = null == (t = w()) ? true : t.findKeyboardEventByKey(a, o)) ? n : null;
+    s = null != (n = null == (t = D()) ? true : t.findKeyboardEventByKey(a, o)) ? n : null;
   if (null != s) return s;
   try {
-    let e = null != (i = null == (r = w()) ? true : r.getDefaultKeyboardEventShape(a, true, o)) ? i : null;
+    let e = null != (i = null == (r = D()) ? true : r.getDefaultKeyboardEventShape(a, true, o)) ? i : null;
     if (null == e) return null;
     let t = new KeyboardEvent("keydown", e);
     return v({
@@ -435,10 +435,10 @@ function M(e) {
 
 function k(e) {
   var t, n, r, i;
-  let a = null != (n = null == (t = w()) ? true : t.findKeyboardEventByKeyCode(e)) ? n : null;
+  let a = null != (n = null == (t = D()) ? true : t.findKeyboardEventByKeyCode(e)) ? n : null;
   if (null != a) return a;
   try {
-    let t = null != (i = null == (r = w()) ? true : r.getDefaultKeyboardEventShape(true, e)) ? i : null;
+    let t = null != (i = null == (r = D()) ? true : r.getDefaultKeyboardEventShape(true, e)) ? i : null;
     if (null == t) return null;
     let n = new KeyboardEvent("keydown", t);
     return v({

@@ -76,8 +76,8 @@ function R(e) {
     themeType: T,
     animateOnHover: C,
     onOpenProfile: R,
-    className: w,
-    previewStatus: D
+    className: D,
+    previewStatus: w
   } = e, {
     theme: x
   } = (0, b.z)(), {
@@ -92,7 +92,7 @@ function R(e) {
   } = (0, s.cj)([p.Z], () => ({
     status: (0, c.Z)(G) ? O.Skl.STREAMING : p.Z.getStatus(t.id),
     isMobileOnline: p.Z.isMobileOnline(t.id)
-  })), F = true !== D ? D : Z, V = [S.l.MODAL, S.l.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(I.avatar, w), {
+  })), F = true !== w ? w : Z, V = [S.l.MODAL, S.l.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(I.avatar, D), {
     avatarDecorationSrc: Y,
     avatarSrc: W,
     eventHandlers: K

@@ -164,14 +164,14 @@ function R(e) {
   T(t, n)
 }
 
-function w(e) {
+function D(e) {
   let {
     file: t,
     messageId: n
   } = e;
   m[n] = t
 }
-class D extends(r = Chunk442837.ZP.Store) {
+class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk375954.Z)
   }
@@ -189,8 +189,8 @@ class D extends(r = Chunk442837.ZP.Store) {
     if (null != e) return h[e]
   }
 }
-s(D, "displayName", "UploadStore");
-let x = new D(Chunk570140.Z, {
+s(w, "displayName", "UploadStore");
+let x = new w(Chunk570140.Z, {
   CONNECTION_OPEN: y,
   LOGOUT: O,
   UPLOAD_START: v,
@@ -201,5 +201,5 @@ let x = new D(Chunk570140.Z, {
   UPLOAD_CANCEL_REQUEST: N,
   UPLOAD_ITEM_CANCEL_REQUEST: P,
   UPLOAD_FILE_UPDATE: R,
-  UPLOAD_RESTORE_FAILED_UPLOAD: w
+  UPLOAD_RESTORE_FAILED_UPLOAD: D
 })

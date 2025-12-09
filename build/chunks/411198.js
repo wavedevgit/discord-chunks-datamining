@@ -70,7 +70,7 @@ function p(e) {
 }
 
 function _(e, t, n) {
-  var r, i, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, A, C, N, P, w, x, L;
+  var r, i, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, A, C, N, P, D, x, L;
   return (0, o.oI)(s.VI, n, {
     id: e.id,
     joinedAt: t.joinedAt,
@@ -105,11 +105,11 @@ function _(e, t, n) {
     maxMembers: null != (C = e.max_members) ? C : s.Cx.maxMembers,
     nsfwLevel: null != (N = e.nsfw_level) ? N : s.Cx.nsfwLevel,
     ownerConfiguredContentLevel: null != (P = e.owner_configured_content_level) ? P : null,
-    hubType: null != (w = e.hub_type) ? w : null,
+    hubType: null != (D = e.hub_type) ? D : null,
     latestOnboardingQuestionId: null != (x = e.latest_onboarding_question_id) ? x : null,
     profile: null != (L = e.profile) ? L : null,
     premiumFeatures: null != e.premium_features ? R(e.premium_features) : null,
-    moderatorReporting: null != e.moderator_reporting ? D(e.moderator_reporting) : null
+    moderatorReporting: null != e.moderator_reporting ? w(e.moderator_reporting) : null
   })
 }
 
@@ -299,7 +299,7 @@ function A(e) {
     vanity_url_code: null != (t = e.vanityURLCode) ? t : null,
     premium_tier: e.premiumTier,
     premium_progress_bar_enabled: e.premiumProgressBarEnabled,
-    premium_features: null != e.premiumFeatures ? w(e.premiumFeatures) : null,
+    premium_features: null != e.premiumFeatures ? D(e.premiumFeatures) : null,
     system_channel_flags: e.systemChannelFlags,
     discovery_splash: e.discoverySplash,
     rules_channel_id: e.rulesChannelId,
@@ -344,7 +344,7 @@ function R(e) {
   }
 }
 
-function w(e) {
+function D(e) {
   return {
     features: e.features,
     additional_emoji_slots: e.additionalEmojiSlots,
@@ -353,7 +353,7 @@ function w(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   return {
     moderatorReportingEnabled: e.moderator_reporting_enabled,
     moderatorReportChannelId: e.moderator_report_channel_id

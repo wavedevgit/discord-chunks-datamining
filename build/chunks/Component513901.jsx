@@ -40,13 +40,13 @@ function y(e) {
   }), {
     pendingProfileEffect: N,
     errors: P
-  } = (0, p.xZ)(null == n ? true : n.id), R = true === N ? null != C : null != N, w = () => {
+  } = (0, p.xZ)(null == n ? true : n.id), R = true === N ? null != C : null != N, D = () => {
     (0, u.H)({
       analyticsLocations: T,
       guild: n,
       initialSelectedEffect: a
     })
-  }, D = () => {
+  }, w = () => {
     (0, p.UK)(null, null == n ? true : n.id)
   };
   i.useEffect(() => {
@@ -68,7 +68,7 @@ function y(e) {
       className: b.buttonsContainer,
       children: [(0, r.jsx)(x, {
         size: s.zx.Sizes.SMALL,
-        onClick: w,
+        onClick: D,
         className: o()({
           [b.buttonHighlighted]: S
         }),
@@ -80,7 +80,7 @@ function y(e) {
           variant: "secondary",
           size: "sm",
           text: null != n ? E.intl.string(E.t.CHf9iJ) : E.intl.string(E.t.uMuafO),
-          onClick: D
+          onClick: w
         })
       })]
     })

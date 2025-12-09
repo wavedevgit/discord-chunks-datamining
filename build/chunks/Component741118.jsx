@@ -96,9 +96,9 @@ function y(e) {
     A = T === f.length - 1,
     C = 0 === T,
     [N, P] = i.useState(false),
-    [R, w] = i.useState(_);
-  R !== _ && (P(false), w(_));
-  let D = i.useCallback(e => {
+    [R, D] = i.useState(_);
+  R !== _ && (P(false), D(_));
+  let w = i.useCallback(e => {
       null == g || g(e)
     }, [g]),
     x = i.useCallback(async () => {
@@ -113,11 +113,11 @@ function y(e) {
     M = i.useMemo(() => ({
       currentStepKey: _,
       setNextEnabled: P,
-      goToStep: D,
+      goToStep: w,
       goToNextStep: L,
       goToPreviousStep: j,
       complete: x
-    }), [_, P, D, L, j, x]),
+    }), [_, P, w, L, j, x]),
     k = {
       variant: "secondary",
       text: v.BACK

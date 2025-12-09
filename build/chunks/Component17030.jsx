@@ -23,8 +23,8 @@ function b(e) {
     customStatusEmoji: t,
     setCustomStatusEmoji: n,
     selectedDefaultStatus: b,
-    setIsEmojiPickerOpen: C,
-    defaultStatusVariant: y
+    setIsEmojiPickerOpen: y,
+    defaultStatusVariant: C
   } = e, v = r.useRef(null), _ = (0, l.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), O = r.useCallback(() => null != t ? (0, i.jsx)(o.Z, {
     emojiId: t.id,
     emojiName: t.name,
@@ -37,12 +37,12 @@ function b(e) {
       type: f.IIU.HANG_STATUS,
       state: b
     },
-    fallbackVariant: y
-  }) : null, [t, y, b]);
+    fallbackVariant: C
+  }) : null, [t, C, b]);
   return (0, i.jsx)(a.yRy, {
     targetElementRef: v,
-    onRequestOpen: () => C(true),
-    onRequestClose: () => C(false),
+    onRequestOpen: () => y(true),
+    onRequestClose: () => y(false),
     renderPopout: e => {
       var t;
       let {

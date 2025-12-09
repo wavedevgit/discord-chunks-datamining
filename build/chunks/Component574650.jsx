@@ -77,31 +77,31 @@ let I = () => {
       })
     },
     R = null != (t = null == I ? true : I.applicationStatus) ? exports : Chunk246364.wB.STARTED,
-    w = null,
     D = null,
+    w = null,
     x = null,
     L = [Chunk342891.notice, Chunk226910.notice];
   switch (R) {
     case Chunk246364.wB.SUBMITTED:
-      w = Chunk388032.intl.string(Chunk388032.t["5iLvSx"]), D = Chunk388032.intl.string(Chunk388032.t.mqtdmQ), x = N;
+      D = Chunk388032.intl.string(Chunk388032.t["5iLvSx"]), w = Chunk388032.intl.string(Chunk388032.t.mqtdmQ), x = N;
       break;
     case Chunk246364.wB.REJECTED:
-      w = Chunk388032.intl.string(Chunk388032.t.lk30cY), D = Chunk388032.intl.string(Chunk388032.t["8RrsHr"]), x = P, L.push(Chunk342891.error);
+      D = Chunk388032.intl.string(Chunk388032.t.lk30cY), w = Chunk388032.intl.string(Chunk388032.t["8RrsHr"]), x = P, L.push(Chunk342891.error);
       break;
     default:
-      w = Chunk388032.intl.string(Chunk388032.t.G5YKXP), D = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), x = C
+      D = Chunk388032.intl.string(Chunk388032.t.G5YKXP), w = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), x = C
   }
   return (0, Chunk54381.jsxs)("div", {
     className: a()(...L),
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk342891.header,
       variant: "text-sm/normal",
-      children: w
+      children: D
     }), (0, Chunk54381.jsx)(Chunk481060.Button, {
       variant: "overlay-primary",
       size: "sm",
       onClick: x,
-      text: D
+      text: w
     })]
   })
 }

@@ -47,7 +47,7 @@ function Z(e) {
     message: t,
     snapshot: n,
     index: u
-  } = e, f = i.useMemo(() => new d.r(t, n, u), [t, n, u]), _ = (0, o.e7)([N.Z, L.default, D.Z, w.Z, R.Z, p.Z], () => f.getForwardInfo(N.Z, L.default, D.Z, w.Z, R.Z, p.Z).footerInfo, [f], s.Z), m = i.useCallback(() => {
+  } = e, f = i.useMemo(() => new d.r(t, n, u), [t, n, u]), _ = (0, o.e7)([N.Z, L.default, w.Z, D.Z, R.Z, p.Z], () => f.getForwardInfo(N.Z, L.default, w.Z, D.Z, R.Z, p.Z).footerInfo, [f], s.Z), m = i.useCallback(() => {
     var e, n;
     let r = N.Z.getChannel(t.channel_id),
       i = R.Z.getGuild(null == r ? true : r.guild_id),

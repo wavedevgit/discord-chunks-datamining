@@ -162,9 +162,9 @@ function T(e) {
     headingId: P
   } = (0, g.v)(), {
     i18n: R
-  } = (0, _.ZF)(), w = null != t, D = (0, f.MW)(n), x = c ? D ? S : I : v, L = null != n && (0, r.jsx)("div", {
+  } = (0, _.ZF)(), D = null != t, w = (0, f.MW)(n), x = c ? w ? S : I : v, L = null != n && (0, r.jsx)("div", {
     className: o()(E.headerGraphic, {
-      [E.headerGraphicAnimated]: D
+      [E.headerGraphicAnimated]: w
     }),
     children: (0, r.jsx)("div", {
       className: E.headerGraphicContainer,
@@ -187,7 +187,7 @@ function T(e) {
         children: (0, r.jsx)(x, {
           leading: b,
           trailing: O,
-          hasGradient: w,
+          hasGradient: D,
           children: (0, r.jsxs)("div", {
             className: E.headerMain,
             children: [null != T && null != N && (0, r.jsx)("div", {
@@ -207,7 +207,7 @@ function T(e) {
       })]
     })
   });
-  return w ? (0, r.jsx)(u.$, {
+  return D ? (0, r.jsx)(u.$, {
     color: t,
     className: E.headerGradient,
     children: k

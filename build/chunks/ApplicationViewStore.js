@@ -62,7 +62,7 @@ let B = {
     [Chunk981631.iEv.PLATFORM]: (e, t, n) => {
       let r = e.libraryApplication.getDistributor(),
         i = t.libraryApplication.getDistributor();
-      return r === i ? (n === D.sHY.DESCENDING ? false : 1) * G(e, t) : null == r ? 1 : null == i ? false : r.localeCompare(i)
+      return r === i ? (n === w.sHY.DESCENDING ? false : 1) * G(e, t) : null == r ? 1 : null == i ? false : r.localeCompare(i)
     },
     [Chunk981631.iEv.LAST_PLAYED]: (e, t) => e.isNew && !t.isNew ? false : !e.isNew && t.isNew ? 1 : e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1,
     [Chunk981631.iEv.ACTIONS]: null
@@ -74,7 +74,7 @@ let B = {
     let i = B[t];
     if (null == i) return e;
     let a = [...e].sort(i);
-    return n === D.sHY.DESCENDING ? a.reverse() : a
+    return n === w.sHY.DESCENDING ? a.reverse() : a
   }),
   W = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && e.libraryApplication.isHidden()));
 
@@ -116,7 +116,7 @@ function q(e, t, n, r, i) {
     }),
     isUpdatingFlags: E.Z.isUpdatingFlags(e.id, e.branchId),
     shouldShowInLibrary: (0, C.d0)(a, e, b.Z),
-    defaultAction: (0, w.i)(e, v.Z, S.Z)
+    defaultAction: (0, D.i)(e, v.Z, S.Z)
   } : null
 }
 

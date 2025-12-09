@@ -77,8 +77,8 @@ let C = e => {
     product: P
   } = (0, h.T)(t, true), {
     giftRecipient: R,
-    giftRecipientError: w
-  } = (0, f.wD)(), D = (0, u.e7)([m.default], () => m.default.getCurrentUser()), x = (0, y.kd)(P), L = i.useRef(null);
+    giftRecipientError: D
+  } = (0, f.wD)(), w = (0, u.e7)([m.default], () => m.default.getCurrentUser()), x = (0, y.kd)(P), L = i.useRef(null);
   if (null == P) return null;
   let [j] = P.items;
   l()(null != j, "Product item should not be empty");
@@ -95,7 +95,7 @@ let C = e => {
           return null
       }
     },
-    k = null != R && R.id !== (null == D ? true : D.id) && P.type !== c.Z.BUNDLE && j.type !== c.Z.NAMEPLATE && !N,
+    k = null != R && R.id !== (null == w ? true : w.id) && P.type !== c.Z.BUNDLE && j.type !== c.Z.NAMEPLATE && !N,
     U = () => {
       null != t && null != s && s(t)
     };
@@ -134,8 +134,8 @@ let C = e => {
       tag: "div",
       onClick: U,
       className: o()(v.previewContainer, {
-        [v.previewContainerSelected]: n && null == w,
-        [v.previewContainerError]: n && null != w
+        [v.previewContainerSelected]: n && null == D,
+        [v.previewContainerError]: n && null != D
       }),
       children: [(0, r.jsxs)("div", {
         className: v.giftInfoContainer,
@@ -156,12 +156,12 @@ let C = e => {
           variant: "text-md/semibold",
           children: a
         })]
-      }), n && null != w && (0, r.jsx)("div", {
+      }), n && null != D && (0, r.jsx)("div", {
         className: v.recipientError,
         children: (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "status-danger",
-          children: w
+          children: D
         })
       })]
     })]

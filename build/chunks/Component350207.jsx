@@ -48,7 +48,7 @@ function I(e) {
     }
   }).filter(p.lm).flat())], [t, I]), C = (0, s.e7)([d.Z], () => d.Z.canFetchDetectableGames()), [N, P] = (0, i.useState)([]), {
     themeType: R
-  } = (0, E.z)(), w = R === b.l.SIDEBAR, D = (0, i.useRef)(false);
+  } = (0, E.z)(), D = R === b.l.SIDEBAR, w = (0, i.useRef)(false);
   return (0, i.useEffect)(() => {
     if (C) return void c.Z.getDetectableGames();
     P(A.map(e => d.Z.getDetectableGame(e)).filter(e => null != e).map(e => {
@@ -62,9 +62,9 @@ function I(e) {
       }
     }).filter(e => "" !== e.image).slice(0, v))
   }, [A, C]), (0, i.useEffect)(() => {
-    0 !== N.length && (D.current || (u({
+    0 !== N.length && (w.current || (u({
       action: "VIEW_GAME_WIDGET_BREADCRUMB"
-    }), D.current = true))
+    }), w.current = true))
   }, [u, N.length]), (0, r.jsx)(l.P3F, {
     "aria-label": y.intl.string(y.t.JjiwFx),
     onClick: () => {
@@ -76,7 +76,7 @@ function I(e) {
     children: (0, r.jsxs)(g.Z.Overlay, {
       className: o()(O.innerContainer, a),
       children: [(0, r.jsx)(l.Text, {
-        variant: w ? "text-sm/medium" : "text-xs/medium",
+        variant: D ? "text-sm/medium" : "text-xs/medium",
         children: y.intl.string(y.t.JjiwFx)
       }), (0, r.jsx)("div", {
         className: O.icons,

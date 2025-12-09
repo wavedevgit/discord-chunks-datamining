@@ -4,7 +4,7 @@
 require.d(exports, {
   Bm: () => R,
   P7: () => P,
-  X: () => w,
+  X: () => D,
   ae: () => N
 });
 var Chunk473749 = require("./473749.js"),
@@ -119,12 +119,12 @@ function P(e) {
     source: N,
     fetchesApplication: g,
     onConfirmActivityLaunchChecksAlertOpen: I
-  }), w = "primary", D = null != s ? s : S.intl.string(S.t.zKX8Nu);
-  return C === c.JS.JOIN ? (w = "active", D = S.intl.string(S.t.d9PsMj)) : C !== c.JS.LEAVE || h || (w = "critical-primary", D = S.intl.string(S.t["Hi1/aQ"])), {
+  }), D = "primary", w = null != s ? s : S.intl.string(S.t.zKX8Nu);
+  return C === c.JS.JOIN ? (D = "active", w = S.intl.string(S.t.d9PsMj)) : C !== c.JS.LEAVE || h || (D = "critical-primary", w = S.intl.string(S.t["Hi1/aQ"])), {
     onActivityItemSelected: R,
     activityAction: C,
-    buttonVariant: w,
-    buttonText: D
+    buttonVariant: D,
+    buttonText: w
   }
 }
 
@@ -144,7 +144,7 @@ function R(e, t) {
   }, [e, t, n, a])
 }
 
-function w(e) {
+function D(e) {
   g.S.dispatchToLastSubscribed(v.CkL.OPEN_APP_LAUNCHER, {
     applicationId: e
   })

@@ -21,8 +21,8 @@ function d(e) {
       summaries: g,
       selectedSummary: b
     } = e,
-    C = [],
-    y = false,
+    y = [],
+    C = false,
     v = null != f ? a.default.extractTimestamp(f) : null,
     _ = null;
   return h.forEach(e => {
@@ -36,7 +36,7 @@ function d(e) {
           i = a.default.extractTimestamp(g[e].endId);
         if (t >= n && t <= i) {
           if (_ === g[e].id) break;
-          C.push({
+          y.push({
             type: u.ys_.DIVIDER,
             content: g[e].topic,
             contentKey: g[e].id
@@ -46,15 +46,15 @@ function d(e) {
       }
     }
     let S = (0, l.vc)(e.timestamp, "LL");
-    S !== t && null == _ && (C.push({
+    S !== t && null == _ && (y.push({
       type: u.ys_.DIVIDER,
       content: S,
       contentKey: S
     }), t = S);
-    let P = C[C.length - 1],
+    let P = y[y.length - 1],
       I = null,
       Z = (0, s.DQ)(e);
-    y = y || Z;
+    C = C || Z;
     let T = function(e, t, n) {
       if (i.V.NON_COLLAPSIBLE.has(t.type));
       else if (t.blocked) return u.ys_.MESSAGE_GROUP_BLOCKED;
@@ -66,18 +66,18 @@ function d(e) {
       type: T,
       content: [],
       key: e.id
-    }, C.push(E)) : j = (E = O).content[E.content.length - 1], [E, j])), f === e.id && null != v) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (x = I, e.isFirstMessageInForumPost(p) || x.content.push({
+    }, y.push(E)) : j = (E = O).content[E.content.length - 1], [E, j])), f === e.id && null != v) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (x = I, e.isFirstMessageInForumPost(p) || x.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), x.hasUnread = true) : e.isFirstMessageInForumPost(p) || C.push({
+    }), x.hasUnread = true) : e.isFirstMessageInForumPost(p) || y.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), v = null) : null != v && a.default.extractTimestamp(e.id) > v && (e.isFirstMessageInForumPost(p) || C.push({
+    }), v = null) : null != v && a.default.extractTimestamp(e.id) > v && (e.isFirstMessageInForumPost(p) || y.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), v = null);
     let N = (0, c.f)(e, p);
-    null != N && "before" === N.position && C.push({
+    null != N && "before" === N.position && y.push({
       type: u.ys_.MESSAGE,
       content: N.message,
       groupId: N.message.id
@@ -95,23 +95,23 @@ function d(e) {
       jumpFlash: R,
       jumpTargetId: L
     } = h;
-    R && e.id === L && null != M && (w.flashKey = M), h.jumpTargetId === e.id && (w.jumpTarget = true), null != b && e.id === b.startId && b.count > 1 && C.push({
+    R && e.id === L && null != M && (w.flashKey = M), h.jumpTargetId === e.id && (w.jumpTarget = true), null != b && e.id === b.startId && b.count > 1 && y.push({
       type: u.ys_.DIVIDER,
       content: b.topic,
       contentKey: b.startId,
       isSummaryDivider: true
-    }), null !== I ? (I.content.push(w), w.jumpTarget && (I.hasJumpTarget = true)) : C.push(w), e.isFirstMessageInForumPost(p) && C.push({
+    }), null !== I ? (I.content.push(w), w.jumpTarget && (I.hasJumpTarget = true)) : y.push(w), e.isFirstMessageInForumPost(p) && y.push({
       type: u.ys_.FORUM_POST_ACTION_BAR
-    }), null != N && "after" === N.position && C.push({
+    }), null != N && "after" === N.position && y.push({
       type: u.ys_.MESSAGE,
       content: N.message,
       groupId: N.message.id
-    }), null != b && e.id === b.endId && b.count > 1 && C.push({
+    }), null != b && e.id === b.endId && b.count > 1 && y.push({
       type: u.ys_.DIVIDER,
       contentKey: b.endId,
       isSummaryDivider: true
     })
-  }), y && (0, s.P1)(p) && r.Z.trackExposure({
+  }), C && (0, s.P1)(p) && r.Z.trackExposure({
     location: "416cc9_1"
-  }), C
+  }), y
 }

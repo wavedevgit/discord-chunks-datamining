@@ -90,8 +90,8 @@ let N = 50,
 var R = function(e) {
   return e.TOP_LEFT = "TOP_LEFT", e.TOP_RIGHT = "TOP_RIGHT", e.BOTTOM_LEFT = "BOTTOM_LEFT", e.BOTTOM_RIGHT = "BOTTOM_RIGHT", e
 }({});
-let w = ["TOP_LEFT", "TOP_RIGHT"],
-  D = (0, Chunk468194.Mg)(Chunk477690.Z.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE),
+let D = ["TOP_LEFT", "TOP_RIGHT"],
+  w = (0, Chunk468194.Mg)(Chunk477690.Z.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE),
   x = 11,
   L = 125,
   j = {
@@ -206,7 +206,7 @@ function J(e, t) {
     case "enter":
       return "confetti";
     case "confetti":
-      if (w.includes(t)) return "leaf_peel";
+      if (D.includes(t)) return "leaf_peel";
       return "exit";
     case "leaf_peel":
       return "leaf_fall";
@@ -218,7 +218,7 @@ function J(e, t) {
 }
 
 function $(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : D,
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : w,
     r = null == e ? true : e.getBoundingClientRect();
   if (null == r) return {
     x: 0,
@@ -253,7 +253,7 @@ function et(e) {
   } = e, u = i.useRef(null), [p, _] = i.useState(null), [m] = i.useState(null != a ? a : Y()), {
     createMultipleConfettiAt: h,
     confettiCanvas: g
-  } = i.useContext(f.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = J(p, m), v = w.includes(m), I = v && "exit" === p, T = i.useCallback(e => {
+  } = i.useContext(f.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = J(p, m), v = D.includes(m), I = v && "exit" === p, T = i.useCallback(e => {
     _(e)
   }, []), A = i.useCallback(() => {
     "exit" === p && (null == t || t())
@@ -369,24 +369,24 @@ function en(e) {
     {
       reducedMotion: R
     } = i.useContext(d.Sfi),
-    w = (0, b.ZP)(n),
-    D = w.nick,
-    x = s(w);
+    D = (0, b.ZP)(n),
+    w = D.nick,
+    x = s(D);
   t = null == c || null == o ? u > 1 ? v.intl.format(v.t.yfC9ds, {
-    username: D,
+    username: w,
     usernameHook: x,
     numSubscriptions: u
   }) : v.intl.format(v.t["57St/7"], {
-    username: D,
+    username: w,
     usernameHook: x
   }) : u > 1 ? v.intl.format(v.t.PO9uJD, {
-    username: D,
+    username: w,
     usernameHook: x,
     numSubscriptions: u,
     guildName: o.name,
     newTierName: (0, E.nW)(c)
   }) : v.intl.format(v.t.cUfTTE, {
-    username: D,
+    username: w,
     usernameHook: x,
     guildName: o.name,
     newTierName: (0, E.nW)(c)

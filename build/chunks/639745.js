@@ -44,8 +44,8 @@ function v(e, t, n, r) {
     N = "\n      --custom-theme-background: ".concat(I, ";\n      ", "--custom-background-gradient-chat-opacity-base-light", ": 0.95;\n      ", "--custom-background-gradient-highest-opacity-base-light", ": 1.0;\n      ", "--custom-background-gradient-opacity-mix-amount", ": ").concat(((f + p * C) / 100).toFixed(2), ";\n      ", "--custom-theme-border-color-amount", ": 5%;\n      "),
     P = T ? "\n      ".concat(s.Yk.THEME_BASE_MIX_AMOUNT, ": ").concat(_ + m * C, "%;\n      ").concat(s.Yk.THEME_TEXT_MIX_AMOUNT, ": ").concat(E, "%;\n    ") : "\n      ".concat(s.Yk.THEME_BASE_MIX_AMOUNT, ": ").concat(h + g * n, "%;\n      ").concat(s.Yk.THEME_TEXT_MIX_AMOUNT, ": ").concat(b, "%;\n    "),
     R = "\n      ".concat(s.Yk.DARK_THEME_BASE_COLOR, ": ").concat(A.dark.css(), ";\n      ").concat(s.Yk.DARK_THEME_BASE_COLOR_HSL, ": ").concat((0, s.dw)(A.dark), ";\n      ").concat(s.Yk.DARK_THEME_TEXT_COLOR, ": ").concat(i()(v).set("hsl.l", ((100 - y * C) / 100).toFixed(2)).css(), ";\n    "),
-    w = "\n      ".concat(s.Yk.LIGHT_THEME_BASE_COLOR, ": ").concat(A.light.css(), ";\n      ").concat(s.Yk.LIGHT_THEME_BASE_COLOR_HSL, ": ").concat((0, s.dw)(A.light), ";\n      ").concat(s.Yk.LIGHT_THEME_TEXT_COLOR, ": ").concat(i()(S).set("hsl.l", (O * C / 100).toFixed(2)).css(), ";\n    ");
-  return ".".concat(l, " {\n      ").concat(N, "\n      ").concat(P, "\n      ").concat(R, "\n      ").concat(w, "\n      }")
+    D = "\n      ".concat(s.Yk.LIGHT_THEME_BASE_COLOR, ": ").concat(A.light.css(), ";\n      ").concat(s.Yk.LIGHT_THEME_BASE_COLOR_HSL, ": ").concat((0, s.dw)(A.light), ";\n      ").concat(s.Yk.LIGHT_THEME_TEXT_COLOR, ": ").concat(i()(S).set("hsl.l", (O * C / 100).toFixed(2)).css(), ";\n    ");
+  return ".".concat(l, " {\n      ").concat(N, "\n      ").concat(P, "\n      ").concat(R, "\n      ").concat(D, "\n      }")
 }
 
 function S(e, t) {

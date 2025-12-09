@@ -40,9 +40,9 @@ function b() {
     }),
     R = null != (e = Chunk695346.rR.useSetting()) ? module : P,
     {
-      analyticsLocations: w
+      analyticsLocations: D
     } = (0, Chunk906732.ZP)(Chunk100527.Z.TEXT_AND_IMAGES),
-    D = Chunk473749.useCallback(e => {
+    w = Chunk473749.useCallback(e => {
       let t = 1 === e;
       t ? u.Z.cleanUpPrivateChannelSearchState() : u.Z.cleanUpSearchState({
         type: g.aib.DMS
@@ -153,7 +153,7 @@ function b() {
                   location: {
                     section: g.jXE.SETTINGS_TEXT_AND_IMAGES
                   },
-                  location_stack: w
+                  location_stack: D
                 }), _.fq.updateSetting(e)
               },
               label: Chunk388032.intl.string(Chunk388032.t["29xPVZ"])
@@ -237,7 +237,7 @@ function b() {
               name: Chunk388032.intl.string(Chunk388032.t.MwlEGN),
               value: 1
             }],
-            onChange: D,
+            onChange: w,
             value: +!!R
           })
         })]

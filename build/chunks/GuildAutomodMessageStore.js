@@ -2,7 +2,7 @@
 /** chunk id: 223606, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -148,7 +148,7 @@ class R extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 _(R, "displayName", "GuildAutomodMessageStore"), _(R, "persistKey", "GuildAutomodMessages");
-let w = new R(Chunk570140.Z, {
+let D = new R(Chunk570140.Z, {
   CONNECTION_OPEN: v,
   LOAD_MESSAGES_SUCCESS: P,
   LOCAL_MESSAGES_LOADED: P,

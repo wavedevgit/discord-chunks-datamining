@@ -213,7 +213,7 @@ function ei(e) {
       null != t ? e.bot = t : u.add(e.bot_id)
     } else null != e.bot && (l[e.bot.id] = e.id);
     let t = {
-      descriptor: k(j({}, (0, P.X0)(ew(e), false)), {
+      descriptor: k(j({}, (0, P.X0)(eD(e), false)), {
         permissions: null != e.permissions ? (0, p.tk)(ej(e.permissions, o)) : true,
         botId: e.bot_id
       }),
@@ -221,7 +221,7 @@ function ei(e) {
     };
     s[e.id] = t
   }
-  for (let e of ("guild" === i.type && u.size > 0 && c.Z.requestMembersById(i.guildId, [...u]), (0, P.nG)(a.application_commands.map(e => eD(e, o)), true))) {
+  for (let e of ("guild" === i.type && u.size > 0 && c.Z.requestMembersById(i.guildId, [...u]), (0, P.nG)(a.application_commands.map(e => ew(e, o)), true))) {
     let t = s[e.applicationId];
     if (null == t) {
       U.error("Command has no matching application");
@@ -585,17 +585,17 @@ function eS(e, t, n, r) {
     let e = o.filter(e => u.includes(e.id)).sort((e, t) => {
       let n = T.ZP.getScoreWithoutLoadingLatest(c, e);
       return T.ZP.getScoreWithoutLoadingLatest(c, t) - n
-    }).splice(0, D.hz);
+    }).splice(0, w.hz);
     return 0 === e.length ? {
       descriptors: a,
       commands: o,
       sectionedCommands: s,
       loading: l
     } : {
-      descriptors: [S.Tm[D.bi.FRECENCY], ...a],
+      descriptors: [S.Tm[w.bi.FRECENCY], ...a],
       commands: e.concat(o),
       sectionedCommands: [{
-        section: S.Tm[D.bi.FRECENCY],
+        section: S.Tm[w.bi.FRECENCY],
         data: e
       }, ...s],
       loading: l
@@ -655,7 +655,7 @@ function eA(e) {
     installOnDemand: I = false
   } = e, {
     commandTypes: A
-  } = c, N = null == _ ? true : _.toLowerCase(), P = null == N ? true : N.split(" "), R = h === C.D.ONLY_TEXT, w = h !== C.D.DENY ? (0, S.Kh)(A, true, R) : [], x = [], L = {
+  } = c, N = null == _ ? true : _.toLowerCase(), P = null == N ? true : N.split(" "), R = h === C.D.ONLY_TEXT, D = h !== C.D.DENY ? (0, S.Kh)(A, true, R) : [], x = [], L = {
     permissionContext: c,
     query: N,
     splitQuery: P,
@@ -714,8 +714,8 @@ function eA(e) {
         if (n !== r) return r - n
       }
       return eU(e.section.name, t.section.name)
-    }), w.length > 0 || true === y) {
-    let e = eC(S.Tm[D.bi.BUILT_IN], w, true, true, L);
+    }), D.length > 0 || true === y) {
+    let e = eC(S.Tm[w.bi.BUILT_IN], D, true, true, L);
     null != e && x.push(e)
   }
   let B = x.flatMap(e => e.data.map(t => k(j({}, t), {
@@ -767,16 +767,16 @@ function eC(e, t, n, r, i) {
       roleIds: _,
       isImpersonating: m
     } = u,
-    h = (null == f ? true : f.guild_id) != null ? w.ML(e.permissions, f.guild_id, p, _, m) : null,
-    g = (null == f ? true : f.guild_id) != null ? w.ZJ(e.permissions, f, f.guild_id) : null,
+    h = (null == f ? true : f.guild_id) != null ? D.ML(e.permissions, f.guild_id, p, _, m) : null,
+    g = (null == f ? true : f.guild_id) != null ? D.ZJ(e.permissions, f, f.guild_id) : null,
     E = [];
-  for (let i of t) w.Ft(i, u, {
+  for (let i of t) D.Ft(i, u, {
     applicationAllowedForUser: h,
     applicationAllowedForChannel: g,
     commandBotId: e.botId,
     isGuildInstalled: n,
     isUserInstalled: r || d
-  }) === w.mF.ALLOWED && E.push(i);
+  }) === D.mF.ALLOWED && E.push(i);
   return 0 !== (a = c !== C.p.NONE && null != o && null != s ? eM(o, s, E, e, c) : E).length || l ? ((c === C.p.NONE || c === C.p.APPLICATION_ONLY) && a.sort((e, t) => eU(e.displayName, t.displayName)), {
     section: e,
     data: a
@@ -797,7 +797,7 @@ function eR(e) {
   return (null == (t = e.result) ? true : t.version) !== e.serverVersion
 }
 
-function ew(e) {
+function eD(e) {
   return {
     description: e.description,
     icon: e.icon,
@@ -808,7 +808,7 @@ function ew(e) {
   }
 }
 
-function eD(e, t) {
+function ew(e, t) {
   var n, r, i, a, o;
   let s = k(j({}, e), {
     description: null != (i = null != (r = e.description_default) ? r : e.description) ? i : "",
@@ -916,8 +916,8 @@ function eG(e, t) {
 function eZ(e, t) {
   var n, r, i, a, o, s;
   let l, c;
-  if (t === D.bi.BUILT_IN) return {
-    descriptor: S.Tm[D.bi.BUILT_IN],
+  if (t === w.bi.BUILT_IN) return {
+    descriptor: S.Tm[w.bi.BUILT_IN],
     sectionCommands: (0, S.Kh)([u.yU.CHAT], true, false),
     isGuildInstalled: true,
     isUserInstalled: true

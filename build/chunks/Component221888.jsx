@@ -82,7 +82,7 @@ function R(e, t) {
   }
 }
 
-function w(e) {
+function D(e) {
   let {
     users: t,
     disableInteraction: n,
@@ -118,7 +118,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     users: t,
     guildId: n,
@@ -188,7 +188,7 @@ function L(e) {
       })
     }, [U, k]);
   if (0 === M.length) return null;
-  if (h) return (0, r.jsx)(D, {
+  if (h) return (0, r.jsx)(w, {
     maxVisibleUsers: S,
     users: M,
     guildId: a,
@@ -212,7 +212,7 @@ function L(e) {
       onMouseLeave: U,
       children: (0, r.jsx)(f.yRy, {
         targetElementRef: T,
-        renderPopout: () => (0, r.jsx)(w, {
+        renderPopout: () => (0, r.jsx)(D, {
           participantType: s.type,
           handleUserContextMenu: G,
           guildId: a,

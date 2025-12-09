@@ -39,8 +39,8 @@ function R(e) {
     onBack: a,
     onNext: s,
     legalTermsNodeRef: R,
-    flashLegalTerms: w,
-    invoiceError: D,
+    flashLegalTerms: D,
+    invoiceError: w,
     planError: x,
     onPurchaseError: L,
     baseAnalyticsData: j,
@@ -96,14 +96,14 @@ function R(e) {
     eN = eA || eb,
     eP = (0, _.U)(),
     eR = (0, c.e7)([T.Z], () => T.Z.currentOrderId),
-    ew = null,
-    eD = null;
+    eD = null,
+    ew = null;
   if (X === N.GZQ.ONE_TIME) {
     var ex;
-    l()(null != ee, "SKU must be selected for one-time purchases"), ew = null != (ex = et[ee]) ? ex : null, l()(null != ew, "SKU must exist and be fetched.");
+    l()(null != ee, "SKU must be selected for one-time purchases"), eD = null != (ex = et[ee]) ? ex : null, l()(null != eD, "SKU must exist and be fetched.");
     let e = en[ee],
       t = null != J ? J : E.c;
-    eD = null != e ? e[t] : null
+    ew = null != e ? e[t] : null
   }
   let eL = async () => {
     await (0, S.H)({
@@ -128,8 +128,8 @@ function R(e) {
       premiumSubscription: t,
       onNext: s,
       metadata: F,
-      sku: ew,
-      skuPricePreview: eD,
+      sku: eD,
+      skuPricePreview: ew,
       purchaseType: X,
       referralCode: er,
       loadId: ei.loadId,
@@ -164,10 +164,10 @@ function R(e) {
     className: o()(es, P.modalFooter),
     children: [(0, r.jsx)(g.Z, {
       legalTermsNodeRef: R,
-      invoiceError: D,
+      invoiceError: w,
       planError: x,
       disablePurchase: H,
-      flashLegalTerms: w,
+      flashLegalTerms: D,
       isSubmitting: ev,
       premiumSubscription: t,
       isGift: el,

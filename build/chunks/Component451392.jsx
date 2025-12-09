@@ -43,7 +43,7 @@ function E(e) {
     isPreview: true
   }), C = p.ZP.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(b, 80), P = (0, c.dQu)(l.Z.unsafe_rawColors.PRIMARY_530).hex(), R = (0, u.Cf)(N, P, false);
   if (null == T || null == A) return null;
-  let w = e => {
+  let D = e => {
     o(s()(e, null == I ? true : I.themeColors) ? true : e)
   };
   return (0, r.jsx)(m.Z, {
@@ -57,7 +57,7 @@ function E(e) {
       children: [(0, r.jsx)("div", {
         className: g.sparkleContainer,
         children: (0, r.jsx)(_.Z, {
-          onChange: e => w([e, A]),
+          onChange: e => D([e, A]),
           color: T,
           suggestedColors: R,
           showEyeDropper: true,
@@ -72,7 +72,7 @@ function E(e) {
       }), (0, r.jsx)("div", {
         className: g.sparkleContainer,
         children: (0, r.jsx)(_.Z, {
-          onChange: e => w([T, e]),
+          onChange: e => D([T, e]),
           color: A,
           suggestedColors: R,
           showEyeDropper: true,
@@ -91,7 +91,7 @@ function E(e) {
           variant: "secondary",
           size: "sm",
           text: h.intl.string(h.t["L+GmoR"]),
-          onClick: () => w([null, null])
+          onClick: () => D([null, null])
         })
       })]
     })

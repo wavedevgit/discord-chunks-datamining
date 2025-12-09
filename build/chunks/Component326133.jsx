@@ -83,8 +83,8 @@ function P(e, t) {
   return i
 }
 let R = 490,
-  w = 490,
-  D = 245,
+  D = 490,
+  w = 245,
   x = 200,
   L = 120,
   j = Chunk473749.forwardRef(function(e, t) {
@@ -137,7 +137,7 @@ let R = 490,
         [S.minimal]: (null == (I = z.query) ? true : I.type) === b.eq.MENTION_SUGGESTIONS
       },
       ei = R;
-    null != $ && (ei = (null == (j = Z.autocomplete) ? true : j.small) ? x : (null == (M = z.query) ? true : M.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
+    null != $ && (ei = (null == (j = Z.autocomplete) ? true : j.small) ? x : (null == (M = z.query) ? true : M.type) === b.eq.EMOJIS_AND_STICKERS ? D : w);
     let ea = Math.max(B, null != (k = null == V || null == (A = V.current) ? true : A.clientHeight) ? k : 0),
       eo = Math.min(.5 * window.innerHeight, ea);
     ei = Math.min(window.innerHeight - L - eo - (null != H ? H : 0), ei);

@@ -145,14 +145,14 @@ function R(e) {
   for (let [e, t] of Object.entries(y)) t.state === p.F.FAILED && k(e)
 }
 
-function w(e) {
+function D(e) {
   let {
     nonce: t
   } = e;
   M(t)
 }
 
-function D(e) {
+function w(e) {
   let {
     application: t,
     nonce: n
@@ -239,9 +239,9 @@ let G = new U(Chunk570140.Z, {
   INTERACTION_FAILURE: P,
   MESSAGE_CREATE: N,
   CHANNEL_SELECT: R,
-  INTERACTION_IFRAME_MODAL_CREATE: D,
+  INTERACTION_IFRAME_MODAL_CREATE: w,
   INTERACTION_IFRAME_MODAL_CLOSE: x,
   INTERACTION_IFRAME_MODAL_KEY_CREATE: L,
-  INTERACTION_MODAL_CREATE: w,
+  INTERACTION_MODAL_CREATE: D,
   EMBEDDED_ACTIVITY_UPDATE_V2: j
 })

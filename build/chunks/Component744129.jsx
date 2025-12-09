@@ -92,10 +92,10 @@ function B(e) {
     priceOptions: p,
     isApplicationHome: _ = false,
     useShortTitle: g = false
-  } = e, b = (0, s.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), y = (0, s.e7)([m.default], () => m.default.getCurrentUser()), v = (0, O.N)(), S = null == v || null == (t = v.subscription_trial) ? true : t.sku_id, I = (null == b ? true : b.hasActiveTrial) ? null == y ? true : y.premiumType : null, A = (0, C.y_)(I, S), w = null != A, L = (0, c.ap)((0, d.ZP)()), j = (0, E.yc)({
+  } = e, b = (0, s.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), y = (0, s.e7)([m.default], () => m.default.getCurrentUser()), v = (0, O.N)(), S = null == v || null == (t = v.subscription_trial) ? true : t.sku_id, I = (null == b ? true : b.hasActiveTrial) ? null == y ? true : y.premiumType : null, A = (0, C.y_)(I, S), D = null != A, L = (0, c.ap)((0, d.ZP)()), j = (0, E.yc)({
     location: "PremiumBrandRefreshTierCards"
-  }), M = g ? D.intl.string(D.t.tUbSDK) : D.intl.string(D.t["t9uG/o"]), k = (0, r.jsxs)(r.Fragment, {
-    children: [w && (0, r.jsx)(T.E, {
+  }), M = g ? w.intl.string(w.t.tUbSDK) : w.intl.string(w.t["t9uG/o"]), k = (0, r.jsxs)(r.Fragment, {
+    children: [D && (0, r.jsx)(T.E, {
       text: A,
       className: x.pill
     }), (0, r.jsx)(o.X, {
@@ -124,12 +124,12 @@ function B(e) {
   return j ? (0, r.jsx)(u.$1m, {
     color: "nitro-green",
     className: a()(x.card, x.tier0, l, {
-      [x.pillMargin]: !_ && w
+      [x.pillMargin]: !_ && D
     }),
     children: k
   }) : (0, r.jsx)("div", {
     className: a()(x.card, x.tier0, l, {
-      [x.pillMargin]: !_ && w
+      [x.pillMargin]: !_ && D
     }),
     children: k
   })
@@ -148,7 +148,7 @@ function F(e) {
     showPromotionalGiftBanner: v = false,
     wumpusPosition: S = "inCard",
     isApplicationHome: A = false,
-    showWumpus: w = true,
+    showWumpus: D = true,
     showPill: k = true
   } = e, U = (0, s.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()), G = (0, s.e7)([m.default], () => m.default.getCurrentUser()), Z = (0, O.N)(), B = null == Z || null == (t = Z.subscription_trial) ? true : t.sku_id, F = (null == U ? true : U.hasActiveTrial) ? null == G ? true : G.premiumType : null, V = (0, y.N)(), H = (0, g.t7)(), Y = null != B || null != F ? R.C.PREMIUM_TRIAL : null != V || H ? R.C.PREMIUM_DISCOUNT : null, W = (0, c.ap)((0, d.ZP)()), K = (0, C.A1)(H, F, V, Z, B), z = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
@@ -170,14 +170,14 @@ function F(e) {
     className: a()(x.card, f, {
       [x.withGiftBanner]: v
     }),
-    children: [w && (0, r.jsx)(z, {}), k && (0, r.jsx)(T.E, {
-      text: null != K ? K : D.intl.string(D.t["6bEcYr"]),
+    children: [D && (0, r.jsx)(z, {}), k && (0, r.jsx)(T.E, {
+      text: null != K ? K : w.intl.string(w.t["6bEcYr"]),
       className: x.pill
     }), (0, r.jsx)(o.X, {
       variant: "display-md",
       color: W ? "header-primary" : "always-white",
       className: x.cardTitle,
-      children: D.intl.string(D.t.lG6a5x)
+      children: w.intl.string(w.t.lG6a5x)
     }), (0, r.jsx)(P.Z, {
       isGift: p,
       premiumTier: R.PremiumTypes.TIER_2,
@@ -217,9 +217,9 @@ function V(e) {
         variant: "display-md",
         color: l ? "header-primary" : "always-white",
         className: x.cardTitle,
-        children: D.intl.string(w.default.eSKiXk)
+        children: w.intl.string(D.default.eSKiXk)
       }), (0, r.jsx)(T.E, {
-        text: D.intl.string(D.t.oW0eUd),
+        text: w.intl.string(w.t.oW0eUd),
         className: x.betaPill
       })]
     }), (0, r.jsx)(A.Z, {
@@ -227,7 +227,7 @@ function V(e) {
     }), (0, r.jsx)(o.X, {
       variant: "heading-md/semibold",
       color: "text-muted",
-      children: D.intl.string(w.default["R+dzZw"])
+      children: w.intl.string(D.default["R+dzZw"])
     }), (0, r.jsx)("hr", {
       className: x.divider
     }), (0, r.jsx)(N.fm, {
@@ -303,7 +303,7 @@ function Y(e) {
         variant: "display-md",
         color: "header-primary",
         className: x.premiumCardsHeader,
-        children: D.intl.string(D.t.vLz3Zs)
+        children: w.intl.string(w.t.vLz3Zs)
       }), (0, r.jsxs)("div", {
         ref: l,
         className: x.premiumCards,

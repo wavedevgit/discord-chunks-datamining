@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -105,7 +105,7 @@ class R extends(i = Chunk442837.ZP.Store) {
   }
 }
 c(R, "displayName", "ConsumablesStore");
-let w = new R(Chunk570140.Z, {
+let D = new R(Chunk570140.Z, {
   CONSUMABLES_PRICE_FETCH_STARTED: E,
   CONSUMABLES_PRICE_FETCH_SUCCEEDED: b,
   CONSUMABLES_PRICE_FETCH_FAILED: y,

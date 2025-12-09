@@ -6,8 +6,8 @@ require.d(exports, {
   FN: () => v,
   NE: () => d,
   NO: () => f,
-  Ni: () => D,
-  Oq: () => w,
+  Ni: () => w,
+  Oq: () => D,
   RF: () => T,
   Un: () => S,
   X: () => b,
@@ -178,11 +178,11 @@ function R(e) {
   }
 }
 
-function w(e) {
+function D(e) {
   return null == e || null == e.id && null == e.name
 }
-let D = new Set([Chunk981631.ABu.PLAYSTATION_STAGING, Chunk981631.ABu.CONTACTS, Chunk981631.ABu.DOMAIN, Chunk981631.ABu.TWITTER_LEGACY, Chunk981631.ABu.MASTODON, Chunk981631.ABu.INSTAGRAM, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.SKYPE]),
-  x = Object.values(Chunk981631.ABu).filter(e => !D.has(e));
+let w = new Set([Chunk981631.ABu.PLAYSTATION_STAGING, Chunk981631.ABu.CONTACTS, Chunk981631.ABu.DOMAIN, Chunk981631.ABu.TWITTER_LEGACY, Chunk981631.ABu.MASTODON, Chunk981631.ABu.INSTAGRAM, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.SKYPE]),
+  x = Object.values(Chunk981631.ABu).filter(e => !w.has(e));
 
 function L(e) {
   return 0 === e.connection_type ? "app:".concat(e.application_id) : "provider:".concat(e.provider_id)

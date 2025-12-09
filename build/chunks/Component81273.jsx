@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk293810 = require("./293810.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let D = "MMM DD, YYYY",
+let w = "MMM DD, YYYY",
   x = (e, t, n, a) => {
     let s, x = (0, c.e7)([E.Z], () => E.Z.isLurking(t)),
       L = (0, g.J)(t),
@@ -65,9 +65,9 @@ let D = "MMM DD, YYYY",
       } = (0, p.ZP)(),
       $ = (null == F ? true : F.paymentGateway) === R.gg$.APPLE_PARTNER,
       ee = !x && null != B && H && !M && !K && !z && !$;
-    M || x && !L ? s = w.intl.string(w.t.pQK5ho) : W === U ? s = w.intl.formatToPlainString(w.t.UlBRTl, {
-      changeDate: null != F ? l()(F.currentPeriodEnd).format(D) : ""
-    }) : K ? s = w.intl.string(w.t.ePFYOS) : z ? s = w.intl.string(w.t["0lPoT2"]) : $ && (s = w.intl.string(w.t.cEMaCt));
+    M || x && !L ? s = D.intl.string(D.t.pQK5ho) : W === U ? s = D.intl.formatToPlainString(D.t.UlBRTl, {
+      changeDate: null != F ? l()(F.currentPeriodEnd).format(w) : ""
+    }) : K ? s = D.intl.string(D.t.ePFYOS) : z ? s = D.intl.string(D.t["0lPoT2"]) : $ && (s = D.intl.string(D.t.cEMaCt));
     let et = (0, f.Z)(P.iP);
     i.useEffect(() => {
       G && null != Z && u.Z.wait(() => {
@@ -81,13 +81,13 @@ let D = "MMM DD, YYYY",
           if ((null == r ? true : r.is_eligible) === true) {
             var s;
             n = null == X || null == (s = X.active_trial) ? true : s.id
-          } else i = w.intl.string(w.t.vuvsK5)
+          } else i = D.intl.string(D.t.vuvsK5)
         }(0, b.Z)({
           activeSubscription: F,
           analyticsSubscriptionType: R.NYc.GUILD,
           trialId: n,
-          trialFooterMessageOverride: (null == X ? true : X.active_trial) != null ? w.intl.format(w.t.zyGyNk, {
-            buttonText: w.intl.string(w.t.BEeXib),
+          trialFooterMessageOverride: (null == X ? true : X.active_trial) != null ? D.intl.format(D.t.zyGyNk, {
+            buttonText: D.intl.string(D.t.BEeXib),
             interval: (0, v.iG)(k),
             days: 1,
             contactLink: R.EYA.CONTACT,

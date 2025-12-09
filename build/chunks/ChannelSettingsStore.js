@@ -61,8 +61,8 @@ let C = Chunk981631.QZA.CLOSED,
   N = {},
   P = {},
   R = false,
-  w = false,
-  D = null,
+  D = false,
+  w = null,
   x = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
 
 function L(e) {
@@ -82,7 +82,7 @@ function L(e) {
 function j(e) {
   let t = O.Z.getChannel(e.channelId);
   if (null == t) return k();
-  C = v.QZA.OPEN, o = a = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != o && (o = o.set("nsfw", o.isNSFW())), s = O.Z.getChannel(o.parent_id), l = o.getGuildId();
+  C = v.QZA.OPEN, o = a = t, w = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != o && (o = o.set("nsfw", o.isNSFW())), s = O.Z.getChannel(o.parent_id), l = o.getGuildId();
   let n = o.isModeratorReportChannel() ? v.CoT.PERMISSIONS : v.CoT.OVERVIEW;
   return N = {}, M({
     type: "CHANNEL_SETTINGS_SET_SECTION",
@@ -105,7 +105,7 @@ function M(e) {
 }
 
 function k() {
-  w = false, C = Chunk981631.QZA.CLOSED, r = null, o = a = null, s = null, P = {}
+  D = false, C = Chunk981631.QZA.CLOSED, r = null, o = a = null, s = null, P = {}
 }
 
 function U() {
@@ -243,7 +243,7 @@ class J extends(c = Chunk442837.ZP.Store) {
     return o !== a
   }
   isOpen() {
-    return w
+    return D
   }
   getSection() {
     return r
@@ -276,7 +276,7 @@ class J extends(c = Chunk442837.ZP.Store) {
       invites: P,
       selectedOverwriteId: l,
       hasChanges: this.hasChanges(),
-      analyticsLocation: D
+      analyticsLocation: w
     }
   }
 }

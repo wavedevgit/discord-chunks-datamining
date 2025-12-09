@@ -37,7 +37,7 @@ function O(e) {
     g(1);
     try {
       await c.Z.sendActivityInvite({
-        type: C.mFx.STREAM_REQUEST,
+        type: y.mFx.STREAM_REQUEST,
         channelId: l.id,
         activity: n,
         content: "<@".concat(a, ">"),
@@ -50,7 +50,7 @@ function O(e) {
     }
     g(2)
   }
-  if (b && (t = v.intl.string(y.default.qRXats)), n.type === C.IIU.PLAYING) {
+  if (b && (t = v.intl.string(C.default.qRXats)), n.type === y.IIU.PLAYING) {
     let e = null == u ? true : u.getIconURL(46);
     return (0, i.jsxs)("div", {
       className: _.activityRow,
@@ -79,7 +79,7 @@ function O(e) {
         disabled: b || 2 === m,
         fullWidth: true,
         size: "sm",
-        text: 2 === m ? v.intl.string(y.default["8HU1M2"]) : v.intl.string(y.default.DKHhec),
+        text: 2 === m ? v.intl.string(C.default["8HU1M2"]) : v.intl.string(C.default.DKHhec),
         onClick: O
       }), null != t && (0, i.jsx)(s.Text, {
         className: _.disabledReason,
@@ -100,14 +100,14 @@ function x(e) {
     let n = h.Z.getGameByName(e.name),
       i = h.Z.getGameByName(t.name);
     return null != n && n === i || e.name === t.name
-  }), [c]), C = null == s || !d || 0 === f.length;
+  }), [c]), y = null == s || !d || 0 === f.length;
   return ((0, u.Z)({
     type: a.ImpressionTypes.POPOUT,
     name: a.ImpressionNames.VOICE_USER_ACTIVITY_POPOUT,
     properties: {}
   }, {
-    disableTrack: C
-  }), C) ? null : (0, i.jsx)(p.Z.Provider, {
+    disableTrack: y
+  }), y) ? null : (0, i.jsx)(p.Z.Provider, {
     value: n.guild_id,
     children: (0, i.jsx)("div", {
       className: _.root,

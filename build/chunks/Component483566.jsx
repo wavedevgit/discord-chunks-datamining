@@ -116,8 +116,8 @@ function g(e) {
     labelId: N,
     controlId: P,
     errorMessageId: R,
-    describedById: w,
-    helperTextId: D,
+    describedById: D,
+    helperTextId: w,
     descriptionId: x
   } = C, L = null == y ? true : y.horizontalControlColumnWidth, j = "group" === g || "radiogroup" === g, M = j ? "span" : "label", k = j ? "fieldset" : "div", U = j ? (0, r.jsx)("legend", {
     id: N,
@@ -154,7 +154,7 @@ function g(e) {
     errorMessage: _,
     helperText: c,
     trailing: T,
-    helperTextId: D,
+    helperTextId: w,
     errorMessageId: R
   });
   return (0, r.jsx)(d.z.Provider, {
@@ -168,7 +168,7 @@ function g(e) {
         "--custom-field-horizontal-control-width": L
       } : true,
       "data-disabled": a,
-      "aria-describedby": j ? w : true,
+      "aria-describedby": j ? D : true,
       disabled: j ? a : true,
       children: [U, G && n ? (0, r.jsx)(s.n, {
         children: B

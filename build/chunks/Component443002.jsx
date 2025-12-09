@@ -34,7 +34,7 @@ let N = function(e) {
     analyticsLocation: t,
     guild: n,
     onClose: N
-  } = e, [P, R] = i.useState(true), w = i.useRef(false), D = (0, c.Z)(() => Date.now()), {
+  } = e, [P, R] = i.useState(true), D = i.useRef(false), w = (0, c.Z)(() => Date.now()), {
     analyticsLocations: x
   } = (0, u.ZP)(), L = i.useRef(null), j = i.useRef(null), M = i.useRef(null), k = i.useCallback(() => {
     null != M.current && null != j.current && j.current.scrollTo({
@@ -48,16 +48,16 @@ let N = function(e) {
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id,
-      duration_open_ms: Date.now() - D
+      duration_open_ms: Date.now() - w
     })
-  }, [N, t, x, D, n.id]), G = i.useCallback(e => {
-    e && !w.current && (h.default.track(T.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+  }, [N, t, x, w, n.id]), G = i.useCallback(e => {
+    e && !D.current && (h.default.track(T.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
       type: T.ZY5.PREMIUM_GUILD_USER_MODAL,
       location_stack: x,
       location_section: t.section,
       location_object: t.object,
       guild_id: n.id
-    }), w.current = true)
+    }), D.current = true)
   }, [t, x, n.id]);
   i.useEffect(() => {
     h.default.track(T.rMx.OPEN_MODAL, {

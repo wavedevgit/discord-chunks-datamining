@@ -102,14 +102,14 @@ function R() {
   return I(), true
 }
 
-function w(e) {
+function D(e) {
   let {
     lastAssociatedPID: t
   } = e;
   return null != t && O(true, t), true
 }
 
-function D() {
+function w() {
   I(), null == h || h.setInteractionEnabled(false)
 }
 class x extends(r = Chunk442837.ZP.Store) {
@@ -129,8 +129,8 @@ let L = new x(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {
     OVERLAY_SET_INPUT_LOCKED: C,
     OVERLAY_ACTIVATE_REGION: N,
     OVERLAY_DEACTIVATE_ALL_REGIONS: P,
-    OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: D,
+    OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: w,
     OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: R,
-    OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: w
+    OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: D
   }),
   j = L

@@ -174,10 +174,10 @@ let R = g(m({}, l().defaultRules.link), {
       y = _.fullySanitized,
       R = E.trim();
     if (0 === h.trim().length || 0 === R.length) return u();
-    let w = P(l().unescapeUrl(o)),
-      D = null == w,
+    let D = P(l().unescapeUrl(o)),
+      w = null == D,
       x = (0, c.ZP)(a).length > 0 || (0, c.ZP)(s).length > 0;
-    if (D || x) return u();
+    if (w || x) return u();
     let L = g(m({}, n), {
         allowEscape: false,
         parseInlineCodeChildContent: true
@@ -193,7 +193,7 @@ let R = g(m({}, l().defaultRules.link), {
       F = _.whitespaceSanitized,
       {
         target: V
-      } = w;
+      } = D;
     return {
       content: B,
       target: V,

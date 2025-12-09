@@ -104,11 +104,11 @@ if (!__OVERLAY__) {
   window.addEventListener("mouseup", module), window.addEventListener("wheel", module), window.addEventListener("keypress", module)
 }
 
-function w(e) {
+function D(e) {
   y = e.idle
 }
 
-function D(e) {
+function w(e) {
   O = e.afk
 }
 
@@ -166,8 +166,8 @@ class k extends(i = Chunk442837.ZP.Store) {
 }
 E(k, "displayName", "IdleStore");
 let U = new k(Chunk570140.Z, {
-  IDLE: w,
-  AFK: D,
+  IDLE: D,
+  AFK: w,
   SPEAKING: x,
   APP_STATE_UPDATE: L,
   OVERLAY_SET_NOT_IDLE: j,

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ji: () => x,
-  O_: () => w,
+  O_: () => D,
   qA: () => c,
   uR: () => L
 });
@@ -533,7 +533,7 @@ function R() {
     }
   }, [require])
 }
-var w = Chunk473749.forwardRef(function(e, t) {
+var D = Chunk473749.forwardRef(function(e, t) {
     var o = e.className,
       s = e.environment,
       l = e.onClick,
@@ -564,8 +564,8 @@ var w = Chunk473749.forwardRef(function(e, t) {
       A = r.useRef(new Map),
       C = r.useRef(null),
       N = r.useRef(0),
-      w = r.useRef(0),
-      D = r.useCallback(function() {
+      D = r.useRef(0),
+      w = r.useCallback(function() {
         var e = y.current;
         if (null != e) {
           var t = e.getContext("2d");
@@ -574,21 +574,21 @@ var w = Chunk473749.forwardRef(function(e, t) {
               var i = n.confetti,
                 a = n.spriteCanvas;
               i.update(s), i.draw(a, t), i.shouldDestroy(e, s) && A.current.delete(r)
-            }), null == _ || _(t), A.current.size > 0 ? C.current = h(D) : (t.clearRect(0, 0, e.width, e.height), C.current = null);
+            }), null == _ || _(t), A.current.size > 0 ? C.current = h(w) : (t.clearRect(0, 0, e.width, e.height), C.current = null);
             var n = Date.now();
-            0 !== N.current && (w.current = 1e3 / (n - N.current)), N.current = n
+            0 !== N.current && (D.current = 1e3 / (n - N.current)), N.current = n
           }
         }
       }, [s, _, p, h]);
     r.useEffect(function() {
-      null != C.current && (E(C.current), C.current = h(D))
-    }, [E, D, h]);
+      null != C.current && (E(C.current), C.current = h(w))
+    }, [E, w, h]);
     var x = r.useCallback(function(e, t) {
         A.current.set(e.id, {
           confetti: e,
           spriteCanvas: t
-        }), null == C.current && D()
-      }, [D]),
+        }), null == C.current && w()
+      }, [w]),
       L = r.useCallback(function(e, t, n, r, a) {
         var o, s = P(null != (o = e.id) ? o : (0, i.Z)(), e, n, r, a);
         return x(s, t), s
@@ -636,7 +636,7 @@ var w = Chunk473749.forwardRef(function(e, t) {
               })) {
               if (null != o) return o(e);
               if (null != i) {
-                var u = false / w.current * 2,
+                var u = false / D.current * 2,
                   d = function(e, t) {
                     for (var n = 0, r = Array.from(e.values()); n < r.length; n++) {
                       var i = r[n];
@@ -708,7 +708,7 @@ var w = Chunk473749.forwardRef(function(e, t) {
       ref: y
     }))
   }),
-  D = {
+  w = {
     display: "none",
     position: "absolute",
     width: 0,
@@ -822,7 +822,7 @@ var w = Chunk473749.forwardRef(function(e, t) {
     }, [s.length, c, l, o.length]), r.createElement("canvas", {
       ref: u,
       className: n,
-      style: a ? true : D
+      style: a ? true : w
     })
   });
 

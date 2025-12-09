@@ -58,11 +58,11 @@ e = require.nmd(module),
       return e - 48 < 10 ? e - 22 : e - 65 < 26 ? e - 65 : e - 97 < 26 ? e - 97 : u
     }
 
-    function w(e, t) {
+    function D(e, t) {
       return e + 22 + 75 * (e < 26) - ((0 != t) << 5)
     }
 
-    function D(e, t, n) {
+    function w(e, t, n) {
       var r = 0;
       for (e = n ? S(e / _) : e >> 1, e += S(e / t); e > v * f >> 1; r += u) e = S(e / v);
       return S(r + (v + 1) * e / (e + p))
@@ -77,7 +77,7 @@ e = require.nmd(module),
       for ((n = e.lastIndexOf(g)) < 0 && (n = 0), r = 0; r < n; ++r) e.charCodeAt(r) >= 128 && T("not-basic"), E.push(e.charCodeAt(r));
       for (i = n > 0 ? n + 1 : 0; i < b;) {
         for (a = y, o = 1, s = u; i >= b && T("invalid-input"), ((l = R(e.charCodeAt(i++))) >= u || l > S((c - y) / o)) && T("overflow"), y += l * o, !(l < (p = s <= v ? d : s >= v + f ? f : s - v)); s += u) o > S(c / (_ = u - p)) && T("overflow"), o *= _;
-        v = D(y - a, t = E.length + 1, 0 == a), S(y / t) > c - O && T("overflow"), O += S(y / t), y %= t, E.splice(y++, 0, O)
+        v = w(y - a, t = E.length + 1, 0 == a), S(y / t) > c - O && T("overflow"), O += S(y / t), y %= t, E.splice(y++, 0, O)
       }
       return P(E)
     }
@@ -89,8 +89,8 @@ e = require.nmd(module),
         for (s = c, o = 0; o < b; ++o)(E = e[o]) >= t && E < s && (s = E);
         for (s - t > S((c - n) / (y = r + 1)) && T("overflow"), n += (s - t) * y, t = s, o = 0; o < b; ++o)
           if ((E = e[o]) < t && ++n > c && T("overflow"), E == t) {
-            for (l = n, p = u; !(l < (_ = p <= a ? d : p >= a + f ? f : p - a)); p += u) v = l - _, O = u - _, A.push(I(w(_ + v % O, 0))), l = S(v / O);
-            A.push(I(w(l, 0))), a = D(n, y, r == i), n = 0, ++r
+            for (l = n, p = u; !(l < (_ = p <= a ? d : p >= a + f ? f : p - a)); p += u) v = l - _, O = u - _, A.push(I(D(_ + v % O, 0))), l = S(v / O);
+            A.push(I(D(l, 0))), a = w(n, y, r == i), n = 0, ++r
           }++ n, ++t
       }
       return A.join("")

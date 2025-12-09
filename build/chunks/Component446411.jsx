@@ -126,7 +126,7 @@ function et(e) {
     onControlsHide: C,
     onControlsShow: P,
     onVolumeChange: R,
-    onMute: D,
+    onMute: w,
     href: x,
     placeholder: j,
     placeholderVersion: M,
@@ -142,7 +142,7 @@ function et(e) {
     height: W
   } = u;
   null != d && (Y = d.width, W = d.height);
-  let K = (0, w.Tj)({
+  let K = (0, D.Tj)({
     width: Y,
     height: W,
     maxWidth: l,
@@ -170,7 +170,7 @@ function et(e) {
       volume: v,
       onPlay: S,
       onPause: I,
-      onMute: D,
+      onMute: w,
       onControlsHide: C,
       onControlsShow: P,
       sourceMetadata: U
@@ -884,7 +884,7 @@ class er extends(r = Chunk473749.PureComponent) {
     if (null == l) return;
     let {
       width: c
-    } = (0, w.Tj)({
+    } = (0, D.Tj)({
       width: l.width,
       height: l.height,
       maxWidth: o,
@@ -896,7 +896,7 @@ class er extends(r = Chunk473749.PureComponent) {
       var u, d, f, p;
       let {
         width: e
-      } = (0, w.Tj)({
+      } = (0, D.Tj)({
         width: null != (d = null != (u = null == r ? true : r.width) ? u : null == a ? true : a.width) ? d : 0,
         height: null != (p = null != (f = null == r ? true : r.height) ? f : null == a ? true : a.height) ? p : 0,
         maxWidth: o,
@@ -973,7 +973,7 @@ class er extends(r = Chunk473749.PureComponent) {
           minHeight: r
         } = null != (t = this.getMinSize()) ? t : {}, {
           width: i
-        } = (0, w.Tj)({
+        } = (0, D.Tj)({
           width: e.width,
           height: e.height,
           maxWidth: l,
@@ -985,7 +985,7 @@ class er extends(r = Chunk473749.PureComponent) {
       }
     }
     let f = J / (c.Z.fontScale / 100),
-      p = (null != s ? (0, D.TZ)(s) : 0) >= f,
+      p = (null != s ? (0, w.TZ)(s) : 0) >= f,
       _ = (null != (n = null == s ? true : s.split("\n").length) ? n : 0) >= X,
       m = p || _;
     return {

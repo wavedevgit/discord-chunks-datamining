@@ -137,8 +137,8 @@ let eC = eL(null),
   eN = 20,
   eP = 16,
   eR = 1,
-  ew = 25,
-  eD = [0, 5, 10, 15, 20, 25];
+  eD = 25,
+  ew = [0, 5, 10, 15, 20, 25];
 
 function ex() {
   let e = eL(eC);
@@ -457,7 +457,7 @@ function eG(e) {
       children: [null != (a = null != (n = null != (t = null == s ? true : s.name) ? t : null == _ ? true : _.name) ? n : null == o ? true : o.gameName) ? a : "", null != _ && _.verified ? (0, r.jsx)(h.aML, {
         "data-migration-pending": true,
         text: eg.intl.string(eg.t["4PJP5p"]),
-        children: e => (0, r.jsx)(D.Z, eI(ev({
+        children: e => (0, r.jsx)(w.Z, eI(ev({
           size: eP,
           color: h.TVs.colors.BG_BRAND.css
         }, e), {
@@ -484,10 +484,10 @@ function eG(e) {
         children: eg.intl.string(eg.t.CDOx3w)
       })]
     }),
-    icon: (0, r.jsx)(w.Z, {
+    icon: (0, r.jsx)(D.Z, {
       game: s,
       pid: null == o ? true : o.pid,
-      size: w.A.MEDIUM
+      size: D.A.MEDIUM
     }),
     "aria-label": eg.intl.string(eg.t["87O5GC"]),
     action: (0, r.jsx)(h.P3F, {
@@ -545,10 +545,10 @@ function eZ(e) {
     game: t,
     gameApplication: n
   } = e, a = i.useMemo(() => null == t ? null : "pid" in t ? t.pid : null, [t]), o = (0, p.e7)([T.Z], () => null != n ? n : T.Z.getApplication(null == t ? true : t.id), [n, t]);
-  return (0, r.jsx)(w.Z, {
+  return (0, r.jsx)(D.Z, {
     game: o,
     pid: a,
-    size: w.A.SMALL
+    size: D.A.SMALL
   })
 }
 
@@ -1026,9 +1026,9 @@ function eX() {
         initialValue: Chunk392711,
         onValueRender: e => e < eR ? eg.intl.string(eg.t.nrUzFL) : "".concat(Math.floor(e)),
         minValue: eR - 1,
-        maxValue: ew,
+        maxValue: eD,
         onValueChange: Chunk224706,
-        markers: eD,
+        markers: ew,
         barStyles: {
           background: Chunk481060.TVs.colors.BACKGROUND_MOD_STRONG.css
         },

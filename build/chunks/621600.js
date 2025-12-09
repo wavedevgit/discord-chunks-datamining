@@ -162,14 +162,14 @@ function S(e) {
       channel_message_notification_settings: a,
       channel_muted_until: v(r.mute_config)
     }
-  }, N = C(S), P = C(A(m, g), y), R = O(N, P, "RETURN_PREVIOUS_WHEN_CHANGED"), w = o.Z.getChannel(g), D = null != (n = R("channel_flags")) ? n : 0, x = (null != (l = P.channel_flags) ? l : 0) ^ D, L = 0 === (0, r.M1)(x, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), j = null != (d = null == (t = s.Z.getLastMessage(g)) ? true : t.type) ? d : null;
+  }, N = C(S), P = C(A(m, g), y), R = O(N, P, "RETURN_PREVIOUS_WHEN_CHANGED"), D = o.Z.getChannel(g), w = null != (n = R("channel_flags")) ? n : 0, x = (null != (l = P.channel_flags) ? l : 0) ^ w, L = 0 === (0, r.M1)(x, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), j = null != (d = null == (t = s.Z.getLastMessage(g)) ? true : t.type) ? d : null;
   i.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, h(_({}, P, a.Z.getStats(m)), {
     location: T,
     guild_id: m,
     channel_id: g,
     update_type: p,
     label: I,
-    parent_id: null != w ? w.parent_id : null,
+    parent_id: null != D ? D.parent_id : null,
     channel_flags_old: R("channel_flags"),
     channel_is_muted_old: R("channel_is_muted"),
     channel_muted_until_old: R("channel_muted_until"),

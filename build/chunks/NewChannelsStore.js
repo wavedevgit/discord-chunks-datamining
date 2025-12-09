@@ -106,15 +106,15 @@ function R(e) {
   })), v[e] = Date.now())
 }
 
-function w() {
+function D() {
   Chunk709054.default.keys(O).forEach(e => {
     let t = O[e];
     O[e] = new Set([...t].filter(t => !m.ZP.isChannelOrParentOptedIn(e, t)))
   })
 }
-class D extends(r = Chunk442837.ZP.Store) {
+class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk984933.ZP, Chunk271383.ZP, Chunk430824.Z, Chunk306680.ZP, Chunk9156.ZP, Chunk581883.Z), this.syncWith([Chunk9156.ZP], w)
+    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk984933.ZP, Chunk271383.ZP, Chunk430824.Z, Chunk306680.ZP, Chunk9156.ZP, Chunk581883.Z), this.syncWith([Chunk9156.ZP], D)
   }
   getNewChannelIds(e) {
     var t;
@@ -127,8 +127,8 @@ class D extends(r = Chunk442837.ZP.Store) {
     return null != r && !!r.features.has(E.GuildFeatures.COMMUNITY) && (null != e && null == O[e] && R(e), (null == (n = O[e]) ? true : n.has(t)) && null == _.ZP.getTrackedAckMessageId(t))
   }
 }
-b(D, "displayName", "NewChannelsStore");
-let x = new D(Chunk570140.Z, {
+b(w, "displayName", "NewChannelsStore");
+let x = new w(Chunk570140.Z, {
   BULK_CLEAR_RECENTS: T,
   CHANNEL_ACK: () => true,
   CHANNEL_SELECT: A,

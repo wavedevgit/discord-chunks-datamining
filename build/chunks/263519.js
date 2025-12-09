@@ -33,7 +33,7 @@ function y(e) {
   } = e, I = (0, o.e7)([_.Z], () => null != O ? _.Z.get(O) : true, [O]), T = (0, o.e7)([m.Z], () => null != O ? m.Z.getForSKU(O) : true, [O]), A = null == (t = (0, o.Wu)([p.Z], () => null != O ? p.Z.getForSKU(O) : [], [O])[0]) ? true : t.id, C = (0, o.e7)([_.Z], () => null != O ? _.Z.getParentSKU(O) : true, [O]), N = null == C ? true : C.bundledSkuIds, P = (0, o.Wu)([p.Z], () => {
     var e;
     return null != (e = null == N ? true : N.flatMap(p.Z.getForSKU)) ? e : []
-  }, [N]), R = r.useMemo(() => P.map(e => e.id), [P]), w = (0, E.KK)(null != (n = null == I ? true : I.flags) ? n : 0), D = (0, o.e7)([g.Z], () => null != i && false !== w && g.Z.getEntitlementsForGuild(i, true).some(e => e.skuId === O), [w, O, i]), x = null == I ? true : I.applicationId, L = (null == T ? true : T.published) === true && (null == I ? true : I.isAvailable()) === true, {
+  }, [N]), R = r.useMemo(() => P.map(e => e.id), [P]), D = (0, E.KK)(null != (n = null == I ? true : I.flags) ? n : 0), w = (0, o.e7)([g.Z], () => null != i && false !== D && g.Z.getEntitlementsForGuild(i, true).some(e => e.skuId === O), [D, O, i]), x = null == I ? true : I.applicationId, L = (null == T ? true : T.published) === true && (null == I ? true : I.isAvailable()) === true, {
     app: j
   } = (0, d.Rt)(x), {
     analyticsLocations: M
@@ -48,12 +48,12 @@ function y(e) {
     Y = r.useMemo(() => {
       if (!F || null == j || null == O) return u.rf.LOADING;
       if (!L) return u.rf.UNAVAILABLE;
-      if (!w) {
+      if (!D) {
         if ((null == G ? true : G.skuId) === O) return u.rf.SUBSCRIBED;
         if ((null == B ? true : B.skuId) === O && false === H) return u.rf.UPCOMING_PLAN
       }
       return u.rf.AVAILABLE
-    }, [null == G ? true : G.skuId, L, j, F, H, w, null == B ? true : B.skuId, O]);
+    }, [null == G ? true : G.skuId, L, j, F, H, D, null == B ? true : B.skuId, O]);
   return r.useEffect(() => {
     L && null != O && V && (p.Z.isFetchingForSKU(O) || p.Z.isLoadedForSKU(O) || s.Z.wait(() => {
       (0, l.GZ)(O)
@@ -73,6 +73,6 @@ function y(e) {
       })
     }, [j, O, L, A, I, R, i, S, M, y, v]),
     subscriptionPurchaseButtonState: Y,
-    isGuildSubscribed: D
+    isGuildSubscribed: w
   }
 }

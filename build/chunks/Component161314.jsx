@@ -61,7 +61,7 @@ function N(e) {
     listingsLoaded: P
   } = (0, m.eD)(n), R = (0, m.ue)(n, {
     publishedOnly: true
-  }), w = i.useCallback(async () => {
+  }), D = i.useCallback(async () => {
     b.default.track(S.rMx.GUILD_SHOP_EMBED_CLICKED, C({}, (0, f.hH)(n))), await (0, h.Z)(S.Z5c.SERVER_SHOP(n))
   }, [n]);
   (0, p.Z)({
@@ -70,7 +70,7 @@ function N(e) {
   }, {
     disableTrack: null == a
   });
-  let D = R.length > 0 ? new Date(Math.min(...R.map(e => Date.parse(e.published_at)))) : true;
+  let w = R.length > 0 ? new Date(Math.min(...R.map(e => Date.parse(e.published_at)))) : true;
   return A || !P ? (0, r.jsx)("div", {
     className: o()(T.guildShopEmbed, T.spinnerContainer),
     children: (0, r.jsx)(d.$jN, {})
@@ -125,19 +125,19 @@ function N(e) {
               listingCount: R.length
             })
           })
-        }), null != D && (0, r.jsx)("li", {
+        }), null != w && (0, r.jsx)("li", {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             children: I.intl.format(I.t["kXr8+b"], {
-              createdYear: D.getFullYear()
+              createdYear: w.getFullYear()
             })
           })
         })]
       }), (0, r.jsx)("div", {
         className: T.guildShopEmbedCta,
         children: (0, r.jsx)(u.zxk, {
-          onClick: w,
+          onClick: D,
           icon: v.P,
           text: I.intl.string(I.t.jXx1CC)
         })

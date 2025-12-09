@@ -53,7 +53,7 @@ let S = (0, Chunk313201.hQ)(),
         guildIcon: a.icon,
         guildIconSize: 32
       })
-    }, [A]), w = i.useCallback(e => {
+    }, [A]), D = i.useCallback(e => {
       var t;
       if (null == e) return null;
       let n = A.get(e.value);
@@ -64,7 +64,7 @@ let S = (0, Chunk313201.hQ)(),
         iconSize: 32,
         animate: false
       })
-    }, [A]), D = i.useCallback(e => {
+    }, [A]), w = i.useCallback(e => {
       var t, n, i;
       if (null == e) return null;
       let a = A.get(e.value);
@@ -106,8 +106,8 @@ let S = (0, Chunk313201.hQ)(),
         isSelected: j,
         options: P,
         select: L,
-        renderLeading: w,
-        renderTrailing: D,
+        renderLeading: D,
+        renderTrailing: w,
         renderOptionValue: x,
         serialize: M,
         clear: k,

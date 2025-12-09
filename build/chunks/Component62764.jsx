@@ -96,7 +96,7 @@ function B(e) {
     isLurking: Q,
     isGuest: $,
     isPendingMember: ee
-  } = (0, C.Z)(q), et = (0, j.nw)(q), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
+  } = (0, y.Z)(q), et = (0, j.nw)(q), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -175,7 +175,7 @@ function B(e) {
           useChatFontScaling: false,
           isForumToolbar: true,
           forceHideReactionCreates: true
-        }), !J && (0, i.jsx)(y.X, {
+        }), !J && (0, i.jsx)(C.X, {
           message: K,
           channel: q,
           useChatFontScaling: false,

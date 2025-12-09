@@ -22,12 +22,12 @@ function g(e) {
   var t, g;
   let {
     channel: b,
-    children: C
-  } = e, y = (0, r.e7)([c.Z], () => c.Z.isBlocked(b.getRecipientId()));
+    children: y
+  } = e, C = (0, r.e7)([c.Z], () => c.Z.isBlocked(b.getRecipientId()));
   (0, o.Z)(b.id);
   let v = (0, s.Z)(b.id),
     _ = b.isSystemDM(),
-    O = y && !_ && !b.isMultiUserDM(),
+    O = C && !_ && !b.isMultiUserDM(),
     x = {};
   if (_) {
     let e = v ? m.intl.string(m.t["+KSnWX"]) : m.intl.string(m.t.hvVgAZ);
@@ -62,7 +62,7 @@ function g(e) {
     }
     return e
   }({}, x), g = g = {
-    children: C
+    children: y
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

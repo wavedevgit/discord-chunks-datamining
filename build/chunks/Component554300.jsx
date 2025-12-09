@@ -91,14 +91,14 @@ let E = function(e) {
       highlighted: P,
       focusProps: R
     } = e,
-    w = h(e, ["ref", "avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
-  w.className = o()(w.className, d.container, {
+    D = h(e, ["ref", "avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
+  D.className = o()(D.className, d.container, {
     [d.selected]: v,
     [d.highlighted]: P,
     [null != A ? A : ""]: v,
     [d.clickable]: !v && (null != I || null != y)
-  }), w["aria-selected"] = null != (t = w["aria-selected"]) ? t : v;
-  let D = i.useRef(null),
+  }), D["aria-selected"] = null != (t = D["aria-selected"]) ? t : v;
+  let w = i.useRef(null),
     x = (0, r.jsxs)("div", {
       className: o()(d.childContainer, {
         [d.nameplated]: null != _
@@ -107,10 +107,10 @@ let E = function(e) {
         nameplate: _,
         hovered: O,
         selected: v,
-        content: D,
+        content: w,
         placement: c.i.MEMBER_LIST
       }), (0, r.jsxs)("div", {
-        ref: D,
+        ref: w,
         className: o()(C, d.layout, {
           [d.muted]: !v && S,
           [d.wrappedLayout]: N
@@ -142,7 +142,7 @@ let E = function(e) {
     children: (0, r.jsx)(s.rU, m(p({
       to: I,
       onClick: y
-    }, w), {
+    }, D), {
       role: "listitem",
       ref: n,
       children: x
@@ -150,12 +150,12 @@ let E = function(e) {
   })) : null != y ? (0, r.jsx)(l.P3F, m(p({
     onClick: y,
     focusProps: R
-  }, w), {
+  }, D), {
     role: "listitem",
     innerRef: n,
     children: x
   })) : (0, r.jsx)(l.tEY, m(p({}, R), {
-    children: (0, r.jsx)("div", m(p({}, w), {
+    children: (0, r.jsx)("div", m(p({}, D), {
       role: "listitem",
       ref: n,
       children: x

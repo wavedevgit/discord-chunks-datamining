@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => x,
-  u: () => w
+  u: () => D
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -69,7 +69,7 @@ function N(e, t) {
 let P = Chunk185923.Hz.CHAT,
   R = [Chunk633302.ZP.getByName("thumbsup"), Chunk633302.ZP.getByName("eyes"), Chunk633302.ZP.getByName("laughing"), Chunk633302.ZP.getByName("watermelon"), Chunk633302.ZP.getByName("fork_and_knife"), Chunk633302.ZP.getByName("yum")].filter(Chunk823379.lm);
 
-function w(e) {
+function D(e) {
   let {
     emoji: t,
     isDisabled: n = false,
@@ -114,7 +114,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     otherAccessories: t,
     isEmojiPickerExpanded: n,
@@ -199,7 +199,7 @@ function x(e) {
         wrapper: "div",
         pickerIntention: P,
         searchProps: N(A({}, g), {
-          accessory: (0, r.jsx)(D, {
+          accessory: (0, r.jsx)(w, {
             otherAccessories: null == g ? true : g.accessory,
             isEmojiPickerExpanded: L,
             onSetExpanded: U,
@@ -223,7 +223,7 @@ function x(e) {
                 text: e.name,
                 position: "top",
                 asContainer: true,
-                children: (0, r.jsx)(w, {
+                children: (0, r.jsx)(D, {
                   emoji: e,
                   isDisabled: n,
                   onClick: () => {

@@ -44,27 +44,27 @@ function h(e) {
     N = null == t ? true : t.emoji,
     P = null != C ? C : null == t ? true : t.state,
     R = null != P && "" !== P,
-    w = null;
-  A && null != b ? w = (0, r.jsx)(u.Z, {
+    D = null;
+  A && null != b ? D = (0, r.jsx)(u.Z, {
     userId: b,
     size: m,
     className: a()(i, _.hangStatusIcon),
     hangStatusActivity: E
-  }) : null == N || v || (w = (0, r.jsx)(f.Z, {
+  }) : null == N || v || (D = (0, r.jsx)(f.Z, {
     emoji: N,
     animate: O,
     className: i,
     hideTooltip: S || R
   }));
-  let D = R && (null != w ? " ".concat(P) : P),
+  let w = R && (null != D ? " ".concat(P) : P),
     x = () => {
       let e = null != N && !v && !R;
       return S || e ? (0, r.jsxs)(r.Fragment, {
-        children: [w, D]
+        children: [D, w]
       }) : (0, r.jsxs)(o.Z, {
         delay: p.X,
         tooltipClassName: h,
-        children: [w, D]
+        children: [D, w]
       })
     };
   return (0, r.jsx)(s.Text, {

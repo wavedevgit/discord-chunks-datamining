@@ -155,7 +155,7 @@ let J = 32,
       size: c,
       canAnimate: true
     }), f = (n = null == n || n) || t.isDiscoverable(), _ = () => {
-      t.isDiscoverable() ? (0, U.Ub)(a, {}) : n && (0, D.uL)(V.Z5c.CHANNEL(a, x.Z.getChannelId(a)))
+      t.isDiscoverable() ? (0, U.Ub)(a, {}) : n && (0, w.uL)(V.Z5c.CHANNEL(a, x.Z.getChannelId(a)))
     }, m = () => null != d && f ? (0, r.jsxs)(p.P3F, {
       "aria-label": l,
       onClick: _,
@@ -279,7 +279,7 @@ let J = 32,
       expressionSourceGuild: v,
       joinedEmojiSourceGuildRecord: T,
       closePopout: A,
-      onToggleShowMoreEmojis: D,
+      onToggleShowMoreEmojis: w,
       guildEmoji: x,
       demoMode: k = false,
       nonce: U
@@ -357,7 +357,7 @@ let J = 32,
           A(), (null == T ? true : T.id) != null && _.Z.transitionToGuildSync(T.id, {
             sourceLocationStack: [h.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL]
           }, H.oC.ROLE_SUBSCRIPTIONS)
-        }, n = !X && J, i = () => e_ ? (0, r.jsx)(w.Z, {
+        }, n = !X && J, i = () => e_ ? (0, r.jsx)(D.Z, {
           className: K.ctaButton,
           subscriptionTier: Y.Si.TIER_2,
           size: f.zx.Sizes.SMALL,
@@ -415,7 +415,7 @@ let J = 32,
         var e, t;
         let n = null != v && !X && J && (null != (t = null == v || null == (e = v.emojis) ? true : e.length) ? t : 0) > 1,
           i = () => {
-            n && (null == D || D(), eh || k || M.default.track(V.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!eh))
+            n && (null == w || w(), eh || k || M.default.track(V.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!eh))
           },
           a = () => {
             let e = W.intl.string(W.t.pnsAS2);
@@ -489,7 +489,7 @@ let J = 32,
       type: f,
       description: _
     } = o, h = () => f === Z.$.GET_PREMIUM ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(w.Z, {
+      children: [(0, r.jsx)(D.Z, {
         subscriptionTier: Y.Si.TIER_2,
         textOptions: {
           textOverride: o.text

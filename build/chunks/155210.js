@@ -37,19 +37,19 @@ function O(e, t, n) {
       focusManager: P
     } = r.Lh.get(t),
     R = e.isPlaceholder ? "" : e.text,
-    w = (0, h.useMemo)(() => t.dateFormatter.resolvedOptions(), [t.dateFormatter]),
-    D = (0, E.a)({
+    D = (0, h.useMemo)(() => t.dateFormatter.resolvedOptions(), [t.dateFormatter]),
+    w = (0, E.a)({
       month: "long",
-      timeZone: w.timeZone
+      timeZone: D.timeZone
     }),
     x = (0, E.a)({
       hour: "numeric",
-      hour12: w.hour12,
-      timeZone: w.timeZone
+      hour12: D.hour12,
+      timeZone: D.timeZone
     });
   if ("month" !== e.type || e.isPlaceholder) "hour" !== e.type || e.isPlaceholder || (R = x.format(t.dateValue));
   else {
-    let e = D.format(t.dateValue);
+    let e = w.format(t.dateValue);
     R = e !== R ? `${R} \u{2013} ${e}` : e
   }
   let {
@@ -233,7 +233,7 @@ function O(e, t, n) {
   };
   if ("rtl" === I) {
     $.unicodeBidi = "embed";
-    let t = w[e.type];
+    let t = D[e.type];
     ("numeric" === t || "2-digit" === t) && ($.direction = "ltr")
   }
   return {

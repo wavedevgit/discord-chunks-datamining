@@ -1,17 +1,15 @@
 /** Chunk was on 34740 **/
 /** chunk id: 831002, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $A: () => _,
-  j8: () => O
+  $A: () => v,
+  j8: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
-  Chunk481060 = require("./481060.js"),
-  Chunk168107 = require("./168107.jsx"),
-  Chunk480916 = require("./480916.js");
+  Chunk481060 = require("./481060.js");
 require("./358221.js"), require("./431368.jsx"), require("./167675.jsx"), require("./418469.jsx"), require("./673539.jsx");
 var Chunk218035 = require("./218035.jsx"),
   Chunk775666 = require("./775666.jsx"),
@@ -22,37 +20,36 @@ var Chunk218035 = require("./218035.jsx"),
   Chunk881824 = require("./881824.jsx"),
   Chunk146085 = require("./146085.js"),
   Chunk427679 = require("./427679.js"),
-  Chunk430104 = require("./430104.js");
+  Chunk430104 = require("./430104.js"),
+  Chunk852159 = require("./852159.js");
 require("./354459.js");
 var Chunk388032 = require("./388032.jsx");
 
-function _(e) {
-  let t = (0, a.e7)([f.Z], () => f.Z.getChannel(e), [e]),
-    n = (0, a.e7)([m.Z], () => m.Z.can(b.yP, t)),
-    r = (0, y.sP)(),
-    l = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(e), [e]),
-    u = (0, p.bp)(),
-    d = () => {
-      (0, y.u1)() ? s.Z.showAgeVerificationGetStartedModal({
-        entryPoint: c.cU.START_STAGE_PROMPT
-      }): null != t && (0, g.T)(t, u)
-    };
+function v(e) {
+  let t = (0, a.e7)([p.Z], () => p.Z.getChannel(e), [e]),
+    n = (0, a.e7)([h.Z], () => h.Z.can(m.yP, t)),
+    r = (0, b.sP)(),
+    l = (0, a.e7)([g.Z], () => g.Z.getStageInstanceByChannel(e), [e]),
+    s = (0, u.bp)(),
+    c = (0, y.A)(t);
   return (null == t ? true : t.isGuildStageVoice()) && n && !r ? null != l ? (0, i.jsx)(o.sNh, {
     id: "edit-stage",
-    label: v.intl.string(v.t["I+9bLx"]),
-    action: d
+    label: C.intl.string(C.t["I+9bLx"]),
+    action: () => {
+      null != t && (0, f.T)(t, s)
+    }
   }) : (0, i.jsx)(o.sNh, {
     id: "start-stage",
-    label: v.intl.string(v.t.OYbHfv),
-    action: d
+    label: C.intl.string(C.t.OYbHfv),
+    action: c
   }) : null
 }
 
-function O(e) {
-  let t = (0, a.e7)([f.Z], () => f.Z.getChannel(e), [e]);
+function _(e) {
+  let t = (0, a.e7)([p.Z], () => p.Z.getChannel(e), [e]);
   l()(null != t, "useNotificationSettingsItem: channel cannot be undefined");
-  let n = (0, h.Mn)("StageChannelCallOverflowMenu"),
-    i = (0, d.ZP)(t),
-    r = (0, u.Z)(t);
+  let n = (0, d.Mn)("StageChannelCallOverflowMenu"),
+    i = (0, c.ZP)(t),
+    r = (0, s.Z)(t);
   return n ? i : r
 }

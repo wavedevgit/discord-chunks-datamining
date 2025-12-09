@@ -75,7 +75,7 @@ let g = e => {
   let R = (0, i.useCallback)(() => {
       null == n || n(d.L.USER_DISMISS)
     }, [n]),
-    w = {
+    D = {
       gradientColor: N,
       size: "lg",
       graphic: {
@@ -99,7 +99,7 @@ let g = e => {
     estimatedTooltipHeight: T,
     delay: g,
     onShow: I
-  }, w), {
+  }, D), {
     children: p
   })) : (0, r.jsxs)(r.Fragment, {
     children: [p, (0, r.jsx)(l.Z, _({
@@ -111,6 +111,6 @@ let g = e => {
       caretConfig: {
         align: "center"
       }
-    }, w))]
+    }, D))]
   })
 }

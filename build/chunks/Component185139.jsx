@@ -39,12 +39,12 @@ function O(e) {
     isLoading: N = false,
     purchaseError: P,
     purchaseErrorBlockRef: R,
-    planError: w,
-    onScroll: D,
+    planError: D,
+    onScroll: w,
     scrollerClassName: x,
     hasCurrencies: L = false
   } = e, j = null;
-  null != v && null == (0, _.ly)(v) ? j = v : null != P ? j = P : null != w && (j = w);
+  null != v && null == (0, _.ly)(v) ? j = v : null != P ? j = P : null != D && (j = D);
   let M = null != j ? j.message : "";
   null != j && j instanceof d.HF && (j.code === f.SM.CARD_DECLINED && L && (M += " ".concat(E.intl.string(E.t.iWvwQS))), j.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.intl.string(E.t.ypuSd8)), j.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.intl.string(E.t.mXMmWE)));
   let {
@@ -103,7 +103,7 @@ function O(e) {
           steps: t,
           sideMargin: 20,
           children: (0, r.jsx)(c.h21, {
-            onScroll: D,
+            onScroll: w,
             className: s()(b.scroller, x),
             children: o
           })

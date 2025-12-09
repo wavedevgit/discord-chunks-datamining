@@ -93,7 +93,7 @@ function v(e) {
       onSelect: () => p.Z.openSearchFiltersModal(n)
     })
   }, [n]), {
-    items: w
+    items: D
   } = (0, ({
     [b.Sap.EMPTY]: () => {
       let e = [];
@@ -159,20 +159,22 @@ function v(e) {
             let {
               result: t,
               modeType: r,
-              group: a
-            } = e, s = (0, f.lw)({
+              group: s
+            } = e, l = (0, f.lw)({
               modeType: r,
               result: t,
-              group: a
-            }), l = (0, u.GM)({
+              group: s
+            }), c = (0, u.GM)({
               result: t,
-              group: a
+              group: s
             }), {
-              label: c,
-              ariaLabel: p
+              label: p,
+              ariaLabel: _
             } = (0, u.HU)({
-              value: t.text
-            }), _ = e => {
+              value: t.text,
+              avatarSize: a.EFr.SIZE_16,
+              iconSize: "xs"
+            }), h = e => {
               let {
                 selectedIndex: t
               } = e;
@@ -181,19 +183,19 @@ function v(e) {
                 searchHistoryIndex: t - i,
                 searchHistoryTotalResults: o
               }), S({
-                query: s,
+                query: l,
                 performSearch: true,
                 replace: false
               })
             };
             return (0, f.fC)(d.i.ROW, {
-              icon: l,
-              label: c,
+              icon: c,
+              label: p,
               ariaLabel: y.intl.formatToPlainString(y.t.WoiGrV, {
-                suggestion: p
+                suggestion: _
               }),
-              resultText: s,
-              onSelect: _
+              resultText: l,
+              onSelect: h
             })
           },
           getAutocompleteGroupItem: e => {
@@ -220,7 +222,9 @@ function v(e) {
         let {
           label: i
         } = (0, u.HU)({
-          value: t.query
+          value: t.query,
+          avatarSize: a.EFr.SIZE_16,
+          iconSize: "xs"
         }), o = (0, f.fC)(d.i.ROW, {
           icon: (0, r.jsx)(a._Ve, {
             size: "sm",
@@ -394,9 +398,9 @@ function v(e) {
         items: [...t]
       }
     }
-  })[T.type])(), D = i.useMemo(() => {
+  })[T.type])(), w = i.useMemo(() => {
     let e = [];
-    return w.forEach(t => {
+    return D.forEach(t => {
       switch (t.type) {
         case d.i.ROW:
           e.push(t);
@@ -405,9 +409,9 @@ function v(e) {
           t.data.rows.forEach(t => e.push(t))
       }
     }), e
-  }, [w]);
+  }, [D]);
   return {
-    items: w,
-    itemsData: D
+    items: D,
+    itemsData: w
   }
 }

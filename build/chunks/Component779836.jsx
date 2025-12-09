@@ -1,7 +1,7 @@
 /** Chunk was on 34740 **/
 /** chunk id: 779836, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk363350 = require("./363350.js");
 
-function C(e) {
+function y(e) {
   let {
     summary: t,
     channel: n
@@ -79,7 +79,7 @@ function C(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   var t, n;
   let r, {
       item: a,
@@ -97,7 +97,7 @@ function y(e) {
       className: b.summaryStartIcon
     }), a.content]
   }) : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(C, {
+    children: [(0, i.jsx)(y, {
       summary: h,
       channel: u
     }), (0, i.jsx)(s.sVe, {

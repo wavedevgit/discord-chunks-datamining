@@ -2,7 +2,7 @@
 /** chunk id: 107062, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => D
+  ZP: () => w
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -43,7 +43,7 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       userName: i
     }).replaceAll("*", "")
   },
-  w = e => {
+  D = e => {
     let {
       entry: t,
       channel: n,
@@ -57,12 +57,12 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       countOthers: i
     }).replaceAll("*", "")
   },
-  D = e => {
+  w = e => {
     let {
       channel: t,
       entry: n,
       onReaction: E,
-      onVoiceChannelPreview: D,
+      onVoiceChannelPreview: w,
       disableActivityProfileLinks: x
     } = e, {
       largeImage: L
@@ -88,7 +88,7 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       })
     }, K = i.useCallback(e => {
       if ((null == L ? true : L.src) == null || null == t || null == j) return;
-      let r = Y > 0 ? w({
+      let r = Y > 0 ? D({
         entry: n,
         channel: t,
         users: [V, H],
@@ -156,7 +156,7 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       children: [X, (0, r.jsx)(T.St, {
         children: (0, r.jsx)(T.WT, {
           onReaction: E,
-          onVoiceChannelPreview: D,
+          onVoiceChannelPreview: w,
           user: j,
           channel: t,
           generateReactionImage: K,

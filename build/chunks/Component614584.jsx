@@ -125,7 +125,7 @@ let j = Chunk473749.memo(function(e) {
       referencedAvatarProfile: false
     })
   }, [T]), z = (0, b.Uj)(n);
-  return (0, i.jsx)(C.Z, {
+  return (0, i.jsx)(y.Z, {
     repliedAuthor: M,
     baseMessage: n,
     channel: S,
@@ -137,7 +137,7 @@ let j = Chunk473749.memo(function(e) {
     isReplyAuthorIgnored: U,
     showAvatarPopout: Z,
     showUsernamePopout: I,
-    renderPopout: y.Z,
+    renderPopout: C.Z,
     onClickAvatar: B,
     onClickUsername: F,
     onClickReply: H,

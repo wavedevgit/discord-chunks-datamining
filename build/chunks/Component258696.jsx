@@ -104,14 +104,14 @@ function M(e) {
       }, "confetti")
     }), !er && (null == (P = M.stickers) ? true : P.button) != null && null == Y && F && $.push({
       key: "sticker",
-      node: (0, r.jsx)(w.Z, {
+      node: (0, r.jsx)(D.Z, {
         disabled: U,
         type: M,
         channel: G
       }, "sticker")
     }), $.push({
       key: "upload",
-      node: (0, r.jsx)(D.z, {
+      node: (0, r.jsx)(w.z, {
         disabled: U,
         inputType: M,
         channel: G

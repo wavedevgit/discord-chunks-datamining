@@ -74,7 +74,7 @@ function L(e) {
   } = e, {
     analyticsLocations: F,
     newestAnalyticsLocation: B
-  } = (0, d.ZP)(), G = (0, C.Dt)({
+  } = (0, d.ZP)(), G = (0, y.Dt)({
     channel: t
   }), z = (0, l.e7)([v.Z], () => v.Z.isInProgress());
 
@@ -289,7 +289,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "scheduled_message",
             label: r,
-            action: () => (0, C.$f)({
+            action: () => (0, y.$f)({
               channel: t
             }),
             children: G
@@ -298,7 +298,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "summarize_thread",
             label: r,
-            action: () => y.Z.summarizeThread(t),
+            action: () => C.Z.summarizeThread(t),
             icon: z ? (0, i.jsx)(s.$jN, {
               type: s.RAz.PULSING_ELLIPSIS
             }) : null,
@@ -308,12 +308,12 @@ function L(e) {
                 id: "summarize_thread_for_everyone",
                 label: A.intl.string(A.t.eCzSdd),
                 iconLeft: s.BFJ,
-                action: () => y.Z.summarizeThread(t, false)
+                action: () => C.Z.summarizeThread(t, false)
               }, "summarize_thread_for_everyone"), (0, i.jsx)(s.sNh, {
                 id: "summarize_thread_for_me",
                 label: A.intl.string(A.t["HOe+Hq"]),
                 iconLeft: s.tBG,
-                action: () => y.Z.summarizeThread(t)
+                action: () => C.Z.summarizeThread(t)
               }, "summarize_thread_for_me")]
             })
           }, "summarize_thread");

@@ -81,8 +81,8 @@ function I(e) {
   } = (0, f.Z)({
     userId: t.id,
     guildId: y
-  }), w = t.id === n.id, D = (0, a.e7)([c.Z, l.Z], () => {
-    let e = w ? c.Z.getStatus() : l.Z.getStatus(t.id, y);
+  }), D = t.id === n.id, w = (0, a.e7)([c.Z, l.Z], () => {
+    let e = D ? c.Z.getStatus() : l.Z.getStatus(t.id, y);
     return e === E.Sk.OFFLINE || e === E.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: x
@@ -105,7 +105,7 @@ function I(e) {
       voiceChannel: P
     }, a), "voice")), i
   }, [n, L, C, I, N, t, P]);
-  return D ? null : (0, r.jsx)(p.Z, {
+  return w ? null : (0, r.jsx)(p.Z, {
     renderCards: j,
     heading: b.intl.string(b.t.J6STd9),
     onExpand: () => {

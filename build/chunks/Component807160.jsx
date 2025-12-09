@@ -868,9 +868,9 @@ function eT(e) {
     }
   }), {
     hasAlreadyLinked: O
-  } = (0, b.F)((0, D.K$)(r.sku) ? m : true), v = (0, p.e7)([y.Z], () => null != d ? y.Z.getApplication(d) : null), S = null;
+  } = (0, b.F)((0, w.K$)(r.sku) ? m : true), v = (0, p.e7)([y.Z], () => null != d ? y.Z.getApplication(d) : null), S = null;
   a.useEffect(() => {
-    f && null != d && (0, w.UM)(d)
+    f && null != d && (0, D.UM)(d)
   }, [d, f]);
   let I = (0, p.e7)([B.Z], () => B.Z.getGuild(null == m ? true : m.guildId)),
     T = c ? m : true,

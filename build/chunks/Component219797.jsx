@@ -2,7 +2,7 @@
 /** chunk id: 219797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L9: () => w,
+  L9: () => D,
   ZK: () => R,
   d4: () => P,
   dS: () => T,
@@ -195,14 +195,14 @@ function R(e) {
   }))
 }
 
-function w(e) {
-  return "CLIP" === e.item.type ? (0, r.jsx)(D, {
+function D(e) {
+  return "CLIP" === e.item.type ? (0, r.jsx)(w, {
     attachment: e.item.originalItem,
     message: e.message
   }) : null
 }
 
-function D(e) {
+function w(e) {
   var t;
   let {
     attachment: n,

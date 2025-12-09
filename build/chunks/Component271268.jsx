@@ -49,8 +49,8 @@ function R() {
     }
   } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()), {
     duration: R,
-    unit: w
-  } = (0, Chunk26118.Bi)(module), D = w === Chunk379649.J6.HOURS, x = Chunk473749.useContext(Chunk193869.$r), L = Chunk473749.useRef(null), j = Chunk473749.useContext(Chunk225055.xS), M = Chunk473749.useContext(Chunk324060.Q), k = (0, Chunk481060.dQu)(M.primaryColor).hex(), U = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion), G = Chunk473749.useCallback(e => {
+    unit: D
+  } = (0, Chunk26118.Bi)(module), w = D === Chunk379649.J6.HOURS, x = Chunk473749.useContext(Chunk193869.$r), L = Chunk473749.useRef(null), j = Chunk473749.useContext(Chunk225055.xS), M = Chunk473749.useContext(Chunk324060.Q), k = (0, Chunk481060.dQu)(M.primaryColor).hex(), U = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion), G = Chunk473749.useCallback(e => {
     let t = L.current;
     if (null == t || t.readyState < HTMLMediaElement.HAVE_CURRENT_DATA) return;
     let n = 0,
@@ -94,7 +94,7 @@ function R() {
           color: k,
           className: Chunk417788.titleIcon,
           colorClass: Chunk417788.iconColor
-        }), D ? (0, Chunk54381.jsx)(Chunk391876.Z, {
+        }), w ? (0, Chunk54381.jsx)(Chunk391876.Z, {
           variant: "eyebrow",
           className: Chunk417788.eyebrow,
           children: Chunk388032.intl.format(Chunk860076.default.Xu0QsX, {

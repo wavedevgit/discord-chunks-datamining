@@ -82,8 +82,8 @@ let A = new Chunk710845.Z("PopoutWindowStore"),
   N = {},
   P = {},
   R = {},
-  w = {},
-  D = new Set,
+  D = {},
+  w = new Set,
   x = "app-mount",
   L = () => $.emitChange(),
   j = s().debounce(L, 150),
@@ -118,7 +118,7 @@ function G(e) {
   let t = P[e];
   a()(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", L), t.removeEventListener("blur", L), t.removeEventListener("resize", j);
   let n = R[e];
-  a()(null != n, "Window root was null while unmounting"), n.unmount(), delete P[e], delete N[e], delete w[e], delete R[e]
+  a()(null != n, "Window root was null while unmounting"), n.unmount(), delete P[e], delete N[e], delete D[e], delete R[e]
 }
 
 function Z(e, t, r) {
@@ -137,7 +137,7 @@ function B(e, t) {
 
 function F(e) {
   let t = P[e],
-    n = w[e];
+    n = D[e];
   if (null == t) return void A.warn("Failed to open window", e);
   let r = t.document;
   (0, g.uF)(r, L), t.addEventListener("focus", L), t.addEventListener("blur", L), t.addEventListener("resize", j), M ? k(e, t) : B(e, t);
@@ -199,11 +199,11 @@ function V(e) {
       }
     }), e
   }
-  i ? A.verbose("Opening out of process overlay window", t) : null == v || v.focus(), P[t] = v, w[t] = r, m.isPlatformEmbedded && (h.ZP.setAlwaysOnTop(t, _), N[t] = _, h.ZP.isAlwaysOnTop(t).then(e => N[t] = e)), D.add(t)
+  i ? A.verbose("Opening out of process overlay window", t) : null == v || v.focus(), P[t] = v, D[t] = r, m.isPlatformEmbedded && (h.ZP.setAlwaysOnTop(t, _), N[t] = _, h.ZP.isAlwaysOnTop(t).then(e => N[t] = e)), w.add(t)
 }
 
 function H(e) {
-  D.has(e) && (F(e), D.delete(e), $.emitChange())
+  w.has(e) && (F(e), w.delete(e), $.emitChange())
 }
 
 function Y(e) {
@@ -298,7 +298,7 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
     return C
   }
   isWindowFullyInitialized(e) {
-    return null != P[e] && null != R[e] && null != w[e]
+    return null != P[e] && null != R[e] && null != D[e]
   }
   isWindowFullScreen(e) {
     var t, n;

@@ -132,13 +132,13 @@ function R(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let t = (0, p.Tm)(e),
     n = b.Z.getEditorState(t);
   return null != n ? u.Sq(n) : null
 }
 
-function D(e, t) {
+function w(e, t) {
   var n;
   let r = (0, p.Tm)(e),
     i = null != (n = b.Z.getEditorState(r)) ? n : u.nR(d.Jl(g.ZP)),
@@ -149,10 +149,10 @@ function D(e, t) {
 }
 
 function x(e, t) {
-  let n = w(e);
+  let n = D(e);
   if (null == n) return;
   let r = n.endsWith(" ") ? n + t : n + " " + t;
-  D(e, r), R({
+  w(e, r), R({
     searchContext: e,
     searchQueryString: r,
     offset: 0
@@ -169,7 +169,7 @@ function j(e, t, n) {
   if (null == i) return;
   let a = u.Sq(i),
     o = t.type === S.aib.CHANNEL ? (0, p.EX)(a) : a;
-  D(t, o = o.trim());
+  w(t, o = o.trim());
   let l = b.Z.getSearchMode(r);
   E.Z.updateSearchMode(t, null != l ? l : v.o), m.Z.transitionSessionAnalytics(e, t);
   let c = (0, p.kG)(o),
@@ -200,9 +200,9 @@ function M() {
 let k = {
   cleanUpSearchState: N,
   fetchMessages: R,
-  setSearchInputText: D,
+  setSearchInputText: w,
   appendToSearchInputText: x,
-  getSearchInputText: w,
+  getSearchInputText: D,
   ensureSearchInputDecorators: function(e) {
     let t, n = (0, p.Tm)(e),
       r = b.Z.getEditorState(n),
@@ -241,7 +241,7 @@ let k = {
     }), (0, a.openModalLazy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("30474"), n.e("37979")]).then(n.bind(n, 238088));
+      } = await n.e("37979").then(n.bind(n, 238088));
       return n => (0, r.jsx)(t, C(T({}, n), {
         searchContext: e
       }))

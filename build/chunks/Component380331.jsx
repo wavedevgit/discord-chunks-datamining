@@ -41,7 +41,7 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function w(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,7 +66,7 @@ function D(e, t) {
 }
 
 function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -94,7 +94,7 @@ function K(e) {
     handleCategorySelect: u,
     isWindowFocused: d,
     useReducedMotion: p
-  } = e, _ = (0, c.JA)("expression-guild-".concat(n)), m = l.type === T.En.GUILD ? null : l.id, h = t === n, E = l.type === T.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, x(w({}, _), {
+  } = e, _ = (0, c.JA)("expression-guild-".concat(n)), m = l.type === T.En.GUILD ? null : l.id, h = t === n, E = l.type === T.En.GUILD ? l.guild : null, y = (0, r.jsxs)(f.P3F, x(D({}, _), {
     "aria-label": (0, O.Nf)(l, E),
     className: o()({
       [P.categoryItemGuildCategory]: null != E,
@@ -145,7 +145,7 @@ let z = e => {
   } = e, b = m.kJ.useStore(e => e.activeCategoryIndex), y = (0, I.Ni)({
     sectionDescriptors: a,
     emojiListRef: n
-  }), v = (0, p.O)(), S = (0, O.kI)(s, c, null == c ? true : c.guild_id, d), A = i.useMemo(() => g ? (0, O.ZF)() : S, [S, g]), C = i.useRef(null), R = (0, u.e7)([E.Z], () => E.Z.isFocused()), w = (0, u.e7)([_.Z], () => _.Z.useReducedMotion, []), D = i.useMemo(() => l().memoize((e, t) => {
+  }), v = (0, p.O)(), S = (0, O.kI)(s, c, null == c ? true : c.guild_id, d), A = i.useMemo(() => g ? (0, O.ZF)() : S, [S, g]), C = i.useRef(null), R = (0, u.e7)([E.Z], () => E.Z.isFocused()), D = (0, u.e7)([_.Z], () => _.Z.useReducedMotion, []), w = i.useMemo(() => l().memoize((e, t) => {
     let n = A[t];
     if (null != n) return (0, r.jsx)(K, {
       activeIndex: b,
@@ -155,9 +155,9 @@ let z = e => {
       categoryIndex: t,
       handleCategorySelect: y,
       isWindowFocused: R,
-      useReducedMotion: w
+      useReducedMotion: D
     }, t)
-  }), [b, v, A, y, R, w]), x = i.useMemo(() => [8, 8, 0, 8], []), L = i.useCallback((e, t) => {
+  }), [b, v, A, y, R, D]), x = i.useMemo(() => [8, 8, 0, 8], []), L = i.useCallback((e, t) => {
     let n = A[t];
     if (n.type === T.En.RECENT) return F;
     if (n.type === T.En.GUILD) {
@@ -223,7 +223,7 @@ let z = e => {
     categories: A,
     listPadding: x,
     onScroll: $,
-    renderCategoryListItem: D,
+    renderCategoryListItem: w,
     renderSection: en,
     rowCount: A.length,
     categoryHeight: L,

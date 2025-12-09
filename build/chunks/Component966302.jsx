@@ -223,7 +223,7 @@ function el(e) {
     channel: m
   } = e, {
     analyticsLocations: y
-  } = (0, h.ZP)(_.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), S = (0, l.e7)([D.Z], () => D.Z.getGuild(m.guild_id)), I = null != S ? k.ZP.getGuildIconURL({
+  } = (0, h.ZP)(_.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), S = (0, l.e7)([w.Z], () => w.Z.getGuild(m.guild_id)), I = null != S ? k.ZP.getGuildIconURL({
     id: S.id,
     icon: S.icon,
     size: ea
@@ -261,7 +261,7 @@ function el(e) {
             className: o()(q.guildIcon, q.guildIconWithoutImage),
             children: (0, r.jsx)("div", {
               className: q.guildAcronym,
-              children: (0, w.gM)(S)
+              children: (0, D.gM)(S)
             })
           })
         })

@@ -38,8 +38,8 @@ function P(e) {
     currentUser: n,
     displayProfile: P,
     guild: R,
-    isHoveringOrFocusing: w,
-    onOpenProfile: D,
+    isHoveringOrFocusing: D,
+    onOpenProfile: w,
     channelId: x,
     onClose: L
   } = e, j = c.ZP.getName(null == R ? true : R.id, x, t), M = (0, i.e7)([u.Z], () => {
@@ -54,7 +54,7 @@ function P(e) {
     children: [(0, r.jsx)(E.Z, {
       user: t,
       guildId: null == R ? true : R.id,
-      onOpenProfile: D,
+      onOpenProfile: w,
       nickname: j,
       pronouns: null == P ? true : P.pronouns,
       tags: (0, r.jsx)(p.Z, {
@@ -67,13 +67,13 @@ function P(e) {
           userId: t.id
         }), !U && (0, r.jsx)(O.Z, {
           userId: t.id,
-          isVisible: w,
-          onOpenProfile: D
+          isVisible: D,
+          onOpenProfile: w
         })]
       })
     }), (0, r.jsx)(I.Z, {
       user: t,
-      onOpenProfile: e => null == D ? true : D({
+      onOpenProfile: e => null == w ? true : w({
         section: e
       })
     }), (0, r.jsxs)("div", {
@@ -96,7 +96,7 @@ function P(e) {
       user: t,
       currentUser: n,
       guildId: null == R ? true : R.id,
-      onOpenUserProfileModal: D,
+      onOpenUserProfileModal: w,
       onClose: L
     }) : (0, r.jsx)(_.Z, {
       user: t,

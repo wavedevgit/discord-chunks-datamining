@@ -222,7 +222,7 @@ function eo(e) {
     guildId: s,
     reactionType: l,
     onRemoveReactor: c
-  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([M.default], () => M.default.getUser(n.id), [n]), m = (0, C.$R)(a), E = (0, u.e7)([L.Z], () => L.Z.can(H.Plq.MANAGE_MESSAGES, a) && m) || d === n.id, y = (0, u.e7)([w.ZP, R.Z, j.Z], () => G.ZP.getName(s, a.id, n));
+  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([M.default], () => M.default.getUser(n.id), [n]), m = (0, C.$R)(a), E = (0, u.e7)([L.Z], () => L.Z.can(H.Plq.MANAGE_MESSAGES, a) && m) || d === n.id, y = (0, u.e7)([D.ZP, R.Z, j.Z], () => G.ZP.getName(s, a.id, n));
 
   function O() {
     F.WO({
@@ -400,7 +400,7 @@ let el = Chunk442837.ZP.connectStores([Chunk542578.Z], e => {
     message: t,
     reaction: n,
     reactionType: r
-  } = e, i = D.Z.getReactions(t.getChannelId(), t.id, n.emoji, H.pTL, r);
+  } = e, i = w.Z.getReactions(t.getChannelId(), t.id, n.emoji, H.pTL, r);
   if (null == i) return {
     reactors: [],
     hasMore: false

@@ -32,11 +32,11 @@ let _ = 256,
   N = [false, false, false, false, .5, false, .5, false, false, false, .5, false, .5, .5, false, .5, false, false, false, false, .5, .5, false, .5, false, .5, .5, false, .5, .5, .5, false, .5, .5, .5, .5, false, .5, false, false, .5, .5, .5, .5, false, false, .5, .5, .5, .5, .5, .5, .5, false, false, false, false, .5, false, false, false, false, .5, false, false, .5, .5, false, false, .5, false, .5, false, false, false, false, false, .5, false, .5, false, false, false, .5, false, .5, .5, false, .5, false, .5, false, false, .5, .5, false, .5, false, .5, .5, false, .5, .5, .5, false, .5, .5, .5],
   P = [0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0],
   R = [0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
-  w = e => {
+  D = e => {
     let t = new Float32Array(N);
     e.bufferData(e.ARRAY_BUFFER, t, e.STATIC_DRAW)
   },
-  D = e => {
+  w = e => {
     e.bufferData(e.ARRAY_BUFFER, new Float32Array(P), e.STATIC_DRAW)
   },
   x = e => {
@@ -72,9 +72,9 @@ function L(e, t, n, r, s) {
       E = i.createBuffer();
     i.bindBuffer(i.ARRAY_BUFFER, E), x(i), i.vertexAttribPointer(h, 3, i.FLOAT, false, 0, 0), i.enableVertexAttribArray(h);
     let b = i.createBuffer();
-    i.bindBuffer(i.ARRAY_BUFFER, b), w(i);
+    i.bindBuffer(i.ARRAY_BUFFER, b), D(i);
     let y = i.createBuffer();
-    i.bindBuffer(i.ARRAY_BUFFER, y), D(i);
+    i.bindBuffer(i.ARRAY_BUFFER, y), w(i);
     let O = a.c$(60),
       v = () => {
         if (null == i || null == e) return;
@@ -99,12 +99,12 @@ function L(e, t, n, r, s) {
 function j(e) {
   let {
     emoji: t
-  } = e, [n, a] = i.useState(null), [o, S] = i.useState(null), I = i.useRef(new Image), [T, A] = i.useState(null), [C, N] = i.useState(false), P = i.useRef(0), R = i.useRef(0), w = d.E[f.yD.EMOJIS], D = (0, l.dQu)(w.primaryColor).hex(), x = i.useRef(E), j = i.useRef(b), M = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), k = M ? 0 : h, U = M ? 0 : g, G = i.useRef(k), Z = i.useRef(U), B = i.useRef(false), F = i.useRef(0), V = i.useRef(0);
+  } = e, [n, a] = i.useState(null), [o, S] = i.useState(null), I = i.useRef(new Image), [T, A] = i.useState(null), [C, N] = i.useState(false), P = i.useRef(0), R = i.useRef(0), D = d.E[f.yD.EMOJIS], w = (0, l.dQu)(D.primaryColor).hex(), x = i.useRef(E), j = i.useRef(b), M = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), k = M ? 0 : h, U = M ? 0 : g, G = i.useRef(k), Z = i.useRef(U), B = i.useRef(false), F = i.useRef(0), V = i.useRef(0);
   L(n, o, T, x, j);
   let H = i.useCallback(() => {
     let e = null == o ? true : o.getContext("2d");
-    null != o && null != e && (e.fillStyle = "black", e.fillRect(0, 0, o.width, o.height), e.drawImage(I.current, 0, 0, o.width, o.height), e.fillStyle = D, e.fillRect(0, 0, o.width, v), e.fillRect(0, 0, v, o.height), e.fillRect(0, o.height - v, o.width, v), e.fillRect(o.width - v, 0, v, o.height), A(t), N(true))
-  }, [t, I, D, o]);
+    null != o && null != e && (e.fillStyle = "black", e.fillRect(0, 0, o.width, o.height), e.drawImage(I.current, 0, 0, o.width, o.height), e.fillStyle = w, e.fillRect(0, 0, o.width, v), e.fillRect(0, 0, v, o.height), e.fillRect(0, o.height - v, o.width, v), e.fillRect(o.width - v, 0, v, o.height), A(t), N(true))
+  }, [t, I, w, o]);
   i.useEffect(() => {
     A(null), I.current.crossOrigin = "anonymous", I.current.src = (0, u.qc)(t, _), I.current.onload = H, I.current.complete && H()
   }, [t, H, I]), i.useEffect(() => {

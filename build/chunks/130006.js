@@ -43,13 +43,13 @@ module.exports = function(e, t, n, o, _, h, A) {
         return new n(this)
       }
     },
-    w = t + " Iterator",
-    D = false,
+    D = t + " Iterator",
+    w = false,
     x = e.prototype,
     L = x[O] || x["@@iterator"] || _ && x[_],
     j = !y && L || R(_),
     M = "Array" === t && x.entries || L;
-  if (M && (C = c(M.call(new e))) !== Object.prototype && C.next && (!a && c(C) !== b && (u ? u(C, b) : s(C[O]) || p(C, O, T)), d(C, w, true, true), a && (m[w] = T)), g && _ === S && L && L.name !== S && (!a && E ? f(x, "name", S) : (D = true, j = function() {
+  if (M && (C = c(M.call(new e))) !== Object.prototype && C.next && (!a && c(C) !== b && (u ? u(C, b) : s(C[O]) || p(C, O, T)), d(C, D, true, true), a && (m[D] = T)), g && _ === S && L && L.name !== S && (!a && E ? f(x, "name", S) : (w = true, j = function() {
       return i(L, this)
     })), _)
     if (N = {
@@ -57,11 +57,11 @@ module.exports = function(e, t, n, o, _, h, A) {
         keys: h ? j : R(v),
         entries: R(I)
       }, A)
-      for (P in N) !y && !D && P in x || p(x, P, N[P]);
+      for (P in N) !y && !w && P in x || p(x, P, N[P]);
     else r({
       target: t,
       proto: true,
-      forced: y || D
+      forced: y || w
     }, N);
   return (!a || A) && x[O] !== j && p(x, O, j, {
     name: _

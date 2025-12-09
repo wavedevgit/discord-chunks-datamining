@@ -2,7 +2,7 @@
 /** chunk id: 830447, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => w,
+  T: () => D,
   v: () => R
 }), require("./361932.js"), require("./187205.js"), require("./539854.js"), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
@@ -321,13 +321,13 @@ function R(e) {
     onSelect: S,
     onInteraction: I,
     forceIconsLeft: T
-  } = e, A = C(b, T), R = N(A), w = i.useRef([]);
-  l()(w.current, R) || (w.current = R);
+  } = e, A = C(b, T), R = N(A), D = i.useRef([]);
+  l()(D.current, R) || (D.current = R);
   let x = (0, p.c)("Menu"),
     L = null == (t = A.find(e => null != e.key)) ? true : t.key,
     j = (0, c.Z)({
       navId: n,
-      items: w.current,
+      items: D.current,
       initialFocusPath: f.Z.keyboardModeEnabled && null != L ? [L] : [],
       closeMenu: O,
       defaultIsUsingKeyboardNavigation: f.Z.keyboardModeEnabled
@@ -356,7 +356,7 @@ function R(e) {
         className: E.scroller,
         children: [0 === A.length && (0, r.jsx)(h.ck, {
           disabled: true,
-          label: () => (0, r.jsx)(D, {}),
+          label: () => (0, r.jsx)(w, {}),
           menuItemProps: j.getItemProps({
             path: ["empty"]
           }),
@@ -369,14 +369,14 @@ function R(e) {
   })
 }
 
-function w() {
+function D() {
   return (0, Chunk54381.jsx)("div", {
     className: o()(Chunk334405.menu, Chunk334405.loader, Chunk334405.flexible),
     children: (0, Chunk54381.jsx)(Chunk793030.$jN, {})
   })
 }
 
-function D() {
+function w() {
   let e = "♫ (つ｡◕‿‿◕｡)つ ♪",
     t = "♫ ⊂(｡◕‿‿◕｡⊂) ♪",
     [n, a] = Chunk473749.useState(module);

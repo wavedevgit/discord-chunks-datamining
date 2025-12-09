@@ -102,12 +102,12 @@ function _(e) {
     [u.clickable]: null != v,
     [u.ringingOutgoing]: g && 0 === E,
     [u.ringingIncoming]: g && 1 === E
-  }, I), w = (0, s.dcp)(n), D = f({
-    height: w,
-    width: w
+  }, I), D = (0, s.dcp)(n), w = f({
+    height: D,
+    width: D
   }, O);
   return (0, r.jsx)("div", {
-    style: D,
+    style: w,
     onContextMenu: S,
     className: R,
     children: P()

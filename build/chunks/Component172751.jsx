@@ -114,13 +114,13 @@ let b = Chunk473749.memo(function(e) {
       onClose: T
     } = e, A = i.useRef(null), C = (0, s.e7)([d.default], () => d.default.getUser(a), [a]), N = (0, s.e7)([u.Z], () => u.Z.theme), P = null != (t = null == C ? true : C.primaryGuild) ? t : n, {
       tag: R,
-      badge: w,
-      guildId: D
+      badge: D,
+      guildId: w
     } = (0, f.Pb)(P);
-    return (0, f.yF)(a, p) && null != D ? v ? (0, r.jsx)(y, {
-      guildId: D,
+    return (0, f.yF)(a, p) && null != w ? v ? (0, r.jsx)(y, {
+      guildId: w,
       guildTag: R,
-      guildBadge: w,
+      guildBadge: D,
       className: o()(h.noTooltip, _),
       textVariant: g,
       textColor: b,
@@ -129,7 +129,7 @@ let b = Chunk473749.memo(function(e) {
     }) : (0, r.jsx)(l.ze6, {
       theme: N,
       children: (0, r.jsx)(c.Z, {
-        guildId: D,
+        guildId: w,
         onRequestOpen: I,
         onClose: T,
         targetElementRef: A,
@@ -137,9 +137,9 @@ let b = Chunk473749.memo(function(e) {
           className: m,
           ref: A,
           children: (0, r.jsx)(y, E({
-            guildId: D,
+            guildId: w,
             guildTag: R,
-            guildBadge: w,
+            guildBadge: D,
             className: _,
             textVariant: g,
             textColor: b,

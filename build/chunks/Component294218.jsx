@@ -63,13 +63,13 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -102,7 +102,7 @@ function L(e) {
     subscribeToComponentDispatch: U,
     renderThreadAccessory: G,
     trackAnnouncementViews: Z = false
-  } = e, B = D(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), F = i.type === A.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, V = i.isFirstMessageInForumPost(j), H = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
+  } = e, B = w(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), F = i.type === A.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, V = i.isFirstMessageInForumPost(j), H = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
     content: Y,
     hasSpoilerEmbeds: W,
     hasBailedAst: K
@@ -129,14 +129,14 @@ function L(e) {
     disableInteraction: F,
     childrenRepliedMessage: (0, T.Z)(i, j, z, q, a),
     childrenExecutedCommand: (0, I.Z)(i, j, a),
-    childrenHeader: (0, v.Z)(w(P({}, e), {
+    childrenHeader: (0, v.Z)(D(P({}, e), {
       guildId: j.guild_id,
       author: X,
       roleIcon: $
     })),
     childrenAccessories: e.hideAccessories ? true : (0, y.Q)(e, W, K),
     childrenMessageContent: (0, O.Z)(e, Y),
-    childrenSystemMessage: (0, S.Z)(w(P({}, e), {
+    childrenSystemMessage: (0, S.Z)(D(P({}, e), {
       disableInteraction: F
     })),
     onContextMenu: R,

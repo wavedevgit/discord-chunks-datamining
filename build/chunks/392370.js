@@ -136,12 +136,12 @@ function R(e) {
   }
 }
 
-function w(e, t) {
+function D(e, t) {
   let n = m.Z.getScoreWithoutLoadingLatest(e.id);
   return m.Z.getScoreWithoutLoadingLatest(t.id) - n
 }
 
-function D(e, t) {
+function w(e, t) {
   let n = (0, y.$d)(e),
     r = (0, y.$d)(t);
   return (0, f.un)(n, r)
@@ -336,7 +336,7 @@ function V(e) {
       limit: o,
       filterPredicates: [T(t)],
       bucketPredicates: A(n),
-      sortComparers: [w, D]
+      sortComparers: [D, w]
     })
   }, [l, c, o, t, n, _, m]), y = g.length > 0, O = b.length > 0, C = !y && !O;
   return {

@@ -150,7 +150,7 @@ function Y(e) {
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(E.Z, {
           className: a()(U.title, U.tier0ApplicationHomeTitle)
-        }), (0, r.jsx)(w.Z, {
+        }), (0, r.jsx)(D.Z, {
           isGift: l,
           premiumTier: L.PremiumTypes.TIER_0,
           offerType: L.C.PREMIUM_TRIAL,
@@ -208,7 +208,7 @@ function W(e) {
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(g.Z, {
           className: a()(U.title, U.tier0Title)
-        }), (0, r.jsx)(w.Z, {
+        }), (0, r.jsx)(D.Z, {
           isGift: u,
           premiumTier: L.PremiumTypes.TIER_0,
           offerType: L.C.PREMIUM_TRIAL,
@@ -268,7 +268,7 @@ function z(e) {
         isApplicationHome: c,
         enablePremiumBrandRefresh: s
       }, n)
-    }), _ && m && (0, r.jsx)(D.Z, {})]
+    }), _ && m && (0, r.jsx)(w.Z, {})]
   })
 }
 
@@ -283,11 +283,11 @@ function q(e) {
     isModal: p = false,
     priceOptions: _,
     showPromotionalGiftBanner: m = false
-  } = e, g = (0, T.N)(), E = null == g || null == (t = g.subscription_trial) ? true : t.sku_id, b = (0, O.Nx)(), A = (0, I.N)(), P = null != g ? L.C.PREMIUM_TRIAL : null != A ? L.C.PREMIUM_DISCOUNT : null, R = (0, y.Vi)(), D = !f && b, x = null == (n = (0, v.Z)()) ? true : n.planSelection, j = null == x || null == (i = x.getBackgroundImageUrl) ? true : i.call(x), M = null == x || null == (o = x.getCardImageUrl) ? true : o.call(x), k = (0, N.W)();
+  } = e, g = (0, T.N)(), E = null == g || null == (t = g.subscription_trial) ? true : t.sku_id, b = (0, O.Nx)(), A = (0, I.N)(), P = null != g ? L.C.PREMIUM_TRIAL : null != A ? L.C.PREMIUM_DISCOUNT : null, R = (0, y.Vi)(), w = !f && b, x = null == (n = (0, v.Z)()) ? true : n.planSelection, j = null == x || null == (i = x.getBackgroundImageUrl) ? true : i.call(x), M = null == x || null == (o = x.getCardImageUrl) ? true : o.call(x), k = (0, N.W)();
   return (0, r.jsxs)("div", {
     className: a()(U.card, U.tier2, U.tier2ApplicationHomeBackground, d, {
-      [U.withTier2Rim]: D,
-      [U.withCardHover]: D,
+      [U.withTier2Rim]: w,
+      [U.withCardHover]: w,
       [U.withPromotionalGradientBanner]: m,
       [U.withPromotionalCardImage]: m && null != M
     }),
@@ -315,7 +315,7 @@ function q(e) {
             className: U.freeTrialPillInline,
             children: k
           })
-        }), (0, r.jsx)(w.Z, {
+        }), (0, r.jsx)(D.Z, {
           isGift: f,
           premiumTier: L.PremiumTypes.TIER_2,
           offerType: P,
@@ -349,7 +349,7 @@ function Q(e) {
     className: E,
     isGift: b = false,
     isModal: A = false,
-    priceOptions: D,
+    priceOptions: w,
     showPromotionalGiftBanner: x = false
   } = e, M = (0, o.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), k = (0, o.e7)([_.default], () => _.default.getCurrentUser()), G = (0, T.N)(), Z = null == G || null == (t = G.subscription_trial) ? true : t.sku_id, F = (null == M ? true : M.hasActiveTrial) ? null == k ? true : k.premiumType : null, V = (0, O.Nx)(), H = (0, I.N)(), Y = (0, O.t7)(), W = null != Z || null != F ? L.C.PREMIUM_TRIAL : null != H || Y ? L.C.PREMIUM_DISCOUNT : null, K = (0, y.Vi)(), q = !b && V, Q = null == (n = (0, v.Z)()) ? true : n.planSelection, X = null == Q || null == (i = Q.getBackgroundImageUrl) ? true : i.call(Q), J = null == Q || null == (u = Q.getCardImageUrl) ? true : u.call(Q), $ = (0, N.W)(), ee = (0, s.ap)((0, c.ZP)()), et = ee ? P.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : P.VE.PREMIUM_TIER_2_WHITE_FILL, en = (0, P.A1)(Y, F, H, G, Z), er = q && !ee ? U.rimGlowTier2 : true;
   return (0, r.jsxs)("div", {
@@ -395,13 +395,13 @@ function Q(e) {
             className: U.freeTrialPillInline,
             children: $
           })
-        }), (0, r.jsx)(w.Z, {
+        }), (0, r.jsx)(D.Z, {
           isGift: b,
           premiumTier: L.PremiumTypes.TIER_2,
           offerType: W,
           offerTierMatchesCard: Z === L.Si.TIER_2 || (0, C.Wp)(H, L.Si.TIER_2),
           showYearlyPrice: p,
-          priceOptions: D,
+          priceOptions: w,
           headingVariant: "heading-md/normal",
           headingColor: "always-white"
         })]

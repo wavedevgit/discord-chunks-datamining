@@ -83,7 +83,7 @@ async function F(e) {
   var t, n, r, o, l, u, d, _, m, h, g, E, b, v, I, T, A;
   let {
     command: C,
-    optionValues: w,
+    optionValues: D,
     context: M,
     commandTargetId: k,
     maxSizeCallback: U,
@@ -93,8 +93,8 @@ async function F(e) {
     source: F
   } = e;
   if (null == M.channel) return;
-  let H = null != (r = D.Z.getSource(M.channel.id)) ? r : F,
-    W = null != (o = D.Z.getCommandOrigin(M.channel.id)) ? o : G;
+  let H = null != (r = w.Z.getSource(M.channel.id)) ? r : F,
+    W = null != (o = w.Z.getCommandOrigin(M.channel.id)) ? o : G;
   null == M.autocomplete && a.Z.dispatch({
     type: "APPLICATION_COMMAND_USED",
     context: M,
@@ -107,10 +107,10 @@ async function F(e) {
   if (null != C.options)
     for (let e of C.options) {
       let t;
-      if (e.type === c.jw.SUB_COMMAND || e.type === c.jw.SUB_COMMAND_GROUP || !(e.name in w)) continue;
+      if (e.type === c.jw.SUB_COMMAND || e.type === c.jw.SUB_COMMAND_GROUP || !(e.name in D)) continue;
       let n = (null == (l = M.autocomplete) ? true : l.name) === e.name || true;
       if (e.type === c.jw.STRING) {
-        let r = null != (d = null == (u = R.li(w, e.name)) ? true : u.trim()) ? d : "";
+        let r = null != (d = null == (u = R.li(D, e.name)) ? true : u.trim()) ? d : "";
         if (null != e.choices ? t = (0, P.cT)(e.choices, r) : e.autocomplete && (t = null != M.autocomplete && n ? M.autocomplete.query : (0, P.Wv)(M.channel.id, e.name, r)), null == t && (t = r), "" === t && null != M.autocomplete && !n) continue;
         i()(null != M.autocomplete || null != t, 'Option "'.concat(e.name, '" expects a value')), q.push({
           type: e.type,
@@ -133,7 +133,7 @@ async function F(e) {
         });
         continue
       }
-      let r = R.OU(w[e.name]);
+      let r = R.OU(D[e.name]);
       if (i()(null != M.autocomplete || 1 === r.length, 'Option "'.concat(e.name, '" expects a single option type')), null == r[0] && !n) continue;
       let a = null != (_ = r[0]) ? _ : {
         type: "text",
@@ -234,7 +234,7 @@ async function F(e) {
       application_command: C.rootCommand
     },
     $ = () => {
-      V(w)
+      V(D)
     };
   null != k && (J.target_id = k), null != M.autocomplete ? (0, N.GV)(C, M, J) : (s.Z.clearAll(M.channel.id, X), Y({
     applicationId: C.applicationId,
@@ -330,7 +330,7 @@ function W(e, t) {
 async function K(e, t, n) {
   var r;
   if (null == t.channel) return {};
-  let i = w.Nk({
+  let i = D.Nk({
     channel: t.channel,
     type: "channel"
   }, n.type, e.applicationId);

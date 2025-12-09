@@ -113,7 +113,7 @@ function R(e) {
   } else I.moveNextTo(a, o, r)
 }
 
-function w(e) {
+function D(e) {
   let {
     sourceIds: t,
     name: n
@@ -128,7 +128,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   var {
     targetId: t,
     sourceIds: n
@@ -261,8 +261,8 @@ class V extends Chunk750041.Z {
       GUILD_MEMBER_ADD: L,
       USER_SETTINGS_PROTO_UPDATE: P,
       GUILD_MOVE_BY_ID: R,
-      GUILD_FOLDER_CREATE_LOCAL: w,
-      GUILD_FOLDER_EDIT_LOCAL: D,
+      GUILD_FOLDER_CREATE_LOCAL: D,
+      GUILD_FOLDER_EDIT_LOCAL: w,
       GUILD_FOLDER_DELETE_LOCAL: x,
       TOGGLE_GUILD_FOLDER_EXPAND: j,
       SET_GUILD_FOLDER_EXPANDED: M,

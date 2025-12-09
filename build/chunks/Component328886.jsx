@@ -54,7 +54,7 @@ function k(e) {
           color: "currentColor"
         });
       case R.Ol.ANDROID:
-        return (0, r.jsx)(w.j, {
+        return (0, r.jsx)(D.j, {
           width: s.Z.xxs,
           height: s.Z.xxs,
           color: "currentColor"
@@ -109,7 +109,7 @@ function U(e) {
     application: O,
     applicationName: C,
     channel: R,
-    header: w,
+    header: D,
     currentUserId: U,
     launchableAppId: G,
     isEmbeddedApplication: Z,
@@ -224,13 +224,13 @@ function U(e) {
     onClick: () => {},
     disabled: true
   }] : null != B ? [B] : [], [es, ec, eu, ed, B, s.author.id, s.id, W, R.id, R.guild_id, Q, el, U, ef]), e_ = ep.some(e => e.trackingArea === _.j_.CLOUD_PLAY);
-  (0, D.Z)(e_, Q);
+  (0, w.Z)(e_, Q);
   let em = i.useMemo(() => ed ? null : (0, r.jsx)(k, {
     presenceActivity: W,
     remoteJoinPlatform: el
   }), [ed, W, el]);
   return (0, r.jsx)(p.W, {
-    header: w,
+    header: D,
     title: C,
     staticBannerSrc: F,
     onClickBanner: V,

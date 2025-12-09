@@ -84,15 +84,15 @@ function k(e) {
     shouldShow: t,
     text: R.intl.string(R.t.Ve9Ge6),
     children: (0, r.jsx)(C.Z, {
-      className: D.button,
+      className: w.button,
       "aria-label": R.intl.string(R.t.Z1RnTk),
       isActive: false,
       noHover: true,
       onClick: e.onClick,
       children: (0, r.jsx)("div", {
-        className: w.iconContainer,
+        className: D.iconContainer,
         children: e.hovered ? (0, r.jsx)(d.Fmz, {
-          className: w.giftBoxIcon,
+          className: D.giftBoxIcon,
           importData: e.config.getAnimationData
         }) : (0, r.jsx)(d.OgN, {})
       })
@@ -117,23 +117,23 @@ function U(e) {
     shouldShow: a,
     text: R.intl.string(R.t.Ve9Ge6),
     children: (0, r.jsx)(C.Z, M(L({
-      className: D.button,
+      className: w.button,
       "aria-label": R.intl.string(R.t.Z1RnTk),
       isActive: false,
       noHover: true,
       onClick: o
     }, n), {
       children: (0, r.jsxs)("div", {
-        className: w.iconContainer,
+        className: D.iconContainer,
         children: [(0, r.jsx)(t, {
-          className: w.trinketsIcon,
+          className: D.trinketsIcon,
           color: "currentColor"
         }), e.hovered && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(d.Fmz, {
-            className: w.trinketsDecoration,
+            className: D.trinketsDecoration,
             importData: e.config.getAnimationData
           }), (0, r.jsx)(d.Fmz, {
-            className: w.trinketsGlow,
+            className: D.trinketsGlow,
             importData: e.config.getGlowAnimationData
           })]
         })]
@@ -152,7 +152,7 @@ function Z(e) {
   } = e, {
     analyticsLocations: u
   } = (0, p.ZP)(f.Z.GIFT_BUTTON), [d, v] = i.useState(false), T = (0, s.e7)([y.Z], () => !(null === y.Z || true === y.Z ? true : y.Z.hasLayers())), C = (0, s.e7)([O.default], () => O.default.getCurrentUser()), R = null != C ? S.default.age(C.id) : 0, {
-    giftBoxAnimation: D,
+    giftBoxAnimation: w,
     trinketsAnimation: x
   } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, L = null != n.firstTimeNotice && !a && T && R >= G, [j, M] = (0, m.XR)(L ? l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, _.t)(l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), Z = null != j, B = d || Z, F = (0, I.Ft)(c), V = c.type === N.d4z.DM, H = (0, b.ao)({
     location: "gift-promotion-button",
@@ -186,8 +186,8 @@ function Z(e) {
     W = () => {
       v(false), M(P.L.TAKE_ACTION), Y()
     },
-    K = true !== D ? (0, r.jsx)(k, {
-      config: D,
+    K = true !== w ? (0, r.jsx)(k, {
+      config: w,
       hovered: B,
       onClick: W
     }) : true !== x ? (0, r.jsx)(U, {
@@ -199,8 +199,8 @@ function Z(e) {
       channel: c
     });
   return (0, r.jsx)("div", {
-    className: o()(w.container, {
-      [w.containerHovered]: B
+    className: o()(D.container, {
+      [D.containerHovered]: B
     }),
     onMouseEnter: () => {
       d || v(true)

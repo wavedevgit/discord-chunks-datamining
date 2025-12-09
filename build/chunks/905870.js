@@ -40,8 +40,8 @@ let y = 1048576,
   N = 15 * Chunk70956.Z.Millis.MINUTE,
   P = +y,
   R = 1.5 * y,
-  w = 256,
-  D = 12,
+  D = 256,
+  w = 12,
   x = true,
   L = 4 * y,
   j = 30 * Chunk70956.Z.Millis.MINUTE,
@@ -163,7 +163,7 @@ class B extends Chunk147913.Z {
     let i = null != (e = Chunk268146.usedHeapSize) ? module : 0;
     if (!this._paHeapHooksInstalled && Chunk433517 > P) {
       let e = Chunk848479.Z.enablePAMemoryProfiler({
-        allocationThresholdKB: D,
+        allocationThresholdKB: w,
         enableCallStackTracking: x
       });
       null != module && module && (this._paHeapHooksInstalled = true)
@@ -200,7 +200,7 @@ class B extends Chunk147913.Z {
             return (null != (n = t.total_alloc_kb) ? n : 0) - (null != (r = e.total_alloc_kb) ? r : 0)
           }).slice(0, exports).filter(e => {
             var t;
-            return (null != (t = e.total_alloc_kb) ? t : 0) > w
+            return (null != (t = e.total_alloc_kb) ? t : 0) > D
           })) {
           let e = {
             memory_type: "part_alloc",

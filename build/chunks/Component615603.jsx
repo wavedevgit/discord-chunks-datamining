@@ -63,13 +63,13 @@ function R(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function D(e) {
+function w(e) {
   let {
     guildBoostSlot: t,
     isCancellable: n,
@@ -110,7 +110,7 @@ function D(e) {
         "aria-label": h.toString(),
         children: e => (0, r.jsx)("div", {
           className: C.unappliedGuildBoostSlotCta,
-          children: (0, r.jsx)(c.Avr, w(P({}, e), {
+          children: (0, r.jsx)(c.Avr, D(P({}, e), {
             variant: "primary",
             text: A.intl.string(A.t.twFU3R),
             onClick: () => a(t),
@@ -124,7 +124,7 @@ function D(e) {
         "aria-label": h.toString(),
         children: e => (0, r.jsx)("div", {
           className: C.unappliedGuildBoostSlotCta,
-          children: (0, r.jsx)(c.Avr, w(P({}, e), {
+          children: (0, r.jsx)(c.Avr, D(P({}, e), {
             variant: "primary",
             text: A.intl.string(A.t["2glQNp"]),
             onClick: () => o(t),
@@ -138,20 +138,20 @@ function D(e) {
 }
 
 function x(e) {
-  (0, u.ZDy)(async () => t => (0, r.jsx)(p.default, w(P({}, t), {
+  (0, u.ZDy)(async () => t => (0, r.jsx)(p.default, D(P({}, t), {
     guildBoostSlots: [e],
     locationSection: I.jXE.SETTINGS_PREMIUM
   })))
 }
 
 function L(e) {
-  (0, u.ZDy)(async () => t => (0, r.jsx)(_.default, w(P({}, t), {
+  (0, u.ZDy)(async () => t => (0, r.jsx)(_.default, D(P({}, t), {
     guildBoostSlot: e
   })))
 }
 
 function j(e) {
-  (0, u.ZDy)(async () => t => (0, r.jsx)(m.default, w(P({}, t), {
+  (0, u.ZDy)(async () => t => (0, r.jsx)(m.default, D(P({}, t), {
     guildBoostSlotId: e.id
   })))
 }
@@ -258,7 +258,7 @@ let M = function(e) {
             shouldShow: null == W || N,
             text: a,
             "aria-label": a.toString(),
-            children: e => (0, r.jsx)(u.Button, w(P({
+            children: e => (0, r.jsx)(u.Button, D(P({
               variant: "primary",
               text: A.intl.string(A.t.BMx1iy)
             }, e), {
@@ -269,7 +269,7 @@ let M = function(e) {
         })]
       }), (!V || U) && (0, r.jsx)("ul", {
         className: C.unappliedBoostSlots,
-        children: M.map(e => (0, r.jsx)(D, {
+        children: M.map(e => (0, r.jsx)(w, {
           guildBoostSlot: e,
           isCancellable: F,
           onCancel: L,

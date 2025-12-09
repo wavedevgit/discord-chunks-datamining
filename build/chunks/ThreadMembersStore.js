@@ -2,7 +2,7 @@
 /** chunk id: 260483, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -164,7 +164,7 @@ function R(e) {
   if (null == t) returnfalse;
   null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview), t.memberCount = e.memberCount
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z)
   }
@@ -180,8 +180,8 @@ class w extends(r = Chunk442837.ZP.Store) {
     return f
   }
 }
-u(w, "displayName", "ThreadMembersStore");
-let D = new w(Chunk570140.Z, {
+u(D, "displayName", "ThreadMembersStore");
+let w = new D(Chunk570140.Z, {
   CONNECTION_OPEN: E,
   OVERLAY_INITIALIZE: b,
   GUILD_CREATE: y,

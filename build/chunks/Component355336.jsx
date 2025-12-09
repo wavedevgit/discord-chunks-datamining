@@ -105,7 +105,7 @@ function h(e, t) {
       isScrolling: () => null != I.current,
       getScrollerState: P
     }, (0, l.Ue)(N, P, R)), [N, P, R]);
-    let w = i.useCallback(e => {
+    let D = i.useCallback(e => {
       null == I.current ? C(true) : clearTimeout(I.current), I.current = setTimeout(() => {
         I.current = null, C(false)
       }, 200), null != E && E(e)
@@ -133,7 +133,7 @@ function h(e, t) {
       }),
       style: v,
       dir: b,
-      onScroll: w
+      onScroll: D
     }, S), {
       children: (0, r.jsx)(s.Jc, {
         containerRef: T,

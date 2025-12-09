@@ -108,7 +108,7 @@ let K = u()("2015-05-15").local(),
 function q(e) {
   let t = true,
     n = e.trim();
-  return l()(w.ZP).forOwn(e => {
+  return l()(D.ZP).forOwn(e => {
     "" !== e.key && null != e.key && n === e.key && (t = false)
   }), t
 }
@@ -153,7 +153,9 @@ let Q = (e, t, n) => {
       className: Z.resultChannel,
       children: [(0, r.jsx)(L.MC, {
         channel: i,
-        className: Z.searchResultChannelIcon
+        className: Z.searchResultChannelIcon,
+        avatarSize: h.EFr.SIZE_16,
+        iconSize: "xs"
       }), (0, r.jsx)(L.GQ, {
         channel: i
       }), (0, r.jsx)(L.P, {
@@ -180,7 +182,7 @@ let Q = (e, t, n) => {
       var E, b;
       t = (0, r.jsx)("span", {
         className: Z.filter,
-        children: null != (b = null == (E = w.ZP[l]) ? true : E.key) ? b : "addme:"
+        children: null != (b = null == (E = D.ZP[l]) ? true : E.key) ? b : "addme:"
       })
     }
     return n = null != g ? g(a, l, s) : (0, r.jsx)("strong", {
@@ -291,7 +293,7 @@ let er = {
         children: (0, r.jsx)("div", {
           className: Z.searchClearHistory,
           children: (0, r.jsx)(h.P3F, {
-            onClick: () => D.Z.clearSearchHistory(t),
+            onClick: () => w.Z.clearSearchHistory(t),
             title: G.intl.string(G.t.dwAvX1),
             "aria-label": G.intl.string(G.t.dwAvX1),
             children: (0, r.jsx)(h.XHJ, {
@@ -417,7 +419,7 @@ class ei extends Chunk473749.PureComponent {
   constructor(...e) {
     var t;
     super(...e), t = this, B(this, "state", {
-      dateHint: (0, w.Pr)(),
+      dateHint: (0, D.Pr)(),
       selectedIndex: false
     }), B(this, "scrollSelectedIndexIntoView", () => {
       let {
@@ -523,7 +525,7 @@ class ei extends Chunk473749.PureComponent {
             token: i,
             group: a
           } = s.result,
-          o = (0, w._m)(s.group) ? s.group : null != a && (0, w._m)(a) ? a : null,
+          o = (0, D._m)(s.group) ? s.group : null != a && (0, D._m)(a) ? a : null,
           d = null != (c = null != i ? i : t) ? c : o,
           f = s.result.channel,
           p = d === U.dCx.FILTER_IN && null != f && f.id === S.Z.getChannelId(),
@@ -582,7 +584,7 @@ class ei extends Chunk473749.PureComponent {
         searchAutocompleteSelectAction: n
       });
       let a = U.dCx.FILTER_IN,
-        o = w.ZP[a],
+        o = D.ZP[a],
         s = (0, R.X3)(r),
         l = "".concat(null != (t = null == o ? true : o.key) ? t : a.toString(), " ").concat(s);
       return this.setSearchQuery(l, true), true

@@ -511,13 +511,13 @@ function ef(e) {
       channel_type: s.type
     })
   }, [j, k, s.guild_id, s.id, s.type]);
-  let Z = (0, u.e7)([w.default], () => {
+  let Z = (0, u.e7)([D.default], () => {
       var e;
       return null != (e = null == j ? true : j.map(e => {
         var t;
         return null == (t = e.people) ? true : t.map(e => {
           var t;
-          return null != (t = w.default.getUser(e)) ? t : null
+          return null != (t = D.default.getUser(e)) ? t : null
         }).filter(L.lm)
       })) ? e : []
     }, [j], e_),
@@ -661,10 +661,10 @@ function ef(e) {
             variant: "text-sm/medium",
             className: o()(F.newTopicsBarCompact, F.newTopicsBarText),
             children: er
-          }), (0, r.jsx)(D.Z, {
+          }), (0, r.jsx)(w.Z, {
             width: 16,
             height: 16,
-            direction: D.Z.Directions.DOWN,
+            direction: w.Z.Directions.DOWN,
             className: F.newTopicsBarCaret
           })]
         })
@@ -754,13 +754,13 @@ function em(e) {
       channel_type: s.type
     })
   }, [N, P, s.guild_id, s.id, s.type]);
-  let R = (0, u.e7)([w.default], () => {
+  let R = (0, u.e7)([D.default], () => {
       var e;
       return null != (e = null == N ? true : N.map(e => {
         var t;
         return null == (t = e.people) ? true : t.map(e => {
           var t;
-          return null != (t = w.default.getUser(e)) ? t : null
+          return null != (t = D.default.getUser(e)) ? t : null
         }).filter(L.lm)
       })) ? e : []
     }, [N], e_),
@@ -892,10 +892,10 @@ function em(e) {
             className: F.topicsPillTextTitle,
             variant: "text-sm/medium",
             children: et
-          }), (0, r.jsx)(D.Z, {
+          }), (0, r.jsx)(w.Z, {
             width: 16,
             height: 16,
-            direction: D.Z.Directions.DOWN,
+            direction: w.Z.Directions.DOWN,
             className: F.topicsPillDropdownCaret
           })]
         })
@@ -907,10 +907,10 @@ function em(e) {
           className: o()(F.topicsPillCaret, F.topicsCaretLeft, {
             [F.topicsPillCaretDisabled]: null == Z
           }),
-          children: (0, r.jsx)(D.Z, {
+          children: (0, r.jsx)(w.Z, {
             width: 16,
             height: 16,
-            direction: D.Z.Directions.UP
+            direction: w.Z.Directions.UP
           })
         }), (0, r.jsx)(d.P3F, {
           "aria-label": B.intl.string(B.t["58KOoF"]),
@@ -918,10 +918,10 @@ function em(e) {
           className: o()(F.topicsPillCaret, F.topicsCaretRight, {
             [F.topicsPillCaretDisabled]: null == k
           }),
-          children: (0, r.jsx)(D.Z, {
+          children: (0, r.jsx)(w.Z, {
             width: 16,
             height: 16,
-            direction: D.Z.Directions.DOWN
+            direction: w.Z.Directions.DOWN
           })
         })]
       })]

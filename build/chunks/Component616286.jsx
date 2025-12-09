@@ -51,7 +51,7 @@ function x(e) {
     isTyping: a,
     voiceChannelIsSelected: o
   } = O(n);
-  return (0, i.jsx)(C.Z, {
+  return (0, i.jsx)(y.Z, {
     className: t,
     unreadCount: r,
     mentionCount: l,
@@ -69,7 +69,7 @@ function E(e) {
     onClick: h,
     inPopout: f,
     showRequestToSpeakSidebar: m,
-    toggleRequestToSpeakSidebar: C
+    toggleRequestToSpeakSidebar: y
   } = e, E = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
@@ -113,8 +113,8 @@ function E(e) {
       mentionCount: n
     }
   }(n), A = r.useCallback(() => {
-    (0, p.v)(j, p.d.CHAT, !I), null == h || h(), !I && m && (null == C || C()), c.Z.updateChatOpen(n, !I)
-  }, [n, I, h, m, C, j]), w = r.useCallback(e => {
+    (0, p.v)(j, p.d.CHAT, !I), null == h || h(), !I && m && (null == y || y()), c.Z.updateChatOpen(n, !I)
+  }, [n, I, h, m, y, j]), w = r.useCallback(e => {
     let {
       className: t
     } = e;
@@ -147,7 +147,7 @@ function E(e) {
   let k = [t = f && S ? _.intl.string(_.t.DPgc5h) : I ? _.intl.string(_.t.nthdxB) : _.intl.string(_.t["5KxXrK"])];
   return N > 0 && k.push(_.intl.formatToPlainString(_.t["3l1GOx"], {
     mentionCount: N
-  })), T > 0 && k.push(_.intl.string(_.t.x5zAGZ)), (0, i.jsx)(y.Z, function(e) {
+  })), T > 0 && k.push(_.intl.string(_.t.x5zAGZ)), (0, i.jsx)(C.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

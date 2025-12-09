@@ -5,12 +5,12 @@ require.d(exports, {
   En: () => x,
   HK: () => R,
   dY: () => C,
-  eC: () => D,
+  eC: () => w,
   jz: () => P,
   kC: () => I,
   l3: () => N,
   o3: () => A,
-  vP: () => w
+  vP: () => D
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./953529.js"), require("./997841.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -170,7 +170,7 @@ function R(e) {
   return e.type === u.hBH.ARTICLE && null != e.url && (y.test(e.url) || b.test(e.url))
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   var r;
   return null != t && null != n ? {
     maxMediaWidth: t,
@@ -184,7 +184,7 @@ function w(e, t, n) {
   }
 }
 
-function D(e, t) {
+function w(e, t) {
   return e.isPrivate() ? !e.isManaged() : t.can(u.Plq.EMBED_LINKS, e)
 }
 

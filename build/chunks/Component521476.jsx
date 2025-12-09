@@ -21,7 +21,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk216390 = require("./216390.js");
 
-function y(e) {
+function C(e) {
   var t;
   let {
     guild: n
@@ -33,14 +33,14 @@ function y(e) {
       bannerIcon: (0, i.jsx)(l.ics, {
         size: "lg",
         color: "currentColor",
-        className: C.bannerIcon
+        className: y.bannerIcon
       }),
       bannerHeader: b.intl.format(b.t.GgMwjk, {
         guildName: null != (t = null == n ? true : n.name) ? t : ""
       }),
       bannerSubtext: b.intl.string(b.t.ONjwD5),
-      textStyles: C.bannerContainer,
-      headerStyles: C.bannerHeader,
+      textStyles: y.bannerContainer,
+      headerStyles: y.bannerHeader,
       children: (0, i.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
@@ -66,14 +66,14 @@ function v(e) {
       bannerIcon: (0, i.jsx)(l.ics, {
         size: "lg",
         color: "currentColor",
-        className: C.bannerIcon
+        className: y.bannerIcon
       }),
       bannerHeader: b.intl.format(b.t.kcYdTq, {
         guildName: null != (n = null == r ? true : r.name) ? n : ""
       }),
       bannerSubtext: p,
-      textStyles: C.bannerContainer,
-      headerStyles: C.bannerHeader,
+      textStyles: y.bannerContainer,
+      headerStyles: y.bannerHeader,
       children: (0, i.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
@@ -96,7 +96,7 @@ function _(e) {
   }, [t]);
   return n.has(m.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(m.q.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(v, {
     guild: t
-  }) : n.has(m.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(y, {
+  }) : n.has(m.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(C, {
     guild: t
   }) : (0, i.jsx)(v, {
     guild: t

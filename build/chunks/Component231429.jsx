@@ -72,22 +72,22 @@ function N(e) {
     message: T,
     hideParty: N,
     onView: P
-  } = e, R = (0, s.O)(h), w = (0, a.e7)([u.default], () => u.default.getId()), D = (0, a.e7)([p.Z], () => {
+  } = e, R = (0, s.O)(h), D = (0, a.e7)([u.default], () => u.default.getId()), w = (0, a.e7)([p.Z], () => {
     if (null == T.application) return p.Z.findActivity(T.author.id, e => e.type === v.IIU.LISTENING);
     {
       let e = T.author.id;
-      return (0, g.H)(T) && (e = e === w && I.isPrivate() ? I.getRecipientId() : w), p.Z.getApplicationActivity(e, T.application.id)
+      return (0, g.H)(T) && (e = e === D && I.isPrivate() ? I.getRecipientId() : D), p.Z.getApplicationActivity(e, T.application.id)
     }
-  }, [T, I, w]), x = (0, a.e7)([f.Z, _.Z], () => {
+  }, [T, I, D]), x = (0, a.e7)([f.Z, _.Z], () => {
     var e;
     return null != (e = f.Z.getApplicationActivity(R.id)) ? e : _.Z.getApplicationActivity(R.id, true)
   }, [R.id]), L = (0, a.Wu)([d.Z], () => {
     var e;
-    return null == D || null == D.party ? [] : Array.from(null != (e = d.Z.getParty(D.party.id)) ? e : [])
-  }, [D]), {
+    return null == w || null == w.party ? [] : Array.from(null != (e = d.Z.getParty(w.party.id)) ? e : [])
+  }, [w]), {
     partySize: j,
     maxPartySize: M
-  } = (0, E._)(D), k = i.useMemo(() => L.map(e => {
+  } = (0, E._)(w), k = i.useMemo(() => L.map(e => {
     let t = m.default.getUser(e);
     return null != t ? t : b.ag
   }), [L]), U = i.useMemo(() => {
@@ -100,31 +100,31 @@ function N(e) {
       activityActionType: null == (e = T.activity) ? true : e.type
     })
   }, [k, j, M, I.guild_id, null == (t = T.activity) ? true : t.type]);
-  return (0, S.Ps)(null == D || null == (n = D.party) ? true : n.id) || R.id === c.r9.id ? (0, r.jsx)(O.Z, {
+  return (0, S.Ps)(null == w || null == (n = w.party) ? true : n.id) || R.id === c.r9.id ? (0, r.jsx)(O.Z, {
     application: R,
     currentUserPresenceActivity: x,
     hideParty: N,
     message: T,
     onView: P,
     partyStatusElement: U,
-    presenceActivity: D,
+    presenceActivity: w,
     guildId: I.guild_id
   }) : C(T) ? (0, r.jsx)(l.Z, {
     analyticsLocations: o,
     application: R,
     channel: I,
-    currentUserId: w,
+    currentUserId: D,
     message: T
   }) : (0, r.jsx)(y.Z, {
     analyticsLocations: o,
     application: R,
     channel: I,
-    currentUserId: w,
+    currentUserId: D,
     currentUserPresenceActivity: x,
     hideParty: N,
     message: T,
     onView: P,
     partyStatusElement: U,
-    presenceActivity: D
+    presenceActivity: w
   })
 }

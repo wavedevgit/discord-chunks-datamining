@@ -74,27 +74,27 @@ function C(e) {
   } = e, {
     channelAction: m,
     completed: b
-  } = (0, E.P3)(f, p), y = (0, E.K_)(f, null == m ? true : m.channelId), O = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), C = (null == m ? true : m.actionType) === g.NewMemberActionTypes.VIEW, N = (0, c.dQu)(c.TVs.colors.WHITE), [P, R] = i.useState(false), [w] = i.useState(new s.Z.Value(0)), [D] = i.useState(new s.Z.Value(0));
+  } = (0, E.P3)(f, p), y = (0, E.K_)(f, null == m ? true : m.channelId), O = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), C = (null == m ? true : m.actionType) === g.NewMemberActionTypes.VIEW, N = (0, c.dQu)(c.TVs.colors.WHITE), [P, R] = i.useState(false), [D] = i.useState(new s.Z.Value(0)), [w] = i.useState(new s.Z.Value(0));
   i.useEffect(() => {
-    b ? s.Z.timing(w, {
+    b ? s.Z.timing(D, {
       toValue: 0,
       duration: O ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 500 * !C
-    }).start(() => R(true)) : s.Z.timing(w, {
+    }).start(() => R(true)) : s.Z.timing(D, {
       toValue: 1,
       duration: O ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [b, w, C, O]), i.useEffect(() => {
-    b && P && s.Z.timing(D, {
+  }, [b, D, C, O]), i.useEffect(() => {
+    b && P && s.Z.timing(w, {
       toValue: 1,
       duration: 350 * !O,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [b, D, P, O]);
+  }, [b, w, P, O]);
   let x = i.useCallback(() => {
     null != y && (0, h.gp)(f, y.channelId)
   }, [f, y]);
@@ -102,7 +102,7 @@ function C(e) {
     className: o()(S.container, _),
     children: P && null != y ? (0, r.jsx)(s.Z.div, {
       style: {
-        marginBottom: D.interpolate({
+        marginBottom: w.interpolate({
           inputRange: [0, 1],
           outputRange: [-I, 0]
         })
@@ -137,7 +137,7 @@ function C(e) {
     }) : (0, r.jsxs)(s.Z.div, {
       className: S.banner,
       style: {
-        marginBottom: w.interpolate({
+        marginBottom: D.interpolate({
           inputRange: [0, 1],
           outputRange: [-I, 0]
         })

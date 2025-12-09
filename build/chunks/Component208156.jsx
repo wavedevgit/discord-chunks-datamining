@@ -72,13 +72,13 @@ function v(e) {
   } = e, S = (0, f.sU)({}), I = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), A = (0, p.Z)(T, g, null == S ? window : S), C = O(b({}, E), {
     frame_id: I,
     platform: m.S4.DESKTOP
-  }), [N, P] = i.useState(false), R = u.Z.theme, w = b({}, a);
+  }), [N, P] = i.useState(false), R = u.Z.theme, D = b({}, a);
 
-  function D(e) {
+  function w(e) {
     var n;
     null == o || o(e.target), T.current = e.target, A(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, C], null != t ? t : "")
   }
-  return R === h.BRd.LIGHT ? w.colorScheme = "light" : w.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(h.CkL.IFRAME_MOUNT, {
+  return R === h.BRd.LIGHT ? D.colorScheme = "light" : D.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(h.CkL.IFRAME_MOUNT, {
     id: I
   }), () => {
     d.S.dispatch(h.CkL.IFRAME_UNMOUNT, {
@@ -94,11 +94,11 @@ function v(e) {
     return d.S.subscribe(h.CkL.MANUAL_IFRAME_RESIZING, e), () => {
       d.S.unsubscribe(h.CkL.MANUAL_IFRAME_RESIZING, e)
     }
-  }, []), N && (w.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
-    style: w,
+  }, []), N && (D.pointerEvents = "none"), null != t ? (0, r.jsx)("iframe", {
+    style: D,
     allow: "autoplay; encrypted-media",
     referrerPolicy: v,
-    onLoad: D,
+    onLoad: w,
     sandbox: (0, _.Z)({
       allowPopups: y
     }),

@@ -86,7 +86,7 @@ class z extends Chunk473749.PureComponent {
   }
   tokenize(e) {
     let t = (0, A.kG)(v.Sq(e)).filter(e => e.type !== f.ZP.NON_TOKEN_TYPE);
-    return v.lv(t, e, w.ZP)
+    return v.lv(t, e, D.ZP)
   }
   clearSearch() {
     let {
@@ -211,7 +211,7 @@ class z extends Chunk473749.PureComponent {
       let {
         isSearchFiltersRedesignEnabled: e
       } = this.props;
-      return e ? (0, r.jsx)(D.Z, {
+      return e ? (0, r.jsx)(w.Z, {
         ref: this._searchFiltersRedesignPopoutRef,
         searchContext: this.props.searchContext,
         navId: W,
@@ -284,7 +284,7 @@ class z extends Chunk473749.PureComponent {
           _editorRef: e
         } = this;
         null == e || e.focus(), this.handleSetSearchQuery({
-          query: w.ZP[B.dCx.FILTER_IN].key + "".concat(o, " "),
+          query: D.ZP[B.dCx.FILTER_IN].key + "".concat(o, " "),
           replace: true,
           searchQuerySource: G.w7.SEARCH_TEXT_INPUT
         })
@@ -473,7 +473,7 @@ function q(e) {
   i.useEffect(() => {
     l && c.current !== l && (c.current = l, L.Z.ensureSearchInputDecorators(t))
   }, [l, t]);
-  let f = i.useMemo(() => null != s ? s : v.nR(S.Jl(w.ZP)), [s]),
+  let f = i.useMemo(() => null != s ? s : v.nR(S.Jl(D.ZP)), [s]),
     {
       isSearching: p,
       hasResults: m
@@ -486,7 +486,7 @@ function q(e) {
     }),
     O = (0, u.e7)([g.ZP], () => g.ZP.getCurrentSearchContextId()),
     [I, C] = i.useState(false),
-    D = i.useRef(I),
+    w = i.useRef(I),
     j = (0, u.e7)([g.ZP, y.Z, E.Z], () => {
       let e = y.Z.getCurrentlySelectedChannelId(),
         t = E.Z.getChannel(e);
@@ -499,9 +499,9 @@ function q(e) {
   let G = (0, d.VXO)(Z.L),
     V = M || G;
   i.useEffect(() => {
-    D.current && !I && (D.current = false, (0, U.IZ)({
+    w.current && !I && (w.current = false, (0, U.IZ)({
       searchContext: t
-    })), !D.current && I && (D.current = true)
+    })), !w.current && I && (w.current = true)
   }, [t, I]);
   let H = i.useCallback(e => {
       let {
@@ -541,7 +541,7 @@ function q(e) {
     q = (0, N.UX)({
       location: "Search"
     }),
-    Q = i.useMemo(() => t.type === B.aib.DMS ? F.intl.string(F.t.m7OrlR) : t.type === B.aib.CHANNEL && q || W ? F.intl.formatToPlainString(F.t.LDZtFO, {
+    Q = i.useMemo(() => t.type === B.aib.DMS ? F.intl.string(F.t.m7OrlR) : W || q ? F.intl.formatToPlainString(F.t.LDZtFO, {
       name: Y
     }) : F.intl.string(F.t["5h0QOP"]), [t.type, q, W, Y]);
   return (0, r.jsx)(z, {

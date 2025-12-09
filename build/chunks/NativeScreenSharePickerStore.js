@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  UB: () => D,
+  UB: () => w,
   Uc: () => S,
   ZP: () => H,
   kE: () => x
@@ -51,7 +51,7 @@ function R() {
   return Chunk131951.Z.getUseSystemScreensharePicker()
 }
 
-function w() {
+function D() {
   let e = R() && (A > 0 || I && 0 === T);
   if (module !== C) {
     var t, n;
@@ -59,21 +59,21 @@ function w() {
   }
 }
 
-function D() {
-  return (0, Chunk473749.useEffect)(() => (T++, w(), () => {
-    0 == --T && w()
+function w() {
+  return (0, Chunk473749.useEffect)(() => (T++, D(), () => {
+    0 == --T && D()
   }), [])
 }
 
 function x() {
-  return (0, Chunk473749.useEffect)(() => (A++, w(), () => {
-    --A, w()
+  return (0, Chunk473749.useEffect)(() => (A++, D(), () => {
+    --A, D()
   }), [])
 }
 
 function L() {
   let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId());
-  return I = null != module && (0, Chunk74299.Z)(Chunk131951.Z) && (0, Chunk102172.JL)(module, Chunk430824.Z, Chunk496675.Z, false), w(), false
+  return I = null != module && (0, Chunk74299.Z)(Chunk131951.Z) && (0, Chunk102172.JL)(module, Chunk430824.Z, Chunk496675.Z, false), D(), false
 }
 
 function j() {

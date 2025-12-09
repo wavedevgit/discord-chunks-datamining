@@ -191,11 +191,11 @@ module.exports = function(e) {
     }, []));
     var P = r.getKey(),
       R = u.encode(P, 0, 0),
-      w = T(r, o),
-      D = w.CustomComponent,
-      x = null != D ? d.createElement(D, i({}, this.props, {
+      D = T(r, o),
+      w = D.CustomComponent,
+      x = null != w ? d.createElement(w, i({}, this.props, {
         tree: m.getBlockTree(P),
-        blockProps: w.customProps,
+        blockProps: D.customProps,
         offsetKey: R,
         block: r
       })) : d.createElement(c, {
@@ -213,7 +213,7 @@ module.exports = function(e) {
       });
     if (r.getParentKey()) return x;
     var L = I(r, a).Element,
-      j = A(r, _, R, l, w, this.wrapperRef);
+      j = A(r, _, R, l, D, this.wrapperRef);
     return d.createElement(L, j, x)
   }, t
 }(Chunk473749.Component)

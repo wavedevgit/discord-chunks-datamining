@@ -162,7 +162,7 @@ function R(e) {
   })
 }
 
-function w() {
+function D() {
   let e = Chunk473749.useRef(false),
     t = Chunk473749.useCallback(() => {
       module.current = true
@@ -177,7 +177,7 @@ function w() {
   }
 }
 
-function D(e) {
+function w(e) {
   let [t, n] = i.useState(0), r = i.useRef(e);
   return e !== r.current && 0 !== t && n(0), i.useEffect(() => {
     r.current = e
@@ -196,7 +196,7 @@ function x(e) {
     mouseFocusEnabled: f,
     enableMouseFocus: _,
     disableMouseFocus: E
-  } = w(), {
+  } = D(), {
     query: b,
     updateQuery: y,
     queryResults: O
@@ -207,7 +207,7 @@ function x(e) {
   }), v = P(b), {
     focusedIndex: T,
     setFocusedIndex: R
-  } = D(b);
+  } = w(b);
   i.useEffect(() => {
     let {
       current: e

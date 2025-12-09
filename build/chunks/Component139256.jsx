@@ -100,7 +100,7 @@ function R(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     className: t,
     children: n
@@ -113,7 +113,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     className: t,
     children: n
@@ -194,12 +194,12 @@ function j(e) {
   }).with({
     answersInteraction: b.Y7.RADIO_BUTTONS
   }, () => ({
-    ContainerComponent: D,
+    ContainerComponent: w,
     answerElementType: 1
   })).with({
     answersInteraction: b.Y7.CHECKBOXES
   }, () => ({
-    ContainerComponent: w,
+    ContainerComponent: D,
     answerElementType: 2
   })).with({
     canTapAnswers: true,

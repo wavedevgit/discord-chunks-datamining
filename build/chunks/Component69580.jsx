@@ -275,12 +275,12 @@ function ec(e) {
   i.useEffect(() => {
     x.default.isAuthenticated() && !eP && b.Z.getExperiments()
   }, [eP]);
-  let [eR, ew] = i.useState(null), [eD, ex] = i.useState(null), [eL, ej] = i.useState(null), [eM, ek] = i.useState(false), [eU, eG] = i.useState(false), eZ = null == eR ? true : eR.guilds, [eB, eF] = i.useState(null != ep ? ep : null), [eV, eH] = i.useState(null != e_ ? e_ : null), [eY, eW] = i.useState(L.Hn), [eK, ez] = i.useState(false), eq = i.useMemo(() => (null == eR ? true : eR.user) != null ? new D.Z(eR.user) : null, [null == eR ? true : eR.user]), eQ = (0, T.Z)(null != (t = null == eR ? true : eR.application) ? t : null), eX = i.useMemo(() => null == eZ ? true : eZ.find(e => e.id === eB), [eZ, eB]), [eJ, e$] = i.useState(null), e0 = i.useMemo(() => {
+  let [eR, eD] = i.useState(null), [ew, ex] = i.useState(null), [eL, ej] = i.useState(null), [eM, ek] = i.useState(false), [eU, eG] = i.useState(false), eZ = null == eR ? true : eR.guilds, [eB, eF] = i.useState(null != ep ? ep : null), [eV, eH] = i.useState(null != e_ ? e_ : null), [eY, eW] = i.useState(L.Hn), [eK, ez] = i.useState(false), eq = i.useMemo(() => (null == eR ? true : eR.user) != null ? new w.Z(eR.user) : null, [null == eR ? true : eR.user]), eQ = (0, T.Z)(null != (t = null == eR ? true : eR.application) ? t : null), eX = i.useMemo(() => null == eZ ? true : eZ.find(e => e.id === eB), [eZ, eB]), [eJ, e$] = i.useState(null), e0 = i.useMemo(() => {
     var e;
     return null == eC && null == em && (null != (e = null == ed ? true : ed.length) ? e : 0) === 0 && null == er
   }, [eC, null == ed ? true : ed.length, er, em]), [e1, e3] = i.useState(null);
   i.useEffect(() => {
-    e0 && S.ZP.fetchApplication($).then(e => e3(w.ZP.createFromServer(e)))
+    e0 && S.ZP.fetchApplication($).then(e => e3(D.ZP.createFromServer(e)))
   }, [$, e0]);
   let e2 = i.useMemo(() => {
       var e, t;
@@ -405,7 +405,7 @@ function ec(e) {
             nonce: es,
             integrationType: null != eJ ? eJ : true
           });
-          ew((0, U.d)(e)), ec === B.s.NONE && e.authorized && !tt && tr(true), (0, y.yw)(J.rMx.OAUTH2_AUTHORIZE_VIEWED, {
+          eD((0, U.d)(e)), ec === B.s.NONE && e.authorized && !tt && tr(true), (0, y.yw)(J.rMx.OAUTH2_AUTHORIZE_VIEWED, {
             application_id: e.application.id,
             mobile_push_notification_default_setting: false
           })
@@ -433,21 +433,21 @@ function ec(e) {
     }, [e1, e0]),
     ts = i.useRef(null);
   i.useEffect(() => {
-    eD !== ts.current && (ts.current = eD, (0, y.yw)(J.rMx.OAUTH2_AUTHORIZE_STEP_VIEWED, {
-      step: eD,
+    ew !== ts.current && (ts.current = ew, (0, y.yw)(J.rMx.OAUTH2_AUTHORIZE_STEP_VIEWED, {
+      step: ew,
       application_id: $,
       integration_type: eJ,
       scopes: e5,
       permissions: e6.toString(),
       mobile_push_notification_default_setting: false
     }))
-  }, [$, eJ, e6, e5, eD]), i.useEffect(() => {
-    if (null == eD && (!e0 || null != e1) && eP)
+  }, [$, eJ, e6, e5, ew]), i.useEffect(() => {
+    if (null == ew && (!e0 || null != e1) && eP)
       if (null != eC) {
         var e;
         e$(null != (e = eC.integration_type) ? e : u.Y.GUILD_INSTALL), ex("AUTHORIZE_SCOPES")
       } else to.length > 1 ? ex("SELECT_INSTALL_TYPE") : (1 === to.length ? e$(to[0]) : null != em ? e$(em) : e$(u.Y.GUILD_INSTALL), ex("AUTHORIZE_SCOPES"))
-  }, [eC, to, e1, e0, em, eD, eP]), i.useEffect(() => {
+  }, [eC, to, e1, e0, em, ew, eP]), i.useEffect(() => {
     if (null == eJ || null != eR || null != eL) return;
     eJ === u.Y.USER_INSTALL && (eF(null), eH(null));
     let e = e5.filter(e => !Z.ak.includes(e));
@@ -487,7 +487,7 @@ function ec(e) {
     }]
   };
   let tu = e => {
-      e$(e), ew(null), ex("AUTHORIZE_SCOPES")
+      e$(e), eD(null), ex("AUTHORIZE_SCOPES")
     },
     td = (e, t) => {
       eW(n => e ? f.Od(n, t) : f.IH(n, t))
@@ -498,7 +498,7 @@ function ec(e) {
     tm = true,
     th = true,
     tg = false;
-  switch (eD) {
+  switch (ew) {
     case null:
       return {
         label: ee.intl.string(ee.t.ZTNur7), body: (0, r.jsx)(el, {})
@@ -606,7 +606,7 @@ function ec(e) {
     variant: "secondary",
     onClick: () => tr(false),
     text: ee.intl.string(ee.t["ETE/oC"])
-  }), "SELECT_INSTALL_TYPE" !== eD && tS.push(eU ? {
+  }), "SELECT_INSTALL_TYPE" !== ew && tS.push(eU ? {
     onClick: null != C ? () => ex(C) : () => tr(true),
     loading: eM,
     disabled: null == P || tp,

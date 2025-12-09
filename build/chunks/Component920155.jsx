@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   I: () => S,
-  m: () => w
+  m: () => D
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -105,7 +105,7 @@ function R() {
   }
 }
 
-function w(e) {
+function D(e) {
   var t;
   let {
     children: n,
@@ -114,8 +114,8 @@ function w(e) {
     onRequestClose: g,
     position: b = "top",
     align: v,
-    alignmentStrategy: w = "trigger-center",
-    caretConfig: D,
+    alignmentStrategy: D = "trigger-center",
+    caretConfig: w,
     hasVideo: x = false,
     gradientColor: L,
     gradientOffsetBottom: j = .4,
@@ -155,7 +155,7 @@ function w(e) {
       onExitComplete: en
     }),
     ei = i.useMemo(() => {
-      if ("edge" === w && null != v) {
+      if ("edge" === D && null != v) {
         let e = "top" === H || "bottom" === H,
           t = "left" === H || "right" === H;
         if (e) {
@@ -163,17 +163,17 @@ function w(e) {
         } else if (t && ("top" === v || "center" === v || "bottom" === v)) return v;
       }
       return "center"
-    }, [w, v, H]),
+    }, [D, v, H]),
     ea = i.useMemo(() => {
       var e;
-      if ("edge" !== w) return R(null != (e = null == D ? true : D.align) ? e : "center", H, q, Q)
-    }, [w, D, H, q, Q]),
+      if ("edge" !== D) return R(null != (e = null == w ? true : w.align) ? e : "center", H, q, Q)
+    }, [D, w, H, q, Q]),
     eo = i.useMemo(() => ({
       position: H,
-      caretConfig: null != D ? D : {
+      caretConfig: null != w ? w : {
         align: "center"
       }
-    }), [H, D]),
+    }), [H, w]),
     es = e => {
       var {
         setPopoutRef: t,

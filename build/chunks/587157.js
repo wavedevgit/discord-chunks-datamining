@@ -36,8 +36,8 @@ function v(e) {
       escapeKeyBehavior: N = "clearSelection",
       selectOnFocus: P = "replace" === n.selectionBehavior,
       disallowTypeAhead: R = false,
-      shouldUseVirtualFocus: w,
-      allowsTabNavigation: D = false,
+      shouldUseVirtualFocus: D,
+      allowsTabNavigation: w = false,
       isVirtualized: x,
       scrollRef: L = S,
       linkBehavior: j = "action"
@@ -123,7 +123,7 @@ function v(e) {
           "clearSelection" !== N || A || 0 === n.selectedKeys.size || (e.stopPropagation(), e.preventDefault(), n.clearSelection());
           break;
         case "Tab":
-          if (!D)
+          if (!w)
             if (e.shiftKey) S.current.focus();
             else {
               let e, t, n = (0, m.QL)(S.current, {
@@ -161,7 +161,7 @@ function v(e) {
         } else !x && L.current && (L.current.scrollTop = G.current.top, L.current.scrollLeft = G.current.left);
         if (null != n.focusedKey && L.current) {
           let e = (0, r.D0)(S, n.focusedKey);
-          e instanceof HTMLElement && (e.contains(document.activeElement) || w || (0, s.A)(e), "keyboard" === (0, b.Jz)() && (0, c.G)(e, {
+          e instanceof HTMLElement && (e.contains(document.activeElement) || D || (0, s.A)(e), "keyboard" === (0, b.Jz)() && (0, c.G)(e, {
             containingElement: S.current
           }))
         }
@@ -171,7 +171,7 @@ function v(e) {
       e.currentTarget.contains(e.relatedTarget) || n.setFocused(false)
     },
     F = (0, E.useRef)(false);
-  (0, l.z)(S, u.N, w ? e => {
+  (0, l.z)(S, u.N, D ? e => {
     let {
       detail: t
     } = e;
@@ -193,7 +193,7 @@ function v(e) {
   });
   (0, p.i)(() => {
     H()
-  }, [n.focusedKey, H]), (0, l.z)(S, u.o, w ? e => {
+  }, [n.focusedKey, H]), (0, l.z)(S, u.o, D ? e => {
     var t;
     e.stopPropagation(), n.setFocused(false), (null == (t = e.detail) ? true : t.clearFocusKey) && n.setFocusedKey(null)
   } : true);
@@ -212,7 +212,7 @@ function v(e) {
             break
           }
       }
-      n.setFocused(true), n.setFocusedKey(a), null == a && !w && S.current && (0, y.e)(S.current), n.collection.size > 0 && (Y.current = false, W.current = true)
+      n.setFocused(true), n.setFocusedKey(a), null == a && !D && S.current && (0, y.e)(S.current), n.collection.size > 0 && (Y.current = false, W.current = true)
     }
   });
   let K = (0, E.useRef)(n.focusedKey),
@@ -227,7 +227,7 @@ function v(e) {
           containingElement: S.current
         }))
       }))
-    }!w && n.isFocused && null == n.focusedKey && null != K.current && S.current && (0, y.e)(S.current), K.current = n.focusedKey, W.current = false
+    }!D && n.isFocused && null == n.focusedKey && null != K.current && S.current && (0, y.e)(S.current), K.current = n.focusedKey, W.current = false
   }), (0, E.useEffect)(() => () => {
     z.current && cancelAnimationFrame(z.current)
   }, []), (0, l.z)(S, "react-aria-focus-scope-restore", e => {
@@ -247,7 +247,7 @@ function v(e) {
       keyboardDelegate: v,
       selectionManager: n
     });
-  R || (q = (0, _.d)(Q, q)), w || (t = null == n.focusedKey ? 0 : false);
+  R || (q = (0, _.d)(Q, q)), D || (t = null == n.focusedKey ? 0 : false);
   let X = (0, r.Mm)(n.collection);
   return {
     collectionProps: (0, _.d)(q, {

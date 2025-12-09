@@ -2,7 +2,7 @@
 /** chunk id: 850827, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -34,14 +34,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk910424 = require("./910424.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk964719 = require("./964719.js");
-let D = (0, Chunk730749.Z)(e => {
+let w = (0, Chunk730749.Z)(e => {
   let {
     activity: t,
     embeddedActivity: n,
     user: i,
     applicationStream: o,
     className: u,
-    guildId: D,
+    guildId: w,
     channelId: x,
     source: L,
     buttonVariant: j,
@@ -70,7 +70,7 @@ let D = (0, Chunk730749.Z)(e => {
       let e = (0, r.jsx)(C.Z, {
           activity: t,
           user: i,
-          guildId: D,
+          guildId: w,
           channelId: x,
           source: L,
           onAction: k
@@ -134,7 +134,7 @@ let D = (0, Chunk730749.Z)(e => {
     align: f.Z.Align.STRETCH,
     direction: B,
     wrap: Y ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
-    className: a()(u, w.buttonsWrapper, Y ? w.vertical : w.horizontal),
+    className: a()(u, D.buttonsWrapper, Y ? D.vertical : D.horizontal),
     children: H()
   })
 })

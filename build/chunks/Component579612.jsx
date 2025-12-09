@@ -25,30 +25,33 @@ var Chunk120356 = require("./120356.js"),
 function h(e) {
   let {
     channel: t,
-    className: n
+    className: n,
+    avatarSize: i,
+    iconSize: a
   } = e;
   if (t.isDM()) {
     let e = t.getRecipientId(),
       n = p.default.getUser(e);
     if (null == n) return null;
-    let i = n.getAvatarURL(null, 20);
+    let a = n.getAvatarURL(null, o.ny6[i].size);
     return (0, r.jsx)(o.qEK, {
       "aria-hidden": true,
       className: m.searchResultDMChannelIcon,
-      size: o.EFr.SIZE_20,
-      src: i
+      size: i,
+      src: a
     })
   }
   if (t.isGroupDM()) return (0, r.jsx)(c.Z, {
     "aria-hidden": true,
     className: m.searchResultGDMChannelIcon,
     channel: t,
-    size: o.EFr.SIZE_20
+    size: i
   });
-  let i = (0, l.KS)(t);
-  return null == i ? null : (0, r.jsx)(i, {
+  let s = (0, l.KS)(t);
+  return null == s ? null : (0, r.jsx)(s, {
     className: n,
-    color: "currentColor"
+    color: "currentColor",
+    size: a
   })
 }
 
@@ -89,16 +92,18 @@ function b(e) {
     channel: t,
     text: n,
     channelContainerClassName: i,
-    textContainerClassName: o
+    textContainerClassName: s
   } = e;
   return null == t ? (0, r.jsx)("strong", {
     children: n
   }) : (0, r.jsxs)("div", {
     className: a()(m.resultChannel, i),
     children: [(0, r.jsx)(h, {
-      channel: t
+      channel: t,
+      avatarSize: o.EFr.SIZE_20,
+      iconSize: "refresh_sm"
     }), (0, r.jsxs)("div", {
-      className: o,
+      className: s,
       children: [(0, r.jsx)(g, {
         channel: t
       }), (0, r.jsx)(E, {

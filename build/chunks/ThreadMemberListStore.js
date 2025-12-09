@@ -211,7 +211,7 @@ function R(e) {
   return n
 }
 
-function w(e) {
+function D(e) {
   var t;
   let {
     channel: n
@@ -220,7 +220,7 @@ function w(e) {
   delete y[n.id]
 }
 
-function D(e) {
+function w(e) {
   let {
     channel: t
   } = e;
@@ -275,8 +275,8 @@ b(j, "displayName", "ThreadMemberListStore");
 let M = new j(Chunk570140.Z, {
   CONNECTION_OPEN: v,
   THREAD_MEMBERS_UPDATE: S,
-  THREAD_UPDATE: w,
-  THREAD_DELETE: D,
+  THREAD_UPDATE: D,
+  THREAD_DELETE: w,
   CHANNEL_UPDATES: L,
   THREAD_MEMBER_LIST_UPDATE: I,
   USER_UPDATE: T,

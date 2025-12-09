@@ -23,17 +23,17 @@ function u(e) {
     onReportSubmit: f,
     onMouseEnter: m,
     onMouseLeave: g
-  } = e, b = (0, o.Q)(t), C = (0, s.V)(n.id, t);
-  if (!b || null == C) return null;
-  let y = () => {
+  } = e, b = (0, o.Q)(t), y = (0, s.V)(n.id, t);
+  if (!b || null == y) return null;
+  let C = () => {
     null == f || f(), l.Z.closePrivateChannel(n.id, p)
   };
   return (0, i.jsx)(r.Button, {
     size: d,
     variant: "critical-primary",
-    disabled: null == C,
+    disabled: null == y,
     onClick: () => {
-      null == h || h(), (0, a.WL)(C, y)
+      null == h || h(), (0, a.WL)(y, C)
     },
     onMouseEnter: m,
     onMouseLeave: g,

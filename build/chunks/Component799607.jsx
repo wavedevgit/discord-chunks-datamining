@@ -65,7 +65,7 @@ function _(e) {
     size: E = "md",
     actions: b,
     gradientColor: y
-  } = e, O = i.useContext(a.S), [v, S] = i.useState("closed"), I = i.useRef(null), T = i.useRef(false), A = "opening-mouse" === v || "open-mouse" === v, C = "opening-keyboard" === v || "open-keyboard" === v, N = "open-mouse" === v || "open-keyboard" === v, P = (O.keyboardModeEnabled || C) && null != b, R = P, [w, D] = i.useState(0), x = (0, l.$)(n, c, v), L = i.useCallback(() => {
+  } = e, O = i.useContext(a.S), [v, S] = i.useState("closed"), I = i.useRef(null), T = i.useRef(false), A = "opening-mouse" === v || "open-mouse" === v, C = "opening-keyboard" === v || "open-keyboard" === v, N = "open-mouse" === v || "open-keyboard" === v, P = (O.keyboardModeEnabled || C) && null != b, R = P, [D, w] = i.useState(0), x = (0, l.$)(n, c, v), L = i.useCallback(() => {
     null != I.current && (clearTimeout(I.current), I.current = null)
   }, []), j = i.useCallback(e => {
     e && (T.current = true), L(), S("closing")
@@ -115,7 +115,7 @@ function _(e) {
       }
     })), [b, j]),
     B = i.useCallback(e => {
-      D(e)
+      w(e)
     }, []);
   return (0, r.jsxs)("div", {
     onMouseEnter: M,
@@ -139,7 +139,7 @@ function _(e) {
       isCaretHoverable: true,
       caretConfig: {
         align: "custom",
-        customOffset: w
+        customOffset: D
       },
       onNudgeChange: B,
       onRequestClose: e => {

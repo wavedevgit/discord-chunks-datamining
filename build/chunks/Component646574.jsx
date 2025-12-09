@@ -62,9 +62,9 @@ function v(e) {
     checked: t,
     onClick: n,
     id: a = "burst-reaction-toggle-button"
-  } = e, v = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), S = p.default.getCurrentUser(), I = null == S || (0, _.I5)(S) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [T, A] = (0, f.US)(I), [C, N] = i.useState(false), [P, R] = (0, u.q_F)(() => ({})), w = (0, s.animated)(u.Pt5);
+  } = e, v = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), S = p.default.getCurrentUser(), I = null == S || (0, _.I5)(S) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [T, A] = (0, f.US)(I), [C, N] = i.useState(false), [P, R] = (0, u.q_F)(() => ({})), D = (0, s.animated)(u.Pt5);
 
-  function D() {
+  function w() {
     R({
       from: {
         rotate: t ? "360deg" : "0deg"
@@ -95,7 +95,7 @@ function v(e) {
     children: [(0, r.jsx)("input", {
       className: g.visuallyHidden,
       checked: t,
-      onChange: D,
+      onChange: w,
       id: a,
       type: "checkbox"
     }), (0, r.jsxs)("label", {
@@ -103,7 +103,7 @@ function v(e) {
       className: o()(g.label, {
         [g.labelChecked]: t
       }),
-      children: [(0, r.jsx)(w, {
+      children: [(0, r.jsx)(D, {
         style: v ? true : P,
         size: "custom",
         width: b,

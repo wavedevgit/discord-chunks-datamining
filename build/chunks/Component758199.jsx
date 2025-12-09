@@ -77,8 +77,8 @@ function O(e) {
   let {
     primaryColor: C,
     secondaryColor: N
-  } = (0, f.Z)(null != v ? v : m), P = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")"), R = (0, u.e7)([d.Z], () => d.Z.useReducedMotion), w = i.useRef(false), D = (0, l.O)(e => {
-    if (false === w.current && e) {
+  } = (0, f.Z)(null != v ? v : m), P = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")"), R = (0, u.e7)([d.Z], () => d.Z.useReducedMotion), D = i.useRef(false), w = (0, l.O)(e => {
+    if (false === D.current && e) {
       var t;
       null == I || null == (t = I.onView) || t.call(I), (0, _.GF)({
         appId: I.id,
@@ -88,7 +88,7 @@ function O(e) {
         guildId: I.guildId,
         channelId: I.channelId,
         messageId: I.messageId
-      }), w.current = true
+      }), D.current = true
     }
   }, true), x = null != m, L = null != E && false === R, j = x || L, M = 0 === O ? g.bannerAspectRatioBot : g.bannerAspectRatioActivity, k = i.useRef(null), U = i.useCallback(() => {
     let e = k.current;
@@ -117,7 +117,7 @@ function O(e) {
     }
   }, [A, I]);
   return (0, r.jsxs)("div", {
-    ref: D,
+    ref: w,
     className: g.embed,
     children: [j && (0, r.jsxs)(y, {
       onClick: B,

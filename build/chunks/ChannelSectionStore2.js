@@ -68,8 +68,8 @@ let T = "message_requests",
   N = true,
   P = {},
   R = {},
-  w = false,
-  D = null;
+  D = false,
+  w = null;
 
 function x(e) {
   if (null == e) return null;
@@ -86,13 +86,13 @@ function L(e) {
 
 function j(e) {
   let t = false;
-  w && (w = false, t = true);
+  D && (D = false, t = true);
   let n = x(m.Z.getChannelId());
   return null != n && n in P && (delete P[n], t = true), t && e ? e : !e
 }
 
 function M() {
-  w && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), C && (C = j(C)), A = j(A)
+  D && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), C && (C = j(C)), A = j(A)
 }
 
 function k() {
@@ -110,7 +110,7 @@ function G(e) {
     baseChannelId: r,
     details: i
   } = e;
-  w = false;
+  D = false;
   let a = x(r);
   return null != a && (R[n] = {
     type: t,
@@ -134,7 +134,7 @@ function B(e) {
     channelId: r,
     details: i
   } = e;
-  w = false;
+  D = false;
   let a = x(n);
   if (null == a) returnfalse;
   let o = {
@@ -153,7 +153,7 @@ function F(e) {
     parentMessageId: n,
     location: r
   } = e;
-  w = false;
+  D = false;
   let i = x(t);
   null != i && (P[i] = {
     type: c.tI.CREATE_THREAD,
@@ -217,9 +217,9 @@ function K(e) {
 }
 
 function z() {
-  let e = null != D && Chunk171900.Z.hasSearchState(D);
-  if (module === w) returnfalse;
-  w = module
+  let e = null != w && Chunk171900.Z.hasSearchState(w);
+  if (module === D) returnfalse;
+  D = module
 }
 
 function q() {
@@ -227,7 +227,7 @@ function q() {
 }
 
 function Q(e) {
-  return D = e.searchContextId, z()
+  return w = e.searchContextId, z()
 }
 class X extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -247,7 +247,7 @@ class X extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
   getSection(e, t) {
-    if (w) return E.ULH.SEARCH;
+    if (D) return E.ULH.SEARCH;
     let n = x(e);
     return null != n && null != P[n] ? E.ULH.SIDEBAR_CHAT : t && N ? E.ULH.PROFILE : C ? E.ULH.SUMMARIES : A ? E.ULH.MEMBERS : E.ULH.NONE
   }
@@ -260,19 +260,19 @@ class X extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getCurrentSidebarChannelId(e) {
     let t = x(e);
-    if (null == t || w) return null;
+    if (null == t || D) return null;
     let n = P[t];
     return null == n ? null : n.type === c.tI.VIEW_THREAD || n.type === c.tI.VIEW_CHANNEL || n.type === c.tI.VIEW_MOD_REPORT ? n.channelId : null
   }
   getCurrentSidebarMessageId(e) {
     var t;
     let n = x(e);
-    if (null == n || w) return null;
+    if (null == n || D) return null;
     let r = P[n];
     return null == r ? null : r.type === c.tI.VIEW_THREAD || r.type === c.tI.VIEW_CHANNEL || r.type === c.tI.VIEW_MOD_REPORT ? null == (t = r.details) ? true : t.initialMessageId : null
   }
   getCurrentSearchContextId() {
-    return D
+    return w
   }
 }
 O(X, "displayName", "ChannelSectionStore"), O(X, "persistKey", "ChannelSectionStore2");

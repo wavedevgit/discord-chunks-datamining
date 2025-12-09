@@ -16,7 +16,7 @@ require.d(exports, {
   N8: () => e4,
   OH: () => eV,
   Qy: () => eJ,
-  Rf: () => eD,
+  Rf: () => ew,
   SU: () => e8,
   Ut: () => e9,
   Wi: () => eT,
@@ -393,8 +393,8 @@ function eR(e) {
     r = eP(e);
   return t || n || r
 }
-let ew = 1,
-  eD = e => {
+let eD = 1,
+  ew = e => {
     let t = r.useCallback(() => (0, W.il)(e), [e]),
       [n, i] = r.useState(t()),
       a = r.useCallback(() => i(t()), [t]),
@@ -404,7 +404,7 @@ let ew = 1,
       if ((null == (t = e.userStatus) ? true : t.enrolledAt) == null || (null == (n = e.userStatus) ? true : n.completedAt) != null || (null == (r = e.userStatus) ? true : r.claimedAt) != null || !o) return void a();
       let i = window.setInterval(() => {
         a()
-      }, T.Z.Millis.SECOND * ew);
+      }, T.Z.Millis.SECOND * eD);
       return () => {
         clearInterval(i), a()
       }
@@ -427,14 +427,14 @@ let eL = e => {
       quest: t
     }, {
       content: n,
-      ctaContent: D.jZ.CONNECT_CONSOLE_LINK,
+      ctaContent: w.jZ.CONNECT_CONSOLE_LINK,
       impressionId: null == a ? true : a.getId(),
       sourceQuestContent: r
     }) : (0, H.V$)({
       quest: t
     }, {
       content: n,
-      ctaContent: D.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
+      ctaContent: w.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
       impressionId: null == a ? true : a.getId(),
       sourceQuestContent: r
     })
@@ -494,11 +494,11 @@ function ek(e) {
 
 function eU(e) {
   return r.useMemo(() => ({
-    handleComplete: () => (0, w.Wf)(e),
-    handleProgress: t => (0, w.Wf)(e, t),
-    handleResetStatusClick: () => (0, w.eT)(e),
-    handleResetDismissibilityClick: () => (0, w.T0)(e),
-    handleOverrideDeliveryClick: () => (0, w.EW)(e)
+    handleComplete: () => (0, D.Wf)(e),
+    handleProgress: t => (0, D.Wf)(e, t),
+    handleResetStatusClick: () => (0, D.eT)(e),
+    handleResetDismissibilityClick: () => (0, D.T0)(e),
+    handleOverrideDeliveryClick: () => (0, D.EW)(e)
   }), [e])
 }
 
@@ -546,7 +546,7 @@ let eZ = e => {
         null == i || i(), d(true);
         let e = null;
         try {
-          e = await (0, w.CS)(t, n), l(e.errorHints)
+          e = await (0, D.CS)(t, n), l(e.errorHints)
         } finally {
           var r;
           d(false), null == a || a(null != (r = null == e ? true : e.errorHints) ? r : [])
@@ -589,7 +589,7 @@ function eH(e) {
   let i = (null == (t = e.userStatus) ? true : t.enrolledAt) != null,
     a = (null == (n = e.userStatus) ? true : n.completedAt) != null,
     o = (null == (r = e.userStatus) ? true : r.claimedAt) != null,
-    s = eD(e).percentComplete > 0;
+    s = ew(e).percentComplete > 0;
   return o ? 4 : a ? 3 : s && i ? 2 : 1 * !!i
 }
 
@@ -597,7 +597,7 @@ function eY(e) {
   let t = (0, c.e7)([y.default], () => y.default.locale),
     {
       percentComplete: n
-    } = eD(e),
+    } = ew(e),
     r = ex(e),
     i = null != r ? r.percentComplete : n,
     a = 100 * i,
@@ -612,7 +612,7 @@ function eY(e) {
 }
 
 function eW(e) {
-  return [(0, c.e7)([L.Z], () => L.Z.selectedTaskPlatform(e)), r.useCallback(t => (0, w.OR)(e, t), [e])]
+  return [(0, c.e7)([L.Z], () => L.Z.selectedTaskPlatform(e)), r.useCallback(t => (0, D.OR)(e, t), [e])]
 }
 
 function eK(e, t) {
@@ -671,7 +671,7 @@ function eK(e, t) {
 function ez(e) {
   var t, n;
   let r = ex(e),
-    i = eD(e),
+    i = ew(e),
     [a] = eK(e, i),
     s = eI(e),
     l = (null == (t = e.userStatus) ? true : t.enrolledAt) != null,
@@ -699,7 +699,7 @@ function eQ(e) {
     questId: a
   } = e, o = r.useRef(null);
   r.useEffect(() => {
-    null != a && o.current !== t && ((0, D.Ic)({
+    null != a && o.current !== t && ((0, w.Ic)({
       mode: t,
       prevMode: o.current,
       questContent: n,
@@ -708,7 +708,7 @@ function eQ(e) {
     }), o.current = t)
   }, [a, n, t, i]), r.useEffect(() => {
     if (null != a) return () => {
-      (0, D.Ic)({
+      (0, w.Ic)({
         mode: null,
         prevMode: o.current,
         questContent: n,

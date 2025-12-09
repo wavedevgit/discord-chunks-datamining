@@ -84,7 +84,7 @@ function S(e) {
       if (!I || !T || null == t.state) return;
       let [e] = (0, b.F)(l, t.state);
       if (null != e) {
-        if (e === y.tN.CUSTOM) {
+        if (e === C.tN.CUSTOM) {
           if (null == t.details || null == t.emoji) return;
           (0, h._s)(t.details, t.emoji, true)
         } else(0, h.Zx)(e, true);
@@ -99,7 +99,7 @@ function S(e) {
   return (0, i.jsxs)("div", {
     ref: P,
     className: a()(x.popover, O.container),
-    children: [(0, i.jsx)(C.Z, {
+    children: [(0, i.jsx)(y.Z, {
       userId: l,
       size: 32,
       className: O.icon,

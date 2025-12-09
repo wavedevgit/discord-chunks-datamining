@@ -2,7 +2,7 @@
 /** chunk id: 609631, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  j: () => D,
+  j: () => w,
   t: () => S
 }), require("./388685.js"), require("./415506.js");
 var r, Chunk54381 = require("./54381.js"),
@@ -155,12 +155,12 @@ function R(e) {
   return null != n ? n : (c()(null != t.current, "Invalid ref"), t.current.getBoundingClientRect())
 }
 
-function w(e, t) {
+function D(e, t) {
   let n = R(e),
     r = R(t);
   return n.top === r.top && n.left === r.left
 }
-class D extends(r = Chunk473749.Component) {
+class w extends(r = Chunk473749.Component) {
   formatDimension(e) {
     return this.props.useRawTargetDimensions ? e : Math.ceil(e)
   }
@@ -377,7 +377,7 @@ class D extends(r = Chunk473749.Component) {
     c()(null != Chunk54381, "Missing elementRef"), null != require.current && O.set(Chunk54381, require.current), null == Chunk54381 || null == (t = Chunk54381.ownerDocument) || null == (e = exports.defaultView) || module.addEventListener("resize", this.updatePosition), null == r || r()
   }
   componentDidUpdate(e, t) {
-    if (T(e) === T(this.props) && w(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
+    if (T(e) === T(this.props) && D(e, this.props) || this.updatePosition(), t.position !== this.state.position) {
       var n, r;
       null == (n = (r = this.props).onPositionChange) || n.call(r, this.state.position)
     }
@@ -456,7 +456,7 @@ class D extends(r = Chunk473749.Component) {
     })
   }
 }
-g(D, "defaultProps", {
+g(w, "defaultProps", {
   nudgeAlignIntoViewport: false,
   spacing: 0,
   autoInvert: false,

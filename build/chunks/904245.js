@@ -110,7 +110,7 @@ function eR(e) {
   return e
 }
 
-function ew(e, t) {
+function eD(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -121,8 +121,8 @@ function ew(e, t) {
   return n
 }
 
-function eD(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ew(Object(t)).forEach(function(n) {
+function ew(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eD(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -163,7 +163,7 @@ function eU(e) {
       overrideProperties: s
     });
     else if (t === v.g.TEMPLATE) {
-      let e = D.Z.getGuildTemplate(c);
+      let e = w.Z.getGuildTemplate(c);
       if (null == e || e.state === eA.Rj.RESOLVING) return;
       f.ZP.trackWithMetadata(eI.rMx.GUILD_TEMPLATE_LINK_SENT, {
         guild_template_code: c,
@@ -236,7 +236,7 @@ function eG(e) {
         t.application_id = null != n ? n.id : null
       }
     }
-    null != s && (null != s.suggestionData && (t.is_suggested = s.suggestionData.isAffinitySuggestion, t.row_num = s.suggestionData.rowNum, t.num_total = s.suggestionData.numTotal, t.num_affinity_connections = s.suggestionData.numAffinityConnections, t.is_filtered = s.suggestionData.isFiltered), t.source = s.source), t = eR(eD(eR({}, t), {
+    null != s && (null != s.suggestionData && (t.is_suggested = s.suggestionData.isAffinitySuggestion, t.row_num = s.suggestionData.rowNum, t.num_total = s.suggestionData.numTotal, t.num_affinity_connections = s.suggestionData.numAffinityConnections, t.is_filtered = s.suggestionData.isFiltered), t.source = s.source), t = eR(ew(eR({}, t), {
       location: o,
       invite_type: e,
       invite_code: d.baseCode,
@@ -248,7 +248,7 @@ function eG(e) {
     }), l), f.ZP.trackWithMetadata(eI.rMx.INVITE_SENT, t)
   } else {
     let e = {};
-    null != u && u.state === eI.r2o.RESOLVED && null != u.inviter && (e.invite_inviter_id = u.inviter.id, null != u.target_application && (e.application_id = u.target_application.id), e = eR(eD(eR({}, e), {
+    null != u && u.state === eI.r2o.RESOLVED && null != u.inviter && (e.invite_inviter_id = u.inviter.id, null != u.target_application && (e.application_id = u.target_application.id), e = eR(ew(eR({}, e), {
       location: o,
       invite_type: eI.dAT.FRIEND_INVITE,
       invite_code: d.baseCode,
@@ -363,7 +363,7 @@ let eV = {
           bot: true
         }
       });
-      eH.receiveMessage(e, eD(eR({}, r), {
+      eH.receiveMessage(e, ew(eR({}, r), {
         state: eI.yb.SENT,
         channel_id: e
       }), true)
@@ -383,7 +383,7 @@ let eV = {
         },
         giftingPrompt: t
       });
-      eH.receiveMessage(e, eD(eR({}, n), {
+      eH.receiveMessage(e, ew(eR({}, n), {
         state: eI.yb.SENT
       }), true)
     },
@@ -725,7 +725,7 @@ let eV = {
       let a = await (0, $.Z)(e);
       if (null != a) return eH.sendMessage(a, t, r, i);
       let o = null != (n = i.nonce) ? n : (0, F.r)();
-      i = eD(eR({}, i), {
+      i = ew(eR({}, i), {
         nonce: o
       });
       let s = () => eH._sendMessage(e, t, i),
@@ -820,7 +820,7 @@ let eV = {
         invalidEmojis: [],
         validNonShortcutEmojis: [],
         tts: i
-      }, eD(eR({}, r), {
+      }, ew(eR({}, r), {
         stickerIds: t
       }))
     },
@@ -860,7 +860,7 @@ let eV = {
         tts: false,
         validNonShortcutEmojis: [],
         invalidEmojis: []
-      }, eD(eR({}, n), {
+      }, ew(eR({}, n), {
         poll: t,
         location: eC.dy.POLL_CREATION
       }))
@@ -891,7 +891,7 @@ let eV = {
           location: A,
           inviteAnalyticsMetadata: C,
           stickerIds: N,
-          confettiPotionData: D,
+          confettiPotionData: w,
           messageReference: x,
           allowedMentions: L,
           poll: j,
@@ -963,7 +963,7 @@ let eV = {
           null != n.party && null != n.party.id && (t.party_id = n.party.id), ey.message.application_id = n.application_id, ey.message.activity = t
         }
       }
-      if (null != j && (ey.message.poll = j), null != k && (ey.message.shared_client_theme = k), null != N && (ey.message.sticker_ids = N), Y.Z.isEnabled() && (ey.message.has_poggermode_enabled = true), ea && (ey.message.with_checkpoint = true), null != U && (ey.message.content_inventory_entry = U), null != D && (ey.message.confetti_potion = (0, Q.vY)(D), D.callback()), null != z && z.length > 0 && (ey.message.attachments = z), null != eo && (ey.message.message_id_from_notification_experiment = eo), null != ee && ee.length > 0) try {
+      if (null != j && (ey.message.poll = j), null != k && (ey.message.shared_client_theme = k), null != N && (ey.message.sticker_ids = N), Y.Z.isEnabled() && (ey.message.has_poggermode_enabled = true), ea && (ey.message.with_checkpoint = true), null != U && (ey.message.content_inventory_entry = U), null != w && (ey.message.confetti_potion = (0, Q.vY)(w), w.callback()), null != z && z.length > 0 && (ey.message.attachments = z), null != eo && (ey.message.message_id_from_notification_experiment = eo), null != ee && ee.length > 0) try {
         let t = await (0, M.c)({
           channelId: e,
           nonce: e_,
@@ -1021,7 +1021,7 @@ let eV = {
               id: r.id
             }, true, true, q.LL.MessageSent));
             let i = eO.default.cast(e),
-              c = w.Z.getRequest(i);
+              c = D.Z.getRequest(i);
             if (null != c) {
               let {
                 guildId: t,

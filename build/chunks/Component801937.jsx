@@ -2,7 +2,7 @@
 /** chunk id: 801937, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -84,7 +84,7 @@ let C = new Chunk710845.Z("ChoosePaymentSourceType"),
   },
   P = 1e3,
   R = "40c266_1";
-class w extends Chunk473749.PureComponent {
+class D extends Chunk473749.PureComponent {
   componentDidMount() {
     var e;
     (0, Chunk355467.GE)(), (null != (e = this.props.paymentRequestWallets) ? module : []).length > 0 && setTimeout(() => {
@@ -228,7 +228,7 @@ class w extends Chunk473749.PureComponent {
     }
   }
 }
-let D = Chunk442837.ZP.connectStores([Chunk351402.Z], () => ({
+let w = Chunk442837.ZP.connectStores([Chunk351402.Z], () => ({
   ipCountryCode: Chunk351402.Z.ipCountryCode,
   ipCountryCodeHasError: Chunk351402.Z.ipCountryCodeHasError
-}))(w)
+}))(D)
