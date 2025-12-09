@@ -1,5 +1,5 @@
-/** Chunk was on 57575 **/
-/** chunk id: 917967, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 44097 **/
+/** chunk id: 917967, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -14,10 +14,10 @@ var Chunk442837 = require("./442837.js"),
 function u(e) {
   var t;
   let {
-    location: r,
+    location: n,
     wishlist: u
   } = e, d = (0, c.cZ)({
-    location: r
-  }), f = (0, n.e7)([o.Z], () => o.Z.getGuild((0, s.ac)())), m = null != (t = null == u ? true : u.items.some(e => (0, l.F)(e))) && t, h = (0, n.e7)([i.ZP], () => i.ZP.getGamesSeen(false, false).some(e => null != e.id && a.RI.has(e.id)));
-  return d && (null != f || h || m)
+    location: n
+  }), f = (0, r.e7)([a.Z], () => a.Z.getGuild((0, o.ac)())), g = null != (t = null == u ? true : u.items.some(e => (0, l.F)(e))) && t, p = (0, r.e7)([i.ZP], () => i.ZP.getGamesSeen(false, false).some(e => null != e.id && s.RI.has(e.id)));
+  return d && (null != f || p || g)
 }

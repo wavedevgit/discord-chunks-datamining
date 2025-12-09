@@ -23,18 +23,18 @@ let c = function(e) {
     className: o.giftOptionContainer,
     children: [(0, n.jsxs)("div", {
       className: o.cardsRow,
-      children: [(0, n.jsx)(a.jB, {
+      children: [(0, n.jsx)(l.jB, {
         onClick: () => i(s.Si.TIER_2),
         isGift: true,
         priceOptions: t,
         showPromotionalGiftBanner: m
-      }), (0, n.jsx)(a.j8, {
+      }), (0, n.jsx)(l.j8, {
         onClick: () => i(s.Si.TIER_0),
         isGift: true,
         priceOptions: t,
         removeTopMargin: true
       })]
-    }), (0, n.jsx)(l.Z, {
+    }), (0, n.jsx)(a.Z, {
       giftRecipient: c,
       onWishlistItemClick: d
     })]
