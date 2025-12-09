@@ -17,7 +17,7 @@ function p(e) {
   let {
     application: t,
     className: n
-  } = e, p = i.useCallback(e => {
+  } = e, p = a.useCallback(e => {
     (0, l.zZ)(c.rMx.APP_DIRECTORY_CATEGORY_CLICKED, {
       category: e.name,
       category_id: e.id,
@@ -28,16 +28,16 @@ function p(e) {
   }, []);
   return null == t.categories || 0 === t.categories.length ? null : (0, r.jsxs)("div", {
     className: n,
-    children: [(0, r.jsx)(a.Heading, {
+    children: [(0, r.jsx)(i.Heading, {
       variant: "heading-sm/semibold",
       color: "header-primary",
       children: d.intl.string(d.t.s7iald)
     }), (0, r.jsx)("div", {
       className: u.categories,
-      children: t.categories.map(e => (0, r.jsx)(a.P3F, {
+      children: t.categories.map(e => (0, r.jsx)(i.P3F, {
         className: u.category,
         onClick: () => p(e),
-        children: (0, r.jsx)(a.Text, {
+        children: (0, r.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "redesign-button-tertiary-text",
           children: e.name

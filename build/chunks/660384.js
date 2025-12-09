@@ -1,10 +1,10 @@
 /** Chunk was on 69844 **/
 /** chunk id: 660384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => a
 });
 var Chunk205120 = require("./205120.js");
-class i {
+class a {
   handleScroll(e) {
     this.top.set(e.currentTarget.scrollTop)
   }

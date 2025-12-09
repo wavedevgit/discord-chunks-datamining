@@ -21,7 +21,7 @@ function h(e) {
     selectedTabId: t,
     handleTransition: n,
     tabs: r,
-    state: a = "DEFAULT",
+    state: i = "DEFAULT",
     onAvailableWidthChange: m,
     icon: h,
     children: g
@@ -30,24 +30,24 @@ function h(e) {
   } = (0, d.WX)({
     location: "global_discovery_header_bar"
   });
-  return (0, i.jsx)(s.f6W, {
+  return (0, a.jsx)(s.f6W, {
     theme: f,
-    children: e => (0, i.jsxs)(c.Z, {
+    children: e => (0, a.jsxs)(c.Z, {
       className: l()(e, p.headerBar),
       innerClassname: _ ? p.headerBarInner : true,
-      children: ["DEFAULT" === a && (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(h, {
+      children: ["DEFAULT" === i && (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(h, {
           color: "currentColor",
           size: "md"
-        }), (0, i.jsx)(u.Z, {
+        }), (0, a.jsx)(u.Z, {
           tabs: r,
           selectedTab: t,
           onTabSelect: n,
           onAvailableWidthChange: m
         })]
-      }), (0, i.jsx)("div", {
+      }), (0, a.jsx)("div", {
         className: l()(p.headerBarContent, {
-          [p.headerBarSearchContent]: "SEARCH" === a
+          [p.headerBarSearchContent]: "SEARCH" === i
         }),
         children: g
       })]

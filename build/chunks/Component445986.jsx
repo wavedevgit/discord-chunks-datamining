@@ -51,18 +51,18 @@ function h(e, t) {
 
 function g(e, t) {
   if (null == e) return {};
-  var n, r, i = function(e, t) {
+  var n, r, a = function(e, t) {
     if (null == e) return {};
-    var n, r, i = {},
-      a = Object.keys(e);
-    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-    return i
+    var n, r, a = {},
+      i = Object.keys(e);
+    for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+    return a
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var i = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
   }
-  return i
+  return a
 }
 
 function f(e) {
@@ -72,8 +72,8 @@ let _ = e => {
   var {
     index: t,
     items: n
-  } = e, i = g(e, ["index", "items"]);
-  let a = n[t],
+  } = e, a = g(e, ["index", "items"]);
+  let i = n[t],
     l = 0,
     o = [];
   for (let e of n)
@@ -83,12 +83,12 @@ let _ = e => {
         height: n,
         src: r
       } = e;
-      e === a && (l = o.length), o.push({
+      e === i && (l = o.length), o.push({
         src: f(r),
         width: t,
         height: n
       })
-    } return (0, r.jsx)(s.Z, h(m({}, i), {
+    } return (0, r.jsx)(s.Z, h(m({}, a), {
     items: o,
     startWith: l
   }))
@@ -100,15 +100,15 @@ class b extends Chunk473749.Component {
         pageSize: t
       } = module,
       n = g(module, ["pageSize"]),
-      i = exports === Chunk843445.b.SMALL ? Chunk9807.Z : Chunk33122.Z;
+      a = exports === Chunk843445.b.SMALL ? Chunk9807.Z : Chunk33122.Z;
     return (0, Chunk54381.jsx)(Chunk473749, h(m({}, require), {
       onCurrentItemClick: this.handleCurrentItemClick
     }))
   }
   constructor(...e) {
     super(...e), p(this, "handleCurrentItemClick", (e, t) => {
-      e.type !== d.s9s.IMG || (0, a.$sL)() || (0, a.h7j)(e => (0, r.jsx)(a.Y0X, h(m({
-        size: a.CgR.DYNAMIC,
+      e.type !== d.s9s.IMG || (0, i.$sL)() || (0, i.h7j)(e => (0, r.jsx)(i.Y0X, h(m({
+        size: i.CgR.DYNAMIC,
         "aria-label": u.intl.string(u.t.X4IxWL)
       }, e), {
         parentComponent: "ApplicationStoreListingCarousel",

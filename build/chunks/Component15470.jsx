@@ -55,9 +55,9 @@ let b = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
   x = _(f({}, Chunk241209.Z.rules), {
     heading: _(f({}, Chunk241209.Z.rules.heading), {
       react(e, t, n) {
-        let i = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
+        let a = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
         return (0, r.jsx)(d.Z, {
-          tag: i,
+          tag: a,
           children: t(e.content, n)
         }, n.key)
       }
@@ -106,8 +106,8 @@ class j extends Chunk473749.PureComponent {
       applicationId: e,
       description: t,
       blurb: n,
-      className: i,
-      assets: a
+      className: a,
+      assets: i
     } = this.props, {
       collapsed: s,
       collapsable: o

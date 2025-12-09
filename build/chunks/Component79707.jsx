@@ -15,22 +15,22 @@ function l(e) {
     onTabSelect: l,
     onClose: s
   } = e;
-  return (0, r.jsx)(i.v2r, {
+  return (0, r.jsx)(a.v2r, {
     navId: "global-discovery-tabs-overflow-menu",
-    "aria-label": a.intl.string(a.t.riPnr0),
+    "aria-label": i.intl.string(i.t.riPnr0),
     hideScroller: true,
     onClose: s,
     onSelect: s,
-    children: (0, r.jsx)(i.kSQ, {
+    children: (0, r.jsx)(a.kSQ, {
       children: t.map(e => {
         let {
           id: t,
-          label: a
+          label: i
         } = e;
-        return (0, r.jsx)(i.sNh, {
+        return (0, r.jsx)(a.sNh, {
           id: t,
-          label: a,
-          icon: t === n ? i.owK : true,
+          label: i,
+          icon: t === n ? a.owK : true,
           action: () => l(t)
         }, t)
       })

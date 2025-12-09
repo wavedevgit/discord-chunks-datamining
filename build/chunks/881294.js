@@ -16,8 +16,8 @@ var Chunk860911 = require("./860911.js"),
   Chunk981631 = require("./981631.js");
 
 function u(e, t) {
-  var n, r, i;
-  let a = c.z8.getField("sessionId"),
+  var n, r, a;
+  let i = c.z8.getField("sessionId"),
     l = c.z8.getField("guildId"),
     d = null == (n = c.z8.getField("entrypoint")) ? true : n.name,
     u = s.default.getCurrentUser(),
@@ -38,20 +38,20 @@ function u(e, t) {
         })
       }
       return e
-    }({}, t), i = i = {
+    }({}, t), a = a = {
       guild_id: l,
-      directory_session_id: a,
+      directory_session_id: i,
       source: d,
       user_id: null == u ? true : u.id
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(i)).forEach(function(e) {
-      Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+    })(Object(a)).forEach(function(e) {
+      Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
     }), r);
   return o.default.track(e, p)
 }
@@ -68,7 +68,7 @@ function m() {
     exports.searchParams.set(require, Chunk860911)
   }
   let n = exports.pathname + exports.search,
-    i = (0, Chunk860911.Ui)(require, false);
+    a = (0, Chunk860911.Ui)(require, false);
   (0, Chunk703656.uL)(Chunk442837)
 }
 

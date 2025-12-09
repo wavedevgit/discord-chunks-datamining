@@ -21,12 +21,12 @@ let g = function(e) {
     tabId: n,
     onSelectApplication: g,
     onScroll: f
-  } = e, _ = i.useRef(null), b = i.useCallback(() => {
+  } = e, _ = a.useRef(null), b = a.useCallback(() => {
     var e;
     null == (e = _.current) || e.scrollTo({
       to: 0
     })
-  }, []), x = (0, a.e7)([u.Z], () => u.Z.getCategories()), v = i.useMemo(() => x.find(e => e.id === n), [x, n]), C = i.useMemo(() => null != v ? (0, d.v)(v) : "", [v]);
+  }, []), x = (0, i.e7)([u.Z], () => u.Z.getCategories()), v = a.useMemo(() => x.find(e => e.id === n), [x, n]), C = a.useMemo(() => null != v ? (0, d.v)(v) : "", [v]);
   return (0, r.jsxs)(c.Z, {
     onScroll: f,
     ref: _,

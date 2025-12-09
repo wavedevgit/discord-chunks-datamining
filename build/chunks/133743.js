@@ -23,7 +23,7 @@ let s = () => {
     let {
       categoryId: t
     } = e, n = {
-      previousView: (0, a.Xh)()
+      previousView: (0, i.Xh)()
     };
     (0, r.uL)(l.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY(t), {
       state: n
@@ -33,7 +33,7 @@ let s = () => {
     let {
       applicationId: t
     } = e, n = {
-      previousView: (0, a.Xh)()
+      previousView: (0, i.Xh)()
     };
     (0, r.uL)(l.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t), {
       state: n

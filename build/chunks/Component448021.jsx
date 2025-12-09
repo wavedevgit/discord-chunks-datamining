@@ -26,7 +26,7 @@ function g(e) {
       src: h,
       "aria-hidden": true,
       alt: ""
-    }), (0, r.jsx)(a.X6q, {
+    }), (0, r.jsx)(i.X6q, {
       variant: "heading-xl/semibold",
       children: p.intl.string(p.t.UvDfMz)
     })]
@@ -38,12 +38,12 @@ function g(e) {
       name: t.name
     })
   });
-  let _ = i.useCallback((e, t) => {
+  let _ = a.useCallback((e, t) => {
     if (e.type === u.s9s.IMG) {
       let t = n.filter(e => e.type === u.s9s.IMG),
         r = t.findIndex(t => t === e);
       if (r < 0) return;
-      let i = t.map(e => ({
+      let a = t.map(e => ({
         url: (0, s.Q)(e.src),
         original: e.src,
         width: e.width,
@@ -51,7 +51,7 @@ function g(e) {
         type: "IMAGE"
       }));
       (0, c.K)({
-        items: i,
+        items: a,
         startingIndex: r,
         shouldHideMediaOptions: true,
         location: "GlobalDiscoveryAppsDetailCarousel"

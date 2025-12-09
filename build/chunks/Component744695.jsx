@@ -52,28 +52,28 @@ function _(e) {
   var {
     id: t,
     label: n,
-    selected: i,
-    handleTransition: a
+    selected: a,
+    handleTransition: i
   } = e, s = function(e, t) {
     if (null == e) return {};
-    var n, r, i = function(e, t) {
+    var n, r, a = function(e, t) {
       if (null == e) return {};
-      var n, r, i = {},
-        a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-      return i
+      var n, r, a = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+      return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
     }
-    return i
+    return a
   }(e, ["id", "label", "selected", "handleTransition"]);
   return (0, r.jsx)(d.Z.Title, f(g({}, s), {
-    onClick: () => a(t),
+    onClick: () => i(t),
     wrapperClassName: h.tabWrapper,
     className: l()(h.tab, {
-      [h.selected]: i
+      [h.selected]: a
     }),
     children: n
   }))
@@ -83,18 +83,18 @@ function b(e) {
   let {
     onTabSelect: t,
     tabs: n,
-    selectedTab: a,
+    selectedTab: i,
     selected: s
-  } = e, c = i.useRef(null);
+  } = e, c = a.useRef(null);
   return (0, r.jsx)(o.yRy, {
     targetElementRef: c,
     renderPopout: e => {
       let {
-        closePopout: i
+        closePopout: a
       } = e;
       return (0, r.jsx)(u.Z, {
-        selectedTab: a,
-        onClose: i,
+        selectedTab: i,
+        onClose: a,
         tabs: n,
         onTabSelect: t
       })
@@ -127,20 +127,20 @@ function x(e) {
   let {
     className: t,
     selectedTab: n,
-    tabs: a,
+    tabs: i,
     onTabSelect: o,
     onAvailableWidthChange: d
-  } = e, [u, p] = i.useState(0), m = i.useRef(u), {
+  } = e, [u, p] = a.useState(0), m = a.useRef(u), {
     lastVisibleIndex: g,
     onItemLayout: f,
     overflowItemsRef: x,
     itemWidthsRef: v
   } = (0, s.zP)({
-    items: a,
+    items: i,
     itemGapPx: 24,
     maxLines: 1,
     containerWidth: u
-  }), C = i.useMemo(() => a.slice(0, g + 1), [g, a]), j = i.useMemo(() => a.slice(g + 1), [g, a]), y = i.useRef(null), I = i.useCallback(e => {
+  }), C = a.useMemo(() => i.slice(0, g + 1), [g, i]), j = a.useMemo(() => i.slice(g + 1), [g, i]), y = a.useRef(null), I = a.useCallback(e => {
     let t = e.contentRect.width;
     if (null == t || m.current === t) return;
     p(t), m.current = t;
@@ -155,7 +155,7 @@ function x(e) {
     ref: y,
     children: [(0, r.jsxs)("div", {
       className: h.measurements,
-      children: [a.map((e, t) => (0, r.jsx)(s.AJ, {
+      children: [i.map((e, t) => (0, r.jsx)(s.AJ, {
         index: t,
         onItemLayout: f,
         children: (0, r.jsx)(_, {

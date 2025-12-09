@@ -10,12 +10,12 @@ var Chunk54381 = require("./54381.js"),
 let s = Chunk473749.forwardRef(function(e, t) {
   let {
     onScroll: n,
-    children: i
+    children: a
   } = e;
-  return (0, r.jsx)(a.Den, {
+  return (0, r.jsx)(i.Den, {
     onScroll: n,
     className: l.scroller,
     ref: t,
-    children: i
+    children: a
   })
 })

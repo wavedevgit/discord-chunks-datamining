@@ -75,9 +75,7 @@ function C(e) {
       }
     })
   }, [t]);
-  let k = () => t === y.hX.FRIEND_ANNIVERSARY ? S.intl.formatToPlainString(S.t.rtRr04, {
-      friendUserName: h.ZP.getName(a)
-    }) : (0, g.Ou)(t),
+  let k = () => t === y.hX.FRIEND_ANNIVERSARY ? S.intl.string(S.t.CeQIwZ) : (0, g.Ou)(t),
     U = () => t === y.hX.FRIEND_ANNIVERSARY ? S.intl.formatToPlainString(S.t.PpG27s, {
       numberOfYears: j
     }) : (0, g.Ou)(t),
@@ -139,11 +137,12 @@ function C(e) {
           }), (0, r.jsxs)("div", {
             className: I.subHeaderContainer,
             children: [(0, r.jsx)(u.iFz, {
-              size: "xs"
+              size: "xxs"
             }), (0, r.jsx)(u.Text, {
               className: I.subHeaderText,
-              variant: "text-sm/normal",
+              variant: "text-xs/normal",
               color: "text-subtle",
+              lineClamp: 1,
               children: U()
             })]
           })]

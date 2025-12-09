@@ -21,8 +21,8 @@ function f(e) {
   let {
     description: t,
     supportsMarkdown: n
-  } = e, [a, s] = i.useState(false), o = i.useRef(null);
-  i.useEffect(() => {
+  } = e, [i, s] = a.useState(false), o = a.useRef(null);
+  a.useEffect(() => {
     if (null == o.current) return;
     let e = new ResizeObserver(() => {
       var e, t, n, r;
@@ -30,7 +30,7 @@ function f(e) {
     });
     return e.observe(o.current), () => e.disconnect()
   }, []);
-  let [u, p] = i.useState(false), f = i.useCallback(() => {
+  let [u, p] = a.useState(false), f = a.useCallback(() => {
     p(e => !e)
   }, []);
   return (0, r.jsxs)(r.Fragment, {
@@ -53,7 +53,7 @@ function f(e) {
         color: "text-default",
         children: t
       })
-    }), a || u ? (0, r.jsx)(_, {
+    }), i || u ? (0, r.jsx)(_, {
       isShowingMore: u,
       onToggle: f
     }) : null]
@@ -64,7 +64,7 @@ function _(e) {
   let {
     onToggle: t,
     isShowingMore: n
-  } = e, a = i.useMemo(() => (0, r.jsxs)("div", {
+  } = e, i = a.useMemo(() => (0, r.jsxs)("div", {
     className: m.showMoreContent,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/semibold",
@@ -85,7 +85,7 @@ function _(e) {
     onClick: t,
     children: [(0, r.jsx)("div", {
       className: m.divider
-    }), a, (0, r.jsx)("div", {
+    }), i, (0, r.jsx)("div", {
       className: m.divider
     })]
   })
@@ -93,8 +93,8 @@ function _(e) {
 let b = function(e) {
   var t, n;
   let {
-    application: a
-  } = e, l = null == (t = a.directory_entry) ? true : t.detailed_description, s = null == (n = a.directory_entry) ? true : n.short_description, o = i.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(f, {
+    application: i
+  } = e, l = null == (t = i.directory_entry) ? true : t.detailed_description, s = null == (n = i.directory_entry) ? true : n.short_description, o = a.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(f, {
     description: l,
     supportsMarkdown: true
   }) : null != s && s.length > 0 ? (0, r.jsx)(f, {

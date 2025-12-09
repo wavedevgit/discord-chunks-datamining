@@ -19,16 +19,16 @@ let m = function(e) {
     application: h,
     onSelectApplication: g,
     showCategory: f = false
-  } = e, _ = i.useRef(null), b = null == (t = h.categories) ? true : t[0], [x, v] = i.useState(false), C = i.useCallback(e => {
+  } = e, _ = a.useRef(null), b = null == (t = h.categories) ? true : t[0], [x, v] = a.useState(false), C = a.useCallback(e => {
     e && v(true)
-  }, []), j = (0, s.lf)(h), y = i.useCallback(() => {
+  }, []), j = (0, s.lf)(h), y = a.useCallback(() => {
     g(h.id)
-  }, [g, h.id]), I = i.useMemo(() => x ? c.ZP.getApplicationIconURL({
+  }, [g, h.id]), I = a.useMemo(() => x ? c.ZP.getApplicationIconURL({
     id: h.id,
     icon: h.icon,
     size: 48
   }) : true, [x, h]), S = f && null != b;
-  return (0, r.jsx)(a.$, {
+  return (0, r.jsx)(i.$, {
     innerRef: _,
     onChange: C,
     active: !x,

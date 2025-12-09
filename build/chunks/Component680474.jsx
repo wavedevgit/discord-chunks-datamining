@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
 function f(e) {
   let {
     application: t
-  } = e, n = i.useMemo(() => {
+  } = e, n = a.useMemo(() => {
     var e, n, r;
     return null != (r = (null != (n = null == (e = t.directory_entry) ? true : e.carousel_items) ? n : []).map(s.RF).filter(l.lm)) ? r : []
   }, [t]);
@@ -43,7 +43,7 @@ function f(e) {
       className: g.informationContainer,
       children: [(0, r.jsx)("div", {
         className: g.divider
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, r.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: h.intl.string(h.t["mD+J/i"])

@@ -17,12 +17,12 @@ function p(e) {
   let {
     title: t,
     betaTag: n,
-    color: i = "header-primary"
+    color: a = "header-primary"
   } = e;
   return (0, r.jsxs)(o.Heading, {
     className: l()(u.title, u.uppercase),
     variant: "display-lg",
-    color: i,
+    color: a,
     children: [t, n && (0, r.jsx)(d.Z, {
       className: u.betaTag
     })]
@@ -33,12 +33,12 @@ function m(e) {
   let {
     title: t,
     titleColor: n,
-    description: a,
+    description: i,
     button: d,
     className: m,
     children: h,
     betaTag: g = false
-  } = e, f = (0, c.ZP)(), _ = (0, s.wj)(f), b = i.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(p, {
+  } = e, f = (0, c.ZP)(), _ = (0, s.wj)(f), b = a.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, r.jsx)(p, {
     title: e,
     betaTag: g,
     color: n
@@ -53,11 +53,11 @@ function m(e) {
       className: u.content,
       children: (0, r.jsxs)("div", {
         className: u.textContainer,
-        children: [b, null != a && (0, r.jsx)(o.Text, {
+        children: [b, null != i && (0, r.jsx)(o.Text, {
           className: u.description,
           variant: "text-md/medium",
           color: _ ? "text-muted" : "header-primary",
-          children: a
+          children: i
         }), null != d && (0, r.jsx)("div", {
           className: u.buttonContainer,
           children: d

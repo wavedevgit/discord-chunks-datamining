@@ -15,10 +15,10 @@ let u = function(e) {
   var t;
   let {
     application: n
-  } = e, u = i.useMemo(() => {
+  } = e, u = a.useMemo(() => {
     var e;
     let t = null == n || null == (e = n.install_params) ? true : e.permissions;
-    if (null != t) return o.VY.filter(e => a.e$(a.vB(t), e))
+    if (null != t) return o.VY.filter(e => i.e$(i.vB(t), e))
   }, [null == n || null == (t = n.install_params) ? true : t.permissions]);
   return null != u && u.length > 0 ? (0, r.jsxs)("div", {
     className: d.sectionContainer,

@@ -19,7 +19,7 @@ function u(e) {
   let {
     scrollPosition: t
   } = e;
-  return (0, i.jsx)(o.animated.div, {
+  return (0, a.jsx)(o.animated.div, {
     className: d.backdrop,
     style: {
       opacity: null == t ? true : t.to([0, 100], [0, 1])
@@ -31,7 +31,7 @@ function p(e) {
   let {
     icon: t
   } = e;
-  return (0, i.jsx)(t, {
+  return (0, a.jsx)(t, {
     className: d.icon,
     color: c.TVs.colors.HEADER_PRIMARY,
     size: "md"
@@ -43,10 +43,10 @@ function m(e) {
     onClick: t,
     icon: n
   } = e;
-  return (0, i.jsx)(c.P3F, {
+  return (0, a.jsx)(c.P3F, {
     className: d.iconButton,
     onClick: t,
-    children: (0, i.jsx)(n, {
+    children: (0, a.jsx)(n, {
       color: "currentColor",
       size: "sm"
     })
@@ -59,8 +59,8 @@ function g(e) {
     className: t,
     variant: n,
     children: r
-  } = e, l = a.useMemo(() => "overlay" === n ? d.overlay : d.relative, [n]);
-  return (0, i.jsx)("div", {
+  } = e, l = i.useMemo(() => "overlay" === n ? d.overlay : d.relative, [n]);
+  return (0, a.jsx)("div", {
     className: s()(d.headerBar, l, t),
     children: r
   })

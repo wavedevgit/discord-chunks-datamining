@@ -60,7 +60,7 @@ function y(e) {
     application: t
   } = e, {
     subscriptions: n,
-    otps: i
+    otps: a
   } = (0, d.q)(t.id);
   return (0, r.jsxs)("div", {
     className: v.storeContainer,
@@ -81,15 +81,15 @@ function y(e) {
           }, e.id)
         })
       })]
-    }), i.length > 0 && (0, r.jsxs)("div", {
+    }), a.length > 0 && (0, r.jsxs)("div", {
       className: v.productSection,
-      children: [(0, r.jsx)(a.X6q, {
+      children: [(0, r.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: x.intl.string(x.t.yUGTs8)
       }), (0, r.jsx)("div", {
         className: v.products,
-        children: i.map(e => (0, r.jsx)(u.hd, {
+        children: a.map(e => (0, r.jsx)(u.hd, {
           skuId: e.skuId,
           appId: t.id,
           onDetails: () => (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
@@ -108,11 +108,11 @@ function I(e) {
     match: {
       params: {
         applicationId: t,
-        skuId: a
+        skuId: i
       }
     }
-  } = e, o = (0, l.e7)([h.Z], () => h.Z.get(a), [a]), c = (0, l.e7)([h.Z], () => null != a ? h.Z.getParentSKU(a) : true, [a]), d = i.useId(), u = i.useCallback(() => (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, _.GlobalDiscoveryAppsSections.STORE)), [t]);
-  return i.useLayoutEffect(() => {
+  } = e, o = (0, l.e7)([h.Z], () => h.Z.get(i), [i]), c = (0, l.e7)([h.Z], () => null != i ? h.Z.getParentSKU(i) : true, [i]), d = a.useId(), u = a.useCallback(() => (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, _.GlobalDiscoveryAppsSections.STORE)), [t]);
+  return a.useLayoutEffect(() => {
     var e;
     switch (null == o ? true : o.type) {
       case b.epS.CONSUMABLE:
@@ -123,7 +123,7 @@ function I(e) {
           } = await Promise.resolve().then(n.bind(n, 147496));
           return n => (0, r.jsx)(e, C({
             appId: t,
-            skuId: a
+            skuId: i
           }, n))
         }, {
           modalKey: d,
@@ -135,12 +135,12 @@ function I(e) {
         if ((null == c ? true : c.flags) == null) return;
         return e = (0, m.KW)(c.flags) ? "user" : "guild", void(0, s.ZDy)(async () => {
           let {
-            SubscriptionDetailsModal: i
+            SubscriptionDetailsModal: a
           } = await Promise.resolve().then(n.bind(n, 519896));
-          return n => (0, r.jsx)(i, C({
+          return n => (0, r.jsx)(a, C({
             appId: t,
             subscriptionType: e,
-            skuId: a,
+            skuId: i,
             guildId: true
           }, n))
         }, {
@@ -150,7 +150,7 @@ function I(e) {
           }
         })
     }
-  }, [t, d, u, null == c ? true : c.flags, null == o ? true : o.flags, null == o ? true : o.type, a]), i.useLayoutEffect(() => () => {
+  }, [t, d, u, null == c ? true : c.flags, null == o ? true : o.flags, null == o ? true : o.type, i]), a.useLayoutEffect(() => () => {
     (0, s.Mr3)(d)
   }, [d]), null
 }
@@ -158,8 +158,8 @@ function I(e) {
 function S(e) {
   let {
     application: t
-  } = e, n = (0, g.nu)(), i = t.terms_of_service_url, l = t.privacy_policy_url;
-  if (null == i && null == l) return null;
+  } = e, n = (0, g.nu)(), a = t.terms_of_service_url, l = t.privacy_policy_url;
+  if (null == a && null == l) return null;
   let s = (e, t) => (0, r.jsx)(o.Z, {
     href: t,
     trusted: !n,
@@ -167,14 +167,14 @@ function S(e) {
   });
   return (0, r.jsx)("div", {
     className: v.legalContainer,
-    children: (0, r.jsx)(a.xvT, {
+    children: (0, r.jsx)(i.xvT, {
       color: "header-primary",
       variant: "text-sm/normal",
-      children: null != i && null != l ? x.intl.format(x.t.nylPOT, {
-        termsHook: e => s(e, i),
+      children: null != a && null != l ? x.intl.format(x.t.nylPOT, {
+        termsHook: e => s(e, a),
         privacyHook: e => s(e, l)
-      }) : null != i ? x.intl.format(x.t["0cPyDz"], {
-        termsHook: e => s(e, i)
+      }) : null != a ? x.intl.format(x.t["0cPyDz"], {
+        termsHook: e => s(e, a)
       }) : null != l ? x.intl.format(x.t["loYGC/"], {
         privacyHook: e => s(e, l)
       }) : null

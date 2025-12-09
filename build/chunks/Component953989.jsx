@@ -18,16 +18,16 @@ function m(e) {
   let {
     application: t,
     className: n
-  } = e, a = (0, s.e7)([c.default], () => c.default.locale), {
+  } = e, i = (0, s.e7)([c.default], () => c.default.locale), {
     supportedLanguages: m,
     usersLanguageIsFirst: h
-  } = i.useMemo(() => {
+  } = a.useMemo(() => {
     var e;
     if ((null == (e = t.directory_entry) ? true : e.supported_locales) != null) {
       let e = new Set(t.directory_entry.supported_locales),
-        n = e.has(a),
+        n = e.has(i),
         r = p.filter(t => e.has(t.value));
-      return n && r.sort((e, t) => e.value === a ? false : +(t.value === a)), {
+      return n && r.sort((e, t) => e.value === i ? false : +(t.value === i)), {
         supportedLanguages: r.map(e => d.intl.string(e.localizedName)),
         usersLanguageIsFirst: n
       }
@@ -36,7 +36,7 @@ function m(e) {
       supportedLanguages: [],
       usersLanguageIsFirst: false
     }
-  }, [t.directory_entry, a]);
+  }, [t.directory_entry, i]);
   return (0, r.jsxs)("div", {
     className: n,
     children: [(0, r.jsx)(o.Heading, {

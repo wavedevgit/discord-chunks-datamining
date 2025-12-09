@@ -17,11 +17,11 @@ let m = function(e) {
   let {
     application: t,
     onButtonsVisibilityChange: n
-  } = e, m = i.useRef(null), h = i.useMemo(() => o.ZP.getApplicationIconURL({
+  } = e, m = a.useRef(null), h = a.useMemo(() => o.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     size: 96
-  }), [t]), g = i.useMemo(() => {
+  }), [t]), g = a.useMemo(() => {
     let e = [];
     return (0, s.vJ)(t) && e.push(u.intl.string(u.t.LO4f0P)), (0, s.Cb)(t) && (0 !== e.length && e.push("•"), e.push(u.intl.string(u.t["8z5B2U"]))), (0, s.Hu)(t) && (0 !== e.length && e.push("•"), e.push(u.intl.string(u.t["5khEk8"]))), e
   }, [t]);
@@ -64,7 +64,7 @@ let m = function(e) {
             children: e
           }, t))
         })]
-      }), (0, r.jsx)(a.$, {
+      }), (0, r.jsx)(i.$, {
         innerRef: m,
         onChange: n,
         active: true,

@@ -13,7 +13,7 @@ function o(e) {
   let {
     application: t,
     showMutualGuilds: n = true
-  } = e, o = (0, i.e7)([s.Z], () => s.Z.getGuildIdsForApplication(null == t ? true : t.id), [t]), c = (0, i.e7)([a.Z], () => a.Z.isConnected());
+  } = e, o = (0, a.e7)([s.Z], () => s.Z.getGuildIdsForApplication(null == t ? true : t.id), [t]), c = (0, a.e7)([i.Z], () => i.Z.isConnected());
   return r.useMemo(() => {
     let e = [];
     if (!c || !n || null == o || null == t) return e;

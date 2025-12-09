@@ -13,8 +13,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 
 function u(e) {
-  let t = (0, i.e7)([l.Z], () => l.Z.getCategories()),
-    n = (0, a.K)(),
+  let t = (0, a.e7)([l.Z], () => l.Z.getCategories()),
+    n = (0, i.K)(),
     u = r.useMemo(() => [{
       id: n.id.toString(),
       label: n.name

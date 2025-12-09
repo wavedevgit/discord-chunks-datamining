@@ -15,15 +15,15 @@ function d(e) {
   let {
     state: t,
     query: n,
-    placeholder: a,
+    placeholder: i,
     onTextChange: d,
     onCollapsedClick: u,
     onClear: p,
     onBlur: m,
     onSubmit: h
-  } = e, g = i.useRef(null), f = i.useCallback(e => {
+  } = e, g = a.useRef(null), f = a.useCallback(e => {
     "Enter" === e.key && h()
-  }, [h]), _ = i.useCallback(() => {
+  }, [h]), _ = a.useCallback(() => {
     u(), setTimeout(() => {
       var e;
       return null == (e = g.current) ? true : e.focus()
@@ -44,7 +44,7 @@ function d(e) {
       size: "sm",
       ref: g,
       query: n,
-      placeholder: a,
+      placeholder: i,
       onChange: d,
       onClear: p,
       onKeyDown: f,

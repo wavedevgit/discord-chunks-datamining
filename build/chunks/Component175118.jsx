@@ -18,13 +18,13 @@ function m(e) {
   let {
     onTabSelect: t,
     tabs: n,
-    selectedTab: a
-  } = e, s = i.useMemo(() => null != n.find(e => {
+    selectedTab: i
+  } = e, s = a.useMemo(() => null != n.find(e => {
     let {
       id: t
     } = e;
-    return t === a
-  }), [a, n]), [c, m] = i.useState(false), h = function(e) {
+    return t === i
+  }), [i, n]), [c, m] = a.useState(false), h = function(e) {
     let {
       selected: t,
       isHovered: n
@@ -42,16 +42,16 @@ function m(e) {
   }({
     selected: s,
     isHovered: c
-  }), f = i.useCallback(() => m(true), []), _ = i.useCallback(() => m(false), []), b = i.useRef(null);
+  }), f = a.useCallback(() => m(true), []), _ = a.useCallback(() => m(false), []), b = a.useRef(null);
   return (0, r.jsx)(o.yRy, {
     targetElementRef: b,
     renderPopout: e => {
       let {
-        closePopout: i
+        closePopout: a
       } = e;
       return (0, r.jsx)(d.Z, {
-        selectedTab: a,
-        onClose: i,
+        selectedTab: i,
+        onClose: a,
         tabs: n,
         onTabSelect: t
       })
@@ -59,9 +59,9 @@ function m(e) {
     position: "bottom",
     align: "left",
     children: (e, t) => {
-      var n, i;
+      var n, a;
       let {
-        isShown: a
+        isShown: i
       } = t;
       return (0, r.jsx)(o.njP.Item, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -80,7 +80,7 @@ function m(e) {
           })
         }
         return e
-      }({}, e), i = i = {
+      }({}, e), a = a = {
         id: "more",
         look: "brand",
         selectedItem: s ? "more" : true,
@@ -99,7 +99,7 @@ function m(e) {
             variant: "text-sm/semibold",
             color: h,
             children: u.intl.string(u.t["UKOtz+"])
-          }), a ? (0, r.jsx)(o.u04, {
+          }), i ? (0, r.jsx)(o.u04, {
             size: "xs",
             color: g
           }) : (0, r.jsx)(o.CJ0, {
@@ -107,15 +107,15 @@ function m(e) {
             color: g
           })]
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
       }), n))
     }
   })
@@ -125,20 +125,20 @@ function h(e) {
   let {
     className: t,
     selectedTab: n,
-    tabs: a,
+    tabs: i,
     onTabSelect: d,
     onAvailableWidthChange: u
-  } = e, [h, g] = i.useState(0), f = i.useRef(h), {
+  } = e, [h, g] = a.useState(0), f = a.useRef(h), {
     lastVisibleIndex: _,
     onItemLayout: b,
     overflowItemsRef: x,
     itemWidthsRef: v
   } = (0, s.zP)({
-    items: a,
+    items: i,
     itemGapPx: 20,
     maxLines: 1,
     containerWidth: h
-  }), C = i.useMemo(() => a.slice(0, _ + 1), [_, a]), j = i.useMemo(() => a.slice(_ + 1), [_, a]), y = i.useRef(null), I = i.useCallback(e => {
+  }), C = a.useMemo(() => i.slice(0, _ + 1), [_, i]), j = a.useMemo(() => i.slice(_ + 1), [_, i]), y = a.useRef(null), I = a.useCallback(e => {
     let t = e.contentRect.width;
     if (null == t || f.current === t) return;
     g(t), f.current = t;
@@ -152,7 +152,7 @@ function h(e) {
     ref: y,
     children: [(0, r.jsxs)("div", {
       className: p.measurements,
-      children: [a.map((e, t) => (0, r.jsx)(s.AJ, {
+      children: [i.map((e, t) => (0, r.jsx)(s.AJ, {
         index: t,
         onItemLayout: b,
         children: (0, r.jsx)(o.njP.Item, {

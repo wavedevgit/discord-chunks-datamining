@@ -19,23 +19,23 @@ function o(e) {
     if (!t) return;
     let r = Math.round(e);
     switch (o) {
-      case i.GlobalDiscoverySearchBarState.DEFAULT:
-        r < 20 && c(n ? i.GlobalDiscoverySearchBarState.COLLAPSED : i.GlobalDiscoverySearchBarState.FLOATING);
+      case a.GlobalDiscoverySearchBarState.DEFAULT:
+        r < 20 && c(n ? a.GlobalDiscoverySearchBarState.COLLAPSED : a.GlobalDiscoverySearchBarState.FLOATING);
         break;
-      case i.GlobalDiscoverySearchBarState.COLLAPSED:
-        r > l && c(i.GlobalDiscoverySearchBarState.DEFAULT);
+      case a.GlobalDiscoverySearchBarState.COLLAPSED:
+        r > l && c(a.GlobalDiscoverySearchBarState.DEFAULT);
         break;
-      case i.GlobalDiscoverySearchBarState.FLOATING:
-        r > s && c(i.GlobalDiscoverySearchBarState.DEFAULT)
+      case a.GlobalDiscoverySearchBarState.FLOATING:
+        r > s && c(a.GlobalDiscoverySearchBarState.DEFAULT)
     }
   }, [n, t, o, c]), u = r.useCallback(() => {
-    c(i.GlobalDiscoverySearchBarState.FLOATING)
+    c(a.GlobalDiscoverySearchBarState.FLOATING)
   }, [c]), p = r.useCallback(() => {
-    o === i.GlobalDiscoverySearchBarState.FLOATING && n && c(i.GlobalDiscoverySearchBarState.COLLAPSED)
+    o === a.GlobalDiscoverySearchBarState.FLOATING && n && c(a.GlobalDiscoverySearchBarState.COLLAPSED)
   }, [n, o, c]);
   return {
     onTabsAvailableWidthChange: d,
-    tabsClassName: o === i.GlobalDiscoverySearchBarState.FLOATING ? a.floatingSearchTabsMask : true,
+    tabsClassName: o === a.GlobalDiscoverySearchBarState.FLOATING ? i.floatingSearchTabsMask : true,
     onCollapsedSearchBarClick: u,
     onSearchBarBlur: p
   }

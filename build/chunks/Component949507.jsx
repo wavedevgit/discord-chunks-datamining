@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk686546 = require("./686546.jsx"),
@@ -25,7 +25,7 @@ function x(e) {
   let {
     guild: t,
     className: n,
-    onClick: i
+    onClick: a
   } = e, x = (0, s.ZP)(), v = (0, m.dangerouslyConstructGuildRecordFromUntypedObject)({
     name: t.name,
     icon: t.icon
@@ -46,8 +46,8 @@ function x(e) {
     size: 50
   });
   return (0, r.jsxs)(l.P3F, {
-    className: a()(f.card, n),
-    onClick: i,
+    className: i()(f.card, n),
+    onClick: a,
     "aria-label": g.intl.string(g.t.RB4L2x),
     children: [(0, r.jsxs)("div", {
       className: f.cardHeader,
