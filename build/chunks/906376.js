@@ -20,5 +20,6 @@ module.exports = {
   contentInfoWrapper: "contentInfoWrapper__98ba8",
   actionWrapper: "actionWrapper__98ba8",
   buttonWithPossibleDisabledTextWrapper: "buttonWithPossibleDisabledTextWrapper__98ba8",
+  actionWrapperPrimaryFirst: "actionWrapperPrimaryFirst__98ba8",
   disabledReason: "disabledReason__98ba8"
 }

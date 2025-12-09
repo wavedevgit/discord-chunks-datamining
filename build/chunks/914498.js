@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   a = function(e) {
-    return e.VIEW = "view", e.PLAY = "play", e.CLOUD_PLAY = "cloud_play", e.JOIN = "join", e.ADD_APP = "add_app", e.JOIN_SERVER = "join_server", e.INVITE = "invite", e.SYNC = "sync", e.CONTENT = "content", e.BANNER = "banner", e.STREAM = "stream", e
+    return e.VIEW = "view", e.PLAY = "play", e.CLOUD_PLAY = "cloud_play", e.JOIN = "join", e.ADD_APP = "add_app", e.JOIN_SERVER = "join_server", e.INVITE = "invite", e.SYNC = "sync", e.CONTENT = "content", e.BANNER = "banner", e.STREAM = "stream", e.CONNECT_ACCOUNT = "connect_account", e
   }({});
 
 function o(e) {

@@ -2,8 +2,8 @@
 /** chunk id: 758199, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => O,
-  u: () => E
+  W: () => v,
+  u: () => b
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,6 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk907331 = require("./907331.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk607070 = require("./607070.js"),
   Chunk206295 = require("./206295.js"),
   Chunk314897 = require("./314897.js"),
@@ -20,16 +21,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk967249 = require("./967249.js"),
   Chunk217702 = require("./217702.js"),
   Chunk906376 = require("./906376.js"),
-  E = function(e) {
+  b = function(e) {
     return e[e.BOT = 0] = "BOT", e[e.ACTIVITY = 1] = "ACTIVITY", e
   }({});
 
-function b(e) {
+function y(e) {
   var t, n, r, i;
   return {
     id: null != (t = null == e ? true : e.id) ? t : "0",
-    linkType: null != (n = null == e ? true : e.linkType) ? n : m.U.UNKNOWN,
-    referrerId: null != (r = null == e ? true : e.referrerId) ? r : p.default.getId(),
+    linkType: null != (n = null == e ? true : e.linkType) ? n : h.U.UNKNOWN,
+    referrerId: null != (r = null == e ? true : e.referrerId) ? r : _.default.getId(),
     activityCustomId: null == e ? true : e.activityCustomId,
     onView: null == e ? true : e.onView,
     onLinkCopied: null == e ? true : e.onLinkCopied,
@@ -40,7 +41,7 @@ function b(e) {
   }
 }
 
-function y(e) {
+function O(e) {
   let {
     onClick: t,
     children: n,
@@ -49,7 +50,7 @@ function y(e) {
   return null != t ? (0, r.jsx)(c.P3F, {
     onClick: t,
     className: o()({
-      [g.cursorPointer]: null != t
+      [E.cursorPointer]: null != t
     }, i),
     children: n
   }) : (0, r.jsx)("div", {
@@ -58,128 +59,129 @@ function y(e) {
   })
 }
 
-function O(e) {
+function v(e) {
   let {
     title: t,
     header: n,
     footer: a,
-    info: p,
-    staticBannerSrc: m,
-    videoBannerSrc: E,
-    bannerAspectRatio: O = 0,
-    iconSrc: v,
-    actions: S = [],
-    trackingConfig: I,
-    onClickContent: T,
-    onClickBanner: A
+    info: _,
+    staticBannerSrc: h,
+    videoBannerSrc: b,
+    bannerAspectRatio: v = 0,
+    iconSrc: S,
+    actions: I = [],
+    primaryActionFirst: T = false,
+    trackingConfig: A,
+    onClickContent: C,
+    onClickBanner: N
   } = e;
-  I = b(I);
+  A = y(A);
   let {
-    primaryColor: C,
-    secondaryColor: N
-  } = (0, f.Z)(null != v ? v : m), P = "linear-gradient(45deg, ".concat(C, ", ").concat(N, ")"), R = (0, u.e7)([d.Z], () => d.Z.useReducedMotion), D = i.useRef(false), w = (0, l.O)(e => {
-    if (false === D.current && e) {
+    primaryColor: P,
+    secondaryColor: R
+  } = (0, p.Z)(null != S ? S : h), D = "linear-gradient(45deg, ".concat(P, ", ").concat(R, ")"), w = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), x = i.useRef(false), L = (0, l.O)(e => {
+    if (false === x.current && e) {
       var t;
-      null == I || null == (t = I.onView) || t.call(I), (0, _.GF)({
-        appId: I.id,
-        linkType: I.linkType,
-        referrerId: I.referrerId,
-        customId: I.activityCustomId,
-        guildId: I.guildId,
-        channelId: I.channelId,
-        messageId: I.messageId
-      }), D.current = true
+      null == A || null == (t = A.onView) || t.call(A), (0, m.GF)({
+        appId: A.id,
+        linkType: A.linkType,
+        referrerId: A.referrerId,
+        customId: A.activityCustomId,
+        guildId: A.guildId,
+        channelId: A.channelId,
+        messageId: A.messageId
+      }), x.current = true
     }
-  }, true), x = null != m, L = null != E && false === R, j = x || L, M = 0 === O ? g.bannerAspectRatioBot : g.bannerAspectRatioActivity, k = i.useRef(null), U = i.useCallback(() => {
-    let e = k.current;
+  }, true), j = null != h, M = null != b && false === w, k = j || M, U = 0 === v ? E.bannerAspectRatioBot : E.bannerAspectRatioActivity, G = i.useRef(null), Z = i.useCallback(() => {
+    let e = G.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-  }, []), G = i.useMemo(() => !!L && new URL(E).pathname.endsWith(".gif"), [L, E]), Z = i.useMemo(() => {
-    if (null != T) return e => {
-      T(e), (0, _.KX)({
-        applicationId: I.id,
-        linkType: I.linkType,
-        area: _.j_.CONTENT,
-        referrerId: I.referrerId,
-        customId: I.activityCustomId,
-        isDeadEnd: I.isDeadEnd
+  }, []), B = i.useMemo(() => !!M && new URL(b).pathname.endsWith(".gif"), [M, b]), F = i.useMemo(() => {
+    if (null != C) return e => {
+      C(e), (0, m.KX)({
+        applicationId: A.id,
+        linkType: A.linkType,
+        area: m.j_.CONTENT,
+        referrerId: A.referrerId,
+        customId: A.activityCustomId,
+        isDeadEnd: A.isDeadEnd
       })
     }
-  }, [T, I]), B = i.useMemo(() => {
-    if (null != A) return e => {
-      A(e), (0, _.KX)({
-        applicationId: I.id,
-        linkType: I.linkType,
-        area: _.j_.BANNER,
-        referrerId: I.referrerId,
-        customId: I.activityCustomId,
-        isDeadEnd: I.isDeadEnd
+  }, [C, A]), V = i.useMemo(() => {
+    if (null != N) return e => {
+      N(e), (0, m.KX)({
+        applicationId: A.id,
+        linkType: A.linkType,
+        area: m.j_.BANNER,
+        referrerId: A.referrerId,
+        customId: A.activityCustomId,
+        isDeadEnd: A.isDeadEnd
       })
     }
-  }, [A, I]);
+  }, [N, A]);
   return (0, r.jsxs)("div", {
-    ref: w,
-    className: g.embed,
-    children: [j && (0, r.jsxs)(y, {
-      onClick: B,
-      className: o()(g.bannerWrapper, M, {
-        [g.showVideoOnFocus]: L
+    ref: L,
+    className: E.embed,
+    children: [k && (0, r.jsxs)(O, {
+      onClick: V,
+      className: o()(E.bannerWrapper, U, {
+        [E.showVideoOnFocus]: M
       }),
-      children: [L && (G ? (0, r.jsx)("div", {
-        className: g.videoBanner,
+      children: [M && (B ? (0, r.jsx)("div", {
+        className: E.videoBanner,
         style: {
-          backgroundImage: "url(".concat(E, ")")
+          backgroundImage: "url(".concat(b, ")")
         }
       }) : (0, r.jsx)(s.Z, {
-        ref: k,
-        src: E,
-        mediaLayoutType: h.hV.MOSAIC,
+        ref: G,
+        src: b,
+        mediaLayoutType: g.hV.MOSAIC,
         loop: true,
         muted: true,
-        className: g.videoBanner
-      })), x && (0, r.jsx)("div", {
-        className: g.staticBanner,
+        className: E.videoBanner
+      })), j && (0, r.jsx)("div", {
+        className: E.staticBanner,
         style: {
-          backgroundImage: "url(".concat(m, ")")
+          backgroundImage: "url(".concat(h, ")")
         },
-        onTransitionEnd: U
+        onTransitionEnd: Z
       })]
     }), (0, r.jsxs)("div", {
       style: {
-        background: P
+        background: D
       },
       children: [(0, r.jsxs)("div", {
-        className: g.contentContainer,
+        className: E.contentContainer,
         children: [null != n && (0, r.jsx)(c.xvT, {
           variant: "text-sm/semibold",
           color: "none",
-          className: g.header,
+          className: E.header,
           children: n
-        }), (0, r.jsxs)(y, {
-          onClick: Z,
-          className: o()(g.contentWrapper, {
-            [g.contentWrapperClickable]: null != Z
+        }), (0, r.jsxs)(O, {
+          onClick: F,
+          className: o()(E.contentWrapper, {
+            [E.contentWrapperClickable]: null != F
           }),
-          children: [null != v && (0, r.jsx)("div", {
-            className: g.img,
+          children: [null != S && (0, r.jsx)("div", {
+            className: E.img,
             style: {
-              backgroundImage: "url(".concat(v, ")")
+              backgroundImage: "url(".concat(S, ")")
             }
           }), (0, r.jsxs)("div", {
-            className: g.content,
+            className: E.content,
             children: [(0, r.jsx)(c.xvT, {
               variant: "text-md/semibold",
               color: "none",
               lineClamp: 1,
-              className: g.contentTitle,
+              className: E.contentTitle,
               children: t
             }), (0, r.jsx)("div", {
-              className: g.contentInfoWrapper,
-              children: p
+              className: E.contentInfoWrapper,
+              children: _
             })]
           })]
-        }), S.length > 0 && (0, r.jsx)("div", {
-          className: g.actionWrapper,
-          children: S.map((e, t) => {
+        }), I.length > 0 && (0, r.jsx)("div", {
+          className: o()(E.actionWrapper, T ? E.actionWrapperPrimaryFirst : null),
+          children: I.map((e, t) => {
             let {
               label: n,
               icon: i,
@@ -188,31 +190,51 @@ function O(e) {
               disabledReason: s,
               submitting: l,
               trackingArea: u,
-              isDeadEnd: d
-            } = e, f = 0 === t;
-            return (0, r.jsxs)("div", {
-              className: g.buttonWithPossibleDisabledTextWrapper,
+              isDeadEnd: f,
+              iconButton: p
+            } = e, _ = 0 === t;
+            return p ? (0, r.jsx)(d.u, {
+              text: n,
+              children: (0, r.jsx)(c.hU, {
+                variant: _ ? "overlay-primary" : "overlay-secondary",
+                disabled: o || null != s,
+                loading: l,
+                icon: i,
+                "aria-label": n,
+                onClick: e => {
+                  a(e), (0, m.KX)({
+                    applicationId: A.id,
+                    linkType: A.linkType,
+                    area: u,
+                    referrerId: A.referrerId,
+                    customId: A.activityCustomId,
+                    isDeadEnd: f
+                  })
+                }
+              })
+            }, n) : (0, r.jsxs)("div", {
+              className: E.buttonWithPossibleDisabledTextWrapper,
               children: [(0, r.jsx)(c.zxk, {
-                variant: f ? "overlay-primary" : "overlay-secondary",
+                variant: _ ? "overlay-primary" : "overlay-secondary",
                 disabled: o || null != s,
                 loading: l,
                 icon: i,
                 text: n,
                 onClick: e => {
-                  a(e), (0, _.KX)({
-                    applicationId: I.id,
-                    linkType: I.linkType,
+                  a(e), (0, m.KX)({
+                    applicationId: A.id,
+                    linkType: A.linkType,
                     area: u,
-                    referrerId: I.referrerId,
-                    customId: I.activityCustomId,
-                    isDeadEnd: d
+                    referrerId: A.referrerId,
+                    customId: A.activityCustomId,
+                    isDeadEnd: f
                   })
                 },
                 fullWidth: true
               }), null != s && (0, r.jsx)(c.xvT, {
                 variant: "text-xs/medium",
                 color: "none",
-                className: g.disabledReason,
+                className: E.disabledReason,
                 children: s
               })]
             }, n)
