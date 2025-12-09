@@ -46,7 +46,7 @@ let u = e => {
       skuId: t,
       applicationId: n,
       transitionState: i,
-      returnRef: a,
+      returnRef: l,
       onComplete: p,
       onClose: u,
       modalOnClose: d,
@@ -58,9 +58,9 @@ let u = e => {
     } = (0, c.Li)(), j = o.useCallback((e, t) => {
       d(), null != u && u(e, t)
     }, [d, u]);
-    return (0, r.jsx)(l.PaymentModal, s({
+    return (0, r.jsx)(a.PaymentModal, s({
       transitionState: i,
-      returnRef: a,
+      returnRef: l,
       applicationId: n,
       onComplete: p,
       onClose: j,
@@ -76,8 +76,8 @@ let u = e => {
     let {
       skuId: t
     } = e;
-    return (0, r.jsx)(a.PaymentContextProvider, p(s({}, e), {
-      skuIDs: [t],
+    return (0, r.jsx)(l.PaymentContextProvider, p(s({}, e), {
+      skuIDs: null != t ? [t] : [],
       children: e.children
     }))
   },
@@ -86,8 +86,8 @@ let u = e => {
       loadId: t,
       skuId: n,
       applicationId: o,
-      analyticsLocations: a,
-      analyticsSourceLocation: l,
+      analyticsLocations: l,
+      analyticsSourceLocation: a,
       giftContextProps: c,
       flowSpecificOptions: b,
       onComplete: y,
@@ -116,8 +116,8 @@ let u = e => {
         children: (0, r.jsx)(S, {
           skuId: n,
           loadId: t,
-          analyticsLocations: a,
-          analyticsSourceLocation: l,
+          analyticsLocations: l,
+          analyticsSourceLocation: a,
           onComplete: y,
           onClose: f,
           renderModalProps: O,
@@ -126,7 +126,7 @@ let u = e => {
             applicationId: o,
             skuId: n,
             renderHeader: h,
-            analyticsLocations: a,
+            analyticsLocations: l,
             onComplete: y,
             onClose: f,
             modalOnClose: O.onClose,
