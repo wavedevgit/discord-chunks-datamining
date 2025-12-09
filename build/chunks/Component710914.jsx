@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 710914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,12 +16,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk334525 = require("./334525.js");
 
-function g(e) {
+function h(e) {
   let {
     quests: t,
     excludedQuests: n,
     isFetching: l,
-    hasFetched: g,
+    hasFetched: h,
     hasFiltersApplied: m = false,
     onClearFilters: _
   } = e, b = i.useRef(false), E = (0, o.TH)(), O = i.useMemo(() => {
@@ -35,13 +35,13 @@ function g(e) {
   i.useEffect(() => {
     b.current = false
   }, [E.hash]), i.useEffect(() => {
-    if (null == O || b.current || l || !g) return;
+    if (null == O || b.current || l || !h) return;
     let e = document.getElementById("quest-tile-".concat(O));
     null == e || e.scrollIntoView({
       behavior: "smooth",
       block: "center"
     }), b.current = true
-  }, [t, O, E, l, g]);
+  }, [t, O, E, l, h]);
   let v = null != O,
     [y, I] = i.useState(window.innerWidth);
   i.useEffect(() => {
@@ -54,9 +54,9 @@ function g(e) {
   }, []);
   let C = y >= 1610 ? 3 : y >= 1340 ? 2 : 1;
   return l && 0 === t.length ? (0, r.jsx)(c.$jN, {
-    className: h.spinner
+    className: g.spinner
   }) : 0 === t.length ? (0, r.jsxs)("div", {
-    className: h.emptyStateContainer,
+    className: g.emptyStateContainer,
     children: [(0, r.jsx)(c.Heading, {
       variant: "heading-xl/semibold",
       children: f.intl.string(m ? f.t.PBfFnx : f.t.NqFP6z)
@@ -68,7 +68,7 @@ function g(e) {
       }) : f.intl.string(f.t.LhD4yH)
     })]
   }) : (0, r.jsx)("div", {
-    className: h.container,
+    className: g.container,
     children: t.map((e, t) => {
       let n = Math.floor(t / C);
       return (0, r.jsx)(p.Z, {
@@ -76,9 +76,9 @@ function g(e) {
         questContent: u.jn.QUEST_HOME_DESKTOP,
         contentPosition: t,
         rowIndex: n,
-        className: a()(h.questTile, {
-          [h.selected]: v && e.id === O,
-          [h.unselected]: v && e.id !== O
+        className: a()(g.questTile, {
+          [g.selected]: v && e.id === O,
+          [g.unselected]: v && e.id !== O
         }),
         sourceQuestContent: u.jn.QUEST_HOME_DESKTOP
       }, e.id)

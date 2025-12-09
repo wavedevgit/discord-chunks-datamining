@@ -46,7 +46,7 @@ function _(e) {
     analyticsLocations: p
   } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), m = (0, c.ZP)(), _ = (0, s.apv)(m);
   if ("announcementModalVariant1" === l.properties.oneofKind) {
-    let e = (0, h.N)({
+    let e = (0, g.N)({
       componentId: t,
       promotionId: n,
       content: l.properties.announcementModalVariant1,
@@ -55,7 +55,7 @@ function _(e) {
       analyticsLocation: a,
       isLightTheme: _
     });
-    return (0, r.jsx)(g.Z, function(e) {
+    return (0, r.jsx)(h.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

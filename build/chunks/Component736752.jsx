@@ -338,7 +338,7 @@ class K extends Chunk473749.PureComponent {
       shouldRenderOwnedTeamsModal: true
     }) : Chunk512722.length > 0 ? void this.setState({
       shouldRenderOwnedGuildsModal: true
-    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(O.Z, Y(V({}, e), {
+    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(O.default, Y(V({}, e), {
       handleSubmit: e => this.handleSubmitDisableAccount(e, t),
       title: t ? Z.intl.string(Z.t["8lQ2rR"]) : Z.intl.string(Z.t.jf5GGb),
       actionText: t ? Z.intl.string(Z.t["8lQ2rR"]) : Z.intl.string(Z.t.jf5GGb),

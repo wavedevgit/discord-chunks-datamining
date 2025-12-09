@@ -1,30 +1,30 @@
-/** Chunk was on 83615 **/
+/** Chunk was on 75393 **/
 /** chunk id: 916028, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => l
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk199849 = require("./199849.jsx"),
   Chunk968843 = require("./968843.js");
-let a = function(e) {
+let l = function(e) {
   let {
     onSelect: t,
     quest: n
   } = e, {
-    quests: a
-  } = (0, o.J2)({
+    quests: l
+  } = (0, i.J2)({
     fetchPolicy: "cache-and-network",
     callerSource: "prefill_selector"
-  }), i = [{
+  }), s = [{
     label: "NONE",
     value: null
-  }, ...a.map(e => ({
+  }, ...l.map(e => ({
     label: e.config.messages.questName,
     value: e
   }))];
-  return (0, r.jsx)(s.B6, {
+  return (0, a.jsx)(r.B6, {
     label: "Prefill with Quest",
-    options: i,
+    options: s,
     isSelected: e => (null == e ? true : e.id) === (null == n ? true : n.id),
     select: t,
     serialize: String

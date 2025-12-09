@@ -1,8 +1,8 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 493754, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => b,
-  Z: () => y
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -79,24 +79,24 @@ function b(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     stream: t,
     applicationId: n,
     channel: r,
     exitFullScreen: a,
-    appContext: y,
-    analyticsLocation: C,
-    className: v,
-    size: _ = "sm"
+    appContext: C,
+    analyticsLocation: y,
+    className: _,
+    size: v = "sm"
   } = e, O = null == r ? true : r.getGuildId(), x = null == r ? true : r.id, E = (0, s.e7)([p.Z], () => null != O ? p.Z.getGuild(O) : null, [O]), j = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(x), [x]);
   if (!(null != E && null != r && h.Z.can(f.Plq.CREATE_INSTANT_INVITE, r))) return null;
   let S = m.intl.string(m.t.VINpSK);
   return null != t ? S = m.intl.string(m.t["6VQaqd"]) : null != n && (S = m.intl.string(m.t["OzOM/q"])), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: l()(v, g.textButton),
+      className: l()(_, g.textButton),
       children: (0, i.jsx)(c.Button, {
-        size: _,
+        size: v,
         variant: "secondary",
         text: S,
         onClick: () => {
@@ -105,9 +105,9 @@ function y(e) {
             channel: r,
             streamUserId: null == t ? true : t.ownerId,
             applicationId: n,
-            appContext: y,
+            appContext: C,
             exitFullScreen: a,
-            analyticsLocation: C,
+            analyticsLocation: y,
             guildScheduledEvent: j
           })
         }
@@ -115,10 +115,10 @@ function y(e) {
     }), (0, i.jsx)(d.Z, {
       channel: r,
       stream: t,
-      appContext: y,
-      className: l()(v, g.iconButton),
+      appContext: C,
+      className: l()(_, g.iconButton),
       exitFullScreen: a,
-      analyticsLocation: C,
+      analyticsLocation: y,
       guildScheduledEvent: j
     })]
   })

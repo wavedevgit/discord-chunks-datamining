@@ -76,7 +76,7 @@ let N = Chunk473749.memo(function(e) {
     content: B,
     hasSpoilerEmbeds: H,
     hasBailedAst: V
-  } = (0, g.Z)(N, {
+  } = (0, h.Z)(N, {
     hideSimpleEmbedContent: A,
     allowList: U || G,
     allowHeading: U || G,
@@ -85,7 +85,7 @@ let N = Chunk473749.memo(function(e) {
   }), F = (0, s.JA)(N.id), z = (0, p.ZP)(N), Y = (0, o.e7)([v.Z], () => N.hasFlag(I.iLy.HAS_THREAD) && v.Z.getChannel(y.default.castMessageIdAsChannelId(N.id))), W = (0, c.p9)({
     guildId: Z.guild_id,
     roleId: z.iconRoleId
-  }), q = (0, h.iG)(N), K = (0, h.Gx)(N);
+  }), q = (0, g.iG)(N), K = (0, g.Gx)(N);
   return (0, r.jsx)(f.Z, T({
     compact: false,
     className: a()(j, C.icymiMessageWrapper, {

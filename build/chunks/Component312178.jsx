@@ -40,7 +40,7 @@ let E = {
       dragStart: s,
       className: o
     } = e;
-    return (0, i.jsx)(b.Z, {
+    return (0, i.jsx)(y.Z, {
       dragStart: s,
       locked: n,
       pinned: r,
@@ -68,12 +68,12 @@ let E = {
       locked: s,
       pinned: o
     } = e;
-    return (0, i.jsx)(_.Z, {
+    return (0, i.jsx)(v.Z, {
       anchor: n,
       id: t,
       locked: s,
       pinned: o,
-      widget: v.Odu.VOICE,
+      widget: b.Odu.VOICE,
       isPreviewingInGame: r
     })
   },
@@ -95,7 +95,7 @@ let E = {
 };
 class x extends Chunk473749.PureComponent {
   componentDidUpdate(e) {
-    this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (l.Z.track(v.rMx.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
+    this.props.locked && !e.locked && null != this.state.lastLayoutUpdate && (l.Z.track(b.rMx.OVERLAY_LAYOUT_UPDATED, this.state.lastLayoutUpdate), this.setState({
       lastLayoutUpdate: null
     }))
   }
@@ -138,9 +138,9 @@ class x extends Chunk473749.PureComponent {
       anchor: h,
       minSize: f
     } = module, g = (0, Chunk434529.w_)(Chunk237997, require), m = (0, Chunk434529.KR)(Chunk451478, require), {
-      resizeX: b,
-      resizeY: _,
-      dragAnywhere: v
+      resizeX: y,
+      resizeY: v,
+      dragAnywhere: b
     } = exports, O = (0, Chunk906037.eM)({
       locked: Chunk473749,
       isPreviewingInGame: Chunk442837,
@@ -239,7 +239,7 @@ let S = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk237997.default], e => 
     widgetConfig: null != n ? d.Z.getWidgetConfig(n.type) : null,
     locked: u.default.isInstanceLocked(),
     isPreviewingInGame: u.default.isPreviewingInGame(),
-    isActiveRegion: null != n && n.type === v.Odu.TEXT && i.has(v.O0n.TEXT_WIDGET)
+    isActiveRegion: null != n && n.type === b.Odu.TEXT && i.has(b.O0n.TEXT_WIDGET)
   }
 })(x);
 

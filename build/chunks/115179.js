@@ -14,7 +14,6 @@ require.d(exports, {
   hF: () => T,
   o9: () => P,
   oo: () => R,
-  t2: () => w,
   vQ: () => b,
   w8: () => C,
   wj: () => y,
@@ -156,18 +155,4 @@ function R(e) {
 function D(e) {
   let t = e.rewardsConfig.platforms;
   return t.length > 0 ? t[0] : s.y$.CROSS_PLATFORM
-}
-let w = e => {
-  switch (e) {
-    case s.y$.XBOX:
-      return d.intl.string(d.t.G84UWZ);
-    case s.y$.PLAYSTATION:
-      return d.intl.string(d.t["6IeKx2"]);
-    case s.y$.SWITCH:
-      return d.intl.string(d.t["1pp0su"]);
-    case s.y$.PC:
-      return d.intl.string(d.t["YK+wUg"]);
-    case s.y$.CROSS_PLATFORM:
-      return d.intl.string(d.t.UWVbzV)
-  }
 }

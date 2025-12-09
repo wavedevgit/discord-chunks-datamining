@@ -20,9 +20,9 @@ var r, Chunk473749 = require("./473749.js"),
 
 function _(e) {
   var t;
-  let n = null != (t = null == e ? true : e.id) ? t : g.lds,
+  let n = null != (t = null == e ? true : e.id) ? t : h.lds,
     r = (0, l.e7)([p.Z], () => p.Z.isVisible(e)),
-    m = (0, l.e7)([h.Z], () => h.Z.isVisible(e)),
+    m = (0, l.e7)([g.Z], () => g.Z.isVisible(e)),
     _ = (0, s.m)(n),
     b = (0, l.e7)([f.Z], () => f.Z.isVisible(e)),
     E = u.Z.useShouldShowChannelNotice(n),
@@ -31,7 +31,7 @@ function _(e) {
       enableStudyGroup: v
     } = (0, c.s)(e),
     y = O.length > 0,
-    I = v && !(null == e ? true : e.features.has(g.GuildFeatures.HUB)),
+    I = v && !(null == e ? true : e.features.has(h.GuildFeatures.HUB)),
     C = (0, o.Vm)(n);
   if (i.useEffect(() => {
       a.Z.getGuildEventsForCurrentUser(n)

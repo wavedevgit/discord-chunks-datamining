@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 878752, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -25,21 +25,21 @@ function g(e) {
     showRightDivider: g = false
   } = e, {
     analyticsLocations: b
-  } = (0, l.ZP)(r.Z.VOICE_CONTROL_TRAY), y = (0, o.Z)(), {
-    isSharedCanvasEnabled: C
+  } = (0, l.ZP)(r.Z.VOICE_CONTROL_TRAY), C = (0, o.Z)(), {
+    isSharedCanvasEnabled: y
   } = c.Z.useExperiment({
     guildId: null == t ? true : t.guild_id,
     location: "b7309a_1"
   }), {
-    enableViewerClipping: v
+    enableViewerClipping: _
   } = s.Z.useExperiment({
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: false
-  }), _ = (0, a.Z)(u.Z);
-  if (null == t || null != y) return null;
-  let O = v && _,
-    x = C && n;
+  }), v = (0, a.Z)(u.Z);
+  if (null == t || null != C) return null;
+  let O = _ && v,
+    x = y && n;
   return O || x ? (0, i.jsxs)(l.Gt, {
     value: b,
     children: [(0, i.jsxs)("div", {

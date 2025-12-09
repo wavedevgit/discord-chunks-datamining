@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 292140, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,11 +17,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e) {
+function h(e) {
   let {
     party: t,
     close: n,
-    onSelect: g
+    onSelect: h
   } = e, m = (0, c.Z)(t), _ = (0, p.Z)(t), b = (0, d.Z)(t), E = (0, u.Z)(t), O = (0, s.Z)(t), v = (0, o.Z)(t);
   return (0, l.ZP)(() => {
     let e = t.currentActivities.filter(e => {
@@ -35,8 +35,8 @@ function g(e) {
   }), (0, r.jsxs)(i.v2r, {
     navId: "now-playing-menu",
     onClose: n,
-    "aria-label": h.intl.string(h.t.ogxXGq),
-    onSelect: g,
+    "aria-label": g.intl.string(g.t.ogxXGq),
+    onSelect: h,
     children: [m, (0, r.jsxs)(i.kSQ, {
       children: [_, b]
     }), (0, r.jsx)(i.kSQ, {

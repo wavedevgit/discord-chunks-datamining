@@ -47,7 +47,7 @@ function D(e, t, n, r) {
       let n = null != l ? _.Z.getRole(l.id, t) : null;
       return null != n && null != n.name ? n.name : x.intl.string(x.t.dRcLA2)
     }).replace(/<#(\d+)>/g, (e, t) => {
-      let n = g.Z.getChannel(t);
+      let n = h.Z.getChannel(t);
       return null == n ? e : (0, o.F6)(n, C.default, v.Z)
     }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(x.intl.string(x.t.sMOuuS), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
       let r = c.Qh[n],
@@ -118,10 +118,10 @@ function V(e) {
     optimistic: c
   } = e;
   if (c || E.Z.isSelfDeaf()) returnfalse;
-  let u = g.Z.getChannel(s);
+  let u = h.Z.getChannel(s);
   if (null == u) returnfalse;
   let d = y.Z.getChannelId(),
-    _ = h.ZP.getCurrentSidebarChannelId(d),
+    _ = g.ZP.getCurrentSidebarChannelId(d),
     b = s === d || s === _,
     C = p.OW.getSetting() && o.tts && b,
     T = O.Z.getTTSType(),

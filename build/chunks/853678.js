@@ -63,7 +63,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             s = e.toString();
           if (m.isPlatformEmbedded) {
             let e = (0, a.R)() ? v.KJ3.ACTIVITY_POPOUT : null;
-            h.Z.focus(e, true)
+            g.Z.focus(e, true)
           }
           let p = d.Z.getApplication(null == (i = t.application) ? true : i.id),
             _ = (0, u.p)(null == r ? true : r.location),
@@ -75,7 +75,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
           }), Promise.resolve({
             opened: true
           });
-          return new Promise(e => (0, g.q)({
+          return new Promise(e => (0, h.q)({
             href: s,
             shouldConfirm: true,
             onConfirm: () => {

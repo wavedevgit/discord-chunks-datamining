@@ -1,7 +1,7 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 453470, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => v
+  M: () => _
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,43 +21,43 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function v(e) {
+function _(e) {
   let {
     channelId: t,
-    warningId: v,
-    senderId: _
+    warningId: _,
+    senderId: v
   } = e, O = (0, b.E4)(), x = r.useCallback(() => {
-    (0, p.T)(t, [v])
-  }, [t, v]), E = e => {
+    (0, p.T)(t, [_])
+  }, [t, _]), E = e => {
     o.Z.updateChannelOverrideSettings(null, t, {
       muted: true
-    }, g.ZB.Muted), c.Z.showMuteSuccessToast(_, t), (0, f.qc)({
+    }, g.ZB.Muted), c.Z.showMuteSuccessToast(v, t), (0, f.qc)({
       channelId: t,
-      warningId: v,
-      senderId: _,
+      warningId: _,
+      senderId: v,
       warningType: h.pj.LIKELY_ATO,
       cta: e
     }), x()
   };
   return r.useEffect(() => {
-    (0, f.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
+    (0, f.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
-      warningId: v,
-      senderId: _,
+      warningId: _,
+      senderId: v,
       warningType: h.pj.LIKELY_ATO
     }), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [t, v, _]), (0, i.jsx)(m.Q, {
+  }, [t, _, v]), (0, i.jsx)(m.Q, {
     channelId: t,
-    warningId: v,
-    senderId: _,
+    warningId: _,
+    senderId: v,
     warningType: h.pj.LIKELY_ATO,
-    header: C.intl.string(C.t.R8UsiI),
-    description: C.intl.string(C.t.lI8nQl),
+    header: y.intl.string(y.t.R8UsiI),
+    description: y.intl.string(y.t.lI8nQl),
     onDismiss: x,
     buttons: [{
-      text: C.intl.string(C.t.tC1pvL),
+      text: y.intl.string(y.t.tC1pvL),
       variant: "primary",
       onClick: () => {
         (0, a.ZDy)(async () => {
@@ -73,9 +73,9 @@ function v(e) {
               transitionState: r,
               onClose: l,
               channelId: t,
-              warningId: v,
-              senderId: _,
-              description: C.intl.string(C.t["/uid3p"]),
+              warningId: _,
+              senderId: v,
+              description: y.intl.string(y.t["/uid3p"]),
               safetyTipRows: O.map((e, t) => (0, i.jsx)(u.q, {
                 listType: "numbered",
                 index: t,
@@ -83,9 +83,9 @@ function v(e) {
                 description: e.description
               }, t)),
               actionRows: [(0, i.jsx)(d.JZ, {
-                title: C.intl.string(C.t.ftIK2A),
-                description: C.intl.string(C.t.w2ve0t),
-                buttonText: C.intl.string(C.t.ftIK2A),
+                title: y.intl.string(y.t.ftIK2A),
+                description: y.intl.string(y.t.w2ve0t),
+                buttonText: y.intl.string(y.t.ftIK2A),
                 onButtonPress: () => {
                   E(f.NM.USER_MODAL_MUTE), l()
                 }
@@ -93,15 +93,15 @@ function v(e) {
               learnMore: (0, i.jsx)(a.P3F, {
                 onClick: () => (0, f.qc)({
                   channelId: t,
-                  warningId: v,
-                  senderId: _,
+                  warningId: _,
+                  senderId: v,
                   warningType: h.pj.LIKELY_ATO,
                   cta: f.NM.USER_MODAL_LEARN_MORE
                 }),
                 children: (0, i.jsx)(a.Heading, {
                   variant: "heading-sm/medium",
                   color: "text-link",
-                  children: C.intl.format(C.t.UkH122, {
+                  children: y.intl.format(y.t.UkH122, {
                     learnMoreLink: b.D8
                   })
                 })
@@ -110,14 +110,14 @@ function v(e) {
           }
         }), (0, f.qc)({
           channelId: t,
-          warningId: v,
-          senderId: _,
+          warningId: _,
+          senderId: v,
           warningType: h.pj.LIKELY_ATO,
           cta: f.NM.OPEN_MORE_TIPS
         })
       }
     }, {
-      text: C.intl.string(C.t.ftIK2A),
+      text: y.intl.string(y.t.ftIK2A),
       onClick: () => E(f.NM.USER_BANNER_MUTE)
     }]
   })

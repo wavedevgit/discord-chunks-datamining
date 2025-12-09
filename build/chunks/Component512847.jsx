@@ -72,7 +72,7 @@ function Z() {
       videoEnabled: n,
       inVoiceChannel: r
     } = t;
-    if (!(0, h.O)()) return;
+    if (!(0, g.O)()) return;
     let {
       videoEnabled: i,
       inVoiceChannel: l
@@ -163,7 +163,7 @@ function U() {
     let t = Chunk979651.Z.getVoiceStateForChannel(module);
     return (0, Chunk590415.gf)(exports)
   }, (e, t) => {
-    if (e !== t && t === g.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
+    if (e !== t && t === h.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
   }), null
 }
 

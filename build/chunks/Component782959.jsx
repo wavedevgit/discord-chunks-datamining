@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 782959, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,15 +33,15 @@ function f(e) {
   return e
 }
 
-function h(e) {
+function g(e) {
   let {
     guildId: t,
-    markAsDismissed: h,
-    renderTargetElement: g
+    markAsDismissed: g,
+    renderTargetElement: h
   } = e, m = {
     text: p.intl.string(p.t.JzJpg4),
     onClick: () => {
-      o.default.track(u.rMx.MEDIA_CHANNEL_UPSELL_CLICKED, f({}, (0, s.hH)(t))), h(d.L.PRIMARY), (0, a.ZDy)(async () => {
+      o.default.track(u.rMx.MEDIA_CHANNEL_UPSELL_CLICKED, f({}, (0, s.hH)(t))), g(d.L.PRIMARY), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("29497"), n.e("53781")]).then(n.bind(n, 241865));
@@ -68,7 +68,7 @@ function h(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       ref: _,
-      children: g()
+      children: h()
     }), (0, r.jsx)(l.Mb, {
       title: p.intl.string(p.t.fW7UqM),
       body: p.intl.string(p.t["yQ0X+T"]),
@@ -83,7 +83,7 @@ function h(e) {
         text: p.intl.string(p.t.w4DutA)
       },
       targetElementRef: _,
-      onRequestClose: () => h(d.L.DISMISS)
+      onRequestClose: () => g(d.L.DISMISS)
     })]
   })
 }

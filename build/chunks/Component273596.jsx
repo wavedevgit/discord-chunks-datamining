@@ -78,7 +78,7 @@ function P(e) {
       loadId: t,
       searchId: w,
       query: I,
-      guildResults: o.map(h.Z.getGuild).filter(p.lm),
+      guildResults: o.map(g.Z.getGuild).filter(p.lm),
       analyticsContext: Z,
       categoryId: x
     })
@@ -150,7 +150,7 @@ function P(e) {
       var i, a;
       await l(e, t, n, r);
       let s = null == (a = B.current) || null == (i = a.getScrollerState()) ? true : i.scrollTop;
-      null != s && g.Z.setState({
+      null != s && h.Z.setState({
         scrollPosition: s
       })
     }, [l]),
@@ -173,19 +173,19 @@ function P(e) {
     return () => {
       var t;
       let n = null == e || null == (t = e.getScrollerState()) ? true : t.scrollTop;
-      null != n && g.Z.setState({
+      null != n && h.Z.setState({
         scrollPosition: n
       })
     }
   }, []), i.useLayoutEffect(() => {
-    let e = g.Z.getField("scrollPosition");
+    let e = h.Z.getField("scrollPosition");
     null != e && setTimeout(() => {
       var t;
       null == (t = B.current) || t.scrollTo({
         to: e,
         animate: false,
         callback: () => {
-          g.Z.setState({
+          h.Z.setState({
             scrollPosition: null
           })
         }

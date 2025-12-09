@@ -26,7 +26,7 @@ function O(e) {
     onOpen: t,
     onClose: n,
     "data-jump-section": l
-  } = e, O = (0, s.e7)([g.default], () => g.default.getCurrentUser()), v = i.useRef(null), y = (0, s.e7)([h.ZP], () => (null == O ? true : O.id) != null && h.ZP.getMentionCount(O.id, _.W.NOTIFICATION_CENTER) > 0), {
+  } = e, O = (0, s.e7)([h.default], () => h.default.getCurrentUser()), v = i.useRef(null), y = (0, s.e7)([g.ZP], () => (null == O ? true : O.id) != null && g.ZP.getMentionCount(O.id, _.W.NOTIFICATION_CENTER) > 0), {
     titlebarIconSize: I,
     titlebarHoverHighlight: C
   } = (0, p.T)({

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 729700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,16 +14,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk335131 = require("./335131.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let h = e => {
+let g = e => {
   let {
     displayOptions: t,
     targetElementRef: n,
-    onRequestClose: h,
-    onClick: g
+    onRequestClose: g,
+    onClick: h
   } = e, {
     analyticsLocations: m
-  } = (0, c.ZP)(o.Z.HOME_PAGE_SHOP_TAB), _ = (0, s.ZP)(), b = (0, a.wj)(_) ? t.assetDark : t.assetLight, E = i.useRef(h);
-  return E.current = h, i.useEffect(() => () => {
+  } = (0, c.ZP)(o.Z.HOME_PAGE_SHOP_TAB), _ = (0, s.ZP)(), b = (0, a.wj)(_) ? t.assetDark : t.assetLight, E = i.useRef(g);
+  return E.current = g, i.useEffect(() => () => {
     var e;
     null == (e = E.current) || e.call(E)
   }, []), (0, r.jsx)(l.J2, {
@@ -44,12 +44,12 @@ let h = e => {
       text: f.intl.string(f.t.fYfGgK),
       variant: "primary",
       onClick: () => {
-        null == g || g(), (0, u.uL)(p.Z5c.COLLECTIBLES_SHOP), (0, d.mK)({
+        null == h || h(), (0, u.uL)(p.Z5c.COLLECTIBLES_SHOP), (0, d.mK)({
           analyticsLocations: m,
           analyticsSource: o.Z.HOME_PAGE_SHOP_TAB
         })
       }
     }],
-    onRequestClose: h
+    onRequestClose: g
   })
 }

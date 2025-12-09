@@ -1,7 +1,7 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,13 +20,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk394024 = require("./394024.js");
-let v = (0, Chunk112724.Z)(e => {
+let _ = (0, Chunk112724.Z)(e => {
   let {
     participants: t,
     filteredParticipants: n,
     selectedParticipant: a,
-    participantsVersion: v,
-    layout: _,
+    participantsVersion: _,
+    layout: v,
     onSelectParticipant: O,
     onContextMenuParticipant: x,
     onFullscreenParticipant: E,
@@ -46,7 +46,7 @@ let v = (0, Chunk112724.Z)(e => {
   r.useEffect(() => {
     d.S.dispatch(b.CkL.REMEASURE_TARGET)
   }, [T, N, L.width, L.height]);
-  let D = r.useMemo(() => n.filter(e => e.type !== y.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, v]),
+  let D = r.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, _]),
     k = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(j.id), [j.id]);
   if ((null == R ? true : R.channelId) === j.id) return (0, i.jsx)(h.Z, {
     height: N
@@ -59,7 +59,7 @@ let v = (0, Chunk112724.Z)(e => {
   if (w === b.WtW.VOICE) return (0, i.jsx)(c.Z, {
     guildId: j.guild_id,
     width: T,
-    className: C.voiceCallWrapper,
+    className: y.voiceCallWrapper,
     participants: t,
     onContextMenu: x
   });
@@ -72,12 +72,12 @@ let v = (0, Chunk112724.Z)(e => {
       })
     }
     return (0, i.jsx)(u.Z, {
-      className: C.videoGridWrapper,
+      className: y.videoGridWrapper,
       justify: u.Z.Justify.CENTER,
       align: u.Z.Align.CENTER,
       children: (0, i.jsx)(f.Z, {
         channel: j,
-        className: C.videoGrid,
+        className: y.videoGrid,
         participants: D,
         totalNumberOfParticipants: t.length,
         onClick: O,
@@ -100,7 +100,7 @@ let v = (0, Chunk112724.Z)(e => {
     idle: A,
     height: N,
     width: T,
-    layout: _,
+    layout: v,
     inCall: I,
     channel: j,
     showParticipants: Z

@@ -256,7 +256,7 @@ function eQ(e) {
   } = e, s = i.useRef(null), {
     parentAnalyticsLocation: o
   } = (0, x.ZP)(), c = (0, ea.Z)(), d = (0, eo.Z)(t), p = (0, u.e7)([I.ZP], () => null != I.ZP.getSelfEmbeddedActivityForLocation(I.ZP.getConnectedActivityLocation())), f = (0, Q.Z)(t), {
-    reachedLimit: g,
+    reachedLimit: h,
     limit: E
   } = (0, es.Z)(t), O = i.useCallback(() => {
     (0, eu.Z)()
@@ -271,13 +271,13 @@ function eQ(e) {
     Component: S,
     play: T,
     events: N
-  } = (0, h.o)(c.enabled ? "disable" : "enable");
-  return i.useEffect(() => () => T(), [c.enabled, T]), (0, r.jsx)(eh.Z, eF(eV({
+  } = (0, g.o)(c.enabled ? "disable" : "enable");
+  return i.useEffect(() => () => T(), [c.enabled, T]), (0, r.jsx)(eg.Z, eF(eV({
     onChange: y,
     onCameraUnavailable: O,
     hasPermission: d,
     channelLimit: E,
-    channelLimitReached: g
+    channelLimitReached: h
   }, c), {
     enabled: !l && c.enabled,
     children: e => {
@@ -369,10 +369,10 @@ function eJ(e) {
     parentAnalyticsLocation: l,
     newestAnalyticsLocation: s
   } = (0, x.ZP)(), o = i === eL.IlC.POPOUT, c = (0, T.KF)(t.id), f = (0, T.g5)(c), {
-    userInActivity: h
+    userInActivity: g
   } = (0, u.cj)([I.ZP], () => ({
     userInActivity: null != I.ZP.getSelfEmbeddedActivityForChannel(t.id)
-  })), g = (0, S.p)({
+  })), h = (0, S.p)({
     surface: y.eR.VOICE_LAUNCHER,
     skipFetchingShelf: true
   }), b = c !== T.jy.CAN_LAUNCH, {
@@ -385,7 +385,7 @@ function eJ(e) {
     text: f,
     children: e => (0, r.jsx)(k.Xf, {
       contentType: d.z.ACTIVITIES_VOICE_LAUNCHER_BADGE,
-      latestVersion: g,
+      latestVersion: h,
       children: n => {
         let {
           visibleContent: i,
@@ -420,7 +420,7 @@ function eJ(e) {
           },
           disabled: b,
           className: a()(eG.button, eG.buttonColor, {
-            [eG.buttonActive]: h,
+            [eG.buttonActive]: g,
             [eG.disabled]: b
           }),
           innerClassName: eG.buttonContents,
@@ -452,8 +452,8 @@ function eX(e) {
       parentAnalyticsLocation: d,
       analyticsLocations: p
     } = (0, x.ZP)(),
-    h = (0, u.e7)([eC.default], () => eC.default.getCurrentUser()),
-    g = (0, u.Wu)([eg.Z], () => eg.Z.getAllActiveStreams()),
+    g = (0, u.e7)([eC.default], () => eC.default.getCurrentUser()),
+    h = (0, u.Wu)([eh.Z], () => eh.Z.getAllActiveStreams()),
     b = (0, eo.Z)(n),
     E = n.getGuildId(),
     O = (0, u.cj)([I.ZP], () => null != I.ZP.getSelfEmbeddedActivityForChannel(n.id)),
@@ -461,8 +461,8 @@ function eX(e) {
     y = i.useCallback(() => {
       (0, ep.Z)(E, n.id, p)
     }, [E, n.id, p]),
-    C = g.find(e => e.ownerId === (null == h ? true : h.id)),
-    S = (0, ec.E)(n, h, g);
+    C = h.find(e => e.ownerId === (null == g ? true : g.id)),
+    S = (0, ec.E)(n, g, h);
   t = null == C ? l ? y : ed.Z : () => (0, V.Z)(C);
   let T = null != C || S.length > 0,
     N = b ? eU.intl.string(eU.t.fjBNo1) : eU.intl.string(eU.t.uQn9B8),
@@ -489,8 +489,8 @@ function eX(e) {
       } = e;
       return (0, r.jsx)(ec.Z, {
         channel: n,
-        currentUser: h,
-        activeStreams: g,
+        currentUser: g,
+        activeStreams: h,
         onClose: t,
         handleGoLive: l ? y : ed.Z,
         onInteraction: (0, R.u)("ManageStreamsMenu", d, {
@@ -772,7 +772,7 @@ function e0(e) {
     play: o,
     Component: c,
     events: u
-  } = (0, g.P)(l ? "disable" : "enable");
+  } = (0, h.P)(l ? "disable" : "enable");
   return i.useEffect(() => () => o(), [l, o]), (0, r.jsx)(ex.Z, eF(eV({}, t), {
     ref: a,
     onClick: e => {
@@ -820,9 +820,9 @@ let e1 = (0, Chunk730749.Z)(function(e) {
       noiseCancellationError: eO.Z.isNoiseCancellationError(),
       canGoLive: (0, H.Z)(eO.Z)
     })),
-    h = (0, u.e7)([eO.Z, z.Z], () => z.Z.hasHotspot(eM.v.VOICE_PANEL_INTRODUCTION) && (0, eP.EO)(l) && !eO.Z.isInteractionRequired() && !(null == c ? true : c.isGuildStageVoice())),
-    g = (0, u.e7)([eS.Z], () => null != s && eS.Z.hasVideo(s), [s]),
-    m = (0, u.e7)([eg.Z], () => eg.Z.getCurrentUserActiveStream()),
+    g = (0, u.e7)([eO.Z, z.Z], () => z.Z.hasHotspot(eM.v.VOICE_PANEL_INTRODUCTION) && (0, eP.EO)(l) && !eO.Z.isInteractionRequired() && !(null == c ? true : c.isGuildStageVoice())),
+    h = (0, u.e7)([eS.Z], () => null != s && eS.Z.hasVideo(s), [s]),
+    m = (0, u.e7)([eh.Z], () => eh.Z.getCurrentUserActiveStream()),
     b = (0, u.e7)([eE.Z], () => eE.Z.hasLayers()),
     E = (0, u.e7)([Y.Z], () => Y.Z.isViewingRoles(d)),
     O = (0, u.e7)([ev.Z], () => E && !ev.Z.can(eL.Plq.VIEW_CHANNEL, c), [E, c]),
@@ -862,12 +862,12 @@ let e1 = (0, Chunk730749.Z)(function(e) {
         remoteVoiceState: t,
         guild: p,
         channel: c,
-        hasVideo: g,
+        hasVideo: h,
         selfStream: m,
         hasLayers: b,
         voiceStates: T,
         showVoiceStates: v,
-        shouldShowVoicePanelIntroduction: h,
+        shouldShowVoicePanelIntroduction: g,
         isPrivateChannelWithEnabledActivities: L,
         analyticsLocations: Z
       })), !j && E && null != d ? (0, r.jsxs)("div", {

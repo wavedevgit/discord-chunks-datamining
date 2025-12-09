@@ -1,7 +1,7 @@
-/** Chunk was on 83615 **/
+/** Chunk was on 75393 **/
 /** chunk id: 749912, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 }), require("./467055.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk754700 = require("./754700.js"),
@@ -13,35 +13,35 @@ var Chunk54381 = require("./54381.js"),
 function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    }))), a.forEach(function(t) {
+      var a;
+      a = n[t], t in e ? Object.defineProperty(e, t, {
+        value: a,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = a
     })
   }
   return e
 }
 
-function u(e, t) {
+function d(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var a = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, a)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let d = [{
+let u = [{
     value: 1,
     label: "Stream Desktop"
   }, {
@@ -60,78 +60,78 @@ let d = [{
     value: 5,
     label: "Play Activity"
   }],
-  p = function(e) {
+  m = function(e) {
     let {
       onSelect: t,
       taskDuration: n = 10,
-      taskConfigV2: p
+      taskConfigV2: m
     } = e;
-    return (0, r.jsxs)(a.Kqy, {
+    return (0, a.jsxs)(l.Kqy, {
       gap: 20,
-      children: [(0, r.jsx)(o.B6, {
+      children: [(0, a.jsx)(i.B6, {
         label: "Task Type(s)",
-        className: l.taskPresetSelect,
+        className: o.taskPresetSelect,
         placeholder: "Select Task Preset",
-        options: d,
-        renderOptionValue: e => e.map(e => (0, r.jsx)("div", {
+        options: u,
+        renderOptionValue: e => e.map(e => (0, a.jsx)("div", {
           children: e.label
         }, e.value)),
-        renderOptionLabel: e => (0, r.jsx)("div", {
+        renderOptionLabel: e => (0, a.jsx)("div", {
           children: e.label
         }),
         isSelected: e => e === function(e) {
-          let t = s.X.PLAY_ON_PLAYSTATION in e || s.X.PLAY_ON_XBOX in e,
-            n = s.X.PLAY_ON_DESKTOP in e || s.X.PLAY_ON_DESKTOP_V2 in e,
-            r = s.X.STREAM_ON_DESKTOP in e,
-            o = s.X.WATCH_VIDEO in e,
-            a = s.X.PLAY_ACTIVITY in e;
-          return t && n ? 4 : t ? 3 : n ? 0 : r ? 1 : o ? 2 : a ? 5 : true
-        }(p.tasks),
+          let t = r.X.PLAY_ON_PLAYSTATION in e || r.X.PLAY_ON_XBOX in e,
+            n = r.X.PLAY_ON_DESKTOP in e || r.X.PLAY_ON_DESKTOP_V2 in e,
+            a = r.X.STREAM_ON_DESKTOP in e,
+            i = r.X.WATCH_VIDEO in e,
+            l = r.X.PLAY_ACTIVITY in e;
+          return t && n ? 4 : t ? 3 : n ? 0 : a ? 1 : i ? 2 : l ? 5 : true
+        }(m.tasks),
         select: e => {
-          t(u(c({}, p), {
+          t(d(c({}, m), {
             tasks: function(e, t) {
               let n = {};
               switch (e) {
                 case 1:
-                  n[s.X.STREAM_ON_DESKTOP] = {
-                    type: s.X.STREAM_ON_DESKTOP,
+                  n[r.X.STREAM_ON_DESKTOP] = {
+                    type: r.X.STREAM_ON_DESKTOP,
                     target: t
                   };
                   break;
                 case 0:
-                  n[s.X.PLAY_ON_DESKTOP] = {
-                    type: s.X.PLAY_ON_DESKTOP,
+                  n[r.X.PLAY_ON_DESKTOP] = {
+                    type: r.X.PLAY_ON_DESKTOP,
                     target: t
                   };
                   break;
                 case 3:
-                  n[s.X.PLAY_ON_PLAYSTATION] = {
-                    type: s.X.PLAY_ON_PLAYSTATION,
+                  n[r.X.PLAY_ON_PLAYSTATION] = {
+                    type: r.X.PLAY_ON_PLAYSTATION,
                     target: t,
                     externalIds: []
-                  }, n[s.X.PLAY_ON_XBOX] = {
-                    type: s.X.PLAY_ON_XBOX,
+                  }, n[r.X.PLAY_ON_XBOX] = {
+                    type: r.X.PLAY_ON_XBOX,
                     target: t,
                     externalIds: []
                   };
                   break;
                 case 4:
-                  n[s.X.PLAY_ON_DESKTOP] = {
-                    type: s.X.PLAY_ON_DESKTOP,
+                  n[r.X.PLAY_ON_DESKTOP] = {
+                    type: r.X.PLAY_ON_DESKTOP,
                     target: t
-                  }, n[s.X.PLAY_ON_PLAYSTATION] = {
-                    type: s.X.PLAY_ON_PLAYSTATION,
+                  }, n[r.X.PLAY_ON_PLAYSTATION] = {
+                    type: r.X.PLAY_ON_PLAYSTATION,
                     target: t,
                     externalIds: []
-                  }, n[s.X.PLAY_ON_XBOX] = {
-                    type: s.X.PLAY_ON_XBOX,
+                  }, n[r.X.PLAY_ON_XBOX] = {
+                    type: r.X.PLAY_ON_XBOX,
                     target: t,
                     externalIds: []
                   };
                   break;
                 case 2:
-                  n[s.X.WATCH_VIDEO] = {
-                    type: s.X.WATCH_VIDEO,
+                  n[r.X.WATCH_VIDEO] = {
+                    type: r.X.WATCH_VIDEO,
                     target: t,
                     assets: {
                       video: {
@@ -144,8 +144,8 @@ let d = [{
                   };
                   break;
                 case 5:
-                  n[s.X.PLAY_ACTIVITY] = {
-                    type: s.X.PLAY_ACTIVITY,
+                  n[r.X.PLAY_ACTIVITY] = {
+                    type: r.X.PLAY_ACTIVITY,
                     target: t
                   }
               }
@@ -154,21 +154,21 @@ let d = [{
           }))
         },
         serialize: String
-      }), (0, r.jsx)(a.oil, {
+      }), (0, a.jsx)(l.oil, {
         label: "Task Duration",
-        value: String(n / i.Z.Seconds.MINUTE),
+        value: String(n / s.Z.Seconds.MINUTE),
         onChange: function(e) {
           let n = Number(e);
           if (isNaN(n)) return;
-          n *= i.Z.Seconds.MINUTE;
-          let r = Object.fromEntries(Object.entries(p.tasks).map(e => {
-            let [t, r] = e;
-            return [t, u(c({}, r), {
+          n *= s.Z.Seconds.MINUTE;
+          let a = Object.fromEntries(Object.entries(m.tasks).map(e => {
+            let [t, a] = e;
+            return [t, d(c({}, a), {
               target: n
             })]
           }));
-          t(u(c({}, p), {
-            tasks: r
+          t(d(c({}, m), {
+            tasks: a
           }))
         }
       })]

@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 47481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -21,10 +21,10 @@ function d(e) {
       summaries: g,
       selectedSummary: b
     } = e,
-    y = [],
-    C = false,
-    v = null != f ? a.default.extractTimestamp(f) : null,
-    _ = null;
+    C = [],
+    y = false,
+    _ = null != f ? a.default.extractTimestamp(f) : null,
+    v = null;
   return h.forEach(e => {
     var r, O, x;
     let E, j;
@@ -35,26 +35,26 @@ function d(e) {
         let n = a.default.extractTimestamp(g[e].startId),
           i = a.default.extractTimestamp(g[e].endId);
         if (t >= n && t <= i) {
-          if (_ === g[e].id) break;
-          y.push({
+          if (v === g[e].id) break;
+          C.push({
             type: u.ys_.DIVIDER,
             content: g[e].topic,
             contentKey: g[e].id
-          }), _ = g[e].id;
+          }), v = g[e].id;
           break
         }
       }
     }
     let S = (0, l.vc)(e.timestamp, "LL");
-    S !== t && null == _ && (y.push({
+    S !== t && null == v && (C.push({
       type: u.ys_.DIVIDER,
       content: S,
       contentKey: S
     }), t = S);
-    let P = y[y.length - 1],
+    let P = C[C.length - 1],
       I = null,
       Z = (0, s.DQ)(e);
-    C = C || Z;
+    y = y || Z;
     let T = function(e, t, n) {
       if (i.V.NON_COLLAPSIBLE.has(t.type));
       else if (t.blocked) return u.ys_.MESSAGE_GROUP_BLOCKED;
@@ -66,18 +66,18 @@ function d(e) {
       type: T,
       content: [],
       key: e.id
-    }, y.push(E)) : j = (E = O).content[E.content.length - 1], [E, j])), f === e.id && null != v) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (x = I, e.isFirstMessageInForumPost(p) || x.content.push({
+    }, C.push(E)) : j = (E = O).content[E.content.length - 1], [E, j])), f === e.id && null != _) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (x = I, e.isFirstMessageInForumPost(p) || x.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), x.hasUnread = true) : e.isFirstMessageInForumPost(p) || y.push({
+    }), x.hasUnread = true) : e.isFirstMessageInForumPost(p) || C.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), v = null) : null != v && a.default.extractTimestamp(e.id) > v && (e.isFirstMessageInForumPost(p) || y.push({
+    }), _ = null) : null != _ && a.default.extractTimestamp(e.id) > _ && (e.isFirstMessageInForumPost(p) || C.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), v = null);
+    }), _ = null);
     let N = (0, c.f)(e, p);
-    null != N && "before" === N.position && y.push({
+    null != N && "before" === N.position && C.push({
       type: u.ys_.MESSAGE,
       content: N.message,
       groupId: N.message.id
@@ -95,23 +95,23 @@ function d(e) {
       jumpFlash: R,
       jumpTargetId: L
     } = h;
-    R && e.id === L && null != M && (w.flashKey = M), h.jumpTargetId === e.id && (w.jumpTarget = true), null != b && e.id === b.startId && b.count > 1 && y.push({
+    R && e.id === L && null != M && (w.flashKey = M), h.jumpTargetId === e.id && (w.jumpTarget = true), null != b && e.id === b.startId && b.count > 1 && C.push({
       type: u.ys_.DIVIDER,
       content: b.topic,
       contentKey: b.startId,
       isSummaryDivider: true
-    }), null !== I ? (I.content.push(w), w.jumpTarget && (I.hasJumpTarget = true)) : y.push(w), e.isFirstMessageInForumPost(p) && y.push({
+    }), null !== I ? (I.content.push(w), w.jumpTarget && (I.hasJumpTarget = true)) : C.push(w), e.isFirstMessageInForumPost(p) && C.push({
       type: u.ys_.FORUM_POST_ACTION_BAR
-    }), null != N && "after" === N.position && y.push({
+    }), null != N && "after" === N.position && C.push({
       type: u.ys_.MESSAGE,
       content: N.message,
       groupId: N.message.id
-    }), null != b && e.id === b.endId && b.count > 1 && y.push({
+    }), null != b && e.id === b.endId && b.count > 1 && C.push({
       type: u.ys_.DIVIDER,
       contentKey: b.endId,
       isSummaryDivider: true
     })
-  }), C && (0, s.P1)(p) && r.Z.trackExposure({
+  }), y && (0, s.P1)(p) && r.Z.trackExposure({
     location: "416cc9_1"
-  }), y
+  }), C
 }

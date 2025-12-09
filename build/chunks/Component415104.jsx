@@ -1,4 +1,4 @@
-/** Chunk was on 83615 **/
+/** Chunk was on 75393 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk617136 = require("./617136.js"),
   Chunk49436 = require("./49436.js"),
   Chunk968843 = require("./968843.js"),
@@ -20,122 +20,122 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk88036 = require("./88036.js");
 
-function b(e) {
+function v(e) {
   var t, n;
   let {
-    quest: o,
-    className: l,
-    questContent: d,
-    contentPosition: b,
+    quest: i,
+    className: o,
+    questContent: u,
+    contentPosition: v,
     rowIndex: j,
-    impressionRef: v,
-    sourceQuestContent: C
-  } = e, [y, E] = s.useState(false), [O, S] = s.useState([]), T = (0, c.qb)(o), w = s.useMemo(() => (0, u.q8)(o), [o]), P = (0, i._F)(), N = s.useCallback(() => {
-    E(true), P({
-      questId: o.id,
-      event: h.rMx.QUEST_HOVER,
+    impressionRef: _,
+    sourceQuestContent: y
+  } = e, [C, S] = r.useState(false), [E, O] = r.useState([]), T = (0, c.qb)(i), N = r.useMemo(() => (0, d.q8)(i), [i]), P = (0, s._F)(), w = r.useCallback(() => {
+    S(true), P({
+      questId: i.id,
+      event: g.rMx.QUEST_HOVER,
       properties: {
-        content_id: d,
-        content_name: (0, i._b)(d),
-        content_position: b
+        content_id: u,
+        content_name: (0, s._b)(u),
+        content_position: v
       },
-      sourceQuestContent: C
-    }), w && (0, p.loadVideoQuestModal)()
-  }, [P, o.id, d, w, C, b]), R = s.useCallback(() => {
-    E(false), P({
-      questId: o.id,
-      event: h.rMx.QUEST_HOVER_OFF,
+      sourceQuestContent: y
+    }), N && (0, m.loadVideoQuestModal)()
+  }, [P, i.id, u, N, y, v]), I = r.useCallback(() => {
+    S(false), P({
+      questId: i.id,
+      event: g.rMx.QUEST_HOVER_OFF,
       properties: {
-        content_id: d,
-        content_name: (0, i._b)(d),
-        content_position: b
+        content_id: u,
+        content_name: (0, s._b)(u),
+        content_position: v
       },
-      sourceQuestContent: C
+      sourceQuestContent: y
     })
-  }, [P, o.id, d, C, b]), A = s.useContext(f.t), {
-    visibilityElementRef: B,
-    almostVisibleInViewport: k
+  }, [P, i.id, u, y, v]), k = r.useContext(h.t), {
+    visibilityElementRef: R,
+    almostVisibleInViewport: A
   } = function(e) {
-    let [t, n] = s.useState(false), r = s.useCallback(e => {
+    let [t, n] = r.useState(false), a = r.useCallback(e => {
       e.isIntersecting && n(true)
     }, []);
     return {
-      visibilityElementRef: (0, m.S)(r, {
+      visibilityElementRef: (0, p.S)(a, {
         root: null != e ? e : null,
         threshold: 0,
         rootMargin: "900px 0px 900px 0px"
       }, true),
       almostVisibleInViewport: t
     }
-  }(null != (n = null == A || null == (t = A.current) ? true : t.getScrollerNode()) ? n : null);
-  return (0, r.jsxs)("div", {
-    id: "quest-tile-".concat(o.id),
+  }(null != (n = null == k || null == (t = k.current) ? true : t.getScrollerNode()) ? n : null);
+  return (0, a.jsxs)("div", {
+    id: "quest-tile-".concat(i.id),
     ref: e => {
-      v.current = e, B.current = e
+      _.current = e, R.current = e
     },
-    className: a()(_.container, l),
-    onMouseEnter: N,
-    onMouseLeave: R,
-    onFocus: N,
-    onBlur: R,
-    children: [(0, r.jsx)(g.Z, {
-      quest: o,
-      isHovering: y,
-      errorHints: O,
+    className: l()(b.container, o),
+    onMouseEnter: w,
+    onMouseLeave: I,
+    onFocus: w,
+    onBlur: I,
+    children: [(0, a.jsx)(x.Z, {
+      quest: i,
+      isHovering: C,
+      errorHints: E,
       warningHints: T,
-      isVisibleInViewport: k,
-      sourceQuestContent: C
-    }), (0, r.jsx)(x.Z, {
-      quest: o,
-      questContent: d,
-      isHovering: y,
-      contentPosition: b,
+      isVisibleInViewport: A,
+      sourceQuestContent: y
+    }), (0, a.jsx)(f.Z, {
+      quest: i,
+      questContent: u,
+      isHovering: C,
+      contentPosition: v,
       rowIndex: j,
-      onReceiveErrorHints: S,
-      isVisibleInViewport: k,
-      sourceQuestContent: C
+      onReceiveErrorHints: O,
+      isVisibleInViewport: A,
+      sourceQuestContent: y
     })]
   })
 }
 
 function j(e) {
-  return (0, r.jsx)(d.A, {
+  return (0, a.jsx)(u.A, {
     questOrQuests: e.quest,
     questContent: e.questContent,
     questContentPosition: e.contentPosition,
     questContentRowIndex: e.rowIndex,
-    trackGuildAndChannelMetadata: e.questContent === l.jn.QUESTS_EMBED,
+    trackGuildAndChannelMetadata: e.questContent === o.jn.QUESTS_EMBED,
     sourceQuestContent: e.sourceQuestContent,
     children: t => {
-      var n, s;
-      return (0, r.jsx)(b, (n = function(e) {
+      var n, r;
+      return (0, a.jsx)(v, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            a = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
+          }))), a.forEach(function(t) {
+            var a;
+            a = n[t], t in e ? Object.defineProperty(e, t, {
+              value: a,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : e[t] = a
           })
         }
         return e
-      }({}, e), s = s = {
+      }({}, e), r = r = {
         impressionRef: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
+          var a = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, a)
         }
         return n
-      })(Object(s)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(s, e))
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n))
     }
   })

@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk113520 = require("./113520.js"),
   f = ((r = f || {})[r.STAFF_NOTES = 1] = "STAFF_NOTES", r);
-let h = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
+let g = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
     animate: Chunk451478.Z.isFocused()
   }))(e => {
     let {
@@ -40,7 +40,7 @@ let h = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
       })]
     })
   }),
-  g = e => {
+  h = e => {
     let {
       data: t,
       className: n
@@ -53,7 +53,7 @@ let h = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
       } = t.staffNotes;
       return null == e ? null : (0, i.jsxs)("div", {
         className: n,
-        children: [(0, i.jsx)(h, {
+        children: [(0, i.jsx)(g, {
           user: e,
           className: p.header
         }), (0, i.jsx)("div", {
@@ -64,5 +64,5 @@ let h = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
     }
     throw Error("Unknown type")
   };
-g.Types = f;
-let m = g
+h.Types = f;
+let m = h

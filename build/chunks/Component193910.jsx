@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 193910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -70,16 +70,16 @@ function L(e) {
     draftType: k,
     editorTextContent: U,
     setValue: V,
-    openClips: H
+    openClips: B
   } = e, {
     analyticsLocations: F,
-    newestAnalyticsLocation: B
-  } = (0, d.ZP)(), G = (0, y.Dt)({
+    newestAnalyticsLocation: H
+  } = (0, d.ZP)(), G = (0, C.Dt)({
     channel: t
-  }), z = (0, l.e7)([v.Z], () => v.Z.isInProgress());
+  }), W = (0, l.e7)([_.Z], () => _.Z.isInProgress());
 
-  function W() {
-    (0, _.R6)(t, true, "Plus Button")
+  function z() {
+    (0, v.R6)(t, true, "Plus Button")
   }
 
   function q() {
@@ -87,7 +87,7 @@ function L(e) {
   }
 
   function K() {
-    H()
+    B()
   }
 
   function Y() {
@@ -147,7 +147,7 @@ function L(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: B
+      analyticsLocation: H
     }), (0, u.w1)({
       guildId: t.guild_id
     })
@@ -264,7 +264,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "THREAD",
             label: r,
-            action: W
+            action: z
           }, "THREAD");
         case I.r.SLASH_COMMAND:
           return (0, i.jsx)(s.sNh, {
@@ -289,7 +289,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "scheduled_message",
             label: r,
-            action: () => (0, y.$f)({
+            action: () => (0, C.$f)({
               channel: t
             }),
             children: G
@@ -298,22 +298,22 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "summarize_thread",
             label: r,
-            action: () => C.Z.summarizeThread(t),
-            icon: z ? (0, i.jsx)(s.$jN, {
+            action: () => y.Z.summarizeThread(t),
+            icon: W ? (0, i.jsx)(s.$jN, {
               type: s.RAz.PULSING_ELLIPSIS
             }) : null,
-            disabled: z,
-            children: z ? null : (0, i.jsxs)(i.Fragment, {
+            disabled: W,
+            children: W ? null : (0, i.jsxs)(i.Fragment, {
               children: [(0, i.jsx)(s.sNh, {
                 id: "summarize_thread_for_everyone",
                 label: A.intl.string(A.t.eCzSdd),
                 iconLeft: s.BFJ,
-                action: () => C.Z.summarizeThread(t, false)
+                action: () => y.Z.summarizeThread(t, false)
               }, "summarize_thread_for_everyone"), (0, i.jsx)(s.sNh, {
                 id: "summarize_thread_for_me",
                 label: A.intl.string(A.t["HOe+Hq"]),
                 iconLeft: s.tBG,
-                action: () => C.Z.summarizeThread(t)
+                action: () => y.Z.summarizeThread(t)
               }, "summarize_thread_for_me")]
             })
           }, "summarize_thread");

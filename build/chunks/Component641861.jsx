@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 641861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -28,14 +28,14 @@ function O(e) {
   let {
     recipientUser: t,
     voiceChannel: n
-  } = e, r = (0, y.ZP)(n), s = (0, h.s)(t, "RingToVoiceBanner", n.id), {
+  } = e, r = (0, C.ZP)(n), s = (0, h.s)(t, "RingToVoiceBanner", n.id), {
     userIsInCall: u,
     isUserRinging: m
   } = (0, o.cj)([p.Z], () => {
     let e = null;
     return s && null != n.id && (e = p.Z.getParticipant(n.id, t.id)), {
       userIsInCall: null != e,
-      isUserRinging: null != e && e.type === C.fO.USER && e.ringing
+      isUserRinging: null != e && e.type === y.fO.USER && e.ringing
     }
   }), O = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), E = null != O ? (0, g.EB)(O, 32, true) : null, j = !s || u && !m;
   return ((0, d.Z)({
@@ -48,30 +48,30 @@ function O(e) {
   }, {
     disableTrack: j
   }, [t.id]), j) ? null : (0, i.jsxs)("div", {
-    className: l()(_.themed, _.chatHeaderBar),
+    className: l()(v.themed, v.chatHeaderBar),
     children: [(0, i.jsxs)("div", {
-      className: _.chatHeaderBarInfo,
+      className: v.chatHeaderBarInfo,
       children: [(0, i.jsx)(f.ZP, {
-        className: _.mask,
+        className: v.mask,
         mask: f.QS.SQUIRCLE,
         width: 24,
         height: 24,
         children: null == E ? (0, i.jsx)("div", {
-          className: l()(_.guildIcon, _.guildIconWithoutImage),
+          className: l()(v.guildIcon, v.guildIconWithoutImage),
           children: (0, i.jsx)("div", {
-            className: _.guildAcronym,
+            className: v.guildAcronym,
             children: null != O ? (0, g.gM)(O) : null
           })
         }) : (0, i.jsx)("img", {
           alt: null == O ? true : O.name,
           src: E,
-          className: _.guildIcon
+          className: v.guildIcon
         })
       }), (0, i.jsx)(c.Text, {
-        className: _.chatHeaderBarText,
+        className: v.chatHeaderBarText,
         variant: "text-md/medium",
         color: "text-default",
-        children: v.intl.format(v.t.f2tNxH, {
+        children: _.intl.format(_.t.f2tNxH, {
           username: null == t ? true : t.globalName,
           channelName: (0, i.jsx)(c.Text, {
             variant: "text-md/semibold",
@@ -93,7 +93,7 @@ function x(e) {
     channelId: t,
     recipientUserId: n,
     isUserRinging: r
-  } = e, l = r ? v.intl.string(v.t.ygslb0) : v.intl.string(v.t["3Hv9qQ"]), a = r ? () => u.Z.stopRinging(t, [n]) : () => {
+  } = e, l = r ? _.intl.string(_.t.ygslb0) : _.intl.string(_.t["3Hv9qQ"]), a = r ? () => u.Z.stopRinging(t, [n]) : () => {
     u.Z.ring(t, [n], "dm_banner"), (0, m.Kh)(t)
   };
   return (0, i.jsx)(s.zxk, {

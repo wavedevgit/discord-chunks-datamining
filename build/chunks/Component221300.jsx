@@ -1,5 +1,5 @@
-/** Chunk was on 82082 **/
-/** chunk id: 221300, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 83037 **/
+/** chunk id: 221300, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -16,40 +16,40 @@ var Chunk979554 = require("./979554.js"),
 function d(e) {
   let {
     item: t,
-    profileOwner: r,
+    profileOwner: n,
     isHighlighted: d,
     cardSize: f = c.U.MEDIUM
-  } = e, v = t.collectiblesItem;
-  switch (v.type) {
-    case n.Z.PROFILE_EFFECT:
-      return (0, i.jsx)("div", {
+  } = e, h = t.collectiblesItem;
+  switch (h.type) {
+    case i.Z.PROFILE_EFFECT:
+      return (0, r.jsx)("div", {
         className: u.profileEffectPreview,
-        children: (0, i.jsx)(l.Z, {
-          skuId: v.skuId,
+        children: (0, r.jsx)(s.Z, {
+          skuId: h.skuId,
           isHighlighted: d,
           isPurchased: false,
           removeSetHeight: true
         })
       });
-    case n.Z.AVATAR_DECORATION:
-      return (0, i.jsx)("div", {
+    case i.Z.AVATAR_DECORATION:
+      return (0, r.jsx)("div", {
         className: u.avatarDecorationPreview,
-        children: (0, i.jsx)(o.R, {
-          item: v,
-          user: r,
+        children: (0, r.jsx)(o.R, {
+          item: h,
+          user: n,
           isHighlighted: d,
           isPurchased: false,
-          avatarSize: a.EFr.SIZE_80
+          avatarSize: l.EFr.SIZE_80
         })
       });
-    case n.Z.NAMEPLATE:
-      return (0, i.jsxs)("div", {
+    case i.Z.NAMEPLATE:
+      return (0, r.jsxs)("div", {
         className: u.nameplatePreview,
-        children: [(0, i.jsx)("div", {
+        children: [(0, r.jsx)("div", {
           className: u.nameplateTopLeft,
-          children: (0, i.jsx)(s.Z, {
-            user: r,
-            nameplate: v,
+          children: (0, r.jsx)(a.Z, {
+            user: n,
+            nameplate: h,
             isHighlighted: d,
             showPlaceholderUser: true,
             showStatus: true,
@@ -57,12 +57,12 @@ function d(e) {
             nameplatePreviewSize: "default",
             width: f === c.U.SMALL ? 136 : 200
           })
-        }), (0, i.jsx)("div", {
+        }), (0, r.jsx)("div", {
           className: u.nameplateBottomRight,
           "aria-hidden": true,
-          children: (0, i.jsx)(s.Z, {
-            user: r,
-            nameplate: v,
+          children: (0, r.jsx)(a.Z, {
+            user: n,
+            nameplate: h,
             isHighlighted: d,
             showPlaceholderUser: true,
             showStatus: true,

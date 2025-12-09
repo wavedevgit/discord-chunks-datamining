@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 613311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eh
+  Z: () => eg
 }), require("./415506.js"), require("./953529.js"), require("./539854.js"), require("./290780.js"), require("./388685.js"), require("./997841.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -138,7 +138,7 @@ class ef extends Chunk473749.PureComponent {
         slug: a
       }), (t !== e.locale || i !== e.skuId) && o(), r && !e.shouldFetchStatistics) {
       if (null == n) throw Error("Unexpected missing sku");
-      h.Z.wait(() => (0, g.$)(n.applicationId))
+      g.Z.wait(() => (0, h.$)(n.applicationId))
     }(i !== e.skuId || l !== e.storeListingId) && (this._trackedViewed = false), this.trackViewed(), this.replaceUrlWithSlug()
   }
   componentWillUnmount() {
@@ -594,7 +594,7 @@ class ef extends Chunk473749.PureComponent {
     })
   }
 }
-let eh = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chunk558314.Z, Chunk210887.Z, Chunk706454.default, Chunk451478.Z, Chunk551428.Z, Chunk55563.Z, Chunk695103.Z, Chunk115130.Z, Chunk812206.Z, Chunk525395.Z, Chunk430824.Z, Chunk580130.Z], e => {
+let eg = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chunk558314.Z, Chunk210887.Z, Chunk706454.default, Chunk451478.Z, Chunk551428.Z, Chunk55563.Z, Chunk695103.Z, Chunk115130.Z, Chunk812206.Z, Chunk525395.Z, Chunk430824.Z, Chunk580130.Z], e => {
   let t, n, r, {
     inputSkuId: i,
     applicationId: l,

@@ -24,19 +24,19 @@ let b = ["1402418171662569542"],
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_ACTIVITIES_WRITE, Chunk186901.lH]
       },
-      validation: e => (0, g.Z)(e).required().keys({
+      validation: e => (0, h.Z)(e).required().keys({
         pid: e.number().min(0),
-        activity: (0, g.Z)(e).keys({
+        activity: (0, h.Z)(e).keys({
           name: e.string().min(1).max(128),
           state: e.string().min(2).max(128),
           state_url: e.string().uri().min(1).max(256),
           details: e.string().min(2).max(128),
           details_url: e.string().uri().min(1).max(256),
-          timestamps: (0, g.Z)(e).keys({
+          timestamps: (0, h.Z)(e).keys({
             start: e.number().min(1),
             end: e.number().min(1)
           }),
-          assets: (0, g.Z)(e).keys({
+          assets: (0, h.Z)(e).keys({
             large_image: e.string().min(1).max(300),
             large_text: e.string().min(2).max(128),
             large_url: e.string().uri().min(1).max(256),
@@ -45,17 +45,17 @@ let b = ["1402418171662569542"],
             small_url: e.string().uri().min(1).max(256),
             invite_cover_image: e.string().min(1).max(300)
           }),
-          party: (0, g.Z)(e).keys({
+          party: (0, h.Z)(e).keys({
             id: e.string().min(2).max(128),
             size: e.array().items(e.number().min(0)).length(2),
             privacy: e.number().default(_.RYY.PRIVATE).valid([_.RYY.PRIVATE, _.RYY.PUBLIC])
           }),
-          secrets: (0, g.Z)(e).keys({
+          secrets: (0, h.Z)(e).keys({
             match: e.string().min(2).max(128),
             join: e.string().min(2).max(128),
             spectate: e.string().min(2).max(128)
           }),
-          buttons: e.array().items((0, g.Z)(e).keys({
+          buttons: e.array().items((0, h.Z)(e).keys({
             label: e.string().min(1).max(32).required(),
             url: e.string().uri().min(1).max(512).required()
           })).min(1).max(2),
@@ -70,21 +70,21 @@ let b = ["1402418171662569542"],
         let l, {
           socket: a,
           args: {
-            pid: g,
+            pid: h,
             activity: E
           },
           isSocketConnected: O
         } = e;
-        if (![m.He.IPC, m.He.WEBSOCKET, m.He.POST_MESSAGE].includes(a.transport)) throw new h.Z({
+        if (![m.He.IPC, m.He.WEBSOCKET, m.He.POST_MESSAGE].includes(a.transport)) throw new g.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, 'command not available from "'.concat(a.transport, '" transport'));
-        if (null == g && m.He.IPC === a.transport) throw new h.Z({
+        if (null == h && m.He.IPC === a.transport) throw new g.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "nonzero pid required");
         if (null == E) return s.Z.dispatch({
           type: "LOCAL_ACTIVITY_UPDATE",
           socketId: a.id,
-          pid: g,
+          pid: h,
           activity: E
         }), Promise.resolve(E);
         let v = {};
@@ -109,13 +109,13 @@ let b = ["1402418171662569542"],
         } = E;
         if (null == w && (E.type = _.IIU.PLAYING), null != x) {
           let e = i().values(x).filter(e => !!e);
-          if (null != P && i().intersection(e, [P.id]).length > 0 && !b.includes(a.application.id)) throw new h.Z({
+          if (null != P && i().intersection(e, [P.id]).length > 0 && !b.includes(a.application.id)) throw new g.Z({
             errorCode: _.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot match the party id");
-          if (i().uniq(e).length < e.length) throw new h.Z({
+          if (i().uniq(e).length < e.length) throw new g.Z({
             errorCode: _.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets must be unique");
-          if (null != Z) throw new h.Z({
+          if (null != Z) throw new g.Z({
             errorCode: _.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot currently be sent with buttons")
         }
@@ -133,7 +133,7 @@ let b = ["1402418171662569542"],
           s.Z.dispatch({
             type: "LOCAL_ACTIVITY_UPDATE",
             socketId: a.id,
-            pid: g,
+            pid: h,
             activity: E,
             partyPrivacy: T
           });

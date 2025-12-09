@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 351248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk149715 = require("./149715.js"),
   Chunk162130 = require("./162130.js");
 
-function C(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,7 +28,7 @@ function C(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let v = {
+let _ = {
   SCALE_MIN: .7,
   SCALE_MAX: 1,
   DURATION_IN: 300,
@@ -36,7 +36,7 @@ let v = {
   EASING_IN: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.back()),
   EASING_OUT: Chunk748780.Z.Easing.quad
 };
-class _ extends Chunk473749.PureComponent {
+class v extends Chunk473749.PureComponent {
   componentDidMount() {
     this.componentDidAppear()
   }
@@ -54,8 +54,8 @@ class _ extends Chunk473749.PureComponent {
     } = this;
     t.setValue(0), n.setValue(0), o.Z.parallel([o.Z.timing(t, {
       toValue: 1,
-      duration: v.DURATION_IN,
-      easing: v.EASING_IN
+      duration: _.DURATION_IN,
+      easing: _.EASING_IN
     }), o.Z.timing(n, {
       toValue: 1,
       duration: 200
@@ -76,8 +76,8 @@ class _ extends Chunk473749.PureComponent {
     }));
     o.Z.sequence([o.Z.timing(t, {
       toValue: 0,
-      duration: v.DURATION_OUT,
-      easing: v.EASING_OUT
+      duration: _.DURATION_OUT,
+      easing: _.EASING_OUT
     }), o.Z.sequence(l), o.Z.timing(r, {
       toValue: 0,
       duration: 125
@@ -91,7 +91,7 @@ class _ extends Chunk473749.PureComponent {
       transform: [{
         scale: module.interpolate({
           inputRange: [0, 1],
-          outputRange: [v.SCALE_MIN, v.SCALE_MAX]
+          outputRange: [_.SCALE_MIN, _.SCALE_MAX]
         })
       }],
       opacity: module
@@ -141,7 +141,7 @@ class _ extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), C(this, "scaleAnimation", new o.Z.Value(0)), C(this, "spriteAnimation", new o.Z.Value(0)), C(this, "spriteOpacity", new o.Z.Value(0)), C(this, "widthAnimation", new o.Z.Value(0))
+    super(...e), y(this, "scaleAnimation", new o.Z.Value(0)), y(this, "spriteAnimation", new o.Z.Value(0)), y(this, "spriteOpacity", new o.Z.Value(0)), y(this, "widthAnimation", new o.Z.Value(0))
   }
 }
 
@@ -154,7 +154,7 @@ function O(e) {
     onClick: o,
     width: u,
     guildId: b
-  } = e, y = (0, p.ZP)(), C = (t = n.length, ((0, d.dcp)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), v = (0, s.e7)([h.Z], () => h.Z.isFocused()), O = n.map(e => {
+  } = e, C = (0, p.ZP)(), y = (t = n.length, ((0, d.dcp)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), _ = (0, s.e7)([h.Z], () => h.Z.isFocused()), O = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -164,18 +164,18 @@ function O(e) {
       latched: c,
       ringing: u
     } = e;
-    return (0, i.jsx)(_, {
+    return (0, i.jsx)(v, {
       className: g.participant,
-      width: (0, d.dcp)(C),
-      theme: y,
+      width: (0, d.dcp)(y),
+      theme: C,
       children: (0, i.jsx)(d.kL8, {
         "aria-label": l.username,
         onClick: t => null == o ? true : o(e, t),
         onContextMenu: t => null == r ? true : r(e, t),
         children: (0, i.jsx)(f.Z, {
           userId: l.id,
-          src: l.getAvatarURL(b, (0, d.dcp)(C), s && v),
-          size: C,
+          src: l.getAvatarURL(b, (0, d.dcp)(y), s && _),
+          size: y,
           muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
           deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,
           speaking: s,

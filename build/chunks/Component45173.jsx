@@ -83,16 +83,16 @@ function O(e) {
               color: y
             },
             className: _.display,
-            children: m.intl.string(g.default["CdU/PF"])
+            children: m.intl.string(h.default["CdU/PF"])
           }), (0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             style: {
               color: y
             },
-            children: m.intl.string(g.default["M/LvW0"])
+            children: m.intl.string(h.default["M/LvW0"])
           }), (0, r.jsx)(a.P3F, {
             className: _.dismissButton,
-            onClick: () => O(h.L.DISMISS),
+            onClick: () => O(g.L.DISMISS),
             style: {
               color: y
             },
@@ -108,7 +108,7 @@ function O(e) {
           className: _.clickable,
           contentClassName: _.button,
           onClick: () => {
-            (0, d.Z)("coachmark"), O(h.L.TAKE_ACTION)
+            (0, d.Z)("coachmark"), O(g.L.TAKE_ACTION)
           },
           children: (0, r.jsx)(a.d4D, {
             color: y,

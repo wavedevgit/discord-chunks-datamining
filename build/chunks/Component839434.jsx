@@ -106,22 +106,22 @@ function es(e) {
     context: f,
     guildId: g,
     voiceState: m
-  } = e, b = (0, J.Z)({
+  } = e, y = (0, q.Z)({
     location: "overlay_voice_widget"
-  }), _ = (0, a.e7)([G.default], () => G.default.showKeybindIndicators), v = (0, a.e7)([R.default], () => R.default.getId()), O = (0, a.e7)([M.Z], () => M.Z.isLocalMute(i.id)), E = (0, a.e7)([k.Z], () => k.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([k.Z], () => null != E ? k.Z.getViewerIds(E) : []), S = (0, y.Z)({
+  }), v = (0, a.e7)([G.default], () => G.default.showKeybindIndicators), b = (0, a.e7)([R.default], () => R.default.getId()), O = (0, a.e7)([M.Z], () => M.Z.isLocalMute(i.id)), E = (0, a.e7)([k.Z], () => k.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([k.Z], () => null != E ? k.Z.getViewerIds(E) : []), S = (0, _.Z)({
     userId: i.id,
     context: f
   }), Z = (0, a.e7)([V.Z], () => V.Z.isPrioritySpeaker(i.id, f)), j = (0, a.e7)([k.Z], () => null != k.Z.getStreamForUser(i.id, g)), C = s.useMemo(() => null != E && E.ownerId !== i.id && x.includes(i.id), [E, i.id, x]);
   if (d === Q.OYC.ONLY_WHILE_SPEAKING && n && !S) return null;
-  let I = i.id === v,
+  let I = i.id === b,
     {
       mute: P,
       selfMute: w,
-      suppress: T,
-      deaf: N,
+      suppress: N,
+      deaf: T,
       selfDeaf: A
     } = m,
-    L = b && _,
+    L = y && v,
     z = w && (!I || !L);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(D.ZP, {
@@ -146,9 +146,9 @@ function es(e) {
       priority: Z,
       mute: P || z || O,
       localMute: O,
-      serverMute: P || T,
-      deaf: N || A,
-      serverDeaf: N,
+      serverMute: P || N,
+      deaf: T || A,
+      serverDeaf: T,
       userNameClassName: l()(et.username, {
         [et.locked]: n,
         [et.hidden]: n && (c === Q.wC$.NEVER || !S && c === Q.wC$.ONLY_WHILE_SPEAKING)
@@ -156,7 +156,7 @@ function es(e) {
     }), I && L && (0, r.jsx)(K.Z, {
       value: w,
       action: Q.kg4.TOGGLE_MUTE,
-      shouldShow: !P && !T
+      shouldShow: !P && !N
     })]
   })
 }
@@ -438,14 +438,14 @@ class eo extends(i = Chunk473749.PureComponent) {
 function el(e) {
   var t;
   let n = (0, a.e7)([z.Z, A.Z], () => A.Z.getChannel(z.Z.getVoiceChannelId())),
-    i = (0, _.ZP)(n),
+    i = (0, v.ZP)(n),
     o = function() {
       let [e] = (0, a.e7)([U.ZP, P.Z, z.Z, A.Z], () => {
         let e = A.Z.getChannel(z.Z.getVoiceChannelId());
         return null == e ? [
           [], false
         ] : e.isGuildStageVoice() ? [P.Z.getMutableParticipants(e.id, w.pV.SPEAKER), P.Z.getParticipantsVersion(e.id)] : [U.ZP.getVoiceStatesForChannel(e), U.ZP.getVoiceStateVersion(e.getGuildId())]
-      }, [], B.Q), t = (0, a.e7)([R.default], () => R.default.getId()), n = (0, J.Z)({
+      }, [], B.Q), t = (0, a.e7)([R.default], () => R.default.getId()), n = (0, q.Z)({
         location: "voice_widget"
       });
       return s.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? false : +(n.user.id === t)) : e, [e, t, n])
@@ -456,7 +456,7 @@ function el(e) {
       let t = (0, j.Z)(O.ZP, W.Z);
       return null != t ? null == (e = L.Z.getGameByGameData(t)) ? true : e.id : null
     }),
-    d = (0, b.q)(c),
+    d = (0, y.q)(c),
     u = (0, a.cj)([O.ZP, W.Z, k.Z, G.default], () => {
       let e = (0, j.Z)(O.ZP, W.Z),
         t = k.Z.getCurrentUserActiveStream();

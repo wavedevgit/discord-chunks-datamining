@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 380349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,22 +16,22 @@ var Chunk442837 = require("./442837.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e, t, n) {
-  let h = (0, i.e7)([s.Z, a.default], () => null != t ? (0, c.Z)(s.Z, a.default, t, e) : true, [e, t]);
-  if (null == h || null == e || null == t) return null;
-  let g = h.isCurrentUser || h.notPlayable || h.playingSameTrack,
-    m = h.isCurrentUser || h.syncingWithUser || h.syncingWithParty;
+function g(e, t, n) {
+  let g = (0, i.e7)([s.Z, a.default], () => null != t ? (0, c.Z)(s.Z, a.default, t, e) : true, [e, t]);
+  if (null == g || null == e || null == t) return null;
+  let h = g.isCurrentUser || g.notPlayable || g.playingSameTrack,
+    m = g.isCurrentUser || g.syncingWithUser || g.syncingWithParty;
   return [(0, r.jsx)(l.sNh, {
     id: "spotify-play-".concat(e.session_id),
-    action: () => (0, d.Z)(h, p.kG.USER_ACTIVITY_PLAY, n),
+    action: () => (0, d.Z)(g, p.kG.USER_ACTIVITY_PLAY, n),
     label: f.intl.string(f.t.rRffNz),
-    subtext: g ? (0, o.Z)(h, p.kG.USER_ACTIVITY_PLAY) : true,
-    disabled: g
-  }, "spotify-play-".concat(e.session_id)), h.canPlaySpotify ? (0, r.jsx)(l.sNh, {
+    subtext: h ? (0, o.Z)(g, p.kG.USER_ACTIVITY_PLAY) : true,
+    disabled: h
+  }, "spotify-play-".concat(e.session_id)), g.canPlaySpotify ? (0, r.jsx)(l.sNh, {
     id: "spotify-sync-".concat(e.session_id),
-    action: () => (0, u.Z)(h, p.kG.USER_ACTIVITY_SYNC, n),
+    action: () => (0, u.Z)(g, p.kG.USER_ACTIVITY_SYNC, n),
     label: f.intl.string(f.t.eU3inB),
-    subtext: m ? (0, o.Z)(h, p.kG.USER_ACTIVITY_SYNC) : true,
+    subtext: m ? (0, o.Z)(g, p.kG.USER_ACTIVITY_SYNC) : true,
     disabled: m
   }, "spotify-sync-".concat(e.session_id)) : null]
 }

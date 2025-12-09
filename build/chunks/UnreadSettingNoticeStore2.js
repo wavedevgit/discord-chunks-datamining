@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 390289, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -18,7 +18,7 @@ var i, Chunk95015 = require("./95015.js"),
   Chunk490897 = require("./490897.js"),
   Chunk526761 = require("./526761.js");
 
-function y(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let C = [{
+let y = [{
     timeSinceJoin: +Chunk70956.Z.Millis.HOUR,
     sends: 1,
     viewTime: +Chunk70956.Z.Millis.MINUTE
@@ -43,8 +43,8 @@ let C = [{
     sends: 10,
     viewTime: 30 * Chunk70956.Z.Millis.MINUTE
   }],
-  v = 5 * C[C.length - 1].viewTime,
-  _ = Chunk70956.Z.Millis.WEEK,
+  _ = 5 * y[y.length - 1].viewTime,
+  v = Chunk70956.Z.Millis.WEEK,
   O = {
     channels: {}
   },
@@ -56,7 +56,7 @@ let C = [{
 function P() {
   if (null == E || !T(E)) returnfalse;
   let e = Z(E);
-  if (module.lastActionTime > Date.now() - Chunk70956.Z.Millis.DAY && module.viewDuration > v) returnfalse;
+  if (module.lastActionTime > Date.now() - Chunk70956.Z.Millis.DAY && module.viewDuration > _) returnfalse;
   let t = Date.now();
   module.lastActionTime = exports, module.viewDuration += exports - j, j = exports
 }
@@ -108,14 +108,14 @@ class A extends(i = Chunk442837.ZP.PersistedStore) {
         i = null != (t = null == n ? true : n.joinedAt) ? t : new Date,
         r = Math.min(h.default.age(e.id), Date.now() - i.getTime()),
         l = O.channels[e.id];
-      if (null == l || l.lastActionTime < Date.now() - _) returnfalse;
-      for (let e of C)
+      if (null == l || l.lastActionTime < Date.now() - v) returnfalse;
+      for (let e of y)
         if (r < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) returntrue;
       returnfalse
     }(t) && (delete O.channels[e], x.add(e), (0, f.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), true)
   }
 }
-y(A, "displayName", "UnreadSettingNoticeStore2"), y(A, "persistKey", "UnreadSettingNoticeStore2");
+C(A, "displayName", "UnreadSettingNoticeStore2"), C(A, "persistKey", "UnreadSettingNoticeStore2");
 let w = new A(Chunk570140.Z, {
     CHANNEL_SELECT: function() {
       let e = P();
@@ -123,7 +123,7 @@ let w = new A(Chunk570140.Z, {
     },
     CONNECTION_OPEN: function() {
       E = Chunk944486.Z.getChannelId(), j = Date.now(), I();
-      let e = Date.now() - _;
+      let e = Date.now() - v;
       Chunk709054.default.forEach(O.channels, (t, n) => {
         let {
           lastActionTime: i

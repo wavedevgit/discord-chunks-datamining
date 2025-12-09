@@ -20,7 +20,7 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk585816 = require("./585816.js");
 
-function _(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,7 +29,7 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function b(e) {
   let {
     closePopout: t
   } = e;
@@ -49,7 +49,7 @@ class O extends(i = Chunk473749.PureComponent) {
       onDragStart: this.onDragStart
     }, module) : (0, Chunk54381.jsx)(Chunk711553.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.YUU0RF),
-      renderSettings: v,
+      renderSettings: b,
       onDragStart: this.onDragStart,
       children: (0, Chunk54381.jsx)(Chunk483962.Z, {})
     }), o = require ? "div" : Chunk518084.ZP;
@@ -65,7 +65,7 @@ class O extends(i = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "onDragStart", e => {
+    super(...e), v(this, "onDragStart", e => {
       let {
         dragStart: t
       } = this.props;
@@ -73,7 +73,7 @@ class O extends(i = Chunk473749.PureComponent) {
     })
   }
 }
-_(O, "defaultProps", {
+v(O, "defaultProps", {
   contained: false
 });
 let E = Chunk442837.ZP.connectStores([Chunk914010.Z], () => ({

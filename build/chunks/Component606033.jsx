@@ -75,7 +75,7 @@ let b = function(e) {
         className: _.questSelectorContainer,
         children: (0, r.jsxs)("div", {
           className: _.questSelectorWrapper,
-          children: [(0, r.jsx)(h.Z, {}), (0, r.jsxs)("div", {
+          children: [(0, r.jsx)(g.Z, {}), (0, r.jsxs)("div", {
             className: _.questInput,
             children: [(0, r.jsx)(a.d, {
               "aria-label": "Quest ID",
@@ -134,7 +134,7 @@ let b = function(e) {
             children: (0, r.jsx)("div", {
               className: _.copyInput,
               children: (0, r.jsx)(o.Z, {
-                value: g.$w.QUEST_PREVIEW_TOOL_2(E),
+                value: h.$w.QUEST_PREVIEW_TOOL_2(E),
                 text: m.intl.string(m.t.WqhZss)
               })
             })

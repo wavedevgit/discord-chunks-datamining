@@ -306,7 +306,7 @@ class k extends Chunk473749.PureComponent {
       let e = y.Z.getVerificationKey();
       await c.Z.confirmViewBackupCodes(e, true)
     }), w(this, "sendMFABackupCodesVerificationKeyEmail", () => {
-      (0, l.h7j)(e => (0, r.jsx)(h.Z, j(x({}, e), {
+      (0, l.h7j)(e => (0, r.jsx)(h.default, j(x({}, e), {
         handleSubmit: e => c.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
           this.viewBackupCodes(e)
         }),
@@ -350,7 +350,7 @@ class k extends Chunk473749.PureComponent {
         onAddedPhone: c.Z.enableSMS
       }) : c.Z.enableSMS()
     }), w(this, "handleDisableSMS", () => {
-      (0, l.h7j)(e => (0, r.jsx)(h.Z, j(x({}, e), {
+      (0, l.h7j)(e => (0, r.jsx)(h.default, j(x({}, e), {
         handleSubmit: c.Z.disableSMS,
         title: P.intl.string(P.t.KLWnit),
         children: P.intl.string(P.t["W0/Duf"])

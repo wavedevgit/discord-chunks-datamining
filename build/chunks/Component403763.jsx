@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 403763, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -22,10 +22,10 @@ function f() {
     i = Chunk131951.Z.getOutputDeviceId();
   if (Chunk34828.Z.getState().neverShowModal || l().isEmpty(Chunk34828.Z.lastDeviceConnected)) return;
   let f = (0, Chunk34828.X)(Chunk131951.Z.getInputDevices()[exports]),
-    h = (0, Chunk34828.X)(Chunk131951.Z.getOutputDevices()[Chunk392711]);
-  if (l().some(Chunk34828.Z.lastDeviceConnected, e => d.has(e.displayName) || e.displayName === f || e.displayName === h)) return;
-  let g = l().some(Chunk34828.Z.lastDeviceConnected, e => s.Z.isCertified(c.Z.inputDevices[e.displayName]) || s.Z.isCertified(c.Z.outputDevices[e.displayName]));
-  if ((exports === Chunk65154.w5 && Chunk34828.Z.lastInputSystemDevice.justChanged || Chunk392711 === Chunk65154.w5 && Chunk34828.Z.lastOutputSystemDevice.justChanged) && !g) return;
+    g = (0, Chunk34828.X)(Chunk131951.Z.getOutputDevices()[Chunk392711]);
+  if (l().some(Chunk34828.Z.lastDeviceConnected, e => d.has(e.displayName) || e.displayName === f || e.displayName === g)) return;
+  let h = l().some(Chunk34828.Z.lastDeviceConnected, e => s.Z.isCertified(c.Z.inputDevices[e.displayName]) || s.Z.isCertified(c.Z.outputDevices[e.displayName]));
+  if ((exports === Chunk65154.w5 && Chunk34828.Z.lastInputSystemDevice.justChanged || Chunk392711 === Chunk65154.w5 && Chunk34828.Z.lastOutputSystemDevice.justChanged) && !h) return;
   let m = l().first(Object.keys(Chunk34828.Z.lastDeviceConnected)),
     _ = null != m && "" !== m ? Chunk34828.Z.lastDeviceConnected[m] : null;
   null != _ && (Chunk34828.Z.getState().ignoredDevices[_.displayName] || (Chunk34828.Z.initialized && null != m && (Chunk463395.Z.isCertified(Chunk34828.Z.inputDevices[m]) ? e = Chunk463395.Z.getCertifiedDevice(Chunk34828.Z.inputDevices[m]) : Chunk463395.Z.isCertified(Chunk34828.Z.outputDevices[m]) && (e = Chunk463395.Z.getCertifiedDevice(Chunk34828.Z.outputDevices[m]))), (0, Chunk481060.ZDy)(async () => {
@@ -48,7 +48,7 @@ function f() {
     modalKey: p
   })))
 }
-let h = {
+let g = {
   init() {
     Chunk34828.Z.addChangeListener(f)
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 819349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => I
@@ -63,19 +63,19 @@ function I(e) {
       location_stack: M
     }
   });
-  let R = (0, c.e7)([y.Z], () => y.Z.can(O.Plq.CREATE_INSTANT_INVITE, t), [t]),
+  let R = (0, c.e7)([C.Z], () => C.Z.can(O.Plq.CREATE_INSTANT_INVITE, t), [t]),
     [L, D] = r.useState(null),
     [k, U] = r.useState(false),
-    [V, H] = r.useState("unknown"),
+    [V, B] = r.useState("unknown"),
     F = r.useRef(null),
     {
-      isHoveringOrFocusing: B
-    } = (0, _.Tu)(null == L ? F : l),
-    [G, z] = r.useState(false),
-    W = B || G,
+      isHoveringOrFocusing: H
+    } = (0, v.Tu)(null == L ? F : l),
+    [G, W] = r.useState(false),
+    z = H || G,
     q = r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
-      C.default.track(O.rMx.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
+      y.default.track(O.rMx.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
         reason: e,
         channel_id: t.id,
         guild_id: t.guild_id,
@@ -101,7 +101,7 @@ function I(e) {
     }),
     Y = r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
-      U(true), H(e)
+      U(true), B(e)
     }, []),
     X = r.useCallback(() => (null != T.current && clearTimeout(T.current), T.current = setTimeout(() => Y("timeout"), 1e4), w(e => e + 1), () => {
       null != T.current && clearTimeout(T.current)
@@ -112,12 +112,12 @@ function I(e) {
       null != N.current && clearTimeout(N.current)
     }), []);
   (0, h.ZP)(X), r.useEffect(() => {
-    if (!W) {
+    if (!z) {
       X(), J();
       return
     }
     null != T.current && clearTimeout(T.current), null != N.current && clearTimeout(N.current), Z(true)
-  }, [W, X, J]), r.useEffect(() => {
+  }, [z, X, J]), r.useEffect(() => {
     !async function() {
       var e, n, i;
       let r = null != (e = b.Z.getInvite(t.id, {})) ? e : null;
@@ -137,7 +137,7 @@ function I(e) {
       Z(true)
     }, []),
     $ = r.useCallback(() => {
-      Z(false), z(false)
+      Z(false), W(false)
     }, []);
   return null == L ? null : (0, i.jsx)(d.yRy, {
     targetElementRef: l,
@@ -146,10 +146,10 @@ function I(e) {
     align: "top",
     spacing: 8,
     popoutKey: "voice-invite-suggestions-button",
-    renderPopout: e => (0, i.jsx)(v.B, S({
+    renderPopout: e => (0, i.jsx)(_.B, S({
       channel: t,
       inviteKey: L,
-      onHoverOrFocus: z
+      onHoverOrFocus: W
     }, e)),
     onRequestOpen: Q,
     onRequestClose: $,
@@ -175,7 +175,7 @@ function I(e) {
               },
               children: [(0, i.jsxs)("svg", {
                 className: a()(E.timer, {
-                  [E.paused]: W
+                  [E.paused]: z
                 }),
                 viewBox: "0 0 ".concat(24, " ").concat(24),
                 style: {
@@ -202,7 +202,7 @@ function I(e) {
                 lineClamp: 1,
                 children: x.intl.string(x.t["EE+P0H"])
               })
-            }), B ? (0, i.jsx)(d.P3F, {
+            }), H ? (0, i.jsx)(d.P3F, {
               className: E.close,
               onClick: () => Y("user_explicit"),
               "aria-label": x.intl.string(x.t.cpT0Cq),

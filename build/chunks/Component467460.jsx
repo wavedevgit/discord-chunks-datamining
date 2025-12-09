@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 467460, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => g,
+  F: () => h,
   a: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -39,16 +39,16 @@ let p = e => {
       })]
     })
   },
-  h = e => {
+  g = e => {
     let {
       expiresAt: t,
       tooltipText: n
     } = e, {
       days: c,
       hours: p,
-      minutes: h,
-      seconds: g
-    } = (0, s.Z)(Date.parse(t), 1e3), m = c > 0 ? [c, p, h] : p > 0 ? [p, h, g] : [h, g], _ = (0, o.zu)(i.z.NITRO_TAB_BADGE_OFFER_REMINDER);
+      minutes: g,
+      seconds: h
+    } = (0, s.Z)(Date.parse(t), 1e3), m = c > 0 ? [c, p, g] : p > 0 ? [p, g, h] : [g, h], _ = (0, o.zu)(i.z.NITRO_TAB_BADGE_OFFER_REMINDER);
     return (0, r.jsx)(l.u, {
       text: n,
       position: "right",
@@ -73,11 +73,11 @@ let p = e => {
       })
     })
   },
-  g = e => {
+  h = e => {
     let {
       trialOffer: t
     } = e, n = (0, c.YF)(t);
-    return (0, r.jsx)(h, {
+    return (0, r.jsx)(g, {
       expiresAt: t.expires_at,
       tooltipText: n
     })
@@ -86,7 +86,7 @@ let p = e => {
     let {
       discountOffer: t
     } = e, n = (0, c.h$)(t);
-    return (0, r.jsx)(h, {
+    return (0, r.jsx)(g, {
       expiresAt: t.expires_at,
       tooltipText: n
     })

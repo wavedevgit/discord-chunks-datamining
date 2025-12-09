@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 957657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,11 +14,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk923656 = require("./923656.js");
 let f = (0, Chunk804739.Q)() || false,
-  h = Chunk473749.memo(function(e) {
+  g = Chunk473749.memo(function(e) {
     let {
       currentRoute: t,
       renderToolbar: n
-    } = e, c = i.useContext(o.AnalyticsContext), h = f || t === u.Z5c.APPLICATION_LIBRARY_SETTINGS;
+    } = e, c = i.useContext(o.AnalyticsContext), g = f || t === u.Z5c.APPLICATION_LIBRARY_SETTINGS;
     return (0, r.jsxs)(a.Z, {
       className: p.libraryHeader,
       toolbar: null == n ? true : n(),
@@ -70,7 +70,7 @@ let f = (0, Chunk804739.Q)() || false,
         children: [(0, r.jsx)(l.njP.Item, {
           id: u.Z5c.APPLICATION_LIBRARY,
           children: d.intl.string(d.t.p7ARTB)
-        }), h ? (0, r.jsx)(l.njP.Item, {
+        }), g ? (0, r.jsx)(l.njP.Item, {
           id: u.Z5c.APPLICATION_LIBRARY_SETTINGS,
           children: d.intl.string(d.t["3D5yo/"])
         }) : null]

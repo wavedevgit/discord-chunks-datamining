@@ -106,7 +106,7 @@ function B(e) {
 function H(e, t) {
   let n = [],
     r = e.getGuildId();
-  return [A.d4z.GUILD_CATEGORY, ...g.tx].includes(e.type) || n.push(new Promise(t => {
+  return [A.d4z.GUILD_CATEGORY, ...h.tx].includes(e.type) || n.push(new Promise(t => {
     O.Z.whenReady(e.id, () => t()), c.Z.fetchMessages({
       channelId: e.id,
       limit: A.AQB
@@ -265,10 +265,10 @@ async function X(e, t, n) {
       }, "Invalid Origin")
     } else {
       let e = await J(t);
-      if (r = h.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new j.Z({
+      if (r = g.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
-    } null == r && (r = h.ZP.createFromServer(await J(t)));
+    } null == r && (r = g.ZP.createFromServer(await J(t)));
   let {
     id: i,
     name: l,

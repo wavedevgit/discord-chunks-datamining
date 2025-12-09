@@ -57,13 +57,13 @@ function A(e) {
       joinCall: true,
       joinCallVideo: true
     })
-  }, [t.id]), h = i.useCallback(() => {
+  }, [t.id]), g = i.useCallback(() => {
     O.Z.removeFriend({
       userId: t.id,
       applicationId: l ? n : null,
       location: "Friends"
     })
-  }, [n, l, t.id]), g = i.useCallback(() => {
+  }, [n, l, t.id]), h = i.useCallback(() => {
     let e = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
     c.Z.show({
       title: j.intl.formatToPlainString(j.t.fPLvZd, {
@@ -75,9 +75,9 @@ function A(e) {
       confirmText: e,
       confirmVariant: "critical-primary",
       cancelText: j.intl.string(j.t["ETE/oC"]),
-      onConfirm: h
+      onConfirm: g
     })
-  }, [h, l, t]), m = (0, s.e7)([_.Z], () => _.Z.supports(N.AN.VIDEO)), b = t.isProvisional, v = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
+  }, [g, l, t]), m = (0, s.e7)([_.Z], () => _.Z.supports(N.AN.VIDEO)), b = t.isProvisional, v = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
   return (0, r.jsxs)(o.v2r, {
     navId: "friend-row",
     "aria-label": j.intl.string(j.t.liqwPJ),
@@ -94,7 +94,7 @@ function A(e) {
     }), (0, r.jsx)(o.sNh, {
       id: "remove-friend",
       label: v,
-      action: g,
+      action: h,
       color: "danger"
     })]
   })
@@ -118,7 +118,7 @@ class Z extends Chunk473749.PureComponent {
       giftIntentType: c,
       hasFriendAnniversarySection: u
     } = this.props, {
-      isActiveRow: g
+      isActiveRow: h
     } = this.state;
     return (0, Chunk522558.i)(Chunk100527.Z.FRIENDS_LIST) && Chunk668781 === Chunk474936.hX.FRIEND_ANNIVERSARY && Chunk493683 ? (0, Chunk54381.jsx)(Chunk762500.Z, {
       ref: this.peopleListItemRef,
@@ -182,7 +182,7 @@ class Z extends Chunk473749.PureComponent {
       } = this.props;
       e.stopPropagation();
       let n = a().find(m.Z.getMutablePrivateChannels(), e => e.type === S.d4z.DM && e.getRecipientId() === t.id);
-      null != n ? (0, g.uL)(S.Z5c.CHANNEL(S.ME, n.id)) : u.Z.openPrivateChannel({
+      null != n ? (0, h.uL)(S.Z5c.CHANNEL(S.ME, n.id)) : u.Z.openPrivateChannel({
         recipientIds: t.id
       })
     }), x(this, "handleOpenActionsMenu", e => {

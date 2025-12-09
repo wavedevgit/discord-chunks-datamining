@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 650613, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -20,16 +20,16 @@ var Chunk54381 = require("./54381.js"),
 function f(e) {
   let {
     id: t
-  } = e, n = (0, l.e7)([o.default], () => o.default.getUser(t));
-  return null == n ? null : (0, a.jsx)(r.P3F, {
+  } = e, n = (0, r.e7)([o.default], () => o.default.getUser(t));
+  return null == n ? null : (0, a.jsx)(i.P3F, {
     className: x.entryAuthor,
     onClick: function() {
       (0, s.openUserProfileModal)({
-        sourceAnalyticsLocations: [i.Z.DEV_TOOLS],
+        sourceAnalyticsLocations: [l.Z.DEV_TOOLS],
         userId: t
       })
     },
-    children: (0, a.jsx)(r.Text, {
+    children: (0, a.jsx)(i.Text, {
       variant: "text-md/semibold",
       children: n.username
     })
@@ -40,7 +40,7 @@ function g() {
   var e;
   let t = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
     n = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFilters()),
-    i = (0, Chunk442837.cj)([Chunk719247.Z], () => {
+    l = (0, Chunk442837.cj)([Chunk719247.Z], () => {
       var e;
       let n = {};
       for (let a of null != (e = null == exports ? true : exports.entries) ? module : []) require[(0, Chunk719247.T)(Chunk54381.content)] = Chunk719247.Z.canRenderContent(Chunk54381.content);
@@ -53,19 +53,19 @@ function g() {
       content: t
     } = e;
     if (!(0, m.g)(n, t)) return [];
-    let l = i[(0, c.T)(t)];
+    let r = l[(0, c.T)(t)];
     return (0, a.jsxs)("li", {
       className: x.locatorEntry,
       children: [(0, a.jsx)(f, {
         type: t.author_type,
         id: t.author_id
-      }), !l && (0, a.jsx)(r.Text, {
+      }), !r && (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Expired or no matching presence"
-      }), (0, p.n2)(t) && (0, a.jsxs)(r.Text, {
+      }), (0, p.n2)(t) && (0, a.jsxs)(i.Text, {
         variant: "text-md/normal",
         children: ["Expired at ", t.expires_at]
-      }), s.has(t.id) && (0, a.jsx)(r.Text, {
+      }), s.has(t.id) && (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         children: "Impression capped"
       })]

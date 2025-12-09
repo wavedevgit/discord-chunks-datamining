@@ -25,7 +25,7 @@ function f(e, t, n) {
 }
 let v = new Chunk710845.Z("UploadArea");
 
-function h() {
+function g() {
   return (0, Chunk54381.jsxs)("div", {
     children: [(0, Chunk54381.jsx)("div", {
       className: l()(Chunk162130.sparkleWhite, Chunk374450.sparkleOne)
@@ -44,7 +44,7 @@ function h() {
     })]
   })
 }
-class g extends Chunk473749.Component {
+class h extends Chunk473749.Component {
   componentDidMount() {
     let e = this.elementDOMRef.current;
     null != module && (module.ownerDocument.body.addEventListener("dragover", this.handleDragOver, false), module.ownerDocument.body.addEventListener("drop", this.handleDragLeave, false), module.addEventListener("dragover", this.handleDragOverZone, false), module.addEventListener("dragleave", this.handleDragLeaveZone, false), module.addEventListener("drop", this.handleDrop, false))
@@ -70,7 +70,7 @@ class g extends Chunk473749.Component {
       style: Chunk473749,
       children: (0, Chunk54381.jsxs)("div", {
         className: Chunk374450.uploadDropModal,
-        children: [this.state.isDragging && (0, Chunk54381.jsx)(h, {}), (0, Chunk54381.jsx)("div", {
+        children: [this.state.isDragging && (0, Chunk54381.jsx)(g, {}), (0, Chunk54381.jsx)("div", {
           className: Chunk374450.bgScale
         }), (0, Chunk54381.jsxs)("div", {
           className: Chunk374450.inner,
@@ -110,7 +110,7 @@ class g extends Chunk473749.Component {
         a = null != r.items && !t.isAllDropFiles(r.items);
       return !i && !a || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
         isDragging: false
-      }), (0, d.openUploadError)({
+      }), (0, c.openUploadError)({
         title: u.intl.string(u.t.azO1Pe),
         help: u.intl.string(u.t["Koklr/"])
       })), false)
@@ -119,7 +119,7 @@ class g extends Chunk473749.Component {
       if (!this.preventUnwantedDrop(e)) returnfalse;
       let i = e.dataTransfer;
       if (null != i) {
-        if ("move" === i.effectAllowed ? i.dropEffect = "move" : i.dropEffect = "copy", (0, o.nfh)(d.A) && (0, o.Mr3)(d.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
+        if ("move" === i.effectAllowed ? i.dropEffect = "move" : i.dropEffect = "copy", (0, o.nfh)(c.A) && (0, o.Mr3)(c.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
           let e = null == (r = this.elementDOMRef.current) ? true : r.ownerDocument.defaultView;
           (null != e && i.types instanceof e.DOMStringList && i.types.contains("application/x-moz-file") || false !== i.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
             isDragging: true
@@ -156,4 +156,4 @@ class g extends Chunk473749.Component {
     })
   }
 }
-let b = g
+let b = h

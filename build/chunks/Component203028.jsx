@@ -40,7 +40,7 @@ function O(e) {
         user: t
       } = e;
       return t.id
-    })), i = n.filter(e => !r.has(e.id)), l = h.ZP.getName(t[0].user), a = null != t[1] ? h.ZP.getName(t[1].user) : null != i[0] ? h.ZP.getName(i[0]) : null;
+    })), i = n.filter(e => !r.has(e.id)), l = g.ZP.getName(t[0].user), a = null != t[1] ? g.ZP.getName(t[1].user) : null != i[0] ? g.ZP.getName(i[0]) : null;
     switch (n.length) {
       case 1:
         return l;
@@ -66,7 +66,7 @@ function O(e) {
       partiedMembers: c,
       voiceChannels: u,
       currentActivities: d
-    } = e, p = i.length, h = c.length - p, O = d[0], v = null == O ? true : O.activity, y = null == O ? true : O.startedPlayingTime, I = {
+    } = e, p = i.length, g = c.length - p, O = d[0], v = null == O ? true : O.activity, y = null == O ? true : O.startedPlayingTime, I = {
       name: null != (t = null == v ? true : v.name) ? t : ""
     };
     if ((0, a.Z)(v) && null != v) return {
@@ -77,7 +77,7 @@ function O(e) {
       }),
       icon: null
     };
-    if (p + h === 1 && null != O) {
+    if (p + g === 1 && null != O) {
       let {
         game: e
       } = O;
@@ -85,7 +85,7 @@ function O(e) {
         subtitle: null,
         icon: null
       };
-      let t = g.dc(v);
+      let t = h.dc(v);
       if (null != t) return t;
       switch (v.type) {
         case b.IIU.PLAYING:
@@ -149,7 +149,7 @@ function O(e) {
           activity: t
         } = e;
         if (null != t) {
-          let e = g.dc(t);
+          let e = h.dc(t);
           if (null != e) return e
         }
         if (null != t && t.type === b.IIU.LISTENING) return {

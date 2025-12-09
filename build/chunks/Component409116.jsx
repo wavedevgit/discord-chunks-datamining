@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 409116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => p
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk937615 = require("./937615.js"),
@@ -18,22 +18,22 @@ let p = e => {
     let {
       price: t,
       nitroIconType: n,
-      nitroIconSize: l = "md",
-      className: r,
-      discountOfferAmount: i,
+      nitroIconSize: r = "md",
+      className: i,
+      discountOfferAmount: l,
       discount: s = c.f_,
       variant: o = "text-md/semibold"
     } = e;
     return t.currency === d.pK.DISCORD_ORB ? (0, a.jsx)(x, {
       orbAmount: t.amount,
-      className: r,
+      className: i,
       variant: o
     }) : (0, a.jsx)(h, {
       price: t,
       nitroIconType: n,
-      nitroIconSize: l,
-      className: r,
-      discountOfferAmount: i,
+      nitroIconSize: r,
+      className: i,
+      discountOfferAmount: l,
       discount: s,
       variant: o
     })
@@ -44,7 +44,7 @@ let p = e => {
         amount: t,
         currency: n
       },
-      nitroIconType: l,
+      nitroIconType: r,
       nitroIconSize: d = "md",
       className: p,
       discountOfferAmount: h,
@@ -71,17 +71,17 @@ let p = e => {
         })
       }), (0, a.jsx)("span", {
         "aria-hidden": true,
-        className: r()({
+        className: i()({
           [m.priceStrikethrough]: g
         }, p),
         children: b
       })]
     });
     return (0, a.jsxs)("div", {
-      className: r()({
+      className: i()({
         [m.discountBackgroundColor]: g
       }, m.container, p),
-      children: ["tooltip" === l ? (0, a.jsx)(i.u, {
+      children: ["tooltip" === r ? (0, a.jsx)(l.u, {
         text: u.intl.string(u.t.MPFyJ5),
         "aria-label": u.intl.string(u.t.X3Ekj8),
         children: (0, a.jsx)(s.SrA, {
@@ -89,7 +89,7 @@ let p = e => {
           color: "currentColor",
           className: m.icon
         })
-      }) : "default" === l ? (0, a.jsx)(s.SrA, {
+      }) : "default" === r ? (0, a.jsx)(s.SrA, {
         size: d,
         color: "currentColor",
         className: m.icon
@@ -119,16 +119,16 @@ let p = e => {
     let {
       orbAmount: t,
       className: n,
-      variant: l = "text-md/semibold"
+      variant: r = "text-md/semibold"
     } = e;
     return (0, a.jsxs)("div", {
-      className: r()(m.container, n),
+      className: i()(m.container, n),
       children: [(0, a.jsx)(s.aQr, {
         color: "currentColor",
         size: "sm",
         className: m.icon
       }), (0, a.jsxs)(s.Text, {
-        variant: l,
+        variant: r,
         color: "currentColor",
         lineClamp: 1,
         children: [(0, a.jsx)(s.nn4, {

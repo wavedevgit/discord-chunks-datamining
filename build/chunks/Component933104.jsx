@@ -1,8 +1,8 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 933104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $h: () => T,
-  En: () => M,
+  En: () => L,
   cO: () => R,
   dJ: () => D,
   jG: () => w,
@@ -45,7 +45,7 @@ function w(e) {
     channelRowRef: i,
     markAsDismissed: o
   } = e;
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(M, {
     asset: (0, r.jsx)(b.g, {
       className: l()(S.image, S.levelImage)
     }),
@@ -118,7 +118,7 @@ function A(e) {
       perk: n[0].title
     }),
     g = 1 === n.length;
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(M, {
     size: 1 === n.length ? "video" : "lg",
     asset: n.length > 1 ? (0, r.jsx)(b.g, {
       className: l()(S.image, S.levelImage)
@@ -150,7 +150,7 @@ function R(e) {
     channelRowRef: i,
     markAsDismissed: l
   } = e, a = n.find(e => e.skuId === o.A$);
-  if (null != a) return (0, r.jsx)(L, {
+  if (null != a) return (0, r.jsx)(M, {
     targetElementRef: i,
     title: E.intl.string(C.default.Ygpx4Q),
     body: E.intl.string(C.default.mmNkUA),
@@ -166,7 +166,7 @@ function R(e) {
     markAsDismissed: l
   });
   let s = n.find(e => y.NL.has(e.skuId));
-  return null != s ? (0, r.jsx)(L, {
+  return null != s ? (0, r.jsx)(M, {
     targetElementRef: i,
     title: E.intl.string(C.default["kA2c+n"]),
     body: E.intl.string(C.default.TUilLj),
@@ -193,7 +193,7 @@ function D(e) {
     markAsDismissed: i,
     channelRowRef: o
   } = e, a = (0, _.Td)(t, true);
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(M, {
     targetElementRef: o,
     asset: (0, r.jsx)("img", {
       alt: "",
@@ -213,13 +213,13 @@ function D(e) {
   })
 }
 
-function M(e) {
+function L(e) {
   let {
     guildId: t,
     markAsDismissed: n,
     channelRowRef: i
   } = e;
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(M, {
     size: "video",
     targetElementRef: i,
     asset: (0, r.jsx)("img", {
@@ -240,7 +240,7 @@ function M(e) {
   })
 }
 
-function L(e) {
+function M(e) {
   var t, n, {
       caretConfig: i = {
         align: "start"

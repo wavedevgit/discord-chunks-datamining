@@ -175,9 +175,9 @@ let T = e => {
           B = (0, _.ig)(v.tier),
           F = A.slice(M, U),
           H = F.length > 0,
-          z = Z < v.tier,
-          W = (i = A.length, i < (0, _.A3)(N.Eu4.NONE) ? N.Eu4.NONE : i < (0, _.A3)(N.Eu4.TIER_1) ? N.Eu4.TIER_1 : i < (0, _.A3)(N.Eu4.TIER_2) ? N.Eu4.TIER_2 : i < (0, _.A3)(N.Eu4.TIER_3) || null != t && t.features.has(N.GuildFeatures.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? N.Eu4.TIER_3 : N.Eu4.NONE),
-          V = L && !z && W === v.tier && U !== F.length,
+          W = Z < v.tier,
+          z = (i = A.length, i < (0, _.A3)(N.Eu4.NONE) ? N.Eu4.NONE : i < (0, _.A3)(N.Eu4.TIER_1) ? N.Eu4.TIER_1 : i < (0, _.A3)(N.Eu4.TIER_2) ? N.Eu4.TIER_2 : i < (0, _.A3)(N.Eu4.TIER_3) || null != t && t.features.has(N.GuildFeatures.MORE_STICKERS) && i < d.D.MAX_STICKER_SLOTS ? N.Eu4.TIER_3 : N.Eu4.NONE),
+          V = L && !W && z === v.tier && U !== F.length,
           K = V || F.length > 0,
           Y = U - M,
           q = n(872732),
@@ -207,7 +207,7 @@ let T = e => {
           let e = E.Cp[v.tier];
           null != e && (0, h.H6)(t.id, e)
         }, ee = I.intl.string(I.t.g7lkrU), t.premiumTier + 1 !== v.tier && (en = true, l = I.intl.string(I.t.mTMkY2))) : (en = true, l = I.intl.string(I.t.hwPEJR)));
-        let er = W === T + 1 && W > Z,
+        let er = z === T + 1 && z > Z,
           ei = V || er || T > Z;
         return er ? g = (0, r.jsx)(m.Z, {
           guild: t,
@@ -236,18 +236,18 @@ let T = e => {
           children: [K && (0, r.jsxs)("div", {
             className: S.grid,
             children: [F.map(e => (0, r.jsx)(O.Z, {
-              isDisabled: z,
+              isDisabled: W,
               sticker: e,
               canManageSticker: k(e)
             }, e.id)), Q]
-          }), !z && !V && 0 === F.length && (0, r.jsx)("div", {
+          }), !W && !V && 0 === F.length && (0, r.jsx)("div", {
             className: a()(S.emptyTierWrapper, S.unusedTierWrapper),
             children: (0, r.jsx)(c.Text, {
               variant: "text-md/normal",
               color: "text-default",
               children: I.intl.string(I.t.lqwv0J)
             })
-          }), z && !H && (0, r.jsxs)("div", {
+          }), W && !H && (0, r.jsxs)("div", {
             className: S.emptyTierWrapper,
             children: [(0, r.jsx)("img", {
               alt: I.intl.string(I.t.BAhswr),

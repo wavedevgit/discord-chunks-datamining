@@ -293,15 +293,15 @@ function C(e) {
     textChatDisabled: a,
     shouldShowKeybindIndicators: c,
     shouldShowInviteNotification: d
-  } = (0, s.cj)([p.default, b.Z], () => ({
+  } = (0, s.cj)([p.default, y.Z], () => ({
     avatarSizeMode: p.default.getAvatarSizeMode(),
     displayNameMode: p.default.getDisplayNameMode(),
     displayUserMode: p.default.getDisplayUserMode(),
     notificationPositionMode: p.default.getNotificationPositionMode(),
-    textChatDisabled: b.Z.isNotificationDisabled(_.n0.TextChat),
+    textChatDisabled: y.Z.isNotificationDisabled(v.n0.TextChat),
     shouldShowKeybindIndicators: p.default.showKeybindIndicators,
-    shouldShowInviteNotification: !b.Z.isNotificationDisabled(_.n0.ActivityInvite)
-  })), u = (0, y.Z)({
+    shouldShowInviteNotification: !y.Z.isNotificationDisabled(v.n0.ActivityInvite)
+  })), u = (0, _.Z)({
     location: "Overlay Settings"
   });
   return (0, i.jsx)(j, {

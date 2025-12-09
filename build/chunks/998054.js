@@ -26,7 +26,7 @@ let d = async () => {
         return Chunk5900._n.EXISTING_INSTALLATION
     }
   } catch (e) {
-    if (module instanceof Error && "Failed to locate warp-cli" === module.message) return Chunk5900._n.NOT_INSTALLED;
+    if (module instanceof Error && "Failed to locate warp-cli" === module.message || module instanceof Error && _(module.message)) return Chunk5900._n.NOT_INSTALLED;
     if (module instanceof Object && "code" in module && "MissingRegistration" === module.code) return Chunk5900._n.WAITING_FOR_TERMS;
     return Chunk626135.default.track(Chunk981631.rMx.PREMIUM_FEATURE_ERROR, {
       error_message: module instanceof Error ? module.message : JSON.stringify(module),
@@ -48,4 +48,4 @@ let d = async () => {
   }
 }), p = async () => {
   await (0, Chunk60995._)(true), await Chunk998502.ZP.getDiscordUtils().installWarp()
-}
+}, _ = e => e.includes("Unexpected token") || e.includes("Cannot read properties of undefined") || e.includes("Unexpected end of JSON input")

@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -67,7 +67,7 @@ function D(e, t) {
   }), e
 }
 
-function M(e) {
+function L(e) {
   let {
     style: t,
     withGuildIcon: n,
@@ -131,7 +131,7 @@ function M(e) {
   }
 }
 
-function L(e) {
+function M(e) {
   let {
     thread: t
   } = e, n = i.useMemo(() => {
@@ -213,9 +213,9 @@ let k = Chunk473749.memo(function(e) {
     className: o()(w.containerDefault, {
       [w.selected]: l
     }),
-    children: [(0, r.jsx)(M, {
+    children: [(0, r.jsx)(L, {
       withGuildIcon: A
-    }), g ? null : (0, r.jsx)(M, {
+    }), g ? null : (0, r.jsx)(L, {
       withGuildIcon: A,
       inverted: true,
       style: {
@@ -255,13 +255,13 @@ let k = Chunk473749.memo(function(e) {
             className: o()(T.linkTop, T.__invalid_threadMainContent),
             children: ["icon-with-avatar" === H.variant ? (0, r.jsxs)("div", {
               className: T.threadIconWithAvatar,
-              children: [(0, r.jsx)(L, {
+              children: [(0, r.jsx)(M, {
                 thread: t
               }), null == W ? null : (0, r.jsx)(p.Z, {
                 user: W,
                 size: d.EFr.SIZE_16
               })]
-            }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(L, {
+            }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(M, {
               thread: t
             }) : null, (0, r.jsx)(c.Z, {
               className: T.name,

@@ -70,7 +70,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk913713 = require("./913713.js"),
   Chunk431115 = require("./431115.js");
 
-function eg(e) {
+function eh(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -97,7 +97,7 @@ function e_(e) {
     enabled: n
   } = (0, Z.WX)({
     location: er.dr.QUEST_HOME_DESKTOP
-  }), l = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), s = (0, u.e7)([L.Z], () => L.Z.isFocused()), {
+  }), l = (0, u.e7)([g.Z], () => g.Z.useReducedMotion), s = (0, u.e7)([L.Z], () => L.Z.isFocused()), {
     ref: o,
     inViewport: c
   } = (0, K.a)(), d = i.useRef(null);
@@ -140,7 +140,7 @@ function eb(e) {
       className: a()(eo.bannerAsset, eo.redirectNoticeBannerAsset),
       alt: ""
     }), (0, r.jsx)("img", {
-      src: eh.ZP,
+      src: eg.ZP,
       className: a()(eo.bannerAsset, eo.redirectNoticeBannerAsset),
       alt: "",
       onLoad: t
@@ -167,8 +167,8 @@ function eE(e) {
   } = i.useContext(em), f = (0, G._)({
     location: er.dr.QUEST_HOME_DESKTOP
   }) ? J.Z : J.j, {
-    takeover: h,
-    isLoading: g
+    takeover: g,
+    isLoading: h
   } = (0, z.Ut)(), {
     enabled: m
   } = (0, Z.WX)({
@@ -189,9 +189,9 @@ function eE(e) {
       children: [function() {
         if (!o && _) {
           if (p !== z.e5.ALL) return null;
-          if (g) return (0, r.jsx)(et.o, {});
-          if (null != h) return (0, r.jsx)(et.Z, {
-            config: h,
+          if (h) return (0, r.jsx)(et.o, {});
+          if (null != g) return (0, r.jsx)(et.Z, {
+            config: g,
             onQuestCtaClick: E
           })
         }
@@ -214,7 +214,7 @@ function eE(e) {
 let eO = function(e) {
   let {
     topLevelRoute: t
-  } = e, n = (0, s.TH)(), l = (0, s.k6)(), h = i.useMemo(() => {
+  } = e, n = (0, s.TH)(), l = (0, s.k6)(), g = i.useMemo(() => {
     var e;
     return (null == (e = (0, s.LX)(n.pathname, ei.Z5c.QUEST_HOME)) ? true : e.isExact) === true
   }, [n.pathname]), v = (0, u.e7)([b.Z], () => b.Z.getState("quests")), {
@@ -222,13 +222,13 @@ let eO = function(e) {
     onSelectTab: x,
     tabs: L
   } = (0, en.z)({
-    withClaimedQuestsTab: !h
+    withClaimedQuestsTab: !g
   });
   i.useLayoutEffect(() => {
-    h && T === z.e5.CLAIMED && H.Z.setState({
+    g && T === z.e5.CLAIMED && H.Z.setState({
       tab: z.e5.ALL
     })
-  }, [h, T]);
+  }, [g, T]);
   let {
     onScroll: D,
     scrollPosition: G
@@ -273,7 +273,7 @@ let eO = function(e) {
       }), (0, E.mK)({
         tab: el.AW.ORBS,
         analyticsLocations: [],
-        analyticsSource: g.Z.ORBS_BALANCE_MENU
+        analyticsSource: h.Z.ORBS_BALANCE_MENU
       })
     }, []);
   i.useEffect(() => {
@@ -319,7 +319,7 @@ let eO = function(e) {
   let ep = i.useCallback(() => {
       (0, W.navigateToQuestHome)({
         fromContent: B.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
-      }), R.default.track(ei.rMx.QUEST_CONTENT_CLICKED, eg({
+      }), R.default.track(ei.rMx.QUEST_CONTENT_CLICKED, eh({
         cta_name: U.jZ.VIEW_QUESTS,
         click_id: (0, o.Z)(),
         is_targeted: false
@@ -327,7 +327,7 @@ let eO = function(e) {
     }, []),
     ef = i.useCallback(e => {
       var t, n, r;
-      l.replace((n = eg({}, l.location), r = r = {
+      l.replace((n = eh({}, l.location), r = r = {
         hash: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
@@ -348,17 +348,17 @@ let eO = function(e) {
     },
     children: (0, r.jsx)(em.Provider, {
       value: i.useMemo(() => ({
-        isInDiscoverQuestHomeTab: h,
+        isInDiscoverQuestHomeTab: g,
         onScroll: D,
         onSelectTab: ef,
         scrollerRef: ec,
         selectedTab: T
-      }), [h, D, ef, ec, T]),
+      }), [g, D, ef, ec, T]),
       children: (0, r.jsx)("div", {
         className: a()(eo.container, {
           [eo.withoutTopBorder]: !t
         }),
-        children: h ? (0, r.jsx)(eE, {
+        children: g ? (0, r.jsx)(eE, {
           renderBanner: () => (0, r.jsx)(S.Z, {
             title: es.intl.string(es.t.z8YP2A),
             titleColor: "always-white",
@@ -406,7 +406,7 @@ let eO = function(e) {
                 onClick: () => (0, E.mK)({
                   tab: el.AW.ORBS,
                   analyticsLocations: [],
-                  analyticsSource: g.Z.INTRO_TO_ORBS_QUEST_BANNER
+                  analyticsSource: h.Z.INTRO_TO_ORBS_QUEST_BANNER
                 })
               }), (0, r.jsx)(p.Button, {
                 variant: "overlay-secondary",

@@ -91,8 +91,8 @@ let J = e => {
       ed = (0, I.M5)(ea, W.PremiumTypes.TIER_2),
       ep = (0, l.JA)("nitro"),
       ef = (0, Z.N)(),
-      eh = (0, A.N)(),
-      eg = (0, x.$)(),
+      eg = (0, A.N)(),
+      eh = (0, x.$)(),
       em = (0, T.W)(),
       e_ = (0, S.Vi)(),
       eb = (0, M.HI)({
@@ -105,8 +105,8 @@ let J = e => {
       eI = v.Z.getAlmostExpiringTrialOffers([W.Si.TIER_2]),
       eC = ec && eI.length > 0 && null != ef && null != ef.expires_at,
       eS = v.Z.getAlmostExpiringDiscountOffers([W.Si.TIER_2]),
-      eT = ec && eS.length > 0 && null != eh && null != eh.expires_at,
-      eN = null != eg && null != es && es.status === q.O0b.CANCELED,
+      eT = ec && eS.length > 0 && null != eg && null != eg.expires_at,
+      eN = null != eh && null != es && es.status === q.O0b.CANCELED,
       {
         fractionalState: ej,
         startsAt: eP,
@@ -122,13 +122,13 @@ let J = e => {
         location: "NitroTabButton"
       }),
       eL = (null == ef ? true : ef.trial_id) === W.a7,
-      eR = (0, h.YZ)("NitroTabButton"),
+      eR = (0, g.YZ)("NitroTabButton"),
       eD = (0, b.bg)({
         location: "NitroTabButton"
       }),
       eM = [],
       ek = [];
-    (0, g.Kl)() && ((eT || eC && !eL) && eM.push(o.z.NITRO_TAB_BADGE_OFFER_REMINDER), ev && eM.push(o.z.RECURRING_3P_PROMOTION_POPOVER), e_ && eM.push(o.z.BOGO_2025_NITRO_TAB_BADGE), ew && eM.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), em && eM.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eR && eM.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE), eD && eM.push(o.z.GAME_WIDGETS_PREMIUM_TAB_BADGE));
+    (0, h.Kl)() && ((eT || eC && !eL) && eM.push(o.z.NITRO_TAB_BADGE_OFFER_REMINDER), ev && eM.push(o.z.RECURRING_3P_PROMOTION_POPOVER), e_ && eM.push(o.z.BOGO_2025_NITRO_TAB_BADGE), ew && eM.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), em && eM.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eR && eM.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE), eD && eM.push(o.z.GAME_WIDGETS_PREMIUM_TAB_BADGE));
     let [eU, eG] = (0, _.US)(eM, true, true);
     eN && ek.push(o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK);
     let [eB, eH] = (0, _.US)(ek, true, true), eV = (0, w.H)(a.I.PREMIUM_TAB), [eF, ez] = (0, _.TE)(null != eV && "premiumTab" === eV.properties.properties.oneofKind ? o.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, null != (ee = null == eV ? true : eV.id) ? ee : "", true, true);
@@ -180,10 +180,10 @@ let J = e => {
     }), C = 4) : null != eE ? (n = (0, r.jsx)(Y.Z, {
       copy: eE,
       showStars: false
-    }), C = 1) : null != eh ? (n = eo === N.tE.OFFER_COUNTDOWN && eT ? (0, r.jsx)(B.a, {
-      discountOffer: eh
+    }), C = 1) : null != eg ? (n = eo === N.tE.OFFER_COUNTDOWN && eT ? (0, r.jsx)(B.a, {
+      discountOffer: eg
     }) : (0, r.jsx)(G.GN, {
-      userDiscount: eh,
+      userDiscount: eg,
       isTabSelected: et,
       includesAmountOff: false,
       shouldShowOfferReminder: eT
@@ -194,7 +194,7 @@ let J = e => {
       })
     }), C = 6) : eN && (n = (0, r.jsx)(U.Z, {
       isSelected: et,
-      discountOffer: eg
+      discountOffer: eh
     }), C = 8) : (n = eo === N.tE.OFFER_COUNTDOWN && eC ? (0, r.jsx)(B.F, {
       trialOffer: ef
     }) : (0, r.jsx)(G.$H, {
@@ -256,7 +256,7 @@ let J = e => {
       children: eW
     }) : eN && eB === o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === C ? (0, r.jsx)(k.Z, {
       targetElementRef: en,
-      discountOffer: eg,
+      discountOffer: eh,
       premiumSubscription: es,
       dismissCoachmark: eH,
       children: eW

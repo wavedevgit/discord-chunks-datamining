@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 42575, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,11 +17,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk475823 = require("./475823.js");
 
-function g(e) {
+function h(e) {
   let {
     user: t,
     nickname: n,
-    status: g,
+    status: h,
     isFocused: m
   } = e, {
     analyticsLocations: _
@@ -36,7 +36,7 @@ function g(e) {
     })
   }, E = e => {
     null == e || e.stopPropagation(), s.Z.ignore(t.id)
-  }, O = g === p.Skl.OFFLINE ? p.Skl.UNKNOWN : g;
+  }, O = h === p.Skl.OFFLINE ? p.Skl.UNKNOWN : h;
   return (0, r.jsx)(u.Z, {
     isFocused: m,
     user: t,
@@ -61,15 +61,15 @@ function g(e) {
         })]
       });
       return (0, r.jsxs)("div", {
-        className: h.listItemContents,
+        className: g.listItemContents,
         children: [(0, r.jsx)(d.Z, {
           user: t,
           hovered: e,
           status: O,
           subText: n,
-          className: h.__invalid_userInfo
+          className: g.__invalid_userInfo
         }), (0, r.jsx)("div", {
-          className: h.actions,
+          className: g.actions,
           children: l
         })]
       })

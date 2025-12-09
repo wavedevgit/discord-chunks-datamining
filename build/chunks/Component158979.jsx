@@ -2,7 +2,7 @@
 /** chunk id: 158979, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -61,15 +61,15 @@ function m() {
   })
 }
 
-function y(e) {
+function _(e) {
   switch (e.type) {
     case u.nc.GO_LIVE_VOICE: {
       let {
         game: t,
         voiceGuild: p
       } = e, {
-        trackView: y,
-        trackClick: b
+        trackView: _,
+        trackClick: y
       } = (0, c.R)(u.n0.GoLiveNudge, {
         notif_type: u.n0.GoLiveNudge
       });
@@ -83,10 +83,10 @@ function y(e) {
         hint: () => (0, i.jsx)(m, {}),
         renderFooter: () => (0, i.jsx)(m, {}),
         onNotificationShow: () => {
-          y()
+          _()
         },
         onNotificationClick: (e, t) => {
-          b("unlock");
+          y("unlock");
           let c = (0, a.getPID)();
           s.Z.updateNotificationStatus(t);
           let u = o.default.isOverlayOOPEnabledForPid(c);
@@ -107,7 +107,7 @@ function y(e) {
           }, h)
         },
         onDismissClick: () => {
-          b("dismiss")
+          y("dismiss")
         }
       }
     }

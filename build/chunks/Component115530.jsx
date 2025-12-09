@@ -1,4 +1,4 @@
-/** Chunk was on 72472 **/
+/** Chunk was on 51333 **/
 /** chunk id: 115530, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -15,9 +15,9 @@ function s(e) {
     children: t,
     className: n
   } = e;
-  return (0, r.jsx)(o.Text, {
+  return (0, r.jsx)(a.Text, {
     color: "none",
-    className: l()(a.title, n),
+    className: l()(o.title, n),
     variant: "text-md/medium",
     children: t
   })

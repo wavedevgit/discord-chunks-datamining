@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 677845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -38,7 +38,7 @@ function S(e) {
     inCall: T,
     totalNumberOfParticipants: N,
     popoutType: A
-  } = e, w = (0, m.bp)() === E.IlC.POPOUT, M = (0, o.e7)([y.Z], () => y.Z.getGuild(I.guild_id), [I.guild_id]), {
+  } = e, w = (0, m.bp)() === E.IlC.POPOUT, M = (0, o.e7)([C.Z], () => C.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
   } = (0, O.d)(), L = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), D = (0, b.bt)(I.id, t), k = r.useCallback(() => {
     (0, a.j)(() => {
@@ -54,14 +54,14 @@ function S(e) {
       })
     })
   }, [I.id, R]);
-  let U = (0, o.e7)([C.Z], () => I.isPrivate() || (0, f.b)(C.Z, M, I), [M, I]),
+  let U = (0, o.e7)([y.Z], () => I.isPrivate() || (0, f.b)(y.Z, M, I), [M, I]),
     V = (null == M ? true : M.afkChannelId) === I.id,
-    H = I.userLimit <= 0 || I.userLimit > 1,
+    B = I.userLimit <= 0 || I.userLimit > 1,
     F = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
-    B = (0, h.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
+    H = (0, h.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     G = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
-    z = null != R && R === I.id,
-    W = D.map(e => t => (0, i.jsx)(_.ZP, {
+    W = null != R && R === I.id,
+    z = D.map(e => t => (0, i.jsx)(v.ZP, {
       participant: e,
       channel: I,
       className: j.tile,
@@ -83,19 +83,19 @@ function S(e) {
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != M && !V && (!(L >= 2) || !F || G || B || z ? H && 1 === L && U && (F && !G ? W.push(e => (0, i.jsx)(v.h, {
+  }, []), null != M && !V && (!(L >= 2) || !F || G || H || W ? B && 1 === L && U && (F && !G ? z.push(e => (0, i.jsx)(_.h, {
     channel: I,
     guild: M,
     width: e,
     inPopout: w,
     handleClose: k,
     userParticipantCount: L
-  })) : W.push(e => (0, i.jsx)(x.Z, {
+  })) : z.push(e => (0, i.jsx)(x.Z, {
     width: e,
     channel: I,
     guild: M,
     inPopout: w
-  }))) : W.push(e => (0, i.jsx)(v.h, {
+  }))) : z.push(e => (0, i.jsx)(_.h, {
     channel: I,
     guild: M,
     width: e,
@@ -112,6 +112,6 @@ function S(e) {
     keyExtractor: q,
     paddingTop: 64,
     paddingBottom: 64,
-    children: W
+    children: z
   })
 }

@@ -118,7 +118,7 @@ let Z = new A(Chunk570140.Z, {
     let {
       section: t
     } = e;
-    if (null != C || t !== h.CoT.PERMISSIONS) returnfalse;
+    if (null != C || t !== g.CoT.PERMISSIONS) returnfalse;
     x()
   },
   CHANNEL_SETTINGS_PERMISSIONS_INIT: x,
@@ -134,7 +134,7 @@ let Z = new A(Chunk570140.Z, {
       deny: i
     }), y = b(_({}, y), {
       [t]: l
-    }), E.add(t), O = h.QZA.OPEN, v = !s().isEqual(y, I), r = d.o4(C, S)
+    }), E.add(t), O = g.QZA.OPEN, v = !s().isEqual(y, I), r = d.o4(C, S)
   },
   CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
     let {
@@ -178,12 +178,12 @@ let Z = new A(Chunk570140.Z, {
     let {
       silent: t
     } = e;
-    t ? O = h.QZA.OPEN : (O = h.QZA.CLOSED, x())
+    t ? O = g.QZA.OPEN : (O = g.QZA.CLOSED, x())
   },
   CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
     let {
       advancedMode: t
     } = e;
-    j = t, c.K.set(g.kf, t)
+    j = t, c.K.set(h.kf, t)
   }
 })

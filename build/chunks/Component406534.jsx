@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 406534, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => et
@@ -127,19 +127,19 @@ function et(e) {
     em = (0, k.$)(U),
     eg = et.length > 0 && (null == (t = et.first()) ? true : t.isFirstMessageInForumPost(U)),
     eb = (0, s.ts)(U),
-    ey = (0, l.e7)([j.Z], () => j.Z.shouldShowTopicsBar() && !ed),
-    eC = (0, x.P)(U.id),
-    ev = (0, _.z)(U.id, X.zr),
-    e_ = (0, d.k)(U.id),
+    eC = (0, l.e7)([j.Z], () => j.Z.shouldShowTopicsBar() && !ed),
+    ey = (0, x.P)(U.id),
+    e_ = (0, v.z)(U.id, X.zr),
+    ev = (0, d.k)(U.id),
     eO = (0, D.Z)(),
     ex = function(e, t) {
       if (e.isDM() && null != t)
-        if (t.type === v.pj.STRANGER_DANGER) return (0, i.jsx)(E.M, {
+        if (t.type === _.pj.STRANGER_DANGER) return (0, i.jsx)(E.M, {
           channelId: e.id,
           warningId: t.id,
           senderId: e.getRecipientId()
         });
-        else if (t.type === v.pj.LIKELY_ATO) return (0, i.jsx)(p.M, {
+        else if (t.type === _.pj.LIKELY_ATO) return (0, i.jsx)(p.M, {
         channelId: e.id,
         warningId: t.id,
         senderId: e.getRecipientId()
@@ -150,13 +150,13 @@ function et(e) {
         senderId: e.getRecipientId()
       });
       return null
-    }(U, null != (n = null != eC ? eC : ev) ? n : e_),
+    }(U, null != (n = null != ey ? ey : e_) ? n : ev),
     eE = U.isForumPost() && !eg ? (0, i.jsx)(m.Z, {
       postId: U.id
     }) : null,
     ej = (0, b.Z)(U.id),
-    eS = (0, y.nw)(U);
-  (0, W.Z)();
+    eS = (0, C.nw)(U);
+  (0, z.Z)();
   let eP = null,
     eI = [],
     eZ = el.map((e, t) => {
@@ -183,7 +183,7 @@ function et(e) {
       }, "forum-post-action-bar-".concat(U.id));
       if (e.type === Y.ys_.MESSAGE_GROUP_BLOCKED || e.type === Y.ys_.MESSAGE_GROUP_IGNORED || e.type === Y.ys_.MESSAGE_GROUP_SPAMMER) {
         let t;
-        return t = e.type === Y.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYM/"] : e.type === Y.ys_.MESSAGE_GROUP_IGNORED ? J.t["VFWjc+"] : J.t.xfkfTK, (0, i.jsx)(H.Z, {
+        return t = e.type === Y.ys_.MESSAGE_GROUP_BLOCKED ? J.t["+FcYM/"] : e.type === Y.ys_.MESSAGE_GROUP_IGNORED ? J.t["VFWjc+"] : J.t.xfkfTK, (0, i.jsx)(B.Z, {
           unreadId: K.j1,
           messages: e,
           channel: U,
@@ -240,7 +240,7 @@ function et(e) {
       showingBanner: eu
     }, "empty-message")), et.hasMoreAfter && eI.push((0, i.jsx)(G.ZP, Q({
       compact: er
-    }, es), "has-more-after")), !eu && em && ef() && eI.push((0, i.jsx)(z.Z, {
+    }, es), "has-more-after")), !eu && em && ef() && eI.push((0, i.jsx)(W.Z, {
       channel: U
     })), en > 0 && ei && ef()) {
     let e, t, n = Z.ZP.getOldestUnreadTimestamp(U.id),
@@ -253,16 +253,16 @@ function et(e) {
           num_unread_summaries: o,
           num_unread_messages: en,
           last_ack_message_id: n,
-          summaries_enabled_by_user: ey,
+          summaries_enabled_by_user: eC,
           summaries_enabled_for_channel: (0, s.Lp)(U)
         }), (0, s.Lp)(U)) {
-        let n = ey ? J.intl.format(t, {
+        let n = eC ? J.intl.format(t, {
           count: en
         }) : J.intl.format(e, {
           count: en,
           timestamp: l
         });
-        if (ey) {
+        if (eC) {
           let e = o > 0 ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(a.Text, {
               variant: "text-sm/medium",
@@ -289,7 +289,7 @@ function et(e) {
             color: "currentColor",
             children: n
           });
-          r = (0, i.jsx)(B.G5, {
+          r = (0, i.jsx)(H.G5, {
             scrollManager: eo,
             content: e,
             channel: U
@@ -328,13 +328,13 @@ function et(e) {
               children: n
             })
           });
-          r = (0, i.jsx)(B.LE, {
+          r = (0, i.jsx)(H.LE, {
             content: e,
             channelId: U.id
           })
         }
       }
-    } else eO.includes(q.E.NEW_MESSAGES) && (r = (0, i.jsx)(B.LE, {
+    } else eO.includes(q.E.NEW_MESSAGES) && (r = (0, i.jsx)(H.LE, {
       content: J.intl.format(e, {
         count: en,
         timestamp: l
@@ -342,10 +342,10 @@ function et(e) {
       channelId: U.id
     }))
   }
-  if (null == r && (0, s.Lp)(U) && ey && eO.includes(q.E.SUMMARIES) && (r = (0, i.jsx)(B.BO, {
+  if (null == r && (0, s.Lp)(U) && eC && eO.includes(q.E.SUMMARIES) && (r = (0, i.jsx)(H.BO, {
       channel: U,
       scrollManager: eo
-    })), et.error) h = (0, i.jsx)(B.Rp, {
+    })), et.error) h = (0, i.jsx)(H.Rp, {
     loading: et.loadingMore,
     onClick: () => {
       var e;
@@ -361,10 +361,10 @@ function et(e) {
     let {
       jumpReturnTargetId: e
     } = et;
-    h = et.loadingMore && et.jumpedToPresent ? (0, i.jsx)(B.DR, {
+    h = et.loadingMore && et.jumpedToPresent ? (0, i.jsx)(H.DR, {
       className: ep
-    }) : null != e ? (0, i.jsx)(B.DR, {
-      type: B.A7.REPLY,
+    }) : null != e ? (0, i.jsx)(H.DR, {
+      type: H.A7.REPLY,
       onClick: () => {
         o.Z.jumpToMessage({
           channelId: U.id,
@@ -373,11 +373,11 @@ function et(e) {
         })
       },
       className: ep
-    }) : (0, i.jsx)(B.DR, {
+    }) : (0, i.jsx)(H.DR, {
       onClick: () => (function(e) {
         o.Z.jumpToPresent(e.id, Y.AQB);
         let t = T.Z.getChannelId();
-        e.id === t && (0, C.Kh)(e.id)
+        e.id === t && (0, y.Kh)(e.id)
       })(U),
       className: ep
     })

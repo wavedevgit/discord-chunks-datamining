@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 748855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => f
@@ -22,9 +22,9 @@ function f(e) {
     setStatus: l,
     isFavorited: f,
     onFavoriteClick: m
-  } = e, [g, b] = r.useState(false), y = (0, o.e7)([u.Z], () => u.Z.getFavoritedStatuses().length >= u.o), C = r.useCallback(e => {
+  } = e, [g, b] = r.useState(false), C = (0, o.e7)([u.Z], () => u.Z.getFavoritedStatuses().length >= u.o), y = r.useCallback(e => {
     e.stopPropagation(), null == m || m()
-  }, [m]), v = f ? c.r7p : c.vxU;
+  }, [m]), _ = f ? c.r7p : c.vxU;
   return (0, i.jsxs)(c.P3F, {
     onClick: l,
     onMouseEnter: () => {
@@ -40,7 +40,7 @@ function f(e) {
       children: t
     }), g && null != m && (0, i.jsx)(c.aML, {
       "data-migration-pending": true,
-      text: y && !f ? d.intl.string(d.t.YSDH9n) : true,
+      text: C && !f ? d.intl.string(d.t.YSDH9n) : true,
       children: e => {
         var t, n;
         return (0, i.jsx)(c.P3F, (t = function(e) {
@@ -62,8 +62,8 @@ function f(e) {
           return e
         }({}, e), n = n = {
           className: a()(p.centerAlign, p.favoriteIcon),
-          onClick: C,
-          children: (0, i.jsx)(v, {
+          onClick: y,
+          children: (0, i.jsx)(_, {
             className: p.closeIcon,
             color: f ? s.Z.colors.ICON_FEEDBACK_WARNING : "currentColor"
           })

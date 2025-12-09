@@ -22,19 +22,19 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let f = new Set,
-  h = new Set,
-  g = null;
+  g = new Set,
+  h = null;
 
 function m() {
   for (let e of f) Chunk846027.Z.setDisableLocalVideo(module, Chunk981631.ZUi.MANUAL_ENABLED, Chunk65154.Yn.DEFAULT, false);
-  h.clear(), f.clear()
+  g.clear(), f.clear()
 }
 class _ extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), Chunk570140.Z.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), Chunk570140.Z.subscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk928518.Z.addChangeListener(this.handlePopoutChange)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), Chunk570140.Z.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), Chunk570140.Z.unsubscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk928518.Z.removeChangeListener(this.handlePopoutChange), m(), g = null
+    Chunk570140.Z.unsubscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), Chunk570140.Z.unsubscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), Chunk570140.Z.unsubscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk928518.Z.removeChangeListener(this.handlePopoutChange), m(), h = null
   }
   handleIncomingVideo(e) {
     let {
@@ -45,17 +45,17 @@ class _ extends Chunk317770.Z {
     if (n !== d.Yn.DEFAULT || null == r) return;
     let l = null != a.ZP.getVisibleGame(),
       p = c.Z.isVisible(),
-      g = s.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT),
+      h = s.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT),
       m = o.Z.isLocalVideoDisabled(t, n),
-      _ = h.has(t);
-    !l || p || g || m || _ || (f.add(t), i.Z.setDisableLocalVideo(t, u.ZUi.DISABLED, n, false))
+      _ = g.has(t);
+    !l || p || h || m || _ || (f.add(t), i.Z.setDisableLocalVideo(t, u.ZUi.DISABLED, n, false))
   }
   handleManualLocalVideoToggle(e) {
     let {
       userId: t,
       persist: n
     } = e;
-    n && (h.add(t), f.delete(t))
+    n && (g.add(t), f.delete(t))
   }
   constructor(...e) {
     super(...e), p(this, "handleWindowVisibilityChange", e => {
@@ -67,7 +67,7 @@ class _ extends Chunk317770.Z {
       let {
         channelId: t
       } = e;
-      t !== g && (m(), g = t)
+      t !== h && (m(), h = t)
     }), p(this, "handlePopoutChange", () => {
       s.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT) && m()
     })

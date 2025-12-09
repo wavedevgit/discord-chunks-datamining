@@ -1,7 +1,7 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 521476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => _
+  h: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -21,7 +21,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk216390 = require("./216390.js");
 
-function C(e) {
+function y(e) {
   var t;
   let {
     guild: n
@@ -33,14 +33,14 @@ function C(e) {
       bannerIcon: (0, i.jsx)(l.ics, {
         size: "lg",
         color: "currentColor",
-        className: y.bannerIcon
+        className: C.bannerIcon
       }),
       bannerHeader: b.intl.format(b.t.GgMwjk, {
         guildName: null != (t = null == n ? true : n.name) ? t : ""
       }),
       bannerSubtext: b.intl.string(b.t.ONjwD5),
-      textStyles: y.bannerContainer,
-      headerStyles: y.bannerHeader,
+      textStyles: C.bannerContainer,
+      headerStyles: C.bannerHeader,
       children: (0, i.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
@@ -51,7 +51,7 @@ function C(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   var t, n;
   let {
     guild: r
@@ -66,14 +66,14 @@ function v(e) {
       bannerIcon: (0, i.jsx)(l.ics, {
         size: "lg",
         color: "currentColor",
-        className: y.bannerIcon
+        className: C.bannerIcon
       }),
       bannerHeader: b.intl.format(b.t.kcYdTq, {
         guildName: null != (n = null == r ? true : r.name) ? n : ""
       }),
       bannerSubtext: p,
-      textStyles: y.bannerContainer,
-      headerStyles: y.bannerHeader,
+      textStyles: C.bannerContainer,
+      headerStyles: C.bannerHeader,
       children: (0, i.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
@@ -86,7 +86,7 @@ function v(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     guild: t
   } = e, n = (0, r.e7)([u.default, d.ZP], () => {
@@ -94,11 +94,11 @@ function _(e) {
     let e = u.default.getId();
     return (0, p.no)(d.ZP.getMember(t.id, e))
   }, [t]);
-  return n.has(m.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(m.q.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(v, {
+  return n.has(m.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(m.q.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(_, {
     guild: t
-  }) : n.has(m.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(C, {
+  }) : n.has(m.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(y, {
     guild: t
-  }) : (0, i.jsx)(v, {
+  }) : (0, i.jsx)(_, {
     guild: t
   })
 }

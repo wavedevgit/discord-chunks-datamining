@@ -31,15 +31,15 @@ class m extends Chunk317770.Z {
     if (null == t || !(e => {
         var t;
         let n = d.Z.getGuild(e),
-          r = !!(null == n ? true : n.features.has(h.GuildFeatures.COMMUNITY)),
-          l = p.Z.can(h.Plq.MANAGE_CHANNELS, n),
+          r = !!(null == n ? true : n.features.has(g.GuildFeatures.COMMUNITY)),
+          l = p.Z.can(g.Plq.MANAGE_CHANNELS, n),
           a = (0, o.zu)(i.z.FORUM_CHANNEL_UPSELL_MODAL),
           s = null != (t = u.Z.getMemberCount(e)) ? t : 0;
         return r && l && !a && s >= 200
       })(t)) return;
     (0, f.qz)(), (0, c.kk)(i.z.FORUM_CHANNEL_UPSELL_MODAL);
     let a = function() {
-      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : g.L.DISMISS;
+      let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : h.L.DISMISS;
       (0, o.Q3)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
         dismissAction: e
       })
@@ -86,9 +86,9 @@ class m extends Chunk317770.Z {
       }
     }, {
       onCloseCallback: () => (0, o.Q3)(i.z.FORUM_CHANNEL_UPSELL_MODAL, {
-        dismissAction: g.L.DISMISS
+        dismissAction: h.L.DISMISS
       }),
-      onCloseRequest: h.VqG
+      onCloseRequest: g.VqG
     })
   }
 }

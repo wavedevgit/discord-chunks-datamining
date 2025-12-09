@@ -1,7 +1,7 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => M
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -83,7 +83,7 @@ function D(e) {
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
 }
-class M extends(r = Chunk473749.PureComponent) {
+class L extends(r = Chunk473749.PureComponent) {
   componentWillEnter(e) {
     let {
       controller: t
@@ -255,13 +255,13 @@ class M extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-w(M, "defaultProps", {
+w(L, "defaultProps", {
   badge: 0,
   audio: false,
   video: false,
   isCurrentUserInThisDMCall: false
 });
-let L = Chunk473749.forwardRef(function(e, t) {
+let M = Chunk473749.forwardRef(function(e, t) {
   let n = e.channel.id,
     r = (0, h.ZP)(e.channel),
     l = (0, a.Ie)(n, 2),
@@ -281,7 +281,7 @@ let L = Chunk473749.forwardRef(function(e, t) {
     S = false;
   (C || x && p) && (E = u === P.WtW.VOICE, S = u === P.WtW.VIDEO);
   let I = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(M, A(T({}, e), {
+  return (0, i.jsx)(L, A(T({}, e), {
     ref: t,
     channelName: r,
     unread: v > 0,

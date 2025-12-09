@@ -184,7 +184,7 @@ let M = function(e) {
               t = [];
             return K.forEach(n => {
               n.giftIntentType === j.hX.FRIEND_ANNIVERSARY ? e.push(n) : t.push(n)
-            }), [V ? e : e.slice(0, g.zj), t]
+            }), [V ? e : e.slice(0, h.zj), t]
           }
         default:
           return [K]
@@ -250,7 +250,7 @@ let M = function(e) {
         })
       }, i)
     }, [$, L, t, et, en]),
-    el = i.useCallback(e => L === N.pJs.ALL && 0 === e && H && X > g.zj ? (0, r.jsx)("div", {
+    el = i.useCallback(e => L === N.pJs.ALL && 0 === e && H && X > h.zj ? (0, r.jsx)("div", {
       className: x.sectionFooter,
       children: (0, r.jsx)(a.Button, {
         icon: V ? a.u04 : a.CJ0,
@@ -262,7 +262,7 @@ let M = function(e) {
       })
     }) : null, [L, X, V, er, H]);
   if (i.useEffect(() => {
-      L === N.pJs.ALL && (0, h.d$)()
+      L === N.pJs.ALL && (0, g.d$)()
     }, [L]), i.useEffect(() => {
       F(false)
     }, [L, X]), 0 === K.length && "" === G[L]) return (0, r.jsx)(D, {

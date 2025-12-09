@@ -49,13 +49,13 @@ let w = 15 * Chunk70956.Z.Millis.MINUTE,
       quest: a
     }), {
       partiedMembers: f,
-      applicationStreams: h,
-      currentActivities: g,
+      applicationStreams: g,
+      currentActivities: h,
       voiceChannels: m
-    } = t, _ = f.length, b = h.length, E = g.length, O = m.length > 0, y = p.o.useConfig({
+    } = t, _ = f.length, b = g.length, E = h.length, O = m.length > 0, y = p.o.useConfig({
       location: "itemcard"
     }).demureActivityCards, I = i.useCallback(() => {
-      let e = g.filter(e => {
+      let e = h.filter(e => {
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, v.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
@@ -66,7 +66,7 @@ let w = 15 * Chunk70956.Z.Millis.MINUTE,
         in_voice_channel: O,
         games_detected: e
       })
-    }, [_, b, E, O, g]), j = i.useMemo(() => o()(I, w), [I]);
+    }, [_, b, E, O, h]), j = i.useMemo(() => o()(I, w), [I]);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: s,
       position: "left",
@@ -153,7 +153,7 @@ function D() {
           activity: l
         } = e;
         if (null == l) return;
-        let a = (0, g.ZZ)(r, l);
+        let a = (0, h.ZZ)(r, l);
         null == a || n.has(a.id) || (t.set(i.party.id, a), n.add(a.id))
       });
       return exports

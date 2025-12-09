@@ -263,9 +263,9 @@ class Y extends Chunk473749.PureComponent {
     } = e;
     return (0, r.jsxs)(y.Z, {
       direction: y.Z.Direction.VERTICAL,
-      children: [(0, r.jsx)(h.Exd, {
+      children: [(0, r.jsx)(g.Exd, {
         percent: t,
-        size: h.Exd.Sizes.SMALL,
+        size: g.Exd.Sizes.SMALL,
         foregroundColor: n,
         foregroundGradientColor: null != i ? [i[0], i[1]] : true,
         animate: this.isFocused
@@ -282,9 +282,9 @@ class Y extends Chunk473749.PureComponent {
     } = e;
     return (0, r.jsxs)(y.Z, {
       direction: y.Z.Direction.VERTICAL,
-      children: [(0, r.jsx)(h.yGy, {
+      children: [(0, r.jsx)(g.yGy, {
         percents: t,
-        size: h.yGy.Sizes.SMALL,
+        size: g.yGy.Sizes.SMALL,
         foregroundColors: G,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
@@ -472,7 +472,7 @@ let W = () => (0, Chunk54381.jsx)(B, {
       item: t
     } = e;
     return (0, r.jsx)(B, {
-      icon: h.wj7,
+      icon: g.wj7,
       tooltip: D.intl.string(D.t["Eqb+LN"]),
       onClick: () => _.A1(t.applicationId, t.branchId)
     })
@@ -482,7 +482,7 @@ let W = () => (0, Chunk54381.jsx)(B, {
       item: t
     } = e;
     return (0, r.jsx)(B, {
-      icon: h.Dio,
+      icon: g.Dio,
       tooltip: D.intl.string(D.t["0lFmC9"]),
       onClick: () => _.al(t.applicationId, t.branchId)
     })
@@ -546,7 +546,7 @@ class X extends Chunk473749.PureComponent {
       applications: e
     } = this.props;
     module.forEach(e => {
-      e.finished && g.Z.wait(() => {
+      e.finished && h.Z.wait(() => {
         _.wi(e.applicationId, e.branchId)
       })
     }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = true

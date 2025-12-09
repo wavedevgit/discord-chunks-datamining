@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -36,7 +36,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk777126 = require("./777126.js");
 
-function M(e, t, n) {
+function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,14 +45,14 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function L(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      L(e, t, n[t])
     })
   }
   return e
@@ -277,7 +277,7 @@ class U extends(r = Chunk473749.Component) {
           return i
         }(r, ["ref", "role"]);
         return (0, i.jsx)(f.Wdt, {
-          children: r => (0, i.jsx)(f.aVo, L({
+          children: r => (0, i.jsx)(f.aVo, M({
             fade: true,
             innerRole: o,
             innerAriaLabel: R.intl.string(R.t.YUU0RF),
@@ -301,12 +301,12 @@ class U extends(r = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), M(this, "state", {
+    super(...e), L(this, "state", {
       initialized: false,
       preRenderedChildren: 0,
       totalRowCount: 0,
       nonNullChildren: []
-    }), M(this, "_list", null), M(this, "hasReportedAnalytics", false), M(this, "reportAnalytics", () => {
+    }), L(this, "_list", null), L(this, "hasReportedAnalytics", false), L(this, "reportAnalytics", () => {
       var e;
       if (this.hasReportedAnalytics) return;
       let t = null == (e = this._list) ? true : e.getScrollerState();
@@ -326,22 +326,22 @@ class U extends(r = Chunk473749.Component) {
           num_users_visible: a.length,
           num_users_visible_with_mobile_indicator: s.filter(e => null != e && Z.Z.isMobileOnline(e)).length
         };
-      this.hasReportedAnalytics = true, m.ZP.trackWithMetadata(A.rMx.DM_LIST_VIEWED, k(L({}, u, (0, _.X)()), {
+      this.hasReportedAnalytics = true, m.ZP.trackWithMetadata(A.rMx.DM_LIST_VIEWED, k(M({}, u, (0, _.X)()), {
         visible_user_ids: s.filter(e => null != e),
         changelog_dm_visible: c
       }))
-    }), M(this, "getSectionHeight", e => {
+    }), L(this, "getSectionHeight", e => {
       let {
         showDMHeader: t
       } = this.props;
       return 0 === e ? 0 : 24 * !!t
-    }), M(this, "handleScroll", a()(() => {
+    }), L(this, "handleScroll", a()(() => {
       if (null != this._list) {
         let e = this._list.getScrollerNode();
         null != e && h.Z.updateChannelListScroll(A.ME, e.scrollTop)
       }
       true !== this.props.onHandleScroll && this.props.onHandleScroll()
-    }, 100)), M(this, "renderDM", (e, t) => {
+    }, 100)), L(this, "renderDM", (e, t) => {
       let {
         privateChannelIds: n,
         channels: r,
@@ -356,7 +356,7 @@ class U extends(r = Chunk473749.Component) {
         "aria-posinset": a + t + 1,
         "aria-setsize": o
       }, s.id)
-    }), M(this, "renderChild", e => {
+    }), L(this, "renderChild", e => {
       let {
         nonNullChildren: t,
         totalRowCount: n
@@ -365,7 +365,7 @@ class U extends(r = Chunk473749.Component) {
         "aria-setsize": n,
         "aria-posinset": e + 1
       }) : r
-    }), M(this, "renderRow", e => {
+    }), L(this, "renderRow", e => {
       let {
         section: t,
         row: n
@@ -374,7 +374,7 @@ class U extends(r = Chunk473749.Component) {
         hideAllDMs: l
       } = this.props;
       return 0 === t ? this.renderChild(n) : 0 !== n || 0 !== r.length || l ? this.renderDM(t, n) : (0, i.jsx)(G, {}, "no-private-channels")
-    }), M(this, "renderSection", e => {
+    }), L(this, "renderSection", e => {
       let {
         section: t
       } = e, {
@@ -396,7 +396,7 @@ class U extends(r = Chunk473749.Component) {
           subscribeToGlobalHotkey: true
         })]
       }, t) : null
-    }), M(this, "getRowHeight", (e, t) => {
+    }), L(this, "getRowHeight", (e, t) => {
       let {
         privateChannelIds: n,
         density: r
@@ -414,7 +414,7 @@ class U extends(r = Chunk473749.Component) {
     })
   }
 }
-M(U, "defaultProps", {
+L(U, "defaultProps", {
   padding: 8
 });
 let B = e => {
@@ -441,7 +441,7 @@ let B = e => {
   } = (0, u.cj)([p.Z, N.Z], () => ({
     keyboardModeEnabled: p.Z.keyboardModeEnabled,
     version: null != n ? "".concat(n, ":").concat(N.Z.getPrivateChannelsVersion()) : N.Z.getPrivateChannelsVersion()
-  })), R = l.useRef(null), D = null != d ? d : R, M = l.useCallback(e => {
+  })), R = l.useRef(null), D = null != d ? d : R, L = l.useCallback(e => {
     let t = D.current,
       n = document.querySelector(e);
     null != t && null != n && t.scrollIntoViewNode({
@@ -475,13 +475,13 @@ let B = e => {
     scrollToStart: G,
     scrollToEnd: B,
     defaultFocused: (m + +!!a).toString(),
-    setFocus: M
+    setFocus: L
   });
   return (0, i.jsx)(b.Gt, {
     value: C,
     children: (0, i.jsx)(s.bG, {
       navigator: V,
-      children: (0, i.jsx)(U, k(L({}, e), {
+      children: (0, i.jsx)(U, k(M({}, e), {
         density: t,
         channels: y,
         privateChannelIds: O,

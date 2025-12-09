@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => el
@@ -303,7 +303,7 @@ class er extends Chunk98597.ZP {
     }), ee(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, i = L.Z.getGuild(t.getGuildId());
+      } = this.props, i = M.Z.getGuild(t.getGuildId());
       null != i && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -413,8 +413,8 @@ function el(e) {
   } = e, u = (0, a.cj)([U.ZP], () => ({
     unread: U.ZP.hasUnread(n.id),
     mentionCount: U.ZP.getMentionCount(n.id)
-  })), d = (0, a.e7)([B.ZP], () => B.ZP.resolveUnreadSetting(n)), f = (0, a.cj)([M.Z, k.Z, G.Z], () => {
-    let e = M.Z.getChannel(n.parent_id),
+  })), d = (0, a.e7)([B.ZP], () => B.ZP.resolveUnreadSetting(n)), f = (0, a.cj)([L.Z, k.Z, G.Z], () => {
+    let e = L.Z.getChannel(n.parent_id),
       r = k.Z.getCheck(n.guild_id);
     return {
       canManageChannel: G.Z.can(Q.Plq.MANAGE_CHANNELS, n),
@@ -439,7 +439,7 @@ function el(e) {
     guildId: n.guild_id,
     location: "VoiceChannel"
   }), {
-    enableOpenTIVForPing: L
+    enableOpenTIVForPing: M
   } = T.A.useExperiment({
     guildId: n.guild_id,
     location: "VoiceChannel"
@@ -474,7 +474,7 @@ function el(e) {
     resolvedUnreadSetting: d,
     enableHangStatus: R,
     showEmptyChannelTopic: D,
-    enableOpenTIVForPing: L,
+    enableOpenTIVForPing: M,
     hasChannelInfo: null != q,
     hasStartTime: x,
     shouldHighlightChannel: K,

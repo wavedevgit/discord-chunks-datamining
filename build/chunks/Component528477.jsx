@@ -1,7 +1,7 @@
-/** Chunk was on 88282 **/
-/** chunk id: 528477, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 85668 **/
+/** chunk id: 528477, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  n: () => N
+  n: () => k
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,115 +26,115 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk742098 = require("./742098.js"),
   Chunk932889 = require("./932889.js");
-let N = e => {
+let k = t => {
   let {
-    onClose: t
-  } = e, n = (0, u.m)(), {
-    installationStatus: N,
-    perkAvailableToUser: T,
-    isSupportedPrivateBrowsingPerkPlatform: O,
-    isWeb: P,
-    connectionStatus: I
-  } = (0, v.xf)(), {
-    enabled: w
-  } = g.H.useConfig({
+    onClose: e
+  } = t, n = (0, u.m)(), {
+    installationStatus: k,
+    perkAvailableToUser: L,
+    isSupportedPrivateBrowsingPerkPlatform: j,
+    isWeb: A,
+    connectionStatus: S
+  } = (0, p.xf)(), {
+    enabled: R
+  } = I.H.useConfig({
     location: "private_browsing_perk_settings_page"
-  }), k = (0, l.useCallback)(() => {
-    (0, c.Z)(j.Z5c.NITRO_HOME), t()
-  }, [t]), R = (0, l.useCallback)(() => {
-    (0, p.openUserSettings)(m.n.PRIVATE_BROWSING_PANEL, {
-      section: j.oAB.CF_WARP
+  }), M = (0, r.useCallback)(() => {
+    (0, o.Z)(g.Z5c.NITRO_HOME), e()
+  }, [e]), D = (0, r.useCallback)(() => {
+    (0, x.openUserSettings)(_.n.PRIVATE_BROWSING_PANEL, {
+      section: g.oAB.CF_WARP
     })
-  }, []), A = [f.Ij.CONNECTED].includes(I), Z = O && w && ![f._n.ZERO_TRUST, f._n.ERROR].includes(N) && !P && (!n || T), D = (0, l.useMemo)(() => {
-    switch (I) {
+  }, []), O = [f.Ij.CONNECTED].includes(S), K = j && R && ![f._n.ZERO_TRUST, f._n.ERROR].includes(k) && !A && (!n || L), P = (0, r.useMemo)(() => {
+    switch (S) {
       case f.Ij.CONNECTED:
-        return C.intl.string(y.default.FBu3XJ);
+        return T.intl.string(E.default.FBu3XJ);
       case f.Ij.INITIALIZING:
-        return C.intl.string(y.default["00vkCU"]);
+        return T.intl.string(E.default["00vkCU"]);
       default:
-        return C.intl.string(y.default["A70/wR"])
+        return T.intl.string(E.default["A70/wR"])
     }
-  }, [I]), L = (0, l.useMemo)(() => {
-    if (!T) return C.intl.string(y.default.KN6HOb);
-    switch (N) {
+  }, [S]), B = (0, r.useMemo)(() => {
+    if (!L) return T.intl.string(E.default.KN6HOb);
+    switch (k) {
       case f._n.INSTALLED:
       case f._n.EXISTING_INSTALLATION:
-        return D;
+        return P;
       default:
-        return C.intl.string(y.default.KN6HOb)
+        return T.intl.string(E.default.KN6HOb)
     }
-  }, [N, T, D]), M = (0, l.useMemo)(() => {
-    if (!T) return (0, a.jsx)(r.xvT, {
+  }, [k, L, P]), w = (0, r.useMemo)(() => {
+    if (!L) return (0, a.jsx)(i.xvT, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: C.intl.format(y.default["0UfKTY"], {
-        helpdeskArticle: x.w
+      children: T.intl.format(E.default["0UfKTY"], {
+        helpdeskArticle: C.w
       })
     });
-    switch (N) {
+    switch (k) {
       case f._n.INSTALLED:
       case f._n.EXISTING_INSTALLATION:
-        return (0, a.jsx)(r.xvT, {
+        return (0, a.jsx)(i.xvT, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: A ? C.intl.format(y.default.zwW10o, {
+          children: O ? T.intl.format(E.default.zwW10o, {
             onClick: () => {
-              (0, i.j)(j.rMx.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), k()
+              (0, s.j)(g.rMx.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), M()
             }
-          }) : C.intl.format(y.default.D4hu0v, {
+          }) : T.intl.format(E.default.D4hu0v, {
             onClick: () => {
-              (0, i.j)(j.rMx.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), R()
+              (0, s.j)(g.rMx.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), D()
             }
           })
         });
       default:
-        return (0, a.jsx)(r.xvT, {
+        return (0, a.jsx)(i.xvT, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: C.intl.format(y.default.D4hu0v, {
+          children: T.intl.format(E.default.D4hu0v, {
             onClick: () => {
-              (0, i.j)(j.rMx.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), R()
+              (0, s.j)(g.rMx.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), D()
             }
           })
         })
     }
-  }, [N, T, A, R, k]), {
+  }, [k, L, O, D, M]), {
     analyticsLocations: U
-  } = (0, o.ZP)(s.Z.MASKED_LINK);
-  return ((0, l.useEffect)(() => {
-    Z && h.default.track(j.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: _.cd.PRIVACY_PERK_EXIT_MODAL,
+  } = (0, c.ZP)(l.Z.MASKED_LINK);
+  return ((0, r.useEffect)(() => {
+    K && m.default.track(g.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: N.cd.PRIVACY_PERK_EXIT_MODAL,
       location_stack: U
     })
-  }, [U, Z]), Z) ? (0, a.jsxs)("div", {
-    className: S.container,
-    children: [(0, a.jsx)(b.v, {
-      className: S.betaBadge
+  }, [U, K]), K) ? (0, a.jsxs)("div", {
+    className: b.container,
+    children: [(0, a.jsx)(h.v, {
+      className: b.betaBadge
     }), (0, a.jsxs)("div", {
-      className: S.contentContainer,
-      children: [T && (0, a.jsx)(r.$1m, {
-        className: S.imageWrapper,
+      className: b.contentContainer,
+      children: [L && (0, a.jsx)(i.$1m, {
+        className: b.imageWrapper,
         offsetBottom: false,
         color: "nitro-pink",
         children: (0, a.jsx)("div", {
-          className: S.imageContainer,
+          className: b.imageContainer,
           children: (0, a.jsx)("img", {
-            src: E,
-            className: S.graphicContainer,
+            src: v,
+            className: b.graphicContainer,
             alt: "Private Browsing Perk"
           })
         })
       }), (0, a.jsxs)("div", {
-        className: S.details,
-        children: [(0, a.jsx)(r.X6q, {
+        className: b.details,
+        children: [(0, a.jsx)(i.X6q, {
           variant: "heading-md/semibold",
-          children: L
-        }), M]
-      }), !T && (0, a.jsx)("div", {
-        className: S.ctaContainer,
+          children: B
+        }), w]
+      }), !L && (0, a.jsx)("div", {
+        className: b.ctaContainer,
         children: (0, a.jsx)(d.Z, {
-          buttonTextOverride: C.intl.string(C.t["8x0jKT"]),
-          subscriptionTier: _.Si.TIER_2,
+          buttonTextOverride: T.intl.string(T.t["8x0jKT"]),
+          subscriptionTier: N.Si.TIER_2,
           size: "sm"
         })
       })]

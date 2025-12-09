@@ -28,27 +28,27 @@ let m = {
     x: 0,
     y: 0
   },
-  y = false;
+  _ = false;
 
-function b(e) {
+function y(e) {
   let {
     clientX: t,
     clientY: n
   } = e;
-  y = true, m.x = t, m.y = n
+  _ = true, m.x = t, m.y = n
 }
-let _ = new Map;
+let v = new Map;
 
-function v(e, t) {
-  if (null == t) _.delete(e), 0 === _.size && (window.removeEventListener("mousemove", b), y = false);
+function b(e, t) {
+  if (null == t) v.delete(e), 0 === v.size && (window.removeEventListener("mousemove", y), _ = false);
   else {
-    let n = _.get(e);
+    let n = v.get(e);
     if (null != n && (0, a.Z)(n.zone, t.zone)) return;
-    0 === _.size && window.addEventListener("mousemove", b), _.set(e, t)
+    0 === v.size && window.addEventListener("mousemove", y), v.set(e, t)
   }
   if (f.isPlatformEmbedded)
     if (u.default.isCurrentPidOutOfProcess()) {
-      let e = Array.from(_.values()).map(e => {
+      let e = Array.from(v.values()).map(e => {
         let {
           zone: t
         } = e;
@@ -67,15 +67,15 @@ function v(e, t) {
       if (null == e) return;
       e.broadcastCommand({
         message: "set_click_zones",
-        zones: Array.from(_.values()).map(e => {
+        zones: Array.from(v.values()).map(e => {
           let {
             zone: t
           } = e;
           return t
         })
       }), n = e, O || (n.setClickZoneCallback((e, t, n) => {
-        let i = _.get(e);
-        null != i && (y || (m.x = t, m.y = n), i.instance.click())
+        let i = v.get(e);
+        null != i && (_ || (m.x = t, m.y = n), i.instance.click())
       }), O = true)
     }
 }
@@ -85,7 +85,7 @@ class E extends(i = Chunk473749.PureComponent) {
     this.props.observe ? this.observeZone() : this.updateZone()
   }
   componentWillUnmount() {
-    this.interval.stop(), v(this.zone, null)
+    this.interval.stop(), b(this.zone, null)
   }
   componentDidUpdate(e) {
     let {
@@ -113,7 +113,7 @@ class E extends(i = Chunk473749.PureComponent) {
           right: i,
           bottom: r
         } = e.getBoundingClientRect();
-        v(this.zone, {
+        b(this.zone, {
           instance: this,
           zone: {
             name: this.zone,

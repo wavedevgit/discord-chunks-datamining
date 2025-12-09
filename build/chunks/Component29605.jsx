@@ -106,15 +106,15 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
       }
     }), d ? "respect-motion-settings" : "animate-never"), C = L.ZP.useUserTag(s.user);
     return (0, r.jsxs)("div", {
-      className: a()(z.emojiRow, W.card),
+      className: a()(W.emojiRow, z.card),
       role: "row",
       children: [(0, r.jsx)("div", {
-        className: z.emojiColumn,
+        className: W.emojiColumn,
         children: (0, r.jsx)(p.u, {
           text: s.available ? null : H.intl.string(H.t.KUzI73),
           children: (0, r.jsx)(u.animated.div, {
-            className: a()(z.emojiImage, {
-              [z.emojiDisabled]: !s.available
+            className: a()(W.emojiImage, {
+              [W.emojiDisabled]: !s.available
             }),
             style: (t = V({}, d ? _ : {}, d ? v : {}), n = n = {
               backgroundImage: "url(".concat(j, ")")
@@ -131,12 +131,12 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
           })
         })
       }), (0, r.jsx)("div", {
-        className: z.column,
+        className: W.column,
         children: (0, r.jsx)("div", {
-          className: z.emojiAliasInputContainer,
+          className: W.emojiAliasInputContainer,
           children: (0, r.jsx)(x.Z, {
             className: a()({
-              [z.emojiAliasInputDisabled]: c
+              [W.emojiAliasInputDisabled]: c
             }),
             disabled: c,
             minLen: 1,
@@ -159,7 +159,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
           })
         })
       }), (0, r.jsx)("div", {
-        className: z.column,
+        className: W.column,
         children: (0, r.jsx)(O.Z, {
           avatar: (0, r.jsx)(f.qEK, {
             src: s.user.getAvatarURL(l, 20),
@@ -172,7 +172,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
           })
         })
       }), !c && (0, r.jsxs)("div", {
-        className: z.emojiRowTools,
+        className: W.emojiRowTools,
         children: [null == o ? null : (0, r.jsx)(p.u, {
           text: H.intl.string(H.t.FOYn8U),
           "aria-label": H.intl.string(H.t.FOYn8U),
@@ -218,11 +218,11 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
       newlyAddedEmojiIds: c
     } = e;
     return t ? (0, r.jsx)(f.$jN, {
-      className: z.spinner,
+      className: W.spinner,
       type: f.$jN.Type.SPINNING_CIRCLE
     }) : 0 === i.length && 0 === l.length ? (0, r.jsxs)(f.ubH, {
       theme: a,
-      className: z.empty,
+      className: W.empty,
       children: [(0, r.jsx)(f.oxh, {
         darkSrc: n(458601),
         lightSrc: n(673557),
@@ -289,38 +289,38 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
     }) : (0, r.jsxs)("div", {
       role: "table",
       "aria-label": H.intl.string(H.t.sMOuuS),
-      className: z.table,
+      className: W.table,
       children: [(0, r.jsxs)("div", {
         role: "rowgroup",
-        className: z.tableHeader,
+        className: W.tableHeader,
         children: [(0, r.jsx)("div", {
           role: "columnheader",
-          className: z.emojiColumn,
+          className: W.emojiColumn,
           children: (0, r.jsx)(f.Text, {
             variant: "text-sm/semibold",
             children: H.intl.string(H.t.Z0i3Gp)
           })
         }), (0, r.jsx)("div", {
           role: "columnheader",
-          className: z.columnLabel,
+          className: W.columnLabel,
           children: (0, r.jsx)(f.Text, {
             variant: "text-sm/semibold",
             children: H.intl.string(H.t.giajw6)
           })
         }), (0, r.jsx)("div", {
           role: "columnheader",
-          className: z.columnLabel,
+          className: W.columnLabel,
           children: (0, r.jsx)(f.Text, {
             variant: "text-sm/semibold",
             children: H.intl.string(H.t.edavpq)
           })
         }), !a && (0, r.jsx)("div", {
           role: "none",
-          className: z.toolsLabel
+          className: W.toolsLabel
         })]
       }), (0, r.jsx)("div", {
         role: "rowgroup",
-        className: z.tableBody,
+        className: W.tableBody,
         children: o.map(e => {
           var t;
           return (0, r.jsx)(Y, {
@@ -414,7 +414,7 @@ let K = d().throttle(Chunk80932.OQ, 1e3),
         maxEmojiSlots: A,
         availableEmojiSlots: L,
         staticEmoji: F,
-        totalStaticEmoji: W,
+        totalStaticEmoji: z,
         animatedEmoji: Y,
         totalAnimatedEmoji: X
       } = (0, Chunk719403.t)({

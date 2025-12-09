@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 304745, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => P
@@ -39,36 +39,36 @@ function P(e) {
     setIsHovered: M,
     onMouseEnter: R,
     onMouseLeave: L
-  } = (0, _.Z)(200, 300), D = (0, d.p)({
+  } = (0, v.Z)(200, 300), D = (0, d.p)({
     surface: c.eR.VOICE_LAUNCHER
   }), k = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), U = !A, V = r.useCallback(e => {
     "focus" !== e.type && R()
-  }, [R]), H = (0, v.bp)() === E.IlC.POPOUT, {
+  }, [R]), B = (0, _.bp)() === E.IlC.POPOUT, {
     parentAnalyticsLocation: F,
-    newestAnalyticsLocation: B
+    newestAnalyticsLocation: H
   } = (0, g.ZP)(), G = r.useCallback(() => {
-    (0, y.v)(F, y.d.ACTIVITY), (0, b.Z)({
+    (0, C.v)(F, C.d.ACTIVITY), (0, b.Z)({
       context: null != t ? {
         type: "channel",
         channel: t
       } : {
         type: "contextless"
       },
-      openInPopout: H,
-      analyticsLocation: B
+      openInPopout: B,
+      analyticsLocation: H
     })
-  }, [t, H, B, F]), z = [];
-  A || z.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !A && z.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), A || z.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
-  let W = r.useRef(false),
+  }, [t, B, H, F]), W = [];
+  A || W.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !A && W.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), A || W.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
+  let z = r.useRef(false),
     q = r.useRef(null);
-  return (0, i.jsx)(C.ZP, {
-    contentTypes: z,
+  return (0, i.jsx)(y.ZP, {
+    contentTypes: W,
     children: e => {
       let {
         visibleContent: r,
         markAsDismissed: l
       } = e, c = r === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !w;
-      return W.current && !c && l(j.L.AUTO_DISMISS), W.current !== c && (W.current = c), (0, i.jsx)(s.yRy, {
+      return z.current && !c && l(j.L.AUTO_DISMISS), z.current !== c && (z.current = c), (0, i.jsx)(s.yRy, {
         targetElementRef: q,
         fixed: true,
         shouldShow: w && (P === x.D.ACTIVITY || null == P),
@@ -97,7 +97,7 @@ function P(e) {
             onClick: () => l(j.L.UNKNOWN)
           }) : (0, i.jsx)(i.Fragment, {})
         },
-        children: () => (0, i.jsx)(C.Xf, {
+        children: () => (0, i.jsx)(y.Xf, {
           contentType: a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE,
           latestVersion: D,
           children: e => {

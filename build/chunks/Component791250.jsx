@@ -71,7 +71,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk225753 = require("./225753.js"),
   Chunk443226 = require("./443226.js");
 
-function eg(e) {
+function eh(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -125,14 +125,14 @@ let eb = e => {
     let i = (0, w.b5)("PrivateChannels.ICYMIButton"),
       l = (0, u.JA)("icymi");
     return i ? (0, r.jsx)("div", {
-      className: eh.friendsButtonContainer,
-      children: (0, r.jsx)(y.Qj, eg({
+      className: eg.friendsButtonContainer,
+      children: (0, r.jsx)(y.Qj, eh({
         selected: t,
         route: eo.Z5c.ICYMI,
         icon: E.qOE,
         text: (0, r.jsxs)(r.Fragment, {
           children: [ep.intl.string(ep.t["jnXV/V"]), (0, r.jsx)("span", {
-            className: eh.preAlphaText,
+            className: eg.preAlphaText,
             children: ep.intl.string(ep.t.Ac2OZA)
           })]
         })
@@ -152,10 +152,10 @@ let eb = e => {
       } = B.w.useConfig({
         location: "Friends Tab"
       }),
-      [h, m] = (0, x.bf)(s && d ? f.z.GIFTING_INTENT_FRIENDS_TAB_BADGE : null, {
+      [g, m] = (0, x.bf)(s && d ? f.z.GIFTING_INTENT_FRIENDS_TAB_BADGE : null, {
         cooldownDurationMs: H.n3
       }),
-      _ = h === f.z.GIFTING_INTENT_FRIENDS_TAB_BADGE;
+      _ = g === f.z.GIFTING_INTENT_FRIENDS_TAB_BADGE;
     i.useEffect(() => {
       _ && (0, N.h)({
         name: c.ImpressionNames.GIFT_INTENT_BADGE,
@@ -180,9 +180,9 @@ let eb = e => {
       P = () => {
         C(true)
       },
-      A = () => (0, r.jsx)(y.Qj, em(eg({
+      A = () => (0, r.jsx)(y.Qj, em(eh({
         onClick: O,
-        interactiveClassName: _ ? eh.friendsBadge : true,
+        interactiveClassName: _ ? eg.friendsBadge : true,
         selected: t,
         route: eo.Z5c.FRIENDS,
         icon: E.iFz,
@@ -195,19 +195,19 @@ let eb = e => {
         }) : null
       }));
     return (0, r.jsx)("div", {
-      className: eh.friendsButtonContainer,
+      className: eg.friendsButtonContainer,
       children: _ ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(b.i_, {
           title: ep.intl.string(ep.t.Thb5MO),
           body: ep.intl.string(ep.t.kGvgwS),
           position: "left",
-          asset: (0, r.jsx)(g._N, {
+          asset: (0, r.jsx)(h._N, {
             size: 32,
             alt: ep.intl.string(ep.t["4LohBA"])
           }),
           children: A()
         }), !o && (0, r.jsx)(q.Z, {
-          className: eh.confetti,
+          className: eg.confetti,
           wind: 0,
           sprites: ec.CA,
           spriteColors: ec.Br,
@@ -235,8 +235,8 @@ let eb = e => {
     } = e, n = e_(e, ["selected"]);
     let i = (0, u.JA)("activity");
     return (0, r.jsx)("div", {
-      className: eh.friendsButtonContainer,
-      children: (0, r.jsx)(y.Qj, eg({
+      className: eg.friendsButtonContainer,
+      children: (0, r.jsx)(y.Qj, eh({
         selected: t,
         route: eo.Z5c.ME_ACTIVITY,
         icon: E.g8d,
@@ -250,15 +250,15 @@ let eb = e => {
       hideGameUpdateProgressIndicator: n
     } = e, i = e_(e, ["selected", "hideGameUpdateProgressIndicator"]);
     let l = (0, u.JA)("library");
-    return (0, r.jsx)(y.Qj, em(eg({
+    return (0, r.jsx)(y.Qj, em(eh({
       selected: t,
       route: eo.Z5c.APPLICATION_LIBRARY,
       icon: E.vqy,
       text: ep.intl.string(ep.t.cw57ar)
     }, i, l), {
       children: (0, r.jsx)(C.Z, {
-        className: a()(eh.downloadProgressCircle, {
-          [eh.hideGameUpdateProgressIndicator]: n
+        className: a()(eg.downloadProgressCircle, {
+          [eg.hideGameUpdateProgressIndicator]: n
         })
       })
     }))
@@ -277,7 +277,7 @@ let eb = e => {
     } = (0, L._)();
     if (!(0, D.a)()) return null;
     let l = null == i ? true : () => O.Z.preload(eo.ME, i);
-    return (0, r.jsx)(y.Qj, em(eg({
+    return (0, r.jsx)(y.Qj, em(eh({
       selected: t,
       route: eo.Z5c.MESSAGE_REQUESTS,
       icon: E._XJ,
@@ -291,7 +291,7 @@ let eb = e => {
     let {
       selected: t
     } = e, n = ep.intl.string(ef.default.Rkdixs), l = (0, u.JA)("family-center"), [a, s] = i.useState(true);
-    return (0, r.jsx)(y.Qj, em(eg({
+    return (0, r.jsx)(y.Qj, em(eh({
       selected: t,
       route: eo.Z5c.FAMILY_CENTER,
       icon: E.BFJ,
@@ -302,7 +302,7 @@ let eb = e => {
       onMouseLeave: () => {
         s(false)
       },
-      interactiveClassName: eh.familyCenterLinkButton
+      interactiveClassName: eg.familyCenterLinkButton
     }, l), {
       children: (0, r.jsx)(eS, {
         isParentHovered: a
@@ -314,26 +314,26 @@ let eb = e => {
       isParentHovered: t
     } = e, i = (0, k.gU)();
     return t ? (0, r.jsx)("div", {
-      className: eh.familyCenterButtonContainer,
+      className: eg.familyCenterButtonContainer,
       children: (0, r.jsx)(y.bU, {
         onClick: () => {
           (0, m.openModalLazy)(async () => {
             let {
               default: e
             } = await n.e("44153").then(n.bind(n, 760949));
-            return t => (0, r.jsx)(e, eg({}, t))
+            return t => (0, r.jsx)(e, eh({}, t))
           })
         },
         "aria-label": ep.intl.string(ep.t.cpT0Cq),
         icon: E.Dio
       })
     }) : i > 0 ? (0, r.jsx)("div", {
-      className: a()(eh.familyCenterButtonContainer, eh.withPadding),
+      className: a()(eg.familyCenterButtonContainer, eg.withPadding),
       children: (0, r.jsx)(E.mAB, {
         count: i
       })
     }) : (0, r.jsx)("div", {
-      className: eh.familyCenterButtonContainer,
+      className: eg.familyCenterButtonContainer,
       children: (0, r.jsx)(x.ZP, {
         contentTypes: [f.z.FAMILY_CENTER_NEW_BADGE],
         children: e => {
@@ -342,7 +342,7 @@ let eb = e => {
           } = e;
           return t === f.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(E.IGR, {
             text: ep.intl.string(ep.t.y2b7CA),
-            color: h.Z.colors.BG_BRAND.css
+            color: g.Z.colors.BG_BRAND.css
           }) : null
         }
       })
@@ -385,8 +385,8 @@ let eP = Chunk473749.memo(function(e) {
     showRecurring3PPopover: u,
     shouldShowMessageRequestsRow: p,
     shouldShowFamilyCenterRow: f,
-    selectedChannelId: h,
-    path: g,
+    selectedChannelId: g,
+    path: h,
     onlyShowDMs: m,
     hideAllDMs: b
   } = e, O = i.useRef(null), v = i.useRef(null), y = i.useRef(null), C = i.useRef(null), S = U.o.useConfig({
@@ -397,7 +397,7 @@ let eP = Chunk473749.memo(function(e) {
   }) : u && (N = (0, r.jsx)(V.d, {
     targetElementRef: C
   })), (0, r.jsxs)("nav", {
-    className: eh.privateChannels,
+    className: eg.privateChannels,
     "aria-label": ep.intl.string(ep.t.ZH9aP4),
     children: [m ? (0, r.jsx)(eT, {}) : (0, r.jsx)(X.Z, {
       childRef: O,
@@ -406,8 +406,8 @@ let eP = Chunk473749.memo(function(e) {
       offsetX: false,
       children: (0, r.jsx)("div", {
         ref: O,
-        className: a()(eh.searchBar, {
-          [eh.themedHeaderMobile]: d.tq
+        className: a()(eg.searchBar, {
+          [eg.themedHeaderMobile]: d.tq
         }),
         children: (0, r.jsx)(E.Button, {
           fullWidth: true,
@@ -421,27 +421,27 @@ let eP = Chunk473749.memo(function(e) {
           })
         })
       })
-    }), (0, r.jsxs)(I.Z, em(eg({}, e), {
-      version: g,
-      selectedChannelId: h,
+    }), (0, r.jsxs)(I.Z, em(eh({}, e), {
+      version: h,
+      selectedChannelId: g,
       showDMHeader: !b && !m,
       hideAllDMs: b,
       listScrollerRef: y,
       children: [S && !m ? (0, r.jsx)(eO, {
-        selected: null != g ? g === eo.Z5c.ME_ACTIVITY : l === eo.Z5c.ME_ACTIVITY
+        selected: null != h ? h === eo.Z5c.ME_ACTIVITY : l === eo.Z5c.ME_ACTIVITY
       }, "activity_experimental") : null, m ? null : (0, r.jsx)(eE, {
-        selected: null != g ? g === eo.Z5c.FRIENDS : l === eo.Z5c.FRIENDS
+        selected: null != h ? h === eo.Z5c.FRIENDS : l === eo.Z5c.FRIENDS
       }, "friends"), !m && T ? (0, r.jsx)(eb, {
-        selected: null != g ? g === eo.Z5c.ICYMI : l === eo.Z5c.ICYMI
+        selected: null != h ? h === eo.Z5c.ICYMI : l === eo.Z5c.ICYMI
       }, "icymi") : null, n && t && !m ? (0, r.jsx)(ev, {
-        selected: null == g ? null != l && l.startsWith(eo.Z5c.APPLICATION_LIBRARY) : g.startsWith(eo.Z5c.APPLICATION_LIBRARY),
+        selected: null == h ? null != l && l.startsWith(eo.Z5c.APPLICATION_LIBRARY) : h.startsWith(eo.Z5c.APPLICATION_LIBRARY),
         hideGameUpdateProgressIndicator: l === eo.Z5c.APPLICATION_LIBRARY
       }, "library") : null, p && !m ? (0, r.jsx)(eI, {
-        selected: null == g ? null != l && l.startsWith(eo.Z5c.MESSAGE_REQUESTS) : g === eo.Z5c.MESSAGE_REQUESTS
+        selected: null == h ? null != l && l.startsWith(eo.Z5c.MESSAGE_REQUESTS) : h === eo.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, o && !m ? (0, r.jsxs)("div", {
         children: [(0, r.jsx)(W.g, {
           nitroTabButtonRef: C,
-          selected: null == g ? s : g.startsWith(eo.Z5c.APPLICATION_STORE),
+          selected: null == h ? s : h.startsWith(eo.Z5c.APPLICATION_STORE),
           route: eo.Z5c.APPLICATION_STORE,
           locationState: {
             analyticsSource: {
@@ -452,7 +452,7 @@ let eP = Chunk473749.memo(function(e) {
           }
         }), N]
       }, "nitro-tab-group") : null, m ? null : (0, r.jsx)(j.i, {
-        selected: g === eo.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(eo.Z5c.COLLECTIBLES_SHOP)),
+        selected: h === eo.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(eo.Z5c.COLLECTIBLES_SHOP)),
         listItemRef: v,
         locationState: {
           analyticsSource: {
@@ -462,9 +462,9 @@ let eP = Chunk473749.memo(function(e) {
           }
         }
       }, "discord-shop"), f && !m ? (0, r.jsx)(eC, {
-        selected: null != l && l.startsWith(eo.Z5c.FAMILY_CENTER) || null != g && g.startsWith(eo.Z5c.FAMILY_CENTER)
+        selected: null != l && l.startsWith(eo.Z5c.FAMILY_CENTER) || null != h && h.startsWith(eo.Z5c.FAMILY_CENTER)
       }, "family-center") : null, m ? null : (0, r.jsx)(K.Z, {
-        selected: null == g ? null != l && l.startsWith(eo.Z5c.QUEST_HOME_V2) : g === eo.Z5c.QUEST_HOME_V2
+        selected: null == h ? null != l && l.startsWith(eo.Z5c.QUEST_HOME_V2) : h === eo.Z5c.QUEST_HOME_V2
       }, "quests"), m || b ? null : (0, r.jsx)(ex, {}, "section-divider-top"), b ? null : (0, r.jsx)(A.Z, {}, "frequent-friends")]
     }))]
   })
@@ -505,8 +505,8 @@ function eA() {
     d = (0, Chunk457396.i)({
       selected: null == Chunk91192 ? exports : Chunk91192.startsWith(Chunk981631.Z5c.APPLICATION_STORE)
     }),
-    h = (0, Chunk93237.eW)(),
-    g = (0, Chunk675957._h)(),
+    g = (0, Chunk93237.eW)(),
+    h = (0, Chunk675957._h)(),
     m = [];
   (0, Chunk211644.Kl)() && (Chunk692547 && Chunk952265.push(Chunk704215.z.REFERRAL_PROGRAM_POPOVER), Chunk970683 && Chunk952265.push(Chunk704215.z.RECURRING_3P_PROMOTION_POPOVER));
   let [_, b] = (0, Chunk243778.US)(Chunk952265, true, true), E = (0, Chunk28476.a)(), O = function() {

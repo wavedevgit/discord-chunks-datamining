@@ -98,7 +98,7 @@ function j(e) {
     onQuestCtaClick: n
   } = e, l = (0, s.TH)(), j = (0, s.k6)(), {
     enabled: P
-  } = (0, h.WX)({
+  } = (0, g.WX)({
     location: O.dr.QUEST_HOME_DESKTOP
   }), x = (0, p.ZP)(), [A, Z] = i.useState("display-lg"), w = i.useCallback(e => {
     e.contentRect.width < 500 ? Z("display-md") : Z("display-lg")
@@ -106,7 +106,7 @@ function j(e) {
     fireOnMount: true
   }), R = (0, c.e7)([_.Z], () => _.Z.quests);
   return i.useEffect(() => {
-    g.default.track(v.rMx.QUEST_CONTENT_VIEWED, T(S({}, (0, m.mH)(b.jn.QUEST_HOME_TAKEOVER)), {
+    h.default.track(v.rMx.QUEST_CONTENT_VIEWED, T(S({}, (0, m.mH)(b.jn.QUEST_HOME_TAKEOVER)), {
       quest_id: t.campaignId,
       is_targeted: false
     }))
@@ -155,7 +155,7 @@ function j(e) {
           }), (0, r.jsxs)(u.ButtonGroup, {
             children: [(0, r.jsx)(u.Button, {
               onClick: () => {
-                (0, f.Z)(t.ctaSponsorUrl.url), g.default.track(v.rMx.QUEST_CONTENT_CLICKED, S({
+                (0, f.Z)(t.ctaSponsorUrl.url), h.default.track(v.rMx.QUEST_CONTENT_CLICKED, S({
                   quest_id: t.campaignId,
                   cta_name: m.jZ.OPEN_GAME_LINK,
                   click_id: (0, o.Z)(),
@@ -173,7 +173,7 @@ function j(e) {
                   (0, E.navigateToQuestHome)({
                     questId: e.questId
                   })
-                }), g.default.track(v.rMx.QUEST_CONTENT_CLICKED, S({
+                }), h.default.track(v.rMx.QUEST_CONTENT_CLICKED, S({
                   quest_id: t.campaignId,
                   cta_name: m.jZ.LEARN_MORE,
                   click_id: (0, o.Z)(),

@@ -36,7 +36,7 @@ function j(e) {
   var t;
   let {
     guild: n
-  } = e, [p, h] = i.useState(null != (t = s.K.get(C.Iv)) ? t : 0), g = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
+  } = e, [p, g] = i.useState(null != (t = s.K.get(C.Iv)) ? t : 0), h = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
     let {
       dismissibleContentType: t,
       store: r
@@ -44,7 +44,7 @@ function j(e) {
     returntrue === (null == r ? true : r.channelNoticePredicate(n, p)) && !T.has(t)
   }).map(e => e.dismissibleContentType), [n, p]);
   return (0, r.jsx)(c.ZP, {
-    contentTypes: g,
+    contentTypes: h,
     groupName: S.R.CHANNEL_NOTICES,
     children: e => {
       let {
@@ -52,7 +52,7 @@ function j(e) {
         markAsDismissed: i
       } = e, l = () => {
         var e;
-        e = Date.now(), s.K.set(C.Iv, e), h(e), i(S.L.UNKNOWN)
+        e = Date.now(), s.K.set(C.Iv, e), g(e), i(S.L.UNKNOWN)
       }, c = (() => {
         switch (t) {
           case a.z.CHANNEL_NOTICE_HUBLINK:
@@ -118,7 +118,7 @@ let P = e => {
         guild: t
       });
     case I.R.COMMANDS_MIGRATION:
-      return (0, r.jsx)(g.Z, {
+      return (0, r.jsx)(h.Z, {
         guild: t
       });
     case I.R.APPLICATION_SUBSCRIPTION_EXPIRATION:
@@ -126,7 +126,7 @@ let P = e => {
         guild: t
       });
     case I.R.HUB_STUDY_ROOM:
-      return (0, r.jsx)(h.Z, {
+      return (0, r.jsx)(g.Z, {
         guild: t
       })
   }

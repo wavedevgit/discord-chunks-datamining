@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 427347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -26,7 +26,7 @@ function v(e) {
     dismissibleContent: t
   } = e, n = p.Z.useIsEligible(), m = (0, s.Nj)(t), {
     analyticsLocations: v
-  } = (0, i.ZP)(r.Z.HOLIDAY_COACHMARK), j = e => {
+  } = (0, l.ZP)(i.Z.HOLIDAY_COACHMARK), j = e => {
     (0, s.Q3)(t, {
       dismissAction: e
     })
@@ -53,16 +53,16 @@ function v(e) {
       }), (0, a.jsxs)("div", {
         className: b.content,
         children: [(0, a.jsxs)("div", {
-          children: [(0, a.jsx)(l.Heading, {
+          children: [(0, a.jsx)(r.Heading, {
             variant: "heading-md/bold",
             color: true,
             className: b.specialText,
             children: g.intl.string(g.t.zUhr3D)
-          }), (0, a.jsx)(l.Text, {
+          }), (0, a.jsx)(r.Text, {
             variant: "text-xs/normal",
             color: "always-white",
             children: g.intl.format(g.t.Xw2XUT, {
-              settingsHook: (e, t) => (0, a.jsx)(l.P3F, {
+              settingsHook: (e, t) => (0, a.jsx)(r.P3F, {
                 tag: "span",
                 className: b.specialTextLink,
                 onClick: _,
@@ -70,10 +70,10 @@ function v(e) {
               }, t)
             })
           })]
-        }), (0, a.jsx)(l.P3F, {
+        }), (0, a.jsx)(r.P3F, {
           className: b.closeClickable,
           onClick: () => j(f.L.USER_DISMISS),
-          children: (0, a.jsx)(l.Dio, {
+          children: (0, a.jsx)(r.Dio, {
             color: "currentColor",
             size: "xs"
           })

@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 862679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -22,15 +22,15 @@ let d = function(e) {
     onButtonClick: m,
     imageSrc: g,
     animationSrc: b,
-    secondaryButtonText: y,
-    onSecondaryButtonClick: C,
-    children: v,
-    useReducedMotion: _ = false,
+    secondaryButtonText: C,
+    onSecondaryButtonClick: y,
+    children: _,
+    useReducedMotion: v = false,
     buttonVariant: O
   } = e, x = (0, a.e7)([c.ZP], () => c.ZP.getState().isMembersOpen);
   if (l.tq && x) return null;
   if (null == t) return (0, i.jsx)(i.Fragment, {
-    children: r.Children.only(v)
+    children: r.Children.only(_)
   });
   let E = null;
   return null != g ? E = (0, i.jsx)("img", {
@@ -39,7 +39,7 @@ let d = function(e) {
     className: u.image
   }) : null != b && (E = (0, i.jsx)(o.Fmz, {
     importData: b,
-    shouldAnimate: !_,
+    shouldAnimate: !v,
     className: u.animation
   })), (0, i.jsxs)("div", {
     className: u.wrapper,
@@ -59,12 +59,12 @@ let d = function(e) {
       })]
     }), (0, i.jsxs)("div", {
       className: u.buttonContainer,
-      children: [null != y && (0, i.jsx)("div", {
+      children: [null != C && (0, i.jsx)("div", {
         className: u.button,
         children: (0, i.jsx)(o.Avr, {
           textVariant: "text-sm/semibold",
-          text: y,
-          onClick: C
+          text: C,
+          onClick: y
         })
       }), null != p && (0, i.jsx)("div", {
         className: u.button,

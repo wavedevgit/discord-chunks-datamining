@@ -22,8 +22,8 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = Chunk998502.ZP.requireModule("discord_rpc").RPCIPC,
-  g = new Chunk710845.Z("RPCServer:IPC"),
+let g = Chunk998502.ZP.requireModule("discord_rpc").RPCIPC,
+  h = new Chunk710845.Z("RPCServer:IPC"),
   m = {
     HANDSHAKE: 0,
     FRAME: 1,
@@ -42,7 +42,7 @@ function b(e) {
 
 function E(e) {
   return new Promise((t, n) => {
-    "string" == typeof e && (e = h.net.createConnection(e));
+    "string" == typeof e && (e = g.net.createConnection(e));
     let r = new v(e, "json");
     e.on("data", t => {
       try {
@@ -87,7 +87,7 @@ class v extends Chunk76238.Z {
     return e.copy(i, 0, t, n), i
   }
   send(e) {
-    g.info("Socket Emit: ".concat(this.id), (0, c.Z)(e)), this.socket.write(O(m.FRAME, e))
+    h.info("Socket Emit: ".concat(this.id), (0, c.Z)(e)), this.socket.write(O(m.FRAME, e))
   }
   close(e, t) {
     this.socket.end(O(m.CLOSE, {
@@ -158,18 +158,18 @@ class y extends Chunk836560.EventEmitter {
       try {
         t.read(r.Buffer.from(n))
       } catch (t) {
-        g.error("Socket Error: ".concat(t.message)), e.end(O(m.CLOSE, {
+        h.error("Socket Error: ".concat(t.message)), e.end(O(m.CLOSE, {
           code: p.$VG.CLOSE_UNSUPPORTED,
           message: t.message
         })), e.destroy()
       }
     }), e.once("handshake", () => {
       let n = t.clientId;
-      g.info("Socket Opened: ".concat(t.id)), e.on("error", e => g.error("Socket Error: ".concat(e.message))), e.on("close", () => {
-        g.info("Socket Close: ".concat(t.id)), this.emit("disconnect", t)
+      h.info("Socket Opened: ".concat(t.id)), e.on("error", e => h.error("Socket Error: ".concat(e.message))), e.on("close", () => {
+        h.info("Socket Close: ".concat(t.id)), this.emit("disconnect", t)
       }), (0, d.em)(t, null, n).then(() => {
         e.on("request", e => {
-          g.info("Socket Message: ".concat(t.id), (0, c.Z)(e)), this.emit("request", t, e)
+          h.info("Socket Message: ".concat(t.id), (0, c.Z)(e)), this.emit("request", t, e)
         }), this.emit("connect", t)
       }).catch(e => {
         let {
@@ -182,10 +182,10 @@ class y extends Chunk836560.EventEmitter {
   }
   constructor() {
     super();
-    let e = h.net.createServer(e => this.handleConnection(e));
-    module.on("error", e => g.error("Error: ".concat(e.message))), h.getAvailableSocket(E).then(t => {
+    let e = g.net.createServer(e => this.handleConnection(e));
+    module.on("error", e => h.error("Error: ".concat(e.message))), g.getAvailableSocket(E).then(t => {
       e.listen(t, () => {
-        ("function" == typeof e.listening ? e.listening() : e.listening) && g.info("Starting on ".concat(e.address()))
+        ("function" == typeof e.listening ? e.listening() : e.listening) && h.info("Starting on ".concat(e.address()))
       })
     })
   }

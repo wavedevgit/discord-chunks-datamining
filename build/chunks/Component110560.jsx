@@ -95,34 +95,15 @@ let U = "in-app",
 function Z(e) {
   let {
     quest: t,
-    questContent: i,
-    questContentPosition: a,
-    preview: o = false,
-    previewQuest: l = null,
-    sourceQuestContent: c
+    sourceQuestContent: i
   } = e;
   (0, s.ZDy)(async () => {
-    if (!(t.config.rewardsConfig.platforms.length > 1)) {
-      let {
-        default: e
-      } = await Promise.all([n.e("35129"), n.e("83615"), n.e("96861")]).then(n.bind(n, 188209));
-      return n => (0, r.jsx)(e, k(j({}, n), {
-        initialQuest: t,
-        preview: o,
-        sourceQuestContent: c,
-        questContentPosition: a
-      }))
-    }
     let {
       default: e
-    } = await Promise.all([n.e("35129"), n.e("83615"), n.e("19341")]).then(n.bind(n, 564733));
+    } = await n.e("96861").then(n.bind(n, 188209));
     return n => (0, r.jsx)(e, k(j({}, n), {
-      questId: t.id,
-      questContentPosition: a,
-      questContent: i,
-      preview: o,
-      previewQuest: l,
-      sourceQuestContent: c
+      initialQuest: t,
+      sourceQuestContent: i
     }))
   })
 }

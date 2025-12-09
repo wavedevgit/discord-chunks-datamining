@@ -1,26 +1,26 @@
-/** Chunk was on 83615 **/
+/** Chunk was on 75393 **/
 /** chunk id: 19148, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => i
+  E: () => s
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk172349 = require("./172349.js");
 
-function i(e) {
+function s(e) {
   let {
     width: t,
     height: n,
-    showPlaceholder: s,
-    children: i,
-    className: l
+    showPlaceholder: r,
+    children: s,
+    className: o
   } = e;
-  return s ? (0, r.jsx)("div", {
-    className: o()(a.placeholderElement, l),
+  return r ? (0, a.jsx)("div", {
+    className: i()(l.placeholderElement, o),
     style: {
       width: t,
       height: n
     }
-  }) : i
+  }) : s
 }

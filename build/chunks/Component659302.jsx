@@ -62,8 +62,6 @@ function L(e) {
       sourceQuestContent: s
     }), (0, A.xN)(t.config) && !f ? (0, R.B)() : d ? (0, A.Bg)(t.config) ? (0, c.$)() : (0, A.Xv)(t.config) ? (0, D.openQuestCollectibleRewardModal)(t, n, s) : (0, A.vQ)(t.config) ? (0, D.openQuestInGameRewardModal)(t, n, s) : (0, A.xN)(t.config) ? (0, D.openQuestOrbsRewardModal)(t, n, s) : (0, D.openQuestsRewardCodeModal)({
       quest: t,
-      questContent: n,
-      questContentPosition: r,
       sourceQuestContent: s
     }) : (0, R.B)())
   }, [t, _, n, r, a, d, f, s])

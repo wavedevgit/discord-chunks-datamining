@@ -53,9 +53,6 @@ function p(e) {
         onExpandedChange: p,
         children: (0, r.jsx)(a.Kqy, {
           gap: 8,
-          padding: {
-            top: 8
-          },
           children: O.map((e, t) => (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsx)(o.Z, {
               node: e

@@ -122,7 +122,7 @@ let j = (0, Chunk473749.memo)(function(e) {
         style: {
           top: L
         },
-        children: (0, r.jsx)(h.Z, {
+        children: (0, r.jsx)(g.Z, {
           avatarDecorationOverride: X,
           user: B,
           guildId: null,
@@ -134,7 +134,7 @@ let j = (0, Chunk473749.memo)(function(e) {
         className: N.image,
         isAnimated: Z,
         questName: A.config.messages.questName
-      }) : et.isAnimated ? (0, r.jsx)(g.Z, {
+      }) : et.isAnimated ? (0, r.jsx)(h.Z, {
         className: N.assetBlurred,
         autoPlay: false,
         children: (0, r.jsx)("source", {

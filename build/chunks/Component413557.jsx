@@ -33,14 +33,14 @@ function p(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, [s, o] = i.useState(false), [c, p] = i.useState(0), f = i.useRef(null), h = e => {
+  } = e, [s, o] = i.useState(false), [c, p] = i.useState(0), f = i.useRef(null), g = e => {
     clearTimeout(c), p(setTimeout(() => {
       o(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => h(true),
-    onMouseLeave: () => h(false),
+    onMouseEnter: () => g(true),
+    onMouseLeave: () => g(false),
     children: (0, r.jsx)(l.yRy, {
       targetElementRef: f,
       shouldShow: s,

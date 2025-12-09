@@ -40,7 +40,7 @@ function N(e) {
     A = null != j ? j : null == x ? true : x.guild_id,
     Z = (0, o.e7)([b.Z], () => b.Z.getGuild(A), [A]),
     w = (0, p.Z)(),
-    L = (0, g.D)(),
+    L = (0, h.D)(),
     {
       guildTitleIconSize: R,
       guildIconSize: D
@@ -73,7 +73,7 @@ function N(e) {
     size: R
   })) : null != Z ? (G = w ? (0, r.jsx)(c.r7p, {
     size: R
-  }) : (0, r.jsx)(h.Z, {
+  }) : (0, r.jsx)(g.Z, {
     guild: Z,
     size: D,
     active: true,

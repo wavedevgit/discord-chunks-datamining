@@ -1,9 +1,9 @@
-/** Chunk was on 81500 **/
-/** chunk id: 207035, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 44011 **/
+/** chunk id: 207035, original params: n,e,t (module,exports,require) **/
 require.d(exports, {
   P: () => i
 });
-let r = (0, require("./818083.js").B)({
+let l = (0, require("./818083.js").B)({
   kind: "user",
   id: "2023-08-30_open-in-popout",
   label: "Open Channel in Popout",
@@ -19,9 +19,9 @@ let r = (0, require("./818083.js").B)({
   }]
 });
 
-function i(e) {
-  return r.useExperiment({
-    location: e
+function i(n) {
+  return l.useExperiment({
+    location: n
   }, {
     autoTrackExposure: false
   }).enabled

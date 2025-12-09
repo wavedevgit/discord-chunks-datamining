@@ -1,13 +1,12 @@
-/** Chunk was on 83615 **/
+/** Chunk was on 75393 **/
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => z,
-  b: () => V
+  Z: () => W
 }), require("./388685.js"), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk278074 = require("./278074.js"),
   Chunk754700 = require("./754700.js"),
   Chunk887003 = require("./887003.js"),
@@ -36,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk70956 = require("./70956.js"),
   Chunk188764 = require("./188764.js");
 
-function k(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,54 +44,42 @@ function k(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      k(e, t, n[t])
+    }))), a.forEach(function(t) {
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function D(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var a = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, a)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let q = ["png", "gif", "webp"],
-  Q = [...q, "jpg", "jpeg"],
-  L = Array.from(new Set([...Q, "gif", "mp4", "webm"]));
+let L = ["png", "gif", "webp"],
+  M = [...L, "jpg", "jpeg"],
+  U = Array.from(new Set([...M, "gif", "mp4", "webm"]));
 
-function V(e) {
-  var t, n;
-  return {
-    code: "PREVIEW-MODE-CODE",
-    tier: 0,
-    platform: m.y$.CROSS_PLATFORM,
-    userId: "123",
-    questId: e.id,
-    claimedAt: null != (n = null == (t = e.userStatus) ? true : t.claimedAt) ? n : ""
-  }
-}
-
-function M() {
+function B() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       streamProgressSeconds: t = 0,
       completedAt: n = null,
-      enrolledAt: r = null,
-      claimedAt: s = null
+      enrolledAt: a = null,
+      claimedAt: r = null
     } = module;
   return {
     userId: "123",
@@ -107,12 +94,12 @@ function M() {
     progress: {}
   }
 }
-let W = "1193992107035983872",
-  Z = {
-    id: W,
+let F = "1193992107035983872",
+  G = {
+    id: F,
     preview: true,
     config: {
-      id: W,
+      id: F,
       configVersion: 2,
       startsAt: "2024-01-01T00:00:00+00:00",
       expiresAt: "2030-01-01T00:00:00+00:00",
@@ -179,61 +166,61 @@ let W = "1193992107035983872",
     targetedContent: []
   };
 
-function U() {
-  var e, t, o, u, d, k;
-  let [V, W] = Chunk473749.useState(Z), U = Chunk473749.useCallback(e => {
-    W(D(I({}, e), {
+function V() {
+  var e, t, i, d, u, A;
+  let [F, V] = Chunk473749.useState(G), H = Chunk473749.useCallback(e => {
+    V(Z(D({}, e), {
       preview: true
     }))
-  }, []), [H, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [G, F] = Chunk473749.useState(false), [K, X] = Chunk473749.useState(false), [Y, J] = Chunk473749.useState(null), $ = (k = V.config, (0, Chunk278074.EQ)(k).with({
+  }, []), [W, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [K, q] = Chunk473749.useState(false), [Q, Y] = Chunk473749.useState(false), [X, J] = Chunk473749.useState(null), $ = (A = F.config, (0, Chunk278074.EQ)(A).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
   function ee(e, t) {
     if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
-      var n, r;
-      U(D(I({}, V), {
-        config: (n = V.config, r = {
+      var n, a;
+      H(Z(D({}, F), {
+        config: (n = F.config, a = {
           [e]: t
-        }, (0, i.EQ)(n).with({
+        }, (0, s.EQ)(n).with({
           configVersion: 2
-        }, e => D(I({}, e), {
-          assets: I({}, e.assets, r)
+        }, e => Z(D({}, e), {
+          assets: D({}, e.assets, a)
         })).exhaustive())
       }))
     }
   }
 
   function et(e, t) {
-    let n = V.config.taskConfigV2.tasks,
-      r = n[l.X.WATCH_VIDEO];
-    if (null == r) return;
-    let s = I({}, r.assets);
+    let n = F.config.taskConfigV2.tasks,
+      a = n[o.X.WATCH_VIDEO];
+    if (null == a) return;
+    let r = D({}, a.assets);
     switch (e) {
       case "videoPlayerVideo":
-        s.video = {
+        r.video = {
           url: t
         };
         break;
       case "videoPlayerVideoLowRes":
-        s.videoLowRes = {
+        r.videoLowRes = {
           url: t
         };
         break;
       case "videoPlayerThumbnail":
-        s.video = D(I({}, s.video), {
+        r.video = Z(D({}, r.video), {
           thumbnail: t
         });
         break;
       default:
         return
     }
-    U(D(I({}, V), {
-      config: D(I({}, V.config), {
-        taskConfigV2: D(I({}, V.config.taskConfigV2), {
-          tasks: D(I({}, n), {
-            [l.X.WATCH_VIDEO]: D(I({}, r), {
-              assets: s
+    H(Z(D({}, F), {
+      config: Z(D({}, F.config), {
+        taskConfigV2: Z(D({}, F.config.taskConfigV2), {
+          tasks: Z(D({}, n), {
+            [o.X.WATCH_VIDEO]: Z(D({}, a), {
+              assets: r
             })
           })
         })
@@ -243,31 +230,31 @@ function U() {
 
   function en(e, t) {
     if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
-      var n, r;
-      U(D(I({}, V), {
-        config: (n = V.config, r = {
+      var n, a;
+      H(Z(D({}, F), {
+        config: (n = F.config, a = {
           [e]: t
-        }, (0, i.EQ)(n).with({
+        }, (0, s.EQ)(n).with({
           configVersion: 2
-        }, e => D(I({}, e), {
-          messages: I({}, e.messages, r)
+        }, e => Z(D({}, e), {
+          messages: D({}, e.messages, a)
         })).exhaustive())
       }))
     }
   }
 
-  function er(e, t, n) {
+  function ea(e, t, n) {
     if ("name" === e || "nameWithArticle" === e) {
-      var r, s;
-      U(D(I({}, V), {
-        config: (r = V.config, s = {
+      var a, r;
+      H(Z(D({}, F), {
+        config: (a = F.config, r = {
           [e]: t
-        }, (0, i.EQ)(r).with({
+        }, (0, s.EQ)(a).with({
           configVersion: 2
-        }, e => D(I({}, e), {
-          rewardsConfig: D(I({}, e.rewardsConfig), {
-            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? D(I({}, e), {
-              messages: I({}, e.messages, s)
+        }, e => Z(D({}, e), {
+          rewardsConfig: Z(D({}, e.rewardsConfig), {
+            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? Z(D({}, e), {
+              messages: D({}, e.messages, r)
             }) : e)
           })
         })).exhaustive())
@@ -275,33 +262,27 @@ function U() {
     }
   }
 
-  function es(e, t) {
-    U(D(I({}, V), {
-      config: D(I({}, V.config), {
-        colors: D(I({}, V.config.colors), {
+  function er(e, t) {
+    H(Z(D({}, F), {
+      config: Z(D({}, F.config), {
+        colors: Z(D({}, F.config.colors), {
           [e]: t
         })
       })
     }))
   }
 
-  function eo() {
-    (0, Chunk115179.Xv)(V.config) ? (0, Chunk110560.openQuestCollectibleRewardModal)(V, Chunk49436.jn.GIFT_INVENTORY_FOR_YOU, Chunk49436.jn.INTERNAL_PREVIEW_TOOL, true) : (0, Chunk110560.openQuestsRewardCodeModal)({
-      quest: V,
-      questContent: Chunk49436.jn.GIFT_INVENTORY_FOR_YOU,
-      preview: true,
-      previewQuest: V,
-      sourceQuestContent: Chunk49436.jn.INTERNAL_PREVIEW_TOOL
-    })
+  function ei() {
+    (0, Chunk115179.Xv)(F.config) && (0, Chunk110560.openQuestCollectibleRewardModal)(F, Chunk49436.jn.GIFT_INVENTORY_FOR_YOU, Chunk49436.jn.INTERNAL_PREVIEW_TOOL, true)
   }
-  let ea = Chunk473749.useMemo(() => {
-      for (let [e, t] of Object.entries(V.config.taskConfigV2.tasks))
+  let el = Chunk473749.useMemo(() => {
+      for (let [e, t] of Object.entries(F.config.taskConfigV2.tasks))
         if (null != exports.target) return exports.target;
       return 10 * Chunk70956.Z.Seconds.MINUTE
-    }, [V.config.taskConfigV2.tasks]),
-    ei = Chunk473749.useMemo(() => Chunk754700.X.WATCH_VIDEO in V.config.taskConfigV2.tasks, [V.config.taskConfigV2.tasks]);
-  a()(false !== V.preview && null != V.preview, "Preview config must have property preview: true");
-  let el = V.config.taskConfigV2.tasks[Chunk754700.X.WATCH_VIDEO];
+    }, [F.config.taskConfigV2.tasks]),
+    es = Chunk473749.useMemo(() => Chunk754700.X.WATCH_VIDEO in F.config.taskConfigV2.tasks, [F.config.taskConfigV2.tasks]);
+  l()(false !== F.preview && null != F.preview, "Preview config must have property preview: true");
+  let eo = F.config.taskConfigV2.tasks[Chunk754700.X.WATCH_VIDEO];
   return (0, Chunk54381.jsxs)(Chunk481060.zJl, {
     className: Chunk188764.container,
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
@@ -313,16 +294,16 @@ function U() {
       children: (0, Chunk54381.jsx)(Chunk916028.Z, {
         onSelect: function(e) {
           J(e), null != e && (z(function(e) {
-            if (null == e.userStatus) return N.a.UNENROLLED;
-            if (null != e.userStatus.claimedAt) return N.a.CLAIMED;
-            if (null != e.userStatus.completedAt) return N.a.COMPLETED_100;
-            let t = (0, g.il)(e),
+            if (null == e.userStatus) return w.a.UNENROLLED;
+            if (null != e.userStatus.claimedAt) return w.a.CLAIMED;
+            if (null != e.userStatus.completedAt) return w.a.COMPLETED_100;
+            let t = (0, x.il)(e),
               n = t.progressSeconds,
-              r = t.targetSeconds;
-            return n / r >= 1 ? N.a.COMPLETED_100 : n / r >= .75 ? N.a.COMPLETED_75 : n / r >= .5 ? N.a.COMPLETED_50 : n / r >= .25 ? N.a.COMPLETED_25 : N.a.ENROLLED
-          }(e)), U(e))
+              a = t.targetSeconds;
+            return n / a >= 1 ? w.a.COMPLETED_100 : n / a >= .75 ? w.a.COMPLETED_75 : n / a >= .5 ? w.a.COMPLETED_50 : n / a >= .25 ? w.a.COMPLETED_25 : w.a.ENROLLED
+          }(e)), H(e))
         },
-        quest: Y
+        quest: X
       })
     }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
@@ -331,11 +312,11 @@ function U() {
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk188764.fields,
       children: (0, Chunk54381.jsx)(Chunk749912.Z, {
-        taskDuration: ea,
-        taskConfigV2: V.config.taskConfigV2,
+        taskDuration: el,
+        taskConfigV2: F.config.taskConfigV2,
         onSelect: function(e) {
-          U(D(I({}, V), {
-            config: D(I({}, V.config), {
+          H(Z(D({}, F), {
+            config: Z(D({}, F.config), {
               taskConfigV2: e
             })
           }))
@@ -351,40 +332,40 @@ function U() {
         title: "Quest Name",
         assetKey: "questName",
         onMessageChange: en,
-        initialValue: V.config.messages.questName
+        initialValue: F.config.messages.questName
       }), (0, Chunk54381.jsx)(Chunk602683.Z, {
         title: "Game Title",
         assetKey: "gameTitle",
         onMessageChange: en,
-        initialValue: V.config.messages.gameTitle
+        initialValue: F.config.messages.gameTitle
       }), (0, Chunk54381.jsx)(Chunk602683.Z, {
         title: "Game Publisher",
         assetKey: "gamePublisher",
         onMessageChange: en,
-        initialValue: V.config.messages.gamePublisher
-      }), ei && (0, Chunk54381.jsx)(Chunk602683.Z, {
+        initialValue: F.config.messages.gamePublisher
+      }), es && (0, Chunk54381.jsx)(Chunk602683.Z, {
         title: "Video Title",
         assetKey: "videoTitle",
         onMessageChange: function(e, t) {
-          let n = V.config.taskConfigV2.tasks,
-            r = n[l.X.WATCH_VIDEO];
-          if (null == r) return;
-          let s = D(I({}, r.messages), {
+          let n = F.config.taskConfigV2.tasks,
+            a = n[o.X.WATCH_VIDEO];
+          if (null == a) return;
+          let r = Z(D({}, a.messages), {
             [e]: t
           });
-          U(D(I({}, V), {
-            config: D(I({}, V.config), {
-              taskConfigV2: D(I({}, V.config.taskConfigV2), {
-                tasks: D(I({}, n), {
-                  [l.X.WATCH_VIDEO]: D(I({}, r), {
-                    messages: s
+          H(Z(D({}, F), {
+            config: Z(D({}, F.config), {
+              taskConfigV2: Z(D({}, F.config.taskConfigV2), {
+                tasks: Z(D({}, n), {
+                  [o.X.WATCH_VIDEO]: Z(D({}, a), {
+                    messages: r
                   })
                 })
               })
             })
           }))
         },
-        initialValue: null == el ? true : el.messages.videoTitle
+        initialValue: null == eo ? true : eo.messages.videoTitle
       })]
     }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
@@ -396,88 +377,88 @@ function U() {
         title: "Hero",
         assetKey: "hero",
         onFileChange: ee,
-        filters: L,
-        initialValue: V.config.assets.hero
+        filters: U,
+        initialValue: F.config.assets.hero
       }), (0, Chunk54381.jsx)(Chunk210851.Z, {
         title: "Hero Video (optional)",
         assetKey: "heroVideo",
         onFileChange: ee,
-        filters: L,
-        initialValue: null != (u = V.config.assets.heroVideo) ? Chunk820827 : true
+        filters: U,
+        initialValue: null != (d = F.config.assets.heroVideo) ? Chunk820827 : true
       }), (0, Chunk54381.jsx)(Chunk210851.Z, {
         title: "Quest Bar Hero",
         assetKey: "questBarHero",
         onFileChange: ee,
-        filters: L,
-        initialValue: V.config.assets.questBarHero
+        filters: U,
+        initialValue: F.config.assets.questBarHero
       }), (0, Chunk54381.jsx)(Chunk210851.Z, {
         title: "Quest Bar Hero Video (optional)",
         assetKey: "questBarHeroVideo",
         onFileChange: ee,
-        filters: L,
-        initialValue: null != (d = V.config.assets.questBarHeroVideo) ? Chunk458708 : true
+        filters: U,
+        initialValue: null != (u = F.config.assets.questBarHeroVideo) ? Chunk458708 : true
       }), (0, Chunk54381.jsx)(Chunk210851.Z, {
         title: "Game Tile",
         assetKey: "gameTile",
         onFileChange: ee,
-        filters: [...Q, "svg"],
-        initialValue: V.config.assets.gameTile
+        filters: [...M, "svg"],
+        initialValue: F.config.assets.gameTile
       }), (0, Chunk54381.jsx)(Chunk210851.Z, {
         title: "Logotype",
         assetKey: "logotype",
         onFileChange: ee,
-        filters: [...q, "svg"],
-        initialValue: V.config.assets.logotype
-      }), ei && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        filters: [...L, "svg"],
+        initialValue: F.config.assets.logotype
+      }), es && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk210851.Z, {
           title: "Quest Video",
           assetKey: "videoPlayerVideo",
           onFileChange: et,
-          filters: L,
-          initialValue: null == el ? true : el.assets.video.url
+          filters: U,
+          initialValue: null == eo ? true : eo.assets.video.url
         }), (0, Chunk54381.jsx)(Chunk210851.Z, {
           title: "Quest Video (Low Resolution)",
           assetKey: "videoPlayerVideoLowRes",
           onFileChange: et,
-          filters: L,
-          initialValue: null == el || null == (e = el.assets.videoLowRes) ? true : module.url
+          filters: U,
+          initialValue: null == eo || null == (e = eo.assets.videoLowRes) ? true : module.url
         }), (0, Chunk54381.jsx)(Chunk210851.Z, {
           title: "Video Player Thumbnail (optional)",
           assetKey: "videoPlayerThumbnail",
           onFileChange: et,
-          filters: Q,
-          initialValue: null == el ? true : el.assets.video.thumbnail
+          filters: M,
+          initialValue: null == eo ? true : eo.assets.video.thumbnail
         })]
       })]
-    }), $.map((e, t) => (0, r.jsxs)("div", {
-      children: [(0, r.jsxs)(p.Heading, {
+    }), $.map((e, t) => (0, a.jsxs)("div", {
+      children: [(0, a.jsxs)(m.Heading, {
         variant: "heading-md/semibold",
-        className: B.subheading,
+        className: R.subheading,
         children: ["Reward #", t + 1]
-      }), (0, r.jsxs)("div", {
-        className: B.fields,
-        children: [(0, r.jsx)(S.Z, {
+      }), (0, a.jsxs)("div", {
+        className: R.fields,
+        children: [(0, a.jsx)(O.Z, {
           title: "Name",
           assetKey: "name",
-          onMessageChange: (e, n) => er(e, n, t),
+          onMessageChange: (e, n) => ea(e, n, t),
           initialValue: e.messages.name
-        }), (0, r.jsx)(S.Z, {
+        }), (0, a.jsx)(O.Z, {
           title: "Name With Article",
           assetKey: "nameWithArticle",
-          onMessageChange: (e, n) => er(e, n, t),
+          onMessageChange: (e, n) => ea(e, n, t),
           initialValue: e.messages.nameWithArticle
-        }), e.type !== c.w.VIRTUAL_CURRENCY && (0, r.jsx)(O.Z, {
+        }), e.type !== c.w.VIRTUAL_CURRENCY && (0, a.jsx)(E.Z, {
           title: "Asset",
           assetKey: "asset",
           onFileChange: (e, n) => (function(e, t, n) {
             if ("asset" === e) {
-              var r;
-              U(D(I({}, V), {
-                config: (r = V.config, (0, i.EQ)(r).with({
+              var a;
+              H(Z(D({}, F), {
+                config: (a = F.config, (0, s.EQ)(a).with({
                   configVersion: 2
-                }, e => D(I({}, e), {
-                  rewardsConfig: D(I({}, e.rewardsConfig), {
-                    rewards: e.rewardsConfig.rewards.map((e, r) => r === n ? D(I({}, e), {
+                }, e => Z(D({}, e), {
+                  rewardsConfig: Z(D({}, e.rewardsConfig), {
+                    rewards: e.rewardsConfig.rewards.map((e, a) => a === n ? Z(D({}, e), {
                       asset: t,
                       skuId: ""
                     }) : e)
@@ -486,18 +467,18 @@ function U() {
               }))
             }
           })(e, n, t),
-          filters: L,
+          filters: U,
           initialValue: e.asset
-        }), (0, r.jsxs)(p.Kqy, {
+        }), (0, a.jsxs)(m.Kqy, {
           direction: "vertical",
           gap: 8,
-          children: [(0, r.jsx)(p.Heading, {
+          children: [(0, a.jsx)(m.Heading, {
             variant: "heading-sm/semibold",
             children: "Claim Modal"
-          }), (0, r.jsx)(p.Button, {
+          }), (0, a.jsx)(m.Button, {
             variant: "primary",
             text: "Open Reward Modal",
-            onClick: eo
+            onClick: ei
           })]
         })]
       })]
@@ -515,13 +496,13 @@ function U() {
         children: [(0, Chunk54381.jsx)(Chunk478977.Z, {
           title: "Primary",
           colorKey: "primary",
-          onChange: es,
-          value: V.config.colors.primary
+          onChange: er,
+          value: F.config.colors.primary
         }), (0, Chunk54381.jsx)(Chunk478977.Z, {
           title: "Secondary",
           colorKey: "secondary",
-          onChange: es,
-          value: V.config.colors.secondary
+          onChange: er,
+          value: F.config.colors.secondary
         })]
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk188764.fields,
@@ -529,63 +510,63 @@ function U() {
       }), (0, Chunk54381.jsx)(Chunk899457.Z, {
         onChange: function(e) {
           switch (z(e), e) {
-            case N.a.UNENROLLED:
-              U(D(I({}, V), {
+            case w.a.UNENROLLED:
+              H(Z(D({}, F), {
                 userStatus: null
               }));
               break;
-            case N.a.ENROLLED:
-              U(D(I({}, V), {
-                userStatus: M({
+            case w.a.ENROLLED:
+              H(Z(D({}, F), {
+                userStatus: B({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
-            case N.a.COMPLETED_25:
-              U(D(I({}, V), {
-                userStatus: M({
+            case w.a.COMPLETED_25:
+              H(Z(D({}, F), {
+                userStatus: B({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .25 * ea
+                  streamProgressSeconds: .25 * el
                 })
               }));
               break;
-            case N.a.COMPLETED_50:
-              U(D(I({}, V), {
-                userStatus: M({
+            case w.a.COMPLETED_50:
+              H(Z(D({}, F), {
+                userStatus: B({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .5 * ea
+                  streamProgressSeconds: .5 * el
                 })
               }));
               break;
-            case N.a.COMPLETED_75:
-              U(D(I({}, V), {
-                userStatus: M({
+            case w.a.COMPLETED_75:
+              H(Z(D({}, F), {
+                userStatus: B({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .75 * ea
+                  streamProgressSeconds: .75 * el
                 })
               }));
               break;
-            case N.a.COMPLETED_100:
-              U(D(I({}, V), {
-                userStatus: M({
+            case w.a.COMPLETED_100:
+              H(Z(D({}, F), {
+                userStatus: B({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: ea
+                  streamProgressSeconds: el
                 })
               }));
               break;
-            case N.a.CLAIMED:
-              U(D(I({}, V), {
-                userStatus: M({
+            case w.a.CLAIMED:
+              H(Z(D({}, F), {
+                userStatus: B({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: ea
+                  streamProgressSeconds: el
                 })
               }))
           }
         },
-        value: H
+        value: W
       })]
     }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/bold",
@@ -600,7 +581,7 @@ function U() {
           children: "Quest Bar"
         }), (0, Chunk54381.jsxs)("div", {
           className: Chunk188764.questBarPreviewWrapper,
-          children: [(null == (t = V.userStatus) ? true : exports.claimedAt) != null && (0, Chunk54381.jsx)(Chunk481060.Text, {
+          children: [(null == (t = F.userStatus) ? true : exports.claimedAt) != null && (0, Chunk54381.jsx)(Chunk481060.Text, {
             color: "text-subtle",
             variant: "text-sm/normal",
             children: "The Quest Bar is hidden when the user has claimed the reward."
@@ -612,7 +593,7 @@ function U() {
               questId: "0",
               children: (0, Chunk54381.jsx)(Chunk130653.Z, {
                 children: (0, Chunk54381.jsx)(Chunk210724.P, {
-                  quest: V
+                  quest: F
                 })
               })
             })
@@ -628,7 +609,7 @@ function U() {
           source: "preview",
           questId: "0",
           children: (0, Chunk54381.jsx)(Chunk415104.Z, {
-            quest: V,
+            quest: F,
             className: Chunk188764.questTile,
             questContent: Chunk49436.jn.QUEST_HOME_DESKTOP,
             contentPosition: 0,
@@ -641,7 +622,7 @@ function U() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Channel Call Header"
-        }), (null == (o = V.userStatus) ? true : Chunk512722.claimedAt) != null && (0, Chunk54381.jsx)(Chunk481060.Text, {
+        }), (null == (i = F.userStatus) ? true : Chunk512722.claimedAt) != null && (0, Chunk54381.jsx)(Chunk481060.Text, {
           color: "text-subtle",
           variant: "text-sm/normal",
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
@@ -655,8 +636,8 @@ function U() {
               className: Chunk188764.questChannelCallHeaderPreview,
               children: (0, Chunk54381.jsx)(Chunk801604.Z, {
                 channelId: "123",
-                previewQuest: V,
-                isParticipatingOverride: G
+                previewQuest: F,
+                isParticipatingOverride: K
               })
             })
           })
@@ -665,9 +646,9 @@ function U() {
         className: Chunk188764.toggleSwitch,
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Is Participating:",
-          checked: G,
+          checked: K,
           onChange: function(e) {
-            F(e)
+            q(e)
           }
         })
       }), (0, Chunk54381.jsxs)(Chunk456799.Z, {
@@ -675,21 +656,21 @@ function U() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Quest Card Embed"
-        }), K ? (0, Chunk54381.jsx)(Chunk557843.W, {
-          questId: V.id
+        }), Q ? (0, Chunk54381.jsx)(Chunk557843.W, {
+          questId: F.id
         }) : (0, Chunk54381.jsx)(Chunk686834.X, {
-          quest: V,
+          quest: F,
           location: Chunk49436.jn.QUESTS_EMBED,
           sourceQuestContent: Chunk49436.jn.INTERNAL_PREVIEW_TOOL
-        }, V.id)]
+        }, F.id)]
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk188764.toggleSwitch,
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Invalid Quests Embed:",
-          checked: K,
-          onChange: X
+          checked: Q,
+          onChange: Y
         })
-      }), ei && (0, Chunk54381.jsxs)(Chunk456799.Z, {
+      }), es && (0, Chunk54381.jsxs)(Chunk456799.Z, {
         withBorder: true,
         allowClicks: true,
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
@@ -705,13 +686,13 @@ function U() {
               } = await Promise.all([require.e("13193"), require.e("75909"), require.e("67230")]).then(require.bind(require, 215113));
               return t => {
                 var n;
-                return (0, r.jsx)(e, D(I({}, t), {
+                return (0, a.jsx)(e, Z(D({}, t), {
                   openStartClockTime: performance.now(),
                   videoSessionId: "fake-quest-session-id",
-                  questId: null != (n = V.id) ? n : "fake-quest-id",
-                  overrideQuest: V,
+                  questId: null != (n = F.id) ? n : "fake-quest-id",
+                  overrideQuest: F,
                   autoplay: true,
-                  sourceQuestContent: m.jn.INTERNAL_PREVIEW_TOOL
+                  sourceQuestContent: p.jn.INTERNAL_PREVIEW_TOOL
                 }))
               }
             })
@@ -750,13 +731,13 @@ class H extends Chunk473749.Component {
           children: module.message
         })
       })]
-    }) : (0, Chunk54381.jsx)(U, {}, exports)
+    }) : (0, Chunk54381.jsx)(V, {}, exports)
   }
   constructor(...e) {
-    super(...e), k(this, "state", {
+    super(...e), A(this, "state", {
       error: null,
       renderKey: 0
-    }), k(this, "handleResetState", () => {
+    }), A(this, "handleResetState", () => {
       this.setState(e => ({
         error: null,
         renderKey: e.renderKey + 1
@@ -764,4 +745,4 @@ class H extends Chunk473749.Component {
     })
   }
 }
-let z = H
+let W = H

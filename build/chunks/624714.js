@@ -34,16 +34,16 @@ let m = {
       (0, d.bu)(n.transport), (0, d._f)(n.application);
       let o = n.application.id,
         p = (0, f.Z)(),
-        h = null == p ? true : p.getGuildId(),
+        g = null == p ? true : p.getGuildId(),
         m = s.Z.getApplication(o);
-      if (!(0, r.yE)(null != (t = null == m ? true : m.flags) ? t : 0, g.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
-        errorCode: g.lTL.INVALID_COMMAND
+      if (!(0, r.yE)(null != (t = null == m ? true : m.flags) ? t : 0, h.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
+        errorCode: h.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let _ = (0, a.U)(o),
         b = {
           activity_application_id: o,
           activity_channel_type: null == p ? true : p.type,
-          activity_guild_id: h,
+          activity_guild_id: g,
           activity_user_session_id: null == _ ? true : _.activityUserSessionId
         };
       c.default.track(i, function(e) {
@@ -73,10 +73,10 @@ let m = {
         socket: t
       } = e, n = t.application.id;
       if (null == n) throw new u.Z({
-        errorCode: g.lTL.INVALID_COMMAND
+        errorCode: h.lTL.INVALID_COMMAND
       }, "No application.");
       return i.tn.post({
-        url: g.ANM.APPLICATION_TICKET(n),
+        url: h.ANM.APPLICATION_TICKET(n),
         body: {
           test_mode: o.Z.inTestModeForApplication(n) || l.Z.inDevModeForApplication(n)
         },

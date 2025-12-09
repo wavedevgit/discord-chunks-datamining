@@ -41,7 +41,7 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -54,7 +54,7 @@ function T(e) {
   return e
 }
 
-function N(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -112,9 +112,9 @@ class D extends Chunk473749.PureComponent {
             targetElementRef: this.rtcConnectionStatusRef,
             renderPopout: () => this.renderPopout(Chunk120356.id),
             position: "top",
-            children: e => (0, i.jsx)(c.P3F, N(T({}, e), {
+            children: e => (0, i.jsx)(c.P3F, T(N({}, e), {
               innerRef: this.rtcConnectionStatusRef,
-              children: (0, i.jsx)(b.Z, {
+              children: (0, i.jsx)(y.Z, {
                 channelId: s.id,
                 quality: l,
                 lastPing: a,
@@ -166,7 +166,7 @@ class D extends Chunk473749.PureComponent {
       let {
         lobbyId: t
       } = this.props;
-      return (0, i.jsx)(y.Z, {
+      return (0, i.jsx)(_.Z, {
         channelId: e,
         lobbyId: t,
         isOverlay: true
@@ -195,11 +195,11 @@ function k(e) {
     }
     return r
   }(e, ["context", "lobbyId", "channel"]);
-  let o = (0, a.e7)([_.Z], () => _.Z.getGuild(null == r ? true : r.getGuildId())),
+  let o = (0, a.e7)([v.Z], () => v.Z.getGuild(null == r ? true : r.getGuildId())),
     l = (0, a.e7)([x.Z], () => null != r && x.Z.hasVideo(r.id)),
-    [c, d] = (0, a.Wu)([v.Z], () => [v.Z.isSelfMute(t) || v.Z.isSelfMutedTemporarily(t), v.Z.isSelfDeaf(t)]),
+    [c, d] = (0, a.Wu)([b.Z], () => [b.Z.isSelfMute(t) || b.Z.isSelfMutedTemporarily(t), b.Z.isSelfDeaf(t)]),
     [u, h, p] = (0, a.Wu)([S.Z], () => [S.Z.getConnectionState(n), S.Z.getLastPing(n), S.Z.getQuality(n)]);
-  return (0, i.jsx)(D, N(T({}, s), {
+  return (0, i.jsx)(D, T(N({}, s), {
     context: t,
     lobbyId: n,
     channel: r,

@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 415397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => S
@@ -52,7 +52,7 @@ function S(e) {
     onHoverOrFocus: o,
     setPopoutRef: u,
     closePopout: p
-  } = e, g = r.useRef(null), b = (0, v.Tu)(g), C = (0, v.j1)({
+  } = e, g = r.useRef(null), b = (0, _.Tu)(g), y = (0, _.j1)({
     channel: t
   }), {
     analyticsLocations: S
@@ -71,7 +71,7 @@ function S(e) {
     null == o || o(b.isHoveringOrFocusing)
   }, [o, b]);
   let I = r.useCallback(() => {
-    let e = y.Z.getGuild(t.guild_id);
+    let e = C.Z.getGuild(t.guild_id);
     s()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, d.ZDy)(async () => {
       let {
         default: r
@@ -81,7 +81,7 @@ function S(e) {
         return (0, i.jsx)(r, (l = j({}, n), a = a = {
           guild: e,
           channel: t,
-          source: _.t4x.VOICE_INVITE_SUGGESTIONS
+          source: v.t4x.VOICE_INVITE_SUGGESTIONS
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -103,7 +103,7 @@ function S(e) {
       className: x.inner,
       children: (0, i.jsxs)("ul", {
         className: x.list,
-        children: [C.map(e => (0, i.jsx)(P, {
+        children: [y.map(e => (0, i.jsx)(P, {
           channel: t,
           user: e,
           inviteKey: l
@@ -136,14 +136,14 @@ function P(e) {
     inviteKey: l
   } = e, o = r.useRef(null), s = (0, u.e7)([b.ZP], () => b.ZP.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
     isHoveringOrFocusing: c
-  } = (0, v.Tu)(o), [h, f] = r.useState(null), m = "success" === h || "sending" === h || null == l, y = r.useCallback(() => {
+  } = (0, _.Tu)(o), [h, f] = r.useState(null), m = "success" === h || "sending" === h || null == l, C = r.useCallback(() => {
     m || null != l && (f("sending"), p.Z.enqueue({
       type: p.m.USER,
       user: n,
       inviteKey: l,
       location: "VoiceInviteSuggestionsPopover",
       inviteAnalyticsMetadata: {
-        source: _.t4x.VOICE_INVITE_SUGGESTIONS
+        source: v.t4x.VOICE_INVITE_SUGGESTIONS
       }
     }, e => {
       f(e ? "success" : null)
@@ -159,7 +159,7 @@ function P(e) {
     guildId: t.guild_id
   });
   if (null == s) return null;
-  let I = C.ZP.getName(n),
+  let I = y.ZP.getName(n),
     Z = O.intl.string(O.t.jYnGPG);
   return (0, i.jsxs)(d.P3F, {
     innerRef: o,
@@ -168,7 +168,7 @@ function P(e) {
       [x.clickable]: !m
     }),
     "aria-disabled": m,
-    onClick: y,
+    onClick: C,
     "aria-label": Z,
     children: [(0, i.jsx)(d.qEK, j({
       className: x.avatar,

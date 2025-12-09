@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 581696, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 }), require("./388685.js"), require("./457542.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,19 +14,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk589694 = require("./589694.jsx"),
   Chunk62001 = require("./62001.js"),
   Chunk869886 = require("./869886.js");
-let h = function(e) {
+let g = function(e) {
   let {
     scrollContainerRef: t
   } = e, n = (0, l.e7)([a.Z], () => a.Z.notificationItem(), []), {
-    showDot: h
-  } = (0, c.Z)(), g = i.useRef(null), [m, _] = i.useState(false), {
+    showDot: g
+  } = (0, c.Z)(), h = i.useRef(null), [m, _] = i.useState(false), {
     data: b,
     loading: E,
     isRefreshing: O,
     handleOnRefresh: v,
     viewabilityConfigCallbackPairs: y
   } = (0, u.a)({
-    showDot: h,
+    showDot: g,
     notificationItem: n
   }), I = (0, o.G)();
   i.useEffect(() => () => {
@@ -131,7 +131,7 @@ let h = function(e) {
         children: "New content available"
       })
     }), (0, r.jsxs)("div", {
-      ref: g,
+      ref: h,
       className: f.scrollContainer,
       children: [b.map(e => Z(e)), !j && (m || S) && (0, r.jsx)("div", {
         style: {

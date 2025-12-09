@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 880831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T,
@@ -38,17 +38,17 @@ function Z(e) {
   } = e, {
     isBlocked: l,
     isIgnored: o
-  } = (0, c.cj)([_.Z], () => ({
-    isBlocked: _.Z.isBlockedForMessage(n),
-    isIgnored: _.Z.isIgnoredForMessage(n)
-  }), [n]), s = (0, g.Uj)(n), d = r.useContext(f.Z), [v, x] = r.useState(false), E = r.useCallback(e => {
+  } = (0, c.cj)([v.Z], () => ({
+    isBlocked: v.Z.isBlockedForMessage(n),
+    isIgnored: v.Z.isIgnoredForMessage(n)
+  }), [n]), s = (0, g.Uj)(n), d = r.useContext(f.Z), [_, x] = r.useState(false), E = r.useCallback(e => {
     "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, true), h.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.id,
       flash: true
     }))
   }, [n.channel_id, n.id]), j = null != n.content && "" !== n.content ? (0, m.ZP)(n, {
-    isInteracting: v
+    isInteracting: _
   }).content : null, {
     contentPlaceholder: I,
     renderedContent: Z,
@@ -58,11 +58,11 @@ function Z(e) {
     trailingIconClass: P.messageContentTrailingIcon,
     leadingIconClass: P.messageContentLeadingIcon,
     iconSize: S.WW
-  }), A = (0, y.cv)(n), w = A.length > 0 ? A.map(e => (0, i.jsx)(C.Z, {
+  }), A = (0, C.cv)(n), w = A.length > 0 ? A.map(e => (0, i.jsx)(y.Z, {
     className: P.sticker,
     size: 128,
     sticker: e,
-    isInteracting: v
+    isInteracting: _
   }, e.id)) : null;
   return (0, i.jsxs)(u.P3F, {
     className: P.toast,
@@ -132,18 +132,18 @@ function T(e) {
     let g = null != (t = h.current) ? t : o;
     return {
       toastsHidden: u,
-      toastMessages: (0, c.Wu)([v.Z], () => g.map(e => v.Z.getMessage(n, e)), [n, g]).filter(E.lm)
+      toastMessages: (0, c.Wu)([_.Z], () => g.map(e => _.Z.getMessage(n, e)), [n, g]).filter(E.lm)
     }
   }({
     channelId: t,
     isFrozen: l,
     count: 3,
     lingerMs: I
-  }), m = r.useRef({}), [g, b] = r.useState({}), y = r.useCallback((e, t) => {
+  }), m = r.useRef({}), [g, b] = r.useState({}), C = r.useCallback((e, t) => {
     null == t ? delete m.current[e] : m.current[e] = t
-  }, []), C = r.useRef(g);
+  }, []), y = r.useRef(g);
   r.useLayoutEffect(() => {
-    C.current = g
+    y.current = g
   }), r.useLayoutEffect(() => {
     let e = {},
       t = 0;
@@ -151,14 +151,14 @@ function T(e) {
       var n;
       let r = null != (n = m.current[i.id]) ? n : 0;
       e[i.id] = t, t += r + 8
-    }(0, o.isEqual)(e, C.current) || b(e)
+    }(0, o.isEqual)(e, y.current) || b(e)
   }, [f]);
-  let _ = f.map(e => ({
+  let v = f.map(e => ({
       message: e,
       height: m.current[e.id],
       y: g[e.id]
     })),
-    O = (0, u.Yzy)(_, {
+    O = (0, u.Yzy)(v, {
       keys: e => e.message.id,
       from: () => ({
         opacity: 0
@@ -203,7 +203,7 @@ function T(e) {
         p(false)
       },
       children: O((e, t) => (0, i.jsx)(s.animated.div, {
-        ref: e => y(t.message.id, null != e ? e.offsetHeight : null),
+        ref: e => C(t.message.id, null != e ? e.offsetHeight : null),
         className: P.toastWrapper,
         style: e,
         children: (0, i.jsx)(Z, {

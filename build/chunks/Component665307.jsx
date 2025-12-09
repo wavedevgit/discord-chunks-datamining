@@ -108,7 +108,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
           children: e.libraryApplication.getBranchedName(e.application)
         }), e.libraryApplication.hasFlag(P.eHb.PREMIUM) ? (0, i.jsxs)(d.u, {
           text: x.intl.string(x.t.tG2SzG),
-          children: ["(", (0, i.jsx)(h.SrA, {
+          children: ["(", (0, i.jsx)(g.SrA, {
             size: "md",
             color: "currentColor",
             className: A.nitroIcon
@@ -162,12 +162,12 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
           children: [(0, i.jsx)(k, {
             flag: P.eHb.PRIVATE,
             item: e,
-            icon: h.kZF,
+            icon: g.kZF,
             tooltip: x.intl.string(x.t.NozAop)
           }), (0, i.jsx)(k, {
             flag: P.eHb.OVERLAY_DISABLED,
             item: e,
-            icon: h.o8v,
+            icon: g.o8v,
             tooltip: x.intl.string(x.t.Az9eqn)
           }), (0, i.jsx)(j.Z, {
             className: s()(A.settingIcon, {
@@ -249,7 +249,7 @@ class B extends(r = Chunk473749.PureComponent) {
     let t = this.props.activeRowKey;
     if (null != t && e.activeRowKey !== t && this.props.isNavigatingByKeyboard) {
       let e = this._rowRefs[t];
-      null != e && (g.Z.wait(m.Zy), this.props.scrollToRow(e, R))
+      null != e && (h.Z.wait(m.Zy), this.props.scrollToRow(e, R))
     }
   }
   handleHighlightedApplicationKey() {

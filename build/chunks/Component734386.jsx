@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 734386, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -37,10 +37,10 @@ var Chunk54381 = require("./54381.js"),
 function w(e) {
   let {
     channel: t
-  } = e, [n, l] = r.useState(false), o = (0, m.ZP)(t, true), w = t.guild_id, M = (0, u.e7)([_.Z], () => null != w ? _.Z.getSortedRoles(w) : true), R = (0, u.e7)([E.default, O.Z], () => {
+  } = e, [n, l] = r.useState(false), o = (0, m.ZP)(t, true), w = t.guild_id, M = (0, u.e7)([v.Z], () => null != w ? v.Z.getSortedRoles(w) : true), R = (0, u.e7)([E.default, O.Z], () => {
     var e;
     return E.default.getUser(null == (e = O.Z.getGuild(w)) ? true : e.ownerId)
-  }), L = r.useMemo(() => null != M ? M.filter(e => !(0, v.fI)(e)) : [], [M]), D = r.useMemo(() => s()(L).filter(e => {
+  }), L = r.useMemo(() => null != M ? M.filter(e => !(0, _.fI)(e)) : [], [M]), D = r.useMemo(() => s()(L).filter(e => {
     if (null == w) returnfalse;
     let n = j.I0({
       forceRoles: {
@@ -81,7 +81,7 @@ function w(e) {
       className: A.markup,
       children: T.intl.format(T.t.QuwqjG, {
         channelName: o,
-        topicHook: () => C.Z.parseTopic(t.topic, true, {
+        topicHook: () => y.Z.parseTopic(t.topic, true, {
           channelId: t.id
         })
       })
@@ -144,7 +144,7 @@ function w(e) {
           disabled: !U,
           verified: s,
           onClick: () => {
-            y.Z.open(t.guild_id, Z.pNK.MEMBERS), y.Z.selectRole(e.id)
+            C.Z.open(t.guild_id, Z.pNK.MEMBERS), C.Z.selectRole(e.id)
           }
         }, e.id) : (0, i.jsx)(b.Z, {
           className: a()(N.role, {

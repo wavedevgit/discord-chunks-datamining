@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 434488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => P
@@ -123,7 +123,7 @@ function Z(e) {
     inPopout: o
   } = e;
   r.useEffect(() => {
-    _.default.track(x.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    v.default.track(x.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity invite",
       n_participants: 1
     })
@@ -131,7 +131,7 @@ function Z(e) {
   let {
     analyticsLocations: s,
     newestAnalyticsLocation: c
-  } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_INVITE), d = (0, C._k)({
+  } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_INVITE), d = (0, y._k)({
     location: "single_user_tile"
   });
 
@@ -232,7 +232,7 @@ function T(e) {
     userParticipantCount: c
   } = e;
   (0, d.ZP)(() => {
-    _.default.track(x.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    v.default.track(x.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity suggestion",
       n_participants: c
     })
@@ -241,14 +241,14 @@ function T(e) {
       guildId: n.id
     }).slice(0, 3),
     {
-      analyticsLocations: C
+      analyticsLocations: y
     } = (0, m.ZP)(f.Z.VC_TILE_ACTIVITY_SUGGESTION),
     S = r.useMemo(() => ({
       channel: t,
       type: "channel"
     }), [t]);
   return (0, i.jsx)(m.Gt, {
-    value: C,
+    value: y,
     children: (0, i.jsxs)(O.Z, {
       className: j.root,
       children: [s > 300 ? (0, i.jsx)(u.Text, {
@@ -269,20 +269,20 @@ function T(e) {
       }), (0, i.jsxs)(u.P3F, {
         className: j.checkboxContainer,
         onClick: function() {
-          _.default.track(x.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          v.default.track(x.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: c
-          }), (0, y.Q3)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
+          }), (0, C.Q3)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
-        children: [(0, i.jsx)(v.Z, {}), (0, i.jsx)(u.Text, {
+        children: [(0, i.jsx)(_.Z, {}), (0, i.jsx)(u.Text, {
           variant: "text-sm/medium",
           children: E.intl.string(E.t["5E9SB9"])
         })]
       }), (0, i.jsx)(u.P3F, {
         className: j.closeButtonContainer,
         onClick: function() {
-          _.default.track(x.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          v.default.track(x.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "temporary",
             n_participants: c

@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 905953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -29,56 +29,56 @@ function C(e) {
   let {
     targetElementRef: n,
     onClose: C
-  } = e, [S, E] = l.useState(false), {
-    trackUserProfileEditAction: N
-  } = (0, m.KZ)(), T = (0, i.e7)([v.default], () => v.default.getId()), {
-    config: O,
+  } = e, [S, E] = r.useState(false), {
+    trackUserProfileEditAction: O
+  } = (0, m.KZ)(), T = (0, l.e7)([v.default], () => v.default.getId()), {
+    config: N,
     application: P
   } = (0, x.G)(), {
-    fetched: I,
-    hasAlreadyLinked: w,
+    fetched: w,
+    hasAlreadyLinked: I,
     canStartAuthorization: k,
     startAuthorization: R
   } = (0, d.F)(P), A = (0, f.ZP)(T), {
-    analyticsLocations: Z
-  } = (0, c.ZP)(), D = null == A || null == (t = A.widgets) ? true : t.some(e => e instanceof p.q && e.applicationId === (null == P ? true : P.id));
-  return null != O && null != O.edit_profile_upsell_image && null != P && I ? (0, a.jsx)(u.ZP, {
-    contentTypes: w ? D ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : k ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    analyticsLocations: D
+  } = (0, c.ZP)(), Z = null == A || null == (t = A.widgets) ? true : t.some(e => e instanceof p.q && e.applicationId === (null == P ? true : P.id));
+  return null != N && null != N.edit_profile_upsell_image && null != P && w ? (0, a.jsx)(u.ZP, {
+    contentTypes: I ? Z ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : k ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: l
+        markAsDismissed: r
       } = e;
       if (null == t) return null;
-      let i = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
+      let l = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
       return (0, a.jsx)(o.J2, {
         targetElementRef: n,
         position: "right",
         gradientColor: "blue",
         graphic: {
           type: "image",
-          src: O.edit_profile_upsell_image
+          src: N.edit_profile_upsell_image
         },
         title: y.intl.format(y.t.TXDztH, {
           applicationName: P.name
         }),
-        body: i ? y.intl.string(y.t["63Kso0"]) : y.intl.string(y.t.HwXoeC),
+        body: l ? y.intl.string(y.t["63Kso0"]) : y.intl.string(y.t.HwXoeC),
         onRequestClose: () => {
-          l(j.L.USER_DISMISS)
+          r(j.L.USER_DISMISS)
         },
-        actions: [i ? {
+        actions: [l ? {
           text: y.intl.string(y.t.VSLDly),
           onClick: () => {
             E(true), (0, g.openUserProfileModal)({
               userId: T,
               section: _.oh.WIDGETS
             }).then(() => {
-              l(j.L.TAKE_ACTION), C();
+              r(j.L.TAKE_ACTION), C();
               let e = new p.q({
                 applicationId: P.id,
-                type: r.l.APPLICATION
+                type: i.l.APPLICATION
               });
-              (0, h.qH)(e.type, e), N(function(e) {
+              (0, h.qH)(e.type, e), O(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     a = Object.keys(n);
@@ -110,10 +110,10 @@ function C(e) {
                   userId: T,
                   section: _.oh.WIDGETS
                 }).then(() => {
-                  l(j.L.TAKE_ACTION), C()
+                  r(j.L.TAKE_ACTION), C()
                 }).finally(() => E(false))
               },
-              analyticsLocations: Z
+              analyticsLocations: D
             })
           },
           loading: S

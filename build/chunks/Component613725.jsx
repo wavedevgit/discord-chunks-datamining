@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 613725, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -30,27 +30,27 @@ function m() {
       guildId: t,
       channelId: n
     }
-  }, Chunk55160.X), n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module)), m = (0, Chunk442837.e7)([Chunk592125.Z], () => null == require ? Chunk592125.Z.getChannel(exports) : null), g = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), b = null != m ? (0, Chunk43267.x)(m) : null, y = null != g ? g.getAvatarURL(module, 80) : Chunk768581.pK["0"], C = (0, Chunk54381.jsx)(Chunk481060.qEK, {
-    src: y,
+  }, Chunk55160.X), n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module)), m = (0, Chunk442837.e7)([Chunk592125.Z], () => null == require ? Chunk592125.Z.getChannel(exports) : null), g = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), b = null != m ? (0, Chunk43267.x)(m) : null, C = null != g ? g.getAvatarURL(module, 80) : Chunk768581.pK["0"], y = (0, Chunk54381.jsx)(Chunk481060.qEK, {
+    src: C,
     "aria-hidden": true,
     size: Chunk481060.EFr.SIZE_80,
     className: Chunk870515.avatarSizeOverride
-  }), v = null;
-  return v = null != require ? (0, Chunk54381.jsx)(Chunk565138.Z, {
+  }), _ = null;
+  return _ = null != require ? (0, Chunk54381.jsx)(Chunk565138.Z, {
     guild: require
   }) : null != b ? (0, Chunk54381.jsx)(Chunk481060.qEK, {
     "aria-hidden": true,
     src: b,
     size: Chunk481060.EFr.SIZE_80,
     className: Chunk870515.avatarSizeOverride
-  }) : C, (0, Chunk54381.jsxs)("div", {
+  }) : y, (0, Chunk54381.jsxs)("div", {
     className: Chunk870515.container,
     children: [(0, Chunk54381.jsx)("div", {
       className: Chunk870515.personAvatar,
-      children: C
+      children: y
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk870515.guildAvatar,
-      children: v
+      children: _
     }), (0, Chunk54381.jsx)("svg", {
       className: Chunk870515.illustration,
       xmlns: "http://www.w3.org/2000/svg",

@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 7782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -34,7 +34,7 @@ let T = e => {
     let {
       userId: t,
       channelId: n
-    } = e, l = (0, s.e7)([C.Z], () => C.Z.getMutualGuilds(t), [t]), a = r.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
+    } = e, l = (0, s.e7)([y.Z], () => y.Z.getMutualGuilds(t), [t]), a = r.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
       let {
         guild: n
       } = e, r = null != n ? E.ZP.getGuildIconURL({
@@ -67,7 +67,7 @@ let T = e => {
         children: a
       }), (0, i.jsx)(c.P3F, {
         onClick: () => {
-          (0, v.openUserProfileModal)({
+          (0, _.openUserProfileModal)({
             userId: t,
             channelId: n,
             section: P.oh.MUTUAL_GUILDS,
@@ -181,9 +181,9 @@ let T = e => {
     } = e, l = r.useCallback(() => {
       (0, c.showToast)((0, c.createToast)(I.intl.string(I.t.a2j0hv), c.ToastType.FAILURE))
     }, []), a = r.useCallback(() => {
-      y.Z.closeChannelSidebar(_.uZ)
+      C.Z.closeChannelSidebar(v.uZ)
     }, []), o = r.useCallback(() => {
-      y.Z.closeChannelSidebar(_.uZ)
+      C.Z.closeChannelSidebar(v.uZ)
     }, []), {
       acceptMessageRequest: s,
       rejectMessageRequest: u,
@@ -222,7 +222,7 @@ let T = e => {
       showingBanner: r
     } = e, {
       channelId: l
-    } = (0, g._)(), u = (0, s.e7)([f.Z], () => null != l && f.Z.isSpam(l), [l]), d = (0, s.e7)([O.Z], () => O.Z.getRelationshipType(t), [t]), p = n.id === l, h = !o.tq && !p, m = !!o.tq || p || u, y = u || p ? (0, i.jsxs)("div", {
+    } = (0, g._)(), u = (0, s.e7)([f.Z], () => null != l && f.Z.isSpam(l), [l]), d = (0, s.e7)([O.Z], () => O.Z.getRelationshipType(t), [t]), p = n.id === l, h = !o.tq && !p, m = !!o.tq || p || u, C = u || p ? (0, i.jsxs)("div", {
       className: Z.inline,
       children: [(0, i.jsx)(A, {
         channelId: n.id,
@@ -241,7 +241,7 @@ let T = e => {
         channel: n,
         navigateAwayOnReportSuccess: h
       })]
-    }), C = d !== S.OGo.PENDING_INCOMING || u || p ? null : (0, i.jsx)(c.Text, {
+    }), y = d !== S.OGo.PENDING_INCOMING || u || p ? null : (0, i.jsx)(c.Text, {
       color: "text-default",
       variant: "text-sm/normal",
       children: I.intl.string(I.t.c2v5nO)
@@ -258,7 +258,7 @@ let T = e => {
         className: Z.divider
       }), (0, i.jsxs)("div", {
         className: a()(Z.inline, Z.wrap),
-        children: [C, y]
+        children: [y, C]
       })]
     })
   }

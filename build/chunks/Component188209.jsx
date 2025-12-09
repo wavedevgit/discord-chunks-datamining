@@ -13,7 +13,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk110924 = require("./110924.js"),
   Chunk448986 = require("./448986.js"),
   Chunk475271 = require("./475271.jsx"),
-  Chunk63954 = require("./63954.jsx"),
   Chunk454585 = require("./454585.js"),
   Chunk246946 = require("./246946.js"),
   Chunk572004 = require("./572004.js"),
@@ -33,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk238905 = require("./238905.js");
 
-function D(e) {
+function I(e) {
   let {
     rewardCode: t,
     questContent: n,
@@ -41,89 +40,85 @@ function D(e) {
     sourceQuestContent: i,
     className: l,
     inputClassName: u
-  } = e, d = (0, o.e7)([f.Z], () => f.Z.hidePersonalInformation), m = (0, x.O5)();
+  } = e, d = (0, o.e7)([C.Z], () => C.Z.hidePersonalInformation), m = (0, j.O5)();
   return null == t ? null : (0, r.jsx)(c.Z, {
     className: l,
     inputClassName: u,
-    value: d ? A.intl.string(A.t["0n2u0k"]) : t.code,
+    value: d ? T.intl.string(T.t["0n2u0k"]) : t.code,
     buttonColor: s.Tt.PRIMARY,
     onCopy: () => {
-      d && (0, h.JG)(t.code), m({
+      d && (0, f.JG)(t.code), m({
         questId: a,
         questContent: n,
-        questContentCTA: x.jZ.COPY_REWARD_CODE,
+        questContentCTA: j.jZ.COPY_REWARD_CODE,
         sourceQuestContent: i
       })
     }
   })
 }
 
-function R(e) {
+function D(e) {
   var t;
   let {
     quest: n,
     questContent: o,
-    questContentPosition: s,
-    sourceQuestContent: c,
-    rewardCode: u,
-    rewardPlatform: d,
-    onClose: m,
-    transitionState: p,
-    impressionRef: f
-  } = e, h = null != (t = (0, v.C1)({
+    sourceQuestContent: s,
+    rewardCode: c,
+    onClose: u,
+    transitionState: d,
+    impressionRef: m
+  } = e, C = null != (t = (0, y.C1)({
     quest: n,
-    rewardCode: u,
-    selectedPlatformType: d
-  })) ? t : "", x = a.useMemo(() => {
+    rewardCode: c
+  })) ? t : "", f = a.useMemo(() => {
     var e;
-    let t = null == (e = (0, w.o9)({
+    let t = null == (e = (0, _.o9)({
       quest: n,
       idx: 0
     })) ? true : e.redemptionLink;
-    if ((0, j.Ew)(t)) return null;
-    let r = null == u ? true : u.code;
-    return (0, j.Ew)(r) ? t : t.replace(T.Dp, encodeURIComponent(r))
-  }, [n, null == u ? true : u.code]), g = (0, _.In)({
+    if ((0, h.Ew)(t)) return null;
+    let r = null == c ? true : c.code;
+    return (0, h.Ew)(r) ? t : t.replace(E.Dp, encodeURIComponent(r))
+  }, [n, null == c ? true : c.code]), j = (0, v.In)({
     quest: n,
     questContent: o,
-    questContentPosition: s,
-    redemptionLink: x,
-    sourceQuestContent: c
+    redemptionLink: f,
+    sourceQuestContent: s
   });
   return (0, r.jsx)("div", {
-    ref: f,
+    ref: m,
     children: (0, r.jsx)(i.Modal, {
       size: "md",
-      title: A.intl.string(A.t.NkZ7OU),
-      actions: [null != x ? {
+      title: T.intl.string(T.t.NkZ7OU),
+      actions: [null != f ? {
         variant: "primary",
-        text: A.intl.string(A.t["+zx47d"]),
-        onClick: g
+        text: T.intl.string(T.t["+zx47d"]),
+        onClick: j
       } : {
         variant: "primary",
-        text: A.intl.string(A.t["/g10LC"]),
-        onClick: m
+        text: T.intl.string(T.t["/g10LC"]),
+        onClick: u
       }],
       preview: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
-          className: I.claimInstructionsCodeInputTitle,
-          children: A.intl.string(A.t.srzsU2)
-        }), (0, r.jsx)(D, {
-          rewardCode: u,
+          className: A.claimInstructionsCodeInputTitle,
+          children: T.intl.string(T.t.srzsU2)
+        }), (0, r.jsx)(I, {
+          rewardCode: c,
           questContent: o,
           questId: n.id,
-          sourceQuestContent: c
+          sourceQuestContent: s
         })]
       }),
-      onClose: m,
-      transitionState: p,
+      onClose: u,
+      transitionState: d,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        className: I.claimInstructionsText,
-        children: C.Z.parse(h, false, {
+        className: A.claimInstructionsText,
+        children: p.Z.parse(C, false, {
           allowLinks: true
         })
       })
@@ -131,7 +126,7 @@ function R(e) {
   })
 }
 
-function q(e) {
+function R(e) {
   let {
     quest: t,
     questContent: n,
@@ -140,37 +135,37 @@ function q(e) {
     onClaimInstructions: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: I.contentContainer,
+    className: A.contentContainer,
     children: [(0, r.jsx)("div", {
-      className: I.rewardTileContainer,
-      children: (0, r.jsx)(N.Z, {
-        className: I.rewardTileAsset,
+      className: A.rewardTileContainer,
+      children: (0, r.jsx)(O.Z, {
+        className: A.rewardTileAsset,
         quest: t,
         questContent: n,
-        location: T.dr.REWARD_CODE_MODAL,
+        location: E.dr.REWARD_CODE_MODAL,
         sourceQuestContent: i
       })
     }), (0, r.jsxs)("div", {
-      className: I.copyContainer,
+      className: A.copyContainer,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        className: I.heading,
-        children: A.intl.string(A.t["5j/Zym"])
+        className: A.heading,
+        children: T.intl.string(T.t["5j/Zym"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: A.intl.format(A.t["ESmp2+"], {
+        children: T.intl.format(T.t["ESmp2+"], {
           onClaimInstructions: o
         })
       })]
-    }), (0, r.jsx)(D, {
-      className: I.mainCodeInput,
+    }), (0, r.jsx)(I, {
+      className: A.mainCodeInput,
       rewardCode: a,
       questContent: n,
       questId: t.id,
       sourceQuestContent: i,
-      inputClassName: I.codeClaimInputSmallFont
+      inputClassName: A.codeClaimInputSmallFont
     })]
   })
 }
@@ -181,29 +176,24 @@ function Z(e) {
     initialQuest: n,
     onClose: i,
     transitionState: s,
-    preview: c,
-    sourceQuestContent: C,
-    questContentPosition: f
-  } = e, h = null != (t = (0, b.B4)(n.id)) ? t : n, j = (0, w.zG)(h.config), x = y.jn.REWARD_MODAL, {
-    questStoreRewardCode: v,
-    isFetchingRewardCode: N,
-    isClaimingReward: A
-  } = (0, o.cj)([g.Z], () => ({
-    questStoreRewardCode: g.Z.getRewardCode(h.id),
-    isFetchingRewardCode: g.Z.isFetchingRewardCode(h.id),
-    isClaimingReward: g.Z.isClaimingReward(h.id)
-  })), I = true === c ? (0, p.b)(h) : v, {
-    hasError: D,
-    setHasError: Z
-  } = (0, _.uL)({
-    isClaimingReward: A,
-    isFetchingRewardCode: N,
-    quest: h,
-    questContent: x,
-    requiresPlatformSelection: false,
-    rewardCode: I,
-    selectedPlatformType: j,
-    preview: c
+    sourceQuestContent: c
+  } = e, p = null != (t = (0, b.B4)(n.id)) ? t : n, C = g.jn.REWARD_MODAL, {
+    rewardCode: f,
+    isFetchingRewardCode: h,
+    isClaimingReward: j
+  } = (0, o.cj)([x.Z], () => ({
+    rewardCode: x.Z.getRewardCode(p.id),
+    isFetchingRewardCode: x.Z.isFetchingRewardCode(p.id),
+    isClaimingReward: x.Z.isClaimingReward(p.id)
+  })), {
+    hasError: y,
+    setHasError: O
+  } = (0, v.uL)({
+    isClaimingReward: j,
+    isFetchingRewardCode: h,
+    quest: p,
+    questContent: C,
+    rewardCode: f
   });
   ! function(e) {
     let t = (0, d.Z)(e),
@@ -214,33 +204,33 @@ function Z(e) {
       i && t()
     }, [i, t])
   }(() => {
-    Z(true)
+    O(true)
   });
-  let S = null == I && (N || A),
-    k = D && !A && !N;
-  return (0, r.jsx)(P.Z, {
+  let T = null == f && (h || j),
+    A = y && !j && !h;
+  return (0, r.jsx)(N.Z, {
     onClose: i,
     transitionState: s,
-    quest: h,
-    sourceQuestContent: C,
-    location: T.dr.REWARD_CODE_MODAL,
-    isRewardContentLoading: S,
-    rewardContentHasError: k,
-    rewardContent: k ? null : (0, r.jsx)(E.Z, {
-      rewardName: (0, w.w8)(h.config),
-      children: (0, r.jsx)(q, {
-        quest: h,
-        questContent: x,
-        rewardCode: I,
-        sourceQuestContent: C,
+    quest: p,
+    sourceQuestContent: c,
+    location: E.dr.REWARD_CODE_MODAL,
+    isRewardContentLoading: T,
+    rewardContentHasError: A,
+    rewardContent: A ? null : (0, r.jsx)(P.Z, {
+      rewardName: (0, _.w8)(p.config),
+      children: (0, r.jsx)(R, {
+        quest: p,
+        questContent: C,
+        rewardCode: f,
+        sourceQuestContent: c,
         onClaimInstructions: () => {
-          (0, l.ZDy)(() => Promise.resolve(e => (0, r.jsx)(O.A, {
-            questOrQuests: h,
-            questContent: x,
-            sourceQuestContent: C,
+          (0, l.ZDy)(() => Promise.resolve(e => (0, r.jsx)(w.A, {
+            questOrQuests: p,
+            questContent: C,
+            sourceQuestContent: c,
             children: t => {
               var n, a;
-              return (0, r.jsx)(R, (n = function(e) {
+              return (0, r.jsx)(D, (n = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -259,12 +249,10 @@ function Z(e) {
                 return e
               }({}, e), a = a = {
                 impressionRef: t,
-                quest: h,
-                questContent: x,
-                sourceQuestContent: C,
-                rewardCode: I,
-                rewardPlatform: j,
-                questContentPosition: f
+                quest: p,
+                questContent: C,
+                sourceQuestContent: c,
+                rewardCode: f
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {

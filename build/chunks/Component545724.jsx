@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 545724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function h(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -45,11 +45,11 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = function(e) {
+let h = function(e) {
   let {
     index: t,
     children: l,
-    user: g,
+    user: h,
     channel: m,
     onClick: _,
     isFocused: b,
@@ -68,18 +68,18 @@ let g = function(e) {
         left: false,
         right: false
       },
-      children: (0, r.jsx)(s.Z.div, h(f({
+      children: (0, r.jsx)(s.Z.div, g(f({
         className: a()(p.messageRequestItem, v, {
           [p.active]: E || C,
           [p.firstItem]: 0 === t
         }),
         onContextMenu: e => {
-          null != g && (S(true), (0, u.jW)(e, async () => {
+          null != h && (S(true), (0, u.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
-            return t => (0, r.jsx)(e, h(f({}, t), {
-              user: g
+            return t => (0, r.jsx)(e, g(f({}, t), {
+              user: h
             }))
           }, {
             onClose: () => {

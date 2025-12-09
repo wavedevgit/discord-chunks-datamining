@@ -112,7 +112,7 @@ function D(e) {
           }),
           canListenIn: l,
           buttonText: e,
-          onClose: () => (0, g.ji)({
+          onClose: () => (0, h.ji)({
             stageId: null == n ? true : n.id
           }),
           users: o.length > 5 ? o.slice(0, 5) : o,
@@ -148,7 +148,7 @@ function D(e) {
         }),
         canListenIn: l,
         buttonText: e,
-        onClose: () => (0, g.ji)({
+        onClose: () => (0, h.ji)({
           stageId: null == n ? true : n.id
         }),
         users: o.length > 5 ? o.slice(0, 5) : o,
@@ -173,7 +173,7 @@ function D(e) {
       if (null == e) return {
         noticeType: null
       };
-      let n = h.ZP.getUserCount(t.id, E);
+      let n = g.ZP.getUserCount(t.id, E);
       return {
         noticeType: 1,
         title: t.name,
@@ -187,7 +187,7 @@ function D(e) {
         }),
         canListenIn: false,
         buttonText: L.intl.string(L.t.iW6Xuo),
-        onClose: () => (0, g.ji)({
+        onClose: () => (0, h.ji)({
           eventId: null == t ? true : t.id
         }),
         users: null == s ? [] : [s],
@@ -209,7 +209,7 @@ function D(e) {
       }
     } else if (t.entity_type === w.WX.VOICE && null != i) {
       let e = (0, p.KS)(i),
-        n = h.ZP.getUserCount(t.id, E);
+        n = g.ZP.getUserCount(t.id, E);
       return {
         noticeType: 2,
         title: t.name,
@@ -221,7 +221,7 @@ function D(e) {
         }) : null,
         canListenIn: l,
         buttonText: L.intl.string(L.t.nxUtoQ),
-        onClose: () => (0, g.ji)({
+        onClose: () => (0, h.ji)({
           eventId: null == t ? true : t.id
         }),
         users: null == s ? [] : [s],

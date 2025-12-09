@@ -1,12 +1,12 @@
 /** Chunk was on 36312 **/
 /** chunk id: 153932, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
-});
+  default: () => _
+}), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk990547 = require("./990547.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk442837 = require("./442837.js"),
   Chunk194359 = require("./194359.js"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk862998 = require("./862998.js");
 
-function _(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       s = Object.keys(n);
@@ -52,56 +52,56 @@ function j(e, t) {
   }), e
 }
 
-function y(e) {
+function P(e) {
   let {
     user: t,
     status: n,
-    ignoredUser: o
+    ignoredUser: i
   } = e, {
-    analyticsLocations: i
-  } = (0, d.ZP)(), r = e => {
-    e.stopPropagation(), c.Z.cancelFriendRequest(t.id, {
+    analyticsLocations: o
+  } = (0, u.ZP)(), r = e => {
+    e.stopPropagation(), l.Z.cancelFriendRequest(t.id, {
       location: "Spam requests modal"
     })
-  }, l = e => {
-    e.stopPropagation(), c.Z.addRelationship({
+  }, a = e => {
+    e.stopPropagation(), l.Z.addRelationship({
       userId: t.id,
       context: {
         location: "Spam requests modal"
       }
     })
-  }, g = n === h.Skl.OFFLINE ? h.Skl.UNKNOWN : n, _ = o ? f.intl.string(f.t.pO68Oz) : f.intl.string(f.t["gp+Ytz"]);
+  }, f = n === g.Skl.OFFLINE ? g.Skl.UNKNOWN : n, h = i ? O.intl.string(O.t.pO68Oz) : O.intl.string(O.t["gp+Ytz"]);
   return (0, s.jsx)("div", {
-    className: O.spamRequest,
-    children: (0, s.jsx)(u.Z, {
+    className: y.spamRequest,
+    children: (0, s.jsx)(d.Z, {
       isFocused: false,
       user: t,
-      className: O.listItem,
-      activeClassName: O.active,
-      onClick: () => (0, b.openUserProfileModal)({
+      className: y.listItem,
+      activeClassName: y.active,
+      onClick: () => (0, m.openUserProfileModal)({
         userId: t.id,
-        sourceAnalyticsLocations: i
+        sourceAnalyticsLocations: o
       }),
       children: e => (0, s.jsxs)("div", {
-        className: O.listItemContents,
-        children: [(0, s.jsx)(p.Z, {
+        className: y.listItemContents,
+        children: [(0, s.jsx)(b.Z, {
           user: t,
           hovered: e,
-          status: g,
-          subText: _,
-          className: O.userInfo
+          status: f,
+          subText: h,
+          className: y.userInfo
         }), (0, s.jsxs)("div", {
-          className: O.actions,
-          children: [(0, s.jsx)(m.Z, {
-            icon: a.dz2,
-            actionType: m.Z.ActionTypes.ACCEPT,
-            tooltip: f.intl.string(f.t.Zcibdf),
-            onClick: l,
+          className: y.actions,
+          children: [(0, s.jsx)(p.Z, {
+            icon: c.dz2,
+            actionType: p.Z.ActionTypes.ACCEPT,
+            tooltip: O.intl.string(O.t.Zcibdf),
+            onClick: a,
             shouldHighlight: e
-          }), (0, s.jsx)(m.Z, {
-            icon: a.Dio,
-            actionType: m.Z.ActionTypes.DENY,
-            tooltip: f.intl.string(f.t.xuio0C),
+          }), (0, s.jsx)(p.Z, {
+            icon: c.Dio,
+            actionType: p.Z.ActionTypes.DENY,
+            tooltip: O.intl.string(O.t.xuio0C),
             onClick: r,
             shouldHighlight: e
           })]
@@ -111,53 +111,48 @@ function y(e) {
   })
 }
 
-function x(e) {
+function _(e) {
   let {
     transitionState: t,
     onClose: n
   } = e, {
-    rows: d
-  } = (0, l.cj)([g.ZP], () => g.ZP.getState()), m = d.filter(h.pJs.PENDING_IGNORED), u = d.filter(h.pJs.SPAM), p = u.length + m.length;
-  return o.useEffect(() => {
-    0 === p && n()
-  }, [p, n]), (0, s.jsxs)(a.Y0X, {
-    transitionState: t,
-    className: O.modal,
-    impression: {
-      impressionName: i.ImpressionNames.FRIEND_REQUESTS_SPAM_INBOX
+    rows: c
+  } = (0, a.cj)([f.ZP], () => f.ZP.getState()), u = c.filter(g.pJs.PENDING_IGNORED), p = c.filter(g.pJs.SPAM), d = p.length + u.length;
+  i.useEffect(() => {
+    0 === d && n()
+  }, [d, n]);
+  let b = i.useCallback(() => {
+      l.Z.clearPendingSpamAndIgnored(), n()
+    }, [n]),
+    m = i.useMemo(() => {
+      let e = [];
+      return d > 1 && e.push({
+        text: O.intl.string(O.t.O8k7O4),
+        onClick: b,
+        variant: "secondary"
+      }), e
+    }, [b, d]);
+  return (0, s.jsx)(r.u_l, {
+    title: O.intl.string(O.t.kaYqnm),
+    subtitle: O.intl.string(O.t.tRxb4H),
+    actions: m,
+    trackingProps: {
+      impression: {
+        impressionName: o.ImpressionNames.FRIEND_REQUESTS_SPAM_INBOX
+      }
     },
-    parentComponent: "OtherFriendRequestsModal",
-    children: [(0, s.jsxs)(a.xBx, {
-      separator: false,
-      className: O.modalHeader,
-      children: [(0, s.jsx)(a.Heading, {
-        variant: "heading-lg/bold",
-        className: O.heading,
-        children: f.intl.string(f.t.kaYqnm)
-      }), (0, s.jsx)(a.Text, {
-        variant: "text-md/medium",
-        color: "text-default",
-        children: f.intl.string(f.t.tRxb4H)
-      })]
-    }), (0, s.jsxs)(a.hzk, {
-      className: O.modalContent,
-      children: [m.map(e => (0, o.createElement)(y, j(_({}, e), {
+    onClose: n,
+    transitionState: t,
+    children: (0, s.jsxs)("div", {
+      className: y.modalContent,
+      children: [u.map(e => (0, i.createElement)(P, j(h({}, e), {
         isFocused: false,
         key: e.key,
         ignoredUser: true
-      }))), u.map(e => (0, o.createElement)(y, j(_({}, e), {
+      }))), p.map(e => (0, i.createElement)(P, j(h({}, e), {
         isFocused: false,
         key: e.key
       })))]
-    }), p > 1 && (0, s.jsx)("div", {
-      className: O.modalFooter,
-      children: (0, s.jsx)(r.zx, {
-        className: O.clearAllButton,
-        onClick: () => {
-          c.Z.clearPendingSpamAndIgnored(), n()
-        },
-        children: f.intl.string(f.t.O8k7O4)
-      })
-    })]
+    })
   })
 }

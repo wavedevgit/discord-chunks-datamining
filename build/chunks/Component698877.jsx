@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 698877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => s
@@ -38,11 +38,11 @@ function s(e) {
   let b = d ? a.d : a.Z;
   t = c ? u ? o.intl.string(o.t.S5anIc) : o.intl.string(o.t.q3O3J8) : s ? o.intl.string(o.t.fjBNo1) : o.intl.string(o.t.uQn9B8);
   let {
-    Component: y,
-    events: C,
-    play: v
+    Component: C,
+    events: y,
+    play: _
   } = (0, l.P)(c ? "disable" : "enable");
-  return r.useEffect(() => () => v(), [c, v]), (0, i.jsx)(b, function(e) {
+  return r.useEffect(() => () => _(), [c, _]), (0, i.jsx)(b, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -64,14 +64,14 @@ function s(e) {
     isTrayButton: true,
     label: t,
     disabled: !s,
-    iconComponent: y,
+    iconComponent: C,
     isActive: c,
     color: (f ? n = "premiumGradient" : c && (n = "green"), n),
     onMouseEnter: e => {
-      null == p || p(e), C.onMouseEnter()
+      null == p || p(e), y.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == h || h(e), C.onMouseLeave()
+      null == h || h(e), y.onMouseLeave()
     }
   }, g))
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -116,7 +116,7 @@ function A(e) {
       }) : null, (0, r.jsx)(R, {
         channel: i,
         gotoChannel: s
-      }), (0, r.jsx)(L, {
+      }), (0, r.jsx)(M, {
         channel: i,
         gotoChannel: s,
         mentionCount: c
@@ -142,7 +142,7 @@ function R(e) {
   return t.isPrivate() ? (0, r.jsx)(D, {
     channel: t,
     gotoChannel: n
-  }) : (0, r.jsx)(M, {
+  }) : (0, r.jsx)(L, {
     channel: t,
     gotoChannel: n
   })
@@ -165,7 +165,7 @@ function D(e) {
   })
 }
 
-function M(e) {
+function L(e) {
   let {
     channel: t,
     gotoChannel: n
@@ -181,7 +181,7 @@ function M(e) {
   })
 }
 
-function L(e) {
+function M(e) {
   let {
     channel: t,
     gotoChannel: n,

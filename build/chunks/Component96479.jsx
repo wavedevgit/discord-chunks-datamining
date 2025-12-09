@@ -20,21 +20,21 @@ function p(e) {
     className: n,
     channel: p,
     user: f,
-    hasSingleMessageRequest: h
+    hasSingleMessageRequest: g
   } = e, {
-    channelId: g
+    channelId: h
   } = (0, o._)();
   return (0, r.jsx)(c.Z, {
     index: t,
     className: n,
-    isFocused: g === p.id,
+    isFocused: h === p.id,
     channel: p,
     user: f,
     onClick: e => {
       e.stopPropagation(), i.Z.openPrivateChannelAsSidebar({
         channelId: p.id,
         baseChannelId: l.uZ,
-        hasSingleMessageRequest: h
+        hasSingleMessageRequest: g
       }), a.default.track(d.rMx.MESSAGE_REQUEST_PREVIEW_VIEWED, {
         is_spam: false,
         channel_id: p.id,

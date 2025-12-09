@@ -51,7 +51,7 @@ let c = {
     (0, i.ZDy)(async () => {
       let {
         default: t
-      } = await n.e("2435").then(n.bind(n, 821606));
+      } = await n.e("46683").then(n.bind(n, 821606));
       return n => (0, r.jsx)(t, l(o({}, n), {
         url: e
       }))

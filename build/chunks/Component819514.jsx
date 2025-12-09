@@ -1,7 +1,7 @@
-/** Chunk was on 81500 **/
+/** Chunk was on 83037 **/
 /** chunk id: 819514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => N
 }), require("./997841.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,7 +36,7 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,31 +48,31 @@ function Z(e) {
   }
   return e
 }
-class w extends Chunk473749.PureComponent {
+class P extends Chunk473749.PureComponent {
   render() {
     let e, t, {
         report: n,
         resolveFlag: i
       } = this.state,
-      a = this.props,
+      l = this.props,
       {
         channel: o,
         message: c,
-        showContextMenuHint: u,
-        moderatorReportData: p
+        showContextMenuHint: d,
+        moderatorReportData: f
       } = Chunk120356,
-      f = function(e, t) {
+      h = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
           var n, r, i = {},
-            a = Object.keys(e);
-          for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            l = Object.keys(e);
+          for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
           return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var a = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          var l = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
       }(Chunk120356, ["channel", "message", "showContextMenuHint", "moderatorReportData"]),
@@ -88,7 +88,7 @@ class w extends Chunk473749.PureComponent {
         onChange: this.handleToggleReport
       })
     }));
-    let g = Chunk726521 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
+    let b = Chunk726521 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
       _ = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)("div", {
           className: Chunk625221.message,
@@ -100,13 +100,13 @@ class w extends Chunk473749.PureComponent {
         }), exports, module]
       });
     if ((null == Chunk904245 ? true : Chunk904245.moderatorReportChannelId) != null) {
-      var j, S;
+      var y, S;
       let {
         isFlagResolved: e
       } = Chunk904245;
       return (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {
         value: o.guild_id,
-        children: (0, Chunk54381.jsx)(Chunk793030.Modal, (j = Z({
+        children: (0, Chunk54381.jsx)(Chunk793030.Modal, (y = I({
           title: Chunk388032.intl.string(Chunk388032.t.MWMcg7),
           subtitle: Chunk501517,
           actions: [{
@@ -129,7 +129,7 @@ class w extends Chunk473749.PureComponent {
           }
           return n
         })(Object(S)).forEach(function(e) {
-          Object.defineProperty(j, e, Object.getOwnPropertyDescriptor(S, e))
+          Object.defineProperty(y, e, Object.getOwnPropertyDescriptor(S, e))
         }), Chunk594174))
       })
     }
@@ -166,18 +166,18 @@ class w extends Chunk473749.PureComponent {
         message: r,
         moderatorReportData: i
       } = this.props, {
-        moderatorReportChannelId: a,
+        moderatorReportChannelId: l,
         isFlagResolved: o
       } = null != i ? i : {};
-      e ? (0, m.ak)(r, "message_delete_alert", () => p.Z.deleteMessage(n.id, r.id).then(() => {
-        if (null != a) {
+      e ? (0, m.ak)(r, "message_delete_alert", () => f.Z.deleteMessage(n.id, r.id).then(() => {
+        if (null != l) {
           var e, n;
-          t && !o && g.Z.resolveFlag(a), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !o && b.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
         }
-      })) : p.Z.deleteMessage(n.id, r.id).then(() => {
-        if (null != a) {
+      })) : f.Z.deleteMessage(n.id, r.id).then(() => {
+        if (null != l) {
           var e, n;
-          t && !o && g.Z.resolveFlag(a), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !o && b.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
         }
       })
     }), S(this, "handleDeleteMana", () => {
@@ -194,23 +194,23 @@ class w extends Chunk473749.PureComponent {
     })
   }
 }
-let k = {
+let N = {
   confirmPin: function(e, t) {
-    let n, i = (0, f.F6)(e, j.default, _.Z);
-    n = e.isPrivate() ? O.intl.string(O.t.hMRngA) : O.intl.formatToPlainString(O.t["3IRluI"], {
+    let n, i = (0, h.F6)(e, y.default, _.Z);
+    n = e.isPrivate() ? x.intl.string(x.t.hMRngA) : x.intl.formatToPlainString(x.t["3IRluI"], {
       channelName: i
     }), (0, c.Z)({
-      title: O.intl.string(O.t.bKMaZX),
+      title: x.intl.string(x.t.bKMaZX),
       subtitle: n,
-      confirmText: O.intl.string(O.t.rOQ5BX),
+      confirmText: x.intl.string(x.t.rOQ5BX),
       variant: "primary",
       onConfirm: () => {
-        u.Z.pinMessage(e, t.id)
+        d.Z.pinMessage(e, t.id)
       },
-      cancelText: O.intl.string(O.t["ETE/oC"]),
+      cancelText: x.intl.string(x.t["ETE/oC"]),
       children: (0, r.jsx)("div", {
-        className: C.message,
-        children: (0, r.jsx)(y.Z, {
+        className: E.message,
+        children: (0, r.jsx)(v.Z, {
           channel: e,
           message: t,
           animateAvatar: false,
@@ -221,24 +221,24 @@ let k = {
   },
   confirmUnpin: function(e, t) {
     (0, c.Z)({
-      title: O.intl.string(O.t.CFF2vL),
-      subtitle: O.intl.string(O.t.NjEPp7),
-      confirmText: O.intl.string(O.t.lAU5jB),
+      title: x.intl.string(x.t.CFF2vL),
+      subtitle: x.intl.string(x.t.NjEPp7),
+      confirmText: x.intl.string(x.t.lAU5jB),
       variant: "critical",
       onConfirm: () => {
-        u.Z.unpinMessage(e, t.id)
+        d.Z.unpinMessage(e, t.id)
       },
-      cancelText: O.intl.string(O.t["ETE/oC"]),
+      cancelText: x.intl.string(x.t["ETE/oC"]),
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: o()(C.message, C.spacing),
-          children: (0, r.jsx)(y.Z, {
+          className: o()(E.message, E.spacing),
+          children: (0, r.jsx)(v.Z, {
             channel: e,
             message: t,
             disableInteraction: true
           })
-        }), (0, r.jsx)(b.Z, {
-          children: O.intl.format(O.t.oCVB3Y, {})
+        }), (0, r.jsx)(p.Z, {
+          children: x.intl.format(x.t.oCVB3Y, {})
         })]
       })
     })
@@ -246,23 +246,23 @@ let k = {
   confirmDelete: function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : true;
-    (0, d.h7j)(a => (0, r.jsx)(w, Z({
+    (0, u.h7j)(l => (0, r.jsx)(P, I({
       channel: e,
       message: t,
       showContextMenuHint: n,
       moderatorReportData: i
-    }, a)))
+    }, l)))
   },
   confirmEdit: function(e, t, n) {
     (0, c.Z)({
-      title: O.intl.string(O.t.aIz1oV),
-      subtitle: O.intl.string(O.t.grBcM8),
-      confirmText: O.intl.string(O.t["cY+Oob"]),
+      title: x.intl.string(x.t.aIz1oV),
+      subtitle: x.intl.string(x.t.grBcM8),
+      confirmText: x.intl.string(x.t["cY+Oob"]),
       variant: "primary",
       onConfirm: () => {
-        p.Z.editMessage(e, t, n)
+        f.Z.editMessage(e, t, n)
       },
-      cancelText: O.intl.string(O.t["ETE/oC"])
+      cancelText: x.intl.string(x.t["ETE/oC"])
     })
   }
 }

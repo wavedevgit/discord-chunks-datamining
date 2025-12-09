@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 62072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -43,10 +43,10 @@ let I = function(e, t, n) {
     let R = p.default.getId();
     switch (n.key.toLowerCase()) {
       case "backspace":
-        i && (y.Z.can(P.Plq.MANAGE_MESSAGES, M) || w.canDeleteOwnMessage(R)) && (n.preventDefault(), (0, S.$Z)(M, w, n));
+        i && (C.Z.can(P.Plq.MANAGE_MESSAGES, M) || w.canDeleteOwnMessage(R)) && (n.preventDefault(), (0, S.$Z)(M, w, n));
         break;
       case "c":
-        ((0, _.isMac)() ? N : T) && C.wS && (n.preventDefault(), (0, C.JG)(w.content));
+        ((0, v.isMac)() ? N : T) && y.wS && (n.preventDefault(), (0, y.JG)(w.content));
         break;
       case "e":
         i && !M.isSystemDM() && (0, x.Z)(w, R) && (n.preventDefault(), (0, S.Hd)(M, w));
@@ -64,13 +64,13 @@ let I = function(e, t, n) {
               channel: e,
               canChat: t,
               renderReactions: n,
-              canAddNewReactions: t && y.Z.can(P.Plq.ADD_REACTIONS, e),
+              canAddNewReactions: t && C.Z.can(P.Plq.ADD_REACTIONS, e),
               isLurking: null != e.guild_id && o.Z.isLurking(e.guild_id),
               isGuest: null != e.guild_id && m.ZP.isCurrentUserGuest(e.guild_id),
               isActiveChannelOrUnarchivableThread: (0, c.RG)(e)
             });
           return !i && n
-        }(M) && (n.preventDefault(), v.S.dispatchKeyed(P.LPv.TOGGLE_REACTION_POPOUT, w.id, {
+        }(M) && (n.preventDefault(), _.S.dispatchKeyed(P.LPv.TOGGLE_REACTION_POPOUT, w.id, {
           emojiPicker: true
         }));
         break;
@@ -94,7 +94,7 @@ let I = function(e, t, n) {
         Z && (n.preventDefault(), (0, S.B8)(M, w));
         break;
       case "escape":
-        f.Z.isEditing(M.id, w.id) ? r.Z.endEditMessage(M.id) : v.S.dispatch(P.CkL.TEXTAREA_FOCUS)
+        f.Z.isEditing(M.id, w.id) ? r.Z.endEditMessage(M.id) : _.S.dispatch(P.CkL.TEXTAREA_FOCUS)
     }
   }, [e, t])
 }

@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk454703 = require("./454703.js");
-let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
+let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
   m = function(e) {
     let {
       guild: t,
@@ -36,7 +36,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       className: N
     } = e;
     i.useEffect(() => {
-      g(p.rMx.CHANNEL_NOTICE_VIEWED, {
+      h(p.rMx.CHANNEL_NOTICE_VIEWED, {
         notice_type: m,
         guild_id: t.id
       })
@@ -44,7 +44,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
     let j = null;
     "function" == typeof C ? j = C() : null != C && (j = (0, r.jsx)(o.zx, {
       "data-migration-pending": true,
-      className: h.button,
+      className: g.button,
       size: o.zx.Sizes.SMALL,
       onClick: () => {
         null != m && d.default.track(p.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
@@ -61,17 +61,17 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
     "function" == typeof n ? P = n() : null != n && (P = (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "header-primary",
-      className: a()(h.title, {
-        [h.noImageTitle]: null == s
+      className: a()(g.title, {
+        [g.noImageTitle]: null == s
       }, {
-        [h.center]: T
+        [g.center]: T
       }),
       children: n
     }));
     let x = null;
     "function" == typeof l ? x = l() : null != l && (x = (0, r.jsx)(c.Text, {
       className: a()({
-        [h.center]: T
+        [g.center]: T
       }),
       variant: "text-sm/normal",
       color: "text-muted",
@@ -79,35 +79,35 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
     }));
     let A = null != b ? "".concat(b, "px") : "16px";
     return (0, r.jsxs)("div", {
-      className: a()(h.container, N),
+      className: a()(g.container, N),
       children: [true === v ? null : (0, r.jsx)(c.P3F, {
         onClick: () => {
           u.ZP.trackWithMetadata(p.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: m
           }), null == y || y()
         },
-        className: h.close,
+        className: g.close,
         "aria-label": f.intl.string(f.t.WAI6xu),
         children: (0, r.jsx)(c.Dio, {
           size: "md",
           color: "currentColor",
-          className: h.closeIcon
+          className: g.closeIcon
         })
       }), null != s && (0, r.jsx)("div", {
-        className: h.imageContainer,
+        className: g.imageContainer,
         style: {
           marginTop: "".concat(E, "px"),
           marginLeft: A,
           marginRight: A
         },
         children: (0, r.jsx)("img", {
-          className: h.image,
+          className: g.image,
           style: _,
           src: s,
           alt: ""
         })
       }), (0, r.jsxs)("div", {
-        className: h.message,
+        className: g.message,
         children: [P, x, j]
       })]
     })

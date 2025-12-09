@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 309494, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk320161 = require("./320161.jsx"),
   Chunk572004 = require("./572004.js"),
@@ -20,7 +20,7 @@ function p(e) {
     user: t,
     isVisible: n
   } = e, {
-    trackUserProfileAction: l
+    trackUserProfileAction: r
   } = (0, d.KZ)();
   return o.wS ? (0, a.jsx)(s.Z, {
     text: u.intl.string(u.t.y5MwJy),
@@ -30,12 +30,12 @@ function p(e) {
       decoration: "never",
       identifiable: "always"
     }),
-    onCopy: () => l({
+    onCopy: () => r({
       action: "COPY_USERNAME"
     }),
     children: e => {
-      var t, l;
-      return (0, a.jsx)(i.P3F, (t = function(e) {
+      var t, r;
+      return (0, a.jsx)(l.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(n);
@@ -52,24 +52,24 @@ function p(e) {
           })
         }
         return e
-      }({}, e), l = l = {
-        className: r()(m.copyButton, {
+      }({}, e), r = r = {
+        className: i()(m.copyButton, {
           [m.visible]: n
         }),
         "aria-label": u.intl.string(u.t.y5MwJy),
-        children: (0, a.jsx)(i.TIy, {
+        children: (0, a.jsx)(l.TIy, {
           size: "xs",
           color: "currentColor"
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e);
           n.push.apply(n, a)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), t))
     }
   }) : null

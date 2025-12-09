@@ -13,7 +13,7 @@ var Chunk238679 = require("./238679.js"),
   Chunk701488 = require("./701488.js");
 
 function u(e, t, n) {
-  var u, d, p, f, h, g;
+  var u, d, p, f, g, h;
   switch (t) {
     case o.zMe.ACTIVITY_PIP_MODE_UPDATE: {
       let t = null == (u = e.application) ? true : u.id,
@@ -51,7 +51,7 @@ function u(e, t, n) {
       return {
         quest_id: t,
         is_enrolled: (null == (f = r.userStatus) ? true : f.enrolledAt) != null,
-        enrolled_at: null != (g = null == (h = r.userStatus) ? true : h.enrolledAt) ? g : null
+        enrolled_at: null != (h = null == (g = r.userStatus) ? true : g.enrolledAt) ? h : null
       }
     }
     default:

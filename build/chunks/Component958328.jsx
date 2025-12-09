@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 958328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -25,15 +25,15 @@ function v(e) {
   let {
     title: t,
     can: n
-  } = e, l = n ? o.dz2 : o.Dio, i = (0, a.jsx)("div", {
-    className: r()(g.iconOuter, n ? g.iconCheck : g.iconCross),
-    children: (0, a.jsx)(l, {
+  } = e, r = n ? o.dz2 : o.Dio, l = (0, a.jsx)("div", {
+    className: i()(g.iconOuter, n ? g.iconCheck : g.iconCross),
+    children: (0, a.jsx)(r, {
       className: g.icon
     })
   });
   return (0, a.jsxs)("div", {
     className: g.scope,
-    children: [i, (0, a.jsx)("div", {
+    children: [l, (0, a.jsx)("div", {
       className: g.scopeInner,
       children: (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
@@ -47,7 +47,7 @@ function j() {
   let e = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()),
     t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(module)),
-    l = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)),
+    r = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)),
     j = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(require)),
     _ = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(Chunk120356)),
     y = (0, Chunk933557.ZP)(require, true),
@@ -57,24 +57,24 @@ function j() {
       let {
         title: t,
         flag: n
-      } = e, l = i.e$(j, n);
+      } = e, r = l.e$(j, n);
       return (0, a.jsx)(v, {
         title: t,
-        can: l
+        can: r
       }, t)
     }),
-    N = Object.values(null != S ? S : {}).map(e => {
+    O = Object.values(null != S ? S : {}).map(e => {
       let {
         title: t,
         flag: n
-      } = e, l = i.e$(_, n);
+      } = e, r = l.e$(_, n);
       return (0, a.jsx)(v, {
         title: t,
-        can: l
+        can: r
       }, t)
     });
   return (0, Chunk54381.jsx)("div", {
-    className: r()(Chunk451429.panel, Chunk989295.panel),
+    className: i()(Chunk451429.panel, Chunk989295.panel),
     children: (0, Chunk54381.jsxs)("div", {
       className: Chunk989295.panelInner,
       children: [(0, Chunk54381.jsxs)("section", {
@@ -88,7 +88,7 @@ function j() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           children: null != Chunk120356 ? "Permissions in ".concat(Chunk120356.name) : "No guild selected"
-        }), N]
+        }), O]
       })]
     })
   })

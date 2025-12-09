@@ -1,7 +1,7 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 459502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -23,15 +23,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk837815 = require("./837815.js");
 
-function _(e) {
+function v(e) {
   let {
     channelId: t,
-    showDismiss: _ = true
+    showDismiss: v = true
   } = e, O = (0, r.e7)([u.Z], () => u.Z.getChannel(t), [t]), x = (0, g.sz)(t), E = null != (0, g.qY)(t), {
     canManageGuildEvent: j
   } = (0, o.XJ)(O), S = (0, r.e7)([d.Z], () => x.filter(e => !d.Z.isEventDismissed(e.id)), [x]), P = (0, r.cj)([h.ZP], () => S.reduce((e, t) => (e[t.id] = h.ZP.getUserCount(t.id, (0, b.DK)(t)), e), {}), [S]);
   return S.length < 1 || E ? null : (0, i.jsx)(i.Fragment, {
-    children: S.map(e => (0, i.jsx)(y.Z, {
+    children: S.map(e => (0, i.jsx)(C.Z, {
       icon: (0, i.jsx)(a.Que, {
         size: "custom",
         color: "currentColor",
@@ -39,10 +39,10 @@ function _(e) {
         width: 20
       }),
       color: l.Z.unsafe_rawColors.GREEN_360.css,
-      title: C.intl.formatToPlainString(j(e) ? C.t["1vGXqM"] : C.t.xMJyla, {
+      title: y.intl.formatToPlainString(j(e) ? y.t["1vGXqM"] : y.t.xMJyla, {
         eventName: e.name
       }),
-      description: C.intl.formatToPlainString(C.t.PTebCR, {
+      description: y.intl.formatToPlainString(y.t.PTebCR, {
         startTime: (0, b.ub)(e.scheduled_start_time).startDateTimeString
       }),
       onClick: () => (function(e) {
@@ -90,12 +90,12 @@ function _(e) {
           eventId: e.id
         })
       })(e),
-      onDismiss: _ ? () => {
+      onDismiss: v ? () => {
         var t;
         return t = e.id, void(0, m.Xy)(t)
       } : true,
       userCount: P[e.id],
-      className: v.eventPrompt
+      className: _.eventPrompt
     }, e.id))
   })
 }

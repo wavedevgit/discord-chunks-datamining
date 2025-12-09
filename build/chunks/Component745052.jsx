@@ -105,7 +105,7 @@ function ei() {
     }),
     f = (0, Chunk209613.Z)("message-requests-list"),
     {
-      channelId: h
+      channelId: g
     } = (0, Chunk488634._)(),
     m = Chunk473749.useCallback(() => {
       Chunk907862(require.map(e => e.channel.id))
@@ -118,8 +118,8 @@ function ei() {
       return (0, r.jsx)(W.Z, {
         index: s,
         className: a()({
-          [ee.selected]: null != h && h === u,
-          [ee.siblingSelected]: null != h && h === c
+          [ee.selected]: null != g && g === u,
+          [ee.siblingSelected]: null != g && g === c
         }),
         channel: o.channel,
         user: o.user,
@@ -281,18 +281,18 @@ let eo = (0, Chunk112724.Z)(function(e) {
   let l = (0, c.e7)([x.Z], () => x.Z.theme),
     s = (0, z.w)(),
     [u, d] = i.useState(false),
-    h = (0, c.e7)([w.ZP], () => {
+    g = (0, c.e7)([w.ZP], () => {
       let e = w.ZP.getSidebarState(w.uZ);
       return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
-    g = null == h ? true : h.channelId,
-    _ = null != h,
-    b = (0, k.T)(g),
-    E = (0, M.J)(g),
+    h = null == g ? true : g.channelId,
+    _ = null != g,
+    b = (0, k.T)(h),
+    E = (0, M.J)(h),
     O = i.useRef(null);
   i.useEffect(() => {
-    null != g && !b && E && _ && ((0, T.Kh)(g), N.Z.closeChannelSidebar(w.uZ))
-  }, [g, E, _, b]);
+    null != h && !b && E && _ && ((0, T.Kh)(h), N.Z.closeChannelSidebar(w.uZ))
+  }, [h, E, _, b]);
   let [y, I] = i.useState(K.pS.REQUESTS), A = e => {
     I(e)
   };

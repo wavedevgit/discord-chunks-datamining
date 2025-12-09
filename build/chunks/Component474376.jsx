@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 474376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => _
@@ -24,19 +24,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk681285 = require("./681285.js");
 
 function _(e) {
-  let t = (0, l.e7)([u.default], () => u.default.getCurrentUser()),
-    n = (0, l.e7)([d.Z], () => d.Z.hidePersonalInformation),
-    _ = (0, l.e7)([o.Z], () => (0, i.wj)(o.Z.theme)),
+  let t = (0, r.e7)([u.default], () => u.default.getCurrentUser()),
+    n = (0, r.e7)([d.Z], () => d.Z.hidePersonalInformation),
+    _ = (0, r.e7)([o.Z], () => (0, l.wj)(o.Z.theme)),
     {
       multiAccountUsers: y
     } = (0, f.L)(),
-    C = y.map(l => {
-      let i = new c.Z(l),
-        o = i.id === (null == t ? true : t.id),
-        d = l.tokenStatus === x.q.INVALID,
-        u = n ? null : "#".concat(i.discriminator);
+    C = y.map(r => {
+      let l = new c.Z(r),
+        o = l.id === (null == t ? true : t.id),
+        d = r.tokenStatus === x.q.INVALID,
+        u = n ? null : "#".concat(l.discriminator);
       return (0, a.jsx)(s.sNh, {
-        id: i.id,
+        id: l.id,
         focusedClassName: j.focused,
         label: e => {
           let {
@@ -45,31 +45,31 @@ function _(e) {
           return (0, a.jsxs)("div", {
             className: j.userMenuItem,
             children: [(0, a.jsx)(s.qEK, {
-              src: i.getAvatarURL(true, 40),
+              src: l.getAvatarURL(true, 40),
               size: s.EFr.SIZE_24,
-              "aria-label": l.username
+              "aria-label": r.username
             }), (0, a.jsxs)("div", {
               className: j.userMenuUsername,
               children: [(0, a.jsx)(s.Text, {
                 className: j.userMenuText,
                 variant: "text-sm/normal",
-                children: p.ZP.getUserTag(i, {
+                children: p.ZP.getUserTag(l, {
                   mode: "username",
                   identifiable: n ? "never" : "always"
                 })
-              }), !i.hasUniqueUsername() && (0, a.jsx)(s.Text, {
+              }), !l.hasUniqueUsername() && (0, a.jsx)(s.Text, {
                 className: j.userMenuDiscriminator,
                 variant: "text-sm/normal",
                 children: u
               })]
             }), o && (0, a.jsx)(s.owK, {
               size: "sm",
-              color: t ? r.Z.unsafe_rawColors.WHITE_500.css : r.Z.unsafe_rawColors.BRAND_500.css,
-              secondaryColor: t && _ || t && !_ ? r.Z.unsafe_rawColors.BRAND_500.css : r.Z.unsafe_rawColors.WHITE_500.css,
+              color: t ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.BRAND_500.css,
+              secondaryColor: t && _ || t && !_ ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE_500.css,
               className: j.activeIcon
             }), d && (0, a.jsx)(s.Mgn, {
-              color: r.Z.unsafe_rawColors.RED_400.css,
-              secondaryColor: t && _ || t && !_ ? r.Z.unsafe_rawColors.BRAND_500.css : r.Z.unsafe_rawColors.WHITE_500.css,
+              color: i.Z.unsafe_rawColors.RED_400.css,
+              secondaryColor: t && _ || t && !_ ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE_500.css,
               size: "xs",
               className: j.activeIcon
             })]
@@ -79,14 +79,14 @@ function _(e) {
           if (null == e || e(), d)(0, g.Z)();
           else {
             var n;
-            (n = i.id) !== (null == t ? true : t.id) && (m.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+            (n = l.id) !== (null == t ? true : t.id) && (m.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
               location: {
                 section: b.jXE.USER_PROFILE
               }
             }), h.yD(n))
           }
         }
-      }, i.id)
+      }, l.id)
     });
   return C.push((0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.Clw, {}), (0, a.jsx)(s.sNh, {

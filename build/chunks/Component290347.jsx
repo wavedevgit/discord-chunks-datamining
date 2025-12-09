@@ -135,7 +135,7 @@ function Z(e) {
       r = ea.current;
     return es.current && (J(n += t), eo.current || $(r += t)), K(e), [n, r]
   }
-  return (0, h.Z)({
+  return (0, g.Z)({
     type: s.ImpressionTypes.MODAL,
     name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
@@ -246,7 +246,7 @@ function Z(e) {
               default: e.isDefault
             }, e.locale)
           })
-        }) : "embed" === Z.type ? (0, r.jsx)(g.BC, {
+        }) : "embed" === Z.type ? (0, r.jsx)(h.BC, {
           className: a()(T.video, w),
           allowFullScreen: false,
           href: Z.href,

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 258220, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h,
+  default: () => g,
   r: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -16,12 +16,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 let f = "Activity Encourages Hardware Acceleration";
 
-function h(e) {
+function g(e) {
   var t;
   let {
     applicationId: n,
-    transitionState: h,
-    onClose: g
+    transitionState: g,
+    onClose: h
   } = e, [m, _] = i.useState(false), [b] = (0, o.Z)([n]), E = null != (t = null == b ? true : b.name) ? t : "This Activity";
   i.useEffect(() => {
     c.default.track(d.rMx.OPEN_MODAL, {
@@ -35,7 +35,7 @@ function h(e) {
     })), c.default.track(d.rMx.MODAL_DISMISSED, {
       type: f,
       dismiss_type: e
-    }), await g()
+    }), await h()
   }, v = async () => {
     c.default.track(d.rMx.ACTIVITY_ENABLE_HARDWARE_ACCELERATION, {
       application_id: n
@@ -43,7 +43,7 @@ function h(e) {
   };
   return (0, r.jsx)(l.Modal, {
     size: "md",
-    transitionState: h,
+    transitionState: g,
     onClose: O,
     "aria-label": p.intl.string(p.t.NQkK4l),
     title: p.intl.string(p.t.NQkK4l),

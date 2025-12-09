@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 840780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ew
@@ -495,8 +495,8 @@ let ew = (0, Chunk730749.Z)(function(e) {
     w = (0, S.Z)() && null != I && (0, x.R)(),
     T = (0, u.e7)([ei.Z], () => (0, V.Z)(ei.Z) && (0, eh.isWindows)()),
     R = (0, u.e7)([eo.Z], () => null != o ? eo.Z.findActivity(o, e => e.type === ey.IIU.PLAYING) : null),
-    M = null != p && p.ownerId === o && p.state !== ey.jm8.ENDED,
-    L = (0, u.e7)([ec.default, ea.Z], () => null != f ? (0, A.F6)(f, ec.default, ea.Z) : true),
+    L = null != p && p.ownerId === o && p.state !== ey.jm8.ENDED,
+    M = (0, u.e7)([ec.default, ea.Z], () => null != f ? (0, A.F6)(f, ec.default, ea.Z) : true),
     k = (0, q.Z)(),
     [B, H] = i.useState(false),
     W = (0, u.e7)([Y.Z], () => Y.Z.getWindowOpen(ey.KJ3.ACTIVITY_POPOUT)),
@@ -542,12 +542,12 @@ let ew = (0, Chunk730749.Z)(function(e) {
     runningGame: null != C ? C : a,
     application: O,
     useReducedMotion: m,
-    isStreaming: M,
+    isStreaming: L,
     channel: f,
     canStream: y,
     stream: p,
     streamMetadata: g,
-    channelName: L,
+    channelName: M,
     guildForConnectedChannel: h,
     streamQualityIndicator: k,
     isForceShowSharingPopout: B,

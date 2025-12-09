@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 18868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => h
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk310752 = require("./310752.jsx"),
   Chunk897842 = require("./897842.jsx"),
@@ -49,15 +49,15 @@ let m = () => {
     let {
       className: t,
       onDrop: n,
-      children: r
-    } = e, [h, x] = l.useState(false), f = l.useRef(null), g = l.useCallback(e => {
+      children: i
+    } = e, [h, x] = r.useState(false), f = r.useRef(null), g = r.useCallback(e => {
       p(e), x(true), (0, s.Mr3)(c.A)
-    }, []), b = l.useCallback(e => {
+    }, []), b = r.useCallback(e => {
       p(e);
       let t = f.current,
         n = e.relatedTarget;
       null != n && (null == t || t.contains(n)) || x(false)
-    }, []), v = l.useCallback(async e => {
+    }, []), v = r.useCallback(async e => {
       p(e), x(false);
       let t = e.dataTransfer;
       if (null == t) return void m();
@@ -69,12 +69,12 @@ let m = () => {
     }, [n]);
     return (0, a.jsxs)("div", {
       ref: f,
-      className: i()(t, u.wrapper),
+      className: l()(t, u.wrapper),
       onDragEnter: g,
       onDragOver: p,
       onDragLeave: b,
       onDrop: v,
-      children: [r, h && (0, a.jsx)("div", {
+      children: [i, h && (0, a.jsx)("div", {
         className: u.uploadModal,
         children: (0, a.jsxs)("div", {
           className: u.inner,

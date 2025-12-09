@@ -237,7 +237,7 @@ class el extends Chunk473749.Component {
         let l = p.Z.getSendMessageOptionsForReply(i);
         return (p.Z.sendMessage(n.id, I.ZP.parse(n, t), true, er(ei({}, l), {
           location: $.dy.OVERLAY
-        })), this.setState((0, x.H2)()), (0, T.A6)(n.id), r) ? (f.Z.deactivateAllRegions(), {
+        })), this.setState((0, x.H2)()), (0, N.A6)(n.id), r) ? (f.Z.deactivateAllRegions(), {
           shouldClear: false,
           shouldRefocus: false
         }) : {
@@ -309,8 +309,8 @@ class ea extends Chunk473749.PureComponent {
     } = this.props;
     if (null == exports) return null;
     let g = a || Chunk430742,
-      y = !Chunk120356 && null != exports && exports.isNSFW(),
-      b = !Chunk144144 || Chunk442837;
+      _ = !Chunk120356 && null != exports && exports.isNSFW(),
+      y = !Chunk144144 || Chunk442837;
     return e = Chunk655687 && null != Chunk512722 ? (0, Chunk54381.jsx)(Chunk271172.Z, {
       guild: Chunk512722,
       channelId: exports.id
@@ -392,7 +392,7 @@ class ea extends Chunk473749.PureComponent {
       h = n && r,
       p = n && d && !r,
       f = (0, Y.Z)(l);
-    return (0, i.jsx)(q.ZP, {
+    return (0, i.jsx)(J.ZP, {
       className: o()(f, {
         [et.widgetWrapper]: !n,
         [et.widgetWrapperPinned]: n,
@@ -498,17 +498,17 @@ function ec(e) {
     p = (0, c.e7)([L.Z], () => L.Z.getGuild(r)),
     f = (0, c.e7)([A.Z], () => null != r && A.Z.didAgree(r)),
     g = null != o && o.isPrivate() ? o.getRecipientId() : null,
-    m = (0, c.e7)([N.Z], () => null != s ? N.Z.getPendingReply(s) : true),
-    _ = (0, c.e7)([W.default], () => null != g ? W.default.getUser(g) : null),
+    m = (0, c.e7)([T.Z], () => null != s ? T.Z.getPendingReply(s) : true),
+    v = (0, c.e7)([W.default], () => null != g ? W.default.getUser(g) : null),
     {
-      placeholder: v
-    } = (0, y.Z)({
+      placeholder: b
+    } = (0, _.Z)({
       channel: o
     });
-  return null != o && null != p && Q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(b.Z, {}) : (0, i.jsx)(ea, ei({
+  return null != o && null != p && Q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(y.Z, {}) : (0, i.jsx)(ea, ei({
     guild: p,
     channel: o,
-    user: _,
+    user: v,
     opacity: d,
     nsfwAgree: f,
     chatKeybind: a,
@@ -516,7 +516,7 @@ function ec(e) {
     isPreviewingInGame: h,
     pendingReply: m,
     contained: t,
-    placeholder: v,
+    placeholder: b,
     widget: Q.Odu.TEXT
   }, n))
 }

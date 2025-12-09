@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => D,
@@ -157,7 +157,7 @@ let D = Chunk473749.memo(function(e) {
     }, []), i.useEffect(() => {
       Q && (eu(false), null != es.current && (clearTimeout(es.current), es.current = null))
     }, [Q]);
-    let ed = null == et || null == H ? null : (0, r.jsx)(L, {
+    let ed = null == et || null == H ? null : (0, r.jsx)(M, {
         guildId: et,
         applicationId: H.id
       }),
@@ -193,7 +193,7 @@ let D = Chunk473749.memo(function(e) {
         icon: u.PBZ
       }),
       em = null == C ? null : (0, r.jsx)(_.Z, {}),
-      eb = !q || Q ? null : (0, r.jsx)(M, {
+      eb = !q || Q ? null : (0, r.jsx)(L, {
         runningGame: U,
         startAuthorization: () => {
           Y({
@@ -224,7 +224,7 @@ let D = Chunk473749.memo(function(e) {
       children: [null != (t = null != ed ? ed : eb) ? t : eh, ef, null != (l = null != ep ? ep : eg) ? l : em, e_]
     })
   }),
-  M = Chunk473749.forwardRef(function(e, t) {
+  L = Chunk473749.forwardRef(function(e, t) {
     let {
       runningGame: n,
       startAuthorization: i,
@@ -245,7 +245,7 @@ let D = Chunk473749.memo(function(e) {
     })
   });
 
-function L(e) {
+function M(e) {
   let {
     applicationId: t,
     guildId: n

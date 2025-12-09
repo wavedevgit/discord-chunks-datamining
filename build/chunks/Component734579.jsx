@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 734579, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -87,11 +87,11 @@ let S = Chunk473749.memo(function(e) {
         }
       })
     }, [t]),
-    M = i.useCallback(() => {
+    L = i.useCallback(() => {
       var e;
       null == (e = S.current) || e.onMouseEnter(null, 500)
     }, [S]),
-    L = i.useCallback((e, n, i, a) => (0, r.jsx)(v.m, {
+    M = i.useCallback((e, n, i, a) => (0, r.jsx)(v.m, {
       innerClassName: e,
       ref: I,
       id: "game-shop-".concat(t.id),
@@ -121,10 +121,10 @@ let S = Chunk473749.memo(function(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y.Z, {
       ref: S,
-      children: L
+      children: M
     }), P || N || (null == t ? true : t.id) !== (0, g.ac)() || Z !== s.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(_.Z, {
       onActionClick: T,
-      onRender: M,
+      onRender: L,
       onRequestClose: R,
       targetElementRef: I
     })]

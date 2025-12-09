@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 346486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => p
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,7 +10,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk55935 = require("./55935.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +36,7 @@ class u extends(r = Chunk473749.PureComponent) {
       showDays: t,
       showUnits: n,
       className: r
-    } = this.props, a = [e.days, e.hours, e.minutes, e.seconds], l = [c.intl.string(c.t["6m/6nM"]), c.intl.string(c.t.n7dksO), c.intl.string(c.t["1LyF1h"]), c.intl.string(c.t.QJyuxY)];
+    } = this.props, a = [e.days, e.hours, e.minutes, e.seconds], l = [d.intl.string(d.t["6m/6nM"]), d.intl.string(d.t.n7dksO), d.intl.string(d.t["1LyF1h"]), d.intl.string(d.t.QJyuxY)];
     if (0 === e.days) a.shift();
     else if (!t) {
       let e = a.shift();
@@ -66,13 +66,13 @@ class u extends(r = Chunk473749.PureComponent) {
     return null != exports ? exports(Chunk473749, this.defaultRender.bind(this, Chunk473749)) : this.defaultRender(Chunk473749)
   }
   constructor(...e) {
-    super(...e), d(this, "_interval", true)
+    super(...e), c(this, "_interval", true)
   }
 }
-d(u, "defaultProps", {
+c(u, "defaultProps", {
   showDays: true,
   showUnits: false,
   stopAtOneSec: false,
   intervalDuration: 1e3
 });
-let _ = u
+let p = u

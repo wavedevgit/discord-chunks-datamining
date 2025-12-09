@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 430371, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -76,21 +76,21 @@ function I(e) {
       width: k,
       height: U,
       layout: V,
-      idle: H
+      idle: B
     } = e,
     F = h.Z.getVideoComponent(),
-    B = p.default.getId(),
-    [G, z] = r.useState(null),
-    W = (0, c.Z)(G),
+    H = p.default.getId(),
+    [G, W] = r.useState(null),
+    z = (0, c.Z)(G),
     [q, K] = r.useState(true),
     [Y, X] = r.useState(false),
-    J = R.type === _.fO.ACTIVITY,
+    J = R.type === v.fO.ACTIVITY,
     Q = (0, u.Z)(J ? R.applicationId : true),
     $ = !J && null != R.streamId,
     ee = U <= 2 * P + 144,
     et = L && !ee,
     en = (0, c.Z)(et),
-    ei = V === v.AEg.MINIMUM || V === v.AEg.NORMAL,
+    ei = V === _.AEg.MINIMUM || V === _.AEg.NORMAL,
     er = !ee && (!ei || J),
     el = (0, m.Z)(er, 100),
     ea = (null != (t = (0, c.Z)(R.id)) ? t : R.id) !== R.id,
@@ -111,7 +111,7 @@ function I(e) {
       clearTimeout(e)
     }
   }, []);
-  let ef = q || null == W,
+  let ef = q || null == z,
     em = ef ? "animate-never" : "animate-always",
     eg = (0, s.q_F)({
       value: +!!et,
@@ -120,9 +120,9 @@ function I(e) {
         clamp: true
       }),
       onStart: () => X(true),
-      onChange: () => f.S.dispatch(v.CkL.REMEASURE_TARGET),
+      onChange: () => f.S.dispatch(_.CkL.REMEASURE_TARGET),
       onRest: () => {
-        X(false), f.S.dispatch(v.CkL.REMEASURE_TARGET)
+        X(false), f.S.dispatch(_.CkL.REMEASURE_TARGET)
       }
     }, em),
     eb = (0, s.q_F)({
@@ -131,19 +131,19 @@ function I(e) {
         clamp: true
       })
     }, em),
-    ey = (0, s.q_F)({
+    eC = (0, s.q_F)({
       value: eu,
       config: j(E({}, o.config.stiff), {
         clamp: true
       })
     }, en === et && eb.value.idle && !el || ea || ef ? "animate-never" : "animate-always"),
-    eC = (0, s.q_F)({
+    ey = (0, s.q_F)({
       value: n,
       config: j(E({}, o.config.stiff), {
         clamp: true
       })
     }, em),
-    ev = (0, s.Yzy)(R, {
+    e_ = (0, s.Yzy)(R, {
       keys: e => null == e ? true : e.id,
       config: j(E({}, o.config.stiff), {
         clamp: true
@@ -159,14 +159,14 @@ function I(e) {
         opacity: 0
       }
     }, em),
-    e_ = r.useCallback(e => {
-      z(e), K(false)
+    ev = r.useCallback(e => {
+      W(e), K(false)
     }, []),
-    eO = et ? [] : (0, y.n3)(T, R, B),
+    eO = et ? [] : (0, C.n3)(T, R, H),
     {
       visibleParticipants: ex,
       participantTileWidth: eE
-    } = (0, C.ZB)(k, N);
+    } = (0, y.ZB)(k, N);
   return (0, i.jsxs)("div", {
     className: a()(x.root, O.flexCenter, D),
     children: [(0, i.jsxs)("div", {
@@ -181,7 +181,7 @@ function I(e) {
         },
         children: [(0, i.jsx)(o.animated.div, {
           style: {
-            width: ey.value
+            width: eC.value
           },
           className: x.videoWrapper,
           children: (0, i.jsx)("div", {
@@ -189,7 +189,7 @@ function I(e) {
             style: {
               aspectRatio: es
             },
-            children: ev((e, t, n) => {
+            children: e_((e, t, n) => {
               let {
                 key: r
               } = n;
@@ -207,7 +207,7 @@ function I(e) {
                   onClick: l,
                   onDoubleClick: Z,
                   onContextMenu: I,
-                  onVideoResize: e_,
+                  onVideoResize: ev,
                   inCall: w,
                   popoutType: A,
                   controlsBottom: eh
@@ -217,10 +217,10 @@ function I(e) {
           })
         }), er ? (0, i.jsx)(o.animated.div, {
           className: a()(x.actionRow, {
-            [x.idle]: H
+            [x.idle]: B
           }),
           style: {
-            bottom: eC.value
+            bottom: ey.value
           },
           children: (0, i.jsx)(d.Z, {
             channelId: M.id,
@@ -235,7 +235,7 @@ function I(e) {
           opacity: eg.value,
           visibility: eg.value.to(e => 0 === e ? "hidden" : "visible")
         },
-        children: (0, i.jsx)(C.ZP, {
+        children: (0, i.jsx)(y.ZP, {
           channel: M,
           onClick: l,
           onContextMenu: I,

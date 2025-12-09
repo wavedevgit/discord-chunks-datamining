@@ -15,16 +15,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk820254 = require("./820254.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk36398 = require("./36398.js");
-let g = "isHideDevBanner",
+let h = "isHideDevBanner",
   m = () => {
     var e;
-    let [t, n] = (0, Chunk473749.useState)((null == (e = Chunk433517.K.get(g, "false")) ? true : module.toString()) === "true"), l = (0, Chunk442837.e7)([Chunk304761.C], () => {
+    let [t, n] = (0, Chunk473749.useState)((null == (e = Chunk433517.K.get(h, "false")) ? true : module.toString()) === "true"), l = (0, Chunk442837.e7)([Chunk304761.C], () => {
       var e;
       return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
     });
     if (exports) return null;
     let m = () => {
-        Chunk433517.K.set(g, true), require(true)
+        Chunk433517.K.set(h, true), require(true)
       },
       _ = () => (0, Chunk54381.jsx)(Chunk481060.P3F, {
         onClick: m,
@@ -46,7 +46,7 @@ let g = "isHideDevBanner",
       children: [(0, Chunk54381.jsx)(Chunk820254.Z, {
         className: Chunk36398.icon
       }), Chunk388032.intl.format(Chunk388032.t.uyrfYF, {
-        buildNumber: "477585"
+        buildNumber: "477603"
       }), (0, Chunk54381.jsx)(_, {})]
     }) : null
   }

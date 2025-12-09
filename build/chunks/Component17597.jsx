@@ -1,7 +1,7 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 17597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => N
+  default: () => O
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,20 +47,20 @@ function E(e) {
     }
   }) : null
 }
-let N = function(e) {
+let O = function(e) {
   let {
     transitionState: t,
     entryPoint: n,
     onClose: u,
     onComplete: j,
-    dismissable: N,
+    dismissable: O,
     classificationId: T
-  } = e, [O, P] = l.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = l.useRef(O), [w, k] = (0, c.US)([O], true, true), R = l.useMemo(() => (0, r.Z)(), []), A = l.useRef(false), Z = (0, m.GE)();
-  l.useEffect(() => {
-    I.current = w
-  }, [w]);
+  } = e, [N, P] = r.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), w = r.useRef(N), [I, k] = (0, c.US)([N], true, true), R = r.useMemo(() => (0, i.Z)(), []), A = r.useRef(false), D = (0, m.GE)();
+  r.useEffect(() => {
+    w.current = I
+  }, [I]);
   let {
-    loading: D,
+    loading: Z,
     ageVerificationMethods: L
   } = (0, b.Z)({
     onClose: () => {
@@ -71,26 +71,26 @@ let N = function(e) {
     },
     classificationId: T
   });
-  return l.useLayoutEffect(() => () => {
+  return r.useLayoutEffect(() => () => {
     if (A.current) return;
-    let e = I.current;
+    let e = w.current;
     null != e && (A.current = true, p.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: e
     }))
-  }, []), l.useEffect(() => {
+  }, []), r.useEffect(() => {
     (0, f.lA)(R, f.d_.EXPRESSIVE_PRIMARY, n)
-  }, [R, n]), (0, a.jsx)(i.ExpressiveModal, {
+  }, [R, n]), (0, a.jsx)(l.ExpressiveModal, {
     transitionState: t,
     onClose: u,
     gradientColor: "blue",
-    dismissable: N,
+    dismissable: O,
     graphic: {
       type: "image",
       src: S.Z
     },
     title: y.intl.string(y.t.JHNunj),
-    subtitle: Z ? y.intl.string(_.default["1/6wta"]) : y.intl.format(_.default.RpMIT0, {
+    subtitle: D ? y.intl.string(_.default["1/6wta"]) : y.intl.format(_.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
         x.Z.openUrl(h.Z.getArticleURL(v.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, f.x3)(R, f.d_.EXPRESSIVE_PRIMARY, f.sU.LEARN_MORE)
       }
@@ -145,14 +145,14 @@ let N = function(e) {
           let {
             title: t,
             description: n,
-            onClick: l
+            onClick: r
           } = e;
           return (0, a.jsx)(d.JZ, {
             variant: "clickable",
             title: t,
             description: n,
-            buttonDisabled: D,
-            onButtonPress: () => l(R)
+            buttonDisabled: Z,
+            onButtonPress: () => r(R)
           }, t)
         })
       })]

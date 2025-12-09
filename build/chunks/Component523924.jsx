@@ -18,8 +18,8 @@ let f = e => {
     headerId: t,
     reapplyText: n,
     onReapply: f,
-    confirmText: h,
-    onWithdrawApplication: g,
+    confirmText: g,
+    onWithdrawApplication: h,
     rejectionReason: m = null,
     guild: _ = null
   } = e, b = (0, l.e7)([c.Z], () => {
@@ -81,10 +81,10 @@ let f = e => {
           fullWidth: true
         })
       }) : null, (0, r.jsx)(s.Button, {
-        onClick: () => g(E || O),
+        onClick: () => h(E || O),
         variant: "critical-primary",
         size: "md",
-        text: h,
+        text: g,
         fullWidth: true
       })]
     })]

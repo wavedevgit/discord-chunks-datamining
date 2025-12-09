@@ -183,7 +183,7 @@ let G = {
         channel: l,
         guild: a,
         frame: o
-      } = (0, L.T)(), u = (0, g.ZP)({
+      } = (0, L.T)(), u = (0, h.ZP)({
         application: t.application,
         channelId: null == l ? true : l.id
       }), d = null != u ? O.Z.getWindow(u) : true;
@@ -281,7 +281,7 @@ let G = {
             l()
           }), n.document.body.addEventListener("focus", l, true), n.document.body.appendChild(i), i.click()
         }(async n => {
-          let l = await (0, h.kv)(r, i, n);
+          let l = await (0, g.kv)(r, i, n);
           (0, T.lm)(l) && (0, T.lm)(l.url) && !(l instanceof p.Z) ? e({
             image_url: l.url
           }): t(l)
@@ -353,8 +353,8 @@ let G = {
       if (!(0, l.yE)(null != (t = r.application.flags) ? t : 0, M.udG.EMBEDDED)) throw new x.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
-      let h = (0, w.Z)();
-      if (null == h && c) throw new x.Z({
+      let g = (0, w.Z)();
+      if (null == g && c) throw new x.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No channel found");
       if (null !== a || null !== o || null !== u) {
@@ -381,7 +381,7 @@ let G = {
           l = s.z1l;
         (O.Z.getWindowOpen(M.KJ3.ACTIVITY_POPOUT) || r.context === M.IlC.POPOUT) && (l = s.u1M), (0, b.M)({
           applicationId: f,
-          channel: h,
+          channel: g,
           command: {
             name: i,
             options: d

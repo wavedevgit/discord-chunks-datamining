@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 489977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk570140 = require("./570140.js"),
   Chunk809206 = require("./809206.js"),
@@ -30,13 +30,13 @@ class f extends Chunk317770.Z {
         isTryItOut: f
       } = e;
       if (f) return void(0, c.c_)(t);
-      let h = u.default.getCurrentUser(),
-        g = null != r ? a.I5 : i.I5,
-        m = d.ZP.canUseAnimatedAvatar(h);
-      if (m || "image/gif" !== n.type) return void g(t);
-      if (null == h) return;
+      let g = u.default.getCurrentUser(),
+        h = null != r ? a.I5 : i.I5,
+        m = d.ZP.canUseAnimatedAvatar(g);
+      if (m || "image/gif" !== n.type) return void h(t);
+      if (null == g) return;
       let _ = (0, o.SD)({
-        userId: h.id,
+        userId: g.id,
         image: t
       });
       if (!m) return void(0, s.s)({
@@ -54,8 +54,8 @@ class f extends Chunk317770.Z {
       if (i) return void(0, c.f4)(l);
       let o = u.default.getCurrentUser(),
         f = null != n ? a.g_ : c.g_,
-        h = d.ZP.canUsePremiumProfileCustomization(o);
-      return d.ZP.canUsePremiumProfileCustomization(o) ? void f(l) : null == o || h ? true : void(0, s.s)({
+        g = d.ZP.canUsePremiumProfileCustomization(o);
+      return d.ZP.canUsePremiumProfileCustomization(o) ? void f(l) : null == o || g ? true : void(0, s.s)({
         uploadType: p.pC.BANNER,
         imageSrc: l,
         analyticsSource: r
@@ -63,4 +63,4 @@ class f extends Chunk317770.Z {
     })(e) : true
   }
 }
-let h = new f
+let g = new f

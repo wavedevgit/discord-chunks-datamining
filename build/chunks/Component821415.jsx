@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 821415, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -37,7 +37,7 @@ function O(e) {
     g(1);
     try {
       await c.Z.sendActivityInvite({
-        type: y.mFx.STREAM_REQUEST,
+        type: C.mFx.STREAM_REQUEST,
         channelId: l.id,
         activity: n,
         content: "<@".concat(a, ">"),
@@ -50,12 +50,12 @@ function O(e) {
     }
     g(2)
   }
-  if (b && (t = v.intl.string(C.default.qRXats)), n.type === y.IIU.PLAYING) {
+  if (b && (t = _.intl.string(y.default.qRXats)), n.type === C.IIU.PLAYING) {
     let e = null == u ? true : u.getIconURL(46);
     return (0, i.jsxs)("div", {
-      className: _.activityRow,
+      className: v.activityRow,
       children: [(0, i.jsxs)("div", {
-        className: _.activityRowContent,
+        className: v.activityRowContent,
         children: [p || null == e ? (0, i.jsx)(s.IMN, {
           size: "custom",
           width: 46,
@@ -68,7 +68,7 @@ function O(e) {
           children: [(0, i.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
-            children: v.intl.string(v.t.BMTj28)
+            children: _.intl.string(_.t.BMTj28)
           }), (0, i.jsx)(s.Text, {
             variant: "text-md/medium",
             children: n.name
@@ -79,10 +79,10 @@ function O(e) {
         disabled: b || 2 === m,
         fullWidth: true,
         size: "sm",
-        text: 2 === m ? v.intl.string(C.default["8HU1M2"]) : v.intl.string(C.default.DKHhec),
+        text: 2 === m ? _.intl.string(y.default["8HU1M2"]) : _.intl.string(y.default.DKHhec),
         onClick: O
       }), null != t && (0, i.jsx)(s.Text, {
-        className: _.disabledReason,
+        className: v.disabledReason,
         variant: "text-xs/normal",
         color: "text-muted",
         children: t
@@ -100,19 +100,19 @@ function x(e) {
     let n = h.Z.getGameByName(e.name),
       i = h.Z.getGameByName(t.name);
     return null != n && n === i || e.name === t.name
-  }), [c]), y = null == s || !d || 0 === f.length;
+  }), [c]), C = null == s || !d || 0 === f.length;
   return ((0, u.Z)({
     type: a.ImpressionTypes.POPOUT,
     name: a.ImpressionNames.VOICE_USER_ACTIVITY_POPOUT,
     properties: {}
   }, {
-    disableTrack: y
-  }), y) ? null : (0, i.jsx)(p.Z.Provider, {
+    disableTrack: C
+  }), C) ? null : (0, i.jsx)(p.Z.Provider, {
     value: n.guild_id,
     children: (0, i.jsx)("div", {
-      className: _.root,
+      className: v.root,
       children: (0, i.jsx)("div", {
-        className: _.activityList,
+        className: v.activityList,
         children: f.map(e => (0, i.jsx)(O, {
           activity: e,
           channel: n,

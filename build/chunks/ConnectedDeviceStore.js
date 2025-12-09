@@ -15,7 +15,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk533583 = require("./533583.js"),
   Chunk65154 = require("./65154.js");
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,10 +23,10 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = {
+let h = {
     ignoredDevices: {}
   },
-  m = g,
+  m = h,
   _ = false,
   b = {},
   E = {},
@@ -60,7 +60,7 @@ function S(e, t, n) {
 }
 class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(u.Z, c.Z), m = null != e ? e : g
+    this.waitFor(u.Z, c.Z), m = null != e ? e : h
   }
   getUserAgnosticState() {
     return m
@@ -84,7 +84,7 @@ class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return y
   }
 }
-h(T, "displayName", "ConnectedDeviceStore"), h(T, "persistKey", "ConnectedDeviceStore"), h(T, "migrations", [e => {
+g(T, "displayName", "ConnectedDeviceStore"), g(T, "persistKey", "ConnectedDeviceStore"), g(T, "migrations", [e => {
   if (null == e.ignoredDevices) {
     var t, n;
     return t = function(e) {
@@ -94,7 +94,7 @@ h(T, "displayName", "ConnectedDeviceStore"), h(T, "persistKey", "ConnectedDevice
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          h(e, t, n[t])
+          g(e, t, n[t])
         })
       }
       return e

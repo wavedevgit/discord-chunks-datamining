@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 688192, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => v,
@@ -42,8 +42,8 @@ function j(e) {
     source: w
   } = e, T = l.useRef(null), A = l.useRef(null), R = null != j ? j : A, {
     trackUserProfileWishlistAction: D
-  } = (0, p.KZ)(), M = r && true === t.isOwned && null != t.gifterUserId, L = null != t.gifterUserId ? d.default.getUser(t.gifterUserId) : null, k = null != L ? h.ZP.getName(L) : null, G = M && null != L && null != k && "" !== k, U = G ? (0, i.jsx)(c.qEK, {
-    src: L.getAvatarURL(true, 48),
+  } = (0, p.KZ)(), L = r && true === t.isOwned && null != t.gifterUserId, M = null != t.gifterUserId ? d.default.getUser(t.gifterUserId) : null, k = null != M ? h.ZP.getName(M) : null, G = L && null != M && null != k && "" !== k, U = G ? (0, i.jsx)(c.qEK, {
+    src: M.getAvatarURL(true, 48),
     size: c.EFr.SIZE_48,
     "aria-label": k
   }) : true, B = (0, i.jsx)("div", {

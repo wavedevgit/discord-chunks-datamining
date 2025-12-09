@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 691867, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -14,14 +14,14 @@ var Chunk54381 = require("./54381.js"),
 function d() {
   let e = (0, Chunk442837.e7)([Chunk91311.Z], () => Chunk91311.Z.allWithDescriptions(), [], Chunk442837.pF),
     t = Chunk473749.useMemo(() => module.map(e => {
-      let [t, n, l] = e;
+      let [t, n, r] = e;
       return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(i.rsf, {
-          label: l,
+        children: [(0, a.jsx)(l.rsf, {
+          label: r,
           description: t,
           checked: n,
           onChange: e => (0, s.Z)(t, e)
-        }, t), (0, a.jsx)(i.izJ, {
+        }, t), (0, a.jsx)(l.izJ, {
           gap: 16
         })]
       })

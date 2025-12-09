@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 58755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => _
@@ -66,8 +66,8 @@ function _(e) {
     state: t,
     setState: n
   } = e, {
-    scales: r
-  } = t, [i, s] = l.useState(null), o = (0, a.jsxs)("div", {
+    scales: i
+  } = t, [l, s] = r.useState(null), o = (0, a.jsxs)("div", {
     className: f.section,
     children: [(0, a.jsx)(d.d, {
       options: j,
@@ -93,7 +93,7 @@ function _(e) {
       popoutLayerContext: h.O$
     }), (0, a.jsx)("ul", {
       className: f.overrides,
-      children: r.map(e => (0, a.jsx)("li", {
+      children: i.map(e => (0, a.jsx)("li", {
         children: (0, a.jsx)(m.P3F, {
           onClick: () => s(e.name),
           style: {
@@ -108,7 +108,7 @@ function _(e) {
         })
       }, e.name))
     })]
-  }), u = r.find(e => e.name === i), p = null != u ? (0, a.jsx)(y, {
+  }), u = i.find(e => e.name === l), p = null != u ? (0, a.jsx)(y, {
     onClose: () => s(null),
     scale: u,
     setState: n
@@ -122,7 +122,7 @@ function y(e) {
   let {
     scale: t,
     setState: n,
-    onClose: l
+    onClose: r
   } = e, {
     name: c,
     base: d,
@@ -132,13 +132,13 @@ function y(e) {
     easingStrength: _ = 1,
     useP3ColorSpace: y,
     steps: C = 26
-  } = t, E = (0, x.XM)(t), N = (0, x.W6)(E, c);
+  } = t, E = (0, x.XM)(t), O = (0, x.W6)(E, c);
   return (0, a.jsxs)(m.Kqy, {
     gap: 20,
     children: [(0, a.jsxs)("div", {
       className: f.titleWithIcon,
       children: [(0, a.jsx)(m.P3F, {
-        onClick: l,
+        onClick: r,
         style: {
           maxWidth: 80
         },
@@ -153,7 +153,7 @@ function y(e) {
           let e = Object.entries(E).reduce((e, t) => {
             let [n, a] = t;
             return e[n] = {
-              value: (0, r.Z)((0, i.Z)(a, x.HW.sRGB), {
+              value: (0, i.Z)((0, l.Z)(a, x.HW.sRGB), {
                 format: "hex"
               }),
               type: "color"
@@ -245,7 +245,7 @@ function y(e) {
         className: f.paletteOverrides,
         "data-columnar": b,
         children: Object.entries(E).map((e, n) => {
-          let [l, c] = e, d = (0, x.HI)(c), u = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", p = N[l];
+          let [r, c] = e, d = (0, x.HI)(c), u = (0, s.Z)((0, o.Z)("black"), c) > 4.5 ? "black" : "white", p = O[r];
           return (0, a.jsxs)("div", {
             style: {
               backgroundColor: d
@@ -264,11 +264,11 @@ function y(e) {
                 opacity: .75,
                 color: u
               },
-              children: [(0, r.Z)((0, i.Z)(c, x.HW.sRGB), {
+              children: [(0, i.Z)((0, l.Z)(c, x.HW.sRGB), {
                 format: "hex"
               }).toUpperCase(), " - ", d]
             })]
-          }, l)
+          }, r)
         })
       })]
     })]
@@ -279,7 +279,7 @@ function C(e) {
   let {
     scale: t,
     onRemove: n
-  } = e, s = l.useMemo(() => Object.values((0, x.XM)(t)).map(e => (0, r.Z)((0, i.Z)(e, x.HW.sRGB), {
+  } = e, s = r.useMemo(() => Object.values((0, x.XM)(t)).map(e => (0, i.Z)((0, l.Z)(e, x.HW.sRGB), {
     format: "hex"
   })), [t]);
   return (0, a.jsxs)("li", {

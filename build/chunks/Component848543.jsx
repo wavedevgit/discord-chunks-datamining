@@ -96,7 +96,7 @@ function A(e) {
     {
       analyticsLocations: H,
       parentAnalyticsLocation: V
-    } = (0, g.ZP)(h.Z.SOUNDBOARD_BUTTON);
+    } = (0, h.ZP)(g.Z.SOUNDBOARD_BUTTON);
 
   function F(e) {
     null != k && (0, f.jW)(e, async () => {
@@ -107,7 +107,7 @@ function A(e) {
         guildId: k,
         sourceAnalyticsLocations: H
       }, t), {
-        onInteraction: (0, _.u)("SoundboardContextMenu", h.Z.RTC_PANEL)
+        onInteraction: (0, _.u)("SoundboardContextMenu", g.Z.RTC_PANEL)
       }))
     })
   }
@@ -124,7 +124,7 @@ function A(e) {
   return (0, v.yp)({
     event: S.CkL.TOGGLE_SOUNDBOARD,
     handler: K
-  }), (0, r.jsx)(g.Gt, {
+  }), (0, r.jsx)(h.Gt, {
     value: H,
     children: (0, r.jsx)(u.u, {
       targetElementRef: A,

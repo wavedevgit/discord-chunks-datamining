@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 392750, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -70,13 +70,13 @@ function m() {
       otherUserId: t,
       communicationProbability: n,
       vcProbability: a,
-      isFriend: l
+      isFriend: r
     } = e;
     return {
       user: s.default.getUser(t),
       affinity: n,
       vcProbability: a,
-      isFriend: l,
+      isFriend: r,
       key: t
     }
   }));

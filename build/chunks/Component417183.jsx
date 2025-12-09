@@ -1,12 +1,12 @@
-/** Chunk was on 1272 **/
-/** chunk id: 417183, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 74969 **/
+/** chunk id: 417183, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -14,56 +14,56 @@ var Chunk54381 = require("./54381.js"),
   Chunk617015 = require("./617015.js"),
   Chunk67165 = require("./67165.js");
 
-function f(e, t, n) {
+function d(e, t, i) {
   return t in e ? Object.defineProperty(e, t, {
-    value: n,
+    value: i,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = n, e
+  }) : e[t] = i, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      f(e, t, n[t])
+    var i = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(i);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(i, e).enumerable
+    }))), n.forEach(function(t) {
+      d(e, t, i[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
+    var i = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var n = Object.getOwnPropertySymbols(e);
+      i.push.apply(i, n)
     }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    return i
+  })(Object(t)).forEach(function(i) {
+    Object.defineProperty(e, i, Object.getOwnPropertyDescriptor(t, i))
   }), e
 }
-class m extends Chunk473749.PureComponent {
+class O extends Chunk473749.PureComponent {
   componentWillLeave(e) {
-    s.Z.parallel([s.Z.timing(this.state.opacity, {
+    a.Z.parallel([a.Z.timing(this.state.opacity, {
       toValue: 0,
       duration: 200
-    }), s.Z.timing(this.state.height, {
+    }), a.Z.timing(this.state.height, {
       toValue: 0,
       duration: 200
     })]).start(e)
   }
   componentWillEnter(e) {
-    this.state.opacity.setValue(0), this.state.height.setValue(0), s.Z.parallel([s.Z.timing(this.state.opacity, {
+    this.state.opacity.setValue(0), this.state.height.setValue(0), a.Z.parallel([a.Z.timing(this.state.opacity, {
       toValue: 1,
       duration: 200
-    }), s.Z.timing(this.state.height, {
-      toValue: d.NV,
+    }), a.Z.timing(this.state.height, {
+      toValue: h.NV,
       duration: 200
     })]).start(e)
   }
@@ -71,72 +71,72 @@ class m extends Chunk473749.PureComponent {
     let {
       height: e,
       opacity: t,
-      hovered: n,
-      isContextMenuActive: i
+      hovered: i,
+      isContextMenuActive: s
     } = this.state, {
-      children: l,
-      user: u,
-      onClick: d,
-      isActive: f,
-      className: m,
-      activeClassName: _
+      children: r,
+      user: c,
+      onClick: h,
+      isActive: d,
+      className: O,
+      activeClassName: y
     } = this.props;
     return (0, Chunk54381.jsx)(Chunk91192.mh, {
       id: Chunk239091.id,
-      children: o => (0, r.jsx)(c.tEY, {
+      children: l => (0, n.jsx)(u.tEY, {
         offset: {
           left: false,
           right: false
         },
-        children: (0, r.jsx)(s.Z.div, g(h({
-          className: a()(m, p.peopleListItem, null != _ ? {
-            [_]: f || i
+        children: (0, n.jsx)(a.Z.div, N(m({
+          className: o()(O, p.peopleListItem, null != y ? {
+            [y]: d || s
           } : null, {
-            [p.active]: f || i
+            [p.active]: d || s
           }),
-          onContextMenu: e => this.handleContextMenu(e, u),
+          onContextMenu: e => this.handleContextMenu(e, c),
           onMouseEnter: this.handleMouseEnter,
           onMouseLeave: this.handleMouseLeave,
-          onClick: null != d ? d : true,
+          onClick: null != h ? h : true,
           style: {
             height: e,
             opacity: t
           }
-        }, o), {
-          children: l(n || f || i)
+        }, l), {
+          children: r(i || d || s)
         }))
       })
     })
   }
   constructor(...e) {
-    super(...e), f(this, "state", {
-      height: new s.Z.Value(d.NV),
-      opacity: new s.Z.Value(1),
+    super(...e), d(this, "state", {
+      height: new a.Z.Value(h.NV),
+      opacity: new a.Z.Value(1),
       hovered: false,
       isContextMenuActive: false
-    }), f(this, "handleMouseEnter", () => {
+    }), d(this, "handleMouseEnter", () => {
       let {
         isFocused: e,
         isActive: t,
-        onOtherHover: n
+        onOtherHover: i
       } = this.props, {
-        isContextMenuActive: r
+        isContextMenuActive: n
       } = this.state;
       this.setState({
         hovered: e
-      }), !e || t || r || null == n || n()
-    }), f(this, "handleMouseLeave", () => {
+      }), !e || t || n || null == i || i()
+    }), d(this, "handleMouseLeave", () => {
       this.setState({
         hovered: false
       })
-    }), f(this, "handleContextMenu", (e, t) => {
+    }), d(this, "handleContextMenu", (e, t) => {
       this.setState({
         isContextMenuActive: true
-      }), (0, u.jW)(e, async () => {
+      }), (0, c.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
-        return n => (0, r.jsx)(e, g(h({}, n), {
+        } = await Promise.all([i.e("79695"), i.e("69220"), i.e("77635")]).then(i.bind(i, 881351));
+        return i => (0, n.jsx)(e, N(m({}, i), {
           user: t
         }))
       }, {
@@ -149,4 +149,4 @@ class m extends Chunk473749.PureComponent {
     })
   }
 }
-let _ = m
+let y = O

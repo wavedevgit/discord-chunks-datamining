@@ -18,8 +18,8 @@ let f = function(e) {
     rows: t,
     renderRow: n,
     renderSection: f,
-    hasSearchQuery: h,
-    sectionFilter: g,
+    hasSearchQuery: g,
+    sectionFilter: h,
     footer: m,
     renderSectionFooter: _
   } = e, b = (0, s.e7)([u.Z], () => u.Z.keyboardModeEnabled), E = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, l.ZP)({
@@ -27,7 +27,7 @@ let f = function(e) {
     isEnabled: b,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), v = g !== d.pJs.ONLINE && g !== d.pJs.ALL, y = E || h || v, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
+  }), v = h !== d.pJs.ONLINE && h !== d.pJs.ALL, y = E || g || v, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
     children: [f(t), e.map(n), null == _ ? true : _(t)]
   }, t) : (0, r.jsxs)(o.W, {
     transitionAppear: false,

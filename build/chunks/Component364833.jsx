@@ -52,7 +52,7 @@ function P(e) {
   var t;
   let {
     quest: n
-  } = e, i = (0, g.B6)(n.config.expiresAt), l = (0, g.B6)(n.config.rewardsConfig.rewardsExpireAt), a = (0, s.e7)([c.Z], () => c.Z.getState().theme), u = (0, o.wjy)(a) ? S.BRd.DARK : S.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
+  } = e, i = (0, h.B6)(n.config.expiresAt), l = (0, h.B6)(n.config.rewardsConfig.rewardsExpireAt), a = (0, s.e7)([c.Z], () => c.Z.getState().theme), u = (0, o.wjy)(a) ? S.BRd.DARK : S.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
   return (0, r.jsxs)("div", {
     className: N.heading,
     children: [(0, r.jsx)("img", {
@@ -87,7 +87,7 @@ function x(e) {
     quest: m
   } = e, b = (0, d.O5)(), S = (0, s.e7)([p.Z], () => p.Z.isEnrolling(m.id), [m]), [x, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
     launchInGameActivity: L
-  } = (0, g.zB)(m), R = i.useCallback(e => {
+  } = (0, h.zB)(m), R = i.useCallback(e => {
     e.stopPropagation()
   }, []), D = i.useCallback(() => {
     (0, u.AH)(m.id, {
@@ -119,13 +119,13 @@ function x(e) {
     quest: m,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL
-  }), G = (null == (t = m.userStatus) ? true : t.enrolledAt) != null, B = (null == (n = m.userStatus) ? true : n.completedAt) != null, H = (0, g.Rf)(m), V = (0, h.DD)({
+  }), G = (null == (t = m.userStatus) ? true : t.enrolledAt) != null, B = (null == (n = m.userStatus) ? true : n.completedAt) != null, H = (0, h.Rf)(m), V = (0, g.DD)({
     quest: m,
     taskDetails: H,
     location: C.dr.ACTIVITY_PANEL,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL
-  }), F = (0, _.Rt)(m), z = (0, h.CR)({
+  }), F = (0, _.Rt)(m), z = (0, g.CR)({
     quest: m
   }), Y = F ? z : T.intl.string(T.t.l7E81v);
   return (0, r.jsxs)("div", {

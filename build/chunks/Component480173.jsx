@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 480173, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -27,28 +27,28 @@ function h() {
 function x(e) {
   let {
     levelUpData: t
-  } = e, n = l.useRef(null), r = l.useCallback(() => {
+  } = e, n = r.useRef(null), i = r.useCallback(() => {
     c.Z.setState({
       shouldRenderTenureLevelUp: false
     })
   }, []);
-  return l.useEffect(() => r, [r]), (0, a.jsx)(s.EqS, {
+  return r.useEffect(() => i, [i]), (0, a.jsx)(s.EqS, {
     containerRef: n,
     children: (0, a.jsxs)("div", {
       className: m.wrapper,
       children: [(0, a.jsx)("div", {
         className: m.closeButton,
-        children: (0, a.jsx)(i.u, {
+        children: (0, a.jsx)(l.u, {
           text: u.intl.string(u.t.cpT0Cq),
           children: (0, a.jsx)(s.hU, {
             icon: s.Dio,
             variant: "secondary",
             size: "sm",
-            onClick: r,
+            onClick: i,
             "aria-label": u.intl.string(u.t.cpT0Cq)
           })
         })
-      }), (0, a.jsx)(l.Suspense, {
+      }), (0, a.jsx)(r.Suspense, {
         fallback: null,
         children: (0, a.jsx)(p, {
           levelUpData: t

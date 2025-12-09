@@ -23,12 +23,12 @@ let _ = [],
   O = Chunk473749.forwardRef(function(e, t) {
     let [n, O] = (0, f.P)(), v = i.useMemo(() => {
       var e, t;
-      return null !== (t = n.get(b), e = (0, o.Ew)(t) ? null : Object.values(h.yq).find(e => e === t) || null) && true !== e ? e : h.yq.SUGGESTED
+      return null !== (t = n.get(b), e = (0, o.Ew)(t) ? null : Object.values(g.yq).find(e => e === t) || null) && true !== e ? e : g.yq.SUGGESTED
     }, [n]), y = i.useMemo(() => {
       var e;
       return null != (e = function(e) {
         if ((0, o.Ew)(e)) return null;
-        let t = e.split(",").map(e => (0, h.fI)(e)).filter(s.lm);
+        let t = e.split(",").map(e => (0, g.fI)(e)).filter(s.lm);
         return t.length > 0 ? t : null
       }(n.get(E))) ? e : _
     }, [n]), I = i.useCallback(e => {
@@ -98,14 +98,14 @@ let _ = [],
       numQuestsVisible: S.length
     }), i.useImperativeHandle(t, () => ({
       resetSortingFiltering: () => {
-        P(), I(h.yq.SUGGESTED)
+        P(), I(g.yq.SUGGESTED)
       }
     }), [P, I]), (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: m.headingWrapper,
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-lg/medium",
-          children: g.intl.string(g.t.giYD00)
+          children: h.intl.string(h.t.giYD00)
         }), (0, r.jsxs)("div", {
           className: m.headingControls,
           children: [(0, r.jsx)(d.Z, {

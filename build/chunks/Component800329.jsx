@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 800329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -38,8 +38,8 @@ function p(e) {
     height: 0
   }), {
     width: b,
-    height: y
-  } = m, C = null != (t = null == l ? true : l.length) ? t : 0, v = b - 16, _ = y - (h + f), {
+    height: C
+  } = m, y = null != (t = null == l ? true : l.length) ? t : 0, _ = b - 16, v = C - (h + f), {
     tileStyle: O,
     tileWidth: x,
     rows: E,
@@ -80,7 +80,7 @@ function p(e) {
       rows: i,
       columns: r
     }
-  })(C, v, _), [C, v, _]), S = j + 1, P = S * x + (S - 1) * 8 <= b, I = Math.floor(x / c) + 8, Z = Math.max(0, _ - I * E) / 2;
+  })(y, _, v), [y, _, v]), S = j + 1, P = S * x + (S - 1) * 8 <= b, I = Math.floor(x / c) + 8, Z = Math.max(0, v - I * E) / 2;
   return (0, i.jsx)(o.Z, {
     fade: true,
     className: n,
@@ -98,7 +98,7 @@ function p(e) {
             className: a()(s.tile, {
               [s.padColumn]: P,
               [s.noVerticalMargin]: l >= (E - 1) * j,
-              [s.noHorizontalMargin]: (l + 1) % j == 0 || l === C - 1
+              [s.noHorizontalMargin]: (l + 1) % j == 0 || l === y - 1
             }),
             children: (0, i.jsx)("div", {
               className: s.tileSizer,

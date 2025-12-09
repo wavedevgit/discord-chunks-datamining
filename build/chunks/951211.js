@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 951211, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f,
@@ -25,10 +25,10 @@ function f(e) {
     channel: m,
     activities: g,
     newClipsCount: b,
-    canPostPolls: y,
-    canLaunchActivities: C,
-    appContext: v,
-    canSendScheduledMessages: _,
+    canPostPolls: C,
+    canLaunchActivities: y,
+    appContext: _,
+    canSendScheduledMessages: v,
     canSummarizeThreads: O,
     showAppLauncher: x
   } = e, E = [];
@@ -40,7 +40,7 @@ function f(e) {
     type: "UPLOAD_TEXT_AS_FILE",
     icon: l.xD0,
     display: p.intl.string(p.t["G9s+EM"])
-  })), f && t && v !== d.IlC.POPOUT && E.push({
+  })), f && t && _ !== d.IlC.POPOUT && E.push({
     type: "CLIPS",
     icon: l.AlX,
     display: p.intl.string(p.t.o034cv),
@@ -50,7 +50,7 @@ function f(e) {
     type: "CREATE_THREAD",
     icon: l.YPH,
     display: p.intl.string(p.t.rBIGBL)
-  }), y && E.push({
+  }), C && E.push({
     type: "POLL",
     icon: l.QDj,
     display: p.intl.string(p.t.Flr51u)
@@ -69,7 +69,7 @@ function f(e) {
     type: "SLASH_COMMAND",
     icon: l.jje,
     display: p.intl.string(j ? p.t["5Y0Fam"] : p.t.Bbvp6G)
-  }), C && E.push({
+  }), y && E.push({
     type: "ACTIVITY",
     icon: l.nG3,
     display: p.intl.string(p.t["16Lfrb"])
@@ -99,7 +99,7 @@ function f(e) {
       }),
       activity: e
     }))
-  }), _ && E.push({
+  }), v && E.push({
     type: "SCHEDULED_MESSAGE",
     icon: l.T39,
     display: p.intl.string(p.t["3+ii4F"])

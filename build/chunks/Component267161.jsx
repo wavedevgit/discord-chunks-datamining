@@ -134,7 +134,7 @@ let V = Chunk473749.memo(function() {
           trailing: (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(v.Z, {
               className: Q
-            }), B && (0, r.jsx)(g.Z, {
+            }), B && (0, r.jsx)(h.Z, {
               className: Q
             }), (0, r.jsx)(m.Z, {
               canShowReminder: true,

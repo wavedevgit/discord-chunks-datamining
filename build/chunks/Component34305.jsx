@@ -254,7 +254,7 @@ class v extends Chunk473749.PureComponent {
     super(...e), E(this, "state", {
       editingPath: null
     }), E(this, "handleAddInstallationLocation", () => {
-      g.ZP.showOpenDialog(["openDirectory"]).then(e => {
+      h.ZP.showOpenDialog(["openDirectory"]).then(e => {
         null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, o.RY)(e[0])
       })
     }), E(this, "handleToggleEditing", e => {

@@ -15,7 +15,7 @@ var Chunk836560 = require("./836560.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +23,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = 10 * Chunk70956.Z.Millis.SECOND,
+let h = 10 * Chunk70956.Z.Millis.SECOND,
   m = new Map,
   _ = new Set,
   b = (e, t, n) => {
@@ -57,7 +57,7 @@ class E extends Chunk836560.EventEmitter {
   }
   constructor(e, t, r, o) {
     var u;
-    super(), u = this, h(this, "validateSocketClient", true), h(this, "logger", true), h(this, "createPostMessageProxySocket", true), h(this, "onFrameHandled", true), h(this, "handshakeFailureTimeoutId", true), h(this, "disconnectSocket", function(e, t) {
+    super(), u = this, g(this, "validateSocketClient", true), g(this, "logger", true), g(this, "createPostMessageProxySocket", true), g(this, "onFrameHandled", true), g(this, "handshakeFailureTimeoutId", true), g(this, "disconnectSocket", function(e, t) {
       var n, r;
       let i = arguments.length > 2 && true !== arguments[2] && arguments[2];
       u.emit("disconnect", e, i ? true : t), e.close(t.code, null != (n = t.message) ? n : "Unknown");
@@ -66,7 +66,7 @@ class E extends Chunk836560.EventEmitter {
         return r === e
       })) ? r : [null, null];
       null != l && m.delete(l)
-    }), h(this, "handleIFrameMount", e => {
+    }), g(this, "handleIFrameMount", e => {
       let {
         id: t
       } = e;
@@ -77,11 +77,11 @@ class E extends Chunk836560.EventEmitter {
             application_id: t,
             channel_id: (0, l.p)(n.location),
             guild_id: (0, l.j)(n.location),
-            timeout_ms: g
+            timeout_ms: h
           })
         })
-      }, g)
-    }), h(this, "handleIFrameUnmount", e => {
+      }, h)
+    }), g(this, "handleIFrameUnmount", e => {
       var t;
       let {
         id: n
@@ -95,7 +95,7 @@ class E extends Chunk836560.EventEmitter {
         code: f.$VG.CLOSE_NORMAL,
         message: "iFrame gone"
       }, true), m.delete(r))
-    }), h(this, "handleMessage", (e, t, n) => {
+    }), g(this, "handleMessage", (e, t, n) => {
       let r = m.get(t);
       try {
         this.routeEvent(r, t, e, n)
@@ -109,7 +109,7 @@ class E extends Chunk836560.EventEmitter {
           message: e.message
         }, n)
       }
-    }), h(this, "handleFrame", (e, t, n) => {
+    }), g(this, "handleFrame", (e, t, n) => {
       var r;
       let i;
       if (e !== t.origin) throw new c.Z({
@@ -123,7 +123,7 @@ class E extends Chunk836560.EventEmitter {
         }, "Payload not recognized encoding")
       }
       null == (r = this.onFrameHandled) || r.call(this, i, this.logger, t), this.emit("request", t, i)
-    }), h(this, "handleHandshake", async (e, t, r) => {
+    }), g(this, "handleHandshake", async (e, t, r) => {
       let i;
       null != this.handshakeFailureTimeoutId && clearTimeout(this.handshakeFailureTimeoutId);
       let l = (await n.e("85441").then(n.t.bind(n, 826753, 23))).default;
@@ -171,7 +171,7 @@ class E extends Chunk836560.EventEmitter {
       } catch (e) {
         throw this.logger.info("Socket Closed: ".concat(i.id, ", ").concat(e.message)), e
       }
-    }), h(this, "handleClose", async (e, t) => {
+    }), g(this, "handleClose", async (e, t) => {
       let r = (await n.e("85441").then(n.t.bind(n, 826753, 23))).default;
       try {
         r.assert(t, (0, d.Z)(r).required().keys({

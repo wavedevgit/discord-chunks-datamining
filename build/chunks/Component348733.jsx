@@ -2,7 +2,7 @@
 /** chunk id: 348733, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,26 +19,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk991168 = require("./991168.js");
 
-function y(e) {
+function _(e) {
   let {
     locked: t,
     keybind: n
-  } = e, s = r.useRef(null), h = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), y = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
-  if ((0, a.e7)([p.Z], () => p.Z.isNotificationDisabled(f.n0.TextChat)) || y === g._vf.DISABLED) return null;
-  let _ = h.filter(e => !t || e.status !== g._1z.TIMED_OUT),
-    v = (0, l.groupBy)(_, e => e.type);
+  } = e, s = r.useRef(null), h = (0, a.Wu)([c.Z], () => c.Z.getNotifications()), _ = (0, a.e7)([d.default], () => d.default.getNotificationPositionMode());
+  if ((0, a.e7)([p.Z], () => p.Z.isNotificationDisabled(f.n0.TextChat)) || _ === g._vf.DISABLED) return null;
+  let v = h.filter(e => !t || e.status !== g._1z.TIMED_OUT),
+    b = (0, l.groupBy)(v, e => e.type);
   return (0, i.jsx)(u.Z, {
     contentDomRef: s,
     observeInterval: 200,
     children: (0, i.jsx)("div", {
       ref: s,
-      className: o()(m.container, m[y]),
-      children: Object.entries(v).map(e => {
+      className: o()(m.container, m[_]),
+      children: Object.entries(b).map(e => {
         let [r, s] = e;
-        return 0 === s.length ? null : (0, i.jsx)(b, {
+        return 0 === s.length ? null : (0, i.jsx)(y, {
           locked: t,
           keybind: n,
-          position: y,
+          position: _,
           notification: s[0]
         }, r)
       })
@@ -46,7 +46,7 @@ function y(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     notification: t,
     position: n,

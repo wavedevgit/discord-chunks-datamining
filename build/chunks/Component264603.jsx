@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk199849 = require("./199849.jsx"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk246992 = require("./246992.js"),
   Chunk451429 = require("./451429.js"),
   Chunk441900 = require("./441900.js");
-let N = [{
+let O = [{
   label: "Unset",
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET
 }, {
@@ -46,36 +46,36 @@ function T() {
       analyticsLocations: t
     } = (0, Chunk906732.ZP)(Chunk100527.Z.DEV_TOOLS),
     n = Chunk695346.JG.useSetting(),
-    [r, o] = Chunk473749.useState(""),
+    [i, o] = Chunk473749.useState(""),
     T = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
-    O = (0, Chunk835473.q)(Chunk120356),
+    N = (0, Chunk835473.q)(Chunk120356),
     P = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
       var e, t;
-      return null != (t = null == O || null == (e = O.linkedGames) ? true : module.map(e => f.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
+      return null != (t = null == N || null == (e = N.linkedGames) ? true : module.map(e => f.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
     }),
-    I = (0, Chunk524995.F)(O, {
+    w = (0, Chunk524995.F)(N, {
       allowedFlows: [Chunk524995.r.RPC]
     }),
-    w = (0, Chunk524995.F)(O, {
+    I = (0, Chunk524995.F)(N, {
       allowedFlows: [Chunk524995.r.WEB]
     }),
-    k = (0, Chunk524995.F)(O),
+    k = (0, Chunk524995.F)(N),
     {
       canDeauthorize: R,
       deauthorize: A
     } = function(e) {
       let t = (0, s.e7)([_.default], () => _.default.getNewestTokenForApplication(e)),
-        n = l.useCallback(() => {
+        n = r.useCallback(() => {
           null != t && u.Z.delete(t.id)
         }, [t]);
       return {
         canDeauthorize: null != t,
         deauthorize: n
       }
-    }(null == O ? true : O.id);
+    }(null == N ? true : N.id);
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: i()(Chunk451429.panel, Chunk441900.panel),
+    className: l()(Chunk451429.panel, Chunk441900.panel),
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk441900.container,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
@@ -83,7 +83,7 @@ function T() {
         children: "Settings"
       }), (0, Chunk54381.jsx)(Chunk199849.B6, {
         label: "Receive DMs In Game",
-        options: N,
+        options: O,
         isSelected: e => e === n,
         select: Chunk695346.JG.updateSetting,
         popoutLayerContext: Chunk246992.O$,
@@ -104,12 +104,12 @@ function T() {
         text: "Use detected game: ".concat(T.name, " (").concat(T.id, ")")
       }) : null, (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Application Name: ", null != O ? O.name : "N/A"]
+        children: ["Application Name: ", null != N ? N.name : "N/A"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Linked Games:", " ", P.length > 0 ? P.map(e => {
           var t;
-          return (null == (t = (0, h.r)(O)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
+          return (null == (t = (0, h.r)(N)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
         }).join(", ") : "N/A"]
       })]
     }), (0, Chunk54381.jsxs)("div", {
@@ -129,15 +129,15 @@ function T() {
         color: "text-subtle",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !I.canStartAuthorization,
-        onClick: () => I.startAuthorization({
+        disabled: !w.canStartAuthorization,
+        onClick: () => w.startAuthorization({
           analyticsLocations: exports
         }),
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !w.canStartAuthorization,
-        onClick: () => w.startAuthorization({
+        disabled: !I.canStartAuthorization,
+        onClick: () => I.startAuthorization({
           analyticsLocations: exports
         }),
         variant: "secondary",

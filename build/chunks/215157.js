@@ -1,7 +1,7 @@
-/** Chunk was on 60565 **/
+/** Chunk was on 73755 **/
 /** chunk id: 215157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => h
+  Q: () => f
 }), require("./781311.js"), require("./413496.js"), require("./433524.js"), require("./35282.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,40 +13,40 @@ var Chunk473749 = require("./473749.js"),
   Chunk605436 = require("./605436.js"),
   Chunk71080 = require("./71080.js");
 
-function d(e) {
+function p(e) {
   let t = e.trim();
   return "@" === t[0] ? t.slice(1) : t
 }
 
-function p(e, t) {
-  let n = d(e);
-  return RegExp("".concat(u.Z.escape(n)), "i").test(t)
+function h(e, t) {
+  let n = p(e);
+  return RegExp("".concat(c.Z.escape(n)), "i").test(t)
 }
 
-function h(e, t, n, u) {
-  let h = arguments.length > 4 && true !== arguments[4] ? arguments[4] : null != t && t.isGuildStageVoice(),
-    f = (0, l.e7)([i.Z], () => null != e ? i.Z.getSortedRoles(e.id) : []),
-    b = (0, l.Wu)([c.ZP], () => null != e ? c.ZP.getMemberIds(e.id) : []),
-    w = r.useMemo(() => {
-      if (null == e || "@" === u[0]) return [];
-      if (h) return _.Wx(e, f, null != t ? t : null, n, e => p(u, e));
-      let r = _.ik(e, f, null != t ? t : null, n, e => p(u, e));
-      return 0 === r.length && "" === u.trim() && 1 === f.length && (r = _.aq()), r
-    }, [f, u, e, t, n, h]),
-    g = r.useMemo(() => null == e ? [] : _.iI(b, null != t ? t : null, e, n, e => p(u, e)), [b, u, e, t, n]);
-  return r.useEffect(() => {
-    null != e && a.Z.requestMembers(e.id, d(u), s.EQ)
-  }, [u, e]), {
-    roles: w,
-    members: g,
-    getRichTag: r.useCallback(e => {
+function f(e, t, n, c) {
+  let f = arguments.length > 4 && true !== arguments[4] ? arguments[4] : null != t && t.isGuildStageVoice(),
+    m = (0, r.e7)([o.Z], () => null != e ? o.Z.getSortedRoles(e.id) : []),
+    g = (0, r.Wu)([a.ZP], () => null != e ? a.ZP.getMemberIds(e.id) : []),
+    b = i.useMemo(() => {
+      if (null == e || "@" === c[0]) return [];
+      if (f) return u.Wx(e, m, null != t ? t : null, n, e => h(c, e));
+      let i = u.ik(e, m, null != t ? t : null, n, e => h(c, e));
+      return 0 === i.length && "" === c.trim() && 1 === m.length && (i = u.aq()), i
+    }, [m, c, e, t, n, f]),
+    C = i.useMemo(() => null == e ? [] : u.iI(g, null != t ? t : null, e, n, e => h(c, e)), [g, c, e, t, n]);
+  return i.useEffect(() => {
+    null != e && s.Z.requestMembers(e.id, p(c), d.EQ)
+  }, [c, e]), {
+    roles: b,
+    members: C,
+    getRichTag: i.useCallback(e => {
       let t = null;
-      return e.rowType === s.aC.ROLE || e.rowType === s.aC.ADMINISTRATOR ? t = {
-        type: o.F.ROLE,
+      return e.rowType === d.aC.ROLE || e.rowType === d.aC.ADMINISTRATOR ? t = {
+        type: l.F.ROLE,
         label: e.name,
         color: e.colorString
-      } : (e.rowType === s.aC.MEMBER || e.rowType === s.aC.OWNER) && (t = {
-        type: o.F.MEMBER,
+      } : (e.rowType === d.aC.MEMBER || e.rowType === d.aC.OWNER) && (t = {
+        type: l.F.MEMBER,
         label: e.name,
         avatar: e.avatarURL
       }), t

@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 158969, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -33,18 +33,18 @@ let E = Chunk473749.memo(function(e) {
     } = e;
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)("div", {
-        className: a()(_.blockedNoticeContainer, {
-          [_.compact]: r
+        className: a()(v.blockedNoticeContainer, {
+          [v.compact]: r
         }),
         children: [(0, i.jsx)("div", {
-          className: _.blockedNoticeIcon,
+          className: v.blockedNoticeIcon,
           children: (0, i.jsx)(u.b7C, {
             size: "xs",
             color: "currentColor",
-            className: _.shieldIcon
+            className: v.shieldIcon
           })
         }), (0, i.jsx)("div", {
-          className: _.blockedNotice,
+          className: v.blockedNotice,
           children: (0, i.jsx)(u.Text, {
             variant: "text-sm/normal",
             color: "interactive-normal",
@@ -52,8 +52,8 @@ let E = Chunk473749.memo(function(e) {
           })
         })]
       }), (0, i.jsx)("div", {
-        className: a()(_.ephemeralAccessories, {
-          [_.compact]: r
+        className: a()(v.ephemeralAccessories, {
+          [v.compact]: r
         }),
         children: (0, i.jsx)(m.Z, {
           message: t,
@@ -62,9 +62,9 @@ let E = Chunk473749.memo(function(e) {
             variant: "text-xs/normal",
             color: "interactive-normal",
             tag: "span",
-            className: _.learnMore,
-            children: v.intl.format(v.t["Nd3Gh+"], {
-              helpUrl: f.Z.getArticleURL(C.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+            className: v.learnMore,
+            children: _.intl.format(_.t["Nd3Gh+"], {
+              helpUrl: f.Z.getArticleURL(y.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
           })
         })
@@ -79,32 +79,32 @@ let E = Chunk473749.memo(function(e) {
       message: u,
       children: f,
       content: m,
-      onUpdate: C
+      onUpdate: y
     } = e, j = null == (t = u.editedTimestamp) ? true : t.toString(), S = r.useRef(false), P = (0, c.e7)([h.Z], () => h.Z.getMessage(u.id), [u.id]), I = r.useCallback(() => {
       (null == P ? true : P.isBlockedEdit) ? (0, p.I)(u.id) : d.Z.deleteMessage(u.channel_id, u.id, true)
     }, [u, P]);
     return r.useLayoutEffect(() => {
-      S.current ? null != C && C() : S.current = true
-    }, [C, u.content, m, j, f]), (0, i.jsxs)("div", {
+      S.current ? null != y && y() : S.current = true
+    }, [y, u.content, m, j, f]), (0, i.jsxs)("div", {
       id: (0, g.ut)(u),
       className: a()(l, x.markup, {
         [O.messageContent]: true,
         [O.markupRtl]: "rtl" === s()(u.content),
-        [_.blockedEdit]: null == P ? true : P.isBlockedEdit,
-        [_.blockedSend]: !(null == P ? true : P.isBlockedEdit)
+        [v.blockedEdit]: null == P ? true : P.isBlockedEdit,
+        [v.blockedSend]: !(null == P ? true : P.isBlockedEdit)
       }),
       children: [null != f ? f : (0, b.L5)(u, m), (null == P ? true : P.isBlockedEdit) && null != u.timestamp && (0, i.jsxs)(i.Fragment, {
-        children: [" ", (0, i.jsx)(y.Z, {
+        children: [" ", (0, i.jsx)(C.Z, {
           timestamp: u.timestamp,
           isEdited: true,
           isInline: false,
           children: (0, i.jsxs)("span", {
             className: O.edited,
-            children: ["(", v.intl.string(v.t.Z7eEx9), ")"]
+            children: ["(", _.intl.string(_.t.Z7eEx9), ")"]
           })
         })]
       }), (0, i.jsx)(E, {
-        notice: null != (n = null == P ? true : P.errorMessage) ? n : v.intl.string(v.t.zQ69pv),
+        notice: null != (n = null == P ? true : P.errorMessage) ? n : _.intl.string(_.t.zQ69pv),
         message: u,
         compact: o,
         onDismiss: I

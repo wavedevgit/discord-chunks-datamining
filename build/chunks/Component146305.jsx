@@ -252,9 +252,9 @@ let eC = {
         };
       case eb.pNK.ONBOARDING:
         return {
-          section: eb.pNK.ONBOARDING, label: ej.intl.string(ej.t["LdxCK/"]), element: z.Z, ariaLabel: ej.intl.string(ej.t["LdxCK/"]), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [l.z.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
+          section: eb.pNK.ONBOARDING, label: ej.intl.string(ej.t["LdxCK/"]), element: W.Z, ariaLabel: ej.intl.string(ej.t["LdxCK/"]), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [l.z.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
             stores: [B.Z, U.Z, M.Z],
-            element: W.Z
+            element: z.Z
           }, predicate: () => (0, h.wC)(t.guild.id), decoration: function(e, t) {
             if (f.Z.getEnabled(e)) return ej.intl.string(ej.t.pPSmxg).toUpperCase();
             if ((0, H.C)(e)) return ej.intl.string(ej.t["HDF4o/"]).toUpperCase();

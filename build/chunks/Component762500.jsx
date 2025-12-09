@@ -43,7 +43,7 @@ function y(e) {
     Component: L
   } = (0, a.V)();
   i.useEffect(() => {
-    let e = h.Z.getUserAffinity(A.id);
+    let e = g.Z.getUserAffinity(A.id);
     (0, c.h)({
       name: l.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
       type: l.ImpressionTypes.VIEW,
@@ -55,7 +55,7 @@ function y(e) {
   }, [A, Z]);
   let R = e => {
       e.stopPropagation();
-      let t = h.Z.getUserAffinity(A.id);
+      let t = g.Z.getUserAffinity(A.id);
       m.default.track(E.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: Z,
         affinity: null == t ? true : t.communicationProbability
@@ -93,7 +93,7 @@ function y(e) {
           applicationStream: T,
           status: C,
           user: A,
-          userIgnored: g.Z.isIgnored(A.id)
+          userIgnored: h.Z.isIgnored(A.id)
         }),
         hovered: e,
         showAccountIdentifier: !N && !A.isProvisional

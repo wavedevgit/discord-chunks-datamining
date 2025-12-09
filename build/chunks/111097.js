@@ -14,12 +14,12 @@ var Chunk72924 = require("./72924.jsx"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
-let h = [Chunk100527.Z.RPC];
+let g = [Chunk100527.Z.RPC];
 
-function g(e, t) {
+function h(e, t) {
   let n = {
     subscriptionTier: f.Si.TIER_2,
-    analyticsLocations: h,
+    analyticsLocations: g,
     analyticsObject: t
   };
   switch (e) {
@@ -66,8 +66,8 @@ let m = {
           let e = await (0, r.S)({
             applicationId: l,
             skuId: n,
-            openPremiumPaymentModal: () => g(f, m),
-            analyticsLocations: h,
+            openPremiumPaymentModal: () => h(f, m),
+            analyticsLocations: g,
             analyticsLocationObject: m,
             context: f
           });
@@ -105,7 +105,7 @@ let m = {
         lock: r,
         context: i
       } = (0, u.jU)(t.transport !== d.He.POST_MESSAGE ? n : null);
-      return g(i, {
+      return h(i, {
         page: p.ZY5.IN_APP
       }).then(() => {
         r()

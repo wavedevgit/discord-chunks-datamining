@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk126373 = require("./126373.js");
-let g = [{
+let h = [{
     feature: Chunk981631.Qa3.SINGLE_PLAYER,
     getText: () => Chunk388032.intl.string(Chunk388032.t["V+/FjO"]),
     getTooltip: () => Chunk388032.intl.string(Chunk388032.t["w+X9sT"]),
@@ -88,19 +88,19 @@ let g = [{
       tooltip: i
     } = e;
     return (0, r.jsxs)("div", {
-      className: h.row,
+      className: g.row,
       children: [(0, r.jsx)(l.u, {
         text: i,
         children: (0, r.jsx)(t, {
-          className: h.featureIcon
+          className: g.featureIcon
         })
       }), (0, r.jsx)("span", {
-        className: h.featureText,
+        className: g.featureText,
         children: n
       }), (0, r.jsx)(a.dz2, {
         size: "md",
         color: "currentColor",
-        className: h.checkmarkIcon
+        className: g.checkmarkIcon
       })]
     })
   };
@@ -108,7 +108,7 @@ class _ extends Chunk473749.PureComponent {
   render() {
     let {
       sku: e
-    } = this.props, t = g.filter(t => {
+    } = this.props, t = h.filter(t => {
       let {
         feature: n
       } = t;

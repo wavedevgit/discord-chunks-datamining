@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 95764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,18 +22,18 @@ function b(e) {
   let {
     channelId: t,
     onClick: n
-  } = e, b = (0, o.bp)(), y = (0, m.qY)(t), C = (0, l.e7)([d.Z], () => d.Z.getChannel(t), [t]), {
-    canManageGuildEvent: v
-  } = (0, s.XJ)(C), _ = v(y), O = r.useRef(null);
-  if (null == y) return null;
+  } = e, b = (0, o.bp)(), C = (0, m.qY)(t), y = (0, l.e7)([d.Z], () => d.Z.getChannel(t), [t]), {
+    canManageGuildEvent: _
+  } = (0, s.XJ)(y), v = _(C), O = r.useRef(null);
+  if (null == C) return null;
   let x = () => {
-      if (null != C && (0, f.Z)(C)) return void(0, p.lC)(C, b);
+      if (null != y && (0, f.Z)(y)) return void(0, p.lC)(y, b);
       n()
     },
     E = () => {
-      h.Z.endEvent(y.id, y.guild_id)
+      h.Z.endEvent(C.id, C.guild_id)
     };
-  return _ ? (0, i.jsx)(a.yRy, {
+  return v ? (0, i.jsx)(a.yRy, {
     targetElementRef: O,
     renderPopout: e => {
       let {

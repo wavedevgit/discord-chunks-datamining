@@ -83,8 +83,8 @@ async function ee(e) {
     overlayStatus: c,
     overlayMethod: p,
     sharedGuildIds: f,
-    voiceChannelId: h,
-    voiceChannelType: g,
+    voiceChannelId: g,
+    voiceChannelType: h,
     voiceChannelBitrate: m,
     voiceChannelGuildId: _
   } = e, b = await (0, x.hj)(a.pid), {
@@ -114,8 +114,8 @@ async function ee(e) {
     current_user_status: V.Z.getStatus(),
     game_detection_enabled: (0, v.ik)(a),
     executable_path: I,
-    voice_channel_id: h,
-    voice_channel_type: g,
+    voice_channel_id: g,
+    voice_channel_type: h,
     voice_channel_bitrate: m,
     voice_channel_guild_id: _,
     distributor_game_id: a.sku,
@@ -130,7 +130,7 @@ class et extends Chunk473749.PureComponent {
       voiceChannelId: u,
       voiceChannelGuildId: d,
       voiceChannelType: p,
-      voiceChannelBitrate: h,
+      voiceChannelBitrate: g,
       videoEnabled: m,
       isScreenSharing: y,
       runningGame: I,
@@ -165,7 +165,7 @@ class et extends Chunk473749.PureComponent {
         t = null != e ? e.name : "",
         n = Z.Z.getStageInstanceByChannel(u),
         r = C.ZP.getActiveEventByChannel(u);
-      (0, f.yw)(J.rMx.CHANNEL_OPENED, $({}, (0, f.$H)(u))), (0, g.a)(J.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      (0, f.yw)(J.rMx.CHANNEL_OPENED, $({}, (0, f.$H)(u))), (0, h.a)(J.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: u
       });
       let i = null,
@@ -174,7 +174,7 @@ class et extends Chunk473749.PureComponent {
         location: i,
         channel_id: u,
         channel_type: p,
-        channel_bitrate: h,
+        channel_bitrate: g,
         guild_id: d,
         game_name: t,
         game_platform: this.props.gamePlatform,
@@ -190,7 +190,7 @@ class et extends Chunk473749.PureComponent {
     if (e.runningGame !== I && null != I && !I.isLauncher && (!A || D)) {
       let {
         gameId: e
-      } = (0, O.G8)(I), t = true !== e ? R.Z.getDetectableGame(e) : null, s = v.ZP.getOverrideForGame(I), o = M.Z.getGuildIds(), f = w.SE.getSetting(), g = o.filter(e => !f.includes(e)).slice(0, 200), m = null;
+      } = (0, O.G8)(I), t = true !== e ? R.Z.getDetectableGame(e) : null, s = v.ZP.getOverrideForGame(I), o = M.Z.getGuildIds(), f = w.SE.getSetting(), h = o.filter(e => !f.includes(e)).slice(0, 200), m = null;
       m = null != s ? "custom_override" : null != t ? "verified_game" : "launcher";
       let _ = P.default.getTrackedGameByPid(I.pid),
         b = (0, v.b6)(I),
@@ -209,10 +209,10 @@ class et extends Chunk473749.PureComponent {
             detectionMethod: m,
             overlayStatus: y,
             overlayMethod: C,
-            sharedGuildIds: g,
+            sharedGuildIds: h,
             voiceChannelId: u,
             voiceChannelType: p,
-            voiceChannelBitrate: h,
+            voiceChannelBitrate: g,
             voiceChannelGuildId: d
           })
         }, 1e4), null != I.name && null != S && R.Z.shouldReport(I)) {

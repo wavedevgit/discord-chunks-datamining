@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 446535, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,6 +9,7 @@ var Chunk54381 = require("./54381.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk668339 = require("./668339.jsx"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk48210 = require("./48210.js"),
   Chunk345162 = require("./345162.js"),
@@ -16,94 +17,86 @@ var Chunk54381 = require("./54381.js"),
   Chunk496675 = require("./496675.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk797966 = require("./797966.js");
-let p = e => {
+let h = e => {
   let {
     guild: t,
     transitionState: n,
     onClose: i
-  } = e, [p, h] = l.useState(7), [g, j] = l.useState(null), [x, v] = l.useState([]), y = l.useCallback(async () => {
-    j(null), j(await u.Z.updateEstimate(t.id, p, x))
-  }, [p, t.id, x]);
+  } = e, [h, g] = l.useState(7), [j, x] = l.useState(null), [v, y] = l.useState([]), O = l.useCallback(async () => {
+    x(null), x(await d.Z.updateEstimate(t.id, h, v))
+  }, [h, t.id, v]);
   l.useEffect(() => {
-    y()
-  }, [y]);
-  let O = (0, a.Wu)([m.Z, C.Z], () => {
-    let e = m.Z.getHighestRole(t);
-    return o()(C.Z.getSortedRoles(t.id)).filter(n => !(0, d.fI)(n) && m.Z.isRoleHigher(t, e, n)).map(e => {
-      let {
-        id: t,
-        name: n
-      } = e;
-      return {
-        label: n,
-        value: t
-      }
-    }).value()
-  }, [t]);
-  return (0, r.jsxs)(c.Y0X, {
+    O()
+  }, [O]);
+  let H = l.useCallback(() => {
+      d.Z.prune(t.id, h, v), i()
+    }, [t.id, h, v, i]),
+    _ = (0, a.Wu)([b.Z, m.Z], () => {
+      let e = b.Z.getHighestRole(t);
+      return o()(m.Z.getSortedRoles(t.id)).filter(n => !(0, C.fI)(n) && b.Z.isRoleHigher(t, e, n)).map(e => {
+        let {
+          id: t,
+          name: n
+        } = e;
+        return {
+          label: n,
+          value: t
+        }
+      }).value()
+    }, [t]);
+  return (0, r.jsx)(c.u_l, {
+    title: "".concat(f.intl.string(f.t.zbyz7p), "—").concat(null != t ? t.name : ""),
+    actions: [{
+      text: f.intl.string(f.t["ETE/oC"]),
+      onClick: i,
+      variant: "secondary"
+    }, {
+      text: f.intl.string(f.t["2mIlKQ"]),
+      onClick: H
+    }],
+    onClose: async () => {
+      await i()
+    },
     transitionState: n,
-    parentComponent: "PruneGuild",
-    children: [(0, r.jsx)(c.xBx, {
-      separator: false,
-      children: (0, r.jsxs)(c.Heading, {
-        variant: "heading-lg/semibold",
-        children: [b.intl.string(b.t.zbyz7p), "—", null != t ? t.name : ""]
-      })
-    }), (0, r.jsxs)("div", {
-      className: f.content,
-      children: [(0, r.jsx)(c.FXm, {
-        label: b.intl.string(b.t.YccTvK),
-        value: String(p),
+    children: (0, r.jsxs)("div", {
+      className: p.content,
+      children: [(0, r.jsx)(u.FXm, {
+        label: f.intl.string(f.t.YccTvK),
+        value: String(h),
         options: [{
-          name: b.intl.formatToPlainString(b.t.FM1dHS, {
+          name: f.intl.formatToPlainString(f.t.FM1dHS, {
             days: 7
           }),
           value: "7"
         }, {
-          name: b.intl.formatToPlainString(b.t.FM1dHS, {
+          name: f.intl.formatToPlainString(f.t.FM1dHS, {
             days: 30
           }),
           value: "30"
         }],
         onChange: e => {
-          h(Number(e))
+          g(Number(e))
         }
-      }), (0, r.jsx)(c.zJl, {
-        className: f.scroller,
+      }), (0, r.jsx)(u.zJl, {
+        className: p.scroller,
         children: (0, r.jsx)(s.d, {
-          label: b.intl.string(b.t.buoe17),
+          label: f.intl.string(f.t.buoe17),
           maxVisibleItems: 10,
           multi: true,
-          value: x,
-          onChange: e => v(e),
-          options: O
+          value: v,
+          onChange: e => y(e),
+          options: _
         })
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
-        className: f.spacing,
-        children: x.length > 0 ? b.intl.format(b.t["5WxHHp"], {
-          members: g,
-          days: p
-        }) : b.intl.format(b.t.f13az9, {
-          members: g,
-          days: p
+        children: v.length > 0 ? f.intl.format(f.t["5WxHHp"], {
+          members: j,
+          days: h
+        }) : f.intl.format(f.t.f13az9, {
+          members: j,
+          days: h
         })
       })]
-    }), (0, r.jsx)(c.mzw, {
-      children: (0, r.jsxs)(c.ButtonGroup, {
-        direction: "horizontal-reverse",
-        children: [(0, r.jsx)(c.Button, {
-          variant: "primary",
-          text: b.intl.string(b.t["2mIlKQ"]),
-          onClick: () => {
-            u.Z.prune(t.id, p, x), i()
-          }
-        }), (0, r.jsx)(c.Button, {
-          variant: "secondary",
-          text: b.intl.string(b.t["ETE/oC"]),
-          onClick: i
-        })]
-      })
-    })]
+    })
   })
 }

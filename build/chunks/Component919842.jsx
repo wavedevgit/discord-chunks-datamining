@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
 function v(e) {
   let {
     className: t
-  } = e, [n, l] = (0, d.US)([c.z.CHECKPOINT_2025_DESKTOP_UPSELL]), v = (0, o.e7)([h.Z], () => h.Z.hasOpenedCheckpointThisSession && !h.Z.hasSeenRewatchPopover), y = i.useRef(null), I = n === c.z.CHECKPOINT_2025_DESKTOP_UPSELL, C = () => {
+  } = e, [n, l] = (0, d.US)([c.z.CHECKPOINT_2025_DESKTOP_UPSELL]), v = (0, o.e7)([g.Z], () => g.Z.hasOpenedCheckpointThisSession && !g.Z.hasSeenRewatchPopover), y = i.useRef(null), I = n === c.z.CHECKPOINT_2025_DESKTOP_UPSELL, C = () => {
     (0, f.OL)()
   };
   return (0, r.jsxs)(r.Fragment, {
@@ -33,7 +33,7 @@ function v(e) {
       ref: y,
       className: t,
       onClick: () => {
-        (0, g.Z)("header_bar"), I && l(_.L.INDIRECT_ACTION)
+        (0, h.Z)("header_bar"), I && l(_.L.INDIRECT_ACTION)
       },
       icon: s.d5i,
       tooltip: E.intl.string(b.default["CdU/PF"]),

@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 418316, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -53,11 +53,11 @@ function g(e) {
     case d.DY.FRIEND_SUGGESTION_CREATED:
       return a.Z.getRelationshipType(N), f.OGo.PENDING_OUTGOING, null != (x = I.body) ? x : "";
     case d.DY.GUILD_SCHEDULED_EVENT_STARTED:
-      let M = I.guild_scheduled_event_id,
-        L = null != M ? l.ZP.getGuildScheduledEvent(M) : null,
-        k = null == L ? true : L.name,
-        G = null == (C = o.Z.getGuild(null == L ? true : L.guild_id)) ? true : C.name,
-        U = (0, l.Z2)(null != L ? L : true);
+      let L = I.guild_scheduled_event_id,
+        M = null != L ? l.ZP.getGuildScheduledEvent(L) : null,
+        k = null == M ? true : M.name,
+        G = null == (C = o.Z.getGuild(null == M ? true : M.guild_id)) ? true : C.name,
+        U = (0, l.Z2)(null != M ? M : true);
       return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (E = I.body) ? E : "" : h.intl.format(h.t.AyvfXR, {
         event_name: k,
         guild_name: G

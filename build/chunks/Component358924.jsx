@@ -111,7 +111,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
       }, n)
     })
   },
-  eh = e => {
+  eg = e => {
     let {
       onCloudPlayClick: t,
       analyticsLocations: n
@@ -133,7 +133,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
       })
     })
   },
-  eg = e => {
+  eh = e => {
     let {
       activity: t,
       user: n
@@ -155,7 +155,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
     } = e, {
       joinActivityButtonAction: r,
       isJoinActivityButtonShown: l
-    } = eg({
+    } = eh({
       activity: t,
       user: n
     });
@@ -214,7 +214,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
               gameName: l
             })
           })]
-        }), (0, i.jsx)(eh, {
+        }), (0, i.jsx)(eg, {
           onCloudPlayClick: s,
           analyticsLocations: n
         })]
@@ -279,7 +279,7 @@ let eO = e => {
     displayNameFont: d
   } = e, p = V.o.useConfig({
     location: "nowplaying"
-  }).demureActivityCards, h = (0, i.jsx)(f.Text, {
+  }).demureActivityCards, g = (0, i.jsx)(f.Text, {
     color: p ? "text-muted" : "text-default",
     className: es.textContent,
     variant: "text-sm/normal",
@@ -303,8 +303,8 @@ let eO = e => {
       }), null != a ? (0, i.jsx)(f.P3F, {
         className: es.clickable,
         onClick: a,
-        children: h
-      }) : h]
+        children: g
+      }) : g]
     }), null != l && null != o ? (0, i.jsx)(f.P3F, {
       className: es.clickable,
       onClick: o,
@@ -388,7 +388,7 @@ ev.Header = eO, ev.Body = e => {
     partySize: a,
     members: o,
     onChannelContextMenu: c
-  } = e, u = l.useRef(null), d = (0, A.ZP)(r, true), p = (0, K.EB)(n, 32), g = (0, K.gM)(n);
+  } = e, u = l.useRef(null), d = (0, A.ZP)(r, true), p = (0, K.EB)(n, 32), h = (0, K.gM)(n);
   return (0, i.jsx)(ep, {
     children: (0, i.jsxs)("div", {
       className: es.voiceSection,
@@ -409,9 +409,9 @@ ev.Header = eO, ev.Body = e => {
             children: (0, i.jsx)("div", {
               className: es.voiceSectionNoGuildImage,
               style: {
-                fontSize: null != (t = eo[g.length]) ? t : eo[eo.length - 1]
+                fontSize: null != (t = eo[h.length]) ? t : eo[eo.length - 1]
               },
-              children: g
+              children: h
             })
           }), (0, i.jsx)("div", {
             className: es.voiceSectionIconWrapper,
@@ -424,7 +424,7 @@ ev.Header = eO, ev.Body = e => {
         })
       }), (0, i.jsx)(f.P3F, {
         onClick: () => {
-          h.default.selectVoiceChannel(r.id), (0, Y.Kh)(r.id)
+          g.default.selectVoiceChannel(r.id), (0, Y.Kh)(r.id)
         },
         focusProps: {
           ringTarget: u
@@ -481,13 +481,13 @@ ev.Header = eO, ev.Body = e => {
   } = (0, N.ZP)(T.Z.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
     data: f
   } = (0, P.IX)(c.application_id), {
-    assets: h,
-    details: g,
+    assets: g,
+    details: h,
     state: m,
     application_id: _
   } = c, {
     hasButton: b
-  } = eg({
+  } = eh({
     activity: c,
     user: d
   }), E = null != (r = null == (t = (0, w.T7)(f)) ? true : t.src) ? r : n(211827), I = (0, S.Z)({
@@ -499,17 +499,17 @@ ev.Header = eO, ev.Body = e => {
       className: s()(es.activitySection, {
         [es.activitySectionWithButtons]: b
       }),
-      children: [null != h && 0 !== Object.keys(h).length ? (0, i.jsxs)("div", {
+      children: [null != g && 0 !== Object.keys(g).length ? (0, i.jsxs)("div", {
         className: es.activitySectionAssets,
         children: [(0, i.jsx)("img", {
-          alt: null != (l = h.large_text) ? l : "",
-          src: null != (a = u(_, h.large_image, [160, 160])) ? a : E,
+          alt: null != (l = g.large_text) ? l : "",
+          src: null != (a = u(_, g.large_image, [160, 160])) ? a : E,
           className: s()(es.largeImage, {
-            [es.largeImageMask]: null != h.small_image
+            [es.largeImageMask]: null != g.small_image
           })
-        }), null != h.small_image ? (0, i.jsx)("img", {
-          alt: null != (o = h.small_text) ? o : "",
-          src: u(_, h.small_image, [64, 64]),
+        }), null != g.small_image ? (0, i.jsx)("img", {
+          alt: null != (o = g.small_text) ? o : "",
+          src: u(_, g.small_image, [64, 64]),
           className: es.smallImage
         }) : null]
       }) : (0, i.jsx)("div", {
@@ -521,7 +521,7 @@ ev.Header = eO, ev.Body = e => {
         })
       }), (0, i.jsxs)("div", {
         className: es.activitySectionDetails,
-        children: [ec(null != g && "" !== g ? g : c.name), null != m ? eu(m) : null, (() => {
+        children: [ec(null != h && "" !== h ? h : c.name), null != m ? eu(m) : null, (() => {
           let {
             timestamps: e
           } = c;
@@ -610,7 +610,7 @@ ev.Header = eO, ev.Body = e => {
       application_id: p
     } = r;
   if (null != d && (0, I.Z)(r)) {
-    var h;
+    var g;
     t = (0, i.jsx)(L.Z, {
       className: es.twitchSectionPreviewWrapper,
       aspectRatio: 16 / 9,
@@ -619,7 +619,7 @@ ev.Header = eO, ev.Body = e => {
         tag: "a",
         target: "_blank",
         children: [(0, i.jsx)("img", {
-          alt: null != (h = d.large_text) ? h : "",
+          alt: null != (g = d.large_text) ? g : "",
           src: a(p, d.large_image, [900, 500]),
           className: es.twitchSectionPreview
         }), (0, i.jsx)("img", {
@@ -658,7 +658,7 @@ ev.Header = eO, ev.Body = e => {
     applicationStream: a,
     onPreviewClick: s,
     guildId: o
-  } = e, u = (0, c.e7)([J.Z], () => J.Z.getChannel(a.channelId)), [d, p] = (0, G.wq)(u), h = (0, i.jsxs)(f.P3F, {
+  } = e, u = (0, c.e7)([J.Z], () => J.Z.getChannel(a.channelId)), [d, p] = (0, G.wq)(u), g = (0, i.jsxs)(f.P3F, {
     onClick: d ? s : true,
     className: es.applicationStreamingPreviewWrapper,
     children: [(0, i.jsx)(B.Z, {
@@ -670,7 +670,7 @@ ev.Header = eO, ev.Body = e => {
       color: "always-white",
       children: (0, G.P9)(p)
     })]
-  }), g = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : ea.intl.string(ea.t.eXan7B), m = (0, M.Z)({
+  }), h = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : ea.intl.string(ea.t.eXan7B), m = (0, M.Z)({
     userId: l.id,
     guildId: o
   }), _ = (0, k.j)({
@@ -685,11 +685,11 @@ ev.Header = eO, ev.Body = e => {
         "aria-label": l.username,
         className: es.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
-        children: [ec(er.ZP.getName(l), _), eu(g)]
+        children: [ec(er.ZP.getName(l), _), eu(h)]
       }), (0, i.jsx)(Z.ZP, {
         size: Z.ZP.Sizes.SMALL
       })]
-    }), h]
+    }), g]
   })
 }, ev.EmbeddedActivitySection = e => {
   let {
@@ -707,27 +707,27 @@ ev.Header = eO, ev.Body = e => {
   let d = (0, c.Wu)([X.default, Q.default], () => Array.from(a).map(e => Q.default.getId() === e ? null : X.default.getUser(e)).filter(en.lm)),
     p = (0, m.O)(),
     {
-      analyticsLocations: h
+      analyticsLocations: g
     } = (0, N.ZP)();
   if (null == u) return null;
-  let g = x.Z.getApplication(u);
-  if (null == g) return null;
+  let h = x.Z.getApplication(u);
+  if (null == h) return null;
   let _ = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : true,
-    E = (0, et.xF)(g.id, s, 300);
+    E = (0, et.xF)(h.id, s, 300);
   return (0, i.jsxs)(ep, {
     children: [(0, i.jsxs)("div", {
       className: es.embeddedActivityTopRow,
       children: [(0, i.jsx)(U.Z, {
-        game: g,
+        game: h,
         size: U.A.XSMALL,
         className: es.embeddedActivityIcon
       }), (0, i.jsx)("div", {
         className: es.embeddedActivityName,
         children: (0, i.jsx)(f.Text, {
           variant: "text-sm/semibold",
-          children: g.name
+          children: h.name
         })
       }), null != _ ? (0, i.jsx)("div", {
         className: es.embeddedActivityTimeElapsed,
@@ -743,7 +743,7 @@ ev.Header = eO, ev.Body = e => {
       className: es.embeddedActivityPlayerContainer,
       children: [null != E ? (0, i.jsx)("img", {
         src: E,
-        alt: g.name,
+        alt: h.name,
         className: es.embeddedActivityImage
       }) : null, (0, i.jsxs)("div", {
         className: es.embeddedActivityImageOverlay,
@@ -762,7 +762,7 @@ ev.Header = eO, ev.Body = e => {
                 applicationId: u,
                 activityChannelId: n.id,
                 locationObject: p.location,
-                analyticsLocations: h
+                analyticsLocations: g
               })
             }
           })

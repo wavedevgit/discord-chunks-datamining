@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 812055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C,
@@ -48,19 +48,19 @@ function C(e) {
   let {
     targetElementRef: t,
     onDismiss: n,
-    children: l
+    children: r
   } = e, {
-    enabled: r,
-    titleText: i,
+    enabled: i,
+    titleText: l,
     bodyText: o
   } = (0, h.a)({
     location: "popover",
     autoTrackExposure: false
   });
-  return null != t.current && r ? (0, a.jsxs)(a.Fragment, {
-    children: [l, (0, a.jsx)(s.J2, {
+  return null != t.current && i ? (0, a.jsxs)(a.Fragment, {
+    children: [r, (0, a.jsx)(s.J2, {
       targetElementRef: t,
-      title: g.intl.string(i),
+      title: g.intl.string(l),
       body: g.intl.string(o),
       caretConfig: {
         align: "start"
@@ -80,5 +80,5 @@ function C(e) {
       },
       onRequestClose: () => null == n ? true : n(x.L.DISMISS)
     })]
-  }) : l
+  }) : r
 }

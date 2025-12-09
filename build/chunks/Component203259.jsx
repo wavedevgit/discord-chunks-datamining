@@ -22,10 +22,10 @@ function p(e) {
     var e;
     let t = null == (e = s.Z.getLastClipsSession()) ? true : e.newClipIds;
     return null == t ? null : s.Z.getClips().filter(e => t.includes(e.id))[0]
-  }), h = (0, u.l)(f), g = i.useCallback(() => {
+  }), g = (0, u.l)(f), h = i.useCallback(() => {
     (0, c.eL)()
   }, []);
-  return null == f ? null : f.type !== o.NJ.SCREENSHOT && f.type !== o.NJ.VOICE_CLIP && null != h ? (0, r.jsx)(a.Mb, {
+  return null == f ? null : f.type !== o.NJ.SCREENSHOT && f.type !== o.NJ.VOICE_CLIP && null != g ? (0, r.jsx)(a.Mb, {
     targetElementRef: {
       current: n
     },
@@ -34,7 +34,7 @@ function p(e) {
     body: d.intl.format(d.t["+qxkzC"], {
       count: p.newClipIds.length
     }),
-    assetUrl: h,
+    assetUrl: g,
     disableMediaViewer: true,
     caretConfig: {
       align: "center"
@@ -43,7 +43,7 @@ function p(e) {
       text: d.intl.string(d.t.tQPBml),
       onClick: t
     },
-    onRequestClose: g
+    onRequestClose: h
   }) : (0, r.jsx)(a.J2, {
     targetElementRef: {
       current: n
@@ -64,6 +64,6 @@ function p(e) {
       text: d.intl.string(d.t.tQPBml),
       onClick: t
     }],
-    onRequestClose: g
+    onRequestClose: h
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 680942, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -28,7 +28,7 @@ let b = e => {
     tooltipDelay: _
   } = e, {
     analyticsLocations: y
-  } = (0, c.ZP)(), C = l.useRef(null), S = (0, m.sp)(), E = (0, p.Z)();
+  } = (0, c.ZP)(), C = r.useRef(null), S = (0, m.sp)(), E = (0, p.Z)();
   return (0, a.jsx)(s.u, {
     text: g.intl.string(g.t["JCFN/y"]),
     delay: _,
@@ -44,7 +44,7 @@ let b = e => {
           sku_id: t.skuId,
           page_section: null == S ? true : S.pageSection,
           page_category: null == S ? true : S.pageCategory,
-          tile_type: r.Z[t.type],
+          tile_type: i.Z[t.type],
           tile_position: String(null == S ? true : S.tilePosition),
           cta_name: "gift button",
           page_type: E || "home"
@@ -57,7 +57,7 @@ let b = e => {
           giftingOrigin: f.Wt.SHOP_PAGE,
           analyticsLocations: y,
           returnRef: v,
-          variantsReturnStyle: i.v.VARIANTS_GROUP,
+          variantsReturnStyle: l.v.VARIANTS_GROUP,
           onClose: null != j ? e => {
             e && j()
           } : true

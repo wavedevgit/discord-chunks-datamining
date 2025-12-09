@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 17030, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -23,9 +23,9 @@ function b(e) {
     customStatusEmoji: t,
     setCustomStatusEmoji: n,
     selectedDefaultStatus: b,
-    setIsEmojiPickerOpen: y,
-    defaultStatusVariant: C
-  } = e, v = r.useRef(null), _ = (0, l.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), O = r.useCallback(() => null != t ? (0, i.jsx)(o.Z, {
+    setIsEmojiPickerOpen: C,
+    defaultStatusVariant: y
+  } = e, _ = r.useRef(null), v = (0, l.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), O = r.useCallback(() => null != t ? (0, i.jsx)(o.Z, {
     emojiId: t.id,
     emojiName: t.name,
     animated: !!t.animated
@@ -37,20 +37,20 @@ function b(e) {
       type: f.IIU.HANG_STATUS,
       state: b
     },
-    fallbackVariant: C
-  }) : null, [t, C, b]);
+    fallbackVariant: y
+  }) : null, [t, y, b]);
   return (0, i.jsx)(a.yRy, {
-    targetElementRef: v,
-    onRequestOpen: () => y(true),
-    onRequestClose: () => y(false),
+    targetElementRef: _,
+    onRequestOpen: () => C(true),
+    onRequestClose: () => C(false),
     renderPopout: e => {
       var t;
       let {
         closePopout: r
       } = e;
       return (0, i.jsx)(c.Z, {
-        channel: _,
-        guildId: null != (t = null == _ ? true : _.guild_id) ? t : true,
+        channel: v,
+        guildId: null != (t = null == v ? true : v.guild_id) ? t : true,
         closePopout: r,
         onSelectEmoji: e => {
           let {
@@ -100,7 +100,7 @@ function b(e) {
         }
         return e
       }({}, e), l = l = {
-        ref: v,
+        ref: _,
         active: a,
         tabIndex: 0,
         renderButtonContents: null == t && null == b ? null : O

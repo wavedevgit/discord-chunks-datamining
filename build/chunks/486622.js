@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 486622, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => b
@@ -24,16 +24,16 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: r,
     onError: b
-  } = e, y = (0, f.Z)(), [C, v] = i.useState(false), [_, O] = i.useState(false), [x, E] = i.useState(false), [j, S] = i.useState(false), [P, I] = i.useState(false), Z = C || _ || x, T = i.useCallback(async e => {
+  } = e, C = (0, f.Z)(), [y, _] = i.useState(false), [v, O] = i.useState(false), [x, E] = i.useState(false), [j, S] = i.useState(false), [P, I] = i.useState(false), Z = y || v || x, T = i.useCallback(async e => {
     if (!Z) {
-      v(true);
+      _(true);
       try {
         await (0, p.e4)(e), S(true), null == n || n()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
       } finally {
-        v(false)
+        _(false)
       }
     }
   }, [Z, n, b]), N = i.useCallback(async e => {
@@ -120,12 +120,12 @@ function b(e) {
     }) : i(r)
   }, [T]);
   return {
-    acceptMessageRequest: y ? w : T,
+    acceptMessageRequest: C ? w : T,
     rejectMessageRequest: N,
     rejectAll: A,
     markAsNotSpam: M,
-    isAcceptLoading: C,
-    isRejectLoading: _,
+    isAcceptLoading: y,
+    isRejectLoading: v,
     isUserProfileLoading: x,
     isOptimisticAccepted: j,
     isOptimisticRejected: P

@@ -1,42 +1,42 @@
-/** Chunk was on 83615 **/
+/** Chunk was on 75393 **/
 /** chunk id: 187285, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => u,
+  ZP: () => d,
   y3: () => c
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js");
 require("./373370.js"), require("./115179.js"), require("./388032.jsx");
 var Chunk573938 = require("./573938.js");
 
-function l(e) {
+function o(e) {
   let {
     children: t,
     isComplete: n,
-    hasNextStep: s
+    hasNextStep: r
   } = e;
-  return (0, r.jsxs)("li", {
-    className: o()(i.stepWrapper, {
-      [i.stepWrapperComplete]: n
+  return (0, a.jsxs)("li", {
+    className: i()(s.stepWrapper, {
+      [s.stepWrapperComplete]: n
     }, {
-      [i.stepWrapperWithNextStep]: s
+      [s.stepWrapperWithNextStep]: r
     }),
-    children: [(0, r.jsxs)("div", {
-      className: i.stepIndicator,
-      children: [(0, r.jsx)("div", {
-        className: i.stepIconWrapper,
-        children: n && (0, r.jsx)(a.sV5, {
-          className: i.stepIcon,
-          color: a.TVs.colors.WHITE
+    children: [(0, a.jsxs)("div", {
+      className: s.stepIndicator,
+      children: [(0, a.jsx)("div", {
+        className: s.stepIconWrapper,
+        children: n && (0, a.jsx)(l.sV5, {
+          className: s.stepIcon,
+          color: l.TVs.colors.WHITE
         })
-      }), s && (0, r.jsx)("div", {
-        className: i.stepConnector
+      }), r && (0, a.jsx)("div", {
+        className: s.stepConnector
       })]
-    }), (0, r.jsx)("div", {
-      className: i.stepContent,
+    }), (0, a.jsx)("div", {
+      className: s.stepContent,
       children: t
     })]
   })
@@ -46,34 +46,34 @@ function c(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(a.Text, {
+  return (0, a.jsx)(l.Text, {
     color: "text-muted",
     variant: "text-xs/medium",
     children: t
   })
 }
-let u = function(e) {
+let d = function(e) {
   let {
     children: t,
     heading: n,
-    steps: s
+    steps: r
   } = e;
-  return (0, r.jsxs)("div", {
-    className: i.wrapper,
-    children: [(0, r.jsx)("div", {
-      className: i.headingWrapper,
-      children: (0, r.jsx)(a.Heading, {
-        className: i.heading,
+  return (0, a.jsxs)("div", {
+    className: s.wrapper,
+    children: [(0, a.jsx)("div", {
+      className: s.headingWrapper,
+      children: (0, a.jsx)(l.Heading, {
+        className: s.heading,
         color: "header-primary",
         variant: "text-xs/semibold",
         children: n
       })
-    }), (0, r.jsx)("div", {
-      className: i.stepsWrapper,
-      children: (0, r.jsx)("ul", {
-        children: s.map((e, t) => (0, r.jsx)(l, {
+    }), (0, a.jsx)("div", {
+      className: s.stepsWrapper,
+      children: (0, a.jsx)("ul", {
+        children: r.map((e, t) => (0, a.jsx)(o, {
           isComplete: e.isComplete,
-          hasNextStep: t < s.length - 1,
+          hasNextStep: t < r.length - 1,
           children: e.renderContent()
         }, t))
       })

@@ -1,8 +1,8 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 644914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  TE: () => C,
-  h_: () => v
+  TE: () => y,
+  h_: () => _
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
@@ -21,16 +21,16 @@ var Chunk473749 = require("./473749.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js");
 
-function C(e, t) {
+function y(e, t) {
   return (0, a.cj)([g.Z], () => ({
     canInvite: (0, o.b)(g.Z, t, e),
-    canManageGuild: null != t && g.Z.can(y.Plq.MANAGE_GUILD, t),
-    canMessage: null != e && g.Z.can(y.Plq.SEND_MESSAGES, e),
-    canCreateChannel: null != t && g.Z.can(y.Plq.MANAGE_CHANNELS, t)
+    canManageGuild: null != t && g.Z.can(C.Plq.MANAGE_GUILD, t),
+    canMessage: null != e && g.Z.can(C.Plq.SEND_MESSAGES, e),
+    canCreateChannel: null != t && g.Z.can(C.Plq.MANAGE_CHANNELS, t)
   }), [t, e])
 }
 
-function v(e) {
+function _(e) {
   return {
     guildPopulated: function(e) {
       let t = (0, a.e7)([u.Z], () => u.Z.getChannel(null == e ? true : e.systemChannelId)),
@@ -38,7 +38,7 @@ function v(e) {
       return (0, a.e7)([p.Z], () => {
         var t;
         let i = null != (t = p.Z.getMemberCount(null == e ? true : e.id)) ? t : 0,
-          r = n.some(e => e.type === y.uaV.USER_JOIN);
+          r = n.some(e => e.type === C.uaV.USER_JOIN);
         return i > 1 || r
       }, [e, n])
     }(e),

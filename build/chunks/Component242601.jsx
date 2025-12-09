@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 242601, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eg
+  Z: () => eh
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -126,7 +126,7 @@ let ep = "server-settings",
       y: 0
     }
   };
-class eh extends Chunk473749.PureComponent {
+class eg extends Chunk473749.PureComponent {
   static getDerivedStateFromProps(e) {
     let {
       guild: t,
@@ -211,7 +211,7 @@ class eh extends Chunk473749.PureComponent {
       bannerVisible: u,
       bannerVisibleHeight: d,
       communityInfoVisible: p
-    } = this.state, h = i || l || a;
+    } = this.state, g = i || l || a;
     return null == t ? null : (0, r.jsx)(O.Gt, {
       value: s,
       children: (0, r.jsx)(f.KeG, {
@@ -240,7 +240,7 @@ class eh extends Chunk473749.PureComponent {
             guildBanner: this.getGuildBannerHash(),
             onClick: this.handleHeaderMenuToggle,
             onContextMenu: this.handleHeaderContextMenu,
-            disableBannerAnimation: h,
+            disableBannerAnimation: g,
             animationOverlayHeight: d
           }, a), {
             children: this.renderGuildHeaderNotices(n)
@@ -341,7 +341,7 @@ class eh extends Chunk473749.PureComponent {
       let {
         guild: t
       } = this.props;
-      null != t && (0, g.jW)(e, async () => {
+      null != t && (0, h.jW)(e, async () => {
         let {
           default: e
         } = await n.e("78248").then(n.bind(n, 652171));
@@ -353,7 +353,7 @@ class eh extends Chunk473749.PureComponent {
       let {
         guild: t
       } = this.props;
-      null != t && (0, g.jW)(e, async () => {
+      null != t && (0, h.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("36599"), n.e("7654"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("845"), n.e("86736"), n.e("6850"), n.e("58227"), n.e("44686"), n.e("384"), n.e("87154"), n.e("33213"), n.e("1289")]).then(n.bind(n, 545135));
@@ -448,7 +448,7 @@ class eh extends Chunk473749.PureComponent {
   }
 }
 
-function eg(e) {
+function eh(e) {
   var t;
   let {
     guildId: n,
@@ -458,8 +458,8 @@ function eg(e) {
   (0, _.J_)(n);
   let d = (0, C.Z)(n),
     p = (0, c.e7)([G.Z], () => G.Z.getGuildDimensions(n).scrollTo),
-    h = (0, c.e7)([W.Z], () => W.Z.getChannelId()),
-    g = (0, c.e7)([z.Z], () => z.Z.can(en.Plq.MANAGE_GUILD, s)),
+    g = (0, c.e7)([W.Z], () => W.Z.getChannelId()),
+    h = (0, c.e7)([z.Z], () => z.Z.can(en.Plq.MANAGE_GUILD, s)),
     m = (0, c.e7)([B.Z], () => B.Z.isUnavailable(n)),
     P = (0, c.e7)([q.default], () => q.default.getCurrentUser()),
     {
@@ -474,9 +474,9 @@ function eg(e) {
   i.useEffect(() => {
     n !== H && M(!w)
   }, [n, H, w]);
-  let [J, X] = (0, y.ZP)(e => [er.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ei.R.GUILD_HEADER_TOOLTIPS)], o.X), $ = (0, v.Z)(s), ee = (0, f.s9z)(f.JQI), et = (0, c.e7)([F.Z], () => F.Z.hasLayers()), el = (0, c.e7)([k.Z], () => k.Z.shouldShow(ep)), ea = (0, j.Z)(n), es = (null == s ? true : s.features.has(en.GuildFeatures.HUB)) === true, eo = g && (null == s ? true : s.features.has(en.GuildFeatures.DISCOVERABLE)) === true, ec = (0, c.e7)([x.Z, F.Z], () => null != s && null != P && g && !F.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eu = (0, c.e7)([U.Z], () => U.Z.getChannel(a)), {
+  let [J, X] = (0, y.ZP)(e => [er.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ei.R.GUILD_HEADER_TOOLTIPS)], o.X), $ = (0, v.Z)(s), ee = (0, f.s9z)(f.JQI), et = (0, c.e7)([F.Z], () => F.Z.hasLayers()), el = (0, c.e7)([k.Z], () => k.Z.shouldShow(ep)), ea = (0, j.Z)(n), es = (null == s ? true : s.features.has(en.GuildFeatures.HUB)) === true, eo = h && (null == s ? true : s.features.has(en.GuildFeatures.DISCOVERABLE)) === true, ec = (0, c.e7)([x.Z, F.Z], () => null != s && null != P && h && !F.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), eu = (0, c.e7)([U.Z], () => U.Z.getChannel(a)), {
     isPopoutOpen: ed
-  } = (0, S.y)(), ef = null != (t = null == s ? true : s.features.has(en.GuildFeatures.COMMUNITY)) && t, eg = K.ZP.isNewUser(P), em = D && !eg;
+  } = (0, S.y)(), ef = null != (t = null == s ? true : s.features.has(en.GuildFeatures.COMMUNITY)) && t, eh = K.ZP.isNewUser(P), em = D && !eh;
   (0, T.Z)(s);
   let e_ = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     eb = (0, L.Z)(n),
@@ -484,14 +484,14 @@ function eg(e) {
     eO = (0, c.e7)([W.Z], () => W.Z.getChannelId()),
     ev = (0, c.e7)([Y.Z], () => Y.Z.desyncedVoiceStatesCount),
     ey = (0, R.Z)(n);
-  return (0, r.jsx)(eh, {
+  return (0, r.jsx)(eg, {
     guildId: n,
     hideSelectedChannel: l,
     guild: s,
     scrollToChannel: p,
     selectedChannelId: l ? null : a,
     selectedChannel: eu,
-    selectedVoiceChannelId: h,
+    selectedVoiceChannelId: g,
     voiceStates: d,
     rtcConnectedChannelId: eO,
     rtcDesyncedVoiceStatesCount: ev,

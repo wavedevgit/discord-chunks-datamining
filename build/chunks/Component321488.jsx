@@ -1,42 +1,42 @@
-/** Chunk was on 1272 **/
-/** chunk id: 321488, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 74969 **/
+/** chunk id: 321488, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 });
-var r, Chunk54381 = require("./54381.js");
+var n, Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk286389 = require("./286389.js"),
-  u = ((r = u || {})[r.ACCEPT = 0] = "ACCEPT", r[r.DENY = 1] = "DENY", r[r.DEFAULT = 2] = "DEFAULT", r);
+  c = ((n = c || {})[n.ACCEPT = 0] = "ACCEPT", n[n.DENY = 1] = "DENY", n[n.DEFAULT = 2] = "DEFAULT", n);
 
-function d(e) {
+function h(e) {
   let {
     icon: t,
-    tooltip: n,
-    onClick: r,
-    actionType: l = 2,
-    shouldHighlight: u
+    tooltip: i,
+    onClick: n,
+    actionType: r = 2,
+    shouldHighlight: c
   } = e;
-  return (0, i.jsx)(s.u, {
-    text: n,
-    children: (0, i.jsx)(o.P3F, {
+  return (0, s.jsx)(a.u, {
+    text: i,
+    children: (0, s.jsx)(l.P3F, {
       tag: "div",
-      "aria-label": n,
-      onClick: r,
-      className: a()(c.actionButton, {
-        [c.actionAccept]: 0 === l,
-        [c.actionDeny]: 1 === l,
-        [c.highlight]: u
+      "aria-label": i,
+      onClick: n,
+      className: o()(u.actionButton, {
+        [u.actionAccept]: 0 === r,
+        [u.actionDeny]: 1 === r,
+        [u.highlight]: c
       }),
-      children: (0, i.jsx)(t, {
-        className: c.icon,
+      children: (0, s.jsx)(t, {
+        className: u.icon,
         color: "currentColor"
       })
     })
   })
 }
-d.ActionTypes = u;
-let p = d
+h.ActionTypes = c;
+let p = h

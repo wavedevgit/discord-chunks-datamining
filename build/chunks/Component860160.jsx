@@ -60,13 +60,13 @@ function b(e) {
     switch (n.data.kind) {
       case "message":
       case "forumThread":
-        return h.default.extractTimestamp(n.data.message.id);
+        return g.default.extractTimestamp(n.data.message.id);
       case "channelSummary":
-        return h.default.extractTimestamp(n.data.topic.endId);
+        return g.default.extractTimestamp(n.data.topic.endId);
       case "guildEvent":
-        return h.default.extractTimestamp(n.data.eventId);
+        return g.default.extractTimestamp(n.data.eventId);
       case "generatedCandidate":
-        return h.default.extractTimestamp(n.data.item.content_id);
+        return g.default.extractTimestamp(n.data.item.content_id);
       default:
         return n.timestamp
     }
@@ -116,7 +116,7 @@ function b(e) {
           let e = (() => {
             switch (n.data.kind) {
               case "message":
-                if (n.channelType === g.d4z.GUILD_ANNOUNCEMENT) return m.intl.string(m.t["8P08G9"]);
+                if (n.channelType === h.d4z.GUILD_ANNOUNCEMENT) return m.intl.string(m.t["8P08G9"]);
                 return m.intl.string(m.t.hMFMY9);
               case "channelSummary":
               case "generatedCandidate":

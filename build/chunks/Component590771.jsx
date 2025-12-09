@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk149788 = require("./149788.jsx"),
   Chunk128449 = require("./128449.js");
 
-function h(e) {
+function g(e) {
   let {
     onScroll: t,
     onGuildCardSeen: n,
@@ -43,18 +43,18 @@ function h(e) {
   })
 }
 
-function g(e) {
+function h(e) {
   let {
     tab: t,
     onScroll: n,
     onGuildCardSeen: a,
     onGuildCardClick: s
-  } = e, p = (0, u.lg)(t), h = (0, l.e7)([c.Z], () => {
+  } = e, p = (0, u.lg)(t), g = (0, l.e7)([c.Z], () => {
     var e;
     return null != (e = c.Z.getGuildIds({
       categoryId: p
     })) ? e : f.q5
-  }), g = (0, l.e7)([c.Z], () => {
+  }), h = (0, l.e7)([c.Z], () => {
     var e;
     return null == (e = c.Z.getIsFetching({
       categoryId: p
@@ -66,8 +66,8 @@ function g(e) {
     })
   }, [p]), (0, r.jsx)(d.Z, {
     tab: t,
-    guildIds: h,
-    loading: g,
+    guildIds: g,
+    loading: h,
     onScroll: n,
     onGuildCardSeen: a,
     onGuildCardClick: s
@@ -88,7 +88,7 @@ function m(e) {
       })
     }, [t]), t) {
     case f.vf.FEATURED:
-      return (0, r.jsx)(h, {
+      return (0, r.jsx)(g, {
         tab: t,
         onScroll: n,
         onGuildCardClick: o,
@@ -99,7 +99,7 @@ function m(e) {
     case f.vf.ENTERTAINMENT:
     case f.vf.TECH:
     case f.vf.EDUCATION:
-      return (0, r.jsx)(g, {
+      return (0, r.jsx)(h, {
         tab: t,
         onScroll: n,
         onGuildCardClick: o,

@@ -46,7 +46,7 @@ let _ = Chunk473749.forwardRef(function(e, t) {
   }, [E, y]), R = i.useCallback(async e => {
     null != v && (d.Z.isPhoneReverification(E, b) ? await s.Z.reverifyPhone(v, e, h) : await s.Z.addPhone(v, e, h), null == n || n(), _())
   }, [n, _, v, h, E, b]);
-  return null != v ? (0, r.jsx)(f.Z, {
+  return null != v ? (0, r.jsx)(f.default, {
     onClose: _,
     transitionState: m,
     title: p.intl.string(p.t.ZtCDc2),

@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 544245, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -40,8 +40,8 @@ function p() {
         includeFriends: t,
         includeGDMs: n,
         includeDMs: a,
-        includeQuickSwitcherState: l,
-        includeUserSearchWorkerState: r,
+        includeQuickSwitcherState: r,
+        includeUserSearchWorkerState: i,
         isUploading: s
       } = m.getState();
       if (!Chunk972959) try {

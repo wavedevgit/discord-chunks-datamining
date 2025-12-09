@@ -1,11 +1,11 @@
-/** Chunk was on 83615 **/
+/** Chunk was on 75393 **/
 /** chunk id: 26275, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk49436 = require("./49436.js"),
   Chunk968843 = require("./968843.js"),
@@ -13,62 +13,62 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk933393 = require("./933393.js");
 
-function p(e) {
+function m(e) {
   let {
     quest: t,
     onCtxMenuOpen: n,
-    onCtxMenuClose: s,
-    onCtxMenuSelect: p
-  } = e, m = (0, l.B6)(t.config.expiresAt);
-  return (0, r.jsxs)("div", {
-    className: d.questAcceptedHeader,
-    children: [(0, r.jsx)(a.Text, {
+    onCtxMenuClose: r,
+    onCtxMenuSelect: m
+  } = e, p = (0, o.B6)(t.config.expiresAt);
+  return (0, a.jsxs)("div", {
+    className: u.questAcceptedHeader,
+    children: [(0, a.jsx)(l.Text, {
       variant: "text-xxs/medium",
-      className: o()(d.flex, d.headerText),
-      children: u.intl.format(u.t["pX+fmn"], {
-        expirationDate: m
+      className: i()(u.flex, u.headerText),
+      children: d.intl.format(d.t["pX+fmn"], {
+        expirationDate: p
       })
-    }), (0, r.jsx)(c.i, {
+    }), (0, a.jsx)(c.i, {
       onOpen: n,
-      onClose: s,
-      onSelect: p,
-      questContent: i.jn.QUEST_BAR_V2,
+      onClose: r,
+      onSelect: m,
+      questContent: s.jn.QUEST_BAR_V2,
       quest: t,
       shouldShowDisclosure: false,
       showShareLink: true,
-      sourceQuestContent: i.jn.QUEST_BAR_V2,
+      sourceQuestContent: s.jn.QUEST_BAR_V2,
       children: e => {
         var t, n;
-        return (0, r.jsx)(a.P3F, (t = function(e) {
+        return (0, a.jsx)(l.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              r = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              a = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), r.forEach(function(t) {
-              var r;
-              r = n[t], t in e ? Object.defineProperty(e, t, {
-                value: r,
+            }))), a.forEach(function(t) {
+              var a;
+              a = n[t], t in e ? Object.defineProperty(e, t, {
+                value: a,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = r
+              }) : e[t] = a
             })
           }
           return e
         }({}, e), n = n = {
-          className: d.submenuWrapper,
-          "aria-label": u.intl.string(u.t.DEoVWZ),
-          children: (0, r.jsx)(a.xhG, {
+          className: u.submenuWrapper,
+          "aria-label": d.intl.string(d.t.DEoVWZ),
+          children: (0, a.jsx)(l.xhG, {
             size: "md",
             color: "currentColor",
-            className: o()(d.submenuIcon, d.interactiveNormal)
+            className: i()(u.submenuIcon, u.interactiveNormal)
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var a = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, a)
           }
           return n
         })(Object(n)).forEach(function(e) {

@@ -148,7 +148,7 @@ function y(e) {
       getAssetImage: m.xF,
       user: R
     }, "rich-presence-".concat(null != (N = Z.session_id) ? N : t, "-").concat(R.id))));
-    P && null != y && null != w && (0, h._D)(Z, y) && (null == y.userStatus || !(0, f.zE)(y.userStatus, d.jn.ACTIVITY_PANEL)) && A((0, r.jsx)(g.Z, {
+    P && null != y && null != w && (0, g._D)(Z, y) && (null == y.userStatus || !(0, f.zE)(y.userStatus, d.jn.ACTIVITY_PANEL)) && A((0, r.jsx)(h.Z, {
       quest: y
     }, "quest-".concat(y.id, "-").concat(null != (x = Z.session_id) ? x : t)))
   }), x.length > 0 ? (0, r.jsx)(b.Z.Body, {

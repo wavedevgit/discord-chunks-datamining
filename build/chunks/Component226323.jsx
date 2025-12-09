@@ -94,7 +94,7 @@ function x(e) {
   let p = i.useRef(null),
     {
       parentAnalyticsLocation: f
-    } = (0, g.ZP)(),
+    } = (0, h.ZP)(),
     {
       channel: O,
       user: x,
@@ -151,7 +151,7 @@ function x(e) {
         guildId: k,
         channel: O,
         showMediaItems: true,
-        onInteraction: (0, _.u)("GuildChannelUserContextMenu", h.Z.RTC_PANEL, {
+        onInteraction: (0, _.u)("GuildChannelUserContextMenu", g.Z.RTC_PANEL, {
           targetUserId: x.id
         })
       }))
@@ -162,7 +162,7 @@ function x(e) {
       return t => (0, r.jsx)(e, N(T({}, t), {
         user: x,
         showMediaItems: true,
-        onInteraction: (0, _.u)("UserGenericContextMenu", h.Z.RTC_PANEL, {
+        onInteraction: (0, _.u)("UserGenericContextMenu", g.Z.RTC_PANEL, {
           targetUserId: x.id
         })
       }))
@@ -214,8 +214,8 @@ function A(e) {
     voiceStates: t,
     channel: n,
     className: l
-  } = e, [u, d] = i.useState(false), h = (0, s.e7)([O.default], () => O.default.getId()), {
-    containerRef: g,
+  } = e, [u, d] = i.useState(false), g = (0, s.e7)([O.default], () => O.default.getId()), {
+    containerRef: h,
     maxVisibleAvatars: m
   } = function(e) {
     let [t, n] = i.useState(7), r = (0, f.Z)(() => {
@@ -238,7 +238,7 @@ function A(e) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, h, m), E = u ? c.V_R : c.qJs, v = u ? C.intl.string(C.t["Z/Tya5"]) : C.intl.string(C.t.XR5BAc), y = (0, r.jsx)(o.u, {
+  }(t, g, m), E = u ? c.V_R : c.qJs, v = u ? C.intl.string(C.t["Z/Tya5"]) : C.intl.string(C.t.XR5BAc), y = (0, r.jsx)(o.u, {
     text: v,
     ariaHidden: true,
     children: (0, r.jsx)(c.hU, {
@@ -255,7 +255,7 @@ function A(e) {
     className: a()(S.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
-      ref: g,
+      ref: h,
       className: a()(S.voiceUsers, !u && S.collapsed),
       role: "group",
       "aria-label": C.intl.string(C.t["/ZgaVU"]),
@@ -265,7 +265,7 @@ function A(e) {
           nick: i,
           voiceState: l
         } = e;
-        return t.id !== h ? (0, r.jsx)(x, {
+        return t.id !== g ? (0, r.jsx)(x, {
           channel: n,
           user: t,
           nick: i,

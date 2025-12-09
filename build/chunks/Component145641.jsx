@@ -18,7 +18,7 @@ let p = function(e) {
     renderRow: n,
     renderSection: p,
     footer: f
-  } = e, h = e => {
+  } = e, g = e => {
     let {
       section: r,
       row: i
@@ -26,7 +26,7 @@ let p = function(e) {
     if (null == l || null == i) return null;
     let a = l[i];
     return null == a ? null : n(a)
-  }, g = i.useCallback(e => {
+  }, h = i.useCallback(e => {
     let {
       section: t
     } = e;
@@ -102,9 +102,9 @@ let p = function(e) {
               var n;
               _.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
             },
-            renderRow: h,
+            renderRow: g,
             rowHeight: u.NV,
-            renderSection: g,
+            renderSection: h,
             sectionHeight: u.aS,
             sections: y,
             className: d.peopleList

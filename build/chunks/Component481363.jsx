@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 481363, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -27,11 +27,11 @@ function c(e) {
       compact: m = false
     },
     messageWindow: g
-  } = e, b = p.state === o.yb.SENDING, y = p.id === f, C = (0, r.yE)(p.flags, o.iLy.EPHEMERAL), v = p.state === o.yb.SEND_FAILED;
-  return b || C && !v ? null : (0, i.jsx)(a.Z, {
+  } = e, b = p.state === o.yb.SENDING, C = p.id === f, y = (0, r.yE)(p.flags, o.iLy.EPHEMERAL), _ = p.state === o.yb.SEND_FAILED;
+  return b || y && !_ ? null : (0, i.jsx)(a.Z, {
     className: s.buttons,
     innerClassName: s.buttonsInner,
-    isHeader: !m && y && !(0, l.Z)(p),
+    isHeader: !m && C && !(0, l.Z)(p),
     isReply: !m && p.type === o.uaV.REPLY && null != p.messageReference,
     channel: h,
     message: p,

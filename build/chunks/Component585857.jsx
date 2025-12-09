@@ -1,7 +1,7 @@
-/** Chunk was on 83615 **/
+/** Chunk was on 75393 **/
 /** chunk id: 585857, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => f
+  Q: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,25 +14,25 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk39625 = require("./39625.js");
 
-function p(e) {
+function m(e) {
   let {
     text: t,
     quest: n,
-    sourceQuestContent: u
-  } = e, p = (0, i.O5)();
-  return (0, r.jsx)(s.P3F, {
-    className: d.showConnectionsButton,
+    sourceQuestContent: d
+  } = e, m = (0, s.O5)();
+  return (0, a.jsx)(r.P3F, {
+    className: u.showConnectionsButton,
     onClick: () => {
-      p({
+      m({
         questId: n.id,
-        questContent: l.jn.QUEST_BAR_V2,
-        questContentCTA: i.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-        sourceQuestContent: u
-      }), (0, a.openUserSettings)(o.n.CONNECTIONS_PANEL, {
+        questContent: o.jn.QUEST_BAR_V2,
+        questContentCTA: s.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
+        sourceQuestContent: d
+      }), (0, l.openUserSettings)(i.n.CONNECTIONS_PANEL, {
         section: c.oAB.CONNECTIONS
       })
     },
-    children: (0, r.jsx)(s.Text, {
+    children: (0, a.jsx)(r.Text, {
       "aria-label": t,
       color: "none",
       variant: "text-xxs/normal",
@@ -41,39 +41,39 @@ function p(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   let {
     xboxAndPlaystationAccounts: t,
     quest: n,
-    sourceQuestContent: s
+    sourceQuestContent: r
   } = e;
-  return t.length > 0 ? (0, r.jsx)(p, {
-    text: u.intl.string(u.t["qiS+xj"]),
+  return t.length > 0 ? (0, a.jsx)(m, {
+    text: d.intl.string(d.t["qiS+xj"]),
     quest: n,
-    sourceQuestContent: s
+    sourceQuestContent: r
   }) : null
 }
 
-function f(e) {
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(s.Text, {
+function h(e) {
+  return (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsx)(r.Text, {
       color: "text-muted",
       variant: "text-xs/medium",
-      children: u.intl.string(u.t.EJFSvD)
-    }), (0, r.jsx)(m, function(e) {
+      children: d.intl.string(d.t.EJFSvD)
+    }), (0, a.jsx)(p, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          a = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), a.forEach(function(t) {
+          var a;
+          a = n[t], t in e ? Object.defineProperty(e, t, {
+            value: a,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = a
         })
       }
       return e

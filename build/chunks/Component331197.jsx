@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 331197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -43,18 +43,18 @@ function E(e) {
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: M
-  } = (0, y.Z)(t), R = (0, l.e7)([C.Z], () => C.Z.isDeaf()), L = w || M || R, D = (0, m.sR)({
+  } = (0, C.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), L = w || M || R, D = (0, m.sR)({
     isSoundboardButtonDisabled: L
   }), [k, U] = (0, h.cv)(D), {
     analyticsLocations: V
   } = (0, u.ZP)(), {
-    isHovered: H,
+    isHovered: B,
     setIsHovered: F,
-    onMouseEnter: B,
+    onMouseEnter: H,
     onMouseLeave: G
   } = (0, f.Z)(200, 300);
 
-  function z(e) {
+  function W(e) {
     null != A && (0, c.jW)(e, async () => {
       let {
         default: e
@@ -97,13 +97,13 @@ function E(e) {
     })
   }
 
-  function W() {
-    (0, d.v)(P, d.d.SOUNDBOARD), j === O.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), B()) : Z(), null == S || S(O.D.SOUNDBOARD))
+  function z() {
+    (0, d.v)(P, d.d.SOUNDBOARD), j === O.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), H()) : Z(), null == S || S(O.D.SOUNDBOARD))
   }
   let q = r.useRef(null);
   return (0, i.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: H && (j === O.D.SOUNDBOARD || null == j) || j === O.D.SOUNDBOARD,
+    shouldShow: B && (j === O.D.SOUNDBOARD || null == j) || j === O.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
@@ -116,9 +116,9 @@ function E(e) {
       let {
         closePopout: n
       } = e;
-      return L ? null : (0, i.jsx)(v.Z, {
+      return L ? null : (0, i.jsx)(_.Z, {
         children: (0, i.jsx)("div", {
-          onMouseEnter: B,
+          onMouseEnter: H,
           onMouseLeave: G,
           children: (0, i.jsx)(b.Z, {
             guildId: A,
@@ -133,23 +133,23 @@ function E(e) {
         })
       })
     },
-    children: () => (0, i.jsx)(_.d, {
+    children: () => (0, i.jsx)(v.d, {
       ref: q,
       isTrayButton: true,
       themeable: E,
       label: w ? x.intl.string(x.t["Ox4/zU"]) : M ? x.intl.string(x.t["+YBKYI"]) : R ? x.intl.string(x.t.X1lQli) : true,
       iconComponent: I,
       disabled: L,
-      onContextMenu: z,
-      onClick: W,
+      onContextMenu: W,
+      onClick: z,
       onMouseEnter: () => {
-        B(), T()
+        H(), T()
       },
       onMouseLeave: () => {
         null == j && (G(), N())
       },
-      isActive: H || j === O.D.SOUNDBOARD,
-      color: H || j === O.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: B || j === O.D.SOUNDBOARD,
+      color: B || j === O.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

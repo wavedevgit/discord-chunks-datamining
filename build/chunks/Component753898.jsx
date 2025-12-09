@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 753898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -33,7 +33,7 @@ function O(e) {
     avatarDecorationSrc: S,
     eventHandlers: P,
     isAnimating: I
-  } = (0, y.Z)({
+  } = (0, C.Z)({
     userId: null == x ? true : x.id,
     size: o.EFr.SIZE_80,
     animateOnHover: true
@@ -42,7 +42,7 @@ function O(e) {
   }, [P]), A = r.useCallback(() => {
     P.onMouseLeave(), T(false)
   }, [P]), w = !n.isMultiUserDM() && (null == x ? true : x.displayNameStyles) != null;
-  return (0, i.jsxs)(C.ZP, {
+  return (0, i.jsxs)(y.ZP, {
     channelId: n.id,
     onMouseEnter: N,
     onMouseLeave: A,
@@ -64,26 +64,26 @@ function O(e) {
         src: (0, u.x)(n, 80, e),
         avatarDecoration: S
       })
-    })(), (0, i.jsx)(C.Ot, {
+    })(), (0, i.jsx)(y.Ot, {
       children: w ? (0, i.jsx)(h.Z, {
         userName: j,
         displayNameStyles: null == x ? true : x.displayNameStyles,
         effectDisplayType: Z ? p.F.ANIMATED : p.F.STATIC,
         loop: true
       }) : j
-    }), (0, i.jsx)(C.jz, {
+    }), (0, i.jsx)(y.jz, {
       children: O
     }), n.isMultiUserDM() && (0, i.jsxs)(a.hE2, {
-      className: _.buttonContainer,
+      className: v.buttonContainer,
       children: [(0, i.jsx)(b.l, {
         channel: n,
-        text: v.intl.string(v.t["6Qgrev"]),
+        text: _.intl.string(_.t["6Qgrev"]),
         icon: o.ejJ
       }), (0, i.jsx)(a.zxk, {
         icon: o.vdY,
         variant: "secondary",
-        text: v.intl.string(v.t["5Q9+/L"]),
-        "aria-label": v.intl.string(v.t["5Q9+/L"]),
+        text: _.intl.string(_.t["5Q9+/L"]),
+        "aria-label": _.intl.string(_.t["5Q9+/L"]),
         onClick: () => (0, g.B)(n.id, c.Z.EMPTY_GROUP_DM)
       })]
     })]

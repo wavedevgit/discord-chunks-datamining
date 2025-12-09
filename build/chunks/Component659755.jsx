@@ -1,11 +1,11 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 659755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -26,13 +26,13 @@ let y = e => {
     let {
       product: t,
       isCardHovered: n
-    } = e, l = (0, h.rC)(t), {
+    } = e, r = (0, h.rC)(t), {
       isPurchased: s,
       isPartiallyOwnedBundle: o
-    } = (0, p.L)(t), c = l === i.Z.PROFILE_EFFECT;
+    } = (0, p.L)(t), c = r === l.Z.PROFILE_EFFECT;
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)("div", {
-        className: r()(_.productPreview, {
+        className: i()(_.productPreview, {
           [_.faded]: (s || o) && !n,
           [_.fullPreview]: c
         }),
@@ -49,38 +49,38 @@ let y = e => {
     let {
       product: t,
       isCardHovered: n
-    } = e, l = (0, o.e7)([u.default], () => u.default.getCurrentUser()), r = (0, h.rC)(t), s = (0, j.o)(t);
-    switch (r) {
-      case i.Z.PROFILE_EFFECT:
+    } = e, r = (0, o.e7)([u.default], () => u.default.getCurrentUser()), i = (0, h.rC)(t), s = (0, j.o)(t);
+    switch (i) {
+      case l.Z.PROFILE_EFFECT:
         return (0, a.jsx)(d.Z, {
           skuId: s.skuId,
           isHighlighted: n,
           isPurchased: false,
           removeSetHeight: true
         });
-      case i.Z.AVATAR_DECORATION:
+      case l.Z.AVATAR_DECORATION:
         return (0, a.jsx)(f.R, {
           item: s,
-          user: l,
+          user: r,
           isHighlighted: n,
           isPurchased: false,
           avatarSize: c.EFr.SIZE_120
         });
-      case i.Z.NAMEPLATE:
+      case l.Z.NAMEPLATE:
         return (0, a.jsx)(b.Z, {
           nameplate: s,
-          user: l,
+          user: r,
           isHighlighted: n,
           isPurchased: false
         });
-      case i.Z.BUNDLE:
+      case l.Z.BUNDLE:
         return (0, a.jsx)(g.U, {
           product: t,
-          user: l,
+          user: r,
           isHighlighted: n,
           isPurchased: false
         });
-      case i.Z.EXTERNAL_SKU:
+      case l.Z.EXTERNAL_SKU:
         return (0, a.jsx)(x.b, {
           product: t,
           animationState: n ? "on" : "off"
@@ -98,7 +98,7 @@ let y = e => {
       color: c.TVs.colors.INTERACTIVE_ACTIVE,
       width: 40,
       height: 40,
-      className: r()(_.productPreviewIconOverlay, {
+      className: i()(_.productPreviewIconOverlay, {
         [_.hidden]: t
       })
     })
@@ -107,10 +107,10 @@ let y = e => {
     let {
       skuId: t,
       isCardHovered: n,
-      overrideVariantIndex: l
-    } = e, r = (0, h.LJ)(t), i = (0, m.o)(r);
-    if (null == r) return null;
-    let s = (0, v.W)(r, null != l ? l : i);
+      overrideVariantIndex: r
+    } = e, i = (0, h.LJ)(t), l = (0, m.o)(i);
+    if (null == i) return null;
+    let s = (0, v.W)(i, null != r ? r : l);
     return (0, a.jsx)(y, {
       product: s,
       isCardHovered: n

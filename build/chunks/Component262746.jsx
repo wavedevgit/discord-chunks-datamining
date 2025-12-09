@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 262746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -22,11 +22,11 @@ function g(e) {
     channel: t,
     user: g,
     guild: b
-  } = e, y = (0, l.e7)([p.Z], () => null != g && p.Z.isUserBanned(g.id)), C = null != g && null == y, [v, _] = r.useState(C), O = (0, l.e7)([d.Z], () => null != g && null != b && (0, u.lD)(g, b, [d.Z]));
+  } = e, C = (0, l.e7)([p.Z], () => null != g && p.Z.isUserBanned(g.id)), y = null != g && null == C, [_, v] = r.useState(y), O = (0, l.e7)([d.Z], () => null != g && null != b && (0, u.lD)(g, b, [d.Z]));
   if ((0, c.ZP)(() => {
-      C && s.Z.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => _(false))
+      y && s.Z.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => v(false))
     }), !O) return null;
-  let x = true === y ? m.intl.string(f.default.dpfwQ1) : m.intl.string(f.default.ASv23S),
+  let x = true === C ? m.intl.string(f.default.dpfwQ1) : m.intl.string(f.default.ASv23S),
     E = "ban-user-".concat(null == g ? true : g.id);
   return (0, i.jsx)(h.Z, {
     text: x,
@@ -72,8 +72,8 @@ function g(e) {
         }
       })
     },
-    disabled: true === y || v,
-    submitting: v,
+    disabled: true === C || _,
+    submitting: _,
     color: a.zx.Colors.RED
   }, E)
 }

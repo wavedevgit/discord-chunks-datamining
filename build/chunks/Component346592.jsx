@@ -1,4 +1,4 @@
-/** Chunk was on 35129 **/
+/** Chunk was on 29419 **/
 /** chunk id: 346592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -15,30 +15,30 @@ let c = function(e) {
   let {
     className: t,
     autoplay: n,
-    quest: r,
+    quest: l,
     questContent: c,
     taskDetails: d,
-    location: E,
-    sourceQuestContent: m
-  } = e, p = (0, o.DD)({
-    quest: r,
+    location: m,
+    sourceQuestContent: f
+  } = e, p = (0, a.DD)({
+    quest: l,
     taskDetails: d,
-    location: E,
+    location: m,
     questContent: c,
-    sourceQuestContent: m
+    sourceQuestContent: f
   });
-  return (0, l.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: s()(u.wrapper, t),
-    children: [(0, l.jsx)(a.Z, {
+    children: [(0, r.jsx)(o.Z, {
       autoplay: n,
       className: u.rewardTile,
-      quest: r,
+      quest: l,
       questContent: c,
-      location: E,
-      sourceQuestContent: m
-    }), (0, l.jsx)("div", {
+      location: m,
+      sourceQuestContent: f
+    }), (0, r.jsx)("div", {
       className: u.copy,
-      children: (0, l.jsx)(i.Text, {
+      children: (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-default",
         children: p

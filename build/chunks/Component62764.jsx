@@ -1,7 +1,7 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => H
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -79,7 +79,7 @@ function F(e) {
   }) : null
 }
 
-function B(e) {
+function H(e) {
   let {
     postId: t,
     isFirstMessage: n,
@@ -88,7 +88,7 @@ function B(e) {
   } = e, {
     ref: x,
     width: E
-  } = (0, h.ZP)(), [S, k] = r.useState(3), [B, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
+  } = (0, h.ZP)(), [S, k] = r.useState(3), [H, G] = r.useState(!n), [W, z] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: K
   } = (0, M.cl)(q), Y = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: X,
@@ -96,7 +96,7 @@ function B(e) {
     isLurking: Q,
     isGuest: $,
     isPendingMember: ee
-  } = (0, y.Z)(q), et = (0, j.nw)(q), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
+  } = (0, C.Z)(q), et = (0, j.nw)(q), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -125,13 +125,13 @@ function B(e) {
         location: {
           section: L.jXE.CHANNEL_HEADER
         }
-      }), (0, A.JG)((0, N.EO)(q, en), () => W(true))
+      }), (0, A.JG)((0, N.EO)(q, en), () => z(true))
     },
     eu = Y ? u.dz2 : u.Dkj;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: a()(U.container, {
-        [U.header]: B
+        [U.header]: H
       }),
       ref: x,
       children: [et ? (0, i.jsx)("div", {
@@ -162,7 +162,7 @@ function B(e) {
             me_burst: false,
             emojiSize: "reaction"
           })
-        }), (0, i.jsx)(_.Z, {
+        }), (0, i.jsx)(v.Z, {
           message: K,
           channel: q,
           disableReactionCreates: true,
@@ -175,11 +175,11 @@ function B(e) {
           useChatFontScaling: false,
           isForumToolbar: true,
           forceHideReactionCreates: true
-        }), !J && (0, i.jsx)(C.X, {
+        }), !J && (0, i.jsx)(y.X, {
           message: K,
           channel: q,
           useChatFontScaling: false,
-          className: a()(H.secondary, U.addReactButton, {
+          className: a()(B.secondary, U.addReactButton, {
             [U.hasNoReactions]: !es
           }),
           isForumToolbar: true,
@@ -202,7 +202,7 @@ function B(e) {
           })
         }), (0, i.jsx)(c.u, {
           text: D.intl.string(D.t.WqhZss),
-          children: z ? (0, i.jsx)(u.Button, {
+          children: W ? (0, i.jsx)(u.Button, {
             icon: u.dz2,
             size: "sm",
             variant: "secondary",
@@ -235,7 +235,7 @@ function B(e) {
       })]
     }), er && (0, i.jsx)(g.Z, {
       threadId: t
-    }), (0, i.jsx)(v.Z, {
+    }), (0, i.jsx)(_.Z, {
       channel: q,
       isLastItem: l
     })]

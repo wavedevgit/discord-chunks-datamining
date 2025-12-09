@@ -1,4 +1,4 @@
-/** Chunk was on 64271 **/
+/** Chunk was on 83037 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -77,7 +77,7 @@ let B = Chunk473749.memo(function e(t) {
       channel: l,
       message: s,
       compact: R = false,
-      className: L,
+      className: M,
       onContextMenu: B,
       onClick: V,
       disableInteraction: H = false,
@@ -124,14 +124,14 @@ let B = Chunk473749.memo(function e(t) {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (m.Z.isBlockedForMessage(s) ? i = M.t["+FcYM/"] : m.Z.isIgnoredForMessage(s) ? i = M.t["VFWjc+"] : (0, O.DQ)(s) && z && (i = M.t.xfkfTK), true !== i) ? (0, r.jsx)(F, {
-    className: L,
+  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYM/"] : m.Z.isIgnoredForMessage(s) ? i = L.t["VFWjc+"] : (0, O.DQ)(s) && z && (i = L.t.xfkfTK), true !== i) ? (0, r.jsx)(F, {
+    className: M,
     compact: R,
     count: 1,
     collapsedReason: i
   }) : (0, r.jsx)(C.Z, {
     compact: R,
-    className: o()(L, {
+    className: o()(M, {
       [k.ephemeral]: (0, y.Pv)(s),
       [k.disableInteraction]: H,
       [k.groupStart]: t.isGroupStart
@@ -176,7 +176,7 @@ let B = Chunk473749.memo(function e(t) {
     messageRef: eu,
     author: eo,
     "aria-labelledby": ep,
-    "aria-roledescription": M.intl.string(M.t.BAB0yK)
+    "aria-roledescription": L.intl.string(L.t.BAB0yK)
   })
 });
 
@@ -193,15 +193,15 @@ function F(e) {
     role: "group",
     childrenMessageContent: (0, r.jsx)(R.Z, {
       compact: i,
-      className: L.blockedSystemMessage,
+      className: M.blockedSystemMessage,
       iconNode: (0, r.jsx)(s.Dio, {
         size: "md",
         color: "currentColor",
-        className: L.blockedIcon
+        className: M.blockedIcon
       }),
       children: (0, r.jsx)("div", {
-        className: L.blockedMessageText,
-        children: M.intl.format(l, {
+        className: M.blockedMessageText,
+        children: L.intl.format(l, {
           count: n
         })
       })

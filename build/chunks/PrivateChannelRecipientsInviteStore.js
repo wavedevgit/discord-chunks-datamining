@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 544610, original params: e,t,n (module,exports,require) **/
 let i;
 require.d(exports, {
@@ -18,8 +18,8 @@ var r, l, Chunk442837 = require("./442837.js"),
   Chunk699516 = require("./699516.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
-let v = false,
-  _ = "",
+let _ = false,
+  v = "",
   O = 0,
   x = [],
   E = false,
@@ -27,21 +27,21 @@ let v = false,
   S = null;
 
 function P() {
-  _ = "", O = 0, x = [], j = new Set, v = false, S = null
+  v = "", O = 0, x = [], j = new Set, _ = false, S = null
 }
 
 function I(e) {
-  _ = e, O = 0, Z()
+  v = e, O = 0, Z()
 }
 
 function Z() {
-  if (!v) returnfalse;
+  if (!_) returnfalse;
   let e = Chunk592125.Z.getChannel(S);
-  if (0 === _.trim().length) return null != i && i.clearQuery(), x = function(e) {
+  if (0 === v.trim().length) return null != i && i.clearQuery(), x = function(e) {
     let t = b.Z.getFriendIDs(),
-      n = y.default.getCurrentUser();
-    return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...y.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
-      let n = y.default.getUser(t);
+      n = C.default.getCurrentUser();
+    return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...C.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
+      let n = C.default.getUser(t);
       return null == n || n.isProvisional || e.push({
         user: n,
         comparator: h.ZP.getName(n)
@@ -54,7 +54,7 @@ function Z() {
     let e = Chunk594174.default.getCurrentUser(),
       r = null != (n = null == module ? true : module.isStaff()) && require;
     i.setQuery({
-      query: _,
+      query: v,
       filters: {
         friends: true,
         staff: r,
@@ -84,13 +84,13 @@ function Z() {
 }
 
 function T() {
-  if (!v) returnfalse;
+  if (!_) returnfalse;
   let e = E;
   return (E = Chunk699516.Z.getFriendCount() > 0) !== module
 }
 
 function N(e, t) {
-  if (m.Z.hasConsented(C.pjP.PERSONALIZATION)) {
+  if (m.Z.hasConsented(y.pjP.PERSONALIZATION)) {
     var n, i, r, l;
     let a = null != (r = null == (n = u.Z.getUserAffinity(e.user.id)) ? true : n.communicationProbability) ? r : 0,
       o = null != (l = null == (i = u.Z.getUserAffinity(t.user.id)) ? true : i.communicationProbability) ? l : 0;
@@ -103,14 +103,14 @@ function A(e) {
   let {
     results: t
   } = e;
-  if (!v || "" === _) return;
+  if (!_ || "" === v) return;
   let n = [];
   for (let {
       id: e,
       comparator: i
     }
     of t) {
-    let t = y.default.getUser(e);
+    let t = C.default.getUser(e);
     null != t && n.push({
       user: t,
       comparator: i
@@ -124,12 +124,12 @@ function w() {
 }
 
 function M(e) {
-  if (e.key !== C.vTt) returnfalse;
-  v = true, T(), i = w(), S = null, I("")
+  if (e.key !== y.vTt) returnfalse;
+  _ = true, T(), i = w(), S = null, I("")
 }
 
 function R(e) {
-  if (e.key !== C.vTt) returnfalse;
+  if (e.key !== y.vTt) returnfalse;
   L()
 }
 
@@ -150,11 +150,11 @@ class D extends(r = Chunk442837.ZP.Store) {
     return j
   }
   getQuery() {
-    return _
+    return v
   }
   getState() {
     return {
-      query: _,
+      query: v,
       selectedRow: O,
       selectedUsers: j,
       results: x,
@@ -177,13 +177,13 @@ let k = new D(Chunk570140.Z, {
         channelId: n
       } = e;
       if (null != t) returnfalse;
-      let i = v;
-      return P(), v = i, S = n, Z()
+      let i = _;
+      return P(), _ = i, S = n, Z()
     },
     MODAL_PUSH: M,
     SHOW_ACTION_SHEET: M,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      v = true, T(), i = w(), S = e.channelId, I("")
+      _ = true, T(), i = w(), S = e.channelId, I("")
     },
     MODAL_POP: R,
     HIDE_ACTION_SHEET: R,

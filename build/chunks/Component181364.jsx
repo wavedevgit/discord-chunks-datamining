@@ -44,8 +44,8 @@ function p(e) {
     hint: h,
     notifType: d.n0.WelcomeNudge
   }, e), {
-    trackView: y,
-    trackClick: b
+    trackView: _,
+    trackClick: y
   } = (0, c.R)(m, {
     notif_type: m
   });
@@ -62,13 +62,13 @@ function p(e) {
       children: u.intl.string(u.t["9MyuT0"])
     }),
     onNotificationShow: () => {
-      y()
+      _()
     },
     onNotificationClick: (e, n) => {
-      b("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), o.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.Z.setInputLocked(false, (0, a.getPID)()) : l.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
+      y("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), o.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.Z.setInputLocked(false, (0, a.getPID)()) : l.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      b("dismiss")
+      y("dismiss")
     }
   }
 }

@@ -32,7 +32,7 @@ function _(e) {
   } = e, w = (0, l.ZP)(), O = (0, o.wjy)(w) ? y.BR.DARK : y.BR.LIGHT, N = (0, p.V_)(t), P = (0, u.aM)(), E = (0, f.VB)(t.config), T = a.useMemo(() => {
     var e;
     let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
-    return null != n ? n : (0, f.BI)(t.config) !== i.W.GAMEPLAY || t.config.features.includes(g.S7.NON_GAMING_PLAY_QUEST) || (0, f.Pb)(t) ? v.intl.string(v.t.y8Xf3k) : v.intl.string(v.t["wirwN+"])
+    return null != n ? n : (0, f.BI)(t.config) !== i.W.GAMEPLAY || t.config.features.includes(g.S7.NON_GAMING_PLAY_QUEST) || (0, f.Pb)(t) ? b.intl.string(b.t.y8Xf3k) : b.intl.string(b.t["wirwN+"])
   }, [t]), {
     isLoading: A
   } = (0, h.kC)();
@@ -50,7 +50,7 @@ function _(e) {
     }), [P, n])
   });
   return (0, r.jsxs)("div", {
-    className: b.container,
+    className: v.container,
     children: [(0, r.jsx)(h.Fl, {
       id: "hero-display",
       children: e => (0, r.jsx)(j.Z, {
@@ -59,32 +59,32 @@ function _(e) {
           width: 908,
           height: 380
         },
-        containerClassName: b.heroDisplayContainer,
+        containerClassName: v.heroDisplayContainer,
         isInteracting: true,
         assetRef: e
       })
     }), (0, r.jsx)("div", {
-      className: b.partnerLogotypeContainer,
+      className: v.partnerLogotypeContainer,
       children: (0, r.jsx)(h.Fl, {
         id: "partner-logotype",
         children: e => (0, r.jsx)("img", {
           ref: e,
-          className: b.partnerLogotype,
-          alt: v.intl.formatToPlainString(v.t.rtm15P, {
+          className: v.partnerLogotype,
+          alt: b.intl.formatToPlainString(b.t.rtm15P, {
             name: t.config.messages.gameTitle
           }),
           src: (0, m.fh)(t, m.eC.LOGO_TYPE, O).url
         })
       })
     }), (0, r.jsxs)("div", {
-      className: b.partnerContentContainer,
+      className: v.partnerContentContainer,
       children: [(0, r.jsxs)("div", {
-        className: b.partnerCopyContainer,
+        className: v.partnerCopyContainer,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          className: b.partnerTitle,
-          children: v.intl.format(v.t.EAYZAr, {
+          className: v.partnerTitle,
+          children: b.intl.format(b.t.EAYZAr, {
             questName: t.config.messages.questName
           })
         }), (0, r.jsx)(o.xvT, {
@@ -96,26 +96,26 @@ function _(e) {
         id: "partner-game-tile",
         children: e => (0, r.jsx)("img", {
           ref: e,
-          className: b.partnerGameTile,
-          alt: v.intl.formatToPlainString(v.t.rtm15P, {
+          className: v.partnerGameTile,
+          alt: b.intl.formatToPlainString(b.t.rtm15P, {
             name: t.config.messages.gameTitle
           }),
           src: (0, m.fh)(t, m.eC.GAME_TILE, O).url
         })
       })]
     }), (0, r.jsx)("div", {
-      className: b.bottomContainer,
+      className: v.bottomContainer,
       children: (0, r.jsxs)(o.hE2, {
         size: "sm",
         direction: "horizontal",
         fullWidth: true,
         fullWidthContainer: true,
         children: [E && (0, r.jsx)(s.u, {
-          text: v.intl.string(v.t.WmfZHZ),
+          text: b.intl.string(b.t.WmfZHZ),
           children: (0, r.jsx)(o.hU, {
             icon: o.xPt,
             onClick: I,
-            "aria-label": v.intl.string(v.t.WmfZHZ),
+            "aria-label": b.intl.string(b.t.WmfZHZ),
             variant: "secondary"
           })
         }), (0, r.jsx)(o.zxk, {

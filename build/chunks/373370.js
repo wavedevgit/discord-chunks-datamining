@@ -540,16 +540,15 @@ function W(e) {
 }
 
 function K(e) {
-  var t, n, r, i;
+  var t, n, r, i, a;
   let {
-    quest: a,
-    rewardCode: o,
-    selectedPlatformType: s
+    quest: o,
+    rewardCode: s
   } = e, l = (0, p.oo)({
-    quest: a
-  }), c = null != s ? s : null == o ? true : o.platform, u = l ? (0, p.o9)({
-    quest: a,
-    idx: null != (r = null == o ? true : o.tier) ? r : null == (t = a.userStatus) ? true : t.claimedTier
-  }) : null, d = (0, f.M1)(a.config), _ = null != (i = null == u || null == (n = u.messages) ? true : n.redemptionInstructionsByPlatform) ? i : d.messages.redemptionInstructionsByPlatform;
-  return null != c ? _[c] : true
+    quest: o
+  }), c = null != (r = null == s ? true : s.platform) ? r : u.y$.CROSS_PLATFORM, d = l ? (0, p.o9)({
+    quest: o,
+    idx: null != (i = null == s ? true : s.tier) ? i : null == (t = o.userStatus) ? true : t.claimedTier
+  }) : null, _ = (0, f.M1)(o.config), m = null != (a = null == d || null == (n = d.messages) ? true : n.redemptionInstructionsByPlatform) ? a : _.messages.redemptionInstructionsByPlatform;
+  return null != c ? m[c] : true
 }

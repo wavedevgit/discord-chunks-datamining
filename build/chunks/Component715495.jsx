@@ -1,4 +1,4 @@
-/** Chunk was on 88282 **/
+/** Chunk was on 75393 **/
 /** chunk id: 715495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -54,11 +54,11 @@ function j(e, t) {
 
 function _() {
   var e, t;
-  let [n, r] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [h, f] = (0, Chunk473749.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
-    setToolsCache: N,
+  let [n, i] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [h, f] = (0, Chunk473749.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
+    setToolsCache: O,
     removeToolsCache: T
   } = (0, Chunk396821.L3)(), {
-    setImgCache: O
+    setImgCache: N
   } = (0, Chunk396821.W_)(), P = (0, Chunk473749.useCallback)(e => {
     let t = _[e];
     null != t && f({
@@ -73,12 +73,12 @@ function _() {
       src: e,
       preview: true
     }))
-  }, [_]), I = (0, Chunk473749.useCallback)(e => {
+  }, [_]), w = (0, Chunk473749.useCallback)(e => {
     f(t => null == t ? null : j(v({}, t), {
       palette: e,
       preview: true
     }))
-  }, []), w = (0, Chunk473749.useCallback)(e => {
+  }, []), I = (0, Chunk473749.useCallback)(e => {
     T(e)
   }, [T]);
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -106,7 +106,7 @@ function _() {
         children: [require && (0, Chunk54381.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk54381.jsx)(Chunk711325.Z, {
           selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
-            (null == h ? true : h.src) != null && N(h.src, h.src, e), I(e)
+            (null == h ? true : h.src) != null && O(h.src, h.src, e), w(e)
           }
         })]
       })]
@@ -127,7 +127,7 @@ function _() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               a = await n.arrayBuffer();
-            O(t, t, (0, p.xh)(a)), N(t, t, m.jD)
+            N(t, t, (0, p.xh)(a)), O(t, t, m.jD)
           }
         }), (0, Chunk54381.jsx)("div", {
           className: Chunk30827.uploadedArea,
@@ -138,12 +138,12 @@ function _() {
             return (0, a.jsx)(C, {
               src: t,
               onSetStatic: P,
-              removeAsset: w
+              removeAsset: I
             }, t)
           })
         }), (0, Chunk54381.jsx)(E, {
           label: "gradient override",
-          onChange: e => I({
+          onChange: e => w({
             name: m._j,
             darkBackground: e,
             lightBackground: e
@@ -160,12 +160,12 @@ function _() {
 function y(e) {
   let {
     nameplate: t
-  } = e, [n, r] = (0, l.useState)(320), s = (0, l.useRef)(null), o = (0, l.useRef)(null), c = (0, l.useRef)(null), d = (0, l.useRef)(document), u = (0, l.useCallback)(e => {
+  } = e, [n, i] = (0, r.useState)(320), s = (0, r.useRef)(null), o = (0, r.useRef)(null), c = (0, r.useRef)(null), d = (0, r.useRef)(document), u = (0, r.useCallback)(e => {
     if (null != s.current) {
       let t = s.current.getBoundingClientRect();
-      r(Math.max(264, Math.min(432, e.clientX - t.left)))
+      i(Math.max(264, Math.min(432, e.clientX - t.left)))
     }
-  }, []), m = (0, l.useCallback)(e => {
+  }, []), m = (0, r.useCallback)(e => {
     e.preventDefault(), e.stopPropagation();
     let t = e.currentTarget.ownerDocument;
     d.current = t;
@@ -177,9 +177,9 @@ function y(e) {
       };
     o.current = n, c.current = a, t.addEventListener("mousemove", n), t.addEventListener("mouseup", a)
   }, [u]);
-  return (0, l.useEffect)(() => () => {
+  return (0, r.useEffect)(() => () => {
     null != o.current && (d.current.removeEventListener("mousemove", o.current), o.current = null), null != c.current && (d.current.removeEventListener("mouseup", c.current), c.current = null)
-  }, []), (0, a.jsx)(i.zJl, {
+  }, []), (0, a.jsx)(l.zJl, {
     className: b.previewsContainer,
     orientation: "horizontal",
     children: (0, a.jsxs)("div", {
@@ -188,20 +188,20 @@ function y(e) {
       style: {
         width: "".concat(n, "px")
       },
-      children: [(0, a.jsx)(i.Text, {
+      children: [(0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "Memberlist"
-      }), (0, a.jsx)(N, {
+      }), (0, a.jsx)(O, {
         nameplate: t
-      }), (0, a.jsx)(i.Text, {
+      }), (0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "DMs"
       }), (0, a.jsx)(T, {
         nameplate: t
-      }), (0, a.jsx)(i.Text, {
+      }), (0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "RTC"
-      }), (0, a.jsx)(O, {
+      }), (0, a.jsx)(N, {
         nameplate: t
       }), (0, a.jsx)("div", {
         className: b.resizeHandle,
@@ -215,14 +215,14 @@ function C(e) {
   let {
     src: t,
     onSetStatic: n,
-    removeAsset: l
+    removeAsset: r
   } = e;
   return (0, a.jsxs)("div", {
     className: b.uploaded,
-    children: [(0, a.jsx)(i.P3F, {
-      onClick: () => l(t),
+    children: [(0, a.jsx)(l.P3F, {
+      onClick: () => r(t),
       className: b.xicon,
-      children: (0, a.jsx)(i.Dio, {
+      children: (0, a.jsx)(l.Dio, {
         size: "custom",
         width: 16,
         height: 16,
@@ -234,7 +234,7 @@ function C(e) {
       alt: ""
     }), (0, a.jsx)("div", {
       className: b.uploadedControls,
-      children: (0, a.jsx)(i.Button, {
+      children: (0, a.jsx)(l.Button, {
         onClick: () => n(t),
         size: "sm",
         variant: "secondary",
@@ -251,10 +251,10 @@ function S(e) {
   } = e;
   return (0, a.jsxs)("div", {
     className: b.flex,
-    children: [(0, a.jsx)(i.Text, {
+    children: [(0, a.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: "coming soon"
-    }), (0, a.jsx)(i.Button, {
+    }), (0, a.jsx)(l.Button, {
       variant: "secondary",
       size: "sm",
       text: t,
@@ -271,7 +271,7 @@ function E(e) {
   } = e;
   return (0, a.jsxs)("div", {
     className: b.hexInput,
-    children: [(0, a.jsx)(i.Text, {
+    children: [(0, a.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: t
     }), (0, a.jsx)("input", {
@@ -284,15 +284,15 @@ function E(e) {
   })
 }
 
-function N(e) {
+function O(e) {
   let {
     nameplate: t
-  } = e, n = (0, r.e7)([d.default], () => d.default.getCurrentUser());
+  } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return (0, a.jsx)("div", {
     className: b.preview,
     children: (0, a.jsxs)("div", {
       className: b.simArea,
-      children: [(0, a.jsx)(i.Text, {
+      children: [(0, a.jsx)(l.Text, {
         className: b.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
@@ -300,7 +300,7 @@ function N(e) {
         nameplate: t,
         user: n,
         currentUser: n
-      }), (0, a.jsx)(i.Text, {
+      }), (0, a.jsx)(l.Text, {
         className: b.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
@@ -328,13 +328,13 @@ function T(e) {
     className: b.preview,
     children: (0, a.jsxs)("div", {
       className: b.simArea,
-      children: [(0, a.jsx)(i.Text, {
+      children: [(0, a.jsx)(l.Text, {
         className: b.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
       }), (0, a.jsx)(f.Z, {
         nameplate: t
-      }), (0, a.jsx)(i.Text, {
+      }), (0, a.jsx)(l.Text, {
         className: b.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
@@ -350,7 +350,7 @@ function T(e) {
   })
 }
 
-function O(e) {
+function N(e) {
   let {
     nameplate: t
   } = e;

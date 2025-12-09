@@ -1,4 +1,4 @@
-/** Chunk was on 34740 **/
+/** Chunk was on 73755 **/
 /** chunk id: 526846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => w
@@ -42,7 +42,7 @@ function A(e) {
     } = e,
     {
       fetchState: g,
-      voiceBannerCollection: v
+      voiceBannerCollection: _
     } = function() {
       let e = (0, c.e7)([O.default], () => O.default.onlyShowPreviewAppCollections) ? a.E.PREVIEW : a.E.ACTIVE;
       return r.useEffect(() => {
@@ -51,21 +51,21 @@ function A(e) {
           activeState: e
         })
       }, [e]), {
-        fetchState: (0, c.e7)([y.Z], () => y.Z.getFetchState({
+        fetchState: (0, c.e7)([C.Z], () => C.Z.getFetchState({
           surface: T,
           activeState: e
         })),
-        voiceBannerCollection: (0, c.e7)([y.Z], () => y.Z.getCollections({
+        voiceBannerCollection: (0, c.e7)([C.Z], () => C.Z.getCollections({
           surface: T,
           activeState: e
         }))[0]
       }
     }(),
-    _ = g === y.M.FETCHING,
+    v = g === C.M.FETCHING,
     x = r.useMemo(() => {
-      let e = null == v ? true : v.application_directory_collection_items[0];
+      let e = null == _ ? true : _.application_directory_collection_items[0];
       return null == e ? null : e.type === s.C.APPLICATION_BANNER ? e : null
-    }, [null == v ? true : v.application_directory_collection_items]),
+    }, [null == _ ? true : _.application_directory_collection_items]),
     {
       trackItemImpressionRef: E
     } = (0, f.Z)({
@@ -76,7 +76,7 @@ function A(e) {
       sectionOverallPosition: 0,
       promotionalLabel: null != x ? (0, h.dF)(x.application) : true
     });
-  return null == x || null == v || _ ? null : (null != x.id && null != x.image_hash && (n = (0, C.$_)({
+  return null == x || null == _ || v ? null : (null != x.id && null != x.image_hash && (n = (0, y.$_)({
     itemId: x.id,
     hash: x.image_hash,
     containerWidth: 584
@@ -117,22 +117,22 @@ let w = Chunk473749.forwardRef(function(e, t) {
     className: f
   } = e, {
     id: b,
-    guild_id: y
+    guild_id: C
   } = l;
   r.useEffect(() => {
     x.default.track(P.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
       channel_id: b,
-      guild_id: y
+      guild_id: C
     })
-  }, [b, y]), r.useEffect(() => {
+  }, [b, C]), r.useEffect(() => {
     a || o()
   }, [o, a]);
-  let C = (0, v.bp)(),
+  let y = (0, _.bp)(),
     {
       analyticsLocations: O,
       newestAnalyticsLocation: T
     } = (0, p.ZP)(d.Z.ACTIVITIES_MINI_SHELF),
-    w = C === P.IlC.POPOUT,
+    w = y === P.IlC.POPOUT,
     M = (n = l.getGuildId(), (0, j.Z)({
       guildId: n
     }).slice(0, 5));
@@ -160,7 +160,7 @@ let w = Chunk473749.forwardRef(function(e, t) {
     }, [s, l]);
   return (0, i.jsx)(p.Gt, {
     value: O,
-    children: (0, i.jsx)(_.Z, {
+    children: (0, i.jsx)(v.Z, {
       children: (0, i.jsxs)(u.VqE, {
         ref: t,
         "aria-labelledby": N,

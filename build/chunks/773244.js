@@ -22,15 +22,15 @@ function d(e) {
   } = e, f = (0, l.e7)([o.default], () => {
     var e;
     return null != (e = o.default.getFingerprint()) ? e : o.default.getId()
-  }), h = (0, l.e7)([s.Z], () => s.Z.getState(i), [i]), g = r.useMemo(() => null == d ? {
+  }), g = (0, l.e7)([s.Z], () => s.Z.getState(i), [i]), h = r.useMemo(() => null == d ? {
     path: i,
     fingerprint: f,
     search: p
   } : d(i, f, p), [i, d, f, p]);
   return r.useEffect(() => {
-    u || null == h && a.Z.openNativeAppModal(i, c.Etm.DEEP_LINK, {
+    u || null == g && a.Z.openNativeAppModal(i, c.Etm.DEEP_LINK, {
       type: n,
-      params: g
+      params: h
     })
-  }, [h, i, g, n]), t
+  }, [g, i, h, n]), t
 }

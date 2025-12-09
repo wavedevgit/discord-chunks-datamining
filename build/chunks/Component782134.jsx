@@ -57,9 +57,9 @@ function I() {
       children: _
     }), (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
       direction: "vertical",
-      gap: 4,
+      gap: 8,
       children: [(0, Chunk54381.jsx)(Chunk793030.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
+        label: Chunk388032.intl.string(Chunk388032.t.lY6j47),
         description: _,
         checked: module,
         onChange: exports

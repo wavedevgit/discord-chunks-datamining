@@ -22,8 +22,8 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = Chunk314897.default.getToken();
-class g extends Chunk317770.Z {
+let g = Chunk314897.default.getToken();
+class h extends Chunk317770.Z {
   _initialize() {
     this.focusedOrForegrounded = (0, Chunk127438.H)(), Chunk314897.default.addChangeListener(this.handleAuthenticationChange), Chunk570140.Z.subscribe("WINDOW_FOCUS", this.handleWindowFocus), Chunk570140.Z.subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate), Chunk570140.Z.subscribe("QUESTS_ENROLL_SUCCESS", this.handleEnrollmentSuccess), Chunk570140.Z.subscribe("LOGIN_SUCCESS", this.handleLogin), Chunk570140.Z.subscribe("LOGOUT", this.handleLogout), this.scheduleHeartbeatTracking()
   }
@@ -66,7 +66,7 @@ class g extends Chunk317770.Z {
       }), t.heartbeatInterval.stop())
     }), f(this, "scheduleHeartbeatTracking", function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "DEFAULT";
-      if (t.focusedOrForegrounded && null != h) try {
+      if (t.focusedOrForegrounded && null != g) try {
         t.startAnalyticHeartbeat()
       } catch (e) {
         c.Z.captureException(e)
@@ -89,8 +89,8 @@ class g extends Chunk317770.Z {
       this.focusedOrForegrounded = t === p.$7l.ACTIVE, this.scheduleHeartbeatTracking("APP_STATE_UPDATE")
     }), f(this, "handleAuthenticationChange", () => {
       let e = a.default.getToken();
-      h !== e && (h = e, (0, u.GG)(), this.stopAnalyticHeartbeat()), this.scheduleHeartbeatTracking()
+      g !== e && (g = e, (0, u.GG)(), this.stopAnalyticHeartbeat()), this.scheduleHeartbeatTracking()
     })
   }
 }
-let m = new g
+let m = new h

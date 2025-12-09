@@ -35,7 +35,7 @@ let T = (0, Chunk112724.Z)(function(e) {
   }, [n]), i.useLayoutEffect(() => {
     n && u.Y(y.Z5c.ICYMI)
   }, [n]), (0, p.ZP)(() => {
-    n && (0, g.e)("icymi")
+    n && (0, h.e)("icymi")
   });
   let l = (0, o.e7)([m.Z], () => m.Z.theme),
     d = (0, o.e7)([b.Z], () => b.Z.isRefreshing()),
@@ -70,21 +70,21 @@ let T = (0, Chunk112724.Z)(function(e) {
     className: a()(S.chat, C.container),
     children: [(0, r.jsx)(c.f6W, {
       theme: l,
-      children: e => (0, r.jsxs)(h.Z, {
+      children: e => (0, r.jsxs)(g.Z, {
         className: e,
-        toolbar: (0, r.jsx)(h.Z.Icon, {
+        toolbar: (0, r.jsx)(g.Z.Icon, {
           icon: c.DuK,
           tooltip: Z,
           onClick: A,
           disabled: d,
           "aria-label": Z
         }),
-        children: [(0, r.jsx)(h.Z.Icon, {
+        children: [(0, r.jsx)(g.Z.Icon, {
           icon: c.qOE,
           "aria-hidden": true
-        }), (0, r.jsx)(h.Z.Title, {
+        }), (0, r.jsx)(g.Z.Title, {
           children: I.intl.string(I.t["jnXV/V"])
-        }), (0, r.jsx)(h.Z.Title, {
+        }), (0, r.jsx)(g.Z.Title, {
           children: (0, r.jsx)("p", {
             className: C.preAlphaText,
             children: I.intl.string(I.t.Ac2OZA)

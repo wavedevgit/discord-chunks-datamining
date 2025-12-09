@@ -1,4 +1,4 @@
-/** Chunk was on 83615 **/
+/** Chunk was on 75393 **/
 /** chunk id: 554768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -10,30 +10,30 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk231411 = require("./231411.js");
 
-function l(e) {
+function o(e) {
   let {
     header: t,
     children: n
   } = e;
-  return (0, r.jsxs)("div", {
-    className: i.card,
-    children: [(0, r.jsxs)("div", {
-      className: i.header,
-      children: [(0, r.jsx)(s.Mgn, {
+  return (0, a.jsxs)("div", {
+    className: s.card,
+    children: [(0, a.jsxs)("div", {
+      className: s.header,
+      children: [(0, a.jsx)(r.Mgn, {
         size: "custom",
         color: "currentColor",
-        className: i.icon,
+        className: s.icon,
         width: 16,
         height: 16
-      }), (0, r.jsx)(s.Heading, {
+      }), (0, a.jsx)(r.Heading, {
         color: "text-default",
         variant: "heading-sm/medium",
         children: t
       })]
-    }), (0, r.jsx)(s.Text, {
+    }), (0, a.jsx)(r.Text, {
       color: "text-muted",
       variant: "text-xs/normal",
-      className: i.warningBody,
+      className: s.warningBody,
       children: n
     })]
   })
@@ -41,14 +41,14 @@ function l(e) {
 let c = function(e) {
   let {
     quest: t
-  } = e, n = (0, o.qb)(t);
+  } = e, n = (0, i.qb)(t);
   if (0 === n.length) return null;
-  let s = n.at(0);
-  return s === a.intl.string(a.t.BV6xDm) ? (0, r.jsx)(l, {
-    header: a.intl.string(a.t.onh6ct),
-    children: a.intl.string(a.t.arVHRA)
-  }) : s === a.intl.string(a.t.MFGxFM) ? (0, r.jsx)(l, {
-    header: a.intl.string(a.t.JPihZA),
-    children: a.intl.string(a.t.MFGxFM)
+  let r = n.at(0);
+  return r === l.intl.string(l.t.BV6xDm) ? (0, a.jsx)(o, {
+    header: l.intl.string(l.t.onh6ct),
+    children: l.intl.string(l.t.arVHRA)
+  }) : r === l.intl.string(l.t.MFGxFM) ? (0, a.jsx)(o, {
+    header: l.intl.string(l.t.JPihZA),
+    children: l.intl.string(l.t.MFGxFM)
   }) : null
 }
