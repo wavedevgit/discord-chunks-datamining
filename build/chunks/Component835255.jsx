@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk597688 = require("./597688.js"),
   Chunk237031 = require("./237031.jsx"),
-  Chunk684263 = require("./684263.jsx"),
+  Chunk216541 = require("./216541.jsx"),
   Chunk956472 = require("./956472.js"),
   Chunk104505 = require("./104505.js"),
   Chunk333867 = require("./333867.jsx"),
@@ -219,7 +219,7 @@ function _(e) {
       };
       return (0, n.jsx)("div", {
         className: k.bundlePreview,
-        children: (0, n.jsx)(g.U, {
+        children: (0, n.jsx)(g.d, {
           product: e,
           isPurchased: B,
           isHighlighted: z && !N,

@@ -101,8 +101,7 @@ let f = e => {
       rentalDuration: l
     });
     return n({
-      unifiedStepProps: h,
-      paymentModalStepProps: r
+      unifiedStepProps: h
     })
   },
   _ = e => {

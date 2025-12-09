@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk684263 = require("./684263.jsx"),
+  Chunk216541 = require("./216541.jsx"),
   Chunk164670 = require("./164670.js"),
   Chunk765907 = require("./765907.js"),
   Chunk81939 = require("./81939.js"),
@@ -126,7 +126,7 @@ function W(e) {
             };
             return (0, n.jsx)("div", {
               className: R.bundlePreviewBanner,
-              children: (0, n.jsx)(_.U, {
+              children: (0, n.jsx)(_.d, {
                 product: t,
                 isPurchased: false,
                 isHighlighted: e,

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
-/** chunk id: 684263, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 216541, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => E
+  d: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk328456 = require("./328456.js"),
   Chunk619899 = require("./619899.js"),
   Chunk616066 = require("./616066.jsx"),
-  Chunk689157 = require("./689157.js"),
+  Chunk881937 = require("./881937.js"),
   Chunk63243 = require("./63243.js"),
   Chunk244488 = require("./244488.js");
 let E = Chunk473749.memo(function(e) {

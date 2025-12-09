@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk508925 = require("./508925.jsx"),
   Chunk616066 = require("./616066.jsx"),
-  Chunk684263 = require("./684263.jsx"),
+  Chunk216541 = require("./216541.jsx"),
   Chunk302800 = require("./302800.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk186175 = require("./186175.js"),
@@ -79,7 +79,7 @@ let S = e => {
       })
     })).with(c.Z.BUNDLE, () => (0, n.jsx)("div", {
       className: O.bundlePreview,
-      children: (0, n.jsx)(y.U, {
+      children: (0, n.jsx)(y.d, {
         product: t,
         user: l,
         isPurchased: false,

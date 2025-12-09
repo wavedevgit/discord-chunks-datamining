@@ -12,7 +12,7 @@ var Chunk278074 = require("./278074.js"),
   Chunk1585 = require("./1585.jsx"),
   Chunk125988 = require("./125988.js"),
   Chunk583434 = require("./583434.js"),
-  Chunk684263 = require("./684263.jsx"),
+  Chunk216541 = require("./216541.jsx"),
   Chunk566697 = require("./566697.jsx"),
   Chunk479446 = require("./479446.js"),
   Chunk981632 = require("./981632.jsx"),
@@ -130,7 +130,7 @@ let R = e => {
   } = (0, c.T)(null == t ? true : t.id), s = null == o ? true : o.items[0];
   if ((null == o ? true : o.type) === a.Z.BUNDLE) return (0, r.jsx)("div", {
     className: y.bundlePreviewWrapper,
-    children: (0, r.jsx)(u.U, {
+    children: (0, r.jsx)(u.d, {
       product: o,
       isPurchased: false,
       isHighlighted: false

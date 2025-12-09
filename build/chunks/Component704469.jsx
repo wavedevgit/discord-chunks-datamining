@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk786040 = require("./786040.js"),
   Chunk508925 = require("./508925.jsx"),
   Chunk616066 = require("./616066.jsx"),
-  Chunk684263 = require("./684263.jsx"),
+  Chunk216541 = require("./216541.jsx"),
   Chunk396728 = require("./396728.jsx"),
   Chunk58201 = require("./58201.js"),
   Chunk201964 = require("./201964.js"),
@@ -74,7 +74,7 @@ let y = e => {
           isPurchased: false
         });
       case l.Z.BUNDLE:
-        return (0, a.jsx)(g.U, {
+        return (0, a.jsx)(g.d, {
           product: t,
           user: r,
           isHighlighted: n,

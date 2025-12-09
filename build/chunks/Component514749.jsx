@@ -8,8 +8,8 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
-  Chunk467368 = require("./467368.js");
-let s = e => null != e && "StepController" in e && null != e.StepController;
+  Chunk467368 = require("./467368.js"),
+  Chunk508869 = require("./508869.js");
 
 function l(e) {
   let {
@@ -24,7 +24,7 @@ function l(e) {
       renderModalProps: c,
       sharedCheckoutContext: u
     } = (0, o.Li)();
-    if (a()(null != l, "Step config for ".concat(t, " is not set")), s(l)) {
+    if (a()(null != l, "Step config for ".concat(t, " is not set")), (0, s.y)(l)) {
       let e = l.StepController;
       return (0, r.jsx)(e, {
         renderStep: n,
