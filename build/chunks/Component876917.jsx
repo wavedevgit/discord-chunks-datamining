@@ -39,9 +39,10 @@ let f = e => {
     }),
     children: [(0, r.jsx)("img", {
       src: d,
-      alt: " ",
+      alt: "",
       className: u.preview,
-      "aria-hidden": true
+      "aria-hidden": true,
+      draggable: false
     }), !m && (0, r.jsx)("div", {
       className: a ? u.purchasedEffect : true,
       children: (0, r.jsx)(c.Z, {

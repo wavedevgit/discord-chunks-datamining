@@ -1,7 +1,7 @@
 /** Chunk was on 44097 **/
 /** chunk id: 683881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,32 +12,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk817053 = require("./817053.jsx"),
   Chunk623132 = require("./623132.jsx"),
   Chunk778414 = require("./778414.jsx"),
+  Chunk796483 = require("./796483.jsx"),
   Chunk707804 = require("./707804.js");
 
-function g(e) {
+function p(e) {
   var t;
   let {
     scrollerRef: n
   } = e, {
-    isDragging: g,
-    item: p,
-    sourceClientOffset: m
+    isDragging: p,
+    item: m,
+    sourceClientOffset: b
   } = (0, l.f)(e => ({
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), b = (0, a.e7)([c.default], () => c.default.getCurrentUser()), h = (0, o.zPA)(), y = i.useMemo(() => {
-    if (null == b || null == p) return null;
+  })), h = (0, a.e7)([c.default], () => c.default.getCurrentUser()), y = (0, o.zPA)(), v = i.useMemo(() => {
+    if (null == h || null == m) return null;
     let {
       id: e,
       itemType: t,
       itemPreviewProps: n
-    } = p;
+    } = m;
     if ("WIDGET" === t && (null == n ? true : n.widget) != null) return (0, r.jsx)("div", {
-      className: f.widgetPreview,
+      className: g.widgetPreview,
       children: (0, r.jsx)(d.Z, {
         widget: n.widget,
-        user: b,
+        user: h,
         disableInteraction: true
       })
     });
@@ -47,11 +48,11 @@ function g(e) {
         gameName: i
       } = n;
       return (0, r.jsx)(s.Z, {
-        className: f.gamePreview,
+        className: g.gamePreview,
         imageSrc: t,
         gameName: i,
         applicationId: e,
-        userId: null == b ? true : b.id,
+        userId: null == h ? true : h.id,
         disableInteraction: true
       })
     }
@@ -61,42 +62,59 @@ function g(e) {
         widgetType: t
       } = n;
       return (0, r.jsx)(u.Z, {
-        className: f.gameDetailsCardPreview,
-        user: b,
+        className: g.gameDetailsCardPreview,
+        user: h,
         widgetType: t,
         game: e,
         disableInteraction: true
       })
     }
+    if ("WISHLIST_ITEM" === t && (null == n ? true : n.item) != null) {
+      let {
+        item: e
+      } = n;
+      return (0, r.jsx)("div", {
+        className: g.wishlistItemPreview,
+        children: (0, r.jsx)(f.Z, {
+          item: e,
+          profileOwner: h,
+          wishlistId: null,
+          isOwner: false,
+          showOverlayButton: false,
+          showIcons: false,
+          isDragging: true
+        })
+      })
+    }
     return null
-  }, [p, b]), v = i.useRef(null), O = i.useCallback(() => {
+  }, [m, h]), O = i.useRef(null), j = i.useCallback(() => {
     if (null == n.current) return;
     let e = n.current.getBoundingClientRect();
-    v.current = {
+    O.current = {
       x: e.left,
       y: e.top
     }
   }, [n]);
   if (i.useEffect(() => {
-      if (!g) {
-        v.current = null;
+      if (!p) {
+        O.current = null;
         return
       }
-      null == v.current && O()
-    }, [g, O]), true !== g || null == m || null == y) return null;
-  null == v.current && O();
+      null == O.current && j()
+    }, [p, j]), true !== p || null == b || null == v) return null;
+  null == O.current && j();
   let {
-    x: j,
-    y: x
-  } = null != (t = v.current) ? t : {
+    x: x,
+    y: _
+  } = null != (t = O.current) ? t : {
     x: 0,
     y: 0
-  }, _ = m.x - j - 60 * !!h, P = m.y - x;
+  }, P = b.x - x - 60 * !!y, I = b.y - _;
   return (0, r.jsx)("div", {
-    className: f.container,
+    className: g.container,
     style: {
-      transform: "translate3d(".concat(_, "px, ").concat(P, "px, 0)")
+      transform: "translate3d(".concat(P, "px, ").concat(I, "px, 0)")
     },
-    children: y
+    children: v
   })
 }

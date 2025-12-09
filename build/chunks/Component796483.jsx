@@ -1,17 +1,17 @@
 /** Chunk was on 12356 **/
 /** chunk id: 796483, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
-var Chunk54381 = require("./54381.js");
-require("./473749.js");
-var Chunk851397 = require("./851397.jsx"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk851397 = require("./851397.jsx"),
   Chunk541699 = require("./541699.js"),
   Chunk321947 = require("./321947.js"),
   Chunk835255 = require("./835255.jsx"),
   Chunk688192 = require("./688192.jsx");
 
-function a(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -29,13 +29,13 @@ function a(e) {
   }
   return e
 }
-
-function u(e) {
+let d = Chunk473749.memo(function(e) {
   var {
     item: t,
     cardSize: r = c.U.MEDIUM,
-    showOverlayButton: u = true
-  } = e, d = function(e, t) {
+    showOverlayButton: i = true,
+    isDragging: d = false
+  } = e, f = function(e, t) {
     if (null == e) return {};
     var r, n, i = function(e, t) {
       if (null == e) return {};
@@ -49,14 +49,15 @@ function u(e) {
       for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
-  }(e, ["item", "cardSize", "showOverlayButton"]);
-  return (0, l.Q)(t) ? (0, n.jsx)(s.ZP, a({
+  }(e, ["item", "cardSize", "showOverlayButton", "isDragging"]);
+  return (0, o.Q)(t) ? (0, n.jsx)(a.ZP, u({
     item: t,
     cardSize: r,
-    showOverlayButton: u
-  }, d)) : (0, o.F)(t) ? (0, n.jsx)(i.Z, a({
+    showOverlayButton: i,
+    isDragging: d
+  }, f)) : (0, s.F)(t) ? (0, n.jsx)(l.Z, u({
     item: t,
     cardSize: r,
-    showOverlayButton: u
-  }, d)) : null
-}
+    showOverlayButton: i
+  }, f)) : null
+})

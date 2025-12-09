@@ -173,7 +173,7 @@ function W(e) {
   } = e, n = L(e, ["user"]);
   let l = i.useRef(null);
   (0, x.r)({
-    container: l.current
+    containerRef: l
   });
   let o = (0, k.h)(t.id);
   return (0, r.jsxs)(N.F, {
