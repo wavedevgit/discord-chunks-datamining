@@ -5,5 +5,5 @@ require.d(exports, {
   Y: () => r
 });
 var r = function(e) {
-  return e.NITRO_UNSUBBED = "nitro_unsub", e.CHECKPOINT_COMPLETED = "checkpoint_completed", e
+  return e.NITRO_UNSUBBED = "nitro_unsubbed", e.CHECKPOINT_COMPLETED = "checkpoint_completed", e
 }({})
