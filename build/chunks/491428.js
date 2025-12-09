@@ -66,8 +66,8 @@ function f(e, t) {
 }
 
 function p(e) {
-  let t = o.Z.getLastSeenTimestamp();
-  if (null === t || null != t && Date.now() - t >= o.J) return a.Z.dispatch({
+  let t = o.ZP.getLastSeenTimestamp();
+  if (null === t || null != t && Date.now() - t >= o.Jd) return a.Z.dispatch({
     type: "SURVEY_SEEN",
     key: e
   }), l.Z.post({

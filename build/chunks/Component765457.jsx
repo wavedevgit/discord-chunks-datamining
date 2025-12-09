@@ -2,7 +2,7 @@
 /** chunk id: 765457, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => er
+  Z: () => ei
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,6 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk747732 = require("./747732.js"),
   Chunk38581 = require("./38581.js"),
   Chunk391767 = require("./391767.js"),
+  Chunk547943 = require("./547943.js"),
   Chunk374470 = require("./374470.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -52,7 +53,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk691446 = require("./691446.js"),
   Chunk417788 = require("./417788.js");
 
-function Q(e, t, n) {
+function X(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,20 +62,20 @@ function Q(e, t, n) {
   }) : e[t] = n, e
 }
 
-function X(e) {
+function J(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      Q(e, t, n[t])
+      X(e, t, n[t])
     })
   }
   return e
 }
 
-function J(e, t) {
+function $(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -85,198 +86,198 @@ function J(e, t) {
   return n
 }
 
-function $(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : J(Object(t)).forEach(function(n) {
+function ee(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : $(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let ee = async (e, t, n) => {
+let et = async (e, t, n) => {
   let {
     withMessage: r
   } = t;
-  await (0, y.Jm)(e, {
+  await (0, O.Jm)(e, {
     withMessage: r
-  }, n), (0, h.mc)()
+  }, n), (0, g.mc)()
 };
 
-function et(e, t) {
+function en(e, t) {
   return i.useMemo(() => {
-    let n = v.F[null != t ? t : V._n.ONE];
-    return e === V.yD.END ? n : $(X({}, v.E[e]), {
+    let n = S.F[null != t ? t : H._n.ONE];
+    return e === H.yD.END ? n : ee(J({}, S.E[e]), {
       backgroundOverlayColor: n.backgroundOverlayColor
     })
   }, [t, e])
 }
 
-function en(e) {
-  return V.ij[e].toLowerCase()
+function er(e) {
+  return H.ij[e].toLowerCase()
 }
 
-function er(e) {
+function ei(e) {
   let {
     onClose: t
-  } = e, n = (0, T.Z)(), a = (0, I.Z)(), [h, E] = i.useState(0), v = a[h], x = V.bq[v], q = et(x, (0, _.e7)([S.Z], () => S.Z.getCheckpointData()).cardId), Q = (0, m.dQu)(q.primaryColor).hex(), [X] = i.useState(new C.EP), [J, $] = i.useState(false), ee = (0, A.T)(d.Z), er = (0, A.T)(u.Z), ea = (0, A.T)(s.Z), eo = (0, A.T)(l.Z), es = (0, A.T)(c.Z), el = i.useRef(V.ij.WELCOME), ec = i.useCallback(() => {
-    $(true), er()
-  }, [er]), eu = i.useCallback(() => {
-    v === V.ij.END_CLAIM ? ea() : v === V.ij.END_REWARD ? es() : V.Kz.has(v) || eo()
-  }, [v, ea, eo, es]), ed = i.useCallback(() => {
-    if (h >= a.length - 1) return void ec();
-    eu(), E(h + 1)
-  }, [ec, eu, h, a.length]);
+  } = e, n = (0, A.Z)(), a = (0, T.Z)(), [g, b] = i.useState(0), S = a[g], L = H.bq[S], Q = en(L, (0, m.e7)([I.Z], () => I.Z.getCheckpointData()).cardId), X = (0, h.dQu)(Q.primaryColor).hex(), [J] = i.useState(new N.EP), [$, ee] = i.useState(false), et = (0, C.T)(d.Z), ei = (0, C.T)(u.Z), eo = (0, C.T)(s.Z), es = (0, C.T)(l.Z), el = (0, C.T)(c.Z), ec = i.useRef(H.ij.WELCOME), eu = i.useCallback(() => {
+    ee(true), ei()
+  }, [ei]), ed = i.useCallback(() => {
+    S === H.ij.END_CLAIM ? eo() : S === H.ij.END_REWARD ? el() : H.Kz.has(S) || es()
+  }, [S, eo, es, el]), ef = i.useCallback(() => {
+    if (g >= a.length - 1) return void eu();
+    ed(), b(g + 1)
+  }, [eu, ed, g, a.length]);
   i.useEffect(() => {
-    b.default.track(H.rMx.CHECKPOINT_STEP_VIEWED, {
-      step_name: en(v)
-    }), el.current = v, v === V.ij.END_SUMMARY && g.ZP.fireSurveyAction("checkpoint_completed")
-  }, [v]);
-  let ef = i.useCallback(() => {
-    v !== V.ij.WELCOME && (eu(), E(h - 1))
-  }, [v, eu, h]);
+    y.default.track(Y.rMx.CHECKPOINT_STEP_VIEWED, {
+      step_name: er(S)
+    }), ec.current = S, S === H.ij.END_SUMMARY && E.ZP.fireSurveyAction(f.Y.CHECKPOINT_COMPLETED)
+  }, [S]);
+  let ep = i.useCallback(() => {
+    S !== H.ij.WELCOME && (ed(), b(g - 1))
+  }, [S, ed, g]);
   i.useEffect(() => {
     let e = e => {
-      (0, f.kK)(e.target, HTMLTextAreaElement) || (0, f.kK)(e.target, HTMLInputElement) || ("ArrowRight" === e.key ? ed() : "ArrowLeft" === e.key && ef())
+      (0, p.kK)(e.target, HTMLTextAreaElement) || (0, p.kK)(e.target, HTMLInputElement) || ("ArrowRight" === e.key ? ef() : "ArrowLeft" === e.key && ep())
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-  }, [ef, ed]), i.useEffect(() => (ee(), () => {
-    b.default.track(H.rMx.CHECKPOINT_CLOSED, {
-      step_name: en(el.current)
+  }, [ep, ef]), i.useEffect(() => (et(), () => {
+    y.default.track(Y.rMx.CHECKPOINT_CLOSED, {
+      step_name: er(ec.current)
     })
   }), []);
-  let ep = i.useCallback(e => {
+  let e_ = i.useCallback(e => {
       var t;
       let [n] = null != (t = Object.entries(a).find(t => {
         let [n, r] = t;
-        return V.bq[r] === e
+        return H.bq[r] === e
       })) ? t : [], r = Number.parseInt(null != n ? n : "0");
-      eu(), E(r)
-    }, [eu, a]),
-    e_ = i.useCallback(() => {
-      J && ((0, y.R5)(), t())
-    }, [J, t]);
-  return (0, r.jsx)(C.$r.Provider, {
-    value: X,
-    children: (0, r.jsx)(O.Q.Provider, {
-      value: q,
-      children: (0, r.jsx)(m.f6W, {
-        theme: Y.BR.DARKER,
-        children: e => (0, r.jsxs)(P.Z, {
+      ed(), b(r)
+    }, [ed, a]),
+    em = i.useCallback(() => {
+      $ && ((0, O.R5)(), t())
+    }, [$, t]);
+  return (0, r.jsx)(N.$r.Provider, {
+    value: J,
+    children: (0, r.jsx)(v.Q.Provider, {
+      value: Q,
+      children: (0, r.jsx)(h.f6W, {
+        theme: W.BR.DARKER,
+        children: e => (0, r.jsxs)(R.Z, {
           playEntryAnimation: n,
-          isLeaving: J,
-          onRest: e_,
-          children: [(0, r.jsx)(p.OUJ, {}), (0, r.jsxs)("div", {
-            className: o()(z.container, e),
-            "aria-label": K.intl.string(W.default["CdU/PF"]),
-            children: [(0, r.jsx)(C.ZP, {
-              slide: x
-            }), (0, r.jsxs)(D.ZP, {
-              activeSlide: x,
-              children: [(0, r.jsx)(m.Mi4, {
-                id: V.yD.WELCOME,
-                children: (0, r.jsx)(F.Z, {
-                  onNextStep: ed
+          isLeaving: $,
+          onRest: em,
+          children: [(0, r.jsx)(_.OUJ, {}), (0, r.jsxs)("div", {
+            className: o()(q.container, e),
+            "aria-label": z.intl.string(K.default["CdU/PF"]),
+            children: [(0, r.jsx)(N.ZP, {
+              slide: L
+            }), (0, r.jsxs)(x.ZP, {
+              activeSlide: L,
+              children: [(0, r.jsx)(h.Mi4, {
+                id: H.yD.WELCOME,
+                children: (0, r.jsx)(V.Z, {
+                  onNextStep: ef
                 })
-              }), (0, r.jsx)(m.Mi4, {
-                id: V.yD.MESSAGES,
-                children: (0, r.jsx)(G.Z, {})
-              }), (0, r.jsx)(m.Mi4, {
-                id: V.yD.EMOJIS,
-                children: (0, r.jsx)(L.Z, {})
-              }), (0, r.jsx)(m.Mi4, {
-                id: V.yD.VOICE,
-                children: (0, r.jsx)(B.Z, {})
-              }), (0, r.jsx)(m.Mi4, {
-                id: V.yD.GUILDS,
-                children: (0, r.jsx)(U.Z, {})
-              }), (0, r.jsx)(m.Mi4, {
-                id: V.yD.FRIENDS,
-                children: (0, r.jsx)(M.Z, {
-                  step: v,
-                  onNextStep: ed,
-                  onPreviousStep: ef
-                })
-              }), (0, r.jsx)(m.Mi4, {
-                id: V.yD.GAMING,
-                children: (0, r.jsx)(k.Z, {})
-              }), (0, r.jsx)(m.Mi4, {
-                id: V.yD.QUESTS,
+              }), (0, r.jsx)(h.Mi4, {
+                id: H.yD.MESSAGES,
                 children: (0, r.jsx)(Z.Z, {})
-              }), (0, r.jsx)(m.Mi4, {
-                id: V.yD.END,
-                children: (0, r.jsx)(j.Z, {
-                  step: v,
-                  onNext: ed
+              }), (0, r.jsx)(h.Mi4, {
+                id: H.yD.EMOJIS,
+                children: (0, r.jsx)(j.Z, {})
+              }), (0, r.jsx)(h.Mi4, {
+                id: H.yD.VOICE,
+                children: (0, r.jsx)(F.Z, {})
+              }), (0, r.jsx)(h.Mi4, {
+                id: H.yD.GUILDS,
+                children: (0, r.jsx)(G.Z, {})
+              }), (0, r.jsx)(h.Mi4, {
+                id: H.yD.FRIENDS,
+                children: (0, r.jsx)(k.Z, {
+                  step: S,
+                  onNextStep: ef,
+                  onPreviousStep: ep
+                })
+              }), (0, r.jsx)(h.Mi4, {
+                id: H.yD.GAMING,
+                children: (0, r.jsx)(U.Z, {})
+              }), (0, r.jsx)(h.Mi4, {
+                id: H.yD.QUESTS,
+                children: (0, r.jsx)(B.Z, {})
+              }), (0, r.jsx)(h.Mi4, {
+                id: H.yD.END,
+                children: (0, r.jsx)(M.Z, {
+                  step: S,
+                  onNext: ef
                 })
               })]
             }), (0, r.jsxs)("div", {
-              className: o()(z.header, e),
-              children: [x !== V.yD.WELCOME && (0, r.jsxs)("div", {
-                className: z.logo,
-                children: [(0, r.jsx)(m.gw7, {
-                  colorClass: z.iconColor,
-                  color: Q
-                }), (0, r.jsx)(m.Text, {
+              className: o()(q.header, e),
+              children: [L !== H.yD.WELCOME && (0, r.jsxs)("div", {
+                className: q.logo,
+                children: [(0, r.jsx)(h.gw7, {
+                  colorClass: q.iconColor,
+                  color: X
+                }), (0, r.jsx)(h.Text, {
                   variant: "display-sm",
-                  className: z.logoText,
+                  className: q.logoText,
                   style: {
-                    color: Q
+                    color: X
                   },
-                  children: K.intl.string(W.default["CdU/PF"])
+                  children: z.intl.string(K.default["CdU/PF"])
                 })]
-              }), (0, r.jsx)(w.Z, {
-                activeSlide: x,
-                setActiveSlide: ep,
-                className: z.stepIndicator,
-                color: Q
+              }), (0, r.jsx)(D.Z, {
+                activeSlide: L,
+                setActiveSlide: e_,
+                className: q.stepIndicator,
+                color: X
               }), (0, r.jsxs)("div", {
-                className: z.actions,
-                children: [(0, r.jsx)(R.Z, {}), (0, r.jsx)(m.P3F, {
-                  onClick: () => ec(),
-                  className: z.closeButton,
+                className: q.actions,
+                children: [(0, r.jsx)(w.Z, {}), (0, r.jsx)(h.P3F, {
+                  onClick: () => eu(),
+                  className: q.closeButton,
                   style: {
-                    color: Q
+                    color: X
                   },
-                  children: (0, r.jsx)(m.Uz9, {
-                    colorClass: z.iconColor,
-                    color: Q,
+                  children: (0, r.jsx)(h.Uz9, {
+                    colorClass: q.iconColor,
+                    color: X,
                     size: "sm"
                   })
                 })]
               })]
-            }), x !== V.yD.WELCOME && (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(m.P3F, {
-                onClick: ef,
-                className: z.backButton,
+            }), L !== H.yD.WELCOME && (0, r.jsxs)(r.Fragment, {
+              children: [(0, r.jsx)(h.P3F, {
+                onClick: ep,
+                className: q.backButton,
                 style: {
-                  borderColor: Q
+                  borderColor: X
                 },
-                children: (0, r.jsx)(m.j9r, {
-                  colorClass: z.iconColor,
-                  color: Q
+                children: (0, r.jsx)(h.j9r, {
+                  colorClass: q.iconColor,
+                  color: X
                 })
-              }), v !== V.ij.END_REWARD && v !== V.ij.END_SUMMARY && (0, r.jsx)(N.Z, {
-                onClick: ed,
-                contentClassName: z.nextButtonContent,
-                className: z.nextButton,
+              }), S !== H.ij.END_REWARD && S !== H.ij.END_SUMMARY && (0, r.jsx)(P.Z, {
+                onClick: ef,
+                contentClassName: q.nextButtonContent,
+                className: q.nextButton,
                 muteSound: true,
-                children: (0, r.jsx)(m.d4D, {
-                  colorClass: z.iconColor,
-                  color: Q
+                children: (0, r.jsx)(h.d4D, {
+                  colorClass: q.iconColor,
+                  color: X
                 })
-              }), v === V.ij.END_SUMMARY && (0, r.jsx)(ei, {
-                primaryColor: Q
+              }), S === H.ij.END_SUMMARY && (0, r.jsx)(ea, {
+                primaryColor: X
               })]
             })]
-          }), (0, r.jsx)(p.OUJ, {})]
+          }), (0, r.jsx)(_.OUJ, {})]
         })
       })
     })
   })
 }
 
-function ei(e) {
+function ea(e) {
   let {
     primaryColor: t
-  } = e, n = (0, _.e7)([S.Z], () => S.Z.getCheckpointData()), i = () => {
-    let e = new E.ZP({
+  } = e, n = (0, m.e7)([I.Z], () => I.Z.getCheckpointData()), i = () => {
+    let e = new b.ZP({
       content: "",
       components: [{
         type: 20,
@@ -285,24 +286,24 @@ function ei(e) {
         }
       }]
     });
-    (0, h.l8)({
+    (0, g.l8)({
       message: e,
       source: "checkpoint",
-      customSendHandler: ee
+      customSendHandler: et
     })
   };
-  return (0, r.jsxs)(N.Z, {
+  return (0, r.jsxs)(P.Z, {
     onClick: i,
-    className: z.shareButton,
-    children: [(0, r.jsx)(x.Z, {
+    className: q.shareButton,
+    children: [(0, r.jsx)(L.Z, {
       variant: "eyebrow",
-      className: z.buttonCTA,
+      className: q.buttonCTA,
       style: {
         color: t
       },
-      children: K.intl.string(K.t.RDE0Sc)
-    }), (0, r.jsx)(m.Gr1, {
-      colorClass: q.iconColor,
+      children: z.intl.string(z.t.RDE0Sc)
+    }), (0, r.jsx)(h.Gr1, {
+      colorClass: Q.iconColor,
       color: t
     })]
   })
