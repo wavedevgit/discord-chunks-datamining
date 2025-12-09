@@ -136,7 +136,7 @@ let R = e => {
       text: s,
       onClickAnalytics: o
     } = e, c = async () => {
-      null == o || o("claim premium product button"), await (0, f.fK)(t.skuId), (0, T.Z)({
+      null == o || o("claim premium product button"), await (0, f.fK)(t.skuId), (0, O.Z)({
         product: t,
         analyticsLocations: r,
         purchaseType: P.o8.PREMIUM_PURCHASE
@@ -189,7 +189,7 @@ let R = e => {
               month: "long",
               year: "numeric"
             }) : true;
-            (0, T.Z)({
+            (0, O.Z)({
               product: t,
               analyticsLocations: n,
               itemConsumed: null == (r = i[0]) ? true : r.consumed,
@@ -237,7 +237,7 @@ let R = e => {
             } = e;
             (0, f.qg)({
               variantsReturnStyle: l.v.VARIANTS_GROUP
-            }), (0, T.Z)({
+            }), (0, O.Z)({
               product: t,
               analyticsLocations: r,
               itemConsumed: null == (n = a[0]) ? true : n.consumed,
@@ -279,17 +279,17 @@ let R = e => {
     } = e, m = (0, r.e7)([h.default], () => h.default.getCurrentUser()), p = x.ZP.canUseCollectibles(m), f = (0, C.jB)(), {
       isPurchased: b,
       isPartiallyOwnedBundle: S
-    } = (0, y.L)(t), E = (0, v.G1)(t), T = (0, v.rN)(t), {
+    } = (0, y.L)(t), E = (0, v.G1)(t), O = (0, v.rN)(t), {
       isDisabled: P
     } = (0, _.G)(t.skuId), I = (0, v.ne)({
       product: t,
       isPartiallyOwnedBundle: S,
       isPurchased: b
-    }), w = (0, O.Iw)(t), k = null != w, {
+    }), w = (0, N.Iw)(t), k = null != w, {
       shouldCheckoutWithOrbs: G,
       hasSufficientOrbs: z,
       checkoutEligiblePrices: V
-    } = (0, N.Ip)({
+    } = (0, T.Ip)({
       product: t,
       isPremiumUser: p,
       prioritizedCurrency: d,
@@ -308,7 +308,7 @@ let R = e => {
       skuId: t.skuId,
       text: c
     });
-    if (E && !p && !T) return (0, a.jsx)(A, {
+    if (E && !p && !O) return (0, a.jsx)(A, {
       isClaimPremiumProductDisabled: q,
       text: c
     });

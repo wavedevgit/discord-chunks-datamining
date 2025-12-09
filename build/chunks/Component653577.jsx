@@ -26,30 +26,29 @@ function _(e) {
     hovered: l,
     subtitle: _,
     onClick: y,
-    enableHangStatus: O,
-    showEmptyChannelTopic: v
-  } = e, j = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), x = null != j && j.length > 0, C = (0, u.ZP)(t, true), E = (!O || !!v) && C, S = null != _ && _.length > 0;
+    showEmptyChannelTopic: O
+  } = e, v = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), j = null != v && v.length > 0, x = (0, u.ZP)(t, true), C = null != _ && _.length > 0;
   if (i.useEffect(() => {
-      x && h.default.track(p.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+      j && h.default.track(p.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
-    }, [x, t.id, t.guild_id]), null == t.guild_id) return null;
-  let I = o()(m.statusDiv, n && E ? m.hoverable : null);
-  return x ? (0, r.jsx)(c.P3F, {
-    className: I,
-    onClick: E ? y : true,
+    }, [j, t.id, t.guild_id]), null == t.guild_id) return null;
+  let E = o()(m.statusDiv, n && x ? m.hoverable : null);
+  return j ? (0, r.jsx)(c.P3F, {
+    className: E,
+    onClick: x ? y : true,
     children: (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
       children: (0, r.jsx)(s.Z, {
-        children: f.Z.parseVoiceChannelStatus(j, true, {
+        children: f.Z.parseVoiceChannelStatus(v, true, {
           channelId: t.id
         })
       })
     })
-  }) : n && E && (!S || l) ? (0, r.jsxs)(c.P3F, {
-    className: I,
+  }) : n && x && (!C || l) && O ? (0, r.jsxs)(c.P3F, {
+    className: E,
     onClick: y,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
@@ -60,7 +59,7 @@ function _(e) {
       className: m.pencilIcon,
       size: "xxs"
     })]
-  }) : S ? (0, r.jsx)(s.Z, {
+  }) : C ? (0, r.jsx)(s.Z, {
     children: _
   }) : null
 }

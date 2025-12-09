@@ -2,7 +2,7 @@
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => I,
-  openDevToolsPopout: () => O
+  openDevToolsPopout: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,7 +45,7 @@ function E(e) {
   })
 }
 
-function O() {
+function N() {
   (0, Chunk788983.open)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk54381.jsx)(Chunk238246.Z, {
     windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
@@ -60,7 +60,7 @@ function O() {
   })
 }
 
-function N(e) {
+function T(e) {
   var t;
   let {
     isPopout: n = false
@@ -90,7 +90,7 @@ function N(e) {
         children: [(0, a.jsx)(m.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
-          onClick: O
+          onClick: N
         }), (0, a.jsx)(m.ZP.Icon, {
           icon: c.Dio,
           tooltip: y.intl.string(y.t.cpT0Cq),
@@ -109,7 +109,7 @@ function N(e) {
   })
 }
 
-function T() {
+function O() {
   let e = Chunk473749.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
     [n, r] = Chunk473749.useState(null),
@@ -132,7 +132,7 @@ function T() {
       onResizeEnd: i
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk54381.jsx)(N, {})
+      children: (0, Chunk54381.jsx)(T, {})
     })]
   })
 }
@@ -142,7 +142,7 @@ function P() {
     className: i()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
     children: (0, Chunk54381.jsx)("div", {
       className: Chunk552883.sidebarContent,
-      children: (0, Chunk54381.jsx)(N, {})
+      children: (0, Chunk54381.jsx)(T, {})
     })
   }) : (0, Chunk54381.jsx)("div", {
     className: Chunk552883.container,
@@ -171,8 +171,8 @@ function I(e) {
   } = e;
   return t ? (0, a.jsx)(P, {}) : n ? (0, a.jsx)("div", {
     className: C.popoutContainer,
-    children: (0, a.jsx)(N, {
+    children: (0, a.jsx)(T, {
       isPopout: true
     })
-  }) : (0, a.jsx)(T, {})
+  }) : (0, a.jsx)(O, {})
 }

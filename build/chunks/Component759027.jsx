@@ -54,7 +54,7 @@ let E = {
     [Chunk981631.O0b.PAUSED]: "Paused",
     [Chunk981631.O0b.PAUSE_PENDING]: "Pause Pending"
   },
-  O = {
+  N = {
     [Chunk362786.Id.UNKNOWN]: "Unknown",
     [Chunk362786.Id.ADMIN]: "Admin",
     [Chunk362786.Id.USER]: "User",
@@ -62,7 +62,7 @@ let E = {
     [Chunk362786.Id.DEFERRED_START]: "Deferred Start",
     [Chunk362786.Id.USER_TEMPORARY_BAN]: "User Temp Ban"
   },
-  N = [{
+  T = [{
     label: "Unpaid",
     value: Chunk981631.O0b.UNPAID
   }, {
@@ -91,7 +91,7 @@ let E = {
     value: Chunk981631.O0b.PAUSE_PENDING
   }];
 
-function T(e) {
+function O(e) {
   let {
     subscription: t,
     onClose: n,
@@ -235,7 +235,7 @@ function P(e) {
     isDisabled: false
   }), I.status === v.O0b.PAUSED && Y.push({
     id: "pause-reason",
-    label: "Pause Reason: ".concat(I.pauseReason in O ? O[I.pauseReason] : "Unknown pause reason ".concat(I.pauseReason)),
+    label: "Pause Reason: ".concat(I.pauseReason in N ? N[I.pauseReason] : "Unknown pause reason ".concat(I.pauseReason)),
     isDisabled: false
   }), (0, a.jsx)("div", {
     className: i()(y.card, W ? y.gradientWrapperTier0 : y.gradientWrapperTier2),
@@ -372,7 +372,7 @@ function P(e) {
             label: "Status",
             serialize: e => G(e),
             isSelected: e => e === I.status,
-            options: N,
+            options: T,
             select: e => V({
               status: e
             }),
@@ -390,7 +390,7 @@ function P(e) {
                 size: "sm",
                 text: "Time Travel",
                 onClick: () => {
-                  (0, m.ZDy)(() => Promise.resolve(e => (0, a.jsx)(T, S({
+                  (0, m.ZDy)(() => Promise.resolve(e => (0, a.jsx)(O, S({
                     subscription: I,
                     onUpdated: w
                   }, e))))

@@ -86,6 +86,7 @@ function f(e) {
     onMouseEnter: 0 !== t ? m : () => {},
     onMouseLeave: 0 !== t ? h : () => {},
     children: (0, r.jsx)(a.aM, c(s({
+      "data-migration-pending": true,
       forceOpen: p,
       disableTooltipPointerEvents: false
     }, d), {

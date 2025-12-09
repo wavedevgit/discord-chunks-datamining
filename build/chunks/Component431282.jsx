@@ -69,16 +69,16 @@ function p(e) {
   } = e, b = null != n, v = (0, s.Q1)({
     action: t,
     onClick: n
-  }), [j, _] = l.useState(false), y = l.useRef(null), C = null != g ? g : y, S = null != f, E = S && b, O = {
+  }), [j, _] = l.useState(false), y = l.useRef(null), C = null != g ? g : y, S = null != f, E = S && b, N = {
     offset: {
       top: false,
       left: false,
       right: false,
       bottom: false
     }
-  }, N = l.useCallback(() => {
+  }, T = l.useCallback(() => {
     _(true)
-  }, []), T = l.useCallback(() => {
+  }, []), O = l.useCallback(() => {
     _(false)
   }, []), P = () => (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)("div", {
@@ -109,7 +109,7 @@ function p(e) {
         className: c.menuItemContent,
         onClick: v,
         focusProps: {
-          offset: u(d({}, O.offset), {
+          offset: u(d({}, N.offset), {
             right: 0
           })
         },
@@ -118,8 +118,8 @@ function p(e) {
         className: c.submenuIconWrapper,
         "aria-label": o.intl.string(o.t.PdRCRg)
       }, e), {
-        onClick: N,
-        focusProps: O,
+        onClick: T,
+        focusProps: N,
         children: (0, a.jsx)(r.Fbu, {
           size: "xs",
           color: "currentColor"
@@ -128,8 +128,8 @@ function p(e) {
     }) : S ? (0, a.jsxs)(i.P3F, u(d({
       className: c.menuItemContent
     }, e), {
-      onClick: N,
-      focusProps: O,
+      onClick: T,
+      focusProps: N,
       children: [P(), (0, a.jsx)("div", {
         className: c.submenuIconWrapper,
         children: (0, a.jsx)(r.Fbu, {
@@ -140,7 +140,7 @@ function p(e) {
     })) : (0, a.jsx)(i.P3F, {
       className: c.menuItemContent,
       onClick: v,
-      focusProps: O,
+      focusProps: N,
       children: P()
     }), (0, a.jsx)("div", {
       ref: C,
@@ -150,14 +150,14 @@ function p(e) {
   };
   return S ? (0, a.jsx)("li", {
     className: c.menuItem,
-    onMouseEnter: N,
-    onMouseLeave: T,
+    onMouseEnter: T,
+    onMouseLeave: O,
     children: (0, a.jsx)(i.yRy, {
       targetElementRef: C,
       spacing: 0,
       renderPopout: f,
       shouldShow: j,
-      onRequestClose: T,
+      onRequestClose: O,
       children: I
     })
   }) : (0, a.jsx)("li", {

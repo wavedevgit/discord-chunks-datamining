@@ -62,15 +62,15 @@ let x = e => {
       j = f || !g && v.size > 0,
       [_, y] = Chunk473749.useState(""),
       [C, S] = Chunk473749.useState(null),
-      [E, O] = Chunk473749.useState(null);
+      [E, N] = Chunk473749.useState(null);
     return (Chunk473749.useEffect(() => {
       if ("" === _.trim() || !j) {
-        S(null), O(null);
+        S(null), N(null);
         return
       }
       let e = Chunk597688.Z.getProduct(_),
         t = Chunk597688.Z.getCategoryForProduct(_);
-      null != module && null != exports ? (S(module), O(exports)) : (S(null), O(null))
+      null != module && null != exports ? (S(module), N(exports)) : (S(null), N(null))
     }, [_, j]), g) ? (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "Loading categories and collectibles..."

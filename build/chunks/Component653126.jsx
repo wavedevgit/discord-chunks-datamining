@@ -1,7 +1,7 @@
 /** Chunk was on 88282 **/
 /** chunk id: 653126, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => O
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,13 +27,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk29121 = require("./29121.js"),
   Chunk215023 = require("./215023.js"),
   Chunk213301 = require("./213301.js");
-let N = Chunk473749.memo(function(e) {
+let T = Chunk473749.memo(function(e) {
     let {
       product: t,
       hideWishlistButton: n,
       hideProductName: r,
-      hideVariantSwitcher: N,
-      hidePrice: T,
+      hideVariantSwitcher: T,
+      hidePrice: O,
       hidePrimaryCTA: P,
       hideSecondaryCTA: I,
       badgeOverride: w,
@@ -60,7 +60,7 @@ let N = Chunk473749.memo(function(e) {
       isHoveringOrFocusing: et
     } = (0, u.Z)(ee), {
       handleCardVisibilityChange: en
-    } = (0, p.E)(t.skuId, Q === E.AW.CATALOG ? "full" : Q), ea = (0, v.J7)(t, d.Z.COLLECTIBLES_SHOP_CARD, W, J), el = t.type === s.Z.VARIANTS_GROUP && !N, er = !P || !I, ei = !(T && r) || el, es = ei || er, eo = er || el;
+    } = (0, p.E)(t.skuId, Q === E.AW.CATALOG ? "full" : Q), ea = (0, v.J7)(t, d.Z.COLLECTIBLES_SHOP_CARD, W, J), el = t.type === s.Z.VARIANTS_GROUP && !T, er = !P || !I, ei = !(O && r) || el, es = ei || er, eo = er || el;
     return (0, a.jsx)(o.$, {
       innerRef: ee,
       onChange: en,
@@ -69,18 +69,18 @@ let N = Chunk473749.memo(function(e) {
         ref: ee,
         onClick: null != R ? R : ea,
         "aria-label": $,
-        className: i()(V, O.productCardContainer, {
-          [O.hovered]: et
+        className: i()(V, N.productCardContainer, {
+          [N.hovered]: et
         }),
         onFocus: () => null == M ? true : M(t.skuId),
         onBlur: () => null == U ? true : U(t.skuId),
         onMouseEnter: () => null == D ? true : D(t.skuId),
         onMouseLeave: () => null == L ? true : L(t.skuId),
         children: (0, a.jsxs)("div", {
-          className: O.productCardContentContainer,
+          className: N.productCardContentContainer,
           children: [(0, a.jsx)("div", {
-            className: i()(O.productPreviewContainer, {
-              [O.hasBottomContent]: !r || ei || eo
+            className: i()(N.productPreviewContainer, {
+              [N.hasBottomContent]: !r || ei || eo
             }),
             children: (0, a.jsx)(j.Z, {
               skuId: t.skuId,
@@ -88,7 +88,7 @@ let N = Chunk473749.memo(function(e) {
               overrideVariantIndex: K
             })
           }), (0, a.jsxs)("div", {
-            className: O.headerContainer,
+            className: N.headerContainer,
             children: [(0, a.jsx)(h.Z, {
               skuId: t.skuId,
               badgeOverride: w,
@@ -101,18 +101,18 @@ let N = Chunk473749.memo(function(e) {
             })]
           }), es && (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("div", {
-              className: O.footerGradient
+              className: N.footerGradient
             }), (0, a.jsxs)("div", {
-              className: O.footerContainer,
+              className: N.footerContainer,
               children: [ei && (0, a.jsxs)("div", {
-                className: O.footerInfoContainer,
-                children: [!(r && T) && (0, a.jsxs)("div", {
-                  className: O.footerInfoLeft,
+                className: N.footerInfoContainer,
+                children: [!(r && O) && (0, a.jsxs)("div", {
+                  className: N.footerInfoLeft,
                   children: [!r && (0, a.jsx)(x.Z, {
                     skuId: t.skuId,
-                    className: i()(G, O.productName)
-                  }), !T && (0, a.jsx)("div", {
-                    className: O.footerInfoShrinkOnHover,
+                    className: i()(G, N.productName)
+                  }), !O && (0, a.jsx)("div", {
+                    className: N.footerInfoShrinkOnHover,
                     "aria-hidden": true,
                     children: (0, a.jsx)(f.Z, {
                       skuId: t.skuId,
@@ -126,10 +126,10 @@ let N = Chunk473749.memo(function(e) {
                   onVariantExit: Y
                 })]
               }), er && (0, a.jsx)("div", {
-                className: O.footerButtonContainer,
+                className: N.footerButtonContainer,
                 children: (0, a.jsxs)(c.ButtonGroup, {
                   wrap: false,
-                  className: O.footerButtonGroup,
+                  className: N.footerButtonGroup,
                   fullWidth: true,
                   children: [!P && (0, a.jsx)(g.Z, {
                     skuId: t.skuId,
@@ -154,7 +154,7 @@ let N = Chunk473749.memo(function(e) {
       })
     })
   }),
-  T = e => {
+  O = e => {
     let {
       skuId: t
     } = e, n = function(e, t) {
@@ -172,7 +172,7 @@ let N = Chunk473749.memo(function(e) {
       }
       return l
     }(e, ["skuId"]), l = (0, v.LJ)(t);
-    return null == l ? null : (0, a.jsx)(N, function(e) {
+    return null == l ? null : (0, a.jsx)(T, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           a = Object.keys(n);

@@ -1,7 +1,7 @@
 /** Chunk was on 88282 **/
 /** chunk id: 17597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => N
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,15 +47,15 @@ function E(e) {
     }
   }) : null
 }
-let O = function(e) {
+let N = function(e) {
   let {
     transitionState: t,
     entryPoint: n,
     onClose: u,
     onComplete: j,
-    dismissable: O,
-    classificationId: N
-  } = e, [T, P] = l.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = l.useRef(T), [w, k] = (0, c.US)([T], true, true), R = l.useMemo(() => (0, r.Z)(), []), A = l.useRef(false), Z = (0, m.GE)();
+    dismissable: N,
+    classificationId: T
+  } = e, [O, P] = l.useState(s.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), I = l.useRef(O), [w, k] = (0, c.US)([O], true, true), R = l.useMemo(() => (0, r.Z)(), []), A = l.useRef(false), Z = (0, m.GE)();
   l.useEffect(() => {
     I.current = w
   }, [w]);
@@ -69,7 +69,7 @@ let O = function(e) {
     onMethodClick: () => {
       P(s.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
     },
-    classificationId: N
+    classificationId: T
   });
   return l.useLayoutEffect(() => () => {
     if (A.current) return;
@@ -84,7 +84,7 @@ let O = function(e) {
     transitionState: t,
     onClose: u,
     gradientColor: "blue",
-    dismissable: O,
+    dismissable: N,
     graphic: {
       type: "image",
       src: S.Z

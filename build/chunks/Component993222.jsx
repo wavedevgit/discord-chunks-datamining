@@ -31,13 +31,13 @@ let j = e => {
     } = e, j = (0, h.jB)(), {
       isPurchased: _,
       isPartiallyOwnedBundle: y
-    } = (0, p.L)(t), C = (0, m.G1)(t), S = (0, i.e7)([d.Z], () => d.Z.getCategoryForProduct(t.skuId)), E = (null == S ? true : S.unpublishedAt) != null ? (0, m.OT)(S.unpublishedAt) : null, O = (0, i.e7)([o.default], () => o.default.getCurrentUser()), N = c.ZP.canUseCollectibles(O), T = (0, f.Iw)(t), {
+    } = (0, p.L)(t), C = (0, m.G1)(t), S = (0, i.e7)([d.Z], () => d.Z.getCategoryForProduct(t.skuId)), E = (null == S ? true : S.unpublishedAt) != null ? (0, m.OT)(S.unpublishedAt) : null, N = (0, i.e7)([o.default], () => o.default.getCurrentUser()), T = c.ZP.canUseCollectibles(N), O = (0, f.Iw)(t), {
       isOrbExclusive: P
     } = (0, g.Ip)({
       product: t,
-      isPremiumUser: N,
+      isPremiumUser: T,
       prioritizedCurrency: x,
-      hasDiscountOffer: null != T
+      hasDiscountOffer: null != O
     }), I = n;
     if (null == I && (null == E || l ? !y && !_ && (0, m.Yq)(t.skuId) ? I = h.Zh.NEW : null != j && 3 === j ? I = h.Zh.THREE_DAY_RENTAL : null != j && 7 === j ? I = h.Zh.SEVEN_DAY_RENTAL : null != j ? I = h.Zh.RENTAL : P ? I = h.Zh.ORBS_EXCLUSIVE : C && (I = h.Zh.NITRO_EXCLUSIVE) : I = h.Zh.LIMITED_TIME), null == I || I === h.Zh.NONE) return null;
     let w = null;

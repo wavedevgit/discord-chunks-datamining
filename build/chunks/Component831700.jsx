@@ -123,19 +123,17 @@ class er extends Chunk98597.ZP {
     let {
       channel: t,
       connected: n,
-      enableHangStatus: i,
-      showEmptyChannelTopic: l
-    } = this.props, o = null == (e = (0, Chunk873696.D)(this.props.subtitle)) ? true : module.subtitle, {
-      hovered: a
+      showEmptyChannelTopic: i
+    } = this.props, l = null == (e = (0, Chunk873696.D)(this.props.subtitle)) ? true : module.subtitle, {
+      hovered: o
     } = this.state;
     return (0, Chunk54381.jsx)(Chunk653577.Z, {
       onClick: this.handleVoiceStatusClick,
       channel: exports,
       connected: require,
-      subtitle: o,
-      hovered: Chunk442837,
-      enableHangStatus: Chunk473749,
-      showEmptyChannelTopic: Chunk120356
+      subtitle: Chunk120356,
+      hovered: o,
+      showEmptyChannelTopic: Chunk473749
     })
   }
   renderVoiceUsers() {

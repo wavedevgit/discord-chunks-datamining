@@ -196,6 +196,7 @@ let D = e => {
       leave: s.enabled ? L : x,
       onRest: n
     }, "animate-always")((e, t) => t ? (0, i.jsx)(D, y({
+      "data-migration-pending": true,
       animationStyle: e,
       targetElementRef: r
     }, o)) : null)
@@ -356,7 +357,9 @@ let U = e => {
     className: n,
     element: r = "div"
   } = e, o = S(e, ["children", "className", "element"]);
-  return (0, i.jsx)(k, v(y({}, o), {
+  return (0, i.jsx)(k, v(y({
+    "data-migration-pending": true
+  }, o), {
     children: e => a.createElement(r, null != n ? v(y({}, e), {
       className: n
     }) : e, t)

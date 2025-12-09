@@ -90,6 +90,7 @@ function p(e) {
     autoFocus: !S,
     children: f
   })), (0, r.jsxs)(l.Y0, {
+    "data-migration-pending": true,
     className: _,
     transitionState: y,
     impression: I,

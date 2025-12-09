@@ -2,13 +2,14 @@
 /** chunk id: 23015, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk758199 = require("./758199.jsx"),
   Chunk914498 = require("./914498.js"),
+  Chunk368176 = require("./368176.js"),
   Chunk371991 = require("./371991.jsx"),
   Chunk829820 = require("./829820.js"),
   Chunk276852 = require("./276852.js"),
@@ -17,79 +18,83 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk837262 = require("./837262.js");
 
-function m(e) {
-  var t, n, m, h;
+function h(e) {
+  var t, n, h, g;
   let {
-    application: g,
-    message: E,
-    header: b,
-    presenceActivity: y,
-    hideParty: O,
-    partyStatusElement: v,
-    currentUserPresenceActivity: S,
-    onClickContent: I,
-    onView: T,
-    guildId: A
-  } = e, C = (0, d.g)(S, y), N = (0, c.Lz)(y, E.author, "Invite Embed"), P = i.useMemo(() => {
+    application: E,
+    message: b,
+    header: y,
+    presenceActivity: O,
+    hideParty: v,
+    partyStatusElement: S,
+    currentUserPresenceActivity: I,
+    onClickContent: T,
+    onView: A,
+    guildId: C
+  } = e, {
+    enabled: N
+  } = l.Q.useConfig({
+    location: "rich_presence_spotify_invite"
+  }), P = (0, f.g)(I, O), R = (0, u.Lz)(O, b.author, "Invite Embed"), w = i.useMemo(() => {
     let e = [];
-    if (!C) {
+    if (!P) {
       var t;
       e.push({
-        label: null != (t = N.label) ? t : p.intl.string(p.t.VJlc0S),
+        label: null != (t = R.label) ? t : _.intl.string(_.t.VJlc0S),
         trackingArea: s.j_.SYNC,
         onClick: () => {
-          N.onClick()
+          R.onClick()
         },
-        disabled: N.disabled,
-        disabledReason: N.disabled ? N.tooltip : true
+        disabled: R.disabled,
+        disabledReason: R.disabled ? R.tooltip : true
       })
     }
     return e
-  }, [C, N]), R = null != y && null != y.details && null != y.state ? p.intl.formatToPlainString(p.t.JCvHtx, {
-    track: y.details,
-    artist: y.state
-  }) : g.name, w = null != (m = null == y || null == (t = y.timestamps) ? true : t.start) ? m : null == y ? true : y.created_at, D = i.useMemo(() => {
+  }, [P, R]), D = null != O && null != O.details && null != O.state ? _.intl.formatToPlainString(_.t.JCvHtx, {
+    track: O.details,
+    artist: O.state
+  }) : E.name, x = null != (h = null == O || null == (t = O.timestamps) ? true : t.start) ? h : null == O ? true : O.created_at, L = i.useMemo(() => {
     var e;
-    return null != w ? (0, r.jsxs)("div", {
-      className: _.timestampContainer,
+    return null != x ? (0, r.jsxs)("div", {
+      className: m.timestampContainer,
       children: [(0, r.jsx)(a.RZG, {
         size: "xxs",
-        color: "currentColor"
-      }), (0, r.jsx)(l.x3, {
+        color: N ? a.TVs.colors.ICON_FEEDBACK_POSITIVE : "currentColor"
+      }), (0, r.jsx)(c.x3, {
         entry: {
-          start: w,
-          end: null == y || null == (e = y.timestamps) ? true : e.end
+          start: x,
+          end: null == O || null == (e = O.timestamps) ? true : e.end
         },
         textColor: "currentColor",
         textTabularNumbers: false,
         textFontCode: false
       })]
     }) : null
-  }, [w, null == y || null == (n = y.timestamps) ? true : n.end]), x = i.useMemo(() => (0, r.jsxs)("div", {
-    className: _.info,
+  }, [x, null == O || null == (n = O.timestamps) ? true : n.end, N]), j = i.useMemo(() => (0, r.jsxs)("div", {
+    className: m.info,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-xs/normal",
-      className: _.tagline,
+      className: m.tagline,
       color: "none",
       lineClamp: 1,
-      children: D
-    }), O ? null : v]
-  }), [D, O, v]);
+      children: L
+    }), v ? null : S]
+  }), [L, v, S]);
   return (0, r.jsx)(o.W, {
-    header: b,
-    title: R,
-    iconSrc: null != (h = (0, u.Z)(y, g.id)) ? h : true,
-    info: x,
-    actions: P,
-    onClickContent: I,
+    header: y,
+    title: D,
+    iconSrc: null != (g = (0, d.Z)(O, E.id)) ? g : true,
+    info: j,
+    actions: w,
+    onClickContent: T,
     trackingConfig: {
-      id: g.id,
-      linkType: f.U.RICH_PRESENCE_INVITE,
-      onView: T,
-      referrerId: E.author.id,
-      guildId: A,
-      channelId: E.channel_id,
-      messageId: E.id
+      id: E.id,
+      linkType: p.U.RICH_PRESENCE_INVITE,
+      onView: A,
+      referrerId: b.author.id,
+      guildId: C,
+      channelId: b.channel_id,
+      messageId: b.id
     }
   })
 }

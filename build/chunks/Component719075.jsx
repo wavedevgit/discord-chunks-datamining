@@ -31,8 +31,8 @@ let _ = e => {
       isPurchased: C,
       isPartiallyOwnedBundle: S,
       isRented: E,
-      rentalExpiresAt: O
-    } = (0, p.L)(t), N = (0, u.G1)(t), T = (0, u.rN)(t), P = l.useMemo(() => (0, u.BH)(t, _), [t, _]), I = (0, g.Iw)(t), {
+      rentalExpiresAt: N
+    } = (0, p.L)(t), T = (0, u.G1)(t), O = (0, u.rN)(t), P = l.useMemo(() => (0, u.BH)(t, _), [t, _]), I = (0, g.Iw)(t), {
       checkoutEligiblePrices: w,
       hasSufficientOrbs: k,
       shouldCheckoutWithOrbs: R
@@ -42,7 +42,7 @@ let _ = e => {
       prioritizedCurrency: n,
       hasDiscountOffer: null != I,
       isRental: null != f
-    }), A = N && !_;
+    }), A = T && !_;
     if (y) return (0, a.jsx)(i.Text, {
       variant: "text-md/medium",
       color: "text-muted",
@@ -55,8 +55,8 @@ let _ = e => {
       lineClamp: 1,
       children: v.intl.string(v.t.BEjTij)
     });
-    if (E && null != O) {
-      let e = (0, o.TD)(Date.now(), O);
+    if (E && null != N) {
+      let e = (0, o.TD)(Date.now(), N);
       return (0, a.jsx)(i.Text, {
         variant: "text-md/medium",
         color: "text-muted",
@@ -71,12 +71,12 @@ let _ = e => {
       color: "text-muted",
       lineClamp: 1,
       children: v.intl.string(v.t["6cfuDj"])
-    }) : T ? (0, a.jsx)(i.Text, {
+    }) : O ? (0, a.jsx)(i.Text, {
       variant: "text-md/bold",
       color: "text-strong",
       lineClamp: 1,
       children: v.intl.string(v.t.nBtvYB)
-    }) : N ? (0, a.jsx)(i.Text, {
+    }) : T ? (0, a.jsx)(i.Text, {
       variant: "text-md/bold",
       color: "text-strong",
       lineClamp: 1,

@@ -2,9 +2,9 @@
 /** chunk id: 371991, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => b,
-  tS: () => g,
-  x3: () => E
+  ZP: () => y,
+  tS: () => E,
+  x3: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,9 +19,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk506071 = require("./506071.js"),
   Chunk719247 = require("./719247.js"),
   Chunk561308 = require("./561308.js"),
+  Chunk368176 = require("./368176.js"),
   Chunk284635 = require("./284635.js");
 
-function g(e) {
+function E(e) {
   let [t, n] = i.useState(Date.now()), r = (0, p.n)(), a = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), o = !r || a && !e;
   return i.useEffect(() => {
     let e = new l.Xp;
@@ -33,7 +34,7 @@ function g(e) {
     slowTickMode: o
   }
 }
-let E = e => {
+let b = e => {
     let {
       entry: t,
       inline: n = false,
@@ -45,26 +46,30 @@ let E = e => {
       scaleFontToUserSetting: f = false
     } = e, {
       now: p
-    } = g(u), _ = i.useMemo(() => (0, m.T_)(t, p), [t, p]), E = i.useRef(_), b = i.useRef(_);
+    } = E(u), {
+      enabled: _
+    } = h.Q.useConfig({
+      location: "active_timestamp"
+    }), b = i.useMemo(() => (0, m.T_)(t, p), [t, p]), y = i.useRef(b), O = i.useRef(b);
     return i.useEffect(() => {
-      b.current = _
+      O.current = b
     }), i.useEffect(() => {
-      E.current = b.current
+      y.current = O.current
     }, [t]), (0, r.jsx)(c.Text, {
       className: o()({
-        [h.fontCode]: l,
-        [h.bold]: d,
-        [h.inlineTimestamp]: n
+        [g.fontCode]: !!_ || l,
+        [g.bold]: !_ && d,
+        [g.inlineTimestamp]: n
       }),
-      variant: "text-xs/medium",
+      variant: _ ? "text-xs/normal" : "text-xs/medium",
       tabularNumbers: s,
-      color: a,
+      color: _ ? "text-feedback-positive" : a,
       scaleFontToUserSetting: f,
-      "aria-label": E.current,
-      children: _
+      "aria-label": y.current,
+      children: b
     })
   },
-  b = e => {
+  y = e => {
     var t, n;
     let {
       entry: i,
@@ -73,7 +78,7 @@ let E = e => {
       bold: l = false,
       scaleFontToUserSetting: u = false
     } = e, f = (0, m.Jg)(i), p = (0, s.e7)([d.default], () => d.default.locale), h = (0, s.e7)([_.Z], () => _.Z.getMatchingActivity(i)), g = null != (n = null == h || null == (t = h.timestamps) ? true : t.start) ? n : null == h ? true : h.created_at;
-    return null != g ? (0, r.jsx)(E, {
+    return null != g ? (0, r.jsx)(b, {
       entry: {
         start: g
       },
@@ -81,7 +86,7 @@ let E = e => {
       hovered: o,
       bold: l,
       scaleFontToUserSetting: u
-    }) : f ? (0, r.jsx)(E, {
+    }) : f ? (0, r.jsx)(b, {
       entry: i,
       textColor: a,
       hovered: o,

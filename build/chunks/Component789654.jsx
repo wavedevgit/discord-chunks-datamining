@@ -1,8 +1,8 @@
 /** Chunk was on 88282 **/
 /** chunk id: 789654, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T,
-  q: () => N
+  Z: () => O,
+  q: () => T
 }), require("./804061.js"), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./361932.js"), require("./187205.js"), require("./49124.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -63,11 +63,11 @@ function E(e) {
   return e.replaceAll(/_|\./g, "-").toLowerCase()
 }
 
-function O(e) {
+function N(e) {
   return e.replaceAll(/_|-/g, ".").toLowerCase()
 }
 
-function N(e, t) {
+function T(e, t) {
   let n = new Blob([t], {
       type: "application/json"
     }),
@@ -80,16 +80,16 @@ function N(e, t) {
   })
 }
 
-function T() {
+function O() {
   let e = (0, Chunk410030.Fg)(),
     [t, n, r, s, d, u] = (0, Chunk500949.zn)(),
     {
       semanticColorOverrides: m,
       rawColorOverrides: v,
       tab: S,
-      scales: O
+      scales: N
     } = exports,
-    T = Chunk473749.useMemo(() => {
+    O = Chunk473749.useMemo(() => {
       let t = Object.entries(Chunk668339).map(t => {
           let [n, a] = t, {
             colors: l,
@@ -120,7 +120,7 @@ function T() {
             r = o().kebabCase(e);
           return ["--".concat(r, "-hsl: ").concat(n, " calc(var(--saturation-factor, 1) * ").concat(a, "%) ").concat(l, "% !important;"), "--".concat(r, ": hsl(var(--").concat(r, "-hsl)) !important;")]
         }),
-        a = O.reduce((e, t) => {
+        a = N.reduce((e, t) => {
           let {
             name: n
           } = t, a = (0, j.XM)(t), l = (0, j.W6)(a, n);
@@ -132,7 +132,7 @@ function T() {
           }, "")
         }, "");
       return "\n      :root {\n        ".concat(Chunk54381, "\n      }\n\n      .theme-").concat(module, " {\n        ").concat(exports.join("\n"), "\n      }\n\n      html {\n        ").concat(require.join("\n"), "\n      }\n    ")
-    }, [Chunk246992, O, Chunk668339, module]);
+    }, [Chunk246992, N, Chunk668339, module]);
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk416825.panel,
     children: [(0, Chunk54381.jsxs)("div", {
@@ -209,7 +209,7 @@ function T() {
           size: "md",
           icon: Chunk481060._8t,
           onClick: () => {
-            N("color-overrides", JSON.stringify(y({}, exports), null, 2))
+            T("color-overrides", JSON.stringify(y({}, exports), null, 2))
           },
           "aria-label": "Export"
         })]
@@ -231,7 +231,7 @@ function T() {
     }), (0, Chunk54381.jsx)(Chunk131271.ql, {
       children: (0, Chunk54381.jsx)("style", {
         id: "devtools-color-overrides",
-        children: T
+        children: O
       })
     })]
   })
@@ -322,12 +322,12 @@ function P(e) {
       children: Object.entries(i).map(e => {
         let [t, l] = e, i = l.colors[r];
         if (null == i) return null;
-        let s = O(i.color),
+        let s = N(i.color),
           c = i.opacity,
           d = j.jC[t][r];
         return (0, a.jsx)(I, {
           title: E(t),
-          subtitle: 1 === d.opacity ? O(d.raw) : "".concat(O(d.raw), " @ ").concat(100 * d.opacity, "%"),
+          subtitle: 1 === d.opacity ? N(d.raw) : "".concat(N(d.raw), " @ ").concat(100 * d.opacity, "%"),
           highlight: l.highlight,
           onReset: () => {
             n(e => {

@@ -46,6 +46,7 @@ function u(e) {
     children: t
   } = e, n = o(e, ["children"]);
   return (0, r.jsx)(l.Provider, {
+    "data-migration-pending": true,
     value: n,
     children: t
   })

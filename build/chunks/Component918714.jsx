@@ -44,7 +44,7 @@ function _(e) {
 let y = function(e) {
   let {
     onClose: t
-  } = e, [n, u] = l.useState(null), [h, x] = l.useState(true), [y, C] = l.useState(null), [S, E] = l.useState(false), O = l.useCallback(async () => {
+  } = e, [n, u] = l.useState(null), [h, x] = l.useState(true), [y, C] = l.useState(null), [S, E] = l.useState(false), N = l.useCallback(async () => {
     x(true), C(null);
     try {
       var e;
@@ -70,7 +70,7 @@ let y = function(e) {
     } finally {
       x(false)
     }
-  }, [t]), N = l.useCallback(async e => {
+  }, [t]), T = l.useCallback(async e => {
     if (null !== n) {
       E(true);
       try {
@@ -79,30 +79,30 @@ let y = function(e) {
           flow_id: n.flow_context.flow_id,
           data: e
         };
-        await (0, d.Wl)(t), O()
+        await (0, d.Wl)(t), N()
       } catch (e) {
         C(b.intl.string(g.default["+QRSxc"]))
       } finally {
         E(false)
       }
     }
-  }, [n, O]);
+  }, [n, N]);
   (0, i.ZP)(() => {
-    O()
+    N()
   });
-  let T = l.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
+  let O = l.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
   return (0, a.jsxs)("div", {
     className: v.background,
     children: [(0, a.jsx)("img", {
       className: v.artwork,
       src: j,
       alt: ""
-    }), T ? (0, a.jsx)(o.default, {
+    }), O ? (0, a.jsx)(o.default, {
       transitionState: r.Dvm.ENTERED,
       entryPoint: s.cU.SAFETY_FLOWS,
       onClose: f.dG,
       onComplete: async () => {
-        await N({
+        await T({
           type: m.rY.Empty
         })
       },
@@ -149,13 +149,13 @@ let y = function(e) {
                 fullWidth: true,
                 text: b.intl.string(b.t["7NqTJn"]),
                 onClick: () => {
-                  O()
+                  N()
                 }
               })]
             })]
           }), null === y && null != n && (0, a.jsx)(_, {
             task: n,
-            handleSubmit: N,
+            handleSubmit: T,
             disabled: S
           })]
         })

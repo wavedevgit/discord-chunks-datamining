@@ -44,14 +44,14 @@ function E() {
     [n, r] = Chunk473749.useState(""),
     o = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
     E = (0, Chunk835473.q)(require),
-    O = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
+    N = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
       var e, t;
       return null != (t = null == E || null == (e = E.linkedGames) ? true : module.map(e => h.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
     }),
-    N = (0, Chunk524995.F)(E, {
+    T = (0, Chunk524995.F)(E, {
       allowedFlows: [Chunk524995.r.RPC]
     }),
-    T = (0, Chunk524995.F)(E, {
+    O = (0, Chunk524995.F)(E, {
       allowedFlows: [Chunk524995.r.WEB]
     }),
     P = (0, Chunk524995.F)(E),
@@ -102,7 +102,7 @@ function E() {
         children: ["Application Name: ", null != E ? E.name : "N/A"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Linked Games:", " ", O.length > 0 ? O.map(e => {
+        children: ["Linked Games:", " ", N.length > 0 ? N.map(e => {
           var t;
           return (null == (t = (0, m.r)(E)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
         }).join(", ") : "N/A"]
@@ -122,13 +122,13 @@ function E() {
         color: "text-subtle",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !N.canStartAuthorization,
-        onClick: () => N.startAuthorization(),
+        disabled: !T.canStartAuthorization,
+        onClick: () => T.startAuthorization(),
         variant: "secondary",
         text: "Start In-App Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !T.canStartAuthorization,
-        onClick: () => T.startAuthorization(),
+        disabled: !O.canStartAuthorization,
+        onClick: () => O.startAuthorization(),
         variant: "secondary",
         text: "Start Web Authorization"
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {

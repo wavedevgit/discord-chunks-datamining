@@ -1,7 +1,7 @@
 /** Chunk was on 88282 **/
 /** chunk id: 596768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => O
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk599832 = require("./599832.js"),
   Chunk451429 = require("./451429.js");
-let O = [{
+let N = [{
     key: "id",
     cellClassName: Chunk599832.eventColumn,
     render(e) {
@@ -54,7 +54,7 @@ let O = [{
       return t.toLocaleString()
     }
   }],
-  N = [{
+  T = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -134,18 +134,18 @@ let O = [{
     }
   }];
 
-function T() {
+function O() {
   let [e, t] = Chunk473749.useState(""), n = Chunk473749.useRef(null), r = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk473749.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk473749.useState(true), x = Chunk658722.find(e => e.key === c), {
     TabBar: f,
     renderSelectedTab: v
   } = (0, Chunk621060.ZP)({
-    tabs: N
-  }, []), T = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk473749.useCallback(e => {
+    tabs: T
+  }, []), O = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk473749.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
-  }, []), I = T ? "Stop Tracking" : "Start Tracking";
+  }, []), I = O ? "Stop Tracking" : "Start Tracking";
   return (0, Chunk54381.jsxs)("div", {
     ref: require,
     className: i()(Chunk451429.panel, Chunk599832.panel),
@@ -155,10 +155,10 @@ function T() {
         text: I,
         children: (0, Chunk54381.jsx)(Chunk481060.hU, {
           size: "sm",
-          variant: T ? "active" : "primary",
-          icon: T ? Chunk481060.fpf : Chunk481060.o1U,
+          variant: O ? "active" : "primary",
+          icon: O ? Chunk481060.fpf : Chunk481060.o1U,
           "aria-label": I,
-          onClick: () => P(!T)
+          onClick: () => P(!O)
         })
       }), (0, Chunk54381.jsx)(Chunk481060.E1j, {
         size: "sm",
@@ -174,7 +174,7 @@ function T() {
         onClick: Chunk31336.Zw
       })]
     }), (0, Chunk54381.jsx)(Chunk681619.Z, {
-      columns: O,
+      columns: N,
       data: Chunk658722,
       selectedRowKey: Chunk913527,
       onClickRow: e => d(e.key)

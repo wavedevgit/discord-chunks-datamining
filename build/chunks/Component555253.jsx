@@ -53,7 +53,9 @@ let u = {
     name: "Switch",
     component: function(e) {
       let [t, n] = i.useState(false);
-      return (0, r.jsx)(a.T2P, c(s({}, e), {
+      return (0, r.jsx)(a.T2P, c(s({
+        "data-migration-pending": true
+      }, e), {
         onChange: n,
         checked: t
       }))

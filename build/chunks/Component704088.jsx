@@ -135,7 +135,7 @@ let C = e => {
     })
   },
   S = () => {
-    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [O, N] = Chunk473749.useState(5e3), [T, P] = Chunk473749.useState(false), I = Chunk473749.useRef(null), w = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
+    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [N, T] = Chunk473749.useState(5e3), [O, P] = Chunk473749.useState(false), I = Chunk473749.useRef(null), w = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
       finishSetup: async () => true,
       perkAvailableToUser: k
     })), {
@@ -170,8 +170,8 @@ let C = e => {
         Z(p._n.INSTALLING), s(setTimeout(() => {
           if (S) return void t(Error("Installation failed"));
           e()
-        }, O))
-      }), [S, O, Z, Chunk544891]);
+        }, N))
+      }), [S, N, Z, Chunk544891]);
     Chunk473749.useEffect(() => {
       z && A !== Chunk5900._n.UNKNOWN && Z(Chunk5900._n.UNKNOWN)
     }, [z, Z, A]), Chunk473749.useEffect(() => {
@@ -323,8 +323,8 @@ let C = e => {
               variant: "text-md/semibold",
               children: "Install time"
             }), (0, Chunk54381.jsx)(Chunk199849.B6, {
-              select: e => N(e),
-              isSelected: e => e === O,
+              select: e => T(e),
+              isSelected: e => e === N,
               serialize: e => "".concat(e),
               options: [{
                 label: "1 second",
@@ -365,7 +365,7 @@ let C = e => {
             onClick: () => {
               P(true)
             }
-          }), T && (0, Chunk54381.jsx)(Chunk720553.default, {
+          }), O && (0, Chunk54381.jsx)(Chunk720553.default, {
             url: "https://www.discord.com",
             trustUrl: () => false,
             onCancel: () => P(false),

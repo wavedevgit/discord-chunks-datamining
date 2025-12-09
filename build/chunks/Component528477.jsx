@@ -1,7 +1,7 @@
 /** Chunk was on 88282 **/
 /** chunk id: 528477, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  n: () => O
+  n: () => N
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,13 +26,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk742098 = require("./742098.js"),
   Chunk932889 = require("./932889.js");
-let O = e => {
+let N = e => {
   let {
     onClose: t
   } = e, n = (0, u.m)(), {
-    installationStatus: O,
-    perkAvailableToUser: N,
-    isSupportedPrivateBrowsingPerkPlatform: T,
+    installationStatus: N,
+    perkAvailableToUser: T,
+    isSupportedPrivateBrowsingPerkPlatform: O,
     isWeb: P,
     connectionStatus: I
   } = (0, v.xf)(), {
@@ -45,7 +45,7 @@ let O = e => {
     (0, p.openUserSettings)(m.n.PRIVATE_BROWSING_PANEL, {
       section: j.oAB.CF_WARP
     })
-  }, []), A = [f.Ij.CONNECTED].includes(I), Z = T && w && ![f._n.ZERO_TRUST, f._n.ERROR].includes(O) && !P && (!n || N), D = (0, l.useMemo)(() => {
+  }, []), A = [f.Ij.CONNECTED].includes(I), Z = O && w && ![f._n.ZERO_TRUST, f._n.ERROR].includes(N) && !P && (!n || T), D = (0, l.useMemo)(() => {
     switch (I) {
       case f.Ij.CONNECTED:
         return C.intl.string(y.default.FBu3XJ);
@@ -55,23 +55,23 @@ let O = e => {
         return C.intl.string(y.default["A70/wR"])
     }
   }, [I]), L = (0, l.useMemo)(() => {
-    if (!N) return C.intl.string(y.default.KN6HOb);
-    switch (O) {
+    if (!T) return C.intl.string(y.default.KN6HOb);
+    switch (N) {
       case f._n.INSTALLED:
       case f._n.EXISTING_INSTALLATION:
         return D;
       default:
         return C.intl.string(y.default.KN6HOb)
     }
-  }, [O, N, D]), M = (0, l.useMemo)(() => {
-    if (!N) return (0, a.jsx)(r.xvT, {
+  }, [N, T, D]), M = (0, l.useMemo)(() => {
+    if (!T) return (0, a.jsx)(r.xvT, {
       variant: "text-sm/normal",
       color: "text-subtle",
       children: C.intl.format(y.default["0UfKTY"], {
         helpdeskArticle: x.w
       })
     });
-    switch (O) {
+    switch (N) {
       case f._n.INSTALLED:
       case f._n.EXISTING_INSTALLATION:
         return (0, a.jsx)(r.xvT, {
@@ -98,7 +98,7 @@ let O = e => {
           })
         })
     }
-  }, [O, N, A, R, k]), {
+  }, [N, T, A, R, k]), {
     analyticsLocations: U
   } = (0, o.ZP)(s.Z.MASKED_LINK);
   return ((0, l.useEffect)(() => {
@@ -112,7 +112,7 @@ let O = e => {
       className: S.betaBadge
     }), (0, a.jsxs)("div", {
       className: S.contentContainer,
-      children: [N && (0, a.jsx)(r.$1m, {
+      children: [T && (0, a.jsx)(r.$1m, {
         className: S.imageWrapper,
         offsetBottom: false,
         color: "nitro-pink",
@@ -130,7 +130,7 @@ let O = e => {
           variant: "heading-md/semibold",
           children: L
         }), M]
-      }), !N && (0, a.jsx)("div", {
+      }), !T && (0, a.jsx)("div", {
         className: S.ctaContainer,
         children: (0, a.jsx)(d.Z, {
           buttonTextOverride: C.intl.string(C.t["8x0jKT"]),

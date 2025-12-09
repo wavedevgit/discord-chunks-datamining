@@ -36,6 +36,7 @@ let s = {
         direction: "vertical",
         gap: "md",
         children: [(0, r.jsx)(a.$q, {
+          "data-migration-pending": true,
           value: p,
           onChange: m,
           disabled: t,

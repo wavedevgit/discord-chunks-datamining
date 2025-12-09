@@ -24,6 +24,7 @@ let l = {
         text: "Action"
       }) : true;
       return (0, r.jsx)(o.To, {
+        "data-migration-pending": true,
         type: t,
         title: n,
         body: i,
@@ -101,6 +102,7 @@ let l = {
             },
             children: [e, ":"]
           }), (0, r.jsx)(s.v, {
+            "data-migration-pending": true,
             tag: e,
             disabled: n,
             required: i,

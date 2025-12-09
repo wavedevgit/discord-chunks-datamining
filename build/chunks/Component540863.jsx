@@ -91,6 +91,7 @@ let _ = Chunk473749.forwardRef(function(e, t) {
     className: null != u ? u : true,
     style: null != h ? h : true,
     children: (0, r.jsx)(a.ol, {
+      "data-migration-pending": true,
       titleId: S,
       errorId: I,
       error: null != E ? E : true,
@@ -101,6 +102,7 @@ let _ = Chunk473749.forwardRef(function(e, t) {
       children: (0, r.jsxs)("div", {
         className: P ? s.fieldWrapper : true,
         children: [null != g || null != E ? (0, r.jsx)(o.v, d(c({
+          "data-migration-pending": true,
           tag: _,
           disabled: l,
           required: m,

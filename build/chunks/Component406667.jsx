@@ -1,7 +1,7 @@
 /** Chunk was on 88282 **/
 /** chunk id: 406667, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => N
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -154,7 +154,7 @@ let C = e => {
       color: n
     })
   },
-  O = e => {
+  N = e => {
     let {
       skuId: t,
       isCollapsed: n = false,
