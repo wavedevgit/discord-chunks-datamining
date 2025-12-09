@@ -21,19 +21,19 @@ function b(e) {
     onClick: i,
     active: a,
     node: s,
-    visibleContent: d,
+    visibleContent: f,
     panelKey: b,
     listItemProps: y,
     children: p
   } = e, {
     icon: g,
     stronglyDiscouragedCustomComponent: O,
-    trailing: j,
-    useTitle: m
-  } = s, v = null == m ? true : m();
+    trailing: m,
+    useTitle: j
+  } = s, v = null == j ? true : j();
   return (0, r.jsxs)(o, {
     "data-settings-sidebar-item": b,
-    className: f.itemContainer,
+    className: d.itemContainer,
     children: [(0, r.jsxs)(c.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -52,26 +52,26 @@ function b(e) {
       }
       return e
     }({}, y), n = n = {
-      className: l()(f.item, {
-        [f.active]: a
+      className: l()(d.item, {
+        [d.active]: a
       }),
       onClick: i,
       children: [null != O ? (0, r.jsx)(O, {}) : (0, r.jsxs)("div", {
-        className: f.itemContent,
+        className: d.itemContent,
         children: [(0, r.jsx)(g, {
           color: "currentColor",
           size: "refresh_sm",
-          className: f.icon
+          className: d.icon
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "currentColor",
           children: v
         })]
-      }), null != j && (0, r.jsx)("div", {
-        className: f.itemContent,
+      }), null != m && (0, r.jsx)("div", {
+        className: d.itemContent,
         children: (0, r.jsx)(u.W, {
-          trailing: j,
-          visibleContent: d,
+          trailing: m,
+          visibleContent: f,
           isSelected: a
         })
       })]
@@ -93,21 +93,21 @@ function y(e) {
     node: t,
     visibleContent: n,
     hoisted: i = false
-  } = e, l = o.useMemo(() => t.layout[0], [t]), c = s.Z.useField("currentPanelKey"), u = null != c && c === (null == l ? true : l.key), f = null != l ? () => s.Z.setState({
+  } = e, l = o.useMemo(() => t.layout[0], [t]), c = s.Z.useField("currentPanelKey"), u = null != c && c === (null == l ? true : l.key), d = null != l ? () => s.Z.setState({
     requestedTargetKey: l.key,
     showNavigationMobile: false
   }) : t.onClick, y = o.useMemo(() => {
     var e;
     if (!u) return null;
     let t = (null != (e = null == l ? true : l.layout.flatMap(e => e.layout)) ? e : []).filter(e => null != e.useTitle);
-    return t.length > 1 ? (0, r.jsx)(d.Z, {
+    return t.length > 1 ? (0, r.jsx)(f.Z, {
       categories: t
     }) : null
   }, [u, null == l ? true : l.layout]), p = i ? "li" : "div";
   return i ? (0, r.jsx)(b, {
     tag: p,
     panelKey: null == l ? true : l.key,
-    onClick: f,
+    onClick: d,
     active: u,
     node: t,
     visibleContent: n,
@@ -117,7 +117,7 @@ function y(e) {
     children: e => (0, r.jsx)(b, {
       tag: p,
       panelKey: null == l ? true : l.key,
-      onClick: f,
+      onClick: d,
       active: u,
       node: t,
       visibleContent: n,

@@ -69,45 +69,53 @@ function g() {
 
 function E(e, t) {
   let n = r.useMemo(() => (0, s.Ql)(e), [e]),
-    i = g(),
-    d = (0, a.Pt)(),
+    i = (0, a.Pt)(),
     {
-      searchResults: p
+      searchResults: u
     } = (0, o.F)(),
-    m = new Set;
-  for (let e of p) {
+    d = new Set;
+  for (let e of u) {
     let t = e;
     for (; null != t;) {
-      var h;
-      let e = null == (h = d[t]) ? true : h.parent;
+      var p;
+      let e = null == (p = i[t]) ? true : p.parent;
       if (null == e) {
-        m.add(t);
+        d.add(t);
         break
       }
       t = e
     }
   }
-  let E = (0, u.Z)(n, null != t ? t : "", {
-      legacyMatches: m,
-      bypassPredicates: i
-    }),
-    [y, O] = r.useState(E),
-    v = b(y, E);
-  return r.useEffect(() => {
-    v && O(E)
-  }, [v, E]), r.useMemo(() => {
+  let m = b(n, null != t ? t : "", d),
+    h = b(n, "", d);
+  return r.useMemo(() => {
     var e;
-    let t = new l.Z;
-    return {
-      node: null != (e = (0, c.Z)(n, y, t)) ? e : _(f({}, n), {
+    let t = new l.Z,
+      r = new l.Z;
+    return (0, c.Z)(n, h, r), {
+      node: null != (e = (0, c.Z)(n, m, t)) ? e : _(f({}, n), {
         layout: []
       }),
-      directory: t
+      visibleDirectory: t,
+      accessibleDirectory: r
     }
-  }, [y, n])
+  }, [m, h, n])
 }
 
-function b(e, t) {
+function b(e, t, n) {
+  let i = g(),
+    a = (0, u.Z)(e, t, {
+      legacyMatches: n,
+      bypassPredicates: i
+    }),
+    [o, s] = r.useState(a),
+    l = y(o, a);
+  return r.useEffect(() => {
+    l && s(a)
+  }, [l, a]), o
+}
+
+function y(e, t) {
   if (e.size !== t.size) returntrue;
   for (let n of e)
     if (!t.has(n)) returntrue;

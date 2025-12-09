@@ -2,51 +2,55 @@
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
-}), require("./388685.js");
+});
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk55160 = require("./55160.js"),
   Chunk493773 = require("./493773.js"),
-  Chunk996733 = require("./996733.js"),
   Chunk636298 = require("./636298.jsx"),
   Chunk404975 = require("./404975.jsx"),
   Chunk924052 = require("./924052.jsx"),
   Chunk59662 = require("./59662.js"),
+  Chunk131051 = require("./131051.js"),
   Chunk996435 = require("./996435.js"),
   Chunk990757 = require("./990757.js");
 
 function y(e) {
   var t;
   let {
-    root: n,
-    directory: y,
-    target: p,
-    defaultTarget: g,
-    onClose: O,
-    sidebarHeader: j,
-    sidebarFooter: m,
-    onPanelChange: v,
-    emptyState: h
-  } = e, x = null != p && (null == (t = y.entry(p)) ? true : t.parentPanelKey) != null ? p : g, S = f.Z.useField("currentPanelKey"), [P, C] = o.useState(y), _ = o.useMemo(() => P.get(null != S ? S : x), [P, S, x]), {
-    navigateWithValidation: w
-  } = (0, u.Cu)();
+    partialRoot: n,
+    target: y,
+    defaultTarget: p,
+    onClose: g,
+    sidebarFooter: O,
+    onPanelChange: m,
+    emptyState: j,
+    searchQuery: v,
+    onSearchChange: h
+  } = e, x = d.Z.useField("currentPanelKey"), {
+    node: S,
+    visibleDirectory: P,
+    accessibleDirectory: C
+  } = (0, f.ZP)(n, null != v ? v : ""), _ = null != y && (null == (t = P.entry(y)) ? true : t.parentPanelKey) != null ? y : p, w = o.useMemo(() => C.get(null != x ? x : _), [x, C, _]), {
+    navigateWithValidation: k
+  } = (0, s.Cu)();
   (0, l.ZP)(() => {
     var e, t;
-    let n = y.entry(x).parentPanelKey,
-      r = null == (e = y.entry(x)) ? true : e.parentCategoryKey,
-      o = null == (t = y.entry(x)) ? true : t.parentAccordionKey;
-    return f.Z.setState({
+    let n = P.entry(_).parentPanelKey,
+      r = null == (e = P.entry(_)) ? true : e.parentCategoryKey,
+      o = null == (t = P.entry(_)) ? true : t.parentAccordionKey;
+    return d.Z.setState({
       currentPanelKey: n,
       currentCategoryKey: r,
       disableSidebarCategoryAutoSelect: true,
       navTransition: {
-        targetKey: x,
+        targetKey: _,
         targetAccordionKey: o,
         animateScroll: false
       },
-      showNavigationMobile: null == p
-    }), () => f.Z.resetState()
-  }), o.useEffect(() => f.Z.subscribe(e => ({
+      showNavigationMobile: null == y
+    }), () => d.Z.resetState()
+  }), o.useEffect(() => d.Z.subscribe(e => ({
     requestedTargetKey: e.requestedTargetKey,
     currentPanelKey: e.currentPanelKey
   }), e => {
@@ -55,16 +59,17 @@ function y(e) {
       currentPanelKey: n
     } = e;
     if (null == t) return;
-    let r = y.entry(t);
-    if (null == r) return void a.Z.setState({
-      query: ""
-    });
+    let r = P.entry(t);
+    if (null == r) {
+      null == h || h("");
+      return
+    }
     let o = r.parentPanelKey;
-    if (null == o) return void f.Z.setState({
+    if (null == o) return void d.Z.setState({
       requestedTargetKey: true
     });
     let i = () => {
-      f.Z.setState({
+      d.Z.setState({
         requestedTargetKey: true,
         currentPanelKey: r.parentPanelKey,
         currentCategoryKey: r.parentCategoryKey,
@@ -76,38 +81,39 @@ function y(e) {
         }
       })
     };
-    r.parentPanelKey !== n ? w(() => {
-      i(), null == v || v(o)
+    r.parentPanelKey !== n ? k(() => {
+      i(), null == m || m(o)
     }) : i()
   }, {
     equalityFn: i.X
-  }), [w, v, y]);
-  let k = o.useMemo(() => ({
-      visibleDirectory: y,
-      accessibleDirectory: P
-    }), [y, P]),
-    E = () => w(O),
-    N = null != S ? y.get(S) : true;
-  return (0, r.jsx)(d.j.Provider, {
-    value: k,
+  }), [P, k, m, h]);
+  let E = o.useMemo(() => ({
+      visibleDirectory: P,
+      accessibleDirectory: C
+    }), [P, C]),
+    N = () => k(g),
+    T = null != x ? P.get(x) : true;
+  return (0, r.jsx)(u.j.Provider, {
+    value: E,
     children: (0, r.jsxs)("div", {
       className: b.container,
-      children: [(0, r.jsx)(s.P, {
-        root: n,
-        header: j,
-        footer: m,
-        onClose: E,
-        emptyState: h
-      }), (0, r.jsx)(c.Z, {
-        onClose: E,
-        setting: null != N ? N : _
+      children: [(0, r.jsx)(c.P, {
+        root: S,
+        footer: O,
+        onClose: N,
+        emptyState: j,
+        searchQuery: v,
+        onSearchChange: h
+      }), (0, r.jsx)(a.Z, {
+        onClose: N,
+        setting: null != T ? T : w
       })]
     })
   })
 }
 
 function p(e) {
-  return (0, r.jsx)(u.Ri, {
+  return (0, r.jsx)(s.Ri, {
     children: (0, r.jsx)(y, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

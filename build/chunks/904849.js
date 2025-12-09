@@ -29,13 +29,6 @@ class i {
     var t;
     return null == (t = this.entry(e)) ? true : t.node
   }
-  typedEntry(e) {
-    if (null != e) return this.map.get(e.key)
-  }
-  typedGet(e) {
-    var t;
-    return null == (t = this.typedEntry(e)) ? true : t.node
-  }
   setDefaultPanel(e) {
     this.defaultPanel = e
   }

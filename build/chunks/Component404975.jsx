@@ -1,7 +1,7 @@
 /** Chunk was on 88569 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => m
+  P: () => h
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,6 +9,7 @@ var Chunk54381 = require("./54381.js"),
   l = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk873546 = require("./873546.js"),
+  Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk724757 = require("./724757.js"),
@@ -16,18 +17,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk984802 = require("./984802.js"),
   Chunk970013 = require("./970013.js"),
   Chunk996435 = require("./996435.js"),
+  Chunk886880 = require("./886880.jsx"),
   Chunk854014 = require("./854014.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk845435 = require("./845435.js");
 
-function m(e) {
+function h(e) {
   let {
     root: t,
-    header: n,
-    footer: i,
-    onClose: g,
-    emptyState: m
-  } = e, h = p.Z.useField("showNavigationMobile"), x = o.useRef(null), S = o.useMemo(() => {
+    footer: n,
+    onClose: i,
+    emptyState: s,
+    searchQuery: O,
+    onSearchChange: m
+  } = e, h = g.Z.useField("showNavigationMobile"), P = o.useRef(null), C = o.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -35,8 +38,8 @@ function m(e) {
       } = t;
       n.forEach(t => {
         if (null != t.trailing) switch (t.trailing.type) {
-          case y.W.BADGE_NEW:
-          case y.W.STRONGLY_DISCOURAGED_CUSTOM:
+          case p.W.BADGE_NEW:
+          case p.W.STRONGLY_DISCOURAGED_CUSTOM:
             var n, r, o;
             null == (r = (o = t.trailing).getDismissibleContentTypes) || null == (n = r.call(o)) || n.forEach(t => {
               e.push(t)
@@ -44,60 +47,63 @@ function m(e) {
         }
       })
     }), e
-  }, [t.layout]), [P, C] = o.useMemo(() => {
+  }, [t.layout]), [_, w] = o.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
       t.hoisted ? e.push(t) : n.push(t)
     }), [e, n]
-  }, [t.layout]), _ = (0, b.Ll)(), w = (0, d.Z)("settings-sidebar", x), k = p.Z.useField("currentPanelKey");
+  }, [t.layout]), k = (0, y.Ll)(), E = (0, d.Z)("settings-sidebar", P), N = g.Z.useField("currentPanelKey");
   return o.useEffect(() => {
     var e;
-    if (null == x.current || null == k) return;
-    let t = p.Z.getField("navTransition"),
+    if (null == P.current || null == N) return;
+    let t = g.Z.getField("navTransition"),
       n = null == t || t.animateScroll,
-      r = null == (e = x.current.getScrollerNode()) ? true : e.querySelector('[data-settings-sidebar-item="'.concat(k, '"]'));
-    null != r && x.current.scrollIntoViewNode({
+      r = null == (e = P.current.getScrollerNode()) ? true : e.querySelector('[data-settings-sidebar-item="'.concat(N, '"]'));
+    null != r && P.current.scrollIntoViewNode({
       node: r,
       padding: 8,
-      animate: !u.Z.useReducedMotion && n
+      animate: !f.Z.useReducedMotion && n
     })
-  }, [k]), (0, r.jsx)(s.f6W, {
-    theme: _,
-    children: e => (0, r.jsx)(f.ZP, {
-      contentTypes: S,
+  }, [N]), (0, r.jsx)(u.f6W, {
+    theme: k,
+    children: e => (0, r.jsx)(b.ZP, {
+      contentTypes: C,
       children: t => {
         let {
           visibleContent: o
         } = t;
         return (0, r.jsxs)("div", {
-          className: l()(j.sidebar, e, {
-            [j.mobile]: c.tq,
-            [j.mobileNavigationOpen]: h
+          className: l()(v.sidebar, e, {
+            [v.mobile]: c.tq,
+            [v.mobileNavigationOpen]: h
           }),
           children: [(0, r.jsxs)("div", {
-            className: j.fixedContent,
+            className: v.fixedContent,
             children: [c.tq && (0, r.jsx)("div", {
-              className: j.mobileCloseButton,
-              children: (0, r.jsx)(s.hU, {
-                icon: s.Uz9,
-                onClick: g,
+              className: v.mobileCloseButton,
+              children: (0, r.jsx)(u.hU, {
+                icon: u.Uz9,
+                onClick: i,
                 variant: "icon-only",
                 size: "sm",
-                "aria-label": O.intl.string(O.t.cpT0Cq)
+                "aria-label": j.intl.string(j.t.cpT0Cq)
               })
             }), (0, r.jsx)("div", {
-              children: P.map(e => (0, r.jsx)(v, {
+              children: _.map(e => (0, r.jsx)(x, {
                 section: e,
                 visibleContent: o,
                 hoisted: true
               }, e.key))
-            }), null != n && (0, r.jsx)(n, {}), null != m && 0 === C.length && (0, r.jsx)(m, {})]
+            }), null != O && null != m && (0, r.jsx)(S, {
+              searchQuery: O,
+              onSearchChange: m
+            }), null != s && 0 === w.length && (0, r.jsx)(s, {})]
           }), (0, r.jsx)(a.bG, {
-            navigator: w,
+            navigator: E,
             children: (0, r.jsx)(a.SJ, {
               children: e => {
-                var t, n, {
+                var t, i, {
                     ref: l
                   } = e,
                   a = function(e, t) {
@@ -115,7 +121,7 @@ function m(e) {
                     }
                     return o
                   }(e, ["ref"]);
-                return (0, r.jsxs)(s.h21, (t = function(e) {
+                return (0, r.jsxs)(u.h21, (t = function(e) {
                   for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
                       r = Object.keys(n);
@@ -135,27 +141,27 @@ function m(e) {
                 }({
                   ref: e => {
                     var t;
-                    x.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+                    P.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
                   },
-                  className: j.navScroller,
+                  className: v.navScroller,
                   fade: true
-                }, a), n = n = {
+                }, a), i = i = {
                   children: [(0, r.jsx)("nav", {
-                    className: j.nav,
-                    children: C.map(e => (0, r.jsx)(v, {
+                    className: v.nav,
+                    children: w.map(e => (0, r.jsx)(x, {
                       section: e,
                       visibleContent: o
                     }, e.key))
-                  }), null != i && (0, r.jsx)(i, {})]
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+                  }), null != n && (0, r.jsx)(n, {})]
+                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                   var n = Object.keys(e);
                   if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
                     n.push.apply(n, r)
                   }
                   return n
-                })(Object(n)).forEach(function(e) {
-                  Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+                })(Object(i)).forEach(function(e) {
+                  Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
                 }), t))
               }
             })
@@ -166,7 +172,7 @@ function m(e) {
   })
 }
 
-function v(e) {
+function x(e) {
   var t;
   let {
     section: n,
@@ -174,20 +180,54 @@ function v(e) {
     hoisted: i = false
   } = e, l = null == (t = n.useTitle) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
-    className: j.section,
+    className: v.section,
     "aria-label": l,
     children: [null != l && (0, r.jsx)("div", {
-      className: j.sectionLabel,
-      children: (0, r.jsx)(s.Heading, {
-        className: j.label,
+      className: v.sectionLabel,
+      children: (0, r.jsx)(u.Heading, {
+        className: v.label,
         variant: "heading-sm/medium",
         color: "text-muted",
         children: l
       })
-    }), n.layout.map(e => (0, r.jsx)(g.y, {
+    }), n.layout.map(e => (0, r.jsx)(m.y, {
       node: e,
       visibleContent: o,
       hoisted: i
     }, e.key))]
+  })
+}
+
+function S(e) {
+  let {
+    searchQuery: t,
+    onSearchChange: n
+  } = e, i = o.useRef(null), [l, a] = (0, b.US)([s.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]), c = o.useCallback(() => {
+    n("")
+  }, [n]), f = o.useMemo(() => ({
+    title: j.intl.string(j.t.Kv519a),
+    body: j.intl.string(j.t.cTGJBZ),
+    badge: "new",
+    position: "right",
+    align: "center",
+    scrollBehavior: "sticky"
+  }), []);
+  return (0, r.jsxs)("div", {
+    className: v.searchBarContainer,
+    children: [(0, r.jsx)(u.E1j, {
+      size: "md",
+      query: t,
+      onChange: n,
+      onClear: c
+    }), (0, r.jsx)("div", {
+      className: v.popoverAnchor,
+      ref: i
+    }), (0, r.jsx)(O.Z, {
+      dismissibleContentType: s.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER,
+      targetElementRef: i,
+      visibleContent: l,
+      markAsDismissed: a,
+      props: f
+    })]
   })
 }

@@ -16,8 +16,8 @@ function c(e) {
     visibleContent: c,
     markAsDismissed: s,
     props: u
-  } = e, [d, f] = o.useState(false), b = o.useRef(null);
-  (0, l.ZP)(() => (b.current = setTimeout(() => f(true), 250), () => {
+  } = e, [f, d] = o.useState(false), b = o.useRef(null);
+  (0, l.ZP)(() => (b.current = setTimeout(() => d(true), 250), () => {
     clearTimeout(b.current), s(a.L.AUTO_DISMISS)
   }));
   let y = o.useCallback(e => {
@@ -42,7 +42,7 @@ function c(e) {
     return e
   }({
     targetElementRef: n,
-    shouldShow: d && c === t,
+    shouldShow: f && c === t,
     onRequestClose: y
   }, u))
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 87337 **/
 /** chunk id: 164375, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => h
 }), require("./388685.js"), require("./290780.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,22 +18,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk405842 = require("./405842.js");
 
-function g(e) {
+function h(e) {
   let {
     channelId: t,
     blockedUserIds: n,
-    ignoredUserIds: g = [],
-    transitionState: N,
-    onClose: E
+    ignoredUserIds: h = [],
+    transitionState: E,
+    onClose: N
   } = e;
   return s.useEffect(() => {
     d.default.track(x.rMx.GDM_BLOCKED_USER_WARNING_VIEWED, {
       channel_id: t,
       warning_medium: m.WR.MODAL,
       blocked_user_ids: n,
-      ignored_user_ids: g
+      ignored_user_ids: h
     })
-  }, [t, n, g]), (0, i.jsx)(u.Z, {
+  }, [t, n, h]), (0, i.jsx)(u.Z, {
     headerText: f.intl.string(f.t["mwJJ+f"]),
     descriptionText: ((e, t) => {
       let n = e > 0,
@@ -43,7 +43,7 @@ function g(e) {
       }) : i ? f.intl.formatToPlainString(f.t["D+V4jI"], {
         n: t
       }) : null
-    })(n.length, g.length),
+    })(n.length, h.length),
     infoRows: (e => {
       let {
         channelId: t,
@@ -51,72 +51,72 @@ function g(e) {
         ignoredUserIds: s
       } = e, a = o.Z.getChannel(t), d = n.length > 0, c = s.length > 0, u = [{
         icon: (0, i.jsx)("div", {
-          className: h.icon,
+          className: g.icon,
           children: (0, i.jsx)(r.owK, {})
         }),
         text: f.intl.string(f.t.RIMw54),
-        className: h.row
+        className: g.row
       }, {
         icon: (0, i.jsx)("div", {
-          className: h.icon,
+          className: g.icon,
           children: (0, i.jsx)(r.d3s, {})
         }),
         text: f.intl.string(f.t.bejNWN),
-        className: h.row
+        className: g.row
       }];
       if (d && c) {
         let e = [...n, ...s],
           o = e.slice(0, 2);
         u.unshift({
           icon: (0, i.jsx)("div", {
-            className: h.icon,
+            className: g.icon,
             children: (0, i.jsx)(l.Z, {
               recipients: o,
               size: r.EFr.SIZE_32
             })
           }),
           text: (0, _.a)(o, e.length, null == a ? true : a.guild_id, t),
-          className: h.row
+          className: g.row
         })
       } else {
         let e = d ? [...n].slice(0, 2) : [...s].slice(0, 2),
           r = d ? n.length : s.length;
         u.unshift({
           icon: (0, i.jsx)("div", {
-            className: h.icon,
+            className: g.icon,
             children: (0, _.r)(e, null == a ? true : a.guild_id)
           }),
           text: (0, _.a)(e, r, null == a ? true : a.guild_id, t),
-          className: h.row
+          className: g.row
         })
       }
       return u
     })({
       channelId: t,
       blockedUserIds: n,
-      ignoredUserIds: g
+      ignoredUserIds: h
     }),
     onDismissAndStay: () => {
-      E(), (0, c.O)(t), d.default.track(x.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      N(), (0, c.O)(t), d.default.track(x.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: m.q.CLICK_TO_STAY,
         channel_id: t,
         warning_medium: m.WR.MODAL,
         blocked_user_ids: n,
-        ignored_user_ids: g
+        ignored_user_ids: h
       })
     },
     onDismissAndLeave: () => {
-      E(), (0, c.O)(t), a.Z.closePrivateChannel(t, true, true), d.default.track(x.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      N(), (0, c.O)(t), a.Z.closePrivateChannel(t, true, true), d.default.track(x.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: m.q.CLICK_TO_LEAVE,
         channel_id: t,
         warning_medium: m.WR.MODAL,
         blocked_user_ids: n,
-        ignored_user_ids: g
+        ignored_user_ids: h
       })
     },
     leaveButtonText: f.intl.string(f.t["Hi1/aQ"]),
     stayButtonText: f.intl.string(f.t.SW3lpH),
-    transitionState: N,
-    onClose: E
+    transitionState: E,
+    onClose: N
   })
 }

@@ -45,7 +45,7 @@ function g(e) {
         className: y.contentHeaderLeft,
         children: [a.tq && (0, r.jsx)(p, {
           icon: s.yFM,
-          onClick: () => d.Z.setState({
+          onClick: () => f.Z.setState({
             showNavigationMobile: true
           }),
           label: b.intl.string(b.t["13/7kX"])
@@ -67,7 +67,7 @@ let O = Chunk473749.memo(function(e) {
   let {
     onClose: o,
     setting: i
-  } = e, c = null != (n = null == i ? true : i.useTitle()) ? n : "", s = null == i || null == (t = i.useBadge) ? true : t.call(i), u = d.Z.useField("showNavigationMobile");
+  } = e, c = null != (n = null == i ? true : i.useTitle()) ? n : "", s = null == i || null == (t = i.useBadge) ? true : t.call(i), u = f.Z.useField("showNavigationMobile");
   return (0, r.jsxs)("div", {
     className: l()(y.content, {
       [y.mobile]: a.tq,
@@ -79,7 +79,7 @@ let O = Chunk473749.memo(function(e) {
       onClose: o
     }), (0, r.jsx)("div", {
       className: y.contentBody,
-      children: null != i && (0, r.jsx)(f.Z, {
+      children: null != i && (0, r.jsx)(d.Z, {
         node: i
       })
     })]

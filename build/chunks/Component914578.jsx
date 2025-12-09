@@ -33,7 +33,7 @@ function p(e) {
       }), (0, r.jsx)(a.sNh, {
         id: "acknowledgements",
         label: b.intl.string(b.t["0nUKy3"]),
-        action: () => (0, c.Z)(f.EYA.ACKNOWLEDGEMENTS)
+        action: () => (0, c.Z)(d.EYA.ACKNOWLEDGEMENTS)
       }), (0, r.jsx)(a.sNh, {
         id: "support",
         label: b.intl.string(b.t["Yl/Riu"]),

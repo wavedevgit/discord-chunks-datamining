@@ -28,8 +28,8 @@ function C(e) {
     userId: t,
     transitionState: C,
     onClose: k
-  } = e, O = r.useRef(false), v = (0, o.e7)([c.Z], () => c.Z.isBlocked(t)), A = (0, o.e7)([d.Z], () => d.Z.getChannel(n));
-  if ((0, u.zq)(() => {
+  } = e, O = r.useRef(false), v = (0, o.e7)([d.Z], () => d.Z.isBlocked(t)), A = (0, o.e7)([u.Z], () => u.Z.getChannel(n));
+  if ((0, c.zq)(() => {
       O.current || (0, m.nC)(t)
     }), null == _.default.getUser(t)) return null;
   let w = [{
@@ -41,16 +41,16 @@ function C(e) {
         className: h.icon,
         children: (0, i.jsx)(a.aNP, {})
       }),
-      text: p.intl.string(p.t["+4O9nX"]),
+      text: E.intl.string(E.t["+4O9nX"]),
       className: h.row
     }],
-    I = v ? p.intl.string(p.t.QnTzrp) : p.intl.string(p.t.QsWbfY);
+    I = v ? E.intl.string(E.t.QnTzrp) : E.intl.string(E.t.QsWbfY);
   return (0, i.jsx)(x.Z, {
-    headerText: p.intl.string(p.t["1/gpFh"]),
+    headerText: E.intl.string(E.t["1/gpFh"]),
     descriptionText: I,
     infoRows: w,
     onDismissAndStay: () => {
-      O.current = true, k(), (0, m.nC)(t), f.default.track(E.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      O.current = true, k(), (0, m.nC)(t), f.default.track(p.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: g.q.CLICK_TO_STAY,
         channel_id: n,
         blocked_user_ids: v ? [t] : [],
@@ -59,7 +59,7 @@ function C(e) {
       })
     },
     onDismissAndLeave: () => {
-      O.current = true, k(), l.default.disconnect(), f.default.track(E.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      O.current = true, k(), l.default.disconnect(), f.default.track(p.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: g.q.CLICK_TO_LEAVE,
         channel_id: n,
         blocked_user_ids: v ? [t] : [],
@@ -67,8 +67,8 @@ function C(e) {
         warning_surface: g.fz.POST_JOIN_MODAL
       })
     },
-    leaveButtonText: p.intl.string(p.t["Hi1/aQ"]),
-    stayButtonText: p.intl.string(p.t["Z+/hfb"]),
+    leaveButtonText: E.intl.string(E.t["Hi1/aQ"]),
+    stayButtonText: E.intl.string(E.t["Z+/hfb"]),
     transitionState: C,
     onClose: k,
     impression: {
