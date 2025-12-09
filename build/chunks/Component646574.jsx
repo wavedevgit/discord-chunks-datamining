@@ -2,7 +2,7 @@
 /** chunk id: 646574, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,6 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk205120 = require("./205120.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
+  Chunk454399 = require("./454399.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk243778 = require("./243778.jsx"),
@@ -19,104 +20,75 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk975377 = require("./975377.js");
-let E = {
+let b = {
     tension: 750,
     mass: 2.5,
     friction: 70
   },
-  b = 20;
-
-function y(e) {
-  let {
-    tooltipText: t,
-    headingText: n,
-    textColor: i
-  } = e, a = null != n;
-  return (0, r.jsxs)("span", {
-    className: a ? true : g.tooltipContainer,
-    children: [(0, r.jsxs)("span", {
-      className: g.tooltipContainer,
-      children: [(0, r.jsx)(u.SrA, {
-        size: "md",
-        color: "currentColor",
-        className: g.nitroWheel
-      }), a ? (0, r.jsx)(u.Heading, {
-        color: null != i ? i : "text-default",
-        variant: "heading-sm/semibold",
-        children: n
-      }) : null]
-    }), (0, r.jsx)(u.Text, {
-      variant: a ? "text-xs/normal" : "text-sm/medium",
-      color: null != i ? i : "text-default",
-      children: t
-    })]
-  })
-}
+  y = 20;
 
 function O(e) {
-  return e ? h.intl.string(h.t["5cRA/b"]) : h.intl.string(h.t.buV4av)
-}
-
-function v(e) {
   let {
     checked: t,
     onClick: n,
     id: a = "burst-reaction-toggle-button"
-  } = e, v = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), S = p.default.getCurrentUser(), I = null == S || (0, _.I5)(S) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [T, A] = (0, f.US)(I), [C, N] = i.useState(false), [P, R] = (0, u.q_F)(() => ({})), D = (0, s.animated)(u.Pt5);
+  } = e, O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), v = _.default.getCurrentUser(), S = null == v || (0, m.I5)(v) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [I, T] = (0, p.US)(S), [A, C] = i.useState(false), [N, P] = (0, d.q_F)(() => ({})), R = (0, s.animated)(d.Pt5);
 
-  function w() {
-    R({
+  function D() {
+    P({
       from: {
         rotate: t ? "360deg" : "0deg"
       },
       to: {
         rotate: t ? "0deg" : "360deg"
       },
-      config: E
-    }), null == n || n(), N(false)
+      config: b
+    }), null == n || n(), C(false)
   }
   i.useEffect(() => {
-    let e = T === c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP;
-    e && (A(m.L.DISMISS), setTimeout(() => N(e), 200))
-  }, [T, A]);
-  let x = C ? h.intl.string(h.t["Osi/uy"]) : O(t),
-    L = C ? h.intl.string(h.t.ORK94p) : true;
-  return (0, r.jsxs)(u.jSM, {
+    let e = I === c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP;
+    e && (T(h.L.DISMISS), setTimeout(() => C(e), 200))
+  }, [I, T]);
+  let w = A ? g.intl.string(g.t["Osi/uy"]) : t ? g.intl.string(g.t["5cRA/b"]) : g.intl.string(g.t.buV4av),
+    x = A ? g.intl.string(g.t.ORK94p) : true;
+  return (0, r.jsx)(u.i, {
     position: "top",
-    text: (0, r.jsx)(y, {
-      textColor: "always-white",
-      tooltipText: x,
-      headingText: L
+    title: x,
+    body: w,
+    asset: (0, r.jsx)(d.SrA, {
+      size: "md",
+      color: "currentColor"
     }),
-    color: u.aML.Colors.BRAND,
-    forceOpen: C,
-    "aria-label": x,
-    tooltipClassName: g.tooltip,
-    children: [(0, r.jsx)("input", {
-      className: g.visuallyHidden,
-      checked: t,
-      onChange: w,
-      id: a,
-      type: "checkbox"
-    }), (0, r.jsxs)("label", {
-      htmlFor: a,
-      className: o()(g.label, {
-        [g.labelChecked]: t
-      }),
-      children: [(0, r.jsx)(D, {
-        style: v ? true : P,
-        size: "custom",
-        width: b,
-        height: b,
-        color: t ? "white" : "currentColor",
-        className: g.icon
-      }), (0, r.jsx)("span", {
-        children: (0, r.jsx)(u.Text, {
-          className: g.visuallyHidden,
-          variant: "text-sm/semibold",
-          children: h.intl.string(h.t.buV4av)
-        })
+    assetSize: 20,
+    forceOpen: A,
+    children: (0, r.jsxs)("div", {
+      "aria-label": w,
+      children: [(0, r.jsx)("input", {
+        className: E.visuallyHidden,
+        checked: t,
+        onChange: D,
+        id: a,
+        type: "checkbox"
+      }), (0, r.jsxs)("label", {
+        htmlFor: a,
+        className: o()(E.label, {
+          [E.labelChecked]: t
+        }),
+        children: [(0, r.jsx)(R, {
+          style: O ? true : N,
+          size: "custom",
+          width: y,
+          height: y,
+          color: t ? "white" : "currentColor",
+          className: E.icon
+        }), (0, r.jsx)("span", {
+          children: (0, r.jsx)(d.Text, {
+            className: E.visuallyHidden,
+            variant: "text-sm/semibold",
+            children: g.intl.string(g.t.buV4av)
+          })
+        })]
       })]
-    })]
+    })
   })
 }

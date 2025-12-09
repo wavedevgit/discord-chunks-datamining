@@ -59,21 +59,21 @@ function h(e) {
     emojiName: y,
     isRequiredField: E = true,
     shouldUpdateBothEmojiFields: S = false,
-    setEmojiId: I,
-    setEmojiName: w
-  } = e, C = (0, g.Z)({
+    setEmojiId: w,
+    setEmojiName: C
+  } = e, I = (0, g.Z)({
     emojiId: b,
     emojiName: y
   }), N = (0, r.e7)([m.ZP], () => null != l ? m.ZP.getDefaultChannel(l) : null), O = i.useRef(null), {
     isHoveringOrFocusing: k
   } = (0, u.Z)(O), P = () => {
-    w(true), I(true)
+    C(true), w(true)
   }, D = e => {
     e.stopPropagation(), P()
   }, Z = i.useMemo(() => {
     let e = null != b && "" !== b,
       t = null != y && "" !== y,
-      l = null != C && "" !== C,
+      l = null != I && "" !== I,
       n = t && !Number.isNaN(parseInt(y)) && !l && !e;
     return {
       hasEmojiId: e,
@@ -81,7 +81,7 @@ function h(e) {
       hasEmojiDisplayName: l,
       isDeletedCustomEmoji: n
     }
-  }, [b, y, C]), T = !Z.isDeletedCustomEmoji && Z.hasEmojiDisplayName;
+  }, [b, y, I]), T = !Z.isDeletedCustomEmoji && Z.hasEmojiDisplayName;
   return (0, n.jsx)("div", {
     className: t,
     children: (0, n.jsx)(a.gNt, {
@@ -105,7 +105,7 @@ function h(e) {
                 emoji: l,
                 willClose: n
               } = e, i = (null == l ? true : l.id) == null;
-              P(), i ? w(null == l ? true : l.optionallyDiverseSequence) : (S && w(null == l ? true : l.name), I(null == l ? true : l.id)), n && t()
+              P(), i ? C(null == l ? true : l.optionallyDiverseSequence) : (S && C(null == l ? true : l.name), w(null == l ? true : l.id)), n && t()
             },
             guildId: l,
             channel: N
@@ -129,7 +129,7 @@ function h(e) {
               variant: "text-md/normal",
               lineClamp: 1,
               color: T ? "text-default" : "text-muted",
-              children: T ? ":".concat(C, ":") : p.intl.string(p.t.QTK0TJ)
+              children: T ? ":".concat(I, ":") : p.intl.string(p.t.QTK0TJ)
             }), T && k && (0, n.jsx)(o.Z, x(v({}, e), {
               onClick: D
             }))]
