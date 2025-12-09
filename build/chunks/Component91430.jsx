@@ -41,7 +41,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk140465 = require("./140465.js"),
   Chunk160913 = require("./160913.js"),
   Chunk331972 = require("./331972.js"),
-  Chunk903904 = require("./903904.jsx"),
+  Chunk146761 = require("./146761.jsx"),
   Chunk757861 = require("./757861.js"),
   Chunk385251 = require("./385251.jsx"),
   Chunk987997 = require("./987997.jsx"),
@@ -225,7 +225,7 @@ function en(e) {
 
 function er() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    t = null != module && module.isPremiumWithPremiumGroup();
+    t = null != module && module.isPremiumGroupMember();
   return (0, Chunk54381.jsxs)("div", {
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
@@ -248,7 +248,7 @@ function er() {
           children: Chunk388032.intl.string(Chunk388032.t.xCRgr1)
         })]
       })
-    }), exports && (0, Chunk54381.jsx)(Chunk903904.ZP, {
+    }), exports && (0, Chunk54381.jsx)(Chunk146761.d, {
       currentUser: module
     })]
   })
@@ -423,7 +423,7 @@ function es(e) {
   }), D = (0, H.x)(), L = null == s ? true : s.invalid, U = (0, f.e7)([N.default], () => {
     var e;
     return null == (e = N.default.getCurrentUser()) ? true : e.hasFreePremium()
-  }), G = u()(a.currentPeriodEnd), Z = null != a.paymentSourceId, B = null != (t = null == w ? true : w.total) ? t : 0, F = !Z && B > 0 && (7 >= G.diff(u()(), "days") || a.status === W.O0b.PAST_DUE) && !U && !a.isPurchasedExternally, Y = L && a.status === W.O0b.PAST_DUE && !U && !a.isPurchasedExternally, K = (0, j.U)(), X = !U && K, J = (null == a ? true : a.status) === W.O0b.PAST_DUE, en = J ? u()().diff(u()(a.currentPeriodStart), "days") : 0, er = null != y && y.isPremiumWithPremiumGroup(), [ea] = (0, x.Ox)({
+  }), G = u()(a.currentPeriodEnd), Z = null != a.paymentSourceId, B = null != (t = null == w ? true : w.total) ? t : 0, F = !Z && B > 0 && (7 >= G.diff(u()(), "days") || a.status === W.O0b.PAST_DUE) && !U && !a.isPurchasedExternally, Y = L && a.status === W.O0b.PAST_DUE && !U && !a.isPurchasedExternally, K = (0, j.U)(), X = !U && K, J = (null == a ? true : a.status) === W.O0b.PAST_DUE, en = J ? u()().diff(u()(a.currentPeriodStart), "days") : 0, er = null != y && y.isPremiumGroupPrimary(), [ea] = (0, x.Ox)({
     subscriptionId: a.id,
     preventFetch: !(X || J)
   });
@@ -439,8 +439,8 @@ function es(e) {
       daysPastDue: en,
       subscription: a,
       openInvoiceId: ea.id
-    }) : null, er && (0, r.jsx)(k.ZP, {
-      currentUser: y
+    }) : null, er && (0, r.jsx)(k.L, {
+      subscription: a
     }), n, D && (0, r.jsx)(m.Wn, {
       messageType: m.QYI.INFO,
       action: (0, r.jsx)(m.P3F, {

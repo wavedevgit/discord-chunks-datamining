@@ -19,7 +19,7 @@ var Chunk512722 = require("./512722.js"),
 let u = 10;
 async function d() {
   Chunk570140.Z.dispatch({
-    type: "PREMIUM_GROUP_MEMBERSHIP_FETCH"
+    type: "PREMIUM_GROUP_MEMBERSHIP_FETCH_START"
   });
   try {
     let e = (await Chunk544891.tn.get({
@@ -78,7 +78,7 @@ async function p(e, t) {
 }
 async function _(e) {
   o.Z.dispatch({
-    type: "PREMIUM_GROUP_MEMBERS_FETCH"
+    type: "PREMIUM_GROUP_MEMBERS_FETCH_START"
   });
   try {
     let t = (await a.tn.get({

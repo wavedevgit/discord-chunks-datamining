@@ -187,6 +187,12 @@ class O extends Chunk81825.Z {
   hasUniqueUsername() {
     return "0" === this.discriminator
   }
+  isPremiumGroupMember() {
+    return this.isPremiumWithPremiumGroup() && this.premiumGroupRole === Chunk813820.bF.MEMBER
+  }
+  isPremiumGroupPrimary() {
+    return this.isPremiumWithPremiumGroup() && this.premiumGroupRole === Chunk813820.bF.PRIMARY
+  }
   get isProvisional() {
     return this.hasFlag(Chunk981631.xW$.PROVISIONAL_ACCOUNT)
   }
