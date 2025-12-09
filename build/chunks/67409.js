@@ -1,14 +1,14 @@
-/** Chunk was on 75393 **/
-/** chunk id: 67409, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 5410 **/
+/** chunk id: 67409, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  S: () => r
+  S: () => l
 });
 var Chunk979554 = require("./979554.js");
-let r = e => {
-  var t, n, r;
+let l = e => {
+  var n, t, l;
   let {
     product: i,
-    selectedVariantIndex: l
+    selectedVariantIndex: a
   } = e;
-  return i.type === a.Z.VARIANTS_GROUP && null != l && null != (r = null == (n = i.variants) || null == (t = n[l]) ? true : t.skuId) ? r : i.skuId
+  return i.type === r.Z.VARIANTS_GROUP && null != a && null != (l = null == (t = i.variants) || null == (n = t[a]) ? true : n.skuId) ? l : i.skuId
 }

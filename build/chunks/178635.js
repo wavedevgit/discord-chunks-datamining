@@ -2,15 +2,14 @@
 /** chunk id: 178635, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => v,
-  Z: () => D
+  R: () => O,
+  Z: () => R
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   Chunk433517 = require("./433517.js"),
   Chunk147913 = require("./147913.js"),
   Chunk536442 = require("./536442.js"),
   Chunk810788 = require("./810788.js"),
-  Chunk945577 = require("./945577.js"),
   Chunk28964 = require("./28964.js"),
   Chunk759209 = require("./759209.js"),
   Chunk695346 = require("./695346.js"),
@@ -19,7 +18,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk102824 = require("./102824.js"),
   Chunk531578 = require("./531578.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +27,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,31 +51,31 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = 200,
-  O = {
+let b = 200,
+  y = {
     chance: .2,
     cooldown: 864e5
   },
-  v = {
-    [Chunk531578.nw.VOICE]: b(g({}, O), {
+  O = {
+    [Chunk531578.nw.VOICE]: E(h({}, y), {
       group: Chunk531578.FB.AV,
       hotspot: Chunk536442.v6.VOICE_CALL_FEEDBACK,
       storageKey: "lastVoiceFeedback",
       feedbackType: Chunk531578.nw.VOICE,
-      eligibilityChecks: [N]
+      eligibilityChecks: [C]
     }),
-    [Chunk531578.nw.STREAM]: b(g({}, O), {
+    [Chunk531578.nw.STREAM]: E(h({}, y), {
       group: Chunk531578.FB.AV,
       hotspot: Chunk536442.v6.REPORT_PROBLEM_POST_STREAM,
       storageKey: "lastStreamFeedback",
       feedbackType: Chunk531578.nw.STREAM
     }),
-    [Chunk531578.nw.VIDEO_BACKGROUND]: b(g({}, O), {
+    [Chunk531578.nw.VIDEO_BACKGROUND]: E(h({}, y), {
       group: Chunk531578.FB.AV,
       hotspot: Chunk536442.v6.VIDEO_BACKGROUND_FEEDBACK,
       storageKey: "lastVideoBackgroundFeedback",
@@ -106,19 +105,19 @@ let y = 200,
       storageKey: "blockUser",
       feedbackType: Chunk531578.nw.BLOCK_USER
     },
-    [Chunk531578.nw.VOICE_FILTER]: b(g({}, O), {
+    [Chunk531578.nw.VOICE_FILTER]: E(h({}, y), {
       group: Chunk531578.FB.AV,
       hotspot: Chunk536442.v6.VOICE_FILTER_FEEDBACK,
       storageKey: "lastVoiceFilterFeedback",
       feedbackType: Chunk531578.nw.VOICE_FILTER,
-      eligibilityChecks: [N]
+      eligibilityChecks: [C]
     }),
-    [Chunk531578.nw.SEARCH_RESULTS]: b(g({}, O), {
+    [Chunk531578.nw.SEARCH_RESULTS]: E(h({}, y), {
       group: Chunk531578.FB.SEARCH,
       hotspot: Chunk536442.v6.SEARCH_RESULTS_FEEDBACK,
       storageKey: "searchResultsFeedback",
       feedbackType: Chunk531578.nw.SEARCH_RESULTS,
-      eligibilityChecks: [P]
+      eligibilityChecks: [N]
     }),
     [Chunk531578.nw.AGE_VERIFICATION]: {
       cooldown: 0,
@@ -130,92 +129,88 @@ let y = 200,
     }
   };
 
-function S(e) {
+function v(e) {
   var t, n;
   if (__OVERLAY__) returnfalse;
   let {
     overrideEligibility: r
-  } = (0, _.j)({
+  } = (0, p.j)({
     location: "FeedbackManager"
   });
   if (r) returntrue;
-  let i = null != (t = p.Z.getFeedbackConfig(e)) ? t : v[e],
-    a = [T, I, C],
+  let i = null != (t = f.Z.getFeedbackConfig(e)) ? t : O[e],
+    a = [I, S, A],
     o = null != (n = i.eligibilityChecks) ? n : [];
   return a.every(e => e(i)) && o.every(e => e(i))
 }
 
-function I(e) {
+function S(e) {
   var t;
-  let n = null == (t = d.A2.getSetting()[e.feedbackType]) ? true : t.optOutExpiryTime,
+  let n = null == (t = u.A2.getSetting()[e.feedbackType]) ? true : t.optOutExpiryTime,
     r = null != n && !Number.isNaN(n) && Date.now() < n,
     i = !s.Z.hasHotspot(e.hotspot);
-  return i && !r && d.A2.updateSetting(t => b(g({}, t), {
-    [e.feedbackType]: b(g({}, t[e.feedbackType]), {
-      optOutExpiryTime: m.uf
+  return i && !r && u.A2.updateSetting(t => E(h({}, t), {
+    [e.feedbackType]: E(h({}, t[e.feedbackType]), {
+      optOutExpiryTime: _.uf
     })
   })), !r && !i
 }
 
-function T(e) {
+function I(e) {
   return Math.random() < e.chance
 }
 
-function A(e, t) {
+function T(e, t) {
   var n, a, o;
-  let s, l = null == (n = d.A2.getSetting()[t.feedbackType]) ? true : n.lastImpressionTime;
-  return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (s = null != (a = i.K.get(t.storageKey)) ? a : true) || Number.isNaN(s) || d.A2.updateSetting(e => b(g({}, e), {
-    [t.feedbackType]: b(g({}, e[t.feedbackType]), {
+  let s, l = null == (n = u.A2.getSetting()[t.feedbackType]) ? true : n.lastImpressionTime;
+  return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (s = null != (a = i.K.get(t.storageKey)) ? a : true) || Number.isNaN(s) || u.A2.updateSetting(e => E(h({}, e), {
+    [t.feedbackType]: E(h({}, e[t.feedbackType]), {
       lastImpressionTime: s
     })
   }))), (null != (o = (0, r.max)([l, s])) ? o : 0) + e.cooldown < Date.now()
 }
 
-function C(e) {
-  for (let t of Object.values(v).filter(t => {
+function A(e) {
+  for (let t of Object.values(O).filter(t => {
       let {
         group: n
       } = t;
       return n === e.group
     }))
-    if (!A(e, t)) returnfalse;
+    if (!T(e, t)) returnfalse;
   returntrue
 }
 
+function C(e) {
+  return !d.Z.getWasEverRtcConnected() || d.Z.getWasEverMultiParticipant()
+}
+
 function N(e) {
-  return !f.Z.getWasEverRtcConnected() || f.Z.getWasEverMultiParticipant()
+  return !!(0, c.j)({
+    location: "FeedbackManager"
+  }) && (0, l.rY)({
+    location: "FeedbackManager"
+  })
 }
 
 function P(e) {
-  if (!(0, u.j)({
-      location: "FeedbackManager"
-    })) returnfalse;
-  let t = (0, c.rY)({
-    location: "FeedbackManager"
-  });
-  return (0, l.wn)({
-    location: "FeedbackManager"
-  }) || t
-}
-
-function R(e) {
-  d.A2.updateSetting(t => b(g({}, t), {
-    [e]: b(g({}, t[e]), {
+  u.A2.updateSetting(t => E(h({}, t), {
+    [e]: E(h({}, t[e]), {
       lastImpressionTime: Date.now()
     })
   }))
 }
-class D extends Chunk147913.Z {
+class R extends Chunk147913.Z {
   possiblyShowFeedbackModal(e, t, n) {
-    if (!S(e) || null != this.feedbackTypeToShow && m.b5[this.feedbackTypeToShow] < m.b5[e]) {
+    if (!v(e) || null != this.feedbackTypeToShow && _.b5[this.feedbackTypeToShow] < _.b5[e]) {
       null == n || n();
       return
     }
     this.feedbackTypeToShow = e, this.showFeedbackModalDebounced(t, n)
   }
   constructor(...e) {
-    super(...e), h(this, "feedbackTypeToShow", null), h(this, "showFeedbackModalDebounced", (0, r.debounce)((e, t) => {
-      null != this.feedbackTypeToShow ? (R(this.feedbackTypeToShow), this.feedbackTypeToShow = null, e()) : null == t || t()
-    }, y))
+    super(...e), m(this, "feedbackTypeToShow", null), m(this, "showFeedbackModalDebounced", (0, r.debounce)((e, t) => {
+      null != this.feedbackTypeToShow ? (P(this.feedbackTypeToShow), this.feedbackTypeToShow = null, e()) : null == t || t()
+    }, b))
   }
 }

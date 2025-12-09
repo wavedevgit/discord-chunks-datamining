@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 43779, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -77,10 +77,10 @@ function T(e) {
     })(Object(P)).forEach(function(e) {
       Object.defineProperty(T, e, Object.getOwnPropertyDescriptor(P, e))
     }), T)
-  }), K = (null == (n = w.userStatus) ? true : n.completedAt) != null, q = (null == (i = w.userStatus) ? true : i.claimedAt) != null, Q = (0, f.xN)(w.config), Y = (0, f.LM)(w.config), {
+  }), q = (null == (n = w.userStatus) ? true : n.completedAt) != null, K = (null == (i = w.userStatus) ? true : i.claimedAt) != null, Q = (0, f.xN)(w.config), Y = (0, f.LM)(w.config), {
     completedRatio: X,
     completedRatioDisplay: J
-  } = (0, h.I)(w), $ = (0, p.Bd)(w, L, M), ee = r.useMemo(() => q && Q ? S.intl.format(S.t["8Op4c4"], {
+  } = (0, h.I)(w), $ = (0, p.Bd)(w, L, M), ee = r.useMemo(() => K && Q ? S.intl.format(S.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(N, {
       questId: w.id,
       children: [(0, a.jsx)(m.Z, {
@@ -89,7 +89,7 @@ function T(e) {
         customSize: 14
       }), Y]
     }, w.id)
-  }) : q ? (0, a.jsx)(N, {
+  }) : K ? (0, a.jsx)(N, {
     questId: w.id,
     children: U
   }) : Q ? S.intl.format(S.t.ro1sze, {
@@ -106,7 +106,7 @@ function T(e) {
       questId: w.id,
       children: B
     }, w.id)
-  }), [U, q, B, w.id, Y, Q]), et = r.useMemo(() => {
+  }), [U, K, B, w.id, Y, Q]), et = r.useMemo(() => {
     if (null != $) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -128,11 +128,11 @@ function T(e) {
         height: 80,
         children: (0, a.jsxs)("div", {
           className: E.assetWrapper,
-          children: [!q && K && (0, a.jsx)("div", {
+          children: [!K && q && (0, a.jsx)("div", {
             className: E.completionAnimation
           }), F ? (0, a.jsxs)("div", {
             className: E.progressWrapper,
-            children: [K && (0, a.jsx)(c.Fmz, {
+            children: [q && (0, a.jsx)(c.Fmz, {
               importData: O,
               className: E.confetti,
               loop: false,

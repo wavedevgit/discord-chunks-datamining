@@ -1,7 +1,6 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 86111 **/
 /** chunk id: 963458, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  productVariantsOuterContainer: "productVariantsOuterContainer__2c397",
   productVariantsContainer: "productVariantsContainer__2c397",
   productVariant: "productVariant__2c397",
   productVariantCheckmark: "productVariantCheckmark__2c397",

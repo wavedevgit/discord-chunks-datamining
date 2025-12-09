@@ -75,10 +75,10 @@ let P = e => {
       return n
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-    }), n), [Z, w] = l.useState(false), D = (0, f.sp)(), H = null != (t = null == D ? true : D.sessionId) ? t : "";
+    }), n), [Z, w] = l.useState(false), H = (0, f.sp)(), D = null != (t = null == H ? true : H.sessionId) ? t : "";
     l.useEffect(() => {
       (0, h.n)({
-        sessionId: H,
+        sessionId: D,
         checkpoint: h.a.SHOP_MOUNTED,
         tab: b,
         unpublishedCategoriesShown: B,
@@ -96,20 +96,20 @@ let P = e => {
       includeBundles: true,
       logPerf: true
     }, {
-      sessionId: H,
+      sessionId: D,
       tab: b
     }), V = l.useCallback(() => {
       U()
     }, [U]);
     return (l.useEffect(() => {
       null != F || M || 0 === W.length || (0, h.n)({
-        sessionId: H,
+        sessionId: D,
         checkpoint: h.a.SHOP_RENDERED,
         tab: b,
         unpublishedCategoriesShown: B,
         cacheDisabled: T
       })
-    }, [F, M, W.length, B, T, H, b]), null != F) ? (0, r.jsx)(_.Z, {
+    }, [F, M, W.length, B, T, D, b]), null != F) ? (0, r.jsx)(_.Z, {
       onRetry: V,
       errorOrigin: _.i.SHOP_PAGE,
       errorMessage: F.message
@@ -119,11 +119,11 @@ let P = e => {
         isLoading: M,
         handleTransition: c,
         tab: b
-      }), (0, r.jsx)(O.Z, {
+      }), (0, r.jsx)(S.Z, {
         isLoading: M,
         handleTransition: c,
         categories: []
-      }), (0, r.jsx)(S.Z, {
+      }), (0, r.jsx)(O.Z, {
         isLoading: M,
         title: b === L.AW.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
         numVisibleItems: u,
@@ -144,7 +144,7 @@ let P = e => {
             }, n);
             break;
           case o.z.FEATURED:
-            l = (0, r.jsx)(O.Z, {
+            l = (0, r.jsx)(S.Z, {
               isLoading: M,
               handleTransition: c,
               featuredBlockRecord: e
@@ -152,7 +152,7 @@ let P = e => {
             break;
           case o.z.FEED:
             let f = e.sortedSkuIds;
-            l = (0, r.jsx)(S.Z, {
+            l = (0, r.jsx)(O.Z, {
               title: b === L.AW.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
               isLoading: M || g,
               numVisibleItems: u,

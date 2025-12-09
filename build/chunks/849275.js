@@ -32,7 +32,7 @@ function _(e) {
   }, [t]), E = r.useMemo(() => {
     var e;
     return null != (e = null == t ? true : t[s.m.POPULAR]) ? e : []
-  }, [t]), O = v.length > 0 && b, [S, x] = r.useState(O ? s.m.RECOMMENDED : s.m.POPULAR), y = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), j = r.useMemo(() => (0, d.wO)(y), [y]), k = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), T = (0, m.Z)(), I = (0, g.a)(), [L, B] = r.useState([]), N = r.useCallback(() => {
+  }, [t]), S = v.length > 0 && b, [O, x] = r.useState(S ? s.m.RECOMMENDED : s.m.POPULAR), y = (0, o.e7)([c.Z], () => c.Z.productsWithVariantsAsGroup), j = r.useMemo(() => (0, d.wO)(y), [y]), k = (0, o.e7)([u.Z], () => u.Z.getUserDiscounts()), T = (0, m.Z)(), I = (0, g.a)(), [L, B] = r.useState([]), N = r.useCallback(() => {
     x(s.m.RANDOM), B(i().shuffle(j))
   }, [j]);
   r.useEffect(() => {
@@ -40,19 +40,19 @@ function _(e) {
   }, [j]);
   let A = r.useMemo(() => {
     let e = [];
-    if (S === s.m.RECENT) e = j;
-    else if (S === s.m.PRICE_LOW_TO_HIGH) e = (0, d.hC)([...j], n, _);
-    else if (S === s.m.RECOMMENDED) {
+    if (O === s.m.RECENT) e = j;
+    else if (O === s.m.PRICE_LOW_TO_HIGH) e = (0, d.hC)([...j], n, _);
+    else if (O === s.m.RECOMMENDED) {
       let t = T(v);
       e = l ? (0, d.Qf)(t, k) : t
-    } else if (S === s.m.POPULAR) {
+    } else if (O === s.m.POPULAR) {
       let t = T(E);
       e = l ? (0, d.Qf)(t, k) : t
-    } else S === s.m.RANDOM && (e = L);
+    } else O === s.m.RANDOM && (e = L);
     return _ ? (0, p.cf)(I(e)) : I(e)
-  }, [S, _, I, n, j, T, v, l, k, E, L]);
+  }, [O, _, I, n, j, T, v, l, k, E, L]);
   return {
-    sortType: S,
+    sortType: O,
     setSortType: x,
     sortedItems: (0, f.l)(A),
     sortOptions: r.useMemo(() => {
@@ -66,12 +66,12 @@ function _(e) {
         value: s.m.PRICE_LOW_TO_HIGH,
         label: h.intl.string(h.t.RTG4yJ)
       }];
-      return O && e.unshift({
+      return S && e.unshift({
         value: s.m.RECOMMENDED,
         label: h.intl.string(h.t.JrlKlh)
       }), e
-    }, [O]),
-    showRecommendationOption: O,
+    }, [S]),
+    showRecommendationOption: S,
     shuffleProducts: N
   }
 }

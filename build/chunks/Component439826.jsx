@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 439826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -109,10 +109,10 @@ function A(e) {
   } = e, F = (0, j.PB)(_), G = (0, m.ZP)(), V = ((0, c.wj)(G) ? w.BRd.DARK : w.BRd.LIGHT) === w.BRd.DARK, H = (0, b.tP)(_), W = (null == (t = _.userStatus) ? true : t.claimedAt) != null, z = (0, b.B6)(_.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), K = (null == (n = _.userStatus) ? true : n.enrolledAt) != null, q = (null == (i = _.userStatus) ? true : i.completedAt) != null, {
+  }), q = (null == (n = _.userStatus) ? true : n.enrolledAt) != null, K = (null == (i = _.userStatus) ? true : i.completedAt) != null, {
     onAssetLoadComplete: Q
   } = r.useContext(O.k), Y = V ? "text-muted" : "always-white", X = r.useCallback(async () => {
-    F && ((0, v.zi)(_) || K ? (0, E.openVideoQuestModal)({
+    F && ((0, v.zi)(_) || q ? (0, E.openVideoQuestModal)({
       quest: _,
       questContent: f.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: B,
@@ -132,7 +132,7 @@ function A(e) {
       sourceQuestContent: B,
       sourceQuestContentCTA: x.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })))
-  }, [F, _, K, B]);
+  }, [F, _, q, B]);
   return (0, a.jsxs)("div", {
     className: k.container,
     children: [(0, a.jsx)("div", {
@@ -169,7 +169,7 @@ function A(e) {
               children: I.intl.string(I.t.SKNnqq)
             })
           }), F && (0, a.jsx)(o.u, {
-            text: q ? I.intl.string(I.t.YsCuyF) : K ? I.intl.string(I.t["74KqrR"]) : (0, v.zi)(_) ? I.intl.string(I.t.I6JG46) : I.intl.string(I.t.umdNin),
+            text: K ? I.intl.string(I.t.YsCuyF) : q ? I.intl.string(I.t["74KqrR"]) : (0, v.zi)(_) ? I.intl.string(I.t.I6JG46) : I.intl.string(I.t.umdNin),
             asContainer: true,
             tag: "span",
             children: (0, a.jsx)(d.P3F, {

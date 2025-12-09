@@ -27,15 +27,15 @@ let m = e => {
   null != _ && (C = null == (t = c.Z.getCategoryByStoreListingId(null == _ ? true : _.categoryStoreListingId)) ? true : t.skuId);
   let E = null != (n = null != C ? C : null == h ? true : h.skuId) ? n : "",
     {
-      handleCardVisibilityChange: O
+      handleCardVisibilityChange: S
     } = (0, u.E)(E, "home", "marketing featured block"),
-    S = (0, d.YG)(h, _),
+    O = (0, d.YG)(h, _),
     x = l.useRef(null),
     y = null == _ ? true : _.bodyText,
     j = (0, a.sp)();
   return (0, r.jsx)(i.$, {
     innerRef: x,
-    onChange: O,
+    onChange: S,
     threshold: 0,
     children: (0, r.jsxs)(s.P3F, {
       className: p.featuredBlock,
@@ -57,8 +57,8 @@ let m = e => {
           })
         }
         return e
-      }({}, null != S && {
-        backgroundImage: "url(".concat(S, ")")
+      }({}, null != O && {
+        backgroundImage: "url(".concat(O, ")")
       }),
       onClick: () => {
         v({

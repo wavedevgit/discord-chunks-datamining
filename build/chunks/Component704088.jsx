@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 704088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => S
@@ -152,17 +152,17 @@ let C = e => {
       isSupportedPrivateBrowsingPerkPlatform: H,
       setGetWarpInstallationStatus: W,
       perkAvailableToUser: z,
-      setPerkAvailableToUser: K
-    } = (0, Chunk663042.o)(R), q = Chunk473749.useCallback(async () => (L(Chunk5900.Ij.INITIALIZING), exports(setTimeout(() => {
+      setPerkAvailableToUser: q
+    } = (0, Chunk663042.o)(R), K = Chunk473749.useCallback(async () => (L(Chunk5900.Ij.INITIALIZING), exports(setTimeout(() => {
       L(Chunk5900.Ij.CONNECTED)
     }, 1e3)), true), [L, exports]);
     Chunk473749.useEffect(() => {
-      M(q)
-    }, [q, M]);
+      M(K)
+    }, [K, M]);
     let Q = Chunk473749.useCallback(async () => Chunk5900._n.INSTALLING, []);
     Chunk473749.useEffect(() => {
-      K(k)
-    }, [k, K]), Chunk473749.useEffect(() => {
+      q(k)
+    }, [k, q]), Chunk473749.useEffect(() => {
       W(Q)
     }, [W, Q]);
     let Y = Chunk473749.useCallback(async () => (clearTimeout(module), L(Chunk5900.Ij.DISCONNECTED), true), [module, L]),

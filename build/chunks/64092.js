@@ -1,6 +1,5 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 86111 **/
 /** chunk id: 64092, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   container: "container__4d61a",
   number: "number__4d61a",

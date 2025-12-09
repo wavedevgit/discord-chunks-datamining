@@ -2,7 +2,7 @@
 /** chunk id: 165017, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => p
+  H: () => f
 });
 var Chunk498607 = require("./498607.js"),
   i = require.n(Chunk498607),
@@ -16,26 +16,11 @@ var Chunk498607 = require("./498607.js"),
 
 function f(e) {
   let {
-    isSearchDesktopXDMExperimentEnabled: t,
-    crossDMSearchSettingUnsetValue: n,
-    isCrossDMSearchEnabledSetting: r
-  } = e;
-  return t ? null != r ? r : n : !!t
-}
-
-function p(e) {
-  let {
     guildId: t,
     channelId: n
-  } = e, r = (0, u.xy)({
+  } = e, r = (0, u.U)({
     location: "useDesktopSearchContext"
-  }), p = f({
-    isSearchDesktopXDMExperimentEnabled: (0, u.UX)({
-      location: "useDesktopSearchContext"
-    }),
-    crossDMSearchSettingUnsetValue: r,
-    isCrossDMSearchEnabledSetting: o.rR.useSetting()
-  });
+  }), f = o.rR.useSetting(), p = r && f;
   return (0, a.e7)([l.Z, s.Z, c.Z], () => {
     let e = l.Z.getGuild(t),
       r = s.Z.getChannel(n);

@@ -2,17 +2,13 @@
 /** chunk id: 945577, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Gc: () => u,
-  UX: () => s,
-  ad: () => l,
-  wn: () => d,
-  xy: () => c
+  U: () => s,
+  a: () => l
 });
 var Chunk818083 = require("./818083.js"),
   Chunk154579 = require("./154579.js");
 let a = {
     isXDMSearchEnabled: false,
-    isGlobalSettingDefaultEnabled: false,
     inExperiment: false
   },
   o = (0, Chunk818083.B)({
@@ -25,23 +21,13 @@ let a = {
       label: "Control group for xDM search on desktop",
       config: {
         isXDMSearchEnabled: false,
-        isGlobalSettingDefaultEnabled: false,
         inExperiment: true
       }
     }, {
       id: 1,
-      label: "Enables xDM search with xDM setting as default on",
-      config: {
-        isXDMSearchEnabled: true,
-        isGlobalSettingDefaultEnabled: true,
-        inExperiment: true
-      }
-    }, {
-      id: 2,
       label: "Enables xDM search with xDM setting as default off",
       config: {
         isXDMSearchEnabled: true,
-        isGlobalSettingDefaultEnabled: false,
         inExperiment: true
       }
     }]
@@ -74,56 +60,6 @@ function l(e) {
     autoTrackExposure: n
   }), {
     isXDMSearchEnabled: a
-  } = o.getCurrentConfig({
-    location: t
-  }, {
-    autoTrackExposure: n,
-    disable: r
-  });
-  return a
-}
-
-function c(e) {
-  let {
-    location: t,
-    autoTrackExposure: n = true
-  } = e, {
-    isGlobalSettingDefaultEnabled: r
-  } = o.useExperiment({
-    location: t
-  }, {
-    autoTrackExposure: n
-  });
-  return r
-}
-
-function u(e) {
-  let {
-    location: t,
-    autoTrackExposure: n = true
-  } = e, r = (0, i.nd)({
-    location: t,
-    autoTrackExposure: n
-  }), {
-    inExperiment: a
-  } = o.useExperiment({
-    location: t
-  }, {
-    autoTrackExposure: n,
-    disable: r
-  });
-  return a
-}
-
-function d(e) {
-  let {
-    location: t,
-    autoTrackExposure: n = true
-  } = e, r = (0, i.ro)({
-    location: t,
-    autoTrackExposure: n
-  }), {
-    inExperiment: a
   } = o.getCurrentConfig({
     location: t
   }, {

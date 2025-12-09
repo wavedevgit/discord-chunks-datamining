@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 572444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -153,14 +153,14 @@ function C() {
       vadKrispActivationThreshold: true
     })
   });
-  let K = [];
-  return U && K.push({
+  let q = [];
+  return U && q.push({
     label: "Krisp",
     value: "KRISP"
-  }), M && K.push({
+  }), M && q.push({
     label: "Standard",
     value: "STANDARD"
-  }), K.push({
+  }), q.push({
     label: "Disabled",
     value: "NONE"
   }), (0, Chunk54381.jsx)(Chunk481060.zJl, {
@@ -180,7 +180,7 @@ function C() {
         onChange: e => {
           u.Z.setNoiseCancellation("KRISP" === e), u.Z.setNoiseSuppression("STANDARD" === e)
         },
-        options: K,
+        options: q,
         popoutLayerContext: Chunk246992.O$
       }), "KRISP" === G && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk481060.iRW, {

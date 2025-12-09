@@ -1,7 +1,7 @@
-/** Chunk was on 75393 **/
-/** chunk id: 680942, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 5410 **/
+/** chunk id: 680942, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,48 +18,48 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
-let b = e => {
+let m = e => {
   let {
-    product: t,
-    primary: n,
-    selectedVariantIndex: b,
-    returnRef: v,
-    onSuccess: j,
-    tooltipDelay: _
+    product: n,
+    primary: t,
+    selectedVariantIndex: m,
+    returnRef: j,
+    onSuccess: y,
+    tooltipDelay: O
   } = e, {
-    analyticsLocations: y
-  } = (0, c.ZP)(), C = r.useRef(null), S = (0, m.sp)(), E = (0, p.Z)();
-  return (0, a.jsx)(s.u, {
-    text: g.intl.string(g.t["JCFN/y"]),
-    delay: _,
-    children: (0, a.jsx)(o.hU, {
-      "aria-label": g.intl.string(g.t["JCFN/y"]),
-      buttonRef: C,
-      variant: n ? "primary" : "secondary",
-      icon: o.OgN,
+    analyticsLocations: x
+  } = (0, c.ZP)(), P = l.useRef(null), C = (0, p.sp)(), S = (0, f.Z)();
+  return (0, r.jsx)(o.u, {
+    text: h.intl.string(h.t["JCFN/y"]),
+    delay: O,
+    children: (0, r.jsx)(s.hU, {
+      "aria-label": h.intl.string(h.t["JCFN/y"]),
+      buttonRef: P,
+      variant: t ? "primary" : "secondary",
+      icon: s.OgN,
       size: "md",
       onClick: e => {
-        e.stopPropagation(), u.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == S ? true : S.sessionId,
-          sku_id: t.skuId,
-          page_section: null == S ? true : S.pageSection,
-          page_category: null == S ? true : S.pageCategory,
-          tile_type: i.Z[t.type],
-          tile_position: String(null == S ? true : S.tilePosition),
+        e.stopPropagation(), d.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          collectibles_shop_session_id: null == C ? true : C.sessionId,
+          sku_id: n.skuId,
+          page_section: null == C ? true : C.pageSection,
+          page_category: null == C ? true : C.pageCategory,
+          tile_type: i.Z[n.type],
+          tile_position: String(null == C ? true : C.tilePosition),
           cta_name: "gift button",
-          page_type: E || "home"
-        }), (0, d.Z)({
-          skuId: (0, h.S)({
-            product: t,
-            selectedVariantIndex: b
+          page_type: S || "home"
+        }), (0, u.Z)({
+          skuId: (0, v.S)({
+            product: n,
+            selectedVariantIndex: m
           }),
           isGift: true,
-          giftingOrigin: f.Wt.SHOP_PAGE,
-          analyticsLocations: y,
-          returnRef: v,
-          variantsReturnStyle: l.v.VARIANTS_GROUP,
-          onClose: null != j ? e => {
-            e && j()
+          giftingOrigin: g.Wt.SHOP_PAGE,
+          analyticsLocations: x,
+          returnRef: j,
+          variantsReturnStyle: a.v.VARIANTS_GROUP,
+          onClose: null != y ? e => {
+            e && y()
           } : true
         })
       }

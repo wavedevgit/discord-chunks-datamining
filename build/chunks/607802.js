@@ -91,7 +91,7 @@ function I(e) {
 }
 
 function T(e) {
-  let t = (0, g.ad)({
+  let t = (0, g.a)({
     location: "getSearchHistoryStateId"
   });
   if (e.type === y.aib.DMS && t) {

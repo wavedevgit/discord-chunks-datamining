@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 304083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Q
@@ -250,7 +250,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
   })
 });
 
-function K(e) {
+function q(e) {
   var t;
   let {
     quest: n,
@@ -267,14 +267,14 @@ function K(e) {
     onGameSheetClosed: j
   } = e, _ = (null == (t = n.userStatus) ? true : t.completedAt) != null, C = i.percentComplete > 0, O = (0, y.z)(n), [T, N, B] = (0, y.me)(n, i), V = r.useRef(null), H = r.useRef(null), W = (0, y._s)({
     quest: n
-  }), z = (0, E.q8)(n), K = (0, y.Jf)(n), q = r.useCallback(() => {
+  }), z = (0, E.q8)(n), q = (0, y.Jf)(n), K = r.useCallback(() => {
     (0, P.openVideoQuestModal)({
       quest: n,
       questContent: b.jn.QUEST_BAR_V2,
       sourceQuestContent: b.jn.QUEST_BAR_V2,
       sourceQuestContentCTA: f.jZ.QUEST_BAR_VIDEO_QUEST_PREVIEW
     })
-  }, [n]), Q = null != K ? K.percentComplete : i.percentComplete;
+  }, [n]), Q = null != q ? q.percentComplete : i.percentComplete;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.animated.div, {
       className: l()(F.postEnrollmentBackground, F.postEnrollmentBackgroundCollapsed),
@@ -328,7 +328,7 @@ function K(e) {
         children: [z && (0, a.jsx)(G, {
           isExpanded: u,
           quest: n,
-          onClick: q,
+          onClick: K,
           reducedMotion: m
         }), (0, a.jsx)(w.r, {
           quest: n,
@@ -354,7 +354,7 @@ function K(e) {
     })]
   })
 }
-async function q(e, t, n, a) {
+async function K(e, t, n, a) {
   let r = (0, E.q8)(e);
   return r && (0, j.R)(M.dr.QUESTS_BAR) ? void await (0, P.enrollAndStartVideoQuestWithErrorHandling)(e, {
     questContent: t,
@@ -398,7 +398,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
     launchInGameActivity: E
   } = (0, y.zB)(_), T = (0, O.Rt)(_), N = r.useCallback(async () => {
     let e = T ? f.jZ.START_QUEST : f.jZ.ACCEPT_QUEST;
-    await q(_, b.jn.QUEST_BAR_V2, e, b.jn.QUEST_BAR_V2), T && E()
+    await K(_, b.jn.QUEST_BAR_V2, e, b.jn.QUEST_BAR_V2), T && E()
   }, [_, E, T]), P = (null == (n = _.userStatus) ? true : n.enrolledAt) != null, w = d && u;
   return (0, a.jsxs)(s.animated.div, {
     "aria-hidden": !w,
@@ -419,7 +419,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
       style: {
         opacity: 1
       },
-      children: P ? (0, a.jsx)(K, {
+      children: P ? (0, a.jsx)(q, {
         quest: _,
         taskDetails: S,
         expansionSpring: m,

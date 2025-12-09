@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 558261, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -297,7 +297,7 @@ let R = e => {
       isRental: null != f
     }), {
       analyticsLocations: W
-    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), z = (0, C.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, u), [K, q] = (0, i.Wu)([g.Z], () => [g.Z.isClaiming === t.skuId, null != g.Z.isClaiming && g.Z.isClaiming !== t.skuId]), {
+    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), z = (0, C.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, u), [q, K] = (0, i.Wu)([g.Z], () => [g.Z.isClaiming === t.skuId, null != g.Z.isClaiming && g.Z.isClaiming !== t.skuId]), {
       handleUseNow: Q,
       isApplying: Y
     } = (0, j.W)({
@@ -309,7 +309,7 @@ let R = e => {
       text: c
     });
     if (E && !p && !N) return (0, a.jsx)(A, {
-      isClaimPremiumProductDisabled: q,
+      isClaimPremiumProductDisabled: K,
       text: c
     });
     if (!w || P) return (0, a.jsx)(D, {
@@ -323,8 +323,8 @@ let R = e => {
     });
     if (E) return (0, a.jsx)(M, {
       product: t,
-      isClaimPremiumProductDisabled: q,
-      isClaiming: K,
+      isClaimPremiumProductDisabled: K,
+      isClaiming: q,
       analyticsLocations: W,
       text: c,
       onClickAnalytics: u

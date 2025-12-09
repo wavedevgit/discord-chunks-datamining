@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => W
@@ -172,7 +172,7 @@ function V() {
     V(Z(D({}, e), {
       preview: true
     }))
-  }, []), [W, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [K, q] = Chunk473749.useState(false), [Q, Y] = Chunk473749.useState(false), [X, J] = Chunk473749.useState(null), $ = (A = F.config, (0, Chunk278074.EQ)(A).with({
+  }, []), [W, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [q, K] = Chunk473749.useState(false), [Q, Y] = Chunk473749.useState(false), [X, J] = Chunk473749.useState(null), $ = (A = F.config, (0, Chunk278074.EQ)(A).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -637,7 +637,7 @@ function V() {
               children: (0, Chunk54381.jsx)(Chunk801604.Z, {
                 channelId: "123",
                 previewQuest: F,
-                isParticipatingOverride: K
+                isParticipatingOverride: q
               })
             })
           })
@@ -646,9 +646,9 @@ function V() {
         className: Chunk188764.toggleSwitch,
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Is Participating:",
-          checked: K,
+          checked: q,
           onChange: function(e) {
-            q(e)
+            K(e)
           }
         })
       }), (0, Chunk54381.jsxs)(Chunk456799.Z, {

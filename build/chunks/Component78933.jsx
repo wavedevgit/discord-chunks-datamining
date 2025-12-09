@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 78933, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eo
@@ -117,7 +117,7 @@ function eo(e) {
     eE = (0, g.p)(),
     eO = B.Sb.useSetting(),
     eT = (0, $.I)(e_),
-    eN = (0, q.g)(n),
+    eN = (0, K.g)(n),
     eP = (0, v.Z)({
       analyticsLocations: ex
     }),
@@ -154,11 +154,11 @@ function eo(e) {
     ez = r.useCallback(() => {
       eH(en.L.USER_DISMISS), n()
     }, [eH, n]),
-    eK = r.useCallback(() => {
+    eq = r.useCallback(() => {
       em && null != eu || (eP(), ez())
     }, [eP, ez, em, eu]),
-    eq = em && null != eu,
-    eQ = (0, K.K)(eu, ex, eW, n, ez),
+    eK = em && null != eu,
+    eQ = (0, q.K)(eu, ex, eW, n, ez),
     eY = (0, y.k)({
       location: "UserProfileAccountPopout"
     });
@@ -258,8 +258,8 @@ function eo(e) {
                     action: "EDIT_PROFILE",
                     label: em ? er.intl.string(er.t.Ip9nBS) : er.intl.string(er.t.s5vZlQ),
                     icon: c.vdY,
-                    onClick: eK,
-                    renderSubmenu: eq ? e => {
+                    onClick: eq,
+                    renderSubmenu: eK ? e => {
                       let {
                         closePopout: t
                       } = e;
@@ -382,7 +382,7 @@ function eo(e) {
             skuId: eh.profileEffect.skuId,
             isHovering: ej
           })]
-        }), !eq && eY ? (0, a.jsx)(Q.Z, {
+        }), !eK && eY ? (0, a.jsx)(Q.Z, {
           targetElementRef: eA,
           onClose: n
         }) : null, (0, a.jsx)(b.Z, {})]

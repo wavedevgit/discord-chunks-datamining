@@ -44,7 +44,7 @@ let N = e => {
     tab: R,
     buttonContainerClassName: Z,
     orbsSupportedOnly: w
-  } = e, D = (0, o.e7)([f.default], () => f.default.getCurrentUser()), H = h.ZP.canUseCollectibles(D), M = (0, j.B)("FeedBlock"), {
+  } = e, H = (0, o.e7)([f.default], () => f.default.getCurrentUser()), D = h.ZP.canUseCollectibles(H), M = (0, j.B)("FeedBlock"), {
     sortType: F,
     setSortType: W,
     sortedItems: U,
@@ -53,13 +53,13 @@ let N = e => {
     showRecommendationOption: G
   } = (0, x.Z)({
     sortedSkuIds: N,
-    isPremiumUser: H,
+    isPremiumUser: D,
     prioritizeUserDiscounts: P,
     orbsSupportedOnly: w
   }), K = (0, y.St)(U), Y = (0, o.e7)([g.Z], () => g.Z.useReducedMotion), q = (0, o.e7)([p.Z], () => p.Z.isFocused()), Q = !Y && q, {
     animationPhase: J,
     startAnimation: X
-  } = (0, S.y)(), $ = (0, _.sp)(), ee = null != (t = null == $ ? true : $.sessionId) ? t : "", et = l.useRef(null), en = l.useCallback(e => {
+  } = (0, O.y)(), $ = (0, _.sp)(), ee = null != (t = null == $ ? true : $.sessionId) ? t : "", et = l.useRef(null), en = l.useCallback(e => {
     X({
       isShuffling: false,
       onOutroComplete: () => W(e)
@@ -68,7 +68,7 @@ let N = e => {
       sort_type: e
     })
   }, [X, W, ee]);
-  return null == D ? null : (0, r.jsxs)("div", {
+  return null == H ? null : (0, r.jsxs)("div", {
     className: s()(B.popularPicksSection, B.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: B.blockHeader,
@@ -123,25 +123,25 @@ let N = e => {
                 page_session_id: ee
               })
             },
-            disabled: J !== S.g.MOUNTED && J !== S.g.FINISHED
+            disabled: J !== O.g.MOUNTED && J !== O.g.FINISHED
           })
         })]
       })]
     }), (0, r.jsx)("div", {
       className: B.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => (0, r.jsx)(O.Z, {}, t + 1))
+        children: [...Array(12)].map((e, t) => (0, r.jsx)(S.Z, {}, t + 1))
       }) : K.slice(0, A).map((e, t) => {
         let n, l = b.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (Q)
-          if (J === S.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
+          if (J === O.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
             className: B.shuffleOutro,
-            children: (0, r.jsx)(O.Z, {
+            children: (0, r.jsx)(S.Z, {
               skipPulseAnimation: true
             })
           }, "".concat(e.skuId, "-").concat(t));
-          else J === S.g.SORT_OUT ? n = B.sortChangedOutro : J === S.g.SHUFFLE_IN ? n = B.shuffleIntro : J === S.g.SORT_IN && (n = B.sortChangedIntro);
+          else J === O.g.SORT_OUT ? n = B.sortChangedOutro : J === O.g.SHUFFLE_IN ? n = B.shuffleIntro : J === O.g.SORT_IN && (n = B.sortChangedIntro);
         return (0, r.jsx)(_.k0, {
           newValue: {
             tilePosition: t,

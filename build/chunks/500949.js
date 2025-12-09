@@ -1,7 +1,7 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 500949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $R: () => K,
+  $R: () => q,
   A0: () => et,
   GU: () => Q,
   H8: () => X,
@@ -18,7 +18,7 @@ require.d(exports, {
   iw: () => en,
   jC: () => H,
   jQ: () => G,
-  lT: () => q,
+  lT: () => K,
   rd: () => ed,
   t4: () => ec,
   uF: () => em,
@@ -134,7 +134,7 @@ function z(e, t) {
   }, [e, n]), [n, a]
 }
 
-function K(e) {
+function q(e) {
   let t = H[e];
   return {
     name: e,
@@ -146,7 +146,7 @@ function K(e) {
   }
 }
 
-function q(e, t, n, a, r) {
+function K(e, t, n, a, r) {
   return {
     name: t,
     colors: B(U({}, e.colors), {

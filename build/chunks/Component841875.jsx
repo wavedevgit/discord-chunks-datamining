@@ -2,7 +2,7 @@
 /** chunk id: 841875, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk587635 = require("./587635.js");
 
-function O() {
+function S() {
   let {
     onToggleOrbEligible: e,
     orbEligible: t,
@@ -53,7 +53,7 @@ function O() {
         variant: "text-md/semibold",
         className: Chunk587635.filterTitle,
         children: Chunk388032.intl.string(Chunk388032.t.Qk6r1a)
-      }), Chunk215023.xg.map(e => (0, r.jsx)(S, {
+      }), Chunk215023.xg.map(e => (0, r.jsx)(O, {
         filter: e,
         trackFilterAction: u
       }, e)), Chunk335818 && (0, Chunk54381.jsx)(Chunk481060.Checkbox, {
@@ -77,7 +77,7 @@ function O() {
     })]
   })
 }
-let S = e => {
+let O = e => {
     var t;
     let {
       filter: n,

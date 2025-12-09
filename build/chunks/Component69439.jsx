@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 69439, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -99,7 +99,7 @@ function N(e) {
     isClaiming: p.Z.isClaimingReward(w.id) || p.Z.isFetchingRewardCode(w.id),
     isEnrolling: p.Z.isEnrolling(w.id),
     isQuestEnrollmentBlocked: null != p.Z.questEnrollmentBlockedUntil
-  })), W = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, z = (null == (n = w.userStatus) ? true : n.completedAt) != null, K = z && (null == (N = w.userStatus) ? true : N.claimedAt) == null, q = (0, g.iQ)(w), Q = !(0, g.zi)(w), Y = (0, f._Q)(w), X = (0, b.PB)(w), J = (0, b.HJ)(w), $ = (0, b.Vl)(w), ee = (0, f.Rf)(w), [et, en, ea] = (0, f.me)(w, ee), er = Q && Y === f.OH.ACCEPTED, ei = er && et === h.LI.SELECT, el = er && !ei && en.length > 1, es = r.useCallback(e => {
+  })), W = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, z = (null == (n = w.userStatus) ? true : n.completedAt) != null, q = z && (null == (N = w.userStatus) ? true : N.claimedAt) == null, K = (0, g.iQ)(w), Q = !(0, g.zi)(w), Y = (0, f._Q)(w), X = (0, b.PB)(w), J = (0, b.HJ)(w), $ = (0, b.Vl)(w), ee = (0, f.Rf)(w), [et, en, ea] = (0, f.me)(w, ee), er = Q && Y === f.OH.ACCEPTED, ei = er && et === h.LI.SELECT, el = er && !ei && en.length > 1, es = r.useCallback(e => {
     ea(e), e === y.cd.DESKTOP && k([])
   }, [ea, k]), {
     text: eo,
@@ -138,7 +138,7 @@ function N(e) {
     quest: w,
     shortText: true
   }), ex = null;
-  return (q && K ? ex = (0, a.jsx)("div", {
+  return (K && q ? ex = (0, a.jsx)("div", {
     className: S.button,
     children: (0, a.jsx)(s.zxk, {
       variant: "primary",
@@ -191,7 +191,7 @@ function N(e) {
       text: eo,
       fullWidth: true
     })
-  }) : Q ? Q && K ? ex = (0, a.jsx)("div", {
+  }) : Q ? Q && q ? ex = (0, a.jsx)("div", {
     className: S.button,
     children: (0, a.jsx)(s.zxk, {
       variant: "primary",

@@ -2,7 +2,7 @@
 /** chunk id: 400287, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,7 +10,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk454585 = require("./454585.js"),
-  Chunk945577 = require("./945577.js"),
   Chunk611004 = require("./611004.jsx"),
   Chunk315322 = require("./315322.js"),
   Chunk921801 = require("./921801.js"),
@@ -21,38 +20,34 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b() {
-  var e;
-  let t = Chunk695346.fq.useSetting(),
-    n = Chunk695346.eR.useSetting(),
-    b = Chunk695346.R$.useSetting(),
-    y = Chunk695346.cC.useSetting(),
-    O = Chunk695346.vF.useSetting(),
-    v = Chunk695346.H1.useSetting(),
-    S = Chunk695346.ev.useSetting(),
-    I = Chunk695346.x4.useSetting(),
-    T = Chunk695346.RS.useSetting(),
-    A = Chunk695346.NA.useSetting(),
-    C = Chunk695346.nc.useSetting(),
-    N = Chunk695346.HV.useSetting(),
-    P = (0, Chunk945577.xy)({
-      location: "UserSettingsTextImages"
-    }),
-    R = null != (e = Chunk695346.rR.useSetting()) ? module : P,
+function E() {
+  let e = Chunk695346.fq.useSetting(),
+    t = Chunk695346.eR.useSetting(),
+    n = Chunk695346.R$.useSetting(),
+    E = Chunk695346.cC.useSetting(),
+    b = Chunk695346.vF.useSetting(),
+    y = Chunk695346.H1.useSetting(),
+    O = Chunk695346.ev.useSetting(),
+    v = Chunk695346.x4.useSetting(),
+    S = Chunk695346.RS.useSetting(),
+    I = Chunk695346.NA.useSetting(),
+    T = Chunk695346.nc.useSetting(),
+    A = Chunk695346.HV.useSetting(),
+    C = Chunk695346.rR.useSetting(),
     {
-      analyticsLocations: D
+      analyticsLocations: N
     } = (0, Chunk906732.ZP)(Chunk100527.Z.TEXT_AND_IMAGES),
-    w = Chunk473749.useCallback(e => {
+    P = Chunk473749.useCallback(e => {
       let t = 1 === e;
-      t ? u.Z.cleanUpPrivateChannelSearchState() : u.Z.cleanUpSearchState({
-        type: g.aib.DMS
-      }), (0, d.yn)({
-        prevIsCrossDMSettingEnabled: _.rR.getSetting(),
+      t ? c.Z.cleanUpPrivateChannelSearchState() : c.Z.cleanUpSearchState({
+        type: h.aib.DMS
+      }), (0, u.yn)({
+        prevIsCrossDMSettingEnabled: p.rR.getSetting(),
         isCrossDMSettingEnabled: t,
-        location: d.Ix.USER_SETTINGS
-      }), _.rR.updateSetting(t)
+        location: u.Ix.USER_SETTINGS
+      }), p.rR.updateSetting(t)
     }, []),
-    x = () => (0, Chunk54381.jsx)(Chunk481060.FXm, {
+    R = () => (0, Chunk54381.jsx)(Chunk481060.FXm, {
       label: Chunk388032.intl.string(Chunk388032.t.QgwmVz),
       description: Chunk388032.intl.string(Chunk388032.t.TYnRkS),
       options: [{
@@ -65,8 +60,8 @@ function b() {
         name: Chunk388032.intl.string(Chunk388032.t.Pe1RbL),
         value: Chunk981631.A2N.ALWAYS
       }],
-      onChange: e => _.cC.updateSetting(e),
-      value: y
+      onChange: e => p.cC.updateSetting(e),
+      value: E
     });
   return (0, Chunk54381.jsx)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["/VQax8"]),
@@ -80,14 +75,14 @@ function b() {
           children: [(0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_INLINE_MEDIA_LINKS,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: T,
+              checked: S,
               onChange: Chunk695346.RS.updateSetting,
               label: Chunk388032.intl.string(Chunk388032.t.U47N1p)
             })
           }), (0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_INLINE_MEDIA_UPLOADS,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: I,
+              checked: v,
               description: Chunk388032.intl.formatToPlainString(Chunk388032.t.qjjvqO, {
                 maxSize: 10
               }),
@@ -97,7 +92,7 @@ function b() {
           }), (0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_INLINE_MEDIA_IMAGE_DESCRIPTIONS,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: v,
+              checked: y,
               description: Chunk388032.intl.string(Chunk388032.t.T0rbtM),
               onChange: Chunk695346.H1.updateSetting,
               label: Chunk388032.intl.string(Chunk388032.t["w8j+yW"])
@@ -111,7 +106,7 @@ function b() {
           children: (0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_EMBEDS_LINK_PREVIEWS,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: A,
+              checked: I,
               onChange: Chunk695346.NA.updateSetting,
               label: Chunk388032.intl.string(Chunk388032.t.xX0ZTA)
             })
@@ -124,14 +119,14 @@ function b() {
           children: [(0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_EMOJI_REACTIONS,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: C,
+              checked: T,
               onChange: Chunk695346.nc.updateSetting,
               label: Chunk388032.intl.string(Chunk388032.t.Iv24sm)
             })
           }), (0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_EMOJI_EMOTICONS,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: S,
+              checked: O,
               description: Chunk454585.Z.parse(Chunk388032.intl.string(Chunk388032.t["20dvuQ"])),
               onChange: Chunk695346.ev.updateSetting,
               label: Chunk388032.intl.string(Chunk388032.t["79qal8"])
@@ -145,16 +140,16 @@ function b() {
           children: (0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_STICKERS_AUTOCOMPLETE,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: exports,
+              checked: module,
               description: Chunk388032.intl.string(Chunk388032.t["/eVrj8"]),
               onChange: e => {
-                p.default.track(g.rMx.STICKERS_IN_AUTOCOMPLETE_TOGGLED, {
+                f.default.track(h.rMx.STICKERS_IN_AUTOCOMPLETE_TOGGLED, {
                   enabled: e,
                   location: {
-                    section: g.jXE.SETTINGS_TEXT_AND_IMAGES
+                    section: h.jXE.SETTINGS_TEXT_AND_IMAGES
                   },
-                  location_stack: D
-                }), _.fq.updateSetting(e)
+                  location_stack: N
+                }), p.fq.updateSetting(e)
               },
               label: Chunk388032.intl.string(Chunk388032.t["29xPVZ"])
             })
@@ -167,15 +162,15 @@ function b() {
           children: (0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_SOUNDMOJI_AUTOCOMPLETE,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: require,
+              checked: exports,
               description: Chunk388032.intl.string(Chunk388032.t.hrSIhN),
               onChange: e => {
-                p.default.track(g.rMx.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
+                f.default.track(h.rMx.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
                   checked: e,
                   location: {
-                    section: g.jXE.SETTINGS_TEXT_AND_IMAGES
+                    section: h.jXE.SETTINGS_TEXT_AND_IMAGES
                   }
-                }), _.eR.updateSetting(e)
+                }), p.eR.updateSetting(e)
               },
               label: Chunk388032.intl.string(Chunk388032.t["CtYr+U"])
             })
@@ -188,24 +183,24 @@ function b() {
           children: [(0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_TEXT_BOX_PREVIEW,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: b,
+              checked: require,
               onChange: e => {
-                p.default.track(g.rMx.PREVIEW_MARKDOWN_TOGGLED, {
+                f.default.track(h.rMx.PREVIEW_MARKDOWN_TOGGLED, {
                   enabled: e,
                   location: {
-                    section: g.jXE.SETTINGS_TEXT_AND_IMAGES
+                    section: h.jXE.SETTINGS_TEXT_AND_IMAGES
                   }
-                }), _.R$.updateSetting(e)
+                }), p.R$.updateSetting(e)
               },
               label: Chunk388032.intl.string(Chunk388032.t.AqGrEI)
             })
           }), (0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_MENTION_SUGGESTIONS,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: N,
+              checked: A,
               description: Chunk388032.intl.string(Chunk388032.t.AaXigo),
               onChange: e => {
-                _.HV.updateSetting(e)
+                p.HV.updateSetting(e)
               },
               label: Chunk388032.intl.string(Chunk388032.t.uXQ2xT)
             })
@@ -218,7 +213,7 @@ function b() {
           children: (0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_THREADS_SPLIT_VIEW,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: O,
+              checked: b,
               onChange: Chunk695346.vF.updateSetting,
               label: Chunk388032.intl.string(Chunk388032.t.AInv5m)
             })
@@ -237,13 +232,13 @@ function b() {
               name: Chunk388032.intl.string(Chunk388032.t.MwlEGN),
               value: 1
             }],
-            onChange: w,
-            value: +!!R
+            onChange: P,
+            value: +!!C
           })
         })]
       }), (0, Chunk54381.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.CHAT_SPOILERS,
-        children: [(0, Chunk54381.jsx)(Chunk481060.izJ, {}), x()]
+        children: [(0, Chunk54381.jsx)(Chunk481060.izJ, {}), R()]
       })]
     })
   })

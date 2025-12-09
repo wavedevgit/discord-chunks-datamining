@@ -672,6 +672,9 @@ let e1 = (0, Chunk560997.Zc)("userContent", "lastReceivedChangelogId", e => null
   }, e => o.D5.create({
     value: e
   })),
-  e8 = (0, Chunk560997.Zc)("textAndImages", "isCrossDmSearchEnabled", e => null == e ? true : e.value, e => o.D5.create({
+  e8 = (0, Chunk560997.Zc)("textAndImages", "isCrossDmSearchEnabled", e => {
+    var t;
+    return null != (t = null == e ? true : e.value) && t
+  }, e => o.D5.create({
     value: e
   }))

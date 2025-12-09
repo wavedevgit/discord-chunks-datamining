@@ -52,8 +52,8 @@ function y(e) {
   l.useEffect(() => {
     Z()
   }, [w, Z]);
-  let D = (0, f.a)(),
-    H = l.useMemo(() => D(R), [D, R]);
+  let H = (0, f.a)(),
+    D = l.useMemo(() => H(R), [H, R]);
   l.useEffect(() => {
     n || (0, C.n)({
       sessionId: k,
@@ -73,9 +73,9 @@ function y(e) {
     G = n || P || null == L;
   l.useEffect(() => {
     if (G) return void z(false);
-    H.length > 0 && z(true)
-  }, [G, H.length]);
-  let K = U > 0 && !G && 0 === H.length;
+    D.length > 0 && z(true)
+  }, [G, D.length]);
+  let K = U > 0 && !G && 0 === D.length;
   l.useEffect(() => {
     let e = new ResizeObserver(() => {
       null != M.current && F(Math.floor(5 * getComputedStyle(M.current).gridTemplateColumns.split(/\s+/).length))
@@ -83,7 +83,7 @@ function y(e) {
     if (null != M.current) return e.observe(M.current), () => e.disconnect()
   }, [F]);
   let Y = l.useCallback(e => {
-    u.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    u.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == j ? true : j.sessionId,
       page_section: null == j ? true : j.pageSection,
       page_category: null == j ? true : j.pageCategory,
@@ -97,14 +97,14 @@ function y(e) {
     value: x,
     children: [(0, r.jsxs)("div", {
       className: s()({
-        [S.productsEmpty]: K
+        [O.productsEmpty]: K
       }),
       children: [K && (0, r.jsx)(E.Z, {}), (0, r.jsxs)("div", {
-        className: s()(S.products, {
-          [S.loadIn]: V
+        className: s()(O.products, {
+          [O.loadIn]: V
         }),
         ref: M,
-        children: [G && [...Array(U)].map((e, t) => (0, r.jsx)(b.Z, {}, t)), !G && H.map((e, t) => null == g.Z.getCategory(e.categorySkuId) ? null : (0, r.jsx)(d.k0, {
+        children: [G && [...Array(U)].map((e, t) => (0, r.jsx)(b.Z, {}, t)), !G && D.map((e, t) => null == g.Z.getCategory(e.categorySkuId) ? null : (0, r.jsx)(d.k0, {
           newValue: {
             tilePosition: t
           },
@@ -115,7 +115,7 @@ function y(e) {
         }, e.skuId))]
       })]
     }), A > U && (0, r.jsx)("div", {
-      className: S.paginationContainer,
+      className: O.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.DsT, {
           currentPage: N,

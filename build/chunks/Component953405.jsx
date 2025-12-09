@@ -1,4 +1,4 @@
-/** Chunk was on 2026 **/
+/** Chunk was on 86111 **/
 /** chunk id: 953405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   a: () => m
@@ -41,12 +41,12 @@ function m(e) {
     discount: i,
     product: c,
     hasSufficientOrbs: m,
-    isProductDisabled: f,
-    discountOfferAmount: p
-  } = e, v = null != p;
+    isProductDisabled: p,
+    discountOfferAmount: f
+  } = e, v = null != f;
   return 0 === t.length ? null : t[0].currency === s.pK.DISCORD_ORB ? (0, r.jsx)(d, {
     orbPrice: t[0],
-    isProductDisabled: f,
+    isProductDisabled: p,
     hasSufficientOrbs: m
   }) : (0, r.jsxs)("div", {
     className: u.priceLine,
@@ -59,13 +59,13 @@ function m(e) {
         hideStrikethroughPrice: !n || v,
         nitroIconType: "tooltip",
         nitroIconSize: "xs",
-        discountOfferAmount: p
+        discountOfferAmount: f
       }), n || v ? null : (0, r.jsx)(a.Z, {
         product: c
       })]
     }), t.length > 1 && t[1].currency === s.pK.DISCORD_ORB && (0, r.jsx)(o.F, {
       price: t[1],
-      className: f || !m ? u.disabled : true
+      className: p || !m ? u.disabled : true
     })]
   })
 }

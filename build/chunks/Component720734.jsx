@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 720734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tv,
@@ -186,7 +186,7 @@ function tx(e) {
   } = e, j = r.useRef(null), y = null != t ? t : j, C = (0, eY.NZ)({
     avatarDecoration: g,
     size: (0, I.y9)(f.EFr.SIZE_32)
-  }), S = (0, K.Z)(), {
+  }), S = (0, q.Z)(), {
     updateOpenPopoutRef: E,
     highlightBadge: O,
     setHighlightBadge: T
@@ -676,7 +676,7 @@ class tf extends Chunk473749.PureComponent {
             children: (0, a.jsx)(Y.Z, {
               userName: n,
               displayNameStyles: e,
-              effectDisplayType: this.state.hovered ? q.F.ANIMATED : q.F.STATIC,
+              effectDisplayType: this.state.hovered ? K.F.ANIMATED : K.F.STATIC,
               loop: true,
               inProfile: true
             })
@@ -848,9 +848,9 @@ function tv() {
     G = (0, Chunk541638.R)(exports, null != Chunk575175 ? Chunk575175 : true),
     V = (0, Chunk676742.Z)(Chunk473749 ? Chunk795318 : Chunk522651),
     W = Chunk5192.ZP.useName(null != Chunk575175 ? Chunk575175 : true, null, exports),
-    K = null != (e = Chunk51144.ZP.useName(exports)) ? module : "",
+    q = null != (e = Chunk51144.ZP.useName(exports)) ? module : "",
     {
-      voiceActivityStatusEnabled: q
+      voiceActivityStatusEnabled: K
     } = (0, Chunk468363.U)({
       location: "Account"
     }),
@@ -882,7 +882,7 @@ function tv() {
         a = [];
       if (null != exports ? e = exports.partyId : null != require && null != require.party && null != require.party.id && (e = require.party.id), null != module) {
         var r;
-        a = o()(Array.from(null != (r = Chunk831506.Z.getParty(module)) ? Chunk473749 : [])).map(e => eK.default.getUser(e)).filter(Chunk823379.lm).value()
+        a = o()(Array.from(null != (r = Chunk831506.Z.getParty(module)) ? Chunk473749 : [])).map(e => eq.default.getUser(e)).filter(Chunk823379.lm).value()
       }
       return Chunk54381.length > 1
     }),
@@ -1064,8 +1064,8 @@ function t_(e) {
     } = P,
     H = i || s ? f.v0G : B,
     z = (0, Z.Z)(n, i, s, o),
-    K = R ? tl.intl.string(tl.t.ARRV6m) : null;
-  t = _ ? tl.intl.string(tl.t["29gnR4"]) : null != K ? (0, a.jsxs)("div", {
+    q = R ? tl.intl.string(tl.t.ARRV6m) : null;
+  t = _ ? tl.intl.string(tl.t["29gnR4"]) : null != q ? (0, a.jsxs)("div", {
     className: ts.tooltipWithSubtext,
     children: [(0, a.jsx)(f.Text, {
       variant: "text-sm/medium",
@@ -1074,11 +1074,11 @@ function t_(e) {
     }), (0, a.jsx)(f.Text, {
       variant: "text-xs/medium",
       color: "text-feedback-warning",
-      children: K
+      children: q
     })]
   }) : z;
   let {
-    analyticsLocations: q
+    analyticsLocations: K
   } = (0, N.ZP)(T.Z.AUDIO_INPUT_BUTTON), Q = (0, eS.Hu)({
     location: T.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: true
@@ -1088,8 +1088,8 @@ function t_(e) {
   });
   r.useEffect(() => () => V(), [S, V]);
   let X = r.useCallback(e => {
-      b(e, q)
-    }, [b, q]),
+      b(e, K)
+    }, [b, K]),
     [J, $] = r.useState(false),
     ee = r.useCallback(e => {
       var t;
@@ -1133,7 +1133,7 @@ function t_(e) {
       location: "MicrophoneButton"
     });
   return ed ? (0, a.jsx)(N.Gt, {
-    value: q,
+    value: K,
     children: (0, a.jsx)(f.yRy, {
       targetElementRef: E,
       renderPopout: e => {
@@ -1141,7 +1141,7 @@ function t_(e) {
           closePopout: t
         } = e;
         return C(), (0, a.jsx)(N.Gt, {
-          value: q,
+          value: K,
           children: ed ? (0, a.jsx)(M.Z, {
             onInteraction: (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT),
             onClose: t,
@@ -1244,7 +1244,7 @@ function t_(e) {
       }
     })
   }) : (0, a.jsx)(N.Gt, {
-    value: q,
+    value: K,
     children: (0, a.jsxs)("div", {
       ref: E,
       className: l()(ts.micButtonParent, {

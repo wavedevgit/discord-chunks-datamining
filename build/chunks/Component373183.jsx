@@ -46,7 +46,7 @@ let j = Chunk473749.memo(function(e) {
     innerRef: j,
     children: (0, r.jsx)("div", {
       ref: j,
-      className: s()(E.productCardContainer, O.defaultCursor, {
+      className: s()(E.productCardContainer, S.defaultCursor, {
         [E.hovered]: k
       }),
       "aria-label": v.intl.formatToPlainString(v.t.Ez6aHE, {
@@ -57,20 +57,20 @@ let j = Chunk473749.memo(function(e) {
         children: [(0, r.jsx)("img", {
           alt: "Reward Bow",
           src: y.Z,
-          className: O.rewardImage
+          className: S.rewardImage
         }), (0, r.jsx)("div", {
           className: E.headerContainer,
           children: (0, r.jsx)(d.IGR, {
             text: v.intl.string(v.t.rykAJ9),
             disableColor: true,
-            className: O.unlockRewardBadge
+            className: S.unlockRewardBadge
           })
         }), (0, r.jsxs)("div", {
           className: E.footerContainer,
           children: [(0, r.jsxs)("div", {
-            className: O.footerInfoContainer,
+            className: S.footerInfoContainer,
             children: [(0, r.jsxs)("div", {
-              className: O.footerInfo,
+              className: S.footerInfo,
               children: [(0, r.jsx)(d.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
@@ -88,7 +88,7 @@ let j = Chunk473749.memo(function(e) {
                 },
                 position: "top",
                 children: (0, r.jsx)("span", {
-                  className: O.questionIconContainer,
+                  className: S.questionIconContainer,
                   children: (0, r.jsx)(o.idN, {
                     size: "xs"
                   })
@@ -98,14 +98,14 @@ let j = Chunk473749.memo(function(e) {
               className: E.footerInfoShrinkOnHover,
               "aria-hidden": true,
               children: (0, r.jsxs)("div", {
-                className: O.progressContainer,
+                className: S.progressContainer,
                 children: [(0, r.jsx)(f.Z, {
                   variant: f.y.BLUE,
                   progress: L.length,
                   maximum: I.length
                 }), (0, r.jsxs)("div", {
-                  className: s()(O.progressTextContainer, {
-                    [O.readyToClaimText]: T
+                  className: s()(S.progressTextContainer, {
+                    [S.readyToClaimText]: T
                   }),
                   children: [T ? (0, r.jsx)(o.kmB, {
                     size: "xs",
@@ -138,7 +138,7 @@ let j = Chunk473749.memo(function(e) {
                       overrideGraphic: {
                         type: "video",
                         src: x.Z,
-                        fallbackImageSrc: S.Z,
+                        fallbackImageSrc: O.Z,
                         loop: true,
                         loopAt: 6,
                         aspectRatio: "16/9"

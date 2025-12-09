@@ -80,7 +80,7 @@ function B(e) {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(S.Z, {
+        return (0, r.jsx)(O.Z, {
           handleTransition: o,
           onClose: t
         })
@@ -148,7 +148,7 @@ function N(e) {
     enabled: g
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
-  }), S = (0, m.Y)({
+  }), O = (0, m.Y)({
     location: "CollectiblesShopHeaderBar"
   }), N = [{
     tab: y.AW.HOME,
@@ -171,7 +171,7 @@ function N(e) {
         fromContent: o.j.ORBS_BALANCE_MENU
       })
     }, [A]),
-    R = (0, O.eN)("collectibles_shop_header_bar"),
+    R = (0, S.eN)("collectibles_shop_header_bar"),
     Z = l.useCallback(() => {
       (null == d ? true : d.id) != null && (0, C.openUserProfileModal)({
         userId: d.id,
@@ -213,12 +213,12 @@ function N(e) {
             handleTransition: n
           }, l)
         })
-      }), (g || R || S) && (0, r.jsxs)("div", {
+      }), (g || R || O) && (0, r.jsxs)("div", {
         className: I.alignedRightContent,
         children: [R && (0, r.jsx)(x.Z, {
           handleTransition: n,
           selectedTab: t
-        }), S && (0, r.jsx)(c.P3F, {
+        }), O && (0, r.jsx)(c.P3F, {
           className: I.wishlistButton,
           onClick: Z,
           "aria-label": T.intl.string(T.t["7lZ31J"]),

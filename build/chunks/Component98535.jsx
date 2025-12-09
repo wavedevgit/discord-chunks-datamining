@@ -31,9 +31,9 @@ function v(e) {
     updateAnalyticsState: c,
     refreshCategories: u
   } = e, m = E();
-  O(m);
+  S(m);
   let v = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
-    [S, x] = l.useState(true),
+    [O, x] = l.useState(true),
     [y, j] = l.useState(true),
     k = l.useMemo(() => n.filter(e => !_.y8.some(t => {
       let {
@@ -69,7 +69,7 @@ function v(e) {
   }) : (0, r.jsx)(f.Z, {
     tab: t,
     sortedCategories: k,
-    initialCategoryId: S,
+    initialCategoryId: O,
     showFilterInitially: y,
     onUnmount: () => {
       x(true), j(true)
@@ -77,7 +77,7 @@ function v(e) {
   })
 }
 let E = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
-  O = e => {
+  S = e => {
     let t = (0, i.e7)([o.default], () => o.default.getCurrentUser()),
       {
         noCache: n,

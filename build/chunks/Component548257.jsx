@@ -44,8 +44,8 @@ let C = {
       bannerStyleOverrides: b,
       logoStyleOverrides: v,
       heroLogo: E,
-      heroBannerStatic: O,
-      heroBannerAnimated: S
+      heroBannerStatic: S,
+      heroBannerAnimated: O
     } = (0, g.hr)(l), x = null != (t = null == b ? true : b.responsive) && t, y = null == b ? true : b.backgroundStyle;
     return null != _ && (n || l !== C) ? (0, r.jsxs)("div", {
       ref: h,
@@ -57,9 +57,9 @@ let C = {
         style: null != y ? {
           background: y
         } : true,
-        children: null != O && (0, r.jsx)(f.Z, {
-          bannerStatic: O,
-          bannerAnimated: S,
+        children: null != S && (0, r.jsx)(f.Z, {
+          bannerStatic: S,
+          bannerAnimated: O,
           isResponsive: x
         })
       }), (0, r.jsxs)("div", {

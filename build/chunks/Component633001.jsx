@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 633001, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eD
@@ -87,7 +87,7 @@ function ee(e, t) {
 }
 let et = {
     [Chunk981631.Odu.CLICK_ZONE_DEBUG]: e => ee($({
-      type: q.Odu.CLICK_ZONE_DEBUG,
+      type: K.Odu.CLICK_ZONE_DEBUG,
       id: (0, c.Z)(),
       layoutId: e,
       anchor: {
@@ -98,11 +98,11 @@ let et = {
         width: 100,
         height: 100
       }
-    }, R.Z.getWidgetDefaultSettings(q.Odu.CLICK_ZONE_DEBUG)), {
+    }, R.Z.getWidgetDefaultSettings(K.Odu.CLICK_ZONE_DEBUG)), {
       pinned: true
     }),
     [Chunk981631.Odu.PERFORMANCE_DEBUG]: e => ee($({
-      type: q.Odu.PERFORMANCE_DEBUG,
+      type: K.Odu.PERFORMANCE_DEBUG,
       id: (0, c.Z)(),
       layoutId: e,
       anchor: {
@@ -114,7 +114,7 @@ let et = {
         width: "auto",
         height: "auto"
       }
-    }, R.Z.getWidgetDefaultSettings(q.Odu.PERFORMANCE_DEBUG)), {
+    }, R.Z.getWidgetDefaultSettings(K.Odu.PERFORMANCE_DEBUG)), {
       pinned: true
     })
   },

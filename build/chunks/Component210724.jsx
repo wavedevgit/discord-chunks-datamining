@@ -1,4 +1,4 @@
-/** Chunk was on 75393 **/
+/** Chunk was on 53950 **/
 /** chunk id: 210724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => B,
@@ -74,7 +74,7 @@ function B(e) {
   } = (0, O.qN)({
     quest: i,
     location: D.dr.QUESTS_BAR
-  }), H = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), W = (0, c.e7)([x.Z], () => x.Z.hasLayers()), z = r.useRef(null), K = r.useMemo(() => (0, C.q8)(i), [i]), q = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Q = (0, u.Z)(q), Y = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
+  }), H = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), W = (0, c.e7)([x.Z], () => x.Z.hasLayers()), z = r.useRef(null), q = r.useMemo(() => (0, C.q8)(i), [i]), K = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Q = (0, u.Z)(K), Y = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
     hasError: X,
     isLoading: J
   } = (0, S.kC)(), $ = r.useContext(R.T) || B && G && !J && !F, ee = r.useRef($), et = r.useRef(false), en = r.useRef(false), [ea, er] = r.useState(false), [ei, el] = r.useState(false), [es, eo] = r.useState(false), [ec, ed] = r.useState(true), [eu, em] = r.useState(true), ep = r.useRef(null), eh = r.useRef(null), ex = r.useRef(null), ef = (0, y.Rf)(i), eg = r.useCallback(e => {
@@ -133,13 +133,13 @@ function B(e) {
   r.useEffect(() => {
     ei && eN()
   }, [ei, eN]), r.useLayoutEffect(() => {
-    q && !Q && en.current && eb()
-  }, [eb, q, Q]), r.useLayoutEffect(() => {
-    Y || !q || Q || en.current || eg(false)
-  }, [q, Y, Q, eg]), r.useLayoutEffect(() => {
+    K && !Q && en.current && eb()
+  }, [eb, K, Q]), r.useLayoutEffect(() => {
+    Y || !K || Q || en.current || eg(false)
+  }, [K, Y, Q, eg]), r.useLayoutEffect(() => {
     $ !== ee.current && em(false), ee.current = $
   }, [$]);
-  let eP = q ? D.XZ : D.R4,
+  let eP = K ? D.XZ : D.R4,
     [{
       expansionSpring: ew
     }, eI] = (0, d.q_F)(() => ({
@@ -182,8 +182,8 @@ function B(e) {
     }
   });
   if (r.useEffect(() => {
-      K && (0, T.loadVideoQuestModal)()
-    }, [K]), r.useEffect(() => {
+      q && (0, T.loadVideoQuestModal)()
+    }, [q]), r.useEffect(() => {
       if (X) {
         var e;
         (0, f.dA)({
@@ -266,7 +266,7 @@ function B(e) {
         children: (0, a.jsx)(s.animated.div, {
           className: l()(L.contentWrapper, {
             [L.contentWrapperExpanded]: es,
-            [L.contentWrapperAccepted]: q
+            [L.contentWrapperAccepted]: K
           }),
           children: (0, a.jsx)(k.t, {
             springConfig: eP,
@@ -308,7 +308,7 @@ function B(e) {
                   children: [(0, a.jsx)(A.Z, {
                     expansionSpring: ew,
                     isExpanded: es
-                  }), !q && (0, a.jsx)(N.Z, {
+                  }), !K && (0, a.jsx)(N.Z, {
                     quest: i,
                     expansionSpring: ew,
                     useReducedMotion: H,

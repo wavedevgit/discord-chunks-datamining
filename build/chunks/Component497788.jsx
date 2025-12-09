@@ -27,8 +27,8 @@ let E = e => {
     isBlockLoading: t = false,
     heroBlock: n,
     tab: E
-  } = e, O = (0, o.sp)(), {
-    hasPromoUpsell: S
+  } = e, S = (0, o.sp)(), {
+    hasPromoUpsell: O
   } = u.Z.useConfig({
     location: "RewardHeroBlockCards"
   }), x = l.useMemo(() => a.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), y = (0, i.e7)([c.Z], () => c.Z.getPurchase(n.rewardSkuId)), {
@@ -53,7 +53,7 @@ let E = e => {
     children: T ? (0, r.jsx)(r.Fragment, {
       children: [true, true, true, true, true].map((e, t) => (0, r.jsx)(m.Z, {}, t))
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [L && !!(S || I) && (0, r.jsx)(o.k0, {
+      children: [L && !!(O || I) && (0, r.jsx)(o.k0, {
         newValue: {
           tilePosition: 0,
           pageSection: "top 4",
@@ -74,7 +74,7 @@ let E = e => {
           children: (0, r.jsx)(f.Z, {
             skuId: null == e ? true : e.skuId,
             prioritizedCurrency: E === v.AW.ORBS ? p.tA.ORBS : true,
-            onClickAnalytics: (0, p.wO)(e, E, O)
+            onClickAnalytics: (0, p.wO)(e, E, S)
           }, e.skuId)
         }, null == e ? true : e.skuId)
       })]

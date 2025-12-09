@@ -40,7 +40,7 @@ let g = {
     }, [m, e, i, f]);
     let {
       clearError: v
-    } = (0, c.a)(), E = (0, l.k6)(), O = r.useCallback(async (e, t) => {
+    } = (0, c.a)(), E = (0, l.k6)(), S = r.useCallback(async (e, t) => {
       if (v(), e === u.AW.CATALOG) f();
       else if ((0, u.RE)(e) && e !== C) {
         let t = g[e];
@@ -59,6 +59,6 @@ let g = {
     return {
       selectedTab: C,
       transitionState: _,
-      transitionToTab: O
+      transitionToTab: S
     }
   }

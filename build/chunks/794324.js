@@ -1,13 +1,13 @@
-/** Chunk was on 2026 **/
+/** Chunk was on 86111 **/
 /** chunk id: 794324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Oi: () => m,
-  UI: () => g,
+  UI: () => h,
   YG: () => d,
   _M: () => v,
   hr: () => u,
-  kc: () => f,
-  mB: () => p
+  kc: () => p,
+  mB: () => f
 });
 var Chunk473749 = require("./473749.js"),
   Chunk264181 = require("./264181.js"),
@@ -68,7 +68,7 @@ let u = e => {
       catalogBannerAnimated: null != i ? i : null == (n = e.catalogBannerAsset) ? true : n.animated
     }
   },
-  f = e => {
+  p = e => {
     let t = (0, o.zL)(s.jE.PDP_BACKGROUND),
       n = (0, a.Y)("PDPBackground");
     if (null != t) return t;
@@ -79,7 +79,7 @@ let u = e => {
       format: "jpg"
     })
   },
-  p = e => {
+  f = e => {
     let t = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER),
       n = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER_DARK),
       l = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER_LIGHT),
@@ -88,20 +88,20 @@ let u = e => {
       u = (0, o.zL)(s.jE.SHOP_BUTTON_BG_RESTING_LIGHT),
       d = (0, o.zL)(s.jE.COACHTIP_AVATAR);
     return r.useMemo(() => {
-      var r, o, s, m, f;
-      let p = [t, n, l, a, c, u, d].some(e => null != e);
+      var r, o, s, m, p;
+      let f = [t, n, l, a, c, u, d].some(e => null != e);
       if ((null == e ? true : e.type) === i.Z.COACHMARK) return {
         hasPreviewAssets: false
       };
       let v = null == e || null == (r = e.refTargetBackground) ? true : r.asset,
-        g = null == v ? true : v.resting,
-        h = null == v ? true : v.hovered;
+        h = null == v ? true : v.resting,
+        g = null == v ? true : v.hovered;
       return {
-        hasPreviewAssets: p,
-        buttonBGHoverDark: null != (o = null != n ? n : t) ? o : null == h ? true : h.dark,
-        buttonBGHoverLight: null != (s = null != l ? l : t) ? s : null == h ? true : h.light,
-        buttonBGRestingDark: null != (m = null != c ? c : a) ? m : null == g ? true : g.dark,
-        buttonBGRestingLight: null != (f = null != u ? u : a) ? f : null == g ? true : g.light,
+        hasPreviewAssets: f,
+        buttonBGHoverDark: null != (o = null != n ? n : t) ? o : null == g ? true : g.dark,
+        buttonBGHoverLight: null != (s = null != l ? l : t) ? s : null == g ? true : g.light,
+        buttonBGRestingDark: null != (m = null != c ? c : a) ? m : null == h ? true : h.dark,
+        buttonBGRestingLight: null != (p = null != u ? u : a) ? p : null == h ? true : h.light,
         coachtipAvatar: null != d ? d : null == e ? true : e.avatar
       }
     }, [t, n, l, a, c, u, d, e])
@@ -116,7 +116,7 @@ let u = e => {
       bannerAnimatedUrl: null == (n = e.bannerAsset) ? true : n.animated
     }
   },
-  g = e => (0, a.Y)("WideBanner") ? {
+  h = e => (0, a.Y)("WideBanner") ? {
     bannerURL: e.bannerURL,
     bannerAnimatedURL: e.bannerAnimatedURL
   } : {

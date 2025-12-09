@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
 function y(e) {
   let {
     category: t
-  } = e, n = (0, a.e7)([u.default], () => u.default.getCurrentUser()), l = (0, p.l)(t.products), i = (0, f.a)()(l), s = (0, O.St)(i), o = (0, d.sp)();
+  } = e, n = (0, a.e7)([u.default], () => u.default.getCurrentUser()), l = (0, p.l)(t.products), i = (0, f.a)()(l), s = (0, S.St)(i), o = (0, d.sp)();
   return null == n || 0 === s.length ? null : (0, r.jsx)("div", {
     className: x.cardsContainer,
     children: s.map((e, t) => (0, r.jsx)(d.k0, {
@@ -40,7 +40,7 @@ function y(e) {
       children: (0, r.jsx)(_.Z, {
         skuId: e.skuId,
         skipLimitedTimeCheck: true,
-        onClickAnalytics: (0, b.wO)(e, S.AW.CATALOG, o)
+        onClickAnalytics: (0, b.wO)(e, O.AW.CATALOG, o)
       }, e.skuId)
     }, e.skuId))
   })
@@ -74,32 +74,32 @@ function k(e) {
   } = e, f = (0, d.sp)(), p = (0, v.R)(), C = null != (t = null == f ? true : f.sessionId) ? t : "", {
     noCache: _,
     includeUnpublished: b
-  } = (0, E.Z)(), O = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+  } = (0, E.Z)(), S = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
       products: t
     } = e;
     return t.length > 0
   }), [n]), y = l.useRef(true);
   l.useEffect(() => {
-    if (null == u || 0 === O.length) {
+    if (null == u || 0 === S.length) {
       y.current = true;
       return
     }
     if (u === y.current) return;
-    let e = O.findIndex(e => e.skuId === u);
+    let e = S.findIndex(e => e.skuId === u);
     if (false === e) return;
-    let t = Math.floor(e / S.kN) + 1;
+    let t = Math.floor(e / O.kN) + 1;
     t !== o && a(t), y.current = u
-  }, [u, O, a, o]);
+  }, [u, S, a, o]);
   let k = l.useMemo(() => {
-    let e = (o - 1) * S.kN;
-    return O.slice(e, e + S.kN)
-  }, [O, o]);
+    let e = (o - 1) * O.kN;
+    return S.slice(e, e + O.kN)
+  }, [S, o]);
   l.useEffect(() => {
     (0, m.n)({
       sessionId: C,
       checkpoint: m.a.SHOP_MOUNTED,
-      tab: S.AW.CATALOG,
+      tab: O.AW.CATALOG,
       unpublishedCategoriesShown: b,
       cacheDisabled: _
     })
@@ -107,7 +107,7 @@ function k(e) {
     p || 0 === k.length || (0, m.n)({
       sessionId: C,
       checkpoint: m.a.SHOP_RENDERED,
-      tab: S.AW.CATALOG,
+      tab: O.AW.CATALOG,
       unpublishedCategoriesShown: b,
       cacheDisabled: _
     })
@@ -131,8 +131,8 @@ function k(e) {
       className: x.paginationContainer,
       children: (0, r.jsx)(c.DsT, {
         currentPage: o,
-        totalCount: O.length,
-        pageSize: S.kN,
+        totalCount: S.length,
+        pageSize: O.kN,
         onPageChange: a,
         disablePaginationGap: true
       })

@@ -197,7 +197,7 @@ function Y() {
     } = (0, Chunk657871.zM)("useGenerateUserSettingsSections", {
       autoTrackExposure: false
     }),
-    eo = (0, Chunk945577.UX)({
+    eo = (0, Chunk945577.U)({
       location: "useGenerateUserSettingsSections"
     }),
     es = (0, Chunk526665.gj)("useGenerateUserSettingsSections");

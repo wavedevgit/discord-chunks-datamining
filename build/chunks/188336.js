@@ -1,4 +1,4 @@
-/** Chunk was on 2026 **/
+/** Chunk was on 86111 **/
 /** chunk id: 188336, original params: e,t,n (module,exports,require) **/
 module.exports = {
   modalRoot: "modalRoot_c50f62",
@@ -44,7 +44,7 @@ module.exports = {
   priceTagContainer: "priceTagContainer_c50f62",
   headingWithItemTypePill: "headingWithItemTypePill_c50f62",
   disabledReason: "disabledReason_c50f62",
-  variantsSwitch: "variantsSwitch_c50f62",
+  variantsContainer: "variantsContainer_c50f62",
   externalProductProfilePreview: "externalProductProfilePreview_c50f62",
   wishlistButton: "wishlistButton_c50f62",
   orbIconAligned: "orbIconAligned_c50f62",

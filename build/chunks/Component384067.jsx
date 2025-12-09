@@ -50,9 +50,9 @@ let y = e => {
     {
       bannerURL: w
     } = (0, _.UI)(y),
-    D = j === b.AW.ORBS,
-    H = null != y.ctaRoute && "" !== y.ctaRoute,
-    M = true !== y.disableCta && (null != y.ctaText && "" !== y.ctaText || H),
+    H = j === b.AW.ORBS,
+    D = null != y.ctaRoute && "" !== y.ctaRoute,
+    M = true !== y.disableCta && (null != y.ctaText && "" !== y.ctaText || D),
     F = null != y.logoURL && "" !== y.logoURL,
     W = l.useCallback(() => {
       if (A(true), y.isDismissible) {
@@ -94,8 +94,8 @@ let y = e => {
     }, [y.ctaRoute, U]);
   if (null == w || N) return null;
   let z = s()(x.row, x.between, x.bannerBlockContainer, x.centeredSection, {
-      [x.extraRounded]: D,
-      [x.bannerBlockContainerClickable]: H
+      [x.extraRounded]: H,
+      [x.bannerBlockContainerClickable]: D
     }),
     G = (0, r.jsxs)(r.Fragment, {
       children: [y.isDismissible && (0, r.jsx)("div", {
@@ -105,11 +105,11 @@ let y = e => {
           onClick: e => {
             e.stopPropagation(), W()
           },
-          "aria-label": S.intl.string(S.t.WAI6xu)
+          "aria-label": O.intl.string(O.t.WAI6xu)
         })
       }), (0, r.jsx)("div", {
         className: s()(x.wideBannerBackgroundImg, {
-          [x.extraRounded]: D
+          [x.extraRounded]: H
         }),
         style: null != L ? {
           height: "".concat(L, "px")
@@ -119,7 +119,7 @@ let y = e => {
           src: w,
           alt: y.title,
           className: s()(x.wideBannerArt, {
-            [x.wideBannerArtOrbs]: D
+            [x.wideBannerArtOrbs]: H
           })
         })
       }), (0, r.jsx)("div", {
@@ -135,7 +135,7 @@ let y = e => {
             style: {
               color: null != (n = y.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: D ? x.wideBannerOrbsHeading : true,
+            className: H ? x.wideBannerOrbsHeading : true,
             variant: "heading-xl/bold",
             children: y.title
           }), (0, r.jsx)(c.Text, {
@@ -143,8 +143,8 @@ let y = e => {
               color: "var(--text-muted)"
             },
             lineClamp: 2,
-            variant: D ? "text-md/medium" : "text-sm/medium",
-            children: D ? S.intl.format(S.t.SFFP7K, {
+            variant: H ? "text-md/medium" : "text-sm/medium",
+            children: H ? O.intl.format(O.t.SFFP7K, {
               helpdeskArticle: p.Z.getArticleURL(v.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : y.body
           }), M && (0, r.jsxs)("div", {
@@ -153,9 +153,9 @@ let y = e => {
               variant: "overlay-primary",
               onClick: e => {
                 var t;
-                e.stopPropagation(), V(null != (t = y.ctaText) ? t : S.intl.string(S.t.jVcuVY))
+                e.stopPropagation(), V(null != (t = y.ctaText) ? t : O.intl.string(O.t.jVcuVY))
               },
-              text: null != (i = y.ctaText) ? i : S.intl.string(S.t.jVcuVY)
+              text: null != (i = y.ctaText) ? i : O.intl.string(O.t.jVcuVY)
             }), F && (0, r.jsx)("img", {
               src: y.logoURL,
               alt: "",
@@ -166,12 +166,12 @@ let y = e => {
       })]
     });
   return (0, r.jsx)(c.f6W, {
-    theme: D ? true : O.BR.DARK,
+    theme: H ? true : S.BR.DARK,
     children: e => (0, r.jsx)(a.$, {
       innerRef: T,
       onChange: R,
       threshold: 0,
-      children: H ? (0, r.jsx)(c.P3F, {
+      children: D ? (0, r.jsx)(c.P3F, {
         innerRef: T,
         onClick: () => V(null),
         className: s()(e, z),
