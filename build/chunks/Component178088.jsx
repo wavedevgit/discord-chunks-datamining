@@ -43,8 +43,8 @@ function Z(e) {
     spacing: R,
     dialogClassName: D
   } = e, {
-    analyticsLocations: M
-  } = (0, f.ZP)(d.Z.NOTIFICATION_CENTER), [L, k] = i.useState(false), [G, U] = [(0, s.e7)([y.Z], () => {
+    analyticsLocations: L
+  } = (0, f.ZP)(d.Z.NOTIFICATION_CENTER), [M, k] = i.useState(false), [G, U] = [(0, s.e7)([y.Z], () => {
     var e, t;
     return null != (t = null == (e = y.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
   }), i.useCallback(e => {
@@ -70,10 +70,10 @@ function Z(e) {
       setSeenTutorial: n
     }
   }(G), V = i.useCallback(() => {
-    k(false), L && (null == n || n())
-  }, [n, L]), H = i.useCallback(() => {
-    k(!L), L ? null == n || n() : null == t || t()
-  }, [n, t, L]);
+    k(false), M && (null == n || n())
+  }, [n, M]), H = i.useCallback(() => {
+    k(!M), M ? null == n || n() : null == t || t()
+  }, [n, t, M]);
   i.useEffect(() => (O.S.subscribe(I.CkL.TOGGLE_INBOX, H), () => void O.S.unsubscribe(I.CkL.TOGGLE_INBOX, H)), [H]);
   let {
     enabled: W,
@@ -95,14 +95,14 @@ function Z(e) {
       location: "ForYou"
     });
   return (0, r.jsx)(f.Gt, {
-    value: M,
+    value: L,
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
       animation: u.yRy.Animation.NONE,
       position: w,
       align: T,
       autoInvert: false,
-      shouldShow: L,
+      shouldShow: M,
       onRequestClose: V,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {

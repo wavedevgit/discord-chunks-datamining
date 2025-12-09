@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk444630 = require("./444630.js"),
   Chunk430864 = require("./430864.js");
 
-function D(e) {
+function A(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -54,7 +54,7 @@ function D(e) {
   return e
 }
 
-function A(e, n) {
+function D(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -84,7 +84,7 @@ function L(e) {
         let {
           default: e
         } = await Promise.all([t.e("8965"), t.e("14280")]).then(t.bind(t, 139035));
-        return t => (0, r.jsx)(e, A(D({}, t), {
+        return t => (0, r.jsx)(e, D(A({}, t), {
           channel: l,
           guild: n
         }))
@@ -182,7 +182,7 @@ let H = Chunk473749.memo(function() {
               let {
                 default: e
               } = await Promise.all([t.e("79695"), t.e("18320"), t.e("83331"), t.e("81070")]).then(t.bind(t, 213202));
-              return t => (0, r.jsx)(e, A(D({}, t), {
+              return t => (0, r.jsx)(e, D(A({}, t), {
                 channel: n,
                 guild: i
               }))
@@ -190,7 +190,7 @@ let H = Chunk473749.memo(function() {
               let {
                 default: e
               } = await Promise.all([t.e("79695"), t.e("18320"), t.e("44011")]).then(t.bind(t, 373651));
-              return t => (0, r.jsx)(e, A(D({}, t), {
+              return t => (0, r.jsx)(e, D(A({}, t), {
                 channel: n,
                 guild: i
               }))

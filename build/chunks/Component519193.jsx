@@ -81,7 +81,9 @@ function g(t) {
         sku_id: a,
         application_id: n,
         is_gift: false
-      }), S()
+      }), S({
+        analyticsLocations: t
+      })
     }, [S]),
     O = e.useCallback(() => {
       let {

@@ -1,12 +1,13 @@
 /** Chunk was on 26494 **/
 /** chunk id: 526746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk367907 = require("./367907.js"),
+  Chunk906732 = require("./906732.jsx"),
   Chunk524995 = require("./524995.js"),
   Chunk728345 = require("./728345.js"),
   Chunk812206 = require("./812206.js"),
@@ -16,30 +17,32 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function g(e) {
   var t;
   let {
     connection: n,
-    guildId: f,
-    location: g
-  } = e, j = (0, r.e7)([s.Z], () => null != n.application_id ? s.Z.getApplication(n.application_id) : null, [n.application_id]);
+    guildId: g,
+    location: j
+  } = e, v = (0, r.e7)([u.Z], () => null != n.application_id ? u.Z.getApplication(n.application_id) : null, [n.application_id]), {
+    analyticsLocations: x
+  } = (0, a.ZP)(j);
   i.useEffect(() => {
-    null != j || null == n.application_id || s.Z.isFetchingApplication(n.application_id) || s.Z.didFetchingApplicationFail(n.application_id) || (0, c.UM)(n.application_id).catch(() => {})
-  }, [j, n.application_id]);
-  let v = null != (t = null == j ? true : j.name) ? t : h.intl.string(h.t.cgPbaZ),
+    null != v || null == n.application_id || u.Z.isFetchingApplication(n.application_id) || u.Z.didFetchingApplicationFail(n.application_id) || (0, s.UM)(n.application_id).catch(() => {})
+  }, [v, n.application_id]);
+  let y = null != (t = null == v ? true : v.name) ? t : f.intl.string(f.t.cgPbaZ),
     {
-      hasAlreadyLinked: x,
-      canStartAuthorization: y,
-      startAuthorization: b,
-      fetched: C
-    } = (0, a.F)(j),
-    O = (0, l.jsx)(u.Z, {
-      game: j,
-      size: u.A.MEDIUM
+      hasAlreadyLinked: b,
+      canStartAuthorization: C,
+      startAuthorization: O,
+      fetched: Z
+    } = (0, c.F)(v),
+    w = (0, l.jsx)(d.Z, {
+      game: v,
+      size: d.A.MEDIUM
     }),
-    Z = i.useCallback(() => {
+    _ = i.useCallback(() => {
       var e, t, l;
-      d.default.track(p.rMx.GUILD_ONBOARDING_CONNECTION_CLICKED, (t = function(e) {
+      m.default.track(h.rMx.GUILD_ONBOARDING_CONNECTION_CLICKED, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             l = Object.keys(n);
@@ -56,10 +59,10 @@ function f(e) {
           })
         }
         return e
-      }({}, (0, o.hH)(f)), l = l = {
+      }({}, (0, o.hH)(g)), l = l = {
         connection_type: "application",
         application_id: null != (e = n.application_id) ? e : true,
-        location: g
+        location: j
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -69,15 +72,17 @@ function f(e) {
         return n
       })(Object(l)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
-      }), t)), b()
-    }, [b, f, n.application_id, g]);
-  return (0, l.jsx)(m.Z, {
-    displayName: v,
+      }), t)), O({
+        analyticsLocations: x
+      })
+    }, [O, g, n.application_id, j, x]);
+  return (0, l.jsx)(p.Z, {
+    displayName: y,
     description: n.description,
-    icon: O,
-    isLoading: !C,
-    isConnected: x,
-    canConnect: y,
-    onConnect: Z
+    icon: w,
+    isLoading: !Z,
+    isConnected: b,
+    canConnect: C,
+    onConnect: _
   })
 }

@@ -74,11 +74,12 @@ let D = Chunk473749.memo(function(e) {
         autoTrackExposure: false
       }),
       {
-        parentAnalyticsLocation: $
+        parentAnalyticsLocation: $,
+        analyticsLocations: ee
       } = (0, g.ZP)(),
-      ee = (0, x.Z)(H, "rtc-activity-panel"),
-      et = R(H, V, B),
-      en = i.useCallback(() => {
+      et = (0, x.Z)(H, "rtc-activity-panel"),
+      en = R(H, V, B),
+      er = i.useCallback(() => {
         var e;
         o()(null != V, "Received null activity"), P.default.track(Z.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
           action_type: "invite_to_game",
@@ -90,22 +91,22 @@ let D = Chunk473749.memo(function(e) {
           location: W.location
         }), (0, d.h7)(V, false)
       }, [V, W, $, U]),
-      er = i.useCallback((e, t) => () => {
+      ei = i.useCallback((e, t) => () => {
         (0, b.v)($, b.d.LEAVE_ACTIVITY), p.Z.leaveActivity({
           location: t,
           applicationId: e,
           showFeedback: true
         })
       }, [$]),
-      ei = i.useCallback(e => () => {
+      el = i.useCallback(e => () => {
         (0, b.v)($, b.d.LEAVE_ACTIVITY), O.Z.stopFrame({
           applicationId: e
         })
       }, [$]),
-      el = i.useCallback(() => {
+      eo = i.useCallback(() => {
         (0, j.Z)(C)
       }, [C]),
-      eo = i.useCallback(() => {
+      ea = i.useCallback(() => {
         let e = null != k && (0, S.vd)(k.type) ? k : null,
           t = null != e ? e.getGuildId() : w;
         (0, u.ZDy)(async () => {
@@ -149,21 +150,21 @@ let D = Chunk473749.memo(function(e) {
           }
         })
       }, [k, w, U, J]),
-      ea = i.useRef(null),
-      [es, ec] = i.useState(false);
+      es = i.useRef(null),
+      [ec, eu] = i.useState(false);
     i.useEffect(() => () => {
-      null != ea.current && clearTimeout(ea.current)
+      null != es.current && clearTimeout(es.current)
     }, []), i.useEffect(() => {
-      Q && (ec(false), null != ea.current && (clearTimeout(ea.current), ea.current = null))
+      Q && (eu(false), null != es.current && (clearTimeout(es.current), es.current = null))
     }, [Q]);
-    let eu = null == ee || null == H ? null : (0, r.jsx)(L, {
-        guildId: ee,
+    let ed = null == et || null == H ? null : (0, r.jsx)(M, {
+        guildId: et,
         applicationId: H.id
       }),
-      ed = (null != U || null == B || (0, f.R)()) && (D || E) ? (D ? (a = false, s = () => {
-        el(), (0, b.v)($, b.d.STREAM, false)
+      ef = (null != U || null == B || (0, f.R)()) && (D || E) ? (D ? (a = false, s = () => {
+        eo(), (0, b.v)($, b.d.STREAM, false)
       }, h = u.g5r, y = T.intl.string(T.t.S5anIc)) : G ? (a = false, s = () => {
-        eo(), (0, b.v)($, b.d.STREAM, true)
+        ea(), (0, b.v)($, b.d.STREAM, true)
       }, h = u.hGI, y = null != U ? T.intl.formatToPlainString(T.t.AB5gTy, {
         game: U.name
       }) : T.intl.string(T.t.FeUKeA)) : (a = true, s = null, h = u.hGI, y = null != k && (0, S.vd)(k.type) ? T.intl.string(T.t.uQn9B8) : null != w ? T.intl.string(T.t.fBXEoJ) : T.intl.string(T.t.n3feNG)), (0, r.jsx)("div", {
@@ -175,34 +176,36 @@ let D = Chunk473749.memo(function(e) {
           icon: h
         })
       })) : null,
-      ef = et && null == B ? (0, r.jsx)(N.Z, {
+      eh = en && null == B ? (0, r.jsx)(N.Z, {
         ref: z,
         tooltipText: T.intl.string(T.t["hC/Zey"]),
-        onClick: en,
+        onClick: er,
         icon: u.ejJ
       }) : null,
-      eh = null == B ? null : (0, r.jsx)(N.Z, {
+      ep = null == B ? null : (0, r.jsx)(N.Z, {
         tooltipText: T.intl.string(T.t["R/FK4A"]),
-        onClick: er(B.applicationId, B.location),
+        onClick: ei(B.applicationId, B.location),
         icon: u.PBZ
       }),
-      ep = null == F ? null : (0, r.jsx)(N.Z, {
+      eg = null == F ? null : (0, r.jsx)(N.Z, {
         tooltipText: T.intl.string(T.t["R/FK4A"]),
-        onClick: ei(F.applicationId),
+        onClick: el(F.applicationId),
         icon: u.PBZ
       }),
-      eg = null == C ? null : (0, r.jsx)(_.Z, {}),
-      em = !q || Q ? null : (0, r.jsx)(M, {
+      em = null == C ? null : (0, r.jsx)(_.Z, {}),
+      eb = !q || Q ? null : (0, r.jsx)(L, {
         runningGame: U,
         startAuthorization: () => {
-          Y() === m.r.RPC && (ec(true), null != ea.current && clearTimeout(ea.current), ea.current = setTimeout(() => {
-            ec(false)
+          Y({
+            analyticsLocations: ee
+          }) === m.r.RPC && (eu(true), null != es.current && clearTimeout(es.current), es.current = setTimeout(() => {
+            eu(false)
           }, 9e4))
         },
         connectionApp: X,
         ref: K
       }),
-      eb = !q || Q ? null : (0, r.jsx)(c.J2, {
+      e_ = !q || Q ? null : (0, r.jsx)(c.J2, {
         title: T.intl.string(T.t.ULvRFd),
         body: T.intl.string(T.t["HJJDr+"]),
         targetElementRef: K,
@@ -211,17 +214,17 @@ let D = Chunk473749.memo(function(e) {
         caretConfig: {
           align: "center"
         },
-        shouldShow: es,
+        shouldShow: ec,
         onRequestClose: () => {
-          ec(false), null != ea.current && (clearTimeout(ea.current), ea.current = null)
+          eu(false), null != es.current && (clearTimeout(es.current), es.current = null)
         }
       });
-    return null == ed && null == ef && null == eh && null == ep && null == em && null == eu ? null : (0, r.jsxs)("div", {
+    return null == ef && null == eh && null == ep && null == eg && null == eb && null == ed ? null : (0, r.jsxs)("div", {
       className: A.actions,
-      children: [null != (t = null != eu ? eu : em) ? t : ef, ed, null != (l = null != eh ? eh : ep) ? l : eg, eb]
+      children: [null != (t = null != ed ? ed : eb) ? t : eh, ef, null != (l = null != ep ? ep : eg) ? l : em, e_]
     })
   }),
-  M = Chunk473749.forwardRef(function(e, t) {
+  L = Chunk473749.forwardRef(function(e, t) {
     let {
       runningGame: n,
       startAuthorization: i,
@@ -242,7 +245,7 @@ let D = Chunk473749.memo(function(e) {
     })
   });
 
-function L(e) {
+function M(e) {
   let {
     applicationId: t,
     guildId: n

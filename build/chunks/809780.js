@@ -123,7 +123,7 @@ class W extends Chunk836560.EventEmitter {
     f.Z.clearChannel(e.channelId);
     let t = f.Z.fetchMessages({
       channelId: e.channelId,
-      limit: L.AQB,
+      limit: M.AQB,
       jump: {
         messageId: e.oldestReadMessageId,
         flash: true
@@ -184,9 +184,9 @@ class W extends Chunk836560.EventEmitter {
         newestUnreadMessageId: n
       } = e;
       d.Z.wait(() => h.ack(t, {
-        section: L.jXE.INBOX,
-        object: L.qAy.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
-        objectType: L.AnalyticsObjectTypes.ACK_AUTOMATIC
+        section: M.jXE.INBOX,
+        object: M.qAy.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
+        objectType: M.AnalyticsObjectTypes.ACK_AUTOMATIC
       }, true, true, n));
       let r = this.state.channels.find(e => e.channelId === t);
       if (null != r && this.undoStack.push(r), 1 === this.state.channels.length) return void this.deleteChannel(t);
@@ -200,9 +200,9 @@ class W extends Chunk836560.EventEmitter {
       let e = this.undoStack.pop();
       if (null == e) return;
       h.ack(e.channelId, {
-        section: L.jXE.INBOX,
-        object: L.qAy.UNDO_MARK_AS_READ,
-        objectType: L.AnalyticsObjectTypes.ACK_MANUAL
+        section: M.jXE.INBOX,
+        object: M.qAy.UNDO_MARK_AS_READ,
+        objectType: M.AnalyticsObjectTypes.ACK_MANUAL
       }, true, true, e.oldestReadMessageId);
       let t = this.state.channels.findIndex(t => t.order > e.order),
         n = [...this.state.channels];
@@ -211,7 +211,7 @@ class W extends Chunk836560.EventEmitter {
         channels: n
       })
     }, this.markGuildRead = e => {
-      d.Z.wait(() => (0, b.Z)([e], L.jXE.INBOX)), this.setState({
+      d.Z.wait(() => (0, b.Z)([e], M.jXE.INBOX)), this.setState({
         channels: this.state.channels.filter(t => t.guildId !== e)
       }), this.maybeLoadMore()
     }, this.deleteChannel = e => {
@@ -279,11 +279,11 @@ function z(e, t) {
   var n;
   let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
     i = N.Z.getMessages(e.channelId),
-    l = i.toArray().filter(t => M.default.compare(t.id, e.oldestReadMessageId) > 0 && 0 >= M.default.compare(t.id, e.newestUnreadMessageId));
+    l = i.toArray().filter(t => L.default.compare(t.id, e.oldestReadMessageId) > 0 && 0 >= L.default.compare(t.id, e.newestUnreadMessageId));
   if (l.length === e.messages.length && l.every((t, n) => e.messages[n] === t) && r) return e;
   let o = null != i.getAfter(e.oldestReadMessageId) || (null == (n = l[0]) ? true : n.id) === e.oldestUnreadMessageId,
     a = l[l.length - 1],
-    s = M.default.compare(null == a ? true : a.id, e.newestUnreadMessageId) >= 0 || l.length >= H;
+    s = L.default.compare(null == a ? true : a.id, e.newestUnreadMessageId) >= 0 || l.length >= H;
   return B(U({}, e), {
     messages: l,
     hasLoadedAnything: e.hasLoadedAnything || o || t,
@@ -337,18 +337,18 @@ function Y(e, t, n, r) {
   if (i.isPrivate()) {
     if (0 === w.ZP.getMentionCount(r)) return
   } else if (!(0, _.d)(i) && 0 === w.ZP.getMentionCount(r)) return;
-  if (!i.isPrivate() && !Z.Z.can(L.Plq.READ_MESSAGE_HISTORY, i) || (0, g.Y3)(i)) return;
+  if (!i.isPrivate() && !Z.Z.can(M.Plq.READ_MESSAGE_HISTORY, i) || (0, g.Y3)(i)) return;
   let l = w.ZP.ackMessageId(r);
   if (null == l) {
     let e = P.Z.getGuild(i.guild_id);
     if (null == e || null == e.joinedAt) return;
-    l = M.default.fromTimestamp(e.joinedAt.getTime())
+    l = L.default.fromTimestamp(e.joinedAt.getTime())
   }
   let o = w.ZP.getOldestUnreadMessageId(r),
     a = w.ZP.lastMessageId(r),
     s = w.ZP.getMentionCount(r),
     c = s > 0 || i.isPrivate();
-  if (null == a || M.default.compare(l, a) >= 0) return;
+  if (null == a || L.default.compare(l, a) >= 0) return;
   let u = {
     guildId: n,
     channelId: r,
@@ -368,7 +368,7 @@ function Y(e, t, n, r) {
       if (r.isPrivate()) return 1;
       if (w.ZP.getMentionCount(t) > 0) return w.ZP.getIsMentionLowImportance(t) ? 3 : 2;
       if (null != n) {
-        let e = M.default.extractTimestamp(n);
+        let e = L.default.extractTimestamp(n);
         if (Date.now() - e > Q) return 8;
         if (Date.now() - e > q) return 6
       }
@@ -377,8 +377,8 @@ function Y(e, t, n, r) {
         return e === k.iN.ALL_MESSAGES ? 4 : e === k.iN.NO_MESSAGES ? 7 : 5
       } {
         let n = A.ZP.getChannelMessageNotifications(e, t),
-          r = n === L.bL.NULL ? A.ZP.getMessageNotifications(e) : n;
-        return r === L.bL.ALL_MESSAGES ? 4 : r === L.bL.NO_MESSAGES ? 7 : 5
+          r = n === M.bL.NULL ? A.ZP.getMessageNotifications(e) : n;
+        return r === M.bL.ALL_MESSAGES ? 4 : r === M.bL.NO_MESSAGES ? 7 : 5
       }
     }(n, r, a),
     order: 0

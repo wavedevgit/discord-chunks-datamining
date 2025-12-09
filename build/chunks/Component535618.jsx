@@ -249,7 +249,9 @@ function U(t) {
       sku_id: e,
       application_id: n,
       is_gift: true
-    }), m()
+    }), m({
+      analyticsLocations: t
+    })
   }, [m]);
   if (!p) return (0, i.jsx)(s.IX, {
     transitionState: l,

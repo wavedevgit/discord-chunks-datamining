@@ -294,7 +294,7 @@ let D = Chunk473749.memo(function(e) {
     headerClassName: w,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, L = j.features.has(v.GuildFeatures.ANIMATED_BANNER), k = (0, f.Z)(j), G = !k && (0, y.Z)(j), U = !k && A, B = (0, _.xR)(x) && L && !g, [F, V] = i.useState(false), H = i.useRef(false), W = i.useRef(null), z = null != t ? t : W, K = i.useRef(true), Y = m.QK.getSetting();
+  } = e, M = j.features.has(v.GuildFeatures.ANIMATED_BANNER), k = (0, f.Z)(j), G = !k && (0, y.Z)(j), U = !k && A, B = (0, _.xR)(x) && M && !g, [F, V] = i.useState(false), H = i.useRef(false), W = i.useRef(null), z = null != t ? t : W, K = i.useRef(true), Y = m.QK.getSetting();
   i.useEffect(() => {
     if (B && n && !H.current && Y) return V(true), K.current = setTimeout(() => {
       V(false)
@@ -365,7 +365,7 @@ let D = Chunk473749.memo(function(e) {
           controller: l,
           guildBanner: x,
           animate: F
-        }) : null, (0, r.jsx)(M, {
+        }) : null, (0, r.jsx)(L, {
           controller: l
         })]
       }), B && q() ? (0, r.jsx)("div", {
@@ -382,7 +382,7 @@ let D = Chunk473749.memo(function(e) {
   })
 });
 
-function M(e) {
+function L(e) {
   let {
     controller: t
   } = e, {

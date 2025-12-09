@@ -1,7 +1,7 @@
 /** Chunk was on 46467 **/
 /** chunk id: 325257, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => M
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -73,7 +73,7 @@ let D = {
   }
 };
 
-function M(e, t) {
+function L(e, t) {
   (0, p.jW)(e, async () => {
     let {
       default: e
@@ -83,8 +83,8 @@ function M(e, t) {
     }))
   })
 }
-let L = Chunk473749.memo(function(e) {
-  var t, n, l, p, L;
+let M = Chunk473749.memo(function(e) {
+  var t, n, l, p, M;
   let {
     guildNode: k,
     setRef: G,
@@ -99,7 +99,7 @@ let L = Chunk473749.memo(function(e) {
     unavailable: Y = false,
     badge: q = 0,
     isMentionLowImportance: Q,
-    contextMenu: X = M,
+    contextMenu: X = L,
     draggable: J = false,
     sorting: $ = false,
     preloadOnClick: ee = true,
@@ -114,7 +114,7 @@ let L = Chunk473749.memo(function(e) {
   null == es && q > 0 ? es = null != (l = (0, N.Ne)(q, Q ? f.TVs.colors.BACKGROUND_ACCENT.css : f.TVs.colors.STATUS_DANGER.css)) ? l : true : null == es && null != et && (es = null != (p = (0, N.jt)({
     guildJoinRequestStatus: et
   })) ? p : true);
-  let ec = null != (L = e.lowerBadgeSize) ? L : {
+  let ec = null != (M = e.lowerBadgeSize) ? M : {
       width: (0, f.OVM)(q)
     },
     [{

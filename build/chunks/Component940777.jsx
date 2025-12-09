@@ -66,7 +66,7 @@ function R() {
       favoriteAdded: R,
       clearFavoriteAdded: D
     } = (0, Chunk593214.up)(),
-    [M, L] = Chunk473749.useState(false),
+    [L, M] = Chunk473749.useState(false),
     {
       favoriteServerMuted: k,
       favoriteChannels: G
@@ -119,7 +119,7 @@ function R() {
   return (0, Chunk54381.jsxs)(Chunk682662.H, {
     children: [(0, Chunk54381.jsx)(Chunk276952.Z, {
       selected: F,
-      hovered: M,
+      hovered: L,
       unread: H && !k,
       className: Chunk499951.pill
     }), (0, Chunk54381.jsx)(Chunk603274.Z, {
@@ -139,9 +139,9 @@ function R() {
               pathname: Chunk981631.Z5c.CHANNEL(Chunk981631.I_8, U),
               state: A
             },
-            selected: F || M,
-            onMouseEnter: () => L(true),
-            onMouseLeave: () => L(false),
+            selected: F || L,
+            onMouseEnter: () => M(true),
+            onMouseLeave: () => M(false),
             onMouseDown: function() {
               null != B && Chunk493683.Z.preload(B.guild_id, B.id)
             },

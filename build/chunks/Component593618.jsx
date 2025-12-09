@@ -41,9 +41,9 @@ var Chunk54381 = require("./54381.js"),
 
 function k(e, t, n) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: M.row,
+    className: L.row,
     children: [(0, r.jsx)(e, {
-      className: M.activityIcon,
+      className: L.activityIcon,
       color: "currentColor"
     }), (0, r.jsx)(f.ZP, {
       guildId: n,
@@ -139,33 +139,33 @@ function U(e) {
       v = _.filter(e => null != e && !m.includes(e.id)),
       w = (0, c.e7)([S.Z], () => S.Z.getUserAffinitiesMap(), []),
       D = i.useMemo(() => (0, I.C)(O, w, "GuildTooltip - nonBlockedUsers"), [O, w]),
-      M = i.useMemo(() => (0, I.C)(f, w, "GuildTooltip - stageSpeakers"), [f, w]),
-      L = i.useMemo(() => (0, I.C)(v, w, "GuildTooltip - streamUsers"), [v, w]);
+      L = i.useMemo(() => (0, I.C)(f, w, "GuildTooltip - stageSpeakers"), [f, w]),
+      M = i.useMemo(() => (0, I.C)(v, w, "GuildTooltip - streamUsers"), [v, w]);
     return {
       voiceUsersToShow: D,
-      stageSpeakers: M,
+      stageSpeakers: L,
       numStageListeners: p,
-      streamUsersToShow: L,
+      streamUsersToShow: M,
       embeddedActivitiesUsers: i.useMemo(() => (0, I.C)(b, w, "GuildTooltip - embeddedActivitiesUsers"), [b, w]),
       hasActivity: f.length > 0 || y.length > 0 || v.length > 0 || b.length > 0
     }
   }(t), b = k(u.gj8, l, n), _ = 0 === a.length ? null : (0, r.jsxs)("div", {
-    className: M.row,
+    className: L.row,
     children: [(0, r.jsx)(u.ewx, {
       size: "lg",
       color: "currentColor",
-      className: M.activityIcon
+      className: L.activityIcon
     }), (0, r.jsx)(f.ZP, {
       guildId: n,
       users: a,
       max: 3
     }), (0, r.jsxs)("div", {
-      className: M.stageListenerPill,
+      className: L.stageListenerPill,
       children: [(0, r.jsx)(u.VWR, {
         size: "xs",
         color: "currentColor"
       }), (0, r.jsx)(u.Text, {
-        className: M.stageListenerCount,
+        className: L.stageListenerCount,
         color: "text-default",
         variant: "text-xs/normal",
         children: p
@@ -181,8 +181,8 @@ function U(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [_, b, y, O, v ? (0, r.jsx)(G, {
       muteConfig: D,
-      className: o()(M.muteText, {
-        [M.muteTextWithActivity]: null != b || null != y
+      className: o()(L.muteText, {
+        [L.muteTextWithActivity]: null != b || null != y
       })
     }) : null]
   })
@@ -193,7 +193,7 @@ function B(e) {
     guildJoinRequestStatus: t
   } = e;
   return (0, r.jsx)(u.Text, {
-    className: M.viewAsRolesWarning,
+    className: L.viewAsRolesWarning,
     color: "text-default",
     variant: "text-xs/normal",
     children: function(e) {
@@ -221,25 +221,25 @@ function F(e) {
   }), s = (0, c.e7)([O.Z], () => O.Z.isViewingRoles(t.id)), d = (0, y.Ij)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: o()(M.row, M.rowGuildName),
+      className: o()(L.row, L.rowGuildName),
       children: [n ? (0, r.jsx)(m.Z, {
         guild: t,
-        className: M.rowIconV2
+        className: L.rowIconV2
       }) : (0, r.jsx)(g.Z, {
         guild: t,
         size: 20,
-        className: M.rowIcon
+        className: L.rowIcon
       }), (0, r.jsx)("span", {
-        className: o()(M.guildNameText, M.guildNameTextLimitedSize),
+        className: o()(L.guildNameText, L.guildNameTextLimitedSize),
         children: t.name
       })]
     }), d ? (0, r.jsx)(u.Text, {
-      className: M.invitesDisabledTooltip,
+      className: L.invitesDisabledTooltip,
       color: "text-default",
       variant: "text-sm/medium",
       children: D.intl.string(D.t["2n0/Fk"])
     }) : null, s ? (0, r.jsx)(u.Text, {
-      className: M.viewAsRolesWarning,
+      className: L.viewAsRolesWarning,
       color: "text-default",
       variant: "text-xs/normal",
       children: D.intl.string(D.t["5LwN89"])
@@ -263,8 +263,8 @@ function V(e) {
       guild: t
     }),
     "aria-label": l,
-    tooltipClassName: L.listItemTooltip,
-    tooltipContentClassName: L.listItemTooltipContent,
+    tooltipClassName: M.listItemTooltip,
+    tooltipContentClassName: M.listItemTooltipContent,
     children: e => {
       var {
         onFocus: t,

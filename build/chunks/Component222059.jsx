@@ -1,7 +1,7 @@
 /** Chunk was on 46467 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => L
+  u: () => M
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,7 +48,7 @@ let D = {
   }
 };
 
-function M(e) {
+function L(e) {
   var t, n;
   let {
     selected: o,
@@ -56,7 +56,7 @@ function M(e) {
     badge: h,
     link: g,
     showProgressBadge: _
-  } = e, [y, O] = i.useState(false), [v, j] = i.useState(false), [x, C] = i.useState(null), [E, w] = i.useState(0), M = (0, l.Ie)("home"), L = (0, f.oq)().activePanel === f.wh.APP_ICON, k = () => {
+  } = e, [y, O] = i.useState(false), [v, j] = i.useState(false), [x, C] = i.useState(null), [E, w] = i.useState(0), L = (0, l.Ie)("home"), M = (0, f.oq)().activePanel === f.wh.APP_ICON, k = () => {
     C(null), w(0), clearTimeout(x)
   }, G = p.o.useConfig({
     location: "home button"
@@ -69,7 +69,7 @@ function M(e) {
     className: R.downloadProgress,
     determineOwnVisibility: false
   }));
-  let F = o || y || L,
+  let F = o || y || M,
     V = (0, r.jsx)(s.aRk, {
       selected: true,
       lowerBadge: h > 0 ? (0, N.Ne)(h) : null,
@@ -110,7 +110,7 @@ function M(e) {
         ariaLabel: A.intl.string(A.t.YUU0RF),
         "aria-owns": "guild-list-unread-dms",
         "aria-selected": o
-      }, M), n = n = {
+      }, L), n = n = {
         to: {
           pathname: g,
           state: {
@@ -155,7 +155,7 @@ function M(e) {
   })
 }
 
-function L() {
+function M() {
   let e = (0, Chunk278464.n)(),
     t = (0, Chunk442837.e7)([Chunk941128.Z, Chunk417363.Z], () => {
       let e = (0, Chunk339149.E)(Chunk941128.Z.activeItems, Chunk417363.Z),
@@ -182,7 +182,7 @@ function L() {
     m = require + Chunk864682 + Chunk365113,
     b = Chunk460181 === Chunk864682 && Chunk864682 > 0 && require + Chunk365113 === 0,
     S = Chunk774343.Z.getHomeLink();
-  return Chunk155409 && (S = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk54381.jsx)(M, {
+  return Chunk155409 && (S = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk54381.jsx)(L, {
     selected: module,
     user: Chunk550385,
     selectedChannelId: Chunk944486.Z.getChannelId(Chunk981631.ME),

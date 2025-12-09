@@ -79,14 +79,14 @@ function E(e) {
     } = e,
     {
       placeholder: E,
-      getAriaLabel: b,
-      icon: L
+      getAriaLabel: L,
+      icon: b
     } = I[l],
     O = "small" === o,
     {
       config: _
     } = (0, f.G)(),
-    T = t.useMemo(() => {
+    P = t.useMemo(() => {
       switch (l) {
         case s.l.CURRENT_GAMES:
         case s.l.FAVORITE_GAMES:
@@ -105,8 +105,8 @@ function E(e) {
           })
       }
     }, [l, null == _ ? true : _.application_id]),
-    S = t.useCallback(() => {
-      u || null == T || ((0, v.qH)(l, T), N(function(e) {
+    T = t.useCallback(() => {
+      u || null == P || ((0, v.qH)(l, P), N(function(e) {
         for (var a = 1; a < arguments.length; a++) {
           var l = null != arguments[a] ? arguments[a] : {},
             i = Object.keys(l);
@@ -125,18 +125,18 @@ function E(e) {
         return e
       }({
         action: "WIDGET_ADDED"
-      }, T.getProfileEditAnalyticsOptions())), (0, x.L$)(h.qb.WIDGET_ADDED), null == n || n())
-    }, [u, l, T, N, n]);
-  return (null != T && null != L && (a = L(T)), null == T) ? null : (0, i.jsxs)("div", {
+      }, P.getProfileEditAnalyticsOptions())), (0, x.L$)(h.qb.WIDGET_ADDED), null == n || n())
+    }, [u, l, P, N, n]);
+  return (null != P && null != b && (a = b(P)), null == P) ? null : (0, i.jsxs)("div", {
     className: A.addButtonContainer,
     children: [(0, i.jsxs)(c.P3F, {
       className: r()(A.addButtonContent, O && A.sizeSmall, u && A.loading),
-      onClick: S,
-      "aria-label": b(T),
+      onClick: T,
+      "aria-label": L(P),
       "aria-busy": u,
       children: [(() => {
-        if (null == T) return null;
-        let e = E(T);
+        if (null == P) return null;
+        let e = E(P);
         switch (e.variant) {
           case "details":
             return (0, i.jsx)(j.i, {
@@ -169,7 +169,7 @@ function E(e) {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: (0, v.mR)(T)
+            children: (0, v.mR)(P)
           }), null != a ? (0, i.jsx)("img", {
             src: a,
             alt: "",
@@ -180,8 +180,8 @@ function E(e) {
         })]
       })]
     }), (() => {
-      if (null == T) return null;
-      let e = E(T);
+      if (null == P) return null;
+      let e = E(P);
       return "application-widget" === e.variant ? (0, i.jsx)(g.T, {
         applicationId: e.applicationId,
         size: o
