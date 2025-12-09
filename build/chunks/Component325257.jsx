@@ -183,47 +183,53 @@ let M = Chunk473749.memo(function(e) {
       onAnimationRest: function() {
         e_ || eb(false)
       }
-    }) : (0, r.jsx)(f.LYs, R(A({
-      ariaLabel: w.intl.formatToPlainString(w.t["/uzRss"], {
-        guildName: V.name,
-        mentions: q
-      }),
-      name: V.name,
-      onClick: ev,
-      onMouseEnter: function() {
-        $ || ep(true)
-      },
-      onMouseLeave: function() {
-        $ || ep(false)
-      },
-      onMouseDown: ej,
-      onContextMenu: eC,
-      onKeyDown: eE,
-      icon: (0, y.EB)(V, 2 * eP, eg && H, true),
-      selected: W || eg
-    }, ef), {
-      "aria-setsize": er,
-      "aria-posinset": ei,
-      "aria-selected": W
-    })),
+    }) : (0, r.jsx)(f.aRk, {
+      selected: W,
+      children: (0, r.jsx)("div", {
+        ref: J ? e => {
+          ed(e)
+        } : true,
+        "data-dnd-name": V.name,
+        "data-drop-hovering": e_,
+        children: (0, r.jsx)(f.LYs, R(A({
+          ariaLabel: w.intl.formatToPlainString(w.t["/uzRss"], {
+            guildName: V.name,
+            mentions: q
+          }),
+          name: V.name,
+          onClick: ev,
+          onMouseEnter: function() {
+            $ || ep(true)
+          },
+          onMouseLeave: function() {
+            $ || ep(false)
+          },
+          onMouseDown: ej,
+          onContextMenu: eC,
+          onKeyDown: eE,
+          icon: (0, y.EB)(V, 2 * eP, eg && H, true),
+          selected: W || eg
+        }, ef), {
+          "aria-setsize": er,
+          "aria-posinset": ei,
+          "aria-selected": W
+        }))
+      })
+    }),
     eZ = eu ? (0, r.jsx)(E.OG, {
       children: (0, r.jsx)(I.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
-      ref: J ? e => {
-        ed(e)
-      } : true,
-      "data-dnd-name": V.name,
       style: {
         scale: null == en ? 1 : en
       },
-      "data-drop-hovering": e_,
       className: o()(T.blobContainer, {
         [T.sorting]: $,
         [T.wobble]: e_,
         [T.selected]: e_ || W
       }),
+      "data-drop-hovering": e_,
       children: (0, r.jsx)(f.aRk, {
-        selected: true,
+        selected: W,
         upperBadge: ea,
         lowerBadge: es,
         lowerBadgeSize: ec,
