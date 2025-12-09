@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk27123 = require("./27123.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
-  Chunk43747 = require("./43747.js");
+  Chunk128077 = require("./128077.js");
 let f = (0, Chunk473749.createContext)({
     skuId: "123",
     loadId: (0, Chunk772848.Z)(),
@@ -52,7 +52,10 @@ let f = (0, Chunk473749.createContext)({
       redeemVirtualCurrency: h,
       isSubmitting: g,
       error: E
-    } = (0, d.f)(), b = (0, i.useCallback)(e => {
+    } = (0, d.f)({
+      skuId: t,
+      loadId: n
+    }), b = (0, i.useCallback)(e => {
       h(t, n, n => {
         a({
           entitlements: n,

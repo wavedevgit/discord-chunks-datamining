@@ -2,16 +2,20 @@
 /** chunk id: 711959, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => s,
-  L: () => o
-});
+  Cs: () => l,
+  GP: () => c,
+  LV: () => s
+}), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
+  Chunk197550 = require("./197550.js"),
   Chunk981631 = require("./981631.js");
-async function o(e) {
+async function s(e) {
   let {
     skuId: t,
-    paymentSourceId: n
+    paymentSourceId: n,
+    paymentGateway: s,
+    loadId: l
   } = e;
   i.Z.wait(() => {
     i.Z.dispatch({
@@ -19,37 +23,40 @@ async function o(e) {
     })
   });
   try {
-    let e = {
+    let e = {};
+    null != n && (e.payment_source_id = n), null != s && (e.payment_gateway = s);
+    let c = {
         order_line_items: [{
           sku_id: t,
           quantity: 1,
-          purchase_type: 0
+          purchase_type: a.bl.ONE_TIME
         }],
-        billing_facet: {
-          payment_source_id: n
-        }
+        billing_facet: e
       },
-      o = (await r.tn.post({
-        url: a.ANM.ORDER_CREATE,
-        body: e,
+      u = (await r.tn.post({
+        url: o.ANM.ORDER_CREATE,
+        body: c,
+        context: null != l && "" !== l ? {
+          load_id: l
+        } : true,
         rejectWithError: true
-      })).body.id;
-    await i.Z.dispatch({
+      })).body;
+    if (null == u || null == u.id || "" === u.id) throw Error("Invalid order response");
+    return await i.Z.dispatch({
       type: "ORDER_CREATE_SUCCESS",
-      orderId: o
-    })
+      orderId: u.id,
+      order: u
+    }), u
   } catch (e) {
-    await i.Z.dispatch({
+    throw await i.Z.dispatch({
       type: "ORDER_CREATE_FAIL"
-    })
+    }), e
   }
 }
-async function s(e) {
+async function l(e) {
   let {
     orderId: t,
-    updates: {
-      paymentSourceId: n
-    }
+    updates: n
   } = e;
   i.Z.wait(() => {
     i.Z.dispatch({
@@ -57,13 +64,11 @@ async function s(e) {
     })
   });
   try {
-    let e = {
-      billing_facet: {
-        payment_source_id: n
-      }
-    };
-    await r.tn.patch({
-      url: a.ANM.ORDER_UPDATE(t),
+    let e = {};
+    "paymentSourceId" in n && (e.billing_facet = {
+      payment_source_id: n.paymentSourceId
+    }), await r.tn.patch({
+      url: o.ANM.ORDER_UPDATE(t),
       body: e,
       rejectWithError: true
     }), await i.Z.dispatch({
@@ -74,5 +79,28 @@ async function s(e) {
     await i.Z.dispatch({
       type: "ORDER_UPDATE_FAIL"
     })
+  }
+}
+async function c(e) {
+  let {
+    orderId: t,
+    expectedRevision: n,
+    loadId: i
+  } = e;
+  try {
+    let e = {};
+    null != n && (e.expected_revision = n);
+    let a = await r.tn.post({
+      url: o.ANM.ORDER_SIGN(t),
+      body: e,
+      context: null != i && "" !== i ? {
+        load_id: i
+      } : true,
+      rejectWithError: false
+    });
+    if (null == a.body) throw Error("Invalid sign order response");
+    return a.body
+  } catch (e) {
+    throw e
   }
 }

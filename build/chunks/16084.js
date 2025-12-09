@@ -172,14 +172,16 @@ async function A(e, t, n, r, s) {
       }
     });
     let l = (await i.tn.post({
-      url: g.ANM.ORDER_CREATE,
-      body: o,
-      rejectWithError: false
-    })).body.id;
+        url: g.ANM.ORDER_CREATE,
+        body: o,
+        rejectWithError: false
+      })).body,
+      c = l.id;
     return a.Z.dispatch({
       type: "ORDER_CREATE_SUCCESS",
-      orderId: l
-    }), l
+      orderId: c,
+      order: l
+    }), c
   } catch (e) {
     throw a.Z.dispatch({
       type: "ORDER_CREATE_FAIL"

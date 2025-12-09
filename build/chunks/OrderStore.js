@@ -20,7 +20,15 @@ class s extends(r = Chunk442837.ZP.Store) {
     return this._isCreatingOrder
   }
   get currentOrderId() {
-    return this._orderId
+    var e, t;
+    return null != (t = null == (e = this._order) ? true : module.id) ? exports : null
+  }
+  get currentOrder() {
+    return this._order
+  }
+  get currentPaymentGateway() {
+    var e, t, n;
+    return null != (n = null == (t = this._order) || null == (e = exports.billing_facet) ? true : module.payment_gateway) ? require : null
   }
   handleOrderCreateStart(e) {
     let {} = e;
@@ -28,9 +36,10 @@ class s extends(r = Chunk442837.ZP.Store) {
   }
   handleOrderCreateSuccess(e) {
     let {
-      orderId: t
+      orderId: t,
+      order: n
     } = e;
-    this._isCreatingOrder = false, this._orderId = t
+    this._isCreatingOrder = false, this._order = null != n ? n : null
   }
   handleOrderCreateFail(e) {
     let {} = e;
@@ -50,7 +59,7 @@ class s extends(r = Chunk442837.ZP.Store) {
   }
   handlePaymentModalOpen(e) {
     let {} = e;
-    this._orderId = null
+    this._order = null
   }
   constructor() {
     super(Chunk570140.Z, {
@@ -61,7 +70,7 @@ class s extends(r = Chunk442837.ZP.Store) {
       ORDER_UPDATE_SUCCESS: e => this.handleOrderUpdateSuccess(e),
       ORDER_UPDATE_FAIL: e => this.handleOrderUpdateFail(e),
       PAYMENT_MODAL_OPEN: e => this.handlePaymentModalOpen(e)
-    }), o(this, "_isCreatingOrder", false), o(this, "_isUpdatingOrder", false), o(this, "_orderId", null)
+    }), o(this, "_isCreatingOrder", false), o(this, "_isUpdatingOrder", false), o(this, "_order", null)
   }
 }
 o(s, "displayName", "OrderStore");

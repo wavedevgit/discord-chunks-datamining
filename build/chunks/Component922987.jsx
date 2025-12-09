@@ -290,6 +290,7 @@ let R = e => {
       stepConfigs: L,
       purchaseType: I.GZQ.ONE_TIME,
       skuIDs: [t],
+      paymentGateway: I.gg$.VIRTUAL_CURRENCY,
       excludeSubscriptionPlansBySKU: true,
       excludeSKUPurchasePreviews: true,
       children: (0, r.jsx)(O.dv, {

@@ -108,7 +108,7 @@ var p = function(e) {
   }({});
 let m = "6Lef5iQTAAAAAKeIvIY-DeexoO3gj7ryl9rLMEnn";
 var h = function(e) {
-    return e[e.STRIPE = 1] = "STRIPE", e[e.BRAINTREE = 2] = "BRAINTREE", e[e.APPLE = 3] = "APPLE", e[e.GOOGLE = 4] = "GOOGLE", e[e.ADYEN = 5] = "ADYEN", e[e.APPLE_PARTNER = 6] = "APPLE_PARTNER", e[e.APPLE_ADVANCED_COMMERCE = 9] = "APPLE_ADVANCED_COMMERCE", e
+    return e[e.STRIPE = 1] = "STRIPE", e[e.BRAINTREE = 2] = "BRAINTREE", e[e.APPLE = 3] = "APPLE", e[e.GOOGLE = 4] = "GOOGLE", e[e.ADYEN = 5] = "ADYEN", e[e.APPLE_PARTNER = 6] = "APPLE_PARTNER", e[e.VIRTUAL_CURRENCY = 8] = "VIRTUAL_CURRENCY", e[e.APPLE_ADVANCED_COMMERCE = 9] = "APPLE_ADVANCED_COMMERCE", e
   }({}),
   g = function(e) {
     return e[e.VIRTUAL_CURRENCY = 8] = "VIRTUAL_CURRENCY", e
@@ -120,6 +120,7 @@ let E = Object.freeze({
     4: "Google",
     5: "Adyen",
     6: "Apple Partner",
+    8: "Virtual Currency",
     9: "Apple ACOM"
   }),
   b = Object.freeze({
