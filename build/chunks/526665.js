@@ -51,9 +51,23 @@ let i = (0, Chunk427164.le)({
       }
     }
   }),
-  o = e => i.getConfig({
+  o = ((0, Chunk427164.le)({
+    name: "2025-12-user-settings-redesign-3",
+    kind: "user",
+    defaultConfig: {
+      enabled: false
+    },
+    variations: {
+      0: {
+        enabled: false
+      },
+      1: {
+        enabled: true
+      }
+    }
+  }), e => i.getConfig({
     location: e
-  }).enabled,
+  }).enabled),
   s = e => i.useConfig({
     location: e
   }).enabled,
